@@ -65,8 +65,8 @@ def ofComplex (c : ℂ) : AutomorphicFormForGLnOverQ 0 ρ := {
       continuous := by continuity
       loc_cst := by
         rw [IsLocallyConstant]
-        sorry
-        -- aesop -- used to work
+        intro x
+        simpa using isOpen_univ
       smooth := by simp [contMDiff_const]
     }
     is_periodic := by simp
