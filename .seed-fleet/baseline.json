@@ -1,0 +1,1 @@
+{"axioms":["knownin1980s","propext","sorryAx","Classical.choice","Quot.sound"],"base_revision":"e99f1674cfa761bb0289000c0e2484a5c325f4b4","lean_toolchain":"leanprover/lean4:v4.34.0-rc1","mathlib_revision":"bc06ce9f87cda9bf825ecab192b115685e629898","schema":"flt-seed-fleet-baseline/v1","sorry_admit_occurrences":71}
