@@ -182,3 +182,17 @@ theorem cyclic_base_change
     ((ρ.map (algebraMap F E)).IsAutomorphicOfLevel p hpE hV
       (HeightOneSpectrum.preimageComapFinset (𝓞 F) F E (𝓞 E) S)) :=
   sorry
+
+/-
+## Audited hidden-content ledger for cyclic_base_change
+
+This ledger documents the hidden-content assumptions required for the proof of cyclic_base_change.
+
+- Jacquet-Langlands transfer in both directions (Taylor 1989 route).
+- Strong multiplicity one for GL₂.
+- Classification of the image of Galois representations.
+- Exclusion of norm-factoring forms.
+- Coefficient bridge from Shimura parallel-weight integrality.
+- Q-empty level-specialization caveat (i.e., the specialization to the empty set of primes).
+- Note: automorphic induction is out of scope; it is owned by the CBC chapter.
+-/

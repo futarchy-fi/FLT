@@ -54,7 +54,7 @@ need multiplicity 1 for GL_2, which could be a separate project.
 
 * Automorphic induction from GL_1 to GL_2 (e.g. "CM elliptic curves are modular")
 
-* Cyclic base change for GL_2 and classification of image
+* Cyclic base change for GL_2 and classification of image (statement now in `FLT/GaloisRepresentation/Automorphic.lean` as an axiom; proof assumed)
 
 * The Jacquet-Langlands correspondence between GL_2 and automorphic forms on totally definite
   quaternion algebras.
