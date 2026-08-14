@@ -83,7 +83,18 @@ def ofComplex (c : ℂ) : AutomorphicFormForGLnOverQ 0 ρ := {
       }
       apply Exists.intro U
       exact {
-          is_open := by sorry -- used to be simp but there's a timeout
+          is_open := by
+            have hsub : (U : Set (GL (Fin 0) (IsDedekindDomain.FiniteAdeleRing ℤ ℚ))) = Set.univ := by
+              ext x
+              constructor
+              · intro _
+                exact Set.mem_univ _
+              · intro _
+                change x ∈ ({1} : Set (GL (Fin 0) (IsDedekindDomain.FiniteAdeleRing ℤ ℚ)))
+                exact Set.mem_singleton_iff.mpr (Subsingleton.elim x 1)
+            show IsOpen (U : Set (GL (Fin 0) (IsDedekindDomain.FiniteAdeleRing ℤ ℚ)))
+            rw [hsub]
+            exact isOpen_univ
           is_compact := by aesop
           finite_level := by simp
       }
