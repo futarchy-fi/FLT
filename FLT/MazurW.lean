@@ -38,7 +38,252 @@ theorem mazur_W_sanity_zmod10 :
       letI : E.IsElliptic := hE
       ∃ f : ZMod 10 →+ (E⁄ℚ).Point,
         Function.Injective f := by
-  sorry
+  let E : WeierstrassCurve ℚ := ⟨5, -6, -18, 0, 0⟩
+  have hE : E.IsElliptic := by
+    refine ⟨?_⟩
+    have hΔ : E.Δ = (2737152 : ℚ) := by
+      norm_num [E, WeierstrassCurve.Δ, WeierstrassCurve.b₂,
+        WeierstrassCurve.b₄, WeierstrassCurve.b₆, WeierstrassCurve.b₈]
+    rw [hΔ]
+    exact Ne.isUnit (by norm_num)
+  refine ⟨E, hE, ?_⟩
+  letI : E.IsElliptic := hE
+  haveI : (E⁄ℚ).IsElliptic :=
+    inferInstanceAs ((E.map (algebraMap ℚ ℚ)).IsElliptic)
+
+  have h1 : (E⁄ℚ).Nonsingular 0 0 := by
+    apply (WeierstrassCurve.Affine.equation_iff_nonsingular
+      (W := E⁄ℚ)).mp
+    rw [WeierstrassCurve.Affine.equation_iff]
+    norm_num [E, WeierstrassCurve.baseChange, WeierstrassCurve.map]
+  have h2 : (E⁄ℚ).Nonsingular 6 (-12) := by
+    apply (WeierstrassCurve.Affine.equation_iff_nonsingular
+      (W := E⁄ℚ)).mp
+    rw [WeierstrassCurve.Affine.equation_iff]
+    norm_num [E, WeierstrassCurve.baseChange, WeierstrassCurve.map]
+  have h3 : (E⁄ℚ).Nonsingular (-6) 36 := by
+    apply (WeierstrassCurve.Affine.equation_iff_nonsingular
+      (W := E⁄ℚ)).mp
+    rw [WeierstrassCurve.Affine.equation_iff]
+    norm_num [E, WeierstrassCurve.baseChange, WeierstrassCurve.map]
+  have h4 : (E⁄ℚ).Nonsingular 18 36 := by
+    apply (WeierstrassCurve.Affine.equation_iff_nonsingular
+      (W := E⁄ℚ)).mp
+    rw [WeierstrassCurve.Affine.equation_iff]
+    norm_num [E, WeierstrassCurve.baseChange, WeierstrassCurve.map]
+  have h5 : (E⁄ℚ).Nonsingular 2 4 := by
+    apply (WeierstrassCurve.Affine.equation_iff_nonsingular
+      (W := E⁄ℚ)).mp
+    rw [WeierstrassCurve.Affine.equation_iff]
+    norm_num [E, WeierstrassCurve.baseChange, WeierstrassCurve.map]
+  have h6 : (E⁄ℚ).Nonsingular 18 (-108) := by
+    apply (WeierstrassCurve.Affine.equation_iff_nonsingular
+      (W := E⁄ℚ)).mp
+    rw [WeierstrassCurve.Affine.equation_iff]
+    norm_num [E, WeierstrassCurve.baseChange, WeierstrassCurve.map]
+  have h7 : (E⁄ℚ).Nonsingular (-6) 12 := by
+    apply (WeierstrassCurve.Affine.equation_iff_nonsingular
+      (W := E⁄ℚ)).mp
+    rw [WeierstrassCurve.Affine.equation_iff]
+    norm_num [E, WeierstrassCurve.baseChange, WeierstrassCurve.map]
+  have h8 : (E⁄ℚ).Nonsingular 6 0 := by
+    apply (WeierstrassCurve.Affine.equation_iff_nonsingular
+      (W := E⁄ℚ)).mp
+    rw [WeierstrassCurve.Affine.equation_iff]
+    norm_num [E, WeierstrassCurve.baseChange, WeierstrassCurve.map]
+  have h9 : (E⁄ℚ).Nonsingular 0 18 := by
+    apply (WeierstrassCurve.Affine.equation_iff_nonsingular
+      (W := E⁄ℚ)).mp
+    rw [WeierstrassCurve.Affine.equation_iff]
+    norm_num [E, WeierstrassCurve.baseChange, WeierstrassCurve.map]
+
+  let P1 : (E⁄ℚ).Point := .some 0 0 h1
+  let P2 : (E⁄ℚ).Point := .some 6 (-12) h2
+  let P3 : (E⁄ℚ).Point := .some (-6) 36 h3
+  let P4 : (E⁄ℚ).Point := .some 18 36 h4
+  let P5 : (E⁄ℚ).Point := .some 2 4 h5
+  let P6 : (E⁄ℚ).Point := .some 18 (-108) h6
+  let P7 : (E⁄ℚ).Point := .some (-6) 12 h7
+  let P8 : (E⁄ℚ).Point := .some 6 0 h8
+  let P9 : (E⁄ℚ).Point := .some 0 18 h9
+
+  have h12 : P1 + P1 = P2 := by
+    dsimp [P1, P2]
+    convert (WeierstrassCurve.Affine.Point.add_self_of_Y_ne
+        (W := E⁄ℚ) (x₁ := (0 : ℚ)) (y₁ := 0) (h₁ := h1) (by
+          norm_num [E, WeierstrassCurve.baseChange, WeierstrassCurve.map,
+            WeierstrassCurve.Affine.negY])) using 1 <;>
+      norm_num [E, WeierstrassCurve.baseChange, WeierstrassCurve.map,
+        WeierstrassCurve.Affine.slope, WeierstrassCurve.Affine.addX,
+        WeierstrassCurve.Affine.addY, WeierstrassCurve.Affine.negAddY,
+        WeierstrassCurve.Affine.negY]
+  have h23 : P2 + P1 = P3 := by
+    dsimp [P1, P2, P3]
+    convert (WeierstrassCurve.Affine.Point.add_of_X_ne
+        (W := E⁄ℚ) (x₁ := (6 : ℚ)) (x₂ := 0) (y₁ := -12) (y₂ := 0)
+        (h₁ := h2) (h₂ := h1) (by norm_num)) using 1 <;>
+      norm_num [E, WeierstrassCurve.baseChange, WeierstrassCurve.map,
+        WeierstrassCurve.Affine.slope, WeierstrassCurve.Affine.addX,
+        WeierstrassCurve.Affine.addY, WeierstrassCurve.Affine.negAddY,
+        WeierstrassCurve.Affine.negY]
+  have h34 : P3 + P1 = P4 := by
+    dsimp [P1, P3, P4]
+    convert (WeierstrassCurve.Affine.Point.add_of_X_ne
+        (W := E⁄ℚ) (x₁ := (-6 : ℚ)) (x₂ := 0) (y₁ := 36) (y₂ := 0)
+        (h₁ := h3) (h₂ := h1) (by norm_num)) using 1 <;>
+      norm_num [E, WeierstrassCurve.baseChange, WeierstrassCurve.map,
+        WeierstrassCurve.Affine.slope, WeierstrassCurve.Affine.addX,
+        WeierstrassCurve.Affine.addY, WeierstrassCurve.Affine.negAddY,
+        WeierstrassCurve.Affine.negY]
+  have h45 : P4 + P1 = P5 := by
+    dsimp [P1, P4, P5]
+    convert (WeierstrassCurve.Affine.Point.add_of_X_ne
+        (W := E⁄ℚ) (x₁ := (18 : ℚ)) (x₂ := 0) (y₁ := 36) (y₂ := 0)
+        (h₁ := h4) (h₂ := h1) (by norm_num)) using 1 <;>
+      norm_num [E, WeierstrassCurve.baseChange, WeierstrassCurve.map,
+        WeierstrassCurve.Affine.slope, WeierstrassCurve.Affine.addX,
+        WeierstrassCurve.Affine.addY, WeierstrassCurve.Affine.negAddY,
+        WeierstrassCurve.Affine.negY]
+  have h56 : P5 + P1 = P6 := by
+    dsimp [P1, P5, P6]
+    convert (WeierstrassCurve.Affine.Point.add_of_X_ne
+        (W := E⁄ℚ) (x₁ := (2 : ℚ)) (x₂ := 0) (y₁ := 4) (y₂ := 0)
+        (h₁ := h5) (h₂ := h1) (by norm_num)) using 1 <;>
+      norm_num [E, WeierstrassCurve.baseChange, WeierstrassCurve.map,
+        WeierstrassCurve.Affine.slope, WeierstrassCurve.Affine.addX,
+        WeierstrassCurve.Affine.addY, WeierstrassCurve.Affine.negAddY,
+        WeierstrassCurve.Affine.negY]
+  have h67 : P6 + P1 = P7 := by
+    dsimp [P1, P6, P7]
+    convert (WeierstrassCurve.Affine.Point.add_of_X_ne
+        (W := E⁄ℚ) (x₁ := (18 : ℚ)) (x₂ := 0) (y₁ := -108) (y₂ := 0)
+        (h₁ := h6) (h₂ := h1) (by norm_num)) using 1 <;>
+      norm_num [E, WeierstrassCurve.baseChange, WeierstrassCurve.map,
+        WeierstrassCurve.Affine.slope, WeierstrassCurve.Affine.addX,
+        WeierstrassCurve.Affine.addY, WeierstrassCurve.Affine.negAddY,
+        WeierstrassCurve.Affine.negY]
+  have h78 : P7 + P1 = P8 := by
+    dsimp [P1, P7, P8]
+    convert (WeierstrassCurve.Affine.Point.add_of_X_ne
+        (W := E⁄ℚ) (x₁ := (-6 : ℚ)) (x₂ := 0) (y₁ := 12) (y₂ := 0)
+        (h₁ := h7) (h₂ := h1) (by norm_num)) using 1 <;>
+      norm_num [E, WeierstrassCurve.baseChange, WeierstrassCurve.map,
+        WeierstrassCurve.Affine.slope, WeierstrassCurve.Affine.addX,
+        WeierstrassCurve.Affine.addY, WeierstrassCurve.Affine.negAddY,
+        WeierstrassCurve.Affine.negY]
+  have h89 : P8 + P1 = P9 := by
+    dsimp [P1, P8, P9]
+    convert (WeierstrassCurve.Affine.Point.add_of_X_ne
+        (W := E⁄ℚ) (x₁ := (6 : ℚ)) (x₂ := 0) (y₁ := 0) (y₂ := 0)
+        (h₁ := h8) (h₂ := h1) (by norm_num)) using 1 <;>
+      norm_num [E, WeierstrassCurve.baseChange, WeierstrassCurve.map,
+        WeierstrassCurve.Affine.slope, WeierstrassCurve.Affine.addX,
+        WeierstrassCurve.Affine.addY, WeierstrassCurve.Affine.negAddY,
+        WeierstrassCurve.Affine.negY]
+  have h910 : P9 + P1 = 0 := by
+    dsimp [P9, P1]
+    apply WeierstrassCurve.Affine.Point.add_of_Y_eq
+    · rfl
+    · norm_num [E, WeierstrassCurve.baseChange, WeierstrassCurve.map,
+        WeierstrassCurve.Affine.negY]
+
+  have h2smul : (2 : ℕ) • P1 = P2 := by
+    simpa [two_nsmul] using h12
+  have h3smul : (3 : ℕ) • P1 = P3 := by
+    calc
+      (3 : ℕ) • P1 = (2 : ℕ) • P1 + P1 := by
+        rw [show (3 : ℕ) = 2 + 1 by norm_num, add_nsmul, one_nsmul]
+      _ = P2 + P1 := by rw [h2smul]
+      _ = P3 := h23
+  have h4smul : (4 : ℕ) • P1 = P4 := by
+    calc
+      (4 : ℕ) • P1 = (3 : ℕ) • P1 + P1 := by
+        rw [show (4 : ℕ) = 3 + 1 by norm_num, add_nsmul, one_nsmul]
+      _ = P3 + P1 := by rw [h3smul]
+      _ = P4 := h34
+  have h5smul : (5 : ℕ) • P1 = P5 := by
+    calc
+      (5 : ℕ) • P1 = (4 : ℕ) • P1 + P1 := by
+        rw [show (5 : ℕ) = 4 + 1 by norm_num, add_nsmul, one_nsmul]
+      _ = P4 + P1 := by rw [h4smul]
+      _ = P5 := h45
+  have h6smul : (6 : ℕ) • P1 = P6 := by
+    calc
+      (6 : ℕ) • P1 = (5 : ℕ) • P1 + P1 := by
+        rw [show (6 : ℕ) = 5 + 1 by norm_num, add_nsmul, one_nsmul]
+      _ = P5 + P1 := by rw [h5smul]
+      _ = P6 := h56
+  have h7smul : (7 : ℕ) • P1 = P7 := by
+    calc
+      (7 : ℕ) • P1 = (6 : ℕ) • P1 + P1 := by
+        rw [show (7 : ℕ) = 6 + 1 by norm_num, add_nsmul, one_nsmul]
+      _ = P6 + P1 := by rw [h6smul]
+      _ = P7 := h67
+  have h8smul : (8 : ℕ) • P1 = P8 := by
+    calc
+      (8 : ℕ) • P1 = (7 : ℕ) • P1 + P1 := by
+        rw [show (8 : ℕ) = 7 + 1 by norm_num, add_nsmul, one_nsmul]
+      _ = P7 + P1 := by rw [h7smul]
+      _ = P8 := h78
+  have h9smul : (9 : ℕ) • P1 = P9 := by
+    calc
+      (9 : ℕ) • P1 = (8 : ℕ) • P1 + P1 := by
+        rw [show (9 : ℕ) = 8 + 1 by norm_num, add_nsmul, one_nsmul]
+      _ = P8 + P1 := by rw [h8smul]
+      _ = P9 := h89
+  have h10smul : (10 : ℕ) • P1 = 0 := by
+    calc
+      (10 : ℕ) • P1 = (9 : ℕ) • P1 + P1 := by
+        rw [show (10 : ℕ) = 9 + 1 by norm_num, add_nsmul, one_nsmul]
+      _ = P9 + P1 := by rw [h9smul]
+      _ = 0 := h910
+
+  have hP1ne : P1 ≠ 0 := by
+    dsimp [P1]
+    exact WeierstrassCurve.Affine.Point.some_ne_zero h1
+  have hP2ne : P2 ≠ 0 := by
+    dsimp [P2]
+    exact WeierstrassCurve.Affine.Point.some_ne_zero h2
+  have hP5ne : P5 ≠ 0 := by
+    dsimp [P5]
+    exact WeierstrassCurve.Affine.Point.some_ne_zero h5
+  have h2ne : (2 : ℕ) • P1 ≠ 0 := by simpa [h2smul] using hP2ne
+  have h5ne : (5 : ℕ) • P1 ≠ 0 := by simpa [h5smul] using hP5ne
+  have horder : addOrderOf P1 = 10 := by
+    apply addOrderOf_eq_of_nsmul_and_div_prime_nsmul (x := P1) (n := 10)
+    · norm_num
+    · exact h10smul
+    · intro p hp hpd
+      have hpd' : p ∣ (2 * 5 : ℕ) := by
+        norm_num at hpd ⊢
+        exact hpd
+      rcases (Nat.Prime.dvd_mul hp).mp hpd' with hp2 | hp5
+      · have hp_eq2 : p = 2 :=
+          ((Nat.dvd_prime Nat.prime_two).mp hp2).resolve_left (Nat.Prime.ne_one hp)
+        subst p
+        simpa using h5ne
+      · have hp_eq5 : p = 5 :=
+          ((Nat.dvd_prime (by decide : Nat.Prime 5)).mp hp5).resolve_left
+            (Nat.Prime.ne_one hp)
+        subst p
+        simpa using h2ne
+
+  have hg10 : (10 : ℤ) • P1 = 0 := by
+    rw [show (10 : ℤ) = ((10 : ℕ) : ℤ) by norm_num, natCast_zsmul]
+    exact h10smul
+  let g : ℤ →+ (E⁄ℚ).Point :=
+    { toFun := fun n => n • P1
+      map_zero' := by simp
+      map_add' := fun m n => add_zsmul P1 m n }
+  have hker : g (10 : ℤ) = 0 := hg10
+  refine ⟨ZMod.lift 10 ⟨g, hker⟩, ?_⟩
+  rw [ZMod.lift_injective]
+  intro m hm
+  rw [ZMod.intCast_zmod_eq_zero_iff_dvd]
+  have hd : (addOrderOf P1 : ℤ) ∣ m := by
+    apply (addOrderOf_dvd_iff_zsmul_eq_zero).2
+    simpa [g] using hm
+  simpa [horder] using hd
 
 theorem mazur_W_nonvacuity_full_two_torsion :
     ∃ (E : WeierstrassCurve ℚ) (hE : E.IsElliptic),
