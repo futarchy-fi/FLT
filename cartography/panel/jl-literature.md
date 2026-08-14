@@ -1,0 +1,29 @@
+# JL chapter — adversarial panel, literature-fidelity lens (hub-lsb1u.4.4)
+
+Verdict per claim: UNVERIFIED = plausible but under-sourced in the maps; REFUTED = contradicted by literature. None of the five targeted claims is REFUTED.
+
+## Claim 1 — Shimizu-theta preferred over trace formula (totally definite, weight 2)
+UNVERIFIED, leaning CONFIRMED. Shimizu, "Theta series and automorphic forms on GL₂," J. Math. Soc. Japan 24 (1972) 638–683 (https://www.jstage.jst.go.jp/article/jmath1948/24/4/24_4_638/_article), states his own purpose as reproving JL's Theorem 14.4 via theta series. Kimball Martin, "The basis problem revisited" (https://arxiv.org/pdf/1804.04234), confirms Shimizu treated the basis problem over totally real F for squarefree level under a parity condition on ([F:ℚ], N) **and weight > 2**. This is a real gap against the route: FLT's case is exactly weight 2, so jl-b's claim that Shimizu's construction "covers" the route's setting needs a weight-2-specific check, not just "totally definite" — Martin's summary suggests Shimizu's original theorem excluded weight 2 in general and later authors (Hijikata–Pizer–Shemanske, and modern extensions) filled remaining basis-problem cases. Neither map cites a source establishing the weight-2 transfer direction specifically via theta lifts at the route's U₁(S) level; flag as a citation gap, not a refutation — Eichler's classical weight-2 basis-problem work (uncited by name in jl-b) is the more direct ancestor. Hida/Emerton as "modern treatments" are asserted by the panel prompt, not in either source map — no citation to either found.
+
+## Claim 2 — Norm-factoring-forms exclusion (naive bijection false)
+CONFIRMED. Stanford JL seminar notes (Conrad, Lecture 20, http://virtualmath1.stanford.edu/~conrad/JLseminar/Notes/L20.pdf) and standard summaries of JL 1970 §16 (LNM 114, https://sunsite.ubc.ca/DigitalMathArchive/Langlands/pdf/jl-ps.pdf) confirm the correspondence is a bijection onto representations of D× of dimension **> 1**, i.e. excludes the 1-dimensional representations factoring through the reduced norm — exactly jl-b's R3/node-8 framing. jl-a's weakest-sufficient-statement (§"Weakest sufficient statement") does NOT state this exclusion — it describes an unqualified transfer/injectivity claim. This is jl-a's real gap, correctly caught by jl-b and the reconciler's "pass 2 wins" call.
+
+## Claim 3 — Finite-place local JL = identity (D split everywhere)
+CONFIRMED, and near-trivial: if D_v is split, D_v^× ≅ GL₂(F_v) as algebraic groups, so the "local JL transfer" at v is literally the identity map on representations, not a deep theorem. Both maps assert this correctly; no citation is really required beyond the definition of split quaternion algebra. Neither map overclaims here.
+
+## Claim 4 — ℂ↔ℚ̄_p eigensystem transfer (N4, algebraicity/coefficient bridge)
+UNVERIFIED — real citation gap, now closeable. jl-b's N4 ("Standard but fiddly") and R4 give **no citation** for the algebraicity step. Web search finds the correct anchor: Shimura proved integrality of Hecke eigenvalues for parallel-weight Hilbert modular forms (via Siegel modular forms with integral coefficients); recent refinement is Sakugawa–Sugiyama, "Integrality of Hecke eigenvalues and the growth of Hecke fields" (https://arxiv.org/abs/2401.11716), which states Shimura's parallel-weight integrality result and extends it. Waldspurger is not the right citation for algebraicity (his relevant work is central L-value/theta correspondence, not eigenvalue integrality) — the prompt's suggested Waldspurger sourcing is itself unverified/likely wrong; Shimura is the correct name. Neither source map names Shimura here — this is an unsourced import that should be fixed before N4 is promoted past S size.
+
+## Claim 5 — unsourced-import hunt
+Found, beyond N4:
+- jl-a's entire statement inventory (nodes 1–10) marks nearly every section/theorem number "(unverified)" — this is honest hedging, not a false import, but the reconciled doc's "Agreements" list does not flag that jl-a's citations are number-unverified throughout; a reader of jl-reconciled.md alone would not know this.
+- jl-b §8 "Cited but not independently re-verified this pass (standard)" explicitly flags Langlands 1980, Miyake 1971, Carayol 1986, Voight as unverified-this-pass — good practice, correctly excluded from jl-reconciled's "verified" framing.
+- jl-reconciled.md line 35 ("Shimizu theta = default deprecation target") elevates jl-b's N11 framing to a flat resolution without carrying forward jl-b's own caveat that "no one has formalized any theta correspondence anywhere" (R5) or the weight-2 gap found under Claim 1 above — an import that dropped its hedge in transit.
+
+## PQ2–PQ7 (from this lens)
+- PQ2 (ledger/ownership): literature fidelity favors the ledger rider as adjudicated — absorption is fine, but the ledger comments must name Shimizu 1972 + weight-2 caveat, JL 1970 §16 exclusion clause, and Shimura (not Waldspurger) for N4, else the hidden content re-hides real citation gaps.
+- PQ3 (U₁(S,Q) scope): not directly literature-checkable from public sources; no refutation found; defer to repo-internal adjudication.
+- PQ4 (mult-one as separate bead): literature supports keeping it logically separable (JL §11 uniqueness-of-Whittaker-models is a distinct theorem from §16), consistent with both maps.
+- PQ5 (Shimizu vs trace formula): weak points toward Shimizu but flag the weight-2 gap in Claim 1 — recommend the ledger cite both Shimizu 1972 AND Eichler's classical weight-2 basis-problem results explicitly, not Shimizu alone.
+- PQ6 (norm-factoring exclusion): CONFIRMED, jl-b's phrasing should be adopted verbatim into any Lean-facing statement/axiom docstring.
+- PQ7 (coefficient-bridge preference): prefer Shimura's integrality route (and Sakugawa–Sugiyama for the modern update) over any Waldspurger citation.
