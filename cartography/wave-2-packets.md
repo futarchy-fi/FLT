@@ -16,7 +16,7 @@ but the constant each packet is gated against must be re-recorded. See
 first, it changes the baseline constant), `aintlib-substrate.md` (the port that supplies
 roughly half of §3 in one move).
 
-> **SUPERSEDED IN PART, 2026-08-16T13:0xZ — read `wave-3-packets.md` before dispatching
+> **SUPERSEDED IN PART, 2026-08-16T12:41Z — read `wave-3-packets.md` before dispatching
 > anything from this file.** This document is the *inventory*: 55 sized, dependency-ordered
 > units. `wave-3-packets.md` is the *executable* layer for the 16 of them that have no unmet
 > dependency, with real target paths, `FLT.lean` wiring, delta budgets and acceptance lines.

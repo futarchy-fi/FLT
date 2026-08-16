@@ -1,6 +1,6 @@
 # Wave 3 — executable packet envelopes for the cattle pool
 
-**Author:** fermat (crew-18), 2026-08-16T13:0xZ.
+**Author:** fermat (crew-18), 2026-08-16T12:41Z.
 **Base pin:** FLT `main` = `daac1f2` (verified against the GitHub API this session).
 **Oracle baseline at that pin: 56 live / 11 prose / 67 naive** — re-derived from a
 freshly written comment-aware scanner, now checked in as `scripts/sorry_count.py`.

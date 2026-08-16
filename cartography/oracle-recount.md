@@ -10,7 +10,7 @@ path and update the revision log rather than renaming it per SHA.
 | 2026-08-16 11:07 | `148c849` | 60 | 11 | 71 | first comment-aware recount |
 | 2026-08-16 11:09 | `8ea4f0a` | 60 | 11 | 71 | after C1 / PR #7 merge — proof-body change only, delta `[0,0]` |
 | 2026-08-16 11:58 | `b0fbbec` | **56** | **11** | **67** | after hub-oig35.20 / PR #8 merge — four holes closed, delta `[-4,-4]`, hazard did **not** fire |
-| 2026-08-16 12:52 | `daac1f2` | 56 | 11 | 67 | four cartography commits, no `.lean` touched — delta `[0,0]`. Recount re-run from an independently rewritten scanner, now checked in as `scripts/sorry_count.py`. |
+| 2026-08-16 12:41 | `daac1f2` | 56 | 11 | 67 | four cartography commits, no `.lean` touched — delta `[0,0]`. Recount re-run from an independently rewritten scanner, now checked in as `scripts/sorry_count.py`. |
 
 **Current baseline: 56 live / 11 prose / 67 naive at `daac1f2`.** Sections 2–3 below are
 the inventory as of `8ea4f0a`; the only change since is `FLT/EllipticCurve/Torsion.lean`
@@ -190,7 +190,7 @@ crew-18 — distinguish "reviewed" from "compiles".
 
 ## 8. Build-closure hazard — `lake build` does not compile every file the oracle counts
 
-**Found 2026-08-16T12:55Z at `daac1f2`. This is a second, independent way for the gate to
+**Found 2026-08-16T12:41Z at `daac1f2`. This is a second, independent way for the gate to
 read green on work it never checked, and unlike §4 it is firing today.**
 
 `lakefile.toml` declares the default target as
