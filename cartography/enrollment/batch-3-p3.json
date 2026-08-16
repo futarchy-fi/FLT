@@ -23,43 +23,124 @@
     "run_refinement_feed defect (pilot 14:07Z) still fails an entire bounded pass on one bad",
     "candidate."
   ],
-
   "beads": [
     {
       "ref": "C2-CLOSURE-FIX",
       "title": "Wire PR #9's ZeroTheoryN2 into the build closure and the repo module idiom",
       "priority": "p0",
-      "labels": ["flt", "flt-p0", "run-001", "seed-fleet", "week-001", "lane:fleet-q2", "wave:flt-wave-003", "refinement-candidate"],
-      "metadata": { "lane": "fleet_q2", "state": "curated_not_ready", "wave": "flt-wave-003" },
+      "labels": [
+        "flt",
+        "flt-p0",
+        "run-001",
+        "seed-fleet",
+        "week-001",
+        "lane:fleet-q2",
+        "wave:flt-wave-003",
+        "refinement-candidate"
+      ],
+      "metadata": {
+        "lane": "fleet_q2",
+        "state": "curated_not_ready",
+        "wave": "flt-wave-003"
+      },
       "description": "URGENT, and it bears on whether hub-r7qdn.7 may close. PR #9 (hub-oig35.19, C2, merged 14:4xZ as 754e092) added FLT/NumberField/ZetaFE/ZeroTheoryN2.lean — 140 lines, 2 lemmas, 0 sorries, node N2 of odlyzko-m3-decomposition.md. Three defects, all verified against main 754e092: (1) THE FILE IS AN ORPHAN. The string ZeroTheoryN2 appears nowhere in the repository except inside the file itself (its own namespace open and close). FLT.lean does not import it and no FLT module does. lakefile.toml globs the FLT library as the bare module name \"FLT\", so the default target is the import closure of FLT.lean — meaning a default `lake build` never compiles this file. (2) IT DOES NOT USE THE REPO MODULE IDIOM: 261 of the 263 files under FLT/ begin with `module`; this one does not, and it has no `public import` lines and no `@[expose] public section`. (3) It therefore contributes nothing to FermatsLastTheorem.lean's `#print axioms` census and will rot silently. WHY THIS IS URGENT: the identical hazard already applies to C1 — PR #7 edited FLT/MazurW.lean, also an orphan — so BOTH legs of harness selection may be vacuous in the same way, on the day hub-r7qdn.7 closes on their evidence. TASK: convert the file to the repo idiom (module; public import lines; @[expose] public section; Apache-2.0 header) and add the alphabetized `public import FLT.NumberField.ZetaFE.ZeroTheoryN2` line to FLT.lean. Expect the conversion to surface real errors — nothing has type-checked this file inside the project. FAIRNESS NOTE FOR THE REVIEWER: the isolated flt-acceptance runner may have built the file by explicit module target rather than via the default target, in which case it did compile and defect (1) is about project wiring rather than about the acceptance verdict. That is checkable in one step — read what flt-acceptance actually invokes — and should be checked before anyone concludes C2 was not really green.",
-      "acceptance_criteria": "Acceptance runs in the ISOLATED flt-acceptance harness; a raw `lake build` in the reviewed worktree is not acceptance evidence (C2 v1 failed for exactly that reason — it mutated the worktree's .lake). REPORT THE RESULT WHETHER GREEN OR RED; this is partly diagnostic. Required: scripts/sorry_count.py --closure must exit 0 for FLT.NumberField.ZetaFE.ZeroTheoryN2 (FLT.MazurW and FLT.PoitouTate may remain orphaned — they are packet W3-00's job, do not fix them here). Comment-aware live sorry count must remain 56 with prose 11 and naive 67 — delta [0,0]; the file has no sorries and the conversion must not add any. Diff confined to FLT/NumberField/ZetaFE/ZeroTheoryN2.lean and FLT.lean. No new axiom keyword. If the idiom conversion produces compile errors, report the full list and STOP rather than weakening the two lemma statements — the statements are the deliverable of C2 and must not change."
+      "acceptance_criteria": "Acceptance runs in the ISOLATED flt-acceptance harness; a raw `lake build` in the reviewed worktree is not acceptance evidence (C2 v1 failed for exactly that reason — it mutated the worktree's .lake). REPORT THE RESULT WHETHER GREEN OR RED; this is partly diagnostic. Required: scripts/sorry_count.py --closure must exit 0 for FLT.NumberField.ZetaFE.ZeroTheoryN2 (FLT.MazurW and FLT.PoitouTate may remain orphaned — they are packet W3-00's job, do not fix them here). Comment-aware live sorry count must remain 56 with prose 11 and naive 67 — delta [0,0]; the file has no sorries and the conversion must not add any. Diff confined to FLT/NumberField/ZetaFE/ZeroTheoryN2.lean and FLT.lean. No new axiom keyword. If the idiom conversion produces compile errors, report the full list and STOP rather than weakening the two lemma statements — the statements are the deliverable of C2 and must not change.",
+      "parent": "hub-oig35",
+      "campaign_root": "hub-flqy3"
     },
     {
       "ref": "aintlib-0prime-v2-SCOPE",
       "title": "AINTLIB-0'' — rerun with exact module targets; the v1 red was collateral, not a real dependency",
       "priority": "p0",
-      "labels": ["flt", "flt-p0", "run-001", "seed-fleet", "week-001", "lane:fleet-q2", "wave:flt-endgame-001", "refinement-candidate"],
-      "metadata": { "lane": "fleet_q2", "state": "curated_not_ready", "wave": "flt-endgame-001" },
+      "labels": [
+        "flt",
+        "flt-p0",
+        "run-001",
+        "seed-fleet",
+        "week-001",
+        "lane:fleet-q2",
+        "wave:flt-endgame-001",
+        "refinement-candidate"
+      ],
+      "metadata": {
+        "lane": "fleet_q2",
+        "state": "curated_not_ready",
+        "wave": "flt-endgame-001"
+      },
       "description": "Corrective rerun of AINTLIB-0'. The pilot reported at 14:41Z that the dependency bump and cache retrieval were GREEN (8691 mathlib cache artifacts, immediate replay downloaded zero) — so the bump-first hypothesis is CONFIRMED and the no-elan route works. The build then went RED on forward-bump API drift beginning at projects/HasseWeil/HasseWeil/Foundation/Valuation.lean:310 ('TFAE indices start at 1', unsolved '0 ≠ 0'). THAT FAILURE IS COLLATERAL. HasseWeil is not a dependency of the code we want: I fetched all 26 DedekindResidue source files at pin 1c1c74664e40 and grepped them — the string HasseWeil appears ZERO times. The complete external dependency set of DedekindResidue is Mathlib (imported wholesale), Mathlib.Analysis.Fourier.RiemannLebesgueLemma, Mathlib.NumberTheory.NumberField.DedekindZeta, and exactly ONE sibling-project module: CebotarevDensity.NumberFieldEulerProduct, imported at ExplicitFormula/ZeroCapture.lean:11. Nothing else. So the '25-leaf-module build' swept in a sibling project that DedekindResidue never imports. TASK: rerun the bump exactly as before (AINTLIB at 1c1c74664e40; lean-toolchain to leanprover/lean4:v4.34.0-rc1; sole mathlib require to bc06ce9f87cda9bf825ecab192b115685e629898; lake update mathlib; lake exe cache get) but build ONLY the precise module targets DedekindResidue.CompletedZeta.* and DedekindResidue.ExplicitFormula.*, letting Lake resolve imports, rather than enumerating leaf modules across the monorepo or building directory sweeps. Do not build projects/HasseWeil, and do not build the DedekindResidue root (Theorem1/MainTheorem/Lemma2-5/QSide) — that is the Belabas-Friedman GRH application the campaign does not need. UNVERIFIED AND WORTH WATCHING: I could not fetch CebotarevDensity/NumberFieldEulerProduct.lean (404 at the path I guessed), so its own transitive imports are unchecked. If it reaches into HasseWeil, that single import is the whole remaining problem and the fallback is to stub or vendor just that one module — ZeroCapture is one file of ten in ExplicitFormula.",
-      "acceptance_criteria": "Run in an isolated disposable job — this builds a DIFFERENT repository and must not share build state with any FLT worktree. Report green or red; a red result with a precise error location is this packet succeeding. Required in the receipt: (a) exit status; (b) if red, the first 20 errors with file and line, AND explicitly whether any of them lie inside projects/DedekindResidue as opposed to a sibling project — that distinction is the entire point of this rerun; (c) wall clock and whether cache get hit; (d) the comment-aware sorry/admit count over the built DedekindResidue tree, expected 0 (a naive grep reports 2 prose hits inside docstrings); (e) #print axioms DedekindResidue.completedDedekindZeta_one_sub, expected exactly propext, Classical.choice, Quot.sound; (f) the resolved import list actually pulled from sibling projects, so the CebotarevDensity question above is answered empirically. Budget 3 iterations."
+      "acceptance_criteria": "Run in an isolated disposable job — this builds a DIFFERENT repository and must not share build state with any FLT worktree. Report green or red; a red result with a precise error location is this packet succeeding. Required in the receipt: (a) exit status; (b) if red, the first 20 errors with file and line, AND explicitly whether any of them lie inside projects/DedekindResidue as opposed to a sibling project — that distinction is the entire point of this rerun; (c) wall clock and whether cache get hit; (d) the comment-aware sorry/admit count over the built DedekindResidue tree, expected 0 (a naive grep reports 2 prose hits inside docstrings); (e) #print axioms DedekindResidue.completedDedekindZeta_one_sub, expected exactly propext, Classical.choice, Quot.sound; (f) the resolved import list actually pulled from sibling projects, so the CebotarevDensity question above is answered empirically. Budget 3 iterations.",
+      "parent": "hub-oig35",
+      "campaign_root": "hub-flqy3",
+      "chapter_ref": "hub-lsb1u.6"
     },
     {
       "ref": "PQ1-TRANSCRIBE",
       "title": "PQ1 completion: transcribe Poitou's display equations (19)-(26) from the page images",
       "priority": "p1",
-      "labels": ["flt", "flt-p1", "research", "run-001", "seed-fleet", "week-001", "lane:fleet-q2", "wave:flt-endgame-001", "refinement-candidate"],
-      "metadata": { "lane": "fleet_q2", "state": "curated_not_ready", "wave": "flt-endgame-001" },
+      "labels": [
+        "flt",
+        "flt-p1",
+        "research",
+        "run-001",
+        "seed-fleet",
+        "week-001",
+        "lane:fleet-q2",
+        "wave:flt-endgame-001",
+        "refinement-candidate"
+      ],
+      "metadata": {
+        "lane": "fleet_q2",
+        "state": "curated_not_ready",
+        "wave": "flt-endgame-001"
+      },
       "description": "Not a Lean packet — a source-transcription packet, and it currently gates five nodes. The artifact is obtained: Poitou, 'Sur les petits discriminants', Seminaire Delange-Pisot-Poitou 18 (1976-77) exp. 6, Numdam SDPP_1976-1977__18_1_A6_0, fetchable without credentials at https://www.numdam.org/item/SDPP_1976-1977__18_1_A6_0.pdf (1884833 bytes, 18 pages, %PDF-1.4). It carries an OCR text layer, which is how cartography/poitou-1977-transcription.md already extracted the p.18 table of root-discriminant bounds and the p.17 worked example. What the OCR did NOT capture is the DISPLAY EQUATIONS — they are typeset formulas rendered as images, so the text layer holds only the prose between them. TASK: render pages 14 through 17 as images (pdftoppm from poppler-utils, or any PDF viewer) and transcribe, in LaTeX or plain Lean-ready notation, equations (13), (16), (17), (19), (21), (22), (23), (25) and (26), together with the definition of the auxiliary/Tartar function they use. Their roles are already established from the prose and are recorded in poitou-1977-transcription.md §5 — use those as a correctness check on the transcription. I could not do this myself: pdftoppm is absent from crew-18 and I lack privileges to install system packages (pip install --break-system-packages pypdf worked, which is how the text layer was read; apt-get did not). WHAT IT UNBLOCKS: endgame nodes Q3' (instantiate Tartar's g) and R3 (transcribe the series as Lean definitions), and therefore R4, R5, R6 and R7 downstream of R3. That is five of the seven nodes in chapter node M10, the last L-sized node in the Odlyzko chapter.",
-      "acceptance_criteria": "Deliverable is a markdown file under cartography/ containing the transcribed equations with page and equation numbers, committed to FLT main. No Lean build is involved, so the sorry-count and build-closure clauses do not apply and must not be asserted. Correctness checks the reviewer should apply: (1) the transcribed (26), evaluated at n=8, r1=0, y=1.7242, must reproduce the paper's own stated (1/n)log|d| > 1.733311 — that is the internal consistency test, and the p.18 table's n=8 row 5.659362 satisfies exp(1.733311)=5.659361; (2) equation (25) must be stated in the totally imaginary case r1=0, which is the case the campaign needs, with the paper's stated accuracy loss of order 0.55e-7 recorded; (3) flag any digit or symbol that is unclear in the scan rather than guessing it — a wrong constant here propagates into the entire numerical column. DO NOT commit the PDF itself to the FLT repository: it is a third-party scan and redistribution is Kelvin's decision, not the worker's."
+      "acceptance_criteria": "Deliverable is a markdown file under cartography/ containing the transcribed equations with page and equation numbers, committed to FLT main. No Lean build is involved, so the sorry-count and build-closure clauses do not apply and must not be asserted. Correctness checks the reviewer should apply: (1) the transcribed (26), evaluated at n=8, r1=0, y=1.7242, must reproduce the paper's own stated (1/n)log|d| > 1.733311 — that is the internal consistency test, and the p.18 table's n=8 row 5.659362 satisfies exp(1.733311)=5.659361; (2) equation (25) must be stated in the totally imaginary case r1=0, which is the case the campaign needs, with the paper's stated accuracy loss of order 0.55e-7 recorded; (3) flag any digit or symbol that is unclear in the scan rather than guessing it — a wrong constant here propagates into the entire numerical column. DO NOT commit the PDF itself to the FLT repository: it is a third-party scan and redistribution is Kelvin's decision, not the worker's.",
+      "parent": "hub-oig35",
+      "campaign_root": "hub-flqy3",
+      "chapter_ref": "hub-lsb1u.6"
     },
     {
       "ref": "ENDGAME-Q3-abstract",
       "title": "Q3: pointwise nonnegativity of the autocorrelation, over an abstract g",
       "priority": "p1",
-      "labels": ["flt", "flt-p1", "run-001", "seed-fleet", "week-001", "lane:fleet-q2", "wave:flt-endgame-001", "refinement-candidate"],
-      "metadata": { "lane": "fleet_q2", "state": "curated_not_ready", "wave": "flt-endgame-001" },
+      "labels": [
+        "flt",
+        "flt-p1",
+        "run-001",
+        "seed-fleet",
+        "week-001",
+        "lane:fleet-q2",
+        "wave:flt-endgame-001",
+        "refinement-candidate"
+      ],
+      "metadata": {
+        "lane": "fleet_q2",
+        "state": "curated_not_ready",
+        "wave": "flt-endgame-001"
+      },
       "description": "The Odlyzko method needs a test function F with BOTH F >= 0 and Fhat >= 0, and those two conditions pull against each other — that tension is the whole difficulty. Node ENDGAME-Q1 gives Fhat >= 0 for free by taking F = g convolved with g-tilde, since then Fhat = |ghat|^2. Pointwise F >= 0 is NOT automatic for an autocorrelation and has to be earned by the specific choice of g. TASK: identify sufficient conditions on g under which the autocorrelation F = g * g-tilde satisfies F >= 0 pointwise, and prove the implication — stated over an ABSTRACT g carrying those conditions as hypotheses. Do NOT attempt to instantiate Tartar's specific g: its definition lives in Poitou's display equations, which are not yet transcribed (packet PQ1-TRANSCRIBE), and guessing it would be worse than leaving the node abstract. Instantiation is a separate node, Q3'. Splitting the analytic content from the instantiation this way is deliberate — it means the mathematics is not blocked on a library errand. See cartography/odlyzko-endgame-decomposition.md §3.",
-      "acceptance_criteria": "Acceptance runs in the ISOLATED flt-acceptance harness; a raw `lake build` in the reviewed worktree is not acceptance evidence. Comment-aware live sorry count equals 56 with prose 11 — delta [0,0]; hypotheses on g are explicit arguments, never sorry. Diff confined to the declared new file plus FLT.lean. BUILD CLOSURE (mandatory, and note that PR #9 just violated it): the diff must add the alphabetized public import line to FLT.lean and scripts/sorry_count.py --closure must not report the new module as an orphan; a new file nothing imports compiles green by not being compiled at all. Repo module idiom is mandatory and is not optional decoration: begin with `module`, use `public import`, `@[expose] public section`, Apache-2.0 header — 261 of 263 files under FLT/ do, and the two that do not are orphans. The receipt must state exactly which hypotheses on g were needed; if they turn out to be strong enough that Tartar's g might not satisfy them, say so, because that is a finding about the route and not merely about this node."
+      "acceptance_criteria": "Acceptance runs in the ISOLATED flt-acceptance harness; a raw `lake build` in the reviewed worktree is not acceptance evidence. Comment-aware live sorry count equals 56 with prose 11 — delta [0,0]; hypotheses on g are explicit arguments, never sorry. Diff confined to the declared new file plus FLT.lean. BUILD CLOSURE (mandatory, and note that PR #9 just violated it): the diff must add the alphabetized public import line to FLT.lean and scripts/sorry_count.py --closure must not report the new module as an orphan; a new file nothing imports compiles green by not being compiled at all. Repo module idiom is mandatory and is not optional decoration: begin with `module`, use `public import`, `@[expose] public section`, Apache-2.0 header — 261 of 263 files under FLT/ do, and the two that do not are orphans. The receipt must state exactly which hypotheses on g were needed; if they turn out to be strong enough that Tartar's g might not satisfy them, say so, because that is a finding about the route and not merely about this node.",
+      "parent": "hub-oig35",
+      "campaign_root": "hub-flqy3",
+      "chapter_ref": "hub-lsb1u.6"
     }
+  ],
+  "_parent_linkage_note": [
+    "*** PARENT LINKAGE — READ THIS BEFORE CREATING ANY BEAD FROM THIS FILE. ***",
+    "Original defect (fermat, found 2026-08-16T15:30Z): the records in this file were emitted",
+    "with labels and metadata but WITHOUT a parent/epic link. Created that way, each becomes a",
+    "PARENTLESS ROOT bead. The observable symptom is that a campaign dashboard driven by",
+    "`bd list -l flt --all` shows one of these packet titles as the campaign headline with a",
+    "'0/1 beads closed' counter, displacing the real campaign root — which looks exactly like",
+    "'all previous progress is gone' even though nothing was lost. That is what happened at",
+    "15:24Z. Every record below now carries parent/campaign_root fields.",
+    "",
+    "THE PARENT IDS ARE FABLE'S CALL, NOT MINE — I cannot read beads from crew-18 (the bridge",
+    "returns 403 command_rejected on every command), so I cannot confirm that `hub-oig35` is a",
+    "valid parent node rather than merely the prefix of hub-oig35.N. If the campaign uses a",
+    "different epic for packets, change the one `parent` field; nothing else depends on it.",
+    "",
+    "IF ANY OF THESE WERE ALREADY CREATED AS ROOTS: re-parent them rather than deleting and",
+    "recreating, so their ids and any receipts stay stable."
   ]
 }
