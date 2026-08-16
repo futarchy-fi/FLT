@@ -262,3 +262,37 @@ If either falsifies it, delete this section. If neither does, it is a gate hole.
   chosen the curated root deliberately, so propose, do not merge unilaterally.
 - **In CI:** run `scripts/sorry_count.py --closure` alongside the count. It exits 1 on any
   orphan and needs no toolchain, so it costs nothing.
+
+### 8b. The hazard fired again — on the C2 calibration packet itself (2026-08-16T15:24Z)
+
+§8 predicted that any packet creating a new file without an `FLT.lean` import line would get
+a green build that never compiled it. **PR #9 — hub-oig35.19, the C2 calibration leg, merged
+as `754e092` and declared GREEN — did exactly that.**
+
+It added `FLT/NumberField/ZetaFE/ZeroTheoryN2.lean`: 140 lines, two lemmas, zero sorries,
+node N2 of `odlyzko-m3-decomposition.md`. Verified against `754e092`:
+
+- **Orphan.** The string `ZeroTheoryN2` occurs nowhere in the repository except inside the
+  file itself (its own `namespace` open and close). `FLT.lean` does not import it; no `FLT`
+  module does. `scripts/sorry_count.py --closure` now lists three orphans, up from two.
+- **Not in the module idiom.** 261 of the 263 files under `FLT/` begin with `module`. This
+  one does not, and has no `public import` lines and no `@[expose] public section` — it uses
+  plain `import`. The other two non-conforming files are, fittingly, the two pre-existing
+  orphans.
+- **Invisible to the axiom census**, since `FermatsLastTheorem.lean` reaches it through
+  nothing.
+
+The count gate could not have caught this: the file adds no sorries, so `67 → 67` is correct
+and the packet passed honestly on the number it was given.
+
+**Consequence for `hub-r7qdn.7`.** Both calibration legs now have the same shape: C1 edited
+an orphan (`FLT/MazurW.lean`), C2 created one. If the acceptance runner builds the default
+target, neither leg compiled the file it was judged on, and the harness-selection evidence
+is weaker than it looks on the day it closes.
+
+**In fairness, one step could exonerate C2.** The isolated `flt-acceptance` runner may build
+by explicit module target rather than via the default target, in which case the file *was*
+compiled and this is a project-wiring defect rather than a vacuous verdict. That is a
+one-command check — read what `flt-acceptance` actually invokes — and it should be done
+before anyone either closes `hub-r7qdn.7` or reopens it. Packet `C2-CLOSURE-FIX` carries
+both the repair and that fairness note.
