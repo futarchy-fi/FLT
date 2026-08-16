@@ -251,3 +251,120 @@ held wave-3 units are released for fresh proof with nothing lost but the hold.
   Attribution headers must be preserved verbatim in every ported file.
 - **Coordinate with the author.** C. Birkbeck is already named in the standing coordination
   requirement. A port of this size should be agreed, not merely licence-compliant.
+
+---
+
+# ADDENDUM 2, 2026-08-16T13:0xZ — I under-read it. The whole project is live-sorry-free, and it includes an unconditional Weil explicit formula
+
+Addendum 1 looked at `CompletedZeta/` only, because that is the directory the port audit
+named. That was too narrow. `Normalisation.lean:27` cross-references
+`ExplicitFormula/WeilAssembly`, which sent me to the rest of the project.
+
+## A5. The full `DedekindResidue` project
+
+| directory | files | bytes | live `sorry`/`admit` | `axiom` decls |
+|---|---|---|---|---|
+| `CompletedZeta/` | 16 | 562 K | **0** | 0 |
+| `ExplicitFormula/` | 10 | 713 K | **0** | 0 |
+| root (`Theorem1`, `Lemma2`–`Lemma5`, `MainTheorem`, `QSide`, …) | 9 | 321 K | **0** | 0 |
+| **total** | **35** | **~1.6 MB** | **0** | **0** |
+
+A naive grep reports 2 hits in the root, in `Basic.lean:23` and
+`AuxiliaryFunction.lean:13`. Both are **prose inside docstrings** — the project describing
+*itself* as sorry-free:
+
+```
+Basic.lean:23  as an explicit hypothesis (never an `axiom`); every result is `sorry`-free
+AuxiliaryFunction.lean:13  Real, `sorry`-free definitions of the auxiliary functions from Belabas–Friedman,
+```
+
+Which is a neat confirmation of `oracle-recount.md` §1: the same prose-versus-proof
+distinction that makes FLT's gate constant 67-not-56 would have made this project look
+2-holes-short-of-clean if I had trusted `grep`. `scripts/sorry_count.py` reads it correctly.
+
+## A6. `ExplicitFormula/` is M4–M7, and the machinery is **not** GRH-conditional
+
+This is the part that changes the size of the prize. The ten files are
+
+```
+WeilAssembly 168K   GammaSide 231K   ZeroCapture 69K   PrimeSide 58K   GRHZeros 30K
+FourierJordan 76K   RectangleContour 28K   AuxAdmissible 28K   PhiTransform 16K   TestFunction 8K
+```
+
+with `WeilAssembly.lean:3128` `weil_explicit_formula_auxF` as the assembly point. Counting
+`GeneralizedRiemannHypothesis` mentions per file:
+
+```
+WeilAssembly 0    PrimeSide 0    GammaSide 0    ZeroCapture 0    TestFunction 0
+GRHZeros 4        Theorem1 3     MainTheorem 5
+```
+
+**GRH is quarantined.** The explicit-formula machinery — prime side, gamma side, zero
+capture, rectangle contour, test-function class, assembly — is unconditional. GRH enters
+only in `GRHZeros.lean` and the root application, and even there it is threaded as an
+explicit hypothesis, never an `axiom` (`Basic.lean:22`). That is exactly the discipline this
+campaign wants, and it means the machinery ports for an **unconditional** Odlyzko route.
+
+`TestFunction.lean` is my node **N19** (`IsAdmissibleTestFn`, plus
+`boundedVariationOn_of_deriv_integrable` and friends) — the Poitou admissible class,
+compactly supported with `F′` of bounded variation. I marked W3-12 "not covered" in
+addendum 1 on the strength of a grep confined to `CompletedZeta/`. **That was wrong; W3-12
+is covered.**
+
+## A7. What AINTLIB does *not* give us — and this is the part to be clear about
+
+**Its root theorem is Belabas–Friedman under GRH, not Odlyzko.** `MainTheorem.lean` states
+that under GRH, `log κ_K` (the residue of `ζ_K` at `s = 1`, i.e. Mathlib's
+`dedekindZeta_residue`) is approximated by a computable `f_K(X)` with explicit error
+`O(log Δ_K / (√X log X))` — Belabas–Friedman, arXiv:1305.0035. That is a different
+destination from `FLT/Assumptions/Odlyzko.lean:57`, which is **unconditional**:
+`|discr K| ≥ 8.25 ^ finrank ℚ K` for totally complex `K` of degree `≥ 18`.
+
+So the correct statement of what a port buys is:
+
+- **Covered, sorry-free, unconditional:** M2 (completed `Λ_K`, the functional equation),
+  much of M3 (Gamma strip bounds, Borel–Carathéodory, holomorphic log, Jensen/divisor zero
+  counting), and M4–M7 (the Weil explicit formula and its admissible test-function class).
+- **Not covered:** node F1 (partial zeta functions as Dirichlet series — verified absent
+  from all 35 files; AINTLIB does its class decomposition entirely on the theta side, via
+  `heckeGClass`/`heckeF`, and never forms `ζ(A,s)`), and **the Odlyzko application itself**
+  — the arithmetic that turns an explicit formula into a discriminant lower bound with the
+  constant `8.25` and the degree-18 threshold. AINTLIB walks to Belabas–Friedman instead.
+
+**The remaining FLT-specific work is therefore the Odlyzko endgame on top of a ported,
+unconditional explicit formula.** That is a much smaller and better-shaped job than the
+45-leaf wave — but it is a real job, and it is the one thing nobody else has done for us.
+Nothing here says the axiom falls out of a port.
+
+## A8. Consequences for dispatch
+
+- **Hold: W3-01…W3-09, W3-11, W3-12, W3-13** — twelve, up from eleven. W3-12 (N19) joins
+  the hold; it is `ExplicitFormula/TestFunction.lean`.
+- **Dispatch: W3-00, W3-10, W3-14, W3-15.** W3-10 (F1, partial zeta) is released from the
+  hold: I checked all 35 files and there is no partial-zeta object anywhere, so it is
+  genuinely fresh work whichever way the port goes.
+- **AINTLIB-0′ (§A3) is unchanged and still the priority**, but its payoff is now larger
+  than §A3 claims: it gates a port of ~1.6 MB of unconditional, sorry-free number theory
+  covering M2, most of M3, and M4–M7 — not just the M2 tree.
+- **Scope note for AINTLIB-0′:** build `DedekindResidue.CompletedZeta` **and**
+  `DedekindResidue.ExplicitFormula`, not `CompletedZeta` alone. The root
+  (`Theorem1`/`MainTheorem`) can be excluded — it is the Belabas–Friedman application we do
+  not need — which also keeps the build smaller.
+
+## A9. Confidence, stated honestly
+
+I have now read declaration signatures across all 35 files and read two files closely
+(`FunctionalEquation.lean`, `MainTheorem.lean` in part). The sorry/axiom counts are
+mechanical and I trust them. The **coverage map is signature-level**: I have matched node
+statements to declaration names and types, not verified that each ported statement is
+strong enough for the consumer FLT node. Two specific things a reviewer should re-derive
+rather than take from me:
+
+1. whether `IsAdmissibleTestFn` is exactly the class N20/M7 need, or a variant;
+2. whether the `GammaStrip` two-sided bounds cover N3's `[a,b]`-strip generality or only
+   the `[1/2, 3/2]` window their signatures show (`Gamma_le_max_of_mem_Icc`,
+   `norm_Gamma_le_mul_exp` are stated on `Icc (1/2) (3/2)` and `Icc (-(1/2)) (1/2)`).
+
+And the standing caveat has not moved: **no Lean CI on that repo, no toolchain here.**
+Every count above is textual. AINTLIB-0′ is still the only thing that turns any of this
+into fact.

@@ -12,7 +12,7 @@ something it can execute without asking a question — no target paths that exis
 units that have zero unmet dependencies today.** Everything below is dispatchable the
 moment the pool has capacity; nothing below waits on another packet in this document.
 
-> ## CORRECTION, 2026-08-16T12:52Z — HOLD 11 OF THE 16 UNITS
+> ## CORRECTION, 2026-08-16T12:52Z, revised 13:00Z — HOLD 12 OF THE 16 UNITS
 >
 > After publishing this document I read the AINTLIB source instead of trusting the port
 > audit's second-hand summary. All 16 files of its `CompletedZeta` tree are **sorry-free,
@@ -21,20 +21,34 @@ moment the pool has capacity; nothing below waits on another packet in this docu
 > `exists_isCompletedDedekindZeta` (Hecke's theorem) and `completedDedekindZeta_one_sub`
 > (the functional equation `Λ_K(1−s) = Λ_K(s)`).
 >
-> **W3-01 through W3-11 and W3-13 would re-prove work that already exists.** See
+> **Twelve of the sixteen would re-prove work that already exists** (the hold list
+> below, as revised at 13:00Z). See
 > `aintlib-substrate.md` §A2 for the file-by-file coverage map. My §5 ordering below was
 > right that AINTLIB gates this wave and wrong about how urgently: it is not a
 > precaution, it is the first packet.
 >
-> **Dispatch now:** W3-00 (build closure), W3-14 and W3-15 (CBC Flash units, unrelated to
-> zeta), W3-12 (N19 — past `CompletedZeta`'s scope, not covered).
-> **Hold:** W3-01…W3-11 and W3-13, pending **AINTLIB-0′** (`aintlib-substrate.md` §A3) —
-> a bump-first build check that runs on today's worker image without the multi-toolchain
-> elan the infra queue is still holding.
+> **Dispatch now:** W3-00 (build closure), W3-10 (F1 partial zeta), W3-14 and W3-15 (CBC
+> Flash units, unrelated to zeta).
+> **Hold:** W3-01…W3-09, W3-11, W3-12 and W3-13, pending **AINTLIB-0′**
+> (`aintlib-substrate.md` §A3) — a bump-first build check that runs on today's worker image
+> without the multi-toolchain elan the infra queue is still holding.
+>
+> **UPDATED 13:00Z (addendum 2).** My first pass grepped only AINTLIB's `CompletedZeta/`
+> directory. The project has two more: `ExplicitFormula/` (10 files, 713 KB) and a root
+> (9 files, 321 KB). **All 35 files are live-sorry-free and axiom-free** — the 2 raw grep
+> hits are prose in docstrings, which `scripts/sorry_count.py` reads correctly and `grep`
+> does not. `ExplicitFormula/` is the Weil explicit formula (M4–M7) and it is **not**
+> GRH-conditional: `WeilAssembly`, `PrimeSide`, `GammaSide`, `ZeroCapture` and
+> `TestFunction` mention GRH zero times; it is quarantined to `GRHZeros.lean` and the root.
+> Two swaps follow: **W3-12 (N19) moves to HOLD** — it is `ExplicitFormula/TestFunction.lean`
+> (`IsAdmissibleTestFn`) and I called it uncovered on the strength of a too-narrow grep —
+> and **W3-10 (F1) is RELEASED**, since no partial-zeta Dirichlet object exists in any of
+> the 35 files. What AINTLIB does *not* have is the Odlyzko endgame: its root theorem is
+> Belabas–Friedman **under GRH**, not the unconditional `|discr K| ≥ 8.25^n`. See §A5–A9.
 >
 > The one thing not verified: AINTLIB has no Lean build CI, so sorry-free by grep is not
 > the same as compiles. AINTLIB-0′ is precisely that experiment. If it comes back red, the
-> eleven held units release immediately and nothing is lost but the hold.
+> twelve held units release immediately and nothing is lost but the hold.
 
 Two things changed since wave 2 was written and both change what a packet must contain:
 
@@ -481,7 +495,7 @@ the single highest-priority packet in the campaign, with `W3-14`, `W3-15` and `W
 running alongside it since none of the three touches the zeta tree. Everything else waits
 on AINTLIB-0′'s verdict. That is three concurrent units rather than six, which is the
 correct trade: the pool is not short of capacity, it is one build-check away from knowing
-whether eleven of its queued units are necessary at all.
+whether twelve of its queued units are necessary at all.
 
 Constraint 2 above understated this. It said to run the AINTLIB gate "before dispatching
 zeta-tree work beyond this wave". The gate belongs *before this wave*, and the reason
