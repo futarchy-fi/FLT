@@ -290,10 +290,10 @@ theorem mazur_W_nonvacuity_full_two_torsion :
       letI : E.IsElliptic := hE
       ∃ f : (ZMod 2 × ZMod 2) →+ (E⁄ℚ).Point,
         Function.Injective f := by
-  let E : WeierstrassCurve ℚ := ⟨0, 0, 0, -1, 0⟩
+  let E : WeierstrassCurve ℚ := ⟨0, 0, 0, -4, 0⟩
   have hE : E.IsElliptic := by
     refine ⟨?_⟩
-    have hΔ : E.Δ = (64 : ℚ) := by
+    have hΔ : E.Δ = (4096 : ℚ) := by
       norm_num [E, WeierstrassCurve.Δ, WeierstrassCurve.b₂,
         WeierstrassCurve.b₄, WeierstrassCurve.b₆, WeierstrassCurve.b₈]
     rw [hΔ]
@@ -308,14 +308,14 @@ theorem mazur_W_nonvacuity_full_two_torsion :
       (W := E⁄ℚ)).mp
     rw [WeierstrassCurve.Affine.equation_iff]
     norm_num [E, WeierstrassCurve.baseChange, WeierstrassCurve.map]
-  have hQ : (E⁄ℚ).Nonsingular 1 0 := by
+  have hQ : (E⁄ℚ).Nonsingular 2 0 := by
     apply (WeierstrassCurve.Affine.equation_iff_nonsingular
       (W := E⁄ℚ)).mp
     rw [WeierstrassCurve.Affine.equation_iff]
     norm_num [E, WeierstrassCurve.baseChange, WeierstrassCurve.map]
 
   let P : (E⁄ℚ).Point := .some 0 0 hP
-  let Q : (E⁄ℚ).Point := .some 1 0 hQ
+  let Q : (E⁄ℚ).Point := .some 2 0 hQ
 
   have hPadd : P + P = 0 := by
     dsimp [P]
@@ -337,7 +337,7 @@ theorem mazur_W_nonvacuity_full_two_torsion :
   have hPQ : P ≠ Q := by
     intro h
     dsimp [P, Q] at h
-    have hx : (0 : ℚ) = 1 := by
+    have hx : (0 : ℚ) = 2 := by
       exact (WeierstrassCurve.Affine.Point.some.inj h).1
     norm_num at hx
 
