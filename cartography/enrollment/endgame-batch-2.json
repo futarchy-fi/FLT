@@ -29,98 +29,237 @@
     "removing an axiom does not move the count). Also Q3', R3 and R4-R7: gated on PQ1, the",
     "unfetched Poitou artifact. See cartography/odlyzko-endgame-decomposition.md §7."
   ],
-
   "beads": [
     {
       "ref": "hub-oig35.3-ACCEPTANCE-CORRECTION",
       "title": "hub-oig35.3 (A14 Pontryagin) — acceptance constants are stale, re-declare before dispatch",
       "priority": "p0",
       "is_correction_to_existing_bead": true,
-      "labels": ["flt", "flt-p0", "run-001", "seed-fleet", "week-001", "lane:fleet-q2", "wave:flt-wave-003", "refinement-candidate"],
-      "metadata": { "lane": "fleet_q2", "state": "curated_not_ready", "wave": "flt-wave-003" },
+      "labels": [
+        "flt",
+        "flt-p0",
+        "run-001",
+        "seed-fleet",
+        "week-001",
+        "lane:fleet-q2",
+        "wave:flt-wave-003",
+        "refinement-candidate"
+      ],
+      "metadata": {
+        "lane": "fleet_q2",
+        "state": "curated_not_ready",
+        "wave": "flt-wave-003"
+      },
       "description": "NOT a new packet — a correction to the existing bead hub-oig35.3 before it is dispatched. The packet itself is still valid: the target hole is live at FLT/Patching/Utils/CompactHausdorffRings.lean:42, in theorem Group.subsingleton_of_pow_prime_eq_one, and its statement is byte-identical to when the packet was written (re-verified against main 0ffa532 this session). What has gone stale is the acceptance constant. Two merges landed this morning — PR #7 (C1, delta [0,0]) and PR #8 (hub-oig35.20, delta [-4,-4]) — moving the global count from 71 naive to 67 naive, 60 live to 56 live. A packet still carrying 70 or 71 as its post-condition will FALSE-FAIL a correct proof. Delta is unchanged at [-1,-1] because deltas are relative.",
-      "acceptance_criteria": "Corrected constants: after a correct proof the naive count must be 66 and the comment-aware live count 55 (from baseline 67 naive / 56 live at main 0ffa532, delta [-1,-1]). Prose count must remain 11. TWO CLAUSES THIS PACKET SPECIFICALLY NEEDS: (1) the same file carries a prose occurrence of the word 'admit' inside a docstring at line 89 ('does not admit a nontrivial ...'), so the diff must not touch that line — if it does, the naive counter mis-gates; (2) build closure is already satisfied here, since CompactHausdorffRings is reachable from FLT.lean via FLT/Patching/, so no FLT.lean edit is needed — recorded so the reviewer can tick it rather than wonder. Standard clauses otherwise: lake build exits 0; diff confined to FLT/Patching/Utils/CompactHausdorffRings.lean; the theorem statement byte-identical to base, only the sorry line removed; no new axiom."
+      "acceptance_criteria": "Acceptance runs in the ISOLATED flt-acceptance harness and nowhere else — a raw `lake build` in the reviewed worktree is NOT acceptance evidence (C2 lesson, 2026-08-16): it can go green off the worker's own build state, so it is not reproducible from the reviewed tree alone. The isolated runner must exit 0. Corrected constants: after a correct proof the naive count must be 66 and the comment-aware live count 55 (from baseline 67 naive / 56 live at main 0ffa532, delta [-1,-1]). Prose count must remain 11. TWO CLAUSES THIS PACKET SPECIFICALLY NEEDS: (1) the same file carries a prose occurrence of the word 'admit' inside a docstring at line 89 ('does not admit a nontrivial ...'), so the diff must not touch that line — if it does, the naive counter mis-gates; (2) build closure is already satisfied here, since CompactHausdorffRings is reachable from FLT.lean via FLT/Patching/, so no FLT.lean edit is needed — recorded so the reviewer can tick it rather than wonder. Standard clauses otherwise: diff confined to FLT/Patching/Utils/CompactHausdorffRings.lean; the theorem statement byte-identical to base, only the sorry line removed; no new axiom."
     },
     {
       "ref": "ENDGAME-P3",
       "title": "P3: zero side of the explicit formula is nonnegative on the critical line",
       "priority": "p1",
-      "labels": ["flt", "flt-p1", "run-001", "seed-fleet", "week-001", "lane:fleet-q2", "wave:flt-endgame-001", "refinement-candidate"],
-      "metadata": { "lane": "fleet_q2", "state": "curated_not_ready", "wave": "flt-endgame-001" },
+      "labels": [
+        "flt",
+        "flt-p1",
+        "run-001",
+        "seed-fleet",
+        "week-001",
+        "lane:fleet-q2",
+        "wave:flt-endgame-001",
+        "refinement-candidate"
+      ],
+      "metadata": {
+        "lane": "fleet_q2",
+        "state": "curated_not_ready",
+        "wave": "flt-endgame-001"
+      },
       "description": "For a zero rho = 1/2 + i*gamma of the completed zeta with gamma real, show that the explicit formula's zero-side contribution Phi_F(rho) equals Fhat(gamma) and is therefore nonnegative, given the hypothesis Fhat >= 0. State Fhat >= 0 as an explicit hypothesis argument (node ENDGAME-Q1 supplies it for autocorrelations). This is the easy half of the zero-side discard and, importantly, it is NOT where GRH would have been used — that is node P4. Depends on ENDGAME-P1 for the shape of the formula; if P1 has not landed, restate its conclusion as a local hypothesis. See cartography/odlyzko-endgame-decomposition.md §2.",
-      "acceptance_criteria": "lake build exits 0. Comment-aware live sorry count equals 56 (delta [0,0]) — state prerequisites as hypothesis arguments, never as sorry. Prose count equals 11. Diff confined to the declared file plus FLT.lean. BUILD CLOSURE (mandatory): the diff must add the alphabetized public import line to FLT.lean, else the new file is never compiled and this gate passes vacuously; scripts/sorry_count.py --closure must exit 0. No new axiom keyword. Do not modify any existing sorry/admit line. Repo module idiom: Apache-2.0 header, module, public import lines, @[expose] public section, /-! # -/ docstring."
+      "acceptance_criteria": "Acceptance runs in the ISOLATED flt-acceptance harness and nowhere else — a raw `lake build` in the reviewed worktree is NOT acceptance evidence (C2 lesson, 2026-08-16): it can go green off the worker's own build state, so it is not reproducible from the reviewed tree alone. The isolated runner must exit 0. Comment-aware live sorry count equals 56 (delta [0,0]) — state prerequisites as hypothesis arguments, never as sorry. Prose count equals 11. Diff confined to the declared file plus FLT.lean. BUILD CLOSURE (mandatory): the diff must add the alphabetized public import line to FLT.lean, else the new file is never compiled and this gate passes vacuously; scripts/sorry_count.py --closure must exit 0. No new axiom keyword. Do not modify any existing sorry/admit line. Repo module idiom: Apache-2.0 header, module, public import lines, @[expose] public section, /-! # -/ docstring."
     },
     {
       "ref": "ENDGAME-P4",
       "title": "P4: zero side is nonnegative OFF the critical line — the GRH-free step",
       "priority": "p1",
-      "labels": ["flt", "flt-p1", "delicate", "run-001", "seed-fleet", "week-001", "lane:fleet-q2", "wave:flt-endgame-001", "refinement-candidate"],
-      "metadata": { "lane": "fleet_q2", "state": "curated_not_ready", "wave": "flt-endgame-001" },
+      "labels": [
+        "flt",
+        "flt-p1",
+        "delicate",
+        "run-001",
+        "seed-fleet",
+        "week-001",
+        "lane:fleet-q2",
+        "wave:flt-endgame-001",
+        "refinement-candidate"
+      ],
+      "metadata": {
+        "lane": "fleet_q2",
+        "state": "curated_not_ready",
+        "wave": "flt-endgame-001"
+      },
       "description": "The node that makes the whole Odlyzko method unconditional. For a zero rho = beta + i*gamma with beta not equal to 1/2, Phi_F(rho) is not literally Fhat of a real number, so P3 does not apply. Pair rho with its functional-equation partner 1 - conj(rho) — both are zeros, by Lambda_K(s) = Lambda_K(1-s) together with Lambda_K(conj s) = conj(Lambda_K(s)) — and show the PAIR contributes nonnegatively. For F even with Fhat >= 0 the pair sum has the shape integral of F(x) * 2*cosh((beta - 1/2)*x) * cos(gamma*x) dx; nonnegativity comes from the Tartar/maximum-principle argument that odlyzko-reconciled.md node M8 describes as 'positivity on the full critical strip'. State 0 <= beta <= 1 as an explicit hypothesis — the zeros lie in the strip by chapter node M3 — and do not attempt a sharper region. THIS IS THE MOST DELICATE NODE IN M8 and the one I expect may exceed size M.",
-      "acceptance_criteria": "lake build exits 0. Comment-aware live sorry count equals 56 (delta [0,0]). Prose count equals 11. Diff confined to the declared file plus FLT.lean. BUILD CLOSURE (mandatory) as in ENDGAME-P3. No new axiom keyword. *** HARD CONTRACT, ESCALATE RATHER THAN BREAK IT: this node must NOT acquire a Riemann-Hypothesis or GRH hypothesis. *** If the proof appears to need one, stop and report — a GRH-conditional P4 silently converts the campaign's unconditional target (|discr K| >= 8.25^n, no hypotheses) into a conditional one, which is precisely the weaker destination AINTLIB walks to and precisely what this chapter exists to avoid. A packet that returns 'proved, assuming GRH' is a FAILED packet, not a partial success. Permitted hypotheses are exactly: 0 <= beta <= 1, F even, Fhat >= 0, and F admissible."
+      "acceptance_criteria": "Acceptance runs in the ISOLATED flt-acceptance harness and nowhere else — a raw `lake build` in the reviewed worktree is NOT acceptance evidence (C2 lesson, 2026-08-16): it can go green off the worker's own build state, so it is not reproducible from the reviewed tree alone. The isolated runner must exit 0. Comment-aware live sorry count equals 56 (delta [0,0]). Prose count equals 11. Diff confined to the declared file plus FLT.lean. BUILD CLOSURE (mandatory) as in ENDGAME-P3. No new axiom keyword. *** HARD CONTRACT, ESCALATE RATHER THAN BREAK IT: this node must NOT acquire a Riemann-Hypothesis or GRH hypothesis. *** If the proof appears to need one, stop and report — a GRH-conditional P4 silently converts the campaign's unconditional target (|discr K| >= 8.25^n, no hypotheses) into a conditional one, which is precisely the weaker destination AINTLIB walks to and precisely what this chapter exists to avoid. A packet that returns 'proved, assuming GRH' is a FAILED packet, not a partial success. Permitted hypotheses are exactly: 0 <= beta <= 1, F even, Fhat >= 0, and F admissible."
     },
     {
       "ref": "ENDGAME-P5",
       "title": "P5: the discard inequality",
       "priority": "p1",
-      "labels": ["flt", "flt-p1", "run-001", "seed-fleet", "week-001", "lane:fleet-q2", "wave:flt-endgame-001", "refinement-candidate"],
-      "metadata": { "lane": "fleet_q2", "state": "curated_not_ready", "wave": "flt-endgame-001" },
+      "labels": [
+        "flt",
+        "flt-p1",
+        "run-001",
+        "seed-fleet",
+        "week-001",
+        "lane:fleet-q2",
+        "wave:flt-endgame-001",
+        "refinement-candidate"
+      ],
+      "metadata": {
+        "lane": "fleet_q2",
+        "state": "curated_not_ready",
+        "wave": "flt-endgame-001"
+      },
       "description": "Assemble M8: from the explicit-formula identity (ENDGAME-P1), the prime-side nonnegativity (ENDGAME-P2) and the zero-side nonnegativity (ENDGAME-P3 and ENDGAME-P4), derive log|d_K| >= n * A_infinity(F) - (pole terms), with the pole contribution written explicitly in terms of Fhat at the points corresponding to s = 0 and s = 1. Sketch: drop the two nonnegative sides from the identity and rearrange. This inequality is what every later endgame node consumes, so its exact shape is a contract — see cartography/odlyzko-endgame-decomposition.md §2. State the prerequisites as explicit hypothesis arguments so the node is provable before P1-P4 land.",
-      "acceptance_criteria": "lake build exits 0. Comment-aware live sorry count equals 56 (delta [0,0]). Prose count equals 11. Diff confined to the declared file plus FLT.lean. BUILD CLOSURE (mandatory) as in ENDGAME-P3. No new axiom keyword. Reviewer must check the SIGN of the pole term and the placement of the factor n specifically — an error there is inherited silently by every node in M9 through M11 and surfaces only at the final numerical comparison."
+      "acceptance_criteria": "Acceptance runs in the ISOLATED flt-acceptance harness and nowhere else — a raw `lake build` in the reviewed worktree is NOT acceptance evidence (C2 lesson, 2026-08-16): it can go green off the worker's own build state, so it is not reproducible from the reviewed tree alone. The isolated runner must exit 0. Comment-aware live sorry count equals 56 (delta [0,0]). Prose count equals 11. Diff confined to the declared file plus FLT.lean. BUILD CLOSURE (mandatory) as in ENDGAME-P3. No new axiom keyword. Reviewer must check the SIGN of the pole term and the placement of the factor n specifically — an error there is inherited silently by every node in M9 through M11 and surfaces only at the final numerical comparison."
     },
     {
       "ref": "ENDGAME-Q2",
       "title": "Q2: the autocorrelation is an admissible test function",
       "priority": "p1",
-      "labels": ["flt", "flt-p1", "run-001", "seed-fleet", "week-001", "lane:fleet-q2", "wave:flt-endgame-001", "refinement-candidate"],
-      "metadata": { "lane": "fleet_q2", "state": "curated_not_ready", "wave": "flt-endgame-001" },
+      "labels": [
+        "flt",
+        "flt-p1",
+        "run-001",
+        "seed-fleet",
+        "week-001",
+        "lane:fleet-q2",
+        "wave:flt-endgame-001",
+        "refinement-candidate"
+      ],
+      "metadata": {
+        "lane": "fleet_q2",
+        "state": "curated_not_ready",
+        "wave": "flt-endgame-001"
+      },
       "description": "Show that F = g convolved with g-tilde (node ENDGAME-Q1) satisfies the admissibility hypotheses of the Weil-Poitou explicit formula, for g real, even, compactly supported and Lipschitz. Target the Belabas-Friedman class rather than a narrower one: even (from Q1); the exponentially-weighted bounded-variation and integrability conditions, which follow from compact support plus Lipschitz; the bounded variation of (F(0) - F(x))/x, from F Lipschitz near 0; and the jump-average condition, trivially, since F is continuous. NOTE ON PRIOR ART: AINTLIB's ExplicitFormula/TestFunction.lean carries exactly the two workhorse lemmas this needs — boundedVariationOn_of_deriv_integrable and boundedVariationOn_Ici_of_piecewise_deriv — so if the AINTLIB port lands this node becomes nearly free. It is enrolled anyway because it is provable without the port and is not on the port's critical path.",
-      "acceptance_criteria": "lake build exits 0. Comment-aware live sorry count equals 56 (delta [0,0]). Prose count equals 11. Diff confined to the declared file plus FLT.lean. BUILD CLOSURE (mandatory) as in ENDGAME-P3. No new axiom keyword. If the honest proof needs a hypothesis on g beyond even/compactly-supported/Lipschitz/real, ADD it and say so explicitly in the receipt rather than weakening the conclusion."
+      "acceptance_criteria": "Acceptance runs in the ISOLATED flt-acceptance harness and nowhere else — a raw `lake build` in the reviewed worktree is NOT acceptance evidence (C2 lesson, 2026-08-16): it can go green off the worker's own build state, so it is not reproducible from the reviewed tree alone. The isolated runner must exit 0. Comment-aware live sorry count equals 56 (delta [0,0]). Prose count equals 11. Diff confined to the declared file plus FLT.lean. BUILD CLOSURE (mandatory) as in ENDGAME-P3. No new axiom keyword. If the honest proof needs a hypothesis on g beyond even/compactly-supported/Lipschitz/real, ADD it and say so explicitly in the receipt rather than weakening the conclusion."
     },
     {
       "ref": "ENDGAME-Q4",
       "title": "Q4: the scaling family and its Fourier transform",
       "priority": "p2",
-      "labels": ["flt", "flt-p2", "run-001", "seed-fleet", "week-001", "lane:fleet-q2", "wave:flt-endgame-001", "refinement-candidate"],
-      "metadata": { "lane": "fleet_q2", "state": "curated_not_ready", "wave": "flt-endgame-001" },
+      "labels": [
+        "flt",
+        "flt-p2",
+        "run-001",
+        "seed-fleet",
+        "week-001",
+        "lane:fleet-q2",
+        "wave:flt-endgame-001",
+        "refinement-candidate"
+      ],
+      "metadata": {
+        "lane": "fleet_q2",
+        "state": "curated_not_ready",
+        "wave": "flt-endgame-001"
+      },
       "description": "For y > 0 define F_y(x) = F(x/y). Prove that its Fourier transform is Fhat_y(t) = y * Fhat(y*t); that nonnegativity of both F and Fhat is preserved by the scaling; and that admissibility is preserved. Sketch: change of variables. Mathlib anchors: the Real.fourierIntegral composition lemmas and MeasureTheory.integral_comp_smul. Small but load-bearing — the entire numerical optimization in chapter node M10 is a search over this y, so the transform law here fixes how y enters every later formula.",
-      "acceptance_criteria": "lake build exits 0. Comment-aware live sorry count equals 56 (delta [0,0]). Prose count equals 11. Diff confined to the declared file plus FLT.lean. BUILD CLOSURE (mandatory) as in ENDGAME-P3. No new axiom keyword. State the scaling convention explicitly in the module docstring — F_y(x) = F(x/y), not F(y*x) — because a reversed convention here inverts the direction of the later optimization and the error would only surface numerically."
+      "acceptance_criteria": "Acceptance runs in the ISOLATED flt-acceptance harness and nowhere else — a raw `lake build` in the reviewed worktree is NOT acceptance evidence (C2 lesson, 2026-08-16): it can go green off the worker's own build state, so it is not reproducible from the reviewed tree alone. The isolated runner must exit 0. Comment-aware live sorry count equals 56 (delta [0,0]). Prose count equals 11. Diff confined to the declared file plus FLT.lean. BUILD CLOSURE (mandatory) as in ENDGAME-P3. No new axiom keyword. State the scaling convention explicitly in the module docstring — F_y(x) = F(x/y), not F(y*x) — because a reversed convention here inverts the direction of the later optimization and the error would only surface numerically."
     },
     {
       "ref": "ENDGAME-Q5",
       "title": "Q5: Poitou (13) — the scaled inequality and the function L1(y)",
       "priority": "p1",
-      "labels": ["flt", "flt-p1", "run-001", "seed-fleet", "week-001", "lane:fleet-q2", "wave:flt-endgame-001", "refinement-candidate"],
-      "metadata": { "lane": "fleet_q2", "state": "curated_not_ready", "wave": "flt-endgame-001" },
+      "labels": [
+        "flt",
+        "flt-p1",
+        "run-001",
+        "seed-fleet",
+        "week-001",
+        "lane:fleet-q2",
+        "wave:flt-endgame-001",
+        "refinement-candidate"
+      ],
+      "metadata": {
+        "lane": "fleet_q2",
+        "state": "curated_not_ready",
+        "wave": "flt-endgame-001"
+      },
       "description": "Feed the scaled family F_y (ENDGAME-Q4) into the discard inequality (ENDGAME-P5) and divide by n to obtain a lower bound on the root discriminant |d_K|^(1/n). Specialize to the totally complex case r1 = 0 — which is what the target axiom assumes — collapsing the archimedean side to a single Gamma-complex-type term. OUTPUT CONTRACT, and this is the whole point of the node: produce a single real-valued function L1 : positive reals -> reals together with the theorem that for n >= 1 and y > 0, log|d_K| / n >= L1(y) - (pole correction)/n. Everything in chapter nodes M10 and M11 is about evaluating this one L1 at one well-chosen y, so its definition is a contract consumed downstream; name it and document it accordingly. See cartography/odlyzko-endgame-decomposition.md §3.",
-      "acceptance_criteria": "lake build exits 0. Comment-aware live sorry count equals 56 (delta [0,0]). Prose count equals 11. Diff confined to the declared file plus FLT.lean. BUILD CLOSURE (mandatory) as in ENDGAME-P3. No new axiom keyword. The receipt must state the exact definition of L1 and the exact form of the pole correction, since ENDGAME-S1 asserts that the n-dependence is a clean C/n and that claim is currently stated but not shown — if it turns out not to be of that shape, say so loudly, because it re-sizes S1."
+      "acceptance_criteria": "Acceptance runs in the ISOLATED flt-acceptance harness and nowhere else — a raw `lake build` in the reviewed worktree is NOT acceptance evidence (C2 lesson, 2026-08-16): it can go green off the worker's own build state, so it is not reproducible from the reviewed tree alone. The isolated runner must exit 0. Comment-aware live sorry count equals 56 (delta [0,0]). Prose count equals 11. Diff confined to the declared file plus FLT.lean. BUILD CLOSURE (mandatory) as in ENDGAME-P3. No new axiom keyword. The receipt must state the exact definition of L1 and the exact form of the pole correction, since ENDGAME-S1 asserts that the n-dependence is a clean C/n and that claim is currently stated but not shown — if it turns out not to be of that shape, say so loudly, because it re-sizes S1."
     },
     {
       "ref": "ENDGAME-S1",
       "title": "S1: fixed-y monotonicity in the degree n",
       "priority": "p2",
-      "labels": ["flt", "flt-p2", "run-001", "seed-fleet", "week-001", "lane:fleet-q2", "wave:flt-endgame-001", "refinement-candidate"],
-      "metadata": { "lane": "fleet_q2", "state": "curated_not_ready", "wave": "flt-endgame-001" },
+      "labels": [
+        "flt",
+        "flt-p2",
+        "run-001",
+        "seed-fleet",
+        "week-001",
+        "lane:fleet-q2",
+        "wave:flt-endgame-001",
+        "refinement-candidate"
+      ],
+      "metadata": {
+        "lane": "fleet_q2",
+        "state": "curated_not_ready",
+        "wave": "flt-endgame-001"
+      },
       "description": "At a fixed y0, show the bound L1(y0) - C/n is nondecreasing in n, where C > 0 is the pole-correction constant from ENDGAME-Q5. Sketch: C/n is decreasing in n, so subtracting it is increasing. This is what lets a single numerical evaluation at n = 18 cover every n >= 18. CAVEAT WORTH READING BEFORE STARTING: the claim that the only n-dependence enters as C/n is inherited from odlyzko-reconciled.md and is stated there rather than shown. Q5 is the node that makes it concrete. If the n-dependence turns out to have another shape, this node changes character and must be re-sized — flag it rather than forcing a proof.",
-      "acceptance_criteria": "lake build exits 0. Comment-aware live sorry count equals 56 (delta [0,0]). Prose count equals 11. Diff confined to the declared file plus FLT.lean. BUILD CLOSURE (mandatory) as in ENDGAME-P3. No new axiom keyword. If the n-dependence is not of the form C/n with C > 0 independent of n, do NOT force a proof under a false premise: report the actual shape and stop. That report is a successful outcome for this packet."
+      "acceptance_criteria": "Acceptance runs in the ISOLATED flt-acceptance harness and nowhere else — a raw `lake build` in the reviewed worktree is NOT acceptance evidence (C2 lesson, 2026-08-16): it can go green off the worker's own build state, so it is not reproducible from the reviewed tree alone. The isolated runner must exit 0. Comment-aware live sorry count equals 56 (delta [0,0]). Prose count equals 11. Diff confined to the declared file plus FLT.lean. BUILD CLOSURE (mandatory) as in ENDGAME-P3. No new axiom keyword. If the n-dependence is not of the form C/n with C > 0 independent of n, do NOT force a proof under a false premise: report the actual shape and stop. That report is a successful outcome for this packet."
     },
     {
       "ref": "ENDGAME-S2",
       "title": "S2: the bound holds for every degree n >= 18",
       "priority": "p2",
-      "labels": ["flt", "flt-p2", "run-001", "seed-fleet", "week-001", "lane:fleet-q2", "wave:flt-endgame-001", "refinement-candidate"],
-      "metadata": { "lane": "fleet_q2", "state": "curated_not_ready", "wave": "flt-endgame-001" },
+      "labels": [
+        "flt",
+        "flt-p2",
+        "run-001",
+        "seed-fleet",
+        "week-001",
+        "lane:fleet-q2",
+        "wave:flt-endgame-001",
+        "refinement-candidate"
+      ],
+      "metadata": {
+        "lane": "fleet_q2",
+        "state": "curated_not_ready",
+        "wave": "flt-endgame-001"
+      },
       "description": "Combine the fixed-y monotonicity (ENDGAME-S1) with the certified base case at n = 18 (chapter node R6) to conclude that for every n >= 18, log|d_K| / n >= log 8.25. State the n = 18 base case as an explicit hypothesis argument — R6 is gated on the unfetched Poitou artifact (PQ1) and this node must not wait for it. Sketch: induction or direct monotonicity from the base case.",
-      "acceptance_criteria": "lake build exits 0. Comment-aware live sorry count equals 56 (delta [0,0]) — the R6 base case is a hypothesis argument, never a sorry. Prose count equals 11. Diff confined to the declared file plus FLT.lean. BUILD CLOSURE (mandatory) as in ENDGAME-P3. No new axiom keyword."
+      "acceptance_criteria": "Acceptance runs in the ISOLATED flt-acceptance harness and nowhere else — a raw `lake build` in the reviewed worktree is NOT acceptance evidence (C2 lesson, 2026-08-16): it can go green off the worker's own build state, so it is not reproducible from the reviewed tree alone. The isolated runner must exit 0. Comment-aware live sorry count equals 56 (delta [0,0]) — the R6 base case is a hypothesis argument, never a sorry. Prose count equals 11. Diff confined to the declared file plus FLT.lean. BUILD CLOSURE (mandatory) as in ENDGAME-P3. No new axiom keyword."
     },
     {
       "ref": "ENDGAME-S3",
       "title": "S3: convert the logarithmic bound to the axiom's exponential form",
       "priority": "p2",
-      "labels": ["flt", "flt-p2", "run-001", "seed-fleet", "week-001", "lane:fleet-q2", "wave:flt-endgame-001", "refinement-candidate"],
-      "metadata": { "lane": "fleet_q2", "state": "curated_not_ready", "wave": "flt-endgame-001" },
+      "labels": [
+        "flt",
+        "flt-p2",
+        "run-001",
+        "seed-fleet",
+        "week-001",
+        "lane:fleet-q2",
+        "wave:flt-endgame-001",
+        "refinement-candidate"
+      ],
+      "metadata": {
+        "lane": "fleet_q2",
+        "state": "curated_not_ready",
+        "wave": "flt-endgame-001"
+      },
       "description": "From log|d_K| / n >= log 8.25 (ENDGAME-S2, taken as a hypothesis argument), derive |(discr K : R)| >= 8.25 ^ finrank Q K — the exact form the target axiom states. Mathlib anchors: Real.exp_le_exp, Real.log_le_iff_le_exp, Real.rpow_natCast. WATCH THE POWER: the axiom's 8.25 ^ finrank Q K is a NATURAL power of a real, i.e. Monoid.npow, not Real.rpow. Land on npow, or insert the Real.rpow_natCast bridge explicitly and say which you did. Small node, but it is the last link before the interface (ENDGAME-T1) and a mismatch here is invisible until final assembly.",
-      "acceptance_criteria": "lake build exits 0. Comment-aware live sorry count equals 56 (delta [0,0]). Prose count equals 11. Diff confined to the declared file plus FLT.lean. BUILD CLOSURE (mandatory) as in ENDGAME-P3. No new axiom keyword. The receipt must state whether the conclusion landed on npow or rpow, and the resulting statement must be diffed character-by-character against the axiom signature at FLT/Assumptions/Odlyzko.lean:57 — with ENDGAME-T1's frozen signature if that has landed."
+      "acceptance_criteria": "Acceptance runs in the ISOLATED flt-acceptance harness and nowhere else — a raw `lake build` in the reviewed worktree is NOT acceptance evidence (C2 lesson, 2026-08-16): it can go green off the worker's own build state, so it is not reproducible from the reviewed tree alone. The isolated runner must exit 0. Comment-aware live sorry count equals 56 (delta [0,0]). Prose count equals 11. Diff confined to the declared file plus FLT.lean. BUILD CLOSURE (mandatory) as in ENDGAME-P3. No new axiom keyword. The receipt must state whether the conclusion landed on npow or rpow, and the resulting statement must be diffed character-by-character against the axiom signature at FLT/Assumptions/Odlyzko.lean:57 — with ENDGAME-T1's frozen signature if that has landed."
     }
+  ],
+  "_acceptance_harness_note": [
+    "C2 LESSON, 2026-08-16 (Fable 14:58Z): acceptance is authoritative ONLY from the",
+    "isolated flt-acceptance harness. A raw `lake build` inside the reviewed worktree does",
+    "not constitute acceptance evidence. Every acceptance_criteria below has been updated",
+    "accordingly. NOTE this composes with oracle-recount.md §8: the isolated runner must",
+    "ALSO assert build closure (the target module reachable from FLT.lean), otherwise it",
+    "reproduces the same vacuity in a cleaner container — a new file that nothing imports",
+    "compiles green by not being compiled at all."
   ]
 }

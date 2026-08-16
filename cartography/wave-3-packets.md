@@ -83,7 +83,13 @@ The wave-2 contract, plus clause 8 and a corrected clause 2.
 
 **Acceptance gate**
 
-1. `lake build` exits 0.
+1. **Acceptance runs in the isolated `flt-acceptance` harness — a raw `lake build` in the
+   reviewed worktree is not acceptance evidence.** (C2 lesson, 2026-08-16.) A worktree-local
+   build can go green off the worker's own build state, so it is not reproducible from the
+   reviewed tree alone. The isolated runner must exit 0. **This composes with clause 8 and
+   does not replace it:** an isolated runner that does not also assert build closure just
+   reproduces the same vacuity in a cleaner container — a new file nothing imports compiles
+   green by not being compiled at all.
 2. `scripts/sorry_count.py --json` reports `live == 56 + declared_delta`, with
    `declared_delta` inside the packet's budget, **and** `prose == 11`. The live count, not
    the naive one — the naive count is 67 and includes 11 prose occurrences that no packet
