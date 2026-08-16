@@ -156,7 +156,10 @@ def main():
             for o in orphans:
                 print("  " + o)
 
-    return 1 if orphans else 0
+    # Exit status is a CHECK, not a report: only --closure asserts "no orphans".
+    # --json always *reports* orphan_modules, but must exit 0 so a caller can
+    # distinguish "the tool ran and here are the numbers" from "the tool failed".
+    return 1 if (args.closure and orphans) else 0
 
 
 if __name__ == "__main__":
