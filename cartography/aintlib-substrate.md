@@ -368,3 +368,93 @@ rather than take from me:
 And the standing caveat has not moved: **no Lean CI on that repo, no toolchain here.**
 Every count above is textual. AINTLIB-0′ is still the only thing that turns any of this
 into fact.
+
+---
+
+# ADDENDUM 3, 2026-08-16T13:30Z — the two §A9 gaps, closed. Neither is a hole; both leave a small bridge.
+
+§A9 flagged two coverage claims as signature-level and asked a reviewer to re-derive them.
+The pool is idle, so I did it myself. Both resolve, and both change the answer in a way that
+matters for what gets dispatched *after* the port.
+
+## A10. Gap (a) — `IsAdmissibleTestFn` is **not** my N19 class. It is broader, and that is good news.
+
+`ExplicitFormula/TestFunction.lean:51` bundles Belabas–Friedman p. 3 verbatim:
+
+```lean
+structure IsAdmissibleTestFn (F : ℝ → ℂ) : Prop where
+  even : ∀ x : ℝ, F (-x) = F x
+  bv_integrable_exp : ∃ ε : ℝ, 0 < ε
+    ∧ BoundedVariationOn (fun x => F x * (Real.exp ((1/2 + ε) * x) : ℂ)) (Set.Ici 0)
+    ∧ IntegrableOn  (fun x => F x * (Real.exp ((1/2 + ε) * x) : ℂ)) (Set.Ici 0)
+  diffQuot_bv : BoundedVariationOn (fun x => (F 0 - F x) / x) (Set.Ici 0)
+  jump_avg : ∀ x, ∃ L R, Tendsto F (𝓝[<] x) (𝓝 L) ∧ Tendsto F (𝓝[>] x) (𝓝 R)
+                          ∧ F x = (L + R) / 2
+```
+
+My `𝓕` (`odlyzko-m3-decomposition.md` N19) is: `F` even, **compactly supported**, Lipschitz,
+`F′` of bounded variation. These are different classes, and the direction of the difference
+is the point:
+
+- **`𝓕 ⊆ IsAdmissibleTestFn`.** Compact support plus Lipschitz gives BV and integrability of
+  the exponentially-weighted function for *every* `ε`; Lipschitz bounds `(F 0 − F x)/x` near
+  `0` and compact support plus `F′` BV gives the rest of `diffQuot_bv`; Lipschitz implies
+  continuity, so `jump_avg` holds trivially with `L = R = F x`.
+- So the ported explicit formula applies to everything N19 was built to feed it, and to
+  more.
+
+**This retires the N19 risk note outright.** That note warned: *"if a downstream node ever
+needs a discontinuous `F`, N20 becomes conditionally convergent and must be redone with
+symmetric limits — escalate at M7 assembly rather than quietly widening `𝓕`."* I called it
+the single most expensive silent mistake available in the M3 tree. AINTLIB's class carries
+`jump_avg` — **it already admits jump discontinuities**, with the average-value convention,
+and it already carries the exponential-weight machinery that makes the sum converge. The
+hazard is pre-solved by the port rather than merely avoided.
+
+**Residual node (post-port, S):** the inclusion `𝓕 F → IsAdmissibleTestFn F` still has to be
+*proved* if any FLT-side node is stated over `𝓕`. Cheaper option: restate those nodes over
+`IsAdmissibleTestFn` directly and skip the bridge. Decide at port time; do not prove `𝓕`
+from scratch either way.
+
+## A11. Gap (b) — `GammaStrip` is strip-specific, not general `[a,b]`, and its bound is *stronger* in shape
+
+The three headline bounds carry explicit windows:
+
+```lean
+norm_Gamma_le_mul_exp       {σ t} (h1 : 1/2 ≤ σ) (h2 : σ ≤ 3/2)     (ht : 1 ≤ |t|)
+norm_Gamma_le_mul_exp_left  {σ t} (h1 : -(1/2) ≤ σ) (h2 : σ ≤ 1/2)  (ht : 1 ≤ |t|)
+le_norm_Gamma_base          {σ t} (h1 : 1/2 ≤ σ) (h2 : σ ≤ 3/2)     (ht : 1 ≤ |t|)
+```
+
+plus `le_norm_Gamma_base_add_nat` (`:594`), which walks the lower bound up by natural
+recurrence steps. So the covered region is `[-1/2, 3/2]` with an upward extension, **not**
+the arbitrary `a ≤ σ ≤ b` N3 asks for.
+
+Two offsetting observations:
+
+- **The bound shape is better than N3 needs.** AINTLIB proves
+  `‖Γ(σ+it)‖ ≤ √(12π) · ‖σ+it‖ · e^{−π|t|/2}` — linear in `‖z‖`. N3 only asked for a crude
+  polynomial `(1+|t|)^A`. Linear is the `A = 1` case, so nothing downstream loses.
+- **Extending the window is mechanical**, by the same `Γ(s+1) = sΓ(s)` recurrence
+  `norm_Gamma_le_mul_exp_left` already uses once and `le_norm_Gamma_base_add_nat` already
+  iterates upward. Downward is symmetric.
+
+**Residual node (post-port, S):** a general `[a,b]` wrapper over the four AINTLIB lemmas.
+This is N3 reduced from an M to an S, not N3 eliminated.
+
+## A12. Revised bottom line
+
+The coverage map in §A2/§A8 stands, with two named residuals rather than a clean sweep:
+
+| | before this addendum | after |
+|---|---|---|
+| N19 / W3-12 | "covered" | **covered, broader class**; + S-sized inclusion lemma *or* restate over `IsAdmissibleTestFn`. Risk note retired. |
+| N3 (feeds W3-04's column) | "covered" | **covered on `[-1/2,3/2]`**; + S-sized general-strip wrapper. N3 drops M → S. |
+
+Neither residual is dispatchable now — both are bridges onto ported code that does not
+exist in FLT yet. Both should be cut as packets **the moment AINTLIB-2 lands**, not before.
+Recording them now so they are not rediscovered as surprises at assembly.
+
+And the standing caveat is unchanged and still the only thing that matters: **no build CI
+there, no toolchain here.** Everything above is signature reading. AINTLIB-0′ remains the
+one experiment that converts any of it into fact.

@@ -46,6 +46,18 @@ moment the pool has capacity; nothing below waits on another packet in this docu
 > the 35 files. What AINTLIB does *not* have is the Odlyzko endgame: its root theorem is
 > Belabas–Friedman **under GRH**, not the unconditional `|discr K| ≥ 8.25^n`. See §A5–A9.
 >
+> **UPDATED 13:30Z (addendum 3).** The two coverage claims §A9 flagged as signature-level
+> are now checked. Both hold, both leave a small bridge. (a) `IsAdmissibleTestFn` is
+> Belabas–Friedman's class, **not** my N19 `𝓕` — it is *broader*, `𝓕 ⊆ IsAdmissibleTestFn`,
+> and it carries `jump_avg`, which **retires the N19 conditional-convergence risk note
+> outright** rather than merely avoiding it. (b) `GammaStrip`'s bounds are windowed to
+> `[-1/2, 3/2]` plus an upward recurrence extension, not N3's general `[a,b]`; but their
+> shape (linear in `‖z‖`) is stronger than N3's crude `(1+|t|)^A`, so nothing downstream
+> loses. Two **post-port** S-sized residuals follow — a `𝓕 → IsAdmissibleTestFn` inclusion
+> (or restate over the broader class and skip it), and a general-strip wrapper that drops
+> N3 from M to S. Neither is dispatchable now; both are bridges onto code not yet in FLT.
+> Cut them when AINTLIB-2 lands. See §A10–A12.
+>
 > The one thing not verified: AINTLIB has no Lean build CI, so sorry-free by grep is not
 > the same as compiles. AINTLIB-0′ is precisely that experiment. If it comes back red, the
 > twelve held units release immediately and nothing is lost but the hold.
