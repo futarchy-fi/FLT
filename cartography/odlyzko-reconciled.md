@@ -195,6 +195,13 @@ approved optimization if a degree-19 lemma is later supplied.
 
 ## 5. Ready-now nodes
 
+> **DECOMPOSED, 2026-08-16T13:59Z — see `odlyzko-endgame-decomposition.md`.** The five
+> nodes below are now broken into **22 S/M leaves** (12 S, 9 M, 1 gated), which retires
+> M10's L. Six are dispatchable today with no port and no PQ1: P1, Q1, R1, R2, T1, P2.
+> The section below is kept as the statement of intent; the decomposition supersedes it as
+> the thing to dispatch from. Note also that M4–M7 are now believed covered sorry-free and
+> GRH-free by AINTLIB (`aintlib-substrate.md` §A5–A6), gated on AINTLIB-0′.
+
 These can be cut as work beads without a decision on the FE route or on the degree
 threshold:
 
