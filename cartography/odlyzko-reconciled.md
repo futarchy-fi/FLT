@@ -173,7 +173,15 @@ approved optimization if a degree-19 lemma is later supplied.
 
 ## 4. Panel questions
 
-1. **PQ1 — Numdam reproducibility and constants.** Obtain and check a committed
+1. **PQ1 — RESOLVED IN PART, 2026-08-16T14:33Z — see `poitou-1977-transcription.md`.**
+   The artifact is fetched (Numdam `SDPP_1976-1977__18_1_A6_0`, 18 pp., OCR text layer) and
+   the table is transcribed. **Material correction: `9.305672` is the root-discriminant
+   bound `|d|^{1/n}` at `n = 18`, not an optimizing `y`** — the M10 row below conflates
+   them. Required is `8.25`, so the margin is **12.8 %**, and `8.25` is already exceeded at
+   `n = 16`, which also answers PQ2 (keep 18; the pressure is downward, and M13 is
+   unnecessary). Still open: the display equations (19)–(26) are images, not text, and need
+   a reader with `poppler`. Original text follows.
+   **PQ1 (original) — Numdam reproducibility and constants.** Obtain and check a committed
    page-image/PDF artifact for Poitou p. 17, record the optimizing `y` at `n=18`,
    and rederive the `L₁` truncation/error intervals.  The table transcription is
    internally consistent and matches the docstring, but the current environment
