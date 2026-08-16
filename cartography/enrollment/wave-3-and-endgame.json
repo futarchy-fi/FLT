@@ -1,0 +1,135 @@
+{
+  "_comment": [
+    "Bead enrollment records for the FLT campaign, authored by fermat (crew-18) 2026-08-16T14:1xZ.",
+    "PURPOSE: the seed-fleet supervisor reported NO_ELIGIBLE_WORK at 11:25Z — 'authenticated",
+    "production feed and refinement feed both return zero candidates'. My packets are authored in",
+    "cartography/*.md, which the feed does not read. These are the same packets in the shape the",
+    "refinement feed requires, so they can be bulk-created without anyone re-deriving the schema.",
+    "",
+    "SCHEMA PROVENANCE: taken verbatim from the pilot's own repair note for hub-oig35.19",
+    "(pilot-status.md, 2026-08-16T11:18Z), which specifies exactly what a legacy bead was missing:",
+    "non-null description and acceptance_criteria strings; labels run-001, seed-fleet, week-001,",
+    "lane:fleet-q2, wave:<wave>, refinement-candidate retained; metadata state/lane/wave set.",
+    "I have followed that precedent rather than inventing a schema.",
+    "",
+    "TWO THINGS ONLY FABLE CAN DECIDE, flagged rather than guessed:",
+    "  1. WAVE IDs. I propose wave:flt-wave-003 / flt-endgame-001. If the campaign already has a",
+    "     wave register, use its ids and ignore mine — nothing else in the record depends on them.",
+    "  2. STATE. I use curated_not_ready throughout, because that is the exact value the .19 repair",
+    "     note prescribes and it is the state from which the supervisor 'can seal and launch",
+    "     immediately'. If the feed needs a different state to pick work up, change this one field.",
+    "",
+    "SCOPE: only the 11 packets that are dispatchable TODAY. The 12 held wave-3 units",
+    "(W3-01..W3-09, W3-11..W3-13) are deliberately NOT here — they are on hold pending AINTLIB-0',",
+    "and enrolling them would feed the pool work that a green port makes redundant. Enroll them if",
+    "and only if AINTLIB-0' comes back red. See cartography/wave-3-packets.md.",
+    "",
+    "PRIORITY ORDER: aintlib-0prime first, then W3-00, then the rest in any order — none of the",
+    "eleven shares a write path with any other."
+  ],
+
+  "proposed_labels_common": ["flt", "run-001", "seed-fleet", "week-001", "refinement-candidate"],
+  "proposed_metadata_common": { "lane": "fleet_q2", "state": "curated_not_ready" },
+
+  "beads": [
+    {
+      "ref": "aintlib-0prime",
+      "title": "AINTLIB-0': build DedekindResidue at FLT's mathlib rev (bump-first, no elan needed)",
+      "priority": "p0",
+      "labels": ["flt", "flt-p0", "run-001", "seed-fleet", "week-001", "lane:fleet-q2", "wave:flt-endgame-001", "refinement-candidate"],
+      "metadata": { "lane": "fleet_q2", "state": "curated_not_ready", "wave": "flt-endgame-001" },
+      "description": "Determine whether CBirkbeck/AINTLIB's DedekindResidue project compiles at FLT's pinned mathlib. This gates roughly 1.6 MB of sorry-free, axiom-free, GRH-free number theory covering chapter nodes M2, most of M3, and M4-M7 (see cartography/aintlib-substrate.md §A1-A12). IMPORTANT: this supersedes the original AINTLIB-0, which required toolchain v4.33.0-rc1 and therefore multi-toolchain elan — the blocker recorded in the pilot's own BLOCKERS at 11:22Z. This variant needs NO elan. Steps: clone github.com/CBirkbeck/AINTLIB at commit 1c1c74664e40; set lean-toolchain to leanprover/lean4:v4.34.0-rc1; set the sole external mathlib require to rev bc06ce9f87cda9bf825ecab192b115685e629898; lake update mathlib; lake exe cache get; then build ONLY the targets DedekindResidue.CompletedZeta and DedekindResidue.ExplicitFormula and their dependencies. Do NOT build the five default targets, and do NOT build the project root (Theorem1/MainTheorem) — that is the Belabas-Friedman GRH application the campaign does not need, and excluding it keeps the build small. Why this works on the current image: the pilot verified at 11:22Z that the admitted lean-runtime image already carries lake and lean fixed at 4.34.0-rc1 and that repository-readonly egress can clone AINTLIB; mathlib is AINTLIB's only external require (flt-regular is vendored), so the bump is a one-line dependency change to the rev FLT already builds against, and the warm flt-cache-manual-0816 cache at bc06ce9f applies. Why it is safe to attempt: mathlib 3edb3c0658f6..bc06ce9f87cd is ahead_by 271, behind_by 0 — a strict forward bump with no divergent history.",
+      "acceptance_criteria": "Report the result whether green or red; a red result is this packet succeeding, not failing. Required in the receipt: (a) exit status of the build; (b) if red, the first 20 errors with file and line; (c) wall clock; (d) whether lake exe cache get hit or the mathlib build went cold; (e) the sorry/admit count in the built tree, computed with a comment-aware counter (expected 0 — a naive grep reports 2 prose hits in docstrings); (f) output of #print axioms DedekindResidue.completedDedekindZeta_one_sub, expected to be exactly propext, Classical.choice, Quot.sound. Budget 3 iterations. Known limitation to state in the receipt: because the original AINTLIB-0 baseline run was skipped, a red result is ambiguous between broken-before and broken-by-the-bump; the error list in (b) is what distinguishes them."
+    },
+    {
+      "ref": "W3-00",
+      "title": "Build-closure repair: add FLT.MazurW and FLT.PoitouTate to FLT.lean",
+      "priority": "p0",
+      "labels": ["flt", "flt-p0", "run-001", "seed-fleet", "week-001", "lane:fleet-q2", "wave:flt-wave-003", "refinement-candidate"],
+      "metadata": { "lane": "fleet_q2", "state": "curated_not_ready", "wave": "flt-wave-003" },
+      "description": "Diagnostic packet — dispatch first and alone. lakefile.toml declares the FLT library with globs [\"FLT\", \"FermatsLastTheorem\"], where \"FLT\" is a bare module name and not a directory glob (contrast the test library's \"FLTTest.*\"). So lake build compiles exactly the import closure of the hand-maintained FLT.lean. FLT/MazurW.lean and FLT/PoitouTate.lean are imported by nothing anywhere in the repository — verified by grep over all 262 FLT modules plus FLT.lean, FLTTest and FermatsLastTheorem.lean. They hold 3 of the 56 live sorries, so the oracle counts them while the build never reads them. FLT/MazurW.lean is the C1 calibration file: hub-bv6v2.1, hub-oig35.1, hub-oig35.2 and hub-oig35.18/PR #7 all targeted it, so on this reading their lake build never compiled the file they changed, which bears on whether C1 counts as harness-selection evidence for hub-r7qdn.7. TASK: add exactly two lines to FLT.lean in alphabetical position among the existing public import block — 'public import FLT.MazurW' and 'public import FLT.PoitouTate'. Write paths: FLT.lean only. Delta [0,0]. Full write-up: cartography/oracle-recount.md §8.",
+      "acceptance_criteria": "Report the lake build result WHETHER OR NOT IT IS GREEN — this is a diagnostic, and a red result is the packet doing its job. GREEN: the two files compile, the closure is repaired, C1's calibration evidence stands; merge. RED: do NOT fix the errors in this packet; report the full error list, revert the two import lines, and recommend one repair packet per failing declaration. Nothing has type-checked either file since it was written, so errors are expected to be informative rather than embarrassing. Secondary check: scripts/sorry_count.py --closure must exit 0 after the change (it exits 1 while orphans exist), and the live sorry count must remain 56 with prose 11."
+    },
+    {
+      "ref": "W3-10",
+      "title": "F1: partial zeta functions for an ideal class",
+      "priority": "p1",
+      "labels": ["flt", "flt-p1", "run-001", "seed-fleet", "week-001", "lane:fleet-q2", "wave:flt-wave-003", "refinement-candidate"],
+      "metadata": { "lane": "fleet_q2", "state": "curated_not_ready", "wave": "flt-wave-003" },
+      "description": "Create FLT/NumberField/Zeta/Partial.lean. For an ideal class A of a number field K, define the partial zeta function zeta(A,s) = sum over integral ideals b with [b] = A of (N b)^(-s). Prove: absolute convergence and analyticity on Re s > 1; that the sum over all A in ClassGroup of zeta(A,s) equals NumberField.dedekindZeta K s there; and the crude bound zeta(A,s) = O(zeta(Re s)). Mathlib anchors verified present at rev bc06ce9f: NumberField.dedekindZeta (Mathlib/NumberTheory/NumberField/DedekindZeta.lean), the LSeries summability API, Ideal.tendsto_norm_le_div_atTop0 for crude counting, tsum sigma-type reindexing. Sketch: absolutely convergent rearrangement over the fibration ideals -> (norm n, ideals of norm n); the class-group sum is finite so the splitting is a finite regrouping of an absolutely convergent series. NOTE ON PRIOR ART: this node is deliberately NOT on hold. AINTLIB's DedekindResidue decomposes by ideal class entirely on the theta side (heckeGClass / heckeF) and never forms a partial Dirichlet series — verified absent from all 35 files — so this is genuinely fresh work whichever way the AINTLIB port goes.",
+      "acceptance_criteria": "lake build exits 0. Comment-aware live sorry count equals 56 (delta [0,0]) and prose count equals 11 — use scripts/sorry_count.py --json, not a naive grep; the naive count is 67 and includes 11 prose occurrences. Diff confined to declared write paths: FLT/NumberField/Zeta/Partial.lean and FLT.lean. BUILD CLOSURE (mandatory): the diff must add the alphabetized 'public import FLT.NumberField.Zeta.Partial' line to FLT.lean, or the new file is never compiled and this gate passes vacuously; scripts/sorry_count.py --closure must exit 0. No new axiom keyword. Do not modify any existing line matching sorry or admit. New file must follow the repo module idiom: Apache-2.0 header, module, public import lines, @[expose] public section, and a /-! # -/ module docstring — copy the shape of FLT/Mathlib/Algebra/Algebra/Bilinear.lean."
+    },
+    {
+      "ref": "W3-14",
+      "title": "CBC-S8: Chebotarev comparison lemma (statement scaffold)",
+      "priority": "p1",
+      "labels": ["flt", "flt-p1", "flash", "run-001", "seed-fleet", "week-001", "lane:fleet-q2", "wave:flt-wave-003", "refinement-candidate"],
+      "metadata": { "lane": "fleet_q2", "state": "curated_not_ready", "wave": "flt-wave-003" },
+      "description": "Create FLT/CyclicBaseChange/Chebotarev.lean. Statement-only packet: state that two continuous representations rho, rho' of a global Galois group which agree on the characteristic polynomials of Frobenius outside a finite set of places are isomorphic after semisimplification. State the finite exceptional set and the semisimplicity hypothesis explicitly; no proof obligation, the body is sorry by design. This is the highest-leverage single Flash unit in waves 2 and 3: three separate hubs consume this wrapper — cbc-reconciled.md, ret-middle-decomposition.md node T3, and the Galois-representations chapter — so match the shape recorded for T3 in ret-middle-decomposition.md and all three consumers can cite one declaration instead of three.",
+      "acceptance_criteria": "lake build exits 0. Comment-aware live sorry count equals 56 + delta with delta in [1,2]; prose count equals 11. Diff confined to FLT/CyclicBaseChange/Chebotarev.lean and FLT.lean. BUILD CLOSURE (mandatory): the diff must add the alphabetized public import line to FLT.lean; scripts/sorry_count.py --closure must exit 0. No new axiom keyword. Do not modify any existing sorry/admit line. Repo module idiom as in W3-10. Reviewer should check the STATEMENT hard — a wrong statement here propagates into three hubs and is discovered only at assembly."
+    },
+    {
+      "ref": "W3-15",
+      "title": "CBC-S2: norm on Satake data (statement scaffold)",
+      "priority": "p2",
+      "labels": ["flt", "flt-p2", "flash", "run-001", "seed-fleet", "week-001", "lane:fleet-q2", "wave:flt-wave-003", "refinement-candidate"],
+      "metadata": { "lane": "fleet_q2", "state": "curated_not_ready", "wave": "flt-wave-003" },
+      "description": "Create FLT/CyclicBaseChange/Satake.lean. Statement-only packet: a stub SatakeParam structure and the norm map on Satake data used by the base-change comparison, with its defining property stated as a sorry-carrying lemma. Source: cbc-reconciled.md §7 'ready-now statement candidates'. Pure algebra against the stub; deliberately independent of CBC-S3/S4, which are blocked on the Hecke-action half of S1 (FLT/AutomorphicForm/QuaternionAlgebra/HeckeOperators/Concrete.lean, only partially built).",
+      "acceptance_criteria": "lake build exits 0. Comment-aware live sorry count equals 56 + delta with delta in [2,3]; prose count equals 11. Diff confined to FLT/CyclicBaseChange/Satake.lean and FLT.lean. BUILD CLOSURE (mandatory): alphabetized public import line added to FLT.lean; scripts/sorry_count.py --closure exits 0. No new axiom keyword. Do not modify any existing sorry/admit line. Repo module idiom as in W3-10."
+    },
+    {
+      "ref": "ENDGAME-T1",
+      "title": "T1: freeze a theorem with exactly the Odlyzko_statement signature",
+      "priority": "p0",
+      "labels": ["flt", "flt-p0", "flash", "run-001", "seed-fleet", "week-001", "lane:fleet-q2", "wave:flt-endgame-001", "refinement-candidate"],
+      "metadata": { "lane": "fleet_q2", "state": "curated_not_ready", "wave": "flt-endgame-001" },
+      "description": "Create the interface file for the Odlyzko endgame. State a theorem whose signature is EXACTLY that of the axiom at FLT/Assumptions/Odlyzko.lean:57 — (K : Type*) [Field K] [NumberField K] [IsTotallyComplex K] (hdim : finrank Q K >= 18) : |(discr K : R)| >= 8.25 ^ finrank Q K — proved from the M11 conclusion taken as an explicit hypothesis, plus the contradiction-form corollary the ModThree consumer will want. Statement curation only; no new mathematics. Dispatch this FIRST of the endgame nodes: every other node in cartography/odlyzko-endgame-decomposition.md aims at this signature, and having it frozen early means none of them can drift. Watch the rpow-versus-pow distinction: the axiom's 8.25 ^ finrank Q K is a natural power of a real, so land on Monoid.npow, or add the Real.rpow_natCast bridge explicitly.",
+      "acceptance_criteria": "lake build exits 0. Comment-aware live sorry count equals 56 + delta with delta in [1,3]; prose count equals 11. Diff confined to the one new file plus FLT.lean. BUILD CLOSURE (mandatory): alphabetized public import line added to FLT.lean; scripts/sorry_count.py --closure exits 0. MUST NOT touch FLT/Assumptions/Odlyzko.lean — the axiom stays until the whole chain is discharged (that is packet T2, which has its own special gate). No new axiom keyword. Reviewer must diff the stated signature against the axiom's character by character; a mismatch here is invisible until the final assembly."
+    },
+    {
+      "ref": "ENDGAME-R1",
+      "title": "R1: rational interval arithmetic layer (upstreamable)",
+      "priority": "p1",
+      "labels": ["flt", "flt-p1", "mathlib-upstream", "run-001", "seed-fleet", "week-001", "lane:fleet-q2", "wave:flt-endgame-001", "refinement-candidate"],
+      "metadata": { "lane": "fleet_q2", "state": "curated_not_ready", "wave": "flt-endgame-001" },
+      "description": "Build a minimal sound rational-interval arithmetic layer: a structure RatIvl with lo hi : Q and a proof lo <= hi, a coercion to Set R, and sound add / sub / mul / div / pow / neg operations with the membership soundness lemmas (x in I -> y in J -> x + y in I + J, and so on). Division requires 0 not in J. Deliberately minimal — no fancy representation; norm_num discharges the underlying rational arithmetic. WHY THIS MATTERS: this is the longest pole in chapter node M10, the last L-sized node in the Odlyzko chapter. Verified against mathlib bc06ce9f this session: the certified CONSTANTS all exist — eulerMascheroniConstant with one_half_lt_ and _lt_ bounds in Mathlib/NumberTheory/Harmonic/EulerMascheroni.lean, exp_one_lt_d9 and log_two_gt_d9 in Mathlib/Analysis/Complex/ExponentialBounds.lean, pi bounds in Mathlib/Analysis/Real/Pi/Bounds.lean, arctan_le/_lt/_pos in Trigonometric/Arctan.lean — but there is NO numeric interval-arithmetic engine; Mathlib's 90 Interval files are order-theoretic. This node supplies the missing machine. It is also the most upstreamable item in the chapter: open a Mathlib PR in the same session and record its number in the receipt.",
+      "acceptance_criteria": "lake build exits 0. Comment-aware live sorry count equals 56 (delta [0,0]) — this is a fully-proved node, so any nonzero delta means a sorry was left in and the packet is not done. Prose count equals 11. Diff confined to the new file(s) under FLT/Mathlib/ plus FLT.lean. BUILD CLOSURE (mandatory): alphabetized public import line added to FLT.lean; scripts/sorry_count.py --closure exits 0. No new axiom keyword. Repo module idiom as in W3-10. Additionally: state in the receipt whether a Mathlib PR was opened and its number."
+    },
+    {
+      "ref": "ENDGAME-Q1",
+      "title": "Q1: autocorrelation gives free Fourier positivity",
+      "priority": "p1",
+      "labels": ["flt", "flt-p1", "run-001", "seed-fleet", "week-001", "lane:fleet-q2", "wave:flt-endgame-001", "refinement-candidate"],
+      "metadata": { "lane": "fleet_q2", "state": "curated_not_ready", "wave": "flt-endgame-001" },
+      "description": "For g real, even, compactly supported and L^2, set F = g convolved with g-tilde where g-tilde(x) = g(-x). Prove that the Fourier transform of F equals |ghat|^2 and is therefore pointwise nonnegative, and that F is even, compactly supported (support doubles) and continuous. Mathlib anchors: the Convolution API, the Real.fourierIntegral convolution theorem, MeasureTheory.convolution_comm. WHY IT MATTERS: this is the structural insight the entire Odlyzko test-function construction rests on. The method needs both F >= 0 and Fhat >= 0, and those two pull against each other; the autocorrelation shape makes Fourier positivity a theorem about the construction rather than a computation, leaving only F >= 0 to be earned by the specific choice of g (node Q3). See cartography/odlyzko-endgame-decomposition.md §3.",
+      "acceptance_criteria": "lake build exits 0. Comment-aware live sorry count equals 56 (delta [0,0]) — fully-proved node, any nonzero delta means the packet is not done. Prose count equals 11. Diff confined to the new file plus FLT.lean. BUILD CLOSURE (mandatory): alphabetized public import line added to FLT.lean; scripts/sorry_count.py --closure exits 0. No new axiom keyword. Repo module idiom as in W3-10. State the node over an abstract g with its hypotheses explicit — do NOT instantiate Tartar's specific g here, that is node Q3' and it is gated on an unfetched source (PQ1)."
+    },
+    {
+      "ref": "ENDGAME-P1",
+      "title": "P1: explicit-formula interface restatement (the M7-M8 seam)",
+      "priority": "p1",
+      "labels": ["flt", "flt-p1", "flash", "run-001", "seed-fleet", "week-001", "lane:fleet-q2", "wave:flt-endgame-001", "refinement-candidate"],
+      "metadata": { "lane": "fleet_q2", "state": "curated_not_ready", "wave": "flt-endgame-001" },
+      "description": "One file restating the Weil-Poitou explicit formula in the exact form the M8-M11 nodes consume: the r1 = 0 (totally complex) specialization, pole terms at s = 0 and s = 1 made explicit, and signs fixed. Stated with the formula itself as a HYPOTHESIS, not proved here — that is what makes this dispatchable before any port lands. No mathematics; this is the seam between chapter nodes M7 and M8, and it exists so that swapping in a ported explicit formula later changes exactly one file. Anchor the shape to AINTLIB's WeilAssembly.lean:3128 weil_explicit_formula_auxF so the eventual port is a citation rather than a translation. Use AINTLIB's IsAdmissibleTestFn as the admissible class rather than the narrower class in odlyzko-m3-decomposition.md N19 — see aintlib-substrate.md §A10 for why the broader class is strictly better and costs nothing.",
+      "acceptance_criteria": "lake build exits 0. Comment-aware live sorry count equals 56 + delta with delta in [1,4]; prose count equals 11. Diff confined to the new file plus FLT.lean. BUILD CLOSURE (mandatory): alphabetized public import line added to FLT.lean; scripts/sorry_count.py --closure exits 0. No new axiom keyword. Repo module idiom as in W3-10. Reviewer should check the SIGNS and the pole-term placement specifically — an error there is inherited silently by every M8-M11 node."
+    },
+    {
+      "ref": "ENDGAME-P2",
+      "title": "P2: the prime side of the explicit formula is nonnegative",
+      "priority": "p2",
+      "labels": ["flt", "flt-p2", "run-001", "seed-fleet", "week-001", "lane:fleet-q2", "wave:flt-endgame-001", "refinement-candidate"],
+      "metadata": { "lane": "fleet_q2", "state": "curated_not_ready", "wave": "flt-endgame-001" },
+      "description": "Prove that the prime side of the explicit formula — the sum over prime ideals p and integers m >= 1 of (log N p) * (N p)^(-m/2) * F(m log N p) — is nonnegative whenever F is pointwise nonnegative. Sketch: termwise, since log N p > 0 (as N p >= 2) and (N p)^(-m/2) > 0; the only real content is summability, which follows from the exponential-weight condition in the admissibility hypothesis. Mathlib: tsum_nonneg, Finset.sum_nonneg, Ideal.absNorm positivity. Depends on ENDGAME-P1 for the statement of the formula. This is one half of the discard step that makes the Odlyzko method unconditional — see cartography/odlyzko-endgame-decomposition.md §2.",
+      "acceptance_criteria": "lake build exits 0. Comment-aware live sorry count equals 56 (delta [0,0]) if P1's interface is available to cite; if P1 has not landed, state P1's conclusion as a local hypothesis and keep delta [0,0] — do NOT introduce a new sorry for it. Prose count equals 11. Diff confined to the declared file plus FLT.lean. BUILD CLOSURE (mandatory): alphabetized public import line added to FLT.lean; scripts/sorry_count.py --closure exits 0. No new axiom keyword. Repo module idiom as in W3-10."
+    },
+    {
+      "ref": "ENDGAME-R2",
+      "title": "R2: certified interval evaluators for the transcendental constants",
+      "priority": "p2",
+      "labels": ["flt", "flt-p2", "run-001", "seed-fleet", "week-001", "lane:fleet-q2", "wave:flt-endgame-001", "refinement-candidate"],
+      "metadata": { "lane": "fleet_q2", "state": "curated_not_ready", "wave": "flt-endgame-001" },
+      "description": "Using the RatIvl layer from ENDGAME-R1, build soundness-proved interval enclosures at a tunable precision for the constants chapter node M10 needs: the Euler-Mascheroni constant gamma, pi, log q and arctan q at rational q. gamma, pi and log 2 come directly from existing Mathlib bounds — eulerMascheroniConstant with one_half_lt_ and _lt_ (Mathlib/NumberTheory/Harmonic/EulerMascheroni.lean), pi bounds (Mathlib/Analysis/Real/Pi/Bounds.lean), log_two_gt_d9 and log_two_lt_d9 (Mathlib/Analysis/Complex/ExponentialBounds.lean), all verified present at rev bc06ce9f this session. General log q and arctan q need a certified truncated series with an explicit tail bound: the atanh series for log, and the standard alternating series for arctan, where alternation supplies the error bound for free. NOTE: Real.log_three_gt_d9 is used by AINTLIB but was NOT located in mathlib at bc06ce9f — verify before relying on it; if it is genuinely absent it is a one-lemma addition in this node's style.",
+      "acceptance_criteria": "lake build exits 0. Comment-aware live sorry count equals 56 (delta [0,0]) — fully-proved node. Prose count equals 11. Diff confined to the declared files plus FLT.lean. BUILD CLOSURE (mandatory): alphabetized public import line added to FLT.lean; scripts/sorry_count.py --closure exits 0. No new axiom keyword. Repo module idiom as in W3-10. Receipt must state, for each constant, the precision achieved and whether the enclosure was derived from an existing Mathlib bound or proved fresh."
+    }
+  ]
+}
