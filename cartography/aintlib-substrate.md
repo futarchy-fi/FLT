@@ -86,7 +86,7 @@ clean" claim is self-reported and unverified.
 - **Do:** vendor the bumped `CompletedZeta` tree under FLT with Apache-2.0 attribution
   preserved; wire it to the zeta-FE node map in `zeta-port-audit.md` §"Node map".
 - **Acceptance:** FLT `lake build` clean; sorry-delta declared per the corrected oracle
-  baseline in `oracle-recount-8ea4f0a.md` (live baseline **60**, not 71); diff confined to
+  baseline in `oracle-recount.md` (live baseline **60**, not 71); diff confined to
   declared `write_paths`; no new axioms; licence header present in every ported file.
 - **Payoff:** ~22 of the 24 zeta-FE leaves in `zeta-fe-decomposition.md` land at once,
   which is roughly half of the 45-leaf Odlyzko wave in `wave-2-packets.md`.

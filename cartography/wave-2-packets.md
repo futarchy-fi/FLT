@@ -1,15 +1,28 @@
 # Wave 2 — packet envelopes for the cattle pool (45 Odlyzko leaves + Flash statement tier)
 
 **Author:** fermat (crew-18), 2026-08-16.
-**Base:** FLT `origin/main` = `8ea4f0a5` (merge of PR #7 / C1, 2026-08-16T11:08:35Z).
-Every target path and line number below was checked against that tree on this date.
-PR #7 changed only the witness curve inside `FLT/MazurW.lean`
-(`⟨0,0,0,-1,0⟩ → ⟨0,0,0,-4,0⟩`, 2-torsion point `(1,0) → (2,0)`); it is a proof-body
-change with delta `[0,0]`, so **the baseline counts below are unchanged by the merge** —
-re-verified at `8ea4f0a`: 60 live / 11 prose / 71 naive.
-**Companion documents:** `oracle-recount-8ea4f0a.md` (acceptance-gate correction — read
+**Base:** FLT `origin/main` = `b0fbbec` (merge of PR #8 / hub-oig35.20,
+2026-08-16T11:40:11Z). Every target path and line number below was checked against that
+tree on this date.
+
+**Baseline moved this morning — a packet still carrying `71` will false-fail.** Two merges
+landed within half an hour: PR #7 (C1) changed only the `FLT/MazurW.lean` witness curve, a
+proof-body change with delta `[0,0]`; PR #8 closed the four `galoisRepresentation` holes in
+`FLT/EllipticCurve/Torsion.lean` with delta `[-4,-4]`. Re-verified at `b0fbbec`:
+**56 live / 11 prose / 67 naive.** Every delta below is relative and therefore unaffected,
+but the constant each packet is gated against must be re-recorded. See
+`oracle-recount.md` §0 for the revision log.
+**Companion documents:** `oracle-recount.md` (acceptance-gate correction — read
 first, it changes the baseline constant), `aintlib-substrate.md` (the port that supplies
 roughly half of §3 in one move).
+
+> **SUPERSEDED IN PART, 2026-08-16T13:0xZ — read `wave-3-packets.md` before dispatching
+> anything from this file.** This document is the *inventory*: 55 sized, dependency-ordered
+> units. `wave-3-packets.md` is the *executable* layer for the 16 of them that have no unmet
+> dependency, with real target paths, `FLT.lean` wiring, delta budgets and acceptance lines.
+> It also supersedes two things here: the ready-set table in §2 (re-verified at `daac1f2`)
+> and the packet contract in §1, which gains a build-closure clause — `lake build` does not
+> compile every file the oracle counts, see `oracle-recount.md` §8.
 
 ## 0. Why this wave exists — the terminal target
 
@@ -33,9 +46,11 @@ Inherited from the generalized oracle rule, with one correction and two addition
 **Acceptance gate**
 1. `lake build` exits 0.
 2. Global `sorry`/`admit` count equals `baseline + declared_delta`, delta inside the
-   packet's budget. **Baseline is 60, not 71** — see `oracle-recount-8ea4f0a.md`. The
-   counter must strip `--` line comments and `/- … -/` blocks before matching; the naive
-   grep counts 11 prose occurrences and will mis-gate.
+   packet's budget. **Baseline is the live count, 56 at `daac1f2` — not 71, and no longer
+   the 60 this line originally said** (PR #8 closed four holes). Read it off
+   `oracle-recount.md` §0. The counter must strip `--` line comments and `/- … -/` blocks
+   before matching; the naive grep counts 11 prose occurrences and will mis-gate.
+   `scripts/sorry_count.py --json` is the reference implementation.
 3. `git diff` against the base is confined to the declared `write_paths`.
 4. For negative deltas: the target theorem *statement* is byte-identical to base (only
    removed lines may be `sorry` lines). Rejects proving-by-weakening.
@@ -45,21 +60,25 @@ Inherited from the generalized oracle rule, with one correction and two addition
 7. **(new)** New files must follow the repo's module idiom: `module`, `public import …`,
    `@[expose] public section`, Apache-2.0 header. Every file in `FLT/` on `8ea4f0a` does.
 
-**Base pin:** `8ea4f0a5`. Packets are authored against this SHA; if main advances, the
-delta budget is unchanged (all deltas are relative) but the base must be re-recorded in
-the merge receipt, per the post-merge rule.
+**Base pin:** `daac1f2` (was `8ea4f0a5` when this file was written; main has advanced
+twice since). Packets are authored against a SHA; if main advances, the delta budget is
+unchanged — all deltas are relative — but the base must be re-recorded in the merge
+receipt, per the post-merge rule.
 
 **Citations:** every statement node inherits the citation anchors fixed in
 `citation-recheck-2.md`. Do not let a worker re-derive a reference.
 
 ## 2. Revalidation of the standing ready set against `8ea4f0a` (post-C1-merge)
 
+*Superseded by `wave-3-packets.md` §2, which re-runs this table against `daac1f2` and
+corrects hub-oig35.3's acceptance constants. Kept here for the audit trail.*
+
 | Packet | Verdict | Evidence |
 |---|---|---|
 | hub-oig35.3 (A14 Pontryagin) | **READY — dispatch as-is** | Hole live at `FLT/Patching/Utils/CompactHausdorffRings.lean:42`, `Group.subsingleton_of_pow_prime_eq_one`; statement unchanged. Delta `[-1,-1]`. Caution: prose occurrence at line 89 of the same file — gate clause 6 applies. |
 | hub-oig35.20 v2 (Torsion `DistribMulAction`) | **READY — dispatch, but re-declare** | Holes live at `FLT/EllipticCurve/Torsion.lean:109–112`. The v2 per-field proof routes in `oig35-20-refinement.md` still typecheck against the current signature. **Must add gate clause 6**: prose at line 114 and a trailing comment on line 109 make a −5/−6 miscount the likely failure mode. |
 | hub-oig35.10 (`loc_cst`) | **STALE — do not requeue** | Already proved on main. FLT PR #6 is still open with a green check; close or rebase it, do not merge. |
-| hub-oig35.5 / .8 / .9 / .11 / .12 / .16 | **UNVERIFIABLE FROM THIS POD** | Target holes recorded only in beads metadata; beads unreachable from crew-18. The inventory in `oracle-recount-8ea4f0a.md` §2–3 is the full live-hole list, so each is a one-line check the moment beads returns. |
+| hub-oig35.5 / .8 / .9 / .11 / .12 / .16 | **UNVERIFIABLE FROM THIS POD** | Target holes recorded only in beads metadata; beads unreachable from crew-18. The inventory in `oracle-recount.md` §2–3 is the full live-hole list, so each is a one-line check the moment beads returns. |
 
 ## 3. Wave 2A — Dedekind zeta functional equation (24 core nodes, 26 dispatchable units)
 
