@@ -1,0 +1,439 @@
+<title>Proof Hole Burndown</title>
+<style>
+  :root {
+    color-scheme: light;
+    --plane:        #f9f9f7;
+    --surface:      #fcfcfb;
+    --ink:          #0b0b0b;
+    --ink-2:        #52514e;
+    --ink-muted:    #898781;
+    --hairline:     #e1e0d9;
+    --baseline:     #c3c2b7;
+    --ring:         rgba(11,11,11,0.10);
+    --open:         #2a78d6;
+    --closed:       #1baf7a;
+    --added:        #d03b3b;
+    --track:        #eceae4;
+    --chip:         #f0efec;
+    --focus:        #2a78d6;
+    --sans: system-ui, -apple-system, "Segoe UI", sans-serif;
+    --mono: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --plane:      #0d0d0d;
+      --surface:    #1a1a19;
+      --ink:        #ffffff;
+      --ink-2:      #c3c2b7;
+      --ink-muted:  #898781;
+      --hairline:   #2c2c2a;
+      --baseline:   #383835;
+      --ring:       rgba(255,255,255,0.10);
+      --open:       #3987e5;
+      --closed:     #199e70;
+      --added:      #d03b3b;
+      --track:      #232322;
+      --chip:       #232322;
+      --focus:      #3987e5;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --plane:      #0d0d0d;
+    --surface:    #1a1a19;
+    --ink:        #ffffff;
+    --ink-2:      #c3c2b7;
+    --ink-muted:  #898781;
+    --hairline:   #2c2c2a;
+    --baseline:   #383835;
+    --ring:       rgba(255,255,255,0.10);
+    --open:       #3987e5;
+    --closed:     #199e70;
+    --added:      #d03b3b;
+    --track:      #232322;
+    --chip:       #232322;
+    --focus:      #3987e5;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--plane);
+    color: var(--ink);
+    font-family: var(--sans);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 24px 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  /* ---- header ---- */
+  header { display: flex; flex-direction: column; gap: 10px; }
+  h1 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+  }
+  .sub { margin: 0; color: var(--ink-2); font-size: 14px; max-width: 65ch; }
+  .prov {
+    display: flex; flex-wrap: wrap; gap: 6px 14px;
+    font-family: var(--mono); font-size: 11.5px; color: var(--ink-muted);
+    padding-top: 10px; border-top: 1px solid var(--hairline);
+  }
+  .prov b { font-weight: 500; color: var(--ink-2); }
+
+  /* ---- kpi row ---- */
+  .kpis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  @media (max-width: 620px) { .kpis { grid-template-columns: 1fr; } }
+  .tile {
+    background: var(--surface);
+    border: 1px solid var(--ring);
+    border-radius: 8px;
+    padding: 14px 16px;
+    display: flex; flex-direction: column; gap: 3px;
+  }
+  .tile .lab {
+    font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.07em;
+    color: var(--ink-muted); font-weight: 600;
+  }
+  .tile .val { font-size: 30px; font-weight: 600; letter-spacing: -0.02em; }
+  .tile .note { font-size: 12px; color: var(--ink-2); }
+  .val.accent { color: var(--closed); }
+
+  /* ---- filter row ---- */
+  .filters { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .filters .flab {
+    font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.07em;
+    color: var(--ink-muted); font-weight: 600;
+  }
+  .seg { display: flex; gap: 2px; background: var(--chip); border-radius: 7px; padding: 2px; }
+  .seg button {
+    font-family: var(--sans); font-size: 13px; font-weight: 500;
+    color: var(--ink-2); background: none; border: 0;
+    padding: 6px 14px; border-radius: 5px; cursor: pointer;
+  }
+  .seg button[aria-pressed="true"] {
+    background: var(--surface); color: var(--ink);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+  }
+  .seg button:focus-visible, .linkish:focus-visible {
+    outline: 2px solid var(--focus); outline-offset: 2px;
+  }
+
+  /* ---- chart card ---- */
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--ring);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex; flex-direction: column; gap: 16px;
+  }
+  .card h2 {
+    margin: 0; font-size: 15px; font-weight: 600;
+  }
+  .card .cap { margin: 0; font-size: 13px; color: var(--ink-2); max-width: 65ch; }
+
+  .legend { display: flex; flex-wrap: wrap; gap: 6px 18px; }
+  .legend span { display: flex; align-items: center; gap: 7px; font-size: 12.5px; color: var(--ink-2); }
+  .sw { width: 11px; height: 11px; border-radius: 3px; flex: none; }
+
+  .rows { display: flex; flex-direction: column; gap: 3px; }
+  .row {
+    display: grid;
+    grid-template-columns: 250px 1fr 34px;
+    align-items: center;
+    gap: 12px;
+    padding: 3px 4px;
+    border-radius: 5px;
+  }
+  .row:hover, .row:focus-visible { background: var(--track); outline: none; }
+  @media (max-width: 620px) { .row { grid-template-columns: 130px 1fr 30px; gap: 8px; } }
+
+  .fname {
+    font-family: var(--mono); font-size: 11.5px; color: var(--ink-2);
+    text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    direction: rtl;
+  }
+  .bar { display: flex; gap: 2px; height: 15px; align-items: stretch; }
+  .seg-open, .seg-closed, .seg-added {
+    border-radius: 2px; min-width: 2px;
+    display: flex; align-items: center; justify-content: flex-end;
+    padding-right: 4px;
+    font-size: 10px; font-weight: 600; color: #fff;
+    font-variant-numeric: tabular-nums;
+    overflow: hidden;
+  }
+  .seg-open { background: var(--open); border-radius: 2px 0 0 2px; }
+  .seg-closed { background: var(--closed); border-radius: 0 4px 4px 0; }
+  .seg-added { background: var(--added); border-radius: 0 4px 4px 0; }
+  .bar > :only-child { border-radius: 2px 4px 4px 2px; }
+  .total {
+    font-family: var(--mono); font-size: 11.5px; color: var(--ink-2);
+    text-align: right; font-variant-numeric: tabular-nums;
+  }
+
+  .empty {
+    display: flex; gap: 10px; align-items: flex-start;
+    background: var(--track); border-radius: 7px; padding: 12px 14px;
+    font-size: 13px; color: var(--ink-2);
+  }
+  .empty b { color: var(--ink); font-weight: 600; }
+  .empty .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--ink-muted); margin-top: 6px; flex: none; }
+
+  /* ---- table ---- */
+  details.table summary {
+    cursor: pointer; font-size: 13px; color: var(--ink-2);
+    padding: 4px 0; list-style: none; display: flex; align-items: center; gap: 7px;
+  }
+  details.table summary::-webkit-details-marker { display: none; }
+  details.table summary::before { content: "▸"; font-size: 10px; color: var(--ink-muted); }
+  details.table[open] summary::before { content: "▾"; }
+  .tscroll { overflow-x: auto; margin-top: 10px; }
+  table { border-collapse: collapse; width: 100%; font-size: 12.5px; }
+  th, td { text-align: right; padding: 6px 10px; border-bottom: 1px solid var(--hairline); white-space: nowrap; }
+  th:first-child, td:first-child { text-align: left; font-family: var(--mono); font-size: 11.5px; }
+  th { color: var(--ink-muted); font-weight: 600; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.06em; }
+  td { font-variant-numeric: tabular-nums; color: var(--ink-2); }
+  td.n { color: var(--ink); }
+  .foot { font-size: 12px; color: var(--ink-muted); max-width: 68ch; }
+  .foot code { font-family: var(--mono); font-size: 11.5px; color: var(--ink-2); }
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Proof Hole Burndown</h1>
+    <p class="sub">
+      Live <code style="font-family:var(--mono);font-size:13px">sorry</code>/<code style="font-family:var(--mono);font-size:13px">admit</code>
+      holes per file in <span style="font-family:var(--mono);font-size:13px">futarchy-fi/FLT</span>, with holes closed inside the
+      selected window called out in a second colour.
+    </p>
+    <div class="prov">
+      <span><b>base</b> <span id="p-head"></span></span>
+      <span><b>generated</b> <span id="p-gen"></span></span>
+      <span><b>counter</b> scripts/sorry_count.py (comment-aware)</span>
+      <span><b>prose excluded</b> <span id="p-prose"></span></span>
+    </div>
+  </header>
+
+  <section class="kpis">
+    <div class="tile">
+      <span class="lab">Live holes</span>
+      <span class="val" id="k-live"></span>
+      <span class="note" id="k-live-note"></span>
+    </div>
+    <div class="tile">
+      <span class="lab">Closed in window</span>
+      <span class="val" id="k-closed"></span>
+      <span class="note" id="k-closed-note"></span>
+    </div>
+    <div class="tile">
+      <span class="lab">Last hole closed</span>
+      <span class="val" id="k-last"></span>
+      <span class="note" id="k-last-note"></span>
+    </div>
+  </section>
+
+  <div class="filters">
+    <span class="flab">Window</span>
+    <div class="seg" role="group" aria-label="Progress window">
+      <button type="button" data-w="12" aria-pressed="true">Last 12h</button>
+      <button type="button" data-w="24" aria-pressed="false">24h</button>
+      <button type="button" data-w="72" aria-pressed="false">72h</button>
+    </div>
+  </div>
+
+  <section class="card">
+    <div>
+      <h2>Open holes by file</h2>
+      <p class="cap" id="chart-cap"></p>
+    </div>
+
+    <div class="legend">
+      <span><i class="sw" style="background:var(--open)"></i> Still open</span>
+      <span><i class="sw" style="background:var(--closed)"></i> Closed in window</span>
+      <span id="lg-added" hidden><i class="sw" style="background:var(--added)"></i> Opened in window</span>
+    </div>
+
+    <div id="empty" class="empty" hidden>
+      <i class="dot"></i>
+      <div id="empty-text"></div>
+    </div>
+
+    <div class="rows" id="rows"></div>
+
+    <details class="table">
+      <summary>Table view</summary>
+      <div class="tscroll">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">File</th>
+              <th scope="col">At window start</th>
+              <th scope="col">Closed</th>
+              <th scope="col">Opened</th>
+              <th scope="col">Open now</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </details>
+  </section>
+
+  <p class="foot">
+    Bars are scaled to the file with the most holes. A bar's full length is the count at the
+    <em>start</em> of the window, so the coloured tail is exactly what was closed since. Counts are
+    comment-aware: the 11 occurrences of the word in comments and docstrings are excluded, which is
+    why this total reads lower than a naive <code>grep</code>.
+  </p>
+</div>
+
+<script>
+  const DATA = {"head":"79614df","generated":"2026-08-17T06:51Z","totals":{"live":56,"prose":11,"naive":67},"rows":[{"file":"FLT/KnownIn1980s/EllipticCurves/TateCurve.lean","now":11,"w12":11,"w24":11,"w72":11},{"file":"FLT/GlobalLanglandsConjectures/GLzero.lean","now":8,"w12":8,"w24":8,"w72":10},{"file":"FLT/EllipticCurve/Torsion.lean","now":5,"w12":5,"w24":9,"w72":9},{"file":"FLT/Data/HurwitzRatHat.lean","now":4,"w12":4,"w24":4,"w72":4},{"file":"FLT/GaloisRepresentation/HardlyRamified/Frey.lean","now":3,"w12":3,"w24":3,"w72":3},{"file":"FLT/GlobalLanglandsConjectures/GLnDefs.lean","now":3,"w12":3,"w24":3,"w72":4},{"file":"FLT/KnownIn1980s/EllipticCurves/Flat.lean","now":3,"w12":3,"w24":3,"w72":3},{"file":"FLT/Deformations/Representable.lean","now":2,"w12":2,"w24":2,"w72":2},{"file":"FLT/GaloisRepresentation/Automorphic.lean","now":2,"w12":2,"w24":2,"w72":2},{"file":"FLT/KnownIn1980s/PGL2/Defs.lean","now":2,"w12":2,"w24":2,"w72":2},{"file":"FLT/MazurW.lean","now":2,"w12":2,"w24":2,"w72":3},{"file":"FLT/Deformations/LiftFunctor.lean","now":1,"w12":1,"w24":1,"w72":1},{"file":"FLT/GaloisRepresentation/HardlyRamified/Family.lean","now":1,"w12":1,"w24":1,"w72":1},{"file":"FLT/GaloisRepresentation/HardlyRamified/Lift.lean","now":1,"w12":1,"w24":1,"w72":1},{"file":"FLT/GaloisRepresentation/HardlyRamified/ModThree.lean","now":1,"w12":1,"w24":1,"w72":1},{"file":"FLT/GaloisRepresentation/HardlyRamified/Threeadic.lean","now":1,"w12":1,"w24":1,"w72":1},{"file":"FLT/KnownIn1980s/EllipticCurves/GoodReduction.lean","now":1,"w12":1,"w24":1,"w72":1},{"file":"FLT/KnownIn1980s/EllipticCurves/Torsion.lean","now":1,"w12":1,"w24":1,"w72":1},{"file":"FLT/KnownIn1980s/EllipticCurves/WeilPairing.lean","now":1,"w12":1,"w24":1,"w72":1},{"file":"FLT/Patching/Utils/CompactHausdorffRings.lean","now":1,"w12":1,"w24":1,"w72":1},{"file":"FLT/PoitouTate.lean","now":1,"w12":1,"w24":1,"w72":0},{"file":"FLT/Proof.lean","now":1,"w12":1,"w24":1,"w72":1}],"lastClosed":{"hoursAgo":19,"label":"PR #8 / hub-oig35.20 closed 4 in Torsion.lean, 2026-08-16 11:40Z"}};
+
+  const WINDOWS = { "12": "the last 12 hours", "24": "the last 24 hours", "72": "the last 72 hours" };
+  let win = "12";
+
+  const $ = (id) => document.getElementById(id);
+
+  function seg(row, w) {
+    const start = row["w" + w], now = row.now;
+    return {
+      start, now,
+      open:   Math.min(now, start),
+      closed: Math.max(0, start - now),
+      added:  Math.max(0, now - start),
+      total:  Math.max(now, start)
+    };
+  }
+
+  function render() {
+    const rows = DATA.rows.map((r) => ({ r, s: seg(r, win) }))
+      .filter((x) => x.s.total > 0)
+      .sort((a, b) => b.s.total - a.s.total || a.r.file.localeCompare(b.r.file));
+
+    const max = Math.max(...rows.map((x) => x.s.total), 1);
+    const closedTotal = rows.reduce((n, x) => n + x.s.closed, 0);
+    const addedTotal  = rows.reduce((n, x) => n + x.s.added, 0);
+
+    // KPIs
+    $("k-live").textContent = DATA.totals.live;
+    $("k-live-note").textContent = DATA.totals.naive + " naive · " + DATA.totals.prose + " prose excluded";
+    const kc = $("k-closed");
+    kc.textContent = closedTotal > 0 ? "−" + closedTotal : "0";
+    kc.className = "val" + (closedTotal > 0 ? " accent" : "");
+    $("k-closed-note").textContent = closedTotal > 0
+      ? "across " + rows.filter((x) => x.s.closed > 0).length + " file(s) in " + WINDOWS[win]
+      : "no holes closed in " + WINDOWS[win];
+    $("k-last").textContent = DATA.lastClosed.hoursAgo + "h ago";
+    $("k-last-note").textContent = DATA.lastClosed.label;
+
+    $("chart-cap").textContent =
+      "Sorted by holes at the start of " + WINDOWS[win] + ". " +
+      (closedTotal > 0
+        ? closedTotal + " closed, shown in the second colour."
+        : "Nothing was closed in this window, so no bar carries the second colour.");
+
+    $("lg-added").hidden = addedTotal === 0;
+
+    // empty-state note — a zero window must read as a real state, not a broken chart
+    const empty = $("empty");
+    if (closedTotal === 0) {
+      empty.hidden = false;
+      $("empty-text").innerHTML =
+        "<b>No proof holes closed in " + WINDOWS[win] + ".</b> The chart is correct and current — " +
+        "the campaign has not closed a hole since " + DATA.lastClosed.label + ", " +
+        DATA.lastClosed.hoursAgo + " hours ago. Widen the window to see the last movement.";
+    } else {
+      empty.hidden = true;
+    }
+
+    // bars
+    const host = $("rows");
+    host.textContent = "";
+    for (const { r, s } of rows) {
+      const row = document.createElement("div");
+      row.className = "row";
+      row.tabIndex = 0;
+      const short = r.file.replace(/^FLT\//, "");
+      const parts = [s.open + " still open"];
+      if (s.closed) parts.push(s.closed + " closed in " + WINDOWS[win]);
+      if (s.added) parts.push(s.added + " opened in " + WINDOWS[win]);
+      row.title = short + " — " + parts.join(", ");
+      row.setAttribute("aria-label", row.title);
+
+      const name = document.createElement("div");
+      name.className = "fname";
+      // direction:rtl keeps the filename tail visible; wrap in LRM so the path reads correctly
+      name.textContent = "‎" + short;
+      row.appendChild(name);
+
+      const bar = document.createElement("div");
+      bar.className = "bar";
+      const px = (n) => (n / max) * 100;
+      const mk = (cls, n) => {
+        if (!n) return null;
+        const d = document.createElement("div");
+        d.className = cls;
+        d.style.width = px(n) + "%";
+        // only label inside the mark when it fits — otherwise the tooltip and table carry it
+        if (px(n) > 9) d.textContent = n;
+        return d;
+      };
+      [mk("seg-open", s.open), mk("seg-closed", s.closed), mk("seg-added", s.added)]
+        .filter(Boolean).forEach((el) => bar.appendChild(el));
+      row.appendChild(bar);
+
+      const tot = document.createElement("div");
+      tot.className = "total";
+      tot.textContent = s.now;
+      row.appendChild(tot);
+
+      host.appendChild(row);
+    }
+
+    // table twin
+    const tb = $("tbody");
+    tb.textContent = "";
+    for (const { r, s } of rows) {
+      const tr = document.createElement("tr");
+      const cells = [
+        r.file.replace(/^FLT\//, ""),
+        s.start,
+        s.closed || "—",
+        s.added || "—",
+        s.now
+      ];
+      cells.forEach((v, i) => {
+        const td = document.createElement("td");
+        td.textContent = v;
+        if (i === 4) td.className = "n";
+        tr.appendChild(td);
+      });
+      tb.appendChild(tr);
+    }
+  }
+
+  document.querySelectorAll(".seg button").forEach((b) => {
+    b.addEventListener("click", () => {
+      win = b.dataset.w;
+      document.querySelectorAll(".seg button").forEach((o) =>
+        o.setAttribute("aria-pressed", String(o === b)));
+      render();
+    });
+  });
+
+  $("p-head").textContent = DATA.head;
+  $("p-gen").textContent = DATA.generated;
+  $("p-prose").textContent = DATA.totals.prose;
+  render();
+</script>
