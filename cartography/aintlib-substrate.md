@@ -728,3 +728,142 @@ the gamma-factor bound, and it is the one place where a strength gap would be ex
 The sequencing is unchanged: item 1 (`#print axioms` on the `ExplicitFormula` consumers)
 still needs a warm build and is still not mine. Item 3 waits on both. **Item 4 still must
 not run first.**
+
+---
+
+# ADDENDUM 6, 2026-08-17T22:29Z — `AnalyticControl.lean` read at last. It retires two residuals I invented, and it breaks one coverage claim.
+
+§A21 named `AnalyticControl.lean` (181 KB, 45 declarations) as the unfinished and expensive
+part of item 2, and said whoever continued should take it first. The pool is still dark, so
+I did. It changes four verdicts, two of them corrections to my *own* work — one written
+half an hour ago.
+
+## A22. `exists_differentiableOn_log` covers W3-06, but delivers one of the three conclusions
+
+```lean
+-- AnalyticControl.lean:1927
+theorem exists_differentiableOn_log {U : Set ℂ} (hUo : IsOpen U) (hUc : Convex ℝ U)
+    (hne : U.Nonempty) {f : ℂ → ℂ} (hf : DifferentiableOn ℂ f U)
+    (h0 : ∀ z ∈ U, f z ≠ 0) :
+    ∃ L : ℂ → ℂ, DifferentiableOn ℂ L U ∧ Set.EqOn (Complex.exp ∘ L) f U
+```
+
+W3-06 asks for an analytic `L` on `ball c R` with **(i)** `exp ∘ L = f`, **(ii)**
+`Re L = log ‖f‖`, **(iii)** `deriv L = logDeriv f`.
+
+- **Domain: stronger than asked.** Any open convex nonempty `U`; a ball is open and convex,
+  so `ball c R` is a special case.
+- **Conclusion (i): delivered exactly.**
+- **Conclusions (ii) and (iii): not stated.** Both are cheap corollaries of (i) —
+  `‖f‖ = ‖exp L‖ = exp (Re L)` gives (ii) by `Real.log_exp`, and differentiating
+  `exp ∘ L = f` gives (iii) — but *cheap corollary* is not *ported statement*, and a
+  consumer node stated over (ii)/(iii) does not typecheck against this theorem.
+
+**Verdict: covered, plus an XS corollary bridge.** Not the clean "yes" §A2 recorded. Fold
+the two corollaries into whichever packet consumes the port; do not cut a node for them.
+
+## A23. W3-05 is **not** covered — AINTLIB has no Borel–Carathéodory theorem
+
+§A2 recorded `W3-05 | N5 Borel–Carathéodory off-center | AnalyticControl.lean | yes`. I
+went looking for the statement. It is not there. The 45-declaration index contains nothing
+Borel–Carathéodory-shaped, and a case-insensitive search for `borel`/`caratheodory` across
+the file returns no declaration — only unrelated `Re ≤` strip hypotheses.
+
+**AINTLIB reaches the same destination by a different route.** What N5 exists to feed is
+N7, the zero-machinery kernel — ultimately a bound on `logDeriv`. AINTLIB states that
+directly:
+
+```lean
+-- AnalyticControl.lean:2490
+theorem norm_logDeriv_le_of_norm_le {h : ℂ → ℂ} {c : ℂ} {r : ℝ} (hr : 3/4 < r)
+    (hd : DifferentiableOn ℂ h (Metric.ball c r))
+    (h0 : ∀ z ∈ Metric.ball c r, h z ≠ 0)
+    {mS mL : ℝ} (hmL : 0 < mL) (hcL : mL ≤ ‖h c‖)
+    (hS : ∀ z ∈ Metric.ball c r, ‖h z‖ ≤ mS) :
+    ∀ s ∈ Metric.closedBall c (r - 3/4),
+      ‖logDeriv h s‖ ≤ 32 * r * (Real.log (mS/mL) + 1)
+```
+
+That is the Borel–Carathéodory-plus-Jensen *consequence*, stated as a lemma, with the
+intermediate BC step never surfaced. Note the hard-coded shrink `3/4` and constant `32` —
+it is a specific instrument, not a general-radius API.
+
+**So the correct verdict for W3-05 is three-part, and none of it is "AINTLIB covers it":**
+
+1. **AINTLIB does not supply Borel–Carathéodory.** The §A2 row is wrong.
+2. **It does not need to.** W3-05's own envelope already says the mathematics is in
+   *Mathlib* — `Mathlib/Analysis/Complex/BorelCaratheodory.lean:109`, with
+   `borelCaratheodory_zero` at `:86` — and that W3-05 is "API glue, not a theorem". So §A2
+   credited AINTLIB with something Mathlib already had and AINTLIB does not.
+3. **If N7 is restated over `norm_logDeriv_le_of_norm_le`, W3-05 is unnecessary entirely.**
+   That is the cheaper end state, at the cost of inheriting the `3/4`/`32` constants.
+   Decide at port time; it is a node-shape question, not a coverage question.
+
+## A24. §A11 and §A20 are retired — the general bounds were one file over, and I missed them twice
+
+This is the correction that matters most, because I made it twice and the second time was
+today.
+
+§A11 (yesterday) concluded from `GammaStrip.lean` that the Gamma bounds are windowed to
+`[-1/2, 3/2]`, and cut a residual: *"general `[a,b]` wrapper; N3 drops M → S."* §A20 (this
+morning, ADDENDUM 5) concluded from `norm_gammaFactor_le` that the gamma-factor bound is
+windowed to `[1,2] × {|t| ≥ 2}`, and folded a second residual into the first. **Both
+conclusions were drawn from the narrow file while the general statements sat in
+`AnalyticControl.lean`, which I had only indexed by signature:**
+
+```lean
+-- :1187  upper bound, ALL σ ≥ 1/2 — a half-line, no upper cutoff
+theorem exists_norm_Gamma_le (σ : ℝ) (hσ : 1/2 ≤ σ) :
+    ∃ C, 0 < C ∧ ∃ P : ℕ, ∀ t, 1 ≤ |t| →
+      ‖Γ(σ + tI)‖ ≤ C * (1 + |t|)^P * exp (-(π|t|)/2)
+
+-- :1218  matching lower bound, ALL σ ≥ 1/2
+theorem exists_le_norm_Gamma (σ : ℝ) (hσ : 1/2 ≤ σ) : …
+
+-- :3112 / :3221  two-sided windows reaching negative σ: [-2,3] and [-1,2]
+theorem exists_norm_Gamma_le_window : … -2 ≤ σ → σ ≤ 3 → …
+theorem exists_le_norm_Gamma_window : … -1 ≤ σ → σ ≤ 2 → …
+
+-- :1485  gamma factor to an ARBITRARY upper limit σ₁
+theorem exists_norm_gammaFactor_le_range (σ₁ : ℝ) :
+    ∃ C, 0 < C ∧ ∃ P : ℕ, ∀ σ t, 1 ≤ σ → σ ≤ σ₁ → 2 ≤ |t| → …
+```
+
+**N3 asked for a crude polynomial `(1+|t|)^A`.** That is *exactly* the `∃ C ∃ P` shape at
+`:1187`, and it holds for every `σ ≥ 1/2` with no upper cutoff. **N3 is fully covered. The
+general-strip wrapper packet should not be cut** — §A11's "N3 drops M → S" was too
+pessimistic; N3 drops out. §A20's gamma-factor complaint is likewise answered by `:1485`
+for any `σ₁`.
+
+The one genuine distinction to carry forward, which replaces both residuals:
+
+| need | use | why |
+|---|---|---|
+| **explicit constant** (`√(12π)·‖z‖`) | `GammaStrip.lean:346/484` | narrow window `[1/2,3/2]`, but the constant is written down |
+| **wide σ range** | `AnalyticControl.lean:1187/1218/3112/3221/1485` | existential `∃ C ∃ P` — no explicit constant |
+
+A consumer needing *both* an explicit constant and a wide window still has work. Nothing in
+the current node set does.
+
+**Why I got this wrong twice:** both §A11 and §A20 generalised from the file whose *name*
+matched the topic. `GammaStrip.lean` is where Gamma strip bounds "should" live, so I read it
+and stopped. The general versions live in the 181 KB file I kept deferring because it was
+expensive to read. That is precisely the failure mode item 2 exists to catch, and it caught
+my own work rather than the port's — which is the more useful outcome, since my residuals
+were about to become dispatched packets.
+
+## A25. Item 2 status — now ~80%, and the remaining 20% is named
+
+**Verified from source:** W3-01, W3-02, W3-03, W3-04, W3-05 (negative), W3-06, W3-08, plus
+N3/N19 settled and §A11/§A20 retired.
+
+**Still at §A2's weaker "high confidence", not re-derived:** W3-07 (A5 anisotropic Gaussian
+— `ThetaLattice`/`HeckeTheta`), W3-09 (F3a unit-orbit ↔ ideal — `ClassTheta`), W3-11 (D1
+polar decomposition — `Existence`). Three units, three files, all fetched and on disk.
+Whoever continues should do those three and then declare item 2 closed.
+
+**Net effect on the hold list:** of the twelve held units, the port's coverage is now
+confirmed strong enough for seven, one (W3-05) is confirmed *not* covered and probably
+unnecessary, one (W3-06) needs an XS corollary, and three remain unverified. **No unit has
+been found where the port is too weak for its consumer.** The two residuals I had recorded
+against the port were both mine, not its.
