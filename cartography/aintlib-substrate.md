@@ -867,3 +867,190 @@ confirmed strong enough for seven, one (W3-05) is confirmed *not* covered and pr
 unnecessary, one (W3-06) needs an XS corollary, and three remain unverified. **No unit has
 been found where the port is too weak for its consumer.** The two residuals I had recorded
 against the port were both mine, not its.
+
+---
+
+# ADDENDUM 7, 2026-08-17T22:41Z — item 2 is CLOSED. The last three units read; two of them are not covered, and the reason matters more than the fact.
+
+§A25 named the remaining 20% precisely — W3-07, W3-09, W3-11 — and said they were
+finishable offline from `/tmp/aintlib/`. They were. This closes §A16 item 2.
+
+## A26. W3-07 (A5, anisotropic Gaussian) — covered, exact constant, and the `2^{r₂}` risk is already discharged
+
+The packet's own risk note says the `2^{r₂}` bookkeeping "is checked end-to-end much later
+… until then it is unverified, so state it precisely." **AINTLIB has already stated it
+precisely and proved it.**
+
+```lean
+-- ThetaLattice.lean:303
+noncomputable def weightedGaussianCM (c : ι → ℝ) : C(EuclideanSpace ℝ ι, ℂ) :=
+  ⟨fun x => Complex.exp (-(π : ℂ) * ∑ i, (c i : ℂ) * (x i : ℂ) ^ 2), by fun_prop⟩
+
+-- ThetaLattice.lean:348
+theorem fourier_weightedGaussianCM {c : ι → ℝ} (hc : ∀ i, 0 < c i) (w : EuclideanSpace ℝ ι) :
+    𝓕 (⇑(weightedGaussianCM c)) w
+      = (Real.sqrt (∏ i, c i))⁻¹ • weightedGaussianCM (fun i => (c i)⁻¹) w
+```
+
+**The constant is W3-07's constant.** Under the place→coordinate expansion
+`placeWeights c = Sum.elim c (fun p => c p.1)` (`HeckeTheta.lean:54`), a complex place owns
+two coordinates carrying the same weight, so `∏ᵢ placeWeights c i = ∏_v (c_v)^{n_v}` and
+`(√∏ᵢ)⁻¹ = ∏_v (c_v)^{−n_v/2}`. Substituting `c_v = n_v y_v` gives exactly
+`∏_v (n_v y_v)^{−n_v/2}` — the constant W3-07 demands be fixed in the statement.
+
+**The exponent is W3-07's exponent**, via
+
+```lean
+-- HeckeTheta.lean:60
+theorem sum_placeWeights_embeddingCoords_sq (c : InfinitePlace K → ℝ) (x : K) :
+    (∑ i : index K, placeWeights K c i * embeddingCoords K x i ^ 2)
+      = ∑ w : InfinitePlace K, c w * (w x) ^ 2
+```
+
+again with `c_w = n_w y_w`. Note the multiplicity is *not* written in this lemma — it comes
+from the two coordinates of a complex place, which is the correct place for it to come from.
+
+**And the archimedean duality factor is written down, not deferred:**
+
+```lean
+-- HeckeTheta.lean:192
+noncomputable def dualPlaceWeights (c : InfinitePlace K → ℝ) : InfinitePlace K → ℝ :=
+  fun w => if IsReal w then (c w)⁻¹ else 4 * (c w)⁻¹
+```
+
+The `4 = 2²` at complex places is the whole of the `2^{r₂}` bookkeeping, proved consistent
+with the coordinate picture by `placeWeights_dualPlaceWeights` (:197) and consumed by
+`heckeTheta_inversion` (:212). **This is the single most valuable thing the port carries for
+C2/F3b**, and my §A2 row recorded it as an undifferentiated "yes".
+
+**Two things W3-07 asks for that are not there, both small and both structural:**
+
+1. **`SchwartzMap` membership is never stated.** AINTLIB works in `C(E, ℂ)` and supplies
+   summability by hand (`summable_norm_restrict_weightedGaussianCM`,
+   `summable_fourier_weightedGaussianCM`), because its Poisson summation is stated over
+   continuous maps with explicit summability hypotheses rather than over the Schwartz class.
+   If the FLT node is restated over AINTLIB's Poisson route, **the Schwartz requirement
+   disappears entirely**; if it is kept as written, this is a genuine S-sized obligation.
+2. **The domain is `EuclideanSpace ℝ (index K)`, not `mixedSpace K`.** The transport is not
+   missing, it is Mathlib's own orthonormal coordinate map —
+   `embeddingCoords K x i = (stdBasis K).repr (mixedEmbedding K x) i` (`IdealLattice.lean:117/121`).
+   XS bridge, same class as W3-06's.
+
+**Verdict: covered, stronger than recorded on the constant, with one XS transport lemma and
+one S-sized `SchwartzMap` obligation that the right node shape deletes.**
+
+## A27. W3-08 gets a better citation than the one I gave it
+
+I verified W3-08 earlier via `covolume_idealZLattice`. That was the wrong lemma to cite —
+the *statement* is in the port, directly:
+
+```lean
+-- IdealLattice.lean:148
+noncomputable def dualityWeights : index K → ℝ :=
+  Sum.elim (fun _ => 1) (fun p => if p.2 = 0 then 2 else -2)
+
+-- IdealLattice.lean:162
+theorem inner_diagScale_embeddingCoords (a b : K) :
+    ⟪(diagScale (dualityWeights K) _) (embeddingCoords K b), embeddingCoords K a⟫
+      = ((Algebra.trace ℚ K (b * a) : ℚ) : ℝ)
+```
+
+That **is** W3-08: `Trace_{K/ℚ}(b·a) = B(ι b, ι a)` with `B` the explicit bilinear form. And
+the packet's stated trap — "the trace pairing is bilinear while the inner product is
+sesquilinear-shaped at complex places; there is **no conjugation** in `B`" — is exactly the
+`(2, −2)` weight pair at `(re, im)`. The minus sign *is* the absent conjugation, machine-
+checked. W3-08 upgrades from "covered" to "covered, and the trap is already discharged."
+
+## A28. W3-09 and W3-11 are **not covered** — and unlike W3-05, they are not covered because AINTLIB took a different road
+
+This is the finding with dispatch consequences, so I am stating the negative evidence
+explicitly rather than asserting absence.
+
+**W3-09 (F3a, unit-orbit ↔ ideal bijection).** `ClassTheta.lean` contains no bijection of
+this kind. Its 20 declarations are class-group bookkeeping (`classGroup_mk_eq_mk_iff`,
+`classRep`, `dualClass_bijective`), an ideal norm (`idealNormR`), and the class-summed theta
+`heckeGClass` / `heckeF` with their inversion laws. Searched across all 13 files:
+`fundamentalCone`, `integerSet`, `idealSetEquivNorm` — **zero occurrences**, so the Mathlib
+special case W3-09 says to generalise is not used anywhere in the port. `torsionOrder`
+occurs in exactly two roles: as the divisor `(torsionOrder K)⁻¹` in the definition of
+`heckeG` (`HeckeTheta.lean:362`) and inside the box-volume constant in `FEPair.lean`.
+**Never as W3-09's counting statement** ("each orbit meets a torsion-free section in exactly
+`w` elements"), and the norm identity `|Norm α| = N((α)I⁻¹)·N I` is nowhere stated.
+
+The nearest thing is unit *invariance* of the theta — `unitMulLatticeEquiv` (:126) and
+`heckeTheta_unit_mul` (:168) — which is a different assertion: the orbit is quotiented by an
+integral over a fundamental box, not enumerated by a bijection.
+
+**W3-11 (D1, polar decomposition of the parameter space).** Nothing in `Existence.lean`
+resembles it; that file is the completed-zeta assembly. Across all 13 files there is **no**
+`polar`, no `NormLeOne`, no `expMap`, and no norm-one surface `S = Nm⁻¹{1}`. AINTLIB never
+constructs `Y ≅ (0,∞) × S`. It goes through log-coordinates a different way:
+
+```lean
+-- HeckeTheta.lean:361
+noncomputable def heckeG (I : (FractionalIdeal (𝓞 K)⁰ K)ˣ) (t : ℝ) : ℝ :=
+  (torsionOrder K : ℝ)⁻¹ *
+    ∫ u in ZSpan.fundamentalDomain
+      ((Module.Free.chooseBasis ℤ (unitLattice K)).ofZLatticeBasis ℝ),
+      heckeTheta K I (heckeWeights K t u)
+```
+
+— a Lebesgue integral over a fundamental box of the **unit lattice** in `logSpace K`, with
+`heckeWeights t u` carrying the single scale parameter `t`, periodicity supplied by
+`heckeTheta_heckeWeights_periodic` (:311) so the box choice is immaterial, and the
+`torsionOrder` divisor doing the job W3-09's counting statement was supposed to do.
+
+**Both routes end at the same place, and AINTLIB's end is proved:**
+
+```lean
+-- Existence.lean:369
+theorem exists_isCompletedDedekindZeta : ∃ Λ : ℂ → ℂ, IsCompletedDedekindZeta K Λ
+-- Existence.lean:412
+theorem completedDedekindZeta_one_sub (s : ℂ) :
+    completedDedekindZeta K (1 - s) = completedDedekindZeta K s
+```
+
+So the correct statement is **not** "the port is missing two units." It is: **W3-09 and
+W3-11 are artifacts of the route *we* designed** (polar decomposition + orbit enumeration —
+the modern presentation), and **the port carries a complete alternative route to the same
+theorem** (Hecke's own: unit-box average of a multivariable theta, torsion divided out).
+If C2 is restated over AINTLIB, W3-09 and W3-11 are **not ported, not repaired, and not
+needed — they are deleted.** If C2 keeps our route, they must be written from scratch and
+the port helps with neither.
+
+That is a route decision, and it is above my authority to take. It is now stated with
+enough evidence to be taken by someone.
+
+## A29. Item 2 CLOSED — final table for all twelve held units
+
+| unit | verdict | what it costs |
+|---|---|---|
+| W3-01 (A2 fundamental domain) | **covered** | — |
+| W3-02 (A3 dual covolume) | **covered**, exact generality | — |
+| W3-03 (F2a gamma factor) | **covered** | — |
+| W3-04 (C2 Gamma norms) | **covered, stronger** (no `t ≠ 0` at ½) | delete `ZeroTheoryN2.lean`, re-export |
+| W3-05 (N5 Borel–Carathéodory) | **NOT covered** — and it is in **Mathlib** | restate N7 over `norm_logDeriv_le_of_norm_le`, or take BC from Mathlib |
+| W3-06 (N6 analytic log) | **covered**, more general domain | XS: two corollaries (`Re L`, `deriv L`) |
+| W3-07 (A5 anisotropic Gaussian) | **covered**, constant exact, `2^{r₂}` discharged | XS transport + S `SchwartzMap` (deleted by the right node shape) |
+| W3-08 (B1 trace pairing) | **covered**, trap discharged | — |
+| W3-09 (F3a orbit ↔ ideal) | **NOT covered** — route-specific | delete if C2 adopts AINTLIB's route; write from scratch if not |
+| W3-11 (D1 polar decomposition) | **NOT covered** — route-specific | same |
+| W3-12 (N19 test-function decay) | **covered, broader class** (§A10) | S inclusion lemma *or* restate over `IsAdmissibleTestFn` |
+| W3-13 (N1 interface) | **hold by design** | write against ported names |
+
+**Headline, unchanged and now complete: there is no unit where the port is too weak for its
+consumer.** Every gap found is one of three kinds — a residual I invented (§A24, twice), a
+statement that lives in Mathlib instead (W3-05), or a node that exists only because of a
+route choice we made and the port did not (W3-09, W3-11).
+
+**Where §A2 was reliable and where it was not, since this is the reusable lesson:** the map
+is right on every row I derived from declarations, and wrong or overstated on four of the
+rows I filled in from filenames — W3-05, W3-09, W3-11 (all three "yes (high confidence)",
+all three wrong) and the W3-07 row that flattened a proved `2^{r₂}` result into "yes". Three
+of the four wrong rows sit in the **single line** `W3-09 / W3-10 / W3-11 | … | yes (high
+confidence)`. **One line covering three units is the shape of the error.** Whoever writes
+the next substrate map: one row per unit, and cite the declaration or write "not checked".
+
+**Item 2 is closed.** Sequencing for the rest of §A16 is unchanged: item 1 (`#print axioms`
+on the `ExplicitFormula` consumers) needs a warm build and is not mine; item 3 waits on
+items 1 and 2; **item 4 still must not run first.**
