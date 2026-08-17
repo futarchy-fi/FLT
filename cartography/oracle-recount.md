@@ -296,3 +296,68 @@ compiled and this is a project-wiring defect rather than a vacuous verdict. That
 one-command check — read what `flt-acceptance` actually invokes — and it should be done
 before anyone either closes `hub-r7qdn.7` or reopens it. Packet `C2-CLOSURE-FIX` carries
 both the repair and that fairness note.
+
+### 8c. SETTLED EMPIRICALLY — W3-00 was run on 2026-08-17T23:15Z, and §8 is confirmed
+
+Everything above about the build-closure hazard was a *textual* argument: I read
+`lakefile.toml`, read Lake's glob semantics, and inferred that orphan modules are never
+compiled. Kelvin granted crew-18 toolchain access today (`lean` 4.34.0-rc1, commit
+`3447a668783dbce1a8fdb97101dd067687b2b418`; `lake` 5.0.0-src+3447a66, both fixed under
+`/usr/local/bin`, no `elan`), so the inference is now an experiment.
+
+**W3-00 does not need Mathlib.** The whole question is Lake glob semantics, so it can be
+settled in a throwaway package with FLT's exact glob shape and no dependencies — seconds,
+not the hours a warm FLT build would cost. The package: a root `Root.lean` importing
+`Root.Imported`, plus `Root/Orphan.lean` containing a deliberate hard type error.
+
+**Run 1 — `globs = ["Root"]`, which is FLT's shape (`globs = ["FLT", "FermatsLastTheorem"]`):**
+
+```
+✔ [2/4] Built Root.Imported (6.5s)
+✔ [3/4] Built Root (445ms)
+Build completed successfully (4 jobs).
+EXIT=0
+```
+
+`Root/Orphan.lean` was never compiled. **`lake build` reports success, exit 0, over a file
+containing a type error.** That is the hazard, reproduced exactly.
+
+**Run 2 — same tree, `globs = ["Root.+"]`:**
+
+```
+✔ [2/4] Built Root.Imported (829ms)
+✖ [3/4] Building Root.Orphan (842ms)
+error: Root/Orphan.lean:1:20: Type mismatch
+  "this is a type error and will not compile" has type String but is expected to have type Nat
+error: build failed
+EXIT=1
+```
+
+So the bare-module glob is precisely the cause, and the recursive glob is precisely the
+cure. **A bare `"FLT"` glob means the single module `FLT`; the default target is therefore
+the import closure of the hand-maintained `FLT.lean`, and nothing else.**
+
+**Confirmed against live main at `e2c90e1`:** `FLT.lean` imports none of
+`FLT.MazurW`, `FLT.PoitouTate`, `FLT.NumberField.ZetaFE.ZeroTheoryN2`, and a repo-wide grep
+finds **no file anywhere** importing them. `scripts/sorry_count.py --closure` reports the
+same three and **exits 1** (verified; the plain invocation exits 0). The gate I have been
+recommending works as specified.
+
+**The fix is NOT simply changing the glob to `"FLT.+"`, and this is the part to get right.**
+The three orphans hold real defects — `ZeroTheoryN2.lean` alone produced 124 `Ambiguous
+term` / 126 `unsolved goals` / 137 `type mismatch` errors on its first real compilation
+(§8b). Flipping the glob today converts a silently-passing repo into a **repo-wide red
+build**, which is worse than the hazard for anyone who has to merge in the meantime. And
+stubbing the orphans with `sorry` to make them compile moves naive 67 → 69 and false-fails
+every packet gated on the constant. Ordering that works:
+
+1. **Wire `scripts/sorry_count.py --closure` into `flt-acceptance` now.** It needs no
+   toolchain, exits 1 on orphans, and turns the hazard from silent into loud without
+   touching the build.
+2. **Repair the three orphans** (`oig35-21-refinement.md` has the per-line work for
+   `ZeroTheoryN2`), each on its own branch.
+3. **Only then flip `globs` to `["FLT.+", "FermatsLastTheorem"]`**, in one atomic commit
+   with the last repair, and re-pin every packet constant in the same change.
+
+Step 1 is a one-line CI addition and closes the vacuous-green class permanently. It should
+not wait on steps 2 and 3.
