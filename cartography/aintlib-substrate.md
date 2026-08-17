@@ -168,17 +168,30 @@ reconciliation, which was the single largest risk the port audit flagged.
 
 I authored 16 wave-3 envelopes this morning. Mapping each against the AINTLIB source:
 
+> **SUPERSEDED IN PART — read §A33 (ADDENDUM 8) for the authoritative per-unit table.**
+> Corrected in place 2026-08-17T22:58Z (fermat). This table was built partly from
+> declarations and partly from filenames, and **every row I filled in from a filename was
+> wrong or overstated.** The rows below carry their corrections inline; the verdicts, the
+> declaration citations and the remaining costs are in §A33. The audit trail is §A19
+> (three citation defects), §A23–A24 (W3-05 and the withdrawn §A11/§A20 residuals),
+> §A26–A28 (W3-07/W3-08, and the retracted W3-09/W3-11 negative), §A30–A34 (the retraction
+> and the corrected table). **Method note for whoever writes the next map: one row per
+> unit, cite the declaration, or write "not checked" — the single line covering
+> `W3-09 / W3-10 / W3-11` below is the shape of three of the four errors.**
+
 | wave-3 unit | node | AINTLIB file | covered? |
 |---|---|---|---|
 | W3-01 | A3 Poisson on `ℤ^d` | `PoissonSummation.lean` (`zpoint`, `intEquivSpanBasisFun`, `fundamentalDomain_basisFun_eq`, `mFourier`) | **yes** |
 | W3-02 | A1 dual lattice | `DualLattice.lean` (`dualZLattice`, `mem_dualZLattice`, `dualZLattice_eq_span`, `covolume_dualZLattice_mul`) | **yes — and A2 as well** |
 | W3-03 | F2a Deligne Gamma integrals | `Normalisation.lean` `gammaFactor` + `Existence.lean` `prod_place_gamma`, `Gammaℝ_ofReal`, `Gammaℂ_ofReal` | **yes** |
 | W3-04 | N2 Gamma modulus identities | `GammaStrip.lean` `norm_Gamma_half_add_mul_I_sq`, `norm_Gamma_one_add_mul_I_sq` | **yes — and N3's two-sided strip bounds too** (`norm_Gamma_le_mul_exp`, `le_norm_Gamma_base`) |
-| W3-05 | N5 Borel–Carathéodory off-center | `AnalyticControl.lean` | **yes** |
-| W3-06 | N6 holomorphic logarithm | `AnalyticControl.lean:1924` | **yes** |
-| W3-07 | A5 anisotropic Gaussian | `ThetaLattice.lean` / `HeckeTheta.lean` | **yes (high confidence)** |
-| W3-08 | B1 trace pairing | `IdealLattice.lean` (`embeddingCoords`, `dualityWeights`, `covolume_idealZLattice`) | **yes** |
-| W3-09 / W3-10 / W3-11 | F3a, F1, D1 | `ClassTheta.lean`, `MellinAgreement.lean`, `Existence.lean` | **yes (high confidence)** |
+| W3-05 | N5 Borel–Carathéodory off-center | ~~`AnalyticControl.lean`~~ **Mathlib** | ~~**yes**~~ → **NO — §A23.** There is no Borel–Carathéodory statement in AINTLIB. BC is in Mathlib; the consumer purpose is met by `AnalyticControl.lean:2490` `norm_logDeriv_le_of_norm_le`. |
+| W3-06 | N6 holomorphic logarithm | `AnalyticControl.lean:1927` `exists_differentiableOn_log` | **yes, more general domain (§A22)** — but only `exp ∘ L = f` is stated; `Re L = log‖f‖` and `deriv L = logDeriv f` are XS corollaries. |
+| W3-07 | A5 anisotropic Gaussian | `ThetaLattice.lean:303/:348`, `HeckeTheta.lean:54/:60/:192`, `MellinAgreement.lean:246` | ~~**yes (high confidence)**~~ → **yes, and stronger than this row claimed (§A26, §A32):** `fourier_weightedGaussianCM` carries *exactly* the demanded constant, and the `2^{r₂}` bookkeeping the packet flags as unverified is proved (`dualPlaceWeights`). Owed: `SchwartzMap` only. |
+| W3-08 | B1 trace pairing | `IdealLattice.lean:162` `inner_diagScale_embeddingCoords` (**not** `covolume_idealZLattice`, §A27) | **yes — and the packet's "no conjugation" trap is discharged**: `dualityWeights` is `(2, −2)` at `(re, im)`. |
+| **W3-09** (F3a orbit ↔ ideal) | F3a | `MellinAgreement.lean:140` `coneUnfoldEquiv`, `:812` `abs_norm_conePreimage`, `:822` `tsum_idealSet_norm_rpow` (**not** `ClassTheta.lean`) | **yes, different shape (§A30)** — equivalence + summed identity over principal ideals dividing `J`; class indexing is factored into `ClassTheta`. Restate the node over the port's shape. |
+| **W3-10** (F1 partial zeta) | F1 | `MellinAgreement.lean`, `ClassTheta.lean` `heckeGClass`/`heckeF` | **not re-derived** — W3-10 was never on the hold list, so item 2 did not cover it. Treat as unchecked. |
+| **W3-11** (D1 polar decomposition) | D1 | `MellinAgreement.lean:1058` `heckeLogCLE`, `:1081` `map_heckeLogCLE_volume`, `:1087` `heckeJacobian_pos` (**not** `Existence.lean`) | **yes, on the log side (§A31)** — done exactly as W3-11's own sketch prescribes. Owed: `exp`-transport if multiplicative Haar is wanted, and the Jacobian is **existential** (positivity only, not `= 1`). |
 | W3-12 | N19 test-function decay | — | **no** — Poitou explicit-formula class, past `CompletedZeta`'s scope |
 | W3-13 | N1 M2→M3 interface | — | **hold**: the interface should be written against the *ported* names, not re-derived |
 | W3-14 / W3-15 | CBC-S8, CBC-S2 | — | **no** — unrelated to zeta, safe to dispatch |

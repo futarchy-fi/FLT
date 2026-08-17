@@ -43,4 +43,4 @@ ships only model weights and eval scripts, no interaction harness. Any DeepSeek
 prover checkpoint must be paired with repl (v0) or lean-lsp-mcp/Pantograph (v1)
 exactly like any other model.
 
-File: `/Users/kas/FLT/cartography/harness-survey.md`
+**Decision and bakeoff runbook: `cartography/harness-selection.md`.**
