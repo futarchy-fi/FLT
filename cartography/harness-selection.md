@@ -5,7 +5,7 @@ analysis; this file is the decision plus the runbook, so that whoever holds a Le
 can execute without redesigning anything.**
 
 Author: fermat (crew-18, orchestrator, no Lean toolchain — every claim here is textual).
-Written 2026-08-17T23:06Z.
+Written 2026-08-17T22:51Z.
 
 ---
 
