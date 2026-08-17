@@ -458,3 +458,125 @@ Recording them now so they are not rediscovered as surprises at assembly.
 And the standing caveat is unchanged and still the only thing that matters: **no build CI
 there, no toolchain here.** Everything above is signature reading. AINTLIB-0′ remains the
 one experiment that converts any of it into fact.
+
+---
+
+# ADDENDUM 4, 2026-08-17T06:5xZ — AINTLIB-0′ came back GREEN. Statement review, and the AINTLIB-2 decision.
+
+Supervisor result, quoted exactly: rev `1c1c74664e40`, repo-native mathlib pin, **26**
+`CompletedZeta`+`ExplicitFormula` modules, **8722** build jobs, **804s**;
+`#print axioms DedekindResidue.completedDedekindZeta_one_sub` =
+`[propext, Classical.choice, Quot.sound]`, no `sorryAx`.
+
+## A13. What the green actually discharges — and what it does not
+
+**It discharges the §A12 standing caveat, on the build dimension only.** A12 said "no
+build CI there, no toolchain here — everything above is signature reading, and AINTLIB-0′
+is the one experiment that converts any of it into fact." That experiment has now run.
+The tree compiles against FLT's own mathlib pin, at the scope §A8 specified
+(`CompletedZeta` **and** `ExplicitFormula`, root `Theorem1`/`MainTheorem` excluded). The
+§A8 scope note was honored — 26 modules is the right number for that pair, not for
+`CompletedZeta` alone. The 271-commit forward bump (§2) is now demonstrated, not
+projected.
+
+**The supervisor's caution about the axiom audit is correct, and the precise form of it is
+worth stating**, because "one declaration" undersells it in one direction and oversells it
+in another:
+
+- `#print axioms` is **transitive**. It reports the axioms of the entire proof tree
+  beneath the named declaration. So this is not a spot check of one line — it certifies
+  that `completedDedekindZeta_one_sub` **and every lemma it depends on** are free of
+  `sorryAx`. That is a genuinely strong result about the M2 spine.
+- But it certifies a **cone, not a project**. Any declaration not in that dependency tree
+  is unaudited by this command. Critically, `completedDedekindZeta_one_sub` is the
+  functional equation — it lives in `CompletedZeta`. **The whole `ExplicitFormula/` half
+  is almost certainly outside its cone**, and `ExplicitFormula/` is M4–M7, the larger
+  prize (§A6). The 8722-job build proves those modules *compile*; it does not prove they
+  are `sorryAx`-free, because a `sorry` compiles fine.
+
+**Ask for, before AINTLIB-2:** `#print axioms` on the consumer-facing declarations of the
+`ExplicitFormula` half — the explicit-formula theorem itself and the `IsAdmissibleTestFn`
+results behind §A10/§A11 — not just the M2 functional equation. That is one more cheap
+command on an already-warm build, and it converts §A2's mechanical sorry/axiom count (a
+textual scan I did without a toolchain) into checked fact for the half that matters most.
+
+## A14. The statement review, which is the actual gate — and a build cannot do it
+
+§A9 recorded the real risk and the green does not touch it: **the coverage map is
+signature-level.** I matched node statements to declaration names and types; I did not
+verify that each ported statement is *strong enough for its consumer FLT node*. A green
+build says the proofs are correct. It says nothing about whether they prove what we need.
+
+The two named residuals from §A12 stand exactly as recorded, and both are now *actionable*
+rather than parked, because the code they bridge onto is about to exist:
+
+| node | status | bridge required |
+|---|---|---|
+| N19 / W3-12 | covered, **broader** class (`IsAdmissibleTestFn` ⊋ my N19 class, §A10) | S-sized inclusion lemma, *or* restate the FLT node over `IsAdmissibleTestFn` |
+| N3 (feeds W3-04) | covered on `[-1/2, 3/2]` only (§A11); the bound's *shape* is stronger | S-sized general-strip wrapper; N3 drops M → S |
+
+Both should be cut as packets **the moment AINTLIB-2 lands**, not before — they are
+bridges onto ported code, and cutting them early produces exactly the failure mode
+described in §A16.
+
+**And the honest boundary, restated because it is the thing most likely to be
+over-claimed:** AINTLIB's root theorem is Belabas–Friedman **under GRH** (§A7). Our target
+`FLT/Assumptions/Odlyzko.lean:57` is **unconditional**. The port buys M2, most of M3, and
+M4–M7 as unconditional sorry-free machinery. It does **not** buy the Odlyzko application —
+the arithmetic taking an explicit formula to `|discr K| ≥ 8.25 ^ finrank ℚ K` at degree
+≥ 18. Nobody should read "AINTLIB-0′ green" as "the Odlyzko axiom is close to falling."
+The remaining FLT-specific work is the Odlyzko endgame on top of a ported explicit
+formula: smaller and far better shaped than the 45-leaf wave, but real, and still ours.
+
+## A15. Decision — AINTLIB-2 should VENDOR, not hand-port
+
+Recommendation: **vendor the bumped `CompletedZeta` + `ExplicitFormula` subtree under a
+namespace prefix, with Apache-2.0 attribution. Do not restate it by hand.**
+
+Licensing is clean and settled: AINTLIB is Apache-2.0 and the `LICENSE` was added *at the
+exact commit we pin* (`1c1c74664e40`, "Add Apache-2.0 LICENSE", 2026-07-31). Attribution
+headers per file, as §3/AINTLIB-2 already specifies.
+
+The decisive argument is empirical and we earned it this morning, in this repo:
+
+> **Hand-restatement is the failure mode that just bit us.** `ZeroTheoryN2.lean` — 140
+> lines of hand-written Lean delivered against a node description — merged green on
+> 2026-08-16 having never been compiled by anything, and on first real compilation
+> produced 124 ambiguity / 126 unsolved-goal / 137 type-mismatch errors. See
+> `cartography/oig35-21-refinement.md`.
+
+Hand-porting ~1.6 MB of number theory is that same bet, taken ~100× over, against proofs
+that **have already been machine-checked upstream**. Vendoring preserves checked artifacts;
+porting re-opens every one of them. Choose vendoring.
+
+Two conditions on it, both non-negotiable:
+
+1. **The build-closure gate applies to the vendored subtree.** Vendored modules that
+   nothing imports are exactly as vacuous as `ZeroTheoryN2` was — a 26-module vendor drop
+   could add zero real compilation and still show green. Gate on
+   `scripts/sorry_count.py --closure` (exits 1 on orphans, no toolchain needed) in the
+   same commit that lands the vendor, and wire the vendored root into `FLT.lean`.
+2. **Re-audit axioms after the bump, in FLT's tree, not AINTLIB's.** The 271-commit
+   forward bump is linear with no divergent history (§2), but "compiles after bump" and
+   "proves the same statements after bump" are different claims, and mathlib deprecations
+   can silently weaken a statement through a changed definition. `#print axioms` on the
+   consumer-facing declarations post-vendor, per §A13.
+
+Build cost to plan for: 8722 jobs / 804s at the pinned mathlib. That is a real per-CI
+number and argues for vendoring the subtree **only** — root `Theorem1`/`MainTheorem`
+excluded, as §A8 already says — rather than the whole project.
+
+## A16. Sequencing
+
+1. `#print axioms` on the `ExplicitFormula` consumer declarations (§A13). Cheap, warm
+   build, and it is the last thing standing between §A2's textual scan and checked fact.
+2. **Statement review of the M2/M3/M4–M7 declarations against their consumer FLT nodes**
+   (§A14). This is mine, it is signature-level work needing no toolchain, and it is the
+   genuine gate — not the build.
+3. AINTLIB-2 vendor drop under §A15's two conditions.
+4. Only then cut the N19 and N3 bridge packets (§A14) and release the §A8 held units
+   W3-01…W3-09, W3-11, W3-12, W3-13.
+
+Doing 4 before 2 is how a signature-level coverage map becomes a wave of packets gated
+against statements nobody checked were strong enough. That is the same shape of error as
+the vacuous green, one level up.
