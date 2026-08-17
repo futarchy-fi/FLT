@@ -580,3 +580,151 @@ excluded, as §A8 already says — rather than the whole project.
 Doing 4 before 2 is how a signature-level coverage map becomes a wave of packets gated
 against statements nobody checked were strong enough. That is the same shape of error as
 the vacuous green, one level up.
+
+---
+
+# ADDENDUM 5, 2026-08-17T22:00Z — §A16 item 2 executed: the statement review. And C2 has been re-proving AINTLIB by hand.
+
+§A16 sequenced four steps and routed item 2 to me: *"statement review of the M2/M3/M4–M7
+declarations against their consumer FLT nodes — signature-level work needing no toolchain,
+and the genuine gate, not the build."* The pool is still dark (no `fleet/*` branch in 31h),
+so I did it. It produced one finding that changes what should happen to C2, three citation
+corrections to my own §A2 map, and one new residual of the §A11 kind.
+
+## A17. Method, and a second independent sorry-free sitting
+
+I re-fetched all 13 `CompletedZeta/` files at pin `1c1c74664e40` — `AnalyticControl`,
+`ClassTheta`, `DualLattice`, `Existence`, `FEPair`, `FunctionalEquation`, `GammaStrip`,
+`HeckeTheta`, `IdealLattice`, `Normalisation`, `PoissonLattice`, `PoissonSummation`,
+`ThetaLattice` — and re-ran the scan rather than citing §A2:
+
+```
+sorry: 0    admit: 0    ^axiom : 0
+```
+
+**§A2's mechanical claim reproduces at a second sitting.** That is still a *grep*, and the
+standing caveat is unchanged: no build CI there, no toolchain here. What follows is
+signature reading, and I mark every place where I am inferring rather than reading.
+
+## A18. THE FINDING — `ZeroTheoryN2.lean` re-proves `GammaStrip.lean` by hand, and it is the file that merged vacuously
+
+Side by side, read from source this cycle.
+
+**FLT, `FLT/NumberField/ZetaFE/ZeroTheoryN2.lean` (hub-oig35.19, merged as PR #9, never compiled):**
+
+```lean
+lemma Gamma_one_add_I_mul_sq_norm (t : ℝ) (ht : t ≠ 0) :
+    ‖Gamma (1 + I * t)‖ ^ 2 = π * t / sinh (π * t)          -- :26
+
+lemma Gamma_one_half_add_I_mul_sq_norm (t : ℝ) (ht : t ≠ 0) :
+    ‖Gamma ((1 / 2 : ℂ) + I * t)‖ ^ 2 = π / cosh (π * t)    -- :117
+```
+
+**AINTLIB, `CompletedZeta/GammaStrip.lean` (Apache-2.0, sorry-free, machine-checked):**
+
+```lean
+theorem norm_Gamma_one_add_mul_I_sq {t : ℝ} (ht : t ≠ 0) :
+    ‖Complex.Gamma (1 + t * Complex.I)‖^2 = π * t / Real.sinh (π * t)   -- :62
+
+theorem norm_Gamma_half_add_mul_I_sq (t : ℝ) :
+    ‖Complex.Gamma (1/2 + t * Complex.I)‖^2 = π / Real.cosh (π * t)     -- :34
+```
+
+**These are the same two theorems.** The only textual difference is `I * t` vs `t * I`, a
+`mul_comm`. And on the second one the port is **strictly stronger**: AINTLIB proves it
+with *no hypothesis at all*, while our hand-written version carries a spurious `ht : t ≠ 0`.
+That hypothesis is not needed at `σ = 1/2` — `cosh` is bounded below by 1 and `Γ(1/2+it)`
+never vanishes, so `t = 0` is fine and gives `‖Γ(1/2)‖² = π = π/cosh 0`. On the `1 + it`
+lemma the hypothesis **is** genuine and both sides carry it, since the right-hand side is
+`0/0` at `t = 0`; that independently corroborates the `hit : (I * t) ≠ 0` step required in
+`oig35-21-refinement.md` §4.
+
+What this means for C2, stated plainly:
+
+1. **hub-oig35.19 spent 140 hand-written lines re-proving a machine-checked upstream
+   result.** Nobody could have known at dispatch time — the AINTLIB coverage map did not
+   exist until 2026-08-16 — so this is not a rebuke of that packet. It is an argument about
+   what to do next.
+2. **hub-oig35.21 is currently burning cycles repairing those 140 lines** (124 ambiguous
+   terms, 126 unsolved goals, 137 type mismatches — the file's original defects surfacing
+   on first compilation, per `oig35-21-refinement.md`). Every one of those repairs
+   reconstructs, by hand and unverified, something the port delivers already proved.
+3. **Therefore the C2 disposition should be re-opened.** The per-line repair guidance in
+   `oig35-21-refinement.md` stays valid and I am not withdrawing it — but if AINTLIB-2
+   lands, the cheaper and safer end state is **delete `ZeroTheoryN2.lean` and re-export the
+   two ported names**, not repair it. A hand proof that has never compiled is a liability;
+   a vendored proof that has is not.
+4. **This does not unblock C2 today.** AINTLIB-2 has not landed and AINTLIB-0′ has not run.
+   The decision point is *at* the vendor drop, not before it. Until then .21's repair is
+   still the only route, and the merge hazard in `oig35-21-refinement.md` §1 still governs.
+
+The general lesson is the one this campaign keeps re-learning at a different altitude:
+**check the substrate before proving.** The vacuous green was "we did not check whether it
+compiled." This is "we did not check whether it was already proved."
+
+## A19. Strength verdicts for the held units — and three corrections to my own §A2 map
+
+Read from source at the pin this cycle. "Strong enough?" means: does the ported statement
+imply what the consumer FLT node needs, not merely share its name.
+
+| unit | AINTLIB declaration (verified location) | strong enough? |
+|---|---|---|
+| W3-02 (A1 dual lattice) | `DualLattice.lean:109` `covolume_dualZLattice_mul : covolume (dualZLattice L) * covolume L = 1` | **yes, exactly.** Stated for any `L` with `[DiscreteTopology L] [IsZLattice ℝ L]` in `EuclideanSpace ℝ ι` — the generality A1 asks for. `mem_dualZLattice:63` gives the membership characterisation, `dualZLattice_eq_span:70` the basis form. |
+| W3-01 (A3 Poisson on `ℤ^d`) | `PoissonSummation.lean` — `zpoint:50`, `intEquivSpanBasisFun:77`, `fundamentalDomain_basisFun_eq:173`, `periodization:352`, `fourierIntegral_zpoint_eq:332` | **yes (high confidence).** `fundamentalDomain_basisFun_eq` pins the fundamental domain to `∏ Ico 0 1`, which is what A3's unfolding needs. |
+| W3-03 (F2a Deligne Gamma) | `Normalisation.lean:41` `gammaFactor K (s : ℂ) = Γℝ s ^ r₁ * Γℂ s ^ r₂` + `gammaFactor_ne_zero_of_re_pos:46` | **yes** — and note the object is **complex-variable**, which is what F2a needs. |
+| W3-04 (N2 Gamma modulus) | `GammaStrip.lean:34, :62` | **yes, and stronger** — see §A18. The `1/2` case is hypothesis-free. |
+| W3-08 (B1 trace pairing) | `IdealLattice.lean:79` `covolume_idealZLattice I = absNorm I * (2⁻¹)^r₂ * √abs (discr K)` | **yes, and more general than needed** — stated over `(FractionalIdeal (𝓞 K)⁰ K)ˣ`, not just integral ideals. `embeddingCoords:117`, `dualityWeights:148` supply the pairing. |
+| W3-05 / W3-06 (N5, N6) | `AnalyticControl.lean` | **not re-derived this cycle** — 181 KB, the one file I have still only read by signature index. Flagged, not claimed. |
+| W3-07 / W3-09 / W3-11 | `ThetaLattice`, `HeckeTheta`, `ClassTheta`, `Existence` | **unchanged from §A2's "high confidence"** — not re-derived at statement level this cycle. |
+| W3-12 (N19) | `ExplicitFormula/TestFunction.lean:51` | settled in §A10: covered, broader class. |
+| W3-13 (N1 interface) | — | still hold; write against ported names. |
+
+**Corrections to §A2's coverage table, found by trying to open the declarations it cites:**
+
+1. `completedZetaPrefactor` is **not** in `Normalisation.lean`. It is
+   `FunctionalEquation.lean:44`. §A2 attributed it to `Normalisation.lean` alongside
+   `gammaFactor` (which *is* at `Normalisation.lean:41`).
+2. `IsCompletedDedekindZeta` is **not** in `Existence.lean`. It is
+   `FunctionalEquation.lean:63`, with `IsCompletedDedekindZeta.eqOn` at `:73`.
+   `Existence.lean` holds the *inhabitation* results — `completedDedekindZeta:160`,
+   `exists_isCompletedDedekindZeta:369`, `completedDedekindZeta_one_sub:412`.
+3. **`mFourier` is not an AINTLIB declaration at all.** §A2 listed it as covering W3-01.
+   It is Mathlib's, reached through `UnitAddTorus.hasSum_mFourier_series_apply_of_summable`;
+   AINTLIB's own wrapper is `mFourier_neg_coe:62`. W3-01 coverage is unaffected — the
+   covering declarations are the four listed in the table above — but the citation was
+   wrong and would have sent a reader looking for a name that does not exist.
+
+None of the three changes a coverage verdict. All three would have cost a reader time, and
+the third is exactly the kind of name-level slip that a signature-level map is prone to,
+which is the point of doing item 2 at all.
+
+## A20. New residual, same shape as §A11 — `norm_gammaFactor_le` is window-restricted
+
+```lean
+-- AnalyticControl.lean:410
+theorem norm_gammaFactor_le {σ t : ℝ} (h1 : 1 ≤ σ) (h2 : σ ≤ 2) (ht : 2 ≤ |t|) :
+    ‖gammaFactor K ((σ : ℂ) + (t : ℂ) * Complex.I)‖ ≤ …
+```
+
+Covered region is `[1,2] × {|t| ≥ 2}`, not a general strip — the same restriction §A11
+recorded for `norm_Gamma_le_mul_exp` on `[1/2,3/2]`, one level up in the tower. Any
+consumer node needing the gamma-factor bound outside that window inherits the same
+mechanical `Γ(s+1) = sΓ(s)` extension. **Add it to the §A11 general-strip wrapper packet
+rather than cutting a second one** — one wrapper node should discharge both, which keeps
+N3's M→S drop and does not add a node.
+
+## A21. What item 2 did and did not settle
+
+**Settled:** W3-01, W3-02, W3-03, W3-04, W3-08 are covered by statements that are strong
+enough, read from source, two of them strictly stronger than the FLT-side node asked for.
+The §A2 citations are corrected. The C2 duplication is on the record.
+
+**Not settled:** W3-05, W3-06 (`AnalyticControl.lean`, 181 KB — signature index only) and
+W3-07, W3-09, W3-11 remain at §A2's "high confidence", which is *not* the same standard as
+the rows above. **§A16 item 2 is therefore ~60% done, not done.** Whoever picks it up
+should finish `AnalyticControl.lean` first: it is the largest file, it carries N5/N6 and
+the gamma-factor bound, and it is the one place where a strength gap would be expensive.
+
+The sequencing is unchanged: item 1 (`#print axioms` on the `ExplicitFormula` consumers)
+still needs a warm build and is still not mine. Item 3 waits on both. **Item 4 still must
+not run first.**
