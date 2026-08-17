@@ -361,3 +361,68 @@ every packet gated on the constant. Ordering that works:
 
 Step 1 is a one-line CI addition and closes the vacuous-green class permanently. It should
 not wait on steps 2 and 3.
+
+---
+
+## 9. Two acceptance conventions live in this campaign, and confusing them costs a retraction
+
+Added 2026-08-17T23:44Z, after I published a wrong gate audit and had to retract it on six
+beads. **The seed-fleet packets and the cartography packets do not gate the same way, and a
+constant that is "stale" in one convention is correct in the other.**
+
+### 9a. Seed-fleet convention — anchored pre/post pair
+
+Decoded from `metadata.packet_refinement_receipt_uri` (a `data:application/json;base64,` blob
+on every `hub-oig35.*` bead; base64-decode it to read `contract.acceptance_commands`). The
+gate is:
+
+```
+/usr/local/bin/flt-acceptance range <BASE_REVISION> <PRE> <POST_MIN> <POST_MAX>
+```
+
+`PRE` is the naive count **at `BASE_REVISION`**, not at HEAD. Measured live against
+`origin/main` at `e1f5d21`:
+
+| bead | acceptance base | naive @ that base | PRE | post range | target holes | check |
+|---|---|---|---|---|---|---|
+| hub-oig35.5 | `e99f1674` | 71 | 71 | 0–72 | 1 | consistent (loose) |
+| hub-oig35.8 | `30357369` | 71 | 71 | 69–69 | 2 | 71−2 = 69 ✔ |
+| hub-oig35.9 | `e99f1674` | 71 | 71 | 0–70 | 1 | consistent (loose) |
+| hub-oig35.11 | `e99f1674` | 71 | 71 | 0–70 | 1 | consistent (loose) |
+| hub-oig35.12 | `30357369` | 71 | 71 | 69–69 | 2 | 71−2 = 69 ✔ |
+| hub-oig35.16 | `30357369` | 71 | 71 | 68–68 | 3 | 71−3 = 68 ✔ |
+| hub-oig35.19 | `e99f1674` | 71 | 71 | 67–67 | 0 (new file) | passed only by drift — see 9c |
+
+**Every one of these is correct at its own base.** Today's baseline (naive 67) is irrelevant
+to them. Judging them against 67 is what produced the retracted audit.
+
+### 9b. Cartography convention — absolute against HEAD
+
+The wave-2/wave-3 envelopes in this repo pin a single number read off §0 of this file and
+gated with `grep -qx <N>` against the working tree. They carry **no base revision**, so the
+constant genuinely does go stale on every merge — which is why §7 and the wave-3 preamble
+warn that a packet still carrying `71` will false-fail. **That warning is about *our* packets
+and does not transfer to the seed-fleet ones.**
+
+**If you write a packet, say which convention you are in, in the packet.** The one-word fix
+for the cartography family is to adopt 9a's shape: carry the base revision beside the
+constant, so the pair can be checked instead of trusted.
+
+### 9c. The defect that a delta framing would actually fix
+
+`hub-oig35.19` names **three** baselines: `metadata.base_revision = 8408ec31` (naive 67), the
+acceptance command `range e99f1674 71 67 67` (`e99f1674` is naive 71), and its own context
+prose, *"The baseline includes merged PRs #7/#8 and has 67 sorry/admit occurrences."* It
+passed only because the drift between the two bases (71 → 67) happened to equal the delta the
+range demanded (0). `hub-oig35.5` has the same shape — prose says "the current 72-occurrence
+baseline" (correct for its `base_revision` 6ce191d4, naive 72), while the command passes
+`PRE=71` (correct for `e99f1674`). Two revisions, one packet, and no check that they agree.
+
+### 9d. Three packets are based off `main`
+
+`hub-oig35.5` pins `base_revision = 6ce191d4` (naive 72); `.9` and `.11` pin `cb0b7c18`
+(naive 71). **Neither commit is an ancestor of `main`** — both are on
+`fleet/hub-oig35-10-c9a01f5706fdc3cc9984-r1`, the branch behind **PR #6**, open since
+2026-08-14. `.9` and `.16` are the only two packets currently in `packet_ready`, so closing
+PR #6 orphans the base of the work that is actually dispatchable. Decide PR #6 and re-base
+these three in the same motion.
