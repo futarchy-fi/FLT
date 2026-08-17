@@ -27,9 +27,10 @@ moment the pool has capacity; nothing below waits on another packet in this docu
 > right that AINTLIB gates this wave and wrong about how urgently: it is not a
 > precaution, it is the first packet.
 >
-> **Dispatch now:** W3-00 (build closure), W3-10 (F1 partial zeta), W3-14 and W3-15 (CBC
-> Flash units, unrelated to zeta).
-> **Hold:** W3-01…W3-09, W3-11, W3-12 and W3-13, pending **AINTLIB-0′**
+> **Dispatch now:** W3-00 (build closure), W3-14 and W3-15 (CBC Flash units, unrelated to
+> zeta). **~~W3-10~~ — WITHDRAWN 2026-08-17T23:00Z, see the correction below and
+> `aintlib-substrate.md` ADDENDUM 9 §A36. Do not dispatch it.**
+> **Hold:** W3-01…W3-13 (thirteen, W3-10 included), pending **AINTLIB-0′**
 > (`aintlib-substrate.md` §A3) — a bump-first build check that runs on today's worker image
 > without the multi-toolchain elan the infra queue is still holding.
 >
@@ -42,8 +43,19 @@ moment the pool has capacity; nothing below waits on another packet in this docu
 > `TestFunction` mention GRH zero times; it is quarantined to `GRHZeros.lean` and the root.
 > Two swaps follow: **W3-12 (N19) moves to HOLD** — it is `ExplicitFormula/TestFunction.lean`
 > (`IsAdmissibleTestFn`) and I called it uncovered on the strength of a too-narrow grep —
-> and **W3-10 (F1) is RELEASED**, since no partial-zeta Dirichlet object exists in any of
-> the 35 files. What AINTLIB does *not* have is the Odlyzko endgame: its root theorem is
+> and ~~**W3-10 (F1) is RELEASED**, since no partial-zeta Dirichlet object exists in any of
+> the 35 files~~ — **THAT RELEASE IS WITHDRAWN, 2026-08-17T23:00Z.** The 35 was the right
+> denominator (verified against the pinned tree: DedekindResidue has exactly 35 `.lean`
+> files, 16 + 11 + 8). The *query* was wrong: I grepped for the name `partialZeta`, which
+> genuinely returns zero, but the object is spelled `{b : (Ideal (𝓞 K))⁰ //
+> ClassGroup.mk0 b = C}` inside a `tsum` and is used **fourteen times** in
+> `CompletedZeta/MellinAgreement.lean`. Summability at real `s > 1`
+> (`summable_ideal_norm_rpow:1860`) and `∑_A ↔ dedekindZeta` (`dedekindZeta_real_eq:1940`
+> plus the theta-side split `heckeF = ∑_C heckeGClass`, `ClassTheta.lean:245`) are both
+> **proved**. What is genuinely fresh is packaging: a named def, per-class summability by
+> subtype comparison, the complex-`s` upgrade (AINTLIB is real-`s` only), the crude bound —
+> and note the normalisation is `N b^{−2σ}`, Hecke's `σ ↔ s/2`. **A worker dispatched here
+> would re-derive machine-checked results from scratch.** Full analysis: `ADDENDUM 9 §A35–A37`. What AINTLIB does *not* have is the Odlyzko endgame: its root theorem is
 > Belabas–Friedman **under GRH**, not the unconditional `|discr K| ≥ 8.25^n`. See §A5–A9.
 >
 > **UPDATED 13:30Z (addendum 3).** The two coverage claims §A9 flagged as signature-level
@@ -383,6 +395,16 @@ else fails clause 3.
   they differ by a unit.
 
 ### W3-10 — F1, partial zeta functions
+
+> **DO NOT DISPATCH — moved to HOLD 2026-08-17T23:00Z.** Most of this envelope is already
+> proved in AINTLIB, unnamed: the class-restricted ideal sum is `∑' b : {b // ClassGroup.mk0
+> b = C}, ((N b)²)^(−σ)` (14 uses in `CompletedZeta/MellinAgreement.lean`), summability at
+> real `s > 1` is `summable_ideal_norm_rpow:1860`, and the identification with `dedekindZeta`
+> is `dedekindZeta_real_eq:1940` + the theta-side class split `heckeF = ∑_C heckeGClass`
+> (`ClassTheta.lean:245`). **Re-scope before dispatching:** what remains is a named def,
+> per-class summability by nonneg-subtype comparison, the **complex-`s` upgrade** (AINTLIB is
+> real-`s` only — this is the real work), and the crude bound. Carry the normalisation:
+> AINTLIB's exponent is `N b^{−2σ}` (Hecke, `σ ↔ s/2`). See `aintlib-substrate.md` §A35–A37.
 
 - **Tier/size:** Pro / S. **Δ `[0,0]`.**
 - **write_paths:** `FLT/NumberField/Zeta/Partial.lean`, `FLT.lean`.

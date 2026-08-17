@@ -190,7 +190,7 @@ I authored 16 wave-3 envelopes this morning. Mapping each against the AINTLIB so
 | W3-07 | A5 anisotropic Gaussian | `ThetaLattice.lean:303/:348`, `HeckeTheta.lean:54/:60/:192`, `MellinAgreement.lean:246` | ~~**yes (high confidence)**~~ → **yes, and stronger than this row claimed (§A26, §A32):** `fourier_weightedGaussianCM` carries *exactly* the demanded constant, and the `2^{r₂}` bookkeeping the packet flags as unverified is proved (`dualPlaceWeights`). Owed: `SchwartzMap` only. |
 | W3-08 | B1 trace pairing | `IdealLattice.lean:162` `inner_diagScale_embeddingCoords` (**not** `covolume_idealZLattice`, §A27) | **yes — and the packet's "no conjugation" trap is discharged**: `dualityWeights` is `(2, −2)` at `(re, im)`. |
 | **W3-09** (F3a orbit ↔ ideal) | F3a | `MellinAgreement.lean:140` `coneUnfoldEquiv`, `:812` `abs_norm_conePreimage`, `:822` `tsum_idealSet_norm_rpow` (**not** `ClassTheta.lean`) | **yes, different shape (§A30)** — equivalence + summed identity over principal ideals dividing `J`; class indexing is factored into `ClassTheta`. Restate the node over the port's shape. |
-| **W3-10** (F1 partial zeta) | F1 | `MellinAgreement.lean`, `ClassTheta.lean` `heckeGClass`/`heckeF` | **not re-derived** — W3-10 was never on the hold list, so item 2 did not cover it. Treat as unchecked. |
+| **W3-10** (F1 partial zeta) | F1 | `MellinAgreement.lean` `:980`/`:1507`/`:1637`/`:1860`/`:1940`, `ClassTheta.lean:245` `heckeF` | **PARTIAL — checked in §A36 (ADDENDUM 9), and this row's earlier "unchecked" plus W3-10's place on the *dispatch* list are both wrong.** The class-restricted ideal sum exists (14 uses, unnamed, as a `tsum` over `{b // ClassGroup.mk0 b = C}`), summability at real `s>1` is proved, and `∑_A ↔ dedekindZeta` is proved via the theta side. Missing: a named def, per-class summability, the complex-`s` upgrade, the crude bound. **Move to HOLD.** |
 | **W3-11** (D1 polar decomposition) | D1 | `MellinAgreement.lean:1058` `heckeLogCLE`, `:1081` `map_heckeLogCLE_volume`, `:1087` `heckeJacobian_pos` (**not** `Existence.lean`) | **yes, on the log side (§A31)** — done exactly as W3-11's own sketch prescribes. Owed: `exp`-transport if multiplicative Haar is wanted, and the Jacobian is **existential** (positivity only, not `= 1`). |
 | W3-12 | N19 test-function decay | — | **no** — Poitou explicit-formula class, past `CompletedZeta`'s scope |
 | W3-13 | N1 M2→M3 interface | — | **hold**: the interface should be written against the *ported* names, not re-derived |
@@ -353,9 +353,13 @@ Nothing here says the axiom falls out of a port.
 
 - **Hold: W3-01…W3-09, W3-11, W3-12, W3-13** — twelve, up from eleven. W3-12 (N19) joins
   the hold; it is `ExplicitFormula/TestFunction.lean`.
-- **Dispatch: W3-00, W3-10, W3-14, W3-15.** W3-10 (F1, partial zeta) is released from the
-  hold: I checked all 35 files and there is no partial-zeta object anywhere, so it is
-  genuinely fresh work whichever way the port goes.
+- **Dispatch: W3-00, W3-14, W3-15.** ~~W3-10~~ **— CORRECTED by ADDENDUM 9 §A36. W3-10 is
+  back on the HOLD list (thirteen).** The release said "I checked all 35 files and there is
+  no partial-zeta object anywhere, so it is genuinely fresh work." The 35 was the right
+  denominator; the *query* was wrong — I grepped the name `partialZeta` (zero hits, truly)
+  when the object is spelled `{b // ClassGroup.mk0 b = C}` inside a `tsum` and is used
+  fourteen times in `MellinAgreement.lean`. Dispatching it would send a worker to re-derive
+  `summable_ideal_norm_rpow` and `dedekindZeta_real_eq` from scratch.
 - **AINTLIB-0′ (§A3) is unchanged and still the priority**, but its payoff is now larger
   than §A3 claims: it gates a port of ~1.6 MB of unconditional, sorry-free number theory
   covering M2, most of M3, and M4–M7 — not just the M2 tree.
@@ -1221,3 +1225,93 @@ route artifacts. Nothing has consumed it — the bridge is unreachable, so block
 been posted, and the fleet has produced nothing for ~32h. A retraction block follows it in
 the same file. **No dispatch has been made on the strength of §A28**, which is luck rather
 than process, and the process fix is the denominator rule above.
+
+---
+
+## ADDENDUM 9 — W3-10 is NOT fresh work. Its release was a fourth instance of the same error. (2026-08-17T23:00Z)
+
+**§A2's W3-10 row said "not re-derived — treat as unchecked". It is now checked, and the
+answer changes a dispatch decision: W3-10 was RELEASED from the hold on the strength of
+"I checked all 35 files and there is no partial-zeta object anywhere, so it is genuinely
+fresh work" (§A6 dispatch list, and `wave-3-packets.md` §2 line 45). That claim is wrong.**
+
+### §A35 — the denominator, printed first this time
+
+Before asserting anything about presence or absence I ran the rule from §A34:
+
+```
+GET api.github.com/repos/CBirkbeck/AINTLIB/git/trees/1c1c74664e40?recursive=1
+→ 2678 .lean files, truncated: false
+   projects/DedekindResidue/DedekindResidue/   35   ← the corpus "35 files" refers to
+     CompletedZeta/    16
+     ExplicitFormula/  11
+     top level          8   ← Basic, AuxiliaryFunction, Lemma2–5, MainTheorem, QSide, Theorem1
+```
+
+So the **35 is right** — that scope statement survives, unlike §A17's "13". I had fetched
+16 of the 35; the 8 top-level files were fetched for this addendum. Across all 25 files now
+local: **0 sorry, 0 admit, 0 declared axiom** in tactic or term position. (`Basic.lean`
+matches a naive `sorry` grep **in prose only** — its module docstring. Same live/prose split
+the FLT oracle has; the naive grep is wrong on this file in exactly the way §4 of
+`oracle-recount.md` describes.)
+
+`Basic.lean:22-24` also states the port's own axiom claim, which is the closest thing to
+§A16 item 1 available without a build: *"the generalized Riemann hypothesis is the **only**
+assumption, threaded as an explicit hypothesis (never an `axiom`); every result is
+`sorry`-free and axiom-clean (`#print axioms` = `propext`, `Classical.choice`,
+`Quot.sound`)."* That is an author's docstring, not a machine check, and item 1 still needs
+the build — but it is a claim from the source rather than an inference from mine.
+
+### §A36 — what W3-10 actually asks for, and what is there
+
+W3-10 wants four things. Checked one at a time, against declarations:
+
+| W3-10 obligation | AINTLIB | verdict |
+|---|---|---|
+| define `ζ(A,s) = ∑_{𝔟 : [𝔟]=A} (N𝔟)^{−s}` | the sum `∑' b : {b : (Ideal (𝓞 K))⁰ // ClassGroup.mk0 b = C}, ofReal ((N b)²)^(−σ)` — the summand of `lintegral_mellin_heckeGClass_dev` (`MellinAgreement.lean:1507`) and the RHS of `tsum_principal_dvd_eq` (:980); **14 occurrences, all in `MellinAgreement.lean`** | **present as an object, absent as a `def`** |
+| absolute convergence on `Re s > 1` | `summable_ideal_norm_rpow` (:1860) for the **full** ideal sum at real `s > 1`, via `count_LSeriesSummable` (:1790) | **proved for the total; per-class is a nonneg-subtype comparison away, not stated** |
+| `∑_A ζ(A,s) = dedekindZeta K s` | split on the **theta side**: `heckeF = ∑_C heckeGClass` (`ClassTheta.lean:245`), transported by `lintegral_mellin_heckeF_dev` (:1637), whose proof does the class split pointwise; then `dedekindZeta_real_eq` (:1940) identifies the total ideal norm-sum with `dedekindZeta K s` | **both halves proved; the direct Dirichlet-side statement is not** |
+| crude `ζ(A,s) = O(ζ(Re s))` | not stated | **absent — but it is nonneg-subtype domination of an already-summable family** |
+
+Two real limitations, stated so nobody over-reads this correction:
+
+1. **Everything is at real `s`.** `dedekindZeta_real_eq` is `dedekindZeta K (s : ℂ)` for a
+   **real** `s > 1`. W3-10 wants *analyticity on the half-plane* `Re s > 1`, and there is no
+   complex-`s` statement for the class-restricted sum anywhere in the corpus (grep for
+   `Summable`/`AnalyticOn`/`DifferentiableOn` near `ClassGroup`/`mk0` returns nothing).
+2. **The normalisation differs.** AINTLIB's exponent is `((N b)^2)^(−σ)`, i.e. `N b^{−2σ}`
+   — Hecke's `σ ↔ s/2`. Any consumer must carry that factor of two, and it is the kind of
+   thing that silently halves a half-plane if nobody writes it down.
+
+**Verdict: W3-10 is PARTIALLY covered — enough that dispatching it as "genuinely fresh
+work" would send a worker to re-derive a summability proof and a zeta identification that
+already exist, machine-checked, and to re-invent an object AINTLIB uses fourteen times.**
+The genuinely new content is the packaging: a named `partialZeta` def, per-class summability
+by subtype comparison, the complex-`s` upgrade, and the crude bound. That is still an S, but
+it is an S *against ported signatures*, not an S from scratch — and it belongs on the
+**hold** list with the other eleven, not on the dispatch list.
+
+### §A37 — the error class, fourth instance, and the sharper rule
+
+§A34 recorded three instances and the fix "before asserting a negative, print the
+denominator." **I printed the denominator this time and still would have been wrong,
+because that was not the failure here.** The corpus was right; the *query* was wrong.
+
+`grep partialZeta` over all 25 files returns **zero** — and that is a true fact about a
+name. The object is spelled `{b // ClassGroup.mk0 b = C}` inside a `tsum`, has no name of
+its own, and appears in a file whose name promises Mellin transforms rather than zeta
+functions. **I searched for the name of the thing instead of the shape of the thing**, got a
+clean zero, and released a packet on it.
+
+**Rule, extending §A34's:** a negative needs *two* things — a denominator you have
+established is complete, **and a query that would find the object if it were spelled
+differently**. For a mathematical object that means grepping the *type shape* (here: the
+subtype of ideals restricted by `ClassGroup.mk0`, or `absNorm … ^ (-`), not the name a
+Mathlib-idiomatic port would have used. The three previous instances were all "reasoned from
+the file name"; this one is "reasoned from the identifier name". Same disease, one level
+down.
+
+**Blast radius, checked rather than assumed:** W3-10 sits on the dispatch list in
+`wave-3-packets.md` §2 and in §A6 here. The fleet has produced no output since
+2026-08-16T14:40:07Z and no worker has been sent to it, so — again by luck, not process —
+nothing consumed the release. Both documents are corrected in place by this addendum.
