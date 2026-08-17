@@ -1054,3 +1054,157 @@ the next substrate map: one row per unit, and cite the declaration or write "not
 **Item 2 is closed.** Sequencing for the rest of §A16 is unchanged: item 1 (`#print axioms`
 on the `ExplicitFormula` consumers) needs a warm build and is not mine; item 3 waits on
 items 1 and 2; **item 4 still must not run first.**
+
+---
+
+# ADDENDUM 8, 2026-08-17T22:52Z — **RETRACTION.** §A28 is wrong. W3-09 and W3-11 *are* covered. I asserted absence from a corpus I had not established was complete.
+
+Twenty minutes after publishing ADDENDUM 7 I checked the AINTLIB tree against the files I
+had on disk. **`CompletedZeta/` contains 16 Lean files. I had fetched 13.** The three I
+never had are `MellinAgreement.lean` (110 KB), `ThetaEstimates.lean` (30 KB) and `GRH.lean`.
+The negative evidence in §A28 — "zero occurrences of `fundamentalCone`, `integerSet`,
+`idealSetEquivNorm`, `polar`, `NormLeOne`, `expMap` across all 13 files" — was run over an
+incomplete corpus and is void. Re-run over all 16, the first three are all in
+`MellinAgreement.lean`.
+
+**This retraction supersedes §A28 and the W3-09 / W3-11 rows of §A29.** ADDENDUM 7's other
+findings (§A26 W3-07, §A27 W3-08) are unaffected and re-confirmed below where they change.
+
+## A30. W3-09 (F3a, unit-orbit ↔ ideal) — **covered**, in a different shape
+
+```lean
+-- MellinAgreement.lean:140  the orbit decomposition, on Mathlib's fundamentalCone/integerSet
+noncomputable def coneUnfoldEquiv (J : (Ideal (𝓞 K))⁰) :
+    (idealSet K J) × (Fin (rank K) → ℤ)
+      ≃ {x : mixedSpace K // x ∈ mixedEmbedding.idealLattice K (FractionalIdeal.mk0 K J)
+          ∧ x ≠ 0}
+
+-- MellinAgreement.lean:812  the norm identity
+theorem abs_norm_conePreimage (J : (Ideal (𝓞 K))⁰) (a : idealSet K J) :
+    ((|Algebra.norm ℚ (conePreimage K J a)| : ℚ) : ℝ) = (intNorm (idealSetMap K J a) : ℝ)
+
+-- MellinAgreement.lean:822  the counting step, torsionOrder as the multiplicity
+theorem tsum_idealSet_norm_rpow (J : (Ideal (𝓞 K))⁰) (σ : ℝ) :
+    ∑' a : idealSet K J, ENNReal.ofReal ((|Norm ℚ (conePreimage K J a)|^2) ^ (-σ))
+      = (torsionOrder K)
+        * ∑' I : {I : (Ideal (𝓞 K))⁰ // J ∣ I ∧ IsPrincipal I},
+            ENNReal.ofReal ((Ideal.absNorm I ^ 2) ^ (-σ))
+```
+
+Every ingredient W3-09 asks for is present: the unit-orbit unfolding, the norm identity, and
+the `torsionOrder` multiplicity — and it is built on `fundamentalCone` / `integerSet`, which
+is precisely what W3-09's envelope says to generalise ("read that file first; this node is
+largely its generalization").
+
+**What differs is the shape, and it matters for how the node is stated, not for whether it
+must be proved:**
+
+- W3-09 wants a **bijection of sets** `(I ∖ {0})/𝓞ˣ ≃ {𝔟 integral : [𝔟] = [I]⁻¹}`. AINTLIB
+  gives an **equivalence** (`coneUnfoldEquiv`) plus a **summed identity over principal
+  ideals divisible by `J`** (`tsum_idealSet_norm_rpow`, `principalDvdEquiv:933`,
+  `tsum_principal_dvd_eq:980`).
+- The **class indexing** is factored out elsewhere (`ClassTheta`'s `classRep` / `heckeGClass`)
+  rather than carried inside the bijection.
+- The torsion multiplicity appears as a **constant in a `tsum` identity**, not as
+  "each orbit meets a torsion-free section in exactly `w` elements".
+
+**Verdict: covered — restate the node over the port's shape rather than porting to W3-09's
+signature.** The cost is node re-authoring, not proof work.
+
+## A31. W3-11 (D1, polar decomposition) — **covered** on the log side, with the Jacobian left existential
+
+```lean
+-- MellinAgreement.lean:626 / :722 / :1058
+noncomputable def heckeLogMap : (ℝ × logSpace K) →ₗ[ℝ] (InfinitePlace K → ℝ) where
+  toFun p := fun w => p.1 / (Module.finrank ℚ K) + 2 * fullLog K p.2 w / mult w
+noncomputable def heckeLogEquiv : (ℝ × logSpace K) ≃ₗ[ℝ] (InfinitePlace K → ℝ) := …
+noncomputable def heckeLogCLE  : (ℝ × logSpace K) ≃L[ℝ] (InfinitePlace K → ℝ) := …
+
+-- MellinAgreement.lean:1081  the measure statement
+theorem map_heckeLogCLE_volume :
+    Measure.map (heckeLogCLE K) (volume : Measure (ℝ × logSpace K))
+      = heckeJacobian K • (volume : Measure (InfinitePlace K → ℝ))
+theorem heckeJacobian_pos : 0 < heckeJacobian K          -- :1087
+```
+
+**This is W3-11, done exactly the way W3-11's own sketch says to do it** — "transport
+everything along `log` to a linear direct-sum decomposition of `ℝ^{r₁+r₂}` into the weighted
+diagonal and the trace-zero hyperplane; both summands carry Lebesgue measure and the
+splitting is measure-preserving." The `ℝ` factor is the ray parameter, `logSpace K` is the
+trace-zero hyperplane — the norm-one surface `S` in log coordinates — and `heckeLogCLE` is
+the splitting, with the Haar pushforward computed.
+
+**Two differences from W3-11 as written:**
+
+1. It lives on the **log side** (`InfinitePlace K → ℝ`), not on `Y = (0,∞)^{places}` with
+   the multiplicative Haar `⊗_v dy_v/y_v`. Transporting across `exp` is the remaining step
+   if the consumer insists on the multiplicative picture.
+2. **The Jacobian is existential.** `heckeJacobian` is defined as an
+   `addHaarScalarFactor` and only `heckeJacobian_pos` is proved — AINTLIB's own docstring
+   says "Its value is never needed — only positivity." W3-11 asks for measure-*preserving*,
+   i.e. the constant `= 1`. If the FLT consumer only needs positivity, this is done; if it
+   needs the exact constant, that is genuine residual work.
+3. W3-11's `μ_S` invariance under multiplication and under `s ↦ s⁻¹` is not stated. On the
+   log side both are translation and negation invariance of Lebesgue measure, so they are
+   cheap, but they are not there.
+
+**Verdict: covered, with an explicit `exp`-transport question and an explicit
+constant-vs-positivity question.** Neither is a from-scratch node. **W3-11's own risk note —
+"if this node starts to look L-sized, that is the signal that it was rebuilt instead of
+reused" — is exactly right, and reusing means reusing `heckeLogCLE`.**
+
+## A32. Two more corrections falling out of the same three files
+
+- **W3-07's coordinate transport is not an obligation — it is stated.**
+  `euclidMixedEquiv : EuclideanSpace ℝ (index K) ≃ₗ[ℝ] mixedSpace K`
+  (`MellinAgreement.lean:246`), with `mem_idealZLattice_iff_euclidMixed` (:251) tying it to
+  the lattice. §A26's "XS transport lemma" is discharged. **The `SchwartzMap` obligation
+  stands** — zero occurrences of `SchwartzMap` across all 16 files, re-checked.
+- **§A17's scope claim was wrong: it said "0 sorry / 0 admit / 0 axiom across 13 files".**
+  Re-run across all **16**: still **0 sorry, 0 admit, 0 axiom**. The conclusion survives;
+  the scope statement did not, and a scope statement that undercounts the corpus by three
+  files is the kind of thing a port decision should not rest on.
+
+## A33. Corrected final table — item 2, all twelve held units
+
+| unit | verdict | what it costs |
+|---|---|---|
+| W3-01 (A2 fundamental domain) | **covered** | — |
+| W3-02 (A3 dual covolume) | **covered**, exact generality | — |
+| W3-03 (F2a gamma factor) | **covered** | — |
+| W3-04 (C2 Gamma norms) | **covered, stronger** | delete `ZeroTheoryN2.lean`, re-export |
+| W3-05 (N5 Borel–Carathéodory) | **not in the port; it is in Mathlib** | restate N7 over `norm_logDeriv_le_of_norm_le`, or take BC from Mathlib |
+| W3-06 (N6 analytic log) | **covered**, more general domain | XS: two corollaries |
+| W3-07 (A5 anisotropic Gaussian) | **covered**, constant exact, `2^{r₂}` proved, transport stated | S: `SchwartzMap`, deleted by the right node shape |
+| W3-08 (B1 trace pairing) | **covered**, trap discharged | — |
+| W3-09 (F3a orbit ↔ ideal) | **covered, different shape** | restate node over `coneUnfoldEquiv` + `tsum_idealSet_norm_rpow` |
+| W3-11 (D1 polar decomposition) | **covered on the log side** | `exp`-transport if needed; Jacobian is positive-but-unevaluated |
+| W3-12 (N19 test-function decay) | **covered, broader class** (§A10) | S inclusion lemma *or* restate over `IsAdmissibleTestFn` |
+| W3-13 (N1 interface) | **hold by design** | write against ported names |
+
+**Eleven of twelve are covered; the twelfth is in Mathlib.** The port is materially stronger
+than my map ever claimed, and the corrected picture removes the route fork §A28 invented —
+there is no fork, because AINTLIB carries both the orbit unfolding *and* the log splitting.
+
+## A34. The failure, stated plainly, because it is now three of a kind
+
+Same class, three mechanisms, all mine:
+
+1. **§A11/§A20** — generalised from the file whose *name* matched the topic (`GammaStrip`),
+   while the general statements sat in `AnalyticControl`.
+2. **§A2's W3-05/W3-09/W3-11 rows** — filled in from filenames, never from declarations.
+3. **§A28** — asserted absence from a corpus I had never established was complete, and said
+   so in the strongest available terms ("zero occurrences … across all 13 files"), which
+   made a wrong claim *read* as rigorous. The grep was honest; the corpus was not.
+
+The rule that would have caught all three, and which I am writing into the record rather
+than resolving to remember: **before asserting a negative, print the denominator.** State
+what was searched and establish that it is everything — here, one `git/trees` call against
+the pin, which took four seconds and which I ran only *after* publishing the claim.
+
+**Blast radius, checked rather than assumed.** §A28 shipped in `d2b86cb` and in relay block
+20 to hub-r7qdn.2 / hub-lsb1u.6.10, which asked C2 to consider deleting W3-09 and W3-11 as
+route artifacts. Nothing has consumed it — the bridge is unreachable, so block 20 has not
+been posted, and the fleet has produced nothing for ~32h. A retraction block follows it in
+the same file. **No dispatch has been made on the strength of §A28**, which is luck rather
+than process, and the process fix is the denominator rule above.
