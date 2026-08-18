@@ -426,3 +426,33 @@ baseline" (correct for its `base_revision` 6ce191d4, naive 72), while the comman
 2026-08-14. `.9` and `.16` are the only two packets currently in `packet_ready`, so closing
 PR #6 orphans the base of the work that is actually dispatchable. Decide PR #6 and re-base
 these three in the same motion.
+
+### 9e. Two mechanical traps in reading the bead DB — both produced wrong counts tonight
+
+**`bd list` truncates silently.** It defaults to `--limit 50` *and* to open statuses. Quoting a
+count off a bare `bd list` gave me a 10-bead sample of what is really a 21-bead set, in a DB
+that holds 1482 beads. Always:
+
+```
+bd list --status open,in_progress,blocked,deferred,closed --limit 0 --json
+```
+
+`bd show` reaches beads that a truncated `bd list` omits, which is how two disjoint views of
+the same set can appear within one hour.
+
+**`metadata.state` is not cleared on close.** `hub-oig35.6`, `.7` and `.17` are all
+`status=closed` while still carrying `state=packet_ready`. State must be read together with
+status or finished work counts as queued work.
+
+**Corrected census of `hub-oig35.*`, 2026-08-18T00:12Z — 21 beads, 16 open, 5 closed:**
+
+| state (open only) | count | beads |
+|---|---|---|
+| `packet_ready` | 3 | .4, .9, .16 |
+| `needs_refinement` | 7 | .8, .10, .12, .18, .19, .20, .21 |
+| `manual_review_required` | 2 | .5, .11 |
+| `curated_not_ready` | 1 | .3 |
+| *(no state field)* | 3 | .13, .14, .15 — created by `fleet-autocommit`, metadata holds only `refinement` |
+
+Between 3 and 6 pickable packets against 20 pods, with 7 parked behind a refinement pass that
+is not running. Any earlier "2 of 10" figure of mine is withdrawn.
