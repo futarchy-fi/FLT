@@ -456,3 +456,66 @@ status or finished work counts as queued work.
 
 Between 3 and 6 pickable packets against 20 pods, with 7 parked behind a refinement pass that
 is not running. Any earlier "2 of 10" figure of mine is withdrawn.
+
+---
+
+## 10. §8 settled by compilation, not by reading — and one of its claims retracted
+
+**2026-08-18T00:20Z. crew-18 now has a working Lean toolchain**, so the two falsifiers §8
+listed for itself are both closed, on the real tree rather than on a throwaway package.
+Method: `git clone` of `main` into `/tmp/fltbuild` (deliberately **not** the working tree —
+writing `.lake` into `FLT/` is the oracle defect named in `hub-oig35.19`'s own context),
+`lake exe cache get` (8691 files, mathlib `bc06ce9f87cd`), then `lake env lean <file>` per
+orphan. `lake env lean` compiles one module against the package's own environment, which is
+exactly the "would this file build if the closure included it" question.
+
+### 10a. The three orphans, compiled
+
+| module | exit | errors | live sorries | note |
+|---|---|---|---|---|
+| `FLT.MazurW` | **0** | 0 | 2 — `14:8`, `24:8` | linter warnings only (`haveI`/`simpa` style) |
+| `FLT.PoitouTate` | **0** | 0 | 1 — `51:8` | `greenbergWilesOrderFormula` |
+| `FLT.NumberField.ZetaFE.ZeroTheoryN2` | **1** | **1** | 0 | fails at line 1, import resolution |
+
+The MazurW sorries are `mazur_W` and `mazur_W_ge11` — **the file's two headline theorems,
+still unproved**, in the C1 calibration file. PoitouTate's is the Greenberg–Wiles order
+formula. All three are counted by the oracle and none of them is compiled by `lake build`.
+
+### 10b. ZeroTheoryN2 has never compiled, anywhere
+
+```
+FLT/NumberField/ZetaFE/ZeroTheoryN2.lean:1:0: error: object file
+'.../Mathlib/Analysis/SpecialFunctions/Trigonometric/Identities.olean'
+of module Mathlib.Analysis.SpecialFunctions.Trigonometric.Identities does not exist
+```
+
+`Mathlib.Analysis.SpecialFunctions.Trigonometric.Identities` **does not exist at the pinned
+mathlib revision** — the directory holds `Angle`, `Arctan`, `Basic`, `Bounds`, `Complex`,
+`Cotangent`, `Deriv`, `EulerSineProd`, `Inverse`, `Meromorphic`, `Series`, `Sinc`, and no
+`Identities`. The file's other four imports all resolve. This is C2 — `hub-oig35.19`, merged
+as PR #9 at 2026-08-16T15:09Z. It passed acceptance because it is an orphan (so the compile
+gate never saw it) and because its count gate only grepped for `sorry`, of which it has none.
+
+**A file that cannot parse its own imports was merged into `main` as calibration evidence
+that the harness produces compiling proofs.** That is the §8 hazard firing at full strength
+on the one packet whose entire purpose was to measure whether the harness works.
+
+### 10c. Retraction — "flipping the glob turns silent-green into repo-wide red"
+
+`BLOCKERS.md` said not to flip `globs` because the orphans "hold real defects
+(`ZeroTheoryN2` produced 124/126/137 errors on first compilation)". **Measured, that is
+false.** Two of the three orphans compile green today. The third stops at import resolution,
+so nothing downstream of line 1 has ever been elaborated and its error count is *unknown* —
+124/126/137 was a figure I inherited from a packet's prose and repeated as if it were an
+observation. It was not one.
+
+**The corrected cost of closing this hazard is the repair of exactly one file.** The staged
+order in `BLOCKERS.md` stands, but it is much cheaper than advertised:
+
+1. wire `scripts/sorry_count.py --closure` into `flt-acceptance` — one CI line, no toolchain;
+2. repair `ZeroTheoryN2` (import fix, then whatever it exposes);
+3. flip `globs` to `["FLT.+", "FermatsLastTheorem"]` atomically with step 2.
+
+Note that step 3 changes no counts: the three orphans' 3 live sorries are already inside the
+oracle's 56, because the oracle scans `git ls-files`, not the build closure. Flipping the
+glob makes the compiler agree with the counter; it does not move the number.
