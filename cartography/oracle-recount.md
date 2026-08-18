@@ -554,3 +554,33 @@ written to predict, observed end-to-end on a merged commit for the first time.
 Caveat stated plainly: 15 is the count under *my* import substitution. Whoever repairs the
 file should re-measure after choosing the import properly. What does not depend on that
 choice is that the body does not compile.
+
+### 10e. The repair, and the first compiler-checked proof in this campaign
+
+Both lemmas are reproved from the reflection formula on a single route:
+
+```
+‖Γ(1+it)‖² = Γ(1+it)·Γ(1-it)     (Gamma_conj)
+           = it·Γ(it)·Γ(1-it)     (Gamma_add_one, needs it ≠ 0 — the merged version omits it)
+           = it·π / sin (π·it)     (Gamma_mul_Gamma_one_sub)
+           = πt / sinh (πt)        (sin_mul_I)
+```
+
+with `sin (π/2 + iπt) = cos (iπt) = cosh (πt)` for the half-line case, which needs no `t ≠ 0`
+at all. Statements, lemma names and namespace are unchanged; `Real.pi`/`Real.sinh`/`Real.cosh`
+are written qualified, since opening `Complex` and `Real` together is what produced the two
+"ambiguous term `sinh`" errors.
+
+```
+$ lake env lean FLT/NumberField/ZetaFE/ZeroTheoryN2.lean
+EXIT=0            -- no errors, no warnings, no sorries
+#print axioms ZeroTheoryN2.Gamma_one_add_I_mul_sq_norm       -> [propext, Classical.choice, Quot.sound]
+#print axioms ZeroTheoryN2.Gamma_one_half_add_I_mul_sq_norm  -> [propext, Classical.choice, Quot.sound]
+```
+
+Converted to the repo's `module` / `public import` / `@[expose] public section` idiom and added
+to `FLT.lean` — the import line, not the file's contents, is what puts a module in the closure.
+Up as **PR #10**, `fix/zerotheoryn2-compiles`, **unmerged**; the merge is not crew-18's call.
+
+`MazurW` and `PoitouTate` are deliberately not in that PR. Both are green already, so wiring
+them in is a separate safe change and the `globs` flip belongs atomically with it.
