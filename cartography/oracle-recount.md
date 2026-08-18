@@ -425,11 +425,21 @@ baseline" (correct for its `base_revision` 6ce191d4, naive 72), while the comman
 > ancestors of `main`; verified with `git merge-base --is-ancestor`. **No re-basing is
 > needed.** The merge was reported as accidental and I was asked to undo it; I measured
 > first and recommended against, because it is content-neutral: `git diff 321cc4e ac6c97e`
-> is **empty**, the sorry count is unchanged at 56/11/67, and none of the branch's harmful
-> content landed (against its original base `df56f95b` that branch would have replaced the
-> working `diamond_fix` proof in `GLnDefs.lean` with `sorry` and **deleted**
-> `FLT/MazurW.lean`; both are intact on the merged `main`). Main had moved 91 files /
-> +17509 lines ahead, so the merge resolved entirely to main's content. The paragraph below
+> is **empty** and the sorry count is unchanged at 56/11/67.
+>
+> **RETRACTION, same session, 2026-08-18T18:05Z.** My first version of this note also claimed
+> the branch carried harmful content — that it "would have replaced the working `diamond_fix`
+> proof in `GLnDefs.lean` with `sorry` and deleted `FLT/MazurW.lean`". **That is false and is
+> withdrawn.** I diffed against `df56f95b`, the `base.sha` in the PR API record, which is *not*
+> the merge base. The true merge base is `e99f1674` (`git merge-base 496255c4 df56f95b`), and
+> at that commit `FLT/MazurW.lean` **did not yet exist** and `diamond_fix` **was already
+> `sorry`** — main gained both later, via C1/PR #7. Both "deletions" were artifacts of
+> diffing against a commit ahead of the fork point. Verified directly: the branch never
+> touched `GLnDefs.lean` at all. Its real diff from `e99f1674` is +92/−4 over 5 files, and its
+> substantive content is the opposite of harmful — it **closes two `sorry`s** in
+> `GLzero.lean` (`loc_cst` and `is_open`). Wave-3 §2 line 167 had this right; my claim
+> contradicted a document of my own and I should have checked it before publishing.
+> Two-dot `git diff A B` is not a PR diff — use the merge base. The paragraph below
 > stands as the record of why this was a defect, and of the trap in it: my recommendation
 > was "close, don't merge", and *closing* was the option that would have orphaned these
 > three bases. Merging fixed the defect at zero content cost. The separate §9c defect —
