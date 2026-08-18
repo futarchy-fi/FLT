@@ -420,6 +420,21 @@ baseline" (correct for its `base_revision` 6ce191d4, naive 72), while the comman
 
 ### 9d. Three packets are based off `main`
 
+> **RESOLVED 2026-08-18T17:56Z.** PR #6 was merged at 17:53:20Z (merge commit `ac6c97e`).
+> All three base revisions — `6ce191d4`, `cb0b7c18` and the branch tip `496255c4` — are now
+> ancestors of `main`; verified with `git merge-base --is-ancestor`. **No re-basing is
+> needed.** The merge was reported as accidental and I was asked to undo it; I measured
+> first and recommended against, because it is content-neutral: `git diff 321cc4e ac6c97e`
+> is **empty**, the sorry count is unchanged at 56/11/67, and none of the branch's harmful
+> content landed (against its original base `df56f95b` that branch would have replaced the
+> working `diamond_fix` proof in `GLnDefs.lean` with `sorry` and **deleted**
+> `FLT/MazurW.lean`; both are intact on the merged `main`). Main had moved 91 files /
+> +17509 lines ahead, so the merge resolved entirely to main's content. The paragraph below
+> stands as the record of why this was a defect, and of the trap in it: my recommendation
+> was "close, don't merge", and *closing* was the option that would have orphaned these
+> three bases. Merging fixed the defect at zero content cost. The separate §9c defect —
+> `hub-oig35.19` naming three baselines — is untouched by this and still open.
+
 `hub-oig35.5` pins `base_revision = 6ce191d4` (naive 72); `.9` and `.11` pin `cb0b7c18`
 (naive 71). **Neither commit is an ancestor of `main`** — both are on
 `fleet/hub-oig35-10-c9a01f5706fdc3cc9984-r1`, the branch behind **PR #6**, open since
