@@ -461,7 +461,7 @@ is not running. Any earlier "2 of 10" figure of mine is withdrawn.
 
 ## 10. §8 settled by compilation, not by reading — and one of its claims retracted
 
-**2026-08-18T00:20Z. crew-18 now has a working Lean toolchain**, so the two falsifiers §8
+**2026-08-18T00:13Z. crew-18 now has a working Lean toolchain**, so the two falsifiers §8
 listed for itself are both closed, on the real tree rather than on a throwaway package.
 Method: `git clone` of `main` into `/tmp/fltbuild` (deliberately **not** the working tree —
 writing `.lake` into `FLT/` is the oracle defect named in `hub-oig35.19`'s own context),
@@ -519,3 +519,38 @@ order in `BLOCKERS.md` stands, but it is much cheaper than advertised:
 Note that step 3 changes no counts: the three orphans' 3 live sorries are already inside the
 oracle's 56, because the oracle scans `git ls-files`, not the build closure. Flipping the
 glob makes the compiler agree with the counter; it does not move the number.
+
+### 10d. What is behind line 1: the first real measurement, and it is not a typo
+
+Substituting the one bad import for `Mathlib.Analysis.Complex.Trigonometric` (which does
+supply `Complex.sin_add_pi` and `Complex.sin_mul_I`, the two lemmas the file actually cites)
+lets the file elaborate. It then produces **15 errors in 140 lines**:
+
+| line | error |
+|---|---|
+| 27:38 | ambiguous term `sinh` — `Real.sinh` vs `Complex.sinh` both in scope |
+| 42:26 | `rewrite` failed: no occurrence of `Complex.sin (?x + ↑π)` — the goal is `sin (↑π + ↑π * (I * ↑t))`, argument order reversed |
+| 47:67 | type mismatch on `sin_mul_I` — mathlib states `sin (x * I) = sinh x * I`, the file wants `sin (π * I * t) = I * sinh (π * t)` |
+| 52:13 | application type mismatch |
+| 53:59 | type mismatch |
+| 65:8 | `rewrite` failed |
+| 78:4, 80:4, 83:4 | type mismatch after simplification |
+| 88:92 | unsolved goals |
+| 99:8 | `rewrite` failed |
+| 118:44, 122:49 | ambiguous term |
+| 124:43 | unsolved goals |
+| 135:4 | type mismatch after simplification |
+
+**These are not import errors.** Reversed argument orders, a lemma statement remembered
+wrongly, unsolved goals, ambiguity from an open namespace — the proof body was written
+against a Mathlib API it was never checked against. A different import substitution would
+shift the details; it would not touch these three classes.
+
+**So the honest calibration result for C2 is: the packet delivered no working proof.** It is
+`sorry`-free, so the count gate read it as clean; it is an orphan, so the compile gate never
+ran; compiled, essentially every step fails. This is the exact failure mode §4 and §8 were
+written to predict, observed end-to-end on a merged commit for the first time.
+
+Caveat stated plainly: 15 is the count under *my* import substitution. Whoever repairs the
+file should re-measure after choosing the import properly. What does not depend on that
+choice is that the body does not compile.
