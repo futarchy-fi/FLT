@@ -1,3 +1,8 @@
+/-
+Copyright (c) 2026 The FLT Project. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: The FLT Project
+-/
 module
 
 public import Mathlib.Analysis.SpecialFunctions.Gamma.Beta
@@ -6,6 +11,16 @@ public import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
 public import Mathlib.Analysis.SpecialFunctions.Trigonometric.DerivHyp
 public import Mathlib.Analysis.Complex.Trigonometric
 public import Mathlib.Analysis.Complex.Basic
+
+/-!
+# Gamma-factor modulus identities (Odlyzko node N2)
+
+Exact modulus identities for the Gamma factor of the completed zeta function,
+node N2 of `cartography/odlyzko-m3-decomposition.md`.
+
+The two identities proved here are `‖Γ(1 + it)‖² = π t / sinh (π t)`, which
+needs `t ≠ 0`, and `‖Γ(1/2 + it)‖² = π / cosh (π t)`, which holds for all real `t`.
+-/
 
 @[expose] public section
 
