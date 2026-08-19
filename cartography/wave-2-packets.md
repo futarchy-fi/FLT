@@ -5,6 +5,22 @@
 2026-08-16T11:40:11Z). Every target path and line number below was checked against that
 tree on this date.
 
+> **SCOPED 2026-08-18T01:02Z by fermat.** The next sentence is **true of the packets in
+> this document and false of the seed-fleet ones**, and it does not say so. Stated
+> unscoped, it is the sentence I transferred to a seed-fleet bead and had to retract on six
+> beads (see `enrollment/endgame-batch-2.json`, corrected 2026-08-18T00:14Z, and
+> `oracle-recount.md` §9). The claim is **not withdrawn** — §9b ratifies it for the
+> cartography convention, which is the convention this whole file is written in: these
+> envelopes gate a hardcoded constant against the working tree with `grep -qx <N>` and
+> carry no base revision, so the constant really does go stale on every merge. What is
+> false is applying it to a packet gated as
+> `flt-acceptance range <BASE> <PRE> <MIN> <MAX>` — there `PRE` is measured at the packet's
+> own `BASE`, not at `HEAD`, so a seed-fleet packet carrying `PRE=71` is *correct at its
+> base* and will not false-fail. **Read the sentence below as: "a *cartography* packet
+> still carrying `71` will false-fail."** The durable fix is to adopt the anchored shape —
+> carry the base revision beside the constant so the pair can be checked instead of
+> trusted.
+
 **Baseline moved this morning — a packet still carrying `71` will false-fail.** Two merges
 landed within half an hour: PR #7 (C1) changed only the `FLT/MazurW.lean` witness curve, a
 proof-body change with delta `[0,0]`; PR #8 closed the four `galoisRepresentation` holes in

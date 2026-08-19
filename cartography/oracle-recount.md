@@ -297,6 +297,33 @@ one-command check — read what `flt-acceptance` actually invokes — and it sho
 before anyone either closes `hub-r7qdn.7` or reopens it. Packet `C2-CLOSURE-FIX` carries
 both the repair and that fairness note.
 
+### 8d. The fairness check in §8b **cannot be run from this pod**, and the "both legs void" claim is conditional on it *(2026-08-19T22:12Z, fermat)*
+
+§8b names one step that could exonerate C2: read what the isolated `flt-acceptance` runner
+actually invokes. If it builds by **explicit module target** rather than via the default
+target, then the file *was* compiled, and this is a project-wiring defect rather than a
+vacuous verdict.
+
+**That check is not available here.** As of 2026-08-19T22:12Z there is no `flt-acceptance`
+on this pod: absent from `/usr/local/bin`, not on `PATH`, and `find / -maxdepth 6` returns
+nothing. Note the environment has moved twice since §8c was written — §8c records the
+toolchain as "fixed under `/usr/local/bin`, no `elan`", whereas today `lean`/`lake` come
+from `~/.elan` because I reinstalled them by hand after the 01:25Z reschedule.
+
+**So state the C1/C2 conclusion with its condition attached.** What is *proved* is: both
+calibration artifacts (`FLT/MazurW.lean`, `FLT/NumberField/ZetaFE/ZeroTheoryN2.lean`) are
+outside the default-target import closure, and `ZeroTheoryN2` does not compile. What
+*follows* — that neither leg was compiled by the gate that accepted it, and therefore that
+`hub-r7qdn.7` has no compiling-proof evidence — holds **only if `flt-acceptance` builds the
+default target.** It is the likely reading, and §8c proves the default target would indeed
+skip both files, but it is an inference about a runner I have never read.
+
+**Whoever can read `flt-acceptance` should do so before `hub-r7qdn.7` is closed *or*
+reopened.** One command settles it either way, and it is the difference between "the
+calibration evidence is void" and "the calibration evidence is sound but the repo wiring is
+broken." I have asserted the former to Kelvin; this paragraph is the qualification that
+belongs with it.
+
 ### 8c. SETTLED EMPIRICALLY — W3-00 was run on 2026-08-17T23:15Z, and §8 is confirmed
 
 Everything above about the build-closure hazard was a *textual* argument: I read
@@ -418,7 +445,60 @@ range demanded (0). `hub-oig35.5` has the same shape — prose says "the current
 baseline" (correct for its `base_revision` 6ce191d4, naive 72), while the command passes
 `PRE=71` (correct for `e99f1674`). Two revisions, one packet, and no check that they agree.
 
+> **MEASURED, not asserted — 2026-08-19T22:29Z, fermat.** §9c was written from packet text.
+> Every number in it has now been checked against the actual trees, using the current
+> `scripts/sorry_count.py` run inside detached worktrees at each revision (the script did not
+> exist at the two older ones, so it was copied in; it adds no `sorry`, so it cannot perturb
+> the count):
+>
+> | revision | live | prose | naive | claimed by |
+> |---|---|---|---|---|
+> | `6ce191d4` | 61 | 11 | **72** | `hub-oig35.5` prose, "the current 72-occurrence baseline" |
+> | `e99f1674` | 60 | 11 | **71** | the acceptance command `range e99f1674 71 67 67` |
+> | `8408ec31` | 56 | 11 | **67** | `hub-oig35.19` `metadata.base_revision` |
+> | `87c1cdbf` | 56 | 11 | **67** | `.seed-fleet/baseline.json` |
+>
+> **All four claimed numbers are correct — individually.** That is what makes this defect
+> nasty: nothing here is a wrong count, so nothing looks wrong. `hub-oig35.19` demands
+> `POST ∈ [67,67]` while declaring `PRE=71` at a revision four occurrences behind its own
+> `base_revision`. It passed because C2 added a file containing **zero** `sorry`s, so the
+> count did not move, and 67 was already the true value at the real base. Had C2's packet
+> demanded any nonzero delta, the same arithmetic would have failed for reasons unrelated to
+> the proof work.
+>
+> **This is a harness defect with a name and a one-line fix:** the packet generator emits
+> `base_revision`, the `flt-acceptance range` arguments, and the context prose from
+> independent sources and never asserts they agree. Requiring `naive(base_revision) == PRE`
+> at generation time would have rejected `hub-oig35.19` and `hub-oig35.5` outright. It is
+> also directly relevant to `hub-r7qdn.7`: this is a defect in the *harness*, not in the
+> model's Lean, and it is invisible to any sorry-count or build gate.
+
 ### 9d. Three packets are based off `main`
+
+> **RESOLVED 2026-08-18T17:56Z.** PR #6 was merged at 17:53:20Z (merge commit `ac6c97e`).
+> All three base revisions — `6ce191d4`, `cb0b7c18` and the branch tip `496255c4` — are now
+> ancestors of `main`; verified with `git merge-base --is-ancestor`. **No re-basing is
+> needed.** The merge was reported as accidental and I was asked to undo it; I measured
+> first and recommended against, because it is content-neutral: `git diff 321cc4e ac6c97e`
+> is **empty** and the sorry count is unchanged at 56/11/67.
+>
+> **RETRACTION, same session, 2026-08-18T18:05Z.** My first version of this note also claimed
+> the branch carried harmful content — that it "would have replaced the working `diamond_fix`
+> proof in `GLnDefs.lean` with `sorry` and deleted `FLT/MazurW.lean`". **That is false and is
+> withdrawn.** I diffed against `df56f95b`, the `base.sha` in the PR API record, which is *not*
+> the merge base. The true merge base is `e99f1674` (`git merge-base 496255c4 df56f95b`), and
+> at that commit `FLT/MazurW.lean` **did not yet exist** and `diamond_fix` **was already
+> `sorry`** — main gained both later, via C1/PR #7. Both "deletions" were artifacts of
+> diffing against a commit ahead of the fork point. Verified directly: the branch never
+> touched `GLnDefs.lean` at all. Its real diff from `e99f1674` is +92/−4 over 5 files, and its
+> substantive content is the opposite of harmful — it **closes two `sorry`s** in
+> `GLzero.lean` (`loc_cst` and `is_open`). Wave-3 §2 line 167 had this right; my claim
+> contradicted a document of my own and I should have checked it before publishing.
+> Two-dot `git diff A B` is not a PR diff — use the merge base. The paragraph below
+> stands as the record of why this was a defect, and of the trap in it: my recommendation
+> was "close, don't merge", and *closing* was the option that would have orphaned these
+> three bases. Merging fixed the defect at zero content cost. The separate §9c defect —
+> `hub-oig35.19` naming three baselines — is untouched by this and still open.
 
 `hub-oig35.5` pins `base_revision = 6ce191d4` (naive 72); `.9` and `.11` pin `cb0b7c18`
 (naive 71). **Neither commit is an ancestor of `main`** — both are on
@@ -554,3 +634,33 @@ written to predict, observed end-to-end on a merged commit for the first time.
 Caveat stated plainly: 15 is the count under *my* import substitution. Whoever repairs the
 file should re-measure after choosing the import properly. What does not depend on that
 choice is that the body does not compile.
+
+### 10e. The repair, and the first compiler-checked proof in this campaign
+
+Both lemmas are reproved from the reflection formula on a single route:
+
+```
+‖Γ(1+it)‖² = Γ(1+it)·Γ(1-it)     (Gamma_conj)
+           = it·Γ(it)·Γ(1-it)     (Gamma_add_one, needs it ≠ 0 — the merged version omits it)
+           = it·π / sin (π·it)     (Gamma_mul_Gamma_one_sub)
+           = πt / sinh (πt)        (sin_mul_I)
+```
+
+with `sin (π/2 + iπt) = cos (iπt) = cosh (πt)` for the half-line case, which needs no `t ≠ 0`
+at all. Statements, lemma names and namespace are unchanged; `Real.pi`/`Real.sinh`/`Real.cosh`
+are written qualified, since opening `Complex` and `Real` together is what produced the two
+"ambiguous term `sinh`" errors.
+
+```
+$ lake env lean FLT/NumberField/ZetaFE/ZeroTheoryN2.lean
+EXIT=0            -- no errors, no warnings, no sorries
+#print axioms ZeroTheoryN2.Gamma_one_add_I_mul_sq_norm       -> [propext, Classical.choice, Quot.sound]
+#print axioms ZeroTheoryN2.Gamma_one_half_add_I_mul_sq_norm  -> [propext, Classical.choice, Quot.sound]
+```
+
+Converted to the repo's `module` / `public import` / `@[expose] public section` idiom and added
+to `FLT.lean` — the import line, not the file's contents, is what puts a module in the closure.
+Up as **PR #10**, `fix/zerotheoryn2-compiles`, **unmerged**; the merge is not crew-18's call.
+
+`MazurW` and `PoitouTate` are deliberately not in that PR. Both are green already, so wiring
+them in is a separate safe change and the `globs` flip belongs atomically with it.
