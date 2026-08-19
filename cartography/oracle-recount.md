@@ -297,14 +297,14 @@ one-command check — read what `flt-acceptance` actually invokes — and it sho
 before anyone either closes `hub-r7qdn.7` or reopens it. Packet `C2-CLOSURE-FIX` carries
 both the repair and that fairness note.
 
-### 8d. The fairness check in §8b **cannot be run from this pod**, and the "both legs void" claim is conditional on it *(2026-08-18T22:12Z, fermat)*
+### 8d. The fairness check in §8b **cannot be run from this pod**, and the "both legs void" claim is conditional on it *(2026-08-19T22:12Z, fermat)*
 
 §8b names one step that could exonerate C2: read what the isolated `flt-acceptance` runner
 actually invokes. If it builds by **explicit module target** rather than via the default
 target, then the file *was* compiled, and this is a project-wiring defect rather than a
 vacuous verdict.
 
-**That check is not available here.** As of 2026-08-18T22:12Z there is no `flt-acceptance`
+**That check is not available here.** As of 2026-08-19T22:12Z there is no `flt-acceptance`
 on this pod: absent from `/usr/local/bin`, not on `PATH`, and `find / -maxdepth 6` returns
 nothing. Note the environment has moved twice since §8c was written — §8c records the
 toolchain as "fixed under `/usr/local/bin`, no `elan`", whereas today `lean`/`lake` come

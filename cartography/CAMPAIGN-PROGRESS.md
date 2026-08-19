@@ -99,7 +99,7 @@ lands), endgame T2 (needs a `#print axioms` gate, not a sorry count), and Q3′/
    One command still settles the *fairness* question: read what `flt-acceptance` invokes — if
    it builds by explicit module target, this is project wiring rather than a vacuous verdict.
    **That command cannot be run from this pod** (no `flt-acceptance` on PATH or anywhere under
-   `find / -maxdepth 6`, as of 2026-08-18T22:12Z); see `oracle-recount.md` §8d. Packet
+   `find / -maxdepth 6`, as of 2026-08-19T22:12Z); see `oracle-recount.md` §8d. Packet
    `C2-CLOSURE-FIX` supplies the repair either way.
 2. **AINTLIB-0′ rerun.** The bump and cache worked (8691 artifacts); the red was collateral,
    in `projects/HasseWeil`, which **DedekindResidue never imports**. Rerun with exact module
