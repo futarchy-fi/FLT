@@ -445,6 +445,34 @@ range demanded (0). `hub-oig35.5` has the same shape — prose says "the current
 baseline" (correct for its `base_revision` 6ce191d4, naive 72), while the command passes
 `PRE=71` (correct for `e99f1674`). Two revisions, one packet, and no check that they agree.
 
+> **MEASURED, not asserted — 2026-08-19T22:29Z, fermat.** §9c was written from packet text.
+> Every number in it has now been checked against the actual trees, using the current
+> `scripts/sorry_count.py` run inside detached worktrees at each revision (the script did not
+> exist at the two older ones, so it was copied in; it adds no `sorry`, so it cannot perturb
+> the count):
+>
+> | revision | live | prose | naive | claimed by |
+> |---|---|---|---|---|
+> | `6ce191d4` | 61 | 11 | **72** | `hub-oig35.5` prose, "the current 72-occurrence baseline" |
+> | `e99f1674` | 60 | 11 | **71** | the acceptance command `range e99f1674 71 67 67` |
+> | `8408ec31` | 56 | 11 | **67** | `hub-oig35.19` `metadata.base_revision` |
+> | `87c1cdbf` | 56 | 11 | **67** | `.seed-fleet/baseline.json` |
+>
+> **All four claimed numbers are correct — individually.** That is what makes this defect
+> nasty: nothing here is a wrong count, so nothing looks wrong. `hub-oig35.19` demands
+> `POST ∈ [67,67]` while declaring `PRE=71` at a revision four occurrences behind its own
+> `base_revision`. It passed because C2 added a file containing **zero** `sorry`s, so the
+> count did not move, and 67 was already the true value at the real base. Had C2's packet
+> demanded any nonzero delta, the same arithmetic would have failed for reasons unrelated to
+> the proof work.
+>
+> **This is a harness defect with a name and a one-line fix:** the packet generator emits
+> `base_revision`, the `flt-acceptance range` arguments, and the context prose from
+> independent sources and never asserts they agree. Requiring `naive(base_revision) == PRE`
+> at generation time would have rejected `hub-oig35.19` and `hub-oig35.5` outright. It is
+> also directly relevant to `hub-r7qdn.7`: this is a defect in the *harness*, not in the
+> model's Lean, and it is invisible to any sorry-count or build gate.
+
 ### 9d. Three packets are based off `main`
 
 > **RESOLVED 2026-08-18T17:56Z.** PR #6 was merged at 17:53:20Z (merge commit `ac6c97e`).
