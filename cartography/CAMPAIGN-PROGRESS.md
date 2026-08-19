@@ -51,7 +51,7 @@ and receipts stay stable.
 | #7 | hub-oig35.18 (C1) | 11:08Z | witness curve in `FLT/MazurW.lean`, delta `[0,0]` |
 | #8 | hub-oig35.20 v2 | 11:40Z | four `galoisRepresentation` holes closed, delta `[-4,-4]` |
 | #9 | hub-oig35.19 (C2) | 15:09Z | node N2 added as `ZeroTheoryN2.lean`, delta `[0,0]` |
-| #6 | hub-oig35.10 | **still open** | **no-op against main — close it, do not merge** |
+| #6 | hub-oig35.10 | **MERGED 2026-08-18T17:53:20Z** as `ac6c97e` | Reported accidental. **Content-neutral: `git diff 321cc4e ac6c97e` is empty** — main had already acquired both proofs verbatim by another route. Recount unchanged at 56/11/67. Recommended **against** undoing: a revert is an empty commit, a force-push rewrites shared history and re-orphans `6ce191d4`/`cb0b7c18`/`496255c4`. The earlier "no-op — close it, do not merge" verdict was right about *effect on main*; the branch itself is +92/−4 over 5 files and closes two sorries. See `wave-3-packets.md`. |
 
 C2 v2 went green on repair iteration 0 after the acceptance oracle was switched to isolated
 `flt-acceptance`. Per the pilot, C1+C2 close harness selection `hub-r7qdn.7` semantically —
@@ -88,10 +88,19 @@ lands), endgame T2 (needs a `#print axioms` gate, not a sorry count), and Q3′/
 
 ## 5. Open items, most consequential first
 
-1. **`hub-r7qdn.7` should not close silently.** Both calibration legs touch orphan modules —
-   C1 edited `MazurW.lean`, C2 created `ZeroTheoryN2.lean`. If acceptance builds the default
-   target, neither compiled the file it was judged on. One command settles it: read what
-   `flt-acceptance` invokes. Packet `C2-CLOSURE-FIX` supplies the repair either way.
+1. **`hub-r7qdn.7` should not close silently — and the C2 half is now worse than "unproven".**
+   Both calibration legs touch orphan modules — C1 edited `MazurW.lean`, C2 created
+   `ZeroTheoryN2.lean`. If acceptance builds the default target, neither compiled the file it
+   was judged on. **Measured 2026-08-18: `ZeroTheoryN2.lean` does not compile at all.** It
+   imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Identities`, which does not exist
+   at the pinned revision; substituting a real import yields **15 errors in 140 lines**. It has
+   zero sorries, so the count gate read it clean. So C2's artifact is not merely unverified —
+   it is broken, and it is on `main`. Repair is FLT PR #10.
+   One command still settles the *fairness* question: read what `flt-acceptance` invokes — if
+   it builds by explicit module target, this is project wiring rather than a vacuous verdict.
+   **That command cannot be run from this pod** (no `flt-acceptance` on PATH or anywhere under
+   `find / -maxdepth 6`, as of 2026-08-18T22:12Z); see `oracle-recount.md` §8d. Packet
+   `C2-CLOSURE-FIX` supplies the repair either way.
 2. **AINTLIB-0′ rerun.** The bump and cache worked (8691 artifacts); the red was collateral,
    in `projects/HasseWeil`, which **DedekindResidue never imports**. Rerun with exact module
    targets — `aintlib-0prime-v2-SCOPE`.
