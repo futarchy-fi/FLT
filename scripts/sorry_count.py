@@ -97,10 +97,29 @@ def build_closure(repo):
         if not os.path.exists(path):
             return []
         found = []
+        in_comment = False
         with open(path, encoding="utf-8", errors="replace") as fh:
             for line in fh:
-                if line.startswith(("theorem", "lemma", "def", "/-!")):
-                    break  # imports are confined to the header
+                # Skip block comments outright rather than stopping at them.  The
+                # header idiom is copyright `/- -/`, then `module`, then imports,
+                # then a `/-! -/` docstring -- but nothing enforces that order, and
+                # a docstring placed *above* the imports must not hide them: that
+                # would report every module imported only by that file as an orphan
+                # and fail the gate on a repo that is in fact fine.  Skipping (not
+                # breaking) also keeps the property that an `import` written inside
+                # a docstring, as documentation, is never mistaken for a real one.
+                if in_comment:
+                    if "-/" in line:
+                        in_comment = False
+                    continue
+                if line.startswith(("/-!", "/-")):
+                    if "-/" not in line[2:]:
+                        in_comment = True
+                    continue
+                if line.startswith(("theorem", "lemma", "def", "abbrev",
+                                    "structure", "instance", "namespace",
+                                    "open", "universe", "@[")):
+                    break  # past the header; imports cannot appear below here
                 m = IMPORT.match(line)
                 if m:
                     found.append(m.group(1))
