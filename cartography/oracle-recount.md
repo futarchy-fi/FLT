@@ -297,6 +297,33 @@ one-command check — read what `flt-acceptance` actually invokes — and it sho
 before anyone either closes `hub-r7qdn.7` or reopens it. Packet `C2-CLOSURE-FIX` carries
 both the repair and that fairness note.
 
+### 8d. The fairness check in §8b **cannot be run from this pod**, and the "both legs void" claim is conditional on it *(2026-08-18T22:12Z, fermat)*
+
+§8b names one step that could exonerate C2: read what the isolated `flt-acceptance` runner
+actually invokes. If it builds by **explicit module target** rather than via the default
+target, then the file *was* compiled, and this is a project-wiring defect rather than a
+vacuous verdict.
+
+**That check is not available here.** As of 2026-08-18T22:12Z there is no `flt-acceptance`
+on this pod: absent from `/usr/local/bin`, not on `PATH`, and `find / -maxdepth 6` returns
+nothing. Note the environment has moved twice since §8c was written — §8c records the
+toolchain as "fixed under `/usr/local/bin`, no `elan`", whereas today `lean`/`lake` come
+from `~/.elan` because I reinstalled them by hand after the 01:25Z reschedule.
+
+**So state the C1/C2 conclusion with its condition attached.** What is *proved* is: both
+calibration artifacts (`FLT/MazurW.lean`, `FLT/NumberField/ZetaFE/ZeroTheoryN2.lean`) are
+outside the default-target import closure, and `ZeroTheoryN2` does not compile. What
+*follows* — that neither leg was compiled by the gate that accepted it, and therefore that
+`hub-r7qdn.7` has no compiling-proof evidence — holds **only if `flt-acceptance` builds the
+default target.** It is the likely reading, and §8c proves the default target would indeed
+skip both files, but it is an inference about a runner I have never read.
+
+**Whoever can read `flt-acceptance` should do so before `hub-r7qdn.7` is closed *or*
+reopened.** One command settles it either way, and it is the difference between "the
+calibration evidence is void" and "the calibration evidence is sound but the repo wiring is
+broken." I have asserted the former to Kelvin; this paragraph is the qualification that
+belongs with it.
+
 ### 8c. SETTLED EMPIRICALLY — W3-00 was run on 2026-08-17T23:15Z, and §8 is confirmed
 
 Everything above about the build-closure hazard was a *textual* argument: I read
