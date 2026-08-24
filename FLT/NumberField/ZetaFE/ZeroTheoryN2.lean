@@ -39,7 +39,6 @@ For `t ≠ 0` we have:
 These are consequences of the reflection formula combined with
 `Gamma_conj` and the functional equation.
 -/
-
 lemma Gamma_one_add_I_mul_sq_norm (t : ℝ) (ht : t ≠ 0) :
     ‖Gamma (1 + I * t)‖ ^ 2 = Real.pi * t / Real.sinh (Real.pi * t) := by
   have hit : (I * (t : ℂ)) ≠ 0 := mul_ne_zero Complex.I_ne_zero (by exact_mod_cast ht)
