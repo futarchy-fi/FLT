@@ -1,6 +1,13 @@
-import Mathlib.Algebra.BigOperators.Group.Finset.Defs
-import Mathlib.Algebra.Group.Hom.Defs
-import Mathlib.SetTheory.Cardinal.Finite
+/-
+Copyright (c) 2026 The FLT Project. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: The FLT Project
+-/
+module
+
+public import Mathlib.Algebra.BigOperators.Group.Finset.Defs
+public import Mathlib.Algebra.Group.Hom.Defs
+public import Mathlib.SetTheory.Cardinal.Finite
 
 /-!
 # Poitou–Tate statement-layer scaffold
@@ -20,6 +27,10 @@ The full topologized nine-term sequence and Sha-duality are deferred, never
 deleted. The panel-deleted middle-exactness node is explicitly excluded from
 this package.
 -/
+
+@[expose] public section
+
+universe u v w
 
 open Finset
 
@@ -41,7 +52,7 @@ structure PoitouTateData (Place : Type v) (mu : Type u) [AddCommGroup mu] where
   localCondition : Place → Type u → Type w
   localConditionPerp : Place → Type u → Type w
   localizationMap : {M : Type u} → H1 M → (place : Place) → localH1 place M
-  localPairing : {M : Type u} → [AddCommGroup M] →
+  localPairing : {place : Place} → {M : Type u} → [AddCommGroup M] →
     localH1 place M → localH1 place (CartierDual M mu) → mu
 
 /-- The Greenberg–Wiles order formula, stated as a cross-multiplied equality
