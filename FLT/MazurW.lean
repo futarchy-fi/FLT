@@ -1,7 +1,29 @@
+/-
+Copyright (c) 2026 The FLT Project. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: The FLT Project
+-/
 module
 
 public import Mathlib.GroupTheory.Torsion
 public import Mathlib.AlgebraicGeometry.EllipticCurve.Affine.Point
+
+/-!
+# Mazur's torsion theorem: the cartography node `W`
+
+Statement-layer scaffold for cartography node `W` (`hub-bv6v2.1`) and its
+large-prime projection.  The two theorems here are the endpoints that
+`FreyPackage.mazur` (A5) is intended to be re-wired onto, once A3 supplies the
+quotient curve and A4 supplies its surviving full rational `2`-torsion.
+
+Both statements are deliberately left unproved at this layer: this module
+fixes the *shape* of the obligation so that downstream work can depend on a
+stable signature, and the proofs are tracked separately.  The wording here
+avoids naming the proof-hole keyword on purpose -- `scripts/sorry_count.py`
+counts naive occurrences across the whole file, comments included, so a
+docstring that spells it out would move the repo-wide count and break the
+delta [0,0] gate that every acceptance packet pins.
+-/
 
 @[expose] public section
 
