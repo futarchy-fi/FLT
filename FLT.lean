@@ -213,6 +213,7 @@ public import FLT.Mathlib.Topology.Instances.Matrix
 public import FLT.Mathlib.Topology.MetricSpace.ProperSpace.InfinitePlace
 public import FLT.Mathlib.Topology.MetricSpace.Pseudo.Matrix
 public import FLT.Mathlib.Topology.Polish
+public import FLT.MazurW
 public import FLT.NumberField.AdeleRing
 public import FLT.NumberField.Completion.Finite
 public import FLT.NumberField.Completion.Infinite
@@ -236,6 +237,7 @@ public import FLT.Patching.Utils.Lemmas
 public import FLT.Patching.Utils.StructureFiniteness
 public import FLT.Patching.Utils.TopologicallyFG
 public import FLT.Patching.VanishingFilter
+public import FLT.PoitouTate
 public import FLT.Proof
 public import FLT.QuaternionAlgebra.NumberField
 public import FLT.Slop.DimensionTheorem
