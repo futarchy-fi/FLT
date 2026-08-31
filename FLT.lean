@@ -221,6 +221,7 @@ public import FLT.NumberField.HeightOneSpectrum
 public import FLT.NumberField.InfiniteAdeleRing
 public import FLT.NumberField.InfinitePlace.Extension
 public import FLT.NumberField.Padics.RestrictedProduct
+public import FLT.NumberField.ZetaFE.ZeroTheoryN2
 public import FLT.Patching.Algebra
 public import FLT.Patching.Module
 public import FLT.Patching.Over
