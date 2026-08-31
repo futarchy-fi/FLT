@@ -1,12 +1,20 @@
+/-
+Copyright (c) 2026 krandder. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: krandder
+-/
 module
 
 public import Mathlib.GroupTheory.Torsion
 public import Mathlib.AlgebraicGeometry.EllipticCurve.Affine.Point
 
+/-!
+# Mazur's torsion theorem interfaces
+This module records the torsion exclusions for rational elliptic curves used by
+the Frey-curve argument, together with elementary bridge constructions.
+-/
 @[expose] public section
-
 open scoped WeierstrassCurve.Affine
-
 /-- Cartography node W (`hub-bv6v2.1`): an elliptic curve over `ℚ` cannot contain
 `(ℤ/2ℤ)² × ℤ/ℓℤ` when `ℓ ≥ 5` is prime.  This is the endpoint intended for the
 `FreyPackage.mazur` (A5) re-wire after A3 supplies the quotient curve and A4
@@ -16,7 +24,6 @@ theorem mazur_W (ℓ : ℕ) (hℓ : ℓ.Prime) (hℓ5 : 5 ≤ ℓ)
     ¬ ∃ f : ((ZMod 2 × ZMod 2) × ZMod ℓ) →+ (E⁄ℚ).Point,
       Function.Injective f := by
   sorry
-
 /-- Cartography node W, large-prime projection: an elliptic curve over `ℚ` has
 no rational point of prime order `ℓ ≥ 11`.  This is a useful Mazur chapter
 interface, but the A5 re-wire still needs `mazur_W` for the Frey primes below
@@ -25,7 +32,6 @@ theorem mazur_W_ge11 (ℓ : ℕ) (hℓ : ℓ.Prime) (hℓ11 : 11 ≤ ℓ)
     (E : WeierstrassCurve ℚ) [E.IsElliptic] :
     ¬ ∃ P : (E⁄ℚ).Point, addOrderOf P = ℓ := by
   sorry
-
 /-- Cartography node W scope-regression fixture: cyclic `ℤ/10ℤ` torsion DOES
 occur over `ℚ` (Mazur's allowed list; e.g. a curve from `X₁(10)`).  This is
 the statement that would fail if W were over-strengthened to "no rational
@@ -47,10 +53,9 @@ theorem mazur_W_sanity_zmod10 :
     rw [hΔ]
     exact Ne.isUnit (by norm_num)
   refine ⟨E, hE, ?_⟩
-  letI : E.IsElliptic := hE
-  haveI : (E⁄ℚ).IsElliptic :=
+  let : E.IsElliptic := hE
+  have : (E⁄ℚ).IsElliptic :=
     inferInstanceAs ((E.map (algebraMap ℚ ℚ)).IsElliptic)
-
   have h1 : (E⁄ℚ).Nonsingular 0 0 := by
     apply (WeierstrassCurve.Affine.equation_iff_nonsingular
       (W := E⁄ℚ)).mp
@@ -96,7 +101,6 @@ theorem mazur_W_sanity_zmod10 :
       (W := E⁄ℚ)).mp
     rw [WeierstrassCurve.Affine.equation_iff]
     norm_num [E, WeierstrassCurve.baseChange, WeierstrassCurve.map]
-
   let P1 : (E⁄ℚ).Point := .some 0 0 h1
   let P2 : (E⁄ℚ).Point := .some 6 (-12) h2
   let P3 : (E⁄ℚ).Point := .some (-6) 36 h3
@@ -106,13 +110,12 @@ theorem mazur_W_sanity_zmod10 :
   let P7 : (E⁄ℚ).Point := .some (-6) 12 h7
   let P8 : (E⁄ℚ).Point := .some 6 0 h8
   let P9 : (E⁄ℚ).Point := .some 0 18 h9
-
   have h12 : P1 + P1 = P2 := by
     dsimp [P1, P2]
     convert (WeierstrassCurve.Affine.Point.add_self_of_Y_ne
         (W := E⁄ℚ) (x₁ := (0 : ℚ)) (y₁ := 0) (h₁ := h1) (by
           norm_num [E, WeierstrassCurve.baseChange, WeierstrassCurve.map,
-            WeierstrassCurve.Affine.negY])) using 1 <;>
+            WeierstrassCurve.Affine.negY])) using 1;
       norm_num [E, WeierstrassCurve.baseChange, WeierstrassCurve.map,
         WeierstrassCurve.Affine.slope, WeierstrassCurve.Affine.addX,
         WeierstrassCurve.Affine.addY, WeierstrassCurve.Affine.negAddY,
@@ -121,7 +124,7 @@ theorem mazur_W_sanity_zmod10 :
     dsimp [P1, P2, P3]
     convert (WeierstrassCurve.Affine.Point.add_of_X_ne
         (W := E⁄ℚ) (x₁ := (6 : ℚ)) (x₂ := 0) (y₁ := -12) (y₂ := 0)
-        (h₁ := h2) (h₂ := h1) (by norm_num)) using 1 <;>
+        (h₁ := h2) (h₂ := h1) (by norm_num)) using 1;
       norm_num [E, WeierstrassCurve.baseChange, WeierstrassCurve.map,
         WeierstrassCurve.Affine.slope, WeierstrassCurve.Affine.addX,
         WeierstrassCurve.Affine.addY, WeierstrassCurve.Affine.negAddY,
@@ -130,7 +133,7 @@ theorem mazur_W_sanity_zmod10 :
     dsimp [P1, P3, P4]
     convert (WeierstrassCurve.Affine.Point.add_of_X_ne
         (W := E⁄ℚ) (x₁ := (-6 : ℚ)) (x₂ := 0) (y₁ := 36) (y₂ := 0)
-        (h₁ := h3) (h₂ := h1) (by norm_num)) using 1 <;>
+        (h₁ := h3) (h₂ := h1) (by norm_num)) using 1;
       norm_num [E, WeierstrassCurve.baseChange, WeierstrassCurve.map,
         WeierstrassCurve.Affine.slope, WeierstrassCurve.Affine.addX,
         WeierstrassCurve.Affine.addY, WeierstrassCurve.Affine.negAddY,
@@ -139,7 +142,7 @@ theorem mazur_W_sanity_zmod10 :
     dsimp [P1, P4, P5]
     convert (WeierstrassCurve.Affine.Point.add_of_X_ne
         (W := E⁄ℚ) (x₁ := (18 : ℚ)) (x₂ := 0) (y₁ := 36) (y₂ := 0)
-        (h₁ := h4) (h₂ := h1) (by norm_num)) using 1 <;>
+        (h₁ := h4) (h₂ := h1) (by norm_num)) using 1;
       norm_num [E, WeierstrassCurve.baseChange, WeierstrassCurve.map,
         WeierstrassCurve.Affine.slope, WeierstrassCurve.Affine.addX,
         WeierstrassCurve.Affine.addY, WeierstrassCurve.Affine.negAddY,
@@ -148,7 +151,7 @@ theorem mazur_W_sanity_zmod10 :
     dsimp [P1, P5, P6]
     convert (WeierstrassCurve.Affine.Point.add_of_X_ne
         (W := E⁄ℚ) (x₁ := (2 : ℚ)) (x₂ := 0) (y₁ := 4) (y₂ := 0)
-        (h₁ := h5) (h₂ := h1) (by norm_num)) using 1 <;>
+        (h₁ := h5) (h₂ := h1) (by norm_num)) using 1;
       norm_num [E, WeierstrassCurve.baseChange, WeierstrassCurve.map,
         WeierstrassCurve.Affine.slope, WeierstrassCurve.Affine.addX,
         WeierstrassCurve.Affine.addY, WeierstrassCurve.Affine.negAddY,
@@ -157,7 +160,7 @@ theorem mazur_W_sanity_zmod10 :
     dsimp [P1, P6, P7]
     convert (WeierstrassCurve.Affine.Point.add_of_X_ne
         (W := E⁄ℚ) (x₁ := (18 : ℚ)) (x₂ := 0) (y₁ := -108) (y₂ := 0)
-        (h₁ := h6) (h₂ := h1) (by norm_num)) using 1 <;>
+        (h₁ := h6) (h₂ := h1) (by norm_num)) using 1;
       norm_num [E, WeierstrassCurve.baseChange, WeierstrassCurve.map,
         WeierstrassCurve.Affine.slope, WeierstrassCurve.Affine.addX,
         WeierstrassCurve.Affine.addY, WeierstrassCurve.Affine.negAddY,
@@ -166,7 +169,7 @@ theorem mazur_W_sanity_zmod10 :
     dsimp [P1, P7, P8]
     convert (WeierstrassCurve.Affine.Point.add_of_X_ne
         (W := E⁄ℚ) (x₁ := (-6 : ℚ)) (x₂ := 0) (y₁ := 12) (y₂ := 0)
-        (h₁ := h7) (h₂ := h1) (by norm_num)) using 1 <;>
+        (h₁ := h7) (h₂ := h1) (by norm_num)) using 1;
       norm_num [E, WeierstrassCurve.baseChange, WeierstrassCurve.map,
         WeierstrassCurve.Affine.slope, WeierstrassCurve.Affine.addX,
         WeierstrassCurve.Affine.addY, WeierstrassCurve.Affine.negAddY,
@@ -175,7 +178,7 @@ theorem mazur_W_sanity_zmod10 :
     dsimp [P1, P8, P9]
     convert (WeierstrassCurve.Affine.Point.add_of_X_ne
         (W := E⁄ℚ) (x₁ := (6 : ℚ)) (x₂ := 0) (y₁ := 0) (y₂ := 0)
-        (h₁ := h8) (h₂ := h1) (by norm_num)) using 1 <;>
+        (h₁ := h8) (h₂ := h1) (by norm_num)) using 1;
       norm_num [E, WeierstrassCurve.baseChange, WeierstrassCurve.map,
         WeierstrassCurve.Affine.slope, WeierstrassCurve.Affine.addX,
         WeierstrassCurve.Affine.addY, WeierstrassCurve.Affine.negAddY,
@@ -186,7 +189,6 @@ theorem mazur_W_sanity_zmod10 :
     · rfl
     · norm_num [E, WeierstrassCurve.baseChange, WeierstrassCurve.map,
         WeierstrassCurve.Affine.negY]
-
   have h2smul : (2 : ℕ) • P1 = P2 := by
     simpa [two_nsmul] using h12
   have h3smul : (3 : ℕ) • P1 = P3 := by
@@ -237,7 +239,6 @@ theorem mazur_W_sanity_zmod10 :
         rw [show (10 : ℕ) = 9 + 1 by norm_num, add_nsmul, one_nsmul]
       _ = P9 + P1 := by rw [h9smul]
       _ = 0 := h910
-
   have hP1ne : P1 ≠ 0 := by
     dsimp [P1]
     exact WeierstrassCurve.Affine.Point.some_ne_zero h1
@@ -247,8 +248,8 @@ theorem mazur_W_sanity_zmod10 :
   have hP5ne : P5 ≠ 0 := by
     dsimp [P5]
     exact WeierstrassCurve.Affine.Point.some_ne_zero h5
-  have h2ne : (2 : ℕ) • P1 ≠ 0 := by simpa [h2smul] using hP2ne
-  have h5ne : (5 : ℕ) • P1 ≠ 0 := by simpa [h5smul] using hP5ne
+  have h2ne : (2 : ℕ) • P1 ≠ 0 := by simp [h2smul, hP2ne]
+  have h5ne : (5 : ℕ) • P1 ≠ 0 := by simp [h5smul, hP5ne]
   have horder : addOrderOf P1 = 10 := by
     apply addOrderOf_eq_of_nsmul_and_div_prime_nsmul (x := P1) (n := 10)
     · norm_num
@@ -267,7 +268,6 @@ theorem mazur_W_sanity_zmod10 :
             (Nat.Prime.ne_one hp)
         subst p
         simpa using h2ne
-
   have hg10 : (10 : ℤ) • P1 = 0 := by
     rw [show (10 : ℤ) = ((10 : ℕ) : ℤ) by norm_num, natCast_zsmul]
     exact h10smul
@@ -284,7 +284,6 @@ theorem mazur_W_sanity_zmod10 :
     apply (addOrderOf_dvd_iff_zsmul_eq_zero).2
     simpa [g] using hm
   simpa [horder] using hd
-
 theorem mazur_W_nonvacuity_full_two_torsion :
     ∃ (E : WeierstrassCurve ℚ) (hE : E.IsElliptic),
       letI : E.IsElliptic := hE
@@ -299,10 +298,9 @@ theorem mazur_W_nonvacuity_full_two_torsion :
     rw [hΔ]
     exact Ne.isUnit (by norm_num)
   refine ⟨E, hE, ?_⟩
-  letI : E.IsElliptic := hE
-  haveI : (E⁄ℚ).IsElliptic :=
+  let : E.IsElliptic := hE
+  have : (E⁄ℚ).IsElliptic :=
     inferInstanceAs ((E.map (algebraMap ℚ ℚ)).IsElliptic)
-
   have hP : (E⁄ℚ).Nonsingular 0 0 := by
     apply (WeierstrassCurve.Affine.equation_iff_nonsingular
       (W := E⁄ℚ)).mp
@@ -313,10 +311,8 @@ theorem mazur_W_nonvacuity_full_two_torsion :
       (W := E⁄ℚ)).mp
     rw [WeierstrassCurve.Affine.equation_iff]
     norm_num [E, WeierstrassCurve.baseChange, WeierstrassCurve.map]
-
   let P : (E⁄ℚ).Point := .some 0 0 hP
   let Q : (E⁄ℚ).Point := .some 2 0 hQ
-
   have hPadd : P + P = 0 := by
     dsimp [P]
     apply WeierstrassCurve.Affine.Point.add_self_of_Y_eq (W := E⁄ℚ)
@@ -327,7 +323,6 @@ theorem mazur_W_nonvacuity_full_two_torsion :
     apply WeierstrassCurve.Affine.Point.add_self_of_Y_eq (W := E⁄ℚ)
     norm_num [E, WeierstrassCurve.baseChange, WeierstrassCurve.map,
       WeierstrassCurve.Affine.negY]
-
   have hP0 : P ≠ 0 := by
     dsimp [P]
     exact WeierstrassCurve.Affine.Point.some_ne_zero hP
@@ -340,7 +335,6 @@ theorem mazur_W_nonvacuity_full_two_torsion :
     have hx : (0 : ℚ) = 2 := by
       exact (WeierstrassCurve.Affine.Point.some.inj h).1
     norm_num at hx
-
   have hQneg : -Q = Q := (neg_eq_iff_add_eq_zero).2 hQadd
   have hPplusQ0 : P + Q ≠ 0 := by
     intro h
@@ -349,12 +343,14 @@ theorem mazur_W_nonvacuity_full_two_torsion :
   have hPplusQ_P : P + Q ≠ P := by
     intro h
     apply hQ0
-    have h' : P + Q = P + 0 := by simpa using h
+    have h' : P + Q = P + 0 := by
+      simp at h
     exact add_left_cancel h'
   have hPplusQ_Q : P + Q ≠ Q := by
     intro h
     apply hP0
-    have h' : P + Q = 0 + Q := by simpa using h
+    have h' : P + Q = 0 + Q := by
+      simp at h
     exact add_right_cancel h'
   have h0P : (0 : (E⁄ℚ).Point) ≠ P := Ne.symm hP0
   have h0Q : (0 : (E⁄ℚ).Point) ≠ Q := Ne.symm hQ0
@@ -362,7 +358,6 @@ theorem mazur_W_nonvacuity_full_two_torsion :
   have h0PplusQ : (0 : (E⁄ℚ).Point) ≠ P + Q := Ne.symm hPplusQ0
   have hPPQ : P ≠ P + Q := Ne.symm hPplusQ_P
   have hQPQ : Q ≠ P + Q := Ne.symm hPplusQ_Q
-
   let gP : ℤ →+ (E⁄ℚ).Point :=
     { toFun := fun n => n • P
       map_zero' := by simp
@@ -382,7 +377,6 @@ theorem mazur_W_nonvacuity_full_two_torsion :
     ZMod.lift 2 ⟨gQ, by
       simpa [gQ, two_zsmul] using hQadd⟩
   let f : (ZMod 2 × ZMod 2) →+ (E⁄ℚ).Point := φP.coprod φQ
-
   have hφP0 : φP (0 : ZMod 2) = 0 := by simp
   have hφQ0 : φQ (0 : ZMod 2) = 0 := by simp
   have hφP1 : φP (1 : ZMod 2) = P := by
@@ -399,9 +393,7 @@ theorem mazur_W_nonvacuity_full_two_torsion :
     simp only [f, AddMonoidHom.coprod_apply, hφP0, hφQ1, zero_add]
   have hf11 : f (1, 1) = P + Q := by
     simp only [f, AddMonoidHom.coprod_apply, hφP1, hφQ1]
-
   have zmod2_cases : ∀ a : ZMod 2, a = 0 ∨ a = 1 := by decide
-
   refine ⟨f, ?_⟩
   rintro ⟨x₁, x₂⟩ ⟨y₁, y₂⟩ hxy
   rcases zmod2_cases x₁ with rfl | rfl <;>
@@ -412,5 +404,5 @@ theorem mazur_W_nonvacuity_full_two_torsion :
     first
     | rfl
     | exfalso
-      simpa [hf00, hf10, hf01, hf11, hP0, hQ0, hPQ, hPplusQ0,
-        hPplusQ_P, hPplusQ_Q, h0P, h0Q, hQP, h0PplusQ, hPPQ, hQPQ] using hxy
+      simp [hf00, hf10, hf01, hf11, hP0, hQ0, hPQ, hPplusQ0,
+        hPplusQ_P, hPplusQ_Q, h0P, h0Q, hQP, h0PplusQ, hPPQ, hQPQ] at hxy

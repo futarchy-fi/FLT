@@ -90,7 +90,7 @@ theorem diamond_fix :
   -- proof used to end here
   norm_num
   symm
-  simp [LieAlgebra.ExtendScalars.bracket_tmul, Ring.lie_def, TensorProduct.tmul_sub, mul_comm]
+  simp [Ring.lie_def, mul_comm]
 
 
 end

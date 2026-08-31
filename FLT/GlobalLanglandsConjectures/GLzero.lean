@@ -66,7 +66,7 @@ def ofComplex (c : ℂ) : AutomorphicFormForGLnOverQ 0 ρ := {
       loc_cst := by
         rw [IsLocallyConstant]
         intro x
-        simpa using isOpen_univ
+        simp
       smooth := by simp [contMDiff_const]
     }
     is_periodic := by simp
@@ -84,7 +84,8 @@ def ofComplex (c : ℂ) : AutomorphicFormForGLnOverQ 0 ρ := {
       apply Exists.intro U
       exact {
           is_open := by
-            have hsub : (U : Set (GL (Fin 0) (IsDedekindDomain.FiniteAdeleRing ℤ ℚ))) = Set.univ := by
+            have hsub :
+                (U : Set (GL (Fin 0) (IsDedekindDomain.FiniteAdeleRing ℤ ℚ))) = Set.univ := by
               ext x
               constructor
               · intro _
@@ -92,7 +93,7 @@ def ofComplex (c : ℂ) : AutomorphicFormForGLnOverQ 0 ρ := {
               · intro _
                 change x ∈ ({1} : Set (GL (Fin 0) (IsDedekindDomain.FiniteAdeleRing ℤ ℚ)))
                 exact Set.mem_singleton_iff.mpr (Subsingleton.elim x 1)
-            show IsOpen (U : Set (GL (Fin 0) (IsDedekindDomain.FiniteAdeleRing ℤ ℚ)))
+            change IsOpen (U : Set (GL (Fin 0) (IsDedekindDomain.FiniteAdeleRing ℤ ℚ)))
             rw [hsub]
             exact isOpen_univ
           is_compact := by aesop
