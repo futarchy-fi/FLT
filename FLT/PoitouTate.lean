@@ -42,16 +42,27 @@ abbrev CartierDual (M mu : Type u) [AddCommGroup M] [AddCommGroup mu] := M →+ 
 formula. The carrier families are parameterized by the finite discrete
 coefficient-module type. Local families additionally take a place. -/
 structure PoitouTateData (Place : Type v) (mu : Type u) [AddCommGroup mu] where
+  /-- Global degree-zero cohomology of a coefficient module. -/
   H0 : Type u → Type w
+  /-- Global degree-one cohomology of a coefficient module. -/
   H1 : Type u → Type w
+  /-- Unramified degree-one cohomology of a coefficient module. -/
   H1nr : Type u → Type w
+  /-- Degree-one Selmer group determined by the chosen local conditions. -/
   selmerH1 : Type u → Type w
+  /-- Degree-one Selmer group for the orthogonal local conditions. -/
   selmerH1Perp : Type u → Type w
+  /-- Local degree-zero cohomology at a place. -/
   localH0 : Place → Type u → Type w
+  /-- Local degree-one cohomology at a place. -/
   localH1 : Place → Type u → Type w
+  /-- Chosen local condition at a place. -/
   localCondition : Place → Type u → Type w
+  /-- Orthogonal local condition at a place. -/
   localConditionPerp : Place → Type u → Type w
+  /-- Localization from global to local degree-one cohomology. -/
   localizationMap : {M : Type u} → H1 M → (place : Place) → localH1 place M
+  /-- Local duality pairing between a module and its Cartier dual. -/
   localPairing : {M : Type u} → [AddCommGroup M] → (place : Place) →
     localH1 place M → localH1 place (CartierDual M mu) → mu
 
