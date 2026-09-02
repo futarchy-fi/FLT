@@ -5,7 +5,7 @@ Authors: Duxing Yang
 -/
 module
 
-public import FLT.KnownIn1980s.PGL2.Defs
+public import FLT.KnownIn1980s.PGL2.BasicDefs
 public import Mathlib.LinearAlgebra.Matrix.Action
 public import Mathlib.FieldTheory.Finite.GaloisField
 public import Mathlib.GroupTheory.SpecificGroups.Alternating
