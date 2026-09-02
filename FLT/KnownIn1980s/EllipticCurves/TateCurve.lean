@@ -484,18 +484,42 @@ theorem WeierstrassCurve.tatePoint_galois (σ : Ω ≃ₐ[k] Ω) (u : Ωˣ) :
       E.tatePoint Ω (Units.map σ.toAlgHom.toRingHom.toMonoidHom u) :=
   sorry
 
+set_option linter.unusedSectionVars false in
 /-- `N`-th roots of unity give `N`-torsion points of `E` under Tate's uniformisation. -/
+@[nolint unusedArguments]
 theorem WeierstrassCurve.tatePoint_mem_torsionBy_of_mem_rootsOfUnity {N : ℕ} {ζ : Ωˣ}
     (hζ : ζ ∈ rootsOfUnity N Ω) :
     E.tatePoint Ω ζ ∈ AddSubgroup.torsionBy (E⁄Ω).Point (N : ℤ) :=
-  sorry
+  by
+    rw [AddSubgroup.torsionBy.nsmul_iff]
+    change N • E.tateEquivSepClosure Ω (Additive.ofMul (↑ζ)) = 0
+    calc
+      _ = E.tateEquivSepClosure Ω (N • Additive.ofMul (↑ζ)) :=
+        ((E.tateEquivSepClosure Ω).toAddMonoidHom.map_nsmul N _).symm
+      _ = E.tateEquivSepClosure Ω 0 := congrArg (E.tateEquivSepClosure Ω) (by
+        change (↑ζ : Ωˣ ⧸ Subgroup.zpowers (E.qUnitSepClosure Ω)) ^ N = 1
+        rw [← QuotientGroup.mk_pow, (mem_rootsOfUnity N ζ).mp hζ]
+        rfl)
+      _ = 0 := (E.tateEquivSepClosure Ω).map_zero
 
+set_option linter.unusedSectionVars false in
 /-- `N`-th roots of the Tate parameter give `N`-torsion points of `E` under Tate's
 uniformisation. -/
+@[nolint unusedArguments]
 theorem WeierstrassCurve.tatePoint_mem_torsionBy_of_pow_eq {N : ℕ} {r : Ωˣ}
     (hr : r ^ N = E.qUnitSepClosure Ω) :
     E.tatePoint Ω r ∈ AddSubgroup.torsionBy (E⁄Ω).Point (N : ℤ) :=
-  sorry
+  by
+    rw [AddSubgroup.torsionBy.nsmul_iff]
+    change N • E.tateEquivSepClosure Ω (Additive.ofMul (↑r)) = 0
+    calc
+      _ = E.tateEquivSepClosure Ω (N • Additive.ofMul (↑r)) :=
+        ((E.tateEquivSepClosure Ω).toAddMonoidHom.map_nsmul N _).symm
+      _ = E.tateEquivSepClosure Ω 0 := congrArg (E.tateEquivSepClosure Ω) (by
+        change (↑r : Ωˣ ⧸ Subgroup.zpowers (E.qUnitSepClosure Ω)) ^ N = 1
+        rw [← QuotientGroup.mk_pow, hr]
+        exact (QuotientGroup.eq_one_iff _).mpr (Subgroup.mem_zpowers _))
+      _ = 0 := (E.tateEquivSepClosure Ω).map_zero
 
 -- `weilPairing` and `tateEquiv`/`tateEquivSepClosure` are all currently `sorry`ed data,
 -- each pinned down mathematically only up to a sign. The following compatibility, due to
