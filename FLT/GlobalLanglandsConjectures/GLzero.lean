@@ -123,18 +123,28 @@ end GL0
 
 namespace GLn
 
+open Manifold
+
+attribute [local instance] Matrix.linftyOpNormedAddCommGroup Matrix.linftyOpNormedSpace
+  Matrix.linftyOpNormedRing Matrix.linftyOpNormedAlgebra
+
 -- Let's write down an inverse
 -- For general n, it will only work for ρ the trivial representation, but we didn't
 -- define the trivial representation yet.
 -- Some of the other fields will work for all n.
+set_option backward.isDefEq.respectTransparency.types false in
 /-- Make an automorphic form for `GLₙ/ℚ` of trivial weight `ρ` from a complex number `z`,
 returning the constant function with value `z`. -/
 def ofComplex (z : ℂ) {n : ℕ} (ρ : Weight n) (hρ : ρ.IsTrivial) :
     AutomorphicFormForGLnOverQ n ρ where
       toFun _ := z
-      is_smooth := sorry
-      is_periodic := sorry
-      is_slowly_increasing := sorry
+      is_smooth := {
+        continuous := by continuity
+        loc_cst y := IsLocallyConstant.const z
+        smooth x := by simp [contMDiff_const]
+      }
+      is_periodic := by simp
+      is_slowly_increasing x := ⟨‖z‖, 0, by simp⟩
       -- is_finite_cod := sorry -- needs a better name
       has_finite_level := sorry -- needs a better name
 
