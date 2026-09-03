@@ -5,6 +5,7 @@ Authors: Kevin Buzzard, Ruben Van de Velde, Pietro Monticone
 -/
 module
 
+public import FLT.GroupScheme.FiniteFlat
 public import FLT.Deformations.RepresentationTheory.AbsoluteGaloisGroup
 public import FLT.Deformations.RepresentationTheory.Etale
 public import Mathlib.LinearAlgebra.Charpoly.Basic
@@ -385,10 +386,7 @@ finite groups so it would be easy to show that they are etale. If this turns out
 we can remove this condition and state the aforementioned result as a sorry.
 -/
 def GaloisRep.HasFlatProlongationAt (ρ : GaloisRep K A M) : Prop :=
-  ∃ (G : Type uK) (_ : CommRing G) (_ : HopfAlgebra 𝒪ᵥ G)
-    (_ : Module.Flat 𝒪ᵥ G) (_ : Module.Finite 𝒪ᵥ G) (_ : Algebra.Etale Kᵥ (Kᵥ ⊗[𝒪ᵥ] G))
-    (f : Additive (Kᵥ ⊗[𝒪ᵥ] G →ₐ[Kᵥ] Kᵥᵃˡᵍ) →+[Γ Kᵥ] (ρ.toLocal v).Space),
-    Function.Bijective f
+  GaloisModule.IsFiniteFlat 𝒪ᵥ Kᵥ (Kᵥᵃˡᵍ) (ρ.toLocal v).Space
 
 /-- A galois rep `ρ : Γ K → Aut_A(M)` is flat at `v` if `A/I ⊗ M` has a flat prolongation at `v`
 for all open ideals `I`. -/
