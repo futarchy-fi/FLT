@@ -194,7 +194,35 @@ instance {G M : Type*} [Monoid G] [Monoid M] [MulDistribMulAction G M] :
   smul_zero g := congrArg Additive.ofMul (smul_one g)
   smul_add g x y := congrArg Additive.ofMul (smul_mul' g x.toMul y.toMul)
 
+instance {G M : Type*} [TopologicalSpace G] [Monoid G] [Monoid M]
+    [MulDistribMulAction G M] [ContinuousSMulDiscrete G M] :
+    ContinuousSMulDiscrete G (Additive M) where
+  isOpen_smul_eq x y := by
+    change IsOpen {g : G | Additive.ofMul (g • x.toMul) = y}
+    convert ContinuousSMulDiscrete.isOpen_smul_eq G x.toMul y.toMul using 1
+    ext g
+    constructor
+    · intro h
+      simpa using congrArg Additive.toMul h
+    · intro h
+      simpa using congrArg Additive.ofMul h
+
 end Additive
+
+/-- A surjective equivariant additive map transports continuity of a discrete group action to its
+target. -/
+lemma ContinuousSMulDiscrete.of_surjective_map
+    {G X Y : Type*} [TopologicalSpace G] [Group G] [ContinuousMul G]
+    [AddMonoid X] [AddMonoid Y]
+    [DistribMulAction G X] [DistribMulAction G Y] [ContinuousSMulDiscrete G X]
+    (f : X →+[G] Y) (hf : Function.Surjective f) : ContinuousSMulDiscrete G Y := by
+  rw [continuousSMulDiscrete_iff_isOpen_stabilizer]
+  intro y
+  obtain ⟨x, rfl⟩ := hf y
+  apply Subgroup.isOpen_mono _ (ContinuousSMulDiscrete.isOpen_stabilizer G x)
+  intro g hg
+  change g • f x = f x
+  rw [← map_smul f g x, hg]
 
 namespace BialgHom
 
@@ -347,6 +375,18 @@ lemma isFiniteFlat_iff : GaloisModule.IsFiniteFlat R K L X ↔
   · rintro ⟨H, _, _, _, _, _, f, hf⟩
     let _ : HopfAlgebra.IsFiniteFlat R H := ⟨⟩
     exact ⟨H, inferInstance, inferInstance, inferInstance, inferInstance, f, hf⟩
+
+/-- The Galois action on a module admitting a finite flat model is continuous for the discrete
+topology. -/
+lemma IsFiniteFlat.continuousSMulDiscrete
+    (hX : GaloisModule.IsFiniteFlat R K L X) :
+    ContinuousSMulDiscrete (L ≃ₐ[K] L) X := by
+  rcases hX with ⟨H, _, _, _, _, f, hf⟩
+  let P : Type u := (K ⊗[R] H →ₐ[K] L)
+  let _ : ContinuousSMulDiscrete (L ≃ₐ[K] L) P := inferInstance
+  let _ : ContinuousSMulDiscrete (L ≃ₐ[K] L) (Additive P) := inferInstance
+  exact ContinuousSMulDiscrete.of_surjective_map
+    (G := L ≃ₐ[K] L) (X := Additive P) (Y := X) f hf.2
 
 /-- Every subsingleton additive Galois module is represented by the trivial finite flat group
 scheme. In particular, this supplies the empty finite product. -/
