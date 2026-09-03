@@ -169,7 +169,7 @@ variable {R A : Type u} [CommRing R] [CommRing A] [HopfAlgebra R A]
 
 /-- A torsion-free quotient by a Hopf ideal remains finite flat over a Dedekind domain. -/
 lemma IsFiniteFlat.quotient [IsDedekindDomain R] (hA : IsFiniteFlat R A)
-    (I : Ideal A) [I.IsTwoSided] [I.IsHopfIdeal R]
+    (I : Ideal A) [I.IsTwoSided]
     [Module.IsTorsionFree R (A ⧸ I)] : IsFiniteFlat R (A ⧸ I) := by
   exact hA.of_surjective (Ideal.Quotient.mkₐ R I) Ideal.Quotient.mk_surjective
 
@@ -177,7 +177,7 @@ lemma IsFiniteFlat.quotient [IsDedekindDomain R] (hA : IsFiniteFlat R A)
 Hopf ideal and the generic quotient is torsion-free. -/
 lemma IsFiniteFlat.quotient_comap [IsDedekindDomain R] (hA : IsFiniteFlat R A)
     {B : Type u} [CommRing B] [Algebra R B] (f : A →ₐ[R] B) (J : Ideal B)
-    [(J.comap f).IsHopfIdeal R] [Module.IsTorsionFree R (B ⧸ J)] :
+    [Module.IsTorsionFree R (B ⧸ J)] :
     IsFiniteFlat R (A ⧸ J.comap f) := by
   let _ : Module.IsTorsionFree R (A ⧸ J.comap f) :=
     Ideal.Quotient.isTorsionFree_comap f J
@@ -191,7 +191,8 @@ namespace Additive
 
 /-- A multiplicative action which preserves multiplication becomes an additive action on the
 additive type synonym. -/
-instance {G M : Type*} [Monoid G] [Monoid M] [MulDistribMulAction G M] :
+instance instDistribMulActionAdditiveOfMulDistribMulActionFLT
+    {G M : Type*} [Monoid G] [Monoid M] [MulDistribMulAction G M] :
     DistribMulAction G (Additive M) where
   smul g x := Additive.ofMul (g • x.toMul)
   one_smul x := congrArg Additive.ofMul (one_smul G x.toMul)
@@ -279,6 +280,7 @@ noncomputable def genericTensorEquiv :
 
 variable (L : Type u) [Field L] [Algebra K L]
 
+/-- Over a commutative target, pairs of algebra maps automatically commute. -/
 def commutingPairEquiv :
     {fg : ((K ⊗[R] H₁ →ₐ[K] L) × (K ⊗[R] H₂ →ₐ[K] L)) //
       ∀ x y, Commute (fg.1 x) (fg.2 y)} ≃
@@ -382,6 +384,7 @@ section
 variable (K L X Y : Type u) [Field K] [Field L] [Algebra K L]
 variable [MulAction (L ≃ₐ[K] L) X] [MulAction (L ≃ₐ[K] L) Y]
 
+/-- The algebra map sending a pure tensor of equivariant functions to their product. -/
 def tensorHom :
     ((X →[L ≃ₐ[K] L] L) ⊗[K] (Y →[L ≃ₐ[K] L] L)) →ₐ[K]
       ((X × Y) →[L ≃ₐ[K] L] L) :=
@@ -470,6 +473,7 @@ lemma tensorHom_bijective (K L X Y : Type u) [Field K] [Field L]
   exact ⟨hinj,
     (LinearMap.injective_iff_surjective_of_finrank_eq_finrank hrank).mp hinj⟩
 
+/-- Equivariant functions on a product as a tensor product of function algebras. -/
 noncomputable def tensorEquiv (K L X Y : Type u) [Field K] [Field L]
     [Algebra K L] [IsGalois K L] [IsSepClosed L]
     [MulAction (L ≃ₐ[K] L) X] [MulAction (L ≃ₐ[K] L) Y]
@@ -498,26 +502,31 @@ variable (K L A : Type u) [Field K] [Field L] [Algebra K L]
 variable [IsGalois K L] [IsSepClosed L]
 variable [AddCommGroup A] [DistribMulAction (L ≃ₐ[K] L) A]
 
+/-- Addition as an equivariant map. -/
 def addHom : A × A →[L ≃ₐ[K] L] A where
   toFun z := z.1 + z.2
   map_smul' g z := by simp
 
+/-- Negation as an equivariant map. -/
 def negHom : A →[L ≃ₐ[K] L] A where
   toFun x := -x
   map_smul' g x := by simp
 
 variable [Finite A] [ContinuousSMulDiscrete (L ≃ₐ[K] L) A]
 
+/-- Comultiplication on the algebra of equivariant functions, induced by addition. -/
 noncomputable def comulAlgHom :
     (A →[L ≃ₐ[K] L] L) →ₐ[K]
       (A →[L ≃ₐ[K] L] L) ⊗[K] (A →[L ≃ₐ[K] L] L) :=
   (tensorEquiv K L A A).symm.toAlgHom.comp
     (MulActionHom.compLeftAlgHom (L ≃ₐ[K] L) K L (addHom K L A))
 
+/-- Antipode on the algebra of equivariant functions, induced by negation. -/
 noncomputable def antipodeAlgHom :
     (A →[L ≃ₐ[K] L] L) →ₐ[K] (A →[L ≃ₐ[K] L] L) :=
   MulActionHom.compLeftAlgHom (L ≃ₐ[K] L) K L (negHom K L A)
 
+/-- Evaluation at zero, with values in the splitting field. -/
 noncomputable def counitToL : (A →[L ≃ₐ[K] L] L) →ₐ[K] L :=
   MulActionHom.evalAlgHom (L ≃ₐ[K] L) K A L 0
 
@@ -528,12 +537,14 @@ lemma counitToL_fixed (f : A →[L ≃ₐ[K] L] L) (g : L ≃ₐ[K] L) :
   change g (f 0) = f 0
   simpa using (map_smul f g (0 : A)).symm
 
+/-- Evaluation at zero, restricted to the fixed field. -/
 noncomputable def counitToBot :
     (A →[L ≃ₐ[K] L] L) →ₐ[K] (⊥ : IntermediateField K L) :=
   (counitToL K L A).codRestrict (⊥ : IntermediateField K L).toSubalgebra
     (fun f ↦ (InfiniteGalois.mem_bot_iff_fixed (counitToL K L A f)).mpr
       (counitToL_fixed K L A f))
 
+/-- The counit on the algebra of equivariant functions. -/
 noncomputable def counitAlgHom :
     (A →[L ≃ₐ[K] L] L) →ₐ[K] K :=
   (IntermediateField.botEquiv K L).toAlgHom.comp (counitToBot K L A)
@@ -575,12 +586,15 @@ variable [AddCommGroup A] [DistribMulAction (L ≃ₐ[K] L) A]
 variable [Finite A] [ContinuousSMulDiscrete (L ≃ₐ[K] L) A]
 
 
+/-- The commutative ring structure on the inner tensor product. -/
 local instance innerCommRing :
     CommRing ((A →[L ≃ₐ[K] L] L) ⊗[K] (A →[L ≃ₐ[K] L] L)) :=
   Algebra.TensorProduct.instCommRing
+/-- The scalar algebra structure on the inner tensor product. -/
 local instance innerAlgebra :
     Algebra K ((A →[L ≃ₐ[K] L] L) ⊗[K] (A →[L ≃ₐ[K] L] L)) :=
   Algebra.TensorProduct.instAlgebra
+/-- The right-associated equivalence for three equivariant-function factors. -/
 noncomputable def tripleEquivRight :
     ((A →[L ≃ₐ[K] L] L) ⊗[K]
       ((A →[L ≃ₐ[K] L] L) ⊗[K] (A →[L ≃ₐ[K] L] L))) ≃ₐ[K]
@@ -747,6 +761,7 @@ lemma lTensorCounitAlgHom :
   exact congrArg (fun g : A →[L ≃ₐ[K] L] L ↦ g x)
     ((Algebra.TensorProduct.rid K K (A →[L ≃ₐ[K] L] L)).apply_symm_apply f).symm
 
+/-- The canonical bialgebra of equivariant functions on a finite Galois module. -/
 @[instance_reducible]
 noncomputable def bialgebra :
     Bialgebra K (A →[L ≃ₐ[K] L] L) :=
@@ -756,6 +771,7 @@ noncomputable def bialgebra :
 
 
 
+/-- The local canonical bialgebra instance on equivariant functions. -/
 noncomputable local instance genericBialgebra :
     Bialgebra K (A →[L ≃ₐ[K] L] L) :=
   bialgebra K L A
@@ -834,6 +850,7 @@ lemma id_mul_antipode :
   change f 0 = algebraMap K L (counitAlgHom K L A f)
   exact (algebraMap_counitAlgHom K L A f).symm
 
+/-- The canonical Hopf algebra of equivariant functions on a finite Galois module. -/
 @[instance_reducible]
 noncomputable def hopfAlgebra :
     HopfAlgebra K (A →[L ≃ₐ[K] L] L) :=
@@ -843,10 +860,12 @@ noncomputable def hopfAlgebra :
 
 
 
+/-- The local convolution monoid on geometric points. -/
 noncomputable local instance pointsMonoid :
     Monoid ((A →[L ≃ₐ[K] L] L) →ₐ[K] L) :=
   instMonoidAlgHom_fLT K L
 
+/-- The Galois action on geometric points, compatible with convolution. -/
 noncomputable local instance pointsMulDistribMulAction :
     MulDistribMulAction (L ≃ₐ[K] L)
       ((A →[L ≃ₐ[K] L] L) →ₐ[K] L) :=
@@ -872,6 +891,7 @@ lemma tensorEquiv_eq_lift_eval
       simp only [tensorEquiv_tmul, Algebra.TensorProduct.lift_tmul,
         MulActionHom.evalAlgHom_apply]
 
+/-- Evaluation identifies group elements with geometric points additively. -/
 noncomputable def evalAddHom :
     A →+[L ≃ₐ[K] L] Additive ((A →[L ≃ₐ[K] L] L) →ₐ[K] L) where
   toFun x := Additive.ofMul (MulActionHom.evalAlgHom (L ≃ₐ[K] L) K A L x)
@@ -907,11 +927,13 @@ lemma evalAddHom_bijective :
       (InfiniteGalois.evalAlgHom_bijective K L A).2 y.toMul
     exact ⟨x, congrArg Additive.ofMul hx⟩
 
+/-- The equivalence between a finite Galois module and its geometric points. -/
 noncomputable def pointsEquiv :
     Additive ((A →[L ≃ₐ[K] L] L) →ₐ[K] L) ≃+ A :=
   (AddEquiv.ofBijective (evalAddHom K L A).toAddMonoidHom
     (evalAddHom_bijective K L A)).symm
 
+/-- The equivariant additive equivalence with the geometric points of the generic fibre. -/
 noncomputable def pointsEquivariantAddEquiv :
     Additive ((A →[L ≃ₐ[K] L] L) →ₐ[K] L) →+[L ≃ₐ[K] L] A where
   toFun := pointsEquiv K L A
@@ -959,6 +981,7 @@ variable [ContinuousSMulDiscrete (L ≃ₐ[K] L) X]
 variable [ContinuousSMulDiscrete (L ≃ₐ[K] L) Y]
 
 
+/-- Pullback of equivariant functions along an equivariant additive map. -/
 def pullbackAlgHom (q : X →+[L ≃ₐ[K] L] Y) :
     (Y →[L ≃ₐ[K] L] L) →ₐ[K] (X →[L ≃ₐ[K] L] L) :=
   MulActionHom.compLeftAlgHom (L ≃ₐ[K] L) K L q.toMulActionHom
@@ -1002,6 +1025,7 @@ lemma tensorEquiv_map_pullbackAlgHom (q : X →+[L ≃ₐ[K] L] Y)
   | add z₁ z₂ hz₁ hz₂ => simpa using congrArg₂ (· + ·) hz₁ hz₂
   | tmul f₁ f₂ => simp [tensorEquiv_tmul, pullbackAlgHom_apply]
 
+/-- Pullback along an equivariant additive map as a coalgebra homomorphism. -/
 noncomputable def pullbackCoalgHom (q : X →+[L ≃ₐ[K] L] Y) :
     (Y →[L ≃ₐ[K] L] L) →ₗc[K] (X →[L ≃ₐ[K] L] L) where
   __ := (pullbackAlgHom K L X Y q).toLinearMap
@@ -1027,6 +1051,7 @@ noncomputable def pullbackCoalgHom (q : X →+[L ≃ₐ[K] L] Y) :
     change f (q x + q x') = f (q (x + x'))
     rw [q.map_add]
 
+/-- Pullback along an equivariant additive map as a bialgebra homomorphism. -/
 noncomputable def pullbackBialgHom (q : X →+[L ≃ₐ[K] L] Y) :
     (Y →[L ≃ₐ[K] L] L) →ₐc[K] (X →[L ≃ₐ[K] L] L) where
   __ := pullbackAlgHom K L X Y q
@@ -1252,6 +1277,7 @@ namespace HopfAlgebra.IntegralClosure
 variable (R K H : Type u) [CommRing R] [Field K] [Algebra R K]
 variable [CommRing H] [Algebra R H] [IsFractionRing R K]
 
+/-- The integral contraction of a subalgebra of the generic fibre. -/
 def contraction (C : Subalgebra K (K ⊗[R] H)) : Subalgebra R H :=
   (C.restrictScalars R).comap Algebra.TensorProduct.includeRight
 
@@ -1269,11 +1295,13 @@ lemma localized_contraction (C : Subalgebra K (K ⊗[R] H)) :
   exact (Submodule.localized'gi K (nonZeroDivisors R)
     (TensorProduct.mk R K H 1)).l_u_eq C.toSubmodule
 
+/-- The canonical algebra map from a contraction into its generic-fibre subalgebra. -/
 def contractionMap (C : Subalgebra K (K ⊗[R] H)) :
     contraction R K H C →ₐ[R] C :=
   (Algebra.TensorProduct.includeRight : H →ₐ[R] K ⊗[R] H).comp
       (contraction R K H C).val |>.codRestrict (C.restrictScalars R) fun x ↦ x.property
 
+/-- Localization identifies a contraction with the original generic-fibre submodule. -/
 noncomputable def localizedContractionEquiv (C : Subalgebra K (K ⊗[R] H)) :
     (contraction R K H C).toSubmodule.localized' K (nonZeroDivisors R)
         (TensorProduct.mk R K H 1) ≃ₗ[K] C.toSubmodule :=
@@ -1293,6 +1321,7 @@ noncomputable instance contractionMap_isLocalized
   exact IsLocalizedModule.of_linearEquiv (nonZeroDivisors R) g
     (e.restrictScalars R)
 
+/-- The canonical base-change map from a contraction to its generic fibre. -/
 noncomputable def baseChangeMap (C : Subalgebra K (K ⊗[R] H)) :
     K ⊗[R] contraction R K H C →ₐ[K] C :=
   Algebra.TensorProduct.liftEquivRight R K (contraction R K H C) C
@@ -1325,6 +1354,7 @@ lemma baseChangeMap_bijective (C : Subalgebra K (K ⊗[R] H)) :
     obtain ⟨x, hx⟩ := e.surjective y
     exact ⟨x, (he' x).trans hx⟩
 
+/-- Base change of a contraction is algebra-equivalent to the original subalgebra. -/
 noncomputable def baseChangeEquiv (C : Subalgebra K (K ⊗[R] H)) :
     K ⊗[R] contraction R K H C ≃ₐ[K] C :=
   AlgEquiv.ofBijective (baseChangeMap R K H C) (baseChangeMap_bijective R K H C)
@@ -1338,6 +1368,7 @@ lemma contraction_finite [IsNoetherianRing R] [Module.Finite R H]
   rw [Module.Finite.iff_fg]
   exact Submodule.FG.of_le Module.Finite.fg_top le_top
 
+/-- The map from the quotient by a contraction to the corresponding generic quotient. -/
 def contractionQuotientMap (C : Subalgebra K (K ⊗[R] H)) :
     Ideal.ModuleQuotient (contraction R K H C).toSubmodule →ₗ[R]
       Ideal.ModuleQuotient C.toSubmodule :=
@@ -1389,6 +1420,7 @@ namespace HopfAlgebra.IntegralClosure
 variable (R K H : Type u) [CommRing R] [Field K] [Algebra R K]
 variable [CommRing H] [Algebra R H] [IsFractionRing R K]
 
+/-- A linear section of the quotient by a finite projective contraction. -/
 noncomputable def quotientSection (C : Subalgebra K (K ⊗[R] H))
     [Module.Projective R H]
     [Module.Projective R
@@ -1409,6 +1441,7 @@ lemma quotientSection_spec (C : Subalgebra K (K ⊗[R] H))
     (contraction R K H C).toSubmodule.mkQ
     (Submodule.mkQ_surjective _)).mp inferInstance
 
+/-- A linear retraction from the ambient algebra onto a projective contraction. -/
 noncomputable def retraction (C : Subalgebra K (K ⊗[R] H))
     [Module.Projective R H]
     [Module.Projective R
@@ -1479,6 +1512,7 @@ namespace HopfAlgebra.IntegralClosure
 variable (R K H : Type u) [CommRing R] [Field K] [Algebra R K]
 variable [CommRing H] [Algebra R H] [IsFractionRing R K]
 
+/-- The base change of the linear retraction onto a contraction. -/
 noncomputable def localizedRetraction (C : Subalgebra K (K ⊗[R] H))
     [Module.Projective R H]
     [Module.Projective R
@@ -1522,6 +1556,7 @@ lemma baseChangeMap_localizedRetraction_val
     exact hC
   exact LinearMap.congr_fun heq c
 
+/-- The base-changed inclusion of a contraction into the ambient algebra. -/
 noncomputable def localizedInclusion (C : Subalgebra K (K ⊗[R] H)) :
     K ⊗[R] contraction R K H C →ₗ[K] K ⊗[R] H :=
   TensorProduct.AlgebraTensorModule.lTensor K K
@@ -1554,6 +1589,7 @@ lemma localizedInclusion_localizedRetraction_val
   rw [localizedInclusion_eq_val_baseChangeMap]
   exact congrArg Subtype.val (baseChangeMap_localizedRetraction_val R K H C c)
 
+/-- Base change commutes with tensor products of algebras. -/
 noncomputable def baseChangeTensorEquiv
     (R K A B : Type u) [CommRing R] [Field K] [Algebra R K]
     [CommRing A] [CommRing B] [Algebra R A] [Algebra R B] :
@@ -1591,6 +1627,7 @@ lemma baseChangeTensorEquiv_naturality
   · intro z₁ z₂ hz₁ hz₂
     simpa only [map_add] using congrArg₂ (· + ·) hz₁ hz₂
 
+/-- A generic-fibre subalgebra closed under comultiplication and antipode. -/
 structure IsGenericHopfSubalgebra
     (R K H : Type u) [CommRing R] [Field K] [Algebra R K]
     [CommRing H] [HopfAlgebra R H]
@@ -1707,7 +1744,7 @@ lemma baseChange_antipode_includeRight
 
 lemma contraction_antipode_mem
     (R K H : Type u) [CommRing R] [Field K] [Algebra R K]
-    [CommRing H] [HopfAlgebra R H] [IsFractionRing R K]
+    [CommRing H] [HopfAlgebra R H]
     (C : Subalgebra K (K ⊗[R] H)) (hC : IsGenericHopfSubalgebra R K H C)
     (d : contraction R K H C) :
     HopfAlgebra.antipode R d.1 ∈ contraction R K H C := by
@@ -1715,6 +1752,7 @@ lemma contraction_antipode_mem
   rw [← baseChange_antipode_includeRight R K H d.1]
   exact hC.antipode_mem (contractionMap R K H C d)
 
+/-- Comultiplication on a generic Hopf subalgebra's integral contraction. -/
 noncomputable def contractionComul
     (R K H : Type u) [CommRing R] [Field K] [Algebra R K]
     [CommRing H] [HopfAlgebra R H] [IsFractionRing R K]
@@ -1772,9 +1810,10 @@ lemma contractionComul_compat
     rfl
   rw [hiri]
 
+/-- Antipode on a generic Hopf subalgebra's integral contraction. -/
 noncomputable def contractionAntipode
     (R K H : Type u) [CommRing R] [Field K] [Algebra R K]
-    [CommRing H] [HopfAlgebra R H] [IsFractionRing R K]
+    [CommRing H] [HopfAlgebra R H]
     (C : Subalgebra K (K ⊗[R] H)) (hC : IsGenericHopfSubalgebra R K H C) :
     contraction R K H C →ₗ[R] contraction R K H C :=
   { toFun := fun d ↦ ⟨HopfAlgebra.antipode R d.1,
@@ -1784,6 +1823,7 @@ noncomputable def contractionAntipode
 
 namespace Coalgebra
 
+/-- Transport a coalgebra structure across a split injective linear map. -/
 @[instance_reducible]
 noncomputable def ofInjective
     (R M N : Type u) [CommRing R] [AddCommGroup M] [Module R M]
@@ -1880,6 +1920,7 @@ noncomputable def ofInjective
 
 end Coalgebra
 
+/-- The coalgebra structure inherited by a generic Hopf subalgebra's contraction. -/
 @[instance_reducible]
 noncomputable def contractionCoalgebra
     (R K H : Type u) [CommRing R] [Field K] [Algebra R K]
@@ -1906,6 +1947,7 @@ noncomputable def contractionCoalgebra
     exact contractionComul_compat R K H C hC d
   · rfl
 
+/-- The bialgebra structure inherited by a generic Hopf subalgebra's contraction. -/
 @[instance_reducible]
 noncomputable def contractionBialgebra
     (R K H : Type u) [CommRing R] [Field K] [Algebra R K]
@@ -1957,7 +1999,7 @@ noncomputable def contractionBialgebra
 
 lemma val_mul_contractionAntipode_rTensor
     (R K H : Type u) [CommRing R] [Field K] [Algebra R K]
-    [CommRing H] [HopfAlgebra R H] [IsFractionRing R K]
+    [CommRing H] [HopfAlgebra R H]
     (C : Subalgebra K (K ⊗[R] H)) (hC : IsGenericHopfSubalgebra R K H C)
     (z : contraction R K H C ⊗[R] contraction R K H C) :
     ((LinearMap.mul' R (contraction R K H C))
@@ -1978,7 +2020,7 @@ lemma val_mul_contractionAntipode_rTensor
 
 lemma val_mul_contractionAntipode_lTensor
     (R K H : Type u) [CommRing R] [Field K] [Algebra R K]
-    [CommRing H] [HopfAlgebra R H] [IsFractionRing R K]
+    [CommRing H] [HopfAlgebra R H]
     (C : Subalgebra K (K ⊗[R] H)) (hC : IsGenericHopfSubalgebra R K H C)
     (z : contraction R K H C ⊗[R] contraction R K H C) :
     ((LinearMap.mul' R (contraction R K H C))
@@ -1997,6 +2039,7 @@ lemma val_mul_contractionAntipode_lTensor
     rw [map_add, map_add]
     exact congrArg₂ (· + ·) hx hy
 
+/-- The Hopf algebra structure inherited by a generic Hopf subalgebra's contraction. -/
 @[instance_reducible]
 noncomputable def contractionHopfAlgebra
     (R K H : Type u) [CommRing R] [Field K] [Algebra R K]
@@ -2094,6 +2137,7 @@ lemma antipode_comp {R A B : Type u} [CommSemiring R]
         algHom_comp_convOne f.toAlgHom
   exact congrArg ofConv (left_inv_eq_right_inv huv hvw)
 
+/-- Lift an algebra factorization to a bialgebra homomorphism through an injective target map. -/
 noncomputable def factorOfInjective {K A B C : Type u} [Field K]
     [CommRing A] [CommRing B] [CommRing C]
     [Bialgebra K A] [Bialgebra K B] [Bialgebra K C]
@@ -2178,25 +2222,30 @@ variable [IsGalois K L] [IsSepClosed L]
 variable [CommRing G] [HopfAlgebra K G] [Algebra.Etale K G]
 variable [AddCommGroup X] [DistribMulAction (L ≃ₐ[K] L) X]
 
+/-- The local convolution monoid on the geometric points of a generic fibre. -/
 noncomputable local instance genericPointsMonoid : Monoid (G →ₐ[K] L) :=
   instMonoidAlgHom_fLT K L
 
+/-- The Galois action on generic-fibre points, compatible with convolution. -/
 noncomputable local instance genericPointsMulDistribMulAction :
     MulDistribMulAction (L ≃ₐ[K] L) (G →ₐ[K] L) :=
   instMulDistribMulActionAlgEquivAlgHom_fLT K L
 
+/-- Forget the additive synonym in an equivariant map from generic-fibre points. -/
 noncomputable def forwardPointsMulActionHom
     (f : Additive (G →ₐ[K] L) →+[L ≃ₐ[K] L] X) :
     (G →ₐ[K] L) →[L ≃ₐ[K] L] X where
   toFun p := f (Additive.ofMul p)
   map_smul' σ p := f.map_smul σ (Additive.ofMul p)
 
+/-- Evaluation realizes an etale Hopf algebra as functions on its geometric points. -/
 noncomputable def genericEvalAlgEquiv :
     G ≃ₐ[K] ((G →ₐ[K] L) →[L ≃ₐ[K] L] L) :=
   AlgEquiv.ofBijective
     (AlgHom.evalMulActionHom (L ≃ₐ[K] L) K G L)
     (InfiniteGalois.evalMulActionHom_bijective_of_isSepClosed K L G)
 
+/-- The function-algebra embedding induced by a map from generic-fibre points. -/
 noncomputable def canonicalEmbeddingAlgHom
     (g : Additive (G →ₐ[K] L) →+[L ≃ₐ[K] L] X) :
     (X →[L ≃ₐ[K] L] L) →ₐ[K] G :=
@@ -2258,6 +2307,7 @@ lemma tensorEquiv_map_reindexPoints
   | add z₁ z₂ hz₁ hz₂ => simpa using congrArg₂ (· + ·) hz₁ hz₂
   | tmul a b => rfl
 
+/-- The canonical function-algebra embedding as a coalgebra homomorphism. -/
 noncomputable def canonicalEmbeddingCoalgHom
     [Module.Finite K G] [Finite X]
     [ContinuousSMulDiscrete (L ≃ₐ[K] L) X]
@@ -2327,6 +2377,7 @@ noncomputable def canonicalEmbeddingCoalgHom
     rw [show Additive.ofMul (p * q) =
       Additive.ofMul p + Additive.ofMul q from rfl, g.map_add]
 
+/-- The canonical function-algebra embedding as a bialgebra homomorphism. -/
 noncomputable def canonicalEmbeddingBialgHom
     [Module.Finite K G] [Finite X]
     [ContinuousSMulDiscrete (L ≃ₐ[K] L) X]
