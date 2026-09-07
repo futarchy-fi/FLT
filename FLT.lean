@@ -227,7 +227,11 @@ public import FLT.NumberField.InfinitePlace.Extension
 public import FLT.NumberField.Padics.RestrictedProduct
 public import FLT.NumberField.ZetaFE.ZeroTheoryN2
 public import FLT.Odlyzko
+public import FLT.Odlyzko.AdmissibleAutocorrelation
+public import FLT.Odlyzko.Autocorrelation
+public import FLT.Odlyzko.AutocorrelationNonnegative
 public import FLT.Odlyzko.ExplicitFormula
+public import FLT.Odlyzko.Interval.Rat
 public import FLT.Patching.Algebra
 public import FLT.Patching.Module
 public import FLT.Patching.Over
