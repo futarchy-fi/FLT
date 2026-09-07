@@ -145,7 +145,27 @@ final theorem. "Owner" = hub that proves it; CBC consumes unless marked.
 | D-5 | Spectral comparison ⇒ existence of `BC_{E/F}(π)` with expected Satake data, level bound, cuspidality dichotomy; strong multiplicity one for GL₂ and inner forms (mult-one part owned by JL). | CBC (mult one: JL) | XL (mult one M/L) | S3, S4, level-bound clause | Langlands 1980 main theorem; Jacquet–Shalika (literature-verify) |
 | D-6 | Descent/image theorem proof: σ-invariant cuspidal `Π` descends; fiber = `Gal(E/F)`-character torsor; Eisenstein edge case excluded/handled. | CBC | L | S4 | Langlands 1980 descent chapters (literature-verify) |
 | D-7 | AI-quad proof: theta-series/Weil-representation or converse-theorem construction of `AI_{K/F}(χ)` with local compatibility. Independent of the trace-formula stack. | CBC (consumed by hub-lsb1u.9) | L–XL | S6 | Hecke 1926; Jacquet–Langlands ch. 12; Arthur–Clozel 1989 |
-| D-8 | Tower preservation: irreducibility of restriction, flatness at `v∣p`, tame rank-one at `S`, and linear disjointness survive each prime-cyclic stage of the chosen chief series. | CBC | M | S5 | Skinner–Wiles (exact tower: literature-verify); panel Q2 |
+| D-8E | Admissible-tower existence: choose a prime-cyclic tower from `F` to `E` on which every intermediate restriction satisfies the hypotheses needed by the next S3/S4 step. | CBC | M | S5 | finite-solvable chief series plus the stability inputs isolated in D-8P; panel Q2 |
+| D-8P | Tower preservation: irreducibility of restriction, flatness at `v∣p`, tame rank-one at `S`, and linear disjointness survive each prime-cyclic stage of the chosen tower. | CBC | M | S5, D-8E | Skinner–Wiles (exact tower: literature-verify); panel Q2 |
+
+### 4.1 S5 tower-existence statement and adversarial check
+
+The missing S5 node is now explicit.  For a finite solvable Galois extension `E/F`, it asks
+for a tower
+
+`F = F₀ ⊂ F₁ ⊂ ... ⊂ Fₙ = E`
+
+such that every `Fᵢ₊₁/Fᵢ` is Galois of prime-cyclic degree and, at every stage, the restricted
+representation remains irreducible, admits the required finite-flat integral model at primes
+above `p`, has the rank-one tame quotient at the pulled-back set `Sᵢ`, and preserves the stated
+linear-disjointness condition.  These are the exact inputs needed to apply S3/S4 successively.
+
+**Panel check: accepted only with D-8P explicit.** Solvability alone produces a chief series,
+but says nothing about the arithmetic predicates on its intermediate fields.  Consequently the
+unqualified implication “solvable + endpoint hypotheses ⇒ admissible tower” is not frozen.  S5
+may be stated conditionally using an admissible-tower witness now; deriving that witness from the
+endpoint hypotheses remains the separate D-8P proof.  This prevents the group-theoretic chief-
+series lemma from silently assuming the load-bearing arithmetic preservation.
 
 ## 5. Merged inventory (with confidence)
 
@@ -160,17 +180,17 @@ Statement layer (deliverable now):
 | S2 | Norm map on unramified Satake parameters, `α_w = α_v^{f(w/v)}`. | S | high | P1-4(slim) ∩ P2-N2 |
 | S3 | CBC-existence statement: prime-cyclic totally-real `E/F`, weight-2 trivial-central-character `π`; `BC(π)` exists with norm-Satake compatibility at mutually unramified places, **level dividing the pullback `S_E` / unramified where `π` and `E/F` are** (D3 bound), cuspidal unless `π` induced from a character of `E`. | S–M | high | P1-8/9 ∩ P2-N3 |
 | S4 | CBC-descent statement: σ-invariant cuspidal weight-2 `Π` is in the image; fiber a torsor under `Gal(E/F)^` characters; presupposes strong mult one (imported, hub-lsb1u.4). | S–M | high | P1-10/11 ∩ P2-N4/N7 |
-| S5 | Solvable-from-prime-cyclic gluing, deriving the formal `cyclic_base_change` interface (`Automorphic.lean:127-184`) from S3+S4; Mathlib has the group theory. Hypothesis-preservation deferred to D-8. | S (+D-8) | high | P1-12 ∩ P2-N10 |
+| S5 | Solvable-from-prime-cyclic gluing, deriving the formal `cyclic_base_change` interface (`Automorphic.lean:127-184`) from S3+S4; Mathlib has the group theory. The admissible-tower witness and its arithmetic preservation are D-8E/D-8P. | S (+D-8E/D-8P) | high | P1-12 ∩ P2-N10 |
 | S6 | AI-quad statement: `GL₁(K) → GL₂(F)`, `K/F` quadratic totally imaginary, algebraic Hecke character ⇒ weight-2 cuspidal `π` with expected Satake parameters and central character. | M | high | P1-13/14 ∩ P2-N9 |
 | S7 | Skinner–Wiles CFT trick edge (`Skinner_Wiles_CFT_trick`, `chtopbestiary.tex:91-97`): solvable `L/K` with prescribed local extensions, linearly disjoint from `K^avoid`. Owned by CFT hub-lsb1u.10; CBC consumes. | M (given GCFT) | high | P1-17 ∩ P2-N11 |
 | S8 | Galois-compatibility edge: `ρ_{BC(π)} ≅ ρ_π|_{G_E}` via Chebotarev + `compatible_family` uniqueness; JL conjugation of the statement between GL₂ and the quaternion algebra. Owned jointly with hubs lsb1u.9 / lsb1u.4. | M | high | P1-15/16 ∩ P2-N8/N12 |
 
-Proof layer: ledger entries D-1 … D-8 (§4); confidence high on their necessity,
+Proof layer: ledger entries D-1 … D-7 and D-8E/D-8P (§4); confidence high on their necessity,
 medium on internal sizing (all analytic references literature-verify).
 
-**Merged count: 14 nodes** (8 statement + 6 net new deferred obligations; D-7,
-D-8 shadow S6, S5). Reconciles pass 1's 17 (its nodes 2/5/6/7 collapse into
-D-3/D-4; 3→D-1; 4→D-2 + S2; 8/9→S3+D-5; 10/11→S4+D-5/6; 12→S5+D-8; 13/14→S6+D-7;
+**Merged count: 15 nodes** (the prior 14 plus the separately visible D-8E existence node; D-7
+and D-8E/D-8P remain attached to S6/S5). Reconciles pass 1's 17 (its nodes 2/5/6/7 collapse into
+D-3/D-4; 3→D-1; 4→D-2 + S2; 8/9→S3+D-5; 10/11→S4+D-5/6; 12→S5+D-8E/D-8P; 13/14→S6+D-7;
 15/16→S8; 17→S7; 1→S1) and pass 2's 12 (N1–N4, N9–N12 → S1–S8; N5→D-2;
 N6→D-3/D-4/D-5; N7/N8 → imported into S4/S8 with proofs in D-5/JL).
 
@@ -180,7 +200,7 @@ N6→D-3/D-4/D-5; N7/N8 → imported into S4/S8 with proofs in D-5/JL).
    `S_E`" the right slim clause for `ch04overview.tex:75-77` bookkeeping, or
    does the eventual Lean proof of the lifting theorem need exact conductor
    control at `w ∣ S` (which would drag Shintani/D-2 back into the statement)?
-2. **Q2 (tower preservation, from D5/D-8).** In the intended Skinner–Wiles
+2. **Q2 (tower preservation, from D5/D-8E/D-8P).** In the intended Skinner–Wiles
    tower, do irreducibility-after-restriction, flatness at `v ∣ p`, and the
    tame rank-one condition at `S` demonstrably survive each prime-cyclic stage
    — and does any stage need `E/F` unramified at `p` as an extra hypothesis the

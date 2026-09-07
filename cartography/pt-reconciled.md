@@ -81,7 +81,7 @@ evidence checked (high), single-pass or literature-verify only (medium).
 
 | # | Node | Refs | Size | In descoped package? | Confidence |
 |---|---|---|---|---|---|
-| 1 | Continuous cohomology of profinite groups; discrete-comparison over finite quotients | NSW 1.2/1.5; Mathlib `ContCohomology` TODO | M | yes (blocks everything) | high |
+| 1 | Continuous cohomology of profinite groups; discrete-comparison over finite quotients | NSW 1.2/1.5; Mathlib `ContCohomology` TODO; FLT bespoke layer | L | yes (blocks everything) | high |
 | 2 | Cup product on continuous cohomology | NSW 1.4; FLT `CupProduct.lean` | S (residual) | yes | high |
 | 3 | LES, inflation–restriction, Shapiro (continuous) | NSW 1.3/1.6 | M | yes | high |
 | 4 | Local: H¹_nr and finiteness of Hⁱ(G_{K_v},M) | NSW 7.1.8; Serre II.5; = `local_galois_coh_finite` | M | yes | high |
@@ -97,18 +97,30 @@ evidence checked (high), single-pass or literature-verify only (medium).
 | 13 | **Greenberg–Wiles order formula** (Selmer/dual-Selmer) | NSW 8.7.9; Wiles Prop 1.6; DDT §2 | M (given 7,8,11′,12,14) | yes — the workhorse | high |
 | 14 | Selmer group of local conditions L; dual conditions L^⊥ | NSW 8.7.8 | S/M | yes (needed even to state 13) | high |
 | D1 | fppf/finite-flat local-condition bridge at v∣p (Cartier-dual compatible) | Milne ADT III; pass 1 node 7 | XL | **deferred** → Mazur D6a discharge / ch03 flat conditions | medium |
-| D2 | Local-global reciprocity compatibility (sum of invariants; class-formation cut "(G_S,C_S) is a class formation", NSW 8.1) | NSW Ch. 3-6, 8 | absorbed into CFT boundary + 10/11′ | boundary spec | high |
+| D2 | Local-global reciprocity compatibility (sum of invariants; class-formation cut "(G_S,C_S) is a class formation", NSW Prop. 8.3.9) | NSW Ch. 3-6, 8 | absorbed into CFT boundary + 10/11′ | boundary spec | high |
 
 Merged count: **16 nodes** (14 spine incl. 11′ replacing 11, + 2 deferred/boundary), of
 which **12 are in the descoped weakest package** (1-5, 7-9, 10-defs, 11′, 12, 13, 14; node 6
 imported from CFT).
+
+### 3.1 R2 regrade: bespoke continuous/profinite layer
+
+Node 1 is **L**, not M.  The checkout contains 240 lines of FLT-local quotient/cochain API in
+`FLT/Mathlib/RepresentationTheory/Homological/ContCohomology/Basic.lean`, on top of Mathlib's
+continuous-cohomology resolution, and another 584 sorry-free lines of cup-product machinery.
+That is real substrate, but neither layer supplies the required comparison with the filtered
+colimit of cohomology over finite quotients.  The remaining work must prove factorization of
+continuous cochains through finite quotients, compatibility of differentials and transition
+maps, and exactness/quotient-topology compatibility for the colimit.  Its maintenance surface
+is FLT-local and load-bearing for nodes 3--8.  The existing substrate keeps the estimate below
+XL; the absent finite-quotient comparison and bespoke maintenance cost rule out M.
 
 ## 4. Panel questions
 
 1. **Descope ratification:** confirm the bead deliverable excludes full NSW 8.6.10 and Sha
    duality (consumer-free per both passes), targeting middle-exactness + Greenberg–Wiles.
    Does anyone speak for Mathlib wanting the general topologized theorem now?
-2. **CFT interface contract:** is the cut "(G_S, C_S) is a class formation" (NSW 8.1) the
+2. **CFT interface contract:** is the cut "(G_S, C_S) is a class formation" (NSW Prop. 8.3.9) the
    agreed export surface of hub-lsb1u.9, or does that bead export only inv_v + reciprocity,
    leaving class-formation packaging to PT? Timeline coupling to the Lubin–Tate local CFT
    effort is one-directional and tight.
