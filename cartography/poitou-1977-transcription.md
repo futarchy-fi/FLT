@@ -1,7 +1,7 @@
 # Poitou 1977 — the PQ1 artifact, fetched and transcribed
 
-**Author:** fermat (crew-18), 2026-08-16T14:33Z. **Resolves PQ1 in part** — see §5 for the
-part that remains open.
+**Author:** fermat (crew-18), 2026-08-16T14:33Z. **PQ1 completed 2026-09-07** — the
+display equations and Tartar definitions are transcribed in §7.
 
 ## 1. Provenance
 
@@ -98,14 +98,14 @@ Monotonicity in the table is also direct empirical support for node **S1**
 (`odlyzko-endgame-decomposition.md` §5), whose whole content is that a fixed-`y` bound is
 nondecreasing in `n`. The published values behave exactly as S1 asserts.
 
-## 5. What is still open — PQ1 is resolved *in part*
+## 5. Historical status before the 2026-09-07 completion
 
 **Resolved:** the artifact exists, is fetchable without credentials, is staged locally, and
 its numerical content — the table, the n = 8 worked example, the optimizing `y` for that
 case, and the equation-numbering structure — is transcribed above and internally
 cross-checked.
 
-**Not resolved: the displayed equations (19)–(26) are still not transcribed.** They are
+At that stage, the displayed equations (19)–(26) had not yet been transcribed. They are
 typeset formulas rendered as images in the scan, and the OCR text layer captured only the
 prose *between* them. What the text layer does establish is their role, which is worth
 recording because it constrains node R3:
@@ -121,18 +121,13 @@ recording because it constrains node R3:
 - **(26)** the final inequality, valid for every positive `y`, optimized at the minimum;
 - **(13)** the base inequality that (26) re-expresses.
 
-**To finish PQ1, someone needs to read pages 14–17 as images and transcribe the display
-formulas.** I could not: `pdftoppm`/`poppler-utils` is absent from this pod and I lack the
-privileges to install it (`pip install --break-system-packages pypdf` worked, which is how
-the text layer was extracted; the system package did not). Any worker with poppler, or any
-agent that can view the PDF pages, closes this in one session. **That is now the single
-remaining blocker on nodes Q3′, R3 and — downstream of R3 — R4 through R7.**
+That historical blocker is resolved in §7: pages 14–17 were rendered at 300 dpi, visually
+checked, and the display formulas were transcribed and numerically cross-checked. PQ1 is
+therefore complete, and Q3′ and R3 may now proceed from the recorded formulas.
 
-Node **Q3** (Tartar's `g` and `F ≥ 0`) remains gated the same way: the paper's definition of
-the auxiliary function is in the display formulas, not the prose. Keep Q3 stated over an
-abstract `g` with its two properties as hypotheses, exactly as
-`odlyzko-endgame-decomposition.md` §3 already specifies, and instantiate in Q3′ once the
-transcription lands.
+Node **Q3** (Tartar's `g` and `F ≥ 0`) was initially kept abstract because the paper's
+definition of the auxiliary function occurs in the display formulas, not the prose. The
+concrete definitions needed for Q3′ are now recorded in §7.
 
 ## 6. Provenance discipline
 
@@ -147,3 +142,215 @@ gated on these values. Two guards:
    stands, and §4a's 12.8% margin is what makes it cheap to obey: **do not trust the printed
    digits, re-derive with slack.** The table's role is to tell us the answer is comfortably
    true, not to be cited as the proof.
+
+## 7. PQ1 completion — display equations and Tartar data
+
+This section was transcribed directly from 300 dpi renders of PDF pages 13–17
+(manuscript pages 6-12 through 6-16). Decimal commas in the scan are written as decimal
+points below. Hyperbolic `sh`, `ch` and `arc tg` are written `sinh`, `cosh` and `arctan`.
+No unclear digit or symbol remained in the requested displays.
+
+### 7.1 Base inequality — equation (13), manuscript p. 6-11
+
+For `y > 0`, Poitou substitutes `f(x sqrt(y))` in the unconditional inequality and obtains
+
+```math
+\frac1n\log|d| \ge \gamma+\log(4\pi)+\frac{r_1}{n}
+ -\int_0^\infty \{1-f(x\sqrt y)\}\,h(x)\,dx
+ -\frac4n\int_0^\infty f(x\sqrt y)\,dx, \tag{13}
+```
+
+where
+
+```math
+h(x)=\frac1{\sinh x}+\frac{r_1}{n}\frac1{2\cosh^2(x/2)}
+     =\frac{k(x)}{\cosh(x/2)}.
+```
+
+The scaling identity used immediately below (13) is
+
+```math
+\int_0^\infty f(x\sqrt y)\,dx=\frac1{\sqrt y}\int_0^\infty f(x)\,dx.
+```
+
+### 7.2 Tartar auxiliary function and the closed-form bound (16), manuscript p. 6-13
+
+Poitou records Tartar's construction as follows. Start with
+
+```math
+v(t)=\max(1-t^2,0), \qquad
+g(x)=\frac1{2\pi}\int_{-\infty}^{\infty}v(t)e^{-ixt}\,dt
+    =\frac{2}{\pi x^3}(\sin x-x\cos x),
+```
+
+and put `f(x)=g(x)^2`. For the normalization `f(0)=1` used in the numerical series, this is
+
+```math
+f(x)=\left\{\frac3{x^3}(\sin x-x\cos x)\right\}^2.
+```
+
+Equivalently, if `w=v*v`, then for `0 <= u <= 2`,
+
+```math
+w(u)=-\frac1{30}(u^5-20u^3+40u^2-32), \qquad
+f(x)=\frac9{16}\int_{-\infty}^{\infty}w(u)e^{-iux}\,du.
+```
+
+The construction has `B(f)=18\pi^2/125`. The resulting rounded inequalities are
+
+```math
+\frac1n\log|d|\ge \gamma+\log(4\pi)+1-8.317302\,n^{-2/3}
+\quad (r_1=n),
+```
+
+```math
+\frac1n\log|d|\ge \gamma+\log(4\pi)-6.860404\,n^{-2/3}
+\quad (r_1=0). \tag{16}
+```
+
+### 7.3 Integral and Taylor series — equations (17), (19) and (21)
+
+The quantity to estimate is
+
+```math
+\int_0^\infty \{1-f(x\sqrt y)\}\,h(x)\,dx. \tag{17}
+```
+
+Using
+
+```math
+\int_0^\infty x^k h(x)\,dx
+ =2k!\left\{\lambda(k+1)+\frac{r_1}{n}\eta(k)\right\},
+```
+
+with
+
+```math
+\lambda(k)=1+3^{-k}+5^{-k}+\cdots=(1-2^{-k})\zeta(k),
+```
+
+```math
+\eta(k)=1-2^{-k}+3^{-k}-4^{-k}+\cdots=(1-2^{1-k})\zeta(k),
+```
+
+Poitou obtains the alternating series
+
+```math
+2y|f''(0)|\left\{\lambda(3)+\frac{r_1}{n}\eta(2)\right\}
++\cdots
++(-1)^{k+1}2y^k|f^{(2k)}(0)|
+ \left\{\lambda(2k+1)+\frac{r_1}{n}\eta(2k)\right\}
++\cdots . \tag{19}
+```
+
+For the normalized Tartar function, the even derivatives are
+
+```math
+(-1)^k f^{(2k)}(0)
+=\frac{9\,2^{2k+3}}{(2k+1)(2k+3)(2k+4)(2k+6)}. \tag{20}
+```
+
+The approximate optimal scaling used for large degrees satisfies
+
+```math
+y^{3/2}\bigl(n\lambda(3)+r_1\eta(2)\bigr)=\frac{3\pi}{2}. \tag{21}
+```
+
+Poitou notes this small-`y` regime is relevant when
+`n lambda(3) + r1 eta(2) >= 12 pi`.
+
+### 7.4 The auxiliary function `L` — equations (22) and (23), manuscript p. 6-15
+
+The simpler alternating series is
+
+```math
+L(y)=2y|f''(0)|+\cdots+(-1)^{k+1}2y^k|f^{(2k)}(0)|+\cdots, \tag{22}
+```
+
+or, after inserting (20),
+
+```math
+L(y)=\frac45y-\frac{144}{175}y^2+\cdots
++(-1)^{k+1}y^k
+ \frac{9\,2^{2k+4}}{(2k+1)(2k+3)(2k+4)(2k+6)}+\cdots.
+```
+
+For values of `y` where the series is inconvenient, the equivalent closed form is
+
+```math
+L(y)=-\frac3{20y^2}+\frac{33}{10y}+2
++\left(\frac3{80y^3}+\frac3{4y^2}\right)\log(1+4y)
+-\left(\frac3y+\frac{12}{5}\right)\frac1{\sqrt y}\arctan(2\sqrt y). \tag{23}
+```
+
+The series (22) converges for `|y| < 1/4`; (23) is the practical form for larger positive
+`y`.
+
+### 7.5 `L_1`, the totally imaginary truncation and equation (25)
+
+The exact series definition preceding the practical bound is
+
+```math
+L_1(y)=L(y)+\frac13L\!\left(\frac{y}{3^2}\right)
+ +\frac15L\!\left(\frac{y}{5^2}\right)+\cdots
+ +\frac{r_1}{n}\left\{L(y)-L\!\left(\frac{y}{2^2}\right)
+ +L\!\left(\frac{y}{3^2}\right)-\cdots\right\}. \tag{24}
+```
+
+In the campaign's totally imaginary case `r_1=0`, Poitou gives
+
+```math
+\begin{aligned}
+L_1(y) <{}& L(y)+\frac13L(y/9)+\frac15L(y/25) \\
+&+\frac45y\left(\lambda(3)-1-3^{-3}-5^{-3}\right)\\
+&-\frac{144}{175}y^2\left(\lambda(5)-1-3^{-5}-5^{-5}\right)\\
+&+\frac{128}{105}y^3\left(\lambda(7)-1-3^{-7}-5^{-7}\right)\\
+<{}& L(y)+\frac13L(y/9)+\frac15L(y/25)\\
+&+0.006762754\,\frac45y
+-0.000088536\,\frac{144}{175}y^2
++0.000001502\,\frac{128}{105}y^3 .
+\end{aligned} \tag{25}
+```
+
+The stated loss in this bound is of order
+
+```math
+0.55\times10^{-7}y^4.
+```
+
+### 7.6 Final inequality — equation (26), manuscript p. 6-15
+
+Substitution into (13) yields, for every `y > 0`,
+
+```math
+\frac1n\log|d|\ge
+\gamma+\log(4\pi)+\frac{r_1}{n}
+-\frac{12\pi}{5n\sqrt y}-L_1(y). \tag{26}
+```
+
+At fixed `y` and `r_1=0`, `L_1(y)` is independent of `n`, and the only remaining
+degree-dependent term is `-12 pi/(5 n sqrt(y))`. This is the source-level justification for
+the fixed-`y` monotonicity packet.
+
+### 7.7 Required internal consistency check
+
+For the worked example `n=8`, `r_1=0`, `y=1.7242`, the paper obtains from (23) and (25)
+
+```text
+L(y)       < 0.5945682
+(1/3)L(y/9)  < 0.0431595
+(1/5)L(y/25) < 0.0103233
+L1(y)      < 0.6571721
+```
+
+Using the last bound in (26),
+
+```text
+gamma + log(4*pi) - 12*pi/(5*8*sqrt(1.7242)) - 0.6571721
+  = 1.73331102615303...
+
+exp(1.73331102615303...) = 5.65936121413802...
+```
+
+Thus `(1/8) log|d| > 1.733311` and `|d|^(1/8) > 5.65936`, matching the table value
+`5.659362` up to its printed rounding. This completes the PQ1 correctness gate.
