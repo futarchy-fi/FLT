@@ -22,7 +22,9 @@ namespace Odlyzko.Interval
 
 /-- A nonempty closed interval with rational endpoints. -/
 structure RatIvl where
+  /-- Rational lower endpoint. -/
   lo : ℚ
+  /-- Rational upper endpoint. -/
   hi : ℚ
   lo_le_hi : lo ≤ hi
 
