@@ -114,7 +114,7 @@ literature-verify.
 | 6 | Local Galois cohomology quartet for MLT: statements with explicit maps | chtopbestiary.tex:38-77; ch04overview.tex:68-69 | M–L state / L prove | yes (statement); proof = PT bead | high |
 | 7 | **CFT export: local inv_v: H²(G_{K_v}, μ) ≅ ℚ/ℤ** (black box to PT bead) | pt-reconciled node 6; chtopbestiary.tex:52-58 | XL prove / S interface | boundary export | high |
 | 8 | **CFT-owned export: global reciprocity / Σ inv_v = 0 (class-formation cut)** | pt-reconciled node D2; NSW Prop. 8.3.9 (global `G_S,C_S`; full idèle class formation: 8.1.22) | XL prove / S interface | boundary export | high |
-| 9 | Poitou–Tate: descoped to middle-exactness + Greenberg–Wiles, owned by PT bead | pt-reconciled §2.3, nodes 11′/13 | L (there) | cross-bead, not this bead | high |
+| 9 | Poitou–Tate: consumer-facing interface is middle-exactness + Greenberg–Wiles; proving its Euler input still uses full global duality | pt-reconciled §2.3, nodes 11/11′/12/13 | XL closure (there) | cross-bead, not this bead | high |
 | 10 | GL(1) reciprocity for automorphic induction (state; likely `knownin1980s` with the induction theorem) | chtopbestiary.tex:213-214; ch04overview.tex:31 | S axiom / XL prove | deferred until potential-modularity expands | medium |
 | 11 | Local reciprocity K^× ≅ W_K^ab (Lubin–Tate route) | chtopbestiary.tex:24-29 | XL — outsourced | no | high |
 | 12 | Global reciprocity π₀(𝔸_N^×/N^×) ≅ G_N^ab + existence theorem | chtopbestiary.tex:83-86 | XL | no (only 5 and 10 consume it; both axiomatizable) | high |
@@ -129,6 +129,10 @@ critical path (1, 3, 4, 6, plus export spec 7/8), 2 are done (2, 13), and 2 are 
 
 ## 4. External-repo question (audit bead hub-lsb1u.9.3)
 
+**Audit completed 2026-09-07:** see `cartography/cft-port-audit.md`.  Neither
+repository currently discharges an FLT consumer seam.  The entries below are
+watch candidates for future statement-level ports, not available proof imports.
+
 Two in-flight external formalizations exist (audited in bead hub-lsb1u.9.3; pass 2 §4
 independently URL-verified 2026-08-14):
 
@@ -139,23 +143,24 @@ independently URL-verified 2026-08-14):
   Lubin–Tate; steady Mathlib upstreaming ("PR'ed files" dir; CPP 2024 DVR/local-fields
   foundation already landed). Referenced by the blueprint itself at chtopbestiary.tex:29.
 
-**Port-candidate marking of merged nodes** (deliverable plausibly arrives from the external
-pipeline rather than being built in FLT):
+**Watch-candidate marking of merged nodes** (a deliverable may eventually arrive from the
+external pipeline, but the audited public roots do not contain it today):
 
-| Node | Port candidate? | Source |
+| Node | Status | Source |
 |---|---|---|
-| 7 (local inv_v) | **yes** | ClassFieldTheory (cohomological local CFT) |
-| 8 (reciprocity / class formation) | **yes** | ClassFieldTheory (global track) |
-| 11 (local reciprocity, Lubin–Tate) | **yes** | LocalClassFieldTheory + ClassFieldTheory |
-| 12 (global reciprocity + existence) | **yes** | ClassFieldTheory |
-| 5 (SW-trick proof, existence route) | **yes (partial)** | ClassFieldTheory ray-class/existence layer, if/when it lands |
-| 6 (local Galois coh quartet, *proofs*) | yes — but owned by the PT bead's plan | ClassFieldTheory |
+| 7 (local inv_v) | **watch**; finite-cyclic helper exists, local-field theorem absent | ClassFieldTheory |
+| 8 (reciprocity / class formation) | **watch**; absent from public root | ClassFieldTheory roadmap |
+| 11 (local reciprocity, Lubin–Tate) | **watch**; absent from both public roots | LocalClassFieldTheory + ClassFieldTheory roadmaps |
+| 12 (global reciprocity + existence) | **watch**; absent from public root | ClassFieldTheory roadmap |
+| 5 (SW-trick proof, existence route) | **watch only**; ray-class/existence layer absent | ClassFieldTheory roadmap |
+| 6 (local Galois coh quartet, *proofs*) | finite-group/local-field substrate is selectively portable; quartet absent | ClassFieldTheory |
 | 1, 3, 4, 10, 13, 14, 15 | no — FLT-local statements/certifications | — |
 
-**Port-candidate count: 5** CFT-bead nodes (7, 8, 11, 12, 5-partial); node 6's proofs are a
-sixth but are booked to the PT bead. Main port risk = interface drift (pass 2 risk 3): FLT
-axiom statements must be written against conventions the external repos can later discharge
-(Frobenius normalization, μ vs ℚ/ℤ coefficients).
+**Current discharge count: 0. Watch count: 5** CFT-bead nodes (7, 8, 11, 12,
+5-partial); node 6's finite-group substrate is the only near-term selective-port
+candidate.  Main port risks are unfinished declarations, toolchain drift and interface
+drift (pass 2 risk 3): FLT axiom statements must be written against conventions the
+external repos can later discharge (Frobenius normalization, μ vs ℚ/ℤ coefficients).
 
 ## 5. Panel questions
 

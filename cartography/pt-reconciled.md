@@ -32,7 +32,9 @@ is Skinner–Wiles reduction + Taylor–Wiles/Kisin patching, whose global-duali
 exactly the Greenberg–Wiles order formula (tangent-space count; auxiliary-prime sets via
 dual-Selmer + Chebotarev). Pass 1's broader "expose the Selmer/dual-Selmer dimension
 formula" is compatible but under-specified. **Resolution: adopt pass 2's claim.** The MLT
-consumer needs nodes 7, 8, 12, 13, 14 plus middle-exactness (see 2.3) — not node 11 in full.
+consumer directly exposes nodes 7, 8, 12, 13, 14 plus middle-exactness (see
+2.3), not node 11 in full.  Its transitive proof closure nevertheless includes
+node 11 through node 12, as the PT-R1 correction below records.
 
 ### 2.2 Sha duality (NSW 8.6.7)
 Pass 2: unconsumed by anything in the repo. Pass 1 never cites a Sha consumer either (its
@@ -49,6 +51,14 @@ the Selmer corollary is the weakest needed statement. **Resolution: descope. The
 topologized NSW 8.6.10 (strict morphisms, restricted-product topology, Pontryagin duals of
 non-compact groups) is consumer-free and is the gold-plating risk pass 2 names.** Mathlib
 may want it eventually; it is not on this bead.
+
+**PT-R1 correction (2026-09-07):** the consumer-facing interface remains
+descoped, but the proof graph does not.  Milne I.5.1 derives the global Euler
+characteristic (node 12) from the full global-duality complex I.4.10.  Thus node
+11 is a transitive proof predecessor of node 12; node 11' alone is insufficient.
+See `cartography/pt-global-euler-characteristic-trace.md`.  “Descoped” here means
+that downstream consumers need not expose the full sequence, not that FLT can
+prove node 12 without it.
 
 ### 2.4 Skinner–Wiles trick placement
 Pass 2 insists SW belongs to CFT, not PT. **Cross-check of pass 1's consumer list:** pass 1
@@ -91,17 +101,18 @@ evidence checked (high), single-pass or literature-verify only (medium).
 | 8 | Local Euler characteristic | NSW 7.3.1; Milne I.2.8; = `local_galois_coh_euler_poincare` | L | yes | high |
 | 9 | Archimedean/Tate-modified terms | NSW 7.2 rem.; Mathlib `TateCohomology` | S | yes | high |
 | 10 | Global G_{K,S}, Hⁱ(G_S,M), restricted product Pⁱ (defs; decomposition groups via chosen embeddings, ch04overview.tex:44) | NSW 8.1/8.6.1 | M/L | defs only | high |
-| 11 | Nine-term PT sequence, full topologized (incl. Sha duality NSW 8.6.7) | NSW 8.6.10; Milne I.4.10 | XL | **NO — descoped to 11′** | high |
+| 11 | Nine-term PT sequence, full topologized (incl. Sha duality NSW 8.6.7) | NSW 8.6.10; Milne I.4.10 | XL | **proof predecessor of 12; hidden from consumer interface** | high |
 | 11′ | Middle-exactness: H¹(G_S,M) → ⊕′_v H¹(G_v,M) → H¹(G_S,M*)^∨ | NSW proof of 8.7.9 | L | yes | high |
-| 12 | Global Euler characteristic | NSW 8.7.4; Milne I.5.1 | L | yes | high |
+| 12 | Global Euler characteristic, with the product-formula and splitting-field/CFT predecessors made explicit in the PT-R1 trace | NSW 8.7.4; Milne I.5.1; `pt-global-euler-characteristic-trace.md` | L local / XL closure | yes | high |
 | 13 | **Greenberg–Wiles order formula** (Selmer/dual-Selmer) | NSW 8.7.9; Wiles Prop 1.6; DDT §2 | M (given 7,8,11′,12,14) | yes — the workhorse | high |
 | 14 | Selmer group of local conditions L; dual conditions L^⊥ | NSW 8.7.8 | S/M | yes (needed even to state 13) | high |
 | D1 | fppf/finite-flat local-condition bridge at v∣p (Cartier-dual compatible) | Milne ADT III; pass 1 node 7 | XL | **deferred** → Mazur D6a discharge / ch03 flat conditions | medium |
 | D2 | Local-global reciprocity compatibility (sum of invariants; class-formation cut "(G_S,C_S) is a class formation", NSW Prop. 8.3.9) | NSW Ch. 3-6, 8 | absorbed into CFT boundary + 10/11′ | boundary spec | high |
 
-Merged count: **16 nodes** (14 spine incl. 11′ replacing 11, + 2 deferred/boundary), of
-which **12 are in the descoped weakest package** (1-5, 7-9, 10-defs, 11′, 12, 13, 14; node 6
-imported from CFT).
+Merged count: **17 nodes** (15 spine incl. 11 and 11′ as distinct proof/interface
+cuts, + 2 deferred/boundary).  The descoped *consumer interface* has **13 nodes**
+(1-5, 7-9, 10-defs, 11′, 12, 13, 14; node 6 imported from CFT), but closing its
+proof graph also requires full node 11 upstream of node 12.
 
 ### 3.1 R2 regrade: bespoke continuous/profinite layer
 
@@ -117,9 +128,9 @@ XL; the absent finite-quotient comparison and bespoke maintenance cost rule out 
 
 ## 4. Panel questions
 
-1. **Descope ratification:** confirm the bead deliverable excludes full NSW 8.6.10 and Sha
-   duality (consumer-free per both passes), targeting middle-exactness + Greenberg–Wiles.
-   Does anyone speak for Mathlib wanting the general topologized theorem now?
+1. **Descope — RESOLVED 2026-09-07:** downstream exposes only
+   middle-exactness + Greenberg--Wiles, but full Milne I.4.10 remains a proof
+   predecessor of node 12.  Sha duality is still outside the public deliverable.
 2. **CFT interface contract:** is the cut "(G_S, C_S) is a class formation" (NSW Prop. 8.3.9) the
    agreed export surface of hub-lsb1u.9, or does that bead export only inv_v + reciprocity,
    leaving class-formation packaging to PT? Timeline coupling to the Lubin–Tate local CFT

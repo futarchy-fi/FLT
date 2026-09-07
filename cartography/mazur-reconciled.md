@@ -63,20 +63,20 @@ splicing the *isogeny*-theorem endgame of Michaud-Jacobs with trivial isogeny ch
 ℓ | 1 − a₃ + 3 = 4 − a₃ with |a₃| ≤ 2√3 (Hasse), so ℓ ≤ 7 — contradiction. P1 itself
 marked this reconstructed.
 
-P2's D8 instead follows the standard torsion-theorem shape (Mazur 1977 / Snowden
-Math 679 / Rebolledo): an order-ℓ point with ℓ ≥ 17 forces the associated non-cuspidal
-point of X₀(ℓ)(ℚ) to reduce to a cusp mod 2 (or 3) — via Néron-model/small-special-fibre
-counting (an order-ℓ point cannot inject into Ẽ(F₂), #Ẽ(F₂) ≤ 5, unless reduction is
-multiplicative) — and the formal immersion then forces the point to *equal* the cusp.
+The page-level audit (`cartography/mazur-d8-page-audit.md`) found that P2's D8
+does **not** match Mazur 1977.  The paper's primary route is Chapter III §5,
+pp. 156--160: small-fibre/Néron arguments at 2 and 3 feed a global bad-prime
+specialization argument on the Eisenstein quotient; local splitting then makes
+an auxiliary extension of `Q(mu_ell)` everywhere unramified; Herbrand and an
+infinite isogeny chain finish.  No formal immersion or Atkin--Lehner involution
+appears in that chain.
 
-**Resolution:** the two endgames are near-equivalent counting arguments
-(ℓ | #Ẽ(F_q) with #Ẽ(F_q) small), but **P2's D8 formulation matches the sourced
-literature route and is adopted as primary**; P1's λ = 1 trace-bound variant is retained
-as an unverified alternative (it has the merit of reusing the isogeny-paper skeleton and
-Michaud-Jacobs's write-up). Residual: the exact derivation must still be checked against
-Mazur 1977 Theorem 8 and Snowden L20–L25 before Lean statements are frozen —
-**panel question PQ1**. A side benefit of the P2 shape: at q = 2, 3 the fibre counts can
-be obtained by finite enumeration, potentially avoiding the general Hasse bound (see D-e).
+**Resolution after the PQ1 spike:** adopt the exact Mazur/Snowden criterion as
+primary and move D7a/D7b to the alternative isogeny route.  P1's `lambda = 1`
+trace-bound splice is valid conditional on that route: `ell | 4-a_3` and
+integrality plus `|a_3| <= 2 sqrt(3) < 4` give `1 <= 4-a_3 <= 7`, so the feared
+`a_3=4` boundary cannot occur.  It is not the 1977 proof and is not cheaper unless
+the formal-immersion/potentially-good-reduction stack already exists.
 
 ### D-b. P2's Merel/winding claim: Kolyvagin–Logachev 1989 + Gross–Zagier (adjudicated)
 
@@ -245,9 +245,9 @@ uncontradicted and plausible; low = one pass, unverified content.
 | D5 | Hecke algebra 𝕋 on J₀(ℓ); Cot ≅ S₂(Γ₀(ℓ)) compatibly with q-expansions; Eichler–Shimura relation on the fibre at p | XL | high | P1:14, P2:D5 |
 | D6a | **Fork prong 1**: Eisenstein ideal, 𝕋/𝕀 ≅ ℤ/num((ℓ−1)/12), Mazur's descent ⇒ Eisenstein quotient has rank 0 (flat cohomology, Raynaud, finite flat group schemes over ℤ) | XL+ | high | P1:15+16, P2:D6a |
 | D6b | **Fork prong 2**: winding quotient (Merel), analytic rank 0 by construction; MW rank 0 via Kolyvagin–Logachev 1989 (on Gross–Zagier 1986) or Kato 2004 | XL+ | high | P1:16′, P2:D6b |
-| D7a | Formal-immersion criterion (pure commutative algebra: cotangent surjectivity + Nakayama ⇒ points reducing to the same F_q-point and mapping equally are equal) | S/M | high | P1:17 (P2:D7 subsumed) |
-| D7b | X₀(ℓ) → J₀(ℓ) → A is a formal immersion at ∞̃ in char q ∈ {2, 3} (Cot(A) ↪ Cot(J₀), q-expansions, a₁ ≠ 0) | L–XL | high | P1:18, P2:D7 |
-| D8 | An order-ℓ rational point (ℓ ≥ 17) yields non-cuspidal x ∈ X₀(ℓ)(ℚ) reducing to a cusp mod 2 (or 3); formal immersion + w_ℓ ⇒ x is a cusp — contradiction. **Primary formulation = P2's small-fibre/Néron route; P1's λ = 1 trace-bound variant recorded as alternative** | L | medium (formulation frozen only after PQ1) | P2:D8; P1:19+20 |
+| D7a | Formal-immersion criterion (pure commutative algebra: cotangent surjectivity + Nakayama ⇒ points reducing to the same F_q-point and mapping equally are equal); **alternative isogeny route only** | S/M local, L closure | high | P1:17; `mazur-d8-page-audit.md` |
+| D7b | X₀(ℓ) → J₀(ℓ) → A is a formal immersion at ∞̃ in odd characteristic (Cot(A) ↪ Cot(J₀), q-expansions, a₁ ≠ 0); **alternative isogeny route only** | L–XL | high | P1:18; `mazur-d8-page-audit.md` |
+| D8 | **Frozen primary route:** Mazur 1977 III §5 criterion. A D6 quotient `f : X₀(ℓ) → A` with good reduction away from ℓ, finite `A(ℚ)`, and `f(0) ≠ f(∞)` excludes rational ℓ-torsion via semistability, the fibres at 2/3, torsion specialization at odd primes, local splitting, unramifiedness over ℚ(μ_ℓ), Herbrand, and the infinite-isogeny argument. No formal immersion or w_ℓ. The valid `λ=1` trace splice remains an optional D7-based route. | L local / XL+ closure | high | Mazur 1977 III §5 pp.156–160; Snowden L18; `mazur-d8-page-audit.md` |
 | D9 | Assembly: Y₁(ℓ)(ℚ) = ∅ for prime ℓ ≥ 17 | M | high | P2:D9; P1:20 |
 
 ### Assembly
@@ -271,12 +271,11 @@ contradictions between them; P2's extra edges (A2 → A3, D2 → D5) adopted.
 
 ## 4. Panel questions
 
-- **PQ1 — Endgame formulation (from D-a).** Verify the D8 derivation against Mazur
-  1977 Theorem 8 and Snowden L20–L25: exact use of the Néron special fibre at 2 vs 3,
-  the char-2 torsion subtlety (D4), whether w_ℓ cusp-swapping is needed, and whether
-  Hasse/Serre–Tate (B3/B4) can be dropped in favour of finite F₂/F₃ enumeration.
-  P1's λ = 1 trace-bound variant: valid alternative or subtly wrong at the Hasse
-  boundary (a₃ = 4 case)?
+- **PQ1 — RESOLVED 2026-09-07.** See `cartography/mazur-d8-page-audit.md`.
+  Correct citation: Mazur 1977 Chapter III Theorem 5.1 and §5 pp. 156--160,
+  not “Theorem 8”.  Primary route uses 2/3 fibres but injects quotient torsion at
+  odd primes, uses no `w_ell`, and retains Hasse (or an exact finite-field substitute).
+  The `lambda=1` alternative is valid; `a_3=4` is excluded strictly by Hasse.
 - **PQ2 — The D6 fork.** Eisenstein descent (self-contained, needs the finite-flat
   group-scheme + flat-cohomology stack, overlapping other FLT chapters) vs winding
   quotient (simpler quotient, imports Eichler–Shimura L-theory + Gross–Zagier 1986 +
@@ -292,7 +291,7 @@ contradictions between them; P2's extra edges (A2 → A3, D2 → D5) adopted.
   Depends on whether the top-level reduction may cite the external FLT-regular Lean
   development and on upstream-interface politics.
 - **PQ5 — Unverified citations to confirm before freezing Lean statements.** Serre
-  Duke 1987 §4.1 Prop. 6; Silverman AEC VII.3.1; Mazur 1977 Thm 4/Thm 8 and Ch. II
+  Duke 1987 §4.1 Prop. 6; Silverman AEC VII.3.1; Mazur 1977 Thm 4 and Ch. II
   §9–10; Serre–Tate Thm 2; Kubert 1976 case locations; Billing–Mahler J. LMS 15 (1940)
   32–43; Mazur–Tate Invent. 22 (1973) 41–49; genus/conductor claims for X₁(2,10),
   X₁(2,14), X₁(11) = 121b1; Katz Invent. 63 (1980) Appendix.
@@ -324,7 +323,9 @@ contradictions between them; P2's extra edges (A2 → A3, D2 → D5) adopted.
 
 **Await panel:**
 
-- B3/B4 (Hasse, Serre–Tate) and the final D8 formulation — PQ1.
+- No D8 formulation item remains: PQ1 is resolved by
+  `cartography/mazur-d8-page-audit.md`.  B3 remains on the primary route; B4 is
+  needed only by the optional `lambda=1` route.
 - Any Part-D formalization beyond D7a — PQ2 (fork) and PQ6 (model sizing) first;
   a decision-spike bead auditing D6a vs D6b on paper should be cut immediately.
 - C5 — PQ3.
