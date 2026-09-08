@@ -32,6 +32,39 @@ theorem mazur_W_ge11 (ℓ : ℕ) (hℓ : ℓ.Prime) (hℓ11 : 11 ≤ ℓ)
     (E : WeierstrassCurve ℚ) [E.IsElliptic] :
     ¬ ∃ P : (E⁄ℚ).Point, addOrderOf P = ℓ := by
   sorry
+
+/-- Cartography node A4: full rational `2`-torsion survives a homomorphism
+whose kernel is killed by an integer coprime to `2`.  The eventual odd-degree
+isogeny theorem only has to supply `hker`; the remaining argument is pure group
+theory. -/
+theorem fullTwoTorsion_survives_of_kernel_killed
+    {A B : Type*} [AddCommGroup A] [AddCommGroup B] {ℓ : ℕ}
+    (hcoprime : Nat.Coprime 2 ℓ)
+    (f : (ZMod 2 × ZMod 2) →+ A) (hf : Function.Injective f)
+    (φ : A →+ B) (hker : ∀ a, φ a = 0 → ℓ • a = 0) :
+    ∃ g : (ZMod 2 × ZMod 2) →+ B, Function.Injective g := by
+  refine ⟨φ.comp f, ?_⟩
+  intro x y hxy
+  have hφ : φ (f (x - y)) = 0 := by
+    rw [map_sub, map_sub]
+    exact sub_eq_zero.mpr hxy
+  have hℓImage : ℓ • f (x - y) = 0 := hker _ hφ
+  have hℓ : ℓ • (x - y) = 0 := by
+    apply hf
+    calc
+      f (ℓ • (x - y)) = ℓ • f (x - y) := map_nsmul f _ _
+      _ = 0 := hℓImage
+      _ = f 0 := (map_zero f).symm
+  have h2 : 2 • (x - y) = 0 := by
+    exact ZModModule.char_nsmul_eq_zero 2 (x - y)
+  have hord2 : addOrderOf (x - y) ∣ 2 :=
+    (addOrderOf_dvd_iff_nsmul_eq_zero).2 h2
+  have hordℓ : addOrderOf (x - y) ∣ ℓ :=
+    (addOrderOf_dvd_iff_nsmul_eq_zero).2 hℓ
+  have hord1 : addOrderOf (x - y) ∣ 1 := by
+    simpa [hcoprime.gcd_eq_one] using Nat.dvd_gcd hord2 hordℓ
+  exact sub_eq_zero.mp <| AddMonoid.addOrderOf_eq_one_iff.mp <|
+    Nat.eq_one_of_dvd_one hord1
 /-- Cartography node W scope-regression fixture: cyclic `ℤ/10ℤ` torsion DOES
 occur over `ℚ` (Mazur's allowed list; e.g. a curve from `X₁(10)`).  This is
 the statement that would fail if W were over-strengthened to "no rational

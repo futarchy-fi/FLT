@@ -21,7 +21,7 @@ high-confidence backbone of the chapter map.
 | G3 | The bound 16 is only ever applied to curves with **full rational 2-torsion** (Frey curve and its quotient E/C) plus a rational point of prime order ℓ ≥ 5; contradiction 4ℓ ≥ 20 > 16 | §1 | §1.1, 1.3 |
 | G4 | **The same weakest statement W** (see below), independently derived, including the same per-ℓ refinement | §1 W, W-a/b/c | §1.3 |
 | G5 | Quotient-by-finite-Galois-stable-subgroup (blueprint `Elliptic_curve_quotient_by_finite_subgroup`) is a hard, blueprint-flagged (`\notready`) prerequisite; grade L | node 3 | A3 |
-| G6 | The ℓ ≥ 17 core goes through modular Jacobians: X₀(ℓ) over Q + integral model, J₀(ℓ), Néron models, Hecke algebra, a rank-0 quotient, and a formal-immersion argument at the cusp | nodes 8-19 | D1-D9 |
+| G6 | The ℓ ≥ 17 core goes through modular Jacobians: X₀(ℓ) over Q + integral model, J₀(ℓ), Néron models, Hecke algebra, a finite-Mordell--Weil quotient, and Mazur's III §5 local-splitting/Herbrand endgame; formal immersion is an optional alternative | nodes 8-19 | D1-D9; D8 page audit |
 | G7 | **The D6 fork**: Mazur's Eisenstein-quotient descent vs Merel-style winding quotient; both XL(+); the single biggest route decision; no third route found by either pass | node 16/16′, §5 | D6a/D6b, R2 |
 | G8 | Cheapening via the FLT-regular Lean project (arXiv:2410.01466): classical FLT for small regular exponents can delete the fiddly small-ℓ cases by re-basing the top-level reduction; this is an **interface change** needing a project-level decision | §1, §5 | R3 |
 | G9 | Mathlib status: elliptic curves/group law **exist**; division polynomials **partial**; modular forms/q-expansions **partial**, no Hecke operators; modular curves as schemes, Jacobians/abelian varieties, Néron models, finite flat group schemes, étale cohomology **absent**; class groups/Minkowski **exist**; FLT-repo seeds in `FLT/EllipticCurve/Torsion.lean`, `FLT/TateCurve/`, `FLT/GroupScheme/FiniteFlat.lean` | §4 | §4 |
@@ -150,12 +150,16 @@ surjectivity + Nakayama ⇒ point separation) has no modular content and is an i
 work-bead candidate; keeping it separate preserves the only shovel-ready node in
 Part D. Adopted as D7a/D7b.
 
-### D-g. Rank-0 certification machinery (P2-only: B2/B3)
+### D-g. Small-curve certification machinery (P2-only: B2/B3)
 
-P2 alone itemizes *how* the small-curve cases are certified (per-curve full 2-descent;
-a two-prime point-count sieve reduces the torsion part but cannot remove the rank-0
-input). P1's node 21 hand-waves "explicit descent". **Resolution: P2 adopted** — this is
-a real cost (one descent per target curve) and belongs in the map.
+P2 alone tried to itemize *how* the small-curve cases are certified.  The
+explicit-model audit in `mazur-ready-now-resolution.md` found that this was not
+uniform: `X_1(2,10)` and `X_1(11)` are genus 1, `X_1(13)` is genus 2, but
+`X_1(2,14)` is genus 4.  A two-prime point-count sieve can reduce a torsion
+calculation but cannot remove the rank or rational-point input. **Resolution:**
+retain separate model, modular-interpretation, cusp and rational-point
+certificates for every curve; never route the genus-4 case through elliptic
+`2`-descent.
 
 ### D-h. Which regular primes the FLT-regular cheapening removes
 
@@ -219,7 +223,7 @@ uncontradicted and plausible; low = one pass, unverified content.
 | Node | Statement | Diff | Conf | Source |
 |---|---|---|---|---|
 | B1 | Good reduction at q ⇒ E(ℚ)_tors → Ẽ(F_q) injective on prime-to-q torsion | L | high | P1:4, P2:B1 |
-| B2 | Rank-0 certification for the specific curves X₁(11), X₁(2,10), X₁(2,14) by per-curve full 2-descent (+ point-count sieve for the torsion part); genus-2 variant for X₁(13) | M per curve (L for genus 2) | high | P2:B2/B3; P1:21 implicit |
+| B2 | Per-curve rational-point certification: elliptic rank/torsion for X₁(11) and X₁(2,10), Jacobian descent for genus-2 X₁(13), and a genuine high-genus argument/Kubert reduction for genus-4 X₁(2,14) | M--XL per curve | high (curve data; proof locators still vary) | P2:B2/B3 corrected by explicit-model audit; P1:21 implicit |
 | B3 | Hasse bound #Ẽ(F_q) = q+1−a_q, |a_q| ≤ 2√q — **conditional**: needed by the P1 endgame variant; possibly replaceable by finite enumeration over F₂, F₃ in the P2 endgame | L | medium (pending PQ1) | P1:5 |
 | B4 | Serre–Tate: potentially good reduction ⇔ v_q(j) ≥ 0; integral trace bound — **conditional**, same status as B3 | L | medium (pending PQ1) | P1:6 |
 | B5 | Tate curve / potentially multiplicative reduction: structure over ℚ_q for v_q(j) < 0; multiplicative reduction ⇒ the X₀-point reduces to a cusp (FLT-repo `FLT/TateCurve/` in progress) | L | high | P1:7, P2:D8-input |
@@ -229,7 +233,7 @@ uncontradicted and plausible; low = one pass, unverified content.
 | Node | Statement | Diff | Conf | Source |
 |---|---|---|---|---|
 | C1 | ℓ = 5: no ℤ/2×ℤ/10 ⊆ E(ℚ) — X₁(2,10) elliptic, rank 0, cusps only (Kubert 1976) | L | high | P1:21 W-c, P2:C1 |
-| C2 | ℓ = 7: no ℤ/2×ℤ/14 — X₁(2,14) (Kubert 1976) | L | high | P1:21 W-b, P2:C2 |
+| C2 | ℓ = 7: no ℤ/2×ℤ/14 — `X₁(2,14)` is genus 4, so it needs Kubert's reduction or a genuine high-genus rational-point proof, not elliptic `2`-descent | XL | high (genus/model verified; proof citation remains PQ5) | P1:21 W-b, P2:C2; `mazur-ready-now-resolution.md` |
 | C3 | ℓ = 11: Y₁(11)(ℚ) = ∅ — X₁(11) elliptic, rank 0 (Billing–Mahler 1940) | M | high | P1:21, P2:C3 |
 | C4 | ℓ = 13: Y₁(13)(ℚ) = ∅ — X₁(13) genus 2, rank-0 Jacobian descent (Mazur–Tate 1973) | L | high | P1:21, P2:C4 |
 | C5 | ℓ = 17, 19 by classical explicit methods (Ogg/Kubert) — possible cheapening of the D-core's lower edge | M–L | **low** (P1-only, unverified — PQ3) | P1:21 |
@@ -256,8 +260,10 @@ uncontradicted and plausible; low = one pass, unverified content.
 |---|---|---|---|---|
 | W | W from C1–C4 + D9 (ℓ = 5, 7 in full-2-torsion form; ℓ ≥ 11 in no-ℓ-point form); then A5 | S | high | P1:22, P2:W |
 
-**26 nodes** (A1–A5, B1–B5, C1–C5, D1–D9 counting the D6 fork as two, W). Six are
-XL-or-worse (D1–D6), one conditional pair (B3/B4), one low-confidence (C5).
+**26 nodes** (A1–A5, B1–B5, C1–C5, D1–D9 counting the D6 fork as two, W).
+Nine rows now explicitly carry an XL-or-worse local/closure grade (C2,
+D1–D6a/b and D8), one pair is route-conditional (B3/B4), and C5 remains the
+low-confidence row the panel ordered struck from the active route.
 
 Not needed (both passes concur, P1 explicit): Raynaud's isogeny-character
 classification λ¹² = χˢ, resultant computations, class-number-1 endgame — those serve
@@ -305,21 +311,18 @@ contradictions between them; P2's extra edges (A2 → A3, D2 → D5) adopted.
 
 ## 5. Recommended next actions (ordered)
 
-**Ready to become work beads now** (no panel dependency, no Mathlib blocker):
+**Resolution of the former “ready-now” beads (2026-09-07):** see
+`cartography/mazur-ready-now-resolution.md`.
 
-1. **A5 (wiring)** — state W in Lean as the chapter axiom and prove
-   `FreyPackage.mazur` from it via the ch03 chain, removing the blanket
-   `knownin1980s` at `FLT/FreyCurve/Mazur.lean:36`. Highest leverage per unit effort;
-   makes the chapter's true interface machine-checked. (Coordinate PQ7 in parallel;
-   the wiring itself does not need the upstream decision.)
-2. **D7a (formal-immersion criterion)** — pure commutative algebra on Mathlib's
-   existing completed-local-ring/cotangent/Nakayama stack; upstreamable to Mathlib.
-3. **A4** — 2-torsion survives odd-order quotient (statement-level now, proof once A3
-   lands; the statement can be frozen immediately).
-4. **A1 (torsion finiteness)** — via Nagell–Lutz to avoid the reduction-theory
-   dependency of B1; also unblocks the `ncard` reading of any interim axiom.
-5. **Explicit plane models** of X₁(11), X₁(2,10), X₁(2,14), X₁(13) as curves with their
-   rational-point statements frozen (proofs await B1/B2) — cheap, de-risks Part C.
+1. **A5:** wired through `mazur_W`; the exact ch03 bridge is isolated under its
+   own classical assumption rather than hidden in the final theorem.
+2. **D7a:** retired from primary D8 and deferred with the optional isogeny route.
+3. **A4:** pure group-theory glue proved in `FLT/MazurW.lean`; A3 need only
+   supply the odd-isogeny kernel bound.
+4. **A1:** exact finiteness proposition frozen; proof remains blocked on
+   integral/reduction infrastructure, with no duplicate `sorry` introduced.
+5. **Small curves:** equations and proof-certificate boundaries frozen; the
+   former elliptic-descent treatment of genus-4 `X_1(2,14)` is corrected.
 
 **Await panel:**
 
