@@ -14,6 +14,7 @@ public import FLT.AutomorphicForm.QuaternionAlgebra.HeckeOperators.Local
 public import FLT.AutomorphicForm.QuaternionAlgebra.InnerProduct
 public import FLT.AutomorphicForm.Stuff
 public import FLT.Basic.Lemmas
+public import FLT.CyclicBaseChange.Satake
 public import FLT.Data.Hurwitz
 public import FLT.Data.HurwitzRatHat
 public import FLT.Data.QHat
@@ -231,7 +232,9 @@ public import FLT.Odlyzko.AdmissibleAutocorrelation
 public import FLT.Odlyzko.Autocorrelation
 public import FLT.Odlyzko.AutocorrelationNonnegative
 public import FLT.Odlyzko.ExplicitFormula
+public import FLT.Odlyzko.ExponentialForm
 public import FLT.Odlyzko.Interval.Rat
+public import FLT.Odlyzko.UniformBound
 public import FLT.Patching.Algebra
 public import FLT.Patching.Module
 public import FLT.Patching.Over
