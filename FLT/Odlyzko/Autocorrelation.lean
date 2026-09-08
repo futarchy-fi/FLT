@@ -39,6 +39,13 @@ private theorem integrable_reflect {g : ℝ → ℝ} (hg : Integrable g) :
     Integrable (complexify (reflect g)) := by
   exact Complex.ofRealCLM.integrable_comp (by simpa [reflect] using hg.comp_neg)
 
+/-- A compactly supported `L²` function on `ℝ` is integrable. -/
+theorem integrable_of_memLp_two_of_hasCompactSupport {g : ℝ → ℝ}
+    (hg_L2 : MemLp g 2 volume) (hg_compact : HasCompactSupport g) : Integrable g := by
+  rw [← memLp_one_iff_integrable]
+  exact hg_L2.mono_exponent_of_measure_support_ne_top
+    (fun x hx ↦ image_eq_zero_of_notMem_tsupport hx) hg_compact.measure_ne_top (by norm_num)
+
 /-- The Fourier transform of a reflected real function is the conjugate transform. -/
 theorem fourier_reflect_eq_conj (g : ℝ → ℝ) (t : ℝ) :
     𝓕 (complexify (reflect g)) t = conj (𝓕 (complexify g) t) := by
@@ -98,13 +105,13 @@ theorem continuous_autocorrelation (g : ℝ → ℝ) (hg : Continuous g)
 /-- The Q1 package, with the `L²` hypothesis recorded for its later analytic consumers. -/
 theorem autocorrelation_structural_package (g : ℝ → ℝ)
     (hg_even : Function.Even g) (hg_cont : Continuous g) (hg_compact : HasCompactSupport g)
-    (_hg_L2 : MemLp g 2 volume) :
+    (hg_L2 : MemLp g 2 volume) :
     Function.Even (autocorrelation g) ∧
       HasCompactSupport (autocorrelation g) ∧
       Continuous (autocorrelation g) ∧
       ∀ t, 𝓕 (autocorrelation g) t = ‖𝓕 (complexify g) t‖ ^ 2 ∧
         0 ≤ (𝓕 (autocorrelation g) t).re := by
-  have hg_int : Integrable g := hg_cont.integrable_of_hasCompactSupport hg_compact
+  have hg_int : Integrable g := integrable_of_memLp_two_of_hasCompactSupport hg_L2 hg_compact
   exact ⟨autocorrelation_even g hg_even, autocorrelation_hasCompactSupport g hg_compact,
     continuous_autocorrelation g hg_cont hg_compact, fun t ↦
       ⟨fourier_autocorrelation g hg_int t, fourier_autocorrelation_nonneg g hg_int t⟩⟩
