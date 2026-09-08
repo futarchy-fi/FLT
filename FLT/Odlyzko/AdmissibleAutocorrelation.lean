@@ -46,7 +46,6 @@ theorem autocorrelation_isAdmissibleTestFn (g : ℝ → ℝ) (C : NNReal)
     (hweighted_deriv : ∀ x ∈ Set.Ioi 0,
       HasDerivAt (weightedAutocorrelation g epsilon) (weightedDeriv x) x)
     (hweighted_integrable : IntegrableOn weightedDeriv (Set.Ici 0))
-    (hweighted_fn_integrable : IntegrableOn (weightedAutocorrelation g epsilon) (Set.Ici 0))
     (hquotient_cont : ContinuousOn (autocorrelationDiffQuot g) (Set.Ici 0))
     (hquotient_deriv : ∀ x ∈ Set.Ioi 0,
       HasDerivAt (autocorrelationDiffQuot g) (quotientDeriv x) x)
@@ -54,11 +53,17 @@ theorem autocorrelation_isAdmissibleTestFn (g : ℝ → ℝ) (C : NNReal)
     DedekindResidue.IsAdmissibleTestFn (autocorrelation g) := by
   have hF_cont : Continuous (autocorrelation g) :=
     continuous_autocorrelation g hg_cont hg_compact
-  have hweighted_cont : ContinuousOn (weightedAutocorrelation g epsilon) (Set.Ici 0) := by
-    apply Continuous.continuousOn
+  have hweighted_cont_global : Continuous (weightedAutocorrelation g epsilon) := by
     have hexp : Continuous (fun x : ℝ ↦ Real.exp ((1 / 2 + epsilon) * x)) := by
       fun_prop
     exact hF_cont.mul (Complex.continuous_ofReal.comp hexp)
+  have hweighted_cont : ContinuousOn (weightedAutocorrelation g epsilon) (Set.Ici 0) :=
+    hweighted_cont_global.continuousOn
+  have hweighted_compact : HasCompactSupport (weightedAutocorrelation g epsilon) := by
+    exact (autocorrelation_hasCompactSupport g hg_compact).mul_right
+  have hweighted_fn_integrable :
+      IntegrableOn (weightedAutocorrelation g epsilon) (Set.Ici 0) :=
+    (hweighted_cont_global.integrable_of_hasCompactSupport hweighted_compact).integrableOn
   have hweighted_bv :
       BoundedVariationOn (weightedAutocorrelation g epsilon) (Set.Ici 0) := by
     apply DedekindResidue.boundedVariationOn_of_deriv_integrable Set.ordConnected_Ici
