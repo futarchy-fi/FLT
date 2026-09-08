@@ -240,6 +240,7 @@ public import FLT.Odlyzko.Interval.Rat
 public import FLT.Odlyzko.Monotonicity
 public import FLT.Odlyzko.PrimeSide
 public import FLT.Odlyzko.ScaledInequality
+public import FLT.Odlyzko.Scaling
 public import FLT.Odlyzko.UniformBound
 public import FLT.Odlyzko.ZeroSideCritical
 public import FLT.Patching.Algebra
