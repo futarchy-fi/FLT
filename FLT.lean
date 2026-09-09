@@ -2,6 +2,7 @@ module  -- shake: keep-all --deprecated_module: ignore
 
 public import FLT.AINTLIB.DedekindResidue.AuxiliaryFunction
 public import FLT.AINTLIB.DedekindResidue.ExplicitFormula.TestFunction
+public import FLT.AbsoluteGaloisGroup.TameCharacter
 public import FLT.Assumptions.KnownIn1980s
 public import FLT.Assumptions.Mazur
 public import FLT.Assumptions.Odlyzko
