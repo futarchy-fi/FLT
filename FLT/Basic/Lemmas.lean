@@ -55,6 +55,18 @@ lemma FermatLastTheorem.of_p_ge_5 (H : ∀ p ≥ 5, p.Prime → FermatLastTheore
     -- and this is our assumption
     exact H _ hp5 hpp
 
+/-- If FLT is known for the exponents from `3` through `16`, it is enough to
+prove it for prime exponents at least `17`. -/
+lemma FermatLastTheorem.of_small_and_p_ge_17
+    (hsmall : ∀ n, n ∈ Finset.Icc 3 16 → FermatLastTheoremFor n)
+    (H : ∀ p ≥ 17, p.Prime → FermatLastTheoremFor p) :
+    FermatLastTheorem := by
+  apply FermatLastTheorem.of_p_ge_5
+  intro p hp5 hpp
+  by_cases hp17 : 17 ≤ p
+  · exact H p hp17 hpp
+  · exact hsmall p (by simp only [Finset.mem_Icc]; omega)
+
 /-- Fermat's Last Theorem as stated in mathlib (a statement `FermatLastTheorem` about naturals)
 implies Fermat's Last Theorem stated in terms of positive integers. -/
 theorem PNat.pow_add_pow_ne_pow_of_FermatLastTheorem :

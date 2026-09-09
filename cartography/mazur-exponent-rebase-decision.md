@@ -39,27 +39,30 @@ restricted to packages with exponent at least `17`; otherwise `B3 := IsEmpty
 FreyPackage` silently retains every small-prime obligation. Any Mazur/W
 quantifiers used by that route must be restricted consistently.
 
-## Integration gate
+## Integration
 
-This decision does not yet change `FLT/Proof.lean`. The present checkout has no
-`flt-regular` dependency and pins Lean `v4.34.0-rc1` with Mathlib
-`bc06ce9f87cda9bf825ecab192b115685e629898`; the reviewed upstream `master`
-snapshot pins Lean `v4.34.0-rc2` with Mathlib
-`06e4a530c2ee8e5c0fc6ba40a38d4814102c8fa2`. Importing moving `master` would
-therefore be neither reproducible nor presently buildable.
+Implemented by `hub-lsb1u.14`. The repository still pins Lean `v4.34.0-rc1`
+with Mathlib `bc06ce9f87cda9bf825ecab192b115685e629898`, while the reviewed upstream
+`flt-regular` revision targets Lean `v4.34.0-rc2`. To avoid a moving or
+incompatible dependency, the implementation vendors the compatibility port
+from AINTLIB commit `1c1c74664e40071c2c2165bc55ca2616a67ccd6b`; its
+`projects/FltRegular` tree last changed at
+`fa3c5e6ee266ce3060bf9964fa3a592c9f8fcd8e`. Exact provenance and licensing are
+recorded in `vendor/flt-regular/README.md`.
 
-Implementation must:
+The integration:
 
-1. pin a compatible `flt-regular` revision, or port the exact small-exponent
-   exports with attribution;
-2. add and kernel-check the small-exponent/`p ≥ 17` assembly bridge;
-3. re-quantify B2, B3, B4, the Frey-package bridge, and the consumed Mazur/W
+1. vendors the exact attributed compatibility port;
+2. adds and kernel-checks the small-exponent/`p ≥ 17` assembly bridge;
+3. re-quantifies B2, B3, B4, the Frey-package bridge, and the consumed Mazur/W
    statement together;
-4. introduce no new `sorry`, inspect the axioms of the imported final theorems,
-   and pass the repository's complete pre-push checks.
+4. introduces no new `sorry` and regression-checks that the imported small
+   theorem and the final assembly bridge contain neither `sorryAx` nor
+   `knownin1980s`.
 
-Until those conditions hold, the source-level spine remains at `p ≥ 5`. That
-temporary state is an integration constraint, not a reversal of this decision.
+The source-level B2/B3/B4 and consumed Mazur/W path now all begin at `p ≥ 17`.
+The more general Frey-package constructor remains available at `p ≥ 5`, but its
+new exponent-preserving result lets the B3 bridge retain the large-prime bound.
 
 ## Evidence reviewed
 
@@ -71,4 +74,3 @@ temporary state is an integration constraint, not a reversal of this decision.
 - [`FltRegular/SmallNumbers/SmallNumbers.lean`](https://github.com/leanprover-community/flt-regular/blob/master/FltRegular/SmallNumbers/SmallNumbers.lean),
   assembling `FLT_small` from the concrete theorems for `5`, `7`, `11`, and
   `13`.
-

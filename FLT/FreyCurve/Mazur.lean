@@ -47,9 +47,10 @@ theorem FreyPackage.mazurW_counterexample_of_reducible (P : FreyPackage) :
   knownin1980s
 
 /--
-The p-torsion in the Frey curve associated to a counterexample to FLT is irreducible.
+For exponent at least `17`, the p-torsion in the Frey curve associated to a
+counterexample to FLT is irreducible.
 -/
-theorem FreyPackage.mazur (P : FreyPackage) :
+theorem FreyPackage.mazur (P : FreyPackage) (hp17 : 17 ≤ P.p) :
     let E := P.freyCurve
     let p := P.p
     have : Fact p.Prime := ⟨P.pp⟩
@@ -57,4 +58,4 @@ theorem FreyPackage.mazur (P : FreyPackage) :
   by_contra hred
   obtain ⟨E', hE', f, hf⟩ := P.mazurW_counterexample_of_reducible hred
   let : E'.IsElliptic := hE'
-  exact mazur_W P.p P.pp P.hp5 E' ⟨f, hf⟩
+  exact mazur_W P.p P.pp hp17 E' ⟨f, hf⟩

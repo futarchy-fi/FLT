@@ -52,6 +52,22 @@ Euler proved Fermat's Last Theorem for $p=3$;
 \begin{proof}\uses{fermatLastTheoremThree, FermatLastTheorem.of_odd_primes}\leanok Follows from the
   previous two lemmas.\end{proof}
 
+The regular-prime formalization supplies closed proofs for exponents $5$, $7$, $11$, and $13$,
+and combines them with the cases $3$ and $4$ into the following finite-range result.
+
+\begin{lemma}\label{FLT_small}\lean{FLT_small}\leanok
+  Fermat's Last Theorem holds for every exponent $3\leq n\leq16$.
+\end{lemma}
+
+\begin{corollary}\label{FermatLastTheorem.of_small_and_p_ge_17}
+  \lean{FermatLastTheorem.of_small_and_p_ge_17}\leanok
+  To prove Fermat's Last Theorem it is enough to prove it for prime exponents $p\geq17$.
+\end{corollary}
+\begin{proof}\uses{FermatLastTheorem.of_p_ge_5, FLT_small}\leanok
+  The previous reduction produces a prime $p\geq5$. If $p<17$, the result is
+  \ref{FLT_small}; otherwise $p\geq17$.
+\end{proof}
+
 \section{Frey packages}
 
 For convenience we make the following definition.
@@ -163,7 +179,7 @@ Recall that a representation of a group $G$ on a vector space $W$ is said to be 
 if there are precisely two $G$-stable subspaces of $W$, namely $0$ and $W$.
 The representation is said to be \emph{reducible} otherwise.
 
-Now say $(a,b,c,p)$ is a Frey package.
+Now say $(a,b,c,p)$ is a Frey package with $p\geq17$.
 Consider the mod $p$ representation of $\GQ$ coming from the $p$-torsion in the Frey
 curve $Y^2=X(x-a^p)(X+b^p)$ associated to the package. Let's call this representation $\rho$,
 and we say that $\rho$ is the mod $p$ representation associated to the Frey package $(a,b,c,p)$.
@@ -174,7 +190,8 @@ Is it irreducible or not?
   \lean{FreyPackage.mazur}
   \uses{FreyCurve}
   \leanok
-  If $\rho$ is the mod $p$ Galois representation associated to a Frey package $(a,b,c,p)$ then
+  If $\rho$ is the mod $p$ Galois representation associated to a Frey package $(a,b,c,p)$
+  with $p\geq17$, then
   $\rho$ is irreducible.
 \end{theorem}
 \begin{proof}
@@ -195,7 +212,8 @@ a lot about the next result, which says the exact opposite.
   \lean{FLT.Bosses.B4_proof}
   \uses{FreyCurve}
   \leanok
-  If $\rho$ is the mod $p$ Galois representation associated to a Frey package $(a,b,c,p)$ then
+  If $\rho$ is the mod $p$ Galois representation associated to a Frey package $(a,b,c,p)$
+  with $p\geq17$, then
   $\rho$ is reducible.
 \end{theorem}
 \begin{proof}
@@ -210,7 +228,7 @@ a lot about the next result, which says the exact opposite.
   \lean{FLT.Bosses.B3_proof}
   \uses{Mazur_Frey, Wiles_Frey}
   \leanok
-  There is no Frey package.
+  There is no Frey package whose exponent is at least $17$.
 \end{corollary}
 \begin{proof} Follows immediately from the previous two
   theorems~\ref{Mazur_Frey} and~\ref{Wiles_Frey}.
@@ -226,10 +244,10 @@ We deduce
   natural $n\geq3$ such that $a^n+b^n=c^n$.
 \end{corollary}
 \begin{proof}
-  \uses{FermatLastTheorem.of_p_ge_5, FreyPackage.false, FreyPackage.of_not_FermatLastTheorem_p_ge_5}
+  \uses{FermatLastTheorem.of_small_and_p_ge_17, FreyPackage.false, FreyPackage.of_not_FermatLastTheorem_p_ge_5}
   Assume there is a there is a counterexample $a^n+b^n=c^n$.
-  By Corollary \ref{FermatLastTheorem.of_p_ge_5} we may assume that there is also a counterexample
-  $a^p+b^p=c^p$ with $p\geq 5$ and prime.
+  By Corollary \ref{FermatLastTheorem.of_small_and_p_ge_17} we may assume that there is also a
+  counterexample $a^p+b^p=c^p$ with $p\geq 17$ and prime.
   Then there is a Frey package $(a,b,c,p)$ by~\ref{FreyPackage.of_not_FermatLastTheorem_p_ge_5},
   contradicting Corollary~\ref{FreyPackage.false}.
 \end{proof}

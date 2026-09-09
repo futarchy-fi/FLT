@@ -16,18 +16,18 @@ the Frey-curve argument, together with elementary bridge constructions.
 @[expose] public section
 open scoped WeierstrassCurve.Affine
 /-- Cartography node W (`hub-bv6v2.1`): an elliptic curve over `ℚ` cannot contain
-`(ℤ/2ℤ)² × ℤ/ℓℤ` when `ℓ ≥ 5` is prime.  This is the endpoint intended for the
+`(ℤ/2ℤ)² × ℤ/ℓℤ` when `ℓ ≥ 17` is prime.  This is the endpoint intended for the
 `FreyPackage.mazur` (A5) re-wire after A3 supplies the quotient curve and A4
 supplies its surviving full rational `2`-torsion. -/
-theorem mazur_W (ℓ : ℕ) (hℓ : ℓ.Prime) (hℓ5 : 5 ≤ ℓ)
+theorem mazur_W (ℓ : ℕ) (hℓ : ℓ.Prime) (hℓ17 : 17 ≤ ℓ)
     (E : WeierstrassCurve ℚ) [E.IsElliptic] :
     ¬ ∃ f : ((ZMod 2 × ZMod 2) × ZMod ℓ) →+ (E⁄ℚ).Point,
       Function.Injective f := by
   sorry
 /-- Cartography node W, large-prime projection: an elliptic curve over `ℚ` has
-no rational point of prime order `ℓ ≥ 11`.  This is a useful Mazur chapter
-interface, but the A5 re-wire still needs `mazur_W` for the Frey primes below
-`11` and the A3/A4 bridge which produces its full product embedding. -/
+no rational point of prime order `ℓ ≥ 11`.  This is a useful stronger Mazur
+chapter interface; the FLT spine consumes only `mazur_W` at exponents at least
+`17`. -/
 theorem mazur_W_ge11 (ℓ : ℕ) (hℓ : ℓ.Prime) (hℓ11 : 11 ≤ ℓ)
     (E : WeierstrassCurve ℚ) [E.IsElliptic] :
     ¬ ∃ P : (E⁄ℚ).Point, addOrderOf P = ℓ := by
