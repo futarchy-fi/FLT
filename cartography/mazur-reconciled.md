@@ -124,13 +124,13 @@ also doable classically (node 21, listing X₁(17), X₁(19) as Ogg/Kubert). P2 
 ℓ = 11, 13 firmly in the classical Part C and starts the modular-Jacobian core at
 ℓ ≥ 17, with no classical claim for 17, 19.
 
-**Resolution:** partially resolved. ℓ = 11 (Billing–Mahler) and ℓ = 13 (Mazur–Tate,
+**Resolution:** resolved. ℓ = 11 (Billing–Mahler) and ℓ = 13 (Mazur–Tate,
 genus 2 — note P1 itself observes X₀(13) has genus 0, so 13 cannot go through the
-Eisenstein route regardless) are certainly classical: both passes agree. Whether
-ℓ = 17, 19 have genuinely classical, formalization-cheaper proofs (P1's Ogg/Kubert
-attribution, explicitly marked unverified) **is unresolved — panel question PQ3**. The
-reconciled map conservatively routes ℓ ≥ 17 through the D-core (P2), with C5 recorded
-as a possible cheapening.
+Eisenstein route regardless) are certainly classical. The literature panel refuted
+P1's Ogg/Kubert attribution for ℓ = 17, 19: those higher-genus cases were resolved by
+Mazur's general theorem, not by the alleged earlier shortcut. The reconciled map
+therefore routes every ℓ ≥ 17 through the D-core and retains C5 only as refuted
+historical provenance.
 
 ### D-e. Hasse bound and Serre–Tate nodes (P1-only: nodes 5, 6)
 
@@ -163,15 +163,14 @@ certificates for every curve; never route the genus-4 case through elliptic
 
 ### D-h. Which regular primes the FLT-regular cheapening removes
 
-P1 proposes re-basing at p ≥ 11 (deleting ℓ = 5, 7). P2 proposes deleting p ∈ {5, 7, 13}
-(shrinking W to "no ℓ-point, ℓ ≥ 11, ℓ ≠ 13"). **Reconciler observation: both
-understate the option.** 11 is *also* a regular prime (the first irregular prime is 37),
-and the FLT-regular project covers all regular primes ≥ 5, so re-basing could in
-principle go to **p ≥ 17 with p regular-excluded**, i.e. delete C1–C4 entirely and leave
-only the D-core plus glue. Whether the upstream/top-level reduction interface allows
-citing an external Lean development, and how far to push the re-basing, is the
-**hub-lsb1u.12 decision (panel question PQ4)**. Until decided, the map keeps all of
-Part C.
+P1 proposed re-basing at p ≥ 11 (deleting ℓ = 5, 7). P2 proposed deleting
+p ∈ {5, 7, 13}. **Resolved 2026-09-09:** `hub-lsb1u.12` adopted the stronger
+**p ≥ 17** campaign boundary, with closed upstream Lean theorems discharging
+`5`, `7`, `11`, and `13`. See
+[`mazur-exponent-rebase-decision.md`](mazur-exponent-rebase-decision.md) for the
+source audit, adversarial composition check, and integration gate. C1–C4 remain
+documented history but cease to be campaign proof obligations after the pinned
+external interface and all downstream quantifier changes compile.
 
 ### D-i. Difficulty-grade disagreements (resolved by max, per protocol)
 
@@ -197,8 +196,9 @@ Part C.
   needed to swap cusps in its node 19) and P2's Eichler–Shimura relation (D5) — both
   retained in the merged D1/D5.
 
-**Divergence tally: 10 catalogued; 7 fully resolved (D-b, D-c, D-e, D-f, D-g, D-i,
-D-j); 3 resolved-with-residual routed to panel (D-a → PQ1, D-d → PQ3, D-h → PQ4).**
+**Divergence tally: 10 catalogued; all 10 resolved.** PQ1 fixed D-a's exact
+endgame, PQ3 refuted D-d's alleged 17/19 shortcut, and PQ4 fixed D-h's campaign
+boundary at `p ≥ 17` subject to the recorded integration gate.
 
 ---
 
@@ -228,7 +228,7 @@ uncontradicted and plausible; low = one pass, unverified content.
 | B4 | Serre–Tate: potentially good reduction ⇔ v_q(j) ≥ 0; integral trace bound — **conditional**, same status as B3 | L | medium (pending PQ1) | P1:6 |
 | B5 | Tate curve / potentially multiplicative reduction: structure over ℚ_q for v_q(j) < 0; multiplicative reduction ⇒ the X₀-point reduces to a cusp (FLT-repo `FLT/TateCurve/` in progress) | L | high | P1:7, P2:D8-input |
 
-### Part C — small primes (survives in full only if no re-basing; see PQ4)
+### Part C — small primes (historical after the PQ4 integration lands)
 
 | Node | Statement | Diff | Conf | Source |
 |---|---|---|---|---|
@@ -236,7 +236,7 @@ uncontradicted and plausible; low = one pass, unverified content.
 | C2 | ℓ = 7: no ℤ/2×ℤ/14 — `X₁(2,14)` is genus 4, so it needs Kubert's reduction or a genuine high-genus rational-point proof, not elliptic `2`-descent | XL | high (genus/model verified; proof citation remains PQ5) | P1:21 W-b, P2:C2; `mazur-ready-now-resolution.md` |
 | C3 | ℓ = 11: Y₁(11)(ℚ) = ∅ — X₁(11) elliptic, rank 0 (Billing–Mahler 1940) | M | high | P1:21, P2:C3 |
 | C4 | ℓ = 13: Y₁(13)(ℚ) = ∅ — X₁(13) genus 2, rank-0 Jacobian descent (Mazur–Tate 1973) | L | high | P1:21, P2:C4 |
-| C5 | ℓ = 17, 19 by classical explicit methods (Ogg/Kubert) — possible cheapening of the D-core's lower edge | M–L | **low** (P1-only, unverified — PQ3) | P1:21 |
+| C5 | ℓ = 17, 19 by classical explicit methods (Ogg/Kubert) | — | **refuted** (not an active node) | P1:21; literature panel PQ3 |
 
 ### Part D — the modular-Jacobian core (ℓ ≥ 17)
 
@@ -260,10 +260,10 @@ uncontradicted and plausible; low = one pass, unverified content.
 |---|---|---|---|---|
 | W | W from C1–C4 + D9 (ℓ = 5, 7 in full-2-torsion form; ℓ ≥ 11 in no-ℓ-point form); then A5 | S | high | P1:22, P2:W |
 
-**26 nodes** (A1–A5, B1–B5, C1–C5, D1–D9 counting the D6 fork as two, W).
+**26 historical rows** (A1–A5, B1–B5, C1–C5, D1–D9 counting the D6 fork as two, W).
 Nine rows now explicitly carry an XL-or-worse local/closure grade (C2,
-D1–D6a/b and D8), one pair is route-conditional (B3/B4), and C5 remains the
-low-confidence row the panel ordered struck from the active route.
+D1–D6a/b and D8), one pair is route-conditional (B3/B4), and C5 is retained
+only to preserve the refuted claim's provenance; it is not an active node.
 
 Not needed (both passes concur, P1 explicit): Raynaud's isogeny-character
 classification λ¹² = χˢ, resultant computations, class-number-1 endgame — those serve
@@ -288,14 +288,14 @@ contradictions between them; P2's extra edges (A2 → A3, D2 → D5) adopted.
   Kolyvagin–Logachev 1989, or Kato). **Our campaign has no pre-1990 restriction** — the
   decision is on total formalization cost and cross-chapter reuse only. A paper-audit
   decision spike is recommended before any Part-D formalization.
-- **PQ3 — Are ℓ = 17, 19 classical?** P1's unverified Ogg/Kubert attribution (C5). If
-  yes, the D-core's *first* required prime moves to 23, which changes nothing
-  structurally but affects milestone ordering.
-- **PQ4 — Exponent re-basing interface (feeds the hub-lsb1u.12 decision).** How far to
-  push the FLT-regular cheapening: keep all of W; delete {5,7} (P1); delete {5,7,13}
-  (P2); or delete {5,7,11,13} (reconciler: 11 is also regular) leaving only the D-core.
-  Depends on whether the top-level reduction may cite the external FLT-regular Lean
-  development and on upstream-interface politics.
+- **PQ3 — RESOLVED / REFUTED.** The alleged Ogg/Kubert classical treatments of
+  `17` and `19` do not exist; both remain in the D-core. See the literature
+  panel's C5/PQ3 finding.
+- **PQ4 — RESOLVED 2026-09-09.** Re-base the campaign at prime `p ≥ 17` and
+  discharge `{5, 7, 11, 13}` through the closed `flt-regular` small-exponent
+  theorems. Source changes wait only on the pinned compatibility and coordinated
+  B2/B3/B4/Frey/Mazur-W integration contract in
+  [`mazur-exponent-rebase-decision.md`](mazur-exponent-rebase-decision.md).
 - **PQ5 — Unverified citations to confirm before freezing Lean statements.** Serre
   Duke 1987 §4.1 Prop. 6; Silverman AEC VII.3.1; Mazur 1977 Thm 4 and Ch. II
   §9–10; Serre–Tate Thm 2; Kubert 1976 case locations; Billing–Mahler J. LMS 15 (1940)
@@ -331,14 +331,13 @@ contradictions between them; P2's extra edges (A2 → A3, D2 → D5) adopted.
   needed only by the optional `lambda=1` route.
 - Any Part-D formalization beyond D7a — PQ2 (fork) and PQ6 (model sizing) first;
   a decision-spike bead auditing D6a vs D6b on paper should be cut immediately.
-- C5 — PQ3.
 - Statement-freezing for D1 (coarse moduli) — PQ6.
 
-**Await hub-lsb1u.12 (re-basing decision, PQ4):**
+**Resolved by hub-lsb1u.12 (re-basing decision, PQ4):**
 
-- C1, C2, C4 (deleted under any re-basing), C3 (deleted only under the p ≥ 17 variant),
-  and the final shape of W in A5 (state W parametrically over "ℓ ≥ ℓ₀ with small-case
-  side-conditions" so the wiring bead need not wait for the decision).
+- C1–C4 leave the active campaign after the pinned `flt-regular` integration;
+  the active W/Frey obligations start at `p ≥ 17`. The source remains at `p ≥ 5`
+  until the coordinated integration gate is complete.
 
 **Long-lead shared infrastructure** (start scoping with other chapters regardless of
 panel outcomes, since every branch needs them): A2 (Angdinata's torsion work), A3
