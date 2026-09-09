@@ -438,3 +438,10 @@ lemma localTameAbelianInertiaGroup_subgroupOf_le_tameCharacter_ker :
   exact hσ (tameUniformizerRoot v) <| by
     rw [tameUniformizerRoot_spec]
     exact IntermediateField.algebraMap_mem _ _
+
+/-- The deformation-theory subgroup is the kernel of the independently constructed tame
+character. -/
+theorem localTameAbelianInertiaGroup_subgroupOf_eq_tameCharacter_ker :
+    (localTameAbelianInertiaGroup v).subgroupOf (localInertiaGroup v) =
+      (tameCharacter v).ker := by
+  sorry
