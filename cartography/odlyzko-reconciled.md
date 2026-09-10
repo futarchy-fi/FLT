@@ -68,7 +68,8 @@ the panel questions below.
 
 The two claims are compatible.  What matters for formalization is that Poitou’s
 **closed-form inequality (16)** is not enough at the axiom’s exact threshold.  In
-the totally complex case, using the printed constant `6.860404`,
+the totally complex case, using Poitou's printed constant `6.860404` (reproduced
+from the printed inputs as `6.860403968…`),
 
 ```
 rd ≥ exp(γ + log(4π) - 6.860404 n^(-2/3))
@@ -77,8 +78,6 @@ n=19: 8.5399037380…   (above both)
 n=20: 8.8210405402…
 ```
 
-Using P2’s more conservative recomputation `6.8653` lowers these to about
-`8.23732`, `8.53403`, and `8.81518`, respectively; the verdict is unchanged.
 Consequently:
 
 1. retaining `hdim ≥ 18` forces the finite-series refinement (Poitou (19)–(26),
@@ -111,7 +110,7 @@ statement/placement, not a claim that the proof is already available.
 |---:|---|---|---|---|
 | M1 | Basic Dedekind-zeta package (N1 / B2) | Euler product, absolute convergence and nonvanishing for `Re s>1`, logarithmic derivative, and the residue input needed by the explicit formula. | S–M | high for definitions; medium for the specialized Euler-product API |
 | M2 | Completed zeta and FE (N2+N3 / B1) | `Λ_K(s)` with continuation, poles at `0,1`, and `Λ_K(s)=Λ_K(1-s)` for general `K`. | XL | high (statement); low (availability) |
-| M3 | Strip zeros and horizontal estimates (N4 / B3) | Zeros in `0<Re s<1`, zero counting, and the horizontal-contour estimates needed to choose admissible heights. | XL | medium |
+| M3 | Strip zeros and horizontal estimates (N4 / B3) | Zeros in `0<Re s<1`, zero counting, and the horizontal-contour estimates needed to choose admissible heights. | 13 S + 8 M | decomposed into 21 proof nodes; see `odlyzko-m3-decomposition.md` |
 | M4 | Rectangle/argument-principle identity (part of N6 / B4) | Poitou’s contour identity relating the zero sum, pole terms, and the boundary integral. | M | medium |
 | M5 | Prime-side limit (part of N6 / B5) | Limit of the vertical integral to the prime-power sum with Poitou’s normalization and sign. | M | medium |
 | M6 | Archimedean Γ/digamma side (N8 / B6) | Evaluate/bound the real and complex Γ-factor integrals, including the digamma identities. | L | medium |
@@ -139,6 +138,22 @@ M13 is an alternative to M10+M11 only when the consumer supplies n ≥ 19.
 The diagram is schematic: M6 also uses the Γ portion of M2, and M8/M9 use the
 test-function hypotheses from M7.  No node claims that the general FE is already
 present in Mathlib.
+
+### 2.4 Repair and port status
+
+- **R1:** `odlyzko-r1.md` now records the Fontaine consumer bound, its primary
+  sources, and the degree-15--17 coverage analysis.  The formal connector from the
+  ModThree kernel field to that interface remains to be written.
+- **R2:** `odlyzko-m3-decomposition.md` completes the demanded decomposition of M3:
+  21 nodes (13 S and 8 M), with deepest chain length 8.  This retires the opaque XL
+  estimate, not the constituent proof obligations.
+- **AINTLIB:** the AINTLIB-0′ build gate is green at revision `1c1c74664e40`:
+  `aintlib-substrate.md` Addendum 4 records 26 `CompletedZeta` + `ExplicitFormula`
+  modules, 8722 build jobs in 804 seconds, and a transitive `#print axioms` check on
+  `DedekindResidue.completedDedekindZeta_one_sub` containing only standard axioms.
+  The source is not vendored in FLT, so no in-repository completion credit is taken
+  until AINTLIB-2 lands; the green gate is evidence of build viability and scoped
+  coverage, not a proof of `Odlyzko_statement`.
 
 ## 3. P2 interface question: may the degree bound become 19?
 
@@ -205,10 +220,11 @@ approved optimization if a degree-19 lemma is later supplied.
 
 > **DECOMPOSED, 2026-08-16T13:59Z — see `odlyzko-endgame-decomposition.md`.** The five
 > nodes below are now broken into **22 S/M leaves** (12 S, 9 M, 1 gated), which retires
-> M10's L. Six are dispatchable today with no port and no PQ1: P1, Q1, R1, R2, T1, P2.
-> The section below is kept as the statement of intent; the decomposition supersedes it as
-> the thing to dispatch from. Note also that M4–M7 are now believed covered sorry-free and
-> GRH-free by AINTLIB (`aintlib-substrate.md` §A5–A6), gated on AINTLIB-0′.
+> M10's L. Six are dispatchable today without waiting for the vendor port: P1, Q1, R1,
+> R2, T1, P2. The section below is kept as the statement of intent; the decomposition
+> supersedes it as the thing to dispatch from. Separately, AINTLIB-0′ is green and
+> `aintlib-substrate.md` records signature-level coverage of M4–M7, but AINTLIB-2 has
+> not vendored that source into FLT, so those nodes receive no in-repository proof credit.
 
 These can be cut as work beads without a decision on the FE route or on the degree
 threshold:
@@ -227,4 +243,3 @@ threshold:
 
 The auxiliary Minkowski thresholds are already ready and sorry-free; they should be
 reused by ModThree for its tame subcases, but they do not discharge Odlyzko.
-
