@@ -5,13 +5,14 @@ Authors: Kelly Azevedo Santos
 -/
 module
 
-public import FLT.Odlyzko.Autocorrelation
+public import FLT.Odlyzko.PoitouKernel
 
 /-!
 # Scaling Odlyzko test functions
 
-We use the convention `F_y(x) = F(x / y)`.  With this convention and `y > 0`,
-the Fourier transform is `\widehat{F_y}(t) = y \widehat F(y t)`.
+The generic helper `scaled F y` uses the convention `F(x / y)`.  In the unconditional
+Poitou family it is the real numerator `f`, not the explicit-formula kernel, that is
+scaled.  The resulting kernel is `poitouKernel (scaledNumerator f y)`.
 
 The elementary structural properties are recorded here.  Preserving the full
 `IsAdmissibleTestFn` predicate for every positive scale needs the compact-support
@@ -26,8 +27,21 @@ open MeasureTheory
 
 namespace Odlyzko
 
-/-- The scaling convention used in the Odlyzko optimization: `F_y(x) = F(x / y)`. -/
+/-- Generic scaling by division in the argument. -/
 noncomputable def scaled (F : ℝ → ℂ) (y : ℝ) : ℝ → ℂ := fun x ↦ F (x / y)
+
+/-- The real numerator scaled before the Poitou kernel is formed. -/
+noncomputable def scaledNumerator (f : ℝ → ℝ) (y : ℝ) : ℝ → ℝ := fun x ↦ f (x / y)
+
+/-- The unconditional scaled kernel: scale `f` first, then divide by `cosh(x / 2)`. -/
+noncomputable def scaledPoitouKernel (f : ℝ → ℝ) (y : ℝ) : ℝ → ℂ :=
+  poitouKernel (scaledNumerator f y)
+
+@[simp] theorem scaledPoitouKernel_apply (f : ℝ → ℝ) (y x : ℝ) :
+    scaledPoitouKernel f y x = ((f (x / y) / Real.cosh (x / 2) : ℝ) : ℂ) := rfl
+
+theorem complexify_scaledNumerator (f : ℝ → ℝ) (y : ℝ) :
+    complexify (scaledNumerator f y) = scaled (complexify f) y := rfl
 
 /-- Fourier transform of `F_y(x) = F(x / y)` for a positive scale. -/
 theorem fourier_scaled (F : ℝ → ℂ) {y : ℝ} (hy : 0 < y) (t : ℝ) :
@@ -60,6 +74,13 @@ theorem fourier_scaled_nonneg (F : ℝ → ℂ) {y : ℝ} (hy : 0 < y)
     0 ≤ (𝓕 (scaled F y) t).re := by
   rw [fourier_scaled F hy t]
   simpa using mul_nonneg hy.le (hF (y * t))
+
+/-- Fourier positivity is preserved on the numerator of the scaled Poitou family. -/
+theorem fourier_scaledNumerator_nonneg (f : ℝ → ℝ) {y : ℝ} (hy : 0 < y)
+    (hf : ∀ t, 0 ≤ (𝓕 (complexify f) t).re) (t : ℝ) :
+    0 ≤ (𝓕 (complexify (scaledNumerator f y)) t).re := by
+  rw [complexify_scaledNumerator]
+  exact fourier_scaled_nonneg (complexify f) hy hf t
 
 /-- Evenness is preserved by scaling. -/
 theorem scaled_even (F : ℝ → ℂ) (y : ℝ) (hF : Function.Even F) :

@@ -242,11 +242,14 @@ public import FLT.Odlyzko.ExponentialForm
 public import FLT.Odlyzko.Interval.Constants
 public import FLT.Odlyzko.Interval.Rat
 public import FLT.Odlyzko.Monotonicity
+public import FLT.Odlyzko.PoitouKernel
+public import FLT.Odlyzko.PoitouRegularization
 public import FLT.Odlyzko.PrimeSide
 public import FLT.Odlyzko.ScaledInequality
 public import FLT.Odlyzko.Scaling
 public import FLT.Odlyzko.UniformBound
 public import FLT.Odlyzko.ZeroSideCritical
+public import FLT.Odlyzko.ZeroSideOffCritical
 public import FLT.Patching.Algebra
 public import FLT.Patching.Module
 public import FLT.Patching.Over
