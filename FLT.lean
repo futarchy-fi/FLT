@@ -17,6 +17,7 @@ public import FLT.AutomorphicForm.Stuff
 public import FLT.Basic.Lemmas
 public import FLT.CyclicBaseChange.Chebotarev
 public import FLT.CyclicBaseChange.Satake
+public import FLT.CyclicBaseChange.Statements
 public import FLT.Data.Hurwitz
 public import FLT.Data.HurwitzRatHat
 public import FLT.Data.QHat
