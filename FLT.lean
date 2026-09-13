@@ -248,6 +248,7 @@ public import FLT.Odlyzko.Interval.Rat
 public import FLT.Odlyzko.Monotonicity
 public import FLT.Odlyzko.PoitouKernel
 public import FLT.Odlyzko.PoitouRegularization
+public import FLT.Odlyzko.PoitouSeries
 public import FLT.Odlyzko.PrimeSide
 public import FLT.Odlyzko.ScaledInequality
 public import FLT.Odlyzko.Scaling
