@@ -249,6 +249,7 @@ public import FLT.Odlyzko.PoitouRegularization
 public import FLT.Odlyzko.PrimeSide
 public import FLT.Odlyzko.ScaledInequality
 public import FLT.Odlyzko.Scaling
+public import FLT.Odlyzko.Tartar
 public import FLT.Odlyzko.UniformBound
 public import FLT.Odlyzko.ZeroSideCritical
 public import FLT.Odlyzko.ZeroSideOffCritical
