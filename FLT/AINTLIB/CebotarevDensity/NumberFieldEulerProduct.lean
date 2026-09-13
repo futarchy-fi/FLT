@@ -69,8 +69,10 @@ section NumberFieldEulerProduct
 
 variable (L : Type*) [Field L] [NumberField L]
 
+@[nolint docBlame]
 abbrev NonzeroIdeal : Type _ := {I : Ideal (𝓞 L) // I ≠ ⊥}
 
+@[nolint docBlame]
 noncomputable def idealNormMultiplicity (n : ℕ) : ℕ :=
   Nat.card {I : NonzeroIdeal L // Ideal.absNorm I.1 = n}
 
