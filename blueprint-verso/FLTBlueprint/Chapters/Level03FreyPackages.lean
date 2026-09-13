@@ -13,8 +13,8 @@ open Informal
 The story so far: we have reduced Fermat's Last Theorem to proving statement $`B_2`.
 In this level, we define a _Frey package_ to be, basically, a counterexample to
 Fermat's Last Theorem satisfying certain extra conditions. Statement $`B_3` is the
-statement that there are no Frey packages. The boss of this level will be to prove
-that $`B_3` implies $`B_2`.
+statement that there are no Frey packages whose exponent is at least $`17`. The
+boss of this level will be to prove that $`B_3` implies $`B_2`.
 
 It is at this point in the argument where we need the concept of negative numbers.
 So let's assume familiarity with the integers $`\Z={}\ldots,-2,-1,0,1,2,\ldots\}`
@@ -49,22 +49,23 @@ the concept of a Frey curve in the next level.
 
 Now we've made the definition, we can write down statement $`B_3`:
 :::definition "Statement_B3_no_Frey_Package" (parent := "frey") (lean := "FLT.Bosses.B3")
-There are no {uses "frey_package"}[Frey packages].
+There are no {uses "frey_package"}[Frey packages] whose exponent is at least $`17`.
 :::
 
 Recall that we've reduced Fermat's Last Theorem to theorem $`B_2`:
-Fermat's Last Theorem is true for $`n=p\geq5` prime. We will now
+Fermat's Last Theorem is true for $`n=p\geq17` prime. We will now
 show that this statement follows from theorem $`B_3`, the nonexistence of
-Frey packages.
+such large-exponent Frey packages.
 
-:::lemma_ "B_3_no_Frey_Package_implies_B_2_FLT_for_p_geq_5" (parent := "frey") (lean := "FreyPackage.fermatLastTheoremFor_p_ge_5")
-Suppose that there are {uses "Statement_B3_no_Frey_Package"}[no Frey packages].
-Then Fermat's Last Theorem is true for all primes $`p \geq 5`.
+:::lemma_ "B_3_no_large_Frey_Package_implies_B_2_FLT_for_p_geq_17" (parent := "frey") (lean := "FreyPackage.fermatLastTheoremFor_p_ge_17")
+Suppose that there are {uses "Statement_B3_no_Frey_Package"}[no Frey packages
+of exponent at least $`17`]. Then Fermat's Last Theorem is true for all primes
+$`p \geq 17`.
 :::
 
-:::proof "B_3_no_Frey_Package_implies_B_2_FLT_for_p_geq_5"
+:::proof "B_3_no_large_Frey_Package_implies_B_2_FLT_for_p_geq_17"
 We prove the contrapositive. Suppose that we have a counterexample to FLT with positive
-integers $`a,` $`b` and $`c` and a prime $`p \geq 5.`
+integers $`a,` $`b` and $`c` and a prime $`p \geq 17.`
 We massage the counterexample into one satisfying all the extra conditions of
 a Frey package.
 
@@ -91,19 +92,19 @@ After this step $`b` is even and $`a`, $`c` are both odd.
 If $`a \equiv 1 \pmod 4`, replace $`(a, b, c)` by $`(-a, -b, -c)`; we still
 have $`(-a)^p+(-b)^p=(-c)^p`, $`-b` is still even, and $`-a` is now 3 mod 4.
 
-The resulting data $`(a, b, c, p)` is a {uses "frey_package"}[Frey package],
-which was what we were required to construct.
+The resulting data $`(a, b, c, p)` is a {uses "frey_package"}[Frey package]
+with the same exponent $`p \geq 17`, which was what we were required to construct.
 :::
 
 In the next level, we will begin the proof of $`B_3`. Assuming it for now,
 we can deduce
 
 :::theorem "B2_proof" (parent := "frey") (lean := "FLT.Bosses.B2_proof")
-Statement $`B_2` is true. In other words, FLT is true for $`p\geq5` prime.
+Statement $`B_2` is true. In other words, FLT is true for $`p\geq17` prime.
 :::
 
 :::proof "B2_proof"
-Follows from {uses "B_3_no_Frey_Package_implies_B_2_FLT_for_p_geq_5"}[the above argument],
+Follows from {uses "B_3_no_large_Frey_Package_implies_B_2_FLT_for_p_geq_17"}[the above argument],
 assuming {uses "B3_proof"}[$`B_3.`]
 :::
 

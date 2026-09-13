@@ -21,7 +21,7 @@ statement $`B_1`, for reasons which will become clearer in a minute.
 From now on, every level in the game will be to *reduce* our problem
 to a slightly easier one. For example, in this level, our goal will be
 to reduce FLT to the special case where $`n`
-is prime and at least $`5`. Before we start, we should observe that even this
+is prime and at least $`17`. Before we start, we should observe that even this
 relatively straightforward task would be _extremely_ long and tedious assuming
 only the axioms of mathematics. For example, although we have defined addition
 and multiplication, we have not yet established any of the basic facts about
@@ -37,20 +37,21 @@ such as factoring numbers into primes.
 
 :::group "reductions"
 The reduction of Fermat's Last Theorem to the case of prime exponent at least
-five.
+seventeen.
 :::
 
 Consider the following statement $`B_2`:
 
-:::definition "Statement_B2_FLT_for_p_geq_5_prime" (parent := "reductions") (lean := "FLT.Bosses.B2")
-For every prime number $`p \geq 5`,
+:::definition "Statement_B2_FLT_for_p_geq_17_prime" (parent := "reductions") (lean := "FLT.Bosses.B2")
+For every prime number $`p \geq 17`,
 Fermat's Last Theorem holds for the exponent $`p`: there are no positive natural
 numbers $`a, b, c` with $`a^p + b^p = c^p`.
 :::
 
 The theorem we shall prove in this level is that statement $`B_2` implies
-statment $`B_1` (which is Fermat's Last Theorem). We will do this, assuming
-two old theorems which date back centuries.
+statement $`B_1` (which is Fermat's Last Theorem). Besides the old theorems for
+exponents $`3` and $`4`, we use the formalized regular-prime proofs for the
+remaining exponents below $`17`.
 
 :::theorem "flt_three" (parent := "reductions") (lean := "fermatLastTheoremThree")
 *\[Euler\⟧* There are no positive natural numbers $`a, b, c` with
@@ -102,6 +103,16 @@ sequence of solutions, each smaller than the one before. But this cannot happen 
 positive integer solutions.
 :::
 
+:::theorem "flt_small" (parent := "reductions") (lean := "FLT_small")
+Fermat's Last Theorem holds for every exponent $`n` with $`3 \leq n \leq 16`.
+:::
+
+:::proof "flt_small" (uses := "flt_three, flt_four")
+The composite theorem is imported from the formalization of FLT for regular
+primes. Its only new prime cases are $`5`, $`7`, $`11`, and $`13`; the composite
+cases follow by divisibility from these and from the cases $`3` and $`4`.
+:::
+
 With these results under our belt, beating level 2 is easy. We explain the details.
 
 :::lemma_ "FLT_mono" (parent := "reductions") (lean := "FermatLastTheoremFor.mono")
@@ -133,12 +144,12 @@ is an odd prime other than $`3`, hence $`p \geq 5` divides $`n`.
 We can now prove the "boss" result of this level, namely that
 statement $`B_2` implies statement $`B_1`, which is Fermat's Last Theorem.
 
-:::theorem "B2_implies_B1" (parent := "reductions") (lean := "FermatLastTheorem.of_p_ge_5")
+:::theorem "B2_implies_B1" (parent := "reductions") (lean := "FermatLastTheorem.of_small_and_p_ge_17")
 If we can prove that $`a^p+b^p=c^p` has no solutions in positive integers
-for $`p\geq5` prime, then Fermat's Last Theorem is true in general.
+for $`p\geq17` prime, then Fermat's Last Theorem is true in general.
 :::
 
-:::proof "B2_implies_B1" (uses := "Statement_B2_FLT_for_p_geq_5_prime")
+:::proof "B2_implies_B1" (uses := "Statement_B2_FLT_for_p_geq_17_prime, flt_small")
 By contradiction. Let's assume Fermat's Last Theorem is false, so we have $`n \geq 3`
 and a solution to $`x^n+y^n=z^n` in positive integers, and let's construct a
 counterexample to statement $`B_2`.
@@ -147,13 +158,9 @@ By {uses "three_dvd_or_four_dvd_or_prime_dvd"}[the previous lemma], $`n` is a mu
 of $`3`, of $`4`, or of a prime $`p \geq 5`.
 
 By {uses "FLT_mono"}[the descent lemma], Fermat's Last Theorem must be false for
-$`n=3`, $`n=4` or for some prime $`p \geq 5.`
-
-However, we have just seen that Fermat's Last Theorem is true
-for {uses "flt_three"}[$`n=3`] and {uses "flt_four"}[$`n=4`].
-The only possibility
-left is that it is false for some prime $`p \geq 5`. Hence statement $`B_2` is
-false, which is what we wanted to prove.
+$`n=3`, $`n=4` or for some prime $`p \geq 5.` If $`p < 17`, this contradicts
+{uses "flt_small"}[the closed small-exponent theorem]. The only possibility left
+is therefore a prime $`p \geq 17`, which contradicts statement $`B_2`.
 :::
 
 Assuming $`B_2` for now, we are of course done.
@@ -162,8 +169,9 @@ Assuming $`B_2` for now, we are of course done.
 Fermat's Last Theorem is true.
 :::
 
-:::proof "flt_proof" (uses := "Statement_B2_FLT_for_p_geq_5_prime, B_3_no_Frey_Package_implies_B_2_FLT_for_p_geq_5")
+:::proof "flt_proof" (uses := "Statement_B2_FLT_for_p_geq_17_prime, B_3_no_large_Frey_Package_implies_B_2_FLT_for_p_geq_17")
 Follows from {uses "B2_implies_B1"}[the above argument], assuming {uses "B2_proof"}[$`B_2.`]
 :::
 
-So all we have to do now is to prove statement $`B_2`. We start on this in level 3.
+So all we have to do now is to prove statement $`B_2` for primes at least $`17`.
+We start on this in level 3.

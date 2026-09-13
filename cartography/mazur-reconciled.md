@@ -21,7 +21,7 @@ high-confidence backbone of the chapter map.
 | G3 | The bound 16 is only ever applied to curves with **full rational 2-torsion** (Frey curve and its quotient E/C) plus a rational point of prime order ℓ ≥ 5; contradiction 4ℓ ≥ 20 > 16 | §1 | §1.1, 1.3 |
 | G4 | **The same weakest statement W** (see below), independently derived, including the same per-ℓ refinement | §1 W, W-a/b/c | §1.3 |
 | G5 | Quotient-by-finite-Galois-stable-subgroup (blueprint `Elliptic_curve_quotient_by_finite_subgroup`) is a hard, blueprint-flagged (`\notready`) prerequisite; grade L | node 3 | A3 |
-| G6 | The ℓ ≥ 17 core goes through modular Jacobians: X₀(ℓ) over Q + integral model, J₀(ℓ), Néron models, Hecke algebra, a rank-0 quotient, and a formal-immersion argument at the cusp | nodes 8-19 | D1-D9 |
+| G6 | The ℓ ≥ 17 core goes through modular Jacobians: X₀(ℓ) over Q + integral model, J₀(ℓ), Néron models, Hecke algebra, a finite-Mordell--Weil quotient, and Mazur's III §5 local-splitting/Herbrand endgame; formal immersion is an optional alternative | nodes 8-19 | D1-D9; D8 page audit |
 | G7 | **The D6 fork**: Mazur's Eisenstein-quotient descent vs Merel-style winding quotient; both XL(+); the single biggest route decision; no third route found by either pass | node 16/16′, §5 | D6a/D6b, R2 |
 | G8 | Cheapening via the FLT-regular Lean project (arXiv:2410.01466): classical FLT for small regular exponents can delete the fiddly small-ℓ cases by re-basing the top-level reduction; this is an **interface change** needing a project-level decision | §1, §5 | R3 |
 | G9 | Mathlib status: elliptic curves/group law **exist**; division polynomials **partial**; modular forms/q-expansions **partial**, no Hecke operators; modular curves as schemes, Jacobians/abelian varieties, Néron models, finite flat group schemes, étale cohomology **absent**; class groups/Minkowski **exist**; FLT-repo seeds in `FLT/EllipticCurve/Torsion.lean`, `FLT/TateCurve/`, `FLT/GroupScheme/FiniteFlat.lean` | §4 | §4 |
@@ -63,20 +63,20 @@ splicing the *isogeny*-theorem endgame of Michaud-Jacobs with trivial isogeny ch
 ℓ | 1 − a₃ + 3 = 4 − a₃ with |a₃| ≤ 2√3 (Hasse), so ℓ ≤ 7 — contradiction. P1 itself
 marked this reconstructed.
 
-P2's D8 instead follows the standard torsion-theorem shape (Mazur 1977 / Snowden
-Math 679 / Rebolledo): an order-ℓ point with ℓ ≥ 17 forces the associated non-cuspidal
-point of X₀(ℓ)(ℚ) to reduce to a cusp mod 2 (or 3) — via Néron-model/small-special-fibre
-counting (an order-ℓ point cannot inject into Ẽ(F₂), #Ẽ(F₂) ≤ 5, unless reduction is
-multiplicative) — and the formal immersion then forces the point to *equal* the cusp.
+The page-level audit (`cartography/mazur-d8-page-audit.md`) found that P2's D8
+does **not** match Mazur 1977.  The paper's primary route is Chapter III §5,
+pp. 156--160: small-fibre/Néron arguments at 2 and 3 feed a global bad-prime
+specialization argument on the Eisenstein quotient; local splitting then makes
+an auxiliary extension of `Q(mu_ell)` everywhere unramified; Herbrand and an
+infinite isogeny chain finish.  No formal immersion or Atkin--Lehner involution
+appears in that chain.
 
-**Resolution:** the two endgames are near-equivalent counting arguments
-(ℓ | #Ẽ(F_q) with #Ẽ(F_q) small), but **P2's D8 formulation matches the sourced
-literature route and is adopted as primary**; P1's λ = 1 trace-bound variant is retained
-as an unverified alternative (it has the merit of reusing the isogeny-paper skeleton and
-Michaud-Jacobs's write-up). Residual: the exact derivation must still be checked against
-Mazur 1977 Theorem 8 and Snowden L20–L25 before Lean statements are frozen —
-**panel question PQ1**. A side benefit of the P2 shape: at q = 2, 3 the fibre counts can
-be obtained by finite enumeration, potentially avoiding the general Hasse bound (see D-e).
+**Resolution after the PQ1 spike:** adopt the exact Mazur/Snowden criterion as
+primary and move D7a/D7b to the alternative isogeny route.  P1's `lambda = 1`
+trace-bound splice is valid conditional on that route: `ell | 4-a_3` and
+integrality plus `|a_3| <= 2 sqrt(3) < 4` give `1 <= 4-a_3 <= 7`, so the feared
+`a_3=4` boundary cannot occur.  It is not the 1977 proof and is not cheaper unless
+the formal-immersion/potentially-good-reduction stack already exists.
 
 ### D-b. P2's Merel/winding claim: Kolyvagin–Logachev 1989 + Gross–Zagier (adjudicated)
 
@@ -124,13 +124,13 @@ also doable classically (node 21, listing X₁(17), X₁(19) as Ogg/Kubert). P2 
 ℓ = 11, 13 firmly in the classical Part C and starts the modular-Jacobian core at
 ℓ ≥ 17, with no classical claim for 17, 19.
 
-**Resolution:** partially resolved. ℓ = 11 (Billing–Mahler) and ℓ = 13 (Mazur–Tate,
+**Resolution:** resolved. ℓ = 11 (Billing–Mahler) and ℓ = 13 (Mazur–Tate,
 genus 2 — note P1 itself observes X₀(13) has genus 0, so 13 cannot go through the
-Eisenstein route regardless) are certainly classical: both passes agree. Whether
-ℓ = 17, 19 have genuinely classical, formalization-cheaper proofs (P1's Ogg/Kubert
-attribution, explicitly marked unverified) **is unresolved — panel question PQ3**. The
-reconciled map conservatively routes ℓ ≥ 17 through the D-core (P2), with C5 recorded
-as a possible cheapening.
+Eisenstein route regardless) are certainly classical. The literature panel refuted
+P1's Ogg/Kubert attribution for ℓ = 17, 19: those higher-genus cases were resolved by
+Mazur's general theorem, not by the alleged earlier shortcut. The reconciled map
+therefore routes every ℓ ≥ 17 through the D-core and retains C5 only as refuted
+historical provenance.
 
 ### D-e. Hasse bound and Serre–Tate nodes (P1-only: nodes 5, 6)
 
@@ -150,24 +150,27 @@ surjectivity + Nakayama ⇒ point separation) has no modular content and is an i
 work-bead candidate; keeping it separate preserves the only shovel-ready node in
 Part D. Adopted as D7a/D7b.
 
-### D-g. Rank-0 certification machinery (P2-only: B2/B3)
+### D-g. Small-curve certification machinery (P2-only: B2/B3)
 
-P2 alone itemizes *how* the small-curve cases are certified (per-curve full 2-descent;
-a two-prime point-count sieve reduces the torsion part but cannot remove the rank-0
-input). P1's node 21 hand-waves "explicit descent". **Resolution: P2 adopted** — this is
-a real cost (one descent per target curve) and belongs in the map.
+P2 alone tried to itemize *how* the small-curve cases are certified.  The
+explicit-model audit in `mazur-ready-now-resolution.md` found that this was not
+uniform: `X_1(2,10)` and `X_1(11)` are genus 1, `X_1(13)` is genus 2, but
+`X_1(2,14)` is genus 4.  A two-prime point-count sieve can reduce a torsion
+calculation but cannot remove the rank or rational-point input. **Resolution:**
+retain separate model, modular-interpretation, cusp and rational-point
+certificates for every curve; never route the genus-4 case through elliptic
+`2`-descent.
 
 ### D-h. Which regular primes the FLT-regular cheapening removes
 
-P1 proposes re-basing at p ≥ 11 (deleting ℓ = 5, 7). P2 proposes deleting p ∈ {5, 7, 13}
-(shrinking W to "no ℓ-point, ℓ ≥ 11, ℓ ≠ 13"). **Reconciler observation: both
-understate the option.** 11 is *also* a regular prime (the first irregular prime is 37),
-and the FLT-regular project covers all regular primes ≥ 5, so re-basing could in
-principle go to **p ≥ 17 with p regular-excluded**, i.e. delete C1–C4 entirely and leave
-only the D-core plus glue. Whether the upstream/top-level reduction interface allows
-citing an external Lean development, and how far to push the re-basing, is the
-**hub-lsb1u.12 decision (panel question PQ4)**. Until decided, the map keeps all of
-Part C.
+P1 proposed re-basing at p ≥ 11 (deleting ℓ = 5, 7). P2 proposed deleting
+p ∈ {5, 7, 13}. **Resolved 2026-09-09:** `hub-lsb1u.12` adopted the stronger
+**p ≥ 17** campaign boundary, with closed upstream Lean theorems discharging
+`5`, `7`, `11`, and `13`. See
+[`mazur-exponent-rebase-decision.md`](mazur-exponent-rebase-decision.md) for the
+source audit, adversarial composition check, and integration gate. C1–C4 remain
+documented history but cease to be campaign proof obligations after the pinned
+external interface and all downstream quantifier changes compile.
 
 ### D-i. Difficulty-grade disagreements (resolved by max, per protocol)
 
@@ -193,8 +196,9 @@ Part C.
   needed to swap cusps in its node 19) and P2's Eichler–Shimura relation (D5) — both
   retained in the merged D1/D5.
 
-**Divergence tally: 10 catalogued; 7 fully resolved (D-b, D-c, D-e, D-f, D-g, D-i,
-D-j); 3 resolved-with-residual routed to panel (D-a → PQ1, D-d → PQ3, D-h → PQ4).**
+**Divergence tally: 10 catalogued; all 10 resolved.** PQ1 fixed D-a's exact
+endgame, PQ3 refuted D-d's alleged 17/19 shortcut, and PQ4 fixed D-h's campaign
+boundary at `p ≥ 17` subject to the recorded integration gate.
 
 ---
 
@@ -219,20 +223,20 @@ uncontradicted and plausible; low = one pass, unverified content.
 | Node | Statement | Diff | Conf | Source |
 |---|---|---|---|---|
 | B1 | Good reduction at q ⇒ E(ℚ)_tors → Ẽ(F_q) injective on prime-to-q torsion | L | high | P1:4, P2:B1 |
-| B2 | Rank-0 certification for the specific curves X₁(11), X₁(2,10), X₁(2,14) by per-curve full 2-descent (+ point-count sieve for the torsion part); genus-2 variant for X₁(13) | M per curve (L for genus 2) | high | P2:B2/B3; P1:21 implicit |
+| B2 | Per-curve rational-point certification: elliptic rank/torsion for X₁(11) and X₁(2,10), Jacobian descent for genus-2 X₁(13), and a genuine high-genus argument/Kubert reduction for genus-4 X₁(2,14) | M--XL per curve | high (curve data; proof locators still vary) | P2:B2/B3 corrected by explicit-model audit; P1:21 implicit |
 | B3 | Hasse bound #Ẽ(F_q) = q+1−a_q, |a_q| ≤ 2√q — **conditional**: needed by the P1 endgame variant; possibly replaceable by finite enumeration over F₂, F₃ in the P2 endgame | L | medium (pending PQ1) | P1:5 |
 | B4 | Serre–Tate: potentially good reduction ⇔ v_q(j) ≥ 0; integral trace bound — **conditional**, same status as B3 | L | medium (pending PQ1) | P1:6 |
 | B5 | Tate curve / potentially multiplicative reduction: structure over ℚ_q for v_q(j) < 0; multiplicative reduction ⇒ the X₀-point reduces to a cusp (FLT-repo `FLT/TateCurve/` in progress) | L | high | P1:7, P2:D8-input |
 
-### Part C — small primes (survives in full only if no re-basing; see PQ4)
+### Part C — small primes (historical after the PQ4 integration lands)
 
 | Node | Statement | Diff | Conf | Source |
 |---|---|---|---|---|
 | C1 | ℓ = 5: no ℤ/2×ℤ/10 ⊆ E(ℚ) — X₁(2,10) elliptic, rank 0, cusps only (Kubert 1976) | L | high | P1:21 W-c, P2:C1 |
-| C2 | ℓ = 7: no ℤ/2×ℤ/14 — X₁(2,14) (Kubert 1976) | L | high | P1:21 W-b, P2:C2 |
+| C2 | ℓ = 7: no ℤ/2×ℤ/14 — `X₁(2,14)` is genus 4, so it needs Kubert's reduction or a genuine high-genus rational-point proof, not elliptic `2`-descent | XL | high (genus/model verified; proof citation remains PQ5) | P1:21 W-b, P2:C2; `mazur-ready-now-resolution.md` |
 | C3 | ℓ = 11: Y₁(11)(ℚ) = ∅ — X₁(11) elliptic, rank 0 (Billing–Mahler 1940) | M | high | P1:21, P2:C3 |
 | C4 | ℓ = 13: Y₁(13)(ℚ) = ∅ — X₁(13) genus 2, rank-0 Jacobian descent (Mazur–Tate 1973) | L | high | P1:21, P2:C4 |
-| C5 | ℓ = 17, 19 by classical explicit methods (Ogg/Kubert) — possible cheapening of the D-core's lower edge | M–L | **low** (P1-only, unverified — PQ3) | P1:21 |
+| C5 | ℓ = 17, 19 by classical explicit methods (Ogg/Kubert) | — | **refuted** (not an active node) | P1:21; literature panel PQ3 |
 
 ### Part D — the modular-Jacobian core (ℓ ≥ 17)
 
@@ -245,9 +249,9 @@ uncontradicted and plausible; low = one pass, unverified content.
 | D5 | Hecke algebra 𝕋 on J₀(ℓ); Cot ≅ S₂(Γ₀(ℓ)) compatibly with q-expansions; Eichler–Shimura relation on the fibre at p | XL | high | P1:14, P2:D5 |
 | D6a | **Fork prong 1**: Eisenstein ideal, 𝕋/𝕀 ≅ ℤ/num((ℓ−1)/12), Mazur's descent ⇒ Eisenstein quotient has rank 0 (flat cohomology, Raynaud, finite flat group schemes over ℤ) | XL+ | high | P1:15+16, P2:D6a |
 | D6b | **Fork prong 2**: winding quotient (Merel), analytic rank 0 by construction; MW rank 0 via Kolyvagin–Logachev 1989 (on Gross–Zagier 1986) or Kato 2004 | XL+ | high | P1:16′, P2:D6b |
-| D7a | Formal-immersion criterion (pure commutative algebra: cotangent surjectivity + Nakayama ⇒ points reducing to the same F_q-point and mapping equally are equal) | S/M | high | P1:17 (P2:D7 subsumed) |
-| D7b | X₀(ℓ) → J₀(ℓ) → A is a formal immersion at ∞̃ in char q ∈ {2, 3} (Cot(A) ↪ Cot(J₀), q-expansions, a₁ ≠ 0) | L–XL | high | P1:18, P2:D7 |
-| D8 | An order-ℓ rational point (ℓ ≥ 17) yields non-cuspidal x ∈ X₀(ℓ)(ℚ) reducing to a cusp mod 2 (or 3); formal immersion + w_ℓ ⇒ x is a cusp — contradiction. **Primary formulation = P2's small-fibre/Néron route; P1's λ = 1 trace-bound variant recorded as alternative** | L | medium (formulation frozen only after PQ1) | P2:D8; P1:19+20 |
+| D7a | Formal-immersion criterion (pure commutative algebra: cotangent surjectivity + Nakayama ⇒ points reducing to the same F_q-point and mapping equally are equal); **alternative isogeny route only** | S/M local, L closure | high | P1:17; `mazur-d8-page-audit.md` |
+| D7b | X₀(ℓ) → J₀(ℓ) → A is a formal immersion at ∞̃ in odd characteristic (Cot(A) ↪ Cot(J₀), q-expansions, a₁ ≠ 0); **alternative isogeny route only** | L–XL | high | P1:18; `mazur-d8-page-audit.md` |
+| D8 | **Frozen primary route:** Mazur 1977 III §5 criterion. A D6 quotient `f : X₀(ℓ) → A` with good reduction away from ℓ, finite `A(ℚ)`, and `f(0) ≠ f(∞)` excludes rational ℓ-torsion via semistability, the fibres at 2/3, torsion specialization at odd primes, local splitting, unramifiedness over ℚ(μ_ℓ), Herbrand, and the infinite-isogeny argument. No formal immersion or w_ℓ. The valid `λ=1` trace splice remains an optional D7-based route. | L local / XL+ closure | high | Mazur 1977 III §5 pp.156–160; Snowden L18; `mazur-d8-page-audit.md` |
 | D9 | Assembly: Y₁(ℓ)(ℚ) = ∅ for prime ℓ ≥ 17 | M | high | P2:D9; P1:20 |
 
 ### Assembly
@@ -256,8 +260,10 @@ uncontradicted and plausible; low = one pass, unverified content.
 |---|---|---|---|---|
 | W | W from C1–C4 + D9 (ℓ = 5, 7 in full-2-torsion form; ℓ ≥ 11 in no-ℓ-point form); then A5 | S | high | P1:22, P2:W |
 
-**26 nodes** (A1–A5, B1–B5, C1–C5, D1–D9 counting the D6 fork as two, W). Six are
-XL-or-worse (D1–D6), one conditional pair (B3/B4), one low-confidence (C5).
+**26 historical rows** (A1–A5, B1–B5, C1–C5, D1–D9 counting the D6 fork as two, W).
+Nine rows now explicitly carry an XL-or-worse local/closure grade (C2,
+D1–D6a/b and D8), one pair is route-conditional (B3/B4), and C5 is retained
+only to preserve the refuted claim's provenance; it is not an active node.
 
 Not needed (both passes concur, P1 explicit): Raynaud's isogeny-character
 classification λ¹² = χˢ, resultant computations, class-number-1 endgame — those serve
@@ -271,28 +277,27 @@ contradictions between them; P2's extra edges (A2 → A3, D2 → D5) adopted.
 
 ## 4. Panel questions
 
-- **PQ1 — Endgame formulation (from D-a).** Verify the D8 derivation against Mazur
-  1977 Theorem 8 and Snowden L20–L25: exact use of the Néron special fibre at 2 vs 3,
-  the char-2 torsion subtlety (D4), whether w_ℓ cusp-swapping is needed, and whether
-  Hasse/Serre–Tate (B3/B4) can be dropped in favour of finite F₂/F₃ enumeration.
-  P1's λ = 1 trace-bound variant: valid alternative or subtly wrong at the Hasse
-  boundary (a₃ = 4 case)?
+- **PQ1 — RESOLVED 2026-09-07.** See `cartography/mazur-d8-page-audit.md`.
+  Correct citation: Mazur 1977 Chapter III Theorem 5.1 and §5 pp. 156--160,
+  not “Theorem 8”.  Primary route uses 2/3 fibres but injects quotient torsion at
+  odd primes, uses no `w_ell`, and retains Hasse (or an exact finite-field substitute).
+  The `lambda=1` alternative is valid; `a_3=4` is excluded strictly by Hasse.
 - **PQ2 — The D6 fork.** Eisenstein descent (self-contained, needs the finite-flat
   group-scheme + flat-cohomology stack, overlapping other FLT chapters) vs winding
   quotient (simpler quotient, imports Eichler–Shimura L-theory + Gross–Zagier 1986 +
   Kolyvagin–Logachev 1989, or Kato). **Our campaign has no pre-1990 restriction** — the
   decision is on total formalization cost and cross-chapter reuse only. A paper-audit
   decision spike is recommended before any Part-D formalization.
-- **PQ3 — Are ℓ = 17, 19 classical?** P1's unverified Ogg/Kubert attribution (C5). If
-  yes, the D-core's *first* required prime moves to 23, which changes nothing
-  structurally but affects milestone ordering.
-- **PQ4 — Exponent re-basing interface (feeds the hub-lsb1u.12 decision).** How far to
-  push the FLT-regular cheapening: keep all of W; delete {5,7} (P1); delete {5,7,13}
-  (P2); or delete {5,7,11,13} (reconciler: 11 is also regular) leaving only the D-core.
-  Depends on whether the top-level reduction may cite the external FLT-regular Lean
-  development and on upstream-interface politics.
+- **PQ3 — RESOLVED / REFUTED.** The alleged Ogg/Kubert classical treatments of
+  `17` and `19` do not exist; both remain in the D-core. See the literature
+  panel's C5/PQ3 finding.
+- **PQ4 — RESOLVED 2026-09-09.** Re-base the campaign at prime `p ≥ 17` and
+  discharge `{5, 7, 11, 13}` through the closed `flt-regular` small-exponent
+  theorems. Source changes wait only on the pinned compatibility and coordinated
+  B2/B3/B4/Frey/Mazur-W integration contract in
+  [`mazur-exponent-rebase-decision.md`](mazur-exponent-rebase-decision.md).
 - **PQ5 — Unverified citations to confirm before freezing Lean statements.** Serre
-  Duke 1987 §4.1 Prop. 6; Silverman AEC VII.3.1; Mazur 1977 Thm 4/Thm 8 and Ch. II
+  Duke 1987 §4.1 Prop. 6; Silverman AEC VII.3.1; Mazur 1977 Thm 4 and Ch. II
   §9–10; Serre–Tate Thm 2; Kubert 1976 case locations; Billing–Mahler J. LMS 15 (1940)
   32–43; Mazur–Tate Invent. 22 (1973) 41–49; genus/conductor claims for X₁(2,10),
   X₁(2,14), X₁(11) = 121b1; Katz Invent. 63 (1980) Appendix.
@@ -306,35 +311,33 @@ contradictions between them; P2's extra edges (A2 → A3, D2 → D5) adopted.
 
 ## 5. Recommended next actions (ordered)
 
-**Ready to become work beads now** (no panel dependency, no Mathlib blocker):
+**Resolution of the former “ready-now” beads (2026-09-07):** see
+`cartography/mazur-ready-now-resolution.md`.
 
-1. **A5 (wiring)** — state W in Lean as the chapter axiom and prove
-   `FreyPackage.mazur` from it via the ch03 chain, removing the blanket
-   `knownin1980s` at `FLT/FreyCurve/Mazur.lean:36`. Highest leverage per unit effort;
-   makes the chapter's true interface machine-checked. (Coordinate PQ7 in parallel;
-   the wiring itself does not need the upstream decision.)
-2. **D7a (formal-immersion criterion)** — pure commutative algebra on Mathlib's
-   existing completed-local-ring/cotangent/Nakayama stack; upstreamable to Mathlib.
-3. **A4** — 2-torsion survives odd-order quotient (statement-level now, proof once A3
-   lands; the statement can be frozen immediately).
-4. **A1 (torsion finiteness)** — via Nagell–Lutz to avoid the reduction-theory
-   dependency of B1; also unblocks the `ncard` reading of any interim axiom.
-5. **Explicit plane models** of X₁(11), X₁(2,10), X₁(2,14), X₁(13) as curves with their
-   rational-point statements frozen (proofs await B1/B2) — cheap, de-risks Part C.
+1. **A5:** wired through `mazur_W`; the exact ch03 bridge is isolated under its
+   own classical assumption rather than hidden in the final theorem.
+2. **D7a:** retired from primary D8 and deferred with the optional isogeny route.
+3. **A4:** pure group-theory glue proved in `FLT/MazurW.lean`; A3 need only
+   supply the odd-isogeny kernel bound.
+4. **A1:** exact finiteness proposition frozen; proof remains blocked on
+   integral/reduction infrastructure, with no duplicate `sorry` introduced.
+5. **Small curves:** equations and proof-certificate boundaries frozen; the
+   former elliptic-descent treatment of genus-4 `X_1(2,14)` is corrected.
 
 **Await panel:**
 
-- B3/B4 (Hasse, Serre–Tate) and the final D8 formulation — PQ1.
+- No D8 formulation item remains: PQ1 is resolved by
+  `cartography/mazur-d8-page-audit.md`.  B3 remains on the primary route; B4 is
+  needed only by the optional `lambda=1` route.
 - Any Part-D formalization beyond D7a — PQ2 (fork) and PQ6 (model sizing) first;
   a decision-spike bead auditing D6a vs D6b on paper should be cut immediately.
-- C5 — PQ3.
 - Statement-freezing for D1 (coarse moduli) — PQ6.
 
-**Await hub-lsb1u.12 (re-basing decision, PQ4):**
+**Resolved by hub-lsb1u.12 (re-basing decision, PQ4):**
 
-- C1, C2, C4 (deleted under any re-basing), C3 (deleted only under the p ≥ 17 variant),
-  and the final shape of W in A5 (state W parametrically over "ℓ ≥ ℓ₀ with small-case
-  side-conditions" so the wiring bead need not wait for the decision).
+- C1–C4 leave the active campaign after the pinned `flt-regular` integration;
+  the active W/Frey obligations start at `p ≥ 17`. The source remains at `p ≥ 5`
+  until the coordinated integration gate is complete.
 
 **Long-lead shared infrastructure** (start scoping with other chapters regardless of
 panel outcomes, since every branch needs them): A2 (Angdinata's torsion work), A3

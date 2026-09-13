@@ -84,8 +84,11 @@ deleted. Applied here:
    takes a `GL₂` Hilbert eigenform; the repo's input is a quaternionic `HeckeAlgebra`
    eigencharacter (`Automorphic.lean:85`). Stating G3 quaternionically bakes in the transfer
    direction *quaternionic eigensystem → Hilbert eigenform*. This matches the JL adjudication's
-   list of absorbers (".5/.9/.10"). G3's ledger comment must enumerate: JL transfer (one
-   direction) + Taylor 1989 attachment (+ Carayol 1986 upstream).
+   list of absorbers (".5/.9/.10"). G3's ledger comment must enumerate: (i) this JL transfer
+   direction with Taylor 1989 load-bearing and Carayol 1986 upstream; (ii) multiplicity-one
+   absorption via G16; (iii) coefficient-bridge non-canonicity, anchored in parallel-weight
+   integrality; (iv) the norm-factoring exclusion; and (v) an explicit note that automorphic
+   induction is out of scope and owned by CBC S6.
 2. **Double-count rule.** JL content appears in G3, G9 (`cyclic_base_change` — JL both
    directions + mult-one + image classification, per the JL reconciler's verified finding), and
    G10. Per the rule: **credit the JL transfer once, against hub-lsb1u.4**; mark its occurrences
@@ -97,18 +100,18 @@ deleted. Applied here:
 
 ## 4. Risk items (dedicated section)
 
-### 4.1 Flatness clause (Bp) vs the `knownin1980s` boundary — grade: MEDIUM-HIGH
+### 4.1 Flatness clause (Bp) is modern — grade: HIGH
 
 The consumers (`hρflat`, `Automorphic.lean:150-163`; `IsHardlyRamified` via
 `HardlyRamified/Family.lean`) need the attached `ρ_π` **flat (Barsotti–Tate) at `v | p`** when
-the level is prime to `p`. The honest general references are **Saito 2009** (Compositio 145,
-local-global at p) and **Breuil 1999** (Bull. SMF 127, weight-2 flatness) — both **post-1990**.
-A pre-1990 derivation plausibly exists for exactly the needed case (weight 2, level prime to p,
-via Carayol's good-reduction models + Raynaud), but it is folklore-shaped and the
-`knownin1980s` policy requires a written justification and KMB sign-off (`KnownIn1980s.lean`).
-Consequence if it fails the 1980s test: G5 becomes a **separate post-1990 assumption** — a
-ledger *category* change, same class as G10/G11's Khare–Wintenberger/BLGGT content. Both passes
-flag the neighborhood; pass 2's sharper version is adopted. → Panel Q1.
+the level is prime to `p`. The applicable references are **Saito 2009** (Compositio 145,
+local-global at p) and **Breuil 1999** (Bull. SMF 127, weight-2 flatness), both post-1990.
+Carayol 1986 is not an alternative for this clause in the repository's setting: his
+good-reduction models come from Shimura curves, which require a split infinite place, while
+the quaternion algebra here is totally definite. G5 is therefore a **separate modern
+assumption**, in the same ledger class as G10/G11's Khare–Wintenberger/BLGGT content. This is
+the binding classification from `cartography/panel/greps-lit-hyp.md` and
+`cartography/panel/greps-adjudication.md`.
 
 ### 4.2 The sorried instance at `Automorphic.lean:100` — grade: LOW (statement-correctness), with a hygiene rider
 
@@ -140,7 +143,7 @@ file that will host pinned axioms, and if a future statement (e.g. a restated G9
 hygiene. **Rider: clear it before G9 is pinned as an axiom** — it is on the ready-now list
 (also flagged ready-now by the JL reconciliation).
 
-## 5. Merged inventory (15 nodes)
+## 5. Merged inventory (17 nodes)
 
 Sizes: S ≤ 1 wk, M ≈ 1 month, L ≈ 1 quarter, XL = multi-year/axiom. Provenance: P1#n / G-n.
 
@@ -150,7 +153,7 @@ Sizes: S ≤ 1 wk, M ≈ 1 month, L ≈ 1 quarter, XL = multi-year/axiom. Proven
 | G2 | `IsQuaternionAlgebra E (E ⊗[F] D)` instance, `Automorphic.lean:100` | S | sorried; LOW risk (§4.2); ready-now |
 | G3 | Attachment axiom statement, clauses (W)+(I) — Taylor 1989 primary citation [P1#2,#3,#5] | S-M to state | not stated; **absorbs JL one direction [shared:.4]**; ledger comment mandatory |
 | G4 | Axiom bad-place clause (Bℓ): tame rank-1 quotient at `v ∈ S` [P1#6a] | S extra | not stated |
-| G5 | Axiom p-clause (Bp): `IsFlatAt` for `v \| p` [P1#6b] | M extra | not stated; **1980s-boundary risk (§4.1)** |
+| G5 | Axiom p-clause (Bp): `IsFlatAt` for `v \| p` [P1#6b] | M extra | not stated; **modern-assumptions class (§4.1)** |
 | G6 | Eichler–Shimura route | — | ruled out (no modular curves in repo's setting) |
 | G7 | Carayol route proof | XL | **structurally inapplicable to totally definite D** (§2.1); axiom forever |
 | G8 | Taylor 1989 route proof (via JL bridge) | XL | axiom forever; the load-bearing literature theorem |
@@ -161,15 +164,44 @@ Sizes: S ≤ 1 wk, M ≈ 1 month, L ≈ 1 quarter, XL = multi-year/axiom. Proven
 | G13 | Blueprint bestiary GL₂ node (`chtopbestiary.tex:228`, `\notready`) [P1#4 blueprint half] | S doc | likely superseded by G3-G5; panel Q3 |
 | G14 | Bib hygiene: add Carayol 1986, **Taylor 1989**, Blasius–Rogawski 1989; Saito 2009/Breuil 1999 for G5 discussion | S | missing |
 | G15 | Hecke-eigenvalue/pseudorepresentation bridge into `R = T` patching (edge → hub-lsb1u.11) [P1#8] | L-XL | interface exists (`Automorphic.lean:85,93-94`; `Patching/REqualsT.lean`); packaging literature-verify |
+| G16 | Strong-multiplicity-one/quaternionic multiplicity-one absorption statement | M | minted by `panel/greps-adjudication.md` item 2; owns its hidden-content ledger and feeds G3/G12 |
+| G17 | Residually irreducible pseudo-representation → genuine `GL₂(T_𝔪)` representation (Carayol/Nyssen step) | M-L | minted by `panel/greps-adjudication.md` item 3; closes the gap from G15 to R=T A2, before the separate T_𝔪-valued globalization step |
 
 JL transfer content: counted once against hub-lsb1u.4 per §3; G3/G9/G10 marked shared.
 Attachment content: counted once here (G3/G8); its echoes in G9/G10 marked shared.
 
+### 5.1 Node-level cross-reference to the JL inventory
+
+The table below maps every G-node to the regenerated 13-node inventory in
+`cartography/panel/jl-dependency.md`.  It is an ownership map, not extra completion
+credit: JL work is counted against hub-lsb1u.4 once, and an occurrence here denotes
+consumption or absorption. `—` means that the G-node has no JL content.
+
+| G node | JL node(s) | Relationship |
+|---|---|---|
+| G1 | JL 1–3 | Reuses quaternion-algebra, automorphic-form, Hecke, and eigenform infrastructure. |
+| G2 | JL 1 | Scalar-extension stability of the quaternion algebra; not a transfer theorem. |
+| G3 | JL 4–6; dormant JL 8–9 | Its quaternionic input absorbs the quaternionic→Hilbert transfer, coefficient bridge, and ledger. |
+| G4 | JL 5, 10 | Bad-place compatibility consumes level/Hecke and local-JL content. |
+| G5 | — | The `p`-adic flatness clause is modern attachment content, not supplied by JL; JL 4 is only coefficient context. |
+| G6 | JL 8 | The dormant Hilbert/GL₂ substrate is what an Eichler–Shimura route would require. |
+| G7 | JL 8, 10, 12 | The Carayol/Shimura-curve route is represented for provenance but is inapplicable here. |
+| G8 | JL 4–6, 8–11 | Taylor's even-degree route consumes the coefficient bridge, transfer ledger, Hilbert substrate, local JL, and multiplicity one. |
+| G9 | JL 5–6, 9–11, 13 | Cyclic base change is an absorber; shared JL and CBC content must not be counted here again. |
+| G10 | JL 4–6 | Compatible-family attachment echoes the coefficient, transfer, and ledger seams. |
+| G11 | — | Khare–Wintenberger/BLGGT lifting is outside the JL inventory. |
+| G12 | JL 6, 11; G16 | Modularity lifting consumes the absorption ledger and multiplicity-one result through G16. |
+| G13 | JL 8–9 | The blueprint GL₂ node is the dormant standalone route. |
+| G14 | — | Bibliographic hygiene only; it does not own a JL proof node. |
+| G15 | JL 4–5; G17 | The Hecke/pseudo-representation bridge uses coefficient and level compatibility, then hands off to G17. |
+| G16 | JL 3, 9, 11 | Owns the multiplicity-one absorption statement used by this chapter. |
+| G17 | — | No complete JL node supplies this lift; it is the distinct gap between G15 and R=T A2, adjacent only to the coefficient/pseudo-representation work around JL 4 and G8. |
+
 ## 6. Panel questions
 
-1. **(Q1, from §4.1)** Does weight-2, level-prime-to-p flatness (G5/Bp) pass the `knownin1980s`
-   test via Carayol+Raynaud folklore, or is it a separate post-1990 assumption (Saito/Breuil)?
-   Requires written justification + KMB sign-off either way.
+1. **(Q1, resolved by adjudication)** Weight-2, level-prime-to-p flatness (G5/Bp) is a
+   separate post-1990 assumption (Saito/Breuil); the Carayol+Raynaud alternative is
+   structurally unavailable for totally definite `D`.
 2. **(Q2)** G3 statement format: state for `A = ℚ_pᵃˡᵍ` + integrality (I) and derive the general
    `A`-valued form, or state `A`-valued directly (risk: over-asserting beyond the literature)?
 3. **(Q3)** Formally supersede the blueprint's GL₂/Shimura-varieties bestiary node (G13) with the
@@ -197,5 +229,5 @@ Attachment content: counted once here (G3/G8); its echoes in G9/G10 marked share
 5. **Correct pass 1's Carayol framing** (§2.1) in any chapter prose derived from it; keep the
    Lean docstring's "Carayol, Taylor et al." but make Taylor 1989 the primary citation in the
    axiom file.
-6. **Draft the G5 1980s-justification memo** for panel Q1 (small, unblocks the ledger-category
-   decision).
+6. **Carry the G5 modern-assumption classification** and Saito/Breuil citations into the
+   eventual axiom ledger; do not reopen a Carayol+Raynaud 1980s route for totally definite `D`.

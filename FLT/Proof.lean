@@ -9,6 +9,7 @@ public import FLT.Basic.Lemmas
 public import FLT.FreyCurve.Basic
 public import FLT.EllipticCurve.Torsion
 public import FLT.FreyCurve.Mazur
+public import FltRegular.SmallNumbers.SmallNumbers
 
 /-!
 # The proof of Fermat's Last Theorem
@@ -39,20 +40,21 @@ these labels are off-by-one from the 2026 course notes.
 /-- B1 is the statement of FLT. -/
 def B1 : Prop := FermatLastTheorem
 
-/-- B2 is the statement that FLT is true for primes p ≥ 5. -/
-def B2 : Prop := ∀ p ≥ 5, Nat.Prime p → FermatLastTheoremFor p
+/-- B2 is the statement that FLT is true for primes p ≥ 17. -/
+def B2 : Prop := ∀ p ≥ 17, Nat.Prime p → FermatLastTheoremFor p
 
-/-- B3 is the statement that there is no Frey Package.
+/-- B3 is the statement that there is no Frey Package of exponent at least 17.
 A Frey package is 4 integers a,b,c,p satisfying a^p+b^p=c^p and
 some other conditions (for example p is prime and at least 5,
 a,b,c are pairwise coprime etc). These conditions guarantee that the
 associated Frey curve Y^2=X(X-a^p)(X+b^p) is semistable. -/
-def B3 : Prop := IsEmpty FreyPackage
+def B3 : Prop := ∀ P : FreyPackage, 17 ≤ P.p → False
 
 /-- B4 is the statement that if E is the Frey curve attached
-to a Frey package (a,b,c,p), then E[p] is a reducible Galois representation. -/
+to a Frey package (a,b,c,p) with p ≥ 17, then E[p] is a reducible Galois
+representation. -/
 def B4 : Prop :=
-  ∀ P : FreyPackage,
+  ∀ P : FreyPackage, 17 ≤ P.p →
   let E := P.freyCurve
   let p := P.p
   have : Fact p.Prime := ⟨P.pp⟩
@@ -75,16 +77,15 @@ of trivial by cyclotomic
 
 -/
 
-theorem B2_implies_B1 : B2 → B1 := FermatLastTheorem.of_p_ge_5
+theorem B2_implies_B1 (h : B2) : B1 :=
+  FermatLastTheorem.of_small_and_p_ge_17 (fun _ hn ↦ FLT_small hn) h
 
 theorem B3_implies_B2 : B3 → B2 :=
-  FreyPackage.fermatLastTheoremFor_p_ge_5
+  FreyPackage.fermatLastTheoremFor_p_ge_17
 
 theorem B4_implies_B3 : B4 → B3 := by
   unfold B3 B4
-  intro h
-  rw [isEmpty_iff]
-  intro P
+  intro h P hp17
   let E := P.freyCurve
   let p := P.p
   have : Fact p.Prime := ⟨P.pp⟩
@@ -92,8 +93,8 @@ theorem B4_implies_B3 : B4 → B3 := by
   let ρbar := (E.galoisRep p P.hppos)
   -- Deep work of Mazur from the 1970s implies that `ρbar` is an irreducible
   -- Galois representation;
-  apply h P
-  exact P.mazur
+  apply h P hp17
+  exact P.mazur hp17
 
 theorem B4_proof : B4 :=
   sorry

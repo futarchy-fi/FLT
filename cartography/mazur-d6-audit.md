@@ -166,12 +166,79 @@ recommend cutting it as an independent bead regardless of the fork decision.
   D6a-or-D6b identically.
 
 **Suggested next beads if the panel ratifies:** (i) freeze the D6a↔D8 interface
-statement ("∃ quotient A of J₀(ℓ), Cot(A) ↪ Cot(J₀) Hecke-compatibly, A(ℚ)
-finite") so D7/D8 work is fork-independent; (ii) cut G1–G4 (admissible groups)
+statement ("there is a quotient `A` of `J₀(ell)`, good away from `ell`, with
+`A(Q)` finite and the image of `[0]-[infinity]` nonzero") so D8 work is
+fork-independent; (ii) cut G1–G4 (admissible groups)
 as the first D6a work beads — they sit closest to existing
 `FLT/GroupScheme/FiniteFlat.lean`; (iii) cut b1 (modular symbols) as a
 Mathlib-upstream bead; (iv) PQ5 citation checks for Mazur II.9.7/II.16.6/III.3.1
 before freezing E5/E6/Q4 statements.
+
+## 4.1 Frozen fork-independent D6--D8 interface (hub-lsb1u.2.12)
+
+Frozen 2026-09-07 after the page-level D8 audit in
+`cartography/mazur-d8-page-audit.md`.  Cotangent/Hecke compatibility belongs to
+the optional formal-immersion route, not to Mazur's primary 1977 torsion
+endgame.
+
+For each prime `ell > 7`, `ell != 13`, D6 exports:
+
+1. an abelian variety `A/Q` and a quotient homomorphism
+   `pi : J_0(ell) -> A`;
+2. the map `f = pi o (x |-> [x-infinity]) : X_0(ell) -> A`, with its extension
+   over `Z[1/ell]` supplied by the shared integral/Neron-model interface;
+3. good reduction of `A` away from `ell`;
+4. `Finite A(Q)` (stronger and more directly usable than “rank zero”); and
+5. `f(0) != f(infinity)`, equivalently the image of `[0]-[infinity]` in `A(Q)`
+   is nonzero.
+
+This five-field record is the only D6 output consumed by primary D8.  It contains
+no Eisenstein ideal, winding element, analytic-rank witness, admissible group
+scheme or Selmer implementation detail.  Both D6a and D6b must construct the
+same record.
+
+Optional extension for the alternative isogeny route:
+
+```text
+cotangent injection / Hecke compatibility
+  -> formal immersion at a chosen cusp in characteristic q > 2.
+```
+
+That extension is owned by D7a/D7b and must not be a field of the base D6
+record.  Conversely, formal immersion alone does not replace cusp separation in
+the primary record.
+
+## 4.2 Frozen first D6a packet: G1--G4 (hub-lsb1u.2.13)
+
+The G1--G4 rows in §3.1 are now a closed decomposition with these exact edges:
+
+```text
+finite-flat base definitions
+  -> G1 order-p classification
+  -> G2 admissible filtration and closure
+
+fppf H^0/H^1 + units/Pic(Z)
+  -> G3 elementary invariant table
+
+G2 + G3 + fppf long exact sequence
+  -> G4 devissage bound
+  -> G5/G6 model-theorem packet
+```
+
+Acceptance boundary:
+
+- G1 is only the order-`p` theorem over `Spec Z`; no general Oort--Tate
+  classification is in scope.
+- G2 exposes a filtration predicate and the subobject, quotient and extension
+  closure lemmas actually used by Q3.
+- G3 computes exactly the four elementary `H^0/H^1_fppf` cases for `Z/p` and
+  `mu_p`, with all finiteness/cardinality statements explicit.
+- G4 is pure devissage: it may use G2/G3 and the fppf long exact sequence but no
+  Neron model, Selmer group or modular curve.
+
+The statement-drafting child `hub-lsb1u.2.13.1` remains the implementation
+packet.  Closing this decomposition parent does not claim those Lean statements
+or proofs have landed.
 
 ## 5. Sources
 

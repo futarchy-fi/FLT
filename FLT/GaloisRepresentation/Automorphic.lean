@@ -12,7 +12,9 @@ public import FLT.AutomorphicForm.QuaternionAlgebra.HeckeOperators.Concrete
 public import FLT.DedekindDomain.IntegralClosure
 public import FLT.Deformations.RepresentationTheory.GaloisRep
 public import Mathlib.NumberTheory.Cyclotomic.CyclotomicCharacter
+public import Mathlib.NumberTheory.NumberField.CMField
 public import Mathlib.NumberTheory.Padics.Complex
+public import Mathlib.RepresentationTheory.Induced
 public import Mathlib.RingTheory.SimpleRing.Principal
 
 /-!
@@ -191,6 +193,83 @@ theorem cyclic_base_change
     -- ρ | Gal(Ebar/E) is automorphic of level (the pullback of S to E)
     ((ρ.map (algebraMap F E)).IsAutomorphicOfLevel p hpE hV
       (HeightOneSpectrum.preimageComapFinset (𝓞 F) F E (𝓞 E) S)) :=
+  sorry
+
+/-- A Galois representation is induced from a character over `K` if its underlying abstract
+representation is linearly equivalent to induction along `Γ K → Γ F`. Topological information
+is retained by `ρ` and `χ`; `Representation.ind` is used only for the algebraic comparison. -/
+@[nolint unusedArguments]
+def GaloisRep.IsInducedFromCharacter
+    {F K : Type u} [Field F] [NumberField F]
+    [Field K] [NumberField K] [Algebra F K]
+    {A : Type*} [CommRing A] [TopologicalSpace A]
+    {V : Type*} [AddCommGroup V] [Module A V]
+    (ρ : GaloisRep F A V) (χ : GaloisRep K A A) : Prop :=
+  let φ := (Field.absoluteGaloisGroup.map (algebraMap F K)).toMonoidHom
+  ∃ e : Representation.IndV φ χ.toRepresentation ≃ₗ[A] V,
+    ∀ g, ρ g = e.conj (Representation.ind φ χ.toRepresentation g)
+
+/--
+Quadratic-CM automorphic induction, in the Galois-side form consumed by FLT.
+
+The hypotheses deliberately expose the weight-two, conductor, and cuspidality conditions instead
+of pretending that FLT already has a theory of algebraic Hecke characters. They say that `ρ` is
+an irreducible induction of a one-dimensional character from a totally imaginary quadratic
+extension, has cyclotomic determinant and a finite-flat integral model at `p`, and has precisely
+the tame `U₁(S)` ramification allowed by `IsAutomorphicOfLevel`.
+
+## Audited hidden-content ledger
+
+* Global `GL₁` reciprocity attaches `χ` to an algebraic Hecke character (CFT node 10).
+* The theta-series/Weil-representation construction gives automorphic induction and its local
+  compatibility (Hecke 1926; Jacquet--Langlands, Chapter 12; Arthur--Clozel, Chapter 3).
+* Irreducibility excludes the Galois-invariant character case and supplies cuspidality.
+* Cyclotomic determinant and the finite-flat integral model encode the weight-two and central-
+  character clauses; the unramified/tame hypotheses encode the `U₁(S)` conductor bound.
+* Shimura integrality supplies the coefficient bridge to `ℚ̄_p`.
+* The CFT tame-certification gate also applies here: this `sorry` must not be replaced by
+  `knownin1980s` until `localTameAbelianInertiaGroup` is certified against an independently
+  constructed tame character.
+
+This is CBC node S6 / debt D-7 and closes the JL H1 ownership gap. It is independent of cyclic
+base change nodes S3 and S4.
+-/
+theorem quadratic_cm_automorphic_induction
+    {F : Type u} [Field F] [NumberField F] [IsTotallyReal F]
+    (_hF : Even (Module.finrank ℚ F))
+    {K : Type u} [Field K] [NumberField K] [IsTotallyComplex K]
+    [Algebra F K] [Algebra.IsQuadraticExtension F K]
+    (p : ℕ) [Fact p.Prime] (hp : 2 < Module.finrank F (CyclotomicField p F))
+    {V : Type} [AddCommGroup V] [Module (ℚ_[p]ᵃˡᵍ) V]
+    [Module.Finite (ℚ_[p]ᵃˡᵍ) V] [Module.Free (ℚ_[p]ᵃˡᵍ) V]
+    (hV : Module.finrank (ℚ_[p]ᵃˡᵍ) V = 2)
+    (ρ : GaloisRep F (ℚ_[p]ᵃˡᵍ) V)
+    (χ : GaloisRep K (ℚ_[p]ᵃˡᵍ) (ℚ_[p]ᵃˡᵍ))
+    (_hρinduced : ρ.IsInducedFromCharacter χ)
+    (_hρirred : GaloisRep.IsIrreducible ρ)
+    (_hρdet : ∀ g, ρ.det g = algebraMap ℤ_[p] (ℚ_[p]ᵃˡᵍ)
+      (cyclotomicCharacter (AlgebraicClosure F) p g.toRingEquiv))
+    (_hρflat :
+      ∃ (R : Type) (_ : CommRing R) (_ : Algebra ℤ_[p] R) (_ : IsLocalRing R) (_ : IsDomain R)
+        (_ : TopologicalSpace R) (_ : IsTopologicalRing R)
+        (_ : Module.Finite ℤ_[p] R) (_ : Module.Free ℤ_[p] R) (_ : IsModuleTopology ℤ_[p] R)
+        (_ : Algebra R (ℚ_[p]ᵃˡᵍ)) (_ : IsScalarTower ℤ_[p] R (ℚ_[p]ᵃˡᵍ))
+        (_ : ContinuousSMul R (ℚ_[p]ᵃˡᵍ))
+        (V₀ : Type) (_ : AddCommGroup V₀) (_ : Module R V₀) (_ : Module.Finite R V₀)
+        (_ : Module.Free R V₀) (_hW : Module.rank R V₀ = 2)
+        (ρ₀ : GaloisRep F R V₀)
+        (r₀ : (ℚ_[p]ᵃˡᵍ) ⊗[R] V₀ ≃ₗ[ℚ_[p]ᵃˡᵍ] V),
+      (ρ₀.baseChange (ℚ_[p]ᵃˡᵍ)).conj r₀ = ρ ∧
+      ∀ v : HeightOneSpectrum (𝓞 F), ↑p ∈ v.asIdeal → ρ₀.IsFlatAt v)
+    (S : Finset (HeightOneSpectrum (𝓞 F)))
+    (_hS : ∀ v ∈ S, ↑p ∉ v.asIdeal)
+    (_hρunram : ∀ v ∉ S, ↑p ∉ v.asIdeal → ρ.IsUnramifiedAt v)
+    (_hρtame : ∀ w ∈ S, ∃ (π : V →ₗ[ℚ_[p]ᵃˡᵍ] ℚ_[p]ᵃˡᵍ)
+      (_ : Function.Surjective π)
+      (δ : GaloisRep (w.adicCompletion F) (ℚ_[p]ᵃˡᵍ) (ℚ_[p]ᵃˡᵍ)),
+      localTameAbelianInertiaGroup w ≤ δ.ker ∧
+      ∀ g : Γ (w.adicCompletion F), ∀ v : V, π ((ρ.toLocal w) g v) = δ g (π v)) :
+    ρ.IsAutomorphicOfLevel p hp hV S := by
   sorry
 
 /-

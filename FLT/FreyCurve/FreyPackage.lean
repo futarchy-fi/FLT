@@ -141,10 +141,10 @@ lemma hgcdbc (P : FreyPackage) : gcd P.b P.c = 1 :=  by
   exact P.hFLT
 
 /-- Given a counterexample a^p+b^p=c^p to Fermat's Last Theorem with p>=5
-    and prime, there exists a Frey package. -/
-lemma of_not_FermatLastTheoremFor_p_ge_5
+and prime, there exists a Frey package carrying that same exponent. -/
+lemma of_not_FermatLastTheoremFor_p_ge_5_with_exponent
     {p : ℕ} (pp : p.Prime) (hp5 : 5 ≤ p) (H : ¬ FermatLastTheoremFor p) :
-    Nonempty FreyPackage := by
+    ∃ P : FreyPackage, P.p = p := by
   have p_odd := pp.odd_of_ne_two (by omega)
   -- first get the counterexample
   unfold FermatLastTheoremFor FermatLastTheoremWith at H
@@ -209,7 +209,15 @@ lemma of_not_FermatLastTheoremFor_p_ge_5
     hgcdab := by simp [gcd, ab]
     ha4 := (ZMod.intCast_eq_intCast_iff ..).2 ha3
     hb2 := (ZMod.intCast_zmod_eq_zero_iff_dvd ..).2 (even_iff_two_dvd.1 eb)
-  }⟩
+  }, rfl⟩
+
+/-- Given a counterexample a^p+b^p=c^p to Fermat's Last Theorem with p>=5
+and prime, there exists a Frey package. -/
+lemma of_not_FermatLastTheoremFor_p_ge_5
+    {p : ℕ} (pp : p.Prime) (hp5 : 5 ≤ p) (H : ¬ FermatLastTheoremFor p) :
+    Nonempty FreyPackage := by
+  obtain ⟨P, -⟩ := of_not_FermatLastTheoremFor_p_ge_5_with_exponent pp hp5 H
+  exact ⟨P⟩
 
 /-- If there is no Frey package, then Fermat's Last Theorem
 is true for all primes p≥5.
@@ -224,5 +232,15 @@ lemma fermatLastTheoremFor_p_ge_5 (h : IsEmpty FreyPackage) :
   obtain ⟨f⟩ := of_not_FermatLastTheoremFor_p_ge_5 hpp hp5 this
   -- This contradicts our assumption.
   exact IsEmpty.false f
+
+/-- If there is no Frey package whose exponent is at least `17`, then Fermat's
+Last Theorem is true for every prime exponent at least `17`. -/
+lemma fermatLastTheoremFor_p_ge_17
+    (h : ∀ P : FreyPackage, 17 ≤ P.p → False) :
+    ∀ p ≥ 17, p.Prime → FermatLastTheoremFor p := by
+  intro p hp17 hpp
+  by_contra!
+  obtain ⟨P, hPp⟩ := of_not_FermatLastTheoremFor_p_ge_5_with_exponent hpp (by omega) this
+  exact h P (by simpa [hPp] using hp17)
 
 end FreyPackage

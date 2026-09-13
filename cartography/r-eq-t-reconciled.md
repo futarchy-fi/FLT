@@ -22,7 +22,7 @@ fresher than either input pass.
 | Hecke algebra T real; T-valued Galois reps absent | `Concrete.lean:878-912,1062-1077` done; no attachment/localization | Same; A2 "construction direction" absent, XL | **Yes** |
 | Lifting theorem not stated in Lean | Blueprint `\notready`, "very far from even stating" | Same, but flags blueprint staleness — prereqs for the *statement* now largely exist | **Yes — unstated; pass 2's staleness caveat adopted** (= A1, size M) |
 | Cyclic base change sorried, analytic wall | `Automorphic.lean:184` sorry noted | A9/A10 (base change, JL, mult. one) = concentrated timeline risk | **Yes — largest risk after duplication risk** |
-| PT/Selmer is a future edge, not wired in | No Poitou/Selmer import anywhere in Patching/Deformations (negative search) | PT spent at the `depth Λ = Krull-dim R∞` hypothesis (`REqualsT.lean:76`); upstream provisions via #1110/#1105 as KnownIn1980s | **Yes — PT is upstream-of-A5/A7, currently unwired** |
+| PT/Selmer is a future edge, not wired in | No Poitou/Selmer import anywhere in Patching/Deformations (negative search) | The PT order formula feeds A7 through A5+A6; it is not spent directly at the bare ring-theoretic equation in `REqualsT.lean:76`. Upstream provisions via #1110/#1105 as KnownIn1980s | **Yes — PT is upstream of A5+A6→A7, currently unwired; PT node 12 remains under audit** |
 | `knownin1980s` caveat | Recorded separately, "not a proof" | "Coverage must be read modulo this axiom" | **Yes — all coverage claims are modulo the universal axiom** |
 
 No verdict-level disagreement exists between the passes.
@@ -57,7 +57,7 @@ has no dedicated A-number, so it is promoted to **A16**. Crosswalk:
 | Merged ID | Content | Pass 1 node | Size |
 |---|---|---|---|
 | A1 | Lean *statement* of the modularity lifting theorem | 7 (part) | M |
-| A2 | Galois rep attached to Hecke eigensystem, ρ_π into T_𝔪 | 4 (part) | XL |
+| A2 | Hecke eigensystem → pseudo-representation; G17 lift to a genuine representation; separate globalization to a representation valued in T_𝔪 | 4 (part) | XL |
 | A3 | R → T surjection, T_𝔪 complete local, universality | 4 (part), 6 (part) | L |
 | A4 | Corepresentability (de Smit–Lenstra) sorries | 1 (part) | M |
 | A5 | Structure theory of R^univ (tangent = H¹, presentation bound) | 1 (part) | L |
@@ -71,7 +71,7 @@ has no dedicated A-number, so it is promoted to **A16**. Crosswalk:
 | A13 | Frey-curve inputs (`Frey.lean:39,41,46`) | — (pass 2 only; consumption edge) | M |
 | A14 | Pontryagin/Peter–Weyl fact (`CompactHausdorffRings.lean:42`) | — (pass 1 footnoted, unnumbered) | S–M |
 | A15 | B5/B6 as Lean Props, B4 spine (`Proof.lean`) | — (pass 2 only) | M |
-| **A16** | PT/Selmer duality + Greenberg–Wiles/Euler-char dimension formula (the hub-lsb1u.7 spend point; upstream provisioning as KnownIn1980s via #1110/#1105) | 2 | XL |
+| **A16** | PT/Selmer duality + Greenberg–Wiles/Euler-characteristic order formula; feeds A7 via A5+A6 (not directly `REqualsT.lean:76`), with PT node 12 still under audit | 2 | XL |
 
 Pass 1's coarser nodes are unions of these; nothing in either list lacks a merged home.
 Dependency edges (pass 2 §4, consistent with pass 1 §2): A1 ← {A2..A11}; A7 ← A5, A6,
@@ -152,7 +152,7 @@ and axioms `Mazur_statement`, `Odlyzko_statement`.
 | Finite-dimensional automorphic module | done | `FiniteDimensional.lean:49-70` |
 | TW level data (Q as *input* finset) | scaffold only | `Concrete.lean:374-385,850-876`; no existence/adequacy theorem (A7) |
 | Generic patching algebra/module/system | done | `Patching/Algebra.lean`, `Module.lean:531-645`, `Over.lean:292-376`, `System.lean` — 1 sorry total in Patching/ (= A14) |
-| Abstract R=T endpoint | done (abstract) | `REqualsT.lean:86` `ker_RtoT_le_nilradical`; hypotheses include `depth Λ Λ = ringKrullDim R∞` (`:76`) — the A16 spend point |
+| Abstract R=T endpoint | done (abstract) | `REqualsT.lean:86` `ker_RtoT_le_nilradical`; hypotheses include `depth Λ Λ = ringKrullDim R∞` (`:76`). A16 contributes upstream through A5+A6→A7; it is not a direct proof of this equation. |
 | Arithmetic instantiation of patching | absent | A7/A8; negative searches in both passes |
 | Hecke → Galois attachment; localized/completed T | absent | A2/A3; `IsAutomorphicOfLevel` compares, never constructs (`GaloisRepresentation/Automorphic.lean:~80-95`) |
 | Cyclic base change | partial | sorry `Automorphic.lean:184` (A9); plus S-size instance sorry `:100` |
@@ -161,6 +161,14 @@ and axioms `Mazur_statement`, `Odlyzko_statement`.
 | Modularity lifting theorem | absent (unstated) | A1; blueprint `\notready` `ch04overview.tex:66-77`; statement prereqs now largely exist (blueprint prose stale) |
 | HardlyRamified consumption layer | partial | 9 sorries across 8 files (~611 lines): `Lift.lean:48`, `Family.lean:68`, `Threeadic.lean:39`, `ModThree.lean:34`, `Frey.lean:39,41,46` (A11–A13); PR #761 in flight |
 | FLT spine | partial | `Proof.lean` `B4_proof := sorry`; B5/B6 are comments, not Props (A15) |
+
+### 5.1 Cross-chapter debt mirrors
+
+| Source debt | R = T path | Checkpoint retained here |
+|---|---|---|
+| Poitou–Tate order formula (A16) | A16 → A5+A6 → A7 → abstract endpoint | The consumer interface is the order formula, but its proof closure still passes through PT node 12 (global Euler characteristic), whose full-duality predecessor remains under audit in `cartography/pt-reconciled.md`. |
+| CBC D-9 (`Q = ∅`) | CBC specialization → Taylor–Wiles level system in A7 | The `Q = ∅` final statement may be pinned only with an in-code caveat and a proof that this specialization suffices for patching; otherwise the level interface must be generalized to `U₁(S,Q)` (`cartography/panel/cbc-adjudication.md`). |
+| Galois-reps G17 | Hecke pseudo-representation → genuine `GL₂(T_𝔪)` representation → A2 | Residual irreducibility supports the Carayol/Nyssen-style lift, but G17 does not include the separate T_𝔪-valued globalization step minted by the R=T adjudication (`cartography/panel/greps-adjudication.md`; `cartography/panel/ret-adjudication.md`). |
 
 ## 6. Panel questions
 
@@ -175,9 +183,9 @@ and axioms `Mazur_statement`, `Odlyzko_statement`.
 4. **Axiomatization map** — which absences will upstream route through `knownin1980s`
    vs prove (A16 clearly axiomatized via #1110/#1105; A10 JL? parts of A6?)? This
    determines whether our gap map should track "provable" or "stateable" for each node.
-5. **hub-lsb1u.7 handoff** — confirm the PT bead's output is spent exactly at A16
-   (Greenberg–Wiles bookkeeping discharging `REqualsT.lean:76`'s depth = Krull-dim
-   hypothesis), and whether KnownIn1980s-level statements suffice for that discharge.
+5. **hub-lsb1u.7 handoff** — confirm that the PT bead exports the A16 order formula
+   into A5+A6→A7, and whether KnownIn1980s-level statements suffice for that
+   arithmetic construction; do not model it as a direct proof of `REqualsT.lean:76`.
 6. **Scope of the two ready-now fills** — approve A14 and A4 as active work items
    (A4 with a prior announce on upstream Zulip/issue given #1042's signaled intent;
    A14 with a check on `YaelDillies/mean-fourier` progress first)?

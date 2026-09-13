@@ -2,6 +2,7 @@ module  -- shake: keep-all --deprecated_module: ignore
 
 public import FLT.AINTLIB.DedekindResidue.AuxiliaryFunction
 public import FLT.AINTLIB.DedekindResidue.ExplicitFormula.TestFunction
+public import FLT.AbsoluteGaloisGroup.TameCharacter
 public import FLT.Assumptions.KnownIn1980s
 public import FLT.Assumptions.Mazur
 public import FLT.Assumptions.Odlyzko
@@ -14,6 +15,8 @@ public import FLT.AutomorphicForm.QuaternionAlgebra.HeckeOperators.Local
 public import FLT.AutomorphicForm.QuaternionAlgebra.InnerProduct
 public import FLT.AutomorphicForm.Stuff
 public import FLT.Basic.Lemmas
+public import FLT.CyclicBaseChange.Chebotarev
+public import FLT.CyclicBaseChange.Satake
 public import FLT.Data.Hurwitz
 public import FLT.Data.HurwitzRatHat
 public import FLT.Data.QHat
@@ -216,7 +219,9 @@ public import FLT.Mathlib.Topology.Instances.Matrix
 public import FLT.Mathlib.Topology.MetricSpace.ProperSpace.InfinitePlace
 public import FLT.Mathlib.Topology.MetricSpace.Pseudo.Matrix
 public import FLT.Mathlib.Topology.Polish
+public import FLT.MazurChapter.AdmissibleGroupSchemes
 public import FLT.MazurW
+public import FLT.MoretBailly
 public import FLT.NumberField.AdeleRing
 public import FLT.NumberField.Completion.Finite
 public import FLT.NumberField.Completion.Infinite
@@ -225,13 +230,26 @@ public import FLT.NumberField.HeightOneSpectrum
 public import FLT.NumberField.InfiniteAdeleRing
 public import FLT.NumberField.InfinitePlace.Extension
 public import FLT.NumberField.Padics.RestrictedProduct
+public import FLT.NumberField.Zeta.Partial
 public import FLT.NumberField.ZetaFE.ZeroTheoryN2
 public import FLT.Odlyzko
 public import FLT.Odlyzko.AdmissibleAutocorrelation
 public import FLT.Odlyzko.Autocorrelation
 public import FLT.Odlyzko.AutocorrelationNonnegative
+public import FLT.Odlyzko.Discard
 public import FLT.Odlyzko.ExplicitFormula
+public import FLT.Odlyzko.ExponentialForm
+public import FLT.Odlyzko.Interval.Constants
 public import FLT.Odlyzko.Interval.Rat
+public import FLT.Odlyzko.Monotonicity
+public import FLT.Odlyzko.PoitouKernel
+public import FLT.Odlyzko.PoitouRegularization
+public import FLT.Odlyzko.PrimeSide
+public import FLT.Odlyzko.ScaledInequality
+public import FLT.Odlyzko.Scaling
+public import FLT.Odlyzko.UniformBound
+public import FLT.Odlyzko.ZeroSideCritical
+public import FLT.Odlyzko.ZeroSideOffCritical
 public import FLT.Patching.Algebra
 public import FLT.Patching.Module
 public import FLT.Patching.Over

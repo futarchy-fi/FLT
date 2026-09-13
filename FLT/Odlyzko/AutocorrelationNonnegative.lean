@@ -8,11 +8,13 @@ module
 public import FLT.Odlyzko.Autocorrelation
 
 /-!
-# Pointwise positivity of an abstract autocorrelation
+# Pointwise positivity of an abstract autocorrelation numerator
 
 Autocorrelation alone gives Fourier positivity, not positivity in the original variable.  A simple
 sufficient condition is that the abstract input itself be nonnegative.  Whether Poitou's concrete
-Tartar function satisfies this condition is deliberately left to the later instantiation packet.
+Tartar numerator satisfies this condition is deliberately left to the later instantiation packet.
+For the unconditional route, this autocorrelation feeds the numerator `f`; the explicit-formula
+kernel is formed later as `poitouKernel f`.
 -/
 
 @[expose] public section
@@ -50,7 +52,7 @@ theorem autocorrelation_re_nonneg_of_nonneg (g : ℝ → ℝ) (hg : ∀ x, 0 ≤
   rw [autocorrelation_eq_ofReal_realAutocorrelation]
   exact realAutocorrelation_nonneg g hg x
 
-/-- The abstract sufficient-condition package: `F ≥ 0` and `F̂ ≥ 0` simultaneously. -/
+/-- The abstract sufficient-condition package: `f ≥ 0` and `f̂ ≥ 0` simultaneously. -/
 theorem autocorrelation_and_fourier_nonneg (g : ℝ → ℝ) (hg_integrable : Integrable g)
     (hg_nonneg : ∀ x, 0 ≤ g x) :
     (∀ x, 0 ≤ (autocorrelation g x).re) ∧

@@ -87,18 +87,20 @@ Sketch: termwise; `log N𝔭 > 0` since `N𝔭 ≥ 2`, and `N𝔭^{−m/2} > 0`.
 is summability, which comes from admissibility's exponential-weight condition.
 Mathlib: `tsum_nonneg`, `Finset.sum_nonneg`, `Ideal.absNorm` positivity.
 
-**P3. Zero side is nonnegative on the critical line.** *S. Deps: `F̂ ≥ 0`.*
-For `ρ = 1/2 + iγ` with `γ` real, `Φ_F(ρ) = F̂(γ) ≥ 0`. Immediate once M9 supplies `F̂ ≥ 0`.
-This is the easy half and is *not* where GRH would have been used.
+**P3. Boundary identification and nonnegativity.** *S. Deps: P1.*
+For `F=f/cosh(x/2)`, evenness gives, with the convention-correct frequency,
+`Re Φ_F(iγ) = Re Φ_F(1+iγ) = Re f̂(-γ/(2π)) ≥ 0`. These are the two boundary
+conditions used by P4. No positivity property of `F̂` is assumed.
 
 **P4. Zero side is nonnegative off the critical line — the GRH-free step.** *M. Deps: P3.*
-For `ρ = β + iγ` with `β ≠ 1/2`, `Φ_F(ρ)` is not literally `F̂` of a real number. Pair `ρ`
-with the functional-equation partner `1 − ρ̄` (both are zeros, by `Λ_K(s) = Λ_K(1−s)` plus
-`Λ_K(s̄) = conj Λ_K(s)`), and show the **pair contributes nonnegatively**. For an
-`F` that is even with `F̂ ≥ 0`, the pair sum is
-`∫ F(x) · 2 cosh((β − 1/2)x) · cos(γx) dx`-shaped; positivity comes from the Tartar
-maximum-principle argument — `odlyzko-reconciled.md` M8 calls this "Tartar/maximum-principle
-positivity on the full critical strip".
+For `ρ = β + iγ` with `β ≠ 1/2`, `Φ_F(ρ)` is not literally `F̂` of a real number. The
+unconditional construction has **two** functions: a real even numerator `f`, with `f ≥ 0`
+and `f̂ ≥ 0`, and the explicit-formula kernel
+`F(x) = f(x) / cosh(x/2)`. On both boundaries `Re(s)=0,1`, `Re Φ_F(s)` is the Fourier
+transform of `f` (at the convention-correct frequency `-γ/(2π)`). Apply the maximum
+principle/Hadamard three-lines theorem to `exp(-Φ_F)` to propagate nonnegativity through
+the full strip. Pair `ρ` with `1 − ρ̄`; both individual real contributions, and hence their
+sum, are nonnegative.
 *This is the one genuinely delicate node in M8. State it with `0 ≤ β ≤ 1` as an explicit
 hypothesis (the zeros are in the strip by M3/N12) and do not attempt a sharper region.*
 
@@ -108,36 +110,38 @@ terms of `F̂(±i/2)`-type values. This is the inequality every later node consu
 Sketch: drop P2 and P4 from the identity of P1; rearrange.
 
 **Contract, stated so a worker does not silently break it:** P4 must not be weakened to
-"assume RH/GRH". If it turns out to need a hypothesis beyond `0 ≤ β ≤ 1` and `F̂ ≥ 0`,
-**escalate** — a GRH-conditional P4 turns the whole chapter conditional and would silently
-convert the campaign's unconditional target into AINTLIB's conditional one.
+"assume RH/GRH", and must not replace `f̂ ≥ 0` by the false condition `F̂ ≥ 0`. The exact
+boundary identities, holomorphy and boundedness of `Φ_F` must be derived at the transform seam
+or exposed there as explicit hypotheses. Poitou's extension from the strong admissible class
+to his weaker final class is a separate regularization step.
 
 ## 3. M9 — the Tartar function and the scaling inequality (6 nodes: 4 S, 2 M)
 
-The choice of `F` that makes M8's two positivity hypotheses true simultaneously. `F ≥ 0`
-and `F̂ ≥ 0` pull against each other — that is the whole difficulty of the method.
+The choice of numerator `f` that makes M8's two positivity hypotheses true simultaneously.
+`f ≥ 0` and `f̂ ≥ 0` pull against each other; the explicit-formula kernel is then
+`F=f/cosh(x/2)`.
 
 **Q1. Autocorrelation gives free Fourier positivity.** *S. Deps: none.*
-For `g` real, even, compactly supported and `L²`, set `F = g ⋆ g̃` where `g̃(x) = g(−x)`.
-Then `F̂ = |ĝ|² ≥ 0` identically. Also `F` is even, compactly supported (support doubles),
-and continuous.
+For `g` real, even, compactly supported and `L²`, set the candidate numerator
+`f = g ⋆ g̃` where `g̃(x) = g(−x)`. Then `f̂ = |ĝ|² ≥ 0` identically. Also `f` is even,
+compactly supported (support doubles), and continuous.
 Mathlib: `Convolution` API, `Real.fourierIntegral` convolution theorem,
 `MeasureTheory.convolution_comm`.
 *This node is the reason the construction is tractable at all — Fourier positivity is a
 theorem about the shape of the construction, not a computation.*
 
-**Q2. Admissibility of the autocorrelation.** *S. Deps: Q1.*
-`F = g ⋆ g̃` satisfies `IsAdmissibleTestFn`: even (Q1); the exponentially-weighted BV and
-integrability conditions from compact support plus `g` Lipschitz; the difference-quotient
-BV condition from `F` Lipschitz near `0`; `jump_avg` trivially, `F` being continuous.
+**Q2. Admissibility or regularization of the Poitou kernel.** *S–M. Deps: Q1.*
+For a compactly supported numerator, prove `F=(g ⋆ g̃)/cosh(x/2)` satisfies
+`IsAdmissibleTestFn`. For Poitou's non-compact final numerator, use his regularization:
+admissible approximants first, then pass the complete discard inequality to the limit.
 Anchor: `ExplicitFormula/TestFunction.lean` `boundedVariationOn_of_deriv_integrable` and
 `boundedVariationOn_Ici_of_piecewise_deriv` are exactly the two workhorses this needs — a
 port makes Q2 nearly free.
 
-**Q3. Tartar's `g` and `F ≥ 0`.** *M. Deps: Q1.*
-Fix the specific `g` of Poitou §on Tartar's function; prove `F = g ⋆ g̃ ≥ 0` pointwise.
-For an autocorrelation this is *not* automatic (autocorrelation gives `F̂ ≥ 0`, not
-`F ≥ 0`), so this is where the specific choice earns its keep.
+**Q3. Tartar's numerator: `f ≥ 0` and `f̂ ≥ 0`.** *M. Deps: Q1.*
+Fix Poitou's Tartar numerator and prove both signs. Autocorrelation is one abstract way to
+obtain Fourier positivity, but the concrete Tartar formula and its Fourier-dual convolution
+must be matched explicitly; it must not be identified with the kernel `F=f/cosh(x/2)`.
 **PQ1 blocks the exact form of `g`:** `odlyzko-reconciled.md` §4 records that the Poitou
 page images could not be fetched from Numdam, so the printed definition is currently
 second-hand. *Do not let a worker guess `g`.* Either resolve PQ1 first, or state Q3 over an
@@ -148,8 +152,10 @@ Substitute the concrete Tartar `g` and discharge Q3's hypotheses. Split out from
 the analytic content is not blocked on a library fetch.
 
 **Q4. The scaling family.** *S. Deps: Q1.*
-`F_y(x) := F(x/y)` for `y > 0`; then `F̂_y(t) = y · F̂(yt)`, positivity is preserved by
-both, and admissibility is preserved. Sketch: change of variables.
+Scale the numerator first (Poitou writes `f_y(x) := f(x√y)` for `y > 0`) and then form
+`F_y(x) := f_y(x)/cosh(x/2)`. Fourier positivity is preserved on `f_y`; admissibility or
+regularization is proved for `F_y`. The generic inverse-scale parameterization `f(x/a)` is
+equivalent after `a=1/√y`; scaling `F` directly is not the unconditional family.
 Mathlib: `Real.fourierIntegral_comp_mul`-family / `MeasureTheory.integral_comp_smul`.
 
 **Q5. Poitou (13) — the scaled inequality.** *M. Deps: P5, Q2, Q4.*
@@ -281,7 +287,7 @@ hypothesis-parametrized or pure infrastructure:
 
 ```
 P1  explicit-formula interface restatement     S
-Q1  autocorrelation ⇒ F̂ = |ĝ|² ≥ 0             S
+Q1  autocorrelation ⇒ f̂ = |ĝ|² ≥ 0             S
 R1  rational interval arithmetic layer         M   ← also upstreamable to Mathlib
 R2  certified transcendental evaluators        M   ← depends only on R1
 T1  Odlyzko_statement interface freeze         S   ← do this first
@@ -290,7 +296,7 @@ P2  prime-side nonnegativity                   S   (needs P1 only)
 
 **Recommended first three: T1, R1, Q1.** T1 because every other node aims at it; R1 because
 it is the longest pole in M10 and is independently useful; Q1 because it is the structural
-insight the whole `F` construction rests on and it is small.
+insight the candidate numerator `f` rests on and it is small.
 
 **Blocked on PQ1 (the Poitou artifact):** Q3′ and R3, and therefore R4–R7 downstream. **This
 makes PQ1 the highest-value non-Lean action in the chapter** — someone needs to fetch and
