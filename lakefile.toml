@@ -32,6 +32,9 @@ name = "FltRegular"
 globs = ["FltRegular"]
 [lean_lib.leanOptions]
 weak.linter.style.haveILetI = false
+# Vendored third-party code: upstream file headers do not follow the FLT/Mathlib header
+# convention and CI runs with --iofail, so the style-only header linter is off for this lib.
+weak.linter.style.header = false
 
 [[lean_lib]]
 name = "FLTTest"
