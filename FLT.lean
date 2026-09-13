@@ -239,6 +239,7 @@ public import FLT.Odlyzko.AutocorrelationNonnegative
 public import FLT.Odlyzko.Discard
 public import FLT.Odlyzko.ExplicitFormula
 public import FLT.Odlyzko.ExponentialForm
+public import FLT.Odlyzko.FontaineConstant
 public import FLT.Odlyzko.Interval.Constants
 public import FLT.Odlyzko.Interval.Rat
 public import FLT.Odlyzko.Monotonicity
