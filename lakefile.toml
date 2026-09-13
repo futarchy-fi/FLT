@@ -1,5 +1,5 @@
 name = "FLT"
-defaultTargets = ["FLT"]
+defaultTargets = ["FLT", "FltRegular"]
 lintDriver = "batteries/runLinter"
 testDriver = "FLTTest"
 
