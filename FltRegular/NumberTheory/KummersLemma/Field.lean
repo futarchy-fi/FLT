@@ -22,6 +22,7 @@ variable (u : (𝓞 K)ˣ)
 open Polynomial
 
 include hcong hp in
+@[nolint unusedArguments]
 lemma zeta_sub_one_pow_dvd_poly [IsCyclotomicExtension {p} ℚ K] :
     C ((hζ.toInteger - 1 : 𝓞 K) ^ p) ∣
       (C (hζ.toInteger - 1 : 𝓞 K) * X - 1) ^ p + C (u : 𝓞 K) := by
