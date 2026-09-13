@@ -5,6 +5,7 @@ Authors: Kelly Azevedo Santos
 -/
 module
 
+public import FLT.Odlyzko.FontaineConstant
 public import Mathlib.NumberTheory.NumberField.Discriminant.Defs
 public import Mathlib.NumberTheory.NumberField.InfinitePlace.TotallyRealComplex
 
@@ -43,6 +44,11 @@ theorem not_discriminant_le_fontaine_bound
     (hdim : finrank ℚ K ≥ 18)
     (hdisc : |(discr K : ℝ)| ≤
       (((2 : ℝ) ^ (2 / 3 : ℝ)) * (3 : ℝ) ^ (3 / 2 : ℝ)) ^ finrank ℚ K) : False := by
-  sorry
+  have hlow : (8.25 : ℝ) ^ finrank ℚ K ≤ |(discr K : ℝ)| := Odlyzko_statement K hdim
+  have hn : finrank ℚ K ≠ 0 := by omega
+  have hlt : (((2 : ℝ) ^ (2 / 3 : ℝ)) * (3 : ℝ) ^ (3 / 2 : ℝ)) ^ finrank ℚ K
+      < (8.25 : ℝ) ^ finrank ℚ K :=
+    pow_lt_pow_left₀ two_rpow_mul_three_rpow_lt two_rpow_mul_three_rpow_pos.le hn
+  exact absurd ((hlow.trans hdisc).trans_lt hlt) (lt_irrefl _)
 
 end Odlyzko
