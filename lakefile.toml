@@ -29,7 +29,6 @@ globs = ["FLT", "FermatsLastTheorem"]
 
 [[lean_lib]]
 name = "FltRegular"
-srcDir = "vendor/flt-regular"
 globs = ["FltRegular"]
 [lean_lib.leanOptions]
 weak.linter.style.haveILetI = false

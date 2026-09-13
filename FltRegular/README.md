@@ -1,6 +1,6 @@
 # `flt-regular` compatibility port
 
-This directory vendors the `FltRegular` library used to discharge the small
+This directory (moved from `vendor/flt-regular/` on 2026-09-13 so that Mathlib's `mk_all` can enumerate it; `mk_all` does not support `srcDir`) vendors the `FltRegular` library used to discharge the small
 prime exponents in the FLT proof spine.
 
 The files are based on `projects/FltRegular` at AINTLIB commit
