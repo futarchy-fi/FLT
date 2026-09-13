@@ -26,6 +26,24 @@ The analytic inputs feeding the `WeakFEPair` construction of `Λ_K`:
   `t ≥ 1`, `0 ≤ Θ_I(c(t,u)) − 1 ≤ C·exp(−c'·t^{1/n})`.
 -/
 
+-- Vendored third-party code (AINTLIB @ 1c1c74664e40). Proof text is out of bounds for this
+-- port, and CI runs `lake build --iofail`, so Mathlib deprecation and style linters that fire
+-- inside the upstream proofs are silenced here rather than by editing the proofs.
+set_option linter.style.setOption false
+set_option linter.deprecated false
+set_option linter.style.show false
+set_option linter.style.whitespace false
+set_option linter.style.cdot false
+set_option linter.flexible false
+set_option linter.style.haveILetI false
+set_option linter.unusedFintypeInType false
+set_option linter.style.emptyLine false
+set_option linter.style.longLine false
+set_option linter.unusedVariables false
+set_option linter.unusedSimpArgs false
+set_option linter.unnecessarySimpa false
+set_option linter.unusedTactic false
+
 namespace DedekindResidue
 
 @[expose] public section
