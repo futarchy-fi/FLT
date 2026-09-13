@@ -261,6 +261,7 @@ theorem summable_norm_comp_addRight_zpoint {L : Submodule ℤ (EuclideanSpace �
 
 /-- Transport of the Fourier-side summability through the lattice change of variables,
 via `fourier_comp_linearEquiv`. -/
+@[nolint unusedArguments]
 theorem summable_fourier_zpoint_of_equiv {L : Submodule ℤ (EuclideanSpace ℝ ι)}
     [DiscreteTopology L] [IsZLattice ℝ L]
     (T : EuclideanSpace ℝ ι ≃ₗ[ℝ] EuclideanSpace ℝ ι) (hTcont : Continuous ⇑T)
@@ -295,6 +296,7 @@ theorem tsum_comp_zpoint_of_equiv {L : Submodule ℤ (EuclideanSpace ℝ ι)}
     show g (T (zpoint n)) = _
     rw [hTz n])
 
+@[nolint unusedArguments]
 theorem tsum_fourier_zpoint_of_equiv {L : Submodule ℤ (EuclideanSpace ℝ ι)}
     [DiscreteTopology L] [IsZLattice ℝ L]
     (T : EuclideanSpace ℝ ι ≃ₗ[ℝ] EuclideanSpace ℝ ι) (hTcont : Continuous ⇑T)
