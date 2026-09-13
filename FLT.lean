@@ -1,7 +1,34 @@
 module  -- shake: keep-all --deprecated_module: ignore
 
+public import FLT.AINTLIB.CebotarevDensity.NumberFieldEulerProduct
 public import FLT.AINTLIB.DedekindResidue.AuxiliaryFunction
+public import FLT.AINTLIB.DedekindResidue.CompletedZeta.AnalyticControl
+public import FLT.AINTLIB.DedekindResidue.CompletedZeta.ClassTheta
+public import FLT.AINTLIB.DedekindResidue.CompletedZeta.DualLattice
+public import FLT.AINTLIB.DedekindResidue.CompletedZeta.Existence
+public import FLT.AINTLIB.DedekindResidue.CompletedZeta.FEPair
+public import FLT.AINTLIB.DedekindResidue.CompletedZeta.FunctionalEquation
+public import FLT.AINTLIB.DedekindResidue.CompletedZeta.GRH
+public import FLT.AINTLIB.DedekindResidue.CompletedZeta.GammaStrip
+public import FLT.AINTLIB.DedekindResidue.CompletedZeta.HeckeTheta
+public import FLT.AINTLIB.DedekindResidue.CompletedZeta.IdealLattice
+public import FLT.AINTLIB.DedekindResidue.CompletedZeta.MellinAgreement
+public import FLT.AINTLIB.DedekindResidue.CompletedZeta.Normalisation
+public import FLT.AINTLIB.DedekindResidue.CompletedZeta.PoissonLattice
+public import FLT.AINTLIB.DedekindResidue.CompletedZeta.PoissonSummation
+public import FLT.AINTLIB.DedekindResidue.CompletedZeta.ThetaEstimates
+public import FLT.AINTLIB.DedekindResidue.CompletedZeta.ThetaLattice
+public import FLT.AINTLIB.DedekindResidue.ExplicitFormula.AuxAdmissible
+public import FLT.AINTLIB.DedekindResidue.ExplicitFormula.FourierJordan
+public import FLT.AINTLIB.DedekindResidue.ExplicitFormula.GRHZeros
+public import FLT.AINTLIB.DedekindResidue.ExplicitFormula.GammaSide
+public import FLT.AINTLIB.DedekindResidue.ExplicitFormula.PhiTransform
+public import FLT.AINTLIB.DedekindResidue.ExplicitFormula.PrimeSide
+public import FLT.AINTLIB.DedekindResidue.ExplicitFormula.RectangleContour
 public import FLT.AINTLIB.DedekindResidue.ExplicitFormula.TestFunction
+public import FLT.AINTLIB.DedekindResidue.ExplicitFormula.WeilAssembly
+public import FLT.AINTLIB.DedekindResidue.ExplicitFormula.ZeroCapture
+public import FLT.AINTLIB.DedekindResidue.Lemma2
 public import FLT.AbsoluteGaloisGroup.TameCharacter
 public import FLT.Assumptions.KnownIn1980s
 public import FLT.Assumptions.Mazur
