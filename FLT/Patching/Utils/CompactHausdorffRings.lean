@@ -8,9 +8,12 @@ module
 public import Mathlib.GroupTheory.Divisible
 public import Mathlib.Topology.Algebra.Group.CompactOpen
 public import Mathlib.Data.Nat.Prime.Defs
+import Mathlib.Analysis.SpecialFunctions.Complex.CircleAddChar
 import Mathlib.Data.Nat.Factorization.Induction
 import Mathlib.Topology.Algebra.Group.SubmonoidClosure
 import Mathlib.Topology.Algebra.Ring.Ideal
+import Mathlib.Topology.Separation.Connected
+import Pontryagin.EvalInjective
 
 /-!
 # Compact Hausdorff rings
@@ -23,6 +26,57 @@ disconnected, and a connected compact Hausdorff abelian group is divisible.
 @[expose] public section
 
 section CompactHausdorff
+
+private theorem group_subsingleton_of_pow_eq_one_aux
+    (A : Type*) [CommGroup A] [TopologicalSpace A] [IsTopologicalGroup A]
+    [ConnectedSpace A] [CompactSpace A] [T2Space A]
+    (p : ℕ) (hp : p.Prime) (hAp : ∀ a : A, a ^ p = 1) :
+    Subsingleton A := by
+  let _ : NeZero p := ⟨hp.ne_zero⟩
+  constructor
+  intro a b
+  apply PontryaginDual.eval_injective_aux A
+  apply PontryaginDual.ext
+  intro χ
+  let _ : Finite (Set.range (fun x : A => χ x)) :=
+    Finite.of_injective
+      (fun z : Set.range (fun x : A => χ x) =>
+        (⟨Circle.toUnits z.1, by
+          rw [mem_rootsOfUnity]
+          obtain ⟨x, hx⟩ := z.2
+          have hz : z.1 ^ p = (1 : Circle) := by
+            rw [← hx, ← map_pow, hAp, map_one]
+          simpa only [map_pow, map_one] using congrArg Circle.toUnits hz⟩ :
+          rootsOfUnity p ℂ))
+      (fun x y h => by
+        apply Subtype.ext
+        apply Subtype.ext
+        simpa [Circle.toUnits_apply] using
+          congrArg (fun z : rootsOfUnity p ℂ => ((z.1 : ℂˣ) : ℂ)) h)
+  have hrange : (Set.range (fun x : A => χ x)).Subsingleton := by
+    rw [← Set.not_nontrivial_iff]
+    intro hnontrivial
+    have hinfinite :=
+      (isPreconnected_range (f := fun x : A => χ x) χ.continuous).infinite_of_nontrivial
+        hnontrivial
+    exact Infinite.false hinfinite.to_subtype
+  exact hrange ⟨a, rfl⟩ ⟨b, rfl⟩
+
+private theorem addGroup_subsingleton_of_nsmul_eq_zero_aux
+    (A : Type*) [AddCommGroup A] [TopologicalSpace A] [IsTopologicalAddGroup A]
+    [ConnectedSpace A] [CompactSpace A] [T2Space A]
+    (p : ℕ) (hp : p.Prime) (hAp : ∀ a : A, p • a = 0) :
+    Subsingleton A := by
+  let _ : ConnectedSpace (Multiplicative A) := ‹ConnectedSpace A›
+  let _ : CompactSpace (Multiplicative A) := ‹CompactSpace A›
+  let _ : T2Space (Multiplicative A) := ‹T2Space A›
+  have hmul : Subsingleton (Multiplicative A) :=
+    group_subsingleton_of_pow_eq_one_aux (Multiplicative A) p hp fun a => by
+      apply Multiplicative.toAdd.injective
+      simpa using hAp a.toAdd
+  exact ⟨fun a b => Multiplicative.ofAdd.injective (hmul.elim _ _)⟩
+
+attribute [to_additive existing] group_subsingleton_of_pow_eq_one_aux
 
 /-- A connected compact Hausdorff vector space over `𝔽_p` is trivial. This might sound easy, but it
 seems to require the fact that every nontrivial compact hausdorff group has a nontrivial continuous
@@ -39,7 +93,7 @@ theorem Group.subsingleton_of_pow_prime_eq_one
     [ConnectedSpace A] [CompactSpace A] [T2Space A]
     (p : ℕ) (hp : p.Prime) (hAp : ∀ a : A, a ^ p = 1) :
     Subsingleton A := by
-  sorry
+  exact group_subsingleton_of_pow_eq_one_aux A p hp hAp
 
 /-- A compact Hausdorff vector space over `𝔽_p` is totally disconnected. -/
 @[to_additive]
