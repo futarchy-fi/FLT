@@ -7,6 +7,7 @@ module
 
 public import FLT.Odlyzko.Discard
 public import FLT.Odlyzko.TartarLaplace
+public import Mathlib.Analysis.Complex.ExponentialBounds
 
 /-!
 # Poitou's archimedean integral for the Tartar kernel
@@ -407,6 +408,155 @@ theorem integral_scaledTartar_div_sinh_eq_log_two_add_L1 {y : ℝ}
     _ = ∑' m : ℕ, ∫ x in Set.Ioi (0 : ℝ), archimedeanRow y m x := hswap.symm
     _ = Real.log 2 + L1 y := hleft
 
+/-- The limiting scaled-Tartar archimedean integrand is integrable on `(0, ∞)`. -/
+theorem integrableOn_scaledTartar_archimedeanIntegrand {y : ℝ}
+    (hy : 0 < y) (hy4 : y < 1 / 4) :
+    IntegrableOn
+      (fun x : ℝ ↦ (1 - tartarNumerator (x * √y) / Real.cosh (x / 2)) /
+        (2 * Real.sinh (x / 2)))
+      (Set.Ioi 0) := by
+  let μ := volume.restrict (Set.Ioi (0 : ℝ))
+  have hint : ∀ m : ℕ, Integrable (archimedeanRow y m) μ := by
+    intro m
+    cases m with
+    | zero => exact integrableOn_baseDeriv
+    | succ m => exact integrableOn_laplaceRow y m
+  have hnorm : (fun m : ℕ ↦ ∫ x, ‖archimedeanRow y m x‖ ∂μ) =
+      fun m ↦ match m with
+        | 0 => Real.log 2
+        | k + 1 => L1term y k := by
+    funext m
+    cases m with
+    | zero =>
+        simp only [archimedeanRow]
+        rw [show (∫ x, ‖baseDeriv x‖ ∂μ) = ∫ x, baseDeriv x ∂μ by
+          apply integral_congr_ae
+          refine (ae_restrict_iff' measurableSet_Ioi).mpr ?_
+          exact Filter.Eventually.of_forall fun x hx ↦ by
+            change ‖baseDeriv x‖ = baseDeriv x
+            rw [Real.norm_eq_abs, abs_of_nonneg (baseDeriv_nonneg x hx)]]
+        exact integral_baseDeriv
+    | succ m =>
+        simp only [archimedeanRow]
+        rw [show (∫ x, ‖laplaceRow y m x‖ ∂μ) = ∫ x, laplaceRow y m x ∂μ by
+          apply integral_congr_ae
+          filter_upwards with x
+          rw [Real.norm_eq_abs, abs_of_nonneg (laplaceRow_nonneg y m x)]]
+        exact integral_laplaceRow hy hy4 m
+  have hsum : Summable (fun m : ℕ ↦ ∫ x, ‖archimedeanRow y m x‖ ∂μ) := by
+    rw [hnorm]
+    apply (summable_nat_add_iff 1).mp
+    simpa only [Nat.add_eq, Nat.add_zero] using L1_summable hy hy4
+  have hlin : (∑' m : ℕ, ∫⁻ x, ‖archimedeanRow y m x‖ₑ ∂μ) < ⊤ := by
+    have heach (m : ℕ) : ∫⁻ x, ‖archimedeanRow y m x‖ₑ ∂μ =
+        ‖∫ x, ‖archimedeanRow y m x‖ ∂μ‖ₑ := by
+      rw [← ofReal_integral_norm_eq_lintegral_enorm (hint m),
+        Real.enorm_eq_ofReal (integral_nonneg (fun x ↦ norm_nonneg _))]
+    rw [funext heach, lt_top_iff_ne_top]
+    exact tsum_enorm_ne_top_iff_summable_norm.2 hsum.norm
+  have hnum : Continuous (fun x : ℝ ↦ tartarNumerator (x * √y)) :=
+    continuous_tartarNumerator.comp (continuous_id.mul continuous_const)
+  have htop : Continuous
+      (fun x : ℝ ↦ 1 - tartarNumerator (x * √y) / Real.cosh (x / 2)) :=
+    continuous_const.sub (hnum.div (Real.continuous_cosh.comp (continuous_id.div_const 2))
+      (fun x ↦ (Real.cosh_pos _).ne'))
+  have hcontinuous : ContinuousOn
+      (fun x : ℝ ↦ (1 - tartarNumerator (x * √y) / Real.cosh (x / 2)) /
+        (2 * Real.sinh (x / 2))) (Set.Ioi 0) := by
+    apply ContinuousOn.div htop.continuousOn (by fun_prop)
+    intro x hx
+    exact mul_ne_zero (by norm_num)
+      (Real.sinh_pos_iff.mpr (by linarith [Set.mem_Ioi.mp hx])).ne'
+  refine ⟨hcontinuous.aestronglyMeasurable measurableSet_Ioi, ?_⟩
+  rw [hasFiniteIntegral_iff_enorm]
+  calc
+    (∫⁻ x, ‖(1 - tartarNumerator (x * √y) / Real.cosh (x / 2)) /
+        (2 * Real.sinh (x / 2))‖ₑ ∂μ) =
+      ∫⁻ x, ‖∑' m : ℕ, archimedeanRow y m x‖ₑ ∂μ := by
+        apply lintegral_congr_ae
+        refine (ae_restrict_iff' measurableSet_Ioi).mpr ?_
+        exact Filter.Eventually.of_forall fun x hx ↦ by
+          change ‖(1 - tartarNumerator (x * √y) / Real.cosh (x / 2)) /
+            (2 * Real.sinh (x / 2))‖ₑ = ‖∑' m : ℕ, archimedeanRow y m x‖ₑ
+          rw [archimedeanRows_sum y hx]
+    _ ≤ ∫⁻ x, ∑' m : ℕ, ‖archimedeanRow y m x‖ₑ ∂μ :=
+      lintegral_mono fun x ↦ enorm_tsum_le_tsum_enorm
+    _ = ∑' m : ℕ, ∫⁻ x, ‖archimedeanRow y m x‖ₑ ∂μ := by
+      rw [lintegral_tsum]
+      intro m
+      exact (hint m).aestronglyMeasurable.enorm
+    _ < ⊤ := hlin
+
+private noncomputable def gaussianArchimedeanError (x : ℝ) : ℝ :=
+  (1 - Real.exp (-x ^ 2)) / Real.sinh x
+
+private theorem gaussianArchimedeanError_nonneg {x : ℝ} (hx : 0 < x) :
+    0 ≤ gaussianArchimedeanError x := by
+  unfold gaussianArchimedeanError
+  exact div_nonneg (sub_nonneg.mpr (by
+    rw [← Real.exp_zero]
+    exact Real.exp_le_exp.mpr (neg_nonpos.mpr (sq_nonneg x))))
+    (Real.sinh_pos_iff.mpr hx).le
+
+private theorem integrableOn_gaussianArchimedeanError :
+    IntegrableOn gaussianArchimedeanError (Set.Ioi 0) := by
+  have hcontinuous : ContinuousOn gaussianArchimedeanError (Set.Ioi 0) := by
+    unfold gaussianArchimedeanError
+    apply ContinuousOn.div (by fun_prop) (by fun_prop)
+    intro x hx
+    exact (Real.sinh_pos_iff.mpr (Set.mem_Ioi.mp hx)).ne'
+  have hlocalDom : IntegrableOn (fun x : ℝ ↦ x) (Set.Ioc 0 1) :=
+    continuous_id.integrableOn_Icc.mono_set Set.Ioc_subset_Icc_self
+  have hlocal : IntegrableOn gaussianArchimedeanError (Set.Ioc 0 1) := by
+    refine hlocalDom.mono'
+      ((hcontinuous.mono Set.Ioc_subset_Ioi_self).aestronglyMeasurable measurableSet_Ioc) ?_
+    refine (ae_restrict_iff' measurableSet_Ioc).mpr ?_
+    exact Filter.Eventually.of_forall fun x hx ↦ by
+      rw [Real.norm_eq_abs, abs_of_nonneg (gaussianArchimedeanError_nonneg hx.1)]
+      unfold gaussianArchimedeanError
+      rw [div_le_iff₀ (Real.sinh_pos_iff.mpr hx.1)]
+      have hnum := Real.one_sub_le_exp_neg (x ^ 2)
+      have hsinh := (Real.self_le_sinh_iff (x := x)).mpr hx.1.le
+      nlinarith [mul_le_mul_of_nonneg_left hsinh hx.1.le]
+  have htailDom : IntegrableOn (fun x : ℝ ↦ 4 * Real.exp (-x)) (Set.Ioi 1) := by
+    have h := integrableOn_exp_mul_Ioi (a := (-1 : ℝ)) (by norm_num) 1
+    change Integrable (fun x : ℝ ↦ 4 * Real.exp (-x)) (volume.restrict (Set.Ioi 1))
+    simpa only [neg_one_mul] using h.const_mul 4
+  have htail : IntegrableOn gaussianArchimedeanError (Set.Ioi 1) := by
+    refine htailDom.mono'
+      ((hcontinuous.mono (Set.Ioi_subset_Ioi (by norm_num))).aestronglyMeasurable
+        measurableSet_Ioi) ?_
+    refine (ae_restrict_iff' measurableSet_Ioi).mpr ?_
+    exact Filter.Eventually.of_forall fun x hx ↦ by
+      have hx1 : 1 < x := Set.mem_Ioi.mp hx
+      have hx0 : 0 < x := lt_trans (by norm_num) hx1
+      rw [Real.norm_eq_abs, abs_of_nonneg (gaussianArchimedeanError_nonneg hx0)]
+      have hrpos : 0 < Real.exp (-x) := Real.exp_pos _
+      have hrhalf : Real.exp (-x) < 1 / 2 := by
+        have hneg : -x < (-1 : ℝ) := by linarith
+        exact (Real.exp_lt_exp.mpr hneg).trans Real.exp_neg_one_lt_half
+      have hexp : Real.exp x * Real.exp (-x) = 1 := by
+        rw [← Real.exp_add]
+        norm_num
+      have hsinh : Real.sinh x = (1 - Real.exp (-x) ^ 2) /
+          (2 * Real.exp (-x)) := by
+        rw [Real.sinh_eq]
+        field_simp
+        nlinarith
+      have hden : 0 < 1 - Real.exp (-x) ^ 2 := by nlinarith
+      have hkernel : 1 / Real.sinh x ≤ 4 * Real.exp (-x) := by
+        rw [hsinh]
+        field_simp [hrpos.ne', hden.ne']
+        nlinarith
+      unfold gaussianArchimedeanError
+      calc
+        (1 - Real.exp (-x ^ 2)) / Real.sinh x ≤ 1 / Real.sinh x := by
+          apply div_le_div_of_nonneg_right _ (Real.sinh_pos_iff.mpr hx0).le
+          linarith [Real.exp_pos (-x ^ 2)]
+        _ ≤ 4 * Real.exp (-x) := hkernel
+  rw [← Set.Ioc_union_Ioi_eq_Ioi (by norm_num : (0 : ℝ) ≤ 1)]
+  exact hlocal.union htail
+
 /-- The explicit-formula sinh integral of the scaled Tartar kernel is `log 2 + L1 y`. -/
 theorem poitouArchimedeanIntegral_scaledTartar_eq {y : ℝ}
     (hy : 0 < y) (hy4 : y < 1 / 4) :
@@ -435,6 +585,134 @@ theorem poitouArchimedeanIntegral_scaledTartar_eq {y : ℝ}
           (2 * Real.sinh (x / 2)) : ℝ) : ℂ) := integral_ofReal
     _ = _ := by rw [integral_scaledTartar_div_sinh_eq_log_two_add_L1 hy hy4]
 
+private theorem poitouGaussianCutoff_zero_le (n : ℕ) (x : ℝ) :
+    poitouGaussianCutoff 0 x ≤ poitouGaussianCutoff n x := by
+  unfold poitouGaussianCutoff
+  apply Real.exp_le_exp.mpr
+  have hn0 : 0 ≤ (n : ℝ) := Nat.cast_nonneg n
+  have hn : 1 ≤ (n : ℝ) + 1 := by linarith
+  have hdiv := div_le_self (sq_nonneg x) hn
+  norm_num
+  simpa only [neg_div] using neg_le_neg hdiv
+
+/-- The archimedean integrals of the Gaussian regularization converge to Poitou's
+exact scaled-Tartar value. -/
+theorem tendsto_poitouArchimedeanIntegral_gaussian_scaledTartar {y : ℝ}
+    (hy : 0 < y) (hy4 : y < 1 / 4) :
+    Tendsto
+      (fun n ↦ poitouArchimedeanIntegral
+        (gaussianPoitouApproximant
+          (scaledNumerator tartarNumerator (1 / √y)) n))
+      atTop (nhds ((Real.log 2 + L1 y : ℝ) : ℂ)) := by
+  let f := scaledNumerator tartarNumerator (1 / √y)
+  let F : ℕ → ℝ → ℂ := gaussianPoitouApproximant f
+  let G : ℕ → ℝ → ℂ := fun n x ↦
+    ((1 / (2 * Real.sinh (x / 2)) : ℝ) : ℂ) * (F n 0 - F n x)
+  let Glim : ℝ → ℂ := fun x ↦
+    ((1 / (2 * Real.sinh (x / 2)) : ℝ) : ℂ) *
+      (scaledPoitouKernel tartarNumerator (1 / √y) 0 -
+        scaledPoitouKernel tartarNumerator (1 / √y) x)
+  let B : ℝ → ℝ := fun x ↦
+    (1 - tartarNumerator (x * √y) / Real.cosh (x / 2)) /
+        (2 * Real.sinh (x / 2)) + gaussianArchimedeanError x
+  have hB : IntegrableOn B (Set.Ioi 0) :=
+    (integrableOn_scaledTartar_archimedeanIntegrand hy hy4).add
+      integrableOn_gaussianArchimedeanError
+  have hform (n : ℕ) (x : ℝ) (hx : 0 < x) :
+      G n x = (((1 - tartarNumerator (x * √y) * poitouGaussianCutoff n x /
+        Real.cosh (x / 2)) / (2 * Real.sinh (x / 2)) : ℝ) : ℂ) := by
+    have hfzero : f 0 = 1 := by simp [f, scaledNumerator]
+    change ((1 / (2 * Real.sinh (x / 2)) : ℝ) : ℂ) *
+      (gaussianPoitouApproximant f n 0 - gaussianPoitouApproximant f n x) = _
+    simp only [gaussianPoitouApproximant, poitouKernel_apply,
+      gaussianDampedNumerator_zero hfzero]
+    dsimp [f]
+    rw [gaussianDampedNumerator, scaledNumerator_tartar_eq y x hy]
+    norm_num [Real.cosh_zero]
+    ring
+  have hdecomp (n : ℕ) (x : ℝ) (hx : 0 < x) :
+      (1 - tartarNumerator (x * √y) * poitouGaussianCutoff n x /
+          Real.cosh (x / 2)) / (2 * Real.sinh (x / 2)) =
+        (1 - tartarNumerator (x * √y) / Real.cosh (x / 2)) /
+            (2 * Real.sinh (x / 2)) +
+          tartarNumerator (x * √y) *
+            ((1 - poitouGaussianCutoff n x) / Real.sinh x) := by
+    have hsh : Real.sinh (x / 2) ≠ 0 :=
+      (Real.sinh_pos_iff.mpr (by linarith)).ne'
+    have hch : Real.cosh (x / 2) ≠ 0 := (Real.cosh_pos _).ne'
+    have hxsh : Real.sinh x = 2 * Real.sinh (x / 2) * Real.cosh (x / 2) := by
+      rw [← Real.sinh_two_mul]
+      congr 1
+      ring
+    rw [hxsh]
+    field_simp [hsh, hch]
+    ring
+  have hbound (n : ℕ) : ∀ᵐ x ∂volume.restrict (Set.Ioi 0), ‖G n x‖ ≤ B x := by
+    refine (ae_restrict_iff' measurableSet_Ioi).mpr ?_
+    exact Filter.Eventually.of_forall fun x hx ↦ by
+      have hx0 := Set.mem_Ioi.mp hx
+      rw [hform n x hx0, Complex.norm_real, Real.norm_eq_abs,
+        abs_of_nonneg (by
+          apply div_nonneg
+          · apply sub_nonneg.mpr
+            apply (div_le_one (Real.cosh_pos _)).2
+            have hmul : tartarNumerator (x * √y) * poitouGaussianCutoff n x ≤ 1 := by
+              calc
+                tartarNumerator (x * √y) * poitouGaussianCutoff n x ≤
+                    1 * poitouGaussianCutoff n x :=
+                  mul_le_mul_of_nonneg_right (tartarNumerator_le_one _)
+                    (poitouGaussianCutoff_pos n x).le
+                _ ≤ 1 := by simpa using poitouGaussianCutoff_le_one n x
+            exact hmul.trans (Real.one_le_cosh _)
+          · positivity), hdecomp n x hx0]
+      have hcutNonneg : 0 ≤ 1 - poitouGaussianCutoff n x :=
+        sub_nonneg.mpr (poitouGaussianCutoff_le_one n x)
+      have herrorNonneg : 0 ≤ (1 - poitouGaussianCutoff n x) / Real.sinh x :=
+        div_nonneg hcutNonneg (Real.sinh_pos_iff.mpr hx0).le
+      have herror : (1 - poitouGaussianCutoff n x) / Real.sinh x ≤
+          gaussianArchimedeanError x := by
+        have hzero : poitouGaussianCutoff 0 x = Real.exp (-x ^ 2) := by
+          norm_num [poitouGaussianCutoff]
+        unfold gaussianArchimedeanError
+        rw [← hzero]
+        exact div_le_div_of_nonneg_right
+          (sub_le_sub_left (poitouGaussianCutoff_zero_le n x) 1)
+          (Real.sinh_pos_iff.mpr hx0).le
+      have hf := tartarNumerator_le_one (x * √y)
+      have hf0 := tartarNumerator_nonneg (x * √y)
+      dsimp [B]
+      nlinarith [mul_le_mul_of_nonneg_left herror hf0]
+  have hmeas (n : ℕ) : AEStronglyMeasurable (G n)
+      (volume.restrict (Set.Ioi 0)) := by
+    have hscalarReal : ContinuousOn
+        (fun x : ℝ ↦ 1 / (2 * Real.sinh (x / 2))) (Set.Ioi 0) := by
+      apply ContinuousOn.div continuousOn_const (by fun_prop)
+      intro x hx
+      exact mul_ne_zero (by norm_num)
+        (Real.sinh_pos_iff.mpr (by linarith [Set.mem_Ioi.mp hx])).ne'
+    have hscalar : ContinuousOn
+        (fun x : ℝ ↦ ((1 / (2 * Real.sinh (x / 2)) : ℝ) : ℂ)) (Set.Ioi 0) :=
+      Complex.continuous_ofReal.comp_continuousOn hscalarReal
+    have hFcont : Continuous (F n) := by
+      dsimp [F, f]
+      exact (contDiff_gaussianPoitouApproximant_scaledTartar (1 / √y) n).continuous
+    exact (hscalar.mul (continuous_const.sub hFcont).continuousOn).aestronglyMeasurable
+      measurableSet_Ioi
+  have hlim : ∀ᵐ x ∂volume.restrict (Set.Ioi 0),
+      Tendsto (fun n ↦ G n x) atTop (nhds (Glim x)) := by
+    filter_upwards with x
+    dsimp [G, Glim, F, f]
+    exact tendsto_const_nhds.mul
+      ((tendsto_scaledTartar_gaussianPoitouApproximant y 0).sub
+        (tendsto_scaledTartar_gaussianPoitouApproximant y x))
+  have h := tendsto_integral_of_dominated_convergence B hmeas hB hbound hlim
+  change Tendsto
+    (fun n ↦ poitouArchimedeanIntegral
+      (gaussianPoitouApproximant
+        (scaledNumerator tartarNumerator (1 / √y)) n)) atTop _
+  rw [← poitouArchimedeanIntegral_scaledTartar_eq hy hy4]
+  simpa only [poitouArchimedeanIntegral, G, Glim, F, f] using h
+
 /-- The scaled Tartar kernel gives Poitou's closed archimedean lower term. -/
 theorem archimedeanLowerTerm_scaledTartar_eq {y : ℝ}
     (hy : 0 < y) (hy4 : y < 1 / 4) :
@@ -446,6 +724,34 @@ theorem archimedeanLowerTerm_scaledTartar_eq {y : ℝ}
   rw [show (8 : ℝ) * Real.pi = 2 * (4 * Real.pi) by ring,
     Real.log_mul (by norm_num : (2 : ℝ) ≠ 0) (by positivity : 4 * Real.pi ≠ 0)]
   ring
+
+/-- The archimedean lower terms of the Gaussian approximants converge to
+Poitou's closed Tartar-kernel value. -/
+theorem tendsto_archimedeanLowerTerm_gaussian_scaledTartar {y : ℝ}
+    (hy : 0 < y) (hy4 : y < 1 / 4) :
+    Tendsto
+      (fun n ↦ archimedeanLowerTerm
+        (poitouArchimedeanIntegral
+          (gaussianPoitouApproximant
+            (scaledNumerator tartarNumerator (1 / √y)) n)))
+      atTop (nhds
+        (Real.eulerMascheroniConstant + Real.log (4 * Real.pi) - L1 y)) := by
+  have hcont : Continuous archimedeanLowerTerm := by
+    unfold archimedeanLowerTerm
+    fun_prop
+  have h := hcont.continuousAt.tendsto.comp
+    (tendsto_poitouArchimedeanIntegral_gaussian_scaledTartar hy hy4)
+  have hlimit : archimedeanLowerTerm ((Real.log 2 + L1 y : ℝ) : ℂ) =
+      Real.eulerMascheroniConstant + Real.log (4 * Real.pi) - L1 y := by
+    rw [← poitouArchimedeanIntegral_scaledTartar_eq hy hy4,
+      archimedeanLowerTerm_scaledTartar_eq hy hy4]
+  change Tendsto
+    (fun n ↦ archimedeanLowerTerm
+      (poitouArchimedeanIntegral
+        (gaussianPoitouApproximant
+          (scaledNumerator tartarNumerator (1 / √y)) n))) atTop _ at h
+  rw [hlimit] at h
+  exact h
 
 end Poitou
 end Odlyzko
