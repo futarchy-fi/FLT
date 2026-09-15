@@ -288,6 +288,7 @@ public import FLT.Odlyzko.Tartar
 public import FLT.Odlyzko.TartarNumerator
 public import FLT.Odlyzko.TartarPlancherel
 public import FLT.Odlyzko.TartarSmoothness
+public import FLT.Odlyzko.TartarVariation
 public import FLT.Odlyzko.UniformBound
 public import FLT.Odlyzko.ZeroSideCritical
 public import FLT.Odlyzko.ZeroSideOffCritical
