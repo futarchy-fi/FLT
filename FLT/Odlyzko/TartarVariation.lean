@@ -517,13 +517,22 @@ private theorem hasDerivAt_poitouKernel {f : ℝ → ℝ} (hf : Differentiable �
   push_cast
   field_simp [(Real.cosh_pos (x / 2)).ne']
 
-theorem boundedVariationOn_poitouKernel_scaledTartarNumerator {a : ℝ} (ha : a ≠ 0) :
-    BoundedVariationOn (poitouKernel (scaledNumerator tartarNumerator a))
-      (Set.Ici 0) := by
-  let f := scaledNumerator tartarNumerator a
-  have hfcont : ContDiff ℝ ∞ f := contDiff_scaledTartarNumerator a
-  have hfint : Integrable f :=
-    (integrable_comp_div_iff tartarNumerator ha).2 integrable_tartarNumerator
+/-- Dividing a differentiable integrable real function by the Poitou hyperbolic kernel
+preserves integrability of its derivative, provided the original derivative is integrable. -/
+theorem integrable_deriv_poitouKernel {f : ℝ → ℝ} (hfdiff : Differentiable ℝ f)
+    (hfint : Integrable f) (hfderiv : Integrable (deriv f)) :
+    Integrable (deriv (poitouKernel f)) := by
+  have heq : deriv (poitouKernel f) = poitouKernelDeriv f := by
+    funext x
+    exact (hasDerivAt_poitouKernel hfdiff x).deriv
+  rw [heq]
+  exact integrable_poitouKernelDeriv hfint hfderiv
+
+/-- The Poitou kernel of a continuously differentiable integrable function with integrable
+derivative has bounded variation on `[0, ∞)`. -/
+theorem boundedVariationOn_poitouKernel_of_contDiff_one {f : ℝ → ℝ}
+    (hfcont : ContDiff ℝ 1 f) (hfint : Integrable f) (hfderiv : Integrable (deriv f)) :
+    BoundedVariationOn (poitouKernel f) (Set.Ici 0) := by
   apply DedekindResidue.boundedVariationOn_of_deriv_integrable Set.ordConnected_Ici
   · exact (Complex.ofRealCLM.continuous.comp
       (hfcont.continuous.div (Real.continuous_cosh.comp (continuous_id.div_const 2))
@@ -531,8 +540,17 @@ theorem boundedVariationOn_poitouKernel_scaledTartarNumerator {a : ℝ} (ha : a 
   · rw [interior_Ici]
     intro x _
     exact hasDerivAt_poitouKernel (hfcont.differentiable (by simp)) x
-  · exact (integrable_poitouKernelDeriv hfint
-      (integrable_deriv_scaledTartarNumerator ha)).integrableOn
+  · exact (integrable_poitouKernelDeriv hfint hfderiv).integrableOn
+
+theorem boundedVariationOn_poitouKernel_scaledTartarNumerator {a : ℝ} (ha : a ≠ 0) :
+    BoundedVariationOn (poitouKernel (scaledNumerator tartarNumerator a))
+      (Set.Ici 0) := by
+  let f := scaledNumerator tartarNumerator a
+  have hfcont : ContDiff ℝ ∞ f := contDiff_scaledTartarNumerator a
+  have hfint : Integrable f :=
+    (integrable_comp_div_iff tartarNumerator ha).2 integrable_tartarNumerator
+  exact boundedVariationOn_poitouKernel_of_contDiff_one (hfcont.of_le (by simp)) hfint
+    (integrable_deriv_scaledTartarNumerator ha)
 
 theorem scaledTartar_isPoitouTestFn_unconditional {y : ℝ} (hy : 0 < y) :
     IsPoitouTestFn (scaledNumerator tartarNumerator (1 / √y)) := by
