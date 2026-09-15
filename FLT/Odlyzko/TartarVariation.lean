@@ -387,6 +387,15 @@ private theorem boundedVariationOn_smoothDiffQuot {F : ℝ → ℂ}
     exact hasDerivAt_smoothDiffQuot (hF.differentiable (by norm_num)) (ne_of_gt hx)
   · exact integrableOn_smoothDiffQuotDeriv_Ici hF hF' hFint hFderiv
 
+/-- A twice continuously differentiable function with a critical point at zero and integrable
+function and derivative has a bounded-variation removable difference quotient on `[0, ∞)`. -/
+theorem boundedVariationOn_diffQuot_of_contDiff_two {F : ℝ → ℂ}
+    (hF : ContDiff ℝ 2 F) (hF' : deriv F 0 = 0)
+    (hFint : Integrable F) (hFderiv : Integrable (deriv F)) :
+    BoundedVariationOn (fun x : ℝ ↦ (F 0 - F x) / x) (Set.Ici 0) := by
+  change BoundedVariationOn (smoothDiffQuot F) (Set.Ici 0)
+  exact boundedVariationOn_smoothDiffQuot hF hF' hFint hFderiv
+
 private theorem deriv_zero_of_even' (F : ℝ → ℂ) (hF : Differentiable ℝ F)
     (hFeven : Function.Even F) : deriv F 0 = 0 := by
   have hderiv := (hF 0).hasDerivAt
@@ -425,10 +434,10 @@ theorem boundedVariationOn_poitouDiffQuot_scaledTartarNumerator {a : ℝ} (ha : 
   have hFderiv : Integrable (deriv F) := by
     rw [deriv_complexify_eq f (hfcont.differentiable (by simp))]
     exact (integrable_deriv_scaledTartarNumerator ha).ofReal
-  have h := boundedVariationOn_smoothDiffQuot hFcont hFzero hFint hFderiv
-  have heq : smoothDiffQuot F = poitouDiffQuot f := by
+  have h := boundedVariationOn_diffQuot_of_contDiff_two hFcont hFzero hFint hFderiv
+  have heq : (fun x : ℝ ↦ (F 0 - F x) / x) = poitouDiffQuot f := by
     funext x
-    simp only [smoothDiffQuot, F, complexify, poitouDiffQuot]
+    simp only [F, complexify, poitouDiffQuot]
     push_cast
     rfl
   rwa [heq] at h
