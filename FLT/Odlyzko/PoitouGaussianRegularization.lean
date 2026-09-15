@@ -6,6 +6,7 @@ Authors: Kelly Azevedo Santos
 module
 
 public import FLT.Odlyzko.PoitouRegularization
+public import FLT.Odlyzko.FourierProduct
 public import FLT.Odlyzko.TartarPlancherel
 public import Mathlib.Analysis.SpecialFunctions.Gaussian.FourierTransform
 
@@ -80,7 +81,14 @@ theorem fourier_poitouGaussianCutoff_nonneg (n : ℕ) (t : ℝ) :
     rw [Complex.ofReal_exp]
     push_cast
     rfl
-  rw [hfun, fourier_gaussian_innerProductSpace (V := ℝ) (by simpa using hb)]
+  rw [hfun]
+  have htransform :
+      𝓕 (fun x : ℝ ↦ Complex.exp (-(b : ℂ) * (‖x‖ : ℂ) ^ 2)) =
+        fun t : ℝ ↦ ((Real.pi : ℂ) / b) ^ (Module.finrank ℝ ℝ / 2 : ℂ) *
+          Complex.exp (-(Real.pi : ℂ) ^ 2 * (‖t‖ : ℂ) ^ 2 / b) := by
+    funext t
+    exact fourier_gaussian_innerProductSpace (V := ℝ) (by simpa using hb) t
+  rw [htransform]
   simp only [Module.finrank_self, Nat.cast_one]
   rw [show ((Real.pi : ℂ) / (b : ℂ)) = ((Real.pi / b : ℝ) : ℂ) by push_cast; rfl,
     show (1 / 2 : ℂ) = ((1 / 2 : ℝ) : ℂ) by norm_num,
@@ -90,6 +98,121 @@ theorem fourier_poitouGaussianCutoff_nonneg (n : ℕ) (t : ℝ) :
   simp only [Complex.mul_re, Complex.ofReal_re, Complex.ofReal_im, Complex.exp_ofReal_re,
     Complex.exp_ofReal_im, mul_zero, sub_zero]
   positivity
+
+/-- The Fourier transform of every Gaussian cutoff is integrable. -/
+theorem integrable_fourier_poitouGaussianCutoff (n : ℕ) :
+    Integrable (𝓕 (complexify (poitouGaussianCutoff n))) := by
+  let b : ℝ := 1 / ((n : ℝ) + 1)
+  have hb : 0 < b := by dsimp [b]; positivity
+  have hfun : complexify (poitouGaussianCutoff n) =
+      fun x : ℝ ↦ Complex.exp (-(b : ℂ) * (‖x‖ : ℂ) ^ 2) := by
+    funext x
+    simp only [complexify, poitouGaussianCutoff, Real.norm_eq_abs]
+    rw [show (-x ^ 2 / ((n : ℝ) + 1) : ℝ) = -b * |x| ^ 2 by
+      rw [sq_abs]
+      dsimp [b]
+      field_simp]
+    rw [Complex.ofReal_exp]
+    push_cast
+    rfl
+  rw [hfun]
+  have htransform :
+      𝓕 (fun x : ℝ ↦ Complex.exp (-(b : ℂ) * (‖x‖ : ℂ) ^ 2)) =
+        fun t : ℝ ↦ ((Real.pi : ℂ) / b) ^ (Module.finrank ℝ ℝ / 2 : ℂ) *
+          Complex.exp (-(Real.pi : ℂ) ^ 2 * (‖t‖ : ℂ) ^ 2 / b) := by
+    funext t
+    exact fourier_gaussian_innerProductSpace (V := ℝ) (by simpa using hb) t
+  rw [htransform]
+  have hcoef : 0 < (((Real.pi : ℂ) ^ 2 / (b : ℂ))).re := by
+    rw [show ((Real.pi : ℂ) ^ 2 / (b : ℂ)) = ((Real.pi ^ 2 / b : ℝ) : ℂ) by
+      push_cast
+      rfl]
+    simp only [Complex.ofReal_re]
+    positivity
+  convert (integrable_cexp_neg_mul_sq hcoef).const_mul
+    (((Real.pi : ℂ) / b) ^ (Module.finrank ℝ ℝ / 2 : ℂ)) using 1
+  funext x
+  congr 2
+  simp only [Real.norm_eq_abs]
+  rw [show (((|x| : ℝ) : ℂ) ^ 2) = (((x : ℝ) : ℂ) ^ 2) by
+    norm_cast
+    exact sq_abs x]
+  ring
+
+private theorem fourier_complexify_even_im_eq_zero (f : ℝ → ℝ) (hf : Function.Even f)
+    (t : ℝ) : (𝓕 (complexify f) t).im = 0 := by
+  rw [← Complex.conj_eq_iff_im, ← fourier_reflect_eq_conj]
+  apply Real.fourier_congr_ae
+  filter_upwards with x
+  exact congrArg Complex.ofReal (hf x)
+
+theorem fourier_poitouGaussianCutoff_im_eq_zero (n : ℕ) (t : ℝ) :
+    (𝓕 (complexify (poitouGaussianCutoff n)) t).im = 0 :=
+  fourier_complexify_even_im_eq_zero _ (poitouGaussianCutoff_even n) t
+
+private theorem integrable_complexify_scaledTartarNumerator {a : ℝ} (ha : a ≠ 0) :
+    Integrable (complexify (scaledNumerator tartarNumerator a)) := by
+  rw [complexify_scaledNumerator]
+  exact (integrable_comp_div_iff (complexify tartarNumerator) ha).2
+    integrable_tartarNumerator.ofReal
+
+private theorem continuous_complexify_scaledTartarNumerator (a : ℝ) :
+    Continuous (complexify (scaledNumerator tartarNumerator a)) := by
+  rw [complexify_scaledNumerator]
+  exact continuous_scaled _ _ (Complex.continuous_ofReal.comp continuous_tartarNumerator)
+
+private theorem scaledTartarNumerator_even (a : ℝ) :
+    Function.Even (scaledNumerator tartarNumerator a) := by
+  intro x
+  simpa only [scaledNumerator, neg_div] using tartarNumerator_even (x / a)
+
+private theorem fourier_scaledTartarNumerator_im_eq_zero (a t : ℝ) :
+    (𝓕 (complexify (scaledNumerator tartarNumerator a)) t).im = 0 :=
+  fourier_complexify_even_im_eq_zero _ (scaledTartarNumerator_even a) t
+
+private theorem integrable_fourier_scaledTartarNumerator {a : ℝ} (ha : 0 < a) :
+    Integrable (𝓕 (complexify (scaledNumerator tartarNumerator a))) := by
+  have hauto : Integrable (autocorrelation tartarV) :=
+    continuous_autocorrelation_tartarV.integrable_of_hasCompactSupport
+      hasCompactSupport_autocorrelation_tartarV
+  rw [complexify_scaledNumerator]
+  have hformula :
+      𝓕 (scaled (complexify tartarNumerator) a) = fun t : ℝ ↦
+        (a : ℂ) * (9 * Real.pi / 8 : ℂ) *
+          autocorrelation tartarV (2 * Real.pi * (a * t)) := by
+    funext t
+    rw [fourier_scaled _ ha, fourier_tartarNumerator]
+    ring
+  rw [hformula]
+  have hint := ((integrable_comp_div_iff (autocorrelation tartarV)
+    (by positivity : (1 / (2 * Real.pi * a) : ℝ) ≠ 0)).2 hauto).const_mul
+      ((a : ℂ) * (9 * Real.pi / 8 : ℂ))
+  refine hint.congr ?_
+  filter_upwards with t
+  rw [show t / (1 / (2 * Real.pi * a)) = 2 * Real.pi * (a * t) by
+    field_simp]
+
+private theorem hasCompactSupport_fourier_scaledTartarNumerator {a : ℝ} (ha : 0 < a) :
+    HasCompactSupport (𝓕 (complexify (scaledNumerator tartarNumerator a))) := by
+  rw [complexify_scaledNumerator]
+  have hscaled : HasCompactSupport
+      (scaled (autocorrelation tartarV) (1 / (2 * Real.pi * a))) :=
+    scaled_hasCompactSupport _ (by positivity) hasCompactSupport_autocorrelation_tartarV
+  have hformula :
+      𝓕 (scaled (complexify tartarNumerator) a) = fun t : ℝ ↦
+        (a : ℂ) * (9 * Real.pi / 8 : ℂ) *
+          scaled (autocorrelation tartarV) (1 / (2 * Real.pi * a)) t := by
+    funext t
+    rw [fourier_scaled _ ha, fourier_tartarNumerator]
+    simp only [scaled]
+    rw [show t / (1 / (2 * Real.pi * a)) = 2 * Real.pi * (a * t) by
+      field_simp]
+    ring
+  rw [hformula]
+  change HasCompactSupport
+    ((fun _ : ℝ ↦ ((a : ℂ) * (9 * Real.pi / 8 : ℂ))) •
+      scaled (autocorrelation tartarV) (1 / (2 * Real.pi * a)))
+  exact hscaled.smul_left
 
 /-- At each point the Gaussian cutoff tends to one. -/
 theorem tendsto_poitouGaussianCutoff (x : ℝ) :
@@ -123,6 +246,48 @@ theorem Integrable.gaussianDampedNumerator {f : ℝ → ℝ} (hf : Integrable f)
   · filter_upwards with x
     rw [Real.norm_eq_abs, abs_of_pos (poitouGaussianCutoff_pos n x)]
     exact poitouGaussianCutoff_le_one n x
+
+/-- Gaussian damping preserves Fourier positivity for every positive scaling of the Tartar
+numerator. -/
+theorem fourier_gaussianDamped_scaledTartar_nonneg {a : ℝ} (ha : 0 < a) (n : ℕ) (t : ℝ) :
+    0 ≤ (𝓕 (complexify
+      (gaussianDampedNumerator (scaledNumerator tartarNumerator a) n)) t).re := by
+  let f := complexify (scaledNumerator tartarNumerator a)
+  let g := complexify (poitouGaussianCutoff n)
+  have hf : Integrable f := integrable_complexify_scaledTartarNumerator ha.ne'
+  have hg : Integrable g := integrable_poitouGaussianCutoff n |>.ofReal
+  have hF : Integrable (𝓕 f) := integrable_fourier_scaledTartarNumerator ha
+  have hG : Integrable (𝓕 g) := integrable_fourier_poitouGaussianCutoff n
+  have hproduct : (fun x : ℝ ↦ f x * g x) = complexify
+      (gaussianDampedNumerator (scaledNumerator tartarNumerator a) n) := by
+    funext x
+    simp [f, g, complexify, gaussianDampedNumerator]
+  have hfg : Integrable (fun x : ℝ ↦ f x * g x) := by
+    rw [hproduct]
+    exact (Integrable.gaussianDampedNumerator
+      ((integrable_comp_div_iff tartarNumerator ha.ne').2 integrable_tartarNumerator) n).ofReal
+  have hfcont : Continuous f := continuous_complexify_scaledTartarNumerator a
+  have hgcont : Continuous g :=
+    Complex.continuous_ofReal.comp (continuous_poitouGaussianCutoff n)
+  have hfeven : Function.Even f := by
+    intro x
+    exact congrArg Complex.ofReal (scaledTartarNumerator_even a x)
+  have hgeven : Function.Even g := by
+    intro x
+    exact congrArg Complex.ofReal (poitouGaussianCutoff_even n x)
+  have hcompact := hasCompactSupport_fourier_scaledTartarNumerator ha
+  have hidentity := fourier_mul_eq_convolution_of_even f g hf hg hF hG hfg hfcont hgcont
+    hfeven hgeven hcompact
+  rw [hproduct] at hidentity
+  rw [hidentity]
+  exact convolution_re_nonneg_of_nonneg (𝓕 f) (𝓕 g) hcompact
+    (VectorFourier.fourierIntegral_continuous Real.continuous_fourierChar
+      (innerSL ℝ).continuous₂ hf)
+    hG.locallyIntegrable
+    (fourier_scaledNumerator_nonneg tartarNumerator ha fourier_tartarNumerator_nonneg)
+    (fourier_scaledTartarNumerator_im_eq_zero a)
+    (fourier_poitouGaussianCutoff_nonneg n)
+    (fourier_poitouGaussianCutoff_im_eq_zero n) t
 
 /-- Gaussian-damped numerators converge pointwise to the original numerator. -/
 theorem tendsto_gaussianDampedNumerator (f : ℝ → ℝ) (x : ℝ) :
