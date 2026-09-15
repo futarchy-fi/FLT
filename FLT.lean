@@ -266,6 +266,8 @@ public import FLT.Odlyzko
 public import FLT.Odlyzko.AdmissibleAutocorrelation
 public import FLT.Odlyzko.Autocorrelation
 public import FLT.Odlyzko.AutocorrelationNonnegative
+public import FLT.Odlyzko.CertifiedL1
+public import FLT.Odlyzko.DegreeEighteen
 public import FLT.Odlyzko.Discard
 public import FLT.Odlyzko.ExplicitFormula
 public import FLT.Odlyzko.ExponentialForm
@@ -274,6 +276,7 @@ public import FLT.Odlyzko.Interval.Constants
 public import FLT.Odlyzko.Interval.Rat
 public import FLT.Odlyzko.Monotonicity
 public import FLT.Odlyzko.PoitouKernel
+public import FLT.Odlyzko.PoitouLargeY
 public import FLT.Odlyzko.PoitouRegularization
 public import FLT.Odlyzko.PoitouSeries
 public import FLT.Odlyzko.PrimeSide
