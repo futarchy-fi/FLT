@@ -275,6 +275,7 @@ public import FLT.Odlyzko.FontaineConstant
 public import FLT.Odlyzko.Interval.Constants
 public import FLT.Odlyzko.Interval.Rat
 public import FLT.Odlyzko.Monotonicity
+public import FLT.Odlyzko.PoitouGaussianRegularization
 public import FLT.Odlyzko.PoitouKernel
 public import FLT.Odlyzko.PoitouLargeY
 public import FLT.Odlyzko.PoitouRegularization
