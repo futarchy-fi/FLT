@@ -277,6 +277,7 @@ public import FLT.Odlyzko.Interval.Constants
 public import FLT.Odlyzko.Interval.Rat
 public import FLT.Odlyzko.Monotonicity
 public import FLT.Odlyzko.PoitouAdmissibility
+public import FLT.Odlyzko.PoitouArchimedean
 public import FLT.Odlyzko.PoitouBoundary
 public import FLT.Odlyzko.PoitouGaussianRegularization
 public import FLT.Odlyzko.PoitouKernel
