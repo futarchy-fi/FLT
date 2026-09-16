@@ -97,7 +97,8 @@ theorem tartarNumerator_eq_integral_cos (x : ℝ) :
   funext u
   rw [show -x * u = -(x * u) by ring, Real.cos_neg]
 
-private theorem one_sub_tartarNumerator_eq_integral (x : ℝ) :
+/-- The deficit from the normalized value at zero is a nonnegative cosine integral. -/
+theorem one_sub_tartarNumerator_eq_integral (x : ℝ) :
     1 - tartarNumerator x = 9 / 16 * ∫ u : ℝ,
       realAutocorrelation tartarV u * (1 - Real.cos (x * u)) := by
   have hcos : Integrable (fun u : ℝ ↦
@@ -122,6 +123,13 @@ private theorem one_sub_tartarNumerator_eq_integral (x : ℝ) :
       congr 2
       funext u
       ring
+
+/-- Tartar's normalized numerator is at most one. -/
+theorem tartarNumerator_le_one (x : ℝ) : tartarNumerator x ≤ 1 := by
+  rw [← sub_nonneg, one_sub_tartarNumerator_eq_integral]
+  apply mul_nonneg (by norm_num)
+  exact integral_nonneg fun u ↦ mul_nonneg (realAutocorrelation_tartarV_nonneg u)
+    (sub_nonneg.mpr (Real.cos_le_one _))
 
 private theorem integral_exp_neg_mul_cos {q : ℝ} (hq : 0 < q) (a : ℝ) :
     ∫ x in Set.Ioi (0 : ℝ), Real.exp (-q * x) * Real.cos (a * x) =
