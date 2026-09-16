@@ -62,6 +62,7 @@ public import FLT.Deformations.Algebra.InverseLimit.Topology
 public import FLT.Deformations.Categories
 public import FLT.Deformations.ContinuousRepresentation.IsTopologicalModule
 public import FLT.Deformations.DeSmitLenstra
+public import FLT.Deformations.DeSmitLenstra.FramedRepresentationRing
 public import FLT.Deformations.IsProartinian
 public import FLT.Deformations.IsResidueAlgebra
 public import FLT.Deformations.Lemmas
