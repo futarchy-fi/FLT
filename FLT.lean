@@ -64,6 +64,7 @@ public import FLT.Deformations.ContinuousRepresentation.IsTopologicalModule
 public import FLT.Deformations.DeSmitLenstra
 public import FLT.Deformations.DeSmitLenstra.FramedCompletion
 public import FLT.Deformations.DeSmitLenstra.FramedRepresentationRing
+public import FLT.Deformations.DeSmitLenstra.FramedUniversalProperty
 public import FLT.Deformations.IsProartinian
 public import FLT.Deformations.IsResidueAlgebra
 public import FLT.Deformations.Lemmas
