@@ -303,6 +303,57 @@ theorem scaledTartar_boundaryIdentification {y : ℝ} (hy : 0 < y) :
     simpa only [scaledNumerator, neg_div] using tartarNumerator_even (x / (1 / √y))
   exact paperPhi_poitouKernel_boundaryIdentification _ hfint hfeven
 
+/-- The two pole values of the Gaussian approximants converge to the scaled
+Tartar pole correction. -/
+theorem tendsto_gaussianPoitouApproximant_scaledTartar_poleCorrection
+    {y : ℝ} (hy : 0 < y) :
+    Tendsto (fun n : ℕ =>
+      (DedekindResidue.paperPhi
+          (gaussianPoitouApproximant
+            (scaledNumerator tartarNumerator (1 / √y)) n) 0 +
+        DedekindResidue.paperPhi
+          (gaussianPoitouApproximant
+            (scaledNumerator tartarNumerator (1 / √y)) n) 1).re)
+      atTop (nhds (12 * Real.pi / (5 * √y))) := by
+  let f := scaledNumerator tartarNumerator (1 / √y)
+  have hscale : 0 < 1 / √y := by positivity
+  have hf : Integrable f :=
+    (integrable_comp_div_iff tartarNumerator hscale.ne').2 integrable_tartarNumerator
+  have hf0 : ∀ x, 0 ≤ f x := fun x => tartarNumerator_nonneg _
+  have hmeas (n : ℕ) : AEStronglyMeasurable (gaussianDampedNumerator f n) :=
+    hf.aestronglyMeasurable.mul (continuous_poitouGaussianCutoff n).aestronglyMeasurable
+  have hbound (n : ℕ) : ∀ᵐ x, ‖gaussianDampedNumerator f n x‖ ≤ f x :=
+    Filter.Eventually.of_forall fun x => by
+      rw [gaussianDampedNumerator, Real.norm_eq_abs,
+        abs_of_nonneg (mul_nonneg (hf0 x) (poitouGaussianCutoff_pos n x).le)]
+      exact mul_le_of_le_one_right (hf0 x) (poitouGaussianCutoff_le_one n x)
+  have hlim : ∀ᵐ x, Tendsto (fun n => gaussianDampedNumerator f n x)
+      atTop (nhds (f x)) :=
+    Filter.Eventually.of_forall fun x => tendsto_gaussianDampedNumerator f x
+  have hint := tendsto_integral_of_dominated_convergence f hmeas hf hbound hlim
+  have hpole (n : ℕ) :
+      (DedekindResidue.paperPhi (gaussianPoitouApproximant f n) 0 +
+        DedekindResidue.paperPhi (gaussianPoitouApproximant f n) 1).re =
+        2 * ∫ x : ℝ, gaussianDampedNumerator f n x := by
+    simpa only [gaussianPoitouApproximant] using
+      paperPhi_poitouKernel_zero_add_one_re
+        (gaussianDampedNumerator f n)
+        (Integrable.gaussianDampedNumerator hf n)
+        (gaussianDampedNumerator_even (fun x => by
+          dsimp [f, scaledNumerator]
+          simpa only [neg_div] using tartarNumerator_even (x / (1 / √y))) n)
+  have hmass : (∫ x : ℝ, f x) = (1 / √y) * (6 * Real.pi / 5) := by
+    change (∫ x : ℝ, tartarNumerator (x / (1 / √y))) = _
+    rw [MeasureTheory.Measure.integral_comp_div, abs_of_pos hscale,
+      integral_tartarNumerator]
+    rfl
+  convert hint.const_mul 2 using 1
+  · funext n
+    exact hpole n
+  · rw [hmass]
+    congr 1
+    ring
+
 /-- Poitou's scaled Tartar kernel contributes `12π/(5√y)` at the two poles. -/
 theorem scaledTartar_poleCorrection {y : ℝ} (hy : 0 < y) :
     (DedekindResidue.paperPhi

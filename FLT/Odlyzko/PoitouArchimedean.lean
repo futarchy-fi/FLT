@@ -6,6 +6,7 @@ Authors: Kelly Azevedo Santos
 module
 
 public import FLT.Odlyzko.Discard
+public import FLT.Odlyzko.PoitouLargeY
 public import FLT.Odlyzko.TartarLaplace
 public import Mathlib.Analysis.Complex.ExponentialBounds
 
@@ -30,6 +31,13 @@ noncomputable def poitouArchimedeanIntegral (F : ℝ → ℂ) : ℂ :=
     ((1 / (2 * Real.sinh (x / 2)) : ℝ) : ℂ) * (F 0 - F x)
 
 namespace Poitou
+
+/-- On the power-series disc, the large-parameter representation agrees with `L1`. -/
+theorem L1large_eq_L1 {y : ℝ} (hy : 0 < y) (hy4 : y < 1 / 4) :
+    L1large y = L1 y := by
+  rw [L1large, L1]
+  have hsum := L1_summable hy hy4
+  rw [hsum.tsum_eq_zero_add, L1term_zero, Lclosed_eq_L hy hy4]
 
 private noncomputable def basePrimitive (x : ℝ) : ℝ :=
   Real.log 2 + Real.log (1 + Real.exp (-x)) -
@@ -263,6 +271,55 @@ private theorem integral_laplaceRow {y : ℝ} (hy : 0 < y) (hy4 : y < 1 / 4)
   rw [tartarNumerator_laplace_eq_L hy hq hscaled]
   rfl
 
+private noncomputable def largeArchimedeanValue (y : ℝ) : ℕ → ℝ
+  | 0 => Real.log 2
+  | 1 => Lclosed y
+  | m + 2 => L1term y (m + 1)
+
+private theorem integral_laplaceRow_large {y : ℝ} (hy : 0 < y) (hy9 : y < 9 / 4)
+    (m : ℕ) :
+    ∫ x in Set.Ioi (0 : ℝ), laplaceRow y m x = largeArchimedeanValue y (m + 1) := by
+  let q : ℝ := 2 * (m : ℝ) + 1
+  have hq : 0 < q := by dsimp [q]; positivity
+  rw [show (∫ x in Set.Ioi (0 : ℝ), laplaceRow y m x) =
+      2 * ∫ x in Set.Ioi (0 : ℝ),
+        (1 - tartarNumerator (x * √y)) * Real.exp (-q * x) by
+    rw [← integral_const_mul]
+    apply setIntegral_congr_fun measurableSet_Ioi
+    intro x _
+    rw [laplaceRow_eq]
+    dsimp [q]
+    ring]
+  cases m with
+  | zero =>
+      simpa [q, largeArchimedeanValue] using
+        tartarNumerator_laplace_eq_Lclosed hy hq
+  | succ m =>
+      have hscaled : y / q ^ 2 < 1 / 4 := by
+        have hm : (0 : ℝ) ≤ m := Nat.cast_nonneg m
+        have hq2 : 9 ≤ q ^ 2 := by dsimp [q]; push_cast; nlinarith
+        rw [div_lt_iff₀ (sq_pos_of_pos hq)]
+        nlinarith
+      rw [tartarNumerator_laplace_eq_L hy hq hscaled]
+      simp only [largeArchimedeanValue, L1term]
+      dsimp [q]
+
+private theorem summable_largeArchimedeanValue {y : ℝ}
+    (hy : 0 < y) (hy9 : y < 9 / 4) : Summable (largeArchimedeanValue y) := by
+  apply (summable_nat_add_iff 2).mp
+  simpa only [largeArchimedeanValue, Nat.add_assoc, Nat.reduceAdd] using
+    L1large_tail_summable hy hy9
+
+private theorem tsum_largeArchimedeanValue {y : ℝ}
+    (hy : 0 < y) (hy9 : y < 9 / 4) :
+    ∑' m, largeArchimedeanValue y m = Real.log 2 + L1large y := by
+  have hsum := summable_largeArchimedeanValue hy hy9
+  rw [hsum.tsum_eq_zero_add]
+  have htail : Summable (fun m => largeArchimedeanValue y (m + 1)) :=
+    (summable_nat_add_iff 1).mpr hsum
+  rw [htail.tsum_eq_zero_add]
+  simp only [largeArchimedeanValue, L1large]
+
 private theorem summable_laplaceRow (y : ℝ) {x : ℝ} (hx : 0 < x) :
     Summable (fun m : ℕ ↦ laplaceRow y m x) := by
   have hr0 : 0 ≤ Real.exp (-2 * x) := (Real.exp_pos _).le
@@ -337,6 +394,66 @@ private theorem archimedeanRows_sum (y : ℝ) {x : ℝ} (hx : 0 < x) :
   field_simp [hsh, hch]
   ring
 
+/-- Odlyzko's archimedean identity in the large-parameter range used by the
+degree-eighteen certificate. -/
+theorem integral_scaledTartar_div_sinh_eq_log_two_add_L1large {y : ℝ}
+    (hy : 0 < y) (hy9 : y < 9 / 4) :
+    (∫ x in Set.Ioi (0 : ℝ),
+        (1 - tartarNumerator (x * √y) / Real.cosh (x / 2)) /
+          (2 * Real.sinh (x / 2))) =
+      Real.log 2 + L1large y := by
+  have hint : ∀ m : ℕ, Integrable (archimedeanRow y m)
+      (volume.restrict (Set.Ioi 0)) := by
+    intro m
+    cases m with
+    | zero => exact integrableOn_baseDeriv
+    | succ m => exact integrableOn_laplaceRow y m
+  have hvalue : (fun m : ℕ => ∫ x in Set.Ioi (0 : ℝ), archimedeanRow y m x) =
+      largeArchimedeanValue y := by
+    funext m
+    cases m with
+    | zero => exact integral_baseDeriv
+    | succ m => exact integral_laplaceRow_large hy hy9 m
+  have hnorm : (fun m : ℕ => ∫ x in Set.Ioi (0 : ℝ), ‖archimedeanRow y m x‖) =
+      largeArchimedeanValue y := by
+    funext m
+    cases m with
+    | zero =>
+        simp only [archimedeanRow]
+        rw [show (∫ x in Set.Ioi (0 : ℝ), ‖baseDeriv x‖) =
+            ∫ x in Set.Ioi (0 : ℝ), baseDeriv x by
+          apply setIntegral_congr_fun measurableSet_Ioi
+          intro x hx
+          change ‖baseDeriv x‖ = baseDeriv x
+          rw [Real.norm_eq_abs, abs_of_nonneg
+            (baseDeriv_nonneg x (Set.mem_Ioi.mp hx))], integral_baseDeriv]
+        rfl
+    | succ m =>
+        simp only [archimedeanRow]
+        rw [show (∫ x in Set.Ioi (0 : ℝ), ‖laplaceRow y m x‖) =
+            ∫ x in Set.Ioi (0 : ℝ), laplaceRow y m x by
+          apply setIntegral_congr_fun measurableSet_Ioi
+          intro x _
+          change ‖laplaceRow y m x‖ = laplaceRow y m x
+          rw [Real.norm_eq_abs, abs_of_nonneg (laplaceRow_nonneg y m x)]]
+        exact integral_laplaceRow_large hy hy9 m
+  have hsum : Summable (fun m : ℕ =>
+      ∫ x in Set.Ioi (0 : ℝ), ‖archimedeanRow y m x‖) := by
+    rw [hnorm]
+    exact summable_largeArchimedeanValue hy hy9
+  have hswap := integral_tsum_of_summable_integral_norm hint hsum
+  calc
+    (∫ x in Set.Ioi (0 : ℝ),
+        (1 - tartarNumerator (x * √y) / Real.cosh (x / 2)) /
+          (2 * Real.sinh (x / 2))) =
+      ∫ x in Set.Ioi (0 : ℝ), ∑' m : ℕ, archimedeanRow y m x := by
+        apply setIntegral_congr_fun measurableSet_Ioi
+        intro x hx
+        exact (archimedeanRows_sum y (Set.mem_Ioi.mp hx)).symm
+    _ = ∑' m : ℕ, ∫ x in Set.Ioi (0 : ℝ), archimedeanRow y m x := hswap.symm
+    _ = ∑' m, largeArchimedeanValue y m := by rw [hvalue]
+    _ = Real.log 2 + L1large y := tsum_largeArchimedeanValue hy hy9
+
 /-- Odlyzko's exact archimedean identity for the scaled Tartar numerator. -/
 theorem integral_scaledTartar_div_sinh_eq_log_two_add_L1 {y : ℝ}
     (hy : 0 < y) (hy4 : y < 1 / 4) :
@@ -408,9 +525,10 @@ theorem integral_scaledTartar_div_sinh_eq_log_two_add_L1 {y : ℝ}
     _ = ∑' m : ℕ, ∫ x in Set.Ioi (0 : ℝ), archimedeanRow y m x := hswap.symm
     _ = Real.log 2 + L1 y := hleft
 
-/-- The limiting scaled-Tartar archimedean integrand is integrable on `(0, ∞)`. -/
-theorem integrableOn_scaledTartar_archimedeanIntegrand {y : ℝ}
-    (hy : 0 < y) (hy4 : y < 1 / 4) :
+/-- The limiting scaled-Tartar archimedean integrand is integrable throughout the
+large-parameter range. -/
+theorem integrableOn_scaledTartar_archimedeanIntegrand_large {y : ℝ}
+    (hy : 0 < y) (hy9 : y < 9 / 4) :
     IntegrableOn
       (fun x : ℝ ↦ (1 - tartarNumerator (x * √y) / Real.cosh (x / 2)) /
         (2 * Real.sinh (x / 2)))
@@ -422,9 +540,7 @@ theorem integrableOn_scaledTartar_archimedeanIntegrand {y : ℝ}
     | zero => exact integrableOn_baseDeriv
     | succ m => exact integrableOn_laplaceRow y m
   have hnorm : (fun m : ℕ ↦ ∫ x, ‖archimedeanRow y m x‖ ∂μ) =
-      fun m ↦ match m with
-        | 0 => Real.log 2
-        | k + 1 => L1term y k := by
+      largeArchimedeanValue y := by
     funext m
     cases m with
     | zero =>
@@ -442,11 +558,10 @@ theorem integrableOn_scaledTartar_archimedeanIntegrand {y : ℝ}
           apply integral_congr_ae
           filter_upwards with x
           rw [Real.norm_eq_abs, abs_of_nonneg (laplaceRow_nonneg y m x)]]
-        exact integral_laplaceRow hy hy4 m
+        exact integral_laplaceRow_large hy hy9 m
   have hsum : Summable (fun m : ℕ ↦ ∫ x, ‖archimedeanRow y m x‖ ∂μ) := by
     rw [hnorm]
-    apply (summable_nat_add_iff 1).mp
-    simpa only [Nat.add_eq, Nat.add_zero] using L1_summable hy hy4
+    exact summable_largeArchimedeanValue hy hy9
   have hlin : (∑' m : ℕ, ∫⁻ x, ‖archimedeanRow y m x‖ₑ ∂μ) < ⊤ := by
     have heach (m : ℕ) : ∫⁻ x, ‖archimedeanRow y m x‖ₑ ∂μ =
         ‖∫ x, ‖archimedeanRow y m x‖ ∂μ‖ₑ := by
@@ -486,6 +601,15 @@ theorem integrableOn_scaledTartar_archimedeanIntegrand {y : ℝ}
       intro m
       exact (hint m).aestronglyMeasurable.enorm
     _ < ⊤ := hlin
+
+/-- The limiting scaled-Tartar archimedean integrand is integrable on `(0, ∞)`. -/
+theorem integrableOn_scaledTartar_archimedeanIntegrand {y : ℝ}
+    (hy : 0 < y) (hy4 : y < 1 / 4) :
+    IntegrableOn
+      (fun x : ℝ ↦ (1 - tartarNumerator (x * √y) / Real.cosh (x / 2)) /
+        (2 * Real.sinh (x / 2)))
+      (Set.Ioi 0) :=
+  integrableOn_scaledTartar_archimedeanIntegrand_large hy (hy4.trans (by norm_num))
 
 private noncomputable def gaussianArchimedeanError (x : ℝ) : ℝ :=
   (1 - Real.exp (-x ^ 2)) / Real.sinh x
@@ -557,11 +681,11 @@ private theorem integrableOn_gaussianArchimedeanError :
   rw [← Set.Ioc_union_Ioi_eq_Ioi (by norm_num : (0 : ℝ) ≤ 1)]
   exact hlocal.union htail
 
-/-- The explicit-formula sinh integral of the scaled Tartar kernel is `log 2 + L1 y`. -/
-theorem poitouArchimedeanIntegral_scaledTartar_eq {y : ℝ}
-    (hy : 0 < y) (hy4 : y < 1 / 4) :
+/-- The explicit-formula sinh integral in the large-parameter range. -/
+theorem poitouArchimedeanIntegral_scaledTartar_eq_large {y : ℝ}
+    (hy : 0 < y) (hy9 : y < 9 / 4) :
     poitouArchimedeanIntegral (scaledPoitouKernel tartarNumerator (1 / √y)) =
-      ((Real.log 2 + L1 y : ℝ) : ℂ) := by
+      ((Real.log 2 + L1large y : ℝ) : ℂ) := by
   rw [poitouArchimedeanIntegral]
   calc
     (∫ x in Set.Ioi (0 : ℝ),
@@ -583,7 +707,15 @@ theorem poitouArchimedeanIntegral_scaledTartar_eq {y : ℝ}
     _ = ((∫ x in Set.Ioi (0 : ℝ),
         (1 - tartarNumerator (x * √y) / Real.cosh (x / 2)) /
           (2 * Real.sinh (x / 2)) : ℝ) : ℂ) := integral_ofReal
-    _ = _ := by rw [integral_scaledTartar_div_sinh_eq_log_two_add_L1 hy hy4]
+    _ = _ := by rw [integral_scaledTartar_div_sinh_eq_log_two_add_L1large hy hy9]
+
+/-- The explicit-formula sinh integral of the scaled Tartar kernel is `log 2 + L1 y`. -/
+theorem poitouArchimedeanIntegral_scaledTartar_eq {y : ℝ}
+    (hy : 0 < y) (hy4 : y < 1 / 4) :
+    poitouArchimedeanIntegral (scaledPoitouKernel tartarNumerator (1 / √y)) =
+      ((Real.log 2 + L1 y : ℝ) : ℂ) := by
+  rw [poitouArchimedeanIntegral_scaledTartar_eq_large hy (hy4.trans (by norm_num)),
+    L1large_eq_L1 hy hy4]
 
 private theorem poitouGaussianCutoff_zero_le (n : ℕ) (x : ℝ) :
     poitouGaussianCutoff 0 x ≤ poitouGaussianCutoff n x := by
@@ -595,15 +727,15 @@ private theorem poitouGaussianCutoff_zero_le (n : ℕ) (x : ℝ) :
   norm_num
   simpa only [neg_div] using neg_le_neg hdiv
 
-/-- The archimedean integrals of the Gaussian regularization converge to Poitou's
-exact scaled-Tartar value. -/
-theorem tendsto_poitouArchimedeanIntegral_gaussian_scaledTartar {y : ℝ}
-    (hy : 0 < y) (hy4 : y < 1 / 4) :
+/-- The archimedean integrals of the Gaussian regularization converge throughout
+the large-parameter range. -/
+theorem tendsto_poitouArchimedeanIntegral_gaussian_scaledTartar_large {y : ℝ}
+    (hy : 0 < y) (hy9 : y < 9 / 4) :
     Tendsto
       (fun n ↦ poitouArchimedeanIntegral
         (gaussianPoitouApproximant
           (scaledNumerator tartarNumerator (1 / √y)) n))
-      atTop (nhds ((Real.log 2 + L1 y : ℝ) : ℂ)) := by
+      atTop (nhds ((Real.log 2 + L1large y : ℝ) : ℂ)) := by
   let f := scaledNumerator tartarNumerator (1 / √y)
   let F : ℕ → ℝ → ℂ := gaussianPoitouApproximant f
   let G : ℕ → ℝ → ℂ := fun n x ↦
@@ -616,7 +748,7 @@ theorem tendsto_poitouArchimedeanIntegral_gaussian_scaledTartar {y : ℝ}
     (1 - tartarNumerator (x * √y) / Real.cosh (x / 2)) /
         (2 * Real.sinh (x / 2)) + gaussianArchimedeanError x
   have hB : IntegrableOn B (Set.Ioi 0) :=
-    (integrableOn_scaledTartar_archimedeanIntegrand hy hy4).add
+    (integrableOn_scaledTartar_archimedeanIntegrand_large hy hy9).add
       integrableOn_gaussianArchimedeanError
   have hform (n : ℕ) (x : ℝ) (hx : 0 < x) :
       G n x = (((1 - tartarNumerator (x * √y) * poitouGaussianCutoff n x /
@@ -710,8 +842,33 @@ theorem tendsto_poitouArchimedeanIntegral_gaussian_scaledTartar {y : ℝ}
     (fun n ↦ poitouArchimedeanIntegral
       (gaussianPoitouApproximant
         (scaledNumerator tartarNumerator (1 / √y)) n)) atTop _
-  rw [← poitouArchimedeanIntegral_scaledTartar_eq hy hy4]
+  rw [← poitouArchimedeanIntegral_scaledTartar_eq_large hy hy9]
   simpa only [poitouArchimedeanIntegral, G, Glim, F, f] using h
+
+/-- The archimedean integrals of the Gaussian regularization converge to Poitou's
+power-series value. -/
+theorem tendsto_poitouArchimedeanIntegral_gaussian_scaledTartar {y : ℝ}
+    (hy : 0 < y) (hy4 : y < 1 / 4) :
+    Tendsto
+      (fun n ↦ poitouArchimedeanIntegral
+        (gaussianPoitouApproximant
+          (scaledNumerator tartarNumerator (1 / √y)) n))
+      atTop (nhds ((Real.log 2 + L1 y : ℝ) : ℂ)) := by
+  simpa only [L1large_eq_L1 hy hy4] using
+    tendsto_poitouArchimedeanIntegral_gaussian_scaledTartar_large
+      hy (hy4.trans (by norm_num))
+
+/-- The scaled Tartar kernel gives Poitou's large-parameter archimedean lower term. -/
+theorem archimedeanLowerTerm_scaledTartar_eq_large {y : ℝ}
+    (hy : 0 < y) (hy9 : y < 9 / 4) :
+    archimedeanLowerTerm
+        (poitouArchimedeanIntegral (scaledPoitouKernel tartarNumerator (1 / √y))) =
+      Real.eulerMascheroniConstant + Real.log (4 * Real.pi) - L1large y := by
+  rw [archimedeanLowerTerm, poitouArchimedeanIntegral_scaledTartar_eq_large hy hy9]
+  simp only [Complex.ofReal_re]
+  rw [show (8 : ℝ) * Real.pi = 2 * (4 * Real.pi) by ring,
+    Real.log_mul (by norm_num : (2 : ℝ) ≠ 0) (by positivity : 4 * Real.pi ≠ 0)]
+  ring
 
 /-- The scaled Tartar kernel gives Poitou's closed archimedean lower term. -/
 theorem archimedeanLowerTerm_scaledTartar_eq {y : ℝ}
@@ -724,6 +881,33 @@ theorem archimedeanLowerTerm_scaledTartar_eq {y : ℝ}
   rw [show (8 : ℝ) * Real.pi = 2 * (4 * Real.pi) by ring,
     Real.log_mul (by norm_num : (2 : ℝ) ≠ 0) (by positivity : 4 * Real.pi ≠ 0)]
   ring
+
+/-- The Gaussian archimedean lower terms converge to the large-parameter value. -/
+theorem tendsto_archimedeanLowerTerm_gaussian_scaledTartar_large {y : ℝ}
+    (hy : 0 < y) (hy9 : y < 9 / 4) :
+    Tendsto
+      (fun n ↦ archimedeanLowerTerm
+        (poitouArchimedeanIntegral
+          (gaussianPoitouApproximant
+            (scaledNumerator tartarNumerator (1 / √y)) n)))
+      atTop (nhds
+        (Real.eulerMascheroniConstant + Real.log (4 * Real.pi) - L1large y)) := by
+  have hcont : Continuous archimedeanLowerTerm := by
+    unfold archimedeanLowerTerm
+    fun_prop
+  have h := hcont.continuousAt.tendsto.comp
+    (tendsto_poitouArchimedeanIntegral_gaussian_scaledTartar_large hy hy9)
+  have hlimit : archimedeanLowerTerm ((Real.log 2 + L1large y : ℝ) : ℂ) =
+      Real.eulerMascheroniConstant + Real.log (4 * Real.pi) - L1large y := by
+    rw [← poitouArchimedeanIntegral_scaledTartar_eq_large hy hy9,
+      archimedeanLowerTerm_scaledTartar_eq_large hy hy9]
+  change Tendsto
+    (fun n ↦ archimedeanLowerTerm
+      (poitouArchimedeanIntegral
+        (gaussianPoitouApproximant
+          (scaledNumerator tartarNumerator (1 / √y)) n))) atTop _ at h
+  rw [hlimit] at h
+  exact h
 
 /-- The archimedean lower terms of the Gaussian approximants converge to
 Poitou's closed Tartar-kernel value. -/

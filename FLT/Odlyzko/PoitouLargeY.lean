@@ -55,7 +55,8 @@ theorem L1term_shift_le {y : ℝ} (hy0 : 0 < y) (hy : y < 9 / 4) (m : ℕ) :
       push_cast
       field_simp
 
-private theorem L1large_tail_summable {y : ℝ} (hy0 : 0 < y) (hy : y < 9 / 4) :
+/-- The shifted series in the large-parameter representation is summable. -/
+theorem L1large_tail_summable {y : ℝ} (hy0 : 0 < y) (hy : y < 9 / 4) :
     Summable (fun m : ℕ ↦ L1term y (m + 1)) := by
   refine summable_of_sum_range_le (c := 4 / 5 * y * (1 / 12))
     (fun m ↦ L1term_shift_nonneg hy0 hy m) (fun n ↦ ?_)
