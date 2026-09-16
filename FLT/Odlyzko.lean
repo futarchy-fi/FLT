@@ -13,9 +13,8 @@ public import Mathlib.NumberTheory.NumberField.InfinitePlace.TotallyRealComplex
 /-!
 # The Odlyzko endgame interface
 
-This file freezes the target of the Odlyzko endgame before its analytic proof is assembled.
-The existing axiom in `FLT.Assumptions.Odlyzko` remains untouched until that assembly is
-complete.
+This file exposes the assembled Odlyzko bound used by the compatibility wrapper in
+`FLT.Assumptions.Odlyzko`.
 -/
 
 @[expose] public section
