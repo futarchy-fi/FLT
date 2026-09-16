@@ -56,9 +56,10 @@ deformation functor of an absolutely irreducible residual representation is core
 ## What is not proved here
 
 The existence of a universal lift for an absolutely irreducible `ρ` over a profinite group
-(de Smit–Lenstra, Proposition 2.3 (1)) is *not* proved: that requires their explicit
-construction, via the completed group algebra `𝓞[[G]]`, Burnside surjectivity onto `Mₙ(𝕜)`,
-lifting of matrix units, and the resulting Morita identification `𝓞[[G]]^ ≅ Mₙ(Rᵘⁿⁱᵛ)`.
+(de Smit–Lenstra, Theorem 2.3 (1)) is *not* proved. Their construction first represents framed
+lifts by completing the commutative coordinate algebra `𝓞[G, n]` from Section 3, then takes a
+projective limit over finite quotients of `G`, and finally descends to the closed subring generated
+by traces using absolute irreducibility (Propositions 2.5 and 2.6).
 Consequently `FLT.Deformations.Representable.isCorepresentable_deformationFunctor` is left
 unproved; what this file supplies is the complete, unconditional reduction around it.
 -/
