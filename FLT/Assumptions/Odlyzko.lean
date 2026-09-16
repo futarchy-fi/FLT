@@ -5,8 +5,7 @@ Authors: Kevin Buzzard
 -/
 module
 
-public import Mathlib.NumberTheory.NumberField.Discriminant.Defs
-public import Mathlib.NumberTheory.NumberField.InfinitePlace.TotallyRealComplex
+public import FLT.Odlyzko
 
 /-!
 
@@ -55,5 +54,6 @@ open Polynomial NumberField Module
 
 /-- An "Odlyzko bound" for the root discriminant of a totally complex number field
 of degree 18 and above. -/
-axiom Odlyzko_statement (K : Type*) [Field K] [NumberField K] [IsTotallyComplex K]
-  (hdim : finrank ℚ K ≥ 18) : |(discr K : ℝ)| ≥ 8.25 ^ finrank ℚ K
+theorem Odlyzko_statement (K : Type*) [Field K] [NumberField K] [IsTotallyComplex K]
+    (hdim : finrank ℚ K ≥ 18) : |(discr K : ℝ)| ≥ 8.25 ^ finrank ℚ K :=
+  Odlyzko.Odlyzko_statement K hdim
