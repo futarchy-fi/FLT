@@ -141,13 +141,14 @@ instance [CompactSpace R] : IsPrecomplete (maximalIdeal R) R where
 
 set_option backward.isDefEq.respectTransparency.types false in
 variable {R} in
-lemma compactSpace_of_finite_residueField [IsNoetherianRing R] [Finite (ResidueField R)]
+lemma compactSpace_of_finite_residueField_of_maximalIdeal_fg
+    (hfg : (maximalIdeal R).FG) [Finite (ResidueField R)]
     [IsAdicComplete (maximalIdeal R) R] :
     CompactSpace R := by
   let f : R →+* Π i : ℕ, R ⧸ (maximalIdeal R) ^ i := algebraMap _ _
   have : Finite (R ⧸ maximalIdeal R) := ‹_›
   have : ∀ i, Finite (R ⧸ (maximalIdeal R) ^ i) := fun i ↦
-    Ideal.finite_quotient_pow (IsNoetherian.noetherian _) _
+    Ideal.finite_quotient_pow hfg _
   have hf : Continuous f := by continuity
   have : Topology.IsClosedEmbedding f := by
     refine ⟨⟨?_, ?_⟩, ?_⟩
@@ -161,7 +162,9 @@ lemma compactSpace_of_finite_residueField [IsNoetherianRing R] [Finite (ResidueF
       rw [injective_iff_map_eq_zero]
       intro a ha
       change a ∈ (⊥ : Ideal R)
-      rw [← Ideal.iInf_pow_eq_bot_of_isLocalRing _ (IsLocalRing.maximalIdeal.isMaximal R).ne_top]
+      rw [← show (⨅ n : ℕ, maximalIdeal R ^ n) = ⊥ by
+        simpa using (IsHausdorff.iInf_pow_smul
+          (IsAdicComplete.toIsHausdorff (I := maximalIdeal R) (M := R)))]
       simpa [RingHom.pi, funext_iff, Ideal.Quotient.eq_zero_iff_mem] using ha
     · rw [← isOpen_compl_iff, isOpen_iff_forall_mem_open]
       intro x hx
@@ -187,6 +190,14 @@ lemma compactSpace_of_finite_residueField [IsNoetherianRing R] [Finite (ResidueF
       apply_fun Ideal.quotientMap (maximalIdeal R ^ i) (.id R) (Ideal.pow_le_pow_right e) at hx₁
       simp [hx₂, H] at hx₁
   exact this.compactSpace
+
+set_option backward.isDefEq.respectTransparency.types false in
+variable {R} in
+lemma compactSpace_of_finite_residueField [IsNoetherianRing R] [Finite (ResidueField R)]
+    [IsAdicComplete (maximalIdeal R) R] :
+    CompactSpace R :=
+  compactSpace_of_finite_residueField_of_maximalIdeal_fg
+    (IsNoetherian.noetherian (maximalIdeal R))
 
 -- TODO: `TotallyDisconnectedSpace` is unnecessary. See
 -- https://ncatlab.org/nlab/show/compact+Hausdorff+rings+are+profinite
