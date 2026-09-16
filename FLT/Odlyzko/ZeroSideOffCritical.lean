@@ -75,6 +75,29 @@ theorem exp_neg_bddAbove_of_bddAbove
     _ ≤ ‖phi w‖ := (neg_le_abs _).trans (Complex.abs_re_le_norm _)
     _ ≤ C := hC ⟨w, hw, rfl⟩
 
+/-- Boundary positivity propagates to every point of the closed critical strip. -/
+theorem PoitouBoundaryIdentification.re_nonneg
+    (phi : ℂ → ℂ) (f : ℝ → ℝ) {z : ℂ}
+    (hz : z ∈ Complex.HadamardThreeLines.verticalClosedStrip 0 1)
+    (hboundary : PoitouBoundaryIdentification phi f)
+    (hfourier : ∀ t, 0 ≤ (𝓕 (complexify f) t).re)
+    (hregular : DiffContOnCl ℂ phi (Complex.HadamardThreeLines.verticalStrip 0 1))
+    (hbounded : BddAbove
+      ((norm ∘ phi) '' Complex.HadamardThreeLines.verticalClosedStrip 0 1)) :
+    0 ≤ (phi z).re := by
+  apply re_nonneg_on_verticalClosedStrip phi hz hregular
+    (exp_neg_bddAbove_of_bddAbove phi hbounded)
+  · intro w hw
+    have hw' : w = w.im * Complex.I := by
+      apply Complex.ext <;> simp [hw]
+    rw [hw']
+    exact hboundary.lower_nonneg hfourier _
+  · intro w hw
+    have hw' : w = 1 + w.im * Complex.I := by
+      apply Complex.ext <;> simp [hw]
+    rw [hw']
+    exact hboundary.upper_nonneg hfourier _
+
 /-- The functional-equation partner `1 - conj(rho)`. -/
 def functionalEquationPartner (rho : ℂ) : ℂ := 1 - conj rho
 
@@ -110,24 +133,10 @@ theorem functionalEquationPair_re_nonneg
     (hbounded : BddAbove
       ((norm ∘ phi) '' Complex.HadamardThreeLines.verticalClosedStrip 0 1)) :
     0 ≤ (phi rho + phi (functionalEquationPartner rho)).re := by
-  have hleft : ∀ w : ℂ, w.re = 0 → 0 ≤ (phi w).re := by
-    intro w hw
-    have hw' : w = w.im * Complex.I := by
-      apply Complex.ext <;> simp [hw]
-    rw [hw']
-    exact hboundary.lower_nonneg hfourier _
-  have hright : ∀ w : ℂ, w.re = 1 → 0 ≤ (phi w).re := by
-    intro w hw
-    have hw' : w = 1 + w.im * Complex.I := by
-      apply Complex.ext <;> simp [hw]
-    rw [hw']
-    exact hboundary.upper_nonneg hfourier _
-  have hexp_bounded := exp_neg_bddAbove_of_bddAbove phi hbounded
   rw [Complex.add_re]
   exact add_nonneg
-    (re_nonneg_on_verticalClosedStrip phi hrho hregular hexp_bounded hleft hright)
-    (re_nonneg_on_verticalClosedStrip phi
-      (functionalEquationPartner_mem_verticalClosedStrip hrho)
-      hregular hexp_bounded hleft hright)
+    (hboundary.re_nonneg phi f hrho hfourier hregular hbounded)
+    (hboundary.re_nonneg phi f
+      (functionalEquationPartner_mem_verticalClosedStrip hrho) hfourier hregular hbounded)
 
 end Odlyzko
