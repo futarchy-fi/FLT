@@ -54,7 +54,8 @@ private theorem integrable_fourierReal (f : ℝ → ℝ) (hf : Integrable f) (γ
     rw [Real.norm_eq_abs]
     exact Real.abs_cos_le_one _
 
-private theorem fourier_complexify_re_eq_integral_cos (f : ℝ → ℝ)
+/-- The real part of the Fourier transform of a real function is its cosine transform. -/
+theorem fourier_complexify_re_eq_integral_cos (f : ℝ → ℝ)
     (hf : Integrable f) (γ : ℝ) :
     (𝓕 (complexify f) (poitouFourierFrequency γ)).re =
       ∫ x : ℝ, f x * Real.cos (γ * x) := by
