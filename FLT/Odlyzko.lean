@@ -5,6 +5,7 @@ Authors: Kelly Azevedo Santos
 -/
 module
 
+public import FLT.Odlyzko.Assembly
 public import FLT.Odlyzko.FontaineConstant
 public import Mathlib.NumberTheory.NumberField.Discriminant.Defs
 public import Mathlib.NumberTheory.NumberField.InfinitePlace.TotallyRealComplex
@@ -28,7 +29,7 @@ universe u
 /-- The final M11 conclusion, in exactly the form required by the existing Odlyzko axiom. -/
 theorem Odlyzko_statement (K : Type*) [Field K] [NumberField K] [IsTotallyComplex K]
     (hdim : finrank ℚ K ≥ 18) : |(discr K : ℝ)| ≥ 8.25 ^ finrank ℚ K := by
-  sorry
+  exact discriminant_ge_eightPointTwoFive_pow K hdim
 
 /-- Assemble the frozen Odlyzko statement from the M11 conclusion supplied as a hypothesis. -/
 theorem odlyzko_statement_of_m11

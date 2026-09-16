@@ -264,6 +264,7 @@ public import FLT.NumberField.Zeta.Partial
 public import FLT.NumberField.ZetaFE.ZeroTheoryN2
 public import FLT.Odlyzko
 public import FLT.Odlyzko.AdmissibleAutocorrelation
+public import FLT.Odlyzko.Assembly
 public import FLT.Odlyzko.Autocorrelation
 public import FLT.Odlyzko.AutocorrelationNonnegative
 public import FLT.Odlyzko.CertifiedL1
