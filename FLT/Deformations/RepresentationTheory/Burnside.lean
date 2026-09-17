@@ -125,8 +125,9 @@ lemma adjoinRange_eq_top_of_isAbsolutelyIrreducible
     (exists_smul_eq_of_isAbsolutelyIrreducible rho)
 
 /-- Matrix of a representation on a coordinate vector space. -/
-def representationMatrix {n : Type u} [Fintype n] [DecidableEq n]
-    (rho : Representation k G (n → k)) (g : G) : Matrix n n k :=
+def representationMatrix {A H n : Type u} [CommSemiring A] [Monoid H]
+    [Fintype n] [DecidableEq n]
+    (rho : Representation A H (n → A)) (g : H) : Matrix n n A :=
   LinearMap.toMatrixAlgEquiv' (rho g)
 
 private lemma span_range_eq_adjoinRange (rho : Representation k G V) :
@@ -180,17 +181,17 @@ lemma exists_basis_representationMatrix
         (Module.Basis.ofSpan_subset hs (Set.mem_range_self i)).choose_spec.symm
 
 /-- The trace pairing `(A, B) ↦ Tr(AB)` on a full matrix algebra. -/
-def matrixTracePairing {n : Type u} [Fintype n] :
-    LinearMap.BilinForm k (Matrix n n k) :=
-  LinearMap.compr₂ (LinearMap.mul k (Matrix n n k)) (Matrix.traceLinearMap n k k)
+def matrixTracePairing {A n : Type u} [CommRing A] [Fintype n] :
+    LinearMap.BilinForm A (Matrix n n A) :=
+  LinearMap.compr₂ (LinearMap.mul A (Matrix n n A)) (Matrix.traceLinearMap n A A)
 
 @[simp]
-lemma matrixTracePairing_apply {n : Type u} [Fintype n] (A B : Matrix n n k) :
-    matrixTracePairing A B = (A * B).trace := rfl
+lemma matrixTracePairing_apply {A n : Type u} [CommRing A] [Fintype n]
+    (X Y : Matrix n n A) : matrixTracePairing X Y = (X * Y).trace := rfl
 
 /-- The trace pairing on a full matrix algebra is nondegenerate. -/
 lemma matrixTracePairing_nondegenerate {n : Type u} [Fintype n] :
-    (matrixTracePairing (k := k) (n := n)).Nondegenerate := by
+    (matrixTracePairing (A := k) (n := n)).Nondegenerate := by
   constructor
   · intro A hA
     apply Matrix.ext_iff_trace_mul_right.mpr
@@ -205,7 +206,7 @@ lemma matrixTracePairing_nondegenerate {n : Type u} [Fintype n] :
 lemma det_matrixTracePairing_ne_zero
     {n ι : Type u} [Fintype n] [Fintype ι] [DecidableEq ι]
     (b : Module.Basis ι k (Matrix n n k)) :
-    ((matrixTracePairing (k := k) (n := n)).toMatrix b).det ≠ 0 :=
+    ((matrixTracePairing (A := k) (n := n)).toMatrix b).det ≠ 0 :=
   (LinearMap.BilinForm.nondegenerate_iff_det_ne_zero b).mp
     matrixTracePairing_nondegenerate
 
@@ -225,7 +226,7 @@ lemma exists_tracePairing_basis
   let _ : DecidableEq ι := Classical.decEq ι
   refine ⟨ι, inferInstance, inferInstance, g, b, hb, ?_⟩
   have hmatrix :
-      (matrixTracePairing (k := k) (n := n)).toMatrix b =
+      (matrixTracePairing (A := k) (n := n)).toMatrix b =
         ((fun i j ↦ (representationMatrix rho (g i * g j)).trace) : Matrix ι ι k) := by
     ext i j
     rw [LinearMap.BilinForm.toMatrix_apply, matrixTracePairing_apply, hb i, hb j]
