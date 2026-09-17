@@ -90,6 +90,54 @@ noncomputable instance openIdealQuotientFinite (I : OpenIdeal S) :
   exact Finite.of_surjective (RingEquiv.quotientBot (S ⧸ (OpenIdeal.ideal I)))
     (RingEquiv.quotientBot (S ⧸ (OpenIdeal.ideal I))).surjective
 
+/-- The quotient by a proper open ideal, bundled as a proartinian algebra. -/
+noncomputable def openIdealQuotient (I : OpenIdeal S) : ProartinianCat O := by
+  let : Nontrivial (S ⧸ (OpenIdeal.ideal I)) :=
+    Ideal.Quotient.nontrivial_iff.mpr (OpenIdeal.ne_top I)
+  let : IsLocalRing (S ⧸ (OpenIdeal.ideal I)) :=
+    .of_surjective' _ Ideal.Quotient.mk_surjective
+  let : IsLocalHom (Ideal.Quotient.mk (OpenIdeal.ideal I)) :=
+    IsLocalHom.of_surjective _ Ideal.Quotient.mk_surjective
+  let : IsLocalHom (algebraMap O (S ⧸ (OpenIdeal.ideal I))) := by
+    change IsLocalHom
+      ((Ideal.Quotient.mk (OpenIdeal.ideal I)).comp (algebraMap O S))
+    infer_instance
+  let : IsArtinianRing (S ⧸ (OpenIdeal.ideal I)) :=
+    IsProartinian.isArtinianRing_quotient (OpenIdeal.ideal I) (OpenIdeal.isOpen I)
+  let : DiscreteTopology (S ⧸ (OpenIdeal.ideal I)) :=
+    QuotientAddGroup.discreteTopology (OpenIdeal.isOpen I)
+  let : IsTopologicalRing (S ⧸ (OpenIdeal.ideal I)) := inferInstance
+  let : IsProartinian (S ⧸ (OpenIdeal.ideal I)) := inferInstance
+  let : IsResidueAlgebra O (S ⧸ (OpenIdeal.ideal I)) := inferInstance
+  exact
+    { carrier := S ⧸ (OpenIdeal.ideal I)
+      isLocalProartinianAlgebra :=
+        { toIsTopologicalRing := inferInstance
+          toIsLocalRing := inferInstance
+          toIsProartinian := inferInstance
+          toIsLocalHom := inferInstance
+          toIsResidueAlgebra := inferInstance } }
+
+/-- The quotient projection by a proper open ideal. -/
+noncomputable def openIdealQuotientHom (I : OpenIdeal S) :
+    S ⟶ openIdealQuotient S I where
+  hom := by
+    change S →A[O] S ⧸ (OpenIdeal.ideal I)
+    exact
+      { toAlgHom := Ideal.Quotient.mkₐ O (OpenIdeal.ideal I)
+        cont := continuous_quot_mk }
+
+/-- The transition morphism between bundled open-ideal quotients. -/
+noncomputable def openIdealQuotientTransitionHom (I J : OpenIdeal S) (h : I ≤ J) :
+    openIdealQuotient S J ⟶ openIdealQuotient S I where
+  hom := by
+    change (S ⧸ (OpenIdeal.ideal J)) →A[O] S ⧸ (OpenIdeal.ideal I)
+    let : DiscreteTopology (S ⧸ (OpenIdeal.ideal J)) :=
+      QuotientAddGroup.discreteTopology (OpenIdeal.isOpen J)
+    exact
+      { toAlgHom := Ideal.Quotient.factorₐ O (OpenIdeal.ideal_le_ideal h)
+        cont := continuous_of_discreteTopology }
+
 /-- A local proartinian algebra with finite residue field is compact. -/
 noncomputable instance compactSpace : CompactSpace S := by
   let : UniformSpace S := IsTopologicalAddGroup.rightUniformSpace S
