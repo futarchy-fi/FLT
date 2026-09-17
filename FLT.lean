@@ -72,6 +72,7 @@ public import FLT.Deformations.IsProartinian
 public import FLT.Deformations.IsResidueAlgebra
 public import FLT.Deformations.Lemmas
 public import FLT.Deformations.LiftFunctor
+public import FLT.Deformations.ProartinianQuotients
 public import FLT.Deformations.Representable
 public import FLT.Deformations.RepresentationTheory.AbsoluteGaloisGroup
 public import FLT.Deformations.RepresentationTheory.Etale
