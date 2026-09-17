@@ -66,6 +66,7 @@ public import FLT.Deformations.DeSmitLenstra.CompatibleIdempotent
 public import FLT.Deformations.DeSmitLenstra.FramedCompletion
 public import FLT.Deformations.DeSmitLenstra.FramedRepresentationRing
 public import FLT.Deformations.DeSmitLenstra.FramedUniversalProperty
+public import FLT.Deformations.DeSmitLenstra.MoritaReconstruction
 public import FLT.Deformations.DeSmitLenstra.ProfiniteFramedLimit
 public import FLT.Deformations.DeSmitLenstra.ProfiniteFramedQuotients
 public import FLT.Deformations.DeSmitLenstra.ProfiniteUniversalLift
