@@ -139,6 +139,31 @@ lemma framedCompletionRingHom_denseRange :
   refine ⟨framedCompletionRingHom O G n rho a - x, hax, ?_⟩
   abel_nf
 
+omit [IsNoetherianRing O] [Finite G] in
+/-- The framed coordinate algebra is dense in its localization at the residual ideal. -/
+lemma framedRepresentationToLocalRing_denseRange : DenseRange
+    (algebraMap (FramedRepresentationRing O G n) (FramedLocalRing O G n rho)) := by
+  rw [DenseRange, dense_iff_inter_open]
+  rintro U hU ⟨x, hx⟩
+  obtain ⟨m, -, hm⟩ :=
+    (Ideal.hasBasis_nhds_adic (maximalIdeal (FramedLocalRing O G n rho)) x).mem_iff.mp
+      (hU.mem_nhds hx)
+  let e := IsLocalization.AtPrime.equivQuotMaximalIdealPow
+    (residualRepresentationIdeal O G n rho) (FramedLocalRing O G n rho) m
+  obtain ⟨a, ha⟩ := Ideal.Quotient.mk_surjective
+    (e.symm (Ideal.Quotient.mk (maximalIdeal (FramedLocalRing O G n rho) ^ m) x))
+  have hax : algebraMap (FramedRepresentationRing O G n)
+      (FramedLocalRing O G n rho) a - x ∈
+      maximalIdeal (FramedLocalRing O G n rho) ^ m := by
+    rw [← Ideal.Quotient.eq]
+    change e (Ideal.Quotient.mk _ a) = Ideal.Quotient.mk _ x
+    rw [ha, e.apply_symm_apply]
+  refine ⟨algebraMap (FramedRepresentationRing O G n)
+      (FramedLocalRing O G n rho) a, hm ?_, Set.mem_range_self a⟩
+  refine ⟨algebraMap (FramedRepresentationRing O G n)
+      (FramedLocalRing O G n rho) a - x, hax, ?_⟩
+  abel_nf
+
 section UniversalProperty
 
 variable [Finite (ResidueField O)]
@@ -173,6 +198,19 @@ noncomputable def framedRepresentationToCompletionObject :
   map_zero' := map_zero (framedRepresentationToCompletion O G n rho)
   map_add' := map_add (framedRepresentationToCompletion O G n rho)
   commutes' := (framedRepresentationToCompletion O G n rho).commutes
+
+omit [Finite (ResidueField O)] in
+/-- The framed coordinate algebra is dense in its residual completion. -/
+lemma framedRepresentationToCompletion_denseRange : DenseRange
+    (framedRepresentationToCompletion O G n rho) :=
+  (framedCompletionRingHom_denseRange O G n rho).comp
+    (framedRepresentationToLocalRing_denseRange O G n rho)
+    (framedCompletionRingHom_isUniformInducing O G n rho).uniformContinuous.continuous
+
+/-- The coordinate map into the bundled residual completion has dense range. -/
+lemma framedRepresentationToCompletionObject_denseRange : DenseRange
+    (framedRepresentationToCompletionObject O G n rho) :=
+  framedRepresentationToCompletion_denseRange O G n rho
 
 omit [Finite (ResidueField O)] in
 lemma framedRepresentationToCompletion_comap_maximalIdeal :

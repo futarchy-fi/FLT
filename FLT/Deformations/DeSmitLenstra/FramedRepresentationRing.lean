@@ -108,6 +108,16 @@ noncomputable def FramedRepresentationRing.ofRepresentation
     | one i j => simp [map_one, Matrix.one_apply]
     | mul g h i j => simp [map_mul, Matrix.mul_apply]⟩
 
+@[simp]
+lemma FramedRepresentationRing.ofRepresentation_generator
+    {A : Type*} [CommRing A] [Algebra O A] (rho : G →* GL n A)
+    (g : G) (i j : n) :
+    FramedRepresentationRing.ofRepresentation rho
+        (framedRepresentationQuotient O G n (MvPolynomial.X (g, (i, j)))) =
+      rho g i j := by
+  simp [FramedRepresentationRing.ofRepresentation, framedRepresentationQuotient,
+    RingQuot.liftAlgHom_mkAlgHom_apply]
+
 /-- Apply an algebra homomorphism entrywise to the universal representation. -/
 noncomputable def FramedRepresentationRing.toRepresentation
     {A : Type*} [CommRing A] [Algebra O A]
