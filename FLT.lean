@@ -68,6 +68,7 @@ public import FLT.Deformations.DeSmitLenstra.FramedUniversalProperty
 public import FLT.Deformations.DeSmitLenstra.ProfiniteFramedLimit
 public import FLT.Deformations.DeSmitLenstra.ProfiniteFramedQuotients
 public import FLT.Deformations.DeSmitLenstra.ProfiniteUniversalLift
+public import FLT.Deformations.DeSmitLenstra.TraceCoefficients
 public import FLT.Deformations.DeSmitLenstra.UniversalLift
 public import FLT.Deformations.IsProartinian
 public import FLT.Deformations.IsResidueAlgebra
