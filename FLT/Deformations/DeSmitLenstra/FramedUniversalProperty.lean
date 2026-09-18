@@ -30,7 +30,7 @@ noncomputable section
 
 variable (O : Type u) [CommRing O] [IsLocalRing O] [IsNoetherianRing O]
 variable (G : Type u) [Group G] [Finite G]
-variable (n : Type u) [Fintype n] [DecidableEq n]
+variable (n : Type) [Fintype n] [DecidableEq n]
 variable (rho : G →* GL n (ResidueField O))
 
 /-- The chosen commutative-ring structure on the residual localization. -/

@@ -27,7 +27,7 @@ namespace MoritaReconstruction
 
 noncomputable section
 
-variable {S R G n : Type u} [CommRing S] [CommRing R] [Algebra S R]
+variable {S R G : Type u} {n : Type} [CommRing S] [CommRing R] [Algebra S R]
 variable [Group G] [Fintype n] [DecidableEq n]
 
 /-- Regard a `GLₙ`-valued homomorphism as a linear representation. -/
@@ -256,7 +256,7 @@ open Representation
 variable (O : Type u) [CommRing O] [IsLocalRing O] [IsNoetherianRing O]
 variable (G : Type u) [Group G] [TopologicalSpace G] [IsTopologicalGroup G]
   [CompactSpace G] [TotallyDisconnectedSpace G]
-variable (n : Type u) [Fintype n] [DecidableEq n]
+variable (n : Type) [Fintype n] [DecidableEq n]
 variable [Finite (IsLocalRing.ResidueField O)]
 variable (rho : G →ₜ* GL n (ProartinianCat.residueField (𝓞 := O)))
 

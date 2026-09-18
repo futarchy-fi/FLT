@@ -90,7 +90,7 @@ lemma mem_span_of_repr_mem_algebraMap_range [Finite ι]
     rw [← hc, algebraMap_smul]
     exact Submodule.smul_mem _ c (Submodule.subset_span (Set.mem_range_self i))
 
-variable {G n : Type u} [Group G] [Fintype n] [DecidableEq n]
+variable {G : Type u} {n : Type} [Group G] [Fintype n] [DecidableEq n]
 
 /-- Matrix-valued monoid homomorphism attached to a representation on a coordinate space. -/
 def representationMatrixHom (rho : Representation R G (n → R)) : G →* Matrix n n R :=
