@@ -200,7 +200,7 @@ section ProartinianObject
 
 variable (O : Type u) [CommRing O] [IsLocalRing O] [IsNoetherianRing O]
 variable (G : Type u) [Group G] [Finite G]
-variable (n : Type u) [Fintype n] [DecidableEq n]
+variable (n : Type) [Fintype n] [DecidableEq n]
 variable [Finite (ResidueField O)] (rho : G →* GL n (ResidueField O))
 
 /-- The completed framed representation ring as a local proartinian `O`-algebra. -/

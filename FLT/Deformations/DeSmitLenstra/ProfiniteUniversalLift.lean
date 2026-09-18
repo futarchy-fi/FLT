@@ -28,7 +28,7 @@ noncomputable section
 variable (O : Type u) [CommRing O] [IsLocalRing O] [IsNoetherianRing O]
 variable (G : Type u) [Group G] [TopologicalSpace G] [IsTopologicalGroup G]
   [CompactSpace G] [TotallyDisconnectedSpace G]
-variable (n : Type u) [Fintype n] [DecidableEq n]
+variable (n : Type) [Fintype n] [DecidableEq n]
 variable [Finite (ResidueField O)]
 variable (rho : G →ₜ* GL n (ProartinianCat.residueField (𝓞 := O)))
 

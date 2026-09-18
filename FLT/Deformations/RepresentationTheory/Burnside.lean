@@ -70,7 +70,7 @@ private lemma nontrivial_of_isAbsolutelyIrreducible
   exact IsSimpleModule.nontrivial k[G] rho.asModule
 
 private lemma exists_smul_eq_of_isAbsolutelyIrreducible
-    {n : Type u} [Finite n]
+    {n : Type} [Finite n]
     (rho : Representation k G (n → k)) [habs : IsAbsolutelyIrreducible.{u} rho]
     (T : Module.End k (n → k)) (hT : ∀ g : G, Commute (rho g) T) :
     ∃ μ : k, T = μ • (1 : Module.End k (n → k)) := by
@@ -113,7 +113,7 @@ private lemma exists_smul_eq_of_isAbsolutelyIrreducible
 /-- Burnside's theorem in the form used for framed deformations: an absolutely irreducible
 representation on a coordinate space generates the full endomorphism algebra. -/
 lemma adjoinRange_eq_top_of_isAbsolutelyIrreducible
-    {n : Type u} [Finite n]
+    {n : Type} [Finite n]
     (rho : Representation k G (n → k)) [habs : IsAbsolutelyIrreducible.{u} rho] :
     Slop.OddRep.adjoinRange rho = ⊤ :=
   have hirrBase : (k ⊗ᵣ' rho).IsIrreducible :=
@@ -125,7 +125,7 @@ lemma adjoinRange_eq_top_of_isAbsolutelyIrreducible
     (exists_smul_eq_of_isAbsolutelyIrreducible rho)
 
 /-- Matrix of a representation on a coordinate vector space. -/
-def representationMatrix {A H n : Type u} [CommSemiring A] [Monoid H]
+def representationMatrix {A H : Type u} {n : Type} [CommSemiring A] [Monoid H]
     [Fintype n] [DecidableEq n]
     (rho : Representation A H (n → A)) (g : H) : Matrix n n A :=
   LinearMap.toMatrixAlgEquiv' (rho g)
@@ -140,7 +140,7 @@ private lemma span_range_eq_adjoinRange (rho : Representation k G V) :
 
 /-- The matrices of an absolutely irreducible representation span the full matrix algebra. -/
 lemma span_range_representationMatrix_eq_top
-    {n : Type u} [Fintype n] [DecidableEq n]
+    {n : Type} [Fintype n] [DecidableEq n]
     (rho : Representation k G (n → k)) [habs : IsAbsolutelyIrreducible.{u} rho] :
     Submodule.span k (Set.range (representationMatrix rho)) = ⊤ := by
   let e : Module.End k (n → k) ≃ₗ[k] Matrix n n k :=
@@ -160,7 +160,7 @@ lemma span_range_representationMatrix_eq_top
 
 /-- An absolutely irreducible representation admits a finite matrix basis drawn from its image. -/
 lemma exists_basis_representationMatrix
-    {n : Type u} [Fintype n] [DecidableEq n]
+    {n : Type} [Fintype n] [DecidableEq n]
     (rho : Representation k G (n → k)) [IsAbsolutelyIrreducible.{u} rho] :
     ∃ (ι : Type u) (_ : Fintype ι) (g : ι → G)
       (b : Module.Basis ι k (Matrix n n k)),
@@ -181,16 +181,16 @@ lemma exists_basis_representationMatrix
         (Module.Basis.ofSpan_subset hs (Set.mem_range_self i)).choose_spec.symm
 
 /-- The trace pairing `(A, B) ↦ Tr(AB)` on a full matrix algebra. -/
-def matrixTracePairing {A n : Type u} [CommRing A] [Fintype n] :
+def matrixTracePairing {A : Type u} {n : Type} [CommRing A] [Fintype n] :
     LinearMap.BilinForm A (Matrix n n A) :=
   LinearMap.compr₂ (LinearMap.mul A (Matrix n n A)) (Matrix.traceLinearMap n A A)
 
 @[simp]
-lemma matrixTracePairing_apply {A n : Type u} [CommRing A] [Fintype n]
+lemma matrixTracePairing_apply {A : Type u} {n : Type} [CommRing A] [Fintype n]
     (X Y : Matrix n n A) : matrixTracePairing X Y = (X * Y).trace := rfl
 
 /-- The trace pairing on a full matrix algebra is nondegenerate. -/
-lemma matrixTracePairing_nondegenerate {n : Type u} [Fintype n] :
+lemma matrixTracePairing_nondegenerate {n : Type} [Fintype n] :
     (matrixTracePairing (A := k) (n := n)).Nondegenerate := by
   constructor
   · intro A hA
@@ -204,7 +204,7 @@ lemma matrixTracePairing_nondegenerate {n : Type u} [Fintype n] :
 
 /-- In any basis of the full matrix algebra, the Gram matrix of the trace pairing is invertible. -/
 lemma det_matrixTracePairing_ne_zero
-    {n ι : Type u} [Fintype n] [Fintype ι] [DecidableEq ι]
+    {n : Type} {ι : Type u} [Fintype n] [Fintype ι] [DecidableEq ι]
     (b : Module.Basis ι k (Matrix n n k)) :
     ((matrixTracePairing (A := k) (n := n)).toMatrix b).det ≠ 0 :=
   (LinearMap.BilinForm.nondegenerate_iff_det_ne_zero b).mp
@@ -213,7 +213,7 @@ lemma det_matrixTracePairing_ne_zero
 /-- The form of Burnside's theorem used in trace descent: there is a finite family of group
 elements whose matrices form a basis and whose trace-pairing matrix is invertible. -/
 lemma exists_tracePairing_basis
-    {n : Type u} [Fintype n] [DecidableEq n]
+    {n : Type} [Fintype n] [DecidableEq n]
     (rho : Representation k G (n → k)) [IsAbsolutelyIrreducible.{u} rho] :
     ∃ (ι : Type u) (_ : Fintype ι) (_ : DecidableEq ι) (g : ι → G)
       (b : Module.Basis ι k (Matrix n n k)),
