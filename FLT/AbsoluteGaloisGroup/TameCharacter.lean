@@ -588,8 +588,8 @@ private lemma finiteInertiaField_ramificationIdx_eq_one
       intro I hI
       obtain ⟨n, rfl⟩ := exists_maximalIdeal_pow_eq_of_principal 𝒪ᵥ
         (IsPrincipalIdealRing.principal (IsLocalRing.maximalIdeal 𝒪ᵥ)) I hI
-      exact Valued.integer.finite_quotient_maximalIdeal_pow_of_finite_residueField
-        (inferInstance : Finite (IsLocalRing.ResidueField 𝒪ᵥ)) n }
+      exact
+        IsLocalRing.instFiniteQuotientIdealHPowNatMaximalIdealOfIsNoetherianRingOfResidueField n }
   letI : Ring.HasFiniteQuotients D :=
     Ring.HasFiniteQuotients.of_module_finite 𝒪ᵥ D
   letI : q.LiesOver p := by dsimp only [q, p]; infer_instance

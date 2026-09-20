@@ -159,15 +159,28 @@ theorem logDeriv_completedDedekindZetaEntire_split {s : ℂ} (hs : 1 < s.re) :
   have hid_d : DifferentiableAt ℂ (fun z : ℂ => z * (z - 1)) s :=
     differentiableAt_id.mul (differentiableAt_id.sub_const 1)
   -- peel the factors
+  -- Mathlib v4.34 compatibility: expose pointwise products for `logDeriv_mul`.
+  change logDeriv
+    ((fun z : ℂ => z * (z - 1)) *
+      (fun z : ℂ => ((|NumberField.discr K| : ℝ) : ℂ) ^ (z/2)
+        * (gammaFactor K z * NumberField.dedekindZeta K z))) s = _
   rw [logDeriv_mul (f := fun z : ℂ => z * (z - 1))
       (g := fun z : ℂ => ((|NumberField.discr K| : ℝ) : ℂ) ^ (z/2)
         * (gammaFactor K z * NumberField.dedekindZeta K z)) s hid_ne hpre_ne hid_d hpre_d]
-  rw [logDeriv_mul (f := fun z : ℂ => z) (g := fun z : ℂ => z - 1) s hs0
-      (sub_ne_zero.mpr hs1) differentiableAt_id (differentiableAt_id.sub_const 1)]
+  have hid_log : logDeriv (fun z : ℂ => z * (z - 1)) s =
+      logDeriv (fun z : ℂ => z) s + logDeriv (fun z : ℂ => z - 1) s := by
+    change logDeriv ((fun z : ℂ => z) * (fun z : ℂ => z - 1)) s = _
+    exact logDeriv_mul s hs0 (sub_ne_zero.mpr hs1) differentiableAt_id
+      (differentiableAt_id.sub_const 1)
+  rw [hid_log]
   rw [logDeriv_cpow_half_mul (f := fun z : ℂ => gammaFactor K z
       * NumberField.dedekindZeta K z) hdiscrC hγζne hγζd]
-  rw [logDeriv_mul (f := gammaFactor K) (g := NumberField.dedekindZeta K) s hγne hζne
-      hγd hζd]
+  have hγζlog : logDeriv (fun z : ℂ =>
+      gammaFactor K z * NumberField.dedekindZeta K z) s =
+      logDeriv (gammaFactor K) s + logDeriv (NumberField.dedekindZeta K) s := by
+    change logDeriv ((gammaFactor K) * (NumberField.dedekindZeta K)) s = _
+    exact logDeriv_mul s hγne hζne hγd hζd
+  rw [hγζlog]
   have h1 : logDeriv (fun z : ℂ => z) s = 1/s := by
     rw [logDeriv_apply, deriv_id'']
   have h2 : logDeriv (fun z : ℂ => z - 1) s = 1/(s-1) := by

@@ -243,10 +243,7 @@ def flatFunctor (v : Ω K) : Subfunctor (repnFunctor n (Γ K) 𝓞) where
           rw [← Pi.single_smul]
           let t : (R ⧸ I) ⊗[R] (n → R) := x k
           change qAdd (Pi.single k (sigma • t)) = sigma • qAdd (Pi.single k t)
-          induction t using TensorProduct.induction_on with
-          | zero =>
-            rw [smul_zero, Pi.single_zero, map_zero]
-            exact (smul_zero sigma).symm
+          induction t using TensorProduct.inductionOn with
           | add z w hz hw =>
             rw [smul_add, Pi.single_add, map_add, Pi.single_add, map_add, smul_add, hz, hw]
           | tmul a m =>

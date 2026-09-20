@@ -5,7 +5,7 @@ Authors: Kelly Azevedo Santos
 -/
 module
 
-public import Mathlib.Data.Complex.Basic
+public import Mathlib.Basic.Complex.Basic
 
 /-!
 # Zero-side positivity on the critical line

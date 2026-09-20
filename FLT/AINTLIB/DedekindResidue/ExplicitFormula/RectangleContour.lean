@@ -558,11 +558,16 @@ theorem logDeriv_eq_sum_add_of_factorization {U : Set ℂ} (hUo : IsOpen U)
     exact hfac z hz
   have hld : logDeriv H ζ = logDeriv (fun z => (∏ u ∈ F, (z - u) ^ d u) * g z) ζ := by
     rw [logDeriv, logDeriv, Pi.div_apply, Pi.div_apply, hHev.deriv_eq, hHev.eq_of_nhds]
-  rw [hld, logDeriv_mul ζ hPζ hgζ hpolydiff hgdiff]
+  rw [hld]
+  -- Mathlib v4.34 compatibility: expose pointwise products for the log-derivative lemmas.
+  change logDeriv ((fun z => ∏ u ∈ F, (z - u) ^ d u) * g) ζ = _
+  rw [logDeriv_mul ζ hPζ hgζ hpolydiff hgdiff]
   congr 1
   have h1 : logDeriv (fun z => ∏ u ∈ F, (fun w : ℂ => w - u) z ^ d u) ζ
       = ∑ u ∈ F, logDeriv (fun z => (fun w : ℂ => w - u) z ^ d u) ζ := by
-    refine logDeriv_prod (fun u hu => ?_) (fun u hu => ?_)
+    rw [← Finset.prod_fn]
+    refine logDeriv_prod (s := F) (f := fun u z => (z - u) ^ d u) (x := ζ)
+      (fun u hu => ?_) (fun u hu => ?_)
     · exact zpow_ne_zero _ (sub_ne_zero_of_ne (hζne u hu))
     · exact (differentiableAt_id.sub_const u).zpow (Or.inr (hd u))
   refine Eq.trans h1 ?_

@@ -11,7 +11,8 @@ module
 
 public import Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
 public import Mathlib.Analysis.Normed.Ring.InfiniteSum
-public import Mathlib.Data.Finite.Vector
+-- Mathlib v4.34 compatibility: the finite-vector module was renamed.
+public import Mathlib.Data.Fintype.Vector
 public import Mathlib.Data.Finsupp.Multiset
 public import Mathlib.Data.Sym.Card
 public import Mathlib.NumberTheory.NumberField.Cyclotomic.Basic

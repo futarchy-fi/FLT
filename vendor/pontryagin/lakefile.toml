@@ -20,4 +20,6 @@ globs = ["Pontryagin"]
 
 [lean_lib.leanOptions]
 weak.linter.style.haveILetI = false
+# Mathlib v4.34 enables this style linter, but the vendored headers follow their upstream layout.
+weak.linter.style.header = false
 weak.linter.deprecated = false
