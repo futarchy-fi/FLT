@@ -6,6 +6,7 @@ Authors: Andrew Yang
 module
 
 public import FLT.Deformations.LiftFunctor
+public import FLT.Deformations.DeSmitLenstra.UniversalTraceLift
 public import FLT.Deformations.RepresentationTheory.Irreducible
 public import Mathlib.NumberTheory.NumberField.InfinitePlace.TotallyRealComplex
 
@@ -28,14 +29,23 @@ universe u
 section
 
 variable (n : Type) [Fintype n] [DecidableEq n] (G : Type u) [Group G] [TopologicalSpace G]
-variable [T0Space G] [TotallyDisconnectedSpace G] [CompactSpace G] -- profinite
+variable [IsTopologicalGroup G] [CompactSpace G]
 variable (𝓞 : Type u) [CommRing 𝓞] [IsLocalRing 𝓞] [IsNoetherianRing 𝓞]
-  [Finite (ResidueField 𝓞)] [IsAdicComplete (maximalIdeal 𝓞) 𝓞] -- complete noetherian local
-variable (ρ : (repnFunctor n G 𝓞).obj .residueField) [(toRepresentation ρ).IsAbsolutelyIrreducible]
+  [Finite (ResidueField 𝓞)]
+variable (ρ : (repnFunctor n G 𝓞).obj .residueField)
+  [(toRepresentation ρ).IsAbsolutelyIrreducible.{u}]
 
 lemma isCorepresentable_deformationFunctor :
     (deformationFunctor n G 𝓞 ρ).toFunctor.IsCorepresentable := by
-  sorry -- de Smit and Lenstra, Proposition 2.3 (1).
+  let rho' : G →ₜ* GL n (@ProartinianCat.residueField 𝓞 _ _) := ρ
+  let _ : (MoritaReconstruction.residualLinearRepresentation
+      𝓞 G n rho').IsAbsolutelyIrreducible.{u} := by
+    change (toRepresentation ρ).IsAbsolutelyIrreducible.{u}
+    infer_instance
+  obtain ⟨sigma, hsigma⟩ :=
+    MoritaReconstruction.exists_universalTraceLift 𝓞 G n rho'
+  exact (isCorepresentable_deformationFunctor_iff_exists_isUniversalLift
+    n G 𝓞 ρ).mpr ⟨universalTraceRingObject 𝓞 G n ρ, sigma, hsigma⟩
 
 end
 

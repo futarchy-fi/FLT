@@ -870,8 +870,10 @@ theorem exists_universalMoritaData
           ∃ (v : n → ProfiniteFramedLimit O G n rho)
             (c : Module.Basis n (ProfiniteFramedLimit O G n rho)
               (n → ProfiniteFramedLimit O G n rho)),
-            ∀ i, c i = Representation.MoritaReconstruction.principalEvaluation
-              (universalLinearRepresentation O G n rho) e v (b i) := by
+            (∀ i, c i = Representation.MoritaReconstruction.principalEvaluation
+              (universalLinearRepresentation O G n rho) e v (b i)) ∧
+              ∀ i j, framedResidueRingHom O G n rho (c i j) =
+                (Pi.single i (1 : ResidueField O) : n → ResidueField O) j := by
   classical
   let k := ProartinianCat.residueField (𝓞 := O)
   have hntriv : Nontrivial (n → k) := by
@@ -1015,6 +1017,195 @@ theorem exists_universalMoritaData
   obtain ⟨hlieval, hspaneval⟩ := (bstd.is_basis_iff_det (v := eval)).mpr hdeteval
   let c : Module.Basis n R (n → R) := Module.Basis.mk hlieval hspaneval.ge
   have hc (i : n) : c i = eval i := by simp [c]
-  exact ⟨e', he', b, hMorita, v, c, fun i ↦ hc i⟩
+  exact ⟨e', he', b, hMorita, v, c, fun i ↦ hc i,
+    fun i j ↦ by rw [hc]; exact heval i j⟩
+
+set_option maxHeartbeats 4000000 in
+-- Continuity through an arbitrary evaluation basis expands two finite matrix products.
+set_option synthInstance.maxHeartbeats 100000 in
+/-- The representation reconstructed over the universal trace ring is continuous. -/
+theorem universalTraceDescendedGL_continuous
+    (O : Type u) [CommRing O] [IsLocalRing O] [IsNoetherianRing O]
+    (G : Type u) [Group G] [TopologicalSpace G] [IsTopologicalGroup G]
+    [CompactSpace G]
+    (n : Type) [Fintype n] [DecidableEq n]
+    [Finite (ResidueField O)]
+    (rho : G →ₜ* GL n (@ProartinianCat.residueField O _ _))
+    (e : UniversalImageAlgebra O G n rho)
+    (v : n → ProfiniteFramedLimit O G n rho)
+    (b : Module.Basis n (UniversalTraceRing O G n rho)
+      (Representation.MoritaReconstruction.principalModule
+        (S := UniversalTraceRing O G n rho) (UniversalImageAlgebra O G n rho) e))
+    (c : Module.Basis n (ProfiniteFramedLimit O G n rho)
+      (n → ProfiniteFramedLimit O G n rho))
+    (hc : ∀ i, c i = Representation.MoritaReconstruction.principalEvaluation
+      (universalLinearRepresentation O G n rho) e v (b i)) :
+    Continuous (universalTraceDescendedGL O G n rho e b) := by
+  let _ : IsLocalProartinianAlgebra O (ProfiniteFramedLimit O G n rho) :=
+    (profiniteFramedLimitObject O G n rho).isLocalProartinianAlgebra
+  let htop : IsTopologicalRing (ProfiniteFramedLimit O G n rho) :=
+    IsLocalProartinianAlgebra.toIsTopologicalRing O
+  let _ : IsTopologicalRing (ProfiniteFramedLimit O G n rho) := htop
+  let _ : ContinuousAdd (ProfiniteFramedLimit O G n rho) := htop.toContinuousAdd
+  let _ : ContinuousMul (ProfiniteFramedLimit O G n rho) := htop.toContinuousMul
+  let R := ProfiniteFramedLimit O G n rho
+  let bstd : Module.Basis n R (n → R) := Pi.basisFun R n
+  have hchange (g : G) :
+      LinearMap.toMatrix c c (universalLinearRepresentation O G n rho g) =
+        c.toMatrix bstd * profiniteUniversalMatrix O G n rho g * bstd.toMatrix c := by
+    calc
+      _ = c.toMatrix bstd *
+          LinearMap.toMatrix bstd bstd (universalLinearRepresentation O G n rho g) *
+          bstd.toMatrix c :=
+        (basis_toMatrix_mul_linearMap_toMatrix_mul_basis_toMatrix
+          (b := c) (b' := bstd) (c := c) (c' := bstd)
+          (f := universalLinearRepresentation O G n rho g)).symm
+      _ = _ := by
+        rw [show LinearMap.toMatrix bstd bstd
+            (universalLinearRepresentation O G n rho g) =
+            profiniteUniversalMatrix O G n rho g by
+          change Representation.representationMatrix
+            (universalLinearRepresentation O G n rho) g = _
+          exact universalLinearRepresentation_matrix O G n rho g]
+  have hambient : Continuous (fun g : G ↦
+      ((↑(universalTraceDescendedGL O G n rho e b g) :
+        Matrix n n (UniversalTraceRing O G n rho)).map
+          (algebraMap (UniversalTraceRing O G n rho)
+            (ProfiniteFramedLimit O G n rho)))) := by
+    have hcont : Continuous (fun g : G ↦
+        c.toMatrix bstd * profiniteUniversalMatrix O G n rho g * bstd.toMatrix c) := by
+      apply continuous_matrix
+      intro i j
+      simp only [Matrix.mul_apply]
+      apply continuous_finsetSum _
+      intro k _
+      apply Continuous.mul
+      · apply continuous_finsetSum _
+        intro l _
+        exact continuous_const.mul ((continuous_apply k).comp
+          ((continuous_apply l).comp
+            (profiniteUniversalMatrix_continuous O G n rho)))
+      · exact continuous_const
+    convert hcont using 1
+    funext g
+    rw [← hchange]
+    exact universalTraceDescendedGL_conjugate O G n rho e v b c hc g
+  rw [Units.continuous_iff]
+  constructor
+  · apply continuous_matrix
+    intro i j
+    apply continuous_induced_rng.mpr
+    exact (continuous_apply j).comp ((continuous_apply i).comp hambient)
+  · apply continuous_matrix
+    intro i j
+    apply continuous_induced_rng.mpr
+    have hinv := hambient.comp continuous_inv
+    exact (continuous_apply j).comp ((continuous_apply i).comp hinv)
+
+/-- The reconstructed representation has the universal trace. -/
+theorem universalTraceDescendedGL_trace
+    (O : Type u) [CommRing O] [IsLocalRing O] [IsNoetherianRing O]
+    (G : Type u) [Group G] [TopologicalSpace G] [IsTopologicalGroup G]
+    [CompactSpace G]
+    (n : Type) [Fintype n] [DecidableEq n]
+    [Finite (ResidueField O)]
+    (rho : G →ₜ* GL n (@ProartinianCat.residueField O _ _))
+    (e : UniversalImageAlgebra O G n rho)
+    (v : n → ProfiniteFramedLimit O G n rho)
+    (b : Module.Basis n (UniversalTraceRing O G n rho)
+      (Representation.MoritaReconstruction.principalModule
+        (S := UniversalTraceRing O G n rho) (UniversalImageAlgebra O G n rho) e))
+    (c : Module.Basis n (ProfiniteFramedLimit O G n rho)
+      (n → ProfiniteFramedLimit O G n rho))
+    (hc : ∀ i, c i = Representation.MoritaReconstruction.principalEvaluation
+      (universalLinearRepresentation O G n rho) e v (b i)) (g : G) :
+    Matrix.trace (↑(universalTraceDescendedGL O G n rho e b g) :
+      Matrix n n (UniversalTraceRing O G n rho)) =
+        ⟨(profiniteUniversalMatrix O G n rho g).trace,
+          universalTrace_mem O G n rho g⟩ := by
+  let _ : IsLocalProartinianAlgebra O (ProfiniteFramedLimit O G n rho) :=
+    (profiniteFramedLimitObject O G n rho).isLocalProartinianAlgebra
+  let R := ProfiniteFramedLimit O G n rho
+  let bstd : Module.Basis n R (n → R) := Pi.basisFun R n
+  apply Subtype.ext
+  change algebraMap (UniversalTraceRing O G n rho) R
+      (Matrix.trace (↑(universalTraceDescendedGL O G n rho e b g) :
+        Matrix n n (UniversalTraceRing O G n rho))) =
+      (profiniteUniversalMatrix O G n rho g).trace
+  rw [AddMonoidHom.map_trace]
+  rw [universalTraceDescendedGL_conjugate O G n rho e v b c hc g]
+  calc
+    Matrix.trace (LinearMap.toMatrix c c
+        (universalLinearRepresentation O G n rho g)) =
+        LinearMap.traceAux R c (universalLinearRepresentation O G n rho g) := rfl
+    _ = LinearMap.traceAux R bstd (universalLinearRepresentation O G n rho g) := by
+      exact DFunLike.congr_fun (LinearMap.traceAux_eq (R := R) c bstd)
+        (universalLinearRepresentation O G n rho g)
+    _ = Matrix.trace (LinearMap.toMatrix bstd bstd
+        (universalLinearRepresentation O G n rho g)) := rfl
+    _ = _ := by
+      rw [show LinearMap.toMatrix bstd bstd
+          (universalLinearRepresentation O G n rho g) =
+          profiniteUniversalMatrix O G n rho g by
+        change Representation.representationMatrix
+          (universalLinearRepresentation O G n rho) g = _
+        exact universalLinearRepresentation_matrix O G n rho g]
+
+/-- The evaluation basis gives a change-of-basis matrix reducing to the identity and conjugating
+the scalar extension of the reconstructed representation to the universal framed lift. -/
+theorem exists_strict_universalTraceDescendedGL_conjugator
+    (O : Type u) [CommRing O] [IsLocalRing O] [IsNoetherianRing O]
+    (G : Type u) [Group G] [TopologicalSpace G] [IsTopologicalGroup G]
+    [CompactSpace G]
+    (n : Type) [Fintype n] [DecidableEq n]
+    [Finite (ResidueField O)]
+    (rho : G →ₜ* GL n (@ProartinianCat.residueField O _ _))
+    (e : UniversalImageAlgebra O G n rho)
+    (v : n → ProfiniteFramedLimit O G n rho)
+    (b : Module.Basis n (UniversalTraceRing O G n rho)
+      (Representation.MoritaReconstruction.principalModule
+        (S := UniversalTraceRing O G n rho) (UniversalImageAlgebra O G n rho) e))
+    (c : Module.Basis n (ProfiniteFramedLimit O G n rho)
+      (n → ProfiniteFramedLimit O G n rho))
+    (hc : ∀ i, c i = Representation.MoritaReconstruction.principalEvaluation
+      (universalLinearRepresentation O G n rho) e v (b i))
+    (hstrict : ∀ i j, framedResidueRingHom O G n rho (c i j) =
+      (Pi.single i (1 : ResidueField O) : n → ResidueField O) j) :
+    ∃ P : GL n (ProfiniteFramedLimit O G n rho),
+      Matrix.GeneralLinearGroup.map (framedResidueRingHom O G n rho) P = 1 ∧
+        ∀ g, P * Matrix.GeneralLinearGroup.map
+          (algebraMap (UniversalTraceRing O G n rho)
+            (ProfiniteFramedLimit O G n rho))
+          (universalTraceDescendedGL O G n rho e b g) * P⁻¹ =
+            profiniteUniversalLift O G n rho g := by
+  let _ : IsLocalProartinianAlgebra O (ProfiniteFramedLimit O G n rho) :=
+    (profiniteFramedLimitObject O G n rho).isLocalProartinianAlgebra
+  let R := ProfiniteFramedLimit O G n rho
+  let bstd : Module.Basis n R (n → R) := Pi.basisFun R n
+  let P : GL n R :=
+    { val := bstd.toMatrix c
+      inv := c.toMatrix bstd
+      val_inv := Module.Basis.toMatrix_mul_toMatrix_flip bstd c
+      inv_val := Module.Basis.toMatrix_mul_toMatrix_flip c bstd }
+  have hP_res : Matrix.GeneralLinearGroup.map (framedResidueRingHom O G n rho) P = 1 := by
+    apply Units.ext
+    ext i j
+    change framedResidueRingHom O G n rho (c j i) =
+      (1 : Matrix n n (ResidueField O)) i j
+    rw [hstrict]
+    simp only [Pi.single_apply, Matrix.one_apply]
+    rfl
+  refine ⟨P, hP_res, fun g ↦ ?_⟩
+  apply Units.ext
+  change bstd.toMatrix c *
+      ((↑(universalTraceDescendedGL O G n rho e b g) :
+        Matrix n n (UniversalTraceRing O G n rho)).map
+          (algebraMap (UniversalTraceRing O G n rho) R)) *
+      c.toMatrix bstd = profiniteUniversalMatrix O G n rho g
+  rw [universalTraceDescendedGL_conjugate O G n rho e v b c hc g]
+  rw [basis_toMatrix_mul_linearMap_toMatrix_mul_basis_toMatrix]
+  change Representation.representationMatrix
+    (universalLinearRepresentation O G n rho) g = _
+  exact universalLinearRepresentation_matrix O G n rho g
 
 end Deformation.MoritaReconstruction
