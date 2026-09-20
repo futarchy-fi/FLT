@@ -6,7 +6,7 @@ Authors: Kelly Azevedo Santos
 module
 
 public import Mathlib.Data.Rat.Cast.Order
-public import Mathlib.Data.Real.Basic
+public import Mathlib.Basic.Real.Basic
 
 /-!
 # Rational interval arithmetic

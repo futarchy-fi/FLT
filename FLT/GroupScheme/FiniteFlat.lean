@@ -325,8 +325,7 @@ noncomputable def genericTensorIncludeRight :
       f.comp (genericTensorIncludeLeft R K H₁ H₂ :
         K ⊗[R] H₁ →ₐ[K] K ⊗[R] (H₁ ⊗[R] H₂)) := by
   ext x
-  induction x with
-  | zero => simp
+  induction x using TensorProduct.inductionOn with
   | add x y hx hy => simp [hx, hy]
   | tmul k x =>
     simp [genericTensorPointsEquiv, genericTensorEquiv, commutingPairEquiv,
@@ -338,8 +337,7 @@ noncomputable def genericTensorIncludeRight :
       f.comp (genericTensorIncludeRight R K H₁ H₂ :
         K ⊗[R] H₂ →ₐ[K] K ⊗[R] (H₁ ⊗[R] H₂)) := by
   ext x
-  induction x with
-  | zero => simp
+  induction x using TensorProduct.inductionOn with
   | add x y hx hy => simp [hx, hy]
   | tmul k x =>
     simp [genericTensorPointsEquiv, genericTensorEquiv, commutingPairEquiv,
@@ -620,8 +618,7 @@ lemma tripleEquivRight_map_id_comul
       (Algebra.TensorProduct.map (AlgHom.id K _)
         (comulAlgHom K L A) z) (x, (y, w)) =
       tensorEquiv K L A A z (x, y + w) := by
-  induction z with
-  | zero => simp
+  induction z using TensorProduct.inductionOn with
   | add z₁ z₂ hz₁ hz₂ => simpa using congrArg₂ (· + ·) hz₁ hz₂
   | tmul f g =>
       simp [tripleEquivRight_tmul, comulAlgHom_eval, tensorEquiv_tmul]
@@ -633,8 +630,7 @@ lemma tripleEquivRight_assoc_tmul
       ((Algebra.TensorProduct.assoc K K K _ _ _).toAlgHom (z ⊗ₜ[K] f))
         (x, (y, w)) =
       tensorEquiv K L A A z (x, y) * f w := by
-  induction z with
-  | zero => simp
+  induction z using TensorProduct.inductionOn with
   | add z₁ z₂ hz₁ hz₂ =>
       rw [TensorProduct.add_tmul, map_add, map_add]
       change
@@ -659,8 +655,7 @@ lemma tripleEquivRight_assoc_map_comul_id
         (Algebra.TensorProduct.map (comulAlgHom K L A)
           (AlgHom.id K _) z)) (x, (y, w)) =
       tensorEquiv K L A A z (x + y, w) := by
-  induction z with
-  | zero => simp
+  induction z using TensorProduct.inductionOn with
   | add z₁ z₂ hz₁ hz₂ => simpa using congrArg₂ (· + ·) hz₁ hz₂
   | tmul f g =>
       simp only [Algebra.TensorProduct.map_tmul]
@@ -694,8 +689,7 @@ lemma lid_map_counit_id_eval
     (Algebra.TensorProduct.lid K (A →[L ≃ₐ[K] L] L))
       (Algebra.TensorProduct.map (counitAlgHom K L A) (AlgHom.id K _) z) y =
       tensorEquiv K L A A z (0, y) := by
-  induction z with
-  | zero => simp
+  induction z using TensorProduct.inductionOn with
   | add z₁ z₂ hz₁ hz₂ =>
       simp only [map_add]
       change
@@ -718,8 +712,7 @@ lemma rid_map_id_counit_eval
       (Algebra.TensorProduct.map (AlgHom.id K _)
         (counitAlgHom K L A) z) x =
       tensorEquiv K L A A z (x, 0) := by
-  induction z with
-  | zero => simp
+  induction z using TensorProduct.inductionOn with
   | add z₁ z₂ hz₁ hz₂ =>
       simp only [map_add]
       change
@@ -782,8 +775,7 @@ lemma lift_antipode_id_eval
     Algebra.TensorProduct.lift (antipodeAlgHom K L A) (AlgHom.id K _)
       (fun _ _ ↦ Commute.all _ _) z x =
       tensorEquiv K L A A z (-x, x) := by
-  induction z with
-  | zero => simp
+  induction z using TensorProduct.inductionOn with
   | add z₁ z₂ hz₁ hz₂ =>
       simp only [map_add]
       change
@@ -805,8 +797,7 @@ lemma lift_id_antipode_eval
     Algebra.TensorProduct.lift (AlgHom.id K _) (antipodeAlgHom K L A)
       (fun _ _ ↦ Commute.all _ _) z x =
       tensorEquiv K L A A z (x, -x) := by
-  induction z with
-  | zero => simp
+  induction z using TensorProduct.inductionOn with
   | add z₁ z₂ hz₁ hz₂ =>
       simp only [map_add]
       change
@@ -880,8 +871,7 @@ lemma tensorEquiv_eq_lift_eval
         (MulActionHom.evalAlgHom (L ≃ₐ[K] L) K A L x)
         (MulActionHom.evalAlgHom (L ≃ₐ[K] L) K A L y)
         (fun _ _ ↦ Commute.all _ _) z := by
-  induction z with
-  | zero => simp
+  induction z using TensorProduct.inductionOn with
   | add z₁ z₂ hz₁ hz₂ =>
       simp only [map_add]
       change tensorEquiv K L A A z₁ (x, y) +
@@ -1020,8 +1010,7 @@ lemma tensorEquiv_map_pullbackAlgHom (q : X →+[L ≃ₐ[K] L] Y)
         (TensorProduct.map (pullbackAlgHom K L X Y q).toLinearMap
           (pullbackAlgHom K L X Y q).toLinearMap z) (x, x') =
       tensorEquiv K L Y Y z (q x, q x') := by
-  induction z with
-  | zero => simp
+  induction z using TensorProduct.inductionOn with
   | add z₁ z₂ hz₁ hz₂ => simpa using congrArg₂ (· + ·) hz₁ hz₂
   | tmul f₁ f₂ => simp [tensorEquiv_tmul, pullbackAlgHom_apply]
 
@@ -1567,8 +1556,7 @@ lemma localizedInclusion_eq_val_baseChangeMap
     (C : Subalgebra K (K ⊗[R] H))
     (x : K ⊗[R] contraction R K H C) :
     localizedInclusion R K H C x = (baseChangeMap R K H C x).1 := by
-  refine TensorProduct.induction_on x ?_ ?_ ?_
-  · simp
+  refine TensorProduct.inductionOn x ?_ ?_
   · intro k d
     change k ⊗ₜ[R] d.1 =
       algebraMap K (K ⊗[R] H) k * (contractionMap R K H C d).1
@@ -1610,14 +1598,11 @@ lemma baseChangeTensorEquiv_naturality
           (TensorProduct.AlgebraTensorModule.lTensor K K g) z) =
       TensorProduct.AlgebraTensorModule.lTensor K K
         (TensorProduct.map f g) (baseChangeTensorEquiv R K A B z) := by
-  refine TensorProduct.induction_on z ?_ ?_ ?_
-  · simp
+  refine TensorProduct.inductionOn z ?_ ?_
   · intro x y
-    refine TensorProduct.induction_on x ?_ ?_ ?_
-    · simp
+    refine TensorProduct.inductionOn x ?_ ?_
     · intro k a
-      refine TensorProduct.induction_on y ?_ ?_ ?_
-      · simp
+      refine TensorProduct.inductionOn y ?_ ?_
       · intro l b
         simp [baseChangeTensorEquiv]
       · intro y₁ y₂ hy₁ hy₂
@@ -1647,8 +1632,7 @@ lemma baseChange_comul_includeRight
   simp only [Algebra.TensorProduct.includeRight_apply,
     TensorProduct.comul_tmul, CommSemiring.comul_apply]
   generalize Coalgebra.comul (R := R) h = z
-  refine TensorProduct.induction_on z ?_ ?_ ?_
-  · simp
+  refine TensorProduct.inductionOn z ?_ ?_
   · intro x y
     simp [baseChangeTensorEquiv]
   · intro x y hx hy
@@ -2008,8 +1992,7 @@ lemma val_mul_contractionAntipode_rTensor
         (TensorProduct.map
           (contraction R K H C).val.toLinearMap
           (contraction R K H C).val.toLinearMap z)) := by
-  refine TensorProduct.induction_on z ?_ ?_ ?_
-  · simp
+  refine TensorProduct.inductionOn z ?_ ?_
   · intro x y
     rfl
   · intro x y hx hy
@@ -2029,8 +2012,7 @@ lemma val_mul_contractionAntipode_lTensor
         (TensorProduct.map
           (contraction R K H C).val.toLinearMap
           (contraction R K H C).val.toLinearMap z)) := by
-  refine TensorProduct.induction_on z ?_ ?_ ?_
-  · simp
+  refine TensorProduct.inductionOn z ?_ ?_
   · intro x y
     rfl
   · intro x y hx hy
@@ -2283,8 +2265,7 @@ lemma tensorEquiv_map_evalAlgEquiv
           (genericEvalAlgEquiv K L G).toLinearMap
           (genericEvalAlgEquiv K L G).toLinearMap z) (p, q) =
       Algebra.TensorProduct.lift p q (fun _ _ ↦ Commute.all _ _) z := by
-  induction z with
-  | zero => simp
+  induction z using TensorProduct.inductionOn with
   | add z₁ z₂ hz₁ hz₂ => simpa using congrArg₂ (· + ·) hz₁ hz₂
   | tmul a b => rfl
 
@@ -2302,8 +2283,7 @@ lemma tensorEquiv_map_reindexPoints
             (forwardPointsMulActionHom K L G X g)).toLinearMap z) (p, q) =
       tensorEquiv K L X X z
         (g (Additive.ofMul p), g (Additive.ofMul q)) := by
-  induction z with
-  | zero => simp
+  induction z using TensorProduct.inductionOn with
   | add z₁ z₂ hz₁ hz₂ => simpa using congrArg₂ (· + ·) hz₁ hz₂
   | tmul a b => rfl
 
@@ -2440,8 +2420,7 @@ lemma IsFiniteFlat.quotient {Y : Type u} [AddCommGroup Y]
     Bialgebra.TensorProduct.map (BialgHom.id K K) dval
   have hk_apply (x : K ⊗[R] D) :
       k x = localizedInclusion R K H C x := by
-    refine TensorProduct.induction_on x ?_ ?_ ?_
-    · rfl
+    refine TensorProduct.inductionOn x ?_ ?_
     · intro a d
       rfl
     · intro x y hx hy

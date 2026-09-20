@@ -7,6 +7,7 @@ Modified for Lean/Mathlib v4.34.0-rc1 by the FLT contributors.
 module
 
 public import Mathlib.MeasureTheory.Integral.Bochner.Set
+public import Mathlib.MeasureTheory.Integral.DominatedConvergence
 public import Mathlib.MeasureTheory.Measure.Regular
 public import Mathlib.Topology.UrysohnsLemma
 public import Pontryagin.Mathlib.CcFubini

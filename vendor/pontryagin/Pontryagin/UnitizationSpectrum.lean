@@ -164,8 +164,7 @@ unitization. -/
 theorem spectralRadius_unitization_le (F : L1G μ) {C : ℝ} (hC : 0 ≤ C)
     (h : ∀ χ : PontryaginDual G, ‖fourier μ F χ‖ ≤ C) :
     spectralRadius ℂ (WithLp.toLp 1 ((F : Unitization ℂ (L1G μ)))) ≤ ENNReal.ofReal C := by
-  show (⨆ z ∈ spectrum ℂ (WithLp.toLp 1 ((F : Unitization ℂ (L1G μ)))), (‖z‖₊ : ℝ≥0∞))
-      ≤ ENNReal.ofReal C
+  rw [spectralRadius_eq_of_unital]
   refine iSup₂_le fun z hz => ?_
   rcases Set.mem_insert_iff.mp (spectrum_unitization_subset μ F hz) with rfl | ⟨χ, rfl⟩
   · simp

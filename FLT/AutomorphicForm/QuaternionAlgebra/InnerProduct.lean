@@ -188,7 +188,7 @@ lemma LevelStruct.inner_eq_of_map_le_map
   · refine Finset.sum_congr rfl fun y hy ↦ ?_
     obtain ⟨y, rfl⟩ := Quotient.mk_surjective y
     obtain ⟨_, ⟨d, rfl⟩, u, hu, rfl⟩ :=
-      (DoubleCoset.eq _ _ _ _).mp ((Finset.mem_filter_univ _).mp hy:)
+      DoubleCoset.eq.mp ((Finset.mem_filter_univ _).mp hy:)
     have Hf := ℒ'.apply_mul_eq_χA_smul _ f.2 ⟨u, hu⟩ y
     have Hg := ℒ'.apply_mul_eq_χA_smul _ g.2 ⟨u, hu⟩ y
     dsimp at Hf Hg
@@ -770,7 +770,6 @@ lemma Eigenform.pi_lift_injective :
     simp_all
   clear e
   induction a with
-  | zero => simp
   | add x y _ _ => simp only [map_add, LinearMap.add_apply, add_smul, *]
   | tmul x y =>
   have := Eigenform.mem_eigenspace_iff.mp hf
@@ -780,7 +779,6 @@ lemma Eigenform.pi_lift_injective :
   obtain ⟨f, rfl⟩ := ((U₁ 𝒮).toStruct.formTensorScalar D ℂ ℂ).surjective f
   simp only [LinearEquiv.symm_apply_apply, map_smul]
   induction f with
-  | zero => simp
   | add x y H₁ H₂ => simp only [map_add, smul_add, *]
   | tmul a b =>
   simp [Subalgebra.smul_def, smul_formTensorScalar_tmul, TensorProduct.smul_tmul', mul_comm]

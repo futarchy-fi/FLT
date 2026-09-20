@@ -2647,8 +2647,9 @@ private theorem pow_sum_toNat_le_norm_prod_sub {F : Finset ℂ} {D : ℂ → ℤ
     (hD : ∀ u ∈ F, 0 ≤ D u) {z : ℂ} {b : ℝ} (hb : 0 ≤ b)
     (hzu : ∀ u ∈ F, b ≤ ‖z - u‖) :
     b ^ (∑ u ∈ F, (D u).toNat) ≤ ‖∏ u ∈ F, (z - u) ^ D u‖ := by
+  -- Mathlib v4.34 compatibility: `prod_le_prod`'s nonnegative variant was renamed.
   rw [norm_prod_sub_zpow hD, ← Finset.prod_pow_eq_pow_sum]
-  exact Finset.prod_le_prod (fun u _ => by positivity)
+  exact Finset.prod_le_prod₀ (fun u _ => by positivity)
     (fun u hu => pow_le_pow_left₀ hb (hzu u hu) _)
 
 /-- Upper bound for the norm of a monic-type product: if every factor distance `‖z - u‖`
@@ -2658,7 +2659,7 @@ private theorem norm_prod_sub_le_pow {F : Finset ℂ} {D : ℂ → ℤ}
     (hzu : ∀ u ∈ F, ‖z - u‖ ≤ B) :
     ‖∏ u ∈ F, (z - u) ^ D u‖ ≤ B ^ (∑ u ∈ F, (D u).toNat) := by
   rw [norm_prod_sub_zpow hD, ← Finset.prod_pow_eq_pow_sum]
-  exact Finset.prod_le_prod (fun u _ => by positivity)
+  exact Finset.prod_le_prod₀ (fun u _ => by positivity)
     (fun u hu => pow_le_pow_left₀ (norm_nonneg _) (hzu u hu) _)
 
 /-- **Divisor monotonicity from an open ball to its closed ball.** For an everywhere-analytic
@@ -3087,9 +3088,12 @@ theorem exists_logDeriv_partial_fractions :
   -- the peel product's logarithmic derivative is the partial-fraction sum
   have hldprod : logDeriv (fun z => ∏ u ∈ F, (z - u) ^ D₁ u) s
       = ∑ u ∈ F, (D₁ u : ℂ) / (s - u) := by
+    -- Mathlib v4.34 compatibility: expose the pointwise product for `logDeriv_prod`.
     have h1 : logDeriv (fun z => ∏ u ∈ F, (fun w : ℂ => w - u) z ^ D₁ u) s
         = ∑ u ∈ F, logDeriv (fun z => (fun w : ℂ => w - u) z ^ D₁ u) s := by
-      refine logDeriv_prod (fun u hu => hfactor_ne u hu) (fun u hu => ?_)
+      rw [← Finset.prod_fn]
+      refine logDeriv_prod (s := F) (f := fun u z => (z - u) ^ D₁ u) (x := s)
+        (fun u hu => hfactor_ne u hu) (fun u hu => ?_)
       exact (differentiableAt_id.sub_const u).zpow (Or.inr (hD₁nn u))
     refine Eq.trans h1 ?_
     refine Finset.sum_congr rfl (fun u hu => ?_)

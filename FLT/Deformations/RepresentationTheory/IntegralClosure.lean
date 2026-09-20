@@ -86,7 +86,7 @@ instance isInvariant_integralClosure
   isInvariant := by
     rintro ⟨x, hx : IsIntegral _ _⟩ hx'
     obtain ⟨x, rfl⟩ := Algebra.IsInvariant.isInvariant (A := K) x fun g ↦ congr($(hx' g).1)
-    rw [isIntegral_algebraMap_iff (algebraMap K L).injective] at hx
+    rw [isIntegral_algebraMap_iff] at hx
     have : IsIntegrallyClosed R := GCDMonoid.toIsIntegrallyClosed
     obtain ⟨x, rfl⟩ := (IsIntegralClosure.isIntegral_iff (A := R)).mp hx
     exact ⟨x, rfl⟩
@@ -102,6 +102,6 @@ instance continuousSMulDiscrete_integralClosure
 
 instance {R S : Type*} [CommRing R] [CommRing S] {I : Ideal S} [Algebra R S]
     [Nontrivial R] [IsDomain S] [Algebra.IsIntegral R S] [NeZero I] : NeZero (I.under R) :=
-  ⟨fun H ↦ NeZero.ne I (Ideal.eq_bot_of_comap_eq_bot H)⟩
+  ⟨fun H ↦ NeZero.ne I (Ideal.eq_bot_of_under_eq_bot H)⟩
 
 end

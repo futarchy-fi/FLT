@@ -39,6 +39,9 @@ theorem intEquiv_apply_coe (z : R) :
 
 end IsIntegralClosure
 
+-- `Ideal.absNorm` needs this; local because the discrimination key is just `Infinite _`.
+local instance : Infinite R := .of_injective _ (IsIntegralClosure.intEquiv R).symm.injective
+
 theorem pow_natGenerator_dvd_iff (v : HeightOneSpectrum R) {n : ℕ} (m : ℕ) :
     natGenerator v ^ m ∣ n ↔ ↑n ∈ (v.asIdeal.map (IsIntegralClosure.intEquiv R)) ^ m := by
   rw [← span_natGenerator, Ideal.span_singleton_pow, Ideal.mem_span_singleton]
@@ -116,7 +119,8 @@ lemma adicCompletion.padicEquiv_norm_coe_eq
   rcases eq_or_ne x 0 with rfl | hx
   · simp [withValEquiv, Valuation.IsEquiv.uniformEquiv]
   · simp [padicValuation, withValEquiv, Valuation.IsEquiv.uniformEquiv,
-      valuation_apply_eq_padicValuation, hx, primesEquiv, natGenerator_eq_absNorm v]
+      valuation_apply_eq_padicValuation, hx, primesEquiv, natGenerator_eq_absNorm v,
+      WithZero.exp_neg, -WithZero.inv_exp]
     -- TODO: need to fix some defeq abuse upstream in FinitePlace.norm_def' to avoid the next line
     rfl
 
