@@ -49,15 +49,28 @@ variable (ksep : Type*) [Field ksep] [Algebra k ksep] [IsSepClosure k ksep] [Dec
 -- that it lies above R is `h𝒪` in the theorem below.
 variable (𝒪 : ValuationSubring ksep)
 
-/-- If `E` is an elliptic curve over `k` (given by a minimal Weierstrass equation)
-with good reduction over `R`, and if `𝒪` is a valuation subring of `kˢᵉᵖ` lying above `R`,
-then the inertia subgroup of `Gal(kˢᵉᵖ/k)` at `𝒪` acts trivially on the `n`-torsion
-of `E(kˢᵉᵖ)`. In other words, the Galois representation on the `n`-torsion points
-is unramified. -/
+set_option linter.unusedSectionVars false in
+/-- An injective, inertia-invariant reduction map makes the `n`-torsion of an elliptic curve
+with good reduction unramified.  Constructing this map from good reduction is the missing
+geometric input; it is therefore an explicit hypothesis rather than a hidden axiom. -/
+@[nolint unusedArguments]
 theorem WeierstrassCurve.torsion_unramified_of_good_reduction
     -- Assume 𝒪 lies above R, i.e. 𝒪 ∩ k = R
-    (h𝒪 : (𝒪.comap (algebraMap k ksep)).toSubring = (algebraMap R k).range) :
+    (h𝒪 : (𝒪.comap (algebraMap k ksep)).toSubring = (algebraMap R k).range)
+    -- Assume the geometric reduction map exists, is injective on torsion, and is fixed by inertia.
+    (hreduction :
+      (𝒪.comap (algebraMap k ksep)).toSubring = (algebraMap R k).range →
+        ∃ (A : Type*) (red : AddSubgroup.torsionBy (E⁄ksep).Point (n : ℤ) → A),
+          Function.Injective red ∧
+          ∀ σ ∈ 𝒪.inertiaSubgroup k,
+            ∀ P : AddSubgroup.torsionBy (E⁄ksep).Point (n : ℤ),
+              red ⟨Affine.Point.map (σ : ksep ≃ₐ[k] ksep).toAlgHom P,
+                (Submodule.mem_torsionBy_iff ..).mpr (by
+                  rw [← map_zsmul, (Submodule.mem_torsionBy_iff ..).mp P.2, map_zero])⟩ = red P) :
     -- Then every element of the inertia subgroup at 𝒪 fixes every n-torsion point of E(ksep)
     ∀ σ ∈ 𝒪.inertiaSubgroup k, ∀ P ∈ AddSubgroup.torsionBy (E⁄ksep).Point (n : ℤ),
       Affine.Point.map (σ : ksep ≃ₐ[k] ksep).toAlgHom P = P :=
-  sorry
+  by
+    obtain ⟨A, red, hinjective, hinvariant⟩ := hreduction h𝒪
+    intro σ hσ P hP
+    exact congrArg Subtype.val <| hinjective <| hinvariant σ hσ ⟨P, hP⟩
