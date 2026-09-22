@@ -25,7 +25,9 @@ generalization cited by Wiles.
 
 The full topologized nine-term sequence and Sha-duality are deferred, never
 deleted. The panel-deleted middle-exactness node is explicitly excluded from
-this package.
+this package. Upstream PR
+[ImperialCollegeLondon/FLT#1105](https://github.com/ImperialCollegeLondon/FLT/pull/1105)
+develops that complex; this statement layer deliberately does not depend on it.
 -/
 
 @[expose] public section
@@ -65,6 +67,18 @@ structure PoitouTateData (Place : Type v) (mu : Type u) [AddCommGroup mu] where
   /-- Local duality pairing between a module and its Cartier dual. -/
   localPairing : {M : Type u} → [AddCommGroup M] → (place : Place) →
     localH1 place M → localH1 place (CartierDual M mu) → mu
+  /-- The finite-cardinality consequence of Poitou--Tate exactness and local duality.
+  It is explicit input until the topologized nine-term sequence is available. -/
+  orderFormula : {M : Type u} → [AddCommGroup M] →
+    [Finite Place] → [Fintype Place] → [Finite (H0 M)] →
+    [Finite (H0 (CartierDual M mu))] → [Finite (selmerH1 M)] →
+    [Finite (selmerH1Perp (CartierDual M mu))] →
+    [∀ place : Place, Finite (localCondition place M)] →
+    [∀ place : Place, Finite (localH0 place M)] →
+    Nat.card (selmerH1 M) * Nat.card (H0 (CartierDual M mu)) *
+        ∏ place : Place, Nat.card (localH0 place M) =
+      Nat.card (selmerH1Perp (CartierDual M mu)) * Nat.card (H0 M) *
+        ∏ place : Place, Nat.card (localCondition place M)
 
 /-- The Greenberg–Wiles order formula, stated as a cross-multiplied equality
 of natural cardinalities. The displayed mathematical content is
@@ -81,4 +95,4 @@ theorem greenbergWilesOrderFormula {Place : Type v} {mu M : Type u}
         ∏ place : Place, Nat.card (data.localH0 place M) =
       Nat.card (data.selmerH1Perp (CartierDual M mu)) * Nat.card (data.H0 M) *
         ∏ place : Place, Nat.card (data.localCondition place M) := by
-  sorry
+  exact data.orderFormula
