@@ -511,9 +511,8 @@ private theorem hasDerivAt_deriv_weilGaussianSymbol (a : ℝ) (n : ℕ) (q x : �
     convert hasDerivAt_deriv_weilGaussianWeight n q x using 1
     exact (hasDerivAt_deriv_weilGaussianWeight n q x).deriv
   convert ((hf'.mul hW).add (hf.mul hW')).ofReal_comp using 1
-  · rfl
-  · push_cast
-    ring
+  push_cast
+  ring
 
 private theorem integrable_weilGaussian_majorant (n : ℕ) (q : ℝ) :
     Integrable (fun x : ℝ => (1 + |x|) ^ 2 *

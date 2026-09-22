@@ -87,7 +87,8 @@ theorem exists_continuous_eLpNorm_indicator_sub_le (c : ℂ) {s : Set X}
   -- the error is supported in `(U \ k) ∪ (s \ k)`, both of measure `< η`
   have hA : eLpNorm ((fun x => f x • c) - k.indicator fun _ => c) 1 μ
       ≤ eLpNorm ((U \ k).indicator fun _ => c) 1 μ := by
-    refine eLpNorm_mono fun x => ?_
+    refine eLpNorm_mono
+      (hg_cont.aestronglyMeasurable.sub (aestronglyMeasurable_const.indicator hk_meas)) fun x => ?_
     simp only [Pi.sub_apply]
     by_cases hxk : x ∈ k
     · simp [Set.indicator_of_mem hxk, hf1 hxk, norm_nonneg]
@@ -102,7 +103,9 @@ theorem exists_continuous_eLpNorm_indicator_sub_le (c : ℂ) {s : Set X}
           Set.indicator_of_notMem (fun h : x ∈ U \ k => hxU h.1), hfx]
   have hB : eLpNorm ((k.indicator fun _ => c) - s.indicator fun _ => c) 1 μ
       ≤ eLpNorm ((s \ k).indicator fun _ => c) 1 μ := by
-    refine eLpNorm_mono fun x => ?_
+    refine eLpNorm_mono
+      ((aestronglyMeasurable_const.indicator hk_meas).sub
+        (aestronglyMeasurable_const.indicator hs)) fun x => ?_
     simp only [Pi.sub_apply]
     by_cases hxk : x ∈ k
     · simp [Set.indicator_of_mem hxk, Set.indicator_of_mem (hks hxk), norm_nonneg]
@@ -112,13 +115,9 @@ theorem exists_continuous_eLpNorm_indicator_sub_le (c : ℂ) {s : Set X}
         exact le_rfl
       · simp [Set.indicator_of_notMem hxk, Set.indicator_of_notMem hxs,
           Set.indicator_of_notMem (fun h : x ∈ s \ k => hxs h.1)]
-  have hA_meas : AEStronglyMeasurable ((fun x => f x • c) - k.indicator fun _ => c) μ :=
-    hg_cont.aestronglyMeasurable.sub (aestronglyMeasurable_const.indicator hk_meas)
-  have hB_meas : AEStronglyMeasurable
-      ((k.indicator fun _ => c) - s.indicator fun _ => c) μ :=
-    (aestronglyMeasurable_const.indicator hk_meas).sub
-      (aestronglyMeasurable_const.indicator hs)
-  have hcomb := hδ₂ _ _ hA_meas hB_meas (hA.trans (hη _ hμUk.le)) (hB.trans (hη _ hμsk.le))
+  have hcomb := hδ₂ _ _
+    (hA.trans (hη _ hμUk.le (hU_open.measurableSet.diff hk_meas).nullMeasurableSet))
+    (hB.trans (hη _ hμsk.le (hs.diff hk_meas).nullMeasurableSet))
   rw [sub_add_sub_cancel] at hcomb
   exact hcomb.le
 
@@ -139,12 +138,10 @@ theorem exists_hasCompactSupport_integral_norm_sub_le {u : X → ℂ} (hu : Inte
       Continuous g ∧ HasCompactSupport g →
       Continuous (f + g) ∧ HasCompactSupport (f + g) :=
     fun f g hf hg => ⟨hf.1.add hg.1, hf.2.add hg.2⟩
-  have h2P : ∀ f : X → ℂ, Continuous f ∧ HasCompactSupport f →
-      AEStronglyMeasurable f μ := fun f hf => hf.1.aestronglyMeasurable
   have hu1 : MemLp u 1 μ := memLp_one_iff_integrable.2 hu
   obtain ⟨v, hv_norm, hv_cont, hv_supp⟩ :=
     hu1.induction_dense ENNReal.one_ne_top
-      (fun g => Continuous g ∧ HasCompactSupport g) h0P h1P h2P
+      (fun g => Continuous g ∧ HasCompactSupport g) h0P h1P
       (ENNReal.ofReal_pos.2 hε).ne'
   have hv_int : Integrable v μ := hv_cont.integrable_of_hasCompactSupport hv_supp
   refine ⟨v, hv_cont, hv_supp, hv_int, ?_⟩
@@ -152,7 +149,8 @@ theorem exists_hasCompactSupport_integral_norm_sub_le {u : X → ℂ} (hu : Inte
   rw [integral_norm_eq_lintegral_enorm hsub.aestronglyMeasurable]
   refine ENNReal.toReal_le_of_le_ofReal hε.le ?_
   have heq : eLpNorm (u - v) 1 μ = ∫⁻ x, ‖u x - v x‖ₑ ∂μ := by
-    rw [eLpNorm_one_eq_lintegral_enorm]
+    rw [eLpNorm_one_eq_lintegral_enorm
+      (hu.aestronglyMeasurable.sub hv_int.aestronglyMeasurable)]
     simp only [Pi.sub_apply]
   rw [← heq]
   exact hv_norm
