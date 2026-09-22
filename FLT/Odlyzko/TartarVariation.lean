@@ -409,6 +409,53 @@ private theorem deriv_zero_of_even' (F : ℝ → ℂ) (hF : Differentiable ℝ F
   have hunique' : deriv F 0 = -deriv F 0 := by simpa using hunique
   exact CharZero.eq_neg_self_iff.mp hunique'
 
+/-- A compactly supported autocorrelation is admissible as soon as its expected `C²`
+regularity is available.  For a Lipschitz input this is the remaining analytic smoothing fact;
+all bounded-variation, integrability, and jump-average conditions are consequences. -/
+theorem autocorrelation_isAdmissibleTestFn_of_contDiff_two (g : ℝ → ℝ) (C : NNReal)
+    (hg_even : Function.Even g) (hg_compact : HasCompactSupport g)
+    (_hg_lipschitz : LipschitzWith C g)
+    (hF : ContDiff ℝ 2 (autocorrelation g)) :
+    DedekindResidue.IsAdmissibleTestFn (autocorrelation g) := by
+  let F := autocorrelation g
+  have hF_compact : HasCompactSupport F := autocorrelation_hasCompactSupport g hg_compact
+  have hF_int : Integrable F :=
+    hF.continuous.integrable_of_hasCompactSupport hF_compact
+  have hF_deriv_int : Integrable (deriv F) :=
+    (hF.continuous_deriv (by norm_num)).integrable_of_hasCompactSupport hF_compact.deriv
+  have hF_even : Function.Even F := autocorrelation_even g hg_even
+  have hF_zero : deriv F 0 = 0 :=
+    deriv_zero_of_even' F (hF.differentiable (by norm_num)) hF_even
+  have hweighted_contDiff : ContDiff ℝ 1 (weightedAutocorrelation g 1) := by
+    unfold weightedAutocorrelation
+    have hexp : ContDiff ℝ 1 (fun x : ℝ ↦ Real.exp ((1 / 2 + 1) * x)) :=
+      Real.contDiff_exp.comp (contDiff_const.mul contDiff_id)
+    exact (hF.of_le (by norm_num)).mul
+      (Complex.ofRealCLM.contDiff.comp hexp)
+  have hweighted_compact : HasCompactSupport (weightedAutocorrelation g 1) :=
+    hF_compact.mul_right
+  have hweighted_int : IntegrableOn (weightedAutocorrelation g 1) (Set.Ici 0) :=
+    (hweighted_contDiff.continuous.integrable_of_hasCompactSupport
+      hweighted_compact).integrableOn
+  have hweighted_deriv_int : Integrable (deriv (weightedAutocorrelation g 1)) :=
+    (hweighted_contDiff.continuous_deriv (by norm_num)).integrable_of_hasCompactSupport
+      hweighted_compact.deriv
+  have hweighted_bv :
+      BoundedVariationOn (weightedAutocorrelation g 1) (Set.Ici 0) := by
+    apply DedekindResidue.boundedVariationOn_of_deriv_integrable Set.ordConnected_Ici
+      hweighted_contDiff.continuous.continuousOn
+    · rw [interior_Ici]
+      intro x _
+      exact (hweighted_contDiff.differentiable (by norm_num) x).hasDerivAt
+    · exact hweighted_deriv_int.integrableOn
+  have hquotient_bv : BoundedVariationOn (autocorrelationDiffQuot g) (Set.Ici 0) :=
+    boundedVariationOn_diffQuot_of_contDiff_two hF hF_zero hF_int hF_deriv_int
+  refine ⟨hF_even, ⟨1, zero_lt_one, hweighted_bv, hweighted_int⟩, hquotient_bv, ?_⟩
+  intro x
+  refine ⟨F x, F x, ?_, ?_, by ring⟩
+  · exact hF.continuous.continuousAt.mono_left inf_le_left
+  · exact hF.continuous.continuousAt.mono_left inf_le_left
+
 private theorem deriv_complexify_eq (f : ℝ → ℝ) (hf : Differentiable ℝ f) :
     deriv (complexify f) = complexify (deriv f) := by
   funext x
