@@ -183,12 +183,15 @@ theorem MemLp.comp_inv {E : Type*} [NormedAddCommGroup E] {p : ℝ≥0∞} {f : 
 
 theorem eLpNorm_mstar {p : ℝ≥0∞} {f : G → ℂ} (hf : AEStronglyMeasurable f μ) :
     eLpNorm (mstar f) p μ = eLpNorm f p μ :=
-  (eLpNorm_congr_norm_ae (Eventually.of_forall fun x => by simp)).trans (eLpNorm_comp_inv μ hf)
+  (eLpNorm_congr_norm_ae
+    (Complex.continuous_conj.comp_aestronglyMeasurable
+      (hf.comp_quasiMeasurePreserving (Measure.measurePreserving_inv μ).quasiMeasurePreserving))
+    (hf.comp_quasiMeasurePreserving (Measure.measurePreserving_inv μ).quasiMeasurePreserving)
+    (Eventually.of_forall fun x => by simp)).trans (eLpNorm_comp_inv μ hf)
 
 theorem MemLp.mstar {p : ℝ≥0∞} {f : G → ℂ} (hf : MemLp f p μ) :
     MemLp (mstar f) p μ :=
-  ⟨Complex.continuous_conj.comp_aestronglyMeasurable (hf.comp_inv μ).1,
-    by rw [eLpNorm_mstar μ hf.1]; exact hf.2⟩
+  by rw [memLp_iff, eLpNorm_mstar μ hf.aestronglyMeasurable]; exact hf
 
 theorem eLpNorm_shift {E : Type*} [NormedAddCommGroup E] {p : ℝ≥0∞} {g : G → E}
     (hg : AEStronglyMeasurable g μ) (x : G) :
@@ -207,7 +210,7 @@ theorem memLp_two_shift {g : G → ℂ} (hg : MemLp g 2 μ) (x : G) :
 /-- Shifting `y ↦ g (y⁻¹ * x)` preserves the `L²` norm. -/
 theorem eLpNorm_two_shift {g : G → ℂ} (hg : MemLp g 2 μ) (x : G) :
     eLpNorm (fun y => g (y⁻¹ * x)) 2 μ = eLpNorm g 2 μ :=
-  eLpNorm_shift μ hg.1 x
+  eLpNorm_shift μ hg.aestronglyMeasurable x
 
 /-- Convolution only depends on the almost-everywhere classes of its arguments, pointwise. -/
 theorem mconv_congr_ae {f f' g g' : G → ℂ} (hf : f =ᵐ[μ] f') (hg : g =ᵐ[μ] g') :
@@ -408,7 +411,8 @@ theorem norm_mconv_le_of_memLp_two {f g : G → ℂ} (hf : MemLp f 2 μ) (hg : M
     ‖mconv μ f g x‖ ≤ (eLpNorm f 2 μ).toReal * (eLpNorm g 2 μ).toReal := by
   rw [mconv_apply_eq_inner μ hf hg x]
   refine (norm_inner_le_norm (𝕜 := ℂ) _ _).trans ?_
-  rw [norm_translateLp, Lp.norm_toLp, Lp.norm_toLp, eLpNorm_star, eLpNorm_comp_inv μ hg.1]
+  rw [norm_translateLp, Lp.norm_toLp, Lp.norm_toLp, eLpNorm_star,
+    eLpNorm_comp_inv μ hg.aestronglyMeasurable]
 
 /-- The convolution of two `L²` functions is continuous. -/
 theorem continuous_mconv_of_memLp_two {f g : G → ℂ} (hf : MemLp f 2 μ) (hg : MemLp g 2 μ) :
