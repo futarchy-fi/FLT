@@ -205,8 +205,8 @@ lemma unit_inv_conj_not_neg_zeta_runity_aux (u : (𝓞 K)ˣ) [Fact (p.Prime)] (h
     algebraMap (𝓞 K) (𝓞 K ⧸ I) (unitsMulComplexConjInv K u).1 = 1 := by
   haveI := IsCyclotomicExtension.Rat.isCMField (S := {p}) K ⟨p, rfl, hp⟩
   have := Units.coe_map_inv (N := 𝓞 K ⧸ I) (algebraMap (𝓞 K) (𝓞 K ⧸ I)) (unitsComplexConj K u)
-  rw [unitsMulComplexConjInv_apply, Units.val_mul, map_mul, ← MonoidHom.coe_coe, ← this,
-    Units.mul_inv_eq_one, Units.coe_map, MonoidHom.coe_coe]
+  rw [unitsMulComplexConjInv_apply, Units.val_mul, map_mul, ← MonoidHom.coe_ofClass, ← this,
+    Units.mul_inv_eq_one, Units.coe_map, MonoidHom.coe_ofClass]
   haveI := Fact.mk hp
   have hu := hζ.integralPowerBasis.basis.sum_repr u
   let a := hζ.integralPowerBasis.basis.repr

@@ -243,7 +243,7 @@ theorem universalImageResidue_surjective
   | add x y _ _ hx hy =>
       obtain ⟨x, rfl⟩ := hx
       obtain ⟨y, rfl⟩ := hy
-      exact ⟨x + y, map_add _ _ _⟩
+      exact ⟨x + y, (universalImageResidue O G n rho).map_add x y⟩
   | smul c x _ hx =>
       obtain ⟨x, rfl⟩ := hx
       obtain ⟨s, hs⟩ := ProartinianCat.toResidueField_surjective
@@ -850,7 +850,7 @@ namespace Deformation.MoritaReconstruction
 
 set_option maxHeartbeats 4000000 in
 -- The combined existence proof elaborates every determinant argument in this file.
-set_option synthInstance.maxHeartbeats 100000 in
+set_option synthInstance.maxHeartbeats 500000 in
 -- Assembling all universal data requires several large nested instance and determinant proofs.
 /-- Universal Morita data, including a strict evaluation basis for the universal framed lift. -/
 theorem exists_universalMoritaData
@@ -1102,6 +1102,8 @@ theorem universalTraceDescendedGL_continuous
     have hinv := hambient.comp continuous_inv
     exact (continuous_apply j).comp ((continuous_apply i).comp hinv)
 
+set_option synthInstance.maxHeartbeats 100000 in
+-- Lean v4.35 needs extra time to synthesize the module structure through the trace-ring aliases.
 /-- The reconstructed representation has the universal trace. -/
 theorem universalTraceDescendedGL_trace
     (O : Type u) [CommRing O] [IsLocalRing O] [IsNoetherianRing O]
@@ -1151,6 +1153,8 @@ theorem universalTraceDescendedGL_trace
           (universalLinearRepresentation O G n rho) g = _
         exact universalLinearRepresentation_matrix O G n rho g]
 
+set_option synthInstance.maxHeartbeats 100000 in
+-- Lean v4.35 needs extra time to synthesize the module structure through the trace-ring aliases.
 /-- The evaluation basis gives a change-of-basis matrix reducing to the identity and conjugating
 the scalar extension of the reconstructed representation to the universal framed lift. -/
 theorem exists_strict_universalTraceDescendedGL_conjugator

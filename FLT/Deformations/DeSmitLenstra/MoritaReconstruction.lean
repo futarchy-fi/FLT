@@ -280,6 +280,8 @@ abbrev UniversalImageAlgebra :=
   imageAlgebra (S := UniversalTraceRing O G n rho)
     (universalLinearRepresentation O G n rho)
 
+set_option synthInstance.maxHeartbeats 100000 in
+-- Lean v4.35 needs extra time to synthesize the module structure through the trace-ring aliases.
 /-- The `GLₙ`-valued representation over the closed trace ring reconstructed from universal
 Morita data. -/
 def universalTraceDescendedGL
@@ -291,6 +293,8 @@ def universalTraceDescendedGL
   Representation.MoritaReconstruction.descendedGL
     (universalLinearRepresentation O G n rho) e b
 
+set_option synthInstance.maxHeartbeats 100000 in
+-- Lean v4.35 needs extra time to synthesize the module structure through the trace-ring aliases.
 /-- The corresponding identification of the universal image algebra with a matrix algebra over
 the closed trace ring. -/
 def universalMoritaMatrixEquiv
@@ -306,6 +310,8 @@ def universalMoritaMatrixEquiv
   Representation.MoritaReconstruction.moritaMatrixEquiv
     e b hMorita
 
+set_option synthInstance.maxHeartbeats 100000 in
+-- Lean v4.35 needs extra time to synthesize the module structure through the trace-ring aliases.
 omit [TotallyDisconnectedSpace G] in
 /-- Scalar extension of the reconstructed universal representation is the original universal
 framed lift written in the evaluation basis, hence is conjugate to it. -/
@@ -327,6 +333,8 @@ theorem universalTraceDescendedGL_conjugate
   exact Representation.MoritaReconstruction.map_descendedRepresentation_eq_toMatrix
     (universalLinearRepresentation O G n rho) e v b c hc g
 
+set_option synthInstance.maxHeartbeats 100000 in
+-- Lean v4.35 needs extra time to synthesize the module structure through the trace-ring aliases.
 omit [TotallyDisconnectedSpace G] in
 /-- The universal specialization of Morita reconstruction. -/
 theorem exists_universalMoritaEquiv_and_descendedGL
