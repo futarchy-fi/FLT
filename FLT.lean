@@ -33,6 +33,7 @@ public import FLT.AbsoluteGaloisGroup.CompletionComparison
 public import FLT.AbsoluteGaloisGroup.InertiaComparison
 public import FLT.AbsoluteGaloisGroup.LocalCompositum
 public import FLT.AbsoluteGaloisGroup.TameCharacter
+public import FLT.AbsoluteGaloisGroup.Unramified
 public import FLT.Assumptions.KnownIn1980s
 public import FLT.Assumptions.Mazur
 public import FLT.Assumptions.Odlyzko
