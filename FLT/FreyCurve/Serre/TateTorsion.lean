@@ -138,4 +138,62 @@ noncomputable def tateTorsionQuotient (n : ℕ) :
       rfl
     · rw [mul_pow, ha, hb, zpow_add]
 
+omit [DecidableEq Ω] in
+/-- Galois automorphisms fix the Tate parameter in the extension field. -/
+theorem qUnitSepClosure_galois (σ : Ω ≃ₐ[k] Ω) :
+    Units.map σ.toAlgHom.toRingHom.toMonoidHom (E.qUnitSepClosure Ω) =
+      E.qUnitSepClosure Ω := by
+  ext
+  exact σ.commutes _
+
+/-- The quotient of Tate torsion is fixed by the entire local Galois group,
+so in particular it is fixed by inertia. -/
+theorem tateTorsionQuotient_galois [IsSepClosed Ω] [Algebra.IsSeparable k Ω] (n : ℕ) (σ : Ω ≃ₐ[k] Ω)
+    (P Q : AddSubgroup.torsionBy (E⁄Ω).Point (n : ℤ))
+    (hQ : (Q : (E⁄Ω).Point) = Affine.Point.map σ.toAlgHom P) :
+    E.tateTorsionQuotient Ω n Q = E.tateTorsionQuotient Ω n P := by
+  obtain ⟨u, m, hu, hm⟩ := E.exists_tatePoint_torsionBy_rep Ω n P
+  change E.tateTorsionExponent Ω n Q = E.tateTorsionExponent Ω n P
+  rw [E.tateTorsionExponent_eq Ω P u m hu hm]
+  apply E.tateTorsionExponent_eq Ω Q (Units.map σ.toAlgHom.toRingHom.toMonoidHom u) m
+  · rw [← E.tatePoint_galois, hu, hQ]
+  · rw [← map_pow, hm, map_zpow, E.qUnitSepClosure_galois]
+
+omit [DecidableEq Ω] in
+/-- Over a separably closed field, the Tate parameter has an `n`-th root
+whenever `n` is nonzero in the field. -/
+theorem exists_pow_eq_qUnitSepClosure [IsSepClosed Ω] (n : ℕ) [NeZero (n : Ω)] :
+    ∃ r : Ωˣ, r ^ n = E.qUnitSepClosure Ω := by
+  obtain ⟨r, hr⟩ := IsSepClosed.exists_pow_nat_eq (E.qUnitSepClosure Ω : Ω) n
+  have hn : n ≠ 0 := by
+    intro h
+    exact NeZero.ne (n : Ω) (by simp [h])
+  have hr0 : r ≠ 0 := by
+    intro h
+    rw [h, zero_pow hn] at hr
+    exact (E.qUnitSepClosure Ω).ne_zero hr.symm
+  exact ⟨Units.mk0 r hr0, Units.ext hr⟩
+
+/-- The Tate torsion quotient hits `1`, hence is nonzero for `n > 1`. -/
+theorem exists_tateTorsionQuotient_eq_one [IsSepClosed Ω] (n : ℕ) [NeZero (n : Ω)] :
+    ∃ P, E.tateTorsionQuotient Ω n P = 1 := by
+  obtain ⟨r, hr⟩ := E.exists_pow_eq_qUnitSepClosure Ω n
+  let P : AddSubgroup.torsionBy (E⁄Ω).Point (n : ℤ) :=
+    ⟨E.tatePoint Ω r, (E.tatePoint_mem_torsionBy_iff Ω r n).mpr
+      ⟨1, by simpa only [zpow_one] using hr⟩⟩
+  refine ⟨P, ?_⟩
+  change E.tateTorsionExponent Ω n P = 1
+  rw [← Int.cast_one]
+  apply E.tateTorsionExponent_eq Ω P r 1 rfl
+  simpa only [zpow_one] using hr
+
+/-- The Galois-invariant quotient supplied by Tate uniformization is surjective. -/
+theorem tateTorsionQuotient_surjective [IsSepClosed Ω] (n : ℕ) [NeZero (n : Ω)] :
+    Function.Surjective (E.tateTorsionQuotient Ω n) := by
+  obtain ⟨P, hP⟩ := E.exists_tateTorsionQuotient_eq_one Ω n
+  intro x
+  obtain ⟨a, rfl⟩ := ZMod.intCast_surjective x
+  refine ⟨a • P, ?_⟩
+  rw [map_zsmul, hP, zsmul_eq_mul, mul_one]
+
 end WeierstrassCurve
