@@ -51,4 +51,16 @@ theorem eq_one_of_injective_of_sub_one_sq_eq_zero (f : Module.End k V) (a : Modu
   simpa only [pow_two, Module.End.mul_apply, LinearMap.sub_apply,
     Module.End.one_apply, map_sub, heq, map_zero, LinearMap.zero_apply] using h
 
+/-- A one-dimensional quotient of a square-unipotent module has trivial action. -/
+theorem eq_one_of_surjective_of_sub_one_sq_eq_zero (f : Module.End k V)
+    (a : Module.End k k) (q : V →ₗ[k] k) (hq : Function.Surjective q)
+    (heq : ∀ x, q (f x) = a (q x)) (hf : (f - 1) ^ 2 = 0) : a = 1 := by
+  apply eq_one_of_sub_one_sq_eq_zero
+  apply LinearMap.ext
+  intro x
+  obtain ⟨v, rfl⟩ := hq x
+  have h := congrArg q (LinearMap.congr_fun hf v)
+  simpa only [pow_two, Module.End.mul_apply, LinearMap.sub_apply,
+    Module.End.one_apply, map_sub, heq, map_zero, LinearMap.zero_apply] using h
+
 end Module.End
