@@ -71,3 +71,47 @@ theorem FreyCurve.map_c₄_ne_zero_of_map_Δ_eq_zero (P : FreyPackage) {F : Type
     rw [hb]
     convert pow_ne_zero 2 (pow_ne_zero P.p ha) using 1
     ring
+
+open IsDedekindDomain.HeightOneSpectrum IsDiscreteValuationRing
+
+universe u
+
+/-- The integral Frey equation has good or multiplicative reduction over every DVR. -/
+theorem FreyCurve.good_or_multiplicative_integral (P : FreyPackage) (R K : Type u) [CommRing R] [IsDomain R]
+    [IsDiscreteValuationRing R] [Field K] [Algebra R K] [IsFractionRing R K] :
+    let W := (P.freyCurveInt.map (algebraMap ℤ R)).baseChange K
+    W.HasGoodReduction R ∨ W.HasMultiplicativeReduction R := by
+  dsimp only
+  let W₀ := P.freyCurveInt.map (algebraMap ℤ R)
+  let W := W₀.baseChange K
+  have hInt : IsIntegral R W := ⟨W₀, rfl⟩
+  let := hInt
+  change W.HasGoodReduction R ∨ W.HasMultiplicativeReduction R
+  have hΔ : W.Δ = algebraMap R K W₀.Δ := W₀.map_Δ _
+  have hc4 : W.c₄ = algebraMap R K W₀.c₄ := W₀.map_c₄ _
+  by_cases hd : IsLocalRing.residue R W₀.Δ = 0
+  · have hdmem : W₀.Δ ∈ IsLocalRing.maximalIdeal R :=
+      (IsLocalRing.residue_eq_zero_iff _).mp hd
+    have hc : IsLocalRing.residue R W₀.c₄ ≠ 0 := by
+      simpa only [W₀, map_c₄, RingHom.comp_apply] using
+        FreyCurve.map_c₄_ne_zero_of_map_Δ_eq_zero P
+          ((IsLocalRing.residue R).comp (algebraMap ℤ R))
+          (by simpa only [W₀, map_Δ, RingHom.comp_apply] using hd)
+    have hcval : (maximalIdeal R).valuation K W.c₄ = 1 := by
+      rw [hc4, valuation_eq_one_iff_notMem]
+      exact fun h ↦ hc ((IsLocalRing.residue_eq_zero_iff _).mpr h)
+    exact Or.inr {
+      toIsMinimal := isMinimal_of_valuation_c₄_eq_one R W hcval
+      badReduction := by rw [hΔ]; exact (valuation_lt_one_iff_mem _ _).mpr hdmem
+      multiplicativeReduction := hcval }
+  · have hdval : (maximalIdeal R).valuation K W.Δ = 1 := by
+      rw [hΔ, valuation_eq_one_iff_notMem]
+      exact fun h ↦ hd ((IsLocalRing.residue_eq_zero_iff _).mpr h)
+    have hmin : IsMinimal R W := by
+      refine ⟨⟨by simpa using hInt, ?_⟩⟩
+      intro C hC _
+      simp only [one_smul, ← Subtype.coe_le_coe, valuation_Δ_aux_eq_of_isIntegral R (C • W),
+        valuation_Δ_aux_eq_of_isIntegral R W, hdval]
+      rw [← integralModel_Δ_eq R (C • W)]
+      exact valuation_le_one _ _
+    exact Or.inl { toIsMinimal := hmin, goodReduction := hdval }
