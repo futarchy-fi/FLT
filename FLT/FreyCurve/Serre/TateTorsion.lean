@@ -26,10 +26,8 @@ variable {k : Type*} [Field k] [ValuativeRel k] [TopologicalSpace k]
   [IsNonarchimedeanLocalField k]
 variable (E : WeierstrassCurve k) [E.IsElliptic]
   [E.HasSplitMultiplicativeReduction 𝒪[k]]
-variable (Ω : Type*) [Field Ω] [Algebra k Ω] [IsSepClosed Ω]
-  [Algebra.IsSeparable k Ω] [DecidableEq Ω]
+variable (Ω : Type*) [Field Ω] [Algebra k Ω] [DecidableEq Ω]
 
-omit [IsSepClosed Ω] [Algebra.IsSeparable k Ω] in
 /-- Tate uniformization takes multiplication of units to addition of points. -/
 theorem tatePoint_mul (u v : Ωˣ) :
     E.tatePoint Ω (u * v) = E.tatePoint Ω u + E.tatePoint Ω v := by
@@ -37,7 +35,6 @@ theorem tatePoint_mul (u v : Ωˣ) :
   rw [QuotientGroup.mk_mul]
   exact (E.tateEquivSepClosure Ω).map_add _ _
 
-omit [IsSepClosed Ω] [Algebra.IsSeparable k Ω] in
 /-- Powers of a unit correspond to multiples of its Tate point. -/
 theorem tatePoint_pow (u : Ωˣ) (n : ℕ) :
     E.tatePoint Ω (u ^ n) = n • E.tatePoint Ω u := by
@@ -45,7 +42,6 @@ theorem tatePoint_pow (u : Ωˣ) (n : ℕ) :
   rw [QuotientGroup.mk_pow]
   exact (E.tateEquivSepClosure Ω).toAddMonoidHom.map_nsmul n _
 
-omit [IsSepClosed Ω] [Algebra.IsSeparable k Ω] in
 /-- The kernel of Tate uniformization is precisely the powers of its parameter. -/
 theorem tatePoint_eq_zero_iff (u : Ωˣ) :
     E.tatePoint Ω u = 0 ↔ u ∈ Subgroup.zpowers (E.qUnitSepClosure Ω) := by
@@ -75,5 +71,71 @@ theorem exists_tatePoint_torsionBy_rep (n : ℕ)
     exact hx
   obtain ⟨m, hm⟩ := (E.tatePoint_mem_torsionBy_iff Ω u n).mp (hp ▸ P.property)
   exact ⟨u, m, hp, hm⟩
+
+omit [DecidableEq Ω] in
+/-- The Tate parameter has infinite order, also after extending the coefficient field. -/
+theorem qUnitSepClosure_not_isOfFinOrder : ¬ IsOfFinOrder (E.qUnitSepClosure Ω) := by
+  rw [isOfFinOrder_iff_pow_eq_one]
+  rintro ⟨n, hn, heq⟩
+  have hk : E.q ^ n = 1 := by
+    apply (algebraMap k Ω).injective
+    have h := congrArg (fun u : Ωˣ ↦ (u : Ω)) heq
+    simpa [qUnitSepClosure, qUnit] using h
+  have hv := congrArg (valuation k) hk
+  rw [map_pow, map_one] at hv
+  exact (pow_lt_one₀ zero_le E.valuation_q_lt_one hn.ne').ne hv
+
+/-- Equal Tate points have the same torsion exponent modulo `n`. -/
+theorem tatePoint_exponent_eq {n : ℕ} {u v : Ωˣ} {a b : ℤ}
+    (hu : u ^ n = E.qUnitSepClosure Ω ^ a)
+    (hv : v ^ n = E.qUnitSepClosure Ω ^ b)
+    (h : E.tatePoint Ω u = E.tatePoint Ω v) : (a : ZMod n) = b := by
+  have hquot : (u : Ωˣ ⧸ Subgroup.zpowers (E.qUnitSepClosure Ω)) = v :=
+    (E.tateEquivSepClosure Ω).injective h
+  obtain ⟨c, hc⟩ := QuotientGroup.eq_iff_div_mem.mp hquot
+  dsimp only at hc
+  have hp : E.qUnitSepClosure Ω ^ (c * n) = E.qUnitSepClosure Ω ^ (a - b) := by
+    rw [zpow_mul, zpow_natCast, hc, div_pow, hu, hv, zpow_sub, div_eq_mul_inv]
+  have hab : c * n = a - b :=
+    (injective_zpow_iff_not_isOfFinOrder.mpr (E.qUnitSepClosure_not_isOfFinOrder Ω)) hp
+  have hz : ((a - b : ℤ) : ZMod n) = 0 := by
+    rw [← hab]
+    simp
+  apply sub_eq_zero.mp
+  simpa only [Int.cast_sub] using hz
+
+/-- The exponent modulo `n` of any unit representative of a Tate torsion point. -/
+noncomputable def tateTorsionExponent (n : ℕ)
+    (P : AddSubgroup.torsionBy (E⁄Ω).Point (n : ℤ)) : ZMod n :=
+  ((E.exists_tatePoint_torsionBy_rep Ω n P).choose_spec.choose : ℤ)
+
+/-- Compute the exponent map using any representative, independently of its choice. -/
+theorem tateTorsionExponent_eq {n : ℕ}
+    (P : AddSubgroup.torsionBy (E⁄Ω).Point (n : ℤ)) (u : Ωˣ) (m : ℤ)
+    (hu : E.tatePoint Ω u = P) (hm : u ^ n = E.qUnitSepClosure Ω ^ m) :
+    E.tateTorsionExponent Ω n P = m := by
+  let h := E.exists_tatePoint_torsionBy_rep Ω n P
+  exact E.tatePoint_exponent_eq Ω h.choose_spec.choose_spec.2 hm
+    (h.choose_spec.choose_spec.1.trans hu.symm)
+
+/-- The Tate torsion exponent is an additive map to `ℤ/nℤ`. -/
+noncomputable def tateTorsionQuotient (n : ℕ) :
+    AddSubgroup.torsionBy (E⁄Ω).Point (n : ℤ) →+ ZMod n where
+  toFun := E.tateTorsionExponent Ω n
+  map_zero' := by
+    rw [← Int.cast_zero]
+    apply E.tateTorsionExponent_eq Ω _ 1 0
+    · exact (E.tateEquivSepClosure Ω).map_zero
+    · simp
+  map_add' P Q := by
+    obtain ⟨u, a, hu, ha⟩ := E.exists_tatePoint_torsionBy_rep Ω n P
+    obtain ⟨v, b, hv, hb⟩ := E.exists_tatePoint_torsionBy_rep Ω n Q
+    rw [E.tateTorsionExponent_eq Ω P u a hu ha,
+      E.tateTorsionExponent_eq Ω Q v b hv hb]
+    rw [← Int.cast_add]
+    apply E.tateTorsionExponent_eq Ω (P + Q) (u * v) (a + b)
+    · rw [E.tatePoint_mul, hu, hv]
+      rfl
+    · rw [mul_pow, ha, hb, zpow_add]
 
 end WeierstrassCurve
