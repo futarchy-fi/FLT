@@ -5,6 +5,7 @@ Authors: krandder
 -/
 module
 
+public import FLT.FreyCurve.Serre.RootsOfUnityInertia
 public import FLT.KnownIn1980s.EllipticCurves.TateCurve
 
 /-!
@@ -70,5 +71,20 @@ theorem exists_rootOfUnity_tatePoint_sub {n : ℕ} (σ : Ω ≃ₐ[k] Ω)
     rw [← map_sub]
     apply congrArg
     exact QuotientGroup.mk_div _ (τ u) u
+
+/-- Inertia acts square-unipotently on prime-to-residue-characteristic torsion of
+a curve with split multiplicative reduction, by Tate uniformization. -/
+theorem inertia_sub_sub_eq_zero_of_split_multiplicative
+    (A : ValuationSubring Ω) {n : ℕ} (hn : IsUnit (n : A))
+    (σ : A.decompositionSubgroup k) (hσ : σ ∈ A.inertiaSubgroup k)
+    (P : (E⁄Ω).Point) (hP : n • P = 0) :
+    Affine.Point.map (σ : Ω ≃ₐ[k] Ω).toAlgHom
+        (Affine.Point.map (σ : Ω ≃ₐ[k] Ω).toAlgHom P - P) -
+      (Affine.Point.map (σ : Ω ≃ₐ[k] Ω).toAlgHom P - P) = 0 := by
+  obtain ⟨ζ, hζ, hPζ⟩ := E.exists_rootOfUnity_tatePoint_sub Ω (σ : Ω ≃ₐ[k] Ω) P hP
+  have hfix : Units.map (σ : Ω ≃ₐ[k] Ω).toAlgHom.toRingHom.toMonoidHom ζ = ζ := by
+    apply Units.ext
+    exact A.inertia_fixes_of_pow_eq_one hn σ hσ (congrArg Units.val hζ)
+  rw [← hPζ, E.tatePoint_galois, hfix, sub_self]
 
 end WeierstrassCurve
