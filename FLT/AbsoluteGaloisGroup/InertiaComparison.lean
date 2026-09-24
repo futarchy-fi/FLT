@@ -287,4 +287,26 @@ omit [Normal K L] in
 lemma localInducedPrime_ne_bot : localInducedPrime v L ≠ ⊥ :=
   Ideal.ne_bot_of_liesOver_of_ne_bot v.ne_bot _
 
+open scoped Pointwise in
+/-- Restriction of any local automorphism preserves the induced global prime. -/
+lemma localRestriction_mem_stabilizer (σ : Field.absoluteGaloisGroup Kᵥ) :
+    localRestriction v L σ ∈ MulAction.stabilizer Gal(L/K) (localInducedPrime v L) := by
+  rw [MulAction.mem_stabilizer_iff]
+  ext x
+  rw [Ideal.mem_pointwise_smul_iff_inv_smul_mem]
+  change localIntegersMap v L ((localRestriction v L σ)⁻¹ • x) ∈
+      IsLocalRing.maximalIdeal Aᵥ ↔ localIntegersMap v L x ∈ IsLocalRing.maximalIdeal Aᵥ
+  rw [← map_inv, localIntegersMap_equivariant]
+  simp only [IsLocalRing.mem_maximalIdeal, mem_nonunits_iff]
+  exact not_congr (MulEquiv.isUnit_map
+    (MulSemiringAction.toAlgEquiv 𝒪ᵥ Aᵥ σ⁻¹).toMulEquiv)
+
+open scoped Pointwise in
+/-- The local restriction map takes values in the decomposition group of the induced prime. -/
+lemma localRestriction_range_le_stabilizer :
+    (localRestriction v L).range ≤
+      MulAction.stabilizer Gal(L/K) (localInducedPrime v L) := by
+  rintro _ ⟨σ, rfl⟩
+  exact localRestriction_mem_stabilizer v L σ
+
 end NumberField.InertiaComparison
