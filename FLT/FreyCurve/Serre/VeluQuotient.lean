@@ -79,4 +79,37 @@ theorem exists_torsionQuotient_curve [E.IsElliptic] (hn : 0 < n)
     @Fintype.ofFinite _ (torsionKernel_finite E n q hn)
   exact exists_curve E (torsionKernel E n q) (torsionKernel_stable E n q hfixed)
 
+/-- Landing and additivity of the explicit Vélu map suffice for the rational maps in Serre's
+quotient branch. The kernel and Galois compatibility are proved, rather than supplied as
+additional geometric hypotheses. Ellipticity of the target remains a separate obligation. -/
+theorem rational_maps_of_velu [Fintype (torsionKernel E n q)]
+    (hq : Function.Surjective q)
+    (hfixed : ∀ g t, q (E.torsionGaloisRepresentation n g t) = q t)
+    (E' : WeierstrassCurve ℚ)
+    (h : ∀ P, P ∉ torsionKernel E n q → (E'⁄(AlgebraicClosure ℚ)).Nonsingular
+      (xMap (E⁄(AlgebraicClosure ℚ)) (torsionKernel E n q) P)
+      (yMap (E⁄(AlgebraicClosure ℚ)) (torsionKernel E n q) P))
+    (hadd : ∀ P Q,
+      pointMap (E⁄(AlgebraicClosure ℚ)) (torsionKernel E n q) (E'⁄(AlgebraicClosure ℚ)) h
+          (P + Q) =
+        pointMap (E⁄(AlgebraicClosure ℚ)) (torsionKernel E n q) (E'⁄(AlgebraicClosure ℚ)) h P +
+        pointMap (E⁄(AlgebraicClosure ℚ)) (torsionKernel E n q) (E'⁄(AlgebraicClosure ℚ)) h Q) :
+    ∃ (φ : (E⁄ℚ).Point →+ (E'⁄ℚ).Point) (f : ZMod n →+ (E'⁄ℚ).Point),
+      (∀ a, φ a = 0 → n • a = 0) ∧ Function.Injective f := by
+  let ψ : (E⁄(AlgebraicClosure ℚ)).Point →+ (E'⁄(AlgebraicClosure ℚ)).Point := {
+    toFun := pointMap (E⁄(AlgebraicClosure ℚ)) (torsionKernel E n q)
+      (E'⁄(AlgebraicClosure ℚ)) h
+    map_zero' := pointMap_zero _ _ _ h
+    map_add' := hadd }
+  have hψ (g : Field.absoluteGaloisGroup ℚ) (P : (E⁄(AlgebraicClosure ℚ)).Point) :
+      ψ (Affine.Point.map (W' := E) g.toAlgHom P) =
+        Affine.Point.map (W' := E') g.toAlgHom (ψ P) :=
+    pointMap_map E (torsionKernel E n q) E' h (torsionKernel_stable E n q hfixed) g P
+  have hker (P : (E⁄(AlgebraicClosure ℚ)).Point) :
+      ψ P = 0 ↔ ∃ t, q t = 0 ∧ t.val = P :=
+    (pointMap_eq_zero_iff _ _ _ h P).trans (mem_torsionKernel E n q P)
+  obtain ⟨φ, f, hφ, hf, _, _⟩ :=
+    rational_maps_of_trivial_quotient_of_geometric_map E E' n q hq hfixed ψ hψ hker
+  exact ⟨φ, f, hφ, hf⟩
+
 end WeierstrassCurve.Velu
