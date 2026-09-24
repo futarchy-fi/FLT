@@ -2280,6 +2280,7 @@ open scoped Polynomial.Bivariate
 namespace WeierstrassCurve
 variable {k : Type*} [Field k] (E : WeierstrassCurve k)
 variable {x y : k} (h : E.toAffine.Equation x y)
+/-- Evaluation of the affine coordinate ring at the point `(x, y)` on `E`. -/
 noncomputable def pointEval : E.toAffine.CoordinateRing →+* k :=
   AdjoinRoot.evalEval h
 lemma pointEval_mk (p : k[X][Y]) :
