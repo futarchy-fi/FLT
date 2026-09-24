@@ -28,7 +28,12 @@ theorem PNat.pow_add_pow_ne_pow
   PNat.pow_add_pow_ne_pow_of_FermatLastTheorem flt x y z n hn
 
 /--
-info: 'PNat.pow_add_pow_ne_pow' depends on axioms: [knownin1980s, propext, sorryAx, Classical.choice, Quot.sound]
+info: 'PNat.pow_add_pow_ne_pow' depends on axioms: [Mazur_statement,
+ knownin1980s,
+ propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
 -/
 #guard_msgs in
 #print axioms PNat.pow_add_pow_ne_pow

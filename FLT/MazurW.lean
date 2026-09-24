@@ -7,6 +7,7 @@ module
 
 public import Mathlib.GroupTheory.Torsion
 public import Mathlib.AlgebraicGeometry.EllipticCurve.Affine.Point
+public import FLT.Assumptions.Mazur
 
 /-!
 # Mazur's torsion theorem interfaces
@@ -23,7 +24,25 @@ theorem mazur_W (ℓ : ℕ) (hℓ : ℓ.Prime) (hℓ17 : 17 ≤ ℓ)
     (E : WeierstrassCurve ℚ) [E.IsElliptic] :
     ¬ ∃ f : ((ZMod 2 × ZMod 2) × ZMod ℓ) →+ (E⁄ℚ).Point,
       Function.Injective f := by
-  sorry
+  rintro ⟨f, hf⟩
+  let : NeZero ℓ := ⟨hℓ.ne_zero⟩
+  let α := ((ZMod 2 × ZMod 2) × ZMod ℓ)
+  let T : Set (E⁄ℚ).Point := AddCommGroup.torsion (E⁄ℚ).Point
+  have hMT := Mazur_statement E
+  have hfin : T.Finite := hMT.1
+  have hbound : T.ncard ≤ 16 := hMT.2
+  have himage : f '' (Set.univ : Set α) ⊆ T := by
+    rintro y ⟨x, _, rfl⟩
+    change f x ∈ AddCommGroup.torsion (E⁄ℚ).Point
+    exact f.isOfFinAddOrder (isOfFinAddOrder_of_finite x)
+  have hlow : Nat.card α ≤ T.ncard := by
+    rw [← Set.ncard_univ, ← Set.ncard_image_of_injective _ hf]
+    exact Set.ncard_le_ncard himage hfin
+  have hα : Nat.card α = 4 * ℓ := by
+    simp [α]
+  rw [hα] at hlow
+  have h68 : 68 ≤ 4 * ℓ := by omega
+  omega
 /-- Cartography node W, large-prime projection: an elliptic curve over `ℚ` has
 no rational point of prime order `ℓ ≥ 11`.  This is a useful stronger Mazur
 chapter interface; the FLT spine consumes only `mazur_W` at exponents at least

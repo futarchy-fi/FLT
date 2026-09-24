@@ -93,14 +93,13 @@ The github tracking issue for this assumption is #477 on the FLT github reposito
 
 open scoped WeierstrassCurve.Affine -- E⟮ℚ⟯ notation
 
--- Implementation note: The `ncard` function used in the axiom returns the junk
--- value 0 if it is fed an infinite set, so the axiom as it stands actually
--- says "the size of the torsion subgroup is either at most 16, or infinite".
--- However it is well-known (and much much much easier than Mazur's theorem)
--- that the torsion subgroup is finite, so the axiom as stated will suffice
--- for the application to FLT.
+-- Implementation note: the finiteness conjunct is explicit because `ncard`
+-- returns the junk value 0 on an infinite set.  Mazur's theorem classifies
+-- the 15 finite torsion groups that can occur over `ℚ`, and in particular
+-- bounds their cardinality by 16.
 
 /-- Mazur's bound for the size of the torsion subgroup of an elliptic curve
 over the rationals . -/
 axiom Mazur_statement (E : WeierstrassCurve ℚ) [E.IsElliptic] :
-    (AddCommGroup.torsion (E⁄ℚ).Point : Set (E⁄ℚ).Point).ncard ≤ 16
+    Finite (AddCommGroup.torsion (E⁄ℚ).Point) ∧
+      (AddCommGroup.torsion (E⁄ℚ).Point : Set (E⁄ℚ).Point).ncard ≤ 16
