@@ -5,7 +5,7 @@ Authors: Kelvin Santos
 -/
 module
 
-public import FLT.Deformations.RepresentationTheory.AbsoluteGaloisGroup
+public import FLT.AbsoluteGaloisGroup.InertiaComparison
 public import FLT.DedekindDomain.AdicValuation
 public import Mathlib.RingTheory.RootsOfUnity.AlgebraicallyClosed
 
@@ -458,24 +458,6 @@ lemma localTameAbelianInertiaGroup_subgroupOf_le_tameCharacter_ker :
     rw [tameUniformizerRoot_spec]
     exact IntermediateField.algebraMap_mem _ _
 
-private noncomputable def integralClosureMap
-    {R E L : Type*} [CommRing R] [CommRing E] [CommRing L]
-    [Algebra R E] [Algebra R L] (f : E →ₐ[R] L) :
-    IntegralClosure R E →+* IntegralClosure R L where
-  toFun x := ⟨f x.1, x.2.map f⟩
-  map_zero' := Subtype.ext (map_zero f)
-  map_one' := Subtype.ext (map_one f)
-  map_add' x y := Subtype.ext (map_add f x.1 y.1)
-  map_mul' x y := Subtype.ext (map_mul f x.1 y.1)
-
-private lemma integralClosureMap_injective
-    {R E L : Type*} [CommRing R] [CommRing E] [CommRing L]
-    [Algebra R E] [Algebra R L] (f : E →ₐ[R] L) (hf : Function.Injective f) :
-    Function.Injective (integralClosureMap f) := by
-  intro x y h
-  apply Subtype.ext
-  exact hf (congrArg Subtype.val h)
-
 private lemma flatOfDedekindOfTorsionFree
     {R M : Type*} [CommRing R] [AddCommGroup M] [Module R M]
     [IsDedekindDomain R] [Module.IsTorsionFree R M] : Module.Flat R M :=
@@ -596,7 +578,7 @@ private lemma finiteInertiaField_ramificationIdx_eq_one
   have hq : q ≠ ⊥ := Ideal.ne_bot_of_liesOver_of_ne_bot hp q
   letI : Finite (D ⧸ q) := Ring.HasFiniteQuotients.finiteQuotient hq
   let eEL : E →ₐ[𝒪ᵥ] L := E.val.restrictScalars 𝒪ᵥ
-  letI : Algebra D B := (integralClosureMap eEL).toAlgebra
+  letI : Algebra D B := (IntegralClosure.map eEL).toAlgebra
   letI : IsScalarTower 𝒪ᵥ D B := IsScalarTower.of_algebraMap_eq' <| by
     ext r
     rfl
@@ -608,13 +590,13 @@ private lemma finiteInertiaField_ramificationIdx_eq_one
   letI : Module.IsTorsionFree D B := by
     rw [Module.isTorsionFree_iff_faithfulSMul]
     rw [faithfulSMul_iff_algebraMap_injective]
-    exact integralClosureMap_injective eEL eEL.injective
+    exact IntegralClosure.map_injective eEL eEL.injective
   letI : Module.Flat D B := by
     exact @flatOfDedekindOfTorsionFree D B _ _ Algebra.toModule _
       (by exact this)
   letI : FaithfulSMul D B := by
     rw [faithfulSMul_iff_algebraMap_injective]
-    exact integralClosureMap_injective eEL eEL.injective
+    exact IntegralClosure.map_injective eEL eEL.injective
   letI : Module.Finite D B := Module.Finite.of_restrictScalars_finite 𝒪ᵥ D B
   letI : SMulDistribClass H B L := ⟨fun g b l ↦ by
     simp only [Algebra.smul_def, smul_mul', mul_eq_mul_right_iff]
@@ -644,141 +626,6 @@ private lemma finiteInertiaField_ramificationIdx_eq_one
   have hpos : 0 < Module.finrank E L := Module.finrank_pos
   apply Nat.eq_of_mul_eq_mul_right hpos
   simpa using htower.symm
-
-set_option maxHeartbeats 1000000 in
--- The profinite Galois-action and residue-field instances require extended elaboration time.
-set_option synthInstance.maxHeartbeats 100000 in
-set_option linter.style.haveILetI false in
-private lemma map_localInertiaGroup_eq_finiteInertia
-    (N : OpenNormalSubgroup (Γ Kᵥ)) :
-    Subgroup.map
-        (AlgEquiv.restrictNormalHom
-          (IntermediateField.fixedField N.1.1 : IntermediateField Kᵥ (Kᵥᵃˡᵍ)))
-        (localInertiaGroup v) =
-      (IsLocalRing.maximalIdeal
-        (IntegralClosure 𝒪ᵥ (IntermediateField.fixedField N.1.1))).inertia
-        Gal(IntermediateField.fixedField N.1.1/Kᵥ) := by
-  let L : IntermediateField Kᵥ (Kᵥᵃˡᵍ) := IntermediateField.fixedField N.1.1
-  let B := IntegralClosure 𝒪ᵥ L
-  let A := IntegralClosure 𝒪ᵥ (Kᵥᵃˡᵍ)
-  let P := IsLocalRing.maximalIdeal B
-  let M := IsLocalRing.maximalIdeal A
-  let C : ClosedSubgroup (Γ Kᵥ) := ⟨N.1.1, N.toOpenSubgroup.isClosed⟩
-  letI : FiniteDimensional Kᵥ L := by
-    rw [← InfiniteGalois.isOpen_iff_finite]
-    rw [InfiniteGalois.fixingSubgroup_fixedField
-      (⟨N.1.1, N.toOpenSubgroup.isClosed⟩ : ClosedSubgroup (Γ Kᵥ))]
-    exact N.isOpen'
-  letI : IsGalois Kᵥ L := by
-    rw [← InfiniteGalois.normal_iff_isGalois]
-    rw [InfiniteGalois.fixingSubgroup_fixedField
-      (⟨N.1.1, N.toOpenSubgroup.isClosed⟩ : ClosedSubgroup (Γ Kᵥ))]
-    infer_instance
-  let i : L →ₐ[𝒪ᵥ] (Kᵥᵃˡᵍ) := L.val.restrictScalars 𝒪ᵥ
-  letI : Algebra B A := (integralClosureMap i).toAlgebra
-  letI : IsScalarTower 𝒪ᵥ B A := IsScalarTower.of_algebraMap_eq' <| by
-    ext r
-    rfl
-  letI : Algebra B (Kᵥᵃˡᵍ) :=
-    (i.toRingHom.comp (algebraMap B L)).toAlgebra
-  letI : IsScalarTower B L (Kᵥᵃˡᵍ) := IsScalarTower.of_algebraMap_eq' rfl
-  letI : IsScalarTower B A (Kᵥᵃˡᵍ) := IsScalarTower.of_algebraMap_eq' <| by
-    ext r
-    rfl
-  letI : Algebra.IsIntegral B A := ⟨fun x ↦
-    (Algebra.IsIntegral.isIntegral (R := 𝒪ᵥ) x).tower_top⟩
-  letI : FaithfulSMul B A := by
-    rw [faithfulSMul_iff_algebraMap_injective]
-    exact integralClosureMap_injective i i.injective
-  letI : IsFractionRing B L := by
-    dsimp only [B]
-    delta IntegralClosure
-    exact integralClosure.isFractionRing_of_finite_extension Kᵥ L
-  letI : IsFractionRing A (Kᵥᵃˡᵍ) := by
-    letI : Algebra.IsAlgebraic 𝒪ᵥ (Kᵥᵃˡᵍ) :=
-      (IsFractionRing.comap_isAlgebraic_iff
-        (A := 𝒪ᵥ) (K := Kᵥ) (C := Kᵥᵃˡᵍ)).mpr
-        (inferInstance : Algebra.IsAlgebraic Kᵥ (Kᵥᵃˡᵍ))
-    dsimp only [A]
-    delta IntegralClosure
-    exact integralClosure.isFractionRing_of_algebraic fun x hx ↦ by
-      apply Subtype.ext
-      apply (algebraMap Kᵥ (Kᵥᵃˡᵍ)).injective
-      have hx' := hx
-      change (algebraMap Kᵥ (Kᵥᵃˡᵍ)) (x : Kᵥ) = 0 at hx'
-      exact hx'.trans (map_zero (algebraMap Kᵥ (Kᵥᵃˡᵍ))).symm
-  letI : CompactSpace C.toSubgroup :=
-    isCompact_iff_compactSpace.mp C.isClosed'.isCompact
-  letI : TopologicalSpace A := ⊥
-  letI : DiscreteTopology A := ⟨rfl⟩
-  letI : SMulDistribClass C.toSubgroup A (Kᵥᵃˡᵍ) := ⟨fun g a x ↦ by
-    simp only [Algebra.smul_def, smul_mul', mul_eq_mul_right_iff]
-    left
-    rfl⟩
-  haveI : IsGaloisGroup C.toSubgroup L (Kᵥᵃˡᵍ) := by
-    exact IsGaloisGroup.subgroup (Γ Kᵥ) Kᵥ (Kᵥᵃˡᵍ) N.1.1
-  letI : IsGaloisGroup C.toSubgroup B A :=
-    IsGaloisGroup.of_isFractionRing C.toSubgroup B A L (Kᵥᵃˡᵍ)
-  letI : ContinuousSMul C.toSubgroup A := by infer_instance
-  letI : M.LiesOver P := by dsimp only [M, P]; infer_instance
-  change Subgroup.map (AlgEquiv.restrictNormalHom L) (localInertiaGroup v) =
-    P.inertia Gal(L/Kᵥ)
-  apply le_antisymm
-  · rintro τ ⟨σ, hσ, rfl⟩
-    rw [AddSubgroup.mem_inertia]
-    intro b
-    change (AlgEquiv.restrictNormalHom L σ) • b - b ∈ P
-    rw [Ideal.mem_of_liesOver M P]
-    rw [map_sub]
-    have hcompat : algebraMap B A ((AlgEquiv.restrictNormalHom L σ) • b) =
-        σ • (algebraMap B A b) := by
-      apply Subtype.ext
-      exact AlgEquiv.restrictNormalHom_apply L σ b.1
-    rw [hcompat]
-    exact hσ (algebraMap B A b)
-  · intro τ hτ
-    obtain ⟨σ, hσ⟩ := AlgEquiv.restrictNormalHom_surjective (Kᵥᵃˡᵍ) τ
-    let eA : A ≃ₐ[𝒪ᵥ] A := MulSemiringAction.toAlgEquiv 𝒪ᵥ A σ
-    have hmapM : M = M.map eA :=
-      (IsLocalRing.map_ringEquiv_maximalIdeal eA.toRingEquiv).symm
-    let eRes : (A ⧸ M) ≃ₐ[B ⧸ P] (A ⧸ M) := {
-      __ := Ideal.quotientEquiv M M eA.toRingEquiv hmapM
-      commutes' := by
-        rintro ⟨b⟩
-        apply (Ideal.Quotient.mk_eq_mk_iff_sub_mem _ _).mpr
-        change eA (algebraMap B A b) - algebraMap B A b ∈ M
-        have hb : algebraMap B A (τ • b) - algebraMap B A b ∈ M := by
-          rw [← map_sub, ← Ideal.mem_of_liesOver M P]
-          exact hτ b
-        have hcompat : eA (algebraMap B A b) = algebraMap B A (τ • b) := by
-          apply Subtype.ext
-          change σ ((algebraMap L (Kᵥᵃˡᵍ)) b.1) =
-            (algebraMap L (Kᵥᵃˡᵍ)) (τ b.1)
-          rw [← hσ]
-          exact (AlgEquiv.restrictNormal_commutes σ L b.1).symm
-        rwa [hcompat] }
-    obtain ⟨n, hn⟩ := Ideal.Quotient.stabilizerHom_surjective_of_profinite
-      (G := C.toSubgroup) P M eRes.symm
-    refine ⟨n.1.1 * σ, ?_, ?_⟩
-    · change ∀ a : A, (n.1.1 * σ) • a - a ∈ M
-      intro a
-      apply (Ideal.Quotient.mk_eq_mk_iff_sub_mem _ _).mp
-      have heA : eRes (Ideal.Quotient.mk M a) =
-          Ideal.Quotient.mk M (σ • a) := rfl
-      calc
-        Ideal.Quotient.mk M ((n.1.1 * σ) • a) =
-            Ideal.Quotient.stabilizerHom M P C.toSubgroup n
-              (Ideal.Quotient.mk M (σ • a)) := by rw [mul_smul]; rfl
-        _ = eRes.symm (Ideal.Quotient.mk M (σ • a)) := by rw [hn]
-        _ = eRes.symm (eRes (Ideal.Quotient.mk M a)) := by rw [heA]
-        _ = Ideal.Quotient.mk M a := eRes.symm_apply_apply _
-    · have hnres : AlgEquiv.restrictNormalHom L n.1.1 = 1 := by
-        apply AlgEquiv.ext
-        intro x
-        apply Subtype.ext
-        exact (AlgEquiv.restrictNormal_commutes n.1.1 L x).trans
-          (x.2 ⟨n.1.1, n.1.2⟩)
-      rw [map_mul, hnres, hσ, one_mul]
 
 set_option maxHeartbeats 1000000 in
 -- This combines both finite-level constructions, so typeclass synthesis needs the same budget.
@@ -904,7 +751,7 @@ theorem localTameAbelianInertiaGroup_subgroupOf_eq_tameCharacter_ker :
       IsDiscreteValuationRing.exists_units_eq_smul_zpow_of_irreducible hirr haE0
     let j : E →ₐ[𝒪ᵥ] (Kᵥᵃˡᵍ) :=
       (L.val.comp E.val).restrictScalars 𝒪ᵥ
-    letI : Algebra D Aᵥ := (integralClosureMap j).toAlgebra
+    letI : Algebra D Aᵥ := (IntegralClosure.map j).toAlgebra
     letI : IsScalarTower 𝒪ᵥ D Aᵥ := IsScalarTower.of_algebraMap_eq' <| by
       ext r
       rfl
