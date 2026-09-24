@@ -34,3 +34,24 @@ theorem IsLocalRing.eq_of_pow_eq_one_of_residue_eq {R : Type*} [CommRing R]
   · rw [← IsLocalRing.residue_ne_zero_iff_isUnit]
     simp [map_sub, hxy]
   · simpa [derivative_X_pow] using hn.mul (hxunit.pow (n - 1))
+
+/-- Inertia fixes roots of unity whose order is invertible in the valuation ring. -/
+theorem ValuationSubring.inertia_fixes_of_pow_eq_one
+    {K L : Type*} [Field K] [Field L] [Algebra K L]
+    (A : ValuationSubring L) {n : ℕ} (hn : IsUnit (n : A))
+    (σ : A.decompositionSubgroup K) (hσ : σ ∈ A.inertiaSubgroup K)
+    {x : L} (hx : x ^ n = 1) : (σ : L ≃ₐ[K] L) x = x := by
+  have hn0 : n ≠ 0 := by rintro rfl; simp at hn
+  have hxmem : x ∈ A := by
+    apply A.mem_of_valuation_le_one
+    apply (pow_le_one_iff hn0).mp
+    rw [← map_pow, hx, map_one]
+  let y : A := ⟨x, hxmem⟩
+  have hy : y ^ n = 1 := Subtype.ext hx
+  have hres : σ • IsLocalRing.residue A y = IsLocalRing.residue A y :=
+    congrArg (fun f : RingAut (IsLocalRing.ResidueField A) ↦
+      f (IsLocalRing.residue A y)) hσ
+  have heq : σ • y = y := IsLocalRing.eq_of_pow_eq_one_of_residue_eq hn
+    (by rw [← smul_pow', hy, smul_one]) hy
+    (by rw [IsLocalRing.ResidueField.residue_smul, hres])
+  exact congrArg Subtype.val heq
