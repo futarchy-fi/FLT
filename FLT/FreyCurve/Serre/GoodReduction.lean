@@ -152,4 +152,34 @@ theorem torsion_add_eq_zero_of_reduction_eq_neg
       linear_combination hsρ
     · exact hns hy
 
+/-- Reduction is injective on integral prime-to-residue-characteristic torsion
+whenever the common reduced point is nonsingular. -/
+theorem torsion_eq_of_reduction_eq {R K k : Type*} [CommRing R] [IsDomain R] [IsIntegrallyClosed R]
+    [Field K] [Algebra R K] [IsFractionRing R K] [DecidableEq K] [Field k]
+    (W : WeierstrassCurve R) (ρ : R →+* k) {n : ℕ} (hn : IsUnit (n : R))
+    (x₁ x₂ y₁ y₂ : R)
+    (h₁ : (W.map (algebraMap R K)).toAffine.Nonsingular
+      (algebraMap R K x₁) (algebraMap R K y₁))
+    (h₂ : (W.map (algebraMap R K)).toAffine.Nonsingular
+      (algebraMap R K x₂) (algebraMap R K y₂))
+    (hn₁ : n • Affine.Point.some _ _ h₁ = 0)
+    (hn₂ : n • Affine.Point.some _ _ h₂ = 0)
+    (hred : (W.map ρ).toAffine.Nonsingular (ρ x₁) (ρ y₁))
+    (hx : ρ x₁ = ρ x₂) (hy : ρ y₁ = ρ y₂) :
+    Affine.Point.some _ _ h₁ = Affine.Point.some _ _ h₂ := by
+  let hneg : (W.map (algebraMap R K)).toAffine.Nonsingular
+      (algebraMap R K x₂) (algebraMap R K (W.toAffine.negY x₂ y₂)) := by
+    rw [← W.toAffine.map_negY]
+    exact (Affine.nonsingular_neg _ _).mpr h₂
+  have heq : Affine.Point.some _ _ hneg = -Affine.Point.some _ _ h₂ := by
+    simp only [Affine.Point.neg_some, ← W.toAffine.map_negY]
+  apply sub_eq_zero.mp
+  rw [sub_eq_add_neg, ← heq]
+  apply W.torsion_add_eq_zero_of_reduction_eq_neg ρ hn x₁ x₂ y₁
+    (W.toAffine.negY x₂ y₂) h₁ hneg hn₁
+  · rw [heq, smul_neg, hn₂, neg_zero]
+  · exact hred
+  · exact hx
+  · rw [← W.toAffine.map_negY, Affine.negY_negY, hy]
+
 end WeierstrassCurve
