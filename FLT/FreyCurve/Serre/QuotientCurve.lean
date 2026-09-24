@@ -66,4 +66,63 @@ theorem rational_torsion_of_trivial_quotient_image
   exact (hf a).symm.trans
     ((congrArg (Affine.Point.baseChange ℚ (AlgebraicClosure ℚ)) hab).trans (hf b))
 
+/-- A geometric point homomorphism with kernel exactly the kernel of a trivial torsion
+quotient supplies both rational maps required by Serre's quotient branch.
+
+The target curve and geometric map are hypotheses: the missing quotient-isogeny existence
+theorem must construct them. The conclusion uses neither surjectivity on rational points
+nor a dual isogeny. -/
+theorem rational_maps_of_trivial_quotient_of_geometric_map
+    (E E' : WeierstrassCurve ℚ) (n : ℕ)
+    (q : (E.map (algebraMap ℚ (AlgebraicClosure ℚ))).nTorsion n →ₗ[ZMod n] ZMod n)
+    (hq : Function.Surjective q)
+    (hfixed : ∀ g v, q (E.torsionGaloisRepresentation n g v) = q v)
+    (ψ : (E⁄(AlgebraicClosure ℚ)).Point →+ (E'⁄(AlgebraicClosure ℚ)).Point)
+    (hψ : ∀ (g : Field.absoluteGaloisGroup ℚ) v,
+      ψ (Affine.Point.map (W' := E) g.toAlgHom v) =
+        Affine.Point.map (W' := E') g.toAlgHom (ψ v))
+    (hker : ∀ v, ψ v = 0 ↔
+      ∃ t : (E.map (algebraMap ℚ (AlgebraicClosure ℚ))).nTorsion n,
+        q t = 0 ∧ t.val = v) :
+    ∃ (φ : (E⁄ℚ).Point →+ (E'⁄ℚ).Point) (f : ZMod n →+ (E'⁄ℚ).Point),
+      (∀ a, φ a = 0 → n • a = 0) ∧ Function.Injective f ∧
+      (∀ a, Affine.Point.baseChange ℚ (AlgebraicClosure ℚ) (φ a) =
+        ψ (Affine.Point.baseChange ℚ (AlgebraicClosure ℚ) a)) ∧
+      (∀ t, Affine.Point.baseChange ℚ (AlgebraicClosure ℚ) (f (q t)) = ψ t.val) := by
+  let ψt := ψ.comp
+    (Submodule.torsionBy ℤ (E⁄(AlgebraicClosure ℚ)).Point n).subtype.toAddMonoidHom
+  have hkert : q.toAddMonoidHom.ker = ψt.ker := by
+    ext t
+    change q t = 0 ↔ ψ t.val = 0
+    constructor
+    · intro ht
+      exact (hker t.val).mpr ⟨t, ht, rfl⟩
+    · intro ht
+      obtain ⟨s, hs, hst⟩ := (hker t.val).mp ht
+      exact (congrArg q (Subtype.ext hst)).symm.trans hs
+  obtain ⟨f, hf, hfq⟩ := rational_torsion_of_trivial_quotient_image E E' n q hq hfixed
+    ψt (fun g t ↦ hψ g t.val) hkert
+  let ψ₀ := ψ.comp (Affine.Point.baseChange ℚ (AlgebraicClosure ℚ))
+  have hψ₀ (g : Field.absoluteGaloisGroup ℚ) (a : (E⁄ℚ).Point) :
+      Affine.Point.map (W' := E') g.toAlgHom (ψ₀ a) = ψ₀ a := by
+    change Affine.Point.map (W' := E') g.toAlgHom
+      (ψ (Affine.Point.baseChange ℚ (AlgebraicClosure ℚ) a)) = _
+    rw [← hψ, Affine.Point.map_baseChange]
+    rfl
+  obtain ⟨φ, hφ⟩ := E'.exists_addHom_of_galois_fixed ψ₀ hψ₀
+  change ∀ a, Affine.Point.baseChange ℚ (AlgebraicClosure ℚ) (φ a) =
+    ψ (Affine.Point.baseChange ℚ (AlgebraicClosure ℚ) a) at hφ
+  refine ⟨φ, f, ?_, hf, hφ, hfq⟩
+  intro a ha
+  have hψa : ψ (Affine.Point.baseChange ℚ (AlgebraicClosure ℚ) a) = 0 := by
+    rw [← hφ, ha, map_zero]
+  obtain ⟨t, _, ht⟩ := (hker _).mp hψa
+  apply Affine.Point.map_injective (W' := E.toAffine)
+    (Algebra.ofId ℚ (AlgebraicClosure ℚ))
+  change Affine.Point.baseChange ℚ (AlgebraicClosure ℚ) (n • a) =
+    Affine.Point.baseChange ℚ (AlgebraicClosure ℚ) 0
+  rw [map_nsmul, map_zero, ← ht]
+  change n • t.val = 0
+  simpa only [Submodule.mem_torsionBy_iff, natCast_zsmul] using t.property
+
 end WeierstrassCurve
