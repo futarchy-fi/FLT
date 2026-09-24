@@ -7,7 +7,9 @@ module
 
 public import FLT.EllipticCurve.NTorsionFinite
 public import Mathlib.AlgebraicGeometry.EllipticCurve.DivisionPolynomial.Degree
+public import Mathlib.AlgebraicGeometry.EllipticCurve.Reduction
 public import Mathlib.RingTheory.Valuation.Integral
+public import Mathlib.RingTheory.Valuation.RamificationGroup
 
 /-!
 # Integral coordinates of prime-to-residue-characteristic torsion
@@ -181,5 +183,33 @@ theorem torsion_eq_of_reduction_eq {R K k : Type*} [CommRing R] [IsDomain R] [Is
   · exact hred
   · exact hx
   · rw [← W.toAffine.map_negY, Affine.negY_negY, hy]
+
+/-- A good integral model remains a model with unit discriminant in every
+valuation ring lying above the original discrete valuation ring. -/
+theorem exists_integralModel_over_valuationSubring
+    (R K Ω : Type*) [CommRing R] [IsDomain R] [IsDiscreteValuationRing R]
+    [Field K] [Algebra R K] [IsFractionRing R K]
+    (E : WeierstrassCurve K) [E.HasGoodReduction R]
+    [Field Ω] [Algebra K Ω] (A : ValuationSubring Ω)
+    (hA : (A.comap (algebraMap K Ω)).toSubring = (algebraMap R K).range) :
+    ∃ W : WeierstrassCurve A,
+      W.map (algebraMap A Ω) = E.map (algebraMap K Ω) ∧ IsUnit W.Δ := by
+  let f : R →+* A := ((algebraMap K Ω).comp (algebraMap R K)).codRestrict A (by
+    intro r
+    change algebraMap R K r ∈ (A.comap (algebraMap K Ω)).toSubring
+    rw [hA]
+    exact ⟨r, rfl⟩)
+  refine ⟨(E.integralModel R).map f, ?_, ?_⟩
+  · rw [map_map]
+    have hf : (algebraMap A Ω).comp f = (algebraMap K Ω).comp (algebraMap R K) := rfl
+    rw [hf, ← map_map]
+    congr 1
+    exact E.baseChange_integralModel_eq R
+  · rw [map_Δ]
+    apply IsUnit.map f
+    apply (IsLocalRing.residue_ne_zero_iff_isUnit _).mp
+    have hg : (E.reduction R).IsElliptic :=
+      E.hasGoodReduction_iff_isElliptic_reduction R |>.mp inferInstance
+    exact (isUnit_iff_ne_zero.mp ((E.reduction R).isElliptic_iff.mp hg))
 
 end WeierstrassCurve
