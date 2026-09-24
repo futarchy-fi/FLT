@@ -9,6 +9,7 @@ public import FLT.AbsoluteGaloisGroup.LocalCompositum
 import Mathlib.NumberTheory.RamificationInertia.HilbertTheory
 import Mathlib.RingTheory.Flat.TorsionFree
 import Mathlib.Topology.Algebra.Valued.LocallyCompact
+import Mathlib.RingTheory.Ideal.Quotient.HasFiniteQuotients.Basic
 
 /-!
 # Arithmetic consequences of trivial local inertia
@@ -111,3 +112,25 @@ lemma ramificationIdx_eq_one_of_inertia_eq_bot
     _ = Nat.card (P.inertia Gal(C/Kv)) := (Ideal.card_inertia_eq_ramificationIdxIn p P).symm
     _ = 1 := by rw [h]; simp
 
+
+namespace NumberField.InertiaComparison
+variable {K : Type*} [Field K] [NumberField K]
+variable (v : IsDedekindDomain.HeightOneSpectrum (𝓞 K))
+variable (L : IntermediateField K (AlgebraicClosure K)) [FiniteDimensional K L] [Normal K L]
+
+/-- Trivial local inertia gives ramification index one at the induced global prime. -/
+lemma localInducedPrime_ramificationIdx_eq_one
+    (h : localInertiaGroup v ≤ (localRestriction v L).ker) :
+    (localInducedPrime v L).ramificationIdx (𝓞 K) = 1 := by
+  obtain ⟨w, g, hw, hg⟩ := exists_inducedPrime_completion_embedding v L
+  rw [hw, ramificationIdx_eq_of_completion_equiv v w (localCompositum v L)
+    (completionEquivLocalCompositum v L w g hg)]
+  exact ramificationIdx_eq_one_of_inertia_eq_bot v _ (localCompositum_inertia_eq_bot v L h)
+
+/-- Trivial local inertia implies arithmetic unramifiedness at the induced global prime. -/
+lemma localInducedPrime_isUnramifiedAt
+    (h : localInertiaGroup v ≤ (localRestriction v L).ker) :
+    Algebra.IsUnramifiedAt (𝓞 K) (localInducedPrime v L) := by
+  exact Ideal.ramificationIdx_eq_one_iff.mp (localInducedPrime_ramificationIdx_eq_one v L h)
+
+end NumberField.InertiaComparison
