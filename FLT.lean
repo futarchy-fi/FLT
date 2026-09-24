@@ -101,6 +101,7 @@ public import FLT.FreyCurve.Serre.JoinCoprimeTorsion
 public import FLT.FreyCurve.Serre.QuotientCurve
 public import FLT.FreyCurve.Serre.Velu
 public import FLT.FreyCurve.Serre.VeluMap
+public import FLT.FreyCurve.Serre.VeluQuotient
 public import FLT.GaloisRepresentation.Attachment
 public import FLT.GaloisRepresentation.Automorphic
 public import FLT.GaloisRepresentation.Cyclotomic
