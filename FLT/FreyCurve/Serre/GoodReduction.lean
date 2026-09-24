@@ -12,10 +12,13 @@ public import Mathlib.RingTheory.Valuation.Integral
 public import Mathlib.RingTheory.Valuation.RamificationGroup
 
 /-!
-# Integral coordinates of prime-to-residue-characteristic torsion
+# Inertia on torsion at good reduction
 
 Division polynomials force the coordinates of nonzero torsion points into an
-integrally closed coefficient ring when the torsion order is a unit.
+integrally closed coefficient ring when the torsion order is a unit. The addition
+formula then proves injectivity of nonsingular reduction on torsion, and hence
+`inertia_fixes_torsion_of_good_reduction`: inertia fixes prime-to-residue-characteristic
+torsion at good reduction. No admitted geometric statements are used.
 -/
 
 @[expose] public section
@@ -266,5 +269,21 @@ theorem inertia_fixes_torsion_of_integralModel
     have hcoords := (Affine.Point.some.injEq _ _ _ _ _ _).mp heq
     simp only [Affine.Point.map_some, Affine.Point.some.injEq]
     exact ⟨hcoords.1.symm, hcoords.2.symm⟩
+
+/-- At good reduction, inertia fixes torsion of order invertible in the chosen
+valuation ring. No separable-closure or completeness hypothesis is needed. -/
+theorem inertia_fixes_torsion_of_good_reduction
+    (R K Ω : Type*) [CommRing R] [IsDomain R] [IsDiscreteValuationRing R]
+    [Field K] [Algebra R K] [IsFractionRing R K]
+    (E : WeierstrassCurve K) [E.HasGoodReduction R]
+    [Field Ω] [Algebra K Ω] [DecidableEq Ω]
+    (A : ValuationSubring Ω)
+    (hA : (A.comap (algebraMap K Ω)).toSubring = (algebraMap R K).range)
+    {n : ℕ} (hn : IsUnit (n : A))
+    (σ : A.decompositionSubgroup K) (hσ : σ ∈ A.inertiaSubgroup K)
+    (P : (E⁄Ω).Point) (hP : n • P = 0) :
+    Affine.Point.map (σ : Ω ≃ₐ[K] Ω).toAlgHom P = P := by
+  obtain ⟨W, hW, hΔ⟩ := exists_integralModel_over_valuationSubring R K Ω E A hA
+  exact E.inertia_fixes_torsion_of_integralModel A W hW hΔ hn σ hσ P hP
 
 end WeierstrassCurve
