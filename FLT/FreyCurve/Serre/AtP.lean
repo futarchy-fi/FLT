@@ -67,3 +67,33 @@ theorem one_character_trivial_of_invariant_functional
     exact mul_right_cancel₀ hri heq
 
 end LinearMap
+
+namespace GaloisRep
+
+variable {K k V : Type*} [Field K] [NumberField K]
+  [Field k] [TopologicalSpace k] [AddCommGroup V] [Module k V]
+
+/-- A nonzero inertia-invariant functional on a local representation makes one
+of the characters in a global exact filtration unramified at that place.
+For the Serre at-p argument, the functional must still be constructed from
+the ordinary or multiplicative local theory, with the supersingular case excluded. -/
+theorem one_character_unramifiedAt_of_invariant_functional
+    (ρ : GaloisRep K k V) (χ₁ χ₂ : GaloisRep K k k)
+    (i : k →ₗ[k] V) (q : V →ₗ[k] k)
+    (hexact : LinearMap.range i = LinearMap.ker q)
+    (hi : ∀ g x, ρ g (i x) = i (χ₁ g x))
+    (hq : ∀ g x, q (ρ g x) = χ₂ g (q x))
+    (v : IsDedekindDomain.HeightOneSpectrum (NumberField.RingOfIntegers K))
+    (r : V →ₗ[k] k) (hr : r ≠ 0)
+    (hinv : ∀ g ∈ localInertiaGroup v, ∀ x, r (ρ.toLocal v g x) = r x) :
+    χ₁.IsUnramifiedAt v ∨ χ₂.IsUnramifiedAt v := by
+  have h := LinearMap.one_character_trivial_of_invariant_functional
+    (ρ.toLocal v) (χ₁.toLocal v) (χ₂.toLocal v) i q hexact
+    (fun g x ↦ hi (Field.absoluteGaloisGroup.map (algebraMap K (v.adicCompletion K)) g) x)
+    (fun g x ↦ hq (Field.absoluteGaloisGroup.map (algebraMap K (v.adicCompletion K)) g) x)
+    (localInertiaGroup v : Set _) r hr hinv
+  rcases h with h | h
+  · exact Or.inl ⟨fun g hg ↦ LinearMap.ext (h g hg)⟩
+  · exact Or.inr ⟨fun g hg ↦ LinearMap.ext (h g hg)⟩
+
+end GaloisRep
