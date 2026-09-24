@@ -77,8 +77,9 @@ open IsDedekindDomain.HeightOneSpectrum IsDiscreteValuationRing
 universe u
 
 /-- The integral Frey equation has good or multiplicative reduction over every DVR. -/
-theorem FreyCurve.good_or_multiplicative_integral (P : FreyPackage) (R K : Type u) [CommRing R] [IsDomain R]
-    [IsDiscreteValuationRing R] [Field K] [Algebra R K] [IsFractionRing R K] :
+theorem FreyCurve.good_or_multiplicative_integral (P : FreyPackage) (R K : Type u)
+    [CommRing R] [IsDomain R] [IsDiscreteValuationRing R] [Field K]
+    [Algebra R K] [IsFractionRing R K] :
     let W := (P.freyCurveInt.map (algebraMap ℤ R)).baseChange K
     W.HasGoodReduction R ∨ W.HasMultiplicativeReduction R := by
   dsimp only
@@ -115,3 +116,18 @@ theorem FreyCurve.good_or_multiplicative_integral (P : FreyPackage) (R K : Type 
       rw [← integralModel_Δ_eq R (C • W)]
       exact valuation_le_one _ _
     exact Or.inl { toIsMinimal := hmin, goodReduction := hdval }
+
+/-- The rational Frey curve has good or multiplicative reduction after base change
+to the fraction field of any discrete valuation ring, including at residue characteristic two. -/
+theorem FreyPackage.good_or_multiplicative (P : FreyPackage) (R K : Type u)
+    [CommRing R] [IsDomain R] [IsDiscreteValuationRing R] [Field K]
+    [Algebra R K] [IsFractionRing R K] [Algebra ℚ K] :
+    (P.freyCurve.baseChange K).HasGoodReduction R ∨
+      (P.freyCurve.baseChange K).HasMultiplicativeReduction R := by
+  have hmodel : (P.freyCurveInt.map (algebraMap ℤ R)).baseChange K =
+      P.freyCurve.baseChange K := by
+    rw [← FreyCurve.map P]
+    simp only [baseChange, map_map]
+    congr 1
+    exact Subsingleton.elim _ _
+  simpa only [hmodel] using FreyCurve.good_or_multiplicative_integral P R K
