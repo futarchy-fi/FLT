@@ -29,6 +29,7 @@ public import FLT.AINTLIB.DedekindResidue.ExplicitFormula.TestFunction
 public import FLT.AINTLIB.DedekindResidue.ExplicitFormula.WeilAssembly
 public import FLT.AINTLIB.DedekindResidue.ExplicitFormula.ZeroCapture
 public import FLT.AINTLIB.DedekindResidue.Lemma2
+public import FLT.AbsoluteGaloisGroup.CompletionComparison
 public import FLT.AbsoluteGaloisGroup.InertiaComparison
 public import FLT.AbsoluteGaloisGroup.TameCharacter
 public import FLT.Assumptions.KnownIn1980s
