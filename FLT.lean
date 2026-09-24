@@ -92,6 +92,7 @@ public import FLT.Deformations.Subfunctor
 public import FLT.DivisionAlgebra.Finiteness
 public import FLT.EllipticCurve.NTorsionFinite
 public import FLT.EllipticCurve.Torsion
+public import FLT.EllipticCurve.TorsionStructure
 public import FLT.FreyCurve.Basic
 public import FLT.FreyCurve.FreyPackage
 public import FLT.FreyCurve.Mazur

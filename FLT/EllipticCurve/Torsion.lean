@@ -6,6 +6,7 @@ Authors: Kevin Buzzard
 module
 
 public import FLT.EllipticCurve.NTorsionFinite
+public import FLT.EllipticCurve.TorsionStructure
 public import Mathlib.Topology.Instances.ZMod
 public import Mathlib.Topology.LocallyConstant.Basic
 public import FLT.Deformations.RepresentationTheory.GaloisRep
@@ -61,10 +62,16 @@ theorem WeierstrassCurve.n_torsion_finite {n : ℕ} (hn : 0 < n) : Finite (E.nTo
 theorem WeierstrassCurve.n_torsion_card [IsSepClosed k] {n : ℕ} (hn : (n : k) ≠ 0) :
     Nat.card (E.nTorsion n) = n^2 := sorry
 
--- This theorem was well-known in the early part of the 20th century.
+/-- The prescribed torsion cardinalities characterize a power of the cyclic group of order `n`. -/
 theorem group_theory_lemma {A : Type*} [AddCommGroup A] {n : ℕ} (hn : 0 < n) (r : ℕ)
     (h : ∀ d : ℕ, d ∣ n → Nat.card (Submodule.torsionBy ℤ A d) = d ^ r) :
-    Nonempty ((Submodule.torsionBy ℤ A n) ≃+ (Fin r → (ZMod n))) := sorry
+    Nonempty ((Submodule.torsionBy ℤ A n) ≃+ (Fin r → (ZMod n))) := by
+  apply TorsionCardinality.equiv_of_card hn r
+  · intro x
+    simpa only [natCast_zsmul] using Submodule.smul_torsionBy (n : ℤ) x
+  · intro d hd
+    rw [Nat.card_congr (TorsionCardinality.nested (A := A) hd).toEquiv]
+    exact h d hd
 
 -- I only need this if n is prime but there's no harm thinking about it in general I guess.
 -- It follows from the previous theorem using pure group theory (possibly including the
