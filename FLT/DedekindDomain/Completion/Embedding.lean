@@ -54,7 +54,7 @@ theorem NumberField.fieldRange_eq_adjoin_of_completion_embedding
     (v : IsDedekindDomain.HeightOneSpectrum (𝓞 K))
     {L : Type*} [Field L] [NumberField L] [Algebra K L] [FiniteDimensional K L]
     {Ω : Type*} [Field Ω] [Algebra (v.adicCompletion K) Ω]
-    [Algebra K Ω] [IsScalarTower K (v.adicCompletion K) Ω]
+    [Algebra K Ω]
     (j : L →ₐ[K] Ω) (w : v.Extension (𝓞 L))
     (g : w.1.adicCompletion L →ₐ[v.adicCompletion K] Ω)
     (hg : ∀ x : L, g (algebraMap L _ x) = j x) :
