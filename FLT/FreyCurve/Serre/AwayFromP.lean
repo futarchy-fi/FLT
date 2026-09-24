@@ -64,3 +64,30 @@ theorem eq_one_of_surjective_of_sub_one_sq_eq_zero (f : Module.End k V)
     Module.End.one_apply, map_sub, heq, map_zero, LinearMap.zero_apply] using h
 
 end Module.End
+
+namespace GaloisRep
+variable {K k V : Type*} [Field K] [NumberField K] [Field k] [TopologicalSpace k]
+  [AddCommGroup V] [Module k V]
+
+/-- Square-unipotent inertia acts trivially on both characters of a filtration. -/
+theorem characters_isUnramifiedAt_of_sub_one_sq_eq_zero
+    (ρ : GaloisRep K k V) (χ₁ χ₂ : GaloisRep K k k)
+    (v : IsDedekindDomain.HeightOneSpectrum (NumberField.RingOfIntegers K))
+    (i : k →ₗ[k] V) (q : V →ₗ[k] k)
+    (hi : Function.Injective i) (hq : Function.Surjective q)
+    (hi_eq : ∀ g x, ρ g (i x) = i (χ₁ g x))
+    (hq_eq : ∀ g x, q (ρ g x) = χ₂ g (q x))
+    (hρ : ∀ σ ∈ localInertiaGroup v, (ρ.toLocal v σ - 1) ^ 2 = 0) :
+    χ₁.IsUnramifiedAt v ∧ χ₂.IsUnramifiedAt v := by
+  constructor
+  · constructor
+    intro σ hσ
+    change χ₁.toLocal v σ = 1
+    exact Module.End.eq_one_of_injective_of_sub_one_sq_eq_zero
+      (ρ.toLocal v σ) (χ₁.toLocal v σ) i hi (hi_eq _) (hρ σ hσ)
+  · constructor
+    intro σ hσ
+    change χ₂.toLocal v σ = 1
+    exact Module.End.eq_one_of_surjective_of_sub_one_sq_eq_zero
+      (ρ.toLocal v σ) (χ₂.toLocal v σ) q hq (hq_eq _) (hρ σ hσ)
+end GaloisRep
