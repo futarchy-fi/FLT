@@ -105,3 +105,85 @@ theorem exists_inducedPrime_completion_embedding :
   exact ⟨w, g, inducedPrime_eq_of_completion_embedding v L w g hg, hg⟩
 
 end NumberField.InertiaComparison
+
+namespace NumberField.InertiaComparison
+variable {K : Type*} [Field K] [NumberField K]
+variable (v : IsDedekindDomain.HeightOneSpectrum (𝓞 K))
+variable {L : Type*} [Field L] [NumberField L] [Algebra K L] [FiniteDimensional K L]
+variable (w : v.Extension (𝓞 L))
+local notation "Kv" => v.adicCompletion K
+local notation "Ov" => v.adicCompletionIntegers K
+local notation "Lw" => adicCompletion L w.val
+local notation "Ow" => adicCompletionIntegers L w.val
+variable {E : Type*} [Field E] [Algebra (v.adicCompletion K) E]
+variable [Algebra (v.adicCompletionIntegers K) E]
+variable [IsScalarTower (v.adicCompletionIntegers K) (v.adicCompletion K) E]
+
+/-- A local field isomorphism identifies completed integers with the integral closure. -/
+noncomputable def completionIntegersEquivIntegralClosure (e : Lw ≃ₐ[Kv] E) :
+    Ow ≃ₐ[Ov] IntegralClosure Ov E := by
+  letI : IsScalarTower Ov Ow Lw := .of_algebraMap_smul fun _ _ ↦ rfl
+  let f : Ow →ₐ[Ov] IntegralClosure Ov E := {
+    toFun := fun x ↦ ⟨e x.1, by
+      have hx : IsIntegral Ov (x : Lw) :=
+        (Algebra.IsIntegral.isIntegral (R := Ov) x).map (IsScalarTower.toAlgHom Ov Ow Lw)
+      exact hx.map (e.toAlgHom.restrictScalars Ov)⟩
+    map_zero' := Subtype.ext (map_zero e)
+    map_one' := Subtype.ext (map_one e)
+    map_add' := fun x y ↦ Subtype.ext (map_add e x.1 y.1)
+    map_mul' := fun x y ↦ Subtype.ext (map_mul e x.1 y.1)
+    commutes' := fun x ↦ Subtype.ext ((e.restrictScalars Ov).commutes x) }
+  apply AlgEquiv.ofBijective f
+  constructor
+  · intro x y h
+    exact Subtype.ext (e.injective (congrArg Subtype.val h))
+  · intro y
+    have hy : IsIntegral Ov (e.symm y.1) := y.2.map (e.symm.toAlgHom.restrictScalars Ov)
+    obtain ⟨x, hx⟩ := (IsIntegralClosure.isIntegral_iff (A := Ow)).mp hy
+    refine ⟨x, Subtype.ext ?_⟩
+    change e (algebraMap Ow Lw x) = y.1
+    rw [hx, e.apply_symm_apply]
+
+end NumberField.InertiaComparison
+
+namespace NumberField.InertiaComparison
+variable {K : Type*} [Field K] [NumberField K]
+variable (v : IsDedekindDomain.HeightOneSpectrum (𝓞 K))
+variable {L : Type*} [Field L] [NumberField L] [Algebra K L] [FiniteDimensional K L]
+variable (w : v.Extension (𝓞 L))
+local notation "Kv" => v.adicCompletion K
+local notation "Ov" => v.adicCompletionIntegers K
+
+/-- Ramification indices agree for a global prime and any realization of its completion. -/
+lemma ramificationIdx_eq_of_completion_equiv
+    (C : IntermediateField Kv (AlgebraicClosure Kv)) [FiniteDimensional Kv C]
+    (e : w.1.adicCompletion L ≃ₐ[Kv] C) :
+    w.1.asIdeal.ramificationIdx (𝓞 K) =
+      (IsLocalRing.maximalIdeal (IntegralClosure Ov C)).ramificationIdx Ov := by
+  let B := IntegralClosure Ov C
+  let p := IsLocalRing.maximalIdeal Ov
+  let P := IsLocalRing.maximalIdeal B
+  let f := completionIntegersEquivIntegralClosure v w e
+  let : IsDedekindDomain B := by
+    dsimp only [B]
+    delta IntegralClosure
+    exact IsIntegralClosure.isDedekindDomain Ov Kv C (integralClosure Ov C)
+  let : Module.IsTorsionFree Ov B := by
+    rw [Module.isTorsionFree_iff_faithfulSMul, faithfulSMul_iff_algebraMap_injective]
+    intro x y hxy
+    apply Subtype.ext
+    apply (algebraMap Kv C).injective
+    exact congrArg Subtype.val hxy
+  let : Module.IsTorsionFree Ov (w.1.adicCompletionIntegers L) :=
+    Function.Injective.moduleIsTorsionFree f f.injective (fun r x ↦ f.toLinearEquiv.map_smul r x)
+  let : P.LiesOver p := by dsimp only [P, p]; infer_instance
+  let : (w.1.completionIdeal L).LiesOver p :=
+    adicCompletion.liesOver_completionIdeal K L w
+  have hm : P.comap f = w.1.completionIdeal L :=
+    IsLocalRing.maximalIdeal_comap f.toRingHom
+  have he := Ideal.ramificationIdx'_comap_eq p f P
+  rw [hm, Ideal.ramificationIdx'_eq_ramificationIdx p _ (v.completionIdeal_ne_bot K),
+    Ideal.ramificationIdx'_eq_ramificationIdx p _ (v.completionIdeal_ne_bot K)] at he
+  exact (adicCompletion.ramificationIdx_eq_ramificationIdx K L w).symm.trans he
+
+end NumberField.InertiaComparison
