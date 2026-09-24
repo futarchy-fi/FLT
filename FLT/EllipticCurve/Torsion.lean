@@ -219,6 +219,7 @@ theorem WeierstrassCurve.isLocallyConstant_torsionGaloisRepresentation
 
 Construction adapted from Marshall's ImperialCollegeLondon/FLT PR #1193
 (https://github.com/ImperialCollegeLondon/FLT/pull/1193), released under Apache-2.0. -/
+@[nolint unusedArguments]
 noncomputable
 def WeierstrassCurve.galoisRep {K : Type u} [Field K] (E : WeierstrassCurve K) [E.IsElliptic]
     [DecidableEq K] [DecidableEq (AlgebraicClosure K)] (n : ℕ) (hn : 0 < n) :
