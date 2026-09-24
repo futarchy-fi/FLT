@@ -134,3 +134,26 @@ lemma localInducedPrime_isUnramifiedAt
   exact Ideal.ramificationIdx_eq_one_iff.mp (localInducedPrime_ramificationIdx_eq_one v L h)
 
 end NumberField.InertiaComparison
+
+namespace NumberField.InertiaComparison
+/-- If local inertia restricts trivially, every global prime above the place is unramified. -/
+lemma isUnramifiedIn_of_localInertia_le_ker
+    {K : Type*} [Field K] [NumberField K]
+    (v : IsDedekindDomain.HeightOneSpectrum (𝓞 K))
+    (L : IntermediateField K (AlgebraicClosure K)) [FiniteDimensional K L] [Normal K L]
+    (h : localInertiaGroup v ≤ (localRestriction v L).ker) :
+    Algebra.IsUnramifiedIn (𝓞 L) v.asIdeal := by
+  let : IsGalois K L := {}
+  let : SMulDistribClass Gal(L/K) (𝓞 L) L := ⟨fun g b x ↦ by
+    simp only [Algebra.smul_def, smul_mul', mul_eq_mul_right_iff]
+    left
+    rfl⟩
+  let : IsGaloisGroup Gal(L/K) (𝓞 K) (𝓞 L) :=
+    IsGaloisGroup.of_isFractionRing Gal(L/K) (𝓞 K) (𝓞 L) K L
+  intro P hP hPv
+  apply Ideal.ramificationIdx_eq_one_iff.mp
+  rw [← Ideal.ramificationIdxIn_eq_ramificationIdx v.asIdeal P Gal(L/K),
+    Ideal.ramificationIdxIn_eq_ramificationIdx v.asIdeal (localInducedPrime v L) Gal(L/K)]
+  exact localInducedPrime_ramificationIdx_eq_one v L h
+
+end NumberField.InertiaComparison
