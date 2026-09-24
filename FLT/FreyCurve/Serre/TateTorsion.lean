@@ -6,6 +6,7 @@ Authors: krandder
 module
 
 public import FLT.KnownIn1980s.EllipticCurves.TateCurve
+public import Mathlib.Algebra.Module.ZMod
 
 /-!
 # Torsion representatives under Tate uniformization
@@ -195,5 +196,28 @@ theorem tateTorsionQuotient_surjective [IsSepClosed Ω] (n : ℕ) [NeZero (n : �
   obtain ⟨a, rfl⟩ := ZMod.intCast_surjective x
   refine ⟨a • P, ?_⟩
   rw [map_zsmul, hP, zsmul_eq_mul, mul_one]
+
+/-- The torsion exponent quotient as a linear map, for any compatible
+`ZMod n` module structure on the torsion group. -/
+noncomputable def tateTorsionQuotientLinear (n : ℕ)
+    [Module (ZMod n) (AddSubgroup.torsionBy (E⁄Ω).Point (n : ℤ))] :
+    AddSubgroup.torsionBy (E⁄Ω).Point (n : ℤ) →ₗ[ZMod n] ZMod n :=
+  (E.tateTorsionQuotient Ω n).toZModLinearMap n
+
+/-- Split multiplicative reduction supplies a nonzero Galois-invariant linear
+functional on geometric `p`-torsion. This proves the local Tate case without
+assuming any Frey-specific representation theorem. -/
+theorem exists_invariant_tateTorsion_functional [IsSepClosed Ω] [Algebra.IsSeparable k Ω]
+    (p : ℕ) [Fact p.Prime] [NeZero (p : Ω)]
+    [Module (ZMod p) (AddSubgroup.torsionBy (E⁄Ω).Point (p : ℤ))] :
+    ∃ r : AddSubgroup.torsionBy (E⁄Ω).Point (p : ℤ) →ₗ[ZMod p] ZMod p,
+      r ≠ 0 ∧ ∀ (σ : Ω ≃ₐ[k] Ω) (P Q : AddSubgroup.torsionBy (E⁄Ω).Point (p : ℤ)),
+        (Q : (E⁄Ω).Point) = Affine.Point.map σ.toAlgHom P → r Q = r P := by
+  refine ⟨E.tateTorsionQuotientLinear Ω p, ?_, ?_⟩
+  · obtain ⟨P, hP⟩ := E.exists_tateTorsionQuotient_eq_one Ω p
+    intro h
+    have hz : E.tateTorsionQuotient Ω p P = 0 := LinearMap.congr_fun h P
+    exact zero_ne_one (hz.symm.trans hP)
+  · exact E.tateTorsionQuotient_galois Ω p
 
 end WeierstrassCurve

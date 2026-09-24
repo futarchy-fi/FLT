@@ -96,10 +96,10 @@ public import FLT.FreyCurve.Basic
 public import FLT.FreyCurve.FreyPackage
 public import FLT.FreyCurve.Mazur
 public import FLT.FreyCurve.Serre.AtP
-public import FLT.FreyCurve.Serre.TateTorsion
 public import FLT.FreyCurve.Serre.FixedLineDescent
 public import FLT.FreyCurve.Serre.FreyTwoTorsion
 public import FLT.FreyCurve.Serre.JoinCoprimeTorsion
+public import FLT.FreyCurve.Serre.TateTorsion
 public import FLT.GaloisRepresentation.Attachment
 public import FLT.GaloisRepresentation.Automorphic
 public import FLT.GaloisRepresentation.Cyclotomic
