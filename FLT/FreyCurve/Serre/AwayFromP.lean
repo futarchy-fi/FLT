@@ -91,3 +91,23 @@ theorem characters_isUnramifiedAt_of_sub_one_sq_eq_zero
     exact Module.End.eq_one_of_surjective_of_sub_one_sq_eq_zero
       (ρ.toLocal v σ) (χ₂.toLocal v σ) q hq (hq_eq _) (hρ σ hσ)
 end GaloisRep
+
+namespace Module.End
+variable {k U V W : Type*} [Field k]
+  [AddCommGroup U] [Module k U] [AddCommGroup V] [Module k V]
+  [AddCommGroup W] [Module k W]
+
+/-- An endomorphism acting trivially on both terms of an exact filtration is square-unipotent. -/
+theorem sub_one_sq_eq_zero_of_exact (f : Module.End k V)
+    (i : U →ₗ[k] V) (q : V →ₗ[k] W)
+    (hexact : LinearMap.range i = LinearMap.ker q)
+    (hi : ∀ u, f (i u) = i u) (hq : ∀ v, q (f v) = q v) : (f - 1) ^ 2 = 0 := by
+  apply LinearMap.ext
+  intro v
+  have hmem : f v - v ∈ LinearMap.range i := by
+    rw [hexact, LinearMap.mem_ker]
+    simp only [map_sub, hq, sub_self]
+  obtain ⟨u, hu⟩ := hmem
+  change f (f v - v) - (f v - v) = 0
+  rw [← hu, hi, sub_self]
+end Module.End
