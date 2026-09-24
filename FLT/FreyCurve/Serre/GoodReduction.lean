@@ -58,4 +58,18 @@ theorem exists_y_of_equation {R K : Type*} [CommRing R] [IsIntegrallyClosed R]
   simp only [WeierstrassCurve.map, WeierstrassCurve.toAffine] at he
   simpa [map_add, map_mul, map_pow, add_mul, sub_eq_zero, add_assoc] using he
 
+/-- An addition slope is integral if both input x-coordinates and the output
+x-coordinate are integral. -/
+theorem exists_slope_of_addX {R K : Type*} [CommRing R] [IsIntegrallyClosed R]
+    [Field K] [Algebra R K] [IsFractionRing R K]
+    (W : WeierstrassCurve R) (x₁ x₂ z : R) {s : K}
+    (h : (W.map (algebraMap R K)).toAffine.addX
+      (algebraMap R K x₁) (algebraMap R K x₂) s = algebraMap R K z) :
+    ∃ r : R, algebraMap R K r = s := by
+  apply IsIntegrallyClosed.isIntegral_iff.mp
+  refine ⟨X ^ 2 + C W.a₁ * X - C (W.a₂ + x₁ + x₂ + z), by monicity!, ?_⟩
+  simp only [Affine.addX, WeierstrassCurve.map, WeierstrassCurve.toAffine] at h
+  simp
+  linear_combination h
+
 end WeierstrassCurve
