@@ -21,6 +21,7 @@ integrally closed coefficient ring when the torsion order is a unit.
 @[expose] public section
 
 open Polynomial
+open scoped WeierstrassCurve.Affine
 
 namespace WeierstrassCurve
 
@@ -211,5 +212,59 @@ theorem exists_integralModel_over_valuationSubring
     have hg : (E.reduction R).IsElliptic :=
       E.hasGoodReduction_iff_isElliptic_reduction R |>.mp inferInstance
     exact (isUnit_iff_ne_zero.mp ((E.reduction R).isElliptic_iff.mp hg))
+
+set_option backward.isDefEq.respectTransparency false in
+/-- Inertia fixes prime-to-residue-characteristic torsion when an integral model
+has unit discriminant in the chosen valuation ring. -/
+theorem inertia_fixes_torsion_of_integralModel
+    {K Ω : Type*} [Field K] [Field Ω] [Algebra K Ω] [DecidableEq Ω]
+    (E : WeierstrassCurve K) (A : ValuationSubring Ω) (W : WeierstrassCurve A)
+    (hW : W.map (algebraMap A Ω) = E.map (algebraMap K Ω))
+    (hΔ : IsUnit W.Δ) {n : ℕ} (hn : IsUnit (n : A))
+    (σ : A.decompositionSubgroup K) (hσ : σ ∈ A.inertiaSubgroup K)
+    (P : (E⁄Ω).Point) (hP : n • P = 0) :
+    Affine.Point.map (σ : Ω ≃ₐ[K] Ω).toAlgHom P = P := by
+  let : IsIntegrallyClosed A := (ValuationRing.integers A Ω).isIntegrallyClosed
+  cases P with
+  | zero => rfl
+  | some x y h =>
+    obtain ⟨h', ht⟩ : ∃ h' : (W.map (algebraMap A Ω)).toAffine.Nonsingular x y,
+        n • Affine.Point.some x y h' = 0 := by
+      have hcurve : W.map (algebraMap A Ω) = E⁄Ω := hW
+      rw [hcurve]
+      exact ⟨h, hP⟩
+    obtain ⟨x₀, rfl⟩ := W.exists_x_of_nsmul_eq_zero hn h' ht
+    obtain ⟨y₀, rfl⟩ := W.exists_y_of_equation x₀ h'.1
+    have hmap := (E.toAffine.baseChange_nonsingular
+      (σ : Ω ≃ₐ[K] Ω).toAlgHom.injective _ _).mpr h
+    have hmap' : (W.map (algebraMap A Ω)).toAffine.Nonsingular
+        (algebraMap A Ω (σ • x₀)) (algebraMap A Ω (σ • y₀)) := by
+      have hcurve : W.map (algebraMap A Ω) = E⁄Ω := hW
+      rw [hcurve]
+      exact hmap
+    have hmaptors : n • Affine.Point.some _ _ hmap' = 0 := by
+      have he := congrArg (Affine.Point.map (σ : Ω ≃ₐ[K] Ω).toAlgHom) hP
+      rw [map_nsmul, map_zero, Affine.Point.map_some] at he
+      have hcurve : W.map (algebraMap A Ω) = E⁄Ω := hW
+      revert hmap'
+      rw [hcurve]
+      intro hmap'
+      exact he
+    have hres (z : A) : IsLocalRing.residue A (σ • z) = IsLocalRing.residue A z := by
+      rw [IsLocalRing.ResidueField.residue_smul]
+      exact congrArg (fun f : RingAut (IsLocalRing.ResidueField A) ↦
+        f (IsLocalRing.residue A z)) hσ
+    have hred : (W.map (IsLocalRing.residue A)).toAffine.Nonsingular
+        (IsLocalRing.residue A x₀) (IsLocalRing.residue A y₀) := by
+      apply (Affine.equation_iff_nonsingular_of_Δ_ne_zero ?_).mp
+      · have he := (W.toAffine.map_equation (IsFractionRing.injective A Ω) _ _).mp h'.1
+        exact he.map (IsLocalRing.residue A)
+      · simpa only [map_Δ] using (hΔ.map (IsLocalRing.residue A)).ne_zero
+    have heq := W.torsion_eq_of_reduction_eq (IsLocalRing.residue A) hn
+      x₀ (σ • x₀) y₀ (σ • y₀) h' hmap' ht hmaptors hred
+      (hres x₀).symm (hres y₀).symm
+    have hcoords := (Affine.Point.some.injEq _ _ _ _ _ _).mp heq
+    simp only [Affine.Point.map_some, Affine.Point.some.injEq]
+    exact ⟨hcoords.1.symm, hcoords.2.symm⟩
 
 end WeierstrassCurve
