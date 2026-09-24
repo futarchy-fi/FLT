@@ -70,6 +70,39 @@ theorem xMap_add (P : E.toAffine.Point) (Q : G) :
 theorem yMap_add (P : E.toAffine.Point) (Q : G) :
     yMap E G (P + Q.val) = yMap E G P := sumCoord_add G yCoord P Q
 
+/-- Vélu's point function, conditional on nonsingularity of its coordinates away from the kernel.
+Kernel points go to infinity. This definition does not supply the missing landing proof. -/
+def pointMap (E' : WeierstrassCurve K)
+    (h : ∀ P, P ∉ G → E'.toAffine.Nonsingular (xMap E G P) (yMap E G P))
+    (P : E.toAffine.Point) : E'.toAffine.Point := by
+  classical
+  exact if hP : P ∈ G then 0 else .some _ _ (h P hP)
+
+/-- Once the coordinate map lands on the target, its zero fiber is exactly the chosen kernel. -/
+theorem pointMap_eq_zero_iff (E' : WeierstrassCurve K)
+    (h : ∀ P, P ∉ G → E'.toAffine.Nonsingular (xMap E G P) (yMap E G P))
+    (P : E.toAffine.Point) : pointMap E G E' h P = 0 ↔ P ∈ G := by
+  classical
+  by_cases hP : P ∈ G <;> simp [pointMap, hP, Affine.Point.some_ne_zero]
+
+/-- The conditional point map takes the identity to the identity. -/
+theorem pointMap_zero (E' : WeierstrassCurve K)
+    (h : ∀ P, P ∉ G → E'.toAffine.Nonsingular (xMap E G P) (yMap E G P)) :
+    pointMap E G E' h 0 = 0 :=
+  (pointMap_eq_zero_iff E G E' h 0).mpr G.zero_mem
+
+/-- The conditional point map is constant on each kernel coset. -/
+theorem pointMap_add_kernel (E' : WeierstrassCurve K)
+    (h : ∀ P, P ∉ G → E'.toAffine.Nonsingular (xMap E G P) (yMap E G P))
+    (P : E.toAffine.Point) (Q : G) :
+    pointMap E G E' h (P + Q.val) = pointMap E G E' h P := by
+  classical
+  have hmem : P + Q.val ∈ G ↔ P ∈ G := G.add_mem_cancel_right Q.property
+  by_cases hP : P ∈ G
+  · simp [pointMap, hP, hmem.mpr hP]
+  · simp only [pointMap, dite_eq_right hP, dite_eq_right (hmem.not.mpr hP),
+      xMap_add, yMap_add]
+
 end Coordinates
 
 section Galois
@@ -129,6 +162,36 @@ theorem yMap_map [Fintype G]
     (σ : L ≃ₐ[K] L) (P : (E⁄L).Point) :
     yMap (E⁄L) G (Affine.Point.map (W' := E) σ.toAlgHom P) = σ (yMap (E⁄L) G P) :=
   sumCoord_map E G hG σ yCoord (yCoord_map E σ) P
+
+/-- Membership of a Galois-stable kernel is preserved in both directions by Galois. -/
+theorem map_mem_iff
+    (hG : ∀ (τ : L ≃ₐ[K] L) P, P ∈ G → Affine.Point.map (W' := E) τ.toAlgHom P ∈ G)
+    (σ : L ≃ₐ[K] L) (P : (E⁄L).Point) :
+    Affine.Point.map (W' := E) σ.toAlgHom P ∈ G ↔ P ∈ G := by
+  refine ⟨fun hP ↦ ?_, hG σ P⟩
+  have h := hG σ.symm _ hP
+  have hinv : Affine.Point.map (W' := E) σ.symm.toAlgHom
+      (Affine.Point.map (W' := E) σ.toAlgHom P) = P := by
+    cases P <;> simp only [Affine.Point.map, AddMonoidHom.coe_mk,
+      ZeroHom.coe_mk, AlgEquiv.coe_toAlgHom, AlgEquiv.symm_apply_apply]
+    all_goals rfl
+  rwa [hinv] at h
+
+/-- Once Vélu's coordinates land on a target defined over the base field, the resulting point
+map commutes with Galois. No additivity or nonsingularity theorem is assumed implicitly. -/
+theorem pointMap_map [Fintype G] (E' : WeierstrassCurve K)
+    (h : ∀ P, P ∉ G → (E'⁄L).Nonsingular (xMap (E⁄L) G P) (yMap (E⁄L) G P))
+    (hG : ∀ (τ : L ≃ₐ[K] L) P, P ∈ G → Affine.Point.map (W' := E) τ.toAlgHom P ∈ G)
+    (σ : L ≃ₐ[K] L) (P : (E⁄L).Point) :
+    pointMap (E⁄L) G (E'⁄L) h (Affine.Point.map (W' := E) σ.toAlgHom P) =
+      Affine.Point.map (W' := E') σ.toAlgHom (pointMap (E⁄L) G (E'⁄L) h P) := by
+  classical
+  by_cases hP : P ∈ G
+  · simp [pointMap, hP, hG σ P hP]
+  · have hm := (map_mem_iff E G hG σ P).not.mpr hP
+    simp only [pointMap, dite_eq_right hP, dite_eq_right hm, Affine.Point.map_some,
+      Affine.Point.some.injEq]
+    exact ⟨xMap_map E G hG σ P, yMap_map E G hG σ P⟩
 
 end Galois
 
