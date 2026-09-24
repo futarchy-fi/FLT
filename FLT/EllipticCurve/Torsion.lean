@@ -5,7 +5,7 @@ Authors: Kevin Buzzard
 -/
 module
 
-public import Mathlib.AlgebraicGeometry.EllipticCurve.Affine.Point
+public import FLT.EllipticCurve.NTorsionFinite
 public import Mathlib.Topology.Instances.ZMod
 public import Mathlib.Topology.LocallyConstant.Basic
 public import FLT.Deformations.RepresentationTheory.GaloisRep
@@ -42,9 +42,18 @@ noncomputable instance (n : ℕ) : Module (ZMod n) (E.nTorsion n) :=
   intro ⟨P, hP⟩
   simpa using hP
 
--- This theorem needs e.g. a theory of division polynomials. It's ongoing work of David Angdinata.
--- Please do not work on it without talking to KB and David first.
-theorem WeierstrassCurve.n_torsion_finite {n : ℕ} (hn : 0 < n) : Finite (E.nTorsion n) := sorry
+/-- The subgroup of points killed by a positive integer is finite over every field. -/
+theorem WeierstrassCurve.n_torsion_finite {n : ℕ} (hn : 0 < n) : Finite (E.nTorsion n) := by
+  have : (E⁄k).IsElliptic := by
+    change (E.map (algebraMap k k)).IsElliptic
+    infer_instance
+  have : Finite {P : (E⁄k).Point | n • P = 0} :=
+    ((E⁄k).finite_setOf_nsmul_eq_zero hn).to_subtype
+  let f : E.nTorsion n → {P : (E⁄k).Point | n • P = 0} := fun P =>
+    ⟨P.val, by
+      change n • P.val = 0
+      simpa only [Submodule.mem_torsionBy_iff, natCast_zsmul] using P.property⟩
+  exact Finite.of_injective f (fun _ _ h => Subtype.ext (congrArg Subtype.val h))
 
 -- This theorem needs e.g. a theory of division polynomials. It's ongoing work of David Angdinata.
 -- Please do not work on it without talking to KB and David first.
