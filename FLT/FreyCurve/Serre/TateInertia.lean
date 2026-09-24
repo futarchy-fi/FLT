@@ -51,8 +51,8 @@ theorem exists_tatePoint_of_nsmul_eq_zero {n : ℕ} (P : (E⁄Ω).Point)
 
 variable [IsSepClosed Ω] [Algebra.IsSeparable k Ω]
 
-/-- The deviation of a Galois automorphism on a Tate torsion point is represented
-by a root of unity of the same order. -/
+/-- The deviation of a Galois automorphism on an `n`-torsion point is represented
+by an `n`-th root of unity under Tate uniformization. -/
 theorem exists_rootOfUnity_tatePoint_sub {n : ℕ} (σ : Ω ≃ₐ[k] Ω)
     (P : (E⁄Ω).Point) (hP : n • P = 0) :
     ∃ ζ : Ωˣ, ζ ^ n = 1 ∧
