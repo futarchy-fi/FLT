@@ -39,4 +39,16 @@ theorem eq_one_of_sub_one_sq_eq_zero (a : Module.End k k)
   change a x = x
   rw [hscalar x, hone, mul_one]
 
+/-- A stable line in a square-unipotent module has trivial action. -/
+theorem eq_one_of_injective_of_sub_one_sq_eq_zero (f : Module.End k V) (a : Module.End k k)
+    (i : k →ₗ[k] V) (hi : Function.Injective i)
+    (heq : ∀ x, f (i x) = i (a x)) (hf : (f - 1) ^ 2 = 0) : a = 1 := by
+  apply eq_one_of_sub_one_sq_eq_zero
+  apply LinearMap.ext
+  intro x
+  apply hi
+  have h := LinearMap.congr_fun hf (i x)
+  simpa only [pow_two, Module.End.mul_apply, LinearMap.sub_apply,
+    Module.End.one_apply, map_sub, heq, map_zero, LinearMap.zero_apply] using h
+
 end Module.End
