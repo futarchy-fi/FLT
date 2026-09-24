@@ -36,6 +36,34 @@ theorem exists_injective_factor_of_ker_eq {A B C : Type*}
 
 end AddMonoidHom
 
+namespace WeierstrassCurve
+
+/-! ### A finite-sum descent lemma used by the Vélu construction -/
+
+open scoped BigOperators
+
+/--
+If a finite family of coefficients is permuted by a field automorphism, its sum is fixed.
+
+This is the algebraic core of the Galois-invariance step in Vélu's construction: once a
+Galois-stable kernel supplies the permutation `e` and the summand is shown to be equivariant,
+the resulting coefficient lies in the ground field.  The lemma is deliberately independent of
+elliptic-curve coordinates so it can also be reused for the general Weierstrass formulas.
+-/
+theorem galois_fixed_sum_of_equiv {K L ι : Type*} [CommSemiring K] [CommRing L] [Algebra K L]
+    [Fintype ι] (σ : L ≃ₐ[K] L) (e : ι ≃ ι) (f : ι → L)
+    (hσ : ∀ i, σ (f i) = f (e i)) :
+    σ (∑ i, f i) = ∑ i, f i := by
+  rw [map_sum]
+  calc
+    ∑ i, σ (f i) = ∑ i, f (e i) := by
+      apply Finset.sum_congr rfl
+      intro i hi
+      exact hσ i
+    _ = ∑ i, f i := e.sum_comp f
+
+end WeierstrassCurve
+
 open scoped WeierstrassCurve.Affine
 
 namespace WeierstrassCurve
