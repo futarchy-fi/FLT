@@ -26,3 +26,14 @@ theorem FreyCurve.c₄_int (P : FreyPackage) :
   have h := congrArg WeierstrassCurve.c₄ (FreyCurve.map P)
   simp only [map_c₄, eq_intCast] at h
   exact_mod_cast h.trans (FreyCurve.c₄ P)
+
+/-- The discriminant identity for the integral Frey model, with denominators cleared. -/
+theorem FreyCurve.two_pow_eight_mul_Δ_int (P : FreyPackage) :
+    2 ^ 8 * P.freyCurveInt.Δ = (P.a * P.b * P.c) ^ (2 * P.p) := by
+  have h := congrArg WeierstrassCurve.Δ (FreyCurve.map P)
+  simp only [map_Δ, eq_intCast] at h
+  rw [FreyCurve.Δ] at h
+  have h' : (2 : ℚ) ^ 8 * P.freyCurveInt.Δ = (P.a * P.b * P.c) ^ (2 * P.p) := by
+    rw [h]
+    ring
+  exact_mod_cast h'
