@@ -48,4 +48,27 @@ theorem exists_tatePoint_of_nsmul_eq_zero {n : ℕ} (P : (E⁄Ω).Point)
   obtain ⟨m, hm⟩ := (QuotientGroup.eq_one_iff _).mp hpow
   exact ⟨u, m, rfl, hm.symm⟩
 
+variable [IsSepClosed Ω] [Algebra.IsSeparable k Ω]
+
+/-- The deviation of a Galois automorphism on a Tate torsion point is represented
+by a root of unity of the same order. -/
+theorem exists_rootOfUnity_tatePoint_sub {n : ℕ} (σ : Ω ≃ₐ[k] Ω)
+    (P : (E⁄Ω).Point) (hP : n • P = 0) :
+    ∃ ζ : Ωˣ, ζ ^ n = 1 ∧
+      E.tatePoint Ω ζ = Affine.Point.map σ.toAlgHom P - P := by
+  obtain ⟨u, m, rfl, hu⟩ := E.exists_tatePoint_of_nsmul_eq_zero Ω P hP
+  let τ : Ωˣ →* Ωˣ := Units.map σ.toAlgHom.toRingHom.toMonoidHom
+  have hq : τ (E.qUnitSepClosure Ω) = E.qUnitSepClosure Ω := by
+    apply Units.ext
+    exact σ.commutes _
+  refine ⟨τ u / u, ?_, ?_⟩
+  · rw [div_pow, ← map_pow, hu, map_zpow, hq, div_self']
+  · rw [E.tatePoint_galois]
+    change E.tateEquivSepClosure Ω (Additive.ofMul ↑(τ u / u)) =
+      E.tateEquivSepClosure Ω (Additive.ofMul ↑(τ u)) -
+        E.tateEquivSepClosure Ω (Additive.ofMul ↑u)
+    rw [← map_sub]
+    apply congrArg
+    exact QuotientGroup.mk_div _ (τ u) u
+
 end WeierstrassCurve
