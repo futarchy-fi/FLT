@@ -46,6 +46,24 @@ def tTerm (E : WeierstrassCurve K) (x : K) : K :=
 def wTerm (E : WeierstrassCurve K) (x : K) : K :=
   (10 * x ^ 3 + 2 * E.b₂ * x ^ 2 + 3 * E.b₄ * x + E.b₆) / 2
 
+/-- The all-points `t` summand is half of Vélu's contribution for a pair `Q, -Q`. -/
+theorem tTerm_pair [NeZero (2 : K)] (E : WeierstrassCurve K) (x y : K) :
+    2 * tTerm E x =
+      2 * (3 * x ^ 2 + 2 * E.a₂ * x + E.a₄ - E.a₁ * y) -
+        E.a₁ * (-2 * y - E.a₁ * x - E.a₃) := by
+  dsimp [tTerm, b₂, b₄]
+  field_simp
+  ring
+
+/-- The all-points `w` summand is half of `u_Q + x_Q t_Q`, using the curve equation. -/
+theorem wTerm_pair [NeZero (2 : K)] (E : WeierstrassCurve K) {x y : K}
+    (h : E.toAffine.Equation x y) :
+    2 * wTerm E x = (-2 * y - E.a₁ * x - E.a₃) ^ 2 + x * (2 * tTerm E x) := by
+  have heq := (Affine.equation_iff _ _).mp h
+  dsimp [wTerm, tTerm, b₂, b₄, b₆]
+  field_simp
+  linear_combination -4 * heq
+
 section Coefficients
 
 variable [DecidableEq K] (E : WeierstrassCurve K) (G : AddSubgroup E.toAffine.Point)
