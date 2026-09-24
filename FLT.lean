@@ -230,6 +230,7 @@ public import FLT.Mathlib.RingTheory.Norm.Quotient
 public import FLT.Mathlib.RingTheory.Polynomial.GaussLemma
 public import FLT.Mathlib.RingTheory.RamificationInertia.Basic
 public import FLT.Mathlib.RingTheory.SimpleRing.TensorProduct
+public import FLT.Mathlib.RingTheory.Spectrum.Prime.RingHom
 public import FLT.Mathlib.RingTheory.TensorProduct.Basis
 public import FLT.Mathlib.RingTheory.TensorProduct.Pi
 public import FLT.Mathlib.RingTheory.Unramified.LocalRing
