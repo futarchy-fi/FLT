@@ -35,3 +35,35 @@ theorem exists_injective_factor_of_ker_eq {A B C : Type*}
   exact show a ∈ q.ker from hker.symm ▸ ha
 
 end AddMonoidHom
+
+open scoped WeierstrassCurve.Affine
+
+namespace WeierstrassCurve
+
+/-- An equivariant map on geometric torsion with kernel equal to that of a trivial
+quotient embeds that quotient into rational points of the target curve. No existence
+of a quotient curve or isogeny is asserted here. -/
+theorem rational_torsion_of_trivial_quotient_image
+    (E E' : WeierstrassCurve ℚ) (n : ℕ)
+    (q : (E.map (algebraMap ℚ (AlgebraicClosure ℚ))).nTorsion n →ₗ[ZMod n] ZMod n)
+    (hq : Function.Surjective q)
+    (hfixed : ∀ g v, q (E.torsionGaloisRepresentation n g v) = q v)
+    (ψ : (E.map (algebraMap ℚ (AlgebraicClosure ℚ))).nTorsion n →+
+      (E'⁄(AlgebraicClosure ℚ)).Point)
+    (hψ : ∀ g v, ψ (E.torsionGaloisRepresentation n g v) =
+      Affine.Point.map (W' := E') g.toAlgHom (ψ v))
+    (hker : q.toAddMonoidHom.ker = ψ.ker) :
+    ∃ f : ZMod n →+ (E'⁄ℚ).Point, Function.Injective f ∧
+      ∀ v, Affine.Point.baseChange ℚ (AlgebraicClosure ℚ) (f (q v)) = ψ v := by
+  obtain ⟨j, hj, hjq⟩ := q.toAddMonoidHom.exists_injective_factor_of_ker_eq hq ψ hker
+  change ∀ v, j (q v) = ψ v at hjq
+  have hjfixed (g : Field.absoluteGaloisGroup ℚ) (x : ZMod n) :
+      Affine.Point.map (W' := E') g.toAlgHom (j x) = j x := by
+    obtain ⟨v, rfl⟩ := hq x
+    rw [hjq, ← hψ, ← hjq, hfixed, hjq]
+  obtain ⟨f, hf⟩ := E'.exists_addHom_of_galois_fixed j hjfixed
+  refine ⟨f, fun a b hab ↦ hj ?_, fun v ↦ (hf (q v)).trans (hjq v)⟩
+  exact (hf a).symm.trans
+    ((congrArg (Affine.Point.baseChange ℚ (AlgebraicClosure ℚ)) hab).trans (hf b))
+
+end WeierstrassCurve
