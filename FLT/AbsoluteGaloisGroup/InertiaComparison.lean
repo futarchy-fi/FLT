@@ -17,7 +17,9 @@ import Mathlib.Topology.Algebra.Valued.LocallyCompact
 /-!
 # Restriction of local inertia
 
-Comparison of local absolute inertia with the inertia of finite subextensions.
+Comparison of local absolute inertia with the inertia of finite local subextensions.
+We also construct the induced global prime, prove that it lies over the original
+place, and show that local inertia restricts into its global inertia group.
 -/
 
 @[expose] public section
@@ -203,3 +205,86 @@ lemma map_localInertiaGroup_eq_finiteInertia
           (x.2 ⟨n.1.1, n.1.2⟩)
       rw [map_mul, hnres, hσ, one_mul]
 
+
+namespace NumberField.InertiaComparison
+
+variable (L : IntermediateField K (AlgebraicClosure K))
+
+/-- Embed global integers into the integral closure of the completed valuation ring,
+using the chosen embedding of algebraic closures. -/
+noncomputable def localIntegersMap : (𝓞 L) →+* Aᵥ where
+  toFun x := ⟨AlgebraicClosure.map (algebraMap K Kᵥ) (L.val x.1),
+    by
+      let : Algebra ℤ (AlgebraicClosure Kᵥ) := Ring.toIntAlgebra _
+      have hx : IsIntegral ℤ
+          (AlgebraicClosure.map (algebraMap K Kᵥ) (L.val x.1)) :=
+        map_isIntegral_int
+          ((AlgebraicClosure.map (algebraMap K Kᵥ)).comp L.val.toRingHom) x.2
+      exact hx.tower_top (A := 𝒪ᵥ)⟩
+  map_one' := Subtype.ext (map_one _)
+  map_mul' x y := Subtype.ext (map_mul _ _ _)
+  map_zero' := Subtype.ext (map_zero _)
+  map_add' x y := Subtype.ext (map_add _ _ _)
+
+/-- The global prime obtained by pulling back the local maximal ideal. -/
+noncomputable def localInducedPrime : Ideal (𝓞 L) :=
+  (IsLocalRing.maximalIdeal Aᵥ).comap (localIntegersMap v L)
+
+/-- The prime induced by the local algebraic closure is prime. -/
+instance localInducedPrime_isPrime : (localInducedPrime v L).IsPrime := Ideal.comap_isPrime _ _
+
+variable [Normal K L]
+/-- Restrict local absolute Galois automorphisms to a normal global subextension. -/
+noncomputable def localRestriction : Field.absoluteGaloisGroup Kᵥ →* Gal(L/K) :=
+  (AlgEquiv.restrictNormalHom L).comp
+    (Field.absoluteGaloisGroup.map (algebraMap K Kᵥ)).toMonoidHom
+
+/-- The embedding of global integers intertwines local and global Galois actions. -/
+lemma localIntegersMap_equivariant (σ : Field.absoluteGaloisGroup Kᵥ) (x : 𝓞 L) :
+    localIntegersMap v L (localRestriction v L σ • x) = σ • localIntegersMap v L x := by
+  apply Subtype.ext
+  change AlgebraicClosure.map (algebraMap K Kᵥ)
+    (L.val ((AlgEquiv.restrictNormalHom L
+      (Field.absoluteGaloisGroup.map (algebraMap K Kᵥ) σ)) x.1)) = _
+  exact (congrArg (AlgebraicClosure.map (algebraMap K Kᵥ))
+    (AlgEquiv.restrictNormalHom_apply L
+      (Field.absoluteGaloisGroup.map (algebraMap K Kᵥ) σ) x.1)).trans
+        (Field.absoluteGaloisGroup.lift_map _ _ _)
+
+/-- Local inertia restricts into the inertia of the induced global prime. -/
+lemma map_localInertiaGroup_le_globalInertia :
+    (localInertiaGroup v).map (localRestriction v L) ≤
+      (localInducedPrime v L).inertia Gal(L/K) := by
+  rintro _ ⟨σ, hσ, rfl⟩ x
+  change localIntegersMap v L (localRestriction v L σ • x - x) ∈
+    IsLocalRing.maximalIdeal Aᵥ
+  rw [map_sub, localIntegersMap_equivariant]
+  exact hσ (localIntegersMap v L x)
+
+omit [Normal K L] in
+/-- On base-field integers the chosen embedding agrees with the completion map. -/
+lemma localIntegersMap_algebraMap (x : 𝓞 K) :
+    localIntegersMap v L (algebraMap (𝓞 K) (𝓞 L) x) =
+      algebraMap 𝒪ᵥ Aᵥ (algebraMap (𝓞 K) 𝒪ᵥ x) := by
+  apply Subtype.ext
+  change AlgebraicClosure.map (algebraMap K Kᵥ)
+    (algebraMap K (AlgebraicClosure K) x.1) = _
+  exact AlgebraicClosure.map_algebraMap _ _
+
+/-- The induced global prime lies over the original finite place. -/
+instance localInducedPrime_liesOver : (localInducedPrime v L).LiesOver v.asIdeal where
+  over := by
+    ext x
+    change x ∈ v.asIdeal ↔
+      localIntegersMap v L (algebraMap (𝓞 K) (𝓞 L) x) ∈ IsLocalRing.maximalIdeal Aᵥ
+    rw [localIntegersMap_algebraMap]
+    exact (Ideal.mem_of_liesOver (v.completionIdeal K) v.asIdeal x).trans
+      (Ideal.mem_of_liesOver (IsLocalRing.maximalIdeal Aᵥ)
+        (v.completionIdeal K) _)
+
+omit [Normal K L] in
+/-- The induced global prime is nonzero. -/
+lemma localInducedPrime_ne_bot : localInducedPrime v L ≠ ⊥ :=
+  Ideal.ne_bot_of_liesOver_of_ne_bot v.ne_bot _
+
+end NumberField.InertiaComparison
