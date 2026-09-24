@@ -44,4 +44,18 @@ theorem exists_x_of_nsmul_eq_zero {R K : Type*} [CommRing R] [IsDomain R] [IsInt
     Units.val_one, one_smul] at hint'
   exact IsIntegrallyClosed.isIntegral_iff.mp hint'
 
+/-- An affine point with integral x-coordinate also has integral y-coordinate
+over an integrally closed coefficient ring. -/
+theorem exists_y_of_equation {R K : Type*} [CommRing R] [IsIntegrallyClosed R]
+    [Field K] [Algebra R K] [IsFractionRing R K]
+    (W : WeierstrassCurve R) (x : R) {y : K}
+    (h : (W.map (algebraMap R K)).toAffine.Equation (algebraMap R K x) y) :
+    ∃ r : R, algebraMap R K r = y := by
+  apply IsIntegrallyClosed.isIntegral_iff.mp
+  refine ⟨X ^ 2 + C (W.a₁ * x + W.a₃) * X -
+    C (x ^ 3 + W.a₂ * x ^ 2 + W.a₄ * x + W.a₆), by monicity!, ?_⟩
+  have he := (Affine.equation_iff _ _).mp h
+  simp only [WeierstrassCurve.map, WeierstrassCurve.toAffine] at he
+  simpa [map_add, map_mul, map_pow, add_mul, sub_eq_zero, add_assoc] using he
+
 end WeierstrassCurve
