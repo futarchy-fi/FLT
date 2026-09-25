@@ -56,4 +56,16 @@ theorem exists_split_twist_parameters {R K : Type u} [CommRing R] [IsDomain R]
   exact ⟨t, n, (residue_ne_zero_iff_isUnit _).mp hD,
     hasSplitMultiplicativeReduction_quadraticTwistOf_of_residue E R t n hA hB⟩
 
+/-- A root of the defining quadratic gives an explicit isomorphism from the
+quadratic twist to the original equation. -/
+theorem quadraticRoot_variableChange_smul {K : Type*} [Field K]
+    (E : WeierstrassCurve K) (t n x : K)
+    (hx : x ^ 2 - t * x + n = 0) (hw : t - 2 * x ≠ 0) :
+    (⟨Units.mk0 (t - 2 * x) hw, 0, -(x * E.a₁),
+      -((t - 2 * x) ^ 2 * x * E.a₃)⟩ : VariableChange K) • E.quadraticTwistOf t n = E := by
+  have hn : n = t * x - x ^ 2 := by linear_combination hx
+  rw [hn, variableChange_def]
+  ext <;> simp only [quadraticTwistOf, Units.val_inv_eq_inv_val, Units.val_mk0] <;>
+    field_simp <;> ring
+
 end WeierstrassCurve
