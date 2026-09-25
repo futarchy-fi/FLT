@@ -102,6 +102,7 @@ public import FLT.FreyCurve.Serre.QuotientCurve
 public import FLT.FreyCurve.Serre.Velu
 public import FLT.FreyCurve.Serre.VeluCoordinates
 public import FLT.FreyCurve.Serre.VeluDifferential
+public import FLT.FreyCurve.Serre.VeluElliptic
 public import FLT.FreyCurve.Serre.VeluEquation
 public import FLT.FreyCurve.Serre.VeluEvaluation
 public import FLT.FreyCurve.Serre.VeluIdentity
