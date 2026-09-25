@@ -182,4 +182,20 @@ theorem inertia_sub_one_sq_eq_zero_away (P : FreyPackage) {ℓ : ℕ} (hℓ : �
       (P.freyCurve.baseChange K).inertia_sub_sub_eq_zero_of_multiplicative
       A hA hnA σA hσA Q hQ
 
+/-- Both characters of a Frey torsion filtration are unramified away from the torsion prime.
+The geometric proof includes nonsplit multiplicative reduction and residue characteristic two;
+its only inherited admissions are Tate uniformization and its Galois equivariance. -/
+theorem characters_unramified_away (P : FreyPackage) :
+    letI : Fact P.p.Prime := ⟨P.pp⟩
+    ∀ F : GaloisRep.CharacterFiltration (P.freyCurve.galoisRep P.p P.hppos),
+      ∀ ℓ (hℓ : ℓ.Prime), ℓ ≠ P.p →
+        F.χ₁.IsUnramifiedAt hℓ.toHeightOneSpectrumRingOfIntegersRat ∧
+        F.χ₂.IsUnramifiedAt hℓ.toHeightOneSpectrumRingOfIntegersRat := by
+  let : Fact P.p.Prime := ⟨P.pp⟩
+  intro F ℓ hℓ hne
+  exact GaloisRep.characters_isUnramifiedAt_of_sub_one_sq_eq_zero
+    (P.freyCurve.galoisRep P.p P.hppos) F.χ₁ F.χ₂
+    hℓ.toHeightOneSpectrumRingOfIntegersRat F.i F.q F.i_injective F.q_surjective
+    F.i_equivariant F.q_equivariant (P.inertia_sub_one_sq_eq_zero_away hℓ hne)
+
 end FreyPackage
