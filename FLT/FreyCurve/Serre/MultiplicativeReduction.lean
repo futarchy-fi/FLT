@@ -164,4 +164,30 @@ theorem exists_inertia_equivariant_split_twist {R K : Type u}
     (σ : Ω ≃ₐ[K] Ω) hCfix
   exact ⟨E',hell,hsplit,e,he⟩
 
+open ValuativeRel
+
+/-- Inertia acts square-unipotently on prime-to-residue-characteristic torsion
+at multiplicative reduction, whether split or nonsplit. -/
+theorem inertia_sub_sub_eq_zero_of_multiplicative {K Ω : Type*}
+    [Field K] [ValuativeRel K] [TopologicalSpace K]
+    [IsNonarchimedeanLocalField K] [CharZero K]
+    (E : WeierstrassCurve K) [E.IsElliptic] [E.HasMultiplicativeReduction 𝒪[K]]
+    [Field Ω] [Algebra K Ω] [IsAlgClosure K Ω] [DecidableEq Ω]
+    (A : ValuationSubring Ω)
+    (hA : (A.comap (algebraMap K Ω)).toSubring = (algebraMap 𝒪[K] K).range)
+    {n : ℕ} (hn : IsUnit (n : A))
+    (σ : A.decompositionSubgroup K) (hσ : σ ∈ A.inertiaSubgroup K)
+    (P : (E⁄Ω).Point) (hP : n • P = 0) :
+    Affine.Point.map (σ : Ω ≃ₐ[K] Ω).toAlgHom
+        (Affine.Point.map (σ : Ω ≃ₐ[K] Ω).toAlgHom P - P) -
+      (Affine.Point.map (σ : Ω ≃ₐ[K] Ω).toAlgHom P - P) = 0 := by
+  let : IsAlgClosed Ω := IsAlgClosure.isAlgClosed K
+  obtain ⟨E',hell,hsplit,e,he⟩ := E.exists_inertia_equivariant_split_twist A hA σ hσ
+  let := hell
+  let := hsplit
+  apply e.injective
+  simp only [map_sub, map_zero, he]
+  simpa only [map_sub] using E'.inertia_sub_sub_eq_zero_of_split_multiplicative Ω A hn σ hσ (e P)
+    (by rw [← map_nsmul, hP, map_zero])
+
 end WeierstrassCurve
