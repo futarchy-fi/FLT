@@ -6,6 +6,7 @@ Authors: krandder
 module
 
 public import FLT.Deformations.RepresentationTheory.AbsoluteGaloisGroup
+public import FLT.Mathlib.RingTheory.DedekindDomain.Ideal.Lemmas
 public import FLT.NumberField.Completion.Finite
 public import Mathlib.NumberTheory.LocalField.Basic
 public import Mathlib.RingTheory.Valuation.RamificationGroup
@@ -76,6 +77,25 @@ theorem localClosureDecomposition_mem_inertia (σ : Field.absoluteGaloisGroup Kv
   apply sub_eq_zero.mp
   rw [← map_sub, IsLocalRing.residue_eq_zero_iff]
   exact hσ x
+
+open IsDedekindDomain.HeightOneSpectrum
+
+set_option backward.isDefEq.respectTransparency false in
+/-- A rational prime is a unit in the completed integer ring at every distinct prime. -/
+theorem prime_isUnit_adicCompletionIntegers {p ℓ : ℕ} (hp : p.Prime) (hℓ : ℓ.Prime) (hne : ℓ ≠ p) :
+    IsUnit (p : hℓ.toHeightOneSpectrumRingOfIntegersRat.adicCompletionIntegers ℚ) := by
+  let v := hℓ.toHeightOneSpectrumRingOfIntegersRat
+  apply adicCompletionIntegers.isUnit_iff_valued_eq_one.mpr
+  change Valued.v ((v.adicCompletionIntegers ℚ).subtype p) = 1
+  rw [map_natCast, ← map_natCast (algebraMap (𝓞 ℚ) (v.adicCompletion ℚ)) p]
+  have hv := v.valuedAdicCompletion_eq_valuation (K := ℚ) (p : 𝓞 ℚ)
+  have hv' : Valued.v (p : v.adicCompletion ℚ) = v.valuation ℚ (p : ℚ) := by
+    simpa using hv
+  rw [map_natCast, hv']
+  rw [← map_natCast (algebraMap (𝓞 ℚ) ℚ) p, valuation_eq_one_iff_notMem]
+  change Rat.ringOfIntegersEquiv (p : 𝓞 ℚ) ∉ Ideal.span {(ℓ : ℤ)}
+  rw [map_natCast, Ideal.mem_span_singleton, Int.ofNat_dvd]
+  exact fun h ↦ hne ((Nat.prime_dvd_prime_iff_eq hℓ hp).mp h)
 
 open ValuativeRel
 
