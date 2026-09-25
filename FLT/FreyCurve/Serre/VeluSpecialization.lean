@@ -178,6 +178,45 @@ theorem eventually_regularAtAffine (z : FunctionField E) :
 
 variable [CharZero K]
 
+/-- Specialization of the lifted ordinate recovers the completed-coordinate formula. -/
+theorem affineValue_liftY (E' : WeierstrassCurve K) (x y : K) (f g : K⟮X⟯)
+    (hf : RegularAt x f) (hg : RegularAt x g) :
+    affineValue E x y (liftY E E' f g) =
+      (eval (RingHom.id K) x g * (2 * y + E.a₁ * x + E.a₃) -
+        E'.a₁ * eval (RingHom.id K) x f - E'.a₃) / 2 := by
+  have hr : (liftY E E' f g).re = C (-E'.a₁ / 2) * f + C (-E'.a₃ / 2) := by
+    simp only [liftY, map_div₀, map_neg, map_ofNat]
+    ring
+  have hi : (liftY E E' f g).im = C (1 / 2 : K) * g := by
+    simp only [liftY, map_div₀, map_one, map_ofNat]
+    ring
+  simp only [affineValue, hr, hi,
+    ((RegularAt.C x (-E'.a₁ / 2)).mul hf).eval_add (RegularAt.C x (-E'.a₃ / 2)),
+    (RegularAt.C x (-E'.a₁ / 2)).eval_mul hf,
+    (RegularAt.C x (1 / 2 : K)).eval_mul hg, eval_C, RingHom.id_apply]
+  ring
+
+/-- The lifted generic Vélu coordinates specialize to the actual coordinate sums. -/
+theorem affineValue_velu [DecidableEq K] (G : AddSubgroup E.toAffine.Point) [Fintype G]
+    (hodd : ∀ Q : G, Q ≠ 0 → Q ≠ -Q) {x y : K}
+    (hP : E.toAffine.Nonsingular x y) (hPG : Affine.Point.some x y hP ∉ G) :
+    affineValue E x y (liftX E (xFunction E G)) = xMap E G (.some x y hP) ∧
+      affineValue E x y (liftY E (curve E G) (xFunction E G) (slopeFunction E G)) =
+        yMap E G (.some x y hP) := by
+  have hx := x_not_mem_kernelAbscissae E G hP hPG
+  have hf := regular_eval_xFunction E G x hx
+  have hg := regular_eval_slopeFunction E G x hx
+  have hxf : eval (RingHom.id K) x (xFunction E G) = xMap E G (.some x y hP) := by
+    rw [hf.2, xMap_eq_sum_abscissae E G hodd hP hPG]
+  have hxg : eval (RingHom.id K) x (slopeFunction E G) = slopeFactor E G x := by
+    rw [hg.2, slopeFactor_eq_sum_abscissae E G hodd x]
+  refine ⟨by simpa using hxf, ?_⟩
+  rw [affineValue_liftY E (curve E G) x y _ _ hf.1 hg.1, hxf, hxg]
+  have hc := completed_yMap E G hP hPG
+  change (slopeFactor E G x * (2 * y + E.a₁ * x + E.a₃) -
+    E.a₁ * xMap E G (.some x y hP) - E.a₃) / 2 = _
+  linear_combination -hc / 2
+
 /-- An inverse specializes correctly whenever both it and the function are regular. -/
 theorem affineValue_inv {x y : K} (hP : E.toAffine.Equation x y)
     {z : FunctionField E} (hz : RegularAtAffine E x z)
