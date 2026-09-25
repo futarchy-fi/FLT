@@ -6,6 +6,8 @@ Authors: krandder
 module
 
 public import FLT.Deformations.RepresentationTheory.AbsoluteGaloisGroup
+public import FLT.NumberField.Completion.Finite
+public import Mathlib.NumberTheory.LocalField.Basic
 public import Mathlib.RingTheory.Valuation.RamificationGroup
 
 /-!
@@ -74,5 +76,28 @@ theorem localClosureDecomposition_mem_inertia (σ : Field.absoluteGaloisGroup Kv
   apply sub_eq_zero.mp
   rw [← map_sub, IsLocalRing.residue_eq_zero_iff]
   exact hσ x
+
+open ValuativeRel
+
+/-- The valuative relation induced by the completion's existing adic valuation. -/
+@[instance_reducible]
+noncomputable def completionValuativeRel : ValuativeRel Kv :=
+  ValuativeRel.ofValuation (Valued.v (R := Kv))
+attribute [local instance] completionValuativeRel
+local instance : (Valued.v (R := Kv)).Compatible := Valuation.Compatible.ofValuation _
+local instance : IsValuativeTopology Kv :=
+  IsValuativeTopology.of_mem_nhds_zero_iff_vle (Valued.v (R := Kv))
+    (fun {_} ↦ Valued.is_topological_valuation _)
+local instance : ValuativeRel.IsNontrivial Kv :=
+  (ValuativeRel.isNontrivial_iff_isNontrivial (Valued.v (R := Kv))).mpr inferInstance
+/-- The adic completion is a nonarchimedean local field for its induced valuative relation. -/
+theorem completion_isNonarchimedeanLocalField : IsNonarchimedeanLocalField Kv := ⟨⟩
+/-- The canonical integer ring for this relation equals the original adic integer ring. -/
+theorem completion_integerRing_eq :
+    (𝒪[Kv] : Subring Kv) = (v.adicCompletionIntegers K).toSubring := by
+  ext x
+  change valuation Kv x ≤ 1 ↔ Valued.v x ≤ 1
+  simpa only [map_one] using
+    (ValuativeRel.isEquiv (valuation Kv) (Valued.v (R := Kv))) x 1
 
 end NumberField
