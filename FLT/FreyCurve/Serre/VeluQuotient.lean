@@ -5,15 +5,17 @@ Authors: krandder
 -/
 module
 
-public import FLT.FreyCurve.Serre.VeluMap
+public import FLT.FreyCurve.Serre.VeluAdditivity
+public import FLT.FreyCurve.Serre.VeluElliptic
 
 /-!
 # The kernel of a trivial torsion quotient
 
 The kernel is a finite Galois-stable subgroup of geometric points, so its Vélu coefficient
 sums descend. No torsion-dimension or torsion-cardinality theorem is used: positivity of the
-exponent suffices for finiteness. The geometric assertions about the candidate curve and its
-coordinate map remain separate obligations.
+exponent suffices for finiteness. For odd torsion, the affine coordinate equation is proved
+by the Vélu identity, and the candidate is proved elliptic. Additivity of its coordinate map
+remains a separate obligation.
 -/
 
 @[expose] public section
@@ -49,6 +51,55 @@ theorem torsionKernel_killed (P : (E⁄(AlgebraicClosure ℚ)).Point)
   change n • t.val = 0
   simpa only [Submodule.mem_torsionBy_iff, natCast_zsmul] using t.property
 
+
+/-- Odd torsion excludes nonzero kernel points fixed by negation. -/
+theorem torsionKernel_ne_neg (hn : Odd n) (P : torsionKernel E n q) (hP : P ≠ 0) :
+    P ≠ -P := by
+  apply ne_neg_of_odd_nsmul hn hP
+  apply Subtype.ext
+  exact torsionKernel_killed E n q P.val P.property
+
+/-- The coordinate sums for an odd torsion kernel satisfy the explicit candidate equation. -/
+theorem torsionKernel_equation [Fintype (torsionKernel E n q)] (hn : Odd n)
+    (P : (E⁄(AlgebraicClosure ℚ)).Point) (hP : P ∉ torsionKernel E n q) :
+    (curve (E⁄(AlgebraicClosure ℚ)) (torsionKernel E n q)).toAffine.Equation
+      (xMap (E⁄(AlgebraicClosure ℚ)) (torsionKernel E n q) P)
+      (yMap (E⁄(AlgebraicClosure ℚ)) (torsionKernel E n q) P) :=
+  equation_xMap_yMap_of_not_mem _ _ (torsionKernel_ne_neg E n q hn) P hP
+
+/-- The descended Vélu candidate for an odd torsion kernel is elliptic. -/
+theorem torsionQuotient_isElliptic [E.IsElliptic] [Fintype (torsionKernel E n q)]
+    (hn : Odd n) (E' : WeierstrassCurve ℚ)
+    (hcurve : E'.map (algebraMap ℚ (AlgebraicClosure ℚ)) =
+      curve (E⁄(AlgebraicClosure ℚ)) (torsionKernel E n q)) : E'.IsElliptic := by
+  let : (E⁄(AlgebraicClosure ℚ)).IsElliptic := by
+    change (E.map (algebraMap ℚ (AlgebraicClosure ℚ))).IsElliptic
+    infer_instance
+  have hd := curve_discr_ne_zero (E⁄(AlgebraicClosure ℚ)) (torsionKernel E n q)
+    (torsionKernel_ne_neg E n q hn)
+  refine ⟨isUnit_iff_ne_zero.mpr ?_⟩
+  intro hz
+  apply hd
+  rw [← hcurve, map_Δ, hz, map_zero]
+
+/-- The descended odd-kernel coordinate map lands on its elliptic target. -/
+theorem torsionKernel_landing [E.IsElliptic] [Fintype (torsionKernel E n q)] (hn : Odd n)
+    (E' : WeierstrassCurve ℚ)
+    (hcurve : E'.map (algebraMap ℚ (AlgebraicClosure ℚ)) =
+      curve (E⁄(AlgebraicClosure ℚ)) (torsionKernel E n q))
+    (P : (E⁄(AlgebraicClosure ℚ)).Point) (hP : P ∉ torsionKernel E n q) :
+    (E'⁄(AlgebraicClosure ℚ)).Nonsingular
+      (xMap (E⁄(AlgebraicClosure ℚ)) (torsionKernel E n q) P)
+      (yMap (E⁄(AlgebraicClosure ℚ)) (torsionKernel E n q) P) := by
+  let := torsionQuotient_isElliptic E n q hn E' hcurve
+  let : (E'⁄(AlgebraicClosure ℚ)).IsElliptic := by
+    change (E'.map (algebraMap ℚ (AlgebraicClosure ℚ))).IsElliptic
+    infer_instance
+  apply Affine.equation_iff_nonsingular.mp
+  change (E'.map (algebraMap ℚ (AlgebraicClosure ℚ))).toAffine.Equation _ _
+  rw [hcurve]
+  exact torsionKernel_equation E n q hn P hP
+
 /-- The kernel of a quotient of positive-order torsion is finite.
 This uses the proved finiteness theorem, not the admitted torsion-cardinality theorem. -/
 theorem torsionKernel_finite [E.IsElliptic] (hn : 0 < n) : Finite (torsionKernel E n q) := by
@@ -78,6 +129,19 @@ theorem exists_torsionQuotient_curve [E.IsElliptic] (hn : 0 < n)
   let : Fintype (torsionKernel E n q) :=
     @Fintype.ofFinite _ (torsionKernel_finite E n q hn)
   exact exists_curve E (torsionKernel E n q) (torsionKernel_stable E n q hfixed)
+
+/-- A Galois-invariant quotient of positive odd torsion has an elliptic Vélu candidate over ℚ. -/
+theorem exists_torsionQuotient_elliptic [E.IsElliptic] (hn : 0 < n) (hodd : Odd n)
+    (hfixed : ∀ g t, q (E.torsionGaloisRepresentation n g t) = q t) :
+    letI : Fintype (torsionKernel E n q) :=
+      @Fintype.ofFinite _ (torsionKernel_finite E n q hn)
+    ∃ E' : WeierstrassCurve ℚ, E'.IsElliptic ∧
+      E'.map (algebraMap ℚ (AlgebraicClosure ℚ)) =
+        curve (E⁄(AlgebraicClosure ℚ)) (torsionKernel E n q) := by
+  let : Fintype (torsionKernel E n q) :=
+    @Fintype.ofFinite _ (torsionKernel_finite E n q hn)
+  obtain ⟨E', hcurve⟩ := exists_torsionQuotient_curve E n q hn hfixed
+  exact ⟨E', torsionQuotient_isElliptic E n q hodd E' hcurve, hcurve⟩
 
 /-- Landing and additivity of the explicit Vélu map suffice for the rational maps in Serre's
 quotient branch. The kernel and Galois compatibility are proved, rather than supplied as
@@ -111,5 +175,33 @@ theorem rational_maps_of_velu [Fintype (torsionKernel E n q)]
   obtain ⟨φ, f, hφ, hf, _, _⟩ :=
     rational_maps_of_trivial_quotient_of_geometric_map E E' n q hq hfixed ψ hψ hker
   exact ⟨φ, f, hφ, hf⟩
+
+/-- In the odd-torsion branch, only additivity away from the kernel remains geometric input.
+Target ellipticity, the coordinate equation, exceptional addition cases, and descent are proved. -/
+theorem rational_maps_of_odd_velu [E.IsElliptic] [Fintype (torsionKernel E n q)]
+    (hn : Odd n) (hq : Function.Surjective q)
+    (hfixed : ∀ g t, q (E.torsionGaloisRepresentation n g t) = q t)
+    (E' : WeierstrassCurve ℚ)
+    (hcurve : E'.map (algebraMap ℚ (AlgebraicClosure ℚ)) =
+      curve (E⁄(AlgebraicClosure ℚ)) (torsionKernel E n q))
+    (hadd : ∀ P Q, P ∉ torsionKernel E n q → Q ∉ torsionKernel E n q →
+      P + Q ∉ torsionKernel E n q →
+      pointMap (E⁄(AlgebraicClosure ℚ)) (torsionKernel E n q) (E'⁄(AlgebraicClosure ℚ))
+          (torsionKernel_landing E n q hn E' hcurve) (P + Q) =
+        pointMap (E⁄(AlgebraicClosure ℚ)) (torsionKernel E n q) (E'⁄(AlgebraicClosure ℚ))
+            (torsionKernel_landing E n q hn E' hcurve) P +
+          pointMap (E⁄(AlgebraicClosure ℚ)) (torsionKernel E n q) (E'⁄(AlgebraicClosure ℚ))
+            (torsionKernel_landing E n q hn E' hcurve) Q) :
+    E'.IsElliptic ∧
+      ∃ (φ : (E⁄ℚ).Point →+ (E'⁄ℚ).Point) (f : ZMod n →+ (E'⁄ℚ).Point),
+        (∀ a, φ a = 0 → n • a = 0) ∧ Function.Injective f :=
+  ⟨torsionQuotient_isElliptic E n q hn E' hcurve,
+    rational_maps_of_velu E n q hq hfixed E'
+      (torsionKernel_landing E n q hn E' hcurve)
+      (pointMap_add_of_add_off_kernel _ _ _
+        (torsionKernel_landing E n q hn E' hcurve)
+        (by change (E'.map _).a₁ = _; rw [hcurve]; rfl)
+        (by change (E'.map _).a₃ = _; rw [hcurve]; rfl)
+        hadd)⟩
 
 end WeierstrassCurve.Velu
