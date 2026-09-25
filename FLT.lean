@@ -29,7 +29,11 @@ public import FLT.AINTLIB.DedekindResidue.ExplicitFormula.TestFunction
 public import FLT.AINTLIB.DedekindResidue.ExplicitFormula.WeilAssembly
 public import FLT.AINTLIB.DedekindResidue.ExplicitFormula.ZeroCapture
 public import FLT.AINTLIB.DedekindResidue.Lemma2
+public import FLT.AbsoluteGaloisGroup.CompletionComparison
+public import FLT.AbsoluteGaloisGroup.InertiaComparison
+public import FLT.AbsoluteGaloisGroup.LocalCompositum
 public import FLT.AbsoluteGaloisGroup.TameCharacter
+public import FLT.AbsoluteGaloisGroup.Unramified
 public import FLT.Assumptions.KnownIn1980s
 public import FLT.Assumptions.Mazur
 public import FLT.Assumptions.Odlyzko
@@ -50,6 +54,7 @@ public import FLT.Data.HurwitzRatHat
 public import FLT.Data.QHat
 public import FLT.DedekindDomain.AdicValuation
 public import FLT.DedekindDomain.Completion.BaseChange
+public import FLT.DedekindDomain.Completion.Embedding
 public import FLT.DedekindDomain.FiniteAdeleRing.BaseChange
 public import FLT.DedekindDomain.FiniteAdeleRing.IsDirectLimitRestricted
 public import FLT.DedekindDomain.FiniteAdeleRing.LocalUnits
@@ -100,6 +105,7 @@ public import FLT.FreyCurve.Serre.FixedLineDescent
 public import FLT.FreyCurve.Serre.FreyTwoTorsion
 public import FLT.FreyCurve.Serre.JoinCoprimeTorsion
 public import FLT.FreyCurve.Serre.ReducibleFiltration
+public import FLT.FreyCurve.Serre.UnramifiedCharacter
 public import FLT.GaloisRepresentation.Attachment
 public import FLT.GaloisRepresentation.Automorphic
 public import FLT.GaloisRepresentation.Cyclotomic
@@ -229,6 +235,7 @@ public import FLT.Mathlib.RingTheory.Norm.Quotient
 public import FLT.Mathlib.RingTheory.Polynomial.GaussLemma
 public import FLT.Mathlib.RingTheory.RamificationInertia.Basic
 public import FLT.Mathlib.RingTheory.SimpleRing.TensorProduct
+public import FLT.Mathlib.RingTheory.Spectrum.Prime.RingHom
 public import FLT.Mathlib.RingTheory.TensorProduct.Basis
 public import FLT.Mathlib.RingTheory.TensorProduct.Pi
 public import FLT.Mathlib.RingTheory.Unramified.LocalRing
