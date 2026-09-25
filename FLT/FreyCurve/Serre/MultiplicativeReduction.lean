@@ -23,6 +23,24 @@ open Polynomial IsLocalRing
 
 universe u
 
+/-- A valuation ring in an algebraically closed field contains a root of every monic quadratic. -/
+theorem ValuationSubring.exists_quadratic_root {L : Type*} [Field L] [IsAlgClosed L]
+    (A : ValuationSubring L) (t n : A) :
+    ∃ x : A, x ^ 2 - t * x + n = 0 := by
+  let : IsIntegrallyClosed A := (ValuationRing.integers A L).isIntegrallyClosed
+  let f : A[X] := X ^ 2 - C t * X + C n
+  have hf : f.Monic := by dsimp [f]; monicity!
+  have hd : (f.map (algebraMap A L)).degree = 2 := by
+    simpa [f, sub_eq_add_neg] using
+      (degree_quadratic (b := -(t : L)) (c := (n : L)) (one_ne_zero : (1 : L) ≠ 0))
+  obtain ⟨x, hx⟩ := IsAlgClosed.exists_root (f.map (algebraMap A L)) (by rw [hd]; decide)
+  have hint : IsIntegral A x := ⟨f, hf, by simpa [IsRoot, eval_map, aeval_def] using hx⟩
+  obtain ⟨y, hy⟩ := IsIntegrallyClosed.isIntegral_iff.mp hint
+  refine ⟨y, ?_⟩
+  apply IsFractionRing.injective A L
+  rw [map_zero]
+  simpa [f, IsRoot, ← hy] using hx
+
 namespace WeierstrassCurve
 
 /-- A multiplicative equation admits integral twisting parameters with unit
@@ -67,5 +85,27 @@ theorem quadraticRoot_variableChange_smul {K : Type*} [Field K]
   rw [hn, variableChange_def]
   ext <;> simp only [quadraticTwistOf, Units.val_inv_eq_inv_val, Units.val_mk0] <;>
     field_simp <;> ring
+
+/-- An invariant change of variables intertwines the two Galois actions on points. -/
+theorem exists_equivariant_pointEquiv_of_variableChange
+    {K Ω : Type*} [Field K] [Field Ω] [Algebra K Ω] [DecidableEq Ω]
+    (E E' : WeierstrassCurve K) [E'.IsElliptic]
+    (C : VariableChange Ω) (hC : C • E'.baseChange Ω = E.baseChange Ω)
+    (σ : Ω ≃ₐ[K] Ω) (hσ : C.map σ.toAlgHom.toRingHom = C) :
+    ∃ e : (E⁄Ω).Point ≃+ (E'⁄Ω).Point,
+      ∀ P, e (Affine.Point.map σ.toAlgHom P) = Affine.Point.map σ.toAlgHom (e P) := by
+  let e : (E⁄Ω).Point ≃+ (E'⁄Ω).Point :=
+    (Affine.Point.equivOfEq hC.symm).trans
+      (Affine.Point.equivVariableChange (E'.baseChange Ω) C)
+  refine ⟨e, ?_⟩
+  have hu : σ (C.u : Ω) = C.u := congrArg (fun D : VariableChange Ω ↦ (D.u : Ω)) hσ
+  have hr : σ C.r = C.r := congrArg VariableChange.r hσ
+  have hs : σ C.s = C.s := congrArg VariableChange.s hσ
+  have ht : σ C.t = C.t := congrArg VariableChange.t hσ
+  rintro (_ | ⟨x,y,h⟩)
+  · simp [e, ← Affine.Point.zero_def]
+  · simp only [e, AddEquiv.trans_apply, Affine.Point.equivOfEq_some,
+      Affine.Point.equivVariableChange_some, Affine.Point.map_some]
+    apply Affine.Point.some_eq_some <;> simp [hu, hr, hs, ht]
 
 end WeierstrassCurve
