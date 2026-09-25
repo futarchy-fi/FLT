@@ -6,14 +6,21 @@ Authors: krandder
 module
 
 public import FLT.Deformations.RepresentationTheory.GaloisRep
+public import FLT.FreyCurve.Serre.GoodReduction
+public import FLT.FreyCurve.Serre.LocalInertia
+public import FLT.FreyCurve.Serre.LocalTorsion
+public import FLT.FreyCurve.Serre.MultiplicativeReduction
+public import FLT.FreyCurve.Serre.ReducibleFiltration
+public import FLT.FreyCurve.Serre.Semistable
 
 /-!
 # Unipotent inertia and the characters of the Serre bridge
 
 The algebraic input for unramifiedness away from the torsion prime: if inertia acts
 with `(ρ(σ) - 1)² = 0`, it acts trivially on every one-dimensional submodule and
-quotient. The geometric assertion about inertia on semistable elliptic-curve torsion
-is a separate input, not proved in this file.
+quotient. The geometric input is derived from good reduction and Tate uniformization,
+including nonsplit multiplicative reduction. The final Frey theorem inherits the
+two existing Tate uniformization admissions; it introduces no new admissions.
 -/
 
 @[expose] public section
@@ -111,3 +118,68 @@ theorem sub_one_sq_eq_zero_of_exact (f : Module.End k V)
   change f (f v - v) - (f v - v) = 0
   rw [← hu, hi, sub_self]
 end Module.End
+
+
+open NumberField WeierstrassCurve ValuativeRel
+open scoped WeierstrassCurve.Affine
+
+namespace FreyPackage
+
+set_option backward.isDefEq.respectTransparency false in
+/-- At every prime different from the torsion prime, inertia on Frey torsion is
+square-unipotent. This uses the existing Tate uniformization and equivariance inputs. -/
+theorem inertia_sub_one_sq_eq_zero_away (P : FreyPackage) {ℓ : ℕ} (hℓ : ℓ.Prime)
+    (hne : ℓ ≠ P.p) :
+    ∀ σ ∈ localInertiaGroup hℓ.toHeightOneSpectrumRingOfIntegersRat,
+      ((P.freyCurve.galoisRep P.p P.hppos).toLocal
+        hℓ.toHeightOneSpectrumRingOfIntegersRat σ - 1) ^ 2 = 0 := by
+  classical
+  have hn := prime_isUnit_adicCompletionIntegers P.pp hℓ hne
+  let v := hℓ.toHeightOneSpectrumRingOfIntegersRat
+  let K := v.adicCompletion ℚ
+  let Ω := AlgebraicClosure K
+  let : ValuativeRel K := completionValuativeRel v
+  let : IsNonarchimedeanLocalField K := completion_isNonarchimedeanLocalField v
+  let A := localClosureValuation v
+  have hA : (A.comap (algebraMap K Ω)).toSubring = (algebraMap 𝒪[K] K).range := by
+    rw [localClosureValuation_comap]
+    have h : algebraMap (v.adicCompletionIntegers ℚ) K =
+        (v.adicCompletionIntegers ℚ).subtype := by
+      ext x
+      rfl
+    rw [h]
+    change (v.adicCompletionIntegers ℚ).toSubring.subtype.range = _
+    rw [Subring.range_subtype, Subring.algebraMap_def, Subring.range_subtype]
+    exact (completion_integerRing_eq v).symm
+  let f : v.adicCompletionIntegers ℚ →+* A :=
+    algebraMap (v.adicCompletionIntegers ℚ) (IntegralClosure (v.adicCompletionIntegers ℚ) Ω)
+  have hnA : IsUnit (P.p : A) := by simpa only [map_natCast] using hn.map f
+  intro σ hσ
+  have heq : (P.freyCurve.galoisRep P.p P.hppos).toLocal v =
+      (P.freyCurve.galoisRep P.p P.hppos).map (algebraMap ℚ K) := by
+    unfold GaloisRep.toLocal
+    congr 1
+    exact Subsingleton.elim _ _
+  change ((P.freyCurve.galoisRep P.p P.hppos).toLocal v σ - 1) ^ 2 = 0
+  rw [heq]
+  apply P.freyCurve.galoisRep_map_sub_one_sq_eq_zero P.p P.hppos σ
+  intro Q hQ
+  let σA := localClosureDecomposition v σ
+  have hσA := localClosureDecomposition_mem_inertia v σ hσ
+  have hmap (X : (P.freyCurve⁄Ω).Point) :
+      Affine.Point.map (W' := P.freyCurve.baseChange K)
+        (σA : Ω ≃ₐ[K] Ω).toAlgHom X =
+        Affine.Point.map (σ.toAlgHom.restrictScalars ℚ) X := by
+    cases X <;> rfl
+  obtain hgood | hmult := P.good_or_multiplicative 𝒪[K] K
+  · let := hgood
+    have hfix := inertia_fixes_torsion_of_good_reduction 𝒪[K] K Ω
+      (P.freyCurve.baseChange K) A hA hnA σA hσA Q hQ
+    rw [hmap] at hfix
+    rw [hfix,sub_self,map_zero,sub_self]
+  · let := hmult
+    simpa only [hmap] using
+      (P.freyCurve.baseChange K).inertia_sub_sub_eq_zero_of_multiplicative
+      A hA hnA σA hσA Q hQ
+
+end FreyPackage
