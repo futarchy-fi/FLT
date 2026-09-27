@@ -5,14 +5,14 @@ Authors: krandder
 -/
 module
 
-public import FLT.EllipticCurve.TorsionPairingAlternating
+public import FLT.EllipticCurve.TorsionPairingNondegenerate
 public import FLT.EllipticCurve.WeilPairing
 /-!
 # A bilinear candidate on the geometric-torsion interface
 
 The translation-ratio construction transports to the existing n-torsion
 module. It can be passed directly to `TorsionWeilPairing.ofBilinear` once
-nondegeneracy and Galois equivariance have been established.
+Galois equivariance has been established.
 -/
 
 @[expose] public section
@@ -51,4 +51,15 @@ theorem torsionPairingCandidate_self [IsAlgClosed F] [E.IsElliptic]
     inferInstanceAs (E.map (algebraMap F F)).IsElliptic
   exact Affine.FunctionField.torsionPairing_self (E⁄F) hn hchar
     (E.nTorsionEquivTorsionKernel n P)
+/-- The geometric pairing candidate is nondegenerate in its first argument. -/
+theorem torsionPairingCandidate_nondegenerate [IsAlgClosed F] [E.IsElliptic]
+    {n : ℕ} (hn : n ≠ 0) (hchar : (n : F) ≠ 0) (P : E.nTorsion n)
+    (hP : ∀ Q, E.torsionPairingCandidate hn hchar P Q = 0) : P = 0 := by
+  let : (E⁄F).IsElliptic :=
+    inferInstanceAs (E.map (algebraMap F F)).IsElliptic
+  apply (E.nTorsionEquivTorsionKernel n).injective
+  rw [map_zero]
+  apply Affine.FunctionField.torsionPairing_left_nondegenerate (E⁄F) hn hchar
+  intro Q
+  exact hP ((E.nTorsionEquivTorsionKernel n).symm Q)
 end WeierstrassCurve

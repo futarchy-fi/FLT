@@ -140,6 +140,7 @@ public import FLT.EllipticCurve.TorsionPairingAdapter
 public import FLT.EllipticCurve.TorsionPairingAlternating
 public import FLT.EllipticCurve.TorsionPairingBilinear
 public import FLT.EllipticCurve.TorsionPairingDescent
+public import FLT.EllipticCurve.TorsionPairingNondegenerate
 public import FLT.EllipticCurve.TorsionSpecialization
 public import FLT.EllipticCurve.TorsionStructure
 public import FLT.EllipticCurve.Translation
