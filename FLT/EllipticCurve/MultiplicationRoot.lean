@@ -77,4 +77,39 @@ theorem exists_pow_eq_pullback_of_span_eq_fiberIdeal {n : ℕ} (hn : n ≠ 0)
   apply exists_pow_eq_of_span_eq hn hg
   rw [← FractionalIdeal.spanSingleton_pow, he, hf]
 
+variable (W)
+
+/-- Translation ratios are independent of the generator of an affine
+principal fractional ideal. -/
+theorem translation_ratio_eq_of_span_eq {f g : W.FunctionField}
+    (h : FractionalIdeal.spanSingleton W.CoordinateRing⁰ f =
+      FractionalIdeal.spanSingleton W.CoordinateRing⁰ g) (Q : W.Point) :
+    translationPullback W Q f / f = translationPullback W Q g / g := by
+  obtain ⟨c, hc, rfl⟩ := exists_eq_const_mul_of_span_eq h
+  rw [map_mul, AlgHom.commutes, mul_div_mul_left _ _
+    ((map_ne_zero (algebraMap F W.FunctionField)).mpr hc)]
+
+/-- When a translation ratio is constant, translation by a sum multiplies
+the two ratios. -/
+theorem translation_ratio_add_of_constant (Q R : W.Point) {g : W.FunctionField} (hg : g ≠ 0) {c : F}
+    (hR : translationPullback W R g / g = algebraMap F W.FunctionField c) :
+    translationPullback W (Q + R) g / g =
+      (translationPullback W Q g / g) * (translationPullback W R g / g) := by
+  have ht := congrArg (fun φ : W.FunctionField →ₐ[F] W.FunctionField => φ g)
+    (translationPullback_add W Q R)
+  change translationPullback W Q (translationPullback W R g) =
+    translationPullback W (Q + R) g at ht
+  rw [hR, ← ht, (div_eq_iff hg).mp hR, map_mul, AlgHom.commutes]
+  ring
+
+/-- The translation ratios of an nth root of a multiplication pullback are
+multiplicative in the translating torsion point. -/
+theorem translation_ratio_add_of_pow_eq_pullback (n : ℕ) (hn : n ≠ 0)
+    (Q R : W.Point) (hR : n • R = 0)
+    {f g : W.FunctionField} (hg0 : g ≠ 0) (hg : g ^ n = nsmulPullback W n hn f) :
+    translationPullback W (Q + R) g / g =
+      (translationPullback W Q g / g) * (translationPullback W R g / g) := by
+  obtain ⟨c, _, _, hc⟩ := exists_translation_ratio_of_pow_eq_pullback W n hn R hR hg0 hg
+  exact translation_ratio_add_of_constant W Q R hg0 hc
+
 end WeierstrassCurve.Affine.FunctionField
