@@ -119,6 +119,7 @@ public import FLT.EllipticCurve.TorsionSpecialization
 public import FLT.EllipticCurve.TorsionStructure
 public import FLT.EllipticCurve.TwoTorsionCard
 public import FLT.EllipticCurve.WeilPairing
+public import FLT.EllipticCurve.WeilPairingDeterminant
 public import FLT.FreyCurve.Basic
 public import FLT.FreyCurve.FreyPackage
 public import FLT.FreyCurve.Mazur
