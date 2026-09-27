@@ -39,4 +39,19 @@ theorem exists_torsionFunction {x y : F} (h : W.Nonsingular x y) (n : ℕ)
   apply (ClassGroup.mk_eq_one_of_coe_ideal (I := CoordinateRing.XYIdeal' h ^ n) ?_).mp hclass
   rw [Units.val_pow_eq_pow_val, CoordinateRing.XYIdeal'_eq, FractionalIdeal.coeIdeal_pow]
 
+/-- An affine point is killed by `n` exactly when its point ideal to the `n`th
+power has a nonzero generator. -/
+theorem nsmul_eq_zero_iff_exists_torsionFunction {x y : F} (h : W.Nonsingular x y) (n : ℕ) :
+    n • (some x y h : W.Point) = 0 ↔
+    ∃ f : W.CoordinateRing, f ≠ 0 ∧
+      CoordinateRing.XYIdeal W x (C y) ^ n = Ideal.span {f} := by
+  refine ⟨exists_torsionFunction h n, ?_⟩
+  intro hf
+  apply toClass_injective
+  rw [map_nsmul, toClass_zero]
+  change ClassGroup.mk W.FunctionField (CoordinateRing.XYIdeal' h) ^ n = 1
+  rw [← map_pow]
+  apply (ClassGroup.mk_eq_one_of_coe_ideal (I := CoordinateRing.XYIdeal' h ^ n) ?_).mpr hf
+  rw [Units.val_pow_eq_pow_val, CoordinateRing.XYIdeal'_eq, FractionalIdeal.coeIdeal_pow]
+
 end WeierstrassCurve.Affine.Point
