@@ -249,4 +249,134 @@ theorem comul_counit :
   simpa [convolution]
     using AlgHom.congr_fun (convolution_counit_right R n u hn) a
 
+/-- Tensor cubes separate into triples of Kummer components. -/
+noncomputable def tripleComponentsEquiv :
+    Coordinate R n u ⊗[R] (Coordinate R n u ⊗[R] Coordinate R n u) ≃ₐ[R]
+      ((j k i : Fin n) → Component R n u i ⊗[R]
+        (Component R n u j ⊗[R] Component R n u k)) :=
+  (Algebra.TensorProduct.congr (AlgEquiv.refl : Coordinate R n u ≃ₐ[R] _)
+    (tensorComponentsEquiv R n u)).trans <|
+  (Algebra.TensorProduct.piRight R R (Coordinate R n u)
+    (fun j ↦ (k : Fin n) → Component R n u j ⊗[R] Component R n u k)).trans <|
+  AlgEquiv.piCongrRight fun j ↦
+    (Algebra.TensorProduct.piRight R R (Coordinate R n u)
+      (fun k ↦ Component R n u j ⊗[R] Component R n u k)).trans <|
+    AlgEquiv.piCongrRight fun k ↦
+      (Algebra.TensorProduct.comm R (Coordinate R n u) _).trans <|
+      (Algebra.TensorProduct.piRight R R
+        (Component R n u j ⊗[R] Component R n u k) (Component R n u)).trans <|
+      AlgEquiv.piCongrRight fun _i ↦ Algebra.TensorProduct.comm R _ _
+
+/-- The tensor-cube decomposition preserves the three factors. -/
+@[simp] theorem tripleComponentsEquiv_tmul
+    (a b c : Coordinate R n u) (i j k : Fin n) :
+    tripleComponentsEquiv R n u (a ⊗ₜ[R] (b ⊗ₜ[R] c)) j k i =
+      a i ⊗ₜ[R] (b j ⊗ₜ[R] c k) := by
+  simp [tripleComponentsEquiv]
+
+/-- Postcomposition sends a root point to the point with the mapped root. -/
+theorem comp_rootPoint {T : Type*} [CommRing T] [Algebra R T]
+    (h : S →ₐ[R] T) (i : Fin n) (x : S)
+    (hx : x ^ n = algebraMap R S ((u : R) ^ i.val)) :
+    h.comp (rootPoint R n u i x hx) =
+      rootPoint R n u i (h x) (by rw [← map_pow, hx, h.commutes]) := by
+  have he : h.comp (componentPoint R n u i x hx) =
+      componentPoint R n u i (h x) (by rw [← map_pow, hx, h.commutes]) := by
+    apply AdjoinRoot.algHom_ext
+    simp
+  simpa only [rootPoint, ← AlgHom.comp_assoc] using
+    congrArg (fun f ↦ f.comp (Pi.evalAlgHom R (Component R n u) i)) he
+
+/-- Evaluation of the left iterated comultiplication is left-associated convolution. -/
+theorem lift_iterated_comul_left (f g h : Coordinate R n u →ₐ[R] S)
+    (a : Coordinate R n u) :
+    Algebra.TensorProduct.lift f (Algebra.TensorProduct.lift g h (fun _ _ ↦ .all _ _))
+      (fun _ _ ↦ .all _ _)
+      ((Algebra.TensorProduct.assoc R R R (Coordinate R n u) _ _)
+        (Algebra.TensorProduct.map (comul R n u hn) (AlgHom.id R _) (comul R n u hn a))) =
+    convolution R n u hn (convolution R n u hn f g) h a := by
+  have h₁ : (Algebra.TensorProduct.lift f
+      (Algebra.TensorProduct.lift g h (fun _ _ ↦ .all _ _)) (fun _ _ ↦ .all _ _)).comp
+      (Algebra.TensorProduct.assoc R R R (Coordinate R n u) _ _).toAlgHom =
+      Algebra.TensorProduct.lift (Algebra.TensorProduct.lift f g (fun _ _ ↦ .all _ _))
+        h (fun _ _ ↦ .all _ _) := by
+    ext <;> simp [Algebra.TensorProduct.one_def]
+  have h₂ : (Algebra.TensorProduct.lift
+      (Algebra.TensorProduct.lift f g (fun _ _ ↦ .all _ _)) h (fun _ _ ↦ .all _ _)).comp
+      (Algebra.TensorProduct.map (comul R n u hn) (AlgHom.id R _)) =
+      Algebra.TensorProduct.lift (convolution R n u hn f g) h (fun _ _ ↦ .all _ _) := by
+    ext <;> simp [convolution]
+  exact (AlgHom.congr_fun h₁ _).trans (AlgHom.congr_fun h₂ (comul R n u hn a))
+
+/-- Evaluation of the right iterated comultiplication is right-associated convolution. -/
+theorem lift_iterated_comul_right (f g h : Coordinate R n u →ₐ[R] S)
+    (a : Coordinate R n u) :
+    Algebra.TensorProduct.lift f (Algebra.TensorProduct.lift g h (fun _ _ ↦ .all _ _))
+      (fun _ _ ↦ .all _ _)
+      (Algebra.TensorProduct.map (AlgHom.id R _) (comul R n u hn) (comul R n u hn a)) =
+    convolution R n u hn f (convolution R n u hn g h) a := by
+  have he : (Algebra.TensorProduct.lift f
+      (Algebra.TensorProduct.lift g h (fun _ _ ↦ .all _ _)) (fun _ _ ↦ .all _ _)).comp
+      (Algebra.TensorProduct.map (AlgHom.id R _) (comul R n u hn)) =
+      Algebra.TensorProduct.lift f (convolution R n u hn g h) (fun _ _ ↦ .all _ _) := by
+    ext <;> simp [convolution]
+  exact AlgHom.congr_fun he (comul R n u hn a)
+
+/-- Projection of a tensor cube is evaluation at the three universal component points. -/
+theorem tripleComponentsEquiv_apply (i j k : Fin n)
+    (a : Coordinate R n u ⊗[R] (Coordinate R n u ⊗[R] Coordinate R n u)) :
+    let S := Component R n u i ⊗[R] (Component R n u j ⊗[R] Component R n u k)
+    let f : Coordinate R n u →ₐ[R] S :=
+      Algebra.TensorProduct.includeLeft.comp (Pi.evalAlgHom R (Component R n u) i)
+    let g : Coordinate R n u →ₐ[R] S :=
+      Algebra.TensorProduct.includeRight.comp
+        (Algebra.TensorProduct.includeLeft.comp (Pi.evalAlgHom R (Component R n u) j))
+    let h : Coordinate R n u →ₐ[R] S :=
+      Algebra.TensorProduct.includeRight.comp
+        (Algebra.TensorProduct.includeRight.comp (Pi.evalAlgHom R (Component R n u) k))
+    tripleComponentsEquiv R n u a j k i =
+      Algebra.TensorProduct.lift f (Algebra.TensorProduct.lift g h (fun _ _ ↦ .all _ _))
+        (fun _ _ ↦ .all _ _) a := by
+  dsimp only
+  induction a using TensorProduct.inductionOn with
+  | add a b ha hb => simp_all
+  | tmul a b =>
+    induction b using TensorProduct.inductionOn with
+    | add b c hb hc => simp_all [TensorProduct.tmul_add]
+    | tmul b c => simp [Algebra.TensorProduct.tmul_mul_tmul]
+
+/-- The Kummer comultiplication is coassociative. -/
+theorem coassoc :
+    (Algebra.TensorProduct.assoc R R R (Coordinate R n u) _ _).toAlgHom.comp
+      ((Algebra.TensorProduct.map (comul R n u hn) (AlgHom.id R _)).comp (comul R n u hn)) =
+    (Algebra.TensorProduct.map (AlgHom.id R _) (comul R n u hn)).comp (comul R n u hn) := by
+  apply AlgHom.ext
+  intro a
+  apply (tripleComponentsEquiv R n u).injective
+  funext j k i
+  simp only [AlgHom.comp_apply, AlgEquiv.coe_toAlgHom, tripleComponentsEquiv_apply]
+  rw [lift_iterated_comul_left, lift_iterated_comul_right]
+  let S := Component R n u i ⊗[R] (Component R n u j ⊗[R] Component R n u k)
+  let fi : Component R n u i →ₐ[R] S := Algebra.TensorProduct.includeLeft
+  let fj : Component R n u j →ₐ[R] S :=
+    Algebra.TensorProduct.includeRight.comp Algebra.TensorProduct.includeLeft
+  let fk : Component R n u k →ₐ[R] S :=
+    Algebra.TensorProduct.includeRight.comp Algebra.TensorProduct.includeRight
+  change convolution R n u hn
+      (convolution R n u hn (fi.comp (Pi.evalAlgHom R (Component R n u) i))
+        (fj.comp (Pi.evalAlgHom R (Component R n u) j)))
+      (fk.comp (Pi.evalAlgHom R (Component R n u) k)) a =
+    convolution R n u hn (fi.comp (Pi.evalAlgHom R (Component R n u) i))
+      (convolution R n u hn (fj.comp (Pi.evalAlgHom R (Component R n u) j))
+        (fk.comp (Pi.evalAlgHom R (Component R n u) k))) a
+  rw [← rootPoint_root R n u i, ← rootPoint_root R n u j, ← rootPoint_root R n u k]
+  simp only [comp_rootPoint]
+  rw [convolution_rootPoint_assoc]
+
+/-- The Kummer coordinate algebra carries the bialgebra defined by the carry formula. -/
+@[instance_reducible]
+noncomputable def bialgebra : Bialgebra R (Coordinate R n u) :=
+  Bialgebra.ofAlgHom (comul R n u hn) (counit R n u hn)
+    (coassoc R n u hn) (counit_comul R n u hn) (comul_counit R n u hn)
+
 end KummerAlgebra
