@@ -412,6 +412,7 @@ public import FLT.TateCurve.FiniteExtension
 public import FLT.TateCurve.InseparableLifting
 public import FLT.TateCurve.Integral
 public import FLT.TateCurve.LocalField
+public import FLT.TateCurve.LocalUniformization
 public import FLT.TateCurve.Naturality
 public import FLT.TateCurve.Points
 public import FLT.TateCurve.QuadraticLift
