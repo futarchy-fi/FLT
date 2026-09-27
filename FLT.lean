@@ -298,7 +298,10 @@ public import FLT.GroupScheme.KummerParameter
 public import FLT.GroupScheme.KummerPoints
 public import FLT.GroupScheme.KummerTwist
 public import FLT.GroupScheme.ModelPoints
+public import FLT.GroupScheme.PadicLatticePatching
+public import FLT.GroupScheme.PadicModulePatching
 public import FLT.GroupScheme.PadicPatchingArithmetic
+public import FLT.GroupScheme.PadicPatchingRings
 public import FLT.GroupScheme.QuadraticDescent
 public import FLT.GroupScheme.QuadraticTwist
 public import FLT.GroupScheme.QuadraticTwistCoassociativity
