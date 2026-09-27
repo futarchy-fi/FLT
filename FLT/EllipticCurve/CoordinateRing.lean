@@ -19,8 +19,11 @@ same nonzero principal ideal differ by a scalar in the ground field.
 
 open Polynomial
 open scoped Polynomial.Bivariate
+
 namespace WeierstrassCurve.Affine.CoordinateRing
+
 variable {F : Type*} [Field F] {W : WeierstrassCurve.Affine F}
+
 /-- Every unit of the affine coordinate ring is a nonzero constant. -/
 theorem exists_eq_algebraMap_of_isUnit {f : W.CoordinateRing} (hf : IsUnit f) :
     ∃ c : F, c ≠ 0 ∧ algebraMap F W.CoordinateRing c = f := by
@@ -49,6 +52,7 @@ theorem exists_eq_algebraMap_of_isUnit {f : W.CoordinateRing} (hf : IsUnit f) :
     exact not_isUnit_zero hf
   · rw [Polynomial.eq_C_of_degree_le_zero hp]
     simp [Algebra.smul_def, IsScalarTower.algebraMap_apply F F[X] W.CoordinateRing]
+
 /-- Generators of the same principal ideal differ by a nonzero ground-field scalar. -/
 theorem exists_eq_smul_of_span_eq {f g : W.CoordinateRing}
     (h : Ideal.span {f} = Ideal.span {g}) :
@@ -91,5 +95,12 @@ theorem XYIdeal_le_XYIdeal_iff {x y x' y' : F} (h : W.Equation x' y') :
     exact ⟨(sub_eq_zero.mp hx).symm, (sub_eq_zero.mp hy).symm⟩
   · rintro ⟨rfl, rfl⟩
     exact le_rfl
+
+/-- Extending scalars sends a point ideal to the ideal of the mapped point. -/
+theorem map_XYIdeal {L : Type*} [Field L] (φ : F →+* L) (x y : F) :
+    Ideal.map (map W φ) (XYIdeal W x (C y)) =
+      XYIdeal (W.map φ) (φ x) (C (φ y)) := by
+  simp only [XYIdeal, Ideal.map_span, Set.image_pair, XClass, YClass, map_mk,
+    Polynomial.map_sub, Polynomial.map_C, Polynomial.map_X, Polynomial.coe_mapRingHom]
 
 end WeierstrassCurve.Affine.CoordinateRing
