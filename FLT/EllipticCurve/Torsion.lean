@@ -5,7 +5,7 @@ Authors: Kevin Buzzard
 -/
 module
 
-public import FLT.EllipticCurve.NTorsionFinite
+public import FLT.EllipticCurve.NTorsionCardOfSeparable
 public import FLT.EllipticCurve.TorsionStructure
 public import FLT.EllipticCurve.TwoTorsionCard
 public import Mathlib.Topology.Instances.ZMod
@@ -89,6 +89,37 @@ theorem WeierstrassCurve.n_torsion_card_two [IsSepClosed k] (h2 : (2 : k) ≠ 0)
   rw [Nat.card_congr (e 2)]
   exact (E⁄k).card_two_torsion h2
 
+/-- For odd `n`, separability of the division polynomial suffices for the
+expected torsion cardinality over a separably closed field. -/
+theorem WeierstrassCurve.n_torsion_card_odd_of_separable [IsSepClosed k] {n : ℕ}
+    (hn : Odd n) (hchar : (n : k) ≠ 0) (hsep : (E.preΨ n).Separable) :
+    Nat.card (E.nTorsion n) = n ^ 2 := by
+  have : (E⁄k).IsElliptic := by
+    change (E.map (algebraMap k k)).IsElliptic
+    infer_instance
+  have hs : ((E⁄k).preΨ n).Separable := by
+    change ((E.map (algebraMap k k)).preΨ n).Separable
+    rw [map_preΨ]
+    exact hsep.map
+  let e : E.nTorsion n ≃ {P : (E⁄k).Point // n • P = 0} :=
+    { toFun := fun P => ⟨P.val, by
+        simpa only [Submodule.mem_torsionBy_iff, natCast_zsmul] using P.property⟩
+      invFun := fun P => ⟨P.val, by
+        simpa only [Submodule.mem_torsionBy_iff, natCast_zsmul] using P.property⟩
+      left_inv := fun _ => rfl
+      right_inv := fun _ => rfl }
+  rw [Nat.card_congr e]
+  exact (E⁄k).card_odd_torsion_of_separable hn hchar hs
+
+/-- For prime `p`, separability of the division polynomial suffices for the
+expected torsion cardinality over a separably closed field. -/
+theorem WeierstrassCurve.n_torsion_card_prime_of_separable [IsSepClosed k] {p : ℕ}
+    (hp : p.Prime) (hchar : (p : k) ≠ 0) (hsep : (E.preΨ p).Separable) :
+    Nat.card (E.nTorsion p) = p ^ 2 := by
+  rcases hp.eq_two_or_odd' with rfl | hodd
+  · exact E.n_torsion_card_two hchar
+  · exact E.n_torsion_card_odd_of_separable hodd hchar hsep
+
 /-- The prescribed torsion cardinalities characterize a power of the cyclic group of order `n`. -/
 theorem group_theory_lemma {A : Type*} [AddCommGroup A] {n : ℕ} (hn : 0 < n) (r : ℕ)
     (h : ∀ d : ℕ, d ∣ n → Nat.card (Submodule.torsionBy ℤ A d) = d ^ r) :
@@ -110,6 +141,19 @@ theorem WeierstrassCurve.n_torsion_dimension_two [IsSepClosed k] (h2 : (2 : k) �
     rcases (Nat.dvd_prime Nat.prime_two).mp hd with rfl | rfl
     · simpa only [one_pow] using E.n_torsion_card_one
     · exact E.n_torsion_card_two h2
+  exact ⟨φ.trans (RingEquiv.piFinTwo _).toAddEquiv⟩
+
+/-- For a prime, a separable division polynomial gives the product
+decomposition of the torsion group over a separably closed field. -/
+theorem WeierstrassCurve.n_torsion_dimension_prime_of_separable [IsSepClosed k] {p : ℕ}
+    (hp : p.Prime) (hchar : (p : k) ≠ 0) (hsep : (E.preΨ p).Separable) :
+    Nonempty (E.nTorsion p ≃+ (ZMod p) × (ZMod p)) := by
+  obtain ⟨φ⟩ : Nonempty (E.nTorsion p ≃+ (Fin 2 → ZMod p)) := by
+    apply group_theory_lemma hp.pos
+    intro d hd
+    rcases (Nat.dvd_prime hp).mp hd with rfl | rfl
+    · simpa only [one_pow] using E.n_torsion_card_one
+    · exact E.n_torsion_card_prime_of_separable hp hchar hsep
   exact ⟨φ.trans (RingEquiv.piFinTwo _).toAddEquiv⟩
 
 -- I only need this if n is prime but there's no harm thinking about it in general I guess.
