@@ -130,6 +130,7 @@ public import FLT.FreyCurve.Serre.GoodReductionAtP
 public import FLT.FreyCurve.Serre.GoodReductionAtPProof
 public import FLT.FreyCurve.Serre.GoodReductionSpecialization
 public import FLT.FreyCurve.Serre.JoinCoprimeTorsion
+public import FLT.FreyCurve.Serre.KummerInertia
 public import FLT.FreyCurve.Serre.LocalInertia
 public import FLT.FreyCurve.Serre.LocalResidue
 public import FLT.FreyCurve.Serre.LocalTorsion
@@ -144,6 +145,8 @@ public import FLT.FreyCurve.Serre.Semistable
 public import FLT.FreyCurve.Serre.StableLineQuotient
 public import FLT.FreyCurve.Serre.TateInertia
 public import FLT.FreyCurve.Serre.TateTorsion
+public import FLT.FreyCurve.Serre.TateUnramified
+public import FLT.FreyCurve.Serre.Unramified
 public import FLT.FreyCurve.Serre.UnramifiedCharacter
 public import FLT.FreyCurve.Serre.Velu
 public import FLT.FreyCurve.Serre.VeluAdditivity
