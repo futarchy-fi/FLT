@@ -6,19 +6,19 @@ Authors: krandder
 module
 
 public import FLT.GroupScheme.GlobalModel
-public import FLT.GroupScheme.RaynaudRigidity
+public import FLT.GroupScheme.RaynaudRankThreeClassification
 
 /-!
-# Extension of generic morphisms in Oort–Tate coordinates
+# Extension of generic morphisms from order-three models
 
-Generic morphisms between three-adic models equipped with `OortTateThreeBasis`
-extend uniquely. Integrality of the generic coordinate map makes the first
-graph projection surjective, so its bialgebra inverse and the second projection
-give the extension. No presentation of the graph closure is assumed.
+Every generic morphism from an order-three three-adic model extends uniquely,
+even when the target has larger order. The classification constructs power bases
+for the source and its graph closure. Integral rigidity makes the first graph
+projection surjective; its bialgebra inverse and the second projection then give
+the extension.
 
-This is a theorem about explicitly presented rank-three models. It does not
-prove the existence of presentations for arbitrary rank-three models, or the
-full Raynaud extension theorem for models killed by powers of three.
+The unrestricted theorem for sources killed by arbitrary powers of three remains
+open. The order-three result has no presentation or basis hypotheses.
 -/
 
 @[expose] public noncomputable section
@@ -104,16 +104,13 @@ theorem GenericGaloisHom.graphFst_surjective_of_oortTateThreeBasis
     (Q : OortTateThreeBasis ℤ_[3] Y.CoordinateRing) : Function.Surjective f.graphFst :=
   f.graphFst_surjective_of_integral (Q.generic_map_integral P f.toBialgHom)
 
-/-- Generic morphisms between explicitly presented rank-three three-adic models
-extend uniquely. The unrestricted Raynaud theorem still requires classification
-and higher-rank rigidity. -/
-theorem raynaud_extend_generic_morphism_of_oortTateThreeBasis
-    (X Y : FF ℤ_[3] ℚ_[3])
-    (P : OortTateThreeBasis ℤ_[3] X.CoordinateRing)
-    (Q : OortTateThreeBasis ℤ_[3] Y.CoordinateRing) (f : GenericGaloisHom X Y) :
+/-- Surjectivity of the first graph projection gives the unique integral extension. -/
+theorem raynaud_extend_generic_morphism_of_graphFst_surjective
+    (X Y : FF ℤ_[3] ℚ_[3]) (f : GenericGaloisHom X Y)
+    (hf : Function.Surjective f.graphFst) :
     ∃! fO : ModelHom X Y, genericHom fO = f := by
   let e := BialgEquiv.ofBijective f.graphFst
-    ⟨f.graphFst_injective, f.graphFst_surjective_of_oortTateThreeBasis P Q⟩
+    ⟨f.graphFst_injective, hf⟩
   let g : ModelHom X f.graphClosure := e.symm.toBialgHom
   have hg : ∀ x : X.Points, genericHom g x = x := by
     have he : g.comp f.graphFst = BialgHom.id ℤ_[3] X.CoordinateRing := by
@@ -130,6 +127,15 @@ theorem raynaud_extend_generic_morphism_of_oortTateThreeBasis
     rw [genericHom_comp, f.genericHom_graphSnd, hg]
   exact ⟨fO, hO, fun gO hgO ↦
     raynaud_extend_generic_morphism_unique X Y f gO fO hgO hO⟩
+
+/-- Generic morphisms between models with Oort–Tate presentations extend uniquely. -/
+theorem raynaud_extend_generic_morphism_of_oortTateThreeBasis
+    (X Y : FF ℤ_[3] ℚ_[3])
+    (P : OortTateThreeBasis ℤ_[3] X.CoordinateRing)
+    (Q : OortTateThreeBasis ℤ_[3] Y.CoordinateRing) (f : GenericGaloisHom X Y) :
+    ∃! fO : ModelHom X Y, genericHom fO = f :=
+  raynaud_extend_generic_morphism_of_graphFst_surjective X Y f
+    (f.graphFst_surjective_of_oortTateThreeBasis P Q)
 
 /-- It suffices to find odd power bases for the two models. The cubic equation,
 the comultiplication formula, and the parameter relation follow from the Hopf laws. -/
@@ -150,5 +156,36 @@ theorem raynaud_extend_generic_morphism_of_odd_power_basis
   exact raynaud_extend_generic_morphism_of_oortTateThreeBasis X Y
     (OortTateThreeBasis.ofOddPowerBasis x bX hX0 hX1 hX2 hSX)
     (OortTateThreeBasis.ofOddPowerBasis y bY hY0 hY1 hY2 hSY) f
+
+/-- Injective Hopf maps between arbitrary order-three three-adic models are surjective.
+The presentations are constructed from the models, with no classification hypothesis. -/
+theorem raynaud_integral_rigidity_of_order_three
+    (X Y : FF ℤ_[3] ℚ_[3]) (hX : Nat.card X.Points = 3) (hY : Nat.card Y.Points = 3)
+    (f : X.CoordinateRing →ₐc[ℤ_[3]] Y.CoordinateRing) (hf : Function.Injective f) :
+    Function.Surjective f := by
+  obtain ⟨P⟩ := RankThree.model_presentation X hX
+  obtain ⟨Q⟩ := RankThree.model_presentation Y hY
+  exact P.surjective Q f hf
+
+/-- An order-three source makes its first graph projection an integral isomorphism.
+The target can have arbitrary order. -/
+theorem GenericGaloisHom.graphFst_surjective_of_order_three
+    {X Y : FF ℤ_[3] ℚ_[3]} (f : GenericGaloisHom X Y) (hX : Nat.card X.Points = 3) :
+    Function.Surjective f.graphFst :=
+  raynaud_integral_rigidity_of_order_three X f.graphClosure hX hX f.graphFst f.graphFst_injective
+
+/-- Every generic morphism from an order-three three-adic model extends uniquely,
+with no restriction on the target's order and no chosen-basis hypotheses. -/
+theorem raynaud_extend_generic_morphism_of_order_three
+    (X Y : FF ℤ_[3] ℚ_[3]) (hX : Nat.card X.Points = 3) (f : GenericGaloisHom X Y) :
+    ∃! fO : ModelHom X Y, genericHom fO = f :=
+  raynaud_extend_generic_morphism_of_graphFst_surjective X Y f
+    (f.graphFst_surjective_of_order_three hX)
+
+/-- The order-three extension theorem expressed using the integral coordinate rank. -/
+theorem raynaud_extend_generic_morphism_of_rank_three
+    (X Y : FF ℤ_[3] ℚ_[3]) (hX : Module.finrank ℤ_[3] X.CoordinateRing = 3)
+    (f : GenericGaloisHom X Y) : ∃! fO : ModelHom X Y, genericHom fO = f :=
+  raynaud_extend_generic_morphism_of_order_three X Y ((RankThree.model_finrank X).symm.trans hX) f
 
 end ThreeAdicPlan

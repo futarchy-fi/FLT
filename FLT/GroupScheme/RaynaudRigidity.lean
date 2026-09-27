@@ -18,8 +18,9 @@ coefficient `c` with `2 a c = -3`. An injective bialgebra map between two such
 presentations over `ℤ_[3]` is surjective: it scales the odd generator by `u`,
 and compatibility with comultiplication forces `u² ∣ 3`, hence `u` is a unit.
 
-Existence of these coordinates for arbitrary rank-three finite flat models,
-and rigidity for higher-rank models killed by powers of three, remain open.
+The file `RaynaudRankThreeClassification` constructs these coordinates for
+arbitrary order-three models over `ℤ_[3]`. Rigidity for higher-order models
+killed by powers of three remains open.
 -/
 
 @[expose] public noncomputable section
