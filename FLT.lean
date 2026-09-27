@@ -228,6 +228,7 @@ public import FLT.GaloisRepresentation.Automorphic
 public import FLT.GaloisRepresentation.Cyclotomic
 public import FLT.GaloisRepresentation.HardlyRamified.AtTwo
 public import FLT.GaloisRepresentation.HardlyRamified.B5Inputs
+public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.FixedVector
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.LogEulerProduct
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.LogEulerRemainder
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.PrimeSummability
