@@ -5,6 +5,7 @@ Authors: Kevin Buzzard
 -/
 module
 
+public import FLT.EllipticCurve.DivisionPolynomialSeparable
 public import FLT.EllipticCurve.NTorsionCardOfSeparable
 public import FLT.EllipticCurve.TorsionStructure
 public import FLT.EllipticCurve.TwoTorsionCard
@@ -120,6 +121,12 @@ theorem WeierstrassCurve.n_torsion_card_prime_of_separable [IsSepClosed k] {p : 
   · exact E.n_torsion_card_two hchar
   · exact E.n_torsion_card_odd_of_separable hodd hchar hsep
 
+/-- The three-torsion subgroup has nine elements over a separably closed field
+of characteristic different from three. -/
+theorem WeierstrassCurve.n_torsion_card_three [IsSepClosed k] (h3 : (3 : k) ≠ 0) :
+    Nat.card (E.nTorsion 3) = 3 ^ 2 := by
+  exact E.n_torsion_card_odd_of_separable (by decide) h3 (E.separable_preΨ_three h3)
+
 /-- The prescribed torsion cardinalities characterize a power of the cyclic group of order `n`. -/
 theorem group_theory_lemma {A : Type*} [AddCommGroup A] {n : ℕ} (hn : 0 < n) (r : ℕ)
     (h : ∀ d : ℕ, d ∣ n → Nat.card (Submodule.torsionBy ℤ A d) = d ^ r) :
@@ -155,6 +162,13 @@ theorem WeierstrassCurve.n_torsion_dimension_prime_of_separable [IsSepClosed k] 
     · simpa only [one_pow] using E.n_torsion_card_one
     · exact E.n_torsion_card_prime_of_separable hp hchar hsep
   exact ⟨φ.trans (RingEquiv.piFinTwo _).toAddEquiv⟩
+
+/-- Over a separably closed field of characteristic different from three,
+the three-torsion group is the product of two cyclic groups of order three. -/
+theorem WeierstrassCurve.n_torsion_dimension_three [IsSepClosed k] (h3 : (3 : k) ≠ 0) :
+    Nonempty (E.nTorsion 3 ≃+ (ZMod 3) × (ZMod 3)) := by
+  exact E.n_torsion_dimension_prime_of_separable Nat.prime_three h3
+    (E.separable_preΨ_three h3)
 
 -- I only need this if n is prime but there's no harm thinking about it in general I guess.
 -- It follows from the previous theorem using pure group theory (possibly including the
