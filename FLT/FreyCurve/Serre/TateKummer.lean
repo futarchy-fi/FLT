@@ -6,6 +6,7 @@ Authors: krandder
 module
 
 public import FLT.FreyCurve.Serre.TateTorsion
+public import FLT.GroupScheme.KummerAlgebra
 
 /-!
 # Normalized Kummer representatives of Tate torsion
@@ -84,6 +85,8 @@ theorem normalized_tate_torsion_rep_injective {n : ℕ} (hn : 0 < n)
 /-- Normalized solutions of the Kummer equations for a unit parameter. -/
 def TateKummerPoint (n : ℕ) (u : Ωˣ) :=
   {ix : Fin n × Ωˣ // ix.2 ^ n = u ^ ix.1.val}
+
+section Rescaling
 
 variable {n : ℕ} (b u : Ωˣ) (hq : E.qUnitSepClosure Ω = b ^ n * u)
 
@@ -168,5 +171,22 @@ theorem kummerTorsionPoint_galois (σ : Ω ≃ₐ[K] Ω)
   rw [E.tatePoint_galois]
   congr 1
   rw [map_mul, map_pow, hb, hi, hx]
+
+end Rescaling
+
+open scoped TensorProduct in
+/-- The geometric points of the explicit Kummer coordinate algebra are in bijection
+with Tate torsion after writing the Tate parameter as `b ^ n * u`.
+This is an equivalence of sets; a Hopf structure on the coordinate algebra is still
+needed to state it as an additive equivalence of geometric points. -/
+noncomputable def kummerModelPointsEquiv {R : Type*} [CommRing R]
+    [Algebra R K] [Algebra R Ω] [IsScalarTower R K Ω]
+    (n : ℕ) (hn : 0 < n) (u : Rˣ) (b : Ωˣ)
+    (hq : E.qUnitSepClosure Ω = b ^ n * Units.map (algebraMap R Ω).toMonoidHom u) :
+    (K ⊗[R] KummerAlgebra.Coordinate R n u →ₐ[K] Ω) ≃
+      AddSubgroup.torsionBy (E⁄Ω).Point (n : ℤ) :=
+  ((Algebra.TensorProduct.liftEquivRight R K (KummerAlgebra.Coordinate R n u) Ω).symm.trans
+    (KummerAlgebra.coordinateUnitPointsEquiv R n u hn)).trans
+      (E.kummerTorsionEquiv b (Units.map (algebraMap R Ω).toMonoidHom u) hq hn)
 
 end WeierstrassCurve
