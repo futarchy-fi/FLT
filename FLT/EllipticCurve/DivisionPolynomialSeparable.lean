@@ -42,4 +42,23 @@ theorem separable_preΨ_three (h3 : (3 : k) ≠ 0) : (W.preΨ 3).Separable := by
   · simpa only [Nat.cast_ofNat, preΨ_three, ΨSq_two] using
       W.isCoprime_preΨ_ΨSq_two (show Odd 3 by decide)
 
+/-- A congruence between the squared derivative and the multiplication numerator
+forces an odd division polynomial to be separable. The criterion works in
+characteristic two as well as in odd characteristic. -/
+theorem separable_preΨ_of_derivative_sq {n : ℕ} (hn : Odd n) (hchar : (n : k) ≠ 0)
+    (hd : W.preΨ n ∣ W.Ψ₂Sq * (W.preΨ n).derivative ^ 2 - C ((n : k) ^ 2) * W.Φ n) :
+    (W.preΨ n).Separable := by
+  obtain ⟨q, hq⟩ := hd
+  obtain ⟨a, b, hab⟩ := W.isCoprime_Φ_ΨSq n
+  have he : ¬Even (n : ℤ) := by
+    simpa only [Int.even_coe_nat] using (Nat.not_even_iff_odd.mpr hn)
+  simp only [ΨSq, ite_eq_right he, mul_one] at hab
+  have hi : C (((n : k) ^ 2)⁻¹) * C ((n : k) ^ 2) = (1 : k[X]) := by
+    rw [← C_mul, inv_mul_cancel₀ (pow_ne_zero 2 hchar), C_1]
+  rw [Polynomial.separable_def']
+  refine ⟨C (((n : k) ^ 2)⁻¹) * (b * C ((n : k) ^ 2) * W.preΨ n - a * q),
+    C (((n : k) ^ 2)⁻¹) * a * W.Ψ₂Sq * (W.preΨ n).derivative, ?_⟩
+  linear_combination C (((n : k) ^ 2)⁻¹) * a * hq +
+    C (((n : k) ^ 2)⁻¹) * C ((n : k) ^ 2) * hab + hi
+
 end WeierstrassCurve
