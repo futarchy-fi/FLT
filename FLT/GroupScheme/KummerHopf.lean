@@ -379,4 +379,139 @@ noncomputable def bialgebra : Bialgebra R (Coordinate R n u) :=
   Bialgebra.ofAlgHom (comul R n u hn) (counit R n u hn)
     (coassoc R n u hn) (counit_comul R n u hn) (comul_counit R n u hn)
 
+/-- The index of the inverse of a Kummer point. -/
+def negComponent (i : Fin n) : Fin n :=
+  ⟨if i.val = 0 then 0 else n - i.val, by split <;> omega⟩
+
+/-- An index and its negative add to a multiple of the torsion order. -/
+theorem add_negComponent (i : Fin n) :
+    i.val + (negComponent n hn i).val = n * ((i.val + (negComponent n hn i).val) / n) := by
+  by_cases hi : i.val = 0
+  · simp [negComponent, hi]
+  · have h : i.val + (n - i.val) = n := by omega
+    simp [negComponent, hi, h, Nat.div_self hn]
+
+/-- Adding an index and its negative gives component zero. -/
+theorem sum_negComponent (i : Fin n) : sumComponent n hn i (negComponent n hn i) = ⟨0, hn⟩ := by
+  apply Fin.ext
+  change (i.val + (negComponent n hn i).val) % n = 0
+  rw [add_negComponent n hn i, Nat.mul_mod_right]
+
+/-- The inverse root satisfies the equation of the negative component. -/
+theorem inverse_unit_pow (i : Fin n) (x : Sˣ)
+    (hx : x ^ n = (Units.map (algebraMap R S) u) ^ i.val) :
+    (x⁻¹ * (Units.map (algebraMap R S) u) ^ ((i.val + (negComponent n hn i).val) / n)) ^ n =
+      (Units.map (algebraMap R S) u) ^ (negComponent n hn i).val := by
+  let v := Units.map (algebraMap R S).toMonoidHom u
+  change x ^ n = v ^ i.val at hx
+  change (x⁻¹ * v ^ ((i.val + (negComponent n hn i).val) / n)) ^ n = v ^ _
+  apply mul_left_cancel (a := v ^ i.val)
+  rw [mul_pow, inv_pow, hx, ← mul_assoc, mul_inv_cancel, one_mul, ← pow_mul,
+    Nat.mul_comm _ n, ← add_negComponent n hn i, pow_add]
+
+/-- A unit root and its inverse point convolve to the identity point. -/
+theorem convolution_inverse_right (i : Fin n) (x : Sˣ)
+    (hx : x ^ n = (Units.map (algebraMap R S) u) ^ i.val) :
+    convolution R n u hn
+      (rootPoint R n u i (x : S) (by simpa using congrArg Units.val hx))
+      (rootPoint R n u (negComponent n hn i)
+        ((x⁻¹ * (Units.map (algebraMap R S) u) ^
+          ((i.val + (negComponent n hn i).val) / n) : Sˣ) : S)
+        (by simpa using congrArg Units.val (inverse_unit_pow R n u hn i x hx))) =
+      rootPoint R n u ⟨0, hn⟩ (1 : S) (by simp) := by
+  rw [convolution_rootPoint]
+  apply rootPoint_congr
+  · exact sum_negComponent n hn i
+  · have h : x * (x⁻¹ * (Units.map (algebraMap R S) u) ^
+        ((i.val + (negComponent n hn i).val) / n)) *
+        (Units.map (algebraMap R S) u)⁻¹ ^ ((i.val + (negComponent n hn i).val) / n) = 1 := by
+      simp [← mul_assoc]
+    simpa only [← map_inv, Units.val_mul, Units.val_pow_eq_pow_val, Units.coe_map,
+      Units.val_one, map_pow, MonoidHom.coe_ofClass] using congrArg Units.val h
+
+/-- Convolution of component points is commutative. -/
+theorem convolution_rootPoint_comm (i j : Fin n) (x y : S)
+    (hx : x ^ n = algebraMap R S ((u : R) ^ i.val))
+    (hy : y ^ n = algebraMap R S ((u : R) ^ j.val)) :
+    convolution R n u hn (rootPoint R n u i x hx) (rootPoint R n u j y hy) =
+      convolution R n u hn (rootPoint R n u j y hy) (rootPoint R n u i x hx) := by
+  simp only [convolution_rootPoint]
+  apply rootPoint_congr
+  · apply Fin.ext
+    simp [sumComponent, Nat.add_comm]
+  · simp [Nat.add_comm, mul_comm]
+
+/-- The distinguished root as a unit of its component algebra. -/
+noncomputable def rootUnit (i : Fin n) : (Component R n u i)ˣ :=
+  (root_isUnit R n u hn i).unit
+
+/-- The unit-valued distinguished root satisfies the component equation. -/
+theorem rootUnit_pow (i : Fin n) :
+    rootUnit R n u hn i ^ n = (Units.map (algebraMap R (Component R n u i)) u) ^ i.val := by
+  apply Units.ext
+  simpa [rootUnit] using root_pow R n u i
+
+/-- Pullback of inversion on Kummer points. -/
+noncomputable def antipode : Coordinate R n u →ₐ[R] Coordinate R n u :=
+  AlgHom.pi fun i ↦ rootPoint R n u (negComponent n hn i)
+    (((rootUnit R n u hn i)⁻¹ * (Units.map (algebraMap R (Component R n u i)) u) ^
+      ((i.val + (negComponent n hn i).val) / n) : (Component R n u i)ˣ) : Component R n u i)
+    (by
+      simpa using congrArg Units.val
+        (inverse_unit_pow R n u hn i (rootUnit R n u hn i) (rootUnit_pow R n u hn i)))
+
+/-- The antipode is a right convolution inverse of the universal point. -/
+theorem convolution_antipode_right :
+    convolution R n u hn (AlgHom.id R _) (antipode R n u hn) =
+      (Algebra.ofId R (Coordinate R n u)).comp (counit R n u hn) := by
+  apply AlgHom.ext
+  intro a
+  funext i
+  let e := Pi.evalAlgHom R (Component R n u) i
+  have h := congrArg (fun f : Coordinate R n u →ₐ[R] Component R n u i ↦ f a)
+    (convolution_inverse_right R n u hn i (rootUnit R n u hn i) (rootUnit_pow R n u hn i))
+  have hr : rootPoint R n u i (rootUnit R n u hn i : Component R n u i)
+      (by simpa using congrArg Units.val (rootUnit_pow R n u hn i)) = e := by
+    simpa [rootUnit] using rootPoint_root R n u i
+  rw [hr, ← ofId_comp_counit] at h
+  change (e.comp (convolution R n u hn _ _)) a = _
+  rw [comp_convolution, AlgHom.comp_id]
+  exact h
+
+/-- The antipode is a left convolution inverse of the universal point. -/
+theorem convolution_antipode_left :
+    convolution R n u hn (antipode R n u hn) (AlgHom.id R _) =
+      (Algebra.ofId R (Coordinate R n u)).comp (counit R n u hn) := by
+  apply AlgHom.ext
+  intro a
+  funext i
+  let e := Pi.evalAlgHom R (Component R n u) i
+  change (e.comp (convolution R n u hn _ _)) a = _
+  rw [comp_convolution, AlgHom.comp_id]
+  have he : e.comp (antipode R n u hn) =
+      rootPoint R n u (negComponent n hn i)
+        (((rootUnit R n u hn i)⁻¹ * (Units.map (algebraMap R (Component R n u i)) u) ^
+          ((i.val + (negComponent n hn i).val) / n) : (Component R n u i)ˣ) : Component R n u i)
+        (by
+          simpa using congrArg Units.val
+            (inverse_unit_pow R n u hn i (rootUnit R n u hn i) (rootUnit_pow R n u hn i))) := rfl
+  rw [he]
+  change convolution R n u hn _ (Pi.evalAlgHom R (Component R n u) i) a = _
+  rw [← rootPoint_root, convolution_rootPoint_comm, rootPoint_root]
+  have h := congrArg (fun f : Coordinate R n u →ₐ[R] Coordinate R n u ↦ e.comp f)
+    (convolution_antipode_right R n u hn)
+  rw [comp_convolution, AlgHom.comp_id, he] at h
+  exact AlgHom.congr_fun h a
+
+/-- The finite free Kummer coordinate algebra is a Hopf algebra over the coefficient ring. -/
+@[instance_reducible]
+noncomputable def hopfAlgebra : HopfAlgebra R (Coordinate R n u) := by
+  letI := bialgebra R n u hn
+  exact HopfAlgebra.ofAlgHom (antipode R n u hn)
+    (convolution_antipode_left R n u hn) (convolution_antipode_right R n u hn)
+
+/-- Positive-order Kummer models carry their canonical Hopf structure. -/
+noncomputable instance [NeZero n] : HopfAlgebra R (Coordinate R n u) :=
+  hopfAlgebra R n u (Nat.pos_of_ne_zero (NeZero.ne n))
+
 end KummerAlgebra
