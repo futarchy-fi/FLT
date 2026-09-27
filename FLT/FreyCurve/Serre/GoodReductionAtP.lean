@@ -6,6 +6,7 @@ Authors: krandder
 module
 
 public import FLT.EllipticCurve.FlatTorsion
+public import FLT.FreyCurve.Serre.AtP
 public import FLT.FreyCurve.Serre.LocalInertia
 public import FLT.FreyCurve.Serre.StableLineQuotient
 
@@ -13,8 +14,8 @@ public import FLT.FreyCurve.Serre.StableLineQuotient
 # Good reduction at the torsion prime
 
 Good reduction and a stable line give a finite-flat character quotient of
-prime torsion. `GoodReductionAtPQuotient` records the existence of an
-inertia-invariant functional; `GoodReductionAtPProof` proves it for `p ≥ 5`.
+prime torsion. `GoodReductionAtPProof` proves `GoodReductionAtPQuotient` (defined in `AtP`)
+for `p ≥ 5`.
 -/
 
 @[expose] public section
@@ -25,28 +26,8 @@ attribute [local instance] completionValuativeRel completion_isNonarchimedeanLoc
 attribute [local instance 2000] IsDedekindDomain.HeightOneSpectrum.instAlgebraAdicCompletion
 
 /-- Classical equality for the coordinates of local geometric points. -/
-noncomputable local instance localDecidableEq (α : Type*) : DecidableEq α :=
+noncomputable local instance goodReductionAtPDecidableEq (α : Type*) : DecidableEq α :=
   Classical.typeDecidableEq α
-
-namespace WeierstrassCurve
-
-/-- The general local quotient property at `p`: for a good-reduction elliptic curve
-over `ℚ_p`, a Galois-stable `𝔽_p`-line implies a nonzero inertia-invariant functional.
-For `p ≥ 5`, `goodReductionAtPQuotient` in `GoodReductionAtPProof` proves this
-using specialization and supersingular exclusion by an Eisenstein polynomial. -/
-def GoodReductionAtPQuotient (p : ℕ) (hp : p.Prime) : Prop :=
-  letI : Fact p.Prime := ⟨hp⟩
-  let v := hp.toHeightOneSpectrumRingOfIntegersRat
-  let K := v.adicCompletion ℚ
-  ∀ (E : WeierstrassCurve K) (_ : E.IsElliptic), E.HasGoodReduction 𝒪[K] →
-    (∃ i : ZMod p →ₗ[ZMod p] (E.map (algebraMap K (AlgebraicClosure K))).nTorsion p,
-      Function.Injective i ∧ ∀ σ : Field.absoluteGaloisGroup K,
-        ∃ a : ZMod p, E.galoisRep p hp.pos σ (i 1) = i a) →
-    ∃ r : (E.map (algebraMap K (AlgebraicClosure K))).nTorsion p →ₗ[ZMod p] ZMod p,
-      r ≠ 0 ∧ ∀ σ ∈ localInertiaGroup v, ∀ x, r (E.galoisRep p hp.pos σ x) = r x
-
-
-end WeierstrassCurve
 
 namespace WeierstrassCurve
 
