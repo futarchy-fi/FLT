@@ -111,4 +111,144 @@ theorem existsUnique_interior_symmetric_parameter {q x : K}
       (valuation_tateCorrection_le hq)).trans_lt hq
   simpa only [sub_eq_iff_eq_add] using existsUnique_tsum_xPair_eq hq hq htarget
 
+/-- The bounded tail of the boundary abscissa after setting `z = u + u⁻¹ - 2`. -/
+noncomputable def boundaryTail (q z : K) : K :=
+  (∑' n : ℕ, xPair (q ^ (2 * n) * q ^ 2) (q ^ n * (q * (z + 2)))) -
+    2 * tateCorrection q
+
+/-- The symmetric boundary tail stays strictly inside the unit disc. -/
+theorem valuation_boundaryTail_lt_one {q z : K}
+    (hq : valuation K q < 1) (hz : valuation K z ≤ 1) :
+    valuation K (boundaryTail q z) < 1 := by
+  have hs : valuation K (z + 2) ≤ 1 := (Valuation.map_add _ _ _).trans
+    (max_le hz (valuation_natCast_le_one (R := K) 2))
+  have hqs : valuation K (q * (z + 2)) < 1 := by
+    rw [map_mul]
+    exact (mul_le_of_le_one_right' hs).trans_lt hq
+  have hq2 : valuation K (q ^ 2) < 1 := by
+    rw [map_pow]
+    exact pow_lt_one₀ zero_le hq (by decide)
+  apply (Valuation.map_sub _ _ _).trans_lt
+  apply max_lt ((valuation_tsum_xPair_le hq hq2 hqs).trans_lt (max_lt hqs hq2))
+  rw [map_mul]
+  exact ((mul_le_of_le_one_left' (valuation_natCast_le_one (R := K) 2)).trans
+    (valuation_tateCorrection_le hq)).trans_lt hq
+
+/-- Differences of the boundary tail are smaller by the factor `|q|`. -/
+theorem valuation_boundaryTail_sub {q z w : K} (hq : valuation K q < 1)
+    (hz : valuation K z ≤ 1) (hw : valuation K w ≤ 1) :
+    valuation K (boundaryTail q z - boundaryTail q w) =
+      valuation K q * valuation K (z - w) := by
+  have hsmall {t : K} (ht : valuation K t ≤ 1) : valuation K (q * (t + 2)) < 1 := by
+    rw [map_mul]
+    apply (mul_le_of_le_one_right' _).trans_lt hq
+    exact (Valuation.map_add _ _ _).trans (max_le ht (valuation_natCast_le_one (R := K) 2))
+  have hq2 : valuation K (q ^ 2) < 1 := by
+    rw [map_pow]
+    exact pow_lt_one₀ zero_le hq (by decide)
+  rw [boundaryTail, boundaryTail, sub_sub_sub_cancel_right,
+    valuation_tsum_xPair_sub hq hq2 (hsmall hz) (hsmall hw), ← mul_sub,
+    add_sub_add_right_eq_sub, map_mul]
+
+/-- The reciprocal boundary abscissa extends across `z = 0`. -/
+noncomputable def boundaryReciprocal (q z : K) : K := z / (1 + z * boundaryTail q z)
+
+/-- The denominator of the reciprocal boundary coordinate has valuation one. -/
+theorem valuation_boundaryReciprocal_denominator {q z : K}
+    (hq : valuation K q < 1) (hz : valuation K z ≤ 1) :
+    valuation K (1 + z * boundaryTail q z) = 1 := by
+  apply (valuation K).map_one_add_of_lt
+  rw [map_mul]
+  exact (mul_le_of_le_one_left' hz).trans_lt (valuation_boundaryTail_lt_one hq hz)
+
+/-- The reciprocal boundary coordinate preserves the valuation of its argument. -/
+theorem valuation_boundaryReciprocal {q z : K}
+    (hq : valuation K q < 1) (hz : valuation K z ≤ 1) :
+    valuation K (boundaryReciprocal q z) = valuation K z := by
+  rw [boundaryReciprocal, map_div₀, valuation_boundaryReciprocal_denominator hq hz, div_one]
+
+/-- The reciprocal boundary coordinate preserves distances on the closed unit ball. -/
+theorem valuation_boundaryReciprocal_sub {q z w : K} (hq : valuation K q < 1)
+    (hz : valuation K z ≤ 1) (hw : valuation K w ≤ 1) :
+    valuation K (boundaryReciprocal q z - boundaryReciprocal q w) =
+      valuation K (z - w) := by
+  by_cases heq : z = w
+  · simp [heq]
+  have hden {t : K} (ht : valuation K t ≤ 1) : 1 + t * boundaryTail q t ≠ 0 := by
+    intro h
+    have he := valuation_boundaryReciprocal_denominator hq ht
+    simp [h] at he
+  have he : boundaryReciprocal q z - boundaryReciprocal q w =
+      ((z - w) + z * w * (boundaryTail q w - boundaryTail q z)) /
+        ((1 + z * boundaryTail q z) * (1 + w * boundaryTail q w)) := by
+    unfold boundaryReciprocal
+    field_simp [hden hz, hden hw]
+    ring
+  have hsmall : valuation K (z * w * (boundaryTail q w - boundaryTail q z)) <
+      valuation K (z - w) := by
+    rw [map_mul, map_mul, valuation_boundaryTail_sub hq hw hz,
+      (valuation K).map_sub_swap w z]
+    apply (mul_le_of_le_one_left' ((mul_le_of_le_one_right' hw).trans hz)).trans_lt
+    simpa only [one_mul] using mul_lt_mul_of_pos_right hq
+      (zero_lt_iff.mpr ((valuation K).ne_zero_iff.mpr (sub_ne_zero.mpr heq)))
+  rw [he, map_div₀, map_mul, valuation_boundaryReciprocal_denominator hq hz,
+    valuation_boundaryReciprocal_denominator hq hw, one_mul, div_one,
+    (valuation K).map_add_eq_of_lt_left hsmall]
+
+/-- Every element of the closed unit ball has a unique reciprocal boundary parameter. -/
+theorem existsUnique_boundaryReciprocal_eq {q x : K}
+    (hq : valuation K q < 1) (hx : valuation K x ≤ 1) :
+    ∃! z : {z : K // valuation K z ≤ 1}, boundaryReciprocal q z = x := by
+  let : UniformSpace K := IsTopologicalAddGroup.rightUniformSpace K
+  have : IsUniformAddGroup K := isUniformAddGroup_of_addCommGroup
+  let : (Valued.v (R := K) (Γ₀ := ValueGroupWithZero K)).RankOne :=
+    { hom' := IsRankLeOne.nonempty.some.emb (R := K) |>.comp
+        MonoidWithZeroHom.ValueGroup₀.embedding
+      strictMono' := IsRankLeOne.nonempty.some.strictMono.comp
+        MonoidWithZeroHom.ValueGroup₀.embedding_strictMono }
+  let D := {z : K // valuation K z ≤ 1}
+  let : CompactSpace D := isCompact_iff_compactSpace.mp
+    (IsNonarchimedeanLocalField.isCompact_closedBall K 1)
+  let F : D → D := fun z ↦ ⟨boundaryReciprocal q z,
+    (valuation_boundaryReciprocal hq z.2).le.trans z.2⟩
+  open scoped Valued in
+  have hF : Function.Bijective F := by
+    have hi : Isometry F := by
+      apply Isometry.of_dist_eq
+      intro z w
+      change ‖(F z : K) - (F w : K)‖ = ‖(z : K) - (w : K)‖
+      apply le_antisymm
+      · rw [Valued.toNormedField.norm_le_iff]
+        exact (valuation_boundaryReciprocal_sub hq z.2 w.2).le
+      · rw [Valued.toNormedField.norm_le_iff]
+        exact (valuation_boundaryReciprocal_sub hq z.2 w.2).ge
+    exact ⟨hi.injective, surjective_isometry_of_compact hi⟩
+  obtain ⟨z, hz⟩ := hF.2 ⟨x, hx⟩
+  refine ⟨z, congrArg Subtype.val hz, ?_⟩
+  intro w hw
+  apply hF.1
+  exact (Subtype.ext hw).trans hz.symm
+
+/-- An abscissa of valuation at least one has a nonzero symmetric boundary parameter. -/
+theorem exists_boundary_symmetric_parameter {q x : K}
+    (hq : valuation K q < 1) (hx : 1 ≤ valuation K x) :
+    ∃ z : K, z ≠ 0 ∧ valuation K z ≤ 1 ∧ 1 / z + boundaryTail q z = x := by
+  have hx0 : x ≠ 0 := by intro h; simp [h] at hx
+  have hxi : valuation K x⁻¹ ≤ 1 := by
+    rw [map_inv₀]
+    exact inv_le_one_of_one_le₀ hx
+  obtain ⟨z, hz, -⟩ := existsUnique_boundaryReciprocal_eq hq hxi
+  have hz0 : (z : K) ≠ 0 := by
+    intro h
+    have he : (0 : K) = x⁻¹ := by simpa [boundaryReciprocal, h] using hz
+    exact inv_ne_zero hx0 he.symm
+  refine ⟨z, hz0, z.2, ?_⟩
+  have hd : 1 + (z : K) * boundaryTail q z ≠ 0 := by
+    intro h
+    have he := valuation_boundaryReciprocal_denominator hq z.2
+    simp [h] at he
+  change (z : K) / (1 + (z : K) * boundaryTail q z) = x⁻¹ at hz
+  field_simp at hz ⊢
+  linear_combination -hz
+
 end TateCurve
