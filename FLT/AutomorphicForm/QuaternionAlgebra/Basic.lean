@@ -9,7 +9,7 @@ public import FLT.Mathlib.NumberTheory.NumberField.FiniteAdeleRing
 public import FLT.QuaternionAlgebra.NumberField
 public import FLT.AutomorphicForm.GroupTheoryStuff
 public import FLT.AutomorphicForm.Stuff
-public import FLT.Assumptions.KnownIn1980s
+public import FLT.QuaternionAlgebra.FiniteProjectiveUnits
 public import FLT.Mathlib.GroupTheory.DoubleCoset
 public import Mathlib.GroupTheory.DoubleCoset
 public import Mathlib.NumberTheory.NumberField.InfinitePlace.TotallyRealComplex
@@ -485,18 +485,53 @@ lemma range_units_le_range (g : GL₂(𝔸ᶠ[F])) : 𝓕ˣ ≤ ℒ.Δ D g := by
     simp [toConjAct_inv_smul', ← Algebra.commutes, RingHom.toMonoidHom_eq_coe]
 
 /--
-`[Δ_g : Fˣ]` is finite.
-Since `g⁻¹ U g` is compact open, `g⁻¹ U g ⊆ x⁻¹GL₂(∏ 𝒪_{Fᵥ})x` for some `x`.
-Let `𝒪 := x⁻¹M₂(∏ 𝒪_{Fᵥ})x ∩ D`.
-Then `𝒪` is an order (why?) and `Δ_g/Fˣ ↪ 𝒪¹ := { x ∈ 𝒪 | N(x) = 1 }`,
-where the latter is finite because it is discrete and bounded in `D ⊗_{ℚ} ℝ = ∏ ℍ`
-(See Lemma 17.7.13 in Voight).
+`[Δ_g : Fˣ]` is finite. Conjugation embeds the quotient into the linear
+automorphisms of `D`. Its coefficients lie in compact sets at every adelic
+place, so global discreteness makes their ranges finite.
 -/
-@[nolint unusedArguments]
 instance isFiniteRelIndex_Δ [NumberField.IsTotallyReal F] [IsQuaternionAlgebra F D]
     [IsQuaternionAlgebra.IsTotallyDefinite F D] (ℒ : LevelStruct F R) (g : GL₂(𝔸ᶠ[F])) :
     Subgroup.IsFiniteRelIndex 𝓕ˣ (ℒ.Δ D g) := by
-  knownin1980s
+  classical
+  let f : Dˣ →* GL₂(𝔸ᶠ[F]) :=
+    (MulAut.conj g⁻¹).toMonoidHom.comp (WithRigidification.unitsIncl F D)
+  let H := (ℒ.Δ D g).comap f
+  let A := (Units.map (algebraMap (𝔸ᶠ[F]) M₂(𝔸ᶠ[F])).toMonoidHom).range
+  have : A.Normal :=
+    Subgroup.normal_of_le_center (range_unitsMap_finiteAdeleRing_le_center (F := F))
+  have hHmap : H.map f = ℒ.Δ D g := by
+    apply Subgroup.map_comap_eq_self
+    rintro x hx
+    obtain ⟨y, ⟨u, rfl⟩, hy⟩ := hx.2
+    exact ⟨u, hy⟩
+  have hfinite := IsQuaternionAlgebra.finiteRelIndex_of_compact_mod_scalars H
+    ((fun a : GL₂(𝔸ᶠ[F]) => g * a * g⁻¹) '' ℒ.U)
+    (ℒ.isCompact_U.image ((continuous_const.mul continuous_id).mul continuous_const)) ?_
+  · have hs :
+        ((Units.map (algebraMap F D).toMonoidHom).range).map f =
+          (Units.map (algebraMap F M₂(𝔸ᶠ[F])).toMonoidHom).range := by
+      rw [MonoidHom.map_range]
+      congr 1
+      apply MonoidHom.ext
+      intro z
+      change g⁻¹ * WithRigidification.unitsIncl F D
+        (Units.map (algebraMap F D).toMonoidHom z) * g = _
+      rw [WithRigidification.unitsIncl_algebraMap]
+      ext1
+      simp [Algebra.commutes, mul_assoc]
+    simpa only [hs, hHmap] using hfinite.map f
+  · intro u hu
+    have hmem : f u ∈ ℒ.U ⊔ A := hu.1
+    obtain ⟨a, ha, z', ⟨z, rfl⟩, haz⟩ := Subgroup.mem_sup_of_normal_right.mp hmem
+    refine ⟨g * a * g⁻¹, ⟨a, ha, rfl⟩, z, ?_⟩
+    have h := congrArg (fun x : GL₂(𝔸ᶠ[F]) => g * x * g⁻¹) haz
+    have hzcent := range_unitsMap_finiteAdeleRing_le_center (F := F) (show
+      Units.map (algebraMap (𝔸ᶠ[F]) M₂(𝔸ᶠ[F])).toMonoidHom z ∈ A from ⟨z, rfl⟩)
+    have hzcomm := Subgroup.mem_center_iff.mp hzcent g⁻¹
+    simp only [f, MonoidHom.comp_apply, MulEquiv.coe_toMonoidHom,
+      MulAut.conj_apply, inv_inv, mul_assoc, mul_inv_cancel_left, mul_inv_cancel, mul_one] at h
+    rw [← hzcomm] at h
+    simpa only [mul_assoc] using h.symm
 
 /-- `Dˣ＼GL₂(𝔸 F)／U` is notation for the type of double cosets by the image of `Dˣ` in
 `GL₂(𝔸ᶠ[F])` and by `U`. -/
@@ -1186,7 +1221,7 @@ def toStruct : LevelStruct F R where
     refine Finset.prod_eq_one fun v hv ↦ ℒ.range_unitsMap_le_ker_χ v hv
       ⟨g.map (FiniteAdeleRing.toAdicCompletion v).toMonoidHom, ?_⟩
     ext1
-    simp [GL2.toAdicCompletion, Matrix.algebraMap_eq_diagonal]
+    simp [GL2.toAdicCompletion, Matrix.algebraMap_eq_diagonal, FiniteAdeleRing.toAdicCompletion]
   isOpen_ker := by
     let : TopologicalSpace R := ⊥
     have : DiscreteTopology R := ⟨rfl⟩

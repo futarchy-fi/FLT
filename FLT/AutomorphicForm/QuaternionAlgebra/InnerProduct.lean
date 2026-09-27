@@ -91,7 +91,8 @@ lemma LevelStruct.innerSummand_smul_left (ℒ : LevelStruct F R)
 instance : MeasurableSpace 𝔸ᶠ[F] := borel _
 instance : BorelSpace 𝔸ᶠ[F] := ⟨rfl⟩
 
-open FiniteAdeleRing
+open _root_.TotallyDefiniteQuaternionAlgebra.WeightTwoAutomorphicForm.FiniteAdeleRing
+  IsDedekindDomain.FiniteAdeleRing
 
 instance : IsClosed (X := GL₂(𝔸ᶠ[F])) (𝔸ˣ F) :=
   RestrictedProduct.isClosed_unitsMap_matrix ..
