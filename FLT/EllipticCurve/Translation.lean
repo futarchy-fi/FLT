@@ -270,4 +270,19 @@ theorem translationPullback_add (Q R : W.Point) :
     translationPullback_genericPoint, map_basePoint, translationPullback_genericPoint,
     map_add, add_assoc]
 
+/-- Translation by a point is an automorphism of the function field, with
+inverse given by translation by its negative. -/
+noncomputable def translationEquiv (Q : W.Point) : W.FunctionField ≃ₐ[F] W.FunctionField :=
+  AlgEquiv.ofAlgHom (translationPullback W Q) (translationPullback W (-Q))
+    (by rw [translationPullback_add, add_neg_cancel, translationPullback_zero])
+    (by rw [translationPullback_add, neg_add_cancel, translationPullback_zero])
+
+/-- The translation automorphism agrees with the constructed pullback. -/
+theorem translationEquiv_apply (Q : W.Point) (f : W.FunctionField) :
+    translationEquiv W Q f = translationPullback W Q f := rfl
+
+/-- The inverse automorphism is pullback by the negative point. -/
+theorem translationEquiv_symm_apply (Q : W.Point) (f : W.FunctionField) :
+    (translationEquiv W Q).symm f = translationPullback W (-Q) f := rfl
+
 end WeierstrassCurve.Affine.FunctionField
