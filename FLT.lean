@@ -34,7 +34,6 @@ public import FLT.AbsoluteGaloisGroup.InertiaComparison
 public import FLT.AbsoluteGaloisGroup.LocalCompositum
 public import FLT.AbsoluteGaloisGroup.TameCharacter
 public import FLT.AbsoluteGaloisGroup.Unramified
-public import FLT.Assumptions.KnownIn1980s
 public import FLT.Assumptions.Mazur
 public import FLT.Assumptions.Odlyzko
 public import FLT.AutomorphicForm.GroupTheoryStuff
@@ -264,13 +263,17 @@ public import FLT.GaloisRepresentation.HardlyRamified.FlatCoefficientExtension
 public import FLT.GaloisRepresentation.HardlyRamified.Frey
 public import FLT.GaloisRepresentation.HardlyRamified.InertiaTwoSquareZero
 public import FLT.GaloisRepresentation.HardlyRamified.IntegralCharacters
+public import FLT.GaloisRepresentation.HardlyRamified.KummerTwoClassNumber
+public import FLT.GaloisRepresentation.HardlyRamified.KummerTwoField
 public import FLT.GaloisRepresentation.HardlyRamified.LatticeHardlyRamified
 public import FLT.GaloisRepresentation.HardlyRamified.Lift
 public import FLT.GaloisRepresentation.HardlyRamified.ModThree
 public import FLT.GaloisRepresentation.HardlyRamified.NormalizedOrder
 public import FLT.GaloisRepresentation.HardlyRamified.PrimeField
 public import FLT.GaloisRepresentation.HardlyRamified.ResidualCharacteristic
+public import FLT.GaloisRepresentation.HardlyRamified.ResidualTameTwo
 public import FLT.GaloisRepresentation.HardlyRamified.RibetAdapters
+public import FLT.GaloisRepresentation.HardlyRamified.TameInertiaCyclic
 public import FLT.GaloisRepresentation.HardlyRamified.ThreeAdicAlgebra
 public import FLT.GaloisRepresentation.HardlyRamified.ThreeAdicDegree
 public import FLT.GaloisRepresentation.HardlyRamified.Threeadic
@@ -544,6 +547,7 @@ public import FLT.Patching.Utils.TopologicallyFG
 public import FLT.Patching.VanishingFilter
 public import FLT.PoitouTate
 public import FLT.Proof
+public import FLT.QuaternionAlgebra.FiniteProjectiveUnits
 public import FLT.QuaternionAlgebra.NumberField
 public import FLT.Slop.DimensionTheorem
 public import FLT.Slop.DimensionTheorem.Defs
