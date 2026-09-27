@@ -83,7 +83,7 @@ theorem separable_preΨ_of_derivative_sq {n : ℕ} (hn : Odd n) (hchar : (n : k)
     (hd : W.preΨ n ∣ W.Ψ₂Sq * (W.preΨ n).derivative ^ 2 - C ((n : k) ^ 2) * W.Φ n) :
     (W.preΨ n).Separable := by
   obtain ⟨q, hq⟩ := hd
-  obtain ⟨a, b, hab⟩ := W.isCoprime_Φ_ΨSq n
+  obtain ⟨a, b, hab⟩ := W.isCoprime_Φ_ΨSq_of_isElliptic n
   have he : ¬Even (n : ℤ) := by
     simpa only [Int.even_coe_nat] using (Nat.not_even_iff_odd.mpr hn)
   simp only [ΨSq, ite_eq_right he, mul_one] at hab
