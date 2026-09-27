@@ -81,4 +81,92 @@ theorem normalized_tate_torsion_rep_injective {n : ℕ} (hn : 0 < n)
   rw [hc', zpow_zero] at hc
   exact div_eq_one.mp hc.symm
 
+/-- Normalized solutions of the Kummer equations for a unit parameter. -/
+def TateKummerPoint (n : ℕ) (u : Ωˣ) :=
+  {ix : Fin n × Ωˣ // ix.2 ^ n = u ^ ix.1.val}
+
+variable {n : ℕ} (b u : Ωˣ) (hq : E.qUnitSepClosure Ω = b ^ n * u)
+
+include hq
+
+omit [DecidableEq Ω] [Algebra.IsAlgebraic K Ω] in
+/-- Rescaling a Kummer root by `b ^ i` gives a normalized Tate torsion representative. -/
+theorem kummer_rep_pow (a : TateKummerPoint n u) :
+    (a.val.2 * b ^ a.val.1.val) ^ n = E.qUnitSepClosure Ω ^ a.val.1.val := by
+  rw [mul_pow, a.property, hq, mul_pow, pow_right_comm b]
+  exact mul_comm _ _
+
+/-- The point of Tate torsion defined by a normalized Kummer root. -/
+noncomputable def kummerTorsionPoint (a : TateKummerPoint n u) :
+    AddSubgroup.torsionBy (E⁄Ω).Point (n : ℤ) :=
+  ⟨E.tatePoint Ω (a.val.2 * b ^ a.val.1.val),
+    (E.tatePoint_mem_torsionBy_iff Ω _ n).mpr
+      ⟨a.val.1.val, by simpa only [zpow_natCast] using E.kummer_rep_pow b u hq a⟩⟩
+
+/-- Every Tate torsion point comes from a unique normalized Kummer root. -/
+theorem kummerTorsionPoint_bijective (hn : 0 < n) :
+    Function.Bijective (E.kummerTorsionPoint b u hq) := by
+  constructor
+  · intro a c hac
+    obtain ⟨hi, hx⟩ := E.normalized_tate_torsion_rep_injective hn
+      (E.kummer_rep_pow b u hq a) (E.kummer_rep_pow b u hq c)
+      (congrArg Subtype.val hac)
+    apply Subtype.ext
+    apply Prod.ext hi
+    rw [hi] at hx
+    exact mul_right_cancel hx
+  · intro P
+    obtain ⟨i, y, hy, hypow⟩ := E.exists_normalized_tate_torsion_rep hn P
+    have hx : (y / b ^ i.val) ^ n = u ^ i.val := by
+      rw [div_pow, hypow, hq, mul_pow, pow_right_comm b]
+      exact mul_div_cancel_left _ _
+    refine ⟨⟨(i, y / b ^ i.val), hx⟩, ?_⟩
+    apply Subtype.ext
+    change E.tatePoint Ω ((y / b ^ i.val) * b ^ i.val) = P
+    simpa only [div_mul_cancel] using hy
+
+/-- A bijection between normalized Kummer roots and Tate torsion.
+Compatibility with the carry law is stated separately below. -/
+noncomputable def kummerTorsionEquiv (hn : 0 < n) :
+    TateKummerPoint n u ≃ AddSubgroup.torsionBy (E⁄Ω).Point (n : ℤ) :=
+  Equiv.ofBijective (E.kummerTorsionPoint b u hq) (E.kummerTorsionPoint_bijective b u hq hn)
+
+/-- The Tate comparison respects the Kummer addition formula, including the carry
+factor `u ^ k` when the component indices cross a multiple of `n`. -/
+theorem kummerTorsionPoint_add (a c d : TateKummerPoint n u) (k : ℕ)
+    (hi : a.val.1.val + c.val.1.val = d.val.1.val + n * k)
+    (hx : d.val.2 = a.val.2 * c.val.2 / u ^ k) :
+    E.kummerTorsionPoint b u hq d =
+      E.kummerTorsionPoint b u hq a + E.kummerTorsionPoint b u hq c := by
+  have hr : (d.val.2 * b ^ d.val.1.val) * E.qUnitSepClosure Ω ^ k =
+      (a.val.2 * b ^ a.val.1.val) * (c.val.2 * b ^ c.val.1.val) := by
+    rw [hx, hq, mul_pow, ← pow_mul]
+    calc
+      _ = (a.val.2 * c.val.2) * b ^ (d.val.1.val + n * k) := by
+        simp [pow_add, div_eq_mul_inv, mul_assoc, mul_left_comm, mul_comm]
+      _ = _ := by rw [← hi, pow_add]; ac_rfl
+  have hz : E.tatePoint Ω (E.qUnitSepClosure Ω ^ k) = 0 :=
+    (E.tatePoint_eq_zero_iff Ω _).mpr
+      (Subgroup.mem_zpowers_iff.mpr ⟨(k : ℤ), by simp⟩)
+  apply Subtype.ext
+  change E.tatePoint Ω (d.val.2 * b ^ d.val.1.val) =
+    E.tatePoint Ω (a.val.2 * b ^ a.val.1.val) +
+      E.tatePoint Ω (c.val.2 * b ^ c.val.1.val)
+  have h := congrArg (E.tatePoint Ω) hr
+  simpa only [E.tatePoint_mul, hz, add_zero] using h
+
+/-- The Tate comparison commutes with Galois action whenever the rescaling factor
+is fixed; in particular this applies when `b` comes from the base field. -/
+theorem kummerTorsionPoint_galois (σ : Ω ≃ₐ[K] Ω)
+    (hb : Units.map σ.toAlgHom.toRingHom.toMonoidHom b = b)
+    (a c : TateKummerPoint n u) (hi : c.val.1 = a.val.1)
+    (hx : c.val.2 = Units.map σ.toAlgHom.toRingHom.toMonoidHom a.val.2) :
+    (E.kummerTorsionPoint b u hq c : (E⁄Ω).Point) =
+      Affine.Point.map σ.toAlgHom (E.kummerTorsionPoint b u hq a) := by
+  change E.tatePoint Ω (c.val.2 * b ^ c.val.1.val) =
+    Affine.Point.map σ.toAlgHom (E.tatePoint Ω (a.val.2 * b ^ a.val.1.val))
+  rw [E.tatePoint_galois]
+  congr 1
+  rw [map_mul, map_pow, hb, hi, hx]
+
 end WeierstrassCurve
