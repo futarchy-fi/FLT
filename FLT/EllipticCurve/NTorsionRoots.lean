@@ -6,6 +6,7 @@ Authors: krandder
 module
 
 public import FLT.EllipticCurve.NTorsionFinite
+public import Mathlib.RingTheory.Ideal.Quotient.Operations
 
 /-!
 # Division-polynomial roots and torsion points
@@ -106,5 +107,34 @@ theorem isCoprime_preΨ_ΨSq_two [E.IsElliptic] {n : ℕ} (hn : Odd n) :
     exact Affine.Point.some_ne_zero hns ht
   · left
     simpa only [E', map_preΨ, Polynomial.IsRoot, eval_map_algebraMap] using hx
+
+end WeierstrassCurve
+
+namespace WeierstrassCurve
+
+/-- Unit discriminant implies that the multiplication numerator and denominator
+are coprime over any commutative ring. A maximal ideal containing both would
+give a common zero over its residue field, contradicting field coprimality. -/
+theorem isCoprime_Φ_ΨSq_of_isUnit {R : Type*} [CommRing R] (W : WeierstrassCurve R)
+    (hΔ : IsUnit W.Δ) (n : ℤ) : IsCoprime (W.Φ n) (W.ΨSq n) := by
+  let : W.IsElliptic := ⟨hΔ⟩
+  rw [← Ideal.isCoprime_span_singleton_iff, Ideal.isCoprime_iff_sup_eq,
+    ← Ideal.span_union, Set.singleton_union]
+  by_contra h
+  obtain ⟨M, hM, hle⟩ := Ideal.exists_le_maximal _ h
+  let : M.IsMaximal := hM
+  let : Field (R[X] ⧸ M) := Ideal.Quotient.field M
+  let f : R →+* R[X] ⧸ M := (Ideal.Quotient.mk M).comp C
+  have hc := (W.map f).isCoprime_Φ_ΨSq_of_isElliptic n
+  have he (p : R[X]) : (p.map f).eval (Ideal.Quotient.mk M X) = Ideal.Quotient.mk M p := by
+    rw [eval_map, show f = (Ideal.Quotient.mk M).comp C from rfl,
+      ← hom_eval₂, eval₂_C_X]
+  have hφ : Ideal.Quotient.mk M (W.Φ n) = 0 :=
+    Ideal.Quotient.eq_zero_iff_mem.mpr (hle (Ideal.subset_span (by simp)))
+  have hψ : Ideal.Quotient.mk M (W.ΨSq n) = 0 :=
+    Ideal.Quotient.eq_zero_iff_mem.mpr (hle (Ideal.subset_span (by simp)))
+  have hh := hc.map (Polynomial.evalRingHom (Ideal.Quotient.mk M X))
+  simp only [map_Φ, map_ΨSq, coe_evalRingHom, he, hφ, hψ] at hh
+  exact not_isCoprime_zero_zero hh
 
 end WeierstrassCurve
