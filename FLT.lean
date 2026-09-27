@@ -101,6 +101,7 @@ public import FLT.EllipticCurve.TorsionStructure
 public import FLT.FreyCurve.Basic
 public import FLT.FreyCurve.FreyPackage
 public import FLT.FreyCurve.Mazur
+public import FLT.FreyCurve.Serre.AtP
 public import FLT.FreyCurve.Serre.AwayFromP
 public import FLT.FreyCurve.Serre.FixedLineDescent
 public import FLT.FreyCurve.Serre.FreyTwoTorsion
@@ -113,6 +114,7 @@ public import FLT.FreyCurve.Serre.ReducibleFiltration
 public import FLT.FreyCurve.Serre.RootsOfUnityInertia
 public import FLT.FreyCurve.Serre.Semistable
 public import FLT.FreyCurve.Serre.TateInertia
+public import FLT.FreyCurve.Serre.TateTorsion
 public import FLT.FreyCurve.Serre.UnramifiedCharacter
 public import FLT.GaloisRepresentation.Attachment
 public import FLT.GaloisRepresentation.Automorphic
