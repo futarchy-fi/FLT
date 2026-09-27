@@ -1,4 +1,6 @@
 import FLTTest.ExponentRebase
 import FLTTest.FLTTest
 import FLTTest.MathlibCompatibility
+import FLTTest.MazurMultiplicativeModel
 import FLTTest.QuaternionFiniteIndex
+import FLTTest.ThreeAdicConsolidation

@@ -1,5 +1,50 @@
 # Core plan for the remaining FLT admissions
 
+## Integration checkpoint — 2026-09-27
+
+Checked at **2026-09-27 22:42 UTC** against
+main `88768218` plus the changes in this commit.
+
+The source audit below is historical. In particular, the coefficient-ring defect
+described there has been repaired: `Family.lean` now requires
+`Module.Free ℤ_[p] R`. Its proof is still admitted.
+
+PRs #155–#159 are integrated in main; the consolidation builds their endpoints together.
+Fresh `#print axioms` checks found only `propext`, `Classical.choice`, and
+`Quot.sound` for:
+
+- `ThreeAdicPlan.raynaud_extend_generic_morphism_unique`;
+- `ThreeAdicPlan.FiniteContinuousGaloisModule.integralEtaleModel`;
+- `ThreeAdicPlan.no_quadratic_extension_auxiliary`;
+- `ThreeAdicPlan.character_eq_one_or_of_each_power_quotient`;
+- `StableLattice.isExtensionOf_of_trivial_quotient`.
+
+These checks are executable in `FLTTest/ThreeAdicConsolidation.lean`.
+The character lemma allows a separate choice at each ideal-power level;
+compatibility forces one global character. It does not supply the arithmetic
+classification of those levels. The Ribet adapter identifies the residual
+subcharacter from the determinant and a given invariant surjective functional.
+It does not construct that functional (the admitted `mod_three` input).
+
+Remaining three-adic work must distinguish these interfaces:
+
+1. Raynaud **existence**, and patching the étale model with the model at 3.
+   Uniqueness of an extension does not construct it.
+2. The augmented-field discriminant bound and its hypotheses.
+   The specialized quadratic exclusion is proved; it does not supply this bound.
+3. Simple-object classification, reverse-extension vanishing, and sorted
+   filtrations, yielding the invariant residual quotient and pure finite levels.
+4. Assemble the domain-coefficient trace theorem with the existing normalization,
+   lattice-transfer, Ribet, and character infrastructure.
+
+`lifts`, `mem_isCompatible`, `three_adic`, and `Mazur_statement` remain the
+four core obligations. No admitted endpoint was replaced in this consolidation.
+Shrinking lifting, companion, or Mazur interfaces is useful only alongside a
+proof; merely changing the location or name of an admission is not progress.
+
+## Original source audit
+
+
 Checked at **2026-09-27 16:25 UTC**, by reading and searching this worktree.
 FLT source: `e564b0801563049c905f1e7505f2809719101e6a`;
 Mathlib: `c32e1ec0d1eb5237ba344eee50162f45d5b0fc76`.

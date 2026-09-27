@@ -19,6 +19,52 @@ Ribet's lemma then rules out irreducibility if every stable lattice has such a q
 
 namespace StableLattice
 
+/-- In dimension two, a trivial quotient and the determinant identify both
+characters of the extension. The residual arithmetic input is the functional itself. -/
+theorem isExtensionOf_of_trivial_quotient
+    {G k V : Type*} [Group G] [Field k] [AddCommGroup V] [Module k V]
+    [FiniteDimensional k V] (ρ : Representation k G V)
+    (hdim : Module.finrank k V = 2) (χ : G →* kˣ)
+    (hdet : ∀ g, LinearMap.det (ρ g) = (χ g : k))
+    (π : V →ₗ[k] k) (hπ : Function.Surjective π)
+    (hπG : ∀ g v, π (ρ g v) = π v) :
+    IsExtensionOf ρ χ 1 := by
+  let e := π.quotKerEquivOfSurjective hπ
+  have hq : Module.finrank k (V ⧸ LinearMap.ker π) = 1 := by
+    rw [e.finrank_eq, Module.finrank_self]
+  have hk : Module.finrank k (LinearMap.ker π) = 1 := by
+    have h := (LinearMap.ker π).finrank_quotient_add_finrank
+    rw [hq, hdim] at h
+    omega
+  have hstable (g : G) : LinearMap.ker π ≤ (LinearMap.ker π).comap (ρ g) := by
+    intro v hv
+    simpa only [Submodule.mem_comap, LinearMap.mem_ker, hπG] using hv
+  obtain ⟨ψ, hψ⟩ := exists_character_of_stable_line ρ hk (fun g ↦ by
+    rintro _ ⟨v, hv, rfl⟩
+    exact hstable g hv)
+  have hcharacters (g : G) : (ψ g : k) = (χ g : k) := by
+    have hres : (ρ g).restrict (hstable g) =
+        (ψ g : k) • (LinearMap.id : LinearMap.ker π →ₗ[k] LinearMap.ker π) := by
+      ext v
+      exact hψ g v v.property
+    have hquot : (LinearMap.ker π).mapQ (LinearMap.ker π) (ρ g) (hstable g) =
+        LinearMap.id := by
+      ext v
+      change (Submodule.Quotient.mk (ρ g v) : V ⧸ LinearMap.ker π) =
+        Submodule.Quotient.mk v
+      rw [Submodule.Quotient.eq]
+      simp [LinearMap.mem_ker, hπG]
+    have hd := (ρ g).det_eq_det_mul_det (LinearMap.ker π) (hstable g)
+    rw [hres, hquot, LinearMap.det_smul, hk, pow_one,
+      LinearMap.det_id, LinearMap.det_id, mul_one, mul_one] at hd
+    exact hd.symm.trans (hdet g)
+  refine ⟨LinearMap.ker π, hk, ?_, ?_⟩
+  · intro g v hv
+    rw [hψ g v hv, hcharacters g]
+  · intro g v
+    simp [LinearMap.mem_ker, hπG]
+
+
 /-- A trivial quotient splits an extension with trivial subrepresentation and
 nontrivial quotient character. -/
 theorem isSplitExtensionOf_of_trivial_quotient
