@@ -126,7 +126,8 @@ end WeierstrassCurve.RCB
 
 namespace WeierstrassCurve.TwoTorsionChart
 variable {k : Type*} [Field k]
-/-- On an affine point with nonzero y, the chart factor is the inverse of x minus the two-torsion root. -/
+/-- On an affine point with nonzero y, the chart factor is the inverse of x minus
+the two-torsion root. -/
 theorem factor_div (a b ξ x y : k) (hT : ξ ^ 3 + a * ξ + b = 0)
     (h : y ^ 2 = x ^ 3 + a * x + b) (hy : y ≠ 0) (hx : x ≠ ξ) :
     factor a ξ (x / y) (1 / y) = (x - ξ)⁻¹ := by
@@ -144,7 +145,8 @@ theorem translateY_div (a b ξ x y : k) (hT : ξ ^ 3 + a * ξ + b = 0)
   field_simp [sub_ne_zero.mpr hx]
   linear_combination (3 * ξ ^ 2 + a) * (h + hT)
 variable [DecidableEq k] (E : WeierstrassCurve k) [E.IsShortNF]
-/-- The polynomial chart translation agrees with addition by the two-torsion point on affine inputs. -/
+/-- The polynomial chart translation agrees with addition by the
+two-torsion point on affine inputs. -/
 theorem translate_affine {ξ x y : k}
     (hT : E.toAffine.Nonsingular ξ 0) (h : E.toAffine.Nonsingular x y) (hy : y ≠ 0) :
     (translateX E.a₄ ξ (x / y) (1 / y), translateY E.a₄ ξ (x / y) (1 / y)) =
@@ -178,7 +180,8 @@ theorem translate_affine {ξ x y : k}
     rw [hay]
     exact translateY_div E.a₄ E.a₆ ξ x y ht he hy hx hf
 
-/-- Polynomial translation on the Y chart agrees with addition by two-torsion for every odd-torsion point. -/
+/-- Polynomial translation on the Y chart agrees with addition by two-torsion
+for every odd-torsion point. -/
 theorem translate_odd_point {ξ : k} (hT : E.toAffine.Nonsingular ξ 0)
     (P : E.toAffine.Point) {n : ℕ} (hn : Odd n) (hP : n • P = 0) :
     (translateX E.a₄ ξ (RCB.yChartCoordinates E P).1 (RCB.yChartCoordinates E P).2,

@@ -61,7 +61,8 @@ theorem addY_eq_mul_sum_y {x1 y1 x2 y2 : k}
   apply (mul_left_inj' (pow_ne_zero 3 (sub_ne_zero.mpr hx.symm))).mp
   rw [addY_secant_identity _ _ _ _ _ _ h1 h2, ← hn, mul_assoc]
 
-/-- The RCB Y-coordinate is nonzero for distinct x-coordinates when sum and difference have odd order. -/
+/-- The RCB Y-coordinate is nonzero for distinct x-coordinates
+when sum and difference have odd order. -/
 theorem addY_ne_zero_of_X_ne {x1 y1 x2 y2 : k}
     (h1 : E.toAffine.Nonsingular x1 y1) (h2 : E.toAffine.Nonsingular x2 y2)
     {n : ℕ} (hn : Odd n)
