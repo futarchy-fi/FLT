@@ -98,4 +98,29 @@ theorem torsion_twistModel_comparison (P : FreyPackage) :
     A (completion_integerRing_eq v).symm h2A (P.freyCurve.baseChange K)
     P.p P.hppos b (inv_valuation_j_eq_pow P h2)
 
+open scoped Classical in
+/-- Multiplicative Frey torsion has a finite-flat quadratic Kummer model. -/
+theorem torsion_isFiniteFlat_of_multiplicative (P : FreyPackage)
+    [hm : (P.freyCurve.baseChange
+      (P.pp.toHeightOneSpectrumRingOfIntegersRat.adicCompletion ℚ)).HasMultiplicativeReduction
+      (P.pp.toHeightOneSpectrumRingOfIntegersRat.adicCompletionIntegers ℚ)] :
+    GaloisModule.IsFiniteFlat
+      (P.pp.toHeightOneSpectrumRingOfIntegersRat.adicCompletionIntegers ℚ)
+      (P.pp.toHeightOneSpectrumRingOfIntegersRat.adicCompletion ℚ)
+      (AlgebraicClosure (P.pp.toHeightOneSpectrumRingOfIntegersRat.adicCompletion ℚ))
+      ((P.freyCurve.map (algebraMap ℚ
+        (P.pp.toHeightOneSpectrumRingOfIntegersRat.adicCompletion ℚ))).galoisRep
+          P.p P.hppos).Space := by
+  classical
+  let v := P.pp.toHeightOneSpectrumRingOfIntegersRat
+  let K := v.adicCompletion ℚ
+  let R := v.adicCompletionIntegers ℚ
+  let : NeZero P.p := ⟨P.hppos.ne'⟩
+  obtain ⟨u, d, r, hr, f, hf⟩ := torsion_twistModel_comparison P hm
+  let := KummerAlgebra.twistHopfAlgebra R P.p u d r hr
+  exact ⟨KummerAlgebra.twistModel R P.p u d, inferInstance, inferInstance,
+    KummerAlgebra.twistModel_isFiniteFlat R P.p u d,
+    KummerAlgebra.twistModel_generic_etale R P.p u d r hr K
+      (isUnit_iff_ne_zero.mpr (Nat.cast_ne_zero.mpr P.hppos.ne')), f, hf⟩
+
 end FreyCurve
