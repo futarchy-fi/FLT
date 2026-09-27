@@ -269,6 +269,7 @@ public import FLT.Mathlib.MeasureTheory.Group.ModularCharacter
 public import FLT.Mathlib.MeasureTheory.Haar.Extension
 public import FLT.Mathlib.MeasureTheory.Measure.Regular
 public import FLT.Mathlib.MeasureTheory.Measure.Typeclasses.Finite
+public import FLT.Mathlib.NumberTheory.Cyclotomic.CyclotomicCharacter
 public import FLT.Mathlib.NumberTheory.NumberField.AdeleRing
 public import FLT.Mathlib.NumberTheory.NumberField.Completion
 public import FLT.Mathlib.NumberTheory.NumberField.FiniteAdeleRing
