@@ -88,4 +88,137 @@ theorem finiteFlat_oddTorsionCoordinateOrder [IsDedekindDomain R]
   have hA : HopfAlgebra.IsFiniteFlat R (W.torsionEnvelope n ξ) := ⟨⟩
   exact hA.range (W.translatedTorsionEvaluation hn ξ η hT htwo)
 
+/-- Evaluating the x-generator gives the translated x-coordinate function. -/
+@[simp] theorem translatedTorsionEvaluation_x (P : W.oddTorsionPointSet (k := k) n) :
+    W.translatedTorsionEvaluation hn ξ η hT htwo (W.torsionEnvelopeXCoord n ξ) P =
+      (W.translatedTorsionCoordinates ξ η hT P).1 :=
+  by simp [translatedTorsionEvaluation]
+
+/-- Evaluating the y-generator gives the translated y-coordinate function. -/
+@[simp] theorem translatedTorsionEvaluation_y (P : W.oddTorsionPointSet (k := k) n) :
+    W.translatedTorsionEvaluation hn ξ η hT htwo (W.torsionEnvelopeYCoord n ξ) P =
+      (W.translatedTorsionCoordinates ξ η hT P).2 :=
+  by simp [translatedTorsionEvaluation]
+
+include hn htwo in
+/-- Translation by two-torsion carries inversion on odd torsion to ordinary
+Weierstrass negation in the affine envelope. -/
+theorem translatedTorsionCoordinates_neg (P : W.oddTorsionPointSet (k := k) n) :
+    W.translatedTorsionCoordinates ξ η hT (-P) =
+      ((W.translatedTorsionCoordinates ξ η hT P).1,
+        -(W.translatedTorsionCoordinates ξ η hT P).2 -
+          algebraMap R k W.a₁ * (W.translatedTorsionCoordinates ξ η hT P).1 -
+          algebraMap R k W.a₃) := by
+  obtain ⟨x, y, h, he, _⟩ :=
+    (W.map (algebraMap R k)).exists_affine_odd_torsion_translate hn hT htwo P.val (by
+      simpa only [oddTorsionPointSet, AddSubgroup.torsionBy.nsmul_iff] using P.property)
+  have ht : -Affine.Point.some _ _ hT = Affine.Point.some _ _ hT :=
+    neg_eq_of_add_eq_zero_left (by simpa only [two_nsmul] using htwo)
+  have hp : (-P : W.oddTorsionPointSet (k := k) n).val + Affine.Point.some _ _ hT =
+      -(P.val + Affine.Point.some _ _ hT) := by
+    rw [neg_add, ht]
+    rfl
+  simp only [translatedTorsionCoordinates, hp, he, Affine.Point.neg_some,
+    Affine.Point.coordinates]
+  rfl
+
+/-- Negation of the integral envelope agrees with inversion of the torsion
+argument when its functions are evaluated. -/
+theorem translatedTorsionEvaluation_negation
+    (a : W.torsionEnvelope n ξ) (P : W.oddTorsionPointSet (k := k) n) :
+    W.translatedTorsionEvaluation hn ξ η hT htwo (W.torsionEnvelopeNegation n ξ a) P =
+      W.translatedTorsionEvaluation hn ξ η hT htwo a (-P) := by
+  let e := W.translatedTorsionEvaluation hn ξ η hT htwo
+  let ev (Q : W.oddTorsionPointSet (k := k) n) := (Pi.evalAlgHom R _ Q).comp e
+  have he : (ev P).comp (W.torsionEnvelopeNegation n ξ) = ev (-P) := by
+    apply W.torsionEnvelope_hom_ext n ξ
+    · simpa [ev, e] using
+        (congrArg Prod.fst (W.translatedTorsionCoordinates_neg hn ξ η hT htwo P)).symm
+    · simpa [ev, e, map_sub, map_neg, map_mul] using
+        (congrArg Prod.snd (W.translatedTorsionCoordinates_neg hn ξ η hT htwo P)).symm
+  exact DFunLike.congr_fun he a
+
+/-- Inversion restricts to an integral algebra endomorphism of the finite-flat
+coordinate order. This supplies the candidate antipode for its Hopf structure. -/
+noncomputable def oddTorsionCoordinateNegation :
+    W.oddTorsionCoordinateOrder hn ξ η hT htwo →ₐ[R]
+      W.oddTorsionCoordinateOrder hn ξ η hT htwo where
+  toFun f := ⟨fun P => f.val (-P), by
+    obtain ⟨a, ha⟩ := f.property
+    change W.translatedTorsionEvaluation hn ξ η hT htwo a = f.val at ha
+    refine ⟨W.torsionEnvelopeNegation n ξ a, ?_⟩
+    funext P
+    change W.translatedTorsionEvaluation hn ξ η hT htwo
+      (W.torsionEnvelopeNegation n ξ a) P = f.val (-P)
+    rw [W.translatedTorsionEvaluation_negation hn ξ η hT htwo, ha]⟩
+  map_zero' := by ext P; rfl
+  map_one' := by ext P; rfl
+  map_add' f g := by ext P; rfl
+  map_mul' f g := by ext P; rfl
+  commutes' r := by ext P; rfl
+
+/-- The candidate antipode on the coordinate order squares to the identity. -/
+theorem oddTorsionCoordinateNegation_involutive :
+    Function.Involutive (W.oddTorsionCoordinateNegation hn ξ η hT htwo) := by
+  intro f
+  apply Subtype.ext
+  funext P
+  change f.val (- -P) = f.val P
+  rw [neg_neg]
+
+/-- The translated identity has the coordinates of the chosen two-torsion point. -/
+@[simp] theorem translatedTorsionCoordinates_zero :
+    W.translatedTorsionCoordinates ξ η hT (0 : W.oddTorsionPointSet (k := k) n) =
+      (algebraMap R k ξ, algebraMap R k η) := by
+  simp only [translatedTorsionCoordinates, AddSubgroup.coe_zero, zero_add,
+    Affine.Point.coordinates]
+
+/-- The integral envelope admits evaluation at the rational two-torsion point;
+after mapping to the geometric field this is evaluation at the torsion identity. -/
+theorem exists_torsionEnvelopeCounit (hinj : Function.Injective (algebraMap R k)) :
+    ∃ c : W.torsionEnvelope n ξ →ₐ[R] R,
+      ∀ a, algebraMap R k (c a) = W.translatedTorsionEvaluation hn ξ η hT htwo a 0 := by
+  have hr := (W.translatedTorsionCoordinates_relations hn ξ η hT htwo 0).1
+  rw [W.translatedTorsionCoordinates_zero] at hr
+  have hx : aeval ξ (W.multiplicationFiberPolynomial n ξ) = 0 := by
+    apply hinj
+    rw [map_zero]
+    simpa only [aeval_algebraMap_apply_eq_algebraMap_eval, Algebra.algebraMap_self,
+      aeval_def, eval₂_id, eval₂_at_apply] using hr
+  have hy : (W.map (algebraMap R R)).toAffine.Equation ξ η := by
+    have he := (W.toAffine.map_equation hinj ξ η).mp hT.1
+    simpa only [Algebra.algebraMap_self, WeierstrassCurve.map_id] using he
+  let c := W.torsionEnvelopeLift n ξ ξ η hx hy
+  refine ⟨c, ?_⟩
+  have he : (Algebra.ofId R k).comp c =
+      (Pi.evalAlgHom R _ (0 : W.oddTorsionPointSet (k := k) n)).comp
+        (W.translatedTorsionEvaluation hn ξ η hT htwo) := by
+    apply W.torsionEnvelope_hom_ext n ξ <;>
+      simp [c, W.translatedTorsionCoordinates_zero ξ η hT]
+  intro a
+  exact DFunLike.congr_fun he a
+
+set_option backward.isDefEq.respectTransparency false in
+/-- Evaluation at the torsion identity descends to an integral augmentation of
+the coordinate order. -/
+theorem exists_oddTorsionCoordinateCounit (hinj : Function.Injective (algebraMap R k)) :
+    ∃ c : W.oddTorsionCoordinateOrder hn ξ η hT htwo →ₐ[R] R,
+      ∀ f, algebraMap R k (c f) = f.val 0 := by
+  obtain ⟨c, hc⟩ := W.exists_torsionEnvelopeCounit hn ξ η hT htwo hinj
+  let e := W.translatedTorsionEvaluation hn ξ η hT htwo
+  have hker : RingHom.ker e.rangeRestrict.toRingHom ≤ RingHom.ker c.toRingHom := by
+    intro a ha
+    change c a = 0
+    apply hinj
+    rw [map_zero, hc]
+    have hz : e a = 0 := congrArg Subtype.val (show e.rangeRestrict a = 0 from ha)
+    exact congrFun hz 0
+  let c' := AlgHom.liftOfSurjective e.rangeRestrict e.rangeRestrict_surjective c hker
+  refine ⟨c', ?_⟩
+  intro f
+  obtain ⟨a, rfl⟩ := e.rangeRestrict_surjective f
+  have hca : c' (e.rangeRestrict a) = c a :=
+    AlgHom.liftOfSurjective_apply e.rangeRestrict e.rangeRestrict_surjective c hker a
+  exact (congrArg (algebraMap R k) hca).trans (hc a)
+
 end WeierstrassCurve

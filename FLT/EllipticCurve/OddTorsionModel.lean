@@ -206,6 +206,43 @@ noncomputable def torsionEnvelopePointsEquiv (S : Type*) [CommRing S] [Algebra R
     exact Prod.ext (W.torsionEnvelopeLift_x n ξ _ _ _ _)
       (W.torsionEnvelopeLift_y n ξ _ _ _ _)
 
+/-- Negation preserves the affine envelope since its equation on the x-line
+is unchanged by inversion on the elliptic curve. -/
+noncomputable def torsionEnvelopeNegation (n : ℤ) (ξ : R) :
+    W.torsionEnvelope n ξ →ₐ[R] W.torsionEnvelope n ξ :=
+  W.torsionEnvelopeLift n ξ (W.torsionEnvelopeXCoord n ξ)
+    ((W.map (algebraMap R (W.torsionEnvelope n ξ))).toAffine.negY
+      (W.torsionEnvelopeXCoord n ξ) (W.torsionEnvelopeYCoord n ξ))
+    (W.torsionEnvelope_x_relation n ξ)
+    ((Affine.equation_neg ..).mpr (W.torsionEnvelope_equation n ξ))
+
+/-- Negation fixes the universal x-coordinate. -/
+@[simp] theorem torsionEnvelopeNegation_x (n : ℤ) (ξ : R) :
+    W.torsionEnvelopeNegation n ξ (W.torsionEnvelopeXCoord n ξ) =
+      W.torsionEnvelopeXCoord n ξ :=
+  W.torsionEnvelopeLift_x n ξ _ _ _ _
+
+/-- Negation sends the universal y-coordinate to the Weierstrass inverse coordinate. -/
+@[simp] theorem torsionEnvelopeNegation_y (n : ℤ) (ξ : R) :
+    W.torsionEnvelopeNegation n ξ (W.torsionEnvelopeYCoord n ξ) =
+      -W.torsionEnvelopeYCoord n ξ -
+        algebraMap R (W.torsionEnvelope n ξ) W.a₁ * W.torsionEnvelopeXCoord n ξ -
+        algebraMap R (W.torsionEnvelope n ξ) W.a₃ :=
+  W.torsionEnvelopeLift_y n ξ _ _ _ _
+
+/-- The integral negation endomorphism of the envelope is an involution. -/
+theorem torsionEnvelopeNegation_involutive (n : ℤ) (ξ : R) :
+    Function.Involutive (W.torsionEnvelopeNegation n ξ) := by
+  have he : (W.torsionEnvelopeNegation n ξ).comp (W.torsionEnvelopeNegation n ξ) =
+      AlgHom.id R (W.torsionEnvelope n ξ) := by
+    apply W.torsionEnvelope_hom_ext n ξ
+    · simp
+    · simp only [AlgHom.comp_apply, torsionEnvelopeNegation_y, map_sub, map_neg,
+        map_mul, AlgHom.commutes, torsionEnvelopeNegation_x, AlgHom.id_apply]
+      ring
+  intro a
+  exact DFunLike.congr_fun he a
+
 section Field
 variable {k : Type*} [Field k] [DecidableEq k] (E : WeierstrassCurve k)
 
