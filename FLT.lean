@@ -125,6 +125,7 @@ public import FLT.FreyCurve.Mazur
 public import FLT.FreyCurve.Serre.AtP
 public import FLT.FreyCurve.Serre.AwayFromP
 public import FLT.FreyCurve.Serre.FixedLineDescent
+public import FLT.FreyCurve.Serre.Flat
 public import FLT.FreyCurve.Serre.FreyTwoTorsion
 public import FLT.FreyCurve.Serre.GoodReduction
 public import FLT.FreyCurve.Serre.GoodReductionAtP
