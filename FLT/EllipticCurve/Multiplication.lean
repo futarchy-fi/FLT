@@ -156,4 +156,31 @@ theorem translation_nsmulPullback_of_torsion (n : ℕ) (hn : n ≠ 0) (Q : W.Poi
     (translationPullback W Q).comp (nsmulPullback W n hn) = nsmulPullback W n hn := by
   rw [translation_nsmulPullback, hQ, translationPullback_zero, AlgHom.comp_id]
 
+/-- If the nth power of a nonzero function is pulled back by multiplication by n,
+translation by n-torsion changes that function by a constant nth root of unity. -/
+theorem exists_translation_ratio_of_pow_eq_pullback (n : ℕ) (hn : n ≠ 0)
+    (Q : W.Point) (hQ : n • Q = 0) {f g : W.FunctionField} (hg0 : g ≠ 0)
+    (hg : g ^ n = nsmulPullback W n hn f) :
+    ∃ c : F, c ≠ 0 ∧ c ^ n = 1 ∧
+      translationPullback W Q g / g = algebraMap F W.FunctionField c := by
+  let r := translationPullback W Q g / g
+  have hr : r ^ n = 1 := by
+    dsimp only [r]
+    rw [div_pow, ← map_pow, hg]
+    have he := congrArg (fun φ : W.FunctionField →ₐ[F] W.FunctionField => φ f)
+      (translation_nsmulPullback_of_torsion W n hn Q hQ)
+    change translationPullback W Q (nsmulPullback W n hn f) = nsmulPullback W n hn f at he
+    rw [he]
+    exact div_self (hg ▸ pow_ne_zero n hg0)
+  have ha : IsAlgebraic F r :=
+    ⟨X ^ n - C 1, X_pow_sub_C_ne_zero (Nat.pos_of_ne_zero hn) 1, by simp [hr]⟩
+  obtain ⟨c, hc⟩ := ha.exists_algebraMap_eq
+  have hcn : c ^ n = 1 := by
+    apply (algebraMap F W.FunctionField).injective
+    rw [map_pow, hc, hr, map_one]
+  refine ⟨c, ?_, hcn, hc.symm⟩
+  intro hz
+  rw [hz, zero_pow hn] at hcn
+  exact zero_ne_one hcn
+
 end WeierstrassCurve.Affine.FunctionField
