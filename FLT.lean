@@ -109,6 +109,7 @@ public import FLT.EllipticCurve.NTorsionCardOfDifferential
 public import FLT.EllipticCurve.NTorsionCardOfSeparable
 public import FLT.EllipticCurve.NTorsionFinite
 public import FLT.EllipticCurve.NTorsionRoots
+public import FLT.EllipticCurve.Negation
 public import FLT.EllipticCurve.PointReduction
 public import FLT.EllipticCurve.PointReductionAddition
 public import FLT.EllipticCurve.PointReductionHom
