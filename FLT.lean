@@ -288,6 +288,7 @@ public import FLT.GroupScheme.CoordinateOrder
 public import FLT.GroupScheme.EtaleOrder
 public import FLT.GroupScheme.FiniteFlat
 public import FLT.GroupScheme.FiniteFlatSubobject
+public import FLT.GroupScheme.GenericFieldChange
 public import FLT.GroupScheme.GlobalModel
 public import FLT.GroupScheme.IntegralCoordinateAlgebra
 public import FLT.GroupScheme.IntegralEtaleAlgebra
