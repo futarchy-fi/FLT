@@ -101,3 +101,65 @@ theorem isUnit_ΨSq_multiplicationFiber (hΔ : IsUnit W.Δ) (n : ℤ) (ξ : R) :
   rw [AdjoinRoot.aeval_eq, AdjoinRoot.mk_self]
 
 end WeierstrassCurve
+
+namespace WeierstrassCurve
+
+open scoped Polynomial.Bivariate
+
+variable {k : Type*} [Field k] [DecidableEq k] (E : WeierstrassCurve k)
+
+/-- Evaluating the division-polynomial representative computes the affine multiple. -/
+lemma zsmul_eq_toAffine_smulEval {x y : k} (h : E.toAffine.Nonsingular x y) (n : ℤ) :
+    n • Affine.Point.some x y h = Jacobian.Point.toAffine E (E.smulEval x y n) := by
+  let Q : E.toJacobian.Point :=
+    { point := ⟦E.smulEval x y n⟧
+      nonsingular := E.nonsingular_smulEval h n }
+  have he : n • Jacobian.Point.fromAffine (Affine.Point.some x y h) = Q :=
+    Jacobian.Point.ext_iff.mpr (E.zsmul_eq_smulEval h n)
+  have ha := congrArg (Jacobian.Point.toAffineAddEquiv E) he
+  rw [map_zsmul, ← Jacobian.Point.toAffineAddEquiv_symm_apply,
+    AddEquiv.apply_symm_apply] at ha
+  convert ha using 1
+  rfl
+
+
+/-- Away from the multiplication denominator, the x-coordinate of a multiple is
+the quotient of its division-polynomial numerator and denominator. -/
+lemma xRep_zsmul_of_ΨSq_ne_zero {x y : k} (h : E.toAffine.Nonsingular x y)
+    (n : ℤ) (hψ : (E.ΨSq n).eval x ≠ 0) :
+    (n • Affine.Point.some x y h).xRep 0 = (E.Φ n).eval x / (E.ΨSq n).eval x := by
+  have hz : (E.smulEval x y n) 2 ≠ 0 := by
+    change (E.ψ n).evalEval x y ≠ 0
+    simpa only [E.eval_ΨSq h.1 n, ne_eq, pow_eq_zero_iff (by decide : 2 ≠ 0)] using hψ
+  rw [E.zsmul_eq_toAffine_smulEval h n,
+    Jacobian.Point.toAffine_of_Z_ne_zero (E.nonsingular_smulEval h n) hz,
+    Affine.Point.xRep_some, E.eval_Φ h.1 n, E.eval_ΨSq h.1 n]
+  rfl
+
+/-- A nonsingular affine point lies above the finite x-coordinate `ξ` under
+multiplication exactly when its x-coordinate solves the fiber polynomial. -/
+lemma isRoot_multiplicationFiberPolynomial_iff {x y : k}
+    (h : E.toAffine.Nonsingular x y) (n : ℕ) (ξ : k) :
+    (E.multiplicationFiberPolynomial n ξ).IsRoot x ↔
+      n • Affine.Point.some x y h ≠ 0 ∧
+        (n • Affine.Point.some x y h).xRep 0 = ξ := by
+  have he : (E.multiplicationFiberPolynomial n ξ).IsRoot x ↔
+      (E.Φ n).eval x = ξ * (E.ΨSq n).eval x := by
+    simp only [Polynomial.IsRoot, multiplicationFiberPolynomial, eval_sub, eval_mul,
+      eval_C, sub_eq_zero]
+  rw [he]
+  constructor
+  · intro hr
+    have hψ : (E.ΨSq n).eval x ≠ 0 := by
+      intro hz
+      exact E.eval_Φ_ne_zero_of_isRoot_ΨSq h n hz (hr.trans (by rw [hz, mul_zero]))
+    refine ⟨fun ht => hψ ((E.isRoot_ΨSq_iff_nsmul_eq_zero h n).mpr ht), ?_⟩
+    rw [← natCast_zsmul, E.xRep_zsmul_of_ΨSq_ne_zero h n hψ]
+    exact (div_eq_iff hψ).mpr hr
+  · rintro ⟨ht, hx⟩
+    have hψ : (E.ΨSq n).eval x ≠ 0 := fun hz =>
+      ht ((E.isRoot_ΨSq_iff_nsmul_eq_zero h n).mp hz)
+    rw [← natCast_zsmul, E.xRep_zsmul_of_ΨSq_ne_zero h n hψ] at hx
+    exact (div_eq_iff hψ).mp hx
+
+end WeierstrassCurve
