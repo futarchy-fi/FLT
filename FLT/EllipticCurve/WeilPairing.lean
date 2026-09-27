@@ -13,9 +13,9 @@ public import Mathlib.NumberTheory.Cyclotomic.CyclotomicCharacter
 # A checked interface for the Weil pairing
 
 `WeierstrassCurve.TorsionWeilPairing` records alternation, nondegeneracy and Galois
-equivariance in addition to bilinearity. Its existence is a separate geometric
-obligation; the admitted bilinear map `WeierstrassCurve.weilPairing` does not
-currently establish this contract.
+equivariance in addition to bilinearity. Its existence is proved in
+`FLT.EllipticCurve.TorsionPairingAdapter` using translation ratios of multiplication
+roots, independently of the admitted legacy map `WeierstrassCurve.weilPairing`.
 -/
 
 @[expose] public section
