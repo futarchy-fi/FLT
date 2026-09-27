@@ -57,4 +57,20 @@ structure TorsionWeilPairing where
     ((pairing (E.torsionGaloisRepresentation n g ∘ v)).toMul.val : AlgebraicClosure K) =
       g ((pairing v).toMul.val : AlgebraicClosure K)
 
+namespace TorsionWeilPairing
+
+variable {E n} (w : E.TorsionWeilPairing n)
+
+/-- Nondegeneracy forces the pairing on a nonzero torsion module to be nonzero. -/
+theorem pairing_ne_zero
+    [Nontrivial ((E.map (algebraMap K (AlgebraicClosure K))).nTorsion n)] :
+    w.pairing ≠ 0 := by
+  intro h
+  obtain ⟨P, hP⟩ := exists_ne
+    (0 : (E.map (algebraMap K (AlgebraicClosure K))).nTorsion n)
+  apply hP
+  exact w.nondegenerate P fun Q => by rw [h]; rfl
+
+end TorsionWeilPairing
+
 end WeierstrassCurve
