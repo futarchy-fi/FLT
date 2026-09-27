@@ -26,7 +26,7 @@ namespace WeierstrassCurve
 and every Galois automorphism acts on it by one of the two signs. -/
 theorem exists_signed_inertia_invariant_torsion_quotient {K Ω : Type*}
     [Field K] [ValuativeRel K] [TopologicalSpace K]
-    [IsNonarchimedeanLocalField K] [CharZero K]
+    [IsNonarchimedeanLocalField K]
     (E : WeierstrassCurve K) [E.IsElliptic] [E.HasMultiplicativeReduction 𝒪[K]]
     [Field Ω] [Algebra K Ω] [IsAlgClosure K Ω] [DecidableEq Ω]
     (A : ValuationSubring Ω)
@@ -80,11 +80,10 @@ theorem exists_signed_inertia_invariant_torsion_quotient {K Ω : Type*}
       simpa only [neg_neg] using congrArg Neg.neg h
 
 /-- Multiplicative reduction supplies a surjective inertia-invariant quotient of
-geometric torsion, including when the torsion order is the residue characteristic.
-The only geometric admissions used are Tate uniformization and its equivariance. -/
+geometric torsion, including when the torsion order is the residue characteristic. -/
 theorem exists_inertia_invariant_torsion_quotient {K Ω : Type*}
     [Field K] [ValuativeRel K] [TopologicalSpace K]
-    [IsNonarchimedeanLocalField K] [CharZero K]
+    [IsNonarchimedeanLocalField K]
     (E : WeierstrassCurve K) [E.IsElliptic] [E.HasMultiplicativeReduction 𝒪[K]]
     [Field Ω] [Algebra K Ω] [IsAlgClosure K Ω] [DecidableEq Ω]
     (A : ValuationSubring Ω)
