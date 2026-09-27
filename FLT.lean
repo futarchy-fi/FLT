@@ -552,6 +552,7 @@ public import FLT.Slop.PGL2.FiniteSubgroups.WildClassification
 public import FLT.Slop.RepresentationTheory.OddAbsIrredOrig
 public import FLT.Slop.RepresentationTheory.OddAbsIrredSlop
 public import FLT.Slop.Ribet_Lemma.Brauer_Nesbitt
+public import FLT.Slop.Ribet_Lemma.LatticeGaloisRep
 public import FLT.Slop.Ribet_Lemma.Ribet_Lemma
 public import FLT.Slop.Ribet_Lemma.stable_lattices
 public import FLT.TateCurve.Abscissa
