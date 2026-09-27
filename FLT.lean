@@ -411,6 +411,7 @@ public import FLT.TateCurve.Integral
 public import FLT.TateCurve.LocalField
 public import FLT.TateCurve.Naturality
 public import FLT.TateCurve.Points
+public import FLT.TateCurve.QuadraticLift
 public import FLT.TateCurve.Quotient
 public import FLT.TateCurve.QuotientAvoidance
 public import FLT.TateCurve.Surjectivity
