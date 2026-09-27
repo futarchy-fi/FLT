@@ -42,8 +42,7 @@ theorem isRoot_ΨSq_iff_nsmul_eq_zero [DecidableEq k] {x y : k}
   simpa only [map_nsmul, map_zero, Jacobian.Point.toAffineAddEquiv_symm_apply,
     natCast_zsmul] using hj
 
-/-- For odd `n`, the unsquared division polynomial detects nonzero torsion
-points without introducing double roots. -/
+/-- For odd `n`, the unsquared division polynomial detects nonzero torsion points. -/
 theorem isRoot_preΨ_iff_nsmul_eq_zero [DecidableEq k] {x y : k}
     (h : E.toAffine.Nonsingular x y) {n : ℕ} (hn : Odd n) :
     (E.preΨ n).IsRoot x ↔ n • Affine.Point.some x y h = 0 := by
@@ -81,5 +80,31 @@ theorem isCoprime_Φ_ΨSq [E.IsElliptic] (n : ℤ) : IsCoprime (E.Φ n) (E.ΨSq 
       E'.eval_Φ_ne_zero_of_isRoot_ΨSq hns n hx
   · right
     simpa only [E', map_ΨSq, Polynomial.IsRoot, eval_map_algebraMap] using hx
+
+/-- An odd division polynomial and the two-division polynomial have no common
+factor on an elliptic curve, since a nonzero point cannot have both odd order
+and order dividing two. -/
+theorem isCoprime_preΨ_ΨSq_two [E.IsElliptic] {n : ℕ} (hn : Odd n) :
+    IsCoprime (E.preΨ n) (E.ΨSq 2) := by
+  classical
+  apply (Polynomial.isCoprime_iff_aeval_ne_zero_of_isAlgClosed
+    k (AlgebraicClosure k) (E.preΨ n) (E.ΨSq 2)).mpr
+  intro x
+  let E' := E.map (algebraMap k (AlgebraicClosure k))
+  by_cases hx : (E'.preΨ n).IsRoot x
+  · right
+    intro hx₂
+    have hr₂ : (E'.ΨSq 2).IsRoot x := by
+      simpa only [E', map_ΨSq, Polynomial.IsRoot, eval_map_algebraMap] using hx₂
+    obtain ⟨y, hy⟩ := E'.exists_equation x
+    have hns := E'.toAffine.equation_iff_nonsingular.mp hy
+    have ht := (E'.isRoot_preΨ_iff_nsmul_eq_zero hns hn).mp hx
+    have ht₂ := (E'.isRoot_ΨSq_iff_nsmul_eq_zero hns 2).mp hr₂
+    obtain ⟨m, rfl⟩ := hn
+    rw [add_nsmul, mul_nsmul, ht₂,
+      smul_zero, one_nsmul, zero_add] at ht
+    exact Affine.Point.some_ne_zero hns ht
+  · left
+    simpa only [E', map_preΨ, Polynomial.IsRoot, eval_map_algebraMap] using hx
 
 end WeierstrassCurve
