@@ -7,6 +7,7 @@ module
 
 public import FLT.KnownIn1980s.EllipticCurves.TateCurveBaseChange
 public import FLT.TateCurve.Uniformization
+public import Mathlib.RingTheory.PowerSeries.WellKnown
 
 /-!+# Tate coordinates over nonarchimedean local fields
 
@@ -130,5 +131,38 @@ theorem tateCorrection_eq_evalInt {q : K} (hq : valuation K q < 1) :
     _ = evalInt q (sInt 1) := by
           simpa only [Int.cast_natCast] using
             tsum_lambert_eq_evalInt q hq (fun n ↦ (n : ℤ)) hcoeff
+
+/-- The binomially weighted geometric series, proved using its integral formal identity.
+The argument works in every residue characteristic. -/
+theorem hasSum_choose_add_geometric_of_valuation_lt_one {q : K}
+    (hq : valuation K q < 1) (d : ℕ) :
+    HasSum (fun n : ℕ ↦ ((d + n).choose d : K) * q ^ n) ((1 / (1 - q)) ^ (d + 1)) := by
+  have he : evalInt q (PowerSeries.mk (1 : ℕ → ℤ)) = 1 / (1 - q) := by
+    simpa [evalInt] using (hasSum_geometric_of_valuation_lt_one hq).tsum_eq
+  have hs := (summable_evalInt q hq (PowerSeries.mk fun n ↦ ((d + n).choose d : ℤ))).hasSum
+  have hv : evalInt q (PowerSeries.mk fun n ↦ ((d + n).choose d : ℤ)) =
+      (1 / (1 - q)) ^ (d + 1) := by
+    rw [← PowerSeries.mk_one_pow_eq_mk_choose_add, evalInt_pow q hq, he]
+  change HasSum _ (evalInt q (PowerSeries.mk fun n ↦ ((d + n).choose d : ℤ))) at hs
+  rw [hv] at hs
+  simpa only [PowerSeries.coeff_mk, Int.cast_natCast] using hs
+
+/-- The second binomially weighted geometric series is the rational `y` summand. -/
+theorem hasSum_choose_two_geometric_of_valuation_lt_one {q : K}
+    (hq : valuation K q < 1) :
+    HasSum (fun n : ℕ ↦ (n.choose 2 : K) * q ^ n) (yTerm q) := by
+  have h := (hasSum_choose_add_geometric_of_valuation_lt_one hq 2).mul_left (q ^ 2)
+  have he : (fun n : ℕ ↦ q ^ 2 * ((2 + n).choose 2 * q ^ n : K)) =
+      fun n : ℕ ↦ ((n + 2).choose 2 : K) * q ^ (n + 2) := by
+    funext n
+    rw [Nat.add_comm 2 n]
+    ring
+  rw [he] at h
+  have hv : q ^ 2 * (1 / (1 - q)) ^ (2 + 1) = yTerm q := by
+    simp only [yTerm, div_pow, one_pow]
+    ring
+  rw [hv] at h
+  simpa [Finset.sum_range_succ] using
+    (hasSum_nat_add_iff (f := fun n : ℕ ↦ (n.choose 2 : K) * q ^ n) 2).mp h
 
 end TateCurve
