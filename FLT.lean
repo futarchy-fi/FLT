@@ -264,6 +264,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.FlatCoefficientExtension
 public import FLT.GaloisRepresentation.HardlyRamified.Frey
 public import FLT.GaloisRepresentation.HardlyRamified.Lift
 public import FLT.GaloisRepresentation.HardlyRamified.ModThree
+public import FLT.GaloisRepresentation.HardlyRamified.NormalizedOrder
 public import FLT.GaloisRepresentation.HardlyRamified.PrimeField
 public import FLT.GaloisRepresentation.HardlyRamified.ResidualCharacteristic
 public import FLT.GaloisRepresentation.HardlyRamified.RibetAdapters
