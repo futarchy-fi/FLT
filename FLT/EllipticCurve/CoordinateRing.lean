@@ -103,4 +103,20 @@ theorem map_XYIdeal {L : Type*} [Field L] (φ : F →+* L) (x y : F) :
   simp only [XYIdeal, Ideal.map_span, Set.image_pair, XClass, YClass, map_mk,
     Polynomial.map_sub, Polynomial.map_C, Polynomial.map_X, Polynomial.coe_mapRingHom]
 
+/-- Evaluation commutes with applying a homomorphism of ground fields. -/
+theorem evalEval_map {L : Type*} [Field L] {x y : F} (h : W.Equation x y)
+    (φ : F →+* L) (f : W.CoordinateRing) :
+    AdjoinRoot.evalEval ((W.map_equation φ.injective x y).mpr h) (map W φ f) =
+      φ (AdjoinRoot.evalEval h f) := by
+  obtain ⟨p, rfl⟩ := AdjoinRoot.mk_surjective f
+  have h₀ : W.polynomial.evalEval x y = 0 := h
+  have h₁ : (W.map φ).polynomial.evalEval (φ x) (φ y) = 0 :=
+    (W.map_equation φ.injective x y).mpr h
+  change AdjoinRoot.evalEval h₁ (map W φ (AdjoinRoot.mk _ p)) =
+    φ (AdjoinRoot.evalEval h₀ (AdjoinRoot.mk _ p))
+  rw [map_mk]
+  change AdjoinRoot.evalEval _ (AdjoinRoot.mk _ _) = _
+  rw [AdjoinRoot.evalEval_mk, AdjoinRoot.evalEval_mk]
+  exact map_mapRingHom_evalEval φ p x y
+
 end WeierstrassCurve.Affine.CoordinateRing
