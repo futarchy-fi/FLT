@@ -135,6 +135,7 @@ public import FLT.EllipticCurve.TorsionFunction
 public import FLT.EllipticCurve.TorsionOrbit
 public import FLT.EllipticCurve.TorsionPairing
 public import FLT.EllipticCurve.TorsionPairingAdapter
+public import FLT.EllipticCurve.TorsionPairingAlternating
 public import FLT.EllipticCurve.TorsionPairingBilinear
 public import FLT.EllipticCurve.TorsionPairingDescent
 public import FLT.EllipticCurve.TorsionSpecialization
