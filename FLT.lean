@@ -262,6 +262,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.Lift
 public import FLT.GaloisRepresentation.HardlyRamified.ModThree
 public import FLT.GaloisRepresentation.HardlyRamified.PrimeField
 public import FLT.GaloisRepresentation.HardlyRamified.Threeadic
+public import FLT.GaloisRepresentation.HardlyRamified.TraceLeaves
 public import FLT.GaloisRepresentation.HardlyRamified.TraceReducibility
 public import FLT.GlobalLanglandsConjectures.GLnDefs
 public import FLT.GlobalLanglandsConjectures.GLzero
@@ -453,6 +454,7 @@ public import FLT.Mathlib.Topology.MetricSpace.Pseudo.Matrix
 public import FLT.Mathlib.Topology.Polish
 public import FLT.MazurChapter.AdmissibleGroupSchemes
 public import FLT.MazurW
+public import FLT.MazurWOfPrimeTorsion
 public import FLT.MoretBailly
 public import FLT.NumberField.AdeleRing
 public import FLT.NumberField.Completion.Finite
