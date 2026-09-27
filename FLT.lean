@@ -270,6 +270,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.ModThree
 public import FLT.GaloisRepresentation.HardlyRamified.NormalizedOrder
 public import FLT.GaloisRepresentation.HardlyRamified.PrimeField
 public import FLT.GaloisRepresentation.HardlyRamified.ResidualCharacteristic
+public import FLT.GaloisRepresentation.HardlyRamified.ResidualTameTwo
 public import FLT.GaloisRepresentation.HardlyRamified.RibetAdapters
 public import FLT.GaloisRepresentation.HardlyRamified.ThreeAdicAlgebra
 public import FLT.GaloisRepresentation.HardlyRamified.ThreeAdicDegree
