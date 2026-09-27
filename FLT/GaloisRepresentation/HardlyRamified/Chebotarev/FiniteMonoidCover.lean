@@ -82,4 +82,22 @@ theorem exists_isConj_pow_restrict_QFrob (hW2 : W2Statement.{0})
   refine ⟨v.asIdeal.absNorm, hq, hN, hS, n, ?_⟩
   simpa only [hn] using hc.pow n
 
+/-- Lift the finite conjugator to the absolute Galois group. -/
+theorem exists_restrict_eq_conj_pow_QFrob (hW2 : W2Statement.{0})
+    (L : IntermediateField ℚ (AlgebraicClosure ℚ))
+    [FiniteDimensional ℚ L] [IsGalois ℚ L]
+    (g : Field.absoluteGaloisGroup ℚ) (S : Finset (Prime ℚ)) (N : ℕ) :
+    ∃ (q : ℕ) (hq : q.Prime), N ≤ q ∧
+      hq.toHeightOneSpectrumRingOfIntegersRat ∉ S ∧
+      ∃ (σ : Field.absoluteGaloisGroup ℚ) (n : ℕ),
+        AlgEquiv.restrictNormalHom L g =
+          AlgEquiv.restrictNormalHom L (σ * (QFrob q hq) ^ n * σ⁻¹) := by
+  obtain ⟨q, hq, hN, hS, n, hn⟩ :=
+    exists_isConj_pow_restrict_QFrob hW2 L (AlgEquiv.restrictNormalHom L g) S N
+  obtain ⟨τ, hτ⟩ := isConj_iff.mp hn
+  obtain ⟨σ, hσ⟩ := AlgEquiv.restrictNormalHom_surjective (AlgebraicClosure ℚ) τ
+  refine ⟨q, hq, hN, hS, σ, n, ?_⟩
+  rw [map_mul, map_mul, map_pow, map_inv, hσ]
+  exact hτ.symm
+
 end GaloisRepresentation.Chebotarev
