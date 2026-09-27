@@ -120,6 +120,7 @@ public import FLT.EllipticCurve.TorsionFunction
 public import FLT.EllipticCurve.TorsionOrbit
 public import FLT.EllipticCurve.TorsionSpecialization
 public import FLT.EllipticCurve.TorsionStructure
+public import FLT.EllipticCurve.Translation
 public import FLT.EllipticCurve.TwoTorsionCard
 public import FLT.EllipticCurve.WeilPairing
 public import FLT.EllipticCurve.WeilPairingDeterminant
