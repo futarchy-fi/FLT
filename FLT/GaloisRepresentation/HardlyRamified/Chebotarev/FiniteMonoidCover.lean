@@ -49,6 +49,7 @@ theorem exists_finiteGalois_monoid_factorization
 
 /-- A generator of the automorphism group over the fixed field of `⟨g⟩`
 has a nonnegative power whose restriction of scalars is `g`. -/
+@[nolint unusedArguments]
 theorem exists_pow_restrictScalars_eq
     (L : Type*) [Field L] [NumberField L] [IsGalois ℚ L] (g : Gal(L/ℚ))
     (a : Gal(L/IntermediateField.fixedField (Subgroup.zpowers g)))
