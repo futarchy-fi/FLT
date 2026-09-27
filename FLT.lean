@@ -170,8 +170,10 @@ public import FLT.FreyCurve.Serre.LocalInertia
 public import FLT.FreyCurve.Serre.LocalResidue
 public import FLT.FreyCurve.Serre.LocalTorsion
 public import FLT.FreyCurve.Serre.LocalUniformizer
+public import FLT.FreyCurve.Serre.MultiplicativeFlat
 public import FLT.FreyCurve.Serre.MultiplicativeQuotient
 public import FLT.FreyCurve.Serre.MultiplicativeReduction
+public import FLT.FreyCurve.Serre.NonsplitFlat
 public import FLT.FreyCurve.Serre.QuadraticTwistPoints
 public import FLT.FreyCurve.Serre.QuotientCurve
 public import FLT.FreyCurve.Serre.QuotientDescent
@@ -184,6 +186,7 @@ public import FLT.FreyCurve.Serre.TateInertia
 public import FLT.FreyCurve.Serre.TateKummer
 public import FLT.FreyCurve.Serre.TateTorsion
 public import FLT.FreyCurve.Serre.TateUnramified
+public import FLT.FreyCurve.Serre.TwistFlat
 public import FLT.FreyCurve.Serre.Unramified
 public import FLT.FreyCurve.Serre.UnramifiedCharacter
 public import FLT.FreyCurve.Serre.Velu
@@ -228,6 +231,7 @@ public import FLT.GroupScheme.KummerTwist
 public import FLT.GroupScheme.QuadraticDescent
 public import FLT.GroupScheme.QuadraticTwist
 public import FLT.GroupScheme.QuadraticTwistCoassociativity
+public import FLT.GroupScheme.QuadraticTwistComparison
 public import FLT.GroupScheme.QuadraticTwistComultiplication
 public import FLT.GroupScheme.QuadraticTwistEtale
 public import FLT.GroupScheme.QuadraticTwistGenericPoints
