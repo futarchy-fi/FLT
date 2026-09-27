@@ -375,5 +375,6 @@ public import FLT.Slop.PGL2.FiniteSubgroups.TameClassification
 public import FLT.Slop.PGL2.FiniteSubgroups.WildClassification
 public import FLT.Slop.RepresentationTheory.OddAbsIrredOrig
 public import FLT.Slop.RepresentationTheory.OddAbsIrredSlop
+public import FLT.TateCurve.LocalField
 public import FLT.TateCurve.TateCurve
 public import FLT.TateCurve.Uniformization
