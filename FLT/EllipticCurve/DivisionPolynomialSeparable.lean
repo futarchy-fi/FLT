@@ -24,17 +24,6 @@ namespace WeierstrassCurve
 
 variable {R : Type*} [CommRing R] (E : WeierstrassCurve R)
 
-/-- The derivative of the three-division polynomial is three times the
-square two-division polynomial over any commutative ring. -/
-theorem derivative_Ψ₃ : E.Ψ₃.derivative = 3 * E.Ψ₂Sq := by
-  simp only [Ψ₃, Ψ₂Sq, derivative_add, derivative_mul, derivative_pow,
-    derivative_X, derivative_C, derivative_ofNat, map_mul, map_ofNat, map_natCast]
-  ring
-
-/-- The five-division polynomial in terms of the initial division polynomials. -/
-theorem preΨ_five : E.preΨ 5 = E.preΨ₄ * E.Ψ₂Sq ^ 2 - E.Ψ₃ ^ 3 := by
-  simpa using E.preΨ_odd 2
-
 /-- The derivative of the five-division polynomial factors through the
 square two-division polynomial over any commutative ring. -/
 theorem derivative_preΨ_five : (E.preΨ 5).derivative =

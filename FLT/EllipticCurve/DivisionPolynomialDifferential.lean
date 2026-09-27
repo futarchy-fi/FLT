@@ -40,6 +40,32 @@ theorem Ψ₂Sq_mul_derivative_invar_sub :
     derivative_X, derivative_C, derivative_ofNat, map_mul, map_ofNat, map_natCast]
   linear_combination -hb
 
+/-- The derivative of the three-division polynomial is three times the
+square two-division polynomial over any commutative ring. -/
+theorem derivative_Ψ₃ : E.Ψ₃.derivative = 3 * E.Ψ₂Sq := by
+  simp only [Ψ₃, Ψ₂Sq, derivative_add, derivative_mul, derivative_pow,
+    derivative_X, derivative_C, derivative_ofNat, map_mul, map_ofNat, map_natCast]
+  ring
+
+/-- The five-division polynomial in terms of the initial division polynomials. -/
+theorem preΨ_five : E.preΨ 5 = E.preΨ₄ * E.Ψ₂Sq ^ 2 - E.Ψ₃ ^ 3 := by
+  simpa using E.preΨ_odd 2
+
+/-- The first derivative of the auxiliary four-division polynomial. -/
+theorem derivative_preΨ₄ :
+    E.preΨ₄.derivative = E.invar.derivative * E.Ψ₃ - E.invar * E.Ψ₂Sq := by
+  have h := congrArg derivative E.preΨ₄_add_Ψ₂Sq_sq
+  simp only [derivative_add, derivative_pow, derivative_mul,
+    E.derivative_Ψ₃, E.derivative_Ψ₂Sq, Nat.cast_ofNat, map_ofNat] at h
+  linear_combination h
+
+/-- The second derivative of the auxiliary four-division polynomial. -/
+theorem derivative_derivative_preΨ₄ : E.preΨ₄.derivative.derivative = 20 * E.Ψ₃ := by
+  simp only [preΨ₄, Ψ₃, derivative_add, derivative_mul, derivative_pow,
+    derivative_X, derivative_C, derivative_ofNat, derivative_zero, derivative_one,
+    derivative_natCast, map_natCast]
+  ring
+
 /-- The numerator of the negative second logarithmic derivative of `f` along
  the invariant vector field, after removing the factor `f²`. -/
 noncomputable def divisionDifferential (f : R[X]) : R[X] :=
@@ -63,6 +89,15 @@ theorem divisionDifferential_mul (f g : R[X]) :
     E.divisionDifferential (f * g) =
       g ^ 2 * E.divisionDifferential f + f ^ 2 * E.divisionDifferential g := by
   simp only [divisionDifferential, derivative_mul, derivative_add]
+  ring
+
+/-- The subtraction rule isolates the squared Wronskian needed when applying
+the division-polynomial recursions. No polynomial denominators are used. -/
+theorem divisionDifferential_sub_mul (f g : R[X]) :
+    f * g * E.divisionDifferential (f - g) =
+      (f - g) * (g * E.divisionDifferential f - f * E.divisionDifferential g) +
+        E.Ψ₂Sq * (g * f.derivative - f * g.derivative) ^ 2 := by
+  simp only [divisionDifferential, derivative_sub]
   ring
 
 /-- Squaring doubles the second logarithmic derivative. -/
@@ -120,6 +155,41 @@ theorem divisionDifferential_ΨSq (n : ℤ) :
     ring
   · simp only [mul_one, E.divisionDifferential_sq]
     ring
+
+/-- The differential identity holds at index zero over every commutative ring. -/
+@[simp] theorem divisionDifferentialDefect_zero : E.divisionDifferentialDefect 0 = 0 := by
+  simp [divisionDifferentialDefect]
+
+/-- The differential identity holds at index one over every commutative ring. -/
+@[simp] theorem divisionDifferentialDefect_one : E.divisionDifferentialDefect 1 = 0 := by
+  simp [divisionDifferentialDefect]
+
+/-- The corrected even identity holds at index two over every commutative ring. -/
+@[simp] theorem divisionDifferentialDefect_two : E.divisionDifferentialDefect 2 = 0 := by
+  simp [divisionDifferentialDefect, WeierstrassCurve.Φ, map_ofNat]
+  ring
+
+/-- The odd differential identity holds at index three over every commutative ring. -/
+@[simp] theorem divisionDifferentialDefect_three : E.divisionDifferentialDefect 3 = 0 := by
+  have hf := E.preΨ₄_add_Ψ₂Sq_sq
+  simp only [divisionDifferentialDefect, show ¬Even (3 : ℤ) by decide, ite_false,
+    preΨ_three, Φ_three, ΨSq_three, divisionDifferential, E.derivative_Ψ₃,
+    derivative_mul, derivative_ofNat, zero_mul, zero_add, E.derivative_Ψ₂Sq]
+  norm_num only [Int.cast_ofNat, Nat.cast_ofNat, map_pow, map_ofNat]
+  linear_combination 9 * E.Ψ₂Sq * hf
+
+/-- The corrected even identity holds at index four over every commutative ring. -/
+@[simp] theorem divisionDifferentialDefect_four : E.divisionDifferentialDefect 4 = 0 := by
+  have hi := E.Ψ₂Sq_mul_derivative_invar_sub
+  have hf : E.preΨ₄ = E.invar * E.Ψ₃ - E.Ψ₂Sq ^ 2 :=
+    eq_sub_iff_add_eq.mpr E.preΨ₄_add_Ψ₂Sq_sq
+  simp only [divisionDifferentialDefect, show Even (4 : ℤ) by decide, ite_true,
+    preΨ_four, WeierstrassCurve.Φ, ΨSq_four]
+  norm_num only [Int.reduceAdd, Int.reduceSub, preΨ_three, E.preΨ_five,
+    Int.cast_ofNat, Nat.cast_ofNat, map_pow, map_ofNat]
+  rw [divisionDifferential, E.derivative_derivative_preΨ₄, E.derivative_preΨ₄, hf]
+  linear_combination (E.Ψ₂Sq * E.Ψ₃ *
+    (E.invar.derivative * E.Ψ₃ - E.invar * E.Ψ₂Sq) + 4 * E.Ψ₃ ^ 3) * hi
 
 /-- The differential residual commutes with change of coefficient ring. -/
 theorem map_divisionDifferentialDefect (f : R →+* S) (n : ℤ) :
