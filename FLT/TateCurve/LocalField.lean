@@ -81,4 +81,54 @@ theorem hasSum_nat_mul_geometric_of_valuation_lt_one {q : K} (hq : valuation K q
       ring
   simpa using (hasSum_nat_add_iff (f := fun n : ℕ ↦ (n : K) * q ^ n) 1).mp hshift
 
+/-- The rational correction series equals the integral power series `s₁`.
+The two Lambert expressions agree by interchanging their summable double series. -/
+theorem tateCorrection_eq_evalInt {q : K} (hq : valuation K q < 1) :
+    tateCorrection q = evalInt q (sInt 1) := by
+  let : UniformSpace K := IsTopologicalAddGroup.rightUniformSpace K
+  have : IsUniformAddGroup K := isUniformAddGroup_of_addCommGroup
+  have hpow (n : ℕ) : valuation K (q ^ (n + 1)) < 1 := by
+    rw [map_pow]
+    exact (pow_le_pow_right_of_le_one' hq.le (Nat.succ_le_succ (Nat.zero_le n))).trans_lt
+      (by simpa only [pow_one] using hq)
+  have hd : Summable (fun p : ℕ × ℕ ↦ ((p.2 + 1 : ℕ) : K) *
+      q ^ ((p.1 + 1) * (p.2 + 1))) := by
+    refine summable_of_valuation_le_pow hq (fun p ↦ (p.1 + 1) * (p.2 + 1))
+      (fun N ↦ ?_) (fun p ↦ ?_)
+    · refine ((Set.finite_Iio N).prod (Set.finite_Iio N)).subset fun p hp ↦ ?_
+      have h1 : p.1 < (p.1 + 1) * (p.2 + 1) :=
+        (Nat.lt_succ_self _).trans_le (Nat.le_mul_of_pos_right _ (Nat.succ_pos _))
+      have h2 : p.2 < (p.1 + 1) * (p.2 + 1) :=
+        (Nat.lt_succ_self _).trans_le (Nat.le_mul_of_pos_left _ (Nat.succ_pos _))
+      exact ⟨h1.trans hp, h2.trans hp⟩
+    · rw [map_mul, map_pow]
+      simpa only [one_mul] using mul_le_mul_left (valuation_natCast_le_one (p.2 + 1))
+        (valuation K q ^ ((p.1 + 1) * (p.2 + 1)))
+  have hrow (n : ℕ) : (∑' m : ℕ, ((m + 1 : ℕ) : K) * q ^ ((n + 1) * (m + 1))) =
+      xTerm (q ^ (n + 1)) := by
+    have h : HasSum (fun m : ℕ ↦ ((m + 1 : ℕ) : K) * (q ^ (n + 1)) ^ (m + 1))
+        (xTerm (q ^ (n + 1))) := by
+      apply (hasSum_nat_add_iff (f := fun m : ℕ ↦ (m : K) * (q ^ (n + 1)) ^ m) 1).mpr
+      simpa only [Finset.sum_range_one, Nat.cast_zero, zero_mul, add_zero] using
+        hasSum_nat_mul_geometric_of_valuation_lt_one (hpow n)
+    simpa only [← pow_mul] using h.tsum_eq
+  have hcol (m : ℕ) : (∑' n : ℕ, ((m + 1 : ℕ) : K) * q ^ ((n + 1) * (m + 1))) =
+      ((m + 1 : ℕ) : K) * q ^ (m + 1) / (1 - q ^ (m + 1)) := by
+    simpa only [← pow_mul, mul_div_assoc, Nat.mul_comm] using
+      ((hasSum_geometric_succ (hpow m)).mul_left ((m + 1 : ℕ) : K)).tsum_eq
+  have hcoeff : ∀ n, PowerSeries.coeff n (sInt 1) = ∑ d ∈ n.divisors, (d : ℤ) := by
+    intro n
+    simp only [sInt, PowerSeries.coeff_mk, ArithmeticFunction.sigma_one_apply, Nat.cast_sum]
+  calc tateCorrection q
+      = ∑' n : ℕ, ∑' m : ℕ, ((m + 1 : ℕ) : K) * q ^ ((n + 1) * (m + 1)) := by
+          simp only [tateCorrection, hrow]
+    _ = ∑' m : ℕ, ∑' n : ℕ, ((m + 1 : ℕ) : K) * q ^ ((n + 1) * (m + 1)) :=
+          (Summable.tsum_comm (f := fun n m : ℕ ↦
+            ((m + 1 : ℕ) : K) * q ^ ((n + 1) * (m + 1))) hd).symm
+    _ = ∑' m : ℕ, ((m + 1 : ℕ) : K) * q ^ (m + 1) / (1 - q ^ (m + 1)) :=
+          tsum_congr hcol
+    _ = evalInt q (sInt 1) := by
+          simpa only [Int.cast_natCast] using
+            tsum_lambert_eq_evalInt q hq (fun n ↦ (n : ℤ)) hcoeff
+
 end TateCurve
