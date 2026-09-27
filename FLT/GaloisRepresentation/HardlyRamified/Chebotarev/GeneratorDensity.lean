@@ -5,6 +5,7 @@ Authors: krandder
 -/
 module
 
+public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.GeneratorPrimes
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.Generators
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.SplittingDensity
 
@@ -26,10 +27,6 @@ namespace GaloisRepresentation.Chebotarev
 
 variable (K L : Type*) [Field K] [NumberField K] [Field L] [NumberField L]
   [Algebra K L] [IsGalois K L]
-
-/-- Unramified primes whose Frobenius generates the Galois group. -/
-def Generators : Set (Prime K) :=
-  {v | Unram K L v ∧ Subgroup.zpowers (frob K L v) = ⊤}
 
 /-- Frobenius membership in a normal subgroup has density equal to its
 proportion of the Galois group. -/
