@@ -231,6 +231,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.B5Inputs
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.DedekindZeta
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.DegreeOneGenerator
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.FiniteGaloisRealization
+public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.FiniteMonoidCover
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.FiniteRamification
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.FixedVector
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.FrobeniusOrder
@@ -251,6 +252,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.PrimeSummabilit
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.SplittingDensity
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.SubfieldSplitting
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.TowerDegreeOne
+public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.W2Statement
 public import FLT.GaloisRepresentation.HardlyRamified.Defs
 public import FLT.GaloisRepresentation.HardlyRamified.Family
 public import FLT.GaloisRepresentation.HardlyRamified.Frey
