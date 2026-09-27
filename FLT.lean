@@ -242,6 +242,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.OpenKernel
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.PowerFrobCover
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.PrimeFibers
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.PrimeSummability
+public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.SubfieldSplitting
 public import FLT.GaloisRepresentation.HardlyRamified.Defs
 public import FLT.GaloisRepresentation.HardlyRamified.Family
 public import FLT.GaloisRepresentation.HardlyRamified.Frey
