@@ -96,6 +96,7 @@ public import FLT.Deformations.RepresentationTheory.Irreducible
 public import FLT.Deformations.Subfunctor
 public import FLT.DivisionAlgebra.Finiteness
 public import FLT.EllipticCurve.DivisionPolynomialDifferential
+public import FLT.EllipticCurve.DivisionPolynomialDifferentialIdentity
 public import FLT.EllipticCurve.DivisionPolynomialSeparable
 public import FLT.EllipticCurve.InvariantDerivation
 public import FLT.EllipticCurve.InvariantDifferential

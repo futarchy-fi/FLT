@@ -61,6 +61,13 @@ lemma logSecond_div {f g : K} (hf : f ≠ 0) (hg : g ≠ 0) :
 /-- Squaring doubles the second logarithmic derivative. -/
 lemma logSecond_sq {f : K} (hf : f ≠ 0) : D.logSecond (f ^ 2) = 2 * D.logSecond f := by
   rw [pow_two, D.logSecond_mul hf hf, two_mul]
+/-- The quotient-rule expression for the second logarithmic derivative. -/
+lemma logSecond_eq (f : K) :
+    D.logSecond f = (f * D (D f) - D f ^ 2) / f ^ 2 := by
+  rw [logSecond, D.leibniz_div]
+  simp only [smul_eq_mul, div_eq_mul_inv, inv_pow]
+  ring
+
 /-- Negation does not change the second logarithmic derivative. -/
 lemma logSecond_neg (f : K) : D.logSecond (-f) = D.logSecond f := by
   simp [logSecond]
