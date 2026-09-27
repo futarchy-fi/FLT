@@ -285,4 +285,61 @@ theorem translationEquiv_apply (Q : W.Point) (f : W.FunctionField) :
 theorem translationEquiv_symm_apply (Q : W.Point) (f : W.FunctionField) :
     (translationEquiv W Q).symm f = translationPullback W (-Q) f := rfl
 
+/-- A scalar eigenvalue of translation by an `n`-torsion point is an `n`th root
+of unity whenever its eigenfunction is nonzero. -/
+theorem translation_scalar_pow_eq_one (Q : W.Point) (n : ℕ) (hQ : n • Q = 0)
+    {f : W.FunctionField} (hf : f ≠ 0) {c : F}
+    (hc : translationPullback W Q f = algebraMap F W.FunctionField c * f) : c ^ n = 1 := by
+  have hi (k : ℕ) : translationPullback W (k • Q) f =
+      algebraMap F W.FunctionField (c ^ k) * f := by
+    induction k with
+    | zero => simp [translationPullback_zero]
+    | succ k hk =>
+      rw [succ_nsmul, ← translationPullback_add]
+      change translationPullback W (k • Q) (translationPullback W Q f) = _
+      rw [hc, map_mul, AlgHom.commutes, hk, pow_succ, map_mul]
+      ring
+  have he := hi n
+  rw [hQ, translationPullback_zero, AlgHom.id_apply] at he
+  have he' : algebraMap F W.FunctionField (c ^ n) = 1 :=
+    mul_right_cancel₀ hf (he.symm.trans (one_mul f).symm)
+  exact (algebraMap F W.FunctionField).injective (by simpa only [map_one] using he')
+
+open scoped nonZeroDivisors in
+/-- Invariance of a function's principal fractional ideal under a torsion
+translation makes its translated ratio a constant root of unity. -/
+theorem exists_translation_ratio_root_of_unity (Q : W.Point) (n : ℕ) (hQ : n • Q = 0)
+    {f : W.FunctionField} (hf : f ≠ 0)
+    (hi : FractionalIdeal.spanSingleton W.CoordinateRing⁰ f =
+      FractionalIdeal.spanSingleton W.CoordinateRing⁰ (translationPullback W Q f)) :
+    ∃ c : F, c ≠ 0 ∧ c ^ n = 1 ∧
+      translationPullback W Q f / f = algebraMap F W.FunctionField c := by
+  obtain ⟨c, hc, he⟩ := exists_eq_mul_of_spanSingleton_eq hi
+  exact ⟨c, hc, translation_scalar_pow_eq_one W Q n hQ hf he,
+    by rw [he, mul_div_cancel_right₀ _ hf]⟩
+
+set_option backward.isDefEq.respectTransparency false in
+/-- Pullback by a nonzero affine translation has the usual chord formulas on
+both generic coordinates. The denominator is nonzero by transcendence. -/
+theorem translationPullback_coordinates {u v : F} (h : W.Nonsingular u v) :
+    let a := algebraMap F W.FunctionField
+    let ℓ := (genericY W - a v) / (genericX W - a u)
+    translationPullback W (Point.some u v h) (genericX W) =
+      (W⁄W.FunctionField).addX (genericX W) (a u) ℓ ∧
+    translationPullback W (Point.some u v h) (genericY W) =
+      (W⁄W.FunctionField).addY (genericX W) (a u) (genericY W) ℓ := by
+  dsimp only
+  have hx : genericX W ≠ algebraMap F W.FunctionField u := by
+    intro he
+    exact genericX_transcendental W (he ▸ isAlgebraic_algebraMap u)
+  let : (W⁄W.FunctionField).IsElliptic :=
+    inferInstanceAs (W.map (algebraMap F W.FunctionField)).IsElliptic
+  have hg := equation_iff_nonsingular.mp (generic_equation W)
+  have hb := (W.map_nonsingular (algebraMap F W.FunctionField).injective u v).mpr h
+  have ha := Point.add_of_X_ne (h₁ := hg) (h₂ := hb) hx
+  have hp := (translationPullback_genericPoint W (Point.some u v h)).trans ha
+  have he := Point.some.inj hp
+  rw [slope_of_X_ne hx] at he
+  exact he
+
 end WeierstrassCurve.Affine.FunctionField
