@@ -233,6 +233,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.FiniteGaloisRea
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.FiniteRamification
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.FixedVector
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.FrobeniusOrder
+public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.GeneratorDensity
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.Generators
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.HigherDegree
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.LocalFrobenius
