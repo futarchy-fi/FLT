@@ -553,6 +553,7 @@ public import FLT.Slop.RepresentationTheory.OddAbsIrredOrig
 public import FLT.Slop.RepresentationTheory.OddAbsIrredSlop
 public import FLT.Slop.Ribet_Lemma.Brauer_Nesbitt
 public import FLT.Slop.Ribet_Lemma.Ribet_Lemma
+public import FLT.Slop.Ribet_Lemma.TrivialQuotientExtension
 public import FLT.Slop.Ribet_Lemma.stable_lattices
 public import FLT.TateCurve.Abscissa
 public import FLT.TateCurve.Addition
