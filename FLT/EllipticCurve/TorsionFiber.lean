@@ -122,4 +122,25 @@ theorem exists_generator_fiberIdeal [IsSepClosed F] {n : ℕ} (hn : n ≠ 0)
   apply sub_eq_zero.mp
   rw [sum_torsionPoints_translate_sub W hn hchar, pow_two, mul_smul, hQ]
 
+/-- The fiber ideal depends only on nQ, so the choice of an n-division point
+does not change the principal fractional ideal to be generated. -/
+theorem fiberIdeal_eq_of_nsmul_eq {n : ℕ} (hn : n ≠ 0) {Q Q' : W.Point} (hQ : n • Q = n • Q') :
+    fiberIdeal W n hn Q = fiberIdeal W n hn Q' := by
+  have hD : n • (Q - Q') = 0 := by rw [nsmul_sub, hQ, sub_self]
+  unfold fiberIdeal
+  congr 1
+  apply Finset.prod_bij (fun R _ => R + (Q - Q'))
+  · intro R hR
+    rw [mem_torsionPoints] at hR ⊢
+    rw [nsmul_add, hR, hD, zero_add]
+  · intro R hR S hS he
+    exact add_right_cancel he
+  · intro S hS
+    refine ⟨S - (Q - Q'), ?_, sub_add_cancel _ _⟩
+    rw [mem_torsionPoints] at hS ⊢
+    rw [nsmul_sub, hS, hD, sub_self]
+  · intro R hR
+    congr 1
+    abel
+
 end WeierstrassCurve.Affine.Point
