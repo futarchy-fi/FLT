@@ -111,6 +111,7 @@ public import FLT.FreyCurve.Serre.VeluGenericAdditivity
 public import FLT.FreyCurve.Serre.VeluIdentity
 public import FLT.FreyCurve.Serre.VeluInfinity
 public import FLT.FreyCurve.Serre.VeluMap
+public import FLT.FreyCurve.Serre.VeluPointCofinite
 public import FLT.FreyCurve.Serre.VeluQuotient
 public import FLT.FreyCurve.Serre.VeluRational
 public import FLT.FreyCurve.Serre.VeluSpecialization
