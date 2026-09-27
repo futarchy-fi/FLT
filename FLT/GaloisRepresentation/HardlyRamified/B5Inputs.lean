@@ -40,6 +40,7 @@ avoids `p`. The quotient is local and finite torsion-free, hence free over the
 DVR. Give it the quotient (equivalently module) topology.
 
 This is a commutative-algebra input, with no representation-theoretic hypothesis. -/
+@[nolint unusedArguments]
 theorem exists_domain_quotient {p : ℕ} [Fact p.Prime]
     (R : Type) [CommRing R] [IsLocalRing R]
     [TopologicalSpace R] [IsTopologicalRing R]
@@ -147,6 +148,7 @@ set_option backward.isDefEq.respectTransparency false in
 follows by identifying the reductions modulo open ideals. The rank-one quotient
 at 2 remains surjective after tensoring; its character remains unramified and
 has square one. -/
+@[nolint unusedArguments]
 theorem hardlyRamified_quotient {p : ℕ} [Fact p.Prime] (hpodd : Odd p)
     {R A : Type} [CommRing R] [IsLocalRing R]
     [TopologicalSpace R] [IsTopologicalRing R] [Algebra ℤ_[p] R]
