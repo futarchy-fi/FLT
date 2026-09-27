@@ -200,6 +200,7 @@ public import FLT.GroupScheme.QuadraticTwist
 public import FLT.GroupScheme.QuadraticTwistCoassociativity
 public import FLT.GroupScheme.QuadraticTwistComultiplication
 public import FLT.GroupScheme.QuadraticTwistEtale
+public import FLT.GroupScheme.QuadraticTwistGenericPoints
 public import FLT.GroupScheme.QuadraticTwistIdentities
 public import FLT.GroupScheme.QuadraticTwistMaps
 public import FLT.GroupScheme.QuadraticTwistMonoidal
