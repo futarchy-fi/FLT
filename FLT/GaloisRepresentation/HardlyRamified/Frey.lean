@@ -10,6 +10,7 @@ public import FLT.FreyCurve.Basic
 public import FLT.FreyCurve.Serre.Flat
 public import FLT.FreyCurve.Serre.Unramified
 public import FLT.EllipticCurve.Torsion
+public import FLT.EllipticCurve.WeilPairingDeterminant
 import Mathlib.Analysis.SpecialFunctions.Gamma.Basic
 import Mathlib.Data.Nat.Factorial.DoubleFactorial
 import Mathlib.NumberTheory.ArithmeticFunction.Misc
@@ -50,6 +51,18 @@ theorem FreyCurve.torsion_rank :
   rw [e'.rank_eq, rank_prod]
   simp only [Module.rank_self, Cardinal.lift_one]
   exact one_add_one_eq_two
+
+/-- A checked Weil pairing on Frey torsion supplies exactly the determinant field of
+`IsHardlyRamified`. Constructing this pairing is still required. -/
+theorem FreyCurve.torsion_det_of_weilPairing :
+    haveI : Fact P.p.Prime := ⟨P.pp⟩
+    ∀ (_w : P.freyCurve.TorsionWeilPairing P.p) g,
+      (P.freyCurve.galoisRep P.p P.hppos).det g =
+        algebraMap ℤ_[P.p] (ZMod P.p)
+          (cyclotomicCharacter (AlgebraicClosure ℚ) P.p g.toRingEquiv) := by
+  let : Fact P.p.Prime := ⟨P.pp⟩
+  intro w g
+  exact w.det_galoisRep P.hppos g
 
 theorem FreyCurve.torsion_isHardlyRamified :
     haveI : Fact (P.p.Prime) := ⟨P.pp⟩
