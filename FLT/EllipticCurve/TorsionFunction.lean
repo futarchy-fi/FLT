@@ -78,6 +78,34 @@ theorem evalEval_eq_zero_iff_of_torsionFunction {x y x' y' : F} (h : W.Equation 
   rw [evalEval_eq_zero_iff, ← Ideal.span_singleton_le_iff_mem, ← hf,
     Ideal.IsPrime.pow_le_iff hn, XYIdeal_le_XYIdeal_iff h]
 
+/-- A torsion function belongs to precisely the first `n` powers of its
+point ideal. This gives its exact affine vanishing order without a valuation instance. -/
+theorem mem_XYIdeal_pow_iff_of_torsionFunction {x y : F} (h : W.Nonsingular x y)
+    {n : ℕ} {f : W.CoordinateRing} (hf : XYIdeal W x (C y) ^ n = Ideal.span {f})
+    (m : ℕ) : f ∈ XYIdeal W x (C y) ^ m ↔ m ≤ n := by
+  rw [← Ideal.span_singleton_le_iff_mem, ← hf]
+  exact (XYIdeal_pow_strictAnti h).le_iff_ge
+
+/-- Away from its supporting point a torsion function has affine vanishing
+order zero: membership in a power of any other rational point ideal forces that power to be zero. -/
+theorem mem_other_XYIdeal_pow_iff_of_torsionFunction {x y x' y' : F}
+    (h : W.Equation x' y') (hne : ¬(x = x' ∧ y = y'))
+    {n : ℕ} {f : W.CoordinateRing} (hf : XYIdeal W x (C y) ^ n = Ideal.span {f})
+    (m : ℕ) : f ∈ XYIdeal W x' (C y') ^ m ↔ m = 0 := by
+  constructor
+  · intro hm
+    by_contra hm0
+    have hle : XYIdeal W x (C y) ^ n ≤ XYIdeal W x' (C y') := by
+      rw [hf]
+      exact (Ideal.span_singleton_le_iff_mem _).mpr ((Ideal.pow_le_self hm0) hm)
+    by_cases hn : n = 0
+    · rw [hn, pow_zero, Ideal.one_eq_top] at hle
+      exact (isMaximal_XYIdeal h).ne_top (top_le_iff.mp hle)
+    · have : (XYIdeal W x' (C y')).IsPrime := (isMaximal_XYIdeal h).isPrime
+      exact hne ((XYIdeal_le_XYIdeal_iff h).mp ((Ideal.IsPrime.pow_le_iff hn).mp hle))
+  · rintro rfl
+    simp
+
 /-- Applying a field homomorphism preserves the defining ideal of a torsion function. -/
 theorem map_torsionFunction {L : Type*} [Field L] (φ : F →+* L)
     {x y : F} {n : ℕ} {f : W.CoordinateRing}
