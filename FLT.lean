@@ -302,6 +302,7 @@ public import FLT.GroupScheme.KummerParameter
 public import FLT.GroupScheme.KummerPoints
 public import FLT.GroupScheme.KummerTwist
 public import FLT.GroupScheme.ModelPoints
+public import FLT.GroupScheme.PadicAlgebraPatching
 public import FLT.GroupScheme.PadicLatticePatching
 public import FLT.GroupScheme.PadicModulePatching
 public import FLT.GroupScheme.PadicPatchingArithmetic
