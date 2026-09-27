@@ -13,13 +13,15 @@ public import Mathlib.LinearAlgebra.TensorProduct.RightExactness
 public import Mathlib.LinearAlgebra.TensorProduct.Tower
 public import Mathlib.LinearAlgebra.Trace
 public import Mathlib.Topology.Instances.ZMod
+public import Mathlib.RingTheory.Ideal.MinimalPrime.Localization
+public import Mathlib.LinearAlgebra.FreeModule.PID
 
 /-!
 # General inputs for B5
 
-Two general inputs remain admitted: `exists_domain_quotient` (commutative
-algebra) and `not_isIrreducible_of_frobenius_traces` (Chebotarev and
-Brauer--Nesbitt). Neither uses the hardly-ramified hypothesis or any B6 theorem.
+The general input `not_isIrreducible_of_frobenius_traces` (Chebotarev and
+Brauer--Nesbitt) remains admitted. Neither it nor the domain-quotient construction
+uses the hardly-ramified hypothesis or any B6 theorem.
 Coefficient-quotient preservation, trace/base-change identities, injectivity
 of coefficient embeddings, and compatibility transport are proved below.
 -/
@@ -51,7 +53,41 @@ theorem exists_domain_quotient {p : ℕ} [Fact p.Prime]
       (_ : Algebra R A) (_ : IsScalarTower ℤ_[p] R A) (_ : ContinuousSMul R A)
       (_ : Algebra A k) (_ : IsScalarTower R A k),
       Function.Surjective (algebraMap R A) := by
-  sorry
+  classical
+  let : (RingHom.ker (algebraMap R k)).IsPrime := RingHom.ker_isPrime _
+  obtain ⟨P, hP, hPk⟩ := Ideal.exists_minimalPrimes_le
+    (show (⊥ : Ideal R) ≤ RingHom.ker (algebraMap R k) from bot_le)
+  let : P.IsPrime := hP.isPrime
+  let A := R ⧸ P
+  let : IsLocalRing A :=
+    IsLocalRing.of_surjective' (Ideal.Quotient.mk P) Ideal.Quotient.mk_surjective
+  have hinj : Function.Injective (algebraMap ℤ_[p] A) := by
+    apply (injective_iff_map_eq_zero _).mpr
+    intro x hx
+    by_contra hne
+    have hxP : algebraMap ℤ_[p] R x ∈ P := by
+      apply Ideal.Quotient.eq_zero_iff_mem.mp
+      exact hx
+    apply notMem_nonZeroDivisors_of_mem_mem_minimalPrimes hxP hP
+    rw [mem_nonZeroDivisors_iff_right]
+    intro y hy
+    have hxy : x • y = 0 := by simpa [Algebra.smul_def, mul_comm] using hy
+    exact (smul_eq_zero.mp hxy).resolve_left hne
+  let : Module.IsTorsionFree ℤ_[p] A :=
+    Module.isTorsionFree_iff_algebraMap_injective.mpr hinj
+  let : TopologicalSpace A := moduleTopology ℤ_[p] A
+  let : IsModuleTopology ℤ_[p] A := ⟨rfl⟩
+  let : IsTopologicalRing A := IsModuleTopology.isTopologicalRing ℤ_[p] A
+  let : ContinuousSMul R A := continuousSMul_of_algebraMap R A
+    (IsModuleTopology.continuous_of_linearMap
+      (IsScalarTower.toAlgHom ℤ_[p] R A).toLinearMap)
+  let f : A →+* k := Ideal.Quotient.lift P (algebraMap R k) hPk
+  let : Algebra A k := f.toAlgebra
+  let : IsScalarTower R A k := IsScalarTower.of_algebraMap_eq' rfl
+  exact ⟨A, inferInstance, inferInstance, inferInstance, inferInstance,
+    inferInstance, inferInstance, inferInstance, inferInstance, inferInstance,
+    inferInstance, inferInstance, inferInstance, inferInstance, inferInstance,
+    Ideal.Quotient.mk_surjective⟩
 
 set_option backward.isDefEq.respectTransparency false in
 /-- Flatness is preserved by a continuous quotient of coefficient rings.
