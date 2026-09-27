@@ -409,11 +409,13 @@ public import FLT.TateCurve.Equation
 public import FLT.TateCurve.Expansion
 public import FLT.TateCurve.Fibers
 public import FLT.TateCurve.FiniteExtension
+public import FLT.TateCurve.FiniteStages
 public import FLT.TateCurve.InseparableLifting
 public import FLT.TateCurve.Integral
 public import FLT.TateCurve.LocalField
 public import FLT.TateCurve.LocalUniformization
 public import FLT.TateCurve.Model
+public import FLT.TateCurve.ModelTransport
 public import FLT.TateCurve.Naturality
 public import FLT.TateCurve.Points
 public import FLT.TateCurve.QuadraticLift
