@@ -34,6 +34,7 @@ theorem derivative_Ψ₃ : E.Ψ₃.derivative = 3 * E.Ψ₂Sq := by
 /-- The five-division polynomial in terms of the initial division polynomials. -/
 theorem preΨ_five : E.preΨ 5 = E.preΨ₄ * E.Ψ₂Sq ^ 2 - E.Ψ₃ ^ 3 := by
   simpa using E.preΨ_odd 2
+
 /-- The derivative of the five-division polynomial factors through the
 square two-division polynomial over any commutative ring. -/
 theorem derivative_preΨ_five : (E.preΨ 5).derivative =
@@ -46,6 +47,23 @@ theorem derivative_preΨ_five : (E.preΨ 5).derivative =
     map_add, map_sub, map_mul, map_pow, map_ofNat, map_natCast]
   linear_combination -(C E.b₆ * X + C E.b₈ + X ^ 4) *
     (4 * X ^ 3 + C E.b₂ * X ^ 2 + 2 * C E.b₄ * X + C E.b₆) * hb
+
+/-- The squared-derivative congruence for the five-division polynomial holds
+over every commutative ring. -/
+theorem preΨ_five_dvd_derivative_sq :
+    E.preΨ 5 ∣ E.Ψ₂Sq * (E.preΨ 5).derivative ^ 2 - C ((5 : R) ^ 2) * E.Φ 5 := by
+  refine ⟨25 * (E.Ψ₂Sq * (E.invar ^ 2 * E.preΨ₄ - E.Ψ₃ * E.Ψ₂Sq ^ 2 +
+    E.Ψ₃ * E.preΨ₄) - X * E.preΨ 5), ?_⟩
+  have h6 : E.preΨ 6 = E.Ψ₃ * (E.preΨ 5 - E.preΨ₄ ^ 2) := by
+    simpa [mul_sub] using E.preΨ_even 3
+  have hf : E.preΨ₄ = E.invar * E.Ψ₃ - E.Ψ₂Sq ^ 2 :=
+    eq_sub_iff_add_eq.mpr E.preΨ₄_add_Ψ₂Sq_sq
+  rw [derivative_preΨ_five, WeierstrassCurve.Φ, ΨSq]
+  norm_num only [show ¬Even (5 : ℤ) by decide, ite_false, mul_one]
+  rw [h6, preΨ_four, preΨ_five, hf]
+  simp only [map_ofNat]
+  ring
+
 variable {k : Type*} [Field k] (W : WeierstrassCurve k) [W.IsElliptic]
 
 /-- The three-division polynomial of an elliptic curve is separable over
@@ -80,41 +98,7 @@ theorem separable_preΨ_of_derivative_sq {n : ℕ} (hn : Odd n) (hchar : (n : k)
 /-- The five-division polynomial of an elliptic curve is separable over
 any field of characteristic different from five. -/
 theorem separable_preΨ_five (h5 : (5 : k) ≠ 0) : (W.preΨ 5).Separable := by
-  rw [Polynomial.separable_def]
-  apply (Polynomial.isCoprime_iff_aeval_ne_zero_of_isAlgClosed
-    k (AlgebraicClosure k) _ _).mpr
-  intro x
-  by_cases hx : aeval x (W.preΨ 5) = 0
-  · right
-    intro hd
-    have hq : aeval x W.Ψ₂Sq ≠ 0 := by
-      have hc := (Polynomial.isCoprime_iff_aeval_ne_zero_of_isAlgClosed
-        k (AlgebraicClosure k) _ _).mp
-        (W.isCoprime_preΨ_ΨSq_two (show Odd 5 by decide)) x
-      simpa only [Nat.cast_ofNat, ΨSq_two, hx, ne_self_iff_false, false_or] using hc
-    have h5' : (5 : AlgebraicClosure k) ≠ 0 := by
-      simpa only [map_ofNat] using (map_ne_zero (algebraMap k (AlgebraicClosure k))).mpr h5
-    rw [derivative_preΨ_five] at hd
-    simp only [map_mul, map_ofNat, map_sub, map_pow] at hd
-    have hh : aeval x W.invar * aeval x W.preΨ₄ = aeval x W.Ψ₃ ^ 2 := by
-      exact sub_eq_zero.mp ((mul_eq_zero.mp hd).resolve_left (mul_ne_zero h5' hq))
-    rw [preΨ_five] at hx
-    simp only [map_sub, map_mul, map_pow] at hx
-    have ha := sub_eq_zero.mp hx
-    have hr := congrArg (aeval x) W.preΨ₄_add_Ψ₂Sq_sq
-    simp only [map_add, map_pow, map_mul] at hr
-    have hz : (aeval x W.Ψ₃) ^ 2 * aeval x W.preΨ₄ = 0 := by
-      linear_combination -aeval x W.invar * ha + (aeval x W.Ψ₂Sq) ^ 2 * hh +
-        (aeval x W.Ψ₃) ^ 2 * hr
-    have hp : aeval x W.Ψ₃ = 0 := by
-      rcases mul_eq_zero.mp hz with hp | hf
-      · exact eq_zero_of_pow_eq_zero hp
-      · apply eq_zero_of_pow_eq_zero (n := 3)
-        simpa only [hf, zero_mul] using ha.symm
-    have hf : aeval x W.preΨ₄ = 0 := by
-      rw [hp, zero_pow (by decide : 3 ≠ 0)] at ha
-      exact (mul_eq_zero.mp ha).resolve_right (pow_ne_zero 2 hq)
-    exact hq (eq_zero_of_pow_eq_zero (n := 2) (by simpa [hp, hf] using hr))
-  · exact Or.inl hx
+  exact W.separable_preΨ_of_derivative_sq (n := 5) (by decide) h5
+    (by simpa only [Nat.cast_ofNat] using W.preΨ_five_dvd_derivative_sq)
 
 end WeierstrassCurve
