@@ -108,6 +108,7 @@ public import FLT.FreyCurve.Serre.VeluEquation
 public import FLT.FreyCurve.Serre.VeluEvaluation
 public import FLT.FreyCurve.Serre.VeluFunctionField
 public import FLT.FreyCurve.Serre.VeluGenericAdditivity
+public import FLT.FreyCurve.Serre.VeluHom
 public import FLT.FreyCurve.Serre.VeluIdentity
 public import FLT.FreyCurve.Serre.VeluInfinity
 public import FLT.FreyCurve.Serre.VeluMap
