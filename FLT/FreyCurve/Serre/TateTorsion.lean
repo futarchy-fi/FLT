@@ -12,8 +12,8 @@ public import Mathlib.Algebra.Module.ZMod
 # Torsion representatives under Tate uniformization
 
 These lemmas derive the elementary torsion calculations from the repository's
-Tate uniformization. The uniformization and its Galois equivariance are existing
-admitted inputs; no Frey-specific local representation theorem is assumed.
+Tate uniformization. Its construction and Galois equivariance depend on the
+remaining admission identifying a split multiplicative curve with its Tate model.
 -/
 
 @[expose] public section
@@ -151,7 +151,7 @@ theorem qUnitSepClosure_galois (σ : Ω ≃ₐ[k] Ω) :
 
 /-- The quotient of Tate torsion is fixed by the entire local Galois group,
 so in particular it is fixed by inertia. -/
-theorem tateTorsionQuotient_galois [IsSepClosed Ω] [Algebra.IsSeparable k Ω] (n : ℕ) (σ : Ω ≃ₐ[k] Ω)
+theorem tateTorsionQuotient_galois (n : ℕ) (σ : Ω ≃ₐ[k] Ω)
     (P Q : AddSubgroup.torsionBy (E⁄Ω).Point (n : ℤ))
     (hQ : (Q : (E⁄Ω).Point) = Affine.Point.map σ.toAlgHom P) :
     E.tateTorsionQuotient Ω n Q = E.tateTorsionQuotient Ω n P := by
@@ -210,7 +210,7 @@ noncomputable def tateTorsionQuotientLinear (n : ℕ)
 /-- Split multiplicative reduction supplies a nonzero Galois-invariant linear
 functional on geometric `p`-torsion. This proves the local Tate case without
 assuming any Frey-specific representation theorem. -/
-theorem exists_invariant_tateTorsion_functional [IsSepClosed Ω] [Algebra.IsSeparable k Ω]
+theorem exists_invariant_tateTorsion_functional [IsSepClosed Ω]
     (p : ℕ) [Fact p.Prime] [NeZero (p : Ω)]
     [Module (ZMod p) (AddSubgroup.torsionBy (E⁄Ω).Point (p : ℤ))] :
     ∃ r : AddSubgroup.torsionBy (E⁄Ω).Point (p : ℤ) →ₗ[ZMod p] ZMod p,

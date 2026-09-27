@@ -24,10 +24,10 @@ namespace WeierstrassCurve
 
 /-- Multiplicative reduction supplies a surjective inertia-invariant quotient of
 geometric torsion, including when the torsion order is the residue characteristic.
-The only geometric admissions used are Tate uniformization and its equivariance. -/
+Tate uniformization still depends on the admitted identification with the Tate model. -/
 theorem exists_inertia_invariant_torsion_quotient {K Ω : Type*}
     [Field K] [ValuativeRel K] [TopologicalSpace K]
-    [IsNonarchimedeanLocalField K] [CharZero K]
+    [IsNonarchimedeanLocalField K]
     (E : WeierstrassCurve K) [E.IsElliptic] [E.HasMultiplicativeReduction 𝒪[K]]
     [Field Ω] [Algebra K Ω] [IsAlgClosure K Ω] [DecidableEq Ω]
     (A : ValuationSubring Ω)
