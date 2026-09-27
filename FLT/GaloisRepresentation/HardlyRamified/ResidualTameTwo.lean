@@ -92,6 +92,7 @@ Galois module this is the ramification index in the field fixed by the
 representation's kernel. We use image order as the concrete definition, so
 no choice of prime in that field is needed. The comparison with
 `Ideal.ramificationIdx` is not asserted here. -/
+@[nolint defsWithUnderscore]
 def e_two (ρ : GaloisRep ℚ R W) : ℕ := Nat.card (inertiaTwoImage ρ)
 
 /-- Every element of the inertia image has cube one. -/
