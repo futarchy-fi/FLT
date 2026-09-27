@@ -238,6 +238,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.LogDensity
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.LogEulerProduct
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.LogEulerRemainder
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.NegligibleSets
+public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.NonsplitBound
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.OpenKernel
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.PowerFrobCover
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.PrimeFibers

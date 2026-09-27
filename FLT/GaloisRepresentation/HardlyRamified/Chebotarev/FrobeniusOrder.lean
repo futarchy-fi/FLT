@@ -5,6 +5,7 @@ Authors: krandder
 -/
 module
 
+public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.NegligibleSets
 public import Mathlib.NumberTheory.NumberField.Ideal.Basic
 public import Mathlib.NumberTheory.RamificationInertia.Galois
 public import Mathlib.NumberTheory.RamificationInertia.Unramified
@@ -31,11 +32,6 @@ open NumberField
 open scoped Pointwise
 
 namespace GaloisRepresentation.Chebotarev
-
-/-- A nonzero prime ideal of the ring of integers of a number field. -/
-@[nolint unusedArguments]
-abbrev Prime (K : Type*) [Field K] [NumberField K] :=
-  IsDedekindDomain.HeightOneSpectrum (𝓞 K)
 
 variable (K L : Type*) [Field K] [NumberField K] [Field L] [NumberField L]
   [Algebra K L]
