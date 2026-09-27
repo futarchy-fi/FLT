@@ -195,6 +195,7 @@ public import FLT.GroupScheme.KummerParameter
 public import FLT.GroupScheme.KummerPoints
 public import FLT.GroupScheme.QuadraticDescent
 public import FLT.GroupScheme.QuadraticTwist
+public import FLT.GroupScheme.QuadraticTwistComultiplication
 public import FLT.GroupScheme.QuadraticTwistMaps
 public import FLT.GroupScheme.QuadraticTwistMonoidal
 public import FLT.GroupScheme.QuadraticTwistTensor
