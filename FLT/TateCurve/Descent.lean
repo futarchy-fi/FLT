@@ -74,4 +74,47 @@ theorem exists_unit_of_fixed_uniformizationPointOver [FiniteDimensional K L] [Is
     intro h
     exact u.ne_zero (he.symm.trans (by simp [h]))
   exact ⟨Units.mk0 v hv0, Units.ext he⟩
+/-- A parameter whose abscissa is that of a rational point has a Galois-fixed Tate point. -/
+theorem uniformizationPointOver_fixed_of_tateX_eq
+    (q : Kˣ) (hq : valuation K (q : K) < 1) (u : Lˣ)
+    (hu : u ∉ Subgroup.zpowers (Units.map (algebraMap K L).toMonoidHom q))
+    {x y : K} (hxy : (WeierstrassCurve.tateCurve (q : K)).toAffine.Nonsingular x y)
+    (hx : tateX (u : L) (algebraMap K L q) = algebraMap K L x)
+    (σ : L ≃ₐ[K] L) :
+    WeierstrassCurve.Affine.Point.map σ.toAlgHom (uniformizationPointOver L q hq u) =
+      uniformizationPointOver L q hq u := by
+  let E := WeierstrassCurve.tateCurve (q : K)
+  have hP : (E⁄L).Nonsingular (algebraMap K L x) (algebraMap K L y) :=
+    (E.toAffine.map_nonsingular (algebraMap K L).injective x y).mpr hxy
+  have hQ := tateCoordinates_nonsingular (Units.map (algebraMap K L).toMonoidHom q) u
+    (valuation_algebraMap_lt_one hq) hu
+  have hQ' : (E⁄L).Nonsingular (tateX (u : L) (algebraMap K L q))
+      (tateY (u : L) (algebraMap K L q)) := by
+    simpa [E, WeierstrassCurve.tateCurve_baseChange (q : K) hq] using hQ
+  have he : uniformizationPointOver L q hq u = .some _ _ hQ' := by
+    simp only [uniformizationPointOver, uniformizationPoint, dite_eq_right hu]
+    erw [WeierstrassCurve.Affine.Point.equivOfEq_some]
+    rfl
+  have hfixed : WeierstrassCurve.Affine.Point.map σ.toAlgHom (.some _ _ hP) =
+      .some _ _ hP := by
+    simp only [WeierstrassCurve.Affine.Point.map_some,
+      WeierstrassCurve.Affine.Point.some.injEq]
+    exact ⟨σ.commutes x, σ.commutes y⟩
+  rcases (WeierstrassCurve.Affine.Point.X_eq_iff (h₁ := hQ') (h₂ := hP)).mp hx with h | h
+  · rw [he, h, hfixed]
+  · rw [he, h, map_neg, hfixed]
+omit [DecidableEq L] in
+/-- A parameter above a rational abscissa descends through a finite Galois extension. -/
+theorem exists_unit_of_tateX_eq [FiniteDimensional K L] [IsGalois K L]
+    (q : Kˣ) (hq : valuation K (q : K) < 1) (u : Lˣ)
+    (hu : u ∉ Subgroup.zpowers (Units.map (algebraMap K L).toMonoidHom q))
+    {x y : K} (hxy : (WeierstrassCurve.tateCurve (q : K)).toAffine.Nonsingular x y)
+    (hx : tateX (u : L) (algebraMap K L q) = algebraMap K L x)
+    (hc : ∀ σ : L ≃ₐ[K] L, Continuous σ)
+    (hv : ∀ σ : L ≃ₐ[K] L, valuation L (σ (u : L)) = valuation L (u : L)) :
+    ∃ v : Kˣ, Units.map (algebraMap K L).toMonoidHom v = u := by
+  classical
+  exact exists_unit_of_fixed_uniformizationPointOver q hq u hc hv
+    (uniformizationPointOver_fixed_of_tateX_eq q hq u hu hxy hx)
+
 end TateCurve

@@ -416,6 +416,7 @@ public import FLT.TateCurve.Points
 public import FLT.TateCurve.QuadraticLift
 public import FLT.TateCurve.Quotient
 public import FLT.TateCurve.QuotientAvoidance
+public import FLT.TateCurve.SeparableLifting
 public import FLT.TateCurve.Surjectivity
 public import FLT.TateCurve.SymmetricInverse
 public import FLT.TateCurve.TateCurve
