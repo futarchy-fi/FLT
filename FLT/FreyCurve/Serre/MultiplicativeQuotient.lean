@@ -23,8 +23,7 @@ open ValuativeRel
 namespace WeierstrassCurve
 
 /-- Multiplicative reduction supplies a surjective inertia-invariant quotient of
-geometric torsion, including when the torsion order is the residue characteristic.
-Tate uniformization still depends on the admitted identification with the Tate model. -/
+geometric torsion, including when the torsion order is the residue characteristic. -/
 theorem exists_inertia_invariant_torsion_quotient {K Ω : Type*}
     [Field K] [ValuativeRel K] [TopologicalSpace K]
     [IsNonarchimedeanLocalField K]

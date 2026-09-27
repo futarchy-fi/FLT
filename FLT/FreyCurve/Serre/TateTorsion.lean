@@ -12,8 +12,7 @@ public import Mathlib.Algebra.Module.ZMod
 # Torsion representatives under Tate uniformization
 
 These lemmas derive the elementary torsion calculations from the repository's
-Tate uniformization. Its construction and Galois equivariance depend on the
-remaining admission identifying a split multiplicative curve with its Tate model.
+Tate uniformization and its Galois equivariance over algebraic extensions.
 -/
 
 @[expose] public section

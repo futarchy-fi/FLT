@@ -7,6 +7,9 @@ module
 
 public import FLT.TateCurve.AlgebraicUniformization
 public import FLT.TateCurve.JInvariant
+public import FLT.TateCurve.Reduction
+public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.SplitDescent
+public import Mathlib.FieldTheory.IsSepClosed
 public import FLT.TateCurve.LocalUniformization
 public import FLT.TateCurve.ModelTransport
 public import FLT.TateCurve.Model
@@ -246,10 +249,15 @@ theorem WeierstrassCurve.exists_variableChange_tateCurve_over
 -- Tate-model uniformization along a choice of one of them. This binary choice
 -- for each `E` is the only choice in the theory. It cannot be made functorially
 -- in `E`; see `tateEquiv_baseChange`.
+omit [E.IsMinimal 𝒪[k]] in
 /-- A split multiplicative curve is isomorphic over the base field to its Tate model. -/
 theorem WeierstrassCurve.exists_variableChange_tateCurve :
-    ∃ C : VariableChange k, C • tateCurve E.q = E :=
-  sorry
+    ∃ C : VariableChange k, C • tateCurve E.q = E := by
+  let : (tateCurve E.q).HasSplitMultiplicativeReduction 𝒪[k] :=
+    TateCurve.tateCurve_hasSplitMultiplicativeReduction E.q_ne_zero E.valuation_q_lt_one
+  obtain ⟨C, hC⟩ := E.exists_variableChange_tateCurve_over (SeparableClosure k)
+  exact exists_variableChange_of_hasSplitMultiplicativeReduction (tateCurve E.q) E
+    (SeparableClosure k) (C := C) hC
 
 /-- The chosen isomorphism with the Tate model, transported over a field extension. -/
 noncomputable def WeierstrassCurve.tateModelEquiv (L : Type*) [Field L] [Algebra k L]
@@ -402,6 +410,7 @@ noncomputable def WeierstrassCurve.tatePoint (x : Ωˣ) : (E⁄Ω).Point :=
 -- phenomenon as `tateEquiv_galois`, not of `tateEquiv_baseChange`. This statement is what
 -- pins the sign of `tateEquivSepClosure` to the sign of `tateEquiv`.
 variable [DecidableEq k] in
+omit [E.IsMinimal 𝒪[k]] in
 /-- The base-field and separable-closure uniformizations use the same model isomorphism. -/
 theorem WeierstrassCurve.tatePoint_baseChange (u : kˣ) :
     Affine.Point.baseChange (W' := E) k Ω (E.tateEquiv (Additive.ofMul ↑u)) =
@@ -417,6 +426,7 @@ theorem WeierstrassCurve.tatePoint_baseChange (u : kˣ) :
 
 -- Galois equivariance of the uniformisation over `Ω`: no continuity hypothesis is needed
 -- this time, since `Ω/k` is algebraic.
+omit [E.IsMinimal 𝒪[k]] in
 /-- Tate parameters transform equivariantly under the Galois action. -/
 theorem WeierstrassCurve.tatePoint_galois (σ : Ω ≃ₐ[k] Ω) (u : Ωˣ) :
     Affine.Point.map (W' := E) σ.toAlgHom (E.tatePoint Ω u) =
