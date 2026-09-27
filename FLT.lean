@@ -235,6 +235,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.FiniteMonoidCov
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.FiniteRamification
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.FixedVector
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.FrobeniusOrder
+public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.FrobeniusTraces
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.GeneratorDensity
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.GeneratorPrimes
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.Generators
