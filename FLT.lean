@@ -375,6 +375,7 @@ public import FLT.Slop.PGL2.FiniteSubgroups.TameClassification
 public import FLT.Slop.PGL2.FiniteSubgroups.WildClassification
 public import FLT.Slop.RepresentationTheory.OddAbsIrredOrig
 public import FLT.Slop.RepresentationTheory.OddAbsIrredSlop
+public import FLT.TateCurve.Addition
 public import FLT.TateCurve.Elliptic
 public import FLT.TateCurve.Equation
 public import FLT.TateCurve.Expansion
