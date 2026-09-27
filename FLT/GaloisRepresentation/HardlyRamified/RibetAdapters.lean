@@ -12,6 +12,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.ThreeAdicAlgebra
 
 An invariant surjective functional splits an extension of a nontrivial character
 by the trivial character, with the prescribed character on the complement.
+Ribet's lemma then rules out irreducibility if every stable lattice has such a quotient.
 -/
 
 @[expose] public section
@@ -65,5 +66,33 @@ theorem isSplitExtensionOf_of_trivial_quotient
       refine ⟨c • (l : V), L.smul_mem c l.property, v - c • (l : V), ?_,
         add_sub_cancel _ _⟩
       simp [LinearMap.mem_ker, c, smul_eq_mul, hnonzero]
+
+open IsLocalRing
+
+/-- If every stable lattice has a trivial residual quotient, Ribet's lemma
+rules out irreducibility when the residual characters are `1` and a nontrivial `χ`. -/
+@[nolint unusedArguments]
+theorem not_isIrreducible_of_all_lattices_trivial_quotient
+    {O : Type*} [CommRing O] [IsDomain O] [IsDiscreteValuationRing O]
+    {K : Type*} [Field K] [Algebra O K] [IsFractionRing O K]
+    {W : Type*} [AddCommGroup W] [Module K W] [Module O W]
+    [IsScalarTower O K W] [FiniteDimensional K W]
+    {G : Type*} [Group G]
+    [IsAdicComplete (maximalIdeal O) O]
+    (ρ : Representation K G W) (hdim : Module.finrank K W = 2)
+    (Λ₀ : Submodule O W) (h₀ : IsStableLattice ρ Λ₀)
+    (χ : G →* (ResidueField O)ˣ) (hne : ∃ g, χ g ≠ 1)
+    (hss : HasSemisimplification (reducedRep ρ Λ₀ h₀.stable) 1 χ)
+    (hQ : ∀ (Λ : Submodule O W) (h : IsStableLattice ρ Λ),
+      ∃ π : Reduction O W Λ →ₗ[ResidueField O] ResidueField O,
+        Function.Surjective π ∧
+          ∀ g v, π (reducedRep ρ Λ h.stable g v) = π v) :
+    ¬ ρ.IsIrreducible := by
+  intro hirr
+  let : ρ.IsIrreducible := hirr
+  obtain ⟨Λ, h, hext, hns⟩ := ribet_lemma_proof ρ hdim Λ₀ h₀ 1 χ hss
+  obtain ⟨π, hπ, hπG⟩ := hQ Λ h
+  exact hns (isSplitExtensionOf_of_trivial_quotient
+    (reducedRep ρ Λ h.stable) χ hext hne π hπ hπG)
 
 end StableLattice
