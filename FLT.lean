@@ -153,9 +153,9 @@ public import FLT.FreyCurve.Serre.LocalTorsion
 public import FLT.FreyCurve.Serre.LocalUniformizer
 public import FLT.FreyCurve.Serre.MultiplicativeQuotient
 public import FLT.FreyCurve.Serre.MultiplicativeReduction
+public import FLT.FreyCurve.Serre.QuadraticTwistPoints
 public import FLT.FreyCurve.Serre.QuotientCurve
 public import FLT.FreyCurve.Serre.QuotientDescent
-public import FLT.FreyCurve.Serre.QuadraticTwistPoints
 public import FLT.FreyCurve.Serre.ReducibleFiltration
 public import FLT.FreyCurve.Serre.RootsOfUnityInertia
 public import FLT.FreyCurve.Serre.Semistable
