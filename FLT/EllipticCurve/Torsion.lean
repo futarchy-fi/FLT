@@ -127,6 +127,12 @@ theorem WeierstrassCurve.n_torsion_card_three [IsSepClosed k] (h3 : (3 : k) ≠ 
     Nat.card (E.nTorsion 3) = 3 ^ 2 := by
   exact E.n_torsion_card_odd_of_separable (by decide) h3 (E.separable_preΨ_three h3)
 
+/-- The five-torsion subgroup has twenty-five elements over a separably closed field
+of characteristic different from five. -/
+theorem WeierstrassCurve.n_torsion_card_five [IsSepClosed k] (h5 : (5 : k) ≠ 0) :
+    Nat.card (E.nTorsion 5) = 5 ^ 2 := by
+  exact E.n_torsion_card_odd_of_separable (by decide) h5 (E.separable_preΨ_five h5)
+
 /-- The prescribed torsion cardinalities characterize a power of the cyclic group of order `n`. -/
 theorem group_theory_lemma {A : Type*} [AddCommGroup A] {n : ℕ} (hn : 0 < n) (r : ℕ)
     (h : ∀ d : ℕ, d ∣ n → Nat.card (Submodule.torsionBy ℤ A d) = d ^ r) :
@@ -169,6 +175,13 @@ theorem WeierstrassCurve.n_torsion_dimension_three [IsSepClosed k] (h3 : (3 : k)
     Nonempty (E.nTorsion 3 ≃+ (ZMod 3) × (ZMod 3)) := by
   exact E.n_torsion_dimension_prime_of_separable Nat.prime_three h3
     (E.separable_preΨ_three h3)
+
+/-- Over a separably closed field of characteristic different from five,
+the five-torsion group is the product of two cyclic groups of order five. -/
+theorem WeierstrassCurve.n_torsion_dimension_five [IsSepClosed k] (h5 : (5 : k) ≠ 0) :
+    Nonempty (E.nTorsion 5 ≃+ (ZMod 5) × (ZMod 5)) := by
+  exact E.n_torsion_dimension_prime_of_separable (by decide) h5
+    (E.separable_preΨ_five h5)
 
 -- I only need this if n is prime but there's no harm thinking about it in general I guess.
 -- It follows from the previous theorem using pure group theory (possibly including the
