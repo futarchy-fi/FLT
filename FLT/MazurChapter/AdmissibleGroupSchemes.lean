@@ -6,6 +6,7 @@ Authors: Kelvin Santos
 module
 
 public import FLT.GroupScheme.FiniteFlat
+public import Mathlib.RingTheory.HopfAlgebra.MonoidAlgebra
 public import Mathlib.Algebra.Category.CommHopfAlgCat
 public import Mathlib.AlgebraicGeometry.Sites.Fpqc
 public import Mathlib.CategoryTheory.Sites.SheafCohomology.Basic
@@ -15,9 +16,9 @@ public import Mathlib.CategoryTheory.Sites.SheafCohomology.Basic
 
 This file records the statement interfaces G1--G4 in the first Eisenstein-descent packet of
 Mazur's torsion argument.  It deliberately stops before Néron models, Selmer groups and modular
-curves.  The two representable elementary objects and their fppf realization are exposed as
-temporary placeholder-backed interfaces so later packets can use the mathematically correct types
-without pretending that the missing scheme-to-sheaf construction has already been formalized.
+curves.  The multiplicative elementary object is constructed as a group algebra. The constant object
+and the fppf realization remain placeholder-backed interfaces; the scheme-to-sheaf construction
+and the arithmetic classification are not yet formalized.
 
 The statements follow Mazur, *Modular curves and the Eisenstein ideal* (1977), Chapter I, at the
 lecture-level granularity of the Snowden Math 679 notes.
@@ -78,9 +79,21 @@ noncomputable def constantOrderPrime (p : ℕ) (_hp : p.Prime) :
 
 /-- Audit node G1 elementary object (Mazur 1977, I.1; Snowden Math 679): the group scheme
 `μ_p` over `Spec ℤ`. -/
-noncomputable def multiplicativeOrderPrime (p : ℕ) (_hp : p.Prime) :
+noncomputable def multiplicativeOrderPrime (p : ℕ) (hp : p.Prime) :
     FiniteFlatCommGroupScheme := by
-  sorry
+  letI : NeZero p := ⟨hp.ne_zero⟩
+  exact { carrier := AddMonoidAlgebra ℤ (ZMod p)
+          isFiniteFlat := ⟨⟩
+          commutative := ⟨inferInstance⟩ }
+
+/-- The coordinate algebra of `μ_p` is free of rank `p`, with basis indexed by
+the powers of its group-like generator. -/
+@[simp] theorem multiplicativeOrderPrime_order (p : ℕ) (hp : p.Prime) :
+    (multiplicativeOrderPrime p hp).order = p := by
+  let : NeZero p := ⟨hp.ne_zero⟩
+  change Module.finrank ℤ (AddMonoidAlgebra ℤ (ZMod p)) = p
+  rw [(AddMonoidAlgebra.coeffLinearEquiv ℤ).finrank_eq]
+  simp
 
 /-- Audit node G1 (Mazur 1977, I.1; Snowden Math 679): every finite-flat commutative group scheme
 of prime order over `Spec ℤ` is isomorphic to the constant group `ℤ/pℤ` or to `μ_p`.  This is
