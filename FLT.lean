@@ -118,6 +118,7 @@ public import FLT.EllipticCurve.TorsionOrbit
 public import FLT.EllipticCurve.TorsionSpecialization
 public import FLT.EllipticCurve.TorsionStructure
 public import FLT.EllipticCurve.TwoTorsionCard
+public import FLT.EllipticCurve.WeilPairing
 public import FLT.FreyCurve.Basic
 public import FLT.FreyCurve.FreyPackage
 public import FLT.FreyCurve.Mazur
@@ -244,6 +245,7 @@ public import FLT.Mathlib.GroupTheory.DoubleCoset
 public import FLT.Mathlib.GroupTheory.GroupAction.Quotient
 public import FLT.Mathlib.GroupTheory.Index
 public import FLT.Mathlib.GroupTheory.SpecificGroups.Cyclic
+public import FLT.Mathlib.LinearAlgebra.Alternating.Determinant
 public import FLT.Mathlib.LinearAlgebra.Countable
 public import FLT.Mathlib.LinearAlgebra.Determinant
 public import FLT.Mathlib.LinearAlgebra.Dimension.Constructions
