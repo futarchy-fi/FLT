@@ -28,6 +28,7 @@ open scoped Topology
 namespace GaloisRepresentation.Chebotarev
 
 /-- Nonzero prime ideals of the ring of integers. -/
+@[nolint unusedArguments]
 abbrev Prime (K : Type*) [Field K] [NumberField K] := HeightOneSpectrum (𝓞 K)
 
 /-- The absolute norm of a prime ideal. -/
