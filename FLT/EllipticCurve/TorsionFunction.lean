@@ -73,6 +73,13 @@ theorem evalEval_eq_zero_iff_of_torsionFunction {x y x' y' : F} (h : W.Equation 
   rw [evalEval_eq_zero_iff, ← Ideal.span_singleton_le_iff_mem, ← hf,
     Ideal.IsPrime.pow_le_iff hn, XYIdeal_le_XYIdeal_iff h]
 
+/-- Applying a field homomorphism preserves the defining ideal of a torsion function. -/
+theorem map_torsionFunction {L : Type*} [Field L] (φ : F →+* L)
+    {x y : F} {n : ℕ} {f : W.CoordinateRing}
+    (hf : XYIdeal W x (C y) ^ n = Ideal.span {f}) :
+    XYIdeal (W.map φ) (φ x) (C (φ y)) ^ n = Ideal.span {map W φ f} := by
+  rw [← map_XYIdeal, ← Ideal.map_pow, hf, Ideal.map_span, Set.image_singleton]
+
 end WeierstrassCurve.Affine.CoordinateRing
 
 namespace WeierstrassCurve.Affine.Point
