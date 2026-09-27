@@ -11,8 +11,8 @@ public import FLT.EllipticCurve.OddTorsionOrder
 # Points of the integral odd-torsion coordinate order
 
 Evaluation identifies the points of the coordinate order with the odd torsion
-of the elliptic curve. This is a set-theoretic comparison; a group comparison
-requires the integral comultiplication still missing from the order.
+of the elliptic curve. The additive and equivariant comparison using integral
+coaddition is proved in `OddTorsionFlat`.
 -/
 
 @[expose] public section

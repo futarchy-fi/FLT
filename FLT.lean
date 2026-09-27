@@ -523,4 +523,5 @@ public import FLT.TateCurve.SymmetricInverse
 public import FLT.TateCurve.TateCurve
 public import FLT.TateCurve.Uniformization
 import FLT.EllipticCurve.OddTorsionFlat
+import FLT.EllipticCurve.OddTorsionGoodReduction
 import FLT.GroupScheme.ModelPoints
