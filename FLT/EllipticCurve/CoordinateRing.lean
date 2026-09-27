@@ -20,7 +20,7 @@ Fixing a generator's value to one at a point makes it unique.
 @[expose] public section
 
 open Polynomial
-open scoped Polynomial.Bivariate
+open scoped Polynomial.Bivariate nonZeroDivisors
 
 namespace WeierstrassCurve.Affine.CoordinateRing
 
@@ -134,6 +134,34 @@ theorem evalEval_smul {x y : F} (h : W.Equation x y) (c : F)
     (f : W.CoordinateRing) :
     AdjoinRoot.evalEval h (c • f) = c * AdjoinRoot.evalEval h f := by
   rw [Algebra.smul_def, map_mul, evalEval_algebraMap]
+
+/-- The ideal of an affine rational point is maximal. -/
+theorem isMaximal_XYIdeal {x y : F} (h : W.Equation x y) :
+    (XYIdeal W x (C y)).IsMaximal := by
+  have hker : RingHom.ker (AdjoinRoot.evalEval h) = XYIdeal W x (C y) := by
+    ext f
+    exact evalEval_eq_zero_iff h f
+  rw [← hker]
+  exact RingHom.ker_isMaximal_of_surjective _
+    (fun c => ⟨algebraMap F W.CoordinateRing c, evalEval_algebraMap h c⟩)
+
+/-- Powers of a nonsingular point ideal strictly decrease. Invertibility of
+that ideal suffices; no Dedekind-domain instance is needed. -/
+theorem XYIdeal_pow_strictAnti {x y : F} (h : W.Nonsingular x y) :
+    StrictAnti (fun n : ℕ => XYIdeal W x (C y) ^ n) := by
+  apply strictAnti_nat_of_succ_lt
+  intro n
+  refine lt_of_le_of_ne (Ideal.pow_le_pow_right (Nat.le_succ n)) ?_
+  intro he
+  have he' := congrArg (fun I : Ideal W.CoordinateRing =>
+    (I : FractionalIdeal W.CoordinateRing⁰ W.FunctionField)) he
+  rw [FractionalIdeal.coeIdeal_pow, FractionalIdeal.coeIdeal_pow, pow_succ,
+    ← XYIdeal'_eq h] at he'
+  have hu := (XYIdeal' h ^ n).isUnit
+  rw [Units.val_pow_eq_pow_val] at hu
+  have hi := hu.mul_left_cancel (he'.trans (mul_one _).symm)
+  rw [XYIdeal'_eq, FractionalIdeal.coeIdeal_eq_one, Ideal.one_eq_top] at hi
+  exact (isMaximal_XYIdeal h.1).ne_top hi
 
 /-- Two generators of the same ideal that both evaluate to one at a point are equal. -/
 theorem eq_of_span_eq_of_evalEval_eq_one {f g : W.CoordinateRing}
