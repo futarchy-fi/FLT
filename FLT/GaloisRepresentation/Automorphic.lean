@@ -227,8 +227,8 @@ the tame `U₁(S)` ramification allowed by `IsAutomorphicOfLevel`.
 * Cyclotomic determinant and the finite-flat integral model encode the weight-two and central-
   character clauses; the unramified/tame hypotheses encode the `U₁(S)` conductor bound.
 * Shimura integrality supplies the coefficient bridge to `ℚ̄_p`.
-* The CFT tame-certification gate also applies here: this `sorry` must not be replaced by
-  `knownin1980s` until `localTameAbelianInertiaGroup` is certified against an independently
+* The CFT tame-certification gate also applies here: the proof also requires
+  that `localTameAbelianInertiaGroup` be certified against an independently
   constructed tame character.
 
 This is CBC node S6 / debt D-7 and closes the JL H1 ownership gap. It is independent of cyclic
