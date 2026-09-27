@@ -65,6 +65,39 @@ theorem yTerm_inv {v : K} (hv : v ≠ 0) : yTerm v⁻¹ = -v / (1 - v) ^ 3 := by
 
 end Algebra
 
+section Coordinates
+
+variable {K : Type*} [Field K] [TopologicalSpace K]
+
+/-- The Lambert correction `s₁(q) = ∑_{n ≥ 1} qⁿ/(1-qⁿ)²` in the Tate coordinates. -/
+noncomputable def tateCorrection (q : K) : K := ∑' n : ℕ, xTerm (q ^ (n + 1))
+
+/-- The Tate `x`-coordinate, with junk values at the poles `u ∈ q^ℤ`. -/
+noncomputable def tateX (u q : K) : K :=
+  (∑' n : ℤ, xTerm (q ^ n * u)) - 2 * tateCorrection q
+
+/-- The Tate `y`-coordinate, with junk values at the poles `u ∈ q^ℤ`. -/
+noncomputable def tateY (u q : K) : K :=
+  (∑' n : ℤ, yTerm (q ^ n * u)) + tateCorrection q
+
+/-- Multiplying the argument by an integral power of `q` preserves the `x`-coordinate. -/
+theorem tateX_zpow_mul (u : K) {q : K} (hq0 : q ≠ 0) (m : ℤ) :
+    tateX (q ^ m * u) q = tateX u q := by
+  have h := (Equiv.addRight m).tsum_eq (fun n : ℤ ↦ xTerm (q ^ n * u))
+  change (∑' n : ℤ, xTerm (q ^ (n + m) * u)) = _ at h
+  simpa only [tateX, zpow_add₀ hq0, mul_assoc] using
+    congrArg (fun s ↦ s - 2 * tateCorrection q) h
+
+/-- Multiplying the argument by an integral power of `q` preserves the `y`-coordinate. -/
+theorem tateY_zpow_mul (u : K) {q : K} (hq0 : q ≠ 0) (m : ℤ) :
+    tateY (q ^ m * u) q = tateY u q := by
+  have h := (Equiv.addRight m).tsum_eq (fun n : ℤ ↦ yTerm (q ^ n * u))
+  change (∑' n : ℤ, yTerm (q ^ (n + m) * u)) = _ at h
+  simpa only [tateY, zpow_add₀ hq0, mul_assoc] using
+    congrArg (fun s ↦ s + tateCorrection q) h
+
+end Coordinates
+
 section Convergence
 
 variable {K : Type*} [Field K] [UniformSpace K] [IsUniformAddGroup K]
@@ -116,6 +149,33 @@ theorem summable_tate_correction {q : K}
   have h : Summable (fun n : ℕ ↦ xTerm (q ^ n)) := by
     simpa [xTerm] using summable_tate_tail hq 1 (j := 1) one_ne_zero 2
   exact (summable_nat_add_iff (f := fun n : ℕ ↦ xTerm (q ^ n)) 1).mpr h
+
+variable {L : Type*} [Field L] [TopologicalSpace L] [T2Space L]
+
+/-- The correction series commutes with continuous field homomorphisms. -/
+theorem map_tateCorrection (f : K →+* L) (hf : Continuous f) {q : K}
+    (hq : Tendsto (fun n : ℕ ↦ q ^ n) atTop (𝓝 0)) :
+    f (tateCorrection q) = tateCorrection (f q) := by
+  rw [tateCorrection, (summable_tate_correction hq).map_tsum f hf]
+  simp [tateCorrection, xTerm]
+
+/-- The convergent Tate `x`-coordinate commutes with continuous field homomorphisms. -/
+theorem map_tateX (f : K →+* L) (hf : Continuous f) {u q : K}
+    (hq0 : q ≠ 0) (hu0 : u ≠ 0)
+    (hq : Tendsto (fun n : ℕ ↦ q ^ n) atTop (𝓝 0)) :
+    f (tateX u q) = tateX (f u) (f q) := by
+  rw [tateX, map_sub, map_mul, map_ofNat,
+    (summable_tate_x hq0 hu0 hq).map_tsum f hf, map_tateCorrection f hf hq]
+  simp [tateX, xTerm]
+
+/-- The convergent Tate `y`-coordinate commutes with continuous field homomorphisms. -/
+theorem map_tateY (f : K →+* L) (hf : Continuous f) {u q : K}
+    (hq0 : q ≠ 0) (hu0 : u ≠ 0)
+    (hq : Tendsto (fun n : ℕ ↦ q ^ n) atTop (𝓝 0)) :
+    f (tateY u q) = tateY (f u) (f q) := by
+  rw [tateY, map_add, (summable_tate_y hq0 hu0 hq).map_tsum f hf,
+    map_tateCorrection f hf hq]
+  simp [tateY, yTerm]
 
 end Convergence
 
