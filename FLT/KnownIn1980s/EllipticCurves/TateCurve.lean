@@ -5,7 +5,9 @@ Authors: Kevin Buzzard
 -/
 module
 
+public import FLT.TateCurve.AlgebraicUniformization
 public import FLT.TateCurve.LocalUniformization
+public import FLT.TateCurve.ModelTransport
 public import FLT.TateCurve.Model
 public import Mathlib.AlgebraicGeometry.EllipticCurve.Reduction
 public import Mathlib.NumberTheory.LocalField.Basic
@@ -84,7 +86,6 @@ transporting this one along an isomorphism `E_{q(E)} ≅ E` of Weierstrass curve
 (`exists_variableChange_tateCurve` below), and *that* is the only choice in the theory:
 there are exactly two such isomorphisms, differing by negation.
 -/
-
 
 -- let k be a nonarchimedean local field
 variable {k : Type*} [Field k] [ValuativeRel k] [TopologicalSpace k]
@@ -210,24 +211,33 @@ theorem WeierstrassCurve.valuation_q_lt_one : valuation k E.q < 1 :=
 noncomputable def WeierstrassCurve.qUnit : kˣ :=
   Units.mk0 E.q E.q_ne_zero
 
--- `DecidableEq k` is needed for the group law on `(E⁄k).Point`
-variable [DecidableEq k] in
-/-- Tate's uniformization theorem: if `E/k` is an elliptic curve with split multiplicative
-reduction then `E(k)` is isomorphic to `kˣ/⟨q⟩`.
--/
-noncomputable def WeierstrassCurve.tateEquiv :
-    Additive (kˣ ⧸ Subgroup.zpowers E.qUnit) ≃+ (E⁄k).Point :=
-  sorry
-
 -- Tate's theorem (Silverman, ATAEC V.5.3): an elliptic curve with split multiplicative
 -- reduction is isomorphic, by a change of Weierstrass coordinates, to the Tate curve of its
 -- Tate parameter. Since `j(E)` is non-integral, `Aut` of the curve is `{±1}` and there are
--- exactly *two* such `C`, differing by negation. `tateEquiv` is `tateCurveEquiv` transported
--- along a choice of one of them; this binary choice, for each `E`, is the only choice in
--- the whole theory, and it cannot be made functorially in `E` — see `tateEquiv_baseChange`.
+-- exactly *two* such `C`, differing by negation. `tateEquiv` transports the
+-- Tate-model uniformization along a choice of one of them. This binary choice
+-- for each `E` is the only choice in the theory. It cannot be made functorially
+-- in `E`; see `tateEquiv_baseChange`.
+/-- A split multiplicative curve is isomorphic over the base field to its Tate model. -/
 theorem WeierstrassCurve.exists_variableChange_tateCurve :
     ∃ C : VariableChange k, C • tateCurve E.q = E :=
   sorry
+
+/-- The chosen isomorphism with the Tate model, transported over a field extension. -/
+noncomputable def WeierstrassCurve.tateModelEquiv (L : Type*) [Field L] [Algebra k L]
+    [DecidableEq L] : ((tateCurve E.q)⁄L).Point ≃+ (E⁄L).Point := by
+  let : (tateCurve E.q).IsElliptic :=
+    TateCurve.tateCurve_isElliptic E.q_ne_zero E.valuation_q_lt_one
+  exact Affine.Point.modelEquivOver (tateCurve E.q) E
+    E.exists_variableChange_tateCurve.choose E.exists_variableChange_tateCurve.choose_spec
+
+-- `DecidableEq k` is needed for the group law on `(E⁄k).Point`
+variable [DecidableEq k] in
+/-- Tate uniformization using the fixed base-field isomorphism with the Tate model. -/
+noncomputable def WeierstrassCurve.tateEquiv :
+    Additive (kˣ ⧸ Subgroup.zpowers E.qUnit) ≃+ (E⁄k).Point :=
+  (TateCurve.FiniteStages.algebraicUniformization (Ω := k) E.qUnit E.valuation_q_lt_one).trans
+    (E.tateModelEquiv k)
 
 /-! ### Functoriality
 
@@ -333,7 +343,7 @@ does not pin down.
 -- Now let `Ω` be a separable closure of `k`. It is not itself a nonarchimedean local field
 -- (it is not complete), so it does not fit the framework above; but `E(Ω)` is the union of
 -- the `E(l)` over the finite subextensions `l/k` of `Ω`, and Tate's theory applies to each.
-variable (Ω : Type*) [Field Ω] [Algebra k Ω] [IsSepClosed Ω] [Algebra.IsSeparable k Ω]
+variable (Ω : Type*) [Field Ω] [Algebra k Ω]
 
 -- the base change of E to Ω is elliptic (same remark as for `l` above)
 instance : (E.baseChange Ω).IsElliptic :=
@@ -345,14 +355,15 @@ noncomputable def WeierstrassCurve.qUnitSepClosure : Ωˣ :=
   Units.map (algebraMap k Ω).toMonoidHom E.qUnit
 
 -- `DecidableEq Ω` is needed for the group law on `(E⁄Ω).Point`
-variable [DecidableEq Ω]
+variable [DecidableEq Ω] [Algebra.IsAlgebraic k Ω]
 
 /-- Tate's uniformisation over a separable closure `Ω` of `k`: the union of the
 uniformisations of the `E(l)` over the finite subextensions `l/k` of `Ω`. Its sign is
 pinned to that of `tateEquiv` by `tatePoint_baseChange`. -/
 noncomputable def WeierstrassCurve.tateEquivSepClosure :
     Additive (Ωˣ ⧸ Subgroup.zpowers (E.qUnitSepClosure Ω)) ≃+ (E⁄Ω).Point :=
-  sorry
+  (TateCurve.FiniteStages.algebraicUniformization (Ω := Ω) E.qUnit E.valuation_q_lt_one).trans
+    (E.tateModelEquiv Ω)
 
 /-- The point of `E(Ω)` corresponding to a unit `x ∈ Ωˣ` under Tate's uniformisation. -/
 noncomputable def WeierstrassCurve.tatePoint (x : Ωˣ) : (E⁄Ω).Point :=
@@ -363,17 +374,33 @@ noncomputable def WeierstrassCurve.tatePoint (x : Ωˣ) : (E⁄Ω).Point :=
 -- phenomenon as `tateEquiv_galois`, not of `tateEquiv_baseChange`. This statement is what
 -- pins the sign of `tateEquivSepClosure` to the sign of `tateEquiv`.
 variable [DecidableEq k] in
+/-- The base-field and separable-closure uniformizations use the same model isomorphism. -/
 theorem WeierstrassCurve.tatePoint_baseChange (u : kˣ) :
     Affine.Point.baseChange (W' := E) k Ω (E.tateEquiv (Additive.ofMul ↑u)) =
-      E.tatePoint Ω (Units.map (algebraMap k Ω).toMonoidHom u) :=
-  sorry
+      E.tatePoint Ω (Units.map (algebraMap k Ω).toMonoidHom u) := by
+  change Affine.Point.map (Algebra.ofId k Ω)
+    (E.tateModelEquiv k (TateCurve.FiniteStages.algebraicPoint E.qUnit E.valuation_q_lt_one u)) =
+      E.tateModelEquiv Ω (TateCurve.FiniteStages.algebraicPoint E.qUnit E.valuation_q_lt_one
+        (Units.map (algebraMap k Ω).toMonoidHom u))
+  unfold tateModelEquiv
+  erw [Affine.Point.map_modelEquivOver]
+  exact congrArg (E.tateModelEquiv Ω)
+    (TateCurve.FiniteStages.map_algebraicPoint (Algebra.ofId k Ω) E.qUnit E.valuation_q_lt_one u)
 
 -- Galois equivariance of the uniformisation over `Ω`: no continuity hypothesis is needed
 -- this time, since `Ω/k` is algebraic.
+/-- Tate parameters transform equivariantly under the Galois action. -/
 theorem WeierstrassCurve.tatePoint_galois (σ : Ω ≃ₐ[k] Ω) (u : Ωˣ) :
     Affine.Point.map (W' := E) σ.toAlgHom (E.tatePoint Ω u) =
-      E.tatePoint Ω (Units.map σ.toAlgHom.toRingHom.toMonoidHom u) :=
-  sorry
+      E.tatePoint Ω (Units.map σ.toAlgHom.toRingHom.toMonoidHom u) := by
+  change Affine.Point.map σ.toAlgHom
+    (E.tateModelEquiv Ω (TateCurve.FiniteStages.algebraicPoint E.qUnit E.valuation_q_lt_one u)) =
+      E.tateModelEquiv Ω (TateCurve.FiniteStages.algebraicPoint E.qUnit E.valuation_q_lt_one
+        (Units.map σ.toAlgHom.toRingHom.toMonoidHom u))
+  unfold tateModelEquiv
+  erw [Affine.Point.map_modelEquivOver]
+  exact congrArg (E.tateModelEquiv Ω)
+    (TateCurve.FiniteStages.map_algebraicPoint σ.toAlgHom E.qUnit E.valuation_q_lt_one u)
 
 set_option linter.unusedSectionVars false in
 /-- `N`-th roots of unity give `N`-torsion points of `E` under Tate's uniformisation. -/
@@ -412,12 +439,13 @@ theorem WeierstrassCurve.tatePoint_mem_torsionBy_of_pow_eq {N : ℕ} {r : Ωˣ}
         exact (QuotientGroup.eq_one_iff _).mpr (Subgroup.mem_zpowers _))
       _ = 0 := (E.tateEquivSepClosure Ω).map_zero
 
--- `weilPairing` and `tateEquiv`/`tateEquivSepClosure` are all currently `sorry`ed data,
--- each pinned down mathematically only up to a sign. The following compatibility, due to
+-- The Weil pairing remains admitted, and the chosen Tate model isomorphism fixes
+-- the sign of both uniformizations. The following compatibility, due to
 -- Tate, is the demand that these signs be chosen coherently. Note that it constrains the
 -- sign convention in the *Weil pairing* (about which the literature does not agree) in
 -- terms of the uniformisation, and not vice versa: by bilinearity `e_N(-P, -Q) = e_N(P, Q)`,
 -- so the demand is insensitive to negating `tateEquivSepClosure`.
+variable [IsSepClosed Ω] [Algebra.IsSeparable k Ω] in
 theorem WeierstrassCurve.weilPairing_tatePoint (N : ℕ) [NeZero (N : Ω)] {ζ r : Ωˣ}
     (hζ : ζ ∈ rootsOfUnity N Ω) (hr : r ^ N = E.qUnitSepClosure Ω) :
     (E⁄Ω).weilPairing Ω N
