@@ -11,6 +11,7 @@ public import FLT.FreyCurve.Basic
 public import FLT.FreyCurve.Serre.Flat
 public import FLT.FreyCurve.Serre.Unramified
 public import FLT.EllipticCurve.Torsion
+public import FLT.EllipticCurve.TorsionPairingAdapter
 public import FLT.EllipticCurve.WeilPairingDeterminant
 import Mathlib.Analysis.SpecialFunctions.Gamma.Basic
 import Mathlib.Data.Nat.Factorial.DoubleFactorial
@@ -21,8 +22,8 @@ import Mathlib.NumberTheory.ArithmeticFunction.Misc
 
 We prove that the `ℓ`-torsion of the Frey curve attached to a Frey package
 is a hardly ramified Galois representation, and deduce that this representation is
-not irreducible from the generic prime-field theorem. The determinant and flatness
-fields remain separate arithmetic inputs.
+not irreducible from the generic prime-field theorem. The Weil pairing supplies
+the determinant field; flatness remains a separate arithmetic input.
 -/
 
 @[expose] public section
@@ -55,7 +56,7 @@ theorem FreyCurve.torsion_rank :
   exact one_add_one_eq_two
 
 /-- A checked Weil pairing on Frey torsion supplies exactly the determinant field of
-`IsHardlyRamified`. Constructing this pairing is still required. -/
+`IsHardlyRamified`. -/
 theorem FreyCurve.torsion_det_of_weilPairing :
     haveI : Fact P.p.Prime := ⟨P.pp⟩
     ∀ (_w : P.freyCurve.TorsionWeilPairing P.p) g,
@@ -67,14 +68,17 @@ theorem FreyCurve.torsion_det_of_weilPairing :
   exact w.det_galoisRep P.hppos g
 
 /-- The determinant of Frey torsion is the cyclotomic character, as required by
-`IsHardlyRamified.det`. This input requires the nondegenerate, Galois-equivariant
-Weil pairing and its determinant comparison. -/
+`IsHardlyRamified.det`, using the constructed nondegenerate, Galois-equivariant
+Weil pairing. -/
 theorem FreyCurve.torsion_det :
     haveI : Fact P.p.Prime := ⟨P.pp⟩
     ∀ g, (P.freyCurve.galoisRep P.p P.hppos).det g =
       algebraMap ℤ_[P.p] (ZMod P.p)
-        (cyclotomicCharacter (AlgebraicClosure ℚ) P.p g.toRingEquiv) :=
-  sorry
+        (cyclotomicCharacter (AlgebraicClosure ℚ) P.p g.toRingEquiv) := by
+  let : Fact P.p.Prime := ⟨P.pp⟩
+  obtain ⟨w⟩ := P.freyCurve.nonempty_torsionWeilPairing
+    (Nat.ne_of_gt P.hppos) (by exact_mod_cast (Nat.ne_of_gt P.hppos))
+  exact FreyCurve.torsion_det_of_weilPairing P w
 
 /-- Frey torsion is flat at its residual prime, as required by
 `IsHardlyRamified.isFlat`, including the condition for every open coefficient ideal.
