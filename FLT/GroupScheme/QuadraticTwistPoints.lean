@@ -179,3 +179,32 @@ theorem pointMap_convolution (s : S →ₐ[R] Ω) (f g : H →ₐ[R] Ω) :
   exact hh a.val
 
 end QuadraticTwist
+
+namespace QuadraticTwist
+
+universe v
+variable {R Ω : Type v} [CommRing R] [Field Ω] [Algebra R Ω]
+
+/-- Every automorphism either fixes or conjugates a quadratic coefficient embedding. -/
+theorem coefficientMap_postcomp_cases (u : Rˣ)
+    (s : QuadraticAlgebra R (u : R) 0 →ₐ[R] Ω) (σ : Ω →ₐ[R] Ω) :
+    σ.comp s = s ∨ σ.comp s = s.comp (conjugation (u : R)).toAlgHom := by
+  let w := s QuadraticAlgebra.omega
+  have hw : w ^ 2 = algebraMap R Ω (u : R) := by
+    dsimp [w]
+    rw [← map_pow]
+    simp [pow_two, QuadraticAlgebra.omega_mul_omega_eq_add, Algebra.smul_def]
+  have hσw : σ w ^ 2 = algebraMap R Ω (u : R) := by
+    rw [← map_pow, hw, σ.commutes]
+  have hp : (σ w - w) * (σ w + w) = 0 := by
+    linear_combination hσw - hw
+  rcases mul_eq_zero.mp hp with h | h
+  · left
+    apply QuadraticAlgebra.algHom_ext
+    exact sub_eq_zero.mp h
+  · right
+    apply QuadraticAlgebra.algHom_ext
+    simpa only [AlgHom.comp_apply, AlgEquiv.coe_toAlgHom, conjugation_omega, map_neg] using
+      add_eq_zero_iff_eq_neg.mp h
+
+end QuadraticTwist
