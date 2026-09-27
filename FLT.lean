@@ -424,6 +424,7 @@ public import FLT.TateCurve.LocalUniformization
 public import FLT.TateCurve.Model
 public import FLT.TateCurve.ModelTransport
 public import FLT.TateCurve.Naturality
+public import FLT.TateCurve.ParameterEvaluation
 public import FLT.TateCurve.Points
 public import FLT.TateCurve.QuadraticLift
 public import FLT.TateCurve.Quotient
