@@ -82,6 +82,27 @@ def HasFrob (K L : Type*) [Field K] [NumberField K] [Field L] [NumberField L]
     [Algebra K L] [IsGalois K L] (v : Prime K) (σ : Gal(L/K)) : Prop :=
   ∃ w : Prime L, w.asIdeal.under (𝓞 K) = v.asIdeal ∧ IsArithFrobAt (𝓞 K) σ w.asIdeal
 
+open scoped Pointwise in
+/-- All Frobenius choices above an unramified prime are conjugate. -/
+theorem isConj_frob_of_hasFrob (K L : Type*) [Field K] [NumberField K]
+    [Field L] [NumberField L] [Algebra K L] [IsGalois K L]
+    (v : Prime K) (hu : Unram K L v) (σ : Gal(L/K)) (hσ : HasFrob K L v σ) :
+    IsConj σ (frob K L v) := by
+  obtain ⟨w, hw, hσ⟩ := hσ
+  let : w.asIdeal.LiesOver v.asIdeal := ⟨hw.symm⟩
+  let : (primeAbove K L v).asIdeal.LiesOver v.asIdeal :=
+    ⟨(primeAbove_under K L v).symm⟩
+  let : Algebra.IsUnramifiedAt (𝓞 K) (primeAbove K L v).asIdeal :=
+    hu _ inferInstance inferInstance
+  obtain ⟨τ, hτ⟩ := Ideal.exists_smul_eq_of_isGaloisGroup
+    v.asIdeal w.asIdeal (primeAbove K L v).asIdeal Gal(L/K)
+  have hc := hσ.conj τ
+  rw [hτ] at hc
+  have hi := hc.mul_inv_mem_inertia (isArithFrobAt_frob K L v)
+  rw [inertia_eq_bot_of_isUnramifiedAt K L (primeAbove K L v),
+    Subgroup.mem_bot] at hi
+  exact isConj_iff.mpr ⟨τ, mul_inv_eq_one.mp hi⟩
+
 variable (L : IntermediateField ℚ (AlgebraicClosure ℚ))
   [FiniteDimensional ℚ L]
 
@@ -115,5 +136,14 @@ theorem hasFrob_restrict_QFrob (q : ℕ) (hq : q.Prime)
     HasFrob ℚ L hq.toHeightOneSpectrumRingOfIntegersRat
       (AlgEquiv.restrictNormalHom L (QFrob q hq)) :=
   ⟨qFrobPrime L q hq, qFrobPrime_under L q hq, isArithFrobAt_restrict_QFrob L q hq⟩
+
+/-- B5's chosen local Frobenius and the independently chosen finite Frobenius
+are conjugate at every unramified rational prime (G4). -/
+theorem isConj_restrict_QFrob_frob (q : ℕ) (hq : q.Prime)
+    (hu : Unram ℚ L hq.toHeightOneSpectrumRingOfIntegersRat) :
+    IsConj (AlgEquiv.restrictNormalHom L (QFrob q hq))
+      (frob ℚ L hq.toHeightOneSpectrumRingOfIntegersRat) :=
+  isConj_frob_of_hasFrob ℚ L hq.toHeightOneSpectrumRingOfIntegersRat hu _
+    (hasFrob_restrict_QFrob L q hq hu)
 
 end GaloisRepresentation.Chebotarev
