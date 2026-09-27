@@ -116,6 +116,7 @@ public import FLT.EllipticCurve.NTorsionFinite
 public import FLT.EllipticCurve.NTorsionRoots
 public import FLT.EllipticCurve.Negation
 public import FLT.EllipticCurve.PointDivisor
+public import FLT.EllipticCurve.PointIdealOrder
 public import FLT.EllipticCurve.PointOrder
 public import FLT.EllipticCurve.PointReduction
 public import FLT.EllipticCurve.PointReductionAddition
