@@ -64,7 +64,7 @@ hides. `exists_galoisRep_isAttachedAtGoodPrimes` hides the following five items.
    Invent. Math. 98 (1989), 265--280**, which closed the even-degree case by congruences and
    pseudo-representations. **Carayol, Ann. Sci. ENS 19 (1986), 409--468** is a *secondary,
    upstream* input (Taylor's congruence argument consumes it; it remains the `ℓ ≠ p`
-   local-global reference). Both are pre-1990, so the `knownin1980s` policy is unaffected.
+   local-global reference). Both references predate 1990.
    Double-count rule: the JL transfer content is credited once against hub-lsb1u.4 and marked
    `[shared:.4]` here -- do not count it again.
 2. **Multiplicity-one absorption.** The passage from an eigensystem to a well-defined
@@ -322,7 +322,7 @@ at `p`) and **Breuil, Bull. SMF 127 (1999)** (weight-2 flatness), both post-1990
 not an alternative here: his good-reduction models come from Shimura curves, which require a split
 infinite place, whereas `D` is totally definite. Consequently this clause sits in the **same
 ledger class as nodes G10 and G11** (the Khare--Wintenberger / BLGGT content), not in the
-`knownin1980s` class that clauses (W), (I) and (T) belong to. Adjudicated by
+pre-1990 literature class that clauses (W), (I) and (T) belong to. Adjudicated by
 `cartography/panel/greps-adjudication.md`, ruling 1; see also
 `cartography/galois-reps-reconciled.md` §4.1. Do not reopen a Carayol+Raynaud 1980s route for
 totally definite `D`.

@@ -9,3 +9,8 @@ import FLT
 /-!
 Check that no FLT declarations conflict with Mathlib.
 -/
+
+-- The unrestricted proof escape hatch must no longer be available.
+/-- error: Unknown identifier `knownin1980s` -/
+#guard_msgs in
+#check knownin1980s
