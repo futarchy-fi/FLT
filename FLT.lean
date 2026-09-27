@@ -384,5 +384,6 @@ public import FLT.TateCurve.LocalField
 public import FLT.TateCurve.Naturality
 public import FLT.TateCurve.Points
 public import FLT.TateCurve.Quotient
+public import FLT.TateCurve.Surjectivity
 public import FLT.TateCurve.TateCurve
 public import FLT.TateCurve.Uniformization
