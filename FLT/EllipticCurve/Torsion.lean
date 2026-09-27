@@ -5,8 +5,11 @@ Authors: Kevin Buzzard
 -/
 module
 
-public import FLT.EllipticCurve.NTorsionFinite
+public import FLT.EllipticCurve.DivisionPolynomialSeparable
+public import FLT.EllipticCurve.NTorsionCardOfDifferential
+public import FLT.EllipticCurve.NTorsionCardOfSeparable
 public import FLT.EllipticCurve.TorsionStructure
+public import FLT.EllipticCurve.TwoTorsionCard
 public import Mathlib.Topology.Instances.ZMod
 public import Mathlib.Topology.LocallyConstant.Basic
 public import FLT.Deformations.RepresentationTheory.GaloisRep
@@ -62,6 +65,113 @@ theorem WeierstrassCurve.n_torsion_finite {n : ℕ} (hn : 0 < n) : Finite (E.nTo
 theorem WeierstrassCurve.n_torsion_card [IsSepClosed k] {n : ℕ} (hn : (n : k) ≠ 0) :
     Nat.card (E.nTorsion n) = n^2 := sorry
 
+omit [E.IsElliptic] in
+/-- The subgroup killed by one consists of the identity alone. -/
+theorem WeierstrassCurve.n_torsion_card_one : Nat.card (E.nTorsion 1) = 1 := by
+  have : Subsingleton (E.nTorsion 1) := ⟨fun P Q => Subtype.ext (by
+    have hP : P.val = 0 := by simpa using P.property
+    have hQ : Q.val = 0 := by simpa using Q.property
+    exact hP.trans hQ.symm)⟩
+  exact Nat.card_unique
+
+/-- The two-torsion subgroup has four elements over a separably closed field
+of characteristic different from two. -/
+theorem WeierstrassCurve.n_torsion_card_two [IsSepClosed k] (h2 : (2 : k) ≠ 0) :
+    Nat.card (E.nTorsion 2) = 2 ^ 2 := by
+  have : (E⁄k).IsElliptic := by
+    change (E.map (algebraMap k k)).IsElliptic
+    infer_instance
+  let e (n : ℕ) : E.nTorsion n ≃ {P : (E⁄k).Point // n • P = 0} :=
+    { toFun := fun P => ⟨P.val, by
+        simpa only [Submodule.mem_torsionBy_iff, natCast_zsmul] using P.property⟩
+      invFun := fun P => ⟨P.val, by
+        simpa only [Submodule.mem_torsionBy_iff, natCast_zsmul] using P.property⟩
+      left_inv := fun _ => rfl
+      right_inv := fun _ => rfl }
+  rw [Nat.card_congr (e 2)]
+  exact (E⁄k).card_two_torsion h2
+
+/-- For odd `n`, separability of the division polynomial suffices for the
+expected torsion cardinality over a separably closed field. -/
+theorem WeierstrassCurve.n_torsion_card_odd_of_separable [IsSepClosed k] {n : ℕ}
+    (hn : Odd n) (hchar : (n : k) ≠ 0) (hsep : (E.preΨ n).Separable) :
+    Nat.card (E.nTorsion n) = n ^ 2 := by
+  have : (E⁄k).IsElliptic := by
+    change (E.map (algebraMap k k)).IsElliptic
+    infer_instance
+  have hs : ((E⁄k).preΨ n).Separable := by
+    change ((E.map (algebraMap k k)).preΨ n).Separable
+    rw [map_preΨ]
+    exact hsep.map
+  let e : E.nTorsion n ≃ {P : (E⁄k).Point // n • P = 0} :=
+    { toFun := fun P => ⟨P.val, by
+        simpa only [Submodule.mem_torsionBy_iff, natCast_zsmul] using P.property⟩
+      invFun := fun P => ⟨P.val, by
+        simpa only [Submodule.mem_torsionBy_iff, natCast_zsmul] using P.property⟩
+      left_inv := fun _ => rfl
+      right_inv := fun _ => rfl }
+  rw [Nat.card_congr e]
+  exact (E⁄k).card_odd_torsion_of_separable hn hchar hs
+
+/-- For prime `p`, separability of the division polynomial suffices for the
+expected torsion cardinality over a separably closed field. -/
+theorem WeierstrassCurve.n_torsion_card_prime_of_separable [IsSepClosed k] {p : ℕ}
+    (hp : p.Prime) (hchar : (p : k) ≠ 0) (hsep : (E.preΨ p).Separable) :
+    Nat.card (E.nTorsion p) = p ^ 2 := by
+  rcases hp.eq_two_or_odd' with rfl | hodd
+  · exact E.n_torsion_card_two hchar
+  · exact E.n_torsion_card_odd_of_separable hodd hchar hsep
+
+/-- The corrected differential identity implies the expected torsion
+cardinality for every index nonzero in a separably closed field. -/
+theorem WeierstrassCurve.n_torsion_card_of_divisionDifferentialDefect [IsSepClosed k] {n : ℕ}
+    (hchar : (n : k) ≠ 0) (hd : E.divisionDifferentialDefect n = 0) :
+    Nat.card (E.nTorsion n) = n ^ 2 := by
+  have : (E⁄k).IsElliptic := by
+    change (E.map (algebraMap k k)).IsElliptic
+    infer_instance
+  have hd' : (E⁄k).divisionDifferentialDefect n = 0 := by
+    change (E.map (algebraMap k k)).divisionDifferentialDefect n = 0
+    rw [map_divisionDifferentialDefect, hd, Polynomial.map_zero]
+  let e : E.nTorsion n ≃ {P : (E⁄k).Point // n • P = 0} :=
+    { toFun := fun P => ⟨P.val, by
+        simpa only [Submodule.mem_torsionBy_iff, natCast_zsmul] using P.property⟩
+      invFun := fun P => ⟨P.val, by
+        simpa only [Submodule.mem_torsionBy_iff, natCast_zsmul] using P.property⟩
+      left_inv := fun _ => rfl
+      right_inv := fun _ => rfl }
+  rw [Nat.card_congr e]
+  exact (E⁄k).card_torsion_of_divisionDifferentialDefect hchar hd'
+
+/-- The universal polynomial identity alone suffices for torsion cardinality;
+no additional even-index or composite-index hypothesis is needed. -/
+theorem WeierstrassCurve.n_torsion_card_of_universal_divisionDifferentialDefect
+    [IsSepClosed k] {n : ℕ} (hchar : (n : k) ≠ 0)
+    (hd : Universal.curve.divisionDifferentialDefect n = 0) :
+    Nat.card (E.nTorsion n) = n ^ 2 :=
+  E.n_torsion_card_of_divisionDifferentialDefect hchar
+    (E.divisionDifferentialDefect_eq_zero_of_universal hd)
+
+/-- The four-torsion subgroup has sixteen elements over a separably closed
+field of characteristic different from two. -/
+theorem WeierstrassCurve.n_torsion_card_four [IsSepClosed k] (h2 : (2 : k) ≠ 0) :
+    Nat.card (E.nTorsion 4) = 4 ^ 2 := by
+  apply E.n_torsion_card_of_divisionDifferentialDefect
+  · simpa only [Nat.cast_ofNat, show (4 : k) = 2 ^ 2 by ring] using pow_ne_zero 2 h2
+  · simpa only [Nat.cast_ofNat] using E.divisionDifferentialDefect_four
+
+/-- The three-torsion subgroup has nine elements over a separably closed field
+of characteristic different from three. -/
+theorem WeierstrassCurve.n_torsion_card_three [IsSepClosed k] (h3 : (3 : k) ≠ 0) :
+    Nat.card (E.nTorsion 3) = 3 ^ 2 := by
+  exact E.n_torsion_card_odd_of_separable (by decide) h3 (E.separable_preΨ_three h3)
+
+/-- The five-torsion subgroup has twenty-five elements over a separably closed field
+of characteristic different from five. -/
+theorem WeierstrassCurve.n_torsion_card_five [IsSepClosed k] (h5 : (5 : k) ≠ 0) :
+    Nat.card (E.nTorsion 5) = 5 ^ 2 := by
+  exact E.n_torsion_card_odd_of_separable (by decide) h5 (E.separable_preΨ_five h5)
+
 /-- The prescribed torsion cardinalities characterize a power of the cyclic group of order `n`. -/
 theorem group_theory_lemma {A : Type*} [AddCommGroup A] {n : ℕ} (hn : 0 < n) (r : ℕ)
     (h : ∀ d : ℕ, d ∣ n → Nat.card (Submodule.torsionBy ℤ A d) = d ^ r) :
@@ -72,6 +182,45 @@ theorem group_theory_lemma {A : Type*} [AddCommGroup A] {n : ℕ} (hn : 0 < n) (
   · intro d hd
     rw [Nat.card_congr (TorsionCardinality.nested (A := A) hd).toEquiv]
     exact h d hd
+
+/-- Over a separably closed field of characteristic different from two,
+the two-torsion group is the product of two cyclic groups of order two. -/
+theorem WeierstrassCurve.n_torsion_dimension_two [IsSepClosed k] (h2 : (2 : k) ≠ 0) :
+    Nonempty (E.nTorsion 2 ≃+ (ZMod 2) × (ZMod 2)) := by
+  obtain ⟨φ⟩ : Nonempty (E.nTorsion 2 ≃+ (Fin 2 → ZMod 2)) := by
+    apply group_theory_lemma (by decide : 0 < 2)
+    intro d hd
+    rcases (Nat.dvd_prime Nat.prime_two).mp hd with rfl | rfl
+    · simpa only [one_pow] using E.n_torsion_card_one
+    · exact E.n_torsion_card_two h2
+  exact ⟨φ.trans (RingEquiv.piFinTwo _).toAddEquiv⟩
+
+/-- For a prime, a separable division polynomial gives the product
+decomposition of the torsion group over a separably closed field. -/
+theorem WeierstrassCurve.n_torsion_dimension_prime_of_separable [IsSepClosed k] {p : ℕ}
+    (hp : p.Prime) (hchar : (p : k) ≠ 0) (hsep : (E.preΨ p).Separable) :
+    Nonempty (E.nTorsion p ≃+ (ZMod p) × (ZMod p)) := by
+  obtain ⟨φ⟩ : Nonempty (E.nTorsion p ≃+ (Fin 2 → ZMod p)) := by
+    apply group_theory_lemma hp.pos
+    intro d hd
+    rcases (Nat.dvd_prime hp).mp hd with rfl | rfl
+    · simpa only [one_pow] using E.n_torsion_card_one
+    · exact E.n_torsion_card_prime_of_separable hp hchar hsep
+  exact ⟨φ.trans (RingEquiv.piFinTwo _).toAddEquiv⟩
+
+/-- Over a separably closed field of characteristic different from three,
+the three-torsion group is the product of two cyclic groups of order three. -/
+theorem WeierstrassCurve.n_torsion_dimension_three [IsSepClosed k] (h3 : (3 : k) ≠ 0) :
+    Nonempty (E.nTorsion 3 ≃+ (ZMod 3) × (ZMod 3)) := by
+  exact E.n_torsion_dimension_prime_of_separable Nat.prime_three h3
+    (E.separable_preΨ_three h3)
+
+/-- Over a separably closed field of characteristic different from five,
+the five-torsion group is the product of two cyclic groups of order five. -/
+theorem WeierstrassCurve.n_torsion_dimension_five [IsSepClosed k] (h5 : (5 : k) ≠ 0) :
+    Nonempty (E.nTorsion 5 ≃+ (ZMod 5) × (ZMod 5)) := by
+  exact E.n_torsion_dimension_prime_of_separable (by decide) h5
+    (E.separable_preΨ_five h5)
 
 -- I only need this if n is prime but there's no harm thinking about it in general I guess.
 -- It follows from the previous theorem using pure group theory (possibly including the
