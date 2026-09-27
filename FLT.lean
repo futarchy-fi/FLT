@@ -233,6 +233,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.FiniteRamificat
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.FixedVector
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.LogEulerProduct
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.OpenKernel
+public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.PowerFrobCover
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.PrimeSummability
 public import FLT.GaloisRepresentation.HardlyRamified.Defs
 public import FLT.GaloisRepresentation.HardlyRamified.Family
