@@ -6,9 +6,11 @@ Authors: Kevin Buzzard
 module
 
 public import FLT.TateCurve.AlgebraicUniformization
+public import FLT.TateCurve.JInvariant
 public import FLT.TateCurve.LocalUniformization
 public import FLT.TateCurve.ModelTransport
 public import FLT.TateCurve.Model
+public import Mathlib.AlgebraicGeometry.EllipticCurve.IsomOfJ
 public import Mathlib.AlgebraicGeometry.EllipticCurve.Reduction
 public import Mathlib.NumberTheory.LocalField.Basic
 public import FLT.KnownIn1980s.EllipticCurves.WeilPairing
@@ -210,6 +212,32 @@ theorem WeierstrassCurve.valuation_q_lt_one : valuation k E.q < 1 :=
 /-- The Tate parameter as an element of `kˣ`. -/
 noncomputable def WeierstrassCurve.qUnit : kˣ :=
   Units.mk0 E.q E.q_ne_zero
+
+omit [E.IsMinimal 𝒪[k]] in
+/-- The Tate model of a split multiplicative curve is elliptic. -/
+noncomputable instance WeierstrassCurve.tateCurve_q_isElliptic :
+    (tateCurve E.q).IsElliptic :=
+  TateCurve.tateCurve_isElliptic E.q_ne_zero E.valuation_q_lt_one
+
+omit [E.IsMinimal 𝒪[k]] in
+/-- The Tate model has the same j-invariant as the original split multiplicative curve. -/
+theorem WeierstrassCurve.tateCurve_q_j : (tateCurve E.q).j = E.j := by
+  let : (tateCurve (tateParameter E.j)).IsElliptic := E.tateCurve_q_isElliptic
+  exact TateCurve.j_tateCurve_tateParameter E.one_lt_valuation_j
+
+omit [E.IsMinimal 𝒪[k]] in
+/-- Over a separably closed extension, a split multiplicative curve is isomorphic
+to its Tate model. -/
+theorem WeierstrassCurve.exists_variableChange_tateCurve_over
+    (Ω : Type*) [Field Ω] [Algebra k Ω] [IsSepClosed Ω] :
+    ∃ C : VariableChange Ω, C • (tateCurve E.q).baseChange Ω = E.baseChange Ω := by
+  let : ((tateCurve E.q).baseChange Ω).IsElliptic :=
+    inferInstanceAs ((tateCurve E.q).map (algebraMap k Ω)).IsElliptic
+  let : (E.baseChange Ω).IsElliptic :=
+    inferInstanceAs (E.map (algebraMap k Ω)).IsElliptic
+  apply exists_variableChange_of_j_eq
+  change ((tateCurve E.q).map (algebraMap k Ω)).j = (E.map (algebraMap k Ω)).j
+  rw [map_j, map_j, E.tateCurve_q_j]
 
 -- Tate's theorem (Silverman, ATAEC V.5.3): an elliptic curve with split multiplicative
 -- reduction is isomorphic, by a change of Weierstrass coordinates, to the Tate curve of its
