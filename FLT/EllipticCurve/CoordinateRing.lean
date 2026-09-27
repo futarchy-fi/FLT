@@ -18,6 +18,7 @@ same nonzero principal ideal differ by a scalar in the ground field.
 @[expose] public section
 
 open Polynomial
+open scoped Polynomial.Bivariate
 namespace WeierstrassCurve.Affine.CoordinateRing
 variable {F : Type*} [Field F] {W : WeierstrassCurve.Affine F}
 /-- Every unit of the affine coordinate ring is a nonzero constant. -/
@@ -56,5 +57,23 @@ theorem exists_eq_smul_of_span_eq {f g : W.CoordinateRing}
   obtain ⟨c, hc, he⟩ := exists_eq_algebraMap_of_isUnit u.isUnit
   refine ⟨c, hc, ?_⟩
   rw [← hu, ← he, Algebra.smul_def, mul_comm]
+
+/-- Evaluation at an affine point vanishes exactly on its point ideal. -/
+theorem evalEval_eq_zero_iff {x y : F} (h : W.Equation x y) (f : W.CoordinateRing) :
+    AdjoinRoot.evalEval h f = 0 ↔ f ∈ XYIdeal W x (C y) := by
+  change W.polynomial.evalEval x y = 0 at h
+  have hm : XYIdeal W x (C y) =
+      Ideal.map (mk W) (Ideal.span {C (X - C x), Y - C (C y)}) := by
+    simp only [XYIdeal, XClass, YClass, Ideal.map_span, Set.image_pair]
+  rw [hm, Ideal.mem_map_iff_of_surjective (mk W) (AdjoinRoot.mk_surjective)]
+  constructor
+  · intro hf
+    obtain ⟨p, rfl⟩ := AdjoinRoot.mk_surjective f
+    rw [AdjoinRoot.evalEval_mk] at hf
+    exact ⟨p, mem_span_C_X_sub_C_X_sub_C_iff_eval_eval_eq_zero.mpr hf, rfl⟩
+  · rintro ⟨p, hp, rfl⟩
+    change AdjoinRoot.evalEval h (AdjoinRoot.mk _ p) = 0
+    rw [AdjoinRoot.evalEval_mk]
+    exact mem_span_C_X_sub_C_X_sub_C_iff_eval_eval_eq_zero.mp hp
 
 end WeierstrassCurve.Affine.CoordinateRing
