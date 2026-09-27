@@ -5,7 +5,7 @@ Authors: krandder
 -/
 module
 
-public import Mathlib.AlgebraicGeometry.EllipticCurve.Affine.Point
+public import FLT.EllipticCurve.CoordinateRing
 
 /-!
 # Functions attached to torsion points
@@ -55,3 +55,22 @@ theorem nsmul_eq_zero_iff_exists_torsionFunction {x y : F} (h : W.Nonsingular x 
   rw [Units.val_pow_eq_pow_val, CoordinateRing.XYIdeal'_eq, FractionalIdeal.coeIdeal_pow]
 
 end WeierstrassCurve.Affine.Point
+
+namespace WeierstrassCurve.Affine.CoordinateRing
+
+variable {F : Type*} [Field F] {W : WeierstrassCurve.Affine F}
+
+/-- A generator of a positive power of a point ideal vanishes at exactly that
+affine point. This identifies the affine support of a torsion function. -/
+theorem evalEval_eq_zero_iff_of_torsionFunction {x y x' y' : F} (h : W.Equation x' y')
+    {n : ℕ} (hn : n ≠ 0)
+    {f : W.CoordinateRing} (hf : XYIdeal W x (C y) ^ n = Ideal.span {f}) :
+    AdjoinRoot.evalEval h f = 0 ↔ x = x' ∧ y = y' := by
+  have hker : RingHom.ker (AdjoinRoot.evalEval h) = XYIdeal W x' (C y') := by
+    ext a
+    exact evalEval_eq_zero_iff h a
+  have : (XYIdeal W x' (C y')).IsPrime := hker ▸ RingHom.ker_isPrime _
+  rw [evalEval_eq_zero_iff, ← Ideal.span_singleton_le_iff_mem, ← hf,
+    Ideal.IsPrime.pow_le_iff hn, XYIdeal_le_XYIdeal_iff h]
+
+end WeierstrassCurve.Affine.CoordinateRing
