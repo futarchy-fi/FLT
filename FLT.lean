@@ -361,6 +361,7 @@ public import FLT.Mathlib.LinearAlgebra.Countable
 public import FLT.Mathlib.LinearAlgebra.Determinant
 public import FLT.Mathlib.LinearAlgebra.Dimension.Constructions
 public import FLT.Mathlib.LinearAlgebra.Dimension.IsQuadraticExtension
+public import FLT.Mathlib.LinearAlgebra.InvolutionFixedSpace
 public import FLT.Mathlib.LinearAlgebra.Matrix.GeneralLinearGroup.Defs
 public import FLT.Mathlib.LinearAlgebra.Matrix.Transvection
 public import FLT.Mathlib.LinearAlgebra.Pi
