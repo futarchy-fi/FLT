@@ -104,6 +104,7 @@ public import FLT.EllipticCurve.DivisionPolynomialSeparable
 public import FLT.EllipticCurve.FiberOrder
 public import FLT.EllipticCurve.FlatTorsion
 public import FLT.EllipticCurve.FunctionField
+public import FLT.EllipticCurve.FunctionFieldOrder
 public import FLT.EllipticCurve.Infinity
 public import FLT.EllipticCurve.InvariantDerivation
 public import FLT.EllipticCurve.InvariantDifferential
