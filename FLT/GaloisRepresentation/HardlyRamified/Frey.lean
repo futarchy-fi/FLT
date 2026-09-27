@@ -78,7 +78,7 @@ theorem FreyCurve.torsion_det :
 
 /-- Frey torsion is flat at its residual prime, as required by
 `IsHardlyRamified.isFlat`, including the condition for every open coefficient ideal.
-Good reduction uses the general finite-flat torsion theorem; multiplicative reduction
+Good reduction uses the explicit odd-torsion Hopf order; multiplicative reduction
 uses the split or quadratically descended Kummer model. -/
 theorem FreyCurve.torsion_isFlat :
     haveI : Fact P.p.Prime := ⟨P.pp⟩
