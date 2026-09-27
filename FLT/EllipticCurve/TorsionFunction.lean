@@ -74,3 +74,33 @@ theorem evalEval_eq_zero_iff_of_torsionFunction {x y x' y' : F} (h : W.Equation 
     Ideal.IsPrime.pow_le_iff hn, XYIdeal_le_XYIdeal_iff h]
 
 end WeierstrassCurve.Affine.CoordinateRing
+
+namespace WeierstrassCurve.Affine.Point
+
+open CoordinateRing
+
+variable {F : Type*} [Field F] [DecidableEq F] {W : WeierstrassCurve.Affine F}
+
+/-- A torsion function has a unique generator normalized to one at any other
+affine point. No choice of a scalar remains after this normalization. -/
+theorem existsUnique_normalized_torsionFunction {x y x' y' : F} (hP : W.Nonsingular x y)
+    {n : ℕ} (hn : n ≠ 0)
+    (hPn : n • (some x y hP : W.Point) = 0) (hQ : W.Equation x' y')
+    (hPQ : ¬(x = x' ∧ y = y')) :
+    ∃! f : W.CoordinateRing,
+      XYIdeal W x (C y) ^ n = Ideal.span {f} ∧ AdjoinRoot.evalEval hQ f = 1 := by
+  obtain ⟨f, _, hf⟩ := exists_torsionFunction hP n hPn
+  have hQf : AdjoinRoot.evalEval hQ f ≠ 0 :=
+    fun hz => hPQ ((evalEval_eq_zero_iff_of_torsionFunction hQ hn hf).mp hz)
+  have hs : XYIdeal W x (C y) ^ n =
+      Ideal.span {(AdjoinRoot.evalEval hQ f)⁻¹ • f} := by
+    rw [Algebra.smul_def,
+      Ideal.span_singleton_mul_left_unit ((isUnit_iff_ne_zero.mpr (inv_ne_zero hQf)).map
+        (algebraMap F W.CoordinateRing))]
+    exact hf
+  have he : AdjoinRoot.evalEval hQ ((AdjoinRoot.evalEval hQ f)⁻¹ • f) = 1 := by
+    rw [CoordinateRing.evalEval_smul, inv_mul_cancel₀ hQf]
+  exact ⟨_, ⟨hs, he⟩, fun g hg =>
+    CoordinateRing.eq_of_span_eq_of_evalEval_eq_one (hg.1.symm.trans hs) hQ hg.2 he⟩
+
+end WeierstrassCurve.Affine.Point
