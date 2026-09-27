@@ -6,6 +6,7 @@ Authors: Kevin Buzzard, Salvatore Mercuri
 module
 
 public import Mathlib.RingTheory.DedekindDomain.AdicValuation
+public import Mathlib.RingTheory.DedekindDomain.Factorization
 
 /-!
 # Adic Valuation
@@ -55,5 +56,35 @@ noncomputable def adicCompletion.algEquiv
     v.adicCompletion K ≃ₐ[K] (v.valuation K).Completion :=
   AlgEquiv.ofRingEquiv (f := adicCompletion.equiv K v)
     fun x => algebraMap_adicCompletion_toCompletion A K v x
+
+open scoped nonZeroDivisors
+
+variable {R K : Type*} [CommRing R] [IsDedekindDomain R]
+  [Field K] [Algebra R K] [IsFractionRing R K]
+/-- The multiplicity of a principal fractional ideal is the negative logarithm
+of its adic valuation, including the conventional value zero at the zero function. -/
+theorem count_spanSingleton_eq_neg_log (v : HeightOneSpectrum R) (f : K) :
+    FractionalIdeal.count K v (FractionalIdeal.spanSingleton R⁰ f) =
+      -WithZero.log (v.valuation K f) := by
+  have hreg (a : R) (ha : a ≠ 0) :
+      FractionalIdeal.count K v (FractionalIdeal.spanSingleton R⁰ (algebraMap R K a)) =
+        -WithZero.log (v.valuation K (algebraMap R K a)) := by
+    rw [← FractionalIdeal.coeIdeal_span_singleton, FractionalIdeal.count_coe K v
+      (by simpa using ha), v.valuation_of_algebraMap, v.intValuation_if_neg ha,
+      WithZero.log_exp, neg_neg]
+  by_cases hf : f = 0
+  · simp [hf, FractionalIdeal.count_zero]
+  obtain ⟨a, b, hb, rfl⟩ := IsFractionRing.div_surjective R f
+  have hb0 : b ≠ 0 := nonZeroDivisors.ne_zero hb
+  have ha0 : a ≠ 0 := by intro ha; simp [ha] at hf
+  have hKa : algebraMap R K a ≠ 0 := (map_ne_zero_iff _ (IsFractionRing.injective R K)).mpr ha0
+  have hKb : algebraMap R K b ≠ 0 := (map_ne_zero_iff _ (IsFractionRing.injective R K)).mpr hb0
+  rw [← FractionalIdeal.spanSingleton_div_spanSingleton, div_eq_mul_inv,
+    FractionalIdeal.count_mul K v
+      (FractionalIdeal.spanSingleton_ne_zero_iff.mpr hKa)
+      (inv_ne_zero (FractionalIdeal.spanSingleton_ne_zero_iff.mpr hKb)),
+    FractionalIdeal.count_inv, hreg a ha0, hreg b hb0,
+    map_div₀, WithZero.log_div ((map_ne_zero _).mpr hKa) ((map_ne_zero _).mpr hKb)]
+  ring
 
 end IsDedekindDomain.HeightOneSpectrum
