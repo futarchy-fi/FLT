@@ -229,11 +229,13 @@ public import FLT.GaloisRepresentation.Cyclotomic
 public import FLT.GaloisRepresentation.HardlyRamified.AtTwo
 public import FLT.GaloisRepresentation.HardlyRamified.B5Inputs
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.DedekindZeta
+public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.DegreeOneGenerator
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.FiniteGaloisRealization
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.FiniteRamification
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.FixedVector
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.FrobeniusOrder
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.GeneratorDensity
+public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.GeneratorPrimes
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.Generators
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.HigherDegree
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.LocalFrobenius
