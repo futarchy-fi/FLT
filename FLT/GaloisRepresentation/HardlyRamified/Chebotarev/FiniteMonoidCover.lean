@@ -7,6 +7,7 @@ module
 
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.FiniteGaloisRealization
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.PowerFrobCover
+public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.W2Statement
 
 /-!
 # Power-Frobenius covers of finite monoids
@@ -38,5 +39,22 @@ theorem exists_finiteGalois_monoid_factorization
   obtain ⟨L, hfin, hgal, e, he⟩ :=
     exists_finiteGalois_realization π u.rangeRestrict_surjective
   exact ⟨L, hfin, hgal, ι.comp e.toMonoidHom, fun g ↦ congrArg ι (he g)⟩
+
+/-- A generator of the automorphism group over the fixed field of `⟨g⟩`
+has a nonnegative power whose restriction of scalars is `g`. -/
+theorem exists_pow_restrictScalars_eq
+    (L : Type*) [Field L] [NumberField L] [IsGalois ℚ L] (g : Gal(L/ℚ))
+    (a : Gal(L/IntermediateField.fixedField (Subgroup.zpowers g)))
+    (ha : Subgroup.zpowers a = ⊤) :
+    ∃ n : ℕ, (AlgEquiv.restrictScalarsHom ℚ a) ^ n = g := by
+  let H := Subgroup.zpowers g
+  let g' := IntermediateField.subgroupEquivAlgEquiv H ⟨g, Subgroup.mem_zpowers g⟩
+  have hg' : g' ∈ Subgroup.zpowers a := ha ▸ Subgroup.mem_top g'
+  obtain ⟨n, hn⟩ := (Submonoid.mem_powers_iff g' a).mp
+    (mem_powers_iff_mem_zpowers.mpr hg')
+  refine ⟨n, ?_⟩
+  have h := congrArg (AlgEquiv.restrictScalarsHom ℚ) hn
+  rw [map_pow] at h
+  exact h
 
 end GaloisRepresentation.Chebotarev
