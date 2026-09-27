@@ -5,3 +5,4 @@ Authors: Kevin Buzzard
 -/
 import FLTTest.ExponentRebase
 import FLTTest.MathlibCompatibility
+import FLTTest.QuaternionFiniteIndex

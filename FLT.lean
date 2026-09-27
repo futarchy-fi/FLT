@@ -34,7 +34,6 @@ public import FLT.AbsoluteGaloisGroup.InertiaComparison
 public import FLT.AbsoluteGaloisGroup.LocalCompositum
 public import FLT.AbsoluteGaloisGroup.TameCharacter
 public import FLT.AbsoluteGaloisGroup.Unramified
-public import FLT.Assumptions.KnownIn1980s
 public import FLT.Assumptions.Mazur
 public import FLT.Assumptions.Odlyzko
 public import FLT.AutomorphicForm.GroupTheoryStuff
@@ -543,6 +542,7 @@ public import FLT.Patching.Utils.TopologicallyFG
 public import FLT.Patching.VanishingFilter
 public import FLT.PoitouTate
 public import FLT.Proof
+public import FLT.QuaternionAlgebra.FiniteProjectiveUnits
 public import FLT.QuaternionAlgebra.NumberField
 public import FLT.Slop.DimensionTheorem
 public import FLT.Slop.DimensionTheorem.Defs
