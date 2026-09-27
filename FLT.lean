@@ -149,8 +149,8 @@ public import FLT.FreyCurve.Serre.ReducibleFiltration
 public import FLT.FreyCurve.Serre.RootsOfUnityInertia
 public import FLT.FreyCurve.Serre.Semistable
 public import FLT.FreyCurve.Serre.StableLineQuotient
-public import FLT.FreyCurve.Serre.TateInertia
 public import FLT.FreyCurve.Serre.TateFlat
+public import FLT.FreyCurve.Serre.TateInertia
 public import FLT.FreyCurve.Serre.TateKummer
 public import FLT.FreyCurve.Serre.TateTorsion
 public import FLT.FreyCurve.Serre.TateUnramified
