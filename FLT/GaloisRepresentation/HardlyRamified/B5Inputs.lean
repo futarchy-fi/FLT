@@ -7,6 +7,8 @@ module
 
 public import FLT.Deformations.RepresentationTheory.GaloisRepFamily
 public import FLT.GaloisRepresentation.HardlyRamified.Defs
+public import FLT.GaloisRepresentation.HardlyRamified.TraceReducibility
+public import FLT.Mathlib.Topology.Algebra.Module.ModuleTopology
 public import Mathlib.LinearAlgebra.Charpoly.BaseChange
 public import Mathlib.LinearAlgebra.Charpoly.ToMatrix
 public import Mathlib.LinearAlgebra.TensorProduct.RightExactness
@@ -19,9 +21,11 @@ public import Mathlib.LinearAlgebra.FreeModule.PID
 /-!
 # General inputs for B5
 
-The general input `not_isIrreducible_of_frobenius_traces` (Chebotarev and
-Brauer--Nesbitt) remains admitted. Neither it nor the domain-quotient construction
-uses the hardly-ramified hypothesis or any B6 theorem.
+The Frobenius-trace criterion is proved from general Chebotarev density and the
+cyclotomic Frobenius formula, the two arithmetic inputs admitted here. Its
+rank-two representation theory is proved in `TraceReducibility`. Neither the
+criterion nor the domain-quotient construction uses the hardly-ramified
+hypothesis or any B6 theorem.
 Coefficient-quotient preservation, trace/base-change identities, injectivity
 of coefficient embeddings, and compatibility transport are proved below.
 -/
@@ -201,16 +205,65 @@ theorem hardlyRamified_quotient {p : ℕ} [Fact p.Prime] (hpodd : Odd p)
       change δA (g * g) = 1 at hggA
       rwa [map_mul] at hggA
 
-/-- Chebotarev and Brauer--Nesbitt, in the rank-two finite-field form needed here.
-A continuous representation with cyclotomic determinant and Frobenius traces
-`1 + q` outside finitely many places has semisimplification `1 ⊕ cyclotomic`,
-and so cannot be irreducible. Chebotarev identifies characteristic polynomials
-on the finite image; Brauer--Nesbitt identifies the semisimplifications. The
-exceptional set may include the ramified places. This statement imposes no
-flatness or hardly-ramified condition.
+section FrobeniusTraces
 
-The characteristic bound avoids small-characteristic trace-only issues; trace
-and determinant together determine the characteristic polynomial in rank two. -/
+-- Match the completion structures used when `GaloisRep.toLocal` was defined.
+-- Otherwise the arbitrary algebraic-closure lifts need not agree definitionally.
+attribute [local instance 2000] HeightOneSpectrum.adicCompletion.instField
+  HeightOneSpectrum.instAlgebraAdicCompletion
+
+/-- Chebotarev density in finite quotients of the absolute Galois group of `ℚ`.
+For every element of the image and every finite exceptional set, arbitrarily
+large rational primes have that Frobenius conjugacy class. Conjugation is
+essential: the embeddings defining `toLocal` choose representatives of classes,
+not arbitrary elements of each class.
+
+The finite monoid formulation is equivalent to the finite-group formulation:
+the image of a group homomorphism is a group of units. Continuity gives an open
+normal kernel and hence a finite Galois extension; primes ramified in that
+extension can be discarded. No representation-theoretic assertion is included.
+
+This is the remaining general Chebotarev input. -/
+@[nolint unusedArguments]
+theorem chebotarev_frobenius_dense
+    {M : Type*} [Monoid M] [Finite M] [TopologicalSpace M] [DiscreteTopology M]
+    (f : Field.absoluteGaloisGroup ℚ →ₜ* M)
+    (S : Finset (HeightOneSpectrum (𝓞 ℚ))) (N : ℕ)
+    (g : Field.absoluteGaloisGroup ℚ) :
+    ∃ (q : ℕ) (hq : q.Prime), N ≤ q ∧
+      hq.toHeightOneSpectrumRingOfIntegersRat ∉ S ∧
+      ∃ σ : Field.absoluteGaloisGroup ℚ,
+        f g = f (σ * Field.absoluteGaloisGroup.map
+          (algebraMap ℚ (hq.toHeightOneSpectrumRingOfIntegersRat.adicCompletion ℚ))
+          (Field.AbsoluteGaloisGroup.adicArithFrob
+            hq.toHeightOneSpectrumRingOfIntegersRat) * σ⁻¹) := by
+  sorry
+
+/-- At a rational prime `q ≠ p`, the `p`-adic cyclotomic character sends an
+arithmetic Frobenius to `q`. This is independent of the chosen Frobenius lift
+and embedding: inertia acts trivially on roots of unity of order prime to `q`,
+and arithmetic Frobenius acts by the `q`th power on their reductions.
+
+The library has the cyclotomic character and arithmetic Frobenius separately,
+but not yet their compatibility on roots of unity. This local arithmetic
+identity is the second, separate input; it contains no density or
+representation-theoretic assertion. -/
+@[nolint unusedArguments]
+theorem cyclotomicCharacter_adicArithFrob
+    (p q : ℕ) [Fact p.Prime] (hq : q.Prime) (hqp : q ≠ p) :
+    (cyclotomicCharacter (AlgebraicClosure ℚ) p
+      (Field.absoluteGaloisGroup.map
+        (algebraMap ℚ (hq.toHeightOneSpectrumRingOfIntegersRat.adicCompletion ℚ))
+        (Field.AbsoluteGaloisGroup.adicArithFrob
+          hq.toHeightOneSpectrumRingOfIntegersRat)).toRingEquiv : ℤ_[p]) = q := by
+  sorry
+
+set_option backward.isDefEq.respectTransparency false in
+/-- Frobenius traces `1 + q` and cyclotomic determinant imply reducibility.
+Chebotarev transports the trace and determinant to every group element;
+`not_isIrreducible_of_trace_eq_one_add_det` supplies the elementary rank-two
+argument. No flatness or hardly-ramified hypothesis is used. -/
+@[nolint unusedArguments]
 theorem not_isIrreducible_of_frobenius_traces
     (p : ℕ) [Fact p.Prime] (hp : 5 ≤ p)
     {k : Type} [Field k] [Finite k] [TopologicalSpace k] [DiscreteTopology k]
@@ -226,7 +279,39 @@ theorem not_isIrreducible_of_frobenius_traces
         (Field.AbsoluteGaloisGroup.adicArithFrob
           hq.toHeightOneSpectrumRingOfIntegersRat)).trace k V = 1 + q) :
     ¬ ρ.IsIrreducible := by
-  sorry
+  classical
+  let : TopologicalSpace (Module.End k V) := moduleTopology k (Module.End k V)
+  let : Finite (Module.End k V) := Module.finite_of_finite k
+  let : T2Space (Module.End k V) := IsModuleTopology.t2Space k
+  have hdim : Module.finrank k V = 2 := Module.finrank_eq_of_rank_eq hV
+  apply not_isIrreducible_of_trace_eq_one_add_det hdim ρ.toRepresentation
+  intro g
+  obtain ⟨q, hq, hlarge, hqS, σ, hσ⟩ :=
+    chebotarev_frobenius_dense ρ S (p + 1) g
+  have hq5 : 5 ≤ q := le_trans hp (by omega)
+  have hqp : q ≠ p := by omega
+  let F := Field.absoluteGaloisGroup.map
+    (algebraMap ℚ (hq.toHeightOneSpectrumRingOfIntegersRat.adicCompletion ℚ))
+    (Field.AbsoluteGaloisGroup.adicArithFrob hq.toHeightOneSpectrumRingOfIntegersRat)
+  have hconj : ρ g = ρ σ * ρ F * ρ σ⁻¹ := by
+    change ρ g = ρ (σ * F * σ⁻¹) at hσ
+    simpa only [map_mul] using hσ
+  have htr : (ρ g).trace k V = (ρ F).trace k V := by
+    rw [hconj, LinearMap.trace_mul_comm, ← mul_assoc, ← map_mul, inv_mul_cancel,
+      map_one, one_mul]
+  have hdt : (ρ g).det = (ρ F).det := by
+    rw [hconj, map_mul, map_mul,
+      mul_right_comm, ← map_mul LinearMap.det (ρ σ) (ρ σ⁻¹),
+      ← map_mul ρ σ σ⁻¹, mul_inv_cancel, map_one, map_one, one_mul]
+  change (ρ g).trace k V = 1 + (ρ g).det
+  rw [htr, hdt]
+  have hFdet : (ρ F).det = (q : k) := by
+    change ρ.det F = _
+    rw [hdet, cyclotomicCharacter_adicArithFrob p q hq hqp, map_natCast]
+  rw [hFdet]
+  exact htrace q hq hq5 hqp hqS
+
+end FrobeniusTraces
 
 /-- Traces commute with coefficient extension and change of basis. -/
 theorem trace_baseChange_conj {K R A V W : Type*} [Field K] [CommRing R] [CommRing A]
