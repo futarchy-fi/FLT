@@ -226,6 +226,7 @@ public import FLT.FreyCurve.Serre.VeluTranslation
 public import FLT.GaloisRepresentation.Attachment
 public import FLT.GaloisRepresentation.Automorphic
 public import FLT.GaloisRepresentation.Cyclotomic
+public import FLT.GaloisRepresentation.HardlyRamified.AbsIrredAdapter
 public import FLT.GaloisRepresentation.HardlyRamified.AtTwo
 public import FLT.GaloisRepresentation.HardlyRamified.B5Inputs
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.DedekindZeta
@@ -362,6 +363,7 @@ public import FLT.Mathlib.LinearAlgebra.Countable
 public import FLT.Mathlib.LinearAlgebra.Determinant
 public import FLT.Mathlib.LinearAlgebra.Dimension.Constructions
 public import FLT.Mathlib.LinearAlgebra.Dimension.IsQuadraticExtension
+public import FLT.Mathlib.LinearAlgebra.InvolutionFixedSpace
 public import FLT.Mathlib.LinearAlgebra.Matrix.GeneralLinearGroup.Defs
 public import FLT.Mathlib.LinearAlgebra.Matrix.Transvection
 public import FLT.Mathlib.LinearAlgebra.Pi
