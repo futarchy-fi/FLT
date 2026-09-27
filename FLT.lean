@@ -183,6 +183,7 @@ public import FLT.GlobalLanglandsConjectures.GLnDefs
 public import FLT.GlobalLanglandsConjectures.GLzero
 public import FLT.GroupScheme.FiniteFlat
 public import FLT.GroupScheme.KummerAlgebra
+public import FLT.GroupScheme.KummerComultiplication
 public import FLT.GroupScheme.KummerParameter
 public import FLT.HaarMeasure.FiniteAdeleRing
 public import FLT.HaarMeasure.HaarChar.AddEquiv
