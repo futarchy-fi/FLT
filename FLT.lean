@@ -453,6 +453,7 @@ public import FLT.Mathlib.Topology.MetricSpace.Pseudo.Matrix
 public import FLT.Mathlib.Topology.Polish
 public import FLT.MazurChapter.AdmissibleGroupSchemes
 public import FLT.MazurW
+public import FLT.MazurWOfPrimeTorsion
 public import FLT.MoretBailly
 public import FLT.NumberField.AdeleRing
 public import FLT.NumberField.Completion.Finite
