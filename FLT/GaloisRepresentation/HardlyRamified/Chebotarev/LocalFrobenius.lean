@@ -7,6 +7,7 @@ module
 
 public import FLT.AbsoluteGaloisGroup.CompletionComparison
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.FrobeniusOrder
+public import FLT.Mathlib.RingTheory.DedekindDomain.Ideal.Lemmas
 import Mathlib.RingTheory.Flat.TorsionFree
 
 /-!
@@ -56,5 +57,63 @@ theorem isArithFrobAt_localRestriction :
     (IntegralClosure (v.adicCompletionIntegers K)
       (AlgebraicClosure (v.adicCompletion K))))
     (IsLocalRing.maximalIdeal (v.adicCompletionIntegers K))] at h
+
+end GaloisRepresentation.Chebotarev
+
+namespace GaloisRepresentation.B5Inputs
+
+-- Match the completion structures in B5Inputs and GaloisRep.toLocal.
+attribute [local instance 2000] adicCompletion.instField instAlgebraAdicCompletion
+
+/-- The exact chosen local Frobenius used by the B5 trace criterion. -/
+noncomputable abbrev QFrob (q : ℕ) (hq : q.Prime) : Field.absoluteGaloisGroup ℚ :=
+  Field.absoluteGaloisGroup.map
+    (algebraMap ℚ (hq.toHeightOneSpectrumRingOfIntegersRat.adicCompletion ℚ))
+    (Field.AbsoluteGaloisGroup.adicArithFrob hq.toHeightOneSpectrumRingOfIntegersRat)
+
+end GaloisRepresentation.B5Inputs
+
+namespace GaloisRepresentation.Chebotarev
+
+open GaloisRepresentation.B5Inputs
+
+/-- An automorphism is Frobenius at some prime above the given base prime. -/
+def HasFrob (K L : Type*) [Field K] [NumberField K] [Field L] [NumberField L]
+    [Algebra K L] [IsGalois K L] (v : Prime K) (σ : Gal(L/K)) : Prop :=
+  ∃ w : Prime L, w.asIdeal.under (𝓞 K) = v.asIdeal ∧ IsArithFrobAt (𝓞 K) σ w.asIdeal
+
+variable (L : IntermediateField ℚ (AlgebraicClosure ℚ))
+  [FiniteDimensional ℚ L]
+
+/-- The prime induced by B5's chosen local embedding, as a nonzero prime. -/
+noncomputable def qFrobPrime (q : ℕ) (hq : q.Prime) : Prime L :=
+  ⟨localInducedPrime hq.toHeightOneSpectrumRingOfIntegersRat L,
+    inferInstance, localInducedPrime_ne_bot _ _⟩
+
+/-- The prime selected by the chosen embedding contracts to the original rational prime. -/
+theorem qFrobPrime_under (q : ℕ) (hq : q.Prime) :
+    (qFrobPrime L q hq).asIdeal.under (𝓞 ℚ) =
+      hq.toHeightOneSpectrumRingOfIntegersRat.asIdeal :=
+  (Ideal.over_def (localInducedPrime hq.toHeightOneSpectrumRingOfIntegersRat L)
+    hq.toHeightOneSpectrumRingOfIntegersRat.asIdeal).symm
+
+variable [IsGalois ℚ L]
+
+/-- The restriction of B5's Frobenius is Frobenius at its induced prime.
+This congruence holds even at ramified primes. -/
+theorem isArithFrobAt_restrict_QFrob (q : ℕ) (hq : q.Prime) :
+    IsArithFrobAt (𝓞 ℚ) (AlgEquiv.restrictNormalHom L (QFrob q hq))
+      (qFrobPrime L q hq).asIdeal := by
+  exact isArithFrobAt_localRestriction hq.toHeightOneSpectrumRingOfIntegersRat L
+
+/-- B5's chosen Frobenius restricts to a Frobenius above the rational prime (G4).
+The unramifiedness hypothesis is retained to match the plan's interface;
+only the subsequent conjugacy theorem needs it. -/
+@[nolint unusedArguments]
+theorem hasFrob_restrict_QFrob (q : ℕ) (hq : q.Prime)
+    (_hu : Unram ℚ L hq.toHeightOneSpectrumRingOfIntegersRat) :
+    HasFrob ℚ L hq.toHeightOneSpectrumRingOfIntegersRat
+      (AlgEquiv.restrictNormalHom L (QFrob q hq)) :=
+  ⟨qFrobPrime L q hq, qFrobPrime_under L q hq, isArithFrobAt_restrict_QFrob L q hq⟩
 
 end GaloisRepresentation.Chebotarev
