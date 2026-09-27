@@ -119,4 +119,27 @@ theorem evalEval_map {L : Type*} [Field L] {x y : F} (h : W.Equation x y)
   rw [AdjoinRoot.evalEval_mk, AdjoinRoot.evalEval_mk]
   exact map_mapRingHom_evalEval φ p x y
 
+/-- Evaluation fixes constants from the ground field. -/
+theorem evalEval_algebraMap {x y : F} (h : W.Equation x y) (c : F) :
+    AdjoinRoot.evalEval h (algebraMap F W.CoordinateRing c) = c := by
+  have h₀ : W.polynomial.evalEval x y = 0 := h
+  change AdjoinRoot.evalEval h₀ (AdjoinRoot.mk _ (C (C c))) = c
+  rw [AdjoinRoot.evalEval_mk]
+  simp
+
+/-- Evaluation is linear over the ground field. -/
+theorem evalEval_smul {x y : F} (h : W.Equation x y) (c : F)
+    (f : W.CoordinateRing) :
+    AdjoinRoot.evalEval h (c • f) = c * AdjoinRoot.evalEval h f := by
+  rw [Algebra.smul_def, map_mul, evalEval_algebraMap]
+
+/-- Generators with the same nonzero normalization at a point are equal. -/
+theorem eq_of_span_eq_of_evalEval_eq_one {f g : W.CoordinateRing}
+    (hfg : Ideal.span {f} = Ideal.span {g})
+    {x y : F} (h : W.Equation x y) (hf : AdjoinRoot.evalEval h f = 1)
+    (hg : AdjoinRoot.evalEval h g = 1) : f = g := by
+  obtain ⟨c, _, rfl⟩ := exists_eq_smul_of_span_eq hfg
+  rw [evalEval_smul, hf, mul_one] at hg
+  rw [hg, one_smul]
+
 end WeierstrassCurve.Affine.CoordinateRing
