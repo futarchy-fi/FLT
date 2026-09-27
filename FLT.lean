@@ -277,6 +277,7 @@ public import FLT.Mathlib.NumberTheory.NumberField.InfinitePlace.Basic
 public import FLT.Mathlib.NumberTheory.NumberField.InfinitePlace.Completion
 public import FLT.Mathlib.NumberTheory.Padics.HeightOneSpectrum
 public import FLT.Mathlib.NumberTheory.Padics.PadicIntegers
+public import FLT.Mathlib.NumberTheory.Padics.RingHoms
 public import FLT.Mathlib.Order.Filter.Cofinite
 public import FLT.Mathlib.RepresentationTheory.Basic
 public import FLT.Mathlib.RepresentationTheory.Continuous.Basic
