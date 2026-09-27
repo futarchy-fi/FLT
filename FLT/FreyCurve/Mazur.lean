@@ -8,11 +8,13 @@ module
 public import FLT.FreyCurve.Basic
 public import FLT.EllipticCurve.Torsion
 public import FLT.MazurW
-import FLT.GaloisRepresentation.HardlyRamified.Frey
-import Mathlib.Analysis.SpecialFunctions.Gamma.Basic
-import Mathlib.Data.Nat.Factorial.DoubleFactorial
-import Mathlib.NumberTheory.ArithmeticFunction.Misc
-import FLT.Assumptions.KnownIn1980s
+import FLT.FreyCurve.Serre.AwayFromP
+import FLT.FreyCurve.Serre.FixedLineDescent
+import FLT.FreyCurve.Serre.FreyTwoTorsion
+import FLT.FreyCurve.Serre.GoodReductionAtPProof
+import FLT.FreyCurve.Serre.JoinCoprimeTorsion
+import FLT.FreyCurve.Serre.QuotientCurve
+import FLT.FreyCurve.Serre.UnramifiedCharacter
 /-!
 
 # Irreducibility of the p-torsion of the Frey curve
@@ -26,13 +28,10 @@ A deep result of Mazur implies that the Frey curve is irreducible.
 open WeierstrassCurve
 open scoped WeierstrassCurve.Affine
 
-/-- The exact missing bridge between reducibility of the Frey representation
-and the forbidden torsion configuration in `mazur_W`.
-
-This packages the ch03 character analysis, the finite-flat/Tate local input,
-the triviality of the resulting global character, and the quotient/dual-isogeny
-construction.  Isolating this statement prevents `FreyPackage.mazur` from
-hiding the whole implication behind an unrestricted `knownin1980s` proof. -/
+/-- Reducibility of the Frey representation gives the torsion configuration forbidden
+by `mazur_W`. Semistability makes one filtration character everywhere unramified,
+hence trivial. Its fixed line descends to rational torsion, or its trivial quotient
+gives rational torsion on a quotient curve; full two-torsion survives in either case. -/
 theorem FreyPackage.mazurW_counterexample_of_reducible (P : FreyPackage) :
     let E := P.freyCurve
     let p := P.p
@@ -42,9 +41,41 @@ theorem FreyPackage.mazurW_counterexample_of_reducible (P : FreyPackage) :
         letI : E'.IsElliptic := hE'
         ∃ f : ((ZMod 2 × ZMod 2) × ZMod p) →+ (E'⁄ℚ).Point,
           Function.Injective f := by
-  -- Serre, Duke Math. J. 54 (1987), §4.1 (the exact proposition locator is
-  -- still tracked as cartography question PQ5), together with the steps above.
-  knownin1980s
+  dsimp only
+  let : Fact P.p.Prime := ⟨P.pp⟩
+  intro hred
+  obtain ⟨F⟩ := P.filtration_of_reducible hred
+  have haway := P.characters_unramified_away F
+  have htriv : (∀ g x, F.χ₁ g x = x) ∨ (∀ g x, F.χ₂ g x = x) := by
+    rcases P.one_character_unramified_at_p_of_goodReduction
+        (goodReductionAtPQuotient P.p P.pp P.hp5) F with h₁ | h₂
+    · left
+      apply GaloisRep.trivial_of_everywhere_unramified F.χ₁
+      intro q hq
+      by_cases heq : q = P.p
+      · subst q
+        exact h₁
+      · exact (haway q hq heq).1
+    · right
+      apply GaloisRep.trivial_of_everywhere_unramified F.χ₂
+      intro q hq
+      by_cases heq : q = P.p
+      · subst q
+        exact h₂
+      · exact (haway q hq heq).2
+  obtain ⟨f₂, hf₂⟩ := P.frey_full_two_torsion
+  have hcoprime : Nat.Coprime 2 P.p := Nat.coprime_two_left.mpr P.hp_odd
+  rcases htriv with h₁ | h₂
+  · obtain ⟨fₚ, hfₚ⟩ := rational_torsion_of_fixed_line P.freyCurve P.p
+      F.i F.i_injective (fun g x ↦ (F.i_equivariant g x).trans (congrArg F.i (h₁ g x)))
+    exact ⟨P.freyCurve, inferInstance, SerrePlan.join_coprime_torsion hcoprime f₂ hf₂ fₚ hfₚ⟩
+  · obtain ⟨E', hE', φ, fₚ, hker, hfₚ⟩ :=
+      quotient_curve_of_trivial_quotient P.freyCurve P.p P.hppos
+        (by have := P.hp5; omega) F.q F.q_surjective
+        (fun g v ↦ (F.q_equivariant g v).trans (h₂ g (F.q v)))
+    let : E'.IsElliptic := hE'
+    obtain ⟨g₂, hg₂⟩ := fullTwoTorsion_survives_of_kernel_killed hcoprime f₂ hf₂ φ hker
+    exact ⟨E', hE', SerrePlan.join_coprime_torsion hcoprime g₂ hg₂ fₚ hfₚ⟩
 
 /--
 For exponent at least `17`, the p-torsion in the Frey curve associated to a
