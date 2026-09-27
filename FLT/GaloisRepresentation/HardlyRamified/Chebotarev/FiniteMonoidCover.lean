@@ -15,6 +15,9 @@ public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.W2Statement
 
 Leaf W3 of `docs/CHEBOTAREV_PLAN.md`: pass through the image in units to a
 finite Galois extension, then assemble the power and Frobenius comparisons.
+`powerFrobCover` takes `W2Statement.{0}` as its sole arithmetic hypothesis;
+W2 itself is a separate leaf. Universe zero suffices because G2 realizes the
+quotient inside `AlgebraicClosure ℚ`, while the finite monoid is universe-polymorphic.
 -/
 
 @[expose] public section
@@ -101,3 +104,25 @@ theorem exists_restrict_eq_conj_pow_QFrob (hW2 : W2Statement.{0})
   exact hτ.symm
 
 end GaloisRepresentation.Chebotarev
+
+namespace GaloisRepresentation.B5Inputs
+
+open GaloisRepresentation.Chebotarev
+
+/-- W3, conditional only on W2: every element of a finite monoid image is a
+conjugate of a nonnegative power of a chosen rational Frobenius, outside any
+finite excluded set and above any prescribed lower bound. -/
+@[nolint unusedArguments]
+theorem powerFrobCover (hW2 : W2Statement.{0})
+    {M : Type*} [Monoid M] [Finite M] [TopologicalSpace M] [DiscreteTopology M]
+    (f : Field.absoluteGaloisGroup ℚ →ₜ* M)
+    (S : Finset (Prime ℚ)) (N : ℕ) : PowerFrobCover f S N := by
+  obtain ⟨L, hfin, hgal, p, hp⟩ := exists_finiteGalois_monoid_factorization f
+  let := hfin
+  let := hgal
+  intro g
+  obtain ⟨q, hq, hN, hS, σ, n, h⟩ := exists_restrict_eq_conj_pow_QFrob hW2 L g S N
+  refine ⟨q, hq, hN, hS, σ, n, ?_⟩
+  rw [← hp g, ← hp (σ * (QFrob q hq) ^ n * σ⁻¹), h]
+
+end GaloisRepresentation.B5Inputs
