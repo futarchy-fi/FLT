@@ -91,3 +91,32 @@ theorem evalFunctionField_algebraMap {x y : L}
   exact IsFractionRing.lift_algebraMap (evalAt_injective h hx) f
 
 end WeierstrassCurve.Affine.CoordinateRing
+
+namespace WeierstrassCurve.Affine.FunctionField
+
+open scoped nonZeroDivisors
+
+variable {F : Type*} [Field F] {W : WeierstrassCurve.Affine F}
+
+/-- Rational functions generating the same principal fractional ideal differ
+by a nonzero ground-field scalar. -/
+theorem exists_eq_mul_of_spanSingleton_eq {f g : W.FunctionField}
+    (h : FractionalIdeal.spanSingleton W.CoordinateRing⁰ f =
+      FractionalIdeal.spanSingleton W.CoordinateRing⁰ g) :
+    ∃ c : F, c ≠ 0 ∧ g = algebraMap F W.FunctionField c * f := by
+  obtain ⟨u, hu⟩ := FractionalIdeal.spanSingleton_eq_spanSingleton.mp h
+  obtain ⟨c, hc, he⟩ := CoordinateRing.exists_eq_algebraMap_of_isUnit u.isUnit
+  refine ⟨c, hc, ?_⟩
+  rw [← hu, Units.smul_def, ← he, Algebra.smul_def,
+    ← IsScalarTower.algebraMap_apply F W.CoordinateRing W.FunctionField]
+
+/-- A rational function generating the unit fractional ideal is a nonzero constant. -/
+theorem exists_eq_algebraMap_of_spanSingleton_eq_one {f : W.FunctionField}
+    (h : FractionalIdeal.spanSingleton W.CoordinateRing⁰ f = 1) :
+    ∃ c : F, c ≠ 0 ∧ f = algebraMap F W.FunctionField c := by
+  have he : FractionalIdeal.spanSingleton W.CoordinateRing⁰ (1 : W.FunctionField) =
+      FractionalIdeal.spanSingleton W.CoordinateRing⁰ f := by
+    rw [h, FractionalIdeal.spanSingleton_one]
+  simpa only [mul_one] using exists_eq_mul_of_spanSingleton_eq he
+
+end WeierstrassCurve.Affine.FunctionField
