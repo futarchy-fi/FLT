@@ -154,6 +154,7 @@ public import FLT.FreyCurve.Serre.LocalUniformizer
 public import FLT.FreyCurve.Serre.MultiplicativeFlat
 public import FLT.FreyCurve.Serre.MultiplicativeQuotient
 public import FLT.FreyCurve.Serre.MultiplicativeReduction
+public import FLT.FreyCurve.Serre.NonsplitFlat
 public import FLT.FreyCurve.Serre.QuadraticTwistPoints
 public import FLT.FreyCurve.Serre.QuotientCurve
 public import FLT.FreyCurve.Serre.QuotientDescent
