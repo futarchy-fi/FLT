@@ -1,0 +1,74 @@
+/-
+Copyright (c) 2026 krandder. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: krandder
+-/
+module
+
+public import FLT.EllipticCurve.NTorsionFinite
+
+/-!
+# Division-polynomial roots and torsion points
+
+The multiplication formula identifies the roots of the square division polynomial
+with the x-coordinates of nonzero torsion points. The numerator and denominator
+of the multiplication formula have no common root.
+-/
+
+@[expose] public section
+
+open Polynomial
+
+namespace WeierstrassCurve
+
+variable {k : Type*} [Field k] (E : WeierstrassCurve k)
+
+/-- A nonsingular affine point is killed by `n` exactly when its x-coordinate
+is a root of the square division polynomial. -/
+theorem isRoot_ΨSq_iff_nsmul_eq_zero [DecidableEq k] {x y : k}
+    (h : E.toAffine.Nonsingular x y) (n : ℕ) :
+    (E.ΨSq n).IsRoot x ↔ n • Affine.Point.some x y h = 0 := by
+  refine ⟨fun hx => ?_, E.isRoot_ΨSq_of_nsmul_eq_zero h n⟩
+  have hψ : (E.ψ n).evalEval x y = 0 := by
+    apply eq_zero_of_pow_eq_zero
+    rw [← E.eval_ΨSq h.1 n]
+    exact hx
+  have hj : (n : ℤ) • Jacobian.Point.fromAffine (Affine.Point.some x y h) = 0 := by
+    apply Jacobian.Point.ext_iff.mpr
+    rw [E.zsmul_eq_smulEval h n, Jacobian.Point.zero_point]
+    exact Quotient.sound (Jacobian.equiv_zero_of_Z_eq_zero (E.nonsingular_smulEval h n)
+      (by simpa [smulEval] using hψ))
+  apply (Jacobian.Point.toAffineAddEquiv E).symm.injective
+  simpa only [map_nsmul, map_zero, Jacobian.Point.toAffineAddEquiv_symm_apply,
+    natCast_zsmul] using hj
+
+/-- At a root of the square division polynomial, the multiplication numerator
+does not vanish on a nonsingular affine point. -/
+theorem eval_Φ_ne_zero_of_isRoot_ΨSq {x y : k} (h : E.toAffine.Nonsingular x y)
+    (n : ℤ) (hx : (E.ΨSq n).IsRoot x) : (E.Φ n).eval x ≠ 0 := by
+  have hψ : (E.ψ n).evalEval x y = 0 := by
+    apply eq_zero_of_pow_eq_zero
+    rw [← E.eval_ΨSq h.1 n]
+    exact hx
+  have hu := Jacobian.isUnit_X_of_Z_eq_zero (E.nonsingular_smulEval h n)
+    (by simpa [smulEval] using hψ)
+  rw [E.eval_Φ h.1 n]
+  simpa [smulEval] using hu.ne_zero
+
+/-- The multiplication numerator and square division polynomial are coprime
+on an elliptic curve, in every characteristic. -/
+theorem isCoprime_Φ_ΨSq [E.IsElliptic] (n : ℤ) : IsCoprime (E.Φ n) (E.ΨSq n) := by
+  apply (Polynomial.isCoprime_iff_aeval_ne_zero_of_isAlgClosed
+    k (AlgebraicClosure k) (E.Φ n) (E.ΨSq n)).mpr
+  intro x
+  let E' := E.map (algebraMap k (AlgebraicClosure k))
+  by_cases hx : (E'.ΨSq n).IsRoot x
+  · obtain ⟨y, hy⟩ := E'.exists_equation x
+    have hns := E'.toAffine.equation_iff_nonsingular.mp hy
+    left
+    simpa only [E', map_Φ, eval_map_algebraMap] using
+      E'.eval_Φ_ne_zero_of_isRoot_ΨSq hns n hx
+  · right
+    simpa only [E', map_ΨSq, Polynomial.IsRoot, eval_map_algebraMap] using hx
+
+end WeierstrassCurve
