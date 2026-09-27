@@ -141,4 +141,14 @@ theorem quotientPointHom_injective (q : Kˣ) (hq : valuation K (q : K) < 1) :
   intro u hu
   exact (quotientPoint_eq_zero q hq u.toMul).mp hu
 
+omit [DecidableEq K] in
+/-- Two unit arguments give the same Tate point exactly when their quotient classes agree. -/
+theorem uniformizationPoint_eq_iff (q : Kˣ) (hq : valuation K (q : K) < 1) (u v : Kˣ) :
+    uniformizationPoint q hq u = uniformizationPoint q hq v ↔
+      (u : Kˣ ⧸ Subgroup.zpowers q) = v := by
+  classical
+  exact (quotientPointHom_injective q hq).eq_iff
+    (a := Additive.ofMul (u : Kˣ ⧸ Subgroup.zpowers q))
+    (b := Additive.ofMul (v : Kˣ ⧸ Subgroup.zpowers q))
+
 end TateCurve

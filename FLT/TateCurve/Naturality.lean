@@ -6,7 +6,7 @@ Authors: krandder
 module
 
 public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.Affine.Point
-public import FLT.TateCurve.Points
+public import FLT.TateCurve.CompleteAddition
 
 /-!
 # Naturality of the Tate point map
@@ -36,6 +36,21 @@ noncomputable def uniformizationPointOver (q : Kˣ) (hq : valuation K (q : K) < 
     (l := L) (q : K) hq).symm
     (uniformizationPoint (Units.map (algebraMap K L).toMonoidHom q)
       (valuation_algebraMap_lt_one hq) u)
+
+/-- The natural Tate map over a local-field extension respects multiplication. -/
+theorem uniformizationPointOver_mul (q : Kˣ) (hq : valuation K (q : K) < 1)
+    (u v : Lˣ) : uniformizationPointOver L q hq (u * v) =
+      uniformizationPointOver L q hq u + uniformizationPointOver L q hq v := by
+  unfold uniformizationPointOver
+  erw [uniformizationPoint_mul, map_add]
+
+/-- The natural Tate map has precisely the expected quotient fibers over each extension. -/
+theorem uniformizationPointOver_eq_iff (q : Kˣ) (hq : valuation K (q : K) < 1)
+    (u v : Lˣ) : uniformizationPointOver L q hq u = uniformizationPointOver L q hq v ↔
+      (u : Lˣ ⧸ Subgroup.zpowers (Units.map (algebraMap K L).toMonoidHom q)) = v := by
+  unfold uniformizationPointOver
+  erw [(WeierstrassCurve.Affine.Point.equivOfEq _).injective.eq_iff]
+  exact uniformizationPoint_eq_iff _ (valuation_algebraMap_lt_one hq) u v
 
 variable {L}
 variable {M : Type*} [Field M] [ValuativeRel M] [TopologicalSpace M]
