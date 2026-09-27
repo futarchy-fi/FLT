@@ -232,6 +232,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.DedekindZeta
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.FiniteRamification
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.FixedVector
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.FrobeniusOrder
+public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.LocalFrobenius
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.OpenKernel
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.PrimeFibers
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.SubfieldSplitting
