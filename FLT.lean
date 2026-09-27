@@ -260,6 +260,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.WeakChebotarev
 public import FLT.GaloisRepresentation.HardlyRamified.CoefficientQuotient
 public import FLT.GaloisRepresentation.HardlyRamified.Defs
 public import FLT.GaloisRepresentation.HardlyRamified.Family
+public import FLT.GaloisRepresentation.HardlyRamified.FlatCoefficientExtension
 public import FLT.GaloisRepresentation.HardlyRamified.Frey
 public import FLT.GaloisRepresentation.HardlyRamified.Lift
 public import FLT.GaloisRepresentation.HardlyRamified.ModThree
