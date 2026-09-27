@@ -5,14 +5,15 @@ Authors: krandder
 -/
 module
 
+public import FLT.EllipticCurve.TorsionPairingEquivariant
 public import FLT.EllipticCurve.TorsionPairingNondegenerate
 public import FLT.EllipticCurve.WeilPairing
 /-!
-# A bilinear candidate on the geometric-torsion interface
+# Constructing the Weil pairing on geometric torsion
 
 The translation-ratio construction transports to the existing n-torsion
-module. It can be passed directly to `TorsionWeilPairing.ofBilinear` once
-Galois equivariance has been established.
+module. Alternation, nondegeneracy and Galois equivariance produce a
+`TorsionWeilPairing` whenever n is nonzero and invertible in the ground field.
 -/
 
 @[expose] public section
@@ -62,4 +63,37 @@ theorem torsionPairingCandidate_nondegenerate [IsAlgClosed F] [E.IsElliptic]
   apply Affine.FunctionField.torsionPairing_left_nondegenerate (E⁄F) hn hchar
   intro Q
   exact hP ((E.nTorsionEquivTorsionKernel n).symm Q)
+
+end WeierstrassCurve
+
+namespace WeierstrassCurve
+variable {K : Type*} [Field K] (E : WeierstrassCurve K) [E.IsElliptic]
+  [DecidableEq (AlgebraicClosure K)]
+set_option backward.isDefEq.respectTransparency false in
+/-- The geometric pairing candidate is equivariant for the absolute Galois group. -/
+theorem torsionPairingCandidate_galois_equivariant {n : ℕ} (hn : n ≠ 0)
+    (hchar : (n : AlgebraicClosure K) ≠ 0)
+    (g : Field.absoluteGaloisGroup K)
+    (P Q : (E.map (algebraMap K (AlgebraicClosure K))).nTorsion n) :
+    (((E.map (algebraMap K (AlgebraicClosure K))).torsionPairingCandidate hn hchar
+      (E.torsionGaloisRepresentation n g P)
+      (E.torsionGaloisRepresentation n g Q)).toMul.val : AlgebraicClosure K) =
+    g (((E.map (algebraMap K (AlgebraicClosure K))).torsionPairingCandidate hn hchar
+      P Q).toMul.val : AlgebraicClosure K) := by
+  exact Affine.FunctionField.torsionPairing_equivariant E g hn hchar
+    ((E.map (algebraMap K (AlgebraicClosure K))).nTorsionEquivTorsionKernel n P)
+    ((E.map (algebraMap K (AlgebraicClosure K))).nTorsionEquivTorsionKernel n Q)
+
+/-- Every elliptic curve has a nondegenerate, alternating, Galois-equivariant Weil pairing
+on n-torsion when n is nonzero and invertible in the ground field. -/
+theorem nonempty_torsionWeilPairing {n : ℕ} (hn : n ≠ 0) (hchar : (n : K) ≠ 0) :
+    Nonempty (E.TorsionWeilPairing n) := by
+  have hchar' : (n : AlgebraicClosure K) ≠ 0 := by
+    simpa only [map_natCast] using
+      (map_ne_zero (algebraMap K (AlgebraicClosure K))).mpr hchar
+  let e := (E.map (algebraMap K (AlgebraicClosure K))).torsionPairingCandidate hn hchar'
+  exact ⟨TorsionWeilPairing.ofBilinear e
+    ((E.map (algebraMap K (AlgebraicClosure K))).torsionPairingCandidate_self hn hchar')
+    ((E.map (algebraMap K (AlgebraicClosure K))).torsionPairingCandidate_nondegenerate hn hchar')
+    (E.torsionPairingCandidate_galois_equivariant hn hchar')⟩
 end WeierstrassCurve
