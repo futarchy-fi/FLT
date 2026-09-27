@@ -71,6 +71,19 @@ theorem pairing_ne_zero
   apply hP
   exact w.nondegenerate P fun Q => by rw [h]; rfl
 
+/-- Galois equivariance makes the pairing a similitude with cyclotomic multiplier. -/
+theorem map_eq_cyclotomic_smul [NeZero n]
+    (hn : Nat.card (rootsOfUnity n (AlgebraicClosure K)) = n)
+    (g : Field.absoluteGaloisGroup K) v :
+    w.pairing (E.torsionGaloisRepresentation n g ∘ v) =
+      (modularCyclotomicCharacter (AlgebraicClosure K) hn g.toRingEquiv : ZMod n) •
+        w.pairing v := by
+  apply Additive.toMul.injective
+  apply rootsOfUnity.coe_injective
+  dsimp only
+  rw [w.galois_equivariant, rootsOfUnity.coe_smul]
+  exact modularCyclotomicCharacter.spec _ hn g.toRingEquiv (w.pairing v).toMul.property
+
 end TorsionWeilPairing
 
 end WeierstrassCurve
