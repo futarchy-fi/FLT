@@ -97,6 +97,7 @@ public import FLT.Deformations.Subfunctor
 public import FLT.DivisionAlgebra.Finiteness
 public import FLT.EllipticCurve.DivisionPolynomialDifferential
 public import FLT.EllipticCurve.DivisionPolynomialSeparable
+public import FLT.EllipticCurve.NTorsionCardOfDifferential
 public import FLT.EllipticCurve.NTorsionCardOfSeparable
 public import FLT.EllipticCurve.NTorsionFinite
 public import FLT.EllipticCurve.NTorsionRoots

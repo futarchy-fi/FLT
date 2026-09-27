@@ -6,6 +6,7 @@ Authors: Kevin Buzzard
 module
 
 public import FLT.EllipticCurve.DivisionPolynomialSeparable
+public import FLT.EllipticCurve.NTorsionCardOfDifferential
 public import FLT.EllipticCurve.NTorsionCardOfSeparable
 public import FLT.EllipticCurve.TorsionStructure
 public import FLT.EllipticCurve.TwoTorsionCard
@@ -120,6 +121,44 @@ theorem WeierstrassCurve.n_torsion_card_prime_of_separable [IsSepClosed k] {p : 
   rcases hp.eq_two_or_odd' with rfl | hodd
   · exact E.n_torsion_card_two hchar
   · exact E.n_torsion_card_odd_of_separable hodd hchar hsep
+
+/-- The corrected differential identity implies the expected torsion
+cardinality for every index nonzero in a separably closed field. -/
+theorem WeierstrassCurve.n_torsion_card_of_divisionDifferentialDefect [IsSepClosed k] {n : ℕ}
+    (hchar : (n : k) ≠ 0) (hd : E.divisionDifferentialDefect n = 0) :
+    Nat.card (E.nTorsion n) = n ^ 2 := by
+  have : (E⁄k).IsElliptic := by
+    change (E.map (algebraMap k k)).IsElliptic
+    infer_instance
+  have hd' : (E⁄k).divisionDifferentialDefect n = 0 := by
+    change (E.map (algebraMap k k)).divisionDifferentialDefect n = 0
+    rw [map_divisionDifferentialDefect, hd, Polynomial.map_zero]
+  let e : E.nTorsion n ≃ {P : (E⁄k).Point // n • P = 0} :=
+    { toFun := fun P => ⟨P.val, by
+        simpa only [Submodule.mem_torsionBy_iff, natCast_zsmul] using P.property⟩
+      invFun := fun P => ⟨P.val, by
+        simpa only [Submodule.mem_torsionBy_iff, natCast_zsmul] using P.property⟩
+      left_inv := fun _ => rfl
+      right_inv := fun _ => rfl }
+  rw [Nat.card_congr e]
+  exact (E⁄k).card_torsion_of_divisionDifferentialDefect hchar hd'
+
+/-- The universal polynomial identity alone suffices for torsion cardinality;
+no additional even-index or composite-index hypothesis is needed. -/
+theorem WeierstrassCurve.n_torsion_card_of_universal_divisionDifferentialDefect
+    [IsSepClosed k] {n : ℕ} (hchar : (n : k) ≠ 0)
+    (hd : Universal.curve.divisionDifferentialDefect n = 0) :
+    Nat.card (E.nTorsion n) = n ^ 2 :=
+  E.n_torsion_card_of_divisionDifferentialDefect hchar
+    (E.divisionDifferentialDefect_eq_zero_of_universal hd)
+
+/-- The four-torsion subgroup has sixteen elements over a separably closed
+field of characteristic different from two. -/
+theorem WeierstrassCurve.n_torsion_card_four [IsSepClosed k] (h2 : (2 : k) ≠ 0) :
+    Nat.card (E.nTorsion 4) = 4 ^ 2 := by
+  apply E.n_torsion_card_of_divisionDifferentialDefect
+  · simpa only [Nat.cast_ofNat, show (4 : k) = 2 ^ 2 by ring] using pow_ne_zero 2 h2
+  · simpa only [Nat.cast_ofNat] using E.divisionDifferentialDefect_four
 
 /-- The three-torsion subgroup has nine elements over a separably closed field
 of characteristic different from three. -/

@@ -23,18 +23,13 @@ namespace WeierstrassCurve
 
 variable {k : Type*} [Field k] (E : WeierstrassCurve k) [E.IsElliptic]
 
-/-- Specializing the curve equation at an odd division-polynomial root
-gives a separable quadratic in the y-coordinate. -/
-theorem separable_polynomial_over_preΨ_root {n : ℕ} (hn : Odd n) {x : k}
-    (hx : (E.preΨ n).IsRoot x) :
+omit [E.IsElliptic] in
+/-- Away from the two-division roots, the curve equation is separable in the
+y-coordinate. -/
+theorem separable_polynomial_of_Ψ₂Sq_ne_zero {x : k} (hd : E.Ψ₂Sq.eval x ≠ 0) :
     (E.toAffine.polynomial.map (evalRingHom x)).Separable := by
   let q := E.toAffine.polynomial.map (evalRingHom x)
   let d := E.Ψ₂Sq.eval x
-  have hd : d ≠ 0 := by
-    have hc := Polynomial.aeval_ne_zero_of_isCoprime (E.isCoprime_preΨ_ΨSq_two hn) x
-    have hx' : (E.preΨ n).eval x = 0 := hx
-    simpa only [aeval_def, Algebra.algebraMap_self, eval₂_id, ΨSq_two, hx', ne_self_iff_false,
-      false_or] using hc
   have hder : q.derivative = E.ψ₂.map (evalRingHom x) := by
     simp [q, Affine.polynomial, ψ₂, Affine.polynomialY, derivative_pow]
   have hid : C d = q.derivative ^ 2 - 4 * q := by
@@ -49,12 +44,13 @@ theorem separable_polynomial_over_preΨ_root {n : ℕ} (hn : Odd n) {x : k}
     _ = C d⁻¹ * C d := by rw [hid]
     _ = 1 := by rw [← map_mul, inv_mul_cancel₀ hd, map_one]
 
-/-- Above an odd division-polynomial root there are exactly two rational
-y-coordinates over a separably closed field, including in characteristic two. -/
-theorem card_equation_of_isRoot_preΨ [IsSepClosed k] {n : ℕ} (hn : Odd n) {x : k}
-    (hx : (E.preΨ n).IsRoot x) : Nat.card {y : k // E.toAffine.Equation x y} = 2 := by
+omit [E.IsElliptic] in
+/-- Away from the two-division roots, a separably closed field supplies
+exactly two y-coordinates on the curve. -/
+theorem card_equation_of_Ψ₂Sq_ne_zero [IsSepClosed k] {x : k}
+    (hd : E.Ψ₂Sq.eval x ≠ 0) : Nat.card {y : k // E.toAffine.Equation x y} = 2 := by
   let q := E.toAffine.polynomial.map (evalRingHom x)
-  have hs : q.Separable := E.separable_polynomial_over_preΨ_root hn hx
+  have hs : q.Separable := E.separable_polynomial_of_Ψ₂Sq_ne_zero hd
   have he (y : k) : E.toAffine.Equation x y ↔ y ∈ q.rootSet k := by
     rw [Polynomial.mem_rootSet_of_ne hs.ne_zero]
     simp only [q, aeval_def, Algebra.algebraMap_self, eval₂_id, eval_map,
@@ -64,6 +60,27 @@ theorem card_equation_of_isRoot_preΨ [IsSepClosed k] {n : ℕ} (hn : Odd n) {x 
       simpa using IsSepClosed.splits_of_separable _ hs)]
   exact (Affine.monic_polynomial.natDegree_map (evalRingHom x)).trans
     Affine.natDegree_polynomial
+
+/-- An odd division-polynomial root is not a two-division root. -/
+theorem eval_Ψ₂Sq_ne_zero_of_isRoot_preΨ {n : ℕ} (hn : Odd n) {x : k}
+    (hx : (E.preΨ n).IsRoot x) : E.Ψ₂Sq.eval x ≠ 0 := by
+  have hc := Polynomial.aeval_ne_zero_of_isCoprime (E.isCoprime_preΨ_ΨSq_two hn) x
+  have hx' : (E.preΨ n).eval x = 0 := hx
+  simpa only [aeval_def, Algebra.algebraMap_self, eval₂_id, ΨSq_two, hx', ne_self_iff_false,
+    false_or] using hc
+
+/-- Specializing the curve equation at an odd division-polynomial root
+gives a separable quadratic in the y-coordinate. -/
+theorem separable_polynomial_over_preΨ_root {n : ℕ} (hn : Odd n) {x : k}
+    (hx : (E.preΨ n).IsRoot x) :
+    (E.toAffine.polynomial.map (evalRingHom x)).Separable :=
+  E.separable_polynomial_of_Ψ₂Sq_ne_zero (E.eval_Ψ₂Sq_ne_zero_of_isRoot_preΨ hn hx)
+
+/-- Above an odd division-polynomial root there are exactly two rational
+y-coordinates over a separably closed field, including in characteristic two. -/
+theorem card_equation_of_isRoot_preΨ [IsSepClosed k] {n : ℕ} (hn : Odd n) {x : k}
+    (hx : (E.preΨ n).IsRoot x) : Nat.card {y : k // E.toAffine.Equation x y} = 2 :=
+  E.card_equation_of_Ψ₂Sq_ne_zero (E.eval_Ψ₂Sq_ne_zero_of_isRoot_preΨ hn hx)
 
 /-- Nonzero odd torsion points are the pairs of a division-polynomial root
 and a y-coordinate satisfying the curve equation. -/
