@@ -50,4 +50,110 @@ theorem nsmul_genericPoint_not_mem_range {n : ℕ} (hn : n ≠ 0) :
   simpa only [map_nsmul, map_zero] using hz
 
 
+section
+
+omit [DecidableEq F]
+
+/-- A positive multiple of the generic point has affine coordinates with
+transcendental x-coordinate. -/
+theorem exists_multiplied_generic (n : ℕ) (hn : n ≠ 0) :
+    ∃ x y, ∃ h : (W⁄W.FunctionField).Nonsingular x y,
+      Point.some x y h = n • genericPoint W ∧ Transcendental F x := by
+  classical
+  have hnc := nsmul_genericPoint_not_mem_range W hn
+  cases hp : n • genericPoint W with
+  | zero => exact False.elim (hnc (hp ▸ AddSubgroup.zero_mem _))
+  | some x y h =>
+    refine ⟨x, y, h, rfl, ?_⟩
+    intro hx
+    apply hnc
+    rw [hp]
+    exact point_mem_range_of_isAlgebraic_x h hx
+
+/-- The x-coordinate of the generic point multiplied by n. -/
+noncomputable def multipliedX (n : ℕ) (hn : n ≠ 0) : W.FunctionField :=
+  (exists_multiplied_generic W n hn).choose
+
+/-- The y-coordinate of the generic point multiplied by n. -/
+noncomputable def multipliedY (n : ℕ) (hn : n ≠ 0) : W.FunctionField :=
+  (exists_multiplied_generic W n hn).choose_spec.choose
+
+/-- The multiplied generic coordinates form a nonsingular point. -/
+theorem multiplied_nonsingular (n : ℕ) (hn : n ≠ 0) :
+    (W⁄W.FunctionField).Nonsingular (multipliedX W n hn) (multipliedY W n hn) :=
+  (exists_multiplied_generic W n hn).choose_spec.choose_spec.choose
+
+/-- The chosen multiplied coordinates represent n times the generic point. -/
+theorem multiplied_point (n : ℕ) (hn : n ≠ 0) :
+    Point.some (multipliedX W n hn) (multipliedY W n hn) (multiplied_nonsingular W n hn) =
+      n • genericPoint W :=
+  (exists_multiplied_generic W n hn).choose_spec.choose_spec.choose_spec.1
+
+/-- The x-coordinate of a positive multiple of the generic point is transcendental. -/
+theorem multipliedX_transcendental (n : ℕ) (hn : n ≠ 0) :
+    Transcendental F (multipliedX W n hn) :=
+  (exists_multiplied_generic W n hn).choose_spec.choose_spec.choose_spec.2
+
+/-- Pullback of rational functions by multiplication by a positive integer. -/
+noncomputable def nsmulPullback (n : ℕ) (hn : n ≠ 0) : W.FunctionField →ₐ[F] W.FunctionField :=
+  CoordinateRing.evalFunctionField (multiplied_nonsingular W n hn).1
+    (multipliedX_transcendental W n hn)
+
+set_option backward.isDefEq.respectTransparency false in
+/-- Multiplication pullback sends the generic x-coordinate to the multiplied coordinate. -/
+theorem nsmulPullback_genericX (n : ℕ) (hn : n ≠ 0) :
+    nsmulPullback W n hn (genericX W) = multipliedX W n hn := by
+  rw [nsmulPullback, genericX, CoordinateRing.evalFunctionField_algebraMap,
+    CoordinateRing.evalAt_polynomial, aeval_X]
+
+set_option backward.isDefEq.respectTransparency false in
+/-- Multiplication pullback sends the generic y-coordinate to the multiplied coordinate. -/
+theorem nsmulPullback_genericY (n : ℕ) (hn : n ≠ 0) :
+    nsmulPullback W n hn (genericY W) = multipliedY W n hn := by
+  rw [nsmulPullback, genericY, CoordinateRing.evalFunctionField_algebraMap,
+    CoordinateRing.evalAt_Y]
+
+/-- Multiplication pullback sends the generic point to its n-fold multiple. -/
+theorem nsmulPullback_genericPoint (n : ℕ) (hn : n ≠ 0) :
+    Point.map (W' := W) (nsmulPullback W n hn) (genericPoint W) = n • genericPoint W := by
+  rw [genericPoint, Point.map_some]
+  simp only [nsmulPullback_genericX, nsmulPullback_genericY]
+  exact multiplied_point W n hn
+
+set_option backward.isDefEq.respectTransparency false in
+/-- Pullback by multiplication by one is the identity. -/
+theorem nsmulPullback_one : nsmulPullback W 1 one_ne_zero = AlgHom.id F W.FunctionField := by
+  apply algHom_ext_of_genericPoint W
+  rw [nsmulPullback_genericPoint, one_smul]
+  rfl
+
+set_option backward.isDefEq.respectTransparency false in
+/-- Composing multiplication pullbacks multiplies their indices. -/
+theorem nsmulPullback_mul (m n : ℕ) (hm : m ≠ 0) (hn : n ≠ 0) :
+    (nsmulPullback W m hm).comp (nsmulPullback W n hn) =
+      nsmulPullback W (m * n) (mul_ne_zero hm hn) := by
+  apply algHom_ext_of_genericPoint W
+  rw [← Point.map_map, nsmulPullback_genericPoint, map_nsmul,
+    nsmulPullback_genericPoint, nsmulPullback_genericPoint, smul_smul, Nat.mul_comm]
+
+end
+
+set_option backward.isDefEq.respectTransparency false in
+/-- Translating a multiplication pullback translates its source by n times the point. -/
+theorem translation_nsmulPullback (n : ℕ) (hn : n ≠ 0) (Q : W.Point) :
+    (translationPullback W Q).comp (nsmulPullback W n hn) =
+      (nsmulPullback W n hn).comp (translationPullback W (n • Q)) := by
+  apply algHom_ext_of_genericPoint W
+  rw [← Point.map_map, ← Point.map_map, nsmulPullback_genericPoint,
+    translationPullback_genericPoint, map_add, map_nsmul,
+    translationPullback_genericPoint, nsmulPullback_genericPoint, map_basePoint,
+    nsmul_add, map_nsmul]
+
+set_option backward.isDefEq.respectTransparency false in
+/-- Pullbacks by multiplication by n are invariant under n-torsion translations. -/
+theorem translation_nsmulPullback_of_torsion (n : ℕ) (hn : n ≠ 0) (Q : W.Point)
+    (hQ : n • Q = 0) :
+    (translationPullback W Q).comp (nsmulPullback W n hn) = nsmulPullback W n hn := by
+  rw [translation_nsmulPullback, hQ, translationPullback_zero, AlgHom.comp_id]
+
 end WeierstrassCurve.Affine.FunctionField
