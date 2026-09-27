@@ -62,6 +62,7 @@ theorem primePlace_eq (p : ℕ) (hp : p.Prime) :
 
 /-- Arithmetic unramifiedness outside `S` gives formal unramifiedness where the product
 of the primes in `S` is invertible. -/
+@[nolint unusedArguments]
 theorem numberFieldUnramifiedAt (F : Type) [Field F] [Algebra ℚ F] [NumberField F]
     (S : Finset ℕ)
     (h : ∀ (p : ℕ) (hp : p.Prime), p ∉ S →
@@ -97,6 +98,7 @@ theorem numberFieldUnramifiedAt (F : Type) [Field F] [Algebra ℚ F] [NumberFiel
   exact hunr P inferInstance inferInstance
 
 /-- The ring of `S`-integers of a number field unramified outside `S` is étale over `ℤ[1/S]`. -/
+@[nolint unusedArguments]
 theorem numberFieldIntegralClosureEtale (F : Type) [Field F] [Algebra ℚ F] [NumberField F]
     (S : Finset ℕ) [Fact (∀ p ∈ S, p.Prime)]
     [Algebra (ZInvPrimes S) F] [IsScalarTower (ZInvPrimes S) ℚ F]
