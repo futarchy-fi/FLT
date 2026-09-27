@@ -88,6 +88,7 @@ public import FLT.Deformations.Representable
 public import FLT.Deformations.RepresentationTheory.AbsoluteGaloisGroup
 public import FLT.Deformations.RepresentationTheory.Burnside
 public import FLT.Deformations.RepresentationTheory.Etale
+public import FLT.Deformations.RepresentationTheory.Flat
 public import FLT.Deformations.RepresentationTheory.Frobenius
 public import FLT.Deformations.RepresentationTheory.GaloisRep
 public import FLT.Deformations.RepresentationTheory.GaloisRepFamily
@@ -128,6 +129,7 @@ public import FLT.FreyCurve.Serre.AtP
 public import FLT.FreyCurve.Serre.AtTwo
 public import FLT.FreyCurve.Serre.AwayFromP
 public import FLT.FreyCurve.Serre.FixedLineDescent
+public import FLT.FreyCurve.Serre.Flat
 public import FLT.FreyCurve.Serre.FreyTwoTorsion
 public import FLT.FreyCurve.Serre.GoodReduction
 public import FLT.FreyCurve.Serre.GoodReductionAtP
@@ -147,7 +149,9 @@ public import FLT.FreyCurve.Serre.ReducibleFiltration
 public import FLT.FreyCurve.Serre.RootsOfUnityInertia
 public import FLT.FreyCurve.Serre.Semistable
 public import FLT.FreyCurve.Serre.StableLineQuotient
+public import FLT.FreyCurve.Serre.TateFlat
 public import FLT.FreyCurve.Serre.TateInertia
+public import FLT.FreyCurve.Serre.TateKummer
 public import FLT.FreyCurve.Serre.TateTorsion
 public import FLT.FreyCurve.Serre.TateUnramified
 public import FLT.FreyCurve.Serre.Unramified
@@ -185,6 +189,12 @@ public import FLT.GaloisRepresentation.HardlyRamified.Threeadic
 public import FLT.GlobalLanglandsConjectures.GLnDefs
 public import FLT.GlobalLanglandsConjectures.GLzero
 public import FLT.GroupScheme.FiniteFlat
+public import FLT.GroupScheme.KummerAlgebra
+public import FLT.GroupScheme.KummerComultiplication
+public import FLT.GroupScheme.KummerHopf
+public import FLT.GroupScheme.KummerParameter
+public import FLT.GroupScheme.KummerPoints
+public import FLT.GroupScheme.QuadraticDescent
 public import FLT.HaarMeasure.FiniteAdeleRing
 public import FLT.HaarMeasure.HaarChar.AddEquiv
 public import FLT.HaarMeasure.HaarChar.AdeleRing

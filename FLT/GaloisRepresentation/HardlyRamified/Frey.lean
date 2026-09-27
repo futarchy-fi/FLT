@@ -8,6 +8,7 @@ module
 public import FLT.GaloisRepresentation.HardlyRamified.AtTwo
 public import FLT.GaloisRepresentation.HardlyRamified.PrimeField
 public import FLT.FreyCurve.Basic
+public import FLT.FreyCurve.Serre.Flat
 public import FLT.FreyCurve.Serre.Unramified
 public import FLT.EllipticCurve.Torsion
 public import FLT.EllipticCurve.WeilPairingDeterminant
