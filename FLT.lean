@@ -137,6 +137,7 @@ public import FLT.EllipticCurve.TorsionSpecialization
 public import FLT.EllipticCurve.TorsionStructure
 public import FLT.EllipticCurve.Translation
 public import FLT.EllipticCurve.TwoTorsionCard
+public import FLT.EllipticCurve.TwoTorsionChart
 public import FLT.EllipticCurve.WeilPairing
 public import FLT.EllipticCurve.WeilPairingDeterminant
 public import FLT.FreyCurve.Basic
