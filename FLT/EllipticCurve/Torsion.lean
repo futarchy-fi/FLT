@@ -7,6 +7,7 @@ module
 
 public import FLT.EllipticCurve.NTorsionFinite
 public import FLT.EllipticCurve.TorsionStructure
+public import FLT.EllipticCurve.TwoTorsionCard
 public import Mathlib.Topology.Instances.ZMod
 public import Mathlib.Topology.LocallyConstant.Basic
 public import FLT.Deformations.RepresentationTheory.GaloisRep
@@ -62,6 +63,32 @@ theorem WeierstrassCurve.n_torsion_finite {n : ℕ} (hn : 0 < n) : Finite (E.nTo
 theorem WeierstrassCurve.n_torsion_card [IsSepClosed k] {n : ℕ} (hn : (n : k) ≠ 0) :
     Nat.card (E.nTorsion n) = n^2 := sorry
 
+omit [E.IsElliptic] in
+/-- The subgroup killed by one consists of the identity alone. -/
+theorem WeierstrassCurve.n_torsion_card_one : Nat.card (E.nTorsion 1) = 1 := by
+  have : Subsingleton (E.nTorsion 1) := ⟨fun P Q => Subtype.ext (by
+    have hP : P.val = 0 := by simpa using P.property
+    have hQ : Q.val = 0 := by simpa using Q.property
+    exact hP.trans hQ.symm)⟩
+  exact Nat.card_unique
+
+/-- The two-torsion subgroup has four elements over a separably closed field
+of characteristic different from two. -/
+theorem WeierstrassCurve.n_torsion_card_two [IsSepClosed k] (h2 : (2 : k) ≠ 0) :
+    Nat.card (E.nTorsion 2) = 2 ^ 2 := by
+  have : (E⁄k).IsElliptic := by
+    change (E.map (algebraMap k k)).IsElliptic
+    infer_instance
+  let e (n : ℕ) : E.nTorsion n ≃ {P : (E⁄k).Point // n • P = 0} :=
+    { toFun := fun P => ⟨P.val, by
+        simpa only [Submodule.mem_torsionBy_iff, natCast_zsmul] using P.property⟩
+      invFun := fun P => ⟨P.val, by
+        simpa only [Submodule.mem_torsionBy_iff, natCast_zsmul] using P.property⟩
+      left_inv := fun _ => rfl
+      right_inv := fun _ => rfl }
+  rw [Nat.card_congr (e 2)]
+  exact (E⁄k).card_two_torsion h2
+
 /-- The prescribed torsion cardinalities characterize a power of the cyclic group of order `n`. -/
 theorem group_theory_lemma {A : Type*} [AddCommGroup A] {n : ℕ} (hn : 0 < n) (r : ℕ)
     (h : ∀ d : ℕ, d ∣ n → Nat.card (Submodule.torsionBy ℤ A d) = d ^ r) :
@@ -72,6 +99,18 @@ theorem group_theory_lemma {A : Type*} [AddCommGroup A] {n : ℕ} (hn : 0 < n) (
   · intro d hd
     rw [Nat.card_congr (TorsionCardinality.nested (A := A) hd).toEquiv]
     exact h d hd
+
+/-- Over a separably closed field of characteristic different from two,
+the two-torsion group is the product of two cyclic groups of order two. -/
+theorem WeierstrassCurve.n_torsion_dimension_two [IsSepClosed k] (h2 : (2 : k) ≠ 0) :
+    Nonempty (E.nTorsion 2 ≃+ (ZMod 2) × (ZMod 2)) := by
+  obtain ⟨φ⟩ : Nonempty (E.nTorsion 2 ≃+ (Fin 2 → ZMod 2)) := by
+    apply group_theory_lemma (by decide : 0 < 2)
+    intro d hd
+    rcases (Nat.dvd_prime Nat.prime_two).mp hd with rfl | rfl
+    · simpa only [one_pow] using E.n_torsion_card_one
+    · exact E.n_torsion_card_two h2
+  exact ⟨φ.trans (RingEquiv.piFinTwo _).toAddEquiv⟩
 
 -- I only need this if n is prime but there's no harm thinking about it in general I guess.
 -- It follows from the previous theorem using pure group theory (possibly including the
