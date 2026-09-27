@@ -5,7 +5,7 @@ Authors: krandder
 -/
 module
 
-public import FLT.KnownIn1980s.EllipticCurves.TateCurve
+public import FLT.TateCurve.Model
 
 /-!
 # Ellipticity of the Tate curve
