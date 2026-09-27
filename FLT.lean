@@ -194,6 +194,7 @@ public import FLT.GroupScheme.KummerHopf
 public import FLT.GroupScheme.KummerParameter
 public import FLT.GroupScheme.KummerPoints
 public import FLT.GroupScheme.QuadraticDescent
+public import FLT.GroupScheme.QuadraticTwist
 public import FLT.HaarMeasure.FiniteAdeleRing
 public import FLT.HaarMeasure.HaarChar.AddEquiv
 public import FLT.HaarMeasure.HaarChar.AdeleRing
