@@ -95,6 +95,38 @@ theorem infinityValuation_eq_zero_iff (f : W.CoordinateRing) :
   · rw [infinityValuation_apply_of_ne_zero hf]
     simp [hf]
 
+open WithZero
+
+/-- The valuation of a polynomial in x has twice its polynomial degree. -/
+theorem infinityValuation_polynomial {p : F[X]} (hp : p ≠ 0) :
+    infinityValuation W (algebraMap F[X] W.CoordinateRing p) = exp (2 * (p.natDegree : ℤ)) := by
+  rw [infinityValuation_apply_of_ne_zero
+    (by simpa only [map_zero] using
+      (FaithfulSMul.algebraMap_injective F[X] W.CoordinateRing).ne hp),
+    Algebra.norm_algebraMap_of_basis (CoordinateRing.basis W)]
+  simp [natDegree_pow]
+
+/-- A vertical-line function has a pole of order two at infinity. -/
+theorem infinityValuation_XClass (x : F) : infinityValuation W (XClass W x) = exp (2 : ℤ) := by
+  rw [infinityValuation_apply_of_ne_zero (XClass_ne_zero x)]
+  change exp ((Algebra.norm F[X] (algebraMap F[X] W.CoordinateRing (X - C x))).natDegree : ℤ) = _
+  rw [Algebra.norm_algebraMap_of_basis (CoordinateRing.basis W)]
+  simp [natDegree_pow]
+
+/-- A horizontal-line function has a pole of order three at infinity. -/
+theorem infinityValuation_YClass (y : F) : infinityValuation W (YClass W (C y)) = exp (3 : ℤ) := by
+  have he : YClass W (C y) = (-C y) • (1 : W.CoordinateRing) + (1 : F[X]) • mk W Y := by
+    simp only [YClass, CoordinateRing.smul, map_neg, map_sub, mul_one, one_smul]
+    ring
+  have hd : (Algebra.norm F[X] (YClass W (C y))).degree = 3 := by
+    rw [he, degree_norm_smul_basis]
+    by_cases hy : y = 0
+    · simp [hy]
+    · simp [hy]
+  rw [infinityValuation_apply_of_ne_zero (YClass_ne_zero (C y)),
+    (degree_eq_iff_natDegree_eq_of_pos (by decide : 0 < 3)).mp hd]
+  norm_num
+
 end WeierstrassCurve.Affine.CoordinateRing
 
 namespace WeierstrassCurve.Affine.FunctionField
@@ -114,4 +146,14 @@ theorem infinityValuation_algebraMap (f : W.CoordinateRing) :
     infinityValuation W (algebraMap W.CoordinateRing W.FunctionField f) =
       CoordinateRing.infinityValuation W f :=
   Valuation.extendToLocalization_apply_map_apply _ _ _ f
+/-- The ratio x/y has valuation exp(-1), so it is a uniformizer at infinity. -/
+theorem infinityValuation_X_div_Y :
+    infinityValuation W (algebraMap W.CoordinateRing W.FunctionField
+      (CoordinateRing.XClass W 0) / algebraMap W.CoordinateRing W.FunctionField
+      (CoordinateRing.YClass W (C 0))) = exp (-1 : ℤ) := by
+  rw [map_div₀, infinityValuation_algebraMap, infinityValuation_algebraMap,
+    CoordinateRing.infinityValuation_XClass, CoordinateRing.infinityValuation_YClass,
+    ← exp_sub]
+  rfl
+
 end WeierstrassCurve.Affine.FunctionField
