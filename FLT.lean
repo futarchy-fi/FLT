@@ -128,6 +128,7 @@ public import FLT.EllipticCurve.PointReductionHom
 public import FLT.EllipticCurve.PointReductionKernel
 public import FLT.EllipticCurve.PointTransport
 public import FLT.EllipticCurve.RCBAddition
+public import FLT.EllipticCurve.RCBComparison
 public import FLT.EllipticCurve.RCBIntegral
 public import FLT.EllipticCurve.RCBPoints
 public import FLT.EllipticCurve.SupersingularPolynomial
