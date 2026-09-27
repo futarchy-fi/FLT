@@ -8,6 +8,7 @@ module
 public import FLT.GroupScheme.FiniteFlat
 public import Mathlib.RingTheory.AdjoinRoot
 public import Mathlib.RingTheory.Etale.StandardEtale
+public import Mathlib.RingTheory.Spectrum.Prime.RingHom
 public import Mathlib.RingTheory.TensorProduct.Pi
 
 /-!
@@ -108,6 +109,26 @@ noncomputable def componentPointsEquiv (i : Fin n) :
   left_inv f := by ext; simp
   right_inv x := by ext; simp
 
+/-- Points of a Kummer component can equivalently be described by unit roots. -/
+noncomputable def componentUnitPointsEquiv (hn : 0 < n) (i : Fin n) :
+    (Component R n u i →ₐ[R] S) ≃
+      {x : Sˣ // x ^ n = (Units.map (algebraMap R S) u) ^ i.val} where
+  toFun f := ⟨Units.map f.toRingHom.toMonoidHom (root_isUnit R n u hn i).unit, by
+    apply Units.ext
+    change (f ((root_isUnit R n u hn i).unit : Component R n u i)) ^ n =
+      (algebraMap R S (u : R)) ^ i.val
+    rw [IsUnit.unit_spec, ← map_pow, root_pow, f.commutes, map_pow]⟩
+  invFun x := componentPoint R n u i (x.val : S) (by
+    have h := congrArg Units.val x.property
+    simpa only [Units.val_pow_eq_pow_val, Units.coe_map, MonoidHom.coe_ofClass, map_pow] using h)
+  left_inv f := by
+    apply AdjoinRoot.algHom_ext
+    simp [componentPoint_root]
+  right_inv x := by
+    apply Subtype.ext
+    apply Units.ext
+    simp
+
 /-- The component algebra is étale whenever the torsion order is invertible. -/
 theorem component_etale (hn : 0 < n) (hunit : IsUnit (n : R)) (i : Fin n) :
     Algebra.Etale R (Component R n u i) := by
@@ -186,5 +207,67 @@ theorem generic_etale (hn : 0 < n) (hunit : IsUnit (n : S)) :
     Algebra.Etale S (S ⊗[R] Coordinate R n u) := by
   let _ := coordinate_etale S n (Units.map (algebraMap R S) u) hn hunit
   exact Algebra.Etale.of_equiv (coordinateBaseChange R n u).symm
+
+section Points
+
+variable [IsDomain S]
+
+/-- A point of a Kummer component gives a point of the disjoint union. -/
+noncomputable def pointFromComponent
+    (x : Σ i : Fin n, Component R n u i →ₐ[R] S) : Coordinate R n u →ₐ[R] S :=
+  x.2.comp (Pi.evalAlgHom R (Component R n u) x.1)
+
+/-- Over an integral domain, every point of the Kummer algebra belongs to exactly
+one component. -/
+theorem pointFromComponent_bijective :
+    Function.Bijective (pointFromComponent R n u (S := S)) := by
+  classical
+  constructor
+  · rintro ⟨i, f⟩ ⟨j, g⟩ h
+    have hij : i = j := by
+      by_contra hij
+      have hh := DFunLike.congr_fun h (Pi.single i 1)
+      have hji : j ≠ i := Ne.symm hij
+      simp [pointFromComponent, hji] at hh
+    subst j
+    have hfg : f = g := by
+      apply AlgHom.ext
+      intro x
+      have hh := DFunLike.congr_fun h (Pi.single i x)
+      simpa [pointFromComponent] using hh
+    exact congrArg (Sigma.mk i) hfg
+  · intro f
+    let p : PrimeSpectrum (Coordinate R n u) := ⟨RingHom.ker f, RingHom.ker_isPrime f⟩
+    obtain ⟨i, q, hq⟩ := PrimeSpectrum.exists_comap_evalRingHom_eq p
+    have hker : RingHom.ker (Pi.evalAlgHom R (Component R n u) i) ≤ RingHom.ker f := by
+      have he := congrArg PrimeSpectrum.asIdeal hq
+      change q.asIdeal.comap (Pi.evalRingHom (Component R n u) i) = RingHom.ker f at he
+      rw [← he]
+      exact Ideal.comap_mono bot_le
+    have hs : Function.Surjective (Pi.evalAlgHom R (Component R n u) i) :=
+      Function.surjective_eval _
+    exact ⟨⟨i, AlgHom.liftOfSurjective _ hs f hker⟩,
+      AlgHom.liftOfSurjective_comp _ hs f hker⟩
+
+/-- Points of the Kummer coordinate algebra over an integral domain are a component
+index together with a root of that component's equation. -/
+noncomputable def coordinatePointsEquiv :
+    (Coordinate R n u →ₐ[R] S) ≃
+      Σ i : Fin n, {x : S // x ^ n = algebraMap R S ((u : R) ^ i.val)} :=
+  (Equiv.ofBijective _ (pointFromComponent_bijective R n u)).symm.trans
+    (Equiv.sigmaCongrRight (componentPointsEquiv R n u))
+
+/-- Unit-root coordinates for all points of the Kummer algebra over an integral domain. -/
+noncomputable def coordinateUnitPointsEquiv (hn : 0 < n) :
+    (Coordinate R n u →ₐ[R] S) ≃
+      {ix : Fin n × Sˣ // ix.2 ^ n = (Units.map (algebraMap R S) u) ^ ix.1.val} :=
+  ((Equiv.ofBijective _ (pointFromComponent_bijective R n u)).symm.trans
+    (Equiv.sigmaCongrRight (componentUnitPointsEquiv R n u hn))).trans
+      { toFun := fun x ↦ ⟨(x.1, x.2.val), x.2.property⟩
+        invFun := fun x ↦ ⟨x.val.1, x.val.2, x.property⟩
+        left_inv := fun _ ↦ rfl
+        right_inv := fun _ ↦ rfl }
+
+end Points
 
 end KummerAlgebra
