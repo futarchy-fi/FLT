@@ -222,6 +222,7 @@ public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.Affine.Point
 public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.Aut
 public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.GaloisDescent
 public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.Reduction
+public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.SplitDescent
 public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.VariableChange
 public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.Weierstrass
 public import FLT.Mathlib.Analysis.Normed.Ring.WithAbs
