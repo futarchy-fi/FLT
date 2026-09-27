@@ -259,9 +259,14 @@ public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.WeakChebotarev
 public import FLT.GaloisRepresentation.HardlyRamified.CoefficientQuotient
 public import FLT.GaloisRepresentation.HardlyRamified.Defs
 public import FLT.GaloisRepresentation.HardlyRamified.Family
+public import FLT.GaloisRepresentation.HardlyRamified.FlatCoefficientExtension
 public import FLT.GaloisRepresentation.HardlyRamified.Frey
+public import FLT.GaloisRepresentation.HardlyRamified.InertiaTwoSquareZero
+public import FLT.GaloisRepresentation.HardlyRamified.IntegralCharacters
+public import FLT.GaloisRepresentation.HardlyRamified.LatticeHardlyRamified
 public import FLT.GaloisRepresentation.HardlyRamified.Lift
 public import FLT.GaloisRepresentation.HardlyRamified.ModThree
+public import FLT.GaloisRepresentation.HardlyRamified.NormalizedOrder
 public import FLT.GaloisRepresentation.HardlyRamified.PrimeField
 public import FLT.GaloisRepresentation.HardlyRamified.ResidualCharacteristic
 public import FLT.GaloisRepresentation.HardlyRamified.RibetAdapters
@@ -275,6 +280,7 @@ public import FLT.GlobalLanglandsConjectures.GLzero
 public import FLT.GroupScheme.CoordinateOrder
 public import FLT.GroupScheme.EtaleOrder
 public import FLT.GroupScheme.FiniteFlat
+public import FLT.GroupScheme.FiniteFlatSubobject
 public import FLT.GroupScheme.KummerAlgebra
 public import FLT.GroupScheme.KummerComultiplication
 public import FLT.GroupScheme.KummerHopf
@@ -556,6 +562,7 @@ public import FLT.Slop.PGL2.FiniteSubgroups.WildClassification
 public import FLT.Slop.RepresentationTheory.OddAbsIrredOrig
 public import FLT.Slop.RepresentationTheory.OddAbsIrredSlop
 public import FLT.Slop.Ribet_Lemma.Brauer_Nesbitt
+public import FLT.Slop.Ribet_Lemma.LatticeFlat
 public import FLT.Slop.Ribet_Lemma.LatticeGaloisRep
 public import FLT.Slop.Ribet_Lemma.LatticeTameTwo
 public import FLT.Slop.Ribet_Lemma.Ribet_Lemma
