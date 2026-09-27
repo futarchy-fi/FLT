@@ -114,6 +114,7 @@ public import FLT.EllipticCurve.PointReductionKernel
 public import FLT.EllipticCurve.PointTransport
 public import FLT.EllipticCurve.SupersingularPolynomial
 public import FLT.EllipticCurve.Torsion
+public import FLT.EllipticCurve.TorsionFunction
 public import FLT.EllipticCurve.TorsionOrbit
 public import FLT.EllipticCurve.TorsionSpecialization
 public import FLT.EllipticCurve.TorsionStructure
