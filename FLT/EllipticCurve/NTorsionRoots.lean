@@ -67,7 +67,7 @@ theorem eval_Φ_ne_zero_of_isRoot_ΨSq {x y : k} (h : E.toAffine.Nonsingular x y
 
 /-- The multiplication numerator and square division polynomial are coprime
 on an elliptic curve, in every characteristic. -/
-theorem isCoprime_Φ_ΨSq [E.IsElliptic] (n : ℤ) : IsCoprime (E.Φ n) (E.ΨSq n) := by
+theorem isCoprime_Φ_ΨSq_of_isElliptic [E.IsElliptic] (n : ℤ) : IsCoprime (E.Φ n) (E.ΨSq n) := by
   apply (Polynomial.isCoprime_iff_aeval_ne_zero_of_isAlgClosed
     k (AlgebraicClosure k) (E.Φ n) (E.ΨSq n)).mpr
   intro x
