@@ -42,6 +42,17 @@ theorem isRoot_ΨSq_iff_nsmul_eq_zero [DecidableEq k] {x y : k}
   simpa only [map_nsmul, map_zero, Jacobian.Point.toAffineAddEquiv_symm_apply,
     natCast_zsmul] using hj
 
+/-- For odd `n`, the unsquared division polynomial detects nonzero torsion
+points without introducing double roots. -/
+theorem isRoot_preΨ_iff_nsmul_eq_zero [DecidableEq k] {x y : k}
+    (h : E.toAffine.Nonsingular x y) {n : ℕ} (hn : Odd n) :
+    (E.preΨ n).IsRoot x ↔ n • Affine.Point.some x y h = 0 := by
+  rw [← E.isRoot_ΨSq_iff_nsmul_eq_zero h n]
+  have he : ¬Even (n : ℤ) := by
+    simpa only [Int.even_coe_nat] using (Nat.not_even_iff_odd.mpr hn)
+  simp only [ΨSq, ite_eq_right he, mul_one, Polynomial.IsRoot, eval_pow]
+  exact ⟨fun hx => by rw [hx, zero_pow two_ne_zero], eq_zero_of_pow_eq_zero⟩
+
 /-- At a root of the square division polynomial, the multiplication numerator
 does not vanish on a nonsingular affine point. -/
 theorem eval_Φ_ne_zero_of_isRoot_ΨSq {x y : k} (h : E.toAffine.Nonsingular x y)
