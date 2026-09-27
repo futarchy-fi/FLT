@@ -6,7 +6,7 @@ Authors: krandder
 module
 
 public import FLT.GroupScheme.KummerHopf
-public import FLT.GroupScheme.QuadraticTwistComultiplication
+public import FLT.GroupScheme.QuadraticTwistCoassociativity
 
 /-!
 # The quadratic twist of the Kummer model
@@ -96,5 +96,11 @@ theorem twistModel_isFiniteFlat [IsDedekindDomain R] [NeZero n] (d : Rˣ) :
 noncomputable def twistComul [NeZero n] (d : Rˣ) (r : R) (hr : 2 * r = 1) :
     twistModel R n u d →ₐ[R] twistModel R n u d ⊗[R] twistModel R n u d :=
   QuadraticTwist.comul d r hr
+
+/-- The quadratic Kummer twist is a Hopf algebra when two is invertible. -/
+@[instance_reducible]
+noncomputable def twistHopfAlgebra [NeZero n] (d : Rˣ) (r : R) (hr : 2 * r = 1) :
+    HopfAlgebra R (twistModel R n u d) :=
+  QuadraticTwist.hopfAlgebra d r hr
 
 end KummerAlgebra
