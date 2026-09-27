@@ -98,6 +98,7 @@ public import FLT.DivisionAlgebra.Finiteness
 public import FLT.EllipticCurve.FlatTorsion
 public import FLT.EllipticCurve.NTorsionFinite
 public import FLT.EllipticCurve.PointReduction
+public import FLT.EllipticCurve.PointReductionAddition
 public import FLT.EllipticCurve.Torsion
 public import FLT.EllipticCurve.TorsionSpecialization
 public import FLT.EllipticCurve.TorsionStructure
