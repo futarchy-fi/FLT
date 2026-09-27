@@ -5,7 +5,7 @@ Authors: krandder
 -/
 module
 
-public import FLT.TateCurve.Points
+public import FLT.TateCurve.Collinearity
 
 /-!
 # Addition for the Tate point map
@@ -123,5 +123,24 @@ theorem uniformizationPoint_mul_of_collinear (q : Kˣ)
   simp only [negY, WeierstrassCurve.tateCurve, WeierstrassCurve.toAffine, one_mul, sub_zero]
   field_simp [sub_ne_zero.mpr h12]
   linear_combination hcol
+
+/-- The addition law holds when the three Tate points have pairwise distinct abscissae. -/
+theorem uniformizationPoint_mul_of_distinct_tateX (q : Kˣ)
+    (hq : valuation K (q : K) < 1) (u v : Kˣ)
+    (hu : u ∉ Subgroup.zpowers q) (hv : v ∉ Subgroup.zpowers q)
+    (huv : u * v ∉ Subgroup.zpowers q)
+    (h12 : tateX (u : K) (q : K) ≠ tateX (v : K) (q : K))
+    (h31 : tateX ((u * v : Kˣ) : K) (q : K) ≠ tateX (u : K) (q : K))
+    (h32 : tateX ((u * v : Kˣ) : K) (q : K) ≠ tateX (v : K) (q : K)) :
+    uniformizationPoint q hq (u * v) =
+      uniformizationPoint q hq u + uniformizationPoint q hq v := by
+  let : UniformSpace K := IsTopologicalAddGroup.rightUniformSpace K
+  have : IsUniformAddGroup K := isUniformAddGroup_of_addCommGroup
+  apply uniformizationPoint_mul_of_collinear q hq u v hu hv huv h12 h31 h32
+  have h := tateCoordinates_collinear q hq u v (u * v)⁻¹ hu hv
+    (fun h ↦ huv ((Subgroup.zpowers q).inv_mem_iff.mp h)) (mul_inv_cancel _)
+  simp only [Units.val_inv_eq_inv_val, tateX_inv q.ne_zero (u * v).ne_zero,
+    tateY_inv q.ne_zero (u * v).ne_zero (tendsto_pow_nhds_zero hq)] at h
+  linear_combination h
 
 end TateCurve
