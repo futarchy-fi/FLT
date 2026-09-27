@@ -61,6 +61,33 @@ def conjugation : QuadraticAlgebra R d 0 ≃ₐ[R] QuadraticAlgebra R d 0 where
     conjugation d QuadraticAlgebra.omega = -QuadraticAlgebra.omega := by
   ext <;> simp [conjugation]
 
+/-- When two is invertible, conjugation fixes exactly the scalar elements. -/
+theorem conjugation_eq_self_iff (r : R) (hr : 2 * r = 1)
+    (z : QuadraticAlgebra R d 0) : conjugation d z = z ↔ z.im = 0 := by
+  constructor
+  · intro hz
+    have hi : -z.im = z.im := congrArg QuadraticAlgebra.im hz
+    linear_combination -r * hi - z.im * hr
+  · intro hz
+    ext <;> simp [conjugation, hz]
+
+/-- The fixed coefficient algebra is the original coefficient ring. -/
+noncomputable def fixedScalarsEquiv (r : R) (hr : 2 * r = 1) :
+    QuadraticDescent.fixed (conjugation d) ≃ₐ[R] R := by
+  refine (AlgEquiv.ofBijective (Algebra.ofId R (QuadraticDescent.fixed (conjugation d)))
+    ⟨?_, ?_⟩).symm
+  · intro x y h
+    exact congrArg (fun z : QuadraticDescent.fixed (conjugation d) ↦ z.val.re) h
+  · intro z
+    refine ⟨z.val.re, Subtype.ext ?_⟩
+    have hz := (conjugation_eq_self_iff d r hr z.val).mp z.property
+    ext <;> simp [hz]
+
+/-- The inverse of scalar descent is the ordinary coefficient inclusion. -/
+@[simp] theorem fixedScalarsEquiv_symm_apply (r : R) (hr : 2 * r = 1) (x : R) :
+    ((fixedScalarsEquiv d r hr).symm x : QuadraticAlgebra R d 0) =
+      algebraMap R _ x := rfl
+
 /-- The tensor product of quadratic conjugation and an algebra involution. -/
 def involution (ι : H ≃ₐ[R] H) :
     QuadraticAlgebra R d 0 ⊗[R] H ≃ₐ[R] QuadraticAlgebra R d 0 ⊗[R] H :=

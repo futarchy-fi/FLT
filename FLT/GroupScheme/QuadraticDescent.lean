@@ -31,6 +31,21 @@ variable (σ : B ≃ₐ[R] B) (hσ : Function.Involutive σ) (t : Bˣ)
 /-- The fixed algebra of the semilinear involution. -/
 def fixed : Subalgebra R B := AlgHom.equalizer σ.toAlgHom (AlgHom.id R B)
 
+variable {C : Type v} [CommRing C] [Algebra R C]
+
+/-- An equivariant algebra map restricts to the fixed algebras. -/
+def fixedMap (τ : C ≃ₐ[R] C) (f : B →ₐ[R] C) (hf : ∀ x, τ (f x) = f (σ x)) :
+    fixed σ →ₐ[R] fixed τ :=
+  f.domRestrict (fixed σ) |>.codRestrict (fixed τ) (fun x ↦ by
+    change τ (f x) = f x
+    rw [hf]
+    exact congrArg f x.property)
+
+/-- Restriction to fixed algebras agrees with the original algebra map. -/
+@[simp] theorem fixedMap_apply (τ : C ≃ₐ[R] C) (f : B →ₐ[R] C)
+    (hf : ∀ x, τ (f x) = f (σ x)) (x : fixed σ) :
+    (fixedMap σ τ f hf x : C) = f x := rfl
+
 include ht in
 /-- The involution negates the inverse of its anti-invariant unit. -/
 theorem map_inv_unit : σ (↑t⁻¹ : B) = -(↑t⁻¹ : B) := by
