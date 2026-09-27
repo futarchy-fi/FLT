@@ -229,6 +229,7 @@ public import FLT.GaloisRepresentation.Cyclotomic
 public import FLT.GaloisRepresentation.HardlyRamified.AbsIrredAdapter
 public import FLT.GaloisRepresentation.HardlyRamified.AtTwo
 public import FLT.GaloisRepresentation.HardlyRamified.B5Inputs
+public import FLT.GaloisRepresentation.HardlyRamified.CharacterSeparation
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.DedekindZeta
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.DegreeOneGenerator
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.FiniteGaloisRealization
@@ -256,12 +257,15 @@ public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.SubfieldSplitti
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.TowerDegreeOne
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.W2Statement
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.WeakChebotarev
+public import FLT.GaloisRepresentation.HardlyRamified.CoefficientQuotient
 public import FLT.GaloisRepresentation.HardlyRamified.Defs
 public import FLT.GaloisRepresentation.HardlyRamified.Family
 public import FLT.GaloisRepresentation.HardlyRamified.Frey
 public import FLT.GaloisRepresentation.HardlyRamified.Lift
 public import FLT.GaloisRepresentation.HardlyRamified.ModThree
 public import FLT.GaloisRepresentation.HardlyRamified.PrimeField
+public import FLT.GaloisRepresentation.HardlyRamified.ResidualCharacteristic
+public import FLT.GaloisRepresentation.HardlyRamified.RibetAdapters
 public import FLT.GaloisRepresentation.HardlyRamified.ThreeAdicAlgebra
 public import FLT.GaloisRepresentation.HardlyRamified.ThreeAdicDegree
 public import FLT.GaloisRepresentation.HardlyRamified.Threeadic
@@ -555,6 +559,7 @@ public import FLT.Slop.Ribet_Lemma.Brauer_Nesbitt
 public import FLT.Slop.Ribet_Lemma.LatticeGaloisRep
 public import FLT.Slop.Ribet_Lemma.LatticeTameTwo
 public import FLT.Slop.Ribet_Lemma.Ribet_Lemma
+public import FLT.Slop.Ribet_Lemma.TrivialQuotientExtension
 public import FLT.Slop.Ribet_Lemma.stable_lattices
 public import FLT.TateCurve.Abscissa
 public import FLT.TateCurve.Addition
