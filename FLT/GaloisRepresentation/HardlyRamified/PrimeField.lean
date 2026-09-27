@@ -44,7 +44,7 @@ theorem IsHardlyRamified.not_isIrreducible_of_prime_field
     (V : Type) [AddCommGroup V] [Module (ZMod p) V]
     [Module.Finite (ZMod p) V] [Module.Free (ZMod p) V]
     (hV : Module.rank (ZMod p) V = 2) (ρ : GaloisRep ℚ (ZMod p) V)
-    (hρ : IsHardlyRamified hpodd hV ρ) : ¬ ρ.IsIrreducible  := by
+    (hρ : IsHardlyRamified hpodd hV ρ) : ¬ ρ.IsIrreducible := by
   classical
   intro hirr
   let : IsLocalHom (algebraMap ℤ_[p] (ZMod p)) :=

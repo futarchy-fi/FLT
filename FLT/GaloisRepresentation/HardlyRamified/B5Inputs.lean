@@ -5,8 +5,8 @@ Authors: krandder
 -/
 module
 
-public import FLT.GaloisRepresentation.HardlyRamified.Defs
 public import FLT.Deformations.RepresentationTheory.GaloisRepFamily
+public import FLT.GaloisRepresentation.HardlyRamified.Defs
 public import Mathlib.LinearAlgebra.Charpoly.BaseChange
 public import Mathlib.LinearAlgebra.Charpoly.ToMatrix
 public import Mathlib.LinearAlgebra.TensorProduct.RightExactness
@@ -17,11 +17,11 @@ public import Mathlib.Topology.Instances.ZMod
 /-!
 # General inputs for B5
 
-The admissions in this file are independent of the lifting, compatible-family and
-3-adic theorems. They concern specialization of coefficient rings, preservation
-of finite flatness under coefficient quotients, and the Chebotarev/Brauer--Nesbitt
-criterion for reducibility. None assumes that an arbitrary hardly ramified
-representation is reducible.
+Two general inputs remain admitted: `exists_domain_quotient` (commutative
+algebra) and `not_isIrreducible_of_frobenius_traces` (Chebotarev and
+Brauer--Nesbitt). Neither uses the hardly-ramified hypothesis or any B6 theorem.
+Coefficient-quotient preservation, trace/base-change identities, injectivity
+of coefficient embeddings, and compatibility transport are proved below.
 -/
 
 @[expose] public section
@@ -32,10 +32,10 @@ open IsDedekindDomain TensorProduct
 namespace GaloisRepresentation.B5Inputs
 
 /-- A finite free local algebra over `ℤ_[p]` has a characteristic-zero domain
-quotient through which any residue-field map factors. Choose a minimal prime:
-flatness over the DVR ensures it avoids `p`, and locality puts it in the kernel
-of the residue-field map. The quotient is finite torsion-free, hence free over
-the DVR. Give it the quotient (equivalently module) topology.
+quotient through which a given map to a field factors. Choose a minimal prime
+contained in the kernel of that map. Flatness over the DVR ensures the prime
+avoids `p`. The quotient is local and finite torsion-free, hence free over the
+DVR. Give it the quotient (equivalently module) topology.
 
 This is a commutative-algebra input, with no representation-theoretic hypothesis. -/
 theorem exists_domain_quotient {p : ℕ} [Fact p.Prime]
@@ -53,29 +53,64 @@ theorem exists_domain_quotient {p : ℕ} [Fact p.Prime]
       Function.Surjective (algebraMap R A) := by
   sorry
 
-/-- Flatness is preserved by a continuous quotient of finite p-adic coefficient
-rings. For each open ideal of the target, pull it back to the source and take
-the corresponding quotient of a finite flat model. This is the finite-flat
-group-scheme input; it contains no determinant or ramification assertion. -/
-theorem flatAt_quotient {p : ℕ} [Fact p.Prime]
+set_option backward.isDefEq.respectTransparency false in
+/-- Flatness is preserved by a continuous quotient of coefficient rings.
+For an open ideal `J` of the target, the first isomorphism theorem identifies
+`R / preimage J` with `A / J`. The tensor-product equivalence identifies the
+Galois modules, so the original finite flat model still works. -/
+theorem flatAt_quotient
     {R A : Type} [CommRing R] [IsLocalRing R]
-    [TopologicalSpace R] [IsTopologicalRing R] [Algebra ℤ_[p] R]
-    [Module.Finite ℤ_[p] R] [Module.Free ℤ_[p] R] [IsModuleTopology ℤ_[p] R]
+    [TopologicalSpace R] [IsTopologicalRing R]
     [CommRing A] [IsLocalRing A] [TopologicalSpace A] [IsTopologicalRing A]
-    [Algebra ℤ_[p] A] [Module.Finite ℤ_[p] A] [Module.Free ℤ_[p] A]
-    [IsModuleTopology ℤ_[p] A] [Algebra R A] [IsScalarTower ℤ_[p] R A]
-    [ContinuousSMul R A] (hsurj : Function.Surjective (algebraMap R A))
+    [Algebra R A] [ContinuousSMul R A]
+    (hsurj : Function.Surjective (algebraMap R A))
     {V : Type} [AddCommGroup V] [Module R V] [Module.Finite R V] [Module.Free R V]
     (ρ : GaloisRep ℚ R V) (v : HeightOneSpectrum (𝓞 ℚ)) (hρ : ρ.IsFlatAt v) :
     (ρ.baseChange A).IsFlatAt v := by
-  sorry
+  classical
+  constructor
+  intro J hJ
+  let f : R →ₐ[R] A ⧸ J := Algebra.ofId R (A ⧸ J)
+  let I : Ideal R := RingHom.ker f.toRingHom
+  have hI : IsOpen (I : Set R) := by
+    have hset : (I : Set R) = (algebraMap R A) ⁻¹' (J : Set A) := by
+      ext x
+      change algebraMap R (A ⧸ J) x = 0 ↔ algebraMap R A x ∈ J
+      rw [IsScalarTower.algebraMap_apply R A (A ⧸ J)]
+      exact Ideal.Quotient.eq_zero_iff_mem
+    rw [hset]
+    exact hJ.preimage (continuous_algebraMap R A)
+  have hf : Function.Surjective f := by
+    intro y
+    obtain ⟨a, rfl⟩ := Ideal.Quotient.mk_surjective y
+    obtain ⟨r, rfl⟩ := hsurj a
+    refine ⟨r, ?_⟩
+    exact IsScalarTower.algebraMap_apply R A (A ⧸ J) r
+  let ec : (R ⧸ I) ≃ₐ[R] (A ⧸ J) := Ideal.quotientKerAlgEquivOfSurjective hf
+  let et : (R ⧸ I) ⊗[R] V ≃ₗ[R] (A ⧸ J) ⊗[A] (A ⊗[R] V) :=
+    (TensorProduct.congr ec.toLinearEquiv (LinearEquiv.refl R V)).trans
+      ((AlgebraTensorModule.cancelBaseChange R A A (A ⧸ J) V).symm.restrictScalars R)
+  let σ₁ := (ρ.baseChange (R ⧸ I)).toLocal v
+  let σ₂ := ((ρ.baseChange A).baseChange (A ⧸ J)).toLocal v
+  let t : σ₁.Space →+[Field.absoluteGaloisGroup (v.adicCompletion ℚ)] σ₂.Space :=
+    { et.toAddMonoidHom with
+      map_smul' := by
+        intro g x
+        change et (σ₁ g x) = σ₂ g (et x)
+        induction x using TensorProduct.inductionOn with
+        | tmul a w =>
+          simp only [σ₁, σ₂, GaloisRep.baseChange_map,
+            GaloisRep.baseChange_tmul, et, LinearEquiv.trans_apply,
+            TensorProduct.congr_tmul, LinearEquiv.refl_apply,
+            LinearEquiv.restrictScalars_apply, AlgebraTensorModule.cancelBaseChange_symm_tmul]
+        | add x y hx hy => simp_all }
+  exact (hρ.cond I hI).map _ _ _ _ t et.bijective
 
 set_option backward.isDefEq.respectTransparency false in
-/-- Coefficient quotients preserve hardly ramified representations. The flatness
-step uses that a quotient of the generic fibre of a finite flat commutative
-group scheme over a DVR extends to a finite flat quotient. The rank-one quotient
+/-- Coefficient quotients preserve hardly ramified representations. Flatness
+follows by identifying the reductions modulo open ideals. The rank-one quotient
 at 2 remains surjective after tensoring; its character remains unramified and
-has square one. The explicit surjectivity assumption is essential here. -/
+has square one. -/
 theorem hardlyRamified_quotient {p : ℕ} [Fact p.Prime] (hpodd : Odd p)
     {R A : Type} [CommRing R] [IsLocalRing R]
     [TopologicalSpace R] [IsTopologicalRing R] [Algebra ℤ_[p] R]
@@ -88,7 +123,7 @@ theorem hardlyRamified_quotient {p : ℕ} [Fact p.Prime] (hpodd : Odd p)
     (hV : Module.rank R V = 2) (hVA : Module.rank A (A ⊗[R] V) = 2)
     {ρ : GaloisRep ℚ R V} (hρ : IsHardlyRamified hpodd hV ρ) :
     IsHardlyRamified hpodd hVA (ρ.baseChange A) := by
-  refine ⟨?_, ?_, flatAt_quotient (p := p) hsurj ρ _ hρ.isFlat, ?_⟩
+  refine ⟨?_, ?_, flatAt_quotient hsurj ρ _ hρ.isFlat, ?_⟩
   · intro g
     change ((ρ g).baseChange A).det = _
     rw [LinearMap.det_baseChange]
