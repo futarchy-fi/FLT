@@ -160,6 +160,23 @@ theorem norm_torsionFunction {x y : F} (h : W.Nonsingular x y) {n : ℕ}
     rfl
   exact (FaithfulSMul.algebraMap_injective F[X] W.CoordinateRing) hn
 
+/-- A torsion function generating the nth power of a nonsingular point ideal
+has polynomial norm of degree n. -/
+theorem natDegree_norm_torsionFunction {x y : F} (h : W.Nonsingular x y) {n : ℕ}
+    {f : W.CoordinateRing} (hf : XYIdeal W x (C y) ^ n = Ideal.span {f}) :
+    (Algebra.norm F[X] f).natDegree = n := by
+  obtain ⟨c, hc, he⟩ := norm_torsionFunction h hf
+  rw [he, natDegree_C_mul hc, natDegree_pow, natDegree_X_sub_C, mul_one]
+
+/-- When a point-ideal power is principal, its quotient has dimension equal
+to the exponent, by the norm-degree formula. -/
+theorem finrank_quotient_XYIdeal_pow_of_torsionFunction {x y : F}
+    (h : W.Nonsingular x y) {n : ℕ} {f : W.CoordinateRing} (hf0 : f ≠ 0)
+    (hf : XYIdeal W x (C y) ^ n = Ideal.span {f}) :
+    Module.finrank F (W.CoordinateRing ⧸ XYIdeal W x (C y) ^ n) = n := by
+  rw [hf, finrank_quotient_span_eq_natDegree_norm (CoordinateRing.basis W) hf0,
+    natDegree_norm_torsionFunction h hf]
+
 end WeierstrassCurve.Affine.CoordinateRing
 
 namespace WeierstrassCurve.Affine.Point
