@@ -6,6 +6,7 @@ Authors: krandder
 module
 
 public import FLT.EllipticCurve.WeilPairing
+public import FLT.Mathlib.NumberTheory.Cyclotomic.CyclotomicCharacter
 public import Mathlib.RingTheory.RootsOfUnity.AlgebraicallyClosed
 
 /-!
@@ -38,5 +39,15 @@ theorem det_torsionGaloisRepresentation (w : E.TorsionWeilPairing p)
     ((E.map (algebraMap K (AlgebraicClosure K))).nTorsion p) hd
   exact w.pairing.det_eq_of_similitude b w.pairing_ne_zero _ _
     (w.map_eq_cyclotomic_smul _ g)
+
+/-- The continuous torsion representation has the reduction of the p-adic cyclotomic
+character as determinant, provided a checked Weil pairing is supplied. -/
+theorem det_galoisRep (w : E.TorsionWeilPairing p) [DecidableEq K] [NeZero (p : K)]
+    (hp : 0 < p) (g : Field.absoluteGaloisGroup K) :
+    (E.galoisRep p hp).det g =
+      PadicInt.toZMod (cyclotomicCharacter (AlgebraicClosure K) p g.toRingEquiv).val := by
+  change (E.torsionGaloisRepresentation p g).det = _
+  rw [cyclotomicCharacter.toZMod (HasEnoughRootsOfUnity.natCard_rootsOfUnity _ p)]
+  exact w.det_torsionGaloisRepresentation g
 
 end WeierstrassCurve.TorsionWeilPairing
