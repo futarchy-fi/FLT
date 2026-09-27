@@ -80,6 +80,24 @@ theorem map_torsionFunction {L : Type*} [Field L] (φ : F →+* L)
     XYIdeal (W.map φ) (φ x) (C (φ y)) ^ n = Ideal.span {map W φ f} := by
   rw [← map_XYIdeal, ← Ideal.map_pow, hf, Ideal.map_span, Set.image_singleton]
 
+/-- The chord or tangent relation gives the product identity for torsion functions
+at two points and their sum, up to a nonzero ground-field scalar. -/
+theorem torsionFunction_add_relation [DecidableEq F] {x₁ y₁ x₂ y₂ : F}
+    (h₁ : W.Equation x₁ y₁) (h₂ : W.Equation x₂ y₂)
+    (hxy : ¬(x₁ = x₂ ∧ y₁ = W.negY x₂ y₂)) (n : ℕ)
+    {f₁ f₂ f₃ : W.CoordinateRing}
+    (hf₁ : XYIdeal W x₁ (C y₁) ^ n = Ideal.span {f₁})
+    (hf₂ : XYIdeal W x₂ (C y₂) ^ n = Ideal.span {f₂})
+    (hf₃ : XYIdeal W (W.addX x₁ x₂ (W.slope x₁ x₂ y₁ y₂))
+      (C (W.addY x₁ x₂ y₁ (W.slope x₁ x₂ y₁ y₂))) ^ n = Ideal.span {f₃}) :
+    ∃ c : F, c ≠ 0 ∧
+      YClass W (linePolynomial x₁ y₁ (W.slope x₁ x₂ y₁ y₂)) ^ n * f₃ =
+        c • (XClass W (W.addX x₁ x₂ (W.slope x₁ x₂ y₁ y₂)) ^ n * (f₁ * f₂)) := by
+  have hh := congrArg (fun I : Ideal W.CoordinateRing => I ^ n) (XYIdeal_mul_XYIdeal h₁ h₂ hxy)
+  simp only [mul_pow, XIdeal, YIdeal, Ideal.span_singleton_pow, hf₁, hf₂, hf₃,
+    Ideal.span_singleton_mul_span_singleton] at hh
+  exact exists_eq_smul_of_span_eq hh
+
 end WeierstrassCurve.Affine.CoordinateRing
 
 namespace WeierstrassCurve.Affine.Point
