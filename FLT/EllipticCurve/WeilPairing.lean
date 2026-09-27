@@ -86,4 +86,14 @@ theorem map_eq_cyclotomic_smul [NeZero n]
 
 end TorsionWeilPairing
 
+/-- Over a separably closed field, prime torsion away from the characteristic has dimension two. -/
+theorem finrank_prime_torsion {L : Type*} [Field L] [IsSepClosed L] [DecidableEq L]
+    (E : WeierstrassCurve L) [E.IsElliptic] (p : ℕ) [Fact p.Prime]
+    (hp : (p : L) ≠ 0) : Module.finrank (ZMod p) (E.nTorsion p) = 2 := by
+  obtain ⟨e⟩ := E.n_torsion_dimension hp
+  let e' : E.nTorsion p ≃ₗ[ZMod p] ZMod p × ZMod p :=
+    { e with map_smul' := ZMod.map_smul e }
+  rw [e'.finrank_eq, Module.finrank_prod]
+  simp
+
 end WeierstrassCurve
