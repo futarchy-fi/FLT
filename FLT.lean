@@ -113,6 +113,7 @@ public import FLT.EllipticCurve.MultiplicationDifferential
 public import FLT.EllipticCurve.MultiplicationInfinity
 public import FLT.EllipticCurve.MultiplicationOrder
 public import FLT.EllipticCurve.MultiplicationRoot
+public import FLT.EllipticCurve.MultiplicationRootExistence
 public import FLT.EllipticCurve.NTorsionCardOfDifferential
 public import FLT.EllipticCurve.NTorsionCardOfSeparable
 public import FLT.EllipticCurve.NTorsionFinite
