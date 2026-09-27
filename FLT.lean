@@ -261,6 +261,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.Frey
 public import FLT.GaloisRepresentation.HardlyRamified.Lift
 public import FLT.GaloisRepresentation.HardlyRamified.ModThree
 public import FLT.GaloisRepresentation.HardlyRamified.PrimeField
+public import FLT.GaloisRepresentation.HardlyRamified.ThreeAdicAlgebra
 public import FLT.GaloisRepresentation.HardlyRamified.ThreeAdicDegree
 public import FLT.GaloisRepresentation.HardlyRamified.Threeadic
 public import FLT.GaloisRepresentation.HardlyRamified.TraceLeaves
