@@ -34,9 +34,24 @@ noncomputable local instance (p : ℕ) [Fact p.Prime] : Algebra ℤ_[p] (ZMod p)
 it is defined in a completely nonconstructive way, so we add the classical instance. -/
 noncomputable instance : DecidableEq (AlgebraicClosure ℚ) := Classical.typeDecidableEq _
 
+/-- The `p`-torsion of the Frey curve has rank two over `ZMod p`. -/
+theorem FreyCurve.torsion_rank :
+    haveI : Fact (P.p.Prime) := ⟨P.pp⟩
+    Module.rank (ZMod P.p)
+      ((P.freyCurve.map (algebraMap ℚ (AlgebraicClosure ℚ))).nTorsion P.p) = 2 := by
+  let : Fact P.p.Prime := ⟨P.pp⟩
+  obtain ⟨e⟩ := (P.freyCurve.map (algebraMap ℚ (AlgebraicClosure ℚ))).n_torsion_dimension
+    (n := P.p) (by exact_mod_cast (Nat.ne_of_gt P.hppos))
+  let e' : (P.freyCurve.map (algebraMap ℚ (AlgebraicClosure ℚ))).nTorsion P.p ≃ₗ[ZMod P.p]
+      ZMod P.p × ZMod P.p :=
+    { e with map_smul' := ZMod.map_smul e }
+  rw [e'.rank_eq, rank_prod]
+  simp only [Module.rank_self, Cardinal.lift_one]
+  exact one_add_one_eq_two
+
 theorem FreyCurve.torsion_isHardlyRamified :
     haveI : Fact (P.p.Prime) := ⟨P.pp⟩
-    IsHardlyRamified P.hp_odd sorry
+    IsHardlyRamified P.hp_odd (FreyCurve.torsion_rank P)
       (P.freyCurve.galoisRep P.p (show 0 < P.p from P.hppos)) :=
   sorry
 

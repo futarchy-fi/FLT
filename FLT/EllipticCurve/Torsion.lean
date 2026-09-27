@@ -5,6 +5,7 @@ Authors: Kevin Buzzard
 -/
 module
 
+public import FLT.EllipticCurve.DivisionPolynomialDifferentialIdentity
 public import FLT.EllipticCurve.DivisionPolynomialSeparable
 public import FLT.EllipticCurve.NTorsionCardOfDifferential
 public import FLT.EllipticCurve.NTorsionCardOfSeparable
@@ -58,12 +59,6 @@ theorem WeierstrassCurve.n_torsion_finite {n : ℕ} (hn : 0 < n) : Finite (E.nTo
       change n • P.val = 0
       simpa only [Submodule.mem_torsionBy_iff, natCast_zsmul] using P.property⟩
   exact Finite.of_injective f (fun _ _ h => Subtype.ext (congrArg Subtype.val h))
-
--- This theorem needs e.g. a theory of division polynomials. It's ongoing work of David Angdinata.
--- Please do not work on it without talking to KB and David first.
--- This theorem was well-known in the early part of the 20th century.
-theorem WeierstrassCurve.n_torsion_card [IsSepClosed k] {n : ℕ} (hn : (n : k) ≠ 0) :
-    Nat.card (E.nTorsion n) = n^2 := sorry
 
 omit [E.IsElliptic] in
 /-- The subgroup killed by one consists of the identity alone. -/
@@ -152,6 +147,12 @@ theorem WeierstrassCurve.n_torsion_card_of_universal_divisionDifferentialDefect
   E.n_torsion_card_of_divisionDifferentialDefect hchar
     (E.divisionDifferentialDefect_eq_zero_of_universal hd)
 
+/-- Over a separably closed field, the subgroup killed by `n` has `n²` elements
+when `n` is nonzero in the field. -/
+theorem WeierstrassCurve.n_torsion_card [IsSepClosed k] {n : ℕ} (hn : (n : k) ≠ 0) :
+    Nat.card (E.nTorsion n) = n ^ 2 :=
+  E.n_torsion_card_of_divisionDifferentialDefect hn (E.divisionDifferentialDefect_eq_zero n)
+
 /-- The four-torsion subgroup has sixteen elements over a separably closed
 field of characteristic different from two. -/
 theorem WeierstrassCurve.n_torsion_card_four [IsSepClosed k] (h2 : (2 : k) ≠ 0) :
@@ -236,9 +237,11 @@ theorem WeierstrassCurve.n_torsion_dimension [IsSepClosed k] {n : ℕ} (hn : (n 
     simp [hn]
   exact ⟨φ.trans (RingEquiv.piFinTwo _).toAddEquiv⟩
 
--- follows easily from the above
-noncomputable instance (n : ℕ) : Module.Finite (ZMod n) (E.nTorsion n) := by
-  sorry
+/-- Positive-order torsion is finitely generated over `ZMod n` over every field.
+The nonzero hypothesis is necessary: zero-torsion is the entire group of points. -/
+noncomputable instance (n : ℕ) [NeZero n] : Module.Finite (ZMod n) (E.nTorsion n) := by
+  let := E.n_torsion_finite (Nat.pos_of_ne_zero (NeZero.ne n))
+  infer_instance
 
 -- This should be a straightforward but perhaps long unravelling of the definition
 /-- The map on points for an elliptic curve over `k` induced by a morphism of `k`-algebras
