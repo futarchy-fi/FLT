@@ -274,6 +274,7 @@ public import FLT.Mathlib.RingTheory.TensorProduct.Basis
 public import FLT.Mathlib.RingTheory.TensorProduct.Pi
 public import FLT.Mathlib.RingTheory.Unramified.LocalRing
 public import FLT.Mathlib.RingTheory.Valuation.Discrete.IsDiscreteValuationRing
+public import FLT.Mathlib.RingTheory.Valuation.RootLifting
 public import FLT.Mathlib.RingTheory.Valuation.ValuationSubring
 public import FLT.Mathlib.RingTheory.Valuation.ValuativeRel.Basic
 public import FLT.Mathlib.Topology.Algebra.Algebra.Hom
