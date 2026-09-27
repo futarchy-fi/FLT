@@ -48,4 +48,13 @@ theorem exists_eq_algebraMap_of_isUnit {f : W.CoordinateRing} (hf : IsUnit f) :
     exact not_isUnit_zero hf
   · rw [Polynomial.eq_C_of_degree_le_zero hp]
     simp [Algebra.smul_def, IsScalarTower.algebraMap_apply F F[X] W.CoordinateRing]
+/-- Generators of the same principal ideal differ by a nonzero ground-field scalar. -/
+theorem exists_eq_smul_of_span_eq {f g : W.CoordinateRing}
+    (h : Ideal.span {f} = Ideal.span {g}) :
+    ∃ c : F, c ≠ 0 ∧ g = c • f := by
+  obtain ⟨u, hu⟩ := Ideal.span_singleton_eq_span_singleton.mp h
+  obtain ⟨c, hc, he⟩ := exists_eq_algebraMap_of_isUnit u.isUnit
+  refine ⟨c, hc, ?_⟩
+  rw [← hu, ← he, Algebra.smul_def, mul_comm]
+
 end WeierstrassCurve.Affine.CoordinateRing
