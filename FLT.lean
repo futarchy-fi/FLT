@@ -112,6 +112,7 @@ public import FLT.EllipticCurve.InvariantDifferential
 public import FLT.EllipticCurve.InvariantLogarithmic
 public import FLT.EllipticCurve.Multiplication
 public import FLT.EllipticCurve.MultiplicationDifferential
+public import FLT.EllipticCurve.MultiplicationDegree
 public import FLT.EllipticCurve.MultiplicationInfinity
 public import FLT.EllipticCurve.MultiplicationOrder
 public import FLT.EllipticCurve.MultiplicationRoot
