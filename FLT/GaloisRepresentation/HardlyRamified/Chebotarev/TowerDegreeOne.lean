@@ -25,11 +25,6 @@ open NumberField
 
 namespace GaloisRepresentation.Chebotarev
 
-/-- An automorphism is Frobenius at some prime above the given base prime. -/
-def HasFrob (K L : Type*) [Field K] [NumberField K] [Field L] [NumberField L]
-    [Algebra K L] [IsGalois K L] (v : Prime K) (a : Gal(L/K)) : Prop :=
-  ∃ w : Prime L, w.asIdeal.under (𝓞 K) = v.asIdeal ∧ IsArithFrobAt (𝓞 K) a w.asIdeal
-
 /-- The rational prime associated to `q` has residue field of cardinality `q`. -/
 theorem card_quotient_rationalPrime (q : ℕ) (hq : q.Prime) :
     Nat.card ((𝓞 ℚ) ⧸ hq.toHeightOneSpectrumRingOfIntegersRat.asIdeal) = q := by

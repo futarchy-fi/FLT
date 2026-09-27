@@ -136,4 +136,9 @@ theorem frob_eq_one_iff (v : Prime K) (hu : Unram K L v) :
     rw [orderOf_frob_eq_inertiaDeg K L v (primeAbove K L v) (primeAbove_under K L v) hu]
     exact h _ (primeAbove_under K L v)
 
+/-- An automorphism is Frobenius at some prime above the given base prime. -/
+def HasFrob (K L : Type*) [Field K] [NumberField K] [Field L] [NumberField L]
+    [Algebra K L] [IsGalois K L] (v : Prime K) (a : Gal(L/K)) : Prop :=
+  ∃ w : Prime L, w.asIdeal.under (𝓞 K) = v.asIdeal ∧ IsArithFrobAt (𝓞 K) a w.asIdeal
+
 end GaloisRepresentation.Chebotarev

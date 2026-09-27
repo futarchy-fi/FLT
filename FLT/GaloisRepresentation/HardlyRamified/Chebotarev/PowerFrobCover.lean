@@ -7,6 +7,7 @@ module
 
 public import FLT.Deformations.RepresentationTheory.GaloisRep
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.FixedVector
+public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.LocalFrobenius
 public import FLT.Mathlib.RingTheory.DedekindDomain.Ideal.Lemmas
 
 /-!
@@ -28,13 +29,6 @@ open scoped NumberField
 open IsDedekindDomain
 
 namespace GaloisRepresentation.B5Inputs
-
-/-- The chosen local arithmetic Frobenius mapped to the absolute Galois group
-of `ℚ`, using the same algebraic-closure embedding as `GaloisRep.toLocal`. -/
-noncomputable def QFrob (q : ℕ) (hq : q.Prime) : Field.absoluteGaloisGroup ℚ :=
-  Field.absoluteGaloisGroup.map
-    (algebraMap ℚ (hq.toHeightOneSpectrumRingOfIntegersRat.adicCompletion ℚ))
-    (Field.AbsoluteGaloisGroup.adicArithFrob hq.toHeightOneSpectrumRingOfIntegersRat)
 
 /-- Every image element is a conjugate of a nonnegative power of a chosen
 rational Frobenius outside `S` and at a prime at least `N`. -/
