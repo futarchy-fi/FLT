@@ -405,11 +405,13 @@ public import FLT.TateCurve.Collinearity
 public import FLT.TateCurve.Elliptic
 public import FLT.TateCurve.Equation
 public import FLT.TateCurve.Expansion
+public import FLT.TateCurve.Fibers
 public import FLT.TateCurve.Integral
 public import FLT.TateCurve.LocalField
 public import FLT.TateCurve.Naturality
 public import FLT.TateCurve.Points
 public import FLT.TateCurve.Quotient
+public import FLT.TateCurve.QuotientAvoidance
 public import FLT.TateCurve.Surjectivity
 public import FLT.TateCurve.TateCurve
 public import FLT.TateCurve.Uniformization
