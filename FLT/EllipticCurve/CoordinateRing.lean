@@ -8,11 +8,13 @@ module
 public import Mathlib.AlgebraicGeometry.EllipticCurve.Affine.Point
 
 /-!
-# Constants in the coordinate ring of a Weierstrass curve
+# Constants and evaluation in a Weierstrass coordinate ring
 
 The degree formula for the polynomial norm forces every unit in the affine
 coordinate ring to be a nonzero constant. In particular, generators of the
-same nonzero principal ideal differ by a scalar in the ground field.
+same principal ideal differ by a scalar in the ground field. Evaluation has
+the point ideal as its kernel and commutes with homomorphisms of ground fields.
+Fixing a generator's value to one at a point makes it unique.
 -/
 
 @[expose] public section
@@ -133,7 +135,7 @@ theorem evalEval_smul {x y : F} (h : W.Equation x y) (c : F)
     AdjoinRoot.evalEval h (c • f) = c * AdjoinRoot.evalEval h f := by
   rw [Algebra.smul_def, map_mul, evalEval_algebraMap]
 
-/-- Generators with the same nonzero normalization at a point are equal. -/
+/-- Two generators of the same ideal that both evaluate to one at a point are equal. -/
 theorem eq_of_span_eq_of_evalEval_eq_one {f g : W.CoordinateRing}
     (hfg : Ideal.span {f} = Ideal.span {g})
     {x y : F} (h : W.Equation x y) (hf : AdjoinRoot.evalEval h f = 1)
