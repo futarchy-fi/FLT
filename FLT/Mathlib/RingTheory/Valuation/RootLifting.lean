@@ -121,4 +121,19 @@ theorem exists_root_lifting (f : A[X]) (hzero : f.map (residue A) ≠ 0)
       obtain ⟨c, hc, hcb⟩ := ih g.natDegree (hd ▸ hdeg) g hgzero hgroot rfl
       exact ⟨c, by simp [hg, IsRoot, hc.eq_zero], hcb⟩
 
+/-- The residue field of an algebraically closed valued field is algebraically closed. -/
+instance isAlgClosed_residueField : IsAlgClosed (ResidueField A) := by
+  apply IsAlgClosed.of_exists_root
+  intro f hf hirr
+  obtain ⟨g, hg, hdeg, hmonic⟩ := lifts_and_degree_eq_and_monic
+    (mem_lifts_of_surjective (residue_surjective (R := A)) f) hf
+  obtain ⟨x, hx⟩ := IsAlgClosed.exists_root (g.map (algebraMap A K)) (by
+    rw [hmonic.degree_map, hdeg]
+    exact (degree_pos_of_irreducible hirr).ne')
+  have hxint : IsIntegral A x := ⟨g, hmonic, by simpa [IsRoot, eval_map, aeval_def] using hx⟩
+  obtain ⟨a, rfl⟩ := IsIntegrallyClosed.isIntegral_iff.mp hxint
+  have ha : g.IsRoot a := by
+    apply (IsFractionRing.injective A K)
+    simpa only [map_zero, ← eval₂_at_apply, ← eval_map] using hx.eq_zero
+  exact ⟨residue A a, hg ▸ ha.map⟩
 end ValuationSubring
