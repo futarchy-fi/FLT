@@ -232,6 +232,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.DedekindZeta
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.FiniteRamification
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.FixedVector
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.FrobeniusOrder
+public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.Generators
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.HigherDegree
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.LogDensity
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.LogEulerProduct
