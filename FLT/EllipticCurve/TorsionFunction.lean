@@ -5,7 +5,7 @@ Authors: krandder
 -/
 module
 
-public import FLT.EllipticCurve.CoordinateRing
+public import FLT.EllipticCurve.Negation
 
 /-!
 # Functions attached to torsion points
@@ -142,6 +142,23 @@ theorem torsionFunction_neg_relation {x y : F} (h : W.Nonsingular x y) (n : ℕ)
   simp only [mul_pow, XIdeal, Ideal.span_singleton_pow, hf, hg,
     Ideal.span_singleton_mul_span_singleton] at hh
   exact exists_eq_smul_of_span_eq hh.symm
+
+/-- The polynomial norm of a torsion function is a nonzero scalar times the
+corresponding power of the vertical-line polynomial. -/
+theorem norm_torsionFunction {x y : F} (h : W.Nonsingular x y) {n : ℕ}
+    {f : W.CoordinateRing} (hf : XYIdeal W x (C y) ^ n = Ideal.span {f}) :
+    ∃ c : F, c ≠ 0 ∧ Algebra.norm F[X] f = C c * (X - C x) ^ n := by
+  have hg : XYIdeal W x (C (W.negY x y)) ^ n = Ideal.span {negHom W f} := by
+    rw [← map_negHom_XYIdeal, ← Ideal.map_pow, hf, Ideal.map_span, Set.image_singleton]
+    rfl
+  obtain ⟨c, hc, he⟩ := torsionFunction_neg_relation h n hf hg
+  refine ⟨c, hc, ?_⟩
+  have hn : algebraMap F[X] W.CoordinateRing (Algebra.norm F[X] f) =
+      algebraMap F[X] W.CoordinateRing (C c * (X - C x) ^ n) := by
+    rw [← mul_negHom, mul_comm, he, map_mul, map_pow]
+    rw [Algebra.smul_def, IsScalarTower.algebraMap_apply F F[X] W.CoordinateRing]
+    rfl
+  exact (FaithfulSMul.algebraMap_injective F[X] W.CoordinateRing) hn
 
 end WeierstrassCurve.Affine.CoordinateRing
 
