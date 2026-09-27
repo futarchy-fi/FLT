@@ -12,8 +12,8 @@ public import FLT.KnownIn1980s.EllipticCurves.TateCurve
 # Inertia on split multiplicative torsion
 
 Tate uniformization describes the deviation of a Galois automorphism on torsion
-as a root of unity. The uniformization and its equivariance are existing admitted
-inputs in `TateCurve`; the deductions here introduce no additional admissions.
+as a root of unity. The uniformization and its equivariance are constructed in `TateCurve`,
+using its admitted isomorphism with the Tate model.
 -/
 
 @[expose] public section
@@ -31,7 +31,7 @@ variable {k : Type*} [Field k] [ValuativeRel k] [TopologicalSpace k]
 
 /-- Every torsion point has a Tate representative whose power is an integral power
 of the Tate parameter. -/
-theorem exists_tatePoint_of_nsmul_eq_zero {n : ℕ} (P : (E⁄Ω).Point)
+theorem exists_tatePoint_of_nsmul_eq_zero [Algebra.IsAlgebraic k Ω] {n : ℕ} (P : (E⁄Ω).Point)
     (hP : n • P = 0) :
     ∃ (u : Ωˣ) (m : ℤ), E.tatePoint Ω u = P ∧ u ^ n = E.qUnitSepClosure Ω ^ m := by
   obtain ⟨x, rfl⟩ := (E.tateEquivSepClosure Ω).surjective P
@@ -51,6 +51,7 @@ theorem exists_tatePoint_of_nsmul_eq_zero {n : ℕ} (P : (E⁄Ω).Point)
 
 variable [IsSepClosed Ω] [Algebra.IsSeparable k Ω]
 
+omit [IsSepClosed Ω] in
 /-- The deviation of a Galois automorphism on an `n`-torsion point is represented
 by an `n`-th root of unity under Tate uniformization. -/
 theorem exists_rootOfUnity_tatePoint_sub {n : ℕ} (σ : Ω ≃ₐ[k] Ω)
@@ -72,6 +73,7 @@ theorem exists_rootOfUnity_tatePoint_sub {n : ℕ} (σ : Ω ≃ₐ[k] Ω)
     apply congrArg
     exact QuotientGroup.mk_div _ (τ u) u
 
+omit [IsSepClosed Ω] in
 /-- Inertia acts square-unipotently on prime-to-residue-characteristic torsion of
 a curve with split multiplicative reduction, by Tate uniformization. -/
 theorem inertia_sub_sub_eq_zero_of_split_multiplicative
