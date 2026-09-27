@@ -8,6 +8,7 @@ module
 public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.VariableChange
 public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.Affine.Point
 public import FLT.Mathlib.FieldTheory.Galois.Basic
+public import Mathlib.FieldTheory.Galois.Infinite
 
 /-!
 # Galois descent for Weierstrass curve data
@@ -26,6 +27,36 @@ namespace WeierstrassCurve
 open scoped WeierstrassCurve.Affine
 
 variable {K : Type*} [Field K] (L : Type*) [Field L] [Algebra K L]
+variable [IsGalois K L] in
+/-- A change of variables fixed by every automorphism of a Galois extension
+is the base change of a change of variables over the ground field. -/
+theorem VariableChange.exists_baseChange_eq_of_forall_map_eq {C : VariableChange L}
+    (hC : ∀ σ : L ≃ₐ[K] L, C.map σ.toAlgHom.toRingHom = C) :
+    ∃ C₀ : VariableChange K, C₀.baseChange L = C := by
+  have hfixed (f : VariableChange L → L)
+      (hf : ∀ σ : L ≃ₐ[K] L, f (C.map σ.toAlgHom.toRingHom) = σ (f C)) :
+      f C ∈ Set.range (algebraMap K L) := by
+    apply (InfiniteGalois.mem_range_algebraMap_iff_fixed _).mpr
+    intro σ
+    rw [← hf σ, hC σ]
+  obtain ⟨u, hu⟩ := hfixed (fun D ↦ (D.u : L)) (fun _ ↦ rfl)
+  obtain ⟨r, hr⟩ := hfixed VariableChange.r (fun _ ↦ rfl)
+  obtain ⟨s, hs⟩ := hfixed VariableChange.s (fun _ ↦ rfl)
+  obtain ⟨t, ht⟩ := hfixed VariableChange.t (fun _ ↦ rfl)
+  have hu0 : u ≠ 0 := by
+    rintro rfl
+    exact C.u.ne_zero (hu.symm.trans (map_zero _))
+  exact ⟨⟨Units.mk0 u hu0, r, s, t⟩, VariableChange.ext (Units.ext hu) hr hs ht⟩
+
+variable [IsGalois K L] in
+/-- An isomorphism fixed by every Galois automorphism descends to the ground field. -/
+theorem exists_variableChange_of_galois_fixed {V W : WeierstrassCurve K}
+    {C : VariableChange L} (hC : C • V.baseChange L = W.baseChange L)
+    (hfixed : ∀ σ : L ≃ₐ[K] L, C.map σ.toAlgHom.toRingHom = C) :
+    ∃ C₀ : VariableChange K, C₀ • V = W := by
+  obtain ⟨C₀, hC₀⟩ := VariableChange.exists_baseChange_eq_of_forall_map_eq L hfixed
+  exact ⟨C₀, smul_eq_of_baseChange_smul_eq L C₀ (by rwa [hC₀])⟩
+
 variable [Algebra.IsQuadraticExtension K L] [Algebra.IsSeparable K L]
 
 /-- **Galois descent for changes of variables.** A change of variables over `L` fixed by the
