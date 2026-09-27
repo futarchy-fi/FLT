@@ -232,6 +232,7 @@ public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.Affine.Point
 public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.Aut
 public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.GaloisDescent
 public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.Reduction
+public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.SplitDescent
 public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.VariableChange
 public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.Weierstrass
 public import FLT.Mathlib.Analysis.Normed.Ring.WithAbs
@@ -437,6 +438,7 @@ public import FLT.TateCurve.AlgebraicUniformization
 public import FLT.TateCurve.Collinearity
 public import FLT.TateCurve.CompleteAddition
 public import FLT.TateCurve.Descent
+public import FLT.TateCurve.Discriminant
 public import FLT.TateCurve.Elliptic
 public import FLT.TateCurve.Equation
 public import FLT.TateCurve.Expansion
@@ -445,15 +447,18 @@ public import FLT.TateCurve.FiniteExtension
 public import FLT.TateCurve.FiniteStages
 public import FLT.TateCurve.InseparableLifting
 public import FLT.TateCurve.Integral
+public import FLT.TateCurve.JInvariant
 public import FLT.TateCurve.LocalField
 public import FLT.TateCurve.LocalUniformization
 public import FLT.TateCurve.Model
 public import FLT.TateCurve.ModelTransport
 public import FLT.TateCurve.Naturality
+public import FLT.TateCurve.ParameterEvaluation
 public import FLT.TateCurve.Points
 public import FLT.TateCurve.QuadraticLift
 public import FLT.TateCurve.Quotient
 public import FLT.TateCurve.QuotientAvoidance
+public import FLT.TateCurve.Reduction
 public import FLT.TateCurve.SeparableLifting
 public import FLT.TateCurve.Surjectivity
 public import FLT.TateCurve.SymmetricInverse
