@@ -29,7 +29,7 @@ universe u v
 -- extension of ℚ_p
 variable {p : ℕ} (hpodd : Odd p) [hp : Fact p.Prime]
     {R : Type u} [CommRing R] [Algebra ℤ_[p] R] [IsDomain R]
-    [Module.Finite ℤ_[p] R] [TopologicalSpace R] [IsTopologicalRing R]
+    [Module.Finite ℤ_[p] R] [Module.Free ℤ_[p] R] [TopologicalSpace R] [IsTopologicalRing R]
     [IsLocalRing R] [IsModuleTopology ℤ_[p] R]
     {V : Type v} [AddCommGroup V] [Module R V] [Module.Finite R V]
     [Module.Free R V] (hv : Module.rank R V = 2) {ρ : GaloisRep ℚ R V}
