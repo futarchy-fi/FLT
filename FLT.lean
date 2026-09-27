@@ -402,6 +402,7 @@ public import FLT.Slop.RepresentationTheory.OddAbsIrredSlop
 public import FLT.TateCurve.Abscissa
 public import FLT.TateCurve.Addition
 public import FLT.TateCurve.Collinearity
+public import FLT.TateCurve.CompleteAddition
 public import FLT.TateCurve.Elliptic
 public import FLT.TateCurve.Equation
 public import FLT.TateCurve.Expansion
