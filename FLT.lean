@@ -113,6 +113,7 @@ public import FLT.FreyCurve.Serre.GoodReduction
 public import FLT.FreyCurve.Serre.GoodReductionAtP
 public import FLT.FreyCurve.Serre.JoinCoprimeTorsion
 public import FLT.FreyCurve.Serre.LocalInertia
+public import FLT.FreyCurve.Serre.LocalResidue
 public import FLT.FreyCurve.Serre.LocalTorsion
 public import FLT.FreyCurve.Serre.MultiplicativeReduction
 public import FLT.FreyCurve.Serre.QuotientCurve
