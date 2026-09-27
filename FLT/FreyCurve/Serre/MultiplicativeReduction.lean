@@ -178,7 +178,6 @@ theorem exists_signed_inertia_equivariant_split_twist {R K : Type u}
     · simp only [e, AddEquiv.trans_apply, Affine.Point.equivOfEq_some,
         Affine.Point.equivVariableChange_some, Affine.Point.map_some]
       apply Affine.Point.some_eq_some <;> simp [hu, hr, hs, ht]
-
   · intro σ
     have ht : σ tΩ = tΩ := σ.commutes _
     have hn : σ nΩ = nΩ := σ.commutes _
