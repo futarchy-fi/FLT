@@ -117,6 +117,7 @@ public import FLT.EllipticCurve.NTorsionRoots
 public import FLT.EllipticCurve.Negation
 public import FLT.EllipticCurve.OddTorsionChart
 public import FLT.EllipticCurve.OddTorsionCoaddition
+public import FLT.EllipticCurve.OddTorsionHopf
 public import FLT.EllipticCurve.OddTorsionModel
 public import FLT.EllipticCurve.OddTorsionOrder
 public import FLT.EllipticCurve.OddTorsionOrderPoints
