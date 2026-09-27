@@ -91,7 +91,7 @@ theorem isCoprime_preΨ_of_congr_Φ {n : ℕ} (hchar : (n : k) ≠ 0) {g : k[X]}
     IsCoprime (W.preΨ n) g := by
   obtain ⟨q, hq⟩ := hd
   have hc : IsCoprime (W.Φ n) (W.preΨ n) := by
-    have h := W.isCoprime_Φ_ΨSq n
+    have h := W.isCoprime_Φ_ΨSq_of_isElliptic n
     rw [ΨSq, pow_two] at h
     exact h.of_mul_right_left.of_mul_right_left
   obtain ⟨a, b, hab⟩ := hc
