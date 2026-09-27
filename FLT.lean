@@ -264,7 +264,10 @@ public import FLT.GaloisRepresentation.HardlyRamified.Frey
 public import FLT.GaloisRepresentation.HardlyRamified.InertiaTwoSquareZero
 public import FLT.GaloisRepresentation.HardlyRamified.IntegralCharacters
 public import FLT.GaloisRepresentation.HardlyRamified.KummerTwoClassNumber
+public import FLT.GaloisRepresentation.HardlyRamified.KummerTwoDyadic
 public import FLT.GaloisRepresentation.HardlyRamified.KummerTwoField
+public import FLT.GaloisRepresentation.HardlyRamified.KummerTwoQuadratic
+public import FLT.GaloisRepresentation.HardlyRamified.KummerTwoUnitSquareClasses
 public import FLT.GaloisRepresentation.HardlyRamified.LatticeHardlyRamified
 public import FLT.GaloisRepresentation.HardlyRamified.Lift
 public import FLT.GaloisRepresentation.HardlyRamified.ModThree
@@ -314,6 +317,7 @@ public import FLT.GroupScheme.QuadraticTwistMaps
 public import FLT.GroupScheme.QuadraticTwistMonoidal
 public import FLT.GroupScheme.QuadraticTwistPoints
 public import FLT.GroupScheme.QuadraticTwistTensor
+public import FLT.GroupScheme.RaynaudExtension
 public import FLT.HaarMeasure.FiniteAdeleRing
 public import FLT.HaarMeasure.HaarChar.AddEquiv
 public import FLT.HaarMeasure.HaarChar.AdeleRing
