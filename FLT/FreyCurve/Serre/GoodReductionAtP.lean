@@ -13,8 +13,8 @@ public import FLT.FreyCurve.Serre.StableLineQuotient
 # Good reduction at the torsion prime
 
 Good reduction and a stable line give a finite-flat character quotient of
-prime torsion. Proving that some character quotient is inertia invariant
-requires further local geometry; `GoodReductionAtPQuotient` records the target.
+prime torsion. `GoodReductionAtPQuotient` records the existence of an
+inertia-invariant functional; `GoodReductionAtPProof` proves it for `p ≥ 5`.
 -/
 
 @[expose] public section
@@ -30,11 +30,10 @@ noncomputable local instance localDecidableEq (α : Type*) : DecidableEq α :=
 
 namespace WeierstrassCurve
 
-/-- The remaining general local input at `p`: for a good-reduction elliptic curve
+/-- The general local quotient property at `p`: for a good-reduction elliptic curve
 over `ℚ_p`, a Galois-stable `𝔽_p`-line implies a nonzero inertia-invariant functional.
-For `p ≥ 5`, this follows from the ordinary connected–étale quotient and exclusion
-of supersingular reduction by its irreducible inertia action. It is a proposition,
-not an asserted theorem or a Frey-specific assumption. -/
+For `p ≥ 5`, `goodReductionAtPQuotient` in `GoodReductionAtPProof` proves this
+using specialization and supersingular exclusion by an Eisenstein polynomial. -/
 def GoodReductionAtPQuotient (p : ℕ) (hp : p.Prime) : Prop :=
   letI : Fact p.Prime := ⟨hp⟩
   let v := hp.toHeightOneSpectrumRingOfIntegersRat

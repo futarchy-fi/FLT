@@ -102,7 +102,9 @@ public import FLT.EllipticCurve.PointReductionAddition
 public import FLT.EllipticCurve.PointReductionHom
 public import FLT.EllipticCurve.PointReductionKernel
 public import FLT.EllipticCurve.PointTransport
+public import FLT.EllipticCurve.SupersingularPolynomial
 public import FLT.EllipticCurve.Torsion
+public import FLT.EllipticCurve.TorsionOrbit
 public import FLT.EllipticCurve.TorsionSpecialization
 public import FLT.EllipticCurve.TorsionStructure
 public import FLT.FreyCurve.Basic
@@ -114,11 +116,13 @@ public import FLT.FreyCurve.Serre.FixedLineDescent
 public import FLT.FreyCurve.Serre.FreyTwoTorsion
 public import FLT.FreyCurve.Serre.GoodReduction
 public import FLT.FreyCurve.Serre.GoodReductionAtP
+public import FLT.FreyCurve.Serre.GoodReductionAtPProof
 public import FLT.FreyCurve.Serre.GoodReductionSpecialization
 public import FLT.FreyCurve.Serre.JoinCoprimeTorsion
 public import FLT.FreyCurve.Serre.LocalInertia
 public import FLT.FreyCurve.Serre.LocalResidue
 public import FLT.FreyCurve.Serre.LocalTorsion
+public import FLT.FreyCurve.Serre.LocalUniformizer
 public import FLT.FreyCurve.Serre.MultiplicativeReduction
 public import FLT.FreyCurve.Serre.QuotientCurve
 public import FLT.FreyCurve.Serre.QuotientDescent
