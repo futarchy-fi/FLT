@@ -235,6 +235,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.HigherDegree
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.LogEulerProduct
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.LogEulerRemainder
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.NegligibleSets
+public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.NonsplitBound
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.OpenKernel
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.PrimeFibers
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.PrimeSummability
