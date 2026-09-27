@@ -1,5 +1,13 @@
 # Three-adic lattice plan after the Ribet port
 
+> Historical inventory: the tables below describe the 18:04 UTC snapshot, not
+> the current implementation. For the consolidation checkpoint and runnable axiom
+> checks, see [CORE_PLAN.md](CORE_PLAN.md#integration-checkpoint--2026-09-27)
+> and `FLTTest/ThreeAdicConsolidation.lean`. In particular, normalization,
+> lattice transfer, residual characteristic, and the specialized quadratic
+> exclusion now have implementations; the arithmetic endpoints remain open.
+
+
 Checked at **2026-09-27 18:04 UTC** against worktree HEAD
 `2502634916a27d7e1ef09728ac046fdce1dd4f55`, local `origin/main`
 `71deb063db82a8ffc6842760516626920510dd3c`, and Mathlib
