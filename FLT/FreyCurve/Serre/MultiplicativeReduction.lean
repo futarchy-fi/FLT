@@ -109,8 +109,8 @@ theorem exists_equivariant_pointEquiv_of_variableChange
     apply Affine.Point.some_eq_some <;> simp [hu, hr, hs, ht]
 
 /-- Multiplicative reduction becomes split by one isomorphism intertwining every inertia
-element simultaneously, including in residue characteristic two. -/
-theorem exists_uniform_inertia_equivariant_split_twist {R K : Type u}
+element simultaneously, preserving the j-invariant, including in residue characteristic two. -/
+theorem exists_uniform_inertia_equivariant_split_twist_with_j {R K : Type u}
     [CommRing R] [IsDomain R] [IsDiscreteValuationRing R]
     [Field K] [Algebra R K] [IsFractionRing R K]
     (E : WeierstrassCurve K) [E.IsElliptic] [E.HasMultiplicativeReduction R]
@@ -119,7 +119,7 @@ theorem exists_uniform_inertia_equivariant_split_twist {R K : Type u}
     (hA : (A.comap (algebraMap K Ω)).toSubring = (algebraMap R K).range) :
     ∃ (E' : WeierstrassCurve K) (_ : E'.IsElliptic) (_ : E'.HasSplitMultiplicativeReduction R)
       (e : (E⁄Ω).Point ≃+ (E'⁄Ω).Point),
-      ∀ (σ : A.decompositionSubgroup K), σ ∈ A.inertiaSubgroup K →
+      E'.j = E.j ∧ ∀ (σ : A.decompositionSubgroup K), σ ∈ A.inertiaSubgroup K →
         ∀ P, e (Affine.Point.map (σ : Ω ≃ₐ[K] Ω).toAlgHom P) =
         Affine.Point.map (σ : Ω ≃ₐ[K] Ω).toAlgHom (e P) := by
   obtain ⟨t,n,hD,hsplit⟩ := E.exists_split_twist_parameters (R := R)
@@ -157,7 +157,8 @@ theorem exists_uniform_inertia_equivariant_split_twist {R K : Type u}
   let e : (E⁄Ω).Point ≃+ (E'⁄Ω).Point :=
     (Affine.Point.equivOfEq hC.symm).trans
       (Affine.Point.equivVariableChange (E'.baseChange Ω) C)
-  refine ⟨E', hell, hsplit, e, ?_⟩
+  refine ⟨E', hell, hsplit, e, ?_, ?_⟩
+  · simpa only [hE'] using E.j_quadraticTwistOf _ _ (hE' ▸ hell)
   intro σ hσ
   have ht (r : R) : σ • f r = f r := Subtype.ext ((σ : Ω ≃ₐ[K] Ω).commutes _)
   have hfix : (σ : Ω ≃ₐ[K] Ω) (x : Ω) = x :=
@@ -175,6 +176,23 @@ theorem exists_uniform_inertia_equivariant_split_twist {R K : Type u}
   · simp only [e, AddEquiv.trans_apply, Affine.Point.equivOfEq_some,
       Affine.Point.equivVariableChange_some, Affine.Point.map_some]
     apply Affine.Point.some_eq_some <;> simp [hu, hr, hs, ht]
+
+/-- A split twist with one isomorphism intertwining every inertia element. -/
+theorem exists_uniform_inertia_equivariant_split_twist {R K : Type u}
+    [CommRing R] [IsDomain R] [IsDiscreteValuationRing R]
+    [Field K] [Algebra R K] [IsFractionRing R K]
+    (E : WeierstrassCurve K) [E.IsElliptic] [E.HasMultiplicativeReduction R]
+    {Ω : Type*} [Field Ω] [Algebra K Ω] [IsAlgClosed Ω] [DecidableEq Ω]
+    (A : ValuationSubring Ω)
+    (hA : (A.comap (algebraMap K Ω)).toSubring = (algebraMap R K).range) :
+    ∃ (E' : WeierstrassCurve K) (_ : E'.IsElliptic) (_ : E'.HasSplitMultiplicativeReduction R)
+      (e : (E⁄Ω).Point ≃+ (E'⁄Ω).Point),
+      ∀ (σ : A.decompositionSubgroup K), σ ∈ A.inertiaSubgroup K →
+        ∀ P, e (Affine.Point.map (σ : Ω ≃ₐ[K] Ω).toAlgHom P) =
+        Affine.Point.map (σ : Ω ≃ₐ[K] Ω).toAlgHom (e P) := by
+  obtain ⟨E', hell, hsplit, e, _, he⟩ :=
+    E.exists_uniform_inertia_equivariant_split_twist_with_j A hA
+  exact ⟨E', hell, hsplit, e, he⟩
 
 /-- Multiplicative reduction becomes split by an isomorphism intertwining inertia.
 The unit discriminant argument also covers nonsplit reduction in residue characteristic two. -/
