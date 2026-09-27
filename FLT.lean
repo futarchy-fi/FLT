@@ -151,6 +151,7 @@ public import FLT.FreyCurve.Serre.LocalInertia
 public import FLT.FreyCurve.Serre.LocalResidue
 public import FLT.FreyCurve.Serre.LocalTorsion
 public import FLT.FreyCurve.Serre.LocalUniformizer
+public import FLT.FreyCurve.Serre.MultiplicativeFlat
 public import FLT.FreyCurve.Serre.MultiplicativeQuotient
 public import FLT.FreyCurve.Serre.MultiplicativeReduction
 public import FLT.FreyCurve.Serre.QuadraticTwistPoints
