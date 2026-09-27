@@ -6,6 +6,8 @@ Authors: krandder
 module
 
 public import FLT.EllipticCurve.NTorsionRoots
+public import Mathlib.RingTheory.AdjoinRoot
+public import Mathlib.RingTheory.Flat.Basic
 
 /-!
 # The affine equation of multiplication on the x-line
@@ -47,5 +49,28 @@ lemma natDegree_multiplicationFiberPolynomial [Nontrivial R] {n : ℤ} (hn : n �
     (ξ : R) : (W.multiplicationFiberPolynomial n ξ).natDegree = n.natAbs ^ 2 := by
   rw [multiplicationFiberPolynomial,
     natDegree_sub_eq_left_of_natDegree_lt (W.natDegree_C_mul_ΨSq_lt hn ξ), W.natDegree_Φ]
+
+/-- The affine multiplication-fiber algebra has a power basis with `n²` elements. -/
+noncomputable def multiplicationFiberBasis [Nontrivial R] {n : ℤ} (hn : n ≠ 0) (ξ : R) :
+    Module.Basis (Fin (n.natAbs ^ 2)) R (AdjoinRoot (W.multiplicationFiberPolynomial n ξ)) :=
+  ((AdjoinRoot.powerBasis' (W.monic_multiplicationFiberPolynomial hn ξ)).basis).reindex
+    (finCongr (W.natDegree_multiplicationFiberPolynomial hn ξ))
+
+/-- The affine multiplication-fiber algebra is finite over the coefficient ring. -/
+theorem finite_multiplicationFiber {n : ℤ} (hn : n ≠ 0) (ξ : R) :
+    Module.Finite R (AdjoinRoot (W.multiplicationFiberPolynomial n ξ)) :=
+  (W.monic_multiplicationFiberPolynomial hn ξ).finite_adjoinRoot
+
+/-- The affine multiplication-fiber algebra is flat, since its defining equation is monic. -/
+theorem flat_multiplicationFiber {n : ℤ} (hn : n ≠ 0) (ξ : R) :
+    Module.Flat R (AdjoinRoot (W.multiplicationFiberPolynomial n ξ)) := by
+  let : Module.Free R (AdjoinRoot (W.multiplicationFiberPolynomial n ξ)) :=
+    (W.monic_multiplicationFiberPolynomial hn ξ).free_adjoinRoot
+  infer_instance
+
+/-- The finite free affine multiplication-fiber algebra has rank `n²`. -/
+theorem finrank_multiplicationFiber [Nontrivial R] {n : ℤ} (hn : n ≠ 0) (ξ : R) :
+    Module.finrank R (AdjoinRoot (W.multiplicationFiberPolynomial n ξ)) = n.natAbs ^ 2 := by
+  rw [Module.finrank_eq_card_basis (W.multiplicationFiberBasis hn ξ), Fintype.card_fin]
 
 end WeierstrassCurve
