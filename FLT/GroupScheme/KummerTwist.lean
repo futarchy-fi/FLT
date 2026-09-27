@@ -6,7 +6,8 @@ Authors: krandder
 module
 
 public import FLT.GroupScheme.KummerHopf
-public import FLT.GroupScheme.QuadraticTwistComultiplication
+public import FLT.GroupScheme.QuadraticTwistCoassociativity
+public import FLT.GroupScheme.QuadraticTwistEtale
 
 /-!
 # The quadratic twist of the Kummer model
@@ -23,7 +24,8 @@ open scoped TensorProduct
 
 namespace KummerAlgebra
 
-variable (R : Type*) [CommRing R] (n : ℕ) (u : Rˣ) (hn : 0 < n)
+universe v
+variable (R : Type v) [CommRing R] (n : ℕ) (u : Rˣ) (hn : 0 < n)
 
 /-- Evaluating the tensor components is the lift of the two component projections. -/
 theorem tensorComponentsEquiv_eq_lift (i j : Fin n)
@@ -96,5 +98,20 @@ theorem twistModel_isFiniteFlat [IsDedekindDomain R] [NeZero n] (d : Rˣ) :
 noncomputable def twistComul [NeZero n] (d : Rˣ) (r : R) (hr : 2 * r = 1) :
     twistModel R n u d →ₐ[R] twistModel R n u d ⊗[R] twistModel R n u d :=
   QuadraticTwist.comul d r hr
+
+/-- The quadratic Kummer twist is a Hopf algebra when two is invertible. -/
+@[instance_reducible]
+noncomputable def twistHopfAlgebra [NeZero n] (d : Rˣ) (r : R) (hr : 2 * r = 1) :
+    HopfAlgebra R (twistModel R n u d) :=
+  QuadraticTwist.hopfAlgebra d r hr
+
+/-- The Kummer twist has etale generic fibre when its order is invertible there. -/
+theorem twistModel_generic_etale [Nontrivial R] [NeZero n] (d : Rˣ)
+    (r : R) (hr : 2 * r = 1) (K : Type v) [Field K] [Algebra R K]
+    (hnK : IsUnit (n : K)) : Algebra.Etale K (K ⊗[R] twistModel R n u d) := by
+  let := generic_etale R n u (S := K) (Nat.pos_of_ne_zero (NeZero.ne n)) hnK
+  exact QuadraticTwist.model_baseChange_etale d
+    (HopfAlgebra.antipodeAlgEquiv R (Coordinate R n u))
+    (HopfAlgebra.antipode_involutive R (Coordinate R n u)) r hr K
 
 end KummerAlgebra

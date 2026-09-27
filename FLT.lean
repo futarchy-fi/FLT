@@ -153,6 +153,7 @@ public import FLT.FreyCurve.Serre.LocalTorsion
 public import FLT.FreyCurve.Serre.LocalUniformizer
 public import FLT.FreyCurve.Serre.MultiplicativeQuotient
 public import FLT.FreyCurve.Serre.MultiplicativeReduction
+public import FLT.FreyCurve.Serre.QuadraticTwistPoints
 public import FLT.FreyCurve.Serre.QuotientCurve
 public import FLT.FreyCurve.Serre.QuotientDescent
 public import FLT.FreyCurve.Serre.ReducibleFiltration
@@ -207,10 +208,14 @@ public import FLT.GroupScheme.KummerPoints
 public import FLT.GroupScheme.KummerTwist
 public import FLT.GroupScheme.QuadraticDescent
 public import FLT.GroupScheme.QuadraticTwist
+public import FLT.GroupScheme.QuadraticTwistCoassociativity
 public import FLT.GroupScheme.QuadraticTwistComultiplication
+public import FLT.GroupScheme.QuadraticTwistEtale
+public import FLT.GroupScheme.QuadraticTwistGenericPoints
 public import FLT.GroupScheme.QuadraticTwistIdentities
 public import FLT.GroupScheme.QuadraticTwistMaps
 public import FLT.GroupScheme.QuadraticTwistMonoidal
+public import FLT.GroupScheme.QuadraticTwistPoints
 public import FLT.GroupScheme.QuadraticTwistTensor
 public import FLT.HaarMeasure.FiniteAdeleRing
 public import FLT.HaarMeasure.HaarChar.AddEquiv
