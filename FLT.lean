@@ -95,6 +95,7 @@ public import FLT.Deformations.RepresentationTheory.IntegralClosure
 public import FLT.Deformations.RepresentationTheory.Irreducible
 public import FLT.Deformations.Subfunctor
 public import FLT.DivisionAlgebra.Finiteness
+public import FLT.EllipticCurve.NTorsionCardOfSeparable
 public import FLT.EllipticCurve.NTorsionFinite
 public import FLT.EllipticCurve.NTorsionRoots
 public import FLT.EllipticCurve.Torsion
