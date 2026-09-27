@@ -76,4 +76,20 @@ theorem evalEval_eq_zero_iff {x y : F} (h : W.Equation x y) (f : W.CoordinateRin
     rw [AdjoinRoot.evalEval_mk]
     exact mem_span_C_X_sub_C_X_sub_C_iff_eval_eval_eq_zero.mp hp
 
+/-- Inclusion of affine point ideals forces equality of both coordinates. -/
+theorem XYIdeal_le_XYIdeal_iff {x y x' y' : F} (h : W.Equation x' y') :
+    XYIdeal W x (C y) ≤ XYIdeal W x' (C y') ↔ x = x' ∧ y = y' := by
+  constructor
+  · intro hle
+    have hx : AdjoinRoot.evalEval h (XClass W x) = 0 :=
+      (evalEval_eq_zero_iff h _).mpr (hle (Ideal.subset_span (by simp)))
+    have hy : AdjoinRoot.evalEval h (YClass W (C y)) = 0 :=
+      (evalEval_eq_zero_iff h _).mpr (hle (Ideal.subset_span (by simp)))
+    change W.polynomial.evalEval x' y' = 0 at h
+    simp only [XClass, YClass, AdjoinRoot.evalEval_mk, evalEval, eval_C, eval_sub,
+      eval_X] at hx hy
+    exact ⟨(sub_eq_zero.mp hx).symm, (sub_eq_zero.mp hy).symm⟩
+  · rintro ⟨rfl, rfl⟩
+    exact le_rfl
+
 end WeierstrassCurve.Affine.CoordinateRing
