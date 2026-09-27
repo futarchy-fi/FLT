@@ -54,8 +54,6 @@ structure OortTateThreeBasis (R A : Type u) [CommRing R] [CommRing A]
   /-- The addition formula. -/
   comul : Coalgebra.comul x =
     x ⊗ₜ[R] 1 + 1 ⊗ₜ[R] x + c • (x ⊗ₜ[R] (x ^ 2) + (x ^ 2) ⊗ₜ[R] x)
-  /-- The Oort–Tate parameter relation. -/
-  parameter : 2 * a * c = -3
 
 namespace OortTateThreeBasis
 
@@ -126,8 +124,6 @@ def baseChange (P : OortTateThreeBasis R A) (S : Type u) [CommRing S] [Algebra R
       TensorProduct.AlgebraTensorModule.tensorTensorTensorComm_tmul,
       Algebra.TensorProduct.tmul_pow, one_pow, Algebra.TensorProduct.one_def,
       algebraMap_smul]
-  parameter := by
-    simpa only [map_mul, map_neg, map_ofNat] using congrArg (algebraMap R S) P.parameter
 
 /-- When two is nonzero, the anti-invariant elements are exactly the multiples
 of the odd coordinate. -/
@@ -193,6 +189,168 @@ theorem surjective_of_map_x (P : OortTateThreeBasis R A)
   simp only [map_add, map_smul, map_one, map_pow, hv, smul_pow, smul_smul]
   simpa [← mul_assoc, ← mul_pow, mul_assoc] using (Q.expansion z).symm
 
+/-- The `(x,x²,x²)` coefficient of coassociativity gives the Oort–Tate
+parameter relation multiplied by the square of the comultiplication coefficient. -/
+theorem parameter_mul_sq (P : OortTateThreeBasis R A) : P.c ^ 2 * (3 + 2 * P.a * P.c) = 0 := by
+  have hx3 : P.x * P.x * P.x = P.a • P.x := by
+    simpa only [pow_succ, pow_zero, one_mul] using P.cube
+  have hx4 : (P.x * P.x) * (P.x * P.x) = P.a • (P.x * P.x) := by
+    rw [← mul_assoc, hx3, smul_mul_assoc]
+  have hx2r : P.basis.repr (P.x * P.x) = Finsupp.single 2 1 := by
+    simpa only [pow_two] using P.repr_sq
+  have h := Coalgebra.coassoc_apply (R := R) P.x
+  have h' := congrArg (fun w ↦
+    (P.basis.tensorProduct (P.basis.tensorProduct P.basis)).repr w (1, (2, 2))) h
+  simp only [P.comul, map_add, map_smul, TensorProduct.add_tmul,
+    TensorProduct.tmul_add, TensorProduct.smul_tmul', TensorProduct.tmul_smul,
+    LinearMap.rTensor_tmul, LinearMap.lTensor_tmul, TensorProduct.assoc_tmul,
+    Bialgebra.comul_mul, pow_two, add_mul, mul_add, smul_mul_assoc, mul_smul_comm,
+    smul_smul, Algebra.TensorProduct.tmul_mul_tmul, one_mul, mul_one,
+    Bialgebra.comul_one, Algebra.TensorProduct.one_def, hx3, hx4,
+    smul_add, hx2r, Module.Basis.tensorProduct_repr_tmul_apply,
+    P.repr_one, P.repr_x, Finsupp.single_apply,
+    Finsupp.coe_add, Finsupp.coe_smul, Pi.add_apply, Pi.smul_apply, smul_eq_mul] at h'
+  norm_num at h'
+  linear_combination -h'
+
+/-- In characteristic zero the comultiplication coefficient cannot vanish:
+a primitive coordinate would contradict its cubic relation. -/
+theorem c_ne_zero [CharZero R] (P : OortTateThreeBasis R A) : P.c ≠ 0 := by
+  intro hc
+  have hd : Coalgebra.comul (R := R) P.x = P.x ⊗ₜ[R] 1 + 1 ⊗ₜ[R] P.x := by
+    simpa [hc] using P.comul
+  have h := congrArg (Coalgebra.comul (R := R)) P.cube
+  rw [Bialgebra.comul_pow, map_smul, hd] at h
+  have h' := congrArg (fun w ↦ (P.basis.tensorProduct P.basis).repr w (1, 2)) h
+  have hx3 : P.x * P.x * P.x = P.a • P.x := by
+    simpa only [pow_succ, pow_zero, one_mul] using P.cube
+  have hx2r : P.basis.repr (P.x * P.x) = Finsupp.single 2 1 := by
+    simpa only [pow_two] using P.repr_sq
+  simp only [pow_succ, pow_zero, one_mul, add_mul, mul_add,
+    Algebra.TensorProduct.tmul_mul_tmul, mul_one, hx3,
+    map_add, map_smul, Module.Basis.tensorProduct_repr_tmul_apply,
+    P.repr_one, P.repr_x, hx2r, Finsupp.single_apply, Finsupp.coe_add,
+    Finsupp.coe_smul, Pi.add_apply, Pi.smul_apply, smul_eq_mul] at h'
+  norm_num at h'
+
+
+/-- The Oort–Tate parameter relation follows from the cubic equation and
+coassociativity; it is not additional presentation data. -/
+theorem parameter [IsDomain R] [CharZero R] (P : OortTateThreeBasis R A) :
+    2 * P.a * P.c = -3 := by
+  have h := (mul_eq_zero.mp P.parameter_mul_sq).resolve_left (pow_ne_zero 2 P.c_ne_zero)
+  linear_combination h
+
+set_option maxHeartbeats 1000000 in
+-- The nine tensor coefficients require repeated normalization of the antipode identities.
+/-- An odd power basis determines the Oort–Tate cubic and addition formulas.
+Only the power basis and the action of inversion are supplied; the Hopf laws
+determine all remaining presentation data. -/
+def ofOddPowerBasis [IsDomain R] [CharZero R] [Coalgebra.IsCocomm R A]
+    (x : A) (b : Module.Basis (Fin 3) R A)
+    (h0 : b 0 = 1) (h1 : b 1 = x) (h2 : b 2 = x ^ 2)
+    (hS : HopfAlgebra.antipode R x = -x) : OortTateThreeBasis R A := by
+  have hr0 : b.repr 1 = Finsupp.single 0 1 := by rw [← h0, Module.Basis.repr_self]
+  have hr1 : b.repr x = Finsupp.single 1 1 := by rw [← h1, Module.Basis.repr_self]
+  have hr2 : b.repr (x ^ 2) = Finsupp.single 2 1 := by rw [← h2, Module.Basis.repr_self]
+  have hS2 : HopfAlgebra.antipode R (x ^ 2) = x ^ 2 := by
+    change HopfAlgebra.antipodeAlgHom R A (x ^ 2) = _
+    rw [map_pow]
+    change (HopfAlgebra.antipode R x) ^ 2 = _
+    rw [hS, neg_sq]
+  have hexp (z : A) : z = b.repr z 0 • (1 : A) + b.repr z 1 • x + b.repr z 2 • x ^ 2 := by
+    simpa only [Fin.sum_univ_three, h0, h1, h2] using (b.sum_repr z).symm
+  have hodd (z : A) (hz : HopfAlgebra.antipode R z = -z) : z = b.repr z 1 • x := by
+    have hs : HopfAlgebra.antipode R z =
+        b.repr z 0 • (1 : A) - b.repr z 1 • x + b.repr z 2 • x ^ 2 := by
+      conv_lhs => rw [hexp z]
+      simp [hS, hS2, sub_eq_add_neg]
+    have hz0 : b.repr z 0 = 0 := by
+      have hc : b.repr z 0 = -b.repr z 0 := by
+        simpa [hr0, hr1, hr2] using congrArg (fun w ↦ b.repr w 0) (hs.symm.trans hz)
+      have : (2 : R) * b.repr z 0 = 0 := by linear_combination hc
+      exact (mul_eq_zero.mp this).resolve_left (by norm_num)
+    have hz2 : b.repr z 2 = 0 := by
+      have hc : b.repr z 2 = -b.repr z 2 := by
+        simpa [hr0, hr1, hr2] using congrArg (fun w ↦ b.repr w 2) (hs.symm.trans hz)
+      have : (2 : R) * b.repr z 2 = 0 := by linear_combination hc
+      exact (mul_eq_zero.mp this).resolve_left (by norm_num)
+    simpa [hz0, hz2] using hexp z
+  have hcube : x ^ 3 = b.repr (x ^ 3) 1 • x := by
+    apply hodd
+    change HopfAlgebra.antipodeAlgHom R A (x ^ 3) = _
+    rw [map_pow]
+    change (HopfAlgebra.antipode R x) ^ 3 = _
+    rw [hS]
+    ring
+  have he : Coalgebra.counit (R := R) x = 0 := by
+    have h := HopfAlgebra.counit_antipode (R := R) x
+    rw [hS, map_neg] at h
+    have : (2 : R) * Coalgebra.counit (R := R) x = 0 := by linear_combination -h
+    exact (mul_eq_zero.mp this).resolve_left (by norm_num)
+  let d := (b.tensorProduct b).repr (Coalgebra.comul (R := R) x)
+  have hd : Coalgebra.comul (R := R) x =
+      d (0, 0) • (1 ⊗ₜ[R] (1 : A)) + d (0, 1) • (1 ⊗ₜ[R] x) +
+      d (0, 2) • (1 ⊗ₜ[R] (x ^ 2)) +
+      (d (1, 0) • (x ⊗ₜ[R] 1) + d (1, 1) • (x ⊗ₜ[R] x) +
+        d (1, 2) • (x ⊗ₜ[R] (x ^ 2))) +
+      (d (2, 0) • ((x ^ 2) ⊗ₜ[R] 1) + d (2, 1) • ((x ^ 2) ⊗ₜ[R] x) +
+        d (2, 2) • ((x ^ 2) ⊗ₜ[R] (x ^ 2))) := by
+    simpa only [Fintype.sum_prod_type, Fin.sum_univ_three,
+      Module.Basis.tensorProduct_apply, h0, h1, h2] using
+      ((b.tensorProduct b).sum_repr (Coalgebra.comul (R := R) x)).symm
+  have hl := congrArg (TensorProduct.lid R A) (Coalgebra.rTensor_counit_comul (R := R) x)
+  rw [hd] at hl
+  have hl' : d (0, 0) • (1 : A) + d (0, 1) • x +
+      d (0, 2) • x ^ 2 = x := by
+    simpa [he, Bialgebra.counit_pow] using hl
+  have hr := congrArg (TensorProduct.rid R A) (Coalgebra.lTensor_counit_comul (R := R) x)
+  rw [hd] at hr
+  have hr' : d (0, 0) • (1 : A) + d (1, 0) • x + d (2, 0) • x ^ 2 = x := by
+    simpa [he, Bialgebra.counit_pow] using hr
+  have h00 : d (0, 0) = 0 := by
+    simpa [hr0, hr1, hr2] using congrArg (fun z ↦ b.repr z 0) hl'
+  have h01 : d (0, 1) = 1 := by
+    simpa [hr0, hr1, hr2] using congrArg (fun z ↦ b.repr z 1) hl'
+  have h02 : d (0, 2) = 0 := by
+    simpa [hr0, hr1, hr2] using congrArg (fun z ↦ b.repr z 2) hl'
+  have h10 : d (1, 0) = 1 := by
+    simpa [hr0, hr1, hr2] using congrArg (fun z ↦ b.repr z 1) hr'
+  have h20 : d (2, 0) = 0 := by
+    simpa [hr0, hr1, hr2] using congrArg (fun z ↦ b.repr z 2) hr'
+  have hs := LinearMap.congr_fun (BialgHom.antipode_comp (Bialgebra.comulBialgHom R A)) x
+  change HopfAlgebra.antipode R (Coalgebra.comul (R := R) x) =
+    Coalgebra.comul (R := R) (HopfAlgebra.antipode R x) at hs
+  rw [hS, map_neg, hd] at hs
+  have hs11 : d (1, 1) = -d (1, 1) := by
+    simpa [TensorProduct.antipode_def, hS, hS2, hr0, hr1, hr2] using
+      congrArg (fun z ↦ (b.tensorProduct b).repr z (1, 1)) hs
+  have hs22 : d (2, 2) = -d (2, 2) := by
+    simpa [TensorProduct.antipode_def, hS, hS2, hr0, hr1, hr2] using
+      congrArg (fun z ↦ (b.tensorProduct b).repr z (2, 2)) hs
+  have h11 : d (1, 1) = 0 := by
+    have : (2 : R) * d (1, 1) = 0 := by linear_combination hs11
+    exact (mul_eq_zero.mp this).resolve_left (by norm_num)
+  have h22 : d (2, 2) = 0 := by
+    have : (2 : R) * d (2, 2) = 0 := by linear_combination hs22
+    exact (mul_eq_zero.mp this).resolve_left (by norm_num)
+  have ht := Coalgebra.comm_comul R x
+  rw [hd] at ht
+  have h21 : d (2, 1) = d (1, 2) := by
+    simpa [hr0, hr1, hr2] using congrArg (fun z ↦ (b.tensorProduct b).repr z (1, 2)) ht
+  refine { x := x
+           a := b.repr (x ^ 3) 1
+           c := d (1, 2)
+           basis := b
+           basisZero := h0
+           basisOne := h1
+           basisTwo := h2
+           cube := hcube
+           antipode := hS
+           comul := ?_ }
+  rw [hd]
+  simp [h00, h01, h02, h10, h20, h11, h22, h21, smul_add, add_comm, add_left_comm, add_assoc]
+
 /-- Over the unramified three-adic integers, a nonzero Oort–Tate scaling is a unit.
 This is the rank-three use of the strict ramification bound `1 < 3 - 1`. -/
 theorem isUnit_of_map_x {A B : Type} [CommRing A] [CommRing B]
@@ -226,7 +384,7 @@ theorem surjective {A B : Type} [CommRing A] [CommRing B]
   exact P.surjective_of_map_x Q f v hv (P.isUnit_of_map_x Q f v hv hvn)
 
 /-- The cubic parameter is nonzero in characteristic zero. -/
-theorem a_ne_zero [CharZero R] (P : OortTateThreeBasis R A) : P.a ≠ 0 := by
+theorem a_ne_zero [IsDomain R] [CharZero R] (P : OortTateThreeBasis R A) : P.a ≠ 0 := by
   intro h
   have hp := P.parameter
   rw [h] at hp

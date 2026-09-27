@@ -5,6 +5,7 @@ Authors: krandder
 -/
 module
 
+public import FLT.GroupScheme.GlobalModel
 public import FLT.GroupScheme.RaynaudRigidity
 
 /-!
@@ -129,5 +130,25 @@ theorem raynaud_extend_generic_morphism_of_oortTateThreeBasis
     rw [genericHom_comp, f.genericHom_graphSnd, hg]
   exact ⟨fO, hO, fun gO hgO ↦
     raynaud_extend_generic_morphism_unique X Y f gO fO hgO hO⟩
+
+/-- It suffices to find odd power bases for the two models. The cubic equation,
+the comultiplication formula, and the parameter relation follow from the Hopf laws. -/
+theorem raynaud_extend_generic_morphism_of_odd_power_basis
+    (X Y : FF ℤ_[3] ℚ_[3])
+    (x : X.CoordinateRing) (y : Y.CoordinateRing)
+    (bX : Module.Basis (Fin 3) ℤ_[3] X.CoordinateRing)
+    (bY : Module.Basis (Fin 3) ℤ_[3] Y.CoordinateRing)
+    (hX0 : bX 0 = 1) (hX1 : bX 1 = x) (hX2 : bX 2 = x ^ 2)
+    (hY0 : bY 0 = 1) (hY1 : bY 1 = y) (hY2 : bY 2 = y ^ 2)
+    (hSX : HopfAlgebra.antipode ℤ_[3] x = -x)
+    (hSY : HopfAlgebra.antipode ℤ_[3] y = -y) (f : GenericGaloisHom X Y) :
+    ∃! fO : ModelHom X Y, genericHom fO = f := by
+  let : Coalgebra.IsCocomm ℤ_[3] X.CoordinateRing :=
+    cocomm_of_injective_points X.points.toAddMonoidHom X.points_bijective.1
+  let : Coalgebra.IsCocomm ℤ_[3] Y.CoordinateRing :=
+    cocomm_of_injective_points Y.points.toAddMonoidHom Y.points_bijective.1
+  exact raynaud_extend_generic_morphism_of_oortTateThreeBasis X Y
+    (OortTateThreeBasis.ofOddPowerBasis x bX hX0 hX1 hX2 hSX)
+    (OortTateThreeBasis.ofOddPowerBasis y bY hY0 hY1 hY2 hSY) f
 
 end ThreeAdicPlan
