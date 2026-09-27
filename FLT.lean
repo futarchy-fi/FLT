@@ -108,6 +108,7 @@ public import FLT.EllipticCurve.InvariantDifferential
 public import FLT.EllipticCurve.InvariantLogarithmic
 public import FLT.EllipticCurve.Multiplication
 public import FLT.EllipticCurve.MultiplicationDifferential
+public import FLT.EllipticCurve.MultiplicationRoot
 public import FLT.EllipticCurve.NTorsionCardOfDifferential
 public import FLT.EllipticCurve.NTorsionCardOfSeparable
 public import FLT.EllipticCurve.NTorsionFinite
