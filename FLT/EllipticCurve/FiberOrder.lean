@@ -53,4 +53,3 @@ theorem count_fiberIdeal {n : ℕ} (hn : n ≠ 0) (Q : W.Point)
   simp only [he, Finset.sum_ite_eq', mem_torsionPoints, nsmul_sub, sub_eq_zero]
   rfl
 end WeierstrassCurve.Affine.Point
-
