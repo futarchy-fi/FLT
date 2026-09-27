@@ -1,7 +1,7 @@
 /-
 Copyright (c) 2024 Junyan Xu, David Kurniadi Angdinata. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
-Authors: Junyan Xu, David Kurniadi Angdinata, Kelvin Randder
+Authors: Junyan Xu, David Kurniadi Angdinata, krandder
 -/
 module
 
