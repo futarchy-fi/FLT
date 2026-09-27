@@ -108,3 +108,74 @@ theorem pointsEquiv_apply (f : H →ₐ[R] Ω) :
   rfl
 
 end QuadraticTwist
+
+namespace QuadraticTwist
+
+universe v
+variable {R S A B Ω : Type v}
+variable [CommRing R] [CommRing S] [CommRing A] [CommRing B] [CommRing Ω]
+variable [Algebra R S] [Algebra R A] [Algebra R B] [Algebra R Ω]
+
+/-- Evaluation of a balanced tensor comparison multiplies the evaluated factors. -/
+theorem tensorBaseChange_eval (s : S →ₐ[R] Ω) (f : A →ₐ[R] Ω) (g : B →ₐ[R] Ω)
+    (x : S ⊗[R] A) (y : S ⊗[R] B) :
+    Algebra.TensorProduct.lift s (Algebra.TensorProduct.lift f g (fun _ _ ↦ .all _ _))
+      (fun _ _ ↦ .all _ _) (tensorBaseChange R S A B (x ⊗ₜ[S] y)) =
+    Algebra.TensorProduct.lift s f (fun _ _ ↦ .all _ _) x *
+      Algebra.TensorProduct.lift s g (fun _ _ ↦ .all _ _) y := by
+  induction x using TensorProduct.inductionOn with
+  | add x x' hx hx' => simp only [TensorProduct.add_tmul, map_add, hx, hx', add_mul]
+  | tmul t a =>
+    induction y using TensorProduct.inductionOn with
+    | add y y' hy hy' => simp only [TensorProduct.tmul_add, map_add, hy, hy', mul_add]
+    | tmul w b => simp [mul_comm, mul_left_comm, mul_assoc]
+
+end QuadraticTwist
+
+namespace QuadraticTwist
+
+universe v
+variable {R H Ω : Type v} [CommRing R] [CommRing H] [CommRing Ω]
+variable [HopfAlgebra R H] [Coalgebra.IsCocomm R H] [Algebra R Ω]
+variable (u : Rˣ) (r : R) (hr : 2 * r = 1)
+
+local notation "ι" => HopfAlgebra.antipodeAlgEquiv R H
+local notation "D" => model (u : R) ι
+local notation "S" => QuadraticAlgebra R (u : R) 0
+local notation "e₂" => modelTensorEquiv ι ι u (HopfAlgebra.antipode_involutive R H)
+  (HopfAlgebra.antipode_involutive R H) r hr
+
+/-- Restriction of coefficient evaluation respects the descended convolution law. -/
+theorem pointMap_convolution (s : S →ₐ[R] Ω) (f g : H →ₐ[R] Ω) :
+    (Algebra.TensorProduct.lift (pointMap u ι s f) (pointMap u ι s g)
+      (fun _ _ ↦ .all _ _)).comp (comul u r hr) =
+    pointMap u ι s ((Algebra.TensorProduct.lift f g (fun _ _ ↦ .all _ _)).comp
+      (Bialgebra.comulAlgHom R H)) := by
+  have he (z : D ⊗[R] D) :
+      Algebra.TensorProduct.lift (pointMap u ι s f) (pointMap u ι s g)
+        (fun _ _ ↦ .all _ _) z =
+      Algebra.TensorProduct.lift s (Algebra.TensorProduct.lift f g (fun _ _ ↦ .all _ _))
+        (fun _ _ ↦ .all _ _) (e₂ z).val := by
+    induction z using TensorProduct.inductionOn with
+    | add x y hx hy => simp only [map_add, Subalgebra.coe_add, hx, hy]
+    | tmul a b =>
+      rw [modelTensorEquiv_tmul, tensorBaseChange_eval]
+      rfl
+  apply AlgHom.ext
+  intro a
+  change Algebra.TensorProduct.lift (pointMap u ι s f) (pointMap u ι s g)
+    (fun _ _ ↦ .all _ _) (comul u r hr a) = _
+  rw [he, comul_compat]
+  have hh (z : S ⊗[R] H) :
+      Algebra.TensorProduct.lift s (Algebra.TensorProduct.lift f g (fun _ _ ↦ .all _ _))
+        (fun _ _ ↦ .all _ _)
+        (Algebra.TensorProduct.map (AlgHom.id R S) (Bialgebra.comulAlgHom R H) z) =
+      Algebra.TensorProduct.lift s
+        ((Algebra.TensorProduct.lift f g (fun _ _ ↦ .all _ _)).comp
+          (Bialgebra.comulAlgHom R H)) (fun _ _ ↦ .all _ _) z := by
+    induction z using TensorProduct.inductionOn with
+    | add x y hx hy => simp only [map_add, hx, hy]
+    | tmul t a => rfl
+  exact hh a.val
+
+end QuadraticTwist
