@@ -284,8 +284,10 @@ public import FLT.GroupScheme.FiniteFlat
 public import FLT.GroupScheme.FiniteFlatSubobject
 public import FLT.GroupScheme.GlobalModel
 public import FLT.GroupScheme.IntegralCoordinateAlgebra
+public import FLT.GroupScheme.IntegralEtaleAlgebra
 public import FLT.GroupScheme.IntegralEtaleModel
 public import FLT.GroupScheme.IntegralEtaleModelRamification
+public import FLT.GroupScheme.IntegralHopfAlgebra
 public import FLT.GroupScheme.KummerAlgebra
 public import FLT.GroupScheme.KummerComultiplication
 public import FLT.GroupScheme.KummerHopf
