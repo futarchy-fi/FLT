@@ -262,6 +262,8 @@ public import FLT.GaloisRepresentation.HardlyRamified.Frey
 public import FLT.GaloisRepresentation.HardlyRamified.Lift
 public import FLT.GaloisRepresentation.HardlyRamified.ModThree
 public import FLT.GaloisRepresentation.HardlyRamified.PrimeField
+public import FLT.GaloisRepresentation.HardlyRamified.ThreeAdicAlgebra
+public import FLT.GaloisRepresentation.HardlyRamified.ThreeAdicDegree
 public import FLT.GaloisRepresentation.HardlyRamified.Threeadic
 public import FLT.GaloisRepresentation.HardlyRamified.TraceLeaves
 public import FLT.GaloisRepresentation.HardlyRamified.TraceReducibility
@@ -396,6 +398,7 @@ public import FLT.Mathlib.RepresentationTheory.Continuous.Basic
 public import FLT.Mathlib.RepresentationTheory.Continuous.TopRep
 public import FLT.Mathlib.RepresentationTheory.Homological.ContCohomology.Basic
 public import FLT.Mathlib.RepresentationTheory.Homological.ContCohomology.CupProduct
+public import FLT.Mathlib.RingTheory.AdicCompletion.PowerQuotients
 public import FLT.Mathlib.RingTheory.AdjoinRoot
 public import FLT.Mathlib.RingTheory.DedekindDomain.AdicValuation
 public import FLT.Mathlib.RingTheory.DedekindDomain.FiniteAdeleRing
