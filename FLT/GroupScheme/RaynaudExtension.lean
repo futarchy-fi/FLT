@@ -32,14 +32,17 @@ no morphism-extension or classification assertion is included. The fraction fiel
 can be specified explicitly, for example `FF ℤ_[3] ℚ_[3]`. -/
 structure FF (R : Type u) [CommRing R] (K : Type u := FractionRing R)
     [Field K] [Algebra R K] where
+  /-- The coordinate ring of the finite flat group scheme. -/
   CoordinateRing : Type u
   [commRing : CommRing CoordinateRing]
   [hopfAlgebra : HopfAlgebra R CoordinateRing]
   [finiteFlat : HopfAlgebra.IsFiniteFlat R CoordinateRing]
   [genericEtale : Algebra.Etale K (K ⊗[R] CoordinateRing)]
+  /-- The Galois module being modelled. -/
   Points : Type u
   [addCommGroup : AddCommGroup Points]
   [action : DistribMulAction (AlgebraicClosure K ≃ₐ[K] AlgebraicClosure K) Points]
+  /-- Identification of generic geometric points with the Galois module. -/
   points : Additive (K ⊗[R] CoordinateRing →ₐ[K] AlgebraicClosure K) →+[
     AlgebraicClosure K ≃ₐ[K] AlgebraicClosure K] Points
   points_bijective : Function.Bijective points
