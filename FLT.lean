@@ -96,6 +96,7 @@ public import FLT.Deformations.RepresentationTheory.IntegralClosure
 public import FLT.Deformations.RepresentationTheory.Irreducible
 public import FLT.Deformations.Subfunctor
 public import FLT.DivisionAlgebra.Finiteness
+public import FLT.EllipticCurve.CoefficientAction
 public import FLT.EllipticCurve.CoordinateRing
 public import FLT.EllipticCurve.CoordinateRingDedekind
 public import FLT.EllipticCurve.DivisionPolynomialDifferential
@@ -104,11 +105,14 @@ public import FLT.EllipticCurve.DivisionPolynomialSeparable
 public import FLT.EllipticCurve.FiberOrder
 public import FLT.EllipticCurve.FlatTorsion
 public import FLT.EllipticCurve.FunctionField
+public import FLT.EllipticCurve.FunctionFieldDegree
+public import FLT.EllipticCurve.FunctionFieldOrder
 public import FLT.EllipticCurve.Infinity
 public import FLT.EllipticCurve.InvariantDerivation
 public import FLT.EllipticCurve.InvariantDifferential
 public import FLT.EllipticCurve.InvariantLogarithmic
 public import FLT.EllipticCurve.Multiplication
+public import FLT.EllipticCurve.MultiplicationDegree
 public import FLT.EllipticCurve.MultiplicationDifferential
 public import FLT.EllipticCurve.MultiplicationFiber
 public import FLT.EllipticCurve.MultiplicationInfinity
@@ -135,8 +139,11 @@ public import FLT.EllipticCurve.TorsionFunction
 public import FLT.EllipticCurve.TorsionOrbit
 public import FLT.EllipticCurve.TorsionPairing
 public import FLT.EllipticCurve.TorsionPairingAdapter
+public import FLT.EllipticCurve.TorsionPairingAlternating
 public import FLT.EllipticCurve.TorsionPairingBilinear
 public import FLT.EllipticCurve.TorsionPairingDescent
+public import FLT.EllipticCurve.TorsionPairingEquivariant
+public import FLT.EllipticCurve.TorsionPairingNondegenerate
 public import FLT.EllipticCurve.TorsionSpecialization
 public import FLT.EllipticCurve.TorsionStructure
 public import FLT.EllipticCurve.Translation
