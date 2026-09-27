@@ -107,6 +107,9 @@ public import FLT.FreyCurve.Serre.FixedLineDescent
 public import FLT.FreyCurve.Serre.FreyTwoTorsion
 public import FLT.FreyCurve.Serre.GoodReduction
 public import FLT.FreyCurve.Serre.JoinCoprimeTorsion
+public import FLT.FreyCurve.Serre.LocalInertia
+public import FLT.FreyCurve.Serre.LocalTorsion
+public import FLT.FreyCurve.Serre.MultiplicativeReduction
 public import FLT.FreyCurve.Serre.ReducibleFiltration
 public import FLT.FreyCurve.Serre.RootsOfUnityInertia
 public import FLT.FreyCurve.Serre.Semistable

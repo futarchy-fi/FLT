@@ -55,3 +55,33 @@ theorem ValuationSubring.inertia_fixes_of_pow_eq_one
     (by rw [← smul_pow', hy, smul_one]) hy
     (by rw [IsLocalRing.ResidueField.residue_smul, hres])
   exact congrArg Subtype.val heq
+
+/-- Inertia fixes an integral root of a quadratic with invariant coefficients
+and unit discriminant, even when the residue characteristic is two. -/
+theorem ValuationSubring.inertia_fixes_quadratic_root
+    {K L : Type*} [Field K] [Field L] [Algebra K L]
+    (A : ValuationSubring L) (t n x : A)
+    (hD : IsUnit (t ^ 2 - 4 * n)) (hx : x ^ 2 - t * x + n = 0)
+    (σ : A.decompositionSubgroup K) (hσ : σ ∈ A.inertiaSubgroup K)
+    (ht : σ • t = t) (hn : σ • n = n) : σ • x = x := by
+  have hroot : (σ • x) ^ 2 - t * (σ • x) + n = 0 := by
+    simpa only [smul_add, smul_sub, smul_pow', smul_mul', ht, hn, smul_zero]
+      using congrArg (fun y : A ↦ σ • y) hx
+  have hder : IsUnit (2 * x - t) := by
+    have heq : (2 * x - t) ^ 2 = t ^ 2 - 4 * n := by
+      linear_combination 4 * hx
+    exact (isUnit_pow_iff (by decide : 2 ≠ 0)).mp (heq ▸ hD)
+  have hres : IsLocalRing.residue A (σ • x) = IsLocalRing.residue A x := by
+    rw [IsLocalRing.ResidueField.residue_smul]
+    exact congrArg (fun f : RingAut (IsLocalRing.ResidueField A) ↦
+      f (IsLocalRing.residue A x)) hσ
+  symm
+  apply IsLocalRing.eq_of_eval_eq_zero_of_not_isUnit_sub (f := X ^ 2 - C t * X + C n)
+  · simpa using hx
+  · simpa using hroot
+  · rw [← IsLocalRing.residue_ne_zero_iff_isUnit]
+    simp [map_sub, hres]
+  · simpa only [derivative_add, derivative_sub, derivative_pow, derivative_X,
+      derivative_mul, derivative_C, eval_add, eval_sub, eval_mul, eval_pow,
+      eval_C, eval_X, eval_zero, eval_one, mul_one, zero_mul, zero_add, sub_zero,
+      add_zero, show (2 : ℕ) - 1 = 1 from rfl, pow_one, Nat.cast_ofNat] using hder
