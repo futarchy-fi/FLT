@@ -237,9 +237,11 @@ theorem WeierstrassCurve.n_torsion_dimension [IsSepClosed k] {n : ℕ} (hn : (n 
     simp [hn]
   exact ⟨φ.trans (RingEquiv.piFinTwo _).toAddEquiv⟩
 
--- follows easily from the above
-noncomputable instance (n : ℕ) : Module.Finite (ZMod n) (E.nTorsion n) := by
-  sorry
+/-- Positive-order torsion is finitely generated over `ZMod n` over every field.
+The nonzero hypothesis is necessary: zero-torsion is the entire group of points. -/
+noncomputable instance (n : ℕ) [NeZero n] : Module.Finite (ZMod n) (E.nTorsion n) := by
+  let := E.n_torsion_finite (Nat.pos_of_ne_zero (NeZero.ne n))
+  infer_instance
 
 -- This should be a straightforward but perhaps long unravelling of the definition
 /-- The map on points for an elliptic curve over `k` induced by a morphism of `k`-algebras
