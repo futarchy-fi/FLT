@@ -230,6 +230,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.AtTwo
 public import FLT.GaloisRepresentation.HardlyRamified.B5Inputs
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.DedekindZeta
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.FixedVector
+public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.Generators
 public import FLT.GaloisRepresentation.HardlyRamified.Defs
 public import FLT.GaloisRepresentation.HardlyRamified.Family
 public import FLT.GaloisRepresentation.HardlyRamified.Frey
