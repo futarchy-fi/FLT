@@ -411,6 +411,7 @@ public import FLT.TateCurve.AlgebraicUniformization
 public import FLT.TateCurve.Collinearity
 public import FLT.TateCurve.CompleteAddition
 public import FLT.TateCurve.Descent
+public import FLT.TateCurve.Discriminant
 public import FLT.TateCurve.Elliptic
 public import FLT.TateCurve.Equation
 public import FLT.TateCurve.Expansion
@@ -419,6 +420,7 @@ public import FLT.TateCurve.FiniteExtension
 public import FLT.TateCurve.FiniteStages
 public import FLT.TateCurve.InseparableLifting
 public import FLT.TateCurve.Integral
+public import FLT.TateCurve.JInvariant
 public import FLT.TateCurve.LocalField
 public import FLT.TateCurve.LocalUniformization
 public import FLT.TateCurve.Model
