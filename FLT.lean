@@ -229,6 +229,7 @@ public import FLT.GaloisRepresentation.Cyclotomic
 public import FLT.GaloisRepresentation.HardlyRamified.AtTwo
 public import FLT.GaloisRepresentation.HardlyRamified.B5Inputs
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.DedekindZeta
+public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.FiniteRamification
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.FixedVector
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.FrobeniusOrder
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.HigherDegree
@@ -239,6 +240,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.NonsplitBound
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.OpenKernel
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.PrimeFibers
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.PrimeSummability
+public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.SubfieldSplitting
 public import FLT.GaloisRepresentation.HardlyRamified.Defs
 public import FLT.GaloisRepresentation.HardlyRamified.Family
 public import FLT.GaloisRepresentation.HardlyRamified.Frey

@@ -7,6 +7,7 @@ module
 
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.HigherDegree
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.PrimeFibers
+public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.SubfieldSplitting
 public import Mathlib.NumberTheory.NumberField.Discriminant.Different
 
 /-!
@@ -78,9 +79,6 @@ theorem finite_ramified_fibers :
   (finite_ramified K L).preimage' fun v _ ↦ finite_primeBelow_fiber K L v
 
 variable [IsGalois K L]
-
-/-- Unramified primes with trivial arithmetic Frobenius. -/
-def Split : Set (Prime K) := {v | Unram K L v ∧ frob K L v = 1}
 
 /-- Reindexing primes above split primes by their base prime and fiber. -/
 def splitPrimeEquiv :
