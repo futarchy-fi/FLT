@@ -118,6 +118,7 @@ public import FLT.FreyCurve.Serre.FixedLineDescent
 public import FLT.FreyCurve.Serre.FreyTwoTorsion
 public import FLT.FreyCurve.Serre.GoodReduction
 public import FLT.FreyCurve.Serre.JoinCoprimeTorsion
+public import FLT.FreyCurve.Serre.KummerInertia
 public import FLT.FreyCurve.Serre.LocalInertia
 public import FLT.FreyCurve.Serre.LocalTorsion
 public import FLT.FreyCurve.Serre.MultiplicativeQuotient
