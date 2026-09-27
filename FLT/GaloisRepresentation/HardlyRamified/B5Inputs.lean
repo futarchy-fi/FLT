@@ -18,12 +18,17 @@ public import Mathlib.Topology.Instances.ZMod
 public import Mathlib.RingTheory.Ideal.MinimalPrime.Localization
 public import Mathlib.LinearAlgebra.FreeModule.PID
 
+import FLT.DedekindDomain.AdicValuation
+import Mathlib.Data.ZMod.QuotientRing
+import Mathlib.RingTheory.RootsOfUnity.AlgebraicallyClosed
+
 /-!
 # General inputs for B5
 
 The Frobenius-trace criterion is proved from general Chebotarev density and the
-cyclotomic Frobenius formula, the two arithmetic inputs admitted here. Its
-rank-two representation theory is proved in `TraceReducibility`. Neither the
+cyclotomic Frobenius formula. The latter is proved here; Chebotarev density
+remains admitted. The rank-two representation theory is proved in
+`TraceReducibility`. Neither the
 criterion nor the domain-quotient construction uses the hardly-ramified
 hypothesis or any B6 theorem.
 Coefficient-quotient preservation, trace/base-change identities, injectivity
@@ -239,15 +244,70 @@ theorem chebotarev_frobenius_dense
             hq.toHeightOneSpectrumRingOfIntegersRat) * σ⁻¹) := by
   sorry
 
+/-- The residue field of the completion of ℚ at `q` has `q` elements. -/
+private theorem adicCompletion_residueField_card (q : ℕ) (hq : q.Prime) :
+    Nat.card (IsLocalRing.ResidueField
+      (hq.toHeightOneSpectrumRingOfIntegersRat.adicCompletionIntegers ℚ)) = q := by
+  let v := hq.toHeightOneSpectrumRingOfIntegersRat
+  let e : (𝓞 ℚ) ⧸ v.asIdeal ≃+* ZMod q :=
+    (Ideal.quotientEquiv _ _ Rat.ringOfIntegersEquiv (by
+      change Ideal.span {(q : ℤ)} =
+        Ideal.map Rat.ringOfIntegersEquiv.toRingHom
+          (Ideal.comap Rat.ringOfIntegersEquiv.toRingHom (Ideal.span {(q : ℤ)}))
+      exact (Ideal.map_comap_of_surjective Rat.ringOfIntegersEquiv.toRingHom
+        Rat.ringOfIntegersEquiv.surjective _).symm)).trans
+      (Int.quotientSpanNatEquivZMod q)
+  rw [← Nat.card_congr (HeightOneSpectrum.ResidueFieldEquivCompletionResidueField ℚ v).toEquiv,
+    Nat.card_congr e.toEquiv, Nat.card_zmod]
+
+open IsLocalRing in
+set_option backward.isDefEq.respectTransparency false in
+/-- Arithmetic Frobenius acts by the `q`th power on roots of `p`-power order
+in the algebraic closure of the completion at `q ≠ p`. -/
+private theorem adicArithFrob_apply_of_pow_eq_one
+    (p q : ℕ) [Fact p.Prime] (hq : q.Prime) (hqp : q ≠ p)
+    (n : ℕ) (ζ : AlgebraicClosure (hq.toHeightOneSpectrumRingOfIntegersRat.adicCompletion ℚ))
+    (hζ : ζ ^ (p ^ n) = 1) :
+    Field.AbsoluteGaloisGroup.adicArithFrob hq.toHeightOneSpectrumRingOfIntegersRat ζ = ζ ^ q := by
+  let v := hq.toHeightOneSpectrumRingOfIntegersRat
+  let K := v.adicCompletion ℚ
+  let R := v.adicCompletionIntegers ℚ
+  let S := IntegralClosure R (AlgebraicClosure K)
+  let Q := maximalIdeal S
+  have hQR : Q.under R = maximalIdeal R :=
+    maximalIdeal_comap (algebraMap R S)
+  have hc : Nat.card (R ⧸ Q.under R) = q := by
+    rw [hQR]
+    exact adicCompletion_residueField_card q hq
+  have hn : ((p ^ n : ℕ) : S) ∉ Q := by
+    have hqS : (q : S) ∈ Q := by
+      have hqR : (q : R) ∈ maximalIdeal R := by
+        rw [← Ideal.Quotient.eq_zero_iff_mem]
+        rw [map_natCast, ← adicCompletion_residueField_card q hq]
+        let := Fintype.ofFinite (ResidueField (v.adicCompletionIntegers ℚ))
+        simpa only [Nat.card_eq_fintype_card] using
+          Nat.cast_card_eq_zero (ResidueField (v.adicCompletionIntegers ℚ))
+      rw [← map_natCast (algebraMap R S)]
+      exact (show (q : R) ∈ Q.under R from hQR ▸ hqR)
+    have hcop : Nat.Coprime q (p ^ n) :=
+      (hq.coprime_iff_not_dvd.mpr (fun h ↦
+        hqp ((Nat.prime_dvd_prime_iff_eq hq Fact.out).mp h))).pow_right n
+    exact Ideal.IsPrime.notMem_of_isCoprime_of_mem
+      (by simpa only [map_natCast] using hcop.isCoprime.map (Int.castRingHom S)) hqS
+  let z : S := ⟨ζ, IsIntegral.of_pow (pow_pos (Fact.out : p.Prime).pos n) (hζ ▸ isIntegral_one)⟩
+  have hz : z ^ (p ^ n) = 1 := Subtype.ext hζ
+  have H := (Field.AbsoluteGaloisGroup.isArithFrobAt_adicArithFrob v).apply_of_pow_eq_one hz hn
+  rw [hc] at H
+  exact congrArg (algebraMap S (AlgebraicClosure K)) H
+
 /-- At a rational prime `q ≠ p`, the `p`-adic cyclotomic character sends an
 arithmetic Frobenius to `q`. This is independent of the chosen Frobenius lift
 and embedding: inertia acts trivially on roots of unity of order prime to `q`,
 and arithmetic Frobenius acts by the `q`th power on their reductions.
 
-The library has the cyclotomic character and arithmetic Frobenius separately,
-but not yet their compatibility on roots of unity. This local arithmetic
-identity is the second, separate input; it contains no density or
-representation-theoretic assertion. -/
+The local root-of-unity formula is transported through the chosen embedding
+of algebraic closures. The character is then determined by its reductions
+modulo every power of `p`. -/
 @[nolint unusedArguments]
 theorem cyclotomicCharacter_adicArithFrob
     (p q : ℕ) [Fact p.Prime] (hq : q.Prime) (hqp : q ≠ p) :
@@ -256,7 +316,26 @@ theorem cyclotomicCharacter_adicArithFrob
         (algebraMap ℚ (hq.toHeightOneSpectrumRingOfIntegersRat.adicCompletion ℚ))
         (Field.AbsoluteGaloisGroup.adicArithFrob
           hq.toHeightOneSpectrumRingOfIntegersRat)).toRingEquiv : ℤ_[p]) = q := by
-  sorry
+  let v := hq.toHeightOneSpectrumRingOfIntegersRat
+  let f := algebraMap ℚ (v.adicCompletion ℚ)
+  let σ := Field.AbsoluteGaloisGroup.adicArithFrob v
+  apply PadicInt.ext_of_toZModPow.mp
+  intro n
+  rw [cyclotomicCharacter.toZModPow, map_natCast]
+  symm
+  apply modularCyclotomicCharacter.unique
+  intro t ht
+  have ht' : (t : AlgebraicClosure ℚ) ^ (p ^ n) = 1 := by
+    exact congrArg Units.val ((mem_rootsOfUnity (p ^ n) t).mp ht)
+  have hlocal := adicArithFrob_apply_of_pow_eq_one p q hq hqp n (AlgebraicClosure.map f t)
+    (by rw [← map_pow, ht', map_one])
+  have hglobal : Field.absoluteGaloisGroup.map f σ t = (t : AlgebraicClosure ℚ) ^ q := by
+    apply (AlgebraicClosure.map f).injective
+    rw [Field.absoluteGaloisGroup.lift_map, map_pow]
+    exact hlocal
+  change Field.absoluteGaloisGroup.map f σ t = _
+  rw [hglobal, ZMod.val_natCast]
+  exact pow_eq_pow_mod q ht'
 
 set_option backward.isDefEq.respectTransparency false in
 /-- Frobenius traces `1 + q` and cyclotomic determinant imply reducibility.
