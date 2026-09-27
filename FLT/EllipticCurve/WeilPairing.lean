@@ -44,7 +44,7 @@ namespace WeierstrassCurve
 variable {K : Type*} [Field K] (E : WeierstrassCurve K)
   [DecidableEq (AlgebraicClosure K)] (n : ℕ)
 
-/-- A perfect alternating pairing on geometric torsion, compatible with the Galois action.
+/-- A nondegenerate alternating pairing on geometric torsion, compatible with the Galois action.
 The linear target is the additive form of the group of roots of unity. -/
 structure TorsionWeilPairing where
   /-- The alternating bilinear map on geometric torsion. -/
@@ -60,6 +60,42 @@ structure TorsionWeilPairing where
 namespace TorsionWeilPairing
 
 variable {E n} (w : E.TorsionWeilPairing n)
+
+/-- Upgrade a bilinear torsion pairing once alternation, nondegeneracy and Galois
+equivariance have been proved. Each pairing law is an explicit input. -/
+def ofBilinear
+    (e : (E.map (algebraMap K (AlgebraicClosure K))).nTorsion n →+
+      (E.map (algebraMap K (AlgebraicClosure K))).nTorsion n →+
+        Additive (rootsOfUnity n (AlgebraicClosure K)))
+    (ha : ∀ P, e P P = 0)
+    (hn : ∀ P, (∀ Q, e P Q = 0) → P = 0)
+    (hg : ∀ (g : Field.absoluteGaloisGroup K) P Q,
+      ((e (E.torsionGaloisRepresentation n g P)
+        (E.torsionGaloisRepresentation n g Q)).toMul.val : AlgebraicClosure K) =
+          g ((e P Q).toMul.val : AlgebraicClosure K)) : E.TorsionWeilPairing n where
+  pairing :=
+    { toFun := fun v => e (v 0) (v 1)
+      map_update_add' := by
+        intro _ v i x y
+        fin_cases i <;> simp [map_add]
+      map_update_smul' := by
+        intro _ v i a x
+        fin_cases i <;> simp [ZMod.map_smul]
+      map_eq_zero_of_eq' := by
+        intro v i j h hij
+        fin_cases i <;> fin_cases j
+        · exact (hij rfl).elim
+        · change v 0 = v 1 at h
+          change e (v 0) (v 1) = 0
+          rw [h]
+          exact ha _
+        · change v 1 = v 0 at h
+          change e (v 0) (v 1) = 0
+          rw [← h]
+          exact ha _
+        · exact (hij rfl).elim }
+  nondegenerate := hn
+  galois_equivariant := fun g v => hg g (v 0) (v 1)
 
 /-- Nondegeneracy forces the pairing on a nonzero torsion module to be nonzero. -/
 theorem pairing_ne_zero
