@@ -22,7 +22,7 @@ coefficient quotients then gives `IsFlatAt`.
 
 The good-reduction case uses the existing `torsion_flat_of_good_reduction`
 admission. The split multiplicative case uses the explicit finite-flat Kummer model.
-The nonsplit case still requires descent.
+The nonsplit case is supplied by `FLT.FreyCurve.Serre.NonsplitFlat`.
 -/
 
 @[expose] public section

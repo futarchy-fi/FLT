@@ -123,4 +123,23 @@ theorem torsion_isFiniteFlat_of_multiplicative (P : FreyPackage)
     KummerAlgebra.twistModel_generic_etale R P.p u d r hr K
       (isUnit_iff_ne_zero.mpr (Nat.cast_ne_zero.mpr P.hppos.ne')), f, hf⟩
 
+/-- Good and both multiplicative cases give flatness at the Frey exponent prime. -/
+theorem torsion_isFlatAt (P : FreyPackage) :
+    haveI : Fact P.p.Prime := ⟨P.pp⟩
+    (P.freyCurve.galoisRep P.p P.hppos).IsFlatAt
+      P.pp.toHeightOneSpectrumRingOfIntegersRat := by
+  classical
+  let : Fact P.p.Prime := ⟨P.pp⟩
+  let v := P.pp.toHeightOneSpectrumRingOfIntegersRat
+  obtain hg | hm := P.good_or_multiplicative (v.adicCompletionIntegers ℚ) (v.adicCompletion ℚ)
+  · let := hg
+    exact torsion_isFlatAt_of_goodReduction P
+  · let := hm
+    by_cases hs : (P.freyCurve.baseChange (v.adicCompletion ℚ)).HasSplitMultiplicativeReduction
+        (v.adicCompletionIntegers ℚ)
+    · let := hs
+      exact torsion_isFlatAt_of_splitMultiplicative P
+    · exact (P.freyCurve.hasFlatProlongationAt_torsion_of_isFiniteFlat v P.p P.hppos
+        (torsion_isFiniteFlat_of_multiplicative P)).isFlatAt v _
+
 end FreyCurve

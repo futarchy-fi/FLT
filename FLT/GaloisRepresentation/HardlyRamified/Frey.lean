@@ -8,7 +8,7 @@ module
 public import FLT.GaloisRepresentation.HardlyRamified.AtTwo
 public import FLT.GaloisRepresentation.HardlyRamified.PrimeField
 public import FLT.FreyCurve.Basic
-public import FLT.FreyCurve.Serre.Flat
+public import FLT.FreyCurve.Serre.NonsplitFlat
 public import FLT.FreyCurve.Serre.Unramified
 public import FLT.EllipticCurve.Torsion
 public import FLT.EllipticCurve.WeilPairingDeterminant
@@ -21,8 +21,8 @@ import Mathlib.NumberTheory.ArithmeticFunction.Misc
 
 We prove that the `ℓ`-torsion of the Frey curve attached to a Frey package
 is a hardly ramified Galois representation, and deduce that this representation is
-not irreducible from the generic prime-field theorem. The determinant and flatness
-fields remain separate arithmetic inputs.
+not irreducible from the generic prime-field theorem. The determinant field
+remains a separate arithmetic input.
 -/
 
 @[expose] public section
@@ -78,12 +78,13 @@ theorem FreyCurve.torsion_det :
 
 /-- Frey torsion is flat at its residual prime, as required by
 `IsHardlyRamified.isFlat`, including the condition for every open coefficient ideal.
-Both good and multiplicative reduction at that prime must be treated. -/
+Good reduction uses the general finite-flat torsion theorem; multiplicative reduction
+uses the split or quadratically descended Kummer model. -/
 theorem FreyCurve.torsion_isFlat :
     haveI : Fact P.p.Prime := ⟨P.pp⟩
     (P.freyCurve.galoisRep P.p P.hppos).IsFlatAt
       (Nat.Prime.toHeightOneSpectrumRingOfIntegersRat (Fact.out : P.p.Prime)) :=
-  sorry
+  FreyCurve.torsion_isFlatAt P
 
 /-- Assemble the rank, determinant, unramifiedness, flatness, and quotient-at-two
 inputs for Frey torsion. -/
