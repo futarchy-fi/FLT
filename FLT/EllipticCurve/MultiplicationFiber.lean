@@ -73,4 +73,31 @@ theorem finrank_multiplicationFiber [Nontrivial R] {n : ℤ} (hn : n ≠ 0) (ξ 
     Module.finrank R (AdjoinRoot (W.multiplicationFiberPolynomial n ξ)) = n.natAbs ^ 2 := by
   rw [Module.finrank_eq_card_basis (W.multiplicationFiberBasis hn ξ), Fintype.card_fin]
 
+/-- The affine multiplication-fiber equation commutes with base change. -/
+theorem map_multiplicationFiberPolynomial {S : Type*} [CommRing S] (f : R →+* S)
+    (n : ℤ) (ξ : R) :
+    (W.map f).multiplicationFiberPolynomial n (f ξ) =
+      (W.multiplicationFiberPolynomial n ξ).map f := by
+  simp only [multiplicationFiberPolynomial, map_Φ, map_ΨSq,
+    Polynomial.map_sub, Polynomial.map_mul, Polynomial.map_C]
+
+/-- The denominator of multiplication is a unit at every algebra-valued root
+of the affine fiber equation when the discriminant is a unit. -/
+theorem isUnit_aeval_ΨSq_of_multiplicationFiberPolynomial_eq_zero
+    {S : Type*} [CommRing S] [Algebra R S] (hΔ : IsUnit W.Δ)
+    (n : ℤ) (ξ : R) (x : S) (hx : aeval x (W.multiplicationFiberPolynomial n ξ) = 0) :
+    IsUnit (aeval x (W.ΨSq n)) := by
+  have he : aeval x (W.Φ n) = algebraMap R S ξ * aeval x (W.ΨSq n) := by
+    change aeval x (W.Φ n - C ξ * W.ΨSq n) = 0 at hx
+    simpa only [map_sub, map_mul, aeval_C, sub_eq_zero] using hx
+  have hc := (W.isCoprime_Φ_ΨSq_of_isUnit hΔ n).map (aeval x).toRingHom
+  exact hc.symm.isUnit_of_dvd ⟨algebraMap R S ξ, he.trans (mul_comm _ _)⟩
+
+/-- The affine fiber algebra already inverts the multiplication denominator;
+no further localization is needed on this chart. -/
+theorem isUnit_ΨSq_multiplicationFiber (hΔ : IsUnit W.Δ) (n : ℤ) (ξ : R) :
+    IsUnit (aeval (AdjoinRoot.root (W.multiplicationFiberPolynomial n ξ)) (W.ΨSq n)) := by
+  apply W.isUnit_aeval_ΨSq_of_multiplicationFiberPolynomial_eq_zero hΔ n ξ
+  rw [AdjoinRoot.aeval_eq, AdjoinRoot.mk_self]
+
 end WeierstrassCurve
