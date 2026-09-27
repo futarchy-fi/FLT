@@ -146,6 +146,7 @@ public import FLT.FreyCurve.Serre.RootsOfUnityInertia
 public import FLT.FreyCurve.Serre.Semistable
 public import FLT.FreyCurve.Serre.StableLineQuotient
 public import FLT.FreyCurve.Serre.TateInertia
+public import FLT.FreyCurve.Serre.TateFlat
 public import FLT.FreyCurve.Serre.TateKummer
 public import FLT.FreyCurve.Serre.TateTorsion
 public import FLT.FreyCurve.Serre.TateUnramified
@@ -186,6 +187,7 @@ public import FLT.GroupScheme.KummerAlgebra
 public import FLT.GroupScheme.KummerComultiplication
 public import FLT.GroupScheme.KummerHopf
 public import FLT.GroupScheme.KummerParameter
+public import FLT.GroupScheme.KummerPoints
 public import FLT.HaarMeasure.FiniteAdeleRing
 public import FLT.HaarMeasure.HaarChar.AddEquiv
 public import FLT.HaarMeasure.HaarChar.AdeleRing
