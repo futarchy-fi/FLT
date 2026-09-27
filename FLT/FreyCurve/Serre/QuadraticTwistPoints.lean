@@ -84,4 +84,28 @@ theorem quadraticRootPointEquiv_conjugated (σ : Ω ≃ₐ[K] Ω)
       rw [← hq]
       ring
 
+/-- Fixing the discriminant square root gives the positive Galois sign. -/
+theorem quadraticRootPointEquiv_discriminant_fixed (h2 : (2 : Ω) ≠ 0)
+    (σ : Ω ≃ₐ[K] Ω)
+    (hσ : σ (algebraMap K Ω t - 2 * x) = algebraMap K Ω t - 2 * x)
+    (P : (E⁄Ω).Point) :
+    E.quadraticRootPointEquiv t n x hx hw (Affine.Point.map σ.toAlgHom P) =
+      Affine.Point.map σ.toAlgHom (E.quadraticRootPointEquiv t n x hx hw P) := by
+  apply E.quadraticRootPointEquiv_fixed t n x hx hw σ _ P
+  apply mul_left_cancel₀ h2
+  simp only [map_sub, map_mul, map_ofNat, AlgEquiv.commutes] at hσ
+  linear_combination -hσ
+
+/-- Negating the discriminant square root gives the negative Galois sign. -/
+theorem quadraticRootPointEquiv_discriminant_negated (h2 : (2 : Ω) ≠ 0)
+    (σ : Ω ≃ₐ[K] Ω)
+    (hσ : σ (algebraMap K Ω t - 2 * x) = -(algebraMap K Ω t - 2 * x))
+    (P : (E⁄Ω).Point) :
+    E.quadraticRootPointEquiv t n x hx hw (Affine.Point.map σ.toAlgHom P) =
+      -Affine.Point.map σ.toAlgHom (E.quadraticRootPointEquiv t n x hx hw P) := by
+  apply E.quadraticRootPointEquiv_conjugated t n x hx hw σ _ P
+  apply mul_left_cancel₀ h2
+  simp only [map_sub, map_mul, map_ofNat, AlgEquiv.commutes] at hσ
+  linear_combination -hσ
+
 end WeierstrassCurve
