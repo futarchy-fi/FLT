@@ -87,6 +87,11 @@ noncomputable def tensorComponentsEquiv :
         (Algebra.TensorProduct.comm R (Coordinate R n u) (Component R n u i)).trans
           (Algebra.TensorProduct.piRight R R (Component R n u i) (Component R n u))
 
+/-- The tensor component equivalence keeps the left and right factors in their original order. -/
+@[simp] theorem tensorComponentsEquiv_tmul (f g : Coordinate R n u) (i j : Fin n) :
+    tensorComponentsEquiv R n u (f ⊗ₜ[R] g) i j = f i ⊗ₜ[R] g j := by
+  simp [tensorComponentsEquiv]
+
 /-- Comultiplication on the Kummer coordinate algebra, assembled from the carry formula. -/
 noncomputable def comul (hn : 0 < n) :
     Coordinate R n u →ₐ[R] Coordinate R n u ⊗[R] Coordinate R n u :=
