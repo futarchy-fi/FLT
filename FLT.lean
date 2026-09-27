@@ -377,6 +377,7 @@ public import FLT.Slop.RepresentationTheory.OddAbsIrredOrig
 public import FLT.Slop.RepresentationTheory.OddAbsIrredSlop
 public import FLT.TateCurve.Elliptic
 public import FLT.TateCurve.Equation
+public import FLT.TateCurve.Expansion
 public import FLT.TateCurve.Integral
 public import FLT.TateCurve.LocalField
 public import FLT.TateCurve.Quotient
