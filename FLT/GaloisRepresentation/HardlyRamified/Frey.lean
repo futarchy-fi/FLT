@@ -5,7 +5,8 @@ Authors: Kevin Buzzard
 -/
 module
 
-public import FLT.GaloisRepresentation.HardlyRamified.Defs
+public import FLT.GaloisRepresentation.HardlyRamified.AtTwo
+public import FLT.GaloisRepresentation.HardlyRamified.PrimeField
 public import FLT.FreyCurve.Basic
 public import FLT.FreyCurve.Serre.Unramified
 public import FLT.EllipticCurve.Torsion
@@ -17,8 +18,9 @@ import Mathlib.NumberTheory.ArithmeticFunction.Misc
 # The Frey curve gives a hardly ramified representation
 
 We prove that the `ℓ`-torsion of the Frey curve attached to a Frey package
-is a hardly ramified Galois representation, and that this representation is
-irreducible.
+is a hardly ramified Galois representation, and deduce that this representation is
+not irreducible from the generic prime-field theorem. The determinant and flatness
+fields remain separate arithmetic inputs.
 -/
 
 @[expose] public section
@@ -50,13 +52,44 @@ theorem FreyCurve.torsion_rank :
   simp only [Module.rank_self, Cardinal.lift_one]
   exact one_add_one_eq_two
 
+/-- The determinant of Frey torsion is the cyclotomic character, as required by
+`IsHardlyRamified.det`. This input requires the nondegenerate, Galois-equivariant
+Weil pairing and its determinant comparison. -/
+theorem FreyCurve.torsion_det :
+    haveI : Fact P.p.Prime := ⟨P.pp⟩
+    ∀ g, (P.freyCurve.galoisRep P.p P.hppos).det g =
+      algebraMap ℤ_[P.p] (ZMod P.p)
+        (cyclotomicCharacter (AlgebraicClosure ℚ) P.p g.toRingEquiv) :=
+  sorry
+
+/-- Frey torsion is flat at its residual prime, as required by
+`IsHardlyRamified.isFlat`, including the condition for every open coefficient ideal.
+Both good and multiplicative reduction at that prime must be treated. -/
+theorem FreyCurve.torsion_isFlat :
+    haveI : Fact P.p.Prime := ⟨P.pp⟩
+    (P.freyCurve.galoisRep P.p P.hppos).IsFlatAt
+      (Nat.Prime.toHeightOneSpectrumRingOfIntegersRat (Fact.out : P.p.Prime)) :=
+  sorry
+
+/-- Assemble the rank, determinant, unramifiedness, flatness, and quotient-at-two
+inputs for Frey torsion. -/
 theorem FreyCurve.torsion_isHardlyRamified :
     haveI : Fact (P.p.Prime) := ⟨P.pp⟩
     IsHardlyRamified P.hp_odd (FreyCurve.torsion_rank P)
-      (P.freyCurve.galoisRep P.p (show 0 < P.p from P.hppos)) :=
-  sorry
+      (P.freyCurve.galoisRep P.p (show 0 < P.p from P.hppos)) := by
+  let : Fact P.p.Prime := ⟨P.pp⟩
+  exact {
+    det := FreyCurve.torsion_det P
+    isUnramified := fun _ hq hq' ↦ FreyCurve.torsion_isUnramifiedAt P hq hq'.1 hq'.2
+    isFlat := FreyCurve.torsion_isFlat P
+    isTameAtTwo := FreyCurve.torsion_quotient_at_two P }
 
+/-- The generic prime-field reducibility theorem applies to Frey torsion because
+its exponent is at least five and it is hardly ramified. -/
 theorem FreyCurve.torsion_not_isIrreducible :
     haveI : Fact (P.p.Prime) := ⟨P.pp⟩
-    ¬ GaloisRep.IsIrreducible (P.freyCurve.galoisRep P.p P.hppos) :=
-  sorry -- TODO prove this
+    ¬ GaloisRep.IsIrreducible (P.freyCurve.galoisRep P.p P.hppos) := by
+  let : Fact P.p.Prime := ⟨P.pp⟩
+  exact IsHardlyRamified.not_isIrreducible_of_prime_field P.p P.hp5 P.hp_odd _
+    (FreyCurve.torsion_rank P) (P.freyCurve.galoisRep P.p P.hppos)
+    (FreyCurve.torsion_isHardlyRamified P)

@@ -9,6 +9,7 @@ public import FLT.Basic.Lemmas
 public import FLT.FreyCurve.Basic
 public import FLT.EllipticCurve.Torsion
 public import FLT.FreyCurve.Mazur
+public import FLT.GaloisRepresentation.HardlyRamified.Frey
 public import FltRegular.SmallNumbers.SmallNumbers
 
 /-!
@@ -96,8 +97,11 @@ theorem B4_implies_B3 : B4 → B3 := by
   apply h P hp17
   exact P.mazur hp17
 
-theorem B4_proof : B4 :=
-  sorry
+/-- Frey torsion satisfies the local hypotheses of the generic prime-field
+reducibility theorem; every Frey package already has exponent at least five. -/
+theorem B4_proof : B4 := by
+  intro P _
+  exact FreyCurve.torsion_not_isIrreducible P
 
 theorem B3_proof : B3 := B4_implies_B3 B4_proof
 
