@@ -235,6 +235,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.FixedVector
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.FrobeniusOrder
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.Generators
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.HigherDegree
+public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.LocalFrobenius
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.LogDensity
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.LogEulerProduct
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.LogEulerRemainder
