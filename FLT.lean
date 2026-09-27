@@ -409,6 +409,7 @@ public import FLT.TateCurve.Equation
 public import FLT.TateCurve.Expansion
 public import FLT.TateCurve.Fibers
 public import FLT.TateCurve.FiniteExtension
+public import FLT.TateCurve.InseparableLifting
 public import FLT.TateCurve.Integral
 public import FLT.TateCurve.LocalField
 public import FLT.TateCurve.Naturality
