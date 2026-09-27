@@ -7,6 +7,7 @@ module
 
 public import FLT.Deformations.RepresentationTheory.Flat
 public import FLT.EllipticCurve.FlatTorsion
+public import FLT.EllipticCurve.OddTorsionGoodReduction
 public import FLT.FreyCurve.Basic
 public import FLT.FreyCurve.Serre.LocalInertia
 public import FLT.FreyCurve.Serre.LocalTorsion
@@ -20,8 +21,8 @@ The geometric torsion comparison transports the finite-flat model over a local
 field to the restriction of the global torsion representation. Passing to
 coefficient quotients then gives `IsFlatAt`.
 
-The good-reduction case uses the existing `torsion_flat_of_good_reduction`
-admission. The split multiplicative case uses the explicit finite-flat Kummer model.
+The Frey good-reduction case uses the explicit odd-torsion Hopf order.
+The split multiplicative case uses the explicit finite-flat Kummer model.
 The nonsplit case is supplied by `FLT.FreyCurve.Serre.NonsplitFlat`.
 -/
 
@@ -102,9 +103,23 @@ theorem torsion_isFlatAt_of_goodReduction (P : FreyPackage)
     haveI : Fact P.p.Prime := ⟨P.pp⟩
     (P.freyCurve.galoisRep P.p P.hppos).IsFlatAt
       P.pp.toHeightOneSpectrumRingOfIntegersRat := by
+  classical
   let : Fact P.p.Prime := ⟨P.pp⟩
-  exact P.freyCurve.isFlatAt_torsion_of_goodReduction
-    P.pp.toHeightOneSpectrumRingOfIntegersRat P.p P.hppos
+  have hp5 := P.hp5
+  let v := P.pp.toHeightOneSpectrumRingOfIntegersRat
+  let K := v.adicCompletion ℚ
+  let R := v.adicCompletionIntegers ℚ
+  let : Invertible (2 : R) :=
+    (prime_isUnit_adicCompletionIntegers Nat.prime_two P.pp (by omega)).invertible
+  let : Invertible (3 : R) :=
+    (prime_isUnit_adicCompletionIntegers Nat.prime_three P.pp (by omega)).invertible
+  let : (P.freyCurve.map (algebraMap ℚ K)).HasGoodReduction R :=
+    inferInstanceAs ((P.freyCurve.baseChange K).HasGoodReduction R)
+  have hflat := (P.freyCurve.map (algebraMap ℚ K)).isFiniteFlat_torsion_of_goodReduction_twoTorsion
+    R K (by simp [FreyPackage.freyCurve, WeierstrassCurve.map])
+    (by simp [FreyPackage.freyCurve, WeierstrassCurve.map]) P.p
+    (P.pp.odd_of_ne_two (by omega)) P.hppos
+  exact (P.freyCurve.hasFlatProlongationAt_torsion_of_isFiniteFlat v P.p P.hppos hflat).isFlatAt v _
 
 open scoped Classical in
 set_option backward.isDefEq.respectTransparency false in
