@@ -59,4 +59,53 @@ noncomputable def genericPointsMulEquiv :
     Bialgebra.restrictPoints_mul R K Ω H]
   exact (pointMap_convolution u r hr s _ _).symm
 
+/-- Restricting the generic-fibre comparison gives evaluation at the chosen coefficients. -/
+theorem genericPointsMulEquiv_restrict (f : K ⊗[R] H →ₐ[K] Ω) :
+    let := hopfAlgebra (H := H) u r hr
+    Bialgebra.restrictPoints R K Ω D (genericPointsMulEquiv u r hr f) =
+      pointMap u ι s (Bialgebra.restrictPoints R K Ω H f) := by
+  let := hopfAlgebra (H := H) u r hr
+  change Bialgebra.restrictPoints R K Ω D
+    ((Bialgebra.restrictPoints R K Ω D).symm
+      (pointsEquiv u ι (HopfAlgebra.antipode_involutive R H) r hr
+        (Bialgebra.restrictPoints R K Ω H f))) = _
+  rw [Equiv.apply_symm_apply, pointsEquiv_apply]
+
+omit [Coalgebra.IsCocomm R H] in
+/-- Restriction of generic points commutes with automorphisms of the target field. -/
+theorem restrictPoints_postcomp (f : K ⊗[R] H →ₐ[K] Ω) (σ : Ω →ₐ[K] Ω) :
+    Bialgebra.restrictPoints R K Ω H (σ.comp f) =
+      (σ.restrictScalars R).comp (Bialgebra.restrictPoints R K Ω H f) := rfl
+
+/-- Generic-fibre comparison intertwines automorphisms fixing the quadratic coefficients. -/
+theorem genericPointsMulEquiv_fixed (f : K ⊗[R] H →ₐ[K] Ω) (σ : Ω →ₐ[K] Ω)
+    (hσ : (σ.restrictScalars R).comp s = s) :
+    let := hopfAlgebra (H := H) u r hr
+    genericPointsMulEquiv u r hr (σ.comp f) = σ.comp (genericPointsMulEquiv u r hr f) := by
+  let := hopfAlgebra (H := H) u r hr
+  apply (Bialgebra.restrictPoints R K Ω D).injective
+  rw [genericPointsMulEquiv_restrict, restrictPoints_postcomp,
+    restrictPoints_postcomp, genericPointsMulEquiv_restrict]
+  exact (pointMap_postcomp_of_fixed u ι s _ (σ.restrictScalars R) hσ).symm
+
+/-- Conjugating coefficients intertwines generic points after the original antipode. -/
+theorem genericPointsMulEquiv_conjugated (f : K ⊗[R] H →ₐ[K] Ω) (σ : Ω →ₐ[K] Ω)
+    (hσ : (σ.restrictScalars R).comp s = (s).comp (conjugation (u : R)).toAlgHom) :
+    let := hopfAlgebra (H := H) u r hr
+    genericPointsMulEquiv u r hr
+      ((σ.comp f).comp (Algebra.TensorProduct.map (AlgHom.id K K) (ι).toAlgHom)) =
+        σ.comp (genericPointsMulEquiv u r hr f) := by
+  let := hopfAlgebra (H := H) u r hr
+  apply (Bialgebra.restrictPoints R K Ω D).injective
+  rw [genericPointsMulEquiv_restrict, restrictPoints_postcomp,
+    genericPointsMulEquiv_restrict]
+  have he : Bialgebra.restrictPoints R K Ω H
+      ((σ.comp f).comp (Algebra.TensorProduct.map (AlgHom.id K K) (ι).toAlgHom)) =
+      ((σ.restrictScalars R).comp (Bialgebra.restrictPoints R K Ω H f)).comp (ι).toAlgHom := by
+    ext a
+    rfl
+  rw [he]
+  exact (pointMap_postcomp_of_conjugation u ι (HopfAlgebra.antipode_involutive R H)
+    s (Bialgebra.restrictPoints R K Ω H f) (σ.restrictScalars R) hσ).symm
+
 end QuadraticTwist
