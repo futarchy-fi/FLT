@@ -49,7 +49,7 @@ set_option backward.isDefEq.respectTransparency false in
 is an `n`-th power in the base value group. -/
 theorem inertia_fixes_torsion_of_split_multiplicative
     (E : WeierstrassCurve K) [E.IsElliptic] [E.HasSplitMultiplicativeReduction 𝒪[K]]
-    [IsSepClosed Ω] [Algebra.IsSeparable K Ω]
+    [Algebra.IsSeparable K Ω]
     (A : ValuationSubring Ω)
     (hA : (A.comap (algebraMap K Ω)).toSubring = (algebraMap 𝒪[K] K).range)
     {n : ℕ} (hn : IsUnit (n : A)) (b : Kˣ)
