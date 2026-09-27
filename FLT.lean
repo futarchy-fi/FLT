@@ -209,6 +209,7 @@ public import FLT.GroupScheme.KummerTwist
 public import FLT.GroupScheme.QuadraticDescent
 public import FLT.GroupScheme.QuadraticTwist
 public import FLT.GroupScheme.QuadraticTwistCoassociativity
+public import FLT.GroupScheme.QuadraticTwistComparison
 public import FLT.GroupScheme.QuadraticTwistComultiplication
 public import FLT.GroupScheme.QuadraticTwistEtale
 public import FLT.GroupScheme.QuadraticTwistGenericPoints
