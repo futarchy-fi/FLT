@@ -5,7 +5,7 @@ Authors: krandder
 -/
 module
 
-public import FLT.FreyCurve.Serre.QuotientCurve
+public import FLT.FreyCurve.Serre.QuotientDescent
 
 /-!
 # Vélu coefficient sums

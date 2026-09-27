@@ -99,6 +99,7 @@ public import FLT.FreyCurve.Serre.FixedLineDescent
 public import FLT.FreyCurve.Serre.FreyTwoTorsion
 public import FLT.FreyCurve.Serre.JoinCoprimeTorsion
 public import FLT.FreyCurve.Serre.QuotientCurve
+public import FLT.FreyCurve.Serre.QuotientDescent
 public import FLT.FreyCurve.Serre.Velu
 public import FLT.FreyCurve.Serre.VeluAdditivity
 public import FLT.FreyCurve.Serre.VeluCoordinates
