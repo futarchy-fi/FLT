@@ -114,10 +114,13 @@ public import FLT.EllipticCurve.PointReductionKernel
 public import FLT.EllipticCurve.PointTransport
 public import FLT.EllipticCurve.SupersingularPolynomial
 public import FLT.EllipticCurve.Torsion
+public import FLT.EllipticCurve.TorsionFunction
 public import FLT.EllipticCurve.TorsionOrbit
 public import FLT.EllipticCurve.TorsionSpecialization
 public import FLT.EllipticCurve.TorsionStructure
 public import FLT.EllipticCurve.TwoTorsionCard
+public import FLT.EllipticCurve.WeilPairing
+public import FLT.EllipticCurve.WeilPairingDeterminant
 public import FLT.FreyCurve.Basic
 public import FLT.FreyCurve.FreyPackage
 public import FLT.FreyCurve.Mazur
@@ -233,6 +236,7 @@ public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.Affine.Point
 public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.Aut
 public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.GaloisDescent
 public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.Reduction
+public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.SplitDescent
 public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.VariableChange
 public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.Weierstrass
 public import FLT.Mathlib.Analysis.Normed.Ring.WithAbs
@@ -248,6 +252,7 @@ public import FLT.Mathlib.GroupTheory.DoubleCoset
 public import FLT.Mathlib.GroupTheory.GroupAction.Quotient
 public import FLT.Mathlib.GroupTheory.Index
 public import FLT.Mathlib.GroupTheory.SpecificGroups.Cyclic
+public import FLT.Mathlib.LinearAlgebra.Alternating.Determinant
 public import FLT.Mathlib.LinearAlgebra.Countable
 public import FLT.Mathlib.LinearAlgebra.Determinant
 public import FLT.Mathlib.LinearAlgebra.Dimension.Constructions
@@ -270,6 +275,7 @@ public import FLT.Mathlib.MeasureTheory.Group.ModularCharacter
 public import FLT.Mathlib.MeasureTheory.Haar.Extension
 public import FLT.Mathlib.MeasureTheory.Measure.Regular
 public import FLT.Mathlib.MeasureTheory.Measure.Typeclasses.Finite
+public import FLT.Mathlib.NumberTheory.Cyclotomic.CyclotomicCharacter
 public import FLT.Mathlib.NumberTheory.NumberField.AdeleRing
 public import FLT.Mathlib.NumberTheory.NumberField.Completion
 public import FLT.Mathlib.NumberTheory.NumberField.FiniteAdeleRing
@@ -278,6 +284,7 @@ public import FLT.Mathlib.NumberTheory.NumberField.InfinitePlace.Basic
 public import FLT.Mathlib.NumberTheory.NumberField.InfinitePlace.Completion
 public import FLT.Mathlib.NumberTheory.Padics.HeightOneSpectrum
 public import FLT.Mathlib.NumberTheory.Padics.PadicIntegers
+public import FLT.Mathlib.NumberTheory.Padics.RingHoms
 public import FLT.Mathlib.Order.Filter.Cofinite
 public import FLT.Mathlib.RepresentationTheory.Basic
 public import FLT.Mathlib.RepresentationTheory.Continuous.Basic
@@ -438,6 +445,7 @@ public import FLT.TateCurve.AlgebraicUniformization
 public import FLT.TateCurve.Collinearity
 public import FLT.TateCurve.CompleteAddition
 public import FLT.TateCurve.Descent
+public import FLT.TateCurve.Discriminant
 public import FLT.TateCurve.Elliptic
 public import FLT.TateCurve.Equation
 public import FLT.TateCurve.Expansion
@@ -446,15 +454,18 @@ public import FLT.TateCurve.FiniteExtension
 public import FLT.TateCurve.FiniteStages
 public import FLT.TateCurve.InseparableLifting
 public import FLT.TateCurve.Integral
+public import FLT.TateCurve.JInvariant
 public import FLT.TateCurve.LocalField
 public import FLT.TateCurve.LocalUniformization
 public import FLT.TateCurve.Model
 public import FLT.TateCurve.ModelTransport
 public import FLT.TateCurve.Naturality
+public import FLT.TateCurve.ParameterEvaluation
 public import FLT.TateCurve.Points
 public import FLT.TateCurve.QuadraticLift
 public import FLT.TateCurve.Quotient
 public import FLT.TateCurve.QuotientAvoidance
+public import FLT.TateCurve.Reduction
 public import FLT.TateCurve.SeparableLifting
 public import FLT.TateCurve.Surjectivity
 public import FLT.TateCurve.SymmetricInverse

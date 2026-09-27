@@ -108,10 +108,9 @@ theorem exists_equivariant_pointEquiv_of_variableChange
       Affine.Point.equivVariableChange_some, Affine.Point.map_some]
     apply Affine.Point.some_eq_some <;> simp [hu, hr, hs, ht]
 
-/-- One splitting twist intertwines inertia and intertwines every Galois automorphism
-up to sign, while preserving the j-invariant. The unit-discriminant construction also
-works in residue characteristic two. -/
-theorem exists_signed_inertia_equivariant_split_twist_with_j {R K : Type u}
+/-- Multiplicative reduction becomes split by one isomorphism intertwining every inertia
+element simultaneously, preserving the j-invariant, including in residue characteristic two. -/
+theorem exists_uniform_inertia_equivariant_split_twist_with_j {R K : Type u}
     [CommRing R] [IsDomain R] [IsDiscreteValuationRing R]
     [Field K] [Algebra R K] [IsFractionRing R K]
     (E : WeierstrassCurve K) [E.IsElliptic] [E.HasMultiplicativeReduction R]
@@ -120,7 +119,76 @@ theorem exists_signed_inertia_equivariant_split_twist_with_j {R K : Type u}
     (hA : (A.comap (algebraMap K Ω)).toSubring = (algebraMap R K).range) :
     ∃ (E' : WeierstrassCurve K) (_ : E'.IsElliptic) (_ : E'.HasSplitMultiplicativeReduction R)
       (e : (E⁄Ω).Point ≃+ (E'⁄Ω).Point),
-      E'.j = E.j ∧ (∀ (σ : A.decompositionSubgroup K), σ ∈ A.inertiaSubgroup K →
+      E'.j = E.j ∧ ∀ (σ : A.decompositionSubgroup K), σ ∈ A.inertiaSubgroup K →
+        ∀ P, e (Affine.Point.map (σ : Ω ≃ₐ[K] Ω).toAlgHom P) =
+        Affine.Point.map (σ : Ω ≃ₐ[K] Ω).toAlgHom (e P) := by
+  obtain ⟨t,n,hD,hsplit⟩ := E.exists_split_twist_parameters (R := R)
+  let E' := ((E.integralModel R).quadraticTwistOf t n).baseChange K
+  have hE' : E' = E.quadraticTwistOf (algebraMap R K t) (algebraMap R K n) :=
+    baseChange_integralModel_quadraticTwistOf E R t n
+  have hDk : (algebraMap R K t) ^ 2 - 4 * algebraMap R K n ≠ 0 := by
+    simpa only [map_sub, map_pow, map_mul, map_ofNat] using
+      (hD.map (algebraMap R K)).ne_zero
+  have hell : E'.IsElliptic := by
+    rw [hE']
+    exact E.isElliptic_quadraticTwistOf _ _ hDk
+  let f : R →+* A := ((algebraMap K Ω).comp (algebraMap R K)).codRestrict A (by
+    intro r
+    change algebraMap R K r ∈ (A.comap (algebraMap K Ω)).toSubring
+    rw [hA]
+    exact ⟨r,rfl⟩)
+  obtain ⟨x,hx⟩ := A.exists_quadratic_root (f t) (f n)
+  let tΩ := algebraMap K Ω (algebraMap R K t)
+  let nΩ := algebraMap K Ω (algebraMap R K n)
+  have hxΩ : (x : Ω) ^ 2 - tΩ * x + nΩ = 0 := by
+    exact congrArg Subtype.val hx
+  have hw : tΩ - 2 * (x : Ω) ≠ 0 := by
+    have heq : (tΩ - 2 * (x : Ω)) ^ 2 = tΩ ^ 2 - 4 * nΩ := by
+      linear_combination 4 * hxΩ
+    have hDΩ : tΩ ^ 2 - 4 * nΩ ≠ 0 := by
+      simpa [tΩ, nΩ, map_ofNat] using ((map_ne_zero (algebraMap K Ω)).mpr hDk)
+    exact fun h ↦ hDΩ (by rw [← heq,h,zero_pow (by decide)])
+  let C : VariableChange Ω := ⟨Units.mk0 (tΩ - 2 * x) hw, 0,
+    -((x : Ω) * (E.baseChange Ω).a₁),
+    -((tΩ - 2 * x) ^ 2 * x * (E.baseChange Ω).a₃)⟩
+  have hC : C • E'.baseChange Ω = E.baseChange Ω := by
+    rw [hE', baseChange, quadraticTwistOf_map]
+    exact quadraticRoot_variableChange_smul _ _ _ _ hxΩ hw
+  let e : (E⁄Ω).Point ≃+ (E'⁄Ω).Point :=
+    (Affine.Point.equivOfEq hC.symm).trans
+      (Affine.Point.equivVariableChange (E'.baseChange Ω) C)
+  refine ⟨E', hell, hsplit, e, ?_, ?_⟩
+  · simpa only [hE'] using E.j_quadraticTwistOf _ _ (hE' ▸ hell)
+  intro σ hσ
+  have ht (r : R) : σ • f r = f r := Subtype.ext ((σ : Ω ≃ₐ[K] Ω).commutes _)
+  have hfix : (σ : Ω ≃ₐ[K] Ω) (x : Ω) = x :=
+    congrArg Subtype.val (A.inertia_fixes_quadratic_root (f t) (f n) x
+      (by simpa only [map_sub, map_pow, map_mul, map_ofNat] using hD.map f) hx σ hσ (ht t) (ht n))
+  have hCfix : C.map (σ : Ω ≃ₐ[K] Ω).toAlgHom.toRingHom = C := by
+    ext <;> simp [C, VariableChange.map, tΩ, hfix, AlgEquiv.commutes, baseChange, map_ofNat]
+  have hu : (σ : Ω ≃ₐ[K] Ω) (C.u : Ω) = C.u :=
+    congrArg (fun D : VariableChange Ω ↦ (D.u : Ω)) hCfix
+  have hr : (σ : Ω ≃ₐ[K] Ω) C.r = C.r := congrArg VariableChange.r hCfix
+  have hs : (σ : Ω ≃ₐ[K] Ω) C.s = C.s := congrArg VariableChange.s hCfix
+  have ht : (σ : Ω ≃ₐ[K] Ω) C.t = C.t := congrArg VariableChange.t hCfix
+  rintro (_ | ⟨x,y,h⟩)
+  · simp [e, ← Affine.Point.zero_def]
+  · simp only [e, AddEquiv.trans_apply, Affine.Point.equivOfEq_some,
+      Affine.Point.equivVariableChange_some, Affine.Point.map_some]
+    apply Affine.Point.some_eq_some <;> simp [hu, hr, hs, ht]
+
+/-- One splitting twist intertwines inertia and intertwines every Galois automorphism
+up to sign. The same unit-discriminant construction works in residue characteristic two. -/
+theorem exists_signed_inertia_equivariant_split_twist {R K : Type u}
+    [CommRing R] [IsDomain R] [IsDiscreteValuationRing R]
+    [Field K] [Algebra R K] [IsFractionRing R K]
+    (E : WeierstrassCurve K) [E.IsElliptic] [E.HasMultiplicativeReduction R]
+    {Ω : Type*} [Field Ω] [Algebra K Ω] [IsAlgClosed Ω] [DecidableEq Ω]
+    (A : ValuationSubring Ω)
+    (hA : (A.comap (algebraMap K Ω)).toSubring = (algebraMap R K).range) :
+    ∃ (E' : WeierstrassCurve K) (_ : E'.IsElliptic) (_ : E'.HasSplitMultiplicativeReduction R)
+      (e : (E⁄Ω).Point ≃+ (E'⁄Ω).Point),
+      (∀ (σ : A.decompositionSubgroup K), σ ∈ A.inertiaSubgroup K →
         ∀ P, e (Affine.Point.map (σ : Ω ≃ₐ[K] Ω).toAlgHom P) =
         Affine.Point.map (σ : Ω ≃ₐ[K] Ω).toAlgHom (e P)) ∧
       ∀ σ : Ω ≃ₐ[K] Ω,
@@ -161,8 +229,7 @@ theorem exists_signed_inertia_equivariant_split_twist_with_j {R K : Type u}
   let e : (E⁄Ω).Point ≃+ (E'⁄Ω).Point :=
     (Affine.Point.equivOfEq hC.symm).trans
       (Affine.Point.equivVariableChange (E'.baseChange Ω) C)
-  refine ⟨E', hell, hsplit, e, ?_, ?_, ?_⟩
-  · simpa only [hE'] using E.j_quadraticTwistOf _ _ (hE' ▸ hell)
+  refine ⟨E', hell, hsplit, e, ?_, ?_⟩
   · intro σ hσ
     have ht (r : R) : σ • f r = f r := Subtype.ext ((σ : Ω ≃ₐ[K] Ω).commutes _)
     have hfix : (σ : Ω ≃ₐ[K] Ω) (x : Ω) = x :=
@@ -215,44 +282,6 @@ theorem exists_signed_inertia_equivariant_split_twist_with_j {R K : Type u}
           change _ = -_ - (tΩ * _) * _ - (tΩ ^ 2 - 4 * nΩ) * tΩ * _
           rw [← hq]
           ring
-
-/-- One splitting twist intertwines inertia and intertwines every Galois automorphism
-up to sign. The same unit-discriminant construction works in residue characteristic two. -/
-theorem exists_signed_inertia_equivariant_split_twist {R K : Type u}
-    [CommRing R] [IsDomain R] [IsDiscreteValuationRing R]
-    [Field K] [Algebra R K] [IsFractionRing R K]
-    (E : WeierstrassCurve K) [E.IsElliptic] [E.HasMultiplicativeReduction R]
-    {Ω : Type*} [Field Ω] [Algebra K Ω] [IsAlgClosed Ω] [DecidableEq Ω]
-    (A : ValuationSubring Ω)
-    (hA : (A.comap (algebraMap K Ω)).toSubring = (algebraMap R K).range) :
-    ∃ (E' : WeierstrassCurve K) (_ : E'.IsElliptic) (_ : E'.HasSplitMultiplicativeReduction R)
-      (e : (E⁄Ω).Point ≃+ (E'⁄Ω).Point),
-      (∀ (σ : A.decompositionSubgroup K), σ ∈ A.inertiaSubgroup K →
-        ∀ P, e (Affine.Point.map (σ : Ω ≃ₐ[K] Ω).toAlgHom P) =
-        Affine.Point.map (σ : Ω ≃ₐ[K] Ω).toAlgHom (e P)) ∧
-      ∀ σ : Ω ≃ₐ[K] Ω,
-        (∀ P, e (Affine.Point.map σ.toAlgHom P) = Affine.Point.map σ.toAlgHom (e P)) ∨
-        (∀ P, e (Affine.Point.map σ.toAlgHom P) = -Affine.Point.map σ.toAlgHom (e P)) := by
-  obtain ⟨E', hell, hsplit, e, _, hinertia, hsign⟩ :=
-    E.exists_signed_inertia_equivariant_split_twist_with_j A hA
-  exact ⟨E', hell, hsplit, e, hinertia, hsign⟩
-
-/-- One splitting twist preserves the j-invariant and intertwines all inertia elements. -/
-theorem exists_uniform_inertia_equivariant_split_twist_with_j {R K : Type u}
-    [CommRing R] [IsDomain R] [IsDiscreteValuationRing R]
-    [Field K] [Algebra R K] [IsFractionRing R K]
-    (E : WeierstrassCurve K) [E.IsElliptic] [E.HasMultiplicativeReduction R]
-    {Ω : Type*} [Field Ω] [Algebra K Ω] [IsAlgClosed Ω] [DecidableEq Ω]
-    (A : ValuationSubring Ω)
-    (hA : (A.comap (algebraMap K Ω)).toSubring = (algebraMap R K).range) :
-    ∃ (E' : WeierstrassCurve K) (_ : E'.IsElliptic) (_ : E'.HasSplitMultiplicativeReduction R)
-      (e : (E⁄Ω).Point ≃+ (E'⁄Ω).Point),
-      E'.j = E.j ∧ ∀ (σ : A.decompositionSubgroup K), σ ∈ A.inertiaSubgroup K →
-        ∀ P, e (Affine.Point.map (σ : Ω ≃ₐ[K] Ω).toAlgHom P) =
-        Affine.Point.map (σ : Ω ≃ₐ[K] Ω).toAlgHom (e P) := by
-  obtain ⟨E', hell, hsplit, e, hj, hinertia, _⟩ :=
-    E.exists_signed_inertia_equivariant_split_twist_with_j A hA
-  exact ⟨E', hell, hsplit, e, hj, hinertia⟩
 
 /-- Multiplicative reduction becomes split by one isomorphism intertwining every inertia
 element simultaneously, including in residue characteristic two. -/
