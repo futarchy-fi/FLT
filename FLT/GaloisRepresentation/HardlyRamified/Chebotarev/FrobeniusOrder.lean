@@ -33,6 +33,7 @@ open scoped Pointwise
 namespace GaloisRepresentation.Chebotarev
 
 /-- A nonzero prime ideal of the ring of integers of a number field. -/
+@[nolint unusedArguments]
 abbrev Prime (K : Type*) [Field K] [NumberField K] :=
   IsDedekindDomain.HeightOneSpectrum (𝓞 K)
 
