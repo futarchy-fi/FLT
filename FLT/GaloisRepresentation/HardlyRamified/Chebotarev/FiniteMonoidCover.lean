@@ -7,6 +7,7 @@ module
 
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.FiniteGaloisRealization
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.PowerFrobCover
+public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.TowerDegreeOne
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.W2Statement
 
 /-!
@@ -17,6 +18,9 @@ finite Galois extension, then assemble the power and Frobenius comparisons.
 -/
 
 @[expose] public section
+
+open NumberField
+open GaloisRepresentation.B5Inputs
 
 namespace GaloisRepresentation.Chebotarev
 
@@ -56,5 +60,26 @@ theorem exists_pow_restrictScalars_eq
   have h := congrArg (AlgEquiv.restrictScalarsHom ℚ) hn
   rw [map_pow] at h
   exact h
+
+/-- W2 and the degree-one/local Frobenius comparisons give a power of the
+chosen rational Frobenius conjugate to any finite Galois automorphism. -/
+theorem exists_isConj_pow_restrict_QFrob (hW2 : W2Statement.{0})
+    (L : IntermediateField ℚ (AlgebraicClosure ℚ))
+    [FiniteDimensional ℚ L] [IsGalois ℚ L]
+    (g : Gal(L/ℚ)) (S : Finset (Prime ℚ)) (N : ℕ) :
+    ∃ (q : ℕ) (hq : q.Prime), N ≤ q ∧
+      hq.toHeightOneSpectrumRingOfIntegersRat ∉ S ∧
+      ∃ n : ℕ, IsConj ((AlgEquiv.restrictNormalHom L (QFrob q hq)) ^ n) g := by
+  let F := IntermediateField.fixedField (Subgroup.zpowers g)
+  obtain ⟨v, ⟨_, hgen⟩, hq, hN, hv⟩ := hW2 L g S N
+  obtain ⟨hS, hu⟩ := hv hq.toHeightOneSpectrumRingOfIntegersRat
+    (under_eq_rationalPrime_of_absNorm_eq F v _ hq rfl)
+  have hf := hasFrob_tower_degreeOne F L v _ hq rfl (frob F L v)
+    ⟨primeAbove F L v, primeAbove_under F L v, isArithFrobAt_frob F L v⟩
+  have hc := (isConj_restrict_QFrob_frob L _ hq hu).trans
+    (isConj_frob_of_hasFrob ℚ L _ hu _ hf).symm
+  obtain ⟨n, hn⟩ := exists_pow_restrictScalars_eq L g (frob F L v) hgen
+  refine ⟨v.asIdeal.absNorm, hq, hN, hS, n, ?_⟩
+  simpa only [hn] using hc.pow n
 
 end GaloisRepresentation.Chebotarev
