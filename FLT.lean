@@ -130,6 +130,8 @@ public import FLT.FreyCurve.Serre.RootsOfUnityInertia
 public import FLT.FreyCurve.Serre.Semistable
 public import FLT.FreyCurve.Serre.TateInertia
 public import FLT.FreyCurve.Serre.TateTorsion
+public import FLT.FreyCurve.Serre.TateUnramified
+public import FLT.FreyCurve.Serre.Unramified
 public import FLT.FreyCurve.Serre.UnramifiedCharacter
 public import FLT.FreyCurve.Serre.Velu
 public import FLT.FreyCurve.Serre.VeluAdditivity
