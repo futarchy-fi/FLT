@@ -226,6 +226,7 @@ public import FLT.FreyCurve.Serre.VeluTranslation
 public import FLT.GaloisRepresentation.Attachment
 public import FLT.GaloisRepresentation.Automorphic
 public import FLT.GaloisRepresentation.Cyclotomic
+public import FLT.GaloisRepresentation.HardlyRamified.AbsIrredAdapter
 public import FLT.GaloisRepresentation.HardlyRamified.AtTwo
 public import FLT.GaloisRepresentation.HardlyRamified.B5Inputs
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.DedekindZeta
@@ -261,6 +262,8 @@ public import FLT.GaloisRepresentation.HardlyRamified.Frey
 public import FLT.GaloisRepresentation.HardlyRamified.Lift
 public import FLT.GaloisRepresentation.HardlyRamified.ModThree
 public import FLT.GaloisRepresentation.HardlyRamified.PrimeField
+public import FLT.GaloisRepresentation.HardlyRamified.ThreeAdicAlgebra
+public import FLT.GaloisRepresentation.HardlyRamified.ThreeAdicDegree
 public import FLT.GaloisRepresentation.HardlyRamified.Threeadic
 public import FLT.GaloisRepresentation.HardlyRamified.TraceLeaves
 public import FLT.GaloisRepresentation.HardlyRamified.TraceReducibility
@@ -362,6 +365,7 @@ public import FLT.Mathlib.LinearAlgebra.Countable
 public import FLT.Mathlib.LinearAlgebra.Determinant
 public import FLT.Mathlib.LinearAlgebra.Dimension.Constructions
 public import FLT.Mathlib.LinearAlgebra.Dimension.IsQuadraticExtension
+public import FLT.Mathlib.LinearAlgebra.InvolutionFixedSpace
 public import FLT.Mathlib.LinearAlgebra.Matrix.GeneralLinearGroup.Defs
 public import FLT.Mathlib.LinearAlgebra.Matrix.Transvection
 public import FLT.Mathlib.LinearAlgebra.Pi
@@ -396,6 +400,7 @@ public import FLT.Mathlib.RepresentationTheory.Continuous.Basic
 public import FLT.Mathlib.RepresentationTheory.Continuous.TopRep
 public import FLT.Mathlib.RepresentationTheory.Homological.ContCohomology.Basic
 public import FLT.Mathlib.RepresentationTheory.Homological.ContCohomology.CupProduct
+public import FLT.Mathlib.RingTheory.AdicCompletion.PowerQuotients
 public import FLT.Mathlib.RingTheory.AdjoinRoot
 public import FLT.Mathlib.RingTheory.DedekindDomain.AdicValuation
 public import FLT.Mathlib.RingTheory.DedekindDomain.FiniteAdeleRing
