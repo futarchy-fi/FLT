@@ -5,7 +5,7 @@ Authors: krandder
 -/
 module
 
-public import FLT.EllipticCurve.NTorsionRoots
+public import FLT.EllipticCurve.DivisionPolynomialDifferential
 
 /-!
 # Separability of division polynomials
@@ -94,6 +94,68 @@ theorem separable_preΨ_of_derivative_sq {n : ℕ} (hn : Odd n) (hchar : (n : k)
     C (((n : k) ^ 2)⁻¹) * a * W.Ψ₂Sq * (W.preΨ n).derivative, ?_⟩
   linear_combination C (((n : k) ^ 2)⁻¹) * a * hq +
     C (((n : k) ^ 2)⁻¹) * C ((n : k) ^ 2) * hab + hi
+
+/-- A polynomial congruent to a nonzero scalar multiple of the multiplication
+numerator is coprime to the corresponding division polynomial. -/
+theorem isCoprime_preΨ_of_congr_Φ {n : ℕ} (hchar : (n : k) ≠ 0) {g : k[X]}
+    (hd : W.preΨ n ∣ g - C ((n : k) ^ 2) * W.Φ n) :
+    IsCoprime (W.preΨ n) g := by
+  obtain ⟨q, hq⟩ := hd
+  have hc : IsCoprime (W.Φ n) (W.preΨ n) := by
+    have h := W.isCoprime_Φ_ΨSq n
+    rw [ΨSq, pow_two] at h
+    exact h.of_mul_right_left.of_mul_right_left
+  obtain ⟨a, b, hab⟩ := hc
+  have hi : C (((n : k) ^ 2)⁻¹) * C ((n : k) ^ 2) = (1 : k[X]) := by
+    rw [← C_mul, inv_mul_cancel₀ (pow_ne_zero 2 hchar), C_1]
+  refine ⟨C (((n : k) ^ 2)⁻¹) * (b * C ((n : k) ^ 2) - a * q),
+    C (((n : k) ^ 2)⁻¹) * a, ?_⟩
+  linear_combination C (((n : k) ^ 2)⁻¹) * a * hq +
+    C (((n : k) ^ 2)⁻¹) * C ((n : k) ^ 2) * hab + hi
+
+/-- Vanishing of the corrected differential residual implies separability at
+any index nonzero in the field, including even indices. -/
+theorem separable_preΨ_of_divisionDifferentialDefect {n : ℕ} (hchar : (n : k) ≠ 0)
+    (hd : W.divisionDifferentialDefect n = 0) : (W.preΨ n).Separable := by
+  unfold divisionDifferentialDefect at hd
+  have hc : ((n : ℤ) : k) = (n : k) := by simp
+  rw [hc] at hd
+  split_ifs at hd with he
+  · have hdiv : W.preΨ n ∣ W.Ψ₂Sq ^ 2 * (W.preΨ n).derivative ^ 2 -
+        C ((n : k) ^ 2) * W.Φ n := by
+      refine ⟨W.Ψ₂Sq ^ 2 * (W.preΨ n).derivative.derivative +
+        W.Ψ₂Sq * W.invar * (W.preΨ n).derivative + 4 * W.Ψ₃ * W.preΨ n -
+        C ((n : k) ^ 2) * X * W.preΨ n * W.Ψ₂Sq, ?_⟩
+      simp only [divisionDifferential, ΨSq, ite_eq_left he] at hd
+      linear_combination hd
+    have h := W.isCoprime_preΨ_of_congr_Φ hchar hdiv
+    rw [Polynomial.separable_def]
+    simp only [pow_two] at h
+    exact h.of_mul_right_right.of_mul_right_left
+  · have hn : Odd n := Nat.not_even_iff_odd.mp (by simpa using he)
+    apply W.separable_preΨ_of_derivative_sq hn hchar
+    refine ⟨W.Ψ₂Sq * (W.preΨ n).derivative.derivative +
+      W.invar * (W.preΨ n).derivative - C ((n : k) ^ 2) * X * W.preΨ n, ?_⟩
+    simp only [divisionDifferential, ΨSq, ite_eq_right he, mul_one] at hd
+    linear_combination hd
+
+/-- At an even index nonzero in the field, the corrected differential identity
+also separates the roots of `preΨ` from the two-torsion x-coordinates. -/
+theorem isCoprime_preΨ_Ψ₂Sq_of_divisionDifferentialDefect {n : ℕ}
+    (hn : Even n) (hchar : (n : k) ≠ 0) (hd : W.divisionDifferentialDefect n = 0) :
+    IsCoprime (W.preΨ n) W.Ψ₂Sq := by
+  have he : Even (n : ℤ) := by simpa using hn
+  have hdiv : W.preΨ n ∣ W.Ψ₂Sq ^ 2 * (W.preΨ n).derivative ^ 2 -
+      C ((n : k) ^ 2) * W.Φ n := by
+    refine ⟨W.Ψ₂Sq ^ 2 * (W.preΨ n).derivative.derivative +
+      W.Ψ₂Sq * W.invar * (W.preΨ n).derivative + 4 * W.Ψ₃ * W.preΨ n -
+      C ((n : k) ^ 2) * X * W.preΨ n * W.Ψ₂Sq, ?_⟩
+    simp only [divisionDifferentialDefect, divisionDifferential, ΨSq, ite_eq_left he,
+      Int.cast_natCast] at hd
+    linear_combination hd
+  have h := W.isCoprime_preΨ_of_congr_Φ hchar hdiv
+  simp only [pow_two] at h
+  exact h.of_mul_right_left.of_mul_right_left
 
 /-- The five-division polynomial of an elliptic curve is separable over
 any field of characteristic different from five. -/
