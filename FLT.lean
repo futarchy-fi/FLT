@@ -404,6 +404,7 @@ public import FLT.TateCurve.Addition
 public import FLT.TateCurve.Collinearity
 public import FLT.TateCurve.CompleteAddition
 public import FLT.TateCurve.Elliptic
+public import FLT.TateCurve.Descent
 public import FLT.TateCurve.Equation
 public import FLT.TateCurve.Expansion
 public import FLT.TateCurve.Fibers
