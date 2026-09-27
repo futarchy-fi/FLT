@@ -108,3 +108,126 @@ theorem nodePoly_splits_of_hasSplitMultiplicativeReduction
     (natDegree_quadratic (b := E.a₁ * E.c₄)
       (c := -(54 * E.b₆ - 3 * E.b₂ * E.b₄ + E.a₂ * E.c₄)) hc)
 end WeierstrassCurve
+
+/-- A root over an extension of a split polynomial is defined over the ground field. -/
+theorem Polynomial.Splits.root_mem_range
+    {K L : Type*} [Field K] [Field L] (f : K →+* L)
+    {p : K[X]} (hs : p.Splits) (hp : p ≠ 0) {x : L}
+    (hx : (p.map f).IsRoot x) : x ∈ Set.range f := by
+  have hm := (mem_roots (map_ne_zero hp)).mpr hx
+  rw [hs.roots_map_of_injective f.injective] at hm
+  obtain ⟨a, -, ha⟩ := Multiset.mem_map.mp hm
+  exact ⟨a, ha⟩
+
+namespace WeierstrassCurve
+variable {K : Type*} [Field K]
+
+/-- Negation cannot fix a root of the node polynomial when its discriminant is nonzero. -/
+theorem neg_nodePoly_root_ne_self (E : WeierstrassCurve K)
+    (hc₄ : E.c₄ ≠ 0) (hc₆ : E.c₆ ≠ 0) {x : K} (hx : E.nodePoly.IsRoot x) :
+    -x - E.a₁ ≠ x := by
+  intro h
+  have hr : E.c₄ * x ^ 2 + E.a₁ * E.c₄ * x -
+      (54 * E.b₆ - 3 * E.b₂ * E.b₄ + E.a₂ * E.c₄) = 0 := by
+    simpa [IsRoot, nodePoly] using hx
+  have hd := E.splitPolynomial_discrim
+  apply mul_ne_zero hc₄ hc₆
+  linear_combination hd + 4 * E.c₄ * hr + E.c₄ ^ 2 * (2 * x + E.a₁) * h
+
+/-- Changes of variables send roots of the target node polynomial to roots of the source. -/
+theorem nodePoly_isRoot_of_smul (E : WeierstrassCurve K) (C : VariableChange K)
+    {x : K} (hx : (C • E).nodePoly.IsRoot x) :
+    E.nodePoly.IsRoot ((C.u : K) * x + C.s) := by
+  rw [IsRoot, nodePoly_smul, eval_mul, eval_C, eval_comp] at hx
+  simpa only [IsRoot, eval_add, eval_mul, eval_C, eval_X] using
+    (mul_eq_zero.mp hx).resolve_left (pow_ne_zero _ C.u⁻¹.ne_zero)
+
+/-- If both node polynomials split, every geometric isomorphism is Galois-fixed. -/
+theorem map_variableChange_eq_of_nodePoly_splits
+    (V W : WeierstrassCurve K) (hc₄ : V.c₄ ≠ 0) (hc₆ : V.c₆ ≠ 0)
+    (hV : V.nodePoly.Splits) (hW : ∃ x : K, W.nodePoly.IsRoot x)
+    (L : Type*) [Field L] [Algebra K L] (C : VariableChange L)
+    (hC : C • V.baseChange L = W.baseChange L) (σ : L ≃ₐ[K] L) :
+    C.map σ.toAlgHom.toRingHom = C := by
+  let D := C.map σ.toAlgHom.toRingHom
+  have hD : D • V.baseChange L = W.baseChange L := map_smul_baseChange_eq L σ hC
+  have haut : (C⁻¹ * D) • V.baseChange L = V.baseChange L := by
+    rw [mul_smul, hD, ← hC, inv_smul_smul]
+  have h4 : (V.baseChange L).c₄ ≠ 0 := by
+    simpa [baseChange] using (map_ne_zero_iff (algebraMap K L) (algebraMap K L).injective).mpr hc₄
+  have h6 : (V.baseChange L).c₆ ≠ 0 := by
+    simpa [baseChange] using (map_ne_zero_iff (algebraMap K L) (algebraMap K L).injective).mpr hc₆
+  rcases (V.baseChange L).eq_one_or_eq_negVariableChange_of_smul_eq_of_c₄_ne_zero h4 h6 haut
+      with hid | hneg
+  · exact (inv_mul_eq_one.mp hid).symm
+  obtain ⟨x, hx⟩ := hW
+  let xL := algebraMap K L x
+  let y := (C.u : L) * xL + C.s
+  have hxL : (W.baseChange L).nodePoly.IsRoot xL := by
+    rw [baseChange, map_nodePoly]
+    simp only [IsRoot, xL, eval_map_apply, hx.eq_zero, map_zero]
+  have hy : (V.baseChange L).nodePoly.IsRoot y :=
+    nodePoly_isRoot_of_smul _ C (hC.symm ▸ hxL)
+  have hp : V.nodePoly ≠ 0 := by
+    intro hz
+    have he := congrArg (fun p : K[X] ↦ p.coeff 2) hz
+    exact hc₄ (by simpa [nodePoly] using he)
+  obtain ⟨z, hz⟩ := hV.root_mem_range (algebraMap K L) hp
+    (show (V.nodePoly.map (algebraMap K L)).IsRoot y by simpa [baseChange, map_nodePoly] using hy)
+  have hyfix : σ y = y := by rw [← hz, AlgEquiv.commutes]
+  have hDeq : D = C * (V.baseChange L).negVariableChange := by
+    rw [← hneg, mul_inv_cancel_left]
+  have hyD : σ y = (D.u : L) * xL + D.s := by
+    simp only [y, map_add, map_mul]
+    rw [show σ xL = xL from σ.commutes x]
+    rfl
+  have hswap : -y - (V.baseChange L).a₁ = y := by
+    rw [hyD, hDeq] at hyfix
+    simpa [VariableChange.mul_def, negVariableChange, y, sub_eq_add_neg, mul_neg,
+      add_comm, add_left_comm, add_assoc] using hyfix
+  exact False.elim ((V.baseChange L).neg_nodePoly_root_ne_self h4 h6 hy hswap)
+end WeierstrassCurve
+
+namespace WeierstrassCurve
+variable {K : Type*} [Field K] [ValuativeRel K] [TopologicalSpace K]
+  [IsNonarchimedeanLocalField K]
+
+/-- Multiplicative reduction forces the fourth invariant to be nonzero in the local field. -/
+theorem c₄_ne_zero_of_hasMultiplicativeReduction
+    (E : WeierstrassCurve K) [E.HasMultiplicativeReduction 𝒪[K]] : E.c₄ ≠ 0 := by
+  have hc : IsUnit (E.integralModel 𝒪[K]).c₄ :=
+    (residue_ne_zero_iff_isUnit _).mp (E.residue_integralModel_c₄_ne_zero 𝒪[K])
+  rw [← integralModel_c₄_eq 𝒪[K] E]
+  exact (hc.map (algebraMap 𝒪[K] K)).ne_zero
+
+/-- Multiplicative reduction forces the sixth invariant to be nonzero in the local field. -/
+theorem c₆_ne_zero_of_hasMultiplicativeReduction
+    (E : WeierstrassCurve K) [E.HasMultiplicativeReduction 𝒪[K]] : E.c₆ ≠ 0 := by
+  have hc : IsUnit (E.integralModel 𝒪[K]).c₆ :=
+    (residue_ne_zero_iff_isUnit _).mp (E.residue_integralModel_c₆_ne_zero 𝒪[K])
+  rw [← integralModel_c₆_eq 𝒪[K] E]
+  exact (hc.map (algebraMap 𝒪[K] K)).ne_zero
+
+/-- Every isomorphism between split multiplicative models is fixed by base-field automorphisms.
+The argument uses rational node-polynomial roots and includes residue characteristics
+two and three. -/
+theorem map_variableChange_eq_of_hasSplitMultiplicativeReduction
+    (V W : WeierstrassCurve K)
+    [V.HasSplitMultiplicativeReduction 𝒪[K]] [W.HasSplitMultiplicativeReduction 𝒪[K]]
+    (L : Type*) [Field L] [Algebra K L] (C : VariableChange L)
+    (hC : C • V.baseChange L = W.baseChange L) (σ : L ≃ₐ[K] L) :
+    C.map σ.toAlgHom.toRingHom = C :=
+  map_variableChange_eq_of_nodePoly_splits V W V.c₄_ne_zero_of_hasMultiplicativeReduction
+    V.c₆_ne_zero_of_hasMultiplicativeReduction V.nodePoly_splits_of_hasSplitMultiplicativeReduction
+    W.exists_root_nodePoly_of_hasSplitMultiplicativeReduction L C hC σ
+
+/-- An isomorphism between split multiplicative models over a Galois extension descends. -/
+theorem exists_variableChange_of_hasSplitMultiplicativeReduction
+    (V W : WeierstrassCurve K)
+    [V.HasSplitMultiplicativeReduction 𝒪[K]] [W.HasSplitMultiplicativeReduction 𝒪[K]]
+    (L : Type*) [Field L] [Algebra K L] [IsGalois K L]
+    {C : VariableChange L} (hC : C • V.baseChange L = W.baseChange L) :
+    ∃ C₀ : VariableChange K, C₀ • V = W :=
+  exists_variableChange_of_galois_fixed L hC
+    (map_variableChange_eq_of_hasSplitMultiplicativeReduction V W L C hC)
+end WeierstrassCurve
