@@ -46,6 +46,27 @@ theorem isCoprime_preΨ_ΨSq_two_of_isUnit {R : Type*} [CommRing R]
   simp only [map_preΨ, map_ΨSq, coe_evalRingHom, he, hψ, hψ₂] at hh
   exact not_isCoprime_zero_zero hh
 
+/-- On the Weierstrass equation, the two-division polynomial is the square
+of the linear expression cutting out the fixed points of negation. -/
+theorem eval_ΨSq_two_eq_square {R : Type*} [CommRing R]
+    (W : WeierstrassCurve R) {x y : R} (h : W.toAffine.Equation x y) :
+    (W.ΨSq 2).eval x = (2 * y + W.a₁ * x + W.a₃) ^ 2 := by
+  have he := W.toAffine.equation_iff' x y |>.mp h
+  simp only [ΨSq_two, Ψ₂Sq, eval_add, eval_mul, eval_pow, eval_X,
+    eval_C, b₂, b₄, b₆]
+  linear_combination -4 * he
+
+/-- On the odd division locus over an arbitrary ring of good reduction, the
+negation-fixed linear expression is a unit. This includes nonreduced algebras. -/
+theorem isUnit_two_mul_y_add_of_odd_division_eq_zero {R : Type*} [CommRing R]
+    (W : WeierstrassCurve R) (hΔ : IsUnit W.Δ) {x y : R}
+    (h : W.toAffine.Equation x y) {n : ℕ} (hn : Odd n)
+    (hx : (W.preΨ n).eval x = 0) : IsUnit (2 * y + W.a₁ * x + W.a₃) := by
+  have hc := (W.isCoprime_preΨ_ΨSq_two_of_isUnit hΔ hn).map (evalRingHom x)
+  simp only [coe_evalRingHom, hx, isCoprime_zero_left] at hc
+  rw [W.eval_ΨSq_two_eq_square h, isUnit_pow_iff (by decide : 2 ≠ 0)] at hc
+  exact hc
+
 variable {k : Type*} [Field k] (E : WeierstrassCurve k) [DecidableEq k]
 
 /-- A nonzero odd-torsion point avoids the line fixed by negation. -/
