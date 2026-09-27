@@ -18,8 +18,8 @@ to infinity. It preserves torsion and its restriction `reduceTorsion` is surject
 when the fraction field is algebraically closed and the generic fiber is elliptic.
 Inertia fixes these reductions.
 
-Additivity of `reducePoint` remains to be proved. Accordingly `reduceTorsion` is
-currently a function, not an additive or linear map.
+Additivity and the corresponding specialization homomorphisms are proved in
+`FLT.EllipticCurve.PointReductionHom`.
 -/
 
 @[expose] public section
