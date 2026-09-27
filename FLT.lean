@@ -282,6 +282,7 @@ public import FLT.GroupScheme.CoordinateOrder
 public import FLT.GroupScheme.EtaleOrder
 public import FLT.GroupScheme.FiniteFlat
 public import FLT.GroupScheme.FiniteFlatSubobject
+public import FLT.GroupScheme.GlobalModel
 public import FLT.GroupScheme.KummerAlgebra
 public import FLT.GroupScheme.KummerComultiplication
 public import FLT.GroupScheme.KummerHopf
