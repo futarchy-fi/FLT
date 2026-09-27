@@ -284,6 +284,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.TraceLeaves
 public import FLT.GaloisRepresentation.HardlyRamified.TraceReducibility
 public import FLT.GlobalLanglandsConjectures.GLnDefs
 public import FLT.GlobalLanglandsConjectures.GLzero
+public import FLT.GroupScheme.BialgebraBaseChange
 public import FLT.GroupScheme.CoordinateOrder
 public import FLT.GroupScheme.EtaleOrder
 public import FLT.GroupScheme.FiniteFlat
@@ -303,6 +304,8 @@ public import FLT.GroupScheme.KummerPoints
 public import FLT.GroupScheme.KummerTwist
 public import FLT.GroupScheme.ModelPoints
 public import FLT.GroupScheme.PadicAlgebraPatching
+public import FLT.GroupScheme.PadicHopfOperations
+public import FLT.GroupScheme.PadicHopfPatching
 public import FLT.GroupScheme.PadicLatticePatching
 public import FLT.GroupScheme.PadicModulePatching
 public import FLT.GroupScheme.PadicPatchingArithmetic
