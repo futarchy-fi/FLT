@@ -342,6 +342,7 @@ public import FLT.GroupScheme.ConstantMuThreeGlobalSplitting
 public import FLT.GroupScheme.ConstantMuThreeKummerCocycle
 public import FLT.GroupScheme.ConstantMuThreeKummerValuations
 public import FLT.GroupScheme.ConstantMuThreeSectionCocycle
+public import FLT.GroupScheme.ConstantMuThreeSplitting
 public import FLT.GroupScheme.ConstantMuThreeTorsion
 public import FLT.GroupScheme.ConvolutionBaseChange
 public import FLT.GroupScheme.CoordinateOrder
