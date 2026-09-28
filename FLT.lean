@@ -343,6 +343,7 @@ public import FLT.GroupScheme.RaynaudInversionBasis
 public import FLT.GroupScheme.RaynaudModelArithmetic
 public import FLT.GroupScheme.RaynaudOrderThreeFiltration
 public import FLT.GroupScheme.RaynaudProductExtension
+public import FLT.GroupScheme.RaynaudQuotientFunctoriality
 public import FLT.GroupScheme.RaynaudRankThreeClassification
 public import FLT.GroupScheme.RaynaudRankThreeExtension
 public import FLT.GroupScheme.RaynaudRigidity
