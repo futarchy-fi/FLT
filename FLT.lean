@@ -313,6 +313,7 @@ public import FLT.GroupScheme.FontainePresentation
 public import FLT.GroupScheme.FontaineProperty
 public import FLT.GroupScheme.FontaineQuotientValuation
 public import FLT.GroupScheme.FontaineRootCriterion
+public import FLT.GroupScheme.FrobeniusCoordinateKernel
 public import FLT.GroupScheme.FrobeniusKernelStructure
 public import FLT.GroupScheme.FrobeniusSubalgebra
 public import FLT.GroupScheme.GenericFieldChange
