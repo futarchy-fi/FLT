@@ -330,6 +330,7 @@ public import FLT.GroupScheme.QuadraticTwistTensor
 public import FLT.GroupScheme.RaynaudClosureFactorization
 public import FLT.GroupScheme.RaynaudDiagonalizableExtension
 public import FLT.GroupScheme.RaynaudDiscriminant
+public import FLT.GroupScheme.RaynaudEtaleDualExtension
 public import FLT.GroupScheme.RaynaudEtaleExtension
 public import FLT.GroupScheme.RaynaudExtension
 public import FLT.GroupScheme.RaynaudExtensionExists
