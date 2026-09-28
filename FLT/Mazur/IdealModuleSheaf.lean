@@ -52,7 +52,7 @@ def idealModule (I : X.IdealSheafData) : X.Modules :=
 def idealModuleι (I : X.IdealSheafData) : idealModule I ⟶ structureModule X :=
   kernel.ι (idealQuotientMap I)
 
-instance (I : X.IdealSheafData) : Mono (idealModuleι I) :=
+instance idealModuleSheafInst1 (I : X.IdealSheafData) : Mono (idealModuleι I) :=
   inferInstanceAs (Mono (kernel.ι (idealQuotientMap I)))
 
 /-- Evaluation of the ideal module is the kernel of the map on sections. -/
@@ -150,7 +150,7 @@ lemma idealQuotientMap_top : idealQuotientMap (⊤ : X.IdealSheafData) = 0 := by
   change (⊤ : X.IdealSheafData).subschemeι.app U s = 0
   exact Subsingleton.elim _ _
 
-instance : IsIso (idealModuleι (⊤ : X.IdealSheafData)) :=
+instance idealModuleSheafInst2 : IsIso (idealModuleι (⊤ : X.IdealSheafData)) :=
   kernel.ι_of_zero idealQuotientMap_top
 
 /-- The unit ideal gives the structure module, via its canonical inclusion. -/
