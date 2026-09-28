@@ -84,7 +84,7 @@ noncomputable def constantOrderPrime (p : ℕ) (hp : p.Prime) :
 
 /-- The constant group's coordinate algebra is the algebra of integral functions
 on its points, with pointwise multiplication. -/
-noncomputable def constantOrderPrime_coordinateEquiv (p : ℕ) (hp : p.Prime) :
+noncomputable def constantOrderPrimeCoordinateEquiv (p : ℕ) (hp : p.Prime) :
     (constantOrderPrime p hp).carrier ≃ₐ[ℤ] (Multiplicative (ZMod p) → ℤ) := by
   letI : NeZero p := ⟨hp.ne_zero⟩
   exact HopfAlgebra.CartierDual.groupAlgebraEquiv ℤ (Multiplicative (ZMod p))
