@@ -227,6 +227,7 @@ public import FLT.GaloisRepresentation.Automorphic
 public import FLT.GaloisRepresentation.Cyclotomic
 public import FLT.GaloisRepresentation.HardlyRamified.AbsIrredAdapter
 public import FLT.GaloisRepresentation.HardlyRamified.AtTwo
+public import FLT.GaloisRepresentation.HardlyRamified.AugmentedCompletionDifferent
 public import FLT.GaloisRepresentation.HardlyRamified.AugmentedDiscriminantReduction
 public import FLT.GaloisRepresentation.HardlyRamified.AugmentedField
 public import FLT.GaloisRepresentation.HardlyRamified.AugmentedFieldData
