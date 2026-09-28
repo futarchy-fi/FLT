@@ -638,6 +638,7 @@ public import FLT.Mathlib.RingTheory.DiscreteValuationRing.EisensteinExtension
 public import FLT.Mathlib.RingTheory.DiscreteValuationRing.Monogenic
 public import FLT.Mathlib.RingTheory.DiscreteValuationRing.ResidueGenerator
 public import FLT.Mathlib.RingTheory.DiscreteValuationRing.Separable
+public import FLT.Mathlib.RingTheory.DiscreteValuationRing.TotalRamification
 public import FLT.Mathlib.RingTheory.DiscreteValuationRing.UnramifiedSubalgebra
 public import FLT.Mathlib.RingTheory.Discriminant
 public import FLT.Mathlib.RingTheory.FrobeniusAugmentation
