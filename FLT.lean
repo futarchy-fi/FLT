@@ -419,6 +419,7 @@ public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.SplitDescent
 public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.VariableChange
 public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.Weierstrass
 public import FLT.Mathlib.Analysis.Normed.Field.CubicHensel
+public import FLT.Mathlib.Analysis.Normed.Field.CubicSystemHensel
 public import FLT.Mathlib.Analysis.Normed.Field.MultivariableNewton
 public import FLT.Mathlib.Analysis.Normed.Field.ScalarPerturbation
 public import FLT.Mathlib.Analysis.Normed.Ring.WithAbs
