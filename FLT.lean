@@ -709,3 +709,4 @@ public import FLT.TateCurve.Surjectivity
 public import FLT.TateCurve.SymmetricInverse
 public import FLT.TateCurve.TateCurve
 public import FLT.TateCurve.Uniformization
+public import FLT.TateCurve.ValuativeContinuity
