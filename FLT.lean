@@ -618,6 +618,7 @@ public import FLT.Mathlib.RepresentationTheory.Continuous.Basic
 public import FLT.Mathlib.RepresentationTheory.Continuous.TopRep
 public import FLT.Mathlib.RepresentationTheory.Homological.ContCohomology.Basic
 public import FLT.Mathlib.RepresentationTheory.Homological.ContCohomology.CupProduct
+public import FLT.Mathlib.RingTheory.AdicCompletion.Power
 public import FLT.Mathlib.RingTheory.AdicCompletion.PowerQuotients
 public import FLT.Mathlib.RingTheory.AdjoinRoot
 public import FLT.Mathlib.RingTheory.AugmentationCotangent
