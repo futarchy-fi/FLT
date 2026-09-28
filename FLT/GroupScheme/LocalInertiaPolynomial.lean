@@ -134,7 +134,6 @@ theorem threeAdicDifferentOrderEqSumInertia [IsGalois ℚ_[3] L] :
   rw [hk, add_zero] at hG hH
   exact (threeAdicDifferentOrderEqSumAut L).trans (hG.trans (hsum.trans hH.symm))
 
-set_option maxHeartbeats 800000 in
 /-- A relative Eisenstein generator has the same forbidden critical value
 as the absolute different and largest inertia displacement. -/
 theorem threeAdicRelativeMinpolyAddValNeCritical [IsGalois ℚ_[3] L] [Nontrivial C]
