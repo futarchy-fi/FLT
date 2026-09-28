@@ -299,6 +299,7 @@ public import FLT.GroupScheme.EtaleOrder
 public import FLT.GroupScheme.FiniteFlat
 public import FLT.GroupScheme.FiniteFlatDifferentials
 public import FLT.GroupScheme.FiniteFlatSubobject
+public import FLT.GroupScheme.FontaineCubicLifting
 public import FLT.GroupScheme.FontaineCubicNewton
 public import FLT.GroupScheme.FontaineNewtonStep
 public import FLT.GroupScheme.FontainePointLifts
