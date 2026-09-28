@@ -850,6 +850,7 @@ public import FLT.Mazur.CartierCharts
 public import FLT.Mazur.CartierTensorRank
 public import FLT.Mazur.CechAcyclicCokernel
 public import FLT.Mazur.CechConnecting
+public import FLT.Mazur.CechDimensionShift
 public import FLT.Mazur.CechFreeExact
 public import FLT.Mazur.CechFreeOpen
 public import FLT.Mazur.CechFreeOpenStalk
@@ -869,6 +870,7 @@ public import FLT.Mazur.CurveFinite
 public import FLT.Mazur.CurveGenus
 public import FLT.Mazur.CurveNode
 public import FLT.Mazur.CuspCollision
+public import FLT.Mazur.DRFiberClassification
 public import FLT.Mazur.DivisorInvertibleSheaf
 public import FLT.Mazur.DivisorLineBundle
 public import FLT.Mazur.DivisorLineBundleRestrict
