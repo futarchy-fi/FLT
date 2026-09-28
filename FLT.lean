@@ -1,4 +1,5 @@
 module  -- shake: keep-all --deprecated_module: ignore
+
 public import FLT.AINTLIB.CebotarevDensity.NumberFieldEulerProduct
 public import FLT.AINTLIB.DedekindResidue.AuxiliaryFunction
 public import FLT.AINTLIB.DedekindResidue.CompletedZeta.AnalyticControl
@@ -284,6 +285,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.TraceReducibility
 public import FLT.GlobalLanglandsConjectures.GLnDefs
 public import FLT.GlobalLanglandsConjectures.GLzero
 public import FLT.GroupScheme.BialgebraBaseChange
+public import FLT.GroupScheme.ConvolutionBaseChange
 public import FLT.GroupScheme.CoordinateOrder
 public import FLT.GroupScheme.EtaleOrder
 public import FLT.GroupScheme.FiniteFlat
