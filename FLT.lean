@@ -230,6 +230,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.AtTwo
 public import FLT.GaloisRepresentation.HardlyRamified.B5Inputs
 public import FLT.GaloisRepresentation.HardlyRamified.CategoryD
 public import FLT.GaloisRepresentation.HardlyRamified.CategoryDSimple
+public import FLT.GaloisRepresentation.HardlyRamified.CharacterCyclotomicPurity
 public import FLT.GaloisRepresentation.HardlyRamified.CharacterSeparation
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.DedekindZeta
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.DegreeOneGenerator
@@ -264,6 +265,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.DualPointPurity
 public import FLT.GaloisRepresentation.HardlyRamified.DyadicThreeGroupInertia
 public import FLT.GaloisRepresentation.HardlyRamified.Family
 public import FLT.GaloisRepresentation.HardlyRamified.FilteredPointPurity
+public import FLT.GaloisRepresentation.HardlyRamified.FiniteCharacterDual
 public import FLT.GaloisRepresentation.HardlyRamified.FlatCoefficientExtension
 public import FLT.GaloisRepresentation.HardlyRamified.Frey
 public import FLT.GaloisRepresentation.HardlyRamified.InertiaTwoSquareZero
