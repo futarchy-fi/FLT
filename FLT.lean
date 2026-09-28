@@ -867,6 +867,7 @@ public import FLT.Mazur.RelativeSums
 public import FLT.Mazur.SectionCharts
 public import FLT.Mazur.SectionDivisors
 public import FLT.Mazur.SectionKernelLocal
+public import FLT.Mazur.SectionSumFinite
 public import FLT.Mazur.SmoothCurveDimension
 public import FLT.Mazur.SmoothDimension
 public import FLT.Mazur.SmoothDimensionBound
