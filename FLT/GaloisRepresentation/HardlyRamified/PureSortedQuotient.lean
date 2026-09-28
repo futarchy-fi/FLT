@@ -7,6 +7,7 @@ module
 
 public import FLT.GaloisRepresentation.HardlyRamified.Defs
 public import FLT.GaloisRepresentation.HardlyRamified.ResidualCharacteristic
+public import FLT.GaloisRepresentation.HardlyRamified.RationalComplexConjugation
 public import FLT.GroupScheme.SortedFiltrationCoefficientQuotient
 public import Mathlib.LinearAlgebra.Dual.Lemmas
 
@@ -77,27 +78,27 @@ theorem SortedFiltrationWithPureActions.pointSubmodule_ne_top
     S.toSortedFiniteFlatExtension.pointSubmodule hkill k ≠ ⊤ := by
   let instCharThree : CharP k 3 := charP_three_of_finite_padic_algebra k
   intro htop
-  have hscalar : ρ sortingFrobenius = (2 : k) • (1 : Module.End k H.points) := by
+  have hscalar : ρ rationalComplexConjugation = (2 : k) • (1 : Module.End k H.points) := by
     ext x
     have hx : x ∈ S.toSortedFiniteFlatExtension.pointSubmodule hkill k := by
       rw [htop]
       trivial
     obtain ⟨y, rfl⟩ := hx
-    change ρ sortingFrobenius (FiniteFlatObject.pointMap S.extension.inclusion y) = _
+    change ρ rationalComplexConjugation (FiniteFlatObject.pointMap S.extension.inclusion y) = _
     rw [haction, ← map_smul]
-    have hy := S.leftAction sortingFrobenius y
-    rw [sortingFrobenius_cyclotomic] at hy
-    simp only [map_ofNat, show (2 : ZMod (3 ^ 1)).val = 2 from rfl] at hy
+    have hy := S.leftAction rationalComplexConjugation y
+    rw [rationalComplexConjugation_cyclotomic] at hy
+    norm_num only [map_neg, map_one, pow_one, ZMod.val_neg_one] at hy
     rw [hy, map_nsmul]
     change (2 : ℕ) • (FiniteFlatObject.pointMap S.extension.inclusion y) =
       (2 : k) • (FiniteFlatObject.pointMap S.extension.inclusion y)
     simp only [two_smul]
-  have hd := hρ.det sortingFrobenius
-  change LinearMap.det (ρ sortingFrobenius) = _ at hd
+  have hd := hρ.det rationalComplexConjugation
+  change LinearMap.det (ρ rationalComplexConjugation) = _ at hd
   rw [hscalar, LinearMap.det_smul, map_one,
-    Module.finrank_eq_of_rank_eq hV, sortingFrobenius_cyclotomic, map_ofNat] at hd
+    Module.finrank_eq_of_rank_eq hV, rationalComplexConjugation_cyclotomic, map_neg, map_one] at hd
   have hc : (3 : k) = 0 := CharP.cast_eq_zero k 3
-  have hone : (1 : k) = 0 := by linear_combination hc - hd
+  have hone : (1 : k) = 0 := by linear_combination 2 * hc - hd
   exact one_ne_zero hone
 
 include S hkill in

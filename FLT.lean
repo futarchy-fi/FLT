@@ -299,6 +299,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.PointFieldRamification
 public import FLT.GaloisRepresentation.HardlyRamified.PrimeField
 public import FLT.GaloisRepresentation.HardlyRamified.PureAction
 public import FLT.GaloisRepresentation.HardlyRamified.PureSortedQuotient
+public import FLT.GaloisRepresentation.HardlyRamified.RationalComplexConjugation
 public import FLT.GaloisRepresentation.HardlyRamified.RationalRamificationBridge
 public import FLT.GaloisRepresentation.HardlyRamified.ResidualCharacteristic
 public import FLT.GaloisRepresentation.HardlyRamified.ResidualTameTwo
