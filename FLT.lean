@@ -334,6 +334,12 @@ public import FLT.GroupScheme.FiniteFlatDifferentials
 public import FLT.GroupScheme.FiniteFlatFiltration
 public import FLT.GroupScheme.FiniteFlatSubobject
 public import FLT.GroupScheme.FiniteHopfFreeness
+public import FLT.GroupScheme.FontaineCubicLifting
+public import FLT.GroupScheme.FontaineCubicNewton
+public import FLT.GroupScheme.FontaineCubicSystemLifting
+public import FLT.GroupScheme.FontaineDividedPowers
+public import FLT.GroupScheme.FontaineJacobian
+public import FLT.GroupScheme.FontaineNewtonStep
 public import FLT.GroupScheme.FontainePointLifts
 public import FLT.GroupScheme.FontainePointSeparation
 public import FLT.GroupScheme.FontaineProperty
@@ -349,6 +355,7 @@ public import FLT.GroupScheme.HopfPoints
 public import FLT.GroupScheme.HopfShear
 public import FLT.GroupScheme.HopfSpecialFiberFreeness
 public import FLT.GroupScheme.HopfTorsor
+public import FLT.GroupScheme.HopfTorsorDescent
 public import FLT.GroupScheme.HopfTorsorFree
 public import FLT.GroupScheme.IntegralCartierConstantPoints
 public import FLT.GroupScheme.IntegralCartierDual
@@ -412,6 +419,7 @@ public import FLT.GroupScheme.RaynaudInversionBasis
 public import FLT.GroupScheme.RaynaudKernelExactness
 public import FLT.GroupScheme.RaynaudModelArithmetic
 public import FLT.GroupScheme.RaynaudNakayamaDescent
+public import FLT.GroupScheme.RaynaudOrderNineExtension
 public import FLT.GroupScheme.RaynaudOrderThreeFiltration
 public import FLT.GroupScheme.RaynaudProductExtension
 public import FLT.GroupScheme.RaynaudQuotientFiberFreeness
@@ -422,6 +430,7 @@ public import FLT.GroupScheme.RaynaudRankThreeClassification
 public import FLT.GroupScheme.RaynaudRankThreeExtension
 public import FLT.GroupScheme.RaynaudRigidity
 public import FLT.GroupScheme.RaynaudTorsionFiltration
+public import FLT.GroupScheme.RaynaudTorsorDescent
 public import FLT.GroupScheme.RaynaudUnramifiedKernel
 public import FLT.GroupScheme.RaynaudUnramifiedQuotient
 public import FLT.GroupScheme.SemilocalFreeDescent
@@ -481,6 +490,10 @@ public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.Reduction
 public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.SplitDescent
 public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.VariableChange
 public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.Weierstrass
+public import FLT.Mathlib.Analysis.Normed.Field.CubicHensel
+public import FLT.Mathlib.Analysis.Normed.Field.CubicSystemHensel
+public import FLT.Mathlib.Analysis.Normed.Field.MultivariableNewton
+public import FLT.Mathlib.Analysis.Normed.Field.ScalarPerturbation
 public import FLT.Mathlib.Analysis.Normed.Ring.WithAbs
 public import FLT.Mathlib.Data.Fin.Basic
 public import FLT.Mathlib.Data.Real.Archimedean
@@ -546,6 +559,7 @@ public import FLT.Mathlib.RingTheory.DiscreteValuationRing.Monogenic
 public import FLT.Mathlib.RingTheory.DiscreteValuationRing.ResidueGenerator
 public import FLT.Mathlib.RingTheory.DiscreteValuationRing.Separable
 public import FLT.Mathlib.RingTheory.Discriminant
+public import FLT.Mathlib.RingTheory.GeneratorsDifferentialRelations
 public import FLT.Mathlib.RingTheory.Ideal.Quotient.Basic
 public import FLT.Mathlib.RingTheory.LocalRing.Defs
 public import FLT.Mathlib.RingTheory.LocalRing.MaximalIdeal.Basic
@@ -554,6 +568,7 @@ public import FLT.Mathlib.RingTheory.Norm.Quadratic
 public import FLT.Mathlib.RingTheory.Norm.Quotient
 public import FLT.Mathlib.RingTheory.Polynomial.GaussLemma
 public import FLT.Mathlib.RingTheory.PowerBasisApproximateRoots
+public import FLT.Mathlib.RingTheory.PowerBasisDifferentialBezout
 public import FLT.Mathlib.RingTheory.PowerBasisDifferentials
 public import FLT.Mathlib.RingTheory.RamificationInertia.Basic
 public import FLT.Mathlib.RingTheory.SimpleRing.TensorProduct
