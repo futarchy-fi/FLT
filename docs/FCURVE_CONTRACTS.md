@@ -297,10 +297,15 @@ In the Numdam file these are PDF pages 31–33 and 120–121; the cover is not p
 
 [DR] P. Deligne and M. Rapoport, *Les schémas de modules de courbes elliptiques*,
 LNM 349 (1973), 143–316, Chapter II. This is Mazur's reference [9].
-The Chapter II definition and its exact numbered supporting lemmas were **not independently
-recovered** in this review. The corresponding gate below must be cleared before dispatching
-G1-A1/A3/A5/A6 as complete generalized-elliptic-curve constructions. No unchecked DR theorem
-number is used as an acceptance criterion.
+The [DR source ledger](DR_SOURCE_LEDGER.md) independently verifies the Bonn primary scan
+(checked 2026-09-28): I.1.0–1.2, the node models in I, Proposition/Theorem 5.3, and
+II.1.1–1.6, 1.12, with French quotations and printed/PDF pages. The definitions and
+these supporting statements are recovered; their Lean realizations and the C1/C2/C3
+comparison proofs are not. In particular, II.1.4 requires smooth connected genus-one
+or Néron-polygon geometric fibers. C1's nodal genus-one conditions alone are insufficient:
+the II.1.3 characterization also requires trivial dualizing sheaf. Leaf 24 must use the
+classification or prove the strengthened characterization. G1-A1/A3/A5/A6 remain gated
+as complete generalized-elliptic-curve constructions, including their group/action data.
 
 [S] Stacks Project. The tags below were checked against the project's `tags/tags` index and
 chapter TeX sources (`curves`, `divisors`, `morphisms`, `coherent`, `varieties`) on 2026-09-28.
@@ -342,6 +347,15 @@ The latter requirements must come from the actual DR definition, not an opaque p
 `ProperFlatFamily` deliberately specifies only the three morphism properties;
 `GeometricFiberDimensionOne` specifies dimension one of each algebraically closed field fiber.
 Global dimension one alone does not assert purity, connectedness, reducedness or nodality.
+
+FC08-C23 (`CurveNode.lean`) pins nodes by the maximal-ideal adic completion of the actual
+scheme stalk, with its scalar action induced by the structure morphism: the completion is
+k-algebra isomorphic to `MvPowerSeries (Fin 2) k` modulo `(X₀ X₁)`. It proves equivalence
+with a surjective power-series presentation having exactly that kernel. `AtWorstNodes`
+requires each closed point to lie in the actual smooth locus or satisfy this node criterion;
+it does not require a smooth fiber. Over an algebraically closed field this is the ledger's
+ordinary double point model. Étale normal forms, smooth/node disjointness and field-extension
+stability are not proved here; C24's fiber conditions and C2's genus obligations remain open.
 
 The needed stability statement is: after **any** S' → S, the three morphism properties persist,
 and the geometric fibers of E ×S S' identify with field extensions of fibers of E.
