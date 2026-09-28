@@ -3,6 +3,7 @@ import FLTTest.ExponentRebase
 import FLTTest.FLTTest
 import FLTTest.MathlibCompatibility
 import FLTTest.MazurCurveFinite
+import FLTTest.MazurGenericFibers
 import FLTTest.MazurMultiplicativeModel
 import FLTTest.QuaternionFiniteIndex
 import FLTTest.ThreeAdicConsolidation

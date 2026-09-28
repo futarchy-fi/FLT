@@ -853,6 +853,7 @@ public import FLT.Mazur.CurveFinite
 public import FLT.Mazur.CuspCollision
 public import FLT.Mazur.FCurveContracts
 public import FLT.Mazur.FamilyTransport
+public import FLT.Mazur.GenericFibers
 public import FLT.Mazur.IntegralBase
 public import FLT.Mazur.OverPoints
 public import FLT.Mazur.RationalFibers
