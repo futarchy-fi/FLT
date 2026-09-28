@@ -846,10 +846,12 @@ public import FLT.Mathlib.Topology.Polish
 public import FLT.Mazur.AffinePullbackIdeal
 public import FLT.Mazur.CartierChartFlat
 public import FLT.Mazur.CartierCharts
+public import FLT.Mazur.CartierTensorRank
 public import FLT.Mazur.ClosedSubsets
 public import FLT.Mazur.ConstantDegree
 public import FLT.Mazur.Contracts
 public import FLT.Mazur.CurveFinite
+public import FLT.Mazur.CurveGenus
 public import FLT.Mazur.CuspCollision
 public import FLT.Mazur.DivisorInvertibleSheaf
 public import FLT.Mazur.DivisorLineBundle
@@ -864,6 +866,9 @@ public import FLT.Mazur.IdealModuleSheaf
 public import FLT.Mazur.IntegralBase
 public import FLT.Mazur.ModuleSheafDual
 public import FLT.Mazur.ModuleSheafDualSheaf
+public import FLT.Mazur.ModuleSheafTensor
+public import FLT.Mazur.ModuleSheafTensorAffine
+public import FLT.Mazur.ModuleSheafTensorRestrict
 public import FLT.Mazur.OverPoints
 public import FLT.Mazur.RationalFibers
 public import FLT.Mazur.RelativeCartier
