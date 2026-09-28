@@ -36,7 +36,7 @@ variable {X : Scheme.{u}}
 abbrev stalk (x : X) : X.Modules ⥤ AddCommGrpCat.{u} :=
   Scheme.Modules.toPresheaf X ⋙ TopCat.Presheaf.stalkFunctor AddCommGrpCat.{u} x
 
-instance (x : X) : (stalk x).Additive where
+instance coherentDevissageInst1 (x : X) : (stalk x).Additive where
   map_add {M N} f g := by
     change (TopCat.Presheaf.stalkFunctor AddCommGrpCat.{u} x).map
       (f.mapPresheaf + g.mapPresheaf) = _
