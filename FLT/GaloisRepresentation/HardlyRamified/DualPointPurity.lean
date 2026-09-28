@@ -24,7 +24,7 @@ namespace ThreeAdicPlan
 /-- An equivariant bilinear pairing separating the first variable transfers purity
 from its values when the second variable has trivial group action. -/
 theorem pure_of_separating_pairing
-    {G R W V T : Type*} [Group G] [CommRing R]
+    {G R W V T : Type*} [CommRing R]
     [AddCommGroup W] [AddCommGroup V] [AddCommGroup T]
     [Module R W] [Module R V] [Module R T]
     [SMul G W] [SMul G V] [SMul G T]
