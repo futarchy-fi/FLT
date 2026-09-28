@@ -415,6 +415,8 @@ public import FLT.GroupScheme.IntegralEtaleModelRamification
 public import FLT.GroupScheme.IntegralGroupLike
 public import FLT.GroupScheme.IntegralHopfAlgebra
 public import FLT.GroupScheme.IntegralHopfPoints
+public import FLT.GroupScheme.IntegralQuotientFaithfullyFlat
+public import FLT.GroupScheme.IntegralSubquotientExtension
 public import FLT.GroupScheme.InvariantDerivation
 public import FLT.GroupScheme.KummerAlgebra
 public import FLT.GroupScheme.KummerComultiplication
@@ -507,7 +509,11 @@ public import FLT.GroupScheme.RaynaudTorsionFiltration
 public import FLT.GroupScheme.RaynaudTorsorDescent
 public import FLT.GroupScheme.RaynaudUnramifiedKernel
 public import FLT.GroupScheme.RaynaudUnramifiedQuotient
+public import FLT.GroupScheme.ReverseExtHypothesis
 public import FLT.GroupScheme.SemilocalFreeDescent
+public import FLT.GroupScheme.SortedFiltrationCoefficientQuotient
+public import FLT.GroupScheme.SortedFiltrationFunctoriality
+public import FLT.GroupScheme.StableSubgroupExtension
 public import FLT.GroupScheme.ThreeAdicLocalPresentation
 public import FLT.GroupScheme.ThreeAdicModelBaseChange
 public import FLT.GroupScheme.ThreeTorsionEtaleDescent
