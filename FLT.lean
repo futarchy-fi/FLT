@@ -307,6 +307,7 @@ public import FLT.GroupScheme.BialgebraBaseChange
 public import FLT.GroupScheme.CartierDualAlgebra
 public import FLT.GroupScheme.CartierDualCoalgebra
 public import FLT.GroupScheme.CartierDualHopf
+public import FLT.GroupScheme.CartierDualMaps
 public import FLT.GroupScheme.ConstantFiltrationPurity
 public import FLT.GroupScheme.ConstantFiniteFlat
 public import FLT.GroupScheme.CoordinateOrder
