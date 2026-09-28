@@ -28,9 +28,9 @@ open scoped TensorProduct
 namespace ThreeAdicPlan
 
 /-- Package a finite-flat Hopf algebra and its actual generic geometric points. -/
-def FF.ofCoordinateRing {R : Type} [CommRing R] [Algebra R ℚ]
+def FiniteFlatObject.ofCoordinateRing {R : Type} [CommRing R] [Algebra R ℚ]
     (A : Type) [CommRing A] [HopfAlgebra R A] [HopfAlgebra.IsFiniteFlat R A]
-    [Coalgebra.IsCocomm R A] [Algebra.Etale ℚ (ℚ ⊗[R] A)] : FF R := by
+    [Coalgebra.IsCocomm R A] [Algebra.Etale ℚ (ℚ ⊗[R] A)] : FiniteFlatObject R := by
   letI := HopfAlgebra.pointsCommGroup ℚ (AlgebraicClosure ℚ) (ℚ ⊗[R] A)
   exact
   { points := { Carrier := Additive (ℚ ⊗[R] A →ₐ[ℚ] AlgebraicClosure ℚ) }
@@ -51,17 +51,17 @@ theorem groupAlgebra_rational_etale (G : Type) [CommGroup G] [Finite G] :
   exact Algebra.etale_of_finite_reduced ℚ (MonoidAlgebra ℚ G)
 
 /-- The finite diagonalizable group scheme with the given finite character group. -/
-def diagonalizableFiniteFlat (A : Type) [AddCommGroup A] [Finite A] : FF ZInvTwo := by
+def diagonalizableFiniteFlat (A : Type) [AddCommGroup A] [Finite A] : FiniteFlatObject ZInvTwo := by
   let H := MonoidAlgebra ZInvTwo (Multiplicative A)
   letI : HopfAlgebra.IsFiniteFlat ZInvTwo H := ⟨⟩
   letI : Algebra.Etale ℚ (MonoidAlgebra ℚ (Multiplicative A)) :=
     groupAlgebra_rational_etale (Multiplicative A)
   letI : Algebra.Etale ℚ (ℚ ⊗[ZInvTwo] H) :=
     Algebra.Etale.of_equiv (MonoidAlgebra.scalarTensorEquiv ZInvTwo ℚ (M := Multiplicative A)).symm
-  exact FF.ofCoordinateRing H
+  exact FiniteFlatObject.ofCoordinateRing H
 
 /-- The finite-flat group scheme of cube roots of unity over `ℤ[1/2]`,
 represented by the group algebra of `ℤ/3ℤ`. -/
-def muThree : FF ZInvTwo := diagonalizableFiniteFlat (ZMod 3)
+def muThree : FiniteFlatObject ZInvTwo := diagonalizableFiniteFlat (ZMod 3)
 
 end ThreeAdicPlan
