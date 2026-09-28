@@ -861,6 +861,7 @@ public import FLT.Mazur.CechInjectiveAcyclic
 public import FLT.Mazur.CechSheafH
 public import FLT.Mazur.CechSheafHZero
 public import FLT.Mazur.ClosedSubsets
+public import FLT.Mazur.CoherentDevissage
 public import FLT.Mazur.ConstantDegree
 public import FLT.Mazur.Contracts
 public import FLT.Mazur.CurveFiberHypotheses
