@@ -861,6 +861,7 @@ public import FLT.Mazur.FamilyTransport
 public import FLT.Mazur.GenericFibers
 public import FLT.Mazur.IdealModuleSheaf
 public import FLT.Mazur.IntegralBase
+public import FLT.Mazur.ModuleCohomology
 public import FLT.Mazur.OverPoints
 public import FLT.Mazur.RationalFibers
 public import FLT.Mazur.RelativeCartier
