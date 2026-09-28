@@ -35,6 +35,7 @@ public import FLT.AbsoluteGaloisGroup.LocalCompositum
 public import FLT.AbsoluteGaloisGroup.TameCharacter
 public import FLT.AbsoluteGaloisGroup.Unramified
 public import FLT.Assembly.Inputs
+public import FLT.Assembly.Mazur
 public import FLT.Assembly.PrimeField
 public import FLT.Assumptions.Mazur
 public import FLT.Assumptions.Odlyzko
