@@ -286,6 +286,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.KummerModThreeCyclotomic
 public import FLT.GaloisRepresentation.HardlyRamified.KummerObject
 public import FLT.GaloisRepresentation.HardlyRamified.KummerObjectField
 public import FLT.GaloisRepresentation.HardlyRamified.KummerTwoClassNumber
+public import FLT.GaloisRepresentation.HardlyRamified.KummerTwoDifferent
 public import FLT.GaloisRepresentation.HardlyRamified.KummerTwoDyadic
 public import FLT.GaloisRepresentation.HardlyRamified.KummerTwoField
 public import FLT.GaloisRepresentation.HardlyRamified.KummerTwoQuadratic
