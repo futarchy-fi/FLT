@@ -865,7 +865,9 @@ public import FLT.Mazur.GenericFibers
 public import FLT.Mazur.IdealModuleSheaf
 public import FLT.Mazur.IntegralBase
 public import FLT.Mazur.ModuleCohomology
+public import FLT.Mazur.ModuleSheafDual
 public import FLT.Mazur.ModuleSheafTensor
+public import FLT.Mazur.ModuleSheafTensorAffine
 public import FLT.Mazur.ModuleSheafTensorRestrict
 public import FLT.Mazur.OverPoints
 public import FLT.Mazur.RationalFibers
