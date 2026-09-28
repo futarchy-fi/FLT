@@ -427,6 +427,7 @@ public import FLT.GroupScheme.IntegralHopfAlgebra
 public import FLT.GroupScheme.IntegralHopfPoints
 public import FLT.GroupScheme.IntegralQuotientDescent
 public import FLT.GroupScheme.IntegralQuotientFaithfullyFlat
+public import FLT.GroupScheme.IntegralQuotientIdentification
 public import FLT.GroupScheme.IntegralSimpleQuotient
 public import FLT.GroupScheme.IntegralSimpleSubobject
 public import FLT.GroupScheme.IntegralSubquotientExtension
