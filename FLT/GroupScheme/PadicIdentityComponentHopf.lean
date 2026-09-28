@@ -119,7 +119,7 @@ instance identityComponentIdeal_isHopfIdeal : X.identityComponentIdeal.IsHopfIde
   antipode_mem := fun {_} hx ↦ X.identityComponentIdeal_antipode hx
 
 /-- The identity component inherits its Hopf structure from the specified quotient. -/
-instance identityComponent_hopfAlgebra :
+instance identityComponentHopfAlgebra :
     HopfAlgebra ℤ_[3] (X.ComponentAlgebra X.identityComponentIndex) :=
   inferInstanceAs (HopfAlgebra ℤ_[3] (X.CoordinateRing ⧸ X.identityComponentIdeal))
 
