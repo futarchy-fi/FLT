@@ -26,17 +26,6 @@ namespace ThreeAdicPlan
 
 variable {R : Type} [CommRing R] [Algebra R ℚ]
 
-/-- The point maps in the bundled-object and R1 model interfaces agree. -/
-theorem FiniteFlatObject.pointMap_eq_genericHom {H J : FiniteFlatObject R}
-    (f : H.Hom J) :
-    FiniteFlatObject.pointMap f = genericHom (X := H.toFF) (Y := J.toFF) f := rfl
-
-/-- Geometric points detect equality of integral morphisms over a fraction-field base. -/
-theorem FiniteFlatObject.pointMap_injective [IsFractionRing R ℚ]
-    (H J : FiniteFlatObject R) :
-    Function.Injective (FiniteFlatObject.pointMap (H := H) (J := J)) :=
-  genericHom_injective H.toFF J.toFF
-
 /-- Integral composition induces composition on the chosen geometric point groups. -/
 theorem FiniteFlatObject.pointMap_comp {A H Q : FiniteFlatObject R}
     (i : A.Hom H) (q : H.Hom Q) (a : A.points) :

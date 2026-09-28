@@ -72,7 +72,7 @@ theorem HasFiltration.modelHom_eq_zero {A Q : FiniteFlatObject ZInvTwo}
     (hA : HasFiltration A muThree) (hQ : HasFiltration Q constantThree)
     (hkill : KilledByQ 3 A) (f : A.Hom Q) :
     f = ModelHom.zero A.toFF Q.toFF := by
-  apply FiniteFlatObject.pointMap_injective A Q
+  apply genericHom_injective A.toFF Q.toFF
   ext a
   exact (hA.pointHom_eq_zero hQ hkill (FiniteFlatObject.pointMap f) a).trans
     (ModelHom.genericHom_zero A.toFF Q.toFF a).symm
