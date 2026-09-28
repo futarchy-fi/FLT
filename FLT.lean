@@ -1,14 +1,5 @@
-
-import FLT.GaloisRepresentation.HardlyRamified.FiniteCharacterMaps
-import FLT.GaloisRepresentation.HardlyRamified.TrivialPrimeFiltrationCoextension
-import FLT.GroupScheme.CartierDualCharacterGroup
-import FLT.GroupScheme.CartierDualKernelInclusion
-import FLT.GroupScheme.CartierDualPointFiltration
-import FLT.GroupScheme.ConstantCartierDual
-import FLT.GroupScheme.ConstantCoordinates
-import FLT.GroupScheme.IntegralCartierConstantPoints
-import FLT.GroupScheme.IntegralCartierPoints
 module  -- shake: keep-all --deprecated_module: ignore
+
 public import FLT.AINTLIB.CebotarevDensity.NumberFieldEulerProduct
 public import FLT.AINTLIB.DedekindResidue.AuxiliaryFunction
 public import FLT.AINTLIB.DedekindResidue.CompletedZeta.AnalyticControl
@@ -278,6 +269,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.DyadicThreeGroupInertia
 public import FLT.GaloisRepresentation.HardlyRamified.Family
 public import FLT.GaloisRepresentation.HardlyRamified.FilteredPointPurity
 public import FLT.GaloisRepresentation.HardlyRamified.FiniteCharacterDual
+public import FLT.GaloisRepresentation.HardlyRamified.FiniteCharacterMaps
 public import FLT.GaloisRepresentation.HardlyRamified.FiniteFlatUnramified
 public import FLT.GaloisRepresentation.HardlyRamified.FlatCoefficientExtension
 public import FLT.GaloisRepresentation.HardlyRamified.Frey
@@ -309,6 +301,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.Threeadic
 public import FLT.GaloisRepresentation.HardlyRamified.TraceLeaves
 public import FLT.GaloisRepresentation.HardlyRamified.TraceReducibility
 public import FLT.GaloisRepresentation.HardlyRamified.TrivialPrimeFiltration
+public import FLT.GaloisRepresentation.HardlyRamified.TrivialPrimeFiltrationCoextension
 public import FLT.GaloisRepresentation.HardlyRamified.TrivialPrimeFiltrationExtension
 public import FLT.GlobalLanglandsConjectures.GLnDefs
 public import FLT.GlobalLanglandsConjectures.GLzero
@@ -316,12 +309,17 @@ public import FLT.GroupScheme.BialgebraBaseChange
 public import FLT.GroupScheme.CartierDualAlgebra
 public import FLT.GroupScheme.CartierDualBaseChange
 public import FLT.GroupScheme.CartierDualBaseChangeHopf
+public import FLT.GroupScheme.CartierDualCharacterGroup
 public import FLT.GroupScheme.CartierDualCoalgebra
 public import FLT.GroupScheme.CartierDualEtale
 public import FLT.GroupScheme.CartierDualGeometric
 public import FLT.GroupScheme.CartierDualHopf
+public import FLT.GroupScheme.CartierDualKernelInclusion
 public import FLT.GroupScheme.CartierDualMaps
 public import FLT.GroupScheme.CartierDualPairing
+public import FLT.GroupScheme.CartierDualPointFiltration
+public import FLT.GroupScheme.ConstantCartierDual
+public import FLT.GroupScheme.ConstantCoordinates
 public import FLT.GroupScheme.ConstantFiltrationPurity
 public import FLT.GroupScheme.ConstantFiniteFlat
 public import FLT.GroupScheme.CoordinateOrder
@@ -341,7 +339,9 @@ public import FLT.GroupScheme.GlobalModelOverInt
 public import FLT.GroupScheme.HopfDifferentials
 public import FLT.GroupScheme.HopfPointCongruence
 public import FLT.GroupScheme.HopfPoints
+public import FLT.GroupScheme.IntegralCartierConstantPoints
 public import FLT.GroupScheme.IntegralCartierDual
+public import FLT.GroupScheme.IntegralCartierPoints
 public import FLT.GroupScheme.IntegralCoordinateAlgebra
 public import FLT.GroupScheme.IntegralEtaleAlgebra
 public import FLT.GroupScheme.IntegralEtaleModel
