@@ -41,10 +41,11 @@ def HasFiniteFlatModel.inversePoints {W : FiniteContinuousGaloisModule}
         exact congrArg (σ • ·) (e.apply_symm_apply w).symm }
 
 /-- An integral morphism, contravariantly represented on Hopf coordinate algebras. -/
-abbrev FF.Hom (H J : FF R) := J.model.CoordinateRing →ₐc[R] H.model.CoordinateRing
+abbrev FiniteFlatObject.Hom (H J : FiniteFlatObject R) :=
+  J.model.CoordinateRing →ₐc[R] H.model.CoordinateRing
 
 /-- The geometric point map induced by an integral morphism. -/
-def FF.pointMap {H J : FF R} (f : H.Hom J) :
+def FiniteFlatObject.pointMap {H J : FiniteFlatObject R} (f : H.Hom J) :
     H.points →+[AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosure ℚ] J.points :=
   J.model.points.comp ((BialgHom.precompPoints
     (Bialgebra.TensorProduct.map (BialgHom.id ℚ ℚ) f)).comp H.model.inversePoints)
@@ -52,7 +53,7 @@ def FF.pointMap {H J : FF R} (f : H.Hom J) :
 /-- An integral extension `0 → A → H → Q → 0`, including its canonical torsor
 comparison. The comparison expresses that the fibres of the quotient are
 torsors under the kernel, and its formula ties it to the given Hopf maps. -/
-structure FiniteFlatExtension (A H Q : FF R) where
+structure FiniteFlatExtension (A H Q : FiniteFlatObject R) where
   /-- Pullback along the kernel inclusion. -/
   inclusion : A.Hom H
   /-- Pullback along the quotient morphism. -/
@@ -61,12 +62,12 @@ structure FiniteFlatExtension (A H Q : FF R) where
   compositionZero : inclusion.toAlgHom.comp quotient.toAlgHom =
     (Algebra.ofId R A.model.CoordinateRing).comp (Bialgebra.counitAlgHom R Q.model.CoordinateRing)
   /-- The kernel map on geometric points is injective. -/
-  pointsInjective : Function.Injective (FF.pointMap inclusion)
+  pointsInjective : Function.Injective (FiniteFlatObject.pointMap inclusion)
   /-- The quotient map on geometric points is surjective. -/
-  pointsSurjective : Function.Surjective (FF.pointMap quotient)
+  pointsSurjective : Function.Surjective (FiniteFlatObject.pointMap quotient)
   /-- The image on geometric points is precisely the kernel of the quotient. -/
-  pointsExact : ∀ h : H.points, FF.pointMap quotient h = 0 ↔
-    ∃ a : A.points, FF.pointMap inclusion a = h
+  pointsExact : ∀ h : H.points, FiniteFlatObject.pointMap quotient h = 0 ↔
+    ∃ a : A.points, FiniteFlatObject.pointMap inclusion a = h
   /-- The integral quotient morphism is faithfully flat. -/
   quotientFaithfullyFlat : letI := quotient.toAlgHom.toRingHom.toAlgebra
     Module.FaithfullyFlat Q.model.CoordinateRing H.model.CoordinateRing
@@ -84,7 +85,7 @@ structure FiniteFlatExtension (A H Q : FF R) where
 
 /-- Extensions of étale finite-flat group schemes are étale, by descent through
 the faithfully flat quotient and its kernel torsor. -/
-theorem FiniteFlatExtension.etale {A H Q : FF R} (E : FiniteFlatExtension A H Q)
+theorem FiniteFlatExtension.etale {A H Q : FiniteFlatObject R} (E : FiniteFlatExtension A H Q)
     [Algebra.Etale R A.model.CoordinateRing] [Algebra.Etale R Q.model.CoordinateRing] :
     Algebra.Etale R H.model.CoordinateRing := by
   let : Algebra Q.model.CoordinateRing H.model.CoordinateRing :=
@@ -104,17 +105,17 @@ theorem FiniteFlatExtension.etale {A H Q : FF R} (E : FiniteFlatExtension A H Q)
 /-- A finite filtration by a specified integral finite-flat object. The zero
 case has the coordinate algebra of the zero group; each step is an actual
 integral extension with the prescribed quotient. -/
-inductive HasFiltration : FF R → FF R → Prop
+inductive HasFiltration : FiniteFlatObject R → FiniteFlatObject R → Prop
   /-- A coordinate algebra isomorphic to the base represents the zero object. -/
-  | zero {H Q : FF R} (e : H.model.CoordinateRing ≃ₐ[R] R) : HasFiltration H Q
+  | zero {H Q : FiniteFlatObject R} (e : H.model.CoordinateRing ≃ₐ[R] R) : HasFiltration H Q
   /-- The object itself has a one-step filtration with itself as quotient. -/
-  | single (Q : FF R) : HasFiltration Q Q
+  | single (Q : FiniteFlatObject R) : HasFiltration Q Q
   /-- Add one quotient through an integral exact sequence. -/
-  | extension {A H Q : FF R} (E : FiniteFlatExtension A H Q)
+  | extension {A H Q : FiniteFlatObject R} (E : FiniteFlatExtension A H Q)
       (hA : HasFiltration A Q) : HasFiltration H Q
 
 /-- A finite-flat object filtered by étale group schemes is itself étale. -/
-theorem HasFiltration.etale {H Q : FF R} (hF : HasFiltration H Q)
+theorem HasFiltration.etale {H Q : FiniteFlatObject R} (hF : HasFiltration H Q)
     (hQ : Algebra.Etale R Q.model.CoordinateRing) :
     Algebra.Etale R H.model.CoordinateRing := by
   induction hF with
