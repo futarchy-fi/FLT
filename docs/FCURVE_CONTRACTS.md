@@ -25,6 +25,23 @@ These results consume the stated dimension bound. The smooth-dimension bridge
 FC12 and the rational-section bridge FC15 remain separate tasks; this does not
 supply modular curves or Mazur's arithmetic input.
 
+## Generic-point consumer wiring (FC16)
+
+[GenericFibers.lean](../FLT/Mazur/GenericFibers.lean) identifies the original
+`Points X generic` with rational sections of the canonical scheme pullback.
+The comparison is natural in the projection. It proves geometric nonconstancy
+from `G2Cusps`, then `G2Fibers` using FC14 and FC15, and `G2CurveFinite`
+from those fibers and `G2Finite`.
+
+The final consumer accepts the documented `G1Geometry`, `G2Cusps` and
+`G2Finite` inputs, separatedness of the quotient, and an explicit bound
+`topologicalKrullDim D.genericFiber.left ≤ 1`. Thus the consumer wiring is
+proved, while removal of that dimension premise still depends on FC12's
+standard-smooth algebra dimension theorem. None of the modular-curve,
+quotient, cusp-separation or quotient-point-finiteness inputs is constructed
+by this module. The independent axiom checks are in
+[MazurGenericFibers.lean](../FLTTest/MazurGenericFibers.lean).
+
 ## Sources and the two different kinds of curve
 
 [M] B. Mazur, *Modular curves and the Eisenstein ideal*, IHÉS 47 (1977), 33–186,
