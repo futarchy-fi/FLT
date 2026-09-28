@@ -53,6 +53,7 @@ public import FLT.Data.HurwitzRatHat
 public import FLT.Data.QHat
 public import FLT.DedekindDomain.AdicValuation
 public import FLT.DedekindDomain.Completion.BaseChange
+public import FLT.DedekindDomain.Completion.Different
 public import FLT.DedekindDomain.Completion.Embedding
 public import FLT.DedekindDomain.Completion.IdealOrder
 public import FLT.DedekindDomain.Completion.TraceDual
