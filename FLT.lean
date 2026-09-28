@@ -654,6 +654,7 @@ public import FLT.NumberField.AdeleRing
 public import FLT.NumberField.Completion.FieldEquiv
 public import FLT.NumberField.Completion.Finite
 public import FLT.NumberField.Completion.Infinite
+public import FLT.NumberField.Completion.Normal
 public import FLT.NumberField.DifferentDiscriminant
 public import FLT.NumberField.DifferentExponentBounds
 public import FLT.NumberField.DiscriminantBounds
