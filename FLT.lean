@@ -517,6 +517,7 @@ public import FLT.GroupScheme.RaynaudUnramifiedKernel
 public import FLT.GroupScheme.RaynaudUnramifiedQuotient
 public import FLT.GroupScheme.RestrictedScalarPointNaturality
 public import FLT.GroupScheme.ReverseExtHypothesis
+public import FLT.GroupScheme.ReverseExtVanishing
 public import FLT.GroupScheme.SemilocalFreeDescent
 public import FLT.GroupScheme.SortedFiltrationCoefficientQuotient
 public import FLT.GroupScheme.SortedFiltrationFunctoriality
