@@ -17,7 +17,7 @@ facts are combined with explicit primewise different bounds.
 
 The last theorem still requires the tame different formula at two and a
 bound for the global different exponent at three. Relating the latter to
-`fontaine_different_bound_killed_three` requires a completion comparison
+`FontaineDifferentBoundKilledThree` requires a completion comparison
 and a finite flat model realizing that completed point field; neither is
 silently included in the local Fontaine hypothesis.
 -/

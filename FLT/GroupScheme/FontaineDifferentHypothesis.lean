@@ -26,7 +26,7 @@ namespace ThreeAdicPlan
 `ℤ_[3]` killed by three. The normalization is `v(3) = 1` and the point field
 is the fixed field of the kernel of the action on all geometric points.
 This named proposition is an explicit hypothesis, not an established bound. -/
-def fontaine_different_bound_killed_three : Prop :=
+def FontaineDifferentBoundKilledThree : Prop :=
   ∀ (M : FF ℤ_[3] ℚ_[3]), KilledBy 3 M →
     normalizedDifferentExponent (LocalPointField M) < (3 / 2 : ℚ)
 
