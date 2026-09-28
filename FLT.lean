@@ -313,6 +313,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.TrivialPrimeFiltrationCoex
 public import FLT.GaloisRepresentation.HardlyRamified.TrivialPrimeFiltrationExtension
 public import FLT.GlobalLanglandsConjectures.GLnDefs
 public import FLT.GlobalLanglandsConjectures.GLzero
+public import FLT.GroupScheme.ActualThreeAdicKummerCube
 public import FLT.GroupScheme.BialgebraBaseChange
 public import FLT.GroupScheme.CartierDualAlgebra
 public import FLT.GroupScheme.CartierDualAugmentation
