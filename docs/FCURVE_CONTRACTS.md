@@ -295,7 +295,21 @@ It proves that injective coefficient sheaves have zero positive Cech homology.
 cover acyclicity persists under cokernels of embeddings into injectives.
 Vanishing of H1 on intersections implies surjectivity on sections, yielding
 degreewise short exact Cech complexes under the explicit acyclicity hypothesis.
+`CechConnecting.lean` now constructs the connecting maps of the actual Cech
+complexes, proves exactness on both sides, and proves naturality for morphisms
+of short exact coefficient sequences. Cover acyclicity of the first term remains
+an explicit hypothesis.
 The higher-degree Ext comparison and geometric cohomology finiteness remain open.
+
+`CoherentDevissage.lean` defines support using actual additive stalks and proves
+support containment for subsheaves, Noetherian induction on closed subsets, and
+reduction of that induction to irreducible closed subsets. Its two-out-of-three
+lemmas transfer properties along explicitly coherent short exact sequences and
+finite filtrations. This is only the induction and extension core: closedness of
+coherent support, coherent subquotients, and generic-point extension arguments
+are still needed for the full geometric devissage criterion.
+`FLTTest/MazurCechConnecting.lean` audits eleven connecting-map and induction
+endpoints; each uses only the three standard logical axioms.
 
 [MazurCechAcyclic.lean](../FLTTest/MazurCechAcyclic.lean) audits the contraction,
 stalkwise and sheaf exactness, injective vanishing and acyclic-cokernel endpoints.
