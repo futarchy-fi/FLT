@@ -235,6 +235,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.AugmentedFieldUnramifiedTw
 public import FLT.GaloisRepresentation.HardlyRamified.B5Inputs
 public import FLT.GaloisRepresentation.HardlyRamified.CategoryD
 public import FLT.GaloisRepresentation.HardlyRamified.CategoryDInertia
+public import FLT.GaloisRepresentation.HardlyRamified.CategoryDIntegralModels
 public import FLT.GaloisRepresentation.HardlyRamified.CategoryDPointCharacters
 public import FLT.GaloisRepresentation.HardlyRamified.CategoryDSexticQuotient
 public import FLT.GaloisRepresentation.HardlyRamified.CategoryDSimple
