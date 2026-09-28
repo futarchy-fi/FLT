@@ -227,6 +227,7 @@ public import FLT.GaloisRepresentation.Automorphic
 public import FLT.GaloisRepresentation.Cyclotomic
 public import FLT.GaloisRepresentation.HardlyRamified.AbsIrredAdapter
 public import FLT.GaloisRepresentation.HardlyRamified.AtTwo
+public import FLT.GaloisRepresentation.HardlyRamified.AugmentedDiscriminantReduction
 public import FLT.GaloisRepresentation.HardlyRamified.AugmentedField
 public import FLT.GaloisRepresentation.HardlyRamified.AugmentedFieldData
 public import FLT.GaloisRepresentation.HardlyRamified.AugmentedFieldDegree
@@ -358,6 +359,7 @@ public import FLT.GroupScheme.FiniteHopfFreeness
 public import FLT.GroupScheme.FontaineCubicLifting
 public import FLT.GroupScheme.FontaineCubicNewton
 public import FLT.GroupScheme.FontaineCubicSystemLifting
+public import FLT.GroupScheme.FontaineDifferentHypothesis
 public import FLT.GroupScheme.FontaineDividedPowers
 public import FLT.GroupScheme.FontaineJacobian
 public import FLT.GroupScheme.FontaineNewtonStep
@@ -709,6 +711,8 @@ public import FLT.MoretBailly
 public import FLT.NumberField.AdeleRing
 public import FLT.NumberField.Completion.Finite
 public import FLT.NumberField.Completion.Infinite
+public import FLT.NumberField.DifferentDiscriminant
+public import FLT.NumberField.DifferentExponentBounds
 public import FLT.NumberField.DiscriminantBounds
 public import FLT.NumberField.HeightOneSpectrum
 public import FLT.NumberField.InfiniteAdeleRing
