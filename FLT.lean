@@ -537,6 +537,7 @@ public import FLT.Mathlib.RingTheory.LocalFrobeniusInduction
 public import FLT.Mathlib.RingTheory.LocalRing.Defs
 public import FLT.Mathlib.RingTheory.LocalRing.MaximalIdeal.Basic
 public import FLT.Mathlib.RingTheory.Localization.BaseChange
+public import FLT.Mathlib.RingTheory.LocalizedPresentation
 public import FLT.Mathlib.RingTheory.MvPolynomial.CoefficientKernel
 public import FLT.Mathlib.RingTheory.MvPolynomial.FrobeniusGenerators
 public import FLT.Mathlib.RingTheory.MvPolynomial.FrobeniusRelationDescent
