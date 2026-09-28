@@ -272,10 +272,15 @@ In the Numdam file these are PDF pages 31–33 and 120–121; the cover is not p
 
 [DR] P. Deligne and M. Rapoport, *Les schémas de modules de courbes elliptiques*,
 LNM 349 (1973), 143–316, Chapter II. This is Mazur's reference [9].
-The Chapter II definition and its exact numbered supporting lemmas were **not independently
-recovered** in this review. The corresponding gate below must be cleared before dispatching
-G1-A1/A3/A5/A6 as complete generalized-elliptic-curve constructions. No unchecked DR theorem
-number is used as an acceptance criterion.
+The [DR source ledger](DR_SOURCE_LEDGER.md) independently verifies the Bonn primary scan
+(checked 2026-09-28): I.1.0–1.2, the node models in I, Proposition/Theorem 5.3, and
+II.1.1–1.6, 1.12, with French quotations and printed/PDF pages. The definitions and
+these supporting statements are recovered; their Lean realizations and the C1/C2/C3
+comparison proofs are not. In particular, II.1.4 requires smooth connected genus-one
+or Néron-polygon geometric fibers. C1's nodal genus-one conditions alone are insufficient:
+the II.1.3 characterization also requires trivial dualizing sheaf. Leaf 24 must use the
+classification or prove the strengthened characterization. G1-A1/A3/A5/A6 remain gated
+as complete generalized-elliptic-curve constructions, including their group/action data.
 
 [S] Stacks Project. The tags below were checked against the project's `tags/tags` index and
 chapter TeX sources (`curves`, `divisors`, `morphisms`, `coherent`, `varieties`) on 2026-09-28.
