@@ -371,6 +371,7 @@ public import FLT.GroupScheme.FontainePolynomialObstruction
 public import FLT.GroupScheme.FontainePresentation
 public import FLT.GroupScheme.FontaineProperty
 public import FLT.GroupScheme.FontaineQuotientValuation
+public import FLT.GroupScheme.FontaineRelativeObstruction
 public import FLT.GroupScheme.FontaineRootCriterion
 public import FLT.GroupScheme.FrobeniusCoordinateKernel
 public import FLT.GroupScheme.FrobeniusKernelStructure
