@@ -4,6 +4,7 @@ import FLT.GaloisRepresentation.HardlyRamified.TrivialPrimeFiltrationCoextension
 import FLT.GroupScheme.CartierDualCharacterGroup
 import FLT.GroupScheme.ConstantCartierDual
 import FLT.GroupScheme.ConstantCoordinates
+import FLT.GroupScheme.IntegralCartierConstantPoints
 import FLT.GroupScheme.IntegralCartierPoints
 module  -- shake: keep-all --deprecated_module: ignore
 public import FLT.AINTLIB.CebotarevDensity.NumberFieldEulerProduct
