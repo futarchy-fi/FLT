@@ -847,6 +847,7 @@ public import FLT.Mazur.CartierCharts
 public import FLT.Mazur.ClosedSubsets
 public import FLT.Mazur.ConstantDegree
 public import FLT.Mazur.Contracts
+public import FLT.Mazur.CurveFinite
 public import FLT.Mazur.CuspCollision
 public import FLT.Mazur.FCurveContracts
 public import FLT.Mazur.FamilyTransport
