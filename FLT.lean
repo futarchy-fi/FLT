@@ -315,6 +315,7 @@ public import FLT.GroupScheme.CartierDualEtale
 public import FLT.GroupScheme.CartierDualFaithfullyFlat
 public import FLT.GroupScheme.CartierDualGeometric
 public import FLT.GroupScheme.CartierDualHopf
+public import FLT.GroupScheme.CartierDualInvariants
 public import FLT.GroupScheme.CartierDualKernelInclusion
 public import FLT.GroupScheme.CartierDualMaps
 public import FLT.GroupScheme.CartierDualPairing
