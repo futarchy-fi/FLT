@@ -843,6 +843,8 @@ public import FLT.Mathlib.Topology.Instances.Matrix
 public import FLT.Mathlib.Topology.MetricSpace.ProperSpace.InfinitePlace
 public import FLT.Mathlib.Topology.MetricSpace.Pseudo.Matrix
 public import FLT.Mathlib.Topology.Polish
+public import FLT.Mazur.AffinePullbackIdeal
+public import FLT.Mazur.CartierChartFlat
 public import FLT.Mazur.CartierCharts
 public import FLT.Mazur.ClosedSubsets
 public import FLT.Mazur.ConstantDegree
@@ -854,6 +856,7 @@ public import FLT.Mazur.FamilyTransport
 public import FLT.Mazur.IntegralBase
 public import FLT.Mazur.OverPoints
 public import FLT.Mazur.RelativeCartier
+public import FLT.Mazur.RelativeCartierBaseChange
 public import FLT.MazurChapter.AdmissibleGroupSchemes
 public import FLT.MazurW
 public import FLT.MazurWOfPrimeTorsion
