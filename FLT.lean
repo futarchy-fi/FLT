@@ -891,6 +891,7 @@ public import FLT.Mazur.ModuleSheafTensorAffineOpen
 public import FLT.Mazur.ModuleSheafTensorRestrict
 public import FLT.Mazur.ModuleSheafTensorTilde
 public import FLT.Mazur.ModuleSheafUnitCocycle
+public import FLT.Mazur.ModuleSheafUnitCocycleRestrict
 public import FLT.Mazur.OverPoints
 public import FLT.Mazur.ProjectiveLineCharts
 public import FLT.Mazur.ProjectiveLineEndpoints

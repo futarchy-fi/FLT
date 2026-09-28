@@ -43,6 +43,7 @@ abbrev res {V W : X.Opens} (h : W ≤ V) : Γ(X, V) →+* Γ(X, W) :=
 
 /-- A unit cocycle, including its restrictions to all subopens of each overlap. -/
 structure Cocycle {ι : Type u} (U : ι → X.Opens) where
+  /-- The transition unit from the j-th chart to the i-th on a common subopen. -/
   unit (i j : ι) (V : X.Opens) (hi : V ≤ U i) (hj : V ≤ U j) : Γ(X, V)ˣ
   natural (i j : ι) {V W : X.Opens} (h : W ≤ V) (hi : V ≤ U i) (hj : V ≤ U j) :
     res h (unit i j V hi hj : Γ(X, V)) = unit i j W (h.trans hi) (h.trans hj)
