@@ -70,7 +70,7 @@ lemma sectionsFunctor_map (f : R) {M N : ModuleCat.{u} R} (a : M ⟶ N) :
   rw [IsLocalizedModule.map_comp]
   exact congrArg ModuleCat.Hom.hom (tilde.toOpen_map_app a (basicOpen f))
 
-instance (f : R) : (sectionsFunctor f).Additive where
+instance tildePrincipalOpenInst1 (f : R) : (sectionsFunctor f).Additive where
   map_add := by
     intros
     apply ModuleCat.hom_ext
@@ -175,11 +175,11 @@ lemma sectionsFunctor_shortExact (f : R) (S : ShortComplex (ModuleCat.{u} R))
   mono_f := (ModuleCat.mono_iff_injective _).mpr (sections_injective f S.f h.injective_f)
   epi_g := (ModuleCat.epi_iff_surjective _).mpr (sections_surjective f S.g h.surjective_g)
 
-instance (f : R) : Limits.PreservesFiniteLimits (sectionsFunctor f) := by
+instance tildePrincipalOpenInst2 (f : R) : Limits.PreservesFiniteLimits (sectionsFunctor f) := by
   have h := ((Functor.exact_tfae (sectionsFunctor f)).out 2 4).mp (sectionsFunctor_exact f)
   exact h.1
 
-instance (f : R) : Limits.PreservesFiniteColimits (sectionsFunctor f) := by
+instance tildePrincipalOpenInst3 (f : R) : Limits.PreservesFiniteColimits (sectionsFunctor f) := by
   have h := ((Functor.exact_tfae (sectionsFunctor f)).out 2 4).mp (sectionsFunctor_exact f)
   exact h.2
 
@@ -197,7 +197,7 @@ def familyFunctor (d : ι → R) : ModuleCat R ⥤ ModuleCat R where
     ext x i
     exact congrArg (fun a ↦ a.hom (x i)) ((sectionsFunctor _).map_comp a b)
 
-instance (d : ι → R) : (familyFunctor d).Additive where
+instance tildePrincipalOpenInst4 (d : ι → R) : (familyFunctor d).Additive where
   map_add := by
     intro M N a b
     apply ModuleCat.hom_ext
