@@ -8,6 +8,7 @@ module
 public import FLT.Mazur.Contracts
 public import FLT.Mazur.CurveFinite
 public import FLT.Mazur.RationalFibers
+public import FLT.Mazur.SmoothDimensionBound
 public import Mathlib.AlgebraicGeometry.Geometrically.Integral
 public import Mathlib.CategoryTheory.Comma.Over.Pullback
 public import Mathlib.CategoryTheory.HomCongr
@@ -21,8 +22,9 @@ generic curve of dimension at most one and a separated target, FC14 and FC15
 give finite rational fibers. Finiteness of the target points then gives
 finiteness of the source points.
 
-All geometric and arithmetic inputs remain explicit. In particular the
-dimension bound and finiteness of the quotient points are not constructed here.
+The dimension bound follows from smoothness of relative dimension one.
+The integral geometry, cusp separation and finiteness of quotient points
+remain explicit arithmetic inputs.
 -/
 
 @[expose] public noncomputable section
@@ -105,6 +107,16 @@ theorem IntegralData.generic_geometry {p : ℕ} (D : IntegralData p)
     infer_instance
   exact ⟨hproper, GeometricallyIntegral.isIntegral_of_subsingleton D.genericFiber.hom⟩
 
+set_option backward.isDefEq.respectTransparency.types false in
+/-- Smoothness in the integral geometry bounds the dimension of the generic curve. -/
+theorem IntegralData.generic_dimension_le_one {p : ℕ} (D : IntegralData p)
+    (hgeometry : G1Geometry D) : topologicalKrullDim D.genericFiber.left ≤ 1 := by
+  let : SmoothOfRelativeDimension 1 D.X.hom := hgeometry.2.1
+  let : SmoothOfRelativeDimension 1 D.genericFiber.hom := by
+    exact MorphismProperty.pullback_snd (P := @SmoothOfRelativeDimension 1)
+      D.X.hom D.generic inferInstance
+  exact FCurve.topologicalKrullDim_le_one_of_smooth D.genericFiber.hom
+
 namespace QuotientData
 
 variable {p : ℕ} {D : IntegralData p} (Q : QuotientData D)
@@ -155,18 +167,17 @@ theorem g2CurveFinite_of_fibers (hf : G2Fibers Q) (hfinite : G2Finite Q) :
       Finite {x : Points D.X D.generic // onGeneric Q x = a} := hf
   exact Finite.of_equiv _ (Equiv.sigmaFiberEquiv (onGeneric Q))
 
-/-- Curve-point finiteness from the documented geometric, cusp and quotient inputs.
-The smooth-to-topological-dimension bridge remains an explicit bound here. -/
+/-- Curve-point finiteness from the documented geometric, cusp and quotient inputs. -/
 theorem g2CurveFinite (hgeometry : G1Geometry D)
-    (hc : G2Cusps Q) (hfinite : G2Finite Q) [IsSeparated Q.A.hom]
-    (hdim : topologicalKrullDim D.genericFiber.left ≤ 1) : G2CurveFinite D := by
+    (hc : G2Cusps Q) (hfinite : G2Finite Q) [IsSeparated Q.A.hom] : G2CurveFinite D := by
   obtain ⟨hp, hi⟩ := D.generic_geometry hgeometry
   let : IsProper D.genericFiber.hom := hp
   let : IsIntegral D.genericFiber.left := hi
   let : IsSeparated Q.genericFiber.hom := by
     change IsSeparated (pullback.snd Q.A.hom D.generic)
     infer_instance
-  exact Q.g2CurveFinite_of_fibers (Q.g2Fibers hc hdim) hfinite
+  exact Q.g2CurveFinite_of_fibers
+    (Q.g2Fibers hc (D.generic_dimension_le_one hgeometry)) hfinite
 
 end QuotientData
 end FLT.Mazur
