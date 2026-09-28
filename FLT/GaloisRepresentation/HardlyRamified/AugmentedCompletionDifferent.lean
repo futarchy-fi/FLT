@@ -39,15 +39,13 @@ def pointFieldCompletionNormalizedDifferent (H : FiniteFlatObject ZInvTwo)
     threeAdicPointFieldPlace threeAdicPointFieldBaseEquiv w
   exact normalizedDifferentExponent (w.1.adicCompletion (PointField H))
 
-/-- At the prime selected by local restriction, the completed and local point-field
-different exponents agree. -/
-theorem FiniteFlatObject.exists_completion_normalizedDifferent_eq
-    (H : FiniteFlatObject ZInvTwo) :
-    ∃ w : threeAdicPointFieldPlace.Extension (𝓞 (PointField H)),
-      pointFieldCompletionNormalizedDifferent H w =
-        normalizedDifferentExponent (LocalPointField H.localFFAtThree) := by
-  obtain ⟨w, e, _⟩ := H.exists_completion_equiv_localPointField
-  refine ⟨w, ?_⟩
+/-- Every completion above three has the normalized different of the local full point field. -/
+theorem FiniteFlatObject.completion_normalizedDifferent_eq
+    (H : FiniteFlatObject ZInvTwo)
+    (w : threeAdicPointFieldPlace.Extension (𝓞 (PointField H))) :
+    pointFieldCompletionNormalizedDifferent H w =
+      normalizedDifferentExponent (LocalPointField H.localFFAtThree) := by
+  obtain ⟨e⟩ := H.nonempty_completion_equiv_localPointField w
   let := completionAlgebraOfEquiv threeAdicPointFieldPlace threeAdicPointFieldBaseEquiv w
   let : Algebra ℤ_[3] (w.1.adicCompletion (PointField H)) :=
     Algebra.compHom _ (algebraMap ℤ_[3] ℚ_[3])
@@ -56,6 +54,26 @@ theorem FiniteFlatObject.exists_completion_normalizedDifferent_eq
   let := completion_finiteDimensional_of_equiv
     threeAdicPointFieldPlace threeAdicPointFieldBaseEquiv w
   exact normalizedDifferentExponent_eq_of_algEquiv e
+
+/-- Fontaine's stated local hypothesis bounds the completed different at every prime
+above three in the augmented field. -/
+theorem augmentedField_completion_normalizedDifferent_lt
+    (hF : fontaine_different_bound_killed_three)
+    {H : FiniteFlatObject ZInvTwo} (hs : Simple H) (hD : InCategoryD H)
+    (w : threeAdicPointFieldPlace.Extension (𝓞 (AugmentedField H))) :
+    pointFieldCompletionNormalizedDifferent (augmentedObject H) w < (3 / 2 : ℚ) := by
+  rw [(augmentedObject H).completion_normalizedDifferent_eq w]
+  exact hF _ (augmentedObject_localFFAtThree_killedBy_three hs hD)
+
+/-- At the prime selected by local restriction, the completed and local point-field
+different exponents agree. -/
+theorem FiniteFlatObject.exists_completion_normalizedDifferent_eq
+    (H : FiniteFlatObject ZInvTwo) :
+    ∃ w : threeAdicPointFieldPlace.Extension (𝓞 (PointField H)),
+      pointFieldCompletionNormalizedDifferent H w =
+        normalizedDifferentExponent (LocalPointField H.localFFAtThree) := by
+  obtain ⟨w, _, _⟩ := H.exists_completion_equiv_localPointField
+  exact ⟨w, H.completion_normalizedDifferent_eq w⟩
 
 /-- Fontaine's stated local hypothesis bounds the actual different of an augmented-field
 completion, with no global different comparison assumed. -/
