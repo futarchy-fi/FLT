@@ -318,6 +318,8 @@ public import FLT.GroupScheme.KummerHopf
 public import FLT.GroupScheme.KummerParameter
 public import FLT.GroupScheme.KummerPoints
 public import FLT.GroupScheme.KummerTwist
+public import FLT.GroupScheme.LocalDifferentBounds
+public import FLT.GroupScheme.LocalIntegralPowerBasis
 public import FLT.GroupScheme.LocalPointField
 public import FLT.GroupScheme.ModelPoints
 public import FLT.GroupScheme.PadicAlgebraPatching
@@ -328,6 +330,7 @@ public import FLT.GroupScheme.PadicModulePatching
 public import FLT.GroupScheme.PadicPatchingArithmetic
 public import FLT.GroupScheme.PadicPatchingRings
 public import FLT.GroupScheme.PadicTensorPatching
+public import FLT.GroupScheme.PointDifferentials
 public import FLT.GroupScheme.QuadraticDescent
 public import FLT.GroupScheme.QuadraticTwist
 public import FLT.GroupScheme.QuadraticTwistCoassociativity
@@ -464,7 +467,10 @@ public import FLT.Mathlib.RingTheory.DedekindDomain.AdicValuation
 public import FLT.Mathlib.RingTheory.DedekindDomain.FiniteAdeleRing
 public import FLT.Mathlib.RingTheory.DedekindDomain.Ideal.Lemmas
 public import FLT.Mathlib.RingTheory.DedekindDomain.Invertible
+public import FLT.Mathlib.RingTheory.DifferentPowerBasis
 public import FLT.Mathlib.RingTheory.DiscreteValuationRing.AdjoinRoot
+public import FLT.Mathlib.RingTheory.DiscreteValuationRing.Monogenic
+public import FLT.Mathlib.RingTheory.DiscreteValuationRing.ResidueGenerator
 public import FLT.Mathlib.RingTheory.DiscreteValuationRing.Separable
 public import FLT.Mathlib.RingTheory.Discriminant
 public import FLT.Mathlib.RingTheory.Ideal.Quotient.Basic
@@ -474,6 +480,7 @@ public import FLT.Mathlib.RingTheory.Localization.BaseChange
 public import FLT.Mathlib.RingTheory.Norm.Quadratic
 public import FLT.Mathlib.RingTheory.Norm.Quotient
 public import FLT.Mathlib.RingTheory.Polynomial.GaussLemma
+public import FLT.Mathlib.RingTheory.PowerBasisDifferentials
 public import FLT.Mathlib.RingTheory.RamificationInertia.Basic
 public import FLT.Mathlib.RingTheory.SimpleRing.TensorProduct
 public import FLT.Mathlib.RingTheory.Spectrum.Prime.RingHom
