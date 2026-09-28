@@ -347,6 +347,7 @@ public import FLT.GroupScheme.KummerTwist
 public import FLT.GroupScheme.LocalBialgebraDerivations
 public import FLT.GroupScheme.LocalDifferentBounds
 public import FLT.GroupScheme.LocalDifferentValuation
+public import FLT.GroupScheme.LocalHopfLocalizedPresentation
 public import FLT.GroupScheme.LocalHopfPresentation
 public import FLT.GroupScheme.LocalIntegralPowerBasis
 public import FLT.GroupScheme.LocalPointField
