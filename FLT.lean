@@ -287,8 +287,10 @@ public import FLT.GlobalLanglandsConjectures.GLzero
 public import FLT.GroupScheme.CoordinateOrder
 public import FLT.GroupScheme.EtaleOrder
 public import FLT.GroupScheme.FiniteFlat
+public import FLT.GroupScheme.FiniteFlatDifferentials
 public import FLT.GroupScheme.FiniteFlatSubobject
 public import FLT.GroupScheme.GlobalModel
+public import FLT.GroupScheme.HopfDifferentials
 public import FLT.GroupScheme.IntegralCoordinateAlgebra
 public import FLT.GroupScheme.IntegralEtaleAlgebra
 public import FLT.GroupScheme.IntegralEtaleModel
@@ -300,6 +302,7 @@ public import FLT.GroupScheme.KummerHopf
 public import FLT.GroupScheme.KummerParameter
 public import FLT.GroupScheme.KummerPoints
 public import FLT.GroupScheme.KummerTwist
+public import FLT.GroupScheme.LocalPointField
 public import FLT.GroupScheme.ModelPoints
 public import FLT.GroupScheme.PadicLatticePatching
 public import FLT.GroupScheme.PadicModulePatching
