@@ -617,6 +617,7 @@ public import FLT.Mathlib.RingTheory.AdicCompletion.PowerQuotients
 public import FLT.Mathlib.RingTheory.AdjoinRoot
 public import FLT.Mathlib.RingTheory.AugmentationCotangent
 public import FLT.Mathlib.RingTheory.AugmentationGenerators
+public import FLT.Mathlib.RingTheory.ConvolutionTensorPair
 public import FLT.Mathlib.RingTheory.CotangentGenerators
 public import FLT.Mathlib.RingTheory.CotangentQuotient
 public import FLT.Mathlib.RingTheory.CotangentSubfamily
