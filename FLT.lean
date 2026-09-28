@@ -293,14 +293,17 @@ public import FLT.GaloisRepresentation.HardlyRamified.Threeadic
 public import FLT.GaloisRepresentation.HardlyRamified.TraceLeaves
 public import FLT.GaloisRepresentation.HardlyRamified.TraceReducibility
 public import FLT.GaloisRepresentation.HardlyRamified.TrivialPrimeFiltration
+public import FLT.GaloisRepresentation.HardlyRamified.TrivialPrimeFiltrationExtension
 public import FLT.GlobalLanglandsConjectures.GLnDefs
 public import FLT.GlobalLanglandsConjectures.GLzero
 public import FLT.GroupScheme.BialgebraBaseChange
+public import FLT.GroupScheme.ConstantFiniteFlat
 public import FLT.GroupScheme.CoordinateOrder
 public import FLT.GroupScheme.EtaleInertia
 public import FLT.GroupScheme.EtaleModelUnramified
 public import FLT.GroupScheme.EtaleOrder
 public import FLT.GroupScheme.FiniteFlat
+public import FLT.GroupScheme.FiniteFlatFiltration
 public import FLT.GroupScheme.FiniteFlatSubobject
 public import FLT.GroupScheme.GenericFieldChange
 public import FLT.GroupScheme.GlobalModel
