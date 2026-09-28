@@ -152,7 +152,7 @@ theorem kummerTwoRootPoint_zero : kummerTwoRootPoint 0 1 (by simp) = 0 := by
   exact IsScalarTower.algebraMap_apply ZInvTwo ℚ (AlgebraicClosure ℚ) _
 
 /-- The Kummer point group is annihilated by three. -/
-theorem kummerTwoObject_killedBy_three : KilledBy 3 kummerTwoObject := by
+theorem kummerTwoObject_killedBy_three : KilledByQ 3 kummerTwoObject := by
   change ∀ P : kummerTwoPoints, (3 : ℕ) • P = 0
   intro P
   obtain ⟨i, x, hx, rfl⟩ := kummerTwoRootPoint_surjective P
