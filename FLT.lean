@@ -233,6 +233,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.B5Inputs
 public import FLT.GaloisRepresentation.HardlyRamified.CategoryD
 public import FLT.GaloisRepresentation.HardlyRamified.CategoryDInertia
 public import FLT.GaloisRepresentation.HardlyRamified.CategoryDSimple
+public import FLT.GaloisRepresentation.HardlyRamified.CategoryDSimpleRepresentation
 public import FLT.GaloisRepresentation.HardlyRamified.CharacterCyclotomicPurity
 public import FLT.GaloisRepresentation.HardlyRamified.CharacterSeparation
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.DedekindZeta
