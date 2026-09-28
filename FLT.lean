@@ -608,6 +608,7 @@ public import FLT.Mathlib.RingTheory.MvPolynomial.CoefficientKernel
 public import FLT.Mathlib.RingTheory.MvPolynomial.FrobeniusGenerators
 public import FLT.Mathlib.RingTheory.MvPolynomial.FrobeniusRelationDescent
 public import FLT.Mathlib.RingTheory.MvPolynomial.HeightOneIdeal
+public import FLT.Mathlib.RingTheory.MvPolynomial.LocalizedReduction
 public import FLT.Mathlib.RingTheory.MvPolynomial.NilpotentPresentation
 public import FLT.Mathlib.RingTheory.MvPolynomial.RedundantCoordinates
 public import FLT.Mathlib.RingTheory.NilpotentRelationLifting
