@@ -357,6 +357,7 @@ public import FLT.GroupScheme.RaynaudIntegralFiltration
 public import FLT.GroupScheme.RaynaudInversionBasis
 public import FLT.GroupScheme.RaynaudKernelExactness
 public import FLT.GroupScheme.RaynaudModelArithmetic
+public import FLT.GroupScheme.RaynaudNakayamaDescent
 public import FLT.GroupScheme.RaynaudOrderThreeFiltration
 public import FLT.GroupScheme.RaynaudProductExtension
 public import FLT.GroupScheme.RaynaudQuotientFunctoriality
