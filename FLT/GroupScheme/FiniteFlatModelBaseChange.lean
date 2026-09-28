@@ -23,7 +23,7 @@ namespace ThreeAdicPlan
 
 /-- Extend a chosen integral model and restrict its geometric Galois module
 along a compatible extension of fraction fields. -/
-def HasFiniteFlatModel.baseChange {R S K L : Type}
+def HasFiniteFlatModel.scalarBaseChange {R S K L : Type}
     [CommRing R] [CommRing S] [Field K] [Field L] [PerfectField K] [PerfectField L]
     [Algebra R S] [Algebra R K] [Algebra K L] [Algebra S L] [Algebra R L]
     [IsScalarTower R S L] [IsScalarTower R K L]

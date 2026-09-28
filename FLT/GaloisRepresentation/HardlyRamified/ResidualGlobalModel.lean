@@ -109,7 +109,7 @@ theorem localThreeModel_transport (W : FiniteContinuousGaloisModule)
     IsScalarTower.of_algebraMap_eq' rfl
   let instTowerRKL : IsScalarTower R K ℚ_[3] :=
     IsScalarTower.of_algebraMap_eq fun x ↦ hR x
-  let N := M.baseChange (S := ℤ_[3]) (L := ℚ_[3])
+  let N := M.scalarBaseChange (S := ℤ_[3]) (L := ℚ_[3])
   obtain ⟨q, hq⟩ := localThreeRestriction_comparison W e.toRingHom
   apply (nonempty_hasFiniteFlatModel_iff _).mpr
   exact N.isFiniteFlat.map _ _ _ _ q hq
