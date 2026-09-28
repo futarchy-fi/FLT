@@ -95,7 +95,7 @@ lemma freeOpenHomEquiv_naturality_open {W W' : Opens X} (i : W ⟶ W')
 
 variable [HasExt.{v} (Sheaf (Opens.grothendieckTopology X) AddCommGrpCat.{u})]
 
-local instance : HasExt.{v} (TopCat.Sheaf AddCommGrpCat.{u} X) :=
+local instance cechFreeOpenInst1 : HasExt.{v} (TopCat.Sheaf AddCommGrpCat.{u} X) :=
   inferInstanceAs (HasExt.{v} (Sheaf (Opens.grothendieckTopology X) AddCommGrpCat.{u}))
 
 /-- Degree-zero cohomology on an open is its group of sections. -/
