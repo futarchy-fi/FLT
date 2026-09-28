@@ -65,6 +65,25 @@ No global smoothness or reducedness assumption is added.
 [MazurSmoothGeometry.lean](../FLTTest/MazurSmoothGeometry.lean) audits these
 two section theorems and the exact smooth dimension theorem.
 
+## Relative sums and smooth-open sections (FC06)
+
+[RelativeSums.lean](../FLT/Mazur/RelativeSums.lean) proves `RelativeCartierSum`.
+Locally, the quotient by a product of regular equations is an extension of the
+two flat quotients, hence flat over the base. The local proof gives sums of
+relative effective Cartier divisors on arbitrary ambient families.
+
+Finite sums include the empty sum and repeated sections with multiplicity.
+Sections may land in a smooth open of a separated family; the ambient family
+need not be smooth. Their ideal products remain relative Cartier after arbitrary
+base change. The module also identifies the pulled-back ideals with the ideals
+of the actual base-changed sections, via `section_prod_comap_eq`.
+[MazurRelativeSums.lean](../FLTTest/MazurRelativeSums.lean) audits the sum and
+base-change endpoints and checks a doubled section and the empty family.
+
+This proves the split section-sum construction. Descent of cyclic subgroups
+(G1-A5), the degree/ample subgroup criterion, and construction of the modular
+curve remain separate obligations.
+
 ## Sources and the two different kinds of curve
 
 [M] B. Mazur, *Modular curves and the Eisenstein ideal*, IHÉS 47 (1977), 33–186,

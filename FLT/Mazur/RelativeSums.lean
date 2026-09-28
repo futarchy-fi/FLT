@@ -6,7 +6,7 @@ Authors: The FLT Project
 module
 
 public import FLT.Mazur.RelativeCartierBaseChange
-public import FLT.Mazur.SmoothSectionCartier
+public import FLT.Mazur.SmoothOpenSectionCartier
 
 /-!
 # Sums of relative effective Cartier divisors
@@ -201,6 +201,16 @@ theorem relativeEffectiveCartier_section_prod {ι : Type*} (f : X ⟶ S)
   relativeEffectiveCartier_prod f t _ fun i hi ↦
     smoothSectionCartier f (s i) inferInstance inferInstance (hs i hi)
 
+/-- Sections in a smooth open define a relative divisor on the ambient separated family.
+Repeated sections retain their multiplicities; the ambient family may be singular. -/
+theorem relativeEffectiveCartier_smoothOpen_section_prod {U : Scheme.{u}} {ι : Type*}
+    (j : U ⟶ X) (f : X ⟶ S) [IsOpenImmersion j]
+    [SmoothOfRelativeDimension 1 (j ≫ f)] [IsSeparated f]
+    (t : Finset ι) (s : ι → (S ⟶ U)) (hs : ∀ i ∈ t, s i ≫ j ≫ f = 𝟙 S) :
+    RelativeEffectiveCartier f (∏ i ∈ t, (s i ≫ j).ker) :=
+  relativeEffectiveCartier_prod f t _ fun i hi ↦
+    smoothOpenSectionCartier j f (s i) inferInstance inferInstance inferInstance (hs i hi)
+
 /-- Pullback of ideal sheaves preserves products for every ambient morphism. -/
 theorem idealSheaf_comap_mul (I J : X.IdealSheafData) (k : Y ⟶ X) :
     (I * J).comap k = I.comap k * J.comap k := by
@@ -250,6 +260,17 @@ theorem section_prod_baseChange {ι : Type*} (f : X ⟶ S) (g : T ⟶ S)
         ((∏ i ∈ t, (s i).ker).comap (pullback.fst f g)) :=
   ⟨idealSheaf_comap_prod t _ _, relativeCartierBaseChange f g _
     (relativeEffectiveCartier_section_prod f t s hs)⟩
+
+/-- A sum of smooth-open section divisors remains relative Cartier after any base change. -/
+theorem smoothOpen_section_prod_baseChange {U : Scheme.{u}} {ι : Type*}
+    (j : U ⟶ X) (f : X ⟶ S) (g : T ⟶ S) [IsOpenImmersion j]
+    [SmoothOfRelativeDimension 1 (j ≫ f)] [IsSeparated f]
+    (t : Finset ι) (s : ι → (S ⟶ U)) (hs : ∀ i ∈ t, s i ≫ j ≫ f = 𝟙 S) :
+    RelativeEffectiveCartier (pullback.snd f g)
+      (∏ i ∈ t, (s i ≫ j).ker.comap (pullback.fst f g)) := by
+  rw [← idealSheaf_comap_prod]
+  exact relativeCartierBaseChange f g _
+    (relativeEffectiveCartier_smoothOpen_section_prod j f t s hs)
 
 /-- The section on the base-changed curve, retaining the equation over its base. -/
 def sectionBaseChange (f : X ⟶ S) (g : T ⟶ S) (s : S ⟶ X)
