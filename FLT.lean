@@ -333,6 +333,7 @@ public import FLT.GroupScheme.PadicPatchingArithmetic
 public import FLT.GroupScheme.PadicPatchingRings
 public import FLT.GroupScheme.PadicTensorPatching
 public import FLT.GroupScheme.PointDifferentials
+public import FLT.GroupScheme.PrincipalFiberFreeness
 public import FLT.GroupScheme.QuadraticDescent
 public import FLT.GroupScheme.QuadraticTwist
 public import FLT.GroupScheme.QuadraticTwistCoassociativity
