@@ -5,6 +5,10 @@ Authors: Kevin Buzzard
 -/
 module
 
+public import FLT.TateCurve.AlgebraicPointLocal
+public import FLT.TateCurve.ModelGalois
+public import FLT.TateCurve.ModelSign
+public import FLT.TateCurve.ValuativeContinuity
 public import FLT.TateCurve.AlgebraicUniformization
 public import FLT.TateCurve.JInvariant
 public import FLT.TateCurve.Reduction
@@ -91,6 +95,30 @@ transporting this one along an isomorphism `E_{q(E)} ≅ E` of Weierstrass curve
 (`exists_variableChange_tateCurve` below), and *that* is the only choice in the theory:
 there are exactly two such isomorphisms, differing by negation.
 -/
+
+namespace WeierstrassCurve.Affine.Point
+
+variable {K L : Type*} [Field K] [Field L] [Algebra K L] [DecidableEq L]
+
+/-- Model transport over an extension is transport by the mapped coordinate change. -/
+theorem modelEquivOver_eq (V W : WeierstrassCurve K) [V.IsElliptic]
+    (C : VariableChange K) (hC : C • V = W)
+    (hL : C.map (algebraMap K L) • V.baseChange L = W.baseChange L)
+    (P : (V⁄L).Point) :
+    modelEquivOver V W C hC P =
+      equivOfEq hL ((equivVariableChange (V.baseChange L) (C.map (algebraMap K L))).symm P) := by
+  let : (V.baseChange L).IsElliptic := inferInstanceAs (V.map (algebraMap K L)).IsElliptic
+  have transport : ∀ {A B D : WeierstrassCurve L} (h : A = B) (h' : A = D)
+      (h'' : B = D) (Q : B.toAffine.Point),
+      equivOfEq h' ((equivOfEq h).symm Q) = equivOfEq h'' Q := by
+    intro A B D h h' h'' Q
+    subst B
+    subst D
+    rfl
+  unfold modelEquivOver equivVariableChangeOver
+  exact transport _ _ _ _
+
+end WeierstrassCurve.Affine.Point
 
 -- let k be a nonarchimedean local field
 variable {k : Type*} [Field k] [ValuativeRel k] [TopologicalSpace k]
@@ -322,6 +350,103 @@ theorem WeierstrassCurve.q_baseChange : (E.baseChange l).q = algebraMap k l E.q 
     show (E.baseChange l).j = algebraMap k l E.j from E.map_j (algebraMap k l),
     tateParameter_map E.one_lt_valuation_j]
 
+variable [DecidableEq k] in
+omit [E.IsMinimal 𝒪[k]] in
+/-- On representatives, the chosen uniformization is the local coordinate map followed by
+the inverse change of Weierstrass coordinates. -/
+theorem WeierstrassCurve.tateEquiv_apply_eq_local (u : kˣ) :
+    E.tateEquiv (Additive.ofMul ↑u) =
+      Affine.Point.equivOfEq E.exists_variableChange_tateCurve.choose_spec
+        ((Affine.Point.equivVariableChange (tateCurve E.q)
+          E.exists_variableChange_tateCurve.choose).symm
+          (TateCurve.uniformizationPoint E.qUnit E.valuation_q_lt_one u)) := by
+  let : ValuativeExtension k k := ⟨fun _ _ ↦ Iff.rfl⟩
+  change E.tateModelEquiv k
+    (TateCurve.FiniteStages.algebraicPoint E.qUnit E.valuation_q_lt_one u) = _
+  rw [TateCurve.FiniteStages.algebraicPoint_eq_uniformizationPointOver
+    E.qUnit E.valuation_q_lt_one continuous_id]
+  rfl
+
+omit [E.IsMinimal 𝒪[k]] in
+/-- The chosen extension-field isomorphism has the base-changed Tate model as source. -/
+theorem WeierstrassCurve.tateModel_smul_baseChange :
+    (E.baseChange l).exists_variableChange_tateCurve.choose •
+      (tateCurve E.q).baseChange l = E.baseChange l := by
+  have hq : (tateCurve E.q).baseChange l = tateCurve (E.baseChange l).q := by
+    rw [E.q_baseChange]
+    exact tateCurve_baseChange E.q E.valuation_q_lt_one
+  rw [hq]
+  exact (E.baseChange l).exists_variableChange_tateCurve.choose_spec
+
+omit [E.IsMinimal 𝒪[k]] in
+/-- The extension-field choice of Tate-model isomorphism is fixed by base-linear automorphisms. -/
+theorem WeierstrassCurve.tateModel_variableChange_galois (σ : l ≃ₐ[k] l) :
+    (E.baseChange l).exists_variableChange_tateCurve.choose.map σ.toAlgHom.toRingHom =
+      (E.baseChange l).exists_variableChange_tateCurve.choose := by
+  let : (tateCurve E.q).HasSplitMultiplicativeReduction 𝒪[k] :=
+    TateCurve.tateCurve_hasSplitMultiplicativeReduction E.q_ne_zero E.valuation_q_lt_one
+  apply map_variableChange_eq_of_hasSplitMultiplicativeReduction (tateCurve E.q) E l
+  have hq : (tateCurve E.q).baseChange l = tateCurve (E.baseChange l).q := by
+    rw [E.q_baseChange]
+    exact tateCurve_baseChange E.q E.valuation_q_lt_one
+  rw [hq]
+  exact (E.baseChange l).exists_variableChange_tateCurve.choose_spec
+
+variable [DecidableEq l] in
+omit [E.IsMinimal 𝒪[k]] in
+/-- The local uniformization over the extension uses its chosen model isomorphism and
+the base-field Tate series. -/
+theorem WeierstrassCurve.tateEquiv_baseChange_apply_eq_local (u : lˣ) :
+    (E.baseChange l).tateEquiv (Additive.ofMul ↑u) =
+      Affine.Point.equivOfEq E.tateModel_smul_baseChange
+        ((Affine.Point.equivVariableChange ((tateCurve E.q).baseChange l)
+          (E.baseChange l).exists_variableChange_tateCurve.choose).symm
+          (TateCurve.uniformizationPointOver l E.qUnit E.valuation_q_lt_one u)) := by
+  let : ((tateCurve E.q).baseChange l).IsElliptic :=
+    inferInstanceAs ((tateCurve E.q).map (algebraMap k l)).IsElliptic
+  rw [tateEquiv_apply_eq_local]
+  have hq : tateCurve (E.baseChange l).q = (tateCurve E.q).baseChange l := by
+    rw [E.q_baseChange]
+    exact (tateCurve_baseChange E.q E.valuation_q_lt_one).symm
+  erw [Affine.Point.equivVariableChange_symm_congr _ hq _ E.tateModel_smul_baseChange]
+  apply congrArg (Affine.Point.equivOfEq E.tateModel_smul_baseChange)
+  apply congrArg ((Affine.Point.equivVariableChange ((tateCurve E.q).baseChange l)
+    (E.baseChange l).exists_variableChange_tateCurve.choose).symm)
+  have huq : (E.baseChange l).qUnit = Units.map (algebraMap k l).toMonoidHom E.qUnit := by
+    ext
+    exact E.q_baseChange
+  unfold TateCurve.uniformizationPointOver
+  have transport : ∀ (q q' : lˣ) (hq : valuation l (q : l) < 1)
+      (hq' : valuation l (q' : l) < 1) (heq : q = q') (W : WeierstrassCurve l)
+      (hW : tateCurve (q : l) = W) (hW' : tateCurve (q' : l) = W),
+      Affine.Point.equivOfEq hW (TateCurve.uniformizationPoint q hq u) =
+        Affine.Point.equivOfEq hW' (TateCurve.uniformizationPoint q' hq' u) := by
+    intro q q' hq hq' heq W hW hW'
+    subst q'
+    rfl
+  exact transport _ _ _ _ huq _ _ _
+
+variable [DecidableEq k] [DecidableEq l] in
+omit [E.IsMinimal 𝒪[k]] in
+/-- Transporting the base-field uniformization gives the same convergent Tate point
+over the extension, using the base-field model isomorphism. -/
+theorem WeierstrassCurve.baseChange_tateEquiv_eq_local (u : kˣ) :
+    Affine.Point.baseChange (W' := E) k l (E.tateEquiv (Additive.ofMul ↑u)) =
+      E.tateModelEquiv l
+        (TateCurve.uniformizationPointOver l E.qUnit E.valuation_q_lt_one
+          (Units.map (algebraMap k l).toMonoidHom u)) := by
+  let : ValuativeExtension k k := ⟨fun _ _ ↦ Iff.rfl⟩
+  change Affine.Point.map (Algebra.ofId k l)
+    (E.tateModelEquiv k (TateCurve.FiniteStages.algebraicPoint E.qUnit E.valuation_q_lt_one u)) = _
+  rw [TateCurve.FiniteStages.algebraicPoint_eq_uniformizationPointOver
+    E.qUnit E.valuation_q_lt_one continuous_id]
+  unfold tateModelEquiv
+  erw [Affine.Point.map_modelEquivOver]
+  apply congrArg (E.tateModelEquiv l)
+  exact TateCurve.map_uniformizationPointOver (Algebra.ofId k l)
+    (TateCurve.continuous_algebraMap_of_valuation_lt_one E.q_ne_zero E.valuation_q_lt_one)
+    E.qUnit E.valuation_q_lt_one u
+
 -- The uniformisations of `E` and of its base change fit into a commutative diagram, but only
 -- up to a sign `ε` which cannot in general be removed, whatever choices are made in
 -- `tateEquiv`. It is tempting to think the diagrams must commute on the nose because the
@@ -337,28 +462,66 @@ theorem WeierstrassCurve.q_baseChange : (E.baseChange l).q = algebraMap k l E.q 
 -- while `u₀² ∈ ℚ_p` is a nonsquare (otherwise `E₀` would be split), so `σ(u₀) = -u₀` and
 -- the diagram anticommutes: `ε = -1` is forced.
 -- (When the morphism is `k`-linear the sign disappears: see `tateEquiv_galois` below.)
+-- Retain the minimality argument in the existing public statement.
 variable [DecidableEq k] [DecidableEq l] in
+set_option linter.unusedSectionVars false in
+@[nolint unusedArguments]
 theorem WeierstrassCurve.tateEquiv_baseChange :
     ∃ ε : ℤˣ, ∀ u : kˣ,
       Affine.Point.baseChange (W' := E) k l (E.tateEquiv (Additive.ofMul ↑u)) =
         (ε : ℤ) • (E.baseChange l).tateEquiv
           (Additive.ofMul
             (Units.map (algebraMap k l).toMonoidHom u :
-              lˣ ⧸ Subgroup.zpowers (E.baseChange l).qUnit)) :=
-  sorry
+              lˣ ⧸ Subgroup.zpowers (E.baseChange l).qUnit)) := by
+  let V := (tateCurve E.q).baseChange l
+  let C := E.exists_variableChange_tateCurve.choose.map (algebraMap k l)
+  let D := (E.baseChange l).exists_variableChange_tateCurve.choose
+  have hC : C • V = E.baseChange l := by
+    change C • (tateCurve E.q).map (algebraMap k l) = E.baseChange l
+    rw [map_variableChange]
+    exact congrArg (fun W : WeierstrassCurve k ↦ W.baseChange l)
+      E.exists_variableChange_tateCurve.choose_spec
+  have hD : D • V = E.baseChange l := E.tateModel_smul_baseChange
+  let : (tateCurve E.q).HasSplitMultiplicativeReduction 𝒪[k] :=
+    TateCurve.tateCurve_hasSplitMultiplicativeReduction E.q_ne_zero E.valuation_q_lt_one
+  have h4 : V.c₄ ≠ 0 := by
+    change ((tateCurve E.q).map (algebraMap k l)).c₄ ≠ 0
+    rw [map_c₄]
+    exact (map_ne_zero _).mpr (tateCurve E.q).c₄_ne_zero_of_hasMultiplicativeReduction
+  have h6 : V.c₆ ≠ 0 := by
+    change ((tateCurve E.q).map (algebraMap k l)).c₆ ≠ 0
+    rw [map_c₆]
+    exact (map_ne_zero _).mpr (tateCurve E.q).c₆_ne_zero_of_hasMultiplicativeReduction
+  obtain ⟨ε, hε⟩ := Affine.Point.exists_sign_modelEquiv V (E.baseChange l) h4 h6 C D hC hD
+  refine ⟨ε, fun u ↦ ?_⟩
+  rw [E.baseChange_tateEquiv_eq_local, E.tateEquiv_baseChange_apply_eq_local]
+  unfold tateModelEquiv
+  erw [Affine.Point.modelEquivOver_eq _ _ _ _ hC]
+  exact hε _
 
 -- Galois equivariance: for a `k`-*algebra* automorphism `σ` of `l` the diagram commutes
 -- with no sign, because `E` and a choice of uniformisation for it already live over `k`,
 -- and `σ` fixes `k`. This is the statement needed to compute the Galois action on the
 -- torsion of `E`. The continuity hypothesis on `σ` is automatic when `l/k` is algebraic
 -- (e.g. a finite extension), by uniqueness of extensions of valuations.
+-- Retain the minimality argument in the existing public statement.
 variable [DecidableEq l] in
+set_option linter.unusedSectionVars false in
+@[nolint unusedArguments]
 theorem WeierstrassCurve.tateEquiv_galois (σ : l ≃ₐ[k] l) (hσ : Continuous σ) (u : lˣ) :
     Affine.Point.map (W' := E) σ.toAlgHom
         ((E.baseChange l).tateEquiv (Additive.ofMul ↑u) : (E⁄l).Point) =
       (E.baseChange l).tateEquiv
-        (Additive.ofMul ↑(Units.map σ.toAlgHom.toRingHom.toMonoidHom u)) :=
-  sorry
+        (Additive.ofMul ↑(Units.map σ.toAlgHom.toRingHom.toMonoidHom u)) := by
+  let : ((tateCurve E.q).baseChange l).IsElliptic :=
+    inferInstanceAs ((tateCurve E.q).map (algebraMap k l)).IsElliptic
+  rw [E.tateEquiv_baseChange_apply_eq_local, E.tateEquiv_baseChange_apply_eq_local]
+  erw [Affine.Point.map_modelEquiv_of_fixed (tateCurve E.q) E _ _ σ
+      (E.tateModel_variableChange_galois σ)]
+  apply congrArg (Affine.Point.equivOfEq E.tateModel_smul_baseChange)
+  apply congrArg ((Affine.Point.equivVariableChange ((tateCurve E.q).baseChange l)
+    (E.baseChange l).exists_variableChange_tateCurve.choose).symm)
+  exact TateCurve.uniformizationPointOver_galois σ hσ E.qUnit E.valuation_q_lt_one u
 
 /-! ### Torsion and the Weil pairing
 
