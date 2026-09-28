@@ -4,6 +4,7 @@ import FLTTest.FLTTest
 import FLTTest.MathlibCompatibility
 import FLTTest.MazurCurveFinite
 import FLTTest.MazurDualLocalization
+import FLTTest.MazurDualTensorSheaf
 import FLTTest.MazurGenericFibers
 import FLTTest.MazurModuleCohomology
 import FLTTest.MazurMultiplicativeModel
