@@ -374,6 +374,7 @@ public import FLT.GroupScheme.RaynaudGenericSplitExtension
 public import FLT.GroupScheme.RaynaudIntegralFiltration
 public import FLT.GroupScheme.RaynaudInversionBasis
 public import FLT.GroupScheme.RaynaudKernelExactness
+public import FLT.GroupScheme.RaynaudLayerDescent
 public import FLT.GroupScheme.RaynaudModelArithmetic
 public import FLT.GroupScheme.RaynaudNakayamaDescent
 public import FLT.GroupScheme.RaynaudOrderNineExtension
