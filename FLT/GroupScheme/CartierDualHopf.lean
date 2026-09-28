@@ -50,6 +50,7 @@ private theorem tensor_mul_eval (t s : CartierDual R A ⊗[R] CartierDual R A) (
   | add x y hx hy =>
     simp [add_mul, hx, hy, Finset.sum_add_distrib]
 
+omit [Coalgebra.IsCocomm R A] in
 /-- The transpose comultiplication preserves convolution products. -/
 theorem comul_mul (φ ψ : CartierDual R A) : comul (φ * ψ) = comul φ * comul ψ := by
   apply tensor_ext R A A
