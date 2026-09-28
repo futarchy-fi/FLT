@@ -860,6 +860,7 @@ public import FLT.Mazur.RationalFibers
 public import FLT.Mazur.RelativeCartier
 public import FLT.Mazur.RelativeCartierBaseChange
 public import FLT.Mazur.SectionDivisors
+public import FLT.Mazur.SectionKernelLocal
 public import FLT.MazurChapter.AdmissibleGroupSchemes
 public import FLT.MazurW
 public import FLT.MazurWOfPrimeTorsion
