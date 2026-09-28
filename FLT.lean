@@ -866,6 +866,7 @@ public import FLT.Mazur.SectionDivisors
 public import FLT.Mazur.SectionKernelLocal
 public import FLT.Mazur.SmoothCurveDimension
 public import FLT.Mazur.SmoothDimension
+public import FLT.Mazur.SmoothDimensionBound
 public import FLT.MazurChapter.AdmissibleGroupSchemes
 public import FLT.MazurW
 public import FLT.MazurWOfPrimeTorsion

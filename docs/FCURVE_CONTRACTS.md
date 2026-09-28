@@ -34,12 +34,17 @@ from `G2Cusps`, then `G2Fibers` using FC14 and FC15, and `G2CurveFinite`
 from those fibers and `G2Finite`.
 
 The final consumer accepts the documented `G1Geometry`, `G2Cusps` and
-`G2Finite` inputs, separatedness of the quotient, and an explicit bound
-`topologicalKrullDim D.genericFiber.left ≤ 1`. Thus the consumer wiring is
-proved, while removal of that dimension premise still depends on FC12's
-standard-smooth algebra dimension theorem. None of the modular-curve,
-quotient, cusp-separation or quotient-point-finiteness inputs is constructed
-by this module. The independent axiom checks are in
+`G2Finite` inputs and separatedness of the quotient. The dimension bound
+`topologicalKrullDim D.genericFiber.left ≤ 1` is now proved from smoothness,
+rather than supplied as an extra premise. The proof combines
+[EtaleCoordinate.lean](../FLT/Mazur/EtaleCoordinate.lean) (FC12a),
+[EtaleDimLe.lean](../FLT/Mazur/EtaleDimLe.lean) (FC12b), and the affine-chart
+and open-cover lemmas in [SmoothDimension.lean](../FLT/Mazur/SmoothDimension.lean),
+with their composition in [SmoothDimensionBound.lean](../FLT/Mazur/SmoothDimensionBound.lean).
+The full equality `SmoothCurveDimension` still needs the lower bound (FC12c);
+that equality is not required for this finiteness consumer.
+None of the modular-curve, quotient, cusp-separation or quotient-point-finiteness
+inputs is constructed by these modules. The independent axiom checks are in
 [MazurGenericFibers.lean](../FLTTest/MazurGenericFibers.lean).
 
 ## Sources and the two different kinds of curve
