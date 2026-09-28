@@ -1,5 +1,4 @@
 module  -- shake: keep-all --deprecated_module: ignore
-
 public import FLT.AINTLIB.CebotarevDensity.NumberFieldEulerProduct
 public import FLT.AINTLIB.DedekindResidue.AuxiliaryFunction
 public import FLT.AINTLIB.DedekindResidue.CompletedZeta.AnalyticControl
@@ -327,6 +326,7 @@ public import FLT.GroupScheme.QuadraticTwistMonoidal
 public import FLT.GroupScheme.QuadraticTwistPoints
 public import FLT.GroupScheme.QuadraticTwistTensor
 public import FLT.GroupScheme.RaynaudClosureFactorization
+public import FLT.GroupScheme.RaynaudDiagonalizableExtension
 public import FLT.GroupScheme.RaynaudDiscriminant
 public import FLT.GroupScheme.RaynaudEtaleExtension
 public import FLT.GroupScheme.RaynaudExtension
