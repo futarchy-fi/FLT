@@ -301,6 +301,12 @@ public import FLT.GroupScheme.FiniteFlat
 public import FLT.GroupScheme.FiniteFlatDifferentials
 public import FLT.GroupScheme.FiniteFlatSubobject
 public import FLT.GroupScheme.FiniteHopfFreeness
+public import FLT.GroupScheme.FontaineCubicLifting
+public import FLT.GroupScheme.FontaineCubicNewton
+public import FLT.GroupScheme.FontaineCubicSystemLifting
+public import FLT.GroupScheme.FontaineDividedPowers
+public import FLT.GroupScheme.FontaineJacobian
+public import FLT.GroupScheme.FontaineNewtonStep
 public import FLT.GroupScheme.FontainePointLifts
 public import FLT.GroupScheme.FontainePointSeparation
 public import FLT.GroupScheme.FontaineProperty
@@ -444,6 +450,10 @@ public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.Reduction
 public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.SplitDescent
 public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.VariableChange
 public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.Weierstrass
+public import FLT.Mathlib.Analysis.Normed.Field.CubicHensel
+public import FLT.Mathlib.Analysis.Normed.Field.CubicSystemHensel
+public import FLT.Mathlib.Analysis.Normed.Field.MultivariableNewton
+public import FLT.Mathlib.Analysis.Normed.Field.ScalarPerturbation
 public import FLT.Mathlib.Analysis.Normed.Ring.WithAbs
 public import FLT.Mathlib.Data.Fin.Basic
 public import FLT.Mathlib.Data.Real.Archimedean
@@ -509,6 +519,7 @@ public import FLT.Mathlib.RingTheory.DiscreteValuationRing.Monogenic
 public import FLT.Mathlib.RingTheory.DiscreteValuationRing.ResidueGenerator
 public import FLT.Mathlib.RingTheory.DiscreteValuationRing.Separable
 public import FLT.Mathlib.RingTheory.Discriminant
+public import FLT.Mathlib.RingTheory.GeneratorsDifferentialRelations
 public import FLT.Mathlib.RingTheory.Ideal.Quotient.Basic
 public import FLT.Mathlib.RingTheory.LocalRing.Defs
 public import FLT.Mathlib.RingTheory.LocalRing.MaximalIdeal.Basic
@@ -517,6 +528,7 @@ public import FLT.Mathlib.RingTheory.Norm.Quadratic
 public import FLT.Mathlib.RingTheory.Norm.Quotient
 public import FLT.Mathlib.RingTheory.Polynomial.GaussLemma
 public import FLT.Mathlib.RingTheory.PowerBasisApproximateRoots
+public import FLT.Mathlib.RingTheory.PowerBasisDifferentialBezout
 public import FLT.Mathlib.RingTheory.PowerBasisDifferentials
 public import FLT.Mathlib.RingTheory.RamificationInertia.Basic
 public import FLT.Mathlib.RingTheory.SimpleRing.TensorProduct
