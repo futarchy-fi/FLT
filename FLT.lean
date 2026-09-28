@@ -843,10 +843,12 @@ public import FLT.Mathlib.Topology.Instances.Matrix
 public import FLT.Mathlib.Topology.MetricSpace.ProperSpace.InfinitePlace
 public import FLT.Mathlib.Topology.MetricSpace.Pseudo.Matrix
 public import FLT.Mathlib.Topology.Polish
+public import FLT.Mazur.AffineCoherent
 public import FLT.Mazur.AffinePullbackIdeal
 public import FLT.Mazur.CartierChartFlat
 public import FLT.Mazur.CartierCharts
 public import FLT.Mazur.CartierTensorRank
+public import FLT.Mazur.CechSheafH
 public import FLT.Mazur.ClosedSubsets
 public import FLT.Mazur.ConstantDegree
 public import FLT.Mazur.Contracts
@@ -857,6 +859,7 @@ public import FLT.Mazur.DivisorInvertibleSheaf
 public import FLT.Mazur.DivisorLineBundle
 public import FLT.Mazur.DivisorLineBundleRestrict
 public import FLT.Mazur.DivisorLineBundleSheaf
+public import FLT.Mazur.DivisorLineBundleSum
 public import FLT.Mazur.DivisorRestrictCoherence
 public import FLT.Mazur.EtaleCoordinate
 public import FLT.Mazur.EtaleDimGe
@@ -867,6 +870,8 @@ public import FLT.Mazur.GenericFibers
 public import FLT.Mazur.IdealModuleSheaf
 public import FLT.Mazur.IntegralBase
 public import FLT.Mazur.LocalizationCech
+public import FLT.Mazur.LocalizationCechCompare
+public import FLT.Mazur.LocalizationCechSplit
 public import FLT.Mazur.ModuleCohomology
 public import FLT.Mazur.ModuleCohomologyExact
 public import FLT.Mazur.ModuleSheafDual
