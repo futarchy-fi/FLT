@@ -229,6 +229,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.AbsIrredAdapter
 public import FLT.GaloisRepresentation.HardlyRamified.AtTwo
 public import FLT.GaloisRepresentation.HardlyRamified.AugmentedField
 public import FLT.GaloisRepresentation.HardlyRamified.AugmentedFieldData
+public import FLT.GaloisRepresentation.HardlyRamified.AugmentedFieldUnramified
 public import FLT.GaloisRepresentation.HardlyRamified.AugmentedFieldUnramifiedTwo
 public import FLT.GaloisRepresentation.HardlyRamified.B5Inputs
 public import FLT.GaloisRepresentation.HardlyRamified.CategoryD
