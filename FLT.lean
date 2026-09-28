@@ -395,6 +395,7 @@ public import FLT.GroupScheme.KummerParameter
 public import FLT.GroupScheme.KummerPoints
 public import FLT.GroupScheme.KummerTwist
 public import FLT.GroupScheme.LocalDifferentBounds
+public import FLT.GroupScheme.LocalDifferentEquiv
 public import FLT.GroupScheme.LocalDifferentValuation
 public import FLT.GroupScheme.LocalIntegralPowerBasis
 public import FLT.GroupScheme.LocalPointField
