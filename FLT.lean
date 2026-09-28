@@ -851,6 +851,7 @@ public import FLT.Mazur.ConstantDegree
 public import FLT.Mazur.Contracts
 public import FLT.Mazur.CurveFinite
 public import FLT.Mazur.CuspCollision
+public import FLT.Mazur.DivisorLineBundle
 public import FLT.Mazur.EtaleCoordinate
 public import FLT.Mazur.EtaleDimGe
 public import FLT.Mazur.EtaleDimLe
