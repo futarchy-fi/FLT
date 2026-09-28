@@ -632,6 +632,7 @@ public import FLT.Mathlib.RingTheory.DedekindDomain.Invertible
 public import FLT.Mathlib.RingTheory.DifferentPowerBasis
 public import FLT.Mathlib.RingTheory.DiscreteValuationRing.AdjoinRoot
 public import FLT.Mathlib.RingTheory.DiscreteValuationRing.Eisenstein
+public import FLT.Mathlib.RingTheory.DiscreteValuationRing.EisensteinExtension
 public import FLT.Mathlib.RingTheory.DiscreteValuationRing.Monogenic
 public import FLT.Mathlib.RingTheory.DiscreteValuationRing.ResidueGenerator
 public import FLT.Mathlib.RingTheory.DiscreteValuationRing.Separable
