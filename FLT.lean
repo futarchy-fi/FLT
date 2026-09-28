@@ -37,6 +37,7 @@ public import FLT.AbsoluteGaloisGroup.Unramified
 public import FLT.Assembly.Inputs
 public import FLT.Assembly.Mazur
 public import FLT.Assembly.PrimeField
+public import FLT.Assembly.Proof
 public import FLT.Assumptions.Mazur
 public import FLT.Assumptions.Odlyzko
 public import FLT.AutomorphicForm.GroupTheoryStuff
