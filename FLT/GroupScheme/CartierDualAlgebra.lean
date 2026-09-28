@@ -85,7 +85,8 @@ def map (f : A →ₐc[R] B) :
     simp
 
 /-- Evaluation of the contravariant dual algebra map. -/
-@[simp] theorem map_apply (f : A →ₐc[R] B) (φ : CartierDual R B) (a : A) : map f φ a = φ (f a) := rfl
+@[simp] theorem map_apply (f : A →ₐc[R] B) (φ : CartierDual R B) (a : A) :
+    map f φ a = φ (f a) := rfl
 
 /-- Evaluation on group-like basis elements identifies the dual of a group
 algebra with the integral algebra of functions on the group. -/
