@@ -306,6 +306,7 @@ public import FLT.GlobalLanglandsConjectures.GLzero
 public import FLT.GroupScheme.BialgebraBaseChange
 public import FLT.GroupScheme.CartierDualAlgebra
 public import FLT.GroupScheme.CartierDualBaseChange
+public import FLT.GroupScheme.CartierDualBaseChangeHopf
 public import FLT.GroupScheme.CartierDualCoalgebra
 public import FLT.GroupScheme.CartierDualEtale
 public import FLT.GroupScheme.CartierDualGeometric
