@@ -850,12 +850,14 @@ public import FLT.Mazur.CartierCharts
 public import FLT.Mazur.CartierTensorRank
 public import FLT.Mazur.CechAcyclicCokernel
 public import FLT.Mazur.CechConnecting
+public import FLT.Mazur.CechFreeExact
 public import FLT.Mazur.CechFreeOpen
 public import FLT.Mazur.CechFreeOpenStalk
 public import FLT.Mazur.CechFreeResolution
 public import FLT.Mazur.CechFreeStalkExact
 public import FLT.Mazur.CechFreeStalkExactAll
 public import FLT.Mazur.CechFreeStalkInsertion
+public import FLT.Mazur.CechInjectiveAcyclic
 public import FLT.Mazur.CechSheafH
 public import FLT.Mazur.CechSheafHZero
 public import FLT.Mazur.ClosedSubsets
@@ -871,6 +873,7 @@ public import FLT.Mazur.DivisorLineBundle
 public import FLT.Mazur.DivisorLineBundleRestrict
 public import FLT.Mazur.DivisorLineBundleSheaf
 public import FLT.Mazur.DivisorLineBundleSum
+public import FLT.Mazur.DivisorLineBundleSumNestedRestrict
 public import FLT.Mazur.DivisorLineBundleSumOpenCoherence
 public import FLT.Mazur.DivisorLineBundleSumRestrict
 public import FLT.Mazur.DivisorLineBundleSumUnit
