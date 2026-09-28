@@ -648,6 +648,7 @@ public import FLT.Mathlib.RingTheory.Spectrum.Prime.RingHom
 public import FLT.Mathlib.RingTheory.TensorProduct.Basis
 public import FLT.Mathlib.RingTheory.TensorProduct.Pi
 public import FLT.Mathlib.RingTheory.TraceDualBaseChange
+public import FLT.Mathlib.RingTheory.TraceDualPi
 public import FLT.Mathlib.RingTheory.Unramified.LocalRing
 public import FLT.Mathlib.RingTheory.Valuation.Discrete.IsDiscreteValuationRing
 public import FLT.Mathlib.RingTheory.Valuation.RootLifting
