@@ -109,7 +109,7 @@ def addPresheaf : TopCat.Presheaf Ab X where
   map_id V := by ext s i; exact res_self _ _
   map_comp f k := by ext s i; exact (res_res _ _ _).symm
 
-instance (V : X.Opensᵒᵖ) :
+instance moduleSheafUnitCocycleInst1 (V : X.Opensᵒᵖ) :
     Module (X.ringCatSheaf.obj.obj V) ((g.addPresheaf).obj V) := inferInstanceAs
   (Module Γ(X, V.unop) (g.sections V.unop))
 
