@@ -496,6 +496,7 @@ public import FLT.GroupScheme.RaynaudUnramifiedKernel
 public import FLT.GroupScheme.RaynaudUnramifiedQuotient
 public import FLT.GroupScheme.SemilocalFreeDescent
 public import FLT.GroupScheme.SupportedKummerCubes
+public import FLT.GroupScheme.SupportedKummerValuations
 public import FLT.GroupScheme.ThreeAdicCubes
 public import FLT.GroupScheme.ThreeAdicLocalPresentation
 public import FLT.GroupScheme.ZInvTwoArithmeticSquare
