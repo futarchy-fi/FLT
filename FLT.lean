@@ -365,6 +365,7 @@ public import FLT.GroupScheme.EtaleModelIdentification
 public import FLT.GroupScheme.EtaleModelUnramified
 public import FLT.GroupScheme.EtaleOrder
 public import FLT.GroupScheme.EtaleSplitting
+public import FLT.GroupScheme.FaithfullyFlatQuotient
 public import FLT.GroupScheme.FaithfullyFlatRetraction
 public import FLT.GroupScheme.FiniteFlat
 public import FLT.GroupScheme.FiniteFlatDifferentials
