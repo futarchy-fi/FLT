@@ -422,6 +422,7 @@ public import FLT.GroupScheme.LocalHopfPresentation
 public import FLT.GroupScheme.LocalIntegralPowerBasis
 public import FLT.GroupScheme.LocalPointField
 public import FLT.GroupScheme.LocalPointFieldPoints
+public import FLT.GroupScheme.LocalPolynomialObstruction
 public import FLT.GroupScheme.ModelPoints
 public import FLT.GroupScheme.MultiplicativeFiltrationPurity
 public import FLT.GroupScheme.OrderThreeModelIdentification
