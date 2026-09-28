@@ -856,6 +856,7 @@ public import FLT.Mazur.CurveGenus
 public import FLT.Mazur.CuspCollision
 public import FLT.Mazur.DivisorInvertibleSheaf
 public import FLT.Mazur.DivisorLineBundle
+public import FLT.Mazur.DivisorLineBundleRestrict
 public import FLT.Mazur.DivisorLineBundleSheaf
 public import FLT.Mazur.DivisorRestrictCoherence
 public import FLT.Mazur.EtaleCoordinate
@@ -869,6 +870,7 @@ public import FLT.Mazur.IntegralBase
 public import FLT.Mazur.LocalizationCech
 public import FLT.Mazur.LocalizationCechCompare
 public import FLT.Mazur.ModuleCohomology
+public import FLT.Mazur.ModuleCohomologyExact
 public import FLT.Mazur.ModuleSheafDual
 public import FLT.Mazur.ModuleSheafDualSheaf
 public import FLT.Mazur.ModuleSheafTensor
