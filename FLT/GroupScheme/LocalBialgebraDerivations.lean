@@ -12,7 +12,7 @@ public import Mathlib.LinearAlgebra.Matrix.NonsingularInverse
 /-!
 # Coordinate derivations of local commutative bialgebras
 
-Lifts of a cotangent basis admit derivations taking Kronecker-delta values on
+Lifts of a cotangent basis have derivations taking Kronecker-delta values on
 those lifts. Extend the dual cotangent basis invariantly, then invert its
 coordinate matrix: the matrix reduces to the identity under the counit, so
 its determinant is a unit in the local algebra.
