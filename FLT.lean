@@ -246,6 +246,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.B5Inputs
 public import FLT.GaloisRepresentation.HardlyRamified.CategoryD
 public import FLT.GaloisRepresentation.HardlyRamified.CategoryDFontaine
 public import FLT.GaloisRepresentation.HardlyRamified.CategoryDInertia
+public import FLT.GaloisRepresentation.HardlyRamified.CategoryDIntegralFontaine
 public import FLT.GaloisRepresentation.HardlyRamified.CategoryDIntegralModels
 public import FLT.GaloisRepresentation.HardlyRamified.CategoryDPointCharacters
 public import FLT.GaloisRepresentation.HardlyRamified.CategoryDSexticQuotient
