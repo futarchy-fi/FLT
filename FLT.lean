@@ -477,6 +477,7 @@ public import FLT.GroupScheme.RaynaudUnramifiedQuotient
 public import FLT.GroupScheme.SemilocalFreeDescent
 public import FLT.GroupScheme.ZInvTwoArithmeticSquare
 public import FLT.GroupScheme.ZInvTwoGenericMorphismExtension
+public import FLT.GroupScheme.ZInvTwoSplittingDescent
 public import FLT.HaarMeasure.FiniteAdeleRing
 public import FLT.HaarMeasure.HaarChar.AddEquiv
 public import FLT.HaarMeasure.HaarChar.AdeleRing
