@@ -408,6 +408,7 @@ public import FLT.GroupScheme.PadicAlgebraPatching
 public import FLT.GroupScheme.PadicHopfOperations
 public import FLT.GroupScheme.PadicHopfPatching
 public import FLT.GroupScheme.PadicLatticePatching
+public import FLT.GroupScheme.PadicLocalPresentation
 public import FLT.GroupScheme.PadicModulePatching
 public import FLT.GroupScheme.PadicPatchingArithmetic
 public import FLT.GroupScheme.PadicPatchingRings
