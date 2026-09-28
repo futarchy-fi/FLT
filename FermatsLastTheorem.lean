@@ -8,8 +8,10 @@ There are many ways of stating Fermat's Last Theorem.
 In this file, we give the traditional statement using
 the positive integers `ℕ+`, using the three-input assembly.
 The remaining arithmetic inputs are Mazur's rational torsion bound,
-integral lifting, and compatible families. The three-adic trace input
-is supplied by the proved sorting and character-purity results.
+integral lifting, and compatible families; these are not yet proved
+(the first is an assumption, the other two have incomplete proofs).
+The three-adic trace input is supplied by the proved sorting and
+character-purity results.
 
 -/
 
