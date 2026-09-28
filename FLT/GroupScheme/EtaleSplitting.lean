@@ -31,8 +31,8 @@ theorem GenericSplitSequence.existsUnique_modelSplitting_of_etale
     (E : GenericSplitSequence S X Q) (i : ModelHom S X) (q : ModelHom X Q)
     (hi : genericHom i = E.inclusion) (hq : genericHom q = E.projection) :
     ∃! EO : ModelSplitting i q, EO.toGenericSplitSequence = E := by
-  obtain ⟨r, hr, _⟩ := extend_generic_morphism_of_etale X S E.retraction
-  obtain ⟨s, hs, _⟩ := extend_generic_morphism_of_etale Q X E.sectionMap
+  obtain ⟨r, hr, _⟩ := extend_generic_morphism_of_etale_perfectField X S E.retraction
+  obtain ⟨s, hs, _⟩ := extend_generic_morphism_of_etale_perfectField Q X E.sectionMap
   have hir : i.comp r = BialgHom.id R S.CoordinateRing := by
     apply genericHom_injective S S
     ext x

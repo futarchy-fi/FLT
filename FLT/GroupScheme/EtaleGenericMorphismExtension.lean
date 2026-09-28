@@ -53,7 +53,7 @@ theorem existsUnique_bialgHom_of_etale
 
 /-- Every generic Galois-equivariant morphism from an étale finite-flat model
 over an integrally closed base extends uniquely to its specified integral model. -/
-theorem extend_generic_morphism_of_etale [PerfectField K]
+theorem extend_generic_morphism_of_etale_perfectField [PerfectField K]
     (X Y : FF R K) [Algebra.Etale R X.CoordinateRing] (f : GenericGaloisHom X Y) :
     ∃! fO : ModelHom X Y, genericHom fO = f := by
   obtain ⟨fO, hfO, _⟩ := existsUnique_bialgHom_of_etale

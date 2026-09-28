@@ -25,7 +25,7 @@ namespace ThreeAdicPlan
 open scoped TensorProduct
 open PadicPatching
 
-local instance : Fact (¬ (3 : ℤ) ∣ 2) := ⟨by norm_num⟩
+local instance zInvTwoSplittingDescentInst1 : Fact (¬ (3 : ℤ) ∣ 2) := ⟨by norm_num⟩
 
 /-- A rational splitting descends to the specified integral maps when the
 middle and quotient models are étale away from three and filtered locally. -/

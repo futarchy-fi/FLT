@@ -26,7 +26,7 @@ namespace ThreeAdicPlan.FiniteFlatExtension
 
 open PadicPatching
 
-local instance : Fact (¬ (3 : ℤ) ∣ 2) := ⟨by norm_num⟩
+local instance finiteFlatSectionDescentInst1 : Fact (¬ (3 : ℤ) ∣ 2) := ⟨by norm_num⟩
 
 variable {A X Q : FiniteFlatObject ZInvTwo} (E : FiniteFlatExtension A X Q)
 
