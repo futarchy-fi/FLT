@@ -39,6 +39,7 @@ public import FLT.Assembly.CharacterGlobalModel
 public import FLT.Assembly.CharacterInputs
 public import FLT.Assembly.CharacterModelPurity
 public import FLT.Assembly.CharacterModels
+public import FLT.Assembly.ExistingInputs
 public import FLT.Assembly.Final
 public import FLT.Assembly.Inputs
 public import FLT.Assembly.Mazur
