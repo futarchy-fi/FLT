@@ -743,6 +743,7 @@ public import FLT.Slop.Ribet_Lemma.TrivialQuotientExtension
 public import FLT.Slop.Ribet_Lemma.stable_lattices
 public import FLT.TateCurve.Abscissa
 public import FLT.TateCurve.Addition
+public import FLT.TateCurve.AlgebraicPointLocal
 public import FLT.TateCurve.AlgebraicUniformization
 public import FLT.TateCurve.Collinearity
 public import FLT.TateCurve.CompleteAddition
@@ -760,6 +761,8 @@ public import FLT.TateCurve.JInvariant
 public import FLT.TateCurve.LocalField
 public import FLT.TateCurve.LocalUniformization
 public import FLT.TateCurve.Model
+public import FLT.TateCurve.ModelGalois
+public import FLT.TateCurve.ModelSign
 public import FLT.TateCurve.ModelTransport
 public import FLT.TateCurve.Naturality
 public import FLT.TateCurve.ParameterEvaluation
@@ -773,3 +776,4 @@ public import FLT.TateCurve.Surjectivity
 public import FLT.TateCurve.SymmetricInverse
 public import FLT.TateCurve.TateCurve
 public import FLT.TateCurve.Uniformization
+public import FLT.TateCurve.ValuativeContinuity
