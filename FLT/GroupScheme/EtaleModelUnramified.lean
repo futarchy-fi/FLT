@@ -29,7 +29,7 @@ attribute [local instance 2000] IsDedekindDomain.HeightOneSpectrum.adicCompletio
 namespace ThreeAdicPlan
 
 /-- Any chain of algebra maps out of `ℤ[1/2]` is compatible. -/
-theorem zInvTwo_scalarTower (A B : Type*) [CommRing A] [CommRing B]
+theorem etaleModel_zInvTwo_scalarTower (A B : Type*) [CommRing A] [CommRing B]
     [Algebra ZInvTwo A] [Algebra A B] [Algebra ZInvTwo B] :
     IsScalarTower ZInvTwo A B := by
   apply IsScalarTower.of_algebraMap_eq'
@@ -102,11 +102,11 @@ theorem FiniteEtaleModel.unramifiedOutsideTwo {W : FiniteContinuousGaloisModule}
   let : Algebra ZInvTwo O := (zInvTwoToCompletionIntegers q hq hq2).toAlgebra
   let : Algebra ZInvTwo C := Algebra.compHom C (algebraMap ZInvTwo ℚ)
   let : Algebra ZInvTwo B := Algebra.compHom B (algebraMap ZInvTwo O)
-  let : IsScalarTower ZInvTwo ℚ C := zInvTwo_scalarTower ℚ C
-  let : IsScalarTower ZInvTwo O C := zInvTwo_scalarTower O C
-  let : IsScalarTower ZInvTwo O B := zInvTwo_scalarTower O B
-  let : IsScalarTower ZInvTwo B C := zInvTwo_scalarTower B C
-  let : IsScalarTower ZInvTwo ZInvTwo C := zInvTwo_scalarTower ZInvTwo C
+  let : IsScalarTower ZInvTwo ℚ C := etaleModel_zInvTwo_scalarTower ℚ C
+  let : IsScalarTower ZInvTwo O C := etaleModel_zInvTwo_scalarTower O C
+  let : IsScalarTower ZInvTwo O B := etaleModel_zInvTwo_scalarTower O B
+  let : IsScalarTower ZInvTwo B C := etaleModel_zInvTwo_scalarTower B C
+  let : IsScalarTower ZInvTwo ZInvTwo C := etaleModel_zInvTwo_scalarTower ZInvTwo C
   let : IsFractionRing B C := by
     dsimp only [B]
     delta IntegralClosure
