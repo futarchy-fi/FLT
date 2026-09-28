@@ -655,6 +655,7 @@ public import FLT.Mathlib.RingTheory.MvPolynomial.RedundantCoordinates
 public import FLT.Mathlib.RingTheory.NilpotentRelationLifting
 public import FLT.Mathlib.RingTheory.Norm.Quadratic
 public import FLT.Mathlib.RingTheory.Norm.Quotient
+public import FLT.Mathlib.RingTheory.Polynomial.Eisenstein.Perturbation
 public import FLT.Mathlib.RingTheory.Polynomial.GaussLemma
 public import FLT.Mathlib.RingTheory.PowerBasisApproximateRoots
 public import FLT.Mathlib.RingTheory.PowerBasisConjugateDifferent
