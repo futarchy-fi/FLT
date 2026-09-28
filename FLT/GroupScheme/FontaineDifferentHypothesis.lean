@@ -13,7 +13,7 @@ public import FLT.GroupScheme.LocalPointField
 
 The proposition below is the missing strict local different bound for the
 full field of geometric points of a finite flat model killed by three.
-It is a proposition to be supplied to a reduction, not an axiom or a theorem
+It is a proposition to be supplied to a reduction, not an assumed constant or a theorem
 asserting that the bound has been proved. In particular it concerns the
 integral closure in the point field, rather than the model's coordinate ring.
 -/
