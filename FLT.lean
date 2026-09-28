@@ -299,6 +299,7 @@ public import FLT.GroupScheme.EtaleOrder
 public import FLT.GroupScheme.FiniteFlat
 public import FLT.GroupScheme.FiniteFlatDifferentials
 public import FLT.GroupScheme.FiniteFlatSubobject
+public import FLT.GroupScheme.FontainePointLifts
 public import FLT.GroupScheme.FontainePointSeparation
 public import FLT.GroupScheme.FontaineProperty
 public import FLT.GroupScheme.FontaineQuotientValuation
