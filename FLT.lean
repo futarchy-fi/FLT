@@ -867,6 +867,7 @@ public import FLT.Mazur.IntegralBase
 public import FLT.Mazur.ModuleSheafDual
 public import FLT.Mazur.ModuleSheafTensor
 public import FLT.Mazur.ModuleSheafTensorAffine
+public import FLT.Mazur.ModuleSheafTensorAffineOpen
 public import FLT.Mazur.ModuleSheafTensorRestrict
 public import FLT.Mazur.ModuleSheafTensorTilde
 public import FLT.Mazur.OverPoints
