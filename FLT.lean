@@ -297,11 +297,13 @@ public import FLT.GroupScheme.BialgebraBaseChange
 public import FLT.GroupScheme.CoordinateOrder
 public import FLT.GroupScheme.EtaleOrder
 public import FLT.GroupScheme.FiniteFlat
+public import FLT.GroupScheme.FiniteFlatDifferentials
 public import FLT.GroupScheme.FiniteFlatSubobject
 public import FLT.GroupScheme.GenericFieldChange
 public import FLT.GroupScheme.GlobalModel
 public import FLT.GroupScheme.GlobalModelAwayTwo
 public import FLT.GroupScheme.GlobalModelOverInt
+public import FLT.GroupScheme.HopfDifferentials
 public import FLT.GroupScheme.HopfPointCongruence
 public import FLT.GroupScheme.HopfPoints
 public import FLT.GroupScheme.IntegralCoordinateAlgebra
@@ -316,6 +318,7 @@ public import FLT.GroupScheme.KummerHopf
 public import FLT.GroupScheme.KummerParameter
 public import FLT.GroupScheme.KummerPoints
 public import FLT.GroupScheme.KummerTwist
+public import FLT.GroupScheme.LocalPointField
 public import FLT.GroupScheme.ModelPoints
 public import FLT.GroupScheme.PadicAlgebraPatching
 public import FLT.GroupScheme.PadicHopfOperations
@@ -337,12 +340,15 @@ public import FLT.GroupScheme.QuadraticTwistMaps
 public import FLT.GroupScheme.QuadraticTwistMonoidal
 public import FLT.GroupScheme.QuadraticTwistPoints
 public import FLT.GroupScheme.QuadraticTwistTensor
+public import FLT.GroupScheme.RaynaudDiscriminant
+public import FLT.GroupScheme.RaynaudEtaleExtension
 public import FLT.GroupScheme.RaynaudExtension
 public import FLT.GroupScheme.RaynaudExtensionExists
 public import FLT.GroupScheme.RaynaudInversionBasis
 public import FLT.GroupScheme.RaynaudRankThreeClassification
 public import FLT.GroupScheme.RaynaudRankThreeExtension
 public import FLT.GroupScheme.RaynaudRigidity
+public import FLT.GroupScheme.RaynaudTorsionFiltration
 public import FLT.HaarMeasure.FiniteAdeleRing
 public import FLT.HaarMeasure.HaarChar.AddEquiv
 public import FLT.HaarMeasure.HaarChar.AdeleRing
@@ -460,6 +466,7 @@ public import FLT.Mathlib.RingTheory.DedekindDomain.Ideal.Lemmas
 public import FLT.Mathlib.RingTheory.DedekindDomain.Invertible
 public import FLT.Mathlib.RingTheory.DiscreteValuationRing.AdjoinRoot
 public import FLT.Mathlib.RingTheory.DiscreteValuationRing.Separable
+public import FLT.Mathlib.RingTheory.Discriminant
 public import FLT.Mathlib.RingTheory.Ideal.Quotient.Basic
 public import FLT.Mathlib.RingTheory.LocalRing.Defs
 public import FLT.Mathlib.RingTheory.LocalRing.MaximalIdeal.Basic
