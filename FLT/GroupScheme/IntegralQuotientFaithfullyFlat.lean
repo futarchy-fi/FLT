@@ -40,7 +40,7 @@ theorem GenericGaloisHom.quotientKernelIdealEqClosureIdeal
     (i : GenericGaloisHom S X) (q : GenericGaloisHom X Y)
     (hq : Function.Surjective q) (hexact : ∀ x, q x = 0 ↔ ∃ s, i s = x) :
     q.quotientKernelIdeal = i.closureIdeal := by
-  letI quotientFlat : Module.FaithfullyFlat q.quotientCoordinates X.CoordinateRing :=
+  let quotientFlat : Module.FaithfullyFlat q.quotientCoordinates X.CoordinateRing :=
     q.quotientCoordinatesFaithfullyFlat
   exact i.quotientKernelIdeal_eq_closureIdeal_of_relative_flat q hq hexact
 
