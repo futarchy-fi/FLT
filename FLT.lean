@@ -337,6 +337,7 @@ public import FLT.GroupScheme.RaynaudEtaleDualExtension
 public import FLT.GroupScheme.RaynaudEtaleExtension
 public import FLT.GroupScheme.RaynaudExtension
 public import FLT.GroupScheme.RaynaudExtensionExists
+public import FLT.GroupScheme.RaynaudFlatQuotient
 public import FLT.GroupScheme.RaynaudIntegralFiltration
 public import FLT.GroupScheme.RaynaudInversionBasis
 public import FLT.GroupScheme.RaynaudModelArithmetic
