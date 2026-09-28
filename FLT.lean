@@ -848,7 +848,10 @@ public import FLT.Mazur.AffinePullbackIdeal
 public import FLT.Mazur.CartierChartFlat
 public import FLT.Mazur.CartierCharts
 public import FLT.Mazur.CartierTensorRank
+public import FLT.Mazur.CechFreeOpen
+public import FLT.Mazur.CechFreeResolution
 public import FLT.Mazur.CechSheafH
+public import FLT.Mazur.CechSheafHZero
 public import FLT.Mazur.ClosedSubsets
 public import FLT.Mazur.ConstantDegree
 public import FLT.Mazur.Contracts
@@ -860,6 +863,8 @@ public import FLT.Mazur.DivisorLineBundle
 public import FLT.Mazur.DivisorLineBundleRestrict
 public import FLT.Mazur.DivisorLineBundleSheaf
 public import FLT.Mazur.DivisorLineBundleSum
+public import FLT.Mazur.DivisorLineBundleSumRestrict
+public import FLT.Mazur.DivisorLineBundleSumUnit
 public import FLT.Mazur.DivisorRestrictCoherence
 public import FLT.Mazur.EtaleCoordinate
 public import FLT.Mazur.EtaleDimGe
