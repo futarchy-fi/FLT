@@ -676,6 +676,7 @@ public import FLT.Slop.Ribet_Lemma.TrivialQuotientExtension
 public import FLT.Slop.Ribet_Lemma.stable_lattices
 public import FLT.TateCurve.Abscissa
 public import FLT.TateCurve.Addition
+public import FLT.TateCurve.AlgebraicPointLocal
 public import FLT.TateCurve.AlgebraicUniformization
 public import FLT.TateCurve.Collinearity
 public import FLT.TateCurve.CompleteAddition
