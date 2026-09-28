@@ -846,6 +846,7 @@ public import FLT.Mathlib.Topology.Polish
 public import FLT.Mazur.AffinePullbackIdeal
 public import FLT.Mazur.CartierChartFlat
 public import FLT.Mazur.CartierCharts
+public import FLT.Mazur.ConstantDegree
 public import FLT.Mazur.Contracts
 public import FLT.Mazur.CuspCollision
 public import FLT.Mazur.FCurveContracts
