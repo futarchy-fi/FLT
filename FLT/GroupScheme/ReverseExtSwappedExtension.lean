@@ -8,6 +8,7 @@ module
 public import FLT.GroupScheme.CyclotomicModelIdentification
 public import FLT.GroupScheme.FiniteFlatExtensionQuotientIso
 public import FLT.GroupScheme.ReverseExtVanishing
+public import FLT.GroupScheme.SortedFiltrationFunctoriality
 public import FLT.GroupScheme.StableSubgroupExtension
 
 /-!
@@ -69,5 +70,15 @@ theorem FiniteFlatExtension.existsSwappedExtension
     Q.finrankOneOfCardThree constantThree_card_points
   obtain ⟨eQ, _⟩ := exists_iso_constantThree Q hQdim constantThree_smul
   exact ⟨(F.transportKernel eA).transportQuotient eQ⟩
+
+/-- A reverse pair has a sorted integral extension with one factor on each side. -/
+def FiniteFlatExtension.sortedReversePair
+    {H : FiniteFlatObject ZInvTwo} (E : FiniteFlatExtension constantThree H muThree) :
+    SortedFiniteFlatExtension H where
+  left := muThree
+  right := constantThree
+  extension := E.existsSwappedExtension.some
+  leftFiltration := .single muThree
+  rightFiltration := .single constantThree
 
 end ThreeAdicPlan
