@@ -56,13 +56,13 @@ def constantEtaleModel (A : Type) [AddCommGroup A] [Finite A] :
   exact (constantPoints A).integralEtaleModel {2} hu
 
 /-- The constant finite-flat group associated with a finite abelian group. -/
-def constantFiniteFlat (A : Type) [AddCommGroup A] [Finite A] : FF ZInvTwo :=
+def constantFiniteFlat (A : Type) [AddCommGroup A] [Finite A] : FiniteFlatObject ZInvTwo :=
   ⟨constantPoints A, (constantEtaleModel A).toHasFiniteFlatModel⟩
 
 /-- The constant group scheme `ℤ/3ℤ` over `ℤ[1/2]`. -/
-def constantThree : FF ZInvTwo := constantFiniteFlat (ZMod 3)
+def constantThree : FiniteFlatObject ZInvTwo := constantFiniteFlat (ZMod 3)
 
 /-- The zero finite-flat group scheme over `ℤ[1/2]`. -/
-def zeroFiniteFlat : FF ZInvTwo := constantFiniteFlat PUnit
+def zeroFiniteFlat : FiniteFlatObject ZInvTwo := constantFiniteFlat PUnit
 
 end ThreeAdicPlan
