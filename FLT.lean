@@ -426,6 +426,7 @@ public import FLT.GroupScheme.LocalPointField
 public import FLT.GroupScheme.ModelPoints
 public import FLT.GroupScheme.MuThreeCubicCoordinates
 public import FLT.GroupScheme.MultiplicativeFiltrationPurity
+public import FLT.GroupScheme.PadicActualConstantMuThreeSection
 public import FLT.GroupScheme.PadicAlgebraPatching
 public import FLT.GroupScheme.PadicBialgebraDescent
 public import FLT.GroupScheme.PadicComponentLifting
