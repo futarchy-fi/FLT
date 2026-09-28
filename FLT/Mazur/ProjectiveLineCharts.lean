@@ -37,7 +37,7 @@ abbrev overlap := Spec (CommRingCat.of K[T;T⁻¹])
 def overlapLeft : overlap K ⟶ chart K :=
   Spec.map (CommRingCat.ofHom (Polynomial.toLaurent : K[X] →+* K[T;T⁻¹]))
 
-instance : IsOpenImmersion (overlapLeft K) :=
+instance projectiveLineChartsInst1 : IsOpenImmersion (overlapLeft K) :=
   IsOpenImmersion.of_isLocalization (Polynomial.X : K[X])
 
 /-- Inversion of the Laurent coordinate on the overlap. -/
@@ -53,7 +53,7 @@ theorem inversion_hom : (inversion K).hom =
 def overlapRight : overlap K ⟶ chart K :=
   (inversion K).hom ≫ overlapLeft K
 
-instance : IsOpenImmersion (overlapRight K) := by
+instance projectiveLineChartsInst2 : IsOpenImmersion (overlapRight K) := by
   unfold overlapRight
   infer_instance
 
@@ -72,12 +72,12 @@ def left : chart K ⟶ scheme K := pushout.inl _ _
 /-- The second affine chart of the projective line. -/
 def right : chart K ⟶ scheme K := pushout.inr _ _
 
-instance : IsOpenImmersion (left K) := by
+instance projectiveLineChartsInst3 : IsOpenImmersion (left K) := by
   change IsOpenImmersion (colimit.ι (span (overlapLeft K) (overlapRight K))
     WalkingSpan.left)
   infer_instance
 
-instance : IsOpenImmersion (right K) := by
+instance projectiveLineChartsInst4 : IsOpenImmersion (right K) := by
   change IsOpenImmersion (colimit.ι (span (overlapLeft K) (overlapRight K))
     WalkingSpan.right)
   infer_instance
