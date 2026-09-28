@@ -302,6 +302,7 @@ public import FLT.GroupScheme.BialgebraBaseChange
 public import FLT.GroupScheme.ConstantFiltrationPurity
 public import FLT.GroupScheme.ConstantFiniteFlat
 public import FLT.GroupScheme.CoordinateOrder
+public import FLT.GroupScheme.DiagonalizableFiniteFlat
 public import FLT.GroupScheme.EtaleInertia
 public import FLT.GroupScheme.EtaleModelUnramified
 public import FLT.GroupScheme.EtaleOrder
