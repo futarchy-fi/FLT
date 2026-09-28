@@ -30,7 +30,7 @@ variable {R K : Type} [CommRing R] [Field K] [Algebra R K]
 /-- A faithfully flat integral quotient contains every integral coordinate in
 its generic image. -/
 theorem ModelHom.memRangeOfGenericQuotient (f : ModelHom X Y)
-    (hf : letI := f.toAlgHom.toRingHom.toAlgebra;
+    (hf : let _quotientAlgebra := f.toAlgHom.toRingHom.toAlgebra;
       Module.FaithfullyFlat Y.CoordinateRing X.CoordinateRing)
     (x : (genericHom f).quotientCoordinates) : ∃ y, f y = x.val := by
   let quotientAlgebra := f.toAlgHom.toRingHom.toAlgebra
@@ -78,7 +78,7 @@ theorem ModelHom.quotientComparisonComp (f : ModelHom X Y)
 /-- A faithfully flat quotient is isomorphic to its contracted generic quotient. -/
 def ModelHom.quotientIso (f : ModelHom X Y)
     (hq : Function.Surjective (genericHom f))
-    (hf : letI := f.toAlgHom.toRingHom.toAlgebra;
+    (hf : let _quotientAlgebra := f.toAlgHom.toRingHom.toAlgebra;
       Module.FaithfullyFlat Y.CoordinateRing X.CoordinateRing) :
     ((genericHom f).flatQuotient hq).Iso Y := by
   apply BialgEquiv.ofBijective (f.quotientComparison hq)
@@ -102,7 +102,7 @@ def FiniteFlatObject.extensionOfExactMaps {A H Q : FiniteFlatObject R}
     (hq : Function.Surjective (FiniteFlatObject.pointMap q))
     (hexact : ∀ h, FiniteFlatObject.pointMap q h = 0 ↔
       ∃ a, FiniteFlatObject.pointMap i a = h)
-    (hqO : letI := q.toAlgHom.toRingHom.toAlgebra;
+    (hqO : let _quotientAlgebra := q.toAlgHom.toRingHom.toAlgebra;
       Module.FaithfullyFlat Q.model.CoordinateRing H.model.CoordinateRing) :
     FiniteFlatExtension A H Q :=
   (FiniteFlatObject.extensionOfClosedImmersion i hi hiO
@@ -116,7 +116,7 @@ theorem FiniteFlatObject.extensionOfExactMapsInclusion {A H Q : FiniteFlatObject
     (hq : Function.Surjective (FiniteFlatObject.pointMap q))
     (hexact : ∀ h, FiniteFlatObject.pointMap q h = 0 ↔
       ∃ a, FiniteFlatObject.pointMap i a = h)
-    (hqO : letI := q.toAlgHom.toRingHom.toAlgebra;
+    (hqO : let _quotientAlgebra := q.toAlgHom.toRingHom.toAlgebra;
       Module.FaithfullyFlat Q.model.CoordinateRing H.model.CoordinateRing) :
     (FiniteFlatObject.extensionOfExactMaps i q hi hiO hq hexact hqO).inclusion = i := by
   ext a
@@ -129,7 +129,7 @@ theorem FiniteFlatObject.extensionOfExactMapsQuotient {A H Q : FiniteFlatObject 
     (hq : Function.Surjective (FiniteFlatObject.pointMap q))
     (hexact : ∀ h, FiniteFlatObject.pointMap q h = 0 ↔
       ∃ a, FiniteFlatObject.pointMap i a = h)
-    (hqO : letI := q.toAlgHom.toRingHom.toAlgebra;
+    (hqO : let _quotientAlgebra := q.toAlgHom.toRingHom.toAlgebra;
       Module.FaithfullyFlat Q.model.CoordinateRing H.model.CoordinateRing) :
     (FiniteFlatObject.extensionOfExactMaps i q hi hiO hq hexact hqO).quotient = q := by
   ext a

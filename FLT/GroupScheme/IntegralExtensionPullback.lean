@@ -61,7 +61,7 @@ theorem pullbackIntegralExtensionsCompatible
     exact G.compositionZero
   let g : B.Hom M := S.liftKernel (G.inclusion.comp E.quotient) hg
   have hgi : g.comp S.inclusion = G.inclusion.comp E.quotient := S.liftKernelComp _ hg
-  have hgO : letI := g.toAlgHom.toRingHom.toAlgebra;
+  have hgO : let _kernelAlgebra := g.toAlgHom.toRingHom.toAlgebra;
       Module.FaithfullyFlat M.model.CoordinateRing B.model.CoordinateRing :=
     kernelMapFaithfullyFlat G S E.quotient g hG.symm hgi E.quotientFaithfullyFlat
   have hfP (a : A.points) :

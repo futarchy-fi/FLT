@@ -49,7 +49,7 @@ theorem FiniteFlatExtension.quotientBaseChangeInjective (E : FiniteFlatExtension
 theorem FiniteFlatExtension.factorQuotientFaithfullyFlat
     (E : FiniteFlatExtension A H Q) {T : FiniteFlatObject R}
     (p : H.Hom T) (q : T.Hom Q) (h : p.comp q = E.quotient) :
-    letI := q.toAlgHom.toRingHom.toAlgebra;
+    let _quotientAlgebra := q.toAlgHom.toRingHom.toAlgebra;
       Module.FaithfullyFlat Q.model.CoordinateRing T.model.CoordinateRing := by
   let quotientAlgebra := q.toAlgHom.toRingHom.toAlgebra
   let quotientTower : IsScalarTower R Q.model.CoordinateRing T.model.CoordinateRing :=
