@@ -327,6 +327,7 @@ public import FLT.GroupScheme.CartierDualHopf
 public import FLT.GroupScheme.CartierDualInvariants
 public import FLT.GroupScheme.CartierDualKernelInclusion
 public import FLT.GroupScheme.CartierDualMaps
+public import FLT.GroupScheme.CartierDualModelIso
 public import FLT.GroupScheme.CartierDualPairing
 public import FLT.GroupScheme.CartierDualPointFiltration
 public import FLT.GroupScheme.CartierDualSpecialFiber
