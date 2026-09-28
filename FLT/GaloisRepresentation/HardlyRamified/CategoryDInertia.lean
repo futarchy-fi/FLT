@@ -83,7 +83,7 @@ theorem InCategoryD.inertiaTwo_sq_zero {H : FiniteFlatObject ZInvTwo} (hD : InCa
 /-- For a category-D object killed by three, the full inertia image at two has order
 dividing three. Here `e_two` is the image-order definition from `ResidualTameTwo`. -/
 theorem InCategoryD.inertiaTwo_order_dvd_three {H : FiniteFlatObject ZInvTwo} (hD : InCategoryD H)
-    (hk : KilledBy 3 H) : e_two H.points.integralGaloisRep ∣ 3 :=
+    (hk : KilledByQ 3 H) : e_two H.points.integralGaloisRep ∣ 3 :=
   ramification_two_dvd_three H.points.integralGaloisRep hk hD.inertiaTwo_sq_zero
 
 end ThreeAdicPlan

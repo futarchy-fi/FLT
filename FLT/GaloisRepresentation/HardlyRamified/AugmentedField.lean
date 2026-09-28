@@ -65,7 +65,7 @@ theorem augmentedObject_inCategoryD {H : FiniteFlatObject ZInvTwo} (hD : InCateg
 
 /-- Augmenting a simple category-D object still gives an object killed by three. -/
 theorem augmentedObject_killedBy_three {H : FiniteFlatObject ZInvTwo} (hs : Simple H)
-    (hD : InCategoryD H) : KilledBy 3 (augmentedObject H) :=
+    (hD : InCategoryD H) : KilledByQ 3 (augmentedObject H) :=
   (simple_D_killed_three H hs hD).prod kummerTwoObject_killedBy_three
 
 /-- The full inertia image at two on the augmented object has order dividing three. -/

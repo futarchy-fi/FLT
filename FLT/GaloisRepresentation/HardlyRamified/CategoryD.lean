@@ -56,7 +56,7 @@ def FF.toFiniteFlatObject {R : Type} [CommRing R] [Algebra R ℚ] [IsFractionRin
       points_bijective := H.points_bijective }
 
 /-- Multiplication by `n` vanishes on all geometric points. -/
-def KilledBy {R : Type} [CommRing R] [Algebra R ℚ] (n : ℕ) (H : FiniteFlatObject R) : Prop :=
+def KilledByQ {R : Type} [CommRing R] [Algebra R ℚ] (n : ℕ) (H : FiniteFlatObject R) : Prop :=
   ∀ w : H.points, n • w = 0
 
 /-- A subgroup of points is preserved by every rational Galois automorphism. -/
@@ -191,9 +191,9 @@ def FiniteFlatObject.prod {R : Type} [CommRing R] [Algebra R ℚ] [IsFractionRin
         H.model.isFiniteFlat J.model.isFiniteFlat))⟩
 
 /-- A common annihilator kills the product. -/
-theorem KilledBy.prod {R : Type} [CommRing R] [Algebra R ℚ] [IsFractionRing R ℚ]
-    {n : ℕ} {H J : FiniteFlatObject R} (hH : KilledBy n H) (hJ : KilledBy n J) :
-    KilledBy n (H.prod J) := fun ⟨w, v⟩ ↦ Prod.ext (hH w) (hJ v)
+theorem KilledByQ.prod {R : Type} [CommRing R] [Algebra R ℚ] [IsFractionRing R ℚ]
+    {n : ℕ} {H J : FiniteFlatObject R} (hH : KilledByQ n H) (hJ : KilledByQ n J) :
+    KilledByQ n (H.prod J) := fun ⟨w, v⟩ ↦ Prod.ext (hH w) (hJ v)
 
 /-- Category D is closed under products. -/
 theorem InCategoryD.prod {H J : FiniteFlatObject ZInvTwo}

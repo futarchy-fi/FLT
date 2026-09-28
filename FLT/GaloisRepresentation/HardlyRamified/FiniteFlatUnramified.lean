@@ -38,7 +38,7 @@ theorem zInvTwo_scalarTower (S T : Type) [CommRing S] [CommRing T]
 
 /-- A finite-flat model over `ℤ[1/2]` killed by three is unramified outside two and three. -/
 theorem FiniteFlatObject.unramifiedOutside_of_killedBy_three
-    (H : FiniteFlatObject ZInvTwo) (hk : KilledBy 3 H) :
+    (H : FiniteFlatObject ZInvTwo) (hk : KilledByQ 3 H) :
     UnramifiedOutside {2, 3} H.points := by
   constructor
   intro p hp hpS σ hσ w
