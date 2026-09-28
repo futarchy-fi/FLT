@@ -288,6 +288,28 @@ That obligation and the higher-degree Ext comparison remain open.
 principal-cover exactness, natural categorical H0 comparison, free-sheaf
 construction and divisor-unit equations against the standard Lean axioms.
 
+## Stalk coordinates and the projective-line building block
+
+[CechFreeOpenStalk.lean](../FLT/Mazur/CechFreeOpenStalk.lean) computes the
+stalk of the free sheaf on an open as the free abelian group on membership.
+The comparison is natural in inclusions, agrees with local generators, and
+gives the stalks and differential formulas of the free Cech terms.
+In particular, `freeOpenStalk_isZero_of_notMem` proves vanishing outside the open.
+The contraction and exactness of the free-sheaf complex remain separate work.
+
+[ProjectiveLineCharts.lean](../FLT/Mazur/ProjectiveLineCharts.lean) constructs
+the scheme by gluing two affine lines along the Laurent spectrum with inverse
+coordinates, proves the charts cover, and supplies the structure morphism.
+[ProjectiveLineEndpoints.lean](../FLT/Mazur/ProjectiveLineEndpoints.lean) constructs
+the zero and infinity sections and proves their underlying points, morphisms
+and sections distinct. This is a building block for cyclic pinching, not yet
+a construction of Neron polygons or a proof of their geometric properties.
+
+[MazurStalkFibers.lean](../FLTTest/MazurStalkFibers.lean) audits the stalk
+comparisons, completed-local-ring node presentation, base change of the
+partial nodal fiber conditions, and projective-line endpoints against the
+three standard Lean axioms. The final FLT arithmetic inputs are unchanged.
+
 ## Sources and the two different kinds of curve
 
 [M] B. Mazur, *Modular curves and the Eisenstein ideal*, IHÉS 47 (1977), 33–186,

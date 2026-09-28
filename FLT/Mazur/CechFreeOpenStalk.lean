@@ -76,6 +76,13 @@ def freeOpenStalkIso (W : Opens X) (x : X) :
   (freeOpenSheafifyStalkIso W x).symm ≪≫ freePresheafStalkIso W x ≪≫
     (FreeAbelianGroup.equivFinsupp (OpenFiber W x)).toAddCommGrpIso
 
+/-- The free sheaf on an open has zero stalk at every point outside that open. -/
+lemma freeOpenStalk_isZero_of_notMem (W : Opens X) (x : X) (hx : x ∉ W) :
+    IsZero (stalk (freeOpen W).obj x) := by
+  let : IsEmpty (OpenFiber W x) := ⟨fun h ↦ hx h.down.down⟩
+  exact (AddCommGrpCat.isZero_of_subsingleton
+    (AddCommGrpCat.of (OpenFiber W x →₀ ℤ))).of_iso (freeOpenStalkIso W x)
+
 /-- The presheaf stalk computation sends each local generator to membership. -/
 @[reassoc (attr := simp)]
 lemma germ_freePresheafStalkIso (W T : Opens X) (x : X) (hx : x ∈ T) :
