@@ -511,6 +511,7 @@ public import FLT.Mathlib.RingTheory.DiscreteValuationRing.Monogenic
 public import FLT.Mathlib.RingTheory.DiscreteValuationRing.ResidueGenerator
 public import FLT.Mathlib.RingTheory.DiscreteValuationRing.Separable
 public import FLT.Mathlib.RingTheory.Discriminant
+public import FLT.Mathlib.RingTheory.FrobeniusAugmentation
 public import FLT.Mathlib.RingTheory.FrobeniusImage
 public import FLT.Mathlib.RingTheory.GeneratorsDifferentialRelations
 public import FLT.Mathlib.RingTheory.Ideal.Quotient.Basic
