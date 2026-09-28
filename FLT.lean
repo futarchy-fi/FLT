@@ -848,12 +848,18 @@ public import FLT.Mazur.AffinePullbackIdeal
 public import FLT.Mazur.CartierChartFlat
 public import FLT.Mazur.CartierCharts
 public import FLT.Mazur.CartierTensorRank
+public import FLT.Mazur.CechFreeOpen
+public import FLT.Mazur.CechFreeOpenStalk
+public import FLT.Mazur.CechFreeResolution
 public import FLT.Mazur.CechSheafH
+public import FLT.Mazur.CechSheafHZero
 public import FLT.Mazur.ClosedSubsets
 public import FLT.Mazur.ConstantDegree
 public import FLT.Mazur.Contracts
+public import FLT.Mazur.CurveFiberHypotheses
 public import FLT.Mazur.CurveFinite
 public import FLT.Mazur.CurveGenus
+public import FLT.Mazur.CurveNode
 public import FLT.Mazur.CuspCollision
 public import FLT.Mazur.DivisorInvertibleSheaf
 public import FLT.Mazur.DivisorLineBundle
@@ -862,6 +868,7 @@ public import FLT.Mazur.DivisorLineBundleSheaf
 public import FLT.Mazur.DivisorLineBundleSum
 public import FLT.Mazur.DivisorLineBundleSumOpenCoherence
 public import FLT.Mazur.DivisorLineBundleSumRestrict
+public import FLT.Mazur.DivisorLineBundleSumUnit
 public import FLT.Mazur.DivisorRestrictCoherence
 public import FLT.Mazur.EtaleCoordinate
 public import FLT.Mazur.EtaleDimGe
@@ -885,6 +892,8 @@ public import FLT.Mazur.ModuleSheafTensorAffineOpen
 public import FLT.Mazur.ModuleSheafTensorRestrict
 public import FLT.Mazur.ModuleSheafTensorTilde
 public import FLT.Mazur.OverPoints
+public import FLT.Mazur.ProjectiveLineCharts
+public import FLT.Mazur.ProjectiveLineEndpoints
 public import FLT.Mazur.RationalFibers
 public import FLT.Mazur.RelativeCartier
 public import FLT.Mazur.RelativeCartierBaseChange

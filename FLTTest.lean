@@ -3,6 +3,7 @@ import FLTTest.ExponentRebase
 import FLTTest.FLTTest
 import FLTTest.MathlibCompatibility
 import FLTTest.MazurAffineCechSum
+import FLTTest.MazurCechResolution
 import FLTTest.MazurCohomologyDivisor
 import FLTTest.MazurCurveFinite
 import FLTTest.MazurDualLocalization
@@ -14,5 +15,6 @@ import FLTTest.MazurRelativeSums
 import FLTTest.MazurSectionSumFinite
 import FLTTest.MazurSheafIntegration
 import FLTTest.MazurSmoothGeometry
+import FLTTest.MazurStalkFibers
 import FLTTest.QuaternionFiniteIndex
 import FLTTest.ThreeAdicConsolidation
