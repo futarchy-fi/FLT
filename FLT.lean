@@ -312,6 +312,7 @@ public import FLT.GroupScheme.CartierDualBaseChangeHopf
 public import FLT.GroupScheme.CartierDualCharacterGroup
 public import FLT.GroupScheme.CartierDualCoalgebra
 public import FLT.GroupScheme.CartierDualEtale
+public import FLT.GroupScheme.CartierDualFaithfullyFlat
 public import FLT.GroupScheme.CartierDualGeometric
 public import FLT.GroupScheme.CartierDualHopf
 public import FLT.GroupScheme.CartierDualKernelInclusion
