@@ -312,6 +312,7 @@ public import FLT.GroupScheme.CartierDualEtale
 public import FLT.GroupScheme.CartierDualGeometric
 public import FLT.GroupScheme.CartierDualHopf
 public import FLT.GroupScheme.CartierDualMaps
+public import FLT.GroupScheme.CartierDualPairing
 public import FLT.GroupScheme.ConstantFiltrationPurity
 public import FLT.GroupScheme.ConstantFiniteFlat
 public import FLT.GroupScheme.CoordinateOrder
