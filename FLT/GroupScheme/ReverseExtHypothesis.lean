@@ -14,7 +14,7 @@ public import FLT.GroupScheme.RaynaudSplitting
 # The reverse extension hypothesis and swapping split factors
 
 The global reverse Ext assertion is an explicit proposition about integral
-extensions over `ℤ[1/2]`. It is not an axiom. A splitting supplies integral
+extensions over `ℤ[1/2]`. It is an explicit hypothesis. A splitting supplies integral
 maps in the opposite order, and these maps form an exact sequence on points.
 The faithfully-flat quotient and torsor comparison for the swapped sequence
 are separate integral obligations; this file does not assert them.
@@ -39,7 +39,7 @@ abbrev FiniteFlatExtension.Splitting [IsFractionRing R ℚ] {A H Q : FiniteFlatO
   ModelSplitting (S := A.toFF) (X := H.toFF) (Q := Q.toFF) E.inclusion E.quotient
 
 /-- Hypothesis: every integral extension `0 → ℤ/3 → H → μ₃ → 0` over
-`ℤ[1/2]` splits. This is the global reverse Ext input to R12, not an axiom
+`ℤ[1/2]` splits. This is the global reverse Ext input to R12, not an assumed constant
 or a consequence of the local three-adic splitting theorem. -/
 def ReverseExtVanishing : Prop :=
   ∀ (H : FiniteFlatObject ZInvTwo)
