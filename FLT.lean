@@ -365,6 +365,7 @@ public import FLT.GroupScheme.EtaleOrder
 public import FLT.GroupScheme.EtaleSplitting
 public import FLT.GroupScheme.FiniteFlat
 public import FLT.GroupScheme.FiniteFlatDifferentials
+public import FLT.GroupScheme.FiniteFlatExtensionKernelIso
 public import FLT.GroupScheme.FiniteFlatFiltration
 public import FLT.GroupScheme.FiniteFlatIso
 public import FLT.GroupScheme.FiniteFlatRestrictedScalarExtension
