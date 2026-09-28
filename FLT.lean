@@ -651,6 +651,7 @@ public import FLT.NumberField.Completion.Finite
 public import FLT.NumberField.Completion.Infinite
 public import FLT.NumberField.DifferentDiscriminant
 public import FLT.NumberField.DifferentExponentBounds
+public import FLT.NumberField.DifferentTower
 public import FLT.NumberField.DiscriminantBounds
 public import FLT.NumberField.HeightOneSpectrum
 public import FLT.NumberField.InfiniteAdeleRing
