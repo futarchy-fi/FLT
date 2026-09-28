@@ -46,9 +46,11 @@ public import FLT.Assembly.NormalizedReducibility
 public import FLT.Assembly.PrimeField
 public import FLT.Assembly.PrimePowerFinal
 public import FLT.Assembly.PrimePowerSorting
+public import FLT.Assembly.PrimePowerSortingProof
 public import FLT.Assembly.Proof
 public import FLT.Assembly.ResidualQuotients
 public import FLT.Assembly.ThreeAdicTrace
+public import FLT.Assembly.ThreeInputFinal
 public import FLT.Assembly.TraceLinearAlgebra
 public import FLT.Assumptions.Mazur
 public import FLT.Assumptions.Odlyzko
