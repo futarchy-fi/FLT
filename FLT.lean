@@ -44,6 +44,7 @@ public import FLT.Assembly.Inputs
 public import FLT.Assembly.Mazur
 public import FLT.Assembly.NormalizedReducibility
 public import FLT.Assembly.PrimeField
+public import FLT.Assembly.PrimePowerFinal
 public import FLT.Assembly.PrimePowerSorting
 public import FLT.Assembly.Proof
 public import FLT.Assembly.ResidualQuotients
