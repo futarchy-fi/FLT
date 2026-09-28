@@ -288,6 +288,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.ThreeGroupConjugation
 public import FLT.GaloisRepresentation.HardlyRamified.Threeadic
 public import FLT.GaloisRepresentation.HardlyRamified.TraceLeaves
 public import FLT.GaloisRepresentation.HardlyRamified.TraceReducibility
+public import FLT.GaloisRepresentation.HardlyRamified.TrivialPrimeFiltration
 public import FLT.GlobalLanglandsConjectures.GLnDefs
 public import FLT.GlobalLanglandsConjectures.GLzero
 public import FLT.GroupScheme.BialgebraBaseChange
