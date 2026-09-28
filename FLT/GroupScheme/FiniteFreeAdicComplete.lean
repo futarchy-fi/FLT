@@ -23,9 +23,10 @@ namespace ThreeAdicPlan
 variable {R M : Type*} [CommRing R] [AddCommGroup M] [Module R M]
 
 /-- Membership in an ideal multiple of a free module is tested on basis coordinates. -/
-theorem basis_mem_ideal_smul_top_iff {ι : Type*} [Fintype ι]
+theorem basis_mem_ideal_smul_top_iff {ι : Type*} [Finite ι]
     (b : Module.Basis ι R M) (I : Ideal R) (x : M) :
     x ∈ I • (⊤ : Submodule R M) ↔ ∀ i, b.repr x i ∈ I := by
+  let := Fintype.ofFinite ι
   constructor
   · intro hx i
     have hmap := Submodule.mem_map_of_mem (f := b.coord i) hx
@@ -36,8 +37,9 @@ theorem basis_mem_ideal_smul_top_iff {ι : Type*} [Fintype ι]
     exact Submodule.sum_mem _ fun i _ ↦ Submodule.smul_mem_smul (hx i) (Submodule.mem_top)
 
 /-- A finite basis over an adically complete ring makes its module adically complete. -/
-theorem adicComplete_of_finite_basis {ι : Type*} [Fintype ι]
+theorem adicComplete_of_finite_basis {ι : Type*} [Finite ι]
     (b : Module.Basis ι R M) (I : Ideal R) [IsAdicComplete I R] : IsAdicComplete I M := by
+  let := Fintype.ofFinite ι
   have hcoord (J : Ideal R) (x y : M) :
       x ≡ y [SMOD J • (⊤ : Submodule R M)] ↔
         ∀ i, b.repr x i ≡ b.repr y i [SMOD J] := by

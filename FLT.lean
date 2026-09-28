@@ -381,6 +381,7 @@ public import FLT.GroupScheme.LocalIntegralPowerBasis
 public import FLT.GroupScheme.LocalPointField
 public import FLT.GroupScheme.ModelPoints
 public import FLT.GroupScheme.PadicAlgebraPatching
+public import FLT.GroupScheme.PadicComponentLifting
 public import FLT.GroupScheme.PadicHopfOperations
 public import FLT.GroupScheme.PadicHopfPatching
 public import FLT.GroupScheme.PadicLatticePatching
