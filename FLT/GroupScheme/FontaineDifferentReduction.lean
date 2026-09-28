@@ -24,7 +24,7 @@ The correction is explicit: Fontaine, Invent. Math. 81 (1985), Proposition
 1.5(ii), uses `c = 1/e`, where `e` is the ramification index. Using `c = 0`
 requires a stronger obstruction theorem; it does not follow from that
 proposition alone. The sum formula proves the positive-displacement input
-for `c = 0`. No obstruction theorem is assumed as an axiom or an instance.
+for `c = 0`. No obstruction theorem is assumed, and none is supplied by an instance.
 -/
 
 @[expose] public noncomputable section
