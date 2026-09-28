@@ -282,6 +282,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.TowerDegreeOne
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.W2Statement
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.WeakChebotarev
 public import FLT.GaloisRepresentation.HardlyRamified.CoefficientQuotient
+public import FLT.GaloisRepresentation.HardlyRamified.CoordinateChange
 public import FLT.GaloisRepresentation.HardlyRamified.Defs
 public import FLT.GaloisRepresentation.HardlyRamified.DualPointPurity
 public import FLT.GaloisRepresentation.HardlyRamified.DyadicThreeGroupInertia
@@ -306,13 +307,18 @@ public import FLT.GaloisRepresentation.HardlyRamified.KummerTwoUnitSquareClasses
 public import FLT.GaloisRepresentation.HardlyRamified.LatticeHardlyRamified
 public import FLT.GaloisRepresentation.HardlyRamified.Lift
 public import FLT.GaloisRepresentation.HardlyRamified.ModThree
+public import FLT.GaloisRepresentation.HardlyRamified.ModThreeSorted
 public import FLT.GaloisRepresentation.HardlyRamified.NormalizedOrder
 public import FLT.GaloisRepresentation.HardlyRamified.PointFieldBaseChange
 public import FLT.GaloisRepresentation.HardlyRamified.PointFieldRamification
 public import FLT.GaloisRepresentation.HardlyRamified.PrimeField
 public import FLT.GaloisRepresentation.HardlyRamified.PureAction
+public import FLT.GaloisRepresentation.HardlyRamified.PureSortedQuotient
+public import FLT.GaloisRepresentation.HardlyRamified.RationalComplexConjugation
 public import FLT.GaloisRepresentation.HardlyRamified.RationalRamificationBridge
 public import FLT.GaloisRepresentation.HardlyRamified.ResidualCharacteristic
+public import FLT.GaloisRepresentation.HardlyRamified.ResidualGlobalModel
+public import FLT.GaloisRepresentation.HardlyRamified.ResidualPointModule
 public import FLT.GaloisRepresentation.HardlyRamified.ResidualTameTwo
 public import FLT.GaloisRepresentation.HardlyRamified.RibetAdapters
 public import FLT.GaloisRepresentation.HardlyRamified.TameInertiaCyclic
@@ -380,6 +386,7 @@ public import FLT.GroupScheme.FiniteFlat
 public import FLT.GroupScheme.FiniteFlatDifferentials
 public import FLT.GroupScheme.FiniteFlatFiltration
 public import FLT.GroupScheme.FiniteFlatIso
+public import FLT.GroupScheme.FiniteFlatModelBaseChange
 public import FLT.GroupScheme.FiniteFlatRestrictedScalarExtension
 public import FLT.GroupScheme.FiniteFlatScalarExtension
 public import FLT.GroupScheme.FiniteFlatSectionDescent
