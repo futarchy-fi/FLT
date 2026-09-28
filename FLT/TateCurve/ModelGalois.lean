@@ -22,6 +22,15 @@ namespace WeierstrassCurve.Affine.Point
 
 variable {K L : Type*} [Field K] [Field L] [Algebra K L] [DecidableEq L]
 
+/-- Changing the displayed source equation does not change the induced model transport. -/
+theorem equivVariableChange_symm_congr {V V' W : WeierstrassCurve L}
+    [V.IsElliptic] [V'.IsElliptic] (C : VariableChange L) (hV : V = V')
+    (hC : C • V = W) (hC' : C • V' = W) (P : V.toAffine.Point) :
+    equivOfEq hC ((equivVariableChange V C).symm P) =
+      equivOfEq hC' ((equivVariableChange V' C).symm (equivOfEq hV P)) := by
+  subst V'
+  rfl
+
 /-- A fixed coordinate change intertwines the Galois actions on two base-changed curves. -/
 theorem map_equivVariableChange_of_fixed (V W : WeierstrassCurve K)
     [(V.baseChange L).IsElliptic] (C : VariableChange L)
