@@ -296,6 +296,7 @@ public import FLT.GlobalLanglandsConjectures.GLnDefs
 public import FLT.GlobalLanglandsConjectures.GLzero
 public import FLT.GroupScheme.BialgebraBaseChange
 public import FLT.GroupScheme.CoordinateOrder
+public import FLT.GroupScheme.EtaleInertia
 public import FLT.GroupScheme.EtaleOrder
 public import FLT.GroupScheme.FiniteFlat
 public import FLT.GroupScheme.FiniteFlatSubobject
