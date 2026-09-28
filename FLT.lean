@@ -848,6 +848,8 @@ public import FLT.Mazur.AffinePullbackIdeal
 public import FLT.Mazur.CartierChartFlat
 public import FLT.Mazur.CartierCharts
 public import FLT.Mazur.CartierTensorRank
+public import FLT.Mazur.CechAcyclicCokernel
+public import FLT.Mazur.CechConnecting
 public import FLT.Mazur.CechFreeExact
 public import FLT.Mazur.CechFreeOpen
 public import FLT.Mazur.CechFreeOpenStalk
@@ -859,6 +861,7 @@ public import FLT.Mazur.CechInjectiveAcyclic
 public import FLT.Mazur.CechSheafH
 public import FLT.Mazur.CechSheafHZero
 public import FLT.Mazur.ClosedSubsets
+public import FLT.Mazur.CoherentDevissage
 public import FLT.Mazur.ConstantDegree
 public import FLT.Mazur.Contracts
 public import FLT.Mazur.CurveFiberHypotheses
