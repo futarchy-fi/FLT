@@ -15,5 +15,6 @@ import FLTTest.MazurRelativeSums
 import FLTTest.MazurSectionSumFinite
 import FLTTest.MazurSheafIntegration
 import FLTTest.MazurSmoothGeometry
+import FLTTest.MazurStalkFibers
 import FLTTest.QuaternionFiniteIndex
 import FLTTest.ThreeAdicConsolidation
