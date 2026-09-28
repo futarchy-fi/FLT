@@ -5,7 +5,7 @@ Authors: Kelvin Santos
 -/
 module
 
-public import FLT.GroupScheme.FiniteFlat
+public import FLT.GroupScheme.CartierDualHopf
 public import Mathlib.RingTheory.HopfAlgebra.MonoidAlgebra
 public import Mathlib.Algebra.Category.CommHopfAlgCat
 public import Mathlib.AlgebraicGeometry.Sites.Fpqc
@@ -16,8 +16,9 @@ public import Mathlib.CategoryTheory.Sites.SheafCohomology.Basic
 
 This file records the statement interfaces G1--G4 in the first Eisenstein-descent packet of
 Mazur's torsion argument.  It deliberately stops before Néron models, Selmer groups and modular
-curves.  The multiplicative elementary object is constructed as a group algebra. The constant object
-and the fppf realization remain placeholder-backed interfaces; the scheme-to-sheaf construction
+curves. The multiplicative elementary object is constructed as a group algebra. Its Cartier dual
+constructs the constant elementary object. The fppf realization
+remains a placeholder-backed interface; the scheme-to-sheaf construction
 and the arithmetic classification are not yet formalized.
 
 The statements follow Mazur, *Modular curves and the Eisenstein ideal* (1977), Chapter I, at the
@@ -73,9 +74,31 @@ def FiniteFlatCommGroupScheme.Isomorphic
 
 /-- Audit node G1 elementary object (Mazur 1977, I.1; Snowden Math 679): the constant group
 scheme `ℤ/pℤ` over `Spec ℤ`. -/
-noncomputable def constantOrderPrime (p : ℕ) (_hp : p.Prime) :
+noncomputable def constantOrderPrime (p : ℕ) (hp : p.Prime) :
     FiniteFlatCommGroupScheme := by
-  sorry
+  letI : NeZero p := ⟨hp.ne_zero⟩
+  let e := HopfAlgebra.CartierDual.groupAlgebraEquiv ℤ (Multiplicative (ZMod p))
+  letI := Module.Free.of_equiv e.symm.toLinearEquiv
+  exact { carrier := HopfAlgebra.CartierDual ℤ (MonoidAlgebra ℤ (Multiplicative (ZMod p)))
+          commutative := ⟨inferInstance⟩ }
+
+/-- The constant group's coordinate algebra is the algebra of integral functions
+on its points, with pointwise multiplication. -/
+noncomputable def constantOrderPrimeCoordinateEquiv (p : ℕ) (hp : p.Prime) :
+    (constantOrderPrime p hp).carrier ≃ₐ[ℤ] (Multiplicative (ZMod p) → ℤ) := by
+  letI : NeZero p := ⟨hp.ne_zero⟩
+  exact HopfAlgebra.CartierDual.groupAlgebraEquiv ℤ (Multiplicative (ZMod p))
+
+/-- The constant group scheme has order equal to the number of its points. -/
+@[simp] theorem constantOrderPrime_order (p : ℕ) (hp : p.Prime) :
+    (constantOrderPrime p hp).order = p := by
+  let : NeZero p := ⟨hp.ne_zero⟩
+  change Module.finrank ℤ
+    (HopfAlgebra.CartierDual ℤ (MonoidAlgebra ℤ (Multiplicative (ZMod p)))) = p
+  rw [(HopfAlgebra.CartierDual.groupAlgebraEquiv ℤ
+    (Multiplicative (ZMod p))).toLinearEquiv.finrank_eq]
+  simp
+
 
 /-- Audit node G1 elementary object (Mazur 1977, I.1; Snowden Math 679): the group scheme
 `μ_p` over `Spec ℤ`. -/
