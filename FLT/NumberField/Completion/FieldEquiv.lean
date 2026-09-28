@@ -32,6 +32,18 @@ variable {K : Type*} [Field K] [NumberField K]
     Algebra F (w.1.adicCompletion L) :=
   ((algebraMap (v.adicCompletion K) (w.1.adicCompletion L)).comp e.symm.toRingHom).toAlgebra
 
+/-- A finite extension completion remains finite over the isomorphic local base field. -/
+theorem completion_finiteDimensional_of_equiv (w : v.Extension (𝓞 L)) :
+    letI := completionAlgebraOfEquiv v e w
+    FiniteDimensional F (w.1.adicCompletion L) := by
+  let := completionAlgebraOfEquiv v e w
+  apply Module.Finite.of_equiv_equiv e.toRingEquiv (RingEquiv.refl (w.1.adicCompletion L))
+  apply RingHom.ext
+  intro x
+  change algebraMap (v.adicCompletion K) (w.1.adicCompletion L) (e.symm (e x)) =
+    algebraMap (v.adicCompletion K) (w.1.adicCompletion L) x
+  rw [e.symm_apply_apply]
+
 /-- A global embedding factors through a completion over any isomorphic presentation
 of the completed base field, and its image is the expected compositum. -/
 theorem exists_adicCompletion_embedding_of_equiv
