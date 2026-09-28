@@ -227,8 +227,10 @@ public import FLT.GaloisRepresentation.Automorphic
 public import FLT.GaloisRepresentation.Cyclotomic
 public import FLT.GaloisRepresentation.HardlyRamified.AbsIrredAdapter
 public import FLT.GaloisRepresentation.HardlyRamified.AtTwo
+public import FLT.GaloisRepresentation.HardlyRamified.AugmentedField
 public import FLT.GaloisRepresentation.HardlyRamified.B5Inputs
 public import FLT.GaloisRepresentation.HardlyRamified.CategoryD
+public import FLT.GaloisRepresentation.HardlyRamified.CategoryDInertia
 public import FLT.GaloisRepresentation.HardlyRamified.CategoryDSimple
 public import FLT.GaloisRepresentation.HardlyRamified.CharacterSeparation
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.DedekindZeta
@@ -276,6 +278,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.LatticeHardlyRamified
 public import FLT.GaloisRepresentation.HardlyRamified.Lift
 public import FLT.GaloisRepresentation.HardlyRamified.ModThree
 public import FLT.GaloisRepresentation.HardlyRamified.NormalizedOrder
+public import FLT.GaloisRepresentation.HardlyRamified.PointFieldRamification
 public import FLT.GaloisRepresentation.HardlyRamified.PrimeField
 public import FLT.GaloisRepresentation.HardlyRamified.ResidualCharacteristic
 public import FLT.GaloisRepresentation.HardlyRamified.ResidualTameTwo
