@@ -851,6 +851,7 @@ public import FLT.Mazur.CartierTensorRank
 public import FLT.Mazur.CechFreeOpen
 public import FLT.Mazur.CechFreeOpenStalk
 public import FLT.Mazur.CechFreeResolution
+public import FLT.Mazur.CechFreeStalkExact
 public import FLT.Mazur.CechSheafH
 public import FLT.Mazur.CechSheafHZero
 public import FLT.Mazur.ClosedSubsets
