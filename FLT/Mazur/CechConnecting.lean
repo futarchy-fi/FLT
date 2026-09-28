@@ -37,7 +37,7 @@ abbrev sheafCechFunctor :
     TopCat.Sheaf AddCommGrpCat.{u} X ⥤ CochainComplex AddCommGrpCat.{u} ℕ :=
   sheafToPresheaf _ _ ⋙ cechComplexFunctor U
 
-instance : (sheafCechFunctor U).PreservesZeroMorphisms where
+instance cechConnectingInst1 : (sheafCechFunctor U).PreservesZeroMorphisms where
   map_zero F G := by
     ext n x
     apply (termEquiv U G n).injective
