@@ -7,13 +7,15 @@ module
 
 public import FLT.GaloisRepresentation.HardlyRamified.AugmentedLocalModel
 public import FLT.NumberField.Completion.FieldEquiv
+public import FLT.NumberField.Completion.Normal
 
 /-!
 # The three-adic completion as the local full point field
 
-The embedding used for local restriction selects a prime above three. At that
-prime the completion of the global point field is isomorphic, over `ℚ_[3]`, to
-the full local point field of the actual base-changed finite flat model.
+Every completion above three of the global point field is isomorphic, over
+`ℚ_[3]`, to the full local point field of the actual base-changed finite flat
+model. For the prime selected by local restriction the isomorphism also extends
+the specified global embedding.
 -/
 
 @[expose] public noncomputable section
@@ -32,6 +34,20 @@ def threeAdicPointFieldPlace : IsDedekindDomain.HeightOneSpectrum (𝓞 ℚ) :=
 /-- The rational completion at three is the three-adic field. -/
 def threeAdicPointFieldBaseEquiv : threeAdicPointFieldPlace.adicCompletion ℚ ≃ₐ[ℚ] ℚ_[3] :=
   (Padic.adicCompletionEquiv (𝓞 ℚ) ⟨3, Nat.prime_three⟩).symm.toAlgEquiv
+
+/-- Every completion above three is isomorphic to the full local point field.
+Normality of the global point field removes dependence on the chosen prime. -/
+theorem FiniteFlatObject.nonempty_completion_equiv_localPointField
+    (H : FiniteFlatObject ZInvTwo)
+    (w : threeAdicPointFieldPlace.Extension (𝓞 (PointField H))) :
+    letI := completionAlgebraOfEquiv threeAdicPointFieldPlace threeAdicPointFieldBaseEquiv w
+    Nonempty (w.1.adicCompletion (PointField H) ≃ₐ[ℚ_[3]]
+      LocalPointField H.localFFAtThree) := by
+  let := completionAlgebraOfEquiv threeAdicPointFieldPlace threeAdicPointFieldBaseEquiv w
+  obtain ⟨e⟩ := nonempty_completion_equiv_adjoin_of_normal
+    threeAdicPointFieldPlace threeAdicPointFieldBaseEquiv
+    (H.points.pointFieldEmbedding ℚ_[3]) w
+  exact ⟨e.trans (IntermediateField.equivOfEq H.localPointField_eq_adjoin.symm)⟩
 
 /-- The completion at the prime selected by local restriction realizes the local full
 point field, and the isomorphism extends the specified global embedding. -/
