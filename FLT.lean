@@ -263,6 +263,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.WeakChebotarev
 public import FLT.GaloisRepresentation.HardlyRamified.CoefficientQuotient
 public import FLT.GaloisRepresentation.HardlyRamified.Defs
 public import FLT.GaloisRepresentation.HardlyRamified.Family
+public import FLT.GaloisRepresentation.HardlyRamified.FiniteFlatUnramified
 public import FLT.GaloisRepresentation.HardlyRamified.FlatCoefficientExtension
 public import FLT.GaloisRepresentation.HardlyRamified.Frey
 public import FLT.GaloisRepresentation.HardlyRamified.InertiaTwoSquareZero
@@ -307,6 +308,7 @@ public import FLT.GroupScheme.IntegralEtaleAlgebra
 public import FLT.GroupScheme.IntegralEtaleModel
 public import FLT.GroupScheme.IntegralEtaleModelRamification
 public import FLT.GroupScheme.IntegralHopfAlgebra
+public import FLT.GroupScheme.IntegralHopfPoints
 public import FLT.GroupScheme.KummerAlgebra
 public import FLT.GroupScheme.KummerComultiplication
 public import FLT.GroupScheme.KummerHopf

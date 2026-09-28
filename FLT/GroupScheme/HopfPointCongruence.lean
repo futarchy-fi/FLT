@@ -75,4 +75,23 @@ theorem convolution_eq_one_of_cube_eq_one [Module.Finite R A] [IsLocalRing B]
   rw [hbot, Ideal.mem_bot] at h
   exact h
 
+/-- Two three-torsion convolution maps with the same residue are equal when three
+is a unit. -/
+theorem convolution_eq_of_cube_eq_one [Module.Finite R A] [IsLocalRing B]
+    [Coalgebra.IsCocomm R A] (f g : WithConv (A →ₗ[R] B))
+    (hf : f ^ 3 = 1) (hg : g ^ 3 = 1) (h3 : IsUnit (3 : B))
+    (hm : ∀ a, (f - g) a ∈ IsLocalRing.maximalIdeal B) : f = g := by
+  have hfg : f * g ^ 2 = 1 := by
+    refine convolution_eq_one_of_cube_eq_one _ ?_ h3 ?_
+    · rw [mul_pow, hf, ← pow_mul, Nat.mul_comm 2 3, pow_mul, hg, one_pow, mul_one]
+    · have he : f * g ^ 2 - 1 = (f - g) * g ^ 2 := by
+        rw [sub_mul, ← pow_succ', hg]
+      rw [he]
+      intro a
+      exact Ideal.mul_le_left (convolution_mem_ideal_mul (f - g) (g ^ 2)
+        (IsLocalRing.maximalIdeal B) ⊤ hm (fun _ ↦ Submodule.mem_top) a)
+  calc
+    f = (f * g ^ 2) * g := by rw [mul_assoc, ← pow_succ, hg, mul_one]
+    _ = g := by rw [hfg, one_mul]
+
 end ThreeAdicPlan
