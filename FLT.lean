@@ -647,6 +647,7 @@ public import FLT.MazurW
 public import FLT.MazurWOfPrimeTorsion
 public import FLT.MoretBailly
 public import FLT.NumberField.AdeleRing
+public import FLT.NumberField.Completion.FieldEquiv
 public import FLT.NumberField.Completion.Finite
 public import FLT.NumberField.Completion.Infinite
 public import FLT.NumberField.DifferentDiscriminant
