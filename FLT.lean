@@ -866,6 +866,7 @@ public import FLT.Mazur.DivisorLineBundle
 public import FLT.Mazur.DivisorLineBundleRestrict
 public import FLT.Mazur.DivisorLineBundleSheaf
 public import FLT.Mazur.DivisorLineBundleSum
+public import FLT.Mazur.DivisorLineBundleSumOpenCoherence
 public import FLT.Mazur.DivisorLineBundleSumRestrict
 public import FLT.Mazur.DivisorLineBundleSumUnit
 public import FLT.Mazur.DivisorRestrictCoherence
