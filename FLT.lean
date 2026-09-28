@@ -115,6 +115,7 @@ public import FLT.Deformations.RepresentationTheory.GaloisRep
 public import FLT.Deformations.RepresentationTheory.GaloisRepFamily
 public import FLT.Deformations.RepresentationTheory.IntegralClosure
 public import FLT.Deformations.RepresentationTheory.Irreducible
+public import FLT.Deformations.RepresentationTheory.TraceCompatiblePair
 public import FLT.Deformations.Subfunctor
 public import FLT.DivisionAlgebra.Finiteness
 public import FLT.EllipticCurve.CoefficientAction
