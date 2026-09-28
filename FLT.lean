@@ -521,6 +521,7 @@ public import FLT.Mathlib.RingTheory.FrobeniusAugmentation
 public import FLT.Mathlib.RingTheory.FrobeniusImage
 public import FLT.Mathlib.RingTheory.GeneratorsDifferentialRelations
 public import FLT.Mathlib.RingTheory.Ideal.Quotient.Basic
+public import FLT.Mathlib.RingTheory.LocalFrobeniusInduction
 public import FLT.Mathlib.RingTheory.LocalRing.Defs
 public import FLT.Mathlib.RingTheory.LocalRing.MaximalIdeal.Basic
 public import FLT.Mathlib.RingTheory.Localization.BaseChange
