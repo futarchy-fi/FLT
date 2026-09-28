@@ -317,6 +317,7 @@ public import FLT.GroupScheme.GlobalModel
 public import FLT.GroupScheme.GlobalModelAwayTwo
 public import FLT.GroupScheme.GlobalModelOverInt
 public import FLT.GroupScheme.HopfDifferentials
+public import FLT.GroupScheme.HopfFrobenius
 public import FLT.GroupScheme.HopfPointCongruence
 public import FLT.GroupScheme.HopfPoints
 public import FLT.GroupScheme.IntegralCoordinateAlgebra
