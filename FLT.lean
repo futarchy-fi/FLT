@@ -402,6 +402,7 @@ public import FLT.GroupScheme.PadicIdentityComponentHopf
 public import FLT.GroupScheme.PadicIdentityComponentModel
 public import FLT.GroupScheme.PadicLatticePatching
 public import FLT.GroupScheme.PadicModulePatching
+public import FLT.GroupScheme.PadicMuThreeConnected
 public import FLT.GroupScheme.PadicPatchingArithmetic
 public import FLT.GroupScheme.PadicPatchingRings
 public import FLT.GroupScheme.PadicTensorPatching
