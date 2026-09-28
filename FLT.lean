@@ -410,13 +410,16 @@ public import FLT.GroupScheme.RaynaudEtaleDualExtension
 public import FLT.GroupScheme.RaynaudEtaleExtension
 public import FLT.GroupScheme.RaynaudExtension
 public import FLT.GroupScheme.RaynaudExtensionExists
+public import FLT.GroupScheme.RaynaudFilteredExtension
 public import FLT.GroupScheme.RaynaudFiltrationLayers
 public import FLT.GroupScheme.RaynaudFlatKernelExactness
 public import FLT.GroupScheme.RaynaudFlatQuotient
 public import FLT.GroupScheme.RaynaudGenericSplitExtension
+public import FLT.GroupScheme.RaynaudInductionStep
 public import FLT.GroupScheme.RaynaudIntegralFiltration
 public import FLT.GroupScheme.RaynaudInversionBasis
 public import FLT.GroupScheme.RaynaudKernelExactness
+public import FLT.GroupScheme.RaynaudLayerDescent
 public import FLT.GroupScheme.RaynaudModelArithmetic
 public import FLT.GroupScheme.RaynaudNakayamaDescent
 public import FLT.GroupScheme.RaynaudOrderNineExtension
@@ -429,6 +432,7 @@ public import FLT.GroupScheme.RaynaudQuotientSpecialFiber
 public import FLT.GroupScheme.RaynaudRankThreeClassification
 public import FLT.GroupScheme.RaynaudRankThreeExtension
 public import FLT.GroupScheme.RaynaudRigidity
+public import FLT.GroupScheme.RaynaudSplitting
 public import FLT.GroupScheme.RaynaudTorsionFiltration
 public import FLT.GroupScheme.RaynaudTorsorDescent
 public import FLT.GroupScheme.RaynaudUnramifiedKernel
