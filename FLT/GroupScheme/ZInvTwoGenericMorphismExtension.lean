@@ -31,7 +31,7 @@ namespace ThreeAdicPlan
 
 open PadicPatching
 
-local instance : Fact (¬ (3 : ℤ) ∣ 2) := ⟨by norm_num⟩
+local instance zInvTwoGenericMorphismExtensionInst1 : Fact (¬ (3 : ℤ) ∣ 2) := ⟨by norm_num⟩
 
 private theorem scalarExtensionMap_self (B : Type) [AddCommGroup B] [Module ZInvTwo B]
     (z : ℚ ⊗[ZInvTwo] B) : scalarExtensionMap ℚ ℚ B z = z := by
@@ -59,7 +59,7 @@ theorem extend_generic_morphism_over_zInvTwo
     ∃! g : ModelHom X Y, genericHom g = f := by
   let : Algebra.Etale (Away 2 3) (X.scalarExtension (Away 2 3) ℚ).CoordinateRing :=
     inferInstanceAs (Algebra.Etale (Away 2 3) (Away 2 3 ⊗[ZInvTwo] X.CoordinateRing))
-  obtain ⟨a, ha, _⟩ := extend_generic_morphism_of_etale
+  obtain ⟨a, ha, _⟩ := extend_generic_morphism_of_etale_perfectField
     (X.scalarExtension (Away 2 3) ℚ) (Y.scalarExtension (Away 2 3) ℚ)
       (f.scalarExtension (Away 2 3) ℚ)
   obtain ⟨b, hb, _⟩ := raynaud_extend_generic_morphism_of_orderThreeFiltration

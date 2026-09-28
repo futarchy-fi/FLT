@@ -27,7 +27,7 @@ namespace ThreeAdicPlan
 
 open PadicPatching
 
-local instance : Fact (¬ (3 : ℤ) ∣ 2) := ⟨by norm_num⟩
+local instance constantMuThreeGlobalSplittingInst1 : Fact (¬ (3 : ℤ) ∣ 2) := ⟨by norm_num⟩
 
 /-- The geometric generic fibre of the constant group has order three. -/
 theorem constantThree_card_points : Nat.card constantThree.points = 3 := by
