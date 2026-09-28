@@ -227,6 +227,7 @@ public import FLT.GaloisRepresentation.Automorphic
 public import FLT.GaloisRepresentation.Cyclotomic
 public import FLT.GaloisRepresentation.HardlyRamified.AbsIrredAdapter
 public import FLT.GaloisRepresentation.HardlyRamified.AtTwo
+public import FLT.GaloisRepresentation.HardlyRamified.AugmentedDiscriminantReduction
 public import FLT.GaloisRepresentation.HardlyRamified.AugmentedField
 public import FLT.GaloisRepresentation.HardlyRamified.AugmentedFieldData
 public import FLT.GaloisRepresentation.HardlyRamified.AugmentedFieldDegree
@@ -366,6 +367,7 @@ public import FLT.GroupScheme.FiniteHopfFreeness
 public import FLT.GroupScheme.FontaineCubicLifting
 public import FLT.GroupScheme.FontaineCubicNewton
 public import FLT.GroupScheme.FontaineCubicSystemLifting
+public import FLT.GroupScheme.FontaineDifferentHypothesis
 public import FLT.GroupScheme.FontaineDividedPowers
 public import FLT.GroupScheme.FontaineJacobian
 public import FLT.GroupScheme.FontaineNewtonStep
@@ -408,6 +410,8 @@ public import FLT.GroupScheme.IntegralEtaleModelRamification
 public import FLT.GroupScheme.IntegralGroupLike
 public import FLT.GroupScheme.IntegralHopfAlgebra
 public import FLT.GroupScheme.IntegralHopfPoints
+public import FLT.GroupScheme.IntegralQuotientFaithfullyFlat
+public import FLT.GroupScheme.IntegralSubquotientExtension
 public import FLT.GroupScheme.InvariantDerivation
 public import FLT.GroupScheme.KummerAlgebra
 public import FLT.GroupScheme.KummerComultiplication
@@ -500,7 +504,11 @@ public import FLT.GroupScheme.RaynaudTorsionFiltration
 public import FLT.GroupScheme.RaynaudTorsorDescent
 public import FLT.GroupScheme.RaynaudUnramifiedKernel
 public import FLT.GroupScheme.RaynaudUnramifiedQuotient
+public import FLT.GroupScheme.ReverseExtHypothesis
 public import FLT.GroupScheme.SemilocalFreeDescent
+public import FLT.GroupScheme.SortedFiltrationCoefficientQuotient
+public import FLT.GroupScheme.SortedFiltrationFunctoriality
+public import FLT.GroupScheme.StableSubgroupExtension
 public import FLT.GroupScheme.ThreeAdicLocalPresentation
 public import FLT.GroupScheme.ThreeAdicModelBaseChange
 public import FLT.GroupScheme.ThreeTorsionEtaleDescent
@@ -717,6 +725,8 @@ public import FLT.MoretBailly
 public import FLT.NumberField.AdeleRing
 public import FLT.NumberField.Completion.Finite
 public import FLT.NumberField.Completion.Infinite
+public import FLT.NumberField.DifferentDiscriminant
+public import FLT.NumberField.DifferentExponentBounds
 public import FLT.NumberField.DiscriminantBounds
 public import FLT.NumberField.HeightOneSpectrum
 public import FLT.NumberField.InfiniteAdeleRing
