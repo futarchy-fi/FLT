@@ -417,6 +417,7 @@ public import FLT.GroupScheme.LocalDifferentBounds
 public import FLT.GroupScheme.LocalDifferentConjugates
 public import FLT.GroupScheme.LocalDifferentInertia
 public import FLT.GroupScheme.LocalDifferentValuation
+public import FLT.GroupScheme.LocalDvrRealization
 public import FLT.GroupScheme.LocalEisensteinPresentation
 public import FLT.GroupScheme.LocalEtalePoint
 public import FLT.GroupScheme.LocalFiniteFlatExtension
