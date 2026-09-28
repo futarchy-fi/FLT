@@ -282,4 +282,22 @@ lemma zeroHomologyEquiv_naturality {F G : TopCat.Sheaf AddCommGrpCat.{u} X}
   change _ = f.hom.app (op (U i)) ((zeroHomologyEquiv U F x).val i)
   rw [zeroHomologyEquiv_apply]
 
+variable [HasExt.{u + 1}
+  (Sheaf (Opens.grothendieckTopology X) AddCommGrpCat.{u})]
+
+/-- Ext-based degree-zero cohomology agrees with categorical Cech homology. -/
+def sheafHZeroEquiv (hU : iSup U = ⊤) (F : TopCat.Sheaf AddCommGrpCat.{u} X) :
+    Sheaf.H F 0 ≃+ CH U F 0 :=
+  (CechSheafH.hZeroEquiv U hU).trans (zeroHomologyEquiv U F).symm
+
+/-- The Ext-to-Cech comparison commutes with every coefficient morphism. -/
+lemma sheafHZeroEquiv_naturality (hU : iSup U = ⊤)
+    {F G : TopCat.Sheaf AddCommGrpCat.{u} X} (f : F ⟶ G) (x : Sheaf.H F 0) :
+    sheafHZeroEquiv U hU G (Sheaf.H.map f 0 x) =
+      CHmap U f 0 (sheafHZeroEquiv U hU F x) := by
+  apply (zeroHomologyEquiv U G).injective
+  rw [zeroHomologyEquiv_naturality]
+  simp only [sheafHZeroEquiv, AddEquiv.trans_apply, AddEquiv.apply_symm_apply]
+  exact CechSheafH.hZeroEquiv_naturality U hU f x
+
 end FLT.Mazur.CechSheafHZero

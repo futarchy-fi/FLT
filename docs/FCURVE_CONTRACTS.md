@@ -125,8 +125,8 @@ intermediate results toward the genus package:
   formula and restriction between chart sections are proved. Extending the
   additive map from this basis and checking scalar linearity gives the global map.
   **FC10 remains incomplete:** coherence with FC10f's open-subscheme comparison
-  and with the empty-divisor isomorphism still needs proof. O(0) ≅ the structure
-  module itself is already `divisorLineBundleTopIso`.
+  still needs proof. Empty-divisor coherence is now proved on both sides in
+  `DivisorLineBundleSumUnit.lean`.
 - [ModuleSheafTensor.lean](../FLT/Mazur/ModuleSheafTensor.lean) constructs the
   sheaf tensor by sheafification and proves its bilinear universal property.
   [ModuleSheafTensorRestrict.lean](../FLT/Mazur/ModuleSheafTensorRestrict.lean)
@@ -152,7 +152,7 @@ the sheaf condition by gluing local linear morphisms, constructs the actual
 dual sheaf, and proves contravariance and compatibility with open restriction
 (FC10d3). The Cartier comparison in `DivisorLineBundleSheaf.lean` completes FC10d;
 the global tensor/product comparison is in `DivisorLineBundleSum.lean`. Its
-open-restriction and empty-divisor coherence, and general pullback comparisons,
+open-restriction coherence and general pullback comparisons
 remain separate obligations.
 
 FC10d checked 2026-09-28 18:29 UTC: `lake build FLT.Mazur.DivisorLineBundleSheaf`,
@@ -212,8 +212,8 @@ principal-open Cech complex and augmentation using
 [TildePrincipalOpen.lean](../FLT/Mazur/TildePrincipalOpen.lean). It proves
 injectivity of the augmentation for a spanning family and that exactness of
 a complex can be checked after principal localization. Exactness of this Cech
-complex in all degrees still requires assembling the localization and split-cover
-results described below.
+complex in all degrees is now proved for finite spanning principal families
+in the exactness module described below.
 Finite-dimensionality of positive-degree cohomology and genus remain open.
 
 ## Positive divisor sheaves and restriction (FC10d/f)
@@ -226,7 +226,7 @@ identifies restriction of the ideal module with the pulled-back ideal module.
 It then constructs restriction of O(D), matches the affine dual-ideal transport,
 and proves identity and composition compatibility on nested opens.
 The global sum/tensor isomorphism is proved in the module described below;
-its open-restriction and unit coherence, and ampleness, remain separate obligations.
+its open-restriction coherence and ampleness remain separate obligations.
 
 [MazurCohomologyDivisor.lean](../FLTTest/MazurCohomologyDivisor.lean) audits
 these cohomology, initial Cech and divisor-restriction endpoints against the
@@ -247,21 +247,46 @@ differentials and augmentation.
 [LocalizationCechSplit.lean](../FLT/Mazur/LocalizationCechSplit.lean) constructs
 a contraction when one defining function is a unit, proving exactness of the
 augmented complex, vanishing of positive homology and the degree-zero comparison
-in that case. Assembly for arbitrary finite spanning principal families remains open.
+in that case. [LocalizationCechExact.lean](../FLT/Mazur/LocalizationCechExact.lean) proves
+exactness of the augmented section complex in every degree for finite spanning
+principal families, positive homology vanishing and the canonical H0 comparison
+via augmentation. This completes the principal-cover exactness step (FC08-A5).
 
 [CechSheafH.lean](../FLT/Mazur/CechSheafH.lean) identifies Ext-based degree-zero
 cohomology with compatible section families for an open cover. The equivalence
 is natural in the coefficient sheaf and respects coefficient multiplication.
-The categorical Cech-homology adapter and comparison in higher degrees remain open.
+[CechSheafHZero.lean](../FLT/Mazur/CechSheafHZero.lean) now supplies the
+categorical adapter, including the differential sign and tuple coordinates.
+Its `sheafHZeroEquiv` composes the two comparisons to identify Ext-based H0
+with categorical Cech homology, naturally in the coefficient sheaf.
+Comparison in higher degrees remains open.
 
 [DivisorLineBundleSum.lean](../FLT/Mazur/DivisorLineBundleSum.lean) glues the
 Cartier-chart sum comparisons to the actual sheaf isomorphism
 O(D) tensor O(E) ≅ O(D+E), with the product-evaluation formula.
-Compatibility with the open-subscheme restriction comparisons and the empty
-divisor is still separate work; this does not discharge all of FC10.
+[DivisorLineBundleSumUnit.lean](../FLT/Mazur/DivisorLineBundleSumUnit.lean)
+proves compatibility with the empty divisor on both sides, using the prescribed
+trivialization of O(0) and the tensor unit map.
+Compatibility with open-subscheme restriction comparisons remains separate;
+this does not discharge all of FC10.
 
 [MazurAffineCechSum.lean](../FLTTest/MazurAffineCechSum.lean) audits these endpoints
 against the three standard Lean axioms. No arithmetic FLT input is removed.
+
+## Free-sheaf Cech construction and evaluation
+
+[CechFreeOpen.lean](../FLT/Mazur/CechFreeOpen.lean) constructs the free abelian
+sheaf on an open and identifies maps from it with sections, naturally in both
+the open and the coefficient sheaf. It also compares open-wise Ext H0 with sections.
+[CechFreeResolution.lean](../FLT/Mazur/CechFreeResolution.lean) constructs the
+augmented free-sheaf chain complex, its constant-integer term, coproduct terms,
+and signed differential and augmentation formulas.
+Despite the filename, exactness of this free-sheaf complex is not proved here.
+That obligation and the higher-degree Ext comparison remain open.
+
+[MazurCechResolution.lean](../FLTTest/MazurCechResolution.lean) audits the
+principal-cover exactness, natural categorical H0 comparison, free-sheaf
+construction and divisor-unit equations against the standard Lean axioms.
 
 ## Sources and the two different kinds of curve
 
@@ -584,7 +609,7 @@ All acceptance statements mean proved theorems, not merely inhabitants accepted 
 | FC09 genus pullback | FC07–FC08, 02KH port | 300–500 / 30–60 | **Gated**: canonical |
 | | | | field-extension comparison, then geometric-fiber genus preservation C3. |
 | FC10 divisor line bundle | FC03, invertible-module tensor API | 300–500 / 25–50 | Sum proved; |
-| | | | **Gated**: coherence with open restriction and the empty divisor. |
+| | | | **Gated**: coherence with open restriction; empty-divisor coherence proved. |
 | FC11 ample criterion | FC06/FC10, degree/ampleness ports | 300–500 / 30–60 | **Gated**: |
 | | | | C7 component criterion; resolve arbitrary-base gate before relative use. |
 | FC12 smooth dimension | smooth algebra dimension lemmas | 300–500 / 25–50 | |
