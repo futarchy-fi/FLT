@@ -25,8 +25,8 @@ universe u
 
 variable {R A B : Type u} [CommRing R] [CommRing A] [CommRing B]
   [HopfAlgebra R A] [HopfAlgebra R B]
-  [Module.Finite R A] [Module.Projective R A] [Coalgebra.IsCocomm R A]
-  [Module.Finite R B] [Module.Projective R B] [Coalgebra.IsCocomm R B]
+  [Module.Finite R A] [Module.Projective R A]
+  [Module.Finite R B] [Module.Projective R B]
 
 /-- Evaluation of a tensor of dual maps is precomposition on both factors. -/
 theorem tensor_map_eval (f : A →ₐc[R] B)
@@ -62,6 +62,8 @@ def bialgMap (f : A →ₐc[R] B) : CartierDual R B →ₐc[R] CartierDual R A w
 @[simp] theorem bialgMap_id : bialgMap (BialgHom.id R A) = BialgHom.id R (CartierDual R A) := by
   ext φ a
   rfl
+
+variable [Coalgebra.IsCocomm R A]
 
 /-- Evaluation identifies the underlying module with its double integral dual. -/
 def bidualLinearEquiv : A ≃ₗ[R] CartierDual R (CartierDual R A) :=
