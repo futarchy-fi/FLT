@@ -33,13 +33,13 @@ local instance structureHasExt (X : Scheme.{u}) :
   HasExt.standard _
 
 /-- The structure sheaf regarded as a sheaf of modules over itself. -/
-abbrev structureModule (X : Scheme.{u}) : X.Modules :=
+abbrev structureUnitModule (X : Scheme.{u}) : X.Modules :=
   SheafOfModules.unit X.ringCatSheaf
 
 /-- The actual structure sheaf with only its additive structure retained. -/
 abbrev structureAbelianSheaf (X : Scheme.{u}) :
     Sheaf (Opens.grothendieckTopology X) AddCommGrpCat.{u} :=
-  (SheafOfModules.toSheaf X.ringCatSheaf).obj (structureModule X)
+  (SheafOfModules.toSheaf X.ringCatSheaf).obj (structureUnitModule X)
 
 /-- Structure-sheaf cohomology in any nonnegative degree. -/
 abbrev StructureH (X : Scheme.{u}) (n : ℕ) : Type (u + 1) :=
