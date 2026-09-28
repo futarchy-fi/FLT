@@ -339,6 +339,7 @@ public import FLT.GroupScheme.ConstantFiniteFlat
 public import FLT.GroupScheme.ConstantMuThreeGlobalSplitting
 public import FLT.GroupScheme.ConvolutionBaseChange
 public import FLT.GroupScheme.CoordinateOrder
+public import FLT.GroupScheme.CubicKummerCocycle
 public import FLT.GroupScheme.DiagonalizableFiniteFlat
 public import FLT.GroupScheme.DiagonalizablePointPurity
 public import FLT.GroupScheme.EtaleBaseChangeTower
