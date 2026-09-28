@@ -891,6 +891,7 @@ public import FLT.Mazur.LocalizationCech
 public import FLT.Mazur.LocalizationCechCompare
 public import FLT.Mazur.LocalizationCechExact
 public import FLT.Mazur.LocalizationCechSplit
+public import FLT.Mazur.LocalizationDegreeFace
 public import FLT.Mazur.LocalizationDegreePiece
 public import FLT.Mazur.LocalizationDegreeShift
 public import FLT.Mazur.ModuleCohomology
