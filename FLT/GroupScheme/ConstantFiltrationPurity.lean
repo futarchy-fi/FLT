@@ -54,7 +54,7 @@ theorem constantThree_smul (σ : AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosu
 
 /-- An integral constant-three filtration gives a trivial three-torsion filtration
 of the actual geometric point module. -/
-theorem HasFiltration.trivialThreePoints {H : FF ZInvTwo}
+theorem HasFiltration.trivialThreePoints {H : FiniteFlatObject ZInvTwo}
     (hF : HasFiltration H constantThree) :
     Nonempty (TrivialPrimeFiltration 3
       (AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosure ℚ) H.points) := by
@@ -70,12 +70,13 @@ theorem HasFiltration.trivialThreePoints {H : FF ZInvTwo}
   | @extension A H Q E hA ih =>
     subst Q
     obtain ⟨F⟩ := ih rfl
-    exact ⟨F.extension (FF.pointMap E.inclusion) (FF.pointMap E.quotient)
+    exact ⟨F.extension (FiniteFlatObject.pointMap E.inclusion)
+      (FiniteFlatObject.pointMap E.quotient)
       E.pointsExact constantThree_nsmul constantThree_smul⟩
 
 /-- Every finite-flat group over `ℤ[1/2]` filtered by constant groups of order
 three has pointwise trivial rational Galois action. -/
-theorem pure_one_of_constantThree_filtration (H : FF ZInvTwo)
+theorem pure_one_of_constantThree_filtration (H : FiniteFlatObject ZInvTwo)
     (hf : HasFiltration H constantThree) :
     Pure H.points (1 : (AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosure ℚ) → ℤ) := by
   obtain ⟨F⟩ := hf.trivialThreePoints
@@ -86,7 +87,7 @@ theorem pure_one_of_constantThree_filtration (H : FF ZInvTwo)
 /-- The constant-filtration case of category-D purity, for the full geometric
 point action. The category-D assumption is unnecessary for this stronger result. -/
 @[nolint unusedArguments]
-theorem D_etale_three_constant (H : FF ZInvTwo) (_hD : InCategoryD H)
+theorem D_etale_three_constant (H : FiniteFlatObject ZInvTwo) (_hD : InCategoryD H)
     (hf : HasFiltration H constantThree) :
     Pure H.points (1 : (AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosure ℚ) → ℤ) :=
   pure_one_of_constantThree_filtration H hf
