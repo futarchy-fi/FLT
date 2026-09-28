@@ -229,10 +229,16 @@ public import FLT.GaloisRepresentation.HardlyRamified.AbsIrredAdapter
 public import FLT.GaloisRepresentation.HardlyRamified.AtTwo
 public import FLT.GaloisRepresentation.HardlyRamified.AugmentedField
 public import FLT.GaloisRepresentation.HardlyRamified.AugmentedFieldData
+public import FLT.GaloisRepresentation.HardlyRamified.AugmentedFieldDegree
+public import FLT.GaloisRepresentation.HardlyRamified.AugmentedFieldUnramified
+public import FLT.GaloisRepresentation.HardlyRamified.AugmentedFieldUnramifiedTwo
 public import FLT.GaloisRepresentation.HardlyRamified.B5Inputs
 public import FLT.GaloisRepresentation.HardlyRamified.CategoryD
 public import FLT.GaloisRepresentation.HardlyRamified.CategoryDInertia
+public import FLT.GaloisRepresentation.HardlyRamified.CategoryDPointCharacters
+public import FLT.GaloisRepresentation.HardlyRamified.CategoryDSexticQuotient
 public import FLT.GaloisRepresentation.HardlyRamified.CategoryDSimple
+public import FLT.GaloisRepresentation.HardlyRamified.CategoryDSimpleRepresentation
 public import FLT.GaloisRepresentation.HardlyRamified.CharacterCyclotomicPurity
 public import FLT.GaloisRepresentation.HardlyRamified.CharacterSeparation
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.DedekindZeta
@@ -275,6 +281,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.FlatCoefficientExtension
 public import FLT.GaloisRepresentation.HardlyRamified.Frey
 public import FLT.GaloisRepresentation.HardlyRamified.InertiaTwoSquareZero
 public import FLT.GaloisRepresentation.HardlyRamified.IntegralCharacters
+public import FLT.GaloisRepresentation.HardlyRamified.KummerModThreeCyclotomic
 public import FLT.GaloisRepresentation.HardlyRamified.KummerObject
 public import FLT.GaloisRepresentation.HardlyRamified.KummerObjectField
 public import FLT.GaloisRepresentation.HardlyRamified.KummerTwoClassNumber
@@ -289,6 +296,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.NormalizedOrder
 public import FLT.GaloisRepresentation.HardlyRamified.PointFieldRamification
 public import FLT.GaloisRepresentation.HardlyRamified.PrimeField
 public import FLT.GaloisRepresentation.HardlyRamified.PureAction
+public import FLT.GaloisRepresentation.HardlyRamified.RationalRamificationBridge
 public import FLT.GaloisRepresentation.HardlyRamified.ResidualCharacteristic
 public import FLT.GaloisRepresentation.HardlyRamified.ResidualTameTwo
 public import FLT.GaloisRepresentation.HardlyRamified.RibetAdapters
@@ -711,6 +719,9 @@ public import FLT.PoitouTate
 public import FLT.Proof
 public import FLT.QuaternionAlgebra.FiniteProjectiveUnits
 public import FLT.QuaternionAlgebra.NumberField
+public import FLT.RepresentationTheory.NormalPSubgroup
+public import FLT.RepresentationTheory.SmallQuotient
+public import FLT.RepresentationTheory.ThreeGroupCharacters
 public import FLT.Slop.DimensionTheorem
 public import FLT.Slop.DimensionTheorem.Defs
 public import FLT.Slop.DimensionTheorem.DimEqDelta
@@ -742,6 +753,7 @@ public import FLT.Slop.Ribet_Lemma.TrivialQuotientExtension
 public import FLT.Slop.Ribet_Lemma.stable_lattices
 public import FLT.TateCurve.Abscissa
 public import FLT.TateCurve.Addition
+public import FLT.TateCurve.AlgebraicPointLocal
 public import FLT.TateCurve.AlgebraicUniformization
 public import FLT.TateCurve.Collinearity
 public import FLT.TateCurve.CompleteAddition
@@ -759,6 +771,8 @@ public import FLT.TateCurve.JInvariant
 public import FLT.TateCurve.LocalField
 public import FLT.TateCurve.LocalUniformization
 public import FLT.TateCurve.Model
+public import FLT.TateCurve.ModelGalois
+public import FLT.TateCurve.ModelSign
 public import FLT.TateCurve.ModelTransport
 public import FLT.TateCurve.Naturality
 public import FLT.TateCurve.ParameterEvaluation
@@ -772,3 +786,4 @@ public import FLT.TateCurve.Surjectivity
 public import FLT.TateCurve.SymmetricInverse
 public import FLT.TateCurve.TateCurve
 public import FLT.TateCurve.Uniformization
+public import FLT.TateCurve.ValuativeContinuity
