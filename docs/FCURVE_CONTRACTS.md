@@ -96,8 +96,8 @@ curve remain separate obligations.
 
 ## Integrated sheaf and cohomology foundations
 
-The following modules give proved intermediate constructions, not completed
-genus or positive-divisor line-bundle packages:
+The following modules construct divisor sheaves and tensors, and provide
+intermediate results toward the genus package:
 
 - [CurveGenus.lean](../FLT/Mazur/CurveGenus.lean) compares the canonical constants
   map with actual degree-zero cohomology and proves dimension one under
@@ -108,7 +108,12 @@ genus or positive-divisor line-bundle packages:
   chart tensor comparisons, and transport along open immersions.
 - [DivisorInvertibleSheaf.lean](../FLT/Mazur/DivisorInvertibleSheaf.lean)
   proves that the actual Cartier ideal module sheaf is locally free of rank one.
-  This is the ideal (negative divisor); its dual sheaf is a separate construction.
+  This is the ideal (negative divisor).
+- [DivisorLineBundleSheaf.lean](../FLT/Mazur/DivisorLineBundleSheaf.lean) defines
+  `divisorLineBundle I hI` as the intrinsic dual of that ideal sheaf. Evaluation
+  identifies its sections on Cartier charts with the dual ideal modules and
+  intertwines sheaf restriction with `CartierChart.dualRestrict`. Dualized chart
+  trivializations prove local rank one; the unit ideal gives the structure module.
 - [ModuleSheafTensor.lean](../FLT/Mazur/ModuleSheafTensor.lean) constructs the
   sheaf tensor by sheafification and proves its bilinear universal property.
   [ModuleSheafTensorRestrict.lean](../FLT/Mazur/ModuleSheafTensorRestrict.lean)
@@ -132,8 +137,11 @@ identity, composition, scalar compatibility and evaluation equations.
 [ModuleSheafDualSheaf.lean](../FLT/Mazur/ModuleSheafDualSheaf.lean) proves
 the sheaf condition by gluing local linear morphisms, constructs the actual
 dual sheaf, and proves contravariance and compatibility with open restriction
-(FC10d3). The positive-divisor line bundle and its Cartier-chart comparisons
-remain a separate construction.
+(FC10d3). The Cartier comparison in `DivisorLineBundleSheaf.lean` completes FC10d;
+tensor/product and general pullback comparisons remain separate obligations.
+
+FC10d checked 2026-09-28 18:29 UTC: `lake build FLT.Mazur.DivisorLineBundleSheaf`,
+`lake build FLT` and `lake lint -- --no-build FLT` passed without warnings.
 
 [ModuleSheafTensorAffine.lean](../FLT/Mazur/ModuleSheafTensorAffine.lean) proves
 localization comparisons on basic opens of Spec R for actual quasi-coherent
