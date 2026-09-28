@@ -520,6 +520,7 @@ public import FLT.Mathlib.RingTheory.PowerBasisApproximateRoots
 public import FLT.Mathlib.RingTheory.PowerBasisDifferentialBezout
 public import FLT.Mathlib.RingTheory.PowerBasisDifferentials
 public import FLT.Mathlib.RingTheory.RamificationInertia.Basic
+public import FLT.Mathlib.RingTheory.RelationLifting
 public import FLT.Mathlib.RingTheory.SimpleRing.TensorProduct
 public import FLT.Mathlib.RingTheory.Spectrum.Prime.RingHom
 public import FLT.Mathlib.RingTheory.TensorProduct.Basis
