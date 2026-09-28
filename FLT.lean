@@ -501,6 +501,7 @@ public import FLT.Mathlib.RepresentationTheory.Homological.ContCohomology.Basic
 public import FLT.Mathlib.RepresentationTheory.Homological.ContCohomology.CupProduct
 public import FLT.Mathlib.RingTheory.AdicCompletion.PowerQuotients
 public import FLT.Mathlib.RingTheory.AdjoinRoot
+public import FLT.Mathlib.RingTheory.AugmentationCotangent
 public import FLT.Mathlib.RingTheory.AugmentationGenerators
 public import FLT.Mathlib.RingTheory.CotangentGenerators
 public import FLT.Mathlib.RingTheory.DedekindDomain.AdicValuation
