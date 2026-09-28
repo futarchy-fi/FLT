@@ -365,6 +365,7 @@ public import FLT.GroupScheme.RaynaudNakayamaDescent
 public import FLT.GroupScheme.RaynaudOrderThreeFiltration
 public import FLT.GroupScheme.RaynaudProductExtension
 public import FLT.GroupScheme.RaynaudQuotientFunctoriality
+public import FLT.GroupScheme.RaynaudQuotientSpecialFiber
 public import FLT.GroupScheme.RaynaudRankThreeClassification
 public import FLT.GroupScheme.RaynaudRankThreeExtension
 public import FLT.GroupScheme.RaynaudRigidity
