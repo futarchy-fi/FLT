@@ -845,6 +845,7 @@ public import FLT.Mathlib.Topology.MetricSpace.Pseudo.Matrix
 public import FLT.Mathlib.Topology.Polish
 public import FLT.Mazur.Contracts
 public import FLT.Mazur.CuspCollision
+public import FLT.Mazur.FCurveContracts
 public import FLT.Mazur.IntegralBase
 public import FLT.Mazur.OverPoints
 public import FLT.MazurChapter.AdmissibleGroupSchemes
