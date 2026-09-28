@@ -852,6 +852,7 @@ public import FLT.Mazur.Contracts
 public import FLT.Mazur.CurveFinite
 public import FLT.Mazur.CuspCollision
 public import FLT.Mazur.EtaleCoordinate
+public import FLT.Mazur.EtaleDimLe
 public import FLT.Mazur.FCurveContracts
 public import FLT.Mazur.FamilyTransport
 public import FLT.Mazur.GenericFibers
