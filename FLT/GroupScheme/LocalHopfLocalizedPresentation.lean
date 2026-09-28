@@ -24,6 +24,7 @@ variable {k A : Type u} [Field k] [CommRing A] [HopfAlgebra k A]
 
 include p
 
+omit [CharP A p] in
 /-- A finite local commutative Hopf algebra has a quotient presentation by
 exactly its cotangent dimension many relations in the polynomial source
 localized at the augmentation maximal ideal. -/
