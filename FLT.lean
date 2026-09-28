@@ -305,6 +305,7 @@ public import FLT.GlobalLanglandsConjectures.GLnDefs
 public import FLT.GlobalLanglandsConjectures.GLzero
 public import FLT.GroupScheme.BialgebraBaseChange
 public import FLT.GroupScheme.CartierDualAlgebra
+public import FLT.GroupScheme.CartierDualBaseChange
 public import FLT.GroupScheme.CartierDualCoalgebra
 public import FLT.GroupScheme.CartierDualHopf
 public import FLT.GroupScheme.CartierDualMaps
