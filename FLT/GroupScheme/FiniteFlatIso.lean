@@ -57,7 +57,7 @@ def FF.isoOfGenericInverse [PerfectField K] [IsFractionRing R K]
     exact ⟨g a, DFunLike.congr_fun h₁ a⟩
 
 /-- The constructed equivalence retains the original integral map. -/
-@[simp] theorem FF.isoOfGenericInverse_toBialgHom [PerfectField K] [IsFractionRing R K]
+theorem FF.isoOfGenericInverse_toBialgHom [PerfectField K] [IsFractionRing R K]
     {X Y : FF R K} (f : ModelHom X Y) (g : ModelHom Y X)
     (hgf : ∀ x, genericHom g (genericHom f x) = x)
     (hfg : ∀ y, genericHom f (genericHom g y) = y) :

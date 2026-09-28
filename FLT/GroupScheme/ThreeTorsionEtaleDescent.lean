@@ -28,6 +28,7 @@ open scoped TensorProduct
 namespace ThreeAdicPlan
 
 local instance : Fact (¬ ((3 : ℕ) : ℤ) ∣ (2 : ℤ)) := ⟨by decide⟩
+/-- The three-adic integers as a `ZInvTwo`-algebra. -/
 local instance : Algebra ZInvTwo ℤ_[3] := (PadicPatching.baseToLocal 3 2).toAlgebra
 
 /-- Scalar extension to the three-adic integers detects elements of a module
