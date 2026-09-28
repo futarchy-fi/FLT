@@ -350,6 +350,7 @@ public import FLT.GroupScheme.EtaleSplitting
 public import FLT.GroupScheme.FiniteFlat
 public import FLT.GroupScheme.FiniteFlatDifferentials
 public import FLT.GroupScheme.FiniteFlatFiltration
+public import FLT.GroupScheme.FiniteFlatRestrictedScalarExtension
 public import FLT.GroupScheme.FiniteFlatScalarExtension
 public import FLT.GroupScheme.FiniteFlatSectionDescent
 public import FLT.GroupScheme.FiniteFlatSubobject
