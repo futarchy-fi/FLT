@@ -60,7 +60,7 @@ def integralPiMap (R K I : Type*) [CommRing R] [Field K] [Algebra R K] [Finite I
     (Algebra.IsIntegral.isIntegral x).map f
 
 /-- Normality of the base identifies integral rational functions coordinatewise. -/
-theorem integralPiMap_bijective (R K I : Type*) [CommRing R] [IsDomain R]
+theorem integralPiMap_bijective (R K I : Type*) [CommRing R]
     [Field K] [Algebra R K] [IsFractionRing R K] [IsIntegrallyClosed R] [Finite I] :
     Function.Bijective (integralPiMap R K I) := by
   constructor
@@ -76,7 +76,7 @@ theorem integralPiMap_bijective (R K I : Type*) [CommRing R] [IsDomain R]
     exact ⟨r, by apply Subtype.ext; funext i; exact hr i⟩
 
 /-- The integral closure in a finite product of fraction fields is the product of bases. -/
-def integralPiEquiv (R K I : Type*) [CommRing R] [IsDomain R]
+def integralPiEquiv (R K I : Type*) [CommRing R]
     [Field K] [Algebra R K] [IsFractionRing R K] [IsIntegrallyClosed R] [Finite I] :
     (I → R) ≃ₐ[R] integralClosure R (I → K) :=
   AlgEquiv.ofBijective (integralPiMap R K I) (integralPiMap_bijective R K I)
