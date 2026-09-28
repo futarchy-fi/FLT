@@ -300,6 +300,7 @@ public import FLT.GroupScheme.EtaleOrder
 public import FLT.GroupScheme.FiniteFlat
 public import FLT.GroupScheme.FiniteFlatDifferentials
 public import FLT.GroupScheme.FiniteFlatSubobject
+public import FLT.GroupScheme.FiniteHopfFreeness
 public import FLT.GroupScheme.FontaineCubicLifting
 public import FLT.GroupScheme.FontaineCubicNewton
 public import FLT.GroupScheme.FontaineCubicSystemLifting
@@ -318,6 +319,10 @@ public import FLT.GroupScheme.GlobalModelOverInt
 public import FLT.GroupScheme.HopfDifferentials
 public import FLT.GroupScheme.HopfPointCongruence
 public import FLT.GroupScheme.HopfPoints
+public import FLT.GroupScheme.HopfShear
+public import FLT.GroupScheme.HopfSpecialFiberFreeness
+public import FLT.GroupScheme.HopfTorsor
+public import FLT.GroupScheme.HopfTorsorFree
 public import FLT.GroupScheme.IntegralCoordinateAlgebra
 public import FLT.GroupScheme.IntegralEtaleAlgebra
 public import FLT.GroupScheme.IntegralEtaleModel
@@ -345,6 +350,7 @@ public import FLT.GroupScheme.PadicPatchingArithmetic
 public import FLT.GroupScheme.PadicPatchingRings
 public import FLT.GroupScheme.PadicTensorPatching
 public import FLT.GroupScheme.PointDifferentials
+public import FLT.GroupScheme.PrincipalFiberFreeness
 public import FLT.GroupScheme.QuadraticDescent
 public import FLT.GroupScheme.QuadraticTwist
 public import FLT.GroupScheme.QuadraticTwistCoassociativity
@@ -357,6 +363,7 @@ public import FLT.GroupScheme.QuadraticTwistMaps
 public import FLT.GroupScheme.QuadraticTwistMonoidal
 public import FLT.GroupScheme.QuadraticTwistPoints
 public import FLT.GroupScheme.QuadraticTwistTensor
+public import FLT.GroupScheme.QuotientFiberFreeness
 public import FLT.GroupScheme.RaynaudClosureFactorization
 public import FLT.GroupScheme.RaynaudConnectedQuotient
 public import FLT.GroupScheme.RaynaudDiagonalizableExtension
@@ -376,13 +383,17 @@ public import FLT.GroupScheme.RaynaudModelArithmetic
 public import FLT.GroupScheme.RaynaudNakayamaDescent
 public import FLT.GroupScheme.RaynaudOrderThreeFiltration
 public import FLT.GroupScheme.RaynaudProductExtension
+public import FLT.GroupScheme.RaynaudQuotientFiberFreeness
+public import FLT.GroupScheme.RaynaudQuotientFlatness
 public import FLT.GroupScheme.RaynaudQuotientFunctoriality
+public import FLT.GroupScheme.RaynaudQuotientSpecialFiber
 public import FLT.GroupScheme.RaynaudRankThreeClassification
 public import FLT.GroupScheme.RaynaudRankThreeExtension
 public import FLT.GroupScheme.RaynaudRigidity
 public import FLT.GroupScheme.RaynaudTorsionFiltration
 public import FLT.GroupScheme.RaynaudUnramifiedKernel
 public import FLT.GroupScheme.RaynaudUnramifiedQuotient
+public import FLT.GroupScheme.SemilocalFreeDescent
 public import FLT.HaarMeasure.FiniteAdeleRing
 public import FLT.HaarMeasure.HaarChar.AddEquiv
 public import FLT.HaarMeasure.HaarChar.AdeleRing
