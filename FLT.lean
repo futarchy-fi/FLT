@@ -495,6 +495,7 @@ public import FLT.GroupScheme.ReverseExtHypothesis
 public import FLT.GroupScheme.SemilocalFreeDescent
 public import FLT.GroupScheme.SortedFiltrationCoefficientQuotient
 public import FLT.GroupScheme.SortedFiltrationFunctoriality
+public import FLT.GroupScheme.StableSubgroupExtension
 public import FLT.GroupScheme.ThreeAdicLocalPresentation
 public import FLT.GroupScheme.ThreeAdicModelBaseChange
 public import FLT.GroupScheme.ThreeTorsionEtaleDescent
