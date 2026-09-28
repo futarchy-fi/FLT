@@ -281,8 +281,25 @@ the open and the coefficient sheaf. It also compares open-wise Ext H0 with secti
 [CechFreeResolution.lean](../FLT/Mazur/CechFreeResolution.lean) constructs the
 augmented free-sheaf chain complex, its constant-integer term, coproduct terms,
 and signed differential and augmentation formulas.
-Despite the filename, exactness of this free-sheaf complex is not proved here.
-That obligation and the higher-degree Ext comparison remain open.
+[CechFreeStalkInsertion.lean](../FLT/Mazur/CechFreeStalkInsertion.lean)
+constructs an extra degeneracy by choosing a cover member containing the point.
+[CechFreeStalkExactAll.lean](../FLT/Mazur/CechFreeStalkExactAll.lean) proves
+exactness on every stalk in every degree, including the augmented integer term.
+[CechFreeExact.lean](../FLT/Mazur/CechFreeExact.lean) then proves exactness of the
+actual free-sheaf complex for any open cover.
+
+[CechInjectiveAcyclic.lean](../FLT/Mazur/CechInjectiveAcyclic.lean) identifies
+Hom from free terms with Cech cochains, including the alternating differentials.
+It proves that injective coefficient sheaves have zero positive Cech homology.
+[CechAcyclicCokernel.lean](../FLT/Mazur/CechAcyclicCokernel.lean) proves that
+cover acyclicity persists under cokernels of embeddings into injectives.
+Vanishing of H1 on intersections implies surjectivity on sections, yielding
+degreewise short exact Cech complexes under the explicit acyclicity hypothesis.
+The higher-degree Ext comparison and geometric cohomology finiteness remain open.
+
+[MazurCechAcyclic.lean](../FLTTest/MazurCechAcyclic.lean) audits the contraction,
+stalkwise and sheaf exactness, injective vanishing and acyclic-cokernel endpoints.
+No new arithmetic assumption is introduced or existing FLT arithmetic input removed.
 
 [MazurCechResolution.lean](../FLTTest/MazurCechResolution.lean) audits the
 principal-cover exactness, natural categorical H0 comparison, free-sheaf
@@ -295,7 +312,8 @@ stalk of the free sheaf on an open as the free abelian group on membership.
 The comparison is natural in inclusions, agrees with local generators, and
 gives the stalks and differential formulas of the free Cech terms.
 In particular, `freeOpenStalk_isZero_of_notMem` proves vanishing outside the open.
-The contraction and exactness of the free-sheaf complex remain separate work.
+The contraction and exactness of the free-sheaf complex are now proved by
+the modules described above.
 
 [ProjectiveLineCharts.lean](../FLT/Mazur/ProjectiveLineCharts.lean) constructs
 the scheme by gluing two affine lines along the Laurent spectrum with inverse
