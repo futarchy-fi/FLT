@@ -365,6 +365,7 @@ public import FLT.GroupScheme.FontaineCubicSystemLifting
 public import FLT.GroupScheme.FontaineDifferentHypothesis
 public import FLT.GroupScheme.FontaineDividedPowers
 public import FLT.GroupScheme.FontaineJacobian
+public import FLT.GroupScheme.FontaineModelProperty
 public import FLT.GroupScheme.FontaineNewtonStep
 public import FLT.GroupScheme.FontainePointFieldEmbedding
 public import FLT.GroupScheme.FontainePointLifts
