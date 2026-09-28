@@ -400,6 +400,7 @@ public import FLT.GroupScheme.FontaineCorrectedObstruction
 public import FLT.GroupScheme.FontaineCubicLifting
 public import FLT.GroupScheme.FontaineCubicNewton
 public import FLT.GroupScheme.FontaineCubicSystemLifting
+public import FLT.GroupScheme.FontaineDifferentBound
 public import FLT.GroupScheme.FontaineDifferentHypothesis
 public import FLT.GroupScheme.FontaineDifferentReduction
 public import FLT.GroupScheme.FontaineDividedPowers
