@@ -322,6 +322,7 @@ public import FLT.GroupScheme.CartierDualMaps
 public import FLT.GroupScheme.CartierDualPairing
 public import FLT.GroupScheme.CartierDualPointFiltration
 public import FLT.GroupScheme.CartierDualSpecialFiber
+public import FLT.GroupScheme.CartierDualTorsor
 public import FLT.GroupScheme.ConstantCartierDual
 public import FLT.GroupScheme.ConstantCoordinates
 public import FLT.GroupScheme.ConstantFiltrationPurity
