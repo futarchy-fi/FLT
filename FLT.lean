@@ -612,6 +612,7 @@ public import FLT.Mathlib.RingTheory.DedekindDomain.AdicValuation
 public import FLT.Mathlib.RingTheory.DedekindDomain.FiniteAdeleRing
 public import FLT.Mathlib.RingTheory.DedekindDomain.Ideal.Lemmas
 public import FLT.Mathlib.RingTheory.DedekindDomain.Invertible
+public import FLT.Mathlib.RingTheory.DifferentBaseRing
 public import FLT.Mathlib.RingTheory.DifferentPowerBasis
 public import FLT.Mathlib.RingTheory.DiscreteValuationRing.AdjoinRoot
 public import FLT.Mathlib.RingTheory.DiscreteValuationRing.Monogenic
