@@ -853,6 +853,7 @@ public import FLT.Mazur.FamilyTransport
 public import FLT.Mazur.IntegralBase
 public import FLT.Mazur.OverPoints
 public import FLT.Mazur.RelativeCartier
+public import FLT.Mazur.RelativeCartierBaseChange
 public import FLT.MazurChapter.AdmissibleGroupSchemes
 public import FLT.MazurW
 public import FLT.MazurWOfPrimeTorsion
