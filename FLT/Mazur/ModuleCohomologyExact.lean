@@ -11,7 +11,8 @@ public import Mathlib.Algebra.Homology.ShortComplex.ModuleCat
 public import Mathlib.RingTheory.Finiteness.Finsupp
 public import Mathlib.RingTheory.Noetherian.Basic
 
-/-!+# Exact sequences for module-coefficient cohomology
+/-!
+# Exact sequences for module-coefficient cohomology
 
 Short exactness is required after forgetting to abelian sheaves. The connecting
 maps are linear because coefficient multiplication is an endomorphism of the
