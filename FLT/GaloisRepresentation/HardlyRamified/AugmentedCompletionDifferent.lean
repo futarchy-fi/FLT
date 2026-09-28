@@ -58,7 +58,7 @@ theorem FiniteFlatObject.completion_normalizedDifferent_eq
 /-- Fontaine's stated local hypothesis bounds the completed different at every prime
 above three in the augmented field. -/
 theorem augmentedField_completion_normalizedDifferent_lt
-    (hF : fontaine_different_bound_killed_three)
+    (hF : FontaineDifferentBoundKilledThree)
     {H : FiniteFlatObject ZInvTwo} (hs : Simple H) (hD : InCategoryD H)
     (w : threeAdicPointFieldPlace.Extension (𝓞 (AugmentedField H))) :
     pointFieldCompletionNormalizedDifferent (augmentedObject H) w < (3 / 2 : ℚ) := by
@@ -78,7 +78,7 @@ theorem FiniteFlatObject.exists_completion_normalizedDifferent_eq
 /-- Fontaine's stated local hypothesis bounds the actual different of an augmented-field
 completion, with no global different comparison assumed. -/
 theorem augmentedField_exists_completion_normalizedDifferent_lt
-    (hF : fontaine_different_bound_killed_three)
+    (hF : FontaineDifferentBoundKilledThree)
     {H : FiniteFlatObject ZInvTwo} (hs : Simple H) (hD : InCategoryD H) :
     ∃ w : threeAdicPointFieldPlace.Extension (𝓞 (AugmentedField H)),
       pointFieldCompletionNormalizedDifferent (augmentedObject H) w < (3 / 2 : ℚ) := by
