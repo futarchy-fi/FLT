@@ -322,6 +322,7 @@ public import FLT.GroupScheme.HopfPoints
 public import FLT.GroupScheme.HopfShear
 public import FLT.GroupScheme.HopfSpecialFiberFreeness
 public import FLT.GroupScheme.HopfTorsor
+public import FLT.GroupScheme.HopfTorsorDescent
 public import FLT.GroupScheme.HopfTorsorFree
 public import FLT.GroupScheme.IntegralCoordinateAlgebra
 public import FLT.GroupScheme.IntegralEtaleAlgebra
@@ -381,6 +382,7 @@ public import FLT.GroupScheme.RaynaudInversionBasis
 public import FLT.GroupScheme.RaynaudKernelExactness
 public import FLT.GroupScheme.RaynaudModelArithmetic
 public import FLT.GroupScheme.RaynaudNakayamaDescent
+public import FLT.GroupScheme.RaynaudOrderNineExtension
 public import FLT.GroupScheme.RaynaudOrderThreeFiltration
 public import FLT.GroupScheme.RaynaudProductExtension
 public import FLT.GroupScheme.RaynaudQuotientFiberFreeness
@@ -391,6 +393,7 @@ public import FLT.GroupScheme.RaynaudRankThreeClassification
 public import FLT.GroupScheme.RaynaudRankThreeExtension
 public import FLT.GroupScheme.RaynaudRigidity
 public import FLT.GroupScheme.RaynaudTorsionFiltration
+public import FLT.GroupScheme.RaynaudTorsorDescent
 public import FLT.GroupScheme.RaynaudUnramifiedKernel
 public import FLT.GroupScheme.RaynaudUnramifiedQuotient
 public import FLT.GroupScheme.SemilocalFreeDescent
