@@ -212,7 +212,8 @@ principal-open Cech complex and augmentation using
 [TildePrincipalOpen.lean](../FLT/Mazur/TildePrincipalOpen.lean). It proves
 injectivity of the augmentation for a spanning family and that exactness of
 a complex can be checked after principal localization. Exactness of this Cech
-complex in all degrees still requires the localized contraction and its transport.
+complex in all degrees still requires assembling the localization and split-cover
+results described below.
 Finite-dimensionality of positive-degree cohomology and genus remain open.
 
 ## Positive divisor sheaves and restriction (FC10d/f)
@@ -224,11 +225,43 @@ rank one, and identifies O(0) with the structure module.
 identifies restriction of the ideal module with the pulled-back ideal module.
 It then constructs restriction of O(D), matches the affine dual-ideal transport,
 and proves identity and composition compatibility on nested opens.
-The global sum/tensor comparison and ampleness remain separate obligations.
+The global sum/tensor isomorphism is proved in the module described below;
+its open-restriction and unit coherence, and ampleness, remain separate obligations.
 
 [MazurCohomologyDivisor.lean](../FLTTest/MazurCohomologyDivisor.lean) audits
 these cohomology, initial Cech and divisor-restriction endpoints against the
 three standard Lean axioms. The final FLT arithmetic inputs are unchanged.
+
+## Affine finiteness, split Cech covers and the global divisor sum
+
+[AffineCoherent.lean](../FLT/Mazur/AffineCoherent.lean) proves that a locally
+finitely presented module sheaf on an affine scheme has finite global sections.
+Over a Noetherian ring, such sheaves are exactly the tildes of finite modules,
+using Mathlib's actual local finite presentation predicate and canonical counit.
+This is not yet a finiteness theorem for positive-degree cohomology.
+
+[LocalizationCechCompare.lean](../FLT/Mazur/LocalizationCechCompare.lean)
+identifies localization of finite Cech terms with sections on intersections
+inside a principal open. The comparisons commute with coefficient maps,
+differentials and augmentation.
+[LocalizationCechSplit.lean](../FLT/Mazur/LocalizationCechSplit.lean) constructs
+a contraction when one defining function is a unit, proving exactness of the
+augmented complex, vanishing of positive homology and the degree-zero comparison
+in that case. Assembly for arbitrary finite spanning principal families remains open.
+
+[CechSheafH.lean](../FLT/Mazur/CechSheafH.lean) identifies Ext-based degree-zero
+cohomology with compatible section families for an open cover. The equivalence
+is natural in the coefficient sheaf and respects coefficient multiplication.
+The categorical Cech-homology adapter and comparison in higher degrees remain open.
+
+[DivisorLineBundleSum.lean](../FLT/Mazur/DivisorLineBundleSum.lean) glues the
+Cartier-chart sum comparisons to the actual sheaf isomorphism
+O(D) tensor O(E) ≅ O(D+E), with the product-evaluation formula.
+Compatibility with the open-subscheme restriction comparisons and the empty
+divisor is still separate work; this does not discharge all of FC10.
+
+[MazurAffineCechSum.lean](../FLTTest/MazurAffineCechSum.lean) audits these endpoints
+against the three standard Lean axioms. No arithmetic FLT input is removed.
 
 ## Sources and the two different kinds of curve
 
