@@ -35,6 +35,7 @@ public import FLT.AbsoluteGaloisGroup.LocalCompositum
 public import FLT.AbsoluteGaloisGroup.TameCharacter
 public import FLT.AbsoluteGaloisGroup.Unramified
 public import FLT.Assembly.CharacterInputs
+public import FLT.Assembly.CharacterModelPurity
 public import FLT.Assembly.Final
 public import FLT.Assembly.Inputs
 public import FLT.Assembly.Mazur
