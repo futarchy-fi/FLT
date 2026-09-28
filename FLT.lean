@@ -426,6 +426,7 @@ public import FLT.GroupScheme.LocalHenselian
 public import FLT.GroupScheme.LocalHopfLocalizedPresentation
 public import FLT.GroupScheme.LocalHopfPresentation
 public import FLT.GroupScheme.LocalInertiaCriticalExponent
+public import FLT.GroupScheme.LocalInertiaMaximum
 public import FLT.GroupScheme.LocalInertiaPolynomial
 public import FLT.GroupScheme.LocalIntegralPowerBasis
 public import FLT.GroupScheme.LocalPerturbedWitness
