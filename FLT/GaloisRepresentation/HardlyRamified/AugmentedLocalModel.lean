@@ -29,21 +29,21 @@ open scoped TensorProduct
 namespace ThreeAdicPlan
 
 /-- Two is invertible in the three-adic coefficient ring. -/
-local instance : Fact (¬ ((3 : ℕ) : ℤ) ∣ 2) := ⟨by norm_num⟩
+local instance augmentedLocalModelInst1 : Fact (¬ ((3 : ℕ) : ℤ) ∣ 2) := ⟨by norm_num⟩
 
 /-- The localization map to the three-adic integers. -/
-local instance : Algebra ZInvTwo ℤ_[3] :=
+local instance augmentedAlgebraZInvTwoPadicInt : Algebra ZInvTwo ℤ_[3] :=
   (PadicPatching.baseToLocal 3 2).toAlgebra
 
 /-- The induced map to the three-adic field. -/
-local instance : Algebra ZInvTwo ℚ_[3] :=
+local instance augmentedAlgebraZInvTwoPadic : Algebra ZInvTwo ℚ_[3] :=
   Algebra.compHom ℚ_[3] (PadicPatching.baseToLocal 3 2)
 
 /-- The localization maps are compatible with the integral inclusion. -/
-local instance : IsScalarTower ZInvTwo ℤ_[3] ℚ_[3] := zInvTwo_scalarTower _ _
+local instance augmentedLocalModelInst2 : IsScalarTower ZInvTwo ℤ_[3] ℚ_[3] := zInvTwo_scalarTower _ _
 
 /-- The rational and integral embeddings of the coefficient ring agree over `ℚ₃`. -/
-local instance : IsScalarTower ZInvTwo ℚ ℚ_[3] := zInvTwo_scalarTower _ _
+local instance augmentedLocalModelInst3 : IsScalarTower ZInvTwo ℚ ℚ_[3] := zInvTwo_scalarTower _ _
 
 /-- The actual scalar extension of a global model to the three-adic integers. -/
 def FiniteFlatObject.localModelAtThree (H : FiniteFlatObject ZInvTwo) :
