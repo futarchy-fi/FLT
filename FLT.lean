@@ -271,6 +271,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.TowerDegreeOne
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.W2Statement
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.WeakChebotarev
 public import FLT.GaloisRepresentation.HardlyRamified.CoefficientQuotient
+public import FLT.GaloisRepresentation.HardlyRamified.CoordinateChange
 public import FLT.GaloisRepresentation.HardlyRamified.Defs
 public import FLT.GaloisRepresentation.HardlyRamified.DualPointPurity
 public import FLT.GaloisRepresentation.HardlyRamified.DyadicThreeGroupInertia
