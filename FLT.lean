@@ -297,6 +297,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.TrivialPrimeFiltrationExte
 public import FLT.GlobalLanglandsConjectures.GLnDefs
 public import FLT.GlobalLanglandsConjectures.GLzero
 public import FLT.GroupScheme.BialgebraBaseChange
+public import FLT.GroupScheme.ConstantFiltrationPurity
 public import FLT.GroupScheme.ConstantFiniteFlat
 public import FLT.GroupScheme.CoordinateOrder
 public import FLT.GroupScheme.EtaleInertia
