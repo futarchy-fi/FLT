@@ -357,6 +357,7 @@ public import FLT.GroupScheme.FiniteFlatSubobject
 public import FLT.GroupScheme.FiniteFreeAdicComplete
 public import FLT.GroupScheme.FiniteHopfFreeness
 public import FLT.GroupScheme.FontaineConvolutionApproximation
+public import FLT.GroupScheme.FontaineConvolutionLifting
 public import FLT.GroupScheme.FontaineConvolutionPoint
 public import FLT.GroupScheme.FontaineCubicLifting
 public import FLT.GroupScheme.FontaineCubicNewton
