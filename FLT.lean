@@ -360,6 +360,7 @@ public import FLT.GroupScheme.FontaineCubicLifting
 public import FLT.GroupScheme.FontaineCubicNewton
 public import FLT.GroupScheme.FontaineCubicSystemLifting
 public import FLT.GroupScheme.FontaineDifferentHypothesis
+public import FLT.GroupScheme.FontaineDifferentReduction
 public import FLT.GroupScheme.FontaineDividedPowers
 public import FLT.GroupScheme.FontaineJacobian
 public import FLT.GroupScheme.FontaineNewtonStep
