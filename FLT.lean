@@ -237,6 +237,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.AugmentedFieldUnramifiedTw
 public import FLT.GaloisRepresentation.HardlyRamified.B5Inputs
 public import FLT.GaloisRepresentation.HardlyRamified.CategoryD
 public import FLT.GaloisRepresentation.HardlyRamified.CategoryDInertia
+public import FLT.GaloisRepresentation.HardlyRamified.CategoryDIntegralModels
 public import FLT.GaloisRepresentation.HardlyRamified.CategoryDPointCharacters
 public import FLT.GaloisRepresentation.HardlyRamified.CategoryDSexticQuotient
 public import FLT.GaloisRepresentation.HardlyRamified.CategoryDSimple
@@ -330,6 +331,7 @@ public import FLT.GroupScheme.CartierDualHopf
 public import FLT.GroupScheme.CartierDualInvariants
 public import FLT.GroupScheme.CartierDualKernelInclusion
 public import FLT.GroupScheme.CartierDualMaps
+public import FLT.GroupScheme.CartierDualModelIso
 public import FLT.GroupScheme.CartierDualPairing
 public import FLT.GroupScheme.CartierDualPointFiltration
 public import FLT.GroupScheme.CartierDualSpecialFiber
@@ -338,16 +340,20 @@ public import FLT.GroupScheme.ConstantCartierDual
 public import FLT.GroupScheme.ConstantCoordinates
 public import FLT.GroupScheme.ConstantFiltrationPurity
 public import FLT.GroupScheme.ConstantFiniteFlat
+public import FLT.GroupScheme.ConstantModelIdentification
 public import FLT.GroupScheme.ConvolutionBaseChange
 public import FLT.GroupScheme.CoordinateOrder
+public import FLT.GroupScheme.CyclotomicModelIdentification
 public import FLT.GroupScheme.DiagonalizableFiniteFlat
 public import FLT.GroupScheme.DiagonalizablePointPurity
 public import FLT.GroupScheme.EtaleInertia
+public import FLT.GroupScheme.EtaleModelIdentification
 public import FLT.GroupScheme.EtaleModelUnramified
 public import FLT.GroupScheme.EtaleOrder
 public import FLT.GroupScheme.FiniteFlat
 public import FLT.GroupScheme.FiniteFlatDifferentials
 public import FLT.GroupScheme.FiniteFlatFiltration
+public import FLT.GroupScheme.FiniteFlatIso
 public import FLT.GroupScheme.FiniteFlatSubobject
 public import FLT.GroupScheme.FiniteFreeAdicComplete
 public import FLT.GroupScheme.FiniteHopfFreeness
@@ -411,6 +417,7 @@ public import FLT.GroupScheme.LocalIntegralPowerBasis
 public import FLT.GroupScheme.LocalPointField
 public import FLT.GroupScheme.ModelPoints
 public import FLT.GroupScheme.MultiplicativeFiltrationPurity
+public import FLT.GroupScheme.OrderThreeModelIdentification
 public import FLT.GroupScheme.PadicAlgebraPatching
 public import FLT.GroupScheme.PadicComponentLifting
 public import FLT.GroupScheme.PadicConnectedComponents
@@ -478,6 +485,8 @@ public import FLT.GroupScheme.RaynaudUnramifiedKernel
 public import FLT.GroupScheme.RaynaudUnramifiedQuotient
 public import FLT.GroupScheme.SemilocalFreeDescent
 public import FLT.GroupScheme.ThreeAdicLocalPresentation
+public import FLT.GroupScheme.ThreeAdicModelBaseChange
+public import FLT.GroupScheme.ThreeTorsionEtaleDescent
 public import FLT.HaarMeasure.FiniteAdeleRing
 public import FLT.HaarMeasure.HaarChar.AddEquiv
 public import FLT.HaarMeasure.HaarChar.AdeleRing
