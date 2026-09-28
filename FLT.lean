@@ -676,6 +676,7 @@ public import FLT.Mathlib.RingTheory.Spectrum.Prime.RingHom
 public import FLT.Mathlib.RingTheory.TensorProduct.Basis
 public import FLT.Mathlib.RingTheory.TensorProduct.Pi
 public import FLT.Mathlib.RingTheory.Unramified.LocalRing
+public import FLT.Mathlib.RingTheory.Unramified.PowerBasis
 public import FLT.Mathlib.RingTheory.Valuation.Discrete.IsDiscreteValuationRing
 public import FLT.Mathlib.RingTheory.Valuation.PolynomialObstruction
 public import FLT.Mathlib.RingTheory.Valuation.RootLifting
