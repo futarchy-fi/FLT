@@ -39,6 +39,10 @@ variable {R A B : Type u} [CommRing R] [CommRing A] [CommRing B]
 /-- Forgetting convolution gives the ordinary linear dual. -/
 def linearEquiv : CartierDual R A ≃ₗ[R] Module.Dual R A := WithConv.linearEquiv R _
 
+/-- Forgetting convolution does not change evaluation of a functional. -/
+@[simp] theorem linearEquiv_apply (φ : CartierDual R A) (a : A) :
+    linearEquiv φ a = φ a := rfl
+
 /-- A finite projective module has finite convolution dual. -/
 instance [Module.Finite R A] [Module.Projective R A] :
     Module.Finite R (CartierDual R A) :=
@@ -53,6 +57,14 @@ instance [Module.Finite R A] [Module.Projective R A] :
 algebra is finite and flat. -/
 instance [Module.Finite R A] [Module.Projective R A] [Coalgebra.IsCocomm R A] :
     IsFiniteFlat R (CartierDual R A) := ⟨⟩
+
+/-- Over a noetherian base, finite flat coordinate algebras are projective,
+so their integral convolution duals are finite flat as well. -/
+theorem isFiniteFlat_of_noetherian [IsNoetherianRing R] [IsFiniteFlat R A]
+    [Coalgebra.IsCocomm R A] : IsFiniteFlat R (CartierDual R A) := by
+  let : Module.FinitePresentation R A := Module.finitePresentation_of_finite R A
+  let : Module.Projective R A := Module.Flat.projective_of_finitePresentation
+  infer_instance
 
 /-- Dualizing an integral Hopf map is precomposition of linear functionals. -/
 def map [Coalgebra.IsCocomm R A] [Coalgebra.IsCocomm R B] (f : A →ₐc[R] B) :
