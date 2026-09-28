@@ -866,6 +866,7 @@ public import FLT.Mazur.GenericFibers
 public import FLT.Mazur.IdealModuleSheaf
 public import FLT.Mazur.IntegralBase
 public import FLT.Mazur.LocalizationCech
+public import FLT.Mazur.LocalizationCechCompare
 public import FLT.Mazur.ModuleCohomology
 public import FLT.Mazur.ModuleSheafDual
 public import FLT.Mazur.ModuleSheafDualSheaf
