@@ -588,6 +588,7 @@ public import FLT.Mathlib.RingTheory.DiscreteValuationRing.Separable
 public import FLT.Mathlib.RingTheory.Discriminant
 public import FLT.Mathlib.RingTheory.GeneratorsDifferentialRelations
 public import FLT.Mathlib.RingTheory.Ideal.Quotient.Basic
+public import FLT.Mathlib.RingTheory.IdealMultiplicityMap
 public import FLT.Mathlib.RingTheory.LocalRing.Defs
 public import FLT.Mathlib.RingTheory.LocalRing.MaximalIdeal.Basic
 public import FLT.Mathlib.RingTheory.Localization.BaseChange
