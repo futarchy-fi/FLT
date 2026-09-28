@@ -395,6 +395,7 @@ public import FLT.GroupScheme.LocalDifferentBounds
 public import FLT.GroupScheme.LocalDifferentValuation
 public import FLT.GroupScheme.LocalIntegralPowerBasis
 public import FLT.GroupScheme.LocalPointField
+public import FLT.GroupScheme.ModelBaseChange
 public import FLT.GroupScheme.ModelPoints
 public import FLT.GroupScheme.MultiplicativeFiltrationPurity
 public import FLT.GroupScheme.PadicAlgebraPatching
