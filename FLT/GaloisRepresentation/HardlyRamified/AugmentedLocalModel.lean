@@ -40,7 +40,8 @@ local instance augmentedAlgebraZInvTwoPadic : Algebra ZInvTwo ℚ_[3] :=
   Algebra.compHom ℚ_[3] (PadicPatching.baseToLocal 3 2)
 
 /-- The localization maps are compatible with the integral inclusion. -/
-local instance augmentedLocalModelInst2 : IsScalarTower ZInvTwo ℤ_[3] ℚ_[3] := zInvTwo_scalarTower _ _
+local instance augmentedLocalModelInst2 : IsScalarTower ZInvTwo ℤ_[3] ℚ_[3] :=
+  zInvTwo_scalarTower _ _
 
 /-- The rational and integral embeddings of the coefficient ring agree over `ℚ₃`. -/
 local instance augmentedLocalModelInst3 : IsScalarTower ZInvTwo ℚ ℚ_[3] := zInvTwo_scalarTower _ _
