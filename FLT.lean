@@ -327,6 +327,7 @@ public import FLT.GroupScheme.IntegralEtaleModelRamification
 public import FLT.GroupScheme.IntegralGroupLike
 public import FLT.GroupScheme.IntegralHopfAlgebra
 public import FLT.GroupScheme.IntegralHopfPoints
+public import FLT.GroupScheme.InvariantDerivation
 public import FLT.GroupScheme.KummerAlgebra
 public import FLT.GroupScheme.KummerComultiplication
 public import FLT.GroupScheme.KummerHopf
