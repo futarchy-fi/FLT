@@ -42,18 +42,18 @@ theorem B3_of_torsionExclusion
 end FLT.Bosses
 
 /-- The rational torsion and characteristic-zero inputs imply Fermat's Last Theorem. -/
-theorem flt_of_inputs
+theorem flt_of_characteristicZero_inputs
     (hmazur : MazurTorsionExclusion)
     (hlift : HardlyRamifiedLifting) (hfamily : HardlyRamifiedCompatibleFamilies)
     (hthree : ThreeAdicFrobeniusTrace) : FermatLastTheorem :=
   FLT.Bosses.B2_implies_B1 (FLT.Bosses.B3_implies_B2
     (FLT.Bosses.B3_of_torsionExclusion hmazur (FLT.Bosses.B4_of_inputs hlift hfamily hthree)))
 
-/-- The positive-natural form of Fermat's Last Theorem from the four remaining inputs. -/
-theorem PNat.pow_add_pow_ne_pow_of_inputs
+/-- The positive-natural statement from rational torsion and characteristic-zero inputs. -/
+theorem PNat.pow_add_pow_ne_pow_of_characteristicZero_inputs
     (hmazur : MazurTorsionExclusion)
     (hlift : HardlyRamifiedLifting) (hfamily : HardlyRamifiedCompatibleFamilies)
     (hthree : ThreeAdicFrobeniusTrace)
     (x y z : ℕ+) (n : ℕ) (hn : n > 2) : x ^ n + y ^ n ≠ z ^ n :=
   PNat.pow_add_pow_ne_pow_of_FermatLastTheorem
-    (flt_of_inputs hmazur hlift hfamily hthree) x y z n hn
+    (flt_of_characteristicZero_inputs hmazur hlift hfamily hthree) x y z n hn
