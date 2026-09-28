@@ -34,7 +34,7 @@ theorem galoisStable_nsmul_ker (W : FiniteContinuousGaloisModule) (n : ℕ) :
     congrArg f hw
 
 /-- A simple object of category D is annihilated by three. -/
-theorem simple_D_killed_three (H : FF ZInvTwo) (hs : Simple H) (hD : InCategoryD H) :
+theorem simple_D_killed_three (H : FiniteFlatObject ZInvTwo) (hs : Simple H) (hD : InCategoryD H) :
     KilledBy 3 H := by
   let : Nontrivial H.points := hs.1
   let : Fact (Nat.Prime 3) := ⟨Nat.prime_three⟩
