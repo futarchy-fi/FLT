@@ -3,6 +3,7 @@ import FLTTest.ExponentRebase
 import FLTTest.FLTTest
 import FLTTest.MathlibCompatibility
 import FLTTest.MazurAffineCechSum
+import FLTTest.MazurCechAcyclic
 import FLTTest.MazurCechResolution
 import FLTTest.MazurCohomologyDivisor
 import FLTTest.MazurCurveFinite
