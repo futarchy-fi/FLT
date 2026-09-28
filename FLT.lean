@@ -308,6 +308,7 @@ public import FLT.GroupScheme.FontaineJacobian
 public import FLT.GroupScheme.FontaineNewtonStep
 public import FLT.GroupScheme.FontainePointLifts
 public import FLT.GroupScheme.FontainePointSeparation
+public import FLT.GroupScheme.FontainePresentation
 public import FLT.GroupScheme.FontaineProperty
 public import FLT.GroupScheme.FontaineQuotientValuation
 public import FLT.GroupScheme.FontaineRootCriterion
