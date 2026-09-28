@@ -201,9 +201,34 @@ In degree zero the comparison is with actual global sections, and
 `moduleScalarH0Equiv_naturality` proves compatibility with coefficient maps.
 [MazurModuleCohomology.lean](../FLTTest/MazurModuleCohomology.lean) audits
 functoriality, unit specialization and the natural degree-zero comparison.
-Long exact sequences, finite-dimensionality in positive degrees and the genus
-construction remain separate obligations; no finiteness hypothesis is silently
-turned into a geometric proof.
+[ModuleCohomologyExact.lean](../FLT/Mazur/ModuleCohomologyExact.lean) proves
+linearity of the connecting maps, exactness of the six-term segments, and
+injectivity at degree zero. Its hypothesis is short exactness of the underlying
+complex of abelian sheaves. Finiteness propagates through each adjacent
+degree pattern; this does not establish the initial geometric finiteness inputs.
+
+[LocalizationCech.lean](../FLT/Mazur/LocalizationCech.lean) constructs the actual
+principal-open Cech complex and augmentation using
+[TildePrincipalOpen.lean](../FLT/Mazur/TildePrincipalOpen.lean). It proves
+injectivity of the augmentation for a spanning family and that exactness of
+a complex can be checked after principal localization. Exactness of this Cech
+complex in all degrees still requires the localized contraction and its transport.
+Finite-dimensionality of positive-degree cohomology and genus remain open.
+
+## Positive divisor sheaves and restriction (FC10d/f)
+
+[DivisorLineBundleSheaf.lean](../FLT/Mazur/DivisorLineBundleSheaf.lean) constructs
+O(D) as the actual dual of the Cartier ideal sheaf, proves it locally free of
+rank one, and identifies O(0) with the structure module.
+[DivisorLineBundleRestrict.lean](../FLT/Mazur/DivisorLineBundleRestrict.lean)
+identifies restriction of the ideal module with the pulled-back ideal module.
+It then constructs restriction of O(D), matches the affine dual-ideal transport,
+and proves identity and composition compatibility on nested opens.
+The global sum/tensor comparison and ampleness remain separate obligations.
+
+[MazurCohomologyDivisor.lean](../FLTTest/MazurCohomologyDivisor.lean) audits
+these cohomology, initial Cech and divisor-restriction endpoints against the
+three standard Lean axioms. The final FLT arithmetic inputs are unchanged.
 
 ## Sources and the two different kinds of curve
 
