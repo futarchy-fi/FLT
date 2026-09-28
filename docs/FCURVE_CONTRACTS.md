@@ -96,8 +96,8 @@ curve remain separate obligations.
 
 ## Integrated sheaf and cohomology foundations
 
-The following modules give proved intermediate constructions, not completed
-genus or positive-divisor line-bundle packages:
+The following modules construct divisor sheaves and tensors, and provide
+intermediate results toward the genus package:
 
 - [CurveGenus.lean](../FLT/Mazur/CurveGenus.lean) compares the canonical constants
   map with actual degree-zero cohomology and proves dimension one under
@@ -108,7 +108,12 @@ genus or positive-divisor line-bundle packages:
   chart tensor comparisons, and transport along open immersions.
 - [DivisorInvertibleSheaf.lean](../FLT/Mazur/DivisorInvertibleSheaf.lean)
   proves that the actual Cartier ideal module sheaf is locally free of rank one.
-  This is the ideal (negative divisor); its dual sheaf is a separate construction.
+  This is the ideal (negative divisor).
+- [DivisorLineBundleSheaf.lean](../FLT/Mazur/DivisorLineBundleSheaf.lean) defines
+  `divisorLineBundle I hI` as the intrinsic dual of that ideal sheaf. Evaluation
+  identifies its sections on Cartier charts with the dual ideal modules and
+  intertwines sheaf restriction with `CartierChart.dualRestrict`. Dualized chart
+  trivializations prove local rank one; the unit ideal gives the structure module.
 - [ModuleSheafTensor.lean](../FLT/Mazur/ModuleSheafTensor.lean) constructs the
   sheaf tensor by sheafification and proves its bilinear universal property.
   [ModuleSheafTensorRestrict.lean](../FLT/Mazur/ModuleSheafTensorRestrict.lean)
@@ -129,19 +134,51 @@ the three standard Lean axioms.
 module-valued dual presheaf: sections on U are morphisms of module sheaves
 from the restricted module to the structure module. Restriction has proved
 identity, composition, scalar compatibility and evaluation equations.
-The sheaf condition and comparison with restriction of the resulting dual
-sheaf remain separate obligations (FC10d3).
+[ModuleSheafDualSheaf.lean](../FLT/Mazur/ModuleSheafDualSheaf.lean) proves
+the sheaf condition by gluing local linear morphisms, constructs the actual
+dual sheaf, and proves contravariance and compatibility with open restriction
+(FC10d3). The Cartier comparison in `DivisorLineBundleSheaf.lean` completes FC10d;
+tensor/product and general pullback comparisons remain separate obligations.
+
+FC10d checked 2026-09-28 18:29 UTC: `lake build FLT.Mazur.DivisorLineBundleSheaf`,
+`lake build FLT` and `lake lint -- --no-build FLT` passed without warnings.
 
 [ModuleSheafTensorAffine.lean](../FLT/Mazur/ModuleSheafTensorAffine.lean) proves
 localization comparisons on basic opens of Spec R for actual quasi-coherent
 module sheaves, without requiring free section modules. The basic-open
 tensor is linearly equivalent to sections of the tilde of the global tensor.
 The canonical map from that tilde to the existing sheaf tensor agrees with
-the sheafification unit and pure tensors. Its invertibility and transport
-to arbitrary affine opens remain separate obligations; they are not assumed.
+the sheafification unit and pure tensors.
+[ModuleSheafTensorTilde.lean](../FLT/Mazur/ModuleSheafTensorTilde.lean) proves
+that map invertible using the basic-open basis and sheafification.
+[ModuleSheafTensorAffineOpen.lean](../FLT/Mazur/ModuleSheafTensorAffineOpen.lean)
+then transports the comparison to every affine open: sections of the tensor
+are canonically the tensor of sections for quasi-coherent inputs, including
+locally free sheaves of any rank. Both pure-tensor equations are proved;
+no global freeness of the section modules is assumed (FC10e).
 
 [MazurDualLocalization.lean](../FLTTest/MazurDualLocalization.lean) audits the
 presheaf, restriction coherence, localization and canonical comparison endpoints.
+[MazurDualTensorSheaf.lean](../FLTTest/MazurDualTensorSheaf.lean) additionally
+checks that the actual dual sheaf, its restriction isomorphism, and the affine
+tensor equivalences depend only on the three standard Lean axioms.
+These results do not prove divisor-sum/tensor compatibility or ampleness.
+
+## Cohomology with module coefficients (FC08-A1)
+
+[ModuleCohomology.lean](../FLT/Mazur/ModuleCohomology.lean) constructs
+Ext-based cohomology for an actual module sheaf, with its global-section action
+and scalar action through the specified morphism to Spec k. Coefficient maps
+induce k-linear cohomology maps, with identity and composition proved.
+The unit coefficient recovers `ScalarH` by a linear equivalence.
+
+In degree zero the comparison is with actual global sections, and
+`moduleScalarH0Equiv_naturality` proves compatibility with coefficient maps.
+[MazurModuleCohomology.lean](../FLTTest/MazurModuleCohomology.lean) audits
+functoriality, unit specialization and the natural degree-zero comparison.
+Long exact sequences, finite-dimensionality in positive degrees and the genus
+construction remain separate obligations; no finiteness hypothesis is silently
+turned into a geometric proof.
 
 ## Sources and the two different kinds of curve
 

@@ -856,6 +856,7 @@ public import FLT.Mazur.CurveGenus
 public import FLT.Mazur.CuspCollision
 public import FLT.Mazur.DivisorInvertibleSheaf
 public import FLT.Mazur.DivisorLineBundle
+public import FLT.Mazur.DivisorLineBundleSheaf
 public import FLT.Mazur.DivisorRestrictCoherence
 public import FLT.Mazur.EtaleCoordinate
 public import FLT.Mazur.EtaleDimGe
@@ -865,10 +866,14 @@ public import FLT.Mazur.FamilyTransport
 public import FLT.Mazur.GenericFibers
 public import FLT.Mazur.IdealModuleSheaf
 public import FLT.Mazur.IntegralBase
+public import FLT.Mazur.ModuleCohomology
 public import FLT.Mazur.ModuleSheafDual
+public import FLT.Mazur.ModuleSheafDualSheaf
 public import FLT.Mazur.ModuleSheafTensor
 public import FLT.Mazur.ModuleSheafTensorAffine
+public import FLT.Mazur.ModuleSheafTensorAffineOpen
 public import FLT.Mazur.ModuleSheafTensorRestrict
+public import FLT.Mazur.ModuleSheafTensorTilde
 public import FLT.Mazur.OverPoints
 public import FLT.Mazur.RationalFibers
 public import FLT.Mazur.RelativeCartier
@@ -884,6 +889,7 @@ public import FLT.Mazur.SmoothDimension
 public import FLT.Mazur.SmoothDimensionBound
 public import FLT.Mazur.SmoothOpenSectionCartier
 public import FLT.Mazur.SmoothSectionCartier
+public import FLT.Mazur.TildePrincipalOpen
 public import FLT.MazurChapter.AdmissibleGroupSchemes
 public import FLT.MazurW
 public import FLT.MazurWOfPrimeTorsion
