@@ -67,7 +67,7 @@ theorem isFiniteFlat_of_noetherian [IsNoetherianRing R] [IsFiniteFlat R A]
   infer_instance
 
 /-- Dualizing an integral Hopf map is precomposition of linear functionals. -/
-def map [Coalgebra.IsCocomm R A] [Coalgebra.IsCocomm R B] (f : A →ₐc[R] B) :
+def map (f : A →ₐc[R] B) :
     CartierDual R B →ₐ[R] CartierDual R A where
   toFun φ := WithConv.toConv (φ.ofConv.comp f.toLinearMap)
   map_zero' := by rfl
@@ -85,12 +85,11 @@ def map [Coalgebra.IsCocomm R A] [Coalgebra.IsCocomm R B] (f : A →ₐc[R] B) :
     simp
 
 /-- Evaluation of the contravariant dual algebra map. -/
-@[simp] theorem map_apply [Coalgebra.IsCocomm R A] [Coalgebra.IsCocomm R B]
-    (f : A →ₐc[R] B) (φ : CartierDual R B) (a : A) : map f φ a = φ (f a) := rfl
+@[simp] theorem map_apply (f : A →ₐc[R] B) (φ : CartierDual R B) (a : A) : map f φ a = φ (f a) := rfl
 
 /-- Evaluation on group-like basis elements identifies the dual of a group
 algebra with the integral algebra of functions on the group. -/
-def groupAlgebraEquiv (R G : Type*) [CommRing R] [CommGroup G] :
+def groupAlgebraEquiv (R G : Type*) [CommRing R] :
     CartierDual R (MonoidAlgebra R G) ≃ₐ[R] (G → R) :=
   { (WithConv.linearEquiv R _).trans ((MonoidAlgebra.basis G R).constr R).symm with
     map_mul' := by
@@ -108,7 +107,7 @@ def groupAlgebraEquiv (R G : Type*) [CommRing R] [CommGroup G] :
 
 /-- The function corresponding to a dual group-algebra element is its value
 on each group-like generator. -/
-@[simp] theorem groupAlgebraEquiv_apply (R G : Type*) [CommRing R] [CommGroup G]
+@[simp] theorem groupAlgebraEquiv_apply (R G : Type*) [CommRing R]
     (φ : CartierDual R (MonoidAlgebra R G)) (g : G) :
     groupAlgebraEquiv R G φ g = φ (MonoidAlgebra.single g 1) := rfl
 
