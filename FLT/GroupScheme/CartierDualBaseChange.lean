@@ -49,9 +49,6 @@ private theorem baseChange_convMul_eval (φ ψ : CartierDual S (S ⊗[R] A)) (a 
   rw [LinearMap.convMul_apply, TensorProduct.comul_tmul, ← (ℛ R a).eq]
   simp [TensorProduct.tmul_sum]
 
-variable [Coalgebra.IsCocomm R A]
-
-omit [Coalgebra.IsCocomm R A] in
 /-- The canonical base-change comparison is multiplicative for convolution. -/
 theorem baseChangeLinearEquiv_mul (x y : S ⊗[R] CartierDual R A) :
     baseChangeLinearEquiv S (x * y) = baseChangeLinearEquiv S x * baseChangeLinearEquiv S y := by
