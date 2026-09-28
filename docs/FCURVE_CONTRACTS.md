@@ -114,6 +114,11 @@ intermediate results toward the genus package:
   identifies its sections on Cartier charts with the dual ideal modules and
   intertwines sheaf restriction with `CartierChart.dualRestrict`. Dualized chart
   trivializations prove local rank one; the unit ideal gives the structure module.
+- [DivisorLineBundleRestrict.lean](../FLT/Mazur/DivisorLineBundleRestrict.lean)
+  constructs `divisorLineBundleRestrictIso` from the actual ideal-module comparison.
+  Its affine evaluation agrees with `divisorChartTransport`. The comparisons on
+  nested opens satisfy identity and composition using `restrictFunctorId` and
+  `restrictFunctorComp` (FC10f), with no additional hypotheses.
 - [ModuleSheafTensor.lean](../FLT/Mazur/ModuleSheafTensor.lean) constructs the
   sheaf tensor by sheafification and proves its bilinear universal property.
   [ModuleSheafTensorRestrict.lean](../FLT/Mazur/ModuleSheafTensorRestrict.lean)
@@ -141,6 +146,9 @@ dual sheaf, and proves contravariance and compatibility with open restriction
 tensor/product and general pullback comparisons remain separate obligations.
 
 FC10d checked 2026-09-28 18:29 UTC: `lake build FLT.Mazur.DivisorLineBundleSheaf`,
+`lake build FLT` and `lake lint -- --no-build FLT` passed without warnings.
+
+FC10f checked 2026-09-28 19:12 UTC: `lake build FLT.Mazur.DivisorLineBundleRestrict`,
 `lake build FLT` and `lake lint -- --no-build FLT` passed without warnings.
 
 [ModuleSheafTensorAffine.lean](../FLT/Mazur/ModuleSheafTensorAffine.lean) proves
@@ -176,9 +184,34 @@ In degree zero the comparison is with actual global sections, and
 `moduleScalarH0Equiv_naturality` proves compatibility with coefficient maps.
 [MazurModuleCohomology.lean](../FLTTest/MazurModuleCohomology.lean) audits
 functoriality, unit specialization and the natural degree-zero comparison.
-Long exact sequences, finite-dimensionality in positive degrees and the genus
-construction remain separate obligations; no finiteness hypothesis is silently
-turned into a geometric proof.
+[ModuleCohomologyExact.lean](../FLT/Mazur/ModuleCohomologyExact.lean) proves
+linearity of the connecting maps, exactness of the six-term segments, and
+injectivity at degree zero. Its hypothesis is short exactness of the underlying
+complex of abelian sheaves. Finiteness propagates through each adjacent
+degree pattern; this does not establish the initial geometric finiteness inputs.
+
+[LocalizationCech.lean](../FLT/Mazur/LocalizationCech.lean) constructs the actual
+principal-open Cech complex and augmentation using
+[TildePrincipalOpen.lean](../FLT/Mazur/TildePrincipalOpen.lean). It proves
+injectivity of the augmentation for a spanning family and that exactness of
+a complex can be checked after principal localization. Exactness of this Cech
+complex in all degrees still requires the localized contraction and its transport.
+Finite-dimensionality of positive-degree cohomology and genus remain open.
+
+## Positive divisor sheaves and restriction (FC10d/f)
+
+[DivisorLineBundleSheaf.lean](../FLT/Mazur/DivisorLineBundleSheaf.lean) constructs
+O(D) as the actual dual of the Cartier ideal sheaf, proves it locally free of
+rank one, and identifies O(0) with the structure module.
+[DivisorLineBundleRestrict.lean](../FLT/Mazur/DivisorLineBundleRestrict.lean)
+identifies restriction of the ideal module with the pulled-back ideal module.
+It then constructs restriction of O(D), matches the affine dual-ideal transport,
+and proves identity and composition compatibility on nested opens.
+The global sum/tensor comparison and ampleness remain separate obligations.
+
+[MazurCohomologyDivisor.lean](../FLTTest/MazurCohomologyDivisor.lean) audits
+these cohomology, initial Cech and divisor-restriction endpoints against the
+three standard Lean axioms. The final FLT arithmetic inputs are unchanged.
 
 ## Sources and the two different kinds of curve
 
