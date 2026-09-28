@@ -899,6 +899,7 @@ public import FLT.Mazur.ProjectiveLineCharts
 public import FLT.Mazur.ProjectiveLineEndpoints
 public import FLT.Mazur.ProjectiveSpaceCharts
 public import FLT.Mazur.ProjectiveTwistCocycle
+public import FLT.Mazur.ProjectiveTwistingSheaf
 public import FLT.Mazur.RationalFibers
 public import FLT.Mazur.RelativeCartier
 public import FLT.Mazur.RelativeCartierBaseChange
