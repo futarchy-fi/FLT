@@ -844,6 +844,7 @@ public import FLT.Mathlib.Topology.MetricSpace.ProperSpace.InfinitePlace
 public import FLT.Mathlib.Topology.MetricSpace.Pseudo.Matrix
 public import FLT.Mathlib.Topology.Polish
 public import FLT.Mazur.CartierCharts
+public import FLT.Mazur.ConstantDegree
 public import FLT.Mazur.Contracts
 public import FLT.Mazur.CuspCollision
 public import FLT.Mazur.FCurveContracts
