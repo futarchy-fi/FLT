@@ -8,6 +8,7 @@ module
 public import FLT.GaloisRepresentation.HardlyRamified.PureAction
 public import FLT.GaloisRepresentation.HardlyRamified.ThreeGroupLocalUnramified
 public import FLT.GaloisRepresentation.HardlyRamified.TrivialPrimeFiltration
+public import FLT.GroupScheme.EtaleModelUnramified
 
 /-!
 # Purity of filtered point actions unramified away from two
@@ -17,9 +18,9 @@ Trivial three-torsion graded pieces force a three-group action image. Its local
 inertia at two is trivial, so unramifiedness away from two makes the whole action
 everywhere unramified and therefore trivial.
 
-The hypothesis `UnramifiedOutside {2}` is retained explicitly: deducing it from
-a finite-flat group-scheme filtration by constant groups requires the geometric
-étaleness and specialization theorems, which are not asserted in this file.
+For a finite étale model over `ℤ[1/2]`, unramifiedness away from two is proved
+by integral specialization. Deducing étaleness and the point filtration from a
+finite-flat group-scheme filtration by constant groups remains a separate step.
 -/
 
 @[expose] public noncomputable section
@@ -67,6 +68,15 @@ theorem pure_one_of_trivialThreeFiltration (W : FiniteContinuousGaloisModule)
   · subst q
     exact W.inertia_two_trivial_of_threeGroup F.isPGroup_range σ hσ w
   · exact hur.inertia_trivial q hq (by simpa) σ hσ w
+
+/-- A finite étale model over `ℤ[1/2]` whose point module has a trivial
+three-torsion filtration has pointwise trivial full Galois action. -/
+theorem pure_one_of_etale_trivialThreeFiltration (W : FiniteContinuousGaloisModule)
+    (F : TrivialPrimeFiltration 3
+      (AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosure ℚ) W)
+    (M : FiniteEtaleModel ZInvTwo W) :
+    Pure W (1 : (AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosure ℚ) → ℤ) :=
+  W.pure_one_of_trivialThreeFiltration F M.unramifiedOutsideTwo
 
 end FiniteContinuousGaloisModule
 end ThreeAdicPlan
