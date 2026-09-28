@@ -309,6 +309,7 @@ public import FLT.GroupScheme.HopfDifferentials
 public import FLT.GroupScheme.HopfPointCongruence
 public import FLT.GroupScheme.HopfPoints
 public import FLT.GroupScheme.HopfShear
+public import FLT.GroupScheme.HopfSpecialFiberFreeness
 public import FLT.GroupScheme.HopfTorsor
 public import FLT.GroupScheme.HopfTorsorFree
 public import FLT.GroupScheme.IntegralCoordinateAlgebra
