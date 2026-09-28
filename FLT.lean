@@ -540,6 +540,7 @@ public import FLT.Mathlib.RingTheory.MvPolynomial.FrobeniusGenerators
 public import FLT.Mathlib.RingTheory.MvPolynomial.FrobeniusRelationDescent
 public import FLT.Mathlib.RingTheory.MvPolynomial.HeightOneIdeal
 public import FLT.Mathlib.RingTheory.MvPolynomial.NilpotentPresentation
+public import FLT.Mathlib.RingTheory.MvPolynomial.RedundantCoordinates
 public import FLT.Mathlib.RingTheory.NilpotentRelationLifting
 public import FLT.Mathlib.RingTheory.Norm.Quadratic
 public import FLT.Mathlib.RingTheory.Norm.Quotient
