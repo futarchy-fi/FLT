@@ -382,6 +382,7 @@ public import FLT.GroupScheme.PadicPatchingRings
 public import FLT.GroupScheme.PadicTensorPatching
 public import FLT.GroupScheme.PointDifferentials
 public import FLT.GroupScheme.PointFieldEvaluation
+public import FLT.GroupScheme.PrincipalFiberFlatness
 public import FLT.GroupScheme.PrincipalFiberFreeness
 public import FLT.GroupScheme.QuadraticDescent
 public import FLT.GroupScheme.QuadraticTwist
