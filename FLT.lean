@@ -319,6 +319,7 @@ public import FLT.GroupScheme.KummerParameter
 public import FLT.GroupScheme.KummerPoints
 public import FLT.GroupScheme.KummerTwist
 public import FLT.GroupScheme.LocalDifferentBounds
+public import FLT.GroupScheme.LocalIntegralPowerBasis
 public import FLT.GroupScheme.LocalPointField
 public import FLT.GroupScheme.ModelPoints
 public import FLT.GroupScheme.PadicAlgebraPatching
@@ -468,6 +469,8 @@ public import FLT.Mathlib.RingTheory.DedekindDomain.Ideal.Lemmas
 public import FLT.Mathlib.RingTheory.DedekindDomain.Invertible
 public import FLT.Mathlib.RingTheory.DifferentPowerBasis
 public import FLT.Mathlib.RingTheory.DiscreteValuationRing.AdjoinRoot
+public import FLT.Mathlib.RingTheory.DiscreteValuationRing.Monogenic
+public import FLT.Mathlib.RingTheory.DiscreteValuationRing.ResidueGenerator
 public import FLT.Mathlib.RingTheory.DiscreteValuationRing.Separable
 public import FLT.Mathlib.RingTheory.Discriminant
 public import FLT.Mathlib.RingTheory.Ideal.Quotient.Basic
