@@ -337,6 +337,7 @@ public import FLT.GroupScheme.ConstantCartierDual
 public import FLT.GroupScheme.ConstantCoordinates
 public import FLT.GroupScheme.ConstantFiltrationPurity
 public import FLT.GroupScheme.ConstantFiniteFlat
+public import FLT.GroupScheme.ConstantMuThreeCocycleSplitting
 public import FLT.GroupScheme.ConstantMuThreeGlobalSplitting
 public import FLT.GroupScheme.ConstantMuThreeKummerCocycle
 public import FLT.GroupScheme.ConstantMuThreeKummerValuations
