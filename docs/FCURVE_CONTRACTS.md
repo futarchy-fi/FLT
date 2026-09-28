@@ -5,10 +5,11 @@ Baseline: FLT `47069a2512946e49a1039596d2182d58a3cee831`, Mathlib
 `c32e1ec0d1eb5237ba344eee50162f45d5b0fc76`. Source and API review: 2026-09-28.
 The deliverable is a source ledger and typed propositions, not proofs of those propositions.
 
-**Release FC01–FC03 only.** Finite-flat degree is substantially present in Mathlib.
+**Initial dispatch at the baseline above: FC01–FC03.** Finite-flat degree is substantially present in Mathlib.
 Cartier divisors can use its existing ideal-sheaf/subscheme implementation.
 Genus, cohomological base change and line-bundle ampleness still have representation gates.
-The dimension bridge from smooth relative dimension to topological dimension also needs a port.
+The smooth-dimension and smooth-section contracts are now proved; see the implementation
+notes below. The dispatch table records the original subdivision, not current completion.
 The complete F-Curve family is not yet an implementation queue.
 
 ## FC13–FC14 proofs
@@ -22,8 +23,8 @@ Both exact contracts are audited in
 [MazurCurveFinite.lean](../FLTTest/MazurCurveFinite.lean).
 
 These results consume the stated dimension bound. The smooth-dimension bridge
-FC12 and the rational-section bridge FC15 remain separate tasks; this does not
-supply modular curves or Mazur's arithmetic input.
+FC12 and rational-section bridge FC15 are proved in the modules described below;
+this does not supply modular curves or Mazur's arithmetic input.
 
 ## Generic-point consumer wiring (FC16)
 
@@ -41,11 +42,47 @@ rather than supplied as an extra premise. The proof combines
 [EtaleDimLe.lean](../FLT/Mazur/EtaleDimLe.lean) (FC12b), and the affine-chart
 and open-cover lemmas in [SmoothDimension.lean](../FLT/Mazur/SmoothDimension.lean),
 with their composition in [SmoothDimensionBound.lean](../FLT/Mazur/SmoothDimensionBound.lean).
-The full equality `SmoothCurveDimension` still needs the lower bound (FC12c);
-that equality is not required for this finiteness consumer.
+The full equality `SmoothCurveDimension` is also proved by
+[SmoothCurveDimension.lean](../FLT/Mazur/SmoothCurveDimension.lean), using the lower
+bound in [EtaleDimGe.lean](../FLT/Mazur/EtaleDimGe.lean) (FC12c).
+That equality is not required for this finiteness consumer.
 None of the modular-curve, quotient, cusp-separation or quotient-point-finiteness
 inputs is constructed by these modules. The independent axiom checks are in
 [MazurGenericFibers.lean](../FLTTest/MazurGenericFibers.lean).
+
+## Smooth sections and their ambient divisors (FC05)
+
+[SmoothSectionCartier.lean](../FLT/Mazur/SmoothSectionCartier.lean) proves
+`SmoothSectionCartier` for the actual ideal sheaf of a section. It combines
+compatible affine charts, the localized augmentation kernel, and flatness of
+the section image over the base.
+[SmoothOpenSectionCartier.lean](../FLT/Mazur/SmoothOpenSectionCartier.lean) proves
+`SmoothOpenSectionCartier`: the ambient family need only be separated, and
+smoothness of relative dimension one is required only on the open containing
+the section. Pulling back the actual section ideal identifies it with the
+smooth-open section ideal; its Cartier charts then give ambient charts.
+No global smoothness or reducedness assumption is added.
+[MazurSmoothGeometry.lean](../FLTTest/MazurSmoothGeometry.lean) audits these
+two section theorems and the exact smooth dimension theorem.
+
+## Relative sums and smooth-open sections (FC06)
+
+[RelativeSums.lean](../FLT/Mazur/RelativeSums.lean) proves `RelativeCartierSum`.
+Locally, the quotient by a product of regular equations is an extension of the
+two flat quotients, hence flat over the base. The local proof gives sums of
+relative effective Cartier divisors on arbitrary ambient families.
+
+Finite sums include the empty sum and repeated sections with multiplicity.
+Sections may land in a smooth open of a separated family; the ambient family
+need not be smooth. Their ideal products remain relative Cartier after arbitrary
+base change. The module also identifies the pulled-back ideals with the ideals
+of the actual base-changed sections, via `section_prod_comap_eq`.
+[MazurRelativeSums.lean](../FLTTest/MazurRelativeSums.lean) audits the sum and
+base-change endpoints and checks a doubled section and the empty family.
+
+This proves the split section-sum construction. Descent of cyclic subgroups
+(G1-A5), the degree/ample subgroup criterion, and construction of the modular
+curve remain separate obligations.
 
 ## Sources and the two different kinds of curve
 
