@@ -172,6 +172,12 @@ lemma moduleHMap_comp {M N P : X.Modules} (g : M ⟶ N) (h : N ⟶ P) (n : ℕ) 
   rw [Functor.map_comp, Sheaf.H.map_comp_apply]
   rfl
 
+/-- The degree-zero comparison intertwines cohomology maps and maps on global sections. -/
+lemma moduleH0Equiv_naturality {M N : X.Modules} (g : M ⟶ N) (x : ModuleH M 0) :
+    moduleH0Equiv N (moduleHMap g 0 x) = g.app ⊤ (moduleH0Equiv M x) :=
+  (Sheaf.H.equiv₀_naturality isTerminalTop
+    ((SheafOfModules.toSheaf X.ringCatSheaf).map g) x).symm
+
 /-- On the unit module, multiplication is the multiplication used in FC07. -/
 lemma moduleMultiply_unit (r : Γ(X, ⊤)) :
     moduleMultiply (structureUnitModule X) r = structureMultiply X r := rfl
@@ -247,6 +253,13 @@ def moduleScalarH0Equiv (f : X ⟶ Spec (CommRingCat.of k)) (M : X.Modules) :
   exact
     { toAddEquiv := (moduleH0Equiv M).toAddEquiv
       map_smul' := fun a x ↦ (moduleH0Equiv M).map_smul (structureScalarMap f a) x }
+
+/-- The scalar degree-zero comparison also respects maps of coefficient sheaves. -/
+lemma moduleScalarH0Equiv_naturality (f : X ⟶ Spec (CommRingCat.of k))
+    {M N : X.Modules} (g : M ⟶ N) (x : ModuleScalarH f M 0) :
+    moduleScalarH0Equiv f N (moduleScalarHMap f g 0 x) =
+      g.app ⊤ (moduleScalarH0Equiv f M x) :=
+  moduleH0Equiv_naturality g x
 
 end Scalars
 
