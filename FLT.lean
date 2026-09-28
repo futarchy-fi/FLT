@@ -1,5 +1,5 @@
-
 module  -- shake: keep-all --deprecated_module: ignore
+
 public import FLT.AINTLIB.CebotarevDensity.NumberFieldEulerProduct
 public import FLT.AINTLIB.DedekindResidue.AuxiliaryFunction
 public import FLT.AINTLIB.DedekindResidue.CompletedZeta.AnalyticControl
@@ -44,6 +44,7 @@ public import FLT.Assembly.Inputs
 public import FLT.Assembly.Mazur
 public import FLT.Assembly.NormalizedReducibility
 public import FLT.Assembly.PrimeField
+public import FLT.Assembly.PrimePowerSorting
 public import FLT.Assembly.Proof
 public import FLT.Assembly.ResidualQuotients
 public import FLT.Assembly.ThreeAdicTrace
