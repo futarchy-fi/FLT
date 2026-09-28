@@ -262,6 +262,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.CoefficientQuotient
 public import FLT.GaloisRepresentation.HardlyRamified.Defs
 public import FLT.GaloisRepresentation.HardlyRamified.DyadicThreeGroupInertia
 public import FLT.GaloisRepresentation.HardlyRamified.Family
+public import FLT.GaloisRepresentation.HardlyRamified.FilteredPointPurity
 public import FLT.GaloisRepresentation.HardlyRamified.FlatCoefficientExtension
 public import FLT.GaloisRepresentation.HardlyRamified.Frey
 public import FLT.GaloisRepresentation.HardlyRamified.InertiaTwoSquareZero
