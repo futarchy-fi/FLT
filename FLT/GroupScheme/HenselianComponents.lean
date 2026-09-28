@@ -70,8 +70,11 @@ theorem existsUnique_componentResidue_idempotent
   exact ⟨a, ⟨ha.1, hae⟩, fun x hx ↦
     componentResidueMap_idempotent_ext I hx.1 ha.1 (hx.2.trans hae.symm)⟩
 
-local instance : Fintype (MaximalSpectrum (A ⧸ I)) := Fintype.ofFinite _
-local instance : DecidableEq (MaximalSpectrum (A ⧸ I)) := Classical.decEq _
+/-- A special fibre has finitely many maximal ideals. -/
+local instance componentIndexFintype : Fintype (MaximalSpectrum (A ⧸ I)) := Fintype.ofFinite _
+/-- Classical equality for indexing the residue-field product. -/
+local instance componentIndexDecidableEq : DecidableEq (MaximalSpectrum (A ⧸ I)) :=
+  Classical.decEq _
 
 /-- The integral idempotent of the component indexed by a special-fibre maximal ideal. -/
 def componentIdempotent (m : MaximalSpectrum (A ⧸ I)) : A :=
