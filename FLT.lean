@@ -850,6 +850,7 @@ public import FLT.Mazur.ClosedSubsets
 public import FLT.Mazur.ConstantDegree
 public import FLT.Mazur.Contracts
 public import FLT.Mazur.CurveFinite
+public import FLT.Mazur.CurveGenus
 public import FLT.Mazur.CuspCollision
 public import FLT.Mazur.DivisorInvertibleSheaf
 public import FLT.Mazur.DivisorLineBundle
