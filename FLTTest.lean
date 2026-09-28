@@ -5,6 +5,7 @@ import FLTTest.MathlibCompatibility
 import FLTTest.MazurCurveFinite
 import FLTTest.MazurDualLocalization
 import FLTTest.MazurGenericFibers
+import FLTTest.MazurModuleCohomology
 import FLTTest.MazurMultiplicativeModel
 import FLTTest.MazurRelativeSums
 import FLTTest.MazurSectionSumFinite
