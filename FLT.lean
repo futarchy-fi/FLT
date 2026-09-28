@@ -229,6 +229,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.AbsIrredAdapter
 public import FLT.GaloisRepresentation.HardlyRamified.AtTwo
 public import FLT.GaloisRepresentation.HardlyRamified.B5Inputs
 public import FLT.GaloisRepresentation.HardlyRamified.CategoryD
+public import FLT.GaloisRepresentation.HardlyRamified.CategoryDSimple
 public import FLT.GaloisRepresentation.HardlyRamified.CharacterSeparation
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.DedekindZeta
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.DegreeOneGenerator
