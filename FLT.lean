@@ -302,6 +302,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.PureSortedQuotient
 public import FLT.GaloisRepresentation.HardlyRamified.RationalComplexConjugation
 public import FLT.GaloisRepresentation.HardlyRamified.RationalRamificationBridge
 public import FLT.GaloisRepresentation.HardlyRamified.ResidualCharacteristic
+public import FLT.GaloisRepresentation.HardlyRamified.ResidualGlobalModel
 public import FLT.GaloisRepresentation.HardlyRamified.ResidualPointModule
 public import FLT.GaloisRepresentation.HardlyRamified.ResidualTameTwo
 public import FLT.GaloisRepresentation.HardlyRamified.RibetAdapters
