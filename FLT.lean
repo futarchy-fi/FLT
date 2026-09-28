@@ -244,6 +244,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.AugmentedLocalModel
 public import FLT.GaloisRepresentation.HardlyRamified.AugmentedPointFieldCompletion
 public import FLT.GaloisRepresentation.HardlyRamified.B5Inputs
 public import FLT.GaloisRepresentation.HardlyRamified.CategoryD
+public import FLT.GaloisRepresentation.HardlyRamified.CategoryDClassification
 public import FLT.GaloisRepresentation.HardlyRamified.CategoryDFontaine
 public import FLT.GaloisRepresentation.HardlyRamified.CategoryDInertia
 public import FLT.GaloisRepresentation.HardlyRamified.CategoryDIntegralFontaine
@@ -408,6 +409,7 @@ public import FLT.GroupScheme.FontaineCorrectedObstruction
 public import FLT.GroupScheme.FontaineCubicLifting
 public import FLT.GroupScheme.FontaineCubicNewton
 public import FLT.GroupScheme.FontaineCubicSystemLifting
+public import FLT.GroupScheme.FontaineDifferentBound
 public import FLT.GroupScheme.FontaineDifferentHypothesis
 public import FLT.GroupScheme.FontaineDifferentReduction
 public import FLT.GroupScheme.FontaineDividedPowers
