@@ -63,7 +63,7 @@ def kummerTwoModel : ModelOverZInvTwo kummerTwoPoints where
   points_bijective := Function.bijective_id
 
 /-- The finite-flat Kummer object attached to the unit two and killed by three. -/
-def kummerTwoObject : FF ZInvTwo := FF.ofModel kummerTwoModel
+def kummerTwoObject : FiniteFlatObject ZInvTwo := FiniteFlatObject.ofModel kummerTwoModel
 
 /-- Restriction identifies generic points with points of the integral coordinate algebra. -/
 def kummerTwoPointEquiv : kummerTwoPoints ≃ (KummerTwoCoordinate →ₐ[ZInvTwo]
@@ -152,7 +152,7 @@ theorem kummerTwoRootPoint_zero : kummerTwoRootPoint 0 1 (by simp) = 0 := by
   exact IsScalarTower.algebraMap_apply ZInvTwo ℚ (AlgebraicClosure ℚ) _
 
 /-- The Kummer point group is annihilated by three. -/
-theorem kummerTwoObject_killedBy_three : KilledBy 3 kummerTwoObject := by
+theorem kummerTwoObject_killedBy_three : KilledByQ 3 kummerTwoObject := by
   change ∀ P : kummerTwoPoints, (3 : ℕ) • P = 0
   intro P
   obtain ⟨i, x, hx, rfl⟩ := kummerTwoRootPoint_surjective P

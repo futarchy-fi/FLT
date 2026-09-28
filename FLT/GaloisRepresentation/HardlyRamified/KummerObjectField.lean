@@ -23,6 +23,9 @@ set_option backward.isDefEq.respectTransparency.types false
 
 open Polynomial
 
+attribute [local instance 2000] IsDedekindDomain.HeightOneSpectrum.adicCompletion.instField
+  IsDedekindDomain.HeightOneSpectrum.instAlgebraAdicCompletion
+
 namespace ThreeAdicPlan
 
 /-- Restriction of Kummer points commutes with the absolute Galois action. -/
@@ -170,7 +173,8 @@ theorem kummerTwoObject_inCategoryD : InCategoryD kummerTwoObject := by
 
 /-- The actual three-torsion Kummer extension attached to two has full point field `K₀`. -/
 theorem exists_kummer_two_model :
-    ∃ G₂ : FF ZInvTwo, KilledBy 3 G₂ ∧ InCategoryD G₂ ∧ Nonempty (PointField G₂ ≃ₐ[ℚ] K₀) :=
+    ∃ G₂ : FiniteFlatObject ZInvTwo, KilledByQ 3 G₂ ∧ InCategoryD G₂ ∧
+      Nonempty (PointField G₂ ≃ₐ[ℚ] K₀) :=
   ⟨kummerTwoObject, kummerTwoObject_killedBy_three, kummerTwoObject_inCategoryD,
     ⟨kummerTwoPointFieldEquiv⟩⟩
 
