@@ -431,6 +431,7 @@ public import FLT.GroupScheme.IntegralExtensionKernel
 public import FLT.GroupScheme.IntegralGroupLike
 public import FLT.GroupScheme.IntegralHopfAlgebra
 public import FLT.GroupScheme.IntegralHopfPoints
+public import FLT.GroupScheme.IntegralKernelBaseChange
 public import FLT.GroupScheme.IntegralQuotientDescent
 public import FLT.GroupScheme.IntegralQuotientFaithfullyFlat
 public import FLT.GroupScheme.IntegralQuotientIdentification
