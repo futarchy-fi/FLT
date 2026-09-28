@@ -344,6 +344,7 @@ public import FLT.GroupScheme.EtaleGenericMorphismExtension
 public import FLT.GroupScheme.EtaleInertia
 public import FLT.GroupScheme.EtaleModelUnramified
 public import FLT.GroupScheme.EtaleOrder
+public import FLT.GroupScheme.EtaleSplitting
 public import FLT.GroupScheme.FiniteFlat
 public import FLT.GroupScheme.FiniteFlatDifferentials
 public import FLT.GroupScheme.FiniteFlatFiltration
