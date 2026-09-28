@@ -2,6 +2,7 @@
 import FLT.GaloisRepresentation.HardlyRamified.FiniteCharacterMaps
 import FLT.GaloisRepresentation.HardlyRamified.TrivialPrimeFiltrationCoextension
 import FLT.GroupScheme.CartierDualCharacterGroup
+import FLT.GroupScheme.CartierDualKernelInclusion
 import FLT.GroupScheme.CartierDualPointFiltration
 import FLT.GroupScheme.ConstantCartierDual
 import FLT.GroupScheme.ConstantCoordinates
