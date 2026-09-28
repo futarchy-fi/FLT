@@ -26,7 +26,7 @@ namespace GaloisRepresentation
 open B5Inputs FLT.Assembly
 
 /-- The natural p-adic algebra structure on the prime field. -/
-noncomputable local instance primeFieldPadicAlgebra (p : ℕ) [Fact p.Prime] :
+noncomputable local instance assemblyPrimeFieldPadicAlgebra (p : ℕ) [Fact p.Prime] :
     Algebra ℤ_[p] (ZMod p) :=
   RingHom.toAlgebra PadicInt.toZMod
 
