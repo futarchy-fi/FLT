@@ -412,6 +412,7 @@ public import FLT.GroupScheme.KummerParameter
 public import FLT.GroupScheme.KummerPoints
 public import FLT.GroupScheme.KummerTwist
 public import FLT.GroupScheme.LocalBialgebraDerivations
+public import FLT.GroupScheme.LocalCoefficientConjugacy
 public import FLT.GroupScheme.LocalDifferentBounds
 public import FLT.GroupScheme.LocalDifferentConjugates
 public import FLT.GroupScheme.LocalDifferentInertia
