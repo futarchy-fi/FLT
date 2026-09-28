@@ -852,6 +852,7 @@ public import FLT.Mazur.CechSheafH
 public import FLT.Mazur.ClosedSubsets
 public import FLT.Mazur.ConstantDegree
 public import FLT.Mazur.Contracts
+public import FLT.Mazur.CurveFiberHypotheses
 public import FLT.Mazur.CurveFinite
 public import FLT.Mazur.CurveGenus
 public import FLT.Mazur.CurveNode
