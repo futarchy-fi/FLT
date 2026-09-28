@@ -86,27 +86,30 @@ instance constantGenericScalarTower :
     IsScalarTower ZInvTwo ℚ (constantPoints A).GenericCoordinateAlgebra :=
   IsScalarTower.of_algebraMap_eq' rfl
 
-/-- The existing canonical constant model has the expected integral function algebra. -/
-def constantCoordinateEquiv :
-    (constantFiniteFlat A).model.CoordinateRing ≃ₐ[ZInvTwo] (A → ZInvTwo) :=
+/-- The normalization of constant generic functions is the integral function algebra. -/
+def constantIntegralCoordinateEquiv :
+    integralClosure ZInvTwo (constantPoints A).GenericCoordinateAlgebra ≃ₐ[ZInvTwo]
+      (A → ZInvTwo) :=
   (AlgEquiv.mapIntegralClosure ((constantGenericEquiv A).symm.restrictScalars ZInvTwo)).trans
     (integralPiEquiv ZInvTwo ℚ A).symm
 
-/-- Evaluation of the integral coordinate comparison agrees with generic evaluation. -/
-theorem constantCoordinateEquiv_apply (f : (constantFiniteFlat A).model.CoordinateRing) (a : A) :
-    algebraMap ZInvTwo (AlgebraicClosure ℚ) (constantCoordinateEquiv A f a) =
-      ((show integralClosure ZInvTwo (constantPoints A).GenericCoordinateAlgebra from f) :
-        (constantPoints A).GenericCoordinateAlgebra) a := by
-  let g := (constantGenericEquiv A).symm
-    ((show integralClosure ZInvTwo (constantPoints A).GenericCoordinateAlgebra from f) :
-      (constantPoints A).GenericCoordinateAlgebra)
+/-- Evaluation of normalized coordinates agrees with generic evaluation. -/
+theorem constantIntegralCoordinateEquiv_apply
+    (f : integralClosure ZInvTwo (constantPoints A).GenericCoordinateAlgebra) (a : A) :
+    algebraMap ZInvTwo (AlgebraicClosure ℚ) (constantIntegralCoordinateEquiv A f a) =
+      (f : (constantPoints A).GenericCoordinateAlgebra) a := by
+  let g := (constantGenericEquiv A).symm (f : (constantPoints A).GenericCoordinateAlgebra)
   have h := congrArg (fun z : integralClosure ZInvTwo (A → ℚ) ↦ (z : A → ℚ) a)
     ((integralPiEquiv ZInvTwo ℚ A).apply_symm_apply
       (AlgEquiv.mapIntegralClosure ((constantGenericEquiv A).symm.restrictScalars ZInvTwo) f))
-  change algebraMap ZInvTwo ℚ (constantCoordinateEquiv A f a) = g a at h
+  change algebraMap ZInvTwo ℚ (constantIntegralCoordinateEquiv A f a) = g a at h
   rw [IsScalarTower.algebraMap_apply ZInvTwo ℚ (AlgebraicClosure ℚ), h]
   exact congrArg (fun z : (constantPoints A).GenericCoordinateAlgebra ↦ z a)
-    ((constantGenericEquiv A).apply_symm_apply
-      (show integralClosure ZInvTwo (constantPoints A).GenericCoordinateAlgebra from f))
+    ((constantGenericEquiv A).apply_symm_apply f)
+
+/-- The existing canonical constant model has the expected integral function algebra. -/
+def constantCoordinateEquiv :
+    (constantFiniteFlat A).model.CoordinateRing ≃ₐ[ZInvTwo] (A → ZInvTwo) :=
+  constantIntegralCoordinateEquiv A
 
 end ThreeAdicPlan
