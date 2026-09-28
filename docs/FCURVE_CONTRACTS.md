@@ -80,6 +80,16 @@ of the actual base-changed sections, via `section_prod_comap_eq`.
 [MazurRelativeSums.lean](../FLTTest/MazurRelativeSums.lean) audits the sum and
 base-change endpoints and checks a doubled section and the empty family.
 
+[SectionSumFinite.lean](../FLT/Mazur/SectionSumFinite.lean) further proves that
+these section sums are finite over the base when the ambient family is proper.
+The proof first shows that each fiber is supported on finitely many section
+values, then applies proper plus quasi-finite implies finite. This uses neither
+distinctness of the sections nor a noetherian base. For sections in the smooth
+open, it combines with FC06 to give an actual finite flat morphism.
+[MazurSectionSumFinite.lean](../FLTTest/MazurSectionSumFinite.lean) audits those endpoints.
+No degree formula is claimed: the number of support points alone does not
+determine rank when sections occur with multiplicity.
+
 This proves the split section-sum construction. Descent of cyclic subgroups
 (G1-A5), the degree/ample subgroup criterion, and construction of the modular
 curve remain separate obligations.
