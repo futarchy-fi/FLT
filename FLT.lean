@@ -55,6 +55,7 @@ public import FLT.DedekindDomain.AdicValuation
 public import FLT.DedekindDomain.Completion.BaseChange
 public import FLT.DedekindDomain.Completion.Embedding
 public import FLT.DedekindDomain.Completion.IdealOrder
+public import FLT.DedekindDomain.Completion.TraceDual
 public import FLT.DedekindDomain.FiniteAdeleRing.BaseChange
 public import FLT.DedekindDomain.FiniteAdeleRing.IsDirectLimitRestricted
 public import FLT.DedekindDomain.FiniteAdeleRing.LocalUnits
