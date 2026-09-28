@@ -501,6 +501,7 @@ public import FLT.GroupScheme.RaynaudTorsionFiltration
 public import FLT.GroupScheme.RaynaudTorsorDescent
 public import FLT.GroupScheme.RaynaudUnramifiedKernel
 public import FLT.GroupScheme.RaynaudUnramifiedQuotient
+public import FLT.GroupScheme.RestrictedScalarPointNaturality
 public import FLT.GroupScheme.SemilocalFreeDescent
 public import FLT.GroupScheme.SupportedKummerCubes
 public import FLT.GroupScheme.SupportedKummerValuations
