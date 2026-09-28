@@ -393,13 +393,18 @@ public import FLT.GroupScheme.FiniteFlatSectionDescent
 public import FLT.GroupScheme.FiniteFlatSubobject
 public import FLT.GroupScheme.FiniteFreeAdicComplete
 public import FLT.GroupScheme.FiniteHopfFreeness
+public import FLT.GroupScheme.FontaineConvolutionApproximation
+public import FLT.GroupScheme.FontaineConvolutionLifting
+public import FLT.GroupScheme.FontaineConvolutionPoint
 public import FLT.GroupScheme.FontaineCubicLifting
 public import FLT.GroupScheme.FontaineCubicNewton
 public import FLT.GroupScheme.FontaineCubicSystemLifting
 public import FLT.GroupScheme.FontaineDifferentHypothesis
 public import FLT.GroupScheme.FontaineDividedPowers
 public import FLT.GroupScheme.FontaineJacobian
+public import FLT.GroupScheme.FontaineModelProperty
 public import FLT.GroupScheme.FontaineNewtonStep
+public import FLT.GroupScheme.FontainePointFieldEmbedding
 public import FLT.GroupScheme.FontainePointLifts
 public import FLT.GroupScheme.FontainePointSeparation
 public import FLT.GroupScheme.FontainePresentation
@@ -458,6 +463,7 @@ public import FLT.GroupScheme.LocalHopfLocalizedPresentation
 public import FLT.GroupScheme.LocalHopfPresentation
 public import FLT.GroupScheme.LocalIntegralPowerBasis
 public import FLT.GroupScheme.LocalPointField
+public import FLT.GroupScheme.LocalPointFieldPoints
 public import FLT.GroupScheme.ModelBaseChange
 public import FLT.GroupScheme.ModelPoints
 public import FLT.GroupScheme.MuThreeCubicCoordinates
@@ -609,6 +615,8 @@ public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.Reduction
 public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.SplitDescent
 public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.VariableChange
 public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.Weierstrass
+public import FLT.Mathlib.Analysis.Normed.Algebra.Convolution
+public import FLT.Mathlib.Analysis.Normed.Algebra.CubicRoot
 public import FLT.Mathlib.Analysis.Normed.Field.CubicHensel
 public import FLT.Mathlib.Analysis.Normed.Field.CubicSystemHensel
 public import FLT.Mathlib.Analysis.Normed.Field.MultivariableNewton
@@ -673,6 +681,7 @@ public import FLT.Mathlib.RingTheory.AdicCompletion.PowerQuotients
 public import FLT.Mathlib.RingTheory.AdjoinRoot
 public import FLT.Mathlib.RingTheory.AugmentationCotangent
 public import FLT.Mathlib.RingTheory.AugmentationGenerators
+public import FLT.Mathlib.RingTheory.ConvolutionTensorPair
 public import FLT.Mathlib.RingTheory.CotangentGenerators
 public import FLT.Mathlib.RingTheory.CotangentQuotient
 public import FLT.Mathlib.RingTheory.CotangentSubfamily
