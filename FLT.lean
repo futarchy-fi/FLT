@@ -300,6 +300,7 @@ public import FLT.GroupScheme.GenericFieldChange
 public import FLT.GroupScheme.GlobalModel
 public import FLT.GroupScheme.GlobalModelAwayTwo
 public import FLT.GroupScheme.GlobalModelOverInt
+public import FLT.GroupScheme.HopfPointCongruence
 public import FLT.GroupScheme.HopfPoints
 public import FLT.GroupScheme.IntegralCoordinateAlgebra
 public import FLT.GroupScheme.IntegralEtaleAlgebra
