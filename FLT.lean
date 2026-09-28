@@ -308,6 +308,7 @@ public import FLT.GroupScheme.HopfDifferentials
 public import FLT.GroupScheme.HopfPointCongruence
 public import FLT.GroupScheme.HopfPoints
 public import FLT.GroupScheme.HopfShear
+public import FLT.GroupScheme.HopfTorsor
 public import FLT.GroupScheme.IntegralCoordinateAlgebra
 public import FLT.GroupScheme.IntegralEtaleAlgebra
 public import FLT.GroupScheme.IntegralEtaleModel
