@@ -4,6 +4,7 @@ import FLTTest.FLTTest
 import FLTTest.MathlibCompatibility
 import FLTTest.MazurAffineCechSum
 import FLTTest.MazurCechAcyclic
+import FLTTest.MazurCechConnecting
 import FLTTest.MazurCechResolution
 import FLTTest.MazurCohomologyDivisor
 import FLTTest.MazurCurveFinite
@@ -15,6 +16,7 @@ import FLTTest.MazurMultiplicativeModel
 import FLTTest.MazurRelativeSums
 import FLTTest.MazurSectionSumFinite
 import FLTTest.MazurSheafIntegration
+import FLTTest.MazurShiftFibers
 import FLTTest.MazurSmoothGeometry
 import FLTTest.MazurStalkFibers
 import FLTTest.QuaternionFiniteIndex
