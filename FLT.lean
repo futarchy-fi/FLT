@@ -367,6 +367,7 @@ public import FLT.GroupScheme.FontaineNewtonStep
 public import FLT.GroupScheme.FontainePointFieldEmbedding
 public import FLT.GroupScheme.FontainePointLifts
 public import FLT.GroupScheme.FontainePointSeparation
+public import FLT.GroupScheme.FontainePolynomialObstruction
 public import FLT.GroupScheme.FontainePresentation
 public import FLT.GroupScheme.FontaineProperty
 public import FLT.GroupScheme.FontaineQuotientValuation
