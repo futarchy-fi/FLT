@@ -316,6 +316,7 @@ public import FLT.GroupScheme.GenericFieldChange
 public import FLT.GroupScheme.GlobalModel
 public import FLT.GroupScheme.GlobalModelAwayTwo
 public import FLT.GroupScheme.GlobalModelOverInt
+public import FLT.GroupScheme.HeightOneStructure
 public import FLT.GroupScheme.HopfDifferentials
 public import FLT.GroupScheme.HopfFrobenius
 public import FLT.GroupScheme.HopfPointCongruence
