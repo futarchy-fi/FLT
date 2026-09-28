@@ -34,7 +34,7 @@ variable {X : TopCat.{u}} {ι : Type u} (U : ι → Opens X)
 variable [HasExt.{u + 1}
   (Sheaf (Opens.grothendieckTopology X) AddCommGrpCat.{u})]
 
-local instance : HasExt.{u + 1} (TopCat.Sheaf AddCommGrpCat.{u} X) :=
+local instance cechAcyclicCokernelInst1 : HasExt.{u + 1} (TopCat.Sheaf AddCommGrpCat.{u} X) :=
   inferInstanceAs (HasExt.{u + 1} (Sheaf (Opens.grothendieckTopology X) AddCommGrpCat.{u}))
 
 /-- All positive Ext cohomology vanishes on each finite cover intersection. -/
