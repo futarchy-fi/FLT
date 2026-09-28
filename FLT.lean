@@ -420,6 +420,7 @@ public import FLT.GroupScheme.IntegralCartierDual
 public import FLT.GroupScheme.IntegralCartierPoints
 public import FLT.GroupScheme.IntegralClosedImmersion
 public import FLT.GroupScheme.IntegralCompositeClosedImmersion
+public import FLT.GroupScheme.IntegralCompositeFaithfullyFlat
 public import FLT.GroupScheme.IntegralCoordinateAlgebra
 public import FLT.GroupScheme.IntegralEtaleAlgebra
 public import FLT.GroupScheme.IntegralEtaleModel
