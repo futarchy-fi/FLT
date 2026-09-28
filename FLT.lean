@@ -335,6 +335,7 @@ public import FLT.GroupScheme.ConstantCartierDual
 public import FLT.GroupScheme.ConstantCoordinates
 public import FLT.GroupScheme.ConstantFiltrationPurity
 public import FLT.GroupScheme.ConstantFiniteFlat
+public import FLT.GroupScheme.ConstantModelIdentification
 public import FLT.GroupScheme.ConvolutionBaseChange
 public import FLT.GroupScheme.CoordinateOrder
 public import FLT.GroupScheme.DiagonalizableFiniteFlat
