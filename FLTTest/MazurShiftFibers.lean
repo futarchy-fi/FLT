@@ -54,22 +54,24 @@ depends on axioms: [propext, Classical.choice, Quot.sound] -/
 #guard_msgs (whitespace := lax) in
 #print axioms FLT.Mazur.CechDimensionShift.sheafOneEquiv_mk
 
+open FLT.Mazur.FCurve.DRFiberClassification
+
 /-- info: 'FLT.Mazur.FCurve.DRFiberClassification.ClassifiedGeometricFibers.toNodalGeometricFibers'
 depends on axioms: [propext, Classical.choice, Quot.sound] -/
 #guard_msgs (whitespace := lax) in
-#print axioms FLT.Mazur.FCurve.DRFiberClassification.ClassifiedGeometricFibers.toNodalGeometricFibers
+#print axioms ClassifiedGeometricFibers.toNodalGeometricFibers
 
 /-- info: 'FLT.Mazur.FCurve.DRFiberClassification.ClassifiedGeometricFibers.pullback'
 depends on axioms: [propext, Classical.choice, Quot.sound] -/
 #guard_msgs (whitespace := lax) in
-#print axioms FLT.Mazur.FCurve.DRFiberClassification.ClassifiedGeometricFibers.pullback
+#print axioms ClassifiedGeometricFibers.pullback
 
 /-- info: 'FLT.Mazur.FCurve.DRFiberClassification.ClassifiedGeometricFibers.baseChange'
 depends on axioms: [propext, Classical.choice, Quot.sound] -/
 #guard_msgs (whitespace := lax) in
-#print axioms FLT.Mazur.FCurve.DRFiberClassification.ClassifiedGeometricFibers.baseChange
+#print axioms ClassifiedGeometricFibers.baseChange
 
 /-- info: 'FLT.Mazur.FCurve.DRFiberClassification.ClassifiedFamilyCore.baseChange'
 depends on axioms: [propext, Classical.choice, Quot.sound] -/
 #guard_msgs (whitespace := lax) in
-#print axioms FLT.Mazur.FCurve.DRFiberClassification.ClassifiedFamilyCore.baseChange
+#print axioms ClassifiedFamilyCore.baseChange
