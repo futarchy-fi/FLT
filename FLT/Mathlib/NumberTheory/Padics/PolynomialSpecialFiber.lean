@@ -24,15 +24,17 @@ variable (p : ℕ) [Fact p.Prime] (σ : Type*)
 /-- Reduction of a polynomial ring over the p-adic integers is the polynomial
 ring over the prime field. -/
 def polynomialModPEquiv :
-    (MvPolynomial σ ℤ_[p] ⧸ Ideal.span {C (p : ℤ_[p])}) ≃ₐ[ℤ_[p]]
+    (MvPolynomial σ ℤ_[p] ⧸
+      Ideal.span {algebraMap ℤ_[p] (MvPolynomial σ ℤ_[p]) (p : ℤ_[p])}) ≃ₐ[ℤ_[p]]
       MvPolynomial σ (ZMod p) :=
   (Ideal.quotientEquivAlgOfEq ℤ_[p] (by
-    rw [Ideal.map_span, Set.image_singleton])).trans
+    rw [Ideal.map_span, Set.image_singleton]
+    rfl)).trans
     ((quotientEquivQuotientMvPolynomial (Ideal.span {(p : ℤ_[p])})).symm.trans
       (mapAlgEquiv σ (modPEquivZMod p)))
 
 /-- Polynomial reduction reduces each coefficient. -/
-@[simp] theorem polynomialModPEquiv_mk (f : MvPolynomial σ ℤ_[p]) :
+theorem polynomialModPEquiv_mk (f : MvPolynomial σ ℤ_[p]) :
     polynomialModPEquiv p σ (Ideal.Quotient.mk _ f) = map toZMod f := by
   simp only [polynomialModPEquiv, AlgEquiv.trans_apply, Ideal.quotientEquivAlgOfEq_mk,
     quotientEquivQuotientMvPolynomial_symm_mk, mapAlgEquiv_apply, map_map]
