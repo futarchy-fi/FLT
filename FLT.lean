@@ -300,6 +300,7 @@ public import FLT.GroupScheme.FiniteFlat
 public import FLT.GroupScheme.FiniteFlatDifferentials
 public import FLT.GroupScheme.FiniteFlatSubobject
 public import FLT.GroupScheme.FontaineProperty
+public import FLT.GroupScheme.FontaineQuotientValuation
 public import FLT.GroupScheme.FontaineRootCriterion
 public import FLT.GroupScheme.GenericFieldChange
 public import FLT.GroupScheme.GlobalModel
