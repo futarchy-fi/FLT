@@ -334,6 +334,7 @@ public import FLT.GroupScheme.CartierDualPairing
 public import FLT.GroupScheme.CartierDualPointFiltration
 public import FLT.GroupScheme.CartierDualSpecialFiber
 public import FLT.GroupScheme.CartierDualTorsor
+public import FLT.GroupScheme.ConnectedTensorPoint
 public import FLT.GroupScheme.ConstantCartierDual
 public import FLT.GroupScheme.ConstantCoordinates
 public import FLT.GroupScheme.ConstantFiltrationPurity
@@ -379,6 +380,7 @@ public import FLT.GroupScheme.GlobalModelAwayTwo
 public import FLT.GroupScheme.GlobalModelOverInt
 public import FLT.GroupScheme.HeightOneStructure
 public import FLT.GroupScheme.HenselianComponents
+public import FLT.GroupScheme.HenselianConnectedLocal
 public import FLT.GroupScheme.HenselianIdempotents
 public import FLT.GroupScheme.HopfDifferentials
 public import FLT.GroupScheme.HopfFrobenius
@@ -409,6 +411,8 @@ public import FLT.GroupScheme.KummerTwist
 public import FLT.GroupScheme.LocalBialgebraDerivations
 public import FLT.GroupScheme.LocalDifferentBounds
 public import FLT.GroupScheme.LocalDifferentValuation
+public import FLT.GroupScheme.LocalEtalePoint
+public import FLT.GroupScheme.LocalFiniteFlatExtension
 public import FLT.GroupScheme.LocalHopfLocalizedPresentation
 public import FLT.GroupScheme.LocalHopfPresentation
 public import FLT.GroupScheme.LocalIntegralPowerBasis
@@ -419,11 +423,17 @@ public import FLT.GroupScheme.OrderThreeModelIdentification
 public import FLT.GroupScheme.PadicAlgebraPatching
 public import FLT.GroupScheme.PadicComponentLifting
 public import FLT.GroupScheme.PadicConnectedComponents
+public import FLT.GroupScheme.PadicConnectedEtaleSplitting
+public import FLT.GroupScheme.PadicConstantMuThreeSplitting
 public import FLT.GroupScheme.PadicHopfOperations
 public import FLT.GroupScheme.PadicHopfPatching
+public import FLT.GroupScheme.PadicIdentityComponentAntipode
+public import FLT.GroupScheme.PadicIdentityComponentHopf
+public import FLT.GroupScheme.PadicIdentityComponentModel
 public import FLT.GroupScheme.PadicLatticePatching
 public import FLT.GroupScheme.PadicLocalPresentation
 public import FLT.GroupScheme.PadicModulePatching
+public import FLT.GroupScheme.PadicMuThreeConnected
 public import FLT.GroupScheme.PadicPatchingArithmetic
 public import FLT.GroupScheme.PadicPatchingRings
 public import FLT.GroupScheme.PadicTensorPatching
