@@ -280,6 +280,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.FlatCoefficientExtension
 public import FLT.GaloisRepresentation.HardlyRamified.Frey
 public import FLT.GaloisRepresentation.HardlyRamified.InertiaTwoSquareZero
 public import FLT.GaloisRepresentation.HardlyRamified.IntegralCharacters
+public import FLT.GaloisRepresentation.HardlyRamified.KummerModThreeCyclotomic
 public import FLT.GaloisRepresentation.HardlyRamified.KummerObject
 public import FLT.GaloisRepresentation.HardlyRamified.KummerObjectField
 public import FLT.GaloisRepresentation.HardlyRamified.KummerTwoClassNumber
