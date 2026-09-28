@@ -860,6 +860,7 @@ public import FLT.Mazur.FamilyTransport
 public import FLT.Mazur.GenericFibers
 public import FLT.Mazur.IntegralBase
 public import FLT.Mazur.ModuleSheafTensor
+public import FLT.Mazur.ModuleSheafTensorRestrict
 public import FLT.Mazur.OverPoints
 public import FLT.Mazur.RationalFibers
 public import FLT.Mazur.RelativeCartier
