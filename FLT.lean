@@ -860,6 +860,7 @@ public import FLT.Mazur.CurveFinite
 public import FLT.Mazur.CurveGenus
 public import FLT.Mazur.CurveNode
 public import FLT.Mazur.CuspCollision
+public import FLT.Mazur.DRFiberClassification
 public import FLT.Mazur.DivisorInvertibleSheaf
 public import FLT.Mazur.DivisorLineBundle
 public import FLT.Mazur.DivisorLineBundleRestrict
