@@ -528,6 +528,7 @@ public import FLT.Mathlib.RingTheory.LocalRing.Defs
 public import FLT.Mathlib.RingTheory.LocalRing.MaximalIdeal.Basic
 public import FLT.Mathlib.RingTheory.Localization.BaseChange
 public import FLT.Mathlib.RingTheory.MvPolynomial.HeightOneIdeal
+public import FLT.Mathlib.RingTheory.NilpotentRelationLifting
 public import FLT.Mathlib.RingTheory.Norm.Quadratic
 public import FLT.Mathlib.RingTheory.Norm.Quotient
 public import FLT.Mathlib.RingTheory.Polynomial.GaussLemma
