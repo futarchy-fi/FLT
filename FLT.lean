@@ -336,6 +336,8 @@ public import FLT.GlobalLanglandsConjectures.GLnDefs
 public import FLT.GlobalLanglandsConjectures.GLzero
 public import FLT.GroupScheme.ActualThreeAdicKummerCube
 public import FLT.GroupScheme.BialgebraBaseChange
+public import FLT.GroupScheme.CanonicalCompositionSeries
+public import FLT.GroupScheme.CanonicalFactorFiltration
 public import FLT.GroupScheme.CartierDualAlgebra
 public import FLT.GroupScheme.CartierDualAugmentation
 public import FLT.GroupScheme.CartierDualBaseChange
@@ -354,6 +356,7 @@ public import FLT.GroupScheme.CartierDualPairing
 public import FLT.GroupScheme.CartierDualPointFiltration
 public import FLT.GroupScheme.CartierDualSpecialFiber
 public import FLT.GroupScheme.CartierDualTorsor
+public import FLT.GroupScheme.CategoryDExactSubquotients
 public import FLT.GroupScheme.CompletionDifferent
 public import FLT.GroupScheme.ConnectedTensorPoint
 public import FLT.GroupScheme.ConstantCartierDual
@@ -384,6 +387,8 @@ public import FLT.GroupScheme.EtaleOrder
 public import FLT.GroupScheme.EtaleSplitting
 public import FLT.GroupScheme.FiniteFlat
 public import FLT.GroupScheme.FiniteFlatDifferentials
+public import FLT.GroupScheme.FiniteFlatExtensionKernelIso
+public import FLT.GroupScheme.FiniteFlatExtensionQuotientIso
 public import FLT.GroupScheme.FiniteFlatFiltration
 public import FLT.GroupScheme.FiniteFlatIso
 public import FLT.GroupScheme.FiniteFlatModelBaseChange
@@ -451,6 +456,8 @@ public import FLT.GroupScheme.IntegralGroupLike
 public import FLT.GroupScheme.IntegralHopfAlgebra
 public import FLT.GroupScheme.IntegralHopfPoints
 public import FLT.GroupScheme.IntegralQuotientFaithfullyFlat
+public import FLT.GroupScheme.IntegralSimpleQuotient
+public import FLT.GroupScheme.IntegralSimpleSubobject
 public import FLT.GroupScheme.IntegralSubquotientExtension
 public import FLT.GroupScheme.InvariantDerivation
 public import FLT.GroupScheme.KummerAlgebra
@@ -563,6 +570,8 @@ public import FLT.GroupScheme.RaynaudUnramifiedKernel
 public import FLT.GroupScheme.RaynaudUnramifiedQuotient
 public import FLT.GroupScheme.RestrictedScalarPointNaturality
 public import FLT.GroupScheme.ReverseExtHypothesis
+public import FLT.GroupScheme.ReverseExtSwappedExtension
+public import FLT.GroupScheme.ReverseExtVanishing
 public import FLT.GroupScheme.SemilocalFreeDescent
 public import FLT.GroupScheme.SortedFiltrationCoefficientQuotient
 public import FLT.GroupScheme.SortedFiltrationFunctoriality
