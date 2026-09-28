@@ -1,4 +1,5 @@
 
+import FLT.GaloisRepresentation.HardlyRamified.TrivialPrimeFiltrationCoextension
 import FLT.GroupScheme.CartierDualCharacterGroup
 import FLT.GroupScheme.ConstantCartierDual
 import FLT.GroupScheme.ConstantCoordinates
