@@ -696,6 +696,7 @@ public import FLT.TateCurve.LocalField
 public import FLT.TateCurve.LocalUniformization
 public import FLT.TateCurve.Model
 public import FLT.TateCurve.ModelGalois
+public import FLT.TateCurve.ModelSign
 public import FLT.TateCurve.ModelTransport
 public import FLT.TateCurve.Naturality
 public import FLT.TateCurve.ParameterEvaluation
