@@ -350,6 +350,7 @@ public import FLT.GroupScheme.RaynaudEtaleExtension
 public import FLT.GroupScheme.RaynaudExtension
 public import FLT.GroupScheme.RaynaudExtensionExists
 public import FLT.GroupScheme.RaynaudFiltrationLayers
+public import FLT.GroupScheme.RaynaudFlatKernelExactness
 public import FLT.GroupScheme.RaynaudFlatQuotient
 public import FLT.GroupScheme.RaynaudGenericSplitExtension
 public import FLT.GroupScheme.RaynaudIntegralFiltration
