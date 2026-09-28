@@ -264,6 +264,8 @@ public import FLT.GaloisRepresentation.HardlyRamified.FlatCoefficientExtension
 public import FLT.GaloisRepresentation.HardlyRamified.Frey
 public import FLT.GaloisRepresentation.HardlyRamified.InertiaTwoSquareZero
 public import FLT.GaloisRepresentation.HardlyRamified.IntegralCharacters
+public import FLT.GaloisRepresentation.HardlyRamified.KummerObject
+public import FLT.GaloisRepresentation.HardlyRamified.KummerObjectField
 public import FLT.GaloisRepresentation.HardlyRamified.KummerTwoClassNumber
 public import FLT.GaloisRepresentation.HardlyRamified.KummerTwoDyadic
 public import FLT.GaloisRepresentation.HardlyRamified.KummerTwoField
@@ -294,6 +296,7 @@ public import FLT.GroupScheme.GenericFieldChange
 public import FLT.GroupScheme.GlobalModel
 public import FLT.GroupScheme.GlobalModelAwayTwo
 public import FLT.GroupScheme.GlobalModelOverInt
+public import FLT.GroupScheme.HopfPoints
 public import FLT.GroupScheme.IntegralCoordinateAlgebra
 public import FLT.GroupScheme.IntegralEtaleAlgebra
 public import FLT.GroupScheme.IntegralEtaleModel
