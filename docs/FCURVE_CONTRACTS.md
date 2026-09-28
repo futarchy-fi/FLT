@@ -143,6 +143,22 @@ to arbitrary affine opens remain separate obligations; they are not assumed.
 [MazurDualLocalization.lean](../FLTTest/MazurDualLocalization.lean) audits the
 presheaf, restriction coherence, localization and canonical comparison endpoints.
 
+## Cohomology with module coefficients (FC08-A1)
+
+[ModuleCohomology.lean](../FLT/Mazur/ModuleCohomology.lean) constructs
+Ext-based cohomology for an actual module sheaf, with its global-section action
+and scalar action through the specified morphism to Spec k. Coefficient maps
+induce k-linear cohomology maps, with identity and composition proved.
+The unit coefficient recovers `ScalarH` by a linear equivalence.
+
+In degree zero the comparison is with actual global sections, and
+`moduleScalarH0Equiv_naturality` proves compatibility with coefficient maps.
+[MazurModuleCohomology.lean](../FLTTest/MazurModuleCohomology.lean) audits
+functoriality, unit specialization and the natural degree-zero comparison.
+Long exact sequences, finite-dimensionality in positive degrees and the genus
+construction remain separate obligations; no finiteness hypothesis is silently
+turned into a geometric proof.
+
 ## Sources and the two different kinds of curve
 
 [M] B. Mazur, *Modular curves and the Eisenstein ideal*, IHÉS 47 (1977), 33–186,
