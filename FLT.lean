@@ -346,6 +346,7 @@ public import FLT.GroupScheme.FiniteFlat
 public import FLT.GroupScheme.FiniteFlatDifferentials
 public import FLT.GroupScheme.FiniteFlatFiltration
 public import FLT.GroupScheme.FiniteFlatSubobject
+public import FLT.GroupScheme.FiniteFreeAdicComplete
 public import FLT.GroupScheme.FiniteHopfFreeness
 public import FLT.GroupScheme.FontaineCubicLifting
 public import FLT.GroupScheme.FontaineCubicNewton
@@ -369,6 +370,8 @@ public import FLT.GroupScheme.GlobalModel
 public import FLT.GroupScheme.GlobalModelAwayTwo
 public import FLT.GroupScheme.GlobalModelOverInt
 public import FLT.GroupScheme.HeightOneStructure
+public import FLT.GroupScheme.HenselianComponents
+public import FLT.GroupScheme.HenselianIdempotents
 public import FLT.GroupScheme.HopfDifferentials
 public import FLT.GroupScheme.HopfFrobenius
 public import FLT.GroupScheme.HopfPointCongruence
@@ -405,6 +408,8 @@ public import FLT.GroupScheme.LocalPointField
 public import FLT.GroupScheme.ModelPoints
 public import FLT.GroupScheme.MultiplicativeFiltrationPurity
 public import FLT.GroupScheme.PadicAlgebraPatching
+public import FLT.GroupScheme.PadicComponentLifting
+public import FLT.GroupScheme.PadicConnectedComponents
 public import FLT.GroupScheme.PadicHopfOperations
 public import FLT.GroupScheme.PadicHopfPatching
 public import FLT.GroupScheme.PadicLatticePatching
