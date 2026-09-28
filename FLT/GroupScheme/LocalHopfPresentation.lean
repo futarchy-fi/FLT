@@ -87,6 +87,7 @@ termination_by Module.finrank k A
 decreasing_by
   exact ε.finrank_frobeniusImage_lt p hA
 
+omit [CharP A p] in
 /-- A finite local commutative Hopf algebra over a perfect field has a
 minimal polynomial presentation with exactly its cotangent dimension many
 relations generating the entire kernel. -/
@@ -97,6 +98,7 @@ theorem exists_minimal_square_presentation :
       ∃ r : Fin (Module.finrank k
           (RingHom.ker (Bialgebra.counitAlgHom k A)).Cotangent) → P.Ring,
         RingHom.ker (aeval (R := k) P.val) = Ideal.span (Set.range r) := by
+  let : CharP A p := charP_of_injective_algebraMap (algebraMap k A).injective p
   let ε := Bialgebra.counitAlgHom k A
   let I := RingHom.ker ε
   let : Module.Finite k I.Cotangent := Module.Finite.of_surjective
@@ -106,6 +108,7 @@ theorem exists_minimal_square_presentation :
   obtain ⟨r, hr⟩ := exists_relations_of_generators p A P.val hx P.aeval_val_surjective
   exact ⟨P, hx, r, hr⟩
 
+omit [CharP A p] in
 /-- The minimal square presentation as actual `Algebra.Presentation` data. -/
 theorem exists_minimal_presentation :
     ∃ P : Algebra.Presentation k A
