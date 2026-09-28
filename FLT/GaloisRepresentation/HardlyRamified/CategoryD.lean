@@ -21,18 +21,18 @@ field is the fixed field of the kernel of that full action.
 namespace ThreeAdicPlan
 
 /-- A finite flat commutative model over `R`, together with its rational geometric points. -/
-structure FF (R : Type) [CommRing R] [Algebra R ℚ] where
+structure FFQ (R : Type) [CommRing R] [Algebra R ℚ] where
   /-- The finite continuous Galois module of geometric points. -/
   points : FiniteContinuousGaloisModule
   /-- The coordinate Hopf algebra and its equivariant generic point comparison. -/
   model : HasFiniteFlatModel R points
 
 /-- View an existing model over `ℤ[1/2]` as a finite-flat object. -/
-def FF.ofModel {W : FiniteContinuousGaloisModule} (M : ModelOverZInvTwo W) : FF ZInvTwo :=
+def FFQ.ofModel {W : FiniteContinuousGaloisModule} (M : ModelOverZInvTwo W) : FFQ ZInvTwo :=
   ⟨W, M.toHasFiniteFlatModel⟩
 
 /-- Multiplication by `n` vanishes on all geometric points. -/
-def KilledBy {R : Type} [CommRing R] [Algebra R ℚ] (n : ℕ) (H : FF R) : Prop :=
+def KilledBy {R : Type} [CommRing R] [Algebra R ℚ] (n : ℕ) (H : FFQ R) : Prop :=
   ∀ w : H.points, n • w = 0
 
 /-- A subgroup of points is preserved by every rational Galois automorphism. -/
@@ -41,12 +41,12 @@ def GaloisStable (W : FiniteContinuousGaloisModule) (A : AddSubgroup W) : Prop :
 
 /-- A nonzero finite-flat object with no nonzero proper Galois-stable point subgroup.
 Over the Dedekind base, these are precisely the subobjects obtained by schematic closure. -/
-def Simple {R : Type} [CommRing R] [Algebra R ℚ] (H : FF R) : Prop :=
+def Simple {R : Type} [CommRing R] [Algebra R ℚ] (H : FFQ R) : Prop :=
   Nontrivial H.points ∧ ∀ A : AddSubgroup H.points, GaloisStable H.points A → A = ⊥ ∨ A = ⊤
 
 /-- Three-primary finite-flat models whose inertia at two acts with square-zero difference
 from the identity on the full point group. -/
-structure InCategoryD (H : FF ZInvTwo) : Prop where
+structure InCategoryD (H : FFQ ZInvTwo) : Prop where
   /-- The order of the point group is a power of three. -/
   threePrimary : ∃ n : ℕ, Nat.card H.points = 3 ^ n
   /-- For each inertia element, `(σ - 1)²` vanishes pointwise. -/
@@ -59,7 +59,7 @@ structure InCategoryD (H : FF ZInvTwo) : Prop where
 /-- A category-D model with a prescribed geometric Galois module. -/
 structure DModel (W : FiniteContinuousGaloisModule) extends ModelOverZInvTwo W where
   /-- The chosen model satisfies the category-D conditions. -/
-  inCategoryD : InCategoryD (FF.ofModel toModelOverZInvTwo)
+  inCategoryD : InCategoryD (FFQ.ofModel toModelOverZInvTwo)
 
 namespace FiniteContinuousGaloisModule
 
@@ -147,20 +147,20 @@ theorem pointField_le_prod_right (W V : FiniteContinuousGaloisModule) :
 end FiniteContinuousGaloisModule
 
 /-- The number field cut out by the complete geometric point action of a model. -/
-abbrev PointField {R : Type} [CommRing R] [Algebra R ℚ] (H : FF R) : Type :=
+abbrev PointField {R : Type} [CommRing R] [Algebra R ℚ] (H : FFQ R) : Type :=
   H.points.pointField
 
 /-- A rational field is a point field when it is isomorphic to the full-action fixed field. -/
-def IsPointField {R : Type} [CommRing R] [Algebra R ℚ] (H : FF R)
+def IsPointField {R : Type} [CommRing R] [Algebra R ℚ] (H : FFQ R)
     (L : Type) [Field L] [Algebra ℚ L] : Prop := Nonempty (PointField H ≃ₐ[ℚ] L)
 
 /-- The canonical point field is a realization of itself. -/
-theorem isPointField_self {R : Type} [CommRing R] [Algebra R ℚ] (H : FF R) :
+theorem isPointField_self {R : Type} [CommRing R] [Algebra R ℚ] (H : FFQ R) :
     IsPointField H (PointField H) := ⟨AlgEquiv.refl⟩
 
 /-- The product finite-flat object, using the tensor-product Hopf-algebra construction. -/
-def FF.prod {R : Type} [CommRing R] [Algebra R ℚ] [IsFractionRing R ℚ]
-    (H J : FF R) : FF R :=
+def FFQ.prod {R : Type} [CommRing R] [Algebra R ℚ] [IsFractionRing R ℚ]
+    (H J : FFQ R) : FFQ R :=
   ⟨H.points.prod J.points, Classical.choice
     ((nonempty_hasFiniteFlatModel_iff (H.points.prod J.points)).mpr
       (GaloisModule.IsFiniteFlat.prod R ℚ (AlgebraicClosure ℚ) H.points
@@ -168,11 +168,11 @@ def FF.prod {R : Type} [CommRing R] [Algebra R ℚ] [IsFractionRing R ℚ]
 
 /-- A common annihilator kills the product. -/
 theorem KilledBy.prod {R : Type} [CommRing R] [Algebra R ℚ] [IsFractionRing R ℚ]
-    {n : ℕ} {H J : FF R} (hH : KilledBy n H) (hJ : KilledBy n J) :
+    {n : ℕ} {H J : FFQ R} (hH : KilledBy n H) (hJ : KilledBy n J) :
     KilledBy n (H.prod J) := fun ⟨w, v⟩ ↦ Prod.ext (hH w) (hJ v)
 
 /-- Category D is closed under products. -/
-theorem InCategoryD.prod {H J : FF ZInvTwo} (hH : InCategoryD H) (hJ : InCategoryD J) :
+theorem InCategoryD.prod {H J : FFQ ZInvTwo} (hH : InCategoryD H) (hJ : InCategoryD J) :
     InCategoryD (H.prod J) := by
   constructor
   · obtain ⟨m, hm⟩ := hH.threePrimary

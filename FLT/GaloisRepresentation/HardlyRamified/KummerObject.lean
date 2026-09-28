@@ -63,7 +63,7 @@ def kummerTwoModel : ModelOverZInvTwo kummerTwoPoints where
   points_bijective := Function.bijective_id
 
 /-- The finite-flat Kummer object attached to the unit two and killed by three. -/
-def kummerTwoObject : FF ZInvTwo := FF.ofModel kummerTwoModel
+def kummerTwoObject : FFQ ZInvTwo := FFQ.ofModel kummerTwoModel
 
 /-- Restriction identifies generic points with points of the integral coordinate algebra. -/
 def kummerTwoPointEquiv : kummerTwoPoints ≃ (KummerTwoCoordinate →ₐ[ZInvTwo]
