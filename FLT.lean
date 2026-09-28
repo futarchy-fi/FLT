@@ -365,6 +365,7 @@ public import FLT.GroupScheme.FontaineProperty
 public import FLT.GroupScheme.FontaineQuotientValuation
 public import FLT.GroupScheme.FontaineRootCriterion
 public import FLT.GroupScheme.GenericFieldChange
+public import FLT.GroupScheme.GenericMorphismScalarExtension
 public import FLT.GroupScheme.GlobalModel
 public import FLT.GroupScheme.GlobalModelAwayTwo
 public import FLT.GroupScheme.GlobalModelOverInt
