@@ -73,7 +73,7 @@ def localizedReductionEquiv (I : Ideal R) (M : Submonoid (MvPolynomial σ R)) :
     (quotientEquivQuotientMvPolynomial I).symm (localizedReduction_denominators I M)
 
 /-- The localized reduction comparison sends each polynomial to its coefficient reduction. -/
-@[simp] theorem localizedReductionEquiv_mk (I : Ideal R)
+theorem localizedReductionEquiv_mk (I : Ideal R)
     (M : Submonoid (MvPolynomial σ R)) (f : MvPolynomial σ R) :
     localizedReductionEquiv I M
       (Ideal.Quotient.mk _ (algebraMap _ (Localization M) f)) =
@@ -96,7 +96,7 @@ def localizedModPrincipalEquiv (p : R) (M : Submonoid (MvPolynomial σ R)) :
     rfl)).trans (localizedReductionEquiv (Ideal.span {p}) M)
 
 /-- The principal reduction comparison agrees with coefficient reduction on polynomials. -/
-@[simp] theorem localizedModPrincipalEquiv_mk (p : R)
+theorem localizedModPrincipalEquiv_mk (p : R)
     (M : Submonoid (MvPolynomial σ R)) (f : MvPolynomial σ R) :
     localizedModPrincipalEquiv p M
       (Ideal.Quotient.mk _ (algebraMap _ (Localization M) f)) =
