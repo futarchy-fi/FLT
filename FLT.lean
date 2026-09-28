@@ -234,6 +234,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.AugmentedFieldDegree
 public import FLT.GaloisRepresentation.HardlyRamified.AugmentedFieldUnramified
 public import FLT.GaloisRepresentation.HardlyRamified.AugmentedFieldUnramifiedTwo
 public import FLT.GaloisRepresentation.HardlyRamified.AugmentedLocalModel
+public import FLT.GaloisRepresentation.HardlyRamified.AugmentedPointFieldCompletion
 public import FLT.GaloisRepresentation.HardlyRamified.B5Inputs
 public import FLT.GaloisRepresentation.HardlyRamified.CategoryD
 public import FLT.GaloisRepresentation.HardlyRamified.CategoryDInertia
