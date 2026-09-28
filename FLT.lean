@@ -868,6 +868,7 @@ public import FLT.Mazur.SectionKernelLocal
 public import FLT.Mazur.SmoothCurveDimension
 public import FLT.Mazur.SmoothDimension
 public import FLT.Mazur.SmoothDimensionBound
+public import FLT.Mazur.SmoothOpenSectionCartier
 public import FLT.Mazur.SmoothSectionCartier
 public import FLT.MazurChapter.AdmissibleGroupSchemes
 public import FLT.MazurW
