@@ -849,6 +849,7 @@ public import FLT.Mazur.CartierChartFlat
 public import FLT.Mazur.CartierCharts
 public import FLT.Mazur.CartierTensorRank
 public import FLT.Mazur.CechFreeOpen
+public import FLT.Mazur.CechFreeOpenStalk
 public import FLT.Mazur.CechFreeResolution
 public import FLT.Mazur.CechSheafH
 public import FLT.Mazur.CechSheafHZero
