@@ -129,19 +129,32 @@ the three standard Lean axioms.
 module-valued dual presheaf: sections on U are morphisms of module sheaves
 from the restricted module to the structure module. Restriction has proved
 identity, composition, scalar compatibility and evaluation equations.
-The sheaf condition and comparison with restriction of the resulting dual
-sheaf remain separate obligations (FC10d3).
+[ModuleSheafDualSheaf.lean](../FLT/Mazur/ModuleSheafDualSheaf.lean) proves
+the sheaf condition by gluing local linear morphisms, constructs the actual
+dual sheaf, and proves contravariance and compatibility with open restriction
+(FC10d3). The positive-divisor line bundle and its Cartier-chart comparisons
+remain a separate construction.
 
 [ModuleSheafTensorAffine.lean](../FLT/Mazur/ModuleSheafTensorAffine.lean) proves
 localization comparisons on basic opens of Spec R for actual quasi-coherent
 module sheaves, without requiring free section modules. The basic-open
 tensor is linearly equivalent to sections of the tilde of the global tensor.
 The canonical map from that tilde to the existing sheaf tensor agrees with
-the sheafification unit and pure tensors. Its invertibility and transport
-to arbitrary affine opens remain separate obligations; they are not assumed.
+the sheafification unit and pure tensors.
+[ModuleSheafTensorTilde.lean](../FLT/Mazur/ModuleSheafTensorTilde.lean) proves
+that map invertible using the basic-open basis and sheafification.
+[ModuleSheafTensorAffineOpen.lean](../FLT/Mazur/ModuleSheafTensorAffineOpen.lean)
+then transports the comparison to every affine open: sections of the tensor
+are canonically the tensor of sections for quasi-coherent inputs, including
+locally free sheaves of any rank. Both pure-tensor equations are proved;
+no global freeness of the section modules is assumed (FC10e).
 
 [MazurDualLocalization.lean](../FLTTest/MazurDualLocalization.lean) audits the
 presheaf, restriction coherence, localization and canonical comparison endpoints.
+[MazurDualTensorSheaf.lean](../FLTTest/MazurDualTensorSheaf.lean) additionally
+checks that the actual dual sheaf, its restriction isomorphism, and the affine
+tensor equivalences depend only on the three standard Lean axioms.
+These results do not prove divisor-sum/tensor compatibility or ampleness.
 
 ## Cohomology with module coefficients (FC08-A1)
 
