@@ -94,6 +94,35 @@ This proves the split section-sum construction. Descent of cyclic subgroups
 (G1-A5), the degree/ample subgroup criterion, and construction of the modular
 curve remain separate obligations.
 
+## Integrated sheaf and cohomology foundations
+
+The following modules give proved intermediate constructions, not completed
+genus or positive-divisor line-bundle packages:
+
+- [CurveGenus.lean](../FLT/Mazur/CurveGenus.lean) compares the canonical constants
+  map with actual degree-zero cohomology and proves dimension one under
+  `HasConstantGlobalSections`. That condition remains an input; finiteness
+  of degree-one cohomology and the genus construction are not supplied.
+- [DivisorRestrictCoherence.lean](../FLT/Mazur/DivisorRestrictCoherence.lean)
+  proves identity/composition for chart dual restriction, compatibility with
+  chart tensor comparisons, and transport along open immersions.
+- [DivisorInvertibleSheaf.lean](../FLT/Mazur/DivisorInvertibleSheaf.lean)
+  proves that the actual Cartier ideal module sheaf is locally free of rank one.
+  This is the ideal (negative divisor); its dual sheaf is a separate construction.
+- [ModuleSheafTensor.lean](../FLT/Mazur/ModuleSheafTensor.lean) constructs the
+  sheaf tensor by sheafification and proves its bilinear universal property.
+  [ModuleSheafTensorRestrict.lean](../FLT/Mazur/ModuleSheafTensorRestrict.lean)
+  proves restriction compatibility and comparisons on trivializing charts.
+  The general affine comparison must not assume all affine line bundles are free.
+- [CartierTensorRank.lean](../FLT/Mazur/CartierTensorRank.lean) identifies the
+  local rank-one predicates in these two developments and proves that the
+  actual sheaf tensor of Cartier ideal modules is locally free of rank one.
+  It does not identify this tensor with the product ideal.
+
+[MazurSheafIntegration.lean](../FLTTest/MazurSheafIntegration.lean) audits the
+restriction, tensor, rank-one and conditional degree-zero endpoints against
+the three standard Lean axioms.
+
 ## Sources and the two different kinds of curve
 
 [M] B. Mazur, *Modular curves and the Eisenstein ideal*, IHÉS 47 (1977), 33–186,
