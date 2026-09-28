@@ -843,6 +843,7 @@ public import FLT.Mathlib.Topology.Instances.Matrix
 public import FLT.Mathlib.Topology.MetricSpace.ProperSpace.InfinitePlace
 public import FLT.Mathlib.Topology.MetricSpace.Pseudo.Matrix
 public import FLT.Mathlib.Topology.Polish
+public import FLT.Mazur.AffineCoherent
 public import FLT.Mazur.AffinePullbackIdeal
 public import FLT.Mazur.CartierChartFlat
 public import FLT.Mazur.CartierCharts
