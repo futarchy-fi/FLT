@@ -286,6 +286,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.TameInertiaCyclic
 public import FLT.GaloisRepresentation.HardlyRamified.ThreeAdicAlgebra
 public import FLT.GaloisRepresentation.HardlyRamified.ThreeAdicDegree
 public import FLT.GaloisRepresentation.HardlyRamified.ThreeGroupConjugation
+public import FLT.GaloisRepresentation.HardlyRamified.ThreeGroupLocalUnramified
 public import FLT.GaloisRepresentation.HardlyRamified.Threeadic
 public import FLT.GaloisRepresentation.HardlyRamified.TraceLeaves
 public import FLT.GaloisRepresentation.HardlyRamified.TraceReducibility
