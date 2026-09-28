@@ -360,6 +360,7 @@ public import FLT.GroupScheme.FiniteFlat
 public import FLT.GroupScheme.FiniteFlatDifferentials
 public import FLT.GroupScheme.FiniteFlatFiltration
 public import FLT.GroupScheme.FiniteFlatIso
+public import FLT.GroupScheme.FiniteFlatModelBaseChange
 public import FLT.GroupScheme.FiniteFlatRestrictedScalarExtension
 public import FLT.GroupScheme.FiniteFlatScalarExtension
 public import FLT.GroupScheme.FiniteFlatSectionDescent
