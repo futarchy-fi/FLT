@@ -114,6 +114,11 @@ intermediate results toward the genus package:
   identifies its sections on Cartier charts with the dual ideal modules and
   intertwines sheaf restriction with `CartierChart.dualRestrict`. Dualized chart
   trivializations prove local rank one; the unit ideal gives the structure module.
+- [DivisorLineBundleRestrict.lean](../FLT/Mazur/DivisorLineBundleRestrict.lean)
+  constructs `divisorLineBundleRestrictIso` from the actual ideal-module comparison.
+  Its affine evaluation agrees with `divisorChartTransport`. The comparisons on
+  nested opens satisfy identity and composition using `restrictFunctorId` and
+  `restrictFunctorComp` (FC10f), with no additional hypotheses.
 - [ModuleSheafTensor.lean](../FLT/Mazur/ModuleSheafTensor.lean) constructs the
   sheaf tensor by sheafification and proves its bilinear universal property.
   [ModuleSheafTensorRestrict.lean](../FLT/Mazur/ModuleSheafTensorRestrict.lean)
@@ -141,6 +146,9 @@ dual sheaf, and proves contravariance and compatibility with open restriction
 tensor/product and general pullback comparisons remain separate obligations.
 
 FC10d checked 2026-09-28 18:29 UTC: `lake build FLT.Mazur.DivisorLineBundleSheaf`,
+`lake build FLT` and `lake lint -- --no-build FLT` passed without warnings.
+
+FC10f checked 2026-09-28 19:12 UTC: `lake build FLT.Mazur.DivisorLineBundleRestrict`,
 `lake build FLT` and `lake lint -- --no-build FLT` passed without warnings.
 
 [ModuleSheafTensorAffine.lean](../FLT/Mazur/ModuleSheafTensorAffine.lean) proves
