@@ -340,6 +340,7 @@ public import FLT.GroupScheme.ConvolutionBaseChange
 public import FLT.GroupScheme.CoordinateOrder
 public import FLT.GroupScheme.DiagonalizableFiniteFlat
 public import FLT.GroupScheme.DiagonalizablePointPurity
+public import FLT.GroupScheme.EtaleGenericMorphismExtension
 public import FLT.GroupScheme.EtaleInertia
 public import FLT.GroupScheme.EtaleModelUnramified
 public import FLT.GroupScheme.EtaleOrder
