@@ -395,6 +395,7 @@ public import FLT.GroupScheme.LocalIntegralPowerBasis
 public import FLT.GroupScheme.LocalPointField
 public import FLT.GroupScheme.ModelPoints
 public import FLT.GroupScheme.MultiplicativeFiltrationPurity
+public import FLT.GroupScheme.OrderThreeModelIdentification
 public import FLT.GroupScheme.PadicAlgebraPatching
 public import FLT.GroupScheme.PadicHopfOperations
 public import FLT.GroupScheme.PadicHopfPatching
