@@ -11,6 +11,20 @@ Genus, cohomological base change and line-bundle ampleness still have representa
 The dimension bridge from smooth relative dimension to topological dimension also needs a port.
 The complete F-Curve family is not yet an implementation queue.
 
+## FC13–FC14 proofs
+
+[ClosedSubsets.lean](../FLT/Mazur/ClosedSubsets.lean) proves
+`properClosedSubsetFinite`, including the empty subset.
+[CurveFinite.lean](../FLT/Mazur/CurveFinite.lean) proves
+`nonconstantProperCurveFinite` for arbitrary separated targets over a field.
+The argument handles nonclosed target points as well as closed fibers.
+Both exact contracts are audited in
+[MazurCurveFinite.lean](../FLTTest/MazurCurveFinite.lean).
+
+These results consume the stated dimension bound. The smooth-dimension bridge
+FC12 and the rational-section bridge FC15 remain separate tasks; this does not
+supply modular curves or Mazur's arithmetic input.
+
 ## Sources and the two different kinds of curve
 
 [M] B. Mazur, *Modular curves and the Eisenstein ideal*, IHÉS 47 (1977), 33–186,
