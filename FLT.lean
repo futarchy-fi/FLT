@@ -395,6 +395,7 @@ public import FLT.GroupScheme.PadicAlgebraPatching
 public import FLT.GroupScheme.PadicComponentLifting
 public import FLT.GroupScheme.PadicConnectedComponents
 public import FLT.GroupScheme.PadicConnectedEtaleSplitting
+public import FLT.GroupScheme.PadicConstantMuThreeSplitting
 public import FLT.GroupScheme.PadicHopfOperations
 public import FLT.GroupScheme.PadicHopfPatching
 public import FLT.GroupScheme.PadicIdentityComponentAntipode
