@@ -692,6 +692,7 @@ public import FLT.PoitouTate
 public import FLT.Proof
 public import FLT.QuaternionAlgebra.FiniteProjectiveUnits
 public import FLT.QuaternionAlgebra.NumberField
+public import FLT.RepresentationTheory.NormalPSubgroup
 public import FLT.Slop.DimensionTheorem
 public import FLT.Slop.DimensionTheorem.Defs
 public import FLT.Slop.DimensionTheorem.DimEqDelta
