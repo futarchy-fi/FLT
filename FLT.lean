@@ -854,6 +854,7 @@ public import FLT.Mazur.AffineCohomologyVanishingRelCoordinates
 public import FLT.Mazur.AffineCohomologyVanishingRelDescent
 public import FLT.Mazur.AffineCohomologyVanishingRelExact
 public import FLT.Mazur.AffineCohomologyVanishingRelInjective
+public import FLT.Mazur.AffineCohomologyVanishingSpectrum
 public import FLT.Mazur.AffinePullbackIdeal
 public import FLT.Mazur.CartierChartFlat
 public import FLT.Mazur.CartierCharts
