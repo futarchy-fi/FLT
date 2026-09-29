@@ -883,8 +883,12 @@ public import FLT.Mazur.CechInjectiveAcyclic
 public import FLT.Mazur.CechSheafH
 public import FLT.Mazur.CechSheafHZero
 public import FLT.Mazur.CechSortingCoordinates
+public import FLT.Mazur.CechSortingHomotopy
 public import FLT.Mazur.CechSortingHomotopyCoordinates
+public import FLT.Mazur.CechSortingHomotopyEvaluation
 public import FLT.Mazur.CechSortingMaps
+public import FLT.Mazur.CechSortingRecursiveHomotopy
+public import FLT.Mazur.CechSortingTupleChains
 public import FLT.Mazur.ClosedDescentCharts
 public import FLT.Mazur.ClosedDescentGluingData
 public import FLT.Mazur.ClosedDescentGluingMaps
@@ -925,6 +929,7 @@ public import FLT.Mazur.EtaleDimGe
 public import FLT.Mazur.EtaleDimLe
 public import FLT.Mazur.FCurveContracts
 public import FLT.Mazur.FamilyTransport
+public import FLT.Mazur.FiniteAffineCoverDimension
 public import FLT.Mazur.GenericFibers
 public import FLT.Mazur.GlobalClosedModuleDescent
 public import FLT.Mazur.IdealModuleSheaf
