@@ -39,7 +39,8 @@ def reducedClosedSubscheme (Z : Closeds X) : Scheme.{u} :=
 def reducedClosedSubschemeι (Z : Closeds X) : reducedClosedSubscheme Z ⟶ X :=
   (IdealSheafData.vanishingIdeal Z).subschemeι
 
-instance integralClosedSupportInst1 (Z : Closeds X) : IsClosedImmersion (reducedClosedSubschemeι Z) :=
+instance integralClosedSupportInst1 (Z : Closeds X) :
+    IsClosedImmersion (reducedClosedSubschemeι Z) :=
   inferInstanceAs (IsClosedImmersion (IdealSheafData.vanishingIdeal Z).subschemeι)
 
 @[simp]
@@ -109,10 +110,12 @@ def supportSubscheme (M : X.Modules) [M.IsFinitePresentation] : Scheme.{u} :=
 def supportSubschemeι (M : X.Modules) [M.IsFinitePresentation] : supportSubscheme M ⟶ X :=
   reducedClosedSubschemeι (closedSupport M)
 
-instance integralClosedSupportInst2 (M : X.Modules) [M.IsFinitePresentation] : IsClosedImmersion (supportSubschemeι M) :=
+instance integralClosedSupportInst2 (M : X.Modules) [M.IsFinitePresentation] :
+    IsClosedImmersion (supportSubschemeι M) :=
   inferInstanceAs (IsClosedImmersion (reducedClosedSubschemeι (closedSupport M)))
 
-instance integralClosedSupportInst3 (M : X.Modules) [M.IsFinitePresentation] : IsReduced (supportSubscheme M) :=
+instance integralClosedSupportInst3 (M : X.Modules) [M.IsFinitePresentation] :
+    IsReduced (supportSubscheme M) :=
   inferInstanceAs (IsReduced (reducedClosedSubscheme (closedSupport M)))
 
 @[simp]
