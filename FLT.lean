@@ -890,6 +890,8 @@ public import FLT.Mazur.CechSortingHomotopyEvaluation
 public import FLT.Mazur.CechSortingMaps
 public import FLT.Mazur.CechSortingRecursiveHomotopy
 public import FLT.Mazur.CechSortingTupleChains
+public import FLT.Mazur.ChowAffineCover
+public import FLT.Mazur.ChowAffineEmbedding
 public import FLT.Mazur.ClosedDescentCharts
 public import FLT.Mazur.ClosedDescentGluingData
 public import FLT.Mazur.ClosedDescentGluingMaps
