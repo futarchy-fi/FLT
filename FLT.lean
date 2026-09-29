@@ -928,6 +928,7 @@ public import FLT.Mazur.ProjectiveTwistCechCohomologyTwist
 public import FLT.Mazur.ProjectiveTwistCocycle
 public import FLT.Mazur.ProjectiveTwistGradedCech
 public import FLT.Mazur.ProjectiveTwistTensor
+public import FLT.Mazur.ProjectiveTwistTensorInverse
 public import FLT.Mazur.ProjectiveTwistingSheaf
 public import FLT.Mazur.RationalFibers
 public import FLT.Mazur.RelativeCartier
