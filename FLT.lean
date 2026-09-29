@@ -888,6 +888,7 @@ public import FLT.Mazur.ClosedPushforwardFull
 public import FLT.Mazur.ClosedPushforwardRestriction
 public import FLT.Mazur.ClosedSubsets
 public import FLT.Mazur.CoherentClosedPushforward
+public import FLT.Mazur.CoherentComparisonLocus
 public import FLT.Mazur.CoherentDevissage
 public import FLT.Mazur.CoherentRestriction
 public import FLT.Mazur.CoherentSubquotient
