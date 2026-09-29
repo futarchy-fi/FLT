@@ -899,6 +899,7 @@ public import FLT.Mazur.ClosedModuleDescent
 public import FLT.Mazur.ClosedPushforwardCohomology
 public import FLT.Mazur.ClosedPushforwardFull
 public import FLT.Mazur.ClosedPushforwardRestriction
+public import FLT.Mazur.ClosedSubschemeCohomology
 public import FLT.Mazur.ClosedSubsets
 public import FLT.Mazur.CoherentAffineCoverSections
 public import FLT.Mazur.CoherentClosedPushforward
