@@ -937,6 +937,7 @@ public import FLT.Mazur.ModuleStalkExact
 public import FLT.Mazur.NeronPolygonPredicate
 public import FLT.Mazur.OpenSheafExtensionExact
 public import FLT.Mazur.OpenSheafExtensionStalks
+public import FLT.Mazur.OpenSheafFreeComparison
 public import FLT.Mazur.OpenSheafRestriction
 public import FLT.Mazur.OverPoints
 public import FLT.Mazur.PolygonPinchingDiagram
