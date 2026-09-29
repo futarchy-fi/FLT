@@ -861,6 +861,8 @@ public import FLT.Mazur.AffineCoverCohomology
 public import FLT.Mazur.AffineCoverIntersections
 public import FLT.Mazur.AffineModuleSupport
 public import FLT.Mazur.AffinePullbackIdeal
+public import FLT.Mazur.AffineStalkExtension
+public import FLT.Mazur.AffineStalkMorphism
 public import FLT.Mazur.CartierChartFlat
 public import FLT.Mazur.CartierCharts
 public import FLT.Mazur.CartierTensorRank
@@ -894,6 +896,7 @@ public import FLT.Mazur.ClosedSubsets
 public import FLT.Mazur.CoherentClosedPushforward
 public import FLT.Mazur.CoherentComparisonLocus
 public import FLT.Mazur.CoherentDevissage
+public import FLT.Mazur.CoherentGenericComparison
 public import FLT.Mazur.CoherentOpenDescent
 public import FLT.Mazur.CoherentRestriction
 public import FLT.Mazur.CoherentSubquotient
