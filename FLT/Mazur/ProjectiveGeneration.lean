@@ -191,7 +191,7 @@ lemma globalEvaluation_cancel {X : Scheme.{u}} {F G : X.Modules} {κ : Type u}
   exact congrArg (fun t ↦ t.val (op U)) he
 
 /-- The common-degree extensions of spanning chart families give an epimorphism. -/
-theorem globalEvaluation_epi_of_chart_generators [Finite ι]
+theorem globalEvaluation_epi_of_chart_generators
     (F : (space R ι).Modules) [F.IsFinitePresentation]
     (n : ι → ℕ) (s : ∀ i, Fin (n i) → chartSections R ι F i) (d : ℕ)
     (σ : (Σ i, Fin (n i)) → Γ(twistTensor R ι F (d : ℤ), ⊤))
