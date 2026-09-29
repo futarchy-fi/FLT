@@ -906,6 +906,7 @@ public import FLT.Mazur.CoherentComparisonLocus
 public import FLT.Mazur.CoherentDevissage
 public import FLT.Mazur.CoherentGenericComparison
 public import FLT.Mazur.CoherentGenericExtension
+public import FLT.Mazur.CoherentGenericIdealEmbedding
 public import FLT.Mazur.CoherentOpenDescent
 public import FLT.Mazur.CoherentRestriction
 public import FLT.Mazur.CoherentSubmoduleEnlargement
