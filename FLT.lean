@@ -917,6 +917,7 @@ public import FLT.Mazur.ProjectiveSpaceCharts
 public import FLT.Mazur.ProjectiveTwistCech
 public import FLT.Mazur.ProjectiveTwistCechCohomologyContraction
 public import FLT.Mazur.ProjectiveTwistCechCohomologyCoordinates
+public import FLT.Mazur.ProjectiveTwistCechCohomologySum
 public import FLT.Mazur.ProjectiveTwistCocycle
 public import FLT.Mazur.ProjectiveTwistGradedCech
 public import FLT.Mazur.ProjectiveTwistingSheaf
