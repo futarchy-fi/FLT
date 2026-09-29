@@ -965,6 +965,7 @@ public import FLT.Mazur.ProjectiveOverlapModuleLocalization
 public import FLT.Mazur.ProjectiveSectionExtensionCharts
 public import FLT.Mazur.ProjectiveSectionExtensionCoordinates
 public import FLT.Mazur.ProjectiveSpaceCharts
+public import FLT.Mazur.ProjectiveTripleModuleLocalization
 public import FLT.Mazur.ProjectiveTwistCech
 public import FLT.Mazur.ProjectiveTwistCechCohomologyContraction
 public import FLT.Mazur.ProjectiveTwistCechCohomologyCoordinates
