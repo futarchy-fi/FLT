@@ -846,6 +846,7 @@ public import FLT.Mathlib.Topology.Polish
 public import FLT.Mazur.AffineClosedModuleDescent
 public import FLT.Mazur.AffineCoherent
 public import FLT.Mazur.AffineCoherentSubmoduleExtension
+public import FLT.Mazur.AffineCoherentSubmoduleRestriction
 public import FLT.Mazur.AffineCohomologyVanishingAffine
 public import FLT.Mazur.AffineCohomologyVanishingCechSequence
 public import FLT.Mazur.AffineCohomologyVanishingCofinal
@@ -970,6 +971,7 @@ public import FLT.Mazur.ModuleSheafTensorTilde
 public import FLT.Mazur.ModuleSheafUnitCocycle
 public import FLT.Mazur.ModuleSheafUnitCocycleRestrict
 public import FLT.Mazur.ModuleStalkExact
+public import FLT.Mazur.ModuleSubobjectCoverEquality
 public import FLT.Mazur.NeronPolygonPredicate
 public import FLT.Mazur.OpenSheafCohomology
 public import FLT.Mazur.OpenSheafExtensionExact
