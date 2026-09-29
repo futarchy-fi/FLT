@@ -850,6 +850,7 @@ public import FLT.Mazur.AffineCohomologyVanishingCovers
 public import FLT.Mazur.AffineCohomologyVanishingDescent
 public import FLT.Mazur.AffineCohomologyVanishingLocal
 public import FLT.Mazur.AffineCohomologyVanishingOne
+public import FLT.Mazur.AffineCohomologyVanishingRelCoordinates
 public import FLT.Mazur.AffineCohomologyVanishingRelDescent
 public import FLT.Mazur.AffineCohomologyVanishingRelInjective
 public import FLT.Mazur.AffinePullbackIdeal
