@@ -322,11 +322,13 @@ own ring, which is not enough to conclude finiteness over the base ring.
 General projective/proper coherent cohomology finiteness remains open.
 
 `ClosedPushforwardCohomology.lean` identifies coherent closed-direct-image
-cohomology with that on the closed subscheme, linearly over the specified base.
+cohomology with that on the closed subscheme, linearly over the specified base. The comparison is natural in coefficient
+morphisms, including restriction to an arbitrary base ring and the existing
+field-valued scalar cohomology maps.
 `ClosedSubschemeCohomology.lean` transfers the ambient finite-cover vanishing
 bound and proves equivalence of base-ring finiteness on both sides. This does
 not supply the still-missing projective coherent finiteness input.
-`FLTTest/MazurAffineCohomology.lean` audits fourteen comparison, vanishing and
+`FLTTest/MazurAffineCohomology.lean` audits nineteen comparison, naturality, vanishing and
 conditional-finiteness endpoints against the three standard logical axioms.
 
 `CoherentDevissage.lean` defines support using actual additive stalks and proves

@@ -96,3 +96,28 @@ depends on axioms: [propext, Classical.choice, Quot.sound] -/
 
 end FLT.Mazur.FCurve
 
+
+/-- info: 'FLT.Mazur.PushforwardCech.moduleCechEquiv_naturality'
+depends on axioms: [propext, Classical.choice, Quot.sound] -/
+#guard_msgs (whitespace := lax) in
+#print axioms FLT.Mazur.PushforwardCech.moduleCechEquiv_naturality
+
+/-- info: 'FLT.Mazur.FCurve.closedPushforwardCoverHEquiv_naturality'
+depends on axioms: [propext, Classical.choice, Quot.sound] -/
+#guard_msgs (whitespace := lax) in
+#print axioms FLT.Mazur.FCurve.closedPushforwardCoverHEquiv_naturality
+
+/-- info: 'FLT.Mazur.FCurve.closedPushforwardModuleHEquiv_naturality'
+depends on axioms: [propext, Classical.choice, Quot.sound] -/
+#guard_msgs (whitespace := lax) in
+#print axioms FLT.Mazur.FCurve.closedPushforwardModuleHEquiv_naturality
+
+/-- info: 'FLT.Mazur.FCurve.closedPushforwardRingHEquiv_naturality'
+depends on axioms: [propext, Classical.choice, Quot.sound] -/
+#guard_msgs (whitespace := lax) in
+#print axioms FLT.Mazur.FCurve.closedPushforwardRingHEquiv_naturality
+
+/-- info: 'FLT.Mazur.FCurve.closedPushforwardScalarHEquiv_naturality'
+depends on axioms: [propext, Classical.choice, Quot.sound] -/
+#guard_msgs (whitespace := lax) in
+#print axioms FLT.Mazur.FCurve.closedPushforwardScalarHEquiv_naturality
