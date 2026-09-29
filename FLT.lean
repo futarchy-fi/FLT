@@ -986,6 +986,8 @@ public import FLT.Mazur.PrincipalSubmoduleOverlap
 public import FLT.Mazur.PrincipalSubmoduleSectionLocalization
 public import FLT.Mazur.ProjectiveChartDenominators
 public import FLT.Mazur.ProjectiveCoherentCharts
+public import FLT.Mazur.ProjectiveGeneration
+public import FLT.Mazur.ProjectiveGenerationEventually
 public import FLT.Mazur.ProjectiveLineCharts
 public import FLT.Mazur.ProjectiveLineEndpoints
 public import FLT.Mazur.ProjectiveOverlapModuleLocalization
