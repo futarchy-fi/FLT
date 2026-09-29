@@ -865,6 +865,7 @@ public import FLT.Mazur.CechSheafH
 public import FLT.Mazur.CechSheafHZero
 public import FLT.Mazur.ClosedImmersionModulePushforward
 public import FLT.Mazur.ClosedModuleDescent
+public import FLT.Mazur.ClosedPushforwardFull
 public import FLT.Mazur.ClosedPushforwardRestriction
 public import FLT.Mazur.ClosedSubsets
 public import FLT.Mazur.CoherentClosedPushforward
