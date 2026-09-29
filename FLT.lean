@@ -858,6 +858,7 @@ public import FLT.Mazur.AffineCohomologyVanishingRelDescent
 public import FLT.Mazur.AffineCohomologyVanishingRelExact
 public import FLT.Mazur.AffineCohomologyVanishingRelInjective
 public import FLT.Mazur.AffineCohomologyVanishingSpectrum
+public import FLT.Mazur.AffineCoverCohomology
 public import FLT.Mazur.AffineCoverIntersections
 public import FLT.Mazur.AffineModuleSupport
 public import FLT.Mazur.AffinePullbackIdeal
@@ -881,6 +882,9 @@ public import FLT.Mazur.CechFreeStalkInsertion
 public import FLT.Mazur.CechInjectiveAcyclic
 public import FLT.Mazur.CechSheafH
 public import FLT.Mazur.CechSheafHZero
+public import FLT.Mazur.CechSortingCoordinates
+public import FLT.Mazur.CechSortingHomotopyCoordinates
+public import FLT.Mazur.CechSortingMaps
 public import FLT.Mazur.ClosedDescentCharts
 public import FLT.Mazur.ClosedDescentGluingData
 public import FLT.Mazur.ClosedDescentGluingMaps
@@ -924,6 +928,7 @@ public import FLT.Mazur.FamilyTransport
 public import FLT.Mazur.GenericFibers
 public import FLT.Mazur.GlobalClosedModuleDescent
 public import FLT.Mazur.IdealModuleSheaf
+public import FLT.Mazur.IncreasingCechComplex
 public import FLT.Mazur.IntegralBase
 public import FLT.Mazur.IntegralClosedSupport
 public import FLT.Mazur.LocalizationCech
@@ -938,6 +943,7 @@ public import FLT.Mazur.LocalizationDegreeShift
 public import FLT.Mazur.ModuleCechScalar
 public import FLT.Mazur.ModuleCohomology
 public import FLT.Mazur.ModuleCohomologyExact
+public import FLT.Mazur.ModuleOpenCohomology
 public import FLT.Mazur.ModuleSheafDual
 public import FLT.Mazur.ModuleSheafDualSheaf
 public import FLT.Mazur.ModuleSheafGluing
@@ -955,6 +961,7 @@ public import FLT.Mazur.ModuleSheafUnitCocycle
 public import FLT.Mazur.ModuleSheafUnitCocycleRestrict
 public import FLT.Mazur.ModuleStalkExact
 public import FLT.Mazur.NeronPolygonPredicate
+public import FLT.Mazur.OpenSheafCohomology
 public import FLT.Mazur.OpenSheafExtensionExact
 public import FLT.Mazur.OpenSheafExtensionStalks
 public import FLT.Mazur.OpenSheafFreeComparison
