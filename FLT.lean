@@ -895,6 +895,7 @@ public import FLT.Mazur.ClosedDescentGluingMaps
 public import FLT.Mazur.ClosedDescentOverlapCoherence
 public import FLT.Mazur.ClosedImmersionModulePushforward
 public import FLT.Mazur.ClosedModuleDescent
+public import FLT.Mazur.ClosedPushforwardCohomology
 public import FLT.Mazur.ClosedPushforwardFull
 public import FLT.Mazur.ClosedPushforwardRestriction
 public import FLT.Mazur.ClosedSubsets
@@ -997,6 +998,7 @@ public import FLT.Mazur.ProjectiveTwistTensorAddition
 public import FLT.Mazur.ProjectiveTwistTensorInverse
 public import FLT.Mazur.ProjectiveTwistingSheaf
 public import FLT.Mazur.ProjectiveTwistingSheafTensor
+public import FLT.Mazur.PushforwardCech
 public import FLT.Mazur.RationalFibers
 public import FLT.Mazur.RelativeCartier
 public import FLT.Mazur.RelativeCartierBaseChange
