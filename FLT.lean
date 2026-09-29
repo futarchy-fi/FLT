@@ -889,6 +889,7 @@ public import FLT.Mazur.ClosedPushforwardRestriction
 public import FLT.Mazur.ClosedSubsets
 public import FLT.Mazur.CoherentClosedPushforward
 public import FLT.Mazur.CoherentDevissage
+public import FLT.Mazur.CoherentOpenDescent
 public import FLT.Mazur.CoherentRestriction
 public import FLT.Mazur.CoherentSubquotient
 public import FLT.Mazur.CoherentSupport
@@ -971,8 +972,10 @@ public import FLT.Mazur.ProjectiveTwistCechCohomologyTwist
 public import FLT.Mazur.ProjectiveTwistCocycle
 public import FLT.Mazur.ProjectiveTwistGradedCech
 public import FLT.Mazur.ProjectiveTwistTensor
+public import FLT.Mazur.ProjectiveTwistTensorAddition
 public import FLT.Mazur.ProjectiveTwistTensorInverse
 public import FLT.Mazur.ProjectiveTwistingSheaf
+public import FLT.Mazur.ProjectiveTwistingSheafTensor
 public import FLT.Mazur.RationalFibers
 public import FLT.Mazur.RelativeCartier
 public import FLT.Mazur.RelativeCartierBaseChange
