@@ -305,7 +305,29 @@ proves naturality in short exact coefficient sequences. In degree one the
 identification is with the quotient by the preceding degree-zero map, not with
 H0 itself. The middle coefficient is required to be injective; the Cech results
 also require an open cover and cover acyclicity of the first coefficient.
-The higher-degree Ext comparison and geometric cohomology finiteness remain open.
+The higher-degree comparison is now proved in `CechAcyclicComparison.lean`,
+with naturality and independence of the chosen injective embedding proved in
+`CechAcyclicNaturality.lean`. `ModuleCechScalar.lean` makes it linear over global
+sections and over the specified base scalars. Positive quasi-coherent cohomology
+on arbitrary affine schemes vanishes by `AffineCohomologyVanishingAffine.lean`.
+`AffineCoverCohomology.lean` consequently computes actual module cohomology from
+any affine open cover of a separated scheme, naturally in the coefficient module.
+
+`FiniteAffineCoverDimension.lean` proves vanishing in degrees at least the number
+of affine charts, including degree zero for an empty cover. The separate
+`FiniteAffineCoverFiniteness.lean` and `CoherentAffineCoverSections.lean` results
+are conditional finiteness reductions: finite intersection sections over the
+specified base ring suffice. Coherence gives finiteness over each intersection's
+own ring, which is not enough to conclude finiteness over the base ring.
+General projective/proper coherent cohomology finiteness remains open.
+
+`ClosedPushforwardCohomology.lean` identifies coherent closed-direct-image
+cohomology with that on the closed subscheme, linearly over the specified base.
+`ClosedSubschemeCohomology.lean` transfers the ambient finite-cover vanishing
+bound and proves equivalence of base-ring finiteness on both sides. This does
+not supply the still-missing projective coherent finiteness input.
+`FLTTest/MazurAffineCohomology.lean` audits fourteen comparison, vanishing and
+conditional-finiteness endpoints against the three standard logical axioms.
 
 `CoherentDevissage.lean` defines support using actual additive stalks and proves
 support containment for subsheaves, Noetherian induction on closed subsets, and
