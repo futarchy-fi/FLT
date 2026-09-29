@@ -922,6 +922,7 @@ public import FLT.Mazur.ProjectiveTwistCechCohomologyDeletion
 public import FLT.Mazur.ProjectiveTwistCechCohomologyFullSupport
 public import FLT.Mazur.ProjectiveTwistCechCohomologySum
 public import FLT.Mazur.ProjectiveTwistCechCohomologySumHomology
+public import FLT.Mazur.ProjectiveTwistCechCohomologyTwist
 public import FLT.Mazur.ProjectiveTwistCocycle
 public import FLT.Mazur.ProjectiveTwistGradedCech
 public import FLT.Mazur.ProjectiveTwistingSheaf
