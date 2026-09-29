@@ -888,6 +888,7 @@ public import FLT.Mazur.ClosedPushforwardFull
 public import FLT.Mazur.ClosedPushforwardRestriction
 public import FLT.Mazur.ClosedSubsets
 public import FLT.Mazur.CoherentClosedPushforward
+public import FLT.Mazur.CoherentComparisonLocus
 public import FLT.Mazur.CoherentDevissage
 public import FLT.Mazur.CoherentOpenDescent
 public import FLT.Mazur.CoherentRestriction
@@ -917,6 +918,7 @@ public import FLT.Mazur.EtaleDimLe
 public import FLT.Mazur.FCurveContracts
 public import FLT.Mazur.FamilyTransport
 public import FLT.Mazur.GenericFibers
+public import FLT.Mazur.GlobalClosedModuleDescent
 public import FLT.Mazur.IdealModuleSheaf
 public import FLT.Mazur.IntegralBase
 public import FLT.Mazur.IntegralClosedSupport
