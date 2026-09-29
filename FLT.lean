@@ -980,10 +980,16 @@ public import FLT.Mazur.PolygonPinchingDiagram
 public import FLT.Mazur.PrincipalSubmoduleCoordinates
 public import FLT.Mazur.PrincipalSubmoduleOverlap
 public import FLT.Mazur.PrincipalSubmoduleSectionLocalization
+public import FLT.Mazur.ProjectiveChartDenominators
 public import FLT.Mazur.ProjectiveCoherentCharts
 public import FLT.Mazur.ProjectiveLineCharts
 public import FLT.Mazur.ProjectiveLineEndpoints
+public import FLT.Mazur.ProjectiveOverlapModuleLocalization
+public import FLT.Mazur.ProjectiveSectionExtension
+public import FLT.Mazur.ProjectiveSectionExtensionCharts
+public import FLT.Mazur.ProjectiveSectionExtensionCoordinates
 public import FLT.Mazur.ProjectiveSpaceCharts
+public import FLT.Mazur.ProjectiveTripleModuleLocalization
 public import FLT.Mazur.ProjectiveTwistCech
 public import FLT.Mazur.ProjectiveTwistCechCohomologyContraction
 public import FLT.Mazur.ProjectiveTwistCechCohomologyCoordinates
