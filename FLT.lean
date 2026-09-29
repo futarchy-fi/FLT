@@ -915,6 +915,7 @@ public import FLT.Mazur.EtaleDimLe
 public import FLT.Mazur.FCurveContracts
 public import FLT.Mazur.FamilyTransport
 public import FLT.Mazur.GenericFibers
+public import FLT.Mazur.GlobalClosedModuleDescent
 public import FLT.Mazur.IdealModuleSheaf
 public import FLT.Mazur.IntegralBase
 public import FLT.Mazur.IntegralClosedSupport
