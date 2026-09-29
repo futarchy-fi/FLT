@@ -912,6 +912,7 @@ public import FLT.Mazur.ModuleSheafUnitCocycleRestrict
 public import FLT.Mazur.NeronPolygonPredicate
 public import FLT.Mazur.OverPoints
 public import FLT.Mazur.PolygonPinchingDiagram
+public import FLT.Mazur.ProjectiveCoherentCharts
 public import FLT.Mazur.ProjectiveLineCharts
 public import FLT.Mazur.ProjectiveLineEndpoints
 public import FLT.Mazur.ProjectiveSpaceCharts
