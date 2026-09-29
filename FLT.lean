@@ -916,6 +916,7 @@ public import FLT.Mazur.ModuleSheafDualSheaf
 public import FLT.Mazur.ModuleSheafGluing
 public import FLT.Mazur.ModuleSheafInternalHom
 public import FLT.Mazur.ModuleSheafMorphismGluing
+public import FLT.Mazur.ModuleSheafOpenIsoDetection
 public import FLT.Mazur.ModuleSheafTensor
 public import FLT.Mazur.ModuleSheafTensorAffine
 public import FLT.Mazur.ModuleSheafTensorAffineOpen
