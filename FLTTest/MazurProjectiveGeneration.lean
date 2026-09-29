@@ -7,6 +7,8 @@ module
 
 import FLT.Mazur.ProjectiveGenerationEventually
 
+/-! # Axiom audit of finite free generation in projective twists -/
+
 namespace FLT.Mazur.ProjectiveSpace
 
 /-- info: 'FLT.Mazur.ProjectiveSpace.sectionExtension_eventually'

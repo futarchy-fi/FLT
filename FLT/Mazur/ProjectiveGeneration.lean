@@ -219,7 +219,8 @@ theorem globalEvaluation_epi_of_chart_generators [Finite ι]
     let e := twistAmbientIso R ι F (d : ℤ) i (chart R ι i) le_rfl
     have hgen (a : Fin (n i)) :
         Scheme.Modules.Hom.app f (chart R ι i) (e.inv ((chartSectionsIso R ι F i).hom (s i a))) =
-        Scheme.Modules.Hom.app g (chart R ι i) (e.inv ((chartSectionsIso R ι F i).hom (s i a))) := by
+        Scheme.Modules.Hom.app g (chart R ι i)
+          (e.inv ((chartSectionsIso R ι F i).hom (s i a))) := by
       rw [← hσ i a]
       have he (v : Γ(G, chart R ι i)) : e.inv (e.hom v) = v :=
         ConcreteCategory.congr_hom e.hom_inv_id v
