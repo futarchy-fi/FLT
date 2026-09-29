@@ -101,7 +101,6 @@ lemma polynomialToChart_X (i : Fin n) :
     polynomialToChart R n (X i) = coordinate R (Fin (n + 1)) 0 i.succ := by
   simp [polynomialToChart]
 
-@[simp]
 lemma polynomialToChart_C (r : R) :
     polynomialToChart R n (C r) = chartScalars R (Fin (n + 1)) 0 r := by
   exact (polynomialToChart R n).commutes r
