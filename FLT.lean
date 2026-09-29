@@ -919,6 +919,7 @@ public import FLT.Mazur.ModuleSheafMorphismGluing
 public import FLT.Mazur.ModuleSheafTensor
 public import FLT.Mazur.ModuleSheafTensorAffine
 public import FLT.Mazur.ModuleSheafTensorAffineOpen
+public import FLT.Mazur.ModuleSheafTensorAssociator
 public import FLT.Mazur.ModuleSheafTensorCurrying
 public import FLT.Mazur.ModuleSheafTensorRestrict
 public import FLT.Mazur.ModuleSheafTensorTilde
