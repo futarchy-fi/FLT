@@ -865,6 +865,7 @@ public import FLT.Mazur.CechSheafH
 public import FLT.Mazur.CechSheafHZero
 public import FLT.Mazur.ClosedDescentCharts
 public import FLT.Mazur.ClosedDescentGluingData
+public import FLT.Mazur.ClosedDescentGluingMaps
 public import FLT.Mazur.ClosedDescentOverlapCoherence
 public import FLT.Mazur.ClosedImmersionModulePushforward
 public import FLT.Mazur.ClosedModuleDescent
