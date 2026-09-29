@@ -977,6 +977,9 @@ public import FLT.Mazur.OpenSheafFreeComparison
 public import FLT.Mazur.OpenSheafRestriction
 public import FLT.Mazur.OverPoints
 public import FLT.Mazur.PolygonPinchingDiagram
+public import FLT.Mazur.PrincipalSubmoduleCoordinates
+public import FLT.Mazur.PrincipalSubmoduleOverlap
+public import FLT.Mazur.PrincipalSubmoduleSectionLocalization
 public import FLT.Mazur.ProjectiveChartDenominators
 public import FLT.Mazur.ProjectiveCoherentCharts
 public import FLT.Mazur.ProjectiveLineCharts
