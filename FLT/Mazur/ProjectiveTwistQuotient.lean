@@ -5,7 +5,7 @@ Authors: krandder
 -/
 module
 
-public import Mathlib.Algebra.Category.ModuleCat.Sheaf.LocallyFree
+public import FLT.Mazur.CoherentFreeSheaf
 public import FLT.Mazur.ProjectiveGeneration
 public import FLT.Mazur.ProjectiveChartNoetherian
 
@@ -56,14 +56,6 @@ theorem exists_coherent_twist_presentation [IsNoetherianRing R]
   obtain ⟨d, κ, hκ, p, hp⟩ := exists_twist_sum_epi R ι F
   let _finite := hκ
   let _epi := hp
-  have _freeCoherent :
-      (SheafOfModules.free (R := (space R ι).ringCatSheaf) κ).IsFinitePresentation := by
-    let q := (SheafOfModules.free.generatingSections
-      (R := (space R ι).ringCatSheaf) κ).localGeneratorsData.quasiCoherentData
-    refine { exists_quasicoherentData := ⟨q, ?_⟩ }
-    refine { isFinite_presentation := fun i ↦ ?_ }
-    exact { isFiniteType_generators := ⟨inferInstanceAs (Finite κ)⟩
-            isFiniteType_relations := ⟨inferInstanceAs (Finite (ULift Empty))⟩ }
   have _sourceCoherent :
       (∐ fun _ : κ ↦ twistingSheaf R ι (-(d : ℤ))).IsFinitePresentation :=
     (SheafOfModules.isFinitePresentation (space R ι).ringCatSheaf).prop_of_iso
