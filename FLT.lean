@@ -960,6 +960,7 @@ public import FLT.Mazur.ModuleSheafTensorTilde
 public import FLT.Mazur.ModuleSheafUnitCocycle
 public import FLT.Mazur.ModuleSheafUnitCocycleRestrict
 public import FLT.Mazur.ModuleStalkExact
+public import FLT.Mazur.ModuleSubobjectCoverEquality
 public import FLT.Mazur.NeronPolygonPredicate
 public import FLT.Mazur.OpenSheafCohomology
 public import FLT.Mazur.OpenSheafExtensionExact
