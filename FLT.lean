@@ -930,6 +930,7 @@ public import FLT.Mazur.EtaleDimLe
 public import FLT.Mazur.FCurveContracts
 public import FLT.Mazur.FamilyTransport
 public import FLT.Mazur.FiniteAffineCoverDimension
+public import FLT.Mazur.FiniteCechCyclesScalars
 public import FLT.Mazur.FiniteCechTermScalars
 public import FLT.Mazur.GenericFibers
 public import FLT.Mazur.GlobalClosedModuleDescent
