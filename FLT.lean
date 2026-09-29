@@ -986,6 +986,7 @@ public import FLT.Mazur.PrincipalSubmoduleCoordinates
 public import FLT.Mazur.PrincipalSubmoduleOverlap
 public import FLT.Mazur.PrincipalSubmoduleSectionLocalization
 public import FLT.Mazur.ProjectiveChartDenominators
+public import FLT.Mazur.ProjectiveChartNoetherian
 public import FLT.Mazur.ProjectiveCoherentCharts
 public import FLT.Mazur.ProjectiveGeneration
 public import FLT.Mazur.ProjectiveGenerationEventually
@@ -1008,6 +1009,7 @@ public import FLT.Mazur.ProjectiveTwistCechCohomologySumHomology
 public import FLT.Mazur.ProjectiveTwistCechCohomologyTwist
 public import FLT.Mazur.ProjectiveTwistCocycle
 public import FLT.Mazur.ProjectiveTwistGradedCech
+public import FLT.Mazur.ProjectiveTwistQuotient
 public import FLT.Mazur.ProjectiveTwistTensor
 public import FLT.Mazur.ProjectiveTwistTensorAddition
 public import FLT.Mazur.ProjectiveTwistTensorInverse
