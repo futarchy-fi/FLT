@@ -884,6 +884,7 @@ public import FLT.Mazur.CechSheafHZero
 public import FLT.Mazur.CechSortingCoordinates
 public import FLT.Mazur.CechSortingHomotopyCoordinates
 public import FLT.Mazur.CechSortingMaps
+public import FLT.Mazur.CechSortingRecursiveHomotopy
 public import FLT.Mazur.CechSortingTupleChains
 public import FLT.Mazur.ClosedDescentCharts
 public import FLT.Mazur.ClosedDescentGluingData
