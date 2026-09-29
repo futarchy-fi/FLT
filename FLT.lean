@@ -886,6 +886,7 @@ public import FLT.Mazur.ClosedPushforwardRestriction
 public import FLT.Mazur.ClosedSubsets
 public import FLT.Mazur.CoherentClosedPushforward
 public import FLT.Mazur.CoherentDevissage
+public import FLT.Mazur.CoherentOpenDescent
 public import FLT.Mazur.CoherentRestriction
 public import FLT.Mazur.CoherentSubquotient
 public import FLT.Mazur.CoherentSupport
