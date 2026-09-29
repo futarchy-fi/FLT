@@ -922,6 +922,7 @@ public import FLT.Mazur.ModuleSheafTensorTilde
 public import FLT.Mazur.ModuleSheafUnitCocycle
 public import FLT.Mazur.ModuleSheafUnitCocycleRestrict
 public import FLT.Mazur.NeronPolygonPredicate
+public import FLT.Mazur.OpenSheafExtensionStalks
 public import FLT.Mazur.OpenSheafRestriction
 public import FLT.Mazur.OverPoints
 public import FLT.Mazur.PolygonPinchingDiagram
