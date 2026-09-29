@@ -305,7 +305,72 @@ proves naturality in short exact coefficient sequences. In degree one the
 identification is with the quotient by the preceding degree-zero map, not with
 H0 itself. The middle coefficient is required to be injective; the Cech results
 also require an open cover and cover acyclicity of the first coefficient.
-The higher-degree Ext comparison and geometric cohomology finiteness remain open.
+The higher-degree comparison is now proved in `CechAcyclicComparison.lean`,
+with naturality and independence of the chosen injective embedding proved in
+`CechAcyclicNaturality.lean`. `ModuleCechScalar.lean` makes it linear over global
+sections and over the specified base scalars. Positive quasi-coherent cohomology
+on arbitrary affine schemes vanishes by `AffineCohomologyVanishingAffine.lean`.
+`AffineCoverCohomology.lean` consequently computes actual module cohomology from
+any affine open cover of a separated scheme, naturally in the coefficient module.
+
+`FiniteAffineCoverDimension.lean` proves vanishing in degrees at least the number
+of affine charts, including degree zero for an empty cover. The separate
+`FiniteAffineCoverFiniteness.lean` and `CoherentAffineCoverSections.lean` results
+are conditional finiteness reductions: finite intersection sections over the
+specified base ring suffice. Coherence gives finiteness over each intersection's
+own ring, which is not enough to conclude finiteness over the base ring.
+`ProjectiveGeneration.lean` extends finite families of chart sections in a
+common natural twist and proves the resulting global evaluation map is an
+epimorphism, using the derived finite local generators. It constructs a finite
+free epimorphism onto a twist of any locally finitely presented module sheaf on
+finite-coordinate polynomial projective space, without a Noetherian hypothesis.
+`ProjectiveGenerationEventually.lean` strengthens this to every sufficiently
+large natural twist, with a fixed finite generator index. No epimorphism or
+extension witness is supplied by the caller. `FLTTest/MazurProjectiveGeneration.lean`
+audits the five extension and generation endpoints.
+`AffineKernelLocalization.lean` identifies the kernel of a map between actual
+quasi-coherent sheaves on Spec R with tilde of the kernel of its actual
+global-section map. It proves compatibility of the kernel inclusions and
+naturality for commutative squares, in the ambient module-sheaf category,
+without Noetherian or finite-presentation assumptions. This supplies the affine
+kernel comparison.
+`FLTTest/MazurAffineKernel.lean` audits these three endpoints.
+`ProjectiveChartNoetherian.lean` derives Noetherian standard chart rings and
+local Noetherianity of finite-coordinate projective space over a Noetherian base,
+then applies the existing coherent-kernel theorem.
+`ProjectiveTwistQuotient.lean` constructs an epimorphism from a finite sum of
+negative twists onto every locally finitely presented projective module sheaf.
+Over a Noetherian base, its kernel sequence is a coherent short exact sequence.
+The quotient is constructed by the inverse twist equivalence; no presentation
+or kernel-coherence witness is supplied by the caller.
+`FLTTest/MazurProjectivePresentation.lean` audits these seven endpoints.
+`CoherentFreeSheaf.lean` supplies reusable finite presentations for finite free
+and unit module sheaves. `ProjectiveTwistCohomology.lean` identifies the computed
+twist complex with actual Ext cohomology, linearly over the canonical constant
+base-ring map. It proves finiteness of every integer twist in every degree,
+without a Noetherian hypothesis.
+`ModuleCohomologyRing.lean` supplies base-ring cohomology as an additive functor,
+finiteness for finite coproducts, and the quotient step in the long exact sequence.
+`ProjectiveCoherentCohomology.lean` now proves coherent cohomology finiteness on
+finite-coordinate polynomial projective space over every Noetherian base.
+The proof descends from the finite affine-cover vanishing bound using the
+constructed negative-twist presentation and its coherent kernel. It includes
+degree zero and empty coordinate types. A specified closed projective embedding
+then gives finiteness on the embedded scheme, for the induced base-ring action.
+`FLTTest/MazurProjectiveCohomology.lean` audits ten endpoints.
+The theorem for arbitrary proper schemes, and its application to the remaining
+arithmetic construction, are not established by these results.
+
+`ClosedPushforwardCohomology.lean` identifies coherent closed-direct-image
+cohomology with that on the closed subscheme, linearly over the specified base. The comparison is natural in coefficient
+morphisms, including restriction to an arbitrary base ring and the existing
+field-valued scalar cohomology maps.
+`ClosedSubschemeCohomology.lean` transfers the ambient finite-cover vanishing
+bound and proves equivalence of base-ring finiteness on both sides. This does
+not by itself supply projective coherent finiteness; that input is now proved in
+`ProjectiveCoherentCohomology.lean` for a specified projective embedding.
+`FLTTest/MazurAffineCohomology.lean` audits nineteen comparison, naturality, vanishing and
+conditional-finiteness endpoints against the three standard logical axioms.
 
 `CoherentDevissage.lean` defines support using actual additive stalks and proves
 support containment for subsheaves, Noetherian induction on closed subsets, and
