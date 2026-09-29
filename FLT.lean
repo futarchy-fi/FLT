@@ -882,6 +882,7 @@ public import FLT.Mazur.CechInjectiveAcyclic
 public import FLT.Mazur.CechSheafH
 public import FLT.Mazur.CechSheafHZero
 public import FLT.Mazur.CechSortingCoordinates
+public import FLT.Mazur.CechSortingHomotopy
 public import FLT.Mazur.CechSortingHomotopyCoordinates
 public import FLT.Mazur.CechSortingHomotopyEvaluation
 public import FLT.Mazur.CechSortingMaps
