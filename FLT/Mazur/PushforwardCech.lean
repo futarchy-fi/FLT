@@ -137,4 +137,15 @@ def moduleCechEquiv (M : X.Modules) (n : ℕ) :
   exact ConcreteCategory.congr_hom
     (cohomologyIso_naturality f U _ (moduleMultiply M (f.appTop r)).hom n) x
 
+/-- The linear Cech comparison commutes with coefficient morphisms. -/
+lemma moduleCechEquiv_naturality {M N : X.Modules} (g : M ⟶ N) (n : ℕ)
+    (x : CH U (moduleAbelianSheaf ((pushforward f).obj M)) n) :
+    moduleCechEquiv f U N n
+        (CHmap U ((SheafOfModules.toSheaf Y.ringCatSheaf).map
+          ((pushforward f).map g)) n x) =
+      CHmap (fun i ↦ f ⁻¹ᵁ U i) ((SheafOfModules.toSheaf X.ringCatSheaf).map g) n
+        (moduleCechEquiv f U M n x) := by
+  exact ConcreteCategory.congr_hom
+    (cohomologyIso_naturality f U (moduleAbelianSheaf M).obj g.mapPresheaf n) x
+
 end FLT.Mazur.PushforwardCech

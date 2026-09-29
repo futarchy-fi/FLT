@@ -93,4 +93,49 @@ def closedPushforwardScalarHEquiv {k : Type u} [Field k]
   rw [h]
   exact (closedPushforwardModuleHEquiv f M n).map_smul (structureScalarMap g r) x
 
+/-- Closed direct-image cohomology comparison commutes with coefficient maps. -/
+lemma closedPushforwardCoverHEquiv_naturality {N : X.Modules} [N.IsFinitePresentation]
+    (a : M ⟶ N) {ι : Type u} (U : ι → Y.Opens)
+    (hU : ∀ i, IsAffineOpen (U i)) (hCover : iSup U = ⊤)
+    (n : ℕ) (x : ModuleH ((pushforward f).obj M) n) :
+    closedPushforwardCoverHEquiv f N U hU hCover n
+        (moduleHMap ((pushforward f).map a) n x) =
+      moduleHMap a n (closedPushforwardCoverHEquiv f M U hU hCover n x) := by
+  let _sourceSeparated : X.IsSeparated := ⟨by
+    rw [← terminal.comp_from f]
+    infer_instance⟩
+  obtain ⟨y, rfl⟩ :=
+    (affineCoverCechEquiv ((pushforward f).obj M) U hU hCover n).surjective x
+  rw [← affineCoverCechEquiv_naturality]
+  simp only [closedPushforwardCoverHEquiv, LinearEquiv.trans_apply,
+    LinearEquiv.symm_apply_apply]
+  rw [PushforwardCech.moduleCechEquiv_naturality]
+  exact affineCoverRingCechEquiv_naturality M (fun i ↦ f ⁻¹ᵁ U i)
+    (fun i ↦ (hU i).preimage f) (f.iSup_preimage_eq_top hCover) f.appTop.hom a n _
+
+/-- The canonical closed direct-image comparison is natural in coherent modules. -/
+lemma closedPushforwardModuleHEquiv_naturality {N : X.Modules} [N.IsFinitePresentation]
+    (a : M ⟶ N) (n : ℕ) (x : ModuleH ((pushforward f).obj M) n) :
+    closedPushforwardModuleHEquiv f N n (moduleHMap ((pushforward f).map a) n x) =
+      moduleHMap a n (closedPushforwardModuleHEquiv f M n x) :=
+  closedPushforwardCoverHEquiv_naturality f M a (fun U : Y.affineOpens ↦ U.1)
+    (fun U ↦ U.2) (iSup_affineOpens_eq_top Y) n x
+
+/-- Restriction to any specified base ring retains naturality. -/
+lemma closedPushforwardRingHEquiv_naturality {R : Type v} [Ring R]
+    (ρ : R →+* Γ(Y, ⊤)) {N : X.Modules} [N.IsFinitePresentation]
+    (a : M ⟶ N) (n : ℕ) (x : ModuleH ((pushforward f).obj M) n) :
+    closedPushforwardRingHEquiv f N ρ n (moduleHMap ((pushforward f).map a) n x) =
+      moduleHMap a n (closedPushforwardRingHEquiv f M ρ n x) :=
+  closedPushforwardModuleHEquiv_naturality f M a n x
+
+/-- The field-valued comparison commutes with the existing scalar cohomology maps. -/
+lemma closedPushforwardScalarHEquiv_naturality {k : Type u} [Field k]
+    (g : Y ⟶ Spec (CommRingCat.of k)) {N : X.Modules} [N.IsFinitePresentation]
+    (a : M ⟶ N) (n : ℕ) (x : ModuleScalarH g ((pushforward f).obj M) n) :
+    closedPushforwardScalarHEquiv f N g n
+        (moduleScalarHMap g ((pushforward f).map a) n x) =
+      moduleScalarHMap (f ≫ g) a n (closedPushforwardScalarHEquiv f M g n x) :=
+  closedPushforwardModuleHEquiv_naturality f M a n x
+
 end FLT.Mazur.FCurve
