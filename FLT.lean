@@ -863,6 +863,7 @@ public import FLT.Mazur.CechFreeStalkInsertion
 public import FLT.Mazur.CechInjectiveAcyclic
 public import FLT.Mazur.CechSheafH
 public import FLT.Mazur.CechSheafHZero
+public import FLT.Mazur.ClosedDescentCharts
 public import FLT.Mazur.ClosedImmersionModulePushforward
 public import FLT.Mazur.ClosedModuleDescent
 public import FLT.Mazur.ClosedPushforwardFull
