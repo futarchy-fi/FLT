@@ -344,8 +344,22 @@ Over a Noetherian base, its kernel sequence is a coherent short exact sequence.
 The quotient is constructed by the inverse twist equivalence; no presentation
 or kernel-coherence witness is supplied by the caller.
 `FLTTest/MazurProjectivePresentation.lean` audits these seven endpoints.
-General projective/proper coherent cohomology finiteness remains open: these
-presentations still need the cohomological induction using twist finiteness.
+`CoherentFreeSheaf.lean` supplies reusable finite presentations for finite free
+and unit module sheaves. `ProjectiveTwistCohomology.lean` identifies the computed
+twist complex with actual Ext cohomology, linearly over the canonical constant
+base-ring map. It proves finiteness of every integer twist in every degree,
+without a Noetherian hypothesis.
+`ModuleCohomologyRing.lean` supplies base-ring cohomology as an additive functor,
+finiteness for finite coproducts, and the quotient step in the long exact sequence.
+`ProjectiveCoherentCohomology.lean` now proves coherent cohomology finiteness on
+finite-coordinate polynomial projective space over every Noetherian base.
+The proof descends from the finite affine-cover vanishing bound using the
+constructed negative-twist presentation and its coherent kernel. It includes
+degree zero and empty coordinate types. A specified closed projective embedding
+then gives finiteness on the embedded scheme, for the induced base-ring action.
+`FLTTest/MazurProjectiveCohomology.lean` audits ten endpoints.
+The theorem for arbitrary proper schemes, and its application to the remaining
+arithmetic construction, are not established by these results.
 
 `ClosedPushforwardCohomology.lean` identifies coherent closed-direct-image
 cohomology with that on the closed subscheme, linearly over the specified base. The comparison is natural in coefficient
@@ -353,7 +367,8 @@ morphisms, including restriction to an arbitrary base ring and the existing
 field-valued scalar cohomology maps.
 `ClosedSubschemeCohomology.lean` transfers the ambient finite-cover vanishing
 bound and proves equivalence of base-ring finiteness on both sides. This does
-not supply the still-missing projective coherent finiteness input.
+not by itself supply projective coherent finiteness; that input is now proved in
+`ProjectiveCoherentCohomology.lean` for a specified projective embedding.
 `FLTTest/MazurAffineCohomology.lean` audits nineteen comparison, naturality, vanishing and
 conditional-finiteness endpoints against the three standard logical axioms.
 

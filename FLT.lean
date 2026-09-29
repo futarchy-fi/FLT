@@ -906,6 +906,7 @@ public import FLT.Mazur.CoherentAffineCoverSections
 public import FLT.Mazur.CoherentClosedPushforward
 public import FLT.Mazur.CoherentComparisonLocus
 public import FLT.Mazur.CoherentDevissage
+public import FLT.Mazur.CoherentFreeSheaf
 public import FLT.Mazur.CoherentGenericComparison
 public import FLT.Mazur.CoherentOpenDescent
 public import FLT.Mazur.CoherentRestriction
@@ -956,6 +957,7 @@ public import FLT.Mazur.LocalizationDegreeShift
 public import FLT.Mazur.ModuleCechScalar
 public import FLT.Mazur.ModuleCohomology
 public import FLT.Mazur.ModuleCohomologyExact
+public import FLT.Mazur.ModuleCohomologyRing
 public import FLT.Mazur.ModuleOpenCohomology
 public import FLT.Mazur.ModuleSheafDual
 public import FLT.Mazur.ModuleSheafDualSheaf
@@ -988,6 +990,7 @@ public import FLT.Mazur.PrincipalSubmoduleSectionLocalization
 public import FLT.Mazur.ProjectiveChartDenominators
 public import FLT.Mazur.ProjectiveChartNoetherian
 public import FLT.Mazur.ProjectiveCoherentCharts
+public import FLT.Mazur.ProjectiveCoherentCohomology
 public import FLT.Mazur.ProjectiveGeneration
 public import FLT.Mazur.ProjectiveGenerationEventually
 public import FLT.Mazur.ProjectiveLineCharts
@@ -1008,6 +1011,7 @@ public import FLT.Mazur.ProjectiveTwistCechCohomologySum
 public import FLT.Mazur.ProjectiveTwistCechCohomologySumHomology
 public import FLT.Mazur.ProjectiveTwistCechCohomologyTwist
 public import FLT.Mazur.ProjectiveTwistCocycle
+public import FLT.Mazur.ProjectiveTwistCohomology
 public import FLT.Mazur.ProjectiveTwistGradedCech
 public import FLT.Mazur.ProjectiveTwistQuotient
 public import FLT.Mazur.ProjectiveTwistTensor

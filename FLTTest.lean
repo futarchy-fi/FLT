@@ -15,6 +15,7 @@ import FLTTest.MazurDualTensorSheaf
 import FLTTest.MazurGenericFibers
 import FLTTest.MazurModuleCohomology
 import FLTTest.MazurMultiplicativeModel
+import FLTTest.MazurProjectiveCohomology
 import FLTTest.MazurProjectiveGeneration
 import FLTTest.MazurProjectivePresentation
 import FLTTest.MazurRelativeSums
