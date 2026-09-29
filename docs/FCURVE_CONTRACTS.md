@@ -299,6 +299,12 @@ degreewise short exact Cech complexes under the explicit acyclicity hypothesis.
 complexes, proves exactness on both sides, and proves naturality for morphisms
 of short exact coefficient sequences. Cover acyclicity of the first term remains
 an explicit hypothesis.
+`CechDimensionShift.lean` now identifies the positive-degree connecting maps
+with additive equivalences, for both Cech and Ext-based sheaf cohomology, and
+proves naturality in short exact coefficient sequences. In degree one the
+identification is with the quotient by the preceding degree-zero map, not with
+H0 itself. The middle coefficient is required to be injective; the Cech results
+also require an open cover and cover acyclicity of the first coefficient.
 The higher-degree Ext comparison and geometric cohomology finiteness remain open.
 
 `CoherentDevissage.lean` defines support using actual additive stalks and proves
@@ -341,6 +347,17 @@ a construction of Neron polygons or a proof of their geometric properties.
 comparisons, completed-local-ring node presentation, base change of the
 partial nodal fiber conditions, and projective-line endpoints against the
 three standard Lean axioms. The final FLT arithmetic inputs are unchanged.
+
+`DRFiberClassification.lean` strengthens the nodal fiber and proper-flat family
+records with the explicit condition that each geometric fiber is smooth or
+satisfies the cyclic pinching predicate `IsNeronPolygon`. It proves stability
+under arbitrary base change by composing geometric pullback squares, retaining
+all earlier nodal conditions. It neither constructs pinching pushouts nor proves
+classification for a concrete family. Arithmetic genus one and the group/action
+data of generalized elliptic curves remain separate obligations.
+
+`FLTTest/MazurShiftFibers.lean` audits twelve dimension-shift and classified-fiber
+endpoints against the three standard logical axioms.
 
 ## Sources and the two different kinds of curve
 
