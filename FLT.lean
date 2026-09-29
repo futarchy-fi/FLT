@@ -896,6 +896,7 @@ public import FLT.Mazur.ChowAffineEmbedding
 public import FLT.Mazur.ChowChartData
 public import FLT.Mazur.ChowDenseAffineCover
 public import FLT.Mazur.ChowGenericNeighborhoods
+public import FLT.Mazur.ChowSourceClosure
 public import FLT.Mazur.ClosedDescentCharts
 public import FLT.Mazur.ClosedDescentGluingData
 public import FLT.Mazur.ClosedDescentGluingMaps
