@@ -893,6 +893,7 @@ public import FLT.Mazur.CechSortingTupleChains
 public import FLT.Mazur.ChowAffineBaseChartImmersion
 public import FLT.Mazur.ChowAffineCover
 public import FLT.Mazur.ChowAffineEmbedding
+public import FLT.Mazur.ChowChartData
 public import FLT.Mazur.ChowDenseAffineCover
 public import FLT.Mazur.ChowGenericNeighborhoods
 public import FLT.Mazur.ClosedDescentCharts
