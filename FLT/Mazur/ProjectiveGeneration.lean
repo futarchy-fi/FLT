@@ -244,8 +244,10 @@ theorem globalEvaluation_epi_of_chart_generators [Finite ι]
         (e.hom ((chartSectionsIso R ι G i).hom t))
     have he := hall m
     rw [hm] at he
-    simpa only [← ConcreteCategory.comp_apply, Iso.hom_inv_id,
-      ConcreteCategory.id_apply] using he
+    have hcancel (v : Γ(G, chart R ι i)) : e.inv (e.hom v) = v :=
+      ConcreteCategory.congr_hom e.hom_inv_id v
+    rw [hcancel] at he
+    exact he
 
 /-- Every locally finitely presented sheaf on finite-coordinate projective space
 has a natural twist admitting a finite free epimorphism. -/
