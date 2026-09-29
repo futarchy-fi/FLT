@@ -16,6 +16,7 @@ import FLTTest.MazurGenericFibers
 import FLTTest.MazurModuleCohomology
 import FLTTest.MazurMultiplicativeModel
 import FLTTest.MazurProjectiveGeneration
+import FLTTest.MazurProjectivePresentation
 import FLTTest.MazurRelativeSums
 import FLTTest.MazurSectionSumFinite
 import FLTTest.MazurSheafIntegration

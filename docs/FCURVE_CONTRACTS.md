@@ -333,10 +333,19 @@ quasi-coherent sheaves on Spec R with tilde of the kernel of its actual
 global-section map. It proves compatibility of the kernel inclusions and
 naturality for commutative squares, in the ambient module-sheaf category,
 without Noetherian or finite-presentation assumptions. This supplies the affine
-kernel comparison, not the remaining global resolution construction.
+kernel comparison.
 `FLTTest/MazurAffineKernel.lean` audits these three endpoints.
-General projective/proper coherent cohomology finiteness remains open: finite
-free generation and the affine kernel comparison do not yet supply that proof.
+`ProjectiveChartNoetherian.lean` derives Noetherian standard chart rings and
+local Noetherianity of finite-coordinate projective space over a Noetherian base,
+then applies the existing coherent-kernel theorem.
+`ProjectiveTwistQuotient.lean` constructs an epimorphism from a finite sum of
+negative twists onto every locally finitely presented projective module sheaf.
+Over a Noetherian base, its kernel sequence is a coherent short exact sequence.
+The quotient is constructed by the inverse twist equivalence; no presentation
+or kernel-coherence witness is supplied by the caller.
+`FLTTest/MazurProjectivePresentation.lean` audits these seven endpoints.
+General projective/proper coherent cohomology finiteness remains open: these
+presentations still need the cohomological induction using twist finiteness.
 
 `ClosedPushforwardCohomology.lean` identifies coherent closed-direct-image
 cohomology with that on the closed subscheme, linearly over the specified base. The comparison is natural in coefficient
