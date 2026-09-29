@@ -319,7 +319,17 @@ of affine charts, including degree zero for an empty cover. The separate
 are conditional finiteness reductions: finite intersection sections over the
 specified base ring suffice. Coherence gives finiteness over each intersection's
 own ring, which is not enough to conclude finiteness over the base ring.
-General projective/proper coherent cohomology finiteness remains open.
+`ProjectiveGeneration.lean` extends finite families of chart sections in a
+common natural twist and proves the resulting global evaluation map is an
+epimorphism, using the derived finite local generators. It constructs a finite
+free epimorphism onto a twist of any locally finitely presented module sheaf on
+finite-coordinate polynomial projective space, without a Noetherian hypothesis.
+`ProjectiveGenerationEventually.lean` strengthens this to every sufficiently
+large natural twist, with a fixed finite generator index. No epimorphism or
+extension witness is supplied by the caller. `FLTTest/MazurProjectiveGeneration.lean`
+audits the five extension and generation endpoints.
+General projective/proper coherent cohomology finiteness remains open: finite
+free generation alone does not provide the remaining kernel/resolution argument.
 
 `ClosedPushforwardCohomology.lean` identifies coherent closed-direct-image
 cohomology with that on the closed subscheme, linearly over the specified base. The comparison is natural in coefficient
