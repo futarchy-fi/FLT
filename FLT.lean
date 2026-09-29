@@ -936,6 +936,7 @@ public import FLT.Mazur.ModuleSheafUnitCocycle
 public import FLT.Mazur.ModuleSheafUnitCocycleRestrict
 public import FLT.Mazur.ModuleStalkExact
 public import FLT.Mazur.NeronPolygonPredicate
+public import FLT.Mazur.OpenSheafCohomology
 public import FLT.Mazur.OpenSheafExtensionExact
 public import FLT.Mazur.OpenSheafExtensionStalks
 public import FLT.Mazur.OpenSheafFreeComparison
