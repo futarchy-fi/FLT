@@ -845,6 +845,7 @@ public import FLT.Mathlib.Topology.MetricSpace.Pseudo.Matrix
 public import FLT.Mathlib.Topology.Polish
 public import FLT.Mazur.AffineClosedModuleDescent
 public import FLT.Mazur.AffineCoherent
+public import FLT.Mazur.AffineCoherentSubmoduleExtension
 public import FLT.Mazur.AffineCohomologyVanishingAffine
 public import FLT.Mazur.AffineCohomologyVanishingCechSequence
 public import FLT.Mazur.AffineCohomologyVanishingCofinal
