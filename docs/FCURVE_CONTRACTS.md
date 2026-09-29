@@ -328,8 +328,15 @@ finite-coordinate polynomial projective space, without a Noetherian hypothesis.
 large natural twist, with a fixed finite generator index. No epimorphism or
 extension witness is supplied by the caller. `FLTTest/MazurProjectiveGeneration.lean`
 audits the five extension and generation endpoints.
+`AffineKernelLocalization.lean` identifies the kernel of a map between actual
+quasi-coherent sheaves on Spec R with tilde of the kernel of its actual
+global-section map. It proves compatibility of the kernel inclusions and
+naturality for commutative squares, in the ambient module-sheaf category,
+without Noetherian or finite-presentation assumptions. This supplies the affine
+kernel comparison, not the remaining global resolution construction.
+`FLTTest/MazurAffineKernel.lean` audits these three endpoints.
 General projective/proper coherent cohomology finiteness remains open: finite
-free generation alone does not provide the remaining kernel/resolution argument.
+free generation and the affine kernel comparison do not yet supply that proof.
 
 `ClosedPushforwardCohomology.lean` identifies coherent closed-direct-image
 cohomology with that on the closed subscheme, linearly over the specified base. The comparison is natural in coefficient
