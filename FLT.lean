@@ -980,6 +980,7 @@ public import FLT.Mazur.DivisorRestrictCoherence
 public import FLT.Mazur.EtaleCoordinate
 public import FLT.Mazur.EtaleDimGe
 public import FLT.Mazur.EtaleDimLe
+public import FLT.Mazur.ExactFunctorInjectiveExt
 public import FLT.Mazur.FCurveContracts
 public import FLT.Mazur.FamilyTransport
 public import FLT.Mazur.FiniteAffineCoverDimension
@@ -1042,6 +1043,7 @@ public import FLT.Mazur.ModuleSubobjectCoverEquality
 public import FLT.Mazur.NeronPolygonPredicate
 public import FLT.Mazur.OpenDirectImageCohomology
 public import FLT.Mazur.OpenDirectImageNaturality
+public import FLT.Mazur.OpenDirectImageRestriction
 public import FLT.Mazur.OpenSheafCohomology
 public import FLT.Mazur.OpenSheafExtensionExact
 public import FLT.Mazur.OpenSheafExtensionStalks
