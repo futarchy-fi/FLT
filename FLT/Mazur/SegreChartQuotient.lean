@@ -23,13 +23,13 @@ closed subscheme of a standard chart of the target projective space.
 open AlgebraicGeometry CategoryTheory MvPolynomial HomogeneousLocalization
 open scoped TensorProduct
 
-universe u
+universe u v
 
 set_option backward.isDefEq.respectTransparency false
 
 namespace FLT.Mazur.ProjectiveSpace
 
-variable (R : Type u) [CommRing R] (ι κ : Type u)
+variable (R : Type u) [CommRing R] (ι κ : Type v)
 
 attribute [local instance] MvPolynomial.gradedAlgebra
 

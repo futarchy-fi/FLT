@@ -23,16 +23,18 @@ This is the local input to extending generators after twisting.
 open AlgebraicGeometry CategoryTheory
 open FLT.Mazur.FCurve
 
-universe u
+universe u v
 
 set_option backward.isDefEq.respectTransparency false
 set_option backward.defeqAttrib.useBackward true
 
 namespace FLT.Mazur.ProjectiveSpace
 
-variable (R : Type u) [CommRing R] (ι : Type u)
-
 attribute [local instance] MvPolynomial.gradedAlgebra
+
+section
+
+variable (R : Type u) [CommRing R] (ι : Type v)
 
 /-- The standard affine chart as an open immersion from its coordinate spectrum. -/
 def chartMap (i : ι) : Spec (.of (chartRing R ι i)) ⟶ space R ι :=
@@ -41,6 +43,10 @@ def chartMap (i : ι) : Spec (.of (chartRing R ι i)) ⟶ space R ι :=
 instance chartMap_isOpenImmersion (i : ι) : IsOpenImmersion (chartMap R ι i) := by
   dsimp [chartMap]
   infer_instance
+
+end
+
+variable (R : Type u) [CommRing R] (ι : Type u)
 
 /-- The original sheaf, restricted to the standard coordinate spectrum. -/
 abbrev chartModule (F : (space R ι).Modules) (i : ι) :

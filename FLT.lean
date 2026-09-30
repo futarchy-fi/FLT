@@ -910,6 +910,7 @@ public import FLT.Mazur.ChowAffineEmbedding
 public import FLT.Mazur.ChowChartData
 public import FLT.Mazur.ChowChartImageClosure
 public import FLT.Mazur.ChowDenseAffineCover
+public import FLT.Mazur.ChowFiniteSegreEmbedding
 public import FLT.Mazur.ChowGenericNeighborhoods
 public import FLT.Mazur.ChowGraphClosure
 public import FLT.Mazur.ChowGraphEmbedding
@@ -1011,7 +1012,10 @@ public import FLT.Mazur.ModuleCohomologyRing
 public import FLT.Mazur.ModuleDerivedAbelianComparison
 public import FLT.Mazur.ModuleFreeOpen
 public import FLT.Mazur.ModuleInjectiveFlasque
+public import FLT.Mazur.ModuleLineBundlePullback
 public import FLT.Mazur.ModuleOpenCohomology
+public import FLT.Mazur.ModulePresheafPullbackSections
+public import FLT.Mazur.ModulePresheafTensorPullback
 public import FLT.Mazur.ModuleSheafDual
 public import FLT.Mazur.ModuleSheafDualSheaf
 public import FLT.Mazur.ModuleSheafGluing
@@ -1060,6 +1064,7 @@ public import FLT.Mazur.ProjectiveSectionExtensionCharts
 public import FLT.Mazur.ProjectiveSectionExtensionCoordinates
 public import FLT.Mazur.ProjectiveSpaceCharts
 public import FLT.Mazur.ProjectiveSpaceProper
+public import FLT.Mazur.ProjectiveSpaceReindex
 public import FLT.Mazur.ProjectiveTripleModuleLocalization
 public import FLT.Mazur.ProjectiveTwistCech
 public import FLT.Mazur.ProjectiveTwistCechCohomologyContraction
@@ -1093,6 +1098,8 @@ public import FLT.Mazur.SectionKernelLocal
 public import FLT.Mazur.SectionSumFinite
 public import FLT.Mazur.SegreChartMaps
 public import FLT.Mazur.SegreChartQuotient
+public import FLT.Mazur.SegreClosedImmersion
+public import FLT.Mazur.SegreSchemeMorphism
 public import FLT.Mazur.SmoothCurveDimension
 public import FLT.Mazur.SmoothDimension
 public import FLT.Mazur.SmoothDimensionBound
