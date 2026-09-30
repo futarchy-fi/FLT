@@ -28,6 +28,7 @@ variable (O : Type) [CommRing O] [IsLocalRing O] [IsNoetherianRing O]
 local notation "G" => Field.absoluteGaloisGroup ℚ
 local notation "k" => ProartinianCat.residueField (𝓞 := O)
 
+/-- The residual p-adic scalar action is induced through the coefficient ring. -/
 local instance residualPadicAlgebra : Algebra ℤ_[p] k :=
   ((IsLocalRing.residue O).comp (algebraMap ℤ_[p] O)).toAlgebra
 
