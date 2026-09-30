@@ -124,8 +124,9 @@ W7 F4a: `LocalRoot.inertia_transitive` proves transitivity in every positive
 degree via Eisenstein over finite inertia fixed fields and restriction
 surjectivity. W7 `FundamentalTame` proves both displayed endpoints (in all
 positive degrees), plus `LocalRamification.tameRootCharacter_surjective`.
-BLOCKED: finite first groups are p-groups and their explicit inverse-limit
-comparison. Exact remaining statements and capped follow-up: `BLOCKED.md`.
+W8 filtration DONE (273/300): normal, eventually trivial, residue quotient embedding.
+Checked 20:34 UTC: build, module lint, 19 axiom audits; `Scratch/LiftsW8/Filtration-*`.
+Remaining: finite p-groups, tower restriction, explicit inverse-limit comparison.
 Anchors: HilbertTheory `IsInertiaField`, `InertiaComparison` restriction
 surjectivity, QuotientGroup `lift`, `quotientKerEquivRange`. Dependencies:
 F1–F3; the existing level-one tame kernel is not enough.
