@@ -844,8 +844,10 @@ public import FLT.Mathlib.Topology.Instances.Matrix
 public import FLT.Mathlib.Topology.MetricSpace.ProperSpace.InfinitePlace
 public import FLT.Mathlib.Topology.MetricSpace.Pseudo.Matrix
 public import FLT.Mathlib.Topology.Polish
+public import FLT.Mazur.AbelianInjectiveFlasque
 public import FLT.Mazur.AbsoluteDirectImageCohomology
 public import FLT.Mazur.AcyclicDirectImageResolution
+public import FLT.Mazur.AcyclicResolutionComparison
 public import FLT.Mazur.AffineAnnihilator
 public import FLT.Mazur.AffineClosedModuleDescent
 public import FLT.Mazur.AffineCoherent
@@ -976,11 +978,18 @@ public import FLT.Mazur.FiniteAffineCoverDimension
 public import FLT.Mazur.FiniteAffineCoverFiniteness
 public import FLT.Mazur.FiniteCechCyclesScalars
 public import FLT.Mazur.FiniteCechTermScalars
+public import FLT.Mazur.FlasqueDirectImageAcyclic
 public import FLT.Mazur.GenericFibers
 public import FLT.Mazur.GlobalClosedModuleDescent
+public import FLT.Mazur.GlobalIdealPower
+public import FLT.Mazur.GlobalIdealPowerCompatibility
 public import FLT.Mazur.IdealModuleSheaf
+public import FLT.Mazur.IdealPowerChartDescent
 public import FLT.Mazur.IdealPowerCompatibility
+public import FLT.Mazur.IdealPowerExtensionCharts
+public import FLT.Mazur.IdealPowerExtensionGluing
 public import FLT.Mazur.IncreasingCechComplex
+public import FLT.Mazur.InjectiveHorseshoe
 public import FLT.Mazur.IntegralBase
 public import FLT.Mazur.IntegralClosedSupport
 public import FLT.Mazur.LocalizationCech
@@ -996,6 +1005,7 @@ public import FLT.Mazur.ModuleCechScalar
 public import FLT.Mazur.ModuleCohomology
 public import FLT.Mazur.ModuleCohomologyExact
 public import FLT.Mazur.ModuleCohomologyRing
+public import FLT.Mazur.ModuleDerivedAbelianComparison
 public import FLT.Mazur.ModuleFreeOpen
 public import FLT.Mazur.ModuleInjectiveFlasque
 public import FLT.Mazur.ModuleLineBundlePullback
@@ -1073,6 +1083,7 @@ public import FLT.Mazur.RationalFibers
 public import FLT.Mazur.RelativeCartier
 public import FLT.Mazur.RelativeCartierBaseChange
 public import FLT.Mazur.RelativeSums
+public import FLT.Mazur.RightDerivedDimensionShift
 public import FLT.Mazur.ScalarCohomology
 public import FLT.Mazur.SchemeCohomologyIso
 public import FLT.Mazur.SectionCharts
