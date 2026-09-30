@@ -25,7 +25,7 @@ Caps count entire modules including helpers. No structure may take an atlas,
 pushout property, finite presentation, or smooth-locus conclusion as a field.
 `K` is a field; `R` is a commutative ring; `N := PolygonNodeEqualizer.A`.
 
-## E1 — localize the two branches, cap 260, ready now
+## E1 — localize the two branches, cap 260, implemented
 
 New `FLT/Mazur/PolygonNodeLocalization.lean`, namespace
 `FLT.Mazur.PolygonNodeLocalization`. Define `x=(X,0)`, `y=(0,X)` in `N`,
@@ -51,7 +51,7 @@ use the symmetric calculation on the right. Source: the punctured branches
 in DR II.1.1. Dependencies: P4 only. These are algebra localizations, not a
 scheme pushout claim. Unblocks E2 and the n≥2 overlap maps in E4.
 
-## E2 — two disjoint open Laurent branches, cap 260, after E1
+## E2 — two disjoint open Laurent branches, cap 260, ready after E1
 
 New `FLT/Mazur/PolygonNodeBranches.lean`, namespace
 `FLT.Mazur.PolygonNodeBranches`. Define `node := Spec (.of N)` and
@@ -171,3 +171,7 @@ new declarations with collectAxioms; allow only propext/Classical.choice/Quot.so
 C-sort FLT.lean public imports; commit each leaf locally; never push. If any
 cap fails, commit proved material and record exact remainder and smaller caps
 in untracked BLOCKED.md outside FLT/. Only this split document is committed prose.
+
+E1 checked 2026-09-30 20:12 UTC: 136/260 lines; foreground module build,
+individual runLinter, and collectAxioms on all 21 module declarations passed.
+Audit output: untracked GOAL_MAZUR_W6_E1_AXIOMS.txt; only the three allowed axioms.
