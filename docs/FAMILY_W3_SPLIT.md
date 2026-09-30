@@ -183,6 +183,12 @@ proofs exceed the caps; do not assume their conclusions in an input record.
    foreground module build, individual lint, and `W7_D3A_AXIOMS.lean` pass
    (only propext, Classical.choice, Quot.sound).
 
+   W7 D3b COMPLETE: `LocalCyclotomicSurjectivity.lean` (62/200 lines)
+   proves `LocalCyclotomic.inertiaCharacter_surjective` using the chosen finite
+   cyclotomic field, finite inertia comparison, and character naturality.
+   Checked 2026-09-30 20:28 UTC: foreground build, individual lint, and
+   `W7_D3B_AXIOMS.lean` pass (only the standard three axioms).
+
 4. D4 — PARTIAL; inertia detector depends on D3b (cap 220): with ε the
    global mod-p cyclotomic character and H its
    kernel, use D1–D3 to produce an inertia element t with `χ t = -1` for
