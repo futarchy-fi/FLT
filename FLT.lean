@@ -1100,6 +1100,7 @@ public import FLT.Mazur.PolygonChartScaling
 public import FLT.Mazur.PolygonIncidence
 public import FLT.Mazur.PolygonNodeEqualizer
 public import FLT.Mazur.PolygonPinchingDiagram
+public import FLT.Mazur.PolygonSplitGroup
 public import FLT.Mazur.PolygonUniversalScaling
 public import FLT.Mazur.PrincipalSubmoduleCoordinates
 public import FLT.Mazur.PrincipalSubmoduleOverlap
