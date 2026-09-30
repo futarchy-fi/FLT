@@ -42,6 +42,7 @@ public import FLT.Assembly.CharacterModelPurity
 public import FLT.Assembly.CharacterModels
 public import FLT.Assembly.ExistingInputs
 public import FLT.Assembly.Final
+public import FLT.Assembly.FreyTraceInput
 public import FLT.Assembly.Inputs
 public import FLT.Assembly.Mazur
 public import FLT.Assembly.NormalizedReducibility
@@ -109,8 +110,10 @@ public import FLT.Deformations.LiftFunctor
 public import FLT.Deformations.ProartinianQuotients
 public import FLT.Deformations.Representable
 public import FLT.Deformations.RepresentationTheory.AbsoluteGaloisGroup
+public import FLT.Deformations.RepresentationTheory.BrauerEffectivityCoefficients
 public import FLT.Deformations.RepresentationTheory.Burnside
 public import FLT.Deformations.RepresentationTheory.Etale
+public import FLT.Deformations.RepresentationTheory.FamilyTracePair
 public import FLT.Deformations.RepresentationTheory.Flat
 public import FLT.Deformations.RepresentationTheory.Frobenius
 public import FLT.Deformations.RepresentationTheory.GaloisRep
