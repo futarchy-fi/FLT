@@ -2,6 +2,7 @@ import FLTTest.AssemblyAxioms
 import FLTTest.ExponentRebase
 import FLTTest.FLTTest
 import FLTTest.HardlyRamifiedAbsoluteIrreducibility
+import FLTTest.HardlyRamifiedUniversal
 import FLTTest.MathlibCompatibility
 import FLTTest.MazurAffineCechSum
 import FLTTest.MazurAffineCohomology
