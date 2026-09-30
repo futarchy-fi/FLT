@@ -1082,6 +1082,7 @@ public import FLT.Mazur.ProjectiveSpaceCoefficientMap
 public import FLT.Mazur.ProjectiveSpaceProper
 public import FLT.Mazur.ProjectiveSpaceReindex
 public import FLT.Mazur.ProjectiveTripleModuleLocalization
+public import FLT.Mazur.ProjectiveTwistAffineBaseChange
 public import FLT.Mazur.ProjectiveTwistCech
 public import FLT.Mazur.ProjectiveTwistCechCohomologyContraction
 public import FLT.Mazur.ProjectiveTwistCechCohomologyCoordinates
