@@ -20,14 +20,14 @@ pairs of standard chart rings tensored over the coefficient ring.
 
 open AlgebraicGeometry CategoryTheory CategoryTheory.Limits
 
-universe u
+universe u v
 
 set_option backward.isDefEq.respectTransparency false
 set_option backward.defeqAttrib.useBackward true
 
 namespace FLT.Mazur.ProjectiveSpace
 
-variable (R : Type u) [CommRing R] (ι κ : Type u)
+variable (R : Type (max u v)) [CommRing R] (ι κ : Type v)
 
 attribute [local instance] MvPolynomial.gradedAlgebra
 

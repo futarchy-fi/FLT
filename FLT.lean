@@ -910,6 +910,7 @@ public import FLT.Mazur.ChowAffineEmbedding
 public import FLT.Mazur.ChowChartData
 public import FLT.Mazur.ChowChartImageClosure
 public import FLT.Mazur.ChowDenseAffineCover
+public import FLT.Mazur.ChowFiniteSegreEmbedding
 public import FLT.Mazur.ChowGenericNeighborhoods
 public import FLT.Mazur.ChowGraphClosure
 public import FLT.Mazur.ChowGraphEmbedding
@@ -950,6 +951,7 @@ public import FLT.Mazur.CoherentSubmoduleUnion
 public import FLT.Mazur.CoherentSubquotient
 public import FLT.Mazur.CoherentSubsheafACC
 public import FLT.Mazur.CoherentSupport
+public import FLT.Mazur.CommonIdealDirectSum
 public import FLT.Mazur.ConstantDegree
 public import FLT.Mazur.Contracts
 public import FLT.Mazur.CurveFiberHypotheses
@@ -981,9 +983,16 @@ public import FLT.Mazur.FiniteCechCyclesScalars
 public import FLT.Mazur.FiniteCechTermScalars
 public import FLT.Mazur.FlasqueDirectImageAcyclic
 public import FLT.Mazur.GenericFibers
+public import FLT.Mazur.GenericIdealInjection
+public import FLT.Mazur.GenericIdealSupport
 public import FLT.Mazur.GlobalClosedModuleDescent
+public import FLT.Mazur.GlobalIdealPower
+public import FLT.Mazur.GlobalIdealPowerCompatibility
 public import FLT.Mazur.IdealModuleSheaf
+public import FLT.Mazur.IdealPowerChartDescent
 public import FLT.Mazur.IdealPowerCompatibility
+public import FLT.Mazur.IdealPowerExtensionCharts
+public import FLT.Mazur.IdealPowerExtensionGluing
 public import FLT.Mazur.IncreasingCechComplex
 public import FLT.Mazur.InjectiveHorseshoe
 public import FLT.Mazur.IntegralBase
@@ -1004,7 +1013,10 @@ public import FLT.Mazur.ModuleCohomologyRing
 public import FLT.Mazur.ModuleDerivedAbelianComparison
 public import FLT.Mazur.ModuleFreeOpen
 public import FLT.Mazur.ModuleInjectiveFlasque
+public import FLT.Mazur.ModuleLineBundlePullback
 public import FLT.Mazur.ModuleOpenCohomology
+public import FLT.Mazur.ModulePresheafPullbackSections
+public import FLT.Mazur.ModulePresheafTensorPullback
 public import FLT.Mazur.ModuleSheafDual
 public import FLT.Mazur.ModuleSheafDualSheaf
 public import FLT.Mazur.ModuleSheafGluing
@@ -1054,6 +1066,7 @@ public import FLT.Mazur.ProjectiveSectionExtensionCharts
 public import FLT.Mazur.ProjectiveSectionExtensionCoordinates
 public import FLT.Mazur.ProjectiveSpaceCharts
 public import FLT.Mazur.ProjectiveSpaceProper
+public import FLT.Mazur.ProjectiveSpaceReindex
 public import FLT.Mazur.ProjectiveTripleModuleLocalization
 public import FLT.Mazur.ProjectiveTwistCech
 public import FLT.Mazur.ProjectiveTwistCechCohomologyContraction
@@ -1087,6 +1100,8 @@ public import FLT.Mazur.SectionKernelLocal
 public import FLT.Mazur.SectionSumFinite
 public import FLT.Mazur.SegreChartMaps
 public import FLT.Mazur.SegreChartQuotient
+public import FLT.Mazur.SegreClosedImmersion
+public import FLT.Mazur.SegreSchemeMorphism
 public import FLT.Mazur.SmoothCurveDimension
 public import FLT.Mazur.SmoothDimension
 public import FLT.Mazur.SmoothDimensionBound

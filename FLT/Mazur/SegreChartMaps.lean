@@ -20,23 +20,23 @@ of the two normalized coordinate vectors.
 open AlgebraicGeometry CategoryTheory MvPolynomial HomogeneousLocalization
 open scoped TensorProduct
 
-universe u
+universe u v w
 
 set_option backward.isDefEq.respectTransparency false
 
 namespace FLT.Mazur.ProjectiveSpace
 
-variable (R : Type u) [CommRing R] (ι κ : Type u)
+variable (R : Type u) [CommRing R] (ι κ : Type v)
 
 attribute [local instance] MvPolynomial.gradedAlgebra
 
 /-- Evaluate homogeneous fractions at a coordinate vector normalized at `i`. -/
-def chartEval {S : Type u} [CommRing S] (f : R →+* S) (x : ι → S)
+def chartEval {S : Type w} [CommRing S] (f : R →+* S) (x : ι → S)
     (i : ι) (hi : x i = 1) : chartRing R ι i →+* S :=
   (Localization.awayLift (eval₂Hom f x) (X i) (by simp [hi])).comp
     (algebraMap _ (Localization.Away (X (R := R) i)))
 
-lemma chartEval_mk {S : Type u} [CommRing S] (f : R →+* S) (x : ι → S)
+lemma chartEval_mk {S : Type w} [CommRing S] (f : R →+* S) (x : ι → S)
     (i : ι) (hi : x i = 1) (d : ℕ) (p : MvPolynomial ι R)
     (hp : p ∈ grading R ι (d • 1)) :
     chartEval R ι f x i hi (Away.mk _ (isHomogeneous_X R i) d p hp) =
@@ -46,13 +46,13 @@ lemma chartEval_mk {S : Type u} [CommRing S] (f : R →+* S) (x : ι → S)
   simpa using Localization.awayLift_mk (eval₂Hom f x) (X i) p 1 (by simp [hi]) d
 
 @[simp]
-lemma chartEval_coordinate {S : Type u} [CommRing S] (f : R →+* S) (x : ι → S)
+lemma chartEval_coordinate {S : Type w} [CommRing S] (f : R →+* S) (x : ι → S)
     (i : ι) (hi : x i = 1) (j : ι) :
     chartEval R ι f x i hi (coordinate R ι i j) = x j := by
   rw [coordinate, chartEval_mk, eval₂_X]
 
 @[simp]
-lemma chartEval_scalar {S : Type u} [CommRing S] (f : R →+* S) (x : ι → S)
+lemma chartEval_scalar {S : Type w} [CommRing S] (f : R →+* S) (x : ι → S)
     (i : ι) (hi : x i = 1) (r : R) :
     chartEval R ι f x i hi (chartScalars R ι i r) = f r := by
   change chartEval R ι f x i hi (Away.mk _ (isHomogeneous_X R i) 0 (C r) _) = _
@@ -85,7 +85,7 @@ lemma eval₂_coordinate_mk (i : ι) (d : ℕ) (p : MvPolynomial ι R)
   rfl
 
 /-- Ring maps out of a standard chart are determined by scalars and coordinates. -/
-lemma chartRing_hom_ext {S : Type u} [CommRing S] (i : ι)
+lemma chartRing_hom_ext {S : Type w} [CommRing S] (i : ι)
     (f g : chartRing R ι i →+* S)
     (hR : ∀ r, f (chartScalars R ι i r) = g (chartScalars R ι i r))
     (hX : ∀ j, f (coordinate R ι i j) = g (coordinate R ι i j)) : f = g := by

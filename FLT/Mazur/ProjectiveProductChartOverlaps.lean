@@ -20,7 +20,7 @@ open AlgebraicGeometry CategoryTheory CategoryTheory.Limits MvPolynomial
 
 open scoped TensorProduct
 
-universe u
+universe u v
 
 set_option backward.isDefEq.respectTransparency false
 set_option backward.defeqAttrib.useBackward true
@@ -87,7 +87,7 @@ lemma specAlgHom_base (f : A →ₐ[R] C) :
 
 end Tensor
 
-variable (R : Type u) [CommRing R] (ι κ : Type u)
+variable (R : Type (max u v)) [CommRing R] (ι κ : Type v)
 
 attribute [local instance] MvPolynomial.gradedAlgebra
 
@@ -142,13 +142,15 @@ lemma productOverlap_condition (i k : ι) (j l : κ) :
   apply pullback.hom_ext
   · simp only [Category.assoc, productChartMap_fst, productOverlapLeftMap,
       productOverlapRightMap, segreOverlapLeft, segreOverlapRight,
-      tensorSpecMap_fst_assoc, chartOverlapLeft_chartMap, chartOverlapRight_chartMap]
+      tensorSpecMap_fst_assoc, chartOverlapLeft_chartMap R ι i k,
+      chartOverlapRight_chartMap R ι i k]
   · simp only [Category.assoc, productChartMap_snd, productOverlapLeftMap,
       productOverlapRightMap, segreOverlapLeft, segreOverlapRight,
-      tensorSpecMap_snd_assoc, chartOverlapLeft_chartMap, chartOverlapRight_chartMap]
+      tensorSpecMap_snd_assoc, chartOverlapLeft_chartMap R κ j l,
+      chartOverlapRight_chartMap R κ j l]
 
 /-- Equality can be checked after restricting an overlap to its first chart. -/
-lemma productOverlap_hom_ext (i k : ι) (j l : κ) {T : Scheme.{u}}
+lemma productOverlap_hom_ext (i k : ι) (j l : κ) {T : Scheme.{max u v}}
     {f g : T ⟶ Spec (.of (segreOverlapRing R ι κ i k j l))}
     (h : f ≫ productOverlapLeftMap R ι κ i k j l =
       g ≫ productOverlapLeftMap R ι κ i k j l) : f = g := by
@@ -169,7 +171,7 @@ lemma productOverlap_hom_ext (i k : ι) (j l : κ) {T : Scheme.{u}}
       tensorSpecMap_snd] using h'
 
 /-- A compatible pair of maps lifts to the tensor of the actual chart intersections. -/
-lemma productOverlap_exists_lift (i k : ι) (j l : κ) {T : Scheme.{u}}
+lemma productOverlap_exists_lift (i k : ι) (j l : κ) {T : Scheme.{max u v}}
     (f : T ⟶ Spec (.of (segreSourceRing R ι κ i j)))
     (g : T ⟶ Spec (.of (segreSourceRing R ι κ k l)))
     (h : f ≫ productChartMap R ι κ i j = g ≫ productChartMap R ι κ k l) :
@@ -209,6 +211,8 @@ lemma productOverlap_exists_lift (i k : ι) (j l : κ) {T : Scheme.{u}}
     · rw [Category.assoc, productOverlapRightMap, segreOverlapRight,
         tensorSpecMap_snd, ← Category.assoc, ht', hb']
 
+set_option maxHeartbeats 800000 in
+-- Comparing tensor pullback cones with independent coordinate universes needs this budget.
 /-- Tensor-overlap spectra represent the intersections in the projective product. -/
 lemma productOverlapIsPullback (i k : ι) (j l : κ) :
     IsPullback (productOverlapLeftMap R ι κ i k j l)
