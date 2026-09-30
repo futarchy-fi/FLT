@@ -20,7 +20,7 @@ with the scalar action given by that same ring map.
 
 open AlgebraicGeometry CategoryTheory Opposite MvPolynomial
 
-universe u
+universe u v
 
 set_option backward.isDefEq.respectTransparency false
 set_option backward.defeqAttrib.useBackward true
@@ -51,9 +51,11 @@ private lemma specOpenRestriction_localized {A : CommRingCat.{u}}
     IsLocalizedModule (.powers f) (specOpenRestriction M (PrimeSpectrum.basicOpen f)) :=
   isLocalizing_of_iso (modulesSpecToSheaf.mapIso e.symm) (isLocalizing_tilde N) f
 
-variable (R : Type u) [CommRing R] (ι : Type u)
-
 attribute [local instance] MvPolynomial.gradedAlgebra
+
+section
+
+variable (R : Type u) [CommRing R] (ι : Type v)
 
 /-- The overlap spectrum maps to projective space by the actual overlap chart. -/
 def overlapMap (i j : ι) : Spec (.of (overlapRing R ι i j)) ⟶ space R ι :=
@@ -111,6 +113,10 @@ lemma toOverlap_image_top (i j : ι) :
   exact TopologicalSpace.Opens.ext
     (PrimeSpectrum.localization_away_comap_range (overlapRing R ι i j)
       (coordinate R ι i j))
+
+end
+
+variable (R : Type u) [CommRing R] (ι : Type u)
 
 /-- The original sheaf on the coordinate spectrum of the overlap. -/
 abbrev overlapModule (F : (space R ι).Modules) (i j : ι) :=
