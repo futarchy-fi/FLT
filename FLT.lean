@@ -1118,6 +1118,7 @@ public import FLT.Mazur.PushforwardCech
 public import FLT.Mazur.RationalFibers
 public import FLT.Mazur.RelativeCartier
 public import FLT.Mazur.RelativeCartierBaseChange
+public import FLT.Mazur.RelativeSerreLocalizedTower
 public import FLT.Mazur.RelativeSums
 public import FLT.Mazur.RightDerivedDimensionShift
 public import FLT.Mazur.ScalarCohomology
