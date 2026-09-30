@@ -926,6 +926,7 @@ public import FLT.Mazur.ClosedDescentGluingData
 public import FLT.Mazur.ClosedDescentGluingMaps
 public import FLT.Mazur.ClosedDescentOverlapCoherence
 public import FLT.Mazur.ClosedImmersionModulePushforward
+public import FLT.Mazur.ClosedLineProjectionFormula
 public import FLT.Mazur.ClosedModuleDescent
 public import FLT.Mazur.ClosedPushforwardCohomology
 public import FLT.Mazur.ClosedPushforwardFull
