@@ -43,6 +43,7 @@ public import FLT.AbsoluteGaloisGroup.RootCharacterUniformizer
 public import FLT.AbsoluteGaloisGroup.RootInertiaTransitivity
 public import FLT.AbsoluteGaloisGroup.TameCharacter
 public import FLT.AbsoluteGaloisGroup.Unramified
+public import FLT.AbsoluteGaloisGroup.WildInertiaProP
 public import FLT.Assembly.B4
 public import FLT.Assembly.CharacterConjugation
 public import FLT.Assembly.CharacterGlobalModel
