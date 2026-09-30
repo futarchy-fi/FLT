@@ -864,6 +864,8 @@ public import FLT.Mazur.AffineCoverIntersections
 public import FLT.Mazur.AffineKernelLocalization
 public import FLT.Mazur.AffineModuleSupport
 public import FLT.Mazur.AffinePullbackIdeal
+public import FLT.Mazur.AffinePushforwardCohomology
+public import FLT.Mazur.AffinePushforwardQuasicoherent
 public import FLT.Mazur.AffineStalkExtension
 public import FLT.Mazur.AffineStalkMorphism
 public import FLT.Mazur.CartierChartFlat
