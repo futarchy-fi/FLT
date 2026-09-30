@@ -844,6 +844,7 @@ public import FLT.Mathlib.Topology.Instances.Matrix
 public import FLT.Mathlib.Topology.MetricSpace.ProperSpace.InfinitePlace
 public import FLT.Mathlib.Topology.MetricSpace.Pseudo.Matrix
 public import FLT.Mathlib.Topology.Polish
+public import FLT.Mazur.AbsoluteDirectImageCohomology
 public import FLT.Mazur.AcyclicDirectImageResolution
 public import FLT.Mazur.AffineAnnihilator
 public import FLT.Mazur.AffineClosedModuleDescent
@@ -864,6 +865,7 @@ public import FLT.Mazur.AffineCohomologyVanishingRelInjective
 public import FLT.Mazur.AffineCohomologyVanishingSpectrum
 public import FLT.Mazur.AffineCoverCohomology
 public import FLT.Mazur.AffineCoverIntersections
+public import FLT.Mazur.AffineIdealPowerExtension
 public import FLT.Mazur.AffineKernelLocalization
 public import FLT.Mazur.AffineModuleSupport
 public import FLT.Mazur.AffinePullbackIdeal
@@ -927,10 +929,12 @@ public import FLT.Mazur.ClosedSubschemeCohomology
 public import FLT.Mazur.ClosedSubsets
 public import FLT.Mazur.CoherentAffineCoverSections
 public import FLT.Mazur.CoherentClosedPushforward
+public import FLT.Mazur.CoherentClosedReduction
 public import FLT.Mazur.CoherentComparisonLocus
 public import FLT.Mazur.CoherentDevissage
 public import FLT.Mazur.CoherentFreeSheaf
 public import FLT.Mazur.CoherentGenericComparison
+public import FLT.Mazur.CoherentGenericCoordinates
 public import FLT.Mazur.CoherentGenericExtension
 public import FLT.Mazur.CoherentGenericIdealEmbedding
 public import FLT.Mazur.CoherentIdealIntersection
@@ -974,6 +978,7 @@ public import FLT.Mazur.FiniteCechTermScalars
 public import FLT.Mazur.GenericFibers
 public import FLT.Mazur.GlobalClosedModuleDescent
 public import FLT.Mazur.IdealModuleSheaf
+public import FLT.Mazur.IdealPowerCompatibility
 public import FLT.Mazur.IncreasingCechComplex
 public import FLT.Mazur.IntegralBase
 public import FLT.Mazur.IntegralClosedSupport
@@ -990,6 +995,8 @@ public import FLT.Mazur.ModuleCechScalar
 public import FLT.Mazur.ModuleCohomology
 public import FLT.Mazur.ModuleCohomologyExact
 public import FLT.Mazur.ModuleCohomologyRing
+public import FLT.Mazur.ModuleFreeOpen
+public import FLT.Mazur.ModuleInjectiveFlasque
 public import FLT.Mazur.ModuleOpenCohomology
 public import FLT.Mazur.ModuleSheafDual
 public import FLT.Mazur.ModuleSheafDualSheaf
