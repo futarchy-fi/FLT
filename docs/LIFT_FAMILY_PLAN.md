@@ -277,6 +277,23 @@ after restricting to a cyclotomic extension, local-condition representability,
 a characteristic-zero point, `lifts`, or compatible-family existence.
 The three final arithmetic leaves are unchanged.
 
+## Implemented connection: unrestricted universal deformation
+
+`Deformations/HardlyRamifiedUniversal.lean` connects the residual
+hardly ramified hypotheses to the existing de Smit–Lenstra construction.
+It proves absolute irreducibility of the actual matrix representation,
+constructs a universal unrestricted lift over the existing universal trace
+ring, and derives corepresentability of the unrestricted deformation functor.
+The residual p-adic algebra is the composite through the coefficient ring's
+residue map. Absolute irreducibility is derived, not supplied as a new premise.
+
+`FLTTest/HardlyRamifiedUniversal.lean` audits all three endpoints.
+This does not assert that the universal representation itself satisfies
+the hardly ramified local conditions, nor that the ring has a characteristic-zero
+point with those conditions. The local-condition quotient, its required point,
+and compatible-family existence remain open; the three final arithmetic
+leaves are unchanged.
+
 ## Mathematical route and sources
 
 ### Blueprint scope, including its limitations
