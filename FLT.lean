@@ -1050,6 +1050,7 @@ public import FLT.Mazur.SectionDivisors
 public import FLT.Mazur.SectionKernelLocal
 public import FLT.Mazur.SectionSumFinite
 public import FLT.Mazur.SegreChartMaps
+public import FLT.Mazur.SegreChartQuotient
 public import FLT.Mazur.SmoothCurveDimension
 public import FLT.Mazur.SmoothDimension
 public import FLT.Mazur.SmoothDimensionBound
