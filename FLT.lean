@@ -908,8 +908,10 @@ public import FLT.Mazur.ChowDenseAffineCover
 public import FLT.Mazur.ChowGenericNeighborhoods
 public import FLT.Mazur.ChowGraphClosure
 public import FLT.Mazur.ChowGraphEmbedding
+public import FLT.Mazur.ChowGraphProductComparison
 public import FLT.Mazur.ChowGraphRestriction
 public import FLT.Mazur.ChowProductImageFactors
+public import FLT.Mazur.ChowProductOpenGluing
 public import FLT.Mazur.ChowProjectiveProduct
 public import FLT.Mazur.ChowSourceClosure
 public import FLT.Mazur.ClosedDescentCharts
@@ -1063,6 +1065,8 @@ public import FLT.Mazur.SectionCharts
 public import FLT.Mazur.SectionDivisors
 public import FLT.Mazur.SectionKernelLocal
 public import FLT.Mazur.SectionSumFinite
+public import FLT.Mazur.SegreChartMaps
+public import FLT.Mazur.SegreChartQuotient
 public import FLT.Mazur.SmoothCurveDimension
 public import FLT.Mazur.SmoothDimension
 public import FLT.Mazur.SmoothDimensionBound
