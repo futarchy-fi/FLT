@@ -162,7 +162,7 @@ proofs exceed the caps; do not assume their conclusions in an input record.
    degree and the shifted minimal polynomial in arbitrary field presentations.
    The result includes p=2. Checked 2026-09-30: foreground build, module lint,
    and all eleven theorem axiom checks pass (standard axioms only).
-3. D3 — inertia/tame comparison proved; generator leaf pending validation.
+3. D3 — DONE: local inertia surjectivity, tame comparison and generator.
    `LocalCyclotomicCharacter.lean` (124/350 lines) provides the finite
    character, residue equivalence, naturality and geometric-sum formula.
    W7 has discharged the arithmetic bridges without assuming total
@@ -179,10 +179,11 @@ proofs exceed the caps; do not assume their conclusions in an input record.
      `tameCharacter_eq_inertiaCharacter`. The shifted polynomial writes
      `(ζ−1)^(p−1)` as p times an integral unit. This constructs the correcting
      unit relative to the chosen tame root; inertia fixes its reduction.
-   - D3d: generator transport (80), pending validation.
+   - D3d COMPLETE: `LocalCyclotomicGenerator.lean` (46/80) constructs one
+     inertia element generating both the cyclotomic and tame unit groups.
 
-   D3a–D3c checked 2026-09-30: foreground module builds, individual
-   `lake exe runLinter MODULE`, and `W7_D3{A,B,C}_AXIOMS.lean` pass;
+   D3a–D3d checked 2026-09-30 20:34 UTC: foreground module builds, individual
+   `lake exe runLinter MODULE`, and `W7_D3{A,B,C,D}_AXIOMS.lean` pass;
    every checked declaration uses only propext, Classical.choice, Quot.sound.
 
 4. D4 — PARTIAL; inertia detector depends on D3b (cap 220): with ε the
