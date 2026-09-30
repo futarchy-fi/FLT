@@ -909,6 +909,7 @@ public import FLT.Mazur.ChowAffineCover
 public import FLT.Mazur.ChowAffineEmbedding
 public import FLT.Mazur.ChowChartData
 public import FLT.Mazur.ChowChartImageClosure
+public import FLT.Mazur.ChowCohomologyFiniteness
 public import FLT.Mazur.ChowDenseAffineCover
 public import FLT.Mazur.ChowDirectImageComparison
 public import FLT.Mazur.ChowFiniteSegreEmbedding
