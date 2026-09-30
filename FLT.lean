@@ -938,6 +938,7 @@ public import FLT.Mazur.CoherentGenericComparison
 public import FLT.Mazur.CoherentGenericCoordinates
 public import FLT.Mazur.CoherentGenericExtension
 public import FLT.Mazur.CoherentGenericIdealEmbedding
+public import FLT.Mazur.CoherentGeometricFiltration
 public import FLT.Mazur.CoherentIdealIntersection
 public import FLT.Mazur.CoherentIdealPowerFiltration
 public import FLT.Mazur.CoherentOpenDescent
