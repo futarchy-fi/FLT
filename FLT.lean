@@ -897,6 +897,7 @@ public import FLT.Mazur.CechSortingHomotopyEvaluation
 public import FLT.Mazur.CechSortingMaps
 public import FLT.Mazur.CechSortingRecursiveHomotopy
 public import FLT.Mazur.CechSortingTupleChains
+public import FLT.Mazur.ChowAffineBaseChartImmersion
 public import FLT.Mazur.ChowAffineCover
 public import FLT.Mazur.ChowAffineEmbedding
 public import FLT.Mazur.ChowDenseAffineCover
@@ -1006,8 +1007,10 @@ public import FLT.Mazur.PolygonPinchingDiagram
 public import FLT.Mazur.PrincipalSubmoduleCoordinates
 public import FLT.Mazur.PrincipalSubmoduleOverlap
 public import FLT.Mazur.PrincipalSubmoduleSectionLocalization
+public import FLT.Mazur.ProjectiveAffineChartEmbedding
 public import FLT.Mazur.ProjectiveChartDenominators
 public import FLT.Mazur.ProjectiveChartNoetherian
+public import FLT.Mazur.ProjectiveChartPolynomialEquiv
 public import FLT.Mazur.ProjectiveCoherentCharts
 public import FLT.Mazur.ProjectiveCoherentCohomology
 public import FLT.Mazur.ProjectiveGeneration
