@@ -1066,6 +1066,7 @@ public import FLT.Mazur.ProjectiveProductChartOverlaps
 public import FLT.Mazur.ProjectiveSectionExtension
 public import FLT.Mazur.ProjectiveSectionExtensionCharts
 public import FLT.Mazur.ProjectiveSectionExtensionCoordinates
+public import FLT.Mazur.ProjectiveSpaceAffineBaseChange
 public import FLT.Mazur.ProjectiveSpaceCharts
 public import FLT.Mazur.ProjectiveSpaceCoefficientMap
 public import FLT.Mazur.ProjectiveSpaceProper
