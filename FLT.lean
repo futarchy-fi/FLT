@@ -865,6 +865,7 @@ public import FLT.Mazur.AffineCohomologyVanishingRelInjective
 public import FLT.Mazur.AffineCohomologyVanishingSpectrum
 public import FLT.Mazur.AffineCoverCohomology
 public import FLT.Mazur.AffineCoverIntersections
+public import FLT.Mazur.AffineIdealPowerExtension
 public import FLT.Mazur.AffineKernelLocalization
 public import FLT.Mazur.AffineModuleSupport
 public import FLT.Mazur.AffinePullbackIdeal
@@ -977,6 +978,7 @@ public import FLT.Mazur.FiniteCechTermScalars
 public import FLT.Mazur.GenericFibers
 public import FLT.Mazur.GlobalClosedModuleDescent
 public import FLT.Mazur.IdealModuleSheaf
+public import FLT.Mazur.IdealPowerCompatibility
 public import FLT.Mazur.IncreasingCechComplex
 public import FLT.Mazur.IntegralBase
 public import FLT.Mazur.IntegralClosedSupport
