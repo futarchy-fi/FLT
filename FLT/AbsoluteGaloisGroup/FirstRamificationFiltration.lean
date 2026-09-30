@@ -200,7 +200,7 @@ theorem ramificationResidueCharacter_kills_next {π : R} (hπ : Irreducible π)
 
 /-- Over a finite residue field the uniformizer congruence detects the next group. -/
 theorem mem_next_iff_uniformizer [Finite (ResidueField R)] {π : R} (hπ : Irreducible π)
-    (i : ℕ) (hi : 1 ≤ i) (σ : ramificationGroup R G i) :
+    (i : ℕ) (σ : ramificationGroup R G i) :
     σ.1 ∈ ramificationGroup R G (i + 1) ↔
       σ.1 • π - π ∈ maximalIdeal R ^ (i + 2) := by
   refine ⟨fun h ↦ h π, fun hπσ x ↦ ?_⟩
@@ -226,7 +226,7 @@ theorem mem_next_iff_uniformizer [Finite (ResidueField R)] {π : R} (hπ : Irred
   have hres : residue R (σ.1 • x) = residue R x := by
     apply sub_eq_zero.mp
     rw [← map_sub, residue_eq_zero_iff]
-    exact firstGroup_le_inertia R G (ramificationGroup_antitone R G hi σ.2) x
+    exact Ideal.pow_le_self (Nat.succ_ne_zero i) (σ.2 x)
   have hsum : (∑ j ∈ Finset.range q, (σ.1 • x) ^ j * x ^ (q - 1 - j)) ∈
       maximalIdeal R := by
     rw [← residue_eq_zero_iff]
@@ -246,7 +246,7 @@ theorem ramificationResidueCharacter_ker [Finite (ResidueField R)] {π : R}
       (ramificationGroup R G (i + 1)).comap (ramificationGroup R G i).subtype := by
   ext σ
   exact (residue_coefficient_eq_zero_iff R G hπ i σ).trans
-    (mem_next_iff_uniformizer R G hπ i hi σ).symm
+    (mem_next_iff_uniformizer R G hπ i σ).symm
 
 /-- Embed a successive lower quotient into the additive residue field using the
 chosen uniformizer. The kernel is identified with the next group above. -/
