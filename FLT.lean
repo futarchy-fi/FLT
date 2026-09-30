@@ -919,6 +919,7 @@ public import FLT.Mazur.ChowGraphRestriction
 public import FLT.Mazur.ChowProductImageFactors
 public import FLT.Mazur.ChowProductOpenGluing
 public import FLT.Mazur.ChowProjectiveProduct
+public import FLT.Mazur.ChowSimultaneousLineBundle
 public import FLT.Mazur.ChowSourceClosure
 public import FLT.Mazur.ClosedCohomologyFinite
 public import FLT.Mazur.ClosedDescentCharts
