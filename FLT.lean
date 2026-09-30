@@ -32,6 +32,10 @@ public import FLT.AINTLIB.DedekindResidue.Lemma2
 public import FLT.AbsoluteGaloisGroup.CompletionComparison
 public import FLT.AbsoluteGaloisGroup.InertiaComparison
 public import FLT.AbsoluteGaloisGroup.LocalCompositum
+public import FLT.AbsoluteGaloisGroup.RootCharacter
+public import FLT.AbsoluteGaloisGroup.RootCharacterIndependence
+public import FLT.AbsoluteGaloisGroup.RootCharacterTopology
+public import FLT.AbsoluteGaloisGroup.RootCharacterUniformizer
 public import FLT.AbsoluteGaloisGroup.TameCharacter
 public import FLT.AbsoluteGaloisGroup.Unramified
 public import FLT.Assembly.B4
@@ -42,6 +46,7 @@ public import FLT.Assembly.CharacterModelPurity
 public import FLT.Assembly.CharacterModels
 public import FLT.Assembly.ExistingInputs
 public import FLT.Assembly.Final
+public import FLT.Assembly.FreyTraceInput
 public import FLT.Assembly.Inputs
 public import FLT.Assembly.Mazur
 public import FLT.Assembly.NormalizedReducibility
@@ -109,14 +114,22 @@ public import FLT.Deformations.LiftFunctor
 public import FLT.Deformations.ProartinianQuotients
 public import FLT.Deformations.Representable
 public import FLT.Deformations.RepresentationTheory.AbsoluteGaloisGroup
+public import FLT.Deformations.RepresentationTheory.BrauerEffectivityCoefficients
 public import FLT.Deformations.RepresentationTheory.Burnside
 public import FLT.Deformations.RepresentationTheory.Etale
+public import FLT.Deformations.RepresentationTheory.FamilyTracePair
 public import FLT.Deformations.RepresentationTheory.Flat
+public import FLT.Deformations.RepresentationTheory.FlatCofinal
+public import FLT.Deformations.RepresentationTheory.FlatDiscrete
+public import FLT.Deformations.RepresentationTheory.FlatReduction
 public import FLT.Deformations.RepresentationTheory.Frobenius
 public import FLT.Deformations.RepresentationTheory.GaloisRep
 public import FLT.Deformations.RepresentationTheory.GaloisRepFamily
 public import FLT.Deformations.RepresentationTheory.IntegralClosure
 public import FLT.Deformations.RepresentationTheory.Irreducible
+public import FLT.Deformations.RepresentationTheory.PrimePowerExact
+public import FLT.Deformations.RepresentationTheory.SelfTwistTrace
+public import FLT.Deformations.RepresentationTheory.TameTraceObstruction
 public import FLT.Deformations.RepresentationTheory.TraceCompatiblePair
 public import FLT.Deformations.Subfunctor
 public import FLT.DivisionAlgebra.Finiteness
@@ -332,6 +345,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.KummerTwoUnitSquareClasses
 public import FLT.GaloisRepresentation.HardlyRamified.LatticeHardlyRamified
 public import FLT.GaloisRepresentation.HardlyRamified.Lift
 public import FLT.GaloisRepresentation.HardlyRamified.LiftDomainFree
+public import FLT.GaloisRepresentation.HardlyRamified.LiftDomainResidue
 public import FLT.GaloisRepresentation.HardlyRamified.LiftPrimeAvoidingP
 public import FLT.GaloisRepresentation.HardlyRamified.ModThree
 public import FLT.GaloisRepresentation.HardlyRamified.ModThreeSorted
@@ -339,6 +353,8 @@ public import FLT.GaloisRepresentation.HardlyRamified.NormalizedOrder
 public import FLT.GaloisRepresentation.HardlyRamified.PointFieldBaseChange
 public import FLT.GaloisRepresentation.HardlyRamified.PointFieldRamification
 public import FLT.GaloisRepresentation.HardlyRamified.PrimeField
+public import FLT.GaloisRepresentation.HardlyRamified.PrimeResidualAlgebra
+public import FLT.GaloisRepresentation.HardlyRamified.PrimeResidualNaturality
 public import FLT.GaloisRepresentation.HardlyRamified.PrimeResidueMap
 public import FLT.GaloisRepresentation.HardlyRamified.PureAction
 public import FLT.GaloisRepresentation.HardlyRamified.PureSortedQuotient
@@ -504,6 +520,7 @@ public import FLT.GroupScheme.IntegralSimpleSubobject
 public import FLT.GroupScheme.IntegralSubquotientExtension
 public import FLT.GroupScheme.InvariantDerivation
 public import FLT.GroupScheme.KummerAlgebra
+public import FLT.GroupScheme.KummerCocycle
 public import FLT.GroupScheme.KummerComultiplication
 public import FLT.GroupScheme.KummerHopf
 public import FLT.GroupScheme.KummerParameter
