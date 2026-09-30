@@ -176,6 +176,13 @@ proofs exceed the caps; do not assume their conclusions in an input record.
    tame comparison are not proved. Remaining split: D3a presentation/action
    transport (220), D3b inertia lifting (200), D3c tame comparison (300),
    D3d generator transport (80). Exact targets are in the untracked handoff.
+   W7 D3a COMPLETE: `LocalCyclotomicInertia.lean` (177/220 lines)
+   transports D2 through `IsIntegralClosure.equiv` and the p-adic/completion
+   equivalences, proves residue surjectivity and full finite cyclotomic inertia,
+   and constructs the chosen finite subfield. Checked 2026-09-30 20:20 UTC:
+   foreground module build, individual lint, and `W7_D3A_AXIOMS.lean` pass
+   (only propext, Classical.choice, Quot.sound).
+
 4. D4 — PARTIAL; inertia detector depends on D3b (cap 220): with ε the
    global mod-p cyclotomic character and H its
    kernel, use D1–D3 to produce an inertia element t with `χ t = -1` for
