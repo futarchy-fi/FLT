@@ -259,6 +259,24 @@ characteristic zero. The earlier defect recorded in `docs/CORE_PLAN.md`
 is repaired here: `Family.lean:30` now includes `Module.Free ℤ_[p] R`.
 Do not copy the historical, weaker binder list from that document.
 
+## Implemented prerequisite: residual absolute irreducibility
+
+`HardlyRamified/AbsoluteIrreducibility.lean` proves that every irreducible
+residual hardly ramified representation is absolutely irreducible, for every
+odd prime and finite coefficient field in the existing contract. It derives
+the rank-one fixed space from rational complex conjugation: the involution has
+cyclotomic determinant minus one, and its fixed subspace is neither zero nor
+the whole two-dimensional space. The residual characteristic is derived from
+the p-adic algebra structure. No additional fixed-space, characteristic, or
+absolute-irreducibility hypothesis is supplied by the caller.
+
+`FLTTest/HardlyRamifiedAbsoluteIrreducibility.lean` audits this endpoint and
+four supporting results. This supplies the absolute-irreducibility prerequisite
+for unrestricted deformation representability. It does not prove irreducibility
+after restricting to a cyclotomic extension, local-condition representability,
+a characteristic-zero point, `lifts`, or compatible-family existence.
+The three final arithmetic leaves are unchanged.
+
 ## Mathematical route and sources
 
 ### Blueprint scope, including its limitations
