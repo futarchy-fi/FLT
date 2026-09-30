@@ -1070,6 +1070,7 @@ public import FLT.Mazur.ModuleSubobjectCoverEquality
 public import FLT.Mazur.ModuleUnitCocyclePullback
 public import FLT.Mazur.NeronPolygonPredicate
 public import FLT.Mazur.NestedOpenCohomologyCoherence
+public import FLT.Mazur.NodalGeometricFiberGenus
 public import FLT.Mazur.OpenDirectImageCohomology
 public import FLT.Mazur.OpenDirectImageNaturality
 public import FLT.Mazur.OpenDirectImageRestriction
