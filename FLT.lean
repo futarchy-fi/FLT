@@ -867,6 +867,7 @@ public import FLT.Mazur.AffinePullbackIdeal
 public import FLT.Mazur.AffineStalkExtension
 public import FLT.Mazur.AffineStalkMorphism
 public import FLT.Mazur.AnnihilatorCoherence
+public import FLT.Mazur.AnnihilatorStalk
 public import FLT.Mazur.AnnihilatorSubsheaf
 public import FLT.Mazur.CartierChartFlat
 public import FLT.Mazur.CartierCharts
