@@ -1130,6 +1130,7 @@ public import FLT.Mazur.ProjectiveTwistVanishing
 public import FLT.Mazur.ProjectiveTwistedPresentation
 public import FLT.Mazur.ProjectiveTwistingSheaf
 public import FLT.Mazur.ProjectiveTwistingSheafTensor
+public import FLT.Mazur.ProperCohomologyWitnesses
 public import FLT.Mazur.PushforwardCech
 public import FLT.Mazur.RationalFibers
 public import FLT.Mazur.RelativeCartier
