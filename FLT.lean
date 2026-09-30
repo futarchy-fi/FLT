@@ -900,6 +900,7 @@ public import FLT.Mazur.ChowDenseAffineCover
 public import FLT.Mazur.ChowGenericNeighborhoods
 public import FLT.Mazur.ChowGraphClosure
 public import FLT.Mazur.ChowGraphEmbedding
+public import FLT.Mazur.ChowGraphProductComparison
 public import FLT.Mazur.ChowGraphRestriction
 public import FLT.Mazur.ChowProductImageFactors
 public import FLT.Mazur.ChowProductOpenGluing
