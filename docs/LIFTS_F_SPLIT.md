@@ -5,9 +5,11 @@ W7 F4a checked 20:05 UTC: build, module lint, five axiom audits passed;
 logs `Scratch/LiftsW7/F4a-{build,lint,axioms}.log`; 183/300 lines.
 W7 F4 checked 20:13 UTC: build, module lint, 17 axiom audits passed;
 logs `Scratch/LiftsW7/F4-{build,lint,axioms}.log`; 300/400 lines.
+W7 F5a checked 20:17 UTC: build, module lint, ten axiom audits passed;
+logs `Scratch/LiftsW7/F5a-{build,lint,axioms}.log`; 92/250 lines.
 Source-lemma leaves, each at most 400 lines including headers. F1–F3
 are DONE (W6); F4a is DONE (W7, RootInertiaTransitivity, cap 300).
-F4–F6 retain the missing arithmetic proofs below, not assumed in records.
+F4–F6 still require the constructions below; no missing conclusion is assumed.
 Caps are hard stop limits, not claims that unimplemented proofs fit.
 This document is capped at 200 lines. No weight definition or classification
 is supplied by this split.
@@ -128,7 +130,7 @@ Anchors: HilbertTheory `IsInertiaField`, `InertiaComparison` restriction
 surjectivity, QuotientGroup `lift`, `quotientKerEquivRange`. Dependencies:
 F1–F3; the existing level-one tame kernel is not enough.
 
-## F5 — finite coefficients and Frobenius conjugacy, BLOCKED, cap 400
+## F5 — finite coefficients and Frobenius conjugacy, READY after W7 F5a, cap 400
 
 New `FLT/AbsoluteGaloisGroup/FundamentalCoefficients.lean`.
 Sources S §2, L V §2. For p prime and r>0, define the subfield
@@ -145,14 +147,14 @@ theorem fundamentalCharacter_frobenius (ι j : levelField p r →+* Ω) :
 ```
 For residue cardinality q=p^f distinguish niveau r over Fp from degree r
 over k0 (exponent q^r−1 gives niveau f*r); do not identify the two.
-Missing bridge: prove the residue field k is algebraically closed and has
-characteristic p, with explicit transport from the completion. Needed to
-show the root-defined subfield has p^r elements; no arbitrary embedding of
-all of k into Ω is assumed. Prove the bridge here; stop and split if its
-proof exceeds the cap.
+W7 F5a DONE: `RootCharacterResidue` proves algebraic closedness and transports
+characteristic from the completion residue field, via an explicit algebra
+equivalence with its algebraic closure. It also proves existence of a prime
+characteristic. Finite coefficients and Frobenius conjugacy remain to be
+implemented; no arbitrary embedding of all of k into Ω is assumed.
 Anchors: Mathlib `IsAlgClosed.lift`, `GaloisField`,
 `bijective_frobeniusAlgEquivOfAlgebraic_pow`, `residueFieldMap`.
-Dependencies: F4 for surjectivity; the residue bridge is part of this leaf.
+Dependencies: W7 F4 surjectivity and W7 F5a residue bridge (both proved).
 
 ## F6 — omega-one equals cyclotomic, BLOCKED, cap 400
 
