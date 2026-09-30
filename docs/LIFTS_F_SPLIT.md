@@ -3,6 +3,8 @@
 Audit: 2026-09-30, parent `0534178c`; commands below reproduce the API checks.
 W7 F4a checked 20:05 UTC: build, module lint, five axiom audits passed;
 logs `Scratch/LiftsW7/F4a-{build,lint,axioms}.log`; 183/300 lines.
+W7 F4 checked 20:13 UTC: build, module lint, 17 axiom audits passed;
+logs `Scratch/LiftsW7/F4-{build,lint,axioms}.log`; 300/400 lines.
 Source-lemma leaves, each at most 400 lines including headers. F1–F3
 are DONE (W6); F4a is DONE (W7, RootInertiaTransitivity, cap 300).
 F4–F6 retain the missing arithmetic proofs below, not assumed in records.
@@ -100,7 +102,7 @@ Anchors: `ContinuousSMulDiscrete.isOpen_smul_eq`,
 `IsLocallyConstant.iff_exists_open`, `.continuous`, `.isOpen_fiber`,
 the `Finite (rootsOfUnity n k)` instance. Dependencies: W5.1 (F2 fixes canonical choices).
 
-## F4 — tame quotient and surjectivity, BLOCKED, cap 400
+## F4 — tame quotient and surjectivity, PARTIAL (W7), cap 400
 
 New `FLT/AbsoluteGaloisGroup/FundamentalTame.lean`.
 Sources L IV §2, S §2. Define `rootCharacterToRoots` by codRestrict using
@@ -113,15 +115,15 @@ theorem wildInertia_le_ker (hnk : (n : k) ≠ 0)
     (hπ : Valued.v π.1 = Multiplicative.ofAdd (-1 : ℤ)) :
     wildInertia v ≤ (LocalRoot.character v hn (uniformizer_nonzero hπ) hα).ker
 ```
-`wildInertia v : Subgroup I` is a NEW symbol: it must be constructed as the
-inverse limit of first ramification groups, not defined to be this kernel.
-Use `QuotientGroup.lift` for the induced tame quotient character.
+`LocalRamification.wildInertia v` is defined by first-ramification congruences
+at every finite Galois level. W7 proves normality, kernel containment and the
+surjective quotient character via `QuotientGroup.lift`, independently of kernels.
 W7 F4a: `LocalRoot.inertia_transitive` proves transitivity in every positive
 degree via Eisenstein over finite inertia fixed fields and restriction
-surjectivity. The pro-p description of wild inertia remains missing.
-This leaf must supply those proofs, not assume them as endpoint hypotheses.
-If the 400-line cap is reached, retain the proved finite-extension lemmas
-and record the exact remaining inverse-limit statement in BLOCKED.md.
+surjectivity. W7 `FundamentalTame` proves both displayed endpoints (in all
+positive degrees), plus `LocalRamification.tameRootCharacter_surjective`.
+BLOCKED: finite first groups are p-groups and their explicit inverse-limit
+comparison. Exact remaining statements and capped follow-up: `BLOCKED.md`.
 Anchors: HilbertTheory `IsInertiaField`, `InertiaComparison` restriction
 surjectivity, QuotientGroup `lift`, `quotientKerEquivRange`. Dependencies:
 F1–F3; the existing level-one tame kernel is not enough.
