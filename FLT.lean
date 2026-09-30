@@ -947,6 +947,7 @@ public import FLT.Mazur.CoherentSubmoduleUnion
 public import FLT.Mazur.CoherentSubquotient
 public import FLT.Mazur.CoherentSubsheafACC
 public import FLT.Mazur.CoherentSupport
+public import FLT.Mazur.CommonIdealDirectSum
 public import FLT.Mazur.ConstantDegree
 public import FLT.Mazur.Contracts
 public import FLT.Mazur.CurveFiberHypotheses
