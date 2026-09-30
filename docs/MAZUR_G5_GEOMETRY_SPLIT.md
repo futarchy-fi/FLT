@@ -51,7 +51,7 @@ use the symmetric calculation on the right. Source: the punctured branches
 in DR II.1.1. Dependencies: P4 only. These are algebra localizations, not a
 scheme pushout claim. Unblocks E2 and the n≥2 overlap maps in E4.
 
-## E2 — two disjoint open Laurent branches, cap 260, ready after E1
+## E2 — two disjoint open Laurent branches, cap 260, implemented
 
 New `FLT/Mazur/PolygonNodeBranches.lean`, namespace
 `FLT.Mazur.PolygonNodeBranches`. Define `node := Spec (.of N)` and
@@ -72,7 +72,7 @@ Also prove both composites to Spec R equal the Laurent structure map.
 This identifies the punctured charts with the already smooth G_m, without
 claiming that the omitted closed subscheme is the entire nonsmooth locus.
 Source: same branch calculation for DR II.1.1. Dependencies: E1 and G2.
-Ready once E1 passes. No polygon existence or singularity assumption.
+Implemented after E1. No polygon existence or singularity assumption.
 
 ## E3 — singularity and finite presentation of the actual charts, cap 400, blocked
 
@@ -164,7 +164,7 @@ rg -n 'mem_smoothLocus|preimage_smoothLocus_eq' $M/AlgebraicGeometry/Morphisms/S
 rg -n 'does not|not proved|smooth/node' FLT/Mazur/CurveNode.lean
 ```
 
-Execute E1 then E2 this wave; E3–E5 are explicitly blocked, not assumed ready
+E1 then E2 completed this wave; E3–E5 are explicitly blocked, not assumed ready
 merely because E2 compiles. Build in the foreground with LEAN_NUM_THREADS=2;
 run `lake exe runLinter FLT.Mazur.MODULE` separately for each module. Audit all
 new declarations with collectAxioms; allow only propext/Classical.choice/Quot.sound.
@@ -175,3 +175,8 @@ in untracked BLOCKED.md outside FLT/. Only this split document is committed pros
 E1 checked 2026-09-30 20:12 UTC: 136/260 lines; foreground module build,
 individual runLinter, and collectAxioms on all 21 module declarations passed.
 Audit output: untracked GOAL_MAZUR_W6_E1_AXIOMS.txt; only the three allowed axioms.
+
+E2 checked 2026-09-30 20:16 UTC: 123/260 lines; foreground module build,
+individual runLinter, and collectAxioms on all 24 module declarations passed.
+Audit output: untracked GOAL_MAZUR_W6_E2_AXIOMS.txt; only the three allowed axioms.
+Both imports are C-sorted in FLT.lean; git diff --check passed. G5 remains open.
