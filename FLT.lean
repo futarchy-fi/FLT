@@ -1075,6 +1075,7 @@ public import FLT.Mazur.ModuleSubobjectCoverEquality
 public import FLT.Mazur.ModuleUnitCocyclePullback
 public import FLT.Mazur.NeronPolygonPredicate
 public import FLT.Mazur.NestedOpenCohomologyCoherence
+public import FLT.Mazur.NodalGeometricFiberGenus
 public import FLT.Mazur.OpenDirectImageCohomology
 public import FLT.Mazur.OpenDirectImageNaturality
 public import FLT.Mazur.OpenDirectImageRestriction
@@ -1137,6 +1138,7 @@ public import FLT.Mazur.ProjectiveTwistingSheaf
 public import FLT.Mazur.ProjectiveTwistingSheafTensor
 public import FLT.Mazur.ProperCoherentCohomology
 public import FLT.Mazur.ProperCohomologyWitnesses
+public import FLT.Mazur.ProperCurveGenus
 public import FLT.Mazur.PushforwardCech
 public import FLT.Mazur.RationalFibers
 public import FLT.Mazur.RelativeCartier
