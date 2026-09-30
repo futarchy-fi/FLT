@@ -1093,6 +1093,7 @@ public import FLT.Mazur.OpenSheafExtensionStalks
 public import FLT.Mazur.OpenSheafFreeComparison
 public import FLT.Mazur.OpenSheafRestriction
 public import FLT.Mazur.OverPoints
+public import FLT.Mazur.PolygonChartScaling
 public import FLT.Mazur.PolygonPinchingDiagram
 public import FLT.Mazur.PrincipalSubmoduleCoordinates
 public import FLT.Mazur.PrincipalSubmoduleOverlap

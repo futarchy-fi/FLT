@@ -128,8 +128,8 @@ def inclusion : A →ₐ[R] (R[X] × R[X])
  theorem difference_surjective : Function.Surjective (difference (R := R))
  def lift {B : Type*} [CommRing B] [Algebra R B]
      (f g : B →ₐ[R] R[X])
-     (h : (Polynomial.eval₂AlgHom (Algebra.ofId R R) 0).comp f =
-          (Polynomial.eval₂AlgHom (Algebra.ofId R R) 0).comp g) : B →ₐ[R] A
+     (h : (Polynomial.aeval (0 : R)).comp f =
+          (Polynomial.aeval (0 : R)).comp g) : B →ₐ[R] A
 ```
 
 Acceptance includes uniqueness and the two projections of `lift`. This is the
