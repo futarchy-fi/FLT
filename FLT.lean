@@ -936,13 +936,18 @@ public import FLT.Mazur.CoherentClosedPushforward
 public import FLT.Mazur.CoherentClosedReduction
 public import FLT.Mazur.CoherentComparisonLocus
 public import FLT.Mazur.CoherentDevissage
+public import FLT.Mazur.CoherentFiltration
 public import FLT.Mazur.CoherentFreeSheaf
 public import FLT.Mazur.CoherentGenericComparison
 public import FLT.Mazur.CoherentGenericCoordinates
 public import FLT.Mazur.CoherentGenericExtension
 public import FLT.Mazur.CoherentGenericIdealEmbedding
+public import FLT.Mazur.CoherentGenericRankOneCriterion
+public import FLT.Mazur.CoherentGeometricFiltration
 public import FLT.Mazur.CoherentIdealIntersection
+public import FLT.Mazur.CoherentIdealPowerFiltration
 public import FLT.Mazur.CoherentOpenDescent
+public import FLT.Mazur.CoherentRankOneDevissage
 public import FLT.Mazur.CoherentRestriction
 public import FLT.Mazur.CoherentSubmoduleEnlargement
 public import FLT.Mazur.CoherentSubmoduleExtension
@@ -951,6 +956,7 @@ public import FLT.Mazur.CoherentSubmoduleUnion
 public import FLT.Mazur.CoherentSubquotient
 public import FLT.Mazur.CoherentSubsheafACC
 public import FLT.Mazur.CoherentSupport
+public import FLT.Mazur.CoherentSupportedDecomposition
 public import FLT.Mazur.CommonIdealDirectSum
 public import FLT.Mazur.ConstantDegree
 public import FLT.Mazur.Contracts
@@ -974,6 +980,7 @@ public import FLT.Mazur.DivisorRestrictCoherence
 public import FLT.Mazur.EtaleCoordinate
 public import FLT.Mazur.EtaleDimGe
 public import FLT.Mazur.EtaleDimLe
+public import FLT.Mazur.ExactFunctorInjectiveExt
 public import FLT.Mazur.FCurveContracts
 public import FLT.Mazur.FamilyTransport
 public import FLT.Mazur.FiniteAffineCoverDimension
@@ -1040,6 +1047,7 @@ public import FLT.Mazur.ModuleSubobjectCoverEquality
 public import FLT.Mazur.NeronPolygonPredicate
 public import FLT.Mazur.OpenDirectImageCohomology
 public import FLT.Mazur.OpenDirectImageNaturality
+public import FLT.Mazur.OpenDirectImageRestriction
 public import FLT.Mazur.OpenSheafCohomology
 public import FLT.Mazur.OpenSheafExtensionExact
 public import FLT.Mazur.OpenSheafExtensionStalks
