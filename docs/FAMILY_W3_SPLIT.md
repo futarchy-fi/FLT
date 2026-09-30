@@ -95,6 +95,15 @@ the eigenvalues, exact order, and trace formula must still be constructed.
 
 ## W4 — BLOCKED: quadratic twist from cyclotomic restriction (cap 400 lines)
 
+W4a partial (2026-09-30): `StableLinePair.lean` (136 lines) proves
+`exists_complementary_stableLines`, normal transport, and the preserve/swap
+consequence conditional on exhaustion. Foreground build, per-module lint,
+and standard-only axiom checks passed. The exact orbit-of-two result remains
+open: three invariant lines force scalar H-action, and a cyclic quotient
+then supplies a G-stable eigenline, contradicting irreducibility. These need
+separate ≤150/180/100-line leaves (scalar lemma, cyclic eigenline, assembly);
+no orbit-exhaustion conclusion is claimed.
+
 Proposed `FLT/Deformations/RepresentationTheory/CyclicRestrictionTwist.lean`.
 The rank-two, cyclic-quotient case of [C]. Exact target sketch, with
 `[IsAlgClosed k] [FiniteDimensional k V]`, `hV : Module.finrank k V = 2`,
