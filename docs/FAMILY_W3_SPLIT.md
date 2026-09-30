@@ -162,32 +162,28 @@ proofs exceed the caps; do not assume their conclusions in an input record.
    degree and the shifted minimal polynomial in arbitrary field presentations.
    The result includes p=2. Checked 2026-09-30: foreground build, module lint,
    and all eleven theorem axiom checks pass (standard axioms only).
-3. D3 — PARTIAL; local inertia/tame bridge remains (cap 350): use D2 to prove surjectivity of the mod-p cyclotomic
-   character on local inertia at p. Identify this restriction with the
-   level-one `tameCharacter` after identifying the residue field with `ZMod p`.
-   Construct an inertia element whose tame value generates `(ZMod p)ˣ`.
-   Reuse `FLT/AbsoluteGaloisGroup/TameCharacter.lean` and `InertiaComparison`.
-   `LocalCyclotomicCharacter.lean` (124 lines) proves finite cyclotomic
-   character surjectivity and constructs a finite Galois generator. It also
-   constructs the local residue-field equivalence, proves its cardinality,
-   cyclotomic naturality and the reduced geometric-sum ratio formula.
-   Checked 2026-09-30: build, module lint and all ten declarations' axiom
-   checks pass (standard axioms only). Absolute-inertia surjectivity and
-   tame comparison are not proved. Remaining split: D3a presentation/action
-   transport (220), D3b inertia lifting (200), D3c tame comparison (300),
-   D3d generator transport (80). Exact targets are in the untracked handoff.
-   W7 D3a COMPLETE: `LocalCyclotomicInertia.lean` (177/220 lines)
-   transports D2 through `IsIntegralClosure.equiv` and the p-adic/completion
-   equivalences, proves residue surjectivity and full finite cyclotomic inertia,
-   and constructs the chosen finite subfield. Checked 2026-09-30 20:20 UTC:
-   foreground module build, individual lint, and `W7_D3A_AXIOMS.lean` pass
-   (only propext, Classical.choice, Quot.sound).
+3. D3 — inertia/tame comparison proved; generator leaf pending validation.
+   `LocalCyclotomicCharacter.lean` (124/350 lines) provides the finite
+   character, residue equivalence, naturality and geometric-sum formula.
+   W7 has discharged the arithmetic bridges without assuming total
+   ramification or inertia-surjectivity conclusions:
 
-   W7 D3b COMPLETE: `LocalCyclotomicSurjectivity.lean` (62/200 lines)
-   proves `LocalCyclotomic.inertiaCharacter_surjective` using the chosen finite
-   cyclotomic field, finite inertia comparison, and character naturality.
-   Checked 2026-09-30 20:28 UTC: foreground build, individual lint, and
-   `W7_D3B_AXIOMS.lean` pass (only the standard three axioms).
+   - D3a COMPLETE: `LocalCyclotomicInertia.lean` (177/220) transports D2
+     through `IsIntegralClosure.equiv` and the p-adic/completion equivalences,
+     proves residue surjectivity and full finite inertia, and constructs the
+     chosen cyclotomic subfield. Commit `1b986232`.
+   - D3b COMPLETE: `LocalCyclotomicSurjectivity.lean` (62/200) proves
+     `inertiaCharacter_surjective` using finite inertia comparison and
+     character naturality. Commit `739c0afc`.
+   - D3c COMPLETE: `LocalCyclotomicTame.lean` (200/300) proves
+     `tameCharacter_eq_inertiaCharacter`. The shifted polynomial writes
+     `(ζ−1)^(p−1)` as p times an integral unit. This constructs the correcting
+     unit relative to the chosen tame root; inertia fixes its reduction.
+   - D3d: generator transport (80), pending validation.
+
+   D3a–D3c checked 2026-09-30: foreground module builds, individual
+   `lake exe runLinter MODULE`, and `W7_D3{A,B,C}_AXIOMS.lean` pass;
+   every checked declaration uses only propext, Classical.choice, Quot.sound.
 
 4. D4 — PARTIAL; inertia detector depends on D3b (cap 220): with ε the
    global mod-p cyclotomic character and H its

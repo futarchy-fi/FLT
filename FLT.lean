@@ -36,6 +36,7 @@ public import FLT.AbsoluteGaloisGroup.LocalCyclotomicCharacter
 public import FLT.AbsoluteGaloisGroup.LocalCyclotomicInertia
 public import FLT.AbsoluteGaloisGroup.LocalCyclotomicRamification
 public import FLT.AbsoluteGaloisGroup.LocalCyclotomicSurjectivity
+public import FLT.AbsoluteGaloisGroup.LocalCyclotomicTame
 public import FLT.AbsoluteGaloisGroup.TameCharacter
 public import FLT.AbsoluteGaloisGroup.Unramified
 public import FLT.Assembly.B4
