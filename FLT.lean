@@ -901,6 +901,7 @@ public import FLT.Mazur.ChowGenericNeighborhoods
 public import FLT.Mazur.ChowGraphClosure
 public import FLT.Mazur.ChowGraphEmbedding
 public import FLT.Mazur.ChowGraphRestriction
+public import FLT.Mazur.ChowProductImageFactors
 public import FLT.Mazur.ChowProjectiveProduct
 public import FLT.Mazur.ChowSourceClosure
 public import FLT.Mazur.ClosedDescentCharts
