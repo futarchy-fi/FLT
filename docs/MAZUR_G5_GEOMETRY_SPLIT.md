@@ -74,7 +74,7 @@ claiming that the omitted closed subscheme is the entire nonsmooth locus.
 Source: same branch calculation for DR II.1.1. Dependencies: E1 and G2.
 Implemented after E1. No polygon existence or singularity assumption.
 
-## E3a — chart algebra and singularity bridge, cap 300, partially implemented
+## E3a — chart algebra, cap 300, implemented; bridge completed in E3b–E3e
 
 New `FLT/Mazur/PolygonNodePresentation.lean`, namespace
 `FLT.Mazur.PolygonNodePresentation`. Use the actual equalizer A, not an
@@ -103,14 +103,15 @@ presentation (`smoothLocus_eq_compl_support_inter`). Neither criterion alone
 computes this example. Start with explicit generators, then assess the
 remaining singularity/localization proof against the total cap; split rather
 than replace nonsmoothness by a record field. E3 transports the proved algebra
-statement to schemes using `formallySmooth_stalkMap_iff`.
+statement to schemes through the spectrum stalk isomorphisms.
 
-## E3 — singularity and finite presentation of the actual charts, cap 400, blocked
+## E3 — singularity and finite presentation of the actual charts, implemented
 
-New `FLT/Mazur/PolygonNodeSmooth.lean`. Reuse `B`, `aToBase`, `bToBase`,
-`aOrigin` and `bOrigin` from PolygonNodePresentation. The two locally finite
-presentation instances below are already implemented there; the smooth-locus
-equalities remain open.
+`FLT/Mazur/NodeSmoothLocus.lean` completes the scheme and algebra smooth-locus
+equalities. It reuses `B`, `aToBase`, `bToBase`, `aOrigin` and `bOrigin` from
+PolygonNodePresentation, which already supplies both locally finite
+presentation instances. The original 400-line proposal was split into the
+four separately capped modules below.
 
 ```lean
 instance : LocallyOfFinitePresentation (aToBase K)
@@ -124,13 +125,19 @@ theorem b_smooth_complement :
 Source: the ordinary double points of the standard polygon, DR II.1.1.
 Dependencies: E2, explicit presentations of N and B, and a proved local
 nonsmoothness criterion (e.g. cotangent dimension). None is an input field.
-Blocker: the origin localizations have not been proved non-formally-smooth.
-E3a proves finite presentation and B localization, but not full presentation
-kernel equalities or the origin obstruction. CurveNode's completed-ring
-predicate still supplies no smooth/node disjointness theorem. Proposed next
-leaves: NodeQuotient (200), OneGonQuotient (260), NodeInfinitesimalObstruction
-(250), NodeSmoothLocus (220); exact contracts are in untracked BLOCKED.md.
-Those caps are proposals, not evidence that the missing proofs fit.
+The four completed leaves, in namespace `FLT.Mazur.PolygonNodePresentation`:
+
+- E3b `NodeQuotient` (121/200): surjective aPresent, kernel (xy), quotient equivalence.
+- E3c `OneGonQuotient` (154/260): surjective bPresent, kernel (v²-uv-u³), quotient equivalence.
+- E3d `NodeInfinitesimalObstruction` (250/250): both origin localizations are not formally smooth.
+- E3e `NodeSmoothLocus` (183/220): coordinate zero loci equal origin images;
+  both algebra and scheme smooth loci are exactly the origin complements.
+
+All statements concern the actual chart rings, over every field including
+characteristic two. The local obstruction extends a nonliftable tangent map
+to each origin localization by proving that all denominators map to units.
+The smooth-locus bridge uses spectrum stalk isomorphisms, with no assumed
+geometric conclusions. Validation commands and evidence are recorded below.
 
 ## E4 — construct the polygon and prove the cocone, cap 400, blocked
 
@@ -156,7 +163,7 @@ surjectivity. Prove the pushout for arbitrary target schemes by local descent;
 Spec of the ring pullback only proves the affine-target case and is insufficient.
 Source: cyclic pinching in DR II.1.1. Dependencies: E1–E3, B's puncture
 localization, explicit two-component overlaps when n=2. Not ready: overlap
-cocycles, origin nonsmoothness, and arbitrary-target pinching descent remain.
+cocycles and arbitrary-target pinching descent remain.
 400 is a hard stop, not a claim that these missing foundations fit that cap.
 
 ## E5 — specified cocone comparison and G5, cap 400, blocked
@@ -180,7 +187,7 @@ Require the component formula, with `torusToComponent` induced by
 Then transport the commutative group through this specified iso.
 Source: DR II.1.1 and II.1.12(a). Dependencies: E3/E4 and G4.
 `IsPushout.isoIsPushout` compares the actual cocones; smooth-locus naturality
-transports E3 along the proved open atlas. Not ready before those proofs.
+transports E3 along the proved open atlas. Not ready before E4’s gluing and cocone proofs.
 
 ## API evidence and execution
 
@@ -198,8 +205,8 @@ rg -n 'mem_smoothLocus|preimage_smoothLocus_eq' $M/AlgebraicGeometry/Morphisms/S
 rg -n 'does not|not proved|smooth/node' FLT/Mazur/CurveNode.lean
 ```
 
-E1 then E2 completed this wave; E3–E5 are explicitly blocked, not assumed ready
-merely because E2 compiles. Build in the foreground with LEAN_NUM_THREADS=2;
+E1–E3 are implemented; E4–E5 remain blocked by gluing and arbitrary-target
+pinching descent. Build in the foreground with LEAN_NUM_THREADS=2;
 run `lake exe runLinter FLT.Mazur.MODULE` separately for each module. Audit all
 new declarations with collectAxioms; allow only propext/Classical.choice/Quot.sound.
 C-sort FLT.lean public imports; commit each leaf locally; never push. If any
@@ -215,14 +222,15 @@ individual runLinter, and collectAxioms on all 24 module declarations passed.
 Audit output: untracked GOAL_MAZUR_W6_E2_AXIOMS.txt; only the three allowed axioms.
 Both imports are C-sorted in FLT.lean; git diff --check passed. G5 remains open.
 
-E3a W7 partial result: PolygonNodePresentation proves the two finite-generation
+Historical E3a W7 checkpoint (superseded by E3b–E3e):
+PolygonNodePresentation proves the two finite-generation
 calculations, B's relation and conductor divisibility, both finite-presentation
 instances and their scheme analogues, B's puncture localization/open immersion,
 smoothness of both A branches and B's puncture, and both origin-image formulas.
 It does not prove that the displayed equations generate the presentation
 kernels, nor nonsmoothness at the origins, nor either exact smooth-locus equality.
-The proof inventory occupies 275/300 lines; the remaining local singularity
-calculation is split in BLOCKED.md. E3 and conditional E4 remain blocked.
+The W7 proof inventory occupied 275/300 lines. Its remaining local singularity
+calculation was split into the four W8 leaves now completed above.
 
 E3a checked 2026-09-30 20:31 UTC: `LEAN_NUM_THREADS=2 lake build
 FLT.Mazur.PolygonNodePresentation` and the individual `lake exe runLinter
@@ -231,3 +239,39 @@ FLT.Mazur.PolygonNodePresentation` both passed. The collectAxioms audit
 propext, Classical.choice and Quot.sound occur. Output is untracked
 GOAL_MAZUR_W7_E3A_AXIOMS.txt. `wc -l` reports 275; C-sorted FLT.lean imports
 and `git diff --check` passed. No whole-library build or lint was run.
+
+E3b W8 NodeQuotient checked 2026-09-30 20:41 UTC: `lake build
+FLT.Mazur.NodeQuotient`, its individual `runLinter`, and collectAxioms passed
+(see untracked GOAL_MAZUR_W8_NODE_AXIOMS.txt). The module is 121/200 lines;
+it proves aPresent surjective, its kernel exactly (xy), and the quotient
+algebra equivalence to the actual equalizer, over any commutative ring.
+The one-gon kernel and origin obstructions remain open at this checkpoint.
+
+E3c W8 OneGonQuotient checked 2026-09-30 20:46 UTC: foreground module
+build, individual runLinter and collectAxioms passed (untracked
+GOAL_MAZUR_W8_ONEGON_AXIOMS.txt). It proves bPresent surjective over every
+commutative ring; over every field, including characteristic two, the kernel
+is exactly (v²-uv-u³), with an algebra equivalence to the actual B.
+Both presentation kernels are now proved; the origin obstructions remain open.
+
+E3d W8 NodeInfinitesimalObstruction checked 2026-09-30 20:57 UTC:
+foreground module build, individual runLinter and all 51 collectAxioms checks
+passed (untracked GOAL_MAZUR_W8_OBSTRUCTION_AXIOMS.txt). At 250/250 lines,
+it proves both origin local rings non-formally-smooth using the square-zero
+map K[e]/(e³) → K[e]/(e²), with explicit nonliftable tangent vectors and
+invertibility of every origin-localization denominator. No characteristic
+restriction is used. E3 now needs only the smooth-locus identification.
+
+
+E3e W8 NodeSmoothLocus checked 2026-09-30 21:03 UTC: `LEAN_NUM_THREADS=2
+lake build FLT.Mazur.NodeSmoothLocus` and the individual `lake exe runLinter
+FLT.Mazur.NodeSmoothLocus` passed, at 183/220 lines. It proves a_zeroLocus_origin,
+b_zeroLocus_origin, a_smoothLocus, b_smoothLocus, a_smooth_complement and
+b_smooth_complement. E3 is complete; E4 was not started.
+
+The final `lake env lean /tmp/mazur-w8-all-axioms.lean` audit rechecked every
+new declaration in all four W8 modules: 17 + 23 + 51 + 15 = 106 declarations,
+with only propext, Classical.choice and Quot.sound. Output is untracked
+GOAL_MAZUR_W8_ALL_AXIOMS.txt. All four foreground module builds and individual
+module lints passed; all line caps, C-sorted FLT.lean imports, and
+`git diff --check` passed. No whole-library build or lint was run.
