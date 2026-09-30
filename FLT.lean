@@ -932,6 +932,7 @@ public import FLT.Mazur.CoherentClosedPushforward
 public import FLT.Mazur.CoherentClosedReduction
 public import FLT.Mazur.CoherentComparisonLocus
 public import FLT.Mazur.CoherentDevissage
+public import FLT.Mazur.CoherentFiltration
 public import FLT.Mazur.CoherentFreeSheaf
 public import FLT.Mazur.CoherentGenericComparison
 public import FLT.Mazur.CoherentGenericCoordinates
