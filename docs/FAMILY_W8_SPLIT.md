@@ -115,7 +115,7 @@ theorem niveau_two_norm_order (hp : 1 < p) (hz : orderOf z = p * p - 1) :
 Add nonzero sums via W3. Anchors: `pow_inj_mod`, `orderOf_pow_of_dvd`,
 `orderOf_inv`; dependencies Mathlib and W3. No fundamental characters constructed.
 
-### S4 — BLOCKED, cap 400: integral unit correction and character evaluation
+### S4 — READY NEXT, cap 400: integral unit correction and character evaluation
 Future module `RaynaudCoordinateCharacter`. [R] §3.4(9); use lifts F1–F5.
 Exact correction sketch using existing local notation: `v` a rational place,
 `O := v.adicCompletionIntegers ℚ`, `Kv := v.adicCompletion ℚ`,
@@ -129,9 +129,10 @@ Exact correction sketch using existing local notation: `v` a rational place,
 ```
 Then inertia fixes the residue of z, so the reduced x-ratio equals the mth
 power of `LocalRoot.character v hn ... hα`. Anchor: `LocalCyclotomicTame`
-constructs this correction for ζ−1. Blocked on the source-to-coordinate and
-unramified-base transports; not on S1–S3's elementary algebra. The cap covers
-this bridge after those transports, not their construction.
+constructs this correction for ζ−1. The algebra bridge is ready next, deferred
+by this task's three-leaf limit. Its application to Raynaud parameters still
+needs the source-to-coordinate and unramified-base transports; these are not
+part of the 400-line bridge.
 
 ### S5 — BLOCKED, cap 400: actual rank-two spectrum assembly
 Future module `FiniteFlatTameSpectrum`. [R] Cor.3.4.4; [S] §2.
@@ -176,3 +177,9 @@ axioms; module is 56/180 lines. S1 is implemented (READY above records dispatch)
 S2 checked 2026-09-30: foreground build, individual module lint and
 `lake env lean W8_S2_AXIOMS.lean` pass for `FLT.GroupScheme.RaynaudTwoCoordinates`;
 all four theorems use only standard axioms, 58/200 lines. S2 is implemented.
+
+S3 checked 2026-09-30 20:54 UTC: foreground build, individual module lint and
+`lake env lean W8_S3_AXIOMS.lean` pass for `TameSpectrumDigits` (104/260 lines).
+All seven theorems have only standard axioms. S3 is implemented.
+`lake env lean W8_TARGET_CHECK.lean` also elaborates the exact S4/S5 propositions
+using existing APIs; neither proposition is proved by that statement check.

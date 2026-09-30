@@ -136,6 +136,7 @@ public import FLT.Deformations.RepresentationTheory.PermutedSummandsTwist
 public import FLT.Deformations.RepresentationTheory.PrimePowerExact
 public import FLT.Deformations.RepresentationTheory.SelfTwistTrace
 public import FLT.Deformations.RepresentationTheory.StableLinePair
+public import FLT.Deformations.RepresentationTheory.TameSpectrumDigits
 public import FLT.Deformations.RepresentationTheory.TameTraceObstruction
 public import FLT.Deformations.RepresentationTheory.ThreeStableLines
 public import FLT.Deformations.RepresentationTheory.TraceCompatiblePair
