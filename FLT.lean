@@ -1092,6 +1092,7 @@ public import FLT.Mazur.ProjectiveTwistQuotient
 public import FLT.Mazur.ProjectiveTwistTensor
 public import FLT.Mazur.ProjectiveTwistTensorAddition
 public import FLT.Mazur.ProjectiveTwistTensorInverse
+public import FLT.Mazur.ProjectiveTwistVanishing
 public import FLT.Mazur.ProjectiveTwistingSheaf
 public import FLT.Mazur.ProjectiveTwistingSheafTensor
 public import FLT.Mazur.PushforwardCech
