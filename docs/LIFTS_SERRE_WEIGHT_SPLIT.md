@@ -12,7 +12,7 @@ S: Serre, *Sur les représentations modulaires de degré 2*, Duke Math. J.
 54 (1987), 179–230, §2 (fundamental characters, ramification of extensions,
 weight normalization), DOI 10.1215/S0012-7094-87-05413-5.
 R: Raynaud, *Schémas en groupes de type (p,...,p)*, Bull. SMF 102 (1974),
-241–280, https://www.numdam.org/item/BSMF_1974__102__241_0.pdf.
+241–280, §3.4, Theorem 3.4.3 and Corollary 3.4.4, https://www.numdam.org/item/BSMF_1974__102__241_0.pdf.
 K: Khare–Wintenberger II, §3.2.2–3.2.3,
 https://www.math.ucla.edu/~shekhar/papers/proofs.pdf;
 local text `Scratch/kw-proofs.txt:1180–1210` explicitly distinguishes the
@@ -50,6 +50,8 @@ Prove the integral ratio is a root of unity and use `residue_smul_eq` to
 prove multiplication. Also prove the compatible-root identity, for m>0:
 `character v hn ha hα σ ^ m = character v hn ha' hα' σ`,
 where `ha' : a^m ≠ 0` and `hα' : (α^m)^n = algebraMap _ _ (a^m)`.
+Also prove `character_degree_mul`: for β^(n*m)=a, its character to the
+m-th power equals the degree-n character of β^m (n,m>0).
 This is an actual character on existing inertia, not an abstract input field.
 It permits n=q^r−1, a a uniformizer. No assertion of surjectivity, continuity,
 coefficient identification, or choice independence is hidden in this leaf.
@@ -64,7 +66,7 @@ Import Mathlib Hilbert90 and existing `FLT.GroupScheme.KummerParameter`.
 For fields K,L with `[Algebra K L] [FiniteDimensional K L] [IsGalois K L]`:
 
 ```lean
- theorem exists_kummer_parameter {n : ℕ} (hn : 0 < n) (f : Gal(L/K) → Lˣ)
+ theorem exists_kummer_parameter {n : ℕ} (f : Gal(L/K) → Lˣ)
     (hf : groupCohomology.IsMulCocycle₁ f) (hpow : ∀ g, f g ^ n = 1) :
     ∃ a : K, ∃ b : L, a ≠ 0 ∧ b ≠ 0 ∧ b^n = algebraMap K L a ∧
       ∀ g : Gal(L/K), g b = (f g : L) * b
