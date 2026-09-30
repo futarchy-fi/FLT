@@ -144,10 +144,14 @@ Proposed leaves, in order; caps count whole new modules. D2–D3 require local
 ramification proofs and remain source/API obligations. Split again if their
 proofs exceed the caps; do not assume their conclusions in an input record.
 
-1. D1 (cap 180): factor a character trivial on `ker ε` through `range ε`.
+1. D1 — DONE (cap 180): factor a character trivial on `ker ε` through `range ε`.
    For cyclic `range ε`, prove every generator detects a nontrivial factor;
    if its square is one and the coefficient characteristic is not two, its
    value on that generator is `-1`. This is a general group lemma.
+   Implemented in `CharacterRange.lean` (94 lines): factorization, generator
+   detection, and quadratic value `-1` (even without excluding characteristic
+   two). Checked 2026-09-30: foreground build, module lint and all seven
+   declarations’ axiom checks pass; standard axioms only.
 2. D2 (cap 350): for an odd prime p, prove that the local extension
    `ℚ_p(μ_p)/ℚ_p` is totally ramified of degree p−1. Start from
    `cyclotomic_comp_X_add_one_isEisensteinAt` and the minimal polynomial of
