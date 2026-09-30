@@ -96,6 +96,24 @@ maximum with the presentation degree. Leaves 1 and 3 give the long-exact
 step. Finally take k=card ι. This provides ONE bound for all positive
 cohomological degrees, not a separate bound in each degree.
 
+### 7. ProjectiveSerrePresentationTower (cap 200; main + 3)
+
+For any coherent F on polynomial projective space and any length c,
+construct a finite tower of coherent negative-twist presentations. Output
+its actual kernels, short exact sequences, finite summand indices and degrees.
+
+```
+coherentTwistPresentationTower (F) [F.IsFinitePresentation] (c : ℕ) :
+  TwistPresentationTower R ι F c
+```
+
+Define the tower in this module using inductive constructors for the empty
+tower and a coherent presentation followed by a tower of its kernel.
+Use `exists_coherent_twist_presentation` repeatedly. This construction itself
+is main-only and is implemented after leaf 4. Its application to the actual
+B17 closed pushforward coefficient waits for B17-FINAL; that application
+belongs to leaf 8. The structure stores no vanishing assumption.
+
 ## Leaves requiring the other lanes
 
 ### 5. ClosedLineProjectionFormula (cap 400; B17 pullback/tensor API)
@@ -127,24 +145,6 @@ Use coherent closed pushforward, 4 applied to `i_* F`, 5, and
 `closedPushforwardModuleHEquiv`.
 For F=O_Y use B17's power-zero/unit and power-n coefficient identifications
 to obtain the statement on its actual line powers. No relative conclusion yet.
-
-### 7. ProjectiveSerrePresentationTower (cap 200; main + 3)
-
-For any coherent F on polynomial projective space and any length c,
-construct a finite tower of coherent negative-twist presentations. Output
-its actual kernels, short exact sequences, finite summand indices and degrees.
-
-```
-coherentTwistPresentationTower (F) [F.IsFinitePresentation] (c : ℕ) :
-  TwistPresentationTower R ι F c
-```
-
-Define the tower in this module using inductive constructors for the empty
-tower and a coherent presentation followed by a tower of its kernel.
-Use `exists_coherent_twist_presentation` repeatedly. This construction itself
-is main-only and is implemented after leaf 4. Its application to the actual
-B17 closed pushforward coefficient waits for B17-FINAL; that application
-belongs to leaf 8. The structure stores no vanishing assumption.
 
 ### 8. RelativeSerreLocalizedTower (cap 450; 5,7, B17-FINAL)
 
@@ -229,3 +229,64 @@ Review refinement during execution: leaf 7's finite presentation tower does
 not require B17 merely to construct it. Its geometric specialization does.
 It is therefore included in the main-only work, avoiding an artificial
 upstream dependency. The ready order is 1, 2, 3, 4, 7.
+
+## Implemented main-only leaves
+
+| Leaf | Module | Lines / cap | Local commit |
+| --- | --- | --- | --- |
+| 1 | `ModuleCohomologyVanishing` | 67 / 160 | `94d1f200` |
+| 2 | `ProjectiveTwistVanishing` | 54 / 120 | `bc2f5cd4` |
+| 3 | `ProjectiveTwistedPresentation` | 52 / 180 | `0d14d2e9` |
+| 4 | `ProjectiveSerreVanishing` | 73 / 240 | `84afecdf` |
+| 7 | `ProjectiveSerrePresentationTower` | 65 / 200 | `79b09420` |
+
+The initial split was committed as `143caaba` before implementation;
+`9070821a` removed leaf 7's artificial upstream dependency.
+Each listed module passed both foreground commands, separately:
+
+```
+lake build FLT.Mazur.<Module>
+lake exe runLinter FLT.Mazur.<Module>
+```
+
+The final sources compile without warnings and all five module linters
+pass. A source scan checked the line caps, maximum width <=100, and absence
+of admitted proofs/new axioms. `FLT.lean` has 1266 sorted imports, exactly
+matching all source modules under FLT. No B17/B18-owned source was edited.
+
+`lake env lean /tmp/serre-a-axioms.lean` exited 0. Its 12 exported-definition
+checks returned only `propext`, `Classical.choice`, and `Quot.sound`:
+
+* FCurve: `moduleH_subsingleton_of_iso`, `moduleH_subsingleton_coproduct`,
+  `moduleH_subsingleton_right`.
+* ProjectiveSpace: `twist_moduleH_subsingleton`,
+  `twist_moduleH_subsingleton_nonneg`, `twistTensor_shortExact`,
+  `twistTensorTwistSumIso`, `twistTensor_twistSum_moduleH_subsingleton`,
+  `exists_twistTensor_moduleH_subsingleton`, `nonempty_twistPresentationTower`,
+  `coherentTwistPresentationTower`, `TwistPresentationTower.bound`.
+
+All names have the prefix `FLT.Mazur.`. The probe imports
+`ProjectiveSerreVanishing` and `ProjectiveSerrePresentationTower`.
+The full relative endpoint and simultaneous Chow acyclicity are NOT proved;
+leaves 5-6 and 8-12 have the exact prerequisites recorded in `BLOCKED.md`.
+
+Final check at **2026-09-30 08:27 UTC**:
+
+* The five per-module builds, five per-module lint runs, and 12 axiom checks
+  above exited 0. These satisfy the brief's main-only completion criterion.
+* The additional `lake build +FLT:olean` check reached compilation of
+  `FLT.lean`, but was deliberately terminated after that compiler had run
+  for over 11 minutes without diagnostics under host I/O pressure. The
+  shell exited 143. **The root build is incomplete, not verified green.**
+  Log: `/tmp/serre-a-root-build.log`; the terminated build processes were
+  confirmed absent with `ps -p 1336204,1296261 -o pid,stat,args`.
+* All build and lint commands ran in the foreground, sequentially. No
+  library-wide lint was run. The sorted exact root-import coverage check
+  passed independently; it does not substitute for a completed root build.
+* `git diff --check` passed. Inherited untracked briefs were preserved.
+  Nothing was pushed; no B17/B18-owned source module was changed.
+
+Next implementation boundary: leaf 5 after B17's actual pullback/tensor
+contract lands; then leaf 6 and the uniformly localized tower in leaf 8.
+The B18 5c-6a contracts are additionally needed for leaves 10-11. No user
+policy decision is needed to resume at those technical boundaries.
