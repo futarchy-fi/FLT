@@ -1002,6 +1002,7 @@ public import FLT.Mazur.GenericIdealSupport
 public import FLT.Mazur.GlobalClosedModuleDescent
 public import FLT.Mazur.GlobalIdealPower
 public import FLT.Mazur.GlobalIdealPowerCompatibility
+public import FLT.Mazur.HigherDirectImagePresheaf
 public import FLT.Mazur.IdealModuleSheaf
 public import FLT.Mazur.IdealPowerChartDescent
 public import FLT.Mazur.IdealPowerCompatibility
