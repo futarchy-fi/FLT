@@ -135,8 +135,10 @@ def inclusion : A →ₐ[R] (R[X] × R[X])
 Acceptance includes uniqueness and the two projections of `lift`. This is the
 ring pullback universal property, not the pushout property in all schemes.
 Anchors: `Subalgebra`, `AlgHom.range`, `LinearMap.mem_range`, `LinearMap.mem_ker`
-and `Polynomial.eval₂AlgHom` (find via `rg -n` in Mathlib Algebra/Polynomial
-and Algebra/Algebra). Source: equality of the two values at a pinched node.
+and `Polynomial.aeval`. `rg -n` finds `eval₂AlgHom` in
+`Algebra/Polynomial/AlgebraMap.lean:159`, `AlgHom.range` in
+`Algebra/Algebra/Subalgebra/Basic.lean:545`, and `mem_ker`/`mem_range` in
+`Algebra/Module/Submodule/{Ker,Range}.lean:64/68`. Source: equality of the two values at a pinched node.
 Unblocks affine node charts and the local normalization sequence.
 
 ## P5 — cyclic normalization incidence, cap 350, ready independently, next wave
@@ -156,8 +158,10 @@ theorem ker_difference : LinearMap.ker (difference K hn) = LinearMap.range (cons
 Prove the second equality by partial sums, never division by `n`: the theorem
 must hold when the characteristic divides `n`, and for `n=1`. Anchors:
 `Fin.sum_univ_eq_sum_range`, `Finset.sum_range_succ`, `LinearMap.range`,
-`LinearMap.ker`; verify with `rg -n` in Mathlib Algebra/BigOperators and
-LinearAlgebra. Source: the cyclic difference map in the normalization sequence.
+`LinearMap.ker`. `rg -n` finds the multiplicative source declarations
+`Fin.prod_univ_eq_prod_range` in `Data/Fintype/BigOperators.lean:227` and
+`prod_range_succ` in `Algebra/BigOperators/Group/Finset/Basic.lean:536`;
+`to_additive` generates the cited sum lemmas. Source: the cyclic difference map in the normalization sequence.
 Unblocks the genus-one dimension calculation once the geometric comparison exists.
 
 ## Acceptance and remaining geometric gate
