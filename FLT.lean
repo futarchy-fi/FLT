@@ -461,6 +461,7 @@ public import FLT.GroupScheme.FrobeniusKernelStructure
 public import FLT.GroupScheme.FrobeniusPresentationDescent
 public import FLT.GroupScheme.FrobeniusRelativePresentation
 public import FLT.GroupScheme.FrobeniusSubalgebra
+public import FLT.GroupScheme.GenericFiberMapUnique
 public import FLT.GroupScheme.GenericFieldChange
 public import FLT.GroupScheme.GenericMorphismScalarExtension
 public import FLT.GroupScheme.GlobalModel

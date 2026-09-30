@@ -118,9 +118,14 @@ kernel, its quadratic quotient, and a tame inertia generator detecting it.
 `AbsoluteIrreducibility.lean:isAbsolutelyIrreducible` supplies the **global**
 input after scalar extension, not these missing restriction facts.
 
-## W5 — BLOCKED: uniqueness of extension of a model morphism (cap 180 lines)
+## W5 — DONE: uniqueness of extension of a model morphism (cap 180 lines)
 
-Proposed `FLT/GroupScheme/GenericFiberMapUnique.lean`.
+`FLT/GroupScheme/GenericFiberMapUnique.lean` (41 lines).
+Checked 2026-09-30: foreground module build and per-module lint passed;
+`#print axioms` for both declarations reports only standard axioms.
+Mathlib `Algebra.TensorProduct.includeRight_injective` and
+`IsFractionRing.injective` discharge injectivity; `Algebra.modelMap_unique`
+needs flatness only for B and no Hopf structure.
 A bounded first step toward model compatibility, not a claim of [R]'s
 full existence/faithfulness theorem. For a domain O, its fraction field K,
 and O-flat commutative Hopf algebras A,B, prove the following underlying
