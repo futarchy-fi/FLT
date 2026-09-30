@@ -847,6 +847,7 @@ public import FLT.Mathlib.Topology.Polish
 public import FLT.Mazur.AbelianInjectiveFlasque
 public import FLT.Mazur.AbsoluteDirectImageCohomology
 public import FLT.Mazur.AcyclicDirectImageResolution
+public import FLT.Mazur.AcyclicPushforwardCohomology
 public import FLT.Mazur.AcyclicResolutionComparison
 public import FLT.Mazur.AffineAnnihilator
 public import FLT.Mazur.AffineClosedModuleDescent
@@ -1026,6 +1027,8 @@ public import FLT.Mazur.ModuleSheafUnitCocycleRestrict
 public import FLT.Mazur.ModuleStalkExact
 public import FLT.Mazur.ModuleSubobjectCoverEquality
 public import FLT.Mazur.NeronPolygonPredicate
+public import FLT.Mazur.OpenDirectImageCohomology
+public import FLT.Mazur.OpenDirectImageNaturality
 public import FLT.Mazur.OpenSheafCohomology
 public import FLT.Mazur.OpenSheafExtensionExact
 public import FLT.Mazur.OpenSheafExtensionStalks
