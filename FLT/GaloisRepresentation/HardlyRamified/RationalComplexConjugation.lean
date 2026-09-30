@@ -38,6 +38,24 @@ local instance complexClosureScalarTower : IsScalarTower ℚ (AlgebraicClosure �
 def rationalComplexConjugation : AlgebraicClosure ℚ ≃ₐ[ℚ] AlgebraicClosure ℚ :=
   (Complex.conjAe.restrictScalars ℚ).restrictNormal (AlgebraicClosure ℚ)
 
+/-- The restricted complex conjugation is an involution. -/
+theorem rationalComplexConjugation_involutive :
+    Function.Involutive rationalComplexConjugation := by
+  intro x
+  apply (algebraMap (AlgebraicClosure ℚ) ℂ).injective
+  have hc (y : AlgebraicClosure ℚ) :
+      algebraMap (AlgebraicClosure ℚ) ℂ (rationalComplexConjugation y) =
+        starRingEnd ℂ (algebraMap (AlgebraicClosure ℚ) ℂ y) :=
+    AlgEquiv.restrictNormal_commutes _ _ _
+  rw [hc, hc]
+  exact star_star _
+
+/-- The square of rational complex conjugation is the identity automorphism. -/
+theorem rationalComplexConjugation_mul_self :
+    rationalComplexConjugation * rationalComplexConjugation = 1 := by
+  ext x
+  exact rationalComplexConjugation_involutive x
+
 /-- Complex conjugation sends every root of unity to its inverse. -/
 theorem rationalComplexConjugation_root {n : ℕ} [NeZero n]
     (t : (AlgebraicClosure ℚ)ˣ) (ht : t ∈ rootsOfUnity n (AlgebraicClosure ℚ)) :
