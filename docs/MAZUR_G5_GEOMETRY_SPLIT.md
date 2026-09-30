@@ -74,6 +74,37 @@ claiming that the omitted closed subscheme is the entire nonsmooth locus.
 Source: same branch calculation for DR II.1.1. Dependencies: E1 and G2.
 Implemented after E1. No polygon existence or singularity assumption.
 
+## E3a — chart algebra and singularity bridge, cap 300, in progress
+
+New `FLT/Mazur/PolygonNodePresentation.lean`, namespace
+`FLT.Mazur.PolygonNodePresentation`. Use the actual equalizer A, not an
+unrelated quotient. Define `B := AlgHom.equalizer (Polynomial.aeval 0)
+(Polynomial.aeval 1) : Subalgebra K K[X]`, and evaluation maps
+`aEval : A →ₐ[K] K`, `bEval : B →ₐ[K] K`. The exact algebra bridge is:
+
+```lean
+instance : Algebra.FinitePresentation K (PolygonNodeEqualizer.A (R := K))
+instance : Algebra.FinitePresentation K (B (R := K))
+theorem a_smoothLocus :
+    Algebra.smoothLocus K (PolygonNodeEqualizer.A (R := K)) =
+      (PrimeSpectrum.zeroLocus (RingHom.ker (aEval (R := K)).toRingHom))ᶜ
+theorem b_smoothLocus :
+    Algebra.smoothLocus K (B (R := K)) =
+      (PrimeSpectrum.zeroLocus (RingHom.ker (bEval (R := K)).toRingHom))ᶜ
+```
+
+No smoothness hypothesis is allowed on either chart. For B the generators
+are `u = X*(X-1)` and `v = X*u`, with relation `v²-u*v-u³=0`;
+this relation works in characteristic two as well. Finite generation plus
+`Algebra.FinitePresentation.of_finiteType` proves finite presentation over K.
+The alternatives for singularity are the explicit infinitesimal lifting
+obstruction (`FormallySmooth.iff_comp_surjective`) or a computed cotangent
+presentation (`smoothLocus_eq_compl_support_inter`). Neither criterion alone
+computes this example. Start with explicit generators, then assess the
+remaining singularity/localization proof against the total cap; split rather
+than replace nonsmoothness by a record field. E3 transports the proved algebra
+statement to schemes using `formallySmooth_stalkMap_iff`.
+
 ## E3 — singularity and finite presentation of the actual charts, cap 400, blocked
 
 New `FLT/Mazur/PolygonNodeSmooth.lean`. Define `B : Subalgebra K K[X]`
