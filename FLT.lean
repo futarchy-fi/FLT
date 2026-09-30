@@ -1024,8 +1024,11 @@ public import FLT.Mazur.ModuleDerivedAbelianComparison
 public import FLT.Mazur.ModuleFreeOpen
 public import FLT.Mazur.ModuleInjectiveFlasque
 public import FLT.Mazur.ModuleLineBundlePullback
+public import FLT.Mazur.ModuleLineBundleTensorPullback
 public import FLT.Mazur.ModuleOpenCohomology
+public import FLT.Mazur.ModulePresheafLinearHom
 public import FLT.Mazur.ModulePresheafPullbackSections
+public import FLT.Mazur.ModulePresheafTensorHom
 public import FLT.Mazur.ModulePresheafTensorPullback
 public import FLT.Mazur.ModuleSheafDual
 public import FLT.Mazur.ModuleSheafDualSheaf
@@ -1042,6 +1045,7 @@ public import FLT.Mazur.ModuleSheafTensorRestrict
 public import FLT.Mazur.ModuleSheafTensorTilde
 public import FLT.Mazur.ModuleSheafUnitCocycle
 public import FLT.Mazur.ModuleSheafUnitCocycleRestrict
+public import FLT.Mazur.ModuleSheafificationTensor
 public import FLT.Mazur.ModuleStalkExact
 public import FLT.Mazur.ModuleSubobjectCoverEquality
 public import FLT.Mazur.NeronPolygonPredicate
@@ -1077,7 +1081,9 @@ public import FLT.Mazur.ProjectiveSectionExtensionCharts
 public import FLT.Mazur.ProjectiveSectionExtensionCoordinates
 public import FLT.Mazur.ProjectiveSerrePresentationTower
 public import FLT.Mazur.ProjectiveSerreVanishing
+public import FLT.Mazur.ProjectiveSpaceAffineBaseChange
 public import FLT.Mazur.ProjectiveSpaceCharts
+public import FLT.Mazur.ProjectiveSpaceCoefficientMap
 public import FLT.Mazur.ProjectiveSpaceProper
 public import FLT.Mazur.ProjectiveSpaceReindex
 public import FLT.Mazur.ProjectiveTripleModuleLocalization
