@@ -1135,6 +1135,7 @@ public import FLT.Mazur.RelativeCartierBaseChange
 public import FLT.Mazur.RelativeSerreAffineAcyclic
 public import FLT.Mazur.RelativeSerreAffineVanishing
 public import FLT.Mazur.RelativeSerreLocalizedTower
+public import FLT.Mazur.RelativeSerreVanishing
 public import FLT.Mazur.RelativeSums
 public import FLT.Mazur.RelativeVeryAmpleLineBundle
 public import FLT.Mazur.RightDerivedDimensionShift
