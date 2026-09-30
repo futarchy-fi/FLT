@@ -1123,6 +1123,7 @@ public import FLT.Mazur.PolygonIncidence
 public import FLT.Mazur.PolygonNodeBranches
 public import FLT.Mazur.PolygonNodeEqualizer
 public import FLT.Mazur.PolygonNodeLocalization
+public import FLT.Mazur.PolygonNodePresentation
 public import FLT.Mazur.PolygonPinchingDiagram
 public import FLT.Mazur.PolygonSplitGroup
 public import FLT.Mazur.PolygonUniversalScaling
