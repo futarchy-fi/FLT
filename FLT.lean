@@ -102,6 +102,7 @@ public import FLT.Deformations.DeSmitLenstra.TraceCoefficients
 public import FLT.Deformations.DeSmitLenstra.UniversalLift
 public import FLT.Deformations.DeSmitLenstra.UniversalMoritaData
 public import FLT.Deformations.DeSmitLenstra.UniversalTraceLift
+public import FLT.Deformations.HardlyRamifiedUniversal
 public import FLT.Deformations.IsProartinian
 public import FLT.Deformations.IsResidueAlgebra
 public import FLT.Deformations.Lemmas
@@ -936,6 +937,7 @@ public import FLT.Mazur.ChowWitnessFiniteCohomology
 public import FLT.Mazur.ChowWitnessGenericRestriction
 public import FLT.Mazur.ChowWitnessSectionsLocalization
 public import FLT.Mazur.ChowWitnessSectionsLocalizationAssembly
+public import FLT.Mazur.ClassifiedGenusOneFamily
 public import FLT.Mazur.ClosedCohomologyFinite
 public import FLT.Mazur.ClosedDescentCharts
 public import FLT.Mazur.ClosedDescentGluingData
