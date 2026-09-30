@@ -335,6 +335,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.KummerTwoUnitSquareClasses
 public import FLT.GaloisRepresentation.HardlyRamified.LatticeHardlyRamified
 public import FLT.GaloisRepresentation.HardlyRamified.Lift
 public import FLT.GaloisRepresentation.HardlyRamified.LiftDomainFree
+public import FLT.GaloisRepresentation.HardlyRamified.LiftDomainResidue
 public import FLT.GaloisRepresentation.HardlyRamified.LiftPrimeAvoidingP
 public import FLT.GaloisRepresentation.HardlyRamified.ModThree
 public import FLT.GaloisRepresentation.HardlyRamified.ModThreeSorted
@@ -342,6 +343,8 @@ public import FLT.GaloisRepresentation.HardlyRamified.NormalizedOrder
 public import FLT.GaloisRepresentation.HardlyRamified.PointFieldBaseChange
 public import FLT.GaloisRepresentation.HardlyRamified.PointFieldRamification
 public import FLT.GaloisRepresentation.HardlyRamified.PrimeField
+public import FLT.GaloisRepresentation.HardlyRamified.PrimeResidualAlgebra
+public import FLT.GaloisRepresentation.HardlyRamified.PrimeResidualNaturality
 public import FLT.GaloisRepresentation.HardlyRamified.PrimeResidueMap
 public import FLT.GaloisRepresentation.HardlyRamified.PureAction
 public import FLT.GaloisRepresentation.HardlyRamified.PureSortedQuotient
