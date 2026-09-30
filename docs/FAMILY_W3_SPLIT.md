@@ -101,7 +101,7 @@ The rank-two, cyclic-quotient case of [C]. Exact target sketch, with
 `H : Subgroup G`, `[H.Normal] [Finite (G ⧸ H)] [IsCyclic (G ⧸ H)]`:
 ```lean
 theorem exists_quadratic_selfTwist
-    (hirr : ρ.IsIrreducible) (hres : ¬ (ρ.comp H.subtype).IsIrreducible) :
+    (hirr : ρ.IsIrreducible) (hres : ¬ Representation.IsIrreducible (ρ.comp H.subtype)) :
     ∃ χ : G →* kˣ, χ ≠ 1 ∧ (∀ h : H, χ h = 1) ∧
       (∀ g, χ g ^ 2 = 1) ∧
       ∃ e : V ≃ₗ[k] V, ∀ g, e.conj (ρ g) = (χ g : k) • ρ g
@@ -109,7 +109,8 @@ theorem exists_quadratic_selfTwist
 Require characteristic ≠2 in the dispatch signature (e.g. `(2 : k) ≠ 0`).
 Dependencies: a normal-subgroup stable-line orbit/decomposition lemma,
 not yet found; W2 consumes the result. API anchors:
-`Representation.IsIrreducible`, `Subrepresentation`, `Representation.comp`.
+`Representation.IsIrreducible`, `Subrepresentation`, `MonoidHom.comp`
+(with an explicit `Representation.IsIrreducible` application for restriction).
 Do not dispatch the full Clifford theory in this cap. First build the
 rank-two line-orbit lemma (≤200), then the sign character/intertwiner (≤200).
 The arithmetic specialization additionally needs the mod-p cyclotomic
@@ -129,10 +130,9 @@ theorem modelMap_unique (f g : A →ₐ[O] B)
     (h : (Algebra.TensorProduct.includeRight : B →ₐ[O] K ⊗[O] B).comp f =
          (Algebra.TensorProduct.includeRight : B →ₐ[O] K ⊗[O] B).comp g) : f = g
 ```
-Dependencies: fix explicit universe/scalar-tower conventions for the
-fraction-field tensor inclusion, and establish its injectivity from
-flatness. Mathlib localization/flatness has the ingredients; this leaf is
-held until that exact API specialization is checked, rather than spending
+Dependencies: establish injectivity of the fraction-field tensor inclusion
+from flatness. Mathlib localization/flatness has the ingredients; this leaf is
+held until that injectivity API specialization is checked, rather than spending
 a fourth ready-leaf slot. W1 will feed the compatible torsion-level maps.
 Anchor: `FLT/GroupScheme/FiniteFlat.lean:Ideal.comapQuotientLinearMap_injective`
 illustrates the existing torsion-free/injective-map conventions.
@@ -166,3 +166,6 @@ lemma is reused, not recreated as a new leaf. Per ready leaf: foreground
 `#print axioms` (standard axioms only), sorted `FLT.lean` import, local commit.
 No push; no new axioms, admissions, arithmetic input records, or calls to
 admitted arithmetic endpoints. Source caps count the entire new module.
+
+Held W4/W5 proposition sketches typechecked with explicit binders in
+`Scratch/FamilyW3HeldSketches.lean` (no proof bodies); this validates types only.
