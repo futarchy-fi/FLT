@@ -113,7 +113,7 @@ not an executable current API. Definition must include inertia characters,
 the reducible extension-class distinction, and normalization used by I Lemma
 6.2; determinant cyclotomic comes from hρ.det. Dependencies: W4.1, that
 definition, and Serre §2's finite-flat classification (ordinary and irreducible
-cases). Once classification exists, this ≤400-line adapter extracts hρ.flat
+cases). Once classification exists, this ≤400-line adapter extracts hρ.isFlat
 and applies it. Do not dispatch its proof before those foundations; fitting
 the classification itself into 400 lines is not claimed. No weight record.
 Consumer: cyclotomic-restriction irreducibility, I Lemma 6.2(ii).
@@ -147,13 +147,13 @@ rg -n 'HasFlatProlongationAt|class GaloisRep.IsFlatAt' FLT/Deformations/Represen
 rg -n 'theorem HasFlatProlongationAt' FLT/Deformations/RepresentationTheory/Flat.lean
 rg -n 'residualPointModule_localModel' FLT/GaloisRepresentation/HardlyRamified/ResidualPointModule.lean
 rg -n 'lemma IsFiniteFlat.(map|quotient)' FLT/GroupScheme/FiniteFlat.lean
-rg -n 'factorₐ|factor_surjective' "$M/RingTheory/Ideal/Quotient/Operations.lean" "$M/RingTheory/Ideal/Quotient/Basic.lean"
+rg -n 'factorₐ|factor_surjective' "$M/RingTheory/Ideal/Quotient/Operations.lean" "$M/RingTheory/Ideal/Quotient/Defs.lean"
 rg -n 'theorem TensorProduct.map_surjective' "$M/LinearAlgebra/TensorProduct/RightExactness.lean"
 rg -n 'SerreWeight|serreWeight|IsCrystalline|Barsotti' FLT "$M"
 ```
 
 Checked anchors: GaloisRep:391,396; Flat:31,43; ResidualPointModule:118;
-FiniteFlat:1144,2405; Operations:426; RightExactness:182. Last search finds
+FiniteFlat:1144,2382; Operations:426; RightExactness:182. Last search finds
 only prose mentions of Barsotti–Tate; there is no weight/crystalline API.
 For W4.1–3 in order: foreground `LEAN_NUM_THREADS=2 lake build MODULE`,
 then `LEAN_NUM_THREADS=2 lake exe runLinter MODULE` individually, and
