@@ -992,6 +992,7 @@ public import FLT.Mazur.CurveGenus
 public import FLT.Mazur.CurveNode
 public import FLT.Mazur.CuspCollision
 public import FLT.Mazur.CuspOrderNumerator
+public import FLT.Mazur.CyclicPinchingRotation
 public import FLT.Mazur.DRFiberClassification
 public import FLT.Mazur.DirectImageInjectives
 public import FLT.Mazur.DivisorInvertibleSheaf
@@ -1081,6 +1082,8 @@ public import FLT.Mazur.ModuleStalkExact
 public import FLT.Mazur.ModuleSubobjectCoverEquality
 public import FLT.Mazur.ModuleUnitCocyclePullback
 public import FLT.Mazur.NeronPolygonPredicate
+public import FLT.Mazur.NeronPolygonRotation
+public import FLT.Mazur.NeronPolygonRotationAction
 public import FLT.Mazur.NestedOpenCohomologyCoherence
 public import FLT.Mazur.NodalGenusOneBaseChange
 public import FLT.Mazur.NodalGeometricFiberGenus
