@@ -1092,6 +1092,7 @@ public import FLT.Mazur.NodalGenusOneBaseChange
 public import FLT.Mazur.NodalGeometricFiberGenus
 public import FLT.Mazur.NodeInfinitesimalObstruction
 public import FLT.Mazur.NodeQuotient
+public import FLT.Mazur.NodeSmoothLocus
 public import FLT.Mazur.OneGonQuotient
 public import FLT.Mazur.OpenDirectImageCohomology
 public import FLT.Mazur.OpenDirectImageNaturality
