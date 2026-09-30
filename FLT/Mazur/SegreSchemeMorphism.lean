@@ -19,14 +19,14 @@ Their common coefficient map makes the resulting morphism a map over the base.
 
 open AlgebraicGeometry CategoryTheory CategoryTheory.Limits
 
-universe u
+universe u v
 
 set_option backward.isDefEq.respectTransparency false
 set_option backward.defeqAttrib.useBackward true
 
 namespace FLT.Mazur.ProjectiveSpace
 
-variable (R : Type u) [CommRing R] (ι κ : Type u)
+variable (R : Type (max u v)) [CommRing R] (ι κ : Type v)
 
 attribute [local instance] MvPolynomial.gradedAlgebra
 
@@ -70,6 +70,8 @@ lemma segreChartToProjective_baseProjection (i : ι) (j : κ) :
     chartMap R (ι × κ) (i, j)) ≫ _ = _
   rw [Category.assoc, chartMap_baseProjection, specAlgHom_base]
 
+set_option maxHeartbeats 800000 in
+-- Chartwise equality unfolds the tensor cover in independent coefficient and index universes.
 /-- The global Segre morphism is a morphism over the coefficient spectrum. -/
 @[reassoc]
 lemma segreMorphism_baseProjection :

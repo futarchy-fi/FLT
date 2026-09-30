@@ -21,14 +21,14 @@ covered target, using the determinantal quotient on each affine chart.
 open AlgebraicGeometry CategoryTheory CategoryTheory.Limits
 open scoped TensorProduct
 
-universe u
+universe u v
 
 set_option backward.isDefEq.respectTransparency false
 set_option backward.defeqAttrib.useBackward true
 
 namespace FLT.Mazur.ProjectiveSpace
 
-variable (R : Type u) [CommRing R] (ι κ : Type u)
+variable (R : Type (max u v)) [CommRing R] (ι κ : Type v)
 
 attribute [local instance] MvPolynomial.gradedAlgebra
 
@@ -53,6 +53,8 @@ lemma productChartMap_opensRange (i : ι) (j : κ) :
   rw [segre_chartMap_opensRange, segre_chartMap_opensRange]
   rfl
 
+set_option maxHeartbeats 800000 in
+-- The preimage calculation compares tensor chart rings across independent universes.
 /-- On every source chart, a product chart is cut out by the two coordinate conditions. -/
 lemma productChartMap_preimage_productChart (i k : ι) (j l : κ) :
     productChartMap R ι κ i j ⁻¹ᵁ (productChartMap R ι κ k l).opensRange =
