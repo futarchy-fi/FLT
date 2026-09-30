@@ -20,13 +20,13 @@ The overlap rings carry the invertible ratios used for twisting modules.
 
 open AlgebraicGeometry CategoryTheory MvPolynomial HomogeneousLocalization
 
-universe u
+universe u v
 
 set_option backward.isDefEq.respectTransparency false
 
 namespace FLT.Mazur.ProjectiveSpace
 
-variable (R : Type u) [CommRing R] (ι : Type u)
+variable (R : Type u) [CommRing R] (ι : Type v)
 
 attribute [local instance] MvPolynomial.gradedAlgebra
 
