@@ -1101,6 +1101,7 @@ public import FLT.Mazur.RelativeSums
 public import FLT.Mazur.RightDerivedDimensionShift
 public import FLT.Mazur.ScalarCohomology
 public import FLT.Mazur.SchemeCohomologyIso
+public import FLT.Mazur.SchemeCohomologyIsoCocycles
 public import FLT.Mazur.SectionCharts
 public import FLT.Mazur.SectionDivisors
 public import FLT.Mazur.SectionKernelLocal
