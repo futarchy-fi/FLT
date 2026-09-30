@@ -111,6 +111,7 @@ public import FLT.Deformations.Representable
 public import FLT.Deformations.RepresentationTheory.AbsoluteGaloisGroup
 public import FLT.Deformations.RepresentationTheory.BrauerEffectivityCoefficients
 public import FLT.Deformations.RepresentationTheory.Burnside
+public import FLT.Deformations.RepresentationTheory.CyclicRestrictionTwist
 public import FLT.Deformations.RepresentationTheory.CyclicScalarRestriction
 public import FLT.Deformations.RepresentationTheory.CyclicStableLinePair
 public import FLT.Deformations.RepresentationTheory.Etale
