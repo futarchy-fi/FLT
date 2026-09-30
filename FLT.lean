@@ -920,6 +920,7 @@ public import FLT.Mazur.ChowProductImageFactors
 public import FLT.Mazur.ChowProductOpenGluing
 public import FLT.Mazur.ChowProjectiveProduct
 public import FLT.Mazur.ChowSimultaneousLineBundle
+public import FLT.Mazur.ChowSimultaneousSerreVanishing
 public import FLT.Mazur.ChowSourceClosure
 public import FLT.Mazur.ChowWitnessAffineCoherence
 public import FLT.Mazur.ChowWitnessAffinePieceCoordinates
@@ -1132,8 +1133,10 @@ public import FLT.Mazur.PushforwardCech
 public import FLT.Mazur.RationalFibers
 public import FLT.Mazur.RelativeCartier
 public import FLT.Mazur.RelativeCartierBaseChange
+public import FLT.Mazur.RelativeSerreAffineAcyclic
 public import FLT.Mazur.RelativeSerreAffineVanishing
 public import FLT.Mazur.RelativeSerreLocalizedTower
+public import FLT.Mazur.RelativeSerreVanishing
 public import FLT.Mazur.RelativeSums
 public import FLT.Mazur.RelativeVeryAmpleLineBundle
 public import FLT.Mazur.RightDerivedDimensionShift
