@@ -1090,6 +1090,7 @@ public import FLT.Mazur.NeronPolygonScaling
 public import FLT.Mazur.NestedOpenCohomologyCoherence
 public import FLT.Mazur.NodalGenusOneBaseChange
 public import FLT.Mazur.NodalGeometricFiberGenus
+public import FLT.Mazur.NodeInfinitesimalObstruction
 public import FLT.Mazur.NodeQuotient
 public import FLT.Mazur.OneGonQuotient
 public import FLT.Mazur.OpenDirectImageCohomology

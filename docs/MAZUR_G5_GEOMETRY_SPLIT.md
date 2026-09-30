@@ -245,3 +245,11 @@ GOAL_MAZUR_W8_ONEGON_AXIOMS.txt). It proves bPresent surjective over every
 commutative ring; over every field, including characteristic two, the kernel
 is exactly (v²-uv-u³), with an algebra equivalence to the actual B.
 Both presentation kernels are now proved; the origin obstructions remain open.
+
+E3d W8 NodeInfinitesimalObstruction checked 2026-09-30 20:57 UTC:
+foreground module build, individual runLinter and all 51 collectAxioms checks
+passed (untracked GOAL_MAZUR_W8_OBSTRUCTION_AXIOMS.txt). At 250/250 lines,
+it proves both origin local rings non-formally-smooth using the square-zero
+map K[e]/(e³) → K[e]/(e²), with explicit nonliftable tangent vectors and
+invertibility of every origin-localization denominator. No characteristic
+restriction is used. E3 now needs only the smooth-locus identification.
