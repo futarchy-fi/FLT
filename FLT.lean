@@ -942,6 +942,7 @@ public import FLT.Mazur.CoherentGeometricFiltration
 public import FLT.Mazur.CoherentIdealIntersection
 public import FLT.Mazur.CoherentIdealPowerFiltration
 public import FLT.Mazur.CoherentOpenDescent
+public import FLT.Mazur.CoherentRankOneDevissage
 public import FLT.Mazur.CoherentRestriction
 public import FLT.Mazur.CoherentSubmoduleEnlargement
 public import FLT.Mazur.CoherentSubmoduleExtension
