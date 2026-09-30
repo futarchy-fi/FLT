@@ -131,12 +131,13 @@ last finiteness transport in 20h; it does not construct rank-one witnesses.
 ### 20b — ChowWitnessSectionsLocalization (cap 450; waits B17-FINAL)
 
 For every affine V in Z and r in Γ(Z,V), show sections of G n on the
-principal open D(r) are localization of sections on V, with the canonical
-restriction map as the localization map:
+principal open D(r) are localization of sections on V. Equip the target
+with scalars restricted along the structure-sheaf restriction map and
+bundle the actual coefficient restriction as
+`res : Γ(G n, V) →ₗ[Γ(Z, V)] Γ(G n, Z.basicOpen r)`. Prove:
 
 ```
-IsLocalizedModule (Submonoid.powers r)
-  (G n).presheaf.map (homOfLE (D(r) ≤ V)).op
+IsLocalizedModule (Submonoid.powers r) res
 ```
 
 Use the finite standard affine cover of pi^-1(V) coming from B17,
@@ -149,18 +150,20 @@ Chow coefficient, not general proper pushforward coherence.
 
 ### 20c — ChowWitnessAffineCoherence (cap 450; waits 20b, B17-FINAL)
 
-For every affine V in Z, construct the canonical tilde comparison
+For `V : Z.affineOpens`, set
+`N := ((G n).restrict V.1.ι).restrict V.2.isoSpec.inv` and construct
+the canonical comparison on its spectrum:
 
 ```
-((G n).restrict V.ι) ≅
-  (tilde of the Γ(Z,V)-module of sections on pi^-1(V))
+N ≅ tilde (moduleSpecΓFunctor.obj N)
 ```
 
-with the usual V-to-Spec identification. Prove that section module finite
+Identify the section module with sections of T n on pi^-1(V), using the
+actual direct-image section maps and V-to-Spec identification. Prove it finite
 using B13 `closedSubscheme_coherent_moduleH_finite` in degree zero and
 `moduleH0Equiv`, with B17's affine relative projective embedding and
 coherent T n. Apply `AffineCoherent` to obtain
-`((G n).restrict V.ι).IsFinitePresentation`.
+`((G n).restrict V.1.ι).IsFinitePresentation`.
 20b proves the tilde comparison is invertible; do not merely infer it
 from finite global sections. No B18 dependency.
 
@@ -184,13 +187,15 @@ of schemes over U. Prove its local rank one and, at the actual generic
 point eta of Z,
 
 ```
-IsLocallyFree (G n restricted to U) of rank 1
+LocallyFreeRankOne ((G n).restrict U.ι)
+StalkAnnihilated (G n) eta
+letI := residueModule (G n) eta hAnn
 Module.finrank (Z.residueField eta) ((G n).presheaf.stalk eta) = 1
 ```
 
-The second line includes the canonical residue action and its proof of
-maximal-ideal annihilation: the local ring of integral Z at eta is a
-field. Depend on `ClosedPushforwardRestriction`'s open-square pattern,
+The last two lines use the preceding annihilation proof hAnn for the
+canonical residue action. Prove maximal-ideal annihilation using that
+the local ring of integral Z at eta is a field. Depend on `ClosedPushforwardRestriction`'s open-square pattern,
 `ModuleLineBundlePullback`, `CartierTensorRank`, and the integral generic
 stalk API. No B18 dependency. Do not assume generic rank one as input.
 
@@ -342,3 +347,65 @@ Scan only new sources for admitted proofs/new axioms and verify the stated
 line caps. Use `#print axioms` on exported assembly results. Preserve the
 inherited untracked briefs. The final handoff names local commits and the
 blocked leaves; it must not label B20/B21/C25 complete.
+
+## Ready-leaf implementation and validation
+
+Implementation commits (local only):
+
+| Leaf | Module | Lines / cap | Commit |
+| --- | --- | --- | --- |
+| 21a | `CoherentCohomologyFinite` | 89 / 180 | `03617aa2` |
+| 20a | `ClosedCohomologyFinite` | 46 / 160 | `d2bc86a8` |
+| 21b | `CoherentCohomologyDevissage` | 47 / 140 | `e4cbafb8` |
+| 21c | `StructureCohomologyFinite` | 48 / 120 | `62f47e72` |
+
+The original split was committed first as `7d2f2515`. All four new modules
+were built and linted separately, in the execution order above. For each
+row, both of these foreground commands exited 0:
+
+```
+lake build FLT.Mazur.<Module>
+lake exe runLinter FLT.Mazur.<Module>
+```
+
+The final sources have no warnings, admitted proofs, new axioms or lines
+longer than 100 columns. A source scan verified the caps. A Python comparison
+of `FLT.lean` imports against all `FLT/**/*.lean` paths confirmed sorted,
+exact coverage of 1261 modules. The tracked source diff is confined to the
+four new modules, their root imports, and this review.
+
+`lake env lean /tmp/fc08-ready-axioms.lean` exited 0. Its eight `#print axioms`
+checks returned exactly `propext`, `Classical.choice`, and `Quot.sound` for:
+
+* `hasFiniteCohomology_twoOutOfThree`
+* `hasFiniteCohomology_of_isZero`
+* `hasFiniteCohomology_iso`
+* `closedPushforward_hasFiniteCohomology_iff`
+* `hasFiniteCohomology_of_isEmpty`
+* `coherent_hasFiniteCohomology_of_witnesses`
+* `finiteDimensional_scalarH_of_witnesses`
+* `finiteDimensional_H1_of_witnesses`
+
+All names are in `FLT.Mazur.FCurve`; the probe imports
+`FLT.Mazur.ClosedCohomologyFinite` and `FLT.Mazur.StructureCohomologyFinite`.
+Its output is `/tmp/fc08-ready-axioms.log`.
+
+Remaining work: 20b--20e require B17-FINAL; 20f requires B17-FINAL and the
+still-missing geometric B18-SERRE theorem; 20g--20h depend on those witness
+leaves. Consequently 21d and 25a--25b are also blocked. B20, unconditional
+B21, and C25 are **not complete**. No genus definition or unconditional
+proper-finiteness instance was added.
+
+Final integration checked at **2026-09-30 07:41 UTC**:
+
+* `lake build +FLT:olean` exited 0: 10237 jobs, including the complete
+  root import module. Log: `/tmp/fc08-ready-root-build.log`. This is the
+  root-object build, not a claim about the default executable targets.
+* All compiler/build/lint commands ran in the foreground. Linters ran
+  one new module at a time; no library-wide linter was invoked.
+* `git diff --check` passed. Inherited untracked handoff files were
+  preserved; no B17/B18 source modules were edited and nothing was pushed.
+
+The root check rebuilt inherited projective and direct-image dependencies;
+its long runtime did not expose a source failure. All ready leaves in the
+execution order at the top of this review are implemented and committed.
