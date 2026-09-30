@@ -926,6 +926,7 @@ public import FLT.Mazur.ChowWitnessAffineCoherence
 public import FLT.Mazur.ChowWitnessAffinePieceCoordinates
 public import FLT.Mazur.ChowWitnessClosedStalk
 public import FLT.Mazur.ChowWitnessCoherence
+public import FLT.Mazur.ChowWitnessFiniteCohomology
 public import FLT.Mazur.ChowWitnessGenericRestriction
 public import FLT.Mazur.ChowWitnessSectionsLocalization
 public import FLT.Mazur.ChowWitnessSectionsLocalizationAssembly
