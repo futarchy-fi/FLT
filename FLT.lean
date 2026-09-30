@@ -920,6 +920,7 @@ public import FLT.Mazur.ChowProductImageFactors
 public import FLT.Mazur.ChowProductOpenGluing
 public import FLT.Mazur.ChowProjectiveProduct
 public import FLT.Mazur.ChowSourceClosure
+public import FLT.Mazur.ClosedCohomologyFinite
 public import FLT.Mazur.ClosedDescentCharts
 public import FLT.Mazur.ClosedDescentGluingData
 public import FLT.Mazur.ClosedDescentGluingMaps
@@ -934,6 +935,8 @@ public import FLT.Mazur.ClosedSubsets
 public import FLT.Mazur.CoherentAffineCoverSections
 public import FLT.Mazur.CoherentClosedPushforward
 public import FLT.Mazur.CoherentClosedReduction
+public import FLT.Mazur.CoherentCohomologyDevissage
+public import FLT.Mazur.CoherentCohomologyFinite
 public import FLT.Mazur.CoherentComparisonLocus
 public import FLT.Mazur.CoherentDevissage
 public import FLT.Mazur.CoherentFiltration
@@ -1114,6 +1117,7 @@ public import FLT.Mazur.SmoothDimension
 public import FLT.Mazur.SmoothDimensionBound
 public import FLT.Mazur.SmoothOpenSectionCartier
 public import FLT.Mazur.SmoothSectionCartier
+public import FLT.Mazur.StructureCohomologyFinite
 public import FLT.Mazur.TildePrincipalOpen
 public import FLT.MazurChapter.AdmissibleGroupSchemes
 public import FLT.MazurW
