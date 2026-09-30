@@ -176,10 +176,23 @@ proofs exceed the caps; do not assume their conclusions in an input record.
    tame comparison are not proved. Remaining split: D3a presentation/action
    transport (220), D3b inertia lifting (200), D3c tame comparison (300),
    D3d generator transport (80). Exact targets are in the untracked handoff.
-4. D4 (cap 220): with ε the global mod-p cyclotomic character and H its
+4. D4 — PARTIAL; inertia detector depends on D3b (cap 220): with ε the
+   global mod-p cyclotomic character and H its
    kernel, use D1–D3 to produce an inertia element t with `χ t = -1` for
    every nontrivial quadratic χ trivial on H. Apply this to the χ constructed
    by W4. Prove the finite/cyclic quotient instances from `range ε`.
+
+   `CyclotomicQuadraticDetection.lean` (101 lines) proves the actual global
+   cyclotomic kernel quotient is finite and cyclic, constructs a simultaneous
+   global detector, applies it to W4's self-twist, and proves compatibility
+   of the global and local cyclotomic characters at the chosen local embedding.
+   The detector is not yet proved to come from inertia. Remaining D4b (180)
+   uses D3b and the proved `character_map_local` to choose it in inertia.
+   Checked 2026-09-30: foreground build, module lint and all seven declarations’
+   axiom checks pass (standard axioms only). The sibling GOAL-LIFTS-W7 lane in
+   `wt-r1d` owns
+   uniformizer-root inertia transitivity and tame surjectivity; reuse F4
+   once validated, via D3c, as an alternative to D3a/D3b's direct route.
 
 D4 supplies detection only. To contradict W3 at that same t, the finite-flat
 inertia classification must still construct eigenvalues, their exact ratio

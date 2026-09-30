@@ -118,6 +118,7 @@ public import FLT.Deformations.RepresentationTheory.CharacterRange
 public import FLT.Deformations.RepresentationTheory.CyclicRestrictionTwist
 public import FLT.Deformations.RepresentationTheory.CyclicScalarRestriction
 public import FLT.Deformations.RepresentationTheory.CyclicStableLinePair
+public import FLT.Deformations.RepresentationTheory.CyclotomicQuadraticDetection
 public import FLT.Deformations.RepresentationTheory.Etale
 public import FLT.Deformations.RepresentationTheory.FamilyTracePair
 public import FLT.Deformations.RepresentationTheory.Flat
