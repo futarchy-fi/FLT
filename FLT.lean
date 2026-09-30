@@ -950,6 +950,7 @@ public import FLT.Mazur.FiniteAffineCoverDimension
 public import FLT.Mazur.FiniteAffineCoverFiniteness
 public import FLT.Mazur.FiniteCechCyclesScalars
 public import FLT.Mazur.FiniteCechTermScalars
+public import FLT.Mazur.FlasqueDirectImageAcyclic
 public import FLT.Mazur.GenericFibers
 public import FLT.Mazur.GlobalClosedModuleDescent
 public import FLT.Mazur.IdealModuleSheaf
