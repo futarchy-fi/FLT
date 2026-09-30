@@ -10,15 +10,17 @@ public import FLT.Mazur.AffinePushforwardQuasicoherent
 public import FLT.Mazur.CechSheafH
 public import FLT.Mazur.CoherentFreeSheaf
 public import FLT.Mazur.ModuleSheafTensorAffine
+public import Mathlib.Algebra.Module.LocalizedModule.Submodule
 
 /-!
 # Local inputs for localization of Chow witness sections
 
 The direct-image restriction map uses the actual structure-sheaf scalars.
-On each affine chart, and each pairwise intersection, its coefficient direct
-image over the affine base is localizing. These are the local inputs to the
-finite equalizer argument; this file does not yet identify the equalizer with
-the sections of the full Chow direct image.
+On each affine chart and pairwise intersection, the coefficient direct image
+over the affine base is localizing. Actual sections form a base-linear
+equalizer, and localization follows from localization of its two products.
+The remaining step identifies the affine-piece section coordinates with those
+in this equalizer and transports back to the original target open.
 -/
 
 @[expose] public noncomputable section
@@ -160,13 +162,216 @@ theorem graphOverlapProductRestriction_isLocalized (n : ℕ) (V : X.Opens)
 
 /-- The finite affine cover computes actual sections by its compatibility equalizer.
 
-This is the additive comparison. Transporting its scalar action and comparing it
-with principal-open restriction are the remaining localization steps. -/
+This additive comparison is refined below to a base-linear kernel comparison
+compatible with restriction to every open. -/
 def graphPowerSectionsEqualizer (n : ℕ) (V : X.Opens) (hV : IsAffineOpen V) :
     Γ(graphPowerOver f n V, ⊤) ≃+
       CechSheafH.zeroCocycles ⟨(graphPowerOver f n V).presheaf,
         (graphPowerOver f n V).isSheaf⟩ (graphAffineChart f V hV) :=
   CechSheafH.sectionsEquiv ⟨(graphPowerOver f n V).presheaf,
     (graphPowerOver f n V).isSheaf⟩ _ (iSup_graphAffineChart f V hV)
+
+section Equalizer
+
+variable {Y : Scheme} {R : Type} [CommRing R] (M : Y.Modules) (ρ : R →+* Γ(Y, ⊤))
+
+/-- Sections on an open with scalars induced by a fixed base-ring map. -/
+abbrev baseSections (W : Y.Opens) : ModuleCat R :=
+  (ModuleCat.restrictScalars ((Y.presheaf.map W.leTop.op).hom.comp ρ)).obj (M.val.obj (op W))
+
+/-- Actual restriction of sections is linear for the fixed base-ring action. -/
+def baseRestriction {W T : Y.Opens} (h : W ≤ T) :
+    baseSections M ρ T →ₗ[R] baseSections M ρ W where
+  toFun := M.presheaf.map (homOfLE h).op
+  map_add' := map_add _
+  map_smul' r s := by
+    change M.presheaf.map (homOfLE h).op ((Y.presheaf.map T.leTop.op) (ρ r) • s) =
+      (Y.presheaf.map W.leTop.op) (ρ r) • M.presheaf.map (homOfLE h).op s
+    rw [M.map_smul]
+    congr 1
+    exact congr($((Y.presheaf.map_comp T.leTop.op (homOfLE h).op).symm) (ρ r))
+
+/-- Restrictions compose with the same scalar action on all three opens. -/
+lemma baseRestriction_comp {A B C : Y.Opens} (h : A ≤ B) (g : B ≤ C) :
+    (baseRestriction M ρ h).comp (baseRestriction M ρ g) =
+      baseRestriction M ρ (h.trans g) := by
+  ext s
+  exact congr($((M.presheaf.map_comp (homOfLE g).op (homOfLE h).op).symm) s)
+
+variable {ι : Type} (W : ι → Y.Opens)
+
+/-- The overlap difference as a linear map over the specified base ring. -/
+def baseDifference : (∀ i, baseSections M ρ (W i)) →ₗ[R]
+    ∀ ij : ι × ι, baseSections M ρ (W ij.1 ⊓ W ij.2) :=
+  LinearMap.pi fun ij ↦
+    (baseRestriction M ρ inf_le_right).comp (LinearMap.proj ij.2) -
+      (baseRestriction M ρ inf_le_left).comp (LinearMap.proj ij.1)
+
+/-- The linear kernel is the actual compatibility condition on the cover. -/
+lemma baseDifference_mem_ker (s : ∀ i, baseSections M ρ (W i)) :
+    s ∈ (baseDifference M ρ W).ker ↔
+      TopCat.Presheaf.IsCompatible M.presheaf W s := by
+  simp only [LinearMap.mem_ker, baseDifference, LinearMap.pi_apply, LinearMap.sub_apply,
+    LinearMap.comp_apply, LinearMap.proj_apply, funext_iff, Pi.zero_apply, sub_eq_zero,
+    TopCat.Presheaf.IsCompatible]
+  exact ⟨fun h i j ↦ (h (i, j)).symm, fun h ij ↦ (h ij.1 ij.2).symm⟩
+
+/-- Restriction to the cover takes values in the linear compatibility kernel. -/
+def baseRestrictEqualizer : baseSections M ρ ⊤ →ₗ[R] (baseDifference M ρ W).ker where
+  toFun s := ⟨fun i ↦ baseRestriction M ρ le_top s, by
+    rw [baseDifference_mem_ker]
+    intro i j
+    exact congr($((M.presheaf.map_comp (homOfLE le_top).op (homOfLE inf_le_left).op).symm) s)
+      |>.trans (congr($((M.presheaf.map_comp
+        (homOfLE le_top).op (homOfLE inf_le_right).op)) s))⟩
+  map_add' s t := by ext i; exact (baseRestriction M ρ le_top).map_add s t
+  map_smul' r s := by ext i; exact (baseRestriction M ρ le_top).map_smul r s
+
+/-- Sheaf gluing proves bijectivity of the base-linear equalizer comparison. -/
+theorem baseRestrictEqualizer_bijective (hW : ⨆ i, W i = ⊤) :
+    Function.Bijective (baseRestrictEqualizer M ρ W) := by
+  let F : TopCat.Sheaf AddCommGrpCat Y := ⟨M.presheaf, M.isSheaf⟩
+  constructor
+  · intro s t h
+    apply F.eq_of_locally_eq' W ⊤ (fun _ ↦ homOfLE le_top) (ge_of_eq hW)
+    intro i
+    exact congrArg (fun z : (baseDifference M ρ W).ker ↦ z.val i) h
+  · intro s
+    obtain ⟨t, ht, -⟩ := F.existsUnique_gluing' W ⊤ (fun _ ↦ homOfLE le_top)
+      (ge_of_eq hW) s.val ((baseDifference_mem_ker M ρ W s.val).mp s.property)
+    exact ⟨t, Subtype.ext (funext ht)⟩
+
+/-- Actual sections are the cover equalizer with their base-ring action retained. -/
+def baseSectionsEqualizer (hW : ⨆ i, W i = ⊤) :
+    baseSections M ρ ⊤ ≃ₗ[R] (baseDifference M ρ W).ker :=
+  LinearEquiv.ofBijective (baseRestrictEqualizer M ρ W)
+    (baseRestrictEqualizer_bijective M ρ W hW)
+
+/-- The equalizer coordinates are the actual coefficient restriction maps. -/
+@[simp]
+lemma baseSectionsEqualizer_apply (hW : ⨆ i, W i = ⊤) (s : baseSections M ρ ⊤) (i : ι) :
+    (baseSectionsEqualizer M ρ W hW s).val i = baseRestriction M ρ le_top s := rfl
+
+/-- Restriction from an arbitrary open to the intersections with the fixed cover. -/
+def baseOpenRestrictEqualizer (B : Y.Opens) :
+    baseSections M ρ B →ₗ[R] (baseDifference M ρ (fun i ↦ W i ⊓ B)).ker where
+  toFun s := ⟨fun i ↦ baseRestriction M ρ inf_le_right s, by
+    rw [baseDifference_mem_ker]
+    intro i j
+    exact congr($((M.presheaf.map_comp (homOfLE inf_le_right).op
+      (homOfLE inf_le_left).op).symm) s) |>.trans
+        (congr($((M.presheaf.map_comp (homOfLE inf_le_right).op
+          (homOfLE inf_le_right).op)) s))⟩
+  map_add' s t := by ext i; exact (baseRestriction M ρ inf_le_right).map_add s t
+  map_smul' r s := by ext i; exact (baseRestriction M ρ inf_le_right).map_smul r s
+
+/-- The same equalizer computes sections on every open, with the original base scalars. -/
+theorem baseOpenRestrictEqualizer_bijective (hW : ⨆ i, W i = ⊤) (B : Y.Opens) :
+    Function.Bijective (baseOpenRestrictEqualizer M ρ W B) := by
+  let F : TopCat.Sheaf AddCommGrpCat Y := ⟨M.presheaf, M.isSheaf⟩
+  have hB : B ≤ ⨆ i, W i ⊓ B := by rw [← iSup_inf_eq, hW, top_inf_eq]
+  constructor
+  · intro s t h
+    apply F.eq_of_locally_eq' (fun i ↦ W i ⊓ B) B (fun _ ↦ homOfLE inf_le_right) hB
+    intro i
+    exact congrArg (fun z : (baseDifference M ρ (fun i ↦ W i ⊓ B)).ker ↦ z.val i) h
+  · intro s
+    obtain ⟨t, ht, -⟩ := F.existsUnique_gluing' (fun i ↦ W i ⊓ B) B
+      (fun _ ↦ homOfLE inf_le_right) hB s.val
+        ((baseDifference_mem_ker M ρ _ s.val).mp s.property)
+    exact ⟨t, Subtype.ext (funext ht)⟩
+
+/-- The base-linear comparison on every open, in particular an inverse-image principal open. -/
+def baseOpenSectionsEqualizer (hW : ⨆ i, W i = ⊤) (B : Y.Opens) :
+    baseSections M ρ B ≃ₗ[R] (baseDifference M ρ (fun i ↦ W i ⊓ B)).ker :=
+  LinearEquiv.ofBijective (baseOpenRestrictEqualizer M ρ W B)
+    (baseOpenRestrictEqualizer_bijective M ρ W hW B)
+
+/-- Componentwise restriction of the chart product to its intersections with an open. -/
+def baseProductRestriction (B : Y.Opens) :
+    (∀ i, baseSections M ρ (W i)) →ₗ[R] ∀ i, baseSections M ρ (W i ⊓ B) :=
+  LinearMap.pi fun i ↦ (baseRestriction M ρ inf_le_left).comp (LinearMap.proj i)
+
+/-- Componentwise restriction on the overlap product. -/
+def baseOverlapRestriction (B : Y.Opens) :
+    (∀ ij : ι × ι, baseSections M ρ (W ij.1 ⊓ W ij.2)) →ₗ[R]
+      ∀ ij : ι × ι, baseSections M ρ ((W ij.1 ⊓ B) ⊓ (W ij.2 ⊓ B)) :=
+  LinearMap.pi fun ij ↦
+    (baseRestriction M ρ (inf_le_inf inf_le_left inf_le_left)).comp (LinearMap.proj ij)
+
+/-- The actual restrictions commute with the overlap difference, over the base ring. -/
+lemma baseDifference_restriction (B : Y.Opens) :
+    (baseDifference M ρ (fun i ↦ W i ⊓ B)).comp (baseProductRestriction M ρ W B) =
+      (baseOverlapRestriction M ρ W B).comp (baseDifference M ρ W) := by
+  ext s ij
+  change M.presheaf.map (homOfLE inf_le_right).op
+      (M.presheaf.map (homOfLE inf_le_left).op (s ij.2)) -
+    M.presheaf.map (homOfLE inf_le_left).op
+      (M.presheaf.map (homOfLE inf_le_left).op (s ij.1)) =
+    M.presheaf.map (homOfLE (inf_le_inf inf_le_left inf_le_left)).op
+      (M.presheaf.map (homOfLE inf_le_right).op (s ij.2) -
+        M.presheaf.map (homOfLE inf_le_left).op (s ij.1))
+  rw [map_sub]
+  simp only [← M.presheaf.map_comp_apply, ← op_comp, homOfLE_comp]
+
+/-- Restriction of sections agrees with componentwise restriction in equalizer coordinates. -/
+lemma baseSectionsEqualizer_restriction (hW : ⨆ i, W i = ⊤) (B : Y.Opens)
+    (s : baseSections M ρ ⊤) :
+    (baseOpenSectionsEqualizer M ρ W hW B (baseRestriction M ρ le_top s)).val =
+      baseProductRestriction M ρ W B (baseSectionsEqualizer M ρ W hW s).val := by
+  funext i
+  exact congr($((M.presheaf.map_comp (homOfLE le_top).op
+    (homOfLE inf_le_right).op).symm) s) |>.trans
+      (congr($((M.presheaf.map_comp (homOfLE le_top).op (homOfLE inf_le_left).op)) s))
+
+/-- Exactness of localization transfers the two product localizations to actual sections.
+
+The hypotheses concern the cover and overlap restriction maps, not the desired
+section restriction. The equalizer and both commuting squares were proved above. -/
+theorem baseRestriction_isLocalized_of_products (hW : ⨆ i, W i = ⊤) (B : Y.Opens)
+    (r : R) [IsLocalizedModule (.powers r) (baseProductRestriction M ρ W B)]
+    [IsLocalizedModule (.powers r) (baseOverlapRestriction M ρ W B)] :
+    IsLocalizedModule (.powers r) (baseRestriction M ρ (show B ≤ ⊤ from le_top)) := by
+  let p := baseProductRestriction M ρ W B
+  let q := baseOverlapRestriction M ρ W B
+  let d := baseDifference M ρ W
+  let dB := baseDifference M ρ (fun i ↦ W i ⊓ B)
+  have hd : IsLocalizedModule.map (.powers r) p q d = dB := by
+    apply IsLocalizedModule.linearMap_ext (.powers r) p q
+    ext s ij
+    change IsLocalizedModule.map (.powers r) p q d (p s) ij = dB (p s) ij
+    rw [IsLocalizedModule.map_apply]
+    exact congrArg (fun t ↦ t s ij) (baseDifference_restriction M ρ W B).symm
+  let := IsLocalizedModule.module (A := Localization (.powers r)) (.powers r) p
+  let := IsLocalizedModule.module (A := Localization (.powers r)) (.powers r) q
+  let := IsLocalizedModule.isScalarTower_module (A := Localization (.powers r)) (.powers r) p
+  let := IsLocalizedModule.isScalarTower_module (A := Localization (.powers r)) (.powers r) q
+  let t := LinearMap.toKerIsLocalized (.powers r) p q d
+  let ht := LinearMap.toKerLocalized_isLocalizedModule (Localization (.powers r))
+    (.powers r) p q d
+  let e : (IsLocalizedModule.map (.powers r) p q d).ker ≃ₗ[R] dB.ker :=
+    LinearEquiv.ofEq _ _ (congrArg LinearMap.ker hd)
+  let h := IsLocalizedModule.of_linearEquiv (.powers r) t e
+  let a := baseSectionsEqualizer M ρ W hW
+  let b := baseOpenSectionsEqualizer M ρ W hW B
+  have hcomp := IsLocalizedModule.of_linearEquiv_right (.powers r) (e.toLinearMap.comp t) a
+  apply (IsLocalizedModule.comp_iff_of_bijective_left (.powers r) b.toLinearMap b.bijective).mp
+  convert hcomp using 1
+  ext s i
+  exact congrFun (baseSectionsEqualizer_restriction M ρ W hW B s) i
+
+end Equalizer
+
+/-- The actual affine-target structure map gives the scalar action on Chow sections. -/
+def graphPowerBaseScalars (V : X.Opens) (hV : IsAffineOpen V) :
+    Γ(X, V) →+* Γ((graphClosureπ f ⁻¹ᵁ V).toScheme, ⊤) :=
+  ((Scheme.ΓSpecIso Γ(X, V)).inv ≫ ((graphClosureπ f ∣_ V) ≫ hV.isoSpec.hom).appTop).hom
+
+/-- The standard Chow cover computes sections as a linear equalizer over the affine base. -/
+def graphPowerBaseSectionsEqualizer (n : ℕ) (V : X.Opens) (hV : IsAffineOpen V) :
+    baseSections (graphPowerOver f n V) (graphPowerBaseScalars f V hV) ⊤ ≃ₗ[Γ(X, V)]
+      (baseDifference (graphPowerOver f n V) (graphPowerBaseScalars f V hV)
+        (graphAffineChart f V hV)).ker :=
+  baseSectionsEqualizer _ _ _ (iSup_graphAffineChart f V hV)
 
 end FLT.Mazur.Chow
