@@ -905,6 +905,7 @@ public import FLT.Mazur.ChowAffineEmbedding
 public import FLT.Mazur.ChowChartData
 public import FLT.Mazur.ChowChartImageClosure
 public import FLT.Mazur.ChowDenseAffineCover
+public import FLT.Mazur.ChowFiniteSegreEmbedding
 public import FLT.Mazur.ChowGenericNeighborhoods
 public import FLT.Mazur.ChowGraphClosure
 public import FLT.Mazur.ChowGraphEmbedding
