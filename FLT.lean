@@ -111,6 +111,7 @@ public import FLT.Deformations.RepresentationTheory.AbsoluteGaloisGroup
 public import FLT.Deformations.RepresentationTheory.Burnside
 public import FLT.Deformations.RepresentationTheory.Etale
 public import FLT.Deformations.RepresentationTheory.Flat
+public import FLT.Deformations.RepresentationTheory.FlatDiscrete
 public import FLT.Deformations.RepresentationTheory.Frobenius
 public import FLT.Deformations.RepresentationTheory.GaloisRep
 public import FLT.Deformations.RepresentationTheory.GaloisRepFamily
