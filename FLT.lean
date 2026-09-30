@@ -921,6 +921,7 @@ public import FLT.Mazur.ChowProductOpenGluing
 public import FLT.Mazur.ChowProjectiveProduct
 public import FLT.Mazur.ChowSimultaneousLineBundle
 public import FLT.Mazur.ChowSourceClosure
+public import FLT.Mazur.ChowWitnessAffineCoherence
 public import FLT.Mazur.ChowWitnessAffinePieceCoordinates
 public import FLT.Mazur.ChowWitnessGenericRestriction
 public import FLT.Mazur.ChowWitnessSectionsLocalization
