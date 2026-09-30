@@ -32,6 +32,7 @@ public import FLT.AINTLIB.DedekindResidue.Lemma2
 public import FLT.AbsoluteGaloisGroup.CompletionComparison
 public import FLT.AbsoluteGaloisGroup.InertiaComparison
 public import FLT.AbsoluteGaloisGroup.LocalCompositum
+public import FLT.AbsoluteGaloisGroup.LocalCyclotomicCharacter
 public import FLT.AbsoluteGaloisGroup.LocalCyclotomicRamification
 public import FLT.AbsoluteGaloisGroup.TameCharacter
 public import FLT.AbsoluteGaloisGroup.Unramified

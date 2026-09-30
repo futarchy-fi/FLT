@@ -162,11 +162,20 @@ proofs exceed the caps; do not assume their conclusions in an input record.
    degree and the shifted minimal polynomial in arbitrary field presentations.
    The result includes p=2. Checked 2026-09-30: foreground build, module lint,
    and all eleven theorem axiom checks pass (standard axioms only).
-3. D3 (cap 350): use D2 to prove surjectivity of the mod-p cyclotomic
+3. D3 — PARTIAL; local inertia/tame bridge remains (cap 350): use D2 to prove surjectivity of the mod-p cyclotomic
    character on local inertia at p. Identify this restriction with the
    level-one `tameCharacter` after identifying the residue field with `ZMod p`.
    Construct an inertia element whose tame value generates `(ZMod p)ˣ`.
    Reuse `FLT/AbsoluteGaloisGroup/TameCharacter.lean` and `InertiaComparison`.
+   `LocalCyclotomicCharacter.lean` (124 lines) proves finite cyclotomic
+   character surjectivity and constructs a finite Galois generator. It also
+   constructs the local residue-field equivalence, proves its cardinality,
+   cyclotomic naturality and the reduced geometric-sum ratio formula.
+   Checked 2026-09-30: build, module lint and all ten declarations' axiom
+   checks pass (standard axioms only). Absolute-inertia surjectivity and
+   tame comparison are not proved. Remaining split: D3a presentation/action
+   transport (220), D3b inertia lifting (200), D3c tame comparison (300),
+   D3d generator transport (80). Exact targets are in the untracked handoff.
 4. D4 (cap 220): with ε the global mod-p cyclotomic character and H its
    kernel, use D1–D3 to produce an inertia element t with `χ t = -1` for
    every nontrivial quadratic χ trivial on H. Apply this to the χ constructed
