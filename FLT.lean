@@ -1087,6 +1087,7 @@ public import FLT.Mazur.ModuleUnitCocyclePullback
 public import FLT.Mazur.NeronPolygonPredicate
 public import FLT.Mazur.NeronPolygonRotation
 public import FLT.Mazur.NeronPolygonRotationAction
+public import FLT.Mazur.NeronPolygonScaling
 public import FLT.Mazur.NestedOpenCohomologyCoherence
 public import FLT.Mazur.NodalGenusOneBaseChange
 public import FLT.Mazur.NodalGeometricFiberGenus
@@ -1101,6 +1102,7 @@ public import FLT.Mazur.OpenSheafExtensionStalks
 public import FLT.Mazur.OpenSheafFreeComparison
 public import FLT.Mazur.OpenSheafRestriction
 public import FLT.Mazur.OverPoints
+public import FLT.Mazur.PolygonChartScaling
 public import FLT.Mazur.PolygonPinchingDiagram
 public import FLT.Mazur.PrincipalSubmoduleCoordinates
 public import FLT.Mazur.PrincipalSubmoduleOverlap
@@ -1115,6 +1117,7 @@ public import FLT.Mazur.ProjectiveGeneration
 public import FLT.Mazur.ProjectiveGenerationEventually
 public import FLT.Mazur.ProjectiveLineCharts
 public import FLT.Mazur.ProjectiveLineEndpoints
+public import FLT.Mazur.ProjectiveLineScaling
 public import FLT.Mazur.ProjectiveOverlapModuleLocalization
 public import FLT.Mazur.ProjectiveProductChartCover
 public import FLT.Mazur.ProjectiveProductChartOverlaps
