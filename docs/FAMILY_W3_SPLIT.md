@@ -138,11 +138,10 @@ the compatible torsion-level maps.
 Anchor: `FLT/GroupScheme/FiniteFlat.lean:Ideal.comapQuotientLinearMap_injective`
 illustrates the existing torsion-free/injective-map conventions.
 
-## Next arithmetic gate: tame detection of the cyclotomic quadratic character
+## Cyclotomic quadratic detection — complete
 
-Proposed leaves, in order; caps count whole new modules. D2–D3 require local
-ramification proofs and remain source/API obligations. Split again if their
-proofs exceed the caps; do not assume their conclusions in an input record.
+All D1–D4 leaves are proved. Caps count whole new modules; no ramification,
+inertia-surjectivity or tame-comparison conclusion is assumed in an input record.
 
 1. D1 — DONE (cap 180): factor a character trivial on `ker ε` through `range ε`.
    For cyclic `range ε`, prove every generator detects a nontrivial factor;
@@ -186,23 +185,22 @@ proofs exceed the caps; do not assume their conclusions in an input record.
    `lake exe runLinter MODULE`, and `W7_D3{A,B,C,D}_AXIOMS.lean` pass;
    every checked declaration uses only propext, Classical.choice, Quot.sound.
 
-4. D4 — PARTIAL; inertia detector depends on D3b (cap 220): with ε the
-   global mod-p cyclotomic character and H its
-   kernel, use D1–D3 to produce an inertia element t with `χ t = -1` for
-   every nontrivial quadratic χ trivial on H. Apply this to the χ constructed
-   by W4. Prove the finite/cyclic quotient instances from `range ε`.
+4. D4 — DONE: quadratic detection on actual local inertia.
+   `CyclotomicQuadraticDetection.lean` (101/220 lines) gives the finite/cyclic
+   quotient, global detection and `character_map_local`.
+   W7 D4b: `CyclotomicInertiaDetection.lean` (62/180) proves
+   `exists_inertia_detector` and `exists_inertia_detected_selfTwist`.
+   The detector belongs to `localInertiaGroup (rationalPlace p)` and χ is
+   evaluated on its specified absolute-Galois restriction to ℚ.
+   It uses the proved D3b surjectivity and W4 self-twist, with no arithmetic
+   conclusion supplied as an additional hypothesis.
 
-   `CyclotomicQuadraticDetection.lean` (101 lines) proves the actual global
-   cyclotomic kernel quotient is finite and cyclic, constructs a simultaneous
-   global detector, applies it to W4's self-twist, and proves compatibility
-   of the global and local cyclotomic characters at the chosen local embedding.
-   The detector is not yet proved to come from inertia. Remaining D4b (180)
-   uses D3b and the proved `character_map_local` to choose it in inertia.
-   Checked 2026-09-30: foreground build, module lint and all seven declarations’
-   axiom checks pass (standard axioms only). The sibling GOAL-LIFTS-W7 lane in
-   `wt-r1d` owns
-   uniformizer-root inertia transitivity and tame surjectivity; reuse F4
-   once validated, via D3c, as an alternative to D3a/D3b's direct route.
+Checked 2026-09-30 20:37 UTC: all five W7 modules pass foreground builds and
+individual `lake exe runLinter MODULE`; axiom checks report only propext,
+Classical.choice and Quot.sound. `lake env lean W7_TARGET_CHECK.lean` assigns
+the new theorems to all five exact D3/D4 propositions from `W6_REMAINING.lean`
+and checks both D4b theorems' axioms. Sorted imports and `git diff --check`
+pass. All commits are local; nothing was pushed.
 
 D4 supplies detection only. To contradict W3 at that same t, the finite-flat
 inertia classification must still construct eigenvalues, their exact ratio
@@ -218,8 +216,8 @@ weight two using `(V ⊗ B_dR)^G` and graded ranks 1 in degrees 0 and −1.
 No Galois de Rham/Hodge–Tate comparison API was found in FLT/Mathlib; do not
 rename `IsFlatAt` to “weight two” or package that conclusion as input data.
 These are future programs requiring further source splits, not ≤400-line leaves.
-W2–W4 also need the finite-flat tame inertia spectrum and cyclotomic
-quadratic-character detection before concluding (A1). This wave does not
+W2–W4 still need the finite-flat tame inertia spectrum before concluding
+(A1); cyclotomic quadratic-character detection is now proved. This wave does not
 replace `mem_isCompatible`, modify its statement, or discharge its admission.
 
 ## Recheck and acceptance
