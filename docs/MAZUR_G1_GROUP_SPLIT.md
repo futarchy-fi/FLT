@@ -27,7 +27,7 @@ Sources: [DR II.1.1, II.1.12(a–c)][dr], printed pp. 173, 178 / PDF pp. 31,
 The coordinate calculations below derive from multiplication on the punctured
 projective line. They are not additional numbered assertions in DR.
 
-## G1 — Laurent points are units, cap 250, ready
+## G1 — Laurent points are units, cap 250, implemented
 
 New `FLT/Mazur/LaurentUnitPoints.lean`, namespace `FLT.Mazur.LaurentUnitPoints`.
 For commutative rings `R,A` and `[Algebra R A]`, put `L := R[T;T⁻¹]`:
@@ -50,7 +50,7 @@ not just the two generators. Source: the functor of points of G_m underlying
 DR II.1.12(a). Anchors: Laurent.lean:232,531,551,559. No geometry prerequisite.
 Unblocks identification of the multiplication constructed in G2 with units.
 
-## G2 — the smooth multiplicative group over a ring, cap 350, ready
+## G2 — the smooth multiplicative group over a ring, cap 350, implemented
 
 New `FLT/Mazur/MultiplicativeGroupScheme.lean`, namespace
 `FLT.Mazur.MultiplicativeGroupScheme`; any commutative ring `R`:
@@ -77,7 +77,7 @@ Coalgebra/MonoidAlgebra.lean:71, Group/Affine.lean:229,260;
 Laurent.lean:489; Smooth/Basic.lean:559,568. G1 is needed only for the later
 points comparison, not for this construction. Unblocks G4.
 
-## G3 — scaling with a variable unit parameter, cap 300, ready
+## G3 — scaling with a variable unit parameter, cap 300, implemented
 
 New `FLT/Mazur/PolygonUniversalScaling.lean`, namespace
 `FLT.Mazur.PolygonUniversalScaling`; commutative `R`, `L := R[T;T⁻¹]`.
@@ -111,7 +111,7 @@ Anchors: P1 `coordinateUnit`, `affine`, `toLaurent_affine`,
 Dependencies: P1, polynomial coefficient maps. These are relative coordinate
 maps, not yet a descended polygon action. Unblocks that later action split.
 
-## G4 — the split group with n components, cap 400, after G2
+## G4 — the split group with n components, cap 400, implemented
 
 New `FLT/Mazur/PolygonSplitGroup.lean`, namespace `FLT.Mazur.PolygonSplitGroup`.
 For commutative `R`, `n : ℕ`, `[NeZero n]`, write `G := gm R`:
@@ -164,6 +164,25 @@ proof that node origins are precisely its nonsmooth points; comparison of
 that construction with the specified cocone. None of these geometric
 prerequisites follows just by taking Spec of P4's ring pullback. This leaf
 is not ready and must not replace those prerequisites with record fields.
+
+## Implementation status
+
+Checked 2026-09-30 19:53 UTC: G1–G4 are implemented in the four modules
+named above, at 89/250, 77/350, 113/300 and 249/400 lines. Each passed a
+foreground `LEAN_NUM_THREADS=2 lake build FLT.Mazur.MODULE` and its own
+`LEAN_NUM_THREADS=2 lake exe runLinter FLT.Mazur.MODULE`. An audit using
+Lean's `collectAxioms` (the implementation behind `#print axioms`) checked
+all declarations originating in these modules, including generated helpers:
+14, 9, 21 and 53 respectively. Only `propext`, `Classical.choice` and
+`Quot.sound` occur. `rg '^public import' FLT.lean | LC_ALL=C sort -c` and
+`git diff --check` passed. No full-library lint or push was run.
+
+G4's sketch needs a product comparison: `μ` uses chosen monoidal products,
+which are not definitionally `Limits.prod` in `Over`. The implementation's
+`component_mul` uses `⊗ₘ`; `component_mul_prod` supplies the stated
+`Limits.prod.map` formula with the explicit `productToTensor` conversions.
+Its finite product/coproduct comparison, group laws and smoothness are proved,
+including n=1. G5 and the later polygon action remain open as described below.
 
 ## Remaining gates and validation
 
