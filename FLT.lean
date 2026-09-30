@@ -133,6 +133,9 @@ public import FLT.Deformations.RepresentationTheory.GaloisRep
 public import FLT.Deformations.RepresentationTheory.GaloisRepFamily
 public import FLT.Deformations.RepresentationTheory.IntegralClosure
 public import FLT.Deformations.RepresentationTheory.Irreducible
+public import FLT.Deformations.RepresentationTheory.PrimePowerExact
+public import FLT.Deformations.RepresentationTheory.SelfTwistTrace
+public import FLT.Deformations.RepresentationTheory.TameTraceObstruction
 public import FLT.Deformations.RepresentationTheory.TraceCompatiblePair
 public import FLT.Deformations.Subfunctor
 public import FLT.DivisionAlgebra.Finiteness
@@ -1054,6 +1057,7 @@ public import FLT.Mazur.IncreasingCechComplex
 public import FLT.Mazur.InjectiveHorseshoe
 public import FLT.Mazur.IntegralBase
 public import FLT.Mazur.IntegralClosedSupport
+public import FLT.Mazur.LaurentUnitPoints
 public import FLT.Mazur.LocalizationCech
 public import FLT.Mazur.LocalizationCechCompare
 public import FLT.Mazur.LocalizationCechExact
@@ -1101,6 +1105,7 @@ public import FLT.Mazur.ModuleSheafificationTensor
 public import FLT.Mazur.ModuleStalkExact
 public import FLT.Mazur.ModuleSubobjectCoverEquality
 public import FLT.Mazur.ModuleUnitCocyclePullback
+public import FLT.Mazur.MultiplicativeGroupScheme
 public import FLT.Mazur.NeronPolygonPredicate
 public import FLT.Mazur.NeronPolygonRotation
 public import FLT.Mazur.NeronPolygonRotationAction
@@ -1120,7 +1125,14 @@ public import FLT.Mazur.OpenSheafFreeComparison
 public import FLT.Mazur.OpenSheafRestriction
 public import FLT.Mazur.OverPoints
 public import FLT.Mazur.PolygonChartScaling
+public import FLT.Mazur.PolygonIncidence
+public import FLT.Mazur.PolygonNodeBranches
+public import FLT.Mazur.PolygonNodeEqualizer
+public import FLT.Mazur.PolygonNodeLocalization
+public import FLT.Mazur.PolygonNodePresentation
 public import FLT.Mazur.PolygonPinchingDiagram
+public import FLT.Mazur.PolygonSplitGroup
+public import FLT.Mazur.PolygonUniversalScaling
 public import FLT.Mazur.PrincipalSubmoduleCoordinates
 public import FLT.Mazur.PrincipalSubmoduleOverlap
 public import FLT.Mazur.PrincipalSubmoduleSectionLocalization
