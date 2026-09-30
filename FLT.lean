@@ -632,6 +632,7 @@ public import FLT.GroupScheme.RaynaudRigidity
 public import FLT.GroupScheme.RaynaudSplitting
 public import FLT.GroupScheme.RaynaudTorsionFiltration
 public import FLT.GroupScheme.RaynaudTorsorDescent
+public import FLT.GroupScheme.RaynaudTwoCoordinates
 public import FLT.GroupScheme.RaynaudUnramifiedKernel
 public import FLT.GroupScheme.RaynaudUnramifiedQuotient
 public import FLT.GroupScheme.RestrictedScalarPointNaturality

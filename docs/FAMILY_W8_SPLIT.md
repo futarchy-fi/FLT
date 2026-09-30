@@ -171,4 +171,8 @@ No push; no admission changes; blockers remain explicit programs above.
 S1 checked 2026-09-30: `lake build FLT.GroupScheme.RaynaudParameterValuation`,
 individual `lake exe runLinter FLT.GroupScheme.RaynaudParameterValuation`, and
 `lake env lean W8_S1_AXIOMS.lean` pass. All four theorems use only standard
-axioms; module is 57/180 lines. S1 is implemented (READY above records dispatch).
+axioms; module is 56/180 lines. S1 is implemented (READY above records dispatch).
+
+S2 checked 2026-09-30: foreground build, individual module lint and
+`lake env lean W8_S2_AXIOMS.lean` pass for `FLT.GroupScheme.RaynaudTwoCoordinates`;
+all four theorems use only standard axioms, 58/200 lines. S2 is implemented.
