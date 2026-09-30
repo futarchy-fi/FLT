@@ -1,9 +1,11 @@
 # F: fundamental characters from reduced root ratios
 
 Audit: 2026-09-30, parent `0534178c`; commands below reproduce the API checks.
-Six source-lemma leaves, each at most 400 lines including headers. F1–F3
-are READY in order; implement at most these three in W6. F4–F6 are BLOCKED
-on the precise missing arithmetic proofs below, not assumed in records.
+W7 F4a checked 20:05 UTC: build, module lint, five axiom audits passed;
+logs `Scratch/LiftsW7/F4a-{build,lint,axioms}.log`; 183/300 lines.
+Source-lemma leaves, each at most 400 lines including headers. F1–F3
+are DONE (W6); F4a is DONE (W7, RootInertiaTransitivity, cap 300).
+F4–F6 retain the missing arithmetic proofs below, not assumed in records.
 Caps are hard stop limits, not claims that unimplemented proofs fit.
 This document is capped at 200 lines. No weight definition or classification
 is supplied by this split.
@@ -34,7 +36,7 @@ The abbreviations in comments expand literally in the declarations below.
 For n=q^r−1 require r>0; q>1 follows from `residueCard_one_lt`.
 Use the geometric ratio σ(α)/α. Never silently invert this convention.
 
-## F1 — root-choice independence, READY, cap 250
+## F1 — root-choice independence, DONE, cap 250
 
 New `FLT/AbsoluteGaloisGroup/RootCharacterIndependence.lean`.
 Source S §2: roots of the same element differ by an integral unit.
@@ -52,7 +54,7 @@ Anchors: RootCharacter `root_ne_zero`, `integralRatio`, `coe_ratioUnit`;
 TameCharacter `residue_smul_eq` and the unit calculation in
 `reducedKummerRatio_uniformizer_independent`. Dependencies: W5.1 only.
 
-## F2 — uniformizer independence and compatible levels, READY after F1, cap 300
+## F2 — uniformizer independence and compatible levels, DONE, cap 300
 
 New `FLT/AbsoluteGaloisGroup/RootCharacterUniformizer.lean`.
 Sources S §2, L IV §2: equal valuations give unit ratios; powers give norms.
@@ -80,7 +82,7 @@ Anchors: TameCharacter `exists_unit_root_ratio_of_uniformizers` (degree-one
 pattern), AdicValuation `maximalIdeal_eq_span_uniformizer`, Mathlib
 `isUnit_pow_iff`, RootCharacter `character_degree_mul`. Dependencies: F1.
 
-## F3 — continuity and finite image, READY after F2, cap 250
+## F3 — continuity and finite image, DONE, cap 250
 
 New `FLT/AbsoluteGaloisGroup/RootCharacterTopology.lean`.
 Sources S §2, L IV §2: the character is constant on root-stabilizer cosets.
@@ -114,9 +116,9 @@ theorem wildInertia_le_ker (hnk : (n : k) ≠ 0)
 `wildInertia v : Subgroup I` is a NEW symbol: it must be constructed as the
 inverse limit of first ramification groups, not defined to be this kernel.
 Use `QuotientGroup.lift` for the induced tame quotient character.
-Missing source bridge: inertia acts transitively on the n roots of π for
-(n : k)≠0, proved via Eisenstein over the maximal unramified extension;
-also the pro-p description of wild inertia. Neither is present at audit.
+W7 F4a: `LocalRoot.inertia_transitive` proves transitivity in every positive
+degree via Eisenstein over finite inertia fixed fields and restriction
+surjectivity. The pro-p description of wild inertia remains missing.
 This leaf must supply those proofs, not assume them as endpoint hypotheses.
 If the 400-line cap is reached, retain the proved finite-extension lemmas
 and record the exact remaining inverse-limit statement in BLOCKED.md.

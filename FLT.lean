@@ -36,6 +36,7 @@ public import FLT.AbsoluteGaloisGroup.RootCharacter
 public import FLT.AbsoluteGaloisGroup.RootCharacterIndependence
 public import FLT.AbsoluteGaloisGroup.RootCharacterTopology
 public import FLT.AbsoluteGaloisGroup.RootCharacterUniformizer
+public import FLT.AbsoluteGaloisGroup.RootInertiaTransitivity
 public import FLT.AbsoluteGaloisGroup.TameCharacter
 public import FLT.AbsoluteGaloisGroup.Unramified
 public import FLT.Assembly.B4
