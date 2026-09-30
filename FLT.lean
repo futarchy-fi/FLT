@@ -967,6 +967,7 @@ public import FLT.Mazur.FiniteCechTermScalars
 public import FLT.Mazur.GenericFibers
 public import FLT.Mazur.GlobalClosedModuleDescent
 public import FLT.Mazur.GlobalIdealPower
+public import FLT.Mazur.GlobalIdealPowerCompatibility
 public import FLT.Mazur.IdealModuleSheaf
 public import FLT.Mazur.IdealPowerCompatibility
 public import FLT.Mazur.IncreasingCechComplex
