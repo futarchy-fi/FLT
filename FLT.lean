@@ -920,6 +920,7 @@ public import FLT.Mazur.ChowProductImageFactors
 public import FLT.Mazur.ChowProductOpenGluing
 public import FLT.Mazur.ChowProjectiveProduct
 public import FLT.Mazur.ChowSourceClosure
+public import FLT.Mazur.ClosedCohomologyFinite
 public import FLT.Mazur.ClosedDescentCharts
 public import FLT.Mazur.ClosedDescentGluingData
 public import FLT.Mazur.ClosedDescentGluingMaps
@@ -934,6 +935,8 @@ public import FLT.Mazur.ClosedSubsets
 public import FLT.Mazur.CoherentAffineCoverSections
 public import FLT.Mazur.CoherentClosedPushforward
 public import FLT.Mazur.CoherentClosedReduction
+public import FLT.Mazur.CoherentCohomologyDevissage
+public import FLT.Mazur.CoherentCohomologyFinite
 public import FLT.Mazur.CoherentComparisonLocus
 public import FLT.Mazur.CoherentDevissage
 public import FLT.Mazur.CoherentFiltration
@@ -980,6 +983,7 @@ public import FLT.Mazur.DivisorRestrictCoherence
 public import FLT.Mazur.EtaleCoordinate
 public import FLT.Mazur.EtaleDimGe
 public import FLT.Mazur.EtaleDimLe
+public import FLT.Mazur.ExactFunctorInjectiveExt
 public import FLT.Mazur.FCurveContracts
 public import FLT.Mazur.FamilyTransport
 public import FLT.Mazur.FiniteAffineCoverDimension
@@ -1015,6 +1019,7 @@ public import FLT.Mazur.ModuleCechScalar
 public import FLT.Mazur.ModuleCohomology
 public import FLT.Mazur.ModuleCohomologyExact
 public import FLT.Mazur.ModuleCohomologyRing
+public import FLT.Mazur.ModuleCohomologyVanishing
 public import FLT.Mazur.ModuleDerivedAbelianComparison
 public import FLT.Mazur.ModuleFreeOpen
 public import FLT.Mazur.ModuleInjectiveFlasque
@@ -1050,7 +1055,9 @@ public import FLT.Mazur.ModuleUnitCocyclePullback
 public import FLT.Mazur.NeronPolygonPredicate
 public import FLT.Mazur.OpenDirectImageCohomology
 public import FLT.Mazur.OpenDirectImageNaturality
+public import FLT.Mazur.OpenDirectImageRestriction
 public import FLT.Mazur.OpenSheafCohomology
+public import FLT.Mazur.OpenSheafCohomologyRestriction
 public import FLT.Mazur.OpenSheafExtensionExact
 public import FLT.Mazur.OpenSheafExtensionStalks
 public import FLT.Mazur.OpenSheafFreeComparison
@@ -1076,6 +1083,8 @@ public import FLT.Mazur.ProjectiveProductChartOverlaps
 public import FLT.Mazur.ProjectiveSectionExtension
 public import FLT.Mazur.ProjectiveSectionExtensionCharts
 public import FLT.Mazur.ProjectiveSectionExtensionCoordinates
+public import FLT.Mazur.ProjectiveSerrePresentationTower
+public import FLT.Mazur.ProjectiveSerreVanishing
 public import FLT.Mazur.ProjectiveSpaceAffineBaseChange
 public import FLT.Mazur.ProjectiveSpaceCharts
 public import FLT.Mazur.ProjectiveSpaceCoefficientMap
@@ -1099,6 +1108,8 @@ public import FLT.Mazur.ProjectiveTwistQuotient
 public import FLT.Mazur.ProjectiveTwistTensor
 public import FLT.Mazur.ProjectiveTwistTensorAddition
 public import FLT.Mazur.ProjectiveTwistTensorInverse
+public import FLT.Mazur.ProjectiveTwistVanishing
+public import FLT.Mazur.ProjectiveTwistedPresentation
 public import FLT.Mazur.ProjectiveTwistingSheaf
 public import FLT.Mazur.ProjectiveTwistingSheafTensor
 public import FLT.Mazur.PushforwardCech
@@ -1122,6 +1133,7 @@ public import FLT.Mazur.SmoothDimension
 public import FLT.Mazur.SmoothDimensionBound
 public import FLT.Mazur.SmoothOpenSectionCartier
 public import FLT.Mazur.SmoothSectionCartier
+public import FLT.Mazur.StructureCohomologyFinite
 public import FLT.Mazur.TildePrincipalOpen
 public import FLT.MazurChapter.AdmissibleGroupSchemes
 public import FLT.MazurW
