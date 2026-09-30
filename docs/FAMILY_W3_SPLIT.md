@@ -8,8 +8,9 @@ the characteristic-zero lift. Neither follows from the present global
 absolute-irreducibility theorem by restriction alone.
 
 This is a five-leaf **next wave**, not a claim that five small lemmas finish
-both bridges. W1–W3 are ready and run in that order. W4–W5 are bounded
-source targets held for missing infrastructure. Downstream work is named
+both bridges. W1–W3 are ready and run in that order. W5 is now proved; W4
+has checked partial results and is held for the remaining orbit-exhaustion
+argument. Downstream work is named
 explicitly; none is an assumed field in a new input record.
 
 Sources: [S] Snowden, arXiv:0905.4266v1, §1.2, §3 and Thm. 5.1.2;
@@ -104,6 +105,13 @@ then supplies a G-stable eigenline, contradicting irreducibility. These need
 separate ≤150/180/100-line leaves (scalar lemma, cyclic eigenline, assembly);
 no orbit-exhaustion conclusion is claimed.
 
+W4b construction DONE conditional on W4a (2026-09-30):
+`PermutedSummandsTwist.lean` (115 lines) constructs the sign character and
+intertwiner. `exists_quadratic_selfTwist_of_stableLines_orbit` consumes exactly
+the W4a target. Foreground build, per-module lint, and standard-only axiom
+checks passed. The unconditional `exists_quadratic_selfTwist` still needs
+W4a orbit exhaustion; no cyclic-restriction theorem is claimed.
+
 Proposed `FLT/Deformations/RepresentationTheory/CyclicRestrictionTwist.lean`.
 The rank-two, cyclic-quotient case of [C]. Exact target sketch, with
 `[IsAlgClosed k] [FiniteDimensional k V]`, `hV : Module.finrank k V = 2`,
@@ -144,10 +152,9 @@ theorem modelMap_unique (f g : A →ₐ[O] B)
     (h : (Algebra.TensorProduct.includeRight : B →ₐ[O] K ⊗[O] B).comp f =
          (Algebra.TensorProduct.includeRight : B →ₐ[O] K ⊗[O] B).comp g) : f = g
 ```
-Dependencies: establish injectivity of the fraction-field tensor inclusion
-from flatness. Mathlib localization/flatness has the ingredients; this leaf is
-held until that injectivity API specialization is checked, rather than spending
-a fourth ready-leaf slot. W1 will feed the compatible torsion-level maps.
+Dependencies discharged: the fraction-field tensor inclusion is injective
+by the Mathlib localization/flatness API specialization above. W1 will feed
+the compatible torsion-level maps.
 Anchor: `FLT/GroupScheme/FiniteFlat.lean:Ideal.comapQuotientLinearMap_injective`
 illustrates the existing torsion-free/injective-map conventions.
 
