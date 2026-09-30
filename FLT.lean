@@ -1019,6 +1019,7 @@ public import FLT.Mazur.ModuleCechScalar
 public import FLT.Mazur.ModuleCohomology
 public import FLT.Mazur.ModuleCohomologyExact
 public import FLT.Mazur.ModuleCohomologyRing
+public import FLT.Mazur.ModuleCohomologyVanishing
 public import FLT.Mazur.ModuleDerivedAbelianComparison
 public import FLT.Mazur.ModuleFreeOpen
 public import FLT.Mazur.ModuleInjectiveFlasque
@@ -1074,6 +1075,8 @@ public import FLT.Mazur.ProjectiveProductChartOverlaps
 public import FLT.Mazur.ProjectiveSectionExtension
 public import FLT.Mazur.ProjectiveSectionExtensionCharts
 public import FLT.Mazur.ProjectiveSectionExtensionCoordinates
+public import FLT.Mazur.ProjectiveSerrePresentationTower
+public import FLT.Mazur.ProjectiveSerreVanishing
 public import FLT.Mazur.ProjectiveSpaceCharts
 public import FLT.Mazur.ProjectiveSpaceProper
 public import FLT.Mazur.ProjectiveSpaceReindex
@@ -1094,6 +1097,8 @@ public import FLT.Mazur.ProjectiveTwistQuotient
 public import FLT.Mazur.ProjectiveTwistTensor
 public import FLT.Mazur.ProjectiveTwistTensorAddition
 public import FLT.Mazur.ProjectiveTwistTensorInverse
+public import FLT.Mazur.ProjectiveTwistVanishing
+public import FLT.Mazur.ProjectiveTwistedPresentation
 public import FLT.Mazur.ProjectiveTwistingSheaf
 public import FLT.Mazur.ProjectiveTwistingSheafTensor
 public import FLT.Mazur.PushforwardCech
