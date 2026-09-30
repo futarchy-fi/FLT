@@ -3,7 +3,8 @@
 Audit: 2026-09-30, parent `0534178c`; commands below reproduce the API checks.
 Six source-lemma leaves, each at most 400 lines including headers. F1–F3
 are READY in order; implement at most these three in W6. F4–F6 are BLOCKED
-on the precise missing arithmetic bridges below, not assumed in records.
+on the precise missing arithmetic proofs below, not assumed in records.
+Caps are hard stop limits, not claims that unimplemented proofs fit.
 This document is capped at 200 lines. No weight definition or classification
 is supplied by this split.
 
@@ -95,7 +96,7 @@ Finite image follows by injection into `rootsOfUnity n k`, using
 `character_pow`. Do not call this finite quotient *the tame quotient*.
 Anchors: `ContinuousSMulDiscrete.isOpen_smul_eq`,
 `IsLocallyConstant.iff_exists_open`, `.continuous`, `.isOpen_fiber`,
-`rootsOfUnity.fintype`. Dependencies: W5.1 (F2 fixes canonical choices).
+the `Finite (rootsOfUnity n k)` instance. Dependencies: W5.1 (F2 fixes canonical choices).
 
 ## F4 — tame quotient and surjectivity, BLOCKED, cap 400
 
@@ -116,12 +117,12 @@ Use `QuotientGroup.lift` for the induced tame quotient character.
 Missing source bridge: inertia acts transitively on the n roots of π for
 (n : k)≠0, proved via Eisenstein over the maximal unramified extension;
 also the pro-p description of wild inertia. Neither is present at audit.
-These are prerequisites to this 400-line adapter, NOT assumed endpoint
-hypotheses or claims that their construction fits its cap. If undertaken,
-first split those two prerequisites into separately capped source lemmas.
+This leaf must supply those proofs, not assume them as endpoint hypotheses.
+If the 400-line cap is reached, retain the proved finite-extension lemmas
+and record the exact remaining inverse-limit statement in BLOCKED.md.
 Anchors: HilbertTheory `IsInertiaField`, `InertiaComparison` restriction
 surjectivity, QuotientGroup `lift`, `quotientKerEquivRange`. Dependencies:
-F1–F3 plus the two missing bridges; existing level-one tame kernel is not enough.
+F1–F3; the existing level-one tame kernel is not enough.
 
 ## F5 — finite coefficients and Frobenius conjugacy, BLOCKED, cap 400
 
@@ -143,10 +144,11 @@ over k0 (exponent q^r−1 gives niveau f*r); do not identify the two.
 Missing bridge: prove the residue field k is algebraically closed and has
 characteristic p, with explicit transport from the completion. Needed to
 show the root-defined subfield has p^r elements; no arbitrary embedding of
-all of k into Ω is assumed. Split that bridge before attempting this leaf.
+all of k into Ω is assumed. Prove the bridge here; stop and split if its
+proof exceeds the cap.
 Anchors: Mathlib `IsAlgClosed.lift`, `GaloisField`,
 `bijective_frobeniusAlgEquivOfAlgebraic_pow`, `residueFieldMap`.
-Dependencies: F4 for surjectivity, residue bridge for coefficients.
+Dependencies: F4 for surjectivity; the residue bridge is part of this leaf.
 
 ## F6 — omega-one equals cyclotomic, BLOCKED, cap 400
 
@@ -165,7 +167,7 @@ with the displayed common domain I; use the existing cyclotomic action on
 μp, not a character newly defined to equal omega. Include p=2 (both trivial).
 Missing arithmetic lemma for p>2: for primitive ζp, ζp−1 is a uniformizer
 in ℚp(ζp), and reducing σ(ζp−1)/(ζp−1) gives the mod-p cyclotomic value.
-Prove the normalized valuation/ramification bridge before this adapter;
+Prove the normalized valuation/ramification bridge in this leaf;
 no cyclotomic equality may be passed as an input. Dependencies: F1–F5.
 Anchor: FLT's `cyclotomicCharacter.toZMod`; valuation and primitive-root APIs.
 
@@ -174,10 +176,11 @@ Anchor: FLT's `cyclotomicCharacter.toZMod`; valuation and primitive-root APIs.
 ```sh
 rg -n 'root_ne_zero|character_pow|character_degree_mul' FLT/AbsoluteGaloisGroup/RootCharacter.lean
 rg -n 'unit_root_ratio|residue_smul_eq|uniformizer_independent|residueFieldMap' FLT/AbsoluteGaloisGroup/TameCharacter.lean
-rg -n 'isOpen_smul_eq|rootsOfUnity.fintype' .lake/packages/mathlib/Mathlib
+rg -n 'isOpen_smul_eq' FLT/Mathlib/Topology/Algebra/ContinuousSMulDiscrete.lean
+rg -n 'Finite \(rootsOfUnity' .lake/packages/mathlib/Mathlib/RingTheory/RootsOfUnity/Basic.lean
 rg -n 'iff_exists_open|isOpen_fiber|theorem continuous' .lake/packages/mathlib/Mathlib/Topology/LocallyConstant/Basic.lean
-rg -n 'IsInertiaField|wildInertia|ramificationGroup' .lake/packages/mathlib/Mathlib/NumberTheory/RamificationInertia FLT/AbsoluteGaloisGroup
-rg -n 'bijective_frobeniusAlgEquivOfAlgebraic_pow|def lift' .lake/packages/mathlib/Mathlib/FieldTheory
+rg --no-ignore -n 'IsInertiaField|wildInertia|ramificationGroup' .lake/packages/mathlib/Mathlib/NumberTheory/RamificationInertia FLT/AbsoluteGaloisGroup
+rg --no-ignore -n 'bijective_frobeniusAlgEquivOfAlgebraic_pow|def lift' .lake/packages/mathlib/Mathlib/FieldTheory
 rg -n 'cyclotomicCharacter.toZMod' FLT/Mathlib/NumberTheory/Cyclotomic
 ```
 Foreground builds only, LEAN_NUM_THREADS=2. Lint each new MODULE separately:
