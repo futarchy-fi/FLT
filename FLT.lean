@@ -928,6 +928,7 @@ public import FLT.Mazur.ChowWitnessAffineCoherence
 public import FLT.Mazur.ChowWitnessAffinePieceCoordinates
 public import FLT.Mazur.ChowWitnessClosedStalk
 public import FLT.Mazur.ChowWitnessCoherence
+public import FLT.Mazur.ChowWitnessFiniteCohomology
 public import FLT.Mazur.ChowWitnessGenericRestriction
 public import FLT.Mazur.ChowWitnessSectionsLocalization
 public import FLT.Mazur.ChowWitnessSectionsLocalizationAssembly
@@ -1133,6 +1134,8 @@ public import FLT.Mazur.ProjectiveTwistVanishing
 public import FLT.Mazur.ProjectiveTwistedPresentation
 public import FLT.Mazur.ProjectiveTwistingSheaf
 public import FLT.Mazur.ProjectiveTwistingSheafTensor
+public import FLT.Mazur.ProperCoherentCohomology
+public import FLT.Mazur.ProperCohomologyWitnesses
 public import FLT.Mazur.PushforwardCech
 public import FLT.Mazur.RationalFibers
 public import FLT.Mazur.RelativeCartier
