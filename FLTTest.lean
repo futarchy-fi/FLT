@@ -1,8 +1,11 @@
 import FLTTest.AssemblyAxioms
 import FLTTest.ExponentRebase
 import FLTTest.FLTTest
+import FLTTest.HardlyRamifiedAbsoluteIrreducibility
 import FLTTest.MathlibCompatibility
 import FLTTest.MazurAffineCechSum
+import FLTTest.MazurAffineCohomology
+import FLTTest.MazurAffineKernel
 import FLTTest.MazurCechAcyclic
 import FLTTest.MazurCechConnecting
 import FLTTest.MazurCechResolution
@@ -13,6 +16,9 @@ import FLTTest.MazurDualTensorSheaf
 import FLTTest.MazurGenericFibers
 import FLTTest.MazurModuleCohomology
 import FLTTest.MazurMultiplicativeModel
+import FLTTest.MazurProjectiveCohomology
+import FLTTest.MazurProjectiveGeneration
+import FLTTest.MazurProjectivePresentation
 import FLTTest.MazurRelativeSums
 import FLTTest.MazurSectionSumFinite
 import FLTTest.MazurSheafIntegration
