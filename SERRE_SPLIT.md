@@ -124,20 +124,27 @@ exists_closed_twist_moduleH_subsingleton (i : Y ⟶ space R ι)
 ```
 
 Use coherent closed pushforward, 4 applied to `i_* F`, 5, and
-`closedPushforwardModuleHEquiv` (check the actual exported name on dispatch).
+`closedPushforwardModuleHEquiv`.
 For F=O_Y use B17's power-zero/unit and power-n coefficient identifications
 to obtain the statement on its actual line powers. No relative conclusion yet.
 
-### 7. RelativeSerrePresentationTower (cap 400; 3, B17-FINAL)
+### 7. ProjectiveSerrePresentationTower (cap 200; main + 3)
 
-For each affine relative embedding in B17, construct a finite tower of
-coherent negative-twist presentations of the closed pushforward coefficient,
-of length equal to the number of standard projective charts. Output its
-actual kernels, short exact sequences, finite summand indices and degrees.
-Sketch: `∃ tower : TwistPresentationTower F (Fintype.card ι), True`, where
-the structure stores only this finite exact presentation data, not vanishing.
-Use `exists_coherent_twist_presentation` repeatedly; define the tower in
-this module. Retain F=closed pushforward O as the geometric specialization.
+For any coherent F on polynomial projective space and any length c,
+construct a finite tower of coherent negative-twist presentations. Output
+its actual kernels, short exact sequences, finite summand indices and degrees.
+
+```
+coherentTwistPresentationTower (F) [F.IsFinitePresentation] (c : ℕ) :
+  TwistPresentationTower R ι F c
+```
+
+Define the tower in this module using inductive constructors for the empty
+tower and a coherent presentation followed by a tower of its kernel.
+Use `exists_coherent_twist_presentation` repeatedly. This construction itself
+is main-only and is implemented after leaf 4. Its application to the actual
+B17 closed pushforward coefficient waits for B17-FINAL; that application
+belongs to leaf 8. The structure stores no vanishing assumption.
 
 ### 8. RelativeSerreLocalizedTower (cap 450; 5,7, B17-FINAL)
 
@@ -215,5 +222,10 @@ Build each main-only module in the foreground, then run exactly
 `lake exe runLinter FLT.Mazur.<Module>` for that module. Add each to FLT.lean
 in sorted order and commit locally after green checks. Check exported
 axioms, source caps and import coverage. Never run the whole-library linter.
-Leaves 1-4 are the ready work for this task. Leaves 5-12 require the actual
+Leaves 1-4 and 7 are the ready work for this task. Leaves 5-6 and 8-12 require the actual
 B17/B18 contracts above; they are not implemented by assuming those results.
+
+Review refinement during execution: leaf 7's finite presentation tower does
+not require B17 merely to construct it. Its geometric specialization does.
+It is therefore included in the main-only work, avoiding an artificial
+upstream dependency. The ready order is 1, 2, 3, 4, 7.
