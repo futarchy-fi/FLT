@@ -620,6 +620,7 @@ public import FLT.GroupScheme.RaynaudModelArithmetic
 public import FLT.GroupScheme.RaynaudNakayamaDescent
 public import FLT.GroupScheme.RaynaudOrderNineExtension
 public import FLT.GroupScheme.RaynaudOrderThreeFiltration
+public import FLT.GroupScheme.RaynaudParameterValuation
 public import FLT.GroupScheme.RaynaudProductExtension
 public import FLT.GroupScheme.RaynaudQuotientFiberFreeness
 public import FLT.GroupScheme.RaynaudQuotientFlatness
