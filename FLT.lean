@@ -1069,6 +1069,7 @@ public import FLT.Mazur.SectionKernelLocal
 public import FLT.Mazur.SectionSumFinite
 public import FLT.Mazur.SegreChartMaps
 public import FLT.Mazur.SegreChartQuotient
+public import FLT.Mazur.SegreClosedImmersion
 public import FLT.Mazur.SegreSchemeMorphism
 public import FLT.Mazur.SmoothCurveDimension
 public import FLT.Mazur.SmoothDimension
