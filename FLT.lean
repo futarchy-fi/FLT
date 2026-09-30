@@ -1032,6 +1032,7 @@ public import FLT.Mazur.ModulePresheafLinearHom
 public import FLT.Mazur.ModulePresheafPullbackSections
 public import FLT.Mazur.ModulePresheafTensorHom
 public import FLT.Mazur.ModulePresheafTensorPullback
+public import FLT.Mazur.ModulePullbackUnitCoherence
 public import FLT.Mazur.ModuleSheafDual
 public import FLT.Mazur.ModuleSheafDualSheaf
 public import FLT.Mazur.ModuleSheafGluing
@@ -1055,6 +1056,7 @@ public import FLT.Mazur.OpenDirectImageCohomology
 public import FLT.Mazur.OpenDirectImageNaturality
 public import FLT.Mazur.OpenDirectImageRestriction
 public import FLT.Mazur.OpenSheafCohomology
+public import FLT.Mazur.OpenSheafCohomologyRestriction
 public import FLT.Mazur.OpenSheafExtensionExact
 public import FLT.Mazur.OpenSheafExtensionStalks
 public import FLT.Mazur.OpenSheafFreeComparison
