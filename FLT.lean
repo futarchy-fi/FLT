@@ -985,6 +985,7 @@ public import FLT.Mazur.CurveFinite
 public import FLT.Mazur.CurveGenus
 public import FLT.Mazur.CurveNode
 public import FLT.Mazur.CuspCollision
+public import FLT.Mazur.CuspOrderNumerator
 public import FLT.Mazur.DRFiberClassification
 public import FLT.Mazur.DirectImageInjectives
 public import FLT.Mazur.DivisorInvertibleSheaf
