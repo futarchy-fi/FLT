@@ -866,6 +866,7 @@ public import FLT.Mazur.AffineCohomologyVanishingRelInjective
 public import FLT.Mazur.AffineCohomologyVanishingSpectrum
 public import FLT.Mazur.AffineCoverCohomology
 public import FLT.Mazur.AffineCoverIntersections
+public import FLT.Mazur.AffineIdealPowerExtension
 public import FLT.Mazur.AffineKernelLocalization
 public import FLT.Mazur.AffineModuleSupport
 public import FLT.Mazur.AffinePullbackIdeal
@@ -929,10 +930,12 @@ public import FLT.Mazur.ClosedSubschemeCohomology
 public import FLT.Mazur.ClosedSubsets
 public import FLT.Mazur.CoherentAffineCoverSections
 public import FLT.Mazur.CoherentClosedPushforward
+public import FLT.Mazur.CoherentClosedReduction
 public import FLT.Mazur.CoherentComparisonLocus
 public import FLT.Mazur.CoherentDevissage
 public import FLT.Mazur.CoherentFreeSheaf
 public import FLT.Mazur.CoherentGenericComparison
+public import FLT.Mazur.CoherentGenericCoordinates
 public import FLT.Mazur.CoherentGenericExtension
 public import FLT.Mazur.CoherentGenericIdealEmbedding
 public import FLT.Mazur.CoherentIdealIntersection
@@ -977,6 +980,7 @@ public import FLT.Mazur.FlasqueDirectImageAcyclic
 public import FLT.Mazur.GenericFibers
 public import FLT.Mazur.GlobalClosedModuleDescent
 public import FLT.Mazur.IdealModuleSheaf
+public import FLT.Mazur.IdealPowerCompatibility
 public import FLT.Mazur.IncreasingCechComplex
 public import FLT.Mazur.InjectiveHorseshoe
 public import FLT.Mazur.IntegralBase
