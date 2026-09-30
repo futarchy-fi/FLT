@@ -1067,6 +1067,7 @@ public import FLT.Mazur.ProjectiveSectionExtension
 public import FLT.Mazur.ProjectiveSectionExtensionCharts
 public import FLT.Mazur.ProjectiveSectionExtensionCoordinates
 public import FLT.Mazur.ProjectiveSpaceCharts
+public import FLT.Mazur.ProjectiveSpaceCoefficientMap
 public import FLT.Mazur.ProjectiveSpaceProper
 public import FLT.Mazur.ProjectiveSpaceReindex
 public import FLT.Mazur.ProjectiveTripleModuleLocalization
