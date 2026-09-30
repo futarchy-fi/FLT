@@ -844,6 +844,7 @@ public import FLT.Mathlib.Topology.Instances.Matrix
 public import FLT.Mathlib.Topology.MetricSpace.ProperSpace.InfinitePlace
 public import FLT.Mathlib.Topology.MetricSpace.Pseudo.Matrix
 public import FLT.Mathlib.Topology.Polish
+public import FLT.Mazur.AbsoluteDirectImageCohomology
 public import FLT.Mazur.AcyclicDirectImageResolution
 public import FLT.Mazur.AffineAnnihilator
 public import FLT.Mazur.AffineClosedModuleDescent
@@ -999,6 +1000,8 @@ public import FLT.Mazur.ModuleCechScalar
 public import FLT.Mazur.ModuleCohomology
 public import FLT.Mazur.ModuleCohomologyExact
 public import FLT.Mazur.ModuleCohomologyRing
+public import FLT.Mazur.ModuleFreeOpen
+public import FLT.Mazur.ModuleInjectiveFlasque
 public import FLT.Mazur.ModuleOpenCohomology
 public import FLT.Mazur.ModuleSheafDual
 public import FLT.Mazur.ModuleSheafDualSheaf
