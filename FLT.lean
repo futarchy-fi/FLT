@@ -980,8 +980,13 @@ public import FLT.Mazur.FiniteCechTermScalars
 public import FLT.Mazur.FlasqueDirectImageAcyclic
 public import FLT.Mazur.GenericFibers
 public import FLT.Mazur.GlobalClosedModuleDescent
+public import FLT.Mazur.GlobalIdealPower
+public import FLT.Mazur.GlobalIdealPowerCompatibility
 public import FLT.Mazur.IdealModuleSheaf
+public import FLT.Mazur.IdealPowerChartDescent
 public import FLT.Mazur.IdealPowerCompatibility
+public import FLT.Mazur.IdealPowerExtensionCharts
+public import FLT.Mazur.IdealPowerExtensionGluing
 public import FLT.Mazur.IncreasingCechComplex
 public import FLT.Mazur.InjectiveHorseshoe
 public import FLT.Mazur.IntegralBase
@@ -1042,6 +1047,8 @@ public import FLT.Mazur.ProjectiveGenerationEventually
 public import FLT.Mazur.ProjectiveLineCharts
 public import FLT.Mazur.ProjectiveLineEndpoints
 public import FLT.Mazur.ProjectiveOverlapModuleLocalization
+public import FLT.Mazur.ProjectiveProductChartCover
+public import FLT.Mazur.ProjectiveProductChartOverlaps
 public import FLT.Mazur.ProjectiveSectionExtension
 public import FLT.Mazur.ProjectiveSectionExtensionCharts
 public import FLT.Mazur.ProjectiveSectionExtensionCoordinates
