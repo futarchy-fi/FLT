@@ -1091,6 +1091,7 @@ public import FLT.Mazur.NestedOpenCohomologyCoherence
 public import FLT.Mazur.NodalGenusOneBaseChange
 public import FLT.Mazur.NodalGeometricFiberGenus
 public import FLT.Mazur.NodeQuotient
+public import FLT.Mazur.OneGonQuotient
 public import FLT.Mazur.OpenDirectImageCohomology
 public import FLT.Mazur.OpenDirectImageNaturality
 public import FLT.Mazur.OpenDirectImageRestriction

@@ -238,3 +238,10 @@ FLT.Mazur.NodeQuotient`, its individual `runLinter`, and collectAxioms passed
 it proves aPresent surjective, its kernel exactly (xy), and the quotient
 algebra equivalence to the actual equalizer, over any commutative ring.
 The one-gon kernel and origin obstructions remain open at this checkpoint.
+
+E3c W8 OneGonQuotient checked 2026-09-30 20:46 UTC: foreground module
+build, individual runLinter and collectAxioms passed (untracked
+GOAL_MAZUR_W8_ONEGON_AXIOMS.txt). It proves bPresent surjective over every
+commutative ring; over every field, including characteristic two, the kernel
+is exactly (v²-uv-u³), with an algebra equivalence to the actual B.
+Both presentation kernels are now proved; the origin obstructions remain open.
