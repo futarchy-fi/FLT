@@ -1036,6 +1036,7 @@ public import FLT.Mazur.ModuleInjectiveFlasque
 public import FLT.Mazur.ModuleLineBundlePullback
 public import FLT.Mazur.ModuleLineBundleTensorPullback
 public import FLT.Mazur.ModuleOpenCohomology
+public import FLT.Mazur.ModuleOpenCohomologyRestriction
 public import FLT.Mazur.ModulePresheafLinearHom
 public import FLT.Mazur.ModulePresheafPullbackSections
 public import FLT.Mazur.ModulePresheafTensorHom
@@ -1063,9 +1064,11 @@ public import FLT.Mazur.ModuleStalkExact
 public import FLT.Mazur.ModuleSubobjectCoverEquality
 public import FLT.Mazur.ModuleUnitCocyclePullback
 public import FLT.Mazur.NeronPolygonPredicate
+public import FLT.Mazur.NestedOpenCohomologyCoherence
 public import FLT.Mazur.OpenDirectImageCohomology
 public import FLT.Mazur.OpenDirectImageNaturality
 public import FLT.Mazur.OpenDirectImageRestriction
+public import FLT.Mazur.OpenModuleDirectImageCohomology
 public import FLT.Mazur.OpenSheafCohomology
 public import FLT.Mazur.OpenSheafCohomologyRestriction
 public import FLT.Mazur.OpenSheafExtensionExact
@@ -1133,6 +1136,7 @@ public import FLT.Mazur.RelativeVeryAmpleLineBundle
 public import FLT.Mazur.RightDerivedDimensionShift
 public import FLT.Mazur.ScalarCohomology
 public import FLT.Mazur.SchemeCohomologyIso
+public import FLT.Mazur.SchemeCohomologyIsoCocycles
 public import FLT.Mazur.SectionCharts
 public import FLT.Mazur.SectionDivisors
 public import FLT.Mazur.SectionKernelLocal
