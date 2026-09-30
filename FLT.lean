@@ -250,6 +250,7 @@ public import FLT.GaloisRepresentation.Attachment
 public import FLT.GaloisRepresentation.Automorphic
 public import FLT.GaloisRepresentation.Cyclotomic
 public import FLT.GaloisRepresentation.HardlyRamified.AbsIrredAdapter
+public import FLT.GaloisRepresentation.HardlyRamified.AbsoluteIrreducibility
 public import FLT.GaloisRepresentation.HardlyRamified.AtTwo
 public import FLT.GaloisRepresentation.HardlyRamified.AugmentedCompletionDifferent
 public import FLT.GaloisRepresentation.HardlyRamified.AugmentedDiscriminantReduction
@@ -845,6 +846,7 @@ public import FLT.Mathlib.Topology.MetricSpace.Pseudo.Matrix
 public import FLT.Mathlib.Topology.Polish
 public import FLT.Mazur.AbsoluteDirectImageCohomology
 public import FLT.Mazur.AcyclicDirectImageResolution
+public import FLT.Mazur.AffineAnnihilator
 public import FLT.Mazur.AffineClosedModuleDescent
 public import FLT.Mazur.AffineCoherent
 public import FLT.Mazur.AffineCoherentSubmoduleExtension
@@ -870,6 +872,7 @@ public import FLT.Mazur.AffinePushforwardCohomology
 public import FLT.Mazur.AffinePushforwardQuasicoherent
 public import FLT.Mazur.AffineStalkExtension
 public import FLT.Mazur.AffineStalkMorphism
+public import FLT.Mazur.AnnihilatorSubsheaf
 public import FLT.Mazur.CartierChartFlat
 public import FLT.Mazur.CartierCharts
 public import FLT.Mazur.CartierTensorRank
@@ -916,10 +919,17 @@ public import FLT.Mazur.CoherentComparisonLocus
 public import FLT.Mazur.CoherentDevissage
 public import FLT.Mazur.CoherentFreeSheaf
 public import FLT.Mazur.CoherentGenericComparison
+public import FLT.Mazur.CoherentGenericExtension
+public import FLT.Mazur.CoherentGenericIdealEmbedding
+public import FLT.Mazur.CoherentIdealIntersection
 public import FLT.Mazur.CoherentOpenDescent
 public import FLT.Mazur.CoherentRestriction
 public import FLT.Mazur.CoherentSubmoduleEnlargement
+public import FLT.Mazur.CoherentSubmoduleExtension
+public import FLT.Mazur.CoherentSubmoduleGluing
+public import FLT.Mazur.CoherentSubmoduleUnion
 public import FLT.Mazur.CoherentSubquotient
+public import FLT.Mazur.CoherentSubsheafACC
 public import FLT.Mazur.CoherentSupport
 public import FLT.Mazur.ConstantDegree
 public import FLT.Mazur.Contracts
