@@ -34,6 +34,7 @@ public import FLT.AbsoluteGaloisGroup.InertiaComparison
 public import FLT.AbsoluteGaloisGroup.LocalCompositum
 public import FLT.AbsoluteGaloisGroup.TameCharacter
 public import FLT.AbsoluteGaloisGroup.Unramified
+public import FLT.Assembly.B4
 public import FLT.Assembly.CharacterConjugation
 public import FLT.Assembly.CharacterGlobalModel
 public import FLT.Assembly.CharacterInputs
