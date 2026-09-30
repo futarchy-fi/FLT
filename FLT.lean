@@ -1046,6 +1046,7 @@ public import FLT.Mazur.NestedOpenCohomologyCoherence
 public import FLT.Mazur.OpenDirectImageCohomology
 public import FLT.Mazur.OpenDirectImageNaturality
 public import FLT.Mazur.OpenDirectImageRestriction
+public import FLT.Mazur.OpenModuleDirectImageCohomology
 public import FLT.Mazur.OpenSheafCohomology
 public import FLT.Mazur.OpenSheafCohomologyRestriction
 public import FLT.Mazur.OpenSheafExtensionExact
