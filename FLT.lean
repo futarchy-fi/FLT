@@ -873,6 +873,8 @@ public import FLT.Mazur.AffinePushforwardCohomology
 public import FLT.Mazur.AffinePushforwardQuasicoherent
 public import FLT.Mazur.AffineStalkExtension
 public import FLT.Mazur.AffineStalkMorphism
+public import FLT.Mazur.AnnihilatorCoherence
+public import FLT.Mazur.AnnihilatorStalk
 public import FLT.Mazur.AnnihilatorSubsheaf
 public import FLT.Mazur.CartierChartFlat
 public import FLT.Mazur.CartierCharts
@@ -902,8 +904,18 @@ public import FLT.Mazur.CechSortingTupleChains
 public import FLT.Mazur.ChowAffineBaseChartImmersion
 public import FLT.Mazur.ChowAffineCover
 public import FLT.Mazur.ChowAffineEmbedding
+public import FLT.Mazur.ChowChartData
+public import FLT.Mazur.ChowChartImageClosure
 public import FLT.Mazur.ChowDenseAffineCover
 public import FLT.Mazur.ChowGenericNeighborhoods
+public import FLT.Mazur.ChowGraphClosure
+public import FLT.Mazur.ChowGraphEmbedding
+public import FLT.Mazur.ChowGraphProductComparison
+public import FLT.Mazur.ChowGraphRestriction
+public import FLT.Mazur.ChowProductImageFactors
+public import FLT.Mazur.ChowProductOpenGluing
+public import FLT.Mazur.ChowProjectiveProduct
+public import FLT.Mazur.ChowSourceClosure
 public import FLT.Mazur.ClosedDescentCharts
 public import FLT.Mazur.ClosedDescentGluingData
 public import FLT.Mazur.ClosedDescentGluingMaps
@@ -1028,6 +1040,7 @@ public import FLT.Mazur.ProjectiveSectionExtension
 public import FLT.Mazur.ProjectiveSectionExtensionCharts
 public import FLT.Mazur.ProjectiveSectionExtensionCoordinates
 public import FLT.Mazur.ProjectiveSpaceCharts
+public import FLT.Mazur.ProjectiveSpaceProper
 public import FLT.Mazur.ProjectiveTripleModuleLocalization
 public import FLT.Mazur.ProjectiveTwistCech
 public import FLT.Mazur.ProjectiveTwistCechCohomologyContraction
@@ -1059,6 +1072,8 @@ public import FLT.Mazur.SectionCharts
 public import FLT.Mazur.SectionDivisors
 public import FLT.Mazur.SectionKernelLocal
 public import FLT.Mazur.SectionSumFinite
+public import FLT.Mazur.SegreChartMaps
+public import FLT.Mazur.SegreChartQuotient
 public import FLT.Mazur.SmoothCurveDimension
 public import FLT.Mazur.SmoothDimension
 public import FLT.Mazur.SmoothDimensionBound
