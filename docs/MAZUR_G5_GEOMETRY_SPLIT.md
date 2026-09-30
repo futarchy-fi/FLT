@@ -231,3 +231,10 @@ FLT.Mazur.PolygonNodePresentation` both passed. The collectAxioms audit
 propext, Classical.choice and Quot.sound occur. Output is untracked
 GOAL_MAZUR_W7_E3A_AXIOMS.txt. `wc -l` reports 275; C-sorted FLT.lean imports
 and `git diff --check` passed. No whole-library build or lint was run.
+
+E3b W8 NodeQuotient checked 2026-09-30 20:41 UTC: `lake build
+FLT.Mazur.NodeQuotient`, its individual `runLinter`, and collectAxioms passed
+(see untracked GOAL_MAZUR_W8_NODE_AXIOMS.txt). The module is 121/200 lines;
+it proves aPresent surjective, its kernel exactly (xy), and the quotient
+algebra equivalence to the actual equalizer, over any commutative ring.
+The one-gon kernel and origin obstructions remain open at this checkpoint.
