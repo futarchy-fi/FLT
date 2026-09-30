@@ -32,6 +32,10 @@ public import FLT.AINTLIB.DedekindResidue.Lemma2
 public import FLT.AbsoluteGaloisGroup.CompletionComparison
 public import FLT.AbsoluteGaloisGroup.InertiaComparison
 public import FLT.AbsoluteGaloisGroup.LocalCompositum
+public import FLT.AbsoluteGaloisGroup.RootCharacter
+public import FLT.AbsoluteGaloisGroup.RootCharacterIndependence
+public import FLT.AbsoluteGaloisGroup.RootCharacterTopology
+public import FLT.AbsoluteGaloisGroup.RootCharacterUniformizer
 public import FLT.AbsoluteGaloisGroup.TameCharacter
 public import FLT.AbsoluteGaloisGroup.Unramified
 public import FLT.Assembly.B4
@@ -115,11 +119,17 @@ public import FLT.Deformations.RepresentationTheory.Burnside
 public import FLT.Deformations.RepresentationTheory.Etale
 public import FLT.Deformations.RepresentationTheory.FamilyTracePair
 public import FLT.Deformations.RepresentationTheory.Flat
+public import FLT.Deformations.RepresentationTheory.FlatCofinal
+public import FLT.Deformations.RepresentationTheory.FlatDiscrete
+public import FLT.Deformations.RepresentationTheory.FlatReduction
 public import FLT.Deformations.RepresentationTheory.Frobenius
 public import FLT.Deformations.RepresentationTheory.GaloisRep
 public import FLT.Deformations.RepresentationTheory.GaloisRepFamily
 public import FLT.Deformations.RepresentationTheory.IntegralClosure
 public import FLT.Deformations.RepresentationTheory.Irreducible
+public import FLT.Deformations.RepresentationTheory.PrimePowerExact
+public import FLT.Deformations.RepresentationTheory.SelfTwistTrace
+public import FLT.Deformations.RepresentationTheory.TameTraceObstruction
 public import FLT.Deformations.RepresentationTheory.TraceCompatiblePair
 public import FLT.Deformations.Subfunctor
 public import FLT.DivisionAlgebra.Finiteness
@@ -510,6 +520,7 @@ public import FLT.GroupScheme.IntegralSimpleSubobject
 public import FLT.GroupScheme.IntegralSubquotientExtension
 public import FLT.GroupScheme.InvariantDerivation
 public import FLT.GroupScheme.KummerAlgebra
+public import FLT.GroupScheme.KummerCocycle
 public import FLT.GroupScheme.KummerComultiplication
 public import FLT.GroupScheme.KummerHopf
 public import FLT.GroupScheme.KummerParameter
