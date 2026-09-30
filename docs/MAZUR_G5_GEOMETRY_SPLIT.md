@@ -74,7 +74,7 @@ claiming that the omitted closed subscheme is the entire nonsmooth locus.
 Source: same branch calculation for DR II.1.1. Dependencies: E1 and G2.
 Implemented after E1. No polygon existence or singularity assumption.
 
-## E3a — chart algebra and singularity bridge, cap 300, in progress
+## E3a — chart algebra and singularity bridge, cap 300, partially implemented
 
 New `FLT/Mazur/PolygonNodePresentation.lean`, namespace
 `FLT.Mazur.PolygonNodePresentation`. Use the actual equalizer A, not an
@@ -107,10 +107,10 @@ statement to schemes using `formallySmooth_stalkMap_iff`.
 
 ## E3 — singularity and finite presentation of the actual charts, cap 400, blocked
 
-New `FLT/Mazur/PolygonNodeSmooth.lean`. Define `B : Subalgebra K K[X]`
-as `AlgHom.equalizer (Polynomial.aeval 0) (Polynomial.aeval 1)`.
-Write `aToBase`, `bToBase` for the induced Spec maps; define
-`aOrigin : Spec K ⟶ Spec N`, `bOrigin : Spec K ⟶ Spec B` by evaluation.
+New `FLT/Mazur/PolygonNodeSmooth.lean`. Reuse `B`, `aToBase`, `bToBase`,
+`aOrigin` and `bOrigin` from PolygonNodePresentation. The two locally finite
+presentation instances below are already implemented there; the smooth-locus
+equalities remain open.
 
 ```lean
 instance : LocallyOfFinitePresentation (aToBase K)
@@ -124,10 +124,13 @@ theorem b_smooth_complement :
 Source: the ordinary double points of the standard polygon, DR II.1.1.
 Dependencies: E2, explicit presentations of N and B, and a proved local
 nonsmoothness criterion (e.g. cotangent dimension). None is an input field.
-Blocker: no checked presentation/singularity API bridge in this checkout;
-CurveNode defines a completed-ring predicate but explicitly does not prove
-smooth/node disjointness. The B localization and presentation must be proved
-before this is ready; if the cap fails, split those algebra lemmas first.
+Blocker: the origin localizations have not been proved non-formally-smooth.
+E3a proves finite presentation and B localization, but not full presentation
+kernel equalities or the origin obstruction. CurveNode's completed-ring
+predicate still supplies no smooth/node disjointness theorem. Proposed next
+leaves: NodeQuotient (200), OneGonQuotient (260), NodeInfinitesimalObstruction
+(250), NodeSmoothLocus (220); exact contracts are in untracked BLOCKED.md.
+Those caps are proposals, not evidence that the missing proofs fit.
 
 ## E4 — construct the polygon and prove the cocone, cap 400, blocked
 
@@ -153,7 +156,7 @@ surjectivity. Prove the pushout for arbitrary target schemes by local descent;
 Spec of the ring pullback only proves the affine-target case and is insufficient.
 Source: cyclic pinching in DR II.1.1. Dependencies: E1–E3, B's puncture
 localization, explicit two-component overlaps when n=2. Not ready: overlap
-cocycles, B's missing algebra, and arbitrary-target pinching descent remain.
+cocycles, origin nonsmoothness, and arbitrary-target pinching descent remain.
 400 is a hard stop, not a claim that these missing foundations fit that cap.
 
 ## E5 — specified cocone comparison and G5, cap 400, blocked
@@ -211,3 +214,20 @@ E2 checked 2026-09-30 20:16 UTC: 123/260 lines; foreground module build,
 individual runLinter, and collectAxioms on all 24 module declarations passed.
 Audit output: untracked GOAL_MAZUR_W6_E2_AXIOMS.txt; only the three allowed axioms.
 Both imports are C-sorted in FLT.lean; git diff --check passed. G5 remains open.
+
+E3a W7 partial result: PolygonNodePresentation proves the two finite-generation
+calculations, B's relation and conductor divisibility, both finite-presentation
+instances and their scheme analogues, B's puncture localization/open immersion,
+smoothness of both A branches and B's puncture, and both origin-image formulas.
+It does not prove that the displayed equations generate the presentation
+kernels, nor nonsmoothness at the origins, nor either exact smooth-locus equality.
+The proof inventory occupies 275/300 lines; the remaining local singularity
+calculation is split in BLOCKED.md. E3 and conditional E4 remain blocked.
+
+E3a checked 2026-09-30 20:31 UTC: `LEAN_NUM_THREADS=2 lake build
+FLT.Mazur.PolygonNodePresentation` and the individual `lake exe runLinter
+FLT.Mazur.PolygonNodePresentation` both passed. The collectAxioms audit
+(`/tmp/mazur-w7-e3a-axioms.lean`) checked all 39 module declarations; only
+propext, Classical.choice and Quot.sound occur. Output is untracked
+GOAL_MAZUR_W7_E3A_AXIOMS.txt. `wc -l` reports 275; C-sorted FLT.lean imports
+and `git diff --check` passed. No whole-library build or lint was run.
