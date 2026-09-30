@@ -1010,6 +1010,7 @@ public import FLT.Mazur.ModuleFreeOpen
 public import FLT.Mazur.ModuleInjectiveFlasque
 public import FLT.Mazur.ModuleLineBundlePullback
 public import FLT.Mazur.ModuleOpenCohomology
+public import FLT.Mazur.ModulePresheafLinearHom
 public import FLT.Mazur.ModulePresheafPullbackSections
 public import FLT.Mazur.ModulePresheafTensorPullback
 public import FLT.Mazur.ModuleSheafDual
