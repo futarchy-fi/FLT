@@ -9,8 +9,10 @@ and absolute irreducibility; do not prove those again.
 
 The source is Khare–Wintenberger, *Serre's modularity conjecture II*,
 Corollary 4.7 and §10.3.1 (the characteristic-zero quotient of the deformation
-ring), together with §3's fixed-residue deformation setup; manuscript:
+ring), together with §2.1's fixed-residue deformation setup; manuscript:
 https://www.math.ucla.edu/~shekhar/papers/proofs.pdf.
+Checked directly in `Scratch/kw-proofs.txt`: §2.1 at lines 215–223 fixes
+the residue field; Corollary 4.7 at 2584–2598 passes through R/I.
 These are algebraic sublemmas of the coefficient/residual-identification row
 of the source ledger, not new arithmetic existence results. In particular,
 passing to a finite extension's integer ring may enlarge its residue field.
@@ -80,7 +82,8 @@ this proves compatibility rather than assuming a second residual model.
 
 Specialize D to `Type`, add `[Module.Finite ℤ_[p] D]`, take `(P : Ideal D)`
 with `[P.IsPrime]` and `(hp : (p : D) ∉ P)`.
-Exact sketches (the quotient instances come from `IsResidueAlgebra`):
+Use the quotient instances from `IsResidueAlgebra`; explicitly compose the
+local maps D → D/P and ℤ_[p] → D to supply coefficient locality. Exact sketches:
 
 ```lean
  theorem primeReduction_quotient_comp :
@@ -112,7 +115,7 @@ rg -n 'ringHom_surjective' "$M/Data/ZMod/Basic.lean"
 rg -n 'of_algebraMap_eq' "$M/Algebra/Algebra/Tower.lean"
 ```
 
-Anchors checked: `IsResidueAlgebra.lean:51,60,89`,
+Anchors checked: `IsResidueAlgebra.lean:53,60,86`,
 `PrimeResidueMap.lean:18`, `LiftDomainFree.lean:18`,
 Mathlib `Padics/RingHoms.lean:349,442`,
 `LocalRing/MaximalIdeal/Basic.lean:116`, `ZMod/Basic.lean:1135`.
