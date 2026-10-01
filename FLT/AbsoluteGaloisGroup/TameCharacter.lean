@@ -879,3 +879,18 @@ theorem localTameAbelianInertiaGroup_subgroupOf_eq_tameCharacter_ker :
       _ = σ.1 gamma * (σ.1 beta * σ.1 (alpha ^ z)) := by rw [map_mul, map_mul]
       _ = gamma * (beta * alpha ^ z) := by rw [hgammaFixed, hbetaFixed, map_zpow₀, hσα]
       _ = x := hxsplit.symm
+
+/-- The finite inertia fixed field is unramified over the completed base field. -/
+theorem finiteInertiaField_ramificationIndex_one
+    (L : IntermediateField Kᵥ (Kᵥᵃˡᵍ))
+    [FiniteDimensional Kᵥ L] [IsGalois Kᵥ L]
+    (E : IntermediateField Kᵥ L)
+    (hE : E = IntermediateField.fixedField
+      ((IsLocalRing.maximalIdeal (IntegralClosure 𝒪ᵥ L)).inertia Gal(L/Kᵥ))) :
+    (IsLocalRing.maximalIdeal (IntegralClosure 𝒪ᵥ E)).ramificationIdx 𝒪ᵥ = 1 := by
+  subst E
+  let : IsInertiaField Kᵥ L (IsLocalRing.maximalIdeal (IntegralClosure 𝒪ᵥ L))
+      (IntermediateField.fixedField
+        ((IsLocalRing.maximalIdeal (IntegralClosure 𝒪ᵥ L)).inertia Gal(L/Kᵥ))) :=
+    { toIsGaloisGroup := IsGaloisGroup.subgroup Gal(L/Kᵥ) Kᵥ L _ }
+  exact finiteInertiaField_ramificationIdx_eq_one v L _
