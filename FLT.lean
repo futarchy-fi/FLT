@@ -122,6 +122,9 @@ public import FLT.Deformations.Representable
 public import FLT.Deformations.RepresentationTheory.AbsoluteGaloisGroup
 public import FLT.Deformations.RepresentationTheory.BrauerEffectivityCoefficients
 public import FLT.Deformations.RepresentationTheory.Burnside
+public import FLT.Deformations.RepresentationTheory.CyclicRestrictionTwist
+public import FLT.Deformations.RepresentationTheory.CyclicScalarRestriction
+public import FLT.Deformations.RepresentationTheory.CyclicStableLinePair
 public import FLT.Deformations.RepresentationTheory.Etale
 public import FLT.Deformations.RepresentationTheory.FamilyTracePair
 public import FLT.Deformations.RepresentationTheory.Flat
@@ -138,6 +141,7 @@ public import FLT.Deformations.RepresentationTheory.PrimePowerExact
 public import FLT.Deformations.RepresentationTheory.SelfTwistTrace
 public import FLT.Deformations.RepresentationTheory.StableLinePair
 public import FLT.Deformations.RepresentationTheory.TameTraceObstruction
+public import FLT.Deformations.RepresentationTheory.ThreeStableLines
 public import FLT.Deformations.RepresentationTheory.TraceCompatiblePair
 public import FLT.Deformations.Subfunctor
 public import FLT.DivisionAlgebra.Finiteness
