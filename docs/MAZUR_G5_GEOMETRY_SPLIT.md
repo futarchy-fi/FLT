@@ -313,3 +313,11 @@ proof gives explicit generators 1 and t over B, using subtraction of the
 difference of endpoint values times t. These results work over every
 commutative coefficient ring. They do not yet construct descent of scheme
 morphisms to arbitrary targets or identify the global P¹ pinching.
+
+`OneGonAffineDescent` proves existence and uniqueness of descent for maps
+from the affine normalization and pinched point to any affine scheme,
+provided their restrictions to the two endpoints agree. The proof uses
+the ring pullback and the full faithfulness of Spec, then transports
+along the affine target's canonical isomorphism with its spectrum.
+Descent to nonaffine targets still requires localization and gluing;
+this result is not the global P¹ pinching or a rational torsion exclusion.

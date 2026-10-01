@@ -1135,6 +1135,7 @@ public import FLT.Mazur.NodalGeometricFiberGenus
 public import FLT.Mazur.NodeInfinitesimalObstruction
 public import FLT.Mazur.NodeQuotient
 public import FLT.Mazur.NodeSmoothLocus
+public import FLT.Mazur.OneGonAffineDescent
 public import FLT.Mazur.OneGonGluing
 public import FLT.Mazur.OneGonOverlap
 public import FLT.Mazur.OneGonPinchingAlgebra

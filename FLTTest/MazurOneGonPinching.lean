@@ -5,7 +5,7 @@ Authors: krandder
 -/
 module
 
-import FLT.Mazur.OneGonPinchingAlgebra
+import FLT.Mazur.OneGonAffineDescent
 import Mathlib.Data.ZMod.Basic
 import Lean
 
@@ -20,7 +20,8 @@ run_elab do
   let env ← getEnv
   let mut count := 0
   for (n, _) in env.constants.toList do
-    if (`FLT.Mazur.OneGonPinchingAlgebra).isPrefixOf n then
+    if (`FLT.Mazur.OneGonPinchingAlgebra).isPrefixOf n ||
+        (`FLT.Mazur.OneGonAffineDescent).isPrefixOf n then
       let axioms ← Lean.collectAxioms n
       for a in axioms do
         unless #[``propext, ``Classical.choice, ``Quot.sound].contains a do
