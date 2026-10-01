@@ -9,7 +9,7 @@ W7 F5a checked 20:17 UTC: build, module lint, ten axiom audits passed;
 logs `Scratch/LiftsW7/F5a-{build,lint,axioms}.log`; 92/250 lines.
 Source-lemma leaves, each at most 400 lines including headers. F1–F3
 are DONE (W6); F4a is DONE (W7, RootInertiaTransitivity, cap 300).
-F4–F6 still require the constructions below; no missing conclusion is assumed.
+F4 endpoints are DONE (W8); F5–F6 and finite-tower surjectivity remain.
 Caps are hard stop limits, not claims that unimplemented proofs fit.
 This document is capped at 200 lines. No weight definition or classification
 is supplied by this split.
@@ -104,7 +104,7 @@ Anchors: `ContinuousSMulDiscrete.isOpen_smul_eq`,
 `IsLocallyConstant.iff_exists_open`, `.continuous`, `.isOpen_fiber`,
 the `Finite (rootsOfUnity n k)` instance. Dependencies: W5.1 (F2 fixes canonical choices).
 
-## F4 — tame quotient and surjectivity, PARTIAL (W7), cap 400
+## F4 — tame quotient endpoints DONE (W7–W8), cap 400
 
 New `FLT/AbsoluteGaloisGroup/FundamentalTame.lean`.
 Sources L IV §2, S §2. Define `rootCharacterToRoots` by codRestrict using
@@ -124,8 +124,11 @@ W7 F4a: `LocalRoot.inertia_transitive` proves transitivity in every positive
 degree via Eisenstein over finite inertia fixed fields and restriction
 surjectivity. W7 `FundamentalTame` proves both displayed endpoints (in all
 positive degrees), plus `LocalRamification.tameRootCharacter_surjective`.
-BLOCKED: finite first groups are p-groups and their explicit inverse-limit
-comparison. Exact remaining statements and capped follow-up: `BLOCKED.md`.
+W8 filtration DONE (274/300); finite p-groups and tower stability DONE (228/250).
+W8 pro-p endpoint and explicit compatible-family homeomorphism DONE (235/250).
+BLOCKED: first-group tower surjectivity; exact target and capped split in `BLOCKED.md`.
+Checked 20:59 UTC: all three builds, individual lint and 49 axiom audits passed.
+Evidence: `Scratch/LiftsW8/{Filtration,PGroup,Wild}-{build,lint,axioms}.log`.
 Anchors: HilbertTheory `IsInertiaField`, `InertiaComparison` restriction
 surjectivity, QuotientGroup `lift`, `quotientKerEquivRange`. Dependencies:
 F1–F3; the existing level-one tame kernel is not enough.
