@@ -130,8 +130,10 @@ public import FLT.Deformations.RepresentationTheory.GaloisRep
 public import FLT.Deformations.RepresentationTheory.GaloisRepFamily
 public import FLT.Deformations.RepresentationTheory.IntegralClosure
 public import FLT.Deformations.RepresentationTheory.Irreducible
+public import FLT.Deformations.RepresentationTheory.PermutedSummandsTwist
 public import FLT.Deformations.RepresentationTheory.PrimePowerExact
 public import FLT.Deformations.RepresentationTheory.SelfTwistTrace
+public import FLT.Deformations.RepresentationTheory.StableLinePair
 public import FLT.Deformations.RepresentationTheory.TameTraceObstruction
 public import FLT.Deformations.RepresentationTheory.TraceCompatiblePair
 public import FLT.Deformations.Subfunctor
@@ -479,6 +481,7 @@ public import FLT.GroupScheme.FrobeniusKernelStructure
 public import FLT.GroupScheme.FrobeniusPresentationDescent
 public import FLT.GroupScheme.FrobeniusRelativePresentation
 public import FLT.GroupScheme.FrobeniusSubalgebra
+public import FLT.GroupScheme.GenericFiberMapUnique
 public import FLT.GroupScheme.GenericFieldChange
 public import FLT.GroupScheme.GenericMorphismScalarExtension
 public import FLT.GroupScheme.GlobalModel
