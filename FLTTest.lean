@@ -18,6 +18,7 @@ import FLTTest.MazurGenericFibers
 import FLTTest.MazurModuleCohomology
 import FLTTest.MazurMultiplicativeModel
 import FLTTest.MazurOneGon
+import FLTTest.MazurOneGonPinching
 import FLTTest.MazurProjectiveCohomology
 import FLTTest.MazurProjectiveGeneration
 import FLTTest.MazurProjectivePresentation

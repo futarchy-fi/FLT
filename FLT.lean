@@ -1137,6 +1137,7 @@ public import FLT.Mazur.NodeQuotient
 public import FLT.Mazur.NodeSmoothLocus
 public import FLT.Mazur.OneGonGluing
 public import FLT.Mazur.OneGonOverlap
+public import FLT.Mazur.OneGonPinchingAlgebra
 public import FLT.Mazur.OneGonQuotient
 public import FLT.Mazur.OneGonTransition
 public import FLT.Mazur.OpenDirectImageCohomology

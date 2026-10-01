@@ -291,3 +291,18 @@ The chart pushout is constructed; identification with the cyclic pinching
 of P¹ and its specified normalization/node cocone is still missing.
 This does not close E4 for arbitrary n, E5, the genus calculation, the
 relative group action, or Mazur_statement.
+
+## E4 affine pinching algebra
+
+`OneGonPinchingAlgebra` proves that B is the categorical pullback of
+R[t] → R × R (evaluation at 0 and 1) and R → R × R (the diagonal),
+for every commutative ring R. Its lift accepts arbitrary commutative
+source rings. Evaluation is surjective by linear interpolation and its
+kernel is exactly (t(t-1)). `FLTTest/MazurOneGonPinching` audits all new
+declarations and checks instantiation over Z and ZMod 2.
+
+This does not assert a pushout in Scheme: Spec turns this into a pushout
+among affine schemes, but arbitrary-target descent remains to be proved.
+The specified normalization from P¹ and the global pinching universal
+property are still missing. No rational torsion exclusion is proved here;
+NoLargePrimeTorsion remains the arithmetic target.
