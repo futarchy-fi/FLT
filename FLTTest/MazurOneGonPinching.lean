@@ -34,3 +34,10 @@ example : Function.Surjective (FLT.Mazur.OneGonPinchingAlgebra.endpoints (R := Z
 
 example : Function.Surjective (FLT.Mazur.OneGonPinchingAlgebra.endpoints (R := ℤ)) :=
   FLT.Mazur.OneGonPinchingAlgebra.endpoints_surjective
+
+example : Module.Finite (FLT.Mazur.PolygonNodePresentation.B (R := ℤ)) (Polynomial ℤ) :=
+  inferInstance
+
+example : AlgebraicGeometry.IsFinite
+    (FLT.Mazur.OneGonPinchingAlgebra.toPinching (R := ZMod 2)) :=
+  inferInstance

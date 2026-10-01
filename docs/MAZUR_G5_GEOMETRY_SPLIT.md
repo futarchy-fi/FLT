@@ -306,3 +306,10 @@ among affine schemes, but arbitrary-target descent remains to be proved.
 The specified normalization from P¹ and the global pinching universal
 property are still missing. No rational torsion exclusion is proved here;
 NoLargePrimeTorsion remains the arithmetic target.
+
+The affine-line map to the pinched chart is now proved finite and
+surjective, hence closed and a topological quotient map. The finite-module
+proof gives explicit generators 1 and t over B, using subtraction of the
+difference of endpoint values times t. These results work over every
+commutative coefficient ring. They do not yet construct descent of scheme
+morphisms to arbitrary targets or identify the global P¹ pinching.

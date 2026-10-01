@@ -6,6 +6,7 @@ Authors: krandder
 module
 
 public import FLT.Mazur.PolygonNodePresentation
+public import Mathlib.AlgebraicGeometry.Morphisms.Finite
 public import Mathlib.CategoryTheory.Limits.Shapes.Pullback.IsPullback.Defs
 
 /-!
@@ -127,5 +128,57 @@ theorem isPullback :
     exact lift_unique s.fst.hom s.snd.hom
       (congrArg CommRingCat.Hom.hom s.condition) m.hom
       (congrArg CommRingCat.Hom.hom hm)
+
+/-- Two coefficients suffice for every function on the unpinched affine line. -/
+def normalizationGenerators :
+    (B (R := R) × B (R := R)) →ₗ[B (R := R)] R[X] :=
+  (Algebra.linearMap (B (R := R)) R[X]).coprod
+    (LinearMap.toSpanSingleton (B (R := R)) R[X] X)
+
+/-- Subtracting the difference of endpoint values times t gives a pinched function. -/
+theorem normalizationGenerators_surjective :
+    Function.Surjective (normalizationGenerators (R := R)) := by
+  intro p
+  let d := p.eval 1 - p.eval 0
+  have hb : p - C d * X ∈ B (R := R) := by
+    rw [mem_B]
+    simp [d]
+  refine ⟨(⟨p - C d * X, hb⟩, algebraMap R (B (R := R)) d), ?_⟩
+  change p - C d * X + C d * X = p
+  exact sub_add_cancel _ _
+
+/-- The unpinched affine-line algebra is finite over the pinching algebra. -/
+instance normalization_finite : Module.Finite (B (R := R)) R[X] :=
+  Module.Finite.of_surjective normalizationGenerators normalizationGenerators_surjective
+
+open AlgebraicGeometry
+
+/-- The morphism from the unpinched affine line to the one-gon chart. -/
+def toPinching : Spec (.of R[X]) ⟶ Spec (.of (B (R := R))) :=
+  Spec.map (CommRingCat.ofHom (B (R := R)).val.toRingHom)
+
+/-- The map to the pinched chart is finite over every coefficient ring. -/
+instance toPinching_isFinite : IsFinite (toPinching (R := R)) := by
+  apply (IsFinite.SpecMap_iff _).mpr
+  change (algebraMap (B (R := R)) R[X]).Finite
+  rw [RingHom.finite_algebraMap]
+  infer_instance
+
+/-- Every point of the pinched chart lifts to the unpinched affine line. -/
+theorem toPinching_surjective : Function.Surjective (toPinching (R := R)) := by
+  have hf : (B (R := R)).val.toRingHom.Finite := by
+    change (algebraMap (B (R := R)) R[X]).Finite
+    rw [RingHom.finite_algebraMap]
+    infer_instance
+  exact hf.to_isIntegral.comap_surjective Subtype.val_injective
+
+/-- Images of closed subsets remain closed under the finite pinching map. -/
+theorem toPinching_isClosedMap : IsClosedMap (toPinching (R := R)) :=
+  (toPinching (R := R)).isClosedMap
+
+/-- The topology on the pinched chart is the quotient topology. -/
+theorem toPinching_isQuotientMap : Topology.IsQuotientMap (toPinching (R := R)) :=
+  toPinching_isClosedMap.isQuotientMap (toPinching (R := R)).continuous
+    toPinching_surjective
 
 end FLT.Mazur.OneGonPinchingAlgebra
