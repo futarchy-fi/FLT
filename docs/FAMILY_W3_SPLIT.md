@@ -144,23 +144,55 @@ Proposed leaves, in order; caps count whole new modules. D2–D3 require local
 ramification proofs and remain source/API obligations. Split again if their
 proofs exceed the caps; do not assume their conclusions in an input record.
 
-1. D1 (cap 180): factor a character trivial on `ker ε` through `range ε`.
+1. D1 — DONE (cap 180): factor a character trivial on `ker ε` through `range ε`.
    For cyclic `range ε`, prove every generator detects a nontrivial factor;
    if its square is one and the coefficient characteristic is not two, its
    value on that generator is `-1`. This is a general group lemma.
-2. D2 (cap 350): for an odd prime p, prove that the local extension
+   Implemented in `CharacterRange.lean` (92 lines): factorization, generator
+   detection, and quadratic value `-1` (even without excluding characteristic
+   two). Checked 2026-09-30: foreground build, module lint and all seven
+   declarations’ axiom checks pass; standard axioms only.
+2. D2 — DONE (cap 350): for an odd prime p, prove that the local extension
    `ℚ_p(μ_p)/ℚ_p` is totally ramified of degree p−1. Start from
    `cyclotomic_comp_X_add_one_isEisensteinAt` and the minimal polynomial of
    ζ_p−1; prove the ramification and residue-degree statements explicitly.
-3. D3 (cap 350): use D2 to prove surjectivity of the mod-p cyclotomic
+   Implemented in `LocalCyclotomicRamification.lean` (187 lines). Constructs
+   an `IsCyclotomicExtension {p} ℚ_[p] E` with integral closure S, degree
+   and ramification index p−1, and inertia degree 1; also proves irreducibility,
+   degree and the shifted minimal polynomial in arbitrary field presentations.
+   The result includes p=2. Checked 2026-09-30: foreground build, module lint,
+   and all eleven theorem axiom checks pass (standard axioms only).
+3. D3 — PARTIAL; local inertia/tame bridge remains (cap 350): use D2 to prove surjectivity of the mod-p cyclotomic
    character on local inertia at p. Identify this restriction with the
    level-one `tameCharacter` after identifying the residue field with `ZMod p`.
    Construct an inertia element whose tame value generates `(ZMod p)ˣ`.
    Reuse `FLT/AbsoluteGaloisGroup/TameCharacter.lean` and `InertiaComparison`.
-4. D4 (cap 220): with ε the global mod-p cyclotomic character and H its
+   `LocalCyclotomicCharacter.lean` (124 lines) proves finite cyclotomic
+   character surjectivity and constructs a finite Galois generator. It also
+   constructs the local residue-field equivalence, proves its cardinality,
+   cyclotomic naturality and the reduced geometric-sum ratio formula.
+   Checked 2026-09-30: build, module lint and all ten declarations' axiom
+   checks pass (standard axioms only). Absolute-inertia surjectivity and
+   tame comparison are not proved. Remaining split: D3a presentation/action
+   transport (220), D3b inertia lifting (200), D3c tame comparison (300),
+   D3d generator transport (80). Exact targets are in the untracked handoff.
+4. D4 — PARTIAL; inertia detector depends on D3b (cap 220): with ε the
+   global mod-p cyclotomic character and H its
    kernel, use D1–D3 to produce an inertia element t with `χ t = -1` for
    every nontrivial quadratic χ trivial on H. Apply this to the χ constructed
    by W4. Prove the finite/cyclic quotient instances from `range ε`.
+
+   `CyclotomicQuadraticDetection.lean` (101 lines) proves the actual global
+   cyclotomic kernel quotient is finite and cyclic, constructs a simultaneous
+   global detector, applies it to W4's self-twist, and proves compatibility
+   of the global and local cyclotomic characters at the chosen local embedding.
+   The detector is not yet proved to come from inertia. Remaining D4b (180)
+   uses D3b and the proved `character_map_local` to choose it in inertia.
+   Checked 2026-09-30: foreground build, module lint and all seven declarations’
+   axiom checks pass (standard axioms only). The sibling GOAL-LIFTS-W7 lane in
+   `wt-r1d` owns
+   uniformizer-root inertia transitivity and tame surjectivity; reuse F4
+   once validated, via D3c, as an alternative to D3a/D3b's direct route.
 
 D4 supplies detection only. To contradict W3 at that same t, the finite-flat
 inertia classification must still construct eigenvalues, their exact ratio

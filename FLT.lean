@@ -35,6 +35,8 @@ public import FLT.AbsoluteGaloisGroup.FirstRamificationPGroup
 public import FLT.AbsoluteGaloisGroup.FundamentalTame
 public import FLT.AbsoluteGaloisGroup.InertiaComparison
 public import FLT.AbsoluteGaloisGroup.LocalCompositum
+public import FLT.AbsoluteGaloisGroup.LocalCyclotomicCharacter
+public import FLT.AbsoluteGaloisGroup.LocalCyclotomicRamification
 public import FLT.AbsoluteGaloisGroup.RootCharacter
 public import FLT.AbsoluteGaloisGroup.RootCharacterIndependence
 public import FLT.AbsoluteGaloisGroup.RootCharacterResidue
@@ -122,9 +124,11 @@ public import FLT.Deformations.Representable
 public import FLT.Deformations.RepresentationTheory.AbsoluteGaloisGroup
 public import FLT.Deformations.RepresentationTheory.BrauerEffectivityCoefficients
 public import FLT.Deformations.RepresentationTheory.Burnside
+public import FLT.Deformations.RepresentationTheory.CharacterRange
 public import FLT.Deformations.RepresentationTheory.CyclicRestrictionTwist
 public import FLT.Deformations.RepresentationTheory.CyclicScalarRestriction
 public import FLT.Deformations.RepresentationTheory.CyclicStableLinePair
+public import FLT.Deformations.RepresentationTheory.CyclotomicQuadraticDetection
 public import FLT.Deformations.RepresentationTheory.Etale
 public import FLT.Deformations.RepresentationTheory.FamilyTracePair
 public import FLT.Deformations.RepresentationTheory.Flat
