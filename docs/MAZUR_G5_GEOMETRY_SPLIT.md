@@ -351,10 +351,26 @@ from compatibility on the normalization. Both chart equations, recovery
 of the original normalization map, and uniqueness of the global map are
 proved. The target scheme can be nonaffine.
 
-Scope: the normalization-chart map is supplied with an explicit affine
-factorization Spec(K[t]) → Spec(A) → X and equal endpoint evaluations in
-Spec(A). This construction does not establish such a factorization for
-every normalization map. Covering a general map by local affine
-factorizations, proving their descent and gluing across that refined cover,
-and identifying the marked P¹ normalization remain open. Neither the full
-pinching universal property nor rational torsion exclusion is closed.
+Scope of this gluing theorem: the normalization-chart map is supplied
+with an explicit affine factorization Spec(K[t]) → Spec(A) → X and equal
+endpoint evaluations in Spec(A). The theorem still uses that hypothesis.
+
+## Constructed affine factorizations for arbitrary targets
+
+`OneGonNodeFiber` proves that the fiber of the node is exactly the two
+endpoints. It also proves that any principal neighborhood D(s) containing
+the node, together with the conductor puncture D(u), covers Spec(B).
+
+`OneGonLocalFactorization.exists_compatible_node_factorization` constructs
+a principal neighborhood and an affine target open for any morphism
+Spec(K[t]) → X whose endpoint morphisms agree. Closedness of the finite
+normalization removes the image of the complement of the target open;
+the principal-open basis then supplies s with nonzero node value.
+The resulting map Spec(K[t,1/s]) → U has the required composite with U → X.
+Equality of the two localized endpoint morphisms is preserved by
+cancellation of the open immersion. No affine factorization is assumed.
+
+The remaining geometric work is to descend this constructed factorization
+and glue across the refined cover D(s), D(u), then identify the marked
+P¹ normalization. The full pinching universal property and the arithmetic
+rational torsion exclusion remain open.
