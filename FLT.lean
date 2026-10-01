@@ -1143,6 +1143,7 @@ public import FLT.Mazur.OneGonLocalMaps
 public import FLT.Mazur.OneGonLocalizedPinching
 public import FLT.Mazur.OneGonMapGluing
 public import FLT.Mazur.OneGonNodeFiber
+public import FLT.Mazur.OneGonNormalization
 public import FLT.Mazur.OneGonOverlap
 public import FLT.Mazur.OneGonPinchingAlgebra
 public import FLT.Mazur.OneGonQuotient

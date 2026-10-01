@@ -301,18 +301,19 @@ source rings. Evaluation is surjective by linear interpolation and its
 kernel is exactly (t(t-1)). `FLTTest/MazurOneGonPinching` audits all new
 declarations and checks instantiation over Z and ZMod 2.
 
-This does not assert a pushout in Scheme: Spec turns this into a pushout
-among affine schemes, but arbitrary-target descent remains to be proved.
-The specified normalization from P¹ and the global pinching universal
-property are still missing. No rational torsion exclusion is proved here;
-NoLargePrimeTorsion remains the arithmetic target.
+This ring result alone only supplies affine-target descent. Over fields,
+OneGonRefinedDescent now proves arbitrary-target descent, and
+OneGonNormalization identifies the glued normalization with P¹ in the
+t-coordinate and proves its pinching universal property for t=0 and t=1.
+No rational torsion exclusion is proved here; NoLargePrimeTorsion remains
+the arithmetic target.
 
 The affine-line map to the pinched chart is now proved finite and
 surjective, hence closed and a topological quotient map. The finite-module
 proof gives explicit generators 1 and t over B, using subtraction of the
 difference of endpoint values times t. These results work over every
 commutative coefficient ring. Over fields, arbitrary-target descent is now
-supplied by OneGonRefinedDescent below. The global P¹ identification is separate.
+supplied by OneGonRefinedDescent below. The P¹ identification in the t-coordinate is supplied below.
 
 `OneGonAffineDescent` proves existence and uniqueness of descent for maps
 from the affine normalization and pinched point to any affine scheme,
@@ -327,15 +328,15 @@ map is an epimorphism in Scheme, using injective maps on global functions
 and stalks and the already proved surjectivity. Its hom_ext theorem gives
 uniqueness of descent for every target scheme, including nonaffine ones.
 Existence for arbitrary targets is now proved in OneGonRefinedDescent.
-The global P¹ identification and arithmetic torsion exclusion remain open.
+The P¹ identification in the t-coordinate is supplied below; arithmetic torsion exclusion remains open.
 
 `OneGonLocalizedPinching` identifies the image of B[1/s] in K[t,1/s]
 with the equalizer of endpoint evaluations whenever the common value
 of s at the node is nonzero. The restriction map is injective. The proof
 clears a common denominator and descends its numerator using equality of
 endpoint values. This supplies the local algebra used by OneGonRefinedDescent
-on principal neighborhoods of the node. The global P¹ identification and rational torsion
-exclusion remain open.
+on principal neighborhoods of the node. The P¹ identification in the t-coordinate is supplied below; rational torsion
+exclusion remains open.
 
 ## Explicit local maps and two-chart gluing
 
@@ -389,6 +390,26 @@ OneGonGluing.scheme. Its node, torus, and normalization equations and
 uniqueness are proved. This removes the supplied affine-factorization
 hypothesis required by the earlier OneGonMapGluing API.
 
-The remaining geometric identification is the marked P¹ normalization and
-its global pinching universal property in that presentation. Rational
-torsion exclusion is still an open arithmetic target.
+## Global normalization in projective coordinates
+
+`OneGonNormalization.scheme` glues Spec(K[t]) and the existing torus chart
+along the actual puncture. `projectiveIso` identifies this scheme with
+the fixed `ProjectiveLine.scheme`, with both inverse identities proved.
+On the affine chart the coordinate is t. On the inverse projective chart
+w=1/t, the torus map is w=1-z⁻¹, where z=t/(t-1).
+The images D(w) and D(1-w) cover that inverse chart; their intersection
+is proved to be the original puncture via a cartesian square.
+
+`projectiveToOneGon` is the resulting map from P¹ to the one-gon.
+Its affine restriction is the actual pinching map, and its torus restriction
+is the existing torus inclusion. The two identified sections in this
+coordinate convention are t=0 and t=1.
+`existsUnique_projective_desc` proves that every morphism from P¹ to an
+arbitrary scheme identifying these sections factors uniquely through
+`projectiveToOneGon`.
+
+Scope: this identifies the glued source and proves the pinching universal
+property in the (0,1) presentation. Transport to the fixed (0,∞) marked
+cocone of PolygonPinchingDiagram is still needed. No separate claim that
+this morphism satisfies the library's canonical-normalization interface
+is made here. Rational torsion exclusion remains open.
