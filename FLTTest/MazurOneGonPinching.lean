@@ -6,6 +6,7 @@ Authors: krandder
 module
 
 import FLT.Mazur.OneGonDescentUniqueness
+import FLT.Mazur.OneGonLocalizedPinching
 import Mathlib.Algebra.Field.ZMod
 import Lean
 
@@ -22,7 +23,8 @@ run_elab do
   for (n, _) in env.constants.toList do
     if (`FLT.Mazur.OneGonPinchingAlgebra).isPrefixOf n ||
         (`FLT.Mazur.OneGonAffineDescent).isPrefixOf n ||
-        (`FLT.Mazur.OneGonDescentUniqueness).isPrefixOf n then
+        (`FLT.Mazur.OneGonDescentUniqueness).isPrefixOf n ||
+        (`FLT.Mazur.OneGonLocalizedPinching).isPrefixOf n then
       let axioms ← Lean.collectAxioms n
       for a in axioms do
         unless #[``propext, ``Classical.choice, ``Quot.sound].contains a do

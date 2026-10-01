@@ -328,3 +328,11 @@ and stalks and the already proved surjectivity. Its hom_ext theorem gives
 uniqueness of descent for every target scheme, including nonaffine ones.
 Existence is still only proved for affine targets. The arbitrary-target
 existence, global P¹ pinching, and arithmetic torsion exclusion remain open.
+
+`OneGonLocalizedPinching` identifies the image of B[1/s] in K[t,1/s]
+with the equalizer of endpoint evaluations whenever the common value
+of s at the node is nonzero. The restriction map is injective. The proof
+clears a common denominator and descends its numerator using equality of
+endpoint values. This supplies local algebra on principal neighborhoods
+of the node; scheme-level existence and gluing to nonaffine targets, the
+global P¹ pinching, and rational torsion exclusion remain open.
