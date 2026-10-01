@@ -311,31 +311,31 @@ The affine-line map to the pinched chart is now proved finite and
 surjective, hence closed and a topological quotient map. The finite-module
 proof gives explicit generators 1 and t over B, using subtraction of the
 difference of endpoint values times t. These results work over every
-commutative coefficient ring. They do not yet construct descent of scheme
-morphisms to arbitrary targets or identify the global P¹ pinching.
+commutative coefficient ring. Over fields, arbitrary-target descent is now
+supplied by OneGonRefinedDescent below. The global P¹ identification is separate.
 
 `OneGonAffineDescent` proves existence and uniqueness of descent for maps
 from the affine normalization and pinched point to any affine scheme,
 provided their restrictions to the two endpoints agree. The proof uses
 the ring pullback and the full faithfulness of Spec, then transports
 along the affine target's canonical isomorphism with its spectrum.
-Descent to nonaffine targets still requires localization and gluing;
-this result is not the global P¹ pinching or a rational torsion exclusion.
+This affine result is now extended by the localization and gluing construction
+below; it is not the global P¹ pinching or a rational torsion exclusion.
 
 `OneGonDescentUniqueness` proves that over a field the affine normalization
 map is an epimorphism in Scheme, using injective maps on global functions
 and stalks and the already proved surjectivity. Its hom_ext theorem gives
 uniqueness of descent for every target scheme, including nonaffine ones.
-Existence is still only proved for affine targets. The arbitrary-target
-existence, global P¹ pinching, and arithmetic torsion exclusion remain open.
+Existence for arbitrary targets is now proved in OneGonRefinedDescent.
+The global P¹ identification and arithmetic torsion exclusion remain open.
 
 `OneGonLocalizedPinching` identifies the image of B[1/s] in K[t,1/s]
 with the equalizer of endpoint evaluations whenever the common value
 of s at the node is nonzero. The restriction map is injective. The proof
 clears a common denominator and descends its numerator using equality of
-endpoint values. This supplies local algebra on principal neighborhoods
-of the node; scheme-level existence and gluing to nonaffine targets, the
-global P¹ pinching, and rational torsion exclusion remain open.
+endpoint values. This supplies the local algebra used by OneGonRefinedDescent
+on principal neighborhoods of the node. The global P¹ identification and rational torsion
+exclusion remain open.
 
 ## Explicit local maps and two-chart gluing
 
@@ -370,7 +370,25 @@ The resulting map Spec(K[t,1/s]) → U has the required composite with U → X.
 Equality of the two localized endpoint morphisms is preserved by
 cancellation of the open immersion. No affine factorization is assumed.
 
-The remaining geometric work is to descend this constructed factorization
-and glue across the refined cover D(s), D(u), then identify the marked
-P¹ normalization. The full pinching universal property and the arithmetic
-rational torsion exclusion remain open.
+## Descent and gluing across the refined cover
+
+`OneGonRefinedDescent.existsUnique_desc` proves unique descent of every
+endpoint-compatible morphism Spec(K[t]) → X to Spec(B), for an arbitrary
+target scheme X over the same universe and any coefficient field K.
+It uses the constructed affine factorization, descends it on D(s), and
+glues with the original map on the conductor puncture D(u).
+The normalization square over D(s) is proved cartesian. Its lifting
+property proves equality on the actual intersection; the two opens cover
+both the pinched chart and its normalization. No local factorization or
+overlap equality for the descended maps is assumed.
+
+`desc` is the resulting morphism, with normalization recovery and
+`principal_desc` recording recovery of each compatible local descent.
+`gluedMap` then glues it with a compatible torus-chart map on the existing
+OneGonGluing.scheme. Its node, torus, and normalization equations and
+uniqueness are proved. This removes the supplied affine-factorization
+hypothesis required by the earlier OneGonMapGluing API.
+
+The remaining geometric identification is the marked P¹ normalization and
+its global pinching universal property in that presentation. Rational
+torsion exclusion is still an open arithmetic target.

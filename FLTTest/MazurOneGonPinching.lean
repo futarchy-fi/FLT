@@ -5,8 +5,7 @@ Authors: krandder
 -/
 module
 
-import FLT.Mazur.OneGonLocalFactorization
-import FLT.Mazur.OneGonMapGluing
+import FLT.Mazur.OneGonRefinedDescent
 import Mathlib.Algebra.Field.ZMod
 import Lean
 
@@ -28,7 +27,8 @@ run_elab do
         (`FLT.Mazur.OneGonLocalMaps).isPrefixOf n ||
         (`FLT.Mazur.OneGonMapGluing).isPrefixOf n ||
         (`FLT.Mazur.OneGonNodeFiber).isPrefixOf n ||
-        (`FLT.Mazur.OneGonLocalFactorization).isPrefixOf n then
+        (`FLT.Mazur.OneGonLocalFactorization).isPrefixOf n ||
+        (`FLT.Mazur.OneGonRefinedDescent).isPrefixOf n then
       let axioms ← Lean.collectAxioms n
       for a in axioms do
         unless #[``propext, ``Classical.choice, ``Quot.sound].contains a do
