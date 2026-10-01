@@ -149,6 +149,7 @@ public import FLT.Deformations.RepresentationTheory.PermutedSummandsTwist
 public import FLT.Deformations.RepresentationTheory.PrimePowerExact
 public import FLT.Deformations.RepresentationTheory.SelfTwistTrace
 public import FLT.Deformations.RepresentationTheory.StableLinePair
+public import FLT.Deformations.RepresentationTheory.TameSpectrumDigits
 public import FLT.Deformations.RepresentationTheory.TameTraceObstruction
 public import FLT.Deformations.RepresentationTheory.ThreeStableLines
 public import FLT.Deformations.RepresentationTheory.TraceCompatiblePair
@@ -637,6 +638,7 @@ public import FLT.GroupScheme.RaynaudModelArithmetic
 public import FLT.GroupScheme.RaynaudNakayamaDescent
 public import FLT.GroupScheme.RaynaudOrderNineExtension
 public import FLT.GroupScheme.RaynaudOrderThreeFiltration
+public import FLT.GroupScheme.RaynaudParameterValuation
 public import FLT.GroupScheme.RaynaudProductExtension
 public import FLT.GroupScheme.RaynaudQuotientFiberFreeness
 public import FLT.GroupScheme.RaynaudQuotientFlatness
@@ -648,6 +650,7 @@ public import FLT.GroupScheme.RaynaudRigidity
 public import FLT.GroupScheme.RaynaudSplitting
 public import FLT.GroupScheme.RaynaudTorsionFiltration
 public import FLT.GroupScheme.RaynaudTorsorDescent
+public import FLT.GroupScheme.RaynaudTwoCoordinates
 public import FLT.GroupScheme.RaynaudUnramifiedKernel
 public import FLT.GroupScheme.RaynaudUnramifiedQuotient
 public import FLT.GroupScheme.RestrictedScalarPointNaturality
