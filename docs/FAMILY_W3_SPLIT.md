@@ -8,8 +8,9 @@ the characteristic-zero lift. Neither follows from the present global
 absolute-irreducibility theorem by restriction alone.
 
 This is a five-leaf **next wave**, not a claim that five small lemmas finish
-both bridges. W1–W3 are ready and run in that order. W4–W5 are bounded
-source targets held for missing infrastructure. Downstream work is named
+both bridges. W1–W3 are ready and run in that order. W5 is now proved; W4
+has checked partial results and is held for the remaining orbit-exhaustion
+argument. Downstream work is named
 explicitly; none is an assumed field in a new input record.
 
 Sources: [S] Snowden, arXiv:0905.4266v1, §1.2, §3 and Thm. 5.1.2;
@@ -95,6 +96,22 @@ the eigenvalues, exact order, and trace formula must still be constructed.
 
 ## W4 — BLOCKED: quadratic twist from cyclotomic restriction (cap 400 lines)
 
+W4a partial (2026-09-30): `StableLinePair.lean` (136 lines) proves
+`exists_complementary_stableLines`, normal transport, and the preserve/swap
+consequence conditional on exhaustion. Foreground build, per-module lint,
+and standard-only axiom checks passed. The exact orbit-of-two result remains
+open: three invariant lines force scalar H-action, and a cyclic quotient
+then supplies a G-stable eigenline, contradicting irreducibility. These need
+separate ≤150/180/100-line leaves (scalar lemma, cyclic eigenline, assembly);
+no orbit-exhaustion conclusion is claimed.
+
+W4b construction DONE conditional on W4a (2026-09-30):
+`PermutedSummandsTwist.lean` (115 lines) constructs the sign character and
+intertwiner. `exists_quadratic_selfTwist_of_stableLines_orbit` consumes exactly
+the W4a target. Foreground build, per-module lint, and standard-only axiom
+checks passed. The unconditional `exists_quadratic_selfTwist` still needs
+W4a orbit exhaustion; no cyclic-restriction theorem is claimed.
+
 Proposed `FLT/Deformations/RepresentationTheory/CyclicRestrictionTwist.lean`.
 The rank-two, cyclic-quotient case of [C]. Exact target sketch, with
 `[IsAlgClosed k] [FiniteDimensional k V]`, `hV : Module.finrank k V = 2`,
@@ -118,9 +135,14 @@ kernel, its quadratic quotient, and a tame inertia generator detecting it.
 `AbsoluteIrreducibility.lean:isAbsolutelyIrreducible` supplies the **global**
 input after scalar extension, not these missing restriction facts.
 
-## W5 — BLOCKED: uniqueness of extension of a model morphism (cap 180 lines)
+## W5 — DONE: uniqueness of extension of a model morphism (cap 180 lines)
 
-Proposed `FLT/GroupScheme/GenericFiberMapUnique.lean`.
+`FLT/GroupScheme/GenericFiberMapUnique.lean` (41 lines).
+Checked 2026-09-30: foreground module build and per-module lint passed;
+`#print axioms` for both declarations reports only standard axioms.
+Mathlib `Algebra.TensorProduct.includeRight_injective` and
+`IsFractionRing.injective` discharge injectivity; `Algebra.modelMap_unique`
+needs flatness only for B and no Hopf structure.
 A bounded first step toward model compatibility, not a claim of [R]'s
 full existence/faithfulness theorem. For a domain O, its fraction field K,
 and O-flat commutative Hopf algebras A,B, prove the following underlying
@@ -130,10 +152,9 @@ theorem modelMap_unique (f g : A →ₐ[O] B)
     (h : (Algebra.TensorProduct.includeRight : B →ₐ[O] K ⊗[O] B).comp f =
          (Algebra.TensorProduct.includeRight : B →ₐ[O] K ⊗[O] B).comp g) : f = g
 ```
-Dependencies: establish injectivity of the fraction-field tensor inclusion
-from flatness. Mathlib localization/flatness has the ingredients; this leaf is
-held until that injectivity API specialization is checked, rather than spending
-a fourth ready-leaf slot. W1 will feed the compatible torsion-level maps.
+Dependencies discharged: the fraction-field tensor inclusion is injective
+by the Mathlib localization/flatness API specialization above. W1 will feed
+the compatible torsion-level maps.
 Anchor: `FLT/GroupScheme/FiniteFlat.lean:Ideal.comapQuotientLinearMap_injective`
 illustrates the existing torsion-free/injective-map conventions.
 
