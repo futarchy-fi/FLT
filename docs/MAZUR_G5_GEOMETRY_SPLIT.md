@@ -336,3 +336,25 @@ clears a common denominator and descends its numerator using equality of
 endpoint values. This supplies local algebra on principal neighborhoods
 of the node; scheme-level existence and gluing to nonaffine targets, the
 global P¹ pinching, and rational torsion exclusion remain open.
+
+## Explicit local maps and two-chart gluing
+
+`OneGonLocalMaps` constructs the descended ring homomorphism via the
+localized restriction image, proves its normalization equation and
+uniqueness, and takes Spec to obtain the actual local scheme map.
+`OneGonMapGluing.nodeMap_on_principal` identifies these maps with the
+restrictions of the descended node-chart morphism.
+
+`OneGonMapGluing.gluedMap` glues the descended node morphism and a torus
+morphism on the actual OneGonGluing.scheme. The overlap equation is proved
+from compatibility on the normalization. Both chart equations, recovery
+of the original normalization map, and uniqueness of the global map are
+proved. The target scheme can be nonaffine.
+
+Scope: the normalization-chart map is supplied with an explicit affine
+factorization Spec(K[t]) → Spec(A) → X and equal endpoint evaluations in
+Spec(A). This construction does not establish such a factorization for
+every normalization map. Covering a general map by local affine
+factorizations, proving their descent and gluing across that refined cover,
+and identifying the marked P¹ normalization remain open. Neither the full
+pinching universal property nor rational torsion exclusion is closed.

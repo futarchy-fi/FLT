@@ -1138,7 +1138,9 @@ public import FLT.Mazur.NodeSmoothLocus
 public import FLT.Mazur.OneGonAffineDescent
 public import FLT.Mazur.OneGonDescentUniqueness
 public import FLT.Mazur.OneGonGluing
+public import FLT.Mazur.OneGonLocalMaps
 public import FLT.Mazur.OneGonLocalizedPinching
+public import FLT.Mazur.OneGonMapGluing
 public import FLT.Mazur.OneGonOverlap
 public import FLT.Mazur.OneGonPinchingAlgebra
 public import FLT.Mazur.OneGonQuotient
