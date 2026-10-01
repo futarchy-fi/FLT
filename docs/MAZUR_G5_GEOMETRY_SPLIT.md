@@ -321,3 +321,10 @@ the ring pullback and the full faithfulness of Spec, then transports
 along the affine target's canonical isomorphism with its spectrum.
 Descent to nonaffine targets still requires localization and gluing;
 this result is not the global P¹ pinching or a rational torsion exclusion.
+
+`OneGonDescentUniqueness` proves that over a field the affine normalization
+map is an epimorphism in Scheme, using injective maps on global functions
+and stalks and the already proved surjectivity. Its hom_ext theorem gives
+uniqueness of descent for every target scheme, including nonaffine ones.
+Existence is still only proved for affine targets. The arbitrary-target
+existence, global P¹ pinching, and arithmetic torsion exclusion remain open.

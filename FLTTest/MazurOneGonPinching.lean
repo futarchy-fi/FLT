@@ -5,8 +5,8 @@ Authors: krandder
 -/
 module
 
-import FLT.Mazur.OneGonAffineDescent
-import Mathlib.Data.ZMod.Basic
+import FLT.Mazur.OneGonDescentUniqueness
+import Mathlib.Algebra.Field.ZMod
 import Lean
 
 /-! # Trust audit for the ring-theoretic one-gon pinching -/
@@ -21,7 +21,8 @@ run_elab do
   let mut count := 0
   for (n, _) in env.constants.toList do
     if (`FLT.Mazur.OneGonPinchingAlgebra).isPrefixOf n ||
-        (`FLT.Mazur.OneGonAffineDescent).isPrefixOf n then
+        (`FLT.Mazur.OneGonAffineDescent).isPrefixOf n ||
+        (`FLT.Mazur.OneGonDescentUniqueness).isPrefixOf n then
       let axioms ← Lean.collectAxioms n
       for a in axioms do
         unless #[``propext, ``Classical.choice, ``Quot.sound].contains a do
@@ -42,3 +43,8 @@ example : Module.Finite (FLT.Mazur.PolygonNodePresentation.B (R := ℤ)) (Polyno
 example : AlgebraicGeometry.IsFinite
     (FLT.Mazur.OneGonPinchingAlgebra.toPinching (R := ZMod 2)) :=
   inferInstance
+
+example : CategoryTheory.Epi
+    (FLT.Mazur.OneGonPinchingAlgebra.toPinching (R := ZMod 2)) := by
+  let : Fact (Nat.Prime 2) := ⟨by decide⟩
+  infer_instance
