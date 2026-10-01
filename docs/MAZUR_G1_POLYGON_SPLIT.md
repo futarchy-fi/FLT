@@ -114,7 +114,7 @@ Source: multiplication and rotations on the standard polygon, DR II.1.1/1.12(c).
 The result is the two commuting constant-parameter actions; claiming an action
 of a relative smooth group scheme would be stronger and is not allowed here.
 
-## P4 — affine node equalizer, cap 350, ready independently, next wave
+## P4 — affine node equalizer, cap 350, implemented
 
 New `FLT/Mazur/PolygonNodeEqualizer.lean`; namespace `PolygonNodeEqualizer`.
 For a commutative ring `R`, construct `A` as the subalgebra of `R[X] × R[X]`
@@ -141,7 +141,7 @@ and `Polynomial.aeval`. `rg -n` finds `eval₂AlgHom` in
 `Algebra/Module/Submodule/{Ker,Range}.lean:64/68`. Source: equality of the two values at a pinched node.
 Unblocks affine node charts and the local normalization sequence.
 
-## P5 — cyclic normalization incidence, cap 350, ready independently, next wave
+## P5 — cyclic normalization incidence, cap 350, implemented
 
 New `FLT/Mazur/PolygonIncidence.lean`, field `K`, `n>0`.
 Use `Fin n` and the existing `PolygonPinching.next hn` (or an explicitly proved
@@ -165,6 +165,12 @@ must hold when the characteristic divides `n`, and for `n=1`. Anchors:
 Unblocks the genus-one dimension calculation once the geometric comparison exists.
 
 ## Acceptance and remaining geometric gate
+
+P4 and P5 were checked 2026-09-30 19:16 UTC: foreground module builds,
+individual `runLinter` runs and 34 declaration axiom checks passed; modules
+are 114 and 164 lines (commits `dbd640a0`, `4bf3cc67`). Reproduce with the
+commands below using `PolygonNodeEqualizer` and `PolygonIncidence`. The next
+group frontier is [MAZUR_G1_GROUP_SPLIT](MAZUR_G1_GROUP_SPLIT.md).
 
 Implement P1, P2, P3 in order this wave (at most three leaves). Each gets a
 foreground `LEAN_NUM_THREADS=2 lake build MODULE`, then its own
