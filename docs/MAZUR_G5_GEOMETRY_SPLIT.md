@@ -231,3 +231,19 @@ FLT.Mazur.PolygonNodePresentation` both passed. The collectAxioms audit
 propext, Classical.choice and Quot.sound occur. Output is untracked
 GOAL_MAZUR_W7_E3A_AXIOMS.txt. `wc -l` reports 275; C-sorted FLT.lean imports
 and `git diff --check` passed. No whole-library build or lint was run.
+
+## E4 one-component overlap and chart gluing
+
+`OneGonTransition` constructs the involution t ↦ t/(t-1) on the actual
+ring R[t, 1/(t(t-1))], over any commutative ring. `OneGonOverlap` proves
+that the resulting map to the Laurent chart is an open immersion with image
+D(z-1). `OneGonGluing` glues this map to the existing B-chart puncture,
+constructs both open chart inclusions, proves their joint coverage, and
+constructs the structure morphism over the coefficient field.
+
+`FLTTest/MazurOneGon` checks the transitive axioms of all declarations in
+both new namespaces, and instantiates the involution over Z and ZMod 2.
+The chart pushout is constructed; identification with the cyclic pinching
+of P¹ and its specified normalization/node cocone is still missing.
+This does not close E4 for arbitrary n, E5, the genus calculation, the
+relative group action, or Mazur_statement.
