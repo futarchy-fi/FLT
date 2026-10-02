@@ -126,9 +126,9 @@ surjectivity. W7 `FundamentalTame` proves both displayed endpoints (in all
 positive degrees), plus `LocalRamification.tameRootCharacter_surjective`.
 W8 filtration DONE (274/300); finite p-groups and tower stability DONE (228/250).
 W8 pro-p endpoint and explicit compatible-family homeomorphism DONE (235/250).
-BLOCKED: first-group tower surjectivity; exact target and capped split in `BLOCKED.md`.
-Checked 20:59 UTC: all three builds, individual lint and 49 axiom audits passed.
-Evidence: `Scratch/LiftsW8/{Filtration,PGroup,Wild}-{build,lint,axioms}.log`.
+W9 tame quotient DONE (207/250); first-group tower surjectivity remains.
+W9 checked 2026-10-02: tame build, module lint and axiom audit passed.
+Evidence: `Scratch/LiftsW9/Tame-{build,lint,axioms}.log`; W8 logs retained.
 Anchors: HilbertTheory `IsInertiaField`, `InertiaComparison` restriction
 surjectivity, QuotientGroup `lift`, `quotientKerEquivRange`. Dependencies:
 F1–F3; the existing level-one tame kernel is not enough.

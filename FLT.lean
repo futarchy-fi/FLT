@@ -30,6 +30,7 @@ public import FLT.AINTLIB.DedekindResidue.ExplicitFormula.WeilAssembly
 public import FLT.AINTLIB.DedekindResidue.ExplicitFormula.ZeroCapture
 public import FLT.AINTLIB.DedekindResidue.Lemma2
 public import FLT.AbsoluteGaloisGroup.CompletionComparison
+public import FLT.AbsoluteGaloisGroup.FiniteTameQuotient
 public import FLT.AbsoluteGaloisGroup.FirstRamificationFiltration
 public import FLT.AbsoluteGaloisGroup.FirstRamificationPGroup
 public import FLT.AbsoluteGaloisGroup.FundamentalTame
