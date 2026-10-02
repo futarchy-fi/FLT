@@ -927,6 +927,7 @@ public import FLT.Mazur.AffineStalkMorphism
 public import FLT.Mazur.AnnihilatorCoherence
 public import FLT.Mazur.AnnihilatorStalk
 public import FLT.Mazur.AnnihilatorSubsheaf
+public import FLT.Mazur.BinaryOpenDescent
 public import FLT.Mazur.CartierChartFlat
 public import FLT.Mazur.CartierCharts
 public import FLT.Mazur.CartierTensorRank
@@ -1135,7 +1136,11 @@ public import FLT.Mazur.NodalGeometricFiberGenus
 public import FLT.Mazur.NodeInfinitesimalObstruction
 public import FLT.Mazur.NodeQuotient
 public import FLT.Mazur.NodeSmoothLocus
+public import FLT.Mazur.OneGonAffineCover
+public import FLT.Mazur.OneGonCocone
 public import FLT.Mazur.OneGonGluing
+public import FLT.Mazur.OneGonNormalization
+public import FLT.Mazur.OneGonNormalizationCoordinates
 public import FLT.Mazur.OneGonOverlap
 public import FLT.Mazur.OneGonQuotient
 public import FLT.Mazur.OneGonTransition
