@@ -35,6 +35,7 @@ public import FLT.AbsoluteGaloisGroup.FirstRamificationPGroup
 public import FLT.AbsoluteGaloisGroup.FundamentalTame
 public import FLT.AbsoluteGaloisGroup.InertiaComparison
 public import FLT.AbsoluteGaloisGroup.InertiaDescentField
+public import FLT.AbsoluteGaloisGroup.InertiaDescentUniformizer
 public import FLT.AbsoluteGaloisGroup.LocalCompositum
 public import FLT.AbsoluteGaloisGroup.LocalCyclotomicCharacter
 public import FLT.AbsoluteGaloisGroup.LocalCyclotomicGenerator
