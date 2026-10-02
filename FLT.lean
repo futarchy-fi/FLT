@@ -34,6 +34,7 @@ public import FLT.AbsoluteGaloisGroup.FirstRamificationFiltration
 public import FLT.AbsoluteGaloisGroup.FirstRamificationPGroup
 public import FLT.AbsoluteGaloisGroup.FundamentalTame
 public import FLT.AbsoluteGaloisGroup.InertiaComparison
+public import FLT.AbsoluteGaloisGroup.InertiaDescentField
 public import FLT.AbsoluteGaloisGroup.LocalCompositum
 public import FLT.AbsoluteGaloisGroup.LocalCyclotomicCharacter
 public import FLT.AbsoluteGaloisGroup.LocalCyclotomicGenerator
@@ -467,6 +468,7 @@ public import FLT.GroupScheme.FiniteFlatRestrictedScalarExtension
 public import FLT.GroupScheme.FiniteFlatScalarExtension
 public import FLT.GroupScheme.FiniteFlatSectionDescent
 public import FLT.GroupScheme.FiniteFlatSubobject
+public import FLT.GroupScheme.FiniteFlatSubquotientBaseChange
 public import FLT.GroupScheme.FiniteFreeAdicComplete
 public import FLT.GroupScheme.FiniteHopfFreeness
 public import FLT.GroupScheme.FontaineConvolutionApproximation
