@@ -150,6 +150,7 @@ public import FLT.Deformations.RepresentationTheory.GaloisRepFamily
 public import FLT.Deformations.RepresentationTheory.IntegralClosure
 public import FLT.Deformations.RepresentationTheory.Irreducible
 public import FLT.Deformations.RepresentationTheory.PadicIdealCofinal
+public import FLT.Deformations.RepresentationTheory.PadicIdealOpen
 public import FLT.Deformations.RepresentationTheory.PermutedSummandsTwist
 public import FLT.Deformations.RepresentationTheory.PrimePowerExact
 public import FLT.Deformations.RepresentationTheory.SelfTwistTrace
