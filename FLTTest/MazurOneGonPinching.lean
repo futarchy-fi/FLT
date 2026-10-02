@@ -5,7 +5,7 @@ Authors: krandder
 -/
 module
 
-import FLT.Mazur.OneGonNormalization
+import FLT.Mazur.OneGonMarkedPinching
 import Mathlib.Algebra.Field.ZMod
 import Lean
 
@@ -29,7 +29,9 @@ run_elab do
         (`FLT.Mazur.OneGonNodeFiber).isPrefixOf n ||
         (`FLT.Mazur.OneGonLocalFactorization).isPrefixOf n ||
         (`FLT.Mazur.OneGonRefinedDescent).isPrefixOf n ||
-        (`FLT.Mazur.OneGonNormalization).isPrefixOf n then
+        (`FLT.Mazur.OneGonNormalization).isPrefixOf n ||
+        (`FLT.Mazur.ProjectiveLineMobius).isPrefixOf n ||
+        (`FLT.Mazur.OneGonMarkedPinching).isPrefixOf n then
       let axioms ← Lean.collectAxioms n
       for a in axioms do
         unless #[``propext, ``Classical.choice, ``Quot.sound].contains a do
@@ -55,3 +57,9 @@ example : CategoryTheory.Epi
     (FLT.Mazur.OneGonPinchingAlgebra.toPinching (R := ZMod 2)) := by
   let : Fact (Nat.Prime 2) := ⟨by decide⟩
   infer_instance
+
+-- The marked cyclic pinching also works in characteristic two.
+example : let _ : Fact (Nat.Prime 2) := ⟨by decide⟩
+    FLT.Mazur.IsNeronNGon (FLT.Mazur.OneGonMarkedPinching.object (ZMod 2)) 1 (by decide) := by
+  let : Fact (Nat.Prime 2) := ⟨by decide⟩
+  exact FLT.Mazur.OneGonMarkedPinching.isNeronOneGon (ZMod 2) (by decide)

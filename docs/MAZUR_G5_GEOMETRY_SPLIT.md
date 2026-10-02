@@ -139,7 +139,7 @@ to each origin localization by proving that all denominators map to units.
 The smooth-locus bridge uses spectrum stalk isomorphisms, with no assumed
 geometric conclusions. Validation commands and evidence are recorded below.
 
-## E4 — construct the polygon and prove the cocone, cap 400, blocked
+## E4 — construct the polygon and prove the cocone: n=1 complete, general n open
 
 New `FLT/Mazur/PolygonAtlas.lean`, namespace `FLT.Mazur.PolygonAtlas`.
 For `n : ℕ`, `[NeZero n]`, `hn : 0 < n`, construct actual glue data using
@@ -162,8 +162,9 @@ For n=1 additionally construct open maps from Bchart and G_m and prove joint
 surjectivity. Prove the pushout for arbitrary target schemes by local descent;
 Spec of the ring pullback only proves the affine-target case and is insufficient.
 Source: cyclic pinching in DR II.1.1. Dependencies: E1–E3, B's puncture
-localization, explicit two-component overlaps when n=2. Not ready: overlap
-cocycles and arbitrary-target pinching descent remain.
+localization, explicit two-component overlaps when n=2. The n=1 case is now
+proved in OneGonMarkedPinching, including the exact marked cocone over K.
+General n≥2 overlap cocycles and cyclic descent remain.
 400 is a hard stop, not a claim that these missing foundations fit that cap.
 
 ## E5 — specified cocone comparison and G5, cap 400, blocked
@@ -205,8 +206,7 @@ rg -n 'mem_smoothLocus|preimage_smoothLocus_eq' $M/AlgebraicGeometry/Morphisms/S
 rg -n 'does not|not proved|smooth/node' FLT/Mazur/CurveNode.lean
 ```
 
-E1–E3 are implemented; E4–E5 remain blocked by gluing and arbitrary-target
-pinching descent. Build in the foreground with LEAN_NUM_THREADS=2;
+E1–E3 and the n=1 case of E4 are implemented. General n≥2 gluing and E5 remain open. Build in the foreground with LEAN_NUM_THREADS=2;
 run `lake exe runLinter FLT.Mazur.MODULE` separately for each module. Audit all
 new declarations with collectAxioms; allow only propext/Classical.choice/Quot.sound.
 C-sort FLT.lean public imports; commit each leaf locally; never push. If any
@@ -287,8 +287,8 @@ constructs the structure morphism over the coefficient field.
 
 `FLTTest/MazurOneGon` checks the transitive axioms of all declarations in
 both new namespaces, and instantiates the involution over Z and ZMod 2.
-The chart pushout is constructed; identification with the cyclic pinching
-of P¹ and its specified normalization/node cocone is still missing.
+The chart pushout is constructed; its identification with the specified
+one-component cyclic pinching is now proved in OneGonMarkedPinching below.
 This does not close E4 for arbitrary n, E5, the genus calculation, the
 relative group action, or Mazur_statement.
 
@@ -408,8 +408,36 @@ coordinate convention are t=0 and t=1.
 arbitrary scheme identifying these sections factors uniquely through
 `projectiveToOneGon`.
 
-Scope: this identifies the glued source and proves the pinching universal
-property in the (0,1) presentation. Transport to the fixed (0,∞) marked
-cocone of PolygonPinchingDiagram is still needed. No separate claim that
-this morphism satisfies the library's canonical-normalization interface
-is made here. Rational torsion exclusion remains open.
+This identifies the glued source and proves the pinching universal property
+in the (0,1) presentation. The following transport supplies the fixed
+(0,∞) marked cocone.
+
+## The specified marked one-component cyclic pinching
+
+`ProjectiveLineMobius.iso` constructs the global automorphism t ↦ t/(t-1)
+by gluing across the existing refined affine cover. It proves both inverse
+identities, preservation of the structure morphism, fixation of zero, and
+interchange of one and infinity. The construction works over every field,
+including characteristic two.
+
+`OneGonMarkedPinching.normalization` composes this automorphism with the
+previous map to the one-gon. Its zero and infinity sections map to the same
+node. Unique arbitrary-target descent is transported first in Scheme and
+then in Over(Spec K); the descended morphism's compatibility with the base
+is proved using uniqueness.
+
+`componentsMap` and `nodesMap` give the actual two legs from the coproduct
+objects in PolygonPinchingDiagram. `isPushout` proves that they realize
+the exact span `toComponents K 1 hn`, `toNodes K 1`, without assuming a
+pushout existence instance. Hence `isNeronOneGon` proves the project's
+`IsNeronNGon (Over.mk (OneGonGluing.toBase K)) 1 hn` predicate, and
+`isNeronPolygon` follows. This closes E4 for n=1.
+
+Validation: FLTTest.MazurOneGonPinching audits every declaration in both new
+namespaces and its transitive axioms, allowing only propext, Classical.choice,
+and Quot.sound, and instantiates the marked one-gon in characteristic two.
+The two module linters and mk_all import check are run individually.
+
+General n≥2, the E5 smooth-locus comparison, genus, relative group action,
+and the arithmetic rational torsion exclusion remain open. No separate
+claim about the library's canonical-normalization interface is made here.

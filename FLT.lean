@@ -1142,6 +1142,7 @@ public import FLT.Mazur.OneGonLocalFactorization
 public import FLT.Mazur.OneGonLocalMaps
 public import FLT.Mazur.OneGonLocalizedPinching
 public import FLT.Mazur.OneGonMapGluing
+public import FLT.Mazur.OneGonMarkedPinching
 public import FLT.Mazur.OneGonNodeFiber
 public import FLT.Mazur.OneGonNormalization
 public import FLT.Mazur.OneGonOverlap
@@ -1182,6 +1183,7 @@ public import FLT.Mazur.ProjectiveGeneration
 public import FLT.Mazur.ProjectiveGenerationEventually
 public import FLT.Mazur.ProjectiveLineCharts
 public import FLT.Mazur.ProjectiveLineEndpoints
+public import FLT.Mazur.ProjectiveLineMobius
 public import FLT.Mazur.ProjectiveLineScaling
 public import FLT.Mazur.ProjectiveOverlapModuleLocalization
 public import FLT.Mazur.ProjectiveProductChartCover
