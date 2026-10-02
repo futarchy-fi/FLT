@@ -145,6 +145,7 @@ public import FLT.Deformations.RepresentationTheory.GaloisRep
 public import FLT.Deformations.RepresentationTheory.GaloisRepFamily
 public import FLT.Deformations.RepresentationTheory.IntegralClosure
 public import FLT.Deformations.RepresentationTheory.Irreducible
+public import FLT.Deformations.RepresentationTheory.PGroupInvariants
 public import FLT.Deformations.RepresentationTheory.PermutedSummandsTwist
 public import FLT.Deformations.RepresentationTheory.PrimePowerExact
 public import FLT.Deformations.RepresentationTheory.SelfTwistTrace
@@ -618,6 +619,7 @@ public import FLT.GroupScheme.QuotientFiberFreeness
 public import FLT.GroupScheme.RationalCubeValuations
 public import FLT.GroupScheme.RaynaudClosureFactorization
 public import FLT.GroupScheme.RaynaudConnectedQuotient
+public import FLT.GroupScheme.RaynaudCoordinateCharacter
 public import FLT.GroupScheme.RaynaudDiagonalizableExtension
 public import FLT.GroupScheme.RaynaudDiscriminant
 public import FLT.GroupScheme.RaynaudEtaleDualExtension
