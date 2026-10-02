@@ -139,32 +139,109 @@ to each origin localization by proving that all denominators map to units.
 The smooth-locus bridge uses spectrum stalk isomorphisms, with no assumed
 geometric conclusions. Validation commands and evidence are recorded below.
 
-## E4 — construct the polygon and prove the cocone, cap 400, blocked
+## E4 — polygon construction, split into four leaves
 
-New `FLT/Mazur/PolygonAtlas.lean`, namespace `FLT.Mazur.PolygonAtlas`.
-For `n : ℕ`, `[NeZero n]`, `hn : 0 < n`, construct actual glue data using
-E2's opens for n≥2 and the B/Laurent construction above for n=1.
-Write `base := Spec (.of K)`, and `Achart/Bchart : Over base` for E3's charts.
+Checked 2026-10-02: searched Mathlib's `AlgebraicGeometry/Gluing.lean`
+(`Scheme.GlueData`, `OpenCover.glueMorphisms`, `IsLocallyDirected.glueData`)
+and `rg 'IsPushout|pushout' Mathlib/AlgebraicGeometry`. Open gluing is
+available, but no closed pinching pushout theorem was found. Prefer the
+locally directed multispan: Mathlib derives its glue data and cocycle from
+our proved branch disjointness. A binary pushout of all node charts would
+lose the second overlap for n=2. All caps include helpers and imports.
+The signatures below are contracts until their leaf is built.
+
+### E4a — cyclic open atlas for n≥2, cap 360, ready
+
+New `PolygonCyclicAtlas.lean`, namespace `FLT.Mazur.PolygonCyclicAtlas`.
+Index edges and nodes by `Fin n`; edge i maps by E2.left to node i and by
+inversion followed by E2.right to node `(finRotate n).symm i`. Prove the
+walking multispan is thin when `h : 2 ≤ n`, and locally directed using
+E2.disjoint_ranges. Mathlib then constructs actual glue data, including
+its triple-overlap cocycle, and the scheme colimit. For n=2 the two edges
+are distinct, giving both Laurent overlaps between the two node charts.
+Dependencies: E2, ProjectiveLineCharts, Mathlib locally directed gluing.
 
 ```lean
-def polygon (K : Type u) [Field K] (n : ℕ) [NeZero n] : Over (Spec (.of K))
-def normalization : PolygonPinching.components K n ⟶ polygon K n
-def nodes : PolygonPinching.nodes K n ⟶ polygon K n
-def nodeChart (h : 2 ≤ n) (i : Fin n) : Achart K ⟶ polygon K n
-instance (h : 2 ≤ n) (i : Fin n) : IsOpenImmersion (nodeChart K n h i).left
-theorem nodeCharts_cover (h : 2 ≤ n) (z : (polygon K n).left) :
-    ∃ i w, (nodeChart K n h i).left w = z
-theorem isPushout : IsPushout (PolygonPinching.toComponents K n hn)
+def diagram (K : Type u) [Field K] (n : ℕ) : WalkingMultispan (shape n) ⥤ Scheme
+-- h installs thinness; all diagram maps are proved open immersions.
+def scheme (K : Type u) [Field K] (n : ℕ) (h : 2 ≤ n) : Scheme
+ def chart (i : Fin n) : PolygonNodeBranches.node K ⟶ scheme K n h
+instance (i : Fin n) : IsOpenImmersion (chart K n h i)
+theorem charts_cover (x : scheme K n h) : ∃ i y, chart K n h i y = x
+def toBase : scheme K n h ⟶ Spec (.of K)
+```
+
+Also expose the exact overlap equation and the two-edge point-overlap
+criterion, so the n=2 case is verified rather than hidden in indexing.
+No pinching universal property is claimed by the open-gluing colimit.
+
+### E4b — normalization and node cocone for n≥2, cap 340, ready after E4a
+
+New `PolygonCyclicCocone.lean`, same namespace. Restriction to the first
+and second polynomial factors gives the normalization maps into a node.
+Glue the affine charts of each specified ProjectiveLine through E4a's
+inverse-coordinate overlap equation; include each aOrigin as its node.
+Dependencies: E4a, PolygonPinchingDiagram, PolygonNodePresentation.
+
+```lean
+def polygon : Over (Spec (.of K)) := Over.mk (toBase K n h)
+def normalization : PolygonPinching.components K n ⟶ polygon K n h
+def nodes : PolygonPinching.nodes K n ⟶ polygon K n h
+theorem cocone (hn : 0 < n) :
+  PolygonPinching.toComponents K n hn ≫ normalization K n h =
+    PolygonPinching.toNodes K n ≫ nodes K n h
+```
+
+Prove component-chart formulas and the zero/infinity formulas, with the
+successor exactly PolygonPinching.next. These are actual morphisms, not
+record fields. The atlas immersion and cover facts are supplied by E4a.
+
+### E4c — one-gon atlas and normalization, cap 400, blocked on coordinate bridge
+
+New `OneGonAtlas.lean`, namespace `FLT.Mazur.OneGonAtlas`. E3 supplies
+`bPuncture : Spec K[t,1/(t(t-1))] ⟶ Spec B`. The other leg must be the
+open immersion into Spec K[z,z⁻¹] defined by z=t/(t-1), with inverse
+ t=z/(z-1) on D(z-1). Prove this localization bridge first; it is absent
+from the current library and E1–E3. Then form the open pushout, prove the
+B/Laurent chart cover, and construct the normalization from the specified
+ProjectiveLine (including the missing normalization point z=1).
+Dependencies: E3 and the explicit fractional-coordinate localization iso.
+
+```lean
+def punctureToLaurent : Spec (.of (Localization.Away (X*(X-1) : K[X]))) ⟶
+  ProjectiveLine.overlap K
+instance : IsOpenImmersion (punctureToLaurent K)
+def scheme := pushout (PolygonNodePresentation.bPuncture K) (punctureToLaurent K)
+def normalization : ProjectiveLine.scheme K ⟶ scheme K
+theorem endpoints : ProjectiveLine.zero K ≫ normalization K =
+  ProjectiveLine.infinity K ≫ normalization K
+```
+
+Both pushout legs are open immersions; prove joint surjectivity from the
+colimit API. If the bridge plus normalization exceeds 400 lines, retain
+the bridge as a capped module and split the remainder in BLOCKED.md.
+No reducible two-branch Zariski chart may substitute for Spec B.
+
+### E4d — arbitrary-target pinching descent, cap 400, blocked on E4c/local descent
+
+New `PolygonAtlas.lean`, namespace `FLT.Mazur.PolygonAtlas`. Combine E4a–c
+into `polygon K n` for every `[NeZero n]`; transport their cocones. Prove
+local pinching descent for arbitrary schemes by pulling back an affine
+cover of the target, descending on saturated source neighborhoods, and
+using `Scheme.OpenCover.glueMorphisms` with proved overlap compatibility.
+Dependencies: E4a–c and a local arbitrary-target pinching theorem, still missing.
+
+```lean
+theorem isPushout (hn : 0 < n) :
+  IsPushout (PolygonPinching.toComponents K n hn)
     (PolygonPinching.toNodes K n) (normalization K n) (nodes K n)
 ```
 
-For n=1 additionally construct open maps from Bchart and G_m and prove joint
-surjectivity. Prove the pushout for arbitrary target schemes by local descent;
-Spec of the ring pullback only proves the affine-target case and is insufficient.
-Source: cyclic pinching in DR II.1.1. Dependencies: E1–E3, B's puncture
-localization, explicit two-component overlaps when n=2. Not ready: overlap
-cocycles and arbitrary-target pinching descent remain.
-400 is a hard stop, not a claim that these missing foundations fit that cap.
+The ring pullback proves only the affine-target case. Neither that case
+nor an open-gluing universal property closes this leaf. If local descent
+exceeds the cap, commit its proved prerequisites and record exact smaller
+contracts in untracked BLOCKED.md. E5 and Mazur G1 remain blocked until
+this specific cocone is a pushout for arbitrary target schemes.
 
 ## E5 — specified cocone comparison and G5, cap 400, blocked
 
