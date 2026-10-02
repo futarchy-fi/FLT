@@ -29,10 +29,22 @@ axiom evidence is in its untracked result, and W10 audits its own additions.
 | W4.1–W4.3 | Deformations/RepresentationTheory/{FlatDiscrete,FlatReduction,FlatCofinal} | Cofinality and openness still explicit in the p-power endpoint |
 | W5.1–W5.2 | AbsoluteGaloisGroup/RootCharacter; GroupScheme/KummerCocycle | Kummer result is finite Galois algebra, not continuous extension-class classification |
 | F1–F3 | AbsoluteGaloisGroup/RootCharacter{Independence,Uniformizer,Topology} | Root choices, compatible degrees, continuity and finite image |
-| F4 | AbsoluteGaloisGroup/{RootInertiaTransitivity,FundamentalTame,FirstRamificationFiltration,FirstRamificationPGroup,WildInertiaProP} | Tame root characters and wild inertia, not classification of two-dimensional representations |
+| F4 | AbsoluteGaloisGroup/{RootInertiaTransitivity,FundamentalTame,RootCharacterResidue,FirstRamificationFiltration,FirstRamificationPGroup,WildInertiaProP} | Tame root characters and wild inertia, not classification of two-dimensional representations |
 | Finite tower step | AbsoluteGaloisGroup/{FiniteTameQuotient,FirstRamificationRestriction} | Actual finite first-group restriction is surjective; no longer an assumed hypothesis |
 | F5–F6 | AbsoluteGaloisGroup/{FundamentalCoefficients,FundamentalCyclotomic} | Finite coefficients, Frobenius conjugacy and omegaOne = local modCyclotomic; representation-level transport remains |
 | Unrestricted deformation representability | Deformations/Representable.isCorepresentable_deformationFunctor | Narrow S-lift representability still has a sorry; neither theorem proves dimension or finiteness |
+
+W10 topology validation checked 2026-10-02 23:38 UTC: T1 (44/120 lines),
+T2 (61/250), T3 (44/100) each passed its foreground build, individual
+module linter, and all four new theorems' axiom audits (standard axioms only).
+Rerun the acceptance commands below with modules PadicIdealCofinal,
+PadicIdealOpen and FlatPadic under FLT.Deformations.RepresentationTheory.
+Logs: `Scratch/LiftsW10/{Cofinal,Open,Flat}-{build,lint,axioms}.log`.
+Final-goal audit checked 2026-10-02 23:38 UTC: `lake env lean
+Scratch/LiftsW10/GoalAxioms.lean` (existing compiled final theorem; its source
+unchanged) prints sorryAx for lifts and its adapter, and
+`[Mazur_statement, propext, sorryAx, Classical.choice, Quot.sound]` for
+`PNat.pow_add_pow_ne_pow`. Evidence: `Scratch/LiftsW10/Goal-axioms.log`.
 
 ### Remaining leaves and dependencies
 
@@ -51,9 +63,9 @@ universal representation; it must not be an input assuming lift existence.
 
 | Leaf / proposed new module | Lean statement sketch | Dependencies / status | Cap |
 |---|---|---|---|
-| T1 / Deformations/RepresentationTheory/PadicIdealCofinal | `theorem exists_p_pow_le_of_isOpen (I : Ideal A) (hI : IsOpen (I : Set A)) : ∃ n : ℕ, Ideal.span {(p : A)^n} ≤ I` for any topological Zp-algebra with continuous scalar multiplication | READY: norm_p, continuous algebraMap, powers tend to zero. No finite/free/local assumptions needed. First dispatch. | 120 |
-| T2 / Deformations/RepresentationTheory/PadicIdealOpen | `theorem isOpen_span_p_pow (n : ℕ) : IsOpen (Ideal.span {(p : A)^n} : Set A)` for finite free A with Zp-module topology | READY: finite basis, open scalar ideals, continuous linear equivalence. This is topology only. | 250 |
-| T3 / Deformations/RepresentationTheory/FlatPadic | `theorem isFlatAt_iff_powers : ρ.IsFlatAt v ↔ ∀ n : ℕ, (ρ.baseChange (A ⧸ Ideal.span {(p : A)^n})).HasFlatProlongationAt v` | T1+T2+FlatCofinal; READY after T1/T2. Coefficients as in lifts. | 100 |
+| T1 / Deformations/RepresentationTheory/PadicIdealCofinal | `theorem exists_p_pow_le_of_isOpen (I : Ideal A) (hI : IsOpen (I : Set A)) : ∃ n : ℕ, Ideal.span {(p : A)^n} ≤ I` for any topological Zp-algebra with continuous scalar multiplication | DONE W10 (`3474e339`): norm_p, continuous algebraMap, powers tend to zero. No finite/free/local assumptions needed. | 120 |
+| T2 / Deformations/RepresentationTheory/PadicIdealOpen | `theorem isOpen_span_p_pow (n : ℕ) : IsOpen (Ideal.span {(p : A)^n} : Set A)` for finite free A with Zp-module topology | DONE W10 (`ab6e2d50`): finite basis, open scalar ideals, continuous linear equivalence. This is topology only. | 250 |
+| T3 / Deformations/RepresentationTheory/FlatPadic | `theorem isFlatAt_iff_powers : ρ.IsFlatAt v ↔ ∀ n : ℕ, (ρ.baseChange (A ⧸ Ideal.span {(p : A)^n})).HasFlatProlongationAt v` | DONE W10 (`8f9a51a8`): T1+T2+FlatCofinal. Coefficients as in lifts. | 100 |
 | E1 / GaloisRepresentation/SerreWeight/ExtensionKummer | `theorem ordinary_extension_unit_iff : UnitKummerClass (extensionClass τ) ↔ IsPeuRamifiee τ` | BLOCKED on E: continuous H1, finite descent, unramified twists, basis invariance; W5.2 alone does not prove it. | 300 |
 | S1 / GaloisRepresentation/SerreWeight/Normalization | `serreWeight_ordinary_peu ... : serreWeight p τ = 2`; separate ordinary-tres value p+1 and niveau-two value 2 | BLOCKED on E1+S0+F; independent complete Serre recipe, including exceptional/scalar cases. | 250 |
 | R1 / GaloisRepresentation/SerreWeight/FiniteFlatOrdinary | `theorem finiteFlat_ordinary_peu (hf : IsFiniteFlatModel τ) (ho : HasOrdinaryInertia τ) (hd : HasCyclotomicDet τ) : IsPeuRamifiee τ` | BLOCKED on R0 ordinary extension/unit classification and E. Neither hf nor peu may be defined by the other. | 300 |
@@ -100,7 +112,7 @@ rg -n 'theorem|lemma' FLT/Deformations/RepresentationTheory/{FlatDiscrete,FlatRe
 The first search has no implemented weight/crystalline predicates. Acceptance
 for each W10 proof leaf: foreground `LEAN_NUM_THREADS=2 lake build MODULE`,
 `LEAN_NUM_THREADS=2 lake exe runLinter MODULE` individually, and every new
- declaration's `#print axioms` restricted to propext, Classical.choice,
+declaration's `#print axioms` restricted to propext, Classical.choice,
 Quot.sound. Keep proof modules ≤ their row's cap; add sorted FLT.lean imports.
 
 ## Historical baseline and admission (2026-09-30)
