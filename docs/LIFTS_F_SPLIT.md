@@ -9,7 +9,7 @@ W7 F5a checked 20:17 UTC: build, module lint, ten axiom audits passed;
 logs `Scratch/LiftsW7/F5a-{build,lint,axioms}.log`; 92/250 lines.
 Source-lemma leaves, each at most 400 lines including headers. F1–F3
 are DONE (W6); F4a is DONE (W7, RootInertiaTransitivity, cap 300).
-F4 endpoints, finite-tower surjectivity and F5 are DONE (W9); F6 remains.
+F1–F6 and finite-tower surjectivity are DONE (W9); integration into lifts remains.
 Caps are hard stop limits, not claims that unimplemented proofs fit.
 This document is capped at 200 lines. No weight definition or classification
 is supplied by this split.
@@ -154,12 +154,12 @@ W7 F5a DONE: `RootCharacterResidue` proves algebraic closedness and transports
 characteristic from the completion residue field, via an explicit algebra
 equivalence with its algebraic closure. It also proves existence of a prime
 characteristic. W9 DONE (172/400): build, module lint and 13 axiom audits passed
-2026-10-02; evidence `Scratch/LiftsW9/Coefficients-{build,lint,axioms}.log`.
+2026-10-02; `Scratch/LiftsW9/Coefficients-{build,lint,axioms}.log`; no embedding of all k is assumed.
 Anchors: Mathlib `IsAlgClosed.lift`, `GaloisField`,
 `bijective_frobeniusAlgEquivOfAlgebraic_pow`, `residueFieldMap`.
 Dependencies: W7 F4 surjectivity and W7 F5a residue bridge (both proved).
 
-## F6 — omega-one equals cyclotomic, READY after W9 F5, cap 400
+## F6 — omega-one equals cyclotomic, DONE (W9), cap 400
 
 New `FLT/AbsoluteGaloisGroup/FundamentalCyclotomic.lean`.
 Sources S §2 and L IV §4. Restrict to K=ℚ and the place over p, transport
@@ -178,7 +178,7 @@ Existing `LocalCyclotomicTame` supplies the arithmetic for primitive ζp: ζp−
 has normalized (p−1)-st power, and its reduced ratio is the cyclotomic value.
 Its proved unit comparison supplies the normalization bridge for this leaf;
 no cyclotomic equality may be passed as an input. Dependencies: F1–F5.
-Anchor: FLT's `cyclotomicCharacter.toZMod`; valuation and primitive-root APIs.
+W9 checked 2026-10-02 (75/400): build/lint/five axioms/p=2 passed; `Scratch/LiftsW9/Cyclotomic-{build,lint,axioms}.log`.
 
 ## Rerunnable API evidence and acceptance
 
