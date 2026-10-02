@@ -175,7 +175,7 @@ Also expose the exact overlap equation and the two-edge point-overlap
 criterion, so the n=2 case is verified rather than hidden in indexing.
 No pinching universal property is claimed by the open-gluing colimit.
 
-### E4b — normalization and node cocone for n≥2, cap 340, ready after E4a
+### E4b — normalization and node cocone for n≥2, cap 340, implemented
 
 New `PolygonCyclicCocone.lean`, same namespace. Restriction to the first
 and second polynomial factors gives the normalization maps into a node.
@@ -282,8 +282,8 @@ rg -n 'mem_smoothLocus|preimage_smoothLocus_eq' $M/AlgebraicGeometry/Morphisms/S
 rg -n 'does not|not proved|smooth/node' FLT/Mazur/CurveNode.lean
 ```
 
-E1–E3 are implemented; E4–E5 remain blocked by gluing and arbitrary-target
-pinching descent. Build in the foreground with LEAN_NUM_THREADS=2;
+E1–E3 and E4a–b are implemented; E4c–d and E5 remain blocked by the
+one-gon coordinate bridge and arbitrary-target descent. Build with LEAN_NUM_THREADS=2;
 run `lake exe runLinter FLT.Mazur.MODULE` separately for each module. Audit all
 new declarations with collectAxioms; allow only propext/Classical.choice/Quot.sound.
 C-sort FLT.lean public imports; commit each leaf locally; never push. If any
@@ -358,3 +358,10 @@ Its foreground module build and individual runLinter passed; collectAxioms
 checked all 35 declarations (GOAL_MAZUR_W9_ATLAS_AXIOMS.txt, untracked),
 allowing only propext, Classical.choice and Quot.sound. The two-gon
 intersection theorem retains both Laurent edges. E4b remains next.
+
+E4b W9 checked 2026-10-02 23:18 UTC: PolygonCyclicCocone is 211/340 lines.
+Its foreground module build, individual runLinter and all 53 collectAxioms
+checks passed (GOAL_MAZUR_W9_COCONE_AXIOMS.txt, untracked; only the three
+allowed axioms). The actual normalization and nodes satisfy the specified
+pinching cocone for every n≥2. E4c–d and Mazur G1 remain open; their exact
+remaining contracts and optional smaller caps are in untracked BLOCKED.md.
