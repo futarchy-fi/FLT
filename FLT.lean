@@ -205,6 +205,7 @@ public import FLT.EllipticCurve.RCBAddition
 public import FLT.EllipticCurve.RCBComparison
 public import FLT.EllipticCurve.RCBIntegral
 public import FLT.EllipticCurve.RCBPoints
+public import FLT.EllipticCurve.SmallResidueTorsion
 public import FLT.EllipticCurve.SupersingularPolynomial
 public import FLT.EllipticCurve.Torsion
 public import FLT.EllipticCurve.TorsionFiber

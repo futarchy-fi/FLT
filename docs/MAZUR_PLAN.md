@@ -322,6 +322,17 @@ point group computation, although a chosen proof may establish more.
 
 ### A1. Rational p-torsion forces semistability and controls small primes
 
+Implemented subcase: `FLT/EllipticCurve/SmallResidueTorsion.lean` proves that
+a good integral Weierstrass model over a valuation subring with finite residue
+field of cardinality at most three has no generic-fiber point of prime order
+at least seventeen. The coordinate bound `#E(k) ≤ #k² + 1` replaces Hasse's
+bound here. A unit leading coefficient of the division polynomial forces
+torsion coordinates to be integral, proving that the reduction kernel has no
+torsion of invertible order. The unit condition for large primes follows from
+the small residue cardinality. This proves the good-reduction obstruction,
+not semistability, the bad-reduction cases, or `NoLargePrimeTorsion`.
+
+
 ```lean
 theorem semistable_of_large_prime_point (hP) : SemistableEverywhere E
 

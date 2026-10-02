@@ -29,4 +29,5 @@ import FLTTest.MazurShiftFibers
 import FLTTest.MazurSmoothGeometry
 import FLTTest.MazurStalkFibers
 import FLTTest.QuaternionFiniteIndex
+import FLTTest.SmallResidueTorsion
 import FLTTest.ThreeAdicConsolidation
