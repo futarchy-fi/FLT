@@ -150,7 +150,7 @@ our proved branch disjointness. A binary pushout of all node charts would
 lose the second overlap for n=2. All caps include helpers and imports.
 The signatures below are contracts until their leaf is built.
 
-### E4a — cyclic open atlas for n≥2, cap 360, ready
+### E4a — cyclic open atlas for n≥2, cap 360, implemented
 
 New `PolygonCyclicAtlas.lean`, namespace `FLT.Mazur.PolygonCyclicAtlas`.
 Index edges and nodes by `Fin n`; edge i maps by E2.left to node i and by
@@ -165,7 +165,7 @@ Dependencies: E2, ProjectiveLineCharts, Mathlib locally directed gluing.
 def diagram (K : Type u) [Field K] (n : ℕ) : WalkingMultispan (shape n) ⥤ Scheme
 -- h installs thinness; all diagram maps are proved open immersions.
 def scheme (K : Type u) [Field K] (n : ℕ) (h : 2 ≤ n) : Scheme
- def chart (i : Fin n) : PolygonNodeBranches.node K ⟶ scheme K n h
+def chart (i : Fin n) : PolygonNodeBranches.node K ⟶ scheme K n h
 instance (i : Fin n) : IsOpenImmersion (chart K n h i)
 theorem charts_cover (x : scheme K n h) : ∃ i y, chart K n h i y = x
 def toBase : scheme K n h ⟶ Spec (.of K)
@@ -352,3 +352,9 @@ with only propext, Classical.choice and Quot.sound. Output is untracked
 GOAL_MAZUR_W8_ALL_AXIOMS.txt. All four foreground module builds and individual
 module lints passed; all line caps, C-sorted FLT.lean imports, and
 `git diff --check` passed. No whole-library build or lint was run.
+
+E4a W9 checked 2026-10-02 23:15 UTC: PolygonCyclicAtlas is 258/360 lines.
+Its foreground module build and individual runLinter passed; collectAxioms
+checked all 35 declarations (GOAL_MAZUR_W9_ATLAS_AXIOMS.txt, untracked),
+allowing only propext, Classical.choice and Quot.sound. The two-gon
+intersection theorem retains both Laurent edges. E4b remains next.
