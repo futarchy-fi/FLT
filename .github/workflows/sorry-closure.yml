@@ -1,0 +1,34 @@
+# Two gate questions that need no Lean toolchain, so they can answer in seconds
+# on every PR:
+#
+#   1. how many *live* sorry/admit holes are there, as opposed to the word
+#      "sorry" appearing in a docstring (naive grep reports 67 where 56 are
+#      live; the 11-occurrence offset is only stable until a packet reflows a
+#      comment);
+#   2. is every module under FLT/ actually inside the `lake build` import
+#      closure — `lakefile.toml` declares `globs = ["FLT", "FermatsLastTheorem"]`,
+#      bare module names rather than `FLT.*`, so a file that is never added to
+#      FLT.lean is never compiled and passes a build gate vacuously.
+#
+# (2) is the one that bites: FLT/NumberField/ZetaFE/ZeroTheoryN2.lean was merged
+# in PR #9 and could not compile at all — it imported a Mathlib module absent at
+# the pinned revision — and no gate noticed, because nothing imports it.
+
+name: sorry count and build closure
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  closure:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Report live / prose / naive sorry counts
+        run: python3 scripts/sorry_count.py
+
+      - name: Fail if any module under FLT/ is outside the build closure
+        run: python3 scripts/sorry_count.py --closure
