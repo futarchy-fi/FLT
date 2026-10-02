@@ -332,6 +332,14 @@ torsion of invertible order. The unit condition for large primes follows from
 the small residue cardinality. This proves the good-reduction obstruction,
 not semistability, the bad-reduction cases, or `NoLargePrimeTorsion`.
 
+The same module now proves integral affine coordinates for torsion of
+invertible order without a good-reduction assumption. Consequently any point
+of prime order at least seventeen specializes to a **singular** affine point
+over residue fields of cardinality at most three, and the reduced
+discriminant vanishes. These statements apply to arbitrary integral models.
+They do not classify additive versus multiplicative reduction, identify
+Néron components, or exclude torsion specializing to the singular point.
+All these distinctions are necessary before claiming A1 is complete.
 
 ```lean
 theorem semistable_of_large_prime_point (hP) : SemistableEverywhere E

@@ -19,7 +19,12 @@ run_elab do
       ``WeierstrassCurve.reducePoint_eq_zero_of_large_prime,
       ``WeierstrassCurve.eq_zero_of_reducePoint_eq_zero_of_unit_nsmul,
       ``WeierstrassCurve.eq_zero_of_large_prime_small_residue,
-      ``WeierstrassCurve.no_large_prime_torsion_of_small_residue] do
+      ``WeierstrassCurve.no_large_prime_torsion_of_small_residue,
+      ``WeierstrassCurve.integral_coordinates_of_unit_nsmul,
+      ``WeierstrassCurve.isUnit_prime_of_residue_card_lt,
+      ``WeierstrassCurve.not_nonsingular_residue_of_large_prime,
+      ``WeierstrassCurve.exists_singular_reduction_of_large_prime_order,
+      ``WeierstrassCurve.residue_discriminant_eq_zero_of_large_prime_order] do
     for a in ← Lean.collectAxioms n do
       unless #[``propext, ``Classical.choice, ``Quot.sound].contains a do
         throwError "Unexpected axiom {a} in {n}"
