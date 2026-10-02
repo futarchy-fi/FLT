@@ -365,3 +365,18 @@ checks passed (GOAL_MAZUR_W9_COCONE_AXIOMS.txt, untracked; only the three
 allowed axioms). The actual normalization and nodes satisfy the specified
 pinching cocone for every n≥2. E4c–d and Mazur G1 remain open; their exact
 remaining contracts and optional smaller caps are in untracked BLOCKED.md.
+## E4 one-component overlap and chart gluing
+
+`OneGonTransition` constructs the involution t ↦ t/(t-1) on the actual
+ring R[t, 1/(t(t-1))], over any commutative ring. `OneGonOverlap` proves
+that the resulting map to the Laurent chart is an open immersion with image
+D(z-1). `OneGonGluing` glues this map to the existing B-chart puncture,
+constructs both open chart inclusions, proves their joint coverage, and
+constructs the structure morphism over the coefficient field.
+
+`FLTTest/MazurOneGon` checks the transitive axioms of all declarations in
+both new namespaces, and instantiates the involution over Z and ZMod 2.
+The chart pushout is constructed; identification with the cyclic pinching
+of P¹ and its specified normalization/node cocone is still missing.
+This does not close E4 for arbitrary n, E5, the genus calculation, the
+relative group action, or Mazur_statement.

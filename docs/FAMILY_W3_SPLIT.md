@@ -1,0 +1,244 @@
+# FAMILY-W3 — prerequisites for the two potential-modularity gates
+
+Scope: the two gaps in `FAMILY_GOAL_LEDGER.md`, not GL* lifts or three-adic
+sorting. Baseline `7a4bca25`; checked 2026-09-30 with the `rg` commands below.
+F1–F3 are present. Snowden [S, §3 (A1), Thm. 5.1.2] requires **residual**
+absolute irreducibility on the cyclotomic kernel, as well as weight two for
+the characteristic-zero lift. Neither follows from the present global
+absolute-irreducibility theorem by restriction alone.
+
+W1–W5 are implemented in the modules below. W4 now proves the unconditional
+quadratic self-twist theorem. The arithmetic restriction and weight-two
+bridges still require the downstream results listed below.
+
+Sources: [S] Snowden, arXiv:0905.4266v1, §1.2, §3 and Thm. 5.1.2;
+[R] Raynaud, *Schémas en groupes de type (p,...,p)*, BSMF 102 (1974),
+Thm. 3.3.3 / Cor. 3.3.6 (the finite-flat model gate in the parent ledger);
+[T] Tate, *p-divisible groups*, Proc. Conf. Local Fields (1967), §2
+(the exact sequences required of torsion levels);
+[C] Clifford, *Representations induced in an invariant subgroup*,
+Ann. Math. 38 (1937), restriction to a normal subgroup.
+Only [S]'s text is cached in `Scratch/snowden.txt`; [R]/[T]/[C] identify
+source obligations, not a verified ready-to-import theorem in Lean.
+
+## W1 — IMPLEMENTED: coefficient torsion-level exactness (cap 220 lines)
+
+New `FLT/Deformations/RepresentationTheory/PrimePowerExact.lean`.
+Generic coefficient algebra for the torsion tower in [T, §2]. For a domain
+R and a nonzero a, multiplication by a^n embeds R/(a^m) into R/(a^(m+n));
+reduction onto R/(a^n) has precisely that image as kernel. Use explicit
+linear maps, not an existence hypothesis for an exact sequence.
+
+Namespace `GaloisRepresentation.PrimePower`; binders:
+```lean
+variable {R : Type*} [CommRing R]
+abbrev Quot (a : R) (n : ℕ) := R ⧸ Ideal.span {a ^ n}
+-- inclusion multiplies representatives by a^n; reduction keeps representatives.
+def inclusion (a : R) (m n : ℕ) : Quot a m →ₗ[R] Quot a (m+n)
+def reduction (a : R) (m n : ℕ) : Quot a (m+n) →ₗ[R] Quot a n
+theorem reduction_surjective (a : R) (m n : ℕ) :
+    Function.Surjective (reduction a m n)
+theorem exact (a : R) (m n : ℕ) :
+    Function.Exact (inclusion a m n) (reduction a m n)
+theorem inclusion_injective [IsDomain R] {a : R} (ha : a ≠ 0) (m n : ℕ) :
+    Function.Injective (inclusion a m n)
+```
+Dependencies: Mathlib quotient linear maps and exactness only.
+Anchors: `Submodule.mapQ`, `Submodule.mapQ_apply`, `Ideal.mem_span_singleton`,
+`Submodule.Quotient.mk_eq_zero`, `Function.Exact`.
+Apply later to a=p and the coordinates of a finite free coefficient module.
+This does not construct compatible finite-flat models or a p-divisible group.
+
+## W2 — IMPLEMENTED: self-twist trace support (cap 160 lines)
+
+New `FLT/Deformations/RepresentationTheory/SelfTwistTrace.lean`.
+The elementary character identity underlying the index-two case of [C].
+For any representation over a field, conjugacy with its character twist
+forces the trace to vanish where the character differs from one.
+Namespace `Representation`; binders `k G V`, `[Field k] [Group G]`,
+`[AddCommGroup V] [Module k V]`, `ρ : Representation k G V`:
+```lean
+theorem trace_eq_zero_of_selfTwist
+    (χ : G →* kˣ) (e : V ≃ₗ[k] V)
+    (he : ∀ g, e.conj (ρ g) = (χ g : k) • ρ g)
+    (g : G) (hg : χ g ≠ 1) : LinearMap.trace k V (ρ g) = 0
+```
+Also expose the contrapositive at one element with nonzero trace. No
+finite-dimensional hypothesis is necessary for this trace identity.
+Dependencies: Mathlib `LinearAlgebra.Trace`, `RepresentationTheory.Basic`.
+Anchors: `LinearMap.trace_conj'`, linearity of `LinearMap.trace`.
+W4 must **construct** χ and e; W2 does not assume (A1) or prove it.
+
+## W3 — IMPLEMENTED: tame spectrum excludes a nontrivial twist (cap 180 lines)
+
+New `FLT/Deformations/RepresentationTheory/TameTraceObstruction.lean`.
+Elementary final calculation needed after the finite-flat inertia-weight
+classification [R]. Given eigenvalues a,b, an eigenvalue ratio of order
+more than two prevents trace zero. In particular the ordinary ratio of
+order p−1 and niveau-two ratio of order p+1 work for p≥17.
+Namespace `Representation`, same binders as W2:
+```lean
+theorem add_ne_zero_of_orderOf_div_gt_two (a b : kˣ)
+    (h : 2 < orderOf (a / b)) : (a : k) + (b : k) ≠ 0
+theorem selfTwist_eq_one_of_tame_eigenvalues
+    (χ : G →* kˣ) (e : V ≃ₗ[k] V)
+    (he : ∀ g, e.conj (ρ g) = (χ g : k) • ρ g)
+    (g : G) (a b : kˣ)
+    (htrace : LinearMap.trace k V (ρ g) = (a : k) + (b : k))
+    (horder : 2 < orderOf (a / b)) : χ g = 1
+```
+Add specializations with `17 ≤ p` and `orderOf (a/b) = p-1` or `p+1`.
+Dependencies: W2, `orderOf_le_of_pow_eq_one`; the proof is that a+b=0
+would force (a/b)^2=1. This is not the finite-flat inertia classification:
+the eigenvalues, exact order, and trace formula must still be constructed.
+
+## W4 — DONE: quadratic twist from cyclic restriction
+
+Checked 2026-09-30 19:37 UTC: foreground builds, individual module lint,
+and `#print axioms` passed for each new module; only `propext`,
+`Classical.choice`, and `Quot.sound` occur. Local commits:
+
+| Leaf | Module | Lines / cap | Commit |
+|---|---|---|---|
+| W4a2 | `ThreeStableLines` | 83 / 150 | `03e0e1ce` |
+| W4a3 | `CyclicScalarRestriction` | 85 / 180 | `c707386b` |
+| W4a4 | `CyclicStableLinePair` | 57 / 100 | `f0ecade6` |
+| Final | `CyclicRestrictionTwist` | 39 / 60 | `67ce77f8` |
+
+All modules are under `FLT/Deformations/RepresentationTheory/`.
+`Representation.exists_quadratic_selfTwist` takes `hV : finrank k V = 2`,
+`hchar : (2 : k) ≠ 0`, irreducibility, and reducibility on the normal subgroup.
+It constructs the nontrivial quadratic character, trivial on that subgroup,
+and the conjugating linear equivalence. It needs an algebraically closed
+field and cyclic quotient; finiteness of the quotient is unnecessary.
+`exists_stableLines_pair_of_cyclic_quotient` proves the exact two-line orbit.
+The existing `StableLinePair` and `PermutedSummandsTwist` supply the initial
+complementary pair and the sign/intertwiner construction respectively.
+
+## W5 — DONE: uniqueness of extension of a model morphism (cap 180 lines)
+
+`FLT/GroupScheme/GenericFiberMapUnique.lean` (41 lines).
+Checked 2026-09-30: foreground module build and per-module lint passed;
+`#print axioms` for both declarations reports only standard axioms.
+Mathlib `Algebra.TensorProduct.includeRight_injective` and
+`IsFractionRing.injective` discharge injectivity; `Algebra.modelMap_unique`
+needs flatness only for B and no Hopf structure.
+A bounded first step toward model compatibility, not a claim of [R]'s
+full existence/faithfulness theorem. For a domain O, its fraction field K,
+and O-flat commutative Hopf algebras A,B, prove the following underlying
+algebra-map statement (tensor inclusions are `TensorProduct.includeRight`):
+```lean
+theorem modelMap_unique (f g : A →ₐ[O] B)
+    (h : (Algebra.TensorProduct.includeRight : B →ₐ[O] K ⊗[O] B).comp f =
+         (Algebra.TensorProduct.includeRight : B →ₐ[O] K ⊗[O] B).comp g) : f = g
+```
+Dependencies discharged: the fraction-field tensor inclusion is injective
+by the Mathlib localization/flatness API specialization above. W1 will feed
+the compatible torsion-level maps.
+Anchor: `FLT/GroupScheme/FiniteFlat.lean:Ideal.comapQuotientLinearMap_injective`
+illustrates the existing torsion-free/injective-map conventions.
+
+## Cyclotomic quadratic detection — complete
+
+All D1–D4 leaves are proved. Caps count whole new modules; no ramification,
+inertia-surjectivity or tame-comparison conclusion is assumed in an input record.
+
+1. D1 — DONE (cap 180): factor a character trivial on `ker ε` through `range ε`.
+   For cyclic `range ε`, prove every generator detects a nontrivial factor;
+   if its square is one and the coefficient characteristic is not two, its
+   value on that generator is `-1`. This is a general group lemma.
+   Implemented in `CharacterRange.lean` (92 lines): factorization, generator
+   detection, and quadratic value `-1` (even without excluding characteristic
+   two). Checked 2026-09-30: foreground build, module lint and all seven
+   declarations’ axiom checks pass; standard axioms only.
+2. D2 — DONE (cap 350): for an odd prime p, prove that the local extension
+   `ℚ_p(μ_p)/ℚ_p` is totally ramified of degree p−1. Start from
+   `cyclotomic_comp_X_add_one_isEisensteinAt` and the minimal polynomial of
+   ζ_p−1; prove the ramification and residue-degree statements explicitly.
+   Implemented in `LocalCyclotomicRamification.lean` (187 lines). Constructs
+   an `IsCyclotomicExtension {p} ℚ_[p] E` with integral closure S, degree
+   and ramification index p−1, and inertia degree 1; also proves irreducibility,
+   degree and the shifted minimal polynomial in arbitrary field presentations.
+   The result includes p=2. Checked 2026-09-30: foreground build, module lint,
+   and all eleven theorem axiom checks pass (standard axioms only).
+3. D3 — DONE: local inertia surjectivity, tame comparison and generator.
+   `LocalCyclotomicCharacter.lean` (124/350 lines) provides the finite
+   character, residue equivalence, naturality and geometric-sum formula.
+   W7 has discharged the arithmetic bridges without assuming total
+   ramification or inertia-surjectivity conclusions:
+
+   - D3a COMPLETE: `LocalCyclotomicInertia.lean` (177/220) transports D2
+     through `IsIntegralClosure.equiv` and the p-adic/completion equivalences,
+     proves residue surjectivity and full finite inertia, and constructs the
+     chosen cyclotomic subfield. Commit `1b986232`.
+   - D3b COMPLETE: `LocalCyclotomicSurjectivity.lean` (62/200) proves
+     `inertiaCharacter_surjective` using finite inertia comparison and
+     character naturality. Commit `739c0afc`.
+   - D3c COMPLETE: `LocalCyclotomicTame.lean` (200/300) proves
+     `tameCharacter_eq_inertiaCharacter`. The shifted polynomial writes
+     `(ζ−1)^(p−1)` as p times an integral unit. This constructs the correcting
+     unit relative to the chosen tame root; inertia fixes its reduction.
+   - D3d COMPLETE: `LocalCyclotomicGenerator.lean` (46/80) constructs one
+     inertia element generating both the cyclotomic and tame unit groups.
+
+   D3a–D3d checked 2026-09-30 20:34 UTC: foreground module builds, individual
+   `lake exe runLinter MODULE`, and `W7_D3{A,B,C,D}_AXIOMS.lean` pass;
+   every checked declaration uses only propext, Classical.choice, Quot.sound.
+
+4. D4 — DONE: quadratic detection on actual local inertia.
+   `CyclotomicQuadraticDetection.lean` (101/220 lines) gives the finite/cyclic
+   quotient, global detection and `character_map_local`.
+   W7 D4b: `CyclotomicInertiaDetection.lean` (62/180) proves
+   `exists_inertia_detector` and `exists_inertia_detected_selfTwist`.
+   The detector belongs to `localInertiaGroup (rationalPlace p)` and χ is
+   evaluated on its specified absolute-Galois restriction to ℚ.
+   It uses the proved D3b surjectivity and W4 self-twist, with no arithmetic
+   conclusion supplied as an additional hypothesis.
+
+Checked 2026-09-30 20:37 UTC: all five W7 modules pass foreground builds and
+individual `lake exe runLinter MODULE`; axiom checks report only propext,
+Classical.choice and Quot.sound. `lake env lean W7_TARGET_CHECK.lean` assigns
+the new theorems to all five exact D3/D4 propositions from `W6_REMAINING.lean`
+and checks both D4b theorems' axioms. Sorted imports and `git diff --check`
+pass. All commits are local; nothing was pushed.
+
+D4 supplies detection only. To contradict W3 at that same t, the finite-flat
+inertia classification must still construct eigenvalues, their exact ratio
+order p−1 or p+1, and the trace formula. `IsHardlyRamified.mem_isCompatible`
+remains admitted; W4 alone does not discharge it.
+
+## Gates still outside this wave
+
+W1/W5 only address the algebra under the finite-flat → weight-two bridge.
+One still needs existence of compatible model morphisms, exact integral
+p-divisible levels, and the p-adic comparison theorem. [S, §1.2] defines
+weight two using `(V ⊗ B_dR)^G` and graded ranks 1 in degrees 0 and −1.
+No Galois de Rham/Hodge–Tate comparison API was found in FLT/Mathlib; do not
+rename `IsFlatAt` to “weight two” or package that conclusion as input data.
+These are future programs requiring further source splits, not ≤400-line leaves.
+W2–W4 still need the finite-flat tame inertia spectrum before concluding
+(A1); cyclotomic quadratic-character detection is now proved. This wave does not
+replace `mem_isCompatible`, modify its statement, or discharge its admission.
+
+## Recheck and acceptance
+
+```sh
+rg -n 'isAbsolutelyIrreducible|complexConjugation_fixed' FLT/GaloisRepresentation/HardlyRamified/AbsoluteIrreducibility.lean
+rg -n 'class GaloisRep.IsFlatAt|HasFlatProlongationAt' FLT/Deformations/RepresentationTheory/GaloisRep.lean
+rg -n 'isOpen.*|IsOpen' FLT/GaloisRepresentation/HardlyRamified/FlatCoefficientExtension.lean
+rg -n 'trace_conj' .lake/packages/mathlib/Mathlib/LinearAlgebra/Trace.lean
+rg -n 'mapQ_apply|def mapQ' .lake/packages/mathlib/Mathlib/LinearAlgebra/Quotient/Basic.lean
+rg -n 'deRham|HodgeTate|BarsottiTate|quadratic_selfTwist' FLT .lake/packages/mathlib/Mathlib
+```
+The quadratic self-twist declaration is now present. W1–W3 declarations were
+checked with `rg` in their named modules on 2026-09-30. Per leaf: foreground
+`LEAN_NUM_THREADS=2 lake build MODULE`, `lake exe runLinter MODULE` alone,
+`#print axioms` (standard axioms only), sorted `FLT.lean` import, local commit.
+No push; no new axioms, admissions, arithmetic input records, or calls to
+admitted arithmetic endpoints. Source caps count the entire new module.
+
+Recheck W4 for each module in its table: `LEAN_NUM_THREADS=2 lake build MODULE`,
+then `lake exe runLinter MODULE` separately. Import `CyclicRestrictionTwist`
+and run `#print axioms Representation.exists_quadratic_selfTwist` for the
+complete dependency audit. Check imports with
+`grep '^public import' FLT.lean | LC_ALL=C sort -c`.
