@@ -341,6 +341,16 @@ They do not classify additive versus multiplicative reduction, identify
 Néron components, or exclude torsion specializing to the singular point.
 All these distinctions are necessary before claiming A1 is complete.
 
+For split multiplicative reduction, `FLT/FreyCurve/Serre/TateRationalTorsion.lean`
+proves that the Tate torsion exponent on points over the local field is
+injective when the prime exceeds the finite residue cardinality; the
+prime-torsion group then has cardinality at most that prime. The proof uses
+the existing Tate uniformization and proves that the local field has no
+nontrivial roots of unity of that prime order. This is a statement about
+the Tate exponent, **not yet about the Néron component group**. It does not
+exclude a cyclic rational prime-torsion subgroup. Identifying components,
+handling nonsplit/additive reduction, and A2–A5 remain open.
+
 ```lean
 theorem semistable_of_large_prime_point (hP) : SemistableEverywhere E
 
