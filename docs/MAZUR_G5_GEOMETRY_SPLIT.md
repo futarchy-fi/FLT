@@ -234,6 +234,29 @@ theorem isPushout (hn : 0 < n) :
     (PolygonPinching.toNodes K n) (normalization K n) (nodes K n)
 ```
 
+W10 proves the following prerequisites, without claiming arbitrary-target descent:
+
+- `PinchingAffineDescent` (137/180) constructs unique descents for both actual
+  chart rings into every affine target scheme, without requiring morphisms
+  to preserve K. Theorems: `node_desc_affine`, `oneGon_desc_affine`.
+- `PinchingNeighborhoods` (95/140) finds principal neighborhoods defined by
+  elements of A or B with node value one. For B, interpolation of two
+  normalized polynomials produces an element equal to one at both endpoints.
+  This includes characteristic two and gives a neighborhood inside any open
+  containing both endpoints.
+
+Still missing: the equalizer/pullback properties after localization at those
+chosen elements. The affine-target theorems have full affine-line sources;
+restricted source opens are spectra of localized polynomial rings. They
+cannot be used unchanged for maps to an affine neighborhood in an arbitrary
+Y. Then the locally defined morphisms must be glued, with uniqueness proved,
+and descended across the specified global cocone.
+
+Remaining proposed leaves, each at most 240 lines (contracts, not declarations):
+localized node ring pullback; localized B equalizer; node arbitrary-target
+descent; one-gon arbitrary-target descent; polygon cocone assembly; global
+pinching universal property. Untracked BLOCKED.md specifies these contracts.
+
 The ring pullback proves only the affine-target case. Neither that case
 nor an open-gluing universal property closes this leaf. If local descent
 exceeds the cap, commit its proved prerequisites and record exact smaller
@@ -385,3 +408,9 @@ foreground `LEAN_NUM_THREADS=2 lake build FLT.Mazur.MODULE` and individual
 Classical.choice and Quot.sound; output is untracked
 GOAL_MAZUR_W10_E4C_AXIOMS.txt. All caps, sorted FLT.lean imports and
 `git diff --check` passed. E4d, E5 and Mazur_statement remain open.
+
+E4d prerequisites checked 2026-10-02 23:50 UTC: PinchingAffineDescent
+(137/180) and PinchingNeighborhoods (95/140) passed foreground module builds,
+individual module lints and collectAxioms on 16 + 11 declarations. Output:
+untracked GOAL_MAZUR_W10_E4D_AXIOMS.txt; only the three allowed axioms occur.
+The arbitrary-target statements and the global IsPushout are not proved.
