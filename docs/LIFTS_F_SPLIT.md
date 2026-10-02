@@ -9,7 +9,7 @@ W7 F5a checked 20:17 UTC: build, module lint, ten axiom audits passed;
 logs `Scratch/LiftsW7/F5a-{build,lint,axioms}.log`; 92/250 lines.
 Source-lemma leaves, each at most 400 lines including headers. F1–F3
 are DONE (W6); F4a is DONE (W7, RootInertiaTransitivity, cap 300).
-F4 endpoints are DONE (W8); F5–F6 and finite-tower surjectivity remain.
+F4 endpoints and finite-tower surjectivity are DONE (W9); F5–F6 remain.
 Caps are hard stop limits, not claims that unimplemented proofs fit.
 This document is capped at 200 lines. No weight definition or classification
 is supplied by this split.
@@ -126,9 +126,9 @@ surjectivity. W7 `FundamentalTame` proves both displayed endpoints (in all
 positive degrees), plus `LocalRamification.tameRootCharacter_surjective`.
 W8 filtration DONE (274/300); finite p-groups and tower stability DONE (228/250).
 W8 pro-p endpoint and explicit compatible-family homeomorphism DONE (235/250).
-W9 tame quotient DONE (207/250); first-group tower surjectivity remains.
-W9 checked 2026-10-02: tame build, module lint and axiom audit passed.
-Evidence: `Scratch/LiftsW9/Tame-{build,lint,axioms}.log`; W8 logs retained.
+W9 tame quotient DONE (207/250); tower surjectivity DONE (119/250).
+W9 checked 2026-10-02: both builds, module lints and 25 axiom audits passed.
+Evidence: `Scratch/LiftsW9/{Tame,Restriction}-{build,lint,axioms}.log`.
 Anchors: HilbertTheory `IsInertiaField`, `InertiaComparison` restriction
 surjectivity, QuotientGroup `lift`, `quotientKerEquivRange`. Dependencies:
 F1–F3; the existing level-one tame kernel is not enough.
