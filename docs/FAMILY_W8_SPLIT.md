@@ -183,3 +183,9 @@ S3 checked 2026-09-30 20:54 UTC: foreground build, individual module lint and
 All seven theorems have only standard axioms. S3 is implemented.
 `lake env lean W8_TARGET_CHECK.lean` also elaborates the exact S4/S5 propositions
 using existing APIs; neither proposition is proved by that statement check.
+
+S4 checked 2026-10-02 22:49 UTC: foreground build, individual module lint and
+`lake env lean W9_S4_AXIOMS.lean` pass for `RaynaudCoordinateCharacter`
+(106/400 lines; four theorems, only standard axioms). It uses the merged lifts
+`RootCharacter` API, proves the displayed correction, and evaluates the reduced
+coordinate ratio and character. No finite-flat presentation is assumed constructed.

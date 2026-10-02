@@ -618,6 +618,7 @@ public import FLT.GroupScheme.QuotientFiberFreeness
 public import FLT.GroupScheme.RationalCubeValuations
 public import FLT.GroupScheme.RaynaudClosureFactorization
 public import FLT.GroupScheme.RaynaudConnectedQuotient
+public import FLT.GroupScheme.RaynaudCoordinateCharacter
 public import FLT.GroupScheme.RaynaudDiagonalizableExtension
 public import FLT.GroupScheme.RaynaudDiscriminant
 public import FLT.GroupScheme.RaynaudEtaleDualExtension
