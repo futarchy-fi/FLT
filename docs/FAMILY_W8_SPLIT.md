@@ -115,8 +115,8 @@ theorem niveau_two_norm_order (hp : 1 < p) (hz : orderOf z = p * p - 1) :
 Add nonzero sums via W3. Anchors: `pow_inj_mod`, `orderOf_pow_of_dvd`,
 `orderOf_inv`; dependencies Mathlib and W3. No fundamental characters constructed.
 
-### S4 — READY NEXT, cap 400: integral unit correction and character evaluation
-Future module `RaynaudCoordinateCharacter`. [R] §3.4(9); use lifts F1–F5.
+### S4 — IMPLEMENTED, cap 400: integral unit correction and character evaluation
+Module `RaynaudCoordinateCharacter`. [R] §3.4(9); uses the lifts root API.
 Exact correction sketch using existing local notation: `v` a rational place,
 `O := v.adicCompletionIntegers ℚ`, `Kv := v.adicCompletion ℚ`,
 `Ω := AlgebraicClosure Kv`, `A := IntegralClosure O Ω`:
@@ -129,8 +129,7 @@ Exact correction sketch using existing local notation: `v` a rational place,
 ```
 Then inertia fixes the residue of z, so the reduced x-ratio equals the mth
 power of `LocalRoot.character v hn ... hα`. Anchor: `LocalCyclotomicTame`
-constructs this correction for ζ−1. The algebra bridge is ready next, deferred
-by this task's three-leaf limit. Its application to Raynaud parameters still
+constructs this correction for ζ−1. Application to Raynaud parameters still
 needs the source-to-coordinate and unramified-base transports; these are not
 part of the 400-line bridge.
 
@@ -183,3 +182,80 @@ S3 checked 2026-09-30 20:54 UTC: foreground build, individual module lint and
 All seven theorems have only standard axioms. S3 is implemented.
 `lake env lean W8_TARGET_CHECK.lean` also elaborates the exact S4/S5 propositions
 using existing APIs; neither proposition is proved by that statement check.
+
+S4 checked 2026-10-02 22:49 UTC: foreground build, individual module lint and
+`lake env lean W9_S4_AXIOMS.lean` pass for `RaynaudCoordinateCharacter`
+(106/400 lines; four theorems, only standard axioms). It uses the merged lifts
+`RootCharacter` API, proves the displayed correction, and evaluates the reduced
+coordinate ratio and character. No finite-flat presentation is assumed constructed.
+
+## S5 subdivision (W9; caps are stop limits, not feasibility claims)
+
+These four leaves replace the two unsized blocker labels. S5a is implemented;
+S5c remains a source-construction gate, not an assumed arithmetic record.
+
+### S5a — IMPLEMENTED, cap 220: normal p-group invariants
+`PGroupInvariants`; finite `V`, `ρ : Representation (ZMod p) G V`:
+```lean
+(hG : IsPGroup p G) [Nontrivial V] :
+  ∃ x : V, x ≠ 0 ∧ ∀ g, ρ g x = x
+[Representation.IsIrreducible ρ] (N : Subgroup G) [N.Normal]
+(hN : IsPGroup p N) : ∀ g : N, ∀ x, ρ g.1 x = x
+```
+Also prove the first statement for `ρ.comp f` from `IsPGroup p f.range`, and
+the second from `IsPGroup p (ρ.toHomUnits.comp N.subtype).range`.
+Dependencies: Mathlib p-group fixed-point counting and normal invariants.
+Use lifts `wildInertia_finite_image_isPGroup` on the finite automorphism image;
+wild inertia itself is not asserted to be a torsion p-group.
+
+### S5b — BLOCKED on base transport, cap 300: flat simple subquotients
+For a finite unramified extension L/Kv, let R be its integer ring and Ω an
+algebraic closure with the induced L action. For equivariant additive maps
+`i : U →+[Gal(Ω/L)] X`, `q : U →+[Gal(Ω/L)] W`, prove:
+```lean
+(hX : GaloisModule.IsFiniteFlat R L Ω X)
+(hi : Function.Injective i) (hq : Function.Surjective q) :
+  GaloisModule.IsFiniteFlat R L Ω W
+```
+Use existing `IsFiniteFlat.subobject` then `.quotient`; construct hX by
+unramified base change of the original model, not as an extra S5 hypothesis.
+Choose L so each inertia composition factor and its finite-field scalar
+endomorphisms descend. Dependencies: existing base-change/subquotient APIs,
+S5a, finite tame cyclicity (lifts lane), and finite Galois descent. Include actual
+point equivalences; restriction of scalars must preserve the F_p dimensions.
+
+### S5c — BLOCKED, cap 400: rank-one/rank-two Raynaud presentations
+Over the strict henselization of R, for each simple factor W from S5b of
+F_p-dimension r=1 or 2, construct its F_(p^r)-action on the finite-flat model H.
+The action is algebraic data, not a hypothesis asserting inertia weights.
+With `B := MvPolynomial (Fin r) R`, the presentation statement is:
+```lean
+∃ a b : Fin r → R, ∃ u : Fin r → Rˣ,
+  (∀ i, a i * b i = (p : R) * u i) ∧
+  Nonempty (H ≃ₐ[R] B ⧸ Ideal.span (Set.range
+    (fun i ↦ MvPolynomial.X i ^ p -
+      MvPolynomial.C (a i) * MvPolynomial.X (i + 1))))
+```
+Here H denotes the coordinate ring, with rank p^r, killed-by-p Hopf structure
+and the constructed field action. Prove compatibility of the coordinates
+with that action and the generic point equivalence, not only an algebra iso.
+Dependencies: S5b, Raynaud §3.3(1),(2), and generic-morphism extension existence.
+Generalize S1 to this unramified DVR and descend the coordinate characters;
+S1 over ℤ_p alone does not do this. Neither the strict-henselian transport nor
+general-p presentation/endomorphism extension exists in the current API.
+If this cannot fit 400 lines, its construction must be split before continuing.
+
+### S5d — BLOCKED on S5b/S5c, cap 400: spectra and assembly
+Prove the exact S5 existential above, with only hp, hflat and hdet as inputs.
+First prove charpoly preservation for an invariant subspace U of an operator T:
+`T.charpoly = (T.restrict hU).charpoly * (U.mapQ U T hU).charpoly`, via an
+adapted basis and `Matrix.charpoly_fromBlocks_zero₂₁`. Apply to the factors.
+Use S2/S4 on S5c's actual coordinates, identify finite-field Frobenius conjugates,
+then S3 selects complementary digits and computes the ratio orders. Dependencies:
+S1–S5c; lifts F1–F5/pro-p; D4. Choose a niveau-two generator before its norm,
+identify the norm with cyclotomic inertia, and transport residues to the fixed
+`AlgebraicClosure (ZMod p)`. No splitting of wild extensions is required.
+
+S5a checked 2026-10-02 23:14 UTC: foreground build, individual module lint and
+`lake env lean W9_S5A_AXIOMS.lean` pass (95/220 lines; all five theorems use
+only standard axioms). S5b–S5d remain blocked; no classification is claimed.
