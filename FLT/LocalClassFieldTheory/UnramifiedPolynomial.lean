@@ -66,7 +66,6 @@ theorem exists_splitting_generator [Finite (ResidueField R)] :
   have hmin : minpoly (ResidueField R) (residue S t) = P.map (residue R) :=
     (minpoly.eq_of_irreducible_of_monic hPi hr (hPm.map _)).symm
   let := ResidueField.finite_of_finite (R := R) (S := S) inferInstance
-  let : Finite (ResidueField S) := Module.finite_of_finite (ResidueField R)
   have hsplit : ((P.map (residue R)).map
       (algebraMap (ResidueField R) (ResidueField S))).Splits := by
     rw [← hmin]
