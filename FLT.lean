@@ -1209,6 +1209,7 @@ public import FLT.Mazur.PolygonCoconeComparison
 public import FLT.Mazur.PolygonCyclicAtlas
 public import FLT.Mazur.PolygonCyclicCocone
 public import FLT.Mazur.PolygonCyclicDescent
+public import FLT.Mazur.PolygonCyclicNormalizationRanges
 public import FLT.Mazur.PolygonCyclicPushout
 public import FLT.Mazur.PolygonIncidence
 public import FLT.Mazur.PolygonIncidenceQuotient
