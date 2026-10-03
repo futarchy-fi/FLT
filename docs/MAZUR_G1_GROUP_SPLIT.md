@@ -649,3 +649,15 @@ prime-spectrum decomposition of a product to put both normalization branches
 inside the chosen target affine open. All coefficient rings are commutative
 rings, with no field or nonzero-is-unit assumption. This is local existence,
 not global arbitrary-target descent or preservation of the pinching pushout.
+
+Three further helper proofs are checked before release. U6c4
+`SurjectiveDominantEpi` (cap 100) proves that a quasi-compact, surjective,
+scheme-theoretically dominant morphism is an epimorphism, by injectivity on
+sections; it also derives schematic dominance of Spec of an injective ring
+map. Prototypes `W16_EPI_PROOF.lean` and `W16_SCHEMATIC_PROOF.lean` compile.
+U6c5 `RingEqualizerAwayEndpoint` (cap 70) proves the localized normalization
+is an isomorphism if the common endpoint value is zero: the localized endpoint
+ring is the zero ring, so the localized equalizer is the entire normalization.
+`W16_AWAY_ENDPOINT_PROOF.lean` compiles. This provides local descent away from
+the endpoint image without invoking a field-only smooth-locus calculation.
+Global gluing and the pulled-back polygon atlas remain separate obligations.
