@@ -1022,6 +1022,7 @@ public import FLT.LocalClassFieldTheory.ContinuousCoefficientMaps
 public import FLT.LocalClassFieldTheory.ContinuousCohomologyColimit
 public import FLT.LocalClassFieldTheory.ContinuousColimitNaturality
 public import FLT.LocalClassFieldTheory.ContinuousConnectingMap
+public import FLT.LocalClassFieldTheory.ContinuousCorestrictionH2
 public import FLT.LocalClassFieldTheory.ContinuousExactCoefficients
 public import FLT.LocalClassFieldTheory.ContinuousHilbert90
 public import FLT.LocalClassFieldTheory.ContinuousInflationBoundary
@@ -1035,6 +1036,8 @@ public import FLT.LocalClassFieldTheory.ContinuousRestrictionColimit
 public import FLT.LocalClassFieldTheory.ContinuousStageBoundary
 public import FLT.LocalClassFieldTheory.ContinuousStageDiagram
 public import FLT.LocalClassFieldTheory.ContinuousTowerRefinement
+public import FLT.LocalClassFieldTheory.ContinuousTransfer
+public import FLT.LocalClassFieldTheory.CorestrictionRestrictionH2
 public import FLT.LocalClassFieldTheory.CyclicCarry
 public import FLT.LocalClassFieldTheory.CyclicCarryConnecting
 public import FLT.LocalClassFieldTheory.CyclicIntegerCohomology
@@ -1105,6 +1108,7 @@ public import FLT.LocalClassFieldTheory.IntegralNormalLatticeAction
 public import FLT.LocalClassFieldTheory.IntegralNormalLatticeCohomology
 public import FLT.LocalClassFieldTheory.IntegralNormalLatticeIntCohomology
 public import FLT.LocalClassFieldTheory.IntegralRationalVanishing
+public import FLT.LocalClassFieldTheory.IntegralTwoClassAdditive
 public import FLT.LocalClassFieldTheory.IntegralTwoClassEquality
 public import FLT.LocalClassFieldTheory.IntegralUnitDescent
 public import FLT.LocalClassFieldTheory.IntegralUnitInvariantCohomology
@@ -1176,6 +1180,9 @@ public import FLT.LocalClassFieldTheory.SixTermCard
 public import FLT.LocalClassFieldTheory.SolvableFieldStep
 public import FLT.LocalClassFieldTheory.SolvableNormalStep
 public import FLT.LocalClassFieldTheory.TowerRefinementFibers
+public import FLT.LocalClassFieldTheory.TransferCochain
+public import FLT.LocalClassFieldTheory.TransferCoset
+public import FLT.LocalClassFieldTheory.TransferRestrictionHomotopy
 public import FLT.LocalClassFieldTheory.TrivialH1Characters
 public import FLT.LocalClassFieldTheory.TrivialRestrictionNaturality
 public import FLT.LocalClassFieldTheory.UnitHerbrand
