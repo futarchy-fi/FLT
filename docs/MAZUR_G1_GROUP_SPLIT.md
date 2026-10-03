@@ -394,3 +394,29 @@ modules and sorted FLT.lean imports; docs may change. Commit locally, never push
 
 [dr]: https://www.math.uni-bonn.de/people/rapoport/myalggeom/preprints/Lesschemas.pdf
 [conrad]: https://math.stanford.edu/~conrad/papers/kmpaper.pdf
+
+## W15 typed-contract check and dispatch
+
+Checked 2026-10-03 on W15 base `31114b5c`. The untracked
+`W15_CONTRACT.lean` compiles with `LEAN_NUM_THREADS=2 lake env lean`.
+For arbitrary commutative rings R,S and `[Algebra R S]`, coefficient mapping
+is an R-algebra homomorphism `A R →ₐ[R] A S`, using the existing scalar tower
+on the subalgebra. `AlgHom.liftEquiv R S _ _` gives the comparison
+`S ⊗[R] A R →ₐ[S] A S` with pure-tensor formula `s ⊗ p ↦ s • map p`.
+Thus the proposed U3 isomorphism has a checked source, target and scalar
+convention; no flatness assumption is needed.
+
+U3 is released with cap 240. Its inverse is the linear reconstruction
+`p ↦ aeval (1 ⊗ x) p.first + aeval (1 ⊗ y) p.second - C (p.first.eval 0)`.
+The equality of endpoint values proves reconstruction on A(S); tensor
+induction and coefficient naturality prove the other composite is identity.
+This is an explicit split-module argument, not an assertion that tensoring
+preserves arbitrary ring pullbacks. Both branch restriction formulas are
+required as part of the delivered comparison.
+
+For U4 the identified APIs are `Algebra.polyEquivTensor'` in
+`Mathlib/RingTheory/PolynomialAlgebra.lean` and `pullbackSpecIso` with its
+projection lemmas in `Mathlib/AlgebraicGeometry/Pullbacks.lean`. The geometric
+product charts and their pulled-back cover still require typechecking.
+H2/H6 and U5/U6 remain subject to the source/API gates above; if their helper
+proofs do not fit 240 lines, record the split before implementing the helpers.
