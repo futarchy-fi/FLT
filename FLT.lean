@@ -1680,6 +1680,8 @@ public import FLT.Mazur.GlobalIdealPowerCompatibility
 public import FLT.Mazur.HigherDirectImageOpenSheafification
 public import FLT.Mazur.HigherDirectImagePresheaf
 public import FLT.Mazur.HigherDirectImagePresheafRestriction
+public import FLT.Mazur.IdealModulePullback
+public import FLT.Mazur.IdealModulePullbackRestrict
 public import FLT.Mazur.IdealModuleSheaf
 public import FLT.Mazur.IdealPowerChartDescent
 public import FLT.Mazur.IdealPowerCompatibility
@@ -1723,6 +1725,9 @@ public import FLT.Mazur.ModulePullbackRestrictionPasting
 public import FLT.Mazur.ModulePullbackTrivializationCoherence
 public import FLT.Mazur.ModulePullbackUnitCoherence
 public import FLT.Mazur.ModuleSheafDual
+public import FLT.Mazur.ModuleSheafDualInternalHom
+public import FLT.Mazur.ModuleSheafDualPullback
+public import FLT.Mazur.ModuleSheafDualPullbackUnit
 public import FLT.Mazur.ModuleSheafDualSheaf
 public import FLT.Mazur.ModuleSheafGluing
 public import FLT.Mazur.ModuleSheafInternalHom
@@ -1841,6 +1846,7 @@ public import FLT.Mazur.PolygonDimension
 public import FLT.Mazur.PolygonDirectImageCohomology
 public import FLT.Mazur.PolygonDivisorCoproduct
 public import FLT.Mazur.PolygonDivisorDegree
+public import FLT.Mazur.PolygonDivisorLineComparison
 public import FLT.Mazur.PolygonDivisorNormalizationPullback
 public import FLT.Mazur.PolygonDivisorPowerPullback
 public import FLT.Mazur.PolygonFieldExtension
@@ -1849,6 +1855,7 @@ public import FLT.Mazur.PolygonGeometricGenus
 public import FLT.Mazur.PolygonGeometricGraph
 public import FLT.Mazur.PolygonGeometricTranslations
 public import FLT.Mazur.PolygonHZeroIncidence
+public import FLT.Mazur.PolygonIdealModulePullback
 public import FLT.Mazur.PolygonIncidence
 public import FLT.Mazur.PolygonIncidenceQuotient
 public import FLT.Mazur.PolygonMarkedSections
