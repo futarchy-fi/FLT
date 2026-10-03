@@ -813,6 +813,7 @@ public import FLT.LocalClassFieldTheory.UnramifiedDegree
 public import FLT.LocalClassFieldTheory.UnramifiedEmbeddings
 public import FLT.LocalClassFieldTheory.UnramifiedExistence
 public import FLT.LocalClassFieldTheory.UnramifiedGaloisExistence
+public import FLT.LocalClassFieldTheory.UnramifiedGaloisLimit
 public import FLT.LocalClassFieldTheory.UnramifiedNormal
 public import FLT.LocalClassFieldTheory.UnramifiedPolynomial
 public import FLT.LocalClassFieldTheory.UnramifiedStageTower
