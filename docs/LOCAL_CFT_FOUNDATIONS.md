@@ -433,3 +433,16 @@ module has a 200-line cap; these are targets until validated.
 
 U03b4 must be refined further after the normality interface is known. U04/U05
 and E1c7 remain blocked, and no bridge is to be supplied as a new hypothesis.
+
+W17 U03b4 refinement after the normality proof:
+
+| Leaf (cap 200 each) | Concrete contract |
+|---|---|
+| UnramifiedEmbeddings | Lift a residue-field embedding to a fraction-field embedding using the constructed monic generator and Hensel; obtain embeddings when residue degrees divide |
+| UnramifiedUniqueness | For actual intermediate fields with integral unramified DVRs, residue-degree divisibility implies containment; equal residue degrees imply equality |
+| UnramifiedStages | Embed each constructed Galois stage in the chosen separably closed overfield, retain its actual integral ring and degree data |
+
+A common overfield plus normality turns the constructed embeddings into
+literal containment. No uniqueness, containment, or residue lift is an input.
+The compositum and inverse-limit leaves require an explicit stage interface
+and will be refined after these statements are checked.
