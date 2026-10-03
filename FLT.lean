@@ -961,6 +961,7 @@ public import FLT.LocalClassFieldTheory.FiniteCharacteristicZeroCohomology
 public import FLT.LocalClassFieldTheory.FiniteContinuousComparison
 public import FLT.LocalClassFieldTheory.FiniteCyclicHerbrand
 public import FLT.LocalClassFieldTheory.FiniteHomologyCard
+public import FLT.LocalClassFieldTheory.FiniteKernelCocycleCorrection
 public import FLT.LocalClassFieldTheory.FixedCoefficientBoundary
 public import FLT.LocalClassFieldTheory.FixedCoefficientCochain
 public import FLT.LocalClassFieldTheory.FixedCoefficientDifferential
@@ -992,6 +993,9 @@ public import FLT.LocalClassFieldTheory.IntegralUnitInvariantCohomology
 public import FLT.LocalClassFieldTheory.IntegralUnitInvariants
 public import FLT.LocalClassFieldTheory.IntegralUnitRepresentation
 public import FLT.LocalClassFieldTheory.InvariantStageTransition
+public import FLT.LocalClassFieldTheory.KernelCocycleNormalization
+public import FLT.LocalClassFieldTheory.KernelMixedCocycle
+public import FLT.LocalClassFieldTheory.KernelSectionCorrection
 public import FLT.LocalClassFieldTheory.NormCongruence
 public import FLT.LocalClassFieldTheory.NormFirstOrder
 public import FLT.LocalClassFieldTheory.NormalizedOrder
