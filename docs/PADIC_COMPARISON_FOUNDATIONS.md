@@ -595,3 +595,23 @@ needed, in dependency order:
 `complexDeRham_prime_pow_notMem` proves the precise obstruction to replacing
 steps 1–4 by theta-adic convergence: every p^n is outside the first theta
 ideal. Thus the usual p-adic decay is a separate topology obligation.
+
+## W31 separatedness split (before implementation)
+
+Every new module is capped at 150 lines. First prove cancellation modulo
+powers of p from regularity modulo p, then use completeness of A_inf to
+show divisibility by each power of the cyclotomic generator is closed.
+No separatedness or closedness of a theta quotient is assumed.
+
+| Leaf | Concrete obligation | Prerequisite |
+|---|---|---|
+| AdicRegularCancellation | Cancel a regular element modulo every power of a nonzero parameter. | Domain and explicit mod-parameter regularity |
+| AdicPrincipalClosed | Lift arbitrarily accurate principal-ideal approximations to actual divisibility. | Cancellation and parameter-adic completeness |
+| ComplexCyclotomicRegular | Prove actual cyclotomic-generator regularity modulo p and its power versions. | W30 association; nonzero prime tilt |
+| ComplexThetaQuotientSeparated | Prove p-adic separatedness for every actual integral theta quotient. | Closed principal powers |
+| ComplexThetaQuotientTopology | Equip integral quotients with Hausdorff p-adic topologies and continuous transitions. | Proved separatedness |
+
+The p-inverted coefficient topology, exponent convergence, finite logarithm
+bounds, scalar law, invariants and comparison obligations remain subsequent
+leaves. Inverting p must not replace the coefficient topology by the
+indiscrete topology of the unit ideal.
