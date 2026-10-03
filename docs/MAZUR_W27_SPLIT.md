@@ -31,7 +31,7 @@ validation files named in the final handoff.
 | Use Serre vanishing | FLT's existing theorem | `RelativeSerreVanishing.relativeVeryAmple_eventually_acyclic` | Its input already is `RelativeVeryAmple`. Using it to manufacture that input is circular. |
 | Match normalized sections at nodes | Polynomial endpoint restriction and normalization equalizer | Mathlib `Polynomial.degreeLT`, `degreeLTEquiv`; FLT `PolygonNormalizationExact.abelianSheaf_shortExact`, `PolygonNodeEqualizer`, `PolygonNodePresentation` | Existing polygon normalization exactness is for the structure sheaf. Tensoring with the actual divisor line, comparing pullbacks and describing its global sections are separate missing proofs. D01–D03 below prove only the polynomial algebra. |
 | Construct a projective morphism from sections | Standard nonvanishing-open ratio construction | `ProjectiveSpaceCharts`, `ProjectiveChartPolynomialEquiv`, `ProjectiveTwistingSheaf`; Mathlib `ProjectiveSpectrum/Functor.lean` | The graded `Proj.map` construction is not a ready map from an arbitrary polygon with generating sections. Construct and glue chart maps and the actual hyperplane pullback isomorphism. |
-| Prove closed immersion | Surjective coordinate-ring maps on a covering of the image, then properness | `PolygonNodePresentation.a_adjoin`, `b_adjoin`, `NodeQuotient.aPresent_surjective`, `bPresent_surjective`; `RelativeVeryAmpleLineBundle.targetOpenCoefficientMap_isClosedImmersion` | Known affine node generators must be expressed as section ratios on precisely identified projective inverse-image opens. Tangent separation alone does not prove this. |
+| Prove closed immersion | Surjective coordinate-ring maps on a covering of the image, then properness | `PolygonNodePresentation.a_adjoin`, `b_adjoin`, `aPresent_surjective` in `NodeQuotient.lean`, `bPresent_surjective` in `OneGonQuotient.lean`; `RelativeVeryAmpleLineBundle.targetOpenCoefficientMap_isClosedImmersion` | Known affine node generators must be expressed as section ratios on precisely identified projective inverse-image opens. Tangent separation alone does not prove this. |
 
 ## Ready leaves: complete checked proof designs
 
@@ -124,3 +124,26 @@ G01 and needs substantially more theory. Beyond either ampleness producer,
 actual generalized-curve/moduli objects, arbitrary-base descent, coarse moduli,
 cusps and Mazur's arithmetic argument remain. This split does not remove
 `Mazur_statement` from the final Fermat theorem.
+
+## Accepted W27 scope
+
+Checked 2026-10-03 with `python3 W27_CHECK_SOURCE.py` and the saved foreground
+Lean logs. D01–D03 are proved: **277 Lean lines** (66, 103, 108), each below
+its 240-line cap. Only these new Lean modules and sorted `FLT.lean` imports
+were changed. No replacement ampleness definition or new structure was added.
+
+Each module passed `LEAN_NUM_THREADS=2 lake build FLT.Mazur.MODULE` and its
+own `LEAN_NUM_THREADS=2 lake exe runLinter FLT.Mazur.MODULE`, sequentially.
+`GOAL_MAZUR_W27_AXIOM_AUDIT.lean` checks all originating declarations, including
+generated declarations: 20 + 23 + 22 = **65**, using only `propext`,
+`Classical.choice`, and `Quot.sound`.
+`W27_CONSUMER_CONTRACT.lean` checks dimensions for one-gons, two-gons and arbitrary
+n, the actual pinching predecessor orientation, characteristics 2 and 3,
+and the unchanged W26 target for the genuine all-one polygon divisor.
+
+These results establish the polynomial input to the direct route, not global
+sections of O(3D), global generation of that sheaf, or an immersion. D04a–D10
+and G01–G12 remain unproved. No final-theorem axiom audit was rebuilt;
+`GOAL_MAZUR_W27_REMAINING_SOURCE_CHECK.txt` records the existing Mazur assumption
+and consumer by source inspection. The untracked handoff lists local commits
+and repeatable validation commands.
