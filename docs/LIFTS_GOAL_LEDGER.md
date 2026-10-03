@@ -31,6 +31,16 @@ Additional linear foundations matched before proof (each cap 200):
 | E09c6b / GroupScheme.RootModuleLinear | Canonical ZMod-p module on root coefficients, commuting with Galois; primitive-root coordinates are linear. AddCommGroup.zmodModule; ZMod.map_smul; rootUnit_pow. | E09c1/c3 |
 | E09c7a / GroupScheme.LinearKummerClass | Additive Kummer comparison on linear continuous classes; prove product compatibility from unitRatio_mul and root-choice independence. | E09c6/c6b |
 
+The last adapter also needs a concrete Hom action, not a supplied
+conclusion-bearing equivalence. E09c9a / Extensions.OrdinaryHomCoordinates
+(cap 200) constructs the discrete Hom coefficient module from
+`Representation.linHom`, then proves that evaluation at 1 intertwines a
+specified cyclotomic Hom character. E09c9 consumes this constructed map.
+E09c5a / Extensions.LinearClassCoordinates (cap 200) upgrades the finite-basis
+comparison to an F-linear equivalence using `linearCoefficientClass` and the
+already proved quotient bijection. These refinements are source-matched
+before their implementation.
+
 The modules listed after c5 are new constructions, not existing APIs. E09c
 closes only after the unit-space and actual ordinary-extension adapters are
 proved. Root existence and a primitive root must be supplied explicitly or
