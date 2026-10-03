@@ -1012,10 +1012,14 @@ public import FLT.LocalClassFieldTheory.UnramifiedIntegralH2
 public import FLT.LocalClassFieldTheory.UnramifiedIntegralH2Additive
 public import FLT.LocalClassFieldTheory.UnramifiedIntegralModel
 public import FLT.LocalClassFieldTheory.UnramifiedLocalInertia
+public import FLT.LocalClassFieldTheory.UnramifiedMultiplicativeInflation
+public import FLT.LocalClassFieldTheory.UnramifiedMultiplicativeInvariant
 public import FLT.LocalClassFieldTheory.UnramifiedNormal
 public import FLT.LocalClassFieldTheory.UnramifiedOpenStages
 public import FLT.LocalClassFieldTheory.UnramifiedOrderCohomology
+public import FLT.LocalClassFieldTheory.UnramifiedOrderInflation
 public import FLT.LocalClassFieldTheory.UnramifiedOrderMap
+public import FLT.LocalClassFieldTheory.UnramifiedOrderSection
 public import FLT.LocalClassFieldTheory.UnramifiedOrderSequence
 public import FLT.LocalClassFieldTheory.UnramifiedOrderTower
 public import FLT.LocalClassFieldTheory.UnramifiedPolynomial
