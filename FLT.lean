@@ -1131,6 +1131,7 @@ public import FLT.LocalClassFieldTheory.CorestrictionInvariant
 public import FLT.LocalClassFieldTheory.CorestrictionRestrictionH2
 public import FLT.LocalClassFieldTheory.CyclicCarry
 public import FLT.LocalClassFieldTheory.CyclicCarryConnecting
+public import FLT.LocalClassFieldTheory.CyclicCarryNormSum
 public import FLT.LocalClassFieldTheory.CyclicIntegerCohomology
 public import FLT.LocalClassFieldTheory.CyclicPeriodicComplex
 public import FLT.LocalClassFieldTheory.CyclicPeriodicExact
@@ -1151,6 +1152,7 @@ public import FLT.LocalClassFieldTheory.FieldUnitInvariants
 public import FLT.LocalClassFieldTheory.FilteredComplexDescent
 public import FLT.LocalClassFieldTheory.FilteredHomologyDescent
 public import FLT.LocalClassFieldTheory.FiniteArtin
+public import FLT.LocalClassFieldTheory.FiniteArtinFixedFieldNorm
 public import FLT.LocalClassFieldTheory.FiniteCharacteristicZeroCohomology
 public import FLT.LocalClassFieldTheory.FiniteContinuousComparison
 public import FLT.LocalClassFieldTheory.FiniteCyclicHerbrand
@@ -1166,6 +1168,7 @@ public import FLT.LocalClassFieldTheory.FiniteRelativeSaturation
 public import FLT.LocalClassFieldTheory.FiniteRelativeSequence
 public import FLT.LocalClassFieldTheory.FiniteRestrictionComparison
 public import FLT.LocalClassFieldTheory.FiniteSubfieldDvr
+public import FLT.LocalClassFieldTheory.FiniteSubgroupArtin
 public import FLT.LocalClassFieldTheory.FiniteSubgroupCocycleCorrection
 public import FLT.LocalClassFieldTheory.FiniteTateVanishing
 public import FLT.LocalClassFieldTheory.FiniteUnitInvariants
@@ -1242,6 +1245,7 @@ public import FLT.LocalClassFieldTheory.LocalScaledSeries
 public import FLT.LocalClassFieldTheory.LocalSeriesComparison
 public import FLT.LocalClassFieldTheory.NormCongruence
 public import FLT.LocalClassFieldTheory.NormFirstOrder
+public import FLT.LocalClassFieldTheory.NormalFixedFieldNorm
 public import FLT.LocalClassFieldTheory.NormalLatticeDenominators
 public import FLT.LocalClassFieldTheory.NormalLatticeExpDomain
 public import FLT.LocalClassFieldTheory.NormalLatticeExpOpen
@@ -1288,6 +1292,7 @@ public import FLT.LocalClassFieldTheory.RelativeLowerBound
 public import FLT.LocalClassFieldTheory.RelativeOrderInduction
 public import FLT.LocalClassFieldTheory.RelativeRestrictionKernel
 public import FLT.LocalClassFieldTheory.RelativeRestrictionTower
+public import FLT.LocalClassFieldTheory.RelativeSubgroupCupIso
 public import FLT.LocalClassFieldTheory.RelativeTateClasses
 public import FLT.LocalClassFieldTheory.RelativeTateCupDegreeZero
 public import FLT.LocalClassFieldTheory.ResidueAction
@@ -1319,11 +1324,14 @@ public import FLT.LocalClassFieldTheory.TateCupUnit
 public import FLT.LocalClassFieldTheory.TateExactSequence
 public import FLT.LocalClassFieldTheory.TateGroupEquivalence
 public import FLT.LocalClassFieldTheory.TateInvariantClass
+public import FLT.LocalClassFieldTheory.TateNegativeCocycleClass
 public import FLT.LocalClassFieldTheory.TateNormVanishing
 public import FLT.LocalClassFieldTheory.TatePositiveCocycleClass
 public import FLT.LocalClassFieldTheory.TateScalarAbelianization
 public import FLT.LocalClassFieldTheory.TateScalarDegreeZero
 public import FLT.LocalClassFieldTheory.TateScalarGenerator
+public import FLT.LocalClassFieldTheory.TateScalarGeneratorComparison
+public import FLT.LocalClassFieldTheory.TateScalarMap
 public import FLT.LocalClassFieldTheory.TateScalarVanishing
 public import FLT.LocalClassFieldTheory.TateTwoClassOperation
 public import FLT.LocalClassFieldTheory.TateTwoClassZero
@@ -1340,6 +1348,7 @@ public import FLT.LocalClassFieldTheory.TrivialH1Characters
 public import FLT.LocalClassFieldTheory.TrivialRestrictionNaturality
 public import FLT.LocalClassFieldTheory.TwoCocycleNormSum
 public import FLT.LocalClassFieldTheory.TwoExtensionCochainCup
+public import FLT.LocalClassFieldTheory.TwoExtensionCorestriction
 public import FLT.LocalClassFieldTheory.TwoExtensionNegativeEvaluation
 public import FLT.LocalClassFieldTheory.TwoExtensionRepresentativeIso
 public import FLT.LocalClassFieldTheory.TwoExtensionRestriction
