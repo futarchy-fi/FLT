@@ -1373,3 +1373,210 @@ moduli/arithmetic argument and final assembly also remain open: source check
 `rg -n 'Mazur_statement|mazur_W' FLT/Assumptions/Mazur.lean
 FLT/Assembly/ExistingInputs.lean` still finds the assumption and its use.
 No compiled final-consumer axiom audit or Mazur removal is claimed.
+
+
+## W21 separatedness prerequisite: checked split
+
+`W21_COVER_PROOF.lean` compiles before release. S1 `SeparatedOpenCover`,
+cap 80, tests the diagonal on the product cover. The standard cartesian
+diagonal square identifies each restriction with the actual overlap map.
+Since that map is an immersion, a closed image suffices. This is a general
+criterion; it does not assume or yet prove polygon separatedness.
+
+The concrete closed overlap graphs and their chart-pair assembly are separate
+leaves. No cap is released for a leaf until its complete prototype compiles.
+
+`W21_GRAPH_PROOF.lean` compiles in full. S2 `CyclicOverlapGraph`, cap 130,
+proves surjectivity of the actual tensor ring map using T and T⁻¹. The tensor
+spectrum comparison identifies its spectrum with the Laurent overlap graph
+in the product of adjacent node charts. That graph is a closed immersion.
+This proves each edge graph, including the two edges relevant to n=2; it does
+not yet assemble chart-pair closedness or polygon separatedness.
+
+`W21_CYCLIC_PROOF.lean` compiles in full. S3 `PolygonCyclicSeparated`, cap
+160, identifies each distinct chart intersection image with the union of its
+available forward and reverse edge graphs. Injectivity of the open pullback
+projection turns the atlas point-equality theorem into this exact image
+identity. Equal chart pairs use the affine diagonal; S1 assembles the cover.
+Both edges remain in the n=2 case. The structure morphism and underlying
+cyclic scheme are separated. The one-gon remains a separate leaf.
+
+`W21_ONEGON_GRAPH_PROOF.lean` compiles in full. S4 `OneGonOverlapGraph`,
+cap 150, proves that z + z⁻¹ - 2 inverts the conductor t(t-1) under the actual
+Möbius transition. The existing conductor-localization theorem gives
+surjectivity of the tensor ring map. The tensor spectrum comparison then
+proves that the specified one-gon overlap graph is a closed immersion.
+The binary-cover assembly remains a separate leaf.
+
+`W21_ONEGON_SEPARATED_PROOF.lean` compiles in full. S5 `OneGonSeparated`,
+cap 120, obtains the actual chart pullback from the gluing colimit's point
+equality criterion. S4 supplies the mixed graph; exchange of factors handles
+its reverse, and identical chart pairs use their affine diagonals. S1 proves
+the one-gon structure morphism and underlying scheme separated.
+
+`W21_POLYGON_SEPARATED_PROOF.lean` compiles in full. S6 `PolygonSeparated`,
+cap 60, assembles S3/S5 for every positive size and transports separatedness
+through the canonical cocone isomorphism. The exact missing W20 instance
+`(PolygonAtlas.polygon K n).left.IsSeparated` is now supplied.
+
+`W21_H1_PROOF.lean` compiles in full. H9f/H8e
+`PolygonDirectImageCohomology`, cap 90, transports affineness from the finite
+scheme coproduct of points. Affine cohomology vanishing and the proved
+separatedness give H9 positive-degree vanishing for the actual node direct
+image of any specified cocone. The same affine comparison reduces H8 to
+positive-degree vanishing on the normalization coproduct; it does not assume
+that remaining conclusion.
+
+`W21_DISJOINT_COHOMOLOGY_PROOF.lean` compiles in full. H8f
+`DisjointStructureCohomology`, cap 110, proves positive-degree structure
+cohomology vanishing from a disjoint open cover and proved acyclicity on each
+chart. A tuple intersection is one chart or empty; increasing tuples in
+positive degree have empty intersection. The existing Čech homotopy and
+acyclic-cover comparison finish the proof without assuming affine charts.
+
+`W21_COPRODUCT_COHOMOLOGY_PROOF.lean` compiles in full. H8g
+`SchemeCoproductCohomology`, cap 90, transports structure cohomology through
+scheme isomorphisms and the component open-range isomorphisms. The actual
+coproduct cover is disjoint and exhaustive. H8f and H7 give positive-degree
+vanishing for the specified normalization coproduct, with the index universe
+lifted explicitly. No restriction on the coefficient-field universe is used.
+
+`W21_NORMALIZATION_H1_PROOF.lean` compiles in full. H8h/H9g
+`PolygonNormalizationHOne`, cap 60, applies the affine comparison to the
+proved source vanishing. It proves the exact scalar H1 targets for the
+normalization and node module sheaves of every supplied pinching cocone,
+and all positive degrees for normalization. Together with W20's H0
+comparisons, this closes H8 and H9.
+
+`W21_INCIDENCE_PROOF.lean` compiles in full. H10a `PolygonHZeroIncidence`,
+cap 140, computes restriction on actual direct-image global sections. Each
+branch reads the specified component constant. H0 naturality and subtraction
+identify `moduleScalarHMap` of H4 with `PolygonIncidence.difference` under
+W20's equivalences, including its orientation and the n=1 case.
+
+`W21_H1_INCIDENCE_PROOF.lean` compiles in full. H10b
+`PolygonCohomologyIncidence`, cap 110, uses the exact H5 connecting map. H8
+makes it surjective; H10a and exactness identify its kernel with the range
+of cyclic incidence. `h1Incidence` proves the original H10 linear-equivalence
+target and `h1_finrank` computes actual H1 dimension one.
+
+`W21_CONSTANTS_PROOF.lean` compiles in full. H11 `PolygonConstantSections`,
+cap 120, embeds actual H0 in the component constants using H5. H10a places
+its image in the incidence kernel. The specified base scalar map gives every
+constant vector, so `constants` proves `HasConstantGlobalSections C.hom`.
+Both conclusions apply to every supplied positive-size pinching cocone.
+
+`W21_CLOSED_COVER_PROOF.lean` compiles in full. H12a
+`UniversallyClosedFiniteCover`, cap 70, proves closedness by writing an image
+as a finite union of closed chart images, then repeats this on each actual
+base-changed cover. It supplies the universal-closedness step for the finite
+coproduct of proper projective lines.
+
+`W21_PROPER_PROOF.lean` compiles in full. H12b `PolygonProper`, cap 90,
+transports properness to the actual projective line, applies H12a to the
+finite normalization coproduct, and descends universal closedness through
+the surjective normalization. Proved separatedness and local finite
+presentation give `IsProper C.hom` for every supplied cocone.
+
+`W21_INTEGRAL_DIMENSION_PROOF.lean` compiles in full. H13a
+`IntegralDimension`, cap 60, lifts each finite chain of primes by going up
+from a prime above its head. Surjective contraction therefore bounds the
+base dimension by that of the extension.
+
+`W21_OPEN_DIMENSION_PROOF.lean` compiles in full. H13b
+`OpenCoverDimension`, cap 60, transports chart dimensions to their actual
+open ranges and applies the sober-space local upper bound. Open embeddings
+give the complementary lower bound.
+
+`W21_NODE_DIMENSION_PROOF.lean` compiles in full. H13c
+`PolygonNodeDimension`, cap 70, uses H13a and the finite normalization rings
+to bound both actual node rings above by one. Quasi-finite incomparability
+and the split normalization's polynomial quotient give the lower bounds.
+
+`W21_POLYGON_DIMENSION_PROOF.lean` compiles in full. H13d
+`PolygonDimension`, cap 100, applies the proved node-ring dimensions to
+the actual cyclic and one-gon covers. The one-gon torus embeds in the
+affine line. An open node chart supplies the lower bound in each case.
+The cocone isomorphism transports dimension one to every supplied cocone.
+
+`W21_GENUS_PROOF.lean` compiles in full. H14 `PolygonGenusOne`, cap 60,
+combines actual H1 dimension one with H11/H12/H13. The theorem proves the
+original curve-genus equality for every supplied cocone, in `Type` as
+required by the existing proper-cohomology genus API. It does not assert
+the additional nodal geometric-fiber conditions in H15.
+
+### W21 remaining geometric proof gates
+
+H15 remains unfinished. `NodalGenusOneGeometricFibers` quantifies over actual
+pullback squares at every algebraically closed extension field and requires
+`NodalGenusOneFiberCore`, which extends `NodalFiberCore`. H14 proves genus
+with actual properness, constants and total dimension; it does not supply
+connectedness, pure dimension of every irreducible component, or the
+completed-stalk node criterion. `CurveNode.IsNode` asks for an algebra
+isomorphism from the completion of the actual local ring to the split
+power-series node model. A polynomial node equation does not fill this field.
+
+The existing `PolygonPinchingAffineBaseChange.spec_pullback` preserves the
+pinching pushout for every affine base map. To apply the new genus theorem
+to that square, identify the base-changed projective-line components, node
+coproducts and endpoint maps with the specified diagram over the extension
+field, then transport the pushout. The new theorem's validity over every
+field does not by itself provide these comparison maps.
+
+Geometric U12 still needs the actual normalization component images to be
+identified with irreducible components, with distinctness and node/edge
+incidence after field extension. Existing translation image formulas remain
+useful, including n=1, but do not establish this graph identification. A
+bounded next leaf is the component-image classification over a field; it
+also supports the missing pure-dimension proof. No cap is released before a
+complete prototype for that leaf is checked.
+
+These are unproved prerequisites, not mathematical obstructions and not a
+request for user permission. The moduli/arithmetic and final assembly work
+also remain. Read-only source checks on 2026-10-03 at 08:46 UTC still find
+`Mazur_statement` in `FLT/Assumptions/Mazur.lean:103` and the `mazur_W`
+consumer in `FLT/Assembly/ExistingInputs.lean:28`. Recheck with
+`rg -n 'Mazur_statement|mazur_W' FLT/{Assumptions/Mazur,Assembly/ExistingInputs}.lean`. No final-consumer axiom audit or Mazur
+removal is claimed here.
+
+### W21 checked outcome
+
+Checked at 2026-10-03 08:57 UTC. Separatedness and H8–H14 are proved; H15,
+geometric U12 and Mazur removal remain unfinished. The 20 new modules total
+1,407 lines. All caps were released only after complete root prototypes
+compiled.
+
+| Item | Module | Lines/cap |
+| --- | --- | ---: |
+| S1 | `SeparatedOpenCover` | 42/80 |
+| S2 | `CyclicOverlapGraph` | 100/130 |
+| S3 | `PolygonCyclicSeparated` | 138/160 |
+| S4 | `OneGonOverlapGraph` | 115/150 |
+| S5 | `OneGonSeparated` | 95/120 |
+| S6 | `PolygonSeparated` | 43/60 |
+| H8e/H9f | `PolygonDirectImageCohomology` | 61/90 |
+| H8f | `DisjointStructureCohomology` | 86/110 |
+| H8g | `SchemeCoproductCohomology` | 59/90 |
+| H8h/H9g | `PolygonNormalizationHOne` | 40/60 |
+| H10a | `PolygonHZeroIncidence` | 106/140 |
+| H10b | `PolygonCohomologyIncidence` | 92/110 |
+| H11 | `PolygonConstantSections` | 98/120 |
+| H12a | `UniversallyClosedFiniteCover` | 46/70 |
+| H12b | `PolygonProper` | 63/90 |
+| H13a | `IntegralDimension` | 34/60 |
+| H13b | `OpenCoverDimension` | 35/60 |
+| H13c | `PolygonNodeDimension` | 45/70 |
+| H13d | `PolygonDimension` | 73/100 |
+| H14 | `PolygonGenusOne` | 36/60 |
+
+Each module passed its foreground `LEAN_NUM_THREADS=2 lake build
+FLT.Mazur.MODULE` and individual `lake exe runLinter FLT.Mazur.MODULE`,
+without warnings. No whole-library build or lint was run.
+`W21_CONSUMER_CONTRACT.lean` compiled the exact separatedness, H8/H9, H10,
+constants, properness, dimension and genus conclusions.
+`GOAL_MAZUR_W21_AXIOM_AUDIT.lean` checked all 158 originating declarations,
+including generated helpers, and found only `propext`, `Classical.choice`
+and `Quot.sound`. Both checks used `LEAN_NUM_THREADS=2 lake env lean FILE`.
+The source guard found no `sorry`, `axiom` or `native_decide` in the new
+modules; all caps and sorted unique imports passed. The audit, validation
+logs and handoff remain untracked at the workspace root.
