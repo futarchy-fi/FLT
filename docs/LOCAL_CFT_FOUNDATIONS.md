@@ -416,3 +416,20 @@ finite complex, and descend cocycles and bounding cochains to common stages.
 The integral low-degree comparison C01, colimit C05, and later invariant and
 class-formation gates remain. No class-field conclusion is smuggled into
 these cochain hypotheses.
+
+## W17 refinement (2026-10-03)
+
+The implementation sequence below refines U03b before its proofs. Each new
+module has a 200-line cap; these are targets until validated.
+
+| Leaf | Contract | Dependency |
+|---|---|---|
+| U03b1a / UnramifiedDegree | From equal fraction/residue degrees in a finite separable DVR extension, derive maximal-ideal equality, formal unramifiedness, integral closure, completeness and Henselianity | local fundamental identity, integral-closure rank, ideal factorization |
+| U03b1b / UnramifiedExistence | Apply those results to the existing residue-extension constructor | U03b1a |
+| U03b2a / HenselianRoots | Lift simple residue roots uniquely and transfer splitting of a monic polynomial | Hensel existence/uniqueness, root count |
+| U03b2b / UnramifiedPolynomial | Construct an integral power basis whose minimal polynomial has separable reduction and splits upstairs for finite residue fields | U03b1, U03b2a, existing residue-generator API |
+| U03b3 / UnramifiedNormal | Deduce normality and Galois structure of the actual fraction extension | U03b2b, fraction-field power basis |
+| U03b4 | Embed into the separable closure; prove uniqueness and compositum compatibility | U03b3, integral-root uniqueness |
+
+U03b4 must be refined further after the normality interface is known. U04/U05
+and E1c7 remain blocked, and no bridge is to be supplied as a new hypothesis.
