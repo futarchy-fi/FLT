@@ -790,3 +790,42 @@ claimed. Source checks still return `axiom Mazur_statement` at
 `FermatsLastTheorem.lean:24`. This is source evidence, not a new compiled audit
 of `PNat.pow_add_pow_ne_pow`. The final existing-consumer rewire is also outside
 this wave's new-module-only authorization.
+
+## W17 checked normalization comparison
+
+The full `W17_ONEGON_PROOF.lean` prototype passed foreground `lake env lean`
+on 2026-10-03 before release. U6d3 `OneGonProductNormalization` has cap 160:
+use the polynomial and equalizer base-change isomorphisms to prove the coefficient
+normalization square cartesian by pullback cancellation, paste the original
+one-gon normalization square, then cancel the global normalization base-change
+square. Both projections and the cocone equation are proved. This establishes
+the precise W16 remaining normalization contract over arbitrary parameter rings.
+Endpoint compatibility, the cyclic analogue and global pushout remain separate.
+
+`W17_ENDPOINTS_PROOF.lean` also compiles in full before release. U6d4
+`OneGonProductEndpoints` has cap 130: compute both pullback projections of
+zero/one in the affine normalization, identify the actual constant endpoint
+sections, prove their normalization images equal the node section, and apply
+`RelativePinchingDescent.oneGon_desc`. This proves local descent from a global
+normalization map satisfying the endpoint relation, not the global pushout.
+
+`W17_NODE_COORDINATES_PROOF.lean` compiles before release. U6d5
+`NodeNormalizationBaseChange` has cap 140: tensoring the product of polynomial
+rings gives the product over the new base; both scheme pullback projections
+are computed. Pullback cancellation against the node chart base-change square
+proves the coefficient normalization square cartesian. The global cyclic
+normalization comparison will be a separate leaf.
+
+The full `W17_CYCLIC_PROOF.lean` prototype compiles. U6d6
+`CyclicProductNormalization` has cap 180: transport the existing normalization
+square through `coprodSpec`, then paste U6d5's coefficient square and cancel the
+normalization base-change square. This proves the actual cartesian comparison
+for each cyclic node chart, with both projections and the normalization equation.
+Endpoint transport and global descent remain separate obligations.
+
+`W17_CYCLIC_ENDPOINTS_PROOF.lean` compiles before release. U6d7
+`CyclicProductEndpoints` has cap 150: the origins of the product-polynomial
+branches are the pulled-back zero and adjacent infinity sections, checked by
+both projections and `coprodSpec`. The input endpoint equality supplies the
+hypothesis of `RelativePinchingDescent.node_product_desc`. Global gluing and
+transport from the specified pinching cocone are still required.

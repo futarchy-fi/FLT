@@ -1185,6 +1185,8 @@ public import FLT.Mazur.CurveNode
 public import FLT.Mazur.CuspCollision
 public import FLT.Mazur.CuspOrderNumerator
 public import FLT.Mazur.CyclicPinchingRotation
+public import FLT.Mazur.CyclicProductEndpoints
+public import FLT.Mazur.CyclicProductNormalization
 public import FLT.Mazur.DRFiberClassification
 public import FLT.Mazur.DirectImageInjectives
 public import FLT.Mazur.DivisorInvertibleSheaf
@@ -1285,6 +1287,7 @@ public import FLT.Mazur.NodalGeometricFiberGenus
 public import FLT.Mazur.NodeInfinitesimalObstruction
 public import FLT.Mazur.NodeLocalDescent
 public import FLT.Mazur.NodeLocalizedEqualizer
+public import FLT.Mazur.NodeNormalizationBaseChange
 public import FLT.Mazur.NodePinchingDescent
 public import FLT.Mazur.NodePinchingExistence
 public import FLT.Mazur.NodeQuotient
@@ -1303,6 +1306,8 @@ public import FLT.Mazur.OneGonNormalizationFinite
 public import FLT.Mazur.OneGonNormalizationPullback
 public import FLT.Mazur.OneGonOverlap
 public import FLT.Mazur.OneGonPinchingDescent
+public import FLT.Mazur.OneGonProductEndpoints
+public import FLT.Mazur.OneGonProductNormalization
 public import FLT.Mazur.OneGonQuotient
 public import FLT.Mazur.OneGonScalarExtension
 public import FLT.Mazur.OneGonTransition
