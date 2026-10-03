@@ -401,3 +401,123 @@ and graded-piece identifications; p-divisible comparison and per-embedding
 weight multiplicities. F07–F15 remain large missing theory and were not
 started. The boundary audit still finds sorryAx in the unchanged general
 family theorem and sorryAx plus Mazur_statement in the FLT endpoint.
+
+## W29 F04 continuation (split before implementation)
+
+All leaves have a 150-line complete-file cap. Preserve the actual rings and
+maps; no structure field may supply a comparison theorem or period identity.
+
+| Leaf | Required result |
+|---|---|
+| ComplexLocalizedGalois | Extend the actual Witt action through inversion of p; prove group laws and equivariance of theta into C_p. |
+| AdicRingFunctor | Construct the ring map on an ideal-adic completion from a ring endomorphism preserving that ideal; prove evaluation, identity and composition laws. |
+| ComplexDeRhamGalois | Apply the completion construction to the actual localized action; prove group laws and extension of the source action. |
+| ComplexDeRhamEquivariance | Prove completed theta equivariant and all parameter-ideal powers stable. |
+| CyclotomicTiltRoots | Choose compatible primitive p-power roots, construct epsilon in the actual tilt, and prove sharp(epsilon)=1 and the Galois power formula. |
+| CyclotomicLogConvergence | Construct the rational logarithmic series in the theta-adic completion and prove convergence and functoriality. |
+| CyclotomicLogParameter | Prove the logarithm is a nonzero uniformizer and its cyclotomic transformation formula. |
+| DeRhamFieldIdentification | Identify the existing B_dR localization with inversion of the proved period, then its fraction field and filtration. |
+| DeRhamGradedTwists | Identify each graded piece with the actual cyclotomic twist of C_p. |
+| DeRhamFixedField | Prove the fixed-field theorem with its analytic inputs; a DVR or residue field calculation alone is insufficient. |
+
+The tilt valuation-topology comparison is needed only if a subsequent proof
+uses it; the algebraic extension through ideal powers does not depend on it.
+Before the cyclotomic leaves, inspect compatible-root and formal-logarithm
+APIs and split again if a leaf would exceed its cap.
+
+The p-divisible comparison remains a parent, refined into separate capped
+obligations: rational-place/base-field transport; tangent/cotangent and dual
+constructions; actual period pairing; its integrality; equivariance;
+injectivity; surjectivity; filtration strictness. The coefficient-embedding
+rank parent splits into coefficient tensor decomposition, compatibility of
+the pairing on each component, the two-weight support bound, determinant
+compatibility, and the rank-one conclusion in each degree. None is assumed
+in a constructor. F06 global classification is attempted only after these
+F04 gates if a bounded arithmetic route exists; residual reducibility is
+never promoted to generic reducibility.
+
+W29 cyclotomic-root refinement before implementation (caps 150):
+`ComplexCyclotomicRoots` chooses an actual integral primitive p-th root,
+extends it using integral p-th roots, and proves primitivity at every level.
+`ComplexCyclotomicTilt` reduces that multiplicative sequence to epsilon,
+proves sharp(epsilon)=1 and epsilon≠1, and locates [epsilon]−1 in ker(theta).
+The coordinate Galois formula is a separate `ComplexCyclotomicAction` leaf;
+a formula on finite roots is not yet the logarithm's p-adic scalar formula.
+
+W29 logarithmic-sum refinement before implementation (caps 150):
+`AdicSeries` proves existence, uniqueness and functoriality of sums with
+nth term in the nth ideal power in a complete ring. `ComplexCyclotomicLog`
+uses the actual completed [epsilon]−1 and proves all positive integer
+denominators are units, then constructs the logarithmic sum and its finite
+congruences. Nonvanishing, order one and the p-adic cyclotomic scalar law are
+separate obligations; formal summability does not prove them.
+
+`ComplexCyclotomicLogTransport` (cap 150) proves that the actual Galois action
+fixes every rational logarithm coefficient and carries t to the adic sum at
+the transformed argument. This is functoriality of the logarithmic sum,
+not the still-required equality with the cyclotomic character times t.
+
+### W29 comparison and coefficient-rank contracts
+
+These remain proof obligations, not completed modules. Each prospective
+complete module is capped at 150 lines; split any contract further before
+implementation if its source proof needs more. Invariants and the logarithm's
+order/character law are prerequisites, not facts supplied by these contracts.
+
+| Prospective leaf | Required artifact | Prerequisite |
+|---|---|---|
+| PDivisibleRationalPlaceTransport | Actual field/integer/Galois identifications for the original system and standard Q_p. | Existing rational-place equivalences |
+| PDivisibleCotangentTransitions | Cotangent modules and compatible level maps of the actual finite-flat system. | Original p-divisible system |
+| PDivisibleTangentDuality | Tangent/cotangent limits and compatibility with Cartier duality. | Cotangent transitions and actual Cartier dual |
+| PDivisiblePeriodPairing | Construct the actual pairing of Tate points with periods. | Tangent duality, period-ring theory |
+| PDivisiblePeriodIntegrality | Prove the image and filtration bound for that pairing. | Actual pairing |
+| PDivisiblePeriodEquivariance | Intertwine the original Galois action with the period action. | Actual pairing and the cyclotomic law |
+| PDivisiblePeriodInjective | Prove injectivity of the resulting comparison map. | Pairing, Tate recovery |
+| PDivisiblePeriodSurjective | Prove surjectivity from the integral theory. | Integrality, injectivity and dimension argument |
+| PDivisibleComparisonStrict | Prove strictness for the specified filtrations. | Bijectivity, integral bounds |
+| CoefficientEmbeddingDecomposition | Decompose the actual scalar extension by embeddings. | Original coefficient field and splitting field |
+| CoefficientPairingComponents | Prove the comparison respects that decomposition. | Pairing, coefficient decomposition |
+| CoefficientTwoWeightSupport | Prove each component has support in degrees 0,-1. | Strict comparison, tangent/dual bounds |
+| CoefficientDeterminantWeights | Identify the determinant filtration at each embedding. | Component comparison and cyclotomic determinant |
+| CoefficientGradedRanks | Deduce both graded ranks are one, retaining each embedding. | Support, determinant and original rank two |
+
+No finite-flat quotient, residual filtration, total height, or abstract
+comparison isomorphism can replace the obligations in this table.
+
+### W29 result and next proof boundary
+
+Checked at 2026-10-03T18:09:50Z by `W29_FINAL_CHECKS.py` (lane-local,
+untracked): ten new modules, 68 audited declarations, maximum 94/150 lines.
+Every new module passed an individual foreground build and lint. Reproduce
+with `W29_VALIDATE.py`, `W29_MAKE_AUDIT.py`, `lake env lean W29_AXIOMS.lean`,
+and `W29_FINAL_CHECKS.py`; the report records exact logs and hashes.
+
+The actual localized and completed Galois maps satisfy the group laws.
+Completed theta is equivariant and every nonnegative parameter-ideal
+filtration level is preserved. These are algebraic statements, not joint
+continuity for a topology on B_dR+; the tilt valuation-topology comparison
+was not used or established.
+
+The actual primitive p-power root sequence supplies epsilon, with sharp
+one and epsilon nontrivial. Its multiplicative lift has the cyclotomic
+coordinate formula for the original algebraic Galois character. The
+logarithmic sum t is constructed in the actual B_dR+ using proved unit
+denominators. It has all finite congruences, lies in the first filtration
+step, and equals [epsilon]−1 modulo the square of the parameter ideal.
+Galois carries it to the logarithmic sum at [sigma(epsilon)].
+
+Still required before using t as a period uniformizer: prove that the
+completed [epsilon]−1 has order one, prove the logarithm has the same order,
+and prove the p-adic scalar formula sigma(t)=chi(sigma)t. The coordinate
+formula is not that formula: passing from finite residues to p-adic
+exponentiation requires a justified topology/limit argument. The local
+formal-log API has coefficient, derivative and substitution results; it
+does not supply this actual p-adic exponentiation bridge.
+
+Consequently the B_dR identification via t, its graded cyclotomic twists
+and fixed-field theorem, and all comparison/rank contracts above remain
+open. The F06 source check still finds only an actual residual character
+filtration and the explicitly three-adic `Assembly.CharacterInputs` route;
+no general global classification was implemented. F07–F15 were not started.
+The boundary audit still finds sorryAx in the unchanged general family
+theorem and sorryAx plus Mazur_statement in the FLT endpoint.
