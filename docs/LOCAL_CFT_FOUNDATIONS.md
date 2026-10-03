@@ -8,6 +8,10 @@ are design sketches, not elaborated declarations or certified size estimates;
 split again before implementation if a proof exceeds the cap. No missing
 theorem may become a structure field, parameter standing for E1c7, or axiom.
 
+Latest accepted scope: see the **W22 proved scope** section below and the
+W22 table in `LIFTS_GOAL_LEDGER.md`. The earlier wave sections record their
+historical state; W22 proves the finite-stage arithmetic they left open.
+
 ## Source match and conventions
 
 J.S. Milne, [Class Field Theory, v4.03 (2020)](https://www.jmilne.org/math/CourseNotes/CFT.pdf).
@@ -863,3 +867,83 @@ construct the principal-unit quotient/residue-additive identification; prove the
 norm's graded trace formula; then build compatible corrections and use
 completeness before claiming norm surjectivity or unit acyclicity. Do not turn
 any of these missing arithmetic conclusions into parameters or record fields.
+
+## W22 proved scope — 2026-10-03T07:40:35.747894+00:00
+
+Checked 2026-10-03T07:40:35.747894+00:00; base `c2adcddb`. Evidence:
+`python3 Scratch/LiftsW22/check.py` and the separate module build/lint/axiom logs.
+The full module/commit/cap table is in the W22 ledger section.
+**E1c7/E1d remain blocked; the final FLT theorem still depends on sorryAx.**
+
+The new arithmetic and cohomology endpoints concern **finite unramified extensions**.
+`unramifiedStageOrderH2Iso` applies to every stage of the existing degree-indexed
+diagram, using its canonical integral closure. The continuous multiplicative
+H2 comparison for the whole unramified union is still unproved.
+
+1. The principal units are actual kernels of reduction modulo πⁿ. For n > 0,
+   the divided-coefficient symbol is surjective, its kernel is Uⁿ⁺¹, and the
+   quotient is the additive residue field. The generator condition is the
+   structural equality of the maximal ideal with (π).
+2. The determinant expansion proves the norm's linear term is trace, with a
+   quadratic remainder. The induced map on the actual graded unit quotients
+   is residue trace. Separable residue trace surjectivity constructs each
+   correction; it is not an input hypothesis.
+3. The residue norm starts a recursive sequence. Each correction improves the
+   norm error and preserves the preceding congruence upstairs. Finite freeness
+   transfers base completeness to the extension; adic convergence, norm
+   congruence, and separatedness give an exact unit norm.
+4. Integral Hilbert 90 is strengthened to an integral **unit** witness by
+   removing a fixed base-uniformizer power. The actual unit representation has
+   algebra norm as its group norm and base units as its invariants. Both
+   periodic cyclic complexes are exact. Frobenius generation then proves
+   every positive finite-stage unit cohomology group is zero.
+5. The maximal-ideal valuation defines integer order, zero on integral units
+   and +1 on a uniformizer. The actual order sequence is short exact as Galois
+   representations. Its long exact sequence and proved unit acyclicity make
+   order an isomorphism in every positive degree, including multiplicative H2.
+   Canonical-stage instances are derived, including freeness; no arithmetic
+   conclusion is assumed as a parameter or record field.
+6. Integer order is preserved by embeddings in unramified towers. This is a
+   coefficient-level compatibility theorem; the continuous colimit comparison
+   and its naturality are not claimed by it.
+
+### Remaining continuous and arithmetic comparisons
+
+1. Construct the discrete continuous Galois action on the integral units of
+   the unramified union and identify its invariant coefficient modules with
+   the canonical integral units of finite stages. The existing
+   `continuousCohomologyColimitIso` uses `invariantStageCohomologyDiagram`,
+   indexed by open normal subgroups; the new finite-stage representation
+   endpoints are not yet connected to that diagram. This is the immediate
+   unresolved comparison, not an assumed vanishing theorem.
+2. Prove the compatible coefficient/cohomology maps under finite-stage
+   inflation and restriction, using `discreteOrder_unramified_tower`, then
+   derive continuous unit acyclicity and the continuous order-H2 isomorphism.
+   Compose with W21's integral Frobenius/Q/Z coordinates and check the carry
+   normalization in the multiplicative comparison.
+3. Inflation to the full separable closure, class formation, and Kummer–Artin
+   evaluation remain unproved. W14's cup-order minus sign remains unchanged.
+   Serre-weight evaluation and arbitrary-p Raynaud classification remain
+   independently blocked; neither was dispatched or assumed available.
+
+The first two steps require refining against the existing invariant-stage APIs;
+do not replace their proofs with hypotheses. No claim is made here that all
+principal-unit subgroups are themselves acyclic. The proved vanishing is for
+the full integral-unit group of a finite unramified extension.
+
+Read-only API boundary check: `Scratch/LiftsW22/remaining-api-check.log`.
+The generic continuous-colimit theorem and the new canonical-stage endpoints
+exist, but no new declaration identifies their coefficient representations.
+The finite-stage cohomology endpoints use `Type`, matching Mathlib's integral
+Hilbert-90 and cyclic-cohomology interfaces; the ring-only filtration, norm,
+and order lemmas retain their more general universe parameters.
+
+Final audit: `LEAN_NUM_THREADS=2 lake env lean Scratch/LiftsW22/FinalAxioms.lean`,
+exit 0; evidence `Scratch/LiftsW22/Final-axioms.log`:
+
+- `GaloisRepresentation.IsHardlyRamified.lifts` and `FLT.Assembly.hardlyRamifiedLifting`:
+  `[propext, sorryAx, Classical.choice, Quot.sound]`.
+- `PNat.pow_add_pow_ne_pow`:
+  `[Mazur_statement, propext, sorryAx, Classical.choice, Quot.sound]`.
+- The new graded quotient, graded trace, unit norm, unit acyclicity, and
+  canonical-stage multiplicative H2 comparison use only the three standard axioms.

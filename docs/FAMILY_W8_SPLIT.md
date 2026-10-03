@@ -1,5 +1,221 @@
 # FAMILY-W8 — finite-flat inertia spectrum and the family boundary
 
+## W18 implementation boundary — 2026-10-03
+
+D9c's closure placement, original-inertia fixedness, evaluation transport,
+and application to actual one-/two-cycle point equations are implemented.
+The new local scalar-weight endpoints also identify these ratios through
+one compatible residue-field embedding. **D10's original-factor assembly
+and D11–D14 are still open; this is not completion of GOAL-FAMILY-W18.**
+`Family.lean` is unchanged and its original admission remains.
+
+Checked at 2026-10-03 08:05 UTC by `python3 W18_FINAL_CHECKS.py`,
+12 individual foreground builds/lints, `W18_AXIOMS.lean` (31 declarations,
+only `propext`, `Classical.choice`, `Quot.sound`), and
+`W18_BOUNDARY_AXIOMS.lean` (the family still uses `sorryAx`).
+
+The twelve new modules are listed in `FAMILY_W18_DONE.md`; each whole file
+is at most 83 lines (cap 150). Reproduce validation with the per-module
+commands and `python3 W18_FINAL_CHECKS.py` recorded there. These audit
+artifacts are untracked outside FLT, as required by the brief.
+
+Concrete local endpoints:
+
+- `inertia_fixes_unramifiedStage`, `inertia_fixes_unramifiedUnion`, and
+  `inertia_fixes_fractionField` prove fixedness in the original embedding.
+  Residue uniqueness uses a power-basis generator and its unit derivative;
+  fixedness of the union follows by a subalgebra supremum argument.
+- `towerClosureEquiv` extends the prescribed fraction embedding.
+  `originalTowerInertia_evaluation` intertwines the actual coordinate
+  evaluations and original inertia without a fixedness hypothesis.
+- `fundamentalValue_one_original_character` and
+  `fundamentalValue_two_original_character` derive integral original-inertia
+  ratios from actual point equations, with common digits for all inertia.
+- `one_cycle_scalar_weight` and `two_cycle_scalar_weight` identify an actual
+  scalar action under `towerResidueMap`, with binary exponent `d` or `p*a+b`.
+  They still take the strict-Henselian scalar model, integral scalar lifts,
+  rank-one proof, and point-action comparison. They do not construct the
+  original representation's factors or assume a tame-character formula.
+
+### Next original-factor transport leaves (each cap 150)
+
+1. Change the algebraic closure in `GaloisModule.IsFiniteFlat` using
+   `AlgEquiv.autCongr` and postcomposition of Hopf-algebra points; retain the
+   prescribed point type and its scalar action. The canonical absolute-Galois
+   restriction map alone does not identify the prescribed closure embedding.
+2. Embed the actual finite descent integers as a stage of the original
+   unramified union. Use `inertiaDescentIntegers_irreducible`, finiteness and
+   separable residue to prove its image is an `UnramifiedStage`.
+3. Apply `IsFiniteFlat.baseChange_sameClosure` to the actual descended factor,
+   then the closure-change comparison. Keep the equality with the SAME
+   original inertia element; an existential matching inertia element from
+   `exists_inertia_action_map` is insufficient for a character formula.
+4. Construct the maximal scalar model with `exists_maximal_model_scalar_action`,
+   transport the derived rank-one finite scalar field and its point action,
+   and apply the proved local weights. No scalar-action comparison or
+   computed factor character may become a field in the model input.
+
+Only then assemble D11's prime-field factor charpolys and D12's spectrum.
+`LocalRoot.rootCharacterToRoots_surjective` supplies the root-character
+surjectivity ingredient; choose a niveau-two generator before taking its
+cyclotomic norm. D13 still needs a higher-niveau coefficient-field argument:
+restriction to the prime field multiplies dimension by the coefficient degree.
+D14 and the exact family target retain their existing separate obligations.
+
+
+## W17 current gate map — 2026-10-03
+
+This section supersedes historical status below. Checked at base `25a54828`
+by reading the cited modules and `Family.lean:37–68`, and searching
+`rg -n 'sorry' FLT/MoretBailly.lean`. C5 is complete; the family admission
+remains. The blueprint (chapter 3, lines 183–215) assumes irreducible reduction;
+the Lean target does not. It also covers arbitrary finite free local domains,
+every odd prime including 3, and every embedding of the common number field.
+
+### Completed gates
+
+| Gate | Modules (under FLT; abbreviated basenames) | Limit |
+|---|---|---|
+| S1–S4 | `RaynaudParameterValuation`, `RaynaudTwoCoordinates`, `TameSpectrumDigits`, `RaynaudCoordinateCharacter` | S4 is over number-field completion integers, not the infinite strict henselization. |
+| Simple inertia | `RaynaudInertiaSimpleScalars`, `RaynaudAbsoluteTameCommutativity`, `WildInertiaProP` | Derived finite rank-one scalars; no computed inertia characters. |
+| S5b | `RaynaudInertiaFactorDescent`, `RaynaudCompatibleSubquotients`, `RaynaudInertiaScalarFiltration`, `RaynaudDescentActionAgreement`, `RaynaudDescentScalarFiltration` | Actual finite-flat factors and descent/action agreement; spectrum transport remains. |
+| C3 | `RaynaudStrictHenselian`, `RaynaudStageFamily`, `RaynaudResidueClosure` | Actual unramified strict-Henselian tower. |
+| S5c | `RaynaudActualCyclicPresentation`, `RaynaudFundamentalCycleParameters`, `RaynaudCoefficientBounds`, `RaynaudExtremalActions` | Genuine coordinates, parameter products and generation; evaluation on points remains. |
+| C5 | `RaynaudPadicPowerExtension` | `ThreeAdicPlan.extend_from_padic_power` and `GenericGaloisHom.integral_of_padic_power`: prescribed maps on original odd-prime p-adic models. |
+| Twist obstruction | `TameTraceObstruction`, `CyclotomicInertiaDetection`, `CyclicRestrictionTwist` | Requires actual spectrum and the appropriate generator. |
+| Family algebra | `FamilyTracePair`, `BrauerEffectivityCoefficients`, `Assembly/FreyTraceInput` | Conditional algebra/consumer reductions, not existence of a family. |
+
+### S5d and tame-spectrum leaves
+
+Each proposed new module has a **whole-file cap of 150 lines**. Split again
+before exceeding it. Sketches suppress ambient instances. Names in later
+sketches describe interfaces to construct, not existing APIs. READY means
+the displayed inputs exist; it does not mean the classification is proved.
+
+| Leaf / proposed module | Lean endpoint sketch | Dependencies / status |
+|---|---|---|
+| D1 `InvariantCharpoly` | `T.charpoly = (T.restrict hU).charpoly * (U.mapQ U T hU).charpoly` | READY: `Basis.sumQuot`, block triangular charpoly; no invariant complement. |
+| D2 `RankTwoCharpoly` | `T.charpoly=(X-C a)*(X-C b) ↔ trace k V T=a+b ∧ T.det=a*b` | READY: finrank two, charpoly coefficients. |
+| D3 `FiniteFieldQuadraticSpectrum` | monic quadratic `P : (ZMod p)[X]`, root a in char p implies root `a^p`; if distinct, `P.map f=(X-C a)*(X-C (a^p))` | READY: Frobenius fixes prime coefficients; root divisibility and degree. |
+| D4 `TameSpectrumCharpoly` | binary-digit charpoly factors + cyclotomic determinant imply `trace k V T ≠ 0` and ratio order p−1 or p+1 | READY after D2, `TameSpectrumDigits`; keep supplied factor/digit hypotheses explicit. |
+| D5 `SimpleScalarDegree` | rank-one F-module W implies `Nat.card F = p ^ finrank (ZMod p) W` | READY: finite vector-space cardinalities; actual prime-field dimension controls niveau. |
+| D6 `RaynaudPointCoordinate` | nonzero point x implies `eval x (fundamentalCoordinate ... i) ≠ 0`; scalar action gives `eval (a • x) c = χ(a)*eval x c` | Character functions and generation; nonzero coordinate-ring element alone does not imply nonzero evaluation. |
+| D7 `RaynaudValuationDigits` | actual unramified coefficients imply `∀ i, valuation (a i)=0 ∨ valuation (a i)=1` | C5 parameter products and preserved uniformizer; general DVR, not only S1 over Z_p. |
+| D8 `RaynaudPointPower` | r=1,2: `eval x c ^ (p^r-1) = π^m * u`, `u : Rˣ`, m the weighted binary digits | D6/D7, S2 and actual cyclic equations; check coefficient orientation. |
+| D9 `RaynaudTowerRootCharacter` | `residue (σ x / x) = θ σ ^ m` over actual strict-Henselian fraction field | D8; generalize S4 unit correction and compatible integral closures/inertia actions. |
+| D10 `RaynaudCharacterDescent` | original inertia factor's character in `AlgebraicClosure (ZMod p)` equals the derived digit power | D9, normal descent/action agreement, compatible residue embeddings. |
+| D11 `FiniteFlatFactorSpectrum` | each simple factor of prime-field dimension ≤2 has the charpoly of D10 eigenvalues and Frobenius conjugates | D3/D5/D10; scalar-line operator transport. |
+| D12 `FiniteFlatTameSpectrum` | `hp,hflat,hdet ⊢ ∃ t, GeneratesCyclotomic t ∧ ∃ a b, charpoly(t)=(X-C a)*(X-C b) ∧ (orderOf(a/b)=p-1 ∨ orderOf(a/b)=p+1)` | D1/D4/D11, determinant product, fundamental-character surjectivity. Choose niveau-two generator FIRST, then its cyclotomic norm; no wild splitting. |
+| D13 `FiniteResidueSpectrum` | finite k, rank-two finite-flat k-representation implies analogous spectrum over `AlgebraicClosure k` | D6–D12 with k-linear factors. Restriction to F_p has dimension `2*[k:F_p]`; D12 does not suffice. |
+| D14 `CyclotomicRestrictionIrreducible` | residual absolute irreducibility + flatness + determinant + large p implies absolute irreducibility on cyclotomic kernel | D12/D13 and existing self-twist/detection. Small primes separate. |
+
+D6–D14 are arithmetic/assembly obligations, not assumed conclusions. Caps
+are implementation stop limits, not certified proof sizes. D13 needs a
+further source-based split for higher-niveau coefficient fields.
+
+### From C5 to the exact family target
+
+There is substantial missing theory beyond the spectrum. Each row has a
+150-line cap for its named assembly/interface leaf. This does **not** assert
+that absent prerequisite theories fit into that cap: those require further
+source-based decomposition and definitions before implementation. No record
+may carry these conclusions as fields.
+
+| Leaf (cap 150) | Lean sketch / concrete obligation | Dependencies |
+|---|---|---|
+| F01 compatible torsion maps | `∃ maps, ∀ n, genericHom (maps n) = prescribedTransition n` | C5 and HR torsion models; uniqueness supplies diagram commutativity. |
+| F02 integral exact levels | `Function.Exact (points (i n)) (points (q n))` and integral kernel/quotient identifications | F01, `PrimePowerExact`, existing flat closures/quotients. |
+| F03 p-divisible object | `∃ H, ∀ n, Nonempty (H.level n ≅ torsionModel n)` | F01/F02; p-divisible-group definition and level axioms missing. |
+| F04 weight-two comparison | `finrank K (gr 0 D)=1 ∧ finrank K (gr (-1) D)=1` | F03; period rings/comparison theorem missing, not consequences of C5. |
+| F05 coefficient normalization | `∃ L ι, Function.Injective (ι : R →+* integers L)` with compatible continuous base change | Finite free local domain; normalization/continuity; preserve original R and representation. |
+| F06 residual/small-prime branches | derive required residual hypotheses from HR, or construct families for the remaining cases | D14 only handles its large-prime irreducible inputs. Cannot add blueprint's omitted assumption to Lean target. |
+| F07 potential modularity | `∃ F, IsTotallyReal F ∧ IsModular (ρ.map (algebraMap ℚ F))` with local/disjointness conditions | F04/F06; Snowden potential-modularity theory missing. `MoretBailly.statement` itself has `sorry`. |
+| F08 coefficient field | `∃ E, NumberField E ∧ ∀ v, ∃ P : E[X], ...` common Hecke/Frobenius polynomials | F07; Hilbert-form/Hecke coefficient theory missing. |
+| F09 attached members | `∀ ℓ φ, ∃ τ, ∀ v, charFrob τ v = (P v).map φ` at good places | F08; attached representations/local-global compatibility missing. |
+| F10 Brauer restriction data | actual induced/restricted character identity over one E | F09, Brauer induction and coefficient descent, not integer self-pairing alone. |
+| F11 effective descent | `∃ τ, finrank E Vτ=2 ∧ character τ = signedDescentCharacter` | F10, `BrauerEffectivityCoefficients`, semisimple character theory and continuity. |
+| F12 all-embedding HR models | `∀ ℓ φ, ∃ A W τ r, IsHardlyRamified ... τ ∧ τ.baseChange.conj r = σ ℓ φ` | F11; stable lattices, local-global compatibility, flatness at ℓ and square-trivial inertia at 2; every embedding. |
+| F13 original equivalence | `∃ ψ r', (ρ.baseChange _).conj r' = σ hp ψ` with exact R algebra/continuous action | F05/F11, semisimplicity and Brauer–Nesbitt; trace equalities alone insufficient. |
+| F14 family packaging | exact existential of `mem_isCompatible` | F08–F13 and all universe/topology/tower instances; new theorem first. |
+| F15 replace admission | delegate old theorem to axiom-clean F14 | Separate integration: current BRIEF forbids edits to `Family.lean`. |
+
+F03/F04 and F07–F11 are **large missing theory**, not ready short proofs.
+An exhaustive elaborated Lean split cannot honestly be certified before
+those APIs exist. F06 is a mathematical statement-scope gap as well.
+W17 algebra checkpoint: D1–D5 are implemented in the five modules named above
+under `FLT.Deformations.RepresentationTheory` (59, 52, 61, 73, 41 lines).
+Foreground individual builds and module-only lints pass; all 15 declarations
+in `W17_ALGEBRA_AXIOMS.log` use only the three standard axioms. D4 gives the
+canonical factors and nonzero trace; ratio/norm orders reuse `TameSpectrumDigits`.
+
+D6 is now ready from `CharacterRank.scalar_orbit` and injectivity of
+`FF.characterCoordinates`: prove scalar evaluation, then nonvanishing for
+integral character vectors, then apply to the actual fundamental generator.
+D7 correction: `RaynaudDVRParameterValuation.dvr_valuation_digits` already
+proves the general DVR lemma. The new ≤150-line `RaynaudValuationDigits`
+only applies it to `fundamentalCoefficient_complement`, with p irreducible
+in the actual unramified base. Do not re-prove the abstract digit lemma.
+D8 is refined before implementation into `RaynaudEvaluatedCycle` (≤150):
+evaluate the actual cyclic equations on points and eliminate cycles of length
+one/two; and `RaynaudPointPower` (≤150): apply the actual D7 binary unit
+coefficients to give p-power-times-unit equations, with both digits exhibited.
+Dependencies are D6/D7 and `RaynaudTwoCoordinates`; these are now ready.
+D9 is refined into D9a `RaynaudIntegralUnitCorrection` (≤150), lifting units
+from any coefficient ring integral over the original completion integers into
+the original integral closure and proving the root correction is a unit;
+D9b `RaynaudIntegralCoordinateCharacter` (≤150), identifying its reduced inertia
+ratio with the uniformizer-root character power; and D9c actual point/closure
+transport (≤150 per further leaf) applying D9a/b to D8 on the constructed tower.
+D9a/b are ready and avoid rebuilding the entire root-character API over the
+infinite base. D9c/D10 still require compatible embeddings and descent.
+
+### W17 verified endpoint and remaining first gate
+
+Checked at 2026-10-03 07:29 UTC by `python3 W17_FINAL_CHECKS.py`, individual
+foreground build/lint logs, and `W17_AXIOMS.lean` (artifacts outside FLT).
+D1–D8 and D9a/b are implemented: eleven modules, 29 declarations, each file
+≤77 lines and every dependency-axiom set contained in `{propext,
+Classical.choice, Quot.sound}`. D6–D9 modules are in `FLT.GroupScheme`.
+`W17_BOUNDARY_AXIOMS.lean` still reports `sorryAx` for the original family theorem.
+
+The actual endpoint `FF.fundamentalValue_two_binary` supplies binary digits
+and an integral unit for the equation of an actual nonzero point coordinate,
+with exponent **p*a+b**. The one-cycle version supplies a binary exponent too.
+The scalar lift satisfies algebraic action laws and matches the generic action;
+there are no supplied coordinate equations, weights, or spectrum conclusions.
+The hypothesis `Irreducible (p : R)` expresses unramifiedness at this local
+endpoint; W16 constructs such bases, but the original-model spectrum wrapper
+has not been assembled.
+
+`exists_integral_coordinate_ratio` works in the ORIGINAL number-field
+completion closure. It allows coefficients from any ring whose image is
+integral over the original completion integers. It constructs an integral
+ratio and proves its residue equals the original inertia root-character power.
+This removes the need to assume that S4's unit was in the original base ring.
+It does not itself place the constructed Raynaud model in that closure.
+
+Refine D9c before further implementation (each whole-file cap 150):
+
+| Leaf | Lean sketch | Dependencies |
+|---|---|---|
+| D9c1 closure placement | construct the algebraic-closure equivalence over the tower fraction field, extending its prescribed embedding into the original closure | Actual `RaynaudStrictHenselian` fraction-field embedding, algebraicity and algebraic-closure universal property. |
+| D9c2 original inertia fixes tower | `∀ σ : localInertiaGroup v, ∀ a : Rsh, σ (ι a) = ι a` | Each actual finite stage unramified; residue roots and Henselian uniqueness; pass through directed union. Must prove this for the chosen embedding. |
+| D9c3 evaluation transport | transported `fundamentalValue` and coefficient image satisfy D8 equations in the original closure, and evaluation intertwines original inertia | D9c1/c2, generic point base change and action agreement; then apply proved D9a/b. |
+
+D10–D14 and F01–F15 retain their displayed obligations. In particular,
+prime-field rank-two algebra does not supply larger coefficient-field spectra,
+small-prime/residually reducible branches, or potential modularity.
+
+The current main consumer path, checked by reading the three files, is
+`FermatsLastTheorem.lean:19` →
+`PNat.pow_add_pow_ne_pow_of_three_inputs` (`Assembly/ThreeInputFinal`) →
+`FLT.Assembly.hardlyRamifiedCompatibleFamilies` (`Assembly/ExistingInputs:36`)
+→ `IsHardlyRamified.mem_isCompatible`. The adapter already forwards the exact
+statement, so no additional mathematical gate lies between it and the main
+consumer. `HardlyRamified/PrimeField:61` is a second consumer. Main separately
+uses the lifting input and `Mazur_statement`; finishing this family branch
+alone would not certify all of main. No whole-library build/lint was run.
+
 Checked 2026-09-30 against `af51e4ea`; commands at the end reproduce the audit.
 This is a dependency map, not a proof of `mem_isCompatible`.
 
@@ -1068,3 +1284,43 @@ comparison. Downstream spectrum/family integration is not completed here:
 `rg -n 'mem_isCompatible|sorry' FLT/GaloisRepresentation/HardlyRamified/Family.lean`
 still reports the original admission at line 68. No admission-free claim is
 made for that theorem or `PNat.pow_add_pow_ne_pow`.
+
+## W18 D9c implementation refinement
+
+Before implementation, split D9c into the following whole-file caps of 150:
+`RaynaudTowerClosure` extends the prescribed fraction embedding;
+`RaynaudUnramifiedHom` proves residue uniqueness for finite unramified DVR maps;
+`RaynaudTowerInertia` applies it to each actual stage and its directed union;
+`RaynaudTowerAction` conjugates original inertia through the prescribed closure
+equivalence; `RaynaudTowerPointCharacter` transports actual coordinate equations
+and applies the integral-coefficient root-character theorem. Further split
+evaluation/action comparisons if needed before exceeding any cap.
+
+D9c3 is further separated into `RaynaudTowerEvaluation` (equivariance of
+actual coordinate functions), `RaynaudTowerRootCharacter` (transport of
+integral-coefficient equations), `RaynaudTowerPointCharacter` (actual one-
+and two-cycle equations with common digits for all original inertia), and
+`RaynaudOriginalTowerAction` (the actual union action, deriving fixedness).
+The compatible-residue part of D10 is `RaynaudTowerResidue`: construct the
+integral embedding, prove locality, and induce the residue-field embedding.
+Each has a whole-file cap of 150 lines.
+
+Before scalar-character identification, split out `RaynaudScalarCoordinateRatio`
+(cap 150): if the actual transported automorphism sends a nonzero point to
+`u • x`, derive its coordinate ratio from the proved scalar-evaluation law,
+then identify its residue with the compatible scalar-field embedding. This
+is an evaluation lemma; constructing the original factor and its comparison
+is still required for the unconditional D10/D11 wrapper.
+
+`RaynaudScalarCharacterBridge` (cap 150) is the next D10 comparison leaf:
+reduce the actual scalar-coordinate ratio through `towerResidueMap` and
+identify it with the original integral ratio. It must not assume a tame
+character formula; its scalar-action equality is an explicit comparison
+input to be derived when assembling the original descended factor.
+
+`RaynaudTowerScalarWeights` (cap 150) combines the actual point root equations
+with the compatible scalar-ratio comparison. Its output computes every
+actual scalar action, with common binary digits and the original root
+character. The scalar action is identified on a nonzero point; it is not a
+supplied inertia-character formula. Original-factor construction/transport
+must precede using this local endpoint in the unconditional spectrum theorem.
