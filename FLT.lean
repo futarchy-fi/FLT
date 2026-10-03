@@ -1620,6 +1620,9 @@ public import FLT.Mazur.CoherentSubsheafACC
 public import FLT.Mazur.CoherentSupport
 public import FLT.Mazur.CoherentSupportedDecomposition
 public import FLT.Mazur.CommonIdealDirectSum
+public import FLT.Mazur.ConstantCyclicGenerator
+public import FLT.Mazur.ConstantCyclicGroup
+public import FLT.Mazur.ConstantCyclicInclusion
 public import FLT.Mazur.ConstantDegree
 public import FLT.Mazur.Contracts
 public import FLT.Mazur.CoproductConstantSections
@@ -1642,6 +1645,7 @@ public import FLT.Mazur.CyclicProductEndpoints
 public import FLT.Mazur.CyclicProductNormalization
 public import FLT.Mazur.DRFiberClassification
 public import FLT.Mazur.DirectImageInjectives
+public import FLT.Mazur.DisjointClosedCoproduct
 public import FLT.Mazur.DisjointStructureCohomology
 public import FLT.Mazur.DivisorInvertibleSheaf
 public import FLT.Mazur.DivisorLineBundle
@@ -1821,6 +1825,9 @@ public import FLT.Mazur.PolygonConstantSections
 public import FLT.Mazur.PolygonCyclicAtlas
 public import FLT.Mazur.PolygonCyclicCocone
 public import FLT.Mazur.PolygonCyclicDescent
+public import FLT.Mazur.PolygonCyclicDivisor
+public import FLT.Mazur.PolygonCyclicDivisorOrbit
+public import FLT.Mazur.PolygonCyclicDivisorPullback
 public import FLT.Mazur.PolygonCyclicNormalizationFinite
 public import FLT.Mazur.PolygonCyclicNormalizationPullback
 public import FLT.Mazur.PolygonCyclicNormalizationRanges
@@ -1828,6 +1835,8 @@ public import FLT.Mazur.PolygonCyclicPushout
 public import FLT.Mazur.PolygonCyclicSeparated
 public import FLT.Mazur.PolygonDimension
 public import FLT.Mazur.PolygonDirectImageCohomology
+public import FLT.Mazur.PolygonDivisorCoproduct
+public import FLT.Mazur.PolygonDivisorDegree
 public import FLT.Mazur.PolygonFieldExtension
 public import FLT.Mazur.PolygonGenusOne
 public import FLT.Mazur.PolygonGeometricGenus
