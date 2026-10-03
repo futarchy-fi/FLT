@@ -980,6 +980,7 @@ public import FLT.LocalClassFieldTheory.FrobeniusTower
 public import FLT.LocalClassFieldTheory.GaloisHomContinuity
 public import FLT.LocalClassFieldTheory.GaloisInflationCoefficients
 public import FLT.LocalClassFieldTheory.GaloisInflationH2
+public import FLT.LocalClassFieldTheory.GaloisKernelContinuousEquiv
 public import FLT.LocalClassFieldTheory.GaloisKernelRestriction
 public import FLT.LocalClassFieldTheory.GaloisKernelTopology
 public import FLT.LocalClassFieldTheory.GaloisTowerCochainDescent
@@ -1030,6 +1031,9 @@ public import FLT.LocalClassFieldTheory.RationalCoefficientSequence
 public import FLT.LocalClassFieldTheory.RationalIntegralConnectingIso
 public import FLT.LocalClassFieldTheory.RationalTorsion
 public import FLT.LocalClassFieldTheory.RationalUnramifiedCharacters
+public import FLT.LocalClassFieldTheory.RelativeDegreeTorsionClass
+public import FLT.LocalClassFieldTheory.RelativeLowerBound
+public import FLT.LocalClassFieldTheory.RelativeRestrictionKernel
 public import FLT.LocalClassFieldTheory.ResidueAction
 public import FLT.LocalClassFieldTheory.ResidueActionFaithful
 public import FLT.LocalClassFieldTheory.ResidueActionSurjective
@@ -1046,6 +1050,7 @@ public import FLT.LocalClassFieldTheory.UnitNormSurjectivity
 public import FLT.LocalClassFieldTheory.UnramifiedBaseChange
 public import FLT.LocalClassFieldTheory.UnramifiedBaseChangeCohomology
 public import FLT.LocalClassFieldTheory.UnramifiedBaseChangeEmbedding
+public import FLT.LocalClassFieldTheory.UnramifiedBaseChangeInflationSquare
 public import FLT.LocalClassFieldTheory.UnramifiedBaseChangeIntegral
 public import FLT.LocalClassFieldTheory.UnramifiedBaseChangeOrder
 public import FLT.LocalClassFieldTheory.UnramifiedBaseChangeOrderCohomology
@@ -1079,6 +1084,7 @@ public import FLT.LocalClassFieldTheory.UnramifiedIntegralH2Additive
 public import FLT.LocalClassFieldTheory.UnramifiedIntegralH2Restriction
 public import FLT.LocalClassFieldTheory.UnramifiedIntegralModel
 public import FLT.LocalClassFieldTheory.UnramifiedInvariantRestriction
+public import FLT.LocalClassFieldTheory.UnramifiedKernelInflation
 public import FLT.LocalClassFieldTheory.UnramifiedLocalInertia
 public import FLT.LocalClassFieldTheory.UnramifiedMultiplicativeInflation
 public import FLT.LocalClassFieldTheory.UnramifiedMultiplicativeInvariant
