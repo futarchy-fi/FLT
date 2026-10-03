@@ -247,18 +247,18 @@ W10 proves the following prerequisites, without claiming arbitrary-target descen
 
 W11 proves `NodeLocalizedEqualizer` (144/240): the actual A-localization
 is the pullback of its two localized branches, with both canonical projection
-formulas. The localized B equalizer and arbitrary-target descent remain open.
+formulas. `OneGonLocalizedEqualizer` (102/240) proves the actual B-localization
+is the endpoint equalizer on the localized normalization, including the
+fraction membership criterion and the canonical restriction formula.
 
-Still missing: the B equalizer property after localization at those
-chosen elements. The affine-target theorems have full affine-line sources;
+Still missing: arbitrary-target descent and gluing. The affine-target theorems have full affine-line sources;
 restricted source opens are spectra of localized polynomial rings. They
 cannot be used unchanged for maps to an affine neighborhood in an arbitrary
 Y. Then the locally defined morphisms must be glued, with uniqueness proved,
 and descended across the specified global cocone.
 
 Remaining proposed leaves, each at most 240 lines (contracts, not declarations):
-localized node ring pullback; localized B equalizer; node arbitrary-target
-descent; one-gon arbitrary-target descent; polygon cocone assembly; global
+node arbitrary-target descent; one-gon arbitrary-target descent; polygon cocone assembly; global
 pinching universal property. Untracked BLOCKED.md specifies these contracts.
 
 The ring pullback proves only the affine-target case. Neither that case
@@ -423,3 +423,7 @@ E4d W11 node equalizer checked 2026-10-03 00:00 UTC: foreground module
 build and individual runLinter passed. The collectAxioms audit of all module
 declarations passed (GOAL_MAZUR_W11_NODE_AXIOMS.txt, untracked), permitting
 only propext, Classical.choice and Quot.sound. No scheme descent is claimed.
+
+E4d W11 one-gon equalizer checked 2026-10-03 00:03 UTC: foreground module
+build, individual runLinter and collectAxioms passed (untracked
+GOAL_MAZUR_W11_ONEGON_AXIOMS.txt). Only the three allowed axioms occur.
