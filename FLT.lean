@@ -635,6 +635,7 @@ public import FLT.GroupScheme.PointFieldEvaluation
 public import FLT.GroupScheme.PointImageConductor
 public import FLT.GroupScheme.PrimeCyclotomicCoefficients
 public import FLT.GroupScheme.PrimeRootCoordinates
+public import FLT.GroupScheme.PrimeUnitSubspace
 public import FLT.GroupScheme.PrincipalFiberFlatness
 public import FLT.GroupScheme.PrincipalFiberFreeness
 public import FLT.GroupScheme.QuadraticDescent
