@@ -1202,10 +1202,12 @@ public import FLT.LocalClassFieldTheory.RationalTorsion
 public import FLT.LocalClassFieldTheory.RationalUnramifiedCharacters
 public import FLT.LocalClassFieldTheory.RelativeDegreeTorsionClass
 public import FLT.LocalClassFieldTheory.RelativeFundamentalExtension
+public import FLT.LocalClassFieldTheory.RelativeFundamentalRestriction
 public import FLT.LocalClassFieldTheory.RelativeFundamentalTateCup
 public import FLT.LocalClassFieldTheory.RelativeLowerBound
 public import FLT.LocalClassFieldTheory.RelativeOrderInduction
 public import FLT.LocalClassFieldTheory.RelativeRestrictionKernel
+public import FLT.LocalClassFieldTheory.RelativeRestrictionTower
 public import FLT.LocalClassFieldTheory.RelativeTateClasses
 public import FLT.LocalClassFieldTheory.RelativeTateCupDegreeZero
 public import FLT.LocalClassFieldTheory.ResidueAction
