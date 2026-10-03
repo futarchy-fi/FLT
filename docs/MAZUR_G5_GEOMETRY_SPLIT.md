@@ -259,7 +259,7 @@ from the geometric smooth-locus identification. Each cap includes helpers:
   between the exact specified cocones, proves normalization/node compatibility,
   proves local finite presentation of both actual atlases by their open covers,
   and transports it to `polygon_lfp` for the arbitrary pushout C.
-- **E5b — PolygonAtlasSmoothLocus, cap 240, ready.** Compute the smooth
+- **E5b — PolygonAtlasSmoothLocus, implemented at 176/240.** Compute the smooth
   locus of each actual atlas using E3 and open-immersion naturality. Identify
   it with the disjoint full Laurent component opens; retain both n=2 overlaps
   and the smooth point z=1 in n=1. Prove the component maps and their ranges.
@@ -286,7 +286,7 @@ Require the component formula, with `torusToComponent` induced by
 Then transport the commutative group through this specified iso.
 Source: DR II.1.1 and II.1.12(a). Dependencies: E3/E4 and G4.
 `IsPushout.isoIsPushout` compares the actual cocones; smooth-locus naturality
-transports E3 along the proved open atlas. E4 and E5a are complete; E5b is the next ready leaf.
+transports E3 along the proved open atlas. E4, E5a and E5b are complete; E5c is the next ready leaf.
 
 ## API evidence and execution
 
@@ -516,3 +516,11 @@ Classical.choice and Quot.sound; evidence: GOAL_MAZUR_W12_ALL_AXIOMS.txt
 (untracked). All module caps, sorted FLT.lean imports and git diff --check
 passed. E5b, E5c, G5 and Mazur G1 remain; Mazur_statement still occurs at
 FLT/Assumptions/Mazur.lean:103 (source check, no full-goal axiom rebuild).
+
+E5b W13 checked 2026-10-03 01:16 UTC: PolygonAtlasSmoothLocus (176/240)
+passed its foreground module build, individual runLinter and collectAxioms on
+all 19 declarations (GOAL_MAZUR_W13_ATLAS_AXIOMS.txt, untracked). Only the
+three allowed axioms occur. The specified torus maps are open immersions with
+pairwise disjoint ranges whose union is exactly the atlas smooth locus, for
+every positive n. The cyclic proof uses both alternatives of charts_eq_iff;
+the one-gon proof uses its full Laurent chart. E5c remains next.
