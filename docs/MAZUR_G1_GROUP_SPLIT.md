@@ -677,3 +677,11 @@ endpoint kernel lies in the endpoint image; every other prime avoids a kernel
 element, so U6c5 applies. The proof constructs the full open cover and uses
 U6c6; it does not assume a global descent in a record or hypothesis. The
 pinching-chart specializations still need their own checked proof.
+
+U6c1/U6c2 are now released together as `RelativePinchingDescent` (cap 160).
+The complete `W16_GLOBAL_PINCHING_PROOF.lean` compiles: `oneGon_desc` and
+`node_desc` prove existence and uniqueness for arbitrary target schemes over
+any commutative coefficient ring. The intermediate `node_product_desc` works
+on Spec of the normalization product, and the two-branch statement follows
+via `coprodSpec`. The finite normalization instances and surjective endpoint
+maps are proved for the actual A and B, not supplied as new structure fields.
