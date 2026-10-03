@@ -800,3 +800,68 @@ injectivity, surjectivity, strictness, then per-embedding decomposition,
 component pairings, two-weight support, determinant weights and ranks.
 No comparison isomorphism is inserted as a record field. In particular,
 the family admission remains downstream of these missing theorems.
+
+## W33 analytic descent inputs (split before implementation)
+
+The completed fixed-field and twist-vanishing endpoints require separate
+arithmetic proofs. In particular, averaging a finite orbit loses the
+p-adic norm of its cardinality; density alone does not bound that loss.
+The following leaves have a 150-line source cap each. Split further before
+exceeding a cap. This table is a proof plan, not a claim of completion.
+
+| Leaf | Concrete output | Dependency / boundary |
+|---|---|---|
+| ComplexGaloisApproximation | Approximate a completed fixed vector by algebraic vectors whose entire Galois displacement is bounded by the approximation error. | Existing isometric action, ultrametric inequality, density |
+| PadicGaloisOrbit | Construct the actual finite algebraic orbit and its invariant sum. | Minimal polynomial root finiteness and orbit permutation |
+| PadicGaloisAverage | The normalized orbit sum lies in Q_p and bounds distance by the inverse norm of the orbit cardinality times the displacement bound. | Orbit sum; algebraic Galois fixed-field theorem |
+| ComplexScalarClosed | The actual Q_p image in C_p is closed; arbitrarily close Q_p approximants give membership. | Complete Q_p, isometric scalar embedding |
+| PadicAxEstimate | Replace the orbit-cardinality loss by a constant depending only on p, uniformly for every algebraic element and every displacement bound. | Missing arithmetic Ax estimate; ordinary averaging is insufficient |
+| ComplexAxDescent | Apply that proved uniform estimate to algebraic approximants and closedness to obtain the completed fixed-field theorem. | PadicAxEstimate; do not assume completed fixed-field descent |
+| CyclotomicTowerTraceBounds | Construct normalized traces in the actual cyclotomic tower and prove uniform bounds for the relevant transition maps. | Actual local ramification and different estimates; split these estimates separately |
+| CyclotomicTwistDescent | Control character-weighted approximation errors and rule out nonzero eigenvectors of nonzero integral cyclotomic weight. | Tower trace bounds; requires proof, not a vanishing field in a structure |
+| FractionalPrincipalFiltration | Construct the actual submodules t^n B_dR+ inside B_dR for every integer n, with coefficient equivalences and next-level inclusions. | Existing field and nonzero period |
+| FractionalPrincipalGraded | Identify actual consecutive submodule quotients with the residue module. | FractionalPrincipalFiltration |
+| ComplexIntegerGradedCompatibility | Specialize to C_p coordinates, prove scalar and multiplication compatibility and the descended character action. | FractionalPrincipalGraded, original theta and character law |
+| ComplexInvariantOrder | Use the proved nonzero twist vanishing to force invariant order zero, then subtract the fixed residue. | Both analytic endpoints; no endpoint assumptions |
+
+The comparison contracts in the W32 table remain after these leaves.
+
+### W33 implementation boundary
+
+The new approximation entry points are
+`complexGalois_fixed_algebraic_approximation` and
+`complexTwist_fixed_algebraic_approximation`. They use the original action,
+actual algebraic approximants and a bound uniform over all automorphisms.
+`padicGalois_exists_scalar_approximation` constructs a genuine Q_p scalar,
+but its error bound is `norm(card(orbit(a)))⁻¹ * r`. The actual orbit is
+proved finite from the minimal polynomial, and its average is descended
+using the algebraic (not completed) Galois fixed-field theorem.
+
+`complexGalois_fixed_mem_range_of_uniform_estimate` proves only the
+completion reduction: it explicitly assumes `C > 0` and, for every
+algebraic `a` and `r > 0`, a scalar `b` with distance at most `C*r` whenever
+all conjugate displacements are at most `r`. The constant must be
+independent of `a`. This arithmetic estimate remains unproved. The
+closedness theorem `complexScalar_isClosed` supplies the final limit step;
+it does not establish density of scalar approximants by itself.
+
+The actual integer filtration now consists of the submodules `t^n B_dR+`
+inside the existing field. `fractionalPrincipalNext_comap` identifies
+the actual next level with the ideal `(t)` in coefficient coordinates.
+`complexDeRhamIntegerGradedCoordinate` therefore identifies each actual
+integer quotient with C_p. The product formula
+`fractionalPrincipalGradedMul_mk` proves that its multiplication comes
+from multiplication in the original field, including negative degrees.
+The scalar action agrees with original theta; the linear equivalence
+and finrank theorem give dimension one over the actual C_p. The algebra
+laws retain the required degree reindexing. The original field action
+descends and has weight n, is semilinear over C_p and preserves products.
+These declarations can be checked by building their named modules,
+running their individual linters and printing their axioms; the W33
+handoff records the checked snapshot, commands and evidence logs.
+
+Still open: the uniform arithmetic Ax estimate, actual cyclotomic tower
+trace bounds and completed twist vanishing. Consequently invariant-order
+control, the reverse period fixed-field inclusion and the comparison
+contracts are not proved by W33. No uniform bound or completed invariant
+vanishing has been installed as an instance, structure field or axiom.
