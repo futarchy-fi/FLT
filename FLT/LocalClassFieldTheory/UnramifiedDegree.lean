@@ -89,4 +89,16 @@ theorem henselian_of_finrank_eq [IsAdicComplete (maximalIdeal R) R]
   exact RaynaudParameters.unramified_stage_henselian
     (map_maximalIdeal_of_finrank_eq R S K L hdeg)
 
+/-- A formally unramified finite separable DVR extension has equal fraction and residue degrees. -/
+theorem finrank_eq_of_formallyUnramified [Algebra.FormallyUnramified R S]
+    [FaithfulSMul R S] :
+    Module.finrank K L = Module.finrank (ResidueField R) (ResidueField S) := by
+  have : Module.IsTorsionFree R L := .trans_faithfulSMul R K L
+  have : IsIntegralClosure S R L := IsIntegralClosure.of_isIntegrallyClosed S R L
+  have h := Ideal.ramificationIdx_mul_inertiaDeg_eq_finrank_of_isLocalRing S
+    (IsDiscreteValuationRing.not_a_field R)
+  rw [Ideal.ramificationIdx_eq_one, one_mul,
+    Ideal.inertiaDeg_eq_of_isMaximal (maximalIdeal R), IsIntegralClosure.rank R K L S] at h
+  exact h.symm
+
 end LocalClassFieldTheory
