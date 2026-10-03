@@ -1782,6 +1782,7 @@ public import FLT.Mazur.IntegralClosedSupport
 public import FLT.Mazur.IntegralDimension
 public import FLT.Mazur.LaurentTensor
 public import FLT.Mazur.LaurentUnitPoints
+public import FLT.Mazur.LineStructureProjection
 public import FLT.Mazur.LocalizationCech
 public import FLT.Mazur.LocalizationCechCompare
 public import FLT.Mazur.LocalizationCechExact
@@ -1808,6 +1809,7 @@ public import FLT.Mazur.ModuleImageSection
 public import FLT.Mazur.ModuleInjectiveFlasque
 public import FLT.Mazur.ModuleLineBundlePullback
 public import FLT.Mazur.ModuleLineBundleTensorPullback
+public import FLT.Mazur.ModuleLineTensorExact
 public import FLT.Mazur.ModuleOpenCohomology
 public import FLT.Mazur.ModuleOpenCohomologyRestriction
 public import FLT.Mazur.ModulePresheafLinearHom
@@ -1960,6 +1962,8 @@ public import FLT.Mazur.PolygonHZeroIncidence
 public import FLT.Mazur.PolygonIdealModulePullback
 public import FLT.Mazur.PolygonIncidence
 public import FLT.Mazur.PolygonIncidenceQuotient
+public import FLT.Mazur.PolygonLineHZero
+public import FLT.Mazur.PolygonLineNormalization
 public import FLT.Mazur.PolygonMarkedSections
 public import FLT.Mazur.PolygonNodalCore
 public import FLT.Mazur.PolygonNodeBranches
@@ -2030,6 +2034,7 @@ public import FLT.Mazur.ProjectiveLineEndpoints
 public import FLT.Mazur.ProjectiveLineFieldExtension
 public import FLT.Mazur.ProjectiveLineMarkedCharts
 public import FLT.Mazur.ProjectiveLineMarkedDualCoordinates
+public import FLT.Mazur.ProjectiveLineMarkedEndpointSections
 public import FLT.Mazur.ProjectiveLineMarkedHZero
 public import FLT.Mazur.ProjectiveLineMarkedPolynomialBounds
 public import FLT.Mazur.ProjectiveLineMarkedPolynomialReciprocal
