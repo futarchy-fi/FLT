@@ -1351,6 +1351,7 @@ public import FLT.Mazur.RelativeCartierBaseChange
 public import FLT.Mazur.RelativeDirectImageComposition
 public import FLT.Mazur.RelativeDirectImageForgetting
 public import FLT.Mazur.RelativeDirectImageOpenResolution
+public import FLT.Mazur.RelativePinchingLocalDescent
 public import FLT.Mazur.RelativePinchingNeighborhoods
 public import FLT.Mazur.RelativeSerreAffineAcyclic
 public import FLT.Mazur.RelativeSerreAffineVanishing
