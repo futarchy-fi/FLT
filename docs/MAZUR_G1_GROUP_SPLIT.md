@@ -1626,3 +1626,87 @@ is disjoint from the other open. Since each open is nonempty, their
 closures differ. H15c then gives an actual `Fin n` equivalence with the
 irreducible components. This shared prerequisite does not prove geometric
 U12's node incidence or scalar-extension compatibility.
+
+The node-completion work is split before assigning a cap to the whole
+obligation. H15g1 `AdicCompletionAlgEquiv` has a cap of 140 lines after
+`W22_COMPLETION_EQUIV_PROOF.lean` compiled, including its local-ring
+specialization. Compatible algebra isomorphisms on ideal-power quotients
+induce mutually inverse maps on the inverse-limit rings. A local algebra
+isomorphism carries the maximal ideal to the maximal ideal, so this
+transports completed local rings while retaining the coefficient algebra.
+The actual split-node and one-gon completions remain separate uncapped
+obligations; this transport theorem does not assert either node model.
+
+H15g2 `CurveNodeOpenImmersion` has a cap of 100 lines after the complete
+`W22_NODE_STALK_PROOF.lean` prototype compiled. Germ naturality proves
+that the actual open-immersion stalk map respects `CurveNode.scalarMap`.
+The stalk isomorphism and H15g1 give a base-linear completed-stalk
+isomorphism, proving `IsNode f (j x) ↔ IsNode (j ≫ f) x`. The assertion
+is about the existing completed-stalk predicate, with no replacement
+node predicate or assumed chart model. Actual chart nodes still require
+proof.
+
+H15g3 `AdicCompletionQuotientEquiv` has a cap of 100 lines after
+`W22_COMPLETION_QUOTIENT_PROOF.lean` compiled. An arbitrary compatible
+family of base-linear quotient isomorphisms induces an isomorphism of
+completions. The inverse compatibility is proved using injectivity of
+the quotient isomorphisms. This allows the maximal-ideal localization
+comparison, which is not induced by an isomorphism of the original rings.
+
+H15g4 `LocalizedAdicCompletion` has a cap of 70 lines after
+`W22_LOCALIZATION_COMPLETION_PROOF.lean` compiled. Mathlib's actual
+localization isomorphisms on all maximal-ideal-power quotients preserve
+the transition maps, as checked on quotient representatives. H15g3 then
+identifies the completion before and after localization, over the
+specified coefficient algebra.
+
+H15g5 `CurveNodeAffineCompletion` has a cap of 80 lines after
+`W22_AFFINE_COMPLETION_PROOF.lean` compiled. Naturality of the Spec
+global-section comparison identifies the canonical stalk scalars with
+`CurveNode.scalarMap`. The actual stalk is a localization at its prime;
+H15g4 applies at maximal primes. Thus the existing `IsNode` predicate is
+equivalent to a base-linear isomorphism from the affine ring's completion
+to `CurveNode.Model K`. No isomorphism to that model is assumed or supplied
+by the comparison itself.
+
+H15g6 `PolygonNodeCompletionCriterion` has a cap of 110 lines after
+`W22_NODE_CRITERION_PROOF.lean` compiled. Evaluation to K has maximal
+kernel. The previously proved exact smooth-locus complements show this
+is the unique nonsmooth point; H15g5 then proves an **equivalence**
+between `AtWorstNodes` and an explicit affine-ring completion model for
+each chart. Neither side of these equivalences is proved unconditionally
+here. The remaining algebraic isomorphisms are:
+
+```lean
+Nonempty (AdicCompletion (RingHom.ker (aEval (R := K)).toRingHom)
+  (PolygonNodeEqualizer.A (R := K)) ≃ₐ[K] CurveNode.Model K)
+Nonempty (AdicCompletion (RingHom.ker (bEval (R := K)).toRingHom)
+  (PolygonNodePresentation.B (R := K)) ≃ₐ[K] CurveNode.Model K)
+```
+
+These obligations have no published line caps: there is no complete
+compiling proof design for either one yet. In particular, the split-node
+polynomial quotient isomorphism and the one-gon plane equation do not
+by themselves construct these power-series/completion isomorphisms.
+
+### W22 status and remaining gates
+
+W22 proves component-image classification, distinctness, connectedness and
+pure dimension for every supplied positive-size polygon cocone over every
+field. It also proves base-linear completion transport through local algebra
+isomorphisms, compatible quotient isomorphisms, maximal-ideal localization,
+actual affine stalks and open charts. The two node-chart completion criteria
+are equivalences, not proofs of their right-hand sides.
+
+H15 remains unfinished. First construct the two displayed power-series
+isomorphisms, use `CurveNodeOpenImmersion.isNode_iff` on the atlas charts,
+and assemble `NodalFiberCore`. Then identify the actual field-extension
+pullback diagram with the specified components, nodes and endpoints over
+the extension field, applying `PolygonPinchingAffineBaseChange.spec_pullback`.
+Only after that can the geometric genus contract and geometric U12 be
+assembled. The moduli/arithmetic work and Mazur removal remain open.
+
+The W22 checks are reproducible by foreground `LEAN_NUM_THREADS=2 lake build
+FLT.Mazur.MODULE` and `LEAN_NUM_THREADS=2 lake exe runLinter FLT.Mazur.MODULE`
+for each of the twelve modules above, separately. Root audit scripts and
+logs remain untracked as required by the work packet.

@@ -97,4 +97,3 @@ theorem components_eq : irreducibleComponents C.left =
   · rintro _ ⟨i, rfl⟩
     exact mem_components K n hn p q h i
 end FLT.Mazur.PolygonComponentImages
-
