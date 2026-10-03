@@ -211,3 +211,193 @@ theorem under surjectivity of Frobenius on the residue quotient. First prove
 `IsAdicComplete (Ideal.span {(p : 𝓞_ℂ_[p])}) 𝓞_ℂ_[p]` and the required
 Frobenius surjectivity for the actual integer ring. Galois continuity,
 the principal kernel and the period-ring comparison remain separate leaves.
+
+## W27 R5b refinement (2026-10-03)
+
+Each leaf below has a 150-line complete-file cap. The model comparison is
+proved over a general characteristic-zero local field, so it applies directly
+to the rational-place completion; no equality with Q_p is assumed.
+
+| Leaf | Obligation |
+|---|---|
+| SplitKummerGeneralModel | Split Kummer levels over a ring and a characteristic-zero field, with actual geometric points. |
+| SplitKummerGeneralPointLaw | Addition and field action for those points. |
+| PrimitiveRootCoordinates | Additive coordinates on roots of unity from a chosen primitive root. |
+| SplitKummerResidue | Additive residue coordinates on the actual geometric points, with cyclotomic action. |
+| CyclotomicTrivialReduction | Actual p-power quotient-tensor coordinates and their action. |
+| CyclotomicCharacterNaturality | Compatibility of the p-adic character with field embeddings and local restriction. |
+| CyclotomicTrivialFlat | Apply the comparisons at the rational completion and the proved open-ideal cofinality criterion. |
+
+R5e follows only after these local model obligations. Existing sorted-input
+trace results must be transported, without invoking the admitted three_adic.
+
+R5e universe transport is split before implementation (150 lines each):
+`FlatCoefficientQuotientUniverses` transports actual quotient models through
+a surjective coefficient map; `ThreeAdicTraceUniverses` shrinks the finite
+coefficient algebra and frames the original module, applies the proved
+sorted-input trace theorem, and descends trace/determinant through the
+injective coefficient map. `ThreeAdicPolynomialUniverses` computes the
+rank-two characteristic polynomial and its coefficient-extension/framing law.
+`CyclotomicTrivialHardlyRamified` assembles the standard integral HR member
+from the separately proved determinant, ramification, flatness and tame quotient.
+
+R5f–g are split into `PadicOrderEmbedding` (construct an actual continuous
+embedding into the algebraic closure), `RankTwoFraming` (frame scalar
+extensions), `ThreeAdicFamily` (dependent family retaining the original at
+three), `ThreeAdicFamilyCompatibility` (unramifiedness and common polynomial),
+and `ThreeAdicFamilyIntegralModels` (integral witnesses and original-member
+equality, with further universe splitting if needed). Each has cap 150.
+
+`ThreeAdicFamily` is split further: `StandardFamilyMember` provides the
+framed split member at each prime; the dependent switch then has short
+separate equations at and away from three. No semisimplification replaces
+the original member in that switch.
+
+`PadicClosureScalars` is an additional 150-line prerequisite: prove the
+canonical p-adic integer action on the algebraic closure is continuous by
+factoring through Q_p. This is needed by both actual coefficient embedding
+and standard-member scalar extension.
+
+R5g universe packaging is split before implementation: `ULiftCoefficientTensor`
+compares an actual tensor extension to independent coefficient/module lifts;
+`ULiftHardlyRamified` transports the four clauses using the already proved
+surjective-coefficient and coordinate-change results; `ULiftGenericRecovery`
+proves cancellation of those lifts after coefficient extension. These feed
+the family integral-witness package. All complete files are capped at 150 lines.
+
+`StandardIntegralUniverses` packages the lifted standard witnesses before
+`ThreeAdicFamilyIntegralModels` selects the original witness at three and
+those standard witnesses elsewhere. The final p=3 family statement is a new
+theorem; the existing general-prime admitted theorem is left unchanged.
+
+## W27 F04 period prerequisites
+
+The live API also contains `Mathlib/RingTheory/Perfectoid/BDeRham.lean`.
+It defines `fontaineThetaInvertP`, `BDeRhamPlus` and `BDeRham`; it does not
+prove the principal-kernel theorem, DVR structure, or comparison theorem.
+Reuse these constructors rather than duplicating them. New capped leaves:
+
+| Leaf (cap 150) | Required result |
+|---|---|
+| ComplexIntegerAdic | Identify p-power ideals with norm balls in O_C; deduce actual p-adic completeness. |
+| ComplexIntegerFrobenius | Construct p-th roots in O_C using algebraic closedness of C_p; prove mod-p Frobenius surjective. |
+| ComplexFontaineTheta | Instantiate sharp and theta on the actual tilt and prove theta surjective. |
+| ComplexDeRhamRings | Instantiate the existing localized theta and completion constructors. No principal kernel or comparison claim. |
+
+P1b's continuous Galois action, P3's principal kernel and D2's comparison
+still require independent proofs; these constructions alone do not discharge them.
+
+## W28 F04 action and period-ring gates (split before implementation)
+
+Each new module is capped at 150 complete source lines. Work in this order:
+
+1. `ComplexGaloisAction`: extend spectral-norm-preserving algebraic Galois
+   automorphisms to ring automorphisms of the actual C_p; prove action laws.
+2. `ComplexGaloisContinuity`: derive algebraic orbit continuity from open
+   stabilizers, then joint continuity on C_p from density and isometry.
+3. `ComplexIntegerGalois`: restrict the actual action to O_C; prove joint
+   continuity and the inclusion comparison.
+4. `ComplexTiltGalois`: induce actions on O_C/(p) and its perfection, with
+   coordinate formulas and action laws.
+5. `ComplexSharpEquivariance`: prove sharp commutes with the actual action
+   using uniqueness of the multiplicative inverse-Frobenius lift.
+6. `ComplexThetaEquivariance`: induce the Witt action and prove theta
+   equivariance, retaining the actual maps.
+7. Principal theta-kernel generator, followed by DVR/filtration structure:
+   inspect the available proof API and split further before implementing.
+   Localization at all hypothetical generators is not an existence proof.
+8. General-prime character classification/reducible-residual route follows
+   these F04 gates; split a concrete arithmetic leaf before implementing.
+
+F07–F15 (potential modularity, geometric existence, common coefficients,
+attached representations, Brauer and effective descent, general original
+member packaging) remain large missing theory. Do not start them without a
+bounded ready leaf. No new field may assume a target conclusion. The original
+family admission is outside the permitted module-edit scope.
+
+W28 topology refinement before implementation (cap 150):
+`ComplexTiltContinuity` gives O_C/(p) its quotient topology and the actual
+integral tilt its inverse-limit topology, then proves joint continuity of
+the induced action by its coordinate formulas. Comparison with the tilt
+valuation topology is a separate obligation, not assumed by an instance.
+
+W28 principal-kernel refinement before implementation (each cap 150):
+`ComplexSharpSurjective` constructs compatible integral p-power roots and
+proves sharp surjective. `ComplexTiltDivisibility` constructs coordinatewise
+quotients of multiplicative root sequences, deriving divisibility from
+sharp. `ComplexThetaGenerator` chooses a sharp lift of p and proves that
+its Teichmuller representative minus p is in the actual kernel, with the
+correct mod-p divisibility criterion. `AdicPrincipalKernel` supplies the
+bounded algebraic lifting lemma: a separated kernel over a complete source
+is generated by a chosen element once the genuine mod-p reduction and
+p-saturation properties are proved. `ComplexThetaPrincipal` applies it to
+the actual Witt ring and theta. Split again if any proof exceeds the cap.
+
+W28 localization/completion refinement before implementation (caps 150):
+`ComplexThetaLocalized` identifies the existing localized theta with the
+functorial localization map, transports surjectivity and the proved kernel
+generator. `ComplexDeRhamFiltration` identifies the completion ideal with
+the span of that actual element, proves adic completeness and identifies
+all filtration powers with evaluation kernels. The DVR gate additionally
+requires a field residue quotient, a nonzero regular completed generator,
+and the resulting valuation-domain/PID argument; do not infer these from
+principality or completeness alone.
+
+W28 residue-field refinement before implementation (caps 150):
+`ComplexIntegerInvertP` proves that inverting p in O_C gives the actual C_p,
+using geometric decay of the p-adic norm. `ComplexDeRhamResidue` extends
+theta to B_dR^+ with target C_p, proves surjectivity, identifies its kernel
+and derives the local-ring structure. These do not assert regularity of
+the completed parameter or a DVR without proving those separately.
+
+W28 regularity/DVR refinement before implementation (caps 150):
+`AdicCompletionRegular` proves that a nonzero generator in a domain stays
+regular in its principal-ideal completion, by cancellation one level higher.
+`AdicPrincipalDVR` derives unit-times-power factorizations from separatedness
+and a principal maximal ideal, then derives the domain and DVR structure
+when the generator is regular. `ComplexDeRhamDVR` proves the actual localized
+theta generator nonzero and applies both results to the actual B_dR^+.
+
+W28 F06 bounded follow-up after the F04 ring gates (caps 150):
+`GeneralInertiaTwo` derives square-zero inertia at two for every odd prime
+from the original HR quotient and cyclotomic determinant, generalizing the
+existing three-adic arithmetic proof in a new module. Then
+`CharacterFiltrationUnipotent` proves both actual characters of any exact
+filtration trivial on a square-zero inertia element, and
+`ResidualCharacterInertiaTwo` applies it to general-prime residual HR inputs.
+This is a local arithmetic constraint, not global character classification
+or generic reducibility. The general compatible-family route remains open.
+
+
+### W28 checked result and remaining boundary
+
+Checked at 2026-10-03T17:34:52.492118+00:00; evidence is the lane's untracked
+`W28_FINAL_CHECKS.json`, individual foreground build/lint logs and
+`W28_AXIOMS.log`. All 22 modules pass individual
+`LEAN_NUM_THREADS=2 lake build MODULE` and `lake exe runLinter MODULE`.
+All 116 new named declarations use only propext, Classical.choice and
+Quot.sound. The largest complete source file is 84/150 lines.
+
+The actual C_p action is jointly continuous; its integer-ring restriction
+and the induced inverse-limit tilt action are constructed and continuous.
+Sharp and theta are equivariant. The constructed element [p-flat]−p
+actually generates the integral and localized theta kernels. The actual
+B_dR+ has residue field C_p, a regular completed parameter, the corresponding
+adic filtration, and a proved DVR structure. Recheck the ring endpoint by
+building/linting `FLT.PadicHodgeTheory.ComplexDeRhamDVR`; recheck equivariance
+through `FLT.PadicHodgeTheory.ComplexThetaEquivariance` and continuity through
+`FLT.PadicHodgeTheory.ComplexTiltContinuity`.
+
+The residual arithmetic endpoint is
+`exists_reducible_character_filtration_inertia_two`: an actual exact
+filtration with cyclotomic product and both characters trivial on inertia
+at two, for every odd prime. It does not classify the characters globally
+or make a reducible residual representation's generic fibre reducible.
+
+Still missing: global general-prime character classification and compatible
+families; tilt valuation-topology comparison; Galois action on the completed
+period rings and the cyclotomic logarithmic period; period-field invariants
+and graded-piece identifications; p-divisible comparison and per-embedding
+weight multiplicities. F07–F15 remain large missing theory and were not
+started. The boundary audit still finds sorryAx in the unchanged general
+family theorem and sorryAx plus Mazur_statement in the FLT endpoint.
