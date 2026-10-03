@@ -4,7 +4,296 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
-## W25 acceptance
+## W28 validation
+
+Checked 2026-10-03T13:55:03.657454+00:00; branch task/goal-lifts-w28; base eb101554; proof head c084ba11.
+Read-only evidence check: `python3 Scratch/LiftsW28/check.py` (saved logs and source hashes).
+
+**R04e, R05a–R05c, R06a–R06b, and I03a–I03b are proved. The full lifting goal remains unmet.**
+The 22 new modules contain **1,675 lines and 73 named declarations**, all within the 200-line cap.
+Every new declaration uses only `propext`, `Classical.choice`, and `Quot.sound`.
+I03c has its restriction-surjectivity prerequisite, but corestriction remains unconstructed.
+
+1. The ramified normalized valuation sequence, trivial-integer cyclic cohomology,
+   and W27's integral-unit calculation give h(Lˣ) = [L:K].
+   Hilbert 90 then gives the exact cyclic relative H² order and finiteness.
+2. Wild inertia is a p-group, its tame quotient is cyclic, and the residue
+   automorphism group is cyclic. These actual maps prove local Galois solvability.
+3. A proper normal subgroup gives two smaller extensions. Constructed intermediate
+   DVRs and W25 inflation-restriction exactness support strong degree induction,
+   proving finite relative H² and its degree upper bound. W26's lower subgroup
+   proves equality and exhausts the relative group with unramified classes.
+4. A continuous absolute cocycle descends pointwise to a finite Galois fixed field.
+   The spectral norm proves locality of its integral closure; that closure is a
+   complete DVR with finite residue field. Finite relative saturation then proves
+   surjectivity of actual unramified inflation, hence bijectivity.
+5. Inverting this inflation and composing with the normalized unramified
+   invariant gives an additive equivalence H²(K, Ksepˣ) ≃ Q/Z.
+6. The actual cochain restriction square proves that finite base extension
+   multiplies the invariant by [E:K]. E need not be Galois for this formula.
+   Divisibility of Q/Z proves restriction surjective; its kernel is exactly
+   the classes with degree-torsion invariant.
+
+The arithmetic scope is characteristic-zero fraction fields of complete DVRs
+with finite residue fields of prime characteristic p. Finite relative groups
+use Galois extensions; the absolute restriction results allow arbitrary finite
+intermediate extensions with the stated compatible finite DVR towers.
+Positive-characteristic local invariants are not established here.
+
+| Item | Module under FLT.LocalClassFieldTheory | Lines/cap | Commit |
+|---|---|---|---|
+| R04e | RamifiedOrderSequence | 94/200 | `6cceac89` |
+| R04e | CyclicIntegerCohomology | 112/200 | `6cceac89` |
+| R04e | RamifiedFieldHerbrand | 86/200 | `6cceac89` |
+| R05a | CyclicRelativeOrder | 75/200 | `6cceac89` |
+| R05b | LocalGaloisSolvable | 90/200 | `b83cbb87` |
+| R05c | FiniteDvrComplete | 58/200 | `f4c88eea` |
+| R05c | IntermediateDvrAlgebra | 71/200 | `f4c88eea` |
+| R05c | IntermediateDvr | 99/200 | `f4c88eea` |
+| R05c | FiniteRelativeSequence | 83/200 | `f4c88eea` |
+| R05c | SolvableNormalStep | 42/200 | `f4c88eea` |
+| R05c | SolvableFieldStep | 42/200 | `f4c88eea` |
+| R05c | RelativeOrderInduction | 109/200 | `f4c88eea` |
+| R06a | FiniteRelativeSaturation | 101/200 | `f4c88eea` |
+| R06b | FiniteExtensionLocalRing | 70/200 | `c084ba11` |
+| R06b | FiniteExtensionDvr | 44/200 | `c084ba11` |
+| R06b | FiniteRelativeCocycleDescent | 60/200 | `c084ba11` |
+| R06b | UnramifiedInflationSurjective | 83/200 | `c084ba11` |
+| I03a | AbsoluteInvariant | 67/200 | `c084ba11` |
+| I03b | AbsoluteRestriction | 49/200 | `c084ba11` |
+| I03b | UnramifiedAbsoluteSquare | 93/200 | `c084ba11` |
+| I03b | InvariantRestriction | 63/200 | `c084ba11` |
+| I03c prerequisite | RestrictionSurjective | 84/200 | `c084ba11` |
+
+Each module M passed sequentially in the foreground with LEAN_NUM_THREADS=2:
+`lake build FLT.LocalClassFieldTheory.M`,
+`lake exe runLinter FLT.LocalClassFieldTheory.M`, and
+`lake env lean Scratch/LiftsW28/MAxioms.lean`.
+All 73 named declarations, including definitions and instances, were axiom-audited.
+No whole-library lint was run. Evidence: Scratch/LiftsW28/M-{build,lint,axioms}.log.
+
+Combined imports passed in Scratch/LiftsW28/Integration.lean.
+Scratch/LiftsW28/FinalAxioms.lean confirms that the new endpoints are axiom-clean,
+while `GaloisRepresentation.IsHardlyRamified.lifts` and
+`FLT.Assembly.hardlyRamifiedLifting` still use `sorryAx`;
+`PNat.pow_add_pow_ne_pow` retains both `sorryAx` and `Mazur_statement`.
+Both checks have .log and zero .exit files.
+
+`python3 Scratch/LiftsW28/check.py` checks saved logs, source hashes, caps,
+audit coverage, allowed axioms, sorted imports, allowed paths, new-file-only
+Lean changes, and clean tracked state. It does not rerun Lean.
+The source snapshots were recorded after verifying that every build, lint,
+and axiom log postdated its source. Fresh module validation is
+`python3 Scratch/LiftsW28/validate.py M ...`.
+
+The next proof is **I03c: continuous corestriction**. Restriction surjectivity
+and its kernel calculation are available in RestrictionSurjective.
+The source search in Scratch/LiftsW28/CorestrictionApiSearch.log found ordinary
+Shapiro (`groupCohomology.coindIso`), but no group-cohomology corestriction.
+Mathlib's group-homology corestriction is a different construction.
+
+| Gate / next leaf | Required proof and dependency |
+|---|---|
+| I03c / transfer construction | Construct finite-index transfer on continuous cochains, or prove continuous Shapiro and a coefficient trace; prove preservation of cocycles and boundaries and independence of coset choices. |
+| I03c / restriction-degree identity | For that constructed map prove cor(res x) = [E:K] • x. A cochain homotopy or a proved Shapiro comparison is still needed. |
+| I03c / CorestrictionInvariant | Use the proved restriction surjectivity and degree formula to deduce inv_K(cor y) = inv_E(y). Transporting the identity through the invariants alone would leave the transfer comparison unproved. |
+| I03d / FundamentalClasses | Compare the inverse image of positive 1/[E:K] with relative H² and prove its restriction, inflation, and corestriction formulas. |
+| Class formation | Assemble the proved relative order and Hilbert 90 with compatible fundamental classes; prove the Tate cup-product isomorphisms. |
+| Kummer–Artin evaluation | Construct the finite Artin maps and prove the cocycle evaluation formula, then the Kummer comparison and E1d annihilator statement. |
+
+Each new module keeps the 200-line cap; the transfer rows are proof obligations,
+not existing APIs or certified size estimates. Serre-weight evaluation and
+arbitrary-p Raynaud classification remain independent unproved work.
+
+## W27 historical acceptance
+
+Checked 2026-10-03T12:49:39.162743+00:00; branch `task/goal-lifts-w27`; base `e8a80ed9`; proof head `f704730c`.
+Read-only evidence check: `python3 Scratch/LiftsW27/check.py` (saved logs and source hashes).
+
+**R03c–R03g and R04b–R04d are proved. The full lifting goal remains unmet.**
+The 36 new modules contain **2,755 lines and 168 named declarations**, all within the 200-line cap.
+Every new declaration uses only `propext`, `Classical.choice`, and `Quot.sound`.
+
+1. The induced topology on the integer ring is proved adic. Algebraic
+   `IsAdicComplete` gives a complete neighborhood of zero in the fraction field,
+   hence field completeness and exponential summability without an extra premise.
+2. The actual logarithm series converges on `v(x) < v(p)`, uniformly on every
+   smaller closed ball. Integral scaled formal series, evaluated in a complete
+   topological copy of the DVR, give both analytic exp/log composition identities.
+   A proved nonarchimedean Cauchy product gives exponential multiplicativity.
+3. The exponential gives a group equivalence and homeomorphism between the
+   additive ball `v(x) < v(p)` and the principal units `v(u-1) < v(p)`.
+   Preservation of integrality proves continuity of the actual Galois action,
+   allowing it through the sums and proving equivariance.
+4. Multiplication by the base scalar p² puts the constructed normal lattice
+   inside that convergence ball. Its exponential image is an actual open,
+   Galois-stable subgroup of field units. The transported integral action is
+   proved equal to the natural action, and all positive cohomology vanishes.
+5. A complex indexed by Boolean parity has differential generator-minus-one
+   in even degree and norm in odd degree. Its two homologies are identified
+   with the existing cyclic quotients and every positive even/odd cohomology
+   group. The snake lemma gives both connecting maps and all six exactness
+   assertions; the return from odd to even is part of the complex itself.
+   Connecting-map naturality is proved for morphisms of coefficient sequences.
+6. Counting adjacent images gives the six-term alternating cardinal identity
+   and Herbrand multiplicativity for finite periodic cohomology. The periodic
+   quotient agrees with the usual H²/H¹ quotient for cyclic coefficients.
+7. Complete DVRs with finite residue field are compact in the constructed
+   topology. Pulling the open exponential subgroup back to integral units
+   therefore gives a finite quotient. Its natural Galois short exact sequence
+   and the proved subgroup acyclicity identify every positive integral-unit
+   cohomology group with that of this finite quotient. The finite cyclic
+   coefficient calculation yields `integralUnit_herbrand_eq_one`.
+
+The analytic and unit results use characteristic-zero local fields with prime
+residue characteristic p, algebraically complete DVRs, and finite DVR extensions;
+the finite quotient step additionally uses finite residue field. They do not
+claim the corresponding positive-characteristic analytic statements.
+
+| Item | Module under FLT.LocalClassFieldTheory | Lines/cap | Commit |
+|---|---|---|---|
+| R03c | AdicFractionFieldComplete | 79/200 | `dd6abf85` |
+| R03c | AdicIntegerTopology | 87/200 | `dd6abf85` |
+| R03d | LocalLogConvergence | 82/200 | `052822ad` |
+| R03d | LocalLogUniformConvergence | 69/200 | `052822ad` |
+| R03d | ValuationUniformSeries | 68/200 | `052822ad` |
+| R03e | AdicIntegerSpace | 80/200 | `3afe221e` |
+| R03e | AdicSeriesEvaluation | 91/200 | `3afe221e` |
+| R03e | AdicSeriesField | 78/200 | `3afe221e` |
+| R03e | LocalExpEquivalence | 83/200 | `3afe221e` |
+| R03e | LocalExpLogInverse | 86/200 | `3afe221e` |
+| R03e | LocalExpMultiplicative | 65/200 | `3afe221e` |
+| R03e | LocalIntegralInverse | 45/200 | `3afe221e` |
+| R03e | LocalIntegralSeries | 102/200 | `3afe221e` |
+| R03e | LocalScaledCoefficients | 83/200 | `3afe221e` |
+| R03e | LocalScaledSeries | 73/200 | `3afe221e` |
+| R03e | LocalSeriesComparison | 91/200 | `3afe221e` |
+| R03f | AdicGaloisContinuity | 80/200 | `ee500370` |
+| R03f | LocalExpEquivariance | 81/200 | `ee500370` |
+| R03f | LocalExpHomeomorph | 75/200 | `ee500370` |
+| R03f | LocalExpIsometry | 68/200 | `ee500370` |
+| R03g | AcyclicOpenUnits | 85/200 | `6b8a59b7` |
+| R03g | LocalExpOpen | 48/200 | `6b8a59b7` |
+| R03g | NormalLatticeExpDomain | 92/200 | `6b8a59b7` |
+| R03g | NormalLatticeExpOpen | 60/200 | `6b8a59b7` |
+| R03g | NormalLatticeExpUnits | 78/200 | `6b8a59b7` |
+| R04b | CyclicPeriodicComplex | 73/200 | `c245a55f` |
+| R04b | CyclicPeriodicExact | 53/200 | `c245a55f` |
+| R04b | CyclicPeriodicHomology | 51/200 | `c245a55f` |
+| R04b | CyclicSixTermSequence | 81/200 | `c245a55f` |
+| R04c | HerbrandExact | 74/200 | `c2dcf673` |
+| R04c | SixTermCard | 58/200 | `c2dcf673` |
+| R04d | AdicIntegerCompact | 78/200 | `f704730c` |
+| R04d | IntegralExpQuotient | 60/200 | `f704730c` |
+| R04d | IntegralExpSequence | 103/200 | `f704730c` |
+| R04d | IntegralExpSubrepresentation | 94/200 | `f704730c` |
+| R04d | UnitHerbrand | 101/200 | `f704730c` |
+
+Each module M passed sequentially in the foreground with `LEAN_NUM_THREADS=2`:
+`lake build FLT.LocalClassFieldTheory.M`,
+`lake exe runLinter FLT.LocalClassFieldTheory.M`, and
+`lake env lean Scratch/LiftsW27/MAxioms.lean`.
+All 168 named declarations, including definitions and instances, were axiom-audited.
+No whole-library lint was run. Evidence: `Scratch/LiftsW27/M-{build,lint,axioms}.log`.
+
+Combined new-module imports passed in `Scratch/LiftsW27/Integration.lean`.
+`Scratch/LiftsW27/FinalAxioms.lean` confirms the new endpoints are axiom-clean,
+while `GaloisRepresentation.IsHardlyRamified.lifts` and
+`FLT.Assembly.hardlyRamifiedLifting` still use `sorryAx`;
+`PNat.pow_add_pow_ne_pow` retains both `sorryAx` and `Mazur_statement`.
+Both checks have `.log` and zero `.exit` files.
+
+`python3 Scratch/LiftsW27/check.py` checks saved logs, source hashes, caps,
+audit coverage, allowed axioms, sorted imports, allowed paths, new-file-only
+Lean changes, and clean tracked state. It does not rerun Lean.
+The source snapshots were recorded only after checking that each build, lint,
+and axiom log postdated its source. Fresh module validation is
+`python3 Scratch/LiftsW27/validate.py M ...`.
+
+W27 stopped before R04e; the W28 checkpoint above supersedes that remaining-work list.
+
+## W26 historical acceptance
+
+Checked 2026-10-03T11:22:50.341193+00:00; branch `task/goal-lifts-w26`; base `f34a19ea`; proof head `c58387ad`.
+Read-only evidence check: `python3 Scratch/LiftsW26/check.py` (saved logs and source hashes).
+
+At the W26 checkpoint, I02c, I02d, R02a, R02b, and R03b were proved; R03c was partial.
+W27 above completes R03c–R04d.
+The 22 new modules contain **1,505 lines and 58 named declarations**, all within the 200-line cap.
+Every new declaration uses only `propext`, `Classical.choice`, and `Quot.sound`.
+
+1. Frobenius restriction is proved for the constructed finite-stage embeddings and
+   actual unramified-union restriction, with exponent the residue degree. Naturality
+   of the integral connecting map gives the same factor on integral H2 coordinates.
+2. The ramification order square is proved on cochains and cohomology. The actual
+   local degree identity combines its factor with residue degree to give
+   `unramifiedMultiplicativeInvariant_baseChange`, multiplication by `[L:K]` on Q/Z.
+3. The multiplication-by-n kernel is the subgroup generated by positive `1/n`,
+   with an additive equivalence from `ZMod n` and cardinality n.
+4. The base-change/inflation square commutes with restriction to the actual
+   Galois kernel. W25 exactness supplies relative preimages of degree-torsion
+   unramified classes; the proved inflation injections make them additive and
+   distinct. `relativeLowerBound` embeds `ZMod [E:K]` into
+   `continuousCohomology ℤ Gal(E/K) (Additive Eˣ) 2` and its range has `[E:K]`
+   elements. No finiteness or order of the whole relative H2 is assumed.
+5. Clearing the finite coordinate matrix puts a nonzero base scalar times the
+   entire ring of integers in the constructed normal lattice. This proves
+   maximal-ideal-power containment and openness for `dvrAdicValued`, the topology
+   of the actual maximal-ideal valuation on the fraction field.
+6. The exact formula `v(n!) = v(p)^padicValNat p n!` and its geometric lower bound
+   are proved for residue characteristic p. In characteristic zero the exponential
+   terms tend to zero on the explicit positive domain `v(x) < v(p)`.
+   `localExp_summable` proves summability when that same adic field topology is
+   complete. At W26 the transfer from `IsAdicComplete` to `CompleteSpace` was missing;
+   W27 proves that transfer.
+
+| Item | Module under FLT.LocalClassFieldTheory | Lines/cap | Commit |
+|---|---|---|---|
+| I02c | FrobeniusPowers | 51/200 | `18e22390` |
+| I02c | IntegralFrobeniusBaseChange | 56/200 | `18e22390` |
+| I02c | UnramifiedFrobeniusEmbedding | 102/200 | `18e22390` |
+| I02c | UnramifiedFiniteStageBaseChange | 73/200 | `18e22390` |
+| I02c | FrobeniusRestrictionScale | 83/200 | `18e22390` |
+| I02c | UnramifiedIntegralH2Restriction | 66/200 | `18e22390` |
+| I02d | LocalDegreeFormula | 45/200 | `18e22390` |
+| I02d | UnramifiedBaseChangeOrderCohomology | 76/200 | `18e22390` |
+| I02d | UnramifiedInvariantRestriction | 78/200 | `18e22390` |
+| R02a | RelativeRestrictionKernel | 74/200 | `e6e97be1` |
+| R02b | GaloisKernelContinuousEquiv | 35/200 | `e6e97be1` |
+| R02b | UnramifiedKernelInflation | 73/200 | `e6e97be1` |
+| R02b | UnramifiedBaseChangeInflationSquare | 98/200 | `e6e97be1` |
+| R02b | RelativeDegreeTorsionClass | 101/200 | `e6e97be1` |
+| R02b | RelativeLowerBound | 102/200 | `e6e97be1` |
+| R03b | NormalLatticeDenominators | 64/200 | `791899ba` |
+| R03b | NormalLatticePower | 51/200 | `791899ba` |
+| R03b | DvrAdicTopology | 53/200 | `791899ba` |
+| R03b | NormalLatticeOpen | 55/200 | `791899ba` |
+| R03c, partial | DvrFactorialValuation | 64/200 | `c58387ad` |
+| R03c, partial | ValuationSeriesComparison | 35/200 | `c58387ad` |
+| R03c, partial | LocalExpRadius | 70/200 | `c58387ad` |
+
+Each module M passed sequentially in the foreground with `LEAN_NUM_THREADS=2`:
+`lake build FLT.LocalClassFieldTheory.M`,
+`lake exe runLinter FLT.LocalClassFieldTheory.M`, and
+`lake env lean Scratch/LiftsW26/MAxioms.lean`.
+All 58 declarations, including definitions and local instances, were axiom-audited.
+No whole-library lint was run. Evidence: `Scratch/LiftsW26/M-{build,lint,axioms}.log`.
+
+Combined new-module imports passed in `Scratch/LiftsW26/Integration.lean`.
+`Scratch/LiftsW26/FinalAxioms.lean` confirms that the new endpoints are axiom-clean,
+while `IsHardlyRamified.lifts` and `FLT.Assembly.hardlyRamifiedLifting` still use
+`sorryAx`; `PNat.pow_add_pow_ne_pow` also retains `Mazur_statement`.
+Both checks have `.log` and zero `.exit` files.
+
+`python3 Scratch/LiftsW26/check.py` checks saved logs, source hashes, caps,
+audit coverage, allowed axioms, sorted imports, allowed paths, new-file-only
+Lean changes, and clean tracked state. It does not rerun Lean.
+Fresh module validation: `python3 Scratch/LiftsW26/validate.py M ...`.
+
+W26 remaining contracts were superseded by the W27 scope and remaining table
+in `LOCAL_CFT_FOUNDATIONS.md`.
+
+## W25 historical acceptance
 
 Checked 2026-10-03T10:36:06.210425+00:00; branch `task/goal-lifts-w25`; base `cbd0c5ee`; proof head `89849ffd`.
 Read-only evidence check: `python3 Scratch/LiftsW25/check.py` (saved validation logs and source hashes).
@@ -110,7 +399,7 @@ audit coverage, allowed axioms, sorted imports, new-file-only Lean changes,
 allowed paths, and clean tracked state. It does not rerun Lean.
 Fresh per-module validation: `python3 Scratch/LiftsW25/validate.py M ...`.
 
-Remaining work starts at I02c; see the current source-matched table in
+At the W25 checkpoint, remaining work started at I02c; see the current table in
 `LOCAL_CFT_FOUNDATIONS.md`. W25 does not remove the final lifting admission.
 
 ## W24 historical acceptance — 2026-10-03T09:27:54.417110+00:00
