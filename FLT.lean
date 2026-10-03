@@ -867,6 +867,7 @@ public import FLT.LocalClassFieldTheory.FixedCoefficientDifferential
 public import FLT.LocalClassFieldTheory.Frobenius
 public import FLT.LocalClassFieldTheory.FrobeniusTower
 public import FLT.LocalClassFieldTheory.HenselianRoots
+public import FLT.LocalClassFieldTheory.IntegralCochainCup
 public import FLT.LocalClassFieldTheory.IntegralDegreeTwoComparison
 public import FLT.LocalClassFieldTheory.IntegralH1Equivalence
 public import FLT.LocalClassFieldTheory.IntegralH2Characters
