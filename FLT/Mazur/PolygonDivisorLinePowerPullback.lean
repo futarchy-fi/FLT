@@ -26,16 +26,16 @@ set_option backward.isDefEq.respectTransparency false
 namespace FLT.Mazur.FCurve.ModuleLineBundleTensorPullback
 variable {X : Scheme.{u}} {M N : X.Modules}
 /-- Tensor powers carry actual module isomorphisms to module isomorphisms. -/
-def tensorPowerCongr (e : M ≅ N) : ∀ m : ℕ, tensorPower M m ≅ tensorPower N m
+def divisorTensorPowerCongr (e : M ≅ N) : ∀ m : ℕ, tensorPower M m ≅ tensorPower N m
   | 0 => Iso.refl _
-  | m + 1 => ModuleSheafTensor.congr e (tensorPowerCongr e m)
+  | m + 1 => ModuleSheafTensor.congr e (divisorTensorPowerCongr e m)
 /-- Degree zero preserves the structure module. -/
 @[simp]
-lemma tensorPowerCongr_zero (e : M ≅ N) : tensorPowerCongr e 0 = Iso.refl _ := rfl
+lemma tensorPowerCongr_zero (e : M ≅ N) : divisorTensorPowerCongr e 0 = Iso.refl _ := rfl
 /-- The successor comparison tensors the original isomorphism with the previous power. -/
 @[simp]
 lemma tensorPowerCongr_succ (e : M ≅ N) (m : ℕ) :
-    tensorPowerCongr e (m + 1) = ModuleSheafTensor.congr e (tensorPowerCongr e m) := rfl
+    divisorTensorPowerCongr e (m + 1) = ModuleSheafTensor.congr e (divisorTensorPowerCongr e m) := rfl
 end FLT.Mazur.FCurve.ModuleLineBundleTensorPullback
 namespace FLT.Mazur.PolygonDivisorLineComparison
 open PolygonPinching PolygonDivisorNormalizationPullback FCurve
@@ -54,7 +54,7 @@ def linePowerIso (a : Fin n → Kˣ) (i : Fin n) (m : ℕ) :
   (Scheme.Modules.pullback (componentι K n i ≫ p).left).mapIso
       (divisorLineBundlePowerIso (PolygonBoundaryDivisor.cartier K n p hn q h a).1 m).symm ≪≫
     tensorPowerIso (componentι K n i ≫ p).left _ m ≪≫
-    tensorPowerCongr (lineIso K n hn p q h a i) m ≪≫
+    divisorTensorPowerCongr (lineIso K n hn p q h a i) m ≪≫
     divisorLineBundlePowerIso (ProjectiveLineMarkedCharts.relativeCartier K (a i)).1 m
 
 /-- The actual polygon divisor power on the left affine chart. -/
