@@ -35,7 +35,8 @@ lemma tensorPowerCongr_zero (e : M ≅ N) : divisorTensorPowerCongr e 0 = Iso.re
 /-- The successor comparison tensors the original isomorphism with the previous power. -/
 @[simp]
 lemma tensorPowerCongr_succ (e : M ≅ N) (m : ℕ) :
-    divisorTensorPowerCongr e (m + 1) = ModuleSheafTensor.congr e (divisorTensorPowerCongr e m) := rfl
+    divisorTensorPowerCongr e (m + 1) =
+      ModuleSheafTensor.congr e (divisorTensorPowerCongr e m) := rfl
 end FLT.Mazur.FCurve.ModuleLineBundleTensorPullback
 namespace FLT.Mazur.PolygonDivisorLineComparison
 open PolygonPinching PolygonDivisorNormalizationPullback FCurve
