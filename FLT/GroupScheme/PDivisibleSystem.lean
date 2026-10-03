@@ -14,7 +14,8 @@ public import FLT.GroupScheme.RaynaudModelArithmetic
 
 A system is given by its finite flat levels and coherent inclusions and
 reductions. Exactness is imposed on the actual coordinate maps; multiplication
-factors through those maps. Height is measured by integral coordinate rank.
+factors through those maps. The local base makes each level finite free,
+so integral coordinate rank measures its height.
 This is the level presentation, not a constructed fppf colimit or a period comparison.
 -/
 
@@ -23,7 +24,8 @@ namespace ThreeAdicPlan
 
 /-- A finite-flat p-divisible system, including its level-zero term.
 The defining conditions must be proved by each constructor. -/
-structure PDivisibleSystem (R K : Type) [CommRing R] [Field K] [Algebra R K]
+structure PDivisibleSystem (R K : Type) [CommRing R] [IsLocalRing R]
+    [Field K] [Algebra R K]
     [PerfectField K] [IsFractionRing R K] (p height : ℕ) [Fact p.Prime] where
   /-- The finite flat integral levels. -/
   level : ℕ → FF R K

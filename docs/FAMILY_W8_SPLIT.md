@@ -1874,3 +1874,22 @@ quotients; `LatticeFlatUniverses` applies it to commensurate original lattices.
 quotient transport. `InitialLatticeUniverses` supplies the original integral
 lattice and the HR transfer endpoint. `PadicStableUniverses` specializes to
 the constructed normalization, retaining independent coefficient/module universes.
+
+### W24 validation and remaining boundary
+
+Checked 2026-10-03T13:23:48.054619+00:00: 18 new modules pass individual foreground
+builds and individual module linters. `W24_AXIOMS.lean` checks all 35 new
+named declarations with only propext, Classical.choice and Quot.sound.
+`W24_FINAL_CHECKS.py` checks caps (maximum 111/150), source/object/log
+freshness, import order, edit scope and unchanged `Family.lean`.
+
+F03 now has an actual finite-flat p-divisible system over the rational local
+base, with rank `p^(n * (finrank ℤ_[p] R * 2))` and actual inclusion-kernel
+equations. Its constructor remains at Type 0; fppf colimits are not supplied.
+F05 normalization, generic identification and supplied stable lattices now
+retain arbitrary original coefficient and module universes. F06 supplies the
+actual mod-three cyclotomic-by-trivial filtration, without a split complement.
+F04 period rings and p-adic comparison remain large missing theory; general
+reducible-residual and p=3 compatible-family existence also remain.
+The family admission is not discharged. `FAMILY_W24_DONE.md` is the full
+untracked handoff; no push is performed.
