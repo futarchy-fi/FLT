@@ -1787,6 +1787,7 @@ public import FLT.Mazur.DivisorLinePullback
 public import FLT.Mazur.DivisorPowerCanonicalSection
 public import FLT.Mazur.DivisorPowerVeryAmple
 public import FLT.Mazur.DivisorRestrictCoherence
+public import FLT.Mazur.DivisorSectionComplement
 public import FLT.Mazur.EtaleCoordinate
 public import FLT.Mazur.EtaleDimGe
 public import FLT.Mazur.EtaleDimLe
@@ -1845,8 +1846,10 @@ public import FLT.Mazur.ModuleDisjointSectionGluing
 public import FLT.Mazur.ModuleDualSectionCancellation
 public import FLT.Mazur.ModuleExactOpenCover
 public import FLT.Mazur.ModuleFreeOpen
+public import FLT.Mazur.ModuleGlobalGeneration
 public import FLT.Mazur.ModuleGlobalSectionExt
 public import FLT.Mazur.ModuleGlobalSectionPullback
+public import FLT.Mazur.ModuleGlobalUnitGenerator
 public import FLT.Mazur.ModuleImageSection
 public import FLT.Mazur.ModuleInjectiveFlasque
 public import FLT.Mazur.ModuleLineBundlePullback
@@ -1861,8 +1864,11 @@ public import FLT.Mazur.ModulePresheafTensorPullback
 public import FLT.Mazur.ModulePullbackRestrictionPasting
 public import FLT.Mazur.ModulePullbackTrivializationCoherence
 public import FLT.Mazur.ModulePullbackUnitCoherence
+public import FLT.Mazur.ModuleSectionIsomorphismTransport
 public import FLT.Mazur.ModuleSectionMap
+public import FLT.Mazur.ModuleSectionRatios
 public import FLT.Mazur.ModuleSectionRegularity
+public import FLT.Mazur.ModuleSectionUnit
 public import FLT.Mazur.ModuleSheafDual
 public import FLT.Mazur.ModuleSheafDualInternalHom
 public import FLT.Mazur.ModuleSheafDualPullback
@@ -1976,8 +1982,12 @@ public import FLT.Mazur.PolygonComponentImages
 public import FLT.Mazur.PolygonConnected
 public import FLT.Mazur.PolygonConstantSections
 public import FLT.Mazur.PolygonCubicChartGeneration
+public import FLT.Mazur.PolygonCubicComponentSection
+public import FLT.Mazur.PolygonCubicGenerationCover
+public import FLT.Mazur.PolygonCubicGlobalGeneration
 public import FLT.Mazur.PolygonCubicInterpolation
 public import FLT.Mazur.PolygonCubicSections
+public import FLT.Mazur.PolygonCubicTorusGenerator
 public import FLT.Mazur.PolygonCyclicAtlas
 public import FLT.Mazur.PolygonCyclicCocone
 public import FLT.Mazur.PolygonCyclicDescent
@@ -2085,6 +2095,7 @@ public import FLT.Mazur.ProjectiveLineConstantSections
 public import FLT.Mazur.ProjectiveLineEndpointCover
 public import FLT.Mazur.ProjectiveLineEndpoints
 public import FLT.Mazur.ProjectiveLineFieldExtension
+public import FLT.Mazur.ProjectiveLineInteriorGenerator
 public import FLT.Mazur.ProjectiveLineMarkedCharts
 public import FLT.Mazur.ProjectiveLineMarkedDualCoordinates
 public import FLT.Mazur.ProjectiveLineMarkedEndpointSections
