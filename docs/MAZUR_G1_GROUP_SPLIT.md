@@ -596,3 +596,25 @@ The final dependency is unchanged: read-only `rg -n '^axiom Mazur_statement'
 FLT/Assumptions/Mazur.lean` returns line 103; `ExistingInputs.lean:28` uses
 `mazur_W`, and `FermatsLastTheorem.lean:24` uses `mazurTorsionExclusion`.
 This is source evidence, not a new axiom audit of the final FLT theorem.
+
+## W16 checked scalar-extension design
+
+Checked 2026-10-03 with `LEAN_NUM_THREADS=2 lake env lean
+W16_ONEGON_PROOF.lean` (exit 0). U6a is released with cap 220:
+`OneGonScalarExtension` constructs the coefficient comparison and proves it
+bijective using the linear retraction
+`p ↦ p - C (p.eval 1 - p.eval 0) * X` onto B. This retraction commutes with
+coefficient extension. Tensoring it splits the normalization inclusion;
+`polyEquivTensor` supplies the polynomial comparison. Tensor induction proves
+the two compatibility squares, giving injectivity and surjectivity without
+flatness. The normalization square and endpoint formulas are part of the leaf.
+The checked prototype contains the proofs, not just theorem statements.
+
+U6b will use neighborhoods at arbitrary primes of the parameter ring.
+For branch polynomials p,q, multiply by the opposite endpoint value instead
+of dividing: the two node branches then have common value p(0)q(0).
+For the one-gon use `(1-X) C(q(1)) p + X C(p(0)) q`, whose endpoint values
+are p(0)q(1). These common values avoid the chosen base prime, but need not
+be units. Localized equalizers must consequently evaluate into the base
+localized at that common value. This is a proof design awaiting compilation;
+no size or completion claim for U6b–U12 is made here.
