@@ -1019,3 +1019,39 @@ unit law. This also supplies constant-unit formulas needed by U12.
 has cap 80. The split node leg makes normalization epic. Precompose with
 the inverse left unitor and with normalization; on every component, U7's
 formula and U8a's projective-line unit law give the identity. This closes U8.
+
+### W18 validated outcome (2026-10-03 05:19 UTC)
+
+U6–U8 are proved; U9–U12 remain unfinished. Implementation commits:
+`5a495164` (U6) and `95ba78a7` (U7/U8).
+
+| Item | Module under `FLT/Mazur/` | Lines/cap | Commit |
+| --- | --- | --- | --- |
+| U6e1 | `PinchingPullbackTransport` | 95/140 | `5a495164` |
+| U6e2 | `CyclicPinchingProduct` | 125/160 | `5a495164` |
+| U6e3 | `OneGonPinchingProduct` | 113/150 | `5a495164` |
+| U6e4 | `PolygonPinchingAffineBaseChange` | 91/130 | `5a495164` |
+| U6e5 | `OverPullbackLocalPushout` | 69/110 | `5a495164` |
+| U6e6 | `PolygonPinchingFlatBaseChange` | 81/120 | `5a495164` |
+| U7a | `PolygonPinchingTensor` | 45/80 | `95ba78a7` |
+| U7b | `ProjectiveLineActionEndpoints` | 81/110 | `95ba78a7` |
+| U7c | `PolygonUniversalAction` | 105/150 | `95ba78a7` |
+| U8a | `ProjectiveLineActionSpecialization` | 130/160 | `95ba78a7` |
+| U8b | `PolygonActionUnit` | 50/80 | `95ba78a7` |
+
+Checks: foreground `LEAN_NUM_THREADS=2 lake build FLT.Mazur.MODULE` and
+`LEAN_NUM_THREADS=2 lake exe runLinter FLT.Mazur.MODULE` for each module
+separately; all final runs exit 0 without warnings.
+`GOAL_MAZUR_W18_AXIOM_AUDIT.lean` checks all 137 originating declarations,
+including generated helpers, using only the standard three axioms.
+`W18_REMAINING_CONTRACT.lean` checks the proved U6/U7/U8 declarations and
+the unproved universal projective-line associativity and torus equations.
+The latter are propositions, not theorems.
+
+The next proof gate is the two-parameter projective-line action law over the
+actual group product, followed by its torus multiplication formula. These
+are needed to descend polygon associativity and identify smooth restriction.
+Constant-unit specialization and the unit law do not discharge that gate.
+U11 base-change action laws and U12 translation/graph identification remain
+separate obligations. No caps for these remaining proofs are released here.
+The Mazur assumption and existing assembly consumers are unchanged.
