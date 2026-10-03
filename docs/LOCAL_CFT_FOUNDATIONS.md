@@ -1,6 +1,6 @@
 # E1c7: local reciprocity and the local invariant
 
-Source/API check: 2026-10-03, FLT base `13b878bb`, Mathlib
+Source/API check: 2026-10-03, FLT base `b91dbdc1`, Mathlib
 `c32e1ec0d1eb5237ba344eee50162f45d5b0fc76`. This is a foundational program,
 not a claim that local class field theory fits in a 200-line adapter.
 Each proposed module below has a **200-line hard cap**. Blocked contracts
@@ -8,9 +8,313 @@ are design sketches, not elaborated declarations or certified size estimates;
 split again before implementation if a proof exceeds the cap. No missing
 theorem may become a structure field, parameter standing for E1c7, or axiom.
 
-Latest validated scope: **W29**. The full lifting goal remains unmet.
+Latest validated scope: **W34**. The full lifting goal remains unmet.
 
-## W29 proved scope
+## W34 proved scope
+
+**W34 proves the adjacent-vanishing criterion for arbitrary finite groups,
+all-degree acyclicity of the local fundamental extension on every subgroup,
+and the actual fundamental cup isomorphism in every integer degree, including -2.
+It also constructs the finite Artin map and proves surjectivity and the exact
+field-norm kernel. Tower compatibility, Kummer–Artin evaluation, E1d and the
+full lifting goal remain open.**
+
+The finite-group proof uses normal norm-splice ascent/descent, induction through
+a cyclic quotient for solvable groups, two concrete coefficient sequences, and
+Sylow detection. It does not assume Hochschild–Serre, any cup isomorphism, or
+any evaluation. The first connecting map is proved invertible using the actual
+middle term's acyclicity and composed with the established coinduced shift.
+
+Checked 2026-10-03T19:14:13.835793+00:00; proof commits `b05ea241`, `58cdd300`;
+merged head `ac51bb34`. Read-only check: `python3 Scratch/LiftsW34/check.py`.
+It checks saved exit-zero logs, source hashes, allowed edits and line caps;
+it does not rerun Lean. Every new declaration was independently printed by
+`#print axioms` and uses only `propext`, `Classical.choice`, `Quot.sound`.
+
+19 new modules, 1413 lines, 76 named declarations; each module <=200 lines.
+Per-module foreground validation used `LEAN_NUM_THREADS=2` and, sequentially,
+`lake build MODULE`, `lake exe runLinter MODULE`, and `lake env lean AXIOM_FILE`.
+No library-wide lint was run. Logs and exit codes are in
+`Scratch/LiftsW34/MODULE-{build,lint,axioms}.{log,exit}`.
+Rerun with `python3 Scratch/LiftsW34/validate.py MODULE ...` (short module names).
+
+Fetched `origin/main` over HTTPS after SSH public-key authentication failed,
+merged it locally, and ran the required foreground `LEAN_NUM_THREADS=2 lake build FLT`.
+The root build, endpoint build, and rebuilt endpoint axiom audit passed:
+`Scratch/LiftsW34/{RootBuild,EndpointBuild,FinalAxioms}.{log,exit}`.
+No duplicate declaration required renaming.
+
+### Next proofs after W34
+
+1. Prove the finite Artin norm and tower diagrams on the actual constructed maps.
+   `finiteArtin_norm` proves that a norm from the defining extension is killed;
+   it does **not** prove compatibility between distinct extensions or base fields.
+   The next work is the needed restriction/corestriction and inflation comparison
+   through the Tate norm splice and the two-extension cup, then transport through
+   the inverse cup and scalar abelianization comparison.
+2. Prove positive-Frobenius normalization and Kummer–Artin evaluation, including
+   the cup-order sign. The map constructed here is the inverse-cup map; its
+   evaluation on a uniformizer has not been proved in this wave.
+3. Prove E1d's annihilator statement and continue the remaining lifting program.
+   No Serre-weight evaluation or arbitrary-p Raynaud classification API was assumed.
+
+The original overall goal remains unmet. The rebuilt audit still gives
+`sorryAx` for `GaloisRepresentation.IsHardlyRamified.lifts` and
+`FLT.Assembly.hardlyRamifiedLifting`; `PNat.pow_add_pow_ne_pow` still uses
+`Mazur_statement`, `sorryAx`, and the three standard axioms. These are remaining
+mathematical proofs, not an approval request or a claim that the full brief is done.
+
+## W33 historical scope
+
+Checked 2026-10-03T18:19:05.194888+00:00; base `b91dbdc1`; proof head `49be88b8`.
+Read-only evidence check: `python3 Scratch/LiftsW33/check.py` checks saved
+build/lint/axiom logs, source hashes, allowed edits, sorted imports and line caps.
+It does not rerun Lean. The full lifting goal remains unmet.
+
+**The original fundamental extension has Tate H⁰ = H¹ = 0 on every subgroup
+of its finite Galois group. Its Tate groups vanish in every integer degree on
+cyclic subgroups. The adjacent-vanishing criterion for arbitrary finite groups
+and the degree −2 cup equivalence remain unproved.**
+
+Seven new modules contain 705 lines and 37 named declarations. Every module
+has at most 158 lines. All declarations use only `propext`, `Classical.choice`
+and `Quot.sound`.
+
+- `SubgroupFixedFieldTower` constructs the fixed field inside the original
+  ambient field and its actual Galois equivalence with the given subgroup.
+  Restriction of scalars through this equivalence equals subgroup inclusion.
+- `TateGroupEquivalence` reindexes cochains and chains in opposite directions,
+  proves the norm square, and derives an isomorphism in every Tate degree.
+- `FiniteSubfieldDvr` constructs the canonical integer inclusion and proves
+  locality, DVR structure, completeness, finiteness and residue properties.
+  `RelativeFundamentalSubgroup` instantiates these constructions and transports
+  W32's field-wise theorem to the original module restricted to any subgroup.
+  No intermediate DVR, cohomological vanishing or cup equivalence is supplied
+  by the caller.
+- `TateNormVanishing` proves both directions of the norm-surjectivity criterion
+  in degree zero and the augmentation-exactness criterion in degree minus one.
+- `CyclicTateVanishing` proves the cyclic case of the adjacent-vanishing criterion
+  using periodic resolutions and the explicit norm splice.
+  `RelativeFundamentalCyclicSubgroup` applies it to the original local extension
+  on every cyclic subgroup, with no vanishing premise.
+
+### Next proofs after W33
+
+1. Prove the adjacent-vanishing criterion for arbitrary finite groups from
+   degrees zero and one on all subgroups. The cyclic case is now available;
+   the passage to noncyclic groups is still missing. A finite-solvable version
+   suffices here using the existing `localGalois_solvable` theorem. A
+   normal-subgroup descent or another proof must be constructed. The pinned Mathlib
+   `GroupCohomology/Basic.lean` still lists Hochschild–Serre as a TODO; its
+   cyclic resolutions alone do not provide that passage.
+2. Apply the general criterion to `relativeFundamentalExtension_subgroup_isZero`.
+   Prove the first boundary invertible and compose it with the existing
+   coinduced shift to obtain the actual input-degree −2 cup equivalence.
+3. Construct finite Artin maps with norm and tower compatibility, then prove
+   Kummer–Artin evaluation with positive Frobenius and the cup-order sign,
+   and derive E1d's annihilator statement. These remain unproved.
+
+Validation evidence: `Scratch/LiftsW33/*-{build,lint,axioms}.{log,exit}`
+and `Scratch/LiftsW33/{EndpointBuild,Integration,FinalAxioms}.{log,exit}`.
+Rerun individual modules with `python3 Scratch/LiftsW33/validate.py MODULE ...`;
+rerun endpoint/integration checks with `python3 Scratch/LiftsW33/final_checks.py`.
+Builds run in the foreground and lint runs one module at a time, with
+`LEAN_NUM_THREADS=2`. The endpoint audit still records `sorryAx` for the
+lifting theorem and both `sorryAx` and `Mazur_statement` for the FLT endpoint.
+
+## W32 proved scope (historical)
+
+The following is the W32 snapshot; its checks refer to its reported W32 head.
+
+Checked 2026-10-03T17:42:41.194685+00:00; base `25750cda`; proof head `98a7908a`.
+Read-only evidence check: `python3 Scratch/LiftsW32/check.py` checks the saved
+build/lint/axiom logs, validated source hashes, sorted imports, allowed edits
+and 200-line caps. It does not rerun Lean. The full lifting goal remains unmet.
+
+**Finite-relative fundamental classes now have proved restriction and inflation
+tower formulas. The actual local twisted extension has Tate H⁰ = H¹ = 0 after
+restriction to Gal(F/E), for a supplied finite local tower K ⊆ E ⊆ F ⊆ C.
+The degree −2 cup and the cohomological-triviality criterion remain unproved.**
+
+Twelve new modules contain 1,163 lines and 73 named declarations, including
+local tower instances. Every module is at most 132 lines. Every named
+declaration uses only `propext`, `Classical.choice` and `Quot.sound`.
+
+- `RelativeRestrictionTower` constructs the actual cochain restriction and
+  its square with inflation to the common closure. `RelativeFundamentalRestriction`
+  proves res(u_F/K) = u_F/E. The intermediate extension E/K need not be Galois.
+- `RelativeInflationTower` constructs finite inflation, proves its composition
+  law and H² injectivity. `RelativeFundamentalInflation` proves
+  inf(u_E/K) = [F:E] · u_F/K, with the positive normalization.
+- `FiniteRestrictionComparison` proves naturality of the finite continuous
+  comparison. `RelativeFundamentalOrdinaryRestriction` transports the arithmetic
+  identity to ordinary H², where the two-extension representatives live.
+- `CoinducedInjectiveRestriction` gives coset coordinates and all-degree
+  acyclicity for arbitrary injective finite group maps.
+  `CoinducedRestrictionComparison` constructs the quotient comparison and
+  proves that its actual Tate maps are isomorphisms in every degree.
+- `TwoExtensionRestriction` compares the concrete twisted short exact sequences
+  and their boundaries. `TwoExtensionRepresentativeIso` constructs inverse
+  translations for cohomologous representatives. `TwoExtensionSubgroupVanishing`
+  transports vanishing to the original restricted extension by exactness.
+- `RelativeFundamentalExtensionRestriction` applies these comparisons to the
+  chosen local representatives and proves the two adjacent vanishing groups
+  after restriction to Gal(F/E). Its local theorem assumes neither vanishing,
+  an isomorphism, nor an evaluation formula.
+
+The quotient comparison is a proved Tate isomorphism, not an asserted
+isomorphism of the two differently constructed coefficient representations.
+The final local theorem still takes the DVRs and compatible algebra towers
+as inputs. It does not yet package an arbitrary subgroup of Gal(F/K) through
+its fixed field and canonical intermediate DVR.
+
+### Next proofs after W32
+
+1. Specialize the field-wise vanishing theorem to every subgroup, constructing
+   its fixed-field/DVR instances and transporting along the actual Galois-group
+   identification. Then prove the cohomological-triviality criterion from
+   adjacent Tate vanishing on all subgroups.
+2. Apply that criterion to the twisted extension and compose its first boundary
+   with the proved coinduced shift. This must establish the degree −2 cup
+   equivalence without adding an invertibility premise.
+3. Construct finite Artin maps, prove norm and tower compatibility, prove
+   Kummer–Artin evaluation with positive Frobenius and the cup-order sign,
+   then derive E1d's annihilator statement. These remain unproved.
+
+All twelve per-module build, lint and axiom checks passed, as did the foreground
+`lake build FermatsLastTheorem`, combined import check and final goal audit.
+The rebuilt lifting theorem still depends on `sorryAx`; the FLT endpoint also
+retains `Mazur_statement`. Endpoint evidence:
+`Scratch/LiftsW32/{EndpointBuild,Integration,FinalAxioms}.{log,exit}`.
+Module evidence: `Scratch/LiftsW32/*-{build,lint,axioms}.{log,exit}`.
+Rerun each module with `python3 Scratch/LiftsW32/validate.py MODULE ...`;
+this runs foreground builds and one-module lint with `LEAN_NUM_THREADS=2`.
+
+
+## W31 proved scope (historical)
+
+The following is the W31 snapshot; its checker refers to its reported W31 head.
+
+Checked 2026-10-03T16:05:18.866549+00:00; base `114f96be`; proof head `c316c543`.
+Read-only evidence check: `python3 Scratch/LiftsW31/check.py` verifies saved
+per-module build/lint/axiom logs, source hashes, sorted imports and the 200-line
+cap. It does not rerun Lean. The full lifting goal remains unmet.
+
+**The concrete coinduced module is Tate acyclic in every integer degree,
+including after restriction to every finite subgroup. Its connecting maps are
+proved isomorphisms. The relative twisted extension has vanishing Tate H⁰ and
+H¹ for the ambient Galois group. The degree −2 cup remains unproved.**
+
+Nine new modules contain 641 lines and 33 named declarations. Each module is
+below 200 lines, and every declaration uses only `propext`, `Classical.choice`
+and `Quot.sound`.
+
+- `CoinducedShapiro` identifies the orbit-function module with coinduction
+  from the trivial subgroup, then uses Shapiro for positive cohomology and
+  homology. No projectivity of the coefficient module is assumed.
+- `CoinducedNormExact` proves the two splice calculations using point masses:
+  the norm is the constant sum, and the augmentation boundary of the explicit
+  chain is the function minus its sum supported at the identity.
+- `CoinducedTateAcyclic` combines those calculations with Shapiro to prove
+  actual Tate vanishing in every integer degree. `CoinducedTateShift` makes
+  the concrete boundary an isomorphism and cancels this second boundary in
+  the two-extension cup's injectivity and surjectivity conditions.
+- `CoinducedSubgroup` supplies an equivariant coset-coordinate isomorphism
+  and proves acyclicity on every finite subgroup, without normality.
+  `CoinducedSubgroupShift` proves the actual restricted-sequence boundary
+  invertible; its source is the restriction of the original quotient.
+- `TateScalarVanishing` proves integral scalar Tate H⁻¹ and H¹ vanish.
+  `TateExactSequence` supplies the coefficient-map segment of the Tate long
+  exact sequence. `RelativeFundamentalExtension` uses Hilbert 90 and W30's
+  proved degree-zero cup to prove Tate H⁰ and H¹ of the actual local twisted
+  extension vanish. It also proves the actual input-degree −1 cup bijective
+  between zero groups. No class-formation conclusion is a hypothesis.
+
+The coinduced module and the twisted extension are different modules. Only
+the former is proved acyclic in every degree on every subgroup. The latter's
+vanishing in degrees zero and one is presently for the ambient Galois group.
+Neither statement supplies the missing degree −2 reciprocity isomorphism.
+
+### Next proofs after W31
+
+1. Prove finite-relative fundamental-class restriction/tower compatibility
+   and compare the restricted concrete two-extension with the one constructed
+   for each subgroup. This must transport the generator normalization and
+   the twisted extension's two adjacent vanishing groups to every subgroup.
+2. Prove the cohomological-triviality criterion from that subgroup vanishing,
+   and apply it to the twisted extension. Its first Tate boundary, followed
+   by the now-proved coinduced shift, must yield all cup isomorphisms,
+   especially input degree −2. No invertible boundary may be assumed.
+3. Construct finite Artin maps and prove norm/tower compatibility; prove
+   Kummer–Artin evaluation with positive Frobenius and the cup-order sign;
+   then derive E1d's annihilator statement. These remain unproved.
+
+Combined imports and the final axiom audit passed (`Scratch/LiftsW31/Integration.log`
+and `FinalAxioms.log`, both exit 0). `IsHardlyRamified.lifts` and
+`hardlyRamifiedLifting` still use `sorryAx`; `PNat.pow_add_pow_ne_pow` still
+uses `sorryAx` and `Mazur_statement`. No W31 declaration uses either.
+
+Module evidence: `Scratch/LiftsW31/*-{build,lint,axioms}.{log,exit}`.
+Rerun with `python3 Scratch/LiftsW31/validate.py MODULE ...`; it runs each
+module's build, lint and axiom check sequentially with `LEAN_NUM_THREADS=2`.
+Serre-weight evaluation and arbitrary-p Raynaud classification were not used.
+
+## W30 historical proved scope
+
+Checked 2026-10-03T15:32:51.559692+00:00; base `5cfcd5c0`; proof head `40439142`.
+Read-only evidence check: `python3 Scratch/LiftsW30/check.py` verifies saved
+logs, source hashes, import order, line caps and axiom coverage; it does not
+rerun Lean. The full lifting goal remains unfinished.
+
+**The relative fundamental Tate cup is constructed in every integer degree.
+Its ordinary cochain formula is proved in every nonnegative input degree,
+and the actual degree-zero cup is proved to be an isomorphism.**
+The 18 new modules contain 1,376 lines and 81 named declarations; every module
+is below 200 lines and every declaration uses only `propext`, `Classical.choice`,
+and `Quot.sound`.
+
+- The orbit inclusion M → (G → M), its quotient Q, and the primitive
+  `F(g)(x) = c(x,g)` construct a concrete two-extension for every two-cocycle.
+  Its two actual Tate connecting maps define `tateTwoExtensionMap` in every
+  integer degree. `TateTwoClassOperation` proves representative independence;
+  `TateTwoClassZero` proves that zero classes act by zero.
+- `ScalarCochainCup`, `OneCocycleScalarBoundary`, `TwoExtensionCochainCup`,
+  `TatePositiveCocycleClass` and `TateCupComparison` prove the ordinary formula
+  `z(g₂,…) • c(g₀,g₁)` for every nonnegative input degree and compare it through
+  the actual positive Tate isomorphism. The fundamental class is the left
+  factor and the trivial scalar class is the right factor.
+- `TateCupUnit` and `RelativeFundamentalTateCup` prove that the scalar Tate unit
+  maps to W29's normalized relative Tate generator. The all-degree operation
+  is named `relativeFundamentalTateCup`.
+- `TateClassArithmetic` and `TateScalarDegreeZero` prove generation and norm
+  annihilation in actual scalar Tate H⁰. `RelativeTateCupDegreeZero` uses the
+  proved local H² generator to establish bijectivity of the actual degree-zero
+  cup. `relativeFundamentalTateCupZeroEquiv` has this cup as its forward map.
+
+Every module passed a foreground build, module-only lint and declaration
+axiom audit with `LEAN_NUM_THREADS=2`. Combined imports and final endpoint
+axiom checks passed. Evidence is in `Scratch/LiftsW30/`; the lifting theorem
+still uses `sorryAx`, and `PNat.pow_add_pow_ne_pow` still uses both `sorryAx`
+and `Mazur_statement`. No new declaration uses either.
+
+### Next proofs after W30 (historical)
+
+| Gate | Required proof |
+|---|---|
+| Tate–Nakayama beyond input degree zero | Prove cohomological triviality and dimension shifting for the concrete two-extension using local H¹ vanishing, H² generators and actual finite-relative subgroup/tower compatibility. The crucial input degree −2 isomorphism remains open. |
+| Finite Artin maps | Construct reciprocity from that degree −2 isomorphism and establish norm and tower compatibility. |
+| Kummer–Artin evaluation | Prove actual cocycle evaluation with positive Frobenius convention and the cup-order sign; compare the Kummer pairing. |
+| E1d | Deduce the annihilator statement from the evaluation theorem. |
+
+The general cup construction is a Yoneda cup through explicit short exact
+sequences on the actual Tate complexes. Its existence does not prove
+bijectivity in other degrees. Local arithmetic retains the complete-DVR,
+finite-residue and compatible finite Galois tower scope; the degree-zero
+isomorphism uses the characteristic-zero H² saturation theorem.
+Serre-weight evaluation and arbitrary-p Raynaud classification remain separate.
+
+
+## W29 historical proved scope
 
 Checked 2026-10-03T14:36:50.156663+00:00; base `13b878bb`; proof head `4fd72473`.
 Read-only evidence check: `python3 Scratch/LiftsW29/check.py` (saved logs and
@@ -55,7 +359,7 @@ The combined-import and final-axiom checks also passed. The full FLT theorem
 still uses `sorryAx` and `Mazur_statement`; the lifting theorem still uses
 `sorryAx`. No new declaration uses either.
 
-### Next proofs after W29
+### Historical next proofs after W29
 
 | Gate | Required construction |
 |---|---|
