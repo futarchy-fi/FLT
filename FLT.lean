@@ -308,6 +308,7 @@ public import FLT.GaloisRepresentation.Extensions.ExtendedUnitSubspace
 public import FLT.GaloisRepresentation.Extensions.FiniteDescent
 public import FLT.GaloisRepresentation.Extensions.LiftBasisTransport
 public import FLT.GaloisRepresentation.Extensions.LiftCocycle
+public import FLT.GaloisRepresentation.Extensions.LinearClassCoordinates
 public import FLT.GaloisRepresentation.Extensions.LinearCoefficientMap
 public import FLT.GaloisRepresentation.Extensions.LinearContinuousClass
 public import FLT.GaloisRepresentation.HardlyRamified.AbsIrredAdapter
