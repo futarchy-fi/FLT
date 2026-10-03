@@ -416,3 +416,450 @@ finite complex, and descend cocycles and bounding cochains to common stages.
 The integral low-degree comparison C01, colimit C05, and later invariant and
 class-formation gates remain. No class-field conclusion is smuggled into
 these cochain hypotheses.
+
+## W17 refinement (2026-10-03)
+
+The implementation sequence below refines U03b before its proofs. Each new
+module has a 200-line cap; these are targets until validated.
+
+| Leaf | Contract | Dependency |
+|---|---|---|
+| U03b1a / UnramifiedDegree | From equal fraction/residue degrees in a finite separable DVR extension, derive maximal-ideal equality, formal unramifiedness, integral closure, completeness and Henselianity | local fundamental identity, integral-closure rank, ideal factorization |
+| U03b1b / UnramifiedExistence | Apply those results to the existing residue-extension constructor | U03b1a |
+| U03b2a / HenselianRoots | Lift simple residue roots uniquely and transfer splitting of a monic polynomial | Hensel existence/uniqueness, root count |
+| U03b2b / UnramifiedPolynomial | Construct an integral power basis whose minimal polynomial has separable reduction and splits upstairs for finite residue fields | U03b1, U03b2a, existing residue-generator API |
+| U03b3 / UnramifiedNormal | Deduce normality and Galois structure of the actual fraction extension | U03b2b, fraction-field power basis |
+| U03b4 | Embed into the separable closure; prove uniqueness and compositum compatibility | U03b3, integral-root uniqueness |
+
+U03b4 must be refined further after the normality interface is known. U04/U05
+and E1c7 remain blocked, and no bridge is to be supplied as a new hypothesis.
+
+W17 U03b4 refinement after the normality proof:
+
+| Leaf (cap 200 each) | Concrete contract |
+|---|---|
+| UnramifiedEmbeddings | Lift a residue-field embedding to a fraction-field embedding using the constructed monic generator and Hensel; obtain embeddings when residue degrees divide |
+| UnramifiedUniqueness | For actual intermediate fields with integral unramified DVRs, residue-degree divisibility implies containment; equal residue degrees imply equality |
+| UnramifiedStages | Embed each constructed Galois stage in the chosen separably closed overfield, retain its actual integral ring and degree data |
+
+A common overfield plus normality turns the constructed embeddings into
+literal containment. No uniqueness, containment, or residue lift is an input.
+The compositum and inverse-limit leaves require an explicit stage interface
+and will be refined after these statements are checked.
+
+W17 ready follow-ons after stage uniqueness (200 lines per module):
+
+- `UnramifiedStageTower`: choose the unique stage indexed by positive degree;
+  prove containment iff divisibility, compositum = the lcm stage, and directedness.
+  The compositum proof uses containment in the lcm stage and degree divisibility,
+  so it does not require an unproved hereditary-unramifiedness bridge.
+- `UnramifiedUnion`: define the supremum, prove every element lies in a finite
+  stage, prove normality and include every finite unramified stage.
+
+These statements do not establish a topological inverse-limit equivalence,
+restriction surjectivity from the absolute Galois group, or the inertia kernel.
+Those remain distinct U04 obligations before U05.
+
+W17 U04 API audit: Mathlib already supplies
+`InfiniteGalois.continuousMulEquivToLimit` and
+`AlgEquiv.restrictNormalHom_surjective`; neither is a missing general theorem.
+The next two bounded leaves (cap 200) are:
+
+- `UnramifiedCofinality`: every finite intermediate field contained in the
+  union is contained in a degree-indexed stage, using a primitive element.
+- `UnramifiedGaloisLimit`: specialize the existing topological inverse-limit
+  equivalence to the constructed union, and prove continuous surjective
+  restriction from the chosen separable closure.
+
+The generic limit is indexed by all finite Galois intermediate fields of
+the union. Reindexing it explicitly by positive degrees is distinct from
+cofinality. Identifying the restriction kernel with the existing valuation
+inertia group remains blocked on the valued-field/residue-closure frontend.
+
+## W17 proved scope and next gates
+
+The U03b realization chain is now implemented under a complete DVR base
+with finite residue field. The constructor's equal degree output implies
+maximal-ideal equality, formal unramifiedness and complete Henselian integral
+closure. A primitive residue element lifts to an integral algebra generator;
+its polynomial splits by lifting all simple residue roots. The fraction field
+is consequently normal. Each positive degree gives a Galois stage in the
+chosen separable closure, and these stages are unique with containment iff
+degree divisibility and compositum equal to the lcm stage.
+
+`IsUnramifiedStage` is an existential predicate for an actual finite
+unramified Henselian DVR model, not an assumed normality/uniqueness interface.
+Normality and equal fraction/residue degree are proved consequences. This
+frontend uses algebraic complete-DVR hypotheses; it has not yet been matched
+to every analytic valued-local-field representation used elsewhere in FLT.
+
+The directed supremum is constructed and Galois. Each element lies in a
+finite stage; each finite subextension of the supremum is contained in one.
+Its Galois group is topologically equivalent to the existing inverse limit
+over **all finite Galois intermediate fields of the supremum**. Restriction
+from the chosen separable closure is continuous and surjective, with kernel
+exactly the automorphisms fixing every degree-indexed stage pointwise.
+
+Remaining U gates (not certified ready):
+
+1. Reindex that explicit profinite limit by positive degrees and identify
+   its transition maps with the compatible arithmetic Frobenius maps. The
+   required field-containment cofinality is proved; categorical reindexing
+   and the Frobenius coordinate comparison are not yet assembled.
+2. Identify this restriction kernel with the repository's valuation inertia.
+   Reuse `NumberField.map_localInertiaGroup_eq_inertia` and
+   `map_localInertiaGroup_eq_finiteInertia` for their actual number-field
+   completion contexts. The missing match is between the constructed models,
+   the canonical integral closures/valuation rings, and the inertia-fixed
+   finite subextensions; the existing finite inertia comparison is not missing.
+3. Construct the normalized continuous unramified characters and prove the
+   universal inertia-trivial factorization (U05) after that identification.
+
+E1c7/E1d remain blocked. These U leaves do not provide local reciprocity,
+principal-unit norm convergence, continuous cohomology comparison, the local
+invariant/class formation, or Kummer–Artin evaluation, and do not remove
+`IsHardlyRamified.lifts`. The independent Serre-weight and arbitrary-p
+Raynaud classification gates remain untouched.
+
+## W18 refinement (2026-10-03)
+
+The next leaves retain a 200-line cap and use existing constructions:
+
+- `UnramifiedDiagram`: positive degrees ordered by divisibility, finite Galois
+  stages inside the union, and a final stage functor proved from W17 cofinality.
+- `UnramifiedDegreeLimit`: apply the initial opposite functor to the explicit
+  profinite limit cone; prove the resulting equivalence has restriction coordinates.
+- `UnramifiedIntegralModel`: identify the existential integral DVR with the
+  canonical integral closure and transport formal unramifiedness; transport the
+  stage predicate across fraction-field equivalences.
+- `UnramifiedStageFrobenius`: construct arithmetic Frobenius using those canonical
+  rings and compare the diagram's transitions with W16 Frobenius restriction.
+
+The inertia step must use the existing completion-specific finite comparison
+and derive the converse finite unramifiedness from trivial inertia. No equality
+of inertia with the constructed restriction kernel is an input hypothesis.
+
+W18 inertia and character refinement, after matching the canonical models:
+
+- `UnramifiedLocalInertia` (cap 200): prove ideal inertia is trivial using
+  faithful residue action on the canonical integral closure; apply the existing
+  number-field-completion restriction comparison.
+- `UnramifiedInertiaConverse` (cap 200): from inertia fixing a finite Galois
+  field, derive ramification index one, preserve a base uniformizer, and prove
+  the canonical ring is an unramified Henselian DVR.
+- `UnramifiedInertiaKernel` (cap 200): use finite Galois subfields of the
+  inertia fixed field for the reverse inclusion; closedness of inertia turns
+  fixed-field equality into equality of restriction kernels.
+- `UnramifiedCyclicStages` (cap 200): use the actual arithmetic Frobenius as
+  the cyclic generator, obtain Z/n coordinates, and prove continuity and
+  normalization of the characters on the union's Galois group.
+- `UnramifiedCharacterDescent` (cap 200): continuous surjective restriction
+  from a compact group is a quotient map; derive unique continuous descent
+  for all inertia-trivial homomorphisms.
+- `UnramifiedCharacters` (cap 200): compose the normalized characters with
+  absolute restriction, prove inertia triviality, and show Frobenius lifts exist.
+
+The completion-specific statements retain W17's adic-completeness hypothesis
+on the base DVR. This is an arithmetic hypothesis, not an assumed residue or
+inertia comparison. The general analytic completeness transport is distinct
+from the existing `rationalCompletionIntegers_adicComplete` specialization.
+
+W18 next ready cochain leaves after U05 (cap 200 each): Mathlib already has
+`Representation.quotientToInvariants` and `quotientToInvariants_lift`, and
+`groupCohomology.cochainsMap` is already a chain map for the inhomogeneous
+complex. These APIs are not missing. `FixedCoefficientCochain` can package
+W16's descended cochain into that actual invariant coefficient module.
+`FixedCoefficientDifferential` can specialize the existing chain map,
+prove inflation injective, and reflect cocycles. This is a finite-stage
+inhomogeneous-complex comparison; a separately constructed continuous complex,
+common-stage boundaries, filtered colimits, and class formation remain distinct.
+
+## W18 proved scope and next gates
+
+Checked 2026-10-03 by the foreground per-module builds, individual lints and
+axiom audits in `Scratch/LiftsW18/`; acceptance, caps and commits are in the
+W18 section of LIFTS_GOAL_LEDGER.md. Recheck recorded evidence with
+`python3 Scratch/LiftsW18/check.py`; that checker does not rerun Lean.
+
+The limit is now explicitly indexed by positive degrees ordered by divisibility.
+Its equivalence with the union's Galois group has proved restriction coordinates.
+Canonical integral closures supply the actual DVR tower used by W16's Frobenius
+comparison, giving a compatible arithmetic Frobenius point and a union automorphism.
+
+In the number-field-completion frontend with complete base DVR, the constructed
+union equals the fixed field of existing valuation inertia. The forward finite
+comparison uses faithful residue action on the canonical integral closure. The
+converse derives ramification index one, an integral uniformizer, formal
+unramifiedness and Henselianity. Closedness of inertia identifies the restriction
+kernel, rather than merely identifying a closure of the subgroup.
+
+Normalized continuous Z/n-valued unramified characters and unique continuous
+descent of inertia-trivial homomorphisms are proved. The target is expressed as
+`Multiplicative (ZMod n)` for multiplicative Galois groups; the additive character
+law is also proved. Frobenius lifts exist, and every such lift has value one.
+`RationalUnramifiedCharacters` uses the existing rational-completion completeness
+theorem, leaving no additional completeness hypothesis at any rational prime.
+
+The two cochain leaves package W16 descent into the existing invariant coefficient
+module and quotient representation. The existing inhomogeneous cochain map gives
+injective inflation, differential compatibility and reflection of cocycles.
+Continuous inhomogeneous cocycles therefore descend to actual finite quotient
+cocycles with invariant coefficients.
+
+Next contracts to refine, each retaining cap 200:
+
+1. Common-stage boundary descent: for a continuous cochain b with d b = c,
+   construct one open normal stage carrying b and c in compatible invariant
+   coefficients and prove the finite differential equation. Do not assume a
+   common stage or a differential bridge. The completed cocycle reflection alone
+   does not identify boundaries at arbitrary independently chosen stages.
+2. Construct or identify the continuous inhomogeneous complex and the directed
+   transition maps between invariant coefficient stages; prove the filtered
+   cohomology comparison. Mathlib's quotient action and algebraic cochain map
+   already exist and are now used, so they are not missing APIs.
+3. The norm route still needs higher principal-unit graded quotients, the norm
+   as residue trace on them, successive corrections and convergence. The residue
+   unit norm and first approximation from W16 do not finish those steps.
+4. Extend the analytic completeness/valuation-ring frontend beyond the proved
+   rational specialization when required by callers. The complete-DVR and
+   number-field-completion results do not claim that independently supplied
+   valuations automatically agree.
+
+E1c7/E1d remain blocked on the outstanding reciprocity/cohomological program:
+local invariant and class formation, norm convergence, and Kummer–Artin
+evaluation. Serre-weight evaluation and arbitrary-p Raynaud classification are
+still independent blocked gates; no implementation of either was dispatched.
+The final lifting admission and final FLT axiom set are unchanged.
+
+## W19 refinement (2026-10-03)
+
+Each following leaf has a 200-line cap. Acceptance requires a foreground
+module build, an individual-module lint and an audit of every declaration.
+
+- `FixedCoefficientBoundary`: descend a continuous bounding cochain and take
+  its finite differential, proving the boundary equation at that same stage.
+- `InvariantStageTransition`: construct quotient pullback with invariant
+  coefficient inclusion; prove identity, composition and inflation compatibility.
+- `ContinuousCochainComplex`: define the submodules of continuous functions,
+  prove differential stability and construct the continuous complex.
+- `ContinuousStageDiagram`: use reverse inclusion of open normal subgroups
+  for a filtered diagram of the actual quotient complexes and its inflation cocone.
+- `ContinuousCochainColimit`: prove that cocone is a colimit degreewise, using
+  finite descent and injective inflation, then a colimit of complexes.
+- Common-refinement boundary detection and the cohomology colimit follow once
+  the continuous complex interface is checked; refine those proofs into separate
+  leaves if needed. No assumed boundary-detection or colimit bridge is permitted.
+
+The higher principal-unit norm and class-formation gates remain distinct;
+Serre-weight evaluation and arbitrary-p Raynaud classification stay blocked.
+
+W19 cohomology and ready follow-on refinement (cap 200 each):
+
+- `CochainHomologyClass`: representative surjectivity, vanishing iff boundary,
+  and functoriality in the existing categorical homology; includes degree zero.
+- `FilteredComplexDescent`: injective cocone maps reflect cocycles; descend a
+  bounding cochain and construct a common refinement using filteredness.
+- `FilteredHomologyDescent`: descend cohomology classes and detect vanishing
+  and equality after refinement, using the preceding proved boundary theorem.
+- `ContinuousCohomologyColimit`: apply those lemmas to the constructed cocone
+  and prove the module colimit universal property and canonical isomorphism.
+- `FiniteContinuousComparison`: identity-on-cochains comparison of finite
+  discrete continuous and ordinary complexes, over an arbitrary commutative ring.
+- `FiniteCharacteristicZeroCohomology`: use Mathlib's proved Maschke theorem
+  and the existing Ext presentation to prove positive finite-group vanishing.
+- `ContinuousCharacteristicZeroCohomology`: descend each continuous class
+  to a finite quotient, then apply the finite vanishing theorem.
+
+The finite comparison's compatibility with connecting maps and cup products,
+restriction/coefficient naturality of the colimit comparison, and comparison
+with W14's explicit homogeneous low-degree presentation are separate leaves.
+Characteristic-zero vanishing does not assume an averaging homotopy; it uses
+Mathlib's existing proof of Maschke and projectivity of semisimple modules.
+
+## W19 proved scope and next gates — checked 2026-10-03 05:17 UTC
+
+The W19 acceptance table in LIFTS_GOAL_LEDGER.md records the module commits,
+caps, validation commands and evidence. Recheck recorded evidence with
+`python3 Scratch/LiftsW19/check.py`; it does not rerun Lean.
+
+Common-stage boundary descent, refinement maps, the continuous inhomogeneous
+complex, and its filtered colimit of invariant-coefficient finite quotient
+complexes are proved. `ContinuousStageBoundary` detects a boundary after a
+constructed refinement of any independently supplied stage. Continuous
+cohomology is the corresponding filtered colimit in every degree.
+
+The next ready finite discrete comparison is proved over arbitrary commutative
+rings. Positive continuous cohomology vanishes over any characteristic-zero
+field, by finite descent and the proved Maschke/Ext route. This establishes the
+vanishing conclusion of C06, including rational coefficients; no averaging
+homotopy is supplied as a hypothesis.
+
+C01's explicit integral low-degree comparison, C02's connecting-map/cup
+compatibility, and restriction/coefficient naturality of C05's comparison
+remain. C07 still needs the continuous exact-sequence construction and its
+explicit boundary formula for Q/Z and Z. These interfaces must be proved,
+not passed as bridges. The principal-unit norm convergence, local invariant,
+class-formation and Kummer–Artin evaluation gates remain, as do the independent
+Serre-weight and arbitrary-p Raynaud gates. E1c7/E1d and the final lifting
+admission remain blocked; the final FLT axiom set is unchanged.
+
+## W20 proved scope — checked 2026-10-03T06:04:11.614329+00:00
+
+Checked 2026-10-03T06:04:11.614329+00:00; branch `task/goal-lifts-w20`; starting base `d34fe0c6`.
+**E1c7/E1d remain blocked; the final FLT theorem still has sorryAx.**
+
+Fourteen new modules implement the four W19 follow-on contracts, split into
+bounded leaves, and extend them through restriction naturality, the full
+explicit H1 quotient comparison, and the positive Q/Z-to-Z connecting isomorphism.
+All commits are local; nothing pushed.
+
+| Item | Module under FLT.LocalClassFieldTheory | Lines/cap | Commit |
+|---|---|---|---|
+| C05f | ContinuousCoefficientMaps | 111/200 | `64ffd56a` |
+| C05g | ContinuousColimitNaturality | 91/200 | `354d63a9` |
+| C01i | IntegralLowDegreeComparison | 126/200 | `bfb8fa1f` |
+| C01j | IntegralDegreeTwoComparison | 125/200 | `11d0889b` |
+| C07a | ContinuousExactCoefficients | 105/200 | `c450c96a` |
+| C07b | ContinuousConnectingMap | 111/200 | `e9adad08` |
+| C07c | RationalCoefficientSequence | 109/200 | `46c399ea` |
+| C07d | CyclicCarryConnecting | 92/200 | `7b11a7cc` |
+| C06c | IntegralRationalVanishing | 84/200 | `ad53d35a` |
+| C07e | RationalIntegralConnectingIso | 53/200 | `44f5fc93` |
+| C05h | ContinuousRestriction | 97/200 | `7ba2cb29` |
+| C05i | ContinuousRestrictionColimit | 78/200 | `c05b725a` |
+| C01k | IntegralH1Equivalence | 98/200 | `a5eecf6a` |
+| C05j | ContinuousRestrictionCohomology | 70/200 | `bc79f67a` |
+
+Total: **1350 Lean lines; 91 named declarations**, including
+nine coefficient/topology helper instances. Every module is below 200 lines.
+
+## Validation
+
+Each module M passed separately, in the foreground, with `LEAN_NUM_THREADS=2`:
+`lake build M`, `lake exe runLinter M`, and
+`lake env lean Scratch/LiftsW20/<Module>Axioms.lean`.
+Accepted logs are in `Scratch/LiftsW20/<Module>-{build,lint,axioms}.log`.
+Every named declaration, including the named local instances, has axioms
+contained in `{propext, Classical.choice, Quot.sound}`; two use no axioms.
+No whole-library build or lint was run. No concurrent builds or OOM occurred.
+
+`python3 Scratch/LiftsW20/check.py` checks source caps, absence of admissions,
+audit coverage and permitted axiom sets, log freshness, new-file-only Lean
+changes, sorted unique FLT.lean imports, allowed paths, whitespace and clean
+tracked state. It also rejects untracked files under FLT/ and docs/.
+It reads validation evidence; it does not rerun Lean.
+The machine-readable result is `Scratch/LiftsW20/summary.json`.
+
+Fresh final audit: `LEAN_NUM_THREADS=2 lake env lean Scratch/LiftsW20/FinalAxioms.lean`,
+exit 0, evidence `Scratch/LiftsW20/Final-axioms.log`:
+
+* `IsHardlyRamified.lifts` and `FLT.Assembly.hardlyRamifiedLifting` retain
+  `[propext, sorryAx, Classical.choice, Quot.sound]`.
+* `PNat.pow_add_pow_ne_pow` retains
+  `[Mazur_statement, propext, sorryAx, Classical.choice, Quot.sound]`.
+
+## Proved scope
+
+Coefficient maps restrict Mathlib's actual maps to continuous cochains;
+identity, composition and stage-inflation compatibility are proved. The
+complex and cohomology colimit comparisons are natural in these maps.
+
+The low-degree coordinate formulas match the actual integral differential.
+Every H1/H2 class has an explicit continuous cocycle representative; vanishing
+is equivalent to a principal cocycle in degree one and a continuous one-cochain
+boundary in degree two. `integralH1Equiv` identifies the existing splitting
+quotient with the actual complex's H1 over any commutative ring, including Z.
+The existing homogeneous TopRep comparison is field-based; this work uses the
+explicit low-degree presentation rather than claiming that API covers Z.
+
+Discrete coefficient sections prove degreewise surjectivity and exactness.
+The continuous short exact sequence is constructed from coefficient exactness,
+and its categorical connecting map is identified with the positive differential
+of a continuous lift. The concrete sequence Z to Q to Q/Z discharges all
+coefficient exactness premises. `rationalIntegralConnectingIso G n` is the
+actual isomorphism from H^(n+1)(G,Q/Z) to H^(n+2)(G,Z). The scalar-change lemma
+proves that rational vanishing applies to the integral complex as required.
+`rationalIntegralConnectingMap_cyclicCarry` proves that the degree-one character
+i/n maps to the positive integral carry class, fixing the sign.
+
+Restriction pulls an open normal subgroup N back to f^(-1)(N), proves the
+invariant-coefficient quotient map there, and proves compatibility with
+inflation. The index functor and stage natural transformation are constructed;
+both complex and cohomology colimit naturality follow. No pullback-stage,
+colimit, boundary or quotient-action bridge is supplied as a hypothesis.
+
+## Remaining work and next bounded contracts
+
+E1c7/E1d remain blocked. Local invariant/class formation, Kummer-Artin evaluation,
+higher principal-unit graded quotients, norm-as-trace, successive corrections
+and convergence are not supplied by these cohomology constructions.
+The Serre-weight and arbitrary-p Raynaud gates remain independently blocked.
+No task for either missing API was dispatched.
+
+Next leaves, each with a 200-line cap and a separate build/lint/audit:
+
+1. Identify trivial-action H1 with continuous characters, using `integralH1Equiv`
+   and proving that every principal cocycle is zero. Compose with the proved
+   connecting isomorphism to express integral H2 by Q/Z characters.
+2. Prove connecting-map naturality under coefficient-sequence morphisms and
+   continuous group restriction, using the constructed short complexes and
+   Mathlib's homology-sequence naturality. Prove the commutative squares.
+3. Compare the explicit low-degree cup with a continuous integral cochain cup;
+   prove its compatibility with the connecting map before using a local invariant.
+4. Apply the character description to the constructed unramified procyclic
+   quotient and prove Frobenius evaluation/bijection from that quotient's tower.
+   The multiplicative order-H2 isomorphism still needs principal-unit acyclicity.
+
+## W21 proved scope — 2026-10-03T06:41:20.511369+00:00
+
+Checked 2026-10-03T06:41:20.511369+00:00; branch `task/goal-lifts-w21`; base `3ee6889c`.
+**E1c7/E1d remain blocked; the final FLT theorem retains sorryAx.**
+
+The module/commit/cap table is in the W21 acceptance section of
+`LIFTS_GOAL_LEDGER.md`. Recheck accepted evidence with
+`python3 Scratch/LiftsW21/check.py`; final axiom evidence is
+`Scratch/LiftsW21/Final-axioms.log`.
+
+1. **Characters:** trivial-action principal cocycles are zero. The actual H1
+   quotient is continuous characters; composing its inverse with the proved
+   positive Q/Z-to-Z boundary gives the integral H2 character equivalence.
+2. **Naturality:** commuting coefficient maps construct short-complex morphisms.
+   The homology-sequence theorem proves both coefficient and group-restriction
+   connecting squares. The concrete integral H2 character equivalence commutes
+   with continuous character pullback.
+3. **Cups:** the degree-one and degree-two right cups by trivial scalar characters
+   are actual continuous cochains. Their differential identity has positive sign.
+   The old explicit cup descends to actual integral H1 and agrees with its integral
+   H2 representative. Its vanishing is exactly a continuous coboundary witness.
+   `integralScalarConnectingMap_cup_exists` constructs the continuous lift and
+   both cycle representatives in the Z-linear complex; the scalar ring can be
+   a different commutative ring. It proves the two categorical boundary formulas,
+   not an assumed connecting/cup bridge. Scope is low-degree scalar-character
+   cups, not a general higher-degree cup-product or arithmetic pairing API.
+4. **Unramified quotient:** an open subgroup containing arithmetic Frobenius is
+   the whole constructed unramified Galois group, by finite-stage cofinality and
+   cyclicity. This proves character uniqueness. The denominator stage realizes
+   every rational-circle value, giving the Frobenius evaluation bijection.
+5. **Further leaves:** Frobenius coordinates give an additive isomorphism from
+   integral H2 of the constructed quotient to Q/Z. The inflated degree-n carry
+   has coordinate **+1/n**, and its j-multiple has coordinate j/n. Its exact
+   annihilator is nZ. Every integral H2 class is an integer multiple of one such
+   finite-stage carry, hence torsion.
+
+The proved H2 has **constant integral coefficients**. This is the character/
+Frobenius portion of Milne III.1.7, not the multiplicative local invariant.
+
+- The order-induced isomorphism from multiplicative H2 still needs unramified
+  unit/principal-unit acyclicity. Higher principal-unit graded quotients,
+  norm-as-trace, successive corrections and convergence remain arithmetic work.
+- Inflation to the full separable closure, class formation and Kummer–Artin
+  evaluation remain unproved. W14's cup-order minus sign remains unchanged;
+  the positive integral carry result does not erase it.
+- Serre-weight evaluation and arbitrary-p Raynaud classification remain
+  independently blocked; neither was dispatched or treated as available.
+
+Next contracts require refinement against actual APIs (cap 200 per module):
+construct the principal-unit quotient/residue-additive identification; prove the
+norm's graded trace formula; then build compatible corrections and use
+completeness before claiming norm surjectivity or unit acyclicity. Do not turn
+any of these missing arithmetic conclusions into parameters or record fields.

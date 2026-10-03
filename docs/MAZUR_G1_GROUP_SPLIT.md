@@ -5,7 +5,7 @@ exactness and cyclic linear exactness. They do not construct a polygon or
 identify that linear complex with sheaf cohomology. This split develops the
 relative group candidate and isolates its comparison with the smooth locus.
 The historical G1–G4 contracts below retain their original caps.
-The W15 evidence at the end supersedes the historical status tables.
+The W19 validated outcome below supersedes the historical status tables.
 New leaves are at most 240 lines. Unimplemented signatures remain contracts.
 
 Checked 2026-09-30 19:16 UTC by the following read-only API searches (paths
@@ -596,3 +596,626 @@ The final dependency is unchanged: read-only `rg -n '^axiom Mazur_statement'
 FLT/Assumptions/Mazur.lean` returns line 103; `ExistingInputs.lean:28` uses
 `mazur_W`, and `FermatsLastTheorem.lean:24` uses `mazurTorsionExclusion`.
 This is source evidence, not a new axiom audit of the final FLT theorem.
+
+## W16 checked scalar-extension design
+
+Checked 2026-10-03 with `LEAN_NUM_THREADS=2 lake env lean
+W16_ONEGON_PROOF.lean` (exit 0). U6a is released with cap 220:
+`OneGonScalarExtension` constructs the coefficient comparison and proves it
+bijective using the linear retraction
+`p ↦ p - C (p.eval 1 - p.eval 0) * X` onto B. This retraction commutes with
+coefficient extension. Tensoring it splits the normalization inclusion;
+`polyEquivTensor` supplies the polynomial comparison. Tensor induction proves
+the two compatibility squares, giving injectivity and surjectivity without
+flatness. The normalization square and endpoint formulas are part of the leaf.
+The checked prototype contains the proofs, not just theorem statements.
+
+U6b will use neighborhoods at arbitrary primes of the parameter ring.
+For branch polynomials p,q, multiply by the opposite endpoint value instead
+of dividing: the two node branches then have common value p(0)q(0).
+For the one-gon use `(1-X) C(q(1)) p + X C(p(0)) q`, whose endpoint values
+are p(0)q(1). These common values avoid the chosen base prime, but need not
+be units. Localized equalizers must consequently evaluate into the base
+localized at that common value. This is a proof design awaiting compilation;
+no size or completion claim for U6b–U12 is made here.
+
+U6b is split before library implementation. Two complete prototypes passed
+`lake env lean`: `W16_NEIGHBORHOODS_PROOF.lean` and
+`W16_EQUALIZER_PROOF.lean`. Release U6b1 `RelativePinchingNeighborhoods`
+(cap 120) for the arbitrary-prime neighborhoods above. Release U6b2
+`RingEqualizerLocalization` (cap 150) for any two ring maps f,g and an element
+s of their equalizer: the equalizer of the localized maps to D[1/f(s)] is
+C[1/s]'s subring canonically isomorphic to (eqLocus f g)[1/s]. Equality of
+localized endpoint values only implies equality after multiplication by
+f(s)^k; the proof multiplies the numerator by s^k and increases its denominator
+exponent. It handles zero divisors and arbitrary commutative rings.
+Specializing to the node and one-gon, and constructing/gluing scheme morphisms,
+remain separate leaves. These two results alone do not establish U6c or U6d.
+
+U6c is split further before implementation. The complete
+`W16_LOCAL_DESCENT_PROOF.lean` prototype compiles. Release U6c0
+`RingEqualizerLocalDescent` (cap 180): the localized equalizer spectrum has
+unique descent to an affine target; for arbitrary targets it descends on any
+saturated principal neighborhood mapping into an affine target open. Both
+endpoint/base-localization formulas and the cartesian normalization square
+are proved. U6c1/U6c2 must still construct covering families of these local
+descents and prove their compatibility and global uniqueness.
+
+`W16_RELATIVE_LOCAL_PROOF.lean` now compiles in full. Release U6c3
+`RelativePinchingLocalDescent` (cap 140), specializing U6c0 to B and to the
+product normalization of A. At every base prime it constructs an actual
+morphism on a saturated open containing that node. The node proof uses the
+prime-spectrum decomposition of a product to put both normalization branches
+inside the chosen target affine open. All coefficient rings are commutative
+rings, with no field or nonzero-is-unit assumption. This is local existence,
+not global arbitrary-target descent or preservation of the pinching pushout.
+
+Three further helper proofs are checked before release. U6c4
+`SurjectiveDominantEpi` (cap 100) proves that a quasi-compact, surjective,
+scheme-theoretically dominant morphism is an epimorphism, by injectivity on
+sections; it also derives schematic dominance of Spec of an injective ring
+map. Prototypes `W16_EPI_PROOF.lean` and `W16_SCHEMATIC_PROOF.lean` compile.
+U6c5 `RingEqualizerAwayEndpoint` (cap 70) proves the localized normalization
+is an isomorphism if the common endpoint value is zero: the localized endpoint
+ring is the zero ring, so the localized equalizer is the entire normalization.
+`W16_AWAY_ENDPOINT_PROOF.lean` compiles. This provides local descent away from
+the endpoint image without invoking a field-only smooth-locus calculation.
+Global gluing and the pulled-back polygon atlas remain separate obligations.
+
+U6c6 `SchematicDescentGluing` is released with cap 90 after the complete
+`W16_GLUE_PROOF.lean` compiled. Local descents on a supplied open cover glue
+uniquely for a quasi-compact surjective schematically dominant normalization:
+overlap projections are epimorphisms by U6c4, since open immersions are flat
+and schematic dominance is stable under flat base change. This uses flatness
+of the open immersion, not the false assertion that normalization is flat.
+
+U6c7 `RingEqualizerDescent` is released with cap 110 after the complete
+`W16_DESCENT_PROOF.lean` compiles. For a finite normalization of a ring equalizer
+whose common endpoint map is surjective, local descents at all base primes
+extend uniquely to the entire equalizer spectrum. A prime containing the
+endpoint kernel lies in the endpoint image; every other prime avoids a kernel
+element, so U6c5 applies. The proof constructs the full open cover and uses
+U6c6; it does not assume a global descent in a record or hypothesis. The
+pinching-chart specializations still need their own checked proof.
+
+U6c1/U6c2 are now released together as `RelativePinchingDescent` (cap 160).
+The complete `W16_GLOBAL_PINCHING_PROOF.lean` compiles: `oneGon_desc` and
+`node_desc` prove existence and uniqueness for arbitrary target schemes over
+any commutative coefficient ring. The intermediate `node_product_desc` works
+on Spec of the normalization product, and the two-branch statement follows
+via `coprodSpec`. The finite normalization instances and surjective endpoint
+maps are proved for the actual A and B, not supplied as new structure fields.
+
+U6d must be split before constructing the global base-changed pushout.
+The complete `W16_CHART_BASECHANGE_PROOF.lean` compiles. Release U6d1
+`PinchingChartBaseChange` (cap 130): identify the actual scheme pullbacks of
+Spec A(R) and Spec B(R) along Spec S → Spec R with Spec A(S) and Spec B(S),
+with both projection formulas. This works without flatness. Transporting the
+global normalization squares, node sections and whole pinching span through
+these comparisons remains required; a chart isomorphism alone is not U6.
+
+U6d2 `PolygonProductAtlas` is released with cap 200 after the full
+`W16_PRODUCT_ATLAS_PROOF.lean` compiles. It constructs actual open covers of
+the affine-parameter pullbacks, for every positive n. For n ≥ 2 the charts
+are Spec A(S); for n=1 they are Spec B(S) and Spec (S ⊗[K] K[T;T⁻¹]). Both
+projections are computed. The one-gon torus is deliberately retained in its
+canonical tensor coordinates. `pullbackCover` also gives the actual pulled-back
+cover for arbitrary scheme bases. These are covers of the specified polygon,
+not a replacement polygon defined by assuming its pinching property.
+The normalization comparison and endpoint compatibility on these covers are
+still needed to apply `RelativePinchingDescent` to the global cocone.
+
+## W16 implementation evidence and remaining global comparison
+
+Checked 2026-10-03 03:54 UTC, implementation head `93c1fbf9`, base `0b2d8d7b`.
+
+| Item | Module under `FLT/Mazur/` | Lines/cap | Commit |
+| --- | --- | --- | --- |
+| U6a | `OneGonScalarExtension` | 129/220 | `e87e6616` |
+| U6b1 | `RelativePinchingNeighborhoods` | 74/120 | `10712d7a` |
+| U6b2 | `RingEqualizerLocalization` | 85/150 | `27b657dc` |
+| U6c0 | `RingEqualizerLocalDescent` | 134/180 | `152da214` |
+| U6c3 | `RelativePinchingLocalDescent` | 93/140 | `646eeb2a` |
+| U6c4 | `SurjectiveDominantEpi` | 54/100 | `fe05e3cf` |
+| U6c5 | `RingEqualizerAwayEndpoint` | 41/70 | `fe05e3cf` |
+| U6c6 | `SchematicDescentGluing` | 49/90 | `30fcabbb` |
+| U6c7 | `RingEqualizerDescent` | 74/110 | `b723c15c` |
+| U6c1/U6c2 | `RelativePinchingDescent` | 90/160 | `626a135f` |
+| U6d1 | `PinchingChartBaseChange` | 92/130 | `6790bcc0` |
+| U6d2 | `PolygonProductAtlas` | 181/200 | `93c1fbf9` |
+
+All 12 modules passed their individual foreground commands:
+
+```
+LEAN_NUM_THREADS=2 lake build FLT.Mazur.MODULE
+LEAN_NUM_THREADS=2 lake exe runLinter FLT.Mazur.MODULE
+```
+
+`LEAN_NUM_THREADS=2 lake env lean GOAL_MAZUR_W16_AXIOM_AUDIT.lean`
+checked all 191 declarations originating in these modules, including generated
+helpers. `GOAL_MAZUR_W16_ALL_AXIOMS.txt` records only `propext`,
+`Classical.choice`, `Quot.sound`. No whole-library build or lint was run.
+All final module builds are warning-free. No proof placeholders, new axioms,
+or native_decide occur in the new code; comments are excluded from that scan.
+`GOAL_MAZUR_W16_VALIDATION.txt` records the caps, audit counts and complete
+sorted import inventory. `git diff --check 0b2d8d7b..HEAD` passes.
+Only new Lean modules, sorted `FLT.lean` imports and the authorized split doc
+are changed. All commits use krandder's requested name/email, with no AI credit.
+Nothing was pushed. Scratch proofs, audit logs and handoffs remain outside
+`FLT/` and `docs/`, untracked or ignored.
+
+The remaining U6 gap is the **global pinching pushout after base change**.
+The field-only affine-descent obstruction is closed; it is not the remaining
+blocker. The new covers alone do not prove preservation of the closed pinching
+pushout. This is unfinished mathematical formalization, not an approval or
+infrastructure blocker.
+
+`W16_U6_REMAINING_CONTRACT.lean` compiles without placeholders. Its output
+`GOAL_MAZUR_W16_U6_CONTRACT.txt` records a precise next one-gon comparison:
+
+```lean
+IsPullback
+  (Spec.map (CommRingCat.ofHom (PolygonNodePresentation.B (R := S)).val.toRingHom))
+  (affineNormalizationLift K S)
+  (PolygonProductAtlas.oneGonChartMap K S false)
+  (normalizationProduct K S)
+```
+
+The scratch definitions are actual pullback maps; `alpha_toBase` is proved and
+axiom-audited. The displayed IsPullback is only a checked proposition, not a
+proved theorem. The final arbitrary-scheme `Over.pullback g` IsPushout contract
+from W15 is also checked, not proved.
+
+Next proof obligations, to split and typecheck before assigning caps:
+
+1. Prove that cartesian one-gon normalization square in the new coordinates,
+   and the analogous cyclic two-branch square. Transport the H2 normalization
+   squares through U6d1's ring isomorphisms and the actual coproduct comparisons.
+2. Transport the global input cocone's endpoint relation to the relative
+   affine normalization charts. In particular, identify the one-gon alpha
+   chart's zero/one sections with the pulled-back zero/infinity sections;
+   do not treat this chart as invariant under universal scaling.
+3. Apply `RelativePinchingDescent` chartwise, glue with the actual product cover,
+   and prove the base-morphism identity plus both pinching cocone factorization
+   equations and uniqueness. Descend locally on a general base scheme and
+   transport from the specified polygon to an arbitrary supplied cocone.
+4. Only then construct U7's whole-polygon action and prove U8–U12: unit,
+   associativity, smooth restriction, base change and graph rotation.
+
+U6's pushout, U7–U12, H3–H5/H7–H15, full G1 moduli, G2 arithmetic and A1–A5
+remain unproved. No whole-polygon action, genus theorem or Mazur removal is
+claimed. Source checks still return `axiom Mazur_statement` at
+`FLT/Assumptions/Mazur.lean:103`, `mazur_W` at
+`FLT/Assembly/ExistingInputs.lean:28`, and `mazurTorsionExclusion` at
+`FermatsLastTheorem.lean:24`. This is source evidence, not a new compiled audit
+of `PNat.pow_add_pow_ne_pow`. The final existing-consumer rewire is also outside
+this wave's new-module-only authorization.
+
+## W17 checked normalization comparison
+
+The full `W17_ONEGON_PROOF.lean` prototype passed foreground `lake env lean`
+on 2026-10-03 before release. U6d3 `OneGonProductNormalization` has cap 160:
+use the polynomial and equalizer base-change isomorphisms to prove the coefficient
+normalization square cartesian by pullback cancellation, paste the original
+one-gon normalization square, then cancel the global normalization base-change
+square. Both projections and the cocone equation are proved. This establishes
+the precise W16 remaining normalization contract over arbitrary parameter rings.
+Endpoint compatibility, the cyclic analogue and global pushout remain separate.
+
+`W17_ENDPOINTS_PROOF.lean` also compiles in full before release. U6d4
+`OneGonProductEndpoints` has cap 130: compute both pullback projections of
+zero/one in the affine normalization, identify the actual constant endpoint
+sections, prove their normalization images equal the node section, and apply
+`RelativePinchingDescent.oneGon_desc`. This proves local descent from a global
+normalization map satisfying the endpoint relation, not the global pushout.
+
+`W17_NODE_COORDINATES_PROOF.lean` compiles before release. U6d5
+`NodeNormalizationBaseChange` has cap 140: tensoring the product of polynomial
+rings gives the product over the new base; both scheme pullback projections
+are computed. Pullback cancellation against the node chart base-change square
+proves the coefficient normalization square cartesian. The global cyclic
+normalization comparison will be a separate leaf.
+
+The full `W17_CYCLIC_PROOF.lean` prototype compiles. U6d6
+`CyclicProductNormalization` has cap 180: transport the existing normalization
+square through `coprodSpec`, then paste U6d5's coefficient square and cancel the
+normalization base-change square. This proves the actual cartesian comparison
+for each cyclic node chart, with both projections and the normalization equation.
+Endpoint transport and global descent remain separate obligations.
+
+`W17_CYCLIC_ENDPOINTS_PROOF.lean` compiles before release. U6d7
+`CyclicProductEndpoints` has cap 150: the origins of the product-polynomial
+branches are the pulled-back zero and adjacent infinity sections, checked by
+both projections and `coprodSpec`. The input endpoint equality supplies the
+hypothesis of `RelativePinchingDescent.node_product_desc`. Global gluing and
+transport from the specified pinching cocone are still required.
+
+`W17_DOMINANCE_PROOF.lean` compiles before release. U6d8
+`PolygonNormalizationDominant` has cap 130: prove the original polygons reduced
+from their actual chart covers, derive schematic dominance of the finite
+surjective normalization, and transport it through the flat base-change squares.
+The resulting normalization products are finite, surjective and epimorphisms.
+The coefficient algebra may be nonreduced; reducedness is used only over K.
+
+`W17_CYCLIC_DESCENT_PROOF.lean` compiles before release. U6d9
+`CyclicProductDescent` has cap 90: obtain node descents from U6d7, transport their
+factorizations through U6d6's actual cartesian squares, and apply schematic
+descent gluing over the product atlas using U6d8. Uniqueness and preservation
+of the parameter base map follow from the normalization epimorphism. This is
+global affine-parameter descent for n >= 2, still to be matched to the specified
+over-category cocone and extended to general base schemes.
+
+`W17_TORUS_PROOF.lean` compiles before release. U6d10 `OneGonProductTorus`
+has cap 100: the full tensor-Laurent chart has identity normalization, proved
+by pasting the original torus square and canceling the base-change square.
+Both projections and the normalization equation are proved; no invariant
+alpha-chart assumption or noncanonical coordinate replacement is used.
+
+`W17_ONEGON_DESCENT_PROOF.lean` compiles before release. U6d11
+`OneGonProductDescent` has cap 100: apply schematic descent gluing to the actual
+node/torus product cover, using U6d4 for the node and U6d10 for the torus.
+The result is global unique arbitrary-target descent for n=1, with the base
+map and node-section factorization. The specified over-category span and
+general scheme base still require comparison and locality arguments.
+
+## W17 validation and remaining exact-span descent
+
+Checked at 2026-10-03 04:30 UTC; base 38f8782e; implementation head 1f740224.
+Read-only checks: `GOAL_MAZUR_W17_VALIDATION.txt` and the axiom audit below.
+
+| Item | Module under `FLT/Mazur/` | Lines/cap | Commit |
+| --- | --- | --- | --- |
+| U6d3 | `OneGonProductNormalization` | 136/160 | `c68a7cfe` |
+| U6d4 | `OneGonProductEndpoints` | 101/130 | `c68a7cfe` |
+| U6d5 | `NodeNormalizationBaseChange` | 111/140 | `c68a7cfe` |
+| U6d6 | `CyclicProductNormalization` | 139/180 | `c68a7cfe` |
+| U6d7 | `CyclicProductEndpoints` | 110/150 | `c68a7cfe` |
+| U6d8 | `PolygonNormalizationDominant` | 96/130 | `1f740224` |
+| U6d9 | `CyclicProductDescent` | 47/90 | `1f740224` |
+| U6d10 | `OneGonProductTorus` | 73/100 | `1f740224` |
+| U6d11 | `OneGonProductDescent` | 59/100 | `1f740224` |
+
+The exact W16 one-gon normalization pullback contract is now proved by
+`OneGonProductNormalization.node_isPullback`, with zero/one endpoint transport.
+The cyclic node analogue is `CyclicProductNormalization.node_isPullback`, with
+origins mapped to zero and adjacent infinity on the normalization coproduct.
+Both actual affine-parameter polygons now have unique arbitrary-target global
+descent (`OneGonProductDescent.exists_desc`, `CyclicProductDescent.exists_desc`).
+The base-morphism equations are proved, as is the one-gon node factorization.
+These statements allow arbitrary commutative coefficient algebras, including
+nonreduced ones. The one-gon torus keeps its canonical tensor coordinates.
+
+## Validation
+
+Every module passed its foreground `LEAN_NUM_THREADS=2 lake build FLT.Mazur.MODULE`
+and its separate `LEAN_NUM_THREADS=2 lake exe runLinter FLT.Mazur.MODULE`.
+The final builds are warning-free; no whole-library build or lint was run.
+`LEAN_NUM_THREADS=2 lake env lean GOAL_MAZUR_W17_AXIOM_AUDIT.lean` checked all
+162 originating declarations, including generated helpers, with only
+`propext`, `Classical.choice`, `Quot.sound` (`GOAL_MAZUR_W17_ALL_AXIOMS.txt`).
+No placeholders, new axioms or native_decide occur in the nine modules.
+All leaves fit their caps, assigned after compiling the full proof prototypes.
+`git diff --check 38f8782e` passes; imports are sorted and complete.
+All commits use krandder / 5401138+krandder@users.noreply.github.com, without AI credit.
+
+## Exact remaining gap
+
+**U6 remains unproved:** the global descent results have not yet been transported
+to the exact `Over.pullback g` pinching span, or extended by locality to an
+arbitrary scheme base. This is unfinished proof work, not an approval or
+infrastructure blocker. The new global descent theorems do not assert
+preservation of a closed pinching pushout.
+
+`W17_U6_REMAINING_CONTRACT.lean` compiles without placeholders; its output is
+`GOAL_MAZUR_W17_U6_CONTRACT.txt`. It checks both the affine-parameter specified
+`IsPushout` and final arbitrary-base, arbitrary-cocone target. These two targets
+are checked propositions, not proved theorems. Two useful helper proofs there
+are checked and axiom-audited: `componentsIso` identifies the original scheme
+normalization coproduct with the specified over-category coproduct;
+`nodeRetraction_toNodes` proves the node leg split epic.
+
+Next obligations, without assigning unchecked caps:
+
+1. Transport `componentsIso` through base change and pullback symmetry;
+   `Over.pullback` uses `(original, parameter)` order, while the proved descent
+   modules use `(parameter, original)`. For n=1 use `coproductUniqueIso`.
+2. Pull the input cocone relation back to the actual endpoint sections in U6d4
+   and U6d7. Apply the global descent results and `desc_toBase` to obtain the
+   descended over-morphism and its normalization factorization. The split-epic
+   node leg lets its node factorization follow from the cocone equation.
+3. Establish locality in the parameter scheme via its affine open cover,
+   including the scalar algebra induced by an affine chart's map to `Spec K`.
+   Glue the actual over-morphisms and both factorizations; use normalization
+   epimorphisms for overlap equality and uniqueness.
+4. Transport the specified polygon result to an arbitrary supplied pushout
+   cocone using `PolygonPinching.polygonIso`. Only then close U6.
+5. Construct U7 and prove U8–U12; these have not been implemented in W17.
+
+No action or Mazur removal is claimed. Checked source evidence still shows
+`axiom Mazur_statement` in `FLT/Assumptions/Mazur.lean:103`, `mazur_W` in
+`FLT/Assembly/ExistingInputs.lean:28`, and `mazurTorsionExclusion` in
+`FermatsLastTheorem.lean:24`. This is source evidence, not a fresh compiled
+axiom audit of `PNat.pow_add_pow_ne_pow`. Full G1 moduli, G2 arithmetic and the
+remaining assembly work are also unproved; existing-consumer edits remain
+outside the new-module-only authorization.
+
+
+## W18 checked transport design
+
+`W18_TRANSPORT_PROOF.lean` and `W18_PUSHOUT_PROOF.lean` compile in full
+before release (2026-10-03). U6e1 `PinchingPullbackTransport` has cap 140:
+compare parameter-first products with `Over.pullback` using pullback symmetry
+and functorial isomorphisms; pull a cocone equation back to both branch sections;
+prove the node leg split epic after any base change. A general categorical
+criterion then reduces the pushout universal property to unique normalization
+descent. No preservation of a pinching pushout is assumed.
+
+`W18_CYCLIC_TRANSPORT_PROOF.lean` compiles in full before release.
+U6e2 `CyclicPinchingProduct` has cap 160. The coproduct comparison and
+pullback symmetry identify normalization and each endpoint. Apply W17 global
+descent to the transported cocone, use `desc_toBase` for the over-morphism,
+and invoke U6e1's split-leg criterion. The conclusion is the specified
+`Over.pullback` pushout for every coefficient algebra and every n ≥ 2.
+
+`W18_ONEGON_TRANSPORT_PROOF.lean` compiles in full before release.
+U6e3 `OneGonPinchingProduct` has cap 150. The singleton coproduct comparison
+identifies the normalization and its zero/infinity sections. W17 one-gon
+descent supplies the over-morphism, and U6e1 supplies the node factorization.
+This proves the specified affine-parameter pushout also for n = 1.
+
+`W18_AFFINE_PROOF.lean` compiles in full before release. U6e4
+`PolygonPinchingAffineBaseChange` has cap 130. Combine n = 1 and n ≥ 2 using
+the atlas isomorphisms, then use `polygonIso` for an arbitrary supplied cocone.
+For any map from `Spec S`, recover its algebra using `Spec.preimage`; for
+an arbitrary affine scheme, reflect the pushout along pullback by `isoSpec.inv`,
+an equivalence, and transport through `Over.pullbackComp`. This proves U6
+for every affine scheme base, including nonreduced coefficient rings.
+
+`W18_LOCALITY_PROOF.lean` compiles before release. U6e5
+`OverPullbackLocalPushout` has cap 110. The underlying map of a pulled-back
+over-morphism forms the expected cartesian square. Pull the base cover back
+to the target, use local pushout descents and that square for factorization,
+then invoke schematic descent gluing. Cancellation recovers the structure
+map and proves uniqueness. This is a generic locality lemma with geometric
+hypotheses, not an assumed preservation result for the pinching square.
+
+`W18_FLAT_PROOF.lean` compiles in full before release. U6e6
+`PolygonPinchingFlatBaseChange` has cap 120. The specified polygon is reduced;
+its finite surjective normalization is schematically dominant. The cartesian
+square from U6e5 preserves these properties under flat base change. On every
+member of the parameter's affine cover, U6e4 and `Over.pullbackComp` give the
+local pushout; U6e5 glues descent. U6e1 supplies the node factorization.
+Finally `polygonIso` transports to any supplied pinching cocone. This closes
+the exact U6 contract for arbitrary scheme bases with a flat structure map.
+
+`W18_TENSOR_PROOF.lean` compiles before release. U7a
+`PolygonPinchingTensor` has cap 80. Apply U6, postcompose the structure map
+back to `Spec K` (a colimit-preserving functor), and transport through pullback
+symmetry. The result is the exact pinching pushout after tensoring on the
+left by any flat parameter object, including the split smooth group.
+
+`W18_ENDPOINT_ACTION_PROOF.lean` compiles before release. U7b
+`ProjectiveLineActionEndpoints` has cap 110. Precompose with the inverse
+right unitor, identify the resulting product section by its two projections,
+and apply U5's zero/infinity formulas. These are the endpoint equations on
+the actual monoidal products needed to check U7's cocone.
+
+`W18_ACTION_PROOF.lean` compiles in full before release. U7c
+`PolygonUniversalAction` has cap 150. G4's product/coproduct colimit defines
+the normalization and node inputs. U7b fixes the endpoints; `rotateIndex_next`
+handles infinity on the successor component. U7a descends this cocone to
+`G ⊗ C ⟶ C`, with proved normalization, node and individual-component formulas.
+This closes U7's morphism construction, not its unit or associativity laws.
+
+`W18_SPECIALIZE_PROOF.lean` compiles in full before release. U8a
+`ProjectiveLineActionSpecialization` has cap 160. The product projections
+identify constant-unit specialization on each polynomial chart; U1's
+specialization identities give the existing projective-line scaling. Laurent
+generators identify the Hopf counit with evaluation at one. Comparing the
+monoidal product map with this specialization proves the projective-line
+unit law. This also supplies constant-unit formulas needed by U12.
+
+`W18_UNIT_PROOF.lean` compiles before release. U8b `PolygonActionUnit`
+has cap 80. The split node leg makes normalization epic. Precompose with
+the inverse left unitor and with normalization; on every component, U7's
+formula and U8a's projective-line unit law give the identity. This closes U8.
+
+### W18 validated outcome (2026-10-03 05:19 UTC)
+
+U6–U8 are proved; U9–U12 remain unfinished. Implementation commits:
+`5a495164` (U6) and `95ba78a7` (U7/U8).
+
+| Item | Module under `FLT/Mazur/` | Lines/cap | Commit |
+| --- | --- | --- | --- |
+| U6e1 | `PinchingPullbackTransport` | 95/140 | `5a495164` |
+| U6e2 | `CyclicPinchingProduct` | 125/160 | `5a495164` |
+| U6e3 | `OneGonPinchingProduct` | 113/150 | `5a495164` |
+| U6e4 | `PolygonPinchingAffineBaseChange` | 91/130 | `5a495164` |
+| U6e5 | `OverPullbackLocalPushout` | 69/110 | `5a495164` |
+| U6e6 | `PolygonPinchingFlatBaseChange` | 81/120 | `5a495164` |
+| U7a | `PolygonPinchingTensor` | 45/80 | `95ba78a7` |
+| U7b | `ProjectiveLineActionEndpoints` | 81/110 | `95ba78a7` |
+| U7c | `PolygonUniversalAction` | 105/150 | `95ba78a7` |
+| U8a | `ProjectiveLineActionSpecialization` | 130/160 | `95ba78a7` |
+| U8b | `PolygonActionUnit` | 50/80 | `95ba78a7` |
+
+Checks: foreground `LEAN_NUM_THREADS=2 lake build FLT.Mazur.MODULE` and
+`LEAN_NUM_THREADS=2 lake exe runLinter FLT.Mazur.MODULE` for each module
+separately; all final runs exit 0 without warnings.
+`GOAL_MAZUR_W18_AXIOM_AUDIT.lean` checks all 137 originating declarations,
+including generated helpers, using only the standard three axioms.
+`W18_REMAINING_CONTRACT.lean` checks the proved U6/U7/U8 declarations and
+the unproved universal projective-line associativity and torus equations.
+The latter are propositions, not theorems.
+
+The next proof gate is the two-parameter projective-line action law over the
+actual group product, followed by its torus multiplication formula. These
+are needed to descend polygon associativity and identify smooth restriction.
+Constant-unit specialization and the unit law do not discharge that gate.
+U11 base-change action laws and U12 translation/graph identification remain
+separate obligations. No caps for these remaining proofs are released here.
+The Mazur assumption and existing assembly consumers are unchanged.
+
+
+## W19 checked affine-point design
+
+`W19_POINTS_PROOF.lean` compiles in full (2026-10-03). U9a
+`ProjectiveLineActionPoints`, cap 160, evaluates both polynomial charts over
+any coefficient algebra. Pullback projections identify the evaluation map;
+polynomial generators give scaling by the unit and its inverse. Tensor
+projections and Laurent generators identify the actual Hopf multiplication
+with multiplication of units. The parameters need not be field-valued.
+This supplies chart computations, not yet universal associativity.
+
+`W19_ASSOC_PROOF.lean` compiles in full before release. U9b
+`ProjectiveLineActionAssociativity`, cap 180, compares both composites on
+the two polynomial charts over `K[T;T⁻¹] ⊗[K] K[T;T⁻¹]`. The tensor spectrum
+isomorphism and three projections identify the actual iterated product and
+associator. U9a computes the two sides as `(a*b)*x` and `a*(b*x)` (with
+inverse units on the second chart); cover extensionality proves `assoc_act`.
+
+`W19_POLYGON_PROOF.lean` compiles before release. U9c
+`PolygonActionAssociativity`, cap 100, tensors the pinching pushout and uses
+the split node leg to cancel the normalization. The product/coproduct
+comparison reduces the result to U9b and commuting cyclic rotations.
+This proves the exact polygon `assoc_act` contract, including n=1.
+
+`W19_TORUS_PROOF.lean` compiles before release. U10a
+`ProjectiveLineActionTorus`, cap 100, identifies the torus inclusion with
+the first affine-chart coordinate of a unit. U9a computes its image under
+universal scaling. The actual tensor spectrum comparison and Hopf
+multiplication prove `gm ◁ torusToComponent ≫ act = μ[gm] ≫ torusToComponent`.
+
+`W19_SMOOTH_PROOF.lean` compiles before release. U10b
+`PolygonActionSmooth`, cap 100, constructs the actual inclusion of the smooth
+open. U10a and the split-group component multiplication identify restriction
+of the polygon action. Transport through `smoothIso`, with `smoothGrpObj` and
+`smoothCommGrpObj` installed explicitly, proves `smooth_restriction`.
+
+`W19_BASECHANGE_PROOF.lean` compiles before release. U11
+`PolygonActionBaseChange`, cap 120, defines the action using the tensorator
+of the actual `Over.pullback g` functor. Generic lax-monoidal naturality and
+coherence transport each proved law. `unit_act` and `assoc_act` hold for any
+scheme morphism g, without a flatness assumption or pushout-preservation
+hypothesis. These are equations for the pulled-back action and group.
+
+`W19_TRANSLATION_PROOF.lean` compiles before release. U12a
+`PolygonActionTranslation`, cap 120, specializes the actual universal action
+at a unit and split component. U8a identifies projective-line specialization;
+U7's component formula and epic normalization prove `translation_eq`: the
+translation is exactly `polygonScaling ≫ polygonRotation`. Node and component
+formulas follow for every field and positive n. This alone does not identify
+the irreducible-component graph of a base-changed polygon.
+
+`W19_H3_PROOF.lean` compiles before release. H3
+`PolygonStructureInclusion`, cap 100, constructs the canonical morphism from
+the polygon structure module to the actual normalization direct image. Its
+map on each open is exactly `p.left.app`. Finite surjective normalization and
+the reduced atlas, transported through `polygonIso`, give schematic dominance
+and injectivity on every open; the sheaf morphism is monic. This does not yet
+prove exactness at the normalization direct image.
+
+`W19_H4_PROOF.lean` compiles before release. H4
+`PolygonBranchDifferenceSheaf`, cap 120, selects the zero and adjacent infinity
+branches over the actual node coproduct. The cocone equations put both maps
+over the polygon; direct-image composition gives restriction morphisms of
+module sheaves. Their difference is oriented zero minus adjacent infinity,
+and `inclusion_difference` proves the composite with H3 vanishes.
+No epimorphism, kernel equality, or H5 short exactness is assumed or claimed.
+
+`W19_IMAGES_PROOF.lean` compiles before release. U12b
+`PolygonTranslationImages`, cap 100, identifies specialization as an
+automorphism and proves exact set-image equations for normalization components
+and nodes, including an explicit one-component theorem. Surjectivity of the
+projective scaling automorphism removes its parameter from the component
+image. Identifying these images with geometric irreducible components after
+base change remains a separate U12 obligation.
+
+`W19_H7_PROOF.lean` compiles before release. Split H7 into vanishing and
+constant sections before claiming its full conclusion. H7a
+`ProjectiveLineCohomologyVanishing`, cap 140, lifts the two homogeneous indices
+to the field universe by an explicit graded renaming isomorphism. The existing
+zero-twist Čech calculation computes actual Ext cohomology; the zero-twist
+structure-module isomorphism and `standardIso` transport vanishing to the
+constructed line. `structure_positive` proves every positive degree vanishes;
+`h1_zero` has the exact `H1 (ProjectiveLine.toBase K)` type. H7b, constant
+sections and the base-linear H0 comparison, remains a separate obligation.
+
+`W19_H0_PROOF.lean` compiles before release. H7b
+`ProjectiveLineConstantSections`, cap 160, uses the actual polynomial
+restrictions of a global section and their Laurent-overlap equality. Positive
+coefficients vanish because inversion gives only nonpositive exponents; the
+constant coefficients agree. Cover extensionality and the specified base map
+prove `constant_sections`; `h0Equiv` identifies the actual H0 with K linearly,
+and `h0Equiv_constants` checks the canonical constants. Together H7a/H7b close H7.
+
+
+## W19 validated outcome (2026-10-03 06:20 UTC)
+
+Checked local implementation head `1b348890`, relative to base `4b52a77e`.
+Checks: `GOAL_MAZUR_W19_VALIDATION.txt`, `GOAL_MAZUR_W19_ALL_AXIOMS.txt`,
+and the compiled `W19_REMAINING_CONTRACT.lean`.
+
+**U9–U11, H3, H4 and H7 are proved. U12 is partial; H5 and the remaining
+genus/moduli/arithmetic work are unfinished.** All commits are local.
+
+| Item | Module under `FLT/Mazur/` | Lines/cap | Commit |
+| --- | --- | --- | --- |
+| U9a | `ProjectiveLineActionPoints` | 128/160 | `d8c0f475` |
+| U9b | `ProjectiveLineActionAssociativity` | 142/180 | `a1c9d444` |
+| U9c | `PolygonActionAssociativity` | 56/100 | `a1c9d444` |
+| U10a | `ProjectiveLineActionTorus` | 70/100 | `83cfc548` |
+| U10b | `PolygonActionSmooth` | 67/100 | `83cfc548` |
+| U11 | `PolygonActionBaseChange` | 72/120 | `83cfc548` |
+| U12a | `PolygonActionTranslation` | 82/120 | `5ae0d44a` |
+| U12b | `PolygonTranslationImages` | 59/100 | `5ae0d44a` |
+| H3 | `PolygonStructureInclusion` | 60/100 | `5ae0d44a` |
+| H4 | `PolygonBranchDifferenceSheaf` | 81/120 | `5ae0d44a` |
+| H7a | `ProjectiveLineCohomologyVanishing` | 102/140 | `1b348890` |
+| H7b | `ProjectiveLineConstantSections` | 123/160 | `1b348890` |
+
+U9 proves both exact universal associativity equations, comparing the two
+projective charts over the tensor of independent Laurent parameters. U10
+proves the torus multiplication formula and the restriction through the actual
+smooth-locus isomorphism. U11 proves unit and associativity for the actual
+pullback action along an arbitrary scheme morphism.
+
+U12a/b identify specialization with uniform scaling followed by rotation and
+prove its set-image formulas on normalization components and nodes, including
+n=1. These do **not** identify the geometric irreducible-component graph after
+field extension. H3/H4 construct the actual normalization and branch-difference
+module-sheaf maps, prove monicity of the first and vanishing of their composite.
+H7 computes actual H0 and H1 of the specified projective line, including the
+canonical scalar comparison and vanishing in every positive degree.
+
+Each module passed its foreground `LEAN_NUM_THREADS=2 lake build MODULE` and
+separate `LEAN_NUM_THREADS=2 lake exe runLinter MODULE`. Final runs have no
+warnings. The combined audit checks all 137 originating declarations, including
+generated helpers, with only `propext`, `Classical.choice`, `Quot.sound`.
+No whole-library build or lint was run. All caps are at most 240, each released
+after its complete proof prototype compiled; imports and scope checks pass.
+
+### Exact remaining proof gates
+
+1. **U12:** identify normalization images with geometric irreducible components
+   and nodes with graph edges; compare the pulled-back polygon/group coordinates
+   and translations by arbitrary extension-field points. Theorems for every
+   chosen base field do not alone prove this base-change identification.
+2. **H5:** compare H3/H4 on the cyclic-node and one-gon charts with the proved
+   normalization-ring equalizers and branch evaluations. Prove local
+   surjectivity and kernel equality, then the actual sheaf short exact sequence.
+   Monicity and a zero composite do not supply those claims.
+3. **H8/H9:** identify actual scalar cohomology of the normalization/node direct
+   images with `Fin n → K` in degree zero, with the specified restriction maps,
+   and prove degree-one vanishing. The typed remaining contracts compile.
+4. **H10–H15:** identify the long-exact-sequence map with cyclic incidence, then
+   prove polygon constants, properness, dimension, genus and geometric-fiber
+   comparison. H7 is projective-line cohomology, not polygon genus.
+
+These remaining gates have no newly released caps. They are unfinished proof
+work, not a permission or infrastructure blocker. Full G1 moduli, G2 arithmetic,
+and final assembly remain unproved. A source check still finds
+`axiom Mazur_statement` at `FLT/Assumptions/Mazur.lean:103`, `mazur_W` at
+`FLT/Assembly/ExistingInputs.lean:28`, and the final consumer at
+`FermatsLastTheorem.lean:24`. No fresh compiled consumer axiom audit or removal
+of the Mazur dependency is claimed.
