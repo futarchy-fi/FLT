@@ -1,6 +1,6 @@
 # E1c7: local reciprocity and the local invariant
 
-Source/API check: 2026-10-03, FLT base `25750cda`, Mathlib
+Source/API check: 2026-10-03, FLT base `b91dbdc1`, Mathlib
 `c32e1ec0d1eb5237ba344eee50162f45d5b0fc76`. This is a foundational program,
 not a claim that local class field theory fits in a 200-line adapter.
 Each proposed module below has a **200-line hard cap**. Blocked contracts
@@ -8,9 +8,69 @@ are design sketches, not elaborated declarations or certified size estimates;
 split again before implementation if a proof exceeds the cap. No missing
 theorem may become a structure field, parameter standing for E1c7, or axiom.
 
-Latest validated scope: **W32**. The full lifting goal remains unmet.
+Latest validated scope: **W33**. The full lifting goal remains unmet.
 
-## W32 proved scope
+## W33 proved scope
+
+Checked 2026-10-03T18:19:05.194888+00:00; base `b91dbdc1`; proof head `49be88b8`.
+Read-only evidence check: `python3 Scratch/LiftsW33/check.py` checks saved
+build/lint/axiom logs, source hashes, allowed edits, sorted imports and line caps.
+It does not rerun Lean. The full lifting goal remains unmet.
+
+**The original fundamental extension has Tate H⁰ = H¹ = 0 on every subgroup
+of its finite Galois group. Its Tate groups vanish in every integer degree on
+cyclic subgroups. The adjacent-vanishing criterion for arbitrary finite groups
+and the degree −2 cup equivalence remain unproved.**
+
+Seven new modules contain 705 lines and 37 named declarations. Every module
+has at most 158 lines. All declarations use only `propext`, `Classical.choice`
+and `Quot.sound`.
+
+- `SubgroupFixedFieldTower` constructs the fixed field inside the original
+  ambient field and its actual Galois equivalence with the given subgroup.
+  Restriction of scalars through this equivalence equals subgroup inclusion.
+- `TateGroupEquivalence` reindexes cochains and chains in opposite directions,
+  proves the norm square, and derives an isomorphism in every Tate degree.
+- `FiniteSubfieldDvr` constructs the canonical integer inclusion and proves
+  locality, DVR structure, completeness, finiteness and residue properties.
+  `RelativeFundamentalSubgroup` instantiates these constructions and transports
+  W32's field-wise theorem to the original module restricted to any subgroup.
+  No intermediate DVR, cohomological vanishing or cup equivalence is supplied
+  by the caller.
+- `TateNormVanishing` proves both directions of the norm-surjectivity criterion
+  in degree zero and the augmentation-exactness criterion in degree minus one.
+- `CyclicTateVanishing` proves the cyclic case of the adjacent-vanishing criterion
+  using periodic resolutions and the explicit norm splice.
+  `RelativeFundamentalCyclicSubgroup` applies it to the original local extension
+  on every cyclic subgroup, with no vanishing premise.
+
+### Next proofs after W33
+
+1. Prove the adjacent-vanishing criterion for arbitrary finite groups from
+   degrees zero and one on all subgroups. The cyclic case is now available;
+   the passage to noncyclic groups is still missing. A finite-solvable version
+   suffices here using the existing `localGalois_solvable` theorem. A
+   normal-subgroup descent or another proof must be constructed. The pinned Mathlib
+   `GroupCohomology/Basic.lean` still lists Hochschild–Serre as a TODO; its
+   cyclic resolutions alone do not provide that passage.
+2. Apply the general criterion to `relativeFundamentalExtension_subgroup_isZero`.
+   Prove the first boundary invertible and compose it with the existing
+   coinduced shift to obtain the actual input-degree −2 cup equivalence.
+3. Construct finite Artin maps with norm and tower compatibility, then prove
+   Kummer–Artin evaluation with positive Frobenius and the cup-order sign,
+   and derive E1d's annihilator statement. These remain unproved.
+
+Validation evidence: `Scratch/LiftsW33/*-{build,lint,axioms}.{log,exit}`
+and `Scratch/LiftsW33/{EndpointBuild,Integration,FinalAxioms}.{log,exit}`.
+Rerun individual modules with `python3 Scratch/LiftsW33/validate.py MODULE ...`;
+rerun endpoint/integration checks with `python3 Scratch/LiftsW33/final_checks.py`.
+Builds run in the foreground and lint runs one module at a time, with
+`LEAN_NUM_THREADS=2`. The endpoint audit still records `sorryAx` for the
+lifting theorem and both `sorryAx` and `Mazur_statement` for the FLT endpoint.
+
+## W32 proved scope (historical)
+
+The following is the W32 snapshot; its checks refer to its reported W32 head.
 
 Checked 2026-10-03T17:42:41.194685+00:00; base `25750cda`; proof head `98a7908a`.
 Read-only evidence check: `python3 Scratch/LiftsW32/check.py` checks the saved
