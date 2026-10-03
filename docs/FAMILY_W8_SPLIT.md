@@ -383,3 +383,18 @@ exceeding a cap. This is a dependency plan, not a completion claim.
 | C5v1 extremal equality | Derive coordinate scalings for the domination map, apply C5c2, and prove maximum = minimum below e < p−1. | Independent C5p4 presentations. |
 | C5v2 dévissage | Pass from simple field-action factors to the prescribed p-torsion model maps via finite-flat closures and quotients. | C5v1 and exactness of the actual models. |
 | C5v3 integral extension | Obtain integral coordinates and extend the prescribed generic map using the existing graph extension endpoint. | C5v2; discharges C5d/C5e. |
+
+W13 independent maximal-model refinement: C5m3 works for an arbitrary generic
+map to the second model, so C5m4's greatest image contains pullbacks from
+**every** target model. C5m5 therefore extends all generic maps out of the
+constructed maximum; the automorphism statement is a consequence. This
+stronger endpoint still uses only finite integral closure and graph closure.
+
+C5m6 is split before implementation into four ≤150-line leaves: C5m6a packages
+the Cartier dual of a general `FF R K` over a DVR with characteristic-zero
+fraction field; C5m6b transports generic Hopf maps to generic point maps and
+proves Cartier-dual/base-change compatibility; C5m6c proves the bidual
+comparisons and naturality; C5m6d dualizes C5m5 to construct the minimum and
+its prescribed-map extension property. The existing `FiniteFlatObject` dual
+is specialized to rational generic fields, so it cannot be silently substituted
+for this general DVR/fraction-field construction.
