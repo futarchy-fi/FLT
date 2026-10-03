@@ -1,5 +1,68 @@
 # FAMILY-W8 — finite-flat inertia spectrum and the family boundary
 
+## W18 implementation boundary — 2026-10-03
+
+D9c's closure placement, original-inertia fixedness, evaluation transport,
+and application to actual one-/two-cycle point equations are implemented.
+The new local scalar-weight endpoints also identify these ratios through
+one compatible residue-field embedding. **D10's original-factor assembly
+and D11–D14 are still open; this is not completion of GOAL-FAMILY-W18.**
+`Family.lean` is unchanged and its original admission remains.
+
+Checked at 2026-10-03 08:05 UTC by `python3 W18_FINAL_CHECKS.py`,
+12 individual foreground builds/lints, `W18_AXIOMS.lean` (31 declarations,
+only `propext`, `Classical.choice`, `Quot.sound`), and
+`W18_BOUNDARY_AXIOMS.lean` (the family still uses `sorryAx`).
+
+The twelve new modules are listed in `FAMILY_W18_DONE.md`; each whole file
+is at most 83 lines (cap 150). Reproduce validation with the per-module
+commands and `python3 W18_FINAL_CHECKS.py` recorded there. These audit
+artifacts are untracked outside FLT, as required by the brief.
+
+Concrete local endpoints:
+
+- `inertia_fixes_unramifiedStage`, `inertia_fixes_unramifiedUnion`, and
+  `inertia_fixes_fractionField` prove fixedness in the original embedding.
+  Residue uniqueness uses a power-basis generator and its unit derivative;
+  fixedness of the union follows by a subalgebra supremum argument.
+- `towerClosureEquiv` extends the prescribed fraction embedding.
+  `originalTowerInertia_evaluation` intertwines the actual coordinate
+  evaluations and original inertia without a fixedness hypothesis.
+- `fundamentalValue_one_original_character` and
+  `fundamentalValue_two_original_character` derive integral original-inertia
+  ratios from actual point equations, with common digits for all inertia.
+- `one_cycle_scalar_weight` and `two_cycle_scalar_weight` identify an actual
+  scalar action under `towerResidueMap`, with binary exponent `d` or `p*a+b`.
+  They still take the strict-Henselian scalar model, integral scalar lifts,
+  rank-one proof, and point-action comparison. They do not construct the
+  original representation's factors or assume a tame-character formula.
+
+### Next original-factor transport leaves (each cap 150)
+
+1. Change the algebraic closure in `GaloisModule.IsFiniteFlat` using
+   `AlgEquiv.autCongr` and postcomposition of Hopf-algebra points; retain the
+   prescribed point type and its scalar action. The canonical absolute-Galois
+   restriction map alone does not identify the prescribed closure embedding.
+2. Embed the actual finite descent integers as a stage of the original
+   unramified union. Use `inertiaDescentIntegers_irreducible`, finiteness and
+   separable residue to prove its image is an `UnramifiedStage`.
+3. Apply `IsFiniteFlat.baseChange_sameClosure` to the actual descended factor,
+   then the closure-change comparison. Keep the equality with the SAME
+   original inertia element; an existential matching inertia element from
+   `exists_inertia_action_map` is insufficient for a character formula.
+4. Construct the maximal scalar model with `exists_maximal_model_scalar_action`,
+   transport the derived rank-one finite scalar field and its point action,
+   and apply the proved local weights. No scalar-action comparison or
+   computed factor character may become a field in the model input.
+
+Only then assemble D11's prime-field factor charpolys and D12's spectrum.
+`LocalRoot.rootCharacterToRoots_surjective` supplies the root-character
+surjectivity ingredient; choose a niveau-two generator before taking its
+cyclotomic norm. D13 still needs a higher-niveau coefficient-field argument:
+restriction to the prime field multiplies dimension by the coefficient degree.
+D14 and the exact family target retain their existing separate obligations.
+
+
 ## W17 current gate map — 2026-10-03
 
 This section supersedes historical status below. Checked at base `25a54828`
@@ -1221,3 +1284,43 @@ comparison. Downstream spectrum/family integration is not completed here:
 `rg -n 'mem_isCompatible|sorry' FLT/GaloisRepresentation/HardlyRamified/Family.lean`
 still reports the original admission at line 68. No admission-free claim is
 made for that theorem or `PNat.pow_add_pow_ne_pow`.
+
+## W18 D9c implementation refinement
+
+Before implementation, split D9c into the following whole-file caps of 150:
+`RaynaudTowerClosure` extends the prescribed fraction embedding;
+`RaynaudUnramifiedHom` proves residue uniqueness for finite unramified DVR maps;
+`RaynaudTowerInertia` applies it to each actual stage and its directed union;
+`RaynaudTowerAction` conjugates original inertia through the prescribed closure
+equivalence; `RaynaudTowerPointCharacter` transports actual coordinate equations
+and applies the integral-coefficient root-character theorem. Further split
+evaluation/action comparisons if needed before exceeding any cap.
+
+D9c3 is further separated into `RaynaudTowerEvaluation` (equivariance of
+actual coordinate functions), `RaynaudTowerRootCharacter` (transport of
+integral-coefficient equations), `RaynaudTowerPointCharacter` (actual one-
+and two-cycle equations with common digits for all original inertia), and
+`RaynaudOriginalTowerAction` (the actual union action, deriving fixedness).
+The compatible-residue part of D10 is `RaynaudTowerResidue`: construct the
+integral embedding, prove locality, and induce the residue-field embedding.
+Each has a whole-file cap of 150 lines.
+
+Before scalar-character identification, split out `RaynaudScalarCoordinateRatio`
+(cap 150): if the actual transported automorphism sends a nonzero point to
+`u • x`, derive its coordinate ratio from the proved scalar-evaluation law,
+then identify its residue with the compatible scalar-field embedding. This
+is an evaluation lemma; constructing the original factor and its comparison
+is still required for the unconditional D10/D11 wrapper.
+
+`RaynaudScalarCharacterBridge` (cap 150) is the next D10 comparison leaf:
+reduce the actual scalar-coordinate ratio through `towerResidueMap` and
+identify it with the original integral ratio. It must not assume a tame
+character formula; its scalar-action equality is an explicit comparison
+input to be derived when assembling the original descended factor.
+
+`RaynaudTowerScalarWeights` (cap 150) combines the actual point root equations
+with the compatible scalar-ratio comparison. Its output computes every
+actual scalar action, with common binary digits and the original root
+character. The scalar action is identified on a nonzero point; it is not a
+supplied inertia-character formula. Original-factor construction/transport
+must precede using this local endpoint in the unconditional spectrum theorem.
