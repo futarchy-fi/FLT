@@ -551,3 +551,36 @@ cyclic coordinates and integral p-power coefficients.
 `W14_LOCAL_CHECK.lean` checks the extrema, rank-one and cyclic endpoints over
 a DVR with its actual fraction ring. Dual parameter identities and algebra
 generation are not consequences claimed by this endpoint.
+
+C5p3c's actual scalar comparison is `RaynaudCartierCharacterDuality` (≤150):
+prove the dual scalar laws, prove the augmentation pairing intertwines the
+actual dual action and the transpose action, and restrict it to a perfect
+pairing on each derived character summand. The multiplication/comultiplication
+coefficient identity remains a subsequent leaf.
+
+C5p3c coefficient refinement: `RaynaudPairedCharacterBases` (≤150) chooses
+the dual bases using the proved perfect pairing, proves normalization, and
+derives the dual power coefficients. `RaynaudCharacterParameterProduct`
+(≤150) expresses the product of the two actual coefficients as the iterated
+Cartier pairing. Evaluation of this universal pairing as p times a unit is
+still C5p3d/e, not a hypothesis of these leaves.
+
+W14 C5p3c checked 2026-10-03: all six pairing modules pass their foreground
+builds and individual lints. `W14_PAIRING_AXIOMS.lean` audits 23 declarations;
+only the three permitted axioms occur. `W14_PAIRING_CHECK.lean` instantiates
+the actual character pairing over a strict Henselian DVR with its fraction
+ring, deriving the required averaging inverse from the residue characteristic.
+The actual dual scalar action is proved to be the transpose under the
+augmentation pairing. Matching character summands therefore pair perfectly;
+the original derived bases determine actual normalized dual bases. Both
+power coefficients are constructed, and `FF.exists_character_parameter_product`
+identifies their product with evaluation of the dual generator's power on
+the original generator's power.
+
+**W14 remaining:** C5p3d/e must evaluate this pairing as the universal
+fundamental constant and prove it is p times a unit; the digit constants
+must also be units. C5p4 (monomial generation and presentation isomorphisms)
+and C5v1–C5v3 (extremal scalings, small-ramification comparison, dévissage and
+prescribed extension) remain unproved. The scalar addition-by-convolution
+law is available from C5m7 but has not yet been used to evaluate these
+structure constants. No parameter-unit identity is accepted as model data.
