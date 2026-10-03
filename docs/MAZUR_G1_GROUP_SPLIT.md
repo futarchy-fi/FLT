@@ -685,3 +685,11 @@ any commutative coefficient ring. The intermediate `node_product_desc` works
 on Spec of the normalization product, and the two-branch statement follows
 via `coprodSpec`. The finite normalization instances and surjective endpoint
 maps are proved for the actual A and B, not supplied as new structure fields.
+
+U6d must be split before constructing the global base-changed pushout.
+The complete `W16_CHART_BASECHANGE_PROOF.lean` compiles. Release U6d1
+`PinchingChartBaseChange` (cap 130): identify the actual scheme pullbacks of
+Spec A(R) and Spec B(R) along Spec S → Spec R with Spec A(S) and Spec B(S),
+with both projection formulas. This works without flatness. Transporting the
+global normalization squares, node sections and whole pinching span through
+these comparisons remains required; a chart isomorphism alone is not U6.
