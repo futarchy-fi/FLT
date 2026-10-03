@@ -1332,6 +1332,7 @@ public import FLT.Mazur.PinchingAffineDescent
 public import FLT.Mazur.PinchingChartBaseChange
 public import FLT.Mazur.PinchingNeighborhoods
 public import FLT.Mazur.PinchingPullbackTransport
+public import FLT.Mazur.PolygonActionUnit
 public import FLT.Mazur.PolygonAtlas
 public import FLT.Mazur.PolygonAtlasCocone
 public import FLT.Mazur.PolygonAtlasSmoothLocus
@@ -1358,10 +1359,12 @@ public import FLT.Mazur.PolygonNormalizationFinite
 public import FLT.Mazur.PolygonPinchingAffineBaseChange
 public import FLT.Mazur.PolygonPinchingDiagram
 public import FLT.Mazur.PolygonPinchingFlatBaseChange
+public import FLT.Mazur.PolygonPinchingTensor
 public import FLT.Mazur.PolygonProductAtlas
 public import FLT.Mazur.PolygonScalingNaturality
 public import FLT.Mazur.PolygonSmoothLocus
 public import FLT.Mazur.PolygonSplitGroup
+public import FLT.Mazur.PolygonUniversalAction
 public import FLT.Mazur.PolygonUniversalScaling
 public import FLT.Mazur.PrincipalSubmoduleCoordinates
 public import FLT.Mazur.PrincipalSubmoduleOverlap
@@ -1374,6 +1377,8 @@ public import FLT.Mazur.ProjectiveCoherentCharts
 public import FLT.Mazur.ProjectiveCoherentCohomology
 public import FLT.Mazur.ProjectiveGeneration
 public import FLT.Mazur.ProjectiveGenerationEventually
+public import FLT.Mazur.ProjectiveLineActionEndpoints
+public import FLT.Mazur.ProjectiveLineActionSpecialization
 public import FLT.Mazur.ProjectiveLineCharts
 public import FLT.Mazur.ProjectiveLineEndpoints
 public import FLT.Mazur.ProjectiveLineProductCharts

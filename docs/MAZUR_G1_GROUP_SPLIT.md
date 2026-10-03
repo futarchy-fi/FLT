@@ -987,3 +987,35 @@ member of the parameter's affine cover, U6e4 and `Over.pullbackComp` give the
 local pushout; U6e5 glues descent. U6e1 supplies the node factorization.
 Finally `polygonIso` transports to any supplied pinching cocone. This closes
 the exact U6 contract for arbitrary scheme bases with a flat structure map.
+
+`W18_TENSOR_PROOF.lean` compiles before release. U7a
+`PolygonPinchingTensor` has cap 80. Apply U6, postcompose the structure map
+back to `Spec K` (a colimit-preserving functor), and transport through pullback
+symmetry. The result is the exact pinching pushout after tensoring on the
+left by any flat parameter object, including the split smooth group.
+
+`W18_ENDPOINT_ACTION_PROOF.lean` compiles before release. U7b
+`ProjectiveLineActionEndpoints` has cap 110. Precompose with the inverse
+right unitor, identify the resulting product section by its two projections,
+and apply U5's zero/infinity formulas. These are the endpoint equations on
+the actual monoidal products needed to check U7's cocone.
+
+`W18_ACTION_PROOF.lean` compiles in full before release. U7c
+`PolygonUniversalAction` has cap 150. G4's product/coproduct colimit defines
+the normalization and node inputs. U7b fixes the endpoints; `rotateIndex_next`
+handles infinity on the successor component. U7a descends this cocone to
+`G ⊗ C ⟶ C`, with proved normalization, node and individual-component formulas.
+This closes U7's morphism construction, not its unit or associativity laws.
+
+`W18_SPECIALIZE_PROOF.lean` compiles in full before release. U8a
+`ProjectiveLineActionSpecialization` has cap 160. The product projections
+identify constant-unit specialization on each polynomial chart; U1's
+specialization identities give the existing projective-line scaling. Laurent
+generators identify the Hopf counit with evaluation at one. Comparing the
+monoidal product map with this specialization proves the projective-line
+unit law. This also supplies constant-unit formulas needed by U12.
+
+`W18_UNIT_PROOF.lean` compiles before release. U8b `PolygonActionUnit`
+has cap 80. The split node leg makes normalization epic. Precompose with
+the inverse left unitor and with normalization; on every component, U7's
+formula and U8a's projective-line unit law give the identity. This closes U8.
