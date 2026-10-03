@@ -1074,6 +1074,7 @@ public import FLT.KnownIn1980s.PGL2.Proofs
 public import FLT.KnownIn1980s.RepresentationTheory.OddAbsIrred
 public import FLT.KnownIn1980s.Ribet_Lemma.Defs
 public import FLT.KnownIn1980s.Ribet_Lemma.Proofs
+public import FLT.LocalClassFieldTheory.AbelianizationQuotientExact
 public import FLT.LocalClassFieldTheory.AbsoluteCorestriction
 public import FLT.LocalClassFieldTheory.AbsoluteFundamentalClass
 public import FLT.LocalClassFieldTheory.AbsoluteInvariant
@@ -1153,7 +1154,9 @@ public import FLT.LocalClassFieldTheory.FieldUnitInvariants
 public import FLT.LocalClassFieldTheory.FilteredComplexDescent
 public import FLT.LocalClassFieldTheory.FilteredHomologyDescent
 public import FLT.LocalClassFieldTheory.FiniteArtin
+public import FLT.LocalClassFieldTheory.FiniteArtinFieldwiseNorm
 public import FLT.LocalClassFieldTheory.FiniteArtinFixedFieldNorm
+public import FLT.LocalClassFieldTheory.FiniteArtinNormImage
 public import FLT.LocalClassFieldTheory.FiniteCharacteristicZeroCohomology
 public import FLT.LocalClassFieldTheory.FiniteContinuousComparison
 public import FLT.LocalClassFieldTheory.FiniteCyclicHerbrand
@@ -1164,6 +1167,7 @@ public import FLT.LocalClassFieldTheory.FiniteHomologyCard
 public import FLT.LocalClassFieldTheory.FiniteInflationCocycleDescent
 public import FLT.LocalClassFieldTheory.FiniteInflationRestrictionExact
 public import FLT.LocalClassFieldTheory.FiniteKernelCocycleCorrection
+public import FLT.LocalClassFieldTheory.FiniteQuotientArtin
 public import FLT.LocalClassFieldTheory.FiniteRelativeCocycleDescent
 public import FLT.LocalClassFieldTheory.FiniteRelativeSaturation
 public import FLT.LocalClassFieldTheory.FiniteRelativeSequence
