@@ -1742,3 +1742,28 @@ split `IteratedBaseChangeIrreducible` (equivariant cancellation of iterated
 base change) and `FiniteFlatCyclotomicAbsolute` (descend from each algebraic
 closure). `CyclotomicSmallPrimes` records p=2 separately and the exact p=3
 ordinary trace obstruction; no uniform p=3 conclusion is inferred. Caps 150.
+
+## W23 actual torsion tower and general-prime normalization split
+
+Implement in dependency order; each new complete Lean file has cap 150:
+
+1. `TorsionCoefficientMaps`: reduction and multiplication-induced inclusions
+   between the original coefficient quotients, with representative formulas.
+2. `TorsionTensorMaps`: tensor these maps with the original representation;
+   prove Galois equivariance and the reduction/inclusion multiplication identities.
+3. `RationalIntegralTransition`: specialize the proved local extension theorem
+   to the rational prime completion, deriving its ramification bound; retain
+   the exact prescribed map and composition.
+4. `TorsionModelTransitions`: choose the actual HR models, transport the maps
+   through their equivariant point comparisons, extend them and prove diagrams.
+5. `TorsionLevelExactness`: prove generic injectivity, surjectivity and exactness
+   from coefficient freeness; identify integral kernels/quotients using actual
+   flat models and rigidity, splitting again before exceeding the cap.
+6. `PadicOrderAlgebra`, `PadicOrderValuation`, `PadicOrderTopology`:
+   port normalization, DVR/residue facts and complete module topology from
+   three to arbitrary primes, retaining the original coefficient embedding.
+
+F03/F04 remain large missing theory: neither p-divisible object assembly nor
+p-adic comparison is supplied by these transition maps. F06 still requires
+reducible-residual family mathematics; F07–F15 remain as recorded in W22.
+A generic exact sequence alone does not assert integral faithful flatness.
