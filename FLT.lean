@@ -1034,7 +1034,9 @@ public import FLT.LocalClassFieldTheory.CochainOpenNormal
 public import FLT.LocalClassFieldTheory.CocycleDimensionShift
 public import FLT.LocalClassFieldTheory.CocycleRectangle
 public import FLT.LocalClassFieldTheory.CoinducedCoefficientSequence
+public import FLT.LocalClassFieldTheory.CoinducedInjectiveRestriction
 public import FLT.LocalClassFieldTheory.CoinducedNormExact
+public import FLT.LocalClassFieldTheory.CoinducedRestrictionComparison
 public import FLT.LocalClassFieldTheory.CoinducedShapiro
 public import FLT.LocalClassFieldTheory.CoinducedSubgroup
 public import FLT.LocalClassFieldTheory.CoinducedSubgroupShift
@@ -1246,6 +1248,9 @@ public import FLT.LocalClassFieldTheory.TransferRestrictionHomotopy
 public import FLT.LocalClassFieldTheory.TrivialH1Characters
 public import FLT.LocalClassFieldTheory.TrivialRestrictionNaturality
 public import FLT.LocalClassFieldTheory.TwoExtensionCochainCup
+public import FLT.LocalClassFieldTheory.TwoExtensionRepresentativeIso
+public import FLT.LocalClassFieldTheory.TwoExtensionRestriction
+public import FLT.LocalClassFieldTheory.TwoExtensionSubgroupVanishing
 public import FLT.LocalClassFieldTheory.UnitHerbrand
 public import FLT.LocalClassFieldTheory.UnitNormApproximation
 public import FLT.LocalClassFieldTheory.UnitNormSequence
