@@ -8,12 +8,142 @@ are design sketches, not elaborated declarations or certified size estimates;
 split again before implementation if a proof exceeds the cap. No missing
 theorem may become a structure field, parameter standing for E1c7, or axiom.
 
-Latest accepted scope: see the **W24 proved scope** section below and the
-W24 table in `LIFTS_GOAL_LEDGER.md`. W24 proves injection of W23's inflation
-map; surjectivity and the remaining ramified program are still unproved.
-Earlier wave sections record historical state.
+Latest accepted scope: **W25** below. Continuous H2 inflation-restriction
+exactness and ramified order scaling are proved; Frobenius scaling, the degree
+formula on Q/Z, and the remaining ramified program are not. Earlier wave sections
+record historical state.
 
-## W24 proved scope — 2026-10-03T09:27:54.417110+00:00
+## W25 proved scope
+
+Checked 2026-10-03T10:36:06.210425+00:00; branch `task/goal-lifts-w25`; base `cbd0c5ee`; proof head `89849ffd`.
+Read-only evidence check: `python3 Scratch/LiftsW25/check.py` (saved validation logs and source hashes).
+
+**R01b–R01e and I02a–I02b are proved. The full lifting goal remains unmet.**
+The new work proves continuous H2 image-kernel exactness, unramified base-change
+inclusion and restriction, and multiplication of union order by ramification.
+It does not prove the Frobenius/residue-degree factor or the degree formula on Q/Z.
+E1c7/E1d and the final lifting admission remain.
+
+28 new modules contain **1,979 Lean lines and 82 named declarations**.
+Every module is at most 200 lines. Commits are local; nothing pushed.
+
+## Proved scope
+
+1. R01b: extend the restricted bounding cochain and subtract its differential.
+   The mixed terms give an explicitly proved crossed homomorphism on the kernel.
+   Actual finite Galois Hilbert 90 supplies its principal witnesses, and a
+   normalized quotient section constructs a correction killing both mixed terms.
+2. R01c: the corrected cocycle is constant on quotient fibers and invariant-valued.
+   Descend its values to actual intermediate-field units. The theorem
+   `finiteInflationRestrictionExact` proves `Function.Exact` for
+   `galoisMultiplicativeInflation ... 2` and `galoisKernelRestriction ... 2`.
+   The unique preimage theorem proves independence of section and correction choices.
+3. R01d: a subgroup identity neighborhood contains an ambient open-normal trace.
+   Refine cochain fibers and coefficient supports simultaneously. The constructed
+   fixed field is finite Galois; both the ambient cocycle and the restricted bounding
+   cochain descend to it, the latter on the image of the original kernel.
+   `galoisTowerCochainDescent` proves the boundary equation at this same finite stage.
+4. R01e: use the Galois correspondence to apply the finite correction to that
+   normal image subgroup, then inflate its continuous correcting cochain.
+   Quotient topology proves continuity of the descended cocycle; no continuous
+   section of a profinite quotient is assumed. `continuousInflationRestrictionExact`
+   proves exactness on the actual continuous H2 modules for an arbitrary Galois tower.
+   Restriction here has the actual restriction kernel as its group; W24's
+   `galoisRestrictionKernelEquiv` identifies this group with Gal(L/E).
+5. I02a: residue-degree divisibility and Hensel lifting embed a degree-n unramified
+   stage into the degree-n stage of the new base. Normality gives literal containment
+   in the common separable overfield. This constructs `maximalUnramifiedBaseChange`
+   and `unramifiedBaseChangeRestriction`, including the commuting action equation
+   and Krull continuity.
+6. I02b: the adic valuation extension formula proves `discreteOrder_ramified_scale`
+   with the actual ideal ramification index. The base-change map preserves integral
+   units; its value on a base uniformizer determines the full union-order homomorphism.
+   `unramifiedUnionOrder_baseChange` proves multiplication by
+   `(maximalIdeal R).ramificationIdx' (maximalIdeal S)`.
+   `unramifiedBaseChangeCohomology` defines the actual continuous cohomology map,
+   and `unramifiedBaseChangeCoefficients_order` proves its coefficient order square.
+
+## Validation
+
+Every module M passed separately in the foreground with `LEAN_NUM_THREADS=2`:
+`lake build FLT.LocalClassFieldTheory.M`,
+`lake exe runLinter FLT.LocalClassFieldTheory.M`, and
+`lake env lean Scratch/LiftsW25/MAxioms.lean`.
+All 82 named declarations were audited, including definitions and local instances;
+every axiom set is contained in `{propext, Classical.choice, Quot.sound}`.
+Evidence: `Scratch/LiftsW25/M-{build,lint,axioms}.log`.
+No whole-library lint was run. Acceptance validation was sequential.
+
+Combined imports and endpoint checks passed:
+`LEAN_NUM_THREADS=2 lake env lean Scratch/LiftsW25/Integration.lean` and
+`LEAN_NUM_THREADS=2 lake env lean Scratch/LiftsW25/FinalAxioms.lean`.
+The `.log` and `.exit` files record their output and exit codes.
+The final audit still gives `[propext, sorryAx, Classical.choice, Quot.sound]`
+for `GaloisRepresentation.IsHardlyRamified.lifts` and
+`FLT.Assembly.hardlyRamifiedLifting`; `PNat.pow_add_pow_ne_pow` additionally
+uses `Mazur_statement`. New exactness and ramified-order endpoints are axiom-clean.
+
+`python3 Scratch/LiftsW25/check.py` checks saved evidence, source hashes, caps,
+audit coverage, allowed axioms, sorted imports, new-file-only Lean changes,
+allowed paths, and clean tracked state. It does not rerun Lean.
+Fresh per-module validation: `python3 Scratch/LiftsW25/validate.py M ...`.
+
+## Remaining work — I02c is the next leaf
+
+These are unproved contracts, each with a 200-line cap; split again when a
+proof exceeds the cap. They are not declarations or certified size estimates.
+No inflation isomorphism, exactness, open acyclic unit subgroup, relative
+order, or local invariant may be introduced as a substitute hypothesis.
+
+Milne III.2.2 uses III.1.8's **change-of-base restriction formula before the
+relative lower bound**. It cannot be deferred until after R06 in this proof
+route. W23's ordinary subgroup/order square is not that arithmetic formula.
+
+| Gate / next leaf | Required proof and dependency |
+|---|---|
+| I02c / FrobeniusRestrictionScale | Prove that arithmetic Frobenius restricts with residue degree f, hence multiplies the integral H2 character coordinate by f. |
+| I02d / UnramifiedInvariantRestriction | Combine the two proved squares and e*f = [L:K], obtaining the degree multiplication formula on Q/Z. |
+| R02a / RelativeRestrictionKernel | Identify the kernel of multiplication by [L:K] on Q/Z with the cyclic subgroup generated by 1/[L:K]. |
+| R02b / RelativeLowerBound | Use I02d, R01e, and the proved inflation injections to embed that subgroup in relative H2. The W24 absolute Q/Z embedding alone is not R02. |
+| R03b / NormalLatticeOpen | Prove the constructed lattice contains a sufficiently high maximal-ideal power and is open for the actual local-field topology. Its algebraic construction and additive acyclicity are proved in W24. |
+| R03c / LocalExpRadius | Establish an explicit positive convergence radius for exp using local valuations of n!, in characteristic zero. |
+| R03d / LocalLogConvergence | Prove log convergence on a suitable principal-unit neighborhood, with the needed uniform estimates. |
+| R03e / LocalExpLogInverse | Prove the two composition identities and the additive/multiplicative group comparison on the chosen neighborhoods. |
+| R03f / LocalExpEquivariance | Prove continuity and Galois equivariance of that comparison. |
+| R03g / AcyclicOpenUnits | Scale the constructed normal lattice by a base-field scalar into the convergence domain, transport it to an open unit subgroup, and transport its proved integral acyclicity. |
+| R04b / CyclicSixTermSequence | Construct the periodic six-term exact sequence from a short exact coefficient sequence, including the connecting maps and periodicity compatibility. |
+| R04c / HerbrandExact | Prove the alternating cardinal identity and multiplicativity when both periodic cohomology groups are finite. W24 proves the finite-module quotient is one. |
+| R04d / UnitHerbrand | Prove the quotient of integral units by the constructed open subgroup is finite, then apply the finite-module result and exact sequence. |
+| R04e / RamifiedFieldHerbrand | Use the normalized valuation sequence for a ramified cyclic extension and the trivial integer coefficient calculation to obtain h(Lˣ) = [L:K]. |
+| R05a / CyclicRelativeOrder | Combine the cyclic Herbrand result with finite Hilbert 90 to obtain the actual order of relative H2. |
+| R05b / LocalGaloisSolvable | Connect wild inertia p-group, tame cyclic, and residue cyclic quotients to solvability of the finite local Galois group. |
+| R05c / RelativeOrderInduction | Apply W25's proved R01 exactness and W24's generic exact-sequence cardinal bound along a proper normal subgroup; combine with R02. The arithmetic cardinal-bound induction remains uninstantiated. |
+| R06a / FiniteRelativeSaturation | Use the lower subgroup and the proved relative order to show every finite relative class lies in the unramified inflation image. |
+| R06b / UnramifiedInflationSurjective | Descend every absolute H2 class to a finite relative stage and apply saturation. Combine with W24's already proved injection. |
+| I03a / AbsoluteInvariant | Compose the inverse of the proved bijection with the existing unramified invariant. |
+| I03b / InvariantRestriction | Extend I02d by the proved finite descent and inflation squares. |
+| I03c / CorestrictionInvariant | Construct/compare corestriction and prove its invariant formula using restriction-corestriction and surjectivity. |
+| I03d / FundamentalClasses | Compare the inverse images of 1/[L:K] with relative classes and prove their restriction, inflation, and corestriction formulas. |
+
+Historical source/API evidence: `Scratch/LiftsW24/remaining-api-check.log`; Milne PDF pages
+112–114 (`Scratch/LiftsW15/MilneCFT.txt`). Mathlib's
+`Analysis/Normed/Algebra/Logarithm.lean`, lines 40–53, explicitly lists
+ultrametric convergence and exp/log inverse identities as TODOs. The generic
+exponential series and its conditional radius lemmas are not those proofs.
+
+Class formation and Kummer–Artin evaluation remain beyond these gates.
+Serre-weight evaluation and arbitrary-p Raynaud classification remain
+independently unproved; neither was dispatched or treated as an existing API.
+
+
+The next I02c implementation should split into finite integral Frobenius compatibility,
+compatibility at every constructed union stage, and the integral H2 character-coordinate
+formula. The restriction map and coefficient map now exist; the residue-degree formula
+does not. Prove it for these maps before claiming I02d or the relative lower bound.
+The existing same-base `arithmeticFrobenius_restrict` is not the ramified base-change proof.
+
+
+## W24 historical scope — 2026-10-03T09:27:54.417110+00:00
 
 Checked 2026-10-03T09:27:54.417110+00:00; branch `task/goal-lifts-w24`; base `f3b2fd00`.
 Read-only evidence check: `python3 Scratch/LiftsW24/check.py` (PASS).
@@ -85,60 +215,6 @@ Both combined Lean checks exited 0. The fresh final audit reports:
 - `PNat.pow_add_pow_ne_pow`:
   `[Mazur_statement, propext, sorryAx, Classical.choice, Quot.sound]`.
 - All audited new endpoints use only the three standard axioms.
-
-## Remaining work — source-matched R01–R06 split
-
-These are unproved contracts, each with a 200-line cap; split again when a
-proof exceeds the cap. They are not declarations or certified size estimates.
-No inflation isomorphism, exactness, open acyclic unit subgroup, relative
-order, or local invariant may be introduced as a substitute hypothesis.
-
-Milne III.2.2 uses III.1.8's **change-of-base restriction formula before the
-relative lower bound**. It cannot be deferred until after R06 in this proof
-route. W23's ordinary subgroup/order square is not that arithmetic formula.
-
-| Gate / next leaf | Required proof and dependency |
-|---|---|
-| R01b / FiniteKernelCocycleCorrection | At a finite Galois tower, subtract a restricted bounding cochain and construct the mixed-term correction using Hilbert 90. W24 proves injection, not this image-kernel statement. |
-| R01c / FiniteInflationRestrictionExact | Descend the corrected two-cocycle and prove image(inflation) = kernel(restriction), using a section of the finite quotient and proving section independence. |
-| R01d / ContinuousTowerRefinement | Descend a cocycle and its restricted boundary to compatible finite Galois stages; construct the needed common tower refinement. No continuous section of an arbitrary profinite quotient is assumed. |
-| R01e / ContinuousInflationRestrictionExact | Transport the finite image-kernel proof through the constructed refinement and cohomology colimit. |
-| I02a / UnramifiedBaseChange | Construct the inclusion of maximal unramified unions for a finite local base extension and its actual Galois restriction maps. |
-| I02b / RamifiedOrderScale | Prove that normalized order under this inclusion is multiplied by the ramification index e; this differs from W23's unramified same-order lemma. |
-| I02c / FrobeniusRestrictionScale | Prove that arithmetic Frobenius restricts with residue degree f, hence multiplies the integral H2 character coordinate by f. |
-| I02d / UnramifiedInvariantRestriction | Combine the two proved squares and e*f = [L:K], obtaining the degree multiplication formula on Q/Z. |
-| R02a / RelativeRestrictionKernel | Identify the kernel of multiplication by [L:K] on Q/Z with the cyclic subgroup generated by 1/[L:K]. |
-| R02b / RelativeLowerBound | Use I02d, R01e, and the proved inflation injections to embed that subgroup in relative H2. The W24 absolute Q/Z embedding alone is not R02. |
-| R03b / NormalLatticeOpen | Prove the constructed lattice contains a sufficiently high maximal-ideal power and is open for the actual local-field topology. Its algebraic construction and additive acyclicity are proved in W24. |
-| R03c / LocalExpRadius | Establish an explicit positive convergence radius for exp using local valuations of n!, in characteristic zero. |
-| R03d / LocalLogConvergence | Prove log convergence on a suitable principal-unit neighborhood, with the needed uniform estimates. |
-| R03e / LocalExpLogInverse | Prove the two composition identities and the additive/multiplicative group comparison on the chosen neighborhoods. |
-| R03f / LocalExpEquivariance | Prove continuity and Galois equivariance of that comparison. |
-| R03g / AcyclicOpenUnits | Scale the constructed normal lattice by a base-field scalar into the convergence domain, transport it to an open unit subgroup, and transport its proved integral acyclicity. |
-| R04b / CyclicSixTermSequence | Construct the periodic six-term exact sequence from a short exact coefficient sequence, including the connecting maps and periodicity compatibility. |
-| R04c / HerbrandExact | Prove the alternating cardinal identity and multiplicativity when both periodic cohomology groups are finite. W24 proves the finite-module quotient is one. |
-| R04d / UnitHerbrand | Prove the quotient of integral units by the constructed open subgroup is finite, then apply the finite-module result and exact sequence. |
-| R04e / RamifiedFieldHerbrand | Use the normalized valuation sequence for a ramified cyclic extension and the trivial integer coefficient calculation to obtain h(Lˣ) = [L:K]. |
-| R05a / CyclicRelativeOrder | Combine the cyclic Herbrand result with finite Hilbert 90 to obtain the actual order of relative H2. |
-| R05b / LocalGaloisSolvable | Connect wild inertia p-group, tame cyclic, and residue cyclic quotients to solvability of the finite local Galois group. |
-| R05c / RelativeOrderInduction | Apply actual R01 exactness and W24's generic exact-sequence cardinal bound along a proper normal subgroup; combine with R02. W24 does not instantiate this bound with an unproved arithmetic exact sequence. |
-| R06a / FiniteRelativeSaturation | Use the lower subgroup and the proved relative order to show every finite relative class lies in the unramified inflation image. |
-| R06b / UnramifiedInflationSurjective | Descend every absolute H2 class to a finite relative stage and apply saturation. Combine with W24's already proved injection. |
-| I03a / AbsoluteInvariant | Compose the inverse of the proved bijection with the existing unramified invariant. |
-| I03b / InvariantRestriction | Extend I02d by the proved finite descent and inflation squares. |
-| I03c / CorestrictionInvariant | Construct/compare corestriction and prove its invariant formula using restriction-corestriction and surjectivity. |
-| I03d / FundamentalClasses | Compare the inverse images of 1/[L:K] with relative classes and prove their restriction, inflation, and corestriction formulas. |
-
-Read-only evidence: `Scratch/LiftsW24/remaining-api-check.log`; Milne PDF pages
-112–114 (`Scratch/LiftsW15/MilneCFT.txt`). Mathlib's
-`Analysis/Normed/Algebra/Logarithm.lean`, lines 40–53, explicitly lists
-ultrametric convergence and exp/log inverse identities as TODOs. The generic
-exponential series and its conditional radius lemmas are not those proofs.
-
-Class formation and Kummer–Artin evaluation remain beyond these gates.
-Serre-weight evaluation and arbitrary-p Raynaud classification remain
-independently unproved; neither was dispatched or treated as an existing API.
-
 
 ## W23 proved scope — 2026-10-03T08:37:58.585982+00:00
 
