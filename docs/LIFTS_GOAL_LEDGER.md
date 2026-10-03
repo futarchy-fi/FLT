@@ -4,7 +4,61 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
-## W33 proved scope
+## W34 proved scope
+
+**W34 proves the adjacent-vanishing criterion for arbitrary finite groups,
+all-degree acyclicity of the local fundamental extension on every subgroup,
+and the actual fundamental cup isomorphism in every integer degree, including -2.
+It also constructs the finite Artin map and proves surjectivity and the exact
+field-norm kernel. Tower compatibility, Kummer–Artin evaluation, E1d and the
+full lifting goal remain open.**
+
+The finite-group proof uses normal norm-splice ascent/descent, induction through
+a cyclic quotient for solvable groups, two concrete coefficient sequences, and
+Sylow detection. It does not assume Hochschild–Serre, any cup isomorphism, or
+any evaluation. The first connecting map is proved invertible using the actual
+middle term's acyclicity and composed with the established coinduced shift.
+
+Checked 2026-10-03T19:14:13.835793+00:00; proof commits `b05ea241`, `58cdd300`;
+merged head `ac51bb34`. Read-only check: `python3 Scratch/LiftsW34/check.py`.
+It checks saved exit-zero logs, source hashes, allowed edits and line caps;
+it does not rerun Lean. Every new declaration was independently printed by
+`#print axioms` and uses only `propext`, `Classical.choice`, `Quot.sound`.
+
+19 new modules, 1413 lines, 76 named declarations; each module <=200 lines.
+Per-module foreground validation used `LEAN_NUM_THREADS=2` and, sequentially,
+`lake build MODULE`, `lake exe runLinter MODULE`, and `lake env lean AXIOM_FILE`.
+No library-wide lint was run. Logs and exit codes are in
+`Scratch/LiftsW34/MODULE-{build,lint,axioms}.{log,exit}`.
+Rerun with `python3 Scratch/LiftsW34/validate.py MODULE ...` (short module names).
+
+Fetched `origin/main` over HTTPS after SSH public-key authentication failed,
+merged it locally, and ran the required foreground `LEAN_NUM_THREADS=2 lake build FLT`.
+The root build, endpoint build, and rebuilt endpoint axiom audit passed:
+`Scratch/LiftsW34/{RootBuild,EndpointBuild,FinalAxioms}.{log,exit}`.
+No duplicate declaration required renaming.
+
+### Next proofs after W34
+
+1. Prove the finite Artin norm and tower diagrams on the actual constructed maps.
+   `finiteArtin_norm` proves that a norm from the defining extension is killed;
+   it does **not** prove compatibility between distinct extensions or base fields.
+   The next work is the needed restriction/corestriction and inflation comparison
+   through the Tate norm splice and the two-extension cup, then transport through
+   the inverse cup and scalar abelianization comparison.
+2. Prove positive-Frobenius normalization and Kummer–Artin evaluation, including
+   the cup-order sign. The map constructed here is the inverse-cup map; its
+   evaluation on a uniformizer has not been proved in this wave.
+3. Prove E1d's annihilator statement and continue the remaining lifting program.
+   No Serre-weight evaluation or arbitrary-p Raynaud classification API was assumed.
+
+The original overall goal remains unmet. The rebuilt audit still gives
+`sorryAx` for `GaloisRepresentation.IsHardlyRamified.lifts` and
+`FLT.Assembly.hardlyRamifiedLifting`; `PNat.pow_add_pow_ne_pow` still uses
+`Mazur_statement`, `sorryAx`, and the three standard axioms. These are remaining
+mathematical proofs, not an approval request or a claim that the full brief is done.
+
+## W33 historical scope
 
 Checked 2026-10-03T18:19:05.194888+00:00; base `b91dbdc1`; proof head `49be88b8`.
 Read-only evidence check: `python3 Scratch/LiftsW33/check.py` checks saved
