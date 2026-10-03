@@ -162,7 +162,9 @@ public import FLT.Deformations.RepresentationTheory.PadicIdealCofinal
 public import FLT.Deformations.RepresentationTheory.PadicIdealOpen
 public import FLT.Deformations.RepresentationTheory.PermutedSummandsTwist
 public import FLT.Deformations.RepresentationTheory.PrimePowerExact
+public import FLT.Deformations.RepresentationTheory.RankOneScalarCharacter
 public import FLT.Deformations.RepresentationTheory.RankTwoCharpoly
+public import FLT.Deformations.RepresentationTheory.ScalarActionCharpoly
 public import FLT.Deformations.RepresentationTheory.SelfTwistTrace
 public import FLT.Deformations.RepresentationTheory.SimpleScalarDegree
 public import FLT.Deformations.RepresentationTheory.StableLinePair
@@ -506,17 +508,20 @@ public import FLT.GroupScheme.EtaleSplitting
 public import FLT.GroupScheme.FaithfullyFlatQuotient
 public import FLT.GroupScheme.FaithfullyFlatRetraction
 public import FLT.GroupScheme.FiniteFlat
+public import FLT.GroupScheme.FiniteFlatClosureChange
 public import FLT.GroupScheme.FiniteFlatDifferentials
 public import FLT.GroupScheme.FiniteFlatExtensionKernelIso
 public import FLT.GroupScheme.FiniteFlatExtensionQuotientIso
 public import FLT.GroupScheme.FiniteFlatFiltration
 public import FLT.GroupScheme.FiniteFlatIso
 public import FLT.GroupScheme.FiniteFlatModelBaseChange
+public import FLT.GroupScheme.FiniteFlatPrescribedClosure
 public import FLT.GroupScheme.FiniteFlatRestrictedScalarExtension
 public import FLT.GroupScheme.FiniteFlatScalarExtension
 public import FLT.GroupScheme.FiniteFlatSectionDescent
 public import FLT.GroupScheme.FiniteFlatSubobject
 public import FLT.GroupScheme.FiniteFlatSubquotientBaseChange
+public import FLT.GroupScheme.FiniteFlatTowerClosure
 public import FLT.GroupScheme.FiniteFreeAdicComplete
 public import FLT.GroupScheme.FiniteHopfFreeness
 public import FLT.GroupScheme.FontaineConvolutionApproximation
@@ -566,6 +571,7 @@ public import FLT.GroupScheme.HopfDifferentials
 public import FLT.GroupScheme.HopfFrobenius
 public import FLT.GroupScheme.HopfPointCongruence
 public import FLT.GroupScheme.HopfPoints
+public import FLT.GroupScheme.HopfPointsClosureChange
 public import FLT.GroupScheme.HopfShear
 public import FLT.GroupScheme.HopfSpecialFiberFreeness
 public import FLT.GroupScheme.HopfTorsor
@@ -726,7 +732,9 @@ public import FLT.GroupScheme.RaynaudCyclicPolynomialSpanning
 public import FLT.GroupScheme.RaynaudCyclicPresentation
 public import FLT.GroupScheme.RaynaudDVRParameterValuation
 public import FLT.GroupScheme.RaynaudDescentActionAgreement
+public import FLT.GroupScheme.RaynaudDescentFraction
 public import FLT.GroupScheme.RaynaudDescentScalarFiltration
+public import FLT.GroupScheme.RaynaudDescentStage
 public import FLT.GroupScheme.RaynaudDiagonalizableExtension
 public import FLT.GroupScheme.RaynaudDigitBinomialUnit
 public import FLT.GroupScheme.RaynaudDigitMonomialGeneration
@@ -788,6 +796,7 @@ public import FLT.GroupScheme.RaynaudLocalPowerRigidity
 public import FLT.GroupScheme.RaynaudLocalPrescribedExtension
 public import FLT.GroupScheme.RaynaudMaximalExtension
 public import FLT.GroupScheme.RaynaudMaximalModel
+public import FLT.GroupScheme.RaynaudMaximalScalarModel
 public import FLT.GroupScheme.RaynaudMinimalModel
 public import FLT.GroupScheme.RaynaudMixedCharacterAverage
 public import FLT.GroupScheme.RaynaudMixedCharacterParameters
@@ -800,7 +809,11 @@ public import FLT.GroupScheme.RaynaudModelUpperBound
 public import FLT.GroupScheme.RaynaudNakayamaDescent
 public import FLT.GroupScheme.RaynaudOrderNineExtension
 public import FLT.GroupScheme.RaynaudOrderThreeFiltration
+public import FLT.GroupScheme.RaynaudOriginalFactorCharpoly
+public import FLT.GroupScheme.RaynaudOriginalFactorTransport
+public import FLT.GroupScheme.RaynaudOriginalOneWeight
 public import FLT.GroupScheme.RaynaudOriginalTowerAction
+public import FLT.GroupScheme.RaynaudOriginalTwoWeight
 public import FLT.GroupScheme.RaynaudPadicPowerExtension
 public import FLT.GroupScheme.RaynaudPadicPowerRigidity
 public import FLT.GroupScheme.RaynaudPairedCharacterBases
@@ -844,6 +857,9 @@ public import FLT.GroupScheme.RaynaudScalingUnits
 public import FLT.GroupScheme.RaynaudScalingValuation
 public import FLT.GroupScheme.RaynaudSimpleCommutingExtension
 public import FLT.GroupScheme.RaynaudSimpleEndomorphismField
+public import FLT.GroupScheme.RaynaudSimpleFactorCharacter
+public import FLT.GroupScheme.RaynaudSimpleFactorMaximal
+public import FLT.GroupScheme.RaynaudSimpleFactorTower
 public import FLT.GroupScheme.RaynaudSimpleRepresentationQuotient
 public import FLT.GroupScheme.RaynaudSimpleScalarField
 public import FLT.GroupScheme.RaynaudSpanningPresentation
@@ -1460,6 +1476,7 @@ public import FLT.Mazur.CuspCollision
 public import FLT.Mazur.CuspOrderNumerator
 public import FLT.Mazur.CyclicNodeChart
 public import FLT.Mazur.CyclicNormalizationExact
+public import FLT.Mazur.CyclicOverlapGraph
 public import FLT.Mazur.CyclicPinchingProduct
 public import FLT.Mazur.CyclicPinchingRotation
 public import FLT.Mazur.CyclicProductDescent
@@ -1467,6 +1484,7 @@ public import FLT.Mazur.CyclicProductEndpoints
 public import FLT.Mazur.CyclicProductNormalization
 public import FLT.Mazur.DRFiberClassification
 public import FLT.Mazur.DirectImageInjectives
+public import FLT.Mazur.DisjointStructureCohomology
 public import FLT.Mazur.DivisorInvertibleSheaf
 public import FLT.Mazur.DivisorLineBundle
 public import FLT.Mazur.DivisorLineBundleRestrict
@@ -1506,6 +1524,7 @@ public import FLT.Mazur.IncreasingCechComplex
 public import FLT.Mazur.InjectiveHorseshoe
 public import FLT.Mazur.IntegralBase
 public import FLT.Mazur.IntegralClosedSupport
+public import FLT.Mazur.IntegralDimension
 public import FLT.Mazur.LaurentUnitPoints
 public import FLT.Mazur.LocalizationCech
 public import FLT.Mazur.LocalizationCechCompare
@@ -1586,6 +1605,7 @@ public import FLT.Mazur.OneGonNormalizationFinite
 public import FLT.Mazur.OneGonNormalizationPullback
 public import FLT.Mazur.OneGonNormalizationTorus
 public import FLT.Mazur.OneGonOverlap
+public import FLT.Mazur.OneGonOverlapGraph
 public import FLT.Mazur.OneGonPinchingDescent
 public import FLT.Mazur.OneGonPinchingProduct
 public import FLT.Mazur.OneGonProductDescent
@@ -1594,7 +1614,9 @@ public import FLT.Mazur.OneGonProductNormalization
 public import FLT.Mazur.OneGonProductTorus
 public import FLT.Mazur.OneGonQuotient
 public import FLT.Mazur.OneGonScalarExtension
+public import FLT.Mazur.OneGonSeparated
 public import FLT.Mazur.OneGonTransition
+public import FLT.Mazur.OpenCoverDimension
 public import FLT.Mazur.OpenDirectImageCohomology
 public import FLT.Mazur.OpenDirectImageNaturality
 public import FLT.Mazur.OpenDirectImageRestriction
@@ -1622,6 +1644,8 @@ public import FLT.Mazur.PolygonAtlasSmoothLocus
 public import FLT.Mazur.PolygonBranchDifferenceSheaf
 public import FLT.Mazur.PolygonChartScaling
 public import FLT.Mazur.PolygonCoconeComparison
+public import FLT.Mazur.PolygonCohomologyIncidence
+public import FLT.Mazur.PolygonConstantSections
 public import FLT.Mazur.PolygonCyclicAtlas
 public import FLT.Mazur.PolygonCyclicCocone
 public import FLT.Mazur.PolygonCyclicDescent
@@ -1629,9 +1653,15 @@ public import FLT.Mazur.PolygonCyclicNormalizationFinite
 public import FLT.Mazur.PolygonCyclicNormalizationPullback
 public import FLT.Mazur.PolygonCyclicNormalizationRanges
 public import FLT.Mazur.PolygonCyclicPushout
+public import FLT.Mazur.PolygonCyclicSeparated
+public import FLT.Mazur.PolygonDimension
+public import FLT.Mazur.PolygonDirectImageCohomology
+public import FLT.Mazur.PolygonGenusOne
+public import FLT.Mazur.PolygonHZeroIncidence
 public import FLT.Mazur.PolygonIncidence
 public import FLT.Mazur.PolygonIncidenceQuotient
 public import FLT.Mazur.PolygonNodeBranches
+public import FLT.Mazur.PolygonNodeDimension
 public import FLT.Mazur.PolygonNodeEqualizer
 public import FLT.Mazur.PolygonNodeLocalization
 public import FLT.Mazur.PolygonNodePresentation
@@ -1643,6 +1673,7 @@ public import FLT.Mazur.PolygonNormalizationComplex
 public import FLT.Mazur.PolygonNormalizationDominant
 public import FLT.Mazur.PolygonNormalizationExact
 public import FLT.Mazur.PolygonNormalizationFinite
+public import FLT.Mazur.PolygonNormalizationHOne
 public import FLT.Mazur.PolygonNormalizationHZero
 public import FLT.Mazur.PolygonNormalizationTransport
 public import FLT.Mazur.PolygonPinchingAffineBaseChange
@@ -1650,7 +1681,9 @@ public import FLT.Mazur.PolygonPinchingDiagram
 public import FLT.Mazur.PolygonPinchingFlatBaseChange
 public import FLT.Mazur.PolygonPinchingTensor
 public import FLT.Mazur.PolygonProductAtlas
+public import FLT.Mazur.PolygonProper
 public import FLT.Mazur.PolygonScalingNaturality
+public import FLT.Mazur.PolygonSeparated
 public import FLT.Mazur.PolygonSmoothLocus
 public import FLT.Mazur.PolygonSplitGroup
 public import FLT.Mazur.PolygonStructureInclusion
@@ -1747,6 +1780,7 @@ public import FLT.Mazur.ScalarCohomology
 public import FLT.Mazur.SchematicDescentGluing
 public import FLT.Mazur.SchemeCohomologyIso
 public import FLT.Mazur.SchemeCohomologyIsoCocycles
+public import FLT.Mazur.SchemeCoproductCohomology
 public import FLT.Mazur.SchemeCoproductSections
 public import FLT.Mazur.SectionCharts
 public import FLT.Mazur.SectionDivisors
@@ -1756,6 +1790,7 @@ public import FLT.Mazur.SegreChartMaps
 public import FLT.Mazur.SegreChartQuotient
 public import FLT.Mazur.SegreClosedImmersion
 public import FLT.Mazur.SegreSchemeMorphism
+public import FLT.Mazur.SeparatedOpenCover
 public import FLT.Mazur.SmoothCurveDimension
 public import FLT.Mazur.SmoothDimension
 public import FLT.Mazur.SmoothDimensionBound
@@ -1768,6 +1803,7 @@ public import FLT.Mazur.StructureImageOpenChart
 public import FLT.Mazur.SurjectiveDominantEpi
 public import FLT.Mazur.TernaryOpenDescent
 public import FLT.Mazur.TildePrincipalOpen
+public import FLT.Mazur.UniversallyClosedFiniteCover
 public import FLT.MazurChapter.AdmissibleGroupSchemes
 public import FLT.MazurW
 public import FLT.MazurWOfPrimeTorsion

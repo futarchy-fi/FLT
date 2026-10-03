@@ -1,5 +1,49 @@
 # FAMILY-W8 — finite-flat inertia spectrum and the family boundary
 
+## W19 implemented boundary — 2026-10-03
+
+D10's original-factor transport, maximal scalar lifts, exact original-inertia
+comparison and binary local weights are implemented. D11 computes the actual
+one-/two-dimensional simple-factor prime-field charpolys, including the
+Frobenius-fixed quadratic case. **D12–D14 remain open; this is partial
+completion of GOAL-FAMILY-W19.** The original family admission is unchanged.
+
+Checked at 2026-10-03 09:18:42 UTC by `python3 W19_FINAL_CHECKS.py`:
+16 individual foreground builds and module-specific lints, 48 named declarations
+in `W19_AXIOMS.lean` (only `propext`, `Classical.choice`, `Quot.sound`), and
+`W19_BOUNDARY_AXIOMS.lean` (the family still uses `sorryAx`). The 16 whole files
+range from 44 to 110 lines, below the 150-line cap. The manifest and per-module
+commands are in `W19_MODULES.txt` and `W19_VALIDATE.sh`; audit artifacts and
+`FAMILY_W19_DONE.md` remain untracked outside `FLT/`, as required by the brief.
+
+Proved assembly endpoints:
+
+- `IsFiniteFlat.closureChange` and `baseChange_prescribedClosure` retain the
+  actual Hopf witness and original point/scalar types using postcomposition
+  and `AlgEquiv.autCongr`.
+- `inertiaDescentStage` places the actual descent integers in the original
+  union; `inertiaDescentFieldToTower_comp` proves the fraction lift recovers
+  the original field inclusion.
+- `exists_original_factor_tower_action` proves agreement with the same
+  original inertia element. `exists_simple_factor_character_model` derives
+  the scalar field, maximal lifts and character on both original and model points.
+- `exists_original_one_weight` and `exists_original_two_weight` construct
+  the scalar models and residue embedding before deriving common binary
+  exponents `d` and `p*a+b` for all original inertia elements.
+- `original_one_factor_charpoly` and `original_two_factor_charpoly` return
+  the original factor charpolys from these weights. Computed characters,
+  integral scalar models and charpoly factorizations are not inputs.
+
+The endpoints use the explicit union's fraction-field algebra and prescribed
+embedding, supplied by the existing tower construction, plus an original simple
+subquotient and chosen root. D12 must instantiate this infrastructure from the
+original representation, choose a niveau-two generator before its cyclotomic
+norm, combine factor charpolys and apply the determinant. D13 still requires
+higher niveaux for larger coefficient fields; D14 and the broader family
+statement-scope obligations remain separate. No full spectrum or admission-free
+family theorem is claimed.
+
+
 ## W18 implementation boundary — 2026-10-03
 
 D9c's closure placement, original-inertia fixedness, evaluation transport,
@@ -1324,3 +1368,46 @@ actual scalar action, with common binary digits and the original root
 character. The scalar action is identified on a nonzero point; it is not a
 supplied inertia-character formula. Original-factor construction/transport
 must precede using this local endpoint in the unconditional spectrum theorem.
+
+
+## W19 D10 implementation split (whole-file cap 150)
+
+The original-factor transport is split before implementation into:
+
+1. `HopfPointsClosureChange`: postcomposition of the actual convolution points
+   and conjugation equivariance.
+2. `FiniteFlatClosureChange`: retain the prescribed point group and coefficient
+   module while transporting the actual finite-flat Hopf witness.
+3. `RaynaudDescentStage`: prove the actual descent integers formally unramified,
+   embed their image as an original unramified stage, and map into its union.
+4. `FiniteFlatTowerClosure`: combine same-closure base change and the prescribed
+   closure equivalence, retaining the exact original automorphism action.
+5. Original descended factor comparison and maximal scalar model transport;
+   split further before any file exceeds 150 lines.
+
+D11/D12 and D13/D14 remain dependent on the original-factor assembly.
+
+The D10 leaves are further split before assembly (each whole-file cap 150):
+`RaynaudDescentFraction` extends the actual integral embedding;
+`FiniteFlatPrescribedClosure` handles an arbitrary prescribed closure comparison;
+`RaynaudOriginalFactorTransport` constructs tower actions on actual descended
+factors and proves agreement with each original inertia element;
+`RaynaudMaximalScalarModel` constructs maximal scalar lifts from finite flatness;
+`RaynaudSimpleFactorTower` assembles the derived simple scalar field and transport.
+
+`RaynaudSimpleFactorMaximal` (cap 150) combines the derived tower factor with
+its maximal scalar model. `RankOneScalarCharacter` (cap 150) derives the unit
+character of a commuting rank-one action for the local-weight assembly.
+
+`RaynaudSimpleFactorCharacter` (cap 150) derives the character and identifies
+its action on both the original factor and the maximal model.
+`RaynaudOriginalOneWeight` and `RaynaudOriginalTwoWeight` (each cap 150) apply
+the existing local weights after constructing all scalar-model inputs.
+
+D11's algebraic bridge is split into `ScalarActionCharpoly` (cap 150):
+transport the actual scalar operator to multiplication on its rank-one scalar
+field, then apply Cayley–Hamilton and Frobenius to the prime-field charpoly.
+
+`RaynaudOriginalFactorCharpoly` (cap 150) consumes the constructed original
+one-/two-factor weights and returns their actual prime-field charpolys,
+including the Frobenius-fixed quadratic case.
