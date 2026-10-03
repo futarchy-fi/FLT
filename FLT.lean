@@ -940,6 +940,8 @@ public import FLT.KnownIn1980s.PGL2.Proofs
 public import FLT.KnownIn1980s.RepresentationTheory.OddAbsIrred
 public import FLT.KnownIn1980s.Ribet_Lemma.Defs
 public import FLT.KnownIn1980s.Ribet_Lemma.Proofs
+public import FLT.LocalClassFieldTheory.AdicFractionFieldComplete
+public import FLT.LocalClassFieldTheory.AdicIntegerTopology
 public import FLT.LocalClassFieldTheory.CochainFiniteImage
 public import FLT.LocalClassFieldTheory.CochainHomologyClass
 public import FLT.LocalClassFieldTheory.CochainOpenNormal
