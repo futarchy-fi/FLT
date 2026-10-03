@@ -1,5 +1,30 @@
 # Mazur input to positive-natural FLT
 
+## W25 boundary subgroup — partial release, ampleness remains open
+
+Checked at 2026-10-03 12:22 UTC. The nine modules in
+[MAZUR_W25_SPLIT](MAZUR_W25_SPLIT.md) identify the actual marked divisor with
+`Spec (Fin n → K)` over its base, prove `FiniteLocallyFreeDegree` n, and
+identify the all-one divisor with the constant cyclic group as a closed
+subgroup of the smooth group. Cyclicity is equality of ideal sheaves, and
+arbitrary base change preserves both degree and the actual group comparison.
+This is a boundary example over a field and its base changes, not a general
+level moduli construction. Polygon comparison modules use universe zero;
+the generic coproduct and constant group constructions are universe-polymorphic.
+
+Evidence: foreground module builds and individual lints; all 198 originating
+declarations passed `collectAxioms` with only `propext`, `Classical.choice`,
+`Quot.sound`. The one-gon, two-gon in characteristic two, actual closed
+subgroup and arbitrary-base group/degree consumers compile. Reproduction
+artifacts are the untracked `GOAL_MAZUR_W25_*` logs, audit file,
+`W25_CONSUMER_CONTRACT.lean` and `W25_CHECK_SOURCE.py` in this worktree.
+
+**Still open:** the support/line-bundle ampleness comparison, generalized
+curves with level and their moduli presheaf, and all later G1/G2/arithmetic
+producers. The concrete next target and missing theory are recorded in the
+W25 split. `Mazur_statement` remains on the final theorem's source spine;
+no final-theorem build or new final axiom audit is claimed.
+
 ## W24 gate audit — polygon geometry is available, arithmetic is not
 
 W24 implementation checked at 2026-10-03 11:40 UTC, commit `88312e67`:
@@ -10,7 +35,8 @@ a finite flat relative Cartier divisor meeting every irreducible component.
 All four foreground builds and individual linters passed; all 20 originating
 declarations have only the three standard axioms, and concrete one-gon,
 two-gon/characteristic-two and arbitrary-base-change examples compiled.
-Rank, cyclic subgroup structure, ampleness and moduli remain unproved.
+At that audit, rank, cyclic subgroup structure, ampleness and moduli were unproved.
+The W25 release above supersedes the boundary rank/group status.
 The gate table below describes the audit at dispatch; these four leaves
 are its only new completed producers.
 
@@ -27,7 +53,7 @@ of those 35 modules. No upstream merge or push is authorized here.
 | --- | --- |
 | G5, U-series, H-series | Complete on this branch: actual smooth group/action, geometric rotations, properness, nodal completed stalks and geometric genus one. `PolygonGeometricGenus`, `PolygonGeometricTranslations`, `PolygonActionSmooth` are concrete endpoints. Merge W22/W23 before relying on them on main. |
 | G1 generalized curves | `ClassifiedGenusOneFamily` is an existing family predicate; the polygon-to-family constructor is ready. A general relative generalized-elliptic-curve object, compatible morphisms and pullback with group action/graph condition still need assembly. |
-| G1 level structures | Relative Cartier sums, section-sum finiteness and constant-degree transport exist. Ready next: construct smooth section divisors on actual polygons, with support meeting every component. Still missing: finite locally free subgroup of rank p, multiplication/inversion restriction, cyclicity as a divisor, compatibility with arbitrary base change, and comparison with line-bundle ampleness. A list of geometric points is not that subgroup. |
+| G1 level structures | W25 constructs the all-one boundary divisor as a finite locally free closed cyclic subgroup of rank n, with ideal-sheaf cyclicity and arbitrary-base compatibility. W24 proves its support meets every component. Still missing: the support/line-bundle ampleness comparison and general relative level data, descent and moduli assembly. |
 | G1 moduli / compactification | Missing: moduli presheaf/stack, coarse universal property and geometric-point theorem, compactified integral X0(p), cusp charts/descent and disjoint integral cusp sections. These are large theory gates. No universal family over the coarse curve may be assumed. |
 | G1 cusp specialization | Missing: actual Néron-model reduction of E and its rational point, integral extension of the moduli point, cusp orientation versus identity component (including nonsplit descent). Abstract sections and `CuspCollision` do not construct these. |
 | G2 quotient | Missing: modular Jacobian, auxiliary-level Hecke correspondences, Hecke algebra, Eisenstein ideal, quotient by images of the **completion kernel** gamma_I, integral Abel–Jacobi projection and nonzero cusp image. Quotient by I itself is the wrong construction. |

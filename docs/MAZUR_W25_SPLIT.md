@@ -49,3 +49,48 @@ not a list of rational points. `ConstantCyclicInclusion` (cap 160) will map
 these components by the identity of Gm into `PolygonSplitGroup`, proving
 compatibility with operations and a retraction. `PolygonCyclicDivisor`
 (cap 240) must then identify this source with the actual all-one divisor.
+
+`ConstantCyclicGenerator` (cap 80) proves the component sections are powers
+of the section indexed by 1. The source is the constant group scheme, and
+powers are taken in its actual group of sections. `PolygonCyclicDivisorOrbit`
+(cap 120) transports this identity to the divisor and rewrites the product
+of section kernels. `PolygonCyclicDivisorPullback` (cap 160) must compare the
+actual ideal comap with the pulled-back group, using the existing divisor
+pullback isomorphism and preservation of finite coproducts.
+
+`PolygonDivisorDegree` (cap 80) consumes the affine presentation to prove
+`FCurve.FiniteLocallyFreeDegree`, with Mathlib's `Scheme.Hom.finrank` at every
+base point. `ConstantDegree` then transports the result to the actual ideal
+comap under arbitrary scheme base change. Its full prototype compiled.
+
+## Remaining obstruction and next proof targets
+
+Checked at 2026-10-03 12:22 UTC by source inspection of
+`DivisorLineBundleSheaf`, `DivisorLineBundleRestrict`,
+`DivisorLineBundleSum`, `RelativeVeryAmpleLineBundle`,
+`RelativeSerreVanishing`, `FCurveContracts`, and Mathlib algebraic geometry.
+The actual positive divisor module `FCurve.divisorLineBundle` and its
+local rank-one proof already exist; the older C7 text must not be read as
+saying they still need construction. What is absent is the comparison from
+component support to positivity of the associated line bundle and thence
+to a very ample positive tensor power (Stacks 0B5X/0B5Y).
+
+The next target is a proof for the actual module, for example existence of
+`m > 0` with `RelativeVeryAmple C.hom
+(ModuleLineBundleTensorPullback.tensorPower (FCurve.divisorLineBundle I hI) m)`
+for the constructed boundary ideal. No such witness has been constructed in
+W25. A general support equivalence needs component restriction/degree and
+the curve ampleness theorem, not just the known nonempty intersections.
+These are further theory leaves, not a missing argument that can be supplied
+as a record field. Before implementation, split their checked prototypes
+into modules of at most 240 lines; no aggregate proof-size claim is made.
+
+After this comparison, G1-A1–A3 still need a relative generalized-curve
+object with actual smooth group/action and geometric graph condition,
+its morphisms and coherent pullback. G1-A4–A7 then need general finite locally
+free subgroup data, cyclic Cartier generators with descent, geometric
+ampleness, isomorphism classes and the actual pullback presheaf. W25 proves
+the boundary example, not those general constructors. The arbitrary-test-
+scheme ampleness upgrade also requires the source/descent care documented
+in `FCURVE_CONTRACTS` C7; the Noetherian-base theorem alone does not suffice.
+The later gate table in `MAZUR_GOAL_LEDGER` remains open. W25 is partial.
