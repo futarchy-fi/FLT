@@ -595,3 +595,93 @@ needed, in dependency order:
 `complexDeRham_prime_pow_notMem` proves the precise obstruction to replacing
 steps 1–4 by theta-adic convergence: every p^n is outside the first theta
 ideal. Thus the usual p-adic decay is a separate topology obligation.
+
+## W31 separatedness split (before implementation)
+
+Every new module is capped at 150 lines. First prove cancellation modulo
+powers of p from regularity modulo p, then use completeness of A_inf to
+show divisibility by each power of the cyclotomic generator is closed.
+No separatedness or closedness of a theta quotient is assumed.
+
+| Leaf | Concrete obligation | Prerequisite |
+|---|---|---|
+| AdicRegularCancellation | Cancel a regular element modulo every power of a nonzero parameter. | Domain and explicit mod-parameter regularity |
+| AdicPrincipalClosed | Lift arbitrarily accurate principal-ideal approximations to actual divisibility. | Cancellation and parameter-adic completeness |
+| ComplexCyclotomicRegular | Prove actual cyclotomic-generator regularity modulo p and its power versions. | W30 association; nonzero prime tilt |
+| ComplexThetaQuotientSeparated | Prove p-adic separatedness for every actual integral theta quotient. | Closed principal powers |
+| ComplexThetaQuotientTopology | Equip integral quotients with Hausdorff p-adic topologies and continuous transitions. | Proved separatedness |
+
+The p-inverted coefficient topology, exponent convergence, finite logarithm
+bounds, scalar law, invariants and comparison obligations remain subsequent
+leaves. Inverting p must not replace the coefficient topology by the
+indiscrete topology of the unit ideal.
+
+W31 topology refinement (before implementation, caps 150): add
+`AdicQuotientComplete`, proving that a surjective linear image of an
+adically precomplete module is precomplete using the existing completion
+map surjectivity theorem. Combine this with the proved theta-quotient
+separatedness to obtain completeness rather than postulating it.
+
+W31 p-inversion refinement (before implementation, caps 150):
+`AdicLocalizationBasis` constructs the ring-neighborhood basis p^k R inside
+R[1/p], using actual denominator clearing for multiplication continuity.
+`AdicLocalizationTopology` proves Hausdorffness and continuity from those
+lattices, with injectivity supplied by the proved absence of p-torsion.
+`ComplexThetaQuotientInvertP` instantiates this topology for the actual
+integral theta quotients. These leaves do not use the unit-ideal topology.
+
+W31 scalar refinement (before implementation, caps 150):
+`PadicScalarTopology` compares the standard Z_p topology with its p-adic
+ideal topology and proves continuity of integral homomorphisms into adic
+rings. `ComplexThetaQuotientScalars` constructs actual Z_p and Q_p maps
+into the new finite quotients and proves continuity using the open
+inclusion Z_p → Q_p, without any asserted scalar-law hypothesis.
+
+W31 compatibility refinement (before implementation, caps 150):
+`AdicLocalizationEmbedding` proves that the integral inclusion is an open
+embedding, so the localization induces exactly the original p-adic
+topology. This rules out a merely continuous but weaker coefficient
+topology and supplies the compatibility needed for later limit bounds.
+
+W31 finite-quotient identification (before implementation, cap 150):
+`ComplexThetaQuotientComparison` identifies (A_inf/(ker theta)^n)[1/p]
+with A_inf[1/p]/(ker theta[1/p])^n by computing the surjective localized
+quotient map and its kernel. This connects the coefficient construction
+to the actual finite levels used by the existing de Rham completion.
+
+W31 final topology transport leaf (before implementation, cap 150):
+`ComplexFiniteThetaTopology` transports the Hausdorff coefficient ring
+topology to the existing finite de Rham levels through the canonical
+identification and proves continuity of their existing quotient transitions.
+
+W31 scalar compatibility transport (before implementation, cap 150):
+`ComplexFiniteThetaScalars` proves that the continuous finite scalar maps
+are precisely the evaluations of the already constructed Q_p embedding
+into B_dR+, by integral representatives and fraction-ring uniqueness.
+
+W31 proof entry points: `complexTheta_ker_pow_isClosed` and
+`complexIntegralThetaQuotient_isAdicComplete` establish closedness and
+separated completeness from regular reduction of the actual cyclotomic
+generator. `complexThetaQuotientInvertP_isOpenEmbedding` identifies the
+integral coefficient topology inside the p-inversion. The canonical
+`complexFiniteThetaQuotientEquiv` identifies these p-inversions with the
+finite levels in the existing definition of B_dR+. Their quotient
+transitions are continuous, and `complexFiniteThetaQuotientScalars_eval`
+identifies the continuous Q_p maps with evaluations of the existing scalar
+embedding. These are algebraic and topological prerequisites, not the
+cyclotomic logarithm transformation law.
+
+Next implementation leaves (each cap 150, split before exceeding):
+
+1. Establish the p-adic bounds on the cyclotomic exponent differences in
+   each integral theta quotient. Relate the integer approximants to the
+   actual transformed epsilon via the compatible-root coordinate law;
+   scalar continuity alone is not exponent continuity.
+2. Prove the finite logarithm/power polynomial identity, then the required
+   denominator and limit bounds in the coefficient topology at each level.
+3. Use Hausdorff uniqueness at every finite level and separatedness of the
+   theta inverse limit to prove sigma(t) = chi(sigma)t. The new coefficient
+   topology must not be replaced by the theta-adic topology on B_dR+.
+4. Continue the period-field localization, graded cyclotomic twists,
+   fixed-field theorem, and comparison-contract split above. The general
+   family admission cannot be removed just from quotient separatedness.
