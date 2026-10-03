@@ -4,7 +4,116 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
-## W24 acceptance — 2026-10-03T09:27:54.417110+00:00
+## W25 acceptance
+
+Checked 2026-10-03T10:36:06.210425+00:00; branch `task/goal-lifts-w25`; base `cbd0c5ee`; proof head `89849ffd`.
+Read-only evidence check: `python3 Scratch/LiftsW25/check.py` (saved validation logs and source hashes).
+
+**R01b–R01e and I02a–I02b are proved. The full lifting goal remains unmet.**
+The new work proves continuous H2 image-kernel exactness, unramified base-change
+inclusion and restriction, and multiplication of union order by ramification.
+It does not prove the Frobenius/residue-degree factor or the degree formula on Q/Z.
+E1c7/E1d and the final lifting admission remain.
+
+28 new modules contain **1,979 Lean lines and 82 named declarations**.
+Every module is at most 200 lines. Commits are local; nothing pushed.
+
+## Proved scope
+
+1. R01b: extend the restricted bounding cochain and subtract its differential.
+   The mixed terms give an explicitly proved crossed homomorphism on the kernel.
+   Actual finite Galois Hilbert 90 supplies its principal witnesses, and a
+   normalized quotient section constructs a correction killing both mixed terms.
+2. R01c: the corrected cocycle is constant on quotient fibers and invariant-valued.
+   Descend its values to actual intermediate-field units. The theorem
+   `finiteInflationRestrictionExact` proves `Function.Exact` for
+   `galoisMultiplicativeInflation ... 2` and `galoisKernelRestriction ... 2`.
+   The unique preimage theorem proves independence of section and correction choices.
+3. R01d: a subgroup identity neighborhood contains an ambient open-normal trace.
+   Refine cochain fibers and coefficient supports simultaneously. The constructed
+   fixed field is finite Galois; both the ambient cocycle and the restricted bounding
+   cochain descend to it, the latter on the image of the original kernel.
+   `galoisTowerCochainDescent` proves the boundary equation at this same finite stage.
+4. R01e: use the Galois correspondence to apply the finite correction to that
+   normal image subgroup, then inflate its continuous correcting cochain.
+   Quotient topology proves continuity of the descended cocycle; no continuous
+   section of a profinite quotient is assumed. `continuousInflationRestrictionExact`
+   proves exactness on the actual continuous H2 modules for an arbitrary Galois tower.
+   Restriction here has the actual restriction kernel as its group; W24's
+   `galoisRestrictionKernelEquiv` identifies this group with Gal(L/E).
+5. I02a: residue-degree divisibility and Hensel lifting embed a degree-n unramified
+   stage into the degree-n stage of the new base. Normality gives literal containment
+   in the common separable overfield. This constructs `maximalUnramifiedBaseChange`
+   and `unramifiedBaseChangeRestriction`, including the commuting action equation
+   and Krull continuity.
+6. I02b: the adic valuation extension formula proves `discreteOrder_ramified_scale`
+   with the actual ideal ramification index. The base-change map preserves integral
+   units; its value on a base uniformizer determines the full union-order homomorphism.
+   `unramifiedUnionOrder_baseChange` proves multiplication by
+   `(maximalIdeal R).ramificationIdx' (maximalIdeal S)`.
+   `unramifiedBaseChangeCohomology` defines the actual continuous cohomology map,
+   and `unramifiedBaseChangeCoefficients_order` proves its coefficient order square.
+
+| Item | Module under FLT.LocalClassFieldTheory | Lines/cap | Commit |
+|---|---|---|---|
+| R01b | KernelCocycleNormalization | 74/200 | `3dcbf174` |
+| R01b | KernelMixedCocycle | 69/200 | `3dcbf174` |
+| R01b | KernelSectionCorrection | 127/200 | `3dcbf174` |
+| R01b | FiniteKernelCocycleCorrection | 77/200 | `3dcbf174` |
+| R01c | KernelCocycleDescent | 96/200 | `facf4fa2` |
+| R01c | IntegralTwoClassEquality | 64/200 | `facf4fa2` |
+| R01c | FiniteInflationCocycleDescent | 51/200 | `facf4fa2` |
+| R01c | GaloisKernelRestriction | 71/200 | `facf4fa2` |
+| R01c | FiniteInflationRestrictionExact | 100/200 | `facf4fa2` |
+| R01d | ContinuousTowerRefinement | 65/200 | `74cf5bd5` |
+| R01d | RestrictedCochainDescent | 91/200 | `74cf5bd5` |
+| R01d | TowerRefinementFibers | 53/200 | `74cf5bd5` |
+| R01d | GaloisTowerCochainDescent | 82/200 | `74cf5bd5` |
+| R01e | FiniteSubgroupCocycleCorrection | 53/200 | `74cf5bd5` |
+| R01e | ContinuousKernelCocycleCorrection | 81/200 | `74cf5bd5` |
+| R01e | ContinuousCocycleQuotient | 48/200 | `74cf5bd5` |
+| R01e | ContinuousInflationCocycleDescent | 63/200 | `74cf5bd5` |
+| R01e | ContinuousInflationRestrictionExact | 76/200 | `74cf5bd5` |
+| I02a | UnramifiedBaseChangeEmbedding | 64/200 | `11d99762` |
+| I02a | UnramifiedBaseChange | 78/200 | `11d99762` |
+| I02a | GaloisHomContinuity | 58/200 | `11d99762` |
+| I02a | UnramifiedBaseChangeRestriction | 71/200 | `11d99762` |
+| I02b | RamifiedOrderScale | 47/200 | `89849ffd` |
+| I02b | OrderHomScale | 39/200 | `89849ffd` |
+| I02b | UnramifiedUnionBaseOrder | 49/200 | `89849ffd` |
+| I02b | UnramifiedBaseChangeIntegral | 72/200 | `89849ffd` |
+| I02b | UnramifiedBaseChangeOrder | 76/200 | `89849ffd` |
+| I02b | UnramifiedBaseChangeCohomology | 84/200 | `89849ffd` |
+
+## Validation
+
+Every module M passed separately in the foreground with `LEAN_NUM_THREADS=2`:
+`lake build FLT.LocalClassFieldTheory.M`,
+`lake exe runLinter FLT.LocalClassFieldTheory.M`, and
+`lake env lean Scratch/LiftsW25/MAxioms.lean`.
+All 82 named declarations were audited, including definitions and local instances;
+every axiom set is contained in `{propext, Classical.choice, Quot.sound}`.
+Evidence: `Scratch/LiftsW25/M-{build,lint,axioms}.log`.
+No whole-library lint was run. Acceptance validation was sequential.
+
+Combined imports and endpoint checks passed:
+`LEAN_NUM_THREADS=2 lake env lean Scratch/LiftsW25/Integration.lean` and
+`LEAN_NUM_THREADS=2 lake env lean Scratch/LiftsW25/FinalAxioms.lean`.
+The `.log` and `.exit` files record their output and exit codes.
+The final audit still gives `[propext, sorryAx, Classical.choice, Quot.sound]`
+for `GaloisRepresentation.IsHardlyRamified.lifts` and
+`FLT.Assembly.hardlyRamifiedLifting`; `PNat.pow_add_pow_ne_pow` additionally
+uses `Mazur_statement`. New exactness and ramified-order endpoints are axiom-clean.
+
+`python3 Scratch/LiftsW25/check.py` checks saved evidence, source hashes, caps,
+audit coverage, allowed axioms, sorted imports, new-file-only Lean changes,
+allowed paths, and clean tracked state. It does not rerun Lean.
+Fresh per-module validation: `python3 Scratch/LiftsW25/validate.py M ...`.
+
+Remaining work starts at I02c; see the current source-matched table in
+`LOCAL_CFT_FOUNDATIONS.md`. W25 does not remove the final lifting admission.
+
+## W24 historical acceptance — 2026-10-03T09:27:54.417110+00:00
 
 Checked 2026-10-03T09:27:54.417110+00:00; branch `task/goal-lifts-w24`; base `f3b2fd00`.
 Read-only evidence check: `python3 Scratch/LiftsW24/check.py` (PASS).
