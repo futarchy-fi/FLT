@@ -631,3 +631,12 @@ f(s)^k; the proof multiplies the numerator by s^k and increases its denominator
 exponent. It handles zero divisors and arbitrary commutative rings.
 Specializing to the node and one-gon, and constructing/gluing scheme morphisms,
 remain separate leaves. These two results alone do not establish U6c or U6d.
+
+U6c is split further before implementation. The complete
+`W16_LOCAL_DESCENT_PROOF.lean` prototype compiles. Release U6c0
+`RingEqualizerLocalDescent` (cap 180): the localized equalizer spectrum has
+unique descent to an affine target; for arbitrary targets it descends on any
+saturated principal neighborhood mapping into an affine target open. Both
+endpoint/base-localization formulas and the cartesian normalization square
+are proved. U6c1/U6c2 must still construct covering families of these local
+descents and prove their compatibility and global uniqueness.
