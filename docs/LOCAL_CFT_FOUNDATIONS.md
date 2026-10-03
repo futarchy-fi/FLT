@@ -355,3 +355,64 @@ quotient using surjectivity and the proved fiber equality: ready
 `DescendedCochain` (cap 200). The quotient is finite and discrete. These are
 cochain results; comparison with the continuous complex's differentials,
 cocycles, common-stage boundaries and colimits remains separate work.
+
+
+### W16 proved boundary and next missing bridges
+
+Checked 2026-10-03 03:19 UTC by the per-module builds/lints/axiom audits
+and `Scratch/LiftsW16/check.py`; exact modules, caps and commits are recorded
+in the W16 acceptance section of LIFTS_GOAL_LEDGER.md. The W15 BLOCKED table
+is historical: the integral U01a–d, U02a, U03a, N02a, N03a, and the cochain
+parts C04a–c above are now proved. U01's valued-field specialization and the
+remaining cohomology statements are not implied by those completions.
+
+The equivalence takes actual DVRs R,S with fraction fields K,L, an
+`IsIntegralClosure S R L`, a finite Galois L/K, a local R→S map and
+`Algebra.FormallyUnramified R S`. It derives finite/free R-module structure,
+separable residue, and Galois invariance. These are standard arithmetic
+hypotheses on an extension, not assumed conclusions about reduction.
+There is no valuation-topology hypothesis in this integral theorem, and no
+claim that two independent local-field valuations are automatically compatible.
+
+The first unresolved U-series bridge is now **realization and normality**,
+not residue-action surjectivity. Refine the following before coding; each
+proposed leaf retains cap 200 and is not certified ready by this document:
+
+1. U03b1: specialize `exists_unramified_extension_of_residueField` to a
+   finite residue extension; derive `IsIntegralClosure`, formal
+   unramifiedness, and Henselianity/completeness of its constructed DVR.
+   Existing finite-extension and `RaynaudStageHenselian` lemmas are candidates;
+   their hypotheses must be matched to the constructed ring, not assumed.
+2. U03b2: in that Henselian DVR, lift all distinct roots of the residue
+   polynomial and prove that the lifted defining polynomial splits.
+   Hensel existence and uniqueness are available; the splitting/counting
+   proof and its concrete polynomial presentation remain to assemble.
+3. U03b3: deduce normality of the fraction extension from that splitting,
+   combine with the existing separability, and obtain a Galois stage of
+   every requested residue degree. A finite separable extension of the
+   right degree alone does not supply normality.
+4. U03b4: embed the stages into the chosen separable closure, prove uniqueness
+   of the unramified image and finite compositum compatibility. Then build
+   U04's supremum/inverse-limit comparison and U05's continuous characters.
+
+For a general valued-local-field frontend, identify the extended valuation
+ring with the integral closure and match the chosen unramified predicate.
+Mathlib already has `Ideal.ramificationIdx_eq_one_iff` (with separable
+residue-field hypotheses) and
+`Algebra.FormallyUnramified.iff_map_maximalIdeal_eq`. Do not mark those
+criteria themselves missing; the remaining obligation is transporting the
+actual local extension into their contexts.
+
+For the norm route, reuse the existing residue-unit quotient equivalence.
+N01's higher principal-unit graded quotient and N02's norm-as-trace formula
+on it remain unimplemented; these enable the successive corrections of N03
+and convergence of N04. N03a proves only the first residue approximation.
+
+For the cohomology route, `exists_descended_cochain` is stronger than finite
+image: it supplies a continuous function on `(G/N)^n`, finite G/N, the
+inflation formula, and N-invariance of every value. Next construct the G/N
+action on the N-fixed coefficient module, identify the differential on that
+finite complex, and descend cocycles and bounding cochains to common stages.
+The integral low-degree comparison C01, colimit C05, and later invariant and
+class-formation gates remain. No class-field conclusion is smuggled into
+these cochain hypotheses.
