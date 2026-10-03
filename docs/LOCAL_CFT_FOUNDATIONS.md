@@ -320,3 +320,24 @@ instances, and ramification-index-one converted to formal unramifiedness.
 The integral theorem will state these standard ring hypotheses explicitly;
 it is not yet the assertion that every pair of local-field instances has a
 compatible unramified extension structure. U04/U05 and E1c7 remain blocked.
+
+### W16 next prerequisite refinement
+
+After U01a–d/U02a/U03a, the next audit found N01's residue-unit quotient
+already fully implemented by
+`ValuationSubring.unitsModPrincipalUnitsEquivResidueFieldUnits`, including
+surjectivity and its representative formula. Reuse it; no duplicate module.
+The higher principal-unit quotients in N01 remain separate work.
+
+| ID / module | Ready output and proof, cap 200 | Boundary |
+|---|---|---|
+| N02a / ResidueNorm | Norm and trace commute with the actual residue maps for finite free formally unramified local algebras; transport the existing quotient theorems along equality of maximal ideals | No assertion about higher principal-unit quotients |
+| N03a / ResidueNormLift | Every base unit has a unit whose norm agrees modulo the maximal ideal; finite-field norm surjectivity and surjective residue-unit map | First approximation only; successive approximation and convergence remain N03/N04 |
+| C04a / CochainFiniteImage | A compact-domain continuous discrete cochain has finite image and finite action saturation; find one open normal subgroup fixing every value | Common refinement of the cochain's fibers, descent and differential compatibility remain C04b/c |
+
+These contracts are refined before their implementation. The norm leaf
+requires formal unramifiedness to identify the tensor/ideal quotient with the
+actual residue field; it does not assert this identity for a ramified algebra.
+The cochain leaf uses the compact/discrete image theorem and the profinite
+open-normal neighborhood basis. Fixing values alone does not make a cochain
+constant on quotient fibers, so it does not finish finite descent.
