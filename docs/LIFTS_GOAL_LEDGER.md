@@ -24,6 +24,7 @@ hypotheses (satisfied in the intended profinite/discrete setting).
 | E1c1 / Extensions.HomogeneousOne | Construct the coefficient TopRep and homogeneous degree-zero/one maps; prove evaluation, inverse, differential formulas. `ContinuousMap.curry`, `coind₁_apply_apply`, `homogeneousCochains.d_apply`. | READY | 200 |
 | E1c2 / Extensions.HomogeneousTwo | Degree-two cochains, reconstruction and degree-one differential; identify the 2-cocycle equation by evaluating the degree-two differential. Same APIs and locally compact uncurrying. | E1c1 | 200 |
 | E1c3 / Extensions.ContinuousH1Comparison | Compare continuous cocycles/principals and the splitting quotient with actual `continuousCohomology 1`. `cohomologyIsoQuot`, `bdryKer`, `cokerπ_eq_zero_iff`. | E1c1/c2 | 200 |
+| E1c3a / Extensions.ContinuousH1Equiv | Descend E1c3 to the splitting quotient and prove bijectivity; explicit representative formula. | E1c3 | 200 |
 | E1c4 / Extensions.ContinuousH2Comparison | Map explicit continuous 2-cocycles to actual H², prove surjectivity and zero iff an actual continuous coboundary exists. `cohomologyIsoQuot`, `cokerπ_surjective`. | E1c2 | 200 |
 | E1c5 / Extensions.HomogeneousCup | Compute the actual homogeneous (1,1) cup under evaluation as the explicit cup; descend the computation to H². `cupCochain_coe`, `cupPair_succ_apply`, `cokerDescBilinear_apply`. | E1c3/c4 | 200 |
 | E1c6 / Extensions.PeuCohomologyComparison | Express E1b's predicate as vanishing of the actual continuous cohomology cup against inertia-trivial characters. | E1c5 | 200 |
