@@ -4,7 +4,136 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
-## W31 proved scope
+## W33 proved scope
+
+Checked 2026-10-03T18:19:05.194888+00:00; base `b91dbdc1`; proof head `49be88b8`.
+Read-only evidence check: `python3 Scratch/LiftsW33/check.py` checks saved
+build/lint/axiom logs, source hashes, allowed edits, sorted imports and line caps.
+It does not rerun Lean. The full lifting goal remains unmet.
+
+**The original fundamental extension has Tate H⁰ = H¹ = 0 on every subgroup
+of its finite Galois group. Its Tate groups vanish in every integer degree on
+cyclic subgroups. The adjacent-vanishing criterion for arbitrary finite groups
+and the degree −2 cup equivalence remain unproved.**
+
+Seven new modules contain 705 lines and 37 named declarations. Every module
+has at most 158 lines. All declarations use only `propext`, `Classical.choice`
+and `Quot.sound`.
+
+- `SubgroupFixedFieldTower` constructs the fixed field inside the original
+  ambient field and its actual Galois equivalence with the given subgroup.
+  Restriction of scalars through this equivalence equals subgroup inclusion.
+- `TateGroupEquivalence` reindexes cochains and chains in opposite directions,
+  proves the norm square, and derives an isomorphism in every Tate degree.
+- `FiniteSubfieldDvr` constructs the canonical integer inclusion and proves
+  locality, DVR structure, completeness, finiteness and residue properties.
+  `RelativeFundamentalSubgroup` instantiates these constructions and transports
+  W32's field-wise theorem to the original module restricted to any subgroup.
+  No intermediate DVR, cohomological vanishing or cup equivalence is supplied
+  by the caller.
+- `TateNormVanishing` proves both directions of the norm-surjectivity criterion
+  in degree zero and the augmentation-exactness criterion in degree minus one.
+- `CyclicTateVanishing` proves the cyclic case of the adjacent-vanishing criterion
+  using periodic resolutions and the explicit norm splice.
+  `RelativeFundamentalCyclicSubgroup` applies it to the original local extension
+  on every cyclic subgroup, with no vanishing premise.
+
+### Next proofs after W33
+
+1. Prove the adjacent-vanishing criterion for arbitrary finite groups from
+   degrees zero and one on all subgroups. The cyclic case is now available;
+   the passage to noncyclic groups is still missing. A finite-solvable version
+   suffices here using the existing `localGalois_solvable` theorem. A
+   normal-subgroup descent or another proof must be constructed. The pinned Mathlib
+   `GroupCohomology/Basic.lean` still lists Hochschild–Serre as a TODO; its
+   cyclic resolutions alone do not provide that passage.
+2. Apply the general criterion to `relativeFundamentalExtension_subgroup_isZero`.
+   Prove the first boundary invertible and compose it with the existing
+   coinduced shift to obtain the actual input-degree −2 cup equivalence.
+3. Construct finite Artin maps with norm and tower compatibility, then prove
+   Kummer–Artin evaluation with positive Frobenius and the cup-order sign,
+   and derive E1d's annihilator statement. These remain unproved.
+
+Validation evidence: `Scratch/LiftsW33/*-{build,lint,axioms}.{log,exit}`
+and `Scratch/LiftsW33/{EndpointBuild,Integration,FinalAxioms}.{log,exit}`.
+Rerun individual modules with `python3 Scratch/LiftsW33/validate.py MODULE ...`;
+rerun endpoint/integration checks with `python3 Scratch/LiftsW33/final_checks.py`.
+Builds run in the foreground and lint runs one module at a time, with
+`LEAN_NUM_THREADS=2`. The endpoint audit still records `sorryAx` for the
+lifting theorem and both `sorryAx` and `Mazur_statement` for the FLT endpoint.
+
+## W32 proved scope (historical)
+
+The following is the W32 snapshot; its checks refer to its reported W32 head.
+
+Checked 2026-10-03T17:42:41.194685+00:00; base `25750cda`; proof head `98a7908a`.
+Read-only evidence check: `python3 Scratch/LiftsW32/check.py` checks the saved
+build/lint/axiom logs, validated source hashes, sorted imports, allowed edits
+and 200-line caps. It does not rerun Lean. The full lifting goal remains unmet.
+
+**Finite-relative fundamental classes now have proved restriction and inflation
+tower formulas. The actual local twisted extension has Tate H⁰ = H¹ = 0 after
+restriction to Gal(F/E), for a supplied finite local tower K ⊆ E ⊆ F ⊆ C.
+The degree −2 cup and the cohomological-triviality criterion remain unproved.**
+
+Twelve new modules contain 1,163 lines and 73 named declarations, including
+local tower instances. Every module is at most 132 lines. Every named
+declaration uses only `propext`, `Classical.choice` and `Quot.sound`.
+
+- `RelativeRestrictionTower` constructs the actual cochain restriction and
+  its square with inflation to the common closure. `RelativeFundamentalRestriction`
+  proves res(u_F/K) = u_F/E. The intermediate extension E/K need not be Galois.
+- `RelativeInflationTower` constructs finite inflation, proves its composition
+  law and H² injectivity. `RelativeFundamentalInflation` proves
+  inf(u_E/K) = [F:E] · u_F/K, with the positive normalization.
+- `FiniteRestrictionComparison` proves naturality of the finite continuous
+  comparison. `RelativeFundamentalOrdinaryRestriction` transports the arithmetic
+  identity to ordinary H², where the two-extension representatives live.
+- `CoinducedInjectiveRestriction` gives coset coordinates and all-degree
+  acyclicity for arbitrary injective finite group maps.
+  `CoinducedRestrictionComparison` constructs the quotient comparison and
+  proves that its actual Tate maps are isomorphisms in every degree.
+- `TwoExtensionRestriction` compares the concrete twisted short exact sequences
+  and their boundaries. `TwoExtensionRepresentativeIso` constructs inverse
+  translations for cohomologous representatives. `TwoExtensionSubgroupVanishing`
+  transports vanishing to the original restricted extension by exactness.
+- `RelativeFundamentalExtensionRestriction` applies these comparisons to the
+  chosen local representatives and proves the two adjacent vanishing groups
+  after restriction to Gal(F/E). Its local theorem assumes neither vanishing,
+  an isomorphism, nor an evaluation formula.
+
+The quotient comparison is a proved Tate isomorphism, not an asserted
+isomorphism of the two differently constructed coefficient representations.
+The final local theorem still takes the DVRs and compatible algebra towers
+as inputs. It does not yet package an arbitrary subgroup of Gal(F/K) through
+its fixed field and canonical intermediate DVR.
+
+### Next proofs after W32
+
+1. Specialize the field-wise vanishing theorem to every subgroup, constructing
+   its fixed-field/DVR instances and transporting along the actual Galois-group
+   identification. Then prove the cohomological-triviality criterion from
+   adjacent Tate vanishing on all subgroups.
+2. Apply that criterion to the twisted extension and compose its first boundary
+   with the proved coinduced shift. This must establish the degree −2 cup
+   equivalence without adding an invertibility premise.
+3. Construct finite Artin maps, prove norm and tower compatibility, prove
+   Kummer–Artin evaluation with positive Frobenius and the cup-order sign,
+   then derive E1d's annihilator statement. These remain unproved.
+
+All twelve per-module build, lint and axiom checks passed, as did the foreground
+`lake build FermatsLastTheorem`, combined import check and final goal audit.
+The rebuilt lifting theorem still depends on `sorryAx`; the FLT endpoint also
+retains `Mazur_statement`. Endpoint evidence:
+`Scratch/LiftsW32/{EndpointBuild,Integration,FinalAxioms}.{log,exit}`.
+Module evidence: `Scratch/LiftsW32/*-{build,lint,axioms}.{log,exit}`.
+Rerun each module with `python3 Scratch/LiftsW32/validate.py MODULE ...`;
+this runs foreground builds and one-module lint with `LEAN_NUM_THREADS=2`.
+
+
+## W31 proved scope (historical)
+
+The following is the W31 snapshot; its checker refers to its reported W31 head.
 
 Checked 2026-10-03T16:05:18.866549+00:00; base `114f96be`; proof head `c316c543`.
 Read-only evidence check: `python3 Scratch/LiftsW31/check.py` verifies saved
