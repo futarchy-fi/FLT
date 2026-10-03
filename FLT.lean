@@ -310,6 +310,7 @@ public import FLT.GaloisRepresentation.Extensions.ContinuousCocycleCoordinates
 public import FLT.GaloisRepresentation.Extensions.ContinuousCup
 public import FLT.GaloisRepresentation.Extensions.ContinuousH1Comparison
 public import FLT.GaloisRepresentation.Extensions.ContinuousH1Equiv
+public import FLT.GaloisRepresentation.Extensions.ContinuousH2Comparison
 public import FLT.GaloisRepresentation.Extensions.ExtendedUnitSubspace
 public import FLT.GaloisRepresentation.Extensions.FiniteDescent
 public import FLT.GaloisRepresentation.Extensions.HomogeneousOne
