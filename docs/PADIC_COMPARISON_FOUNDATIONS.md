@@ -877,8 +877,8 @@ coefficient is choose(n,k), so one of its roots b satisfies
 Galois isometry transfers the displacement bound to b. For n not a power
 of p, Lucas supplies some 0 < k < n with unit binomial coefficient. For
 n = p^(s+1), take k = p^s: the binomial valuation is one. Strong degree
-induction with budget `p/(p-1) * (1-1/n)` gives the (nonoptimal) uniform
-constant `p^(p/(p-1))`. Every row is capped at 150 source lines; split
+induction with budget `2 - 2/n` gives the deliberately nonoptimal uniform
+constant `p^2`. Every row is capped at 150 source lines; split
 again before exceeding that limit. This is a plan until each lemma builds.
 
 | Leaf | Concrete proof output | Dependency |
@@ -888,6 +888,7 @@ again before exceeding that limit. This is a plan until each lemma builds.
 | PadicHasseApproximation | The Hasse derivative of the original minimal polynomial supplies an actual smaller-degree approximant. | Previous two leaves, conjugacy, Hasse degree and leading coefficient |
 | PadicBinomialDescent | Unit binomial coefficient off p-powers; valuation one for choose(p^(s+1),p^s). | Lucas and prime-power binomial factorization |
 | AxDegreeBudget | Real-power budget inequalities and uniform upper bound. | Elementary ordered-field arithmetic |
+| PadicAxDegreeStep | Combine actual Hasse roots, binomial losses and the real-power budget into a strict degree reduction. | Hasse approximation, binomial descent, degree budget |
 | PadicAxEstimate | Strong degree induction with actual scalar witnesses and a uniform constant. | Hasse approximation, binomial descent, degree budget |
 | ComplexAxFixedScalars | Discharge W33 hestimate and derive the completed fixed field. | PadicAxEstimate and ComplexAxDescent |
 | CyclotomicTowerConstruction | Actual p-power-root subfields and inclusions. | Original character and roots of unity |
