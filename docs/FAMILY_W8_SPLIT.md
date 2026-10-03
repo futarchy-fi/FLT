@@ -30,8 +30,8 @@ Every new proof module has a whole-file cap of 150 lines.
 
 | Gate | Current evidence and exact gap | Classification / next leaf |
 |---|---|---|
-| F01 compatible integral torsion maps | `GroupScheme/RaynaudPadicPowerExtension` proves unique prescribed extensions for p > 2, including 3; `RepresentationTheory/FlatPadic` supplies models of all p-power reductions. Their actual point modules and coefficient transition maps still need identification. | W22 constructs each actual torsion model and its killing exponent, and proves extension/diagram laws. Actual generic transitions, rational-place transport and the full HR tower assembly remain. |
-| F02 integral exact levels | `RepresentationTheory/PrimePowerExact` is coefficient exactness only. Integral closure/quotient comparisons exist in `GroupScheme/IntegralClosedImmersion`, `IntegralQuotientIdentification`, and `IntegralQuotientFaithfullyFlat`. | Bounded after actual level maps and their point exactness; no integral exact tower is currently constructed. |
+| F01 compatible integral torsion maps | `GroupScheme/RaynaudPadicPowerExtension` proves unique prescribed extensions for p > 2, including 3; `RepresentationTheory/FlatPadic` supplies models of all p-power reductions. Their actual point modules and coefficient transition maps still need identification. | W23 constructs the actual generic/integral inclusions and reductions over the rational completion, with coherent composition, identity and multiplication diagrams. All maps retain the original quotient tensor modules. See `TorsionModelTransitions` and `TorsionIntegralInclusions`. |
+| F02 integral exact levels | `RepresentationTheory/PrimePowerExact` is coefficient exactness only. Integral closure/quotient comparisons exist in `GroupScheme/IntegralClosedImmersion`, `IntegralQuotientIdentification`, and `IntegralQuotientFaithfullyFlat`. | W23 `TorsionLevelExactness` proves closed inclusions, faithfully flat prescribed reductions and identifies the actual scheme-kernel coordinates with the prescribed lower level (original coefficient domains, Type 0). P-divisible object assembly remains F03. |
 | F03 p-divisible object | No p-divisible-group definition/level assembly consuming F01/F02 found in `FLT/`. | Missing definitions and construction, larger than a ready wrapper. |
 | F04 weight-two comparison | No period-ring/de Rham comparison theorem computing the two graded ranks from these levels found in `FLT/`. | Large missing p-adic Hodge theory. C5 gives maps, not Hodge weights. |
 | F05 arbitrary coefficient domains | `HardlyRamified/NormalizedOrder` constructs normalization, topology and fraction field for **3 only**. `Family` quantifies over arbitrary odd p and keeps the original R. | General-prime normalization can be ported in bounded leaves; HR/base-change and original embedding transport remain separate. |
@@ -1767,3 +1767,22 @@ F03/F04 remain large missing theory: neither p-divisible object assembly nor
 p-adic comparison is supplied by these transition maps. F06 still requires
 reducible-residual family mathematics; F07–F15 remain as recorded in W22.
 A generic exact sequence alone does not assert integral faithful flatness.
+
+W23 refinement before assembly (each cap 150): reuse the existing
+`PrimePowerExact` coefficient maps rather than duplicating them. Split selected
+models and their comparisons into `TorsionModelComparisons`, generic conjugation
+and exactness into `TorsionGenericTransitions`, and arbitrary ordered reduction
+maps into `TorsionReductionTower` before `TorsionModelTransitions`. Split integral
+exactness into `RationalIntegralExactness` (rigidity/closure comparisons),
+`RationalIntegralQuotient` (faithfully flat prescribed quotients), and
+`TorsionLevelExactness` (the actual HR application).
+
+Split `RationalIntegralKernel` (cap 150) before the final HR endpoint: identify
+its *prescribed* quotient augmentation ideal with the contracted quotient's
+kernel ideal, via the proved surjective comparison. This distinguishes the
+actual scheme kernel from generic point exactness and from a new chosen model.
+
+Before the coefficient port, split inclusion coherence into
+`TorsionInclusionTower` (original tensor inclusion composition and both
+inclusion/reduction multiplication identities) and `TorsionIntegralInclusions`
+(the corresponding prescribed integral diagrams), each cap 150.
