@@ -702,3 +702,27 @@ fraction field for every fundamental Frobenius twist; it constructs the
 averaging inverse from the residue characteristic and exits 0. All new
 modules are below the 150-line cap. `W15_FINAL_CHECKS.log` records source,
 artifact, edit-scope and target-admission checks.
+
+## W16 mixed-digit refinement before implementation
+
+All new files have a whole-file cap of 150 lines. Work follows C5p3e,
+C5p4, C5v1, C5v2, C5v3 in that order. No model supplies constants,
+eigenspaces, generation, or presentations as fields.
+
+| Leaf | New module | Obligation |
+|---|---|---|
+| C5p3e-m1 | `RaynaudMixedCharacterAverage` | List-indexed finite differences, coefficient base change, and scalar convolution expansion. |
+| C5p3e-m2 | `RaynaudPowerCharacterOrthogonality` | Embedding power characters distinguish exponents in 1,…,q−1; compute their weighted sums. |
+| C5p3e-m3 | `RaynaudPowerCharacterDifference` | The normalized difference of degree m≤q−1 by weight k is the Hasse derivative of order k. |
+| C5p3e-m4 | `RaynaudMixedPowerConstant` | Mixed constants reduce to the product of successive binomial coefficients. |
+| C5p3e-m5 | `RaynaudDigitBinomialUnit` | Lucas arithmetic proves those factors nonzero for successive removal of nonzero base-p digits. |
+| C5p3e-m6 | `RaynaudMixedDigitUnit` | Lift the computed nonzero residue to a unit in the local coefficient ring. |
+| C5p3e-m7 | `RaynaudMixedRankOneConvolution` | Mixed products of actual projectors and normalized rank-one maps. |
+| C5p3e-m8 | `RaynaudMixedCharacterParameters` | Actual original/dual mixed monomials have unit coefficients. |
+
+The power-character route computes exact Hasse derivatives on functions
+of degree at most q−1. It replaces the proposed multivariate top-degree
+argument by orthogonality and Lucas's theorem. It must handle q−1 and the
+trivial output character as well as the other positive exponents.
+C5p4 and later obligations will be split further before implementation;
+the existing gates remain open until their actual proofs are built.
