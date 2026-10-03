@@ -219,53 +219,55 @@ characteristic. The atlas is the existing irreducible one-gon chart gluing;
 no reducible node chart is substituted. The cocone does not yet assert the
 closed pinching universal property required by E4d.
 
-### E4d — arbitrary-target pinching descent, split required, blocked on local descent
+### E4d — arbitrary-target pinching descent, implemented
 
-New `PolygonAtlas.lean`, namespace `FLT.Mazur.PolygonAtlas`. Combine E4a–c
-into `polygon K n` for every `[NeZero n]`; transport their cocones. Prove
-local pinching descent for arbitrary schemes by pulling back an affine
-cover of the target, descending on saturated source neighborhoods, and
-using `Scheme.OpenCover.glueMorphisms` with proved overlap compatibility.
-Dependencies: E4a–c and a local arbitrary-target pinching theorem, still missing.
+W11 supplies the localized equalizers and arbitrary-target affine pinching
+statements `NodePinchingDescent.node_desc` and
+`OneGonPinchingDescent.oneGon_desc`, without target affineness or separatedness.
+`PolygonCyclicPushout.isPushout` supplies the exact n≥2 pushout, retaining
+both overlaps when n=2. No structure assumes a descent or pushout conclusion.
+
+W12 completes the global one-gon coordinate comparison and pushout:
+
+| Module | Lines/cap | Proved output |
+| --- | --- | --- |
+| OneGonAffineNormalizationCoordinates | 217/220 | Reverse coordinate isomorphisms and both overlap identities. |
+| OneGonAffineNormalization | 218/240 | Open affine normalization chart, endpoints, puncture, comparison and coverage. |
+| OneGonGlobalPushout | 146/220 | Exact specified one-gon pinching pushout over K. |
+| PolygonAtlas | 38/120 | Exact all-positive-n pinching pushout. |
+
+`alpha` uses z=t/(t−1) and w=1−t⁻¹. Its endpoints map to zero and infinity,
+and `alpha ≫ normalization = oneBranch ≫ OneGonGluing.node`. Together with
+the **entire** Laurent open, including z=1, it covers P¹. The construction
+works in characteristic two. The resulting public theorem is:
 
 ```lean
-theorem isPushout (hn : 0 < n) :
-  IsPushout (PolygonPinching.toComponents K n hn)
-    (PolygonPinching.toNodes K n) (normalization K n) (nodes K n)
+PolygonAtlas.isPushout (K : Type u) [Field K] (n : ℕ) [NeZero n] (hn : 0 < n) :
+  IsPushout (PolygonPinching.toComponents K n hn) (PolygonPinching.toNodes K n)
+    (PolygonAtlas.normalization K n) (PolygonAtlas.nodes K n)
 ```
 
-W10 proves the following prerequisites, without claiming arbitrary-target descent:
+The proof transports both cases through `cyclicIso`/`oneGonIso`, using their
+normalization and node compatibility. E5a is implemented below; G5 and Mazur G1 remain.
 
-- `PinchingAffineDescent` (137/180) constructs unique descents for both actual
-  chart rings into every affine target scheme, without requiring morphisms
-  to preserve K. Theorems: `node_desc_affine`, `oneGon_desc_affine`.
-- `PinchingNeighborhoods` (95/140) finds principal neighborhoods defined by
-  elements of A or B with node value one. For B, interpolation of two
-  normalized polynomials produces an element equal to one at both endpoints.
-  This includes characteristic two and gives a neighborhood inside any open
-  containing both endpoints.
+## E5 — specified cocone comparison and G5, split into capped leaves
 
-Still missing: the equalizer/pullback properties after localization at those
-chosen elements. The affine-target theorems have full affine-line sources;
-restricted source opens are spectra of localized polynomial rings. They
-cannot be used unchanged for maps to an affine neighborhood in an arbitrary
-Y. Then the locally defined morphisms must be glued, with uniqueness proved,
-and descended across the specified global cocone.
+The former 400-line proposal separates the cocone/finite-presentation bridge
+from the geometric smooth-locus identification. Each cap includes helpers:
 
-Remaining proposed leaves, each at most 240 lines (contracts, not declarations):
-localized node ring pullback; localized B equalizer; node arbitrary-target
-descent; one-gon arbitrary-target descent; polygon cocone assembly; global
-pinching universal property. Untracked BLOCKED.md specifies these contracts.
+- **E5a — PolygonCoconeComparison, implemented at 100/160.** Constructs `polygonIso`
+  between the exact specified cocones, proves normalization/node compatibility,
+  proves local finite presentation of both actual atlases by their open covers,
+  and transports it to `polygon_lfp` for the arbitrary pushout C.
+- **E5b — PolygonAtlasSmoothLocus, cap 240, ready.** Compute the smooth
+  locus of each actual atlas using E3 and open-immersion naturality. Identify
+  it with the disjoint full Laurent component opens; retain both n=2 overlaps
+  and the smooth point z=1 in n=1. Prove the component maps and their ranges.
+- **E5c — PolygonSmoothLocus, cap 240, follows E5b.** Transport that geometric
+  identification through `polygonIso` to the specified `smoothIso` below,
+  prove its required component formula, and transport the commutative group.
 
-The ring pullback proves only the affine-target case. Neither that case
-nor an open-gluing universal property closes this leaf. If local descent
-exceeds the cap, commit its proved prerequisites and record exact smaller
-contracts in untracked BLOCKED.md. E5 and Mazur G1 remain blocked until
-this specific cocone is a pushout for arbitrary target schemes.
-
-## E5 — specified cocone comparison and G5, cap 400, blocked
-
-New `FLT/Mazur/PolygonSmoothLocus.lean`, namespace `FLT.Mazur.PolygonPinching`.
+The final namespace is `FLT.Mazur.PolygonPinching`.
 For `C : Over (Spec (.of K))`, `p : components K n ⟶ C`, `q : nodes K n ⟶ C`,
 and `h : IsPushout (toComponents K n hn) (toNodes K n) p q`:
 
@@ -284,7 +286,7 @@ Require the component formula, with `torusToComponent` induced by
 Then transport the commutative group through this specified iso.
 Source: DR II.1.1 and II.1.12(a). Dependencies: E3/E4 and G4.
 `IsPushout.isoIsPushout` compares the actual cocones; smooth-locus naturality
-transports E3 along the proved open atlas. Not ready before E4’s gluing and cocone proofs.
+transports E3 along the proved open atlas. E4 and E5a are complete; E5b is the next ready leaf.
 
 ## API evidence and execution
 
@@ -302,13 +304,15 @@ rg -n 'mem_smoothLocus|preimage_smoothLocus_eq' $M/AlgebraicGeometry/Morphisms/S
 rg -n 'does not|not proved|smooth/node' FLT/Mazur/CurveNode.lean
 ```
 
-E1–E3 and E4a–c are implemented; E4d and E5 remain blocked by
-arbitrary-target closed-pinching descent. Build with LEAN_NUM_THREADS=2;
+E1–E4 are implemented; E5 remains to identify the global smooth locus. Build with LEAN_NUM_THREADS=2;
 run `lake exe runLinter FLT.Mazur.MODULE` separately for each module. Audit all
 new declarations with collectAxioms; allow only propext/Classical.choice/Quot.sound.
 C-sort FLT.lean public imports; commit each leaf locally; never push. If any
 cap fails, commit proved material and record exact remainder and smaller caps
 in untracked BLOCKED.md outside FLT/. Only this split document is committed prose.
+
+The following dated validation notes record intermediate checkpoints; the
+implemented E4d/E5a status above supersedes their remaining-work notes.
 
 E1 checked 2026-09-30 20:12 UTC: 136/260 lines; foreground module build,
 individual runLinter, and collectAxioms on all 21 module declarations passed.
@@ -414,3 +418,101 @@ E4d prerequisites checked 2026-10-02 23:50 UTC: PinchingAffineDescent
 individual module lints and collectAxioms on 16 + 11 declarations. Output:
 untracked GOAL_MAZUR_W10_E4D_AXIOMS.txt; only the three allowed axioms occur.
 The arbitrary-target statements and the global IsPushout are not proved.
+
+E4d W11 node equalizer checked 2026-10-03 00:00 UTC: foreground module
+build and individual runLinter passed. The collectAxioms audit of all module
+declarations passed (GOAL_MAZUR_W11_NODE_AXIOMS.txt, untracked), permitting
+only propext, Classical.choice and Quot.sound. No scheme descent is claimed.
+
+E4d W11 one-gon equalizer checked 2026-10-03 00:03 UTC: foreground module
+build, individual runLinter and collectAxioms passed (untracked
+GOAL_MAZUR_W11_ONEGON_AXIOMS.txt). Only the three allowed axioms occur.
+
+E4d W11 node-local descent checked 2026-10-03 00:11 UTC: `NodeLocalDescent`
+(214/240) passed its foreground build, individual runLinter and collectAxioms
+(GOAL_MAZUR_W11_LOCAL_AXIOMS.txt, untracked). It proves unique localized
+affine-target descent, existence on a saturated neighborhood for arbitrary
+targets, coverage by that neighborhood and the two Laurent branches, and
+both exact localization pullback squares. It does not yet glue the local map.
+
+The former 240-line NodePinchingDescent leaf is split: NodeLocalDescent
+(214/240, implemented); TernaryOpenDescent (cap 140); NodePinchingExistence
+(cap 240); NodePinchingDescent (cap 240, global uniqueness and final statement).
+Each cap counts the entire module. Subsequent one-gon and polygon leaves
+retain their 240-line caps. All unimplemented entries remain contracts.
+
+E4d W11 TernaryOpenDescent checked 2026-10-03 00:20 UTC: 103/140 lines;
+foreground build, individual runLinter and all-declaration collectAxioms
+passed (GOAL_MAZUR_W11_TERNARY_AXIOMS.txt, untracked). Pairwise pullback
+compatibility gives arbitrary-target gluing over three open charts.
+
+E4d W11 NodePinchingExistence checked 2026-10-03 00:27 UTC: 106/240 lines;
+foreground module build, individual runLinter and collectAxioms on every
+module declaration passed (GOAL_MAZUR_W11_DESCENTS_AXIOMS.txt, untracked).
+Only propext, Classical.choice and Quot.sound occur.
+
+E4d W11 NodePinchingDescent checked 2026-10-03 00:27 UTC: 108/240 lines;
+foreground module build, individual runLinter and collectAxioms on every
+module declaration passed (GOAL_MAZUR_W11_DESCENTS_AXIOMS.txt, untracked).
+Only propext, Classical.choice and Quot.sound occur.
+
+E4d W11 OneGonLocalDescent checked 2026-10-03 00:27 UTC: 165/240 lines;
+foreground module build, individual runLinter and collectAxioms on every
+module declaration passed (GOAL_MAZUR_W11_DESCENTS_AXIOMS.txt, untracked).
+Only propext, Classical.choice and Quot.sound occur.
+
+E4d W11 OneGonPinchingDescent checked 2026-10-03 00:27 UTC: 140/240 lines;
+foreground module build, individual runLinter and collectAxioms on every
+module declaration passed (GOAL_MAZUR_W11_DESCENTS_AXIOMS.txt, untracked).
+Only propext, Classical.choice and Quot.sound occur.
+
+E4d W11 PolygonAtlasCocone checked 2026-10-03 00:27 UTC: 122/240 lines;
+foreground module build, individual runLinter and all-declaration collectAxioms
+passed (GOAL_MAZUR_W11_COCONE_AXIOMS.txt, untracked). It constructs polygon,
+normalization and nodes for every positive n with the exact pinching cocone,
+identifies both cases with the prior atlases, and proves the cyclic chart formulas.
+The global universal property is not asserted by this module.
+
+E4d W11 PolygonCyclicDescent checked 2026-10-03 00:36 UTC: 125/240 lines;
+foreground build, individual runLinter and all-declaration collectAxioms passed
+(GOAL_MAZUR_W11_CYCLIC_AXIOMS.txt, untracked). Only the three allowed axioms
+occur. This module treats n≥2; n=1 global pinching remains open.
+
+E4d W11 PolygonCyclicPushout checked 2026-10-03 00:36 UTC: 117/240 lines;
+foreground build, individual runLinter and all-declaration collectAxioms passed
+(GOAL_MAZUR_W11_CYCLIC_AXIOMS.txt, untracked). Only the three allowed axioms
+occur. This module treats n≥2; n=1 global pinching remains open.
+
+E4d W12 reverse coordinates checked 2026-10-03 00:53 UTC: foreground module
+build and individual runLinter passed for OneGonAffineNormalizationCoordinates
+(217/220). The collectAxioms audit checked all 40 declarations and allowed only
+propext, Classical.choice and Quot.sound; evidence is untracked
+GOAL_MAZUR_W12_COORDINATES_AXIOMS.txt. The global comparison remains next.
+
+E4d W12 affine chart checked 2026-10-03 00:57 UTC: foreground build,
+individual runLinter and collectAxioms passed for OneGonAffineNormalization
+(218/240). It proves alpha is an open immersion, the endpoint/puncture and
+normalization identities, and coverage together with the full Laurent open.
+The combined audit output is GOAL_MAZUR_W12_AFFINE_AXIOMS.txt (untracked).
+
+E4d W12 global one-gon pushout checked 2026-10-03 00:58 UTC: foreground
+build, individual runLinter and collectAxioms passed for OneGonGlobalPushout
+(146/220). Its isPushout uses the exact specified normalization and node
+cocone in Over (Spec K); arbitrary targets need no separatedness assumption.
+Audit evidence: GOAL_MAZUR_W12_GLOBAL_AXIOMS.txt (untracked).
+
+E4d W12 completion checked 2026-10-03 01:02 UTC: PolygonAtlas (38/120)
+passed its foreground build and individual runLinter. The combined audit
+checked all 101 declarations in the four W12 E4d modules, allowing only
+propext, Classical.choice and Quot.sound; evidence is untracked
+GOAL_MAZUR_W12_E4D_AXIOMS.txt. The all-positive-n pushout is complete.
+
+E5a W12 checked 2026-10-03 01:03 UTC: PolygonCoconeComparison (100/160)
+passed its foreground build and individual runLinter. It proves polygonIso,
+both normalization/node formulas in both directions, and polygon_lfp from
+local finite presentation of the actual atlases. The final combined audit
+checked all 117 declarations in all five W12 modules, allowing only propext,
+Classical.choice and Quot.sound; evidence: GOAL_MAZUR_W12_ALL_AXIOMS.txt
+(untracked). All module caps, sorted FLT.lean imports and git diff --check
+passed. E5b, E5c, G5 and Mazur G1 remain; Mazur_statement still occurs at
+FLT/Assumptions/Mazur.lean:103 (source check, no full-goal axiom rebuild).
