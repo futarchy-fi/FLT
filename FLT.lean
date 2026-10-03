@@ -442,6 +442,13 @@ public import FLT.GaloisRepresentation.HardlyRamified.ModThree
 public import FLT.GaloisRepresentation.HardlyRamified.ModThreeProved
 public import FLT.GaloisRepresentation.HardlyRamified.ModThreeSorted
 public import FLT.GaloisRepresentation.HardlyRamified.NormalizedOrder
+public import FLT.GaloisRepresentation.HardlyRamified.PadicOrderAlgebra
+public import FLT.GaloisRepresentation.HardlyRamified.PadicOrderCanonicalTopology
+public import FLT.GaloisRepresentation.HardlyRamified.PadicOrderHardlyRamified
+public import FLT.GaloisRepresentation.HardlyRamified.PadicOrderNormTopology
+public import FLT.GaloisRepresentation.HardlyRamified.PadicOrderStableLattice
+public import FLT.GaloisRepresentation.HardlyRamified.PadicOrderTopology
+public import FLT.GaloisRepresentation.HardlyRamified.PadicOrderValuation
 public import FLT.GaloisRepresentation.HardlyRamified.PointFieldBaseChange
 public import FLT.GaloisRepresentation.HardlyRamified.PointFieldRamification
 public import FLT.GaloisRepresentation.HardlyRamified.PrimeField

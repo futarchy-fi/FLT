@@ -34,7 +34,7 @@ Every new proof module has a whole-file cap of 150 lines.
 | F02 integral exact levels | `RepresentationTheory/PrimePowerExact` is coefficient exactness only. Integral closure/quotient comparisons exist in `GroupScheme/IntegralClosedImmersion`, `IntegralQuotientIdentification`, and `IntegralQuotientFaithfullyFlat`. | W23 `TorsionLevelExactness` proves closed inclusions, faithfully flat prescribed reductions and identifies the actual scheme-kernel coordinates with the prescribed lower level (original coefficient domains, Type 0). P-divisible object assembly remains F03. |
 | F03 p-divisible object | No p-divisible-group definition/level assembly consuming F01/F02 found in `FLT/`. | Missing definitions and construction, larger than a ready wrapper. |
 | F04 weight-two comparison | No period-ring/de Rham comparison theorem computing the two graded ranks from these levels found in `FLT/`. | Large missing p-adic Hodge theory. C5 gives maps, not Hodge weights. |
-| F05 arbitrary coefficient domains | `HardlyRamified/NormalizedOrder` constructs normalization, topology and fraction field for **3 only**. `Family` quantifies over arbitrary odd p and keeps the original R. | General-prime normalization can be ported in bounded leaves; HR/base-change and original embedding transport remain separate. |
+| F05 arbitrary coefficient domains | W23 `PadicOrderAlgebra`, `PadicOrderValuation`, `PadicOrderNormTopology`, `PadicOrderTopology` and `PadicOrderCanonicalTopology` construct general-prime normalization with its original embedding and explicit spectral topology. | `PadicOrderHardlyRamified` preserves HR and identifies the original generic member by tensor cancellation. `PadicOrderStableLattice` handles supplied stable lattices. No compatible family or every-embedding member is constructed. |
 | F06a p = 3 residual branch | `Assembly/PrimePowerSortingProof.primePowerSortedExtensionExists` and `HardlyRamified/ModThreeSorted.mod_three_of_sortedExtensionExists` are axiom-clean. They give a trivial quotient, hence reducibility; the legacy `mod_three` theorem is still admitted. | Implemented W22 in `ModThreeProved`: unconditional quotient and residual non-irreducibility from proved sorting. |
 | F06b p = 3 characteristic zero | `Assembly/ThreeAdicTrace.trace_eq_one_add_det_of_sorted_inputs` is axiom-clean; proved sorting supplies both its inputs. | Implemented W22 in `ThreeAdicTraceProved`: unconditional trace and Frobenius trace over original Type-0 coefficient domains. This is not family existence or a split equivalence. |
 | F06c p > 3 residual input | `HardlyRamified/AbsoluteIrreducibility.isAbsolutelyIrreducible` derives absolute irreducibility **from irreducibility**. D14 needs the explicit mod-p determinant comparison. | Implemented W22 in `ResidualCyclotomicDeterminant` and `ResidualCyclotomicRestriction`: the HR endpoint handles every odd prime by excluding 3 using the proved contradiction. It still requires residual irreducibility. |
@@ -1786,3 +1786,33 @@ Before the coefficient port, split inclusion coherence into
 `TorsionInclusionTower` (original tensor inclusion composition and both
 inclusion/reduction multiplication identities) and `TorsionIntegralInclusions`
 (the corresponding prescribed integral diagrams), each cap 150.
+
+F05 refinement: the norm on `FractionRing R` cannot infer p from its result
+type. `PadicOrderValuation` therefore constructs the spectral norm explicitly;
+`PadicOrderNormTopology` installs that norm on the integral order;
+`PadicOrderTopology` proves its compactness, completeness and module topology. Split `PadicOrderCanonicalTopology` (cap 150) to install the
+constructed norm and obtain the unconditional canonical topology package,
+and `PadicOrderHardlyRamified` (cap 150) to preserve HR and the original
+generic representation under this constructed normalization.
+
+Split `PadicOrderNormTopology` (cap 150) before the topology leaf: install
+the constructed spectral norm on the normalization, whose type retains p.
+Keep fraction-field topology statements under explicit local norm choices;
+an arbitrary second field structure on `FractionRing R` is not an assumption.
+
+Next bounded F05/F12 leaf: `PadicOrderStableLattice` (cap 150), preserving
+hardly ramifiedness on each supplied stable lattice in the constructed
+normalized generic fibre at an arbitrary odd prime. This does not supply
+compatible families, every-embedding members, or a p-adic comparison theorem.
+
+### W23 validation and remaining boundary
+
+Checked 2026-10-03T12:46:55.663289+00:00: all 19 new modules built individually with
+`LEAN_NUM_THREADS=2 lake build MODULE` and passed individual
+`lake exe runLinter MODULE` runs. The generated `W23_AXIOMS.lean` audit
+checked all 119 new named declarations: only propext, Classical.choice and
+Quot.sound. `python3 W23_FINAL_CHECKS.py` verifies line caps, source/object/log
+freshness, sorted imports, edit scope and unchanged `Family.lean`.
+The family theorem still depends on sorryAx; W23 does not close F03/F04 or
+construct a compatible family. Full local evidence and exact scope are in
+`FAMILY_W23_DONE.md`, kept untracked outside FLT as requested.
