@@ -480,3 +480,12 @@ discard the second edge when n=2. H2b2 `PolygonCyclicNormalizationPullback`
 branches into the normalization coproduct and proves the cartesian square.
 H2d2 then descends their finite maps on the target chart cover and transports
 through `sigmaComparison (Over.forget _)` to the specified normalization.
+
+H2d2 is split before coding: `PolygonCyclicNormalizationFinite` (cap 160)
+proves finite surjective normalization on the plain scheme coproduct, then
+transports it to the existing over-category normalization through the
+canonical coproduct comparison. `PolygonNormalizationFinite` (cap 160)
+combines that result with the one-gon result (including its one-component
+coproduct comparison), then transports finite surjectivity to any supplied
+pinching cocone using the existing `polygonIso`. Neither transport introduces
+an assumed finiteness field.
