@@ -411,3 +411,39 @@ C5m6b is refined into two ≤150-line modules before completing the leaf:
 `RaynaudGenericHopfMap` proves the inverse correspondence between generic
 Hopf maps and specified point maps; `RaynaudDualGenericMap` proves the
 actual dual base-change compatibility. This avoids assuming functoriality.
+
+C5m6c is refined into `RaynaudDualFaithful` (≤150 lines), proving generic
+duality faithful and preserving bijections, and `RaynaudBiduality` (≤150),
+proving the integral bidual comparison and the transpose identity used to
+turn an extension out of the maximum into an extension into the minimum.
+
+C5m7 is refined before implementation into two ≤150-line leaves:
+`RaynaudScalarAction` transports a scalar action across a specified generic
+bijection and derives integral action laws from endomorphism extension;
+`RaynaudExtremalActions` applies it to both constructed extrema. The scalar
+action starts from actual module data and a commuting Galois action.
+
+W13 C5m6/C5m7 checked 2026-10-03: `RaynaudCartierDual` (58/150),
+`RaynaudGenericHopfMap` (82/150), `RaynaudDualGenericMap` (79/150),
+`RaynaudDualFaithful` (73/150), `RaynaudBiduality` (66/150),
+`RaynaudMinimalModel` (72/150), `RaynaudScalarAction` (74/150), and
+`RaynaudExtremalActions` (53/150) pass foreground builds and individual
+module lints. `W13_DUAL_AXIOMS.lean` audits all 29 declarations, including
+definitions with proof obligations; only the three standard axioms occur.
+
+The minimum is the actual integral Cartier dual of the constructed maximum
+of the dual generic fibre. It extends every prescribed generic map into it,
+and generic automorphisms extend to integral isomorphisms. The maximum and
+minimum carry actual integral lifts of any commuting generic scalar action;
+the lifts obey zero, unit, addition (convolution) and composition laws.
+These constructions prove the independent extremal-model/action prerequisite
+of Raynaud 3.3.1 over a principal domain with characteristic-zero fraction
+field, including the strict-Henselian DVR needed here.
+
+C5c remains unproved: C5p1–C5p4 must still derive the character decomposition,
+rank-one eigenspaces, dual parameter identities and actual presentations.
+C5v1 then compares the two extremal models below the ramification bound;
+C5v2/C5v3 must pass from simple factors to the prescribed p-torsion maps.
+No presentation depending on C5 was used. The original admission in
+`IsHardlyRamified.mem_isCompatible` remains at `Family.lean:68` (checked with
+`rg -n 'mem_isCompatible|sorry' FLT/GaloisRepresentation/HardlyRamified/Family.lean`).

@@ -639,6 +639,8 @@ public import FLT.GroupScheme.QuadraticTwistPoints
 public import FLT.GroupScheme.QuadraticTwistTensor
 public import FLT.GroupScheme.QuotientFiberFreeness
 public import FLT.GroupScheme.RationalCubeValuations
+public import FLT.GroupScheme.RaynaudBiduality
+public import FLT.GroupScheme.RaynaudCartierDual
 public import FLT.GroupScheme.RaynaudClosureFactorization
 public import FLT.GroupScheme.RaynaudCommonStage
 public import FLT.GroupScheme.RaynaudConnectedQuotient
@@ -649,14 +651,18 @@ public import FLT.GroupScheme.RaynaudDirectedHenselian
 public import FLT.GroupScheme.RaynaudDirectedPolynomial
 public import FLT.GroupScheme.RaynaudDirectedUnion
 public import FLT.GroupScheme.RaynaudDiscriminant
+public import FLT.GroupScheme.RaynaudDualFaithful
+public import FLT.GroupScheme.RaynaudDualGenericMap
 public import FLT.GroupScheme.RaynaudEtaleDualExtension
 public import FLT.GroupScheme.RaynaudEtaleExtension
 public import FLT.GroupScheme.RaynaudExtension
 public import FLT.GroupScheme.RaynaudExtensionExists
+public import FLT.GroupScheme.RaynaudExtremalActions
 public import FLT.GroupScheme.RaynaudFilteredExtension
 public import FLT.GroupScheme.RaynaudFiltrationLayers
 public import FLT.GroupScheme.RaynaudFlatKernelExactness
 public import FLT.GroupScheme.RaynaudFlatQuotient
+public import FLT.GroupScheme.RaynaudGenericHopfMap
 public import FLT.GroupScheme.RaynaudGenericSplitExtension
 public import FLT.GroupScheme.RaynaudHenselianFactor
 public import FLT.GroupScheme.RaynaudInductionStep
@@ -668,6 +674,7 @@ public import FLT.GroupScheme.RaynaudKernelExactness
 public import FLT.GroupScheme.RaynaudLayerDescent
 public import FLT.GroupScheme.RaynaudMaximalExtension
 public import FLT.GroupScheme.RaynaudMaximalModel
+public import FLT.GroupScheme.RaynaudMinimalModel
 public import FLT.GroupScheme.RaynaudModelArithmetic
 public import FLT.GroupScheme.RaynaudModelUpperBound
 public import FLT.GroupScheme.RaynaudNakayamaDescent
@@ -685,6 +692,7 @@ public import FLT.GroupScheme.RaynaudRelativeResidue
 public import FLT.GroupScheme.RaynaudResidueClosure
 public import FLT.GroupScheme.RaynaudRigidity
 public import FLT.GroupScheme.RaynaudRootStage
+public import FLT.GroupScheme.RaynaudScalarAction
 public import FLT.GroupScheme.RaynaudScalingValuation
 public import FLT.GroupScheme.RaynaudSplitting
 public import FLT.GroupScheme.RaynaudStageFamily
