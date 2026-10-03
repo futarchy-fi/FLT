@@ -702,3 +702,50 @@ then gives a p-adic estimate modulo each fixed theta power.
 Finite logarithm identities, denominator control, the cyclotomic scalar
 law, fixed fields and comparison remain later leaves; none is a hypothesis
 of these convergence statements.
+
+W32 logarithm refinement (before implementation; each cap 150):
+`PowerSeriesLogPower` proves the formal logarithm multiplication and
+integer-power identities by derivatives and the constant coefficient.
+`NilpotentSeriesEvaluation` constructs algebraic evaluation at nilpotents
+and identifies it with any sufficiently long finite truncation.
+`NilpotentLogPower` transports the formal identity to finite logarithms.
+Finite-level continuity then handles fixed finite sums and their genuine
+rational denominator inverses, without requiring completeness of the
+localized coefficient quotients.
+
+W32 substitution refinement (before implementation; cap 150):
+`NilpotentSeriesSubstitution` proves that substitution by a nilpotent
+constant gives a constant series and commutes with zero-constant formal
+substitution. This keeps the finite-logarithm proof algebraic.
+
+W32 scalar and finite-log refinement (before implementation; cap 150 each):
+`PadicResidueConvergence` proves convergence of the natural representatives
+of Z_p residues in the standard topology. `ComplexFiniteLogAlgebra`
+constructs rational algebra structures from the existing scalar maps and
+identifies the logarithm coefficients with their genuine inverse formula.
+`ComplexFiniteLogEvaluation` identifies evaluations of t and sigma(t) with
+finite logarithms. `ComplexFiniteLogLimit` combines the exponent and scalar
+limits by Hausdorff uniqueness; the separated completion then gives the
+actual scalar law in `ComplexCyclotomicLogCharacter`.
+
+W32 limit refinement (before implementation; cap 150):
+`FiniteLogContinuity` proves the polynomial continuity and a generic
+Hausdorff limit theorem for natural powers and scalar approximants.
+No infinite coefficient sum or uniform denominator estimate is needed at
+a fixed nilpotent quotient: its logarithm is a finite polynomial.
+
+W32 period-field refinement (before implementation; caps 150):
+`DiscreteValuationLocalization` identifies localization at a uniformizer
+with a fraction field. `ComplexDeRhamDenominators` proves that Mathlib's
+actual generating set consists of nonzero associates of the completed
+parameter and contains that parameter. `ComplexDeRhamFractionField`
+identifies the existing B_dR with the fraction field and with inversion
+of the already constructed t. These are algebraic identifications;
+Galois fixed fields still require a separate descent theorem.
+
+W32 nonnegative graded refinement (before implementation; caps 150):
+`PrincipalGradedPiece` constructs the actual quotient (t^n)/(t^(n+1))
+and its linear identification with R/(t), by cancellation in the domain.
+`ComplexDeRhamGraded` identifies those quotients additively with C_p and
+computes the cyclotomic twist on transformed representatives. Negative
+levels, a full graded algebra, and fixed-field descent remain later leaves.
