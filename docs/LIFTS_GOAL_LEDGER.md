@@ -4,6 +4,72 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
+## W22 acceptance — 2026-10-03T07:40:35.747894+00:00
+
+Checked 2026-10-03T07:40:35.747894+00:00, branch `task/goal-lifts-w22`, base `c2adcddb`.
+**E1c7/E1d remain blocked. Finite-stage arithmetic and the order-H2 comparison
+are proved; the continuous unramified-union comparison remains open.**
+
+23 new modules, 1,539 Lean lines, 80 named declarations. Each module passed
+foreground `LEAN_NUM_THREADS=2 lake build MODULE`, individual
+`lake exe runLinter MODULE`, and an axiom audit of every named declaration.
+All new declarations use only propext, Classical.choice, Quot.sound, or no axioms.
+Recheck saved evidence with `python3 Scratch/LiftsW22/check.py`; logs and the
+machine-readable module table are in `Scratch/LiftsW22/`. No whole-library lint.
+
+| Item | Module under FLT.LocalClassFieldTheory | Lines/cap | Commit |
+|---|---|---|---|
+| 1a — filtration and divided coefficients | PrincipalUnitFiltration | 79/200 | `f7321978` |
+| 1b — graded quotient / residue equivalence | PrincipalUnitResidue | 99/200 | `f7321978` |
+| 2a — determinant expansion of norm | NormFirstOrder | 55/200 | `d141432d` |
+| 2b — norm preserves levels and residue trace | PrincipalUnitNorm | 79/200 | `d141432d` |
+| 2c — base uniformizer upstairs | UnramifiedUniformizer | 50/200 | `d141432d` |
+| 2d — one-step correction | PrincipalNormCorrection | 64/200 | `d141432d` |
+| 2e — actual quotient norm / trace square | PrincipalNormGraded | 68/200 | `d141432d` |
+| 3a — initial and improved approximations | UnitNormApproximation | 70/200 | `1f82a29a` |
+| 3b — constructed compatible recursion | UnitNormSequence | 55/200 | `1f82a29a` |
+| 3c — convergence and separatedness | PrincipalAdicLimit | 56/200 | `1f82a29a` |
+| 3d — norm preserves all congruences | NormCongruence | 54/200 | `1f82a29a` |
+| 3e — exact unit norm surjectivity | UnitNormSurjectivity | 71/200 | `1f82a29a` |
+| 4a — integral unit Hilbert 90 | UnramifiedUnitHilbert90 | 66/200 | `30745e79` |
+| 4b — action, invariants, norm comparison | IntegralUnitRepresentation | 78/200 | `30745e79` |
+| 4c — both cyclic complexes exact | UnramifiedUnitCyclicExact | 80/200 | `30745e79` |
+| 4d — all positive finite-stage cohomology | UnramifiedUnitAcyclic | 52/200 | `30745e79` |
+| 5a — normalized integer order | DiscreteOrder | 59/200 | `6a169336` |
+| 5b — order kernel and surjectivity | DiscreteOrderExact | 64/200 | `6a169336` |
+| 5c — equivariant coefficient maps | UnramifiedOrderMap | 76/200 | `6a169336` |
+| 5d — actual short exact order sequence | UnramifiedOrderSequence | 75/200 | `6a169336` |
+| 5e — order-induced finite-stage H2 isomorphism | UnramifiedOrderCohomology | 62/200 | `6a169336` |
+| 5f — canonical constructed-stage endpoints | UnramifiedStageOrderH2 | 57/200 | `6a169336` |
+| 6 — order compatibility in towers | UnramifiedOrderTower | 70/200 | `bd3acf3d` |
+
+The quotient Uⁿ/Uⁿ⁺¹ is identified with the additive residue field. The induced
+norm is residue trace. Constructed successive corrections converge and prove
+unit norm surjectivity. Integral unit Hilbert 90 and that surjectivity make both
+cyclic complexes exact, proving positive cohomology vanishing for finite
+unramified integral units. The actual order sequence then induces the H2
+isomorphism. `unramifiedStageOrderH2Iso` instantiates it on the existing canonical
+stages; all necessary integral-model instances are derived. Order also commutes
+with unramified tower embeddings at the coefficient level.
+
+Next: identify the unramified-union unit representation's invariant coefficients
+with these finite-stage representations, prove the compatible cohomology maps,
+and apply the existing continuous colimit comparison. Only then compose the
+continuous order map with W21's integral Frobenius/Q/Z coordinates. Details and
+API boundaries are in the W22 section of `LOCAL_CFT_FOUNDATIONS.md`.
+Serre-weight evaluation and arbitrary-p Raynaud classification remain blocked.
+
+Final audit: `LEAN_NUM_THREADS=2 lake env lean Scratch/LiftsW22/FinalAxioms.lean`,
+exit 0; evidence `Scratch/LiftsW22/Final-axioms.log`:
+
+- `GaloisRepresentation.IsHardlyRamified.lifts` and `FLT.Assembly.hardlyRamifiedLifting`:
+  `[propext, sorryAx, Classical.choice, Quot.sound]`.
+- `PNat.pow_add_pow_ne_pow`:
+  `[Mazur_statement, propext, sorryAx, Classical.choice, Quot.sound]`.
+- The new graded quotient, graded trace, unit norm, unit acyclicity, and
+  canonical-stage multiplicative H2 comparison use only the three standard axioms.
+
+
 ## W21 acceptance — 2026-10-03T06:41:20.511369+00:00
 
 Checked 2026-10-03T06:41:20.511369+00:00; branch `task/goal-lifts-w21`; base `3ee6889c`.
