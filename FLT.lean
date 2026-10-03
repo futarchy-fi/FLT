@@ -1034,6 +1034,11 @@ public import FLT.LocalClassFieldTheory.CochainOpenNormal
 public import FLT.LocalClassFieldTheory.CocycleDimensionShift
 public import FLT.LocalClassFieldTheory.CocycleRectangle
 public import FLT.LocalClassFieldTheory.CoinducedCoefficientSequence
+public import FLT.LocalClassFieldTheory.CoinducedNormExact
+public import FLT.LocalClassFieldTheory.CoinducedShapiro
+public import FLT.LocalClassFieldTheory.CoinducedSubgroup
+public import FLT.LocalClassFieldTheory.CoinducedTateAcyclic
+public import FLT.LocalClassFieldTheory.CoinducedTateShift
 public import FLT.LocalClassFieldTheory.ConnectingCoefficientNaturality
 public import FLT.LocalClassFieldTheory.ConnectingCupCompatibility
 public import FLT.LocalClassFieldTheory.ConnectingRestrictionNaturality
