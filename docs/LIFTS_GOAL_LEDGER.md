@@ -4,7 +4,108 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
-## W27 acceptance
+## W28 validation
+
+Checked 2026-10-03T13:55:03.657454+00:00; branch task/goal-lifts-w28; base eb101554; proof head c084ba11.
+Read-only evidence check: `python3 Scratch/LiftsW28/check.py` (saved logs and source hashes).
+
+**R04e, R05a–R05c, R06a–R06b, and I03a–I03b are proved. The full lifting goal remains unmet.**
+The 22 new modules contain **1,675 lines and 73 named declarations**, all within the 200-line cap.
+Every new declaration uses only `propext`, `Classical.choice`, and `Quot.sound`.
+I03c has its restriction-surjectivity prerequisite, but corestriction remains unconstructed.
+
+1. The ramified normalized valuation sequence, trivial-integer cyclic cohomology,
+   and W27's integral-unit calculation give h(Lˣ) = [L:K].
+   Hilbert 90 then gives the exact cyclic relative H² order and finiteness.
+2. Wild inertia is a p-group, its tame quotient is cyclic, and the residue
+   automorphism group is cyclic. These actual maps prove local Galois solvability.
+3. A proper normal subgroup gives two smaller extensions. Constructed intermediate
+   DVRs and W25 inflation-restriction exactness support strong degree induction,
+   proving finite relative H² and its degree upper bound. W26's lower subgroup
+   proves equality and exhausts the relative group with unramified classes.
+4. A continuous absolute cocycle descends pointwise to a finite Galois fixed field.
+   The spectral norm proves locality of its integral closure; that closure is a
+   complete DVR with finite residue field. Finite relative saturation then proves
+   surjectivity of actual unramified inflation, hence bijectivity.
+5. Inverting this inflation and composing with the normalized unramified
+   invariant gives an additive equivalence H²(K, Ksepˣ) ≃ Q/Z.
+6. The actual cochain restriction square proves that finite base extension
+   multiplies the invariant by [E:K]. E need not be Galois for this formula.
+   Divisibility of Q/Z proves restriction surjective; its kernel is exactly
+   the classes with degree-torsion invariant.
+
+The arithmetic scope is characteristic-zero fraction fields of complete DVRs
+with finite residue fields of prime characteristic p. Finite relative groups
+use Galois extensions; the absolute restriction results allow arbitrary finite
+intermediate extensions with the stated compatible finite DVR towers.
+Positive-characteristic local invariants are not established here.
+
+| Item | Module under FLT.LocalClassFieldTheory | Lines/cap | Commit |
+|---|---|---|---|
+| R04e | RamifiedOrderSequence | 94/200 | `6cceac89` |
+| R04e | CyclicIntegerCohomology | 112/200 | `6cceac89` |
+| R04e | RamifiedFieldHerbrand | 86/200 | `6cceac89` |
+| R05a | CyclicRelativeOrder | 75/200 | `6cceac89` |
+| R05b | LocalGaloisSolvable | 90/200 | `b83cbb87` |
+| R05c | FiniteDvrComplete | 58/200 | `f4c88eea` |
+| R05c | IntermediateDvrAlgebra | 71/200 | `f4c88eea` |
+| R05c | IntermediateDvr | 99/200 | `f4c88eea` |
+| R05c | FiniteRelativeSequence | 83/200 | `f4c88eea` |
+| R05c | SolvableNormalStep | 42/200 | `f4c88eea` |
+| R05c | SolvableFieldStep | 42/200 | `f4c88eea` |
+| R05c | RelativeOrderInduction | 109/200 | `f4c88eea` |
+| R06a | FiniteRelativeSaturation | 101/200 | `f4c88eea` |
+| R06b | FiniteExtensionLocalRing | 70/200 | `c084ba11` |
+| R06b | FiniteExtensionDvr | 44/200 | `c084ba11` |
+| R06b | FiniteRelativeCocycleDescent | 60/200 | `c084ba11` |
+| R06b | UnramifiedInflationSurjective | 83/200 | `c084ba11` |
+| I03a | AbsoluteInvariant | 67/200 | `c084ba11` |
+| I03b | AbsoluteRestriction | 49/200 | `c084ba11` |
+| I03b | UnramifiedAbsoluteSquare | 93/200 | `c084ba11` |
+| I03b | InvariantRestriction | 63/200 | `c084ba11` |
+| I03c prerequisite | RestrictionSurjective | 84/200 | `c084ba11` |
+
+Each module M passed sequentially in the foreground with LEAN_NUM_THREADS=2:
+`lake build FLT.LocalClassFieldTheory.M`,
+`lake exe runLinter FLT.LocalClassFieldTheory.M`, and
+`lake env lean Scratch/LiftsW28/MAxioms.lean`.
+All 73 named declarations, including definitions and instances, were axiom-audited.
+No whole-library lint was run. Evidence: Scratch/LiftsW28/M-{build,lint,axioms}.log.
+
+Combined imports passed in Scratch/LiftsW28/Integration.lean.
+Scratch/LiftsW28/FinalAxioms.lean confirms that the new endpoints are axiom-clean,
+while `GaloisRepresentation.IsHardlyRamified.lifts` and
+`FLT.Assembly.hardlyRamifiedLifting` still use `sorryAx`;
+`PNat.pow_add_pow_ne_pow` retains both `sorryAx` and `Mazur_statement`.
+Both checks have .log and zero .exit files.
+
+`python3 Scratch/LiftsW28/check.py` checks saved logs, source hashes, caps,
+audit coverage, allowed axioms, sorted imports, allowed paths, new-file-only
+Lean changes, and clean tracked state. It does not rerun Lean.
+The source snapshots were recorded after verifying that every build, lint,
+and axiom log postdated its source. Fresh module validation is
+`python3 Scratch/LiftsW28/validate.py M ...`.
+
+The next proof is **I03c: continuous corestriction**. Restriction surjectivity
+and its kernel calculation are available in RestrictionSurjective.
+The source search in Scratch/LiftsW28/CorestrictionApiSearch.log found ordinary
+Shapiro (`groupCohomology.coindIso`), but no group-cohomology corestriction.
+Mathlib's group-homology corestriction is a different construction.
+
+| Gate / next leaf | Required proof and dependency |
+|---|---|
+| I03c / transfer construction | Construct finite-index transfer on continuous cochains, or prove continuous Shapiro and a coefficient trace; prove preservation of cocycles and boundaries and independence of coset choices. |
+| I03c / restriction-degree identity | For that constructed map prove cor(res x) = [E:K] • x. A cochain homotopy or a proved Shapiro comparison is still needed. |
+| I03c / CorestrictionInvariant | Use the proved restriction surjectivity and degree formula to deduce inv_K(cor y) = inv_E(y). Transporting the identity through the invariants alone would leave the transfer comparison unproved. |
+| I03d / FundamentalClasses | Compare the inverse image of positive 1/[E:K] with relative H² and prove its restriction, inflation, and corestriction formulas. |
+| Class formation | Assemble the proved relative order and Hilbert 90 with compatible fundamental classes; prove the Tate cup-product isomorphisms. |
+| Kummer–Artin evaluation | Construct the finite Artin maps and prove the cocycle evaluation formula, then the Kummer comparison and E1d annihilator statement. |
+
+Each new module keeps the 200-line cap; the transfer rows are proof obligations,
+not existing APIs or certified size estimates. Serre-weight evaluation and
+arbitrary-p Raynaud classification remain independent unproved work.
+
+## W27 historical acceptance
 
 Checked 2026-10-03T12:49:39.162743+00:00; branch `task/goal-lifts-w27`; base `e8a80ed9`; proof head `f704730c`.
 Read-only evidence check: `python3 Scratch/LiftsW27/check.py` (saved logs and source hashes).
@@ -109,7 +210,7 @@ The source snapshots were recorded only after checking that each build, lint,
 and axiom log postdated its source. Fresh module validation is
 `python3 Scratch/LiftsW27/validate.py M ...`.
 
-Remaining contracts are in `LOCAL_CFT_FOUNDATIONS.md`; R04e is next.
+W27 stopped before R04e; the W28 checkpoint above supersedes that remaining-work list.
 
 ## W26 historical acceptance
 
