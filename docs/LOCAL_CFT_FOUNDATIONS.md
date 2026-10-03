@@ -630,3 +630,182 @@ local invariant and class formation, norm convergence, and Kummer–Artin
 evaluation. Serre-weight evaluation and arbitrary-p Raynaud classification are
 still independent blocked gates; no implementation of either was dispatched.
 The final lifting admission and final FLT axiom set are unchanged.
+
+## W19 refinement (2026-10-03)
+
+Each following leaf has a 200-line cap. Acceptance requires a foreground
+module build, an individual-module lint and an audit of every declaration.
+
+- `FixedCoefficientBoundary`: descend a continuous bounding cochain and take
+  its finite differential, proving the boundary equation at that same stage.
+- `InvariantStageTransition`: construct quotient pullback with invariant
+  coefficient inclusion; prove identity, composition and inflation compatibility.
+- `ContinuousCochainComplex`: define the submodules of continuous functions,
+  prove differential stability and construct the continuous complex.
+- `ContinuousStageDiagram`: use reverse inclusion of open normal subgroups
+  for a filtered diagram of the actual quotient complexes and its inflation cocone.
+- `ContinuousCochainColimit`: prove that cocone is a colimit degreewise, using
+  finite descent and injective inflation, then a colimit of complexes.
+- Common-refinement boundary detection and the cohomology colimit follow once
+  the continuous complex interface is checked; refine those proofs into separate
+  leaves if needed. No assumed boundary-detection or colimit bridge is permitted.
+
+The higher principal-unit norm and class-formation gates remain distinct;
+Serre-weight evaluation and arbitrary-p Raynaud classification stay blocked.
+
+W19 cohomology and ready follow-on refinement (cap 200 each):
+
+- `CochainHomologyClass`: representative surjectivity, vanishing iff boundary,
+  and functoriality in the existing categorical homology; includes degree zero.
+- `FilteredComplexDescent`: injective cocone maps reflect cocycles; descend a
+  bounding cochain and construct a common refinement using filteredness.
+- `FilteredHomologyDescent`: descend cohomology classes and detect vanishing
+  and equality after refinement, using the preceding proved boundary theorem.
+- `ContinuousCohomologyColimit`: apply those lemmas to the constructed cocone
+  and prove the module colimit universal property and canonical isomorphism.
+- `FiniteContinuousComparison`: identity-on-cochains comparison of finite
+  discrete continuous and ordinary complexes, over an arbitrary commutative ring.
+- `FiniteCharacteristicZeroCohomology`: use Mathlib's proved Maschke theorem
+  and the existing Ext presentation to prove positive finite-group vanishing.
+- `ContinuousCharacteristicZeroCohomology`: descend each continuous class
+  to a finite quotient, then apply the finite vanishing theorem.
+
+The finite comparison's compatibility with connecting maps and cup products,
+restriction/coefficient naturality of the colimit comparison, and comparison
+with W14's explicit homogeneous low-degree presentation are separate leaves.
+Characteristic-zero vanishing does not assume an averaging homotopy; it uses
+Mathlib's existing proof of Maschke and projectivity of semisimple modules.
+
+## W19 proved scope and next gates — checked 2026-10-03 05:17 UTC
+
+The W19 acceptance table in LIFTS_GOAL_LEDGER.md records the module commits,
+caps, validation commands and evidence. Recheck recorded evidence with
+`python3 Scratch/LiftsW19/check.py`; it does not rerun Lean.
+
+Common-stage boundary descent, refinement maps, the continuous inhomogeneous
+complex, and its filtered colimit of invariant-coefficient finite quotient
+complexes are proved. `ContinuousStageBoundary` detects a boundary after a
+constructed refinement of any independently supplied stage. Continuous
+cohomology is the corresponding filtered colimit in every degree.
+
+The next ready finite discrete comparison is proved over arbitrary commutative
+rings. Positive continuous cohomology vanishes over any characteristic-zero
+field, by finite descent and the proved Maschke/Ext route. This establishes the
+vanishing conclusion of C06, including rational coefficients; no averaging
+homotopy is supplied as a hypothesis.
+
+C01's explicit integral low-degree comparison, C02's connecting-map/cup
+compatibility, and restriction/coefficient naturality of C05's comparison
+remain. C07 still needs the continuous exact-sequence construction and its
+explicit boundary formula for Q/Z and Z. These interfaces must be proved,
+not passed as bridges. The principal-unit norm convergence, local invariant,
+class-formation and Kummer–Artin evaluation gates remain, as do the independent
+Serre-weight and arbitrary-p Raynaud gates. E1c7/E1d and the final lifting
+admission remain blocked; the final FLT axiom set is unchanged.
+
+## W20 proved scope — checked 2026-10-03T06:04:11.614329+00:00
+
+Checked 2026-10-03T06:04:11.614329+00:00; branch `task/goal-lifts-w20`; starting base `d34fe0c6`.
+**E1c7/E1d remain blocked; the final FLT theorem still has sorryAx.**
+
+Fourteen new modules implement the four W19 follow-on contracts, split into
+bounded leaves, and extend them through restriction naturality, the full
+explicit H1 quotient comparison, and the positive Q/Z-to-Z connecting isomorphism.
+All commits are local; nothing pushed.
+
+| Item | Module under FLT.LocalClassFieldTheory | Lines/cap | Commit |
+|---|---|---|---|
+| C05f | ContinuousCoefficientMaps | 111/200 | `64ffd56a` |
+| C05g | ContinuousColimitNaturality | 91/200 | `354d63a9` |
+| C01i | IntegralLowDegreeComparison | 126/200 | `bfb8fa1f` |
+| C01j | IntegralDegreeTwoComparison | 125/200 | `11d0889b` |
+| C07a | ContinuousExactCoefficients | 105/200 | `c450c96a` |
+| C07b | ContinuousConnectingMap | 111/200 | `e9adad08` |
+| C07c | RationalCoefficientSequence | 109/200 | `46c399ea` |
+| C07d | CyclicCarryConnecting | 92/200 | `7b11a7cc` |
+| C06c | IntegralRationalVanishing | 84/200 | `ad53d35a` |
+| C07e | RationalIntegralConnectingIso | 53/200 | `44f5fc93` |
+| C05h | ContinuousRestriction | 97/200 | `7ba2cb29` |
+| C05i | ContinuousRestrictionColimit | 78/200 | `c05b725a` |
+| C01k | IntegralH1Equivalence | 98/200 | `a5eecf6a` |
+| C05j | ContinuousRestrictionCohomology | 70/200 | `bc79f67a` |
+
+Total: **1350 Lean lines; 91 named declarations**, including
+nine coefficient/topology helper instances. Every module is below 200 lines.
+
+## Validation
+
+Each module M passed separately, in the foreground, with `LEAN_NUM_THREADS=2`:
+`lake build M`, `lake exe runLinter M`, and
+`lake env lean Scratch/LiftsW20/<Module>Axioms.lean`.
+Accepted logs are in `Scratch/LiftsW20/<Module>-{build,lint,axioms}.log`.
+Every named declaration, including the named local instances, has axioms
+contained in `{propext, Classical.choice, Quot.sound}`; two use no axioms.
+No whole-library build or lint was run. No concurrent builds or OOM occurred.
+
+`python3 Scratch/LiftsW20/check.py` checks source caps, absence of admissions,
+audit coverage and permitted axiom sets, log freshness, new-file-only Lean
+changes, sorted unique FLT.lean imports, allowed paths, whitespace and clean
+tracked state. It also rejects untracked files under FLT/ and docs/.
+It reads validation evidence; it does not rerun Lean.
+The machine-readable result is `Scratch/LiftsW20/summary.json`.
+
+Fresh final audit: `LEAN_NUM_THREADS=2 lake env lean Scratch/LiftsW20/FinalAxioms.lean`,
+exit 0, evidence `Scratch/LiftsW20/Final-axioms.log`:
+
+* `IsHardlyRamified.lifts` and `FLT.Assembly.hardlyRamifiedLifting` retain
+  `[propext, sorryAx, Classical.choice, Quot.sound]`.
+* `PNat.pow_add_pow_ne_pow` retains
+  `[Mazur_statement, propext, sorryAx, Classical.choice, Quot.sound]`.
+
+## Proved scope
+
+Coefficient maps restrict Mathlib's actual maps to continuous cochains;
+identity, composition and stage-inflation compatibility are proved. The
+complex and cohomology colimit comparisons are natural in these maps.
+
+The low-degree coordinate formulas match the actual integral differential.
+Every H1/H2 class has an explicit continuous cocycle representative; vanishing
+is equivalent to a principal cocycle in degree one and a continuous one-cochain
+boundary in degree two. `integralH1Equiv` identifies the existing splitting
+quotient with the actual complex's H1 over any commutative ring, including Z.
+The existing homogeneous TopRep comparison is field-based; this work uses the
+explicit low-degree presentation rather than claiming that API covers Z.
+
+Discrete coefficient sections prove degreewise surjectivity and exactness.
+The continuous short exact sequence is constructed from coefficient exactness,
+and its categorical connecting map is identified with the positive differential
+of a continuous lift. The concrete sequence Z to Q to Q/Z discharges all
+coefficient exactness premises. `rationalIntegralConnectingIso G n` is the
+actual isomorphism from H^(n+1)(G,Q/Z) to H^(n+2)(G,Z). The scalar-change lemma
+proves that rational vanishing applies to the integral complex as required.
+`rationalIntegralConnectingMap_cyclicCarry` proves that the degree-one character
+i/n maps to the positive integral carry class, fixing the sign.
+
+Restriction pulls an open normal subgroup N back to f^(-1)(N), proves the
+invariant-coefficient quotient map there, and proves compatibility with
+inflation. The index functor and stage natural transformation are constructed;
+both complex and cohomology colimit naturality follow. No pullback-stage,
+colimit, boundary or quotient-action bridge is supplied as a hypothesis.
+
+## Remaining work and next bounded contracts
+
+E1c7/E1d remain blocked. Local invariant/class formation, Kummer-Artin evaluation,
+higher principal-unit graded quotients, norm-as-trace, successive corrections
+and convergence are not supplied by these cohomology constructions.
+The Serre-weight and arbitrary-p Raynaud gates remain independently blocked.
+No task for either missing API was dispatched.
+
+Next leaves, each with a 200-line cap and a separate build/lint/audit:
+
+1. Identify trivial-action H1 with continuous characters, using `integralH1Equiv`
+   and proving that every principal cocycle is zero. Compose with the proved
+   connecting isomorphism to express integral H2 by Q/Z characters.
+2. Prove connecting-map naturality under coefficient-sequence morphisms and
+   continuous group restriction, using the constructed short complexes and
+   Mathlib's homology-sequence naturality. Prove the commutative squares.
+3. Compare the explicit low-degree cup with a continuous integral cochain cup;
+   prove its compatibility with the connecting map before using a local invariant.
+4. Apply the character description to the constructed unramified procyclic
+   quotient and prove Frobenius evaluation/bijection from that quotient's tower.
+   The multiplicative order-H2 isomorphism still needs principal-unit acyclicity.
