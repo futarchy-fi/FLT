@@ -1219,3 +1219,21 @@ and final assembly remain unproved. A source check still finds
 `FLT/Assembly/ExistingInputs.lean:28`, and the final consumer at
 `FermatsLastTheorem.lean:24`. No fresh compiled consumer axiom audit or removal
 of the Mazur dependency is claimed.
+
+
+## W20 checked H5 auxiliary design
+
+Checked 2026-10-03: `W20_AFFINE_EXACT_PROOF.lean` and
+`W20_SPECTRUM_PROOF.lean` compile without placeholders. H5 is split before
+implementation; these auxiliary leaves do not close the global polygon gate.
+
+- H5a `AffineModuleExact`, cap 60: the natural tilde counit identifies a
+  spectrum-module complex with the tilde of its global sections. Exactness of
+  tilde transports section short exactness to the actual sheaves.
+- H5b `StructureDirectImageSections`, cap 70: `ΓSpecIso` identifies global
+  sections of the actual structure direct image with the source ring. Naturality
+  computes both the canonical unit and branch restrictions.
+
+The affine node and one-gon sequences, comparison with restrictions of the
+polygon maps, and global short exactness remain separate obligations. No cap
+for those unfinished proofs is released here.

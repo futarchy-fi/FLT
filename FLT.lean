@@ -1120,6 +1120,7 @@ public import FLT.Mazur.AffineCoverCohomology
 public import FLT.Mazur.AffineCoverIntersections
 public import FLT.Mazur.AffineIdealPowerExtension
 public import FLT.Mazur.AffineKernelLocalization
+public import FLT.Mazur.AffineModuleExact
 public import FLT.Mazur.AffineModuleSupport
 public import FLT.Mazur.AffinePullbackIdeal
 public import FLT.Mazur.AffinePushforwardCohomology
@@ -1530,6 +1531,7 @@ public import FLT.Mazur.SmoothDimensionBound
 public import FLT.Mazur.SmoothOpenSectionCartier
 public import FLT.Mazur.SmoothSectionCartier
 public import FLT.Mazur.StructureCohomologyFinite
+public import FLT.Mazur.StructureDirectImageSections
 public import FLT.Mazur.SurjectiveDominantEpi
 public import FLT.Mazur.TernaryOpenDescent
 public import FLT.Mazur.TildePrincipalOpen
