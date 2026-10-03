@@ -1074,6 +1074,7 @@ public import FLT.LocalClassFieldTheory.LocalExpLogInverse
 public import FLT.LocalClassFieldTheory.LocalExpMultiplicative
 public import FLT.LocalClassFieldTheory.LocalExpOpen
 public import FLT.LocalClassFieldTheory.LocalExpRadius
+public import FLT.LocalClassFieldTheory.LocalGaloisSolvable
 public import FLT.LocalClassFieldTheory.LocalIntegralInverse
 public import FLT.LocalClassFieldTheory.LocalIntegralSeries
 public import FLT.LocalClassFieldTheory.LocalLogConvergence
