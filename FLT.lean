@@ -1360,9 +1360,11 @@ public import FLT.Mazur.RelativeSerreVanishing
 public import FLT.Mazur.RelativeSums
 public import FLT.Mazur.RelativeVeryAmpleLineBundle
 public import FLT.Mazur.RightDerivedDimensionShift
+public import FLT.Mazur.RingEqualizerAwayEndpoint
 public import FLT.Mazur.RingEqualizerLocalDescent
 public import FLT.Mazur.RingEqualizerLocalization
 public import FLT.Mazur.ScalarCohomology
+public import FLT.Mazur.SchematicDescentGluing
 public import FLT.Mazur.SchemeCohomologyIso
 public import FLT.Mazur.SchemeCohomologyIsoCocycles
 public import FLT.Mazur.SectionCharts
@@ -1379,6 +1381,7 @@ public import FLT.Mazur.SmoothDimensionBound
 public import FLT.Mazur.SmoothOpenSectionCartier
 public import FLT.Mazur.SmoothSectionCartier
 public import FLT.Mazur.StructureCohomologyFinite
+public import FLT.Mazur.SurjectiveDominantEpi
 public import FLT.Mazur.TernaryOpenDescent
 public import FLT.Mazur.TildePrincipalOpen
 public import FLT.MazurChapter.AdmissibleGroupSchemes
