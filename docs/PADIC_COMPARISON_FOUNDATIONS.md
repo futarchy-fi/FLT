@@ -161,3 +161,21 @@ investigate, not a claim that an extension-class obstruction makes the
 weak family definition impossible. General reducible-residual inputs can
 still have irreducible characteristic-zero generic fibre and are not
 resolved by this route merely from their residual filtration.
+
+## W26 Tate recovery refinement (2026-10-03)
+
+T3/T4 are split before implementation. Each complete new file remains at
+most 150 lines; all statements use the actual reductions and original lattice.
+
+| Leaf | Required result |
+|---|---|
+| T3a / TateProjectionSurjective | Lift a point through a countable surjective reduction tower; prove evaluation surjective. |
+| T3b / TorsionTateSurjective | Prove the original HR reductions satisfy T3a and apply it. |
+| T4a / PDivisibleTateModule | Define the p-adic scalar action through finite residues and prove module laws. |
+| T4b / PDivisibleTateTopology | Subspace topology, continuous evaluations and continuous Galois action. |
+| T4c / PadicLatticeCompletion | Recover a finite free p-adic lattice from its power quotients. |
+| T4d / TorsionTateRecovery | Compare the actual geometric-point tower with those quotients, retaining Galois action. |
+| T4e / TorsionTateFree | Transport finite freeness and the computed rank through that comparison. |
+
+R5a–R5g and P1b/P2b/P3b follow this recovery track in the requested order.
+No completed comparison, family, or period theorem is assumed by these leaves.
