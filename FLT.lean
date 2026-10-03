@@ -1138,6 +1138,7 @@ public import FLT.Mazur.NodalGeometricFiberGenus
 public import FLT.Mazur.NodeInfinitesimalObstruction
 public import FLT.Mazur.NodeLocalDescent
 public import FLT.Mazur.NodeLocalizedEqualizer
+public import FLT.Mazur.NodePinchingDescent
 public import FLT.Mazur.NodePinchingExistence
 public import FLT.Mazur.NodeQuotient
 public import FLT.Mazur.NodeSmoothLocus
