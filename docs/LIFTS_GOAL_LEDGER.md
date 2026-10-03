@@ -4,6 +4,67 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
+## W15 acceptance — checked 2026-10-03
+
+The local Artin/invariant source match and dependency program are in
+[LOCAL_CFT_FOUNDATIONS.md](LOCAL_CFT_FOUNDATIONS.md). The initial split was
+committed as `bae964f8`, the normalized-order refinement as `82c3726c`, and
+the large blocked prerequisite expansions as `9496cc75`. Missing arithmetic
+theory is explicitly blocked; a proposed 200-line cap is not evidence that
+a foundational theorem already exists or fits an adapter.
+
+Five ready leaves were proved, each within 200 lines:
+
+| Item | Module under FLT | Lines/cap | Commit |
+|---|---|---|---|
+| S01 | LocalClassFieldTheory.RationalTorsion | 77/200 | `ffe9f225` |
+| S02 | LocalClassFieldTheory.CyclicCarry | 75/200 | `c5a30d42` |
+| S03 | GaloisRepresentation.Extensions.ContinuousCupSwap | 93/200 | `db5931a6` |
+| V01 | LocalClassFieldTheory.NormalizedOrder | 98/200 | `f9a5c5c6` |
+| V02 | LocalClassFieldTheory.PowerClassOrder | 103/200 | `f5eaca0f` |
+
+S01 constructs the positive map `ZMod n → ℚ/ℤ`, proves injectivity and
+image exactly n-torsion. S02 proves the positive cyclic carry/coboundary
+formula and the cocycle equation. S03 constructs the opposite continuous
+cup and proves `d(diagonal cochain) = -(cup + opposite cup)`, together with
+equivalence of their coboundary zero tests. With arithmetic Frobenius and
+Milne's positive invariant, W14's Kummer-first order therefore needs the
+negative of the character-first evaluation; this arithmetic evaluation is
+still a future theorem, not supplied by S03.
+
+V01 constructs the classical normalized order on an actual nonarchimedean
+local field, proves surjectivity and identifies its kernel with actual
+valuation-ring units. V02 descends order modulo n to the existing Kummer
+power quotient and proves its kernel is exactly the independent unit-class
+subgroup (for all n, including zero). No Artin map, invariant or annihilator
+conclusion is an input to these theorems.
+
+All five foreground builds and individual-module lints passed. All 40 named
+declarations (32 theorems) were axiom-audited: only propext, Classical.choice,
+Quot.sound. Logs: `Scratch/LiftsW15/<Module>-{build,lint,axioms}.log`.
+Rerun each separately with `LEAN_NUM_THREADS=2 lake build M`,
+`LEAN_NUM_THREADS=2 lake exe runLinter M`, and
+`LEAN_NUM_THREADS=2 lake env lean Scratch/LiftsW15/<Module>Axioms.lean`.
+The combined fresh audit is `Scratch/LiftsW15/FinalAxioms.lean` with output
+`Final-axioms.log`; `check.py` checks log coverage, standard axiom sets,
+line caps, sorted imports, allowed paths and clean tracked state.
+
+**E1c7, E1d1 and E1d2 remain BLOCKED.** The source specifies arithmetic
+Frobenius, positive fundamental-class invariant, units mapping to the
+abelian image of inertia, and the required cup-order sign. The checkout
+has finite cyclic cohomology, Hilbert 90 and the Tate complex, but lacks the
+local reciprocity/class-formation theorem, unramified/invariant comparison
+and actual H² Kummer–Artin evaluation. BrauerGroup is only a quotient
+definition, not a local invariant API; the selected cohomological route
+avoids that separate CSA program. E1d1 still needs the actual unramified
+character and the local evaluation/injectivity gate. E1d2 additionally
+needs the scalar comparison of pairing and unramified dual characters.
+
+The final FLT axiom audit remains
+`[Mazur_statement, propext, sorryAx, Classical.choice, Quot.sound]`.
+This wave does not remove `IsHardlyRamified.lifts` or its sorryAx dependency.
+No Serre-weight evaluation or arbitrary-p Raynaud leaf was dispatched.
+
 ## W14 acceptance — checked 2026-10-03 02:19 UTC
 
 E1c's formal continuous-cohomology comparison is proved. E1c's arithmetic
