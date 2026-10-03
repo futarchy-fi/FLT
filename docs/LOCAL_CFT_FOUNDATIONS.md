@@ -809,3 +809,57 @@ Next leaves, each with a 200-line cap and a separate build/lint/audit:
 4. Apply the character description to the constructed unramified procyclic
    quotient and prove Frobenius evaluation/bijection from that quotient's tower.
    The multiplicative order-H2 isomorphism still needs principal-unit acyclicity.
+
+## W21 proved scope — 2026-10-03T06:41:20.511369+00:00
+
+Checked 2026-10-03T06:41:20.511369+00:00; branch `task/goal-lifts-w21`; base `3ee6889c`.
+**E1c7/E1d remain blocked; the final FLT theorem retains sorryAx.**
+
+The module/commit/cap table is in the W21 acceptance section of
+`LIFTS_GOAL_LEDGER.md`. Recheck accepted evidence with
+`python3 Scratch/LiftsW21/check.py`; final axiom evidence is
+`Scratch/LiftsW21/Final-axioms.log`.
+
+1. **Characters:** trivial-action principal cocycles are zero. The actual H1
+   quotient is continuous characters; composing its inverse with the proved
+   positive Q/Z-to-Z boundary gives the integral H2 character equivalence.
+2. **Naturality:** commuting coefficient maps construct short-complex morphisms.
+   The homology-sequence theorem proves both coefficient and group-restriction
+   connecting squares. The concrete integral H2 character equivalence commutes
+   with continuous character pullback.
+3. **Cups:** the degree-one and degree-two right cups by trivial scalar characters
+   are actual continuous cochains. Their differential identity has positive sign.
+   The old explicit cup descends to actual integral H1 and agrees with its integral
+   H2 representative. Its vanishing is exactly a continuous coboundary witness.
+   `integralScalarConnectingMap_cup_exists` constructs the continuous lift and
+   both cycle representatives in the Z-linear complex; the scalar ring can be
+   a different commutative ring. It proves the two categorical boundary formulas,
+   not an assumed connecting/cup bridge. Scope is low-degree scalar-character
+   cups, not a general higher-degree cup-product or arithmetic pairing API.
+4. **Unramified quotient:** an open subgroup containing arithmetic Frobenius is
+   the whole constructed unramified Galois group, by finite-stage cofinality and
+   cyclicity. This proves character uniqueness. The denominator stage realizes
+   every rational-circle value, giving the Frobenius evaluation bijection.
+5. **Further leaves:** Frobenius coordinates give an additive isomorphism from
+   integral H2 of the constructed quotient to Q/Z. The inflated degree-n carry
+   has coordinate **+1/n**, and its j-multiple has coordinate j/n. Its exact
+   annihilator is nZ. Every integral H2 class is an integer multiple of one such
+   finite-stage carry, hence torsion.
+
+The proved H2 has **constant integral coefficients**. This is the character/
+Frobenius portion of Milne III.1.7, not the multiplicative local invariant.
+
+- The order-induced isomorphism from multiplicative H2 still needs unramified
+  unit/principal-unit acyclicity. Higher principal-unit graded quotients,
+  norm-as-trace, successive corrections and convergence remain arithmetic work.
+- Inflation to the full separable closure, class formation and Kummer–Artin
+  evaluation remain unproved. W14's cup-order minus sign remains unchanged;
+  the positive integral carry result does not erase it.
+- Serre-weight evaluation and arbitrary-p Raynaud classification remain
+  independently blocked; neither was dispatched or treated as available.
+
+Next contracts require refinement against actual APIs (cap 200 per module):
+construct the principal-unit quotient/residue-additive identification; prove the
+norm's graded trace formula; then build compatible corrections and use
+completeness before claiming norm surjectivity or unit acyclicity. Do not turn
+any of these missing arithmetic conclusions into parameters or record fields.
