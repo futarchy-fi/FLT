@@ -865,3 +865,40 @@ trace bounds and completed twist vanishing. Consequently invariant-order
 control, the reverse period fixed-field inclusion and the comparison
 contracts are not proved by W33. No uniform bound or completed invariant
 vanishing has been installed as an instance, structure field or axiom.
+
+
+## W34 elementary Ax proof split (before implementation)
+
+Use Hasse derivatives of the actual minimal polynomial, not an assumed
+trace bound. If all conjugates of a are within r, the (n-k)-th Hasse
+derivative at a has norm at most r^k. Its degree is k and its leading
+coefficient is choose(n,k), so one of its roots b satisfies
+`distance(a,b)^k <= norm(choose(n,k))^-1 * r^k` and has degree at most k.
+Galois isometry transfers the displacement bound to b. For n not a power
+of p, Lucas supplies some 0 < k < n with unit binomial coefficient. For
+n = p^(s+1), take k = p^s: the binomial valuation is one. Strong degree
+induction with budget `p/(p-1) * (1-1/n)` gives the (nonoptimal) uniform
+constant `p^(p/(p-1))`. Every row is capped at 150 source lines; split
+again before exceeding that limit. This is a plan until each lemma builds.
+
+| Leaf | Concrete proof output | Dependency |
+|---|---|---|
+| UltrametricPolynomialCoefficients | Coefficients of products of linear factors with bounded roots have the corresponding power bound. | Ultrametric finite-sum inequality |
+| PolynomialNearbyRoot | Small evaluation gives a nearby actual root, using the product of root distances. | Splitting in the algebraic closure |
+| PadicHasseApproximation | The Hasse derivative of the original minimal polynomial supplies an actual smaller-degree approximant. | Previous two leaves, conjugacy, Hasse degree and leading coefficient |
+| PadicBinomialDescent | Unit binomial coefficient off p-powers; valuation one for choose(p^(s+1),p^s). | Lucas and prime-power binomial factorization |
+| AxDegreeBudget | Real-power budget inequalities and uniform upper bound. | Elementary ordered-field arithmetic |
+| PadicAxEstimate | Strong degree induction with actual scalar witnesses and a uniform constant. | Hasse approximation, binomial descent, degree budget |
+| ComplexAxFixedScalars | Discharge W33 hestimate and derive the completed fixed field. | PadicAxEstimate and ComplexAxDescent |
+| CyclotomicTowerConstruction | Actual p-power-root subfields and inclusions. | Original character and roots of unity |
+| CyclotomicDifferentBounds | Different estimates at finite tower levels. | Tower construction; split valuation computations separately |
+| CyclotomicNormalizedTraceBounds | Uniform bounds for actual normalized trace transitions. | Different bounds |
+| CyclotomicWeightedDescent | Descend completed weighted invariants along actual tower traces. | Trace bounds, W33 approximation |
+| ComplexNonzeroTwistVanishing | Vanishing for every nonzero integral weight. | Weighted descent and character image |
+| ComplexInvariantOrder | Invariant order zero and residue-scalar subtraction. | Both analytic endpoints and actual integer graded algebra |
+
+The comparison split remains the W29/W32 contracts: rational-place
+transport, cotangent transitions, tangent duality, actual pairing,
+integrality, equivariance, injectivity, surjectivity, strictness, then
+coefficient decomposition and both graded ranks. None is assumed as a
+record field. The arithmetic and analytic leaves above take precedence.
