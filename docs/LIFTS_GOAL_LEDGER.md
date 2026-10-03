@@ -4,6 +4,71 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
+## W18 acceptance — checked 2026-10-03 04:46 UTC
+
+Thirteen new modules add degree-indexed profinite reindexing, compatible
+arithmetic Frobenius, canonical integral models, the existing valuation-inertia
+kernel comparison, normalized continuous unramified characters, and two
+finite-cochain follow-ons. All commits are local; nothing pushed.
+
+| Item | Module under FLT.LocalClassFieldTheory | Lines/cap | Commit |
+|---|---|---|---|
+| U04d1 | UnramifiedDiagram | 96/200 | `02e1fc80` |
+| U04d2 | UnramifiedDegreeLimit | 73/200 | `6af82866` |
+| U04e1 | UnramifiedIntegralModel | 70/200 | `def84e8a` |
+| U04d3 | UnramifiedStageFrobenius | 119/200 | `b67a3d24` |
+| U04e2 | UnramifiedLocalInertia | 66/200 | `53f79781` |
+| U04e3 | UnramifiedInertiaConverse | 76/200 | `ac1bdb3d` |
+| U04e4 | UnramifiedInertiaKernel | 83/200 | `cd6b68dd` |
+| U05a | UnramifiedCyclicStages | 86/200 | `9a3a6a94` |
+| U05b | UnramifiedCharacterDescent | 66/200 | `c17388d8` |
+| U05c | UnramifiedCharacters | 71/200 | `a81313b6` |
+| U05d | RationalUnramifiedCharacters | 66/200 | `47e15235` |
+| C04d | FixedCoefficientCochain | 50/200 | `49001fb8` |
+| C04e | FixedCoefficientDifferential | 95/200 | `41b9366c` |
+
+Total: **1017 Lean lines; 50 named definitions/theorems** plus ten
+audited helper instances. Every module is below its 200-line cap.
+
+Validation for each new module M, separately in the foreground:
+`LEAN_NUM_THREADS=2 lake build M`, `LEAN_NUM_THREADS=2 lake exe runLinter M`,
+and `LEAN_NUM_THREADS=2 lake env lean Scratch/LiftsW18/<Module>Axioms.lean`.
+All accepted logs are clean. New declarations and helper instances use only
+`propext`, `Classical.choice`, and `Quot.sound`. Evidence:
+`Scratch/LiftsW18/<Module>-{build,lint,axioms}.log` and `Instances-axioms.log`.
+`python3 Scratch/LiftsW18/check.py` checks these logs, source caps, audit
+coverage, import sorting, allowed changed paths and clean tracked state;
+it does not rerun Lean. `validate.py` also commits a validated module.
+
+The generic unramified tower still starts from W17's complete DVR with finite
+residue field. In number-field completions, the canonical integral closure is
+proved to agree with the constructed unramified model; both directions of
+finite inertia comparison are proved, and closedness identifies the full
+restriction kernel. No residue or inertia bridge is assumed. At rational
+p-adic places the existing completeness transport discharges the base
+completeness hypothesis, so the character and descent theorems require only
+primality of p. The characters exist for every positive degree, including
+prime degree, and send every arithmetic Frobenius lift to one in Z/n.
+
+The cochain follow-ons use Mathlib's existing quotient representation on
+invariants and its actual inhomogeneous cochain map. Inflation is injective,
+commutes with the differential, and reflects cocycles. Thus every continuous
+inhomogeneous cocycle descends to a cocycle on a finite quotient with invariant
+coefficients. Common-stage boundaries and the cohomology colimit are not
+proved by this result.
+
+**E1c7/E1d remain BLOCKED.** Fresh final audit:
+`LEAN_NUM_THREADS=2 lake env lean Scratch/LiftsW18/FinalAxioms.lean`, evidence
+`Final-axioms.log`. `IsHardlyRamified.lifts` and
+`FLT.Assembly.hardlyRamifiedLifting` retain
+`[propext, sorryAx, Classical.choice, Quot.sound]`;
+`PNat.pow_add_pow_ne_pow` retains
+`[Mazur_statement, propext, sorryAx, Classical.choice, Quot.sound]`.
+Higher principal-unit norm lifting/completeness, the continuous-cohomology
+comparison, local invariant/class formation and Kummer–Artin evaluation remain.
+Serre-weight evaluation and arbitrary-p Raynaud classification remain separate
+blocked gates. No whole-library build/lint or background build ran.
+
 ## W17 acceptance — checked 2026-10-03 04:02 UTC
 
 Thirteen new modules complete the algebraic U03b realization chain and the

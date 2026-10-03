@@ -520,3 +520,113 @@ principal-unit norm convergence, continuous cohomology comparison, the local
 invariant/class formation, or Kummer–Artin evaluation, and do not remove
 `IsHardlyRamified.lifts`. The independent Serre-weight and arbitrary-p
 Raynaud classification gates remain untouched.
+
+## W18 refinement (2026-10-03)
+
+The next leaves retain a 200-line cap and use existing constructions:
+
+- `UnramifiedDiagram`: positive degrees ordered by divisibility, finite Galois
+  stages inside the union, and a final stage functor proved from W17 cofinality.
+- `UnramifiedDegreeLimit`: apply the initial opposite functor to the explicit
+  profinite limit cone; prove the resulting equivalence has restriction coordinates.
+- `UnramifiedIntegralModel`: identify the existential integral DVR with the
+  canonical integral closure and transport formal unramifiedness; transport the
+  stage predicate across fraction-field equivalences.
+- `UnramifiedStageFrobenius`: construct arithmetic Frobenius using those canonical
+  rings and compare the diagram's transitions with W16 Frobenius restriction.
+
+The inertia step must use the existing completion-specific finite comparison
+and derive the converse finite unramifiedness from trivial inertia. No equality
+of inertia with the constructed restriction kernel is an input hypothesis.
+
+W18 inertia and character refinement, after matching the canonical models:
+
+- `UnramifiedLocalInertia` (cap 200): prove ideal inertia is trivial using
+  faithful residue action on the canonical integral closure; apply the existing
+  number-field-completion restriction comparison.
+- `UnramifiedInertiaConverse` (cap 200): from inertia fixing a finite Galois
+  field, derive ramification index one, preserve a base uniformizer, and prove
+  the canonical ring is an unramified Henselian DVR.
+- `UnramifiedInertiaKernel` (cap 200): use finite Galois subfields of the
+  inertia fixed field for the reverse inclusion; closedness of inertia turns
+  fixed-field equality into equality of restriction kernels.
+- `UnramifiedCyclicStages` (cap 200): use the actual arithmetic Frobenius as
+  the cyclic generator, obtain Z/n coordinates, and prove continuity and
+  normalization of the characters on the union's Galois group.
+- `UnramifiedCharacterDescent` (cap 200): continuous surjective restriction
+  from a compact group is a quotient map; derive unique continuous descent
+  for all inertia-trivial homomorphisms.
+- `UnramifiedCharacters` (cap 200): compose the normalized characters with
+  absolute restriction, prove inertia triviality, and show Frobenius lifts exist.
+
+The completion-specific statements retain W17's adic-completeness hypothesis
+on the base DVR. This is an arithmetic hypothesis, not an assumed residue or
+inertia comparison. The general analytic completeness transport is distinct
+from the existing `rationalCompletionIntegers_adicComplete` specialization.
+
+W18 next ready cochain leaves after U05 (cap 200 each): Mathlib already has
+`Representation.quotientToInvariants` and `quotientToInvariants_lift`, and
+`groupCohomology.cochainsMap` is already a chain map for the inhomogeneous
+complex. These APIs are not missing. `FixedCoefficientCochain` can package
+W16's descended cochain into that actual invariant coefficient module.
+`FixedCoefficientDifferential` can specialize the existing chain map,
+prove inflation injective, and reflect cocycles. This is a finite-stage
+inhomogeneous-complex comparison; a separately constructed continuous complex,
+common-stage boundaries, filtered colimits, and class formation remain distinct.
+
+## W18 proved scope and next gates
+
+Checked 2026-10-03 by the foreground per-module builds, individual lints and
+axiom audits in `Scratch/LiftsW18/`; acceptance, caps and commits are in the
+W18 section of LIFTS_GOAL_LEDGER.md. Recheck recorded evidence with
+`python3 Scratch/LiftsW18/check.py`; that checker does not rerun Lean.
+
+The limit is now explicitly indexed by positive degrees ordered by divisibility.
+Its equivalence with the union's Galois group has proved restriction coordinates.
+Canonical integral closures supply the actual DVR tower used by W16's Frobenius
+comparison, giving a compatible arithmetic Frobenius point and a union automorphism.
+
+In the number-field-completion frontend with complete base DVR, the constructed
+union equals the fixed field of existing valuation inertia. The forward finite
+comparison uses faithful residue action on the canonical integral closure. The
+converse derives ramification index one, an integral uniformizer, formal
+unramifiedness and Henselianity. Closedness of inertia identifies the restriction
+kernel, rather than merely identifying a closure of the subgroup.
+
+Normalized continuous Z/n-valued unramified characters and unique continuous
+descent of inertia-trivial homomorphisms are proved. The target is expressed as
+`Multiplicative (ZMod n)` for multiplicative Galois groups; the additive character
+law is also proved. Frobenius lifts exist, and every such lift has value one.
+`RationalUnramifiedCharacters` uses the existing rational-completion completeness
+theorem, leaving no additional completeness hypothesis at any rational prime.
+
+The two cochain leaves package W16 descent into the existing invariant coefficient
+module and quotient representation. The existing inhomogeneous cochain map gives
+injective inflation, differential compatibility and reflection of cocycles.
+Continuous inhomogeneous cocycles therefore descend to actual finite quotient
+cocycles with invariant coefficients.
+
+Next contracts to refine, each retaining cap 200:
+
+1. Common-stage boundary descent: for a continuous cochain b with d b = c,
+   construct one open normal stage carrying b and c in compatible invariant
+   coefficients and prove the finite differential equation. Do not assume a
+   common stage or a differential bridge. The completed cocycle reflection alone
+   does not identify boundaries at arbitrary independently chosen stages.
+2. Construct or identify the continuous inhomogeneous complex and the directed
+   transition maps between invariant coefficient stages; prove the filtered
+   cohomology comparison. Mathlib's quotient action and algebraic cochain map
+   already exist and are now used, so they are not missing APIs.
+3. The norm route still needs higher principal-unit graded quotients, the norm
+   as residue trace on them, successive corrections and convergence. The residue
+   unit norm and first approximation from W16 do not finish those steps.
+4. Extend the analytic completeness/valuation-ring frontend beyond the proved
+   rational specialization when required by callers. The complete-DVR and
+   number-field-completion results do not claim that independently supplied
+   valuations automatically agree.
+
+E1c7/E1d remain blocked on the outstanding reciprocity/cohomological program:
+local invariant and class formation, norm convergence, and Kummer–Artin
+evaluation. Serre-weight evaluation and arbitrary-p Raynaud classification are
+still independent blocked gates; no implementation of either was dispatched.
+The final lifting admission and final FLT axiom set are unchanged.
