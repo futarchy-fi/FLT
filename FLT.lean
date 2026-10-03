@@ -1092,7 +1092,9 @@ public import FLT.LocalClassFieldTheory.CochainOpenNormal
 public import FLT.LocalClassFieldTheory.CocycleDimensionShift
 public import FLT.LocalClassFieldTheory.CocycleRectangle
 public import FLT.LocalClassFieldTheory.CoinducedCoefficientSequence
+public import FLT.LocalClassFieldTheory.CoinducedInjectiveRestriction
 public import FLT.LocalClassFieldTheory.CoinducedNormExact
+public import FLT.LocalClassFieldTheory.CoinducedRestrictionComparison
 public import FLT.LocalClassFieldTheory.CoinducedShapiro
 public import FLT.LocalClassFieldTheory.CoinducedSubgroup
 public import FLT.LocalClassFieldTheory.CoinducedSubgroupShift
@@ -1158,6 +1160,7 @@ public import FLT.LocalClassFieldTheory.FiniteKernelCocycleCorrection
 public import FLT.LocalClassFieldTheory.FiniteRelativeCocycleDescent
 public import FLT.LocalClassFieldTheory.FiniteRelativeSaturation
 public import FLT.LocalClassFieldTheory.FiniteRelativeSequence
+public import FLT.LocalClassFieldTheory.FiniteRestrictionComparison
 public import FLT.LocalClassFieldTheory.FiniteSubgroupCocycleCorrection
 public import FLT.LocalClassFieldTheory.FixedCoefficientBoundary
 public import FLT.LocalClassFieldTheory.FixedCoefficientCochain
@@ -1260,10 +1263,16 @@ public import FLT.LocalClassFieldTheory.RationalTorsion
 public import FLT.LocalClassFieldTheory.RationalUnramifiedCharacters
 public import FLT.LocalClassFieldTheory.RelativeDegreeTorsionClass
 public import FLT.LocalClassFieldTheory.RelativeFundamentalExtension
+public import FLT.LocalClassFieldTheory.RelativeFundamentalExtensionRestriction
+public import FLT.LocalClassFieldTheory.RelativeFundamentalInflation
+public import FLT.LocalClassFieldTheory.RelativeFundamentalOrdinaryRestriction
+public import FLT.LocalClassFieldTheory.RelativeFundamentalRestriction
 public import FLT.LocalClassFieldTheory.RelativeFundamentalTateCup
+public import FLT.LocalClassFieldTheory.RelativeInflationTower
 public import FLT.LocalClassFieldTheory.RelativeLowerBound
 public import FLT.LocalClassFieldTheory.RelativeOrderInduction
 public import FLT.LocalClassFieldTheory.RelativeRestrictionKernel
+public import FLT.LocalClassFieldTheory.RelativeRestrictionTower
 public import FLT.LocalClassFieldTheory.RelativeTateClasses
 public import FLT.LocalClassFieldTheory.RelativeTateCupDegreeZero
 public import FLT.LocalClassFieldTheory.ResidueAction
@@ -1298,6 +1307,9 @@ public import FLT.LocalClassFieldTheory.TransferRestrictionHomotopy
 public import FLT.LocalClassFieldTheory.TrivialH1Characters
 public import FLT.LocalClassFieldTheory.TrivialRestrictionNaturality
 public import FLT.LocalClassFieldTheory.TwoExtensionCochainCup
+public import FLT.LocalClassFieldTheory.TwoExtensionRepresentativeIso
+public import FLT.LocalClassFieldTheory.TwoExtensionRestriction
+public import FLT.LocalClassFieldTheory.TwoExtensionSubgroupVanishing
 public import FLT.LocalClassFieldTheory.UnitHerbrand
 public import FLT.LocalClassFieldTheory.UnitNormApproximation
 public import FLT.LocalClassFieldTheory.UnitNormSequence
