@@ -1842,3 +1842,35 @@ Each new module is capped at 150 complete source lines. Dependency order:
 F04 period rings and p-adic comparison remain large missing theory; no ready
 bounded leaf is currently supplied. The compatible-family admission stays
 outside the permitted edit scope and is not discharged by object assembly.
+
+W24 kernel refinement (before object assembly, cap 150):
+`IntegralKernelEquations` identifies the kernel of a prescribed closed
+inclusion on coordinate rings with its generic closure ideal. The system's
+exactness field will then use the actual inclusion kernel, not merely an
+abstract isomorphism with a level of the same rank.
+
+W24 F05 coefficient-universe refinement (each cap 150, before implementation):
+`FiniteFlatQuotientUniverses` transports the existing finite-flat quotient
+construction across finite shrunk point modules. `FiniteCoefficientUniverses`
+then preserves flatness for finite coefficient algebras of any universe.
+`OpenPowerUniverses` handles all open ideals, `BaseChangeUniverses` handles
+the other HR clauses, and `PadicOrderUniverses` applies these to the original
+normalization. This avoids replacing the original coefficient ring by an
+unidentified isomorphic copy. Module-coordinate transport is unnecessary if
+these primitives accept the original module universe directly.
+
+W24 F06 bounded residual refinement (each cap 150):
+`TrivialQuotientKernel` computes the invariant kernel rank and determinant
+for an actual rank-two representation with a surjective trivial quotient.
+`ModThreeFiltration` applies the proved sorting quotient and cyclotomic
+determinant to the original residual representation. These retain extensions;
+they do not claim a split family member or p=3 family existence.
+
+W24 F05 stable-lattice refinement (before implementation, caps 150 each):
+`FiniteFlatSubobjectUniverses` transports the existing subobject construction
+through finite shrunk point modules. `SubquotientUniverses` combines it with
+quotients; `LatticeFlatUniverses` applies it to commensurate original lattices.
+`LatticeTransferUniverses` handles determinant, inertia and the existing tame
+quotient transport. `InitialLatticeUniverses` supplies the original integral
+lattice and the HR transfer endpoint. `PadicStableUniverses` specializes to
+the constructed normalization, retaining independent coefficient/module universes.
