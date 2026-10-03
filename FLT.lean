@@ -1209,6 +1209,7 @@ public import FLT.Mazur.PolygonCoconeComparison
 public import FLT.Mazur.PolygonCyclicAtlas
 public import FLT.Mazur.PolygonCyclicCocone
 public import FLT.Mazur.PolygonCyclicDescent
+public import FLT.Mazur.PolygonCyclicNormalizationFinite
 public import FLT.Mazur.PolygonCyclicNormalizationPullback
 public import FLT.Mazur.PolygonCyclicNormalizationRanges
 public import FLT.Mazur.PolygonCyclicPushout
@@ -1241,6 +1242,9 @@ public import FLT.Mazur.ProjectiveLineCharts
 public import FLT.Mazur.ProjectiveLineEndpoints
 public import FLT.Mazur.ProjectiveLineProductCharts
 public import FLT.Mazur.ProjectiveLineScaling
+public import FLT.Mazur.ProjectiveLineStandardCharts
+public import FLT.Mazur.ProjectiveLineStandardComparison
+public import FLT.Mazur.ProjectiveLineStandardOverlap
 public import FLT.Mazur.ProjectiveOverlapModuleLocalization
 public import FLT.Mazur.ProjectiveProductChartCover
 public import FLT.Mazur.ProjectiveProductChartOverlaps
@@ -1249,9 +1253,6 @@ public import FLT.Mazur.ProjectiveSectionExtensionCharts
 public import FLT.Mazur.ProjectiveSectionExtensionCoordinates
 public import FLT.Mazur.ProjectiveSerrePresentationTower
 public import FLT.Mazur.ProjectiveSerreVanishing
-public import FLT.Mazur.ProjectiveLineStandardCharts
-public import FLT.Mazur.ProjectiveLineStandardComparison
-public import FLT.Mazur.ProjectiveLineStandardOverlap
 public import FLT.Mazur.ProjectiveSpaceAffineBaseChange
 public import FLT.Mazur.ProjectiveSpaceCharts
 public import FLT.Mazur.ProjectiveSpaceCoefficientMap
