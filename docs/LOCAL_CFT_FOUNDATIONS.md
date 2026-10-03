@@ -1,6 +1,6 @@
 # E1c7: local reciprocity and the local invariant
 
-Source/API check: 2026-10-03, FLT base `13b878bb`, Mathlib
+Source/API check: 2026-10-03, FLT base `25750cda`, Mathlib
 `c32e1ec0d1eb5237ba344eee50162f45d5b0fc76`. This is a foundational program,
 not a claim that local class field theory fits in a 200-line adapter.
 Each proposed module below has a **200-line hard cap**. Blocked contracts
@@ -8,9 +8,78 @@ are design sketches, not elaborated declarations or certified size estimates;
 split again before implementation if a proof exceeds the cap. No missing
 theorem may become a structure field, parameter standing for E1c7, or axiom.
 
-Latest validated scope: **W31**. The full lifting goal remains unmet.
+Latest validated scope: **W32**. The full lifting goal remains unmet.
 
-## W31 proved scope
+## W32 proved scope
+
+Checked 2026-10-03T17:42:41.194685+00:00; base `25750cda`; proof head `98a7908a`.
+Read-only evidence check: `python3 Scratch/LiftsW32/check.py` checks the saved
+build/lint/axiom logs, validated source hashes, sorted imports, allowed edits
+and 200-line caps. It does not rerun Lean. The full lifting goal remains unmet.
+
+**Finite-relative fundamental classes now have proved restriction and inflation
+tower formulas. The actual local twisted extension has Tate H⁰ = H¹ = 0 after
+restriction to Gal(F/E), for a supplied finite local tower K ⊆ E ⊆ F ⊆ C.
+The degree −2 cup and the cohomological-triviality criterion remain unproved.**
+
+Twelve new modules contain 1,163 lines and 73 named declarations, including
+local tower instances. Every module is at most 132 lines. Every named
+declaration uses only `propext`, `Classical.choice` and `Quot.sound`.
+
+- `RelativeRestrictionTower` constructs the actual cochain restriction and
+  its square with inflation to the common closure. `RelativeFundamentalRestriction`
+  proves res(u_F/K) = u_F/E. The intermediate extension E/K need not be Galois.
+- `RelativeInflationTower` constructs finite inflation, proves its composition
+  law and H² injectivity. `RelativeFundamentalInflation` proves
+  inf(u_E/K) = [F:E] · u_F/K, with the positive normalization.
+- `FiniteRestrictionComparison` proves naturality of the finite continuous
+  comparison. `RelativeFundamentalOrdinaryRestriction` transports the arithmetic
+  identity to ordinary H², where the two-extension representatives live.
+- `CoinducedInjectiveRestriction` gives coset coordinates and all-degree
+  acyclicity for arbitrary injective finite group maps.
+  `CoinducedRestrictionComparison` constructs the quotient comparison and
+  proves that its actual Tate maps are isomorphisms in every degree.
+- `TwoExtensionRestriction` compares the concrete twisted short exact sequences
+  and their boundaries. `TwoExtensionRepresentativeIso` constructs inverse
+  translations for cohomologous representatives. `TwoExtensionSubgroupVanishing`
+  transports vanishing to the original restricted extension by exactness.
+- `RelativeFundamentalExtensionRestriction` applies these comparisons to the
+  chosen local representatives and proves the two adjacent vanishing groups
+  after restriction to Gal(F/E). Its local theorem assumes neither vanishing,
+  an isomorphism, nor an evaluation formula.
+
+The quotient comparison is a proved Tate isomorphism, not an asserted
+isomorphism of the two differently constructed coefficient representations.
+The final local theorem still takes the DVRs and compatible algebra towers
+as inputs. It does not yet package an arbitrary subgroup of Gal(F/K) through
+its fixed field and canonical intermediate DVR.
+
+### Next proofs after W32
+
+1. Specialize the field-wise vanishing theorem to every subgroup, constructing
+   its fixed-field/DVR instances and transporting along the actual Galois-group
+   identification. Then prove the cohomological-triviality criterion from
+   adjacent Tate vanishing on all subgroups.
+2. Apply that criterion to the twisted extension and compose its first boundary
+   with the proved coinduced shift. This must establish the degree −2 cup
+   equivalence without adding an invertibility premise.
+3. Construct finite Artin maps, prove norm and tower compatibility, prove
+   Kummer–Artin evaluation with positive Frobenius and the cup-order sign,
+   then derive E1d's annihilator statement. These remain unproved.
+
+All twelve per-module build, lint and axiom checks passed, as did the foreground
+`lake build FermatsLastTheorem`, combined import check and final goal audit.
+The rebuilt lifting theorem still depends on `sorryAx`; the FLT endpoint also
+retains `Mazur_statement`. Endpoint evidence:
+`Scratch/LiftsW32/{EndpointBuild,Integration,FinalAxioms}.{log,exit}`.
+Module evidence: `Scratch/LiftsW32/*-{build,lint,axioms}.{log,exit}`.
+Rerun each module with `python3 Scratch/LiftsW32/validate.py MODULE ...`;
+this runs foreground builds and one-module lint with `LEAN_NUM_THREADS=2`.
+
+
+## W31 proved scope (historical)
+
+The following is the W31 snapshot; its checker refers to its reported W31 head.
 
 Checked 2026-10-03T16:05:18.866549+00:00; base `114f96be`; proof head `c316c543`.
 Read-only evidence check: `python3 Scratch/LiftsW31/check.py` verifies saved
