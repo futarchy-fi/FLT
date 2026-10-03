@@ -1628,6 +1628,9 @@ public import FLT.Mazur.ModulePullbackRestrictionPasting
 public import FLT.Mazur.ModulePullbackTrivializationCoherence
 public import FLT.Mazur.ModulePullbackUnitCoherence
 public import FLT.Mazur.ModuleSheafDual
+public import FLT.Mazur.ModuleSheafDualInternalHom
+public import FLT.Mazur.ModuleSheafDualPullback
+public import FLT.Mazur.ModuleSheafDualPullbackUnit
 public import FLT.Mazur.ModuleSheafDualSheaf
 public import FLT.Mazur.ModuleSheafGluing
 public import FLT.Mazur.ModuleSheafInternalHom
@@ -1746,6 +1749,7 @@ public import FLT.Mazur.PolygonDimension
 public import FLT.Mazur.PolygonDirectImageCohomology
 public import FLT.Mazur.PolygonDivisorCoproduct
 public import FLT.Mazur.PolygonDivisorDegree
+public import FLT.Mazur.PolygonDivisorLineComparison
 public import FLT.Mazur.PolygonDivisorNormalizationPullback
 public import FLT.Mazur.PolygonDivisorPowerPullback
 public import FLT.Mazur.PolygonFieldExtension
