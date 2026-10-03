@@ -747,3 +747,34 @@ extra model data.
 | C5p4c | `RaynaudCoordinateGeneration` | The actual character projectors and counit splitting prove generation of the full coordinate algebra. |
 | C5p4d | `RaynaudCyclicPolynomialSpanning` | Cyclic degree-p relations reduce every polynomial to digit monomials; refine again if this exceeds its cap. |
 | C5p4e | `RaynaudCyclicPresentation` | The quotient-to-coordinate map is an isomorphism, using generation and the proved rank bound, not an assumed presentation. |
+
+C5p4d/e further refinement (all whole-file caps ≤150):
+`RaynaudCyclicMonomials` records elementary product/degree identities;
+`RaynaudCyclicMonomialReduction` reduces an excessive exponent by a cyclic
+relation and strict total-degree descent; `RaynaudCyclicPolynomialSpanning`
+passes from monomials to all polynomial images. `RaynaudSpanningPresentation`
+proves the finite-generator/rank criterion for an algebra map to be an
+isomorphism, without assuming the source free. `RaynaudCyclicPresentation`
+constructs the actual relation quotient and applies that criterion.
+The finite-period coordinate restriction and actual-model specialization
+will be separate ≤150-line leaves.
+
+C5p4 finite/actual leaves are `RaynaudFiniteCoordinateGeneration` and
+`RaynaudActualCyclicPresentation`, both ≤150 lines. They derive periodic
+finite generation, coefficients, rank, and the variable-preserving quotient
+isomorphism from the actual model.
+
+## W16 C5v1 refinement before implementation
+
+Each leaf has whole-file cap 150. No coordinate scaling is supplied as data.
+
+| Leaf | New module | Obligation |
+|---|---|---|
+| C5v1a | `RaynaudCharacterMorphism` | Generic scalar compatibility gives integral compatibility; derive the map on character lines and injectivity from generic surjectivity. |
+| C5v1b | `RaynaudCoordinateScalings` | Derived rank-one bases give actual nonzero integral scaling coefficients for a generically bijective map. |
+| C5v1c | `RaynaudCoefficientBounds` | The actual p-times-unit products bound the actual cyclic coefficients in the DVR valuation. |
+| C5v1d | `RaynaudScalingUnits` | Transport actual cyclic equations to the numerical valuation lemma and prove all scaling coefficients are units below the ramification bound. |
+| C5v1e | `RaynaudScalarModelIso` | Proved generation makes the domination map bijective; apply to the independently constructed extrema. |
+
+Further refinement is required before any leaf exceeds its cap. C5v2 and
+C5v3 retain their separate simple-factor and prescribed-extension obligations.

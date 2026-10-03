@@ -675,6 +675,7 @@ public import FLT.GroupScheme.QuadraticTwistPoints
 public import FLT.GroupScheme.QuadraticTwistTensor
 public import FLT.GroupScheme.QuotientFiberFreeness
 public import FLT.GroupScheme.RationalCubeValuations
+public import FLT.GroupScheme.RaynaudActualCyclicPresentation
 public import FLT.GroupScheme.RaynaudAugmentationAction
 public import FLT.GroupScheme.RaynaudAugmentationDecomposition
 public import FLT.GroupScheme.RaynaudAugmentationDerivation
@@ -705,10 +706,16 @@ public import FLT.GroupScheme.RaynaudClosureFactorization
 public import FLT.GroupScheme.RaynaudCommonStage
 public import FLT.GroupScheme.RaynaudConnectedQuotient
 public import FLT.GroupScheme.RaynaudCoordinateCharacter
+public import FLT.GroupScheme.RaynaudCoordinateGeneration
 public import FLT.GroupScheme.RaynaudCyclicCharacterEquations
+public import FLT.GroupScheme.RaynaudCyclicMonomialReduction
+public import FLT.GroupScheme.RaynaudCyclicMonomials
+public import FLT.GroupScheme.RaynaudCyclicPolynomialSpanning
+public import FLT.GroupScheme.RaynaudCyclicPresentation
 public import FLT.GroupScheme.RaynaudDVRParameterValuation
 public import FLT.GroupScheme.RaynaudDiagonalizableExtension
 public import FLT.GroupScheme.RaynaudDigitBinomialUnit
+public import FLT.GroupScheme.RaynaudDigitMonomialGeneration
 public import FLT.GroupScheme.RaynaudDirectedHenselian
 public import FLT.GroupScheme.RaynaudDirectedPolynomial
 public import FLT.GroupScheme.RaynaudDirectedUnion
@@ -726,9 +733,11 @@ public import FLT.GroupScheme.RaynaudExtremalActions
 public import FLT.GroupScheme.RaynaudExtremalCharacters
 public import FLT.GroupScheme.RaynaudFilteredExtension
 public import FLT.GroupScheme.RaynaudFiltrationLayers
+public import FLT.GroupScheme.RaynaudFiniteCoordinateGeneration
 public import FLT.GroupScheme.RaynaudFlatKernelExactness
 public import FLT.GroupScheme.RaynaudFlatQuotient
 public import FLT.GroupScheme.RaynaudFundamentalCharacter
+public import FLT.GroupScheme.RaynaudFundamentalCharacterPowers
 public import FLT.GroupScheme.RaynaudFundamentalDigitUnit
 public import FLT.GroupScheme.RaynaudFundamentalPrimeUnit
 public import FLT.GroupScheme.RaynaudGenericHopfMap
@@ -781,6 +790,7 @@ public import FLT.GroupScheme.RaynaudRootStage
 public import FLT.GroupScheme.RaynaudScalarAction
 public import FLT.GroupScheme.RaynaudScalarConvolution
 public import FLT.GroupScheme.RaynaudScalingValuation
+public import FLT.GroupScheme.RaynaudSpanningPresentation
 public import FLT.GroupScheme.RaynaudSplitting
 public import FLT.GroupScheme.RaynaudStageFamily
 public import FLT.GroupScheme.RaynaudStageFractionField
