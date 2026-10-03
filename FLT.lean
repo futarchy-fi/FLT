@@ -1145,6 +1145,7 @@ public import FLT.Mazur.NodeSmoothLocus
 public import FLT.Mazur.OneGonAffineCover
 public import FLT.Mazur.OneGonCocone
 public import FLT.Mazur.OneGonGluing
+public import FLT.Mazur.OneGonLocalDescent
 public import FLT.Mazur.OneGonLocalizedEqualizer
 public import FLT.Mazur.OneGonNormalization
 public import FLT.Mazur.OneGonNormalizationCoordinates
