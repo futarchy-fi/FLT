@@ -810,6 +810,7 @@ public import FLT.LocalClassFieldTheory.ResidueNorm
 public import FLT.LocalClassFieldTheory.ResidueNormLift
 public import FLT.LocalClassFieldTheory.UnramifiedDegree
 public import FLT.LocalClassFieldTheory.UnramifiedExistence
+public import FLT.LocalClassFieldTheory.UnramifiedNormal
 public import FLT.LocalClassFieldTheory.UnramifiedPolynomial
 public import FLT.Mathlib.Algebra.Algebra.Bilinear
 public import FLT.Mathlib.Algebra.Algebra.Equiv
