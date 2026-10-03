@@ -1255,6 +1255,7 @@ public import FLT.LocalClassFieldTheory.NormalizedOrder
 public import FLT.LocalClassFieldTheory.NormalizedTwoCocycles
 public import FLT.LocalClassFieldTheory.OneCocycleExtension
 public import FLT.LocalClassFieldTheory.OneCocycleExtensionChange
+public import FLT.LocalClassFieldTheory.OneCocycleNegativeBoundary
 public import FLT.LocalClassFieldTheory.OneCocycleScalarBoundary
 public import FLT.LocalClassFieldTheory.OrderHomScale
 public import FLT.LocalClassFieldTheory.PowerClassOrder
@@ -1306,7 +1307,9 @@ public import FLT.LocalClassFieldTheory.SolvableTateSplice
 public import FLT.LocalClassFieldTheory.SolvableTateVanishing
 public import FLT.LocalClassFieldTheory.SubgroupFixedFieldTower
 public import FLT.LocalClassFieldTheory.SubgroupNormDecomposition
+public import FLT.LocalClassFieldTheory.SubgroupRestrictionNorm
 public import FLT.LocalClassFieldTheory.SubgroupTateVanishing
+public import FLT.LocalClassFieldTheory.SubgroupTransferNorm
 public import FLT.LocalClassFieldTheory.SylowNormDetection
 public import FLT.LocalClassFieldTheory.SylowTateDetection
 public import FLT.LocalClassFieldTheory.TateClassArithmetic
@@ -1320,10 +1323,13 @@ public import FLT.LocalClassFieldTheory.TateNormVanishing
 public import FLT.LocalClassFieldTheory.TatePositiveCocycleClass
 public import FLT.LocalClassFieldTheory.TateScalarAbelianization
 public import FLT.LocalClassFieldTheory.TateScalarDegreeZero
+public import FLT.LocalClassFieldTheory.TateScalarGenerator
 public import FLT.LocalClassFieldTheory.TateScalarVanishing
 public import FLT.LocalClassFieldTheory.TateTwoClassOperation
 public import FLT.LocalClassFieldTheory.TateTwoClassZero
 public import FLT.LocalClassFieldTheory.TateTwoExtension
+public import FLT.LocalClassFieldTheory.TateZeroRestriction
+public import FLT.LocalClassFieldTheory.TateZeroTransfer
 public import FLT.LocalClassFieldTheory.TowerRefinementFibers
 public import FLT.LocalClassFieldTheory.TransferChoiceIndependence
 public import FLT.LocalClassFieldTheory.TransferCochain
@@ -1332,7 +1338,9 @@ public import FLT.LocalClassFieldTheory.TransferRepresentativeChange
 public import FLT.LocalClassFieldTheory.TransferRestrictionHomotopy
 public import FLT.LocalClassFieldTheory.TrivialH1Characters
 public import FLT.LocalClassFieldTheory.TrivialRestrictionNaturality
+public import FLT.LocalClassFieldTheory.TwoCocycleNormSum
 public import FLT.LocalClassFieldTheory.TwoExtensionCochainCup
+public import FLT.LocalClassFieldTheory.TwoExtensionNegativeEvaluation
 public import FLT.LocalClassFieldTheory.TwoExtensionRepresentativeIso
 public import FLT.LocalClassFieldTheory.TwoExtensionRestriction
 public import FLT.LocalClassFieldTheory.TwoExtensionSubgroupVanishing
