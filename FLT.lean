@@ -1247,6 +1247,7 @@ public import FLT.Mazur.ProjectiveLineScaling
 public import FLT.Mazur.ProjectiveLineStandardCharts
 public import FLT.Mazur.ProjectiveLineStandardComparison
 public import FLT.Mazur.ProjectiveLineStandardOverlap
+public import FLT.Mazur.ProjectiveLineUniversalAction
 public import FLT.Mazur.ProjectiveOverlapModuleLocalization
 public import FLT.Mazur.ProjectiveProductChartCover
 public import FLT.Mazur.ProjectiveProductChartOverlaps
