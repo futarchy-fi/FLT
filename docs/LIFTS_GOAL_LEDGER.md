@@ -4,6 +4,68 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
+## W37 proved scope — partial tower comparison
+
+**W37 proves the degree-weighted negative fundamental-cup tower comparison,
+annihilates its defect by the gcd of the two tower degrees, and identifies
+the independently constructed Artin maps for coprime towers. The unrestricted
+tower identity, positive-Frobenius evaluation, Kummer–Artin evaluation and
+E1d remain open. The lifting goal still retains `sorryAx`.**
+
+Checked 2026-10-03T21:33:16Z at integrated proof head `39f3bdba`.
+Read-only evidence check: `python3 Scratch/LiftsW37/check.py` checks saved
+exit-zero logs, source hashes, allowed edits, sorted imports and line caps;
+it does not rerun Lean. All 27 named declarations in nine new modules
+(706 lines, each <=200) use only `propext`, `Classical.choice`, `Quot.sound`.
+The required post-merge foreground `LEAN_NUM_THREADS=2 lake build FLT`
+passed (11,386 jobs), including the root import and FLT endpoint.
+
+Let `m = [F:E]`, `n = [E:K]`, and let `D(x)` denote the difference between
+`finiteTateNormTower K E F (cupF x)` and
+`cupE (tateScalarMap (AlgEquiv.restrictNormalHom E) x)`.
+
+- `relativeFundamentalOrdinaryClass_inflation` transports the proved arithmetic
+  inflation identity to the ordinary two-classes used by the cup construction.
+- `finiteTateNormTower_inflated_class` computes the negative cup of an inflated
+  class with its actual relative-degree factor, using cocycle sums.
+- `relativeFundamentalTateCup_tower_nsmul` proves `m • D(x) = 0`.
+  `relativeFundamentalTateCup_tower_gcd` strengthens this to
+  `gcd(m,n) • D(x) = 0` by proving group-order annihilation on actual Tate H⁰.
+- `relativeFundamentalTateCup_tower_of_coprime` proves the unweighted square
+  when `m.Coprime n`. Inverting the existing fundamental-cup equivalences gives
+  `finiteArtin_tower_of_coprime`, comparing the actual field-wise Artin maps
+  through the abelianized restriction of automorphisms.
+- `tateTwoClassMap_deflation_inflation` proves the quotient-level formula
+  `defl(cup(inf(a),x)) = |N| • cup(a,scalarMap(quotient,x))` on actual Tate
+  groups. Its class is explicitly inflated; it does **not** prove unscaled
+  deflation of the local fundamental class.
+
+No cup isomorphism, comparison square or evaluation is assumed. Coprimality
+is an explicit arithmetic restriction of the new unweighted theorem, not
+an assertion that arbitrary towers satisfy it. The new declarations do not
+change W36's Artin normalization or any existing Lean proof module.
+
+### Remaining work after W37
+
+1. Remove the shared-prime tower defect. W37's gcd annihilation supplies no
+   cancellation when `gcd([F:E],[E:K]) > 1`; this includes nontrivial prime-power
+   towers. Prove the unscaled fundamental-cup quotient/tower comparison, then
+   invert it to obtain the unrestricted Artin tower identity. Equal norm
+   kernels and surjectivity still do not identify the two maps.
+2. Prove unramified uniformizer evaluation with positive Frobenius. Preserve
+   the sign obligation from `cyclicCarry_negative_cup_sign`: the constructed
+   negative Tate cup sends the positive carry to the negative scalar class.
+3. Prove Kummer–Artin evaluation with the cup-order sign, then E1d's
+   annihilator statement. E1c7/E1d remain open. The later lifting gates have
+   not been reclassified or split; that re-audit remains conditional on E1
+   closing. No Serre-weight evaluation or arbitrary-p Raynaud API is assumed.
+
+The final audit at this head gives `[propext, sorryAx, Classical.choice,
+Quot.sound]` for `IsHardlyRamified.lifts` and its assembly adapter;
+`PNat.pow_add_pow_ne_pow` additionally retains `Mazur_statement`.
+Evidence: `Scratch/LiftsW37/FinalAxioms.{lean,log,exit}`.
+No approval decision is needed; this is a partial advance in the first gate.
+
 ## W36 proved scope
 
 **W36 identifies the subgroup Artin map with the independently constructed
