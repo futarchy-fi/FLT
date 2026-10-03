@@ -1013,6 +1013,7 @@ public import FLT.LocalClassFieldTheory.NormCongruence
 public import FLT.LocalClassFieldTheory.NormFirstOrder
 public import FLT.LocalClassFieldTheory.NormalizedOrder
 public import FLT.LocalClassFieldTheory.NormalizedTwoCocycles
+public import FLT.LocalClassFieldTheory.OrderHomScale
 public import FLT.LocalClassFieldTheory.PowerClassOrder
 public import FLT.LocalClassFieldTheory.PrincipalAdicLimit
 public import FLT.LocalClassFieldTheory.PrincipalNormCorrection
@@ -1020,6 +1021,7 @@ public import FLT.LocalClassFieldTheory.PrincipalNormGraded
 public import FLT.LocalClassFieldTheory.PrincipalUnitFiltration
 public import FLT.LocalClassFieldTheory.PrincipalUnitNorm
 public import FLT.LocalClassFieldTheory.PrincipalUnitResidue
+public import FLT.LocalClassFieldTheory.RamifiedOrderScale
 public import FLT.LocalClassFieldTheory.RationalCoefficientSequence
 public import FLT.LocalClassFieldTheory.RationalIntegralConnectingIso
 public import FLT.LocalClassFieldTheory.RationalTorsion
@@ -1038,7 +1040,10 @@ public import FLT.LocalClassFieldTheory.UnitNormApproximation
 public import FLT.LocalClassFieldTheory.UnitNormSequence
 public import FLT.LocalClassFieldTheory.UnitNormSurjectivity
 public import FLT.LocalClassFieldTheory.UnramifiedBaseChange
+public import FLT.LocalClassFieldTheory.UnramifiedBaseChangeCohomology
 public import FLT.LocalClassFieldTheory.UnramifiedBaseChangeEmbedding
+public import FLT.LocalClassFieldTheory.UnramifiedBaseChangeIntegral
+public import FLT.LocalClassFieldTheory.UnramifiedBaseChangeOrder
 public import FLT.LocalClassFieldTheory.UnramifiedBaseChangeRestriction
 public import FLT.LocalClassFieldTheory.UnramifiedCarryNormalization
 public import FLT.LocalClassFieldTheory.UnramifiedCarryTorsion
@@ -1085,6 +1090,7 @@ public import FLT.LocalClassFieldTheory.UnramifiedStageTower
 public import FLT.LocalClassFieldTheory.UnramifiedStages
 public import FLT.LocalClassFieldTheory.UnramifiedUniformizer
 public import FLT.LocalClassFieldTheory.UnramifiedUnion
+public import FLT.LocalClassFieldTheory.UnramifiedUnionBaseOrder
 public import FLT.LocalClassFieldTheory.UnramifiedUnionOrder
 public import FLT.LocalClassFieldTheory.UnramifiedUnionOrderExact
 public import FLT.LocalClassFieldTheory.UnramifiedUnionOrderMap
