@@ -1,5 +1,4 @@
 module  -- shake: keep-all --deprecated_module: ignore
-
 public import FLT.AINTLIB.CebotarevDensity.NumberFieldEulerProduct
 public import FLT.AINTLIB.DedekindResidue.AuxiliaryFunction
 public import FLT.AINTLIB.DedekindResidue.CompletedZeta.AnalyticControl
@@ -1311,6 +1310,7 @@ public import FLT.LocalClassFieldTheory.SolvableNormalStep
 public import FLT.LocalClassFieldTheory.SolvableTateSplice
 public import FLT.LocalClassFieldTheory.SolvableTateVanishing
 public import FLT.LocalClassFieldTheory.SubgroupFixedFieldTower
+public import FLT.LocalClassFieldTheory.SubgroupLocalField
 public import FLT.LocalClassFieldTheory.SubgroupNormDecomposition
 public import FLT.LocalClassFieldTheory.SubgroupRestrictionNorm
 public import FLT.LocalClassFieldTheory.SubgroupTateVanishing
@@ -1336,6 +1336,7 @@ public import FLT.LocalClassFieldTheory.TateScalarVanishing
 public import FLT.LocalClassFieldTheory.TateTwoClassOperation
 public import FLT.LocalClassFieldTheory.TateTwoClassZero
 public import FLT.LocalClassFieldTheory.TateTwoExtension
+public import FLT.LocalClassFieldTheory.TateZeroGroupEquivalence
 public import FLT.LocalClassFieldTheory.TateZeroRestriction
 public import FLT.LocalClassFieldTheory.TateZeroTransfer
 public import FLT.LocalClassFieldTheory.TowerRefinementFibers
@@ -1349,6 +1350,7 @@ public import FLT.LocalClassFieldTheory.TrivialRestrictionNaturality
 public import FLT.LocalClassFieldTheory.TwoCocycleNormSum
 public import FLT.LocalClassFieldTheory.TwoExtensionCochainCup
 public import FLT.LocalClassFieldTheory.TwoExtensionCorestriction
+public import FLT.LocalClassFieldTheory.TwoExtensionGroupEquivalence
 public import FLT.LocalClassFieldTheory.TwoExtensionNegativeEvaluation
 public import FLT.LocalClassFieldTheory.TwoExtensionRepresentativeIso
 public import FLT.LocalClassFieldTheory.TwoExtensionRestriction
