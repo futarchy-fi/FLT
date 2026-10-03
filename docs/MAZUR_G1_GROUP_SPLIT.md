@@ -1580,3 +1580,133 @@ and `Quot.sound`. Both checks used `LEAN_NUM_THREADS=2 lake env lean FILE`.
 The source guard found no `sorry`, `axiom` or `native_decide` in the new
 modules; all caps and sorted unique imports passed. The audit, validation
 logs and handoff remain untracked at the workspace root.
+
+## W22: geometric-fiber prerequisites
+
+The complete root prototypes `W22_PROJECTIVE_TOPOLOGY_PROOF.lean` and
+`W22_OPEN_COMPONENT_PROOF.lean` compiled before these caps were released.
+
+| Leaf | Module | Cap | Checked proof design |
+| --- | --- | ---: | --- |
+| H15a | `ProjectiveLineTopology` | 90 | The Laurent overlap is nonempty and open in each integral affine chart, hence dense; the two charts cover the glued line. Its dense irreducible image proves irreducibility. |
+| H15b | `OpenIrreducibleComponent` | 50 | A larger irreducible set meeting an open subset lies in the closure of their intersection; this proves maximality of the open subset's closure. |
+
+H15 as a whole remains unfinished: component classification, pure dimension,
+connectedness, completed-stalk nodes, and the field-extension comparison are
+separate proof obligations. No cap for those obligations is claimed yet.
+
+H15c `PolygonComponentImages` has a cap of 140 lines after the complete
+`W22_COMPONENT_IMAGES_PROOF.lean` prototype compiled. Properness over the
+separated target makes each projective-line image closed. Continuity and
+density identify that image with the Laurent-open closure. H15b proves it
+is an irreducible component; finite normalization surjectivity covers the
+polygon, and maximality identifies every irreducible component with one
+of these images. This proves classification as a set; distinctness and
+pure dimension are separate leaves.
+
+H15d `PolygonConnected` has a cap of 100 lines after the complete
+`W22_CONNECTED_PROOF.lean` prototype compiled. The cocone equations
+identify zero of component i and infinity of component i+1 with the same
+node. Indexing component images by natural numbers modulo n gives a
+chain of connected intersecting sets covering the polygon, including n=1.
+
+H15e `PolygonPureDimension` has a cap of 100 lines after the complete
+`W22_PURE_DIMENSION_PROOF.lean` prototype compiled. The Laurent ring is
+a nonzero finite-type flat algebra over K[X], giving dimension at least
+one by the existing going-down theorem. Its affine-line open immersion
+gives the upper bound. The Laurent chart embeds in its component image;
+H15c's classification and the polygon's total dimension then give the
+actual `PureDimensionOne` contract. Explicit localization instances avoid
+a typeclass-search timeout; no heartbeat limit was raised.
+
+H15f/U12c `PolygonComponentDistinct` has a cap of 100 lines after the
+complete `W22_DISTINCT_PROOF.lean` prototype compiled. Distinct Laurent
+opens remain disjoint under the cocone isomorphism; the closure of one
+is disjoint from the other open. Since each open is nonempty, their
+closures differ. H15c then gives an actual `Fin n` equivalence with the
+irreducible components. This shared prerequisite does not prove geometric
+U12's node incidence or scalar-extension compatibility.
+
+The node-completion work is split before assigning a cap to the whole
+obligation. H15g1 `AdicCompletionAlgEquiv` has a cap of 140 lines after
+`W22_COMPLETION_EQUIV_PROOF.lean` compiled, including its local-ring
+specialization. Compatible algebra isomorphisms on ideal-power quotients
+induce mutually inverse maps on the inverse-limit rings. A local algebra
+isomorphism carries the maximal ideal to the maximal ideal, so this
+transports completed local rings while retaining the coefficient algebra.
+The actual split-node and one-gon completions remain separate uncapped
+obligations; this transport theorem does not assert either node model.
+
+H15g2 `CurveNodeOpenImmersion` has a cap of 100 lines after the complete
+`W22_NODE_STALK_PROOF.lean` prototype compiled. Germ naturality proves
+that the actual open-immersion stalk map respects `CurveNode.scalarMap`.
+The stalk isomorphism and H15g1 give a base-linear completed-stalk
+isomorphism, proving `IsNode f (j x) ↔ IsNode (j ≫ f) x`. The assertion
+is about the existing completed-stalk predicate, with no replacement
+node predicate or assumed chart model. Actual chart nodes still require
+proof.
+
+H15g3 `AdicCompletionQuotientEquiv` has a cap of 100 lines after
+`W22_COMPLETION_QUOTIENT_PROOF.lean` compiled. An arbitrary compatible
+family of base-linear quotient isomorphisms induces an isomorphism of
+completions. The inverse compatibility is proved using injectivity of
+the quotient isomorphisms. This allows the maximal-ideal localization
+comparison, which is not induced by an isomorphism of the original rings.
+
+H15g4 `LocalizedAdicCompletion` has a cap of 70 lines after
+`W22_LOCALIZATION_COMPLETION_PROOF.lean` compiled. Mathlib's actual
+localization isomorphisms on all maximal-ideal-power quotients preserve
+the transition maps, as checked on quotient representatives. H15g3 then
+identifies the completion before and after localization, over the
+specified coefficient algebra.
+
+H15g5 `CurveNodeAffineCompletion` has a cap of 80 lines after
+`W22_AFFINE_COMPLETION_PROOF.lean` compiled. Naturality of the Spec
+global-section comparison identifies the canonical stalk scalars with
+`CurveNode.scalarMap`. The actual stalk is a localization at its prime;
+H15g4 applies at maximal primes. Thus the existing `IsNode` predicate is
+equivalent to a base-linear isomorphism from the affine ring's completion
+to `CurveNode.Model K`. No isomorphism to that model is assumed or supplied
+by the comparison itself.
+
+H15g6 `PolygonNodeCompletionCriterion` has a cap of 110 lines after
+`W22_NODE_CRITERION_PROOF.lean` compiled. Evaluation to K has maximal
+kernel. The previously proved exact smooth-locus complements show this
+is the unique nonsmooth point; H15g5 then proves an **equivalence**
+between `AtWorstNodes` and an explicit affine-ring completion model for
+each chart. Neither side of these equivalences is proved unconditionally
+here. The remaining algebraic isomorphisms are:
+
+```lean
+Nonempty (AdicCompletion (RingHom.ker (aEval (R := K)).toRingHom)
+  (PolygonNodeEqualizer.A (R := K)) ≃ₐ[K] CurveNode.Model K)
+Nonempty (AdicCompletion (RingHom.ker (bEval (R := K)).toRingHom)
+  (PolygonNodePresentation.B (R := K)) ≃ₐ[K] CurveNode.Model K)
+```
+
+These obligations have no published line caps: there is no complete
+compiling proof design for either one yet. In particular, the split-node
+polynomial quotient isomorphism and the one-gon plane equation do not
+by themselves construct these power-series/completion isomorphisms.
+
+### W22 status and remaining gates
+
+W22 proves component-image classification, distinctness, connectedness and
+pure dimension for every supplied positive-size polygon cocone over every
+field. It also proves base-linear completion transport through local algebra
+isomorphisms, compatible quotient isomorphisms, maximal-ideal localization,
+actual affine stalks and open charts. The two node-chart completion criteria
+are equivalences, not proofs of their right-hand sides.
+
+H15 remains unfinished. First construct the two displayed power-series
+isomorphisms, use `CurveNodeOpenImmersion.isNode_iff` on the atlas charts,
+and assemble `NodalFiberCore`. Then identify the actual field-extension
+pullback diagram with the specified components, nodes and endpoints over
+the extension field, applying `PolygonPinchingAffineBaseChange.spec_pullback`.
+Only after that can the geometric genus contract and geometric U12 be
+assembled. The moduli/arithmetic work and Mazur removal remain open.
+
+The W22 checks are reproducible by foreground `LEAN_NUM_THREADS=2 lake build
+FLT.Mazur.MODULE` and `LEAN_NUM_THREADS=2 lake exe runLinter FLT.Mazur.MODULE`
+for each of the twelve modules above, separately. Root audit scripts and
+logs remain untracked as required by the work packet.
