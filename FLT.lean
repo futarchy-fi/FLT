@@ -1150,6 +1150,7 @@ public import FLT.Mazur.OneGonLocalizedEqualizer
 public import FLT.Mazur.OneGonNormalization
 public import FLT.Mazur.OneGonNormalizationCoordinates
 public import FLT.Mazur.OneGonOverlap
+public import FLT.Mazur.OneGonPinchingDescent
 public import FLT.Mazur.OneGonQuotient
 public import FLT.Mazur.OneGonTransition
 public import FLT.Mazur.OpenDirectImageCohomology
