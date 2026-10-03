@@ -447,3 +447,19 @@ C5v2/C5v3 must pass from simple factors to the prescribed p-torsion maps.
 No presentation depending on C5 was used. The original admission in
 `IsHardlyRamified.mem_isCompatible` remains at `Family.lean:68` (checked with
 `rg -n 'mem_isCompatible|sorry' FLT/GaloisRepresentation/HardlyRamified/Family.lean`).
+
+## W14 C5p1 refinement (before implementation)
+
+Each leaf is a new whole module capped at 150 lines. Inputs are the scalar
+maps and their proved laws from C5m7, never eigenspaces or presentations.
+
+| Leaf | Module | Checkable endpoint | Cap |
+|---|---|---|---:|
+| C5p1a | `RaynaudAugmentationAction` | Restrict scalar units to the actual counit kernel and prove the representation laws. | 150 |
+| C5p1b | `RaynaudCharacterProjector` | Twist by inverse characters and use `Representation.averageMap` to construct projections onto the derived eigenspaces. | 150 |
+| C5p1c | `RaynaudHenselianCharacters` | Lift prime-to-residue-characteristic roots of unity from the separably closed residue field and obtain the scalar character system. | 150 |
+| C5p1d | `RaynaudCharacterOrthogonality` | Prove distinct projectors orthogonal from character separation. | 150 |
+| C5p1e | `RaynaudCharacterDecomposition` | Prove their sum is the identity and derive the direct-sum decomposition of the actual augmentation ideal. | 150 |
+
+C5p2–C5v3 stay open until their prerequisites are derived. Split each further
+before implementation if its whole-module proof would exceed 150 lines.
