@@ -336,3 +336,20 @@ of lifted separable residue polynomials to an existing stage; and C3e2c
 (150 lines), descending residue polynomials to a stage and transporting their
 roots into the union residue field. Final C3f packaging (150 lines) combines
 the actual family with C3d1/C3f1 and C3e2c, including the fraction-field tower.
+
+W13 C3 construction checked 2026-10-03: C3c2a is `RaynaudRootStage`
+(73/150), C3c2b is `RaynaudCommonStage` (84/150), C3e1 is
+`RaynaudRelativeResidue` (55/150), C3e2a is `RaynaudStageFamily` (100/150),
+C3e2b is `RaynaudStageResidueRoot` (53/150), C3e2c is
+`RaynaudResidueClosure` (67/150), and C3f packaging is
+`RaynaudStrictHenselian` (107/150). Individual foreground builds and
+module-only lints pass. `W13_AXIOMS.lean` checks all 22 proof declarations
+(including the new instances), each with only the three standard axioms.
+
+The family is now constructed, not supplied: all finite unramified embedded
+DVR stages preserving π form a nonempty directed family. The union is
+integral, faithfully flat, Henselian, preserves π, and has separably closed
+residue field separable over the original residue field. Its fraction field
+is constructed as an algebraic separable extension of the perfect base
+fraction field, with a compatible embedding in the prescribed closure.
+No finite-dimensionality of the infinite union is asserted.
