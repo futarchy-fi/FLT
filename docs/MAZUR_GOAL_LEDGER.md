@@ -2,6 +2,18 @@
 
 ## W24 gate audit — polygon geometry is available, arithmetic is not
 
+W24 implementation checked at 2026-10-03 11:40 UTC, commit `88312e67`:
+C1–C4 in [MAZUR_G1G2_SPLIT](MAZUR_G1G2_SPLIT.md#completed-release) are complete
+(248 lines across four new modules). Polygons now construct the existing
+classified genus-one family contract; actual smooth marked sections yield
+a finite flat relative Cartier divisor meeting every irreducible component.
+All four foreground builds and individual linters passed; all 20 originating
+declarations have only the three standard axioms, and concrete one-gon,
+two-gon/characteristic-two and arbitrary-base-change examples compiled.
+Rank, cyclic subgroup structure, ampleness and moduli remain unproved.
+The gate table below describes the audit at dispatch; these four leaves
+are its only new completed producers.
+
 Checked at 2026-10-03 11:25 UTC. GitHub main was
 `f3240f4bebb0d370e308071e153734b6dc6355d6` (`gh api
 repos/futarchy-fi/FLT/commits/main --jq .sha`). This worktree starts at

@@ -27,8 +27,8 @@ MAZUR_CONTRACTS G1-A4–A6; Stacks 062Y/0B8U as used by the existing
 ## Ordered leaves (caps include all headers/helpers)
 
 All modules are new under `FLT/Mazur/`; no conclusions are supplied as
-record fields. These are Lean sketches against named existing APIs; the
-release table below will record build-checked final signatures/results.
+record fields. These were dispatch sketches against named existing APIs; the completed
+release table below records the build-checked implementations.
 Common context for polygon leaves:
 
 ```lean
@@ -134,3 +134,41 @@ Audit every originating declaration (including helpers) with `collectAxioms`;
 allow only `propext`, `Classical.choice`, `Quot.sound`. No whole-library lint,
 no new admission, no existing Lean edits except C-sorted `FLT.lean` imports.
 Keep prototypes/logs/handoffs untracked at the root; commit locally and do not push.
+
+## Completed release
+
+Checked at 2026-10-03 11:40 UTC, proof commit `88312e67`, planning commit
+`d1703ba2`, base `17dcaf85`. All four ready leaves above are implemented.
+
+| Item | Module (`FLT/Mazur/`) | Lines/cap | Commit |
+| --- | --- | ---: | --- |
+| C1 | `PolygonClassifiedFamily` | 50/100 | `88312e67` |
+| C2 | `MultiplicativeGroupDimension` | 47/120 | `88312e67` |
+| C3 | `PolygonMarkedSections` | 75/180 | `88312e67` |
+| C4 | `PolygonBoundaryDivisor` | 76/180 | `88312e67` |
+
+Each module passed its foreground two-thread build and individual linter.
+The origin-module `collectAxioms` audit passed for all 20 declarations,
+including definitions and generated/private helpers: only `propext`,
+`Classical.choice`, `Quot.sound`. Reproduce with `lake env lean` on an audit
+file importing the four modules and `Lean.Util.CollectAxioms`: enumerate
+`env.constants.toList`, select `env.getModuleIdxFor? name == some idx`
+where `idx = env.getModuleIdx? module`, and reject any `collectAxioms name`
+entry outside that three-name set. The untracked executable audit is
+`GOAL_MAZUR_W24_AXIOM_AUDIT.lean`; output is `GOAL_MAZUR_W24_ALL_AXIOMS.txt`.
+
+`W24_CONSUMER_CONTRACT.lean` also passed in the foreground: it instantiates
+the actual constructed atlas (no supplied existence assumption), the
+one-gon support condition, two distinct marked sections on the two-gon,
+the two-gon Cartier divisor over `ZMod 2`, and arbitrary-scheme base change
+of the one-gon family. Characteristic dividing n is allowed.
+`python3 W24_CHECK_SOURCE.py` checks caps, imports, proof-token scan,
+build/lint logs, new-module scope and whitespace. These scripts and their
+logs are untracked root artifacts. No whole-library lint/build or push ran.
+
+C1 uses `Type`, matching the existing cohomology contract; C2–C4 are
+universe-polymorphic. C4 also proves an exact support/image equivalence
+and explicit flatness. This is **not yet a rank-n cyclic subgroup scheme**,
+and no arithmetic input or final Mazur dependency was removed. Next is
+the all-one divisor's rank and group-scheme identification, then cyclicity
+and its geometric/pullback compatibility; the large gates above remain.
