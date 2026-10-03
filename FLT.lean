@@ -962,6 +962,8 @@ public import FLT.LocalClassFieldTheory.ContinuousStageDiagram
 public import FLT.LocalClassFieldTheory.CyclicCarry
 public import FLT.LocalClassFieldTheory.CyclicCarryConnecting
 public import FLT.LocalClassFieldTheory.DescendedCochain
+public import FLT.LocalClassFieldTheory.DiscreteFieldUnits
+public import FLT.LocalClassFieldTheory.DiscreteIntegralUnits
 public import FLT.LocalClassFieldTheory.DiscreteOrder
 public import FLT.LocalClassFieldTheory.DiscreteOrderExact
 public import FLT.LocalClassFieldTheory.FilteredComplexDescent
@@ -984,6 +986,9 @@ public import FLT.LocalClassFieldTheory.IntegralH1Equivalence
 public import FLT.LocalClassFieldTheory.IntegralH2Characters
 public import FLT.LocalClassFieldTheory.IntegralLowDegreeComparison
 public import FLT.LocalClassFieldTheory.IntegralRationalVanishing
+public import FLT.LocalClassFieldTheory.IntegralUnitDescent
+public import FLT.LocalClassFieldTheory.IntegralUnitInvariantCohomology
+public import FLT.LocalClassFieldTheory.IntegralUnitInvariants
 public import FLT.LocalClassFieldTheory.IntegralUnitRepresentation
 public import FLT.LocalClassFieldTheory.InvariantStageTransition
 public import FLT.LocalClassFieldTheory.NormCongruence
@@ -1016,6 +1021,9 @@ public import FLT.LocalClassFieldTheory.UnramifiedCarryTorsion
 public import FLT.LocalClassFieldTheory.UnramifiedCharacterDescent
 public import FLT.LocalClassFieldTheory.UnramifiedCharacters
 public import FLT.LocalClassFieldTheory.UnramifiedCofinality
+public import FLT.LocalClassFieldTheory.UnramifiedContinuousOrderH2
+public import FLT.LocalClassFieldTheory.UnramifiedContinuousOrderSequence
+public import FLT.LocalClassFieldTheory.UnramifiedContinuousUnits
 public import FLT.LocalClassFieldTheory.UnramifiedCyclicStages
 public import FLT.LocalClassFieldTheory.UnramifiedDegree
 public import FLT.LocalClassFieldTheory.UnramifiedDegreeLimit
@@ -1032,18 +1040,29 @@ public import FLT.LocalClassFieldTheory.UnramifiedIntegralH2
 public import FLT.LocalClassFieldTheory.UnramifiedIntegralH2Additive
 public import FLT.LocalClassFieldTheory.UnramifiedIntegralModel
 public import FLT.LocalClassFieldTheory.UnramifiedLocalInertia
+public import FLT.LocalClassFieldTheory.UnramifiedMultiplicativeInflation
+public import FLT.LocalClassFieldTheory.UnramifiedMultiplicativeInvariant
 public import FLT.LocalClassFieldTheory.UnramifiedNormal
+public import FLT.LocalClassFieldTheory.UnramifiedOpenStages
 public import FLT.LocalClassFieldTheory.UnramifiedOrderCohomology
+public import FLT.LocalClassFieldTheory.UnramifiedOrderInflation
 public import FLT.LocalClassFieldTheory.UnramifiedOrderMap
+public import FLT.LocalClassFieldTheory.UnramifiedOrderRestriction
+public import FLT.LocalClassFieldTheory.UnramifiedOrderSection
 public import FLT.LocalClassFieldTheory.UnramifiedOrderSequence
 public import FLT.LocalClassFieldTheory.UnramifiedOrderTower
 public import FLT.LocalClassFieldTheory.UnramifiedPolynomial
 public import FLT.LocalClassFieldTheory.UnramifiedStageFrobenius
 public import FLT.LocalClassFieldTheory.UnramifiedStageOrderH2
+public import FLT.LocalClassFieldTheory.UnramifiedStageOrderMaps
 public import FLT.LocalClassFieldTheory.UnramifiedStageTower
 public import FLT.LocalClassFieldTheory.UnramifiedStages
 public import FLT.LocalClassFieldTheory.UnramifiedUniformizer
 public import FLT.LocalClassFieldTheory.UnramifiedUnion
+public import FLT.LocalClassFieldTheory.UnramifiedUnionOrder
+public import FLT.LocalClassFieldTheory.UnramifiedUnionOrderExact
+public import FLT.LocalClassFieldTheory.UnramifiedUnionOrderMap
+public import FLT.LocalClassFieldTheory.UnramifiedUnionUnits
 public import FLT.LocalClassFieldTheory.UnramifiedUniqueness
 public import FLT.LocalClassFieldTheory.UnramifiedUnitAcyclic
 public import FLT.LocalClassFieldTheory.UnramifiedUnitCyclicExact
@@ -1387,6 +1406,7 @@ public import FLT.Mazur.CuspCollision
 public import FLT.Mazur.CuspOrderNumerator
 public import FLT.Mazur.CyclicNodeChart
 public import FLT.Mazur.CyclicNormalizationExact
+public import FLT.Mazur.CyclicOverlapGraph
 public import FLT.Mazur.CyclicPinchingProduct
 public import FLT.Mazur.CyclicPinchingRotation
 public import FLT.Mazur.CyclicProductDescent
@@ -1394,6 +1414,7 @@ public import FLT.Mazur.CyclicProductEndpoints
 public import FLT.Mazur.CyclicProductNormalization
 public import FLT.Mazur.DRFiberClassification
 public import FLT.Mazur.DirectImageInjectives
+public import FLT.Mazur.DisjointStructureCohomology
 public import FLT.Mazur.DivisorInvertibleSheaf
 public import FLT.Mazur.DivisorLineBundle
 public import FLT.Mazur.DivisorLineBundleRestrict
@@ -1433,6 +1454,7 @@ public import FLT.Mazur.IncreasingCechComplex
 public import FLT.Mazur.InjectiveHorseshoe
 public import FLT.Mazur.IntegralBase
 public import FLT.Mazur.IntegralClosedSupport
+public import FLT.Mazur.IntegralDimension
 public import FLT.Mazur.LaurentUnitPoints
 public import FLT.Mazur.LocalizationCech
 public import FLT.Mazur.LocalizationCechCompare
@@ -1513,6 +1535,7 @@ public import FLT.Mazur.OneGonNormalizationFinite
 public import FLT.Mazur.OneGonNormalizationPullback
 public import FLT.Mazur.OneGonNormalizationTorus
 public import FLT.Mazur.OneGonOverlap
+public import FLT.Mazur.OneGonOverlapGraph
 public import FLT.Mazur.OneGonPinchingDescent
 public import FLT.Mazur.OneGonPinchingProduct
 public import FLT.Mazur.OneGonProductDescent
@@ -1521,7 +1544,9 @@ public import FLT.Mazur.OneGonProductNormalization
 public import FLT.Mazur.OneGonProductTorus
 public import FLT.Mazur.OneGonQuotient
 public import FLT.Mazur.OneGonScalarExtension
+public import FLT.Mazur.OneGonSeparated
 public import FLT.Mazur.OneGonTransition
+public import FLT.Mazur.OpenCoverDimension
 public import FLT.Mazur.OpenDirectImageCohomology
 public import FLT.Mazur.OpenDirectImageNaturality
 public import FLT.Mazur.OpenDirectImageRestriction
@@ -1549,6 +1574,8 @@ public import FLT.Mazur.PolygonAtlasSmoothLocus
 public import FLT.Mazur.PolygonBranchDifferenceSheaf
 public import FLT.Mazur.PolygonChartScaling
 public import FLT.Mazur.PolygonCoconeComparison
+public import FLT.Mazur.PolygonCohomologyIncidence
+public import FLT.Mazur.PolygonConstantSections
 public import FLT.Mazur.PolygonCyclicAtlas
 public import FLT.Mazur.PolygonCyclicCocone
 public import FLT.Mazur.PolygonCyclicDescent
@@ -1556,9 +1583,15 @@ public import FLT.Mazur.PolygonCyclicNormalizationFinite
 public import FLT.Mazur.PolygonCyclicNormalizationPullback
 public import FLT.Mazur.PolygonCyclicNormalizationRanges
 public import FLT.Mazur.PolygonCyclicPushout
+public import FLT.Mazur.PolygonCyclicSeparated
+public import FLT.Mazur.PolygonDimension
+public import FLT.Mazur.PolygonDirectImageCohomology
+public import FLT.Mazur.PolygonGenusOne
+public import FLT.Mazur.PolygonHZeroIncidence
 public import FLT.Mazur.PolygonIncidence
 public import FLT.Mazur.PolygonIncidenceQuotient
 public import FLT.Mazur.PolygonNodeBranches
+public import FLT.Mazur.PolygonNodeDimension
 public import FLT.Mazur.PolygonNodeEqualizer
 public import FLT.Mazur.PolygonNodeLocalization
 public import FLT.Mazur.PolygonNodePresentation
@@ -1570,6 +1603,7 @@ public import FLT.Mazur.PolygonNormalizationComplex
 public import FLT.Mazur.PolygonNormalizationDominant
 public import FLT.Mazur.PolygonNormalizationExact
 public import FLT.Mazur.PolygonNormalizationFinite
+public import FLT.Mazur.PolygonNormalizationHOne
 public import FLT.Mazur.PolygonNormalizationHZero
 public import FLT.Mazur.PolygonNormalizationTransport
 public import FLT.Mazur.PolygonPinchingAffineBaseChange
@@ -1577,7 +1611,9 @@ public import FLT.Mazur.PolygonPinchingDiagram
 public import FLT.Mazur.PolygonPinchingFlatBaseChange
 public import FLT.Mazur.PolygonPinchingTensor
 public import FLT.Mazur.PolygonProductAtlas
+public import FLT.Mazur.PolygonProper
 public import FLT.Mazur.PolygonScalingNaturality
+public import FLT.Mazur.PolygonSeparated
 public import FLT.Mazur.PolygonSmoothLocus
 public import FLT.Mazur.PolygonSplitGroup
 public import FLT.Mazur.PolygonStructureInclusion
@@ -1674,6 +1710,7 @@ public import FLT.Mazur.ScalarCohomology
 public import FLT.Mazur.SchematicDescentGluing
 public import FLT.Mazur.SchemeCohomologyIso
 public import FLT.Mazur.SchemeCohomologyIsoCocycles
+public import FLT.Mazur.SchemeCoproductCohomology
 public import FLT.Mazur.SchemeCoproductSections
 public import FLT.Mazur.SectionCharts
 public import FLT.Mazur.SectionDivisors
@@ -1683,6 +1720,7 @@ public import FLT.Mazur.SegreChartMaps
 public import FLT.Mazur.SegreChartQuotient
 public import FLT.Mazur.SegreClosedImmersion
 public import FLT.Mazur.SegreSchemeMorphism
+public import FLT.Mazur.SeparatedOpenCover
 public import FLT.Mazur.SmoothCurveDimension
 public import FLT.Mazur.SmoothDimension
 public import FLT.Mazur.SmoothDimensionBound
@@ -1695,6 +1733,7 @@ public import FLT.Mazur.StructureImageOpenChart
 public import FLT.Mazur.SurjectiveDominantEpi
 public import FLT.Mazur.TernaryOpenDescent
 public import FLT.Mazur.TildePrincipalOpen
+public import FLT.Mazur.UniversallyClosedFiniteCover
 public import FLT.MazurChapter.AdmissibleGroupSchemes
 public import FLT.MazurW
 public import FLT.MazurWOfPrimeTorsion
