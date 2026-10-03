@@ -690,6 +690,7 @@ public import FLT.GroupScheme.RaynaudCharacterDifferenceOperator
 public import FLT.GroupScheme.RaynaudCharacterDuality
 public import FLT.GroupScheme.RaynaudCharacterFactorial
 public import FLT.GroupScheme.RaynaudCharacterFunctions
+public import FLT.GroupScheme.RaynaudCharacterMonomials
 public import FLT.GroupScheme.RaynaudCharacterOrthogonality
 public import FLT.GroupScheme.RaynaudCharacterParameterProduct
 public import FLT.GroupScheme.RaynaudCharacterParameterUnits
@@ -707,6 +708,7 @@ public import FLT.GroupScheme.RaynaudCoordinateCharacter
 public import FLT.GroupScheme.RaynaudCyclicCharacterEquations
 public import FLT.GroupScheme.RaynaudDVRParameterValuation
 public import FLT.GroupScheme.RaynaudDiagonalizableExtension
+public import FLT.GroupScheme.RaynaudDigitBinomialUnit
 public import FLT.GroupScheme.RaynaudDirectedHenselian
 public import FLT.GroupScheme.RaynaudDirectedPolynomial
 public import FLT.GroupScheme.RaynaudDirectedUnion
@@ -745,6 +747,12 @@ public import FLT.GroupScheme.RaynaudLayerDescent
 public import FLT.GroupScheme.RaynaudMaximalExtension
 public import FLT.GroupScheme.RaynaudMaximalModel
 public import FLT.GroupScheme.RaynaudMinimalModel
+public import FLT.GroupScheme.RaynaudMixedCharacterAverage
+public import FLT.GroupScheme.RaynaudMixedCharacterParameters
+public import FLT.GroupScheme.RaynaudMixedDigitParameters
+public import FLT.GroupScheme.RaynaudMixedDigitUnit
+public import FLT.GroupScheme.RaynaudMixedPowerConstant
+public import FLT.GroupScheme.RaynaudMixedRankOneConvolution
 public import FLT.GroupScheme.RaynaudModelArithmetic
 public import FLT.GroupScheme.RaynaudModelUpperBound
 public import FLT.GroupScheme.RaynaudNakayamaDescent
@@ -752,6 +760,8 @@ public import FLT.GroupScheme.RaynaudOrderNineExtension
 public import FLT.GroupScheme.RaynaudOrderThreeFiltration
 public import FLT.GroupScheme.RaynaudPairedCharacterBases
 public import FLT.GroupScheme.RaynaudParameterValuation
+public import FLT.GroupScheme.RaynaudPowerCharacterDifference
+public import FLT.GroupScheme.RaynaudPowerCharacterOrthogonality
 public import FLT.GroupScheme.RaynaudProductExtension
 public import FLT.GroupScheme.RaynaudQuotientFiberFreeness
 public import FLT.GroupScheme.RaynaudQuotientFlatness
