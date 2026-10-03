@@ -622,3 +622,30 @@ of finite differences involving only finite-field addition and characters.
 coefficients and their universal product. The proof uses the actual
 addition-by-convolution law, not an assumed parameter identity. This
 repeated-character endpoint does not yet cover mixed digit products.
+
+C5p3e single-character factorial refinement before implementation (each
+≤150 lines): `RaynaudCharacterDifferenceOperator` bundles the normalized
+finite difference and expands it on monomials; `RaynaudCharacterFactorial`
+proves its triangular iteration has diagonal n! when the character comes
+from a field embedding; `RaynaudFundamentalDigitUnit` reduces the lifted
+fundamental character and derives units for repetitions below p. This
+single-character calculation does not assume or prove the mixed-digit unit
+statement, or the fundamental quotient-by-p unit statement.
+
+C5p3e fundamental-quotient refinement before implementation (each ≤150
+lines): `RaynaudAugmentationDerivation` evaluates additive characters as
+derivations at the augmentation; `RaynaudDividedPowerSums` controls divided
+p-th powers under addition and scalar multiplication; subsequent capped
+leaves must calculate a group generator's divided power and apply the
+result to the formal average. The intended residue of the resulting
+quotient is -1. None of these intermediate lemmas may assume that the
+fundamental constant is p times a unit.
+
+W15 arithmetic prerequisites checked 2026-10-03: the six modules through
+`RaynaudFundamentalDigitUnit` pass foreground builds, individual lints and
+`W15_ARITHMETIC_AXIOMS.lean` (22 declarations; only the three permitted
+axioms). `prime_dvd_constant` proves p-divisibility in R itself by passage
+to R/(p). `fundamental_constant_residue` proves the n! residue, and
+`isUnit_fundamental_digit_constant` proves the single-character constants
+are units for 0 < n < p. Neither theorem claims the mixed-digit calculation
+or the p-fold quotient's being a unit.

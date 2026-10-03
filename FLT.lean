@@ -673,13 +673,17 @@ public import FLT.GroupScheme.RaynaudAugmentationRank
 public import FLT.GroupScheme.RaynaudBiduality
 public import FLT.GroupScheme.RaynaudCartierCharacterDuality
 public import FLT.GroupScheme.RaynaudCartierDual
+public import FLT.GroupScheme.RaynaudCharacterConstantBaseChange
 public import FLT.GroupScheme.RaynaudCharacterCoordinates
 public import FLT.GroupScheme.RaynaudCharacterDecomposition
+public import FLT.GroupScheme.RaynaudCharacterDifferenceOperator
 public import FLT.GroupScheme.RaynaudCharacterDuality
+public import FLT.GroupScheme.RaynaudCharacterFactorial
 public import FLT.GroupScheme.RaynaudCharacterFunctions
 public import FLT.GroupScheme.RaynaudCharacterOrthogonality
 public import FLT.GroupScheme.RaynaudCharacterParameterProduct
 public import FLT.GroupScheme.RaynaudCharacterPowers
+public import FLT.GroupScheme.RaynaudCharacterPrimeDivisibility
 public import FLT.GroupScheme.RaynaudCharacterProjector
 public import FLT.GroupScheme.RaynaudCharacterProportionality
 public import FLT.GroupScheme.RaynaudCharacterRankOne
@@ -708,6 +712,7 @@ public import FLT.GroupScheme.RaynaudFiltrationLayers
 public import FLT.GroupScheme.RaynaudFlatKernelExactness
 public import FLT.GroupScheme.RaynaudFlatQuotient
 public import FLT.GroupScheme.RaynaudFundamentalCharacter
+public import FLT.GroupScheme.RaynaudFundamentalDigitUnit
 public import FLT.GroupScheme.RaynaudGenericHopfMap
 public import FLT.GroupScheme.RaynaudGenericSplitExtension
 public import FLT.GroupScheme.RaynaudHenselianCharacters
@@ -759,6 +764,7 @@ public import FLT.GroupScheme.RaynaudTorsionFiltration
 public import FLT.GroupScheme.RaynaudTorsorDescent
 public import FLT.GroupScheme.RaynaudTwoCoordinates
 public import FLT.GroupScheme.RaynaudUniversalCharacterConstant
+public import FLT.GroupScheme.RaynaudUniversalConvolutionAlgebra
 public import FLT.GroupScheme.RaynaudUniversalParameterProduct
 public import FLT.GroupScheme.RaynaudUnramifiedKernel
 public import FLT.GroupScheme.RaynaudUnramifiedQuotient
