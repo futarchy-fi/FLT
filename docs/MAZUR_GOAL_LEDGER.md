@@ -1,4 +1,36 @@
-# GOAL-M0: Mazur input to positive-natural FLT
+# Mazur input to positive-natural FLT
+
+## W14 frontier (supersedes the historical dispatch below)
+
+Checked 2026-10-03 at local base `8425864c`; source checks and the complete new
+split are in [MAZUR_G1_GROUP_SPLIT](MAZUR_G1_GROUP_SPLIT.md). This is a local
+branch audit, not a fresh audit of GitHub main or the final compiled theorem.
+
+- M1-G, M1-H, M2-N, R1–R3, P1–P5 and group G1–G4 are implemented.
+- G5/E1–E5 is complete: `PolygonCoconeComparison`,
+  `PolygonAtlasSmoothLocus`, `PolygonSmoothLocus` give the specified polygon
+  comparison, exact smooth locus and its commutative group. The geometry
+  split lists the node/one-gon atlas and descent prerequisites.
+- W14 completed U1 scaling naturality (105/160, `3b763ba8`), U2 node scaling
+  (139/240, `005eeca7`), H1 incidence kernel/cokernel (75/160, `d8a4622f`).
+  Checked 2026-10-03 01:40 UTC: each module build/lint passed; all 64 new
+  declarations passed the axiom audit reproduced in the group split.
+  The phase split was committed first as `dc83a262`. All caps include helpers.
+- U3–U12 whole-polygon action and its base-change laws, H2–H15 normalization
+  sheaves/cohomology/properness/dimension/genus are blocked as detailed there.
+  The proposed cap is 240 per module; unresolved helper proofs must be split
+  before dispatch. Constant-unit actions do not establish the relative action.
+- Full G1 moduli, G2 Eisenstein arithmetic and A1–A5 remain large source-design
+  gates. Older 400/500-line budgets below are historical, not current releases.
+- `rg -n "^axiom Mazur_statement" FLT/Assumptions/Mazur.lean` still returns
+  line 103. `ExistingInputs` still uses `mazur_W`, and the final theorem still
+  passes that input. No claim of removing the dependency is made.
+
+The final path is: prove `NoLargePrimeTorsion`, rewire the existing adapter,
+then rebuild and axiom-audit `PNat.pow_add_pow_ne_pow`. Editing that existing
+Lean consumer is outside W14 authorization. Other final admissions are separate.
+
+## Historical M0 audit and source ledger
 
 Checked 2026-09-30 18:05 UTC against GitHub main `c557fcd66261f7de888076c086a7eb28df6539af`
 (`gh api repos/futarchy-fi/FLT/commits/main --jq .sha`), equal to this task's base.
