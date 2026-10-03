@@ -938,3 +938,120 @@ No action or Mazur removal is claimed. Checked source evidence still shows
 axiom audit of `PNat.pow_add_pow_ne_pow`. Full G1 moduli, G2 arithmetic and the
 remaining assembly work are also unproved; existing-consumer edits remain
 outside the new-module-only authorization.
+
+
+## W18 checked transport design
+
+`W18_TRANSPORT_PROOF.lean` and `W18_PUSHOUT_PROOF.lean` compile in full
+before release (2026-10-03). U6e1 `PinchingPullbackTransport` has cap 140:
+compare parameter-first products with `Over.pullback` using pullback symmetry
+and functorial isomorphisms; pull a cocone equation back to both branch sections;
+prove the node leg split epic after any base change. A general categorical
+criterion then reduces the pushout universal property to unique normalization
+descent. No preservation of a pinching pushout is assumed.
+
+`W18_CYCLIC_TRANSPORT_PROOF.lean` compiles in full before release.
+U6e2 `CyclicPinchingProduct` has cap 160. The coproduct comparison and
+pullback symmetry identify normalization and each endpoint. Apply W17 global
+descent to the transported cocone, use `desc_toBase` for the over-morphism,
+and invoke U6e1's split-leg criterion. The conclusion is the specified
+`Over.pullback` pushout for every coefficient algebra and every n ≥ 2.
+
+`W18_ONEGON_TRANSPORT_PROOF.lean` compiles in full before release.
+U6e3 `OneGonPinchingProduct` has cap 150. The singleton coproduct comparison
+identifies the normalization and its zero/infinity sections. W17 one-gon
+descent supplies the over-morphism, and U6e1 supplies the node factorization.
+This proves the specified affine-parameter pushout also for n = 1.
+
+`W18_AFFINE_PROOF.lean` compiles in full before release. U6e4
+`PolygonPinchingAffineBaseChange` has cap 130. Combine n = 1 and n ≥ 2 using
+the atlas isomorphisms, then use `polygonIso` for an arbitrary supplied cocone.
+For any map from `Spec S`, recover its algebra using `Spec.preimage`; for
+an arbitrary affine scheme, reflect the pushout along pullback by `isoSpec.inv`,
+an equivalence, and transport through `Over.pullbackComp`. This proves U6
+for every affine scheme base, including nonreduced coefficient rings.
+
+`W18_LOCALITY_PROOF.lean` compiles before release. U6e5
+`OverPullbackLocalPushout` has cap 110. The underlying map of a pulled-back
+over-morphism forms the expected cartesian square. Pull the base cover back
+to the target, use local pushout descents and that square for factorization,
+then invoke schematic descent gluing. Cancellation recovers the structure
+map and proves uniqueness. This is a generic locality lemma with geometric
+hypotheses, not an assumed preservation result for the pinching square.
+
+`W18_FLAT_PROOF.lean` compiles in full before release. U6e6
+`PolygonPinchingFlatBaseChange` has cap 120. The specified polygon is reduced;
+its finite surjective normalization is schematically dominant. The cartesian
+square from U6e5 preserves these properties under flat base change. On every
+member of the parameter's affine cover, U6e4 and `Over.pullbackComp` give the
+local pushout; U6e5 glues descent. U6e1 supplies the node factorization.
+Finally `polygonIso` transports to any supplied pinching cocone. This closes
+the exact U6 contract for arbitrary scheme bases with a flat structure map.
+
+`W18_TENSOR_PROOF.lean` compiles before release. U7a
+`PolygonPinchingTensor` has cap 80. Apply U6, postcompose the structure map
+back to `Spec K` (a colimit-preserving functor), and transport through pullback
+symmetry. The result is the exact pinching pushout after tensoring on the
+left by any flat parameter object, including the split smooth group.
+
+`W18_ENDPOINT_ACTION_PROOF.lean` compiles before release. U7b
+`ProjectiveLineActionEndpoints` has cap 110. Precompose with the inverse
+right unitor, identify the resulting product section by its two projections,
+and apply U5's zero/infinity formulas. These are the endpoint equations on
+the actual monoidal products needed to check U7's cocone.
+
+`W18_ACTION_PROOF.lean` compiles in full before release. U7c
+`PolygonUniversalAction` has cap 150. G4's product/coproduct colimit defines
+the normalization and node inputs. U7b fixes the endpoints; `rotateIndex_next`
+handles infinity on the successor component. U7a descends this cocone to
+`G ⊗ C ⟶ C`, with proved normalization, node and individual-component formulas.
+This closes U7's morphism construction, not its unit or associativity laws.
+
+`W18_SPECIALIZE_PROOF.lean` compiles in full before release. U8a
+`ProjectiveLineActionSpecialization` has cap 160. The product projections
+identify constant-unit specialization on each polynomial chart; U1's
+specialization identities give the existing projective-line scaling. Laurent
+generators identify the Hopf counit with evaluation at one. Comparing the
+monoidal product map with this specialization proves the projective-line
+unit law. This also supplies constant-unit formulas needed by U12.
+
+`W18_UNIT_PROOF.lean` compiles before release. U8b `PolygonActionUnit`
+has cap 80. The split node leg makes normalization epic. Precompose with
+the inverse left unitor and with normalization; on every component, U7's
+formula and U8a's projective-line unit law give the identity. This closes U8.
+
+### W18 validated outcome (2026-10-03 05:19 UTC)
+
+U6–U8 are proved; U9–U12 remain unfinished. Implementation commits:
+`5a495164` (U6) and `95ba78a7` (U7/U8).
+
+| Item | Module under `FLT/Mazur/` | Lines/cap | Commit |
+| --- | --- | --- | --- |
+| U6e1 | `PinchingPullbackTransport` | 95/140 | `5a495164` |
+| U6e2 | `CyclicPinchingProduct` | 125/160 | `5a495164` |
+| U6e3 | `OneGonPinchingProduct` | 113/150 | `5a495164` |
+| U6e4 | `PolygonPinchingAffineBaseChange` | 91/130 | `5a495164` |
+| U6e5 | `OverPullbackLocalPushout` | 69/110 | `5a495164` |
+| U6e6 | `PolygonPinchingFlatBaseChange` | 81/120 | `5a495164` |
+| U7a | `PolygonPinchingTensor` | 45/80 | `95ba78a7` |
+| U7b | `ProjectiveLineActionEndpoints` | 81/110 | `95ba78a7` |
+| U7c | `PolygonUniversalAction` | 105/150 | `95ba78a7` |
+| U8a | `ProjectiveLineActionSpecialization` | 130/160 | `95ba78a7` |
+| U8b | `PolygonActionUnit` | 50/80 | `95ba78a7` |
+
+Checks: foreground `LEAN_NUM_THREADS=2 lake build FLT.Mazur.MODULE` and
+`LEAN_NUM_THREADS=2 lake exe runLinter FLT.Mazur.MODULE` for each module
+separately; all final runs exit 0 without warnings.
+`GOAL_MAZUR_W18_AXIOM_AUDIT.lean` checks all 137 originating declarations,
+including generated helpers, using only the standard three axioms.
+`W18_REMAINING_CONTRACT.lean` checks the proved U6/U7/U8 declarations and
+the unproved universal projective-line associativity and torus equations.
+The latter are propositions, not theorems.
+
+The next proof gate is the two-parameter projective-line action law over the
+actual group product, followed by its torus multiplication formula. These
+are needed to descend polygon associativity and identify smooth restriction.
+Constant-unit specialization and the unit law do not discharge that gate.
+U11 base-change action laws and U12 translation/graph identification remain
+separate obligations. No caps for these remaining proofs are released here.
+The Mazur assumption and existing assembly consumers are unchanged.
