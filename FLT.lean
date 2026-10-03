@@ -1711,8 +1711,10 @@ public import FLT.Mazur.ModuleCohomologyExact
 public import FLT.Mazur.ModuleCohomologyRing
 public import FLT.Mazur.ModuleCohomologyVanishing
 public import FLT.Mazur.ModuleDerivedAbelianComparison
+public import FLT.Mazur.ModuleDualSectionCancellation
 public import FLT.Mazur.ModuleExactOpenCover
 public import FLT.Mazur.ModuleFreeOpen
+public import FLT.Mazur.ModuleGlobalSectionPullback
 public import FLT.Mazur.ModuleInjectiveFlasque
 public import FLT.Mazur.ModuleLineBundlePullback
 public import FLT.Mazur.ModuleLineBundleTensorPullback
@@ -1933,6 +1935,7 @@ public import FLT.Mazur.ProjectiveLineFieldExtension
 public import FLT.Mazur.ProjectiveLineMarkedCharts
 public import FLT.Mazur.ProjectiveLineMarkedDualCoordinates
 public import FLT.Mazur.ProjectiveLineMarkedPullbackCoordinates
+public import FLT.Mazur.ProjectiveLineMarkedSectionTransition
 public import FLT.Mazur.ProjectiveLineMarkedTransition
 public import FLT.Mazur.ProjectiveLineProductCharts
 public import FLT.Mazur.ProjectiveLineProductOverlap
