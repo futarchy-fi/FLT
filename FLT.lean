@@ -1243,11 +1243,13 @@ public import FLT.LocalClassFieldTheory.ScalarCochainCup
 public import FLT.LocalClassFieldTheory.SixTermCard
 public import FLT.LocalClassFieldTheory.SolvableFieldStep
 public import FLT.LocalClassFieldTheory.SolvableNormalStep
+public import FLT.LocalClassFieldTheory.SubgroupFixedFieldTower
 public import FLT.LocalClassFieldTheory.TateClassArithmetic
 public import FLT.LocalClassFieldTheory.TateCocycleClass
 public import FLT.LocalClassFieldTheory.TateCupComparison
 public import FLT.LocalClassFieldTheory.TateCupUnit
 public import FLT.LocalClassFieldTheory.TateExactSequence
+public import FLT.LocalClassFieldTheory.TateGroupEquivalence
 public import FLT.LocalClassFieldTheory.TatePositiveCocycleClass
 public import FLT.LocalClassFieldTheory.TateScalarDegreeZero
 public import FLT.LocalClassFieldTheory.TateScalarVanishing
