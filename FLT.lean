@@ -307,6 +307,7 @@ public import FLT.GaloisRepresentation.Extensions.ContinuousCocycleCoordinates
 public import FLT.GaloisRepresentation.Extensions.FiniteDescent
 public import FLT.GaloisRepresentation.Extensions.LiftBasisTransport
 public import FLT.GaloisRepresentation.Extensions.LiftCocycle
+public import FLT.GaloisRepresentation.Extensions.LinearContinuousClass
 public import FLT.GaloisRepresentation.HardlyRamified.AbsIrredAdapter
 public import FLT.GaloisRepresentation.HardlyRamified.AbsoluteIrreducibility
 public import FLT.GaloisRepresentation.HardlyRamified.AtTwo
