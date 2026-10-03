@@ -1242,6 +1242,7 @@ public import FLT.Mazur.ProjectiveGenerationEventually
 public import FLT.Mazur.ProjectiveLineCharts
 public import FLT.Mazur.ProjectiveLineEndpoints
 public import FLT.Mazur.ProjectiveLineProductCharts
+public import FLT.Mazur.ProjectiveLineProductOverlap
 public import FLT.Mazur.ProjectiveLineScaling
 public import FLT.Mazur.ProjectiveLineStandardCharts
 public import FLT.Mazur.ProjectiveLineStandardComparison
