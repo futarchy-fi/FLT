@@ -1031,7 +1031,9 @@ public import FLT.LocalClassFieldTheory.AdicSeriesField
 public import FLT.LocalClassFieldTheory.CochainFiniteImage
 public import FLT.LocalClassFieldTheory.CochainHomologyClass
 public import FLT.LocalClassFieldTheory.CochainOpenNormal
+public import FLT.LocalClassFieldTheory.CocycleDimensionShift
 public import FLT.LocalClassFieldTheory.CocycleRectangle
+public import FLT.LocalClassFieldTheory.CoinducedCoefficientSequence
 public import FLT.LocalClassFieldTheory.ConnectingCoefficientNaturality
 public import FLT.LocalClassFieldTheory.ConnectingCupCompatibility
 public import FLT.LocalClassFieldTheory.ConnectingRestrictionNaturality
@@ -1174,6 +1176,7 @@ public import FLT.LocalClassFieldTheory.NormalLatticeOpen
 public import FLT.LocalClassFieldTheory.NormalLatticePower
 public import FLT.LocalClassFieldTheory.NormalizedOrder
 public import FLT.LocalClassFieldTheory.NormalizedTwoCocycles
+public import FLT.LocalClassFieldTheory.OneCocycleExtension
 public import FLT.LocalClassFieldTheory.OrderHomScale
 public import FLT.LocalClassFieldTheory.PowerClassOrder
 public import FLT.LocalClassFieldTheory.PrincipalAdicLimit
@@ -1205,6 +1208,8 @@ public import FLT.LocalClassFieldTheory.RestrictionSurjective
 public import FLT.LocalClassFieldTheory.SixTermCard
 public import FLT.LocalClassFieldTheory.SolvableFieldStep
 public import FLT.LocalClassFieldTheory.SolvableNormalStep
+public import FLT.LocalClassFieldTheory.TateCocycleClass
+public import FLT.LocalClassFieldTheory.TateTwoExtension
 public import FLT.LocalClassFieldTheory.TowerRefinementFibers
 public import FLT.LocalClassFieldTheory.TransferChoiceIndependence
 public import FLT.LocalClassFieldTheory.TransferCochain
