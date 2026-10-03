@@ -640,6 +640,7 @@ public import FLT.GroupScheme.QuadraticTwistTensor
 public import FLT.GroupScheme.QuotientFiberFreeness
 public import FLT.GroupScheme.RationalCubeValuations
 public import FLT.GroupScheme.RaynaudClosureFactorization
+public import FLT.GroupScheme.RaynaudCommonStage
 public import FLT.GroupScheme.RaynaudConnectedQuotient
 public import FLT.GroupScheme.RaynaudCoordinateCharacter
 public import FLT.GroupScheme.RaynaudDVRParameterValuation
@@ -676,6 +677,7 @@ public import FLT.GroupScheme.RaynaudQuotientSpecialFiber
 public import FLT.GroupScheme.RaynaudRankThreeClassification
 public import FLT.GroupScheme.RaynaudRankThreeExtension
 public import FLT.GroupScheme.RaynaudRigidity
+public import FLT.GroupScheme.RaynaudRootStage
 public import FLT.GroupScheme.RaynaudScalingValuation
 public import FLT.GroupScheme.RaynaudSplitting
 public import FLT.GroupScheme.RaynaudStageFractionField

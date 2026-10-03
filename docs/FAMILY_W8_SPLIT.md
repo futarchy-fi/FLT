@@ -328,3 +328,11 @@ the actual single-root subalgebra in the prescribed closure, with finite DVR,
 uniformizer and unramified properties; C3c2b (150 lines), a common stage for
 two finite embedded unramified stages, using a primitive generator of the
 second stage and C3c1 over the first. No directed-family property is assumed.
+
+C3e2 is refined before implementation into C3e2a (150 lines), defining the
+family of all finite embedded unramified DVR stages preserving π and deriving
+its nonemptiness and directedness from C3c2; C3e2b (150 lines), adjoining roots
+of lifted separable residue polynomials to an existing stage; and C3e2c
+(150 lines), descending residue polynomials to a stage and transporting their
+roots into the union residue field. Final C3f packaging (150 lines) combines
+the actual family with C3d1/C3f1 and C3e2c, including the fraction-field tower.
