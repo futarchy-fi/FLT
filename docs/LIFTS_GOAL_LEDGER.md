@@ -4,7 +4,128 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
-## W34 proved scope
+## W36 proved scope
+
+**W36 identifies the subgroup Artin map with the independently constructed
+field-wise Artin map over the canonical fixed-field DVR, proves the norm
+diagram for arbitrary (including nonnormal) fixed fields, and proves the
+surjectivity and exact fixed-field norm kernel of the actual quotient Artin
+map. The quotient/tower identity between independently constructed Artin maps,
+positive-Frobenius evaluation, Kummer–Artin evaluation, E1d and the overall
+lifting goal remain open.**
+
+Checked 2026-10-03T20:59:44.653485+00:00; integrated proof head `ed0850ab`.
+Read-only evidence check: `python3 Scratch/LiftsW36/check.py` checks saved
+exit-zero logs, source hashes, allowed edits, sorted imports and line caps;
+it does not rerun Lean. All 77 named declarations in 14 new modules
+(1445 lines; each <=200) use only `propext`, `Classical.choice`, `Quot.sound`.
+
+- `finiteSubgroupArtin_fixedUnitEquiv` transports every subgroup-invariant unit
+  through the actual fixed-unit equivalence and `subgroupFixedFieldEquiv`.
+  Its field-wise map is `finiteFixedFieldArtin`, which constructs the canonical
+  integer DVR and its residue/completeness structures internally and calls
+  the existing `finiteArtin`. No cup isomorphism or evaluation is assumed.
+- `finiteArtin_fixedField_fieldwise_norm` compares the two actual Artin maps
+  and the algebraic fixed-field norm, without normality. The forgetful Galois
+  map is `H.subtype.comp (subgroupFixedFieldEquiv F H).symm.toMonoidHom`;
+  `subgroupFixedFieldEquiv_restrictScalars` identifies this with forgetting
+  the intermediate scalars. The coset product is proved by enumerating all
+  fixed-field embeddings, rather than assuming the fixed field is Galois.
+- `finiteQuotientArtin` is the actual composite of `finiteArtin` with
+  `Abelianization.map (QuotientGroup.mk' H)`, for normal H. Its surjectivity
+  and norm kernel are proved in `finiteQuotientArtin_surjective` and
+  `finiteQuotientArtin_eq_zero_iff`. Identifying it with the independently
+  constructed Artin map of the lower extension is still unproved.
+- `tateZeroDeflation` and `finiteTateNormTower` construct the actual
+  degree-zero norm-quotient projections and prove their surjectivity and
+  invariant-class formulas. They do not assert a fundamental-cup diagram.
+
+### Remaining work after W36
+
+1. Prove the negative fundamental-cup quotient/tower comparison. For a finite
+   local tower K ⊆ E ⊆ F, with E/K and F/K Galois, the missing identity is
+   schematically
+   `finiteTateNormTower K E F (cupF x) =
+   cupE (tateScalarMap (AlgEquiv.restrictNormalHom E) x)`, where `cupF` and
+   `cupE` are the already constructed `relativeFundamentalTateCupNegTwoEquiv`
+   for their respective integer DVRs and field presentations. This requires
+   a proof of the local fundamental class's deflation comparison, not a new
+   comparison premise. Inverting those proved cups will then give the actual
+   Artin tower identity. The existing inflation formula multiplies by [F:E];
+   arbitrary cancellation in Tate degree zero is invalid. Equal norm kernels
+   and surjectivity also do not identify two maps: they permit a target
+   automorphism. W36's quotient-kernel theorem does not close this gap.
+2. Prove unramified uniformizer evaluation with positive Frobenius. W35's
+   `cyclicCarry_negative_cup_sign` remains relevant: the current negative
+   Tate cup sends the positive carry to the negative scalar class. A positive
+   normalization of the Artin map must be justified, not silently inferred
+   from the degree-zero normalization.
+3. Prove Kummer–Artin evaluation with its cup-order sign, then E1d's
+   annihilator statement. E1c7/E1d remain open. Only after E1 closes should
+   the next lifting gates be re-audited and split; no Serre-weight evaluation
+   or arbitrary-p Raynaud classification API was assumed or dispatched.
+
+The rebuilt endpoint audit still gives `sorryAx` for
+`GaloisRepresentation.IsHardlyRamified.lifts` and
+`FLT.Assembly.hardlyRamifiedLifting`; `PNat.pow_add_pow_ne_pow` retains
+`Mazur_statement`, `sorryAx` and the three standard axioms. W36 is a proved
+advance in the local class field theory program, not completion of the full
+brief or the lifting goal. No approval decision is needed.
+
+## W35 historical scope
+
+**W35 proves the subgroup corestriction diagram for the actual degree-minus-two
+fundamental cup, constructs the subgroup Artin map without an invertibility premise,
+and proves the algebraic norm diagram for normal fixed fields. The full two-field
+tower comparison, positive-Frobenius normalization, Kummer–Artin evaluation, E1d,
+and the overall lifting goal remain open.**
+
+The scalar comparison preserves the bar generator at `g`; the constructed cup
+sends it to the invariant class of `∑ h, c(h,g⁻¹)`. For the positive cyclic carry,
+`cyclicCarry_negative_cup_sign` proves that this is the **negative** scalar class.
+Thus positive normalization cannot be inferred from W34's degree-zero unit
+normalization; the negative-degree convention must be handled explicitly.
+
+Checked 2026-10-03T20:04:29.451293+00:00; integrated proof head `951458d6`.
+Read-only evidence check: `python3 Scratch/LiftsW35/check.py` verifies saved
+exit-zero logs, source hashes, allowed edits, sorted imports and line caps;
+it does not rerun Lean. All 63 named declarations in 17 new modules
+(1289 lines, each <=200) use only `propext`, `Classical.choice`, `Quot.sound`.
+
+The Artin norm theorem is specifically `finiteArtin_fixedField_norm`: its left
+side is W34's existing `finiteArtin` applied to the algebraic norm from the
+normal fixed field. Its right side is the actual abelianized subgroup inclusion
+applied to `finiteSubgroupArtin` on fixed units. The latter is constructed from
+the inverse cup of the restricted original fundamental class; its invertibility,
+surjectivity and norm kernel are proved. Identification with a separately
+constructed `finiteArtin` over that fixed field has **not** yet been transported
+through the fixed-field Galois equivalence.
+
+### Next proofs after W35
+
+1. Transport `finiteSubgroupArtin` through `subgroupFixedFieldEquiv` and the
+   fixed-unit equivalence to the separately constructed field-wise `finiteArtin`.
+   Extend the algebraic norm identification to nonnormal fixed fields. The
+   subgroup corestriction/cup square itself is proved in
+   `tateTwoClassMap_corestriction`; no all-degree transfer API is needed for it.
+2. Prove the quotient/tower diagram on the actual Artin maps. The existing
+   inflation identity for fundamental classes multiplies by the relative degree;
+   canceling that scalar in Tate degree zero is not justified. The needed
+   deflation/inflation comparison remains to be constructed.
+3. Prove the unramified uniformizer evaluation with **positive Frobenius**,
+   accounting for `cyclicCarry_negative_cup_sign`; then prove Kummer–Artin
+   evaluation and its cup-order sign. No positive-Frobenius theorem for the
+   current inverse-cup `finiteArtin` is claimed.
+4. Prove E1d's annihilator statement, then continue `docs/LIFTS_GOAL_LEDGER.md`.
+   No Serre-weight evaluation or arbitrary-p Raynaud classification API was assumed.
+
+The rebuilt endpoint audit still gives `sorryAx` for
+`GaloisRepresentation.IsHardlyRamified.lifts` and
+`FLT.Assembly.hardlyRamifiedLifting`; `PNat.pow_add_pow_ne_pow` retains
+`Mazur_statement`, `sorryAx` and the three standard axioms. The remaining work
+is mathematical, not waiting for approval.
+
+## W34 historical scope
 
 **W34 proves the adjacent-vanishing criterion for arbitrary finite groups,
 all-degree acyclicity of the local fundamental extension on every subgroup,
