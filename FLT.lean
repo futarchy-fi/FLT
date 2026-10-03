@@ -502,7 +502,9 @@ public import FLT.GroupScheme.FrobeniusKernelStructure
 public import FLT.GroupScheme.FrobeniusPresentationDescent
 public import FLT.GroupScheme.FrobeniusRelativePresentation
 public import FLT.GroupScheme.FrobeniusSubalgebra
+public import FLT.GroupScheme.GenericFiberDenominator
 public import FLT.GroupScheme.GenericFiberMapUnique
+public import FLT.GroupScheme.GenericFiberPrimitiveDenominator
 public import FLT.GroupScheme.GenericFieldChange
 public import FLT.GroupScheme.GenericMorphismScalarExtension
 public import FLT.GroupScheme.GlobalModel
@@ -654,11 +656,13 @@ public import FLT.GroupScheme.RaynaudRankThreeClassification
 public import FLT.GroupScheme.RaynaudRankThreeExtension
 public import FLT.GroupScheme.RaynaudRigidity
 public import FLT.GroupScheme.RaynaudSplitting
+public import FLT.GroupScheme.RaynaudStageFractionField
 public import FLT.GroupScheme.RaynaudTorsionFiltration
 public import FLT.GroupScheme.RaynaudTorsorDescent
 public import FLT.GroupScheme.RaynaudTwoCoordinates
 public import FLT.GroupScheme.RaynaudUnramifiedKernel
 public import FLT.GroupScheme.RaynaudUnramifiedQuotient
+public import FLT.GroupScheme.RaynaudUnramifiedStage
 public import FLT.GroupScheme.RestrictedScalarPointNaturality
 public import FLT.GroupScheme.ReverseExtHypothesis
 public import FLT.GroupScheme.ReverseExtSwappedExtension
