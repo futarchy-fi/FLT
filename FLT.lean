@@ -783,7 +783,10 @@ public import FLT.GroupScheme.RaynaudGenericSplitExtension
 public import FLT.GroupScheme.RaynaudHenselianCharacters
 public import FLT.GroupScheme.RaynaudHenselianFactor
 public import FLT.GroupScheme.RaynaudHenselianScalarRigidity
+public import FLT.GroupScheme.RaynaudHigherBinaryPower
 public import FLT.GroupScheme.RaynaudHigherCyclePower
+public import FLT.GroupScheme.RaynaudHigherPointCharacter
+public import FLT.GroupScheme.RaynaudHigherScalarWeights
 public import FLT.GroupScheme.RaynaudIdentifiedCharacters
 public import FLT.GroupScheme.RaynaudIdentifiedScalarIso
 public import FLT.GroupScheme.RaynaudInductionStep
@@ -823,6 +826,7 @@ public import FLT.GroupScheme.RaynaudOrderNineExtension
 public import FLT.GroupScheme.RaynaudOrderThreeFiltration
 public import FLT.GroupScheme.RaynaudOriginalFactorCharpoly
 public import FLT.GroupScheme.RaynaudOriginalFactorTransport
+public import FLT.GroupScheme.RaynaudOriginalHigherWeight
 public import FLT.GroupScheme.RaynaudOriginalOneWeight
 public import FLT.GroupScheme.RaynaudOriginalTowerAction
 public import FLT.GroupScheme.RaynaudOriginalTwoWeight

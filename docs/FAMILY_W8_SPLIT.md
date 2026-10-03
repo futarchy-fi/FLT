@@ -1530,3 +1530,35 @@ This is the algebraic input to the actual higher-cycle evaluation leaf.
 `RaynaudHigherCyclePower` (cap 150) applies the chain elimination to the
 actual `fundamentalValue_power` equations at every coordinate. Its output
 must retain the constructed coefficients rather than assume point equations.
+
+## W21 D13 implementation split (whole-file cap 150)
+
+Before implementation, split the arbitrary-cycle weight transport into:
+`RaynaudHigherBinaryPower` (choose all actual coefficient digits and units;
+combine their weighted product with the evaluated cycle),
+`RaynaudHigherPointCharacter` (transport that point equation to original inertia),
+`RaynaudHigherScalarWeights` (identify the actual scalar-coordinate ratio), and
+`RaynaudOriginalHigherWeight` (construct the original simple-factor scalar
+model, then derive its arbitrary-niveau binary character). Each cap is 150.
+The original k-linear rank-two assembly and D14 remain subsequent leaves;
+no prime-field rank-two theorem may be applied by restricting scalars.
+
+### W21 coefficient-field trace route
+
+For D13/D14's trace obstruction, retain the original k-linear rank-two
+operator throughout Cayley–Hamilton. If its trace vanished and its determinant
+were cyclotomic (hence prime-field valued), it would satisfy T² = −det(T).
+This additive identity descends to any actual prime-field simple quotient;
+that quotient need not have dimension two. Its constructed higher-cycle
+scalar character would satisfy z^(2m) = −z^S, where m is the actual binary
+weight and S = 1+p+…+p^(r−1). Since 0 ≤ m ≤ S and 2S < p^r−1 for p>3,
+a full root-character generator cannot satisfy this equation. This yields
+nonzero trace at the SAME cyclotomic generator. It does not claim the
+stronger p±1 ratio classification without a Frobenius-orbit argument.
+
+Split before coding (each complete file ≤150 lines): `HigherBinaryBounds`
+(weight bound and generator obstruction), `RankTwoScalarQuotient`
+(Cayley–Hamilton and scalar quotient equation), `RaynaudRationalHigherWeight`
+(construct the rational tower), `RaynaudHigherWeightQuotient` (construct the
+simple quotient), `RaynaudCoefficientTrace` (assemble the original k-linear
+trace obstruction). Split further if needed before exceeding the cap.
