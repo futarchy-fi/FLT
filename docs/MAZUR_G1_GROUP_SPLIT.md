@@ -1802,3 +1802,49 @@ H15g15 gives the nodal core, and the constant-sections and actual cohomology
 results give genus one. This proves `NodalGenusOneGeometricFibers` for every
 specified positive polygon. It is the necessary geometric genus-one contract;
 it does not assert a general stable-curve classification or modular-curve construction.
+
+U12d `PolygonNodeIncidence` has a cap of 130 lines after the complete
+`W23_NODE_INCIDENCE_PROOF.lean` compiled. The endpoint cocone equations
+place node j on components j and next j. The cyclic normalization chart
+excludes every other component. The node map's closed immersion and the
+coproduct's disjoint inclusions prove node distinctness, even when n=2.
+The n=1 proof retains both endpoint maps on the sole component.
+
+U12e `PolygonNodeLocus` has a cap of 170 lines after
+`W23_NODE_LOCUS_PROOF.lean` compiled. Local smooth-locus complements identify
+the origins as exactly the nonsmooth points in each node chart. The node
+and torus covers handle n=1; the cyclic chart cover handles n>=2.
+Cocone comparison transports this exact classification to any realization.
+
+U12f `PolygonActionGraph` has a cap of 110 lines after
+`W23_ACTION_GRAPH_PROOF.lean` compiled. The component equivalence supplies
+vertices; U12d/e supply an equivalence from Fin n to all nonsmooth points.
+Actual point/component membership is cyclic incidence. U12a/b's morphism
+identities prove that the action rotates these vertices and edges together.
+This proves the actual graph statement over each field; identifying the
+pulled-back group/action with the extension-field formulas is still separate.
+
+U12g `PolygonGeometricGraph` has a cap of 80 lines after
+`W23_GEOMETRIC_GRAPH_PROOF.lean` compiled. H15h3 supplies the specified
+cocone on an arbitrary field-valued pullback square. U12f then identifies its
+actual components, nodes, incidence and intrinsic translations over that
+field. This leaf does not identify its intrinsic action with U11's pulled-back action.
+
+U12h `LaurentTensor` has a cap of 100 lines after
+`W23_LAURENT_TENSOR_PROOF.lean` compiled. The tensor-product lift multiplies
+the two coefficient factors; the inverse evaluates Laurent polynomials at
+the tensor coordinate unit. Constants and the two inverse generators prove
+both inverse identities and retain the two projection formulas.
+
+U12i `ProjectiveActionFieldExtension` has a cap of 140 lines after
+`W23_PROJECTIVE_ACTION_FIELD_PROOF.lean` compiled. The coefficient map from
+H15h1 and the Laurent coefficient map form a map of the actual action products.
+On each polynomial chart its coordinate map is coefficient extension.
+The universal scaling ring formulas commute with this map, proving naturality
+of the projective-line action before any specialization to units.
+
+U12j `MultiplicativeGroupFieldExtension` has a cap of 120 lines after
+`W23_GM_FIELD_PROOF.lean` compiled. U12h and the spectrum tensor-product
+pullback identify the actual multiplicative-group pullback. Both projections
+are computed, and a unit of the extension field maps to its Laurent evaluation
+point over the original field.

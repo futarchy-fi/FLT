@@ -1427,6 +1427,7 @@ public import FLT.Mazur.InjectiveHorseshoe
 public import FLT.Mazur.IntegralBase
 public import FLT.Mazur.IntegralClosedSupport
 public import FLT.Mazur.IntegralDimension
+public import FLT.Mazur.LaurentTensor
 public import FLT.Mazur.LaurentUnitPoints
 public import FLT.Mazur.LocalizationCech
 public import FLT.Mazur.LocalizationCechCompare
@@ -1477,6 +1478,7 @@ public import FLT.Mazur.ModuleSheafificationTensor
 public import FLT.Mazur.ModuleStalkExact
 public import FLT.Mazur.ModuleSubobjectCoverEquality
 public import FLT.Mazur.ModuleUnitCocyclePullback
+public import FLT.Mazur.MultiplicativeGroupFieldExtension
 public import FLT.Mazur.MultiplicativeGroupScheme
 public import FLT.Mazur.NeronPolygonPredicate
 public import FLT.Mazur.NeronPolygonRotation
@@ -1541,6 +1543,7 @@ public import FLT.Mazur.PinchingNeighborhoods
 public import FLT.Mazur.PinchingPullbackTransport
 public import FLT.Mazur.PolygonActionAssociativity
 public import FLT.Mazur.PolygonActionBaseChange
+public import FLT.Mazur.PolygonActionGraph
 public import FLT.Mazur.PolygonActionSmooth
 public import FLT.Mazur.PolygonActionTranslation
 public import FLT.Mazur.PolygonActionUnit
@@ -1566,8 +1569,9 @@ public import FLT.Mazur.PolygonCyclicSeparated
 public import FLT.Mazur.PolygonDimension
 public import FLT.Mazur.PolygonDirectImageCohomology
 public import FLT.Mazur.PolygonFieldExtension
-public import FLT.Mazur.PolygonGeometricGenus
 public import FLT.Mazur.PolygonGenusOne
+public import FLT.Mazur.PolygonGeometricGenus
+public import FLT.Mazur.PolygonGeometricGraph
 public import FLT.Mazur.PolygonHZeroIncidence
 public import FLT.Mazur.PolygonIncidence
 public import FLT.Mazur.PolygonIncidenceQuotient
@@ -1576,7 +1580,9 @@ public import FLT.Mazur.PolygonNodeBranches
 public import FLT.Mazur.PolygonNodeCompletionCriterion
 public import FLT.Mazur.PolygonNodeDimension
 public import FLT.Mazur.PolygonNodeEqualizer
+public import FLT.Mazur.PolygonNodeIncidence
 public import FLT.Mazur.PolygonNodeLocalization
+public import FLT.Mazur.PolygonNodeLocus
 public import FLT.Mazur.PolygonNodePresentation
 public import FLT.Mazur.PolygonNodeScalarExtension
 public import FLT.Mazur.PolygonNodeScaling
@@ -1611,6 +1617,7 @@ public import FLT.Mazur.PowerSeriesSubstitutionEquiv
 public import FLT.Mazur.PrincipalSubmoduleCoordinates
 public import FLT.Mazur.PrincipalSubmoduleOverlap
 public import FLT.Mazur.PrincipalSubmoduleSectionLocalization
+public import FLT.Mazur.ProjectiveActionFieldExtension
 public import FLT.Mazur.ProjectiveAffineChartEmbedding
 public import FLT.Mazur.ProjectiveChartDenominators
 public import FLT.Mazur.ProjectiveChartNoetherian
