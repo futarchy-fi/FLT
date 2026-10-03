@@ -245,7 +245,11 @@ W10 proves the following prerequisites, without claiming arbitrary-target descen
   This includes characteristic two and gives a neighborhood inside any open
   containing both endpoints.
 
-Still missing: the equalizer/pullback properties after localization at those
+W11 proves `NodeLocalizedEqualizer` (144/240): the actual A-localization
+is the pullback of its two localized branches, with both canonical projection
+formulas. The localized B equalizer and arbitrary-target descent remain open.
+
+Still missing: the B equalizer property after localization at those
 chosen elements. The affine-target theorems have full affine-line sources;
 restricted source opens are spectra of localized polynomial rings. They
 cannot be used unchanged for maps to an affine neighborhood in an arbitrary
@@ -414,3 +418,8 @@ E4d prerequisites checked 2026-10-02 23:50 UTC: PinchingAffineDescent
 individual module lints and collectAxioms on 16 + 11 declarations. Output:
 untracked GOAL_MAZUR_W10_E4D_AXIOMS.txt; only the three allowed axioms occur.
 The arbitrary-target statements and the global IsPushout are not proved.
+
+E4d W11 node equalizer checked 2026-10-03 00:00 UTC: foreground module
+build and individual runLinter passed. The collectAxioms audit of all module
+declarations passed (GOAL_MAZUR_W11_NODE_AXIOMS.txt, untracked), permitting
+only propext, Classical.choice and Quot.sound. No scheme descent is claimed.
