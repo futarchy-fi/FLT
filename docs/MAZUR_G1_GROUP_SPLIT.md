@@ -1079,3 +1079,22 @@ inverse units on the second chart); cover extensionality proves `assoc_act`.
 the split node leg to cancel the normalization. The product/coproduct
 comparison reduces the result to U9b and commuting cyclic rotations.
 This proves the exact polygon `assoc_act` contract, including n=1.
+
+`W19_TORUS_PROOF.lean` compiles before release. U10a
+`ProjectiveLineActionTorus`, cap 100, identifies the torus inclusion with
+the first affine-chart coordinate of a unit. U9a computes its image under
+universal scaling. The actual tensor spectrum comparison and Hopf
+multiplication prove `gm ◁ torusToComponent ≫ act = μ[gm] ≫ torusToComponent`.
+
+`W19_SMOOTH_PROOF.lean` compiles before release. U10b
+`PolygonActionSmooth`, cap 100, constructs the actual inclusion of the smooth
+open. U10a and the split-group component multiplication identify restriction
+of the polygon action. Transport through `smoothIso`, with `smoothGrpObj` and
+`smoothCommGrpObj` installed explicitly, proves `smooth_restriction`.
+
+`W19_BASECHANGE_PROOF.lean` compiles before release. U11
+`PolygonActionBaseChange`, cap 120, defines the action using the tensorator
+of the actual `Over.pullback g` functor. Generic lax-monoidal naturality and
+coherence transport each proved law. `unit_act` and `assoc_act` hold for any
+scheme morphism g, without a flatness assumption or pushout-preservation
+hypothesis. These are equations for the pulled-back action and group.
