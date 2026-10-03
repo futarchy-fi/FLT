@@ -264,8 +264,8 @@ Neither the open atlas cocone nor affine-chart descent alone supplies them.
 
 Remaining contracts, not implemented declarations:
 
-- OneGonAffineNormalizationCoordinates, cap 220: the coordinate isomorphisms
-  z=t/(t−1) on D(t−1), and w=(t−1)/t on D(t), with exact overlap formulas.
+- OneGonAffineNormalizationCoordinates, implemented at 217/220: the coordinate
+  isomorphisms z=t/(t−1) on D(t−1), and w=(t−1)/t on D(t), with exact overlap formulas.
 - OneGonAffineNormalization, cap 240: glue alpha, prove it is an open
   immersion, its zero/one endpoints are zero/infinity, its puncture is
   `toTorus ≫ overlapLeft ≫ left`, and
@@ -494,3 +494,9 @@ E4d W11 PolygonCyclicPushout checked 2026-10-03 00:36 UTC: 117/240 lines;
 foreground build, individual runLinter and all-declaration collectAxioms passed
 (GOAL_MAZUR_W11_CYCLIC_AXIOMS.txt, untracked). Only the three allowed axioms
 occur. This module treats n≥2; n=1 global pinching remains open.
+
+E4d W12 reverse coordinates checked 2026-10-03 00:53 UTC: foreground module
+build and individual runLinter passed for OneGonAffineNormalizationCoordinates
+(217/220). The collectAxioms audit checked all 40 declarations and allowed only
+propext, Classical.choice and Quot.sound; evidence is untracked
+GOAL_MAZUR_W12_COORDINATES_AXIOMS.txt. The global comparison remains next.

@@ -1158,6 +1158,7 @@ public import FLT.Mazur.NodePinchingExistence
 public import FLT.Mazur.NodeQuotient
 public import FLT.Mazur.NodeSmoothLocus
 public import FLT.Mazur.OneGonAffineCover
+public import FLT.Mazur.OneGonAffineNormalizationCoordinates
 public import FLT.Mazur.OneGonCocone
 public import FLT.Mazur.OneGonGluing
 public import FLT.Mazur.OneGonLocalDescent
