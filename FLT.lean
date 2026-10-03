@@ -302,6 +302,7 @@ public import FLT.GaloisRepresentation.Extensions.CharacterCoefficients
 public import FLT.GaloisRepresentation.Extensions.CharacterLines
 public import FLT.GaloisRepresentation.Extensions.CocycleAction
 public import FLT.GaloisRepresentation.Extensions.ContinuousClass
+public import FLT.GaloisRepresentation.Extensions.ContinuousCocycleCoordinates
 public import FLT.GaloisRepresentation.Extensions.FiniteDescent
 public import FLT.GaloisRepresentation.Extensions.LiftBasisTransport
 public import FLT.GaloisRepresentation.Extensions.LiftCocycle
