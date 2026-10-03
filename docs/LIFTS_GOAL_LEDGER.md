@@ -41,6 +41,14 @@ comparison to an F-linear equivalence using `linearCoefficientClass` and the
 already proved quotient bijection. These refinements are source-matched
 before their implementation.
 
+E09c5b / Extensions.TensorCharacterClasses (cap 200) now has its
+source match: `TensorProduct.equivFinsuppOfBasisLeft`,
+`Finsupp.linearEquivFunOnFinite`, and E09c5a construct an F-linear tensor
+comparison. Its pure-tensor formula must identify it with the canonical
+coefficient inclusion followed by k-scaling; this also proves independence
+of the auxiliary coefficient basis. This closes the distinction between a
+bare product-of-classes equivalence and the scalar-extension comparison.
+
 The modules listed after c5 are new constructions, not existing APIs. E09c
 closes only after the unit-space and actual ordinary-extension adapters are
 proved. Root existence and a primitive root must be supplied explicitly or
