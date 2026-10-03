@@ -1,5 +1,86 @@
 # FAMILY-W8 — finite-flat inertia spectrum and the family boundary
 
+## W17 current gate map — 2026-10-03
+
+This section supersedes historical status below. Checked at base `25a54828`
+by reading the cited modules and `Family.lean:37–68`, and searching
+`rg -n 'sorry' FLT/MoretBailly.lean`. C5 is complete; the family admission
+remains. The blueprint (chapter 3, lines 183–215) assumes irreducible reduction;
+the Lean target does not. It also covers arbitrary finite free local domains,
+every odd prime including 3, and every embedding of the common number field.
+
+### Completed gates
+
+| Gate | Modules (under FLT; abbreviated basenames) | Limit |
+|---|---|---|
+| S1–S4 | `RaynaudParameterValuation`, `RaynaudTwoCoordinates`, `TameSpectrumDigits`, `RaynaudCoordinateCharacter` | S4 is over number-field completion integers, not the infinite strict henselization. |
+| Simple inertia | `RaynaudInertiaSimpleScalars`, `RaynaudAbsoluteTameCommutativity`, `WildInertiaProP` | Derived finite rank-one scalars; no computed inertia characters. |
+| S5b | `RaynaudInertiaFactorDescent`, `RaynaudCompatibleSubquotients`, `RaynaudInertiaScalarFiltration`, `RaynaudDescentActionAgreement`, `RaynaudDescentScalarFiltration` | Actual finite-flat factors and descent/action agreement; spectrum transport remains. |
+| C3 | `RaynaudStrictHenselian`, `RaynaudStageFamily`, `RaynaudResidueClosure` | Actual unramified strict-Henselian tower. |
+| S5c | `RaynaudActualCyclicPresentation`, `RaynaudFundamentalCycleParameters`, `RaynaudCoefficientBounds`, `RaynaudExtremalActions` | Genuine coordinates, parameter products and generation; evaluation on points remains. |
+| C5 | `RaynaudPadicPowerExtension` | `ThreeAdicPlan.extend_from_padic_power` and `GenericGaloisHom.integral_of_padic_power`: prescribed maps on original odd-prime p-adic models. |
+| Twist obstruction | `TameTraceObstruction`, `CyclotomicInertiaDetection`, `CyclicRestrictionTwist` | Requires actual spectrum and the appropriate generator. |
+| Family algebra | `FamilyTracePair`, `BrauerEffectivityCoefficients`, `Assembly/FreyTraceInput` | Conditional algebra/consumer reductions, not existence of a family. |
+
+### S5d and tame-spectrum leaves
+
+Each proposed new module has a **whole-file cap of 150 lines**. Split again
+before exceeding it. Sketches suppress ambient instances. Names in later
+sketches describe interfaces to construct, not existing APIs. READY means
+the displayed inputs exist; it does not mean the classification is proved.
+
+| Leaf / proposed module | Lean endpoint sketch | Dependencies / status |
+|---|---|---|
+| D1 `InvariantCharpoly` | `T.charpoly = (T.restrict hU).charpoly * (U.mapQ U T hU).charpoly` | READY: `Basis.sumQuot`, block triangular charpoly; no invariant complement. |
+| D2 `RankTwoCharpoly` | `T.charpoly=(X-C a)*(X-C b) ↔ trace k V T=a+b ∧ T.det=a*b` | READY: finrank two, charpoly coefficients. |
+| D3 `FiniteFieldQuadraticSpectrum` | monic quadratic `P : (ZMod p)[X]`, root a in char p implies root `a^p`; if distinct, `P.map f=(X-C a)*(X-C (a^p))` | READY: Frobenius fixes prime coefficients; root divisibility and degree. |
+| D4 `TameSpectrumCharpoly` | binary-digit charpoly factors + cyclotomic determinant imply `trace k V T ≠ 0` and ratio order p−1 or p+1 | READY after D2, `TameSpectrumDigits`; keep supplied factor/digit hypotheses explicit. |
+| D5 `SimpleScalarDegree` | rank-one F-module W implies `Nat.card F = p ^ finrank (ZMod p) W` | READY: finite vector-space cardinalities; actual prime-field dimension controls niveau. |
+| D6 `RaynaudPointCoordinate` | nonzero point x implies `eval x (fundamentalCoordinate ... i) ≠ 0`; scalar action gives `eval (a • x) c = χ(a)*eval x c` | Character functions and generation; nonzero coordinate-ring element alone does not imply nonzero evaluation. |
+| D7 `RaynaudValuationDigits` | actual unramified coefficients imply `∀ i, valuation (a i)=0 ∨ valuation (a i)=1` | C5 parameter products and preserved uniformizer; general DVR, not only S1 over Z_p. |
+| D8 `RaynaudPointPower` | r=1,2: `eval x c ^ (p^r-1) = π^m * u`, `u : Rˣ`, m the weighted binary digits | D6/D7, S2 and actual cyclic equations; check coefficient orientation. |
+| D9 `RaynaudTowerRootCharacter` | `residue (σ x / x) = θ σ ^ m` over actual strict-Henselian fraction field | D8; generalize S4 unit correction and compatible integral closures/inertia actions. |
+| D10 `RaynaudCharacterDescent` | original inertia factor's character in `AlgebraicClosure (ZMod p)` equals the derived digit power | D9, normal descent/action agreement, compatible residue embeddings. |
+| D11 `FiniteFlatFactorSpectrum` | each simple factor of prime-field dimension ≤2 has the charpoly of D10 eigenvalues and Frobenius conjugates | D3/D5/D10; scalar-line operator transport. |
+| D12 `FiniteFlatTameSpectrum` | `hp,hflat,hdet ⊢ ∃ t, GeneratesCyclotomic t ∧ ∃ a b, charpoly(t)=(X-C a)*(X-C b) ∧ (orderOf(a/b)=p-1 ∨ orderOf(a/b)=p+1)` | D1/D4/D11, determinant product, fundamental-character surjectivity. Choose niveau-two generator FIRST, then its cyclotomic norm; no wild splitting. |
+| D13 `FiniteResidueSpectrum` | finite k, rank-two finite-flat k-representation implies analogous spectrum over `AlgebraicClosure k` | D6–D12 with k-linear factors. Restriction to F_p has dimension `2*[k:F_p]`; D12 does not suffice. |
+| D14 `CyclotomicRestrictionIrreducible` | residual absolute irreducibility + flatness + determinant + large p implies absolute irreducibility on cyclotomic kernel | D12/D13 and existing self-twist/detection. Small primes separate. |
+
+D6–D14 are arithmetic/assembly obligations, not assumed conclusions. Caps
+are implementation stop limits, not certified proof sizes. D13 needs a
+further source-based split for higher-niveau coefficient fields.
+
+### From C5 to the exact family target
+
+There is substantial missing theory beyond the spectrum. Each row has a
+150-line cap for its named assembly/interface leaf. This does **not** assert
+that absent prerequisite theories fit into that cap: those require further
+source-based decomposition and definitions before implementation. No record
+may carry these conclusions as fields.
+
+| Leaf (cap 150) | Lean sketch / concrete obligation | Dependencies |
+|---|---|---|
+| F01 compatible torsion maps | `∃ maps, ∀ n, genericHom (maps n) = prescribedTransition n` | C5 and HR torsion models; uniqueness supplies diagram commutativity. |
+| F02 integral exact levels | `Function.Exact (points (i n)) (points (q n))` and integral kernel/quotient identifications | F01, `PrimePowerExact`, existing flat closures/quotients. |
+| F03 p-divisible object | `∃ H, ∀ n, Nonempty (H.level n ≅ torsionModel n)` | F01/F02; p-divisible-group definition and level axioms missing. |
+| F04 weight-two comparison | `finrank K (gr 0 D)=1 ∧ finrank K (gr (-1) D)=1` | F03; period rings/comparison theorem missing, not consequences of C5. |
+| F05 coefficient normalization | `∃ L ι, Function.Injective (ι : R →+* integers L)` with compatible continuous base change | Finite free local domain; normalization/continuity; preserve original R and representation. |
+| F06 residual/small-prime branches | derive required residual hypotheses from HR, or construct families for the remaining cases | D14 only handles its large-prime irreducible inputs. Cannot add blueprint's omitted assumption to Lean target. |
+| F07 potential modularity | `∃ F, IsTotallyReal F ∧ IsModular (ρ.map (algebraMap ℚ F))` with local/disjointness conditions | F04/F06; Snowden potential-modularity theory missing. `MoretBailly.statement` itself has `sorry`. |
+| F08 coefficient field | `∃ E, NumberField E ∧ ∀ v, ∃ P : E[X], ...` common Hecke/Frobenius polynomials | F07; Hilbert-form/Hecke coefficient theory missing. |
+| F09 attached members | `∀ ℓ φ, ∃ τ, ∀ v, charFrob τ v = (P v).map φ` at good places | F08; attached representations/local-global compatibility missing. |
+| F10 Brauer restriction data | actual induced/restricted character identity over one E | F09, Brauer induction and coefficient descent, not integer self-pairing alone. |
+| F11 effective descent | `∃ τ, finrank E Vτ=2 ∧ character τ = signedDescentCharacter` | F10, `BrauerEffectivityCoefficients`, semisimple character theory and continuity. |
+| F12 all-embedding HR models | `∀ ℓ φ, ∃ A W τ r, IsHardlyRamified ... τ ∧ τ.baseChange.conj r = σ ℓ φ` | F11; stable lattices, local-global compatibility, flatness at ℓ and square-trivial inertia at 2; every embedding. |
+| F13 original equivalence | `∃ ψ r', (ρ.baseChange _).conj r' = σ hp ψ` with exact R algebra/continuous action | F05/F11, semisimplicity and Brauer–Nesbitt; trace equalities alone insufficient. |
+| F14 family packaging | exact existential of `mem_isCompatible` | F08–F13 and all universe/topology/tower instances; new theorem first. |
+| F15 replace admission | delegate old theorem to axiom-clean F14 | Separate integration: current BRIEF forbids edits to `Family.lean`. |
+
+F03/F04 and F07–F11 are **large missing theory**, not ready short proofs.
+An exhaustive elaborated Lean split cannot honestly be certified before
+those APIs exist. F06 is a mathematical statement-scope gap as well.
+W17 first implements ready D1–D5, then records the remaining boundary.
+
 Checked 2026-09-30 against `af51e4ea`; commands at the end reproduce the audit.
 This is a dependency map, not a proof of `mem_isCompatible`.
 
