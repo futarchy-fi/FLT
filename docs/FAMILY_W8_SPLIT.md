@@ -447,3 +447,258 @@ C5v2/C5v3 must pass from simple factors to the prescribed p-torsion maps.
 No presentation depending on C5 was used. The original admission in
 `IsHardlyRamified.mem_isCompatible` remains at `Family.lean:68` (checked with
 `rg -n 'mem_isCompatible|sorry' FLT/GaloisRepresentation/HardlyRamified/Family.lean`).
+
+## W14 C5p1 refinement (before implementation)
+
+Each leaf is a new whole module capped at 150 lines. Inputs are the scalar
+maps and their proved laws from C5m7, never eigenspaces or presentations.
+
+| Leaf | Module | Checkable endpoint | Cap |
+|---|---|---|---:|
+| C5p1a | `RaynaudAugmentationAction` | Restrict scalar units to the actual counit kernel and prove the representation laws. | 150 |
+| C5p1b | `RaynaudCharacterProjector` | Twist by inverse characters and use `Representation.averageMap` to construct projections onto the derived eigenspaces. | 150 |
+| C5p1c | `RaynaudHenselianCharacters` | Lift prime-to-residue-characteristic roots of unity from the separably closed residue field and obtain the scalar character system. | 150 |
+| C5p1d | `RaynaudCharacterOrthogonality` | Prove distinct projectors orthogonal from character separation. | 150 |
+| C5p1e | `RaynaudCharacterDecomposition` | Prove their sum is the identity and derive the direct-sum decomposition of the actual augmentation ideal. | 150 |
+
+C5p2–C5v3 stay open until their prerequisites are derived. Split each further
+before implementation if its whole-module proof would exceed 150 lines.
+
+C5p1f (`RaynaudAugmentationDecomposition`, ≤150 lines) instantiates C5p1a–e
+on the actual model and finite scalar field, deriving invertibility of the
+unit-group order from its residue characteristic.
+
+W14 C5p2 refinement, before implementation (whole modules ≤150 lines):
+C5p2a scalar orbits and proportionality of equivariant character functions;
+C5p2b the generic character-function submodule and its rank bound;
+C5p2c actual model coordinates, counit and scalar-map evaluation;
+C5p2d injection of integral eigenspaces into the generic character functions;
+C5p2e rank sum and rank-one generators derived from decomposition and the
+order of the actual generic point group. No eigenspace rank is an input.
+
+C5p2e is split further before implementation: `RaynaudAugmentationRank`
+(≤150) derives the counit splitting and total augmentation rank;
+`RaynaudCharacterRankOne` (≤150) combines the sum with C5p2d's bounds and
+chooses a basis of each derived eigenspace.
+
+C5p3 refinement before implementation (each ≤150 lines):
+- C5p3a `RaynaudCharacterPowers`: multiplication and positive powers carry
+  the derived integral character spaces to their product characters; the
+  rank-one bases supply actual coefficients for power relations.
+- C5p3b: lift a residue-field embedding's fundamental character, identify
+  its Frobenius cycle, and specialize the power relations.
+- C5p3c: restrict the actual Cartier pairing to the derived summands and
+  identify multiplication/comultiplication coefficients by transposition.
+- C5p3d: derive the universal iterated structure constants from convolution
+  addition and evaluate them on the constant field-vector scheme.
+- C5p3e: prove the fundamental constant is p times a unit, and the digit
+  constants are units (Raynaud 1.3.1), then obtain the dual parameter identities.
+C5p3d/e require their own further split if the universal constant calculation
+exceeds a cap; rank-one summands alone do not prove the unit identities.
+
+C5p3b is split before implementation into `RaynaudRootReduction` (≤150),
+proving reduction is an equivalence on prime-to-p roots of unity using
+Henselian surjectivity and equal cardinalities, and
+`RaynaudFundamentalCharacter` (≤150), lifting an actual finite-field
+embedding into the residue field and proving its Frobenius power relations.
+
+C5p3b cyclic-coordinate endpoint is a separate ≤150-line module,
+`RaynaudCyclicCharacterEquations`: choose the proved character generators,
+prove Frobenius periodicity, and obtain their actual p-power coefficients.
+This endpoint does not assert the dual identities or polynomial generation.
+
+C5p2 integration is split into `RaynaudIdentifiedCharacters` (≤150), which
+transports the scalar module structure through the specified generic
+bijection, and `RaynaudExtremalCharacters` (≤150), applying the proved basis
+construction to the actual maximum and minimum from C5m7.
+
+W14 C5p1 checked 2026-10-03: the six planned modules build and pass individual
+module lint (`W14_LINT_<module>.log`). `W14_P1_AXIOMS.lean` audits all 29
+construction/proof declarations; only `propext`, `Classical.choice`, and
+`Quot.sound` occur. The endpoint `FF.exists_augmentation_decomposition`
+derives the character system and invertible averaging denominator from the
+strict Henselian domain and the common finite-field/residue characteristic.
+Its eigenspaces are the actual scalar-action eigenspaces of the counit kernel.
+
+W14 C5p2 checked 2026-10-03: all eight modules in C5p2a–e and the identified/
+extremal integration pass their foreground builds and individual lints.
+`W14_P2_AXIOMS.lean` audits every new proof, instance and construction.
+The generic hypothesis is rank one of the original F-vector space of points;
+no integral eigenspace rank or presentation is assumed. Scalar orbits give
+proportional generic character functions, integral evaluation gives rank at
+most one, and the augmentation rank sum forces equality for every character.
+`exists_maximal_model_character_bases` and
+`exists_minimal_model_character_bases` retain the actual extremal extension
+properties and derive all character bases after transferring the module
+structure through the specified generic bijection.
+
+C5p3c pairing refinement before implementation (each ≤150 lines):
+`RaynaudCharacterTranspose` constructs the transpose action and proves how
+projectors pair with it; `RaynaudCharacterDuality` identifies a transpose
+character summand with the dual of the original summand;
+`RaynaudAugmentationDuality` restricts the actual Cartier pairing to the two
+augmentation ideals. The comparison with integral scalar duality must be
+proved, not installed as model data.
+
+W14 C5p3a/b checked 2026-10-03: `RaynaudCharacterPowers`,
+`RaynaudRootReduction`, `RaynaudFundamentalCharacter`, and
+`RaynaudCyclicCharacterEquations` build and pass individual module lint.
+`W14_P3_AXIOMS.lean` audits all their declarations against the three-axiom
+whitelist. The residue field embedding is constructed from separable
+closedness; its unit character lifts multiplicatively and faithfully.
+Frobenius periodicity and the proved eigenspace bases give nonzero actual
+cyclic coordinates and integral p-power coefficients.
+`W14_LOCAL_CHECK.lean` checks the extrema, rank-one and cyclic endpoints over
+a DVR with its actual fraction ring. Dual parameter identities and algebra
+generation are not consequences claimed by this endpoint.
+
+C5p3c's actual scalar comparison is `RaynaudCartierCharacterDuality` (≤150):
+prove the dual scalar laws, prove the augmentation pairing intertwines the
+actual dual action and the transpose action, and restrict it to a perfect
+pairing on each derived character summand. The multiplication/comultiplication
+coefficient identity remains a subsequent leaf.
+
+C5p3c coefficient refinement: `RaynaudPairedCharacterBases` (≤150) chooses
+the dual bases using the proved perfect pairing, proves normalization, and
+derives the dual power coefficients. `RaynaudCharacterParameterProduct`
+(≤150) expresses the product of the two actual coefficients as the iterated
+Cartier pairing. Evaluation of this universal pairing as p times a unit is
+still C5p3d/e, not a hypothesis of these leaves.
+
+W14 C5p3c checked 2026-10-03: all six pairing modules pass their foreground
+builds and individual lints. `W14_PAIRING_AXIOMS.lean` audits 23 declarations;
+only the three permitted axioms occur. `W14_PAIRING_CHECK.lean` instantiates
+the actual character pairing over a strict Henselian DVR with its fraction
+ring, deriving the required averaging inverse from the residue characteristic.
+The actual dual scalar action is proved to be the transpose under the
+augmentation pairing. Matching character summands therefore pair perfectly;
+the original derived bases determine actual normalized dual bases. Both
+power coefficients are constructed, and `FF.exists_character_parameter_product`
+identifies their product with evaluation of the dual generator's power on
+the original generator's power.
+
+**W14 remaining:** C5p3d/e must evaluate this pairing as the universal
+fundamental constant and prove it is p times a unit; the digit constants
+must also be units. C5p4 (monomial generation and presentation isomorphisms)
+and C5v1–C5v3 (extremal scalings, small-ramification comparison, dévissage and
+prescribed extension) remain unproved. The scalar addition-by-convolution
+law is available from C5m7 but has not yet been used to evaluate these
+structure constants. No parameter-unit identity is accepted as model data.
+
+## W15 C5p3d refinement before implementation
+
+Each leaf below has a whole-file cap of 150 lines. No universal constant or
+unit property is installed as model data.
+
+| Leaf | New module | Proof obligation |
+|---|---|---|
+| C5p3d1 | `RaynaudRankOneProjector` | The actual augmentation character projector, extended by the counit splitting, is the normalized generator/dual-generator map. |
+| C5p3d2 | `RaynaudRankOneConvolution` | Convolution products and powers of rank-one maps are products and powers of their vector and Cartier functional. |
+| C5p3d3 | `RaynaudReducedScalarAverage` | Express the extended projector as the character-weighted average of scalar maps minus the zero scalar. |
+| C5p3d4 | `RaynaudScalarConvolution` | Expand powers of finite linear combinations of scalar maps using the proved scalar addition law. |
+| C5p3d5 | `RaynaudUniversalCharacterConstant` | Evaluate the scalar expansion on actual character vectors, obtaining a constant defined only from finite-field addition and characters. |
+| C5p3d6 | `RaynaudUniversalParameterProduct` | Identify the paired-power evaluation and the product of actual power coefficients with the universal constant. |
+
+C5p3e is subsequent arithmetic work: fundamental constants are p times
+units and digit constants are units. C5p4 and C5v1–C5v3 retain their earlier
+obligations; C5p3d alone does not close them.
+
+W15 C5p3e initial arithmetic refinement (each ≤150 lines):
+`RaynaudUniversalConvolutionAlgebra` realizes the explicit constant in the
+additive monoid algebra of F; `RaynaudCharacterConstantBaseChange` proves
+coefficient-ring functoriality; `RaynaudCharacterPrimeDivisibility` proves
+that the p-fold constant is divisible by p using characteristic-p
+nilpotence. These are prerequisites, not the p-times-a-unit assertion.
+The remaining arithmetic leaves must prove the quotient by p is a unit
+and treat mixed digit constants before C5p4 can use them.
+
+W15 C5p3d checked 2026-10-03: the six new modules pass foreground builds
+and individual sequential lints. `W15_AXIOMS.lean` audits all 22 declarations
+against `propext`, `Classical.choice`, and `Quot.sound` only.
+`FF.character_power_pairing_universal` identifies the actual paired-power
+scalar with `CharacterAverage.constant χ (χ ^ n) n`, an explicit iteration
+of finite differences involving only finite-field addition and characters.
+`FF.exists_universal_character_parameter_product` gives both actual power
+coefficients and their universal product. The proof uses the actual
+addition-by-convolution law, not an assumed parameter identity. This
+repeated-character endpoint does not yet cover mixed digit products.
+
+C5p3e single-character factorial refinement before implementation (each
+≤150 lines): `RaynaudCharacterDifferenceOperator` bundles the normalized
+finite difference and expands it on monomials; `RaynaudCharacterFactorial`
+proves its triangular iteration has diagonal n! when the character comes
+from a field embedding; `RaynaudFundamentalDigitUnit` reduces the lifted
+fundamental character and derives units for repetitions below p. This
+single-character calculation does not assume or prove the mixed-digit unit
+statement, or the fundamental quotient-by-p unit statement.
+
+C5p3e fundamental-quotient refinement before implementation (each ≤150
+lines): `RaynaudAugmentationDerivation` evaluates additive characters as
+derivations at the augmentation; `RaynaudDividedPowerSums` controls divided
+p-th powers under addition and scalar multiplication; subsequent capped
+leaves must calculate a group generator's divided power and apply the
+result to the formal average. The intended residue of the resulting
+quotient is -1. None of these intermediate lemmas may assume that the
+fundamental constant is p times a unit.
+
+W15 arithmetic prerequisites checked 2026-10-03: the six modules through
+`RaynaudFundamentalDigitUnit` pass foreground builds, individual lints and
+`W15_ARITHMETIC_AXIOMS.lean` (22 declarations; only the three permitted
+axioms). `prime_dvd_constant` proves p-divisibility in R itself by passage
+to R/(p). `fundamental_constant_residue` proves the n! residue, and
+`isUnit_fundamental_digit_constant` proves the single-character constants
+are units for 0 < n < p. Neither theorem claims the mixed-digit calculation
+or the p-fold quotient's being a unit.
+
+The final fundamental-quotient leaves are `RaynaudDividedGroupGenerator`
+(binomial calculation for [a]-1), `RaynaudDividedCharacterAverage` (weighted
+sum and normalized residue -1), `RaynaudCharacterPrimeQuotient` (actual
+scalar quotient via character evaluation), and `RaynaudFundamentalPrimeUnit`
+(specialize to the constructed fundamental lift). Each cap is 150 lines.
+
+Integration of the arithmetic results is split into
+`RaynaudResidueCharacterUnits` (≤150; any character reducing to a field
+embedding, including Frobenius twists) and `RaynaudCharacterParameterUnits`
+(≤150; the actual original/dual coefficients have p-times-unit product,
+and their powers below p have unit coefficients).
+
+## W15 boundary and next leaves
+
+The new repeated-character calculation and the divided-power argument now
+prove the fundamental p-times-unit identity without parameter data.
+`FF.exists_character_prime_parameter_units` derives both integral power
+coefficients and a unit u with a*b = p*u and residue(u) = -1.
+`FF.exists_character_digit_parameter_units` derives both unit coefficients
+for n repetitions of any residue-embedding character, with 0 < n < p.
+The residue-embedding formulation covers every fundamental Frobenius twist.
+These are proof statements; validation evidence is recorded below after the
+module checks finish.
+
+The mixed-digit gap is still open: a general character has p-adic digits
+across several fundamental characters, not just repetitions of one. The
+next work must extend the rank-one convolution and universal-average
+comparison to finite lists, then prove the mixed constant has residue
+product_i (a_i!). A viable proof uses the existing finite-difference
+operator: on polynomials in the residue embeddings, its top-degree action
+is the corresponding partial derivative; orthogonality removes the other
+embeddings. Split that work before implementation into ≤150-line leaves:
+mixed rank-one products, mixed universal averages, residue embedding
+orthogonality, the degree-lowering calculation, and the mixed factorial/unit
+endpoint. The equality of constants across Frobenius twists has not been
+asserted here; the proved individual p-times-unit bounds do not require it.
+
+C5p4 (monomial generation and genuine polynomial-quotient isomorphisms)
+and C5v1–C5v3 remain unproved. No presentation, generation, general simple
+factor dévissage, or prescribed generic-map extension follows merely from
+the new coefficient identities. The original family target admission is
+unchanged; W15 is partial completion of the requested route.
+
+W15 final validation checked at 2026-10-03 03:38:11 UTC: all 20 modules pass
+foreground builds and individual sequential lint. The three W15 axiom
+audits cover all 65 named declarations and allow only `propext`,
+`Classical.choice`, and `Quot.sound`. `W15_LOCAL_CHECK.lean` instantiates
+the actual parameter-product endpoint over a strict Henselian DVR and its
+fraction field for every fundamental Frobenius twist; it constructs the
+averaging inverse from the residue characteristic and exits 0. All new
+modules are below the 150-line cap. `W15_FINAL_CHECKS.log` records source,
+artifact, edit-scope and target-admission checks.
