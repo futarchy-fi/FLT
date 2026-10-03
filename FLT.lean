@@ -1088,6 +1088,7 @@ public import FLT.LocalClassFieldTheory.CochainHomologyClass
 public import FLT.LocalClassFieldTheory.CochainOpenNormal
 public import FLT.LocalClassFieldTheory.CocycleDimensionShift
 public import FLT.LocalClassFieldTheory.CocycleRectangle
+public import FLT.LocalClassFieldTheory.CoinducedCoefficientKernel
 public import FLT.LocalClassFieldTheory.CoinducedCoefficientSequence
 public import FLT.LocalClassFieldTheory.CoinducedInjectiveRestriction
 public import FLT.LocalClassFieldTheory.CoinducedNormExact
@@ -1133,6 +1134,7 @@ public import FLT.LocalClassFieldTheory.CyclicPeriodicExact
 public import FLT.LocalClassFieldTheory.CyclicPeriodicHomology
 public import FLT.LocalClassFieldTheory.CyclicRelativeOrder
 public import FLT.LocalClassFieldTheory.CyclicSixTermSequence
+public import FLT.LocalClassFieldTheory.CyclicTateSplice
 public import FLT.LocalClassFieldTheory.CyclicTateVanishing
 public import FLT.LocalClassFieldTheory.DescendedCochain
 public import FLT.LocalClassFieldTheory.DiscreteFieldUnits
@@ -1161,6 +1163,7 @@ public import FLT.LocalClassFieldTheory.FiniteRelativeSequence
 public import FLT.LocalClassFieldTheory.FiniteRestrictionComparison
 public import FLT.LocalClassFieldTheory.FiniteSubfieldDvr
 public import FLT.LocalClassFieldTheory.FiniteSubgroupCocycleCorrection
+public import FLT.LocalClassFieldTheory.FiniteTateVanishing
 public import FLT.LocalClassFieldTheory.FixedCoefficientBoundary
 public import FLT.LocalClassFieldTheory.FixedCoefficientCochain
 public import FLT.LocalClassFieldTheory.FixedCoefficientDifferential
@@ -1240,6 +1243,9 @@ public import FLT.LocalClassFieldTheory.NormalLatticeExpOpen
 public import FLT.LocalClassFieldTheory.NormalLatticeExpUnits
 public import FLT.LocalClassFieldTheory.NormalLatticeOpen
 public import FLT.LocalClassFieldTheory.NormalLatticePower
+public import FLT.LocalClassFieldTheory.NormalNormAugmentation
+public import FLT.LocalClassFieldTheory.NormalSubgroupNorm
+public import FLT.LocalClassFieldTheory.NormalTateSplice
 public import FLT.LocalClassFieldTheory.NormalizedOrder
 public import FLT.LocalClassFieldTheory.NormalizedTwoCocycles
 public import FLT.LocalClassFieldTheory.OneCocycleExtension
@@ -1261,6 +1267,8 @@ public import FLT.LocalClassFieldTheory.RationalIntegralConnectingIso
 public import FLT.LocalClassFieldTheory.RationalTorsion
 public import FLT.LocalClassFieldTheory.RationalUnramifiedCharacters
 public import FLT.LocalClassFieldTheory.RelativeDegreeTorsionClass
+public import FLT.LocalClassFieldTheory.RelativeFundamentalAcyclic
+public import FLT.LocalClassFieldTheory.RelativeFundamentalCupIso
 public import FLT.LocalClassFieldTheory.RelativeFundamentalCyclicSubgroup
 public import FLT.LocalClassFieldTheory.RelativeFundamentalExtension
 public import FLT.LocalClassFieldTheory.RelativeFundamentalExtensionRestriction
@@ -1286,9 +1294,16 @@ public import FLT.LocalClassFieldTheory.RestrictedCochainDescent
 public import FLT.LocalClassFieldTheory.RestrictionSurjective
 public import FLT.LocalClassFieldTheory.ScalarCochainCup
 public import FLT.LocalClassFieldTheory.SixTermCard
+public import FLT.LocalClassFieldTheory.SolvableCyclicQuotient
 public import FLT.LocalClassFieldTheory.SolvableFieldStep
 public import FLT.LocalClassFieldTheory.SolvableNormalStep
+public import FLT.LocalClassFieldTheory.SolvableTateSplice
+public import FLT.LocalClassFieldTheory.SolvableTateVanishing
 public import FLT.LocalClassFieldTheory.SubgroupFixedFieldTower
+public import FLT.LocalClassFieldTheory.SubgroupNormDecomposition
+public import FLT.LocalClassFieldTheory.SubgroupTateVanishing
+public import FLT.LocalClassFieldTheory.SylowNormDetection
+public import FLT.LocalClassFieldTheory.SylowTateDetection
 public import FLT.LocalClassFieldTheory.TateClassArithmetic
 public import FLT.LocalClassFieldTheory.TateCocycleClass
 public import FLT.LocalClassFieldTheory.TateCupComparison
