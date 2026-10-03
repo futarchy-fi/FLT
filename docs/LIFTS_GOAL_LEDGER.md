@@ -4,6 +4,101 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
+## W21 acceptance — 2026-10-03T06:41:20.511369+00:00
+
+Checked 2026-10-03T06:41:20.511369+00:00; branch `task/goal-lifts-w21`; base `3ee6889c`.
+**E1c7/E1d remain blocked; the final FLT theorem retains sorryAx.**
+
+17 new modules; 1,401 Lean lines; 76 named declarations.
+
+| Item | Module under FLT.LocalClassFieldTheory | Lines/cap | Commit |
+|---|---|---|---|
+| 1a — trivial H1 | TrivialH1Characters | 93/200 | `88a00887` |
+| 1b — integral H2 | IntegralH2Characters | 52/200 | `ebd8910f` |
+| 2a — coefficient naturality | ConnectingCoefficientNaturality | 87/200 | `940e9d9e` |
+| 2b — group restriction | ConnectingRestrictionNaturality | 93/200 | `003eabcb` |
+| 3a — cochain cup | IntegralCochainCup | 93/200 | `3d38f8c3` |
+| 3b — integral cup comparison | IntegralCupComparison | 95/200 | `258a8382` |
+| 3c — connecting cup formula | ConnectingCupCompatibility | 108/200 | `28c07e12` |
+| 4a — Frobenius generation | UnramifiedFrobeniusGenerator | 85/200 | `720ece2e` |
+| 4b — character bijection | UnramifiedFrobeniusCharacters | 84/200 | `3f5a6419` |
+| 4c — integral H2 coordinates | UnramifiedIntegralH2 | 65/200 | `48644bfc` |
+| 5 — H2 restriction | TrivialRestrictionNaturality | 88/200 | `e8b2269e` |
+| 6 — character additivity | IntegralCharacterAdditivity | 74/200 | `64fa02de` |
+| 7 — additive H2 coordinates | UnramifiedIntegralH2Additive | 64/200 | `1b30242a` |
+| 8 — positive carry normalization | UnramifiedCarryNormalization | 78/200 | `141f1b08` |
+| 9 — integral coefficient maps | IntegralCoefficientRestriction | 84/200 | `28b54668` |
+| 10 — integral cup boundary | IntegralConnectingCup | 88/200 | `81d94081` |
+| 11 — finite-stage generation | UnramifiedCarryTorsion | 70/200 | `659c115a` |
+
+Every new module M passed separately, in the foreground, with `LEAN_NUM_THREADS=2`:
+`lake build M`, `lake exe runLinter M`, and
+`lake env lean Scratch/LiftsW21/<Module>Axioms.lean`.
+No concurrent or whole-library builds/lints were run; no OOM occurred.
+Logs: `Scratch/LiftsW21/<Module>-{build,lint,axioms}.log`.
+All 76 named declarations (including the scalar-character abbreviation and
+three helper instances) use only `{propext, Classical.choice, Quot.sound}` or no axioms.
+
+`python3 Scratch/LiftsW21/check.py` checks source caps, absence of admissions,
+audit coverage and permitted axiom sets, log freshness, new-file-only Lean
+changes, sorted unique FLT.lean imports, allowed paths, whitespace, clean tracked
+state and the final FLT axiom set. It rejects untracked files under FLT/ and docs/.
+It reads accepted evidence; it does not rerun Lean. Machine-readable evidence:
+`Scratch/LiftsW21/summary.json`; check output: `Scratch/LiftsW21/check.log`.
+
+Final audit command: `LEAN_NUM_THREADS=2 lake env lean Scratch/LiftsW21/FinalAxioms.lean`,
+exit 0; evidence `Scratch/LiftsW21/Final-axioms.log`:
+
+- `GaloisRepresentation.IsHardlyRamified.lifts` and `FLT.Assembly.hardlyRamifiedLifting`:
+  `[propext, sorryAx, Classical.choice, Quot.sound]`.
+- `PNat.pow_add_pow_ne_pow`: `[Mazur_statement, propext, sorryAx, Classical.choice, Quot.sound]`.
+- The new additive H2 equivalence, constructed integral connecting-cup representatives,
+  and finite-stage generation endpoint use only the three standard axioms.
+
+1. **Characters:** trivial-action principal cocycles are zero. The actual H1
+   quotient is continuous characters; composing its inverse with the proved
+   positive Q/Z-to-Z boundary gives the integral H2 character equivalence.
+2. **Naturality:** commuting coefficient maps construct short-complex morphisms.
+   The homology-sequence theorem proves both coefficient and group-restriction
+   connecting squares. The concrete integral H2 character equivalence commutes
+   with continuous character pullback.
+3. **Cups:** the degree-one and degree-two right cups by trivial scalar characters
+   are actual continuous cochains. Their differential identity has positive sign.
+   The old explicit cup descends to actual integral H1 and agrees with its integral
+   H2 representative. Its vanishing is exactly a continuous coboundary witness.
+   `integralScalarConnectingMap_cup_exists` constructs the continuous lift and
+   both cycle representatives in the Z-linear complex; the scalar ring can be
+   a different commutative ring. It proves the two categorical boundary formulas,
+   not an assumed connecting/cup bridge. Scope is low-degree scalar-character
+   cups, not a general higher-degree cup-product or arithmetic pairing API.
+4. **Unramified quotient:** an open subgroup containing arithmetic Frobenius is
+   the whole constructed unramified Galois group, by finite-stage cofinality and
+   cyclicity. This proves character uniqueness. The denominator stage realizes
+   every rational-circle value, giving the Frobenius evaluation bijection.
+5. **Further leaves:** Frobenius coordinates give an additive isomorphism from
+   integral H2 of the constructed quotient to Q/Z. The inflated degree-n carry
+   has coordinate **+1/n**, and its j-multiple has coordinate j/n. Its exact
+   annihilator is nZ. Every integral H2 class is an integer multiple of one such
+   finite-stage carry, hence torsion.
+
+The proved H2 has **constant integral coefficients**. This is the character/
+Frobenius portion of Milne III.1.7, not the multiplicative local invariant.
+
+- The order-induced isomorphism from multiplicative H2 still needs unramified
+  unit/principal-unit acyclicity. Higher principal-unit graded quotients,
+  norm-as-trace, successive corrections and convergence remain arithmetic work.
+- Inflation to the full separable closure, class formation and Kummer–Artin
+  evaluation remain unproved. W14's cup-order minus sign remains unchanged;
+  the positive integral carry result does not erase it.
+- Serre-weight evaluation and arbitrary-p Raynaud classification remain
+  independently blocked; neither was dispatched or treated as available.
+
+Next contracts require refinement against actual APIs (cap 200 per module):
+construct the principal-unit quotient/residue-additive identification; prove the
+norm's graded trace formula; then build compatible corrections and use
+completeness before claiming norm surjectivity or unit acyclicity. Do not turn
+any of these missing arithmetic conclusions into parameters or record fields.
+
 ## W20 acceptance — checked 2026-10-03T06:04:11.614329+00:00
 
 Checked 2026-10-03T06:04:11.614329+00:00; branch `task/goal-lifts-w20`; starting base `d34fe0c6`.
