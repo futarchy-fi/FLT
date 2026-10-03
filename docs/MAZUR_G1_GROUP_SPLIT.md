@@ -1580,3 +1580,17 @@ and `Quot.sound`. Both checks used `LEAN_NUM_THREADS=2 lake env lean FILE`.
 The source guard found no `sorry`, `axiom` or `native_decide` in the new
 modules; all caps and sorted unique imports passed. The audit, validation
 logs and handoff remain untracked at the workspace root.
+
+## W22: geometric-fiber prerequisites
+
+The complete root prototypes `W22_PROJECTIVE_TOPOLOGY_PROOF.lean` and
+`W22_OPEN_COMPONENT_PROOF.lean` compiled before these caps were released.
+
+| Leaf | Module | Cap | Checked proof design |
+| --- | --- | ---: | --- |
+| H15a | `ProjectiveLineTopology` | 90 | The Laurent overlap is nonempty and open in each integral affine chart, hence dense; the two charts cover the glued line. Its dense irreducible image proves irreducibility. |
+| H15b | `OpenIrreducibleComponent` | 50 | A larger irreducible set meeting an open subset lies in the closure of their intersection; this proves maximality of the open subset's closure. |
+
+H15 as a whole remains unfinished: component classification, pure dimension,
+connectedness, completed-stalk nodes, and the field-extension comparison are
+separate proof obligations. No cap for those obligations is claimed yet.

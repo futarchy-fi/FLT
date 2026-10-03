@@ -1515,6 +1515,7 @@ public import FLT.Mazur.OpenCoverDimension
 public import FLT.Mazur.OpenDirectImageCohomology
 public import FLT.Mazur.OpenDirectImageNaturality
 public import FLT.Mazur.OpenDirectImageRestriction
+public import FLT.Mazur.OpenIrreducibleComponent
 public import FLT.Mazur.OpenModuleDirectImageCohomology
 public import FLT.Mazur.OpenSheafCohomology
 public import FLT.Mazur.OpenSheafCohomologyRestriction
@@ -1611,6 +1612,7 @@ public import FLT.Mazur.ProjectiveLineScaling
 public import FLT.Mazur.ProjectiveLineStandardCharts
 public import FLT.Mazur.ProjectiveLineStandardComparison
 public import FLT.Mazur.ProjectiveLineStandardOverlap
+public import FLT.Mazur.ProjectiveLineTopology
 public import FLT.Mazur.ProjectiveLineUniversalAction
 public import FLT.Mazur.ProjectiveOverlapModuleLocalization
 public import FLT.Mazur.ProjectiveProductChartCover
