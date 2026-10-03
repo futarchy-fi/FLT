@@ -804,7 +804,7 @@ of any rank-one finite-field scalar model without assuming integral scalar
 lifts on that original model. This does not replace C5v2 for arbitrary
 p-torsion point modules.
 
-## C5v2 next proof obligations (not implemented by W16)
+## Earlier W16 checkpoint: C5v2 proof obligations
 
 The C5v1 rank-one theorem cannot be applied directly to arbitrary p-torsion
 models. Before further implementation, split each obligation below into
@@ -832,7 +832,7 @@ models. Before further implementation, split each obligation below into
 These are outstanding proof obligations, not model assumptions or a request
 for approval. The family admission and the wider post-C5 obligations remain.
 
-## W16 verified completion boundary
+## Earlier W16 verified completion boundary (04:43 UTC)
 
 Checked 2026-10-03 04:43 UTC. This supersedes the earlier open labels for
 C5p3e, C5p4 and the rank-one scalar C5v1 route. The broader C5c obligation
@@ -865,7 +865,7 @@ the prescribed extension theorem over an unramified strict-Henselian DVR
 with its fraction ring. `python3 W16_FINAL_CHECKS.py` reruns artifact,
 line-cap, scope, import-order and admission checks.
 
-**C5v2 and C5v3 are not proved.** In particular no finite-field rank-one
+**At this earlier checkpoint C5v2 and C5v3 were not proved.** In particular no finite-field rank-one
 structure is inferred for an arbitrary p-torsion point module. The source
 check `rg -n 'mem_isCompatible|sorry' FLT/GaloisRepresentation/HardlyRamified/Family.lean`
 still reports the original admission at line 68. No removal of `sorryAx`
@@ -958,3 +958,113 @@ finite quotient and restricted actions), `RaynaudCompatibleSubquotients`
 simple-factor scalar fields). Caps are 150; refine again before exceeding
 one. These leaves must construct the filtration, rather than add it as a
 hypothesis to the unrestricted extension theorem.
+
+Split `RaynaudAgreedPointAction` (cap 150) out before the compatible-model
+construction: derive the prime-field-linear Galois action from the actual
+additive point action, and transfer an inertia-stable subrepresentation to
+that action using the proved pointwise agreement.
+
+`RaynaudInertiaCompatibleExtension` (cap 150) applies the constructed
+filtration and integral dévissage to extend every prescribed generic map
+from a model whose actual Galois action agrees with continuous local inertia.
+No scalar field, rank, filtration, or presentation is an input. Establishing
+this action agreement for the chosen strict-Henselian base change, and
+returning to the original integral base, are the remaining assembly steps.
+
+For the remaining base-change assembly, split before implementation:
+`RaynaudScalarFiltrationBaseChange` (cap 150) preserves the constructed
+filtration under the actual restricted scalar-extension models. This lets
+one construct the filtration over the finite unramified descent field
+and then pass to the strict-Henselian tower without redoing the inertia
+comparison at every stage. The descent-field action comparison and faithful
+flat descent back to the initial ring need separate leaves.
+
+Split `RaynaudDescentActionAgreement` (cap 150) before implementation:
+normality of the finite descent field forces the chosen absolute-Galois
+restriction map into its fixing subgroup, even though the chosen closure
+embedding need not fix the given copy of that field. This proves actual
+point-action agreement with inertia on the restricted scalar extension.
+`RaynaudDescentScalarFiltration` (cap 150) then constructs the filtration
+on that actual model, with continuity inherited from its original points.
+
+The faithful descent assembly is split before implementation into
+`RaynaudScalarExtensionRigidity` (generic bijectivity survives actual scalar
+extension; faithful flatness descends surjectivity of model maps),
+`RaynaudUnramifiedOrder` (a preserved uniformizer preserves natural order),
+and `RaynaudHenselianScalarRigidity` (construct the strict-Henselian tower and
+descend integral rigidity for the constructed scalar filtration). Each cap
+is 150; further prescribed-map and local-inertia assembly remains separate.
+
+`RaynaudLocalInertiaRigidity` (cap 150) will combine the actual finite
+unramified descent filtration with Henselian rigidity, then reflect
+surjectivity back to the original completion ring. Its only representation
+input is a prime-field module structure on the original points.
+`RaynaudLocalPrescribedExtension` (cap 150) will apply this to the actual
+graph closure and recover integral coordinates and the prescribed generic map.
+
+After the p-killed local case, split `RaynaudLocalPowerRigidity` (cap 150)
+before implementation: exponent induction uses the actual flat p-torsion
+closure and the image of multiplication by p, with the existing general
+kernel/quotient comparison. `RaynaudLocalPowerExtension` (cap 150) then
+extends every prescribed map from a p-power-killed local model and proves
+integrality in its original coordinate ring.
+
+The general local endpoint explicitly assumes adic completeness of the
+completion integers until that topological bridge is formalized in general.
+The rational place already has `rationalCompletionIntegers_adicComplete`.
+Split `RaynaudPadicPowerRigidity` (cap 150) to transport the original p-adic
+model along the actual integral-ring equivalence and its fraction-field
+lift, apply the rational-place theorem, and descend surjectivity.
+`RaynaudPadicPowerExtension` (cap 150) recovers the prescribed map over the
+original p-adic integers. This endpoint has no completeness or filtration
+hypothesis beyond those derived from the standard p-adic ring.
+
+Split `RaynaudPowerDevissage` (cap 150) out of the local power proof before
+implementation. It isolates the exponent induction over a PID fraction field
+from the dependent local-completion types. The local theorem supplies the
+already proved p-killed rigidity theorem; no model or final endpoint assumes
+rigidity, a filtration, or a presentation as input.
+
+Split `RaynaudPowerPrescribedExtension` (cap 150) before extracting the
+graph proof: the generic PID argument converts proved p-power rigidity into
+the unique prescribed extension and integral coordinate pullbacks. Local
+and p-adic endpoints supply their derived rigidity theorems explicitly,
+avoiding repeated elaboration of graph closures over completion type aliases.
+
+## W16 final C5 completion checkpoint
+
+Checked 2026-10-03 06:58 UTC with `python3 W16_FINAL_CHECKS.py`, the per-module
+foreground build/lint logs, and the eight W16 axiom-audit logs outside `FLT/`.
+This supersedes the earlier W16 remaining-work paragraphs above.
+
+C5p3e, C5p4, C5v1, C5v2 and C5v3 now give
+`ThreeAdicPlan.extend_from_padic_power` in `RaynaudPadicPowerExtension`:
+for every prime `p > 2`, actual models `X Y : FF ℤ_[p] ℚ_[p]`, a source
+`KilledByPowerOf p X`, and a prescribed generic map `f`, there is a unique
+integral model morphism whose generic map is `f`.
+`GenericGaloisHom.integral_of_padic_power` proves the corresponding pullback
+of each coordinate lies in the original source coordinate ring.
+
+The finite scalar fields and rank-one factors are derived from actual simple
+inertia modules. Normality proves agreement for the actual chosen closure
+embedding; coatom quotients construct the finite scalar filtration. General
+integral kernel/quotient exactness proves dévissage. The constructed
+strict-Henselian tower and finite unramified descent preserve the valuation
+bound; faithful flatness returns rigidity to the original ring. Exponent
+induction and the graph construction handle every p-power-killed source.
+The generic induction/graph helpers receive the arithmetic rigidity theorems
+as proved arguments. The final p-adic endpoints assume no scalar fields,
+filtrations, eigenspaces, presentations, or extension conclusions.
+
+All 65 new modules are at most 106 lines (cap 150), with successful individual
+builds and lints. All 159 new named declarations, plus two reused exactness
+endpoints, have dependency axioms contained in `{propext, Classical.choice,
+Quot.sound}`. `W16_POWER_CHECK.lean` checks the original three-adic prescribed
+extension and integral-coordinate statements directly.
+
+The general local-number-field version retains an explicit adic-completeness
+instance. The p-adic endpoint derives it through the actual rational-place
+comparison. Downstream spectrum/family integration is not completed here:
+`rg -n 'mem_isCompatible|sorry' FLT/GaloisRepresentation/HardlyRamified/Family.lean`
+still reports the original admission at line 68. No admission-free claim is
+made for that theorem or `PNat.pow_add_pow_ne_pow`.
