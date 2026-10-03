@@ -8,14 +8,112 @@ are design sketches, not elaborated declarations or certified size estimates;
 split again before implementation if a proof exceeds the cap. No missing
 theorem may become a structure field, parameter standing for E1c7, or axiom.
 
-Latest accepted scope: **W26**. The full lifting goal remains unmet.
+Latest accepted scope: **W27**. The full lifting goal remains unmet.
 
-## W26 proved scope
+## W27 proved scope
+
+Checked 2026-10-03T12:49:39.162743+00:00; branch `task/goal-lifts-w27`; base `e8a80ed9`; proof head `f704730c`.
+Read-only evidence check: `python3 Scratch/LiftsW27/check.py` (saved logs and source hashes).
+
+**R03c–R03g and R04b–R04d are proved. The full lifting goal remains unmet.**
+The 36 new modules contain **2,755 lines and 168 named declarations**, all within the 200-line cap.
+Every new declaration uses only `propext`, `Classical.choice`, and `Quot.sound`.
+
+1. The induced topology on the integer ring is proved adic. Algebraic
+   `IsAdicComplete` gives a complete neighborhood of zero in the fraction field,
+   hence field completeness and exponential summability without an extra premise.
+2. The actual logarithm series converges on `v(x) < v(p)`, uniformly on every
+   smaller closed ball. Integral scaled formal series, evaluated in a complete
+   topological copy of the DVR, give both analytic exp/log composition identities.
+   A proved nonarchimedean Cauchy product gives exponential multiplicativity.
+3. The exponential gives a group equivalence and homeomorphism between the
+   additive ball `v(x) < v(p)` and the principal units `v(u-1) < v(p)`.
+   Preservation of integrality proves continuity of the actual Galois action,
+   allowing it through the sums and proving equivariance.
+4. Multiplication by the base scalar p² puts the constructed normal lattice
+   inside that convergence ball. Its exponential image is an actual open,
+   Galois-stable subgroup of field units. The transported integral action is
+   proved equal to the natural action, and all positive cohomology vanishes.
+5. A complex indexed by Boolean parity has differential generator-minus-one
+   in even degree and norm in odd degree. Its two homologies are identified
+   with the existing cyclic quotients and every positive even/odd cohomology
+   group. The snake lemma gives both connecting maps and all six exactness
+   assertions; the return from odd to even is part of the complex itself.
+   Connecting-map naturality is proved for morphisms of coefficient sequences.
+6. Counting adjacent images gives the six-term alternating cardinal identity
+   and Herbrand multiplicativity for finite periodic cohomology. The periodic
+   quotient agrees with the usual H²/H¹ quotient for cyclic coefficients.
+7. Complete DVRs with finite residue field are compact in the constructed
+   topology. Pulling the open exponential subgroup back to integral units
+   therefore gives a finite quotient. Its natural Galois short exact sequence
+   and the proved subgroup acyclicity identify every positive integral-unit
+   cohomology group with that of this finite quotient. The finite cyclic
+   coefficient calculation yields `integralUnit_herbrand_eq_one`.
+
+The analytic and unit results use characteristic-zero local fields with prime
+residue characteristic p, algebraically complete DVRs, and finite DVR extensions;
+the finite quotient step additionally uses finite residue field. They do not
+claim the corresponding positive-characteristic analytic statements.
+
+## W27 validation
+
+Each module M passed sequentially in the foreground with `LEAN_NUM_THREADS=2`:
+`lake build FLT.LocalClassFieldTheory.M`,
+`lake exe runLinter FLT.LocalClassFieldTheory.M`, and
+`lake env lean Scratch/LiftsW27/MAxioms.lean`.
+All 168 named declarations, including definitions and instances, were axiom-audited.
+No whole-library lint was run. Evidence: `Scratch/LiftsW27/M-{build,lint,axioms}.log`.
+
+Combined new-module imports passed in `Scratch/LiftsW27/Integration.lean`.
+`Scratch/LiftsW27/FinalAxioms.lean` confirms the new endpoints are axiom-clean,
+while `GaloisRepresentation.IsHardlyRamified.lifts` and
+`FLT.Assembly.hardlyRamifiedLifting` still use `sorryAx`;
+`PNat.pow_add_pow_ne_pow` retains both `sorryAx` and `Mazur_statement`.
+Both checks have `.log` and zero `.exit` files.
+
+`python3 Scratch/LiftsW27/check.py` checks saved logs, source hashes, caps,
+audit coverage, allowed axioms, sorted imports, allowed paths, new-file-only
+Lean changes, and clean tracked state. It does not rerun Lean.
+The source snapshots were recorded only after checking that each build, lint,
+and axiom log postdated its source. Fresh module validation is
+`python3 Scratch/LiftsW27/validate.py M ...`.
+
+## Remaining work — R04e is next
+
+The next leaf is **R04e / RamifiedFieldHerbrand**. All rows below remain
+required; each module retains the 200-line cap. Do not assume exactness,
+acyclicity, relative order, inflation isomorphisms, or invariant formulas
+in place of their proofs.
+
+| Gate / next leaf | Required proof and dependency |
+|---|---|
+| R04e / RamifiedFieldHerbrand | Use the normalized valuation sequence for a ramified cyclic extension and the trivial integer coefficient calculation to obtain h(Lˣ) = [L:K]. |
+| R05a / CyclicRelativeOrder | Combine the cyclic Herbrand result with finite Hilbert 90 to obtain the actual order of relative H2. |
+| R05b / LocalGaloisSolvable | Connect wild inertia p-group, tame cyclic, and residue cyclic quotients to solvability of the finite local Galois group. |
+| R05c / RelativeOrderInduction | Apply W25's proved R01 exactness and W24's generic exact-sequence cardinal bound along a proper normal subgroup; combine with R02. The arithmetic cardinal-bound induction remains uninstantiated. |
+| R06a / FiniteRelativeSaturation | Use the lower subgroup and the proved relative order to show every finite relative class lies in the unramified inflation image. |
+| R06b / UnramifiedInflationSurjective | Descend every absolute H2 class to a finite relative stage and apply saturation. Combine with W24's already proved injection. |
+| I03a / AbsoluteInvariant | Compose the inverse of the proved bijection with the existing unramified invariant. |
+| I03b / InvariantRestriction | Extend I02d by the proved finite descent and inflation squares. |
+| I03c / CorestrictionInvariant | Construct/compare corestriction and prove its invariant formula using restriction-corestriction and surjectivity. |
+| I03d / FundamentalClasses | Compare the inverse images of 1/[L:K] with relative classes and prove their restriction, inflation, and corestriction formulas. |
+
+Class formation and Kummer–Artin evaluation remain beyond these gates.
+Serre-weight evaluation and arbitrary-p Raynaud classification remain independent
+unproved work; neither was dispatched or treated as an existing API.
+The next R04e step needs the normalized order sequence for ramified extensions
+and the cyclic trivial-integer coefficient calculation. Existing
+`unramifiedOrderSequence` assumes formal unramifiedness and cannot be used
+unchanged. W27 does not claim h(Lˣ), relative H² order, or absolute reciprocity.
+
+
+## W26 historical scope
 
 Checked 2026-10-03T11:22:50.341193+00:00; branch `task/goal-lifts-w26`; base `f34a19ea`; proof head `c58387ad`.
 Read-only evidence check: `python3 Scratch/LiftsW26/check.py` (saved logs and source hashes).
 
-**I02c, I02d, R02a, R02b, and R03b are proved. R03c is partial. The lifting goal remains unmet.**
+At the W26 checkpoint, I02c, I02d, R02a, R02b, and R03b were proved; R03c was partial.
+W27 above completes R03c–R04d.
 The 22 new modules contain **1,505 lines and 58 named declarations**, all within the 200-line cap.
 Every new declaration uses only `propext`, `Classical.choice`, and `Quot.sound`.
 
@@ -41,8 +139,8 @@ Every new declaration uses only `propext`, `Classical.choice`, and `Quot.sound`.
    are proved for residue characteristic p. In characteristic zero the exponential
    terms tend to zero on the explicit positive domain `v(x) < v(p)`.
    `localExp_summable` proves summability when that same adic field topology is
-   complete. **The transfer from the program's `IsAdicComplete` DVR assumptions
-   to this `CompleteSpace` premise has not been proved**, so R03c is not closed.
+   complete. At W26 the transfer from `IsAdicComplete` to `CompleteSpace` was missing;
+   W27 proves that transfer.
 
 ## W26 validation
 
@@ -63,40 +161,6 @@ Both checks have `.log` and zero `.exit` files.
 audit coverage, allowed axioms, sorted imports, allowed paths, new-file-only
 Lean changes, and clean tracked state. It does not rerun Lean.
 Fresh module validation: `python3 Scratch/LiftsW26/validate.py M ...`.
-
-## Remaining work — R03c completeness transfer is next
-
-The next leaf is the fraction-field completeness transfer in R03c. All rows
-below remain required; each proposed module has a 200-line cap and must split
-again if needed. Do not assume exactness, inflation isomorphisms, acyclicity,
-relative order, or an invariant formula in place of their proofs.
-
-| Gate / next leaf | Required proof and dependency |
-|---|---|
-| R03c / AdicFractionFieldComplete | Prove that the constructed adic fraction-field topology is complete from the existing complete DVR assumptions; instantiate `localExp_summable` without adding a new premise. The factorial estimates and explicit domain are proved. |
-| R03d / LocalLogConvergence | Prove log convergence on a suitable principal-unit neighborhood, with the needed uniform estimates. |
-| R03e / LocalExpLogInverse | Prove the two composition identities and the additive/multiplicative group comparison on the chosen neighborhoods. |
-| R03f / LocalExpEquivariance | Prove continuity and Galois equivariance of that comparison. |
-| R03g / AcyclicOpenUnits | Scale the constructed normal lattice by a base-field scalar into the convergence domain, transport it to an open unit subgroup, and transport its proved integral acyclicity. |
-| R04b / CyclicSixTermSequence | Construct the periodic six-term exact sequence from a short exact coefficient sequence, including the connecting maps and periodicity compatibility. |
-| R04c / HerbrandExact | Prove the alternating cardinal identity and multiplicativity when both periodic cohomology groups are finite. W24 proves the finite-module quotient is one. |
-| R04d / UnitHerbrand | Prove the quotient of integral units by the constructed open subgroup is finite, then apply the finite-module result and exact sequence. |
-| R04e / RamifiedFieldHerbrand | Use the normalized valuation sequence for a ramified cyclic extension and the trivial integer coefficient calculation to obtain h(Lˣ) = [L:K]. |
-| R05a / CyclicRelativeOrder | Combine the cyclic Herbrand result with finite Hilbert 90 to obtain the actual order of relative H2. |
-| R05b / LocalGaloisSolvable | Connect wild inertia p-group, tame cyclic, and residue cyclic quotients to solvability of the finite local Galois group. |
-| R05c / RelativeOrderInduction | Apply W25's proved R01 exactness and W24's generic exact-sequence cardinal bound along a proper normal subgroup; combine with R02. The arithmetic cardinal-bound induction remains uninstantiated. |
-| R06a / FiniteRelativeSaturation | Use the lower subgroup and the proved relative order to show every finite relative class lies in the unramified inflation image. |
-| R06b / UnramifiedInflationSurjective | Descend every absolute H2 class to a finite relative stage and apply saturation. Combine with W24's already proved injection. |
-| I03a / AbsoluteInvariant | Compose the inverse of the proved bijection with the existing unramified invariant. |
-| I03b / InvariantRestriction | Extend I02d by the proved finite descent and inflation squares. |
-| I03c / CorestrictionInvariant | Construct/compare corestriction and prove its invariant formula using restriction-corestriction and surjectivity. |
-| I03d / FundamentalClasses | Compare the inverse images of 1/[L:K] with relative classes and prove their restriction, inflation, and corestriction formulas. |
-
-Class formation and Kummer–Artin evaluation remain beyond these gates.
-Serre-weight evaluation and arbitrary-p Raynaud classification remain independent
-unproved work; neither was dispatched or treated as an existing API.
-Mathlib's `Analysis/Normed/Algebra/Logarithm.lean` still lists ultrametric convergence
-and exp/log composition identities as TODOs (source inspected during W26).
 
 ## W25 historical scope
 

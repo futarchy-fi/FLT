@@ -4,12 +4,120 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
-## W26 acceptance
+## W27 acceptance
+
+Checked 2026-10-03T12:49:39.162743+00:00; branch `task/goal-lifts-w27`; base `e8a80ed9`; proof head `f704730c`.
+Read-only evidence check: `python3 Scratch/LiftsW27/check.py` (saved logs and source hashes).
+
+**R03c–R03g and R04b–R04d are proved. The full lifting goal remains unmet.**
+The 36 new modules contain **2,755 lines and 168 named declarations**, all within the 200-line cap.
+Every new declaration uses only `propext`, `Classical.choice`, and `Quot.sound`.
+
+1. The induced topology on the integer ring is proved adic. Algebraic
+   `IsAdicComplete` gives a complete neighborhood of zero in the fraction field,
+   hence field completeness and exponential summability without an extra premise.
+2. The actual logarithm series converges on `v(x) < v(p)`, uniformly on every
+   smaller closed ball. Integral scaled formal series, evaluated in a complete
+   topological copy of the DVR, give both analytic exp/log composition identities.
+   A proved nonarchimedean Cauchy product gives exponential multiplicativity.
+3. The exponential gives a group equivalence and homeomorphism between the
+   additive ball `v(x) < v(p)` and the principal units `v(u-1) < v(p)`.
+   Preservation of integrality proves continuity of the actual Galois action,
+   allowing it through the sums and proving equivariance.
+4. Multiplication by the base scalar p² puts the constructed normal lattice
+   inside that convergence ball. Its exponential image is an actual open,
+   Galois-stable subgroup of field units. The transported integral action is
+   proved equal to the natural action, and all positive cohomology vanishes.
+5. A complex indexed by Boolean parity has differential generator-minus-one
+   in even degree and norm in odd degree. Its two homologies are identified
+   with the existing cyclic quotients and every positive even/odd cohomology
+   group. The snake lemma gives both connecting maps and all six exactness
+   assertions; the return from odd to even is part of the complex itself.
+   Connecting-map naturality is proved for morphisms of coefficient sequences.
+6. Counting adjacent images gives the six-term alternating cardinal identity
+   and Herbrand multiplicativity for finite periodic cohomology. The periodic
+   quotient agrees with the usual H²/H¹ quotient for cyclic coefficients.
+7. Complete DVRs with finite residue field are compact in the constructed
+   topology. Pulling the open exponential subgroup back to integral units
+   therefore gives a finite quotient. Its natural Galois short exact sequence
+   and the proved subgroup acyclicity identify every positive integral-unit
+   cohomology group with that of this finite quotient. The finite cyclic
+   coefficient calculation yields `integralUnit_herbrand_eq_one`.
+
+The analytic and unit results use characteristic-zero local fields with prime
+residue characteristic p, algebraically complete DVRs, and finite DVR extensions;
+the finite quotient step additionally uses finite residue field. They do not
+claim the corresponding positive-characteristic analytic statements.
+
+| Item | Module under FLT.LocalClassFieldTheory | Lines/cap | Commit |
+|---|---|---|---|
+| R03c | AdicFractionFieldComplete | 79/200 | `dd6abf85` |
+| R03c | AdicIntegerTopology | 87/200 | `dd6abf85` |
+| R03d | LocalLogConvergence | 82/200 | `052822ad` |
+| R03d | LocalLogUniformConvergence | 69/200 | `052822ad` |
+| R03d | ValuationUniformSeries | 68/200 | `052822ad` |
+| R03e | AdicIntegerSpace | 80/200 | `3afe221e` |
+| R03e | AdicSeriesEvaluation | 91/200 | `3afe221e` |
+| R03e | AdicSeriesField | 78/200 | `3afe221e` |
+| R03e | LocalExpEquivalence | 83/200 | `3afe221e` |
+| R03e | LocalExpLogInverse | 86/200 | `3afe221e` |
+| R03e | LocalExpMultiplicative | 65/200 | `3afe221e` |
+| R03e | LocalIntegralInverse | 45/200 | `3afe221e` |
+| R03e | LocalIntegralSeries | 102/200 | `3afe221e` |
+| R03e | LocalScaledCoefficients | 83/200 | `3afe221e` |
+| R03e | LocalScaledSeries | 73/200 | `3afe221e` |
+| R03e | LocalSeriesComparison | 91/200 | `3afe221e` |
+| R03f | AdicGaloisContinuity | 80/200 | `ee500370` |
+| R03f | LocalExpEquivariance | 81/200 | `ee500370` |
+| R03f | LocalExpHomeomorph | 75/200 | `ee500370` |
+| R03f | LocalExpIsometry | 68/200 | `ee500370` |
+| R03g | AcyclicOpenUnits | 85/200 | `6b8a59b7` |
+| R03g | LocalExpOpen | 48/200 | `6b8a59b7` |
+| R03g | NormalLatticeExpDomain | 92/200 | `6b8a59b7` |
+| R03g | NormalLatticeExpOpen | 60/200 | `6b8a59b7` |
+| R03g | NormalLatticeExpUnits | 78/200 | `6b8a59b7` |
+| R04b | CyclicPeriodicComplex | 73/200 | `c245a55f` |
+| R04b | CyclicPeriodicExact | 53/200 | `c245a55f` |
+| R04b | CyclicPeriodicHomology | 51/200 | `c245a55f` |
+| R04b | CyclicSixTermSequence | 81/200 | `c245a55f` |
+| R04c | HerbrandExact | 74/200 | `c2dcf673` |
+| R04c | SixTermCard | 58/200 | `c2dcf673` |
+| R04d | AdicIntegerCompact | 78/200 | `f704730c` |
+| R04d | IntegralExpQuotient | 60/200 | `f704730c` |
+| R04d | IntegralExpSequence | 103/200 | `f704730c` |
+| R04d | IntegralExpSubrepresentation | 94/200 | `f704730c` |
+| R04d | UnitHerbrand | 101/200 | `f704730c` |
+
+Each module M passed sequentially in the foreground with `LEAN_NUM_THREADS=2`:
+`lake build FLT.LocalClassFieldTheory.M`,
+`lake exe runLinter FLT.LocalClassFieldTheory.M`, and
+`lake env lean Scratch/LiftsW27/MAxioms.lean`.
+All 168 named declarations, including definitions and instances, were axiom-audited.
+No whole-library lint was run. Evidence: `Scratch/LiftsW27/M-{build,lint,axioms}.log`.
+
+Combined new-module imports passed in `Scratch/LiftsW27/Integration.lean`.
+`Scratch/LiftsW27/FinalAxioms.lean` confirms the new endpoints are axiom-clean,
+while `GaloisRepresentation.IsHardlyRamified.lifts` and
+`FLT.Assembly.hardlyRamifiedLifting` still use `sorryAx`;
+`PNat.pow_add_pow_ne_pow` retains both `sorryAx` and `Mazur_statement`.
+Both checks have `.log` and zero `.exit` files.
+
+`python3 Scratch/LiftsW27/check.py` checks saved logs, source hashes, caps,
+audit coverage, allowed axioms, sorted imports, allowed paths, new-file-only
+Lean changes, and clean tracked state. It does not rerun Lean.
+The source snapshots were recorded only after checking that each build, lint,
+and axiom log postdated its source. Fresh module validation is
+`python3 Scratch/LiftsW27/validate.py M ...`.
+
+Remaining contracts are in `LOCAL_CFT_FOUNDATIONS.md`; R04e is next.
+
+## W26 historical acceptance
 
 Checked 2026-10-03T11:22:50.341193+00:00; branch `task/goal-lifts-w26`; base `f34a19ea`; proof head `c58387ad`.
 Read-only evidence check: `python3 Scratch/LiftsW26/check.py` (saved logs and source hashes).
 
-**I02c, I02d, R02a, R02b, and R03b are proved. R03c is partial. The lifting goal remains unmet.**
+At the W26 checkpoint, I02c, I02d, R02a, R02b, and R03b were proved; R03c was partial.
+W27 above completes R03c–R04d.
 The 22 new modules contain **1,505 lines and 58 named declarations**, all within the 200-line cap.
 Every new declaration uses only `propext`, `Classical.choice`, and `Quot.sound`.
 
@@ -35,8 +143,8 @@ Every new declaration uses only `propext`, `Classical.choice`, and `Quot.sound`.
    are proved for residue characteristic p. In characteristic zero the exponential
    terms tend to zero on the explicit positive domain `v(x) < v(p)`.
    `localExp_summable` proves summability when that same adic field topology is
-   complete. **The transfer from the program's `IsAdicComplete` DVR assumptions
-   to this `CompleteSpace` premise has not been proved**, so R03c is not closed.
+   complete. At W26 the transfer from `IsAdicComplete` to `CompleteSpace` was missing;
+   W27 proves that transfer.
 
 | Item | Module under FLT.LocalClassFieldTheory | Lines/cap | Commit |
 |---|---|---|---|
@@ -81,7 +189,8 @@ audit coverage, allowed axioms, sorted imports, allowed paths, new-file-only
 Lean changes, and clean tracked state. It does not rerun Lean.
 Fresh module validation: `python3 Scratch/LiftsW26/validate.py M ...`.
 
-Remaining contracts are in `LOCAL_CFT_FOUNDATIONS.md`; the next leaf is R03c completeness transfer.
+W26 remaining contracts were superseded by the W27 scope and remaining table
+in `LOCAL_CFT_FOUNDATIONS.md`.
 
 ## W25 historical acceptance
 
