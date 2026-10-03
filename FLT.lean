@@ -1136,6 +1136,7 @@ public import FLT.Mazur.NestedOpenCohomologyCoherence
 public import FLT.Mazur.NodalGenusOneBaseChange
 public import FLT.Mazur.NodalGeometricFiberGenus
 public import FLT.Mazur.NodeInfinitesimalObstruction
+public import FLT.Mazur.NodeLocalDescent
 public import FLT.Mazur.NodeLocalizedEqualizer
 public import FLT.Mazur.NodeQuotient
 public import FLT.Mazur.NodeSmoothLocus

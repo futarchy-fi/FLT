@@ -219,7 +219,7 @@ characteristic. The atlas is the existing irreducible one-gon chart gluing;
 no reducible node chart is substituted. The cocone does not yet assert the
 closed pinching universal property required by E4d.
 
-### E4d — arbitrary-target pinching descent, split required, blocked on local descent
+### E4d — arbitrary-target pinching descent, partial; global gluing remains
 
 New `PolygonAtlas.lean`, namespace `FLT.Mazur.PolygonAtlas`. Combine E4a–c
 into `polygon K n` for every `[NeZero n]`; transport their cocones. Prove
@@ -427,3 +427,16 @@ only propext, Classical.choice and Quot.sound. No scheme descent is claimed.
 E4d W11 one-gon equalizer checked 2026-10-03 00:03 UTC: foreground module
 build, individual runLinter and collectAxioms passed (untracked
 GOAL_MAZUR_W11_ONEGON_AXIOMS.txt). Only the three allowed axioms occur.
+
+E4d W11 node-local descent checked 2026-10-03 00:11 UTC: `NodeLocalDescent`
+(214/240) passed its foreground build, individual runLinter and collectAxioms
+(GOAL_MAZUR_W11_LOCAL_AXIOMS.txt, untracked). It proves unique localized
+affine-target descent, existence on a saturated neighborhood for arbitrary
+targets, coverage by that neighborhood and the two Laurent branches, and
+both exact localization pullback squares. It does not yet glue the local map.
+
+The former 240-line NodePinchingDescent leaf is split: NodeLocalDescent
+(214/240, implemented); TernaryOpenDescent (cap 140); NodePinchingExistence
+(cap 240); NodePinchingDescent (cap 240, global uniqueness and final statement).
+Each cap counts the entire module. Subsequent one-gon and polygon leaves
+retain their 240-line caps. All unimplemented entries remain contracts.
