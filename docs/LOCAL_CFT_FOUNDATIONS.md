@@ -446,3 +446,16 @@ A common overfield plus normality turns the constructed embeddings into
 literal containment. No uniqueness, containment, or residue lift is an input.
 The compositum and inverse-limit leaves require an explicit stage interface
 and will be refined after these statements are checked.
+
+W17 ready follow-ons after stage uniqueness (200 lines per module):
+
+- `UnramifiedStageTower`: choose the unique stage indexed by positive degree;
+  prove containment iff divisibility, compositum = the lcm stage, and directedness.
+  The compositum proof uses containment in the lcm stage and degree divisibility,
+  so it does not require an unproved hereditary-unramifiedness bridge.
+- `UnramifiedUnion`: define the supremum, prove every element lies in a finite
+  stage, prove normality and include every finite unramified stage.
+
+These statements do not establish a topological inverse-limit equivalence,
+restriction surjectivity from the absolute Galois group, or the inertia kernel.
+Those remain distinct U04 obligations before U05.
