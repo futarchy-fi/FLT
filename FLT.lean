@@ -296,6 +296,7 @@ public import FLT.GaloisRepresentation.Automorphic
 public import FLT.GaloisRepresentation.Cyclotomic
 public import FLT.GaloisRepresentation.Extensions.ChangeSplitting
 public import FLT.GaloisRepresentation.Extensions.CocycleAction
+public import FLT.GaloisRepresentation.Extensions.ContinuousClass
 public import FLT.GaloisRepresentation.Extensions.FiniteDescent
 public import FLT.GaloisRepresentation.Extensions.LiftCocycle
 public import FLT.GaloisRepresentation.HardlyRamified.AbsIrredAdapter
