@@ -271,7 +271,7 @@ Remaining contracts, not implemented declarations:
   `toTorus ≫ overlapLeft ≫ left`, and
   `alpha ≫ OneGonNormalization.normalization = oneBranch ≫ OneGonGluing.node`.
   Prove alpha and the full projective Laurent open jointly cover P¹.
-- OneGonGlobalPushout, cap 220: use oneGon_desc and the actual open-gluing
+- OneGonGlobalPushout, implemented at 146/220: use oneGon_desc and the actual open-gluing
   pushout to prove the specified n=1 closed-pinching pushout in Over (Spec K).
 - PolygonAtlas, cap 120: transport the two pushouts through cyclicIso and
   oneGonIso to prove the all-positive-n signature above with PolygonAtlas maps.
@@ -506,3 +506,9 @@ individual runLinter and collectAxioms passed for OneGonAffineNormalization
 (218/240). It proves alpha is an open immersion, the endpoint/puncture and
 normalization identities, and coverage together with the full Laurent open.
 The combined audit output is GOAL_MAZUR_W12_AFFINE_AXIOMS.txt (untracked).
+
+E4d W12 global one-gon pushout checked 2026-10-03 00:58 UTC: foreground
+build, individual runLinter and collectAxioms passed for OneGonGlobalPushout
+(146/220). Its isPushout uses the exact specified normalization and node
+cocone in Over (Spec K); arbitrary targets need no separatedness assumption.
+Audit evidence: GOAL_MAZUR_W12_GLOBAL_AXIOMS.txt (untracked).

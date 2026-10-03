@@ -1161,6 +1161,7 @@ public import FLT.Mazur.OneGonAffineCover
 public import FLT.Mazur.OneGonAffineNormalization
 public import FLT.Mazur.OneGonAffineNormalizationCoordinates
 public import FLT.Mazur.OneGonCocone
+public import FLT.Mazur.OneGonGlobalPushout
 public import FLT.Mazur.OneGonGluing
 public import FLT.Mazur.OneGonLocalDescent
 public import FLT.Mazur.OneGonLocalizedEqualizer
