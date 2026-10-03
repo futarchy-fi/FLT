@@ -668,3 +668,12 @@ uniquely for a quasi-compact surjective schematically dominant normalization:
 overlap projections are epimorphisms by U6c4, since open immersions are flat
 and schematic dominance is stable under flat base change. This uses flatness
 of the open immersion, not the false assertion that normalization is flat.
+
+U6c7 `RingEqualizerDescent` is released with cap 110 after the complete
+`W16_DESCENT_PROOF.lean` compiles. For a finite normalization of a ring equalizer
+whose common endpoint map is surjective, local descents at all base primes
+extend uniquely to the entire equalizer spectrum. A prime containing the
+endpoint kernel lies in the endpoint image; every other prime avoids a kernel
+element, so U6c5 applies. The proof constructs the full open cover and uses
+U6c6; it does not assume a global descent in a record or hypothesis. The
+pinching-chart specializations still need their own checked proof.
