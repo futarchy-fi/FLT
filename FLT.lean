@@ -146,11 +146,16 @@ public import FLT.Deformations.RepresentationTheory.CharacterRange
 public import FLT.Deformations.RepresentationTheory.CyclicRestrictionTwist
 public import FLT.Deformations.RepresentationTheory.CyclicScalarRestriction
 public import FLT.Deformations.RepresentationTheory.CyclicStableLinePair
+public import FLT.Deformations.RepresentationTheory.CyclotomicGeneratorTrace
 public import FLT.Deformations.RepresentationTheory.CyclotomicInertiaDetection
 public import FLT.Deformations.RepresentationTheory.CyclotomicQuadraticDetection
+public import FLT.Deformations.RepresentationTheory.CyclotomicSmallPrimes
 public import FLT.Deformations.RepresentationTheory.Etale
 public import FLT.Deformations.RepresentationTheory.FamilyTracePair
 public import FLT.Deformations.RepresentationTheory.FiniteFieldQuadraticSpectrum
+public import FLT.Deformations.RepresentationTheory.FiniteFlatCyclotomicAbsolute
+public import FLT.Deformations.RepresentationTheory.FiniteFlatCyclotomicRestriction
+public import FLT.Deformations.RepresentationTheory.FiniteFlatCyclotomicTrace
 public import FLT.Deformations.RepresentationTheory.Flat
 public import FLT.Deformations.RepresentationTheory.FlatCofinal
 public import FLT.Deformations.RepresentationTheory.FlatDiscrete
@@ -159,9 +164,11 @@ public import FLT.Deformations.RepresentationTheory.FlatReduction
 public import FLT.Deformations.RepresentationTheory.Frobenius
 public import FLT.Deformations.RepresentationTheory.GaloisRep
 public import FLT.Deformations.RepresentationTheory.GaloisRepFamily
+public import FLT.Deformations.RepresentationTheory.HigherBinaryBounds
 public import FLT.Deformations.RepresentationTheory.IntegralClosure
 public import FLT.Deformations.RepresentationTheory.InvariantCharpoly
 public import FLT.Deformations.RepresentationTheory.Irreducible
+public import FLT.Deformations.RepresentationTheory.IteratedBaseChangeIrreducible
 public import FLT.Deformations.RepresentationTheory.MappedRankTwoCharpoly
 public import FLT.Deformations.RepresentationTheory.MappedTameSpectrum
 public import FLT.Deformations.RepresentationTheory.PGroupInvariants
@@ -171,6 +178,8 @@ public import FLT.Deformations.RepresentationTheory.PermutedSummandsTwist
 public import FLT.Deformations.RepresentationTheory.PrimePowerExact
 public import FLT.Deformations.RepresentationTheory.RankOneScalarCharacter
 public import FLT.Deformations.RepresentationTheory.RankTwoCharpoly
+public import FLT.Deformations.RepresentationTheory.RankTwoNonzeroTraceSpectrum
+public import FLT.Deformations.RepresentationTheory.RankTwoScalarQuotient
 public import FLT.Deformations.RepresentationTheory.RankTwoSimpleFactors
 public import FLT.Deformations.RepresentationTheory.ScalarActionCharpoly
 public import FLT.Deformations.RepresentationTheory.SelfTwistTrace
@@ -727,6 +736,8 @@ public import FLT.GroupScheme.RaynaudCharacterRankOne
 public import FLT.GroupScheme.RaynaudCharacterTranspose
 public import FLT.GroupScheme.RaynaudClosureFactorization
 public import FLT.GroupScheme.RaynaudCoefficientBounds
+public import FLT.GroupScheme.RaynaudCoefficientSpectrum
+public import FLT.GroupScheme.RaynaudCoefficientTrace
 public import FLT.GroupScheme.RaynaudCommonStage
 public import FLT.GroupScheme.RaynaudCommutativeImageScalars
 public import FLT.GroupScheme.RaynaudCompatibleSubquotients
@@ -787,6 +798,7 @@ public import FLT.GroupScheme.RaynaudHigherBinaryPower
 public import FLT.GroupScheme.RaynaudHigherCyclePower
 public import FLT.GroupScheme.RaynaudHigherPointCharacter
 public import FLT.GroupScheme.RaynaudHigherScalarWeights
+public import FLT.GroupScheme.RaynaudHigherWeightTrace
 public import FLT.GroupScheme.RaynaudIdentifiedCharacters
 public import FLT.GroupScheme.RaynaudIdentifiedScalarIso
 public import FLT.GroupScheme.RaynaudInductionStep
@@ -854,6 +866,7 @@ public import FLT.GroupScheme.RaynaudRankThreeClassification
 public import FLT.GroupScheme.RaynaudRankThreeExtension
 public import FLT.GroupScheme.RaynaudRankTwoCharpoly
 public import FLT.GroupScheme.RaynaudRationalCharpoly
+public import FLT.GroupScheme.RaynaudRationalHigherWeight
 public import FLT.GroupScheme.RaynaudReducedScalarAverage
 public import FLT.GroupScheme.RaynaudRelativeResidue
 public import FLT.GroupScheme.RaynaudRepresentationContinuity
