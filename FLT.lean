@@ -853,6 +853,7 @@ public import FLT.LocalClassFieldTheory.ResidueGaloisEquiv
 public import FLT.LocalClassFieldTheory.ResidueNorm
 public import FLT.LocalClassFieldTheory.ResidueNormLift
 public import FLT.LocalClassFieldTheory.UnramifiedCofinality
+public import FLT.LocalClassFieldTheory.UnramifiedCyclicStages
 public import FLT.LocalClassFieldTheory.UnramifiedDegree
 public import FLT.LocalClassFieldTheory.UnramifiedDegreeLimit
 public import FLT.LocalClassFieldTheory.UnramifiedDiagram
