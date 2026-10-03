@@ -976,6 +976,10 @@ public import FLT.LocalClassFieldTheory.ContinuousStageDiagram
 public import FLT.LocalClassFieldTheory.ContinuousTowerRefinement
 public import FLT.LocalClassFieldTheory.CyclicCarry
 public import FLT.LocalClassFieldTheory.CyclicCarryConnecting
+public import FLT.LocalClassFieldTheory.CyclicPeriodicComplex
+public import FLT.LocalClassFieldTheory.CyclicPeriodicExact
+public import FLT.LocalClassFieldTheory.CyclicPeriodicHomology
+public import FLT.LocalClassFieldTheory.CyclicSixTermSequence
 public import FLT.LocalClassFieldTheory.DescendedCochain
 public import FLT.LocalClassFieldTheory.DiscreteFieldUnits
 public import FLT.LocalClassFieldTheory.DiscreteIntegralUnits
