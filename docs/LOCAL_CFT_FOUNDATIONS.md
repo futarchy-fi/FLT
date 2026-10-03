@@ -8,9 +8,75 @@ are design sketches, not elaborated declarations or certified size estimates;
 split again before implementation if a proof exceeds the cap. No missing
 theorem may become a structure field, parameter standing for E1c7, or axiom.
 
-Latest validated scope: **W30**. The full lifting goal remains unmet.
+Latest validated scope: **W31**. The full lifting goal remains unmet.
 
-## W30 proved scope
+## W31 proved scope
+
+Checked 2026-10-03T16:05:18.866549+00:00; base `114f96be`; proof head `c316c543`.
+Read-only evidence check: `python3 Scratch/LiftsW31/check.py` verifies saved
+per-module build/lint/axiom logs, source hashes, sorted imports and the 200-line
+cap. It does not rerun Lean. The full lifting goal remains unmet.
+
+**The concrete coinduced module is Tate acyclic in every integer degree,
+including after restriction to every finite subgroup. Its connecting maps are
+proved isomorphisms. The relative twisted extension has vanishing Tate H⁰ and
+H¹ for the ambient Galois group. The degree −2 cup remains unproved.**
+
+Nine new modules contain 641 lines and 33 named declarations. Each module is
+below 200 lines, and every declaration uses only `propext`, `Classical.choice`
+and `Quot.sound`.
+
+- `CoinducedShapiro` identifies the orbit-function module with coinduction
+  from the trivial subgroup, then uses Shapiro for positive cohomology and
+  homology. No projectivity of the coefficient module is assumed.
+- `CoinducedNormExact` proves the two splice calculations using point masses:
+  the norm is the constant sum, and the augmentation boundary of the explicit
+  chain is the function minus its sum supported at the identity.
+- `CoinducedTateAcyclic` combines those calculations with Shapiro to prove
+  actual Tate vanishing in every integer degree. `CoinducedTateShift` makes
+  the concrete boundary an isomorphism and cancels this second boundary in
+  the two-extension cup's injectivity and surjectivity conditions.
+- `CoinducedSubgroup` supplies an equivariant coset-coordinate isomorphism
+  and proves acyclicity on every finite subgroup, without normality.
+  `CoinducedSubgroupShift` proves the actual restricted-sequence boundary
+  invertible; its source is the restriction of the original quotient.
+- `TateScalarVanishing` proves integral scalar Tate H⁻¹ and H¹ vanish.
+  `TateExactSequence` supplies the coefficient-map segment of the Tate long
+  exact sequence. `RelativeFundamentalExtension` uses Hilbert 90 and W30's
+  proved degree-zero cup to prove Tate H⁰ and H¹ of the actual local twisted
+  extension vanish. It also proves the actual input-degree −1 cup bijective
+  between zero groups. No class-formation conclusion is a hypothesis.
+
+The coinduced module and the twisted extension are different modules. Only
+the former is proved acyclic in every degree on every subgroup. The latter's
+vanishing in degrees zero and one is presently for the ambient Galois group.
+Neither statement supplies the missing degree −2 reciprocity isomorphism.
+
+### Next proofs after W31
+
+1. Prove finite-relative fundamental-class restriction/tower compatibility
+   and compare the restricted concrete two-extension with the one constructed
+   for each subgroup. This must transport the generator normalization and
+   the twisted extension's two adjacent vanishing groups to every subgroup.
+2. Prove the cohomological-triviality criterion from that subgroup vanishing,
+   and apply it to the twisted extension. Its first Tate boundary, followed
+   by the now-proved coinduced shift, must yield all cup isomorphisms,
+   especially input degree −2. No invertible boundary may be assumed.
+3. Construct finite Artin maps and prove norm/tower compatibility; prove
+   Kummer–Artin evaluation with positive Frobenius and the cup-order sign;
+   then derive E1d's annihilator statement. These remain unproved.
+
+Combined imports and the final axiom audit passed (`Scratch/LiftsW31/Integration.log`
+and `FinalAxioms.log`, both exit 0). `IsHardlyRamified.lifts` and
+`hardlyRamifiedLifting` still use `sorryAx`; `PNat.pow_add_pow_ne_pow` still
+uses `sorryAx` and `Mazur_statement`. No W31 declaration uses either.
+
+Module evidence: `Scratch/LiftsW31/*-{build,lint,axioms}.{log,exit}`.
+Rerun with `python3 Scratch/LiftsW31/validate.py MODULE ...`; it runs each
+module's build, lint and axiom check sequentially with `LEAN_NUM_THREADS=2`.
+Serre-weight evaluation and arbitrary-p Raynaud classification were not used.
+
+## W30 historical proved scope
 
 Checked 2026-10-03T15:32:51.559692+00:00; base `5cfcd5c0`; proof head `40439142`.
 Read-only evidence check: `python3 Scratch/LiftsW30/check.py` verifies saved
@@ -48,7 +114,7 @@ axiom checks passed. Evidence is in `Scratch/LiftsW30/`; the lifting theorem
 still uses `sorryAx`, and `PNat.pow_add_pow_ne_pow` still uses both `sorryAx`
 and `Mazur_statement`. No new declaration uses either.
 
-### Next proofs after W30
+### Next proofs after W30 (historical)
 
 | Gate | Required proof |
 |---|---|
