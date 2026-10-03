@@ -450,3 +450,12 @@ polynomial-chart/transition comparison (H6a, cap 240) from the open-cover
 pushout isomorphism and scalar compatibility (H6b, cap 180) before dispatch.
 The cartesian transition comparison remains a proof obligation, not a field
 in a new chart record.
+
+H2a is implemented in 108 lines. H2c's complete prototype also typechecks:
+`IsPullback (oneBranch K) (alpha K) (OneGonGluing.node K) (normalization K)`
+and `IsPullback (𝟙 _) (overlapLeft K ≫ left K) (OneGonGluing.torus K)
+(normalization K)`. The proof computes both inverse-image opens using the
+existing gluing intersection and the conductor; it includes coordinate one
+in the torus chart. Split H2d into H2d1 `OneGonNormalizationFinite` (cap 120,
+now released from H2a/H2c) and H2d2 `PolygonNormalizationFinite` (cap 160,
+still dependent on the cyclic inverse-image comparison H2b).
