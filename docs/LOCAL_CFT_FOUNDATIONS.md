@@ -8,9 +8,62 @@ are design sketches, not elaborated declarations or certified size estimates;
 split again before implementation if a proof exceeds the cap. No missing
 theorem may become a structure field, parameter standing for E1c7, or axiom.
 
-Latest validated scope: **W34**. The full lifting goal remains unmet.
+Latest validated scope: **W35**. The full lifting goal remains unmet.
 
-## W34 proved scope
+## W35 proved scope
+
+**W35 proves the subgroup corestriction diagram for the actual degree-minus-two
+fundamental cup, constructs the subgroup Artin map without an invertibility premise,
+and proves the algebraic norm diagram for normal fixed fields. The full two-field
+tower comparison, positive-Frobenius normalization, Kummer–Artin evaluation, E1d,
+and the overall lifting goal remain open.**
+
+The scalar comparison preserves the bar generator at `g`; the constructed cup
+sends it to the invariant class of `∑ h, c(h,g⁻¹)`. For the positive cyclic carry,
+`cyclicCarry_negative_cup_sign` proves that this is the **negative** scalar class.
+Thus positive normalization cannot be inferred from W34's degree-zero unit
+normalization; the negative-degree convention must be handled explicitly.
+
+Checked 2026-10-03T20:04:29.451293+00:00; integrated proof head `951458d6`.
+Read-only evidence check: `python3 Scratch/LiftsW35/check.py` verifies saved
+exit-zero logs, source hashes, allowed edits, sorted imports and line caps;
+it does not rerun Lean. All 63 named declarations in 17 new modules
+(1289 lines, each <=200) use only `propext`, `Classical.choice`, `Quot.sound`.
+
+The Artin norm theorem is specifically `finiteArtin_fixedField_norm`: its left
+side is W34's existing `finiteArtin` applied to the algebraic norm from the
+normal fixed field. Its right side is the actual abelianized subgroup inclusion
+applied to `finiteSubgroupArtin` on fixed units. The latter is constructed from
+the inverse cup of the restricted original fundamental class; its invertibility,
+surjectivity and norm kernel are proved. Identification with a separately
+constructed `finiteArtin` over that fixed field has **not** yet been transported
+through the fixed-field Galois equivalence.
+
+### Next proofs after W35
+
+1. Transport `finiteSubgroupArtin` through `subgroupFixedFieldEquiv` and the
+   fixed-unit equivalence to the separately constructed field-wise `finiteArtin`.
+   Extend the algebraic norm identification to nonnormal fixed fields. The
+   subgroup corestriction/cup square itself is proved in
+   `tateTwoClassMap_corestriction`; no all-degree transfer API is needed for it.
+2. Prove the quotient/tower diagram on the actual Artin maps. The existing
+   inflation identity for fundamental classes multiplies by the relative degree;
+   canceling that scalar in Tate degree zero is not justified. The needed
+   deflation/inflation comparison remains to be constructed.
+3. Prove the unramified uniformizer evaluation with **positive Frobenius**,
+   accounting for `cyclicCarry_negative_cup_sign`; then prove Kummer–Artin
+   evaluation and its cup-order sign. No positive-Frobenius theorem for the
+   current inverse-cup `finiteArtin` is claimed.
+4. Prove E1d's annihilator statement, then continue `docs/LIFTS_GOAL_LEDGER.md`.
+   No Serre-weight evaluation or arbitrary-p Raynaud classification API was assumed.
+
+The rebuilt endpoint audit still gives `sorryAx` for
+`GaloisRepresentation.IsHardlyRamified.lifts` and
+`FLT.Assembly.hardlyRamifiedLifting`; `PNat.pow_add_pow_ne_pow` retains
+`Mazur_statement`, `sorryAx` and the three standard axioms. The remaining work
+is mathematical, not waiting for approval.
+
+## W34 historical scope
 
 **W34 proves the adjacent-vanishing criterion for arbitrary finite groups,
 all-degree acyclicity of the local fundamental extension on every subgroup,
