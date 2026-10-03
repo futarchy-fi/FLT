@@ -881,6 +881,8 @@ public import FLT.LocalClassFieldTheory.IntegralRationalVanishing
 public import FLT.LocalClassFieldTheory.InvariantStageTransition
 public import FLT.LocalClassFieldTheory.NormalizedOrder
 public import FLT.LocalClassFieldTheory.PowerClassOrder
+public import FLT.LocalClassFieldTheory.PrincipalUnitFiltration
+public import FLT.LocalClassFieldTheory.PrincipalUnitResidue
 public import FLT.LocalClassFieldTheory.RationalCoefficientSequence
 public import FLT.LocalClassFieldTheory.RationalIntegralConnectingIso
 public import FLT.LocalClassFieldTheory.RationalTorsion
