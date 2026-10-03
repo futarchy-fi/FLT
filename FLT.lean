@@ -993,9 +993,11 @@ public import FLT.LocalClassFieldTheory.ContinuousStageDiagram
 public import FLT.LocalClassFieldTheory.ContinuousTowerRefinement
 public import FLT.LocalClassFieldTheory.CyclicCarry
 public import FLT.LocalClassFieldTheory.CyclicCarryConnecting
+public import FLT.LocalClassFieldTheory.CyclicIntegerCohomology
 public import FLT.LocalClassFieldTheory.CyclicPeriodicComplex
 public import FLT.LocalClassFieldTheory.CyclicPeriodicExact
 public import FLT.LocalClassFieldTheory.CyclicPeriodicHomology
+public import FLT.LocalClassFieldTheory.CyclicRelativeOrder
 public import FLT.LocalClassFieldTheory.CyclicSixTermSequence
 public import FLT.LocalClassFieldTheory.DescendedCochain
 public import FLT.LocalClassFieldTheory.DiscreteFieldUnits
@@ -1097,7 +1099,9 @@ public import FLT.LocalClassFieldTheory.PrincipalNormGraded
 public import FLT.LocalClassFieldTheory.PrincipalUnitFiltration
 public import FLT.LocalClassFieldTheory.PrincipalUnitNorm
 public import FLT.LocalClassFieldTheory.PrincipalUnitResidue
+public import FLT.LocalClassFieldTheory.RamifiedFieldHerbrand
 public import FLT.LocalClassFieldTheory.RamifiedOrderScale
+public import FLT.LocalClassFieldTheory.RamifiedOrderSequence
 public import FLT.LocalClassFieldTheory.RationalCoefficientSequence
 public import FLT.LocalClassFieldTheory.RationalIntegralConnectingIso
 public import FLT.LocalClassFieldTheory.RationalTorsion
