@@ -943,6 +943,7 @@ public import FLT.KnownIn1980s.Ribet_Lemma.Proofs
 public import FLT.LocalClassFieldTheory.AcyclicOpenUnits
 public import FLT.LocalClassFieldTheory.AdicFractionFieldComplete
 public import FLT.LocalClassFieldTheory.AdicGaloisContinuity
+public import FLT.LocalClassFieldTheory.AdicIntegerCompact
 public import FLT.LocalClassFieldTheory.AdicIntegerSpace
 public import FLT.LocalClassFieldTheory.AdicIntegerTopology
 public import FLT.LocalClassFieldTheory.AdicSeriesEvaluation
@@ -1023,6 +1024,9 @@ public import FLT.LocalClassFieldTheory.IntegralCoefficientRestriction
 public import FLT.LocalClassFieldTheory.IntegralConnectingCup
 public import FLT.LocalClassFieldTheory.IntegralCupComparison
 public import FLT.LocalClassFieldTheory.IntegralDegreeTwoComparison
+public import FLT.LocalClassFieldTheory.IntegralExpQuotient
+public import FLT.LocalClassFieldTheory.IntegralExpSequence
+public import FLT.LocalClassFieldTheory.IntegralExpSubrepresentation
 public import FLT.LocalClassFieldTheory.IntegralFrobeniusBaseChange
 public import FLT.LocalClassFieldTheory.IntegralH1Equivalence
 public import FLT.LocalClassFieldTheory.IntegralH2Characters
@@ -1096,6 +1100,7 @@ public import FLT.LocalClassFieldTheory.SixTermCard
 public import FLT.LocalClassFieldTheory.TowerRefinementFibers
 public import FLT.LocalClassFieldTheory.TrivialH1Characters
 public import FLT.LocalClassFieldTheory.TrivialRestrictionNaturality
+public import FLT.LocalClassFieldTheory.UnitHerbrand
 public import FLT.LocalClassFieldTheory.UnitNormApproximation
 public import FLT.LocalClassFieldTheory.UnitNormSequence
 public import FLT.LocalClassFieldTheory.UnitNormSurjectivity
