@@ -797,6 +797,7 @@ public import FLT.LocalClassFieldTheory.NormalizedOrder
 public import FLT.LocalClassFieldTheory.PowerClassOrder
 public import FLT.LocalClassFieldTheory.RationalTorsion
 public import FLT.LocalClassFieldTheory.ResidueAction
+public import FLT.LocalClassFieldTheory.ResidueActionFaithful
 public import FLT.LocalClassFieldTheory.ResidueActionSurjective
 public import FLT.Mathlib.Algebra.Algebra.Bilinear
 public import FLT.Mathlib.Algebra.Algebra.Equiv
