@@ -1253,3 +1253,23 @@ ring. Kernel lifts are the equalizer subtypes themselves. Surjectivity uses
 orientation zero minus adjacent infinity. These prove `ShortComplex.ShortExact`
 for actual sheaves on the two affine spectra. Comparing these complexes with
 restrictions of H3/H4 on the glued polygon remains open.
+
+`W20_OPEN_IMAGE_PROOF.lean` compiles before release. H5e
+`StructureImageOpenChart`, cap 140, identifies the actual structure direct
+image on any cartesian open chart. Ring section isomorphisms prove module
+linearity; naturality with the structure inclusion and with arbitrary compatible
+branch restrictions is proved, not assumed.
+
+`W20_OPEN_EXACT_PROOF.lean` compiles before release. H5f
+`ModuleExactOpenCover`, cap 100, detects zero modules on covers, then detects
+vanishing of the kernel, homology and cokernel. Its final theorem uses the
+actual open-immersion maps of `Scheme.OpenCover`, via `isoOpensRange`.
+It still needs proved local short exactness on those maps for the polygon.
+
+`W20_POLYGON_COMPLEX_PROOF.lean` compiles in full. H5g
+`PolygonNormalizationComplex`, cap 110, defines precisely H5's complex using
+H3/H4. The cartesian squares for normalization and nodes, and the two endpoint
+commutation equations, give an isomorphism with the actual affine complex.
+`chart_shortExact` transfers the proved ring exactness through this isomorphism.
+It does not posit an unproved sheaf-exactness field. The concrete atlas data must
+still be supplied, including the one-gon's complementary torus chart.

@@ -1302,6 +1302,7 @@ public import FLT.Mazur.ModuleCohomologyExact
 public import FLT.Mazur.ModuleCohomologyRing
 public import FLT.Mazur.ModuleCohomologyVanishing
 public import FLT.Mazur.ModuleDerivedAbelianComparison
+public import FLT.Mazur.ModuleExactOpenCover
 public import FLT.Mazur.ModuleFreeOpen
 public import FLT.Mazur.ModuleInjectiveFlasque
 public import FLT.Mazur.ModuleLineBundlePullback
@@ -1415,6 +1416,7 @@ public import FLT.Mazur.PolygonNodePresentation
 public import FLT.Mazur.PolygonNodeScalarExtension
 public import FLT.Mazur.PolygonNodeScaling
 public import FLT.Mazur.PolygonNormalizationAlgebra
+public import FLT.Mazur.PolygonNormalizationComplex
 public import FLT.Mazur.PolygonNormalizationDominant
 public import FLT.Mazur.PolygonNormalizationFinite
 public import FLT.Mazur.PolygonPinchingAffineBaseChange
@@ -1534,6 +1536,7 @@ public import FLT.Mazur.SmoothOpenSectionCartier
 public import FLT.Mazur.SmoothSectionCartier
 public import FLT.Mazur.StructureCohomologyFinite
 public import FLT.Mazur.StructureDirectImageSections
+public import FLT.Mazur.StructureImageOpenChart
 public import FLT.Mazur.SurjectiveDominantEpi
 public import FLT.Mazur.TernaryOpenDescent
 public import FLT.Mazur.TildePrincipalOpen
