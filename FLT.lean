@@ -1170,6 +1170,7 @@ public import FLT.LocalClassFieldTheory.FiniteInflationCocycleDescent
 public import FLT.LocalClassFieldTheory.FiniteInflationRestrictionExact
 public import FLT.LocalClassFieldTheory.FiniteKernelCocycleCorrection
 public import FLT.LocalClassFieldTheory.FiniteQuotientArtin
+public import FLT.LocalClassFieldTheory.FiniteQuotientArtinCup
 public import FLT.LocalClassFieldTheory.FiniteRelativeCocycleDescent
 public import FLT.LocalClassFieldTheory.FiniteRelativeSaturation
 public import FLT.LocalClassFieldTheory.FiniteRelativeSequence
@@ -1272,6 +1273,8 @@ public import FLT.LocalClassFieldTheory.NormalizedOrder
 public import FLT.LocalClassFieldTheory.NormalizedTwoCocycles
 public import FLT.LocalClassFieldTheory.OneCocycleExtension
 public import FLT.LocalClassFieldTheory.OneCocycleExtensionChange
+public import FLT.LocalClassFieldTheory.OneCocycleInvariantProjection
+public import FLT.LocalClassFieldTheory.OneCocycleInvariantSequence
 public import FLT.LocalClassFieldTheory.OneCocycleNegativeBoundary
 public import FLT.LocalClassFieldTheory.OneCocycleScalarBoundary
 public import FLT.LocalClassFieldTheory.OrderHomScale
