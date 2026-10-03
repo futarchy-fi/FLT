@@ -475,3 +475,48 @@ The generic limit is indexed by all finite Galois intermediate fields of
 the union. Reindexing it explicitly by positive degrees is distinct from
 cofinality. Identifying the restriction kernel with the existing valuation
 inertia group remains blocked on the valued-field/residue-closure frontend.
+
+## W17 proved scope and next gates
+
+The U03b realization chain is now implemented under a complete DVR base
+with finite residue field. The constructor's equal degree output implies
+maximal-ideal equality, formal unramifiedness and complete Henselian integral
+closure. A primitive residue element lifts to an integral algebra generator;
+its polynomial splits by lifting all simple residue roots. The fraction field
+is consequently normal. Each positive degree gives a Galois stage in the
+chosen separable closure, and these stages are unique with containment iff
+degree divisibility and compositum equal to the lcm stage.
+
+`IsUnramifiedStage` is an existential predicate for an actual finite
+unramified Henselian DVR model, not an assumed normality/uniqueness interface.
+Normality and equal fraction/residue degree are proved consequences. This
+frontend uses algebraic complete-DVR hypotheses; it has not yet been matched
+to every analytic valued-local-field representation used elsewhere in FLT.
+
+The directed supremum is constructed and Galois. Each element lies in a
+finite stage; each finite subextension of the supremum is contained in one.
+Its Galois group is topologically equivalent to the existing inverse limit
+over **all finite Galois intermediate fields of the supremum**. Restriction
+from the chosen separable closure is continuous and surjective, with kernel
+exactly the automorphisms fixing every degree-indexed stage pointwise.
+
+Remaining U gates (not certified ready):
+
+1. Reindex that explicit profinite limit by positive degrees and identify
+   its transition maps with the compatible arithmetic Frobenius maps. The
+   required field-containment cofinality is proved; categorical reindexing
+   and the Frobenius coordinate comparison are not yet assembled.
+2. Identify this restriction kernel with the repository's valuation inertia.
+   Reuse `NumberField.map_localInertiaGroup_eq_inertia` and
+   `map_localInertiaGroup_eq_finiteInertia` for their actual number-field
+   completion contexts. The missing match is between the constructed models,
+   the canonical integral closures/valuation rings, and the inertia-fixed
+   finite subextensions; the existing finite inertia comparison is not missing.
+3. Construct the normalized continuous unramified characters and prove the
+   universal inertia-trivial factorization (U05) after that identification.
+
+E1c7/E1d remain blocked. These U leaves do not provide local reciprocity,
+principal-unit norm convergence, continuous cohomology comparison, the local
+invariant/class formation, or Kummer–Artin evaluation, and do not remove
+`IsHardlyRamified.lifts`. The independent Serre-weight and arbitrary-p
+Raynaud classification gates remain untouched.
