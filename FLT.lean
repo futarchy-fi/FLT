@@ -1014,6 +1014,7 @@ public import FLT.LocalClassFieldTheory.GaloisKernelRestriction
 public import FLT.LocalClassFieldTheory.GaloisKernelTopology
 public import FLT.LocalClassFieldTheory.GaloisTowerCochainDescent
 public import FLT.LocalClassFieldTheory.HenselianRoots
+public import FLT.LocalClassFieldTheory.HerbrandExact
 public import FLT.LocalClassFieldTheory.InflationBoundaryDescent
 public import FLT.LocalClassFieldTheory.InflationKernelCorrection
 public import FLT.LocalClassFieldTheory.IntegralCharacterAdditivity
@@ -1091,6 +1092,7 @@ public import FLT.LocalClassFieldTheory.ResidueGaloisEquiv
 public import FLT.LocalClassFieldTheory.ResidueNorm
 public import FLT.LocalClassFieldTheory.ResidueNormLift
 public import FLT.LocalClassFieldTheory.RestrictedCochainDescent
+public import FLT.LocalClassFieldTheory.SixTermCard
 public import FLT.LocalClassFieldTheory.TowerRefinementFibers
 public import FLT.LocalClassFieldTheory.TrivialH1Characters
 public import FLT.LocalClassFieldTheory.TrivialRestrictionNaturality
