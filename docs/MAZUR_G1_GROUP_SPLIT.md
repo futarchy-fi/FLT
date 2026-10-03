@@ -640,3 +640,12 @@ saturated principal neighborhood mapping into an affine target open. Both
 endpoint/base-localization formulas and the cartesian normalization square
 are proved. U6c1/U6c2 must still construct covering families of these local
 descents and prove their compatibility and global uniqueness.
+
+`W16_RELATIVE_LOCAL_PROOF.lean` now compiles in full. Release U6c3
+`RelativePinchingLocalDescent` (cap 140), specializing U6c0 to B and to the
+product normalization of A. At every base prime it constructs an actual
+morphism on a saturated open containing that node. The node proof uses the
+prime-spectrum decomposition of a product to put both normalization branches
+inside the chosen target affine open. All coefficient rings are commutative
+rings, with no field or nonzero-is-unit assumption. This is local existence,
+not global arbitrary-target descent or preservation of the pinching pushout.
