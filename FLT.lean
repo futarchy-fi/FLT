@@ -2328,9 +2328,15 @@ public import FLT.PadicHodgeTheory.IdealPowerDifference
 public import FLT.PadicHodgeTheory.NilpotentLogPower
 public import FLT.PadicHodgeTheory.NilpotentSeriesEvaluation
 public import FLT.PadicHodgeTheory.NilpotentSeriesSubstitution
+public import FLT.PadicHodgeTheory.NormalizedTraceTower
 public import FLT.PadicHodgeTheory.PadicAxDegreeStep
 public import FLT.PadicHodgeTheory.PadicAxEstimate
 public import FLT.PadicHodgeTheory.PadicBinomialDescent
+public import FLT.PadicHodgeTheory.PadicCyclotomicDegree
+public import FLT.PadicHodgeTheory.PadicCyclotomicIrreducible
+public import FLT.PadicHodgeTheory.PadicCyclotomicRootNorm
+public import FLT.PadicHodgeTheory.PadicCyclotomicTower
+public import FLT.PadicHodgeTheory.PadicCyclotomicTrace
 public import FLT.PadicHodgeTheory.PadicGaloisAverage
 public import FLT.PadicHodgeTheory.PadicGaloisOrbit
 public import FLT.PadicHodgeTheory.PadicHasseApproximation
