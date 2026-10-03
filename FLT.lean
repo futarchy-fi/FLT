@@ -39,6 +39,7 @@ public import FLT.AbsoluteGaloisGroup.FundamentalCyclotomic
 public import FLT.AbsoluteGaloisGroup.FundamentalTame
 public import FLT.AbsoluteGaloisGroup.InertiaComparison
 public import FLT.AbsoluteGaloisGroup.InertiaDescentField
+public import FLT.AbsoluteGaloisGroup.InertiaDescentHenselian
 public import FLT.AbsoluteGaloisGroup.InertiaDescentUniformizer
 public import FLT.AbsoluteGaloisGroup.LocalCompositum
 public import FLT.AbsoluteGaloisGroup.LocalCyclotomicCharacter
@@ -632,6 +633,9 @@ public import FLT.GroupScheme.RaynaudConnectedQuotient
 public import FLT.GroupScheme.RaynaudCoordinateCharacter
 public import FLT.GroupScheme.RaynaudDVRParameterValuation
 public import FLT.GroupScheme.RaynaudDiagonalizableExtension
+public import FLT.GroupScheme.RaynaudDirectedHenselian
+public import FLT.GroupScheme.RaynaudDirectedPolynomial
+public import FLT.GroupScheme.RaynaudDirectedUnion
 public import FLT.GroupScheme.RaynaudDiscriminant
 public import FLT.GroupScheme.RaynaudEtaleDualExtension
 public import FLT.GroupScheme.RaynaudEtaleExtension
@@ -663,6 +667,7 @@ public import FLT.GroupScheme.RaynaudRigidity
 public import FLT.GroupScheme.RaynaudScalingValuation
 public import FLT.GroupScheme.RaynaudSplitting
 public import FLT.GroupScheme.RaynaudStageFractionField
+public import FLT.GroupScheme.RaynaudStageHenselian
 public import FLT.GroupScheme.RaynaudTorsionFiltration
 public import FLT.GroupScheme.RaynaudTorsorDescent
 public import FLT.GroupScheme.RaynaudTwoCoordinates
