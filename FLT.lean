@@ -2156,8 +2156,17 @@ public import FLT.Odlyzko.ZeroSideOffCritical
 public import FLT.PadicHodgeTheory.AdicCompletionRegular
 public import FLT.PadicHodgeTheory.AdicPrincipalDVR
 public import FLT.PadicHodgeTheory.AdicPrincipalKernel
+public import FLT.PadicHodgeTheory.AdicRingFunctor
+public import FLT.PadicHodgeTheory.AdicSeries
+public import FLT.PadicHodgeTheory.ComplexCyclotomicAction
+public import FLT.PadicHodgeTheory.ComplexCyclotomicLog
+public import FLT.PadicHodgeTheory.ComplexCyclotomicLogTransport
+public import FLT.PadicHodgeTheory.ComplexCyclotomicRoots
+public import FLT.PadicHodgeTheory.ComplexCyclotomicTilt
 public import FLT.PadicHodgeTheory.ComplexDeRhamDVR
+public import FLT.PadicHodgeTheory.ComplexDeRhamEquivariance
 public import FLT.PadicHodgeTheory.ComplexDeRhamFiltration
+public import FLT.PadicHodgeTheory.ComplexDeRhamGalois
 public import FLT.PadicHodgeTheory.ComplexDeRhamResidue
 public import FLT.PadicHodgeTheory.ComplexDeRhamRings
 public import FLT.PadicHodgeTheory.ComplexFontaineTheta
@@ -2167,6 +2176,7 @@ public import FLT.PadicHodgeTheory.ComplexIntegerAdic
 public import FLT.PadicHodgeTheory.ComplexIntegerFrobenius
 public import FLT.PadicHodgeTheory.ComplexIntegerGalois
 public import FLT.PadicHodgeTheory.ComplexIntegerInvertP
+public import FLT.PadicHodgeTheory.ComplexLocalizedGalois
 public import FLT.PadicHodgeTheory.ComplexSharpEquivariance
 public import FLT.PadicHodgeTheory.ComplexSharpSurjective
 public import FLT.PadicHodgeTheory.ComplexThetaEquivariance
