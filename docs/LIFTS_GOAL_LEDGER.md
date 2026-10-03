@@ -4,6 +4,33 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
+## W13 source match and bounded E09c split — 2026-10-03
+
+These contracts are committed before proof. Each new module has a 200-line
+cap, including imports. All comparisons concern E06's explicit continuous
+quotient. A finite basis may model scalar extension: coordinatewise cocycles
+and coordinatewise splitting changes must both be proved, not postulated.
+
+| Leaf / proposed module | Contract and checked source APIs | Dependencies |
+|---|---|---|
+| E09c1 / GroupScheme.PrimeRootCoordinates | `ZMod p ≃+ RootModule L p` from a primitive root; compute its value on natural integers. Mathlib RootsOfUnity/PrimitiveRoots: zmodEquivZPowers, zpowers_eq; MulEquiv.subgroupCongr. | READY |
+| E09c2 / Extensions.CharacterCoefficients | Discrete character coefficient module, prime-to-extension coefficient embedding and basis-coordinate equivariance for a character valued in the prime field. CharacterLines.characterLine; Basis.equivFun, map_smul. | E09c1 |
+| E09c3 / GroupScheme.PrimeCyclotomicCoefficients | E09c1 intertwines the natural Galois action with the actual modularCyclotomicCharacter; hence continuous cocycles/classes identify with the prime character line. CyclotomicCharacter.modularCyclotomicCharacter.spec; E09b.coefficientClassEquiv. | E09c1/c2 |
+| E09c4 / Extensions.ContinuousCocycleCoordinates | Finite products commute with continuous cocycles and splitting equivalence, including reconstruction of the splitting vector. continuous_pi; E06; coordinate evaluation. | E09c2 |
+| E09c5 / Extensions.ContinuousClassCoordinates | Finite-product continuous classes are exactly products of classes; combine with an equivariant finite coefficient basis to compare scalar-extended character classes. Quotient.map/lift, Quotient.choice, E09b. | E09c4 |
+| E09c6 / Extensions.LinearContinuousClass | Linear cocycle submodule, principal submodule, and a proved equivalence of its quotient with E06's explicit quotient. Submodule.mkQ; splittingEquivalent_iff_coboundary. | E09c5 |
+| E09c7 / GroupScheme.PrimeUnitSubspace | Prove additivity of the Kummer comparison, then the prime-field unit subspace using the independently defined valuation-unit subgroup. rootUnit_add, unitRatio_mul; KummerUnitClass.unitClasses. | E09c3/c6 |
+| E09c8 / Extensions.ExtendedUnitSubspace | Define coefficient extension of E09c7 and prove arbitrary nonzero residual-field scalar changes preserve and reflect membership; relate to finite-basis comparison, independent of basis. Submodule.span/map, E09c5/c6/c7. | E09c7 |
+| E09c9 / Extensions.OrdinaryTwist | Apply E09c8 to actual Hom-character coordinates and E09e's b/a lift-basis change, with simultaneous twists cancelling. | E09c8 |
+
+The modules listed after c5 are new constructions, not existing APIs. E09c
+closes only after the unit-space and actual ordinary-extension adapters are
+proved. Root existence and a primitive root must be supplied explicitly or
+proved for the algebraic closure. No equality of an arbitrary k-line with
+the cyclic root group is asserted. E1's independent ramification predicate
+and arithmetic comparison remain a separate gate; no Serre-weight or Raynaud
+classification work is ready on the strength of this split.
+
 ## W12 acceptance and remaining boundary — checked 2026-10-03 00:56 UTC
 
 E08a–g and E09a/b/d/e are implemented in eleven new modules (1,051 lines).
