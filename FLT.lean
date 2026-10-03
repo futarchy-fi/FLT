@@ -1168,6 +1168,8 @@ public import FLT.Mazur.OpenSheafFreeComparison
 public import FLT.Mazur.OpenSheafRestriction
 public import FLT.Mazur.OverPoints
 public import FLT.Mazur.PolygonChartScaling
+public import FLT.Mazur.PolygonCyclicAtlas
+public import FLT.Mazur.PolygonCyclicCocone
 public import FLT.Mazur.PolygonIncidence
 public import FLT.Mazur.PolygonNodeBranches
 public import FLT.Mazur.PolygonNodeEqualizer
