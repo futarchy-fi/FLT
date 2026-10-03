@@ -304,6 +304,7 @@ public import FLT.GaloisRepresentation.Extensions.CocycleAction
 public import FLT.GaloisRepresentation.Extensions.ContinuousClass
 public import FLT.GaloisRepresentation.Extensions.ContinuousClassCoordinates
 public import FLT.GaloisRepresentation.Extensions.ContinuousCocycleCoordinates
+public import FLT.GaloisRepresentation.Extensions.ContinuousCup
 public import FLT.GaloisRepresentation.Extensions.ExtendedUnitSubspace
 public import FLT.GaloisRepresentation.Extensions.FiniteDescent
 public import FLT.GaloisRepresentation.Extensions.LiftBasisTransport
