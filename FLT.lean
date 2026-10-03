@@ -878,6 +878,7 @@ public import FLT.LocalClassFieldTheory.IntegralH1Equivalence
 public import FLT.LocalClassFieldTheory.IntegralH2Characters
 public import FLT.LocalClassFieldTheory.IntegralLowDegreeComparison
 public import FLT.LocalClassFieldTheory.IntegralRationalVanishing
+public import FLT.LocalClassFieldTheory.IntegralUnitRepresentation
 public import FLT.LocalClassFieldTheory.InvariantStageTransition
 public import FLT.LocalClassFieldTheory.NormCongruence
 public import FLT.LocalClassFieldTheory.NormFirstOrder
@@ -933,6 +934,9 @@ public import FLT.LocalClassFieldTheory.UnramifiedStages
 public import FLT.LocalClassFieldTheory.UnramifiedUniformizer
 public import FLT.LocalClassFieldTheory.UnramifiedUnion
 public import FLT.LocalClassFieldTheory.UnramifiedUniqueness
+public import FLT.LocalClassFieldTheory.UnramifiedUnitAcyclic
+public import FLT.LocalClassFieldTheory.UnramifiedUnitCyclicExact
+public import FLT.LocalClassFieldTheory.UnramifiedUnitHilbert90
 public import FLT.Mathlib.Algebra.Algebra.Bilinear
 public import FLT.Mathlib.Algebra.Algebra.Equiv
 public import FLT.Mathlib.Algebra.Algebra.Hom
