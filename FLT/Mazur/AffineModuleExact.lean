@@ -37,4 +37,3 @@ theorem shortExact_of_sections (h : (S.map moduleSpecΓFunctor).ShortExact) :
   ShortComplex.shortExact_of_iso (comparison S)
     (FCurve.CoherentDevissage.coherentTilde_shortExact h)
 end FLT.Mazur.AffineModuleExact
-

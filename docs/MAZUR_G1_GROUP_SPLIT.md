@@ -5,7 +5,7 @@ exactness and cyclic linear exactness. They do not construct a polygon or
 identify that linear complex with sheaf cohomology. This split develops the
 relative group candidate and isolates its comparison with the smooth locus.
 The historical G1–G4 contracts below retain their original caps.
-The W19 validated outcome below supersedes the historical status tables.
+The W20 validated outcome below supersedes the W19 and historical status tables.
 New leaves are at most 240 lines. Unimplemented signatures remain contracts.
 
 Checked 2026-09-30 19:16 UTC by the following read-only API searches (paths
@@ -1311,3 +1311,65 @@ assembles the one-gon and cyclic atlas results and transports them through
 specified positive-size pinching cocone. `abelianSheaf_shortExact` supplies the
 additive-sheaf sequence used by cohomology. H5 is now proved; H8/H9 and the
 genus and geometric incidence bridges remain separate obligations.
+
+`W20_COPRODUCT_SECTIONS_PROOF.lean` compiles before release. H8a/H9a
+`SchemeCoproductSections`, cap 100, applies the Gamma-Spec adjunction to the
+coproduct and proves each coordinate is the actual component restriction.
+It includes the comparison for coproducts formed in schemes over a base.
+The index and coefficient universes are independent, so `Fin n` needs no
+coefficient-universe restriction.
+
+`W20_H0_IMAGE_PROOF.lean` compiles before release. H8b/H9b
+`StructureDirectImageHZero`, cap 60, identifies degree-zero direct-image
+cohomology with source global sections. The scalar comparison uses the actual
+composite structure morphism; no affine or separatedness assumption is needed.
+
+`W20_COPRODUCT_CONSTANTS_PROOF.lean` compiles before release. H8c/H9c
+`CoproductConstantSections`, cap 80, turns proved constant-section properties
+on components into a ring and base-linear section equivalence. Its coordinate
+lemma identifies values by actual component restriction.
+
+`W20_COPRODUCT_IMAGE_H0_PROOF.lean` compiles in full. H8d/H9d
+`PolygonNormalizationHZero`, cap 100, applies the section comparison to the
+actual normalization and node module sheaves. H7 supplies constant sections
+on each projective line; `ΓSpecIso` supplies them on each point. The resulting
+`normalizationEquiv` and `nodeEquiv` are base-linear equivalences with `Fin n → K`,
+with explicit coordinate restriction formulas. Degree-one vanishing remains open.
+
+`W20_NODE_CLOSED_PROOF.lean` compiles before release. H9e
+`PolygonNodesClosed`, cap 110, proves the actual node map is a closed immersion
+for cyclic polygons, the one-gon and any specified pinching cocone. On each
+node chart evaluation is a surjective ring map; over the complementary
+one-gon torus the source is empty. Thus the node map is finite and affine.
+
+## W20 validated outcome
+
+Checked 2026-10-03 07:38 UTC. Foreground module builds and single-module lint passed
+for all 18 new modules. The originating-declaration audit in
+`GOAL_MAZUR_W20_AXIOM_AUDIT.lean` checked 207 declarations; every dependency
+axiom is `propext`, `Classical.choice` or `Quot.sound`. The checked consumer
+`W20_REMAINING_CONTRACT.lean` proves the exact original H5 target and both
+H0 equivalence targets, and checks node finiteness. These root validation
+artifacts stay untracked, outside the library and docs.
+
+H5 is proved for every positive polygon size and every supplied pinching
+cocone, using the actual H3 inclusion and H4 branch difference. The proof
+includes n=1 and n=2, and gives additive-sheaf short exactness. H8/H9 now have
+their H0 identifications with `Fin n → K`, with component and node restriction
+formulas. The node map is a closed immersion, hence finite and affine.
+
+H8/H9 degree-one vanishing is still unproved. The available
+`affinePushforward_moduleH_subsingleton_iff` requires a separated target;
+polygon separatedness has not yet been established in these modules. It also
+needs cohomology of the normalization coproduct to be compared with the H7
+projective-line calculation. Prove these prerequisites, or supply a direct
+acyclic comparison that avoids separatedness, before marking H8/H9 complete.
+No bounded proof cap is released for these unfinished obligations.
+
+The cyclic incidence comparison, polygon constants, properness, dimension,
+genus and geometric base change remain open. Geometric U12 still needs actual
+irreducible components and node/edge incidence after field extension. The
+moduli/arithmetic argument and final assembly also remain open: source check
+`rg -n 'Mazur_statement|mazur_W' FLT/Assumptions/Mazur.lean
+FLT/Assembly/ExistingInputs.lean` still finds the assumption and its use.
+No compiled final-consumer axiom audit or Mazur removal is claimed.
