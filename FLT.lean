@@ -840,6 +840,7 @@ public import FLT.LocalClassFieldTheory.CochainFiniteImage
 public import FLT.LocalClassFieldTheory.CochainHomologyClass
 public import FLT.LocalClassFieldTheory.CochainOpenNormal
 public import FLT.LocalClassFieldTheory.ConnectingCoefficientNaturality
+public import FLT.LocalClassFieldTheory.ConnectingCupCompatibility
 public import FLT.LocalClassFieldTheory.ConnectingRestrictionNaturality
 public import FLT.LocalClassFieldTheory.ContinuousCharacteristicZeroCohomology
 public import FLT.LocalClassFieldTheory.ContinuousCochainColimit
