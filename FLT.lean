@@ -956,6 +956,8 @@ public import FLT.KnownIn1980s.PGL2.Proofs
 public import FLT.KnownIn1980s.RepresentationTheory.OddAbsIrred
 public import FLT.KnownIn1980s.Ribet_Lemma.Defs
 public import FLT.KnownIn1980s.Ribet_Lemma.Proofs
+public import FLT.LocalClassFieldTheory.AbsoluteInvariant
+public import FLT.LocalClassFieldTheory.AbsoluteRestriction
 public import FLT.LocalClassFieldTheory.AcyclicOpenUnits
 public import FLT.LocalClassFieldTheory.AdicFractionFieldComplete
 public import FLT.LocalClassFieldTheory.AdicGaloisContinuity
@@ -1014,10 +1016,13 @@ public import FLT.LocalClassFieldTheory.FiniteCharacteristicZeroCohomology
 public import FLT.LocalClassFieldTheory.FiniteContinuousComparison
 public import FLT.LocalClassFieldTheory.FiniteCyclicHerbrand
 public import FLT.LocalClassFieldTheory.FiniteDvrComplete
+public import FLT.LocalClassFieldTheory.FiniteExtensionDvr
+public import FLT.LocalClassFieldTheory.FiniteExtensionLocalRing
 public import FLT.LocalClassFieldTheory.FiniteHomologyCard
 public import FLT.LocalClassFieldTheory.FiniteInflationCocycleDescent
 public import FLT.LocalClassFieldTheory.FiniteInflationRestrictionExact
 public import FLT.LocalClassFieldTheory.FiniteKernelCocycleCorrection
+public import FLT.LocalClassFieldTheory.FiniteRelativeCocycleDescent
 public import FLT.LocalClassFieldTheory.FiniteRelativeSaturation
 public import FLT.LocalClassFieldTheory.FiniteRelativeSequence
 public import FLT.LocalClassFieldTheory.FiniteSubgroupCocycleCorrection
@@ -1065,6 +1070,7 @@ public import FLT.LocalClassFieldTheory.IntegralUnitInvariants
 public import FLT.LocalClassFieldTheory.IntegralUnitRepresentation
 public import FLT.LocalClassFieldTheory.IntermediateDvr
 public import FLT.LocalClassFieldTheory.IntermediateDvrAlgebra
+public import FLT.LocalClassFieldTheory.InvariantRestriction
 public import FLT.LocalClassFieldTheory.InvariantStageTransition
 public import FLT.LocalClassFieldTheory.KernelCocycleDescent
 public import FLT.LocalClassFieldTheory.KernelCocycleNormalization
@@ -1123,6 +1129,7 @@ public import FLT.LocalClassFieldTheory.ResidueGaloisEquiv
 public import FLT.LocalClassFieldTheory.ResidueNorm
 public import FLT.LocalClassFieldTheory.ResidueNormLift
 public import FLT.LocalClassFieldTheory.RestrictedCochainDescent
+public import FLT.LocalClassFieldTheory.RestrictionSurjective
 public import FLT.LocalClassFieldTheory.SixTermCard
 public import FLT.LocalClassFieldTheory.SolvableFieldStep
 public import FLT.LocalClassFieldTheory.SolvableNormalStep
@@ -1133,6 +1140,7 @@ public import FLT.LocalClassFieldTheory.UnitHerbrand
 public import FLT.LocalClassFieldTheory.UnitNormApproximation
 public import FLT.LocalClassFieldTheory.UnitNormSequence
 public import FLT.LocalClassFieldTheory.UnitNormSurjectivity
+public import FLT.LocalClassFieldTheory.UnramifiedAbsoluteSquare
 public import FLT.LocalClassFieldTheory.UnramifiedBaseChange
 public import FLT.LocalClassFieldTheory.UnramifiedBaseChangeCohomology
 public import FLT.LocalClassFieldTheory.UnramifiedBaseChangeEmbedding
@@ -1165,6 +1173,7 @@ public import FLT.LocalClassFieldTheory.UnramifiedInertiaConverse
 public import FLT.LocalClassFieldTheory.UnramifiedInertiaKernel
 public import FLT.LocalClassFieldTheory.UnramifiedInflatedCarries
 public import FLT.LocalClassFieldTheory.UnramifiedInflationInjective
+public import FLT.LocalClassFieldTheory.UnramifiedInflationSurjective
 public import FLT.LocalClassFieldTheory.UnramifiedIntegralH2
 public import FLT.LocalClassFieldTheory.UnramifiedIntegralH2Additive
 public import FLT.LocalClassFieldTheory.UnramifiedIntegralH2Restriction
