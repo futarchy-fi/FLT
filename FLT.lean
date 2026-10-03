@@ -939,6 +939,8 @@ public import FLT.LocalClassFieldTheory.ContinuousColimitNaturality
 public import FLT.LocalClassFieldTheory.ContinuousConnectingMap
 public import FLT.LocalClassFieldTheory.ContinuousExactCoefficients
 public import FLT.LocalClassFieldTheory.ContinuousHilbert90
+public import FLT.LocalClassFieldTheory.ContinuousInflationBoundary
+public import FLT.LocalClassFieldTheory.ContinuousInflationH2
 public import FLT.LocalClassFieldTheory.ContinuousRestriction
 public import FLT.LocalClassFieldTheory.ContinuousRestrictionCohomology
 public import FLT.LocalClassFieldTheory.ContinuousRestrictionColimit
@@ -961,6 +963,9 @@ public import FLT.LocalClassFieldTheory.FixedCoefficientCochain
 public import FLT.LocalClassFieldTheory.FixedCoefficientDifferential
 public import FLT.LocalClassFieldTheory.Frobenius
 public import FLT.LocalClassFieldTheory.FrobeniusTower
+public import FLT.LocalClassFieldTheory.GaloisInflationCoefficients
+public import FLT.LocalClassFieldTheory.GaloisInflationH2
+public import FLT.LocalClassFieldTheory.GaloisKernelTopology
 public import FLT.LocalClassFieldTheory.HenselianRoots
 public import FLT.LocalClassFieldTheory.InflationBoundaryDescent
 public import FLT.LocalClassFieldTheory.InflationKernelCorrection
@@ -1025,6 +1030,7 @@ public import FLT.LocalClassFieldTheory.UnramifiedGaloisExistence
 public import FLT.LocalClassFieldTheory.UnramifiedGaloisLimit
 public import FLT.LocalClassFieldTheory.UnramifiedInertiaConverse
 public import FLT.LocalClassFieldTheory.UnramifiedInertiaKernel
+public import FLT.LocalClassFieldTheory.UnramifiedInflationInjective
 public import FLT.LocalClassFieldTheory.UnramifiedIntegralH2
 public import FLT.LocalClassFieldTheory.UnramifiedIntegralH2Additive
 public import FLT.LocalClassFieldTheory.UnramifiedIntegralModel
