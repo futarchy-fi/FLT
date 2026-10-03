@@ -23,6 +23,14 @@ and coordinatewise splitting changes must both be proved, not postulated.
 | E09c8 / Extensions.ExtendedUnitSubspace | Define coefficient extension of E09c7 and prove arbitrary nonzero residual-field scalar changes preserve and reflect membership; relate to finite-basis comparison, independent of basis. Submodule.span/map, E09c5/c6/c7. | E09c7 |
 | E09c9 / Extensions.OrdinaryTwist | Apply E09c8 to actual Hom-character coordinates and E09e's b/a lift-basis change, with simultaneous twists cancelling. | E09c8 |
 
+Additional linear foundations matched before proof (each cap 200):
+
+| Leaf / module | Contract and source | Dependencies |
+|---|---|---|
+| E09c6a / Extensions.LinearCoefficientMap | Semilinear equivariant coefficient maps induce semilinear maps of continuous cocycles and classes. Submodule.mapQ; continuous_of_discreteTopology. | E09c6 |
+| E09c6b / GroupScheme.RootModuleLinear | Canonical ZMod-p module on root coefficients, commuting with Galois; primitive-root coordinates are linear. AddCommGroup.zmodModule; ZMod.map_smul; rootUnit_pow. | E09c1/c3 |
+| E09c7a / GroupScheme.LinearKummerClass | Additive Kummer comparison on linear continuous classes; prove product compatibility from unitRatio_mul and root-choice independence. | E09c6/c6b |
+
 The modules listed after c5 are new constructions, not existing APIs. E09c
 closes only after the unit-space and actual ordinary-extension adapters are
 proved. Root existence and a primitive root must be supplied explicitly or
