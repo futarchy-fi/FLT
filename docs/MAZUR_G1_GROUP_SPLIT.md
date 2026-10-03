@@ -829,3 +829,31 @@ branches are the pulled-back zero and adjacent infinity sections, checked by
 both projections and `coprodSpec`. The input endpoint equality supplies the
 hypothesis of `RelativePinchingDescent.node_product_desc`. Global gluing and
 transport from the specified pinching cocone are still required.
+
+`W17_DOMINANCE_PROOF.lean` compiles before release. U6d8
+`PolygonNormalizationDominant` has cap 130: prove the original polygons reduced
+from their actual chart covers, derive schematic dominance of the finite
+surjective normalization, and transport it through the flat base-change squares.
+The resulting normalization products are finite, surjective and epimorphisms.
+The coefficient algebra may be nonreduced; reducedness is used only over K.
+
+`W17_CYCLIC_DESCENT_PROOF.lean` compiles before release. U6d9
+`CyclicProductDescent` has cap 90: obtain node descents from U6d7, transport their
+factorizations through U6d6's actual cartesian squares, and apply schematic
+descent gluing over the product atlas using U6d8. Uniqueness and preservation
+of the parameter base map follow from the normalization epimorphism. This is
+global affine-parameter descent for n >= 2, still to be matched to the specified
+over-category cocone and extended to general base schemes.
+
+`W17_TORUS_PROOF.lean` compiles before release. U6d10 `OneGonProductTorus`
+has cap 100: the full tensor-Laurent chart has identity normalization, proved
+by pasting the original torus square and canceling the base-change square.
+Both projections and the normalization equation are proved; no invariant
+alpha-chart assumption or noncanonical coordinate replacement is used.
+
+`W17_ONEGON_DESCENT_PROOF.lean` compiles before release. U6d11
+`OneGonProductDescent` has cap 100: apply schematic descent gluing to the actual
+node/torus product cover, using U6d4 for the node and U6d10 for the torus.
+The result is global unique arbitrary-target descent for n=1, with the base
+map and node-section factorization. The specified over-category span and
+general scheme base still require comparison and locality arguments.
