@@ -1228,7 +1228,9 @@ public import FLT.Mazur.AcyclicDirectImageResolution
 public import FLT.Mazur.AcyclicPushforwardCohomology
 public import FLT.Mazur.AcyclicResolutionComparison
 public import FLT.Mazur.AdicCompletionAlgEquiv
+public import FLT.Mazur.AdicCompletionPrincipal
 public import FLT.Mazur.AdicCompletionQuotientEquiv
+public import FLT.Mazur.AdicCompletionScalars
 public import FLT.Mazur.AffineAnnihilator
 public import FLT.Mazur.AffineBranchSequence
 public import FLT.Mazur.AffineClosedModuleDescent
