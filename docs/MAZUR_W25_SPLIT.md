@@ -37,3 +37,15 @@ must build in the foreground with `LEAN_NUM_THREADS=2`, pass an individual
 `lake exe runLinter MODULE`, and pass an originating-declaration axiom audit
 allowing only `propext`, `Classical.choice`, `Quot.sound`. Prototypes and logs
 stay untracked at the root. Local commits only, with the prescribed author.
+
+## Checked next producer
+
+`ConstantCyclicGroup` (cap 200) constructs, over any scheme S, the coproduct
+of n copies of the monoidal unit in `Over S`. Multiplication and inverse use
+addition and negation in `ZMod n`; the coproduct/product distributivity API
+reduces every group law to the corresponding law on the unit and on indices.
+Its complete prototype compiled before promotion. This is a scheme group,
+not a list of rational points. `ConstantCyclicInclusion` (cap 160) will map
+these components by the identity of Gm into `PolygonSplitGroup`, proving
+compatibility with operations and a retraction. `PolygonCyclicDivisor`
+(cap 240) must then identify this source with the actual all-one divisor.

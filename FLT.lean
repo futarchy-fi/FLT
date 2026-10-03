@@ -1419,6 +1419,7 @@ public import FLT.Mazur.CoherentSubsheafACC
 public import FLT.Mazur.CoherentSupport
 public import FLT.Mazur.CoherentSupportedDecomposition
 public import FLT.Mazur.CommonIdealDirectSum
+public import FLT.Mazur.ConstantCyclicGroup
 public import FLT.Mazur.ConstantDegree
 public import FLT.Mazur.Contracts
 public import FLT.Mazur.CoproductConstantSections
@@ -1441,6 +1442,7 @@ public import FLT.Mazur.CyclicProductEndpoints
 public import FLT.Mazur.CyclicProductNormalization
 public import FLT.Mazur.DRFiberClassification
 public import FLT.Mazur.DirectImageInjectives
+public import FLT.Mazur.DisjointClosedCoproduct
 public import FLT.Mazur.DisjointStructureCohomology
 public import FLT.Mazur.DivisorInvertibleSheaf
 public import FLT.Mazur.DivisorLineBundle
@@ -1627,6 +1629,7 @@ public import FLT.Mazur.PolygonCyclicPushout
 public import FLT.Mazur.PolygonCyclicSeparated
 public import FLT.Mazur.PolygonDimension
 public import FLT.Mazur.PolygonDirectImageCohomology
+public import FLT.Mazur.PolygonDivisorCoproduct
 public import FLT.Mazur.PolygonFieldExtension
 public import FLT.Mazur.PolygonGenusOne
 public import FLT.Mazur.PolygonGeometricGenus
