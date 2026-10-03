@@ -214,6 +214,16 @@ we must not assert it for a general Galois extension or inseparable roots.
 | E09b / GaloisRepresentation/Extensions/CharacterBasis | Coefficient equivalences transport cocycles, splitting changes and continuous classes; compute the two-line basis factor. | E09a | 200 |
 | E09c / GaloisRepresentation/Extensions/OrdinaryTwist | Relate transport to Kummer unit membership where the coefficient identification is available; distinguish prime-field root coefficients from arbitrary residual-field scalars. | E08f/E09b and concrete coefficient identification | 200 |
 
+Two additional bounded specializations are source-matched before proof:
+
+| Leaf / new module | Statement and source match | Dependencies | Cap |
+|---|---|---|---|
+| E08g / GroupScheme/AlgebraicClosureKummer | Supply root existence in an algebraically closed Galois extension; specialize to AlgebraicClosure K for perfect K (in particular characteristic zero). IsAlgClosed.exists_pow_nat_eq, PerfectField's algebraic separability instance, IsGalois.mk. | E08f | 200 |
+| E09d / GroupScheme/KummerUnitTransport | Natural powers of parameters and root cocycles agree; unit membership is preserved and reflected for powers invertible modulo n. Subgroup.pow_mem and the nth-power quotient relation. | E08f | 200 |
+
+E09d handles cyclic coefficient changes only. It does not provide the
+arbitrary-k coefficient-extension comparison needed by E09c.
+
 E09c is an adapter gate: roots of unity are a cyclic group, not an
 arbitrary finite-field line. Extending coefficients to k and proving the
 unit subspace is stable under k-scalars needs a tensor/cohomology comparison;
