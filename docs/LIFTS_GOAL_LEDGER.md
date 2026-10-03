@@ -4,6 +4,114 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
+## W20 acceptance — checked 2026-10-03T06:04:11.614329+00:00
+
+Checked 2026-10-03T06:04:11.614329+00:00; branch `task/goal-lifts-w20`; starting base `d34fe0c6`.
+**E1c7/E1d remain blocked; the final FLT theorem still has sorryAx.**
+
+Fourteen new modules implement the four W19 follow-on contracts, split into
+bounded leaves, and extend them through restriction naturality, the full
+explicit H1 quotient comparison, and the positive Q/Z-to-Z connecting isomorphism.
+All commits are local; nothing pushed.
+
+| Item | Module under FLT.LocalClassFieldTheory | Lines/cap | Commit |
+|---|---|---|---|
+| C05f | ContinuousCoefficientMaps | 111/200 | `64ffd56a` |
+| C05g | ContinuousColimitNaturality | 91/200 | `354d63a9` |
+| C01i | IntegralLowDegreeComparison | 126/200 | `bfb8fa1f` |
+| C01j | IntegralDegreeTwoComparison | 125/200 | `11d0889b` |
+| C07a | ContinuousExactCoefficients | 105/200 | `c450c96a` |
+| C07b | ContinuousConnectingMap | 111/200 | `e9adad08` |
+| C07c | RationalCoefficientSequence | 109/200 | `46c399ea` |
+| C07d | CyclicCarryConnecting | 92/200 | `7b11a7cc` |
+| C06c | IntegralRationalVanishing | 84/200 | `ad53d35a` |
+| C07e | RationalIntegralConnectingIso | 53/200 | `44f5fc93` |
+| C05h | ContinuousRestriction | 97/200 | `7ba2cb29` |
+| C05i | ContinuousRestrictionColimit | 78/200 | `c05b725a` |
+| C01k | IntegralH1Equivalence | 98/200 | `a5eecf6a` |
+| C05j | ContinuousRestrictionCohomology | 70/200 | `bc79f67a` |
+
+Total: **1350 Lean lines; 91 named declarations**, including
+nine coefficient/topology helper instances. Every module is below 200 lines.
+
+## Validation
+
+Each module M passed separately, in the foreground, with `LEAN_NUM_THREADS=2`:
+`lake build M`, `lake exe runLinter M`, and
+`lake env lean Scratch/LiftsW20/<Module>Axioms.lean`.
+Accepted logs are in `Scratch/LiftsW20/<Module>-{build,lint,axioms}.log`.
+Every named declaration, including the named local instances, has axioms
+contained in `{propext, Classical.choice, Quot.sound}`; two use no axioms.
+No whole-library build or lint was run. No concurrent builds or OOM occurred.
+
+`python3 Scratch/LiftsW20/check.py` checks source caps, absence of admissions,
+audit coverage and permitted axiom sets, log freshness, new-file-only Lean
+changes, sorted unique FLT.lean imports, allowed paths, whitespace and clean
+tracked state. It also rejects untracked files under FLT/ and docs/.
+It reads validation evidence; it does not rerun Lean.
+The machine-readable result is `Scratch/LiftsW20/summary.json`.
+
+Fresh final audit: `LEAN_NUM_THREADS=2 lake env lean Scratch/LiftsW20/FinalAxioms.lean`,
+exit 0, evidence `Scratch/LiftsW20/Final-axioms.log`:
+
+* `IsHardlyRamified.lifts` and `FLT.Assembly.hardlyRamifiedLifting` retain
+  `[propext, sorryAx, Classical.choice, Quot.sound]`.
+* `PNat.pow_add_pow_ne_pow` retains
+  `[Mazur_statement, propext, sorryAx, Classical.choice, Quot.sound]`.
+
+## Proved scope
+
+Coefficient maps restrict Mathlib's actual maps to continuous cochains;
+identity, composition and stage-inflation compatibility are proved. The
+complex and cohomology colimit comparisons are natural in these maps.
+
+The low-degree coordinate formulas match the actual integral differential.
+Every H1/H2 class has an explicit continuous cocycle representative; vanishing
+is equivalent to a principal cocycle in degree one and a continuous one-cochain
+boundary in degree two. `integralH1Equiv` identifies the existing splitting
+quotient with the actual complex's H1 over any commutative ring, including Z.
+The existing homogeneous TopRep comparison is field-based; this work uses the
+explicit low-degree presentation rather than claiming that API covers Z.
+
+Discrete coefficient sections prove degreewise surjectivity and exactness.
+The continuous short exact sequence is constructed from coefficient exactness,
+and its categorical connecting map is identified with the positive differential
+of a continuous lift. The concrete sequence Z to Q to Q/Z discharges all
+coefficient exactness premises. `rationalIntegralConnectingIso G n` is the
+actual isomorphism from H^(n+1)(G,Q/Z) to H^(n+2)(G,Z). The scalar-change lemma
+proves that rational vanishing applies to the integral complex as required.
+`rationalIntegralConnectingMap_cyclicCarry` proves that the degree-one character
+i/n maps to the positive integral carry class, fixing the sign.
+
+Restriction pulls an open normal subgroup N back to f^(-1)(N), proves the
+invariant-coefficient quotient map there, and proves compatibility with
+inflation. The index functor and stage natural transformation are constructed;
+both complex and cohomology colimit naturality follow. No pullback-stage,
+colimit, boundary or quotient-action bridge is supplied as a hypothesis.
+
+## Remaining work and next bounded contracts
+
+E1c7/E1d remain blocked. Local invariant/class formation, Kummer-Artin evaluation,
+higher principal-unit graded quotients, norm-as-trace, successive corrections
+and convergence are not supplied by these cohomology constructions.
+The Serre-weight and arbitrary-p Raynaud gates remain independently blocked.
+No task for either missing API was dispatched.
+
+Next leaves, each with a 200-line cap and a separate build/lint/audit:
+
+1. Identify trivial-action H1 with continuous characters, using `integralH1Equiv`
+   and proving that every principal cocycle is zero. Compose with the proved
+   connecting isomorphism to express integral H2 by Q/Z characters.
+2. Prove connecting-map naturality under coefficient-sequence morphisms and
+   continuous group restriction, using the constructed short complexes and
+   Mathlib's homology-sequence naturality. Prove the commutative squares.
+3. Compare the explicit low-degree cup with a continuous integral cochain cup;
+   prove its compatibility with the connecting map before using a local invariant.
+4. Apply the character description to the constructed unramified procyclic
+   quotient and prove Frobenius evaluation/bijection from that quotient's tower.
+   The multiplicative order-H2 isomorphism still needs principal-unit acyclicity.
+
+
 ## W19 acceptance — checked 2026-10-03 05:17 UTC
 
 Thirteen new modules prove common-stage boundaries, the continuous
