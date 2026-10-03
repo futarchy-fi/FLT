@@ -259,3 +259,56 @@ identify the norm with cyclotomic inertia, and transport residues to the fixed
 S5a checked 2026-10-02 23:14 UTC: foreground build, individual module lint and
 `lake env lean W9_S5A_AXIOMS.lean` pass (95/220 lines; all five theorems use
 only standard axioms). S5b–S5d remain blocked; no classification is claimed.
+
+## W12 refinement of the C3/C5 construction gates
+
+Source checked 2026-10-03: `Scratch/raynaud1974.txt`, pp.266–268,
+§3.3(a), Proposition 3.3.2 and Theorem 3.3.3. The source proves uniqueness
+using presentations of maximal/minimal models carrying the field action,
+then dévissage; it does not supply the proposed direct primitive-denominator
+Hopf argument. Constructing presentations using C5 and then proving C5 from
+those presentations would be circular. The maximal/minimal-model route must
+construct their actions independently (Proposition 3.3.1).
+
+The following are subdivisions, with whole-module caps. They do not assume
+the denominator obstruction or mark C3/C5 complete.
+
+| Leaf | Cap | Endpoint | Remaining input |
+|---|---:|---|---|
+| C5c1 scaled multiplication | 150 | Derive unit and multiplication identities for C5b's actual integral numerator; a positive denominator gives square-zero products modulo the uniformizer. | Generic algebra map and flat target only. |
+| C5c2 numerical coordinate bound | 100 | In the source's cyclic valuation relations, a nonzero nonnegative scaling valuation forces p−1 ≤ e. | Actual presentations and compatible coordinate scaling must still be constructed. |
+| C5c3 Hopf obstruction | 150 per further leaf | Deduce the bound for arbitrary prescribed p-torsion generic maps. | Either a separate Hopf proof or independent maximal/minimal models, presentations and dévissage; C5c1/C5c2 alone do not suffice. |
+| C3d1 directed-union DVR | 150 | The supremum of directed embedded DVR stages with the same base uniformizer is a DVR. | C3c must still construct a directed family containing all required stages. |
+| C3f0 finite-stage Henselianity | 100 | Finite unramified domain stages over an adically complete DVR are complete and Henselian. | The extended maximal ideal equals the stage maximal ideal, as proved by C3a. |
+| C3f0b actual descent base | 100 | Transport p-adic completeness to the rational completion integers and prove Henselianity of the actual finite inertia descent ring. | C2, finiteness of integral closure and C3f0. |
+| C3f1a finite-data descent | 100 | A polynomial and proposed root over a directed union descend together to one stage. | A directed family, still to be constructed by C3c. |
+| C3f1 directed-union Henselianity | 150 | A directed union of local Henselian stages is Henselian. | Actual stages must be shown Henselian and inclusions local. |
+
+C5d/C5e remain downstream of C5c3. C3c (compatible common unramified
+stage), C3e (separably closed residue field) and final C3f tower packaging
+remain construction obligations. A theorem about a supplied directed family
+does not construct the strict henselization.
+
+W12 checked 2026-10-03: C5c1 is `GenericFiberScaledMultiplication` (62/150),
+C5c2 is `RaynaudScalingValuation` (65/100), C3d1 is `RaynaudDirectedUnion`
+(113/150), C3f0 is `RaynaudStageHenselian` (48/100), C3f1a is
+`RaynaudDirectedPolynomial` (57/100), and C3f1 is `RaynaudDirectedHenselian`
+(77/150). C3f0b is `AbsoluteGaloisGroup/InertiaDescentHenselian` (59/100).
+Foreground module builds, individual module lints and
+`lake env lean W12_AXIOMS.lean` pass. All 19 new theorems use only
+`propext`, `Classical.choice`, `Quot.sound`. The complete-base union theorem
+derives stage Henselianity from finiteness and preservation of a uniformizer.
+
+Next construction leaves (caps remain stop limits):
+
+| Leaf | Cap | Required construction |
+|---|---:|---|
+| C3c1 prescribed-root factor | 150 | Factor the second stage's defining monic polynomial over the first Henselian stage, lifting its separable residue factors; select the factor vanishing at its prescribed root in Ω. |
+| C3c2 common embedded stage | 150 | Use that factor's quotient to embed both original stages in one finite DVR preserving π; convert to a subalgebra in the same Ω. |
+| C3e1 residue compatibility | 150 | Lift finite separable residue extensions relative to an existing stage, retaining its prescribed embedding and finite degree over R. |
+| C3e2 residue closure | 150 | Descend a separable residue polynomial to a stage and use C3e1/C3c2 to place a root in the union residue field. |
+
+The second stage's polynomial can become reducible after passing to the first
+stage's residue field. Thus C3a's irreducible-reduction quotient theorem alone
+does not prove C3c1/C3c2. No common-stage or separable-closure claim follows
+from the completed union lemmas without these constructions.
