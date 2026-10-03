@@ -660,11 +660,16 @@ public import FLT.GroupScheme.RaynaudFlatQuotient
 public import FLT.GroupScheme.RaynaudGenericSplitExtension
 public import FLT.GroupScheme.RaynaudHenselianFactor
 public import FLT.GroupScheme.RaynaudInductionStep
+public import FLT.GroupScheme.RaynaudIntegralClosureBound
+public import FLT.GroupScheme.RaynaudIntegralCoordinates
 public import FLT.GroupScheme.RaynaudIntegralFiltration
 public import FLT.GroupScheme.RaynaudInversionBasis
 public import FLT.GroupScheme.RaynaudKernelExactness
 public import FLT.GroupScheme.RaynaudLayerDescent
+public import FLT.GroupScheme.RaynaudMaximalExtension
+public import FLT.GroupScheme.RaynaudMaximalModel
 public import FLT.GroupScheme.RaynaudModelArithmetic
+public import FLT.GroupScheme.RaynaudModelUpperBound
 public import FLT.GroupScheme.RaynaudNakayamaDescent
 public import FLT.GroupScheme.RaynaudOrderNineExtension
 public import FLT.GroupScheme.RaynaudOrderThreeFiltration

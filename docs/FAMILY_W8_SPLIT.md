@@ -398,3 +398,16 @@ comparisons and naturality; C5m6d dualizes C5m5 to construct the minimum and
 its prescribed-map extension property. The existing `FiniteFlatObject` dual
 is specialized to rational generic fields, so it cannot be silently substituted
 for this general DVR/fraction-field construction.
+
+W13 C5m1–m5 checked 2026-10-03: `RaynaudIntegralCoordinates` (68/150),
+`RaynaudIntegralClosureBound` (48/150), `RaynaudModelUpperBound` (62/150),
+`RaynaudMaximalModel` (74/150), and `RaynaudMaximalExtension` (68/150)
+pass foreground builds and individual module lints. `W13_MAXIMAL_AXIOMS.lean`
+audits all 16 new declarations, including definitions with proof obligations;
+only `propext`, `Classical.choice`, and `Quot.sound` occur. The constructed
+maximum extends every prescribed generic map out of it. C5c is still open.
+
+C5m6b is refined into two ≤150-line modules before completing the leaf:
+`RaynaudGenericHopfMap` proves the inverse correspondence between generic
+Hopf maps and specified point maps; `RaynaudDualGenericMap` proves the
+actual dual base-change compatibility. This avoids assuming functoriality.
