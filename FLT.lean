@@ -668,6 +668,7 @@ public import FLT.GroupScheme.QuotientFiberFreeness
 public import FLT.GroupScheme.RationalCubeValuations
 public import FLT.GroupScheme.RaynaudAugmentationAction
 public import FLT.GroupScheme.RaynaudAugmentationDecomposition
+public import FLT.GroupScheme.RaynaudAugmentationDerivation
 public import FLT.GroupScheme.RaynaudAugmentationDuality
 public import FLT.GroupScheme.RaynaudAugmentationRank
 public import FLT.GroupScheme.RaynaudBiduality
@@ -682,8 +683,10 @@ public import FLT.GroupScheme.RaynaudCharacterFactorial
 public import FLT.GroupScheme.RaynaudCharacterFunctions
 public import FLT.GroupScheme.RaynaudCharacterOrthogonality
 public import FLT.GroupScheme.RaynaudCharacterParameterProduct
+public import FLT.GroupScheme.RaynaudCharacterParameterUnits
 public import FLT.GroupScheme.RaynaudCharacterPowers
 public import FLT.GroupScheme.RaynaudCharacterPrimeDivisibility
+public import FLT.GroupScheme.RaynaudCharacterPrimeQuotient
 public import FLT.GroupScheme.RaynaudCharacterProjector
 public import FLT.GroupScheme.RaynaudCharacterProportionality
 public import FLT.GroupScheme.RaynaudCharacterRankOne
@@ -699,6 +702,9 @@ public import FLT.GroupScheme.RaynaudDirectedHenselian
 public import FLT.GroupScheme.RaynaudDirectedPolynomial
 public import FLT.GroupScheme.RaynaudDirectedUnion
 public import FLT.GroupScheme.RaynaudDiscriminant
+public import FLT.GroupScheme.RaynaudDividedCharacterAverage
+public import FLT.GroupScheme.RaynaudDividedGroupGenerator
+public import FLT.GroupScheme.RaynaudDividedPowerSums
 public import FLT.GroupScheme.RaynaudDualFaithful
 public import FLT.GroupScheme.RaynaudDualGenericMap
 public import FLT.GroupScheme.RaynaudEtaleDualExtension
@@ -713,6 +719,7 @@ public import FLT.GroupScheme.RaynaudFlatKernelExactness
 public import FLT.GroupScheme.RaynaudFlatQuotient
 public import FLT.GroupScheme.RaynaudFundamentalCharacter
 public import FLT.GroupScheme.RaynaudFundamentalDigitUnit
+public import FLT.GroupScheme.RaynaudFundamentalPrimeUnit
 public import FLT.GroupScheme.RaynaudGenericHopfMap
 public import FLT.GroupScheme.RaynaudGenericSplitExtension
 public import FLT.GroupScheme.RaynaudHenselianCharacters
@@ -747,6 +754,7 @@ public import FLT.GroupScheme.RaynaudRankThreeClassification
 public import FLT.GroupScheme.RaynaudRankThreeExtension
 public import FLT.GroupScheme.RaynaudReducedScalarAverage
 public import FLT.GroupScheme.RaynaudRelativeResidue
+public import FLT.GroupScheme.RaynaudResidueCharacterUnits
 public import FLT.GroupScheme.RaynaudResidueClosure
 public import FLT.GroupScheme.RaynaudRigidity
 public import FLT.GroupScheme.RaynaudRootReduction

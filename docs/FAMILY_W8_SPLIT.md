@@ -649,3 +649,56 @@ to R/(p). `fundamental_constant_residue` proves the n! residue, and
 `isUnit_fundamental_digit_constant` proves the single-character constants
 are units for 0 < n < p. Neither theorem claims the mixed-digit calculation
 or the p-fold quotient's being a unit.
+
+The final fundamental-quotient leaves are `RaynaudDividedGroupGenerator`
+(binomial calculation for [a]-1), `RaynaudDividedCharacterAverage` (weighted
+sum and normalized residue -1), `RaynaudCharacterPrimeQuotient` (actual
+scalar quotient via character evaluation), and `RaynaudFundamentalPrimeUnit`
+(specialize to the constructed fundamental lift). Each cap is 150 lines.
+
+Integration of the arithmetic results is split into
+`RaynaudResidueCharacterUnits` (≤150; any character reducing to a field
+embedding, including Frobenius twists) and `RaynaudCharacterParameterUnits`
+(≤150; the actual original/dual coefficients have p-times-unit product,
+and their powers below p have unit coefficients).
+
+## W15 boundary and next leaves
+
+The new repeated-character calculation and the divided-power argument now
+prove the fundamental p-times-unit identity without parameter data.
+`FF.exists_character_prime_parameter_units` derives both integral power
+coefficients and a unit u with a*b = p*u and residue(u) = -1.
+`FF.exists_character_digit_parameter_units` derives both unit coefficients
+for n repetitions of any residue-embedding character, with 0 < n < p.
+The residue-embedding formulation covers every fundamental Frobenius twist.
+These are proof statements; validation evidence is recorded below after the
+module checks finish.
+
+The mixed-digit gap is still open: a general character has p-adic digits
+across several fundamental characters, not just repetitions of one. The
+next work must extend the rank-one convolution and universal-average
+comparison to finite lists, then prove the mixed constant has residue
+product_i (a_i!). A viable proof uses the existing finite-difference
+operator: on polynomials in the residue embeddings, its top-degree action
+is the corresponding partial derivative; orthogonality removes the other
+embeddings. Split that work before implementation into ≤150-line leaves:
+mixed rank-one products, mixed universal averages, residue embedding
+orthogonality, the degree-lowering calculation, and the mixed factorial/unit
+endpoint. The equality of constants across Frobenius twists has not been
+asserted here; the proved individual p-times-unit bounds do not require it.
+
+C5p4 (monomial generation and genuine polynomial-quotient isomorphisms)
+and C5v1–C5v3 remain unproved. No presentation, generation, general simple
+factor dévissage, or prescribed generic-map extension follows merely from
+the new coefficient identities. The original family target admission is
+unchanged; W15 is partial completion of the requested route.
+
+W15 final validation checked at 2026-10-03 03:38:11 UTC: all 20 modules pass
+foreground builds and individual sequential lint. The three W15 axiom
+audits cover all 65 named declarations and allow only `propext`,
+`Classical.choice`, and `Quot.sound`. `W15_LOCAL_CHECK.lean` instantiates
+the actual parameter-product endpoint over a strict Henselian DVR and its
+fraction field for every fundamental Frobenius twist; it constructs the
+averaging inverse from the residue characteristic and exits 0. All new
+modules are below the 150-line cap. `W15_FINAL_CHECKS.log` records source,
+artifact, edit-scope and target-admission checks.
