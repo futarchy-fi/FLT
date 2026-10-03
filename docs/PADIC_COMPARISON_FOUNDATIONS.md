@@ -401,3 +401,37 @@ and graded-piece identifications; p-divisible comparison and per-embedding
 weight multiplicities. F07–F15 remain large missing theory and were not
 started. The boundary audit still finds sorryAx in the unchanged general
 family theorem and sorryAx plus Mazur_statement in the FLT endpoint.
+
+## W29 F04 continuation (split before implementation)
+
+All leaves have a 150-line complete-file cap. Preserve the actual rings and
+maps; no structure field may supply a comparison theorem or period identity.
+
+| Leaf | Required result |
+|---|---|
+| ComplexLocalizedGalois | Extend the actual Witt action through inversion of p; prove group laws and equivariance of theta into C_p. |
+| AdicRingFunctor | Construct the ring map on an ideal-adic completion from a ring endomorphism preserving that ideal; prove evaluation, identity and composition laws. |
+| ComplexDeRhamGalois | Apply the completion construction to the actual localized action; prove group laws and extension of the source action. |
+| ComplexDeRhamEquivariance | Prove completed theta equivariant and all parameter-ideal powers stable. |
+| CyclotomicTiltRoots | Choose compatible primitive p-power roots, construct epsilon in the actual tilt, and prove sharp(epsilon)=1 and the Galois power formula. |
+| CyclotomicLogConvergence | Construct the rational logarithmic series in the theta-adic completion and prove convergence and functoriality. |
+| CyclotomicLogParameter | Prove the logarithm is a nonzero uniformizer and its cyclotomic transformation formula. |
+| DeRhamFieldIdentification | Identify the existing B_dR localization with inversion of the proved period, then its fraction field and filtration. |
+| DeRhamGradedTwists | Identify each graded piece with the actual cyclotomic twist of C_p. |
+| DeRhamFixedField | Prove the fixed-field theorem with its analytic inputs; a DVR or residue field calculation alone is insufficient. |
+
+The tilt valuation-topology comparison is needed only if a subsequent proof
+uses it; the algebraic extension through ideal powers does not depend on it.
+Before the cyclotomic leaves, inspect compatible-root and formal-logarithm
+APIs and split again if a leaf would exceed its cap.
+
+The p-divisible comparison remains a parent, refined into separate capped
+obligations: rational-place/base-field transport; tangent/cotangent and dual
+constructions; actual period pairing; its integrality; equivariance;
+injectivity; surjectivity; filtration strictness. The coefficient-embedding
+rank parent splits into coefficient tensor decomposition, compatibility of
+the pairing on each component, the two-weight support bound, determinant
+compatibility, and the rank-one conclusion in each degree. None is assumed
+in a constructor. F06 global classification is attempted only after these
+F04 gates if a bounded arithmetic route exists; residual reducibility is
+never promoted to generic reducibility.
