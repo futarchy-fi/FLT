@@ -1641,6 +1641,7 @@ public import FLT.Mazur.DivisorLineBundleSumNestedRestrict
 public import FLT.Mazur.DivisorLineBundleSumOpenCoherence
 public import FLT.Mazur.DivisorLineBundleSumRestrict
 public import FLT.Mazur.DivisorLineBundleSumUnit
+public import FLT.Mazur.DivisorLinePullback
 public import FLT.Mazur.DivisorPowerVeryAmple
 public import FLT.Mazur.DivisorRestrictCoherence
 public import FLT.Mazur.EtaleCoordinate
@@ -1832,6 +1833,7 @@ public import FLT.Mazur.PolygonDirectImageCohomology
 public import FLT.Mazur.PolygonDivisorCoproduct
 public import FLT.Mazur.PolygonDivisorDegree
 public import FLT.Mazur.PolygonDivisorLineComparison
+public import FLT.Mazur.PolygonDivisorLinePowerPullback
 public import FLT.Mazur.PolygonDivisorLinePullback
 public import FLT.Mazur.PolygonDivisorNormalizationPullback
 public import FLT.Mazur.PolygonDivisorPowerPullback
@@ -1913,6 +1915,7 @@ public import FLT.Mazur.ProjectiveLineEndpoints
 public import FLT.Mazur.ProjectiveLineFieldExtension
 public import FLT.Mazur.ProjectiveLineMarkedCharts
 public import FLT.Mazur.ProjectiveLineMarkedDualCoordinates
+public import FLT.Mazur.ProjectiveLineMarkedPullbackCoordinates
 public import FLT.Mazur.ProjectiveLineMarkedTransition
 public import FLT.Mazur.ProjectiveLineProductCharts
 public import FLT.Mazur.ProjectiveLineProductOverlap
