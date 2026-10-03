@@ -341,3 +341,17 @@ actual residue field; it does not assert this identity for a ramified algebra.
 The cochain leaf uses the compact/discrete image theorem and the profinite
 open-normal neighborhood basis. Fixing values alone does not make a cochain
 constant on quotient fibers, so it does not finish finite descent.
+
+C04 refinement after the value-support leaf: the remaining fiber argument
+can also be isolated without assuming descent. For a compact group H and a
+discrete target, the bad translation set `{(g,x) | c(x*g) ≠ c(x)}` is closed;
+its projection is closed because H is compact. Its complement is an open
+identity neighborhood, hence contains an open normal subgroup. Apply this
+to H=G^n, then intersect the inverse images along the finitely many coordinate
+inclusions to obtain one subgroup of G. `Subgroup.pi_mem_of_mulSingle_mem`
+handles noncommutative G. This gives ready `CochainOpenNormal` (cap 200).
+Intersect with the value-fixing subgroup and descend through the coordinate
+quotient using surjectivity and the proved fiber equality: ready
+`DescendedCochain` (cap 200). The quotient is finite and discrete. These are
+cochain results; comparison with the continuous complex's differentials,
+cocycles, common-stage boundaries and colimits remains separate work.
