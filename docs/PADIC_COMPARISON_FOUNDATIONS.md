@@ -685,3 +685,20 @@ Next implementation leaves (each cap 150, split before exceeding):
 4. Continue the period-field localization, graded cyclotomic twists,
    fixed-field theorem, and comparison-contract split above. The general
    family admission cannot be removed just from quotient separatedness.
+
+## W32 exponent convergence split (before implementation)
+
+Each leaf has a 150-line cap. The generic estimate first raises differences
+in powers of an ideal containing p; splitting powers of (p) + ker(theta)
+then gives a p-adic estimate modulo each fixed theta power.
+
+| Leaf | Concrete obligation | Prerequisite |
+|---|---|---|
+| IdealPowerDifference | Bound iterated p-power differences in powers of an ideal containing p. | Geometric sums and ideal multiplication |
+| ComplexCyclotomicApproximation | Construct the two shifted Teichmuller roots with equal theta image and identify their p-power endpoints. | W29 coordinate action; actual sharp equivariance |
+| ComplexCyclotomicPowerBounds | Bound the actual Galois/power difference by (p)^k + ker(theta)^r. | Generic estimate and shifted roots |
+| ComplexCyclotomicPowerConvergence | Prove integral and localized finite-level convergence in the W31 coefficient topology. | Bounds and continuous integral inclusion |
+
+Finite logarithm identities, denominator control, the cyclotomic scalar
+law, fixed fields and comparison remain later leaves; none is a hypothesis
+of these convergence statements.
