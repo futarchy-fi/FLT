@@ -469,3 +469,14 @@ transition. H6b `ProjectiveLineStandardComparison` (cap 180) compares the
 resulting open-cover pushout with `ProjectiveLine.scheme K`, preserving both
 charts and the base map. The chart maps use `chartRing_hom_ext`, the checked
 `chartPolynomialEquiv`, and explicit swapping of the two homogeneous indices.
+
+For H2b, split the cyclic proof further: H2b1
+`PolygonCyclicNormalizationRanges` (cap 200) proves that a point of component
+`i` mapping into node chart `j` lies either in its left chart with `i=j`, or
+in its right chart with `i=finRotate n j`. The proof uses `charts_eq_iff` and
+rules out a full branch meeting the opposite punctured branch; it does not
+discard the second edge when n=2. H2b2 `PolygonCyclicNormalizationPullback`
+(cap 240) packages these ranges as the open immersion of the two affine
+branches into the normalization coproduct and proves the cartesian square.
+H2d2 then descends their finite maps on the target chart cover and transports
+through `sigmaComparison (Over.forget _)` to the specified normalization.
