@@ -4,7 +4,62 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
-## W29 proved scope
+## W30 proved scope
+
+Checked 2026-10-03T15:32:51.559692+00:00; base `5cfcd5c0`; proof head `40439142`.
+Read-only evidence check: `python3 Scratch/LiftsW30/check.py` verifies saved
+logs, source hashes, import order, line caps and axiom coverage; it does not
+rerun Lean. The full lifting goal remains unfinished.
+
+**The relative fundamental Tate cup is constructed in every integer degree.
+Its ordinary cochain formula is proved in every nonnegative input degree,
+and the actual degree-zero cup is proved to be an isomorphism.**
+The 18 new modules contain 1,376 lines and 81 named declarations; every module
+is below 200 lines and every declaration uses only `propext`, `Classical.choice`,
+and `Quot.sound`.
+
+- The orbit inclusion M → (G → M), its quotient Q, and the primitive
+  `F(g)(x) = c(x,g)` construct a concrete two-extension for every two-cocycle.
+  Its two actual Tate connecting maps define `tateTwoExtensionMap` in every
+  integer degree. `TateTwoClassOperation` proves representative independence;
+  `TateTwoClassZero` proves that zero classes act by zero.
+- `ScalarCochainCup`, `OneCocycleScalarBoundary`, `TwoExtensionCochainCup`,
+  `TatePositiveCocycleClass` and `TateCupComparison` prove the ordinary formula
+  `z(g₂,…) • c(g₀,g₁)` for every nonnegative input degree and compare it through
+  the actual positive Tate isomorphism. The fundamental class is the left
+  factor and the trivial scalar class is the right factor.
+- `TateCupUnit` and `RelativeFundamentalTateCup` prove that the scalar Tate unit
+  maps to W29's normalized relative Tate generator. The all-degree operation
+  is named `relativeFundamentalTateCup`.
+- `TateClassArithmetic` and `TateScalarDegreeZero` prove generation and norm
+  annihilation in actual scalar Tate H⁰. `RelativeTateCupDegreeZero` uses the
+  proved local H² generator to establish bijectivity of the actual degree-zero
+  cup. `relativeFundamentalTateCupZeroEquiv` has this cup as its forward map.
+
+Every module passed a foreground build, module-only lint and declaration
+axiom audit with `LEAN_NUM_THREADS=2`. Combined imports and final endpoint
+axiom checks passed. Evidence is in `Scratch/LiftsW30/`; the lifting theorem
+still uses `sorryAx`, and `PNat.pow_add_pow_ne_pow` still uses both `sorryAx`
+and `Mazur_statement`. No new declaration uses either.
+
+### Next proofs after W30
+
+| Gate | Required proof |
+|---|---|
+| Tate–Nakayama beyond input degree zero | Prove cohomological triviality and dimension shifting for the concrete two-extension using local H¹ vanishing, H² generators and actual finite-relative subgroup/tower compatibility. The crucial input degree −2 isomorphism remains open. |
+| Finite Artin maps | Construct reciprocity from that degree −2 isomorphism and establish norm and tower compatibility. |
+| Kummer–Artin evaluation | Prove actual cocycle evaluation with positive Frobenius convention and the cup-order sign; compare the Kummer pairing. |
+| E1d | Deduce the annihilator statement from the evaluation theorem. |
+
+The general cup construction is a Yoneda cup through explicit short exact
+sequences on the actual Tate complexes. Its existence does not prove
+bijectivity in other degrees. Local arithmetic retains the complete-DVR,
+finite-residue and compatible finite Galois tower scope; the degree-zero
+isomorphism uses the characteristic-zero H² saturation theorem.
+Serre-weight evaluation and arbitrary-p Raynaud classification remain separate.
+
+
+## W29 historical proved scope
 
 Checked 2026-10-03T14:36:50.156663+00:00; base `13b878bb`; proof head `4fd72473`.
 Read-only evidence check: `python3 Scratch/LiftsW29/check.py` (saved logs and
@@ -49,7 +104,7 @@ The combined-import and final-axiom checks also passed. The full FLT theorem
 still uses `sorryAx` and `Mazur_statement`; the lifting theorem still uses
 `sorryAx`. No new declaration uses either.
 
-### Next proofs after W29
+### Historical next proofs after W29
 
 | Gate | Required construction |
 |---|---|
