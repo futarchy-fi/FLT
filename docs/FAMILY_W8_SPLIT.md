@@ -353,3 +353,33 @@ residue field separable over the original residue field. Its fraction field
 is constructed as an algebraic separable extension of the perfect base
 fraction field, with a compatible embedding in the prescribed closure.
 No finite-dimensionality of the infinite union is asserted.
+
+## W13 independent C5 route: extremal models before presentations
+
+Source checked with `sed -n '686,731p' Scratch/raynaud1974.txt` and
+`sed -n '875,930p' Scratch/raynaud1974.txt`: Raynaud 2.2.2 constructs upper
+bounds by schematic graph closure; 2.2.3 bounds their coordinate rings in
+the finite integral closure of an étale generic algebra. Cartier duality
+constructs the minimum. Proposition 3.3.1 extends generic automorphisms to
+these extremal models. Only then may the field-action presentation argument
+of §1.5/§3.3 be used. C5-dependent presentations remain forbidden inputs.
+
+Each row below is a whole-module leaf capped at 150 lines; split again before
+exceeding a cap. This is a dependency plan, not a completion claim.
+
+| Leaf | Construction / checkable endpoint | Dependencies |
+|---|---|---|
+| C5m1 integral coordinate images | Embed coordinates of any model, along a prescribed generic identification, into one fixed generic algebra; prove they are integral and finite over R. | Generic coordinate comparison and finite flatness only. |
+| C5m2 finite ambient bound | Prove the integral closure of an integrally closed Noetherian base in a finite étale generic algebra is a finite module, by its finite product of separable field factors. | Mathlib field integral-closure finiteness and étale decomposition. |
+| C5m3 graph upper bounds | The existing graph closure gives a model dominating two identified models; prove the coordinate-image inclusions in the fixed generic algebra. | C5m1, existing schematic closure; no small-ramification theorem. |
+| C5m4 maximal model | Apply the ascending-chain condition inside C5m2's ambient module and C5m3 to construct a greatest coordinate image, and select its actual finite flat model. | C5m1–C5m3. |
+| C5m5 maximal automorphisms | Transport the maximal model by a generic automorphism; maximality and uniqueness give the prescribed integral automorphism and its inverse. | C5m4, generic map uniqueness. |
+| C5m6 minimal model | Apply C5m4/C5m5 to the Cartier dual and dualize back, including the point identifications and reversed domination. | Independent Cartier dual/base-change APIs. |
+| C5m7 extremal field actions | Extend nonzero field scalars by C5m5/C5m6, extend zero by the zero morphism, and prove addition/composition/unit laws by generic uniqueness. | Extremal models only; no C5 extension theorem. |
+| C5p1 character projectors | Construct scalar-character idempotents on the augmentation algebra of an extremal model. | C3, C5m7; refine C7 with the independent action. |
+| C5p2 character ranks | Derive rank-one character eigenspaces and choose their generators from the Hopf/field-action rank calculation. | C5p1; no assumed rank-one eigenspaces. |
+| C5p3 cyclic equations | Derive the actual p-power relations and the dual parameter identities a_i b_i = p u_i. | C5p2 and Cartier pairing; refine C9/C10. |
+| C5p4 presentations | Prove generation and the polynomial-quotient isomorphism for the extremal models. | C5p2/C5p3; refine C11. |
+| C5v1 extremal equality | Derive coordinate scalings for the domination map, apply C5c2, and prove maximum = minimum below e < p−1. | Independent C5p4 presentations. |
+| C5v2 dévissage | Pass from simple field-action factors to the prescribed p-torsion model maps via finite-flat closures and quotients. | C5v1 and exactness of the actual models. |
+| C5v3 integral extension | Obtain integral coordinates and extend the prescribed generic map using the existing graph extension endpoint. | C5v2; discharges C5d/C5e. |
