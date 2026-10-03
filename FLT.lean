@@ -1166,6 +1166,7 @@ public import FLT.Mazur.OpenSheafRestriction
 public import FLT.Mazur.OverPoints
 public import FLT.Mazur.PinchingAffineDescent
 public import FLT.Mazur.PinchingNeighborhoods
+public import FLT.Mazur.PolygonAtlasCocone
 public import FLT.Mazur.PolygonChartScaling
 public import FLT.Mazur.PolygonCyclicAtlas
 public import FLT.Mazur.PolygonCyclicCocone

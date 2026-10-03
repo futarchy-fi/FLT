@@ -251,7 +251,12 @@ formulas. `OneGonLocalizedEqualizer` (102/240) proves the actual B-localization
 is the endpoint equalizer on the localized normalization, including the
 fraction membership criterion and the canonical restriction formula.
 
-Still missing: arbitrary-target descent and gluing. The affine-target theorems have full affine-line sources;
+W11 proves both exact arbitrary-target local statements in NodePinchingDescent
+and OneGonPinchingDescent. Their helpers are split into individually capped
+modules; the one-gon uses OneGonLocalDescent (165/240) followed by
+OneGonPinchingDescent (140/240). No affine or separated target assumption remains.
+
+Still missing: global descent across the polygon cocone. The affine-target theorems have full affine-line sources;
 restricted source opens are spectra of localized polynomial rings. They
 cannot be used unchanged for maps to an affine neighborhood in an arbitrary
 Y. Then the locally defined morphisms must be glued, with uniqueness proved,
@@ -465,3 +470,10 @@ E4d W11 OneGonPinchingDescent checked 2026-10-03 00:27 UTC: 140/240 lines;
 foreground module build, individual runLinter and collectAxioms on every
 module declaration passed (GOAL_MAZUR_W11_DESCENTS_AXIOMS.txt, untracked).
 Only propext, Classical.choice and Quot.sound occur.
+
+E4d W11 PolygonAtlasCocone checked 2026-10-03 00:27 UTC: 127/240 lines;
+foreground module build, individual runLinter and all-declaration collectAxioms
+passed (GOAL_MAZUR_W11_COCONE_AXIOMS.txt, untracked). It constructs polygon,
+normalization and nodes for every positive n with the exact pinching cocone,
+identifies both cases with the prior atlases, and proves the cyclic chart formulas.
+The global universal property is not asserted by this module.
