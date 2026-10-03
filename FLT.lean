@@ -841,6 +841,7 @@ public import FLT.LocalClassFieldTheory.CochainHomologyClass
 public import FLT.LocalClassFieldTheory.CochainOpenNormal
 public import FLT.LocalClassFieldTheory.ContinuousCochainColimit
 public import FLT.LocalClassFieldTheory.ContinuousCochainComplex
+public import FLT.LocalClassFieldTheory.ContinuousCohomologyColimit
 public import FLT.LocalClassFieldTheory.ContinuousStageDiagram
 public import FLT.LocalClassFieldTheory.CyclicCarry
 public import FLT.LocalClassFieldTheory.DescendedCochain
