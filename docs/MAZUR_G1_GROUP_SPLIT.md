@@ -459,3 +459,13 @@ existing gluing intersection and the conductor; it includes coordinate one
 in the torus chart. Split H2d into H2d1 `OneGonNormalizationFinite` (cap 120,
 now released from H2a/H2c) and H2d2 `PolygonNormalizationFinite` (cap 160,
 still dependent on the cyclic inverse-image comparison H2b).
+
+H6a is further split before library implementation: H6a1
+`ProjectiveLineStandardCharts` (cap 200) constructs the two polynomial chart
+isomorphisms in `ProjectiveSpace.space K (Fin 2)`, their scalar maps and cover.
+H6a2 `ProjectiveLineStandardOverlap` (cap 240) identifies their intersection
+with the existing Laurent chart and proves the reciprocal-coordinate
+transition. H6b `ProjectiveLineStandardComparison` (cap 180) compares the
+resulting open-cover pushout with `ProjectiveLine.scheme K`, preserving both
+charts and the base map. The chart maps use `chartRing_hom_ext`, the checked
+`chartPolynomialEquiv`, and explicit swapping of the two homogeneous indices.
