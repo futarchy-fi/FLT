@@ -661,3 +661,10 @@ ring is the zero ring, so the localized equalizer is the entire normalization.
 `W16_AWAY_ENDPOINT_PROOF.lean` compiles. This provides local descent away from
 the endpoint image without invoking a field-only smooth-locus calculation.
 Global gluing and the pulled-back polygon atlas remain separate obligations.
+
+U6c6 `SchematicDescentGluing` is released with cap 90 after the complete
+`W16_GLUE_PROOF.lean` compiled. Local descents on a supplied open cover glue
+uniquely for a quasi-compact surjective schematically dominant normalization:
+overlap projections are epimorphisms by U6c4, since open immersions are flat
+and schematic dominance is stable under flat base change. This uses flatness
+of the open immersion, not the false assertion that normalization is flat.
