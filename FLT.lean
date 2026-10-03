@@ -1283,6 +1283,7 @@ public import FLT.Mazur.PolygonNodeScaling
 public import FLT.Mazur.PolygonNormalizationAlgebra
 public import FLT.Mazur.PolygonNormalizationFinite
 public import FLT.Mazur.PolygonPinchingDiagram
+public import FLT.Mazur.PolygonProductAtlas
 public import FLT.Mazur.PolygonScalingNaturality
 public import FLT.Mazur.PolygonSmoothLocus
 public import FLT.Mazur.PolygonSplitGroup
