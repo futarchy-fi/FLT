@@ -816,6 +816,7 @@ public import FLT.LocalClassFieldTheory.UnramifiedNormal
 public import FLT.LocalClassFieldTheory.UnramifiedPolynomial
 public import FLT.LocalClassFieldTheory.UnramifiedStageTower
 public import FLT.LocalClassFieldTheory.UnramifiedStages
+public import FLT.LocalClassFieldTheory.UnramifiedUnion
 public import FLT.LocalClassFieldTheory.UnramifiedUniqueness
 public import FLT.Mathlib.Algebra.Algebra.Bilinear
 public import FLT.Mathlib.Algebra.Algebra.Equiv
