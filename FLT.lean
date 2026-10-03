@@ -974,6 +974,8 @@ public import FLT.LocalClassFieldTheory.FixedCoefficientBoundary
 public import FLT.LocalClassFieldTheory.FixedCoefficientCochain
 public import FLT.LocalClassFieldTheory.FixedCoefficientDifferential
 public import FLT.LocalClassFieldTheory.Frobenius
+public import FLT.LocalClassFieldTheory.FrobeniusPowers
+public import FLT.LocalClassFieldTheory.FrobeniusRestrictionScale
 public import FLT.LocalClassFieldTheory.FrobeniusTower
 public import FLT.LocalClassFieldTheory.GaloisHomContinuity
 public import FLT.LocalClassFieldTheory.GaloisInflationCoefficients
@@ -990,6 +992,7 @@ public import FLT.LocalClassFieldTheory.IntegralCoefficientRestriction
 public import FLT.LocalClassFieldTheory.IntegralConnectingCup
 public import FLT.LocalClassFieldTheory.IntegralCupComparison
 public import FLT.LocalClassFieldTheory.IntegralDegreeTwoComparison
+public import FLT.LocalClassFieldTheory.IntegralFrobeniusBaseChange
 public import FLT.LocalClassFieldTheory.IntegralH1Equivalence
 public import FLT.LocalClassFieldTheory.IntegralH2Characters
 public import FLT.LocalClassFieldTheory.IntegralLowDegreeComparison
@@ -1009,6 +1012,7 @@ public import FLT.LocalClassFieldTheory.KernelCocycleDescent
 public import FLT.LocalClassFieldTheory.KernelCocycleNormalization
 public import FLT.LocalClassFieldTheory.KernelMixedCocycle
 public import FLT.LocalClassFieldTheory.KernelSectionCorrection
+public import FLT.LocalClassFieldTheory.LocalDegreeFormula
 public import FLT.LocalClassFieldTheory.NormCongruence
 public import FLT.LocalClassFieldTheory.NormFirstOrder
 public import FLT.LocalClassFieldTheory.NormalizedOrder
@@ -1044,6 +1048,7 @@ public import FLT.LocalClassFieldTheory.UnramifiedBaseChangeCohomology
 public import FLT.LocalClassFieldTheory.UnramifiedBaseChangeEmbedding
 public import FLT.LocalClassFieldTheory.UnramifiedBaseChangeIntegral
 public import FLT.LocalClassFieldTheory.UnramifiedBaseChangeOrder
+public import FLT.LocalClassFieldTheory.UnramifiedBaseChangeOrderCohomology
 public import FLT.LocalClassFieldTheory.UnramifiedBaseChangeRestriction
 public import FLT.LocalClassFieldTheory.UnramifiedCarryNormalization
 public import FLT.LocalClassFieldTheory.UnramifiedCarryTorsion
@@ -1059,7 +1064,9 @@ public import FLT.LocalClassFieldTheory.UnramifiedDegreeLimit
 public import FLT.LocalClassFieldTheory.UnramifiedDiagram
 public import FLT.LocalClassFieldTheory.UnramifiedEmbeddings
 public import FLT.LocalClassFieldTheory.UnramifiedExistence
+public import FLT.LocalClassFieldTheory.UnramifiedFiniteStageBaseChange
 public import FLT.LocalClassFieldTheory.UnramifiedFrobeniusCharacters
+public import FLT.LocalClassFieldTheory.UnramifiedFrobeniusEmbedding
 public import FLT.LocalClassFieldTheory.UnramifiedFrobeniusGenerator
 public import FLT.LocalClassFieldTheory.UnramifiedGaloisExistence
 public import FLT.LocalClassFieldTheory.UnramifiedGaloisLimit
@@ -1069,7 +1076,9 @@ public import FLT.LocalClassFieldTheory.UnramifiedInflatedCarries
 public import FLT.LocalClassFieldTheory.UnramifiedInflationInjective
 public import FLT.LocalClassFieldTheory.UnramifiedIntegralH2
 public import FLT.LocalClassFieldTheory.UnramifiedIntegralH2Additive
+public import FLT.LocalClassFieldTheory.UnramifiedIntegralH2Restriction
 public import FLT.LocalClassFieldTheory.UnramifiedIntegralModel
+public import FLT.LocalClassFieldTheory.UnramifiedInvariantRestriction
 public import FLT.LocalClassFieldTheory.UnramifiedLocalInertia
 public import FLT.LocalClassFieldTheory.UnramifiedMultiplicativeInflation
 public import FLT.LocalClassFieldTheory.UnramifiedMultiplicativeInvariant
