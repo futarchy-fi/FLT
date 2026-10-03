@@ -934,6 +934,7 @@ public import FLT.LocalClassFieldTheory.ContinuousStageDiagram
 public import FLT.LocalClassFieldTheory.CyclicCarry
 public import FLT.LocalClassFieldTheory.CyclicCarryConnecting
 public import FLT.LocalClassFieldTheory.DescendedCochain
+public import FLT.LocalClassFieldTheory.DiscreteFieldUnits
 public import FLT.LocalClassFieldTheory.DiscreteIntegralUnits
 public import FLT.LocalClassFieldTheory.DiscreteOrder
 public import FLT.LocalClassFieldTheory.DiscreteOrderExact
@@ -992,6 +993,8 @@ public import FLT.LocalClassFieldTheory.UnramifiedCarryTorsion
 public import FLT.LocalClassFieldTheory.UnramifiedCharacterDescent
 public import FLT.LocalClassFieldTheory.UnramifiedCharacters
 public import FLT.LocalClassFieldTheory.UnramifiedCofinality
+public import FLT.LocalClassFieldTheory.UnramifiedContinuousOrderH2
+public import FLT.LocalClassFieldTheory.UnramifiedContinuousOrderSequence
 public import FLT.LocalClassFieldTheory.UnramifiedContinuousUnits
 public import FLT.LocalClassFieldTheory.UnramifiedCyclicStages
 public import FLT.LocalClassFieldTheory.UnramifiedDegree
@@ -1024,6 +1027,8 @@ public import FLT.LocalClassFieldTheory.UnramifiedStages
 public import FLT.LocalClassFieldTheory.UnramifiedUniformizer
 public import FLT.LocalClassFieldTheory.UnramifiedUnion
 public import FLT.LocalClassFieldTheory.UnramifiedUnionOrder
+public import FLT.LocalClassFieldTheory.UnramifiedUnionOrderExact
+public import FLT.LocalClassFieldTheory.UnramifiedUnionOrderMap
 public import FLT.LocalClassFieldTheory.UnramifiedUnionUnits
 public import FLT.LocalClassFieldTheory.UnramifiedUniqueness
 public import FLT.LocalClassFieldTheory.UnramifiedUnitAcyclic
