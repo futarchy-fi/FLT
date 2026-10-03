@@ -800,3 +800,28 @@ injectivity, surjectivity, strictness, then per-embedding decomposition,
 component pairings, two-weight support, determinant weights and ranks.
 No comparison isomorphism is inserted as a record field. In particular,
 the family admission remains downstream of these missing theorems.
+
+## W33 analytic descent inputs (split before implementation)
+
+The completed fixed-field and twist-vanishing endpoints require separate
+arithmetic proofs. In particular, averaging a finite orbit loses the
+p-adic norm of its cardinality; density alone does not bound that loss.
+The following leaves have a 150-line source cap each. Split further before
+exceeding a cap. This table is a proof plan, not a claim of completion.
+
+| Leaf | Concrete output | Dependency / boundary |
+|---|---|---|
+| ComplexGaloisApproximation | Approximate a completed fixed vector by algebraic vectors whose entire Galois displacement is bounded by the approximation error. | Existing isometric action, ultrametric inequality, density |
+| PadicGaloisOrbit | Construct the actual finite algebraic orbit and its invariant sum. | Minimal polynomial root finiteness and orbit permutation |
+| PadicGaloisAverage | The normalized orbit sum lies in Q_p and bounds distance by the inverse norm of the orbit cardinality times the displacement bound. | Orbit sum; algebraic Galois fixed-field theorem |
+| ComplexScalarClosed | The actual Q_p image in C_p is closed; arbitrarily close Q_p approximants give membership. | Complete Q_p, isometric scalar embedding |
+| PadicAxEstimate | Replace the orbit-cardinality loss by a constant depending only on p, uniformly for every algebraic element and every displacement bound. | Missing arithmetic Ax estimate; ordinary averaging is insufficient |
+| ComplexAxDescent | Apply that proved uniform estimate to algebraic approximants and closedness to obtain the completed fixed-field theorem. | PadicAxEstimate; do not assume completed fixed-field descent |
+| CyclotomicTowerTraceBounds | Construct normalized traces in the actual cyclotomic tower and prove uniform bounds for the relevant transition maps. | Actual local ramification and different estimates; split these estimates separately |
+| CyclotomicTwistDescent | Control character-weighted approximation errors and rule out nonzero eigenvectors of nonzero integral cyclotomic weight. | Tower trace bounds; requires proof, not a vanishing field in a structure |
+| FractionalPrincipalFiltration | Construct the actual submodules t^n B_dR+ inside B_dR for every integer n, with coefficient equivalences and next-level inclusions. | Existing field and nonzero period |
+| FractionalPrincipalGraded | Identify actual consecutive submodule quotients with the residue module. | FractionalPrincipalFiltration |
+| ComplexIntegerGradedCompatibility | Specialize to C_p coordinates, prove scalar and multiplication compatibility and the descended character action. | FractionalPrincipalGraded, original theta and character law |
+| ComplexInvariantOrder | Use the proved nonzero twist vanishing to force invariant order zero, then subtract the fixed residue. | Both analytic endpoints; no endpoint assumptions |
+
+The comparison contracts in the W32 table remain after these leaves.
