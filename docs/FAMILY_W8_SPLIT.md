@@ -312,3 +312,138 @@ The second stage's polynomial can become reducible after passing to the first
 stage's residue field. Thus C3a's irreducible-reduction quotient theorem alone
 does not prove C3c1/C3c2. No common-stage or separable-closure claim follows
 from the completed union lemmas without these constructions.
+
+## W13 construction progress
+
+C3c1 uses the prescribed root's minimal polynomial instead of a general
+factor-lifting theorem. A finite domain over a Henselian local ring is local
+(by finite-algebra idempotent decomposition). Its separable special fibre is
+reduced Artinian local, hence a field. Thus the minimal polynomial has
+irreducible separable reduction and divides the original monic polynomial.
+`RaynaudHenselianFactor` is 90/150 lines; foreground build, module-only lint,
+and the three-theorem axiom audit passed on 2026-10-03.
+
+C3c2 is refined into two leaves before implementation: C3c2a (150 lines),
+the actual single-root subalgebra in the prescribed closure, with finite DVR,
+uniformizer and unramified properties; C3c2b (150 lines), a common stage for
+two finite embedded unramified stages, using a primitive generator of the
+second stage and C3c1 over the first. No directed-family property is assumed.
+
+C3e2 is refined before implementation into C3e2a (150 lines), defining the
+family of all finite embedded unramified DVR stages preserving π and deriving
+its nonemptiness and directedness from C3c2; C3e2b (150 lines), adjoining roots
+of lifted separable residue polynomials to an existing stage; and C3e2c
+(150 lines), descending residue polynomials to a stage and transporting their
+roots into the union residue field. Final C3f packaging (150 lines) combines
+the actual family with C3d1/C3f1 and C3e2c, including the fraction-field tower.
+
+W13 C3 construction checked 2026-10-03: C3c2a is `RaynaudRootStage`
+(73/150), C3c2b is `RaynaudCommonStage` (84/150), C3e1 is
+`RaynaudRelativeResidue` (55/150), C3e2a is `RaynaudStageFamily` (100/150),
+C3e2b is `RaynaudStageResidueRoot` (53/150), C3e2c is
+`RaynaudResidueClosure` (67/150), and C3f packaging is
+`RaynaudStrictHenselian` (107/150). Individual foreground builds and
+module-only lints pass. `W13_AXIOMS.lean` checks all 22 proof declarations
+(including the new instances), each with only the three standard axioms.
+
+The family is now constructed, not supplied: all finite unramified embedded
+DVR stages preserving π form a nonempty directed family. The union is
+integral, faithfully flat, Henselian, preserves π, and has separably closed
+residue field separable over the original residue field. Its fraction field
+is constructed as an algebraic separable extension of the perfect base
+fraction field, with a compatible embedding in the prescribed closure.
+No finite-dimensionality of the infinite union is asserted.
+
+## W13 independent C5 route: extremal models before presentations
+
+Source checked with `sed -n '686,731p' Scratch/raynaud1974.txt` and
+`sed -n '875,930p' Scratch/raynaud1974.txt`: Raynaud 2.2.2 constructs upper
+bounds by schematic graph closure; 2.2.3 bounds their coordinate rings in
+the finite integral closure of an étale generic algebra. Cartier duality
+constructs the minimum. Proposition 3.3.1 extends generic automorphisms to
+these extremal models. Only then may the field-action presentation argument
+of §1.5/§3.3 be used. C5-dependent presentations remain forbidden inputs.
+
+Each row below is a whole-module leaf capped at 150 lines; split again before
+exceeding a cap. This is a dependency plan, not a completion claim.
+
+| Leaf | Construction / checkable endpoint | Dependencies |
+|---|---|---|
+| C5m1 integral coordinate images | Embed coordinates of any model, along a prescribed generic identification, into one fixed generic algebra; prove they are integral and finite over R. | Generic coordinate comparison and finite flatness only. |
+| C5m2 finite ambient bound | Prove the integral closure of an integrally closed Noetherian base in a finite étale generic algebra is a finite module, by its finite product of separable field factors. | Mathlib field integral-closure finiteness and étale decomposition. |
+| C5m3 graph upper bounds | The existing graph closure gives a model dominating two identified models; prove the coordinate-image inclusions in the fixed generic algebra. | C5m1, existing schematic closure; no small-ramification theorem. |
+| C5m4 maximal model | Apply the ascending-chain condition inside C5m2's ambient module and C5m3 to construct a greatest coordinate image, and select its actual finite flat model. | C5m1–C5m3. |
+| C5m5 maximal automorphisms | Transport the maximal model by a generic automorphism; maximality and uniqueness give the prescribed integral automorphism and its inverse. | C5m4, generic map uniqueness. |
+| C5m6 minimal model | Apply C5m4/C5m5 to the Cartier dual and dualize back, including the point identifications and reversed domination. | Independent Cartier dual/base-change APIs. |
+| C5m7 extremal field actions | Extend nonzero field scalars by C5m5/C5m6, extend zero by the zero morphism, and prove addition/composition/unit laws by generic uniqueness. | Extremal models only; no C5 extension theorem. |
+| C5p1 character projectors | Construct scalar-character idempotents on the augmentation algebra of an extremal model. | C3, C5m7; refine C7 with the independent action. |
+| C5p2 character ranks | Derive rank-one character eigenspaces and choose their generators from the Hopf/field-action rank calculation. | C5p1; no assumed rank-one eigenspaces. |
+| C5p3 cyclic equations | Derive the actual p-power relations and the dual parameter identities a_i b_i = p u_i. | C5p2 and Cartier pairing; refine C9/C10. |
+| C5p4 presentations | Prove generation and the polynomial-quotient isomorphism for the extremal models. | C5p2/C5p3; refine C11. |
+| C5v1 extremal equality | Derive coordinate scalings for the domination map, apply C5c2, and prove maximum = minimum below e < p−1. | Independent C5p4 presentations. |
+| C5v2 dévissage | Pass from simple field-action factors to the prescribed p-torsion model maps via finite-flat closures and quotients. | C5v1 and exactness of the actual models. |
+| C5v3 integral extension | Obtain integral coordinates and extend the prescribed generic map using the existing graph extension endpoint. | C5v2; discharges C5d/C5e. |
+
+W13 independent maximal-model refinement: C5m3 works for an arbitrary generic
+map to the second model, so C5m4's greatest image contains pullbacks from
+**every** target model. C5m5 therefore extends all generic maps out of the
+constructed maximum; the automorphism statement is a consequence. This
+stronger endpoint still uses only finite integral closure and graph closure.
+
+C5m6 is split before implementation into four ≤150-line leaves: C5m6a packages
+the Cartier dual of a general `FF R K` over a DVR with characteristic-zero
+fraction field; C5m6b transports generic Hopf maps to generic point maps and
+proves Cartier-dual/base-change compatibility; C5m6c proves the bidual
+comparisons and naturality; C5m6d dualizes C5m5 to construct the minimum and
+its prescribed-map extension property. The existing `FiniteFlatObject` dual
+is specialized to rational generic fields, so it cannot be silently substituted
+for this general DVR/fraction-field construction.
+
+W13 C5m1–m5 checked 2026-10-03: `RaynaudIntegralCoordinates` (68/150),
+`RaynaudIntegralClosureBound` (48/150), `RaynaudModelUpperBound` (62/150),
+`RaynaudMaximalModel` (74/150), and `RaynaudMaximalExtension` (68/150)
+pass foreground builds and individual module lints. `W13_MAXIMAL_AXIOMS.lean`
+audits all 16 new declarations, including definitions with proof obligations;
+only `propext`, `Classical.choice`, and `Quot.sound` occur. The constructed
+maximum extends every prescribed generic map out of it. C5c is still open.
+
+C5m6b is refined into two ≤150-line modules before completing the leaf:
+`RaynaudGenericHopfMap` proves the inverse correspondence between generic
+Hopf maps and specified point maps; `RaynaudDualGenericMap` proves the
+actual dual base-change compatibility. This avoids assuming functoriality.
+
+C5m6c is refined into `RaynaudDualFaithful` (≤150 lines), proving generic
+duality faithful and preserving bijections, and `RaynaudBiduality` (≤150),
+proving the integral bidual comparison and the transpose identity used to
+turn an extension out of the maximum into an extension into the minimum.
+
+C5m7 is refined before implementation into two ≤150-line leaves:
+`RaynaudScalarAction` transports a scalar action across a specified generic
+bijection and derives integral action laws from endomorphism extension;
+`RaynaudExtremalActions` applies it to both constructed extrema. The scalar
+action starts from actual module data and a commuting Galois action.
+
+W13 C5m6/C5m7 checked 2026-10-03: `RaynaudCartierDual` (58/150),
+`RaynaudGenericHopfMap` (82/150), `RaynaudDualGenericMap` (79/150),
+`RaynaudDualFaithful` (73/150), `RaynaudBiduality` (66/150),
+`RaynaudMinimalModel` (72/150), `RaynaudScalarAction` (74/150), and
+`RaynaudExtremalActions` (53/150) pass foreground builds and individual
+module lints. `W13_DUAL_AXIOMS.lean` audits all 29 declarations, including
+definitions with proof obligations; only the three standard axioms occur.
+
+The minimum is the actual integral Cartier dual of the constructed maximum
+of the dual generic fibre. It extends every prescribed generic map into it,
+and generic automorphisms extend to integral isomorphisms. The maximum and
+minimum carry actual integral lifts of any commuting generic scalar action;
+the lifts obey zero, unit, addition (convolution) and composition laws.
+These constructions prove the independent extremal-model/action prerequisite
+of Raynaud 3.3.1 over a principal domain with characteristic-zero fraction
+field, including the strict-Henselian DVR needed here.
+
+C5c remains unproved: C5p1–C5p4 must still derive the character decomposition,
+rank-one eigenspaces, dual parameter identities and actual presentations.
+C5v1 then compares the two extremal models below the ramification bound;
+C5v2/C5v3 must pass from simple factors to the prescribed p-torsion maps.
+No presentation depending on C5 was used. The original admission in
+`IsHardlyRamified.mem_isCompatible` remains at `Family.lean:68` (checked with
+`rg -n 'mem_isCompatible|sorry' FLT/GaloisRepresentation/HardlyRamified/Family.lean`).
