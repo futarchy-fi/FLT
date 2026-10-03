@@ -1066,3 +1066,16 @@ polynomial generators give scaling by the unit and its inverse. Tensor
 projections and Laurent generators identify the actual Hopf multiplication
 with multiplication of units. The parameters need not be field-valued.
 This supplies chart computations, not yet universal associativity.
+
+`W19_ASSOC_PROOF.lean` compiles in full before release. U9b
+`ProjectiveLineActionAssociativity`, cap 180, compares both composites on
+the two polynomial charts over `K[T;T⁻¹] ⊗[K] K[T;T⁻¹]`. The tensor spectrum
+isomorphism and three projections identify the actual iterated product and
+associator. U9a computes the two sides as `(a*b)*x` and `a*(b*x)` (with
+inverse units on the second chart); cover extensionality proves `assoc_act`.
+
+`W19_POLYGON_PROOF.lean` compiles before release. U9c
+`PolygonActionAssociativity`, cap 100, tensors the pinching pushout and uses
+the split node leg to cancel the normalization. The product/coproduct
+comparison reduces the result to U9b and commuting cyclic rotations.
+This proves the exact polygon `assoc_act` contract, including n=1.

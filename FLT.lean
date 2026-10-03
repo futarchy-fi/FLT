@@ -1358,6 +1358,7 @@ public import FLT.Mazur.PinchingAffineDescent
 public import FLT.Mazur.PinchingChartBaseChange
 public import FLT.Mazur.PinchingNeighborhoods
 public import FLT.Mazur.PinchingPullbackTransport
+public import FLT.Mazur.PolygonActionAssociativity
 public import FLT.Mazur.PolygonActionUnit
 public import FLT.Mazur.PolygonAtlas
 public import FLT.Mazur.PolygonAtlasCocone
@@ -1403,6 +1404,7 @@ public import FLT.Mazur.ProjectiveCoherentCharts
 public import FLT.Mazur.ProjectiveCoherentCohomology
 public import FLT.Mazur.ProjectiveGeneration
 public import FLT.Mazur.ProjectiveGenerationEventually
+public import FLT.Mazur.ProjectiveLineActionAssociativity
 public import FLT.Mazur.ProjectiveLineActionEndpoints
 public import FLT.Mazur.ProjectiveLineActionPoints
 public import FLT.Mazur.ProjectiveLineActionSpecialization
