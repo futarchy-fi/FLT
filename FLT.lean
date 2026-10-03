@@ -142,6 +142,7 @@ public import FLT.Deformations.Representable
 public import FLT.Deformations.RepresentationTheory.AbsoluteGaloisGroup
 public import FLT.Deformations.RepresentationTheory.BrauerEffectivityCoefficients
 public import FLT.Deformations.RepresentationTheory.Burnside
+public import FLT.Deformations.RepresentationTheory.CharacterFiltrationDeterminant
 public import FLT.Deformations.RepresentationTheory.CharacterRange
 public import FLT.Deformations.RepresentationTheory.CyclicRestrictionTwist
 public import FLT.Deformations.RepresentationTheory.CyclicScalarRestriction
@@ -446,6 +447,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.LiftDomainFree
 public import FLT.GaloisRepresentation.HardlyRamified.LiftDomainResidue
 public import FLT.GaloisRepresentation.HardlyRamified.LiftPrimeAvoidingP
 public import FLT.GaloisRepresentation.HardlyRamified.ModThree
+public import FLT.GaloisRepresentation.HardlyRamified.ModThreeExtensionCocycle
 public import FLT.GaloisRepresentation.HardlyRamified.ModThreeFiltration
 public import FLT.GaloisRepresentation.HardlyRamified.ModThreeProved
 public import FLT.GaloisRepresentation.HardlyRamified.ModThreeSorted
@@ -476,6 +478,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.ResidualCyclotomicRestrict
 public import FLT.GaloisRepresentation.HardlyRamified.ResidualGlobalModel
 public import FLT.GaloisRepresentation.HardlyRamified.ResidualOddness
 public import FLT.GaloisRepresentation.HardlyRamified.ResidualPointModule
+public import FLT.GaloisRepresentation.HardlyRamified.ResidualReducibleFiltration
 public import FLT.GaloisRepresentation.HardlyRamified.ResidualTameTwo
 public import FLT.GaloisRepresentation.HardlyRamified.RibetAdapters
 public import FLT.GaloisRepresentation.HardlyRamified.SubquotientUniverses
@@ -486,14 +489,22 @@ public import FLT.GaloisRepresentation.HardlyRamified.ThreeAdicTraceProved
 public import FLT.GaloisRepresentation.HardlyRamified.ThreeGroupConjugation
 public import FLT.GaloisRepresentation.HardlyRamified.ThreeGroupLocalUnramified
 public import FLT.GaloisRepresentation.HardlyRamified.Threeadic
+public import FLT.GaloisRepresentation.HardlyRamified.TorsionComparisonsUniverses
+public import FLT.GaloisRepresentation.HardlyRamified.TorsionExactnessUniverses
 public import FLT.GaloisRepresentation.HardlyRamified.TorsionFlatModels
+public import FLT.GaloisRepresentation.HardlyRamified.TorsionFlatUniverses
 public import FLT.GaloisRepresentation.HardlyRamified.TorsionGenericTransitions
+public import FLT.GaloisRepresentation.HardlyRamified.TorsionGenericUniverses
+public import FLT.GaloisRepresentation.HardlyRamified.TorsionInclusionsUniverses
 public import FLT.GaloisRepresentation.HardlyRamified.TorsionIntegralInclusions
 public import FLT.GaloisRepresentation.HardlyRamified.TorsionLevelExactness
 public import FLT.GaloisRepresentation.HardlyRamified.TorsionLevelRank
 public import FLT.GaloisRepresentation.HardlyRamified.TorsionModelComparisons
 public import FLT.GaloisRepresentation.HardlyRamified.TorsionModelTransitions
 public import FLT.GaloisRepresentation.HardlyRamified.TorsionPDivisible
+public import FLT.GaloisRepresentation.HardlyRamified.TorsionPDivisibleUniverses
+public import FLT.GaloisRepresentation.HardlyRamified.TorsionRankUniverses
+public import FLT.GaloisRepresentation.HardlyRamified.TorsionTransitionsUniverses
 public import FLT.GaloisRepresentation.HardlyRamified.TraceLeaves
 public import FLT.GaloisRepresentation.HardlyRamified.TraceReducibility
 public import FLT.GaloisRepresentation.HardlyRamified.TrivialPrimeFiltration
@@ -699,6 +710,9 @@ public import FLT.GroupScheme.MuThreeCubicCoordinates
 public import FLT.GroupScheme.MultiplicativeFiltrationPurity
 public import FLT.GroupScheme.OrderThreeModelIdentification
 public import FLT.GroupScheme.PDivisibleSystem
+public import FLT.GroupScheme.PDivisibleSystemCategory
+public import FLT.GroupScheme.PDivisibleTateAction
+public import FLT.GroupScheme.PDivisibleTateSequences
 public import FLT.GroupScheme.PadicActualConstantMuThreeSection
 public import FLT.GroupScheme.PadicAlgebraPatching
 public import FLT.GroupScheme.PadicBialgebraDescent
@@ -1928,6 +1942,8 @@ public import FLT.Odlyzko.WeilDecay
 public import FLT.Odlyzko.ZeroDivisorSymmetry
 public import FLT.Odlyzko.ZeroSideCritical
 public import FLT.Odlyzko.ZeroSideOffCritical
+public import FLT.PadicHodgeTheory.FontaineWittVectors
+public import FLT.PadicHodgeTheory.PadicTilt
 public import FLT.Patching.Algebra
 public import FLT.Patching.Module
 public import FLT.Patching.Over
