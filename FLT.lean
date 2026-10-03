@@ -859,6 +859,7 @@ public import FLT.LocalClassFieldTheory.FixedCoefficientDifferential
 public import FLT.LocalClassFieldTheory.Frobenius
 public import FLT.LocalClassFieldTheory.FrobeniusTower
 public import FLT.LocalClassFieldTheory.HenselianRoots
+public import FLT.LocalClassFieldTheory.IntegralLowDegreeComparison
 public import FLT.LocalClassFieldTheory.InvariantStageTransition
 public import FLT.LocalClassFieldTheory.NormalizedOrder
 public import FLT.LocalClassFieldTheory.PowerClassOrder
