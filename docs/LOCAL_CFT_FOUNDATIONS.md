@@ -459,3 +459,19 @@ W17 ready follow-ons after stage uniqueness (200 lines per module):
 These statements do not establish a topological inverse-limit equivalence,
 restriction surjectivity from the absolute Galois group, or the inertia kernel.
 Those remain distinct U04 obligations before U05.
+
+W17 U04 API audit: Mathlib already supplies
+`InfiniteGalois.continuousMulEquivToLimit` and
+`AlgEquiv.restrictNormalHom_surjective`; neither is a missing general theorem.
+The next two bounded leaves (cap 200) are:
+
+- `UnramifiedCofinality`: every finite intermediate field contained in the
+  union is contained in a degree-indexed stage, using a primitive element.
+- `UnramifiedGaloisLimit`: specialize the existing topological inverse-limit
+  equivalence to the constructed union, and prove continuous surjective
+  restriction from the chosen separable closure.
+
+The generic limit is indexed by all finite Galois intermediate fields of
+the union. Reindexing it explicitly by positive degrees is distinct from
+cofinality. Identifying the restriction kernel with the existing valuation
+inertia group remains blocked on the valued-field/residue-closure frontend.
