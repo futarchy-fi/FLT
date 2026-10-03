@@ -1,5 +1,37 @@
 # Mazur input to positive-natural FLT
 
+## W15 frontier (supersedes W14 below)
+
+Checked 2026-10-03 02:58 UTC at local implementation head `07a99bd9`, base
+`31114b5c`. The module/commit/cap table and reproducible axiom-audit procedure
+are in [MAZUR_G1_GROUP_SPLIT](MAZUR_G1_GROUP_SPLIT.md).
+
+- U3/U4/U5 are implemented: node scalar extension, polynomial product charts,
+  their Laurent intersection, and universal projective-line scaling over Gm
+  with fixed zero/infinity sections.
+- H2 is complete: the actual normalization is finite and surjective for every
+  positive polygon, including n=1, and for supplied pinching cocones.
+- H6 is complete: the glued line is isomorphic over K to
+  `ProjectiveSpace.space K (Fin 2)`, preserving its charts and endpoints.
+- All 14 new modules passed foreground individual builds and individual
+  linters. The combined origin-module `collectAxioms` check passed for all
+  261 declarations with only `propext`, `Classical.choice`, `Quot.sound`.
+  `git diff --check 31114b5c..HEAD`, caps, source scans and import inventory
+  checks passed. No whole-library lint/build or push ran.
+- U6 remains unproved: the checked pullback-pushout target needs one-gon
+  scalar extension and arbitrary-target pinching descent over parameter
+  rings. Existing neighborhood proofs require a field; nonzero endpoint
+  values need not be units over the Laurent parameter ring. The group split
+  records the exact APIs and proposed helper split. U7–U12 depend on U6.
+- H3–H5/H7–H15, full G1 moduli, G2 arithmetic and A1–A5 remain open.
+  The normalization theorem alone does not establish genus or properness.
+
+The final Mazur dependency remains: source checks return
+`FLT/Assumptions/Mazur.lean:103`, `FLT/Assembly/ExistingInputs.lean:28` and
+`FermatsLastTheorem.lean:24`. No rebuilt final-theorem axiom audit is claimed.
+The new-module-only rule still excludes the eventual existing-consumer rewire.
+
+
 ## W14 frontier (supersedes the historical dispatch below)
 
 Checked 2026-10-03 at local base `8425864c`; source checks and the complete new
