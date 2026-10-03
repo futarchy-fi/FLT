@@ -1,6 +1,6 @@
 # E1c7: local reciprocity and the local invariant
 
-Source/API check: 2026-10-03, FLT base `eb101554`, Mathlib
+Source/API check: 2026-10-03, FLT base `13b878bb`, Mathlib
 `c32e1ec0d1eb5237ba344eee50162f45d5b0fc76`. This is a foundational program,
 not a claim that local class field theory fits in a 200-line adapter.
 Each proposed module below has a **200-line hard cap**. Blocked contracts
@@ -8,9 +8,69 @@ are design sketches, not elaborated declarations or certified size estimates;
 split again before implementation if a proof exceeds the cap. No missing
 theorem may become a structure field, parameter standing for E1c7, or axiom.
 
-Latest validated scope: **W28**. The full lifting goal remains unmet.
+Latest validated scope: **W29**. The full lifting goal remains unmet.
 
-## W28 proved scope
+## W29 proved scope
+
+Checked 2026-10-03T14:36:50.156663+00:00; base `13b878bb`; proof head `4fd72473`.
+Read-only evidence check: `python3 Scratch/LiftsW29/check.py` (saved logs and
+source hashes; does not rerun Lean). Full lifting remains unfinished.
+
+**I03c and the normalized fundamental-class comparisons are proved.**
+The 17 new modules contain 1,292 lines and 76 named declarations, all below
+200 lines per module and using only `propext`, `Classical.choice`, `Quot.sound`.
+
+- `TransferCoset`, `TransferCochain`, `TransferRestrictionHomotopy`, and
+  `ContinuousTransfer` construct the finite coset sums in degrees one and two,
+  prove cocycle and boundary preservation, and exhibit the continuous homotopy
+  for transfer after restriction. `IntegralTwoClassAdditive`,
+  `ContinuousCorestrictionH2`, and `CorestrictionRestrictionH2` descend these
+  formulas to actual categorical H².
+- `CocycleRectangle`, `TransferRepresentativeChange`, and
+  `TransferChoiceIndependence` prove independence of arbitrary coset sections
+  using another explicit continuous one-cochain boundary.
+- `FixingSubgroupTopology` and `AbsoluteCorestriction` identify the extension's
+  Galois group with its open fixing subgroup and prove
+  `cor(res x) = [E:K] • x`. `CorestrictionInvariant` proves
+  `inv_K(cor y) = inv_E(y)` for this constructed transfer, using W28 restriction
+  surjectivity. Absolute E/K need not be Galois.
+- `AbsoluteFundamentalClass`, `FundamentalClasses`, and
+  `FundamentalClassBaseChange` construct the relative generator of exact
+  degree order, compare its inflation with positive invariant `1/[E:K]`, and
+  prove actual restriction/corestriction formulas for the absolute classes.
+  Restriction sends `u_K([E:K]*n)` to `u_E(n)`; corestriction preserves n.
+- `RelativeTateClasses` identifies actual relative Tate H² with Z/[E:K],
+  carrying 1 to the proved fundamental generator, and proves Tate H¹ = 0.
+  This comparison does not yet construct the Tate cup-product isomorphisms.
+
+Arithmetic scope remains characteristic-zero complete DVR fraction fields
+with finite residue fields and the stated compatible finite DVR towers.
+Relative classes use finite Galois extensions. Transfer is constructed on H²;
+an all-degree continuous chain map is not claimed.
+
+Every module passed its own foreground build, module-only lint, and declaration
+axiom audit with `LEAN_NUM_THREADS=2`; no whole-library lint was run.
+Evidence: `Scratch/LiftsW29/M-{build,lint,axioms}.log` and their `.exit` files.
+The combined-import and final-axiom checks also passed. The full FLT theorem
+still uses `sorryAx` and `Mazur_statement`; the lifting theorem still uses
+`sorryAx`. No new declaration uses either.
+
+### Next proofs after W29
+
+| Gate | Required construction |
+|---|---|
+| Class formation / Tate cup | Construct cup with the relative fundamental class on the actual Tate complex, including nonpositive degrees; compare with the positive-degree cochain formula. |
+| Class formation / Tate–Nakayama | Prove the degree-shift cup maps are isomorphisms by dimension shifting and cohomological triviality. Prove the needed finite-relative subgroup/tower comparisons on the actual maps; normalized absolute formulas alone do not supply them. |
+| Finite Artin and Kummer–Artin | Construct the finite reciprocity maps, prove cocycle evaluation with the recorded sign/Frobenius normalization, then compare the Kummer pairing. |
+| E1d | Deduce the annihilator statement from that evaluation theorem. |
+
+API checks: `Scratch/LiftsW29/TateApi.log` and `CupApi.log`. The checked
+homological sources provide the Tate complex, its exact sequences and
+positive/negative comparisons, but no all-degree Tate cup or class-formation
+isomorphism theorem. Those proofs remain work, never assumed hypotheses.
+Serre-weight evaluation and arbitrary-p Raynaud classification remain separate.
+
+## W28 historical proved scope
 
 Checked 2026-10-03T13:55:03.657454+00:00; branch task/goal-lifts-w28; base eb101554; proof head c084ba11.
 Read-only evidence check: `python3 Scratch/LiftsW28/check.py` (saved logs and source hashes).
@@ -46,7 +106,7 @@ use Galois extensions; the absolute restriction results allow arbitrary finite
 intermediate extensions with the stated compatible finite DVR towers.
 Positive-characteristic local invariants are not established here.
 
-## W28 validation
+## W28 historical validation
 
 Each module M passed sequentially in the foreground with LEAN_NUM_THREADS=2:
 `lake build FLT.LocalClassFieldTheory.M`,
@@ -69,7 +129,7 @@ The source snapshots were recorded after verifying that every build, lint,
 and axiom log postdated its source. Fresh module validation is
 `python3 Scratch/LiftsW28/validate.py M ...`.
 
-## Remaining work
+## W28 remaining work (historical; superseded by W29)
 
 The next proof is **I03c: continuous corestriction**. Restriction surjectivity
 and its kernel calculation are available in RestrictionSurjective.
