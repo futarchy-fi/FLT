@@ -4,6 +4,38 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
+## W13 E1 source match and first leaves — checked 2026-10-03
+
+E09c's coefficient gate is now proved: the prime cyclotomic/root identification,
+canonical k-linear tensor comparison (including the pure-tensor formula and
+basis independence), prime unit subspace, extended unit span, actual Hom twist
+transport, and actual lifted-difference b/a invariance all have implementations.
+All root-existence/primitive-root hypotheses remain explicit for a general L/K;
+E08g supplies the former in the characteristic-zero algebraic closure, and
+`HasEnoughRootsOfUnity.exists_primitiveRoot` supplies the latter. No arithmetic
+ramification or finite-flat assertion follows just from these comparisons.
+
+For E1 use Gee–Herzig–Liu–Savitt, *Potentially crystalline lifts of certain
+prescribed types*, arXiv:1506.01050v3 (2017), Definition 2.1.2 and Example
+2.1.4(1), PDF pp. 7–8. Checked from the downloaded author PDF; local evidence:
+`Scratch/LiftsW13/ghls.{pdf,txt}`. The definition is annihilation under local
+Tate duality by unramified dual classes. In the ordinary cyclotomic case the
+dual is trivial, and the source compares the pairing, through Kummer and Artin,
+with evaluation `Kˣ/(Kˣ)^p × Hom(Kˣ,Fp) → Fp`. It then identifies the annihilator
+of unramified characters with valuation units. This definition is independent
+of Kummer units and finite-flat models, as required.
+
+| E1 leaf / new module | Contract, source/API match | Status | Cap |
+|---|---|---|---|
+| E1a / Extensions.ContinuousCup | Construct the continuous (1,1) cup with a trivial additive character, prove its 2-cocycle identity, and compute the continuous 2-coboundary from a splitting change. Mathlib LowDegree.IsCocycle₂/IsCoboundary₂ specify signs; continuous scalar multiplication and E03 supply the calculation. | READY | 200 |
+| E1b / Extensions.PeuRamifiedClass | Define the explicit continuous cup-annihilator of characters vanishing on inertia, prove splitting invariance, and descend to the existing class quotient. This is the independent ordinary predicate; no unit or finite-flat condition enters its definition. | E1a | 200 |
+| E1c / SerreWeight.LocalTateComparison | Identify the explicit degree-one/two cocycles and cups with the continuous cohomology pairing; specialize the genuine local Tate invariant and Artin reciprocity evaluation. The existing ContCohomology.CupProduct is on homogeneous/coinduced complexes, not the required low-degree comparison or local reciprocity theorem. | BLOCKED on new local-duality/reciprocity foundations; split/source-match those before proof | 200 adapter only |
+| E1d / SerreWeight.ExtensionKummer | Prove that the E1b annihilator equals E09c's extended unit subspace, using E1c's proved evaluation comparison and the valuation quotient; transport through actual Hom coordinates. | BLOCKED E1c | 200 adapter only |
+
+Only E1a/b are ready. The bounds on E1c/d do not certify the size of their
+missing arithmetic foundations. No local Tate theorem is installed as a field
+of a record, and no Serre-weight evaluation or Raynaud classification is ready.
+
 ## W13 source match and bounded E09c split — 2026-10-03
 
 These contracts are committed before proof. Each new module has a 200-line
