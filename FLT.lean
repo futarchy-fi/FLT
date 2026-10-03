@@ -1248,6 +1248,7 @@ public import FLT.Mazur.ProjectiveSectionExtensionCoordinates
 public import FLT.Mazur.ProjectiveSerrePresentationTower
 public import FLT.Mazur.ProjectiveSerreVanishing
 public import FLT.Mazur.ProjectiveLineStandardCharts
+public import FLT.Mazur.ProjectiveLineStandardComparison
 public import FLT.Mazur.ProjectiveLineStandardOverlap
 public import FLT.Mazur.ProjectiveSpaceAffineBaseChange
 public import FLT.Mazur.ProjectiveSpaceCharts
