@@ -574,6 +574,7 @@ public import FLT.GroupScheme.KummerRefinement
 public import FLT.GroupScheme.KummerRootClass
 public import FLT.GroupScheme.KummerTwist
 public import FLT.GroupScheme.KummerUnitClass
+public import FLT.GroupScheme.KummerUnitTransport
 public import FLT.GroupScheme.LocalBialgebraDerivations
 public import FLT.GroupScheme.LocalCoefficientConjugacy
 public import FLT.GroupScheme.LocalDifferentBounds
