@@ -1171,11 +1171,14 @@ public import FLT.LocalClassFieldTheory.FiniteRestrictionComparison
 public import FLT.LocalClassFieldTheory.FiniteSubfieldDvr
 public import FLT.LocalClassFieldTheory.FiniteSubgroupArtin
 public import FLT.LocalClassFieldTheory.FiniteSubgroupCocycleCorrection
+public import FLT.LocalClassFieldTheory.FiniteTateNormTower
 public import FLT.LocalClassFieldTheory.FiniteTateVanishing
 public import FLT.LocalClassFieldTheory.FiniteUnitInvariants
 public import FLT.LocalClassFieldTheory.FixedCoefficientBoundary
 public import FLT.LocalClassFieldTheory.FixedCoefficientCochain
 public import FLT.LocalClassFieldTheory.FixedCoefficientDifferential
+public import FLT.LocalClassFieldTheory.FixedFieldCosetNorm
+public import FLT.LocalClassFieldTheory.FixedFieldUnitInvariants
 public import FLT.LocalClassFieldTheory.FixingSubgroupTopology
 public import FLT.LocalClassFieldTheory.Frobenius
 public import FLT.LocalClassFieldTheory.FrobeniusPowers
@@ -1340,6 +1343,7 @@ public import FLT.LocalClassFieldTheory.TateScalarVanishing
 public import FLT.LocalClassFieldTheory.TateTwoClassOperation
 public import FLT.LocalClassFieldTheory.TateTwoClassZero
 public import FLT.LocalClassFieldTheory.TateTwoExtension
+public import FLT.LocalClassFieldTheory.TateZeroDeflation
 public import FLT.LocalClassFieldTheory.TateZeroGroupEquivalence
 public import FLT.LocalClassFieldTheory.TateZeroRestriction
 public import FLT.LocalClassFieldTheory.TateZeroTransfer
