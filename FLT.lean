@@ -1019,6 +1019,7 @@ public import FLT.LocalClassFieldTheory.UnramifiedOpenStages
 public import FLT.LocalClassFieldTheory.UnramifiedOrderCohomology
 public import FLT.LocalClassFieldTheory.UnramifiedOrderInflation
 public import FLT.LocalClassFieldTheory.UnramifiedOrderMap
+public import FLT.LocalClassFieldTheory.UnramifiedOrderRestriction
 public import FLT.LocalClassFieldTheory.UnramifiedOrderSection
 public import FLT.LocalClassFieldTheory.UnramifiedOrderSequence
 public import FLT.LocalClassFieldTheory.UnramifiedOrderTower
