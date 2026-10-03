@@ -630,3 +630,75 @@ local invariant and class formation, norm convergence, and Kummer–Artin
 evaluation. Serre-weight evaluation and arbitrary-p Raynaud classification are
 still independent blocked gates; no implementation of either was dispatched.
 The final lifting admission and final FLT axiom set are unchanged.
+
+## W19 refinement (2026-10-03)
+
+Each following leaf has a 200-line cap. Acceptance requires a foreground
+module build, an individual-module lint and an audit of every declaration.
+
+- `FixedCoefficientBoundary`: descend a continuous bounding cochain and take
+  its finite differential, proving the boundary equation at that same stage.
+- `InvariantStageTransition`: construct quotient pullback with invariant
+  coefficient inclusion; prove identity, composition and inflation compatibility.
+- `ContinuousCochainComplex`: define the submodules of continuous functions,
+  prove differential stability and construct the continuous complex.
+- `ContinuousStageDiagram`: use reverse inclusion of open normal subgroups
+  for a filtered diagram of the actual quotient complexes and its inflation cocone.
+- `ContinuousCochainColimit`: prove that cocone is a colimit degreewise, using
+  finite descent and injective inflation, then a colimit of complexes.
+- Common-refinement boundary detection and the cohomology colimit follow once
+  the continuous complex interface is checked; refine those proofs into separate
+  leaves if needed. No assumed boundary-detection or colimit bridge is permitted.
+
+The higher principal-unit norm and class-formation gates remain distinct;
+Serre-weight evaluation and arbitrary-p Raynaud classification stay blocked.
+
+W19 cohomology and ready follow-on refinement (cap 200 each):
+
+- `CochainHomologyClass`: representative surjectivity, vanishing iff boundary,
+  and functoriality in the existing categorical homology; includes degree zero.
+- `FilteredComplexDescent`: injective cocone maps reflect cocycles; descend a
+  bounding cochain and construct a common refinement using filteredness.
+- `FilteredHomologyDescent`: descend cohomology classes and detect vanishing
+  and equality after refinement, using the preceding proved boundary theorem.
+- `ContinuousCohomologyColimit`: apply those lemmas to the constructed cocone
+  and prove the module colimit universal property and canonical isomorphism.
+- `FiniteContinuousComparison`: identity-on-cochains comparison of finite
+  discrete continuous and ordinary complexes, over an arbitrary commutative ring.
+- `FiniteCharacteristicZeroCohomology`: use Mathlib's proved Maschke theorem
+  and the existing Ext presentation to prove positive finite-group vanishing.
+- `ContinuousCharacteristicZeroCohomology`: descend each continuous class
+  to a finite quotient, then apply the finite vanishing theorem.
+
+The finite comparison's compatibility with connecting maps and cup products,
+restriction/coefficient naturality of the colimit comparison, and comparison
+with W14's explicit homogeneous low-degree presentation are separate leaves.
+Characteristic-zero vanishing does not assume an averaging homotopy; it uses
+Mathlib's existing proof of Maschke and projectivity of semisimple modules.
+
+## W19 proved scope and next gates — checked 2026-10-03 05:17 UTC
+
+The W19 acceptance table in LIFTS_GOAL_LEDGER.md records the module commits,
+caps, validation commands and evidence. Recheck recorded evidence with
+`python3 Scratch/LiftsW19/check.py`; it does not rerun Lean.
+
+Common-stage boundary descent, refinement maps, the continuous inhomogeneous
+complex, and its filtered colimit of invariant-coefficient finite quotient
+complexes are proved. `ContinuousStageBoundary` detects a boundary after a
+constructed refinement of any independently supplied stage. Continuous
+cohomology is the corresponding filtered colimit in every degree.
+
+The next ready finite discrete comparison is proved over arbitrary commutative
+rings. Positive continuous cohomology vanishes over any characteristic-zero
+field, by finite descent and the proved Maschke/Ext route. This establishes the
+vanishing conclusion of C06, including rational coefficients; no averaging
+homotopy is supplied as a hypothesis.
+
+C01's explicit integral low-degree comparison, C02's connecting-map/cup
+compatibility, and restriction/coefficient naturality of C05's comparison
+remain. C07 still needs the continuous exact-sequence construction and its
+explicit boundary formula for Q/Z and Z. These interfaces must be proved,
+not passed as bridges. The principal-unit norm convergence, local invariant,
+class-formation and Kummer–Artin evaluation gates remain, as do the independent
+Serre-weight and arbitrary-p Raynaud gates. E1c7/E1d and the final lifting
+admission remain blocked; the final FLT axiom set is unchanged.
