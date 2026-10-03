@@ -92,6 +92,66 @@ D7 correction: `RaynaudDVRParameterValuation.dvr_valuation_digits` already
 proves the general DVR lemma. The new ≤150-line `RaynaudValuationDigits`
 only applies it to `fundamentalCoefficient_complement`, with p irreducible
 in the actual unramified base. Do not re-prove the abstract digit lemma.
+D8 is refined before implementation into `RaynaudEvaluatedCycle` (≤150):
+evaluate the actual cyclic equations on points and eliminate cycles of length
+one/two; and `RaynaudPointPower` (≤150): apply the actual D7 binary unit
+coefficients to give p-power-times-unit equations, with both digits exhibited.
+Dependencies are D6/D7 and `RaynaudTwoCoordinates`; these are now ready.
+D9 is refined into D9a `RaynaudIntegralUnitCorrection` (≤150), lifting units
+from any coefficient ring integral over the original completion integers into
+the original integral closure and proving the root correction is a unit;
+D9b `RaynaudIntegralCoordinateCharacter` (≤150), identifying its reduced inertia
+ratio with the uniformizer-root character power; and D9c actual point/closure
+transport (≤150 per further leaf) applying D9a/b to D8 on the constructed tower.
+D9a/b are ready and avoid rebuilding the entire root-character API over the
+infinite base. D9c/D10 still require compatible embeddings and descent.
+
+### W17 verified endpoint and remaining first gate
+
+Checked at 2026-10-03 07:29 UTC by `python3 W17_FINAL_CHECKS.py`, individual
+foreground build/lint logs, and `W17_AXIOMS.lean` (artifacts outside FLT).
+D1–D8 and D9a/b are implemented: eleven modules, 29 declarations, each file
+≤77 lines and every dependency-axiom set contained in `{propext,
+Classical.choice, Quot.sound}`. D6–D9 modules are in `FLT.GroupScheme`.
+`W17_BOUNDARY_AXIOMS.lean` still reports `sorryAx` for the original family theorem.
+
+The actual endpoint `FF.fundamentalValue_two_binary` supplies binary digits
+and an integral unit for the equation of an actual nonzero point coordinate,
+with exponent **p*a+b**. The one-cycle version supplies a binary exponent too.
+The scalar lift satisfies algebraic action laws and matches the generic action;
+there are no supplied coordinate equations, weights, or spectrum conclusions.
+The hypothesis `Irreducible (p : R)` expresses unramifiedness at this local
+endpoint; W16 constructs such bases, but the original-model spectrum wrapper
+has not been assembled.
+
+`exists_integral_coordinate_ratio` works in the ORIGINAL number-field
+completion closure. It allows coefficients from any ring whose image is
+integral over the original completion integers. It constructs an integral
+ratio and proves its residue equals the original inertia root-character power.
+This removes the need to assume that S4's unit was in the original base ring.
+It does not itself place the constructed Raynaud model in that closure.
+
+Refine D9c before further implementation (each whole-file cap 150):
+
+| Leaf | Lean sketch | Dependencies |
+|---|---|---|
+| D9c1 closure placement | construct the algebraic-closure equivalence over the tower fraction field, extending its prescribed embedding into the original closure | Actual `RaynaudStrictHenselian` fraction-field embedding, algebraicity and algebraic-closure universal property. |
+| D9c2 original inertia fixes tower | `∀ σ : localInertiaGroup v, ∀ a : Rsh, σ (ι a) = ι a` | Each actual finite stage unramified; residue roots and Henselian uniqueness; pass through directed union. Must prove this for the chosen embedding. |
+| D9c3 evaluation transport | transported `fundamentalValue` and coefficient image satisfy D8 equations in the original closure, and evaluation intertwines original inertia | D9c1/c2, generic point base change and action agreement; then apply proved D9a/b. |
+
+D10–D14 and F01–F15 retain their displayed obligations. In particular,
+prime-field rank-two algebra does not supply larger coefficient-field spectra,
+small-prime/residually reducible branches, or potential modularity.
+
+The current main consumer path, checked by reading the three files, is
+`FermatsLastTheorem.lean:19` →
+`PNat.pow_add_pow_ne_pow_of_three_inputs` (`Assembly/ThreeInputFinal`) →
+`FLT.Assembly.hardlyRamifiedCompatibleFamilies` (`Assembly/ExistingInputs:36`)
+→ `IsHardlyRamified.mem_isCompatible`. The adapter already forwards the exact
+statement, so no additional mathematical gate lies between it and the main
+consumer. `HardlyRamified/PrimeField:61` is a second consumer. Main separately
+uses the lifting input and `Mazur_statement`; finishing this family branch
+alone would not certify all of main. No whole-library build/lint was run.
 
 Checked 2026-09-30 against `af51e4ea`; commands at the end reproduce the audit.
 This is a dependency map, not a proof of `mem_isCompatible`.

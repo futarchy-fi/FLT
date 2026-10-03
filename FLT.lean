@@ -741,6 +741,7 @@ public import FLT.GroupScheme.RaynaudDualFaithful
 public import FLT.GroupScheme.RaynaudDualGenericMap
 public import FLT.GroupScheme.RaynaudEtaleDualExtension
 public import FLT.GroupScheme.RaynaudEtaleExtension
+public import FLT.GroupScheme.RaynaudEvaluatedCycle
 public import FLT.GroupScheme.RaynaudExtension
 public import FLT.GroupScheme.RaynaudExtensionExists
 public import FLT.GroupScheme.RaynaudExtremalActions
@@ -774,8 +775,10 @@ public import FLT.GroupScheme.RaynaudInertiaScalarFiltration
 public import FLT.GroupScheme.RaynaudInertiaSimpleScalars
 public import FLT.GroupScheme.RaynaudIntegralCharacterRank
 public import FLT.GroupScheme.RaynaudIntegralClosureBound
+public import FLT.GroupScheme.RaynaudIntegralCoordinateCharacter
 public import FLT.GroupScheme.RaynaudIntegralCoordinates
 public import FLT.GroupScheme.RaynaudIntegralFiltration
+public import FLT.GroupScheme.RaynaudIntegralUnitCorrection
 public import FLT.GroupScheme.RaynaudInversionBasis
 public import FLT.GroupScheme.RaynaudKernelExactness
 public import FLT.GroupScheme.RaynaudLayerDescent
@@ -801,6 +804,8 @@ public import FLT.GroupScheme.RaynaudPadicPowerExtension
 public import FLT.GroupScheme.RaynaudPadicPowerRigidity
 public import FLT.GroupScheme.RaynaudPairedCharacterBases
 public import FLT.GroupScheme.RaynaudParameterValuation
+public import FLT.GroupScheme.RaynaudPointCoordinate
+public import FLT.GroupScheme.RaynaudPointPower
 public import FLT.GroupScheme.RaynaudPowerCharacterDifference
 public import FLT.GroupScheme.RaynaudPowerCharacterOrthogonality
 public import FLT.GroupScheme.RaynaudPowerDevissage
@@ -856,6 +861,7 @@ public import FLT.GroupScheme.RaynaudUnramifiedKernel
 public import FLT.GroupScheme.RaynaudUnramifiedOrder
 public import FLT.GroupScheme.RaynaudUnramifiedQuotient
 public import FLT.GroupScheme.RaynaudUnramifiedStage
+public import FLT.GroupScheme.RaynaudValuationDigits
 public import FLT.GroupScheme.RestrictedScalarPointNaturality
 public import FLT.GroupScheme.ReverseExtHypothesis
 public import FLT.GroupScheme.ReverseExtSwappedExtension
