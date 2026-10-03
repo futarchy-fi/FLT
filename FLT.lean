@@ -1096,6 +1096,7 @@ public import FLT.LocalClassFieldTheory.CocycleRectangle
 public import FLT.LocalClassFieldTheory.CoinducedCoefficientKernel
 public import FLT.LocalClassFieldTheory.CoinducedCoefficientSequence
 public import FLT.LocalClassFieldTheory.CoinducedInjectiveRestriction
+public import FLT.LocalClassFieldTheory.CoinducedInvariantSequence
 public import FLT.LocalClassFieldTheory.CoinducedNormExact
 public import FLT.LocalClassFieldTheory.CoinducedRestrictionComparison
 public import FLT.LocalClassFieldTheory.CoinducedShapiro
@@ -1170,6 +1171,7 @@ public import FLT.LocalClassFieldTheory.FiniteInflationCocycleDescent
 public import FLT.LocalClassFieldTheory.FiniteInflationRestrictionExact
 public import FLT.LocalClassFieldTheory.FiniteKernelCocycleCorrection
 public import FLT.LocalClassFieldTheory.FiniteQuotientArtin
+public import FLT.LocalClassFieldTheory.FiniteQuotientArtinCup
 public import FLT.LocalClassFieldTheory.FiniteRelativeCocycleDescent
 public import FLT.LocalClassFieldTheory.FiniteRelativeSaturation
 public import FLT.LocalClassFieldTheory.FiniteRelativeSequence
@@ -1200,6 +1202,7 @@ public import FLT.LocalClassFieldTheory.GaloisKernelContinuousEquiv
 public import FLT.LocalClassFieldTheory.GaloisKernelRestriction
 public import FLT.LocalClassFieldTheory.GaloisKernelTopology
 public import FLT.LocalClassFieldTheory.GaloisTowerCochainDescent
+public import FLT.LocalClassFieldTheory.GroupConnectingRestriction
 public import FLT.LocalClassFieldTheory.HenselianRoots
 public import FLT.LocalClassFieldTheory.HerbrandExact
 public import FLT.LocalClassFieldTheory.InflationBoundaryDescent
@@ -1233,6 +1236,7 @@ public import FLT.LocalClassFieldTheory.IntermediateDvr
 public import FLT.LocalClassFieldTheory.IntermediateDvrAlgebra
 public import FLT.LocalClassFieldTheory.InvariantRestriction
 public import FLT.LocalClassFieldTheory.InvariantStageTransition
+public import FLT.LocalClassFieldTheory.InvariantTwoExtensionInflation
 public import FLT.LocalClassFieldTheory.KernelCocycleDescent
 public import FLT.LocalClassFieldTheory.KernelCocycleNormalization
 public import FLT.LocalClassFieldTheory.KernelMixedCocycle
@@ -1255,6 +1259,7 @@ public import FLT.LocalClassFieldTheory.LocalScaledCoefficients
 public import FLT.LocalClassFieldTheory.LocalScaledSeries
 public import FLT.LocalClassFieldTheory.LocalSeriesComparison
 public import FLT.LocalClassFieldTheory.NegativeCupArithmetic
+public import FLT.LocalClassFieldTheory.NegativeCupQuotient
 public import FLT.LocalClassFieldTheory.NormCongruence
 public import FLT.LocalClassFieldTheory.NormFirstOrder
 public import FLT.LocalClassFieldTheory.NormalFixedFieldNorm
@@ -1271,6 +1276,8 @@ public import FLT.LocalClassFieldTheory.NormalizedOrder
 public import FLT.LocalClassFieldTheory.NormalizedTwoCocycles
 public import FLT.LocalClassFieldTheory.OneCocycleExtension
 public import FLT.LocalClassFieldTheory.OneCocycleExtensionChange
+public import FLT.LocalClassFieldTheory.OneCocycleInvariantProjection
+public import FLT.LocalClassFieldTheory.OneCocycleInvariantSequence
 public import FLT.LocalClassFieldTheory.OneCocycleNegativeBoundary
 public import FLT.LocalClassFieldTheory.OneCocycleScalarBoundary
 public import FLT.LocalClassFieldTheory.OrderHomScale
@@ -1298,10 +1305,13 @@ public import FLT.LocalClassFieldTheory.RelativeFundamentalExtensionRestriction
 public import FLT.LocalClassFieldTheory.RelativeFundamentalInflation
 public import FLT.LocalClassFieldTheory.RelativeFundamentalOrdinaryInflation
 public import FLT.LocalClassFieldTheory.RelativeFundamentalOrdinaryRestriction
+public import FLT.LocalClassFieldTheory.RelativeFundamentalQuotientCup
+public import FLT.LocalClassFieldTheory.RelativeFundamentalQuotientSequences
 public import FLT.LocalClassFieldTheory.RelativeFundamentalRestriction
 public import FLT.LocalClassFieldTheory.RelativeFundamentalSubgroup
 public import FLT.LocalClassFieldTheory.RelativeFundamentalTateCup
 public import FLT.LocalClassFieldTheory.RelativeInflationTower
+public import FLT.LocalClassFieldTheory.RelativeInvariantClassInflation
 public import FLT.LocalClassFieldTheory.RelativeLowerBound
 public import FLT.LocalClassFieldTheory.RelativeOrderInduction
 public import FLT.LocalClassFieldTheory.RelativeRestrictionKernel
@@ -1349,12 +1359,14 @@ public import FLT.LocalClassFieldTheory.TateScalarDegreeZero
 public import FLT.LocalClassFieldTheory.TateScalarGenerator
 public import FLT.LocalClassFieldTheory.TateScalarGeneratorComparison
 public import FLT.LocalClassFieldTheory.TateScalarMap
+public import FLT.LocalClassFieldTheory.TateScalarQuotientExact
 public import FLT.LocalClassFieldTheory.TateScalarVanishing
 public import FLT.LocalClassFieldTheory.TateTwoClassOperation
 public import FLT.LocalClassFieldTheory.TateTwoClassZero
 public import FLT.LocalClassFieldTheory.TateTwoExtension
 public import FLT.LocalClassFieldTheory.TateZeroCardinality
 public import FLT.LocalClassFieldTheory.TateZeroDeflation
+public import FLT.LocalClassFieldTheory.TateZeroDeflationExact
 public import FLT.LocalClassFieldTheory.TateZeroGroupEquivalence
 public import FLT.LocalClassFieldTheory.TateZeroRestriction
 public import FLT.LocalClassFieldTheory.TateZeroTransfer
