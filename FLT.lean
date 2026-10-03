@@ -998,6 +998,7 @@ public import FLT.KnownIn1980s.PGL2.Proofs
 public import FLT.KnownIn1980s.RepresentationTheory.OddAbsIrred
 public import FLT.KnownIn1980s.Ribet_Lemma.Defs
 public import FLT.KnownIn1980s.Ribet_Lemma.Proofs
+public import FLT.LocalClassFieldTheory.AbsoluteCorestriction
 public import FLT.LocalClassFieldTheory.AbsoluteInvariant
 public import FLT.LocalClassFieldTheory.AbsoluteRestriction
 public import FLT.LocalClassFieldTheory.AcyclicOpenUnits
@@ -1037,6 +1038,7 @@ public import FLT.LocalClassFieldTheory.ContinuousStageBoundary
 public import FLT.LocalClassFieldTheory.ContinuousStageDiagram
 public import FLT.LocalClassFieldTheory.ContinuousTowerRefinement
 public import FLT.LocalClassFieldTheory.ContinuousTransfer
+public import FLT.LocalClassFieldTheory.CorestrictionInvariant
 public import FLT.LocalClassFieldTheory.CorestrictionRestrictionH2
 public import FLT.LocalClassFieldTheory.CyclicCarry
 public import FLT.LocalClassFieldTheory.CyclicCarryConnecting
@@ -1074,6 +1076,7 @@ public import FLT.LocalClassFieldTheory.FiniteSubgroupCocycleCorrection
 public import FLT.LocalClassFieldTheory.FixedCoefficientBoundary
 public import FLT.LocalClassFieldTheory.FixedCoefficientCochain
 public import FLT.LocalClassFieldTheory.FixedCoefficientDifferential
+public import FLT.LocalClassFieldTheory.FixingSubgroupTopology
 public import FLT.LocalClassFieldTheory.Frobenius
 public import FLT.LocalClassFieldTheory.FrobeniusPowers
 public import FLT.LocalClassFieldTheory.FrobeniusRestrictionScale
