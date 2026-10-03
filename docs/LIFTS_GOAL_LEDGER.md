@@ -4,6 +4,71 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
+## W13 acceptance — checked 2026-10-03 01:42 UTC
+
+E09c is proved, and E1 has been split and started with E1a/b. Seventeen new
+modules (1,418 lines, all ≤200) passed foreground builds, individual module
+lints and axiom audits. All 56 named theorems and all 106 named definitions,
+abbreviations and theorems use only propext, Classical.choice and Quot.sound.
+The initial E09c split was committed as `50b071f1`; the linear, actual-Hom,
+and tensor refinements as `3dd88843`, `2ebb213b`, `40f62395`; E1's source match
+and split as `8e7cf1fd`, before implementing E1a/b.
+
+| Item | Module under FLT | Lines/cap | Commit |
+|---|---|---|---|
+| E09c1 | GroupScheme.PrimeRootCoordinates | 46/200 | `21c9825d` |
+| E09c2 | GaloisRepresentation.Extensions.CharacterCoefficients | 94/200 | `1c96403a` |
+| E09c3 | GroupScheme.PrimeCyclotomicCoefficients | 62/200 | `1977c49a` |
+| E09c4 | GaloisRepresentation.Extensions.ContinuousCocycleCoordinates | 64/200 | `eaa2aaef` |
+| E09c5 | GaloisRepresentation.Extensions.ContinuousClassCoordinates | 74/200 | `f11cc5f6` |
+| E09c5a | GaloisRepresentation.Extensions.LinearClassCoordinates | 77/200 | `9d5e283c` |
+| E09c5b | GaloisRepresentation.Extensions.TensorCharacterClasses | 122/200 | `a6a61738` |
+| E09c6 | GaloisRepresentation.Extensions.LinearContinuousClass | 127/200 | `8b81e469` |
+| E09c6a | GaloisRepresentation.Extensions.LinearCoefficientMap | 56/200 | `62c11c94` |
+| E09c6b | GroupScheme.RootModuleLinear | 49/200 | `9647194f` |
+| E09c7a | GroupScheme.LinearKummerClass | 99/200 | `11ccbe9b` |
+| E09c7 | GroupScheme.PrimeUnitSubspace | 55/200 | `7202690f` |
+| E09c8 | GaloisRepresentation.Extensions.ExtendedUnitSubspace | 101/200 | `be6b240e` |
+| E09c9a | GaloisRepresentation.Extensions.OrdinaryHomCoordinates | 86/200 | `d6908c95` |
+| E09c9 | GaloisRepresentation.Extensions.OrdinaryTwist | 131/200 | `f4b80045` |
+| E1a | GaloisRepresentation.Extensions.ContinuousCup | 99/200 | `950e82a2` |
+| E1b | GaloisRepresentation.Extensions.PeuRamifiedClass | 76/200 | `5172c42b` |
+
+`tensorCharacterClassLinearEquiv` proves the canonical k-linear comparison
+`k ⊗[F] H¹_cont(G,F(χ)) ≃ H¹_cont(G,k(χ))` for a finite F-basis of k.
+Its pure-tensor formula is actual coefficient inclusion followed by scaling;
+the map is independent of the auxiliary basis. Both sides use the explicit
+continuous quotient, not a claimed derived-functor identification.
+`primeCyclotomicCoordinates_equivariant` identifies the root action with the
+actual modular cyclotomic character. `linearKummerEquiv` is additive, so
+`primeUnitSubspace` is exactly the independent valuation-unit image.
+`extendedUnitSubspace` is its k-span after the constructed coefficient map.
+Its scalar-invariance theorem works on the original splitting quotient.
+`ordinaryHomUnit_twist_iff` and `liftedUnitClass_basis_iff` apply that result to
+actual Hom representations and actual lifted-difference cocycles.
+
+E1a proves a continuous (1,1) cup and its continuous splitting coboundary.
+E1b defines the independent cup-annihilator of unramified trivial characters,
+proves splitting invariance and descends it to the class quotient. E1c/d
+remain blocked on the explicit-to-derived degree-two/cup comparison and the
+local Tate/Artin evaluation theorem. Neither this arithmetic comparison nor
+Serre-weight evaluation, Raynaud classification or global lifting is claimed.
+
+Validation: `python3 Scratch/LiftsW13/check.py` checks caps, source scope,
+sorted unique FLT imports, every final per-module build/lint log, all named
+declaration audits and the final dependency audit. It checks recorded logs;
+for fresh execution run, for each module M individually:
+`LEAN_NUM_THREADS=2 lake build M`, then
+`LEAN_NUM_THREADS=2 lake exe runLinter M`, then
+`LEAN_NUM_THREADS=2 lake env lean Scratch/LiftsW13/<ShortName>Axioms.lean`.
+No whole-library build or lint ran. Combined fresh audit:
+`LEAN_NUM_THREADS=2 lake env lean Scratch/LiftsW13/FinalAxioms.lean`.
+Logs: `Scratch/LiftsW13/<ShortName>-{build,lint,axioms}.log`,
+`Final-axioms.log`, `summary.json`. All final logs are warning/error-free.
+The final audit still gives sorryAx for lifts and its adapter, and
+`[Mazur_statement, propext, sorryAx, Classical.choice, Quot.sound]` for
+`PNat.pow_add_pow_ne_pow`. W13 has not removed the lifting admission.
+
 ## W13 E1 source match and first leaves — checked 2026-10-03
 
 E09c's coefficient gate is now proved: the prime cyclotomic/root identification,
