@@ -1317,6 +1317,7 @@ public import FLT.Mazur.OneGonNormalizationPullback
 public import FLT.Mazur.OneGonOverlap
 public import FLT.Mazur.OneGonPinchingDescent
 public import FLT.Mazur.OneGonQuotient
+public import FLT.Mazur.OneGonScalarExtension
 public import FLT.Mazur.OneGonTransition
 public import FLT.Mazur.OpenDirectImageCohomology
 public import FLT.Mazur.OpenDirectImageNaturality
@@ -1330,6 +1331,7 @@ public import FLT.Mazur.OpenSheafFreeComparison
 public import FLT.Mazur.OpenSheafRestriction
 public import FLT.Mazur.OverPoints
 public import FLT.Mazur.PinchingAffineDescent
+public import FLT.Mazur.PinchingChartBaseChange
 public import FLT.Mazur.PinchingNeighborhoods
 public import FLT.Mazur.PolygonAtlas
 public import FLT.Mazur.PolygonAtlasCocone
@@ -1354,6 +1356,7 @@ public import FLT.Mazur.PolygonNodeScaling
 public import FLT.Mazur.PolygonNormalizationAlgebra
 public import FLT.Mazur.PolygonNormalizationFinite
 public import FLT.Mazur.PolygonPinchingDiagram
+public import FLT.Mazur.PolygonProductAtlas
 public import FLT.Mazur.PolygonScalingNaturality
 public import FLT.Mazur.PolygonSmoothLocus
 public import FLT.Mazur.PolygonSplitGroup
@@ -1423,6 +1426,9 @@ public import FLT.Mazur.RelativeCartierBaseChange
 public import FLT.Mazur.RelativeDirectImageComposition
 public import FLT.Mazur.RelativeDirectImageForgetting
 public import FLT.Mazur.RelativeDirectImageOpenResolution
+public import FLT.Mazur.RelativePinchingDescent
+public import FLT.Mazur.RelativePinchingLocalDescent
+public import FLT.Mazur.RelativePinchingNeighborhoods
 public import FLT.Mazur.RelativeSerreAffineAcyclic
 public import FLT.Mazur.RelativeSerreAffineVanishing
 public import FLT.Mazur.RelativeSerreLocalizedTower
@@ -1430,7 +1436,12 @@ public import FLT.Mazur.RelativeSerreVanishing
 public import FLT.Mazur.RelativeSums
 public import FLT.Mazur.RelativeVeryAmpleLineBundle
 public import FLT.Mazur.RightDerivedDimensionShift
+public import FLT.Mazur.RingEqualizerAwayEndpoint
+public import FLT.Mazur.RingEqualizerDescent
+public import FLT.Mazur.RingEqualizerLocalDescent
+public import FLT.Mazur.RingEqualizerLocalization
 public import FLT.Mazur.ScalarCohomology
+public import FLT.Mazur.SchematicDescentGluing
 public import FLT.Mazur.SchemeCohomologyIso
 public import FLT.Mazur.SchemeCohomologyIsoCocycles
 public import FLT.Mazur.SectionCharts
@@ -1447,6 +1458,7 @@ public import FLT.Mazur.SmoothDimensionBound
 public import FLT.Mazur.SmoothOpenSectionCartier
 public import FLT.Mazur.SmoothSectionCartier
 public import FLT.Mazur.StructureCohomologyFinite
+public import FLT.Mazur.SurjectiveDominantEpi
 public import FLT.Mazur.TernaryOpenDescent
 public import FLT.Mazur.TildePrincipalOpen
 public import FLT.MazurChapter.AdmissibleGroupSchemes
