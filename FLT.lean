@@ -39,6 +39,9 @@ public import FLT.AbsoluteGaloisGroup.FundamentalCoefficients
 public import FLT.AbsoluteGaloisGroup.FundamentalCyclotomic
 public import FLT.AbsoluteGaloisGroup.FundamentalTame
 public import FLT.AbsoluteGaloisGroup.InertiaComparison
+public import FLT.AbsoluteGaloisGroup.InertiaDescentField
+public import FLT.AbsoluteGaloisGroup.InertiaDescentHenselian
+public import FLT.AbsoluteGaloisGroup.InertiaDescentUniformizer
 public import FLT.AbsoluteGaloisGroup.LocalCompositum
 public import FLT.AbsoluteGaloisGroup.LocalCyclotomicCharacter
 public import FLT.AbsoluteGaloisGroup.LocalCyclotomicGenerator
@@ -487,6 +490,7 @@ public import FLT.GroupScheme.FiniteFlatRestrictedScalarExtension
 public import FLT.GroupScheme.FiniteFlatScalarExtension
 public import FLT.GroupScheme.FiniteFlatSectionDescent
 public import FLT.GroupScheme.FiniteFlatSubobject
+public import FLT.GroupScheme.FiniteFlatSubquotientBaseChange
 public import FLT.GroupScheme.FiniteFreeAdicComplete
 public import FLT.GroupScheme.FiniteHopfFreeness
 public import FLT.GroupScheme.FontaineConvolutionApproximation
@@ -519,7 +523,10 @@ public import FLT.GroupScheme.FrobeniusKernelStructure
 public import FLT.GroupScheme.FrobeniusPresentationDescent
 public import FLT.GroupScheme.FrobeniusRelativePresentation
 public import FLT.GroupScheme.FrobeniusSubalgebra
+public import FLT.GroupScheme.GenericFiberDenominator
 public import FLT.GroupScheme.GenericFiberMapUnique
+public import FLT.GroupScheme.GenericFiberPrimitiveDenominator
+public import FLT.GroupScheme.GenericFiberScaledMultiplication
 public import FLT.GroupScheme.GenericFieldChange
 public import FLT.GroupScheme.GenericMorphismScalarExtension
 public import FLT.GroupScheme.GlobalModel
@@ -646,7 +653,11 @@ public import FLT.GroupScheme.RationalCubeValuations
 public import FLT.GroupScheme.RaynaudClosureFactorization
 public import FLT.GroupScheme.RaynaudConnectedQuotient
 public import FLT.GroupScheme.RaynaudCoordinateCharacter
+public import FLT.GroupScheme.RaynaudDVRParameterValuation
 public import FLT.GroupScheme.RaynaudDiagonalizableExtension
+public import FLT.GroupScheme.RaynaudDirectedHenselian
+public import FLT.GroupScheme.RaynaudDirectedPolynomial
+public import FLT.GroupScheme.RaynaudDirectedUnion
 public import FLT.GroupScheme.RaynaudDiscriminant
 public import FLT.GroupScheme.RaynaudEtaleDualExtension
 public import FLT.GroupScheme.RaynaudEtaleExtension
@@ -675,12 +686,16 @@ public import FLT.GroupScheme.RaynaudQuotientSpecialFiber
 public import FLT.GroupScheme.RaynaudRankThreeClassification
 public import FLT.GroupScheme.RaynaudRankThreeExtension
 public import FLT.GroupScheme.RaynaudRigidity
+public import FLT.GroupScheme.RaynaudScalingValuation
 public import FLT.GroupScheme.RaynaudSplitting
+public import FLT.GroupScheme.RaynaudStageFractionField
+public import FLT.GroupScheme.RaynaudStageHenselian
 public import FLT.GroupScheme.RaynaudTorsionFiltration
 public import FLT.GroupScheme.RaynaudTorsorDescent
 public import FLT.GroupScheme.RaynaudTwoCoordinates
 public import FLT.GroupScheme.RaynaudUnramifiedKernel
 public import FLT.GroupScheme.RaynaudUnramifiedQuotient
+public import FLT.GroupScheme.RaynaudUnramifiedStage
 public import FLT.GroupScheme.RestrictedScalarPointNaturality
 public import FLT.GroupScheme.ReverseExtHypothesis
 public import FLT.GroupScheme.ReverseExtSwappedExtension
