@@ -4,6 +4,227 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
+## W13 acceptance — checked 2026-10-03 01:42 UTC
+
+E09c is proved, and E1 has been split and started with E1a/b. Seventeen new
+modules (1,418 lines, all ≤200) passed foreground builds, individual module
+lints and axiom audits. All 56 named theorems and all 106 named definitions,
+abbreviations and theorems use only propext, Classical.choice and Quot.sound.
+The initial E09c split was committed as `50b071f1`; the linear, actual-Hom,
+and tensor refinements as `3dd88843`, `2ebb213b`, `40f62395`; E1's source match
+and split as `8e7cf1fd`, before implementing E1a/b.
+
+| Item | Module under FLT | Lines/cap | Commit |
+|---|---|---|---|
+| E09c1 | GroupScheme.PrimeRootCoordinates | 46/200 | `21c9825d` |
+| E09c2 | GaloisRepresentation.Extensions.CharacterCoefficients | 94/200 | `1c96403a` |
+| E09c3 | GroupScheme.PrimeCyclotomicCoefficients | 62/200 | `1977c49a` |
+| E09c4 | GaloisRepresentation.Extensions.ContinuousCocycleCoordinates | 64/200 | `eaa2aaef` |
+| E09c5 | GaloisRepresentation.Extensions.ContinuousClassCoordinates | 74/200 | `f11cc5f6` |
+| E09c5a | GaloisRepresentation.Extensions.LinearClassCoordinates | 77/200 | `9d5e283c` |
+| E09c5b | GaloisRepresentation.Extensions.TensorCharacterClasses | 122/200 | `a6a61738` |
+| E09c6 | GaloisRepresentation.Extensions.LinearContinuousClass | 127/200 | `8b81e469` |
+| E09c6a | GaloisRepresentation.Extensions.LinearCoefficientMap | 56/200 | `62c11c94` |
+| E09c6b | GroupScheme.RootModuleLinear | 49/200 | `9647194f` |
+| E09c7a | GroupScheme.LinearKummerClass | 99/200 | `11ccbe9b` |
+| E09c7 | GroupScheme.PrimeUnitSubspace | 55/200 | `7202690f` |
+| E09c8 | GaloisRepresentation.Extensions.ExtendedUnitSubspace | 101/200 | `be6b240e` |
+| E09c9a | GaloisRepresentation.Extensions.OrdinaryHomCoordinates | 86/200 | `d6908c95` |
+| E09c9 | GaloisRepresentation.Extensions.OrdinaryTwist | 131/200 | `f4b80045` |
+| E1a | GaloisRepresentation.Extensions.ContinuousCup | 99/200 | `950e82a2` |
+| E1b | GaloisRepresentation.Extensions.PeuRamifiedClass | 76/200 | `5172c42b` |
+
+`tensorCharacterClassLinearEquiv` proves the canonical k-linear comparison
+`k ⊗[F] H¹_cont(G,F(χ)) ≃ H¹_cont(G,k(χ))` for a finite F-basis of k.
+Its pure-tensor formula is actual coefficient inclusion followed by scaling;
+the map is independent of the auxiliary basis. Both sides use the explicit
+continuous quotient, not a claimed derived-functor identification.
+`primeCyclotomicCoordinates_equivariant` identifies the root action with the
+actual modular cyclotomic character. `linearKummerEquiv` is additive, so
+`primeUnitSubspace` is exactly the independent valuation-unit image.
+`extendedUnitSubspace` is its k-span after the constructed coefficient map.
+Its scalar-invariance theorem works on the original splitting quotient.
+`ordinaryHomUnit_twist_iff` and `liftedUnitClass_basis_iff` apply that result to
+actual Hom representations and actual lifted-difference cocycles.
+
+E1a proves a continuous (1,1) cup and its continuous splitting coboundary.
+E1b defines the independent cup-annihilator of unramified trivial characters,
+proves splitting invariance and descends it to the class quotient. E1c/d
+remain blocked on the explicit-to-derived degree-two/cup comparison and the
+local Tate/Artin evaluation theorem. Neither this arithmetic comparison nor
+Serre-weight evaluation, Raynaud classification or global lifting is claimed.
+
+Validation: `python3 Scratch/LiftsW13/check.py` checks caps, source scope,
+sorted unique FLT imports, every final per-module build/lint log, all named
+declaration audits and the final dependency audit. It checks recorded logs;
+for fresh execution run, for each module M individually:
+`LEAN_NUM_THREADS=2 lake build M`, then
+`LEAN_NUM_THREADS=2 lake exe runLinter M`, then
+`LEAN_NUM_THREADS=2 lake env lean Scratch/LiftsW13/<ShortName>Axioms.lean`.
+No whole-library build or lint ran. Combined fresh audit:
+`LEAN_NUM_THREADS=2 lake env lean Scratch/LiftsW13/FinalAxioms.lean`.
+Logs: `Scratch/LiftsW13/<ShortName>-{build,lint,axioms}.log`,
+`Final-axioms.log`, `summary.json`. All final logs are warning/error-free.
+The final audit still gives sorryAx for lifts and its adapter, and
+`[Mazur_statement, propext, sorryAx, Classical.choice, Quot.sound]` for
+`PNat.pow_add_pow_ne_pow`. W13 has not removed the lifting admission.
+
+## W13 E1 source match and first leaves — checked 2026-10-03
+
+E09c's coefficient gate is now proved: the prime cyclotomic/root identification,
+canonical k-linear tensor comparison (including the pure-tensor formula and
+basis independence), prime unit subspace, extended unit span, actual Hom twist
+transport, and actual lifted-difference b/a invariance all have implementations.
+All root-existence/primitive-root hypotheses remain explicit for a general L/K;
+E08g supplies the former in the characteristic-zero algebraic closure, and
+`HasEnoughRootsOfUnity.exists_primitiveRoot` supplies the latter. No arithmetic
+ramification or finite-flat assertion follows just from these comparisons.
+
+For E1 use Gee–Herzig–Liu–Savitt, *Potentially crystalline lifts of certain
+prescribed types*, arXiv:1506.01050v3 (2017), Definition 2.1.2 and Example
+2.1.4(1), PDF pp. 7–8. Checked from the downloaded author PDF; local evidence:
+`Scratch/LiftsW13/ghls.{pdf,txt}`. The definition is annihilation under local
+Tate duality by unramified dual classes. In the ordinary cyclotomic case the
+dual is trivial, and the source compares the pairing, through Kummer and Artin,
+with evaluation `Kˣ/(Kˣ)^p × Hom(Kˣ,Fp) → Fp`. It then identifies the annihilator
+of unramified characters with valuation units. This definition is independent
+of Kummer units and finite-flat models, as required.
+
+| E1 leaf / new module | Contract, source/API match | Status | Cap |
+|---|---|---|---|
+| E1a / Extensions.ContinuousCup | Construct the continuous (1,1) cup with a trivial additive character, prove its 2-cocycle identity, and compute the continuous 2-coboundary from a splitting change. Mathlib LowDegree.IsCocycle₂/IsCoboundary₂ specify signs; continuous scalar multiplication and E03 supply the calculation. | READY | 200 |
+| E1b / Extensions.PeuRamifiedClass | Define the explicit continuous cup-annihilator of characters vanishing on inertia, prove splitting invariance, and descend to the existing class quotient. This is the independent ordinary predicate; no unit or finite-flat condition enters its definition. | E1a | 200 |
+| E1c / SerreWeight.LocalTateComparison | Identify the explicit degree-one/two cocycles and cups with the continuous cohomology pairing; specialize the genuine local Tate invariant and Artin reciprocity evaluation. The existing ContCohomology.CupProduct is on homogeneous/coinduced complexes, not the required low-degree comparison or local reciprocity theorem. | BLOCKED on new local-duality/reciprocity foundations; split/source-match those before proof | 200 adapter only |
+| E1d / SerreWeight.ExtensionKummer | Prove that the E1b annihilator equals E09c's extended unit subspace, using E1c's proved evaluation comparison and the valuation quotient; transport through actual Hom coordinates. | BLOCKED E1c | 200 adapter only |
+
+Only E1a/b are ready. The bounds on E1c/d do not certify the size of their
+missing arithmetic foundations. No local Tate theorem is installed as a field
+of a record, and no Serre-weight evaluation or Raynaud classification is ready.
+
+## W13 source match and bounded E09c split — 2026-10-03
+
+These contracts are committed before proof. Each new module has a 200-line
+cap, including imports. All comparisons concern E06's explicit continuous
+quotient. A finite basis may model scalar extension: coordinatewise cocycles
+and coordinatewise splitting changes must both be proved, not postulated.
+
+| Leaf / proposed module | Contract and checked source APIs | Dependencies |
+|---|---|---|
+| E09c1 / GroupScheme.PrimeRootCoordinates | `ZMod p ≃+ RootModule L p` from a primitive root; compute its value on natural integers. Mathlib RootsOfUnity/PrimitiveRoots: zmodEquivZPowers, zpowers_eq; MulEquiv.subgroupCongr. | READY |
+| E09c2 / Extensions.CharacterCoefficients | Discrete character coefficient module, prime-to-extension coefficient embedding and basis-coordinate equivariance for a character valued in the prime field. CharacterLines.characterLine; Basis.equivFun, map_smul. | E09c1 |
+| E09c3 / GroupScheme.PrimeCyclotomicCoefficients | E09c1 intertwines the natural Galois action with the actual modularCyclotomicCharacter; hence continuous cocycles/classes identify with the prime character line. CyclotomicCharacter.modularCyclotomicCharacter.spec; E09b.coefficientClassEquiv. | E09c1/c2 |
+| E09c4 / Extensions.ContinuousCocycleCoordinates | Finite products commute with continuous cocycles and splitting equivalence, including reconstruction of the splitting vector. continuous_pi; E06; coordinate evaluation. | E09c2 |
+| E09c5 / Extensions.ContinuousClassCoordinates | Finite-product continuous classes are exactly products of classes; combine with an equivariant finite coefficient basis to compare scalar-extended character classes. Quotient.map/lift, Quotient.choice, E09b. | E09c4 |
+| E09c6 / Extensions.LinearContinuousClass | Linear cocycle submodule, principal submodule, and a proved equivalence of its quotient with E06's explicit quotient. Submodule.mkQ; splittingEquivalent_iff_coboundary. | E09c5 |
+| E09c7 / GroupScheme.PrimeUnitSubspace | Prove additivity of the Kummer comparison, then the prime-field unit subspace using the independently defined valuation-unit subgroup. rootUnit_add, unitRatio_mul; KummerUnitClass.unitClasses. | E09c3/c6 |
+| E09c8 / Extensions.ExtendedUnitSubspace | Define coefficient extension of E09c7 and prove arbitrary nonzero residual-field scalar changes preserve and reflect membership; relate to finite-basis comparison, independent of basis. Submodule.span/map, E09c5/c6/c7. | E09c7 |
+| E09c9 / Extensions.OrdinaryTwist | Apply E09c8 to actual Hom-character coordinates and E09e's b/a lift-basis change, with simultaneous twists cancelling. | E09c8 |
+
+Additional linear foundations matched before proof (each cap 200):
+
+| Leaf / module | Contract and source | Dependencies |
+|---|---|---|
+| E09c6a / Extensions.LinearCoefficientMap | Semilinear equivariant coefficient maps induce semilinear maps of continuous cocycles and classes. Submodule.mapQ; continuous_of_discreteTopology. | E09c6 |
+| E09c6b / GroupScheme.RootModuleLinear | Canonical ZMod-p module on root coefficients, commuting with Galois; primitive-root coordinates are linear. AddCommGroup.zmodModule; ZMod.map_smul; rootUnit_pow. | E09c1/c3 |
+| E09c7a / GroupScheme.LinearKummerClass | Additive Kummer comparison on linear continuous classes; prove product compatibility from unitRatio_mul and root-choice independence. | E09c6/c6b |
+
+The last adapter also needs a concrete Hom action, not a supplied
+conclusion-bearing equivalence. E09c9a / Extensions.OrdinaryHomCoordinates
+(cap 200) constructs the discrete Hom coefficient module from
+`Representation.linHom`, then proves that evaluation at 1 intertwines a
+specified cyclotomic Hom character. E09c9 consumes this constructed map.
+E09c5a / Extensions.LinearClassCoordinates (cap 200) upgrades the finite-basis
+comparison to an F-linear equivalence using `linearCoefficientClass` and the
+already proved quotient bijection. These refinements are source-matched
+before their implementation.
+
+E09c5b / Extensions.TensorCharacterClasses (cap 200) now has its
+source match: `TensorProduct.equivFinsuppOfBasisLeft`,
+`Finsupp.linearEquivFunOnFinite`, and E09c5a construct an F-linear tensor
+comparison. Its pure-tensor formula must identify it with the canonical
+coefficient inclusion followed by k-scaling; this also proves independence
+of the auxiliary coefficient basis. This closes the distinction between a
+bare product-of-classes equivalence and the scalar-extension comparison.
+
+The modules listed after c5 are new constructions, not existing APIs. E09c
+closes only after the unit-space and actual ordinary-extension adapters are
+proved. Root existence and a primitive root must be supplied explicitly or
+proved for the algebraic closure. No equality of an arbitrary k-line with
+the cyclic root group is asserted. E1's independent ramification predicate
+and arithmetic comparison remain a separate gate; no Serre-weight or Raynaud
+classification work is ready on the strength of this split.
+
+## W12 acceptance and remaining boundary — checked 2026-10-03 00:56 UTC
+
+E08a–g and E09a/b/d/e are implemented in eleven new modules (1,051 lines).
+All modules passed individual foreground builds and individual module lints.
+All 64 named theorems and all 87 named definitions/abbreviations/theorems,
+plus the named root-action instance, have only propext, Classical.choice
+and Quot.sound. The initial split was committed as `f3faa7f1`; additional
+bounded specializations were matched in `02b56d0f` and `561a0965` before proof.
+
+| Leaf | Module under FLT | Lines/cap | Proof commit |
+|---|---|---|---|
+| E08a | GroupScheme.KummerCoefficients | 80/200 | `e981d170` |
+| E08b | GroupScheme.KummerCoefficientDescent | 100/200 | `98541874` |
+| E08c | GroupScheme.KummerRefinement | 98/200 | `34d498c7` |
+| E08d | GroupScheme.ContinuousKummerParameter | 59/200 | `9ed4ee34` |
+| E08e | GroupScheme.KummerRootClass | 107/200 | `c8f6a422` |
+| E08f | GroupScheme.ContinuousKummerClass | 123/200 | `e6d55b34` |
+| E08g | GroupScheme.AlgebraicClosureKummer | 49/200 | `2a6d75ac` |
+| E09a | GaloisRepresentation.Extensions.CharacterLines | 92/200 | `ac19c728` |
+| E09b | GaloisRepresentation.Extensions.CharacterBasis | 105/200 | `b4b33ec5` |
+| E09d | GroupScheme.KummerUnitTransport | 147/200 | `565f428e` |
+| E09e | GaloisRepresentation.Extensions.LiftBasisTransport | 91/200 | `ae133e37` |
+
+E08 constructs the actual root-coefficient embedding into the finite Galois
+cocycle field, proves equivariance and refinement compatibility, and uses
+finite Hilbert 90 to recover a parameter for every continuous root cocycle.
+`rootCocycle_equivalent_iff` proves that equality of the independent power
+classes is exactly a change of splitting. `continuousKummerEquiv` is the
+resulting bijection when L/K is Galois, n is nonzero, and L contains nth
+roots of all base units. `algebraicClosureKummerEquiv` supplies those roots
+for perfect K, including characteristic zero, with no root-existence input.
+The general imperfect-field separable-closure specialization is not proved.
+This remains the explicit E06 quotient, not a derived-continuous-H1 comparison.
+
+E09a/b construct the character-line Hom coordinate equivalence, cancellation
+of simultaneous twists, inertia invariance for an unramified twist, and
+transport of continuous classes through discrete equivariant coefficient
+equivalences. E09e connects the transport to E04's actual lift construction;
+rescaling the sub-line basis by a and quotient lift by b multiplies the
+cocycle by b/a. E09d proves Kummer compatibility with invertible cyclic
+coefficient scaling and preservation/reflection of unit membership on
+continuous classes. Its unit predicate uses the proved equivalence and the
+independently defined valuation-unit subgroup.
+
+**E09c remains a gate.** No arbitrary finite coefficient-field line has been
+identified with the cyclic root module. To transport the unit *subspace*
+over arbitrary residual k, construct the prime-field cyclotomic coefficient
+identification and the scalar-extension comparison for cocycles/classes,
+then prove stability of the extended unit subspace. Cyclic powers do not
+supply that theorem. E1 also still needs an independent peu-ramification
+definition and its comparison. No Serre-weight evaluation, arbitrary-p
+Raynaud classification, or lifting assembly is claimed by W12.
+
+Validation evidence (local, untracked): `Scratch/LiftsW12/check.py` verifies
+caps, source scope, sorted unique FLT.lean imports, clean logs and axiom sets.
+Run `python3 Scratch/LiftsW12/check.py` to recheck the source and recorded logs;
+to rebuild a leaf, run `LEAN_NUM_THREADS=2 lake build MODULE`, then
+`LEAN_NUM_THREADS=2 lake exe runLinter MODULE` for that module only, and
+`lake env lean Scratch/LiftsW12/<ModuleName>Axioms.lean` with the same thread limit.
+Logs are `{Coefficients,Descent,Refinement,Parameter,Root,Class,Closure,Lines,
+Basis,Transport,LiftBasis}-{build,lint,axioms}.log`. Extra-axioms.log checks the
+root action and displays the two comparison signatures. No whole-library
+build or lint was run. Existing Lean proof files were not changed.
+
+The final-goal audit (`LEAN_NUM_THREADS=2 lake env lean
+Scratch/LiftsW12/GoalAxioms.lean`, existing compiled theorem) still reports
+`[propext, sorryAx, Classical.choice, Quot.sound]` for lifts and its adapter,
+and `[Mazur_statement, propext, sorryAx, Classical.choice, Quot.sound]` for
+`PNat.pow_add_pow_ne_pow`. See Goal-axioms.log. W12 proves foundations;
+it does not remove the admitted lifting theorem from the final dependency graph.
+
 ## W10 current gate map — checked 2026-10-02 UTC
 
 This section supersedes readiness labels in the historical audit below and in
@@ -187,6 +408,49 @@ and hardlyRamifiedLifting. `PNat.pow_add_pow_ne_pow` still has
 `[Mazur_statement, propext, sorryAx, Classical.choice, Quot.sound]`.
 Evidence: `Scratch/LiftsW11/Goal-axioms.log`; no final-goal dependency was
 removed by these foundation leaves.
+
+## W12 source match and bounded E08/E09 split (initial contracts)
+
+Checked 2026-10-03 against the local Mathlib revision recorded above and
+W11's modules. This split is committed before implementation. Each cap
+includes headers and imports; status here is readiness, not completion.
+
+The coefficient group is `Additive (rootsOfUnity n L)` with its discrete
+topology and natural Galois action. Require `NeZero n` for finite descent
+and `IsGalois K L` throughout. A comparison onto **all** power classes
+requires every base-field unit to have an nth root in L; in the eventual
+separable-closure specialization the standard sufficient hypothesis is n invertible in K. We must
+prove that specialization, or retain the explicit root-existence hypothesis;
+we must not assert it for a general Galois extension or inseparable roots.
+
+| Leaf / new module | Statement and source match | Dependencies | Cap |
+|---|---|---|---|
+| E08a / GroupScheme/KummerCoefficients | Natural additive root action, finite discrete coefficients and continuous orbit maps. RootsOfUnity.Basic: restrictRootsOfUnity, coe_injective, finite instance; FLT/Mathlib/FieldTheory/Galois/Infinite: algebraic discrete continuity; ContinuousSMulDiscrete.isOpen_smul_eq. | READY | 200 |
+| E08b / GroupScheme/KummerCoefficientDescent | Embed every root coefficient into E07b's actual finite fixed field, prove injectivity and equivariance, and map the descended cocycle into field units. IntermediateField.mem_fixedField_iff, mem_cocycleAction_ker, restrictNormalHom_surjective. | E08a | 200 |
+| E08c / GroupScheme/KummerRefinement | Root ratios commute with a field embedding and restriction of automorphisms; compare parameters and root choices by division. Normal.Defs: restrictNormal_commutes; KummerCocycle: exists_kummer_parameter. | E08b | 200 |
+| E08d / GroupScheme/ContinuousKummerParameter | Apply finite Hilbert 90 to the embedded cocycle and inflate its nonzero root and parameter to L. KummerCocycle.exists_kummer_parameter; finiteGaloisCocycle_restrict. | E08b/E08c | 200 |
+| E08e / GroupScheme/KummerRootClass | Construct a continuous root-ratio cocycle; show changing roots or multiplying a parameter by an nth power preserves its continuous class. Use open evaluation fibers and E03. | E08a/E08c | 200 |
+| E08f / GroupScheme/ContinuousKummerClass | Descend to E05 power classes, prove injectivity using fixed elements, and surjectivity using E08d. Explicit E06 quotient, with root existence as a visible arithmetic hypothesis. | E08d/E08e | 200 |
+| E09a / GaloisRepresentation/Extensions/CharacterLines | Construct rank-one character actions and their Hom character; simultaneous twists cancel, including unramified twists. Character values are units; inertia triviality is explicit. | READY after E08 | 200 |
+| E09b / GaloisRepresentation/Extensions/CharacterBasis | Coefficient equivalences transport cocycles, splitting changes and continuous classes; compute the two-line basis factor. | E09a | 200 |
+| E09c / GaloisRepresentation/Extensions/OrdinaryTwist | Relate transport to Kummer unit membership where the coefficient identification is available; distinguish prime-field root coefficients from arbitrary residual-field scalars. | E08f/E09b and concrete coefficient identification | 200 |
+
+Additional bounded specializations are source-matched before proof:
+
+| Leaf / new module | Statement and source match | Dependencies | Cap |
+|---|---|---|---|
+| E08g / GroupScheme/AlgebraicClosureKummer | Supply root existence in an algebraically closed Galois extension; specialize to AlgebraicClosure K for perfect K (in particular characteristic zero). IsAlgClosed.exists_pow_nat_eq, PerfectField's algebraic separability instance, IsGalois.mk. | E08f | 200 |
+| E09d / GroupScheme/KummerUnitTransport | Natural powers of parameters and root cocycles agree; unit membership is preserved and reflected for powers invertible modulo n. Subgroup.pow_mem and the nth-power quotient relation. | E08f | 200 |
+| E09e / GaloisRepresentation/Extensions/LiftBasisTransport | Transport E04's actual lift cocycle through a coefficient equivalence, and compute its b/a factor after rescaling both line bases. LiftCocycle_unique/spec and linearity; no ramification classification. | E09b | 200 |
+
+E09d handles cyclic coefficient changes only. It does not provide the
+arbitrary-k coefficient-extension comparison needed by E09c.
+
+E09c is an adapter gate: roots of unity are a cyclic group, not an
+arbitrary finite-field line. Extending coefficients to k and proving the
+unit subspace is stable under k-scalars needs a tensor/cohomology comparison;
+it cannot be assumed or replaced with an arbitrary scalar action on roots.
+E1's independent peu-ramification comparison remains outside this split.
 
 ## Historical baseline and admission (2026-09-30)
 
