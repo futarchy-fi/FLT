@@ -4,7 +4,191 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
-## Checked baseline and admission
+## W10 current gate map — checked 2026-10-02 UTC
+
+This section supersedes readiness labels in the historical audit below and in
+W4/W5. Audited checkout: `ae2d6682` (contains W9's four commits); this is a
+local source check, not a fresh assertion that HEAD equals remote main.
+Checks: `git rev-parse HEAD`; `rg -n 'theorem|lemma|def'` on the modules named
+below; `rg -n 'sorry' FLT/GaloisRepresentation/HardlyRamified/Lift.lean`.
+The exact target remains the displayed `lifts` statement below, including
+its universes, all finite fields k and every odd prime p. Its body is still
+`sorry`. F1–F6 do not construct a global lift.
+
+### Proved inputs and their precise limits
+
+Paths are relative to FLT. The modules, rather than old READY labels, are
+rerunnable evidence. This table records source inspection; W9's build and
+axiom evidence is in its untracked result, and W10 audits its own additions.
+
+| Gate | Proved modules | Limit |
+|---|---|---|
+| Residual oddness, absolute irreducibility | GaloisRepresentation/HardlyRamified/{ResidualOddness,AbsoluteIrreducibility} | Not irreducibility after cyclotomic restriction |
+| GL1–GL4 | HardlyRamified/{PrimeResidueMap,ResidualOddness,LiftPrimeAvoidingP,LiftDomainFree} under GaloisRepresentation | Prime extraction assumes p nonnilpotent; no arithmetic source of that premise |
+| Prime residual coefficients | HardlyRamified/{PrimeResidualAlgebra,PrimeResidualNaturality,LiftDomainResidue} | Requires a supplied finite local deformation ring with the prime residue algebra; no arbitrary-k construction |
+| W4.1–W4.3 | Deformations/RepresentationTheory/{FlatDiscrete,FlatReduction,FlatCofinal} | Cofinality and openness still explicit in the p-power endpoint |
+| W5.1–W5.2 | AbsoluteGaloisGroup/RootCharacter; GroupScheme/KummerCocycle | Kummer result is finite Galois algebra, not continuous extension-class classification |
+| F1–F3 | AbsoluteGaloisGroup/RootCharacter{Independence,Uniformizer,Topology} | Root choices, compatible degrees, continuity and finite image |
+| F4 | AbsoluteGaloisGroup/{RootInertiaTransitivity,FundamentalTame,RootCharacterResidue,FirstRamificationFiltration,FirstRamificationPGroup,WildInertiaProP} | Tame root characters and wild inertia, not classification of two-dimensional representations |
+| Finite tower step | AbsoluteGaloisGroup/{FiniteTameQuotient,FirstRamificationRestriction} | Actual finite first-group restriction is surjective; no longer an assumed hypothesis |
+| F5–F6 | AbsoluteGaloisGroup/{FundamentalCoefficients,FundamentalCyclotomic} | Finite coefficients, Frobenius conjugacy and omegaOne = local modCyclotomic; representation-level transport remains |
+| Unrestricted deformation representability | Deformations/Representable.isCorepresentable_deformationFunctor | Narrow S-lift representability still has a sorry; neither theorem proves dimension or finiteness |
+
+W10 topology validation checked 2026-10-02 23:38 UTC: T1 (44/120 lines),
+T2 (61/250), T3 (44/100) each passed its foreground build, individual
+module linter, and all four new theorems' axiom audits (standard axioms only).
+Rerun the acceptance commands below with modules PadicIdealCofinal,
+PadicIdealOpen and FlatPadic under FLT.Deformations.RepresentationTheory.
+Logs: `Scratch/LiftsW10/{Cofinal,Open,Flat}-{build,lint,axioms}.log`.
+Final-goal audit checked 2026-10-02 23:38 UTC: `lake env lean
+Scratch/LiftsW10/GoalAxioms.lean` (existing compiled final theorem; its source
+unchanged) prints sorryAx for lifts and its adapter, and
+`[Mazur_statement, propext, sorryAx, Classical.choice, Quot.sound]` for
+`PNat.pow_add_pow_ne_pow`. Evidence: `Scratch/LiftsW10/Goal-axioms.log`.
+
+### Remaining leaves and dependencies
+
+All new proof-module caps below include headers/imports. A BLOCKED leaf is
+an adapter contract, **not** a claim that its missing foundation fits in the
+cap. Capitalized names in blocked sketches are proposed independent APIs,
+not existing declarations or permission to introduce conclusion-bearing
+record fields. Large foundation programs are identified after the table;
+they must be split and source-matched before these adapters become ready.
+No bounded complete implementation plan for those programs is certified.
+
+Use the exact `lifts` context for ρ, and write v_p for its rational p-adic
+place. For local sketches τ is rank two over an algebraic closure of the
+residual field. D denotes a constructed local deformation ring with its
+universal representation; it must not be an input assuming lift existence.
+
+| Leaf / proposed new module | Lean statement sketch | Dependencies / status | Cap |
+|---|---|---|---|
+| T1 / Deformations/RepresentationTheory/PadicIdealCofinal | `theorem exists_p_pow_le_of_isOpen (I : Ideal A) (hI : IsOpen (I : Set A)) : ∃ n : ℕ, Ideal.span {(p : A)^n} ≤ I` for any topological Zp-algebra with continuous scalar multiplication | DONE W10 (`3474e339`): norm_p, continuous algebraMap, powers tend to zero. No finite/free/local assumptions needed. | 120 |
+| T2 / Deformations/RepresentationTheory/PadicIdealOpen | `theorem isOpen_span_p_pow (n : ℕ) : IsOpen (Ideal.span {(p : A)^n} : Set A)` for finite free A with Zp-module topology | DONE W10 (`ab6e2d50`): finite basis, open scalar ideals, continuous linear equivalence. This is topology only. | 250 |
+| T3 / Deformations/RepresentationTheory/FlatPadic | `theorem isFlatAt_iff_powers : ρ.IsFlatAt v ↔ ∀ n : ℕ, (ρ.baseChange (A ⧸ Ideal.span {(p : A)^n})).HasFlatProlongationAt v` | DONE W10 (`8f9a51a8`): T1+T2+FlatCofinal. Coefficients as in lifts. | 100 |
+| E1 / GaloisRepresentation/SerreWeight/ExtensionKummer | `theorem ordinary_extension_unit_iff : UnitKummerClass (extensionClass τ) ↔ IsPeuRamifiee τ` | BLOCKED on E08/E09 and an independent ramification comparison. E01–E07b now provide explicit continuous classes and finite Galois descent; the Kummer/ordinary dictionary remains. | 300 |
+| S1 / GaloisRepresentation/SerreWeight/Normalization | `serreWeight_ordinary_peu ... : serreWeight p τ = 2`; separate ordinary-tres value p+1 and niveau-two value 2 | BLOCKED on E1+S0+F; independent complete Serre recipe, including exceptional/scalar cases. | 250 |
+| R1 / GaloisRepresentation/SerreWeight/FiniteFlatOrdinary | `theorem finiteFlat_ordinary_peu (hf : IsFiniteFlatModel τ) (ho : HasOrdinaryInertia τ) (hd : HasCyclotomicDet τ) : IsPeuRamifiee τ` | BLOCKED on R0 ordinary extension/unit classification and E. Neither hf nor peu may be defined by the other. | 300 |
+| R2 / GaloisRepresentation/SerreWeight/FiniteFlatInertia | `theorem finiteFlat_inertia_cases (hf : IsFiniteFlatModel τ) (hd : HasCyclotomicDet τ) : HasOrdinaryInertia τ ∨ HasNiveauTwoInertia p τ` | BLOCKED on R0 with coefficient action, e=1 and F. Rank-two and odd-p hypotheses mandatory. | 300 |
+| S2 / GaloisRepresentation/SerreWeight/FiniteFlat | `theorem finiteFlat_serreWeight_two (hf : IsFiniteFlatModel τ) (hd : HasCyclotomicDet τ) : serreWeight p τ = 2` | BLOCKED on S1+R1+R2. | 200 |
+| S3 / GaloisRepresentation/HardlyRamified/ResidualSerreWeightTwo | `theorem residual_serreWeight_eq_two (hρ : IsHardlyRamified hpodd hV ρ) : serreWeight p ρ = 2` | BLOCKED on S2 and representation/completion/coefficient transport; use FlatDiscrete, hρ.det and F6. | 250 |
+| C1 / GaloisRepresentation/HardlyRamified/CyclotomicRestriction | `theorem cyclotomicRestriction_absIrred (hp17 : 17 ≤ p) (hρirred : ρ.IsIrreducible) (hρ : IsHardlyRamified hpodd hV ρ) : IsAbsolutelyIrreducible (cyclotomicRestriction ρ)` | BLOCKED on S3 and proof of KW I Lemma 6.2(ii), not just numeric exclusion of its weights. | 300 |
+| D1 / Deformations/HardlyRamified/LocalConditions | `theorem local_conditions_representable : (hardlyRamifiedLocalFunctor ρ).IsCorepresentable` | BLOCKED on L: determinant-fixed weight-two crystalline problem at p, fixed quadratic semistable type at 2, and unramified conditions elsewhere. Trace 2 alone is insufficient. | 300 |
+| D2 / Deformations/HardlyRamified/Dimension | `theorem one_le_global_dimension : 1 ≤ ringKrullDim D` | BLOCKED on D1 and G: arithmetic Selmer presentation/duality in KW II Prop. 4.5. Abstract representability does not imply it. | 300 |
+| D3 / Deformations/HardlyRamified/Finiteness | `theorem global_module_finite : Module.Finite ℤ_[p] D` | BLOCKED on C1+D1 and M: residual modular seed, auxiliary totally real fields, comparison and KW II Thm. 10.1. | 300 |
+| D4 / Deformations/HardlyRamified/Nonvanishing | `theorem p_not_nilpotent : ¬ IsNilpotent (p : D)` | BLOCKED on D2+D3 plus the Noetherian dimension-zero argument for a finite ring killed by a power of p. Then use GL3, not a new assumed point. | 200 |
+| I1 / GaloisRepresentation/HardlyRamified/CrystallineTorsionModels | `theorem crystalline_torsion_model (hc : IsCrystallineWeightTwo (σ.baseChange E)) (n : ℕ) : (σ.baseChange (O ⧸ Ideal.span {(p : O)^n})).HasFlatProlongationAt v_p` | BLOCKED on H: independent period-module theory and integral Barsotti–Tate comparison for every stable lattice. | 300 |
+| I2 / GaloisRepresentation/HardlyRamified/CrystallineIntegralFlat | `theorem isFlatAt_of_crystallineWeightTwo (hc : IsCrystallineWeightTwo (σ.baseChange E)) : σ.IsFlatAt v_p` | BLOCKED on I1+T3. This is over O; descent to a nonnormal coefficient order is separate. | 150 |
+| I3 / GaloisRepresentation/HardlyRamified/LiftOrderDescent | `theorem order_flat_models (n : ℕ) : (σR.baseChange (R ⧸ Ideal.span {(p : R)^n})).HasFlatProlongationAt v_p` | BLOCKED on I1 and integral model descent from O to the residual-compatible image order R. Flatness does not descend by assertion. | 300 |
+| I4 / GaloisRepresentation/HardlyRamified/LiftDyadicQuotient | `theorem integral_dyadic_quotient : ∃ (π : W →ₗ[R] R), Function.Surjective π ∧ ∃ δ : GaloisRep ℚ_[2] R R, DyadicQuotientEquivariant σ π δ ∧ Unramified δ ∧ ∀ g, δ g * δ g = 1` | BLOCKED on D1's fixed-character semistable type and integral quotient descent. Sketch expands to Defs.isTameAtTwo, including its inertia subgroup. | 300 |
+| A1 / GaloisRepresentation/HardlyRamified/LiftResidualIdentification | `theorem residual_conjugacy : ∃ r : k ⊗[R] W ≃ₗ[k] V, (σ.baseChange k).conj r = ρ` | BLOCKED on D4 and actual universal lift base change to R=D/P; finite/free/local topology, rank-two and residual algebra data must be constructed, not postulated as a package with this equality. | 300 |
+| X1 / GaloisRepresentation/HardlyRamified/LiftFiniteField | `theorem finiteField_coefficient_order : ∃ (R : Type u) ..., Algebra R k ∧ IsScalarTower ℤ_[p] R k` | BLOCKED: arbitrary finite k needs a residue-k coefficient ring (e.g. Witt/unramified coefficients) and residue-preserving D/P; current primeReduction lands only in Fp. Reuse GL4 after constructing D. | 300 |
+| X2 / GaloisRepresentation/HardlyRamified/LiftSmallPrimes | `theorem lifts_small (hp : p < 17) :` exact lifts existential | BLOCKED on a separate source-matched treatment of p=3,5,7,11,13 and any exceptional restriction case. C1's hp17 cannot be silently added to lifts. | 300 |
+| A2 / GaloisRepresentation/HardlyRamified/LiftAssembly | `theorem lifts_from_constructed_deformation :` exact lifts existential | BLOCKED on D1–D4,I3,I4,A1,X1,X2, universe transport. Assemble all four HR fields and actual tensor conjugacy; no extra arithmetic premise in the endpoint. | 300 |
+
+Large missing theory: E (continuous extension classes), S0 (full independent
+Serre weight), R0 (arbitrary-p Raynaud classification), L (local deformation
+rings), G (Selmer presentation/dimension), M (modularity/auxiliary fields and
+finiteness), H (integral p-adic Hodge comparison). These are **not ready leaf
+proofs**. The rows above cap only eventual adapters; dispatching any foundation
+requires another split into concrete, independently meaningful statements.
+Searches find many Raynaud-named order-three modules and a PoitouTate API;
+those names do not establish the arbitrary-p R0 or the required G theorem.
+
+Dependency spine: F + E + S0 + R0 → S3 → C1; C1 + L + G + M → D4;
+D4 + H + I3 + I4 + A1 + X1 + X2 → A2. T1–T3 discharge only the topology
+premises in I2/I3; they do not manufacture torsion models or remove sorryAx.
+For the weaker FLT-only route, retain the original Frey contract (k=Fp,
+p≥17), omit X1/X2, and later rewire Assembly; this would bypass, **not prove**,
+the full `lifts` declaration. No such rewiring is authorized in W10.
+
+Rerun readiness searches:
+```sh
+rg -n 'serreWeight|IsPeuRamifiee|IsCrystalline' FLT .lake/packages/mathlib/Mathlib
+rg -n 'sorry|isCorepresentable' FLT/Deformations/Representable.lean
+rg -n 'theorem|lemma' FLT/AbsoluteGaloisGroup/{FundamentalCoefficients,FundamentalCyclotomic,FirstRamificationRestriction}.lean
+rg -n 'theorem|lemma' FLT/Deformations/RepresentationTheory/{FlatDiscrete,FlatReduction,FlatCofinal}.lean
+```
+The first search has no implemented weight/crystalline predicates. Acceptance
+for each W10 proof leaf: foreground `LEAN_NUM_THREADS=2 lake build MODULE`,
+`LEAN_NUM_THREADS=2 lake exe runLinter MODULE` individually, and every new
+declaration's `#print axioms` restricted to propext, Classical.choice,
+Quot.sound. Keep proof modules ≤ their row's cap; add sorted FLT.lean imports.
+
+## W11 split of program E — continuous extension classes
+
+Source/API check at `19d6ccb3`, 2026-10-02 UTC: mathlib
+`RepresentationTheory/Homological/ContCohomology/LowDegree` implements H0,
+not the H1 dictionary needed here. Its algebraic `GroupCohomology/LowDegree`
+provides `IsCocycle₁` and `IsCoboundary₁`. The existing
+`FLT/GroupScheme/KummerCocycle` proves finite Galois Hilbert-90 statements.
+This split uses explicit continuous cocycles first; it does not identify a
+new quotient with derived continuous cohomology by definition.
+
+Each row is a separate new module, with a total file cap of 200 lines.
+The E0 prefix distinguishes these foundation leaves from adapter E1 above.
+Ready leaves are proved in the displayed dependency order. Mathematical
+source: the crossed-homomorphism description of H1 and changes of a lift
+in an extension; Kummer theory via Hilbert 90. No Serre-weight or Raynaud
+classification is an input or a claimed consequence.
+
+| Leaf / module | Concrete statement and proof route | Dependencies / status | Cap |
+|---|---|---|---|
+| E01 / GaloisRepresentation/Extensions/CocycleAction | For an additive G-module and `IsCocycle₁ c`, construct the affine permutation homomorphism `g ↦ (x ↦ g • x + c g)`; its kernel fixes the original action and kills c. | DONE W11 (`9aec89da`). Uses groupCohomology.IsCocycle₁, additive action laws. | 200 |
+| E02 / GaloisRepresentation/Extensions/FiniteDescent | For finite discrete M, continuous c and continuous orbit maps, construct an open normal N and descended action and cocycle on G/N; prove inflation recovers both and G/N is finite. Use E01's kernel, finite intersections of open fibers, and the first isomorphism theorem. | DONE W11 (`b1b73a90`). Uses E01; no assumed quotient or descent witness. | 200 |
+| E03 / GaloisRepresentation/Extensions/ChangeSplitting | Prove `c'(g)=c(g)+g•a-a` is a cocycle, is continuous for continuous orbit maps, and define an equivalence relation by this formula; transitivity adds the splitting parameters. | DONE W11 (`14f9d412`). Uses elementary additive action laws and topology. | 200 |
+| E04 / GaloisRepresentation/Extensions/LiftCocycle | Given an injective equivariant additive map i:A→V and a vector v fixed modulo i(A), construct the unique cocycle from `i(c(g))=g•v-v`; replacing v by v+i(a) changes it by the E03 coboundary. | DONE W11 (`662c52cb`). Uses E03; explicit range hypothesis expresses quotient invariance, not existence of a representation/lift. | 200 |
+| E05 / GroupScheme/KummerUnitClass | Independently define `Kˣ / (Kˣ)^n` and its subgroup of classes represented by valuation-ring units; prove representative criterion and invariance under multiplying by nth powers. | DONE W11 (`d6408497`). Uses QuotientGroup, powMonoidHom and existing exists_unit_factor_iff. | 200 |
+| E06 / GaloisRepresentation/Extensions/ContinuousClass | Form the quotient of continuous cocycles by E03 and prove equality iff change of splitting, plus inflation injectivity for a surjective quotient map with descended action. | DONE W11 (`35d2bb96`). E02/E03 APIs matched; explicit quotient and inflation injectivity proved. No derived-functor comparison asserted. | 200 |
+| E07a / AbsoluteGaloisGroup/OpenNormalFixedField | For an open normal N in Gal(L/K), with L/K Galois, construct its finite Galois fixed field, the quotient-group equivalence, and its restriction compatibility. | DONE W11 (`5f818f98`). Uses source match: InfiniteGalois.fixingSubgroup_fixedField, isOpen_iff_finite, normalAutEquivQuotient. | 200 |
+| E07b / AbsoluteGaloisGroup/CocycleFiniteGalois | Apply E07a to E02's affine kernel, transport the descended action and cocycle to the actual finite Galois group, and prove inflation recovers the original action and cocycle. | DONE W11 (`3b5d4bac`). Uses E02/E07a; generic additive finite coefficients. Roots-of-unity identification remains in E08. | 200 |
+| E08 / GroupScheme/ContinuousKummerClass | For roots-of-unity coefficients, construct a bijection between E06 continuous classes and E05 power classes using E07b and finite Hilbert 90; prove independence of finite extension and root. | BLOCKED on E06/E07b and separate refinement transport lemmas; split again if those exceed a leaf. | 200 |
+| E09 / GaloisRepresentation/Extensions/OrdinaryTwist | Transport E04 extension classes through an unramified character twist and changes of bases of sub/quotient lines, proving independence of the E05 unit predicate. | BLOCKED on concrete rank-one character/Hom-coefficient API and E08. | 200 |
+
+At the initial split E06–E09 were contracts. E06 became ready from E02/E03;
+E07a/b became ready after the explicit Krull API source match above.
+E08/E09 remain contracts, not implemented APIs. In particular E08 requires
+surjectivity, injectivity and compatibility with roots of unity in positive
+and mixed characteristic under the correct invertibility assumptions;
+finite additive descent alone does not supply any of them. E1 remains
+blocked until the independent ramification definition and these bridges
+are available. All arithmetic hypotheses must remain visible.
+
+Acceptance for each ready leaf: foreground `LEAN_NUM_THREADS=2 lake build
+MODULE`, then `LEAN_NUM_THREADS=2 lake exe runLinter MODULE` individually;
+`#print axioms` for every new theorem must use only propext,
+Classical.choice and Quot.sound. Sorted FLT.lean imports only; no existing
+Lean proof module edits. Validation and resulting commits are recorded in
+`LIFTS_W11_RESULT.md` outside the tracked proof/document tree.
+
+### W11 acceptance — checked 2026-10-03 00:11 UTC
+
+E01–E06 and E07a/b are implemented: eight new modules, 664 total lines,
+58–126 lines per module against each 200-line cap. Each passed a foreground
+`LEAN_NUM_THREADS=2 lake build MODULE` and its own `lake exe runLinter MODULE`.
+All 37 named theorems and all other new definitions/abbreviations (62 named
+declarations total) were axiom-audited; only propext, Classical.choice and
+Quot.sound occur. No existing Lean module changed except FLT.lean imports.
+Checks/logs: `python3 Scratch/LiftsW11/check.py`; module-specific
+`{Action,Descent,Splitting,Lift,Units,Class,Fixed,Galois}-{build,lint,axioms}.log`
+and `Abbrev-axioms.log` in that scratch directory. These are local untracked
+validation artifacts, not files required by downstream imports.
+
+Finite descent now constructs the open normal subgroup, quotient action,
+continuous quotient cocycle, finite Galois fixed field and restriction
+identities. The independent unit subgroup lives in Kˣ/(Kˣ)^n. No theorem
+identifies these units with finite-flat models or peu-ramified extensions.
+E08/E09 remain blocked bridges; their caps describe eventual adapters, not
+a certified bounded proof of the missing root-coefficient or twist theory.
+
+Goal audit: `LEAN_NUM_THREADS=2 lake env lean Scratch/LiftsW11/GoalAxioms.lean`
+(exited 0, existing compiled final theorem) still prints sorryAx for lifts
+and hardlyRamifiedLifting. `PNat.pow_add_pow_ne_pow` still has
+`[Mazur_statement, propext, sorryAx, Classical.choice, Quot.sound]`.
+Evidence: `Scratch/LiftsW11/Goal-axioms.log`; no final-goal dependency was
+removed by these foundation leaves.
+
+## Historical baseline and admission (2026-09-30)
 
 At task start, checked 2026-09-30 UTC: HEAD = GitHub `main` =
 `c557fcd66261f7de888076c086a7eb28df6539af`; `origin/main` agrees.
@@ -113,7 +297,7 @@ above are explicit gates; this ledger does not certify a complete matched proof.
 Do not obtain an auxiliary-ramified lift and silently call it hardly ramified.
 Compatible-family source/hypothesis work stays in LF0; no duplicate queue here.
 
-## Ordered dispatch queue
+## Historical dispatch queue (GL1–GL4 now proved)
 
 All paths below are **new proposed modules**, under `FLT/GaloisRepresentation/HardlyRamified/`.
 Caps include headers/imports/proofs. GL1–GL3 are independently ready; they prove
