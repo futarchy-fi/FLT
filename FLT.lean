@@ -1770,6 +1770,7 @@ public import FLT.Mazur.DRFiberClassification
 public import FLT.Mazur.DirectImageInjectives
 public import FLT.Mazur.DisjointClosedCoproduct
 public import FLT.Mazur.DisjointStructureCohomology
+public import FLT.Mazur.DivisorCanonicalComposition
 public import FLT.Mazur.DivisorCanonicalOperations
 public import FLT.Mazur.DivisorCanonicalSection
 public import FLT.Mazur.DivisorInvertibleSheaf
@@ -1854,6 +1855,7 @@ public import FLT.Mazur.ModulePresheafTensorPullback
 public import FLT.Mazur.ModulePullbackRestrictionPasting
 public import FLT.Mazur.ModulePullbackTrivializationCoherence
 public import FLT.Mazur.ModulePullbackUnitCoherence
+public import FLT.Mazur.ModuleSectionMap
 public import FLT.Mazur.ModuleSectionRegularity
 public import FLT.Mazur.ModuleSheafDual
 public import FLT.Mazur.ModuleSheafDualInternalHom
@@ -1878,6 +1880,7 @@ public import FLT.Mazur.ModuleSheafificationTensor
 public import FLT.Mazur.ModuleStalkExact
 public import FLT.Mazur.ModuleSubobjectCoverEquality
 public import FLT.Mazur.ModuleTensorPowerSection
+public import FLT.Mazur.ModuleTensorPowerSectionInduction
 public import FLT.Mazur.ModuleTensorPullbackRestriction
 public import FLT.Mazur.ModuleUnitCocyclePullback
 public import FLT.Mazur.MultiplicativeGroupDimension
@@ -1956,6 +1959,7 @@ public import FLT.Mazur.PolygonAtlasCocone
 public import FLT.Mazur.PolygonAtlasSmoothLocus
 public import FLT.Mazur.PolygonBoundaryDivisor
 public import FLT.Mazur.PolygonBranchDifferenceSheaf
+public import FLT.Mazur.PolygonCanonicalSection
 public import FLT.Mazur.PolygonChartScaling
 public import FLT.Mazur.PolygonClassifiedFamily
 public import FLT.Mazur.PolygonCoconeComparison
