@@ -1893,31 +1893,3 @@ F04 period rings and p-adic comparison remain large missing theory; general
 reducible-residual and p=3 compatible-family existence also remain.
 The family admission is not discharged. `FAMILY_W24_DONE.md` is the full
 untracked handoff; no push is performed.
-
-## W28 F04 action and period-ring gates (split before implementation)
-
-Each new module is capped at 150 complete source lines. Work in this order:
-
-1. `ComplexGaloisAction`: extend spectral-norm-preserving algebraic Galois
-   automorphisms to ring automorphisms of the actual C_p; prove action laws.
-2. `ComplexGaloisContinuity`: derive algebraic orbit continuity from open
-   stabilizers, then joint continuity on C_p from density and isometry.
-3. `ComplexIntegerGalois`: restrict the actual action to O_C; prove joint
-   continuity and the inclusion comparison.
-4. `ComplexTiltGalois`: induce actions on O_C/(p) and its perfection, with
-   coordinate formulas and action laws.
-5. `ComplexSharpEquivariance`: prove sharp commutes with the actual action
-   using uniqueness of the multiplicative inverse-Frobenius lift.
-6. `ComplexThetaEquivariance`: induce the Witt action and prove theta
-   equivariance, retaining the actual maps.
-7. Principal theta-kernel generator, followed by DVR/filtration structure:
-   inspect the available proof API and split further before implementing.
-   Localization at all hypothetical generators is not an existence proof.
-8. General-prime character classification/reducible-residual route follows
-   these F04 gates; split a concrete arithmetic leaf before implementing.
-
-F07–F15 (potential modularity, geometric existence, common coefficients,
-attached representations, Brauer and effective descent, general original
-member packaging) remain large missing theory. Do not start them without a
-bounded ready leaf. No new field may assume a target conclusion. The original
-family admission is outside the permitted module-edit scope.
