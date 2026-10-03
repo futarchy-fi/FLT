@@ -298,6 +298,7 @@ public import FLT.GaloisRepresentation.Automorphic
 public import FLT.GaloisRepresentation.Cyclotomic
 public import FLT.GaloisRepresentation.Extensions.ChangeSplitting
 public import FLT.GaloisRepresentation.Extensions.CharacterBasis
+public import FLT.GaloisRepresentation.Extensions.CharacterCoefficients
 public import FLT.GaloisRepresentation.Extensions.CharacterLines
 public import FLT.GaloisRepresentation.Extensions.CocycleAction
 public import FLT.GaloisRepresentation.Extensions.ContinuousClass
