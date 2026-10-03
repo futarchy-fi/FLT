@@ -188,6 +188,38 @@ and hardlyRamifiedLifting. `PNat.pow_add_pow_ne_pow` still has
 Evidence: `Scratch/LiftsW11/Goal-axioms.log`; no final-goal dependency was
 removed by these foundation leaves.
 
+## W12 source match and bounded E08/E09 split
+
+Checked 2026-10-03 against the local Mathlib revision recorded above and
+W11's modules. This split is committed before implementation. Each cap
+includes headers and imports; status here is readiness, not completion.
+
+The coefficient group is `Additive (rootsOfUnity n L)` with its discrete
+topology and natural Galois action. Require `NeZero n` for finite descent
+and `IsGalois K L` throughout. A comparison onto **all** power classes
+requires every base-field unit to have an nth root in L; in the eventual
+separable-closure specialization this needs n invertible in K. We must
+prove that specialization, or retain the explicit root-existence hypothesis;
+we must not assert it for a general Galois extension or inseparable roots.
+
+| Leaf / new module | Statement and source match | Dependencies | Cap |
+|---|---|---|---|
+| E08a / GroupScheme/KummerCoefficients | Natural additive root action, finite discrete coefficients and continuous orbit maps. RootsOfUnity.Basic: restrictRootsOfUnity, coe_injective, finite instance; KrullTopology: ContinuousSMulDiscrete.isOpen_smul_eq. | READY | 200 |
+| E08b / GroupScheme/KummerCoefficientDescent | Embed every root coefficient into E07b's actual finite fixed field, prove injectivity and equivariance, and map the descended cocycle into field units. IntermediateField.mem_fixedField_iff, mem_cocycleAction_ker, restrictNormalHom_surjective. | E08a | 200 |
+| E08c / GroupScheme/KummerRefinement | Root ratios commute with a field embedding and restriction of automorphisms; compare parameters and root choices by division. Normal.Defs: restrictNormal_commutes; KummerCocycle: exists_kummer_parameter. | E08b | 200 |
+| E08d / GroupScheme/ContinuousKummerParameter | Apply finite Hilbert 90 to the embedded cocycle and inflate its nonzero root and parameter to L. KummerCocycle.exists_kummer_parameter; finiteGaloisCocycle_restrict. | E08b/E08c | 200 |
+| E08e / GroupScheme/KummerRootClass | Construct a continuous root-ratio cocycle; show changing roots or multiplying a parameter by an nth power preserves its continuous class. Use open evaluation fibers and E03. | E08a/E08c | 200 |
+| E08f / GroupScheme/ContinuousKummerClass | Descend to E05 power classes, prove injectivity using fixed elements, and surjectivity using E08d. Explicit E06 quotient, with root existence as a visible arithmetic hypothesis. | E08d/E08e | 200 |
+| E09a / GaloisRepresentation/Extensions/CharacterLines | Construct rank-one character actions and their Hom character; simultaneous twists cancel, including unramified twists. Character values are units; inertia triviality is explicit. | READY after E08 | 200 |
+| E09b / GaloisRepresentation/Extensions/CharacterBasis | Coefficient equivalences transport cocycles, splitting changes and continuous classes; compute the two-line basis factor. | E09a | 200 |
+| E09c / GaloisRepresentation/Extensions/OrdinaryTwist | Relate transport to Kummer unit membership where the coefficient identification is available; distinguish prime-field root coefficients from arbitrary residual-field scalars. | E08f/E09b and concrete coefficient identification | 200 |
+
+E09c is an adapter gate: roots of unity are a cyclic group, not an
+arbitrary finite-field line. Extending coefficients to k and proving the
+unit subspace is stable under k-scalars needs a tensor/cohomology comparison;
+it cannot be assumed or replaced with an arbitrary scalar action on roots.
+E1's independent peu-ramification comparison remains outside this split.
+
 ## Historical baseline and admission (2026-09-30)
 
 At task start, checked 2026-09-30 UTC: HEAD = GitHub `main` =
