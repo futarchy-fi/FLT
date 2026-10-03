@@ -898,6 +898,7 @@ public import FLT.LocalClassFieldTheory.UnramifiedDegreeLimit
 public import FLT.LocalClassFieldTheory.UnramifiedDiagram
 public import FLT.LocalClassFieldTheory.UnramifiedEmbeddings
 public import FLT.LocalClassFieldTheory.UnramifiedExistence
+public import FLT.LocalClassFieldTheory.UnramifiedFrobeniusGenerator
 public import FLT.LocalClassFieldTheory.UnramifiedGaloisExistence
 public import FLT.LocalClassFieldTheory.UnramifiedGaloisLimit
 public import FLT.LocalClassFieldTheory.UnramifiedInertiaConverse
