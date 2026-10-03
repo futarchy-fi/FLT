@@ -602,3 +602,23 @@ unit property is installed as model data.
 C5p3e is subsequent arithmetic work: fundamental constants are p times
 units and digit constants are units. C5p4 and C5v1–C5v3 retain their earlier
 obligations; C5p3d alone does not close them.
+
+W15 C5p3e initial arithmetic refinement (each ≤150 lines):
+`RaynaudUniversalConvolutionAlgebra` realizes the explicit constant in the
+additive monoid algebra of F; `RaynaudCharacterConstantBaseChange` proves
+coefficient-ring functoriality; `RaynaudCharacterPrimeDivisibility` proves
+that the p-fold constant is divisible by p using characteristic-p
+nilpotence. These are prerequisites, not the p-times-a-unit assertion.
+The remaining arithmetic leaves must prove the quotient by p is a unit
+and treat mixed digit constants before C5p4 can use them.
+
+W15 C5p3d checked 2026-10-03: the six new modules pass foreground builds
+and individual sequential lints. `W15_AXIOMS.lean` audits all 22 declarations
+against `propext`, `Classical.choice`, and `Quot.sound` only.
+`FF.character_power_pairing_universal` identifies the actual paired-power
+scalar with `CharacterAverage.constant χ (χ ^ n) n`, an explicit iteration
+of finite differences involving only finite-field addition and characters.
+`FF.exists_universal_character_parameter_product` gives both actual power
+coefficients and their universal product. The proof uses the actual
+addition-by-convolution law, not an assumed parameter identity. This
+repeated-character endpoint does not yet cover mixed digit products.

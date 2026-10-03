@@ -736,14 +736,18 @@ public import FLT.GroupScheme.RaynaudQuotientFiberFreeness
 public import FLT.GroupScheme.RaynaudQuotientFlatness
 public import FLT.GroupScheme.RaynaudQuotientFunctoriality
 public import FLT.GroupScheme.RaynaudQuotientSpecialFiber
+public import FLT.GroupScheme.RaynaudRankOneConvolution
+public import FLT.GroupScheme.RaynaudRankOneProjector
 public import FLT.GroupScheme.RaynaudRankThreeClassification
 public import FLT.GroupScheme.RaynaudRankThreeExtension
+public import FLT.GroupScheme.RaynaudReducedScalarAverage
 public import FLT.GroupScheme.RaynaudRelativeResidue
 public import FLT.GroupScheme.RaynaudResidueClosure
 public import FLT.GroupScheme.RaynaudRigidity
 public import FLT.GroupScheme.RaynaudRootReduction
 public import FLT.GroupScheme.RaynaudRootStage
 public import FLT.GroupScheme.RaynaudScalarAction
+public import FLT.GroupScheme.RaynaudScalarConvolution
 public import FLT.GroupScheme.RaynaudScalingValuation
 public import FLT.GroupScheme.RaynaudSplitting
 public import FLT.GroupScheme.RaynaudStageFamily
@@ -754,6 +758,8 @@ public import FLT.GroupScheme.RaynaudStrictHenselian
 public import FLT.GroupScheme.RaynaudTorsionFiltration
 public import FLT.GroupScheme.RaynaudTorsorDescent
 public import FLT.GroupScheme.RaynaudTwoCoordinates
+public import FLT.GroupScheme.RaynaudUniversalCharacterConstant
+public import FLT.GroupScheme.RaynaudUniversalParameterProduct
 public import FLT.GroupScheme.RaynaudUnramifiedKernel
 public import FLT.GroupScheme.RaynaudUnramifiedQuotient
 public import FLT.GroupScheme.RaynaudUnramifiedStage
