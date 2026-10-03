@@ -311,6 +311,7 @@ public import FLT.GaloisRepresentation.Extensions.LiftCocycle
 public import FLT.GaloisRepresentation.Extensions.LinearClassCoordinates
 public import FLT.GaloisRepresentation.Extensions.LinearCoefficientMap
 public import FLT.GaloisRepresentation.Extensions.LinearContinuousClass
+public import FLT.GaloisRepresentation.Extensions.OrdinaryHomCoordinates
 public import FLT.GaloisRepresentation.HardlyRamified.AbsIrredAdapter
 public import FLT.GaloisRepresentation.HardlyRamified.AbsoluteIrreducibility
 public import FLT.GaloisRepresentation.HardlyRamified.AtTwo
