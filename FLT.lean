@@ -454,6 +454,7 @@ public import FLT.GroupScheme.ConstantMuThreeKummerValuations
 public import FLT.GroupScheme.ConstantMuThreeSectionCocycle
 public import FLT.GroupScheme.ConstantMuThreeSplitting
 public import FLT.GroupScheme.ConstantMuThreeTorsion
+public import FLT.GroupScheme.ContinuousKummerClass
 public import FLT.GroupScheme.ContinuousKummerParameter
 public import FLT.GroupScheme.ConvolutionBaseChange
 public import FLT.GroupScheme.CoordinateOrder
