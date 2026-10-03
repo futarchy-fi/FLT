@@ -79,7 +79,19 @@ may carry these conclusions as fields.
 F03/F04 and F07–F11 are **large missing theory**, not ready short proofs.
 An exhaustive elaborated Lean split cannot honestly be certified before
 those APIs exist. F06 is a mathematical statement-scope gap as well.
-W17 first implements ready D1–D5, then records the remaining boundary.
+W17 algebra checkpoint: D1–D5 are implemented in the five modules named above
+under `FLT.Deformations.RepresentationTheory` (59, 52, 61, 73, 41 lines).
+Foreground individual builds and module-only lints pass; all 15 declarations
+in `W17_ALGEBRA_AXIOMS.log` use only the three standard axioms. D4 gives the
+canonical factors and nonzero trace; ratio/norm orders reuse `TameSpectrumDigits`.
+
+D6 is now ready from `CharacterRank.scalar_orbit` and injectivity of
+`FF.characterCoordinates`: prove scalar evaluation, then nonvanishing for
+integral character vectors, then apply to the actual fundamental generator.
+D7 correction: `RaynaudDVRParameterValuation.dvr_valuation_digits` already
+proves the general DVR lemma. The new ≤150-line `RaynaudValuationDigits`
+only applies it to `fundamentalCoefficient_complement`, with p irreducible
+in the actual unramified base. Do not re-prove the abstract digit lemma.
 
 Checked 2026-09-30 against `af51e4ea`; commands at the end reproduce the audit.
 This is a dependency map, not a proof of `mem_isCompatible`.

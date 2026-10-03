@@ -145,6 +145,7 @@ public import FLT.Deformations.RepresentationTheory.CyclotomicInertiaDetection
 public import FLT.Deformations.RepresentationTheory.CyclotomicQuadraticDetection
 public import FLT.Deformations.RepresentationTheory.Etale
 public import FLT.Deformations.RepresentationTheory.FamilyTracePair
+public import FLT.Deformations.RepresentationTheory.FiniteFieldQuadraticSpectrum
 public import FLT.Deformations.RepresentationTheory.Flat
 public import FLT.Deformations.RepresentationTheory.FlatCofinal
 public import FLT.Deformations.RepresentationTheory.FlatDiscrete
@@ -154,14 +155,18 @@ public import FLT.Deformations.RepresentationTheory.Frobenius
 public import FLT.Deformations.RepresentationTheory.GaloisRep
 public import FLT.Deformations.RepresentationTheory.GaloisRepFamily
 public import FLT.Deformations.RepresentationTheory.IntegralClosure
+public import FLT.Deformations.RepresentationTheory.InvariantCharpoly
 public import FLT.Deformations.RepresentationTheory.Irreducible
 public import FLT.Deformations.RepresentationTheory.PGroupInvariants
 public import FLT.Deformations.RepresentationTheory.PadicIdealCofinal
 public import FLT.Deformations.RepresentationTheory.PadicIdealOpen
 public import FLT.Deformations.RepresentationTheory.PermutedSummandsTwist
 public import FLT.Deformations.RepresentationTheory.PrimePowerExact
+public import FLT.Deformations.RepresentationTheory.RankTwoCharpoly
 public import FLT.Deformations.RepresentationTheory.SelfTwistTrace
+public import FLT.Deformations.RepresentationTheory.SimpleScalarDegree
 public import FLT.Deformations.RepresentationTheory.StableLinePair
+public import FLT.Deformations.RepresentationTheory.TameSpectrumCharpoly
 public import FLT.Deformations.RepresentationTheory.TameSpectrumDigits
 public import FLT.Deformations.RepresentationTheory.TameTraceObstruction
 public import FLT.Deformations.RepresentationTheory.ThreeStableLines
