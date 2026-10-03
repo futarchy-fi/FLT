@@ -1050,6 +1050,8 @@ public import FLT.LocalClassFieldTheory.DiscreteFieldUnits
 public import FLT.LocalClassFieldTheory.DiscreteIntegralUnits
 public import FLT.LocalClassFieldTheory.DiscreteOrder
 public import FLT.LocalClassFieldTheory.DiscreteOrderExact
+public import FLT.LocalClassFieldTheory.DvrAdicTopology
+public import FLT.LocalClassFieldTheory.DvrFactorialValuation
 public import FLT.LocalClassFieldTheory.ExactSequenceCardBound
 public import FLT.LocalClassFieldTheory.FieldUnitInvariants
 public import FLT.LocalClassFieldTheory.FilteredComplexDescent
@@ -1066,10 +1068,13 @@ public import FLT.LocalClassFieldTheory.FixedCoefficientBoundary
 public import FLT.LocalClassFieldTheory.FixedCoefficientCochain
 public import FLT.LocalClassFieldTheory.FixedCoefficientDifferential
 public import FLT.LocalClassFieldTheory.Frobenius
+public import FLT.LocalClassFieldTheory.FrobeniusPowers
+public import FLT.LocalClassFieldTheory.FrobeniusRestrictionScale
 public import FLT.LocalClassFieldTheory.FrobeniusTower
 public import FLT.LocalClassFieldTheory.GaloisHomContinuity
 public import FLT.LocalClassFieldTheory.GaloisInflationCoefficients
 public import FLT.LocalClassFieldTheory.GaloisInflationH2
+public import FLT.LocalClassFieldTheory.GaloisKernelContinuousEquiv
 public import FLT.LocalClassFieldTheory.GaloisKernelRestriction
 public import FLT.LocalClassFieldTheory.GaloisKernelTopology
 public import FLT.LocalClassFieldTheory.GaloisTowerCochainDescent
@@ -1082,6 +1087,7 @@ public import FLT.LocalClassFieldTheory.IntegralCoefficientRestriction
 public import FLT.LocalClassFieldTheory.IntegralConnectingCup
 public import FLT.LocalClassFieldTheory.IntegralCupComparison
 public import FLT.LocalClassFieldTheory.IntegralDegreeTwoComparison
+public import FLT.LocalClassFieldTheory.IntegralFrobeniusBaseChange
 public import FLT.LocalClassFieldTheory.IntegralH1Equivalence
 public import FLT.LocalClassFieldTheory.IntegralH2Characters
 public import FLT.LocalClassFieldTheory.IntegralLowDegreeComparison
@@ -1101,8 +1107,13 @@ public import FLT.LocalClassFieldTheory.KernelCocycleDescent
 public import FLT.LocalClassFieldTheory.KernelCocycleNormalization
 public import FLT.LocalClassFieldTheory.KernelMixedCocycle
 public import FLT.LocalClassFieldTheory.KernelSectionCorrection
+public import FLT.LocalClassFieldTheory.LocalDegreeFormula
+public import FLT.LocalClassFieldTheory.LocalExpRadius
 public import FLT.LocalClassFieldTheory.NormCongruence
 public import FLT.LocalClassFieldTheory.NormFirstOrder
+public import FLT.LocalClassFieldTheory.NormalLatticeDenominators
+public import FLT.LocalClassFieldTheory.NormalLatticeOpen
+public import FLT.LocalClassFieldTheory.NormalLatticePower
 public import FLT.LocalClassFieldTheory.NormalizedOrder
 public import FLT.LocalClassFieldTheory.NormalizedTwoCocycles
 public import FLT.LocalClassFieldTheory.OrderHomScale
@@ -1118,6 +1129,9 @@ public import FLT.LocalClassFieldTheory.RationalCoefficientSequence
 public import FLT.LocalClassFieldTheory.RationalIntegralConnectingIso
 public import FLT.LocalClassFieldTheory.RationalTorsion
 public import FLT.LocalClassFieldTheory.RationalUnramifiedCharacters
+public import FLT.LocalClassFieldTheory.RelativeDegreeTorsionClass
+public import FLT.LocalClassFieldTheory.RelativeLowerBound
+public import FLT.LocalClassFieldTheory.RelativeRestrictionKernel
 public import FLT.LocalClassFieldTheory.ResidueAction
 public import FLT.LocalClassFieldTheory.ResidueActionFaithful
 public import FLT.LocalClassFieldTheory.ResidueActionSurjective
@@ -1134,8 +1148,10 @@ public import FLT.LocalClassFieldTheory.UnitNormSurjectivity
 public import FLT.LocalClassFieldTheory.UnramifiedBaseChange
 public import FLT.LocalClassFieldTheory.UnramifiedBaseChangeCohomology
 public import FLT.LocalClassFieldTheory.UnramifiedBaseChangeEmbedding
+public import FLT.LocalClassFieldTheory.UnramifiedBaseChangeInflationSquare
 public import FLT.LocalClassFieldTheory.UnramifiedBaseChangeIntegral
 public import FLT.LocalClassFieldTheory.UnramifiedBaseChangeOrder
+public import FLT.LocalClassFieldTheory.UnramifiedBaseChangeOrderCohomology
 public import FLT.LocalClassFieldTheory.UnramifiedBaseChangeRestriction
 public import FLT.LocalClassFieldTheory.UnramifiedCarryNormalization
 public import FLT.LocalClassFieldTheory.UnramifiedCarryTorsion
@@ -1151,7 +1167,9 @@ public import FLT.LocalClassFieldTheory.UnramifiedDegreeLimit
 public import FLT.LocalClassFieldTheory.UnramifiedDiagram
 public import FLT.LocalClassFieldTheory.UnramifiedEmbeddings
 public import FLT.LocalClassFieldTheory.UnramifiedExistence
+public import FLT.LocalClassFieldTheory.UnramifiedFiniteStageBaseChange
 public import FLT.LocalClassFieldTheory.UnramifiedFrobeniusCharacters
+public import FLT.LocalClassFieldTheory.UnramifiedFrobeniusEmbedding
 public import FLT.LocalClassFieldTheory.UnramifiedFrobeniusGenerator
 public import FLT.LocalClassFieldTheory.UnramifiedGaloisExistence
 public import FLT.LocalClassFieldTheory.UnramifiedGaloisLimit
@@ -1161,7 +1179,10 @@ public import FLT.LocalClassFieldTheory.UnramifiedInflatedCarries
 public import FLT.LocalClassFieldTheory.UnramifiedInflationInjective
 public import FLT.LocalClassFieldTheory.UnramifiedIntegralH2
 public import FLT.LocalClassFieldTheory.UnramifiedIntegralH2Additive
+public import FLT.LocalClassFieldTheory.UnramifiedIntegralH2Restriction
 public import FLT.LocalClassFieldTheory.UnramifiedIntegralModel
+public import FLT.LocalClassFieldTheory.UnramifiedInvariantRestriction
+public import FLT.LocalClassFieldTheory.UnramifiedKernelInflation
 public import FLT.LocalClassFieldTheory.UnramifiedLocalInertia
 public import FLT.LocalClassFieldTheory.UnramifiedMultiplicativeInflation
 public import FLT.LocalClassFieldTheory.UnramifiedMultiplicativeInvariant
@@ -1191,6 +1212,7 @@ public import FLT.LocalClassFieldTheory.UnramifiedUniqueness
 public import FLT.LocalClassFieldTheory.UnramifiedUnitAcyclic
 public import FLT.LocalClassFieldTheory.UnramifiedUnitCyclicExact
 public import FLT.LocalClassFieldTheory.UnramifiedUnitHilbert90
+public import FLT.LocalClassFieldTheory.ValuationSeriesComparison
 public import FLT.Mathlib.Algebra.Algebra.Bilinear
 public import FLT.Mathlib.Algebra.Algebra.Equiv
 public import FLT.Mathlib.Algebra.Algebra.Hom
