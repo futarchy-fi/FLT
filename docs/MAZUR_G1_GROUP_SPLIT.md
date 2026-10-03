@@ -5,8 +5,8 @@ exactness and cyclic linear exactness. They do not construct a polygon or
 identify that linear complex with sheaf cohomology. This split develops the
 relative group candidate and isolates its comparison with the smooth locus.
 The historical G1–G4 contracts below retain their original caps.
-The W14 frontier after G5 uses new leaves of at most 240 lines.
-The signatures are implementation contracts, not yet typechecked declarations.
+The W15 evidence at the end supersedes the historical status tables.
+New leaves are at most 240 lines. Unimplemented signatures remain contracts.
 
 Checked 2026-09-30 19:16 UTC by the following read-only API searches (paths
 below are relative to `.lake/packages/mathlib/Mathlib`, unless prefixed FLT):
@@ -499,3 +499,100 @@ glues G3's two ring maps on that pushout for S=K[T;T⁻¹], proves the base-map
 identity and both endpoint formulas, and packages the result in `Over (Spec K)`.
 U6 remains a separate source-design gate: an open-cover pushout argument does
 not establish base-change preservation of the closed pinching diagram.
+
+## W15 implementation evidence and remaining descent gap
+
+Checked 2026-10-03 02:58 UTC at implementation head `07a99bd9`, relative to
+base `31114b5c`. These results supersede U3/U4/U5/H2/H6's earlier blocked status.
+All module names below have prefix `FLT.Mazur.`.
+
+| Leaf | Module | Lines/cap | Commit | Audited declarations |
+| --- | --- | --- | --- | --- |
+| U3 | `PolygonNodeScalarExtension` | 141/240 | `7b3c5137` | 29 |
+| U4 | `ProjectiveLineProductCharts` | 135/240 | `8c393cef` | 33 |
+| H2a | `PolygonNormalizationAlgebra` | 108/180 | `199a6694` | 11 |
+| H2c | `OneGonNormalizationPullback` | 99/240 | `5c3a05e3` | 6 |
+| H2d1 | `OneGonNormalizationFinite` | 60/120 | `eaf57a64` | 4 |
+| H6a1 | `ProjectiveLineStandardCharts` | 165/200 | `41040c8e` | 39 |
+| H6a2 | `ProjectiveLineStandardOverlap` | 141/240 | `8bb365f7` | 19 |
+| H6b | `ProjectiveLineStandardComparison` | 64/180 | `097ab2ac` | 15 |
+| H2b1 | `PolygonCyclicNormalizationRanges` | 96/200 | `6e6d025e` | 7 |
+| H2b2 | `PolygonCyclicNormalizationPullback` | 139/240 | `a9413d27` | 25 |
+| H2d2a | `PolygonCyclicNormalizationFinite` | 104/160 | `412da268` | 14 |
+| H2d2b | `PolygonNormalizationFinite` | 89/160 | `27a7f6f8` | 8 |
+| U5a | `ProjectiveLineProductOverlap` | 143/220 | `0e06745c` | 19 |
+| U5b | `ProjectiveLineUniversalAction` | 161/240 | `07a99bd9` | 32 |
+
+Each module passed `LEAN_NUM_THREADS=2 lake build MODULE` and
+`LEAN_NUM_THREADS=2 lake exe runLinter MODULE` sequentially in the foreground.
+The combined audit imports these 14 modules and uses the origin-module loop
+shown in W14's recipe, with these 14 names in `modules`. All 261 declarations,
+including generated helpers, use only `propext`, `Classical.choice`, `Quot.sound`.
+Local evidence: `GOAL_MAZUR_W15_AXIOM_AUDIT.lean` and
+`GOAL_MAZUR_W15_ALL_AXIOMS.txt` (untracked, outside the library).
+
+Read-only checks: `git diff --check 31114b5c..HEAD` passed; the new-module line
+counts meet every declared cap; source scans found no `sorry`, `admit`, `axiom`
+or `native_decide`. `FLT.lean` imports are sorted and match all library paths.
+The diff contains new Lean modules, imports and authorized docs only. No
+whole-library build or lint ran, and nothing was pushed.
+
+H2 proves finite surjective normalization for every positive polygon, including
+the one-gon, and for any supplied cocone with the specified pinching pushout.
+H6 identifies the glued line with `ProjectiveSpace.space K (Fin 2)`, preserving
+charts, endpoints and the base map. U5 constructs
+`MultiplicativeGroupScheme.gm K ⊗ Over.mk (ProjectiveLine.toBase K) ⟶
+Over.mk (ProjectiveLine.toBase K)` with both affine formulas and fixed endpoint
+sections. U5 does not yet descend this morphism to the polygon.
+
+### U6: checked statement, unproved base-change descent
+
+`W15_U6_CONTRACT.lean` checks the target below for `g : S ⟶ Spec (.of K)`,
+`[Flat g]`, positive n, and a supplied cocone p,q. It checks a proposition's
+type; it contains no proof of that proposition.
+
+```lean
+IsPushout
+  ((Over.pullback g).map (PolygonPinching.toComponents K n hn))
+  ((Over.pullback g).map (PolygonPinching.toNodes K n))
+  ((Over.pullback g).map p) ((Over.pullback g).map q)
+```
+
+The missing implication is from the original pinching pushout to this one.
+The current arbitrary-target proofs in `NodePinchingDescent` and
+`OneGonPinchingDescent` require `[Field K]`. Their neighborhood construction
+in `PinchingNeighborhoods.normalizedAt_eval` divides by a nonzero endpoint
+value. Over K[T;T⁻¹], a nonzero value such as T−1 need not be invertible.
+Replacing K by the parameter ring therefore does not instantiate those proofs.
+The type checks and API evidence are in `GOAL_MAZUR_W15_U6_CONTRACT.txt`.
+
+U3 supplies the node scalar-extension isomorphism. The one-gon equalizer
+`B R = {p : R[X] | p.eval 0 = p.eval 1}` still needs its own scalar-extension
+comparison. After that, arbitrary-target descent must be proved locally over
+the parameter base, then transported through the global pinching atlas.
+The one-gon's chosen affine open need not be preserved by universal scaling;
+its node chart cannot be treated as the split node algebra A.
+
+A further source/API check found only flat-surjective descent in mathlib's
+`AlgebraicGeometry/EffectiveEpi.lean`; it requires flatness of the descending
+morphism. H2's finite normalization does not supply that hypothesis. The
+open-cover pushout in U5 is a different diagram and does not prove U6.
+
+The next proof split is proposed, not released as completed or bounded code:
+
+| Proposed leaf | Required result | Initial cap |
+| --- | --- | --- |
+| U6a | One-gon `S ⊗[R] B R ≃ₐ[S] B S`, with normalization and endpoint formulas | 220 |
+| U6b | Saturated principal neighborhoods after localizing the parameter base, for both pinching charts | 240 |
+| U6c1 / U6c2 | Arbitrary-target affine pinching descent over parameter rings, separately for the node and one-gon | 240 each |
+| U6d | Identify pulled-back atlas diagrams and glue the global pinching pushout, including n=1 | 240 |
+
+Each requires a checked proof design and further splitting if its helpers
+exceed the cap. U7–U12 remain dependent on U6; no polygon action or action-law
+theorem is delivered in W15. H3–H5 and H7–H15, full G1 moduli, G2 arithmetic
+and A1–A5 remain unproved as described above.
+
+The final dependency is unchanged: read-only `rg -n '^axiom Mazur_statement'
+FLT/Assumptions/Mazur.lean` returns line 103; `ExistingInputs.lean:28` uses
+`mazur_W`, and `FermatsLastTheorem.lean:24` uses `mazurTorsionExclusion`.
+This is source evidence, not a new axiom audit of the final FLT theorem.
