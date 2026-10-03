@@ -1177,6 +1177,7 @@ public import FLT.LocalClassFieldTheory.NormalLatticePower
 public import FLT.LocalClassFieldTheory.NormalizedOrder
 public import FLT.LocalClassFieldTheory.NormalizedTwoCocycles
 public import FLT.LocalClassFieldTheory.OneCocycleExtension
+public import FLT.LocalClassFieldTheory.OneCocycleExtensionChange
 public import FLT.LocalClassFieldTheory.OrderHomScale
 public import FLT.LocalClassFieldTheory.PowerClassOrder
 public import FLT.LocalClassFieldTheory.PrincipalAdicLimit
@@ -1209,6 +1210,7 @@ public import FLT.LocalClassFieldTheory.SixTermCard
 public import FLT.LocalClassFieldTheory.SolvableFieldStep
 public import FLT.LocalClassFieldTheory.SolvableNormalStep
 public import FLT.LocalClassFieldTheory.TateCocycleClass
+public import FLT.LocalClassFieldTheory.TateTwoClassOperation
 public import FLT.LocalClassFieldTheory.TateTwoExtension
 public import FLT.LocalClassFieldTheory.TowerRefinementFibers
 public import FLT.LocalClassFieldTheory.TransferChoiceIndependence
