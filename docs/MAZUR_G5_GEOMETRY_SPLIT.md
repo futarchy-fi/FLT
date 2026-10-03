@@ -489,3 +489,8 @@ E4d W11 PolygonCyclicDescent checked 2026-10-03 00:36 UTC: 125/240 lines;
 foreground build, individual runLinter and all-declaration collectAxioms passed
 (GOAL_MAZUR_W11_CYCLIC_AXIOMS.txt, untracked). Only the three allowed axioms
 occur. This module treats n≥2; n=1 global pinching remains open.
+
+E4d W11 PolygonCyclicPushout checked 2026-10-03 00:36 UTC: 117/240 lines;
+foreground build, individual runLinter and all-declaration collectAxioms passed
+(GOAL_MAZUR_W11_CYCLIC_AXIOMS.txt, untracked). Only the three allowed axioms
+occur. This module treats n≥2; n=1 global pinching remains open.
