@@ -1816,3 +1816,80 @@ freshness, sorted imports, edit scope and unchanged `Family.lean`.
 The family theorem still depends on sorryAx; W23 does not close F03/F04 or
 construct a compatible family. Full local evidence and exact scope are in
 `FAMILY_W23_DONE.md`, kept untracked outside FLT as requested.
+
+## W24 next family gates (split before implementation)
+
+Each new module is capped at 150 complete source lines. Dependency order:
+
+1. F03 `PadicPowerCardinality`: calculate the size of the p-power quotient of
+   a finite free p-adic module, retaining the original module and scalar ring.
+2. F03 `TorsionLevelRank`: identify the rank of the actual chosen integral
+   model with its generic point count, and calculate its height from the
+   original coefficient degree and rank-two module.
+3. F03 `PDivisibleSystem`: define finite-flat p-divisible systems using
+   coherent closed inclusions, faithfully flat reductions, actual kernel
+   equations and multiplication identities, with the level-rank condition.
+   These are defining axioms of the object; the HR constructor must prove
+   every axiom from W23 and the cardinality calculation.
+4. F03 `TorsionPDivisible`: assemble the original HR models into that object.
+5. F05 universe transport: first establish bounded module-coordinate transport
+   into Type 0; then investigate coefficient-universe transport separately.
+   Split any coefficient equivalence/HR transport implementation before coding.
+6. F06: inspect reducible residual and p=3 endpoints for a bounded substantive
+   leaf. A trace identity alone never identifies a nonsplit representation
+   with the split member of a compatible family.
+
+F04 period rings and p-adic comparison remain large missing theory; no ready
+bounded leaf is currently supplied. The compatible-family admission stays
+outside the permitted edit scope and is not discharged by object assembly.
+
+W24 kernel refinement (before object assembly, cap 150):
+`IntegralKernelEquations` identifies the kernel of a prescribed closed
+inclusion on coordinate rings with its generic closure ideal. The system's
+exactness field will then use the actual inclusion kernel, not merely an
+abstract isomorphism with a level of the same rank.
+
+W24 F05 coefficient-universe refinement (each cap 150, before implementation):
+`FiniteFlatQuotientUniverses` transports the existing finite-flat quotient
+construction across finite shrunk point modules. `FiniteCoefficientUniverses`
+then preserves flatness for finite coefficient algebras of any universe.
+`OpenPowerUniverses` handles all open ideals, `BaseChangeUniverses` handles
+the other HR clauses, and `PadicOrderUniverses` applies these to the original
+normalization. This avoids replacing the original coefficient ring by an
+unidentified isomorphic copy. Module-coordinate transport is unnecessary if
+these primitives accept the original module universe directly.
+
+W24 F06 bounded residual refinement (each cap 150):
+`TrivialQuotientKernel` computes the invariant kernel rank and determinant
+for an actual rank-two representation with a surjective trivial quotient.
+`ModThreeFiltration` applies the proved sorting quotient and cyclotomic
+determinant to the original residual representation. These retain extensions;
+they do not claim a split family member or p=3 family existence.
+
+W24 F05 stable-lattice refinement (before implementation, caps 150 each):
+`FiniteFlatSubobjectUniverses` transports the existing subobject construction
+through finite shrunk point modules. `SubquotientUniverses` combines it with
+quotients; `LatticeFlatUniverses` applies it to commensurate original lattices.
+`LatticeTransferUniverses` handles determinant, inertia and the existing tame
+quotient transport. `InitialLatticeUniverses` supplies the original integral
+lattice and the HR transfer endpoint. `PadicStableUniverses` specializes to
+the constructed normalization, retaining independent coefficient/module universes.
+
+### W24 validation and remaining boundary
+
+Checked 2026-10-03T13:23:48.054619+00:00: 18 new modules pass individual foreground
+builds and individual module linters. `W24_AXIOMS.lean` checks all 35 new
+named declarations with only propext, Classical.choice and Quot.sound.
+`W24_FINAL_CHECKS.py` checks caps (maximum 111/150), source/object/log
+freshness, import order, edit scope and unchanged `Family.lean`.
+
+F03 now has an actual finite-flat p-divisible system over the rational local
+base, with rank `p^(n * (finrank ℤ_[p] R * 2))` and actual inclusion-kernel
+equations. Its constructor remains at Type 0; fppf colimits are not supplied.
+F05 normalization, generic identification and supplied stable lattices now
+retain arbitrary original coefficient and module universes. F06 supplies the
+actual mod-three cyclotomic-by-trivial filtration, without a split complement.
+F04 period rings and p-adic comparison remain large missing theory; general
+reducible-residual and p=3 compatible-family existence also remain.
+The family admission is not discharged. `FAMILY_W24_DONE.md` is the full
+untracked handoff; no push is performed.
