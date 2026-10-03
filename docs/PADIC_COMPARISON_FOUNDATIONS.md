@@ -825,3 +825,43 @@ exceeding a cap. This table is a proof plan, not a claim of completion.
 | ComplexInvariantOrder | Use the proved nonzero twist vanishing to force invariant order zero, then subtract the fixed residue. | Both analytic endpoints; no endpoint assumptions |
 
 The comparison contracts in the W32 table remain after these leaves.
+
+### W33 implementation boundary
+
+The new approximation entry points are
+`complexGalois_fixed_algebraic_approximation` and
+`complexTwist_fixed_algebraic_approximation`. They use the original action,
+actual algebraic approximants and a bound uniform over all automorphisms.
+`padicGalois_exists_scalar_approximation` constructs a genuine Q_p scalar,
+but its error bound is `norm(card(orbit(a)))⁻¹ * r`. The actual orbit is
+proved finite from the minimal polynomial, and its average is descended
+using the algebraic (not completed) Galois fixed-field theorem.
+
+`complexGalois_fixed_mem_range_of_uniform_estimate` proves only the
+completion reduction: it explicitly assumes `C > 0` and, for every
+algebraic `a` and `r > 0`, a scalar `b` with distance at most `C*r` whenever
+all conjugate displacements are at most `r`. The constant must be
+independent of `a`. This arithmetic estimate remains unproved. The
+closedness theorem `complexScalar_isClosed` supplies the final limit step;
+it does not establish density of scalar approximants by itself.
+
+The actual integer filtration now consists of the submodules `t^n B_dR+`
+inside the existing field. `fractionalPrincipalNext_comap` identifies
+the actual next level with the ideal `(t)` in coefficient coordinates.
+`complexDeRhamIntegerGradedCoordinate` therefore identifies each actual
+integer quotient with C_p. The product formula
+`fractionalPrincipalGradedMul_mk` proves that its multiplication comes
+from multiplication in the original field, including negative degrees.
+The scalar action agrees with original theta; the linear equivalence
+and finrank theorem give dimension one over the actual C_p. The algebra
+laws retain the required degree reindexing. The original field action
+descends and has weight n, is semilinear over C_p and preserves products.
+These declarations can be checked by building their named modules,
+running their individual linters and printing their axioms; the W33
+handoff records the checked snapshot, commands and evidence logs.
+
+Still open: the uniform arithmetic Ax estimate, actual cyclotomic tower
+trace bounds and completed twist vanishing. Consequently invariant-order
+control, the reverse period fixed-field inclusion and the comparison
+contracts are not proved by W33. No uniform bound or completed invariant
+vanishing has been installed as an instance, structure field or axiom.
