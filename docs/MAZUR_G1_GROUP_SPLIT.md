@@ -618,3 +618,16 @@ are p(0)q(1). These common values avoid the chosen base prime, but need not
 be units. Localized equalizers must consequently evaluate into the base
 localized at that common value. This is a proof design awaiting compilation;
 no size or completion claim for U6b–U12 is made here.
+
+U6b is split before library implementation. Two complete prototypes passed
+`lake env lean`: `W16_NEIGHBORHOODS_PROOF.lean` and
+`W16_EQUALIZER_PROOF.lean`. Release U6b1 `RelativePinchingNeighborhoods`
+(cap 120) for the arbitrary-prime neighborhoods above. Release U6b2
+`RingEqualizerLocalization` (cap 150) for any two ring maps f,g and an element
+s of their equalizer: the equalizer of the localized maps to D[1/f(s)] is
+C[1/s]'s subring canonically isomorphic to (eqLocus f g)[1/s]. Equality of
+localized endpoint values only implies equality after multiplication by
+f(s)^k; the proof multiplies the numerator by s^k and increases its denominator
+exponent. It handles zero divisors and arbitrary commutative rings.
+Specializing to the node and one-gon, and constructing/gluing scheme morphisms,
+remain separate leaves. These two results alone do not establish U6c or U6d.
