@@ -27,6 +27,7 @@ hypotheses (satisfied in the intended profinite/discrete setting).
 | E1c3a / Extensions.ContinuousH1Equiv | Descend E1c3 to the splitting quotient and prove bijectivity; explicit representative formula. | E1c3 | 200 |
 | E1c4 / Extensions.ContinuousH2Comparison | Map explicit continuous 2-cocycles to actual H², prove surjectivity and zero iff an actual continuous coboundary exists. `cohomologyIsoQuot`, `cokerπ_surjective`. | E1c2 | 200 |
 | E1c5 / Extensions.HomogeneousCup | Compute the actual homogeneous (1,1) cup under evaluation as the explicit cup; descend the computation to H². `cupCochain_coe`, `cupPair_succ_apply`, `cokerDescBilinear_apply`. | E1c3/c4 | 200 |
+| E1c5a / Extensions.ContinuousCupComparison | Descend the homogeneous cup formula to actual H² via the constructed quotient models. | E1c5 | 200 |
 | E1c6 / Extensions.PeuCohomologyComparison | Express E1b's predicate as vanishing of the actual continuous cohomology cup against inertia-trivial characters. | E1c5 | 200 |
 | E1c7 / SerreWeight.LocalTateComparison | Specialize the genuine local invariant and prove compatibility with Kummer and local Artin evaluation, with Frobenius/sign normalization recorded. | BLOCKED: local CFT, invariant and local Tate duality foundations absent | 200 adapter only |
 | E1d1 / SerreWeight.ExtensionKummer | Deduce prime-field annihilator = valuation-unit classes from E1c7 and the valuation quotient; prove both inclusions. | BLOCKED E1c7 | 200 adapter only |
