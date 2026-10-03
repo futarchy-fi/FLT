@@ -1013,3 +1013,79 @@ over that field, with the same Q_p binomial norm;
 `PadicRelativeAxEstimate` performs strong degree induction and yields a
 uniform approximation by elements of the actual intermediate field.
 This is the algebraic input for kernel descent, not an assumption of it.
+
+W35 completion split (caps 150): `ComplexRelativeAxDescent` proves that
+fixed vectors for all automorphisms over an actual intermediate field
+belong to the closure of that field's actual image. `PadicCyclotomicKernel`
+identifies the character kernel with automorphisms fixing the cyclotomic
+union. `ComplexCyclotomicKernelDescent` specializes the proved relative
+estimate and closure theorem to this kernel. Completed trace extensions,
+equivariance and convergence are separate leaves after these.
+
+W35 trace-extension split (caps 150): `ComplexCyclotomicClosure` realizes
+the completed union as a closed subspace of the original C_p and proves
+density of its algebraic union. `ComplexCyclotomicProjection` extends the
+actual bounded traces to that space with the same uniform bound.
+`ComplexCyclotomicProjectionConvergence` proves convergence to the original
+vector by density, eventual stabilization on finite levels and the uniform
+bound. Equivariance and finite-level range are separate arithmetic leaves.
+
+W35 vanishing split (caps 150): `ComplexCyclotomicGalois` restricts the
+original continuous linear action to the actual closure;
+`ComplexCyclotomicTraceInvariant` proves invariance under automorphisms
+fixing a target level by normalized-trace naturality and density.
+`PadicCyclotomicTailAutomorphism` constructs automorphisms with prescribed
+root action using the proved relative minimal polynomial;
+`PadicCyclotomicTailCharacter` detects every nonzero integer weight at
+every target level. `ComplexNonzeroTwistVanishing` combines these with
+kernel descent and projection convergence. Actual graded-piece invariants
+are a final separate leaf after this analytic endpoint.
+
+W35 full-equivariance refinement (caps 150): `NormalizedTraceEquivariance`
+proves normalized-trace naturality under compatible base and extension
+field automorphisms from the minimal-polynomial formula.
+`ComplexCyclotomicProjectionEquivariance` applies it to the actual normal
+cyclotomic levels, then extends full Galois equivariance by density.
+`ComplexIntegerGradedInvariants` proves nonzero-degree vanishing and unique
+Q_p scalar coordinates in degree zero for the existing integer quotients.
+
+### W35 implementation boundary
+
+The W34 analytic gaps through integer graded-piece invariants are now
+implemented in new modules. Recheck the named endpoints with foreground
+module builds, individual module lint, and `#print axioms`; the W35 handoff
+records the checked snapshot and logs.
+
+- `padicCyclotomicProjection_union_norm_le` bounds every positive-level
+  normalized projection on the actual algebraic union by `p * norm(x)`,
+  independently of both source and target levels. Relative binomial minimal
+  polynomials give the exact root-power trace formula. The exact norm of
+  zeta-1 and the discrete Q_p value group prove orthogonality and the
+  coefficient bound; integer-polynomial expansions finish the trace bound.
+- `padicRelativeAx_exists_scalar` proves the uniform `p^2` approximation
+  estimate over any actual intermediate field. It uses actual relative
+  Hasse roots and relative automorphisms, with the original binomial budget.
+  `complexCyclotomic_kernel_fixed_iff` identifies the original C_p kernel
+  invariants with the actual closure of the cyclotomic union.
+- `complexCyclotomicProjection` extends the actual traces to this closure;
+  `complexCyclotomicProjection_norm_le`,
+  `complexCyclotomicProjection_equivariant`, and
+  `complexCyclotomicProjection_tendsto` prove the uniform bound, full Galois
+  equivariance, and convergence to the original vector. Relative target
+  automorphisms leave the corresponding projection unchanged.
+- `padicCyclotomic_tail_character_zpow_ne_one` constructs a detector for
+  every nonzero integer weight at every finite target level. Its prescribed
+  root action has exponent `1+p^(n+1)`; sufficiently high finite residues
+  distinguish each positive power from one. Negative weights follow in the
+  units group. No character-surjectivity conclusion is assumed.
+- `complexTwist_fixed_eq_zero` proves actual C_p twist-invariant vanishing
+  for every nonzero integral weight. The actual integer graded quotient
+  consequently has zero invariants away from degree zero, and unique
+  original Q_p scalar coordinates at degree zero, in
+  `ComplexIntegerGradedInvariants`.
+
+Still downstream: invariant order zero in the original B_dR field,
+fixed-residue scalar subtraction and the reverse B_dR fixed-field inclusion;
+then the explicit comparison contracts, coefficient decomposition and both
+graded ranks. The general family theorem is unchanged. These new analytic
+and graded endpoints do not by themselves remove its `sorryAx` dependency.
