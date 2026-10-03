@@ -1098,3 +1098,35 @@ of the actual `Over.pullback g` functor. Generic lax-monoidal naturality and
 coherence transport each proved law. `unit_act` and `assoc_act` hold for any
 scheme morphism g, without a flatness assumption or pushout-preservation
 hypothesis. These are equations for the pulled-back action and group.
+
+`W19_TRANSLATION_PROOF.lean` compiles before release. U12a
+`PolygonActionTranslation`, cap 120, specializes the actual universal action
+at a unit and split component. U8a identifies projective-line specialization;
+U7's component formula and epic normalization prove `translation_eq`: the
+translation is exactly `polygonScaling ≫ polygonRotation`. Node and component
+formulas follow for every field and positive n. This alone does not identify
+the irreducible-component graph of a base-changed polygon.
+
+`W19_H3_PROOF.lean` compiles before release. H3
+`PolygonStructureInclusion`, cap 100, constructs the canonical morphism from
+the polygon structure module to the actual normalization direct image. Its
+map on each open is exactly `p.left.app`. Finite surjective normalization and
+the reduced atlas, transported through `polygonIso`, give schematic dominance
+and injectivity on every open; the sheaf morphism is monic. This does not yet
+prove exactness at the normalization direct image.
+
+`W19_H4_PROOF.lean` compiles before release. H4
+`PolygonBranchDifferenceSheaf`, cap 120, selects the zero and adjacent infinity
+branches over the actual node coproduct. The cocone equations put both maps
+over the polygon; direct-image composition gives restriction morphisms of
+module sheaves. Their difference is oriented zero minus adjacent infinity,
+and `inclusion_difference` proves the composite with H3 vanishes.
+No epimorphism, kernel equality, or H5 short exactness is assumed or claimed.
+
+`W19_IMAGES_PROOF.lean` compiles before release. U12b
+`PolygonTranslationImages`, cap 100, identifies specialization as an
+automorphism and proves exact set-image equations for normalization components
+and nodes, including an explicit one-component theorem. Surjectivity of the
+projective scaling automorphism removes its parameter from the component
+image. Identifying these images with geometric irreducible components after
+base change remains a separate U12 obligation.
