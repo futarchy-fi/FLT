@@ -941,6 +941,7 @@ public import FLT.KnownIn1980s.RepresentationTheory.OddAbsIrred
 public import FLT.KnownIn1980s.Ribet_Lemma.Defs
 public import FLT.KnownIn1980s.Ribet_Lemma.Proofs
 public import FLT.LocalClassFieldTheory.AdicFractionFieldComplete
+public import FLT.LocalClassFieldTheory.AdicGaloisContinuity
 public import FLT.LocalClassFieldTheory.AdicIntegerSpace
 public import FLT.LocalClassFieldTheory.AdicIntegerTopology
 public import FLT.LocalClassFieldTheory.AdicSeriesEvaluation
@@ -1038,6 +1039,9 @@ public import FLT.LocalClassFieldTheory.KernelMixedCocycle
 public import FLT.LocalClassFieldTheory.KernelSectionCorrection
 public import FLT.LocalClassFieldTheory.LocalDegreeFormula
 public import FLT.LocalClassFieldTheory.LocalExpEquivalence
+public import FLT.LocalClassFieldTheory.LocalExpEquivariance
+public import FLT.LocalClassFieldTheory.LocalExpHomeomorph
+public import FLT.LocalClassFieldTheory.LocalExpIsometry
 public import FLT.LocalClassFieldTheory.LocalExpLogInverse
 public import FLT.LocalClassFieldTheory.LocalExpMultiplicative
 public import FLT.LocalClassFieldTheory.LocalExpRadius
