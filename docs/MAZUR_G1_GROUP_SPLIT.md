@@ -1594,3 +1594,35 @@ The complete root prototypes `W22_PROJECTIVE_TOPOLOGY_PROOF.lean` and
 H15 as a whole remains unfinished: component classification, pure dimension,
 connectedness, completed-stalk nodes, and the field-extension comparison are
 separate proof obligations. No cap for those obligations is claimed yet.
+
+H15c `PolygonComponentImages` has a cap of 140 lines after the complete
+`W22_COMPONENT_IMAGES_PROOF.lean` prototype compiled. Properness over the
+separated target makes each projective-line image closed. Continuity and
+density identify that image with the Laurent-open closure. H15b proves it
+is an irreducible component; finite normalization surjectivity covers the
+polygon, and maximality identifies every irreducible component with one
+of these images. This proves classification as a set; distinctness and
+pure dimension are separate leaves.
+
+H15d `PolygonConnected` has a cap of 100 lines after the complete
+`W22_CONNECTED_PROOF.lean` prototype compiled. The cocone equations
+identify zero of component i and infinity of component i+1 with the same
+node. Indexing component images by natural numbers modulo n gives a
+chain of connected intersecting sets covering the polygon, including n=1.
+
+H15e `PolygonPureDimension` has a cap of 100 lines after the complete
+`W22_PURE_DIMENSION_PROOF.lean` prototype compiled. The Laurent ring is
+a nonzero finite-type flat algebra over K[X], giving dimension at least
+one by the existing going-down theorem. Its affine-line open immersion
+gives the upper bound. The Laurent chart embeds in its component image;
+H15c's classification and the polygon's total dimension then give the
+actual `PureDimensionOne` contract. Explicit localization instances avoid
+a typeclass-search timeout; no heartbeat limit was raised.
+
+H15f/U12c `PolygonComponentDistinct` has a cap of 100 lines after the
+complete `W22_DISTINCT_PROOF.lean` prototype compiled. Distinct Laurent
+opens remain disjoint under the cocone isomorphism; the closure of one
+is disjoint from the other open. Since each open is nonempty, their
+closures differ. H15c then gives an actual `Fin n` equivalence with the
+irreducible components. This shared prerequisite does not prove geometric
+U12's node incidence or scalar-extension compatibility.

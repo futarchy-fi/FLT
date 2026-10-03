@@ -1541,6 +1541,9 @@ public import FLT.Mazur.PolygonBranchDifferenceSheaf
 public import FLT.Mazur.PolygonChartScaling
 public import FLT.Mazur.PolygonCoconeComparison
 public import FLT.Mazur.PolygonCohomologyIncidence
+public import FLT.Mazur.PolygonComponentDistinct
+public import FLT.Mazur.PolygonComponentImages
+public import FLT.Mazur.PolygonConnected
 public import FLT.Mazur.PolygonConstantSections
 public import FLT.Mazur.PolygonCyclicAtlas
 public import FLT.Mazur.PolygonCyclicCocone
@@ -1578,6 +1581,7 @@ public import FLT.Mazur.PolygonPinchingFlatBaseChange
 public import FLT.Mazur.PolygonPinchingTensor
 public import FLT.Mazur.PolygonProductAtlas
 public import FLT.Mazur.PolygonProper
+public import FLT.Mazur.PolygonPureDimension
 public import FLT.Mazur.PolygonScalingNaturality
 public import FLT.Mazur.PolygonSeparated
 public import FLT.Mazur.PolygonSmoothLocus
