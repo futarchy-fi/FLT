@@ -248,18 +248,18 @@ PolygonAtlas.isPushout (K : Type u) [Field K] (n : ℕ) [NeZero n] (hn : 0 < n) 
 ```
 
 The proof transports both cases through `cyclicIso`/`oneGonIso`, using their
-normalization and node compatibility. E5 is now ready; G5 and Mazur G1 remain.
+normalization and node compatibility. E5a is implemented below; G5 and Mazur G1 remain.
 
 ## E5 — specified cocone comparison and G5, split into capped leaves
 
 The former 400-line proposal separates the cocone/finite-presentation bridge
 from the geometric smooth-locus identification. Each cap includes helpers:
 
-- **E5a — PolygonCoconeComparison, cap 160, ready.** Construct `polygonIso`
-  between the exact specified cocones, prove normalization/node compatibility,
-  prove local finite presentation of both actual atlases by their open covers,
-  and transport it to `polygon_lfp` for the arbitrary pushout C.
-- **E5b — PolygonAtlasSmoothLocus, cap 240, follows E5a.** Compute the smooth
+- **E5a — PolygonCoconeComparison, implemented at 100/160.** Constructs `polygonIso`
+  between the exact specified cocones, proves normalization/node compatibility,
+  proves local finite presentation of both actual atlases by their open covers,
+  and transports it to `polygon_lfp` for the arbitrary pushout C.
+- **E5b — PolygonAtlasSmoothLocus, cap 240, ready.** Compute the smooth
   locus of each actual atlas using E3 and open-immersion naturality. Identify
   it with the disjoint full Laurent component opens; retain both n=2 overlaps
   and the smooth point z=1 in n=1. Prove the component maps and their ranges.
@@ -286,7 +286,7 @@ Require the component formula, with `torusToComponent` induced by
 Then transport the commutative group through this specified iso.
 Source: DR II.1.1 and II.1.12(a). Dependencies: E3/E4 and G4.
 `IsPushout.isoIsPushout` compares the actual cocones; smooth-locus naturality
-transports E3 along the proved open atlas. E4 is complete; E5a is the next ready leaf.
+transports E3 along the proved open atlas. E4 and E5a are complete; E5b is the next ready leaf.
 
 ## API evidence and execution
 
@@ -310,6 +310,9 @@ new declarations with collectAxioms; allow only propext/Classical.choice/Quot.so
 C-sort FLT.lean public imports; commit each leaf locally; never push. If any
 cap fails, commit proved material and record exact remainder and smaller caps
 in untracked BLOCKED.md outside FLT/. Only this split document is committed prose.
+
+The following dated validation notes record intermediate checkpoints; the
+implemented E4d/E5a status above supersedes their remaining-work notes.
 
 E1 checked 2026-09-30 20:12 UTC: 136/260 lines; foreground module build,
 individual runLinter, and collectAxioms on all 21 module declarations passed.
@@ -503,3 +506,13 @@ passed its foreground build and individual runLinter. The combined audit
 checked all 101 declarations in the four W12 E4d modules, allowing only
 propext, Classical.choice and Quot.sound; evidence is untracked
 GOAL_MAZUR_W12_E4D_AXIOMS.txt. The all-positive-n pushout is complete.
+
+E5a W12 checked 2026-10-03 01:03 UTC: PolygonCoconeComparison (100/160)
+passed its foreground build and individual runLinter. It proves polygonIso,
+both normalization/node formulas in both directions, and polygon_lfp from
+local finite presentation of the actual atlases. The final combined audit
+checked all 117 declarations in all five W12 modules, allowing only propext,
+Classical.choice and Quot.sound; evidence: GOAL_MAZUR_W12_ALL_AXIOMS.txt
+(untracked). All module caps, sorted FLT.lean imports and git diff --check
+passed. E5b, E5c, G5 and Mazur G1 remain; Mazur_statement still occurs at
+FLT/Assumptions/Mazur.lean:103 (source check, no full-goal axiom rebuild).
