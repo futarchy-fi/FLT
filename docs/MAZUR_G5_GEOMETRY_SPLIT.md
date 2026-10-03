@@ -266,7 +266,7 @@ Remaining contracts, not implemented declarations:
 
 - OneGonAffineNormalizationCoordinates, implemented at 217/220: the coordinate
   isomorphisms z=t/(t−1) on D(t−1), and w=(t−1)/t on D(t), with exact overlap formulas.
-- OneGonAffineNormalization, cap 240: glue alpha, prove it is an open
+- OneGonAffineNormalization, implemented at 218/240: glue alpha, prove it is an open
   immersion, its zero/one endpoints are zero/infinity, its puncture is
   `toTorus ≫ overlapLeft ≫ left`, and
   `alpha ≫ OneGonNormalization.normalization = oneBranch ≫ OneGonGluing.node`.
@@ -500,3 +500,9 @@ build and individual runLinter passed for OneGonAffineNormalizationCoordinates
 (217/220). The collectAxioms audit checked all 40 declarations and allowed only
 propext, Classical.choice and Quot.sound; evidence is untracked
 GOAL_MAZUR_W12_COORDINATES_AXIOMS.txt. The global comparison remains next.
+
+E4d W12 affine chart checked 2026-10-03 00:57 UTC: foreground build,
+individual runLinter and collectAxioms passed for OneGonAffineNormalization
+(218/240). It proves alpha is an open immersion, the endpoint/puncture and
+normalization identities, and coverage together with the full Laurent open.
+The combined audit output is GOAL_MAZUR_W12_AFFINE_AXIOMS.txt (untracked).
