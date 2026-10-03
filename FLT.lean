@@ -1037,6 +1037,7 @@ public import FLT.LocalClassFieldTheory.CoinducedCoefficientSequence
 public import FLT.LocalClassFieldTheory.CoinducedNormExact
 public import FLT.LocalClassFieldTheory.CoinducedShapiro
 public import FLT.LocalClassFieldTheory.CoinducedSubgroup
+public import FLT.LocalClassFieldTheory.CoinducedSubgroupShift
 public import FLT.LocalClassFieldTheory.CoinducedTateAcyclic
 public import FLT.LocalClassFieldTheory.CoinducedTateShift
 public import FLT.LocalClassFieldTheory.ConnectingCoefficientNaturality
@@ -1200,6 +1201,7 @@ public import FLT.LocalClassFieldTheory.RationalIntegralConnectingIso
 public import FLT.LocalClassFieldTheory.RationalTorsion
 public import FLT.LocalClassFieldTheory.RationalUnramifiedCharacters
 public import FLT.LocalClassFieldTheory.RelativeDegreeTorsionClass
+public import FLT.LocalClassFieldTheory.RelativeFundamentalExtension
 public import FLT.LocalClassFieldTheory.RelativeFundamentalTateCup
 public import FLT.LocalClassFieldTheory.RelativeLowerBound
 public import FLT.LocalClassFieldTheory.RelativeOrderInduction
@@ -1222,8 +1224,10 @@ public import FLT.LocalClassFieldTheory.TateClassArithmetic
 public import FLT.LocalClassFieldTheory.TateCocycleClass
 public import FLT.LocalClassFieldTheory.TateCupComparison
 public import FLT.LocalClassFieldTheory.TateCupUnit
+public import FLT.LocalClassFieldTheory.TateExactSequence
 public import FLT.LocalClassFieldTheory.TatePositiveCocycleClass
 public import FLT.LocalClassFieldTheory.TateScalarDegreeZero
+public import FLT.LocalClassFieldTheory.TateScalarVanishing
 public import FLT.LocalClassFieldTheory.TateTwoClassOperation
 public import FLT.LocalClassFieldTheory.TateTwoClassZero
 public import FLT.LocalClassFieldTheory.TateTwoExtension
