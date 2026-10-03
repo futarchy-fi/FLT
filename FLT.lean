@@ -1202,6 +1202,7 @@ public import FLT.LocalClassFieldTheory.GaloisKernelContinuousEquiv
 public import FLT.LocalClassFieldTheory.GaloisKernelRestriction
 public import FLT.LocalClassFieldTheory.GaloisKernelTopology
 public import FLT.LocalClassFieldTheory.GaloisTowerCochainDescent
+public import FLT.LocalClassFieldTheory.GroupConnectingRestriction
 public import FLT.LocalClassFieldTheory.HenselianRoots
 public import FLT.LocalClassFieldTheory.HerbrandExact
 public import FLT.LocalClassFieldTheory.InflationBoundaryDescent
@@ -1235,6 +1236,7 @@ public import FLT.LocalClassFieldTheory.IntermediateDvr
 public import FLT.LocalClassFieldTheory.IntermediateDvrAlgebra
 public import FLT.LocalClassFieldTheory.InvariantRestriction
 public import FLT.LocalClassFieldTheory.InvariantStageTransition
+public import FLT.LocalClassFieldTheory.InvariantTwoExtensionInflation
 public import FLT.LocalClassFieldTheory.KernelCocycleDescent
 public import FLT.LocalClassFieldTheory.KernelCocycleNormalization
 public import FLT.LocalClassFieldTheory.KernelMixedCocycle
@@ -1309,6 +1311,7 @@ public import FLT.LocalClassFieldTheory.RelativeFundamentalRestriction
 public import FLT.LocalClassFieldTheory.RelativeFundamentalSubgroup
 public import FLT.LocalClassFieldTheory.RelativeFundamentalTateCup
 public import FLT.LocalClassFieldTheory.RelativeInflationTower
+public import FLT.LocalClassFieldTheory.RelativeInvariantClassInflation
 public import FLT.LocalClassFieldTheory.RelativeLowerBound
 public import FLT.LocalClassFieldTheory.RelativeOrderInduction
 public import FLT.LocalClassFieldTheory.RelativeRestrictionKernel
