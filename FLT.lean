@@ -1351,6 +1351,7 @@ public import FLT.Mazur.RelativeCartierBaseChange
 public import FLT.Mazur.RelativeDirectImageComposition
 public import FLT.Mazur.RelativeDirectImageForgetting
 public import FLT.Mazur.RelativeDirectImageOpenResolution
+public import FLT.Mazur.RelativePinchingDescent
 public import FLT.Mazur.RelativePinchingLocalDescent
 public import FLT.Mazur.RelativePinchingNeighborhoods
 public import FLT.Mazur.RelativeSerreAffineAcyclic
@@ -1361,6 +1362,7 @@ public import FLT.Mazur.RelativeSums
 public import FLT.Mazur.RelativeVeryAmpleLineBundle
 public import FLT.Mazur.RightDerivedDimensionShift
 public import FLT.Mazur.RingEqualizerAwayEndpoint
+public import FLT.Mazur.RingEqualizerDescent
 public import FLT.Mazur.RingEqualizerLocalDescent
 public import FLT.Mazur.RingEqualizerLocalization
 public import FLT.Mazur.ScalarCohomology
