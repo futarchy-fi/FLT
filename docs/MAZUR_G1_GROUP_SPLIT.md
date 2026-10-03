@@ -489,3 +489,13 @@ combines that result with the one-gon result (including its one-component
 coproduct comparison), then transports finite surjectivity to any supplied
 pinching cocone using the existing `polygonIso`. Neither transport introduces
 an assumed finiteness field.
+
+U5 is split before library implementation. U5a `ProjectiveLineProductOverlap`
+(cap 220) identifies `Spec S[T;T⁻¹]` as the cartesian intersection of U4's
+polynomial product charts, for arbitrary commutative K-algebras S. The proof
+uses the basic open of X and the original gluing intersection, then applies
+`BinaryOpenDescent.isPushout`. U5b `ProjectiveLineUniversalAction` (cap 240)
+glues G3's two ring maps on that pushout for S=K[T;T⁻¹], proves the base-map
+identity and both endpoint formulas, and packages the result in `Over (Spec K)`.
+U6 remains a separate source-design gate: an open-cover pushout argument does
+not establish base-change preservation of the closed pinching diagram.
