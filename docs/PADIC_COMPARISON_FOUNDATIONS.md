@@ -211,3 +211,78 @@ theorem under surjectivity of Frobenius on the residue quotient. First prove
 `IsAdicComplete (Ideal.span {(p : 𝓞_ℂ_[p])}) 𝓞_ℂ_[p]` and the required
 Frobenius surjectivity for the actual integer ring. Galois continuity,
 the principal kernel and the period-ring comparison remain separate leaves.
+
+## W27 R5b refinement (2026-10-03)
+
+Each leaf below has a 150-line complete-file cap. The model comparison is
+proved over a general characteristic-zero local field, so it applies directly
+to the rational-place completion; no equality with Q_p is assumed.
+
+| Leaf | Obligation |
+|---|---|
+| SplitKummerGeneralModel | Split Kummer levels over a ring and a characteristic-zero field, with actual geometric points. |
+| SplitKummerGeneralPointLaw | Addition and field action for those points. |
+| PrimitiveRootCoordinates | Additive coordinates on roots of unity from a chosen primitive root. |
+| SplitKummerResidue | Additive residue coordinates on the actual geometric points, with cyclotomic action. |
+| CyclotomicTrivialReduction | Actual p-power quotient-tensor coordinates and their action. |
+| CyclotomicCharacterNaturality | Compatibility of the p-adic character with field embeddings and local restriction. |
+| CyclotomicTrivialFlat | Apply the comparisons at the rational completion and the proved open-ideal cofinality criterion. |
+
+R5e follows only after these local model obligations. Existing sorted-input
+trace results must be transported, without invoking the admitted three_adic.
+
+R5e universe transport is split before implementation (150 lines each):
+`FlatCoefficientQuotientUniverses` transports actual quotient models through
+a surjective coefficient map; `ThreeAdicTraceUniverses` shrinks the finite
+coefficient algebra and frames the original module, applies the proved
+sorted-input trace theorem, and descends trace/determinant through the
+injective coefficient map. `ThreeAdicPolynomialUniverses` computes the
+rank-two characteristic polynomial and its coefficient-extension/framing law.
+`CyclotomicTrivialHardlyRamified` assembles the standard integral HR member
+from the separately proved determinant, ramification, flatness and tame quotient.
+
+R5f–g are split into `PadicOrderEmbedding` (construct an actual continuous
+embedding into the algebraic closure), `RankTwoFraming` (frame scalar
+extensions), `ThreeAdicFamily` (dependent family retaining the original at
+three), `ThreeAdicFamilyCompatibility` (unramifiedness and common polynomial),
+and `ThreeAdicFamilyIntegralModels` (integral witnesses and original-member
+equality, with further universe splitting if needed). Each has cap 150.
+
+`ThreeAdicFamily` is split further: `StandardFamilyMember` provides the
+framed split member at each prime; the dependent switch then has short
+separate equations at and away from three. No semisimplification replaces
+the original member in that switch.
+
+`PadicClosureScalars` is an additional 150-line prerequisite: prove the
+canonical p-adic integer action on the algebraic closure is continuous by
+factoring through Q_p. This is needed by both actual coefficient embedding
+and standard-member scalar extension.
+
+R5g universe packaging is split before implementation: `ULiftCoefficientTensor`
+compares an actual tensor extension to independent coefficient/module lifts;
+`ULiftHardlyRamified` transports the four clauses using the already proved
+surjective-coefficient and coordinate-change results; `ULiftGenericRecovery`
+proves cancellation of those lifts after coefficient extension. These feed
+the family integral-witness package. All complete files are capped at 150 lines.
+
+`StandardIntegralUniverses` packages the lifted standard witnesses before
+`ThreeAdicFamilyIntegralModels` selects the original witness at three and
+those standard witnesses elsewhere. The final p=3 family statement is a new
+theorem; the existing general-prime admitted theorem is left unchanged.
+
+## W27 F04 period prerequisites
+
+The live API also contains `Mathlib/RingTheory/Perfectoid/BDeRham.lean`.
+It defines `fontaineThetaInvertP`, `BDeRhamPlus` and `BDeRham`; it does not
+prove the principal-kernel theorem, DVR structure, or comparison theorem.
+Reuse these constructors rather than duplicating them. New capped leaves:
+
+| Leaf (cap 150) | Required result |
+|---|---|
+| ComplexIntegerAdic | Identify p-power ideals with norm balls in O_C; deduce actual p-adic completeness. |
+| ComplexIntegerFrobenius | Construct p-th roots in O_C using algebraic closedness of C_p; prove mod-p Frobenius surjective. |
+| ComplexFontaineTheta | Instantiate sharp and theta on the actual tilt and prove theta surjective. |
+| ComplexDeRhamRings | Instantiate the existing localized theta and completion constructors. No principal kernel or comparison claim. |
+
+P1b's continuous Galois action, P3's principal kernel and D2's comparison
+still require independent proofs; these constructions alone do not discharge them.
