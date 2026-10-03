@@ -961,6 +961,8 @@ public import FLT.LocalClassFieldTheory.FiniteCharacteristicZeroCohomology
 public import FLT.LocalClassFieldTheory.FiniteContinuousComparison
 public import FLT.LocalClassFieldTheory.FiniteCyclicHerbrand
 public import FLT.LocalClassFieldTheory.FiniteHomologyCard
+public import FLT.LocalClassFieldTheory.FiniteInflationCocycleDescent
+public import FLT.LocalClassFieldTheory.FiniteInflationRestrictionExact
 public import FLT.LocalClassFieldTheory.FiniteKernelCocycleCorrection
 public import FLT.LocalClassFieldTheory.FixedCoefficientBoundary
 public import FLT.LocalClassFieldTheory.FixedCoefficientCochain
@@ -969,6 +971,7 @@ public import FLT.LocalClassFieldTheory.Frobenius
 public import FLT.LocalClassFieldTheory.FrobeniusTower
 public import FLT.LocalClassFieldTheory.GaloisInflationCoefficients
 public import FLT.LocalClassFieldTheory.GaloisInflationH2
+public import FLT.LocalClassFieldTheory.GaloisKernelRestriction
 public import FLT.LocalClassFieldTheory.GaloisKernelTopology
 public import FLT.LocalClassFieldTheory.HenselianRoots
 public import FLT.LocalClassFieldTheory.InflationBoundaryDescent
@@ -988,11 +991,13 @@ public import FLT.LocalClassFieldTheory.IntegralNormalLatticeAction
 public import FLT.LocalClassFieldTheory.IntegralNormalLatticeCohomology
 public import FLT.LocalClassFieldTheory.IntegralNormalLatticeIntCohomology
 public import FLT.LocalClassFieldTheory.IntegralRationalVanishing
+public import FLT.LocalClassFieldTheory.IntegralTwoClassEquality
 public import FLT.LocalClassFieldTheory.IntegralUnitDescent
 public import FLT.LocalClassFieldTheory.IntegralUnitInvariantCohomology
 public import FLT.LocalClassFieldTheory.IntegralUnitInvariants
 public import FLT.LocalClassFieldTheory.IntegralUnitRepresentation
 public import FLT.LocalClassFieldTheory.InvariantStageTransition
+public import FLT.LocalClassFieldTheory.KernelCocycleDescent
 public import FLT.LocalClassFieldTheory.KernelCocycleNormalization
 public import FLT.LocalClassFieldTheory.KernelMixedCocycle
 public import FLT.LocalClassFieldTheory.KernelSectionCorrection
