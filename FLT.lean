@@ -558,6 +558,7 @@ public import FLT.GroupScheme.IntegralSimpleSubobject
 public import FLT.GroupScheme.IntegralSubquotientExtension
 public import FLT.GroupScheme.InvariantDerivation
 public import FLT.GroupScheme.KummerAlgebra
+public import FLT.GroupScheme.KummerCoefficients
 public import FLT.GroupScheme.KummerCocycle
 public import FLT.GroupScheme.KummerComultiplication
 public import FLT.GroupScheme.KummerHopf
