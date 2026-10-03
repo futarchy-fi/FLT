@@ -858,6 +858,8 @@ public import FLT.LocalClassFieldTheory.ContinuousStageDiagram
 public import FLT.LocalClassFieldTheory.CyclicCarry
 public import FLT.LocalClassFieldTheory.CyclicCarryConnecting
 public import FLT.LocalClassFieldTheory.DescendedCochain
+public import FLT.LocalClassFieldTheory.DiscreteOrder
+public import FLT.LocalClassFieldTheory.DiscreteOrderExact
 public import FLT.LocalClassFieldTheory.FilteredComplexDescent
 public import FLT.LocalClassFieldTheory.FilteredHomologyDescent
 public import FLT.LocalClassFieldTheory.FiniteCharacteristicZeroCohomology
@@ -927,8 +929,12 @@ public import FLT.LocalClassFieldTheory.UnramifiedIntegralH2Additive
 public import FLT.LocalClassFieldTheory.UnramifiedIntegralModel
 public import FLT.LocalClassFieldTheory.UnramifiedLocalInertia
 public import FLT.LocalClassFieldTheory.UnramifiedNormal
+public import FLT.LocalClassFieldTheory.UnramifiedOrderCohomology
+public import FLT.LocalClassFieldTheory.UnramifiedOrderMap
+public import FLT.LocalClassFieldTheory.UnramifiedOrderSequence
 public import FLT.LocalClassFieldTheory.UnramifiedPolynomial
 public import FLT.LocalClassFieldTheory.UnramifiedStageFrobenius
+public import FLT.LocalClassFieldTheory.UnramifiedStageOrderH2
 public import FLT.LocalClassFieldTheory.UnramifiedStageTower
 public import FLT.LocalClassFieldTheory.UnramifiedStages
 public import FLT.LocalClassFieldTheory.UnramifiedUniformizer
