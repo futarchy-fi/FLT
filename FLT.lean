@@ -1147,6 +1147,7 @@ public import FLT.LocalClassFieldTheory.ExactSequenceCardBound
 public import FLT.LocalClassFieldTheory.FieldUnitInvariants
 public import FLT.LocalClassFieldTheory.FilteredComplexDescent
 public import FLT.LocalClassFieldTheory.FilteredHomologyDescent
+public import FLT.LocalClassFieldTheory.FiniteArtin
 public import FLT.LocalClassFieldTheory.FiniteCharacteristicZeroCohomology
 public import FLT.LocalClassFieldTheory.FiniteContinuousComparison
 public import FLT.LocalClassFieldTheory.FiniteCyclicHerbrand
@@ -1164,6 +1165,7 @@ public import FLT.LocalClassFieldTheory.FiniteRestrictionComparison
 public import FLT.LocalClassFieldTheory.FiniteSubfieldDvr
 public import FLT.LocalClassFieldTheory.FiniteSubgroupCocycleCorrection
 public import FLT.LocalClassFieldTheory.FiniteTateVanishing
+public import FLT.LocalClassFieldTheory.FiniteUnitInvariants
 public import FLT.LocalClassFieldTheory.FixedCoefficientBoundary
 public import FLT.LocalClassFieldTheory.FixedCoefficientCochain
 public import FLT.LocalClassFieldTheory.FixedCoefficientDifferential
@@ -1310,8 +1312,10 @@ public import FLT.LocalClassFieldTheory.TateCupComparison
 public import FLT.LocalClassFieldTheory.TateCupUnit
 public import FLT.LocalClassFieldTheory.TateExactSequence
 public import FLT.LocalClassFieldTheory.TateGroupEquivalence
+public import FLT.LocalClassFieldTheory.TateInvariantClass
 public import FLT.LocalClassFieldTheory.TateNormVanishing
 public import FLT.LocalClassFieldTheory.TatePositiveCocycleClass
+public import FLT.LocalClassFieldTheory.TateScalarAbelianization
 public import FLT.LocalClassFieldTheory.TateScalarDegreeZero
 public import FLT.LocalClassFieldTheory.TateScalarVanishing
 public import FLT.LocalClassFieldTheory.TateTwoClassOperation
