@@ -750,6 +750,7 @@ public import FLT.GroupScheme.RaynaudFundamentalCycleParameters
 public import FLT.GroupScheme.RaynaudFundamentalDigitUnit
 public import FLT.GroupScheme.RaynaudFundamentalPrimeUnit
 public import FLT.GroupScheme.RaynaudFundamentalScalingUnits
+public import FLT.GroupScheme.RaynaudGeneralLayerDescent
 public import FLT.GroupScheme.RaynaudGenericHopfMap
 public import FLT.GroupScheme.RaynaudGenericSplitExtension
 public import FLT.GroupScheme.RaynaudHenselianCharacters
@@ -803,7 +804,11 @@ public import FLT.GroupScheme.RaynaudRootReduction
 public import FLT.GroupScheme.RaynaudRootStage
 public import FLT.GroupScheme.RaynaudScalarAction
 public import FLT.GroupScheme.RaynaudScalarConvolution
+public import FLT.GroupScheme.RaynaudScalarFilteredExtension
+public import FLT.GroupScheme.RaynaudScalarFilteredRigidity
+public import FLT.GroupScheme.RaynaudScalarFiltration
 public import FLT.GroupScheme.RaynaudScalarModelIso
+public import FLT.GroupScheme.RaynaudScalarQuotientComparison
 public import FLT.GroupScheme.RaynaudScalingUnits
 public import FLT.GroupScheme.RaynaudScalingValuation
 public import FLT.GroupScheme.RaynaudSimpleCommutingExtension

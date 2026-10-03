@@ -933,3 +933,28 @@ Before implementation, `RaynaudGeneralLayerDescent` (cap 150) generalizes
 `RaynaudLayerDescent` to arbitrary PID fraction fields, using the actual
 kernel closure, quotient, and comparison maps. Subgroup and quotient
 isomorphisms are induction hypotheses; no model assumes middle-map rigidity.
+
+The generic scalar-filtration dévissage is split before implementation into
+`RaynaudScalarFiltration` (actual exact generic sequences with finite-field
+rank-one quotient factors, and transport through a prescribed generic
+isomorphism), `RaynaudScalarFilteredRigidity` (induction using general integral
+kernel/quotient comparison), and `RaynaudScalarFilteredExtension` (the graph
+projection extends each prescribed map). Caps are 150 each. The filtration
+is a generic representation hypothesis whose construction from the descended
+inertia composition factors is a separate obligation, not a model field
+asserting extension or integral presentations.
+
+Split out `RaynaudScalarQuotientComparison` (cap 150) before implementing
+the induction: rank-one extension supplies the inverse to the actual
+contracted-quotient comparison when both quotients retain the same prescribed
+point group. This keeps the induction module under its cap.
+
+The remaining filtration construction is split before implementation into
+`RaynaudSimpleRepresentationQuotient` (maximal proper invariant subspaces
+have simple quotients), `RaynaudRepresentationContinuity` (continuity of the
+finite quotient and restricted actions), `RaynaudCompatibleSubquotients`
+(actual subgroup/quotient models for an action agreeing with inertia), and
+`RaynaudInertiaScalarFiltration` (cardinality induction using the derived
+simple-factor scalar fields). Caps are 150; refine again before exceeding
+one. These leaves must construct the filtration, rather than add it as a
+hypothesis to the unrestricted extension theorem.
