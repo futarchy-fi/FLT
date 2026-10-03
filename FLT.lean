@@ -1013,10 +1013,13 @@ public import FLT.LocalClassFieldTheory.FilteredHomologyDescent
 public import FLT.LocalClassFieldTheory.FiniteCharacteristicZeroCohomology
 public import FLT.LocalClassFieldTheory.FiniteContinuousComparison
 public import FLT.LocalClassFieldTheory.FiniteCyclicHerbrand
+public import FLT.LocalClassFieldTheory.FiniteDvrComplete
 public import FLT.LocalClassFieldTheory.FiniteHomologyCard
 public import FLT.LocalClassFieldTheory.FiniteInflationCocycleDescent
 public import FLT.LocalClassFieldTheory.FiniteInflationRestrictionExact
 public import FLT.LocalClassFieldTheory.FiniteKernelCocycleCorrection
+public import FLT.LocalClassFieldTheory.FiniteRelativeSaturation
+public import FLT.LocalClassFieldTheory.FiniteRelativeSequence
 public import FLT.LocalClassFieldTheory.FiniteSubgroupCocycleCorrection
 public import FLT.LocalClassFieldTheory.FixedCoefficientBoundary
 public import FLT.LocalClassFieldTheory.FixedCoefficientCochain
@@ -1060,6 +1063,8 @@ public import FLT.LocalClassFieldTheory.IntegralUnitDescent
 public import FLT.LocalClassFieldTheory.IntegralUnitInvariantCohomology
 public import FLT.LocalClassFieldTheory.IntegralUnitInvariants
 public import FLT.LocalClassFieldTheory.IntegralUnitRepresentation
+public import FLT.LocalClassFieldTheory.IntermediateDvr
+public import FLT.LocalClassFieldTheory.IntermediateDvrAlgebra
 public import FLT.LocalClassFieldTheory.InvariantStageTransition
 public import FLT.LocalClassFieldTheory.KernelCocycleDescent
 public import FLT.LocalClassFieldTheory.KernelCocycleNormalization
@@ -1109,6 +1114,7 @@ public import FLT.LocalClassFieldTheory.RationalTorsion
 public import FLT.LocalClassFieldTheory.RationalUnramifiedCharacters
 public import FLT.LocalClassFieldTheory.RelativeDegreeTorsionClass
 public import FLT.LocalClassFieldTheory.RelativeLowerBound
+public import FLT.LocalClassFieldTheory.RelativeOrderInduction
 public import FLT.LocalClassFieldTheory.RelativeRestrictionKernel
 public import FLT.LocalClassFieldTheory.ResidueAction
 public import FLT.LocalClassFieldTheory.ResidueActionFaithful
@@ -1118,6 +1124,8 @@ public import FLT.LocalClassFieldTheory.ResidueNorm
 public import FLT.LocalClassFieldTheory.ResidueNormLift
 public import FLT.LocalClassFieldTheory.RestrictedCochainDescent
 public import FLT.LocalClassFieldTheory.SixTermCard
+public import FLT.LocalClassFieldTheory.SolvableFieldStep
+public import FLT.LocalClassFieldTheory.SolvableNormalStep
 public import FLT.LocalClassFieldTheory.TowerRefinementFibers
 public import FLT.LocalClassFieldTheory.TrivialH1Characters
 public import FLT.LocalClassFieldTheory.TrivialRestrictionNaturality
