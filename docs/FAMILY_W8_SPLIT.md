@@ -463,3 +463,59 @@ maps and their proved laws from C5m7, never eigenspaces or presentations.
 
 C5p2–C5v3 stay open until their prerequisites are derived. Split each further
 before implementation if its whole-module proof would exceed 150 lines.
+
+C5p1f (`RaynaudAugmentationDecomposition`, ≤150 lines) instantiates C5p1a–e
+on the actual model and finite scalar field, deriving invertibility of the
+unit-group order from its residue characteristic.
+
+W14 C5p2 refinement, before implementation (whole modules ≤150 lines):
+C5p2a scalar orbits and proportionality of equivariant character functions;
+C5p2b the generic character-function submodule and its rank bound;
+C5p2c actual model coordinates, counit and scalar-map evaluation;
+C5p2d injection of integral eigenspaces into the generic character functions;
+C5p2e rank sum and rank-one generators derived from decomposition and the
+order of the actual generic point group. No eigenspace rank is an input.
+
+C5p2e is split further before implementation: `RaynaudAugmentationRank`
+(≤150) derives the counit splitting and total augmentation rank;
+`RaynaudCharacterRankOne` (≤150) combines the sum with C5p2d's bounds and
+chooses a basis of each derived eigenspace.
+
+C5p3 refinement before implementation (each ≤150 lines):
+- C5p3a `RaynaudCharacterPowers`: multiplication and positive powers carry
+  the derived integral character spaces to their product characters; the
+  rank-one bases supply actual coefficients for power relations.
+- C5p3b: lift a residue-field embedding's fundamental character, identify
+  its Frobenius cycle, and specialize the power relations.
+- C5p3c: restrict the actual Cartier pairing to the derived summands and
+  identify multiplication/comultiplication coefficients by transposition.
+- C5p3d: derive the universal iterated structure constants from convolution
+  addition and evaluate them on the constant field-vector scheme.
+- C5p3e: prove the fundamental constant is p times a unit, and the digit
+  constants are units (Raynaud 1.3.1), then obtain the dual parameter identities.
+C5p3d/e require their own further split if the universal constant calculation
+exceeds a cap; rank-one summands alone do not prove the unit identities.
+
+C5p3b is split before implementation into `RaynaudRootReduction` (≤150),
+proving reduction is an equivalence on prime-to-p roots of unity using
+Henselian surjectivity and equal cardinalities, and
+`RaynaudFundamentalCharacter` (≤150), lifting an actual finite-field
+embedding into the residue field and proving its Frobenius power relations.
+
+C5p3b cyclic-coordinate endpoint is a separate ≤150-line module,
+`RaynaudCyclicCharacterEquations`: choose the proved character generators,
+prove Frobenius periodicity, and obtain their actual p-power coefficients.
+This endpoint does not assert the dual identities or polynomial generation.
+
+C5p2 integration is split into `RaynaudIdentifiedCharacters` (≤150), which
+transports the scalar module structure through the specified generic
+bijection, and `RaynaudExtremalCharacters` (≤150), applying the proved basis
+construction to the actual maximum and minimum from C5m7.
+
+W14 C5p1 checked 2026-10-03: the six planned modules build and pass individual
+module lint (`W14_LINT_<module>.log`). `W14_P1_AXIOMS.lean` audits all 29
+construction/proof declarations; only `propext`, `Classical.choice`, and
+`Quot.sound` occur. The endpoint `FF.exists_augmentation_decomposition`
+derives the character system and invertible averaging denominator from the
+strict Henselian domain and the common finite-field/residue characteristic.
+Its eigenspaces are the actual scalar-action eigenspaces of the counit kernel.

@@ -639,8 +639,13 @@ public import FLT.GroupScheme.QuadraticTwistPoints
 public import FLT.GroupScheme.QuadraticTwistTensor
 public import FLT.GroupScheme.QuotientFiberFreeness
 public import FLT.GroupScheme.RationalCubeValuations
+public import FLT.GroupScheme.RaynaudAugmentationAction
+public import FLT.GroupScheme.RaynaudAugmentationDecomposition
 public import FLT.GroupScheme.RaynaudBiduality
 public import FLT.GroupScheme.RaynaudCartierDual
+public import FLT.GroupScheme.RaynaudCharacterDecomposition
+public import FLT.GroupScheme.RaynaudCharacterOrthogonality
+public import FLT.GroupScheme.RaynaudCharacterProjector
 public import FLT.GroupScheme.RaynaudClosureFactorization
 public import FLT.GroupScheme.RaynaudCommonStage
 public import FLT.GroupScheme.RaynaudConnectedQuotient
@@ -664,6 +669,7 @@ public import FLT.GroupScheme.RaynaudFlatKernelExactness
 public import FLT.GroupScheme.RaynaudFlatQuotient
 public import FLT.GroupScheme.RaynaudGenericHopfMap
 public import FLT.GroupScheme.RaynaudGenericSplitExtension
+public import FLT.GroupScheme.RaynaudHenselianCharacters
 public import FLT.GroupScheme.RaynaudHenselianFactor
 public import FLT.GroupScheme.RaynaudInductionStep
 public import FLT.GroupScheme.RaynaudIntegralClosureBound
