@@ -693,3 +693,14 @@ Spec A(R) and Spec B(R) along Spec S → Spec R with Spec A(S) and Spec B(S),
 with both projection formulas. This works without flatness. Transporting the
 global normalization squares, node sections and whole pinching span through
 these comparisons remains required; a chart isomorphism alone is not U6.
+
+U6d2 `PolygonProductAtlas` is released with cap 200 after the full
+`W16_PRODUCT_ATLAS_PROOF.lean` compiles. It constructs actual open covers of
+the affine-parameter pullbacks, for every positive n. For n ≥ 2 the charts
+are Spec A(S); for n=1 they are Spec B(S) and Spec (S ⊗[K] K[T;T⁻¹]). Both
+projections are computed. The one-gon torus is deliberately retained in its
+canonical tensor coordinates. `pullbackCover` also gives the actual pulled-back
+cover for arbitrary scheme bases. These are covers of the specified polygon,
+not a replacement polygon defined by assuming its pinching property.
+The normalization comparison and endpoint compatibility on these covers are
+still needed to apply `RelativePinchingDescent` to the global cocone.
