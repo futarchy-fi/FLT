@@ -981,6 +981,11 @@ public import FLT.LocalClassFieldTheory.IntegralDegreeTwoComparison
 public import FLT.LocalClassFieldTheory.IntegralH1Equivalence
 public import FLT.LocalClassFieldTheory.IntegralH2Characters
 public import FLT.LocalClassFieldTheory.IntegralLowDegreeComparison
+public import FLT.LocalClassFieldTheory.IntegralNormalBasis
+public import FLT.LocalClassFieldTheory.IntegralNormalLattice
+public import FLT.LocalClassFieldTheory.IntegralNormalLatticeAction
+public import FLT.LocalClassFieldTheory.IntegralNormalLatticeCohomology
+public import FLT.LocalClassFieldTheory.IntegralNormalLatticeIntCohomology
 public import FLT.LocalClassFieldTheory.IntegralRationalVanishing
 public import FLT.LocalClassFieldTheory.IntegralUnitDescent
 public import FLT.LocalClassFieldTheory.IntegralUnitInvariantCohomology
