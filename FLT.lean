@@ -29,9 +29,14 @@ public import FLT.AINTLIB.DedekindResidue.ExplicitFormula.TestFunction
 public import FLT.AINTLIB.DedekindResidue.ExplicitFormula.WeilAssembly
 public import FLT.AINTLIB.DedekindResidue.ExplicitFormula.ZeroCapture
 public import FLT.AINTLIB.DedekindResidue.Lemma2
+public import FLT.AbsoluteGaloisGroup.CocycleFiniteGalois
 public import FLT.AbsoluteGaloisGroup.CompletionComparison
+public import FLT.AbsoluteGaloisGroup.FiniteTameQuotient
 public import FLT.AbsoluteGaloisGroup.FirstRamificationFiltration
 public import FLT.AbsoluteGaloisGroup.FirstRamificationPGroup
+public import FLT.AbsoluteGaloisGroup.FirstRamificationRestriction
+public import FLT.AbsoluteGaloisGroup.FundamentalCoefficients
+public import FLT.AbsoluteGaloisGroup.FundamentalCyclotomic
 public import FLT.AbsoluteGaloisGroup.FundamentalTame
 public import FLT.AbsoluteGaloisGroup.InertiaComparison
 public import FLT.AbsoluteGaloisGroup.LocalCompositum
@@ -41,6 +46,7 @@ public import FLT.AbsoluteGaloisGroup.LocalCyclotomicInertia
 public import FLT.AbsoluteGaloisGroup.LocalCyclotomicRamification
 public import FLT.AbsoluteGaloisGroup.LocalCyclotomicSurjectivity
 public import FLT.AbsoluteGaloisGroup.LocalCyclotomicTame
+public import FLT.AbsoluteGaloisGroup.OpenNormalFixedField
 public import FLT.AbsoluteGaloisGroup.RootCharacter
 public import FLT.AbsoluteGaloisGroup.RootCharacterIndependence
 public import FLT.AbsoluteGaloisGroup.RootCharacterResidue
@@ -139,6 +145,7 @@ public import FLT.Deformations.RepresentationTheory.FamilyTracePair
 public import FLT.Deformations.RepresentationTheory.Flat
 public import FLT.Deformations.RepresentationTheory.FlatCofinal
 public import FLT.Deformations.RepresentationTheory.FlatDiscrete
+public import FLT.Deformations.RepresentationTheory.FlatPadic
 public import FLT.Deformations.RepresentationTheory.FlatReduction
 public import FLT.Deformations.RepresentationTheory.Frobenius
 public import FLT.Deformations.RepresentationTheory.GaloisRep
@@ -146,6 +153,8 @@ public import FLT.Deformations.RepresentationTheory.GaloisRepFamily
 public import FLT.Deformations.RepresentationTheory.IntegralClosure
 public import FLT.Deformations.RepresentationTheory.Irreducible
 public import FLT.Deformations.RepresentationTheory.PGroupInvariants
+public import FLT.Deformations.RepresentationTheory.PadicIdealCofinal
+public import FLT.Deformations.RepresentationTheory.PadicIdealOpen
 public import FLT.Deformations.RepresentationTheory.PermutedSummandsTwist
 public import FLT.Deformations.RepresentationTheory.PrimePowerExact
 public import FLT.Deformations.RepresentationTheory.SelfTwistTrace
@@ -287,6 +296,11 @@ public import FLT.FreyCurve.Serre.VeluTranslation
 public import FLT.GaloisRepresentation.Attachment
 public import FLT.GaloisRepresentation.Automorphic
 public import FLT.GaloisRepresentation.Cyclotomic
+public import FLT.GaloisRepresentation.Extensions.ChangeSplitting
+public import FLT.GaloisRepresentation.Extensions.CocycleAction
+public import FLT.GaloisRepresentation.Extensions.ContinuousClass
+public import FLT.GaloisRepresentation.Extensions.FiniteDescent
+public import FLT.GaloisRepresentation.Extensions.LiftCocycle
 public import FLT.GaloisRepresentation.HardlyRamified.AbsIrredAdapter
 public import FLT.GaloisRepresentation.HardlyRamified.AbsoluteIrreducibility
 public import FLT.GaloisRepresentation.HardlyRamified.AtTwo
@@ -550,6 +564,7 @@ public import FLT.GroupScheme.KummerHopf
 public import FLT.GroupScheme.KummerParameter
 public import FLT.GroupScheme.KummerPoints
 public import FLT.GroupScheme.KummerTwist
+public import FLT.GroupScheme.KummerUnitClass
 public import FLT.GroupScheme.LocalBialgebraDerivations
 public import FLT.GroupScheme.LocalCoefficientConjugacy
 public import FLT.GroupScheme.LocalDifferentBounds
