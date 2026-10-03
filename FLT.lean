@@ -1240,6 +1240,8 @@ public import FLT.Mazur.CurveGenus
 public import FLT.Mazur.CurveNode
 public import FLT.Mazur.CuspCollision
 public import FLT.Mazur.CuspOrderNumerator
+public import FLT.Mazur.CyclicNodeChart
+public import FLT.Mazur.CyclicNormalizationExact
 public import FLT.Mazur.CyclicPinchingProduct
 public import FLT.Mazur.CyclicPinchingRotation
 public import FLT.Mazur.CyclicProductDescent
@@ -1360,9 +1362,11 @@ public import FLT.Mazur.OneGonGluing
 public import FLT.Mazur.OneGonLocalDescent
 public import FLT.Mazur.OneGonLocalizedEqualizer
 public import FLT.Mazur.OneGonNormalization
+public import FLT.Mazur.OneGonNormalizationChart
 public import FLT.Mazur.OneGonNormalizationCoordinates
 public import FLT.Mazur.OneGonNormalizationFinite
 public import FLT.Mazur.OneGonNormalizationPullback
+public import FLT.Mazur.OneGonNormalizationTorus
 public import FLT.Mazur.OneGonOverlap
 public import FLT.Mazur.OneGonPinchingDescent
 public import FLT.Mazur.OneGonPinchingProduct
@@ -1418,7 +1422,9 @@ public import FLT.Mazur.PolygonNodeScaling
 public import FLT.Mazur.PolygonNormalizationAlgebra
 public import FLT.Mazur.PolygonNormalizationComplex
 public import FLT.Mazur.PolygonNormalizationDominant
+public import FLT.Mazur.PolygonNormalizationExact
 public import FLT.Mazur.PolygonNormalizationFinite
+public import FLT.Mazur.PolygonNormalizationTransport
 public import FLT.Mazur.PolygonPinchingAffineBaseChange
 public import FLT.Mazur.PolygonPinchingDiagram
 public import FLT.Mazur.PolygonPinchingFlatBaseChange

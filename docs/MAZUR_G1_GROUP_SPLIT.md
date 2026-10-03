@@ -1273,3 +1273,41 @@ commutation equations, give an isomorphism with the actual affine complex.
 `chart_shortExact` transfers the proved ring exactness through this isomorphism.
 It does not posit an unproved sheaf-exactness field. The concrete atlas data must
 still be supplied, including the one-gon's complementary torus chart.
+
+`W20_CYCLIC_NODE_CHART_PROOF.lean` compiles before release. H5h
+`CyclicNodeChart`, cap 140, proves that a node belongs only to its own cyclic
+chart: different charts meet along punctured branches, which exclude the node.
+This gives the node pullback square, transported through the canonical
+coproduct comparison to the specified over-category nodes. It includes n=2.
+
+`W20_CYCLIC_NORMALIZATION_CHART_PROOF.lean` compiles in full. H5i
+`CyclicNormalizationExact`, cap 180, transports the normalization pullback via
+`coprodSpec`, proves both endpoint equations against the specified branch
+sections, and applies H5g/H5f. `CyclicNormalizationChart.shortExact` proves the
+actual sheaf short exact sequence for every cyclic polygon n ≥ 2, including n=2.
+The one-gon and transport to arbitrary supplied cocones are separate gates.
+
+`W20_ONEGON_NODE_CHART_PROOF.lean` compiles in full. H5j
+`OneGonNormalizationChart`, cap 130, uses the existing Möbius normalization
+coordinate `alpha`. Its zero/one endpoints are the projective zero/infinity;
+the one-component coproduct comparisons give the cartesian squares. The actual
+one-gon normalization complex is short exact on its pinched affine chart.
+The complementary torus chart is still required for global one-gon exactness.
+
+`W20_ONEGON_TORUS_PROOF.lean` compiles in full before release. H5k
+`OneGonNormalizationTorus`, cap 120, proves that the node preimage over the torus
+is empty and that normalization there is the identity in cartesian coordinates.
+The first map is an isomorphism and the third object vanishes; the two-chart
+cover proves global one-gon short exactness.
+
+`W20_TRANSPORT_PROOF.lean` compiles before release. H5l
+`PolygonNormalizationTransport`, cap 100, compares actual complexes under a
+cocone isomorphism by their cartesian squares. Restriction along the inverse
+reflects exactness, transporting the atlas result to any supplied cocone.
+
+`W20_H5_PROOF.lean` compiles in full. H5m `PolygonNormalizationExact`, cap 70,
+assembles the one-gon and cyclic atlas results and transports them through
+`polygonIso`. Its `shortExact` proves H5 for the exact H3/H4 maps and any
+specified positive-size pinching cocone. `abelianSheaf_shortExact` supplies the
+additive-sheaf sequence used by cohomology. H5 is now proved; H8/H9 and the
+genus and geometric incidence bridges remain separate obligations.
