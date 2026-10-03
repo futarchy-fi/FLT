@@ -28,7 +28,7 @@ variable {p : ℕ} [Fact p.Prime] {hpodd : Odd p}
 
 omit [IsDomain R] in
 /-- The original point comparison carries reductions to the tensor quotient maps. -/
-theorem torsionPoints_transition {m n : ℕ} (h : m ≤ n)
+theorem tateRecovery_torsionPoints_transition {m n : ℕ} (h : m ≤ n)
     (x : (hρ.torsionModelUniverses n).Points) :
     hρ.torsionPointsUniverses m (genericHom (hρ.torsionTransitionUniverses h) x) =
       tensorTransition (p : R) h (hρ.torsionPointsUniverses n x) := by
@@ -48,7 +48,7 @@ theorem torsionCompletionLevel_transition {m n : ℕ} (h : m ≤ n)
       AdicCompletion.transitionMap (Ideal.span {(p : R)}) V h (hρ.torsionCompletionLevel n x) := by
   change tensorCompletionLevel (p : R) m
     (hρ.torsionPointsUniverses m (genericHom (hρ.torsionTransitionUniverses h) x)) = _
-  rw [hρ.torsionPoints_transition, tensorCompletionLevel_transition]
+  rw [hρ.tateRecovery_torsionPoints_transition, tensorCompletionLevel_transition]
   rfl
 
 /-- The actual geometric Tate limit is the adic completion of the original lattice. -/
