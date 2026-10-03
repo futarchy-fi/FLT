@@ -5,8 +5,8 @@ exactness and cyclic linear exactness. They do not construct a polygon or
 identify that linear complex with sheaf cohomology. This split develops the
 relative group candidate and isolates its comparison with the smooth locus.
 The historical G1–G4 contracts below retain their original caps.
-The W14 frontier after G5 uses new leaves of at most 240 lines.
-The signatures are implementation contracts, not yet typechecked declarations.
+The W15 evidence at the end supersedes the historical status tables.
+New leaves are at most 240 lines. Unimplemented signatures remain contracts.
 
 Checked 2026-09-30 19:16 UTC by the following read-only API searches (paths
 below are relative to `.lake/packages/mathlib/Mathlib`, unless prefixed FLT):
@@ -394,3 +394,205 @@ modules and sorted FLT.lean imports; docs may change. Commit locally, never push
 
 [dr]: https://www.math.uni-bonn.de/people/rapoport/myalggeom/preprints/Lesschemas.pdf
 [conrad]: https://math.stanford.edu/~conrad/papers/kmpaper.pdf
+
+## W15 typed-contract check and dispatch
+
+Checked 2026-10-03 on W15 base `31114b5c`. The untracked
+`W15_CONTRACT.lean` compiles with `LEAN_NUM_THREADS=2 lake env lean`.
+For arbitrary commutative rings R,S and `[Algebra R S]`, coefficient mapping
+is an R-algebra homomorphism `A R →ₐ[R] A S`, using the existing scalar tower
+on the subalgebra. `AlgHom.liftEquiv R S _ _` gives the comparison
+`S ⊗[R] A R →ₐ[S] A S` with pure-tensor formula `s ⊗ p ↦ s • map p`.
+Thus the proposed U3 isomorphism has a checked source, target and scalar
+convention; no flatness assumption is needed.
+
+U3 is released with cap 240. Its inverse is the linear reconstruction
+`p ↦ aeval (1 ⊗ x) p.first + aeval (1 ⊗ y) p.second - C (p.first.eval 0)`.
+The equality of endpoint values proves reconstruction on A(S); tensor
+induction and coefficient naturality prove the other composite is identity.
+This is an explicit split-module argument, not an assertion that tensoring
+preserves arbitrary ring pullbacks. Both branch restriction formulas are
+required as part of the delivered comparison.
+
+For U4 the identified APIs are `polyEquivTensor'` in
+`Mathlib/RingTheory/PolynomialAlgebra.lean` and `pullbackSpecIso` with its
+projection lemmas in `Mathlib/AlgebraicGeometry/Pullbacks.lean`. The geometric
+product charts and their pulled-back cover still require typechecking.
+H2/H6 and U5/U6 remain subject to the source/API gates above; if their helper
+proofs do not fit 240 lines, record the split before implementing the helpers.
+
+U4's complete typed prototype now checks (`W15_PRODUCT_PROOF.lean`). Its
+`chartProductIso K S` identifies the pullback of `Spec S → Spec K` and the
+affine-line chart with `Spec S[X]`, for arbitrary commutative K-algebras S.
+Both inverse/projection formulas are the spectra of the constant inclusion
+and polynomial coefficient map. The Bool-indexed cover is the actual
+`Scheme.Pullback.openCoverOfRight`, transported through these isomorphisms.
+Taking S = K[T;T⁻¹] gives the required multiplicative-group product chart.
+The final module remains capped at 240.
+
+H2 is split before implementation, since local finite-module calculations
+alone do not identify the inverse images in the constructed global polygon:
+
+| Leaf | New module / typed contract | Cap | Proof obligation |
+| --- | --- | --- | --- |
+| H2a | `PolygonNormalizationAlgebra`: `Module.Finite (A R) (R[X] × R[X])`, `Module.Finite (B R) R[X]` | 180 | Generate the first module by 1 and (1,0); generate the second algebra by integral X, satisfying X²-X-u. Prove both spectrum maps surjective. |
+| H2b | `PolygonCyclicNormalizationPullback` | 240 | Identify inverse images of every node chart with the disjoint union of its two affine branches, including n=2's two overlaps. |
+| H2c | `OneGonNormalizationPullback` | 240 | Prove the square formed by `OneGonAffineNormalization.alpha`, the affine normalization map and `OneGonGluing.node` is cartesian; also the torus square. |
+| H2d | `PolygonNormalizationFinite` | 160 | Apply target-local finiteness to H2b/H2c and H2a; prove global surjectivity and transport to the specified cocone. |
+
+H6's target in the earlier sketch is schematic: the actual type is
+`ProjectiveSpace.space K (Fin 2)`, not a declaration named `ProjectiveSpace`.
+Its proof must compare the two explicit open immersions and their Laurent
+transition; no standard-model isomorphism is supplied by the current files.
+The available chart APIs are `chartPolynomialEquiv`, `affineChartAt`,
+`reindexChartRingMap_coordinate` and `overlap_isLocalization`. Separate the
+polynomial-chart/transition comparison (H6a, cap 240) from the open-cover
+pushout isomorphism and scalar compatibility (H6b, cap 180) before dispatch.
+The cartesian transition comparison remains a proof obligation, not a field
+in a new chart record.
+
+H2a is implemented in 108 lines. H2c's complete prototype also typechecks:
+`IsPullback (oneBranch K) (alpha K) (OneGonGluing.node K) (normalization K)`
+and `IsPullback (𝟙 _) (overlapLeft K ≫ left K) (OneGonGluing.torus K)
+(normalization K)`. The proof computes both inverse-image opens using the
+existing gluing intersection and the conductor; it includes coordinate one
+in the torus chart. Split H2d into H2d1 `OneGonNormalizationFinite` (cap 120,
+now released from H2a/H2c) and H2d2 `PolygonNormalizationFinite` (cap 160,
+still dependent on the cyclic inverse-image comparison H2b).
+
+H6a is further split before library implementation: H6a1
+`ProjectiveLineStandardCharts` (cap 200) constructs the two polynomial chart
+isomorphisms in `ProjectiveSpace.space K (Fin 2)`, their scalar maps and cover.
+H6a2 `ProjectiveLineStandardOverlap` (cap 240) identifies their intersection
+with the existing Laurent chart and proves the reciprocal-coordinate
+transition. H6b `ProjectiveLineStandardComparison` (cap 180) compares the
+resulting open-cover pushout with `ProjectiveLine.scheme K`, preserving both
+charts and the base map. The chart maps use `chartRing_hom_ext`, the checked
+`chartPolynomialEquiv`, and explicit swapping of the two homogeneous indices.
+
+For H2b, split the cyclic proof further: H2b1
+`PolygonCyclicNormalizationRanges` (cap 200) proves that a point of component
+`i` mapping into node chart `j` lies either in its left chart with `i=j`, or
+in its right chart with `i=finRotate n j`. The proof uses `charts_eq_iff` and
+rules out a full branch meeting the opposite punctured branch; it does not
+discard the second edge when n=2. H2b2 `PolygonCyclicNormalizationPullback`
+(cap 240) packages these ranges as the open immersion of the two affine
+branches into the normalization coproduct and proves the cartesian square.
+H2d2 then descends their finite maps on the target chart cover and transports
+through `sigmaComparison (Over.forget _)` to the specified normalization.
+
+H2d2 is split before coding: `PolygonCyclicNormalizationFinite` (cap 160)
+proves finite surjective normalization on the plain scheme coproduct, then
+transports it to the existing over-category normalization through the
+canonical coproduct comparison. `PolygonNormalizationFinite` (cap 160)
+combines that result with the one-gon result (including its one-component
+coproduct comparison), then transports finite surjectivity to any supplied
+pinching cocone using the existing `polygonIso`. Neither transport introduces
+an assumed finiteness field.
+
+U5 is split before library implementation. U5a `ProjectiveLineProductOverlap`
+(cap 220) identifies `Spec S[T;T⁻¹]` as the cartesian intersection of U4's
+polynomial product charts, for arbitrary commutative K-algebras S. The proof
+uses the basic open of X and the original gluing intersection, then applies
+`BinaryOpenDescent.isPushout`. U5b `ProjectiveLineUniversalAction` (cap 240)
+glues G3's two ring maps on that pushout for S=K[T;T⁻¹], proves the base-map
+identity and both endpoint formulas, and packages the result in `Over (Spec K)`.
+U6 remains a separate source-design gate: an open-cover pushout argument does
+not establish base-change preservation of the closed pinching diagram.
+
+## W15 implementation evidence and remaining descent gap
+
+Checked 2026-10-03 02:58 UTC at implementation head `07a99bd9`, relative to
+base `31114b5c`. These results supersede U3/U4/U5/H2/H6's earlier blocked status.
+All module names below have prefix `FLT.Mazur.`.
+
+| Leaf | Module | Lines/cap | Commit | Audited declarations |
+| --- | --- | --- | --- | --- |
+| U3 | `PolygonNodeScalarExtension` | 141/240 | `7b3c5137` | 29 |
+| U4 | `ProjectiveLineProductCharts` | 135/240 | `8c393cef` | 33 |
+| H2a | `PolygonNormalizationAlgebra` | 108/180 | `199a6694` | 11 |
+| H2c | `OneGonNormalizationPullback` | 99/240 | `5c3a05e3` | 6 |
+| H2d1 | `OneGonNormalizationFinite` | 60/120 | `eaf57a64` | 4 |
+| H6a1 | `ProjectiveLineStandardCharts` | 165/200 | `41040c8e` | 39 |
+| H6a2 | `ProjectiveLineStandardOverlap` | 141/240 | `8bb365f7` | 19 |
+| H6b | `ProjectiveLineStandardComparison` | 64/180 | `097ab2ac` | 15 |
+| H2b1 | `PolygonCyclicNormalizationRanges` | 96/200 | `6e6d025e` | 7 |
+| H2b2 | `PolygonCyclicNormalizationPullback` | 139/240 | `a9413d27` | 25 |
+| H2d2a | `PolygonCyclicNormalizationFinite` | 104/160 | `412da268` | 14 |
+| H2d2b | `PolygonNormalizationFinite` | 89/160 | `27a7f6f8` | 8 |
+| U5a | `ProjectiveLineProductOverlap` | 143/220 | `0e06745c` | 19 |
+| U5b | `ProjectiveLineUniversalAction` | 161/240 | `07a99bd9` | 32 |
+
+Each module passed `LEAN_NUM_THREADS=2 lake build MODULE` and
+`LEAN_NUM_THREADS=2 lake exe runLinter MODULE` sequentially in the foreground.
+The combined audit imports these 14 modules and uses the origin-module loop
+shown in W14's recipe, with these 14 names in `modules`. All 261 declarations,
+including generated helpers, use only `propext`, `Classical.choice`, `Quot.sound`.
+Local evidence: `GOAL_MAZUR_W15_AXIOM_AUDIT.lean` and
+`GOAL_MAZUR_W15_ALL_AXIOMS.txt` (untracked, outside the library).
+
+Read-only checks: `git diff --check 31114b5c..HEAD` passed; the new-module line
+counts meet every declared cap; source scans found no `sorry`, `admit`, `axiom`
+or `native_decide`. `FLT.lean` imports are sorted and match all library paths.
+The diff contains new Lean modules, imports and authorized docs only. No
+whole-library build or lint ran, and nothing was pushed.
+
+H2 proves finite surjective normalization for every positive polygon, including
+the one-gon, and for any supplied cocone with the specified pinching pushout.
+H6 identifies the glued line with `ProjectiveSpace.space K (Fin 2)`, preserving
+charts, endpoints and the base map. U5 constructs
+`MultiplicativeGroupScheme.gm K ⊗ Over.mk (ProjectiveLine.toBase K) ⟶
+Over.mk (ProjectiveLine.toBase K)` with both affine formulas and fixed endpoint
+sections. U5 does not yet descend this morphism to the polygon.
+
+### U6: checked statement, unproved base-change descent
+
+`W15_U6_CONTRACT.lean` checks the target below for `g : S ⟶ Spec (.of K)`,
+`[Flat g]`, positive n, and a supplied cocone p,q. It checks a proposition's
+type; it contains no proof of that proposition.
+
+```lean
+IsPushout
+  ((Over.pullback g).map (PolygonPinching.toComponents K n hn))
+  ((Over.pullback g).map (PolygonPinching.toNodes K n))
+  ((Over.pullback g).map p) ((Over.pullback g).map q)
+```
+
+The missing implication is from the original pinching pushout to this one.
+The current arbitrary-target proofs in `NodePinchingDescent` and
+`OneGonPinchingDescent` require `[Field K]`. Their neighborhood construction
+in `PinchingNeighborhoods.normalizedAt_eval` divides by a nonzero endpoint
+value. Over K[T;T⁻¹], a nonzero value such as T−1 need not be invertible.
+Replacing K by the parameter ring therefore does not instantiate those proofs.
+The type checks and API evidence are in `GOAL_MAZUR_W15_U6_CONTRACT.txt`.
+
+U3 supplies the node scalar-extension isomorphism. The one-gon equalizer
+`B R = {p : R[X] | p.eval 0 = p.eval 1}` still needs its own scalar-extension
+comparison. After that, arbitrary-target descent must be proved locally over
+the parameter base, then transported through the global pinching atlas.
+The one-gon's chosen affine open need not be preserved by universal scaling;
+its node chart cannot be treated as the split node algebra A.
+
+A further source/API check found only flat-surjective descent in mathlib's
+`AlgebraicGeometry/EffectiveEpi.lean`; it requires flatness of the descending
+morphism. H2's finite normalization does not supply that hypothesis. The
+open-cover pushout in U5 is a different diagram and does not prove U6.
+
+The next proof split is proposed, not released as completed or bounded code:
+
+| Proposed leaf | Required result | Initial cap |
+| --- | --- | --- |
+| U6a | One-gon `S ⊗[R] B R ≃ₐ[S] B S`, with normalization and endpoint formulas | 220 |
+| U6b | Saturated principal neighborhoods after localizing the parameter base, for both pinching charts | 240 |
+| U6c1 / U6c2 | Arbitrary-target affine pinching descent over parameter rings, separately for the node and one-gon | 240 each |
+| U6d | Identify pulled-back atlas diagrams and glue the global pinching pushout, including n=1 | 240 |
+
+Each requires a checked proof design and further splitting if its helpers
+exceed the cap. U7–U12 remain dependent on U6; no polygon action or action-law
+theorem is delivered in W15. H3–H5 and H7–H15, full G1 moduli, G2 arithmetic
+and A1–A5 remain unproved as described above.
+
+The final dependency is unchanged: read-only `rg -n '^axiom Mazur_statement'
+FLT/Assumptions/Mazur.lean` returns line 103; `ExistingInputs.lean:28` uses
+`mazur_W`, and `FermatsLastTheorem.lean:24` uses `mazurTorsionExclusion`.
+This is source evidence, not a new axiom audit of the final FLT theorem.

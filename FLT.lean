@@ -1263,6 +1263,8 @@ public import FLT.Mazur.OneGonLocalDescent
 public import FLT.Mazur.OneGonLocalizedEqualizer
 public import FLT.Mazur.OneGonNormalization
 public import FLT.Mazur.OneGonNormalizationCoordinates
+public import FLT.Mazur.OneGonNormalizationFinite
+public import FLT.Mazur.OneGonNormalizationPullback
 public import FLT.Mazur.OneGonOverlap
 public import FLT.Mazur.OneGonPinchingDescent
 public import FLT.Mazur.OneGonQuotient
@@ -1288,6 +1290,9 @@ public import FLT.Mazur.PolygonCoconeComparison
 public import FLT.Mazur.PolygonCyclicAtlas
 public import FLT.Mazur.PolygonCyclicCocone
 public import FLT.Mazur.PolygonCyclicDescent
+public import FLT.Mazur.PolygonCyclicNormalizationFinite
+public import FLT.Mazur.PolygonCyclicNormalizationPullback
+public import FLT.Mazur.PolygonCyclicNormalizationRanges
 public import FLT.Mazur.PolygonCyclicPushout
 public import FLT.Mazur.PolygonIncidence
 public import FLT.Mazur.PolygonIncidenceQuotient
@@ -1295,7 +1300,10 @@ public import FLT.Mazur.PolygonNodeBranches
 public import FLT.Mazur.PolygonNodeEqualizer
 public import FLT.Mazur.PolygonNodeLocalization
 public import FLT.Mazur.PolygonNodePresentation
+public import FLT.Mazur.PolygonNodeScalarExtension
 public import FLT.Mazur.PolygonNodeScaling
+public import FLT.Mazur.PolygonNormalizationAlgebra
+public import FLT.Mazur.PolygonNormalizationFinite
 public import FLT.Mazur.PolygonPinchingDiagram
 public import FLT.Mazur.PolygonScalingNaturality
 public import FLT.Mazur.PolygonSmoothLocus
@@ -1314,7 +1322,13 @@ public import FLT.Mazur.ProjectiveGeneration
 public import FLT.Mazur.ProjectiveGenerationEventually
 public import FLT.Mazur.ProjectiveLineCharts
 public import FLT.Mazur.ProjectiveLineEndpoints
+public import FLT.Mazur.ProjectiveLineProductCharts
+public import FLT.Mazur.ProjectiveLineProductOverlap
 public import FLT.Mazur.ProjectiveLineScaling
+public import FLT.Mazur.ProjectiveLineStandardCharts
+public import FLT.Mazur.ProjectiveLineStandardComparison
+public import FLT.Mazur.ProjectiveLineStandardOverlap
+public import FLT.Mazur.ProjectiveLineUniversalAction
 public import FLT.Mazur.ProjectiveOverlapModuleLocalization
 public import FLT.Mazur.ProjectiveProductChartCover
 public import FLT.Mazur.ProjectiveProductChartOverlaps
