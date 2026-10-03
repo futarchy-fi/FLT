@@ -4,6 +4,63 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
+## W38 proved scope — quotient descent and invariant-class normalization
+
+**W38 proves unscaled descent of the upper-field negative cup to a quotient
+and constructs a quotient two-class with the required inflation normalization.
+The comparison with the independently constructed smaller-field cup remains
+open, including shared-prime towers. E1c7/E1d and removal of `sorryAx` remain
+open; the ordered Frobenius and Kummer evaluations have not advanced.**
+
+Checked 2026-10-03T22:39:46Z at integrated proof head `040b6a6f`, after merging
+`origin/main` at `588bfe04`. Read-only evidence check:
+`python3 Scratch/LiftsW38/check.py` verifies source hashes, saved successful
+build/lint/axiom logs, declaration audit coverage, permitted proof-commit edits,
+sorted imports and line caps. It also checks that Lean/build inputs match the
+post-merge integration snapshot; it does not rerun Lean. The 12 new modules
+contain 1,006 lines and 46 named declarations, each audited with only
+`propext`, `Classical.choice`, `Quot.sound`. Each module has at most 113 lines
+(cap 200). The sequential foreground root and endpoint builds passed.
+
+- `tateZeroDeflation_eq_zero_iff` identifies the kernel of actual Tate H⁰
+  deflation with subgroup corestriction; `tateScalarMap_quotient_eq_zero_iff`
+  identifies the scalar quotient kernel with the subgroup image.
+- `negativeCupQuotient` descends the deflated negative cup along the actual
+  scalar quotient map. Its unscaled square holds for every ordinary two-class;
+  no coprimality or cancellation in a torsion group is used.
+- `relativeFundamentalQuotientCupEquiv` proves that this descended map is an
+  equivalence for the local fundamental class. `finiteQuotientArtin_descendedCup`
+  computes the **existing projected** Artin map by its inverse. This does not
+  identify it with the smaller field's independent Artin map.
+- The two invariant coefficient sequences are proved short exact. The second
+  divides its scalar projection by `|N|` in **ℤ**, using proved subgroup Tate
+  vanishing for divisibility and norm lifts for surjectivity. These sequences
+  define `relativeFundamentalInvariantTwoClass` without an assumed evaluation.
+- `relativeFundamentalInvariantTwoClass_inflation` proves
+  `infl(u_quotient) = |N| • u_original` by actual maps of the exact sequences.
+  This constructs and normalizes a candidate quotient class; it does not yet
+  identify its negative cup with `negativeCupQuotient`.
+
+### Remaining work after W38
+
+1. Compute the negative connecting composite of the two invariant sequences
+   as `negativeCupQuotient`, then identify that composite with cup by their H²
+   class. Transport the inflation normalization through the actual group and
+   coefficient maps and use inflation injectivity to identify the class with
+   the smaller-field fundamental class. Compare the independent cups and
+   invert to prove unrestricted Artin tower compatibility. Degree cancellation
+   is still invalid in the shared-prime case.
+2. Prove unramified uniformizer evaluation with positive Frobenius, retaining
+   W35's negative carry-cup sign. Then prove Kummer–Artin evaluation with the
+   cup-order sign and E1d's annihilator statement, in that order.
+3. Re-audit and split later lifting gates only after E1 closes. No Serre-weight
+   evaluation or arbitrary-p Raynaud classification API is assumed.
+
+The final audit still lists `sorryAx` for `IsHardlyRamified.lifts` and
+`FLT.Assembly.hardlyRamifiedLifting`; `PNat.pow_add_pow_ne_pow` additionally
+retains `Mazur_statement`. Evidence: `Scratch/LiftsW38/FinalAxioms.{lean,log,exit}`.
+No approval decision is needed. This is a partial advance in the first gate.
+
 ## W37 proved scope — partial tower comparison
 
 **W37 proves the degree-weighted negative fundamental-cup tower comparison,
