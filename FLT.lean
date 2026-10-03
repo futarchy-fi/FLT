@@ -808,6 +808,7 @@ public import FLT.LocalClassFieldTheory.ResidueActionSurjective
 public import FLT.LocalClassFieldTheory.ResidueGaloisEquiv
 public import FLT.LocalClassFieldTheory.ResidueNorm
 public import FLT.LocalClassFieldTheory.ResidueNormLift
+public import FLT.LocalClassFieldTheory.UnramifiedCofinality
 public import FLT.LocalClassFieldTheory.UnramifiedDegree
 public import FLT.LocalClassFieldTheory.UnramifiedEmbeddings
 public import FLT.LocalClassFieldTheory.UnramifiedExistence
