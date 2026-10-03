@@ -879,9 +879,11 @@ public import FLT.LocalClassFieldTheory.IntegralH2Characters
 public import FLT.LocalClassFieldTheory.IntegralLowDegreeComparison
 public import FLT.LocalClassFieldTheory.IntegralRationalVanishing
 public import FLT.LocalClassFieldTheory.InvariantStageTransition
+public import FLT.LocalClassFieldTheory.NormCongruence
 public import FLT.LocalClassFieldTheory.NormFirstOrder
 public import FLT.LocalClassFieldTheory.NormalizedOrder
 public import FLT.LocalClassFieldTheory.PowerClassOrder
+public import FLT.LocalClassFieldTheory.PrincipalAdicLimit
 public import FLT.LocalClassFieldTheory.PrincipalNormCorrection
 public import FLT.LocalClassFieldTheory.PrincipalNormGraded
 public import FLT.LocalClassFieldTheory.PrincipalUnitFiltration
@@ -899,6 +901,9 @@ public import FLT.LocalClassFieldTheory.ResidueNorm
 public import FLT.LocalClassFieldTheory.ResidueNormLift
 public import FLT.LocalClassFieldTheory.TrivialH1Characters
 public import FLT.LocalClassFieldTheory.TrivialRestrictionNaturality
+public import FLT.LocalClassFieldTheory.UnitNormApproximation
+public import FLT.LocalClassFieldTheory.UnitNormSequence
+public import FLT.LocalClassFieldTheory.UnitNormSurjectivity
 public import FLT.LocalClassFieldTheory.UnramifiedCarryNormalization
 public import FLT.LocalClassFieldTheory.UnramifiedCarryTorsion
 public import FLT.LocalClassFieldTheory.UnramifiedCharacterDescent
