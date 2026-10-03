@@ -312,3 +312,19 @@ The second stage's polynomial can become reducible after passing to the first
 stage's residue field. Thus C3a's irreducible-reduction quotient theorem alone
 does not prove C3c1/C3c2. No common-stage or separable-closure claim follows
 from the completed union lemmas without these constructions.
+
+## W13 construction progress
+
+C3c1 uses the prescribed root's minimal polynomial instead of a general
+factor-lifting theorem. A finite domain over a Henselian local ring is local
+(by finite-algebra idempotent decomposition). Its separable special fibre is
+reduced Artinian local, hence a field. Thus the minimal polynomial has
+irreducible separable reduction and divides the original monic polynomial.
+`RaynaudHenselianFactor` is 90/150 lines; foreground build, module-only lint,
+and the three-theorem axiom audit passed on 2026-10-03.
+
+C3c2 is refined into two leaves before implementation: C3c2a (150 lines),
+the actual single-root subalgebra in the prescribed closure, with finite DVR,
+uniformizer and unramified properties; C3c2b (150 lines), a common stage for
+two finite embedded unramified stages, using a primitive generator of the
+second stage and C3c1 over the first. No directed-family property is assumed.
