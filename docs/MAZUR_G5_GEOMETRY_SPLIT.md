@@ -440,3 +440,8 @@ The former 240-line NodePinchingDescent leaf is split: NodeLocalDescent
 (cap 240); NodePinchingDescent (cap 240, global uniqueness and final statement).
 Each cap counts the entire module. Subsequent one-gon and polygon leaves
 retain their 240-line caps. All unimplemented entries remain contracts.
+
+E4d W11 TernaryOpenDescent checked 2026-10-03 00:20 UTC: 103/140 lines;
+foreground build, individual runLinter and all-declaration collectAxioms
+passed (GOAL_MAZUR_W11_TERNARY_AXIOMS.txt, untracked). Pairwise pullback
+compatibility gives arbitrary-target gluing over three open charts.
