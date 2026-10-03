@@ -958,6 +958,7 @@ public import FLT.LocalClassFieldTheory.DiscreteFieldUnits
 public import FLT.LocalClassFieldTheory.DiscreteIntegralUnits
 public import FLT.LocalClassFieldTheory.DiscreteOrder
 public import FLT.LocalClassFieldTheory.DiscreteOrderExact
+public import FLT.LocalClassFieldTheory.DvrAdicTopology
 public import FLT.LocalClassFieldTheory.ExactSequenceCardBound
 public import FLT.LocalClassFieldTheory.FieldUnitInvariants
 public import FLT.LocalClassFieldTheory.FilteredComplexDescent
@@ -1016,6 +1017,9 @@ public import FLT.LocalClassFieldTheory.KernelSectionCorrection
 public import FLT.LocalClassFieldTheory.LocalDegreeFormula
 public import FLT.LocalClassFieldTheory.NormCongruence
 public import FLT.LocalClassFieldTheory.NormFirstOrder
+public import FLT.LocalClassFieldTheory.NormalLatticeDenominators
+public import FLT.LocalClassFieldTheory.NormalLatticeOpen
+public import FLT.LocalClassFieldTheory.NormalLatticePower
 public import FLT.LocalClassFieldTheory.NormalizedOrder
 public import FLT.LocalClassFieldTheory.NormalizedTwoCocycles
 public import FLT.LocalClassFieldTheory.OrderHomScale
