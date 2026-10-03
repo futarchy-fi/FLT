@@ -4,6 +4,106 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
+## W24 acceptance — 2026-10-03T09:27:54.417110+00:00
+
+Checked 2026-10-03T09:27:54.417110+00:00; branch `task/goal-lifts-w24`; base `f3b2fd00`.
+Read-only evidence check: `python3 Scratch/LiftsW24/check.py` (PASS).
+
+**Partial completion: inflation is now proved injective, not bijective.**
+R01's image-kernel exactness, the ramified relative-order theorem, change-of-base
+restriction, corestriction, and fundamental-class comparisons remain unproved.
+E1c7/E1d and the final lifting admission have not been removed.
+
+Twenty new modules contain **1,423 Lean lines and 77 named declarations**.
+Every module is at most 200 lines. All proof commits are local; nothing pushed.
+
+## Proved scope
+
+1. Closed normal invariant field units are identified equivariantly with the
+   units of the fixed field. Every open normal invariant stage has zero H1 by
+   finite Hilbert 90; the existing cohomology colimit proves continuous Hilbert
+   90 for arbitrary Galois extensions, with an actual unit coboundary witness.
+2. Normalization and Hilbert 90 correct an inflated bounding cochain so it
+   vanishes on the restriction kernel. It is then constant on quotient fibers
+   and invariant-valued, and descends continuously. This proves injectivity of
+   the actual categorical H2 map, rather than merely cochain injectivity.
+   Krull-topology continuity and the concrete invariant-coefficient and kernel
+   comparisons discharge every premise in the Galois specialization.
+3. `unramifiedMultiplicativeInflationH2_injective` applies directly to the W23
+   morphism. Its composition with inverse unramified coordinates embeds Q/Z
+   into absolute multiplicative H2. The actual inflated uniformizer carry has
+   exact annihilator nZ. This is not the relative lower bound of Milne III.2.2
+   and does not assert that the absolute embedding is surjective.
+4. Clearing a base-field denominator gives an integral-valued normal K-basis.
+   Its R-span is a finite free Galois-stable submodule of the integral closure.
+   Inverse-indexed coordinates identify its actual action with coinduction
+   from the trivial subgroup. Shapiro proves positive additive cohomology
+   vanishing over both R and Z. This is a constructed lattice, not a claim
+   that the entire integral closure has a normal integral basis. Openness and
+   a corresponding multiplicative unit subgroup remain unproved.
+5. Kernel-image counting proves equal even/odd homology orders for a finite
+   periodic module. The actual cyclic comparison gives the finite-module
+   Herbrand quotient one, including a proof of finiteness. A separate generic
+   exact-sequence theorem proves finiteness and the product cardinal bound
+   needed for relative-order induction; no arithmetic exact sequence is assumed
+   to exist or instantiated without proof.
+
+| Item | Module under FLT.LocalClassFieldTheory | Lines/cap | Commit |
+|---|---|---|---|
+| R01a — fixed-field unit comparison | FieldUnitInvariants | 100/200 | `0b076f6e` |
+| R01a — continuous Hilbert 90 | ContinuousHilbert90 | 80/200 | `0b076f6e` |
+| R01a — normalized two-cocycles | NormalizedTwoCocycles | 66/200 | `0b076f6e` |
+| R01a — continuous boundary descent | InflationBoundaryDescent | 94/200 | `0b076f6e` |
+| R01a — kernel correction | InflationKernelCorrection | 72/200 | `0b076f6e` |
+| R01a — Galois kernel topology | GaloisKernelTopology | 94/200 | `70b327bf` |
+| R01a — arbitrary boundary descent | ContinuousInflationBoundary | 53/200 | `70b327bf` |
+| R01a — actual H2 injectivity | ContinuousInflationH2 | 76/200 | `70b327bf` |
+| R01a — arithmetic coefficient inclusion | GaloisInflationCoefficients | 69/200 | `70b327bf` |
+| R01a — Galois inflation injectivity | GaloisInflationH2 | 51/200 | `70b327bf` |
+| R06 injection — W23 specialization | UnramifiedInflationInjective | 39/200 | `70b327bf` |
+| R04a — finite periodic homology counting | FiniteHomologyCard | 90/200 | `27fc8a93` |
+| R04a — finite-module Herbrand quotient | FiniteCyclicHerbrand | 69/200 | `27fc8a93` |
+| R05 helper — exact-sequence cardinal bound | ExactSequenceCardBound | 45/200 | `27fc8a93` |
+| R02 prerequisite — absolute carries | UnramifiedInflatedCarries | 71/200 | `27fc8a93` |
+| R03a — denominator-cleared normal basis | IntegralNormalBasis | 68/200 | `7c0a8f48` |
+| R03a — integral normal lattice | IntegralNormalLattice | 66/200 | `7c0a8f48` |
+| R03a — equivariant coinduced comparison | IntegralNormalLatticeAction | 114/200 | `7c0a8f48` |
+| R03a — additive acyclicity over R | IntegralNormalLatticeCohomology | 47/200 | `7c0a8f48` |
+| R03a — additive acyclicity over Z | IntegralNormalLatticeIntCohomology | 59/200 | `7c0a8f48` |
+
+## Validation
+
+Every new module M passed separately in the foreground with `LEAN_NUM_THREADS=2`:
+`lake build FLT.LocalClassFieldTheory.M`,
+`lake exe runLinter FLT.LocalClassFieldTheory.M`, and
+`lake env lean Scratch/LiftsW24/MAxioms.lean`.
+All 77 named declarations were audited; their axiom sets are subsets of
+`{propext, Classical.choice, Quot.sound}`. No whole-library lint was run.
+Evidence: `Scratch/LiftsW24/M-{build,lint,axioms}.log`.
+
+`LEAN_NUM_THREADS=2 lake env lean Scratch/LiftsW24/Integration.lean` checks all
+20 new modules together. The final endpoint audit is
+`LEAN_NUM_THREADS=2 lake env lean Scratch/LiftsW24/FinalAxioms.lean`.
+Evidence: `Scratch/LiftsW24/Integration.log` and `Final-axioms.log`.
+
+`python3 Scratch/LiftsW24/check.py` verifies saved validation evidence, source
+caps, declaration audit coverage, allowed axiom sets, sorted imports, allowed
+paths, new-file-only Lean changes, clean tracked state, and final FLT axioms.
+It reads saved logs; it does not rerun Lean. Fresh validation can be repeated
+with `python3 Scratch/LiftsW24/validate.py M ...`, sequentially.
+
+Both combined Lean checks exited 0. The fresh final audit reports:
+
+- `GaloisRepresentation.IsHardlyRamified.lifts` and `FLT.Assembly.hardlyRamifiedLifting`:
+  `[propext, sorryAx, Classical.choice, Quot.sound]`.
+- `PNat.pow_add_pow_ne_pow`:
+  `[Mazur_statement, propext, sorryAx, Classical.choice, Quot.sound]`.
+- All audited new endpoints use only the three standard axioms.
+
+Remaining R01–R06/I02–I03 contracts and their dependencies are in the W24
+split in `LOCAL_CFT_FOUNDATIONS.md`; the complete handoff is
+`LIFTS_W24_RESULT.md` (untracked). No whole gate R01–R06 is marked complete.
+
 ## W23 acceptance — 2026-10-03T08:37:58.585982+00:00
 
 Checked 2026-10-03T08:37:58.585982+00:00; branch `task/goal-lifts-w23`; base `3b918b73`.
