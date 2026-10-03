@@ -445,3 +445,8 @@ E4d W11 TernaryOpenDescent checked 2026-10-03 00:20 UTC: 103/140 lines;
 foreground build, individual runLinter and all-declaration collectAxioms
 passed (GOAL_MAZUR_W11_TERNARY_AXIOMS.txt, untracked). Pairwise pullback
 compatibility gives arbitrary-target gluing over three open charts.
+
+E4d W11 NodePinchingExistence checked 2026-10-03 00:27 UTC: 106/240 lines;
+foreground module build, individual runLinter and collectAxioms on every
+module declaration passed (GOAL_MAZUR_W11_DESCENTS_AXIOMS.txt, untracked).
+Only propext, Classical.choice and Quot.sound occur.
