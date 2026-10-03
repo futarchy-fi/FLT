@@ -5,7 +5,7 @@ exactness and cyclic linear exactness. They do not construct a polygon or
 identify that linear complex with sheaf cohomology. This split develops the
 relative group candidate and isolates its comparison with the smooth locus.
 The historical G1–G4 contracts below retain their original caps.
-The W16 evidence at the end supersedes the historical status tables.
+The W19 validated outcome below supersedes the historical status tables.
 New leaves are at most 240 lines. Unimplemented signatures remain contracts.
 
 Checked 2026-09-30 19:16 UTC by the following read-only API searches (paths
@@ -1055,3 +1055,167 @@ Constant-unit specialization and the unit law do not discharge that gate.
 U11 base-change action laws and U12 translation/graph identification remain
 separate obligations. No caps for these remaining proofs are released here.
 The Mazur assumption and existing assembly consumers are unchanged.
+
+
+## W19 checked affine-point design
+
+`W19_POINTS_PROOF.lean` compiles in full (2026-10-03). U9a
+`ProjectiveLineActionPoints`, cap 160, evaluates both polynomial charts over
+any coefficient algebra. Pullback projections identify the evaluation map;
+polynomial generators give scaling by the unit and its inverse. Tensor
+projections and Laurent generators identify the actual Hopf multiplication
+with multiplication of units. The parameters need not be field-valued.
+This supplies chart computations, not yet universal associativity.
+
+`W19_ASSOC_PROOF.lean` compiles in full before release. U9b
+`ProjectiveLineActionAssociativity`, cap 180, compares both composites on
+the two polynomial charts over `K[T;T⁻¹] ⊗[K] K[T;T⁻¹]`. The tensor spectrum
+isomorphism and three projections identify the actual iterated product and
+associator. U9a computes the two sides as `(a*b)*x` and `a*(b*x)` (with
+inverse units on the second chart); cover extensionality proves `assoc_act`.
+
+`W19_POLYGON_PROOF.lean` compiles before release. U9c
+`PolygonActionAssociativity`, cap 100, tensors the pinching pushout and uses
+the split node leg to cancel the normalization. The product/coproduct
+comparison reduces the result to U9b and commuting cyclic rotations.
+This proves the exact polygon `assoc_act` contract, including n=1.
+
+`W19_TORUS_PROOF.lean` compiles before release. U10a
+`ProjectiveLineActionTorus`, cap 100, identifies the torus inclusion with
+the first affine-chart coordinate of a unit. U9a computes its image under
+universal scaling. The actual tensor spectrum comparison and Hopf
+multiplication prove `gm ◁ torusToComponent ≫ act = μ[gm] ≫ torusToComponent`.
+
+`W19_SMOOTH_PROOF.lean` compiles before release. U10b
+`PolygonActionSmooth`, cap 100, constructs the actual inclusion of the smooth
+open. U10a and the split-group component multiplication identify restriction
+of the polygon action. Transport through `smoothIso`, with `smoothGrpObj` and
+`smoothCommGrpObj` installed explicitly, proves `smooth_restriction`.
+
+`W19_BASECHANGE_PROOF.lean` compiles before release. U11
+`PolygonActionBaseChange`, cap 120, defines the action using the tensorator
+of the actual `Over.pullback g` functor. Generic lax-monoidal naturality and
+coherence transport each proved law. `unit_act` and `assoc_act` hold for any
+scheme morphism g, without a flatness assumption or pushout-preservation
+hypothesis. These are equations for the pulled-back action and group.
+
+`W19_TRANSLATION_PROOF.lean` compiles before release. U12a
+`PolygonActionTranslation`, cap 120, specializes the actual universal action
+at a unit and split component. U8a identifies projective-line specialization;
+U7's component formula and epic normalization prove `translation_eq`: the
+translation is exactly `polygonScaling ≫ polygonRotation`. Node and component
+formulas follow for every field and positive n. This alone does not identify
+the irreducible-component graph of a base-changed polygon.
+
+`W19_H3_PROOF.lean` compiles before release. H3
+`PolygonStructureInclusion`, cap 100, constructs the canonical morphism from
+the polygon structure module to the actual normalization direct image. Its
+map on each open is exactly `p.left.app`. Finite surjective normalization and
+the reduced atlas, transported through `polygonIso`, give schematic dominance
+and injectivity on every open; the sheaf morphism is monic. This does not yet
+prove exactness at the normalization direct image.
+
+`W19_H4_PROOF.lean` compiles before release. H4
+`PolygonBranchDifferenceSheaf`, cap 120, selects the zero and adjacent infinity
+branches over the actual node coproduct. The cocone equations put both maps
+over the polygon; direct-image composition gives restriction morphisms of
+module sheaves. Their difference is oriented zero minus adjacent infinity,
+and `inclusion_difference` proves the composite with H3 vanishes.
+No epimorphism, kernel equality, or H5 short exactness is assumed or claimed.
+
+`W19_IMAGES_PROOF.lean` compiles before release. U12b
+`PolygonTranslationImages`, cap 100, identifies specialization as an
+automorphism and proves exact set-image equations for normalization components
+and nodes, including an explicit one-component theorem. Surjectivity of the
+projective scaling automorphism removes its parameter from the component
+image. Identifying these images with geometric irreducible components after
+base change remains a separate U12 obligation.
+
+`W19_H7_PROOF.lean` compiles before release. Split H7 into vanishing and
+constant sections before claiming its full conclusion. H7a
+`ProjectiveLineCohomologyVanishing`, cap 140, lifts the two homogeneous indices
+to the field universe by an explicit graded renaming isomorphism. The existing
+zero-twist Čech calculation computes actual Ext cohomology; the zero-twist
+structure-module isomorphism and `standardIso` transport vanishing to the
+constructed line. `structure_positive` proves every positive degree vanishes;
+`h1_zero` has the exact `H1 (ProjectiveLine.toBase K)` type. H7b, constant
+sections and the base-linear H0 comparison, remains a separate obligation.
+
+`W19_H0_PROOF.lean` compiles before release. H7b
+`ProjectiveLineConstantSections`, cap 160, uses the actual polynomial
+restrictions of a global section and their Laurent-overlap equality. Positive
+coefficients vanish because inversion gives only nonpositive exponents; the
+constant coefficients agree. Cover extensionality and the specified base map
+prove `constant_sections`; `h0Equiv` identifies the actual H0 with K linearly,
+and `h0Equiv_constants` checks the canonical constants. Together H7a/H7b close H7.
+
+
+## W19 validated outcome (2026-10-03 06:20 UTC)
+
+Checked local implementation head `1b348890`, relative to base `4b52a77e`.
+Checks: `GOAL_MAZUR_W19_VALIDATION.txt`, `GOAL_MAZUR_W19_ALL_AXIOMS.txt`,
+and the compiled `W19_REMAINING_CONTRACT.lean`.
+
+**U9–U11, H3, H4 and H7 are proved. U12 is partial; H5 and the remaining
+genus/moduli/arithmetic work are unfinished.** All commits are local.
+
+| Item | Module under `FLT/Mazur/` | Lines/cap | Commit |
+| --- | --- | --- | --- |
+| U9a | `ProjectiveLineActionPoints` | 128/160 | `d8c0f475` |
+| U9b | `ProjectiveLineActionAssociativity` | 142/180 | `a1c9d444` |
+| U9c | `PolygonActionAssociativity` | 56/100 | `a1c9d444` |
+| U10a | `ProjectiveLineActionTorus` | 70/100 | `83cfc548` |
+| U10b | `PolygonActionSmooth` | 67/100 | `83cfc548` |
+| U11 | `PolygonActionBaseChange` | 72/120 | `83cfc548` |
+| U12a | `PolygonActionTranslation` | 82/120 | `5ae0d44a` |
+| U12b | `PolygonTranslationImages` | 59/100 | `5ae0d44a` |
+| H3 | `PolygonStructureInclusion` | 60/100 | `5ae0d44a` |
+| H4 | `PolygonBranchDifferenceSheaf` | 81/120 | `5ae0d44a` |
+| H7a | `ProjectiveLineCohomologyVanishing` | 102/140 | `1b348890` |
+| H7b | `ProjectiveLineConstantSections` | 123/160 | `1b348890` |
+
+U9 proves both exact universal associativity equations, comparing the two
+projective charts over the tensor of independent Laurent parameters. U10
+proves the torus multiplication formula and the restriction through the actual
+smooth-locus isomorphism. U11 proves unit and associativity for the actual
+pullback action along an arbitrary scheme morphism.
+
+U12a/b identify specialization with uniform scaling followed by rotation and
+prove its set-image formulas on normalization components and nodes, including
+n=1. These do **not** identify the geometric irreducible-component graph after
+field extension. H3/H4 construct the actual normalization and branch-difference
+module-sheaf maps, prove monicity of the first and vanishing of their composite.
+H7 computes actual H0 and H1 of the specified projective line, including the
+canonical scalar comparison and vanishing in every positive degree.
+
+Each module passed its foreground `LEAN_NUM_THREADS=2 lake build MODULE` and
+separate `LEAN_NUM_THREADS=2 lake exe runLinter MODULE`. Final runs have no
+warnings. The combined audit checks all 137 originating declarations, including
+generated helpers, with only `propext`, `Classical.choice`, `Quot.sound`.
+No whole-library build or lint was run. All caps are at most 240, each released
+after its complete proof prototype compiled; imports and scope checks pass.
+
+### Exact remaining proof gates
+
+1. **U12:** identify normalization images with geometric irreducible components
+   and nodes with graph edges; compare the pulled-back polygon/group coordinates
+   and translations by arbitrary extension-field points. Theorems for every
+   chosen base field do not alone prove this base-change identification.
+2. **H5:** compare H3/H4 on the cyclic-node and one-gon charts with the proved
+   normalization-ring equalizers and branch evaluations. Prove local
+   surjectivity and kernel equality, then the actual sheaf short exact sequence.
+   Monicity and a zero composite do not supply those claims.
+3. **H8/H9:** identify actual scalar cohomology of the normalization/node direct
+   images with `Fin n → K` in degree zero, with the specified restriction maps,
+   and prove degree-one vanishing. The typed remaining contracts compile.
+4. **H10–H15:** identify the long-exact-sequence map with cyclic incidence, then
+   prove polygon constants, properness, dimension, genus and geometric-fiber
+   comparison. H7 is projective-line cohomology, not polygon genus.
+
+These remaining gates have no newly released caps. They are unfinished proof
+work, not a permission or infrastructure blocker. Full G1 moduli, G2 arithmetic,
+and final assembly remain unproved. A source check still finds
+`axiom Mazur_statement` at `FLT/Assumptions/Mazur.lean:103`, `mazur_W` at
+`FLT/Assembly/ExistingInputs.lean:28`, and the final consumer at
+`FermatsLastTheorem.lean:24`. No fresh compiled consumer axiom audit or removal
+of the Mazur dependency is claimed.
