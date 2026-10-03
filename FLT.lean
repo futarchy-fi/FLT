@@ -1074,6 +1074,7 @@ public import FLT.KnownIn1980s.PGL2.Proofs
 public import FLT.KnownIn1980s.RepresentationTheory.OddAbsIrred
 public import FLT.KnownIn1980s.Ribet_Lemma.Defs
 public import FLT.KnownIn1980s.Ribet_Lemma.Proofs
+public import FLT.LocalClassFieldTheory.AbelianizationQuotientExact
 public import FLT.LocalClassFieldTheory.AbsoluteCorestriction
 public import FLT.LocalClassFieldTheory.AbsoluteFundamentalClass
 public import FLT.LocalClassFieldTheory.AbsoluteInvariant
@@ -1086,6 +1087,7 @@ public import FLT.LocalClassFieldTheory.AdicIntegerSpace
 public import FLT.LocalClassFieldTheory.AdicIntegerTopology
 public import FLT.LocalClassFieldTheory.AdicSeriesEvaluation
 public import FLT.LocalClassFieldTheory.AdicSeriesField
+public import FLT.LocalClassFieldTheory.CanonicalFixedFieldArtin
 public import FLT.LocalClassFieldTheory.CochainFiniteImage
 public import FLT.LocalClassFieldTheory.CochainHomologyClass
 public import FLT.LocalClassFieldTheory.CochainOpenNormal
@@ -1152,7 +1154,9 @@ public import FLT.LocalClassFieldTheory.FieldUnitInvariants
 public import FLT.LocalClassFieldTheory.FilteredComplexDescent
 public import FLT.LocalClassFieldTheory.FilteredHomologyDescent
 public import FLT.LocalClassFieldTheory.FiniteArtin
+public import FLT.LocalClassFieldTheory.FiniteArtinFieldwiseNorm
 public import FLT.LocalClassFieldTheory.FiniteArtinFixedFieldNorm
+public import FLT.LocalClassFieldTheory.FiniteArtinNormImage
 public import FLT.LocalClassFieldTheory.FiniteCharacteristicZeroCohomology
 public import FLT.LocalClassFieldTheory.FiniteContinuousComparison
 public import FLT.LocalClassFieldTheory.FiniteCyclicHerbrand
@@ -1163,6 +1167,7 @@ public import FLT.LocalClassFieldTheory.FiniteHomologyCard
 public import FLT.LocalClassFieldTheory.FiniteInflationCocycleDescent
 public import FLT.LocalClassFieldTheory.FiniteInflationRestrictionExact
 public import FLT.LocalClassFieldTheory.FiniteKernelCocycleCorrection
+public import FLT.LocalClassFieldTheory.FiniteQuotientArtin
 public import FLT.LocalClassFieldTheory.FiniteRelativeCocycleDescent
 public import FLT.LocalClassFieldTheory.FiniteRelativeSaturation
 public import FLT.LocalClassFieldTheory.FiniteRelativeSequence
@@ -1170,11 +1175,14 @@ public import FLT.LocalClassFieldTheory.FiniteRestrictionComparison
 public import FLT.LocalClassFieldTheory.FiniteSubfieldDvr
 public import FLT.LocalClassFieldTheory.FiniteSubgroupArtin
 public import FLT.LocalClassFieldTheory.FiniteSubgroupCocycleCorrection
+public import FLT.LocalClassFieldTheory.FiniteTateNormTower
 public import FLT.LocalClassFieldTheory.FiniteTateVanishing
 public import FLT.LocalClassFieldTheory.FiniteUnitInvariants
 public import FLT.LocalClassFieldTheory.FixedCoefficientBoundary
 public import FLT.LocalClassFieldTheory.FixedCoefficientCochain
 public import FLT.LocalClassFieldTheory.FixedCoefficientDifferential
+public import FLT.LocalClassFieldTheory.FixedFieldCosetNorm
+public import FLT.LocalClassFieldTheory.FixedFieldUnitInvariants
 public import FLT.LocalClassFieldTheory.FixingSubgroupTopology
 public import FLT.LocalClassFieldTheory.Frobenius
 public import FLT.LocalClassFieldTheory.FrobeniusPowers
@@ -1310,7 +1318,10 @@ public import FLT.LocalClassFieldTheory.SolvableFieldStep
 public import FLT.LocalClassFieldTheory.SolvableNormalStep
 public import FLT.LocalClassFieldTheory.SolvableTateSplice
 public import FLT.LocalClassFieldTheory.SolvableTateVanishing
+public import FLT.LocalClassFieldTheory.SubgroupFixedFieldArtin
+public import FLT.LocalClassFieldTheory.SubgroupFixedFieldCup
 public import FLT.LocalClassFieldTheory.SubgroupFixedFieldTower
+public import FLT.LocalClassFieldTheory.SubgroupLocalField
 public import FLT.LocalClassFieldTheory.SubgroupNormDecomposition
 public import FLT.LocalClassFieldTheory.SubgroupRestrictionNorm
 public import FLT.LocalClassFieldTheory.SubgroupTateVanishing
@@ -1336,6 +1347,8 @@ public import FLT.LocalClassFieldTheory.TateScalarVanishing
 public import FLT.LocalClassFieldTheory.TateTwoClassOperation
 public import FLT.LocalClassFieldTheory.TateTwoClassZero
 public import FLT.LocalClassFieldTheory.TateTwoExtension
+public import FLT.LocalClassFieldTheory.TateZeroDeflation
+public import FLT.LocalClassFieldTheory.TateZeroGroupEquivalence
 public import FLT.LocalClassFieldTheory.TateZeroRestriction
 public import FLT.LocalClassFieldTheory.TateZeroTransfer
 public import FLT.LocalClassFieldTheory.TowerRefinementFibers
@@ -1349,6 +1362,7 @@ public import FLT.LocalClassFieldTheory.TrivialRestrictionNaturality
 public import FLT.LocalClassFieldTheory.TwoCocycleNormSum
 public import FLT.LocalClassFieldTheory.TwoExtensionCochainCup
 public import FLT.LocalClassFieldTheory.TwoExtensionCorestriction
+public import FLT.LocalClassFieldTheory.TwoExtensionGroupEquivalence
 public import FLT.LocalClassFieldTheory.TwoExtensionNegativeEvaluation
 public import FLT.LocalClassFieldTheory.TwoExtensionRepresentativeIso
 public import FLT.LocalClassFieldTheory.TwoExtensionRestriction
