@@ -1373,3 +1373,15 @@ moduli/arithmetic argument and final assembly also remain open: source check
 `rg -n 'Mazur_statement|mazur_W' FLT/Assumptions/Mazur.lean
 FLT/Assembly/ExistingInputs.lean` still finds the assumption and its use.
 No compiled final-consumer axiom audit or Mazur removal is claimed.
+
+
+## W21 separatedness prerequisite: checked split
+
+`W21_COVER_PROOF.lean` compiles before release. S1 `SeparatedOpenCover`,
+cap 80, tests the diagonal on the product cover. The standard cartesian
+diagonal square identifies each restriction with the actual overlap map.
+Since that map is an immersion, a closed image suffices. This is a general
+criterion; it does not assume or yet prove polygon separatedness.
+
+The concrete closed overlap graphs and their chart-pair assembly are separate
+leaves. No cap is released for a leaf until its complete prototype compiles.
