@@ -1182,6 +1182,7 @@ public import FLT.Mazur.OneGonLocalDescent
 public import FLT.Mazur.OneGonLocalizedEqualizer
 public import FLT.Mazur.OneGonNormalization
 public import FLT.Mazur.OneGonNormalizationCoordinates
+public import FLT.Mazur.OneGonNormalizationPullback
 public import FLT.Mazur.OneGonOverlap
 public import FLT.Mazur.OneGonPinchingDescent
 public import FLT.Mazur.OneGonQuotient
