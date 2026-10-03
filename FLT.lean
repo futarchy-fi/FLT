@@ -864,6 +864,7 @@ public import FLT.LocalClassFieldTheory.FrobeniusTower
 public import FLT.LocalClassFieldTheory.HenselianRoots
 public import FLT.LocalClassFieldTheory.IntegralDegreeTwoComparison
 public import FLT.LocalClassFieldTheory.IntegralLowDegreeComparison
+public import FLT.LocalClassFieldTheory.IntegralRationalVanishing
 public import FLT.LocalClassFieldTheory.InvariantStageTransition
 public import FLT.LocalClassFieldTheory.NormalizedOrder
 public import FLT.LocalClassFieldTheory.PowerClassOrder
