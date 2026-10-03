@@ -4,6 +4,126 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
+## W14 acceptance — checked 2026-10-03 02:19 UTC
+
+E1c's formal continuous-cohomology comparison is proved. E1c's arithmetic
+Tate/Artin comparison and E1d remain **BLOCKED**, not ready. Eight new modules
+(750 lines, each ≤200) passed foreground builds and individual-module linting.
+All 52 named declarations, including 27 theorems, were axiom-audited separately
+and together: only propext, Classical.choice and Quot.sound.
+
+| Item | Module under FLT.GaloisRepresentation | Lines/cap | Commit |
+|---|---|---|---|
+| E1c1 | Extensions.HomogeneousOne | 103/200 | `fbccf3eb` |
+| E1c2 | Extensions.HomogeneousTwo | 114/200 | `2ab22ca1` |
+| E1c3 | Extensions.ContinuousH1Comparison | 124/200 | `1c9208f6` |
+| E1c3a | Extensions.ContinuousH1Equiv | 103/200 | `cab6e6d0` |
+| E1c4 | Extensions.ContinuousH2Comparison | 69/200 | `0c2d241f` |
+| E1c5 | Extensions.HomogeneousCup | 106/200 | `169036fd` |
+| E1c5a | Extensions.ContinuousCupComparison | 80/200 | `b5497797` |
+| E1c6 | Extensions.PeuCohomologyComparison | 51/200 | `3f078335` |
+
+`continuousH1LinearEquiv` identifies the linear continuous quotient with actual
+continuous H¹; `continuousH1Equiv` identifies the original splitting quotient,
+with its representative formula proved. The H² comparison represents every
+class by an explicit jointly continuous cocycle and proves zero iff there is
+an actual continuous coboundary witness. `continuousCohomologyCup_class`
+identifies the explicit cup with the existing `ContinuousCohomology.cup`.
+`isPeuRamifiedClass_cohomology_iff` transports the independent E1b predicate
+to the annihilator under this actual cup of inertia-trivial additive characters.
+This is not yet a comparison with an arithmetic local Tate pairing.
+
+The coefficient action and scalar action are explicitly jointly continuous;
+coefficients are discrete. Local compactness of G is used for the degree-two
+inverse/vanishing comparison. These hypotheses hold in the intended
+profinite/discrete setting; no continuity witness is replaced by a set map.
+The H¹ equivalence is linear, not claimed to be a topological isomorphism.
+
+The source-matched split was committed as `36163adb`; the bounded H¹ quotient
+and cup quotient refinements as `98837482` and `3efe37c5`, before those proofs.
+The API audit below finds no constructed local Artin reciprocity map, local
+H² invariant, or Tate local-duality/evaluation theorem in this checkout.
+No arithmetic conclusion was installed as a record field.
+
+Validation: for each new module M, run
+`LEAN_NUM_THREADS=2 lake build M`, then
+`LEAN_NUM_THREADS=2 lake exe runLinter M`, then
+`LEAN_NUM_THREADS=2 lake env lean Scratch/LiftsW14/<ShortName>Axioms.lean`.
+All final per-module logs are warning/error-free, under
+`Scratch/LiftsW14/<ShortName>-{build,lint,axioms}.log`.
+The fresh combined audit was
+`LEAN_NUM_THREADS=2 lake env lean Scratch/LiftsW14/FinalAxioms.lean` (exit 0).
+It imports the eight new modules and the existing compiled final theorem;
+it does not rebuild or lint the whole library. `Final-axioms.log` still gives
+sorryAx for lifts and its adapter, and
+`[Mazur_statement, propext, sorryAx, Classical.choice, Quot.sound]` for
+`PNat.pow_add_pow_ne_pow`. W14 has not removed the lifting admission.
+`python3 Scratch/LiftsW14/check.py` verifies recorded logs, all named audits,
+line caps, source scope, sorted unique imports and clean tracked state;
+use the Lean commands above for fresh execution.
+
+## W14 source match and split — checked 2026-10-03
+
+The contracts below precede their proofs. E1c has a formal cochain-comparison
+part and an arithmetic part; only the former has the necessary foundations.
+Source: GHLS, arXiv:1506.01050v3, Definition 2.1.2 and Example 2.1.4(1),
+PDF pp. 7–8 (`Scratch/LiftsW13/ghls.txt`, lines 312–353). The example identifies
+the Tate pairing through Kummer and Artin with evaluation, then identifies
+unramified annihilators with units. It does not prove those foundations.
+For the formal comparison use the homogeneous-to-inhomogeneous substitution
+`F(g₀,…,gₙ) = g₀ • f(g₀⁻¹g₁,…,gₙ₋₁⁻¹gₙ)` and evaluate at
+`(1,g,gh,…)`. Mathlib's `TopRep.d` uses alternating deletion with initial
+positive sign; `groupCohomology.IsCocycle₁/₂` fixes the explicit conventions.
+Locally compact G and a jointly continuous coefficient action are explicit
+hypotheses (satisfied in the intended profinite/discrete setting).
+
+| Leaf / proposed module under FLT | Contract and source/API | Dependency/status | Cap |
+|---|---|---|---|
+| E1c1 / Extensions.HomogeneousOne | Construct the coefficient TopRep and homogeneous degree-zero/one maps; prove evaluation, inverse, differential formulas. `ContinuousMap.curry`, `coind₁_apply_apply`, `homogeneousCochains.d_apply`. | READY | 200 |
+| E1c2 / Extensions.HomogeneousTwo | Degree-two cochains, reconstruction and degree-one differential; identify the 2-cocycle equation by evaluating the degree-two differential. Same APIs and locally compact uncurrying. | E1c1 | 200 |
+| E1c3 / Extensions.ContinuousH1Comparison | Compare continuous cocycles/principals and the splitting quotient with actual `continuousCohomology 1`. `cohomologyIsoQuot`, `bdryKer`, `cokerπ_eq_zero_iff`. | E1c1/c2 | 200 |
+| E1c3a / Extensions.ContinuousH1Equiv | Descend E1c3 to the splitting quotient and prove bijectivity; explicit representative formula. | E1c3 | 200 |
+| E1c4 / Extensions.ContinuousH2Comparison | Map explicit continuous 2-cocycles to actual H², prove surjectivity and zero iff an actual continuous coboundary exists. `cohomologyIsoQuot`, `cokerπ_surjective`. | E1c2 | 200 |
+| E1c5 / Extensions.HomogeneousCup | Compute the actual homogeneous (1,1) cup under evaluation as the explicit cup; descend the computation to H². `cupCochain_coe`, `cupPair_succ_apply`, `cokerDescBilinear_apply`. | E1c3/c4 | 200 |
+| E1c5a / Extensions.ContinuousCupComparison | Descend the homogeneous cup formula to actual H² via the constructed quotient models. | E1c5 | 200 |
+| E1c6 / Extensions.PeuCohomologyComparison | Express E1b's predicate as vanishing of the actual continuous cohomology cup against inertia-trivial characters. | E1c5 | 200 |
+| E1c7 / SerreWeight.LocalTateComparison | Specialize the genuine local invariant and prove compatibility with Kummer and local Artin evaluation, with Frobenius/sign normalization recorded. | BLOCKED: local CFT, invariant and local Tate duality foundations absent | 200 adapter only |
+| E1d1 / SerreWeight.ExtensionKummer | Deduce prime-field annihilator = valuation-unit classes from E1c7 and the valuation quotient; prove both inclusions. | BLOCKED E1c7 | 200 adapter only |
+| E1d2 / SerreWeight.ExtendedExtensionKummer | Extend the annihilator comparison to the residual field, then transport through actual Hom coordinates using E09c. | BLOCKED E1d1 | 200 adapter only |
+
+API audit (read-only, checkout and pinned Mathlib, 2026-10-03):
+`rg -n -i 'reciprocity|tate.{0,15}duality|local.{0,15}duality|invariant map'
+FLT .lake/packages/mathlib/Mathlib/NumberTheory
+.lake/packages/mathlib/Mathlib/RepresentationTheory` finds quadratic
+reciprocity, descriptive references, and `FLT/PoitouTate.lean:67–74`.
+The latter supplies `localPairing` and an order-formula assumption as record
+fields; it is not a construction or a local-duality theorem. Mathlib's
+`ContCohomology/Sha.lean` defines Sha, not Tate duality. The local-field and
+Brauer files do not construct `inv_K : H²(K,μ_p) → (1/p)ℤ/ℤ`, a local Artin
+map, its inertia/unit compatibility, or the Kummer–cup evaluation theorem.
+`ContCohomology.Basic/CupProduct` do supply the formal homogeneous complex,
+quotient and cup APIs. These positive results do not make E1c7 ready.
+Other search hits do not fill the gate: `CyclicBaseChange/Statements.lean`
+explicitly supplies Frobenius data and defers its Artin construction;
+`GlobalLanglandsConjectures/GLzero.lean` mentions CFT in background prose.
+`FreyCurve/Serre/AtP.lean:123` constructs an inertia-fixed torsion functional,
+not an H² local invariant. The full read-only search and declaration inventory
+are in `Scratch/LiftsW14/api-audit.log` and `api-files.txt`.
+Foundational arithmetic programs need their own source-matched splits;
+the 200-line adapter caps are not bounds on those missing programs.
+No Serre-weight evaluation or arbitrary-p Raynaud leaf is dispatched.
+
+E1d's two directions require arithmetic facts, not just a quotient isomorphism:
+unramified characters kill units under local Artin, and a valuation character
+modulo p detects every non-unit class in Kˣ/(Kˣ)^p. A class whose valuation is
+divisible by p becomes a unit after dividing by a p-th power of a uniformizer.
+The actual local invariant must detect zero in H²(K,μ_p), and its Kummer–cup
+formula must be checked with the selected Artin/Frobenius normalization.
+For extended residual coefficients, one must also transport the pairing and
+unramified dual characters under scalar extension; E09c's vector-space
+comparison alone does not assert compatibility with the arithmetic pairing.
+These are named obligations, not assumptions added to a new Lean record.
+
 ## W13 acceptance — checked 2026-10-03 01:42 UTC
 
 E09c is proved, and E1 has been split and started with E1a/b. Seventeen new
