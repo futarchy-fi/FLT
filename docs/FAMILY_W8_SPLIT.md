@@ -22,20 +22,22 @@ D14 therefore does not discharge the family theorem's residual gate.
 
 ### Re-audited family gates
 
-Paths are relative to `FLT/`. Bounded means an identified assembly/algebra
+Paths are relative to `FLT/`, abbreviating `GaloisRepresentation/HardlyRamified`
+to `HardlyRamified` and `Deformations/RepresentationTheory` to
+`RepresentationTheory`. Bounded means an identified assembly/algebra
 leaf with existing mathematical inputs, not that the entire gate is short.
 Every new proof module has a whole-file cap of 150 lines.
 
 | Gate | Current evidence and exact gap | Classification / next leaf |
 |---|---|---|
-| F01 compatible integral torsion maps | `GroupScheme/RaynaudPadicPowerExtension` proves unique prescribed extensions for p > 2, including 3; `RepresentationTheory/FlatPadic` supplies models of all p-power reductions. Their actual point modules and coefficient transition maps still need identification. | Bounded extension/diagram laws first; actual HR tower assembly remains. |
+| F01 compatible integral torsion maps | `GroupScheme/RaynaudPadicPowerExtension` proves unique prescribed extensions for p > 2, including 3; `RepresentationTheory/FlatPadic` supplies models of all p-power reductions. Their actual point modules and coefficient transition maps still need identification. | W22 constructs each actual torsion model and its killing exponent, and proves extension/diagram laws. Actual generic transitions, rational-place transport and the full HR tower assembly remain. |
 | F02 integral exact levels | `RepresentationTheory/PrimePowerExact` is coefficient exactness only. Integral closure/quotient comparisons exist in `GroupScheme/IntegralClosedImmersion`, `IntegralQuotientIdentification`, and `IntegralQuotientFaithfullyFlat`. | Bounded after actual level maps and their point exactness; no integral exact tower is currently constructed. |
 | F03 p-divisible object | No p-divisible-group definition/level assembly consuming F01/F02 found in `FLT/`. | Missing definitions and construction, larger than a ready wrapper. |
 | F04 weight-two comparison | No period-ring/de Rham comparison theorem computing the two graded ranks from these levels found in `FLT/`. | Large missing p-adic Hodge theory. C5 gives maps, not Hodge weights. |
 | F05 arbitrary coefficient domains | `HardlyRamified/NormalizedOrder` constructs normalization, topology and fraction field for **3 only**. `Family` quantifies over arbitrary odd p and keeps the original R. | General-prime normalization can be ported in bounded leaves; HR/base-change and original embedding transport remain separate. |
-| F06a p = 3 residual branch | `Assembly/PrimePowerSortingProof.primePowerSortedExtensionExists` and `HardlyRamified/ModThreeSorted.mod_three_of_sortedExtensionExists` are axiom-clean. They give a trivial quotient, hence reducibility; the legacy `mod_three` theorem is still admitted. | READY: unconditional quotient and residual non-irreducibility from proved sorting. No p=3 D14 argument is needed for this conclusion. |
-| F06b p = 3 characteristic zero | `Assembly/ThreeAdicTrace.trace_eq_one_add_det_of_sorted_inputs` is axiom-clean; proved sorting supplies both its inputs. | READY: unconditional trace and Frobenius trace. This is not family existence or an equivalence with the split representation. |
-| F06c p > 3 residual input | `HardlyRamified/AbsoluteIrreducibility.isAbsolutelyIrreducible` derives absolute irreducibility **from irreducibility**. D14 needs the explicit mod-p determinant comparison. | READY: HR determinant and D14 adapter for an already irreducible finite residual representation. |
+| F06a p = 3 residual branch | `Assembly/PrimePowerSortingProof.primePowerSortedExtensionExists` and `HardlyRamified/ModThreeSorted.mod_three_of_sortedExtensionExists` are axiom-clean. They give a trivial quotient, hence reducibility; the legacy `mod_three` theorem is still admitted. | Implemented W22 in `ModThreeProved`: unconditional quotient and residual non-irreducibility from proved sorting. |
+| F06b p = 3 characteristic zero | `Assembly/ThreeAdicTrace.trace_eq_one_add_det_of_sorted_inputs` is axiom-clean; proved sorting supplies both its inputs. | Implemented W22 in `ThreeAdicTraceProved`: unconditional trace and Frobenius trace over original Type-0 coefficient domains. This is not family existence or a split equivalence. |
+| F06c p > 3 residual input | `HardlyRamified/AbsoluteIrreducibility.isAbsolutelyIrreducible` derives absolute irreducibility **from irreducibility**. D14 needs the explicit mod-p determinant comparison. | Implemented W22 in `ResidualCyclotomicDeterminant` and `ResidualCyclotomicRestriction`: the HR endpoint handles every odd prime by excluding 3 using the proved contradiction. It still requires residual irreducibility. |
 | F06d omitted irreducible-reduction cases | Blueprint `ch03freyreduction.tex:189–211` assumes irreducible reduction; `Family.mem_isCompatible` does not. Residual reducibility does not imply the original extension splits. p=2 is excluded by `Odd p`; W21's p=2 restriction lemma is not a family case. | Mathematical scope gap. Need separate reducible-residual family construction or another argument, not an extra assumption. |
 | F07 potential modularity | No theorem supplies the totally real, locally controlled extension and modular realization for these original inputs. | Large missing theory; D14 is one input only. |
 | Moret–Bailly | `MoretBailly.statement` is admitted and covers the prime-field elliptic-curve formulation, not arbitrary finite residual fields. | Large geometric existence theorem plus coefficient-scope work; cannot use it in an axiom-clean leaf. |
@@ -47,7 +49,7 @@ Every new proof module has a whole-file cap of 150 lines.
 | F14 exact family packaging | E, all σ members, compatibility, every integral model, and original equivalence are still absent. | Bounded only after F08–F13; no conclusion-bearing record may replace them. |
 | F15 admission replacement | The old theorem must delegate to an axiom-clean theorem with its exact signature. | Integration blocked by this task's edit scope until a later change to `Family.lean`; mathematical gates remain first. |
 
-### Ready implementation order
+### W22 bounded implementation order
 
 1. `HardlyRamified/ModThreeProved`: specialize proved sorting to the original
    mod-three quotient statement and prove residual non-irreducibility.
@@ -55,16 +57,46 @@ Every new proof module has a whole-file cap of 150 lines.
    original-order trace and Frobenius trace statements. Keep domain and universe
    scope explicit; do not claim the broader legacy theorem is replaced.
 3. `HardlyRamified/ResidualCyclotomicRestriction`: derive the actual modular
-   determinant and absolute restriction from HR plus residual irreducibility
-   for p > 3, with no supplied trace/spectrum/model input.
+   determinant and absolute restriction from HR plus residual irreducibility,
+   with no supplied trace/spectrum/model input. The proved p=3 contradiction
+   derives p > 3 from oddness and irreducibility, eliminating a separate
+   large-prime assumption at the HR endpoint.
+   Split the coefficient-map reduction into
+   `HardlyRamified/ResidualCyclotomicDeterminant` (cap 150) before the
+   restriction adapter, so the canonical mod-p comparison is independently reusable.
 4. `GroupScheme/PadicIntegralTransition`: choose the proved unique extension
    and prove diagram compatibility on actual finite-flat p-power models.
    This is the bounded functorial input to F01, not an HR p-divisible tower.
+
+5. `HardlyRamified/TorsionFlatModels` (cap 150): unpack flatness at each
+   actual p-power quotient into a finite-flat model with the original local
+   Galois module, deriving its killing exponent. This supplies models for
+   F01; coefficient transition maps and integral exactness remain separate.
 
 The p=3 **family existence** branch is not certified bounded by this audit.
 The two p=3 ready leaves settle its quotient/trace prerequisites; selecting
 one common family and identifying its original, possibly nonsplit member
 still requires F08–F14 or a separate explicit construction.
+
+
+### W22 validation checkpoint
+
+The six bounded modules above are implemented, 49–59 lines each (cap 150).
+`W22_MODULES.txt` records the full module names. Individual foreground
+`LEAN_NUM_THREADS=2 lake build MODULE` and
+`LEAN_NUM_THREADS=2 lake exe runLinter MODULE` runs pass; no whole-library
+build or lint ran. `W22_AXIOMS.lean` audits all twelve new named declarations;
+`W22_FINAL_CHECKS.py` checks declaration coverage, caps, scope, logs and imports.
+See `FAMILY_W22_DONE.md` for the checked-at timestamp, commits and validation.
+Checked at 2026-10-03 11:36:34 UTC by
+`python3 W22_FINAL_CHECKS.py`: all twelve declarations use only `propext`,
+`Classical.choice`, and `Quot.sound`. The old family source is unchanged.
+
+The F01 pieces deliberately expose their remaining interface: the actual HR
+models live over its rational completion, whereas `padicExtension` is over
+`ℤ_[p]` and `ℚ_[p]`. Transport of the selected models and actual quotient-tensor
+inclusion/reduction maps is still needed before applying the diagram theorem.
+No compatible integral level tower or p-divisible object is claimed here.
 
 
 ## W21 implemented boundary — 2026-10-03

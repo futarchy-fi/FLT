@@ -436,6 +436,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.LiftDomainFree
 public import FLT.GaloisRepresentation.HardlyRamified.LiftDomainResidue
 public import FLT.GaloisRepresentation.HardlyRamified.LiftPrimeAvoidingP
 public import FLT.GaloisRepresentation.HardlyRamified.ModThree
+public import FLT.GaloisRepresentation.HardlyRamified.ModThreeProved
 public import FLT.GaloisRepresentation.HardlyRamified.ModThreeSorted
 public import FLT.GaloisRepresentation.HardlyRamified.NormalizedOrder
 public import FLT.GaloisRepresentation.HardlyRamified.PointFieldBaseChange
@@ -449,6 +450,8 @@ public import FLT.GaloisRepresentation.HardlyRamified.PureSortedQuotient
 public import FLT.GaloisRepresentation.HardlyRamified.RationalComplexConjugation
 public import FLT.GaloisRepresentation.HardlyRamified.RationalRamificationBridge
 public import FLT.GaloisRepresentation.HardlyRamified.ResidualCharacteristic
+public import FLT.GaloisRepresentation.HardlyRamified.ResidualCyclotomicDeterminant
+public import FLT.GaloisRepresentation.HardlyRamified.ResidualCyclotomicRestriction
 public import FLT.GaloisRepresentation.HardlyRamified.ResidualGlobalModel
 public import FLT.GaloisRepresentation.HardlyRamified.ResidualOddness
 public import FLT.GaloisRepresentation.HardlyRamified.ResidualPointModule
@@ -457,9 +460,11 @@ public import FLT.GaloisRepresentation.HardlyRamified.RibetAdapters
 public import FLT.GaloisRepresentation.HardlyRamified.TameInertiaCyclic
 public import FLT.GaloisRepresentation.HardlyRamified.ThreeAdicAlgebra
 public import FLT.GaloisRepresentation.HardlyRamified.ThreeAdicDegree
+public import FLT.GaloisRepresentation.HardlyRamified.ThreeAdicTraceProved
 public import FLT.GaloisRepresentation.HardlyRamified.ThreeGroupConjugation
 public import FLT.GaloisRepresentation.HardlyRamified.ThreeGroupLocalUnramified
 public import FLT.GaloisRepresentation.HardlyRamified.Threeadic
+public import FLT.GaloisRepresentation.HardlyRamified.TorsionFlatModels
 public import FLT.GaloisRepresentation.HardlyRamified.TraceLeaves
 public import FLT.GaloisRepresentation.HardlyRamified.TraceReducibility
 public import FLT.GaloisRepresentation.HardlyRamified.TrivialPrimeFiltration
@@ -673,6 +678,7 @@ public import FLT.GroupScheme.PadicHopfPatching
 public import FLT.GroupScheme.PadicIdentityComponentAntipode
 public import FLT.GroupScheme.PadicIdentityComponentHopf
 public import FLT.GroupScheme.PadicIdentityComponentModel
+public import FLT.GroupScheme.PadicIntegralTransition
 public import FLT.GroupScheme.PadicLatticePatching
 public import FLT.GroupScheme.PadicLocalPresentation
 public import FLT.GroupScheme.PadicModulePatching
