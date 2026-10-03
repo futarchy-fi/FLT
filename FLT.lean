@@ -509,6 +509,7 @@ public import FLT.GroupScheme.FrobeniusSubalgebra
 public import FLT.GroupScheme.GenericFiberDenominator
 public import FLT.GroupScheme.GenericFiberMapUnique
 public import FLT.GroupScheme.GenericFiberPrimitiveDenominator
+public import FLT.GroupScheme.GenericFiberScaledMultiplication
 public import FLT.GroupScheme.GenericFieldChange
 public import FLT.GroupScheme.GenericMorphismScalarExtension
 public import FLT.GroupScheme.GlobalModel
@@ -659,6 +660,7 @@ public import FLT.GroupScheme.RaynaudQuotientSpecialFiber
 public import FLT.GroupScheme.RaynaudRankThreeClassification
 public import FLT.GroupScheme.RaynaudRankThreeExtension
 public import FLT.GroupScheme.RaynaudRigidity
+public import FLT.GroupScheme.RaynaudScalingValuation
 public import FLT.GroupScheme.RaynaudSplitting
 public import FLT.GroupScheme.RaynaudStageFractionField
 public import FLT.GroupScheme.RaynaudTorsionFiltration

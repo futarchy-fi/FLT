@@ -259,3 +259,29 @@ identify the norm with cyclotomic inertia, and transport residues to the fixed
 S5a checked 2026-10-02 23:14 UTC: foreground build, individual module lint and
 `lake env lean W9_S5A_AXIOMS.lean` pass (95/220 lines; all five theorems use
 only standard axioms). S5b–S5d remain blocked; no classification is claimed.
+
+## W12 refinement of the C3/C5 construction gates
+
+Source checked 2026-10-03: `Scratch/raynaud1974.txt`, pp.266–268,
+§3.3(a), Proposition 3.3.2 and Theorem 3.3.3. The source proves uniqueness
+using presentations of maximal/minimal models carrying the field action,
+then dévissage; it does not supply the proposed direct primitive-denominator
+Hopf argument. Constructing presentations using C5 and then proving C5 from
+those presentations would be circular. The maximal/minimal-model route must
+construct their actions independently (Proposition 3.3.1).
+
+The following are subdivisions, with whole-module caps. They do not assume
+the denominator obstruction or mark C3/C5 complete.
+
+| Leaf | Cap | Endpoint | Remaining input |
+|---|---:|---|---|
+| C5c1 scaled multiplication | 150 | Derive unit and multiplication identities for C5b's actual integral numerator; a positive denominator gives square-zero products modulo the uniformizer. | Generic algebra map and flat target only. |
+| C5c2 numerical coordinate bound | 100 | In the source's cyclic valuation relations, a nonzero nonnegative scaling valuation forces p−1 ≤ e. | Actual presentations and compatible coordinate scaling must still be constructed. |
+| C5c3 Hopf obstruction | 150 per further leaf | Deduce the bound for arbitrary prescribed p-torsion generic maps. | Either a separate Hopf proof or independent maximal/minimal models, presentations and dévissage; C5c1/C5c2 alone do not suffice. |
+| C3d1 directed-union DVR | 150 | The supremum of directed embedded DVR stages with the same base uniformizer is a DVR. | C3c must still construct a directed family containing all required stages. |
+| C3f1 directed-union Henselianity | 150 | A directed union of local Henselian stages is Henselian. | Actual stages must be shown Henselian and inclusions local. |
+
+C5d/C5e remain downstream of C5c3. C3c (compatible common unramified
+stage), C3e (separably closed residue field) and final C3f tower packaging
+remain construction obligations. A theorem about a supplied directed family
+does not construct the strict henselization.
