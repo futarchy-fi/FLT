@@ -932,6 +932,7 @@ public import FLT.LocalClassFieldTheory.UnramifiedNormal
 public import FLT.LocalClassFieldTheory.UnramifiedOrderCohomology
 public import FLT.LocalClassFieldTheory.UnramifiedOrderMap
 public import FLT.LocalClassFieldTheory.UnramifiedOrderSequence
+public import FLT.LocalClassFieldTheory.UnramifiedOrderTower
 public import FLT.LocalClassFieldTheory.UnramifiedPolynomial
 public import FLT.LocalClassFieldTheory.UnramifiedStageFrobenius
 public import FLT.LocalClassFieldTheory.UnramifiedStageOrderH2
