@@ -850,6 +850,7 @@ public import FLT.LocalClassFieldTheory.ContinuousExactCoefficients
 public import FLT.LocalClassFieldTheory.ContinuousStageBoundary
 public import FLT.LocalClassFieldTheory.ContinuousStageDiagram
 public import FLT.LocalClassFieldTheory.CyclicCarry
+public import FLT.LocalClassFieldTheory.CyclicCarryConnecting
 public import FLT.LocalClassFieldTheory.DescendedCochain
 public import FLT.LocalClassFieldTheory.FilteredComplexDescent
 public import FLT.LocalClassFieldTheory.FilteredHomologyDescent
