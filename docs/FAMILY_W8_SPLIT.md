@@ -1816,3 +1816,29 @@ freshness, sorted imports, edit scope and unchanged `Family.lean`.
 The family theorem still depends on sorryAx; W23 does not close F03/F04 or
 construct a compatible family. Full local evidence and exact scope are in
 `FAMILY_W23_DONE.md`, kept untracked outside FLT as requested.
+
+## W24 next family gates (split before implementation)
+
+Each new module is capped at 150 complete source lines. Dependency order:
+
+1. F03 `PadicPowerCardinality`: calculate the size of the p-power quotient of
+   a finite free p-adic module, retaining the original module and scalar ring.
+2. F03 `TorsionLevelRank`: identify the rank of the actual chosen integral
+   model with its generic point count, and calculate its height from the
+   original coefficient degree and rank-two module.
+3. F03 `PDivisibleSystem`: define finite-flat p-divisible systems using
+   coherent closed inclusions, faithfully flat reductions, actual kernel
+   equations and multiplication identities, with the level-rank condition.
+   These are defining axioms of the object; the HR constructor must prove
+   every axiom from W23 and the cardinality calculation.
+4. F03 `TorsionPDivisible`: assemble the original HR models into that object.
+5. F05 universe transport: first establish bounded module-coordinate transport
+   into Type 0; then investigate coefficient-universe transport separately.
+   Split any coefficient equivalence/HR transport implementation before coding.
+6. F06: inspect reducible residual and p=3 endpoints for a bounded substantive
+   leaf. A trace identity alone never identifies a nonsplit representation
+   with the split member of a compatible family.
+
+F04 period rings and p-adic comparison remain large missing theory; no ready
+bounded leaf is currently supplied. The compatible-family admission stays
+outside the permitted edit scope and is not discharged by object assembly.
