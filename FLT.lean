@@ -940,6 +940,7 @@ public import FLT.KnownIn1980s.PGL2.Proofs
 public import FLT.KnownIn1980s.RepresentationTheory.OddAbsIrred
 public import FLT.KnownIn1980s.Ribet_Lemma.Defs
 public import FLT.KnownIn1980s.Ribet_Lemma.Proofs
+public import FLT.LocalClassFieldTheory.AcyclicOpenUnits
 public import FLT.LocalClassFieldTheory.AdicFractionFieldComplete
 public import FLT.LocalClassFieldTheory.AdicGaloisContinuity
 public import FLT.LocalClassFieldTheory.AdicIntegerSpace
@@ -1044,6 +1045,7 @@ public import FLT.LocalClassFieldTheory.LocalExpHomeomorph
 public import FLT.LocalClassFieldTheory.LocalExpIsometry
 public import FLT.LocalClassFieldTheory.LocalExpLogInverse
 public import FLT.LocalClassFieldTheory.LocalExpMultiplicative
+public import FLT.LocalClassFieldTheory.LocalExpOpen
 public import FLT.LocalClassFieldTheory.LocalExpRadius
 public import FLT.LocalClassFieldTheory.LocalIntegralInverse
 public import FLT.LocalClassFieldTheory.LocalIntegralSeries
@@ -1055,6 +1057,9 @@ public import FLT.LocalClassFieldTheory.LocalSeriesComparison
 public import FLT.LocalClassFieldTheory.NormCongruence
 public import FLT.LocalClassFieldTheory.NormFirstOrder
 public import FLT.LocalClassFieldTheory.NormalLatticeDenominators
+public import FLT.LocalClassFieldTheory.NormalLatticeExpDomain
+public import FLT.LocalClassFieldTheory.NormalLatticeExpOpen
+public import FLT.LocalClassFieldTheory.NormalLatticeExpUnits
 public import FLT.LocalClassFieldTheory.NormalLatticeOpen
 public import FLT.LocalClassFieldTheory.NormalLatticePower
 public import FLT.LocalClassFieldTheory.NormalizedOrder
