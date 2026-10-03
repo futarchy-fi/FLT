@@ -861,6 +861,7 @@ public import FLT.LocalClassFieldTheory.UnramifiedExistence
 public import FLT.LocalClassFieldTheory.UnramifiedGaloisExistence
 public import FLT.LocalClassFieldTheory.UnramifiedGaloisLimit
 public import FLT.LocalClassFieldTheory.UnramifiedInertiaConverse
+public import FLT.LocalClassFieldTheory.UnramifiedInertiaKernel
 public import FLT.LocalClassFieldTheory.UnramifiedIntegralModel
 public import FLT.LocalClassFieldTheory.UnramifiedLocalInertia
 public import FLT.LocalClassFieldTheory.UnramifiedNormal
