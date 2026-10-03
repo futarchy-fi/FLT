@@ -11,8 +11,11 @@ branch audit, not a fresh audit of GitHub main or the final compiled theorem.
   `PolygonAtlasSmoothLocus`, `PolygonSmoothLocus` give the specified polygon
   comparison, exact smooth locus and its commutative group. The geometry
   split lists the node/one-gon atlas and descent prerequisites.
-- W14 dispatch: U1 scaling naturality (160), U2 node scaling (240),
-  H1 incidence kernel/cokernel (160). All caps include helpers.
+- W14 completed U1 scaling naturality (105/160, `3b763ba8`), U2 node scaling
+  (139/240, `005eeca7`), H1 incidence kernel/cokernel (75/160, `d8a4622f`).
+  Checked 2026-10-03 01:40 UTC: each module build/lint passed; all 64 new
+  declarations passed the axiom audit reproduced in the group split.
+  The phase split was committed first as `dc83a262`. All caps include helpers.
 - U3–U12 whole-polygon action and its base-change laws, H2–H15 normalization
   sheaves/cohomology/properness/dimension/genus are blocked as detailed there.
   The proposed cap is 240 per module; unresolved helper proofs must be split

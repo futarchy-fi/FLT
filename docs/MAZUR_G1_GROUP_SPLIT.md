@@ -1,4 +1,4 @@
-# G1: the relative smooth group frontier
+# G1 after G5: polygon action, genus and the remaining Mazur gates
 
 P4 (`PolygonNodeEqualizer`) and P5 (`PolygonIncidence`) supply local ring
 exactness and cyclic linear exactness. They do not construct a polygon or
@@ -177,10 +177,10 @@ lines, including imports, comments, helper declarations and proofs.** Sketches
 with future names are design contracts, not compiled Lean. A blocked row cannot
 be implemented by taking its conclusion as a hypothesis or record field.
 Ready means its mathematical proof and required APIs are identified; it does
-not mean a proof has compiled. W14 dispatch order is U1, U2, H1, at most three
+not mean a proof has compiled. The completed W14 dispatch order was U1, U2, H1, at most three
 implementation leaves this wave. Commit this phase artifact before proofs.
 
-### U1 — coefficient naturality of chart scaling, cap 160, READY
+### U1 — coefficient naturality of chart scaling, cap 160, implemented
 
 New `PolygonScalingNaturality`; commutative rings R,S, `f : R →+* S`, `a : Rˣ`:
 
@@ -201,7 +201,7 @@ Dependencies: `PolygonChartScaling`, Laurent polynomial API. This is the
 coefficient compatibility needed to use G3 over parameter rings. Source:
 DR II.1.12(b)'s multiplication, written in the two normalization coordinates.
 
-### U2 — reciprocal scaling of node functions, cap 240, AFTER U1
+### U2 — reciprocal scaling of node functions, cap 240, implemented
 
 New `PolygonNodeScaling`; `A := PolygonNodeEqualizer.A`. Construct:
 
@@ -242,14 +242,14 @@ G4 split group. Tensor notation denotes products in the over-category.
 | U9 `PolygonActionAssociativity` | `theorem mul_act : (μ[G] ▷ P) ≫ act = (α_ G G P).hom ≫ (G ◁ act) ≫ act` | U7/U6 with two parameter factors, U1/U2 multiplication, rotation commutation. |
 | U10 `PolygonActionSmoothRestriction` | `theorem smooth_act : (e.hom ⊗ₘ ι) ≫ act = μ[Psm] ≫ ι` | Here e : Psm ≅ G is G5 smoothIso; compare on every pair of torus components. |
 | U11 `PolygonActionBaseChange` | `theorem baseChange_action_laws : ActionLaws (baseChangedAct g)` | U8/U9 and actual pullback product comparisons; arbitrary scheme g after action exists. Define ActionLaws with the two equations, then prove it. |
-| U12 `PolygonActionGraph` | `theorem component_act : component i ≫ translation a j = scaling a ≫ component (i+j)` | U7 and smooth restriction; identify DR graph rotations, including n=1. |
+| U12 `PolygonActionGraph` | `theorem component_act : component i ≫ translation a j = scaling a ≫ component (i+j)` | U7 and smooth restriction over extension fields; identify DR graph rotations, including n=1. |
 
 U3–U6 caps are dispatch limits, not evidence that all helpers fit. Before each
 is released, freeze its typed maps and source-local proof; if a generic descent
 lemma needs more than 240 lines, split that proof first. U6 in particular remains
 a source-design gate, not a ready theorem inferred from G5.
 
-### H1 — incidence kernel and cokernel, cap 160, READY
+### H1 — incidence kernel and cokernel, cap 160, implemented
 
 New `PolygonIncidenceQuotient`; field K, n>0:
 
@@ -338,6 +338,51 @@ replacement theorem does not change the final declaration's dependencies.
 W14's new-module-only rule prohibits that edit in this wave. It is unnecessary
 to prove the full cardinal-bound axiom if the sufficient prime-torsion input is
 proved and the consumer rewired. Other `sorryAx` inputs have independent queues.
+
+## W14 implementation evidence
+
+Checked 2026-10-03 01:40 UTC. The phase split was committed as `dc83a262`
+before implementation. No further implementation leaf is released by this wave;
+U3/U4/H2/H6 require the typed API checks recorded above.
+
+| Leaf | Module | Lines/cap | Commit | Audited declarations |
+| --- | --- | --- | --- | --- |
+| U1 | `PolygonScalingNaturality` | 105/160 | `3b763ba8` | 13 |
+| U2 | `PolygonNodeScaling` | 139/240 | `005eeca7` | 33 |
+| H1 | `PolygonIncidenceQuotient` | 75/160 | `d8a4622f` | 18 |
+
+All three passed their foreground build and individual lint commands below.
+The combined `collectAxioms` audit checked 64 declarations, including generated
+helpers: only `propext`, `Classical.choice`, `Quot.sound`. The incidence theorem
+is not a polygon genus theorem. `universal` targets the node over the Laurent
+ring, without asserting the still-missing tensor/base-change comparison.
+
+Reproduce the axiom check by saving this block outside the library and running
+`LEAN_NUM_THREADS=2 lake env lean PATH` (after the three module builds):
+
+```lean
+import FLT.Mazur.PolygonNodeScaling
+import FLT.Mazur.PolygonIncidenceQuotient
+import Lean.Util.CollectAxioms
+
+open Lean Elab Command in
+run_cmd do
+  let env ← getEnv
+  let modules := #[`FLT.Mazur.PolygonScalingNaturality,
+    `FLT.Mazur.PolygonNodeScaling, `FLT.Mazur.PolygonIncidenceQuotient]
+  let allowed := #[`propext, `Classical.choice, `Quot.sound]
+  for mod in modules do
+    let some idx := env.getModuleIdx? mod | throwError "Missing module {mod}"
+    let mut count := 0
+    for (name, _) in env.constants.toList do
+      if env.getModuleIdxFor? name == some idx then
+        let axioms ← collectAxioms name
+        unless axioms.all allowed.contains do
+          throwError "Disallowed axioms for {name}: {axioms}"
+        count := count + 1
+    if count == 0 then throwError "No declarations checked for {mod}"
+    logInfo m!"CHECKED {mod}: {count} declarations"
+```
 
 ## Validation for implementation leaves
 
