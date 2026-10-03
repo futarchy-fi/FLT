@@ -66,7 +66,7 @@ universal representation; it must not be an input assuming lift existence.
 | T1 / Deformations/RepresentationTheory/PadicIdealCofinal | `theorem exists_p_pow_le_of_isOpen (I : Ideal A) (hI : IsOpen (I : Set A)) : ∃ n : ℕ, Ideal.span {(p : A)^n} ≤ I` for any topological Zp-algebra with continuous scalar multiplication | DONE W10 (`3474e339`): norm_p, continuous algebraMap, powers tend to zero. No finite/free/local assumptions needed. | 120 |
 | T2 / Deformations/RepresentationTheory/PadicIdealOpen | `theorem isOpen_span_p_pow (n : ℕ) : IsOpen (Ideal.span {(p : A)^n} : Set A)` for finite free A with Zp-module topology | DONE W10 (`ab6e2d50`): finite basis, open scalar ideals, continuous linear equivalence. This is topology only. | 250 |
 | T3 / Deformations/RepresentationTheory/FlatPadic | `theorem isFlatAt_iff_powers : ρ.IsFlatAt v ↔ ∀ n : ℕ, (ρ.baseChange (A ⧸ Ideal.span {(p : A)^n})).HasFlatProlongationAt v` | DONE W10 (`8f9a51a8`): T1+T2+FlatCofinal. Coefficients as in lifts. | 100 |
-| E1 / GaloisRepresentation/SerreWeight/ExtensionKummer | `theorem ordinary_extension_unit_iff : UnitKummerClass (extensionClass τ) ↔ IsPeuRamifiee τ` | BLOCKED on E: continuous H1, finite descent, unramified twists, basis invariance; W5.2 alone does not prove it. | 300 |
+| E1 / GaloisRepresentation/SerreWeight/ExtensionKummer | `theorem ordinary_extension_unit_iff : UnitKummerClass (extensionClass τ) ↔ IsPeuRamifiee τ` | BLOCKED on E08/E09 and an independent ramification comparison. E01–E07b now provide explicit continuous classes and finite Galois descent; the Kummer/ordinary dictionary remains. | 300 |
 | S1 / GaloisRepresentation/SerreWeight/Normalization | `serreWeight_ordinary_peu ... : serreWeight p τ = 2`; separate ordinary-tres value p+1 and niveau-two value 2 | BLOCKED on E1+S0+F; independent complete Serre recipe, including exceptional/scalar cases. | 250 |
 | R1 / GaloisRepresentation/SerreWeight/FiniteFlatOrdinary | `theorem finiteFlat_ordinary_peu (hf : IsFiniteFlatModel τ) (ho : HasOrdinaryInertia τ) (hd : HasCyclotomicDet τ) : IsPeuRamifiee τ` | BLOCKED on R0 ordinary extension/unit classification and E. Neither hf nor peu may be defined by the other. | 300 |
 | R2 / GaloisRepresentation/SerreWeight/FiniteFlatInertia | `theorem finiteFlat_inertia_cases (hf : IsFiniteFlatModel τ) (hd : HasCyclotomicDet τ) : HasOrdinaryInertia τ ∨ HasNiveauTwoInertia p τ` | BLOCKED on R0 with coefficient action, e=1 and F. Rank-two and odd-p hypotheses mandatory. | 300 |
@@ -132,16 +132,16 @@ source: the crossed-homomorphism description of H1 and changes of a lift
 in an extension; Kummer theory via Hilbert 90. No Serre-weight or Raynaud
 classification is an input or a claimed consequence.
 
-| Leaf / module | Concrete statement and proof route | Dependency / initial status | Cap |
+| Leaf / module | Concrete statement and proof route | Dependencies / status | Cap |
 |---|---|---|---|
-| E01 / GaloisRepresentation/Extensions/CocycleAction | For an additive G-module and `IsCocycle₁ c`, construct the affine permutation homomorphism `g ↦ (x ↦ g • x + c g)`; its kernel fixes the original action and kills c. | READY; groupCohomology.IsCocycle₁, additive action laws. | 200 |
-| E02 / GaloisRepresentation/Extensions/FiniteDescent | For finite discrete M, continuous c and continuous orbit maps, construct an open normal N and descended action and cocycle on G/N; prove inflation recovers both and G/N is finite. Use E01's kernel, finite intersections of open fibers, and the first isomorphism theorem. | READY after E01; no assumed quotient or descent witness. | 200 |
-| E03 / GaloisRepresentation/Extensions/ChangeSplitting | Prove `c'(g)=c(g)+g•a-a` is a cocycle, is continuous for continuous orbit maps, and define an equivalence relation by this formula; transitivity adds the splitting parameters. | READY; elementary additive action laws and topology. | 200 |
-| E04 / GaloisRepresentation/Extensions/LiftCocycle | Given an injective equivariant additive map i:A→V and a vector v fixed modulo i(A), construct the unique cocycle from `i(c(g))=g•v-v`; replacing v by v+i(a) changes it by the E03 coboundary. | READY after E03; explicit range hypothesis expresses quotient invariance, not existence of a representation/lift. | 200 |
-| E05 / GroupScheme/KummerUnitClass | Independently define `Kˣ / (Kˣ)^n` and its subgroup of classes represented by valuation-ring units; prove representative criterion and invariance under multiplying by nth powers. | READY; QuotientGroup, powMonoidHom and existing exists_unit_factor_iff. | 200 |
-| E06 / GaloisRepresentation/Extensions/ContinuousClass | Form the quotient of continuous cocycles by E03 and prove equality iff change of splitting, plus inflation injectivity for a surjective quotient map with descended action. | Follow-up after E02/E03; action/quotient instances must be matched before dispatch. | 200 |
-| E07a / AbsoluteGaloisGroup/OpenNormalFixedField | For an open normal N in Gal(L/K), with L/K Galois, construct its finite Galois fixed field, the quotient-group equivalence, and its restriction compatibility. | READY after source match: InfiniteGalois.fixingSubgroup_fixedField, isOpen_iff_finite, normalAutEquivQuotient. | 200 |
-| E07b / AbsoluteGaloisGroup/CocycleFiniteGalois | Apply E07a to E02's affine kernel, transport the descended action and cocycle to the actual finite Galois group, and prove inflation recovers the original action and cocycle. | READY after E02/E07a; generic additive finite coefficients. Roots-of-unity identification remains in E08. | 200 |
+| E01 / GaloisRepresentation/Extensions/CocycleAction | For an additive G-module and `IsCocycle₁ c`, construct the affine permutation homomorphism `g ↦ (x ↦ g • x + c g)`; its kernel fixes the original action and kills c. | DONE W11 (`9aec89da`). Uses groupCohomology.IsCocycle₁, additive action laws. | 200 |
+| E02 / GaloisRepresentation/Extensions/FiniteDescent | For finite discrete M, continuous c and continuous orbit maps, construct an open normal N and descended action and cocycle on G/N; prove inflation recovers both and G/N is finite. Use E01's kernel, finite intersections of open fibers, and the first isomorphism theorem. | DONE W11 (`b1b73a90`). Uses E01; no assumed quotient or descent witness. | 200 |
+| E03 / GaloisRepresentation/Extensions/ChangeSplitting | Prove `c'(g)=c(g)+g•a-a` is a cocycle, is continuous for continuous orbit maps, and define an equivalence relation by this formula; transitivity adds the splitting parameters. | DONE W11 (`14f9d412`). Uses elementary additive action laws and topology. | 200 |
+| E04 / GaloisRepresentation/Extensions/LiftCocycle | Given an injective equivariant additive map i:A→V and a vector v fixed modulo i(A), construct the unique cocycle from `i(c(g))=g•v-v`; replacing v by v+i(a) changes it by the E03 coboundary. | DONE W11 (`662c52cb`). Uses E03; explicit range hypothesis expresses quotient invariance, not existence of a representation/lift. | 200 |
+| E05 / GroupScheme/KummerUnitClass | Independently define `Kˣ / (Kˣ)^n` and its subgroup of classes represented by valuation-ring units; prove representative criterion and invariance under multiplying by nth powers. | DONE W11 (`d6408497`). Uses QuotientGroup, powMonoidHom and existing exists_unit_factor_iff. | 200 |
+| E06 / GaloisRepresentation/Extensions/ContinuousClass | Form the quotient of continuous cocycles by E03 and prove equality iff change of splitting, plus inflation injectivity for a surjective quotient map with descended action. | DONE W11 (`35d2bb96`). E02/E03 APIs matched; explicit quotient and inflation injectivity proved. No derived-functor comparison asserted. | 200 |
+| E07a / AbsoluteGaloisGroup/OpenNormalFixedField | For an open normal N in Gal(L/K), with L/K Galois, construct its finite Galois fixed field, the quotient-group equivalence, and its restriction compatibility. | DONE W11 (`5f818f98`). Uses source match: InfiniteGalois.fixingSubgroup_fixedField, isOpen_iff_finite, normalAutEquivQuotient. | 200 |
+| E07b / AbsoluteGaloisGroup/CocycleFiniteGalois | Apply E07a to E02's affine kernel, transport the descended action and cocycle to the actual finite Galois group, and prove inflation recovers the original action and cocycle. | DONE W11 (`3b5d4bac`). Uses E02/E07a; generic additive finite coefficients. Roots-of-unity identification remains in E08. | 200 |
 | E08 / GroupScheme/ContinuousKummerClass | For roots-of-unity coefficients, construct a bijection between E06 continuous classes and E05 power classes using E07b and finite Hilbert 90; prove independence of finite extension and root. | BLOCKED on E06/E07b and separate refinement transport lemmas; split again if those exceed a leaf. | 200 |
 | E09 / GaloisRepresentation/Extensions/OrdinaryTwist | Transport E04 extension classes through an unramified character twist and changes of bases of sub/quotient lines, proving independence of the E05 unit predicate. | BLOCKED on concrete rank-one character/Hom-coefficient API and E08. | 200 |
 
@@ -160,6 +160,33 @@ MODULE`, then `LEAN_NUM_THREADS=2 lake exe runLinter MODULE` individually;
 Classical.choice and Quot.sound. Sorted FLT.lean imports only; no existing
 Lean proof module edits. Validation and resulting commits are recorded in
 `LIFTS_W11_RESULT.md` outside the tracked proof/document tree.
+
+### W11 acceptance — checked 2026-10-03 00:11 UTC
+
+E01–E06 and E07a/b are implemented: eight new modules, 664 total lines,
+58–126 lines per module against each 200-line cap. Each passed a foreground
+`LEAN_NUM_THREADS=2 lake build MODULE` and its own `lake exe runLinter MODULE`.
+All 37 named theorems and all other new definitions/abbreviations (62 named
+declarations total) were axiom-audited; only propext, Classical.choice and
+Quot.sound occur. No existing Lean module changed except FLT.lean imports.
+Checks/logs: `python3 Scratch/LiftsW11/check.py`; module-specific
+`{Action,Descent,Splitting,Lift,Units,Class,Fixed,Galois}-{build,lint,axioms}.log`
+and `Abbrev-axioms.log` in that scratch directory. These are local untracked
+validation artifacts, not files required by downstream imports.
+
+Finite descent now constructs the open normal subgroup, quotient action,
+continuous quotient cocycle, finite Galois fixed field and restriction
+identities. The independent unit subgroup lives in Kˣ/(Kˣ)^n. No theorem
+identifies these units with finite-flat models or peu-ramified extensions.
+E08/E09 remain blocked bridges; their caps describe eventual adapters, not
+a certified bounded proof of the missing root-coefficient or twist theory.
+
+Goal audit: `LEAN_NUM_THREADS=2 lake env lean Scratch/LiftsW11/GoalAxioms.lean`
+(exited 0, existing compiled final theorem) still prints sorryAx for lifts
+and hardlyRamifiedLifting. `PNat.pow_add_pow_ne_pow` still has
+`[Mazur_statement, propext, sorryAx, Classical.choice, Quot.sound]`.
+Evidence: `Scratch/LiftsW11/Goal-axioms.log`; no final-goal dependency was
+removed by these foundation leaves.
 
 ## Historical baseline and admission (2026-09-30)
 
