@@ -1,5 +1,4 @@
 module  -- shake: keep-all --deprecated_module: ignore
-
 public import FLT.AINTLIB.CebotarevDensity.NumberFieldEulerProduct
 public import FLT.AINTLIB.DedekindResidue.AuxiliaryFunction
 public import FLT.AINTLIB.DedekindResidue.CompletedZeta.AnalyticControl
@@ -1163,6 +1162,7 @@ public import FLT.LocalClassFieldTheory.FiniteCyclicHerbrand
 public import FLT.LocalClassFieldTheory.FiniteDvrComplete
 public import FLT.LocalClassFieldTheory.FiniteExtensionDvr
 public import FLT.LocalClassFieldTheory.FiniteExtensionLocalRing
+public import FLT.LocalClassFieldTheory.FiniteHomSum
 public import FLT.LocalClassFieldTheory.FiniteHomologyCard
 public import FLT.LocalClassFieldTheory.FiniteInflationCocycleDescent
 public import FLT.LocalClassFieldTheory.FiniteInflationRestrictionExact
@@ -1251,6 +1251,7 @@ public import FLT.LocalClassFieldTheory.LocalLogUniformConvergence
 public import FLT.LocalClassFieldTheory.LocalScaledCoefficients
 public import FLT.LocalClassFieldTheory.LocalScaledSeries
 public import FLT.LocalClassFieldTheory.LocalSeriesComparison
+public import FLT.LocalClassFieldTheory.NegativeCupArithmetic
 public import FLT.LocalClassFieldTheory.NormCongruence
 public import FLT.LocalClassFieldTheory.NormFirstOrder
 public import FLT.LocalClassFieldTheory.NormalFixedFieldNorm
@@ -1359,6 +1360,7 @@ public import FLT.LocalClassFieldTheory.TransferRepresentativeChange
 public import FLT.LocalClassFieldTheory.TransferRestrictionHomotopy
 public import FLT.LocalClassFieldTheory.TrivialH1Characters
 public import FLT.LocalClassFieldTheory.TrivialRestrictionNaturality
+public import FLT.LocalClassFieldTheory.TwoCocycleInflationSum
 public import FLT.LocalClassFieldTheory.TwoCocycleNormSum
 public import FLT.LocalClassFieldTheory.TwoExtensionCochainCup
 public import FLT.LocalClassFieldTheory.TwoExtensionCorestriction
