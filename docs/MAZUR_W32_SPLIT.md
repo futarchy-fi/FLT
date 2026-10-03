@@ -1,4 +1,4 @@
-# W32: independent marked sections and projective-line H0
+# W32: marked sections, projective-line H0 and canonical operations
 
 Each leaf was prototyped with Lean before promotion; whole-file cap 240.
 Validation commands run in the foreground with LEAN_NUM_THREADS=2, and each
@@ -14,6 +14,8 @@ only propext, Classical.choice and Quot.sound.
 | D05a.3c.3 | ProjectiveLineChartIntersection | Transport the standard Proj cartesian square to the original projective line and identify the entire overlap image. |
 | D05a.3c.4 | ProjectiveLineMarkedSectionGluing | Glue independently constructed sections, make a structure-module morphism, and prove the existing boundedPolynomial map surjective and bijective. |
 | D05a.4a | ProjectiveLineMarkedHZero | Use actual ModuleScalarH in degree zero; prove scalar compatibility through the specified base map and package the polynomial map as a linear equivalence. |
+| D04c.2a | ModuleTensorPowerSection | Form actual pure tensor powers of a section and prove restriction and pullback compatibility, including degree zero. |
+| D04c.2b | DivisorCanonicalOperations | Prove ideal equality and empty-divisor compatibility; extend canonical-section addition from common Cartier charts to every open by sheaf extensionality. |
 
 The overlap constructions use named `pullOverlap` and `pullOverlapAlong`
 definitions. Their bodies are the pullback-composition and equality-transport
@@ -34,3 +36,9 @@ weights. D05b/c requires the tensorized normalization sequence and its maps.
 Generation, projective ratio maps, O(1) pullback and closed immersion in
 D06-D10 remain, including self-incidence for the one-gon and both two-gon nodes.
 No change to Mazur_statement or the final Fermat theorem is asserted here.
+
+The two canonical-operation helpers do not yet prove preservation by
+`divisorLineBundlePowerIso` or polygon `linePowerIso`. The induction prototype
+reached elaboration/kernel timeouts and was not promoted. A next leaf should
+isolate the successor comparison behind generic section-map lemmas before
+specializing its equality transport to divisor powers.

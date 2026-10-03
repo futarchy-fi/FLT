@@ -1647,6 +1647,7 @@ public import FLT.Mazur.DRFiberClassification
 public import FLT.Mazur.DirectImageInjectives
 public import FLT.Mazur.DisjointClosedCoproduct
 public import FLT.Mazur.DisjointStructureCohomology
+public import FLT.Mazur.DivisorCanonicalOperations
 public import FLT.Mazur.DivisorCanonicalSection
 public import FLT.Mazur.DivisorInvertibleSheaf
 public import FLT.Mazur.DivisorLineBundle
@@ -1753,6 +1754,7 @@ public import FLT.Mazur.ModuleSheafUnitCocycleRestrict
 public import FLT.Mazur.ModuleSheafificationTensor
 public import FLT.Mazur.ModuleStalkExact
 public import FLT.Mazur.ModuleSubobjectCoverEquality
+public import FLT.Mazur.ModuleTensorPowerSection
 public import FLT.Mazur.ModuleTensorPullbackRestriction
 public import FLT.Mazur.ModuleUnitCocyclePullback
 public import FLT.Mazur.MultiplicativeGroupDimension
