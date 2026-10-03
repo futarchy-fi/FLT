@@ -30,8 +30,12 @@ public import FLT.AINTLIB.DedekindResidue.ExplicitFormula.WeilAssembly
 public import FLT.AINTLIB.DedekindResidue.ExplicitFormula.ZeroCapture
 public import FLT.AINTLIB.DedekindResidue.Lemma2
 public import FLT.AbsoluteGaloisGroup.CompletionComparison
+public import FLT.AbsoluteGaloisGroup.FiniteTameQuotient
 public import FLT.AbsoluteGaloisGroup.FirstRamificationFiltration
 public import FLT.AbsoluteGaloisGroup.FirstRamificationPGroup
+public import FLT.AbsoluteGaloisGroup.FirstRamificationRestriction
+public import FLT.AbsoluteGaloisGroup.FundamentalCoefficients
+public import FLT.AbsoluteGaloisGroup.FundamentalCyclotomic
 public import FLT.AbsoluteGaloisGroup.FundamentalTame
 public import FLT.AbsoluteGaloisGroup.InertiaComparison
 public import FLT.AbsoluteGaloisGroup.InertiaDescentField
@@ -1161,6 +1165,8 @@ public import FLT.Mazur.OpenSheafFreeComparison
 public import FLT.Mazur.OpenSheafRestriction
 public import FLT.Mazur.OverPoints
 public import FLT.Mazur.PolygonChartScaling
+public import FLT.Mazur.PolygonCyclicAtlas
+public import FLT.Mazur.PolygonCyclicCocone
 public import FLT.Mazur.PolygonIncidence
 public import FLT.Mazur.PolygonNodeBranches
 public import FLT.Mazur.PolygonNodeEqualizer

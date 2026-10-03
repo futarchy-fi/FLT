@@ -9,7 +9,7 @@ W7 F5a checked 20:17 UTC: build, module lint, ten axiom audits passed;
 logs `Scratch/LiftsW7/F5a-{build,lint,axioms}.log`; 92/250 lines.
 Source-lemma leaves, each at most 400 lines including headers. F1–F3
 are DONE (W6); F4a is DONE (W7, RootInertiaTransitivity, cap 300).
-F4 endpoints are DONE (W8); F5–F6 and finite-tower surjectivity remain.
+F1–F6 and finite-tower surjectivity are DONE (W9); integration into lifts remains.
 Caps are hard stop limits, not claims that unimplemented proofs fit.
 This document is capped at 200 lines. No weight definition or classification
 is supplied by this split.
@@ -126,14 +126,14 @@ surjectivity. W7 `FundamentalTame` proves both displayed endpoints (in all
 positive degrees), plus `LocalRamification.tameRootCharacter_surjective`.
 W8 filtration DONE (274/300); finite p-groups and tower stability DONE (228/250).
 W8 pro-p endpoint and explicit compatible-family homeomorphism DONE (235/250).
-BLOCKED: first-group tower surjectivity; exact target and capped split in `BLOCKED.md`.
-Checked 20:59 UTC: all three builds, individual lint and 49 axiom audits passed.
-Evidence: `Scratch/LiftsW8/{Filtration,PGroup,Wild}-{build,lint,axioms}.log`.
+W9 tame quotient DONE (207/250); tower surjectivity DONE (119/250).
+W9 checked 2026-10-02: both builds, module lints and 25 axiom audits passed.
+Evidence: `Scratch/LiftsW9/{Tame,Restriction}-{build,lint,axioms}.log`.
 Anchors: HilbertTheory `IsInertiaField`, `InertiaComparison` restriction
 surjectivity, QuotientGroup `lift`, `quotientKerEquivRange`. Dependencies:
 F1–F3; the existing level-one tame kernel is not enough.
 
-## F5 — finite coefficients and Frobenius conjugacy, READY after W7 F5a, cap 400
+## F5 — finite coefficients and Frobenius conjugacy, DONE (W9), cap 400
 
 New `FLT/AbsoluteGaloisGroup/FundamentalCoefficients.lean`.
 Sources S §2, L V §2. For p prime and r>0, define the subfield
@@ -153,13 +153,13 @@ over k0 (exponent q^r−1 gives niveau f*r); do not identify the two.
 W7 F5a DONE: `RootCharacterResidue` proves algebraic closedness and transports
 characteristic from the completion residue field, via an explicit algebra
 equivalence with its algebraic closure. It also proves existence of a prime
-characteristic. Finite coefficients and Frobenius conjugacy remain to be
-implemented; no arbitrary embedding of all of k into Ω is assumed.
+characteristic. W9 DONE (172/400): build, module lint and 13 axiom audits passed
+2026-10-02; `Scratch/LiftsW9/Coefficients-{build,lint,axioms}.log`; no embedding of all k is assumed.
 Anchors: Mathlib `IsAlgClosed.lift`, `GaloisField`,
 `bijective_frobeniusAlgEquivOfAlgebraic_pow`, `residueFieldMap`.
 Dependencies: W7 F4 surjectivity and W7 F5a residue bridge (both proved).
 
-## F6 — omega-one equals cyclotomic, BLOCKED, cap 400
+## F6 — omega-one equals cyclotomic, DONE (W9), cap 400
 
 New `FLT/AbsoluteGaloisGroup/FundamentalCyclotomic.lean`.
 Sources S §2 and L IV §4. Restrict to K=ℚ and the place over p, transport
@@ -174,11 +174,11 @@ theorem fundamentalCharacter_one_eq_cyclotomic
 Here `omegaOne`, `modCyclotomic` and the completion transport are NEW adapters
 with the displayed common domain I; use the existing cyclotomic action on
 μp, not a character newly defined to equal omega. Include p=2 (both trivial).
-Missing arithmetic lemma for p>2: for primitive ζp, ζp−1 is a uniformizer
-in ℚp(ζp), and reducing σ(ζp−1)/(ζp−1) gives the mod-p cyclotomic value.
-Prove the normalized valuation/ramification bridge in this leaf;
+Existing `LocalCyclotomicTame` supplies the arithmetic for primitive ζp: ζp−1
+has normalized (p−1)-st power, and its reduced ratio is the cyclotomic value.
+Its proved unit comparison supplies the normalization bridge for this leaf;
 no cyclotomic equality may be passed as an input. Dependencies: F1–F5.
-Anchor: FLT's `cyclotomicCharacter.toZMod`; valuation and primitive-root APIs.
+W9 checked 2026-10-02 (75/400): build/lint/five axioms/p=2 passed; `Scratch/LiftsW9/Cyclotomic-{build,lint,axioms}.log`.
 
 ## Rerunnable API evidence and acceptance
 
