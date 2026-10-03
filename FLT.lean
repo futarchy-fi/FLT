@@ -1416,6 +1416,8 @@ public import FLT.Mazur.ProjectiveLineActionPoints
 public import FLT.Mazur.ProjectiveLineActionSpecialization
 public import FLT.Mazur.ProjectiveLineActionTorus
 public import FLT.Mazur.ProjectiveLineCharts
+public import FLT.Mazur.ProjectiveLineCohomologyVanishing
+public import FLT.Mazur.ProjectiveLineConstantSections
 public import FLT.Mazur.ProjectiveLineEndpoints
 public import FLT.Mazur.ProjectiveLineProductCharts
 public import FLT.Mazur.ProjectiveLineProductOverlap

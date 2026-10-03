@@ -1130,3 +1130,21 @@ and nodes, including an explicit one-component theorem. Surjectivity of the
 projective scaling automorphism removes its parameter from the component
 image. Identifying these images with geometric irreducible components after
 base change remains a separate U12 obligation.
+
+`W19_H7_PROOF.lean` compiles before release. Split H7 into vanishing and
+constant sections before claiming its full conclusion. H7a
+`ProjectiveLineCohomologyVanishing`, cap 140, lifts the two homogeneous indices
+to the field universe by an explicit graded renaming isomorphism. The existing
+zero-twist Čech calculation computes actual Ext cohomology; the zero-twist
+structure-module isomorphism and `standardIso` transport vanishing to the
+constructed line. `structure_positive` proves every positive degree vanishes;
+`h1_zero` has the exact `H1 (ProjectiveLine.toBase K)` type. H7b, constant
+sections and the base-linear H0 comparison, remains a separate obligation.
+
+`W19_H0_PROOF.lean` compiles before release. H7b
+`ProjectiveLineConstantSections`, cap 160, uses the actual polynomial
+restrictions of a global section and their Laurent-overlap equality. Positive
+coefficients vanish because inversion gives only nonpositive exponents; the
+constant coefficients agree. Cover extensionality and the specified base map
+prove `constant_sections`; `h0Equiv` identifies the actual H0 with K linearly,
+and `h0Equiv_constants` checks the canonical constants. Together H7a/H7b close H7.
