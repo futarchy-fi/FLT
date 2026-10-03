@@ -1,4 +1,5 @@
 module  -- shake: keep-all --deprecated_module: ignore
+
 public import FLT.AINTLIB.CebotarevDensity.NumberFieldEulerProduct
 public import FLT.AINTLIB.DedekindResidue.AuxiliaryFunction
 public import FLT.AINTLIB.DedekindResidue.CompletedZeta.AnalyticControl
@@ -1085,6 +1086,7 @@ public import FLT.LocalClassFieldTheory.AdicIntegerSpace
 public import FLT.LocalClassFieldTheory.AdicIntegerTopology
 public import FLT.LocalClassFieldTheory.AdicSeriesEvaluation
 public import FLT.LocalClassFieldTheory.AdicSeriesField
+public import FLT.LocalClassFieldTheory.CanonicalFixedFieldArtin
 public import FLT.LocalClassFieldTheory.CochainFiniteImage
 public import FLT.LocalClassFieldTheory.CochainHomologyClass
 public import FLT.LocalClassFieldTheory.CochainOpenNormal
@@ -1309,6 +1311,8 @@ public import FLT.LocalClassFieldTheory.SolvableFieldStep
 public import FLT.LocalClassFieldTheory.SolvableNormalStep
 public import FLT.LocalClassFieldTheory.SolvableTateSplice
 public import FLT.LocalClassFieldTheory.SolvableTateVanishing
+public import FLT.LocalClassFieldTheory.SubgroupFixedFieldArtin
+public import FLT.LocalClassFieldTheory.SubgroupFixedFieldCup
 public import FLT.LocalClassFieldTheory.SubgroupFixedFieldTower
 public import FLT.LocalClassFieldTheory.SubgroupLocalField
 public import FLT.LocalClassFieldTheory.SubgroupNormDecomposition
