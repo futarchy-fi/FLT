@@ -8,9 +8,88 @@ are design sketches, not elaborated declarations or certified size estimates;
 split again before implementation if a proof exceeds the cap. No missing
 theorem may become a structure field, parameter standing for E1c7, or axiom.
 
-Latest accepted scope: see the **W22 proved scope** section below and the
-W22 table in `LIFTS_GOAL_LEDGER.md`. The earlier wave sections record their
-historical state; W22 proves the finite-stage arithmetic they left open.
+Latest accepted scope: see the **W23 proved scope** section below and the
+W23 table in `LIFTS_GOAL_LEDGER.md`. Earlier wave sections record historical
+state; W23 proves the unramified continuous comparison that W22 left open.
+
+## W23 proved scope — 2026-10-03T08:37:58.585982+00:00
+
+Checked 2026-10-03T08:37:58.585982+00:00; branch `task/goal-lifts-w23`; base `3b918b73`.
+**E1c7/E1d remain blocked; the final FLT theorem still depends on sorryAx.**
+
+19 new modules; **1421 Lean lines, 90 named declarations**. Every module is at most
+200 lines. All changes are local commits; nothing pushed.
+
+1. The actual canonical integral units have a discrete continuous Galois action.
+   Inclusion identifies units of an intermediate field with invariants under its
+   fixing subgroup, including the quotient action. The induced cohomology
+   isomorphism connects W22's canonical stages to `invariantStageCohomologyDiagram`.
+   Constructed open stages are cofinal. W22's unit vanishing and
+   `continuousCohomologyColimitIso` prove all positive continuous unit cohomology zero.
+2. `discreteOrder_unramified_tower` gives compatibility on canonical stage inclusions.
+   Every field unit of the union has a finite representative; compatible orders
+   define an actual surjective, Galois-invariant order homomorphism. Its kernel
+   is exactly the integral units. The short exact continuous cochain sequence and
+   proved acyclicity make order an isomorphism on every positive cohomology group.
+3. The continuous H2 order isomorphism composes with W21's additive Frobenius
+   coordinates to give `unramifiedMultiplicativeInvariant : H²(G, Uˣ) ≃+ Q/Z`.
+   Integer powers of a base uniformizer are an equivariant section, and the
+   coefficient image of the actual integral carry has coordinate **+1/n**.
+   The cochain evaluation theorem explicitly gives the uniformizer raised to
+   each integer cochain value; this is not a normalization assumed of an abstract class.
+4. The actual finite-stage inflation maps commute with order on cochains and
+   cohomology. Ordinary subgroup restriction also commutes with order, with the
+   same coefficient normalization. The continuous order map commutes with the
+   invariant-stage colimit comparison.
+5. `unramifiedMultiplicativeInflation` constructs the actual cohomology map from
+   the unramified union to the separable closure using continuous Galois
+   restriction and coefficient inclusion. Its invariant-stage colimit square is
+   proved. Its bijectivity is not claimed.
+
+Each new module M passed separately, with `LEAN_NUM_THREADS=2`, in the foreground:
+`lake build FLT.LocalClassFieldTheory.M`,
+`lake exe runLinter FLT.LocalClassFieldTheory.M`, and
+`lake env lean Scratch/LiftsW23/MAxioms.lean`.
+No whole-library lint was run. All named declarations, including instances and
+proof abbreviations, use only `propext`, `Classical.choice`, `Quot.sound`, or no axioms.
+Logs: `Scratch/LiftsW23/M-{build,lint,axioms}.log`.
+
+`LEAN_NUM_THREADS=2 lake env lean Scratch/LiftsW23/Integration.lean` checks all
+19 new modules imported together; evidence: `Scratch/LiftsW23/Integration.log`.
+The final audit command is `LEAN_NUM_THREADS=2 lake env lean Scratch/LiftsW23/FinalAxioms.lean`;
+evidence: `Scratch/LiftsW23/Final-axioms.log`. Both exited 0.
+
+- `GaloisRepresentation.IsHardlyRamified.lifts` and `FLT.Assembly.hardlyRamifiedLifting`:
+  `[propext, sorryAx, Classical.choice, Quot.sound]`.
+- `PNat.pow_add_pow_ne_pow`:
+  `[Mazur_statement, propext, sorryAx, Classical.choice, Quot.sound]`.
+- The new continuous acyclicity, order-H2 isomorphism, multiplicative invariant,
+  carry normalization and separable-closure inflation map use only standard axioms.
+
+`python3 Scratch/LiftsW23/check.py` rechecks saved evidence: caps, audit coverage,
+allowed axiom sets, fresh accepted logs, new-file-only Lean changes, sorted imports,
+allowed paths, clean tracked state and the final FLT axiom set. It does not rerun Lean.
+Fresh Lean validation can be repeated with `python3 Scratch/LiftsW23/validate.py M ...`.
+
+### W23 remaining work
+
+1. Prove the separable-closure inflation map bijective. The map now exists,
+   but the continuous H2 inflation-restriction/Hilbert-90 bridge and ramified
+   finite relative-order argument (Milne III.2; R01–R06) remain unproved.
+   A cochain injection is not an injection on H2. Do not promote the constructed
+   inflation morphism to an isomorphism by adding a hypothesis or record field.
+2. Prove the arithmetic change-of-base-field restriction formula multiplying
+   Q/Z coordinates by the extension degree, and the corestriction/fundamental-class
+   comparisons. The subgroup restriction square proved here keeps the same
+   coefficient order; it does not establish the change-of-base normalization formula.
+3. Class formation and Kummer–Artin evaluation remain unproved. W14's cup-order
+   minus sign is unchanged. Serre-weight evaluation and arbitrary-p Raynaud
+   classification remain independently blocked; neither was dispatched.
+
+API evidence: `Scratch/LiftsW23/remaining-api-check.log`; source boundaries:
+R01–R06 and I02/I03 in `docs/LOCAL_CFT_FOUNDATIONS.md`. The new modules concern
+ordinary continuous positive-degree cohomology, not arbitrary principal-unit
+subgroup acyclicity or a full local reciprocity theorem.
 
 ## Source match and conventions
 
@@ -868,7 +947,7 @@ norm's graded trace formula; then build compatible corrections and use
 completeness before claiming norm surjectivity or unit acyclicity. Do not turn
 any of these missing arithmetic conclusions into parameters or record fields.
 
-## W22 proved scope — 2026-10-03T07:40:35.747894+00:00
+## W22 historical proved scope — 2026-10-03T07:40:35.747894+00:00
 
 Checked 2026-10-03T07:40:35.747894+00:00; base `c2adcddb`. Evidence:
 `python3 Scratch/LiftsW22/check.py` and the separate module build/lint/axiom logs.
@@ -907,7 +986,7 @@ H2 comparison for the whole unramified union is still unproved.
    coefficient-level compatibility theorem; the continuous colimit comparison
    and its naturality are not claimed by it.
 
-### Remaining continuous and arithmetic comparisons
+### W22 remaining comparisons (historical; see W23 above)
 
 1. Construct the discrete continuous Galois action on the integral units of
    the unramified union and identify its invariant coefficient modules with
