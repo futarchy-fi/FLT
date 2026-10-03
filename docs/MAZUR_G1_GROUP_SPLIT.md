@@ -1055,3 +1055,14 @@ Constant-unit specialization and the unit law do not discharge that gate.
 U11 base-change action laws and U12 translation/graph identification remain
 separate obligations. No caps for these remaining proofs are released here.
 The Mazur assumption and existing assembly consumers are unchanged.
+
+
+## W19 checked affine-point design
+
+`W19_POINTS_PROOF.lean` compiles in full (2026-10-03). U9a
+`ProjectiveLineActionPoints`, cap 160, evaluates both polynomial charts over
+any coefficient algebra. Pullback projections identify the evaluation map;
+polynomial generators give scaling by the unit and its inverse. Tensor
+projections and Laurent generators identify the actual Hopf multiplication
+with multiplication of units. The parameters need not be field-valued.
+This supplies chart computations, not yet universal associativity.
