@@ -934,6 +934,7 @@ public import FLT.LocalClassFieldTheory.ContinuousStageDiagram
 public import FLT.LocalClassFieldTheory.CyclicCarry
 public import FLT.LocalClassFieldTheory.CyclicCarryConnecting
 public import FLT.LocalClassFieldTheory.DescendedCochain
+public import FLT.LocalClassFieldTheory.DiscreteIntegralUnits
 public import FLT.LocalClassFieldTheory.DiscreteOrder
 public import FLT.LocalClassFieldTheory.DiscreteOrderExact
 public import FLT.LocalClassFieldTheory.FilteredComplexDescent
@@ -956,6 +957,9 @@ public import FLT.LocalClassFieldTheory.IntegralH1Equivalence
 public import FLT.LocalClassFieldTheory.IntegralH2Characters
 public import FLT.LocalClassFieldTheory.IntegralLowDegreeComparison
 public import FLT.LocalClassFieldTheory.IntegralRationalVanishing
+public import FLT.LocalClassFieldTheory.IntegralUnitDescent
+public import FLT.LocalClassFieldTheory.IntegralUnitInvariantCohomology
+public import FLT.LocalClassFieldTheory.IntegralUnitInvariants
 public import FLT.LocalClassFieldTheory.IntegralUnitRepresentation
 public import FLT.LocalClassFieldTheory.InvariantStageTransition
 public import FLT.LocalClassFieldTheory.NormCongruence
@@ -988,6 +992,7 @@ public import FLT.LocalClassFieldTheory.UnramifiedCarryTorsion
 public import FLT.LocalClassFieldTheory.UnramifiedCharacterDescent
 public import FLT.LocalClassFieldTheory.UnramifiedCharacters
 public import FLT.LocalClassFieldTheory.UnramifiedCofinality
+public import FLT.LocalClassFieldTheory.UnramifiedContinuousUnits
 public import FLT.LocalClassFieldTheory.UnramifiedCyclicStages
 public import FLT.LocalClassFieldTheory.UnramifiedDegree
 public import FLT.LocalClassFieldTheory.UnramifiedDegreeLimit
@@ -1005,6 +1010,7 @@ public import FLT.LocalClassFieldTheory.UnramifiedIntegralH2Additive
 public import FLT.LocalClassFieldTheory.UnramifiedIntegralModel
 public import FLT.LocalClassFieldTheory.UnramifiedLocalInertia
 public import FLT.LocalClassFieldTheory.UnramifiedNormal
+public import FLT.LocalClassFieldTheory.UnramifiedOpenStages
 public import FLT.LocalClassFieldTheory.UnramifiedOrderCohomology
 public import FLT.LocalClassFieldTheory.UnramifiedOrderMap
 public import FLT.LocalClassFieldTheory.UnramifiedOrderSequence
