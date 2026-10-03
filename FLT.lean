@@ -1200,6 +1200,7 @@ public import FLT.LocalClassFieldTheory.RelativeLowerBound
 public import FLT.LocalClassFieldTheory.RelativeOrderInduction
 public import FLT.LocalClassFieldTheory.RelativeRestrictionKernel
 public import FLT.LocalClassFieldTheory.RelativeTateClasses
+public import FLT.LocalClassFieldTheory.RelativeTateCupDegreeZero
 public import FLT.LocalClassFieldTheory.ResidueAction
 public import FLT.LocalClassFieldTheory.ResidueActionFaithful
 public import FLT.LocalClassFieldTheory.ResidueActionSurjective
@@ -1212,10 +1213,12 @@ public import FLT.LocalClassFieldTheory.ScalarCochainCup
 public import FLT.LocalClassFieldTheory.SixTermCard
 public import FLT.LocalClassFieldTheory.SolvableFieldStep
 public import FLT.LocalClassFieldTheory.SolvableNormalStep
+public import FLT.LocalClassFieldTheory.TateClassArithmetic
 public import FLT.LocalClassFieldTheory.TateCocycleClass
 public import FLT.LocalClassFieldTheory.TateCupComparison
 public import FLT.LocalClassFieldTheory.TateCupUnit
 public import FLT.LocalClassFieldTheory.TatePositiveCocycleClass
+public import FLT.LocalClassFieldTheory.TateScalarDegreeZero
 public import FLT.LocalClassFieldTheory.TateTwoClassOperation
 public import FLT.LocalClassFieldTheory.TateTwoClassZero
 public import FLT.LocalClassFieldTheory.TateTwoExtension
