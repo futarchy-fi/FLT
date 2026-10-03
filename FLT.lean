@@ -418,6 +418,7 @@ public import FLT.GlobalLanglandsConjectures.GLnDefs
 public import FLT.GlobalLanglandsConjectures.GLzero
 public import FLT.GroupScheme.ActualThreeAdicKummerCube
 public import FLT.GroupScheme.AdjacentCanonicalFactors
+public import FLT.GroupScheme.AlgebraicClosureKummer
 public import FLT.GroupScheme.BialgebraBaseChange
 public import FLT.GroupScheme.CanonicalCompositionSeries
 public import FLT.GroupScheme.CanonicalFactorFiltration
