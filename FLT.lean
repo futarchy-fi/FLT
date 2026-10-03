@@ -692,6 +692,7 @@ public import FLT.GroupScheme.RestrictedScalarPointNaturality
 public import FLT.GroupScheme.ReverseExtHypothesis
 public import FLT.GroupScheme.ReverseExtSwappedExtension
 public import FLT.GroupScheme.ReverseExtVanishing
+public import FLT.GroupScheme.RootModuleLinear
 public import FLT.GroupScheme.SemilocalFreeDescent
 public import FLT.GroupScheme.SortedCanonicalFactorFiltration
 public import FLT.GroupScheme.SortedFiltrationCoefficientQuotient
