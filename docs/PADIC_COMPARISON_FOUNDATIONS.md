@@ -211,3 +211,22 @@ theorem under surjectivity of Frobenius on the residue quotient. First prove
 `IsAdicComplete (Ideal.span {(p : 𝓞_ℂ_[p])}) 𝓞_ℂ_[p]` and the required
 Frobenius surjectivity for the actual integer ring. Galois continuity,
 the principal kernel and the period-ring comparison remain separate leaves.
+
+## W27 R5b refinement (2026-10-03)
+
+Each leaf below has a 150-line complete-file cap. The model comparison is
+proved over a general characteristic-zero local field, so it applies directly
+to the rational-place completion; no equality with Q_p is assumed.
+
+| Leaf | Obligation |
+|---|---|
+| SplitKummerGeneralModel | Split Kummer levels over a ring and a characteristic-zero field, with actual geometric points. |
+| SplitKummerGeneralPointLaw | Addition and field action for those points. |
+| PrimitiveRootCoordinates | Additive coordinates on roots of unity from a chosen primitive root. |
+| SplitKummerResidue | Additive residue coordinates on the actual geometric points, with cyclotomic action. |
+| CyclotomicTrivialReduction | Actual p-power quotient-tensor coordinates and their action. |
+| CyclotomicCharacterNaturality | Compatibility of the p-adic character with field embeddings and local restriction. |
+| CyclotomicTrivialFlat | Apply the comparisons at the rational completion and the proved open-ideal cofinality criterion. |
+
+R5e follows only after these local model obligations. Existing sorted-input
+trace results must be transported, without invoking the admitted three_adic.
