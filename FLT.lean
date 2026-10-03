@@ -1890,6 +1890,7 @@ public import FLT.Mazur.ModuleGlobalGeneration
 public import FLT.Mazur.ModuleGlobalSectionExt
 public import FLT.Mazur.ModuleGlobalSectionPullback
 public import FLT.Mazur.ModuleGlobalUnitGenerator
+public import FLT.Mazur.ModuleHomIsomorphismOpen
 public import FLT.Mazur.ModuleImageSection
 public import FLT.Mazur.ModuleInjectiveFlasque
 public import FLT.Mazur.ModuleLineBundlePullback
@@ -1906,6 +1907,12 @@ public import FLT.Mazur.ModulePullbackTrivializationCoherence
 public import FLT.Mazur.ModulePullbackUnitCoherence
 public import FLT.Mazur.ModuleSectionIsomorphismTransport
 public import FLT.Mazur.ModuleSectionMap
+public import FLT.Mazur.ModuleSectionProjectiveChart
+public import FLT.Mazur.ModuleSectionProjectiveGluing
+public import FLT.Mazur.ModuleSectionProjectiveOverlap
+public import FLT.Mazur.ModuleSectionRatioBasicOpen
+public import FLT.Mazur.ModuleSectionRatioOpen
+public import FLT.Mazur.ModuleSectionRatioPullback
 public import FLT.Mazur.ModuleSectionRatios
 public import FLT.Mazur.ModuleSectionRegularity
 public import FLT.Mazur.ModuleSectionUnit
@@ -2023,9 +2030,13 @@ public import FLT.Mazur.PolygonConnected
 public import FLT.Mazur.PolygonConstantSections
 public import FLT.Mazur.PolygonCubicChartGeneration
 public import FLT.Mazur.PolygonCubicComponentSection
+public import FLT.Mazur.PolygonCubicFiniteFamily
 public import FLT.Mazur.PolygonCubicGenerationCover
 public import FLT.Mazur.PolygonCubicGlobalGeneration
 public import FLT.Mazur.PolygonCubicInterpolation
+public import FLT.Mazur.PolygonCubicNonvanishing
+public import FLT.Mazur.PolygonCubicProjectiveCharts
+public import FLT.Mazur.PolygonCubicProjectiveMorphism
 public import FLT.Mazur.PolygonCubicSections
 public import FLT.Mazur.PolygonCubicTorusGenerator
 public import FLT.Mazur.PolygonCyclicAtlas
@@ -2117,6 +2128,8 @@ public import FLT.Mazur.ProjectiveActionFieldExtension
 public import FLT.Mazur.ProjectiveActionPullback
 public import FLT.Mazur.ProjectiveAffineChartEmbedding
 public import FLT.Mazur.ProjectiveChartDenominators
+public import FLT.Mazur.ProjectiveChartEvaluation
+public import FLT.Mazur.ProjectiveChartMapCompatibility
 public import FLT.Mazur.ProjectiveChartNoetherian
 public import FLT.Mazur.ProjectiveChartPolynomialEquiv
 public import FLT.Mazur.ProjectiveCoherentCharts
