@@ -565,6 +565,7 @@ public import FLT.GroupScheme.KummerComultiplication
 public import FLT.GroupScheme.KummerHopf
 public import FLT.GroupScheme.KummerParameter
 public import FLT.GroupScheme.KummerPoints
+public import FLT.GroupScheme.KummerRefinement
 public import FLT.GroupScheme.KummerTwist
 public import FLT.GroupScheme.KummerUnitClass
 public import FLT.GroupScheme.LocalBialgebraDerivations
