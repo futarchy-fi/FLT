@@ -157,6 +157,7 @@ public import FLT.Deformations.RepresentationTheory.FiniteFieldQuadraticSpectrum
 public import FLT.Deformations.RepresentationTheory.FiniteFlatCyclotomicAbsolute
 public import FLT.Deformations.RepresentationTheory.FiniteFlatCyclotomicRestriction
 public import FLT.Deformations.RepresentationTheory.FiniteFlatCyclotomicTrace
+public import FLT.Deformations.RepresentationTheory.FiniteFreeAdicComplete
 public import FLT.Deformations.RepresentationTheory.Flat
 public import FLT.Deformations.RepresentationTheory.FlatCofinal
 public import FLT.Deformations.RepresentationTheory.FlatDiscrete
@@ -175,6 +176,7 @@ public import FLT.Deformations.RepresentationTheory.MappedTameSpectrum
 public import FLT.Deformations.RepresentationTheory.PGroupInvariants
 public import FLT.Deformations.RepresentationTheory.PadicIdealCofinal
 public import FLT.Deformations.RepresentationTheory.PadicIdealOpen
+public import FLT.Deformations.RepresentationTheory.PadicLatticeCompletion
 public import FLT.Deformations.RepresentationTheory.PadicPowerCardinality
 public import FLT.Deformations.RepresentationTheory.PermutedSummandsTwist
 public import FLT.Deformations.RepresentationTheory.PrimePowerExact
@@ -193,6 +195,7 @@ public import FLT.Deformations.RepresentationTheory.TameTraceObstruction
 public import FLT.Deformations.RepresentationTheory.ThreeStableLines
 public import FLT.Deformations.RepresentationTheory.TorsionInclusionTower
 public import FLT.Deformations.RepresentationTheory.TorsionReductionTower
+public import FLT.Deformations.RepresentationTheory.TorsionTensorCompletion
 public import FLT.Deformations.RepresentationTheory.TorsionTensorMaps
 public import FLT.Deformations.RepresentationTheory.TraceCompatiblePair
 public import FLT.Deformations.RepresentationTheory.TrivialQuotientKernel
@@ -416,6 +419,10 @@ public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.W2Statement
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.WeakChebotarev
 public import FLT.GaloisRepresentation.HardlyRamified.CoefficientQuotient
 public import FLT.GaloisRepresentation.HardlyRamified.CoordinateChange
+public import FLT.GaloisRepresentation.HardlyRamified.CyclotomicTrivial
+public import FLT.GaloisRepresentation.HardlyRamified.CyclotomicTrivialBaseChange
+public import FLT.GaloisRepresentation.HardlyRamified.CyclotomicTrivialPolynomial
+public import FLT.GaloisRepresentation.HardlyRamified.CyclotomicTrivialRamification
 public import FLT.GaloisRepresentation.HardlyRamified.Defs
 public import FLT.GaloisRepresentation.HardlyRamified.DualPointPurity
 public import FLT.GaloisRepresentation.HardlyRamified.DyadicThreeGroupInertia
@@ -504,6 +511,10 @@ public import FLT.GaloisRepresentation.HardlyRamified.TorsionModelTransitions
 public import FLT.GaloisRepresentation.HardlyRamified.TorsionPDivisible
 public import FLT.GaloisRepresentation.HardlyRamified.TorsionPDivisibleUniverses
 public import FLT.GaloisRepresentation.HardlyRamified.TorsionRankUniverses
+public import FLT.GaloisRepresentation.HardlyRamified.TorsionTateFree
+public import FLT.GaloisRepresentation.HardlyRamified.TorsionTateHomeomorph
+public import FLT.GaloisRepresentation.HardlyRamified.TorsionTateRecovery
+public import FLT.GaloisRepresentation.HardlyRamified.TorsionTateSurjective
 public import FLT.GaloisRepresentation.HardlyRamified.TorsionTransitionsUniverses
 public import FLT.GaloisRepresentation.HardlyRamified.TraceLeaves
 public import FLT.GaloisRepresentation.HardlyRamified.TraceReducibility
@@ -712,7 +723,10 @@ public import FLT.GroupScheme.OrderThreeModelIdentification
 public import FLT.GroupScheme.PDivisibleSystem
 public import FLT.GroupScheme.PDivisibleSystemCategory
 public import FLT.GroupScheme.PDivisibleTateAction
+public import FLT.GroupScheme.PDivisibleTateCompact
+public import FLT.GroupScheme.PDivisibleTateModule
 public import FLT.GroupScheme.PDivisibleTateSequences
+public import FLT.GroupScheme.PDivisibleTateTopology
 public import FLT.GroupScheme.PadicActualConstantMuThreeSection
 public import FLT.GroupScheme.PadicAlgebraPatching
 public import FLT.GroupScheme.PadicBialgebraDescent
@@ -989,9 +1003,13 @@ public import FLT.GroupScheme.SemilocalFreeDescent
 public import FLT.GroupScheme.SortedCanonicalFactorFiltration
 public import FLT.GroupScheme.SortedFiltrationCoefficientQuotient
 public import FLT.GroupScheme.SortedFiltrationFunctoriality
+public import FLT.GroupScheme.SplitKummerCyclotomic
+public import FLT.GroupScheme.SplitKummerModel
+public import FLT.GroupScheme.SplitKummerPointLaw
 public import FLT.GroupScheme.StableSubgroupExtension
 public import FLT.GroupScheme.SupportedKummerCubes
 public import FLT.GroupScheme.SupportedKummerValuations
+public import FLT.GroupScheme.TateProjectionSurjective
 public import FLT.GroupScheme.ThreeAdicCubes
 public import FLT.GroupScheme.ThreeAdicLocalPresentation
 public import FLT.GroupScheme.ThreeAdicModelBaseChange

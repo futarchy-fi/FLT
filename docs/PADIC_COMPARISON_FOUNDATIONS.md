@@ -161,3 +161,53 @@ investigate, not a claim that an extension-class obstruction makes the
 weak family definition impossible. General reducible-residual inputs can
 still have irreducible characteristic-zero generic fibre and are not
 resolved by this route merely from their residual filtration.
+
+## W26 Tate recovery refinement (2026-10-03)
+
+T3/T4 are split before implementation. Each complete new file remains at
+most 150 lines; all statements use the actual reductions and original lattice.
+
+| Leaf | Required result |
+|---|---|
+| T3a / TateProjectionSurjective | Lift a point through a countable surjective reduction tower; prove evaluation surjective. |
+| T3b / TorsionTateSurjective | Prove the original HR reductions satisfy T3a and apply it. |
+| T4a / PDivisibleTateModule | Define the p-adic scalar action through finite residues and prove module laws. |
+| T4b / PDivisibleTateTopology | Subspace topology, continuous evaluations and continuous Galois action. |
+| T4c / PadicLatticeCompletion | Recover a finite free p-adic lattice from its power quotients. |
+| T4d / TorsionTateRecovery | Compare the actual geometric-point tower with those quotients, retaining Galois action. |
+| T4e / TorsionTateFree | Transport finite freeness and the computed rank through that comparison. |
+
+R5a–R5g and P1b/P2b/P3b follow this recovery track in the requested order.
+No completed comparison, family, or period theorem is assumed by these leaves.
+
+T4c is further split into `FiniteFreeAdicComplete` (basis-coordinate proof),
+`PadicLatticeCompletion` (p-adic scalar restriction and completion map), and
+`TorsionTensorCompletion` (actual tensor quotient comparison). T4b's scalar
+continuity and compactness are a separate `PDivisibleTateCompact` leaf.
+
+T4d's topological identification is split into `TorsionTateHomeomorph`:
+the recovered linear equivalence is continuous, and its inverse is continuous
+by compactness of the original finite module and Hausdorffness of the Tate limit.
+
+R5b is split before implementation: `SplitKummerModel` constructs the actual
+split Kummer finite-flat levels and reads their geometric points;
+`SplitKummerPointLaw` identifies addition and the field action on roots;
+`SplitKummerCyclotomic` identifies the root action with local cyclotomic
+scalars; `CyclotomicTrivialReduction` must compare these points with the actual
+p-power tensor quotients; `CyclotomicTrivialFlat` must prove the existing
+local flatness predicate, including its rational-place convention. A model
+without these comparisons is not accepted as R5b completion.
+
+The standard-member polynomial leaves are `CyclotomicTrivialPolynomial`
+(integral determinant and Frobenius polynomial) and
+`CyclotomicTrivialBaseChange` (extension and arbitrary framing).
+`CyclotomicTrivialRamification` supplies unramifiedness away from p and the
+actual second-coordinate tame quotient at two. These do not assert flatness.
+
+For P3b, reuse Mathlib's `RingTheory/Perfectoid/Untilt.lean` and
+`RingTheory/Perfectoid/FontaineTheta.lean`. They already construct
+`PreTilt.untilt` and `WittVector.fontaineTheta`; the latter has a surjectivity
+theorem under surjectivity of Frobenius on the residue quotient. First prove
+`IsAdicComplete (Ideal.span {(p : 𝓞_ℂ_[p])}) 𝓞_ℂ_[p]` and the required
+Frobenius surjectivity for the actual integer ring. Galois continuity,
+the principal kernel and the period-ring comparison remain separate leaves.
