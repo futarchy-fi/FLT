@@ -87,6 +87,10 @@ We use the cohomological route, which does not require constructing the
 CSA Brauer group. It still requires a real invariant on the existing
 continuous complex with discrete Ksepˣ coefficients. In particular, W14's
 field-linear coefficient interface is not by itself a Z-linear Ksepˣ interface.
+S01 uses `AddCircle (1 : ℚ)` only as an additive group. Its inherited
+quotient topology is **not** the discrete coefficient topology needed here;
+C07 must explicitly use discrete coefficients and prove the continuous
+boundary comparison. There is no continuity assertion in S01.
 
 ## Dependency split committed before implementation
 
@@ -180,6 +184,77 @@ The ramified-invariant route R03–R06 is restricted to characteristic zero,
 as is Milne's proof of III.2.4 using exp/log. This suffices for the p-adic
 application. An equal-characteristic version would need additional sources
 and proofs; no such generality is asserted here.
+
+### Expansion of the large blocked nodes
+
+The following replaces the corresponding broad rows above by smaller leaf
+contracts. A broad row is a dependency milestone, not an additional proof
+leaf. **Every child has cap 200 and status BLOCKED**: none has an audited
+complete dependency/API chain. Module suffixes are the child names below;
+the contracts use the same explicitly hypothetical `Hc`/`Hd` notation.
+The sketches specify individual outputs, not assumed class-field records.
+
+| Parent / child | Lean-shaped output and proof step | Dependencies |
+|---|---|---|
+| U01 / ResidueAction | `reduction : Gal(L/K) →* Gal(l/k)` from preservation of the unique extended valuation | finite local extension valuation uniqueness; existing ramification/inertia API needs matching |
+| U01 / ResidueActionKernel | `reduction.ker = inertia`; unramified means this kernel is bottom | ResidueAction; integral unramified criterion |
+| U01 / ResidueActionSurjective | `Function.Surjective reduction` by lifting a residue primitive element's conjugates | ResidueAction; Hensel simple-root lifting and integral primitive presentation |
+| U01 / ResidueGaloisEquiv | `Gal(L/K) ≃* Gal(l/k)` with actual reduction formula | ResidueActionKernel, ResidueActionSurjective |
+| U03 / LiftResiduePolynomial | lift a degree-n irreducible finite-field polynomial to integral coefficients; separable reduction | finite-field extension/primitive-element API, coefficient lifts |
+| U03 / UnramifiedRootField | adjoining a root of the lifted polynomial has residue degree n and ramification index one | LiftResiduePolynomial; integral basis and degree comparison |
+| U03 / UnramifiedUniqueness | any two unramified degree-n subextensions of Ksep coincide | UnramifiedRootField, Hensel uniqueness |
+| U03 / FrobeniusRestriction | `restrict Frob_EK = Frob_LK` by residue q-power and U01 injectivity | U02, UnramifiedUniqueness |
+| U04 / UnramifiedUnion | define the supremum Kun, show each element belongs to a finite unramified stage | U03 and finite compositum residue compatibility |
+| U04 / UnramifiedLimit | `Gal(Kun/K) ≃* inverseLimit (finiteUnramifiedGalois K)` with topological proof | UnramifiedUnion; Krull topology/inverse-limit comparison |
+| U04 / InertiaKernel | restriction `G_K → Gal(Kun/K)` is surjective and its kernel is the existing inertia group | UnramifiedLimit, residue action on Ksep |
+| C01 / IntegralOne | integral homogeneous/inhomogeneous degree-one mutually inverse maps | W14 coordinate formulas, continuous discrete abelian-group coefficients |
+| C01 / IntegralTwo | degree-two maps and differential/cocycle formulas | IntegralOne; locally compact uncurrying |
+| C01 / IntegralH2 | `explicitContinuousH2 ≃+ Hc 2 G M`, computation and zero criterion | IntegralTwo; kernel/cokernel quotient API |
+| C02 / FiniteComplex | chain isomorphism from continuous to ordinary complex for finite discrete G | IntegralOne/IntegralTwo, finite discrete continuous maps |
+| C02 / FiniteComparison | cohomology equivalence and explicit low-degree representative formulas | FiniteComplex |
+| C02 / FiniteBoundaryCup | finite comparison commutes with δ and degree-(1,1) cup | FiniteComparison, connecting/cochain formulas |
+| C04 / CochainFiniteImage | continuous cochains from compact G^r to discrete M have finite image | topology compact/discrete API; choose finite support of coefficient action |
+| C04 / CochainOpenNormal | refine the stabilizers of those values and clopen fibers to one open normal subgroup | CochainFiniteImage; profinite open-normal basis |
+| C04 / DescendedCochain | construct finite quotient cochain with invariant values and prove differential compatibility | CochainOpenNormal |
+| C05 / ColimitCocycles | surjectivity from finite-stage cocycles onto continuous cocycles | DescendedCochain |
+| C05 / ColimitBoundaries | equality in continuous cohomology is witnessed at a common finite stage | DescendedCochain applied to the bounding cochain |
+| C05 / ContinuousColimit | descend to an additive equivalence, natural in restrictions and coefficient maps | ColimitCocycles, ColimitBoundaries |
+| R03 / IntegralNormalLattice | construct G-stable integral lattice from a scaled normal basis, equivariant to induced O_K | normal basis; common denominators |
+| R03 / NormalLatticeOpen | lattice contains a high power of the maximal ideal and is open | IntegralNormalLattice; finite-dimensional local topology |
+| R03 / LocalExpDomain | convergence of exp and log on explicitly bounded local-field neighborhoods | characteristic zero, complete local field; p-adic series estimates |
+| R03 / LocalExpInverse | exp/log inverse group equivalence on those neighborhoods | LocalExpDomain; power-series composition/product identities |
+| R03 / LocalExpEquivariant | the equivalence commutes with Galois action | LocalExpInverse; continuity of action and rational coefficients |
+| R03 / AcyclicOpenUnits | transport a small scaled normal lattice to an open unit subgroup with vanishing cohomology | NormalLatticeOpen, LocalExpEquivariant, Shapiro |
+| R04 / HerbrandFinite | finite cyclic module has Herbrand quotient one, by counting kernel/image of norm and σ−1 | finite cyclic complex API |
+| R04 / HerbrandExact | Herbrand quotient multiplicative in short exact sequences with finite cohomology | cyclic six-term exact sequence and finite cardinal arithmetic |
+| R04 / UnitHerbrand | h(U_L)=1 via finite quotient by AcyclicOpenUnits | HerbrandFinite, HerbrandExact, compact/open quotient |
+| R04 / FieldHerbrand | h(Lˣ)=[L:K] via the order exact sequence and trivial Z module | UnitHerbrand,V01; cyclic cohomology |
+| R05 / CyclicRelativeOrder | `Nat.card (Hd 2 Gal(L/K) Lˣ) = [L:K]` for cyclic extensions | FieldHerbrand, Hilbert 90 |
+| R05 / LocalGaloisSolvable | finite local Galois groups are solvable via wild inertia p-group, tame cyclic and residue cyclic quotients | existing ramification-filtration API must be connected; U01 |
+| R05 / RelativeOrderInduction | order ≤ degree by proper normal subgroup and inflation-restriction; combine with R02 | LocalGaloisSolvable,CyclicRelativeOrder,R01/R02 |
+| I03 / AbsoluteInvariant | compose I02 with inverse of R06 to construct `inv_K` | R06,I02 |
+| I03 / InvariantRestriction | `inv_L (Res x) = [L:K] • inv_K x` | AbsoluteInvariant; I02 restriction and finite descent |
+| I03 / FundamentalClasses | inverse image of 1/[L:K], prove restriction and inflation formulas | InvariantRestriction,R01,S01 |
+| T01 / SplittingModule | construct the extension module attached to an actual two-cocycle, verify the action | explicit cocycle identity, Milne II.3 proof |
+| T01 / SplittingExact | short exact sequence from SplittingModule and augmentation ideal; compute connecting map | SplittingModule |
+| T01 / SplittingAcyclic | prove needed cohomology vanishing by restriction to subgroups and the fundamental-class generator | SplittingExact,I03, Hilbert 90; class-formation argument |
+| T02 / TateMinusTwo | identify degree −2 Tate cohomology of Z with abelianization, with generator formula | Tate/group-homology low-degree comparison |
+| T02 / FundamentalShift | compose the two boundary isomorphisms at −2 and verify it is the fundamental-class shift | SplittingAcyclic,TateMinusTwo; negative-degree connecting maps |
+| T02 / UnramifiedShiftValue | arithmetic Frobenius maps to the uniformizer class by the carry product computation | FundamentalShift,I01,S02; Milne III.1.9 |
+| A06 / CompactUnitImage | image of U_K under rec_K is closed by compactness and Hausdorffness | A04/A05; local compact units |
+| A06 / UnitImageDense | finite abelian quotients: every inertia element comes from a unit after removing a norm of suitable order | A01/A04,U01,V01; valuation-of-norm formula |
+| A06 / UnitImageEquality | closed and dense image = inertia image; translate to `Gal(Kab/Kun)` | CompactUnitImage,UnitImageDense,U04 |
+| K01 / ContinuousKummerExact | exact coefficient sequence μ_p→Ksepˣ→Ksepˣ with discrete continuous action | separable pth roots, char(K)≠p, C01/C05 |
+| K01 / KummerH2Torsion | actual H² inclusion is injective with image killed by p | ContinuousKummerExact, continuous Hilbert 90 |
+| D02 / ScalarH2 | finite-dimensional scalar extension commutes with cocycle/coboundary quotient | integral/field coefficient comparison, finite direct sums |
+| D02 / ScalarUnramified | identify inertia-trivial dual characters after scalar extension | U05; finite direct sums and restriction kernel |
+| D02 / ScalarCup | evaluation on pure tensors agrees with scalar extension of prime-field cup | ScalarH2,ScalarUnramified; actual cup formula |
+
+Some prerequisite bridges in this table are still research obligations
+(notably Hensel/finite étale comparison, local exp/log and class formation).
+The sketches do not certify that these unimplemented proofs fit their caps.
+They make the expected mathematical output and obstruction explicit so the
+next worker can refine one bridge, rather than assume all of local CFT.
 
 ## Acceptance checks
 
