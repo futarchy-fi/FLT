@@ -584,3 +584,21 @@ and C5v1–C5v3 (extremal scalings, small-ramification comparison, dévissage an
 prescribed extension) remain unproved. The scalar addition-by-convolution
 law is available from C5m7 but has not yet been used to evaluate these
 structure constants. No parameter-unit identity is accepted as model data.
+
+## W15 C5p3d refinement before implementation
+
+Each leaf below has a whole-file cap of 150 lines. No universal constant or
+unit property is installed as model data.
+
+| Leaf | New module | Proof obligation |
+|---|---|---|
+| C5p3d1 | `RaynaudRankOneProjector` | The actual augmentation character projector, extended by the counit splitting, is the normalized generator/dual-generator map. |
+| C5p3d2 | `RaynaudRankOneConvolution` | Convolution products and powers of rank-one maps are products and powers of their vector and Cartier functional. |
+| C5p3d3 | `RaynaudReducedScalarAverage` | Express the extended projector as the character-weighted average of scalar maps minus the zero scalar. |
+| C5p3d4 | `RaynaudScalarConvolution` | Expand powers of finite linear combinations of scalar maps using the proved scalar addition law. |
+| C5p3d5 | `RaynaudUniversalCharacterConstant` | Evaluate the scalar expansion on actual character vectors, obtaining a constant defined only from finite-field addition and characters. |
+| C5p3d6 | `RaynaudUniversalParameterProduct` | Identify the paired-power evaluation and the product of actual power coefficients with the universal constant. |
+
+C5p3e is subsequent arithmetic work: fundamental constants are p times
+units and digit constants are units. C5p4 and C5v1–C5v3 retain their earlier
+obligations; C5p3d alone does not close them.
