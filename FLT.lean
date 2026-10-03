@@ -863,6 +863,7 @@ public import FLT.LocalClassFieldTheory.UnramifiedGaloisLimit
 public import FLT.LocalClassFieldTheory.UnramifiedIntegralModel
 public import FLT.LocalClassFieldTheory.UnramifiedNormal
 public import FLT.LocalClassFieldTheory.UnramifiedPolynomial
+public import FLT.LocalClassFieldTheory.UnramifiedStageFrobenius
 public import FLT.LocalClassFieldTheory.UnramifiedStageTower
 public import FLT.LocalClassFieldTheory.UnramifiedStages
 public import FLT.LocalClassFieldTheory.UnramifiedUnion
