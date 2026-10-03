@@ -1087,6 +1087,7 @@ public import FLT.LocalClassFieldTheory.AdicIntegerSpace
 public import FLT.LocalClassFieldTheory.AdicIntegerTopology
 public import FLT.LocalClassFieldTheory.AdicSeriesEvaluation
 public import FLT.LocalClassFieldTheory.AdicSeriesField
+public import FLT.LocalClassFieldTheory.BoundaryCocycleRepresentatives
 public import FLT.LocalClassFieldTheory.CanonicalFixedFieldArtin
 public import FLT.LocalClassFieldTheory.CochainFiniteImage
 public import FLT.LocalClassFieldTheory.CochainHomologyClass
@@ -1234,8 +1235,11 @@ public import FLT.LocalClassFieldTheory.IntegralUnitInvariants
 public import FLT.LocalClassFieldTheory.IntegralUnitRepresentation
 public import FLT.LocalClassFieldTheory.IntermediateDvr
 public import FLT.LocalClassFieldTheory.IntermediateDvrAlgebra
+public import FLT.LocalClassFieldTheory.InvariantNegativeComposite
+public import FLT.LocalClassFieldTheory.InvariantNegativeFirstBoundary
 public import FLT.LocalClassFieldTheory.InvariantRestriction
 public import FLT.LocalClassFieldTheory.InvariantStageTransition
+public import FLT.LocalClassFieldTheory.InvariantTwoClassNegativeCup
 public import FLT.LocalClassFieldTheory.InvariantTwoExtensionInflation
 public import FLT.LocalClassFieldTheory.KernelCocycleDescent
 public import FLT.LocalClassFieldTheory.KernelCocycleNormalization
@@ -1312,6 +1316,7 @@ public import FLT.LocalClassFieldTheory.RelativeFundamentalSubgroup
 public import FLT.LocalClassFieldTheory.RelativeFundamentalTateCup
 public import FLT.LocalClassFieldTheory.RelativeInflationTower
 public import FLT.LocalClassFieldTheory.RelativeInvariantClassInflation
+public import FLT.LocalClassFieldTheory.RelativeInvariantNegativeCup
 public import FLT.LocalClassFieldTheory.RelativeLowerBound
 public import FLT.LocalClassFieldTheory.RelativeOrderInduction
 public import FLT.LocalClassFieldTheory.RelativeRestrictionKernel
@@ -1344,6 +1349,7 @@ public import FLT.LocalClassFieldTheory.SubgroupTateVanishing
 public import FLT.LocalClassFieldTheory.SubgroupTransferNorm
 public import FLT.LocalClassFieldTheory.SylowNormDetection
 public import FLT.LocalClassFieldTheory.SylowTateDetection
+public import FLT.LocalClassFieldTheory.TateBoundaryLowDegree
 public import FLT.LocalClassFieldTheory.TateClassArithmetic
 public import FLT.LocalClassFieldTheory.TateCocycleClass
 public import FLT.LocalClassFieldTheory.TateCupComparison
@@ -1380,6 +1386,7 @@ public import FLT.LocalClassFieldTheory.TrivialH1Characters
 public import FLT.LocalClassFieldTheory.TrivialRestrictionNaturality
 public import FLT.LocalClassFieldTheory.TwoCocycleInflationSum
 public import FLT.LocalClassFieldTheory.TwoCocycleNormSum
+public import FLT.LocalClassFieldTheory.TwoExtensionBoundaryCup
 public import FLT.LocalClassFieldTheory.TwoExtensionCochainCup
 public import FLT.LocalClassFieldTheory.TwoExtensionCorestriction
 public import FLT.LocalClassFieldTheory.TwoExtensionDeflation
