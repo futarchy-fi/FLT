@@ -1089,3 +1089,27 @@ fixed-residue scalar subtraction and the reverse B_dR fixed-field inclusion;
 then the explicit comparison contracts, coefficient decomposition and both
 graded ranks. The general family theorem is unchanged. These new analytic
 and graded endpoints do not by themselves remove its `sorryAx` dependency.
+
+## W36 invariant-order split (before implementation)
+
+Each complete new module is capped at 150 lines. `ComplexInvariantOrder`
+uses the DVR unit-times-integer-power decomposition in the original field,
+passes its invariant representative to the actual graded quotient, and
+uses the nonzero residue of a unit to force degree zero.
+`ComplexFixedResidue` descends the resulting integral representative's
+fixed residue to the original Q_p and subtracts that scalar; it proves
+that a fixed integral element with zero residue must vanish.
+`ComplexDeRhamFixedScalars` combines these proofs to identify the fixed
+field with the image of the original Q_p embedding and proves uniqueness.
+No fixed-field or comparison conclusion is added as an assumption.
+
+W36 rational-place refinement (caps 150): `AlgebraicClosureGaloisTransport`
+constructs conjugation of actual closure automorphisms along a base-field
+isomorphism, with the commuting evaluation formula.
+`PDivisibleRationalPlaceTransport` specializes the actual continuous field
+and integer-ring identifications and their commuting square, and fixes one
+compatible closure/Galois identification. `PDivisibleRationalTateAction`
+uses this identification on the original system's coherent sequences and
+proves evaluation equivariance; it does not replace those sequences with
+an unrelated representation. Continuity and coordinate base transport
+must be proved where used in the comparison construction.

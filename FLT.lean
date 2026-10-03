@@ -2331,6 +2331,7 @@ public import FLT.PadicHodgeTheory.ComplexDeRhamDenominators
 public import FLT.PadicHodgeTheory.ComplexDeRhamEquivariance
 public import FLT.PadicHodgeTheory.ComplexDeRhamFieldGalois
 public import FLT.PadicHodgeTheory.ComplexDeRhamFiltration
+public import FLT.PadicHodgeTheory.ComplexDeRhamFixedScalars
 public import FLT.PadicHodgeTheory.ComplexDeRhamFractionField
 public import FLT.PadicHodgeTheory.ComplexDeRhamGalois
 public import FLT.PadicHodgeTheory.ComplexDeRhamGraded
@@ -2342,6 +2343,7 @@ public import FLT.PadicHodgeTheory.ComplexFiniteLogEvaluation
 public import FLT.PadicHodgeTheory.ComplexFiniteLogLimit
 public import FLT.PadicHodgeTheory.ComplexFiniteThetaScalars
 public import FLT.PadicHodgeTheory.ComplexFiniteThetaTopology
+public import FLT.PadicHodgeTheory.ComplexFixedResidue
 public import FLT.PadicHodgeTheory.ComplexFontaineTheta
 public import FLT.PadicHodgeTheory.ComplexGaloisAction
 public import FLT.PadicHodgeTheory.ComplexGaloisApproximation
@@ -2357,6 +2359,7 @@ public import FLT.PadicHodgeTheory.ComplexIntegerGradedInvariants
 public import FLT.PadicHodgeTheory.ComplexIntegerGradedProduct
 public import FLT.PadicHodgeTheory.ComplexIntegerGradedScalars
 public import FLT.PadicHodgeTheory.ComplexIntegerInvertP
+public import FLT.PadicHodgeTheory.ComplexInvariantOrder
 public import FLT.PadicHodgeTheory.ComplexLocalizedGalois
 public import FLT.PadicHodgeTheory.ComplexNonzeroTwistVanishing
 public import FLT.PadicHodgeTheory.ComplexPadicScalarAction
