@@ -1872,6 +1872,8 @@ public import FLT.Mazur.IntegralClosedSupport
 public import FLT.Mazur.IntegralDimension
 public import FLT.Mazur.LaurentTensor
 public import FLT.Mazur.LaurentUnitPoints
+public import FLT.Mazur.LineEndpointTransport
+public import FLT.Mazur.LinePullbackRestriction
 public import FLT.Mazur.LineStructureProjection
 public import FLT.Mazur.LocalizationCech
 public import FLT.Mazur.LocalizationCechCompare
@@ -2036,6 +2038,7 @@ public import FLT.Mazur.PolygonCyclicPushout
 public import FLT.Mazur.PolygonCyclicSeparated
 public import FLT.Mazur.PolygonDimension
 public import FLT.Mazur.PolygonDirectImageCohomology
+public import FLT.Mazur.PolygonDirectPowerComparison
 public import FLT.Mazur.PolygonDivisorCoproduct
 public import FLT.Mazur.PolygonDivisorDegree
 public import FLT.Mazur.PolygonDivisorLineComparison
@@ -2082,6 +2085,8 @@ public import FLT.Mazur.PolygonPinchingDiagram
 public import FLT.Mazur.PolygonPinchingFlatBaseChange
 public import FLT.Mazur.PolygonPinchingTensor
 public import FLT.Mazur.PolygonPolynomialMatching
+public import FLT.Mazur.PolygonPowerNodeEndpoints
+public import FLT.Mazur.PolygonPowerNodeWeights
 public import FLT.Mazur.PolygonProductAtlas
 public import FLT.Mazur.PolygonProper
 public import FLT.Mazur.PolygonPureDimension
