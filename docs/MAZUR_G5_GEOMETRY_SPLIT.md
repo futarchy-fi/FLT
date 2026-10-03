@@ -196,33 +196,30 @@ Prove component-chart formulas and the zero/infinity formulas, with the
 successor exactly PolygonPinching.next. These are actual morphisms, not
 record fields. The atlas immersion and cover facts are supplied by E4a.
 
-### E4c — one-gon atlas and normalization, cap 400, blocked on coordinate bridge
+### E4c — one-gon atlas and normalization, implemented in capped leaves
 
-New `OneGonAtlas.lean`, namespace `FLT.Mazur.OneGonAtlas`. E3 supplies
-`bPuncture : Spec K[t,1/(t(t-1))] ⟶ Spec B`. The other leg must be the
-open immersion into Spec K[z,z⁻¹] defined by z=t/(t-1), with inverse
- t=z/(z-1) on D(z-1). Prove this localization bridge first; it is absent
-from the current library and E1–E3. Then form the open pushout, prove the
-B/Laurent chart cover, and construct the normalization from the specified
-ProjectiveLine (including the missing normalization point z=1).
-Dependencies: E3 and the explicit fractional-coordinate localization iso.
+The coordinate bridge and chart pushout are supplied by `OneGonTransition`,
+`OneGonOverlap` and `OneGonGluing` (PR #448). W10 reuses them. The original
+400-line normalization proposal is split into these modules, each below 240:
 
-```lean
-def punctureToLaurent : Spec (.of (Localization.Away (X*(X-1) : K[X]))) ⟶
-  ProjectiveLine.overlap K
-instance : IsOpenImmersion (punctureToLaurent K)
-def scheme := pushout (PolygonNodePresentation.bPuncture K) (punctureToLaurent K)
-def normalization : ProjectiveLine.scheme K ⟶ scheme K
-theorem endpoints : ProjectiveLine.zero K ≫ normalization K =
-  ProjectiveLine.infinity K ≫ normalization K
-```
+| Module | Lines/cap | Proved output |
+| --- | --- | --- |
+| BinaryOpenDescent | 99/120 | A cartesian, jointly covering pair of open immersions is a pushout. |
+| OneGonAffineCover | 155/200 | The actual puncture is D(X) ∩ D(X−1); these opens cover A¹. |
+| OneGonNormalizationCoordinates | 189/220 | t=z/(z−1) and t=1/(1−w), with both overlap identities. |
+| OneGonNormalization | 182/220 | Map from the specified ProjectiveLine; zero and infinity map to bOrigin. |
+| OneGonCocone | 147/180 | Maps over K and the specified n=1 pinching cocone. |
 
-Both pushout legs are open immersions; prove joint surjectivity from the
-colimit API. If the bridge plus normalization exceeds 400 lines, retain
-the bridge as a capped module and split the remainder in BLOCKED.md.
-No reducible two-branch Zariski chart may substitute for Spec B.
+`OneGonNormalization.torus_normalization` identifies the restriction to the
+**entire** Laurent chart with `OneGonGluing.torus`, including z=1. The proof
+uses the standard two projective charts, subdividing each by D(X), D(X−1).
+The right formula uses w=1/z, so its endpoint has pinched coordinate t=1.
+The equalizer condition on B identifies that endpoint with t=0 in every
+characteristic. The atlas is the existing irreducible one-gon chart gluing;
+no reducible node chart is substituted. The cocone does not yet assert the
+closed pinching universal property required by E4d.
 
-### E4d — arbitrary-target pinching descent, cap 400, blocked on E4c/local descent
+### E4d — arbitrary-target pinching descent, split required, blocked on local descent
 
 New `PolygonAtlas.lean`, namespace `FLT.Mazur.PolygonAtlas`. Combine E4a–c
 into `polygon K n` for every `[NeZero n]`; transport their cocones. Prove
@@ -236,6 +233,29 @@ theorem isPushout (hn : 0 < n) :
   IsPushout (PolygonPinching.toComponents K n hn)
     (PolygonPinching.toNodes K n) (normalization K n) (nodes K n)
 ```
+
+W10 proves the following prerequisites, without claiming arbitrary-target descent:
+
+- `PinchingAffineDescent` (137/180) constructs unique descents for both actual
+  chart rings into every affine target scheme, without requiring morphisms
+  to preserve K. Theorems: `node_desc_affine`, `oneGon_desc_affine`.
+- `PinchingNeighborhoods` (95/140) finds principal neighborhoods defined by
+  elements of A or B with node value one. For B, interpolation of two
+  normalized polynomials produces an element equal to one at both endpoints.
+  This includes characteristic two and gives a neighborhood inside any open
+  containing both endpoints.
+
+Still missing: the equalizer/pullback properties after localization at those
+chosen elements. The affine-target theorems have full affine-line sources;
+restricted source opens are spectra of localized polynomial rings. They
+cannot be used unchanged for maps to an affine neighborhood in an arbitrary
+Y. Then the locally defined morphisms must be glued, with uniqueness proved,
+and descended across the specified global cocone.
+
+Remaining proposed leaves, each at most 240 lines (contracts, not declarations):
+localized node ring pullback; localized B equalizer; node arbitrary-target
+descent; one-gon arbitrary-target descent; polygon cocone assembly; global
+pinching universal property. Untracked BLOCKED.md specifies these contracts.
 
 The ring pullback proves only the affine-target case. Neither that case
 nor an open-gluing universal property closes this leaf. If local descent
@@ -282,8 +302,8 @@ rg -n 'mem_smoothLocus|preimage_smoothLocus_eq' $M/AlgebraicGeometry/Morphisms/S
 rg -n 'does not|not proved|smooth/node' FLT/Mazur/CurveNode.lean
 ```
 
-E1–E3 and E4a–b are implemented; E4c–d and E5 remain blocked by the
-one-gon coordinate bridge and arbitrary-target descent. Build with LEAN_NUM_THREADS=2;
+E1–E3 and E4a–c are implemented; E4d and E5 remain blocked by
+arbitrary-target closed-pinching descent. Build with LEAN_NUM_THREADS=2;
 run `lake exe runLinter FLT.Mazur.MODULE` separately for each module. Audit all
 new declarations with collectAxioms; allow only propext/Classical.choice/Quot.sound.
 C-sort FLT.lean public imports; commit each leaf locally; never push. If any
@@ -376,7 +396,21 @@ constructs the structure morphism over the coefficient field.
 
 `FLTTest/MazurOneGon` checks the transitive axioms of all declarations in
 both new namespaces, and instantiates the involution over Z and ZMod 2.
-The chart pushout is constructed; identification with the cyclic pinching
-of P¹ and its specified normalization/node cocone is still missing.
+The chart pushout is constructed; W10 supplies its specified normalization/node
+cocone. Identification with the cyclic pinching pushout still requires E4d.
 This does not close E4 for arbitrary n, E5, the genus calculation, the
 relative group action, or Mazur_statement.
+
+E4c W10 checked 2026-10-02 23:45 UTC: all five new modules passed their
+foreground `LEAN_NUM_THREADS=2 lake build FLT.Mazur.MODULE` and individual
+`lake exe runLinter FLT.Mazur.MODULE`. The collectAxioms audit checked
+12 + 27 + 33 + 41 + 36 = 149 declarations, allowing only propext,
+Classical.choice and Quot.sound; output is untracked
+GOAL_MAZUR_W10_E4C_AXIOMS.txt. All caps, sorted FLT.lean imports and
+`git diff --check` passed. E4d, E5 and Mazur_statement remain open.
+
+E4d prerequisites checked 2026-10-02 23:50 UTC: PinchingAffineDescent
+(137/180) and PinchingNeighborhoods (95/140) passed foreground module builds,
+individual module lints and collectAxioms on 16 + 11 declarations. Output:
+untracked GOAL_MAZUR_W10_E4D_AXIOMS.txt; only the three allowed axioms occur.
+The arbitrary-target statements and the global IsPushout are not proved.
