@@ -953,11 +953,14 @@ public import FLT.LocalClassFieldTheory.DiscreteFieldUnits
 public import FLT.LocalClassFieldTheory.DiscreteIntegralUnits
 public import FLT.LocalClassFieldTheory.DiscreteOrder
 public import FLT.LocalClassFieldTheory.DiscreteOrderExact
+public import FLT.LocalClassFieldTheory.ExactSequenceCardBound
 public import FLT.LocalClassFieldTheory.FieldUnitInvariants
 public import FLT.LocalClassFieldTheory.FilteredComplexDescent
 public import FLT.LocalClassFieldTheory.FilteredHomologyDescent
 public import FLT.LocalClassFieldTheory.FiniteCharacteristicZeroCohomology
 public import FLT.LocalClassFieldTheory.FiniteContinuousComparison
+public import FLT.LocalClassFieldTheory.FiniteCyclicHerbrand
+public import FLT.LocalClassFieldTheory.FiniteHomologyCard
 public import FLT.LocalClassFieldTheory.FixedCoefficientBoundary
 public import FLT.LocalClassFieldTheory.FixedCoefficientCochain
 public import FLT.LocalClassFieldTheory.FixedCoefficientDifferential
@@ -1030,6 +1033,7 @@ public import FLT.LocalClassFieldTheory.UnramifiedGaloisExistence
 public import FLT.LocalClassFieldTheory.UnramifiedGaloisLimit
 public import FLT.LocalClassFieldTheory.UnramifiedInertiaConverse
 public import FLT.LocalClassFieldTheory.UnramifiedInertiaKernel
+public import FLT.LocalClassFieldTheory.UnramifiedInflatedCarries
 public import FLT.LocalClassFieldTheory.UnramifiedInflationInjective
 public import FLT.LocalClassFieldTheory.UnramifiedIntegralH2
 public import FLT.LocalClassFieldTheory.UnramifiedIntegralH2Additive
