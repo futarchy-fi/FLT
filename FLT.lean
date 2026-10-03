@@ -1018,10 +1018,13 @@ public import FLT.LocalClassFieldTheory.UnramifiedOrderTower
 public import FLT.LocalClassFieldTheory.UnramifiedPolynomial
 public import FLT.LocalClassFieldTheory.UnramifiedStageFrobenius
 public import FLT.LocalClassFieldTheory.UnramifiedStageOrderH2
+public import FLT.LocalClassFieldTheory.UnramifiedStageOrderMaps
 public import FLT.LocalClassFieldTheory.UnramifiedStageTower
 public import FLT.LocalClassFieldTheory.UnramifiedStages
 public import FLT.LocalClassFieldTheory.UnramifiedUniformizer
 public import FLT.LocalClassFieldTheory.UnramifiedUnion
+public import FLT.LocalClassFieldTheory.UnramifiedUnionOrder
+public import FLT.LocalClassFieldTheory.UnramifiedUnionUnits
 public import FLT.LocalClassFieldTheory.UnramifiedUniqueness
 public import FLT.LocalClassFieldTheory.UnramifiedUnitAcyclic
 public import FLT.LocalClassFieldTheory.UnramifiedUnitCyclicExact
