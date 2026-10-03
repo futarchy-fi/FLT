@@ -999,6 +999,7 @@ public import FLT.KnownIn1980s.RepresentationTheory.OddAbsIrred
 public import FLT.KnownIn1980s.Ribet_Lemma.Defs
 public import FLT.KnownIn1980s.Ribet_Lemma.Proofs
 public import FLT.LocalClassFieldTheory.AbsoluteCorestriction
+public import FLT.LocalClassFieldTheory.AbsoluteFundamentalClass
 public import FLT.LocalClassFieldTheory.AbsoluteInvariant
 public import FLT.LocalClassFieldTheory.AbsoluteRestriction
 public import FLT.LocalClassFieldTheory.AcyclicOpenUnits
@@ -1082,6 +1083,8 @@ public import FLT.LocalClassFieldTheory.Frobenius
 public import FLT.LocalClassFieldTheory.FrobeniusPowers
 public import FLT.LocalClassFieldTheory.FrobeniusRestrictionScale
 public import FLT.LocalClassFieldTheory.FrobeniusTower
+public import FLT.LocalClassFieldTheory.FundamentalClassBaseChange
+public import FLT.LocalClassFieldTheory.FundamentalClasses
 public import FLT.LocalClassFieldTheory.GaloisHomContinuity
 public import FLT.LocalClassFieldTheory.GaloisInflationCoefficients
 public import FLT.LocalClassFieldTheory.GaloisInflationH2
