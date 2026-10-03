@@ -4,6 +4,61 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
+## W17 acceptance — checked 2026-10-03 04:02 UTC
+
+Thirteen new modules complete the algebraic U03b realization chain and the
+ready U04 union/profinite leaves. Refinements preceded the corresponding
+proofs (`f120d39d`, `6971e08e`, `0e509e1c`, `9b7cc145`).
+
+| Item | Module under FLT.LocalClassFieldTheory | Lines/cap | Commit |
+|---|---|---|---|
+| U03b1a | UnramifiedDegree | 104/200 | `f8b84872` |
+| U03b1b | UnramifiedExistence | 55/200 | `9dcbc0d9` |
+| U03b2a | HenselianRoots | 80/200 | `de7becef` |
+| U03b2b | UnramifiedPolynomial | 84/200 | `baf81b55` |
+| U03b3a | UnramifiedNormal | 81/200 | `e76df0e0` |
+| U03b3b | UnramifiedGaloisExistence | 85/200 | `f2109305` |
+| U03b4a | UnramifiedEmbeddings | 82/200 | `303e12db` |
+| U03b4b | UnramifiedStages | 81/200 | `badb7c8f` |
+| U03b4c | UnramifiedUniqueness | 73/200 | `2c3e5957` |
+| U03b4d | UnramifiedStageTower | 93/200 | `a51a4c51` |
+| U04a | UnramifiedUnion | 63/200 | `c08d4541` |
+| U04b | UnramifiedCofinality | 44/200 | `f5374e47` |
+| U04c | UnramifiedGaloisLimit | 74/200 | `7c231c49` |
+
+Total: 999 Lean lines, 42 named declarations (37 theorems and 5 definitions).
+Every module is below 200 lines. Each passed foreground
+`LEAN_NUM_THREADS=2 lake build M`, individual
+`LEAN_NUM_THREADS=2 lake exe runLinter M`, and `#print axioms` for every
+named declaration. New axiom sets are subsets of
+`{propext, Classical.choice, Quot.sound}`. Evidence:
+`Scratch/LiftsW17/<Module>-{build,lint,axioms}.log` and `<Module>Axioms.lean`.
+`python3 Scratch/LiftsW17/check.py` checks those recorded logs, caps,
+declaration coverage, admission-free sources, sorted imports, allowed changed
+paths and clean tracked state. It does not rerun Lean.
+
+Constructed results: complete unramified integral DVR realizations, unique
+simple-root lifting, splitting, normality, Galois stages of every positive
+degree inside the chosen separable closure, uniqueness, divisibility
+containment, lcm composita, the directed Galois union, finite-stage cofinality,
+a topological inverse-limit equivalence and continuous surjective restriction.
+Normality and stage uniqueness are proved, not assumed by a record field.
+The inverse limit uses all finite Galois intermediate fields of the union;
+explicit reindexing by positive degrees is still unassembled.
+
+**E1c7/E1d remain BLOCKED.** The valued-local-field frontend and identification
+of the restriction kernel with existing valuation inertia remain, followed
+by U05 and the other local class-field/cohomological gates. The exact remaining
+contracts and reused existing APIs are at the end of LOCAL_CFT_FOUNDATIONS.md.
+
+Fresh final check: `LEAN_NUM_THREADS=2 lake env lean
+Scratch/LiftsW17/FinalAxioms.lean`, exit 0 (`Final-axioms.log`).
+`IsHardlyRamified.lifts` and `FLT.Assembly.hardlyRamifiedLifting` retain
+`[propext, sorryAx, Classical.choice, Quot.sound]`;
+`PNat.pow_add_pow_ne_pow` retains
+`[Mazur_statement, propext, sorryAx, Classical.choice, Quot.sound]`.
+No whole-library build/lint, background build, push, or fleet request ran.
+
 ## W16 acceptance — checked 2026-10-03 03:19 UTC
 
 The residue comparison audit and its refinements were committed before their

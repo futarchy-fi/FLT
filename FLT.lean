@@ -842,6 +842,7 @@ public import FLT.LocalClassFieldTheory.CyclicCarry
 public import FLT.LocalClassFieldTheory.DescendedCochain
 public import FLT.LocalClassFieldTheory.Frobenius
 public import FLT.LocalClassFieldTheory.FrobeniusTower
+public import FLT.LocalClassFieldTheory.HenselianRoots
 public import FLT.LocalClassFieldTheory.NormalizedOrder
 public import FLT.LocalClassFieldTheory.PowerClassOrder
 public import FLT.LocalClassFieldTheory.RationalTorsion
@@ -851,6 +852,18 @@ public import FLT.LocalClassFieldTheory.ResidueActionSurjective
 public import FLT.LocalClassFieldTheory.ResidueGaloisEquiv
 public import FLT.LocalClassFieldTheory.ResidueNorm
 public import FLT.LocalClassFieldTheory.ResidueNormLift
+public import FLT.LocalClassFieldTheory.UnramifiedCofinality
+public import FLT.LocalClassFieldTheory.UnramifiedDegree
+public import FLT.LocalClassFieldTheory.UnramifiedEmbeddings
+public import FLT.LocalClassFieldTheory.UnramifiedExistence
+public import FLT.LocalClassFieldTheory.UnramifiedGaloisExistence
+public import FLT.LocalClassFieldTheory.UnramifiedGaloisLimit
+public import FLT.LocalClassFieldTheory.UnramifiedNormal
+public import FLT.LocalClassFieldTheory.UnramifiedPolynomial
+public import FLT.LocalClassFieldTheory.UnramifiedStageTower
+public import FLT.LocalClassFieldTheory.UnramifiedStages
+public import FLT.LocalClassFieldTheory.UnramifiedUnion
+public import FLT.LocalClassFieldTheory.UnramifiedUniqueness
 public import FLT.Mathlib.Algebra.Algebra.Bilinear
 public import FLT.Mathlib.Algebra.Algebra.Equiv
 public import FLT.Mathlib.Algebra.Algebra.Hom
