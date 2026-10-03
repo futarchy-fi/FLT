@@ -531,3 +531,23 @@ most one, and the augmentation rank sum forces equality for every character.
 `exists_minimal_model_character_bases` retain the actual extremal extension
 properties and derive all character bases after transferring the module
 structure through the specified generic bijection.
+
+C5p3c pairing refinement before implementation (each ≤150 lines):
+`RaynaudCharacterTranspose` constructs the transpose action and proves how
+projectors pair with it; `RaynaudCharacterDuality` identifies a transpose
+character summand with the dual of the original summand;
+`RaynaudAugmentationDuality` restricts the actual Cartier pairing to the two
+augmentation ideals. The comparison with integral scalar duality must be
+proved, not installed as model data.
+
+W14 C5p3a/b checked 2026-10-03: `RaynaudCharacterPowers`,
+`RaynaudRootReduction`, `RaynaudFundamentalCharacter`, and
+`RaynaudCyclicCharacterEquations` build and pass individual module lint.
+`W14_P3_AXIOMS.lean` audits all their declarations against the three-axiom
+whitelist. The residue field embedding is constructed from separable
+closedness; its unit character lifts multiplicatively and faithfully.
+Frobenius periodicity and the proved eigenspace bases give nonzero actual
+cyclic coordinates and integral p-power coefficients.
+`W14_LOCAL_CHECK.lean` checks the extrema, rank-one and cyclic endpoints over
+a DVR with its actual fraction ring. Dual parameter identities and algebra
+generation are not consequences claimed by this endpoint.
