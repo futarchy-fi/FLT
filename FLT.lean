@@ -1679,6 +1679,7 @@ public import FLT.Mazur.PolygonDimension
 public import FLT.Mazur.PolygonDirectImageCohomology
 public import FLT.Mazur.PolygonDivisorCoproduct
 public import FLT.Mazur.PolygonDivisorDegree
+public import FLT.Mazur.PolygonDivisorNormalizationPullback
 public import FLT.Mazur.PolygonFieldExtension
 public import FLT.Mazur.PolygonGenusOne
 public import FLT.Mazur.PolygonGeometricGenus
@@ -1707,6 +1708,7 @@ public import FLT.Mazur.PolygonNormalizationExact
 public import FLT.Mazur.PolygonNormalizationFinite
 public import FLT.Mazur.PolygonNormalizationHOne
 public import FLT.Mazur.PolygonNormalizationHZero
+public import FLT.Mazur.PolygonNormalizationTorusPullback
 public import FLT.Mazur.PolygonNormalizationTransport
 public import FLT.Mazur.PolygonOneGonCompletion
 public import FLT.Mazur.PolygonPinchingAffineBaseChange
@@ -1750,6 +1752,7 @@ public import FLT.Mazur.ProjectiveLineActionTorus
 public import FLT.Mazur.ProjectiveLineCharts
 public import FLT.Mazur.ProjectiveLineCohomologyVanishing
 public import FLT.Mazur.ProjectiveLineConstantSections
+public import FLT.Mazur.ProjectiveLineEndpointCover
 public import FLT.Mazur.ProjectiveLineEndpoints
 public import FLT.Mazur.ProjectiveLineFieldExtension
 public import FLT.Mazur.ProjectiveLineProductCharts
