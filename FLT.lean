@@ -1096,6 +1096,7 @@ public import FLT.LocalClassFieldTheory.CocycleRectangle
 public import FLT.LocalClassFieldTheory.CoinducedCoefficientKernel
 public import FLT.LocalClassFieldTheory.CoinducedCoefficientSequence
 public import FLT.LocalClassFieldTheory.CoinducedInjectiveRestriction
+public import FLT.LocalClassFieldTheory.CoinducedInvariantSequence
 public import FLT.LocalClassFieldTheory.CoinducedNormExact
 public import FLT.LocalClassFieldTheory.CoinducedRestrictionComparison
 public import FLT.LocalClassFieldTheory.CoinducedShapiro
@@ -1303,6 +1304,7 @@ public import FLT.LocalClassFieldTheory.RelativeFundamentalInflation
 public import FLT.LocalClassFieldTheory.RelativeFundamentalOrdinaryInflation
 public import FLT.LocalClassFieldTheory.RelativeFundamentalOrdinaryRestriction
 public import FLT.LocalClassFieldTheory.RelativeFundamentalQuotientCup
+public import FLT.LocalClassFieldTheory.RelativeFundamentalQuotientSequences
 public import FLT.LocalClassFieldTheory.RelativeFundamentalRestriction
 public import FLT.LocalClassFieldTheory.RelativeFundamentalSubgroup
 public import FLT.LocalClassFieldTheory.RelativeFundamentalTateCup
