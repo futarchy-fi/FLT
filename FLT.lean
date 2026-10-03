@@ -1195,6 +1195,7 @@ public import FLT.LocalClassFieldTheory.RationalIntegralConnectingIso
 public import FLT.LocalClassFieldTheory.RationalTorsion
 public import FLT.LocalClassFieldTheory.RationalUnramifiedCharacters
 public import FLT.LocalClassFieldTheory.RelativeDegreeTorsionClass
+public import FLT.LocalClassFieldTheory.RelativeFundamentalTateCup
 public import FLT.LocalClassFieldTheory.RelativeLowerBound
 public import FLT.LocalClassFieldTheory.RelativeOrderInduction
 public import FLT.LocalClassFieldTheory.RelativeRestrictionKernel
@@ -1213,8 +1214,10 @@ public import FLT.LocalClassFieldTheory.SolvableFieldStep
 public import FLT.LocalClassFieldTheory.SolvableNormalStep
 public import FLT.LocalClassFieldTheory.TateCocycleClass
 public import FLT.LocalClassFieldTheory.TateCupComparison
+public import FLT.LocalClassFieldTheory.TateCupUnit
 public import FLT.LocalClassFieldTheory.TatePositiveCocycleClass
 public import FLT.LocalClassFieldTheory.TateTwoClassOperation
+public import FLT.LocalClassFieldTheory.TateTwoClassZero
 public import FLT.LocalClassFieldTheory.TateTwoExtension
 public import FLT.LocalClassFieldTheory.TowerRefinementFibers
 public import FLT.LocalClassFieldTheory.TransferChoiceIndependence
