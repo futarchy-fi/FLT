@@ -1,5 +1,48 @@
 # FAMILY-W8 — finite-flat inertia spectrum and the family boundary
 
+## W20 implemented boundary — 2026-10-03
+
+D12 is implemented for the original prime-field rank-two finite-flat model
+at the rational completion, for p > 3. D13 now has arbitrary-niveau
+root-character generators and cyclotomic norms, plus actual higher-cycle
+coordinate root equations. **The higher-coefficient-field spectrum and D14
+remain open; GOAL-FAMILY-W20 is partially complete.** `Family.lean` is unchanged.
+
+Checked at 2026-10-03 10:11:20 UTC with `python3 W20_FINAL_CHECKS.py`,
+16 individual foreground builds and module-specific lints, and the audits
+`W20_AXIOMS.lean` / `W20_BOUNDARY_AXIOMS.lean`. All 34 new named declarations
+use only `propext`, `Classical.choice`, and `Quot.sound`; the original family
+theorem still uses `sorryAx`. All 16 whole files are 39–102 lines (cap 150).
+The local manifests, logs, audits and `FAMILY_W20_DONE.md` remain outside `FLT/`.
+
+The endpoint `ThreeAdicPlan.FF.primeInertia_tame_spectrum` takes an original
+finite-flat model, its prime-field module structure, rank two, the actual
+cyclotomic determinant and p > 3. It derives the original inertia action and
+continuity, constructs the explicit tower and original simple factors, and
+uses their binary charpolys. No tower, scalar model, factors, weights,
+charpoly factorization, spectrum, or generator is supplied as an input.
+It returns an original inertia element with cyclotomic order p−1, a mapped
+original charpoly with two unit roots of ratio order p−1 or p+1, and nonzero
+trace of the original operator.
+
+The niveau-two generator is chosen through
+`LocalRoot.rootCharacterToRoots_surjective` BEFORE its actual cyclotomic norm.
+`RootCharacterCyclotomicNorm` compares arbitrary uniformizer roots with the
+actual character in the original geometric residue field. Reducible rank-two
+charpolys use an actual invariant line and quotient, without an invariant
+complement. `RaynaudPrescribedFraction` constructs the prescribed fraction
+embedding by a general subalgebra lemma, then applies it to the explicit union.
+
+D13's `HigherNiveauCyclotomicNorm` extends the same generator/norm comparison
+to every positive niveau. `CyclicPowerElimination` and
+`RaynaudHigherCyclePower` eliminate every actual coordinate equation to give
+the coefficient product weighted by p^(r−1−i). Next derive its binary digit
+sum and correcting unit, transport the higher original factors, and retain
+the original coefficient-field rank-two action. Restriction to the prime
+field still multiplies dimension and is not a substitute for that argument.
+D14 must use the SAME generator and keep small-prime branches separate.
+The broader W17 family prerequisites and statement-scope obligations remain.
+
 ## W19 implemented boundary — 2026-10-03
 
 D10's original-factor transport, maximal scalar lifts, exact original-inertia
@@ -1411,3 +1454,79 @@ field, then apply Cayley–Hamilton and Frobenius to the prime-field charpoly.
 `RaynaudOriginalFactorCharpoly` (cap 150) consumes the constructed original
 one-/two-factor weights and returns their actual prime-field charpolys,
 including the Frobenius-fixed quadratic case.
+
+
+## W20 D12 implementation split (whole-file cap 150)
+
+Before implementation, separate the generator and norm comparison into:
+
+1. `RootCharacterGenerator`: choose an original inertia element whose reduced
+   uniformizer-root character has the full prime-to-characteristic order,
+   using `rootCharacterToRoots_surjective`.
+2. `RootCharacterCyclotomicNorm`: identify the niveau-one character for any
+   uniformizer with the actual rational local cyclotomic character in the
+   original geometric residue field, then prove the niveau-two norm formula.
+3. `NiveauTwoInertiaGenerator`: choose the niveau-two generator first and
+   derive its actual cyclotomic order and Frobenius ratio order.
+
+Original rank-two factor assembly, higher-niveau coefficient fields, and
+cyclotomic restriction remain subsequent leaves; split them before coding.
+
+The original rank-two assembly is split further (each whole-file cap 150):
+`RankTwoSimpleFactors` constructs the one-dimensional invariant subspace and
+quotient when the original representation is reducible; both are simple.
+`RaynaudRankTwoCharpoly` applies the original-factor weight theorems to
+these actual factors and multiplies their charpolys, without assuming a
+factorization or a splitting of the representation.
+
+Before the rational-place wrapper, split `RationalPrimeUniformizer` (the
+actual rational prime is a normalized uniformizer) and
+`RaynaudPrescribedFraction` (construct the explicit union's fraction-field
+algebra and prescribed embedding). Both caps are 150. Separate reducible
+assembly as `RaynaudInvariantLineCharpoly` before the full rank-two dichotomy.
+
+`RaynaudRankTwoCharpoly` (cap 150) combines the two cases on the original
+point module. `MappedRankTwoCharpoly` and `MappedTameSpectrum` (caps 150)
+extract the determinant after extending coefficients and select the canonical
+spectrum from the derived binary factors. `RaynaudRationalCharpoly` constructs
+the rational tower inputs; the final prime-field spectrum leaf then supplies
+the generator and actual cyclotomic determinant.
+
+`RaynaudPrimeTameSpectrum` (cap 150) derives the spectrum and nonzero original
+trace from flatness and the actual determinant for p > 3.
+`RaynaudModelTameSpectrum` (cap 150) derives continuity and action agreement
+for the original model's canonical inertia representation, removing those
+comparison inputs from the model endpoint.
+
+### D13 source-based split after the prime-field endpoint
+
+The full higher-coefficient-field spectrum remains a separate argument:
+restriction to the prime field has dimension multiplied by the coefficient
+degree. Refine into these leaves before implementation (each cap 150, split
+again as needed):
+
+- `HigherNiveauCyclotomicNorm`: choose a degree p^r−1 root-character generator
+  and compare its geometric-sum norm with the actual cyclotomic character.
+- General cyclic point-power and original scalar-weight transport: extend
+  `RaynaudPointPower`, `RaynaudTowerPointCharacter`, and the original-factor
+  weights to arbitrary cycle length with actual parameter digits.
+- Original coefficient-field factor assembly: retain the k-linear rank-two
+  action while deriving the prime-field scalar-character factors and their
+  Frobenius orbits. A supplied spectrum or supplied orbit bound is forbidden.
+- Derive the needed orbit and digit constraints from the original local Galois
+  action and determinant, then compute trace and ratio orders. The prime-field
+  theorem alone cannot supply this step.
+
+D14 must use the SAME generator supplied by the spectrum theorem, through
+`CyclotomicQuadratic.eq_neg_one_of_generator`; the independently selected
+`exists_inertia_detector` does not ensure the required spectrum at its element.
+Keep p = 2 and p = 3 outside the p > 3 endpoint.
+
+Before generalizing point powers, split `CyclicPowerElimination` (cap 150):
+eliminate an arbitrary-length chain of p-power coordinate equations and then
+close the cycle, keeping the Frobenius-weighted coefficient product explicit.
+This is the algebraic input to the actual higher-cycle evaluation leaf.
+
+`RaynaudHigherCyclePower` (cap 150) applies the chain elimination to the
+actual `fundamentalValue_power` equations at every coordinate. Its output
+must retain the constructed coefficients rather than assume point equations.
