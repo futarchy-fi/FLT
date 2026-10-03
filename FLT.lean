@@ -2249,9 +2249,12 @@ public import FLT.PadicHodgeTheory.ComplexCyclotomicTilt
 public import FLT.PadicHodgeTheory.ComplexDeRhamDVR
 public import FLT.PadicHodgeTheory.ComplexDeRhamDenominators
 public import FLT.PadicHodgeTheory.ComplexDeRhamEquivariance
+public import FLT.PadicHodgeTheory.ComplexDeRhamFieldGalois
 public import FLT.PadicHodgeTheory.ComplexDeRhamFiltration
 public import FLT.PadicHodgeTheory.ComplexDeRhamFractionField
 public import FLT.PadicHodgeTheory.ComplexDeRhamGalois
+public import FLT.PadicHodgeTheory.ComplexDeRhamGraded
+public import FLT.PadicHodgeTheory.ComplexDeRhamGradedGalois
 public import FLT.PadicHodgeTheory.ComplexDeRhamResidue
 public import FLT.PadicHodgeTheory.ComplexDeRhamRings
 public import FLT.PadicHodgeTheory.ComplexFiniteLogAlgebra
@@ -2296,6 +2299,7 @@ public import FLT.PadicHodgeTheory.PadicResidueConvergence
 public import FLT.PadicHodgeTheory.PadicScalarTopology
 public import FLT.PadicHodgeTheory.PadicTilt
 public import FLT.PadicHodgeTheory.PowerSeriesLogPower
+public import FLT.PadicHodgeTheory.PrincipalGradedPiece
 public import FLT.Patching.Algebra
 public import FLT.Patching.Module
 public import FLT.Patching.Over
