@@ -1258,6 +1258,7 @@ public import FLT.Mazur.OpenSheafFreeComparison
 public import FLT.Mazur.OpenSheafRestriction
 public import FLT.Mazur.OverPoints
 public import FLT.Mazur.PinchingAffineDescent
+public import FLT.Mazur.PinchingChartBaseChange
 public import FLT.Mazur.PinchingNeighborhoods
 public import FLT.Mazur.PolygonAtlas
 public import FLT.Mazur.PolygonAtlasCocone
