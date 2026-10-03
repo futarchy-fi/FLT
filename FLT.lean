@@ -975,6 +975,7 @@ public import FLT.LocalClassFieldTheory.FixedCoefficientCochain
 public import FLT.LocalClassFieldTheory.FixedCoefficientDifferential
 public import FLT.LocalClassFieldTheory.Frobenius
 public import FLT.LocalClassFieldTheory.FrobeniusTower
+public import FLT.LocalClassFieldTheory.GaloisHomContinuity
 public import FLT.LocalClassFieldTheory.GaloisInflationCoefficients
 public import FLT.LocalClassFieldTheory.GaloisInflationH2
 public import FLT.LocalClassFieldTheory.GaloisKernelRestriction
@@ -1036,6 +1037,9 @@ public import FLT.LocalClassFieldTheory.TrivialRestrictionNaturality
 public import FLT.LocalClassFieldTheory.UnitNormApproximation
 public import FLT.LocalClassFieldTheory.UnitNormSequence
 public import FLT.LocalClassFieldTheory.UnitNormSurjectivity
+public import FLT.LocalClassFieldTheory.UnramifiedBaseChange
+public import FLT.LocalClassFieldTheory.UnramifiedBaseChangeEmbedding
+public import FLT.LocalClassFieldTheory.UnramifiedBaseChangeRestriction
 public import FLT.LocalClassFieldTheory.UnramifiedCarryNormalization
 public import FLT.LocalClassFieldTheory.UnramifiedCarryTorsion
 public import FLT.LocalClassFieldTheory.UnramifiedCharacterDescent
