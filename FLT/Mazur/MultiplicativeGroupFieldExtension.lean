@@ -38,7 +38,8 @@ def schemeIso : (MultiplicativeGroupScheme.gm L).left ≅
   simp only [schemeIso, Iso.trans_hom, Iso.symm_hom, Category.assoc]
   erw [pullbackSpecIso_inv_fst']
   change Spec.map (CommRingCat.ofHom (LaurentTensor.equivalence K L).toRingHom) ≫
-    Spec.map (CommRingCat.ofHom (Algebra.TensorProduct.includeLeft : L →ₐ[K] L ⊗[K] K[T;T⁻¹]).toRingHom) = _
+    Spec.map (CommRingCat.ofHom
+      (Algebra.TensorProduct.includeLeft : L →ₐ[K] L ⊗[K] K[T;T⁻¹]).toRingHom) = _
   rw [← Spec.map_comp]
   apply congrArg Spec.map
   apply CommRingCat.hom_ext
@@ -51,7 +52,8 @@ def schemeIso : (MultiplicativeGroupScheme.gm L).left ≅
   simp only [schemeIso, Iso.trans_hom, Iso.symm_hom, Category.assoc]
   erw [pullbackSpecIso_inv_snd]
   change Spec.map (CommRingCat.ofHom (LaurentTensor.equivalence K L).toRingHom) ≫
-    Spec.map (CommRingCat.ofHom (Algebra.TensorProduct.includeRight : K[T;T⁻¹] →ₐ[K] L ⊗[K] K[T;T⁻¹]).toRingHom) = _
+    Spec.map (CommRingCat.ofHom
+      (Algebra.TensorProduct.includeRight : K[T;T⁻¹] →ₐ[K] L ⊗[K] K[T;T⁻¹]).toRingHom) = _
   rw [← Spec.map_comp]
   apply congrArg Spec.map
   apply CommRingCat.hom_ext

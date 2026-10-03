@@ -5,7 +5,7 @@ exactness and cyclic linear exactness. They do not construct a polygon or
 identify that linear complex with sheaf cohomology. This split develops the
 relative group candidate and isolates its comparison with the smooth locus.
 The historical G1–G4 contracts below retain their original caps.
-The W20 validated outcome below supersedes the W19 and historical status tables.
+The W23 validated outcome below supersedes earlier status tables for H15 and U12.
 New leaves are at most 240 lines. Unimplemented signatures remain contracts.
 
 Checked 2026-09-30 19:16 UTC by the following read-only API searches (paths
@@ -1848,3 +1848,67 @@ U12j `MultiplicativeGroupFieldExtension` has a cap of 120 lines after
 pullback identify the actual multiplicative-group pullback. Both projections
 are computed, and a unit of the extension field maps to its Laurent evaluation
 point over the original field.
+
+U12k `ProjectiveActionPullback` has a cap of 90 lines after
+`W23_PROJECTIVE_ACTION_PULLBACK_PROOF.lean` compiled. The monoidal comparison
+of the actual Over.pullback functor has the two coefficient projections from
+U12i/j. Pullback extensionality and universal scaling naturality identify
+its action with the extension-field projective-line action.
+
+U12l `PolygonActionFieldExtension` has a cap of 110 lines after
+`W23_POLYGON_ACTION_FIELD_PROOF.lean` compiled. Finite coproduct preservation
+and U12j identify the entire pulled-back split group. Tensoring the normalization
+is epic; on each group/component pair U12k and monoidal naturality identify
+the two actions. This is equality with U11's actual `baseChangedAct`, rather
+than a separate action on an isomorphic polygon.
+
+U12m `PolygonGeometricTranslations` has a cap of 100 lines after
+`W23_GEOMETRIC_TRANSLATIONS_PROOF.lean` compiled. Points of the actual pulled-back
+split group are expressed using U12l's group isomorphism. Specializing the actual
+pulled-back action at any extension-field unit and component agrees with the
+intrinsic translation. U12f then gives rotations of all actual components and
+node points and preservation of their exact cyclic incidence. The construction
+works for every field extension, including algebraically closed extensions and n=1.
+
+The U12f cap remains 110 lines after the additional complete
+`W23_GRAPH_NODES_PROOF.lean` compiled. Each edge is a closed rational point
+(separatedness makes its section a closed immersion); H15g15 and nonsmoothness
+then prove the actual completed-stalk `IsNode` condition for that edge.
+
+### W23 validated outcome
+
+Checked at 2026-10-03 11:20 UTC in `task/goal-mazur-w23`. The two actual
+node-model completion isomorphisms, open-chart nodal descent, specified
+field-extension diagram comparison, geometric nodal genus-one contract and
+geometric incidence/action comparison are implemented. The genus contract
+uses fields in `Type`, as required by the existing cohomology API; the node,
+incidence and action comparisons are universe-polymorphic.
+
+The geometric U12 statement uses `PolygonActionBaseChange.baseChangedAct`
+and `PolygonActionFieldExtension.groupIso`, with arbitrary extension-field
+units. It does not stop at an intrinsic action on a separately chosen polygon.
+The n=1 loop has both specified endpoint maps; n=2 retains two distinct nodes.
+`PolygonActionGraph.edge_isNode` proves the completed-stalk criterion for every edge.
+
+Read-only checks for these claims:
+
+```sh
+rg -n 'def equivalence|theorem atWorstNodes' FLT/Mazur/Polygon{SplitNode,OneGon}Completion.lean
+rg -n 'nodalFiberCore|geometricFibers' FLT/Mazur/Polygon{NodalCore,GeometricGenus}.lean
+rg -n 'exists_cocone_of_isPullback|toComponents_comparison' FLT/Mazur/PolygonFieldExtension.lean
+rg -n 'incidence|node_eq_iff|edge_isNode' FLT/Mazur/Polygon{NodeIncidence,ActionGraph}.lean
+rg -n 'theorem action|baseChangedAct' FLT/Mazur/PolygonActionFieldExtension.lean
+rg -n 'translation_eq|component_rotation|node_rotation|incidence_rotation' FLT/Mazur/PolygonGeometricTranslations.lean
+```
+
+Every new module was built separately with `LEAN_NUM_THREADS=2 lake build MODULE`
+and linted individually with `LEAN_NUM_THREADS=2 lake exe runLinter MODULE`.
+The W23 handoff records all module caps, local commits, complete axiom-audit
+results and the independently compiled genus/one-gon consumer examples.
+
+Mazur removal still requires the actual moduli/arithmetic inputs and final
+assembly. This work proves necessary geometric fiber conditions for specified
+polygons; it does not construct the modular curve, prove the general DR
+classification, or discharge the arithmetic gates. The read-only check
+`rg -n 'Mazur_statement|mazur_W' FLT/Assumptions/Mazur.lean FLT/Assembly/ExistingInputs.lean`
+still finds the axiom at line 103 and its assembly consumer at line 28.

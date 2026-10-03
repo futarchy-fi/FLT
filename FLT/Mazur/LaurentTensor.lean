@@ -36,7 +36,8 @@ def backward : L[T;T⁻¹] →ₐ[K] L ⊗[K] K[T;T⁻¹] where
   __ := LaurentPolynomial.eval₂
     (Algebra.TensorProduct.includeLeft : L →ₐ[K] L ⊗[K] K[T;T⁻¹]).toRingHom
     (Units.map
-      (Algebra.TensorProduct.includeRight : K[T;T⁻¹] →ₐ[K] L ⊗[K] K[T;T⁻¹]).toMonoidHom (coordinateUnit (1 : Kˣ)))
+      (Algebra.TensorProduct.includeRight : K[T;T⁻¹] →ₐ[K] L ⊗[K] K[T;T⁻¹]).toMonoidHom
+      (coordinateUnit (1 : Kˣ)))
   commutes' r := by simp
 
 theorem forward_backward : (forward K L).comp (backward K L) = AlgHom.id K _ := by

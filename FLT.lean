@@ -1543,6 +1543,7 @@ public import FLT.Mazur.PinchingNeighborhoods
 public import FLT.Mazur.PinchingPullbackTransport
 public import FLT.Mazur.PolygonActionAssociativity
 public import FLT.Mazur.PolygonActionBaseChange
+public import FLT.Mazur.PolygonActionFieldExtension
 public import FLT.Mazur.PolygonActionGraph
 public import FLT.Mazur.PolygonActionSmooth
 public import FLT.Mazur.PolygonActionTranslation
@@ -1572,6 +1573,7 @@ public import FLT.Mazur.PolygonFieldExtension
 public import FLT.Mazur.PolygonGenusOne
 public import FLT.Mazur.PolygonGeometricGenus
 public import FLT.Mazur.PolygonGeometricGraph
+public import FLT.Mazur.PolygonGeometricTranslations
 public import FLT.Mazur.PolygonHZeroIncidence
 public import FLT.Mazur.PolygonIncidence
 public import FLT.Mazur.PolygonIncidenceQuotient
@@ -1618,6 +1620,7 @@ public import FLT.Mazur.PrincipalSubmoduleCoordinates
 public import FLT.Mazur.PrincipalSubmoduleOverlap
 public import FLT.Mazur.PrincipalSubmoduleSectionLocalization
 public import FLT.Mazur.ProjectiveActionFieldExtension
+public import FLT.Mazur.ProjectiveActionPullback
 public import FLT.Mazur.ProjectiveAffineChartEmbedding
 public import FLT.Mazur.ProjectiveChartDenominators
 public import FLT.Mazur.ProjectiveChartNoetherian

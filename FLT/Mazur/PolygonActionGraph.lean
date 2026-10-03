@@ -7,6 +7,7 @@ module
 
 public import FLT.Mazur.PolygonNodeIncidence
 public import FLT.Mazur.PolygonNodeLocus
+public import FLT.Mazur.PolygonSeparated
 public import FLT.Mazur.PolygonTranslationImages
 
 /-!
@@ -77,4 +78,26 @@ theorem rotation_incidence (b : ZMod n) (i j : Fin n) :
     exact add_right_cancel ((ZMod.finEquiv n).symm.injective he)
   exact or_congr hi.eq_iff hi.eq_iff
 
+/-- Every graph edge satisfies the actual completed-stalk node criterion. -/
+theorem edge_isNode (j : Fin n) :
+    FCurve.CurveNode.IsNode C.hom (edges K n hn p q h j).val := by
+  let := PolygonSeparated.cocone K n hn p q h
+  let f := nodeι K n j ≫ q
+  have hf : IsClosedImmersion (f.left ≫ C.hom) := by
+    rw [f.w]
+    change IsClosedImmersion (𝟙 (Spec (.of K)))
+    infer_instance
+  have : IsClosedImmersion f.left := IsClosedImmersion.of_comp f.left C.hom
+  have he : Set.range f.left = {(edges K n hn p q h j).val} := by
+    ext x
+    constructor
+    · rintro ⟨y, rfl⟩
+      exact congrArg f.left (Subsingleton.elim (α := Spec (.of K)) y (basePoint K))
+    · rintro rfl
+      exact ⟨basePoint K, rfl⟩
+  have hc := f.left.isClosedEmbedding.isClosed_range
+  rw [he] at hc
+  rcases PolygonNodalCore.nodes K n hn p q h _ hc with hs | hn
+  · exact ((edges K n hn p q h j).property hs).elim
+  · exact hn
 end FLT.Mazur.PolygonActionGraph
