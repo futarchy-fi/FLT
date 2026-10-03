@@ -248,7 +248,7 @@ PolygonAtlas.isPushout (K : Type u) [Field K] (n : ℕ) [NeZero n] (hn : 0 < n) 
 ```
 
 The proof transports both cases through `cyclicIso`/`oneGonIso`, using their
-normalization and node compatibility. E5a is implemented below; G5 and Mazur G1 remain.
+normalization and node compatibility. E5 is implemented below; G5 is complete and Mazur G1 remains.
 
 ## E5 — specified cocone comparison and G5, split into capped leaves
 
@@ -259,11 +259,11 @@ from the geometric smooth-locus identification. Each cap includes helpers:
   between the exact specified cocones, proves normalization/node compatibility,
   proves local finite presentation of both actual atlases by their open covers,
   and transports it to `polygon_lfp` for the arbitrary pushout C.
-- **E5b — PolygonAtlasSmoothLocus, cap 240, ready.** Compute the smooth
+- **E5b — PolygonAtlasSmoothLocus, implemented at 176/240.** Compute the smooth
   locus of each actual atlas using E3 and open-immersion naturality. Identify
   it with the disjoint full Laurent component opens; retain both n=2 overlaps
   and the smooth point z=1 in n=1. Prove the component maps and their ranges.
-- **E5c — PolygonSmoothLocus, cap 240, follows E5b.** Transport that geometric
+- **E5c — PolygonSmoothLocus, implemented at 174/240.** Transport that geometric
   identification through `polygonIso` to the specified `smoothIso` below,
   prove its required component formula, and transport the commutative group.
 
@@ -281,12 +281,12 @@ def smoothIso :
 
 Require the component formula, with `torusToComponent` induced by
 `ProjectiveLine.overlapLeft K ≫ ProjectiveLine.left K` and its map over K:
-`(Sigma.ι _ ((ZMod.finEquiv n).symm i) ≫ smoothIso.inv).left ≫
+`(Sigma.ι _ (ZMod.finEquiv n i) ≫ smoothIso.inv).left ≫
  C.hom.smoothLocus.ι = (torusToComponent K ≫ componentι K n i ≫ p).left`.
 Then transport the commutative group through this specified iso.
 Source: DR II.1.1 and II.1.12(a). Dependencies: E3/E4 and G4.
 `IsPushout.isoIsPushout` compares the actual cocones; smooth-locus naturality
-transports E3 along the proved open atlas. E4 and E5a are complete; E5b is the next ready leaf.
+transports E3 along the proved open atlas. E1–E5 are complete. No further G5 leaf remains in this split.
 
 ## API evidence and execution
 
@@ -304,7 +304,7 @@ rg -n 'mem_smoothLocus|preimage_smoothLocus_eq' $M/AlgebraicGeometry/Morphisms/S
 rg -n 'does not|not proved|smooth/node' FLT/Mazur/CurveNode.lean
 ```
 
-E1–E4 are implemented; E5 remains to identify the global smooth locus. Build with LEAN_NUM_THREADS=2;
+E1–E5 are implemented; the global smooth locus and its commutative group are identified. Build with LEAN_NUM_THREADS=2;
 run `lake exe runLinter FLT.Mazur.MODULE` separately for each module. Audit all
 new declarations with collectAxioms; allow only propext/Classical.choice/Quot.sound.
 C-sort FLT.lean public imports; commit each leaf locally; never push. If any
@@ -312,7 +312,7 @@ cap fails, commit proved material and record exact remainder and smaller caps
 in untracked BLOCKED.md outside FLT/. Only this split document is committed prose.
 
 The following dated validation notes record intermediate checkpoints; the
-implemented E4d/E5a status above supersedes their remaining-work notes.
+implemented E1–E5 status above supersedes their remaining-work notes.
 
 E1 checked 2026-09-30 20:12 UTC: 136/260 lines; foreground module build,
 individual runLinter, and collectAxioms on all 21 module declarations passed.
@@ -516,3 +516,33 @@ Classical.choice and Quot.sound; evidence: GOAL_MAZUR_W12_ALL_AXIOMS.txt
 (untracked). All module caps, sorted FLT.lean imports and git diff --check
 passed. E5b, E5c, G5 and Mazur G1 remain; Mazur_statement still occurs at
 FLT/Assumptions/Mazur.lean:103 (source check, no full-goal axiom rebuild).
+
+E5b W13 checked 2026-10-03 01:16 UTC: PolygonAtlasSmoothLocus (176/240)
+passed its foreground module build, individual runLinter and collectAxioms on
+all 19 declarations (GOAL_MAZUR_W13_ATLAS_AXIOMS.txt, untracked). Only the
+three allowed axioms occur. The specified torus maps are open immersions with
+pairwise disjoint ranges whose union is exactly the atlas smooth locus, for
+every positive n. The cyclic proof uses both alternatives of charts_eq_iff;
+the one-gon proof uses its full Laurent chart. E5c remains next.
+
+W13 contract correction: Mathlib/Data/ZMod/Basic.lean:45 defines
+`ZMod.finEquiv n : Fin n ≃+* ZMod n`. Thus the component formula uses
+`Sigma.ι _ (ZMod.finEquiv n i)` for `i : Fin n`; the earlier `.symm i`
+had the direction reversed. The inverse equivalence indexes the geometric
+components when constructing the map from the ZMod-indexed split group.
+
+E5c W13 checked 2026-10-03 01:23 UTC: PolygonSmoothLocus (174/240)
+passed its foreground module build and individual runLinter. The combined
+collectAxioms audit checked all 19 + 34 = 53 declarations in both W13 modules,
+allowing only propext, Classical.choice and Quot.sound; evidence is untracked
+GOAL_MAZUR_W13_ALL_AXIOMS.txt. The actual Laurent maps cover the smooth open
+and are pairwise disjoint open immersions. Their coproduct in Over gives
+smoothIso; component_smoothIso_inv proves the specified normalization formula.
+smoothGrpObj and smoothCommGrpObj transport the group and commutativity.
+Use polygon_lfp to install local finite presentation before calling these APIs.
+G5 is complete for every positive n over every field, including characteristic
+two. No further leaf is ready within G5. The later whole-polygon action,
+normalization sheaf/cohomology and genus work are outside this completed split;
+Mazur G1 and removal of Mazur_statement remain open. Source check:
+`rg -n '^axiom Mazur_statement' FLT/Assumptions/Mazur.lean` returns line 103.
+No full-goal axiom rebuild or whole-library lint was run.

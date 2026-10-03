@@ -1201,6 +1201,7 @@ public import FLT.Mazur.PinchingAffineDescent
 public import FLT.Mazur.PinchingNeighborhoods
 public import FLT.Mazur.PolygonAtlas
 public import FLT.Mazur.PolygonAtlasCocone
+public import FLT.Mazur.PolygonAtlasSmoothLocus
 public import FLT.Mazur.PolygonChartScaling
 public import FLT.Mazur.PolygonCoconeComparison
 public import FLT.Mazur.PolygonCyclicAtlas
@@ -1213,6 +1214,7 @@ public import FLT.Mazur.PolygonNodeEqualizer
 public import FLT.Mazur.PolygonNodeLocalization
 public import FLT.Mazur.PolygonNodePresentation
 public import FLT.Mazur.PolygonPinchingDiagram
+public import FLT.Mazur.PolygonSmoothLocus
 public import FLT.Mazur.PolygonSplitGroup
 public import FLT.Mazur.PolygonUniversalScaling
 public import FLT.Mazur.PrincipalSubmoduleCoordinates
