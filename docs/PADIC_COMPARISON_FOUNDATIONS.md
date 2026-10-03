@@ -977,3 +977,39 @@ and still depends on `sorryAx`; no general-family admission is discharged
 by the fixed-C_p endpoint alone. Rebuild each named module, lint it alone,
 and print its axioms to check these claims; the W34 handoff records the
 checked snapshot and evidence logs.
+
+## W35 cyclotomic trace split (before implementation)
+
+Every new module below has a 150-line cap. Dependencies are proved from the
+actual subfields, minimal polynomials and inherited norm; none of the
+analytic conclusions is an input record field.
+
+| Leaf | Concrete output | Dependencies |
+|---|---|---|
+| PadicCyclotomicRelativeDegree | Degree p^r from level n+1 to n+r+1; relative primitive-root degree. | W34 absolute degrees, tower law |
+| PadicCyclotomicRelativeMinpoly | Relative minimal polynomial X^(p^r)-C(zeta^(p^r)). | Relative degree, root equation |
+| PadicCyclotomicRootTrace | Normalized trace of primitive higher roots and arbitrary root powers. | Relative minimal polynomial, trace next coefficient |
+| UltrametricDistinctTerms | A finite sum of terms with distinct nonzero norms dominates every term. | Ultrametric inequality |
+| PadicUniformizerOrthogonality | Distinct norms for scalar multiples of successive uniformizer powers. | Discrete Q_p norms, W34 uniformizer norm |
+| PadicCyclotomicCoefficientBound | Uniform bound on Q_p coefficients in the uniformizer power basis. | Orthogonality and actual power basis |
+| PadicCyclotomicUniformTrace | Bound independent of source level on the cyclotomic union. | Root-power trace and coefficient bound |
+
+After these leaves, split the relative Ax argument, completed union,
+equivariant continuous projections and their convergence before proceeding
+to nonzero twists and graded invariants. Those endpoints remain open until
+their arithmetic and analytic hypotheses have actually been discharged.
+
+W35 refinement: `UltrametricDistinctTerms` needs no new module: Mathlib's
+`IsUltrametricDist.norm_sum_eq_sup'_of_pairwise_ne` supplies that leaf.
+`PadicCyclotomicIntegralTrace` (cap 150) separates the trace bound for
+integer polynomials in roots, and hence uniformizer powers, from the
+coefficient argument and final operator estimate.
+
+W35 relative Ax refinement (all caps 150): `PadicRelativeGalois` proves
+integrality and isometry over any actual intermediate field;
+`PadicRelativeHasseApproximation` repeats the actual Hasse-root construction
+over that field, with the same Q_p binomial norm;
+`PadicRelativeAxDegreeStep` applies the existing arithmetic budget;
+`PadicRelativeAxEstimate` performs strong degree induction and yields a
+uniform approximation by elements of the actual intermediate field.
+This is the algebraic input for kernel descent, not an assumption of it.
