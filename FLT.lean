@@ -847,6 +847,7 @@ public import FLT.LocalClassFieldTheory.ContinuousCohomologyColimit
 public import FLT.LocalClassFieldTheory.ContinuousColimitNaturality
 public import FLT.LocalClassFieldTheory.ContinuousConnectingMap
 public import FLT.LocalClassFieldTheory.ContinuousExactCoefficients
+public import FLT.LocalClassFieldTheory.ContinuousRestriction
 public import FLT.LocalClassFieldTheory.ContinuousStageBoundary
 public import FLT.LocalClassFieldTheory.ContinuousStageDiagram
 public import FLT.LocalClassFieldTheory.CyclicCarry
