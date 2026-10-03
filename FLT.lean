@@ -938,6 +938,7 @@ public import FLT.LocalClassFieldTheory.ContinuousCohomologyColimit
 public import FLT.LocalClassFieldTheory.ContinuousColimitNaturality
 public import FLT.LocalClassFieldTheory.ContinuousConnectingMap
 public import FLT.LocalClassFieldTheory.ContinuousExactCoefficients
+public import FLT.LocalClassFieldTheory.ContinuousHilbert90
 public import FLT.LocalClassFieldTheory.ContinuousRestriction
 public import FLT.LocalClassFieldTheory.ContinuousRestrictionCohomology
 public import FLT.LocalClassFieldTheory.ContinuousRestrictionColimit
@@ -950,6 +951,7 @@ public import FLT.LocalClassFieldTheory.DiscreteFieldUnits
 public import FLT.LocalClassFieldTheory.DiscreteIntegralUnits
 public import FLT.LocalClassFieldTheory.DiscreteOrder
 public import FLT.LocalClassFieldTheory.DiscreteOrderExact
+public import FLT.LocalClassFieldTheory.FieldUnitInvariants
 public import FLT.LocalClassFieldTheory.FilteredComplexDescent
 public import FLT.LocalClassFieldTheory.FilteredHomologyDescent
 public import FLT.LocalClassFieldTheory.FiniteCharacteristicZeroCohomology
@@ -960,6 +962,8 @@ public import FLT.LocalClassFieldTheory.FixedCoefficientDifferential
 public import FLT.LocalClassFieldTheory.Frobenius
 public import FLT.LocalClassFieldTheory.FrobeniusTower
 public import FLT.LocalClassFieldTheory.HenselianRoots
+public import FLT.LocalClassFieldTheory.InflationBoundaryDescent
+public import FLT.LocalClassFieldTheory.InflationKernelCorrection
 public import FLT.LocalClassFieldTheory.IntegralCharacterAdditivity
 public import FLT.LocalClassFieldTheory.IntegralCochainCup
 public import FLT.LocalClassFieldTheory.IntegralCoefficientRestriction
@@ -978,6 +982,7 @@ public import FLT.LocalClassFieldTheory.InvariantStageTransition
 public import FLT.LocalClassFieldTheory.NormCongruence
 public import FLT.LocalClassFieldTheory.NormFirstOrder
 public import FLT.LocalClassFieldTheory.NormalizedOrder
+public import FLT.LocalClassFieldTheory.NormalizedTwoCocycles
 public import FLT.LocalClassFieldTheory.PowerClassOrder
 public import FLT.LocalClassFieldTheory.PrincipalAdicLimit
 public import FLT.LocalClassFieldTheory.PrincipalNormCorrection
