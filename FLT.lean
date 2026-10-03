@@ -889,6 +889,7 @@ public import FLT.LocalClassFieldTheory.ResidueGaloisEquiv
 public import FLT.LocalClassFieldTheory.ResidueNorm
 public import FLT.LocalClassFieldTheory.ResidueNormLift
 public import FLT.LocalClassFieldTheory.TrivialH1Characters
+public import FLT.LocalClassFieldTheory.TrivialRestrictionNaturality
 public import FLT.LocalClassFieldTheory.UnramifiedCharacterDescent
 public import FLT.LocalClassFieldTheory.UnramifiedCharacters
 public import FLT.LocalClassFieldTheory.UnramifiedCofinality
