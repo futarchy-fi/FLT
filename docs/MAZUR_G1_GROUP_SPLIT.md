@@ -5,7 +5,7 @@ exactness and cyclic linear exactness. They do not construct a polygon or
 identify that linear complex with sheaf cohomology. This split develops the
 relative group candidate and isolates its comparison with the smooth locus.
 The historical G1–G4 contracts below retain their original caps.
-The W19 validated outcome below supersedes the historical status tables.
+The W20 validated outcome below supersedes the W19 and historical status tables.
 New leaves are at most 240 lines. Unimplemented signatures remain contracts.
 
 Checked 2026-09-30 19:16 UTC by the following read-only API searches (paths
@@ -1219,3 +1219,157 @@ and final assembly remain unproved. A source check still finds
 `FLT/Assembly/ExistingInputs.lean:28`, and the final consumer at
 `FermatsLastTheorem.lean:24`. No fresh compiled consumer axiom audit or removal
 of the Mazur dependency is claimed.
+
+
+## W20 checked H5 auxiliary design
+
+Checked 2026-10-03: `W20_AFFINE_EXACT_PROOF.lean` and
+`W20_SPECTRUM_PROOF.lean` compile without placeholders. H5 is split before
+implementation; these auxiliary leaves do not close the global polygon gate.
+
+- H5a `AffineModuleExact`, cap 60: the natural tilde counit identifies a
+  spectrum-module complex with the tilde of its global sections. Exactness of
+  tilde transports section short exactness to the actual sheaves.
+- H5b `StructureDirectImageSections`, cap 70: `ΓSpecIso` identifies global
+  sections of the actual structure direct image with the source ring. Naturality
+  computes both the canonical unit and branch restrictions.
+
+The affine node and one-gon sequences, comparison with restrictions of the
+polygon maps, and global short exactness remain separate obligations. No cap
+for those unfinished proofs is released here.
+
+`W20_SCHEME_BRANCH_PROOF.lean` compiles in full with 30,000 heartbeats per
+command. H5c `AffineBranchSequence`, cap 140, uses the actual direct images on
+spectra. Its section formulas identify the two branch maps; the ring kernel
+condition and explicit surjectivity transfer through H5a. Scheme-map equations
+are inputs to this generic construction, derived from ring-map equations in
+its applications. Neither global polygon exactness nor its chart comparisons
+are assumptions of this construction.
+
+`W20_NODE_PROOF.lean` compiles in full. H5d `AffineNodeNormalizationExact`,
+cap 120, applies H5c to the cyclic node ring and to the one-gon endpoint-equalizer
+ring. Kernel lifts are the equalizer subtypes themselves. Surjectivity uses
+`(C a, 0)` for the two-branch node and `C a * (1-X)` for the one-gon, with the
+orientation zero minus adjacent infinity. These prove `ShortComplex.ShortExact`
+for actual sheaves on the two affine spectra. Comparing these complexes with
+restrictions of H3/H4 on the glued polygon remains open.
+
+`W20_OPEN_IMAGE_PROOF.lean` compiles before release. H5e
+`StructureImageOpenChart`, cap 140, identifies the actual structure direct
+image on any cartesian open chart. Ring section isomorphisms prove module
+linearity; naturality with the structure inclusion and with arbitrary compatible
+branch restrictions is proved, not assumed.
+
+`W20_OPEN_EXACT_PROOF.lean` compiles before release. H5f
+`ModuleExactOpenCover`, cap 100, detects zero modules on covers, then detects
+vanishing of the kernel, homology and cokernel. Its final theorem uses the
+actual open-immersion maps of `Scheme.OpenCover`, via `isoOpensRange`.
+It still needs proved local short exactness on those maps for the polygon.
+
+`W20_POLYGON_COMPLEX_PROOF.lean` compiles in full. H5g
+`PolygonNormalizationComplex`, cap 110, defines precisely H5's complex using
+H3/H4. The cartesian squares for normalization and nodes, and the two endpoint
+commutation equations, give an isomorphism with the actual affine complex.
+`chart_shortExact` transfers the proved ring exactness through this isomorphism.
+It does not posit an unproved sheaf-exactness field. The concrete atlas data must
+still be supplied, including the one-gon's complementary torus chart.
+
+`W20_CYCLIC_NODE_CHART_PROOF.lean` compiles before release. H5h
+`CyclicNodeChart`, cap 140, proves that a node belongs only to its own cyclic
+chart: different charts meet along punctured branches, which exclude the node.
+This gives the node pullback square, transported through the canonical
+coproduct comparison to the specified over-category nodes. It includes n=2.
+
+`W20_CYCLIC_NORMALIZATION_CHART_PROOF.lean` compiles in full. H5i
+`CyclicNormalizationExact`, cap 180, transports the normalization pullback via
+`coprodSpec`, proves both endpoint equations against the specified branch
+sections, and applies H5g/H5f. `CyclicNormalizationChart.shortExact` proves the
+actual sheaf short exact sequence for every cyclic polygon n ≥ 2, including n=2.
+The one-gon and transport to arbitrary supplied cocones are separate gates.
+
+`W20_ONEGON_NODE_CHART_PROOF.lean` compiles in full. H5j
+`OneGonNormalizationChart`, cap 130, uses the existing Möbius normalization
+coordinate `alpha`. Its zero/one endpoints are the projective zero/infinity;
+the one-component coproduct comparisons give the cartesian squares. The actual
+one-gon normalization complex is short exact on its pinched affine chart.
+The complementary torus chart is still required for global one-gon exactness.
+
+`W20_ONEGON_TORUS_PROOF.lean` compiles in full before release. H5k
+`OneGonNormalizationTorus`, cap 120, proves that the node preimage over the torus
+is empty and that normalization there is the identity in cartesian coordinates.
+The first map is an isomorphism and the third object vanishes; the two-chart
+cover proves global one-gon short exactness.
+
+`W20_TRANSPORT_PROOF.lean` compiles before release. H5l
+`PolygonNormalizationTransport`, cap 100, compares actual complexes under a
+cocone isomorphism by their cartesian squares. Restriction along the inverse
+reflects exactness, transporting the atlas result to any supplied cocone.
+
+`W20_H5_PROOF.lean` compiles in full. H5m `PolygonNormalizationExact`, cap 70,
+assembles the one-gon and cyclic atlas results and transports them through
+`polygonIso`. Its `shortExact` proves H5 for the exact H3/H4 maps and any
+specified positive-size pinching cocone. `abelianSheaf_shortExact` supplies the
+additive-sheaf sequence used by cohomology. H5 is now proved; H8/H9 and the
+genus and geometric incidence bridges remain separate obligations.
+
+`W20_COPRODUCT_SECTIONS_PROOF.lean` compiles before release. H8a/H9a
+`SchemeCoproductSections`, cap 100, applies the Gamma-Spec adjunction to the
+coproduct and proves each coordinate is the actual component restriction.
+It includes the comparison for coproducts formed in schemes over a base.
+The index and coefficient universes are independent, so `Fin n` needs no
+coefficient-universe restriction.
+
+`W20_H0_IMAGE_PROOF.lean` compiles before release. H8b/H9b
+`StructureDirectImageHZero`, cap 60, identifies degree-zero direct-image
+cohomology with source global sections. The scalar comparison uses the actual
+composite structure morphism; no affine or separatedness assumption is needed.
+
+`W20_COPRODUCT_CONSTANTS_PROOF.lean` compiles before release. H8c/H9c
+`CoproductConstantSections`, cap 80, turns proved constant-section properties
+on components into a ring and base-linear section equivalence. Its coordinate
+lemma identifies values by actual component restriction.
+
+`W20_COPRODUCT_IMAGE_H0_PROOF.lean` compiles in full. H8d/H9d
+`PolygonNormalizationHZero`, cap 100, applies the section comparison to the
+actual normalization and node module sheaves. H7 supplies constant sections
+on each projective line; `ΓSpecIso` supplies them on each point. The resulting
+`normalizationEquiv` and `nodeEquiv` are base-linear equivalences with `Fin n → K`,
+with explicit coordinate restriction formulas. Degree-one vanishing remains open.
+
+`W20_NODE_CLOSED_PROOF.lean` compiles before release. H9e
+`PolygonNodesClosed`, cap 110, proves the actual node map is a closed immersion
+for cyclic polygons, the one-gon and any specified pinching cocone. On each
+node chart evaluation is a surjective ring map; over the complementary
+one-gon torus the source is empty. Thus the node map is finite and affine.
+
+## W20 validated outcome
+
+Checked 2026-10-03 07:38 UTC. Foreground module builds and single-module lint passed
+for all 18 new modules. The originating-declaration audit in
+`GOAL_MAZUR_W20_AXIOM_AUDIT.lean` checked 207 declarations; every dependency
+axiom is `propext`, `Classical.choice` or `Quot.sound`. The checked consumer
+`W20_REMAINING_CONTRACT.lean` proves the exact original H5 target and both
+H0 equivalence targets, and checks node finiteness. These root validation
+artifacts stay untracked, outside the library and docs.
+
+H5 is proved for every positive polygon size and every supplied pinching
+cocone, using the actual H3 inclusion and H4 branch difference. The proof
+includes n=1 and n=2, and gives additive-sheaf short exactness. H8/H9 now have
+their H0 identifications with `Fin n → K`, with component and node restriction
+formulas. The node map is a closed immersion, hence finite and affine.
+
+H8/H9 degree-one vanishing is still unproved. The available
+`affinePushforward_moduleH_subsingleton_iff` requires a separated target;
+polygon separatedness has not yet been established in these modules. It also
+needs cohomology of the normalization coproduct to be compared with the H7
+projective-line calculation. Prove these prerequisites, or supply a direct
+acyclic comparison that avoids separatedness, before marking H8/H9 complete.
+No bounded proof cap is released for these unfinished obligations.
+
+The cyclic incidence comparison, polygon constants, properness, dimension,
+genus and geometric base change remain open. Geometric U12 still needs actual
+irreducible components and node/edge incidence after field extension. The
+moduli/arithmetic argument and final assembly also remain open: source check
+`rg -n 'Mazur_statement|mazur_W' FLT/Assumptions/Mazur.lean
+FLT/Assembly/ExistingInputs.lean` still finds the assumption and its use.
+No compiled final-consumer axiom audit or Mazur removal is claimed.

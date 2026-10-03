@@ -1244,6 +1244,7 @@ public import FLT.Mazur.AcyclicDirectImageResolution
 public import FLT.Mazur.AcyclicPushforwardCohomology
 public import FLT.Mazur.AcyclicResolutionComparison
 public import FLT.Mazur.AffineAnnihilator
+public import FLT.Mazur.AffineBranchSequence
 public import FLT.Mazur.AffineClosedModuleDescent
 public import FLT.Mazur.AffineCoherent
 public import FLT.Mazur.AffineCoherentSubmoduleExtension
@@ -1264,7 +1265,9 @@ public import FLT.Mazur.AffineCoverCohomology
 public import FLT.Mazur.AffineCoverIntersections
 public import FLT.Mazur.AffineIdealPowerExtension
 public import FLT.Mazur.AffineKernelLocalization
+public import FLT.Mazur.AffineModuleExact
 public import FLT.Mazur.AffineModuleSupport
+public import FLT.Mazur.AffineNodeNormalizationExact
 public import FLT.Mazur.AffinePullbackIdeal
 public import FLT.Mazur.AffinePushforwardCohomology
 public import FLT.Mazur.AffinePushforwardQuasicoherent
@@ -1375,12 +1378,15 @@ public import FLT.Mazur.CoherentSupportedDecomposition
 public import FLT.Mazur.CommonIdealDirectSum
 public import FLT.Mazur.ConstantDegree
 public import FLT.Mazur.Contracts
+public import FLT.Mazur.CoproductConstantSections
 public import FLT.Mazur.CurveFiberHypotheses
 public import FLT.Mazur.CurveFinite
 public import FLT.Mazur.CurveGenus
 public import FLT.Mazur.CurveNode
 public import FLT.Mazur.CuspCollision
 public import FLT.Mazur.CuspOrderNumerator
+public import FLT.Mazur.CyclicNodeChart
+public import FLT.Mazur.CyclicNormalizationExact
 public import FLT.Mazur.CyclicPinchingProduct
 public import FLT.Mazur.CyclicPinchingRotation
 public import FLT.Mazur.CyclicProductDescent
@@ -1443,6 +1449,7 @@ public import FLT.Mazur.ModuleCohomologyExact
 public import FLT.Mazur.ModuleCohomologyRing
 public import FLT.Mazur.ModuleCohomologyVanishing
 public import FLT.Mazur.ModuleDerivedAbelianComparison
+public import FLT.Mazur.ModuleExactOpenCover
 public import FLT.Mazur.ModuleFreeOpen
 public import FLT.Mazur.ModuleInjectiveFlasque
 public import FLT.Mazur.ModuleLineBundlePullback
@@ -1500,9 +1507,11 @@ public import FLT.Mazur.OneGonGluing
 public import FLT.Mazur.OneGonLocalDescent
 public import FLT.Mazur.OneGonLocalizedEqualizer
 public import FLT.Mazur.OneGonNormalization
+public import FLT.Mazur.OneGonNormalizationChart
 public import FLT.Mazur.OneGonNormalizationCoordinates
 public import FLT.Mazur.OneGonNormalizationFinite
 public import FLT.Mazur.OneGonNormalizationPullback
+public import FLT.Mazur.OneGonNormalizationTorus
 public import FLT.Mazur.OneGonOverlap
 public import FLT.Mazur.OneGonPinchingDescent
 public import FLT.Mazur.OneGonPinchingProduct
@@ -1555,9 +1564,14 @@ public import FLT.Mazur.PolygonNodeLocalization
 public import FLT.Mazur.PolygonNodePresentation
 public import FLT.Mazur.PolygonNodeScalarExtension
 public import FLT.Mazur.PolygonNodeScaling
+public import FLT.Mazur.PolygonNodesClosed
 public import FLT.Mazur.PolygonNormalizationAlgebra
+public import FLT.Mazur.PolygonNormalizationComplex
 public import FLT.Mazur.PolygonNormalizationDominant
+public import FLT.Mazur.PolygonNormalizationExact
 public import FLT.Mazur.PolygonNormalizationFinite
+public import FLT.Mazur.PolygonNormalizationHZero
+public import FLT.Mazur.PolygonNormalizationTransport
 public import FLT.Mazur.PolygonPinchingAffineBaseChange
 public import FLT.Mazur.PolygonPinchingDiagram
 public import FLT.Mazur.PolygonPinchingFlatBaseChange
@@ -1660,6 +1674,7 @@ public import FLT.Mazur.ScalarCohomology
 public import FLT.Mazur.SchematicDescentGluing
 public import FLT.Mazur.SchemeCohomologyIso
 public import FLT.Mazur.SchemeCohomologyIsoCocycles
+public import FLT.Mazur.SchemeCoproductSections
 public import FLT.Mazur.SectionCharts
 public import FLT.Mazur.SectionDivisors
 public import FLT.Mazur.SectionKernelLocal
@@ -1674,6 +1689,9 @@ public import FLT.Mazur.SmoothDimensionBound
 public import FLT.Mazur.SmoothOpenSectionCartier
 public import FLT.Mazur.SmoothSectionCartier
 public import FLT.Mazur.StructureCohomologyFinite
+public import FLT.Mazur.StructureDirectImageHZero
+public import FLT.Mazur.StructureDirectImageSections
+public import FLT.Mazur.StructureImageOpenChart
 public import FLT.Mazur.SurjectiveDominantEpi
 public import FLT.Mazur.TernaryOpenDescent
 public import FLT.Mazur.TildePrincipalOpen
