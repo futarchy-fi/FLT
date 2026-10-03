@@ -309,6 +309,7 @@ public import FLT.GaloisRepresentation.Extensions.ContinuousClassCoordinates
 public import FLT.GaloisRepresentation.Extensions.ContinuousCocycleCoordinates
 public import FLT.GaloisRepresentation.Extensions.ContinuousCup
 public import FLT.GaloisRepresentation.Extensions.ContinuousCupComparison
+public import FLT.GaloisRepresentation.Extensions.ContinuousCupSwap
 public import FLT.GaloisRepresentation.Extensions.ContinuousH1Comparison
 public import FLT.GaloisRepresentation.Extensions.ContinuousH1Equiv
 public import FLT.GaloisRepresentation.Extensions.ContinuousH2Comparison
