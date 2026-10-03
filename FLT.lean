@@ -641,11 +641,16 @@ public import FLT.GroupScheme.QuotientFiberFreeness
 public import FLT.GroupScheme.RationalCubeValuations
 public import FLT.GroupScheme.RaynaudAugmentationAction
 public import FLT.GroupScheme.RaynaudAugmentationDecomposition
+public import FLT.GroupScheme.RaynaudAugmentationRank
 public import FLT.GroupScheme.RaynaudBiduality
 public import FLT.GroupScheme.RaynaudCartierDual
+public import FLT.GroupScheme.RaynaudCharacterCoordinates
 public import FLT.GroupScheme.RaynaudCharacterDecomposition
+public import FLT.GroupScheme.RaynaudCharacterFunctions
 public import FLT.GroupScheme.RaynaudCharacterOrthogonality
 public import FLT.GroupScheme.RaynaudCharacterProjector
+public import FLT.GroupScheme.RaynaudCharacterProportionality
+public import FLT.GroupScheme.RaynaudCharacterRankOne
 public import FLT.GroupScheme.RaynaudClosureFactorization
 public import FLT.GroupScheme.RaynaudCommonStage
 public import FLT.GroupScheme.RaynaudConnectedQuotient
@@ -663,6 +668,7 @@ public import FLT.GroupScheme.RaynaudEtaleExtension
 public import FLT.GroupScheme.RaynaudExtension
 public import FLT.GroupScheme.RaynaudExtensionExists
 public import FLT.GroupScheme.RaynaudExtremalActions
+public import FLT.GroupScheme.RaynaudExtremalCharacters
 public import FLT.GroupScheme.RaynaudFilteredExtension
 public import FLT.GroupScheme.RaynaudFiltrationLayers
 public import FLT.GroupScheme.RaynaudFlatKernelExactness
@@ -671,7 +677,9 @@ public import FLT.GroupScheme.RaynaudGenericHopfMap
 public import FLT.GroupScheme.RaynaudGenericSplitExtension
 public import FLT.GroupScheme.RaynaudHenselianCharacters
 public import FLT.GroupScheme.RaynaudHenselianFactor
+public import FLT.GroupScheme.RaynaudIdentifiedCharacters
 public import FLT.GroupScheme.RaynaudInductionStep
+public import FLT.GroupScheme.RaynaudIntegralCharacterRank
 public import FLT.GroupScheme.RaynaudIntegralClosureBound
 public import FLT.GroupScheme.RaynaudIntegralCoordinates
 public import FLT.GroupScheme.RaynaudIntegralFiltration

@@ -519,3 +519,15 @@ construction/proof declarations; only `propext`, `Classical.choice`, and
 derives the character system and invertible averaging denominator from the
 strict Henselian domain and the common finite-field/residue characteristic.
 Its eigenspaces are the actual scalar-action eigenspaces of the counit kernel.
+
+W14 C5p2 checked 2026-10-03: all eight modules in C5p2a–e and the identified/
+extremal integration pass their foreground builds and individual lints.
+`W14_P2_AXIOMS.lean` audits every new proof, instance and construction.
+The generic hypothesis is rank one of the original F-vector space of points;
+no integral eigenspace rank or presentation is assumed. Scalar orbits give
+proportional generic character functions, integral evaluation gives rank at
+most one, and the augmentation rank sum forces equality for every character.
+`exists_maximal_model_character_bases` and
+`exists_minimal_model_character_bases` retain the actual extremal extension
+properties and derive all character bases after transferring the module
+structure through the specified generic bijection.
