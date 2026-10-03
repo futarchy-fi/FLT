@@ -5,7 +5,7 @@ exactness and cyclic linear exactness. They do not construct a polygon or
 identify that linear complex with sheaf cohomology. This split develops the
 relative group candidate and isolates its comparison with the smooth locus.
 The historical G1–G4 contracts below retain their original caps.
-The W15 evidence at the end supersedes the historical status tables.
+The W16 evidence at the end supersedes the historical status tables.
 New leaves are at most 240 lines. Unimplemented signatures remain contracts.
 
 Checked 2026-09-30 19:16 UTC by the following read-only API searches (paths
@@ -704,3 +704,89 @@ cover for arbitrary scheme bases. These are covers of the specified polygon,
 not a replacement polygon defined by assuming its pinching property.
 The normalization comparison and endpoint compatibility on these covers are
 still needed to apply `RelativePinchingDescent` to the global cocone.
+
+## W16 implementation evidence and remaining global comparison
+
+Checked 2026-10-03 03:54 UTC, implementation head `93c1fbf9`, base `0b2d8d7b`.
+
+| Item | Module under `FLT/Mazur/` | Lines/cap | Commit |
+| --- | --- | --- | --- |
+| U6a | `OneGonScalarExtension` | 129/220 | `e87e6616` |
+| U6b1 | `RelativePinchingNeighborhoods` | 74/120 | `10712d7a` |
+| U6b2 | `RingEqualizerLocalization` | 85/150 | `27b657dc` |
+| U6c0 | `RingEqualizerLocalDescent` | 134/180 | `152da214` |
+| U6c3 | `RelativePinchingLocalDescent` | 93/140 | `646eeb2a` |
+| U6c4 | `SurjectiveDominantEpi` | 54/100 | `fe05e3cf` |
+| U6c5 | `RingEqualizerAwayEndpoint` | 41/70 | `fe05e3cf` |
+| U6c6 | `SchematicDescentGluing` | 49/90 | `30fcabbb` |
+| U6c7 | `RingEqualizerDescent` | 74/110 | `b723c15c` |
+| U6c1/U6c2 | `RelativePinchingDescent` | 90/160 | `626a135f` |
+| U6d1 | `PinchingChartBaseChange` | 92/130 | `6790bcc0` |
+| U6d2 | `PolygonProductAtlas` | 181/200 | `93c1fbf9` |
+
+All 12 modules passed their individual foreground commands:
+
+```
+LEAN_NUM_THREADS=2 lake build FLT.Mazur.MODULE
+LEAN_NUM_THREADS=2 lake exe runLinter FLT.Mazur.MODULE
+```
+
+`LEAN_NUM_THREADS=2 lake env lean GOAL_MAZUR_W16_AXIOM_AUDIT.lean`
+checked all 191 declarations originating in these modules, including generated
+helpers. `GOAL_MAZUR_W16_ALL_AXIOMS.txt` records only `propext`,
+`Classical.choice`, `Quot.sound`. No whole-library build or lint was run.
+All final module builds are warning-free. No proof placeholders, new axioms,
+or native_decide occur in the new code; comments are excluded from that scan.
+`GOAL_MAZUR_W16_VALIDATION.txt` records the caps, audit counts and complete
+sorted import inventory. `git diff --check 0b2d8d7b..HEAD` passes.
+Only new Lean modules, sorted `FLT.lean` imports and the authorized split doc
+are changed. All commits use krandder's requested name/email, with no AI credit.
+Nothing was pushed. Scratch proofs, audit logs and handoffs remain outside
+`FLT/` and `docs/`, untracked or ignored.
+
+The remaining U6 gap is the **global pinching pushout after base change**.
+The field-only affine-descent obstruction is closed; it is not the remaining
+blocker. The new covers alone do not prove preservation of the closed pinching
+pushout. This is unfinished mathematical formalization, not an approval or
+infrastructure blocker.
+
+`W16_U6_REMAINING_CONTRACT.lean` compiles without placeholders. Its output
+`GOAL_MAZUR_W16_U6_CONTRACT.txt` records a precise next one-gon comparison:
+
+```lean
+IsPullback
+  (Spec.map (CommRingCat.ofHom (PolygonNodePresentation.B (R := S)).val.toRingHom))
+  (affineNormalizationLift K S)
+  (PolygonProductAtlas.oneGonChartMap K S false)
+  (normalizationProduct K S)
+```
+
+The scratch definitions are actual pullback maps; `alpha_toBase` is proved and
+axiom-audited. The displayed IsPullback is only a checked proposition, not a
+proved theorem. The final arbitrary-scheme `Over.pullback g` IsPushout contract
+from W15 is also checked, not proved.
+
+Next proof obligations, to split and typecheck before assigning caps:
+
+1. Prove that cartesian one-gon normalization square in the new coordinates,
+   and the analogous cyclic two-branch square. Transport the H2 normalization
+   squares through U6d1's ring isomorphisms and the actual coproduct comparisons.
+2. Transport the global input cocone's endpoint relation to the relative
+   affine normalization charts. In particular, identify the one-gon alpha
+   chart's zero/one sections with the pulled-back zero/infinity sections;
+   do not treat this chart as invariant under universal scaling.
+3. Apply `RelativePinchingDescent` chartwise, glue with the actual product cover,
+   and prove the base-morphism identity plus both pinching cocone factorization
+   equations and uniqueness. Descend locally on a general base scheme and
+   transport from the specified polygon to an arbitrary supplied cocone.
+4. Only then construct U7's whole-polygon action and prove U8–U12: unit,
+   associativity, smooth restriction, base change and graph rotation.
+
+U6's pushout, U7–U12, H3–H5/H7–H15, full G1 moduli, G2 arithmetic and A1–A5
+remain unproved. No whole-polygon action, genus theorem or Mazur removal is
+claimed. Source checks still return `axiom Mazur_statement` at
+`FLT/Assumptions/Mazur.lean:103`, `mazur_W` at
+`FLT/Assembly/ExistingInputs.lean:28`, and `mazurTorsionExclusion` at
+`FermatsLastTheorem.lean:24`. This is source evidence, not a new compiled audit
+of `PNat.pow_add_pow_ne_pow`. The final existing-consumer rewire is also outside
+this wave's new-module-only authorization.
