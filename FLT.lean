@@ -842,6 +842,7 @@ public import FLT.LocalClassFieldTheory.CochainOpenNormal
 public import FLT.LocalClassFieldTheory.ContinuousCharacteristicZeroCohomology
 public import FLT.LocalClassFieldTheory.ContinuousCochainColimit
 public import FLT.LocalClassFieldTheory.ContinuousCochainComplex
+public import FLT.LocalClassFieldTheory.ContinuousCoefficientMaps
 public import FLT.LocalClassFieldTheory.ContinuousCohomologyColimit
 public import FLT.LocalClassFieldTheory.ContinuousStageBoundary
 public import FLT.LocalClassFieldTheory.ContinuousStageDiagram
