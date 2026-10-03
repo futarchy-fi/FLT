@@ -1117,6 +1117,7 @@ public import FLT.LocalClassFieldTheory.FiniteRelativeCocycleDescent
 public import FLT.LocalClassFieldTheory.FiniteRelativeSaturation
 public import FLT.LocalClassFieldTheory.FiniteRelativeSequence
 public import FLT.LocalClassFieldTheory.FiniteRestrictionComparison
+public import FLT.LocalClassFieldTheory.FiniteSubfieldDvr
 public import FLT.LocalClassFieldTheory.FiniteSubgroupCocycleCorrection
 public import FLT.LocalClassFieldTheory.FixedCoefficientBoundary
 public import FLT.LocalClassFieldTheory.FixedCoefficientCochain
@@ -1223,6 +1224,7 @@ public import FLT.LocalClassFieldTheory.RelativeFundamentalExtensionRestriction
 public import FLT.LocalClassFieldTheory.RelativeFundamentalInflation
 public import FLT.LocalClassFieldTheory.RelativeFundamentalOrdinaryRestriction
 public import FLT.LocalClassFieldTheory.RelativeFundamentalRestriction
+public import FLT.LocalClassFieldTheory.RelativeFundamentalSubgroup
 public import FLT.LocalClassFieldTheory.RelativeFundamentalTateCup
 public import FLT.LocalClassFieldTheory.RelativeInflationTower
 public import FLT.LocalClassFieldTheory.RelativeLowerBound
