@@ -264,3 +264,59 @@ and `#print axioms` for every new named declaration. Only propext,
 Classical.choice, Quot.sound may occur. Builds stay in the foreground;
 never run whole-library lint. Record actual line counts and local commits.
 Audit the final theorem separately; support lemmas do not remove sorryAx.
+
+
+## W16 residue comparison audit and refined execution order
+
+Checked 2026-10-03 against the pinned checkout (read-only `rg` and direct
+source inspection; inventory in `Scratch/LiftsW16/api-audit.log`). The W15
+U01 and U03 gates were too broad: several arithmetic ingredients already
+exist. The following refinement precedes implementation.
+
+* `IsLocalRing.ResidueField.mapAlgEquiv'` reduces local algebra automorphisms.
+  Ring automorphisms preserve the unique maximal ideal; valuation uniqueness
+  is unnecessary for this integral-ring leaf.
+* `Ideal.Quotient.stabilizerHom_surjective` in
+  `Mathlib/RingTheory/Invariant/Basic.lean` proves residue surjectivity for
+  finite invariant actions. In a local ring every automorphism stabilizes
+  the maximal ideal. `Algebra.isInvariant_of_isGalois'` derives invariance
+  for the full integral closure in a finite Galois fraction-field extension.
+  Thus surjectivity need not be reproved by Hensel lifting.
+* FLT `DiscreteValuationRing/ResidueGenerator.lean` constructs a power
+  basis of a finite free DVR algebra with separable residue extension.
+  FLT `Unramified/PowerBasis.lean` proves rigidity of its homomorphisms
+  under formal unramifiedness using the unit derivative and Hensel uniqueness.
+  This yields injectivity without assuming trivial inertia or a power basis.
+* `galRestrict` and fraction-ring extension of algebra equivalences connect
+  field automorphisms with integral automorphisms. These are the next
+  interface to assemble, not hypotheses asserting residue bijectivity.
+* FLT `Unramified/LocalRing.lean` already proves
+  `exists_unramified_extension_of_residueField`: finite separable residue
+  extensions lift to finite separable fraction-field extensions of equal
+  degree with a DVR of integers. U03's polynomial/root-field construction
+  is therefore available. Galois normality, placement inside the chosen
+  separable closure, uniqueness there, and tower compatibility remain to
+  be assembled; the existence theorem alone does not supply them.
+* `ValuationSubring.inertiaSubgroup` is a kernel on a decomposition group;
+  `Ideal.inertia` is the congruence subgroup on the integral ring. A theorem
+  using either must identify its actual action and domain, not interchange
+  the two definitions silently.
+
+Refined leaves, each capped at 200 lines:
+
+| ID | Output and proof | Readiness before implementation |
+|---|---|---|
+| U01a / ResidueAction | Bundle reduction of local algebra automorphisms, prove residue formula and kernel = ideal inertia | READY from residue functor and quotient equality |
+| U01b / ResidueActionSurjective | Derive surjectivity for a finite invariant integral action using the existing stabilizer theorem | READY; field application must derive invariance |
+| U01c / ResidueActionFaithful | Construct the integral power basis and prove reduction injective for finite free formally unramified DVR algebras with separable residue | READY from the two FLT lemmas above |
+| U01d / ResidueGaloisEquiv | Combine a finite Galois fraction extension's integral closure restriction with U01a–c; prove the actual reduction formula | Next after U01a–c; resolve restriction equivalence and instances, do not assume bijectivity |
+| U02a / Frobenius | Pull back finite residue q-power through U01d; prove uniqueness, order and generation | Next after U01d; `FiniteField.bijective_frobeniusAlgEquivOfAlgebraic_pow` |
+| U03a / FrobeniusTower | Prove restriction compatibility by the residue q-power formula and faithful reduction | Next after U02a; resolve integral tower action |
+| U03b / UnramifiedRealization | Install the already constructed DVR extension in the chosen separable closure, prove normality and uniqueness | BLOCKED pending embeddings/normality and Henselian comparison |
+
+The general `IsNonarchimedeanLocalField` frontend still needs its extended
+valuation ring identified with the finite integral closure, finite/free
+instances, and ramification-index-one converted to formal unramifiedness.
+The integral theorem will state these standard ring hypotheses explicitly;
+it is not yet the assertion that every pair of local-field instances has a
+compatible unramified extension structure. U04/U05 and E1c7 remain blocked.
