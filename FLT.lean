@@ -1170,6 +1170,7 @@ public import FLT.Mazur.PolygonAtlasCocone
 public import FLT.Mazur.PolygonChartScaling
 public import FLT.Mazur.PolygonCyclicAtlas
 public import FLT.Mazur.PolygonCyclicCocone
+public import FLT.Mazur.PolygonCyclicDescent
 public import FLT.Mazur.PolygonIncidence
 public import FLT.Mazur.PolygonNodeBranches
 public import FLT.Mazur.PolygonNodeEqualizer

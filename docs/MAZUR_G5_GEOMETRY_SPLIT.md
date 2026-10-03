@@ -219,58 +219,65 @@ characteristic. The atlas is the existing irreducible one-gon chart gluing;
 no reducible node chart is substituted. The cocone does not yet assert the
 closed pinching universal property required by E4d.
 
-### E4d — arbitrary-target pinching descent, partial; global gluing remains
+### E4d — arbitrary-target pinching descent, partial; n=1 global comparison remains
 
-New `PolygonAtlas.lean`, namespace `FLT.Mazur.PolygonAtlas`. Combine E4a–c
-into `polygon K n` for every `[NeZero n]`; transport their cocones. Prove
-local pinching descent for arbitrary schemes by pulling back an affine
-cover of the target, descending on saturated source neighborhoods, and
-using `Scheme.OpenCover.glueMorphisms` with proved overlap compatibility.
-Dependencies: E4a–c and a local arbitrary-target pinching theorem, still missing.
+`PolygonAtlasCocone` constructs `PolygonAtlas.polygon K n`, normalization and
+nodes for every `[NeZero n]`. Its cocone uses exactly PolygonPinching's
+components, nodes and endpoint maps. For n≥2 it exposes both component-chart
+formulas; for n=1 it is the specified OneGonNormalization cocone.
+
+W11 completes the localized equalizers and both arbitrary-target affine-chart
+descent statements. No target affineness or separatedness is assumed:
 
 ```lean
-theorem isPushout (hn : 0 < n) :
-  IsPushout (PolygonPinching.toComponents K n hn)
-    (PolygonPinching.toNodes K n) (normalization K n) (nodes K n)
+NodePinchingDescent.node_desc
+OneGonPinchingDescent.oneGon_desc
 ```
 
-W10 proves the following prerequisites, without claiming arbitrary-target descent:
+The formerly proposed node descent leaf was split into NodeLocalDescent,
+TernaryOpenDescent, NodePinchingExistence and NodePinchingDescent. The one-gon
+uses OneGonLocalDescent and OneGonPinchingDescent. Every cap counts the entire
+module, including helpers. The local existence proofs choose an affine
+neighborhood of the common target image, use normalized principal source
+neighborhoods, descend by the proved localized equalizer, and glue to the
+conductor complements. Uniqueness uses a common affine neighborhood for the
+two candidate maps; it does not assume the target is separated.
 
-- `PinchingAffineDescent` (137/180) constructs unique descents for both actual
-  chart rings into every affine target scheme, without requiring morphisms
-  to preserve K. Theorems: `node_desc_affine`, `oneGon_desc_affine`.
-- `PinchingNeighborhoods` (95/140) finds principal neighborhoods defined by
-  elements of A or B with node value one. For B, interpolation of two
-  normalized polynomials produces an element equal to one at both endpoints.
-  This includes characteristic two and gives a neighborhood inside any open
-  containing both endpoints.
+`PolygonCyclicDescent` glues the node descents over the actual cyclic atlas,
+retaining both overlaps for n=2. `PolygonCyclicPushout.isPushout` proves
 
-W11 proves `NodeLocalizedEqualizer` (144/240): the actual A-localization
-is the pullback of its two localized branches, with both canonical projection
-formulas. `OneGonLocalizedEqualizer` (102/240) proves the actual B-localization
-is the endpoint equalizer on the localized normalization, including the
-fraction membership criterion and the canonical restriction formula.
+```lean
+IsPushout (PolygonPinching.toComponents K n hn)
+  (PolygonPinching.toNodes K n)
+  (PolygonCyclicAtlas.normalization K n h)
+  (PolygonCyclicAtlas.nodes K n h) -- h : 2 ≤ n
+```
 
-W11 proves both exact arbitrary-target local statements in NodePinchingDescent
-and OneGonPinchingDescent. Their helpers are split into individually capped
-modules; the one-gon uses OneGonLocalDescent (165/240) followed by
-OneGonPinchingDescent (140/240). No affine or separated target assumption remains.
+The all-positive-n `PolygonAtlas.isPushout` is still unproved. The remaining
+n=1 issue is the comparison between the affine normalization coordinate t of
+B and the specified projective-line coordinate z. The existing W10 maps go
+from standard z/w charts into the pinched scheme. Applying the new affine
+one-gon descent requires the converse chart map
+`alpha : Spec K[t] ⟶ ProjectiveLine.scheme K`, with z=t/(t−1), and proofs of
+its endpoint, puncture, covering and normalization-composition identities.
+Neither the open atlas cocone nor affine-chart descent alone supplies them.
 
-Still missing: global descent across the polygon cocone. The affine-target theorems have full affine-line sources;
-restricted source opens are spectra of localized polynomial rings. They
-cannot be used unchanged for maps to an affine neighborhood in an arbitrary
-Y. Then the locally defined morphisms must be glued, with uniqueness proved,
-and descended across the specified global cocone.
+Remaining contracts, not implemented declarations:
 
-Remaining proposed leaves, each at most 240 lines (contracts, not declarations):
-node arbitrary-target descent; one-gon arbitrary-target descent; polygon cocone assembly; global
-pinching universal property. Untracked BLOCKED.md specifies these contracts.
+- OneGonAffineNormalizationCoordinates, cap 220: the coordinate isomorphisms
+  z=t/(t−1) on D(t−1), and w=(t−1)/t on D(t), with exact overlap formulas.
+- OneGonAffineNormalization, cap 240: glue alpha, prove it is an open
+  immersion, its zero/one endpoints are zero/infinity, its puncture is
+  `toTorus ≫ overlapLeft ≫ left`, and
+  `alpha ≫ OneGonNormalization.normalization = oneBranch ≫ OneGonGluing.node`.
+  Prove alpha and the full projective Laurent open jointly cover P¹.
+- OneGonGlobalPushout, cap 220: use oneGon_desc and the actual open-gluing
+  pushout to prove the specified n=1 closed-pinching pushout in Over (Spec K).
+- PolygonAtlas, cap 120: transport the two pushouts through cyclicIso and
+  oneGonIso to prove the all-positive-n signature above with PolygonAtlas maps.
 
-The ring pullback proves only the affine-target case. Neither that case
-nor an open-gluing universal property closes this leaf. If local descent
-exceeds the cap, commit its proved prerequisites and record exact smaller
-contracts in untracked BLOCKED.md. E5 and Mazur G1 remain blocked until
-this specific cocone is a pushout for arbitrary target schemes.
+E5 and Mazur G1 remain blocked until the last comparison is proved. The
+remaining contracts and a validation inventory are in untracked BLOCKED.md.
 
 ## E5 — specified cocone comparison and G5, cap 400, blocked
 
@@ -471,9 +478,14 @@ foreground module build, individual runLinter and collectAxioms on every
 module declaration passed (GOAL_MAZUR_W11_DESCENTS_AXIOMS.txt, untracked).
 Only propext, Classical.choice and Quot.sound occur.
 
-E4d W11 PolygonAtlasCocone checked 2026-10-03 00:27 UTC: 127/240 lines;
+E4d W11 PolygonAtlasCocone checked 2026-10-03 00:27 UTC: 122/240 lines;
 foreground module build, individual runLinter and all-declaration collectAxioms
 passed (GOAL_MAZUR_W11_COCONE_AXIOMS.txt, untracked). It constructs polygon,
 normalization and nodes for every positive n with the exact pinching cocone,
 identifies both cases with the prior atlases, and proves the cyclic chart formulas.
 The global universal property is not asserted by this module.
+
+E4d W11 PolygonCyclicDescent checked 2026-10-03 00:36 UTC: 125/240 lines;
+foreground build, individual runLinter and all-declaration collectAxioms passed
+(GOAL_MAZUR_W11_CYCLIC_AXIOMS.txt, untracked). Only the three allowed axioms
+occur. This module treats n≥2; n=1 global pinching remains open.
