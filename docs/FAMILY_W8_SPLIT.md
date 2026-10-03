@@ -870,3 +870,66 @@ structure is inferred for an arbitrary p-torsion point module. The source
 check `rg -n 'mem_isCompatible|sorry' FLT/GaloisRepresentation/HardlyRamified/Family.lean`
 still reports the original admission at line 68. No removal of `sorryAx`
 from that theorem or from `PNat.pow_add_pow_ne_pow` is claimed.
+
+## C5v2a scalar-field construction refinement
+
+Before implementation, split the algebraic simple-factor step into these
+≤150-line leaves:
+
+- `RaynaudSimpleEndomorphismField`: Schur's endomorphism division ring of
+  an actual finite simple module is a finite field; commuting scalar actions
+  imply that the module has rank one over this field.
+- `RaynaudSimpleScalarField`: transport that field action to an actual
+  irreducible representation of a commutative group, proving its
+  characteristic, rank, and commutation with the original action.
+- `RaynaudCommutativeImageScalars`: apply the construction to a representation
+  whose actual automorphism image is commutative, without assuming a scalar
+  field or its rank as input.
+
+These algebraic leaves do not assert that arbitrary local simple factors
+have commutative image. Finite-level descent, wild/tame transport, and integral
+quotient exactness remain separate obligations.
+
+The C5v2a arithmetic connection is further split before implementation:
+`RaynaudTameQuotientScalars` kills a normal p-group on an actual simple
+representation, then derives commuting image through a commutative quotient;
+`RaynaudFiniteInertiaScalars` applies this to the proved first-ramification
+p-group and finite tame character of a faithful finite DVR action. Each cap
+is 150 lines. The fraction-field/infinite-inertia transport remains open.
+
+Before implementation, refine the absolute-inertia passage into
+`RaynaudAbsoluteTameCommutativity` (prove the actual inertia/wild-inertia
+quotient commutative by checking finite tame characters) and
+`RaynaudInertiaSimpleScalars` (use the proved pro-p image result to derive
+rank-one scalars for every continuous simple finite local-inertia
+representation). Both caps are 150. These statements concern local inertia
+of number-field completions; identifying it with the relevant
+strict-Henselian fraction-field Galois group is still required.
+
+`RaynaudSimpleCommutingExtension` (cap 150) connects the constructed field
+to C5v1: every prescribed generic map out of an actual model with a simple
+commuting generic action extends. Its inputs are the representation and
+its equality with the model's actual action; scalar fields, scalar rank,
+and integral scalar lifts are all derived. The commuting-image hypothesis
+must still be supplied by the arithmetic transport for the chosen base.
+
+`RaynaudInertiaFactorDescent` (cap 150) uses the existing actual
+`InertiaDescent.subquotient_model`: construct the finite scalar field on a
+simple inertia subquotient, then descend its commuting scalar endomorphisms
+with its finite-flat model. This avoids assuming a new scalar rank during
+descent. Subsequent strict-Henselian base change must retain this action;
+general integral exactness is still not established.
+
+## C5v2 exactness correction and general layer split
+
+The earlier remaining-work note overlooked existing general results:
+`IntegralQuotientFaithfullyFlat` proves relative faithful flatness and kernel
+exactness for contracted quotients over a PID, using `FiniteHopfFreeness`.
+These modules predate W16. Audit their dependency axioms before applying them.
+The order-three middle-map code therefore needs generalization, not a new
+Hopf-subalgebra freeness proof.
+
+Before implementation, `RaynaudGeneralLayerDescent` (cap 150) generalizes
+`RaynaudLayerDescent` to arbitrary PID fraction fields, using the actual
+kernel closure, quotient, and comparison maps. Subgroup and quotient
+isomorphisms are induction hypotheses; no model assumes middle-map rigidity.

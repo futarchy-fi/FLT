@@ -675,6 +675,7 @@ public import FLT.GroupScheme.QuadraticTwistPoints
 public import FLT.GroupScheme.QuadraticTwistTensor
 public import FLT.GroupScheme.QuotientFiberFreeness
 public import FLT.GroupScheme.RationalCubeValuations
+public import FLT.GroupScheme.RaynaudAbsoluteTameCommutativity
 public import FLT.GroupScheme.RaynaudActualCyclicPresentation
 public import FLT.GroupScheme.RaynaudAugmentationAction
 public import FLT.GroupScheme.RaynaudAugmentationDecomposition
@@ -706,6 +707,7 @@ public import FLT.GroupScheme.RaynaudCharacterTranspose
 public import FLT.GroupScheme.RaynaudClosureFactorization
 public import FLT.GroupScheme.RaynaudCoefficientBounds
 public import FLT.GroupScheme.RaynaudCommonStage
+public import FLT.GroupScheme.RaynaudCommutativeImageScalars
 public import FLT.GroupScheme.RaynaudConnectedQuotient
 public import FLT.GroupScheme.RaynaudCoordinateCharacter
 public import FLT.GroupScheme.RaynaudCoordinateGeneration
@@ -738,6 +740,7 @@ public import FLT.GroupScheme.RaynaudExtremalScalarIso
 public import FLT.GroupScheme.RaynaudFilteredExtension
 public import FLT.GroupScheme.RaynaudFiltrationLayers
 public import FLT.GroupScheme.RaynaudFiniteCoordinateGeneration
+public import FLT.GroupScheme.RaynaudFiniteInertiaScalars
 public import FLT.GroupScheme.RaynaudFiniteValuation
 public import FLT.GroupScheme.RaynaudFlatKernelExactness
 public import FLT.GroupScheme.RaynaudFlatQuotient
@@ -754,6 +757,8 @@ public import FLT.GroupScheme.RaynaudHenselianFactor
 public import FLT.GroupScheme.RaynaudIdentifiedCharacters
 public import FLT.GroupScheme.RaynaudIdentifiedScalarIso
 public import FLT.GroupScheme.RaynaudInductionStep
+public import FLT.GroupScheme.RaynaudInertiaFactorDescent
+public import FLT.GroupScheme.RaynaudInertiaSimpleScalars
 public import FLT.GroupScheme.RaynaudIntegralCharacterRank
 public import FLT.GroupScheme.RaynaudIntegralClosureBound
 public import FLT.GroupScheme.RaynaudIntegralCoordinates
@@ -801,6 +806,9 @@ public import FLT.GroupScheme.RaynaudScalarConvolution
 public import FLT.GroupScheme.RaynaudScalarModelIso
 public import FLT.GroupScheme.RaynaudScalingUnits
 public import FLT.GroupScheme.RaynaudScalingValuation
+public import FLT.GroupScheme.RaynaudSimpleCommutingExtension
+public import FLT.GroupScheme.RaynaudSimpleEndomorphismField
+public import FLT.GroupScheme.RaynaudSimpleScalarField
 public import FLT.GroupScheme.RaynaudSpanningPresentation
 public import FLT.GroupScheme.RaynaudSplitting
 public import FLT.GroupScheme.RaynaudStageFamily
@@ -808,6 +816,7 @@ public import FLT.GroupScheme.RaynaudStageFractionField
 public import FLT.GroupScheme.RaynaudStageHenselian
 public import FLT.GroupScheme.RaynaudStageResidueRoot
 public import FLT.GroupScheme.RaynaudStrictHenselian
+public import FLT.GroupScheme.RaynaudTameQuotientScalars
 public import FLT.GroupScheme.RaynaudTorsionFiltration
 public import FLT.GroupScheme.RaynaudTorsorDescent
 public import FLT.GroupScheme.RaynaudTwoCoordinates
