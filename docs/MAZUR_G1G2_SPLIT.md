@@ -1,156 +1,174 @@
-# First construction leaves after M1-H
+# W24: consume polygon geometry in the boundary level problem
 
-Scope: the first three source-lemma leaves toward G1's generalized elliptic
-curves. These construct cyclic rotations of a supplied polygon realization.
-They do not construct that realization, its smooth locus, or its group scheme.
-G2 and A1–A5 remain construction gates; the final paragraph records their order.
+Checked at 2026-10-03 11:25 UTC at base `17dcaf85`; main was `f3240f4b`.
+The [goal ledger](MAZUR_GOAL_LEDGER.md#w24-gate-audit--polygon-geometry-is-available-arithmetic-is-not)
+records the main/branch distinction and every remaining G1/G2/A1–A5 gate.
+This replaces the obsolete R1–R3 dispatch: those rotations and the entire
+G5/U/H geometry sequence are implemented on the branch.
 
-Checked 2026-09-30 against the local checkout containing M1-G and M1-H.
-Recheck the anchors with `rg -n` for the declaration names below in the named
-files; `rg --files FLT/Mazur | rg 'Polygon.*(Rotation|Action)|CyclicPinching'`
-found no existing modules for these leaves. The signatures below are proposed
-contracts, not typechecked implementations. Caps include headers and helpers.
+## Consumer and boundary
 
-Source: [DR II.1.1 and II.1.12](https://www.math.uni-bonn.de/people/rapoport/myalggeom/preprints/Lesschemas.pdf),
-printed pp. 173 and 178 (PDF pp. 31 and 36); transcriptions and context are in
-[DR_SOURCE_LEDGER](DR_SOURCE_LEDGER.md). II.1.1 gives cyclic pinching, while
-II.1.12(c) requires rotations of the component graph. The following lemmas
-construct the discrete rotations explicitly. They do not identify them with
-translations by points of the as-yet-unconstructed smooth group scheme.
+The next concrete consumer is the boundary example required by G1-A1 and
+G1-A6 of [MAZUR_CONTRACTS](MAZUR_CONTRACTS.md): an actual classified
+genus-one polygon family, with a finite flat relative Cartier divisor
+whose support meets every irreducible component. Choose one unit on each
+normalization component. The all-one choice is the intended support for
+the future constant cyclic subgroup of the split n-gon.
 
-Common Lean context (all new names below are in `FLT.Mazur.PolygonPinching`):
+This release does **not** call that divisor a subgroup or a level structure.
+Rank n, subgroup operations, cyclic divisor equality, moduli pullback and
+line-bundle ampleness require further proofs. The field-valued construction
+is a boundary test case, not a family over the integral modular base.
+Sources: DR II.1.1, II.1.4 and II.1.12 for the polygon/family/action;
+the level-structure construction obligations and source ledger in
+MAZUR_CONTRACTS G1-A4–A6; Stacks 062Y/0B8U as used by the existing
+`SmoothOpenSectionCartier`/`RelativeSums` producers.
+
+## Ordered leaves (caps include all headers/helpers)
+
+All modules are new under `FLT/Mazur/`; no conclusions are supplied as
+record fields. These were dispatch sketches against named existing APIs; the completed
+release table below records the build-checked implementations.
+Common context for polygon leaves:
 
 ```lean
 open CategoryTheory CategoryTheory.Limits AlgebraicGeometry
-variable (K : Type) [Field K] {n : ℕ} [NeZero n]
-variable (hn : 0 < n)
+open FLT.Mazur.PolygonPinching
+variable (K : Type) [Field K] (n : ℕ) [NeZero n] (hn : 0 < n)
+  {C : Over (Spec (.of K))} (p : components K n ⟶ C)
+  (q : nodes K n ⟶ C)
+  (h : IsPushout (toComponents K n hn) (toNodes K n) p q)
 ```
 
-## R1 — equivariant cyclic pinching span, cap 350, ready
+1. **C1 `PolygonClassifiedFamily`, cap 100, ready.** Import
+   `PolygonGeometricGenus` and `ClassifiedGenusOneFamily`.
 
-New `FLT/Mazur/CyclicPinchingRotation.lean`; import `PolygonPinchingDiagram`
-and `Mathlib.Data.ZMod.Basic`. Construct, rather than assume, these maps:
+   ```lean
+   theorem classified : FCurve.DRFiberClassification.ClassifiedGeometricFibers C.hom
+   theorem family : FCurve.ClassifiedGenusOneFamily C.hom
+   theorem baseChange {T : Scheme} (g : T ⟶ Spec (.of K)) :
+       FCurve.ClassifiedGenusOneFamily (pullback.snd C.hom g)
+   ```
 
-```lean
-def rotateIndex (a : ZMod n) (i : Fin n) : Fin n :=
-  (ZMod.finEquiv n).symm (ZMod.finEquiv n i + a)
-def componentsRotation (a : ZMod n) : components K n ⟶ components K n
-def branchesRotation (a : ZMod n) : branches K n ⟶ branches K n
-def nodesRotation (a : ZMod n) : nodes K n ⟶ nodes K n
-theorem rotateIndex_next (a : ZMod n) (i : Fin n) :
-    rotateIndex a (next hn i) = next hn (rotateIndex a i)
-theorem componentι_rotation (a : ZMod n) (i : Fin n) :
-    componentι K n i ≫ componentsRotation K a =
-      componentι K n (rotateIndex a i)
-theorem branchι_rotation (a : ZMod n) (i : Fin n) (b : Bool) :
-    branchι K n i b ≫ branchesRotation K a =
-      branchι K n (rotateIndex a i) b
-theorem nodeι_rotation (a : ZMod n) (i : Fin n) :
-    nodeι K n i ≫ nodesRotation K a = nodeι K n (rotateIndex a i)
-theorem rotation_toComponents (a : ZMod n) :
-    branchesRotation K a ≫ toComponents K n hn =
-      toComponents K n hn ≫ componentsRotation K a
-theorem rotation_toNodes (a : ZMod n) :
-    branchesRotation K a ≫ toNodes K n =
-      toNodes K n ≫ nodesRotation K a
-```
+   For every geometric square use `PolygonFieldExtension.exists_cocone_of_isPullback`;
+   build its nodal core with `PolygonNodalCore.nodalFiberCore` and its polygon
+   witness with that cocone. Properness is `PolygonProper.proper`, flatness
+   is over a field, genus is `PolygonGeometricGenus.geometricFibers`.
+   This proves the existing contract, not a general classification theorem.
 
-Also prove zero and addition laws for all three maps; for example:
-`componentsRotation K (a + b) = componentsRotation K a ≫ componentsRotation K b`.
-Use `Sigma.desc` with the displayed inclusions, leaving the Boolean branch
-label unchanged. Commutation with `next` is essential at infinity; permutation
-of components alone does not define a map of the pinching span.
+2. **C2 `MultiplicativeGroupDimension`, cap 120, ready.** Import
+   `MultiplicativeGroupScheme`, standard-smooth algebra and polynomial equivalence APIs.
 
-Anchors: `PolygonPinching.{next,toComponents,toNodes}` and
-`branchι_toComponents_zero`, `branchι_toComponents_infinity`, `branchι_toNodes`
-in `FLT/Mazur/PolygonPinchingDiagram.lean`; `ZMod.finEquiv`, `ZMod.val_add`
-in Mathlib `Data/ZMod/Basic.lean`; `Sigma.desc`, `Sigma.ι_comp_desc`,
-`Sigma.hom_ext` in Mathlib `CategoryTheory/Limits/Shapes/Products.lean`.
-Source: the explicit cyclic identifications in DR II.1.1.
-Unblocks R2. Include `n = 1` in checks; do not impose `1 < n`.
+   ```lean
+   theorem standardSmooth_laurent (R : Type u) [CommRing R] :
+       Algebra.IsStandardSmoothOfRelativeDimension 1 R R[T;T⁻¹]
+   instance dimension (R : Type u) [CommRing R] :
+       SmoothOfRelativeDimension 1 (MultiplicativeGroupScheme.gm R).hom
+   ```
 
-## R2 — rotations on a realized polygon, cap 250, after R1
+   Transfer the one-variable polynomial presentation from `MvPolynomial (Fin 1)`,
+   compose with localization away from X (relative dimension zero), then
+   use the scheme/ring property bridge. Supplies the precise hypothesis of
+   `smoothOpenSectionCartier`; bare smoothness is insufficient.
 
-New `FLT/Mazur/NeronPolygonRotation.lean`; import R1 and `NeronPolygonPredicate`.
-Retain a specified pushout cocone, so the construction preserves its marking:
+3. **C3 `PolygonMarkedSections`, cap 180, after C2.** Import C2,
+   `PolygonActionTranslation` and `PolygonComponentDistinct`.
 
-```lean
-variable {C : Over (Spec (CommRingCat.of K))}
-variable (p : components K n ⟶ C) (q : nodes K n ⟶ C)
-variable (h : IsPushout (toComponents K n hn) (toNodes K n) p q)
-def polygonRotation (a : ZMod n) : C ⟶ C
-theorem components_polygonRotation (a : ZMod n) :
-    p ≫ polygonRotation K hn p q h a = componentsRotation K a ≫ p
-theorem nodes_polygonRotation (a : ZMod n) :
-    q ≫ polygonRotation K hn p q h a = nodesRotation K a ≫ q
-theorem polygonRotation_zero : polygonRotation K hn p q h 0 = 𝟙 C
-theorem polygonRotation_add (a b : ZMod n) :
-    polygonRotation K hn p q h (a + b) =
-      polygonRotation K hn p q h a ≫ polygonRotation K hn p q h b
-def polygonRotationIso (a : ZMod n) : C ≅ C
-```
+   ```lean
+   def sectionMap (a : Kˣ) (i : Fin n) : Spec (.of K) ⟶ C.left
+   theorem section_base (a : Kˣ) (i : Fin n) : sectionMap K n p a i ≫ C.hom = 𝟙 _
+   theorem section_cartier (a : Kˣ) (i : Fin n) :
+       FCurve.RelativeEffectiveCartier C.hom (sectionMap K n p a i).ker
+   theorem section_disjoint (a b : Kˣ) {i j : Fin n} (hij : i ≠ j) :
+       Disjoint (Set.range (sectionMap K n p a i)) (Set.range (sectionMap K n p b j))
+   ```
 
-Define the map by `h.desc (componentsRotation K a ≫ p)
-(nodesRotation K a ≫ q)` using R1 and `h.w`. Prove the two laws by
-`h.hom_ext`; use rotation by `-a` for the inverse. Expose the iso's hom as
-the constructed map. No global `HasPushout` instance may be assumed or added.
+   Construct by `unitPoint` followed by the actual Laurent open of component i;
+   prove the section equation by `Over.w`. Apply C2 and the smooth-open
+   Cartier theorem, using the open immersion and polygon separatedness.
+   Disjointness uses the actual disjoint Laurent charts, including n=1.
 
-Anchors: `IsPushout.desc`, `inl_desc`, `inr_desc`, `hom_ext` in Mathlib
-`CategoryTheory/Limits/Shapes/Pullback/IsPullback/Defs.lean`;
-`IsNeronNGon` in `FLT/Mazur/NeronPolygonPredicate.lean` supplies precisely
-this cocone. Source: cyclic symmetry of DR II.1.1's quotient construction.
-Unblocks R3. Acceptance includes the two normalization/node equations, not
-only existence of an abstract automorphism.
+4. **C4 `PolygonBoundaryDivisor`, cap 180, after C1/C3.** Import C3 and
+   `SectionSumFinite` (C1 provides the family interpretation).
 
-## R3 — component rotations and natural action on points, cap 250, after R2
+   ```lean
+   def ideal (a : Fin n → Kˣ) : C.left.IdealSheafData :=
+     ∏ i, (PolygonMarkedSections.sectionMap K n p (a i) i).ker
+   theorem cartier (a : Fin n → Kˣ) : FCurve.RelativeEffectiveCartier C.hom (ideal K n p a)
+   theorem finite (a : Fin n → Kˣ) : IsFinite ((ideal K n p a).subschemeι ≫ C.hom)
+   theorem meetsEveryComponent (a : Fin n → Kˣ) : FCurve.MeetsEveryComponent (ideal K n p a)
+   ```
 
-New `FLT/Mazur/NeronPolygonRotationAction.lean`; import R2.
-Keep R2's `C,p,q,h` context and define postcomposition on scheme-valued points:
+   Reuse Cartier products and proper-family section-sum finiteness. For each
+   *actual* irreducible component use `PolygonComponentImages.components_eq`
+   and the chosen section point; `mem_support_prod` gives support membership.
+   Flatness is part of the Cartier result. No level-structure record is assumed.
 
-```lean
-def rotatePoint (a : ZMod n) {U : Over (Spec (CommRingCat.of K))}
-    (x : U ⟶ C) : U ⟶ C := x ≫ polygonRotation K hn p q h a
-theorem rotatePoint_zero {U : Over (Spec (CommRingCat.of K))} (x : U ⟶ C) :
-    rotatePoint K hn p q h 0 x = x
-theorem rotatePoint_add (a b : ZMod n)
-    {U : Over (Spec (CommRingCat.of K))} (x : U ⟶ C) :
-    rotatePoint K hn p q h (a + b) x =
-      rotatePoint K hn p q h b (rotatePoint K hn p q h a x)
-theorem rotatePoint_precomp (a : ZMod n)
-    {U V : Over (Spec (CommRingCat.of K))} (v : V ⟶ U) (x : U ⟶ C) :
-    rotatePoint K hn p q h a (v ≫ x) =
-      v ≫ rotatePoint K hn p q h a x
-theorem componentι_polygonRotation (a : ZMod n) (i : Fin n) :
-    componentι K n i ≫ p ≫ polygonRotation K hn p q h a =
-      componentι K n (rotateIndex a i) ≫ p
-```
+## Next gates, not dispatched as small proof leaves
 
-Also expose the corresponding equation for `nodeι`, and prove every
-`rotatePoint ... a` is bijective using `-a`. These give an actual natural
-cyclic action and show its permutation of the marked normalization components.
-They do not assert that the markings are irreducible components without a
-separate theorem identifying the normalization and dual graph.
+- Identify the all-one divisor subscheme with the constant cyclic group,
+  prove finite locally free **rank n**, restrict multiplication/inversion,
+  and prove cyclicity and pullback compatibility. Then prove the required
+  geometric support/line-bundle ampleness comparison. Split these after
+  complete prototypes; a cap for the whole theory would be misleading.
+- Assemble the relative generalized-curve category (group/action and
+  geometric graph condition), its isomorphisms and pullback. Add finite
+  locally free cyclic subgroup data of rank p and the correct moduli presheaf.
+- Construct coarse compactification and cusps, then actual Néron reduction
+  and cusp specialization; G1 remains open until these producers exist.
+- G2 requires Picard/Jacobian, Hecke, completion-kernel quotient, nonzero
+  cusp image and arithmetic finiteness. Reuse `GenericFibers` consumers.
+- A1 may proceed independently after general-E local APIs are specified;
+  A2 depends on G1/G2/A1, A3 on A1/A2, A4 on A3 and Herbrand/class field
+  theory, A5 on A4/G2 and geometric isogenies plus the twist-fiber argument.
+- Only a clean unconditional `NoLargePrimeTorsion` proof permits the final
+  adapter rewire and `PNat.pow_add_pow_ne_pow` axiom check. That existing-file
+  edit is outside this release. Older large line/time envelopes are not caps.
 
-Anchors: R1/R2 equations and `Category.assoc`; no new geometric existence
-theorem is hidden in this leaf. Source: the rotations used in DR II.1.12(c).
-Unblocks comparison with the component action of a future generalized curve.
+## Acceptance
 
-## Acceptance and subsequent gates
+Commit this gate map before implementing the leaves. For each new module run
+foreground `LEAN_NUM_THREADS=2 lake build MODULE`, then foreground
+`LEAN_NUM_THREADS=2 lake exe runLinter MODULE`, one module at a time.
+Audit every originating declaration (including helpers) with `collectAxioms`;
+allow only `propext`, `Classical.choice`, `Quot.sound`. No whole-library lint,
+no new admission, no existing Lean edits except C-sorted `FLT.lean` imports.
+Keep prototypes/logs/handoffs untracked at the root; commit locally and do not push.
 
-For each leaf: foreground `LEAN_NUM_THREADS=2 lake build MODULE`, then
-`LEAN_NUM_THREADS=2 lake exe runLinter MODULE`, then `#print axioms` on every
-new theorem. Require only `propext`, `Classical.choice`, `Quot.sound`; no
-`sorry`, new axioms, or arithmetic conclusions assumed as record fields.
-Register imports in C-sort order in `FLT.lean`. If a cap fails, preserve proved
-lemmas and return the exact remaining statement with a smaller split.
+## Completed release
 
-These are the first G1 construction leaves, not a subdivision of all Mazur.
-Next split polygon existence/genus and the relative smooth group/action,
-then ample finite locally free cyclic level structures, before coarse moduli
-and cusps. G2 still needs Picard/Jacobian construction, Hecke correspondences,
-the completion-kernel quotient and arithmetic finiteness. Do not redispatch
-the already-proved `GenericFibers` finite-fiber consumers. A1 (Néron models
-and finite-flat rigidity) can be split independently; A2 requires G1/G2 and
-odd torsion specialization; A3–A4 require local splitting and the sourced
-Herbrand input; A5 requires geometric isogenies and the coarse-point/twist
-finiteness argument. None is discharged by these three rotation lemmas.
+Checked at 2026-10-03 11:40 UTC, proof commit `88312e67`, planning commit
+`d1703ba2`, base `17dcaf85`. All four ready leaves above are implemented.
+
+| Item | Module (`FLT/Mazur/`) | Lines/cap | Commit |
+| --- | --- | ---: | --- |
+| C1 | `PolygonClassifiedFamily` | 50/100 | `88312e67` |
+| C2 | `MultiplicativeGroupDimension` | 47/120 | `88312e67` |
+| C3 | `PolygonMarkedSections` | 75/180 | `88312e67` |
+| C4 | `PolygonBoundaryDivisor` | 76/180 | `88312e67` |
+
+Each module passed its foreground two-thread build and individual linter.
+The origin-module `collectAxioms` audit passed for all 20 declarations,
+including definitions and generated/private helpers: only `propext`,
+`Classical.choice`, `Quot.sound`. Reproduce with `lake env lean` on an audit
+file importing the four modules and `Lean.Util.CollectAxioms`: enumerate
+`env.constants.toList`, select `env.getModuleIdxFor? name == some idx`
+where `idx = env.getModuleIdx? module`, and reject any `collectAxioms name`
+entry outside that three-name set. The untracked executable audit is
+`GOAL_MAZUR_W24_AXIOM_AUDIT.lean`; output is `GOAL_MAZUR_W24_ALL_AXIOMS.txt`.
+
+`W24_CONSUMER_CONTRACT.lean` also passed in the foreground: it instantiates
+the actual constructed atlas (no supplied existence assumption), the
+one-gon support condition, two distinct marked sections on the two-gon,
+the two-gon Cartier divisor over `ZMod 2`, and arbitrary-scheme base change
+of the one-gon family. Characteristic dividing n is allowed.
+`python3 W24_CHECK_SOURCE.py` checks caps, imports, proof-token scan,
+build/lint logs, new-module scope and whitespace. These scripts and their
+logs are untracked root artifacts. No whole-library lint/build or push ran.
+
+C1 uses `Type`, matching the existing cohomology contract; C2–C4 are
+universe-polymorphic. C4 also proves an exact support/image equivalence
+and explicit flatness. This is **not yet a rank-n cyclic subgroup scheme**,
+and no arithmetic input or final Mazur dependency was removed. Next is
+the all-one divisor's rank and group-scheme identification, then cyclicity
+and its geometric/pullback compatibility; the large gates above remain.
