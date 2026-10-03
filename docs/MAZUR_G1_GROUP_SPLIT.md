@@ -414,9 +414,39 @@ This is an explicit split-module argument, not an assertion that tensoring
 preserves arbitrary ring pullbacks. Both branch restriction formulas are
 required as part of the delivered comparison.
 
-For U4 the identified APIs are `Algebra.polyEquivTensor'` in
+For U4 the identified APIs are `polyEquivTensor'` in
 `Mathlib/RingTheory/PolynomialAlgebra.lean` and `pullbackSpecIso` with its
 projection lemmas in `Mathlib/AlgebraicGeometry/Pullbacks.lean`. The geometric
 product charts and their pulled-back cover still require typechecking.
 H2/H6 and U5/U6 remain subject to the source/API gates above; if their helper
 proofs do not fit 240 lines, record the split before implementing the helpers.
+
+U4's complete typed prototype now checks (`W15_PRODUCT_PROOF.lean`). Its
+`chartProductIso K S` identifies the pullback of `Spec S → Spec K` and the
+affine-line chart with `Spec S[X]`, for arbitrary commutative K-algebras S.
+Both inverse/projection formulas are the spectra of the constant inclusion
+and polynomial coefficient map. The Bool-indexed cover is the actual
+`Scheme.Pullback.openCoverOfRight`, transported through these isomorphisms.
+Taking S = K[T;T⁻¹] gives the required multiplicative-group product chart.
+The final module remains capped at 240.
+
+H2 is split before implementation, since local finite-module calculations
+alone do not identify the inverse images in the constructed global polygon:
+
+| Leaf | New module / typed contract | Cap | Proof obligation |
+| --- | --- | --- | --- |
+| H2a | `PolygonNormalizationAlgebra`: `Module.Finite (A R) (R[X] × R[X])`, `Module.Finite (B R) R[X]` | 180 | Generate the first module by 1 and (1,0); generate the second algebra by integral X, satisfying X²-X-u. Prove both spectrum maps surjective. |
+| H2b | `PolygonCyclicNormalizationPullback` | 240 | Identify inverse images of every node chart with the disjoint union of its two affine branches, including n=2's two overlaps. |
+| H2c | `OneGonNormalizationPullback` | 240 | Prove the square formed by `OneGonAffineNormalization.alpha`, the affine normalization map and `OneGonGluing.node` is cartesian; also the torus square. |
+| H2d | `PolygonNormalizationFinite` | 160 | Apply target-local finiteness to H2b/H2c and H2a; prove global surjectivity and transport to the specified cocone. |
+
+H6's target in the earlier sketch is schematic: the actual type is
+`ProjectiveSpace.space K (Fin 2)`, not a declaration named `ProjectiveSpace`.
+Its proof must compare the two explicit open immersions and their Laurent
+transition; no standard-model isomorphism is supplied by the current files.
+The available chart APIs are `chartPolynomialEquiv`, `affineChartAt`,
+`reindexChartRingMap_coordinate` and `overlap_isLocalization`. Separate the
+polynomial-chart/transition comparison (H6a, cap 240) from the open-cover
+pushout isomorphism and scalar compatibility (H6b, cap 180) before dispatch.
+The cartesian transition comparison remains a proof obligation, not a field
+in a new chart record.
