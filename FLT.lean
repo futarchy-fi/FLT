@@ -795,6 +795,7 @@ public import FLT.KnownIn1980s.Ribet_Lemma.Proofs
 public import FLT.LocalClassFieldTheory.CochainFiniteImage
 public import FLT.LocalClassFieldTheory.CochainOpenNormal
 public import FLT.LocalClassFieldTheory.CyclicCarry
+public import FLT.LocalClassFieldTheory.DescendedCochain
 public import FLT.LocalClassFieldTheory.Frobenius
 public import FLT.LocalClassFieldTheory.FrobeniusTower
 public import FLT.LocalClassFieldTheory.NormalizedOrder
