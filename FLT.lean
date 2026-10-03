@@ -38,6 +38,7 @@ public import FLT.AbsoluteGaloisGroup.FirstRamificationRestriction
 public import FLT.AbsoluteGaloisGroup.FundamentalCoefficients
 public import FLT.AbsoluteGaloisGroup.FundamentalCyclotomic
 public import FLT.AbsoluteGaloisGroup.FundamentalTame
+public import FLT.AbsoluteGaloisGroup.HigherNiveauCyclotomicNorm
 public import FLT.AbsoluteGaloisGroup.InertiaComparison
 public import FLT.AbsoluteGaloisGroup.InertiaDescentField
 public import FLT.AbsoluteGaloisGroup.InertiaDescentHenselian
@@ -49,8 +50,12 @@ public import FLT.AbsoluteGaloisGroup.LocalCyclotomicInertia
 public import FLT.AbsoluteGaloisGroup.LocalCyclotomicRamification
 public import FLT.AbsoluteGaloisGroup.LocalCyclotomicSurjectivity
 public import FLT.AbsoluteGaloisGroup.LocalCyclotomicTame
+public import FLT.AbsoluteGaloisGroup.NiveauTwoInertiaGenerator
 public import FLT.AbsoluteGaloisGroup.OpenNormalFixedField
+public import FLT.AbsoluteGaloisGroup.RationalPrimeUniformizer
 public import FLT.AbsoluteGaloisGroup.RootCharacter
+public import FLT.AbsoluteGaloisGroup.RootCharacterCyclotomicNorm
+public import FLT.AbsoluteGaloisGroup.RootCharacterGenerator
 public import FLT.AbsoluteGaloisGroup.RootCharacterIndependence
 public import FLT.AbsoluteGaloisGroup.RootCharacterResidue
 public import FLT.AbsoluteGaloisGroup.RootCharacterTopology
@@ -157,6 +162,8 @@ public import FLT.Deformations.RepresentationTheory.GaloisRepFamily
 public import FLT.Deformations.RepresentationTheory.IntegralClosure
 public import FLT.Deformations.RepresentationTheory.InvariantCharpoly
 public import FLT.Deformations.RepresentationTheory.Irreducible
+public import FLT.Deformations.RepresentationTheory.MappedRankTwoCharpoly
+public import FLT.Deformations.RepresentationTheory.MappedTameSpectrum
 public import FLT.Deformations.RepresentationTheory.PGroupInvariants
 public import FLT.Deformations.RepresentationTheory.PadicIdealCofinal
 public import FLT.Deformations.RepresentationTheory.PadicIdealOpen
@@ -164,6 +171,7 @@ public import FLT.Deformations.RepresentationTheory.PermutedSummandsTwist
 public import FLT.Deformations.RepresentationTheory.PrimePowerExact
 public import FLT.Deformations.RepresentationTheory.RankOneScalarCharacter
 public import FLT.Deformations.RepresentationTheory.RankTwoCharpoly
+public import FLT.Deformations.RepresentationTheory.RankTwoSimpleFactors
 public import FLT.Deformations.RepresentationTheory.ScalarActionCharpoly
 public import FLT.Deformations.RepresentationTheory.SelfTwistTrace
 public import FLT.Deformations.RepresentationTheory.SimpleScalarDegree
@@ -494,6 +502,7 @@ public import FLT.GroupScheme.ContinuousKummerParameter
 public import FLT.GroupScheme.ConvolutionBaseChange
 public import FLT.GroupScheme.CoordinateOrder
 public import FLT.GroupScheme.CubicKummerCocycle
+public import FLT.GroupScheme.CyclicPowerElimination
 public import FLT.GroupScheme.CyclotomicModelIdentification
 public import FLT.GroupScheme.DiagonalizableFiniteFlat
 public import FLT.GroupScheme.DiagonalizablePointPurity
@@ -774,6 +783,7 @@ public import FLT.GroupScheme.RaynaudGenericSplitExtension
 public import FLT.GroupScheme.RaynaudHenselianCharacters
 public import FLT.GroupScheme.RaynaudHenselianFactor
 public import FLT.GroupScheme.RaynaudHenselianScalarRigidity
+public import FLT.GroupScheme.RaynaudHigherCyclePower
 public import FLT.GroupScheme.RaynaudIdentifiedCharacters
 public import FLT.GroupScheme.RaynaudIdentifiedScalarIso
 public import FLT.GroupScheme.RaynaudInductionStep
@@ -787,6 +797,7 @@ public import FLT.GroupScheme.RaynaudIntegralCoordinateCharacter
 public import FLT.GroupScheme.RaynaudIntegralCoordinates
 public import FLT.GroupScheme.RaynaudIntegralFiltration
 public import FLT.GroupScheme.RaynaudIntegralUnitCorrection
+public import FLT.GroupScheme.RaynaudInvariantLineCharpoly
 public import FLT.GroupScheme.RaynaudInversionBasis
 public import FLT.GroupScheme.RaynaudKernelExactness
 public import FLT.GroupScheme.RaynaudLayerDescent
@@ -805,6 +816,7 @@ public import FLT.GroupScheme.RaynaudMixedDigitUnit
 public import FLT.GroupScheme.RaynaudMixedPowerConstant
 public import FLT.GroupScheme.RaynaudMixedRankOneConvolution
 public import FLT.GroupScheme.RaynaudModelArithmetic
+public import FLT.GroupScheme.RaynaudModelTameSpectrum
 public import FLT.GroupScheme.RaynaudModelUpperBound
 public import FLT.GroupScheme.RaynaudNakayamaDescent
 public import FLT.GroupScheme.RaynaudOrderNineExtension
@@ -824,6 +836,8 @@ public import FLT.GroupScheme.RaynaudPowerCharacterDifference
 public import FLT.GroupScheme.RaynaudPowerCharacterOrthogonality
 public import FLT.GroupScheme.RaynaudPowerDevissage
 public import FLT.GroupScheme.RaynaudPowerPrescribedExtension
+public import FLT.GroupScheme.RaynaudPrescribedFraction
+public import FLT.GroupScheme.RaynaudPrimeTameSpectrum
 public import FLT.GroupScheme.RaynaudProductExtension
 public import FLT.GroupScheme.RaynaudQuotientFiberFreeness
 public import FLT.GroupScheme.RaynaudQuotientFlatness
@@ -834,6 +848,8 @@ public import FLT.GroupScheme.RaynaudRankOneProjector
 public import FLT.GroupScheme.RaynaudRankOneScalarExtension
 public import FLT.GroupScheme.RaynaudRankThreeClassification
 public import FLT.GroupScheme.RaynaudRankThreeExtension
+public import FLT.GroupScheme.RaynaudRankTwoCharpoly
+public import FLT.GroupScheme.RaynaudRationalCharpoly
 public import FLT.GroupScheme.RaynaudReducedScalarAverage
 public import FLT.GroupScheme.RaynaudRelativeResidue
 public import FLT.GroupScheme.RaynaudRepresentationContinuity
