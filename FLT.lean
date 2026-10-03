@@ -1244,6 +1244,7 @@ public import FLT.Mazur.OneGonNormalizationPullback
 public import FLT.Mazur.OneGonOverlap
 public import FLT.Mazur.OneGonPinchingDescent
 public import FLT.Mazur.OneGonQuotient
+public import FLT.Mazur.OneGonScalarExtension
 public import FLT.Mazur.OneGonTransition
 public import FLT.Mazur.OpenDirectImageCohomology
 public import FLT.Mazur.OpenDirectImageNaturality
