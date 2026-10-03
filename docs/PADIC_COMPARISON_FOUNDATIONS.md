@@ -685,3 +685,118 @@ Next implementation leaves (each cap 150, split before exceeding):
 4. Continue the period-field localization, graded cyclotomic twists,
    fixed-field theorem, and comparison-contract split above. The general
    family admission cannot be removed just from quotient separatedness.
+
+## W32 exponent convergence split (before implementation)
+
+Each leaf has a 150-line cap. The generic estimate first raises differences
+in powers of an ideal containing p; splitting powers of (p) + ker(theta)
+then gives a p-adic estimate modulo each fixed theta power.
+
+| Leaf | Concrete obligation | Prerequisite |
+|---|---|---|
+| IdealPowerDifference | Bound iterated p-power differences in powers of an ideal containing p. | Geometric sums and ideal multiplication |
+| ComplexCyclotomicApproximation | Construct the two shifted Teichmuller roots with equal theta image and identify their p-power endpoints. | W29 coordinate action; actual sharp equivariance |
+| ComplexCyclotomicPowerBounds | Bound the actual Galois/power difference by (p)^k + ker(theta)^r. | Generic estimate and shifted roots |
+| ComplexCyclotomicPowerConvergence | Prove integral and localized finite-level convergence in the W31 coefficient topology. | Bounds and continuous integral inclusion |
+
+Finite logarithm identities, denominator control, the cyclotomic scalar
+law, fixed fields and comparison remain later leaves; none is a hypothesis
+of these convergence statements.
+
+W32 logarithm refinement (before implementation; each cap 150):
+`PowerSeriesLogPower` proves the formal logarithm multiplication and
+integer-power identities by derivatives and the constant coefficient.
+`NilpotentSeriesEvaluation` constructs algebraic evaluation at nilpotents
+and identifies it with any sufficiently long finite truncation.
+`NilpotentLogPower` transports the formal identity to finite logarithms.
+Finite-level continuity then handles fixed finite sums and their genuine
+rational denominator inverses, without requiring completeness of the
+localized coefficient quotients.
+
+W32 substitution refinement (before implementation; cap 150):
+`NilpotentSeriesSubstitution` proves that substitution by a nilpotent
+constant gives a constant series and commutes with zero-constant formal
+substitution. This keeps the finite-logarithm proof algebraic.
+
+W32 scalar and finite-log refinement (before implementation; cap 150 each):
+`PadicResidueConvergence` proves convergence of the natural representatives
+of Z_p residues in the standard topology. `ComplexFiniteLogAlgebra`
+constructs rational algebra structures from the existing scalar maps and
+identifies the logarithm coefficients with their genuine inverse formula.
+`ComplexFiniteLogEvaluation` identifies evaluations of t and sigma(t) with
+finite logarithms. `ComplexFiniteLogLimit` combines the exponent and scalar
+limits by Hausdorff uniqueness; the separated completion then gives the
+actual scalar law in `ComplexCyclotomicLogCharacter`.
+
+W32 limit refinement (before implementation; cap 150):
+`FiniteLogContinuity` proves the polynomial continuity and a generic
+Hausdorff limit theorem for natural powers and scalar approximants.
+No infinite coefficient sum or uniform denominator estimate is needed at
+a fixed nilpotent quotient: its logarithm is a finite polynomial.
+
+W32 period-field refinement (before implementation; caps 150):
+`DiscreteValuationLocalization` identifies localization at a uniformizer
+with a fraction field. `ComplexDeRhamDenominators` proves that Mathlib's
+actual generating set consists of nonzero associates of the completed
+parameter and contains that parameter. `ComplexDeRhamFractionField`
+identifies the existing B_dR with the fraction field and with inversion
+of the already constructed t. These are algebraic identifications;
+Galois fixed fields still require a separate descent theorem.
+
+W32 nonnegative graded refinement (before implementation; caps 150):
+`PrincipalGradedPiece` constructs the actual quotient (t^n)/(t^(n+1))
+and its linear identification with R/(t), by cancellation in the domain.
+`ComplexDeRhamGraded` identifies those quotients additively with C_p and
+computes the cyclotomic twist on transformed representatives. Negative
+levels, a full graded algebra, and fixed-field descent remain later leaves.
+
+W32 graded-action refinement (before implementation; cap 150):
+`ComplexDeRhamGradedGalois` descends the existing action on the actual
+principal ideals to their quotient and proves the C_p coordinate formula
+with cyclotomic weight n. This is not a fixed-field assertion.
+
+W32 field-action refinement (before implementation; cap 150):
+`ComplexDeRhamFieldGalois` extends the actual ring action to the identified
+fraction field, proves the character formula for every integer power of
+t, and proves that the existing Q_p scalars are fixed. The reverse
+fixed-field inclusion is a separate missing theorem; scalar fixedness
+must not be substituted for equality of the invariant field with Q_p.
+
+## W32 downstream fixed-field and comparison obligations
+
+The completed exponent/log bridge now has implementation entry points
+`complexCyclotomicPower_tendsto_finite`, `finiteNilpotentLog_pow`,
+`complexCyclotomicLog_character_finite` and
+`complexCyclotomicLog_galois_character`. The finite logarithm is a polynomial
+in every fixed theta quotient; its actual rational coefficient inverses
+are identified by `complexLogCoefficient_eval`. Thus this argument needs
+neither a denominator bound uniform in quotient order nor a completeness
+assumption on the p-inverted coefficient quotients.
+
+`complexDeRhamLogLocalizationEquiv` identifies the existing B_dR with
+inversion of the existing t. `complexDeRhamGradedCoordinate_galois` computes
+the actual descended action on (t^n)/(t^(n+1)) for n >= 0. The field action
+fixes the existing Q_p scalars and has the integer-power character law.
+These entry points do not establish the reverse fixed-field inclusion.
+Check these statements by rebuilding their named modules and printing
+their axioms; W32's handoff records the checked snapshot and logs.
+
+Each following leaf retains the 150-line cap, and must be split again
+before implementation if the source proof exceeds it:
+
+| Next leaf | Required theorem, without an assumed conclusion | Prerequisite |
+|---|---|---|
+| CompletedComplexFixedScalars | The fixed elements of the actual C_p action are exactly the standard Q_p image. | Proved quantitative Galois approximation / Ax-Sen-Tate input |
+| CompletedComplexTwistVanishing | The nonzero cyclotomic twists of C_p have no invariant vectors. | Actual character, norm estimates, and descent |
+| DeRhamIntegerGraded | Extend the actual quotient-coordinate construction to every integer filtration level in B_dR. | Field identification, integer powers of t |
+| DeRhamInvariantOrder | A nonzero invariant field element has filtration order zero. | Integer graded twists and their invariant vanishing |
+| DeRhamFixedScalars | After subtracting the invariant residue scalar, positive order forces zero. | Invariant order and the completed-complex fixed-field theorem |
+| PDivisibleRationalPlaceTransport | Transport the original rational-place system and Galois action to the standard Q_p setting. | Existing place equivalences; retain original system |
+| PDivisibleCotangentTransitions | Construct levelwise cotangent objects and their actual transition maps. | Original finite-flat system, no comparison assumptions |
+
+After these gates, continue the W29 comparison and coefficient-rank table:
+tangent duality, the actual period pairing, integrality, equivariance,
+injectivity, surjectivity, strictness, then per-embedding decomposition,
+component pairings, two-weight support, determinant weights and ranks.
+No comparison isomorphism is inserted as a record field. In particular,
+the family admission remains downstream of these missing theorems.
