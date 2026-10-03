@@ -879,9 +879,13 @@ public import FLT.LocalClassFieldTheory.IntegralH2Characters
 public import FLT.LocalClassFieldTheory.IntegralLowDegreeComparison
 public import FLT.LocalClassFieldTheory.IntegralRationalVanishing
 public import FLT.LocalClassFieldTheory.InvariantStageTransition
+public import FLT.LocalClassFieldTheory.NormFirstOrder
 public import FLT.LocalClassFieldTheory.NormalizedOrder
 public import FLT.LocalClassFieldTheory.PowerClassOrder
+public import FLT.LocalClassFieldTheory.PrincipalNormCorrection
+public import FLT.LocalClassFieldTheory.PrincipalNormGraded
 public import FLT.LocalClassFieldTheory.PrincipalUnitFiltration
+public import FLT.LocalClassFieldTheory.PrincipalUnitNorm
 public import FLT.LocalClassFieldTheory.PrincipalUnitResidue
 public import FLT.LocalClassFieldTheory.RationalCoefficientSequence
 public import FLT.LocalClassFieldTheory.RationalIntegralConnectingIso
@@ -921,6 +925,7 @@ public import FLT.LocalClassFieldTheory.UnramifiedPolynomial
 public import FLT.LocalClassFieldTheory.UnramifiedStageFrobenius
 public import FLT.LocalClassFieldTheory.UnramifiedStageTower
 public import FLT.LocalClassFieldTheory.UnramifiedStages
+public import FLT.LocalClassFieldTheory.UnramifiedUniformizer
 public import FLT.LocalClassFieldTheory.UnramifiedUnion
 public import FLT.LocalClassFieldTheory.UnramifiedUniqueness
 public import FLT.Mathlib.Algebra.Algebra.Bilinear
