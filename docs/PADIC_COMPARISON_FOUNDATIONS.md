@@ -521,3 +521,26 @@ filtration and the explicitly three-adic `Assembly.CharacterInputs` route;
 no general global classification was implemented. F07–F15 were not started.
 The boundary audit still finds sorryAx in the unchanged general family
 theorem and sorryAx plus Mazur_statement in the FLT endpoint.
+
+## W30 cyclotomic order and scalar-law split (before implementation)
+
+Each implementation leaf has a 150-line cap; split again before exceeding it.
+The dependencies below are proofs to construct, never hypotheses to insert
+into a period/comparison structure.
+
+| Leaf | Concrete obligation | Prerequisite |
+|---|---|---|
+| CyclotomicShift | Construct shifted epsilon, its p-th power and actual sharp values. | W29 compatible roots |
+| CyclotomicKernel | Construct the geometric sum in A_inf, prove theta vanishes and factor [epsilon]-1. | CyclotomicShift |
+| CyclotomicReduction | Compute its zeroth Witt coefficient and establish its sharp valuation. | CyclotomicKernel; cyclotomic valuation calculation |
+| CyclotomicPrincipal | Prove every theta-kernel element is divisible by that geometric sum. | CyclotomicReduction; adic division |
+| CyclotomicCompleted | Transport principality, factor the completed argument, and prove the other factor is a unit. | CyclotomicPrincipal; sharp of shifted epsilon |
+| CyclotomicLogOrder | Deduce that t and z generate the maximal ideal from their square-ideal congruence. | CyclotomicCompleted |
+| CyclotomicScalarTopology | Construct scalar embeddings and the topology needed for p-adic exponent limits. | Actual period ring; separate from ideal-adic topology |
+| CyclotomicScalarLog | Prove logarithm/exponent compatibility and sigma(t)=chi(sigma)t. | CyclotomicScalarTopology; W29 sum transport |
+| DeRhamPeriodLocalization | Identify the existing B_dR with inversion of t and the fraction field. | CyclotomicLogOrder |
+| DeRhamGradedAction | Identify graded pieces and their cyclotomic action. | CyclotomicScalarLog |
+| DeRhamFixedField | Prove the fixed-field theorem on the actual ring. | Galois descent on the completed field |
+
+The W29 comparison-contract split remains downstream; no comparison or
+fixed-field conclusion follows just from kernel membership or a formal log.
