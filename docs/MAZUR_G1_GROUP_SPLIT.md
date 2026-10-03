@@ -4,7 +4,8 @@ P4 (`PolygonNodeEqualizer`) and P5 (`PolygonIncidence`) supply local ring
 exactness and cyclic linear exactness. They do not construct a polygon or
 identify that linear complex with sheaf cohomology. This split develops the
 relative group candidate and isolates its comparison with the smooth locus.
-Caps include headers and helpers; all five proposed modules have cap ≤400.
+The historical G1–G4 contracts below retain their original caps.
+The W14 frontier after G5 uses new leaves of at most 240 lines.
 The signatures are implementation contracts, not yet typechecked declarations.
 
 Checked 2026-09-30 19:16 UTC by the following read-only API searches (paths
@@ -138,67 +139,213 @@ exceed it, split that comparison off before attempting the group laws.
 This produces the candidate group over R, including n=1, without assuming
 that any given polygon's smooth locus has already been identified with it.
 
-## G5 — identify the polygon smooth locus, cap 400, blocked on geometry
+## G5 — identify the polygon smooth locus, implemented
 
-New `FLT/Mazur/PolygonSmoothLocus.lean`, namespace `FLT.Mazur.PolygonPinching`.
-Use field `K`, `n>0`, `[NeZero n]`, and the existing realized cocone
-`p : components K n ⟶ C`, `q : nodes K n ⟶ C`,
-`h : IsPushout (toComponents K n hn) (toNodes K n) p q`:
+Checked 2026-10-03 against W14 base `8425864c`. The historical G5 blocker is
+closed by E1–E5 in [MAZUR_G5_GEOMETRY_SPLIT](MAZUR_G5_GEOMETRY_SPLIT.md):
 
-```lean
--- First prove local finite presentation from the node/open charts.
-theorem polygon_lfp : LocallyOfFinitePresentation C.hom
--- Install polygon_lfp locally to form C.hom.smoothLocus.
-def smoothIso :
-    Over.mk (C.hom.smoothLocus.ι ≫ C.hom) ≅ PolygonSplitGroup.model K n
+| Geometry | Modules under `FLT/Mazur/` |
+| --- | --- |
+| E1–E2 node localization and opens | `PolygonNodeLocalization`, `PolygonNodeBranches` |
+| E3 exact smooth locus and finite presentation | `PolygonNodePresentation`, `NodeSmoothLocus` |
+| E4 cyclic and one-gon atlases, pinching | `PolygonCyclicAtlas`, `PolygonCyclicCocone`, `OneGonNormalization`, `PolygonCyclicPushout`, `OneGonGlobalPushout`, `PolygonAtlas` |
+| E5a comparison with the supplied cocone | `PolygonCoconeComparison` |
+| E5b exact atlas smooth locus | `PolygonAtlasSmoothLocus` |
+| E5c specified isomorphism and group | `PolygonSmoothLocus` |
+
+The detailed E3/E4 auxiliary-module list and historical validation are in the G5
+split. `polygon_lfp`, `smoothIso`, `component_smoothIso_inv`, `smoothGrpObj`, and
+`smoothCommGrpObj` are implemented. The component label is `ZMod.finEquiv n i`,
+not its inverse. This works for n=1 and n=2, in every characteristic.
+The smooth group is not yet an action on the entire polygon.
+
+## W14 re-audit and dispatch rules
+
+Checked at 2026-10-03 using the local source at `8425864c`, not a claim about
+GitHub main. Reproduce the inventory with:
+
+```sh
+rg -n 'polygon_lfp|smoothIso|smoothGrpObj|component_smoothIso_inv' FLT/Mazur/Polygon*.lean
+rg -n 'normalization|IsProper|topologicalKrullDim|H1' FLT/Mazur/Polygon*.lean
+rg -n 'quotKerEquivOfSurjective' .lake/packages/mathlib/Mathlib/LinearAlgebra/Isomorphisms.lean
+rg -n '^axiom Mazur_statement' FLT/Assumptions/Mazur.lean
+rg -n 'mazurTorsionExclusion|pow_add_pow_ne_pow' FLT/Assembly/ExistingInputs.lean FermatsLastTheorem.lean
 ```
 
-Acceptance also identifies each punctured normalization component with its
-corresponding `ZMod n` component using `ZMod.finEquiv n`. Transport G4's group
-structure through this specified iso. Source: DR II.1.1/1.12(a).
-Anchors: `smoothLocus`, `mem_smoothLocus`, `preimage_smoothLocus_eq`
-(Morphisms/Smooth.lean:290,294,324), `Scheme.Opens.ι` (Restrict.lean:52),
-`ProjectiveLine.overlapLeft`, `IsPushout.hom_ext`, `ZMod.finEquiv`.
-Dependencies: G4; a constructed polygon with an open node-chart atlas;
-proof that node origins are precisely its nonsmooth points; comparison of
-that construction with the specified cocone. None of these geometric
-prerequisites follows just by taking Spec of P4's ring pullback. This leaf
-is not ready and must not replace those prerequisites with record fields.
+Earlier G1–G4 caps are historical. **Every new leaf below has a hard cap of 240
+lines, including imports, comments, helper declarations and proofs.** Sketches
+with future names are design contracts, not compiled Lean. A blocked row cannot
+be implemented by taking its conclusion as a hypothesis or record field.
+Ready means its mathematical proof and required APIs are identified; it does
+not mean a proof has compiled. W14 dispatch order is U1, U2, H1, at most three
+implementation leaves this wave. Commit this phase artifact before proofs.
 
-## Implementation status
+### U1 — coefficient naturality of chart scaling, cap 160, READY
 
-Checked 2026-09-30 19:53 UTC: G1–G4 are implemented in the four modules
-named above, at 89/250, 77/350, 113/300 and 249/400 lines. Each passed a
-foreground `LEAN_NUM_THREADS=2 lake build FLT.Mazur.MODULE` and its own
-`LEAN_NUM_THREADS=2 lake exe runLinter FLT.Mazur.MODULE`. An audit using
-Lean's `collectAxioms` (the implementation behind `#print axioms`) checked
-all declarations originating in these modules, including generated helpers:
-14, 9, 21 and 53 respectively. Only `propext`, `Classical.choice` and
-`Quot.sound` occur. `rg '^public import' FLT.lean | LC_ALL=C sort -c` and
-`git diff --check` passed. No full-library lint or push was run.
+New `PolygonScalingNaturality`; commutative rings R,S, `f : R →+* S`, `a : Rˣ`:
 
-G4's sketch needs a product comparison: `μ` uses chosen monoidal products,
-which are not definitionally `Limits.prod` in `Over`. The implementation's
-`component_mul` uses `⊗ₘ`; `component_mul_prod` supplies the stated
-`Limits.prod.map` formula with the explicit `productToTensor` conversions.
-Its finite product/coproduct comparison, group laws and smoothness are proved,
-including n=1. G5 and the later polygon action remain open as described below.
+```lean
+theorem affine_natural :
+    (Polynomial.mapRingHom f).comp (PolygonChartScaling.affine a) =
+      (PolygonChartScaling.affine (Units.map f a)).comp (Polynomial.mapRingHom f)
+theorem laurent_one : PolygonChartScaling.laurent (1 : Rˣ) = RingHom.id _
+theorem laurent_mul (a b : Rˣ) :
+    PolygonChartScaling.laurent (a * b) =
+      (PolygonChartScaling.laurent a).comp (PolygonChartScaling.laurent b)
+```
 
-## Remaining gates and validation
+Also construct Laurent coefficient mapping and prove its analogous naturality.
+Use polynomial extensionality and Laurent `C`, `T 1`, `T (-1)` extensionality;
+no division, field hypothesis, or assertion about geometric base change.
+Dependencies: `PolygonChartScaling`, Laurent polynomial API. This is the
+coefficient compatibility needed to use G3 over parameter rings. Source:
+DR II.1.12(b)'s multiplication, written in the two normalization coordinates.
 
-Execute ready leaves in order, at most three per wave. Build in the foreground,
-lint each new module separately, check every declaration's axioms, C-sort the
-FLT.lean imports, and commit locally. Only propext, Classical.choice and
-Quot.sound are allowed; no sorry or new axioms. If a cap fails, commit proved
-lemmas and record the exact remainder plus smaller caps in untracked BLOCKED.md.
+### U2 — reciprocal scaling of node functions, cap 240, AFTER U1
 
-Polygon existence/genus has no unimplemented ready leaf in POLYGON_SPLIT after
-P5: gluing node charts, the pinching universal property, the normalization
-sheaf sequence, P¹ cohomology and its comparison with P5 still need a separate
-source split. G5 depends on the geometric part, not on a genus assumption.
-After G3/G5, a further bounded split must construct the action morphism on the
-whole polygon and prove its laws after base change; P3's constant-unit action
-alone cannot do this. Neither this document nor P4/P5 closes G1 or Mazur.
+New `PolygonNodeScaling`; `A := PolygonNodeEqualizer.A`. Construct:
+
+```lean
+def scaling (a : Rˣ) : A (R := R) →+* A (R := R)
+def map (f : R →+* S) : A (R := R) →+* A (R := S)
+theorem scaling_one : scaling (1 : Rˣ) = RingHom.id _
+theorem scaling_mul (a b : Rˣ) : scaling (a * b) = (scaling a).comp (scaling b)
+theorem map_scaling (f : R →+* S) (a : Rˣ) :
+    (map f).comp (scaling a) = (scaling (Units.map f a)).comp (map f)
+```
+
+First branch scales by a, second by a inverse. Prove both restriction formulas,
+origin preservation and Laurent-localization compatibility. Specializing a to
+G3's universal unit gives the actual node ring map `A R →+* A R[T;T⁻¹]`.
+This is not the unproved isomorphism `A R[T;T⁻¹] ≅ R[T;T⁻¹] ⊗[R] A R`.
+Dependencies: U1, `PolygonNodeEqualizer`, `PolygonNodeLocalization`; membership
+is equality of evaluations at zero. Source: DR II.1.1/1.12(b), local coordinate
+calculation. No assertion that the one-gon's irreducible affine chart is a node
+ring; it is not, and variable scaling need not preserve that chosen open.
+
+### Whole-polygon action after U1/U2: blocked leaves
+
+Each row proposes one new module, cap 240. Dependencies are mandatory; none is
+ready for dispatch merely because G5 is done. The missing base-change proof
+must work over parameter schemes, not just over extension fields.
+`BC g` below means `Over.pullback g`; `P` is the specified polygon and `G` its
+G4 split group. Tensor notation denotes products in the over-category.
+
+| Leaf/module | Lean statement sketch | Dependencies and unresolved proof |
+| --- | --- | --- |
+| U3 `PolygonNodeScalarExtension` | `def nodeTensorIso : S ⊗[R] A R ≃ₐ[S] A S` | Identify the actual base-changed node; use the split exact sequence, not arbitrary preservation of ring pullbacks. Pin tensor conventions first. |
+| U4 `ProjectiveLineProductCharts` | `def chartProductIso : Gm ×ₛ chart K ≅ Spec (.of K[T;T⁻¹][X])` | Polynomial/tensor comparison; prove both projection formulas and pulled-back open cover. |
+| U5 `ProjectiveLineUniversalAction` | `def act : Gm ⊗ Over.mk (ProjectiveLine.toBase K) ⟶ Over.mk (ProjectiveLine.toBase K)` | U4 and G3; glue chart maps, with both endpoint formulas. |
+| U6 `PolygonPinchingFlatBaseChange` | `theorem pinching_pullback : IsPushout (BC g |>.map toComponents) (BC g |>.map toNodes) (BC g |>.map p) (BC g |>.map q)` | Flat g, U3 and saturated-open descent; must prove locality for the one-gon too. Existing IsPushout alone does not imply this. |
+| U7 `PolygonUniversalAction` | `def act : G ⊗ P ⟶ P` | U5/U6, G4 product/coproduct comparison, rotations; specify normalization and node formulas. |
+| U8 `PolygonActionUnit` | `theorem unit_act : (η[G] ▷ P) ≫ act = (λ_ P).hom` | U7 and U6 for product descent; normalization/node restrictions jointly detect equality. |
+| U9 `PolygonActionAssociativity` | `theorem mul_act : (μ[G] ▷ P) ≫ act = (α_ G G P).hom ≫ (G ◁ act) ≫ act` | U7/U6 with two parameter factors, U1/U2 multiplication, rotation commutation. |
+| U10 `PolygonActionSmoothRestriction` | `theorem smooth_act : (e.hom ⊗ₘ ι) ≫ act = μ[Psm] ≫ ι` | Here e : Psm ≅ G is G5 smoothIso; compare on every pair of torus components. |
+| U11 `PolygonActionBaseChange` | `theorem baseChange_action_laws : ActionLaws (baseChangedAct g)` | U8/U9 and actual pullback product comparisons; arbitrary scheme g after action exists. Define ActionLaws with the two equations, then prove it. |
+| U12 `PolygonActionGraph` | `theorem component_act : component i ≫ translation a j = scaling a ≫ component (i+j)` | U7 and smooth restriction; identify DR graph rotations, including n=1. |
+
+U3–U6 caps are dispatch limits, not evidence that all helpers fit. Before each
+is released, freeze its typed maps and source-local proof; if a generic descent
+lemma needs more than 240 lines, split that proof first. U6 in particular remains
+a source-design gate, not a ready theorem inferred from G5.
+
+### H1 — incidence kernel and cokernel, cap 160, READY
+
+New `PolygonIncidenceQuotient`; field K, n>0:
+
+```lean
+def kernelEquiv : LinearMap.ker (PolygonIncidence.difference K hn) ≃ₗ[K] K
+def cokernelEquiv :
+    ((Fin n → K) ⧸ LinearMap.range (PolygonIncidence.difference K hn)) ≃ₗ[K] K
+theorem cokernelEquiv_mk (v : Fin n → K) :
+    cokernelEquiv K hn (Submodule.Quotient.mk v) = PolygonIncidence.total K n v
+```
+
+Also prove both finranks are one. Dependencies: P5's `ker_difference`,
+`eq_initial_of_difference_eq_zero`, `range_difference`, `total_surjective`, and
+`LinearMap.quotKerEquivOfSurjective`. This is linear algebra of the dual cycle
+(DR II.1.1); it does not identify either space with sheaf cohomology. Include
+n=1 and characteristic dividing n; never use averaging by n.
+
+### Normalization, cohomology and genus: blocked leaves
+
+Each proposed module has cap 240. Use actual structure-sheaf module objects,
+not a definition of H¹ as the incidence cokernel. `ν` denotes the existing
+normalization map; `i` the node map. Functor names in these sketches are
+schematic until the typed sheaf pushforwards are fixed.
+
+| Leaf/module | Lean statement sketch | Dependencies and unresolved proof |
+| --- | --- | --- |
+| H2 `PolygonNormalizationFinite` | `theorem normalization_finite : IsFinite ν` | Explicit node and one-gon coordinate maps; affine-local finite-module proofs. Surjectivity also required. |
+| H3 `PolygonStructureInclusion` | `def inclusion : O_P ⟶ pushforward ν O_components` | H2, actual module sheaf pushforward/scalars and local normalization maps. |
+| H4 `PolygonBranchDifferenceSheaf` | `def difference : pushforward ν O_components ⟶ pushforward i O_nodes` | H3, endpoint evaluations, fix orientation to match P5. |
+| H5 `PolygonNormalizationExact` | `theorem exact : (ShortComplex.mk inclusion difference zero).ShortExact` | H3/H4, node equalizer and one-gon localizations, stalkwise exactness. Local ring exactness alone is insufficient. |
+| H6 `ProjectiveLineStandardComparison` | `def standardIso : ProjectiveLine.scheme K ≅ ProjectiveSpace K (Fin 2)` | Compare the existing glued P¹ to the projective model; preserve charts and constants. |
+| H7 `ProjectiveLineStructureCohomology` | `def h0Equiv : H0 toBase ≃ₗ[K] K; theorem h1_zero : Subsingleton (H1 toBase)` | H6; reuse projective twist degree-zero/cohomology or affine Čech comparison, and scalar compatibility. |
+| H8 `PolygonNormalizationCohomology` | `def h0Normalization : H0 (ν_* O_components) ≃ₗ[K] (Fin n → K)` | H2/H7, finite coproducts and affine direct-image comparison; also prove H¹ vanishes. |
+| H9 `PolygonNodeCohomology` | `def h0Nodes : H0 (i_* O_nodes) ≃ₗ[K] (Fin n → K)` | Finite closed nodes and affine vanishing; prove evaluation identifications. |
+| H10 `PolygonCohomologyIncidence` | `def h1Incidence : H1 P.hom ≃ₗ[K] ((Fin n → K) ⧸ LinearMap.range (difference K hn))` | H5/H8/H9 and long exact sequence; identify its H⁰ map with P5, not merely an abstract dimension count. |
+| H11 `PolygonConstantSections` | `theorem constants : HasConstantGlobalSections P.hom` | H5/H8/H9, H1 kernel equivalence and scalar-map compatibility. |
+| H12 `PolygonProper` | `theorem proper : IsProper P.hom` | H2 finite surjective normalization, H6 proper P¹; prove finite type/separatedness and proper descent hypotheses. |
+| H13 `PolygonDimension` | `theorem dimension : topologicalKrullDim P.left = 1` | Node/one-gon charts, nonempty torus, dimension bounds; G5 lfp is insufficient. |
+| H14 `PolygonGenusOne` | `theorem genus_one : curveGenus P.hom dimension constants = 1` | H10/H11/H12/H13 and H1. Transport to specified cocones via polygonIso. |
+| H15 `PolygonGeometricGenus` | `theorem geometric_genus : NodalGenusOneGeometricFibers P.hom` | H14, geometric base-change identification of the polygon; do not assume scalar H¹ base change. |
+
+Existing `ModuleCohomologyExact`, `AffinePushforwardCohomology`,
+`CechAcyclicComparison`, `ProjectiveTwistCohomology`, `ProperCurveGenus` and
+`ScalarCohomology` provide foundations, not these comparison maps. H2–H9 each
+need a typed API/source check before release. They may require further ≤240-line
+helpers; neither this table nor G5 certifies a bounded complete genus proof.
+
+## Beyond polygon G1: gates to the actual FLT consumer
+
+Even U1–U12 and H1–H15 do not construct an algebraic modular curve. The selected
+route and source references remain [MAZUR_CONTRACTS](MAZUR_CONTRACTS.md) and
+[MAZUR_PLAN](MAZUR_PLAN.md): DR II.1.4/1.12, IV, VI §5, VII §2; Mazur II §1,
+II §§6–10, II (14.1), III §§3–5 and I (2.9). No new source theorem is claimed
+verified beyond those ledgers. Remaining packages are **not dispatchable leaves**:
+
+1. Generalized elliptic families (proper, flat, finitely presented; smooth or
+   polygon fibers; group/action/graph conditions), level divisors and ampleness.
+2. Moduli atlas/groupoid, degeneration and contraction, coarse quotient and
+   geometric-point property, proper smooth prime-level curve away from p,
+   disjoint cusp sections and their Néron-model specialization orientation.
+3. Picard/Jacobian representability, Hecke correspondences, Eisenstein quotient,
+   integral abelian model, finite rational quotient and nonzero cuspidal image.
+4. A1 local semistability and components; A2 odd torsion specialization and the
+   global bad-prime argument; A3 cyclotomic extension/unramifiedness; A4 the
+   Herbrand weight-two input; A5 isogeny iteration with finite rational-generator
+   fibers and no backtracking. None follows just from polygon geometry.
+
+The older contracts have 250–500-line applications and large foundation
+families. They are not silently relabeled ≤240 here. Before dispatch, subdivide
+one source proof at a time into ≤240-line modules with typed statements; without
+that subdivision these packages remain source-design blockers. Claiming a
+complete finite list of ready ≤240-line leaves for all of Mazur would be false.
+The independent scalar-cohomology extension comparison is also still a separate
+foundation gate, not supplied by the existing geometric-fiber predicate.
+
+After these gates, the final small leaves are:
+
+| Leaf | Sketch | Cap / dependencies |
+| --- | --- | --- |
+| T1 `PrimeTorsionConclusion` | `theorem noLargePrimeTorsion : NoLargePrimeTorsion` | 150; actual G1/G2/A1–A5 proofs, currently blocked |
+| T2 assembly rewire | `mazurTorsionExclusion_of_noLargePrimeTorsion noLargePrimeTorsion` | 80; T1, later permission to edit existing Lean modules |
+| T3 final audit | `#print axioms PNat.pow_add_pow_ne_pow` | 80-line audit; rebuilt final consumer after T2 |
+
+T2 must replace the `ExistingInputs` use of `mazur_W`; proving a disconnected
+replacement theorem does not change the final declaration's dependencies.
+W14's new-module-only rule prohibits that edit in this wave. It is unnecessary
+to prove the full cardinal-bound axiom if the sufficient prime-torsion input is
+proved and the consumer rewired. Other `sorryAx` inputs have independent queues.
+
+## Validation for implementation leaves
+
+Foreground `LEAN_NUM_THREADS=2 lake build MODULE`, then
+`LEAN_NUM_THREADS=2 lake exe runLinter MODULE`, one module at a time. Audit every
+new declaration using `collectAxioms`: only propext, Classical.choice, Quot.sound.
+No sorry, new axiom, native_decide, or conclusion-assuming record. Only new Lean
+modules and sorted FLT.lean imports; docs may change. Commit locally, never push.
 
 [dr]: https://www.math.uni-bonn.de/people/rapoport/myalggeom/preprints/Lesschemas.pdf
 [conrad]: https://math.stanford.edu/~conrad/papers/kmpaper.pdf
