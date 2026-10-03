@@ -45,6 +45,7 @@ public import FLT.AbsoluteGaloisGroup.LocalCyclotomicInertia
 public import FLT.AbsoluteGaloisGroup.LocalCyclotomicRamification
 public import FLT.AbsoluteGaloisGroup.LocalCyclotomicSurjectivity
 public import FLT.AbsoluteGaloisGroup.LocalCyclotomicTame
+public import FLT.AbsoluteGaloisGroup.OpenNormalFixedField
 public import FLT.AbsoluteGaloisGroup.RootCharacter
 public import FLT.AbsoluteGaloisGroup.RootCharacterIndependence
 public import FLT.AbsoluteGaloisGroup.RootCharacterResidue
