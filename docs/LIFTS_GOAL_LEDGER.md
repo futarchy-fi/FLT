@@ -4,6 +4,75 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
+## W19 acceptance — checked 2026-10-03 05:17 UTC
+
+Thirteen new modules prove common-stage boundaries, the continuous
+inhomogeneous complex and its filtered colimit, the cohomology colimit,
+finite discrete comparison, and positive characteristic-zero vanishing.
+All commits are local; nothing pushed. Base: `fc41abcf`.
+
+| Item | Module under FLT.LocalClassFieldTheory | Lines/cap | Commit |
+|---|---|---|---|
+| C04f | FixedCoefficientBoundary | 59/200 | `f6a77d5a` |
+| C04g | InvariantStageTransition | 81/200 | `68e7594a` |
+| C05a | ContinuousCochainComplex | 89/200 | `a33bc6c8` |
+| C05b | ContinuousStageDiagram | 94/200 | `f0598852` |
+| C05c | ContinuousCochainColimit | 60/200 | `cbaaabb3` |
+| C05d1 | CochainHomologyClass | 88/200 | `f6c450c1` |
+| C05d2 | FilteredComplexDescent | 66/200 | `7e8616d7` |
+| C05d3 | FilteredHomologyDescent | 66/200 | `0fd42145` |
+| C04h | ContinuousStageBoundary | 60/200 | `ec91e35a` |
+| C05e | ContinuousCohomologyColimit | 65/200 | `35c934ba` |
+| C02a | FiniteContinuousComparison | 60/200 | `3aea178c` |
+| C06a | FiniteCharacteristicZeroCohomology | 46/200 | `b22c73fe` |
+| C06b | ContinuousCharacteristicZeroCohomology | 57/200 | `9bf2fe8e` |
+
+Total: **891 Lean lines; 49 named declarations, including one helper
+instance**. Every new module is below its 200-line cap.
+
+Validation: each module M passed separately, in the foreground:
+`LEAN_NUM_THREADS=2 lake build M`, `LEAN_NUM_THREADS=2 lake exe runLinter M`,
+and `LEAN_NUM_THREADS=2 lake env lean Scratch/LiftsW19/<Module>Axioms.lean`.
+All accepted logs are clean; every new declaration has axioms contained in
+`{propext, Classical.choice, Quot.sound}`. Evidence is recorded in
+`Scratch/LiftsW19/<Module>-{build,lint,axioms}.log`.
+`python3 Scratch/LiftsW19/check.py` verifies caps, audit coverage, log freshness,
+allowed paths, sorted imports and clean tracked state; it reads evidence,
+not rerunning Lean. `validate.py` also commits a validated module.
+
+The complex uses the submodule of continuous functions and Mathlib's actual
+inhomogeneous differential. The stage maps are quotient pullbacks with inclusion
+of invariant coefficients. Reverse inclusion of open normal subgroups is filtered;
+finite descent and injective inflation prove the complex colimit universal property.
+The boundary theorem works for an independently supplied stage: descend the bounding
+cochain and refine both stages, then prove the finite differential equation.
+
+The cohomology colimit is proved in every degree, including zero. Generic filtered
+union lemmas take component injectivity and joint surjectivity; their application
+here discharges both from the constructed inflation and finite descent. No common
+stage, boundary detection, quotient action, differential or colimit bridge is assumed.
+The finite discrete comparison is identity on cochains and works over any commutative
+ring, including Z. Characteristic-zero vanishing applies to arbitrary discrete modules
+with continuous action over a characteristic-zero field, including rational modules.
+It uses proved Maschke/projectivity and the Ext presentation, not an assumed homotopy.
+
+**E1c7/E1d remain BLOCKED.** Fresh final axiom audit:
+`LEAN_NUM_THREADS=2 lake env lean Scratch/LiftsW19/FinalAxioms.lean`, evidence
+`Scratch/LiftsW19/Final-axioms.log`.
+`IsHardlyRamified.lifts` and `FLT.Assembly.hardlyRamifiedLifting` retain
+`[propext, sorryAx, Classical.choice, Quot.sound]`;
+`PNat.pow_add_pow_ne_pow` retains
+`[Mazur_statement, propext, sorryAx, Classical.choice, Quot.sound]`.
+
+Remaining work: compare with the explicit integral low-degree/homogeneous
+presentation; prove restriction/coefficient naturality and connecting-map/cup
+compatibility; construct the continuous exact-sequence boundary for Q/Z and Z.
+The norm route still needs higher principal-unit graded quotients, norm-as-trace,
+successive corrections and convergence. Local invariant/class formation and
+Kummer–Artin evaluation remain. General analytic completeness transport beyond
+the rational specialization remains where callers need it. Serre-weight evaluation
+and arbitrary-p Raynaud classification remain independent blocked gates.
+
 ## W18 acceptance — checked 2026-10-03 04:46 UTC
 
 Thirteen new modules add degree-indexed profinite reindexing, compatible
