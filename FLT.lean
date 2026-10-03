@@ -1100,6 +1100,7 @@ public import FLT.Mazur.AcyclicDirectImageResolution
 public import FLT.Mazur.AcyclicPushforwardCohomology
 public import FLT.Mazur.AcyclicResolutionComparison
 public import FLT.Mazur.AffineAnnihilator
+public import FLT.Mazur.AffineBranchSequence
 public import FLT.Mazur.AffineClosedModuleDescent
 public import FLT.Mazur.AffineCoherent
 public import FLT.Mazur.AffineCoherentSubmoduleExtension
@@ -1122,6 +1123,7 @@ public import FLT.Mazur.AffineIdealPowerExtension
 public import FLT.Mazur.AffineKernelLocalization
 public import FLT.Mazur.AffineModuleExact
 public import FLT.Mazur.AffineModuleSupport
+public import FLT.Mazur.AffineNodeNormalizationExact
 public import FLT.Mazur.AffinePullbackIdeal
 public import FLT.Mazur.AffinePushforwardCohomology
 public import FLT.Mazur.AffinePushforwardQuasicoherent

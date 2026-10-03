@@ -1237,3 +1237,19 @@ implementation; these auxiliary leaves do not close the global polygon gate.
 The affine node and one-gon sequences, comparison with restrictions of the
 polygon maps, and global short exactness remain separate obligations. No cap
 for those unfinished proofs is released here.
+
+`W20_SCHEME_BRANCH_PROOF.lean` compiles in full with 30,000 heartbeats per
+command. H5c `AffineBranchSequence`, cap 140, uses the actual direct images on
+spectra. Its section formulas identify the two branch maps; the ring kernel
+condition and explicit surjectivity transfer through H5a. Scheme-map equations
+are inputs to this generic construction, derived from ring-map equations in
+its applications. Neither global polygon exactness nor its chart comparisons
+are assumptions of this construction.
+
+`W20_NODE_PROOF.lean` compiles in full. H5d `AffineNodeNormalizationExact`,
+cap 120, applies H5c to the cyclic node ring and to the one-gon endpoint-equalizer
+ring. Kernel lifts are the equalizer subtypes themselves. Surjectivity uses
+`(C a, 0)` for the two-branch node and `C a * (1-X)` for the one-gon, with the
+orientation zero minus adjacent infinity. These prove `ShortComplex.ShortExact`
+for actual sheaves on the two affine spectra. Comparing these complexes with
+restrictions of H3/H4 on the glued polygon remains open.
