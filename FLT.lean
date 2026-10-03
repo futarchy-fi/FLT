@@ -308,8 +308,15 @@ public import FLT.GaloisRepresentation.Extensions.ContinuousClass
 public import FLT.GaloisRepresentation.Extensions.ContinuousClassCoordinates
 public import FLT.GaloisRepresentation.Extensions.ContinuousCocycleCoordinates
 public import FLT.GaloisRepresentation.Extensions.ContinuousCup
+public import FLT.GaloisRepresentation.Extensions.ContinuousCupComparison
+public import FLT.GaloisRepresentation.Extensions.ContinuousH1Comparison
+public import FLT.GaloisRepresentation.Extensions.ContinuousH1Equiv
+public import FLT.GaloisRepresentation.Extensions.ContinuousH2Comparison
 public import FLT.GaloisRepresentation.Extensions.ExtendedUnitSubspace
 public import FLT.GaloisRepresentation.Extensions.FiniteDescent
+public import FLT.GaloisRepresentation.Extensions.HomogeneousCup
+public import FLT.GaloisRepresentation.Extensions.HomogeneousOne
+public import FLT.GaloisRepresentation.Extensions.HomogeneousTwo
 public import FLT.GaloisRepresentation.Extensions.LiftBasisTransport
 public import FLT.GaloisRepresentation.Extensions.LiftCocycle
 public import FLT.GaloisRepresentation.Extensions.LinearClassCoordinates
@@ -317,6 +324,7 @@ public import FLT.GaloisRepresentation.Extensions.LinearCoefficientMap
 public import FLT.GaloisRepresentation.Extensions.LinearContinuousClass
 public import FLT.GaloisRepresentation.Extensions.OrdinaryHomCoordinates
 public import FLT.GaloisRepresentation.Extensions.OrdinaryTwist
+public import FLT.GaloisRepresentation.Extensions.PeuCohomologyComparison
 public import FLT.GaloisRepresentation.Extensions.PeuRamifiedClass
 public import FLT.GaloisRepresentation.Extensions.TensorCharacterClasses
 public import FLT.GaloisRepresentation.HardlyRamified.AbsIrredAdapter
