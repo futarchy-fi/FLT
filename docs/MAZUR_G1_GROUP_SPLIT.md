@@ -857,3 +857,84 @@ node/torus product cover, using U6d4 for the node and U6d10 for the torus.
 The result is global unique arbitrary-target descent for n=1, with the base
 map and node-section factorization. The specified over-category span and
 general scheme base still require comparison and locality arguments.
+
+## W17 validation and remaining exact-span descent
+
+Checked at 2026-10-03 04:30 UTC; base 38f8782e; implementation head 1f740224.
+Read-only checks: `GOAL_MAZUR_W17_VALIDATION.txt` and the axiom audit below.
+
+| Item | Module under `FLT/Mazur/` | Lines/cap | Commit |
+| --- | --- | --- | --- |
+| U6d3 | `OneGonProductNormalization` | 136/160 | `c68a7cfe` |
+| U6d4 | `OneGonProductEndpoints` | 101/130 | `c68a7cfe` |
+| U6d5 | `NodeNormalizationBaseChange` | 111/140 | `c68a7cfe` |
+| U6d6 | `CyclicProductNormalization` | 139/180 | `c68a7cfe` |
+| U6d7 | `CyclicProductEndpoints` | 110/150 | `c68a7cfe` |
+| U6d8 | `PolygonNormalizationDominant` | 96/130 | `1f740224` |
+| U6d9 | `CyclicProductDescent` | 47/90 | `1f740224` |
+| U6d10 | `OneGonProductTorus` | 73/100 | `1f740224` |
+| U6d11 | `OneGonProductDescent` | 59/100 | `1f740224` |
+
+The exact W16 one-gon normalization pullback contract is now proved by
+`OneGonProductNormalization.node_isPullback`, with zero/one endpoint transport.
+The cyclic node analogue is `CyclicProductNormalization.node_isPullback`, with
+origins mapped to zero and adjacent infinity on the normalization coproduct.
+Both actual affine-parameter polygons now have unique arbitrary-target global
+descent (`OneGonProductDescent.exists_desc`, `CyclicProductDescent.exists_desc`).
+The base-morphism equations are proved, as is the one-gon node factorization.
+These statements allow arbitrary commutative coefficient algebras, including
+nonreduced ones. The one-gon torus keeps its canonical tensor coordinates.
+
+## Validation
+
+Every module passed its foreground `LEAN_NUM_THREADS=2 lake build FLT.Mazur.MODULE`
+and its separate `LEAN_NUM_THREADS=2 lake exe runLinter FLT.Mazur.MODULE`.
+The final builds are warning-free; no whole-library build or lint was run.
+`LEAN_NUM_THREADS=2 lake env lean GOAL_MAZUR_W17_AXIOM_AUDIT.lean` checked all
+162 originating declarations, including generated helpers, with only
+`propext`, `Classical.choice`, `Quot.sound` (`GOAL_MAZUR_W17_ALL_AXIOMS.txt`).
+No placeholders, new axioms or native_decide occur in the nine modules.
+All leaves fit their caps, assigned after compiling the full proof prototypes.
+`git diff --check 38f8782e` passes; imports are sorted and complete.
+All commits use krandder / 5401138+krandder@users.noreply.github.com, without AI credit.
+
+## Exact remaining gap
+
+**U6 remains unproved:** the global descent results have not yet been transported
+to the exact `Over.pullback g` pinching span, or extended by locality to an
+arbitrary scheme base. This is unfinished proof work, not an approval or
+infrastructure blocker. The new global descent theorems do not assert
+preservation of a closed pinching pushout.
+
+`W17_U6_REMAINING_CONTRACT.lean` compiles without placeholders; its output is
+`GOAL_MAZUR_W17_U6_CONTRACT.txt`. It checks both the affine-parameter specified
+`IsPushout` and final arbitrary-base, arbitrary-cocone target. These two targets
+are checked propositions, not proved theorems. Two useful helper proofs there
+are checked and axiom-audited: `componentsIso` identifies the original scheme
+normalization coproduct with the specified over-category coproduct;
+`nodeRetraction_toNodes` proves the node leg split epic.
+
+Next obligations, without assigning unchecked caps:
+
+1. Transport `componentsIso` through base change and pullback symmetry;
+   `Over.pullback` uses `(original, parameter)` order, while the proved descent
+   modules use `(parameter, original)`. For n=1 use `coproductUniqueIso`.
+2. Pull the input cocone relation back to the actual endpoint sections in U6d4
+   and U6d7. Apply the global descent results and `desc_toBase` to obtain the
+   descended over-morphism and its normalization factorization. The split-epic
+   node leg lets its node factorization follow from the cocone equation.
+3. Establish locality in the parameter scheme via its affine open cover,
+   including the scalar algebra induced by an affine chart's map to `Spec K`.
+   Glue the actual over-morphisms and both factorizations; use normalization
+   epimorphisms for overlap equality and uniqueness.
+4. Transport the specified polygon result to an arbitrary supplied pushout
+   cocone using `PolygonPinching.polygonIso`. Only then close U6.
+5. Construct U7 and prove U8–U12; these have not been implemented in W17.
+
+No action or Mazur removal is claimed. Checked source evidence still shows
+`axiom Mazur_statement` in `FLT/Assumptions/Mazur.lean:103`, `mazur_W` in
+`FLT/Assembly/ExistingInputs.lean:28`, and `mazurTorsionExclusion` in
+`FermatsLastTheorem.lean:24`. This is source evidence, not a fresh compiled
+axiom audit of `PNat.pow_add_pow_ne_pow`. Full G1 moduli, G2 arithmetic and the
+remaining assembly work are also unproved; existing-consumer edits remain
+outside the new-module-only authorization.
