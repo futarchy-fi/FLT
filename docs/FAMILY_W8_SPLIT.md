@@ -1,5 +1,246 @@
 # FAMILY-W8 — finite-flat inertia spectrum and the family boundary
 
+## W22 current gate map — 2026-10-03
+
+This section supersedes all status labels in the historical W17–W21 sections.
+Checked against worktree base `e0b76b3b` (including local W21), with local
+`origin/main` at `55f5d1c5`; these are distinct snapshots, not a claim that W21
+has merged. Read-only evidence: the source paths below, `git log -1`,
+`git log origin/main -1`, and `W22_EXISTING_AXIOMS.lean` / `.log`.
+The latter audits both the usable three-adic inputs and the two admissions.
+`Family.lean:68` and `MoretBailly.statement` still depend on `sorryAx`.
+
+D14 is finished for p > 3 with an **absolutely irreducible residual input**,
+flatness, cyclotomic determinant and rank two. Its endpoint is
+`GaloisRep.flat_cyclotomic_restriction_absolute_of_isFlatAt` in
+`Deformations/RepresentationTheory/FiniteFlatCyclotomicAbsolute.lean`.
+W21 proves the nonzero-trace obstruction it needs; a stronger p±1 spectrum
+classification over arbitrary coefficient fields is not needed for D14.
+The family target is a characteristic-zero representation over an arbitrary
+finite free local domain, with **no irreducible-reduction hypothesis**.
+D14 therefore does not discharge the family theorem's residual gate.
+
+### Re-audited family gates
+
+Paths are relative to `FLT/`, abbreviating `GaloisRepresentation/HardlyRamified`
+to `HardlyRamified` and `Deformations/RepresentationTheory` to
+`RepresentationTheory`. Bounded means an identified assembly/algebra
+leaf with existing mathematical inputs, not that the entire gate is short.
+Every new proof module has a whole-file cap of 150 lines.
+
+| Gate | Current evidence and exact gap | Classification / next leaf |
+|---|---|---|
+| F01 compatible integral torsion maps | `GroupScheme/RaynaudPadicPowerExtension` proves unique prescribed extensions for p > 2, including 3; `RepresentationTheory/FlatPadic` supplies models of all p-power reductions. Their actual point modules and coefficient transition maps still need identification. | W23 constructs the actual generic/integral inclusions and reductions over the rational completion, with coherent composition, identity and multiplication diagrams. All maps retain the original quotient tensor modules. See `TorsionModelTransitions` and `TorsionIntegralInclusions`. |
+| F02 integral exact levels | `RepresentationTheory/PrimePowerExact` is coefficient exactness only. Integral closure/quotient comparisons exist in `GroupScheme/IntegralClosedImmersion`, `IntegralQuotientIdentification`, and `IntegralQuotientFaithfullyFlat`. | W23 `TorsionLevelExactness` proves closed inclusions, faithfully flat prescribed reductions and identifies the actual scheme-kernel coordinates with the prescribed lower level (original coefficient domains, Type 0). P-divisible object assembly remains F03. |
+| F03 p-divisible object | No p-divisible-group definition/level assembly consuming F01/F02 found in `FLT/`. | Missing definitions and construction, larger than a ready wrapper. |
+| F04 weight-two comparison | No period-ring/de Rham comparison theorem computing the two graded ranks from these levels found in `FLT/`. | Large missing p-adic Hodge theory. C5 gives maps, not Hodge weights. |
+| F05 arbitrary coefficient domains | W23 `PadicOrderAlgebra`, `PadicOrderValuation`, `PadicOrderNormTopology`, `PadicOrderTopology` and `PadicOrderCanonicalTopology` construct general-prime normalization with its original embedding and explicit spectral topology. | `PadicOrderHardlyRamified` preserves HR and identifies the original generic member by tensor cancellation. `PadicOrderStableLattice` handles supplied stable lattices. No compatible family or every-embedding member is constructed. |
+| F06a p = 3 residual branch | `Assembly/PrimePowerSortingProof.primePowerSortedExtensionExists` and `HardlyRamified/ModThreeSorted.mod_three_of_sortedExtensionExists` are axiom-clean. They give a trivial quotient, hence reducibility; the legacy `mod_three` theorem is still admitted. | Implemented W22 in `ModThreeProved`: unconditional quotient and residual non-irreducibility from proved sorting. |
+| F06b p = 3 characteristic zero | `Assembly/ThreeAdicTrace.trace_eq_one_add_det_of_sorted_inputs` is axiom-clean; proved sorting supplies both its inputs. | Implemented W22 in `ThreeAdicTraceProved`: unconditional trace and Frobenius trace over original Type-0 coefficient domains. This is not family existence or a split equivalence. |
+| F06c p > 3 residual input | `HardlyRamified/AbsoluteIrreducibility.isAbsolutelyIrreducible` derives absolute irreducibility **from irreducibility**. D14 needs the explicit mod-p determinant comparison. | Implemented W22 in `ResidualCyclotomicDeterminant` and `ResidualCyclotomicRestriction`: the HR endpoint handles every odd prime by excluding 3 using the proved contradiction. It still requires residual irreducibility. |
+| F06d omitted irreducible-reduction cases | Blueprint `ch03freyreduction.tex:189–211` assumes irreducible reduction; `Family.mem_isCompatible` does not. Residual reducibility does not imply the original extension splits. p=2 is excluded by `Odd p`; W21's p=2 restriction lemma is not a family case. | Mathematical scope gap. Need separate reducible-residual family construction or another argument, not an extra assumption. |
+| F07 potential modularity | No theorem supplies the totally real, locally controlled extension and modular realization for these original inputs. | Large missing theory; D14 is one input only. |
+| Moret–Bailly | `MoretBailly.statement` is admitted and covers the prime-field elliptic-curve formulation, not arbitrary finite residual fields. | Large geometric existence theorem plus coefficient-scope work; cannot use it in an axiom-clean leaf. |
+| F08 common number field | Need one E and common Hecke/Frobenius polynomials, before quantifying over its embeddings. | Large missing Hilbert-form/Hecke theory. |
+| F09 attached members | Need continuous representations for every prime and embedding, with local-global compatibility. | Large missing attachment/local-global theory, dependent on F07/F08. |
+| F10/F11 effective Brauer descent | `BrauerEffectivityCoefficients` supplies integer self-pairing algebra only; no actual induced/restricted family identity, common-field descent or effective rank-two representation is constructed. | Large missing character/descent theory; integer norm one alone is insufficient. |
+| F12 every-embedding integral HR models | Lattice and coefficient-transport APIs exist; need flatness at every odd ℓ, square-trivial quotient at 2, coefficient/topology instances and exact conjugacy for **every** embedding. | Dependent assembly plus missing local-global inputs, not supplied by compatibility. |
+| F13 original-member equivalence | Need a continuous R-algebra structure on the algebraic closure, ψ and an actual linear equivalence identifying the original representation. | Dependent on normalization/descent; traces alone do not identify a nonsplit extension. |
+| F14 exact family packaging | E, all σ members, compatibility, every integral model, and original equivalence are still absent. | Bounded only after F08–F13; no conclusion-bearing record may replace them. |
+| F15 admission replacement | The old theorem must delegate to an axiom-clean theorem with its exact signature. | Integration blocked by this task's edit scope until a later change to `Family.lean`; mathematical gates remain first. |
+
+### W22 bounded implementation order
+
+1. `HardlyRamified/ModThreeProved`: specialize proved sorting to the original
+   mod-three quotient statement and prove residual non-irreducibility.
+2. `HardlyRamified/ThreeAdicTraceProved`: discharge sorting/purity in the
+   original-order trace and Frobenius trace statements. Keep domain and universe
+   scope explicit; do not claim the broader legacy theorem is replaced.
+3. `HardlyRamified/ResidualCyclotomicRestriction`: derive the actual modular
+   determinant and absolute restriction from HR plus residual irreducibility,
+   with no supplied trace/spectrum/model input. The proved p=3 contradiction
+   derives p > 3 from oddness and irreducibility, eliminating a separate
+   large-prime assumption at the HR endpoint.
+   Split the coefficient-map reduction into
+   `HardlyRamified/ResidualCyclotomicDeterminant` (cap 150) before the
+   restriction adapter, so the canonical mod-p comparison is independently reusable.
+4. `GroupScheme/PadicIntegralTransition`: choose the proved unique extension
+   and prove diagram compatibility on actual finite-flat p-power models.
+   This is the bounded functorial input to F01, not an HR p-divisible tower.
+
+5. `HardlyRamified/TorsionFlatModels` (cap 150): unpack flatness at each
+   actual p-power quotient into a finite-flat model with the original local
+   Galois module, deriving its killing exponent. This supplies models for
+   F01; coefficient transition maps and integral exactness remain separate.
+
+The p=3 **family existence** branch is not certified bounded by this audit.
+The two p=3 ready leaves settle its quotient/trace prerequisites; selecting
+one common family and identifying its original, possibly nonsplit member
+still requires F08–F14 or a separate explicit construction.
+
+
+### W22 validation checkpoint
+
+The six bounded modules above are implemented, 49–59 lines each (cap 150).
+`W22_MODULES.txt` records the full module names. Individual foreground
+`LEAN_NUM_THREADS=2 lake build MODULE` and
+`LEAN_NUM_THREADS=2 lake exe runLinter MODULE` runs pass; no whole-library
+build or lint ran. `W22_AXIOMS.lean` audits all twelve new named declarations;
+`W22_FINAL_CHECKS.py` checks declaration coverage, caps, scope, logs and imports.
+See `FAMILY_W22_DONE.md` for the checked-at timestamp, commits and validation.
+Checked at 2026-10-03 11:36:34 UTC by
+`python3 W22_FINAL_CHECKS.py`: all twelve declarations use only `propext`,
+`Classical.choice`, and `Quot.sound`. The old family source is unchanged.
+
+The F01 pieces deliberately expose their remaining interface: the actual HR
+models live over its rational completion, whereas `padicExtension` is over
+`ℤ_[p]` and `ℚ_[p]`. Transport of the selected models and actual quotient-tensor
+inclusion/reduction maps is still needed before applying the diagram theorem.
+No compatible integral level tower or p-divisible object is claimed here.
+
+
+## W21 implemented boundary — 2026-10-03
+
+D13's arbitrary-cycle binary point equations and original simple-factor
+weights are implemented. The coefficient-field trace/spectrum needed for
+D14 is derived from the original k-linear rank-two operator. D14's large-prime
+absolute cyclotomic restriction is implemented for the original global
+finite-flat representation and all coefficient extensions. **The original
+family admission and broader W17 family obligations remain unchanged.**
+The W20 and earlier progress sections below are historical.
+
+`FF.fundamentalValue_cycle_binary` chooses every actual coefficient's digit
+and unit once, before the point; its exponent is the reverse Frobenius-weighted
+digit sum and its correcting unit is the corresponding weighted product.
+`exists_original_higher_weight` constructs the scalar model of an original
+simple inertia factor of any positive prime-field dimension before applying
+these equations. No weights or scalar model are supplied by the caller.
+
+`coefficient_flat_trace_ne_zero` constructs an actual simple prime-field
+quotient of the original points, without assuming its dimension is two.
+Cayley–Hamilton is applied only to the ORIGINAL k-linear rank-two operator.
+Trace zero and cyclotomic determinant would force the quotient scalar to
+satisfy z^(2m) = −z^S, where S = 1+p+…+p^(r−1) and 0 ≤ m ≤ S. The derived
+full-order generator has order (p−1)S > 2S for p>3, contradicting this equation.
+Its norm is the actual cyclotomic value of the SAME inertia element.
+
+`coefficient_flat_spectrum` factors the actual k-linear charpoly in the
+algebraic closure of k into two unit roots with nonzero sum and ratio not −1.
+This is the spectrum obstruction D14 needs. **It does not assert the stronger
+p−1 or p+1 ratio-order classification**, which still needs the local
+Frobenius-orbit calculation described in the source split.
+
+`GaloisRep.flat_cyclotomic_restriction_absolute_of_isFlatAt` starts from the
+original discrete coefficient-field representation, rank two, flatness,
+actual global cyclotomic determinant, absolute irreducibility, and p>3.
+It unpacks the actual flat-model witness, compares its local point action
+with the original global action, and transports trace through coefficient
+extension. `CyclotomicQuadratic.eq_neg_one_of_inertia_order` detects the
+quadratic self-twist at that same generator; cancellation of iterated base
+change gives the repository's all-field-extensions absolute-irreducibility
+predicate on the cyclotomic kernel. No detecting element, spectrum, trace,
+scalar factor, or tower is an endpoint hypothesis.
+
+The p=2 branch proves that the kernel is the full group and preserves
+absolute irreducibility. The p=3 branch proves the ordinary generator's
+trace is zero; no uniform p=3 restriction theorem is claimed.
+
+Checked at 2026-10-03 11:04:07 UTC by `python3 W21_FINAL_CHECKS.py`:
+17 individual foreground builds and module-specific lints pass; all 29 new
+named declarations have only `propext`, `Classical.choice`, and `Quot.sound`.
+The complete files are 46–114 lines (cap 150). `W21_AXIOMS.log` records the
+new declaration audit; `W21_BOUNDARY_AXIOMS.log` confirms the original family
+still uses `sorryAx`. The manifest, scripts, logs and `FAMILY_W21_DONE.md`
+remain outside `FLT/`. No existing proof module changed.
+
+
+## W20 implemented boundary — 2026-10-03
+
+D12 is implemented for the original prime-field rank-two finite-flat model
+at the rational completion, for p > 3. D13 now has arbitrary-niveau
+root-character generators and cyclotomic norms, plus actual higher-cycle
+coordinate root equations. **The higher-coefficient-field spectrum and D14
+remain open; GOAL-FAMILY-W20 is partially complete.** `Family.lean` is unchanged.
+
+Checked at 2026-10-03 10:11:20 UTC with `python3 W20_FINAL_CHECKS.py`,
+16 individual foreground builds and module-specific lints, and the audits
+`W20_AXIOMS.lean` / `W20_BOUNDARY_AXIOMS.lean`. All 34 new named declarations
+use only `propext`, `Classical.choice`, and `Quot.sound`; the original family
+theorem still uses `sorryAx`. All 16 whole files are 39–102 lines (cap 150).
+The local manifests, logs, audits and `FAMILY_W20_DONE.md` remain outside `FLT/`.
+
+The endpoint `ThreeAdicPlan.FF.primeInertia_tame_spectrum` takes an original
+finite-flat model, its prime-field module structure, rank two, the actual
+cyclotomic determinant and p > 3. It derives the original inertia action and
+continuity, constructs the explicit tower and original simple factors, and
+uses their binary charpolys. No tower, scalar model, factors, weights,
+charpoly factorization, spectrum, or generator is supplied as an input.
+It returns an original inertia element with cyclotomic order p−1, a mapped
+original charpoly with two unit roots of ratio order p−1 or p+1, and nonzero
+trace of the original operator.
+
+The niveau-two generator is chosen through
+`LocalRoot.rootCharacterToRoots_surjective` BEFORE its actual cyclotomic norm.
+`RootCharacterCyclotomicNorm` compares arbitrary uniformizer roots with the
+actual character in the original geometric residue field. Reducible rank-two
+charpolys use an actual invariant line and quotient, without an invariant
+complement. `RaynaudPrescribedFraction` constructs the prescribed fraction
+embedding by a general subalgebra lemma, then applies it to the explicit union.
+
+D13's `HigherNiveauCyclotomicNorm` extends the same generator/norm comparison
+to every positive niveau. `CyclicPowerElimination` and
+`RaynaudHigherCyclePower` eliminate every actual coordinate equation to give
+the coefficient product weighted by p^(r−1−i). Next derive its binary digit
+sum and correcting unit, transport the higher original factors, and retain
+the original coefficient-field rank-two action. Restriction to the prime
+field still multiplies dimension and is not a substitute for that argument.
+D14 must use the SAME generator and keep small-prime branches separate.
+The broader W17 family prerequisites and statement-scope obligations remain.
+
+## W19 implemented boundary — 2026-10-03
+
+D10's original-factor transport, maximal scalar lifts, exact original-inertia
+comparison and binary local weights are implemented. D11 computes the actual
+one-/two-dimensional simple-factor prime-field charpolys, including the
+Frobenius-fixed quadratic case. **D12–D14 remain open; this is partial
+completion of GOAL-FAMILY-W19.** The original family admission is unchanged.
+
+Checked at 2026-10-03 09:18:42 UTC by `python3 W19_FINAL_CHECKS.py`:
+16 individual foreground builds and module-specific lints, 48 named declarations
+in `W19_AXIOMS.lean` (only `propext`, `Classical.choice`, `Quot.sound`), and
+`W19_BOUNDARY_AXIOMS.lean` (the family still uses `sorryAx`). The 16 whole files
+range from 44 to 110 lines, below the 150-line cap. The manifest and per-module
+commands are in `W19_MODULES.txt` and `W19_VALIDATE.sh`; audit artifacts and
+`FAMILY_W19_DONE.md` remain untracked outside `FLT/`, as required by the brief.
+
+Proved assembly endpoints:
+
+- `IsFiniteFlat.closureChange` and `baseChange_prescribedClosure` retain the
+  actual Hopf witness and original point/scalar types using postcomposition
+  and `AlgEquiv.autCongr`.
+- `inertiaDescentStage` places the actual descent integers in the original
+  union; `inertiaDescentFieldToTower_comp` proves the fraction lift recovers
+  the original field inclusion.
+- `exists_original_factor_tower_action` proves agreement with the same
+  original inertia element. `exists_simple_factor_character_model` derives
+  the scalar field, maximal lifts and character on both original and model points.
+- `exists_original_one_weight` and `exists_original_two_weight` construct
+  the scalar models and residue embedding before deriving common binary
+  exponents `d` and `p*a+b` for all original inertia elements.
+- `original_one_factor_charpoly` and `original_two_factor_charpoly` return
+  the original factor charpolys from these weights. Computed characters,
+  integral scalar models and charpoly factorizations are not inputs.
+
+The endpoints use the explicit union's fraction-field algebra and prescribed
+embedding, supplied by the existing tower construction, plus an original simple
+subquotient and chosen root. D12 must instantiate this infrastructure from the
+original representation, choose a niveau-two generator before its cyclotomic
+norm, combine factor charpolys and apply the determinant. D13 still requires
+higher niveaux for larger coefficient fields; D14 and the broader family
+statement-scope obligations remain separate. No full spectrum or admission-free
+family theorem is claimed.
+
+
 ## W18 implementation boundary — 2026-10-03
 
 D9c's closure placement, original-inertia fixedness, evaluation transport,
@@ -1324,3 +1565,331 @@ actual scalar action, with common binary digits and the original root
 character. The scalar action is identified on a nonzero point; it is not a
 supplied inertia-character formula. Original-factor construction/transport
 must precede using this local endpoint in the unconditional spectrum theorem.
+
+
+## W19 D10 implementation split (whole-file cap 150)
+
+The original-factor transport is split before implementation into:
+
+1. `HopfPointsClosureChange`: postcomposition of the actual convolution points
+   and conjugation equivariance.
+2. `FiniteFlatClosureChange`: retain the prescribed point group and coefficient
+   module while transporting the actual finite-flat Hopf witness.
+3. `RaynaudDescentStage`: prove the actual descent integers formally unramified,
+   embed their image as an original unramified stage, and map into its union.
+4. `FiniteFlatTowerClosure`: combine same-closure base change and the prescribed
+   closure equivalence, retaining the exact original automorphism action.
+5. Original descended factor comparison and maximal scalar model transport;
+   split further before any file exceeds 150 lines.
+
+D11/D12 and D13/D14 remain dependent on the original-factor assembly.
+
+The D10 leaves are further split before assembly (each whole-file cap 150):
+`RaynaudDescentFraction` extends the actual integral embedding;
+`FiniteFlatPrescribedClosure` handles an arbitrary prescribed closure comparison;
+`RaynaudOriginalFactorTransport` constructs tower actions on actual descended
+factors and proves agreement with each original inertia element;
+`RaynaudMaximalScalarModel` constructs maximal scalar lifts from finite flatness;
+`RaynaudSimpleFactorTower` assembles the derived simple scalar field and transport.
+
+`RaynaudSimpleFactorMaximal` (cap 150) combines the derived tower factor with
+its maximal scalar model. `RankOneScalarCharacter` (cap 150) derives the unit
+character of a commuting rank-one action for the local-weight assembly.
+
+`RaynaudSimpleFactorCharacter` (cap 150) derives the character and identifies
+its action on both the original factor and the maximal model.
+`RaynaudOriginalOneWeight` and `RaynaudOriginalTwoWeight` (each cap 150) apply
+the existing local weights after constructing all scalar-model inputs.
+
+D11's algebraic bridge is split into `ScalarActionCharpoly` (cap 150):
+transport the actual scalar operator to multiplication on its rank-one scalar
+field, then apply Cayley–Hamilton and Frobenius to the prime-field charpoly.
+
+`RaynaudOriginalFactorCharpoly` (cap 150) consumes the constructed original
+one-/two-factor weights and returns their actual prime-field charpolys,
+including the Frobenius-fixed quadratic case.
+
+
+## W20 D12 implementation split (whole-file cap 150)
+
+Before implementation, separate the generator and norm comparison into:
+
+1. `RootCharacterGenerator`: choose an original inertia element whose reduced
+   uniformizer-root character has the full prime-to-characteristic order,
+   using `rootCharacterToRoots_surjective`.
+2. `RootCharacterCyclotomicNorm`: identify the niveau-one character for any
+   uniformizer with the actual rational local cyclotomic character in the
+   original geometric residue field, then prove the niveau-two norm formula.
+3. `NiveauTwoInertiaGenerator`: choose the niveau-two generator first and
+   derive its actual cyclotomic order and Frobenius ratio order.
+
+Original rank-two factor assembly, higher-niveau coefficient fields, and
+cyclotomic restriction remain subsequent leaves; split them before coding.
+
+The original rank-two assembly is split further (each whole-file cap 150):
+`RankTwoSimpleFactors` constructs the one-dimensional invariant subspace and
+quotient when the original representation is reducible; both are simple.
+`RaynaudRankTwoCharpoly` applies the original-factor weight theorems to
+these actual factors and multiplies their charpolys, without assuming a
+factorization or a splitting of the representation.
+
+Before the rational-place wrapper, split `RationalPrimeUniformizer` (the
+actual rational prime is a normalized uniformizer) and
+`RaynaudPrescribedFraction` (construct the explicit union's fraction-field
+algebra and prescribed embedding). Both caps are 150. Separate reducible
+assembly as `RaynaudInvariantLineCharpoly` before the full rank-two dichotomy.
+
+`RaynaudRankTwoCharpoly` (cap 150) combines the two cases on the original
+point module. `MappedRankTwoCharpoly` and `MappedTameSpectrum` (caps 150)
+extract the determinant after extending coefficients and select the canonical
+spectrum from the derived binary factors. `RaynaudRationalCharpoly` constructs
+the rational tower inputs; the final prime-field spectrum leaf then supplies
+the generator and actual cyclotomic determinant.
+
+`RaynaudPrimeTameSpectrum` (cap 150) derives the spectrum and nonzero original
+trace from flatness and the actual determinant for p > 3.
+`RaynaudModelTameSpectrum` (cap 150) derives continuity and action agreement
+for the original model's canonical inertia representation, removing those
+comparison inputs from the model endpoint.
+
+### D13 source-based split after the prime-field endpoint
+
+The full higher-coefficient-field spectrum remains a separate argument:
+restriction to the prime field has dimension multiplied by the coefficient
+degree. Refine into these leaves before implementation (each cap 150, split
+again as needed):
+
+- `HigherNiveauCyclotomicNorm`: choose a degree p^r−1 root-character generator
+  and compare its geometric-sum norm with the actual cyclotomic character.
+- General cyclic point-power and original scalar-weight transport: extend
+  `RaynaudPointPower`, `RaynaudTowerPointCharacter`, and the original-factor
+  weights to arbitrary cycle length with actual parameter digits.
+- Original coefficient-field factor assembly: retain the k-linear rank-two
+  action while deriving the prime-field scalar-character factors and their
+  Frobenius orbits. A supplied spectrum or supplied orbit bound is forbidden.
+- Derive the needed orbit and digit constraints from the original local Galois
+  action and determinant, then compute trace and ratio orders. The prime-field
+  theorem alone cannot supply this step.
+
+D14 must use the SAME generator supplied by the spectrum theorem, through
+`CyclotomicQuadratic.eq_neg_one_of_generator`; the independently selected
+`exists_inertia_detector` does not ensure the required spectrum at its element.
+Keep p = 2 and p = 3 outside the p > 3 endpoint.
+
+Before generalizing point powers, split `CyclicPowerElimination` (cap 150):
+eliminate an arbitrary-length chain of p-power coordinate equations and then
+close the cycle, keeping the Frobenius-weighted coefficient product explicit.
+This is the algebraic input to the actual higher-cycle evaluation leaf.
+
+`RaynaudHigherCyclePower` (cap 150) applies the chain elimination to the
+actual `fundamentalValue_power` equations at every coordinate. Its output
+must retain the constructed coefficients rather than assume point equations.
+
+## W21 D13 implementation split (whole-file cap 150)
+
+Before implementation, split the arbitrary-cycle weight transport into:
+`RaynaudHigherBinaryPower` (choose all actual coefficient digits and units;
+combine their weighted product with the evaluated cycle),
+`RaynaudHigherPointCharacter` (transport that point equation to original inertia),
+`RaynaudHigherScalarWeights` (identify the actual scalar-coordinate ratio), and
+`RaynaudOriginalHigherWeight` (construct the original simple-factor scalar
+model, then derive its arbitrary-niveau binary character). Each cap is 150.
+The original k-linear rank-two assembly and D14 remain subsequent leaves;
+no prime-field rank-two theorem may be applied by restricting scalars.
+
+### W21 coefficient-field trace route
+
+For D13/D14's trace obstruction, retain the original k-linear rank-two
+operator throughout Cayley–Hamilton. If its trace vanished and its determinant
+were cyclotomic (hence prime-field valued), it would satisfy T² = −det(T).
+This additive identity descends to any actual prime-field simple quotient;
+that quotient need not have dimension two. Its constructed higher-cycle
+scalar character would satisfy z^(2m) = −z^S, where m is the actual binary
+weight and S = 1+p+…+p^(r−1). Since 0 ≤ m ≤ S and 2S < p^r−1 for p>3,
+a full root-character generator cannot satisfy this equation. This yields
+nonzero trace at the SAME cyclotomic generator. It does not claim the
+stronger p±1 ratio classification without a Frobenius-orbit argument.
+
+Split before coding (each complete file ≤150 lines): `HigherBinaryBounds`
+(weight bound and generator obstruction), `RankTwoScalarQuotient`
+(Cayley–Hamilton and scalar quotient equation), `RaynaudRationalHigherWeight`
+(construct the rational tower), `RaynaudHigherWeightQuotient` (construct the
+simple quotient), `RaynaudCoefficientTrace` (assemble the original k-linear
+trace obstruction). Split further if needed before exceeding the cap.
+
+The simple-quotient trace bridge is split further before assembly:
+`RaynaudHigherWeightTrace` applies the constructed higher weights to an
+actual simple quotient, and `RaynaudCoefficientTrace` constructs that quotient
+from the original point action. Each cap is 150. The planned separate
+`RaynaudHigherWeightQuotient` is absorbed by this short final construction.
+
+D14 is split (each cap 150) into `CyclotomicGeneratorTrace` (detect the
+quadratic self-twist at the supplied full-order cyclotomic generator),
+`RaynaudCoefficientSpectrum` (factor the actual mapped k-linear quadratic
+with nonzero trace at this generator), and original-model/global-action and
+coefficient-extension transport. These spectrum leaves prove the trace and
+ratio-not-minus-one obstruction sufficient for restriction; the stronger
+p±1 ratio classification remains a distinct orbit calculation.
+
+The global transport is split before implementation (caps 150):
+`FiniteFlatCyclotomicTrace` unpacks the actual GaloisRep flat-model witness
+and retains its original point module; `FiniteFlatCyclotomicRestriction`
+transports trace to coefficient extensions and applies the same-generator
+self-twist contradiction. Small-prime statements remain separate.
+
+For the repository's all-field-extensions absolute-irreducibility predicate,
+split `IteratedBaseChangeIrreducible` (equivariant cancellation of iterated
+base change) and `FiniteFlatCyclotomicAbsolute` (descend from each algebraic
+closure). `CyclotomicSmallPrimes` records p=2 separately and the exact p=3
+ordinary trace obstruction; no uniform p=3 conclusion is inferred. Caps 150.
+
+## W23 actual torsion tower and general-prime normalization split
+
+Implement in dependency order; each new complete Lean file has cap 150:
+
+1. `TorsionCoefficientMaps`: reduction and multiplication-induced inclusions
+   between the original coefficient quotients, with representative formulas.
+2. `TorsionTensorMaps`: tensor these maps with the original representation;
+   prove Galois equivariance and the reduction/inclusion multiplication identities.
+3. `RationalIntegralTransition`: specialize the proved local extension theorem
+   to the rational prime completion, deriving its ramification bound; retain
+   the exact prescribed map and composition.
+4. `TorsionModelTransitions`: choose the actual HR models, transport the maps
+   through their equivariant point comparisons, extend them and prove diagrams.
+5. `TorsionLevelExactness`: prove generic injectivity, surjectivity and exactness
+   from coefficient freeness; identify integral kernels/quotients using actual
+   flat models and rigidity, splitting again before exceeding the cap.
+6. `PadicOrderAlgebra`, `PadicOrderValuation`, `PadicOrderTopology`:
+   port normalization, DVR/residue facts and complete module topology from
+   three to arbitrary primes, retaining the original coefficient embedding.
+
+F03/F04 remain large missing theory: neither p-divisible object assembly nor
+p-adic comparison is supplied by these transition maps. F06 still requires
+reducible-residual family mathematics; F07–F15 remain as recorded in W22.
+A generic exact sequence alone does not assert integral faithful flatness.
+
+W23 refinement before assembly (each cap 150): reuse the existing
+`PrimePowerExact` coefficient maps rather than duplicating them. Split selected
+models and their comparisons into `TorsionModelComparisons`, generic conjugation
+and exactness into `TorsionGenericTransitions`, and arbitrary ordered reduction
+maps into `TorsionReductionTower` before `TorsionModelTransitions`. Split integral
+exactness into `RationalIntegralExactness` (rigidity/closure comparisons),
+`RationalIntegralQuotient` (faithfully flat prescribed quotients), and
+`TorsionLevelExactness` (the actual HR application).
+
+Split `RationalIntegralKernel` (cap 150) before the final HR endpoint: identify
+its *prescribed* quotient augmentation ideal with the contracted quotient's
+kernel ideal, via the proved surjective comparison. This distinguishes the
+actual scheme kernel from generic point exactness and from a new chosen model.
+
+Before the coefficient port, split inclusion coherence into
+`TorsionInclusionTower` (original tensor inclusion composition and both
+inclusion/reduction multiplication identities) and `TorsionIntegralInclusions`
+(the corresponding prescribed integral diagrams), each cap 150.
+
+F05 refinement: the norm on `FractionRing R` cannot infer p from its result
+type. `PadicOrderValuation` therefore constructs the spectral norm explicitly;
+`PadicOrderNormTopology` installs that norm on the integral order;
+`PadicOrderTopology` proves its compactness, completeness and module topology. Split `PadicOrderCanonicalTopology` (cap 150) to install the
+constructed norm and obtain the unconditional canonical topology package,
+and `PadicOrderHardlyRamified` (cap 150) to preserve HR and the original
+generic representation under this constructed normalization.
+
+Split `PadicOrderNormTopology` (cap 150) before the topology leaf: install
+the constructed spectral norm on the normalization, whose type retains p.
+Keep fraction-field topology statements under explicit local norm choices;
+an arbitrary second field structure on `FractionRing R` is not an assumption.
+
+Next bounded F05/F12 leaf: `PadicOrderStableLattice` (cap 150), preserving
+hardly ramifiedness on each supplied stable lattice in the constructed
+normalized generic fibre at an arbitrary odd prime. This does not supply
+compatible families, every-embedding members, or a p-adic comparison theorem.
+
+### W23 validation and remaining boundary
+
+Checked 2026-10-03T12:46:55.663289+00:00: all 19 new modules built individually with
+`LEAN_NUM_THREADS=2 lake build MODULE` and passed individual
+`lake exe runLinter MODULE` runs. The generated `W23_AXIOMS.lean` audit
+checked all 119 new named declarations: only propext, Classical.choice and
+Quot.sound. `python3 W23_FINAL_CHECKS.py` verifies line caps, source/object/log
+freshness, sorted imports, edit scope and unchanged `Family.lean`.
+The family theorem still depends on sorryAx; W23 does not close F03/F04 or
+construct a compatible family. Full local evidence and exact scope are in
+`FAMILY_W23_DONE.md`, kept untracked outside FLT as requested.
+
+## W24 next family gates (split before implementation)
+
+Each new module is capped at 150 complete source lines. Dependency order:
+
+1. F03 `PadicPowerCardinality`: calculate the size of the p-power quotient of
+   a finite free p-adic module, retaining the original module and scalar ring.
+2. F03 `TorsionLevelRank`: identify the rank of the actual chosen integral
+   model with its generic point count, and calculate its height from the
+   original coefficient degree and rank-two module.
+3. F03 `PDivisibleSystem`: define finite-flat p-divisible systems using
+   coherent closed inclusions, faithfully flat reductions, actual kernel
+   equations and multiplication identities, with the level-rank condition.
+   These are defining axioms of the object; the HR constructor must prove
+   every axiom from W23 and the cardinality calculation.
+4. F03 `TorsionPDivisible`: assemble the original HR models into that object.
+5. F05 universe transport: first establish bounded module-coordinate transport
+   into Type 0; then investigate coefficient-universe transport separately.
+   Split any coefficient equivalence/HR transport implementation before coding.
+6. F06: inspect reducible residual and p=3 endpoints for a bounded substantive
+   leaf. A trace identity alone never identifies a nonsplit representation
+   with the split member of a compatible family.
+
+F04 period rings and p-adic comparison remain large missing theory; no ready
+bounded leaf is currently supplied. The compatible-family admission stays
+outside the permitted edit scope and is not discharged by object assembly.
+
+W24 kernel refinement (before object assembly, cap 150):
+`IntegralKernelEquations` identifies the kernel of a prescribed closed
+inclusion on coordinate rings with its generic closure ideal. The system's
+exactness field will then use the actual inclusion kernel, not merely an
+abstract isomorphism with a level of the same rank.
+
+W24 F05 coefficient-universe refinement (each cap 150, before implementation):
+`FiniteFlatQuotientUniverses` transports the existing finite-flat quotient
+construction across finite shrunk point modules. `FiniteCoefficientUniverses`
+then preserves flatness for finite coefficient algebras of any universe.
+`OpenPowerUniverses` handles all open ideals, `BaseChangeUniverses` handles
+the other HR clauses, and `PadicOrderUniverses` applies these to the original
+normalization. This avoids replacing the original coefficient ring by an
+unidentified isomorphic copy. Module-coordinate transport is unnecessary if
+these primitives accept the original module universe directly.
+
+W24 F06 bounded residual refinement (each cap 150):
+`TrivialQuotientKernel` computes the invariant kernel rank and determinant
+for an actual rank-two representation with a surjective trivial quotient.
+`ModThreeFiltration` applies the proved sorting quotient and cyclotomic
+determinant to the original residual representation. These retain extensions;
+they do not claim a split family member or p=3 family existence.
+
+W24 F05 stable-lattice refinement (before implementation, caps 150 each):
+`FiniteFlatSubobjectUniverses` transports the existing subobject construction
+through finite shrunk point modules. `SubquotientUniverses` combines it with
+quotients; `LatticeFlatUniverses` applies it to commensurate original lattices.
+`LatticeTransferUniverses` handles determinant, inertia and the existing tame
+quotient transport. `InitialLatticeUniverses` supplies the original integral
+lattice and the HR transfer endpoint. `PadicStableUniverses` specializes to
+the constructed normalization, retaining independent coefficient/module universes.
+
+### W24 validation and remaining boundary
+
+Checked 2026-10-03T13:23:48.054619+00:00: 18 new modules pass individual foreground
+builds and individual module linters. `W24_AXIOMS.lean` checks all 35 new
+named declarations with only propext, Classical.choice and Quot.sound.
+`W24_FINAL_CHECKS.py` checks caps (maximum 111/150), source/object/log
+freshness, import order, edit scope and unchanged `Family.lean`.
+
+F03 now has an actual finite-flat p-divisible system over the rational local
+base, with rank `p^(n * (finrank ℤ_[p] R * 2))` and actual inclusion-kernel
+equations. Its constructor remains at Type 0; fppf colimits are not supplied.
+F05 normalization, generic identification and supplied stable lattices now
+retain arbitrary original coefficient and module universes. F06 supplies the
+actual mod-three cyclotomic-by-trivial filtration, without a split complement.
+F04 period rings and p-adic comparison remain large missing theory; general
+reducible-residual and p=3 compatible-family existence also remain.
+The family admission is not discharged. `FAMILY_W24_DONE.md` is the full
+untracked handoff; no push is performed.
