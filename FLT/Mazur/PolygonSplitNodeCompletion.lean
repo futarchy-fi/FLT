@@ -42,7 +42,8 @@ theorem evaluation_ideal :
       aPresent.toRingHom := by
     apply RingHom.ext
     intro p
-    simp [aQuotientEquiv]
+    simp only [RingEquiv.toRingHom_eq_coe, AlgEquiv.toRingEquiv_toRingHom,
+      RingHom.coe_comp, RingHom.coe_coe, Function.comp_apply, AlgHom.toRingHom_eq_coe]
     exact Ideal.quotientKerAlgEquivOfSurjective_mk aPresent_surjective p
   rw [h]
   exact (PowerSeriesQuotientCompletion.map_idealOfVars aPresent aEval

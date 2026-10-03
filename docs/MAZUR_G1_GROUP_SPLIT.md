@@ -1745,3 +1745,60 @@ isomorphism induced by `aQuotientEquiv` prove the first node-model
 isomorphism from the W22 handoff. `PolygonNodeCompletionCriterion.split_node`
 then proves `AtWorstNodes (aToBase K)`. This is an unconditional split-node
 chart theorem over every field; the one-gon and geometric comparison remain.
+
+H15g11 `PowerSeriesSubstitutionEquiv` has a cap of 200 lines after the complete
+`W23_SUBSTITUTION_EQUIV_PROOF.lean` compiled. Mutually inverse substitutions
+on variables give inverse algebra homomorphisms by substitution associativity.
+This constructs a triangular shear, an invertible substitution in the first
+coordinate, and subtraction of the second coordinate from the first.
+
+H15g12 `OneGonFormalCoordinates` has a cap of 120 lines after
+`W23_ONEGON_FORMAL_PROOF.lean` compiled. The compositional inverse `t(u)` of
+`t²-t` has zero constant coefficient and satisfies `t²-t=u`. Shifting `v`
+by `u*t(u)` changes the cubic to `v*(v+g(u))`, where `g=u*(2*t-1)` has unit
+linear coefficient `-1`. Substitution by the inverse of `g`, then a linear
+change, gives `xy`. No division by two or characteristic restriction is used.
+
+H15g13 `PolygonOneGonCompletion` has a cap of 130 lines after
+`W23_ONEGON_COMPLETION_PROOF.lean` compiled. The cubic presentation preserves
+evaluation, so H15g9 computes its actual completion at `ker bEval`. H15g12
+carries the relation ideal to `(xy)`. This proves the second W22 node-model
+isomorphism and `AtWorstNodes (bToBase K)` over every field.
+
+H15g14 `CurveNodeOpenCover` has a cap of 90 lines after
+`W23_NODES_OPEN_COVER_PROOF.lean` compiled. A closed point lifts to a closed
+point of an open chart by injectivity and continuity. Smoothness and the
+completed-stalk node condition transport through that chart. Covering
+surjectivity gives the global closed-point condition.
+
+H15g15 `PolygonNodalCore` has a cap of 120 lines after
+`W23_POLYGON_NODAL_CORE_PROOF.lean` compiled. The cyclic node-chart cover and
+one-gon node/torus cover prove the atlas nodal condition. Transport through
+the specified cocone isomorphism, followed by W22's connectedness,
+reducedness and pure-dimension results, gives an unconditional
+`NodalFiberCore C.hom`. Geometric H15 still requires the field-extension
+comparison; this theorem alone does not supply it.
+
+H15h1 `ProjectiveLineFieldExtension` has a cap of 140 lines after
+`W23_PROJECTIVE_BASECHANGE_PROOF.lean` and the module compiled. The two affine
+charts and their Laurent overlap identify the actual base-changed projective
+line with the projective line over the extension field. Both specified
+endpoint sections commute with this isomorphism.
+
+H15h2 `OverPullbackCoproduct` has a cap of 80 lines after its complete prototype
+and module compiled. Universal finite coproducts of schemes show that actual
+pullback in the over category preserves these coproducts, with the specified
+inclusion equations.
+
+H15h3 `PolygonFieldExtension` has a cap of 140 lines after
+`W23_POLYGON_FIELD_EXTENSION_PROOF.lean` compiled. H15h1 and H15h2 identify
+all three objects and both arrows of the pinching span. Affine base-change
+preservation of its pushout gives the specified polygon cocone over the new
+field, including for any chosen pullback square.
+
+H15h4 `PolygonGeometricGenus` has a cap of 70 lines after
+`W23_GEOMETRIC_GENUS_PROOF.lean` compiled. On the cocone supplied by H15h3,
+H15g15 gives the nodal core, and the constant-sections and actual cohomology
+results give genus one. This proves `NodalGenusOneGeometricFibers` for every
+specified positive polygon. It is the necessary geometric genus-one contract;
+it does not assert a general stable-curve classification or modular-curve construction.
