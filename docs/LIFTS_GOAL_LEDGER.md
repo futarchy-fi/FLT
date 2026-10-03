@@ -4,7 +4,208 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
-## W22 acceptance — 2026-10-03T07:40:35.747894+00:00
+## W24 acceptance — 2026-10-03T09:27:54.417110+00:00
+
+Checked 2026-10-03T09:27:54.417110+00:00; branch `task/goal-lifts-w24`; base `f3b2fd00`.
+Read-only evidence check: `python3 Scratch/LiftsW24/check.py` (PASS).
+
+**Partial completion: inflation is now proved injective, not bijective.**
+R01's image-kernel exactness, the ramified relative-order theorem, change-of-base
+restriction, corestriction, and fundamental-class comparisons remain unproved.
+E1c7/E1d and the final lifting admission have not been removed.
+
+Twenty new modules contain **1,423 Lean lines and 77 named declarations**.
+Every module is at most 200 lines. All proof commits are local; nothing pushed.
+
+## Proved scope
+
+1. Closed normal invariant field units are identified equivariantly with the
+   units of the fixed field. Every open normal invariant stage has zero H1 by
+   finite Hilbert 90; the existing cohomology colimit proves continuous Hilbert
+   90 for arbitrary Galois extensions, with an actual unit coboundary witness.
+2. Normalization and Hilbert 90 correct an inflated bounding cochain so it
+   vanishes on the restriction kernel. It is then constant on quotient fibers
+   and invariant-valued, and descends continuously. This proves injectivity of
+   the actual categorical H2 map, rather than merely cochain injectivity.
+   Krull-topology continuity and the concrete invariant-coefficient and kernel
+   comparisons discharge every premise in the Galois specialization.
+3. `unramifiedMultiplicativeInflationH2_injective` applies directly to the W23
+   morphism. Its composition with inverse unramified coordinates embeds Q/Z
+   into absolute multiplicative H2. The actual inflated uniformizer carry has
+   exact annihilator nZ. This is not the relative lower bound of Milne III.2.2
+   and does not assert that the absolute embedding is surjective.
+4. Clearing a base-field denominator gives an integral-valued normal K-basis.
+   Its R-span is a finite free Galois-stable submodule of the integral closure.
+   Inverse-indexed coordinates identify its actual action with coinduction
+   from the trivial subgroup. Shapiro proves positive additive cohomology
+   vanishing over both R and Z. This is a constructed lattice, not a claim
+   that the entire integral closure has a normal integral basis. Openness and
+   a corresponding multiplicative unit subgroup remain unproved.
+5. Kernel-image counting proves equal even/odd homology orders for a finite
+   periodic module. The actual cyclic comparison gives the finite-module
+   Herbrand quotient one, including a proof of finiteness. A separate generic
+   exact-sequence theorem proves finiteness and the product cardinal bound
+   needed for relative-order induction; no arithmetic exact sequence is assumed
+   to exist or instantiated without proof.
+
+| Item | Module under FLT.LocalClassFieldTheory | Lines/cap | Commit |
+|---|---|---|---|
+| R01a — fixed-field unit comparison | FieldUnitInvariants | 100/200 | `0b076f6e` |
+| R01a — continuous Hilbert 90 | ContinuousHilbert90 | 80/200 | `0b076f6e` |
+| R01a — normalized two-cocycles | NormalizedTwoCocycles | 66/200 | `0b076f6e` |
+| R01a — continuous boundary descent | InflationBoundaryDescent | 94/200 | `0b076f6e` |
+| R01a — kernel correction | InflationKernelCorrection | 72/200 | `0b076f6e` |
+| R01a — Galois kernel topology | GaloisKernelTopology | 94/200 | `70b327bf` |
+| R01a — arbitrary boundary descent | ContinuousInflationBoundary | 53/200 | `70b327bf` |
+| R01a — actual H2 injectivity | ContinuousInflationH2 | 76/200 | `70b327bf` |
+| R01a — arithmetic coefficient inclusion | GaloisInflationCoefficients | 69/200 | `70b327bf` |
+| R01a — Galois inflation injectivity | GaloisInflationH2 | 51/200 | `70b327bf` |
+| R06 injection — W23 specialization | UnramifiedInflationInjective | 39/200 | `70b327bf` |
+| R04a — finite periodic homology counting | FiniteHomologyCard | 90/200 | `27fc8a93` |
+| R04a — finite-module Herbrand quotient | FiniteCyclicHerbrand | 69/200 | `27fc8a93` |
+| R05 helper — exact-sequence cardinal bound | ExactSequenceCardBound | 45/200 | `27fc8a93` |
+| R02 prerequisite — absolute carries | UnramifiedInflatedCarries | 71/200 | `27fc8a93` |
+| R03a — denominator-cleared normal basis | IntegralNormalBasis | 68/200 | `7c0a8f48` |
+| R03a — integral normal lattice | IntegralNormalLattice | 66/200 | `7c0a8f48` |
+| R03a — equivariant coinduced comparison | IntegralNormalLatticeAction | 114/200 | `7c0a8f48` |
+| R03a — additive acyclicity over R | IntegralNormalLatticeCohomology | 47/200 | `7c0a8f48` |
+| R03a — additive acyclicity over Z | IntegralNormalLatticeIntCohomology | 59/200 | `7c0a8f48` |
+
+## Validation
+
+Every new module M passed separately in the foreground with `LEAN_NUM_THREADS=2`:
+`lake build FLT.LocalClassFieldTheory.M`,
+`lake exe runLinter FLT.LocalClassFieldTheory.M`, and
+`lake env lean Scratch/LiftsW24/MAxioms.lean`.
+All 77 named declarations were audited; their axiom sets are subsets of
+`{propext, Classical.choice, Quot.sound}`. No whole-library lint was run.
+Evidence: `Scratch/LiftsW24/M-{build,lint,axioms}.log`.
+
+`LEAN_NUM_THREADS=2 lake env lean Scratch/LiftsW24/Integration.lean` checks all
+20 new modules together. The final endpoint audit is
+`LEAN_NUM_THREADS=2 lake env lean Scratch/LiftsW24/FinalAxioms.lean`.
+Evidence: `Scratch/LiftsW24/Integration.log` and `Final-axioms.log`.
+
+`python3 Scratch/LiftsW24/check.py` verifies saved validation evidence, source
+caps, declaration audit coverage, allowed axiom sets, sorted imports, allowed
+paths, new-file-only Lean changes, clean tracked state, and final FLT axioms.
+It reads saved logs; it does not rerun Lean. Fresh validation can be repeated
+with `python3 Scratch/LiftsW24/validate.py M ...`, sequentially.
+
+Both combined Lean checks exited 0. The fresh final audit reports:
+
+- `GaloisRepresentation.IsHardlyRamified.lifts` and `FLT.Assembly.hardlyRamifiedLifting`:
+  `[propext, sorryAx, Classical.choice, Quot.sound]`.
+- `PNat.pow_add_pow_ne_pow`:
+  `[Mazur_statement, propext, sorryAx, Classical.choice, Quot.sound]`.
+- All audited new endpoints use only the three standard axioms.
+
+Remaining R01–R06/I02–I03 contracts and their dependencies are in the W24
+split in `LOCAL_CFT_FOUNDATIONS.md`; the complete handoff is
+`LIFTS_W24_RESULT.md` (untracked). No whole gate R01–R06 is marked complete.
+
+## W23 acceptance — 2026-10-03T08:37:58.585982+00:00
+
+Checked 2026-10-03T08:37:58.585982+00:00; branch `task/goal-lifts-w23`; base `3b918b73`.
+**E1c7/E1d remain blocked; the final FLT theorem still depends on sorryAx.**
+
+19 new modules; **1421 Lean lines, 90 named declarations**. Every module is at most
+200 lines. All changes are local commits; nothing pushed.
+
+| Item | Module under FLT.LocalClassFieldTheory | Lines/cap | Commit |
+|---|---|---|---|
+| 1a — discrete integral-unit action | DiscreteIntegralUnits | 72/200 | `7b8868fa` |
+| 1b — integral-unit descent | IntegralUnitDescent | 92/200 | `7b8868fa` |
+| 1c — equivariant invariant coefficients | IntegralUnitInvariants | 87/200 | `7b8868fa` |
+| 1d — invariant cohomology comparison | IntegralUnitInvariantCohomology | 46/200 | `7b8868fa` |
+| 1e — cofinal open stages | UnramifiedOpenStages | 54/200 | `7b8868fa` |
+| 1f — continuous unit acyclicity | UnramifiedContinuousUnits | 81/200 | `7b8868fa` |
+| 2a — canonical tower-order compatibility | UnramifiedStageOrderMaps | 62/200 | `7cf81581` |
+| 2b — finite representatives of field units | UnramifiedUnionUnits | 60/200 | `7cf81581` |
+| 2c — union order homomorphism | UnramifiedUnionOrder | 84/200 | `7cf81581` |
+| 2d — discrete field-unit action | DiscreteFieldUnits | 65/200 | `06f226b9` |
+| 2e — actual integral-unit kernel | UnramifiedUnionOrderExact | 68/200 | `06f226b9` |
+| 2f — equivariant order coefficients | UnramifiedUnionOrderMap | 75/200 | `06f226b9` |
+| 2g — short exact continuous sequence | UnramifiedContinuousOrderSequence | 80/200 | `06f226b9` |
+| 2h — positive continuous order isomorphism | UnramifiedContinuousOrderH2 | 71/200 | `06f226b9` |
+| 2i — uniformizer-power section | UnramifiedOrderSection | 96/200 | `ed103f10` |
+| 2j — multiplicative Q/Z invariant and carry | UnramifiedMultiplicativeInvariant | 91/200 | `ed103f10` |
+| 2k — finite-stage inflation square | UnramifiedOrderInflation | 92/200 | `ed103f10` |
+| 2l — ordinary subgroup restriction square | UnramifiedOrderRestriction | 68/200 | `fb5e079a` |
+| 3a — separable-closure inflation map | UnramifiedMultiplicativeInflation | 77/200 | `ed103f10` |
+
+1. The actual canonical integral units have a discrete continuous Galois action.
+   Inclusion identifies units of an intermediate field with invariants under its
+   fixing subgroup, including the quotient action. The induced cohomology
+   isomorphism connects W22's canonical stages to `invariantStageCohomologyDiagram`.
+   Constructed open stages are cofinal. W22's unit vanishing and
+   `continuousCohomologyColimitIso` prove all positive continuous unit cohomology zero.
+2. `discreteOrder_unramified_tower` gives compatibility on canonical stage inclusions.
+   Every field unit of the union has a finite representative; compatible orders
+   define an actual surjective, Galois-invariant order homomorphism. Its kernel
+   is exactly the integral units. The short exact continuous cochain sequence and
+   proved acyclicity make order an isomorphism on every positive cohomology group.
+3. The continuous H2 order isomorphism composes with W21's additive Frobenius
+   coordinates to give `unramifiedMultiplicativeInvariant : H²(G, Uˣ) ≃+ Q/Z`.
+   Integer powers of a base uniformizer are an equivariant section, and the
+   coefficient image of the actual integral carry has coordinate **+1/n**.
+   The cochain evaluation theorem explicitly gives the uniformizer raised to
+   each integer cochain value; this is not a normalization assumed of an abstract class.
+4. The actual finite-stage inflation maps commute with order on cochains and
+   cohomology. Ordinary subgroup restriction also commutes with order, with the
+   same coefficient normalization. The continuous order map commutes with the
+   invariant-stage colimit comparison.
+5. `unramifiedMultiplicativeInflation` constructs the actual cohomology map from
+   the unramified union to the separable closure using continuous Galois
+   restriction and coefficient inclusion. Its invariant-stage colimit square is
+   proved. Its bijectivity is not claimed.
+
+Each new module M passed separately, with `LEAN_NUM_THREADS=2`, in the foreground:
+`lake build FLT.LocalClassFieldTheory.M`,
+`lake exe runLinter FLT.LocalClassFieldTheory.M`, and
+`lake env lean Scratch/LiftsW23/MAxioms.lean`.
+No whole-library lint was run. All named declarations, including instances and
+proof abbreviations, use only `propext`, `Classical.choice`, `Quot.sound`, or no axioms.
+Logs: `Scratch/LiftsW23/M-{build,lint,axioms}.log`.
+
+`LEAN_NUM_THREADS=2 lake env lean Scratch/LiftsW23/Integration.lean` checks all
+19 new modules imported together; evidence: `Scratch/LiftsW23/Integration.log`.
+The final audit command is `LEAN_NUM_THREADS=2 lake env lean Scratch/LiftsW23/FinalAxioms.lean`;
+evidence: `Scratch/LiftsW23/Final-axioms.log`. Both exited 0.
+
+- `GaloisRepresentation.IsHardlyRamified.lifts` and `FLT.Assembly.hardlyRamifiedLifting`:
+  `[propext, sorryAx, Classical.choice, Quot.sound]`.
+- `PNat.pow_add_pow_ne_pow`:
+  `[Mazur_statement, propext, sorryAx, Classical.choice, Quot.sound]`.
+- The new continuous acyclicity, order-H2 isomorphism, multiplicative invariant,
+  carry normalization and separable-closure inflation map use only standard axioms.
+
+`python3 Scratch/LiftsW23/check.py` rechecks saved evidence: caps, audit coverage,
+allowed axiom sets, fresh accepted logs, new-file-only Lean changes, sorted imports,
+allowed paths, clean tracked state and the final FLT axiom set. It does not rerun Lean.
+Fresh Lean validation can be repeated with `python3 Scratch/LiftsW23/validate.py M ...`.
+
+### W23 remaining work
+
+1. Prove the separable-closure inflation map bijective. The map now exists,
+   but the continuous H2 inflation-restriction/Hilbert-90 bridge and ramified
+   finite relative-order argument (Milne III.2; R01–R06) remain unproved.
+   A cochain injection is not an injection on H2. Do not promote the constructed
+   inflation morphism to an isomorphism by adding a hypothesis or record field.
+2. Prove the arithmetic change-of-base-field restriction formula multiplying
+   Q/Z coordinates by the extension degree, and the corestriction/fundamental-class
+   comparisons. The subgroup restriction square proved here keeps the same
+   coefficient order; it does not establish the change-of-base normalization formula.
+3. Class formation and Kummer–Artin evaluation remain unproved. W14's cup-order
+   minus sign is unchanged. Serre-weight evaluation and arbitrary-p Raynaud
+   classification remain independently blocked; neither was dispatched.
+
+API evidence: `Scratch/LiftsW23/remaining-api-check.log`; source boundaries:
+R01–R06 and I02/I03 in `docs/LOCAL_CFT_FOUNDATIONS.md`. The new modules concern
+ordinary continuous positive-degree cohomology, not arbitrary principal-unit
+subgroup acyclicity or a full local reciprocity theorem.
+
+## W22 historical acceptance — 2026-10-03T07:40:35.747894+00:00
 
 Checked 2026-10-03T07:40:35.747894+00:00, branch `task/goal-lifts-w22`, base `c2adcddb`.
 **E1c7/E1d remain blocked. Finite-stage arithmetic and the order-H2 comparison

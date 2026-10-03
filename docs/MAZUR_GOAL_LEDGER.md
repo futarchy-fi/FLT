@@ -1,5 +1,59 @@
 # Mazur input to positive-natural FLT
 
+## W24 gate audit — polygon geometry is available, arithmetic is not
+
+W24 implementation checked at 2026-10-03 11:40 UTC, commit `88312e67`:
+C1–C4 in [MAZUR_G1G2_SPLIT](MAZUR_G1G2_SPLIT.md#completed-release) are complete
+(248 lines across four new modules). Polygons now construct the existing
+classified genus-one family contract; actual smooth marked sections yield
+a finite flat relative Cartier divisor meeting every irreducible component.
+All four foreground builds and individual linters passed; all 20 originating
+declarations have only the three standard axioms, and concrete one-gon,
+two-gon/characteristic-two and arbitrary-base-change examples compiled.
+Rank, cyclic subgroup structure, ampleness and moduli remain unproved.
+The gate table below describes the audit at dispatch; these four leaves
+are its only new completed producers.
+
+Checked at 2026-10-03 11:25 UTC. GitHub main was
+`f3240f4bebb0d370e308071e153734b6dc6355d6` (`gh api
+repos/futarchy-fi/FLT/commits/main --jq .sha`). This worktree starts at
+`17dcaf85`, which contains that main plus W22/W23. `git diff --stat
+origin/main..17dcaf85 -- FLT/Mazur` reports 35 additional geometry modules,
+2802 lines. Thus completed geometry on this branch is **not all on main**.
+The W23 handoff's build/axiom results are prior validation, not a fresh audit
+of those 35 modules. No upstream merge or push is authorized here.
+
+| Gate | Available evidence / remaining producer |
+| --- | --- |
+| G5, U-series, H-series | Complete on this branch: actual smooth group/action, geometric rotations, properness, nodal completed stalks and geometric genus one. `PolygonGeometricGenus`, `PolygonGeometricTranslations`, `PolygonActionSmooth` are concrete endpoints. Merge W22/W23 before relying on them on main. |
+| G1 generalized curves | `ClassifiedGenusOneFamily` is an existing family predicate; the polygon-to-family constructor is ready. A general relative generalized-elliptic-curve object, compatible morphisms and pullback with group action/graph condition still need assembly. |
+| G1 level structures | Relative Cartier sums, section-sum finiteness and constant-degree transport exist. Ready next: construct smooth section divisors on actual polygons, with support meeting every component. Still missing: finite locally free subgroup of rank p, multiplication/inversion restriction, cyclicity as a divisor, compatibility with arbitrary base change, and comparison with line-bundle ampleness. A list of geometric points is not that subgroup. |
+| G1 moduli / compactification | Missing: moduli presheaf/stack, coarse universal property and geometric-point theorem, compactified integral X0(p), cusp charts/descent and disjoint integral cusp sections. These are large theory gates. No universal family over the coarse curve may be assumed. |
+| G1 cusp specialization | Missing: actual Néron-model reduction of E and its rational point, integral extension of the moduli point, cusp orientation versus identity component (including nonsplit descent). Abstract sections and `CuspCollision` do not construct these. |
+| G2 quotient | Missing: modular Jacobian, auxiliary-level Hecke correspondences, Hecke algebra, Eisenstein ideal, quotient by images of the **completion kernel** gamma_I, integral Abel–Jacobi projection and nonzero cusp image. Quotient by I itself is the wrong construction. |
+| G2 arithmetic finiteness | Missing: general-prime finite-flat/Galois cohomology and descent, Mordell–Weil/rank-zero argument, and rational finiteness of the actual quotient. `GenericFibers.g2CurveFinite` is a proved conditional consumer of geometry, separatedness, `G2Cusps` and `G2Finite`; do not reprove it. |
+| A1 | Missing general-E semistability from rational p-torsion, component facts at 2,3,p, finite-flat rigidity at p and formal-group bounds. Specialized Frey/Tate results are not this endpoint. |
+| A2 | Missing odd-prime specialization injectivity including residue-characteristic-primary torsion, then G1/G2 cusp argument at every bad prime. Conditional `CuspCollision` is available. |
+| A3 | Missing actual cyclotomic torsion-field extension, inverse-cyclotomic conjugation and local unramifiedness at every place, using A1/A2 and Weil pairing/local theory. |
+| A4 | Missing the sourced Herbrand weight-two/class-field comparison and triviality of that unramified extension; B2=1/6 alone is not the proof. |
+| A5 | Missing geometric quotient/dual isogenies retaining a rational generator, no backtracking and cyclic composites, finite fibers of rational-generator pairs over coarse rational points (twists!), then the iteration contradiction. |
+| Final assembly | `NoLargePrimeTorsion` is a definition, without an unconditional proof. The adapter `mazurTorsionExclusion_of_noLargePrimeTorsion` exists. Prove its input, rewire `ExistingInputs`, rebuild the final theorem and check its axioms. Rewiring existing Lean files is outside this task's edit scope. |
+
+Read-only source check: `rg -n 'Mazur_statement|mazur_W'
+FLT/Assumptions/Mazur.lean FLT/Assembly/ExistingInputs.lean` still gives
+lines 103 and 28. `FermatsLastTheorem.lean:24` still passes that adapter.
+`rg -n 'noLargePrimeTorsion|G2Finite|G2Cusps' FLT/Mazur
+FLT/MazurWOfPrimeTorsion.lean` finds definitions and conditional consumers,
+not arithmetic producers. This is a source audit; no newly rebuilt
+`PNat.pow_add_pow_ne_pow` axiom audit is claimed. Its other admissions are
+outside the Mazur goal.
+
+The next release and its <=240-line leaves are in
+[MAZUR_G1G2_SPLIT](MAZUR_G1G2_SPLIT.md). Historical queues below are retained
+as provenance, **not** current dispatch instructions or proof-size estimates.
+Sources and retained arithmetic hypotheses remain those in
+[MAZUR_CONTRACTS](MAZUR_CONTRACTS.md) and [MAZUR_PLAN](MAZUR_PLAN.md).
+
 ## W15 frontier (supersedes W14 below)
 
 Checked 2026-10-03 02:58 UTC at local implementation head `07a99bd9`, base
