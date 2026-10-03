@@ -96,7 +96,8 @@ S03 (`FLT/GaloisRepresentation/Extensions/ContinuousCupSwap`). `Hc`, `Hd`,
 not invented existing Lean identifiers. Every `≃+` must be constructed with
 its stated computation rule proved. All rows have cap 200.
 
-Only S01–S03 are certified ready in this wave. Other rows are BLOCKED on
+S01–S03 and, after the refinement below, V01–V02 are certified ready in this wave.
+Other rows are BLOCKED on
 the dependencies listed and/or the named unresolved implementation bridge.
 Absence of a dependency edge does not certify API readiness. No general
 class-field theorem is counted as completed by proving an abstract adapter.
@@ -106,8 +107,8 @@ class-field theorem is counted as completed by proving an abstract adapter.
 | S01 / RationalTorsion | `zmodToRatCircle : ZMod n →+ AddCircle (1:ℚ)`; `map_intCast`, injectivity, range = `{x | n • x = 0}`. Descend `z ↦ z/n`; clear denominators. | READY: `ZMod.lift`, quotient group, rational arithmetic |
 | S02 / CyclicCarry | `carry : ZMod n → ZMod n → ℤ`; `carry_cast = j.val/n - (i+j).val/n + i.val/n`; cocycle equation and zero normalization. | READY after S01; `ZMod.val_add`, arithmetic |
 | S03 / ContinuousCupSwap | Construct opposite continuous cup and `b(g)=d(g) • c(g)`; prove `db=-(cup+opposite)`, and equivalence of coboundary conditions. | READY: W14/E1b continuous cochains |
-| V01 / NormalizedOrder | `ord : Kˣ →* Multiplicative ℤ`; surjectivity, kernel = valuation-ring units; uniformizer has order +1. | BLOCKED implementation bridge: negate exponent in `valueGroupWithZeroIsoInt`, connect to `ValuationSubring` used by Kummer |
-| V02 / PowerClassOrder | `PowerClass K p →* Multiplicative (ZMod p)` with representative formula and kernel = `unitClasses A p`. | V01; existing `isUnitClass_iff_valuation` |
+| V01 / NormalizedOrder | `ord : Kˣ →* Multiplicative ℤ`; surjectivity, kernel = valuation-ring units; a chosen element has order +1. | READY after API refinement below |
+| V02 / PowerClassOrder | `PowerClass K n →* Multiplicative (ZMod n)` with representative formula and kernel = `unitClasses A n`. | READY after V01; existing `isUnitClass_iff` |
 | U01 / ResidueExtension | finite unramified L/K: construct `Gal(L/K) ≃* Gal(l/k)` from reduction; prove bijectivity. | BLOCKED: finite étale/residue equivalence and lifting automorphisms must be source-matched, not assumed |
 | U02 / Frobenius | finite unramified L/K: construct `Frob`, prove residue q-power formula and generator property. | U01; finite-field Galois API |
 | U03 / UnramifiedTower | compatible Frobenius elements and residue degrees in towers; construct finite unramified extensions of each degree. | U01/U02; BLOCKED existence/lifting polynomial bridge |
@@ -155,6 +156,30 @@ they have names and caps. Their named bridges must be decomposed further
 against concrete APIs before dispatch. This prevents a fake 200-line wrapper
 from silently assuming local CFT. S01–S03 are bounded implementation leaves
 that can be validated now. E1c7, E1d1 and E1d2 remain BLOCKED.
+
+### V01–V02 refinement (before implementation)
+
+No new arithmetic hypothesis is required: take `A = (valuation K).valuationSubring`
+for an actual `IsNonarchimedeanLocalField K`. Mathlib provides both
+`valueGroupWithZeroIsoInt K` and `valuation_surjective`. Set
+`ord(u) = -WithZero.log (valueGroupWithZeroIsoInt K (valuation K u))`.
+The minus sign converts Mathlib's multiplicative uniformizer value exp(-1)
+to classical order +1. `Valuation.mem_unitGroup_iff` and
+`ValuationSubring.unitGroupMulEquiv` identify its zero kernel with the actual
+valuation-ring units, without assuming that kernel in a record.
+
+V01 constructs the homomorphism, proves surjectivity and its unit kernel,
+and chooses an order-one element by surjectivity (cap 200).
+V02 reduces ord modulo n, descends through `powerClassMap`, and proves its
+kernel equals the already-defined `unitClasses`. For the reverse inclusion,
+write ord(q)=n*m, choose b with ord(b)=m, and turn q/b^n into an actual
+valuation-ring unit by V01. This works for arbitrary positive n, not just
+prime n (cap 200). These are valuation facts, not Artin or Tate theorems.
+
+The ramified-invariant route R03–R06 is restricted to characteristic zero,
+as is Milne's proof of III.2.4 using exp/log. This suffices for the p-adic
+application. An equal-characteristic version would need additional sources
+and proofs; no such generality is asserted here.
 
 ## Acceptance checks
 
