@@ -794,6 +794,7 @@ public import FLT.KnownIn1980s.Ribet_Lemma.Defs
 public import FLT.KnownIn1980s.Ribet_Lemma.Proofs
 public import FLT.LocalClassFieldTheory.CyclicCarry
 public import FLT.LocalClassFieldTheory.Frobenius
+public import FLT.LocalClassFieldTheory.FrobeniusTower
 public import FLT.LocalClassFieldTheory.NormalizedOrder
 public import FLT.LocalClassFieldTheory.PowerClassOrder
 public import FLT.LocalClassFieldTheory.RationalTorsion
