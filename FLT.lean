@@ -1092,6 +1092,7 @@ public import FLT.LocalClassFieldTheory.CyclicPeriodicExact
 public import FLT.LocalClassFieldTheory.CyclicPeriodicHomology
 public import FLT.LocalClassFieldTheory.CyclicRelativeOrder
 public import FLT.LocalClassFieldTheory.CyclicSixTermSequence
+public import FLT.LocalClassFieldTheory.CyclicTateVanishing
 public import FLT.LocalClassFieldTheory.DescendedCochain
 public import FLT.LocalClassFieldTheory.DiscreteFieldUnits
 public import FLT.LocalClassFieldTheory.DiscreteIntegralUnits
@@ -1219,6 +1220,7 @@ public import FLT.LocalClassFieldTheory.RationalIntegralConnectingIso
 public import FLT.LocalClassFieldTheory.RationalTorsion
 public import FLT.LocalClassFieldTheory.RationalUnramifiedCharacters
 public import FLT.LocalClassFieldTheory.RelativeDegreeTorsionClass
+public import FLT.LocalClassFieldTheory.RelativeFundamentalCyclicSubgroup
 public import FLT.LocalClassFieldTheory.RelativeFundamentalExtension
 public import FLT.LocalClassFieldTheory.RelativeFundamentalExtensionRestriction
 public import FLT.LocalClassFieldTheory.RelativeFundamentalInflation
@@ -1252,6 +1254,7 @@ public import FLT.LocalClassFieldTheory.TateCupComparison
 public import FLT.LocalClassFieldTheory.TateCupUnit
 public import FLT.LocalClassFieldTheory.TateExactSequence
 public import FLT.LocalClassFieldTheory.TateGroupEquivalence
+public import FLT.LocalClassFieldTheory.TateNormVanishing
 public import FLT.LocalClassFieldTheory.TatePositiveCocycleClass
 public import FLT.LocalClassFieldTheory.TateScalarDegreeZero
 public import FLT.LocalClassFieldTheory.TateScalarVanishing
