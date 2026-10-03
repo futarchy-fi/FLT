@@ -938,3 +938,52 @@ No action or Mazur removal is claimed. Checked source evidence still shows
 axiom audit of `PNat.pow_add_pow_ne_pow`. Full G1 moduli, G2 arithmetic and the
 remaining assembly work are also unproved; existing-consumer edits remain
 outside the new-module-only authorization.
+
+
+## W18 checked transport design
+
+`W18_TRANSPORT_PROOF.lean` and `W18_PUSHOUT_PROOF.lean` compile in full
+before release (2026-10-03). U6e1 `PinchingPullbackTransport` has cap 140:
+compare parameter-first products with `Over.pullback` using pullback symmetry
+and functorial isomorphisms; pull a cocone equation back to both branch sections;
+prove the node leg split epic after any base change. A general categorical
+criterion then reduces the pushout universal property to unique normalization
+descent. No preservation of a pinching pushout is assumed.
+
+`W18_CYCLIC_TRANSPORT_PROOF.lean` compiles in full before release.
+U6e2 `CyclicPinchingProduct` has cap 160. The coproduct comparison and
+pullback symmetry identify normalization and each endpoint. Apply W17 global
+descent to the transported cocone, use `desc_toBase` for the over-morphism,
+and invoke U6e1's split-leg criterion. The conclusion is the specified
+`Over.pullback` pushout for every coefficient algebra and every n ≥ 2.
+
+`W18_ONEGON_TRANSPORT_PROOF.lean` compiles in full before release.
+U6e3 `OneGonPinchingProduct` has cap 150. The singleton coproduct comparison
+identifies the normalization and its zero/infinity sections. W17 one-gon
+descent supplies the over-morphism, and U6e1 supplies the node factorization.
+This proves the specified affine-parameter pushout also for n = 1.
+
+`W18_AFFINE_PROOF.lean` compiles in full before release. U6e4
+`PolygonPinchingAffineBaseChange` has cap 130. Combine n = 1 and n ≥ 2 using
+the atlas isomorphisms, then use `polygonIso` for an arbitrary supplied cocone.
+For any map from `Spec S`, recover its algebra using `Spec.preimage`; for
+an arbitrary affine scheme, reflect the pushout along pullback by `isoSpec.inv`,
+an equivalence, and transport through `Over.pullbackComp`. This proves U6
+for every affine scheme base, including nonreduced coefficient rings.
+
+`W18_LOCALITY_PROOF.lean` compiles before release. U6e5
+`OverPullbackLocalPushout` has cap 110. The underlying map of a pulled-back
+over-morphism forms the expected cartesian square. Pull the base cover back
+to the target, use local pushout descents and that square for factorization,
+then invoke schematic descent gluing. Cancellation recovers the structure
+map and proves uniqueness. This is a generic locality lemma with geometric
+hypotheses, not an assumed preservation result for the pinching square.
+
+`W18_FLAT_PROOF.lean` compiles in full before release. U6e6
+`PolygonPinchingFlatBaseChange` has cap 120. The specified polygon is reduced;
+its finite surjective normalization is schematically dominant. The cartesian
+square from U6e5 preserves these properties under flat base change. On every
+member of the parameter's affine cover, U6e4 and `Over.pullbackComp` give the
+local pushout; U6e5 glues descent. U6e1 supplies the node factorization.
+Finally `polygonIso` transports to any supplied pinching cocone. This closes
+the exact U6 contract for arbitrary scheme bases with a flat structure map.
