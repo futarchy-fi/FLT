@@ -117,7 +117,7 @@ Quot.sound. Keep proof modules ≤ their row's cap; add sorted FLT.lean imports.
 
 ## W11 split of program E — continuous extension classes
 
-Source/API check at `19d6ccb3`, 2026-10-03 UTC: mathlib
+Source/API check at `19d6ccb3`, 2026-10-02 UTC: mathlib
 `RepresentationTheory/Homological/ContCohomology/LowDegree` implements H0,
 not the H1 dictionary needed here. Its algebraic `GroupCohomology/LowDegree`
 provides `IsCocycle₁` and `IsCoboundary₁`. The existing
@@ -140,11 +140,14 @@ classification is an input or a claimed consequence.
 | E04 / GaloisRepresentation/Extensions/LiftCocycle | Given an injective equivariant additive map i:A→V and a vector v fixed modulo i(A), construct the unique cocycle from `i(c(g))=g•v-v`; replacing v by v+i(a) changes it by the E03 coboundary. | READY after E03; explicit range hypothesis expresses quotient invariance, not existence of a representation/lift. | 200 |
 | E05 / GroupScheme/KummerUnitClass | Independently define `Kˣ / (Kˣ)^n` and its subgroup of classes represented by valuation-ring units; prove representative criterion and invariance under multiplying by nth powers. | READY; QuotientGroup, powMonoidHom and existing exists_unit_factor_iff. | 200 |
 | E06 / GaloisRepresentation/Extensions/ContinuousClass | Form the quotient of continuous cocycles by E03 and prove equality iff change of splitting, plus inflation injectivity for a surjective quotient map with descended action. | Follow-up after E02/E03; action/quotient instances must be matched before dispatch. | 200 |
-| E07 / AbsoluteGaloisGroup/CocycleFiniteGalois | Realize the open normal subgroup from E02 by a finite Galois extension, transport the cocycle and coefficient action to its Galois group, and prove inflation compatibility. | BLOCKED on source-matching the Krull correspondence and finite coefficient/root-of-unity action transport; E02 alone is not this arithmetic realization. | 200 |
-| E08 / GroupScheme/ContinuousKummerClass | For roots-of-unity coefficients, construct a bijection between E06 continuous classes and E05 power classes using E07 and finite Hilbert 90; prove independence of finite extension and root. | BLOCKED on E06/E07 and separate refinement transport lemmas; split again if those exceed a leaf. | 200 |
+| E07a / AbsoluteGaloisGroup/OpenNormalFixedField | For an open normal N in Gal(L/K), with L/K Galois, construct its finite Galois fixed field, the quotient-group equivalence, and its restriction compatibility. | READY after source match: InfiniteGalois.fixingSubgroup_fixedField, isOpen_iff_finite, normalAutEquivQuotient. | 200 |
+| E07b / AbsoluteGaloisGroup/CocycleFiniteGalois | Apply E07a to E02's affine kernel, transport the descended action and cocycle to the actual finite Galois group, and prove inflation recovers the original action and cocycle. | READY after E02/E07a; generic additive finite coefficients. Roots-of-unity identification remains in E08. | 200 |
+| E08 / GroupScheme/ContinuousKummerClass | For roots-of-unity coefficients, construct a bijection between E06 continuous classes and E05 power classes using E07b and finite Hilbert 90; prove independence of finite extension and root. | BLOCKED on E06/E07b and separate refinement transport lemmas; split again if those exceed a leaf. | 200 |
 | E09 / GaloisRepresentation/Extensions/OrdinaryTwist | Transport E04 extension classes through an unramified character twist and changes of bases of sub/quotient lines, proving independence of the E05 unit predicate. | BLOCKED on concrete rank-one character/Hom-coefficient API and E08. | 200 |
 
-E06–E09 remain contracts, not implemented APIs. In particular E08 requires
+At the initial split E06–E09 were contracts. E06 became ready from E02/E03;
+E07a/b became ready after the explicit Krull API source match above.
+E08/E09 remain contracts, not implemented APIs. In particular E08 requires
 surjectivity, injectivity and compatibility with roots of unity in positive
 and mixed characteristic under the correct invertibility assumptions;
 finite additive descent alone does not supply any of them. E1 remains
