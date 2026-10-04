@@ -608,6 +608,10 @@ public import FLT.GroupScheme.FiniteFlat
 public import FLT.GroupScheme.FiniteFlatCartierTangent
 public import FLT.GroupScheme.FiniteFlatClosureChange
 public import FLT.GroupScheme.FiniteFlatCotangent
+public import FLT.GroupScheme.FiniteFlatCotangentArithmetic
+public import FLT.GroupScheme.FiniteFlatCotangentFinite
+public import FLT.GroupScheme.FiniteFlatCotangentImage
+public import FLT.GroupScheme.FiniteFlatCotangentKernel
 public import FLT.GroupScheme.FiniteFlatDifferentials
 public import FLT.GroupScheme.FiniteFlatExtensionKernelIso
 public import FLT.GroupScheme.FiniteFlatExtensionQuotientIso
@@ -746,13 +750,24 @@ public import FLT.GroupScheme.ModelPoints
 public import FLT.GroupScheme.MuThreeCubicCoordinates
 public import FLT.GroupScheme.MultiplicativeFiltrationPurity
 public import FLT.GroupScheme.OrderThreeModelIdentification
+public import FLT.GroupScheme.PDivisibleCotangentArithmetic
+public import FLT.GroupScheme.PDivisibleCotangentComplete
+public import FLT.GroupScheme.PDivisibleCotangentExactness
+public import FLT.GroupScheme.PDivisibleCotangentFiniteSets
+public import FLT.GroupScheme.PDivisibleCotangentGenerators
 public import FLT.GroupScheme.PDivisibleCotangentLimit
+public import FLT.GroupScheme.PDivisibleCotangentLimitFinite
+public import FLT.GroupScheme.PDivisibleCotangentLimitReduction
 public import FLT.GroupScheme.PDivisibleCotangentSurjective
 public import FLT.GroupScheme.PDivisibleCotangentTransitions
+public import FLT.GroupScheme.PDivisibleIntegralTangent
+public import FLT.GroupScheme.PDivisibleRationalCotangent
 public import FLT.GroupScheme.PDivisibleRationalPlaceTransport
 public import FLT.GroupScheme.PDivisibleRationalTateAction
 public import FLT.GroupScheme.PDivisibleSystem
 public import FLT.GroupScheme.PDivisibleSystemCategory
+public import FLT.GroupScheme.PDivisibleTangentNaturality
+public import FLT.GroupScheme.PDivisibleTangentReduction
 public import FLT.GroupScheme.PDivisibleTateAction
 public import FLT.GroupScheme.PDivisibleTateCompact
 public import FLT.GroupScheme.PDivisibleTateModule
@@ -779,6 +794,7 @@ public import FLT.GroupScheme.PadicMuThreeConnected
 public import FLT.GroupScheme.PadicPatchingArithmetic
 public import FLT.GroupScheme.PadicPatchingRings
 public import FLT.GroupScheme.PadicTensorPatching
+public import FLT.GroupScheme.PadicTorsionScalarContinuity
 public import FLT.GroupScheme.PointDifferentConductor
 public import FLT.GroupScheme.PointDifferentials
 public import FLT.GroupScheme.PointFieldEvaluation
@@ -1562,6 +1578,7 @@ public import FLT.Mathlib.RepresentationTheory.Homological.ContCohomology.CupPro
 public import FLT.Mathlib.RingTheory.AdicCompletion.Power
 public import FLT.Mathlib.RingTheory.AdicCompletion.PowerQuotients
 public import FLT.Mathlib.RingTheory.AdjoinRoot
+public import FLT.Mathlib.RingTheory.AugmentationConvolution
 public import FLT.Mathlib.RingTheory.AugmentationCotangent
 public import FLT.Mathlib.RingTheory.AugmentationGenerators
 public import FLT.Mathlib.RingTheory.AugmentationTangent
@@ -1586,6 +1603,7 @@ public import FLT.Mathlib.RingTheory.DiscreteValuationRing.TotalRamification
 public import FLT.Mathlib.RingTheory.DiscreteValuationRing.UniformizerMinpoly
 public import FLT.Mathlib.RingTheory.DiscreteValuationRing.UnramifiedSubalgebra
 public import FLT.Mathlib.RingTheory.Discriminant
+public import FLT.Mathlib.RingTheory.FiniteTorsionModule
 public import FLT.Mathlib.RingTheory.FrobeniusAugmentation
 public import FLT.Mathlib.RingTheory.FrobeniusImage
 public import FLT.Mathlib.RingTheory.GeneratorsDifferentialRelations
@@ -1604,6 +1622,7 @@ public import FLT.Mathlib.RingTheory.MvPolynomial.HeightOneIdeal
 public import FLT.Mathlib.RingTheory.MvPolynomial.LocalizedReduction
 public import FLT.Mathlib.RingTheory.MvPolynomial.NilpotentPresentation
 public import FLT.Mathlib.RingTheory.MvPolynomial.RedundantCoordinates
+public import FLT.Mathlib.RingTheory.NilpotentGeneratorLifting
 public import FLT.Mathlib.RingTheory.NilpotentRelationLifting
 public import FLT.Mathlib.RingTheory.Norm.Quadratic
 public import FLT.Mathlib.RingTheory.Norm.Quotient
