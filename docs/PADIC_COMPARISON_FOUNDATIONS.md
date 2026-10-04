@@ -865,3 +865,525 @@ trace bounds and completed twist vanishing. Consequently invariant-order
 control, the reverse period fixed-field inclusion and the comparison
 contracts are not proved by W33. No uniform bound or completed invariant
 vanishing has been installed as an instance, structure field or axiom.
+
+
+## W34 elementary Ax proof split (before implementation)
+
+Use Hasse derivatives of the actual minimal polynomial, not an assumed
+trace bound. If all conjugates of a are within r, the (n-k)-th Hasse
+derivative at a has norm at most r^k. Its degree is k and its leading
+coefficient is choose(n,k), so one of its roots b satisfies
+`distance(a,b)^k <= norm(choose(n,k))^-1 * r^k` and has degree at most k.
+Galois isometry transfers the displacement bound to b. For n not a power
+of p, Lucas supplies some 0 < k < n with unit binomial coefficient. For
+n = p^(s+1), take k = p^s: the binomial valuation is one. Strong degree
+induction with budget `2 - 2/n` gives the deliberately nonoptimal uniform
+constant `p^2`. Every row is capped at 150 source lines; split
+again before exceeding that limit. This is a plan until each lemma builds.
+
+| Leaf | Concrete proof output | Dependency |
+|---|---|---|
+| UltrametricPolynomialCoefficients | Coefficients of products of linear factors with bounded roots have the corresponding power bound. | Ultrametric finite-sum inequality |
+| PolynomialNearbyRoot | Small evaluation gives a nearby actual root, using the product of root distances. | Splitting in the algebraic closure |
+| PadicHasseApproximation | The Hasse derivative of the original minimal polynomial supplies an actual smaller-degree approximant. | Previous two leaves, conjugacy, Hasse degree and leading coefficient |
+| PadicBinomialDescent | Unit binomial coefficient off p-powers; valuation one for choose(p^(s+1),p^s). | Lucas and prime-power binomial factorization |
+| AxDegreeBudget | Real-power budget inequalities and uniform upper bound. | Elementary ordered-field arithmetic |
+| PadicAxDegreeStep | Combine actual Hasse roots, binomial losses and the real-power budget into a strict degree reduction. | Hasse approximation, binomial descent, degree budget |
+| PadicAxEstimate | Strong degree induction with actual scalar witnesses and a uniform constant. | Hasse approximation, binomial descent, degree budget |
+| ComplexAxFixedScalars | Discharge W33 hestimate and derive the completed fixed field. | PadicAxEstimate and ComplexAxDescent |
+| CyclotomicTowerConstruction | Actual p-power-root subfields and inclusions. | Original character and roots of unity |
+| CyclotomicDifferentBounds | Different estimates at finite tower levels. | Tower construction; split valuation computations separately |
+| CyclotomicNormalizedTraceBounds | Uniform bounds for actual normalized trace transitions. | Different bounds |
+| CyclotomicWeightedDescent | Descend completed weighted invariants along actual tower traces. | Trace bounds, W33 approximation |
+| ComplexNonzeroTwistVanishing | Vanishing for every nonzero integral weight. | Weighted descent and character image |
+| ComplexInvariantOrder | Invariant order zero and residue-scalar subtraction. | Both analytic endpoints and actual integer graded algebra |
+
+The comparison split remains the W29/W32 contracts: rational-place
+transport, cotangent transitions, tangent duality, actual pairing,
+integrality, equivariance, injectivity, surjectivity, strictness, then
+coefficient decomposition and both graded ranks. None is assumed as a
+record field. The arithmetic and analytic leaves above take precedence.
+
+
+### W34 cyclotomic arithmetic refinement (before implementation)
+
+The Ax endpoint is separate from cyclotomic weighted descent. Before tower
+trace estimates, split the local arithmetic into the following <=150-line
+leaves: `PadicCyclotomicIrreducible` transports the integral Eisenstein
+criterion to Z_p and proves irreducibility over Q_p;
+`PadicCyclotomicTower` constructs the actual root-generated subfields,
+their inclusions and finite-dimensional instances;
+`PadicCyclotomicDegree` computes their degrees using the proved local
+irreducibility; `PadicCyclotomicTrace` constructs actual normalized trace
+projections and proves their finite-level compatibility. Trace operator
+bounds still require separate different/valuation leaves; neither the
+finite-dimensional instances nor formal trace transitivity proves them.
+
+
+A further bounded leaf, `PadicCyclotomicRootNorm`, computes the norm of
+zeta-1 from the actual minimal polynomial and the original isometric
+Galois action. Coefficient control in that power basis and trace values
+on root powers must then be separate leaves before a uniform trace bound.
+
+`NormalizedTraceTower` is a separate <=150-line generic transitivity leaf:
+proving it over abstract fields avoids expanding all p-adic field structures
+inside the kernel when specializing to the actual cyclotomic tower.
+
+
+### W34 implementation boundary
+
+`padicAx_exists_scalar` proves the requested algebraic scalar estimate
+with the element-independent constant `(p : Real)^2`. The proof chooses
+an actual root of a Hasse derivative of the actual minimal polynomial,
+then uses strong induction on its degree. A unit binomial coefficient
+has no loss; at a p-power degree the loss is `p^(1/k)` and the exponent
+budget `2-2/n` pays for it. No uniform estimate is a hypothesis of this
+theorem. `complexGalois_fixed_iff_mem_range` consequently identifies the
+fixed elements of the original C_p action with the original Q_p image;
+`complexGalois_fixed_existsUnique_scalar` gives unique scalar descent.
+
+`padic_cyclotomic_primePower_irreducible` proves local irreducibility by
+transporting Eisenstein from Z to Z_p and applying Gauss over Q_p. The
+actual root-generated tower is finite at each level, generated by any
+primitive root there, has degree `p^s*(p-1)` at level s+1, and is strictly
+increasing after its first level (including p=2). The original isometric
+Galois action gives `padic_minpoly_eval_norm`; specialization computes
+`norm(zeta-1)^(p^s*(p-1)) = p^-1`. The actual normalized traces fix their
+target fields, are idempotent, agree with field trace divided by degree
+on every finite subextension, and compose along tower inclusions.
+
+These are arithmetic inputs, not a trace operator estimate. The remaining
+analytic leaves, still <=150 source lines each, are:
+
+1. Compute relative tower degrees and actual traces on root powers;
+   prove coefficient control in the uniformizer power basis using the
+   exact norm. Split the coefficient/orthogonality argument from the
+   root-power trace computation.
+2. Prove a uniform norm bound for normalized trace restricted to the
+   cyclotomic union. The trace on the whole algebraic closure is not
+   claimed uniformly bounded; that stronger assertion would be false.
+3. Descend invariants of the cyclotomic-character kernel to the completed
+   cyclotomic union (requires the relative Ax argument), extend the
+   bounded projections, and prove convergence back to the vector.
+4. Prove tail-character nontriviality and equivariance of the actual
+   projections, then nonzero completed integral-twist vanishing.
+5. Apply both analytic endpoints to actual integer graded pieces:
+   invariant order, fixed-residue subtraction, and the reverse B_dR
+   fixed-field inclusion. Continue the existing comparison split only
+   after these gates.
+
+The original general `IsHardlyRamified.mem_isCompatible` remains unchanged
+and still depends on `sorryAx`; no general-family admission is discharged
+by the fixed-C_p endpoint alone. Rebuild each named module, lint it alone,
+and print its axioms to check these claims; the W34 handoff records the
+checked snapshot and evidence logs.
+
+## W35 cyclotomic trace split (before implementation)
+
+Every new module below has a 150-line cap. Dependencies are proved from the
+actual subfields, minimal polynomials and inherited norm; none of the
+analytic conclusions is an input record field.
+
+| Leaf | Concrete output | Dependencies |
+|---|---|---|
+| PadicCyclotomicRelativeDegree | Degree p^r from level n+1 to n+r+1; relative primitive-root degree. | W34 absolute degrees, tower law |
+| PadicCyclotomicRelativeMinpoly | Relative minimal polynomial X^(p^r)-C(zeta^(p^r)). | Relative degree, root equation |
+| PadicCyclotomicRootTrace | Normalized trace of primitive higher roots and arbitrary root powers. | Relative minimal polynomial, trace next coefficient |
+| UltrametricDistinctTerms | A finite sum of terms with distinct nonzero norms dominates every term. | Ultrametric inequality |
+| PadicUniformizerOrthogonality | Distinct norms for scalar multiples of successive uniformizer powers. | Discrete Q_p norms, W34 uniformizer norm |
+| PadicCyclotomicCoefficientBound | Uniform bound on Q_p coefficients in the uniformizer power basis. | Orthogonality and actual power basis |
+| PadicCyclotomicUniformTrace | Bound independent of source level on the cyclotomic union. | Root-power trace and coefficient bound |
+
+After these leaves, split the relative Ax argument, completed union,
+equivariant continuous projections and their convergence before proceeding
+to nonzero twists and graded invariants. Those endpoints remain open until
+their arithmetic and analytic hypotheses have actually been discharged.
+
+W35 refinement: `UltrametricDistinctTerms` needs no new module: Mathlib's
+`IsUltrametricDist.norm_sum_eq_sup'_of_pairwise_ne` supplies that leaf.
+`PadicCyclotomicIntegralTrace` (cap 150) separates the trace bound for
+integer polynomials in roots, and hence uniformizer powers, from the
+coefficient argument and final operator estimate.
+
+W35 relative Ax refinement (all caps 150): `PadicRelativeGalois` proves
+integrality and isometry over any actual intermediate field;
+`PadicRelativeHasseApproximation` repeats the actual Hasse-root construction
+over that field, with the same Q_p binomial norm;
+`PadicRelativeAxDegreeStep` applies the existing arithmetic budget;
+`PadicRelativeAxEstimate` performs strong degree induction and yields a
+uniform approximation by elements of the actual intermediate field.
+This is the algebraic input for kernel descent, not an assumption of it.
+
+W35 completion split (caps 150): `ComplexRelativeAxDescent` proves that
+fixed vectors for all automorphisms over an actual intermediate field
+belong to the closure of that field's actual image. `PadicCyclotomicKernel`
+identifies the character kernel with automorphisms fixing the cyclotomic
+union. `ComplexCyclotomicKernelDescent` specializes the proved relative
+estimate and closure theorem to this kernel. Completed trace extensions,
+equivariance and convergence are separate leaves after these.
+
+W35 trace-extension split (caps 150): `ComplexCyclotomicClosure` realizes
+the completed union as a closed subspace of the original C_p and proves
+density of its algebraic union. `ComplexCyclotomicProjection` extends the
+actual bounded traces to that space with the same uniform bound.
+`ComplexCyclotomicProjectionConvergence` proves convergence to the original
+vector by density, eventual stabilization on finite levels and the uniform
+bound. Equivariance and finite-level range are separate arithmetic leaves.
+
+W35 vanishing split (caps 150): `ComplexCyclotomicGalois` restricts the
+original continuous linear action to the actual closure;
+`ComplexCyclotomicTraceInvariant` proves invariance under automorphisms
+fixing a target level by normalized-trace naturality and density.
+`PadicCyclotomicTailAutomorphism` constructs automorphisms with prescribed
+root action using the proved relative minimal polynomial;
+`PadicCyclotomicTailCharacter` detects every nonzero integer weight at
+every target level. `ComplexNonzeroTwistVanishing` combines these with
+kernel descent and projection convergence. Actual graded-piece invariants
+are a final separate leaf after this analytic endpoint.
+
+W35 full-equivariance refinement (caps 150): `NormalizedTraceEquivariance`
+proves normalized-trace naturality under compatible base and extension
+field automorphisms from the minimal-polynomial formula.
+`ComplexCyclotomicProjectionEquivariance` applies it to the actual normal
+cyclotomic levels, then extends full Galois equivariance by density.
+`ComplexIntegerGradedInvariants` proves nonzero-degree vanishing and unique
+Q_p scalar coordinates in degree zero for the existing integer quotients.
+
+### W35 implementation boundary
+
+The W34 analytic gaps through integer graded-piece invariants are now
+implemented in new modules. Recheck the named endpoints with foreground
+module builds, individual module lint, and `#print axioms`; the W35 handoff
+records the checked snapshot and logs.
+
+- `padicCyclotomicProjection_union_norm_le` bounds every positive-level
+  normalized projection on the actual algebraic union by `p * norm(x)`,
+  independently of both source and target levels. Relative binomial minimal
+  polynomials give the exact root-power trace formula. The exact norm of
+  zeta-1 and the discrete Q_p value group prove orthogonality and the
+  coefficient bound; integer-polynomial expansions finish the trace bound.
+- `padicRelativeAx_exists_scalar` proves the uniform `p^2` approximation
+  estimate over any actual intermediate field. It uses actual relative
+  Hasse roots and relative automorphisms, with the original binomial budget.
+  `complexCyclotomic_kernel_fixed_iff` identifies the original C_p kernel
+  invariants with the actual closure of the cyclotomic union.
+- `complexCyclotomicProjection` extends the actual traces to this closure;
+  `complexCyclotomicProjection_norm_le`,
+  `complexCyclotomicProjection_equivariant`, and
+  `complexCyclotomicProjection_tendsto` prove the uniform bound, full Galois
+  equivariance, and convergence to the original vector. Relative target
+  automorphisms leave the corresponding projection unchanged.
+- `padicCyclotomic_tail_character_zpow_ne_one` constructs a detector for
+  every nonzero integer weight at every finite target level. Its prescribed
+  root action has exponent `1+p^(n+1)`; sufficiently high finite residues
+  distinguish each positive power from one. Negative weights follow in the
+  units group. No character-surjectivity conclusion is assumed.
+- `complexTwist_fixed_eq_zero` proves actual C_p twist-invariant vanishing
+  for every nonzero integral weight. The actual integer graded quotient
+  consequently has zero invariants away from degree zero, and unique
+  original Q_p scalar coordinates at degree zero, in
+  `ComplexIntegerGradedInvariants`.
+
+Still downstream: invariant order zero in the original B_dR field,
+fixed-residue scalar subtraction and the reverse B_dR fixed-field inclusion;
+then the explicit comparison contracts, coefficient decomposition and both
+graded ranks. The general family theorem is unchanged. These new analytic
+and graded endpoints do not by themselves remove its `sorryAx` dependency.
+
+## W36 invariant-order split (before implementation)
+
+Each complete new module is capped at 150 lines. `ComplexInvariantOrder`
+uses the DVR unit-times-integer-power decomposition in the original field,
+passes its invariant representative to the actual graded quotient, and
+uses the nonzero residue of a unit to force degree zero.
+`ComplexFixedResidue` descends the resulting integral representative's
+fixed residue to the original Q_p and subtracts that scalar; it proves
+that a fixed integral element with zero residue must vanish.
+`ComplexDeRhamFixedScalars` combines these proofs to identify the fixed
+field with the image of the original Q_p embedding and proves uniqueness.
+No fixed-field or comparison conclusion is added as an assumption.
+
+W36 rational-place refinement (caps 150): `AlgebraicClosureGaloisTransport`
+constructs conjugation of actual closure automorphisms along a base-field
+isomorphism, with the commuting evaluation formula.
+`PDivisibleRationalPlaceTransport` specializes the actual continuous field
+and integer-ring identifications and their commuting square, and fixes one
+compatible closure/Galois identification. `PDivisibleRationalTateAction`
+uses this identification on the original system's coherent sequences and
+proves evaluation equivariance; it does not replace those sequences with
+an unrelated representation. Continuity and coordinate base transport
+must be proved where used in the comparison construction.
+
+W36 cotangent refinement (caps 150): `FiniteFlatCotangent` defines the
+actual augmentation ideal modulo its square and induces maps from the
+specified integral Hopf maps, proving identity, composition and
+surjectivity for closed immersions. `PDivisibleCotangentTransitions`
+specializes to both original level maps and proves their coherence and
+multiplication factorizations. `PDivisibleCotangentLimit` constructs the
+inverse limit along inclusions, with its actual projections and
+functoriality. Finite-level cotangents are torsion: their integral linear
+duals cannot be substituted for the tangent module of the p-divisible
+group. Tangent/Cartier compatibility therefore remains a separate proof
+obligation after these constructions.
+
+W36 continuity refinement (cap 150): `AlgebraicClosureGaloisContinuity`
+identifies the chosen conjugation with the continuous restriction map on
+actual closures; compactness gives continuity of its same inverse.
+The rational-place specialization and the action on the original Tate
+module then retain their actual Krull and inverse-limit topologies.
+
+W36 tangent refinement (caps 150): `AugmentationTangent` defines Leibniz
+functionals with values in an arbitrary base module and proves descent
+through the actual augmentation square. `AugmentationTangentEquiv`
+identifies these functionals with linear maps from the actual cotangent
+quotient. `CartierDualTangent` identifies scalar-valued tangent functionals
+with primitive elements of the actual integral Cartier dual, using its
+proved perfect coordinate pairing. These are finite-level algebraic
+inputs; a p-divisible tangent/dual limit comparison and an actual period
+pairing are further obligations, not consequences of giving these names.
+
+W36 tangent naturality refinement (cap 150): `FiniteFlatTangentNaturality`
+constructs precomposition by the original integral model map, proves
+Leibniz and compatibility with the cotangent equivalence. The construction
+retains arbitrary target modules, and so applies after taking torsion
+coefficients. The Cartier identification is natural under the actual
+transposed coordinate maps, rather than an independently chosen pairing.
+
+W36 cotangent lifting refinement (cap 150):
+`PDivisibleCotangentSurjective` constructs successive actual lifts of a
+prescribed level cotangent and proves coherence at all ordered levels.
+This proves each inverse-limit evaluation is surjective without imposing
+finiteness of the underlying cotangent sets or assuming a limit-lifting
+property. `FiniteFlatCartierTangent` specializes finite-level tangent and
+Cartier naturality to the actual finite-flat models.
+
+### W36 implementation boundary
+
+The original period fixed-field endpoint now has unconditional entry points
+`complexDeRham_fixed_unit_exponent_eq_zero`,
+`complexDeRham_fixed_exists_unit`,
+`complexDeRham_fixed_eq_residue_scalar`, and
+`complexDeRham_fixed_iff_mem_range`. Nonzero field invariants have order
+zero; subtracting their unique original Q_p residue scalar leaves a fixed
+integral element with zero residue, which must vanish. Both B_dR and
+B_dR+ have exactly the original Q_p image as their invariant elements.
+
+The rational-place field and integer maps commute with their actual
+inclusions. `rationalPlaceGaloisContinuousEquiv` uses one chosen compatible
+closure map in both directions. `rationalTateAction` preserves the
+original Tate module, with its original finite-level evaluations and
+reductions, and is jointly continuous for its existing topology. No
+unrelated representation or fresh finite-flat model replaces that system.
+
+The actual augmentation cotangent quotients now have surjective inverse
+transitions, coherent opposite pullbacks and both multiplication-morphism
+factorizations. `cotangentLimit` is their actual inverse limit;
+`cotangentEval_surjective` constructs compatible lifts of every level
+cotangent. These facts do not yet identify the differential of
+multiplication by n with scalar multiplication by n.
+
+`augmentationTangentEquiv` represents tangent functionals with arbitrary
+module coefficients by maps from the actual augmentation quotient.
+`cotangentPrimitiveEquiv` identifies its scalar dual with primitive
+elements of the actual integral Cartier dual. The finite-flat
+specializations commute with the original integral morphisms and their
+Cartier transposes. No interchange of inverse limits and duals, finite
+freeness of the cotangent limit, or p-divisible tangent comparison is
+asserted by these finite-level results.
+
+Next bounded leaves before closing `PDivisibleTangentDuality`:
+
+1. Prove the cotangent differential of convolution addition and of
+   multiplication by n; specialize to the original p-power levels.
+2. Prove the required integral cotangent-limit finiteness and reduction
+   comparisons, then construct the corresponding tangent object. Split
+   the needed formal-smoothness or deformation-theoretic input before
+   implementation; it is not supplied by the inverse-limit definition.
+3. Construct the Cartier-dual level/limit system and prove the required
+   tangent/dual compatibility with those same integral identifications.
+4. Construct the actual period pairing; prove integrality, equivariance,
+   injectivity, surjectivity and filtration strictness in the existing
+   comparison-contract order. Coefficient components, support,
+   determinant compatibility and both graded ranks follow only after it.
+
+All these are proof obligations. The general family theorem is unchanged;
+the fixed-field and finite-level duality theorems do not remove its
+`sorryAx`. Recheck every new module with its foreground module build,
+individual lint and `#print axioms`; FAMILY_W36_DONE.md records the
+checked snapshot and its local evidence files.
+
+## W37 cotangent differential and limit split (before implementation)
+
+Each complete module is capped at 150 lines. `AugmentationConvolution`
+proves the Leibniz differential of convolution using the actual counit
+identities. `FiniteFlatCotangentArithmetic` descends that identity to
+original model cotangents, including zero and multiplication by n.
+`PDivisibleCotangentArithmetic` computes both level composites as p-power
+scalars and proves the actual level annihilators.
+
+The limit comparison requires separate algebraic leaves before any
+formal-smoothness assertion: identify the cotangent kernel of a closed
+augmentation-preserving quotient; use the original system's integral
+kernel equation to obtain the cotangent exact sequence; compare its image
+with p-power multiples. Prove the inverse-limit reduction kernel using
+compatible lifts, and finite generation over the complete DVR using
+p-adic completeness and a finite generating set modulo p. Finite freeness
+requires a further torsion-freeness or formal-smoothness theorem; neither
+is implied by merely defining the inverse limit. A formal-smoothness route
+must prove infinitesimal lifting from the original finite-flat exact
+system, then establish the associated complete formally smooth coordinate
+algebra and its finite free cotangent. These are separate capped proof
+obligations, not extra fields of `PDivisibleSystem`.
+
+The actual Cartier-dual limit compatibility and period pairing follow
+these gates, in the previously recorded integrality, equivariance,
+injectivity, surjectivity and strictness order.
+
+W37 further refinement (caps 150): `FiniteFlatCotangentKernel` supplies
+actual coordinate-kernel representatives; `FiniteFlatCotangentImage`
+linearizes the extended augmentation ideal; `PDivisibleCotangentExactness`
+uses these to identify restriction kernels with p-power multiples.
+`FiniteFlatCotangentFinite` proves finite generation at each finite level;
+`FiniteTorsionModule` and `PDivisibleCotangentFiniteSets` prove those sets
+are finite over the original rational-place base. `PDivisibleCotangentLimitReduction`
+uses finite compatible division fibres to identify the limit modulo p^m
+with its actual level m, retaining the original evaluation map.
+
+Finite generation of the limit splits further into nilpotent scalar
+lifting of generators, continuity of finite-level scalar evaluation,
+and a compact coefficient-fibre argument over Z_p transported by the
+proved original integer-ring equivalence. This route proves finite
+generation only; freeness and the formal-smoothness input remain distinct.
+
+W37 final refinement (caps 150): `NilpotentGeneratorLifting` proves
+surjectivity from generators modulo a nilpotent scalar;
+`PDivisibleCotangentGenerators` lifts one finite family from level one
+and proves that it generates every actual level. `PadicTorsionScalarContinuity`
+factors the original scalar action through actual p-power residues.
+`PDivisibleCotangentLimitFinite` uses compact nonempty coefficient fibres
+in a finite power of Z_p to obtain generators of the actual inverse limit.
+`PDivisibleCotangentComplete` identifies the evaluation kernels with the
+standard adic filtration and constructs limits of coherent Cauchy sequences.
+`PDivisibleTangentReduction` represents torsion-valued limit functionals
+by the original finite-level Leibniz functionals;
+`PDivisibleTangentNaturality` retains original system morphisms.
+`PDivisibleIntegralTangent` defines the integral linear dual of the limit
+and proves it finite free over the original DVR.
+`PDivisibleRationalCotangent` specializes reduction, completeness and
+integral tangent finiteness/freeness to the original rational-place base.
+
+### W37 implementation boundary and next proof obligations
+
+The new modules prove convolution and multiplication differentials,
+p-power annihilators, the exact finite-level cotangent sequence, finite
+level sets, limit reduction and finite generation, and adic completeness.
+All identifications retain the original integral coordinate maps and
+original level evaluations. The integral tangent constructed here is
+`Hom_R(cotangentLimit,R)`. Its freeness is a property of this dual over a
+DVR, and does not prove that `cotangentLimit` is free. The torsion-valued
+comparison is `Hom_R(cotangentLimit,M) = Hom_R(LevelCotangent n,M)` when
+p^n kills M; it does not assert that reducing the integral dual gives
+all such functionals.
+
+The next unproved gate needs its own source proof and the following
+separate capped leaves before period comparison:
+
+1. Establish infinitesimal lifting for the connected formal object
+   associated to the original finite-flat p-divisible levels. A proof
+   must construct the formal object or state and prove an equivalent
+   level-system lifting theorem; the required lifting property may not
+   be supplied as a new field of the input system.
+2. Deduce torsion-freeness and finite freeness of the actual cotangent
+   limit, identifying it with the cotangent of that same formal object.
+   The currently proved finiteness and completeness do not imply this.
+3. Prove reduction of its integral dual equals the already constructed
+   torsion-valued tangent functor, with the original evaluation pairing.
+4. Construct the Cartier-dual level system and its limit transition maps;
+   identify its relevant tangent/dual data using those same maps. The
+   scalar-valued finite-level primitive equivalence is not a limit theorem.
+5. Construct the period pairing and prove integrality, equivariance,
+   injectivity, surjectivity and strictness in the existing D2 contract
+   order. No new code in this wave proves these endpoints.
+
+Checked by the per-module foreground builds, individual lints and named
+axiom audits recorded in `FAMILY_W37_DONE.md`; rerun those commands for a
+current status. The unchanged general family theorem remains outside
+these cotangent/tangent results and still requires admission removal.
+
+## W38 infinitesimal lifting split (committed before implementation)
+
+Every leaf below has a 150-line complete-module cap. The first target is
+an actual lifting theorem, retaining the original coordinate algebra:
+for a square-zero ideal J in a test R-algebra B, with N J = 0, every
+B/J-valued point x of a finite-flat level has a B-valued lift of [N]x.
+Lift x R-linearly using projectivity and take its N-th convolution power.
+The multiplicativity defect disappears by the square-zero binomial formula.
+This theorem lifts multiplication of points; it is **not** formal smoothness
+of the level, nor lifting of x itself into a higher level.
+
+| Leaf / proposed module | Proof obligation | Cap |
+|---|---|---:|
+| S1 / SquareZeroConvolution | Congruent linear maps have equal N-th convolution powers when J² = 0 and N J = 0. | 150 |
+| S2 / ConvolutionTensorPower | Precomposition with multiplication and tensor-square followed by multiplication commute with convolution powers. | 150 |
+| S3 / SquareZeroConvolutionLift | The convolution power of an arbitrary linear lift is an actual algebra map. | 150 |
+| S4 / FiniteFlatSquareZeroLifting | Obtain linear lifts from the original finite-free coordinate module; prove the quotient identity with the original multiplication morphism. | 150 |
+| S5 / PDivisibleSquareZeroLifting | Specialize to the original p-power levels, preserving their original maps. | 150 |
+
+The remaining geometric gate needs separate proofs, not an input lifting
+field: (S6) construct the connected formal functor or actual level-colimit
+functor; (S7) prove that every point across a square-zero thickening lifts
+at some higher original level, using the finite-flat exactness and
+p-divisibility; (S8) pass from square-zero to nilpotent thickenings.
+S7 is large missing theory: S1–S5 alone lift [N]x, and division in an fppf
+sheaf does not itself produce a section over B or a lift of x. No such
+surjectivity is to be inferred from the binomial calculation.
+
+After this gate: identify the formal cotangent with the existing inverse
+limit, prove torsion-freeness and finite freeness, and prove that reducing
+the integral dual gives all torsion-valued tangents with the same pairing.
+Then construct the actual Cartier-dual level/limit comparison and period
+pairing, in the existing integrality/equivariance/injectivity/surjectivity/
+strictness order. These remain distinct proof obligations; none is to be
+assumed as a record field or inferred from finite generation alone.
+
+W38 refinement before further implementation (cap 150):
+`SquareZeroPointLift` makes the S4 construction canonical: two linear lifts
+of the same point have identical convolution powers, and an existing
+algebra lift is sent to its original N-th power. It retains the exact
+quotient map. This independence result is needed for future descent; it
+does not assert that a division point or a descent datum exists.
+
+W38 naturality refinement (cap 150): `SquareZeroLiftNaturality` proves
+compatibility of the canonical lift with actual bialgebra source maps and
+commuting maps of square-zero test-algebra thickenings. The convolution
+precomposition identity is a separate lemma in `ConvolutionTensorPower`,
+still within its cap. These are equalities of the constructed points, not
+new coherence hypotheses on a p-divisible system.
+
+### W38 implementation boundary
+
+`FF.exists_multiply_lift` and `PDivisibleSystem.exists_pow_point_lift`
+construct actual algebra-valued lifts of multiplication. Both ordered
+transition composites have corresponding lifting theorems using the
+system's specified inclusion and reduction maps. `squareZeroPointLift`
+is independent of all linear-lift choices, reduces to the original
+convolution power, agrees with the N-th power of any existing algebra
+lift, and commutes with source bialgebra morphisms and maps of test-algebra
+thickenings. No replacement integral model is chosen.
+
+The full infinitesimal-surjectivity gate remains open. A geometric route
+must construct local division points across a lifted flat cover and then
+descend their lifts. Merely knowing fppf-local divisibility on the quotient
+does not provide that cover or a descended point. Identifying differences
+of local lifts with a quasi-coherent infinitesimal kernel and proving its
+descent on affine test schemes are additional mathematical obligations.
+These require separate capped source proofs before implementation.
+
+Accordingly, this wave does not identify a formally smooth object's
+cotangent, prove cotangent-limit torsion-freeness, prove reduction of the
+integral dual, or construct the Cartier-dual limit/period pairing. S1–S5
+are prerequisites for S7, not a proof of S7. The admission-removal target
+is unchanged. Validation commands, checked time, and explicit remaining
+obligations are recorded in the untracked `FAMILY_W38_DONE.md`; per-module
+builds, individual lints, and named axiom audits must be rerun to refresh
+its snapshot.
