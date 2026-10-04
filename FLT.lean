@@ -2401,6 +2401,7 @@ public import FLT.Mazur.AffineModuleGlobalSections
 public import FLT.Mazur.AffineModulePullbackSections
 public import FLT.Mazur.AffineModuleSupport
 public import FLT.Mazur.AffineNodeNormalizationExact
+public import FLT.Mazur.AffineOpenCartesianSections
 public import FLT.Mazur.AffineOpenDenominators
 public import FLT.Mazur.AffinePullbackIdeal
 public import FLT.Mazur.AffinePullbackIntersection
@@ -2422,6 +2423,8 @@ public import FLT.Mazur.AnnihilatorCoherence
 public import FLT.Mazur.AnnihilatorStalk
 public import FLT.Mazur.AnnihilatorSubsheaf
 public import FLT.Mazur.BinaryOpenDescent
+public import FLT.Mazur.CartesianOpenSectionMap
+public import FLT.Mazur.CartesianSectionRestriction
 public import FLT.Mazur.CartierAffineFppfDescent
 public import FLT.Mazur.CartierChartFlat
 public import FLT.Mazur.CartierCharts
@@ -2588,7 +2591,10 @@ public import FLT.Mazur.FiniteCechCyclesScalars
 public import FLT.Mazur.FiniteCechTermScalars
 public import FLT.Mazur.FiniteSectionProjectivePresentation
 public import FLT.Mazur.FlasqueDirectImageAcyclic
+public import FLT.Mazur.FlatCartesianSectionGluing
 public import FLT.Mazur.FlatFiniteEqualizer
+public import FLT.Mazur.FlatGlobalSectionBaseChange
+public import FLT.Mazur.FlatGlobalSectionExpansion
 public import FLT.Mazur.FlatIdealTensor
 public import FLT.Mazur.FlatSectionEqualizer
 public import FLT.Mazur.GeneralizedCurveAmpleBaseChange
@@ -2671,6 +2677,7 @@ public import FLT.Mazur.ModuleDisjointSectionGluing
 public import FLT.Mazur.ModuleDualSectionCancellation
 public import FLT.Mazur.ModuleExactOpenCover
 public import FLT.Mazur.ModuleFreeOpen
+public import FLT.Mazur.ModuleGlobalEvaluationPullback
 public import FLT.Mazur.ModuleGlobalGeneration
 public import FLT.Mazur.ModuleGlobalSectionExt
 public import FLT.Mazur.ModuleGlobalSectionPullback
@@ -2691,6 +2698,7 @@ public import FLT.Mazur.ModulePresheafTensorHom
 public import FLT.Mazur.ModulePresheafTensorPullback
 public import FLT.Mazur.ModulePullbackMapEquality
 public import FLT.Mazur.ModulePullbackRestrictionPasting
+public import FLT.Mazur.ModulePullbackSectionCoherence
 public import FLT.Mazur.ModulePullbackTrivializationCoherence
 public import FLT.Mazur.ModulePullbackUnitCoherence
 public import FLT.Mazur.ModuleSealedPullbackRatio
@@ -2796,6 +2804,7 @@ public import FLT.Mazur.OpenDirectImageNaturality
 public import FLT.Mazur.OpenDirectImageRestriction
 public import FLT.Mazur.OpenIrreducibleComponent
 public import FLT.Mazur.OpenModuleDirectImageCohomology
+public import FLT.Mazur.OpenModuleSectionScalars
 public import FLT.Mazur.OpenSheafCohomology
 public import FLT.Mazur.OpenSheafCohomologyRestriction
 public import FLT.Mazur.OpenSheafExtensionExact
