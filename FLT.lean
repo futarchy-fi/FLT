@@ -2337,6 +2337,7 @@ public import FLT.Mazur.AffineIdealPowerExtension
 public import FLT.Mazur.AffineImageSectionTransport
 public import FLT.Mazur.AffineIntersectionRestriction
 public import FLT.Mazur.AffineKernelLocalization
+public import FLT.Mazur.AffineLineTwistLocalization
 public import FLT.Mazur.AffineModuleEpimorphisms
 public import FLT.Mazur.AffineModuleExact
 public import FLT.Mazur.AffineModuleGlobalSections
@@ -2344,6 +2345,7 @@ public import FLT.Mazur.AffineModulePullbackSections
 public import FLT.Mazur.AffineModuleSupport
 public import FLT.Mazur.AffineNodeNormalizationExact
 public import FLT.Mazur.AffineOpenCartesianSections
+public import FLT.Mazur.AffineOpenCechBoundary
 public import FLT.Mazur.AffineOpenDenominators
 public import FLT.Mazur.AffinePullbackEpiReflection
 public import FLT.Mazur.AffinePullbackIdeal
@@ -2498,6 +2500,7 @@ public import FLT.Mazur.CurveNodeAffineCompletion
 public import FLT.Mazur.CurveNodeOpenCover
 public import FLT.Mazur.CurveNodeOpenImmersion
 public import FLT.Mazur.CurvePositiveDegreeAffineSection
+public import FLT.Mazur.CurvePositiveDegreeCohomologyVanishing
 public import FLT.Mazur.CurvePositiveDegreeSections
 public import FLT.Mazur.CuspCollision
 public import FLT.Mazur.CuspOrderNumerator
@@ -2554,6 +2557,7 @@ public import FLT.Mazur.FaithfullyFlatFinitePresentation
 public import FLT.Mazur.FamilyTransport
 public import FLT.Mazur.FiniteAffineCoverDimension
 public import FLT.Mazur.FiniteAffineCoverFiniteness
+public import FLT.Mazur.FiniteAffineLineCover
 public import FLT.Mazur.FiniteCechCyclesScalars
 public import FLT.Mazur.FiniteCechTermScalars
 public import FLT.Mazur.FiniteDivisorCohomology
@@ -2639,6 +2643,7 @@ public import FLT.Mazur.IdealPowerExtensionGluing
 public import FLT.Mazur.IdealQuotientExact
 public import FLT.Mazur.IdealTwistCohomologyStabilization
 public import FLT.Mazur.IdealTwistCohomologySystem
+public import FLT.Mazur.IdealTwistCohomologyVanishing
 public import FLT.Mazur.IdealTwistSectionOpen
 public import FLT.Mazur.IdealTwistTransitionExact
 public import FLT.Mazur.IncreasingCechComplex
@@ -2654,11 +2659,15 @@ public import FLT.Mazur.LineEndpointTransport
 public import FLT.Mazur.LinePowerEvaluationDescent
 public import FLT.Mazur.LinePowerSectionBaseChange
 public import FLT.Mazur.LinePullbackRestriction
+public import FLT.Mazur.LineSectionCohomologyAnnihilation
 public import FLT.Mazur.LineSectionGenericOpen
+public import FLT.Mazur.LineSectionTwistCoordinates
+public import FLT.Mazur.LineSectionTwistRestriction
 public import FLT.Mazur.LineSectionTwistSystem
 public import FLT.Mazur.LineSheafDualEvaluation
 public import FLT.Mazur.LineStructureProjection
 public import FLT.Mazur.LocalCartierGeneratorDescent
+public import FLT.Mazur.LocalLineTwistLocalization
 public import FLT.Mazur.LocalizationCech
 public import FLT.Mazur.LocalizationCechCompare
 public import FLT.Mazur.LocalizationCechExact
@@ -3211,6 +3220,9 @@ public import FLT.Mazur.SegreChartQuotient
 public import FLT.Mazur.SegreClosedImmersion
 public import FLT.Mazur.SegreSchemeMorphism
 public import FLT.Mazur.SeparatedOpenCover
+public import FLT.Mazur.SequentialCechLocalization
+public import FLT.Mazur.SequentialCochainBoundary
+public import FLT.Mazur.SequentialFiniteProducts
 public import FLT.Mazur.SmoothCurveDimension
 public import FLT.Mazur.SmoothDimension
 public import FLT.Mazur.SmoothDimensionBound
@@ -3227,6 +3239,7 @@ public import FLT.Mazur.TensorPowerReassociation
 public import FLT.Mazur.TernaryOpenDescent
 public import FLT.Mazur.TildePrincipalOpen
 public import FLT.Mazur.TorusChartScalars
+public import FLT.Mazur.TrivialLineTwistLocalization
 public import FLT.Mazur.UniversallyClosedFiniteCover
 public import FLT.Mazur.VeryAmpleAffineSections
 public import FLT.Mazur.VeryAmplePresentationBaseChange
