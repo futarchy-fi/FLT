@@ -1425,3 +1425,35 @@ Then prove torsion-freeness, finite freeness, integral-dual reduction,
 Cartier-dual limit compatibility, and period pairing in the existing D2
 order. A pointwise colimit definition or a finite-level kernel equivalence
 does not establish any of those claims or remove the family admission.
+
+### W39 implementation boundary
+
+L1–L5 and L6a now have capped modules. `PDivisiblePointColimit` constructs
+the functor with injective original level maps. `PDivisibleColimitLifting`
+proves the exact higher-level lifting criterion, without asserting
+surjectivity. `SquareZeroAugmentationPoints` identifies the actual kernel
+of reduction with J-valued tangents and hence with maps from the original
+augmentation cotangent quotient. `SquareZeroPointDifference` translates
+equal-reduction points using the original antipode, proves recovery and
+the group cocycle identity, and identifies that discrepancy with a tangent.
+It does not establish the flat-base-change or quasi-coherent comparisons
+required in L7a/L7b.
+
+`FaithfullyFlatPointDescent` constructs the unique affine algebra point
+from equal overlap pullbacks and proves that a prescribed reduction can
+be checked after an injective comparison. `PDivisibleDivisionCover`
+constructs the actual tensor-product cover of C carrying a division point
+for the specified reduction. It proves faithful flatness, without claiming
+that this cover lifts to B or that it is finitely presented.
+
+L6b (a lifted division cover) and L7b (affine infinitesimal cocycle
+correction, with flat-base-change and finite-stage compatibility) remain
+large missing theory. L8/L9, connected formal representability, cotangent
+limit identification/freeness, integral-dual reduction and all period
+comparison gates remain open. No new premise or record field supplies
+any of these conclusions. The family admission is unchanged.
+
+Validation is reproducible through `W39_FINAL_CHECKS.py` and the commands
+in untracked `FAMILY_W39_DONE.md`; that report carries the checked time,
+local commits and evidence. New modules are built in the foreground,
+linted individually, and all named declarations receive an axiom audit.
