@@ -3084,3 +3084,52 @@ untracked `FAMILY_W62_DONE.md`. Recheck `python3 W62_FINAL_CHECKS.py`;
 `python3 W62_VALIDATE.py` builds and lints one new module at a time, and
 `python3 W62_RUN_AXIOMS.py` audits every source-named declaration and the
 original family boundary. The required root build follows the main merge.
+
+## W63 perfect Tate duality prerequisites
+
+Work in the original system, without comparison hypotheses. Each new complete
+module has cap 150 lines. First prove generic exactness from the specified
+closed inclusions, faithfully flat reductions, kernel equations and ranks
+(`PDivisibleGenericExactness`). Then prove coherent p-power division and the
+actual Tate quotient comparison (`PDivisibleTateReduction`). Lift finite-level
+generators through the compact inverse limit (`PDivisibleTateFinite`), and
+prove torsion-freeness and freeness (`PDivisibleTateFree`). Rank control and
+perfect Cartier duality follow these prerequisites; connected Hodge–Tate
+exactness, both-component compatibility and filtered de Rham comparison remain
+separate gates. No map or nondegeneracy theorem alone closes those gates.
+
+W63 refinement (cap 150 each): `PDivisibleTateRank` identifies tensor reduction
+with the original finite points and proves rank equals height.
+`TateRootModule` builds the genuine coherent-root target with residue scalar
+actions. Integral perfectness must construct all root-valued linear
+functionals from actual dual Tate vectors; it cannot follow from equal rank
+and integral nondegeneracy alone.
+
+W63 further leaves, each cap 150: `PDivisibleFiniteRootPairing` proves finite
+bilinearity, `PDivisibleTateRootPairing` packages the original root-valued
+limit map, and `PDivisibleRootFunctionalDescent` descends every root-valued
+linear functional to the original finite levels. `PDivisibleTateRootDuality`
+proves coherence of its finite Cartier representatives and hence perfect
+integral duality. `ConstantRationalTateBasis` proves that the prescribed
+constant Tate generator is a basis. `RationalPlaceTateRootRank` identifies
+its dual Tate module with the actual roots and proves finite freeness and
+rank one (using the existing odd-prime constant-system constructor).
+`PDivisibleTateRootGalois` proves original Galois compatibility, and
+`RationalPlaceTateRealizationRank` computes the full C_p realization ranks.
+These leave the standard positive cyclotomic twist identification and the
+actual left Hodge–Tate map as distinct HT1
+work. HT2–HT3, filtered period realization and weights are not consequences
+of integral duality alone.
+
+W63 final refinement (cap 150): `RationalPlaceTateRootDuality` uses the proved
+finite freeness to commute Hom with C_p scalar extension, giving perfect
+duality on the original full realizations with the genuine root-line target.
+The remaining HT1 identification is with the standard positive cyclotomic
+twist, followed by transport of the Lie transpose to the actual left map.
+
+W63 verification is recorded with source hashes and checked-at timestamps in
+`W63_VALIDATION.json` and `W63_AXIOM_RESULT.json`; `W63_ROOT_BUILD_RESULT.json`
+records the root build after the main merge. Recheck all claims with
+`python3 W63_FINAL_CHECKS.py`. The untracked `FAMILY_W63_DONE.md` lists the
+individual leaves and exact remaining boundary. The original family admission
+and the constant-system sanity check are unchanged.

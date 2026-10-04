@@ -733,6 +733,7 @@ public import FLT.GroupScheme.ConstantRationalCartierPeriod
 public import FLT.GroupScheme.ConstantRationalPowerLevels
 public import FLT.GroupScheme.ConstantRationalPowerSystem
 public import FLT.GroupScheme.ConstantRationalTateAction
+public import FLT.GroupScheme.ConstantRationalTateBasis
 public import FLT.GroupScheme.ConstantRationalTateVectors
 public import FLT.GroupScheme.ContinuousKummerClass
 public import FLT.GroupScheme.ContinuousKummerParameter
@@ -1075,8 +1076,10 @@ public import FLT.GroupScheme.PDivisibleCotangentTensorCompletion
 public import FLT.GroupScheme.PDivisibleCotangentTensorReduction
 public import FLT.GroupScheme.PDivisibleCotangentTransitions
 public import FLT.GroupScheme.PDivisibleDivisionCover
+public import FLT.GroupScheme.PDivisibleFiniteRootPairing
 public import FLT.GroupScheme.PDivisibleFormalCotangent
 public import FLT.GroupScheme.PDivisibleFormalSmoothness
+public import FLT.GroupScheme.PDivisibleGenericExactness
 public import FLT.GroupScheme.PDivisibleInfinitesimalColimit
 public import FLT.GroupScheme.PDivisibleInfinitesimalCorrection
 public import FLT.GroupScheme.PDivisibleInfinitesimalFlatCover
@@ -1108,6 +1111,7 @@ public import FLT.GroupScheme.PDivisibleRationalCotangent
 public import FLT.GroupScheme.PDivisibleRationalPlaceTransport
 public import FLT.GroupScheme.PDivisibleRationalTateAction
 public import FLT.GroupScheme.PDivisibleReducedCartierPairing
+public import FLT.GroupScheme.PDivisibleRootFunctionalDescent
 public import FLT.GroupScheme.PDivisibleSquareZeroColimitLift
 public import FLT.GroupScheme.PDivisibleSquareZeroFormalSmoothness
 public import FLT.GroupScheme.PDivisibleSquareZeroLifting
@@ -1119,8 +1123,15 @@ public import FLT.GroupScheme.PDivisibleTangentStabilization
 public import FLT.GroupScheme.PDivisibleTateAction
 public import FLT.GroupScheme.PDivisibleTateCompact
 public import FLT.GroupScheme.PDivisibleTateEvaluationSurjective
+public import FLT.GroupScheme.PDivisibleTateFinite
+public import FLT.GroupScheme.PDivisibleTateFree
 public import FLT.GroupScheme.PDivisibleTateInfinitesimal
 public import FLT.GroupScheme.PDivisibleTateModule
+public import FLT.GroupScheme.PDivisibleTateRank
+public import FLT.GroupScheme.PDivisibleTateReduction
+public import FLT.GroupScheme.PDivisibleTateRootDuality
+public import FLT.GroupScheme.PDivisibleTateRootGalois
+public import FLT.GroupScheme.PDivisibleTateRootPairing
 public import FLT.GroupScheme.PDivisibleTateSequences
 public import FLT.GroupScheme.PDivisibleTateTopology
 public import FLT.GroupScheme.PDivisibleUniversalCover
@@ -1242,8 +1253,11 @@ public import FLT.GroupScheme.RationalPlaceTateInfinitesimal
 public import FLT.GroupScheme.RationalPlaceTateInfinitesimalFinite
 public import FLT.GroupScheme.RationalPlaceTatePrecisionLift
 public import FLT.GroupScheme.RationalPlaceTateRealizationGalois
+public import FLT.GroupScheme.RationalPlaceTateRealizationRank
 public import FLT.GroupScheme.RationalPlaceTateReducedCartier
 public import FLT.GroupScheme.RationalPlaceTateReducedUnramified
+public import FLT.GroupScheme.RationalPlaceTateRootDuality
+public import FLT.GroupScheme.RationalPlaceTateRootRank
 public import FLT.GroupScheme.RationalPlaceTateTangentAdditivity
 public import FLT.GroupScheme.RationalPlaceTateTangentEvaluation
 public import FLT.GroupScheme.RationalPlaceTateTangentLinearity
@@ -1517,6 +1531,7 @@ public import FLT.GroupScheme.SupportedKummerValuations
 public import FLT.GroupScheme.SurjectiveReductionBaseChange
 public import FLT.GroupScheme.SurjectiveSquareKernel
 public import FLT.GroupScheme.TateProjectionSurjective
+public import FLT.GroupScheme.TateRootModule
 public import FLT.GroupScheme.ThreeAdicCubes
 public import FLT.GroupScheme.ThreeAdicLocalPresentation
 public import FLT.GroupScheme.ThreeAdicModelBaseChange
