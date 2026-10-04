@@ -3164,3 +3164,31 @@ connected system without accepting it as data, then establish the exact
 kernel and assemble through the connected-etale extension. Full HT3,
 DR1/P2-P6, W1-W3 and replacement of the original family admission remain
 separate work. The original constant-system period sanity check is retained.
+
+## W66: check the direction before applying Tate comparison
+
+The proposed map `T(G) tensor C -> t_(G^dual)^* tensor C` is a quotient
+map in the Hodge–Tate sequence; it is not generally injective. A Tate twist
+does not change this dimension obstruction. In the current API,
+`rationalPlaceHodgeTateDlogLinear X` has source the realization of
+`X.cartierDual`, and target the cotangent realization of `X`.
+For the constant height-one system X, its target is zero and its source has
+dimension one. Thus the proposed injectivity step, as written, is false.
+The transpose has a different source, and its injectivity remains the
+comparison theorem, equivalent to surjectivity of this dlog map.
+
+Split before implementation (each new module capped at 150 lines):
+
+| Leaf | Module / obligation | Dependency / status at split |
+|---|---|---|
+| a0 | `AugmentationUnramifiedCotangent`: zero augmentation cotangent for an unramified algebra | Prove from formal etaleness of the augmentation |
+| a1 | `ConstantRationalHodgeTateDlog`: zero dlog, one-dimensional source, failure of injectivity on the actual constant system | a0 and existing Tate rank theorem |
+| a2 | Logarithm comparison for the original connected system and its dual | Open analytic input; do not assume injectivity of dlog |
+| a3 | Injectivity of the actual transposed Lie-to-Tate map | Requires a2, not dimension counting alone |
+| b | Orthogonality of actual left/right maps | Already `rationalPlaceHodgeTate_range_le_ker`; full dual pairing compatibility remains HT3 |
+| c | Dimension sum for original Lie modules and dual | Must justify the original cotangent ranks, not merely Tate rank = height |
+| d | Image = kernel and right surjectivity for original maps | Requires a3, b, c and the corresponding dual comparison |
+
+Leaves a2–d name mathematical obligations, not new records containing those
+obligations as fields. Do not add conditional exactness wrappers in place
+of the missing comparison. HT3, DR1/P2–P6 and W1–W3 remain downstream.
