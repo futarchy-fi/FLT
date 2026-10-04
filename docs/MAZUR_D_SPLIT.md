@@ -266,3 +266,18 @@ After F2b: multiplication series F2c, convergent comparison F2d, valuation bound
 F3, the actual Néron model/component classification C1, semistability S1/S2,
 components C2/C3/Cp, and abelian torsion closure/odd-prime specialization D5/D6.
 No claim is made to finish those leaves or to remove `Mazur_statement`.
+
+### D-W3 validation (2026-10-04 23:28 UTC)
+
+All eight modules built in the foreground and passed separate one-module linters.
+All 47 new theorems have only propext, Classical.choice and Quot.sound in their
+axiom sets. Modules have 87–151 physical lines against caps of 240. The
+implementation commits are `7be7c9f2` and `c0b96992`; no push was made.
+
+Fetched origin/main at `988a75e5` and merged it in `280af779`. The required
+foreground `LEAN_NUM_THREADS=2 lake build FLT` passed all 12,545 jobs, including
+FLT and FermatsLastTheorem, with no declaration clashes. Root imports are sorted
+and unique; `git diff --check` passes. Recheck evidence in
+`Scratch/MazurDW3/root-build.log`, `*lint.log`, and `axioms.log`; re-run the 47
+axiom checks with `lake env lean Scratch/MazurDW3/Axioms.lean`. The guarded global
+theorem check still includes Mazur_statement and sorryAx. F2b onward remains open.
