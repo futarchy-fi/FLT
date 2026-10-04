@@ -619,6 +619,7 @@ public import FLT.GroupScheme.CoactionBasisProjectors
 public import FLT.GroupScheme.CoactionDescentLaws
 public import FLT.GroupScheme.CoactionTorsorGrading
 public import FLT.GroupScheme.CompletionDifferent
+public import FLT.GroupScheme.ComponentLocalizedKernel
 public import FLT.GroupScheme.ConnectedTensorPoint
 public import FLT.GroupScheme.ConstantCartierDual
 public import FLT.GroupScheme.ConstantCoordinates
@@ -650,6 +651,11 @@ public import FLT.GroupScheme.DiagonalizableFiniteFlat
 public import FLT.GroupScheme.DiagonalizablePointPurity
 public import FLT.GroupScheme.DirectLimitFiniteRelation
 public import FLT.GroupScheme.DivisionGeometricFibre
+public import FLT.GroupScheme.DivisionPullbackFibreLocalCI
+public import FLT.GroupScheme.DivisionResidueFibreComparison
+public import FLT.GroupScheme.DivisionResidueFiniteCharts
+public import FLT.GroupScheme.DivisionResidueLocalCI
+public import FLT.GroupScheme.DivisionResidueRegularPresentation
 public import FLT.GroupScheme.EtaleBaseChangeTower
 public import FLT.GroupScheme.EtaleGenericMorphismExtension
 public import FLT.GroupScheme.EtaleGroupAlgebra
@@ -748,6 +754,7 @@ public import FLT.GroupScheme.GenericFieldChange
 public import FLT.GroupScheme.GenericMorphismScalarExtension
 public import FLT.GroupScheme.GeometricDivisionLocalCI
 public import FLT.GroupScheme.GeometricFibrePoint
+public import FLT.GroupScheme.GeometricHopfLocalizedKernel
 public import FLT.GroupScheme.GlobalModel
 public import FLT.GroupScheme.GlobalModelAwayTwo
 public import FLT.GroupScheme.GlobalModelOverInt
@@ -760,6 +767,8 @@ public import FLT.GroupScheme.HenselianIdempotents
 public import FLT.GroupScheme.HopfDifferentials
 public import FLT.GroupScheme.HopfFiberPointAction
 public import FLT.GroupScheme.HopfFrobenius
+public import FLT.GroupScheme.HopfGeometricPointDescent
+public import FLT.GroupScheme.HopfGeometricPresentationDescent
 public import FLT.GroupScheme.HopfPointCongruence
 public import FLT.GroupScheme.HopfPointFiberCoactionLaws
 public import FLT.GroupScheme.HopfPointFiberDescent
@@ -1852,6 +1861,9 @@ public import FLT.Mathlib.RingTheory.DiscreteValuationRing.UnramifiedSubalgebra
 public import FLT.Mathlib.RingTheory.Discriminant
 public import FLT.Mathlib.RingTheory.FaithfullyFlatPresentationDescent
 public import FLT.Mathlib.RingTheory.FiniteTorsionModule
+public import FLT.Mathlib.RingTheory.Flat.FibreRelationLifting
+public import FLT.Mathlib.RingTheory.Flat.PresentationKernelIntersection
+public import FLT.Mathlib.RingTheory.Flat.ReducedPresentation
 public import FLT.Mathlib.RingTheory.FlatIdealBaseChange
 public import FLT.Mathlib.RingTheory.FrobeniusAugmentation
 public import FLT.Mathlib.RingTheory.FrobeniusImage
@@ -1871,10 +1883,13 @@ public import FLT.Mathlib.RingTheory.Localization.QuotientAwayPresentation
 public import FLT.Mathlib.RingTheory.LocalizedPresentation
 public import FLT.Mathlib.RingTheory.LocalizedRelationReduction
 public import FLT.Mathlib.RingTheory.MvPolynomial.CoefficientKernel
+public import FLT.Mathlib.RingTheory.MvPolynomial.CoefficientPresentation
 public import FLT.Mathlib.RingTheory.MvPolynomial.FiniteFieldDescent
 public import FLT.Mathlib.RingTheory.MvPolynomial.FiniteFieldPresentationDescent
 public import FLT.Mathlib.RingTheory.MvPolynomial.FrobeniusGenerators
 public import FLT.Mathlib.RingTheory.MvPolynomial.FrobeniusRelationDescent
+public import FLT.Mathlib.RingTheory.MvPolynomial.GeometricPointLocalization
+public import FLT.Mathlib.RingTheory.MvPolynomial.GeometricRegularDescent
 public import FLT.Mathlib.RingTheory.MvPolynomial.GraphIdeal
 public import FLT.Mathlib.RingTheory.MvPolynomial.GraphRegularSequence
 public import FLT.Mathlib.RingTheory.MvPolynomial.HeightOneIdeal
@@ -1889,6 +1904,7 @@ public import FLT.Mathlib.RingTheory.MvPolynomial.OriginResidue
 public import FLT.Mathlib.RingTheory.MvPolynomial.OriginTensorEquiv
 public import FLT.Mathlib.RingTheory.MvPolynomial.OriginTensorMaps
 public import FLT.Mathlib.RingTheory.MvPolynomial.RedundantCoordinates
+public import FLT.Mathlib.RingTheory.MvPolynomial.ResidueGeometricPoint
 public import FLT.Mathlib.RingTheory.MvPolynomial.TranslatedVariables
 public import FLT.Mathlib.RingTheory.MvPolynomial.VariableRegularSequence
 public import FLT.Mathlib.RingTheory.NilpotentGeneratorLifting
@@ -1909,6 +1925,7 @@ public import FLT.Mathlib.RingTheory.Regular.AssociatedPrimeQuotient
 public import FLT.Mathlib.RingTheory.Regular.ClearLocalizedRelations
 public import FLT.Mathlib.RingTheory.Regular.FaithfullyFlatDescent
 public import FLT.Mathlib.RingTheory.Regular.FiniteLocalizationInjectivity
+public import FLT.Mathlib.RingTheory.Regular.FinitePresentationCover
 public import FLT.Mathlib.RingTheory.Regular.FinitePrincipalIdealCover
 public import FLT.Mathlib.RingTheory.Regular.LengthBound
 public import FLT.Mathlib.RingTheory.Regular.LocalizationInjectivity
