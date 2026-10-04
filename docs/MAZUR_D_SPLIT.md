@@ -302,3 +302,33 @@ and unique; `git diff --check` passes. Recheck evidence in
 `Scratch/MazurDW3/root-build.log`, `*lint.log`, and `axioms.log`; re-run the 47
 axiom checks with `lake env lean Scratch/MazurDW3/Axioms.lean`. The guarded global
 theorem check still includes Mazur_statement and sorryAx. F2b onward remains open.
+
+### D-W4 construction boundary and validation (2026-10-04 23:54 UTC)
+
+The nine construction leaves A1-F2b.i through A1-F2b.iv.5 are implemented in
+`f0aea5d4` and `ac1e7330`. They construct an integral two-variable addition
+candidate over every commutative ring. Its constant coefficient is zero, both
+linear coefficients are one, its axis restrictions are the identity, and it is
+symmetric. The secant and third-intersection equations hold even on the diagonal;
+only denominators with constant coefficient one are inverted. Formal negation
+is an involution. The entire construction commutes with zero-constant formal
+substitution.
+
+A1-F2b.v remains open: the series has not been proved associative or packaged
+as a `FormalGroup`. There is no comparison with actual E₁ addition or convergent
+evaluation. F2c/F2d/F3 and every later arithmetic leaf remain open.
+
+Read-only checks: all nine foreground module builds and nine separate module
+linters passed (`Scratch/MazurDW4/*-lint.log`). All 59 new theorem axiom sets
+contain only propext, Classical.choice and Quot.sound (`lake env lean
+Scratch/MazurDW4/Axioms.lean`, captured in `axioms.log`). The modules have
+65–127 physical lines against their 240-line caps. Root imports are sorted and
+unique; `git diff --check` passes. No existing Lean module was edited except
+the root imports.
+
+Fetched origin/main at `3509f324` over authenticated HTTPS (SSH authentication
+failed); `git merge origin/main` reported already up to date. The required
+foreground `LEAN_NUM_THREADS=2 lake build FLT` passed all 12,563 jobs, including
+FLT and FermatsLastTheorem, with no declaration clashes (`root-build.log`).
+The final theorem audit still lists Mazur_statement and sorryAx, checked by
+`lake env lean Scratch/MazurDW4/GlobalAxioms.lean` (`global-axioms.log`).
