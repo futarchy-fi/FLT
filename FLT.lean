@@ -603,6 +603,7 @@ public import FLT.GroupScheme.EtaleModelIdentification
 public import FLT.GroupScheme.EtaleModelUnramified
 public import FLT.GroupScheme.EtaleOrder
 public import FLT.GroupScheme.EtaleSplitting
+public import FLT.GroupScheme.FaithfullyFlatPointDescent
 public import FLT.GroupScheme.FaithfullyFlatQuotient
 public import FLT.GroupScheme.FaithfullyFlatRetraction
 public import FLT.GroupScheme.FiniteFlat
@@ -752,6 +753,7 @@ public import FLT.GroupScheme.ModelPoints
 public import FLT.GroupScheme.MuThreeCubicCoordinates
 public import FLT.GroupScheme.MultiplicativeFiltrationPurity
 public import FLT.GroupScheme.OrderThreeModelIdentification
+public import FLT.GroupScheme.PDivisibleColimitLifting
 public import FLT.GroupScheme.PDivisibleCotangentArithmetic
 public import FLT.GroupScheme.PDivisibleCotangentComplete
 public import FLT.GroupScheme.PDivisibleCotangentExactness
@@ -762,7 +764,9 @@ public import FLT.GroupScheme.PDivisibleCotangentLimitFinite
 public import FLT.GroupScheme.PDivisibleCotangentLimitReduction
 public import FLT.GroupScheme.PDivisibleCotangentSurjective
 public import FLT.GroupScheme.PDivisibleCotangentTransitions
+public import FLT.GroupScheme.PDivisibleDivisionCover
 public import FLT.GroupScheme.PDivisibleIntegralTangent
+public import FLT.GroupScheme.PDivisiblePointColimit
 public import FLT.GroupScheme.PDivisibleRationalCotangent
 public import FLT.GroupScheme.PDivisibleRationalPlaceTransport
 public import FLT.GroupScheme.PDivisibleRationalTateAction
@@ -1060,9 +1064,11 @@ public import FLT.GroupScheme.SplitKummerGeneralPointLaw
 public import FLT.GroupScheme.SplitKummerModel
 public import FLT.GroupScheme.SplitKummerPointLaw
 public import FLT.GroupScheme.SplitKummerResidue
+public import FLT.GroupScheme.SquareZeroAugmentationPoints
 public import FLT.GroupScheme.SquareZeroConvolution
 public import FLT.GroupScheme.SquareZeroConvolutionLift
 public import FLT.GroupScheme.SquareZeroLiftNaturality
+public import FLT.GroupScheme.SquareZeroPointDifference
 public import FLT.GroupScheme.SquareZeroPointLift
 public import FLT.GroupScheme.StableSubgroupExtension
 public import FLT.GroupScheme.SupportedKummerCubes
