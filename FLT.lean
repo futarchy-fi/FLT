@@ -2010,6 +2010,7 @@ public import FLT.Mazur.AnnihilatorSubsheaf
 public import FLT.Mazur.BinaryOpenDescent
 public import FLT.Mazur.CartierChartFlat
 public import FLT.Mazur.CartierCharts
+public import FLT.Mazur.CartierIdealStalkDescent
 public import FLT.Mazur.CartierTensorRank
 public import FLT.Mazur.CechAcyclicCokernel
 public import FLT.Mazur.CechAcyclicComparison
@@ -2160,6 +2161,7 @@ public import FLT.Mazur.EvaluatedPrincipalRefinement
 public import FLT.Mazur.ExactFunctorInjectiveExt
 public import FLT.Mazur.ExactSourceDenominatorLift
 public import FLT.Mazur.FCurveContracts
+public import FLT.Mazur.FaithfullyFlatFinitePresentation
 public import FLT.Mazur.FamilyTransport
 public import FLT.Mazur.FiniteAffineCoverDimension
 public import FLT.Mazur.FiniteAffineCoverFiniteness
@@ -2171,8 +2173,10 @@ public import FLT.Mazur.GeneralizedCurveBaseChange
 public import FLT.Mazur.GeneralizedCurveBaseChangeCoherence
 public import FLT.Mazur.GeneralizedCurveBaseChangeIso
 public import FLT.Mazur.GeneralizedCurveCartierGenerator
+public import FLT.Mazur.GeneralizedCurveCartierStalks
 public import FLT.Mazur.GeneralizedCurveCategory
 public import FLT.Mazur.GeneralizedCurveCyclicSubgroup
+public import FLT.Mazur.GeneralizedCurveDivisorPullback
 public import FLT.Mazur.GeneralizedCurveFiniteSubgroup
 public import FLT.Mazur.GeneralizedCurveGeneratorTransport
 public import FLT.Mazur.GeneralizedCurveGraph
@@ -2196,6 +2200,7 @@ public import FLT.Mazur.GroupSectionBaseChange
 public import FLT.Mazur.HigherDirectImageOpenSheafification
 public import FLT.Mazur.HigherDirectImagePresheaf
 public import FLT.Mazur.HigherDirectImagePresheafRestriction
+public import FLT.Mazur.IdealModulePrincipalPullback
 public import FLT.Mazur.IdealModulePullback
 public import FLT.Mazur.IdealModulePullbackRestrict
 public import FLT.Mazur.IdealModuleSheaf
@@ -2214,6 +2219,7 @@ public import FLT.Mazur.LaurentUnitPoints
 public import FLT.Mazur.LineEndpointTransport
 public import FLT.Mazur.LinePullbackRestriction
 public import FLT.Mazur.LineStructureProjection
+public import FLT.Mazur.LocalCartierGeneratorDescent
 public import FLT.Mazur.LocalizationCech
 public import FLT.Mazur.LocalizationCechCompare
 public import FLT.Mazur.LocalizationCechExact
@@ -2645,8 +2651,11 @@ public import FLT.Mazur.PuncturedNodeRestrictionComparison
 public import FLT.Mazur.PushforwardCech
 public import FLT.Mazur.RationalFibers
 public import FLT.Mazur.RefinedChartSpectrum
+public import FLT.Mazur.RelativeAmplePresentationTransport
 public import FLT.Mazur.RelativeCartier
 public import FLT.Mazur.RelativeCartierBaseChange
+public import FLT.Mazur.RelativeCartierDivisorPullback
+public import FLT.Mazur.RelativeCartierIdealPullback
 public import FLT.Mazur.RelativeDirectImageComposition
 public import FLT.Mazur.RelativeDirectImageForgetting
 public import FLT.Mazur.RelativeDirectImageOpenResolution
@@ -2695,6 +2704,7 @@ public import FLT.Mazur.TernaryOpenDescent
 public import FLT.Mazur.TildePrincipalOpen
 public import FLT.Mazur.TorusChartScalars
 public import FLT.Mazur.UniversallyClosedFiniteCover
+public import FLT.Mazur.VeryAmplePresentationBaseChange
 public import FLT.MazurChapter.AdmissibleGroupSchemes
 public import FLT.MazurW
 public import FLT.MazurWOfPrimeTorsion

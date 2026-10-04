@@ -2,6 +2,27 @@
 
 
 
+## W52 refinement
+
+The [W52 split](MAZUR_W52_SPLIT.md) supersedes W51's ideal-comparison gap.
+`relativeCartierIdealPullback` proves the canonical ideal comparison invertible
+for every relative Cartier base change. `relativeCartierDivisorPullbackIso`
+preserves the canonical section and `relativeCartierDivisorPowerPullbackIso`
+transports every tensor power. `IsCyclic.ideal_stalk_generator` descends actual
+regular ideal stalk generators, and `finitePresentation_of_faithfullyFlat`
+supplies module finite-presentation descent. `VeryAmplePresentation.baseChange`
+and `relativeAmple_affinePower_baseChange` prove arbitrary affine coefficient
+change of an actual positive-power projective presentation.
+
+Global Cartier neighborhoods and general relative ampleness base change/descent
+remain open. Stacks 0D2S supplies the arbitrary-base fiber-neighborhood source;
+0D2P supplies fpqc descent of relative ampleness. Their comparison with the
+project's presentation predicate and their foundational theory remain to be
+formalized. A7–A8 remain gated; `Mazur_statement` is still required.
+
+Checked-at evidence and reproducible build/lint/axiom commands are recorded
+in the W52 handoff; the W51 section below is historical.
+
 ## W51 proved boundary: A3–A5 and the polygon ample-level example
 
 Checked 2026-10-04 against the local W51 source and foreground module builds.
