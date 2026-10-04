@@ -2364,3 +2364,279 @@ by affine point descent and nilpotent iteration (L7b.4/L8–9). Formal
 smoothness, the later cotangent/duality/period gates, and the replacement
 of `IsHardlyRamified.mem_isCompatible` remain unproved. The existing
 admission module is unchanged, as required by this task's edit boundary.
+
+## W51: local inclusion lifts, actual overlap correction, and formal smoothness
+
+The W50 boundary is resolved by the following capped leaves. Every module
+below has at most 150 lines. The proofs use the original level coordinate
+maps throughout; they introduce no hypothesis asserting liftability,
+formal smoothness, or existence of a correcting cochain.
+
+| Leaf | Modules | Proof obligation |
+|---|---|---|
+| L7b.4a | `LiftedPresentationPoint`, `PrincipalDivisionPoint` | Preserve C-coefficients and the original reduction-map composite when transferring a principal division-chart point through W42's specified presentation equivalence. |
+| L7b.4b | `FiniteProductReductionPoint`, `DivisionLiftedReductionPoint` | Assemble those points on the actual tensor reduction of W50's faithfully flat product cover. |
+| L7b.4c | `DivisionLocalInclusionLift` | Lift the p-power multiple of that division point across the square-zero cover reduction; the original reduction/inclusion equation identifies its reduction with the required inclusion of the original point. |
+| L8a | `FlatCoverPointOverlap`, `FlatCoverDiscrepancyCocycle` | The actual local lift has equal reductions on double overlaps. Its three actual pullbacks satisfy the triple-overlap group/tangent identity. |
+| L8b | `FlatCoverKernelAmitsur`, `FlatCoverKernelDifferential`, `PointDifferenceCotangentEvaluation` | Identify the double-overlap kernel with D tensor D tensor J, retain coordinate evaluations, and intertwine both Amitsur differentials with the actual overlap maps. |
+| L8c | `FlatCoverCotangentDiscrepancy`, `FlatCoverAugmentationMap`, `PDivisibleOverlapCorrection` | Construct the cotangent-valued discrepancy, prove its Amitsur cocycle equation, and apply W41's `exists_original_infinitesimal_correction` to this particular cocycle. |
+| L8d | `InfinitesimalPointCorrection`, `PDivisibleCorrectedLocalPoint` | Translate by the correcting point to obtain equal overlap pullbacks without changing the original reduction. |
+| L9a | `PDivisibleLocalLiftDescent`, `PDivisibleSquareZeroFormalSmoothness` | Faithfully flat affine descent gives a global inclusion lift; consequently the original point colimit is surjective across square-zero thickenings of p-nilpotent algebras. |
+| L9b | `PDivisiblePointEquiv`, `PDivisibleFormalSmoothness` | Iterate along nilpotent ideals and transport through the original quotient-kernel equivalence, retaining an explicit higher-original-level inclusion lift. |
+| Cotangent identification | `PDivisibleInfinitesimalPairing`, `PDivisibleFormalCotangent`, `PDivisibleNilpotentCotangent` | Identify the actual colimit infinitesimal kernel with Hom from the original cotangent inverse limit, with every original finite-level pairing and independence of the chosen annihilating power. |
+
+### Precise lifting theorem
+
+`PDivisibleSystem.pointColimitMap_surjective_nilpotent` proves that, for
+an original system X over the local base R and every surjective R-algebra
+map q : B -> C with nilpotent kernel and nilpotent p in B, the induced map
+`X.PointColimit B -> X.PointColimit C` is surjective.
+`exists_nilpotent_inclusion_lift` states the equivalent original-level
+result: each point x at level n has a lift y at some level m >= n with
+`q.comp y = x.comp (X.inclusion h).toAlgHom`.
+
+The square-zero proof constructs W50's cover internally, transfers its
+specified division point, and applies the multiplication lift on the
+original higher level. It then forms that lift's discrepancy, verifies
+its triple-overlap identity, and identifies its actual kernel-valued
+cotangent cocycle. W41's Amitsur theorem produces a correcting original
+level point. Translation gives equal overlaps, and faithfully flat point
+descent returns a point over B with the prescribed reduction. Nilpotent
+iteration uses successive square-zero quotients and actual test-algebra
+composition. It does not assume a smooth representing algebra.
+
+### Precise cotangent identification
+
+`formalInfinitesimalCotangentEquiv` identifies the actual augmentation
+kernel of the same original point-colimit functor across q with
+`X.cotangentLimit ->ₗ[R] RingHom.ker q`, when q has square-zero kernel
+annihilated by a power of p and the original level cotangent sets are
+finite. `formalInfinitesimalCotangentEquiv_mk` retains the original
+coordinate cotangent functional composed with `X.cotangentEval n` for
+**every** original level n. The equivalence is independent of the
+annihilating power, not merely an equivalence for one chosen level.
+
+`nilpotentInfinitesimalCotangentEquiv` obtains the exponent internally
+from p-nilpotence of B. At the original rational place,
+`rationalPlaceFormalInfinitesimalCotangentEquiv` discharges finite-level
+finiteness using the previously proved theorem. Thus this identification
+has no extra finiteness premise for that original base.
+
+### Boundary after these leaves
+
+These statements prove formal smoothness in the equivalent original
+level-system sense requested in W37's first obligation, and identify its
+infinitesimal functor with the existing cotangent limit. They do not
+construct a complete representing coordinate algebra, nor prove that
+the cotangent limit is torsion-free or finite free. The later dual
+reduction, Cartier-dual limit, period pairing, and family-realization
+gates remain. In particular the existing `mem_isCompatible` admission
+is not replaced; its module is outside this task's edit boundary.
+
+Recheck the implementation with the foreground module builds, individual
+module lints, and named axiom audits recorded in `FAMILY_W51_DONE.md`.
+The handoff records timestamps, commits, and the post-merge root build;
+this section specifies the theorem boundary rather than a live CI status.
+
+## W52: cotangent freeness and reduction of the original integral tangent
+
+The first two obligations after W51 are proved. Formal smoothness is applied
+to actual split square-zero test algebras to obtain functional lifting;
+freeness is a consequence, never a hypothesis in the system-level results.
+Every new module below is capped at 150 whole-file lines.
+
+| Leaf | Module | Proved output |
+|---|---|---|
+| F1 | `AugmentationCotangentNaturality` | Changing test algebras postcomposes the original cotangent functional with the specified reduction-kernel map. |
+| F2 | `PDivisibleCotangentKernelLifting` | W51's nilpotent lifting theorem lifts every represented kernel-valued functional across a surjective square-zero map of test algebras. |
+| F3 | `Mathlib.RingTheory.SplitSquareZeroTest` | The kernel of S plus M is M; module surjections give surjective algebra maps with square-zero kernel, preserving p-nilpotence. |
+| F4 | `PDivisibleCotangentFunctionalLifting` | For every p-nilpotent R-algebra S and every surjection of S-modules M to N, each R-linear functional from the original cotangent limit to N lifts to M. |
+| F5 | `Mathlib.RingTheory.PrincipalPowerTorsion` | In a free module over R/(a^(n+1)), a-torsion is divisible by a^n, by cancellation in the domain R. |
+| F6 | `PDivisibleCotangentPrimeInjective` | Functional lifting into free modules over R/(p^(n+1)) proves multiplication by p injective on the original cotangent inverse limit. |
+| F7 | `PDivisibleCotangentFree` | DVR factorization gives torsion-freeness; prior finite generation gives finite freeness, also at the original rational place. |
+| D1 | `Mathlib.LinearAlgebra.FreeDualReduction` | The integral dual of a free module modulo a is all R/(a)-valued functionals, with the original evaluation formula. |
+| D2 | `PDivisibleIntegralTangentReduction` | The original integral tangent modulo p^n is all functionals on the original level-n cotangent, equivalently its already defined Leibniz tangents. |
+| D3 | `PDivisibleIntegralTangentReductionNaturality` | Reduction preserves original system maps and is independent of the auxiliary base identification; includes the original rational-place pairing. |
+| D4 | `PDivisibleIntegralTangentCoefficients` | Tensoring the integral tangent with any coefficient module gives all cotangent-limit functionals, and all original level functionals for p-power torsion coefficients. |
+| D5 | `PDivisibleIntegralInfinitesimal` | Tensoring the integral tangent with an actual square-zero reduction kernel represents the actual original infinitesimal point colimit and retains its finite-level pairing. |
+| D6 | `PDivisibleIntegralPairingPerfect` | The original integral evaluation pairing is perfect; the cotangent is its tangent's full integral dual. |
+
+### Why infinitesimal lifting proves torsion-freeness
+
+Let x in the original limit satisfy p*x = 0. At each n, equip the original
+level-(n+1) cotangent with its R/(p^(n+1))-action and choose a finite free
+surjection onto it. F4 lifts the original evaluation map through that
+surjection. The lifted image of x is killed by p. Coordinate cancellation
+in F5 makes it divisible by p^n. Its image in the original level-n
+cotangent therefore vanishes. The original inverse-limit extensionality
+then gives x = 0. Factoring every nonzero p-adic scalar as a unit times a
+power of p proves full torsion-freeness. This argument constructs no
+complete representing coordinate algebra and needs none.
+
+The dual reduction comparison sends the class of an integral functional d,
+evaluated on the original level-n image of x, to d(x) modulo p^n. Its
+surjectivity follows from the proved cotangent freeness. For arbitrary
+module coefficients M, the tensor comparison sends d tensor a to the
+functional x ↦ d(x)*a. W51's identification then gives the actual
+infinitesimal-point comparison for every square-zero reduction with
+p-nilpotent source. These are integral tangent statements; they do not
+identify Tate sequences with a period-module basis.
+
+### Remaining Cartier and period boundary
+
+The W29 D2 contracts still require a Cartier-dual level system and a period
+comparison. In particular, `RaynaudCartierDual` supplies individual local
+Cartier-dual models and transposed maps, but does not assemble a dual
+`PDivisibleSystem`. Several existing extension-duality theorems concern
+`FiniteFlatObject` with generic field Q, so they cannot be applied to the
+original rational-place completion without proving the corresponding local
+statements. The next proof-sized split is:
+
+| Next leaf, cap 150 each | Required artifact |
+|---|---|
+| C1 | Transpose the original reduction/inclusion maps; prove identity, composition and both multiplication factorizations on the actual dual coordinate algebras. |
+| C2 | Prove dual closedness and faithful flatness over the local base, including the actual residue-base-change maps. |
+| C3 | Prove the actual dual augmentation-kernel equation, annihilation and coordinate rank; assemble the dual p-divisible system. Split this leaf further before exceeding the cap. |
+| C4 | Construct the dual Tate limit, its original transition/evaluation pairings and compatibility with integral tangent coefficient extension. |
+| P1 | Construct the period pairing from these particular points and the existing period rings; prove its coefficient and level compatibilities. |
+| P2–P6 | Prove integrality, original Galois equivariance, injectivity, surjectivity and filtration strictness, respectively; each remains a separate proof obligation. |
+| W1–W3 | Prove coefficient-embedding decomposition, the two-weight support and the determinant calculation forcing rank one in each prescribed degree. |
+
+No record introduced here assumes a comparison isomorphism or any of these
+remaining conclusions. `IsHardlyRamified.mem_isCompatible` is unchanged
+and still has the existing admission. The later compatible-family
+realization and the final delegation of that admission remain outstanding.
+
+Validation is reproducible with the individual foreground builds, sequential
+module-only lints and named axiom audits recorded in the untracked
+`FAMILY_W52_DONE.md`, `W52_VALIDATION.json` and `W52_AXIOMS.log`.
+
+## W53: actual Cartier-dual system and Tate evaluation
+
+The W52 C1–C3 obligations are implemented over a principal domain with an
+arbitrary characteristic-zero fraction field. They therefore apply to the
+original rational-place completion. No generic-Q extension theorem is used
+to assert local exactness. The complete modules below each have a 150-line cap.
+
+| Leaf | Module | Proved output |
+|---|---|---|
+| C1a | `CartierDualConvolution` | Transposition reverses composition and preserves convolution and its natural powers. |
+| C1b | `RaynaudCartierArithmetic` | Actual integral duals preserve multiplication, annihilation and coordinate rank. |
+| C1c | `PDivisibleCartierTransitions` | The original transposed inclusions/reductions satisfy identity, composition and both multiplication factorizations. |
+| C2 | `CartierDualSurjection` | A surjective coordinate map has faithfully flat transpose, using split injectivity after every residue base change. |
+| C3a | `HopfExactPair` | An actual augmentation-kernel presentation gives the original kernel torsor and its faithfully flat invariants. |
+| C3b | `HopfExactPairAnnihilator` | The annihilator of the actual dual augmentation ideal is exactly the original quotient coordinates. |
+| C3c | `HopfExactPairDualKernel` | The dual augmentation quotient is flat and pairs perfectly with the original quotient coordinates. |
+| C3d | `HopfExactPairDuality` | Integral biduality identifies that quotient with the intended dual; proves dual closedness and the actual dual kernel equation. |
+| C3e | `PDivisibleCartierSystem` | Assembles the actual dual p-divisible system with all structure obligations proved. |
+| C4a | `CartierPairingNaturality` | Geometric evaluation tensors and characters respect transposition of the given Hopf maps. |
+| C4b | `RaynaudCartierPairing` | The specified original and dual local point groups carry their actual Cartier pairing, natural for integral maps. |
+| C4c | `RaynaudCartierPairingLaws` | Additivity in original points and the actual annihilating exponent of each Cartier value. |
+| C4d | `RaynaudCartierPairingGalois` | Original local Galois equivariance of that pairing. |
+| C4e | `PDivisibleCartierTatePairing` | The dual Tate limit, its p-adic linear evaluations, inclusion compatibility, and the paired cyclotomic transition law. |
+| C4f | `PDivisibleCartierTateGalois` | The actual paired sequence lies in the inverse limit of p-power roots and is Galois equivariant. |
+| C4g | `PDivisibleRationalCartier` | Instantiates the actual rational-place dual system and applies the proved integral tangent coefficient comparisons to its own cotangent limit. |
+| C4h | `RaynaudCartierCharacters` | The actual dual point group is the full character group; finite evaluation is additive in both arguments and separates dual points. |
+
+The finite exactness proof takes the original coordinate maps, surjectivity,
+faithful flatness and augmentation-kernel equation. It introduces no new
+record assuming a dual extension or a comparison. Faithfully flat descent
+identifies original quotient coordinates as kernel invariants. Their pairing
+with the dual augmentation quotient is perfect. That quotient is finite
+projective because the transposed inclusion is faithfully flat; integral
+biduality then proves both dual closedness and the required equality of ideals.
+
+For a dual Tate vector y and an original Tate vector x, the value at level n
+is the original Cartier evaluation on their actual n-th coordinates. It is
+killed by p^n, and raising its level-n value to p^(n-m) gives its level-m
+value. The same evaluation on a fixed original point is unchanged by its
+inclusion into a higher level. Galois acts on these values through its
+original action on the algebraic closure of the actual fraction field.
+
+### Remaining C4 and period boundary
+
+The root-valued Tate pairing and the integral tangent coefficient pairings
+are proved separately. Their infinitesimal compatibility has **not** been
+proved. Applying W52 to the dual system gives its integral coefficient
+comparison; it does not identify a Tate vector with an integral tangent
+functional. Consequently C4 as a whole, the period comparison and the family
+admission remain open. The original `mem_isCompatible` module is unchanged.
+
+The next required refinement, with each complete module still capped at 150
+lines, is:
+
+| Next leaf | Required artifact |
+|---|---|
+| C4i | Extend actual finite Cartier characters from generic points to the appropriate integral test algebras, retaining the original coordinate maps. |
+| C4j | Extract their infinitesimal differential/logarithmic derivative and prove independence of representatives and compatibility with the original level transitions. |
+| C4k | Identify that differential with the already proved original integral tangent coefficient evaluation; establish the level/limit formula. |
+| P1a | Construct the period-valued map from those specific Tate vectors and the existing period rings, with the original rational-place field and Galois transport. |
+| P1b | Prove independence and coefficient/level compatibility of the period construction. |
+| P2–P6 | Integrality, original Galois equivariance, injectivity, surjectivity and filtration strictness, separately. |
+| W1–W3 | Coefficient-embedding decomposition, two-weight support and determinant rank-one calculation, followed by compatible-family realization. |
+
+The untracked `FAMILY_W53_DONE.md` records the checked commits and evidence.
+Recheck with the individual foreground builds, module-only lints and named
+axiom audit listed there. No period comparison or removal of the existing
+admission is claimed by these finite and Tate-level constructions.
+
+## W54: integral test characters, their differential, and actual root periods
+
+Every complete new module below is capped at 150 lines. No existing proof
+module is edited. C4i–C4k now have original-coordinate constructions and
+finite/limit evaluation formulas. A separate construction sends the original
+Cartier root sequences into the existing de Rham period ring. **The equality
+between the period's first-order term and the integral cotangent construction
+is still unproved.** Consequently the full P1 comparison and P2–P6 are not
+claimed, and `mem_isCompatible` retains its existing admission.
+
+| Leaf | Module | Proved output |
+|---|---|---|
+| C4i.1 | `CartierTestAlgebra` | Canonical dual tensors for arbitrary integral test algebras; multiplicative Cartier characters valued in actual units. |
+| C4i.2 | `CartierTestNaturality` | Basis-independent evaluation, original coordinate-map naturality and equality with the existing geometric character. |
+| C4i.3 | `CartierTestCoefficients` | Coefficient specialization and original transposed morphisms preserve characters. |
+| C4i.4 | `CartierTestBaseChange` | Original dual bases and Cartier evaluation commute with scalar extension. |
+| C4i.5 | `RaynaudGeometricIntegralPoints` | Every specified geometric point extends uniquely to the actual integral closure; no lifting hypothesis. |
+| C4i.6 | `RaynaudIntegralCartier` | Actual local dual points give integral test characters whose generic values equal the original finite pairing. |
+| C4j.1 | `CartierCotangentTensor` | Canonical original-coordinate representing element and actual augmentation-cotangent tensor; contraction differentiates evaluation. |
+| C4j.2 | `CartierSquareZeroDifferential` | Character minus one equals the linear logarithmic differential on every square-zero point; values lie in the actual reduction kernel. |
+| C4j.3 | `CartierDualElementNaturality` | Coordinate and coefficient transport of representing elements and cotangent tensors. |
+| C4j.4 | `FiniteFlatCartierDifferential` | The original model morphisms preserve the dlog tensors and tangent contractions. |
+| C4j.5 | `PDivisibleCartierDlogLimit` | Actual dual Tate vectors give coherent integral dlog tensors under the original cotangent restrictions, with coefficient compatibility. |
+| C4k.1 | `PDivisibleCartierDifferential` | Original W52 integral tangent coefficient contraction equals the actual differential; limit representatives exist and contraction is independent of them. |
+| C4k.2 | `PDivisibleCartierDlogPairing` | Instantiates that equality and the square-zero character formula on the specified actual dual Tate coordinates. |
+| P1 roots | `PDivisibleRationalCartierRoots` | Original rational-place roots become integral C_p roots, a compatible perfection sequence and a sharp-one element of the existing tilt. |
+| P1 logarithm | `ComplexSharpOneLog` | Any specified sharp-one tilt element has an actual convergent de Rham logarithm, finite truncations, first-order formula and Galois transport. |
+| P1 values | `PDivisibleRationalCartierPeriods` | Period values of pairs of original Tate vectors, finite-precision formulas, uniqueness and first-filtration membership. |
+| P3 values | `PDivisibleRationalCartierPeriodGalois` | Original local Galois equivariance through the fixed rational-place transport, from roots through tilt to actual period values. |
+
+The dlog output is a coherent sequence of **cotangent tensors**. Its
+contraction with integral tangents is proved; it is not asserted to be an
+integral tangent vector. Similarly, the period output is a value attached
+to two Tate vectors. Linearity in those vectors, a comparison isomorphism,
+and any identification of its kernel or image are not inferred from the
+existence of that value.
+
+### Remaining proof obligations, in order
+
+| Next capped leaf | Required artifact |
+|---|---|
+| P1c | Prove additivity and p-adic linearity of the actual Tate dlog/period constructions, including any completion needed in the integral cotangent target. |
+| P1d | Construct the period-to-cotangent first-order identification for these specific original Tate vectors; show the Teichmuller linear term contracts to the C4k integral pairing. This is the next comparison gap. |
+| P1e | Assemble the required one-vector comparison map from that identification, with coefficient and original level compatibility. |
+| P2 | Prove the lattice/integrality statement for that comparison. Integral roots and first-filtration membership of their logarithm do not establish this statement. |
+| P3 | Lift the proved equivariance of root period values to the actual comparison map. |
+| P4–P6 | Prove comparison injectivity, surjectivity and filtration strictness separately. |
+| W1–W3 | Coefficient-embedding decomposition, two-weight support and determinant rank-one calculation, then compatible-family realization. |
+
+The finite cotangents are p-power torsion. Scalar extension directly to a
+ring in which p is invertible therefore loses their tangent information.
+The integral inverse limit and its coefficient completion must precede
+rationalization; the root-period construction alone does not supply that
+comparison.
+
+Only an axiom-clean replacement permits the later delegation of the
+existing admission, whose module is outside this task's edit scope.
+Validation evidence and exact local commits are in the untracked
+`FAMILY_W54_DONE.md`, with reproducible per-module builds/lints and named
+axiom audits. No whole-library lint is used.
