@@ -1950,6 +1950,7 @@ public import FLT.Mazur.InjectiveHorseshoe
 public import FLT.Mazur.IntegralBase
 public import FLT.Mazur.IntegralClosedSupport
 public import FLT.Mazur.IntegralDimension
+public import FLT.Mazur.LaurentRingSurjectivity
 public import FLT.Mazur.LaurentTensor
 public import FLT.Mazur.LaurentUnitPoints
 public import FLT.Mazur.LineEndpointTransport
@@ -1971,6 +1972,7 @@ public import FLT.Mazur.ModuleCohomology
 public import FLT.Mazur.ModuleCohomologyExact
 public import FLT.Mazur.ModuleCohomologyRing
 public import FLT.Mazur.ModuleCohomologyVanishing
+public import FLT.Mazur.ModuleComparedSectionRatio
 public import FLT.Mazur.ModuleDerivedAbelianComparison
 public import FLT.Mazur.ModuleDisjointSectionGluing
 public import FLT.Mazur.ModuleDualSectionCancellation
@@ -1995,13 +1997,19 @@ public import FLT.Mazur.ModulePresheafTensorPullback
 public import FLT.Mazur.ModulePullbackRestrictionPasting
 public import FLT.Mazur.ModulePullbackTrivializationCoherence
 public import FLT.Mazur.ModulePullbackUnitCoherence
+public import FLT.Mazur.ModuleSectionCocycleIso
 public import FLT.Mazur.ModuleSectionIsomorphismTransport
 public import FLT.Mazur.ModuleSectionMap
 public import FLT.Mazur.ModuleSectionProjectiveChart
 public import FLT.Mazur.ModuleSectionProjectiveGluing
+public import FLT.Mazur.ModuleSectionProjectiveOOne
+public import FLT.Mazur.ModuleSectionProjectiveOver
 public import FLT.Mazur.ModuleSectionProjectiveOverlap
+public import FLT.Mazur.ModuleSectionProjectiveTransition
 public import FLT.Mazur.ModuleSectionRatioBasicOpen
+public import FLT.Mazur.ModuleSectionRatioCoordinates
 public import FLT.Mazur.ModuleSectionRatioOpen
+public import FLT.Mazur.ModuleSectionRatioOpenPullback
 public import FLT.Mazur.ModuleSectionRatioPullback
 public import FLT.Mazur.ModuleSectionRatios
 public import FLT.Mazur.ModuleSectionRegularity
@@ -2109,6 +2117,8 @@ public import FLT.Mazur.PolygonAtlasCocone
 public import FLT.Mazur.PolygonAtlasSmoothLocus
 public import FLT.Mazur.PolygonBoundaryDivisor
 public import FLT.Mazur.PolygonBranchDifferenceSheaf
+public import FLT.Mazur.PolygonCanonicalChartPullback
+public import FLT.Mazur.PolygonCanonicalChartRing
 public import FLT.Mazur.PolygonCanonicalSection
 public import FLT.Mazur.PolygonChartScaling
 public import FLT.Mazur.PolygonClassifiedFamily
@@ -2125,10 +2135,17 @@ public import FLT.Mazur.PolygonCubicGenerationCover
 public import FLT.Mazur.PolygonCubicGlobalGeneration
 public import FLT.Mazur.PolygonCubicInterpolation
 public import FLT.Mazur.PolygonCubicNonvanishing
+public import FLT.Mazur.PolygonCubicOOnePullback
 public import FLT.Mazur.PolygonCubicProjectiveCharts
 public import FLT.Mazur.PolygonCubicProjectiveMorphism
+public import FLT.Mazur.PolygonCubicProjectiveOver
 public import FLT.Mazur.PolygonCubicSections
+public import FLT.Mazur.PolygonCubicTorusChart
 public import FLT.Mazur.PolygonCubicTorusGenerator
+public import FLT.Mazur.PolygonCubicTorusImages
+public import FLT.Mazur.PolygonCubicTorusPullback
+public import FLT.Mazur.PolygonCubicTorusRatios
+public import FLT.Mazur.PolygonCubicTorusSurjectivity
 public import FLT.Mazur.PolygonCyclicAtlas
 public import FLT.Mazur.PolygonCyclicCocone
 public import FLT.Mazur.PolygonCyclicDescent
@@ -2165,8 +2182,10 @@ public import FLT.Mazur.PolygonLineNodeRestriction
 public import FLT.Mazur.PolygonLineNormalization
 public import FLT.Mazur.PolygonMarkedSections
 public import FLT.Mazur.PolygonNodalCore
+public import FLT.Mazur.PolygonNodeAffineCharts
 public import FLT.Mazur.PolygonNodeBranches
 public import FLT.Mazur.PolygonNodeCompletionCriterion
+public import FLT.Mazur.PolygonNodeDenominatorCover
 public import FLT.Mazur.PolygonNodeDimension
 public import FLT.Mazur.PolygonNodeEqualizer
 public import FLT.Mazur.PolygonNodeIncidence
@@ -2187,6 +2206,7 @@ public import FLT.Mazur.PolygonNormalizationSectionFamilies
 public import FLT.Mazur.PolygonNormalizationTorusPullback
 public import FLT.Mazur.PolygonNormalizationTransport
 public import FLT.Mazur.PolygonOneGonCompletion
+public import FLT.Mazur.PolygonOneGonDenominator
 public import FLT.Mazur.PolygonPinchingAffineBaseChange
 public import FLT.Mazur.PolygonPinchingDiagram
 public import FLT.Mazur.PolygonPinchingFlatBaseChange
@@ -2204,6 +2224,7 @@ public import FLT.Mazur.PolygonSeparated
 public import FLT.Mazur.PolygonSmoothLocus
 public import FLT.Mazur.PolygonSplitGroup
 public import FLT.Mazur.PolygonSplitNodeCompletion
+public import FLT.Mazur.PolygonSplitNodeDenominator
 public import FLT.Mazur.PolygonStructureInclusion
 public import FLT.Mazur.PolygonTranslationImages
 public import FLT.Mazur.PolygonUniversalAction
@@ -2211,6 +2232,7 @@ public import FLT.Mazur.PolygonUniversalScaling
 public import FLT.Mazur.PolynomialEndpointInterpolation
 public import FLT.Mazur.PowerSeriesQuotientCompletion
 public import FLT.Mazur.PowerSeriesSubstitutionEquiv
+public import FLT.Mazur.PrincipalAffineRefinement
 public import FLT.Mazur.PrincipalSubmoduleCoordinates
 public import FLT.Mazur.PrincipalSubmoduleOverlap
 public import FLT.Mazur.PrincipalSubmoduleSectionLocalization
@@ -2222,6 +2244,7 @@ public import FLT.Mazur.ProjectiveChartEvaluation
 public import FLT.Mazur.ProjectiveChartMapCompatibility
 public import FLT.Mazur.ProjectiveChartNoetherian
 public import FLT.Mazur.ProjectiveChartPolynomialEquiv
+public import FLT.Mazur.ProjectiveChartSectionPullback
 public import FLT.Mazur.ProjectiveCoherentCharts
 public import FLT.Mazur.ProjectiveCoherentCohomology
 public import FLT.Mazur.ProjectiveGeneration
@@ -2231,6 +2254,7 @@ public import FLT.Mazur.ProjectiveLineActionEndpoints
 public import FLT.Mazur.ProjectiveLineActionPoints
 public import FLT.Mazur.ProjectiveLineActionSpecialization
 public import FLT.Mazur.ProjectiveLineActionTorus
+public import FLT.Mazur.ProjectiveLineCanonicalRatios
 public import FLT.Mazur.ProjectiveLineChartIntersection
 public import FLT.Mazur.ProjectiveLineCharts
 public import FLT.Mazur.ProjectiveLineCohomologyVanishing
@@ -2239,6 +2263,7 @@ public import FLT.Mazur.ProjectiveLineEndpointCover
 public import FLT.Mazur.ProjectiveLineEndpoints
 public import FLT.Mazur.ProjectiveLineFieldExtension
 public import FLT.Mazur.ProjectiveLineInteriorGenerator
+public import FLT.Mazur.ProjectiveLineInteriorRatios
 public import FLT.Mazur.ProjectiveLineMarkedCharts
 public import FLT.Mazur.ProjectiveLineMarkedDualCoordinates
 public import FLT.Mazur.ProjectiveLineMarkedEndpointSections
@@ -2283,6 +2308,7 @@ public import FLT.Mazur.ProjectiveTwistCechCohomologyFullSupport
 public import FLT.Mazur.ProjectiveTwistCechCohomologySum
 public import FLT.Mazur.ProjectiveTwistCechCohomologySumHomology
 public import FLT.Mazur.ProjectiveTwistCechCohomologyTwist
+public import FLT.Mazur.ProjectiveTwistChartSection
 public import FLT.Mazur.ProjectiveTwistCocycle
 public import FLT.Mazur.ProjectiveTwistCohomology
 public import FLT.Mazur.ProjectiveTwistGradedCech
@@ -2347,6 +2373,7 @@ public import FLT.Mazur.StructureImageOpenChart
 public import FLT.Mazur.SurjectiveDominantEpi
 public import FLT.Mazur.TernaryOpenDescent
 public import FLT.Mazur.TildePrincipalOpen
+public import FLT.Mazur.TorusChartScalars
 public import FLT.Mazur.UniversallyClosedFiniteCover
 public import FLT.MazurChapter.AdmissibleGroupSchemes
 public import FLT.MazurW
