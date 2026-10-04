@@ -563,6 +563,8 @@ public import FLT.GroupScheme.AmitsurDegreeOneMaps
 public import FLT.GroupScheme.AmitsurFaithfullyFlatExact
 public import FLT.GroupScheme.AmitsurSplitContraction
 public import FLT.GroupScheme.AugmentationKernelNaturality
+public import FLT.GroupScheme.AugmentationKernelPrecomposition
+public import FLT.GroupScheme.AugmentationTangentRelations
 public import FLT.GroupScheme.BialgebraBaseChange
 public import FLT.GroupScheme.CanonicalCompositionSeries
 public import FLT.GroupScheme.CanonicalFactorFiltration
@@ -605,6 +607,8 @@ public import FLT.GroupScheme.ContinuousKummerParameter
 public import FLT.GroupScheme.ConvolutionBaseChange
 public import FLT.GroupScheme.ConvolutionTensorPower
 public import FLT.GroupScheme.CoordinateOrder
+public import FLT.GroupScheme.CotangentAmitsurComparison
+public import FLT.GroupScheme.CotangentAmitsurExact
 public import FLT.GroupScheme.CubicKummerCocycle
 public import FLT.GroupScheme.CyclicPowerElimination
 public import FLT.GroupScheme.CyclotomicModelIdentification
@@ -648,7 +652,13 @@ public import FLT.GroupScheme.FiniteFlatTangentNaturality
 public import FLT.GroupScheme.FiniteFlatTowerClosure
 public import FLT.GroupScheme.FiniteFreeAdicComplete
 public import FLT.GroupScheme.FiniteHopfFreeness
+public import FLT.GroupScheme.FinitePresentationPointCover
+public import FLT.GroupScheme.FlatAugmentationTangent
+public import FLT.GroupScheme.FlatCotangentHomNaturality
+public import FLT.GroupScheme.FlatCoverReductionKernel
+public import FLT.GroupScheme.FlatCoverSquareZero
 public import FLT.GroupScheme.FlatReductionKernel
+public import FLT.GroupScheme.FlatTensorHomKernel
 public import FLT.GroupScheme.FontaineConvolutionApproximation
 public import FLT.GroupScheme.FontaineConvolutionLifting
 public import FLT.GroupScheme.FontaineConvolutionPoint
@@ -703,6 +713,7 @@ public import FLT.GroupScheme.HopfTorsor
 public import FLT.GroupScheme.HopfTorsorDescent
 public import FLT.GroupScheme.HopfTorsorFree
 public import FLT.GroupScheme.InfinitesimalConvolutionAddition
+public import FLT.GroupScheme.InfinitesimalTangentCocycle
 public import FLT.GroupScheme.IntegralCartierConstantPoints
 public import FLT.GroupScheme.IntegralCartierDual
 public import FLT.GroupScheme.IntegralCartierPoints
@@ -785,6 +796,10 @@ public import FLT.GroupScheme.PDivisibleCotangentLimitReduction
 public import FLT.GroupScheme.PDivisibleCotangentSurjective
 public import FLT.GroupScheme.PDivisibleCotangentTransitions
 public import FLT.GroupScheme.PDivisibleDivisionCover
+public import FLT.GroupScheme.PDivisibleInfinitesimalColimit
+public import FLT.GroupScheme.PDivisibleInfinitesimalCorrection
+public import FLT.GroupScheme.PDivisibleInfinitesimalFlatCover
+public import FLT.GroupScheme.PDivisibleInfinitesimalStages
 public import FLT.GroupScheme.PDivisibleIntegralTangent
 public import FLT.GroupScheme.PDivisiblePointColimit
 public import FLT.GroupScheme.PDivisibleRationalCotangent
@@ -795,6 +810,7 @@ public import FLT.GroupScheme.PDivisibleSystem
 public import FLT.GroupScheme.PDivisibleSystemCategory
 public import FLT.GroupScheme.PDivisibleTangentNaturality
 public import FLT.GroupScheme.PDivisibleTangentReduction
+public import FLT.GroupScheme.PDivisibleTangentStabilization
 public import FLT.GroupScheme.PDivisibleTateAction
 public import FLT.GroupScheme.PDivisibleTateCompact
 public import FLT.GroupScheme.PDivisibleTateModule
@@ -1069,6 +1085,10 @@ public import FLT.GroupScheme.RaynaudUnramifiedOrder
 public import FLT.GroupScheme.RaynaudUnramifiedQuotient
 public import FLT.GroupScheme.RaynaudUnramifiedStage
 public import FLT.GroupScheme.RaynaudValuationDigits
+public import FLT.GroupScheme.RelativeCotangentNaturality
+public import FLT.GroupScheme.RelativeFlatCotangent
+public import FLT.GroupScheme.RelativeFlatHomKernel
+public import FLT.GroupScheme.RelativeHomRelations
 public import FLT.GroupScheme.RestrictedScalarPointNaturality
 public import FLT.GroupScheme.ReverseExtHypothesis
 public import FLT.GroupScheme.ReverseExtSwappedExtension
