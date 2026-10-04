@@ -4,7 +4,247 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
-## W34 proved scope
+## W38 proved scope — quotient descent and invariant-class normalization
+
+**W38 proves unscaled descent of the upper-field negative cup to a quotient
+and constructs a quotient two-class with the required inflation normalization.
+The comparison with the independently constructed smaller-field cup remains
+open, including shared-prime towers. E1c7/E1d and removal of `sorryAx` remain
+open; the ordered Frobenius and Kummer evaluations have not advanced.**
+
+Checked 2026-10-03T22:39:46Z at integrated proof head `040b6a6f`, after merging
+`origin/main` at `588bfe04`. Read-only evidence check:
+`python3 Scratch/LiftsW38/check.py` verifies source hashes, saved successful
+build/lint/axiom logs, declaration audit coverage, permitted proof-commit edits,
+sorted imports and line caps. It also checks that Lean/build inputs match the
+post-merge integration snapshot; it does not rerun Lean. The 12 new modules
+contain 1,006 lines and 46 named declarations, each audited with only
+`propext`, `Classical.choice`, `Quot.sound`. Each module has at most 113 lines
+(cap 200). The sequential foreground root and endpoint builds passed.
+
+- `tateZeroDeflation_eq_zero_iff` identifies the kernel of actual Tate H⁰
+  deflation with subgroup corestriction; `tateScalarMap_quotient_eq_zero_iff`
+  identifies the scalar quotient kernel with the subgroup image.
+- `negativeCupQuotient` descends the deflated negative cup along the actual
+  scalar quotient map. Its unscaled square holds for every ordinary two-class;
+  no coprimality or cancellation in a torsion group is used.
+- `relativeFundamentalQuotientCupEquiv` proves that this descended map is an
+  equivalence for the local fundamental class. `finiteQuotientArtin_descendedCup`
+  computes the **existing projected** Artin map by its inverse. This does not
+  identify it with the smaller field's independent Artin map.
+- The two invariant coefficient sequences are proved short exact. The second
+  divides its scalar projection by `|N|` in **ℤ**, using proved subgroup Tate
+  vanishing for divisibility and norm lifts for surjectivity. These sequences
+  define `relativeFundamentalInvariantTwoClass` without an assumed evaluation.
+- `relativeFundamentalInvariantTwoClass_inflation` proves
+  `infl(u_quotient) = |N| • u_original` by actual maps of the exact sequences.
+  This constructs and normalizes a candidate quotient class; it does not yet
+  identify its negative cup with `negativeCupQuotient`.
+
+### Remaining work after W38
+
+1. Compute the negative connecting composite of the two invariant sequences
+   as `negativeCupQuotient`, then identify that composite with cup by their H²
+   class. Transport the inflation normalization through the actual group and
+   coefficient maps and use inflation injectivity to identify the class with
+   the smaller-field fundamental class. Compare the independent cups and
+   invert to prove unrestricted Artin tower compatibility. Degree cancellation
+   is still invalid in the shared-prime case.
+2. Prove unramified uniformizer evaluation with positive Frobenius, retaining
+   W35's negative carry-cup sign. Then prove Kummer–Artin evaluation with the
+   cup-order sign and E1d's annihilator statement, in that order.
+3. Re-audit and split later lifting gates only after E1 closes. No Serre-weight
+   evaluation or arbitrary-p Raynaud classification API is assumed.
+
+The final audit still lists `sorryAx` for `IsHardlyRamified.lifts` and
+`FLT.Assembly.hardlyRamifiedLifting`; `PNat.pow_add_pow_ne_pow` additionally
+retains `Mazur_statement`. Evidence: `Scratch/LiftsW38/FinalAxioms.{lean,log,exit}`.
+No approval decision is needed. This is a partial advance in the first gate.
+
+## W37 proved scope — partial tower comparison
+
+**W37 proves the degree-weighted negative fundamental-cup tower comparison,
+annihilates its defect by the gcd of the two tower degrees, and identifies
+the independently constructed Artin maps for coprime towers. The unrestricted
+tower identity, positive-Frobenius evaluation, Kummer–Artin evaluation and
+E1d remain open. The lifting goal still retains `sorryAx`.**
+
+Checked 2026-10-03T21:33:16Z at integrated proof head `39f3bdba`.
+Read-only evidence check: `python3 Scratch/LiftsW37/check.py` checks saved
+exit-zero logs, source hashes, allowed edits, sorted imports and line caps;
+it does not rerun Lean. All 27 named declarations in nine new modules
+(706 lines, each <=200) use only `propext`, `Classical.choice`, `Quot.sound`.
+The required post-merge foreground `LEAN_NUM_THREADS=2 lake build FLT`
+passed (11,386 jobs), including the root import and FLT endpoint.
+
+Let `m = [F:E]`, `n = [E:K]`, and let `D(x)` denote the difference between
+`finiteTateNormTower K E F (cupF x)` and
+`cupE (tateScalarMap (AlgEquiv.restrictNormalHom E) x)`.
+
+- `relativeFundamentalOrdinaryClass_inflation` transports the proved arithmetic
+  inflation identity to the ordinary two-classes used by the cup construction.
+- `finiteTateNormTower_inflated_class` computes the negative cup of an inflated
+  class with its actual relative-degree factor, using cocycle sums.
+- `relativeFundamentalTateCup_tower_nsmul` proves `m • D(x) = 0`.
+  `relativeFundamentalTateCup_tower_gcd` strengthens this to
+  `gcd(m,n) • D(x) = 0` by proving group-order annihilation on actual Tate H⁰.
+- `relativeFundamentalTateCup_tower_of_coprime` proves the unweighted square
+  when `m.Coprime n`. Inverting the existing fundamental-cup equivalences gives
+  `finiteArtin_tower_of_coprime`, comparing the actual field-wise Artin maps
+  through the abelianized restriction of automorphisms.
+- `tateTwoClassMap_deflation_inflation` proves the quotient-level formula
+  `defl(cup(inf(a),x)) = |N| • cup(a,scalarMap(quotient,x))` on actual Tate
+  groups. Its class is explicitly inflated; it does **not** prove unscaled
+  deflation of the local fundamental class.
+
+No cup isomorphism, comparison square or evaluation is assumed. Coprimality
+is an explicit arithmetic restriction of the new unweighted theorem, not
+an assertion that arbitrary towers satisfy it. The new declarations do not
+change W36's Artin normalization or any existing Lean proof module.
+
+### Remaining work after W37
+
+1. Remove the shared-prime tower defect. W37's gcd annihilation supplies no
+   cancellation when `gcd([F:E],[E:K]) > 1`; this includes nontrivial prime-power
+   towers. Prove the unscaled fundamental-cup quotient/tower comparison, then
+   invert it to obtain the unrestricted Artin tower identity. Equal norm
+   kernels and surjectivity still do not identify the two maps.
+2. Prove unramified uniformizer evaluation with positive Frobenius. Preserve
+   the sign obligation from `cyclicCarry_negative_cup_sign`: the constructed
+   negative Tate cup sends the positive carry to the negative scalar class.
+3. Prove Kummer–Artin evaluation with the cup-order sign, then E1d's
+   annihilator statement. E1c7/E1d remain open. The later lifting gates have
+   not been reclassified or split; that re-audit remains conditional on E1
+   closing. No Serre-weight evaluation or arbitrary-p Raynaud API is assumed.
+
+The final audit at this head gives `[propext, sorryAx, Classical.choice,
+Quot.sound]` for `IsHardlyRamified.lifts` and its assembly adapter;
+`PNat.pow_add_pow_ne_pow` additionally retains `Mazur_statement`.
+Evidence: `Scratch/LiftsW37/FinalAxioms.{lean,log,exit}`.
+No approval decision is needed; this is a partial advance in the first gate.
+
+## W36 proved scope
+
+**W36 identifies the subgroup Artin map with the independently constructed
+field-wise Artin map over the canonical fixed-field DVR, proves the norm
+diagram for arbitrary (including nonnormal) fixed fields, and proves the
+surjectivity and exact fixed-field norm kernel of the actual quotient Artin
+map. The quotient/tower identity between independently constructed Artin maps,
+positive-Frobenius evaluation, Kummer–Artin evaluation, E1d and the overall
+lifting goal remain open.**
+
+Checked 2026-10-03T20:59:44.653485+00:00; integrated proof head `ed0850ab`.
+Read-only evidence check: `python3 Scratch/LiftsW36/check.py` checks saved
+exit-zero logs, source hashes, allowed edits, sorted imports and line caps;
+it does not rerun Lean. All 77 named declarations in 14 new modules
+(1445 lines; each <=200) use only `propext`, `Classical.choice`, `Quot.sound`.
+
+- `finiteSubgroupArtin_fixedUnitEquiv` transports every subgroup-invariant unit
+  through the actual fixed-unit equivalence and `subgroupFixedFieldEquiv`.
+  Its field-wise map is `finiteFixedFieldArtin`, which constructs the canonical
+  integer DVR and its residue/completeness structures internally and calls
+  the existing `finiteArtin`. No cup isomorphism or evaluation is assumed.
+- `finiteArtin_fixedField_fieldwise_norm` compares the two actual Artin maps
+  and the algebraic fixed-field norm, without normality. The forgetful Galois
+  map is `H.subtype.comp (subgroupFixedFieldEquiv F H).symm.toMonoidHom`;
+  `subgroupFixedFieldEquiv_restrictScalars` identifies this with forgetting
+  the intermediate scalars. The coset product is proved by enumerating all
+  fixed-field embeddings, rather than assuming the fixed field is Galois.
+- `finiteQuotientArtin` is the actual composite of `finiteArtin` with
+  `Abelianization.map (QuotientGroup.mk' H)`, for normal H. Its surjectivity
+  and norm kernel are proved in `finiteQuotientArtin_surjective` and
+  `finiteQuotientArtin_eq_zero_iff`. Identifying it with the independently
+  constructed Artin map of the lower extension is still unproved.
+- `tateZeroDeflation` and `finiteTateNormTower` construct the actual
+  degree-zero norm-quotient projections and prove their surjectivity and
+  invariant-class formulas. They do not assert a fundamental-cup diagram.
+
+### Remaining work after W36
+
+1. Prove the negative fundamental-cup quotient/tower comparison. For a finite
+   local tower K ⊆ E ⊆ F, with E/K and F/K Galois, the missing identity is
+   schematically
+   `finiteTateNormTower K E F (cupF x) =
+   cupE (tateScalarMap (AlgEquiv.restrictNormalHom E) x)`, where `cupF` and
+   `cupE` are the already constructed `relativeFundamentalTateCupNegTwoEquiv`
+   for their respective integer DVRs and field presentations. This requires
+   a proof of the local fundamental class's deflation comparison, not a new
+   comparison premise. Inverting those proved cups will then give the actual
+   Artin tower identity. The existing inflation formula multiplies by [F:E];
+   arbitrary cancellation in Tate degree zero is invalid. Equal norm kernels
+   and surjectivity also do not identify two maps: they permit a target
+   automorphism. W36's quotient-kernel theorem does not close this gap.
+2. Prove unramified uniformizer evaluation with positive Frobenius. W35's
+   `cyclicCarry_negative_cup_sign` remains relevant: the current negative
+   Tate cup sends the positive carry to the negative scalar class. A positive
+   normalization of the Artin map must be justified, not silently inferred
+   from the degree-zero normalization.
+3. Prove Kummer–Artin evaluation with its cup-order sign, then E1d's
+   annihilator statement. E1c7/E1d remain open. Only after E1 closes should
+   the next lifting gates be re-audited and split; no Serre-weight evaluation
+   or arbitrary-p Raynaud classification API was assumed or dispatched.
+
+The rebuilt endpoint audit still gives `sorryAx` for
+`GaloisRepresentation.IsHardlyRamified.lifts` and
+`FLT.Assembly.hardlyRamifiedLifting`; `PNat.pow_add_pow_ne_pow` retains
+`Mazur_statement`, `sorryAx` and the three standard axioms. W36 is a proved
+advance in the local class field theory program, not completion of the full
+brief or the lifting goal. No approval decision is needed.
+
+## W35 historical scope
+
+**W35 proves the subgroup corestriction diagram for the actual degree-minus-two
+fundamental cup, constructs the subgroup Artin map without an invertibility premise,
+and proves the algebraic norm diagram for normal fixed fields. The full two-field
+tower comparison, positive-Frobenius normalization, Kummer–Artin evaluation, E1d,
+and the overall lifting goal remain open.**
+
+The scalar comparison preserves the bar generator at `g`; the constructed cup
+sends it to the invariant class of `∑ h, c(h,g⁻¹)`. For the positive cyclic carry,
+`cyclicCarry_negative_cup_sign` proves that this is the **negative** scalar class.
+Thus positive normalization cannot be inferred from W34's degree-zero unit
+normalization; the negative-degree convention must be handled explicitly.
+
+Checked 2026-10-03T20:04:29.451293+00:00; integrated proof head `951458d6`.
+Read-only evidence check: `python3 Scratch/LiftsW35/check.py` verifies saved
+exit-zero logs, source hashes, allowed edits, sorted imports and line caps;
+it does not rerun Lean. All 63 named declarations in 17 new modules
+(1289 lines, each <=200) use only `propext`, `Classical.choice`, `Quot.sound`.
+
+The Artin norm theorem is specifically `finiteArtin_fixedField_norm`: its left
+side is W34's existing `finiteArtin` applied to the algebraic norm from the
+normal fixed field. Its right side is the actual abelianized subgroup inclusion
+applied to `finiteSubgroupArtin` on fixed units. The latter is constructed from
+the inverse cup of the restricted original fundamental class; its invertibility,
+surjectivity and norm kernel are proved. Identification with a separately
+constructed `finiteArtin` over that fixed field has **not** yet been transported
+through the fixed-field Galois equivalence.
+
+### Next proofs after W35
+
+1. Transport `finiteSubgroupArtin` through `subgroupFixedFieldEquiv` and the
+   fixed-unit equivalence to the separately constructed field-wise `finiteArtin`.
+   Extend the algebraic norm identification to nonnormal fixed fields. The
+   subgroup corestriction/cup square itself is proved in
+   `tateTwoClassMap_corestriction`; no all-degree transfer API is needed for it.
+2. Prove the quotient/tower diagram on the actual Artin maps. The existing
+   inflation identity for fundamental classes multiplies by the relative degree;
+   canceling that scalar in Tate degree zero is not justified. The needed
+   deflation/inflation comparison remains to be constructed.
+3. Prove the unramified uniformizer evaluation with **positive Frobenius**,
+   accounting for `cyclicCarry_negative_cup_sign`; then prove Kummer–Artin
+   evaluation and its cup-order sign. No positive-Frobenius theorem for the
+   current inverse-cup `finiteArtin` is claimed.
+4. Prove E1d's annihilator statement, then continue `docs/LIFTS_GOAL_LEDGER.md`.
+   No Serre-weight evaluation or arbitrary-p Raynaud classification API was assumed.
+
+The rebuilt endpoint audit still gives `sorryAx` for
+`GaloisRepresentation.IsHardlyRamified.lifts` and
+`FLT.Assembly.hardlyRamifiedLifting`; `PNat.pow_add_pow_ne_pow` retains
+`Mazur_statement`, `sorryAx` and the three standard axioms. The remaining work
+is mathematical, not waiting for approval.
+
+## W34 historical scope
 
 **W34 proves the adjacent-vanishing criterion for arbitrary finite groups,
 all-degree acyclicity of the local fundamental extension on every subgroup,
