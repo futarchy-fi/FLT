@@ -1345,3 +1345,10 @@ Then construct the actual Cartier-dual level/limit comparison and period
 pairing, in the existing integrality/equivariance/injectivity/surjectivity/
 strictness order. These remain distinct proof obligations; none is to be
 assumed as a record field or inferred from finite generation alone.
+
+W38 refinement before further implementation (cap 150):
+`SquareZeroPointLift` makes the S4 construction canonical: two linear lifts
+of the same point have identical convolution powers, and an existing
+algebra lift is sent to its original N-th power. It retains the exact
+quotient map. This independence result is needed for future descent; it
+does not assert that a division point or a descent datum exists.
