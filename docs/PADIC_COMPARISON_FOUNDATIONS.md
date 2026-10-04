@@ -2812,22 +2812,194 @@ remaining equation; they do not prove equality between the sides.
 | P1e.3 | `RationalPlaceTateTangentAdditivity` | Actual Tate cotangent functional and tangent tensor are additive. |
 | P1e.4 | `RationalPlaceTateTangentLinearity` | Actual Tate tangent maps are p-adic linear and factor through finite coordinates. |
 
-### Remaining comparison boundary after W57
+### W58: the proposed linear-lift calculation is false
 
-At precision s, prove
-`rationalPlaceTateReducedCartier X s y x = rationalCartierFirstOrder X s y x`.
-Equivalently, evaluate the canonical p^s convolution lift of the original
-level-s Tate coordinate against linearly lifted dual coefficients and
-identify its augmentation difference with a^(p^s)-1. The existing
-multiplicative character theorem applies to an algebra-valued character;
-linear coefficient lifts do not satisfy that hypothesis. No such algebra
-lift or coefficient section has been assumed.
+W57 proposed proving
+`rationalPlaceTateReducedCartier X s y x = rationalCartierFirstOrder X s y x`
+by a general convolution/linear-coefficient identity. That supporting identity
+is false under its stated square-zero and kernel-annihilation hypotheses.
+It must not be used as a proof obligation for the next implementation leaf.
 
-Then pass through coefficient completion, identify the logarithmic period,
-and prove P2–P6: comparison integrality, original Galois equivariance,
-injectivity, surjectivity and filtration strictness. The family admission
-and `PNat.pow_add_pow_ne_pow` remain outside these proved leaves.
+The kernel-checked counterexample uses the constant group of order two over
+ZMod 16, with reduction to ZMod 8. Its kernel has square zero and is killed by
+two. The original generator already lifts as an algebra point and its square
+is the augmentation, so its canonical doubled lift has zero tangent. The
+reduced dual character sends the generator to three. Its explicitly
+constructed linear coefficient lift really reduces to that algebra character,
+but its pairing with the generator has square minus one equal to eight.
+`linear_convolution_identity_fails` proves the two proposed sides unequal.
+`reducedCharacter_has_no_algebra_lift` also rules out repairing this example
+by silently replacing the linear lift with an algebra lift.
 
-The untracked `FAMILY_W57_DONE.md` records commits and validation;
-`W57_FINAL_CHECKS.py` rechecks source hashes, individual build/lint logs,
-axiom coverage, line caps, edit scope and the required post-merge root build.
+The issue is not removed just by requiring two to kill the entire coefficient
+ring. `SquareZeroCharacteristicTwoRoot` constructs
+B = F₂[T]/(T⁴), J = (T²), q:B → B/J. It proves J² = 0, 2B = 0,
+q(1+T)² = 1, and that every lift of this reduced root has square different
+from one. Applying the constant order-two group construction to this root
+gives the same mathematical obstruction. The module checks these coefficient
+and root claims; the full Hopf counterexample module uses ZMod 16 → ZMod 8.
+
+Separately, `rationalPlaceTateReducedCartier_unramified` proves a fact about
+the actual rational-place construction: its reduced pairing is zero whenever
+the original level-s coordinate algebra is formally unramified. This follows
+from uniqueness of lifting over the actual square-zero coefficient kernel,
+without any extra assumption about a comparison or a period.
+
+| Capped leaf | Module | Proved output |
+|---|---|---|
+| W58.1 | `CartierLinearEvaluationBase` | Linear evaluation over the base ring is ordinary dual evaluation. |
+| W58.2 | `CartierLinearLiftCounterexampleData` | Actual finite free constant coordinates, square-zero reduction, reduced algebra character and linear lift. |
+| W58.3 | `CartierLinearLiftCounterexample` | Failure of the proposed identity and nonexistence of an algebra character lift. |
+| W58.4 | `CartierReducedUnramified` | Unramified augmentation points and their reduced Cartier differentials are zero. |
+| W58.5 | `RationalPlaceTateReducedUnramified` | The actual rational-place reduced pairing vanishes at unramified levels. |
+| W58.6 | `SquareZeroCharacteristicTwoRoot` | A genuine nonlifting quadratic root even with 2B = 0. |
+
+### Remaining comparison work after W58
+
+P1d.3 needs a mathematical redesign before coefficient completion or the
+logarithmic period identification can proceed. First check the proposed
+specialized equality on the constant étale p-divisible system: the reduced
+pairing is zero by the theorem above, whereas its original Cartier roots
+are cyclotomic. A complete Lean instantiation of that system and a nonzero
+first-order cyclotomic period have **not** been proved in W58. Thus W58
+formally refutes the general calculation, not the specialized equality.
+
+A replacement comparison must account for the étale contribution before
+claiming equality with the full Cartier period. No corrected identity,
+universal-extension construction, or additional comparison hypothesis is
+asserted here. P2–P6, W1–W3, the family admission, and the final FLT boundary
+remain unfinished. The prior tangent additivity and p-adic linearity results
+remain valid but do not resolve this obstruction.
+
+Validation evidence and checked-at times are recorded in the untracked
+`FAMILY_W58_DONE.md` and `W58_FINAL_CHECKS.json`; the read-only recheck is
+`python3 W58_FINAL_CHECKS.py`. That command checks individual build/lint logs,
+source hashes, complete named-declaration axiom coverage, line caps, edit scope,
+and the required post-merge root build.
+
+## W59: constant-system calculation and connected levels over the original base
+
+The constant height-one p-divisible system is now constructed at the original
+rational place for every `2 < p`. The restriction comes from the existing
+integral exactness API; it is not a mathematical restriction on constant
+p-divisible groups. Its levels are the actual constant models on
+`Z/(p^n)`, including level zero. All coordinate inclusions, reductions,
+faithful-flatness statements, kernel equations and ranks are proved.
+
+The compatible residue classes of one and a constructed Cartier-dual Tate
+vector pair to the repository's *same chosen* cyclotomic root sequence.
+Their logarithmic period is exactly `complexCyclotomicLog p`. At integral
+first-order precision s, their period is `[epsilon]-1` modulo
+`ker(theta)^2 + (p^s)`. This value is nonzero for some positive s: the
+cyclotomic difference is not in `ker(theta)^2`, and that ideal is p-adically
+closed by the already proved cyclotomic regularity theorem. Nonvanishing
+at every s is neither needed nor asserted.
+
+On these very same Tate vectors, `rationalPlaceTateReducedCartier` is zero
+at every precision, because the original coordinate algebras are etale.
+`ConstantRationalPower.firstOrder_comparison_fails` therefore refutes the
+specialized W57 equality on an actual rational-place p-divisible system.
+This strengthens W58's abstract linear-lift counterexample. The nonzero
+Cartier period pairs the etale factor with its multiplicative Cartier dual;
+it does not assign weight -1 to the constant representation.
+
+### Correct comparison target
+
+Use the connected-etale sequence, retaining the original nonsplit group
+and the original Galois action. This sequence is not a direct-product
+identification over the original base. The connected part can itself have
+both Hodge-Tate weights: connectedness does not mean multiplicative type.
+Thus restricting the disproved full-period identity to all Tate vectors
+of the connected part is not yet a justified replacement theorem.
+
+The expected covariant Hodge-Tate exact sequence is
+
+```
+0 -> Lie(G) tensor C_p(1) -> T_p(G) tensor C_p
+  -> (Lie(G^vee))^* tensor C_p -> 0.
+```
+
+Both Lie terms must be retained. For the constant etale system the left
+term is zero and the degree-zero term accounts for the Tate module; its
+dual supplies the cyclotomic pairing. For a connected height-two,
+dimension-one group the right term need not vanish. A formula using only
+the tangent of G can at most describe the corresponding Hodge-Tate
+component after that component has actually been identified. No such
+identification is supplied as a constructor field or hypothesis here.
+
+P1d.3 must consequently be split into construction of the Hodge-Tate maps,
+proof of their exactness, and compatibility of the Cartier pairing with
+both components. The original one-sided equality is retired. The
+Hodge-Tate sequence alone also does not prove de Rham admissibility:
+the filtered de Rham comparison still requires a period realization, for
+example through the universal extension or the Dieudonne crystal.
+
+Source boundary: [T] remains the source for the Hodge-Tate sequence.
+A fresh inspection of [BC], pp. 93-95, confirms that Thm. 7.2.8 concerns
+full faithfulness and discusses Tate's discovery of the decomposition;
+Thm. 7.2.10 gives the Honda classification. Neither is a preexisting
+Lean comparison theorem. [BC] Thm. 12.3.2 still uses the crystallinity
+input identified above. The exact sequence displayed here is a corrected
+mathematical target, not a theorem claimed to have been formalized in W59.
+
+### Original-system connected-etale leaves
+
+Every complete new Lean file remains capped at 150 lines. The component
+construction uses the actual rational-place integer ring, not an implicit
+identification with Z_3. Its special-fibre ideal is the extension of the
+original maximal ideal. Finite flatness gives completeness and Henselian
+idempotent lifting; the finite residue algebra is Artinian. These provide
+actual connected finite-flat algebra factors. The counit selects one;
+inversion and comultiplication descend to it, giving a connected finite-flat
+Hopf model with its original closed embedding.
+
+| Leaf / module | Construction and status |
+|---|---|
+| CE1 / `RationalComponentLifting` | Proved completeness, Henselian lifting and Artinian special fibres over the original base. |
+| CE2 / `RationalConnectedComponents` | Constructed the full algebra decomposition into connected finite-flat factors. |
+| CE3 / `RationalIdentityComponent` | Constructed the counit-selected identity factor and its actual counit. |
+| CE4 / `RationalIdentityComponentAntipode` | Proved antipode stability and the counit kernel condition. |
+| CE5 / `RationalIdentityComponentHopf` | Constructed the Hopf quotient, using connectedness of its tensor square. |
+| CE6 / `RationalIdentityComponentModel` | Constructed the finite-flat connected model, its closed embedding and injective original point map. |
+| CE7 / `BialgebraSurjectiveFactor`, `RationalIdentityComponentMaps` | Descended original morphisms to those same quotient models; proved uniqueness and functoriality. |
+| CE8 / `RationalConnectedLevelTower` | Constructed both connected transitions, their coherence, closed inclusions, inherited p-power annihilators and both multiplication factorizations. |
+| CE9 / `RationalIdentityMapFaithfullyFlat`, `RationalConnectedKernel` | Proved faithful flatness of the actual connected reductions and their integral scheme-kernel equations. |
+| CE10 / `RationalConnectedRanks`, `RationalConnectedSystem` | Proved the common connected height, bounded by the original height, and all level ranks; bundled the original connected p-divisible system. |
+| CE11 / `RationalComponentQuotient` | Constructed the original finite-flat quotient by contraction, its faithfully flat projection and its exact connected kernel ideal. |
+| CE12 / `RationalComponentQuotientEtale` | Proved finite etaleness over the original base by faithfully descending idempotence of the augmentation ideal. No constant-group replacement is used. |
+| CE13 / `RationalEtaleLevelTower`, `RationalEtaleReductionFlat`, `RationalEtaleRanks` | Constructed both transitions, naturality, coherence, multiplication, annihilators, faithfully flat reductions and complementary-height ranks. Closed inclusions and the integral transition-kernel equations remain open; the quotient is not yet bundled as a p-divisible system. |
+| CE14 / `RationalConnectedEtaleExtension`, `RationalEtaleTateModule`, `RationalEtaleTateGalois` | Constructed the original level extensions, including their torsors, and the exact sequence of p-adic inverse-limit modules with original Galois equivariance. The right-hand limit is defined directly from the quotient tower; identifying it with the Tate module of a bundled quotient system awaits CE13. No splitting is claimed. |
+| HT1 / original Hodge-Tate maps | Open: identify the existing dlog and infinitesimal maps with the correctly twisted Lie terms, including coefficient completion. |
+| HT2 / connected comparison | Open: prove the connected Hodge-Tate exact sequence; split kernel, image and dimension arguments. Connectedness alone supplies none of these conclusions. |
+| HT3 / full Cartier compatibility | Open: compute the pairing on both Hodge-Tate components and assemble it through CE14. The W59 constant calculation is a required test. |
+| DR1 / period realization | Open: construct the universal-extension/Dieudonne period realization with the original generic fibre and filtration. |
+| P2-P6 | Open: integrality, original Galois equivariance, injectivity, surjectivity and filtration strictness for that actual de Rham map. |
+
+The existing `PDivisibleSystem.Hom` fixes the same height on source and target.
+W60 adds `VariableHeightHom` and constructs the actual connected inclusion
+with source height `rationalConnectedHeight`. Its induced Tate map is p-adic
+linear and injective. The quotient level ranks are
+`p ^ (n * (height - rationalConnectedHeight))`.
+
+The connected tower is now a `PDivisibleSystem`. The quotient levels are
+finite etale, but CE13 still needs closed inclusions and the integral
+transition-kernel equations. Do not infer either from the rank formula.
+The exact inverse-limit sequence was proved directly: finite nonempty fibres
+have compatible choices, and levelwise exactness plus injectivity identifies
+the kernel with the original connected Tate module. Both maps commute with
+the original Galois action. The level extensions and torsor maps retain the
+original extension; no product decomposition or section is constructed.
+
+HT1-HT3, DR1, P2-P6, W1-W3 and the original family admission remain open.
+The connected-etale exact sequence is not the Hodge-Tate sequence displayed
+above. In particular, nothing here restores W57's refuted full-period identity
+or establishes de Rham admissibility. No edit of an existing admitted module
+is authorized by this task.
+
+Validation, source hashes, exact commits and checked-at times are recorded in
+the untracked `FAMILY_W60_DONE.md`, `W60_VALIDATION.json` and
+`W60_AXIOM_RESULT.json`. Recheck with `python3 W60_FINAL_CHECKS.py`;
+`python3 W60_VALIDATE.py` builds each new module in the foreground and lints
+one module at a time. `python3 W60_RUN_AXIOMS.py` audits the new declarations
+and the original family boundary. The final root build follows merging
+origin/main; no whole-library lint is used.
