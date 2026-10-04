@@ -220,3 +220,57 @@ scheme. The existing P6 normalization and W2 P8 presheaf supply only parts
 of the inputs. No Hilbert scheme, Jacobian, or abelian variety has been
 chosen in place of these proofs. P10–P21 and the unconditional Mazur producer
 remain open; this release does not remove `Mazur_statement`.
+
+## W3: tensor cocycles and rank-one descent
+
+The new algebraic interface is `AffineTensorCocycle.Datum R S N`. Its overlap
+is an `S`-linear isomorphism `N ⊗[R] S ≃ S ⊗[R] N`; `other_smul` records
+the second overlap scalar action, `diagonal` is the diagonal identity, and
+`cocycle` is the full three-factor identity, for every `n`, `s`, and `t`.
+None of these fields supplies a descended object or an invertibility proof.
+
+| Module (`FLT.Mazur.` prefix) | Proved output | Gate status |
+| --- | --- | --- |
+| AffineTensorCocycle | Evaluate the overlap at `n ⊗ 1`; prove counit/coassociativity; construct the scalar-extension coalgebra; recover the full overlap from the coaction | Algebraic part of P9b |
+| AffineTensorCocycleTransport | Canonical cocycle on scalar extensions and transport along coefficient isomorphisms, with all three datum equations | Algebraic part of P9b |
+| AffineTensorCoalgebraComparison | Recover a tensor cocycle from every faithfully flat coalgebra; round-trip recovers the exact original coaction and overlap | Algebraic part of P9b |
+| FaithfullyFlatInvertible | Descend finite presentation; commute dual/evaluation with flat base change; reflect evaluation bijectivity by faithful flatness | P9c complete |
+| AffineLineCoalgebraDescent | Descended coefficient invertible; actual tilde sheaf locally rank one; compatible morphisms descend functorially and uniquely with the reconstruction square | Coalgebra parts of P9d/P9e |
+| AffineTensorDescentMorphisms | Full overlap compatibility iff coaction compatibility; construct the coalgebra morphism from the original overlap-compatible coefficient map | Algebraic morphism interface |
+
+Read-only reproduction: run `LEAN_NUM_THREADS=2 lake build FLT.Mazur.MODULE`
+and `LEAN_NUM_THREADS=2 lake exe runLinter FLT.Mazur.MODULE` for each row,
+sequentially. The W3 local handoff records the checked time, module-origin
+axiom audit, commit IDs, physical sizes, consumer checks, and integration
+build. No scheme-level descent or representability claim follows from this
+table alone.
+
+### The first remaining geometric interface
+
+P9b is still open **on sheaves**. The two tensor modules above are explicit
+algebraic models; W3 does not yet identify their descent equations with
+those for the actual pullback sheaves over the double and triple fiber
+products. A complete next implementation must prove these comparisons:
+
+1. Identify sections of the two pullbacks over `Spec(S ⊗[R] S)` with
+   `N ⊗[R] S` and `S ⊗[R] N`, respecting **both** scalar actions.
+   Use `AffineModulePullbackSections.sectionsIso`/`tildePullbackIso` and
+   `AlgebraicGeometry.pullbackSpecIso`, whose projection formulas are in
+   Mathlib `AlgebraicGeometry/Pullbacks.lean`.
+2. Prove these isomorphisms commute with the diagonal and all three maps
+   from the triple fiber product. Only then may geometric cocycle equations
+   be translated into `Datum.diagonal` and `Datum.cocycle`, and conversely.
+   The triple tensor identity must be proved under these comparison maps;
+   it must not be a new field assumed of geometric input.
+3. Transport the already constructed line bundle and its reconstruction
+   through that comparison. Check agreement with the **specified** geometric
+   datum using `fromCoalgebra_toCoalgebra_overlap`, not just equality of a
+   Picard class. This finishes the geometric part of P9d.
+4. Translate compatible geometric maps using `coaction_comm_iff`, descend
+   them with `descendedModuleMap_unique`, and prove coherence under affine
+   refinement before gluing. This finishes P9e; its gluing is not present yet.
+
+Each of these should be split into modules of at most 240 physical lines.
+P10–P21 retain the representability dependencies listed above. In particular
+there is no actual `J0(p)` or Abel–Jacobi-at-infinity producer from W3, and
+`Mazur_statement` remains in the endpoint's axiom dependencies.

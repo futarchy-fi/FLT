@@ -2337,6 +2337,7 @@ public import FLT.Mazur.AffineIdealPowerExtension
 public import FLT.Mazur.AffineImageSectionTransport
 public import FLT.Mazur.AffineIntersectionRestriction
 public import FLT.Mazur.AffineKernelLocalization
+public import FLT.Mazur.AffineLineCoalgebraDescent
 public import FLT.Mazur.AffineModuleCoalgebraDescent
 public import FLT.Mazur.AffineModuleEpimorphisms
 public import FLT.Mazur.AffineModuleExact
@@ -2357,6 +2358,10 @@ public import FLT.Mazur.AffineQuasiCoherentBaseChange
 public import FLT.Mazur.AffineRestrictionImmersion
 public import FLT.Mazur.AffineStalkExtension
 public import FLT.Mazur.AffineStalkMorphism
+public import FLT.Mazur.AffineTensorCoalgebraComparison
+public import FLT.Mazur.AffineTensorCocycle
+public import FLT.Mazur.AffineTensorCocycleTransport
+public import FLT.Mazur.AffineTensorDescentMorphisms
 public import FLT.Mazur.AffineTrivialLineSectionOpen
 public import FLT.Mazur.AmpleAffineBase
 public import FLT.Mazur.AmpleAffinePullback
@@ -2554,6 +2559,7 @@ public import FLT.Mazur.ExactFunctorInjectiveExt
 public import FLT.Mazur.ExactSourceDenominatorLift
 public import FLT.Mazur.FCurveContracts
 public import FLT.Mazur.FaithfullyFlatFinitePresentation
+public import FLT.Mazur.FaithfullyFlatInvertible
 public import FLT.Mazur.FamilyTransport
 public import FLT.Mazur.FiniteAffineCoverDimension
 public import FLT.Mazur.FiniteAffineCoverFiniteness
