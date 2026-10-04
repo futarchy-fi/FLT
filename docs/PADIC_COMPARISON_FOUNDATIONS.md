@@ -1493,3 +1493,11 @@ Amitsur degree-one calculation. These are API matches and explicit gaps,
 not a citation to an unverified general smoothness theorem.
 
 L8/L9 and all W39 cotangent/period-comparison gates remain downstream.
+
+W40 refinement before L7b.2–3 implementation: use the multiplication
+contraction directly on the complex after tensoring with S. Its map
+`S ⊗ (S ⊗ M) → S ⊗ M` multiplies the first two factors. Thus the
+`AmitsurSplitContraction` leaf proves this explicit base-changed homotopy,
+without introducing a hypothetical linear retraction of S → R. The
+`AmitsurFaithfullyFlatExact` leaf then reflects exactness. This avoids a
+separate change-of-base-ring identification and keeps both caps at 150.
