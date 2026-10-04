@@ -601,6 +601,7 @@ public import FLT.GroupScheme.CartierDualBaseChange
 public import FLT.GroupScheme.CartierDualBaseChangeHopf
 public import FLT.GroupScheme.CartierDualCharacterGroup
 public import FLT.GroupScheme.CartierDualCoalgebra
+public import FLT.GroupScheme.CartierDualConvolution
 public import FLT.GroupScheme.CartierDualEtale
 public import FLT.GroupScheme.CartierDualFaithfullyFlat
 public import FLT.GroupScheme.CartierDualGeometric
@@ -612,8 +613,10 @@ public import FLT.GroupScheme.CartierDualModelIso
 public import FLT.GroupScheme.CartierDualPairing
 public import FLT.GroupScheme.CartierDualPointFiltration
 public import FLT.GroupScheme.CartierDualSpecialFiber
+public import FLT.GroupScheme.CartierDualSurjection
 public import FLT.GroupScheme.CartierDualTangent
 public import FLT.GroupScheme.CartierDualTorsor
+public import FLT.GroupScheme.CartierPairingNaturality
 public import FLT.GroupScheme.CategoryDExactSubquotients
 public import FLT.GroupScheme.CoactionBasisMultiplication
 public import FLT.GroupScheme.CoactionBasisProjectors
@@ -780,6 +783,10 @@ public import FLT.GroupScheme.HenselianComponents
 public import FLT.GroupScheme.HenselianConnectedLocal
 public import FLT.GroupScheme.HenselianIdempotents
 public import FLT.GroupScheme.HopfDifferentials
+public import FLT.GroupScheme.HopfExactPair
+public import FLT.GroupScheme.HopfExactPairAnnihilator
+public import FLT.GroupScheme.HopfExactPairDualKernel
+public import FLT.GroupScheme.HopfExactPairDuality
 public import FLT.GroupScheme.HopfFiberPointAction
 public import FLT.GroupScheme.HopfFrobenius
 public import FLT.GroupScheme.HopfGeometricPointDescent
@@ -921,6 +928,10 @@ public import FLT.GroupScheme.OrdinaryLocalScalars
 public import FLT.GroupScheme.OrdinaryLocalUnitParameter
 public import FLT.GroupScheme.OrdinaryModelFiberPoints
 public import FLT.GroupScheme.OrdinaryNormalizedDifference
+public import FLT.GroupScheme.PDivisibleCartierSystem
+public import FLT.GroupScheme.PDivisibleCartierTateGalois
+public import FLT.GroupScheme.PDivisibleCartierTatePairing
+public import FLT.GroupScheme.PDivisibleCartierTransitions
 public import FLT.GroupScheme.PDivisibleColimitLifting
 public import FLT.GroupScheme.PDivisibleCorrectedLocalPoint
 public import FLT.GroupScheme.PDivisibleCotangentArithmetic
@@ -957,6 +968,7 @@ public import FLT.GroupScheme.PDivisibleNilpotentCotangent
 public import FLT.GroupScheme.PDivisibleOverlapCorrection
 public import FLT.GroupScheme.PDivisiblePointColimit
 public import FLT.GroupScheme.PDivisiblePointEquiv
+public import FLT.GroupScheme.PDivisibleRationalCartier
 public import FLT.GroupScheme.PDivisibleRationalCotangent
 public import FLT.GroupScheme.PDivisibleRationalPlaceTransport
 public import FLT.GroupScheme.PDivisibleRationalTateAction
@@ -1040,8 +1052,13 @@ public import FLT.GroupScheme.RaynaudAugmentationDerivation
 public import FLT.GroupScheme.RaynaudAugmentationDuality
 public import FLT.GroupScheme.RaynaudAugmentationRank
 public import FLT.GroupScheme.RaynaudBiduality
+public import FLT.GroupScheme.RaynaudCartierArithmetic
 public import FLT.GroupScheme.RaynaudCartierCharacterDuality
+public import FLT.GroupScheme.RaynaudCartierCharacters
 public import FLT.GroupScheme.RaynaudCartierDual
+public import FLT.GroupScheme.RaynaudCartierPairing
+public import FLT.GroupScheme.RaynaudCartierPairingGalois
+public import FLT.GroupScheme.RaynaudCartierPairingLaws
 public import FLT.GroupScheme.RaynaudCharacterConstantBaseChange
 public import FLT.GroupScheme.RaynaudCharacterCoordinates
 public import FLT.GroupScheme.RaynaudCharacterDecomposition
