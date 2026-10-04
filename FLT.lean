@@ -548,6 +548,10 @@ public import FLT.GlobalLanglandsConjectures.GLzero
 public import FLT.GroupScheme.ActualThreeAdicKummerCube
 public import FLT.GroupScheme.AdjacentCanonicalFactors
 public import FLT.GroupScheme.AlgebraicClosureKummer
+public import FLT.GroupScheme.AmitsurDegreeOneMaps
+public import FLT.GroupScheme.AmitsurFaithfullyFlatExact
+public import FLT.GroupScheme.AmitsurSplitContraction
+public import FLT.GroupScheme.AugmentationKernelNaturality
 public import FLT.GroupScheme.BialgebraBaseChange
 public import FLT.GroupScheme.CanonicalCompositionSeries
 public import FLT.GroupScheme.CanonicalFactorFiltration
@@ -633,6 +637,7 @@ public import FLT.GroupScheme.FiniteFlatTangentNaturality
 public import FLT.GroupScheme.FiniteFlatTowerClosure
 public import FLT.GroupScheme.FiniteFreeAdicComplete
 public import FLT.GroupScheme.FiniteHopfFreeness
+public import FLT.GroupScheme.FlatReductionKernel
 public import FLT.GroupScheme.FontaineConvolutionApproximation
 public import FLT.GroupScheme.FontaineConvolutionLifting
 public import FLT.GroupScheme.FontaineConvolutionPoint
@@ -686,6 +691,7 @@ public import FLT.GroupScheme.HopfSpecialFiberFreeness
 public import FLT.GroupScheme.HopfTorsor
 public import FLT.GroupScheme.HopfTorsorDescent
 public import FLT.GroupScheme.HopfTorsorFree
+public import FLT.GroupScheme.InfinitesimalConvolutionAddition
 public import FLT.GroupScheme.IntegralCartierConstantPoints
 public import FLT.GroupScheme.IntegralCartierDual
 public import FLT.GroupScheme.IntegralCartierPoints
@@ -750,6 +756,7 @@ public import FLT.GroupScheme.LocalPointFieldPoints
 public import FLT.GroupScheme.LocalPolynomialObstruction
 public import FLT.GroupScheme.ModelBaseChange
 public import FLT.GroupScheme.ModelPoints
+public import FLT.GroupScheme.MonicCoverLifting
 public import FLT.GroupScheme.MuThreeCubicCoordinates
 public import FLT.GroupScheme.MultiplicativeFiltrationPurity
 public import FLT.GroupScheme.OrderThreeModelIdentification
@@ -1070,6 +1077,7 @@ public import FLT.GroupScheme.SquareZeroConvolutionLift
 public import FLT.GroupScheme.SquareZeroLiftNaturality
 public import FLT.GroupScheme.SquareZeroPointDifference
 public import FLT.GroupScheme.SquareZeroPointLift
+public import FLT.GroupScheme.SquareZeroReductionBaseChange
 public import FLT.GroupScheme.StableSubgroupExtension
 public import FLT.GroupScheme.SupportedKummerCubes
 public import FLT.GroupScheme.SupportedKummerValuations

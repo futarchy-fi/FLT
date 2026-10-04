@@ -1501,3 +1501,38 @@ contraction directly on the complex after tensoring with S. Its map
 without introducing a hypothetical linear retraction of S → R. The
 `AmitsurFaithfullyFlatExact` leaf then reflects exactness. This avoids a
 separate change-of-base-ring identification and keeps both caps at 150.
+
+### W40 implementation boundary
+
+L6b.1, L7a.1–4 and L7b.1–3 are implemented in the eight named modules.
+The monic-cover theorem constructs a finite free faithfully flat root
+algebra over B with the original root and coefficient comparison to C.
+It does not turn L6a's division cover into a monic presentation, or assert
+that an arbitrary flat cover lifts.
+
+The base-change comparison identifies the actual tensor algebra kernel,
+with its pure-tensor formula. Surjectivity and the square-zero property
+survive arbitrary base change; the kernel comparison and annihilator
+transport use flatness. Tangent extraction/reconstruction commute with
+actual maps of thickenings, and convolution becomes addition on the
+actual augmentation kernel. These statements do not commute Hom with
+tensor for a nonprojective cotangent module.
+
+The Amitsur modules prove degree-one exactness for every module M and
+every faithfully flat R-algebra S, with explicit double/triple tensor
+maps and a multiplication contraction after base change. In particular,
+each cocycle in S tensor S tensor M has an actual correcting cochain in
+S tensor M. No quasi-coherence or correction-existence hypothesis is
+hidden in a record. This removes the abstract affine degree-one
+exactness gap, but does not identify the original colimit point kernel
+with such a tensor module or put its correction at an original finite
+level.
+
+Remaining in order: L6b.2–4 (presentation/refinement, deformation and
+assembly of the lifted division cover), L7a.5 (the actual quasi-coherent
+kernel identification), L7b.4 (original finite-stage correction), L8/L9,
+and the previously listed formal-cotangent and period-comparison gates.
+The family admission is unchanged. Reproduce the validation via
+`W40_MODULES.txt`, individual build/lint commands, `W40_AXIOMS.lean`,
+`W40_BOUNDARY_AXIOMS.lean` and `W40_FINAL_CHECKS.py`; the untracked
+`FAMILY_W40_DONE.md` records the checked time and exact local commits.
