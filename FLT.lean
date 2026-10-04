@@ -168,6 +168,7 @@ public import FLT.EllipticCurve.FunctionField
 public import FLT.EllipticCurve.FunctionFieldDegree
 public import FLT.EllipticCurve.FunctionFieldOrder
 public import FLT.EllipticCurve.Infinity
+public import FLT.EllipticCurve.InfinityChart
 public import FLT.EllipticCurve.InvariantDerivation
 public import FLT.EllipticCurve.InvariantDifferential
 public import FLT.EllipticCurve.InvariantLogarithmic

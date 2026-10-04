@@ -135,6 +135,28 @@ a verified construction when one becomes available. The global gap is not
 an omitted invocation of either newly proved local lemma.
 All FLT arithmetic assumptions remain unchanged.
 
+### First concrete curve chart — 2026-10-04
+
+`FLT/EllipticCurve/InfinityChart.lean` constructs the affine scheme
+Spec R[u,v]/(v + a1*u*v + a3*v^2 - u^3 - a2*u^2*v - a4*u*v^2 - a6*v^3).
+Its equation is proved equal to the dehomogenization Y=1 of Mathlib's
+projective Weierstrass polynomial. The module constructs its closed
+embedding in the affine plane, its structural map and its infinity section
+(u,v)=(0,0). Evaluation represents solutions over arbitrary R-algebras
+uniquely, and the overlap identity u=x/y, v=1/y is proved whenever y is
+invertible. The v derivative at the section is 1, without a characteristic
+or discriminant assumption.
+
+This is a concrete affine chart, not the whole projective cubic.
+The next construction is the overlap isomorphism of the two localized
+coordinate rings and the scheme gluing with the ordinary affine chart.
+Properness, smoothness of the elliptic family, its group-scheme law, level
+structures, the modular curve, Jacobian and Eisenstein quotient are not
+claimed by this module. No new definition of a universal family is needed:
+the construction works for any coefficient ring and Weierstrass equation;
+the existing universal equation can be substituted later.
+
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
