@@ -1883,6 +1883,7 @@ public import FLT.Mazur.InjectiveHorseshoe
 public import FLT.Mazur.IntegralBase
 public import FLT.Mazur.IntegralClosedSupport
 public import FLT.Mazur.IntegralDimension
+public import FLT.Mazur.LaurentRingSurjectivity
 public import FLT.Mazur.LaurentTensor
 public import FLT.Mazur.LaurentUnitPoints
 public import FLT.Mazur.LineEndpointTransport
@@ -1928,13 +1929,19 @@ public import FLT.Mazur.ModulePresheafTensorPullback
 public import FLT.Mazur.ModulePullbackRestrictionPasting
 public import FLT.Mazur.ModulePullbackTrivializationCoherence
 public import FLT.Mazur.ModulePullbackUnitCoherence
+public import FLT.Mazur.ModuleSectionCocycleIso
 public import FLT.Mazur.ModuleSectionIsomorphismTransport
 public import FLT.Mazur.ModuleSectionMap
 public import FLT.Mazur.ModuleSectionProjectiveChart
 public import FLT.Mazur.ModuleSectionProjectiveGluing
+public import FLT.Mazur.ModuleSectionProjectiveOOne
+public import FLT.Mazur.ModuleSectionProjectiveOver
 public import FLT.Mazur.ModuleSectionProjectiveOverlap
+public import FLT.Mazur.ModuleSectionProjectiveTransition
 public import FLT.Mazur.ModuleSectionRatioBasicOpen
+public import FLT.Mazur.ModuleSectionRatioCoordinates
 public import FLT.Mazur.ModuleSectionRatioOpen
+public import FLT.Mazur.ModuleSectionRatioOpenPullback
 public import FLT.Mazur.ModuleSectionRatioPullback
 public import FLT.Mazur.ModuleSectionRatios
 public import FLT.Mazur.ModuleSectionRegularity
@@ -2058,10 +2065,17 @@ public import FLT.Mazur.PolygonCubicGenerationCover
 public import FLT.Mazur.PolygonCubicGlobalGeneration
 public import FLT.Mazur.PolygonCubicInterpolation
 public import FLT.Mazur.PolygonCubicNonvanishing
+public import FLT.Mazur.PolygonCubicOOnePullback
 public import FLT.Mazur.PolygonCubicProjectiveCharts
 public import FLT.Mazur.PolygonCubicProjectiveMorphism
+public import FLT.Mazur.PolygonCubicProjectiveOver
 public import FLT.Mazur.PolygonCubicSections
+public import FLT.Mazur.PolygonCubicTorusChart
 public import FLT.Mazur.PolygonCubicTorusGenerator
+public import FLT.Mazur.PolygonCubicTorusImages
+public import FLT.Mazur.PolygonCubicTorusPullback
+public import FLT.Mazur.PolygonCubicTorusRatios
+public import FLT.Mazur.PolygonCubicTorusSurjectivity
 public import FLT.Mazur.PolygonCyclicAtlas
 public import FLT.Mazur.PolygonCyclicCocone
 public import FLT.Mazur.PolygonCyclicDescent
@@ -2155,6 +2169,7 @@ public import FLT.Mazur.ProjectiveChartEvaluation
 public import FLT.Mazur.ProjectiveChartMapCompatibility
 public import FLT.Mazur.ProjectiveChartNoetherian
 public import FLT.Mazur.ProjectiveChartPolynomialEquiv
+public import FLT.Mazur.ProjectiveChartSectionPullback
 public import FLT.Mazur.ProjectiveCoherentCharts
 public import FLT.Mazur.ProjectiveCoherentCohomology
 public import FLT.Mazur.ProjectiveGeneration
@@ -2172,6 +2187,7 @@ public import FLT.Mazur.ProjectiveLineEndpointCover
 public import FLT.Mazur.ProjectiveLineEndpoints
 public import FLT.Mazur.ProjectiveLineFieldExtension
 public import FLT.Mazur.ProjectiveLineInteriorGenerator
+public import FLT.Mazur.ProjectiveLineInteriorRatios
 public import FLT.Mazur.ProjectiveLineMarkedCharts
 public import FLT.Mazur.ProjectiveLineMarkedDualCoordinates
 public import FLT.Mazur.ProjectiveLineMarkedEndpointSections
@@ -2216,6 +2232,7 @@ public import FLT.Mazur.ProjectiveTwistCechCohomologyFullSupport
 public import FLT.Mazur.ProjectiveTwistCechCohomologySum
 public import FLT.Mazur.ProjectiveTwistCechCohomologySumHomology
 public import FLT.Mazur.ProjectiveTwistCechCohomologyTwist
+public import FLT.Mazur.ProjectiveTwistChartSection
 public import FLT.Mazur.ProjectiveTwistCocycle
 public import FLT.Mazur.ProjectiveTwistCohomology
 public import FLT.Mazur.ProjectiveTwistGradedCech
@@ -2280,6 +2297,7 @@ public import FLT.Mazur.StructureImageOpenChart
 public import FLT.Mazur.SurjectiveDominantEpi
 public import FLT.Mazur.TernaryOpenDescent
 public import FLT.Mazur.TildePrincipalOpen
+public import FLT.Mazur.TorusChartScalars
 public import FLT.Mazur.UniversallyClosedFiniteCover
 public import FLT.MazurChapter.AdmissibleGroupSchemes
 public import FLT.MazurW
