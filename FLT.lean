@@ -119,6 +119,8 @@ public import FLT.DedekindDomain.IntegralClosure
 public import FLT.Deformations.Algebra.InverseLimit.Basic
 public import FLT.Deformations.Algebra.InverseLimit.Topology
 public import FLT.Deformations.Categories
+public import FLT.Deformations.ClosedIdealCondition
+public import FLT.Deformations.ClosedIdealQuotient
 public import FLT.Deformations.ContinuousRepresentation.IsTopologicalModule
 public import FLT.Deformations.DeSmitLenstra
 public import FLT.Deformations.DeSmitLenstra.CompatibleIdempotent
@@ -364,6 +366,7 @@ public import FLT.GaloisRepresentation.Extensions.LinearContinuousClass
 public import FLT.GaloisRepresentation.Extensions.OrdinaryFiltration
 public import FLT.GaloisRepresentation.Extensions.OrdinaryFiltrationBasis
 public import FLT.GaloisRepresentation.Extensions.OrdinaryFiltrationClass
+public import FLT.GaloisRepresentation.Extensions.OrdinaryFiltrationSplitting
 public import FLT.GaloisRepresentation.Extensions.OrdinaryFiltrationTwist
 public import FLT.GaloisRepresentation.Extensions.OrdinaryFiltrationUnit
 public import FLT.GaloisRepresentation.Extensions.OrdinaryGaloisClass
@@ -429,6 +432,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.TowerDegreeOne
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.W2Statement
 public import FLT.GaloisRepresentation.HardlyRamified.Chebotarev.WeakChebotarev
 public import FLT.GaloisRepresentation.HardlyRamified.CoefficientQuotient
+public import FLT.GaloisRepresentation.HardlyRamified.CofinalFlatModels
 public import FLT.GaloisRepresentation.HardlyRamified.CoordinateChange
 public import FLT.GaloisRepresentation.HardlyRamified.CyclotomicTrivial
 public import FLT.GaloisRepresentation.HardlyRamified.CyclotomicTrivialBaseChange
@@ -495,6 +499,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.PrimeResidualNaturality
 public import FLT.GaloisRepresentation.HardlyRamified.PrimeResidueMap
 public import FLT.GaloisRepresentation.HardlyRamified.PureAction
 public import FLT.GaloisRepresentation.HardlyRamified.PureSortedQuotient
+public import FLT.GaloisRepresentation.HardlyRamified.QuadraticCharacterLift
 public import FLT.GaloisRepresentation.HardlyRamified.RankTwoFraming
 public import FLT.GaloisRepresentation.HardlyRamified.RationalComplexConjugation
 public import FLT.GaloisRepresentation.HardlyRamified.RationalRamificationBridge
@@ -594,6 +599,7 @@ public import FLT.GroupScheme.ComponentLocalizedKernel
 public import FLT.GroupScheme.ConnectedTensorPoint
 public import FLT.GroupScheme.ConstantCartierDual
 public import FLT.GroupScheme.ConstantCoordinates
+public import FLT.GroupScheme.ConstantCyclicOneFiber
 public import FLT.GroupScheme.ConstantFiltrationPurity
 public import FLT.GroupScheme.ConstantFiniteFlat
 public import FLT.GroupScheme.ConstantModelIdentification
@@ -727,10 +733,14 @@ public import FLT.GroupScheme.HenselianComponents
 public import FLT.GroupScheme.HenselianConnectedLocal
 public import FLT.GroupScheme.HenselianIdempotents
 public import FLT.GroupScheme.HopfDifferentials
+public import FLT.GroupScheme.HopfFiberPointAction
 public import FLT.GroupScheme.HopfFrobenius
 public import FLT.GroupScheme.HopfGeometricPointDescent
 public import FLT.GroupScheme.HopfGeometricPresentationDescent
 public import FLT.GroupScheme.HopfPointCongruence
+public import FLT.GroupScheme.HopfPointFiberDescent
+public import FLT.GroupScheme.HopfPointFiberPoints
+public import FLT.GroupScheme.HopfPointFiberTorsor
 public import FLT.GroupScheme.HopfPointTranslation
 public import FLT.GroupScheme.HopfPointedFibre
 public import FLT.GroupScheme.HopfPoints
@@ -740,6 +750,7 @@ public import FLT.GroupScheme.HopfSpecialFiberFreeness
 public import FLT.GroupScheme.HopfTorsor
 public import FLT.GroupScheme.HopfTorsorDescent
 public import FLT.GroupScheme.HopfTorsorFree
+public import FLT.GroupScheme.HopfTorsorSpecialization
 public import FLT.GroupScheme.InfinitesimalConvolutionAddition
 public import FLT.GroupScheme.InfinitesimalTangentCocycle
 public import FLT.GroupScheme.IntegralCartierConstantPoints
@@ -763,6 +774,7 @@ public import FLT.GroupScheme.IntegralKernelBaseChange
 public import FLT.GroupScheme.IntegralKernelEquations
 public import FLT.GroupScheme.IntegralQuotientDescent
 public import FLT.GroupScheme.IntegralQuotientFaithfullyFlat
+public import FLT.GroupScheme.IntegralQuotientFiberTorsor
 public import FLT.GroupScheme.IntegralQuotientIdentification
 public import FLT.GroupScheme.IntegralQuotientPointFiber
 public import FLT.GroupScheme.IntegralSimpleQuotient
@@ -2329,6 +2341,7 @@ public import FLT.Mazur.PolygonCubicGlobalGeneration
 public import FLT.Mazur.PolygonCubicInterpolation
 public import FLT.Mazur.PolygonCubicNonvanishing
 public import FLT.Mazur.PolygonCubicOOnePullback
+public import FLT.Mazur.PolygonCubicPointSeparation
 public import FLT.Mazur.PolygonCubicProjectiveCharts
 public import FLT.Mazur.PolygonCubicProjectiveMorphism
 public import FLT.Mazur.PolygonCubicProjectiveOver
@@ -2339,9 +2352,11 @@ public import FLT.Mazur.PolygonCubicTorusGenerator
 public import FLT.Mazur.PolygonCubicTorusImages
 public import FLT.Mazur.PolygonCubicTorusImmersion
 public import FLT.Mazur.PolygonCubicTorusNumerators
+public import FLT.Mazur.PolygonCubicTorusPointSeparation
 public import FLT.Mazur.PolygonCubicTorusPullback
 public import FLT.Mazur.PolygonCubicTorusRatios
 public import FLT.Mazur.PolygonCubicTorusSurjectivity
+public import FLT.Mazur.PolygonCubicVeryAmple
 public import FLT.Mazur.PolygonCyclicAtlas
 public import FLT.Mazur.PolygonCyclicCocone
 public import FLT.Mazur.PolygonCyclicDescent
@@ -2409,6 +2424,7 @@ public import FLT.Mazur.PolygonOneGonDenominator
 public import FLT.Mazur.PolygonOneGonGeneratorIdentities
 public import FLT.Mazur.PolygonOneGonInterpolationEquations
 public import FLT.Mazur.PolygonOneGonLocalizedImages
+public import FLT.Mazur.PolygonOneGonNodePointSeparation
 public import FLT.Mazur.PolygonOneGonPolynomialEquations
 public import FLT.Mazur.PolygonOneGonPuncturedPullback
 public import FLT.Mazur.PolygonOneGonRefinementCover
@@ -2437,7 +2453,9 @@ public import FLT.Mazur.PolygonSplitInterpolationEquations
 public import FLT.Mazur.PolygonSplitLaurentNumerators
 public import FLT.Mazur.PolygonSplitLocalizedImages
 public import FLT.Mazur.PolygonSplitNodeCompletion
+public import FLT.Mazur.PolygonSplitNodeCoordinateValues
 public import FLT.Mazur.PolygonSplitNodeDenominator
+public import FLT.Mazur.PolygonSplitNodePointSeparation
 public import FLT.Mazur.PolygonSplitPuncturedPullback
 public import FLT.Mazur.PolygonSplitRefinementCover
 public import FLT.Mazur.PolygonSplitRefinementValue
@@ -2463,6 +2481,7 @@ public import FLT.Mazur.ProjectiveChartDenominators
 public import FLT.Mazur.ProjectiveChartEvaluation
 public import FLT.Mazur.ProjectiveChartMapCompatibility
 public import FLT.Mazur.ProjectiveChartNoetherian
+public import FLT.Mazur.ProjectiveChartPointMembership
 public import FLT.Mazur.ProjectiveChartPolynomialEquiv
 public import FLT.Mazur.ProjectiveChartSectionPullback
 public import FLT.Mazur.ProjectiveCoherentCharts
