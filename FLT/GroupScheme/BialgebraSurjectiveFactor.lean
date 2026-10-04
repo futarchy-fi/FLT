@@ -17,7 +17,7 @@ variable {R A B C : Type*} [CommRing R] [CommRing A] [CommRing B] [CommRing C]
 
 /-- An algebra factor of a bialgebra map through a surjective bialgebra map
 preserves the counit and comultiplication automatically. -/
-def factorOfSurjective (q : A →ₐc[R] B) (hq : Function.Surjective q)
+def descendAlongSurjective (q : A →ₐc[R] B) (hq : Function.Surjective q)
     (f : A →ₐc[R] C) (g : B →ₐ[R] C) (hg : g.comp q.toAlgHom = f.toAlgHom) : B →ₐc[R] C := by
   apply BialgHom.ofAlgHom g
   · apply AlgHom.ext
@@ -40,8 +40,8 @@ def factorOfSurjective (q : A →ₐc[R] B) (hq : Function.Surjective q)
     exact CoalgHomClass.map_comp_comul_apply f a
 
 /-- The descended bialgebra morphism retains its original algebra factor. -/
-@[simp] theorem factorOfSurjective_apply (q : A →ₐc[R] B) (hq : Function.Surjective q)
+@[simp] theorem descendAlongSurjective_apply (q : A →ₐc[R] B) (hq : Function.Surjective q)
     (f : A →ₐc[R] C) (g : B →ₐ[R] C) (hg : g.comp q.toAlgHom = f.toAlgHom) (b : B) :
-    factorOfSurjective q hq f g hg b = g b := rfl
+    descendAlongSurjective q hq f g hg b = g b := rfl
 
 end BialgHom

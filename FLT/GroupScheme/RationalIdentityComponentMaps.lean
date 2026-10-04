@@ -56,7 +56,7 @@ def rationalIdentityAlgHom {X Y : FF ((LocalCyclotomic.rationalPlace p).adicComp
 def rationalIdentityMap {X Y : FF ((LocalCyclotomic.rationalPlace p).adicCompletionIntegers ℚ)
       ((LocalCyclotomic.rationalPlace p).adicCompletion ℚ)} (f : ModelHom X Y) : ModelHom
   (FF.rationalIdentityComponent (p := p) X) (FF.rationalIdentityComponent (p := p) Y) :=
-  BialgHom.factorOfSurjective (FF.rationalIdentityComponentInclusion (p := p) Y)
+  BialgHom.descendAlongSurjective (FF.rationalIdentityComponentInclusion (p := p) Y)
     (FF.rationalIdentityComponentInclusion_surjective (p := p) Y)
     ((FF.rationalIdentityComponentInclusion (p := p) X).comp f) (rationalIdentityAlgHom (p := p)
       (X := X) (Y := Y) f) (by ext; rfl)
