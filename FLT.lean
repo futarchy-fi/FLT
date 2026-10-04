@@ -64,9 +64,12 @@ public import FLT.AbsoluteGaloisGroup.RootCharacterResidue
 public import FLT.AbsoluteGaloisGroup.RootCharacterTopology
 public import FLT.AbsoluteGaloisGroup.RootCharacterUniformizer
 public import FLT.AbsoluteGaloisGroup.RootInertiaTransitivity
+public import FLT.AbsoluteGaloisGroup.RootUniformizerModel
 public import FLT.AbsoluteGaloisGroup.TameCharacter
 public import FLT.AbsoluteGaloisGroup.TameCharacterSurjective
+public import FLT.AbsoluteGaloisGroup.TameRootIntegralModel
 public import FLT.AbsoluteGaloisGroup.Unramified
+public import FLT.AbsoluteGaloisGroup.UnramifiedCharacterIntegers
 public import FLT.AbsoluteGaloisGroup.UnramifiedCharacterSplitting
 public import FLT.AbsoluteGaloisGroup.WildInertiaProP
 public import FLT.Assembly.B4
@@ -2864,6 +2867,7 @@ public import FLT.PadicHodgeTheory.ComplexDeRhamGraded
 public import FLT.PadicHodgeTheory.ComplexDeRhamGradedGalois
 public import FLT.PadicHodgeTheory.ComplexDeRhamResidue
 public import FLT.PadicHodgeTheory.ComplexDeRhamRings
+public import FLT.PadicHodgeTheory.ComplexDividedPowerHull
 public import FLT.PadicHodgeTheory.ComplexEigenperiodFiltration
 public import FLT.PadicHodgeTheory.ComplexFiniteLogAlgebra
 public import FLT.PadicHodgeTheory.ComplexFiniteLogEvaluation
@@ -2887,8 +2891,11 @@ public import FLT.PadicHodgeTheory.ComplexIntegerGradedProduct
 public import FLT.PadicHodgeTheory.ComplexIntegerGradedScalars
 public import FLT.PadicHodgeTheory.ComplexIntegerInvertP
 public import FLT.PadicHodgeTheory.ComplexInvariantOrder
+public import FLT.PadicHodgeTheory.ComplexLocalizedFrobenius
 public import FLT.PadicHodgeTheory.ComplexLocalizedGalois
+public import FLT.PadicHodgeTheory.ComplexLocalizedScalars
 public import FLT.PadicHodgeTheory.ComplexNonzeroTwistVanishing
+public import FLT.PadicHodgeTheory.ComplexPDHullGalois
 public import FLT.PadicHodgeTheory.ComplexPadicScalarAction
 public import FLT.PadicHodgeTheory.ComplexPadicScalarResidue
 public import FLT.PadicHodgeTheory.ComplexPadicScalars
@@ -2911,6 +2918,7 @@ public import FLT.PadicHodgeTheory.ComplexTiltDivisibility
 public import FLT.PadicHodgeTheory.ComplexTiltGalois
 public import FLT.PadicHodgeTheory.ComplexTwistApproximation
 public import FLT.PadicHodgeTheory.DiscreteValuationLocalization
+public import FLT.PadicHodgeTheory.DividedPowerHull
 public import FLT.PadicHodgeTheory.FiniteLogContinuity
 public import FLT.PadicHodgeTheory.FontaineWittVectors
 public import FLT.PadicHodgeTheory.FractionalPrincipalFiltration
