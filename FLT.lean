@@ -2528,12 +2528,16 @@ public import FLT.Mazur.DivisorLineBundleSumRestrict
 public import FLT.Mazur.DivisorLineBundleSumUnit
 public import FLT.Mazur.DivisorLinePullback
 public import FLT.Mazur.DivisorPowerCanonicalSection
+public import FLT.Mazur.DivisorPowerEulerCharacteristic
+public import FLT.Mazur.DivisorPowerTwistDegree
 public import FLT.Mazur.DivisorPowerVeryAmple
 public import FLT.Mazur.DivisorRestrictCoherence
 public import FLT.Mazur.DivisorSectionComplement
 public import FLT.Mazur.DivisorSectionExact
 public import FLT.Mazur.DivisorStalkLength
 public import FLT.Mazur.DivisorTensorSequence
+public import FLT.Mazur.DivisorTwistedDegree
+public import FLT.Mazur.DivisorTwistedSequence
 public import FLT.Mazur.EtaleCoordinate
 public import FLT.Mazur.EtaleDimGe
 public import FLT.Mazur.EtaleDimLe
@@ -2551,6 +2555,7 @@ public import FLT.Mazur.FiniteDivisorCohomology
 public import FLT.Mazur.FiniteDivisorComponentAvoidance
 public import FLT.Mazur.FiniteSchemeInvertibleSections
 public import FLT.Mazur.FiniteSchemeLength
+public import FLT.Mazur.FiniteSchemeLineCohomology
 public import FLT.Mazur.FiniteSectionProjectivePresentation
 public import FLT.Mazur.FlasqueDirectImageAcyclic
 public import FLT.Mazur.FlatCartesianSectionGluing
@@ -2639,6 +2644,7 @@ public import FLT.Mazur.LineEndpointTransport
 public import FLT.Mazur.LinePowerEvaluationDescent
 public import FLT.Mazur.LinePowerSectionBaseChange
 public import FLT.Mazur.LinePullbackRestriction
+public import FLT.Mazur.LineSheafDualEvaluation
 public import FLT.Mazur.LineStructureProjection
 public import FLT.Mazur.LocalCartierGeneratorDescent
 public import FLT.Mazur.LocalizationCech
@@ -3206,6 +3212,7 @@ public import FLT.Mazur.StructureDirectImageHZero
 public import FLT.Mazur.StructureDirectImageSections
 public import FLT.Mazur.StructureImageOpenChart
 public import FLT.Mazur.SurjectiveDominantEpi
+public import FLT.Mazur.TensorPowerDistribution
 public import FLT.Mazur.TensorPowerGeneratorOpen
 public import FLT.Mazur.TensorPowerReassociation
 public import FLT.Mazur.TernaryOpenDescent
