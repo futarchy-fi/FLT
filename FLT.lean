@@ -2116,6 +2116,7 @@ public import FLT.Mazur.AffineCohomologyVanishingRelInjective
 public import FLT.Mazur.AffineCohomologyVanishingSpectrum
 public import FLT.Mazur.AffineCoverCohomology
 public import FLT.Mazur.AffineCoverIntersections
+public import FLT.Mazur.AffineFpqcRefinement
 public import FLT.Mazur.AffineIdealPowerExtension
 public import FLT.Mazur.AffineImageSectionTransport
 public import FLT.Mazur.AffineIntersectionRestriction
@@ -2309,7 +2310,9 @@ public import FLT.Mazur.FiniteCechCyclesScalars
 public import FLT.Mazur.FiniteCechTermScalars
 public import FLT.Mazur.FiniteSectionProjectivePresentation
 public import FLT.Mazur.FlasqueDirectImageAcyclic
+public import FLT.Mazur.FlatFiniteEqualizer
 public import FLT.Mazur.FlatIdealTensor
+public import FLT.Mazur.FlatSectionEqualizer
 public import FLT.Mazur.GeneralizedCurveAmpleBaseChange
 public import FLT.Mazur.GeneralizedCurveAmpleSubgroup
 public import FLT.Mazur.GeneralizedCurveBaseChange
@@ -2807,6 +2810,7 @@ public import FLT.Mazur.RationalFibers
 public import FLT.Mazur.RefinedChartSpectrum
 public import FLT.Mazur.RelativeAmpleAffineBaseChange
 public import FLT.Mazur.RelativeAmpleBaseChange
+public import FLT.Mazur.RelativeAmpleFpqcRefinement
 public import FLT.Mazur.RelativeAmplePresentationTransport
 public import FLT.Mazur.RelativeAmpleProper
 public import FLT.Mazur.RelativeAmpleRestriction
