@@ -1958,6 +1958,7 @@ public import FLT.Mazur.ModuleCohomology
 public import FLT.Mazur.ModuleCohomologyExact
 public import FLT.Mazur.ModuleCohomologyRing
 public import FLT.Mazur.ModuleCohomologyVanishing
+public import FLT.Mazur.ModuleComparedSectionRatio
 public import FLT.Mazur.ModuleDerivedAbelianComparison
 public import FLT.Mazur.ModuleDisjointSectionGluing
 public import FLT.Mazur.ModuleDualSectionCancellation
@@ -2102,6 +2103,8 @@ public import FLT.Mazur.PolygonAtlasCocone
 public import FLT.Mazur.PolygonAtlasSmoothLocus
 public import FLT.Mazur.PolygonBoundaryDivisor
 public import FLT.Mazur.PolygonBranchDifferenceSheaf
+public import FLT.Mazur.PolygonCanonicalChartPullback
+public import FLT.Mazur.PolygonCanonicalChartRing
 public import FLT.Mazur.PolygonCanonicalSection
 public import FLT.Mazur.PolygonChartScaling
 public import FLT.Mazur.PolygonClassifiedFamily
@@ -2165,8 +2168,10 @@ public import FLT.Mazur.PolygonLineNodeRestriction
 public import FLT.Mazur.PolygonLineNormalization
 public import FLT.Mazur.PolygonMarkedSections
 public import FLT.Mazur.PolygonNodalCore
+public import FLT.Mazur.PolygonNodeAffineCharts
 public import FLT.Mazur.PolygonNodeBranches
 public import FLT.Mazur.PolygonNodeCompletionCriterion
+public import FLT.Mazur.PolygonNodeDenominatorCover
 public import FLT.Mazur.PolygonNodeDimension
 public import FLT.Mazur.PolygonNodeEqualizer
 public import FLT.Mazur.PolygonNodeIncidence
@@ -2187,6 +2192,7 @@ public import FLT.Mazur.PolygonNormalizationSectionFamilies
 public import FLT.Mazur.PolygonNormalizationTorusPullback
 public import FLT.Mazur.PolygonNormalizationTransport
 public import FLT.Mazur.PolygonOneGonCompletion
+public import FLT.Mazur.PolygonOneGonDenominator
 public import FLT.Mazur.PolygonPinchingAffineBaseChange
 public import FLT.Mazur.PolygonPinchingDiagram
 public import FLT.Mazur.PolygonPinchingFlatBaseChange
@@ -2204,6 +2210,7 @@ public import FLT.Mazur.PolygonSeparated
 public import FLT.Mazur.PolygonSmoothLocus
 public import FLT.Mazur.PolygonSplitGroup
 public import FLT.Mazur.PolygonSplitNodeCompletion
+public import FLT.Mazur.PolygonSplitNodeDenominator
 public import FLT.Mazur.PolygonStructureInclusion
 public import FLT.Mazur.PolygonTranslationImages
 public import FLT.Mazur.PolygonUniversalAction
@@ -2211,6 +2218,7 @@ public import FLT.Mazur.PolygonUniversalScaling
 public import FLT.Mazur.PolynomialEndpointInterpolation
 public import FLT.Mazur.PowerSeriesQuotientCompletion
 public import FLT.Mazur.PowerSeriesSubstitutionEquiv
+public import FLT.Mazur.PrincipalAffineRefinement
 public import FLT.Mazur.PrincipalSubmoduleCoordinates
 public import FLT.Mazur.PrincipalSubmoduleOverlap
 public import FLT.Mazur.PrincipalSubmoduleSectionLocalization
@@ -2232,6 +2240,7 @@ public import FLT.Mazur.ProjectiveLineActionEndpoints
 public import FLT.Mazur.ProjectiveLineActionPoints
 public import FLT.Mazur.ProjectiveLineActionSpecialization
 public import FLT.Mazur.ProjectiveLineActionTorus
+public import FLT.Mazur.ProjectiveLineCanonicalRatios
 public import FLT.Mazur.ProjectiveLineChartIntersection
 public import FLT.Mazur.ProjectiveLineCharts
 public import FLT.Mazur.ProjectiveLineCohomologyVanishing
