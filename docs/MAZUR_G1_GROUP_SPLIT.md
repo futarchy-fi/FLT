@@ -1,6 +1,100 @@
 # G1 after G5: polygon action, genus and the remaining Mazur gates
 
 
+
+## Relative DR objects and base change (W48–W50)
+
+W50 proves arbitrary smooth-locus base change and constructs the full DR
+pullback object and functor. This closes the geometric input left open by
+W48/W49. The identity/composition comparisons have not yet been lifted to
+the full DR category with coherence identities, so A3 as a whole remains open.
+`Mazur_statement` has not been removed.
+
+Recheck the new proof chain with
+`LEAN_NUM_THREADS=2 lake build FLT.Mazur.GeneralizedCurveBaseChange`.
+Lint individual modules only: `lake exe runLinter MODULE`.
+The W50 handoff records the checked-at time, individual builds, lint results,
+full originating-declaration axiom audit and post-merge root build.
+
+`GeneralizedEllipticCurve` defines DR II.1.12 over schemes in `Type`, matching
+the existing genus/cohomology API. It retains a classified genus-one family,
+a commutative group scheme identified with the actual relative smooth open,
+the whole-curve action, its unit/associativity laws, restriction to group
+multiplication, and the geometric rotation condition. These are the defining
+DR conditions; no moduli or arithmetic conclusion is a record field.
+
+`GeneralizedCurveGraph` quantifies over every geometric point and every
+rational point of the actual pulled-back group. Its cyclic indexing is an
+equivalence onto all irreducible components and all nonsmooth points, with
+actual point/component incidence. It requires one common rotation index for
+vertices and edges. One-gon loops and the two distinct two-gon edges remain.
+`PolygonGroupPoints` proves that unit/component coordinates exhaust group
+points. `PolygonGeneralizedCurve.curve` uses that result with the existing
+family, smooth-open, action and geometric-translation proofs to construct
+an unconditional polygon instance. Its separate `smooth_restriction` theorem
+also exposes multiplication on the actual smooth open.
+
+`GeneralizedCurveCategory` constructs compatible morphisms, their category,
+identity-section preservation and underlying curve/group isomorphisms. The
+curve forgetful functor is faithful: the curve map determines the group map
+because the smooth-group inclusion is a monomorphism.
+
+The implemented parts of A3 are:
+
+- `GeneralizedCurvePullback`: actual arbitrary-base pullbacks of the family,
+  commutative group, inclusion and action; unit, associativity, multiplication
+  restriction and compatibility of pulled-back morphisms.
+- `GeneralizedCurvePullbackCoherence`: the canonical identity/composition
+  comparisons, naturality, and their compatibility with inclusions, actions,
+  group identities and multiplication.
+- `GeneralizedCurveGraphTransport` and `GeneralizedCurveGraphBaseChange`:
+  transport of actual components/nodes through equivariant isomorphisms, and
+  geometric rotations for the actual pulled-back action.
+- `GeneralizedCurveSmoothPullback`: smoothness of the actual smooth open and
+  group, and a canonical open immersion `smoothPullbackComparison` from the
+  pulled-back group to the new relative smooth open. Its composite with the
+  smooth-open inclusion is exactly the pulled-back original inclusion.
+
+W50 supplies the remaining geometric input:
+
+- `SmoothLocusGlobalFiber` globalizes the affine pointwise fibre criterion
+  through open source and target charts for flat locally finitely presented maps.
+- `CotangentBaseChange` and `PointwiseDescent` prove smoothness descent at a
+  chosen prime under flat base change, hence under arbitrary field extensions.
+  Only smoothness of the chosen localization is required. The proof descends
+  flatness of differentials and vanishing of first cotangent homology through
+  the faithfully flat map of local rings.
+- `SmoothLocusFieldExtension` and `SmoothLocusBaseChange` combine that descent
+  with canonical fibre pullback squares to prove
+  `pullback.fst f g ⁻¹ᵁ f.smoothLocus = (pullback.snd f g).smoothLocus`
+  for flat locally finitely presented `f` and arbitrary `g`.
+- `GeneralizedCurveSmoothBaseChange` proves the canonical comparison
+  surjective and turns it into `smoothPullbackIso`, retaining the inclusion.
+- `GeneralizedCurveBaseChange` constructs `E.baseChange g` with the classified
+  family, smooth group, whole-curve action and geometric rotations, and the
+  functor `baseChangeFunctor g` on compatible morphisms.
+
+**Remaining A3 work:** lift the existing identity/composition comparisons
+from curves and groups to the full generalized-curve category, and prove
+its coherence identities. A4–A8 and the later arithmetic gates remain.
+
+Read-only checks for the producer/remaining boundary:
+
+```sh
+rg -n 'structure GeneralizedEllipticCurve|rotations|smoothIso' FLT/Mazur/GeneralizedEllipticCurve.lean
+rg -n 'groupPoint_surjective|gmPoint_surjective' FLT/Mazur/PolygonGroupPoints.lean
+rg -n 'field_rotations|geometric_rotations|def curve|smooth_restriction' FLT/Mazur/PolygonGeneralizedCurve.lean
+rg -n 'instance : Category|Faithful|identitySection' FLT/Mazur/GeneralizedCurveCategory.lean
+rg -n 'theorem pullback_|smoothPullbackComparison' FLT/Mazur/GeneralizedCurve*.lean
+rg -n 'preimage_smoothLocus_eq|smoothLocus' .lake/packages/mathlib/Mathlib/AlgebraicGeometry/Morphisms/Smooth.lean
+rg -n 'Mazur_statement' FLT/Assumptions/Mazur.lean
+```
+
+A4–A8 level, ampleness and moduli work, the later cusp constructions, and the
+arithmetic gates retain W47's remaining scope. No existing Lean consumer was
+changed; only new modules and sorted root imports are added.
+
+
 ## W47: cubic very ampleness proved; G1 moduli integration remains
 
 Checked at 2026-10-04 06:42 UTC against the W47 source modules below. This
