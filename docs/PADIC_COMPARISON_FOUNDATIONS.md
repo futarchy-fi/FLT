@@ -1254,3 +1254,58 @@ lifting of generators, continuity of finite-level scalar evaluation,
 and a compact coefficient-fibre argument over Z_p transported by the
 proved original integer-ring equivalence. This route proves finite
 generation only; freeness and the formal-smoothness input remain distinct.
+
+W37 final refinement (caps 150): `NilpotentGeneratorLifting` proves
+surjectivity from generators modulo a nilpotent scalar;
+`PDivisibleCotangentGenerators` lifts one finite family from level one
+and proves that it generates every actual level. `PadicTorsionScalarContinuity`
+factors the original scalar action through actual p-power residues.
+`PDivisibleCotangentLimitFinite` uses compact nonempty coefficient fibres
+in a finite power of Z_p to obtain generators of the actual inverse limit.
+`PDivisibleCotangentComplete` identifies the evaluation kernels with the
+standard adic filtration and constructs limits of coherent Cauchy sequences.
+`PDivisibleTangentReduction` represents torsion-valued limit functionals
+by the original finite-level Leibniz functionals;
+`PDivisibleTangentNaturality` retains original system morphisms.
+`PDivisibleIntegralTangent` defines the integral linear dual of the limit
+and proves it finite free over the original DVR.
+`PDivisibleRationalCotangent` specializes reduction, completeness and
+integral tangent finiteness/freeness to the original rational-place base.
+
+### W37 implementation boundary and next proof obligations
+
+The new modules prove convolution and multiplication differentials,
+p-power annihilators, the exact finite-level cotangent sequence, finite
+level sets, limit reduction and finite generation, and adic completeness.
+All identifications retain the original integral coordinate maps and
+original level evaluations. The integral tangent constructed here is
+`Hom_R(cotangentLimit,R)`. Its freeness is a property of this dual over a
+DVR, and does not prove that `cotangentLimit` is free. The torsion-valued
+comparison is `Hom_R(cotangentLimit,M) = Hom_R(LevelCotangent n,M)` when
+p^n kills M; it does not assert that reducing the integral dual gives
+all such functionals.
+
+The next unproved gate needs its own source proof and the following
+separate capped leaves before period comparison:
+
+1. Establish infinitesimal lifting for the connected formal object
+   associated to the original finite-flat p-divisible levels. A proof
+   must construct the formal object or state and prove an equivalent
+   level-system lifting theorem; the required lifting property may not
+   be supplied as a new field of the input system.
+2. Deduce torsion-freeness and finite freeness of the actual cotangent
+   limit, identifying it with the cotangent of that same formal object.
+   The currently proved finiteness and completeness do not imply this.
+3. Prove reduction of its integral dual equals the already constructed
+   torsion-valued tangent functor, with the original evaluation pairing.
+4. Construct the Cartier-dual level system and its limit transition maps;
+   identify its relevant tangent/dual data using those same maps. The
+   scalar-valued finite-level primitive equivalence is not a limit theorem.
+5. Construct the period pairing and prove integrality, equivariance,
+   injectivity, surjectivity and strictness in the existing D2 contract
+   order. No new code in this wave proves these endpoints.
+
+Checked by the per-module foreground builds, individual lints and named
+axiom audits recorded in `FAMILY_W37_DONE.md`; rerun those commands for a
+current status. The unchanged general family theorem remains outside
+these cotangent/tangent results and still requires admission removal.
