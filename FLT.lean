@@ -2554,6 +2554,7 @@ public import FLT.Mazur.EtaleCoordinate
 public import FLT.Mazur.EtaleDimGe
 public import FLT.Mazur.EtaleDimLe
 public import FLT.Mazur.EvaluatedPrincipalRefinement
+public import FLT.Mazur.EventualTwistVanishing
 public import FLT.Mazur.ExactFunctorInjectiveExt
 public import FLT.Mazur.ExactSourceDenominatorLift
 public import FLT.Mazur.FCurveContracts
@@ -2568,6 +2569,9 @@ public import FLT.Mazur.FiniteClosedIdealSection
 public import FLT.Mazur.FiniteDivisorCohomology
 public import FLT.Mazur.FiniteDivisorComponentAvoidance
 public import FLT.Mazur.FinitePushforwardAmpleVanishing
+public import FLT.Mazur.FinitePushforwardCoherent
+public import FLT.Mazur.FinitePushforwardIdealImage
+public import FLT.Mazur.FinitePushforwardIdealVanishing
 public import FLT.Mazur.FiniteSchemeInvertibleSections
 public import FLT.Mazur.FiniteSchemeLength
 public import FLT.Mazur.FiniteSchemeLineCohomology
@@ -2648,6 +2652,8 @@ public import FLT.Mazur.IdealPowerChartDescent
 public import FLT.Mazur.IdealPowerCompatibility
 public import FLT.Mazur.IdealPowerExtensionCharts
 public import FLT.Mazur.IdealPowerExtensionGluing
+public import FLT.Mazur.IdealPowerGenericComparison
+public import FLT.Mazur.IdealPowerVanishingTransfer
 public import FLT.Mazur.IdealQuotientExact
 public import FLT.Mazur.IdealQuotientSectionLift
 public import FLT.Mazur.IdealTwistCohomologyStabilization
