@@ -4,6 +4,35 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
+## W60 — extracted ordinary branches and niveau-two normalization
+
+Validation receipt check: `python3 Scratch/LiftsW60/check.py`. This reports
+its checked-at time and checks source hashes against the saved foreground
+build, module-lint and axiom-audit receipts. It does not rerun Lean.
+
+| Item | Module | Proved scope |
+|---|---|---|
+| Unique reduced character exponent | `SerreWeight.CyclicCharacterExponent` | Existence, uniqueness and change-of-generator formula for a surjective finite cyclic character quotient. |
+| Actual inertia normalization | `AbsoluteGaloisGroup.RootCharacterExponent` | Unique exponent for the constructed root quotient; independence of root and uniformizer. Kernel containment remains explicit. |
+| Niveau-two digit normalization | `SerreWeight.NiveauTwoDigits`, `AbsoluteGaloisGroup.NiveauTwoCharacterNormalization` | Frobenius exchanges the two base-p digits. A nonfixed character of the actual rational degree-p²−1 root quotient has a normalized conjugate with determinant exponent a<p−1 and 1≤b<p. Its determinant factor is the actual cyclotomic character. |
+| Independent non-peu branch | `Extensions.OrdinaryFiltrationRamification`, `SerreWeight.OrdinaryBranch` | The actual extracted class satisfies the independent cup-annihilator condition whenever the filtration splits. Non-peu implies nonsplit. Branch selection tests actual splitting and the whole-local Hom character, and is invariant under both line basis changes and simultaneous twists. |
+| Actual prime-field recipe input | `SerreWeight.NormalizedOrdinaryInput` | Constructs `ReducibleInput` from the filtration, the surjective inertia restriction and kernel containment. The exceptional exponent-one field is proved from the whole-local character equality; neither the branch nor a weight is supplied. |
+
+The niveau-two theorem classifies characters of a specified quotient, not
+all irreducible residual representations. Proving that the actual inertia
+representation supplies those characters and the required kernel containment
+remains necessary. The ordinary construction requires an actual exact line
+filtration and currently uses prime-field coefficients for exponent
+extraction. It does not prove uniqueness under changing the invariant line,
+coefficient-extension compatibility of the full recipe, or the symmetric-power
+composition-factor comparison. No numerical Serre-weight evaluation follows.
+
+R1 effective quotient-twist Hopf construction, Lp0 universal integral
+PD-envelope/Frobenius/B_cris comparison, arithmetic Noetherianity, and G0a–G1c
+remain unresolved in this wave. The restored priority order is unchanged.
+The endpoint `IsHardlyRamified.lifts` is unchanged; use `#print axioms` on
+that theorem and `PNat.pow_add_pow_ne_pow` to check the remaining admissions.
+
 ## W59 — C1 circularity audit and restored arithmetic priorities
 
 Checked 2026-10-04 against `HardlyRamifiedWittPoint`,
