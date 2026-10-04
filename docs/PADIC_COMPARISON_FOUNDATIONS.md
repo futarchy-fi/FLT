@@ -865,3 +865,115 @@ trace bounds and completed twist vanishing. Consequently invariant-order
 control, the reverse period fixed-field inclusion and the comparison
 contracts are not proved by W33. No uniform bound or completed invariant
 vanishing has been installed as an instance, structure field or axiom.
+
+
+## W34 elementary Ax proof split (before implementation)
+
+Use Hasse derivatives of the actual minimal polynomial, not an assumed
+trace bound. If all conjugates of a are within r, the (n-k)-th Hasse
+derivative at a has norm at most r^k. Its degree is k and its leading
+coefficient is choose(n,k), so one of its roots b satisfies
+`distance(a,b)^k <= norm(choose(n,k))^-1 * r^k` and has degree at most k.
+Galois isometry transfers the displacement bound to b. For n not a power
+of p, Lucas supplies some 0 < k < n with unit binomial coefficient. For
+n = p^(s+1), take k = p^s: the binomial valuation is one. Strong degree
+induction with budget `2 - 2/n` gives the deliberately nonoptimal uniform
+constant `p^2`. Every row is capped at 150 source lines; split
+again before exceeding that limit. This is a plan until each lemma builds.
+
+| Leaf | Concrete proof output | Dependency |
+|---|---|---|
+| UltrametricPolynomialCoefficients | Coefficients of products of linear factors with bounded roots have the corresponding power bound. | Ultrametric finite-sum inequality |
+| PolynomialNearbyRoot | Small evaluation gives a nearby actual root, using the product of root distances. | Splitting in the algebraic closure |
+| PadicHasseApproximation | The Hasse derivative of the original minimal polynomial supplies an actual smaller-degree approximant. | Previous two leaves, conjugacy, Hasse degree and leading coefficient |
+| PadicBinomialDescent | Unit binomial coefficient off p-powers; valuation one for choose(p^(s+1),p^s). | Lucas and prime-power binomial factorization |
+| AxDegreeBudget | Real-power budget inequalities and uniform upper bound. | Elementary ordered-field arithmetic |
+| PadicAxDegreeStep | Combine actual Hasse roots, binomial losses and the real-power budget into a strict degree reduction. | Hasse approximation, binomial descent, degree budget |
+| PadicAxEstimate | Strong degree induction with actual scalar witnesses and a uniform constant. | Hasse approximation, binomial descent, degree budget |
+| ComplexAxFixedScalars | Discharge W33 hestimate and derive the completed fixed field. | PadicAxEstimate and ComplexAxDescent |
+| CyclotomicTowerConstruction | Actual p-power-root subfields and inclusions. | Original character and roots of unity |
+| CyclotomicDifferentBounds | Different estimates at finite tower levels. | Tower construction; split valuation computations separately |
+| CyclotomicNormalizedTraceBounds | Uniform bounds for actual normalized trace transitions. | Different bounds |
+| CyclotomicWeightedDescent | Descend completed weighted invariants along actual tower traces. | Trace bounds, W33 approximation |
+| ComplexNonzeroTwistVanishing | Vanishing for every nonzero integral weight. | Weighted descent and character image |
+| ComplexInvariantOrder | Invariant order zero and residue-scalar subtraction. | Both analytic endpoints and actual integer graded algebra |
+
+The comparison split remains the W29/W32 contracts: rational-place
+transport, cotangent transitions, tangent duality, actual pairing,
+integrality, equivariance, injectivity, surjectivity, strictness, then
+coefficient decomposition and both graded ranks. None is assumed as a
+record field. The arithmetic and analytic leaves above take precedence.
+
+
+### W34 cyclotomic arithmetic refinement (before implementation)
+
+The Ax endpoint is separate from cyclotomic weighted descent. Before tower
+trace estimates, split the local arithmetic into the following <=150-line
+leaves: `PadicCyclotomicIrreducible` transports the integral Eisenstein
+criterion to Z_p and proves irreducibility over Q_p;
+`PadicCyclotomicTower` constructs the actual root-generated subfields,
+their inclusions and finite-dimensional instances;
+`PadicCyclotomicDegree` computes their degrees using the proved local
+irreducibility; `PadicCyclotomicTrace` constructs actual normalized trace
+projections and proves their finite-level compatibility. Trace operator
+bounds still require separate different/valuation leaves; neither the
+finite-dimensional instances nor formal trace transitivity proves them.
+
+
+A further bounded leaf, `PadicCyclotomicRootNorm`, computes the norm of
+zeta-1 from the actual minimal polynomial and the original isometric
+Galois action. Coefficient control in that power basis and trace values
+on root powers must then be separate leaves before a uniform trace bound.
+
+`NormalizedTraceTower` is a separate <=150-line generic transitivity leaf:
+proving it over abstract fields avoids expanding all p-adic field structures
+inside the kernel when specializing to the actual cyclotomic tower.
+
+
+### W34 implementation boundary
+
+`padicAx_exists_scalar` proves the requested algebraic scalar estimate
+with the element-independent constant `(p : Real)^2`. The proof chooses
+an actual root of a Hasse derivative of the actual minimal polynomial,
+then uses strong induction on its degree. A unit binomial coefficient
+has no loss; at a p-power degree the loss is `p^(1/k)` and the exponent
+budget `2-2/n` pays for it. No uniform estimate is a hypothesis of this
+theorem. `complexGalois_fixed_iff_mem_range` consequently identifies the
+fixed elements of the original C_p action with the original Q_p image;
+`complexGalois_fixed_existsUnique_scalar` gives unique scalar descent.
+
+`padic_cyclotomic_primePower_irreducible` proves local irreducibility by
+transporting Eisenstein from Z to Z_p and applying Gauss over Q_p. The
+actual root-generated tower is finite at each level, generated by any
+primitive root there, has degree `p^s*(p-1)` at level s+1, and is strictly
+increasing after its first level (including p=2). The original isometric
+Galois action gives `padic_minpoly_eval_norm`; specialization computes
+`norm(zeta-1)^(p^s*(p-1)) = p^-1`. The actual normalized traces fix their
+target fields, are idempotent, agree with field trace divided by degree
+on every finite subextension, and compose along tower inclusions.
+
+These are arithmetic inputs, not a trace operator estimate. The remaining
+analytic leaves, still <=150 source lines each, are:
+
+1. Compute relative tower degrees and actual traces on root powers;
+   prove coefficient control in the uniformizer power basis using the
+   exact norm. Split the coefficient/orthogonality argument from the
+   root-power trace computation.
+2. Prove a uniform norm bound for normalized trace restricted to the
+   cyclotomic union. The trace on the whole algebraic closure is not
+   claimed uniformly bounded; that stronger assertion would be false.
+3. Descend invariants of the cyclotomic-character kernel to the completed
+   cyclotomic union (requires the relative Ax argument), extend the
+   bounded projections, and prove convergence back to the vector.
+4. Prove tail-character nontriviality and equivariance of the actual
+   projections, then nonzero completed integral-twist vanishing.
+5. Apply both analytic endpoints to actual integer graded pieces:
+   invariant order, fixed-residue subtraction, and the reverse B_dR
+   fixed-field inclusion. Continue the existing comparison split only
+   after these gates.
+
+The original general `IsHardlyRamified.mem_isCompatible` remains unchanged
+and still depends on `sorryAx`; no general-family admission is discharged
+by the fixed-C_p endpoint alone. Rebuild each named module, lint it alone,
+and print its axioms to check these claims; the W34 handoff records the
+checked snapshot and evidence logs.
