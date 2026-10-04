@@ -3233,3 +3233,9 @@ Split before implementation; all new modules capped at 150 lines:
 B1–B3 do not close A1–D. No conditional exactness wrapper replaces the
 analytic construction. HT3 beyond the proved pairings, DR1/P2–P6, W1–W3,
 and the family admission remain separate obligations.
+
+W67 refinement before B4 implementation: `RationalPlaceHodgeTateOrthogonality`
+(cap 150) proves orthogonality directly in X's original Cartier pairing from
+the positive character actions on both actual left maps. This avoids needing
+to identify the dual-system bidual pairing with the original pairing first.
+It remains a zero-component compatibility theorem, not full HT3 or exactness.
