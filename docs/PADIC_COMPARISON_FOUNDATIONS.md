@@ -1820,3 +1820,53 @@ C2 is a fixed-base theorem: a varying-ring approximation cannot use it
 until stage flatness has been base-changed to B. W42's reduction and
 covering lemmas apply only after F14 and C12. L7b.4/L8/L9 and
 `IsHardlyRamified.mem_isCompatible` remain untouched by these foundations.
+
+### Internal leaves for the remaining large source arguments
+
+The following replaces the provisional “split before implementation” notes
+on F9, C4 and C8 above. Source checked against Stacks commit
+`89afc779ad518678546d4209d41e00ae072f680a`, `algebra.tex`, specifically
+`lemma-mod-injective`, `lemma-grothendieck`, `lemma-lci`,
+`lemma-relative-global-complete-intersection-Noetherian`, and
+`lemma-colimit-rings-flat`. Every row has a 150-line module cap and remains
+unproved. A parent row is an assembly milestone, not an implementation leaf.
+
+| Internal leaf | Single proof obligation | Dependencies |
+|---|---|---|
+| F9a / LocalParameterAvoidance | In a Noetherian local Cohen–Macaulay ring, the first member of a system of parameters avoids every associated prime; state the depth hypothesis via lengths of Mathlib regular sequences. | Associated-prime dimension/depth comparison. |
+| F9b / ParameterFirstRegular | Convert F9a's avoidance into `IsSMulRegular` using the zero-divisor/associated-prime criterion. | F9a; finite-module associated-prime API. |
+| F9c / ParameterQuotientDepth | Quotient by a regular parameter decreases dimension and maximal regular-sequence length by one. | F9b; dimension inequality and lifting regular sequences across one quotient. |
+| F9d / ParameterRegularInduction | Induct on the parameter list with F9b–c and `isRegular_cons_iff`; the terminal quotient remains nonzero. | F9b–c. |
+| F9e / PolynomialLocalParameterCriterion | Supply the dimension/depth equality for the polynomial local ring in F8, then apply F9d to an Artinian quotient with n generators. | F8, F9d. This is the actual input to F10. |
+| C4a / AdicGradedTensorComparison | Identify M⊗(m^n/m^(n+1)) with (M/mM)⊗_(R/m)(m^n/m^(n+1)), with quotient maps. | Tensor/quotient universal properties. |
+| C4b / AdicQuotientExactRow | Construct the exact row from the graded piece to M/m^(n+1)M to M/m^nM; flatness of M makes its first map injective. | C4a, tensor right exactness and `Flat` preservation of injectivity. |
+| C4c / AdicInjectivityInduction | A map N→M injective modulo m is injective modulo m^n for every positive n, with M flat. | C4b and injectivity after tensoring vector spaces over R/m. |
+| C4d / AdicSeparatedInjectivity | If S is Noetherian local and N finite over S, use Krull intersection for mS to deduce injectivity of N→M from C4c. | C4c and the existing Krull intersection theorem. |
+| C4e / QuotientBaseInjectivity | Apply C4d to R/I→S/IS and N/IN→M/IM for every proper ideal I; prove the residual injectivity and quotient finiteness hypotheses. | C4d, quotient tensor comparison. |
+| C4f / FlatCokernelIdealCriterion | For an injective N→M with M flat, injectivity modulo every ideal implies flatness of the cokernel. Use the tensor ideal criterion, avoiding a new Tor theory. | Tensor exactness; `Flat.iff_rTensor_injective'`. |
+| C4g / FibreRegularElementAssembly | Apply C4d–f to multiplication by f on S. Identify its cokernel with S/(f) and obtain both regularity and quotient flatness. | C4d–f. This closes C4; C5 is list induction. |
+| C8a / FibreDimensionFieldExtension | Finite-type fibre dimension is invariant under field extension; retain the residue-field comparison of coefficient stages. | Noether normalization and integral-extension dimension. |
+| C8b / FibreDimensionPrincipalNeighbourhood | A point with fibre dimension ≤d has a principal neighbourhood where the fibre dimension stays ≤d. | Quasi-finite presentation over d polynomial variables and dimension of its fibres. |
+| C8c / ApproximationFiniteNeighbourhoods | Apply C8b at the images of primes from the final algebra and choose finitely many neighbourhoods covering its spectrum. | C7, C8a–b, quasicompactness. |
+| C8d / UnitIdealCertificateStage | Descend a finite equation Σ a_j g_j=1 in the final presented algebra to one enlarged finitely generated coefficient stage. | C7; finite coefficients of the a_j and of the relation-ideal membership witnesses. |
+| C8e / RelativeCIApproximationAssembly | C8c's fibre-dimension bounds plus C8d's unit ideal give the relative global CI condition at the enlarged Noetherian stage. | C8a–d and base-change invariance of relative CI. |
+| C9a / PolynomialCoefficientColimit | Every polynomial and every equality of polynomials occur at a finite coefficient stage. | Finite support and directed bounds. |
+| C9b / RelationQuotientColimit | Quotient by the fixed finite relation list commutes with the coefficient-stage colimit; prove representative formulas. | C9a; ideal membership has finite witnesses. |
+| C9c / LocalizedQuotientColimit | Localizations at the primes induced from the final prime commute with C9b's colimit. | Fraction representatives and denominator equality witnesses. |
+| C10a / FixedBaseStageComparison | Compare the varying-base module colimit with the fixed-B colimit of B⊗_(B_i)M_i; construct both maps on representatives. | Semilinear transitions, finite-stage equality. |
+| C10b / VaryingBaseColimitFlat | Each B⊗_(B_i)M_i is B-flat; apply C2 and C10a. | C2, C10a, `Flat` base change. |
+| C10c / RelativeFlatnessAssembly | Apply Noetherian C6 at stages from C8e and use C9c/C10b for every localized prefix quotient. | C6, C8e, C9c, C10b. |
+
+These rows expose further foundational assumptions rather than silently
+calling them library results: F9a needs a depth/associated-prime theorem,
+F9c needs the regular-element dimension/depth theorem, and C8a–b need
+fibre-dimension theory. They are still research dependencies and their
+150-line budgets are planned, not validated line counts. The ready leaves
+implemented in W43 do not establish any of those assumptions.
+
+W43's C11 implementation is subdivided into `ReductionGeometricFibre`
+(quotient-base equivalence and further tensor base change) and
+`LiftedPresentationGeometricFibre` (the original presentation and polynomial
+representative formula). F1 supplies unique factorization of reduced-valued
+points through a nilpotent surjection. C1–C2 concern a fixed base; C10a–b
+are explicitly still required for the varying-base source argument.
