@@ -34,6 +34,7 @@ public import FLT.AbsoluteGaloisGroup.CompletionComparison
 public import FLT.AbsoluteGaloisGroup.CyclotomicCharacterNaturality
 public import FLT.AbsoluteGaloisGroup.FiniteCharacterInertia
 public import FLT.AbsoluteGaloisGroup.FiniteTameQuotient
+public import FLT.AbsoluteGaloisGroup.FiniteUniformizerRootCharacter
 public import FLT.AbsoluteGaloisGroup.FirstRamificationFiltration
 public import FLT.AbsoluteGaloisGroup.FirstRamificationPGroup
 public import FLT.AbsoluteGaloisGroup.FirstRamificationRestriction
@@ -64,7 +65,9 @@ public import FLT.AbsoluteGaloisGroup.RootCharacterTopology
 public import FLT.AbsoluteGaloisGroup.RootCharacterUniformizer
 public import FLT.AbsoluteGaloisGroup.RootInertiaTransitivity
 public import FLT.AbsoluteGaloisGroup.TameCharacter
+public import FLT.AbsoluteGaloisGroup.TameCharacterSurjective
 public import FLT.AbsoluteGaloisGroup.Unramified
+public import FLT.AbsoluteGaloisGroup.UnramifiedCharacterSplitting
 public import FLT.AbsoluteGaloisGroup.WildInertiaProP
 public import FLT.Assembly.B4
 public import FLT.Assembly.CharacterConjugation
@@ -138,6 +141,10 @@ public import FLT.Deformations.DeSmitLenstra.UniversalLift
 public import FLT.Deformations.DeSmitLenstra.UniversalMoritaData
 public import FLT.Deformations.DeSmitLenstra.UniversalTraceLift
 public import FLT.Deformations.FixedResidualQuotientIdeal
+public import FLT.Deformations.FlatClosedCondition
+public import FLT.Deformations.FlatClosedQuotient
+public import FLT.Deformations.FlatQuotientNonvanishing
+public import FLT.Deformations.FlatReductionIdeal
 public import FLT.Deformations.FramedArithmeticIdeal
 public import FLT.Deformations.FramedDeterminantIdeal
 public import FLT.Deformations.FramedQuotientIdeal
@@ -145,8 +152,12 @@ public import FLT.Deformations.FramedTrivialityIdeal
 public import FLT.Deformations.HardlyRamifiedArithmeticAtTwo
 public import FLT.Deformations.HardlyRamifiedArithmeticQuotient
 public import FLT.Deformations.HardlyRamifiedArithmeticResidual
+public import FLT.Deformations.HardlyRamifiedFlatLift
+public import FLT.Deformations.HardlyRamifiedFlatQuotient
 public import FLT.Deformations.HardlyRamifiedTwoQuotient
 public import FLT.Deformations.HardlyRamifiedUniversal
+public import FLT.Deformations.HardlyRamifiedWittLift
+public import FLT.Deformations.HardlyRamifiedWittResidual
 public import FLT.Deformations.IsProartinian
 public import FLT.Deformations.IsResidueAlgebra
 public import FLT.Deformations.Lemmas
@@ -180,6 +191,8 @@ public import FLT.Deformations.RepresentationTheory.FiniteFreeAdicComplete
 public import FLT.Deformations.RepresentationTheory.Flat
 public import FLT.Deformations.RepresentationTheory.FlatCofinal
 public import FLT.Deformations.RepresentationTheory.FlatDiscrete
+public import FLT.Deformations.RepresentationTheory.FlatFramedChange
+public import FLT.Deformations.RepresentationTheory.FlatIntersection
 public import FLT.Deformations.RepresentationTheory.FlatPadic
 public import FLT.Deformations.RepresentationTheory.FlatReduction
 public import FLT.Deformations.RepresentationTheory.Frobenius
@@ -222,6 +235,10 @@ public import FLT.Deformations.RepresentationTheory.ULiftCoefficientTensor
 public import FLT.Deformations.Subfunctor
 public import FLT.Deformations.UniversalArithmeticQuotient
 public import FLT.Deformations.UniversalLocalQuotient
+public import FLT.Deformations.WittCoefficientFaithfulness
+public import FLT.Deformations.WittCoefficientResidue
+public import FLT.Deformations.WittCoefficientRing
+public import FLT.Deformations.WittFlatNonvanishing
 public import FLT.DivisionAlgebra.Finiteness
 public import FLT.EllipticCurve.CoefficientAction
 public import FLT.EllipticCurve.CoordinateRing
@@ -2995,6 +3012,7 @@ public import FLT.PadicHodgeTheory.AdicUnitReflection
 public import FLT.PadicHodgeTheory.AlgebraicClosureGaloisContinuity
 public import FLT.PadicHodgeTheory.AlgebraicClosureGaloisTransport
 public import FLT.PadicHodgeTheory.AxDegreeBudget
+public import FLT.PadicHodgeTheory.ComplexAinfFrobenius
 public import FLT.PadicHodgeTheory.ComplexAxDescent
 public import FLT.PadicHodgeTheory.ComplexAxFixedScalars
 public import FLT.PadicHodgeTheory.ComplexCyclotomicAction
