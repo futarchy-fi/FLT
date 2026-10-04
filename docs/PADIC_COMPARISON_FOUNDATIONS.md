@@ -1211,3 +1211,46 @@ the fixed-field and finite-level duality theorems do not remove its
 `sorryAx`. Recheck every new module with its foreground module build,
 individual lint and `#print axioms`; FAMILY_W36_DONE.md records the
 checked snapshot and its local evidence files.
+
+## W37 cotangent differential and limit split (before implementation)
+
+Each complete module is capped at 150 lines. `AugmentationConvolution`
+proves the Leibniz differential of convolution using the actual counit
+identities. `FiniteFlatCotangentArithmetic` descends that identity to
+original model cotangents, including zero and multiplication by n.
+`PDivisibleCotangentArithmetic` computes both level composites as p-power
+scalars and proves the actual level annihilators.
+
+The limit comparison requires separate algebraic leaves before any
+formal-smoothness assertion: identify the cotangent kernel of a closed
+augmentation-preserving quotient; use the original system's integral
+kernel equation to obtain the cotangent exact sequence; compare its image
+with p-power multiples. Prove the inverse-limit reduction kernel using
+compatible lifts, and finite generation over the complete DVR using
+p-adic completeness and a finite generating set modulo p. Finite freeness
+requires a further torsion-freeness or formal-smoothness theorem; neither
+is implied by merely defining the inverse limit. A formal-smoothness route
+must prove infinitesimal lifting from the original finite-flat exact
+system, then establish the associated complete formally smooth coordinate
+algebra and its finite free cotangent. These are separate capped proof
+obligations, not extra fields of `PDivisibleSystem`.
+
+The actual Cartier-dual limit compatibility and period pairing follow
+these gates, in the previously recorded integrality, equivariance,
+injectivity, surjectivity and strictness order.
+
+W37 further refinement (caps 150): `FiniteFlatCotangentKernel` supplies
+actual coordinate-kernel representatives; `FiniteFlatCotangentImage`
+linearizes the extended augmentation ideal; `PDivisibleCotangentExactness`
+uses these to identify restriction kernels with p-power multiples.
+`FiniteFlatCotangentFinite` proves finite generation at each finite level;
+`FiniteTorsionModule` and `PDivisibleCotangentFiniteSets` prove those sets
+are finite over the original rational-place base. `PDivisibleCotangentLimitReduction`
+uses finite compatible division fibres to identify the limit modulo p^m
+with its actual level m, retaining the original evaluation map.
+
+Finite generation of the limit splits further into nilpotent scalar
+lifting of generators, continuity of finite-level scalar evaluation,
+and a compact coefficient-fibre argument over Z_p transported by the
+proved original integer-ring equivalence. This route proves finite
+generation only; freeness and the formal-smoothness input remain distinct.
