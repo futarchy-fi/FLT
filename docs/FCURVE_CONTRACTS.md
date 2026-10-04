@@ -629,13 +629,19 @@ On a smooth connected fiber any nonempty such divisor meets the unique component
 split n-gon a subgroup meeting only the identity component fails the criterion when n > 1.
 The p-gon test itself waits for G1-B, as stipulated in the original plan.
 
-**Gated:** O(D), invertible-sheaf degree, ampleness and the comparison with this support
-condition have no ready scheme-level API. The usual relative upgrade needs separate care:
-[S, 0D2N](https://stacks.math.columbia.edu/tag/0D2N) proves that a line bundle ample on a
-fiber is relatively ample nearby for a proper morphism with **Noetherian base**.
-This is not an arbitrary-base theorem. Pin the general limit/descent theorem, or prove that
-the required DR ample-level definition can be checked on geometric fibers, before releasing
-G1-A6 for arbitrary test schemes. No blanket EGA citation closes that gate.
+**W52 boundary:** O(D), its tensor powers, and the canonical comparison under
+arbitrary relative Cartier base change are implemented in
+`RelativeCartierDivisorPullback`. Invertible-sheaf degree and its comparison
+with the support criterion remain missing. The Noetherian-base theorem
+[S, 0D2N](https://stacks.math.columbia.edu/tag/0D2N) alone is insufficient,
+but its general version [0D2S](https://stacks.math.columbia.edu/tag/0D2S)
+works for an arbitrary proper morphism: ampleness on a fiber extends to a
+relative ample neighborhood. Its proof uses approximation by proper schemes
+over finite-type Z-algebras and descent of invertible sheaves and fiber
+ampleness. [0D2P](https://stacks.math.columbia.edu/tag/0D2P) gives fpqc descent
+of relative ampleness. These sources were read on 2026-10-04; their Lean
+proofs and the comparison with our positive-projective-power predicate
+remain large missing theory. See [the W52 split](MAZUR_W52_SPLIT.md).
 
 ### C8. Dimension-one maps and rational fibers: G2-D1/D2/D3/D4
 
