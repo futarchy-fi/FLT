@@ -4,6 +4,86 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
+## W62 — effective integral algebra descent for unramified twists
+
+Validation receipt check: `python3 Scratch/LiftsW62/check.py`. The check prints
+its checked-at time and verifies source hashes, saved foreground builds,
+individual-module lint and declaration axiom audits. It does not rerun Lean.
+The W62 result outside this tracked directory records commits and validation.
+
+| Item | New module | Proved scope |
+|---|---|---|
+| Fixed coordinates | `GroupScheme.SemilinearFixedAlgebra` | Actual fixed subalgebra, orbit sums, finite flatness over Dedekind bases and freeness over local Dedekind bases. |
+| Effective scalar recovery | `GroupScheme.SemilinearScalarRecovery` | Constructs both inverses to scalar extension from coefficient trace and Galois orthogonality identities. No recovery equivalence is an input. |
+| Generic-field recovery | `GroupScheme.GaloisFieldScalarRecovery` | Derives orthogonality coordinates from independence of field automorphisms; effective algebra descent for finite Galois fields. |
+| Integral coordinates | `GroupScheme.GaloisIntegralCoordinates` | Constructs the coefficient trace from fixed scalars and Galois coordinates from a unit evaluation determinant. |
+| Trivial-inertia recovery | `GroupScheme.ResidueGaloisCoordinates` | Faithful residue characters produce a basis of evaluation vectors and a unit determinant. Trivial integral inertia implies faithful residue characters. Thus no determinant or coordinates are assumed in local unramified recovery. |
+| Actual splitting ring | `AbsoluteGaloisGroup.UnramifiedCharacterAlgebraDescent` | Specializes recovery to the integral closure in the actual character-kernel field, proves faithful flatness and finite free fixed coordinates. |
+| General tensor action | `GroupScheme.SemilinearTensorTwist` | Constructs the simultaneous coefficient/coordinate group action, its action law and its fixed algebra. |
+| Point transformation | `GroupScheme.SemilinearTwistPoints` | Coefficient evaluation obeys the inverse-coordinate-action transformation law for an arbitrary group. |
+| Actual twist recovery | `AbsoluteGaloisGroup.UnramifiedCharacterTwist` | Scalar recovery over the actual splitting ring, descent of generic etaleness, and a bijection of algebra points with the specified transformation law. |
+| Integral unit action | `GroupScheme.LocalIntegralScalarUnits` | Constructs coordinate automorphisms from the existing integral scalar maps on the specified local finite-flat model; proves the unit group law and the scalar action on points. |
+| Original model and character | `GroupScheme.LocalUnramifiedScalarTwist` | Uses that constructed unit action and the actual finite character. Proves finite free twist coordinates, an etale generic coordinate algebra, splitting-base recovery and the original point module's inverse-character Galois transformation. |
+
+This wave proves **effective descent of the underlying algebra** for the
+nontrivial unramified character twist. The final construction uses the
+original finite-flat model, its original coefficient action, the proved
+small-ramification scalar extension theorem, and the actual character-kernel
+splitting field. It does not assume an integral twisting action, a unit
+Galois determinant, trace coordinates or a scalar-recovery equivalence.
+No prime-to-group-order division is needed for effective algebra descent.
+
+The point bijection is with **algebra homomorphisms on the fixed coordinates**.
+It has the prescribed Galois transformation, but no descended Hopf structure
+or convolution-group comparison is asserted. R1 still requires the tensor
+comparison for fixed algebras, descent of comultiplication/counit/antipode and
+all their laws, then an actual finite-flat group-scheme model and transport
+of the ordinary filtration/unit-class theorem. Do not treat the new point
+bijection alone as a finite-flat twist theorem.
+
+Arithmetic Noetherianity of the actual HR quotient, the matched unframed
+image and the finite p-adic order carrying the lift remain open, with the
+framed/unframed distinction of `LIFTS_W59_GLOBAL_CONTRACTS.md` unchanged.
+No arithmetic finite tangent/presentation theorem is proved in this wave.
+S0a3 generalization, Lp0 and G0a–G1c remain. The exact lifting admission and
+its dependency in `PNat.pow_add_pow_ne_pow` have not been removed; the saved
+`Scratch/LiftsW62/FinalAxioms.lean` audit checks both endpoints.
+
+## W61 — extracted inertia characters and proved root-kernel containment
+
+Validation receipt check: `python3 Scratch/LiftsW61/check.py`. It prints its
+checked-at time and verifies source hashes and saved build, per-module lint
+and axiom-audit receipts; it does not rerun Lean.
+
+| Item | Module | Proved scope |
+|---|---|---|
+| Scalar character extraction | `RepresentationTheory.ScalarCharacterKernel` | Extracts a character from the constructed rank-one scalar action and proves its kernel equals the original representation kernel. |
+| Distinct conjugates | `RepresentationTheory.ScalarCharacterFrobenius` | A Frobenius-fixed character on a simple prime-field representation forces dimension one; rank two has distinct conjugates. |
+| Actual inertia scalars | `AbsoluteGaloisGroup.InertiaScalarCharacter` | Constructs the quadratic finite scalar field and character from continuous simple rank-two inertia; proves field cardinality, kernel equality and distinct conjugates. A same-kernel character is continuous. |
+| Residue realization | `SerreWeight.ScalarCharacterRoots` | Embeds finite scalar units into roots of unity, preserving the character kernel and distinct Frobenius conjugates. |
+| Actual inertia eigencharacters | `AbsoluteGaloisGroup.NiveauTwoInertiaCharacter` | Constructs a degree-p²−1 residue-root character from the original representation, with open unchanged kernel and both characteristic-polynomial factors. |
+| Finite tame image | `AbsoluteGaloisGroup.InertiaCyclicQuotient` | An open kernel on inertia contains a finite Galois restriction kernel; every finite prime-to-p quotient or image is cyclic. No extension of the character to the whole local Galois group is required. |
+| Cyclic joint image | `SerreWeight.CyclicPairKernel` | Surjectivity of one character in a cyclic joint image proves kernel containment by comparing exponent and cardinality. |
+| Arithmetic root-kernel gate | `AbsoluteGaloisGroup.RootCharacterKernel` | Every open-kernel degree-n root-valued inertia character kills the specified degree-n uniformizer-root kernel, for n prime to p. Derives the unique reduced exponent. |
+| Combined normalization | `AbsoluteGaloisGroup.NiveauTwoInertiaNormalization` | For continuous simple rank-two **prime-field inertia** representations at p, constructs the character, proves root-kernel containment, and normalizes one Frobenius orientation with a<p−1 and 1≤b<p. |
+
+The general prime-to-p root-kernel gate is proved. The representation theorem
+assumes irreducibility of the **inertia representation over ZMod p**. It does
+not classify every irreducible whole-local representation over an arbitrary
+finite coefficient field, nor prove absolute irreducibility after restriction.
+The characteristic-polynomial formula uses the actual extracted scalar action;
+no asserted character, kernel containment or nonfixedness is an input.
+
+S0a3 still requires general coefficient fields, the whole-local/inertia branch
+comparison, full recipe independence and the symmetric-power composition-factor
+comparison. Ordinary niveau-one normalization over general coefficients and the
+independent integral exclusion of the non-peu branch remain. No numerical
+Serre-weight evaluation or arbitrary-p Raynaud classification is claimed.
+R1, Lp0, arithmetic Noetherianity and G0a–G1c remain in the priority order from
+W60; this wave does not prove them. `IsHardlyRamified.lifts` and
+`PNat.pow_add_pow_ne_pow` retain their existing admissions; recheck with the
+saved `Scratch/LiftsW61/FinalAxioms.lean` command.
+
 ## W60 — extracted ordinary branches and niveau-two normalization
 
 Validation receipt check: `python3 Scratch/LiftsW60/check.py`. This reports
