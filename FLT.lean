@@ -138,6 +138,10 @@ public import FLT.Deformations.DeSmitLenstra.UniversalLift
 public import FLT.Deformations.DeSmitLenstra.UniversalMoritaData
 public import FLT.Deformations.DeSmitLenstra.UniversalTraceLift
 public import FLT.Deformations.FixedResidualQuotientIdeal
+public import FLT.Deformations.FlatClosedCondition
+public import FLT.Deformations.FlatClosedQuotient
+public import FLT.Deformations.FlatQuotientNonvanishing
+public import FLT.Deformations.FlatReductionIdeal
 public import FLT.Deformations.FramedArithmeticIdeal
 public import FLT.Deformations.FramedDeterminantIdeal
 public import FLT.Deformations.FramedQuotientIdeal
@@ -145,6 +149,8 @@ public import FLT.Deformations.FramedTrivialityIdeal
 public import FLT.Deformations.HardlyRamifiedArithmeticAtTwo
 public import FLT.Deformations.HardlyRamifiedArithmeticQuotient
 public import FLT.Deformations.HardlyRamifiedArithmeticResidual
+public import FLT.Deformations.HardlyRamifiedFlatLift
+public import FLT.Deformations.HardlyRamifiedFlatQuotient
 public import FLT.Deformations.HardlyRamifiedTwoQuotient
 public import FLT.Deformations.HardlyRamifiedUniversal
 public import FLT.Deformations.IsProartinian
@@ -180,6 +186,8 @@ public import FLT.Deformations.RepresentationTheory.FiniteFreeAdicComplete
 public import FLT.Deformations.RepresentationTheory.Flat
 public import FLT.Deformations.RepresentationTheory.FlatCofinal
 public import FLT.Deformations.RepresentationTheory.FlatDiscrete
+public import FLT.Deformations.RepresentationTheory.FlatFramedChange
+public import FLT.Deformations.RepresentationTheory.FlatIntersection
 public import FLT.Deformations.RepresentationTheory.FlatPadic
 public import FLT.Deformations.RepresentationTheory.FlatReduction
 public import FLT.Deformations.RepresentationTheory.Frobenius
