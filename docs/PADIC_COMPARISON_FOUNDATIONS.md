@@ -3192,3 +3192,44 @@ Split before implementation (each new module capped at 150 lines):
 Leaves a2–d name mathematical obligations, not new records containing those
 obligations as fields. Do not add conditional exactness wrappers in place
 of the missing comparison. HT3, DR1/P2–P6 and W1–W3 remain downstream.
+
+
+## W67: primary-source orientation and Cartier adjunction
+
+Source checked against J. Tate, *p-Divisible Groups*, in *Proceedings of a
+Conference on Local Fields* (1967), pp. 158–183, especially pp. 167–169,
+177–180. The scan is available at
+https://www.math.arizona.edu/~cais/scans/Proceedings_on_a_Conference_in_Local_Fields.pdf .
+Proposition 11, not Proposition 4, proves injectivity of
+`dα : t_G(C) → Hom_Zp(T(G′), C)`. Proposition 4 concerns connected–etale
+points; Theorem 2 concerns nonzero-twist cohomology. Theorem 3 and its
+Corollary 2 give the comparison and decomposition. The independent dimension
+sum is Proposition 3, p. 166 (Frobenius/Verschiebung).
+
+Here `rationalPlaceHodgeTateLieTranspose X` has the orientation of `dα`;
+`rationalPlaceHodgeTateDlogLinear X` is its transpose under Lie evaluation.
+Identifying the former with the derivative of Tate's analytic character map
+is an unproved comparison, not a consequence of naming the maps.
+Tate's `G(S)` is `lim_i colim_n G_n(S/m^i S)`, not just the union of finite
+level points. Its logarithm has torsion kernel; over algebraically closed C
+it induces `G(O_C)/G(O_C)_tors ≅ t_G(C)`. His proof uses torsion-freeness
+of `ker α` after the torsion pairing is proved bijective, never of all G(S).
+Fontaine, *Groupes p-divisibles sur les corps locaux* (1977), V §1.1,
+pp. 225–226, distinguishes `T(G)`, `U₀(G)=T(G) tensor Qp`, and the larger
+universal cover `U(G)`; these must not be substituted for each other.
+
+Split before implementation; all new modules capped at 150 lines:
+
+| Leaf | Original-map obligation | Status at split |
+|---|---|---|
+| B1 / `PDivisibleCartierBidualTateEquiv` | Prove the specified bidual Tate map bijective using actual finite evaluation | Open algebraic prerequisite |
+| B2 / `RationalPlaceHodgeTateRightCotangent` | Extend that bidual equivalence and factor the actual right map through the dual differential | Open algebraic prerequisite |
+| B3 / `RationalPlaceHodgeTateCartierAdjunction` | Pair the right map with dual Lie vectors; identify its kernel as a Cartier annihilator; prove orthogonality of the two actual left images in bidual coordinates | Open; no comparison hypothesis |
+| A1 | Construct the connected formal group, completed points, analytic logarithm and its torsion quotient from the original system | Open analytic construction |
+| A2 | Compare the derivative of the analytic Cartier character with the original completed differential, then prove transpose injectivity | Requires A1 and Tate Proposition 11 argument |
+| C | Original Lie dimension sum from Frobenius/Verschiebung and finite-flat ranks | Open; not implied by Tate-module height |
+| D | Exactness and connected–etale assembly | Requires A2, its dual, B3 and C |
+
+B1–B3 do not close A1–D. No conditional exactness wrapper replaces the
+analytic construction. HT3 beyond the proved pairings, DR1/P2–P6, W1–W3,
+and the family admission remain separate obligations.
