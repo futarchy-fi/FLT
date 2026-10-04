@@ -164,10 +164,12 @@ public import FLT.Deformations.HardlyRamifiedArithmeticAtTwo
 public import FLT.Deformations.HardlyRamifiedArithmeticQuotient
 public import FLT.Deformations.HardlyRamifiedArithmeticResidual
 public import FLT.Deformations.HardlyRamifiedFlatLift
+public import FLT.Deformations.HardlyRamifiedFlatPoint
 public import FLT.Deformations.HardlyRamifiedFlatQuotient
 public import FLT.Deformations.HardlyRamifiedTwoQuotient
 public import FLT.Deformations.HardlyRamifiedUniversal
 public import FLT.Deformations.HardlyRamifiedWittLift
+public import FLT.Deformations.HardlyRamifiedWittPoint
 public import FLT.Deformations.HardlyRamifiedWittResidual
 public import FLT.Deformations.IsProartinian
 public import FLT.Deformations.IsResidueAlgebra
@@ -491,6 +493,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.CyclotomicTrivial
 public import FLT.GaloisRepresentation.HardlyRamified.CyclotomicTrivialBaseChange
 public import FLT.GaloisRepresentation.HardlyRamified.CyclotomicTrivialFlat
 public import FLT.GaloisRepresentation.HardlyRamified.CyclotomicTrivialHardlyRamified
+public import FLT.GaloisRepresentation.HardlyRamified.CyclotomicTrivialObstruction
 public import FLT.GaloisRepresentation.HardlyRamified.CyclotomicTrivialPolynomial
 public import FLT.GaloisRepresentation.HardlyRamified.CyclotomicTrivialRamification
 public import FLT.GaloisRepresentation.HardlyRamified.CyclotomicTrivialReduction
