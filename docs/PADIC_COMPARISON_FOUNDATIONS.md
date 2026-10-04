@@ -3297,3 +3297,34 @@ on the nonlinear terms of p-multiplication. That chart and the logarithm
 limit/local inverse are not consequences of the proved contraction alone.
 The torsion-kernel equality, analytic Cartier derivative identification,
 independent Lie dimension sum, HT2 and downstream obligations remain open.
+
+## W69: cotangent coordinates on finite precision fibers
+
+Before an analytic chart can be constructed, identify its required finite
+precision differentials on the original group. Refine this algebraic part
+into leaves of at most 150 lines each:
+
+| Leaf | Module / obligation | Dependencies |
+|---|---|---|
+| A1i | `PDivisiblePointKernelCotangent`: original reduction kernel as a group is the additive cotangent dual for a square-zero coefficient kernel | W66 formal cotangent and W68 convolution |
+| A1j | `PDivisiblePointFiberCotangent`: translate any specified original lift to give cotangent coordinates on its reduction fiber | A1i |
+| A1k | `RationalPlacePrecisionCotangent`: square-zero adjacent precision kernels and original rational-place fiber coordinates | A1j and positive-precision lifting |
+| A1l | `RationalPlaceCompletedPointCotangent`: realization of every precision tangent direction by actual completed points | A1k and completed-point lifting |
+
+These are finite precision coordinates, not an analytic chart. They do not
+supply power-series representation, nonlinear estimates, a logarithm,
+Cartier comparison, or HT2. Those remain separate proof obligations.
+
+A1l additionally proves uniform precision gain: for a completed point
+trivial at precision s+1, p^n times that point is trivial at precision
+s+n+1. A single annihilator at the initial residue precision controls all
+higher precisions with a linear bound. This is a filtration estimate;
+nonlinear error bounds in a fixed analytic chart remain unproved.
+
+W69 proves A1i–A1l in four new modules (99, 76, 90 and 98 lines).
+Each passes foreground build and individual module lint; all 26 explicit
+new declarations use only propext, Classical.choice and Quot.sound.
+Checked at 2026-10-04T21:40:48.213844+00:00.
+Evidence: `W69_VALIDATION.json`, `W69_AXIOMS.log`; read-only recheck:
+`python3 W69_FINAL_CHECKS.py`. The analytic chart, logarithm, Cartier
+comparison, Lie dimension sum and downstream family obligations remain open.
