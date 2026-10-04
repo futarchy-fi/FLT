@@ -4,6 +4,51 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
+## W62 — effective integral algebra descent for unramified twists
+
+Validation receipt check: `python3 Scratch/LiftsW62/check.py`. The check prints
+its checked-at time and verifies source hashes, saved foreground builds,
+individual-module lint and declaration axiom audits. It does not rerun Lean.
+The W62 result outside this tracked directory records commits and validation.
+
+| Item | New module | Proved scope |
+|---|---|---|
+| Fixed coordinates | `GroupScheme.SemilinearFixedAlgebra` | Actual fixed subalgebra, orbit sums, finite flatness over Dedekind bases and freeness over local Dedekind bases. |
+| Effective scalar recovery | `GroupScheme.SemilinearScalarRecovery` | Constructs both inverses to scalar extension from coefficient trace and Galois orthogonality identities. No recovery equivalence is an input. |
+| Generic-field recovery | `GroupScheme.GaloisFieldScalarRecovery` | Derives orthogonality coordinates from independence of field automorphisms; effective algebra descent for finite Galois fields. |
+| Integral coordinates | `GroupScheme.GaloisIntegralCoordinates` | Constructs the coefficient trace from fixed scalars and Galois coordinates from a unit evaluation determinant. |
+| Trivial-inertia recovery | `GroupScheme.ResidueGaloisCoordinates` | Faithful residue characters produce a basis of evaluation vectors and a unit determinant. Trivial integral inertia implies faithful residue characters. Thus no determinant or coordinates are assumed in local unramified recovery. |
+| Actual splitting ring | `AbsoluteGaloisGroup.UnramifiedCharacterAlgebraDescent` | Specializes recovery to the integral closure in the actual character-kernel field, proves faithful flatness and finite free fixed coordinates. |
+| General tensor action | `GroupScheme.SemilinearTensorTwist` | Constructs the simultaneous coefficient/coordinate group action, its action law and its fixed algebra. |
+| Point transformation | `GroupScheme.SemilinearTwistPoints` | Coefficient evaluation obeys the inverse-coordinate-action transformation law for an arbitrary group. |
+| Actual twist recovery | `AbsoluteGaloisGroup.UnramifiedCharacterTwist` | Scalar recovery over the actual splitting ring, descent of generic etaleness, and a bijection of algebra points with the specified transformation law. |
+| Integral unit action | `GroupScheme.LocalIntegralScalarUnits` | Constructs coordinate automorphisms from the existing integral scalar maps on the specified local finite-flat model; proves the unit group law and the scalar action on points. |
+| Original model and character | `GroupScheme.LocalUnramifiedScalarTwist` | Uses that constructed unit action and the actual finite character. Proves finite free twist coordinates, an etale generic coordinate algebra, splitting-base recovery and the original point module's inverse-character Galois transformation. |
+
+This wave proves **effective descent of the underlying algebra** for the
+nontrivial unramified character twist. The final construction uses the
+original finite-flat model, its original coefficient action, the proved
+small-ramification scalar extension theorem, and the actual character-kernel
+splitting field. It does not assume an integral twisting action, a unit
+Galois determinant, trace coordinates or a scalar-recovery equivalence.
+No prime-to-group-order division is needed for effective algebra descent.
+
+The point bijection is with **algebra homomorphisms on the fixed coordinates**.
+It has the prescribed Galois transformation, but no descended Hopf structure
+or convolution-group comparison is asserted. R1 still requires the tensor
+comparison for fixed algebras, descent of comultiplication/counit/antipode and
+all their laws, then an actual finite-flat group-scheme model and transport
+of the ordinary filtration/unit-class theorem. Do not treat the new point
+bijection alone as a finite-flat twist theorem.
+
+Arithmetic Noetherianity of the actual HR quotient, the matched unframed
+image and the finite p-adic order carrying the lift remain open, with the
+framed/unframed distinction of `LIFTS_W59_GLOBAL_CONTRACTS.md` unchanged.
+No arithmetic finite tangent/presentation theorem is proved in this wave.
+S0a3 generalization, Lp0 and G0a–G1c remain. The exact lifting admission and
+its dependency in `PNat.pow_add_pow_ne_pow` have not been removed; the saved
+`Scratch/LiftsW62/FinalAxioms.lean` audit checks both endpoints.
+
 ## W61 — extracted inertia characters and proved root-kernel containment
 
 Validation receipt check: `python3 Scratch/LiftsW61/check.py`. It prints its
