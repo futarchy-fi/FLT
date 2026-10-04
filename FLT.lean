@@ -2009,6 +2009,7 @@ public import FLT.Mazur.AffineKernelLocalization
 public import FLT.Mazur.AffineModuleExact
 public import FLT.Mazur.AffineModuleSupport
 public import FLT.Mazur.AffineNodeNormalizationExact
+public import FLT.Mazur.AffineOpenDenominators
 public import FLT.Mazur.AffinePullbackIdeal
 public import FLT.Mazur.AffinePullbackIntersection
 public import FLT.Mazur.AffinePushforwardCohomology
@@ -2017,6 +2018,8 @@ public import FLT.Mazur.AffineRestrictionImmersion
 public import FLT.Mazur.AffineStalkExtension
 public import FLT.Mazur.AffineStalkMorphism
 public import FLT.Mazur.AmpleAffinePullback
+public import FLT.Mazur.AmpleChartGeneratorRatios
+public import FLT.Mazur.AmpleChartSectionExtension
 public import FLT.Mazur.AmpleCommonDegree
 public import FLT.Mazur.AmpleLineBundle
 public import FLT.Mazur.AnnihilatorCoherence
@@ -2187,6 +2190,7 @@ public import FLT.Mazur.FiniteAffineCoverDimension
 public import FLT.Mazur.FiniteAffineCoverFiniteness
 public import FLT.Mazur.FiniteCechCyclesScalars
 public import FLT.Mazur.FiniteCechTermScalars
+public import FLT.Mazur.FiniteSectionProjectivePresentation
 public import FLT.Mazur.FlasqueDirectImageAcyclic
 public import FLT.Mazur.FlatIdealTensor
 public import FLT.Mazur.GeneralizedCurveAmpleSubgroup
@@ -2673,6 +2677,7 @@ public import FLT.Mazur.ProjectiveTwistVanishing
 public import FLT.Mazur.ProjectiveTwistedPresentation
 public import FLT.Mazur.ProjectiveTwistingSheaf
 public import FLT.Mazur.ProjectiveTwistingSheafTensor
+public import FLT.Mazur.ProperAmpleConverse
 public import FLT.Mazur.ProperCoherentCohomology
 public import FLT.Mazur.ProperCohomologyWitnesses
 public import FLT.Mazur.ProperCurveGenus
@@ -2712,9 +2717,14 @@ public import FLT.Mazur.SchemeCoproductCohomology
 public import FLT.Mazur.SchemeCoproductSections
 public import FLT.Mazur.SealedLineRestriction
 public import FLT.Mazur.SealedLineRestrictionSections
+public import FLT.Mazur.SectionChartGenerators
 public import FLT.Mazur.SectionCharts
+public import FLT.Mazur.SectionCoverCoordinates
+public import FLT.Mazur.SectionCoverDiscrepancy
 public import FLT.Mazur.SectionDivisors
 public import FLT.Mazur.SectionKernelLocal
+public import FLT.Mazur.SectionPowerGluing
+public import FLT.Mazur.SectionProjectiveImmersion
 public import FLT.Mazur.SectionSumFinite
 public import FLT.Mazur.SegreChartMaps
 public import FLT.Mazur.SegreChartQuotient
