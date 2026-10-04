@@ -2036,3 +2036,152 @@ neighbourhood over the original base, including arbitrary-base
 approximation. F14's finite relative cover, C4–C12's relative flatness and
 the formal-smoothness assembly remain unproved. None of these statements
 follows solely from the new absolute geometric presentations.
+
+
+### W47: actual residue-field fibre comparison
+
+F12 now applies to each specified polynomial presentation of the actual
+characteristic-p residue division fibre at every prime over its kernel.
+`DivisionResidueLocalCI.exists_residue_division_regular_relations_atPrime`
+constructs a list with exactly as many relations as polynomial variables,
+generating the original localized kernel and regular over the original field.
+There is no rational-residue hypothesis and no assumed geometric kernel square.
+
+The implementation leaves (whole-module cap 150) are:
+
+| Leaf | Module | Result |
+|---|---|---|
+| F12y | `MvPolynomial.GeometricPointLocalization` | Flat local coefficient map at any geometric point and its contraction; comparison of the extended original ideal. |
+| F12z | `MvPolynomial.GeometricRegularDescent` | Descend the generator bound through the flat local map, apply the geometric parameter criterion, and reflect regularity. |
+| F12aa | `MvPolynomial.CoefficientPresentation` | Extend a specified polynomial presentation with its coordinates, surjectivity and entire kernel. |
+| F12ab | `GroupScheme.ComponentLocalizedKernel` | Projecting onto a pointed component preserves the original kernel after localization; prove this using the primitive idempotent. |
+| F12ac | `GroupScheme.GeometricHopfLocalizedKernel` | Square generators and the actual component quotient for the original geometric presentation. |
+| F12ad | `GroupScheme.HopfGeometricPresentationDescent` | Connect the geometric component kernel to the original localized presentation and descend regular relations. |
+| F12ae | `GroupScheme.HopfGeometricPointDescent` | Retain a specified original fibre point through the geometric comparison. |
+| F12af | `GroupScheme.DivisionResidueFibreComparison` | Construct the comparison for the actual residue division fibre by tensor cancellation and division translation. |
+| F12ag | `MvPolynomial.ResidueGeometricPoint` | Construct a geometric point above each original prime, with exactly that contracted ideal. |
+| F12ah | `GroupScheme.DivisionResidueRegularPresentation` | Apply the constructed comparison at every specified geometric point of the actual residue fibre. |
+| F12ai | `GroupScheme.DivisionResidueLocalCI` | Apply the geometric-point construction at every prime of the original residue-field presentation. |
+
+This replaces the rational-origin restriction of F12x in the actual fibre
+application: F12z uses `Ideal.exists_ofList_of_map_eq_span` and faithfully flat
+reflection directly at the contracted geometric point. F12x remains a valid
+specialized interface. The result concerns characteristic-p residue fields,
+as required for p-nilpotent test algebras.
+
+F13 still requires spreading these presentations over the original arbitrary
+base. A finite chart cover of an individual residue fibre does not imply
+F14's relative chart cover. C4–C12 and the formal-smoothness assembly remain
+unproved; the family admission has not been replaced.
+
+
+W47 further leaves (cap 150 each):
+
+| Leaf | Module | Result |
+|---|---|---|
+| F14c | `Regular.FinitePresentationCover` | Extract finite principal charts of a specified algebra presentation, retaining the number of equations and the original coordinate map to each actual localization. |
+| F12aj | `GroupScheme.DivisionResidueFiniteCharts` | Apply finite extraction to the actual residue division fibre; the chart denominators generate the unit ideal in that fibre. |
+| F12ak | `GroupScheme.DivisionPullbackFibreLocalCI` | Apply F12ai to every field-valued fibre of the actual division pullback over an arbitrary p-nilpotent test algebra. Derive the characteristic from nilpotence and construct the tensor cancellation. |
+| F13h | `Flat.PresentationKernelIntersection` | Use the flat target's equational criterion to prove that the original kernel intersects any extended base ideal in their product. No Noetherian or principal-ideal assumption. |
+| F13i | `Flat.FibreRelationLifting` | Nakayama lifts generators through any extended base ideal contained in the presentation source's Jacobson radical, using the proved intersection formula. |
+| F13j | `Flat.ReducedPresentation` | Construct the actual reduced algebra map, compute its entire kernel, and lift reduced generators to a coordinate-compatible presentation of the original flat target. |
+
+The exact F12 application theorem is
+`ThreeAdicPlan.PDivisibleSystem.exists_division_pullback_fibre_regular_relations`.
+Its inputs are the actual system, a point into a p-nilpotent test algebra,
+a field-valued specialization, and any surjective polynomial presentation of
+that fibre. It proves regularity and generation at every prime of that
+original presentation. It assumes neither a geometric comparison nor an
+original regular list. Taking the field to be a residue field includes
+non-rational points of the original base.
+
+F13j lifts generators modulo a base ideal, under an explicit finite-kernel
+hypothesis. Applying it to F12ak still requires the localized residue-fibre
+comparison over the original base, finite generation for that localized
+presentation, clearing denominators, and simultaneous fibre regularity on
+the resulting neighbourhood. F13j does not assert those conclusions or
+flatness of a newly lifted chart. F14c/F12aj cover a single residue fibre;
+F14's relative cover is still missing. C4–C12's adic criterion, approximation,
+relative flatness and the later formal-smoothness assembly remain open.
+
+## W48: actual relative charts and Noetherian coefficient reconstruction
+
+The original relative presentation and finite-cover part of F13/F14 is now
+proved over an arbitrary test algebra. `DivisionRelativeCICover` constructs
+an ordinary polynomial presentation internally, then finitely many principal
+charts of the **actual division pullback**. The defining elements generate one
+in that pullback. Each chart has exactly as many equations as polynomial
+variables, retains the original coordinate map, and its specified equation
+list is regular at every point of every field-valued fibre on the chart.
+This is a relative cover over the original test algebra, extending W47's
+cover of one residue field. It is not a flatness theorem for newly lifted
+quotients or a formal-smoothness theorem.
+
+The finite-target argument supplies simultaneous fibre regularity directly:
+any square list generating a local presentation kernel of a finite field
+algebra is regular. The proof passes to a geometric point, applies the
+rational polynomial parameter criterion to the actual Artinian quotient,
+and reflects the regularity of the **specified list** by faithful flatness.
+An ideal equality on a principal open survives any coefficient map where
+the denominator is a unit. Consequently the same original relation list
+works on every field fibre of that chart. No Noetherian assumption is
+introduced on the original base, and no stage-regularity assertion is used
+as a replacement for C8.
+
+### New capped leaves
+
+All names below are under `FLT.Mathlib.RingTheory` unless prefixed
+`GroupScheme`. Each new module has at most 150 whole-file lines.
+
+| Leaf | Module | Proved obligation |
+|---|---|---|
+| F13k | `Flat.LocalizedFinitePresentation` | Original local presentation map, surjectivity, full kernel, finite generation from finite presentation, and the contracted base prime's radical inclusion. |
+| F13l | `Flat.LocalizedRelationLifting` | Apply arbitrary-base-ideal relation lifting with the actual finite kernel and radical inputs. |
+| F13m | `Flat.LocalizedResidueQuotient` | Localized residue-fibre/quotient equivalence, preserving original coordinates. |
+| F13n | `Flat.LocalizedResidueKernel` | Tensor right exactness identifies the entire fibre kernel with the reduced original local kernel. |
+| F13o | `Flat.ResidueRelationLifting` | Lift actual fibre relation generators through that comparison. |
+| F13p | `Flat.ResiduePresentationPoint` | Construct the fibre point with the required contraction and kernel containment. |
+| F13q | `Flat.ResidueRegularLifting` | Retain equation count, full generation, order, and regularity after reduction. |
+| F13r | `MvPolynomial.BaseChangePresentation` | Base change of a specified polynomial presentation over arbitrary coefficient rings. |
+| F13s | `Regular.LocalPresentationTransport` | Transport local ideals and regular lists through coordinate equivalences. |
+| F13t | `MvPolynomial.TensorLocalRelations` | Transfer polynomial-fibre relations to tensor-product coordinates. |
+| F13u | `MvPolynomial.RelativeLocalRelations` | Assemble original local equations from the actual residue-fibre relations. |
+| F13v | `GroupScheme.DivisionRelativeLocalRelations` | Apply F13u to the actual division pullback, deriving finiteness and flatness inputs. |
+| F13w | `Regular.CommonDenominatorRelations` | Clear one common denominator inside the original ideal and preserve a regular reduction. |
+| F13x | `Regular.RelativePrincipalRelations` | Spread full-kernel generation to a principal neighbourhood without Noetherian hypotheses. |
+| F14d | `Localization.PrincipalPresentationEquiv` | Identify a principal relation quotient with the actual target chart and original coordinates. |
+| F13y | `GroupScheme.DivisionPrincipalRelations` | Construct those principal charts for the actual division pullback. |
+| F13z | `Localization.ArtinianPresentation` | Localized kernels of presentations of Artinian algebras have Artinian quotient. |
+| F13aa | `MvPolynomial.GeometricParameterRegularity` | Reflect regularity of a specified square geometric parameter list. |
+| F13ab | `MvPolynomial.FiniteFibreParameterRegularity` | Every square local kernel list of a finite field algebra is regular. |
+| F13ac | `Localization.PrincipalIdealBaseChange` | Transport principal-open ideal equality along any map inverting its denominator. |
+| F13ad | `MvPolynomial.PrincipalFibreRegularity` | Prove simultaneous field-fibre regularity on the entire principal chart. |
+| F14e | `Regular.FiniteRelativePresentationCover` | Extract a finite principal cover, retaining the full kernels, equation counts and coordinate equivalences. |
+| F14f | `GroupScheme.DivisionRelativeFiniteCharts` | Finite relative fibre-regular cover for any specified original division presentation. |
+| F14g | `GroupScheme.DivisionRelativeCICover` | Construct that original polynomial presentation internally; no presentation input is required. |
+| C7a | `MvPolynomial.NoetherianCoefficientStage` | Descend finite polynomial data to a finitely generated integer subalgebra and reflect all polynomial identities among it. |
+| C7b | `MvPolynomial.RelationBaseChange` | Relation quotients commute with arbitrary coefficient base change, on original polynomial representatives. |
+| C7c | `MvPolynomial.NoetherianRelationStage` | Reconstruct a finite relation quotient exactly from the chosen Noetherian coefficient stage. |
+
+### Remaining flatness and assembly boundary
+
+C7a–c construct a Noetherian coefficient stage; they do **not** assert that
+the fibre-regularity property holds at that stage. The Noetherian local
+flatness criterion C4a–g, regular-sequence quotient induction C5, and local
+to global flatness C6 remain unproved. C8's eventual regularity-stage
+spreading and C9's varying-stage colimit comparison also remain. Principal
+localization must be included in these approximation comparisons. C10–C12
+then need to prove flatness of the actual **lifted** relation charts.
+
+W42's finite-product/cover lemmas can use the new original principal cover
+only after that lifted-chart flatness and the compatible reduction maps
+are supplied. Local point lifts, overlaps, descent, nilpotent iteration,
+and the subsequent family-realization obligations remain. In particular,
+`IsHardlyRamified.mem_isCompatible` has not been replaced or edited.
+
+Validation evidence is recorded in the untracked `FAMILY_W48_DONE.md`,
+`W48_VALIDATION.json`, `W48_AXIOMS.log`, and `W48_BOUNDARY_AXIOMS.log`.
+The read-only reproducible checks are individual `lake build MODULE`,
+`lake exe runLinter MODULE`, and `#print axioms` for every new declaration;
+the final handoff records their checked-at time, source hashes and the
+single post-merge root build.
