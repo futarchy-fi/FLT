@@ -1046,6 +1046,7 @@ public import FLT.GroupScheme.OrdinaryLocalUnitParameter
 public import FLT.GroupScheme.OrdinaryModelFiberPoints
 public import FLT.GroupScheme.OrdinaryNormalizedDifference
 public import FLT.GroupScheme.PDivisibleCartierBidual
+public import FLT.GroupScheme.PDivisibleCartierBidualTateEquiv
 public import FLT.GroupScheme.PDivisibleCartierDifferential
 public import FLT.GroupScheme.PDivisibleCartierDlogAdditivity
 public import FLT.GroupScheme.PDivisibleCartierDlogLimit
@@ -1243,6 +1244,7 @@ public import FLT.GroupScheme.RationalPlaceCoefficientGalois
 public import FLT.GroupScheme.RationalPlaceCompletedCotangent
 public import FLT.GroupScheme.RationalPlaceComplexCoefficients
 public import FLT.GroupScheme.RationalPlaceComplexScalarExtension
+public import FLT.GroupScheme.RationalPlaceHodgeTateCartierAdjunction
 public import FLT.GroupScheme.RationalPlaceHodgeTateComplex
 public import FLT.GroupScheme.RationalPlaceHodgeTateDlog
 public import FLT.GroupScheme.RationalPlaceHodgeTateDlogGalois
@@ -1253,8 +1255,10 @@ public import FLT.GroupScheme.RationalPlaceHodgeTateLeftImage
 public import FLT.GroupScheme.RationalPlaceHodgeTateLeftRank
 public import FLT.GroupScheme.RationalPlaceHodgeTateLieTranspose
 public import FLT.GroupScheme.RationalPlaceHodgeTateLieTwist
+public import FLT.GroupScheme.RationalPlaceHodgeTateOrthogonality
 public import FLT.GroupScheme.RationalPlaceHodgeTateRealization
 public import FLT.GroupScheme.RationalPlaceHodgeTateRight
+public import FLT.GroupScheme.RationalPlaceHodgeTateRightCotangent
 public import FLT.GroupScheme.RationalPlaceHodgeTateRightGalois
 public import FLT.GroupScheme.RationalPlaceIntegralCoefficients
 public import FLT.GroupScheme.RationalPlaceLieEvaluationEquiv

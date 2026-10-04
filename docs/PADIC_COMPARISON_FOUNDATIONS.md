@@ -3239,3 +3239,14 @@ W67 refinement before B4 implementation: `RationalPlaceHodgeTateOrthogonality`
 the positive character actions on both actual left maps. This avoids needing
 to identify the dual-system bidual pairing with the original pairing first.
 It remains a zero-component compatibility theorem, not full HT3 or exactness.
+
+W67 proved B1–B4: actual bidual Tate bijectivity; right-map factorization
+through the original dual dlog; right-kernel annihilator identification in
+bidual Cartier coordinates; and orthogonality in both that pairing and X's
+original root-valued Cartier pairing. None assumes differential surjectivity.
+The existing p-nilpotent formal smoothness and infinitesimal cotangent
+representation (`PDivisibleFormalSmoothness`, `PDivisibleFormalCotangent`)
+are inputs for A1, not yet its analytic coordinate/logarithm construction.
+The analytic derivative identification, Lie dimension sum and exactness
+remain unproved. Recheck the new leaves using `python3 W67_FINAL_CHECKS.py`;
+module logs, source hashes and axiom results accompany `FAMILY_W67_DONE.md`.
