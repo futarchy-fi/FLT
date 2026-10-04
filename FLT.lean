@@ -121,6 +121,7 @@ public import FLT.Deformations.Algebra.InverseLimit.Topology
 public import FLT.Deformations.Categories
 public import FLT.Deformations.ClosedIdealCondition
 public import FLT.Deformations.ClosedIdealQuotient
+public import FLT.Deformations.ClosedIdealSimultaneous
 public import FLT.Deformations.ContinuousRepresentation.IsTopologicalModule
 public import FLT.Deformations.DeSmitLenstra
 public import FLT.Deformations.DeSmitLenstra.CompatibleIdempotent
@@ -371,6 +372,7 @@ public import FLT.GaloisRepresentation.Extensions.OrdinaryFiltrationTwist
 public import FLT.GaloisRepresentation.Extensions.OrdinaryFiltrationUnit
 public import FLT.GaloisRepresentation.Extensions.OrdinaryGaloisClass
 public import FLT.GaloisRepresentation.Extensions.OrdinaryHomCoordinates
+public import FLT.GaloisRepresentation.Extensions.OrdinaryInertiaExponent
 public import FLT.GaloisRepresentation.Extensions.OrdinaryTwist
 public import FLT.GaloisRepresentation.Extensions.PeuCohomologyComparison
 public import FLT.GaloisRepresentation.Extensions.PeuRamifiedClass
@@ -500,6 +502,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.PrimeResidueMap
 public import FLT.GaloisRepresentation.HardlyRamified.PureAction
 public import FLT.GaloisRepresentation.HardlyRamified.PureSortedQuotient
 public import FLT.GaloisRepresentation.HardlyRamified.QuadraticCharacterLift
+public import FLT.GaloisRepresentation.HardlyRamified.QuadraticQuotientLift
 public import FLT.GaloisRepresentation.HardlyRamified.RankTwoFraming
 public import FLT.GaloisRepresentation.HardlyRamified.RationalComplexConjugation
 public import FLT.GaloisRepresentation.HardlyRamified.RationalRamificationBridge
@@ -558,6 +561,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.TrivialPrimeFiltrationCoex
 public import FLT.GaloisRepresentation.HardlyRamified.TrivialPrimeFiltrationExtension
 public import FLT.GaloisRepresentation.HardlyRamified.ULiftGenericRecovery
 public import FLT.GaloisRepresentation.HardlyRamified.ULiftHardlyRamified
+public import FLT.GaloisRepresentation.SerreWeight.NormalizedCharacterExponent
 public import FLT.GaloisRepresentation.SerreWeight.NormalizedRecipe
 public import FLT.GlobalLanglandsConjectures.GLnDefs
 public import FLT.GlobalLanglandsConjectures.GLzero
@@ -739,6 +743,9 @@ public import FLT.GroupScheme.HopfGeometricPointDescent
 public import FLT.GroupScheme.HopfGeometricPresentationDescent
 public import FLT.GroupScheme.HopfPointCongruence
 public import FLT.GroupScheme.HopfPointFiberDescent
+public import FLT.GroupScheme.HopfPointFiberDifferenceEvaluation
+public import FLT.GroupScheme.HopfPointFiberHomogeneous
+public import FLT.GroupScheme.HopfPointFiberLocalGenerator
 public import FLT.GroupScheme.HopfPointFiberPoints
 public import FLT.GroupScheme.HopfPointFiberTorsor
 public import FLT.GroupScheme.HopfPointTranslation
@@ -822,6 +829,7 @@ public import FLT.GroupScheme.LocalInertiaCriticalExponent
 public import FLT.GroupScheme.LocalInertiaMaximum
 public import FLT.GroupScheme.LocalInertiaPolynomial
 public import FLT.GroupScheme.LocalIntegralPowerBasis
+public import FLT.GroupScheme.LocalInvertibleSubmodule
 public import FLT.GroupScheme.LocalPerturbedWitness
 public import FLT.GroupScheme.LocalPointField
 public import FLT.GroupScheme.LocalPointFieldPoints
