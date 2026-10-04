@@ -1,5 +1,24 @@
 # Mazur track D: extension and local arithmetic
 
+## D-W4: formal addition construction leaves
+
+Subdivision recorded before implementation; each new module has cap 240 lines.
+
+| Item | Planned module | Output |
+| --- | --- | --- |
+| A1-F2b.i | EllipticFormalCoordinates | Substitution of the integral infinity series into multivariate parameters, with the chart equation and uniqueness. |
+| A1-F2b.ii | EllipticFormalSecant | Integral secant slope and intercept, both line incidences, and zero constant coefficients. |
+| A1-F2b.iii.1 | EllipticFormalCubic | Cubic coefficients and a third-root identity valid without cancellation. |
+| A1-F2b.iii.2 | EllipticFormalIntersection | Integral third-intersection coordinates and their chart equation. |
+| A1-F2b.iv.1 | EllipticFormalNegation | Integral normalized negation, its chart equation and involution. |
+| A1-F2b.iv.2 | EllipticFormalSymmetry | Symmetry of the slope, intercept and third intersection. |
+| A1-F2b.iv.3 | EllipticFormalAddition | Negation of the third intersection, identity and symmetry. |
+| A1-F2b.v | EllipticFormalGroupLaw | Associativity and the actual FormalGroup construction, with linear coefficients. |
+
+F2c/F2d/F3 and later arithmetic leaves retain their previous order. The first
+four construction leaves alone do not establish a formal group or its comparison
+with actual point addition.
+
 Audit checked 2026-10-04 against FLT `55366a69` and pinned Mathlib
 `c32e1ec0d1eb5237ba344eee50162f45d5b0fc76`. This is the implementation order
 for GOAL-MAZUR-D-W1. Every new module has a hard cap of 240 physical lines.

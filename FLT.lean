@@ -2551,6 +2551,10 @@ public import FLT.Mazur.DivisorStalkLength
 public import FLT.Mazur.DivisorTensorSequence
 public import FLT.Mazur.DivisorTwistedDegree
 public import FLT.Mazur.DivisorTwistedSequence
+public import FLT.Mazur.EllipticFormalCoordinates
+public import FLT.Mazur.EllipticFormalCubic
+public import FLT.Mazur.EllipticFormalIntersection
+public import FLT.Mazur.EllipticFormalSecant
 public import FLT.Mazur.EllipticInfinityParameter
 public import FLT.Mazur.EllipticInfinityPowerSeries
 public import FLT.Mazur.EllipticProjectiveReduction
