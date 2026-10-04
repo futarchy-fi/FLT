@@ -3133,3 +3133,34 @@ records the root build after the main merge. Recheck all claims with
 `python3 W63_FINAL_CHECKS.py`. The untracked `FAMILY_W63_DONE.md` lists the
 individual leaves and exact remaining boundary. The original family admission
 and the constant-system sanity check are unchanged.
+
+## W64: prescribed cyclotomic coordinates and the actual left map
+
+Each leaf retains the 150-line cap. The next HT1 leaves are
+`RationalCyclotomicRootVector` (primitive finite generators),
+`RationalCyclotomicRootBasis` (compact compatible coefficient fibres), and
+`RationalCyclotomicRootGalois` (the original positive character action).
+`RationalPlaceRootTwist` extends those prescribed coordinates over C_p.
+`RationalPlaceTateScalarDuality` orients the original perfect pairing toward
+the original Tate realization by vector-space evaluation, and
+`RationalPlaceTateRootEquivariance` checks both original Galois factors.
+`RationalPlaceHodgeTateLeft`, `RationalPlaceLieTransposeGalois`, and
+`RationalPlaceHodgeTateLeftGalois` transport the original Lie transpose and
+prove its positive-twist equivariance.
+
+For HT2, split the remaining linear algebra from the connected comparison:
+`RationalPlaceLieEvaluationEquiv` identifies the full cotangent dual;
+`RationalPlaceHodgeTateLeftImage` describes the actual kernel and image and
+reduces left injectivity to surjectivity of the original Cartier differential;
+`RationalPlaceHodgeTateLeftRank` expresses the kernel defect in terms of that
+same differential rank. `RationalPlaceTwistSeparation` and
+`RationalPlaceHodgeTateComplex` use nonzero-twist vanishing to show that the
+original right map kills the original left image.
+
+None of these linear-algebra reductions establishes connected differential
+surjectivity or equality of the left image and the right kernel. The next
+comparison leaf must prove differential surjectivity for the original
+connected system without accepting it as data, then establish the exact
+kernel and assemble through the connected-etale extension. Full HT3,
+DR1/P2-P6, W1-W3 and replacement of the original family admission remain
+separate work. The original constant-system period sanity check is retained.
