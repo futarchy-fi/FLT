@@ -359,6 +359,12 @@ public import FLT.GaloisRepresentation.Extensions.LiftCocycle
 public import FLT.GaloisRepresentation.Extensions.LinearClassCoordinates
 public import FLT.GaloisRepresentation.Extensions.LinearCoefficientMap
 public import FLT.GaloisRepresentation.Extensions.LinearContinuousClass
+public import FLT.GaloisRepresentation.Extensions.OrdinaryFiltration
+public import FLT.GaloisRepresentation.Extensions.OrdinaryFiltrationBasis
+public import FLT.GaloisRepresentation.Extensions.OrdinaryFiltrationClass
+public import FLT.GaloisRepresentation.Extensions.OrdinaryFiltrationTwist
+public import FLT.GaloisRepresentation.Extensions.OrdinaryFiltrationUnit
+public import FLT.GaloisRepresentation.Extensions.OrdinaryGaloisClass
 public import FLT.GaloisRepresentation.Extensions.OrdinaryHomCoordinates
 public import FLT.GaloisRepresentation.Extensions.OrdinaryTwist
 public import FLT.GaloisRepresentation.Extensions.PeuCohomologyComparison
@@ -1344,6 +1350,7 @@ public import FLT.LocalClassFieldTheory.OneCocycleNegativeBoundary
 public import FLT.LocalClassFieldTheory.OneCocycleScalarBoundary
 public import FLT.LocalClassFieldTheory.OrderHomScale
 public import FLT.LocalClassFieldTheory.OrdinaryPeuUnitCriterion
+public import FLT.LocalClassFieldTheory.OrdinaryRepresentationUnitCriterion
 public import FLT.LocalClassFieldTheory.ParameterCarryCharacterComparison
 public import FLT.LocalClassFieldTheory.ParameterCarryCoefficients
 public import FLT.LocalClassFieldTheory.ParameterCarryInflation
