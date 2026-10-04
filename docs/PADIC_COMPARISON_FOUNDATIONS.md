@@ -1536,3 +1536,32 @@ The family admission is unchanged. Reproduce the validation via
 `W40_MODULES.txt`, individual build/lint commands, `W40_AXIOMS.lean`,
 `W40_BOUNDARY_AXIOMS.lean` and `W40_FINAL_CHECKS.py`; the untracked
 `FAMILY_W40_DONE.md` records the checked time and exact local commits.
+
+## W41 refinement: flat tensoring of actual tangent relations
+
+The L6b.2 presentation theorem is still absent: finite flatness of the
+original cover does not exhibit liftable equations. No flat deformation
+or formal smoothness is inferred from the monic special case.
+
+For L7a.5, nonprojectivity of the cotangent is not by itself an obstruction.
+Use the original finite free coordinate algebra A. The Leibniz relation
+map A tensor A -> A sends a tensor b to ab - epsilon(a)b - epsilon(b)a.
+Its precomposition kernel is exactly the module of augmentation tangents.
+Both coordinate sources are finite projective, so Mathlib
+`TensorProduct.lTensorHomEquivHomLTensor` applies to their Hom modules;
+`LinearMap.tensorKerEquiv` then commutes this kernel with flat tensoring.
+This proves a canonical finite-level comparison without asserting that
+the cotangent quotient is projective. The original cotangent pairing
+must be retained by an evaluation lemma.
+
+| Leaf | Obligation | Cap |
+|---|---|---:|
+| L7a.5a / FlatTensorHomKernel | Flat tensor comparison for kernels of precomposition between Hom modules with finite projective sources; pure-tensor evaluation. | 150 |
+| L7a.5b / AugmentationTangentRelations | Original Leibniz relation map and its exact tangent-kernel identification. | 150 |
+| L7a.5c / FlatAugmentationTangent | Combine the two comparisons and preserve the original cotangent pairing and source maps. | 150 |
+
+The comparison is initially over the same base ring. For a cover of a
+test algebra B, the required specialization uses B tensor_R A and its
+augmentation to B. Passage through the original directed colimit,
+overlap transport and finite-stage correction remain separate obligations.
+These leaves do not supply L6b or assemble formal smoothness.
