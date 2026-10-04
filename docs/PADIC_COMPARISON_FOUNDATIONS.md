@@ -1757,3 +1757,66 @@ the untracked W42 validation artifacts. They do not supply 2b's charts,
 3c's flatness, the point on a *faithfully flat* lifted cover, the original
 overlap application, or formal smoothness. The existing family admission
 is untouched. See `FAMILY_W42_DONE.md` for the checked commit and evidence.
+
+## W43: proof-sized split of torsor fibres and relative-CI flatness
+
+This split uses the pinned Mathlib sources, checked 2026-10-04:
+`Regular.RegularSequence`, `Regular.Flat`, `Flat.EquationalCriterion`,
+`Algebra.Colimit.Module`, and `TensorProduct.Maps`. Every implementation
+module below has a **150-line whole-file cap**. “Ready” means the proof can
+be built from those APIs; it does not mean the final smoothness gate is
+ready. No extra field may package CI or flatness as an assumed conclusion.
+The split is committed before code. The order within each dependency chain
+is mandatory; independent ready leaves can proceed while theory is missing.
+
+### L6b.2b: identify the actual fibres, then prove and descend CI
+
+| Leaf / module | Exact obligation and proof route | Dependencies / initial state |
+|---|---|---|
+| F1 / NilpotentGeometricCharacteristic | For a ring map B → Ω to a field, nilpotence of p in B forces `CharP Ω p` for prime p. Also every map to a reduced ring kills a nilpotent coefficient kernel. | Ready: map nilpotence, reducedness, `CharP` prime criterion. |
+| F2 / HopfPointedFibre | For Hopf B → A, an A-algebra S identifies S ⊗_B A with S ⊗_R (A/augmentationIdeal). Base-change `torsorEquiv`, cancel tensor factors; prove the coordinate formula using the original coaction. | Ready: `HopfTorsor`, `cancelBaseChange`, `congr`. |
+| F3 / PDivisibleKernelFibre | Identify the augmentation quotient of level m+n over level n with the original level m via the *original inclusion*. Compose F2 and prove evaluation on pure tensors, retaining that inclusion. | Ready after F2: `X.kernel`, `X.closed`, quotient-kernel equivalence. |
+| F4 / GeometricFibrePoint | A nonzero finite algebra over an algebraically closed field has a rational point (maximal quotient and algebraicity); apply to a finite faithfully flat fibre to get a lift of the specified point. | Ready: maximal ideal, algebraically closed field and finite tensor-product APIs. |
+| F5 / DivisionGeometricFibre | For an arbitrary geometric point of the actual division target, use F4 to install the point-compatible scalar tower and apply F3. State the equivalence on the specified pullback and retain its coordinate map. | F3–F4; requires careful scalar-tower transport. |
+| F6 / FiniteHopfIdentityComponent | For a finite Hopf algebra over an algebraically closed field, construct its identity local factor with induced comultiplication and antipode. Show the quotient to this factor preserves the counit. | Missing: restrict the Hopf operations to the identity component; Artinian idempotent decomposition alone is insufficient. |
+| F7 / FiniteHopfComponentTranslation | Each local factor has a rational point; translation by it identifies that factor with F6's identity factor. Prove the induced maps and inverse. | F4, F6; missing component restriction of translation. |
+| F8 / PolynomialLocalDimension | At a rational maximal ideal in an n-variable polynomial ring over a field, compute local dimension n and identify the variable differences as a regular sequence. | Missing commutative algebra; use Mathlib `IsRegular` rather than a new predicate. |
+| F9 / ParameterSequenceRegular | In the polynomial local ring of F8, an n-element ideal with Artinian quotient is a regular sequence. Prove the parameter-sequence criterion, not merely equality of generator and relation counts. | F8; missing Cohen–Macaulay parameter theorem. If the proof exceeds 150 lines, split its depth/parameter induction before implementation. |
+| F10 / LocalHopfRegularPresentation | Apply F9 to `exists_minimal_local_quotient_presentation`; finite-dimensionality makes the quotient Artinian. | F9; existing square presentation alone is not enough. |
+| F11 / GeometricDivisionLocalCI | Translate local factors using F7, transfer F10's regular presentations across F5, and cover the geometric fibre by these factors. | F5, F7, F10. Positive characteristic supplied by F1. |
+| F12 / FibrePresentationDescent | Descend finite presentation coefficients and regularity from the algebraic closure to a finite field extension and then by faithful flatness. | Missing finite-data descent and faithful-flat reflection of regularity; preservation is in `Regular.Flat`. |
+| F13 / RelativeCIChartNeighbourhood | Spread a regular fibre presentation to a principal neighbourhood of the corresponding point of the original finitely presented division algebra, retaining the quotient map. | F11–F12 and the flatness/localization chain below; source 00SY. |
+| F14 / FiniteDivisionCICharts | Extract finitely many F13 neighbourhoods by quasicompactness and prove their defining elements generate the unit ideal. | F13; W42 `LiftedChartCover` consumes this conclusion. |
+
+F6–F14 are genuine outstanding mathematical lemmas, not new structures
+whose fields assert the desired property. The broad parameter theorem in
+F9 may need another internal split; no implementation is scheduled until
+its depth argument is specified. All other rows name a single coordinate,
+local-algebra, descent, or finite-cover step. Characteristic-zero fibres are
+not needed on the p-nilpotent test algebras of this task.
+
+### L6b.3c: regular sequences, approximation, and flatness
+
+| Leaf / module | Exact obligation and proof route | Dependencies / initial state |
+|---|---|---|
+| C1 / DirectLimitFiniteRelation | Every finite tuple in a directed module colimit has representatives at one stage; a finite linear relation holds at a later common stage. No injectivity of transition maps. | Ready: `Module.DirectLimit.exists_of`, directed upper bounds, `of.zero_exact`. |
+| C2 / FlatModuleDirectLimit | A directed colimit of flat modules over one fixed ring is flat. Trivialize the relation from C1 at its stage and map its witnesses into the limit. | Ready after C1: `Flat.of_forall_isTrivialRelation`. |
+| C3 / FibreRegularBaseChange | Transport a given regular sequence under faithfully flat field extension and localize a weakly regular sequence at a prime containing it. | Already supplied by `Regular.Flat`; reuse directly, do not duplicate wrapper modules. |
+| C4 / NoetherianFibreRegularElement | For a flat local map of Noetherian local rings, fibre-regular x is regular upstairs and the quotient by x is flat over the base. | Missing local flatness criterion (00MG). Prove using the ideal/tensor criterion and Krull intersection; neither regularity nor quotient flatness is an input. |
+| C5 / FibreRegularSequenceInduction | Iterate C4 on successive quotients; keep the original list order and the quotient by each prefix. | C4, `isWeaklyRegular_cons_iff`, `QuotSMulTop`. |
+| C6 / NoetherianRelativeCIFlat | Localize at all primes and apply C5 to a finite polynomial presentation whose fibre relations are regular; deduce global flatness. | C5 plus flatness locality; Noetherian case of 00SV. |
+| C7 / PresentationCoefficientStage | Put finitely many polynomial coefficients and finitely many presentation identities in one finitely generated ℤ-subalgebra of B, with exact reconstruction after base change. | Missing finite-data approximation, source 00SU. No Noetherian hypothesis on B. |
+| C8 / RelationRegularityStage | Spread the relative-CI fibre condition to a sufficiently large Noetherian coefficient stage, including the required principal localization. | C7 and F12–F13; source 00SU, not an automatic consequence of finite coefficients. |
+| C9 / LiftedQuotientColimit | Identify the presented B-algebra with the directed colimit of the base-changed coefficient-stage quotients, with equality on polynomial representatives. | C7; missing algebra-colimit/quotient comparison. |
+| C10 / ArbitraryBaseRelativeCIFlat | Use C6 and C8, base-change flatness to the fixed final base B, then C2 and C9. | C2, C6, C8–C9; arbitrary-base part of 00SV/00SW. |
+| C11 / NilpotentFibreComparison | Field-valued maps kill the nilpotent coefficient kernel; identify the fibres of W42's lifted quotient with those of its specified reduction. | F1, W42 `LiftedPresentationBaseChange`, tensor cancellation. |
+| C12 / LiftedRelativeCIFlat | Transfer the chart's fibre-regular presentation by C11 and apply C10; a localization element reducing to 1 is a unit for a nilpotent kernel. | C10–C11; completes 3c for the charts produced by F14. |
+
+C4's local criterion and C8's spreading lemma remain major source-proof
+dependencies. Before implementing either, split the ideal-adic criterion
+and regularity-spreading argument into capped modules. This is recorded
+explicitly rather than treating 00SV as a one-line library application.
+C2 is a fixed-base theorem: a varying-ring approximation cannot use it
+until stage flatness has been base-changed to B. W42's reduction and
+covering lemmas apply only after F14 and C12. L7b.4/L8/L9 and
+`IsHardlyRamified.mem_isCompatible` remain untouched by these foundations.
