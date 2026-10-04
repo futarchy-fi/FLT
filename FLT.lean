@@ -2461,6 +2461,7 @@ public import FLT.Mazur.GlobalEvaluationSpan
 public import FLT.Mazur.GlobalGenerationTransport
 public import FLT.Mazur.GlobalIdealPower
 public import FLT.Mazur.GlobalIdealPowerCompatibility
+public import FLT.Mazur.GradedProjUnitChart
 public import FLT.Mazur.GroupSectionBaseChange
 public import FLT.Mazur.HigherDirectImageOpenSheafification
 public import FLT.Mazur.HigherDirectImagePresheaf
@@ -2991,6 +2992,12 @@ public import FLT.Mazur.SectionGradedCoordinateIndependence
 public import FLT.Mazur.SectionGradedCoordinates
 public import FLT.Mazur.SectionGradedLocalCoordinates
 public import FLT.Mazur.SectionGradedMultiplication
+public import FLT.Mazur.SectionGradedProjChart
+public import FLT.Mazur.SectionGradedProjChartNaturality
+public import FLT.Mazur.SectionGradedProjChartPullback
+public import FLT.Mazur.SectionGradedProjConstruction
+public import FLT.Mazur.SectionGradedProjGeneratorChart
+public import FLT.Mazur.SectionGradedProjGluing
 public import FLT.Mazur.SectionGradedPullback
 public import FLT.Mazur.SectionGradedPullbackRing
 public import FLT.Mazur.SectionGradedRing
