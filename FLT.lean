@@ -568,6 +568,7 @@ public import FLT.GroupScheme.CartierDualModelIso
 public import FLT.GroupScheme.CartierDualPairing
 public import FLT.GroupScheme.CartierDualPointFiltration
 public import FLT.GroupScheme.CartierDualSpecialFiber
+public import FLT.GroupScheme.CartierDualTangent
 public import FLT.GroupScheme.CartierDualTorsor
 public import FLT.GroupScheme.CategoryDExactSubquotients
 public import FLT.GroupScheme.CompletionDifferent
@@ -604,7 +605,9 @@ public import FLT.GroupScheme.EtaleSplitting
 public import FLT.GroupScheme.FaithfullyFlatQuotient
 public import FLT.GroupScheme.FaithfullyFlatRetraction
 public import FLT.GroupScheme.FiniteFlat
+public import FLT.GroupScheme.FiniteFlatCartierTangent
 public import FLT.GroupScheme.FiniteFlatClosureChange
+public import FLT.GroupScheme.FiniteFlatCotangent
 public import FLT.GroupScheme.FiniteFlatDifferentials
 public import FLT.GroupScheme.FiniteFlatExtensionKernelIso
 public import FLT.GroupScheme.FiniteFlatExtensionQuotientIso
@@ -619,6 +622,7 @@ public import FLT.GroupScheme.FiniteFlatSectionDescent
 public import FLT.GroupScheme.FiniteFlatSubobject
 public import FLT.GroupScheme.FiniteFlatSubobjectUniverses
 public import FLT.GroupScheme.FiniteFlatSubquotientBaseChange
+public import FLT.GroupScheme.FiniteFlatTangentNaturality
 public import FLT.GroupScheme.FiniteFlatTowerClosure
 public import FLT.GroupScheme.FiniteFreeAdicComplete
 public import FLT.GroupScheme.FiniteHopfFreeness
@@ -742,6 +746,11 @@ public import FLT.GroupScheme.ModelPoints
 public import FLT.GroupScheme.MuThreeCubicCoordinates
 public import FLT.GroupScheme.MultiplicativeFiltrationPurity
 public import FLT.GroupScheme.OrderThreeModelIdentification
+public import FLT.GroupScheme.PDivisibleCotangentLimit
+public import FLT.GroupScheme.PDivisibleCotangentSurjective
+public import FLT.GroupScheme.PDivisibleCotangentTransitions
+public import FLT.GroupScheme.PDivisibleRationalPlaceTransport
+public import FLT.GroupScheme.PDivisibleRationalTateAction
 public import FLT.GroupScheme.PDivisibleSystem
 public import FLT.GroupScheme.PDivisibleSystemCategory
 public import FLT.GroupScheme.PDivisibleTateAction
@@ -1555,6 +1564,8 @@ public import FLT.Mathlib.RingTheory.AdicCompletion.PowerQuotients
 public import FLT.Mathlib.RingTheory.AdjoinRoot
 public import FLT.Mathlib.RingTheory.AugmentationCotangent
 public import FLT.Mathlib.RingTheory.AugmentationGenerators
+public import FLT.Mathlib.RingTheory.AugmentationTangent
+public import FLT.Mathlib.RingTheory.AugmentationTangentEquiv
 public import FLT.Mathlib.RingTheory.ConvolutionTensorPair
 public import FLT.Mathlib.RingTheory.CotangentGenerators
 public import FLT.Mathlib.RingTheory.CotangentQuotient
@@ -2301,6 +2312,8 @@ public import FLT.PadicHodgeTheory.AdicRegularCancellation
 public import FLT.PadicHodgeTheory.AdicRingFunctor
 public import FLT.PadicHodgeTheory.AdicSeries
 public import FLT.PadicHodgeTheory.AdicUnitReflection
+public import FLT.PadicHodgeTheory.AlgebraicClosureGaloisContinuity
+public import FLT.PadicHodgeTheory.AlgebraicClosureGaloisTransport
 public import FLT.PadicHodgeTheory.AxDegreeBudget
 public import FLT.PadicHodgeTheory.ComplexAxDescent
 public import FLT.PadicHodgeTheory.ComplexAxFixedScalars
