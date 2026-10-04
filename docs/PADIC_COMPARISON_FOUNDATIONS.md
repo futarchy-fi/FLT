@@ -3283,3 +3283,17 @@ the original point completion injective, and retains those torsion points.
 `RationalPlaceCompletedPointContraction` proves p-power iterates of every
 completed point tend to the identity in the adic topology. Contraction is
 a prerequisite for extending a local logarithm; it does not construct one.
+
+W68 constructs A1a–A1h: the actual convolution group and positive-precision
+inverse limit, surjective residue projections, complete Hausdorff adic
+topology, faithful embedding of the original integral torsion points, and
+convergence of p-power iterates to the identity. The finite-level index can
+grow with precision. Neither a uniform annihilator of completed points nor
+surjectivity of the integral point-colimit embedding is asserted.
+
+The next missing construction is a local analytic chart for the original
+connected formal group, compatible with its cotangent limit, with estimates
+on the nonlinear terms of p-multiplication. That chart and the logarithm
+limit/local inverse are not consequences of the proved contraction alone.
+The torsion-kernel equality, analytic Cartier derivative identification,
+independent Lie dimension sum, HT2 and downstream obligations remain open.

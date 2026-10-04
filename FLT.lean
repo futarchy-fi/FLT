@@ -1101,6 +1101,8 @@ public import FLT.GroupScheme.PDivisibleNilpotentCotangent
 public import FLT.GroupScheme.PDivisibleNilpotentUniversalCover
 public import FLT.GroupScheme.PDivisibleOverlapCorrection
 public import FLT.GroupScheme.PDivisiblePointColimit
+public import FLT.GroupScheme.PDivisiblePointColimitGroup
+public import FLT.GroupScheme.PDivisiblePointColimitTorsion
 public import FLT.GroupScheme.PDivisiblePointEquiv
 public import FLT.GroupScheme.PDivisiblePointMultiplication
 public import FLT.GroupScheme.PDivisibleRationalCartier
@@ -1242,6 +1244,10 @@ public import FLT.GroupScheme.RationalIntegralTransition
 public import FLT.GroupScheme.RationalPlaceCartierDlogGalois
 public import FLT.GroupScheme.RationalPlaceCoefficientGalois
 public import FLT.GroupScheme.RationalPlaceCompletedCotangent
+public import FLT.GroupScheme.RationalPlaceCompletedPointContraction
+public import FLT.GroupScheme.RationalPlaceCompletedPointLifting
+public import FLT.GroupScheme.RationalPlaceCompletedPointTopology
+public import FLT.GroupScheme.RationalPlaceCompletedPoints
 public import FLT.GroupScheme.RationalPlaceComplexCoefficients
 public import FLT.GroupScheme.RationalPlaceComplexScalarExtension
 public import FLT.GroupScheme.RationalPlaceHodgeTateCartierAdjunction
@@ -1263,6 +1269,8 @@ public import FLT.GroupScheme.RationalPlaceHodgeTateRightGalois
 public import FLT.GroupScheme.RationalPlaceIntegralCoefficients
 public import FLT.GroupScheme.RationalPlaceLieEvaluationEquiv
 public import FLT.GroupScheme.RationalPlaceLieTransposeGalois
+public import FLT.GroupScheme.RationalPlacePointCompletionEmbedding
+public import FLT.GroupScheme.RationalPlacePointPrecision
 public import FLT.GroupScheme.RationalPlaceRootTwist
 public import FLT.GroupScheme.RationalPlaceTateCotangentPrecision
 public import FLT.GroupScheme.RationalPlaceTateInfinitesimal
