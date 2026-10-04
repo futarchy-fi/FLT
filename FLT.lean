@@ -1042,6 +1042,7 @@ public import FLT.GroupScheme.PDivisibleFormalSmoothness
 public import FLT.GroupScheme.PDivisibleInfinitesimalColimit
 public import FLT.GroupScheme.PDivisibleInfinitesimalCorrection
 public import FLT.GroupScheme.PDivisibleInfinitesimalFlatCover
+public import FLT.GroupScheme.PDivisibleInfinitesimalNaturality
 public import FLT.GroupScheme.PDivisibleInfinitesimalPairing
 public import FLT.GroupScheme.PDivisibleInfinitesimalStages
 public import FLT.GroupScheme.PDivisibleIntegralInfinitesimal
@@ -1050,12 +1051,15 @@ public import FLT.GroupScheme.PDivisibleIntegralTangent
 public import FLT.GroupScheme.PDivisibleIntegralTangentCoefficients
 public import FLT.GroupScheme.PDivisibleIntegralTangentReduction
 public import FLT.GroupScheme.PDivisibleIntegralTangentReductionNaturality
+public import FLT.GroupScheme.PDivisibleIntegralTateCover
 public import FLT.GroupScheme.PDivisibleKernelFibre
 public import FLT.GroupScheme.PDivisibleLocalLiftDescent
 public import FLT.GroupScheme.PDivisibleNilpotentCotangent
+public import FLT.GroupScheme.PDivisibleNilpotentUniversalCover
 public import FLT.GroupScheme.PDivisibleOverlapCorrection
 public import FLT.GroupScheme.PDivisiblePointColimit
 public import FLT.GroupScheme.PDivisiblePointEquiv
+public import FLT.GroupScheme.PDivisiblePointMultiplication
 public import FLT.GroupScheme.PDivisibleRationalCartier
 public import FLT.GroupScheme.PDivisibleRationalCartierPeriodAdditivity
 public import FLT.GroupScheme.PDivisibleRationalCartierPeriodGalois
@@ -1065,6 +1069,7 @@ public import FLT.GroupScheme.PDivisibleRationalCartierRoots
 public import FLT.GroupScheme.PDivisibleRationalCotangent
 public import FLT.GroupScheme.PDivisibleRationalPlaceTransport
 public import FLT.GroupScheme.PDivisibleRationalTateAction
+public import FLT.GroupScheme.PDivisibleSquareZeroColimitLift
 public import FLT.GroupScheme.PDivisibleSquareZeroFormalSmoothness
 public import FLT.GroupScheme.PDivisibleSquareZeroLifting
 public import FLT.GroupScheme.PDivisibleSystem
@@ -1074,9 +1079,11 @@ public import FLT.GroupScheme.PDivisibleTangentReduction
 public import FLT.GroupScheme.PDivisibleTangentStabilization
 public import FLT.GroupScheme.PDivisibleTateAction
 public import FLT.GroupScheme.PDivisibleTateCompact
+public import FLT.GroupScheme.PDivisibleTateInfinitesimal
 public import FLT.GroupScheme.PDivisibleTateModule
 public import FLT.GroupScheme.PDivisibleTateSequences
 public import FLT.GroupScheme.PDivisibleTateTopology
+public import FLT.GroupScheme.PDivisibleUniversalCover
 public import FLT.GroupScheme.PadicActualConstantMuThreeSection
 public import FLT.GroupScheme.PadicAlgebraPatching
 public import FLT.GroupScheme.PadicBialgebraDescent
@@ -1136,6 +1143,12 @@ public import FLT.GroupScheme.RationalIntegralExactness
 public import FLT.GroupScheme.RationalIntegralKernel
 public import FLT.GroupScheme.RationalIntegralQuotient
 public import FLT.GroupScheme.RationalIntegralTransition
+public import FLT.GroupScheme.RationalPlaceIntegralCoefficients
+public import FLT.GroupScheme.RationalPlaceTateCotangentPrecision
+public import FLT.GroupScheme.RationalPlaceTateInfinitesimal
+public import FLT.GroupScheme.RationalPlaceTatePrecisionLift
+public import FLT.GroupScheme.RationalPlaceTateThickeningLift
+public import FLT.GroupScheme.RationalPlaceThickening
 public import FLT.GroupScheme.RaynaudAbsoluteTameCommutativity
 public import FLT.GroupScheme.RaynaudActualCyclicPresentation
 public import FLT.GroupScheme.RaynaudAgreedPointAction
@@ -1379,6 +1392,7 @@ public import FLT.GroupScheme.SemilinearScalarRecovery
 public import FLT.GroupScheme.SemilinearTensorTwist
 public import FLT.GroupScheme.SemilinearTwistPoints
 public import FLT.GroupScheme.SemilocalFreeDescent
+public import FLT.GroupScheme.ShiftLimitEquivalence
 public import FLT.GroupScheme.SortedCanonicalFactorFiltration
 public import FLT.GroupScheme.SortedFiltrationCoefficientQuotient
 public import FLT.GroupScheme.SortedFiltrationFunctoriality
@@ -3108,6 +3122,7 @@ public import FLT.PadicHodgeTheory.ComplexIntegerGradedInvariants
 public import FLT.PadicHodgeTheory.ComplexIntegerGradedProduct
 public import FLT.PadicHodgeTheory.ComplexIntegerGradedScalars
 public import FLT.PadicHodgeTheory.ComplexIntegerInvertP
+public import FLT.PadicHodgeTheory.ComplexIntegralThickening
 public import FLT.PadicHodgeTheory.ComplexInvariantOrder
 public import FLT.PadicHodgeTheory.ComplexLocalizedFrobenius
 public import FLT.PadicHodgeTheory.ComplexLocalizedGalois
@@ -3137,6 +3152,7 @@ public import FLT.PadicHodgeTheory.ComplexThetaQuotientScalars
 public import FLT.PadicHodgeTheory.ComplexThetaQuotientSeparated
 public import FLT.PadicHodgeTheory.ComplexThetaQuotientTopology
 public import FLT.PadicHodgeTheory.ComplexThetaUnitReflection
+public import FLT.PadicHodgeTheory.ComplexThickeningTransitions
 public import FLT.PadicHodgeTheory.ComplexTiltContinuity
 public import FLT.PadicHodgeTheory.ComplexTiltDivisibility
 public import FLT.PadicHodgeTheory.ComplexTiltGalois
@@ -3149,6 +3165,7 @@ public import FLT.PadicHodgeTheory.FractionalPrincipalFiltration
 public import FLT.PadicHodgeTheory.FractionalPrincipalGraded
 public import FLT.PadicHodgeTheory.FractionalPrincipalGradedProduct
 public import FLT.PadicHodgeTheory.IdealPowerDifference
+public import FLT.PadicHodgeTheory.IntegralThickeningReduction
 public import FLT.PadicHodgeTheory.NilpotentLogPower
 public import FLT.PadicHodgeTheory.NilpotentLogProduct
 public import FLT.PadicHodgeTheory.NilpotentSeriesEvaluation
