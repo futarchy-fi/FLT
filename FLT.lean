@@ -554,6 +554,7 @@ public import FLT.GroupScheme.AmitsurSplitContraction
 public import FLT.GroupScheme.AugmentationKernelNaturality
 public import FLT.GroupScheme.AugmentationKernelPrecomposition
 public import FLT.GroupScheme.AugmentationTangentRelations
+public import FLT.GroupScheme.AugmentedPolynomialLocalParameters
 public import FLT.GroupScheme.BialgebraBaseChange
 public import FLT.GroupScheme.CanonicalCompositionSeries
 public import FLT.GroupScheme.CanonicalFactorFiltration
@@ -767,6 +768,7 @@ public import FLT.GroupScheme.LocalFiniteFlatExtension
 public import FLT.GroupScheme.LocalHenselian
 public import FLT.GroupScheme.LocalHopfLocalizedPresentation
 public import FLT.GroupScheme.LocalHopfPresentation
+public import FLT.GroupScheme.LocalHopfRegularPresentation
 public import FLT.GroupScheme.LocalInertiaCriticalExponent
 public import FLT.GroupScheme.LocalInertiaMaximum
 public import FLT.GroupScheme.LocalInertiaPolynomial
@@ -843,6 +845,8 @@ public import FLT.GroupScheme.PointDifferentials
 public import FLT.GroupScheme.PointFieldEvaluation
 public import FLT.GroupScheme.PointImageConductor
 public import FLT.GroupScheme.PolynomialCoefficientKernel
+public import FLT.GroupScheme.PolynomialLocalDimension
+public import FLT.GroupScheme.PolynomialLocalParameterCriterion
 public import FLT.GroupScheme.PrimeCyclotomicCoefficients
 public import FLT.GroupScheme.PrimeRootCoordinates
 public import FLT.GroupScheme.PrimeUnitSubspace
@@ -1706,6 +1710,8 @@ public import FLT.Mathlib.RingTheory.MvPolynomial.HeightOneIdeal
 public import FLT.Mathlib.RingTheory.MvPolynomial.LocalizedReduction
 public import FLT.Mathlib.RingTheory.MvPolynomial.NilpotentPresentation
 public import FLT.Mathlib.RingTheory.MvPolynomial.RedundantCoordinates
+public import FLT.Mathlib.RingTheory.MvPolynomial.TranslatedVariables
+public import FLT.Mathlib.RingTheory.MvPolynomial.VariableRegularSequence
 public import FLT.Mathlib.RingTheory.NilpotentGeneratorLifting
 public import FLT.Mathlib.RingTheory.NilpotentRelationLifting
 public import FLT.Mathlib.RingTheory.Norm.Quadratic
@@ -1719,6 +1725,13 @@ public import FLT.Mathlib.RingTheory.PowerBasisDifferentialBezout
 public import FLT.Mathlib.RingTheory.PowerBasisDifferentials
 public import FLT.Mathlib.RingTheory.PresentationJacobianBound
 public import FLT.Mathlib.RingTheory.RamificationInertia.Basic
+public import FLT.Mathlib.RingTheory.Regular.AssociatedPrimeDimension
+public import FLT.Mathlib.RingTheory.Regular.AssociatedPrimeQuotient
+public import FLT.Mathlib.RingTheory.Regular.LengthBound
+public import FLT.Mathlib.RingTheory.Regular.ParameterFirstRegular
+public import FLT.Mathlib.RingTheory.Regular.ParameterIdealDimension
+public import FLT.Mathlib.RingTheory.Regular.ParameterSequence
+public import FLT.Mathlib.RingTheory.Regular.QuotientDepth
 public import FLT.Mathlib.RingTheory.RelationLifting
 public import FLT.Mathlib.RingTheory.SimpleRing.TensorProduct
 public import FLT.Mathlib.RingTheory.Spectrum.Prime.RingHom

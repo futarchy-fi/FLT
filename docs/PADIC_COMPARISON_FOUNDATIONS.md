@@ -1884,3 +1884,22 @@ regular-sequence existence; the deprecated `Regular.Depth` file supplies
 neither a depth definition nor a Cohen–Macaulay theorem. The depth/associated
 prime comparison in F9a and the parameter theorem in F9d remain proof
 obligations, not consequences of the `IsRegularLocalRing` typeclass.
+
+F9a is further split into `Regular.AssociatedPrimeQuotient` (Krull
+intersection gives a surviving annihilator witness and a strictly larger
+associated prime in the regular quotient), `Regular.AssociatedPrimeDimension`
+(iterate to construct a prime chain and bound depth at every associated
+prime), and `Regular.ParameterIdealDimension` (Krull's height theorem bounds
+the dimension after removing a parameter lying in a prime). Together these
+supply parameter avoidance; `Regular.QuotientDepth` supplies F9c's depth
+induction via Rees. Each implementation leaf retains the 150-line cap.
+
+W44 validation checkpoint: F8, F9a–e and F10 are proved in new modules.
+The proof uses explicit regular-sequence witnesses, Krull intersection to
+lift associated primes, prime chains for the depth bound, Krull height for
+the parameter bound, and Rees for the regular-quotient depth drop.
+`LocalHopfRegularPresentation.exists_minimal_local_regular_presentation`
+(in namespace `HopfAlgebra`) applies this to the actual minimal local Hopf
+presentation. All 13 foundation modules passed individual build and lint;
+all 34 named declarations have only the standard three axioms.
+F6–7, F11–14 and the flatness/assembly milestones remain outstanding.
