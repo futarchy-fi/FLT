@@ -2147,11 +2147,15 @@ public import FLT.Mazur.FiniteAffineCoverFiniteness
 public import FLT.Mazur.FiniteCechCyclesScalars
 public import FLT.Mazur.FiniteCechTermScalars
 public import FLT.Mazur.FlasqueDirectImageAcyclic
+public import FLT.Mazur.GeneralizedCurveAmpleSubgroup
 public import FLT.Mazur.GeneralizedCurveBaseChange
 public import FLT.Mazur.GeneralizedCurveBaseChangeCoherence
 public import FLT.Mazur.GeneralizedCurveBaseChangeIso
+public import FLT.Mazur.GeneralizedCurveCartierGenerator
 public import FLT.Mazur.GeneralizedCurveCategory
+public import FLT.Mazur.GeneralizedCurveCyclicSubgroup
 public import FLT.Mazur.GeneralizedCurveFiniteSubgroup
+public import FLT.Mazur.GeneralizedCurveGeneratorTransport
 public import FLT.Mazur.GeneralizedCurveGraph
 public import FLT.Mazur.GeneralizedCurveGraphBaseChange
 public import FLT.Mazur.GeneralizedCurveGraphTransport
@@ -2159,6 +2163,7 @@ public import FLT.Mazur.GeneralizedCurvePullback
 public import FLT.Mazur.GeneralizedCurvePullbackCoherence
 public import FLT.Mazur.GeneralizedCurveSmoothBaseChange
 public import FLT.Mazur.GeneralizedCurveSmoothPullback
+public import FLT.Mazur.GeneralizedCurveSubgroupComparison
 public import FLT.Mazur.GeneralizedCurveSubgroupIdeal
 public import FLT.Mazur.GeneralizedEllipticCurve
 public import FLT.Mazur.GeneratorDenominatorLocalization
@@ -2168,6 +2173,7 @@ public import FLT.Mazur.GenericIdealSupport
 public import FLT.Mazur.GlobalClosedModuleDescent
 public import FLT.Mazur.GlobalIdealPower
 public import FLT.Mazur.GlobalIdealPowerCompatibility
+public import FLT.Mazur.GroupSectionBaseChange
 public import FLT.Mazur.HigherDirectImageOpenSheafification
 public import FLT.Mazur.HigherDirectImagePresheaf
 public import FLT.Mazur.HigherDirectImagePresheafRestriction
@@ -2372,6 +2378,7 @@ public import FLT.Mazur.PolygonCanonicalDenominatorPolynomial
 public import FLT.Mazur.PolygonCanonicalOverlapRing
 public import FLT.Mazur.PolygonCanonicalSection
 public import FLT.Mazur.PolygonCanonicalTorusTransition
+public import FLT.Mazur.PolygonCartierGenerator
 public import FLT.Mazur.PolygonChartScaling
 public import FLT.Mazur.PolygonClassifiedFamily
 public import FLT.Mazur.PolygonCoconeComparison

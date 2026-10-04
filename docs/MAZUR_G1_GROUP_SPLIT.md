@@ -2,6 +2,79 @@
 
 
 
+## W51 proved boundary: A3–A5 and the polygon ample-level example
+
+Checked 2026-10-04 against the local W51 source and foreground module builds.
+Recheck the endpoint with
+`LEAN_NUM_THREADS=2 lake build FLT.Mazur.GeneralizedCurveAmpleSubgroup`;
+run each new module's linter separately. The W51 audit checks every originating
+declaration, including private and generated declarations, against exactly
+`propext`, `Classical.choice`, and `Quot.sound`.
+
+A3 is complete: `baseChangeId` and `baseChangeComp` are natural isomorphisms
+between the actual full DR functors. `baseChange_comp_id`, `baseChange_id_comp`,
+and `baseChange_assoc` prove the two unit identities and the associativity
+identity, including the equality comparison between differently parenthesized
+base maps. Faithfulness of the curve forgetful functor lifts the projection
+computations to equalities of full compatible morphisms.
+
+A4 defines `FiniteSubgroup E n` using a closed commutative subgroup of the
+actual smooth group and finite locally free rank n. Arbitrary base change and
+transport preserve this structure. Properness proves the subgroup closed in
+the whole curve. Its actual kernel ideal, rank and base-change equality are
+proved, and the all-one polygon divisor supplies an unconditional instance.
+
+A5 defines a Cartier generator by n-torsion, the relative Cartier condition,
+and equality of the actual subgroup ideal with the product of the orbit-section
+kernels. Powers, section ideals, and Cartier generators commute with arbitrary
+base change. Compatible curve/subgroup isomorphisms transport generators.
+`IsCyclic` means existence of such a generator after a flat, surjective,
+locally finitely presented cover; `IsCyclic.baseChange`, `of_baseChange`, and
+`isCyclic_baseChange_iff` prove its base change and descent. This is descent of
+the cyclic predicate on an existing subgroup, not construction of a subgroup
+from arbitrary descent data. The polygon instance has a global generator and
+is cyclic even when the characteristic divides n.
+
+The A6 definition `IsAmple` uses the actual divisor line bundle and projective
+closed embeddings of positive tensor powers on every affine base open. The
+exponent may depend on the open. `PolygonFiniteSubgroup.isAmple` proves this
+condition using the existing tensor-cube embedding. It applies to the full
+DR polygon's actual finite subgroup; the one-gon and two-gon in characteristic
+two are compiled consumers.
+
+**A6 remains open, and A7–A8 have not been implemented.** In particular, the
+following conclusions have not been supplied as hypotheses or record fields:
+
+- Global relative Cartier descent from the fppf-local generator witnesses.
+- Invertibility of the canonical `idealModulePullbackHom` under arbitrary
+  relative Cartier base change. `DivisorLinePullback.divisorLinePullbackIsoOfEq`
+  requires this; the existing automatic instances cover open immersions and
+  the unit ideal, not an arbitrary `pullback.fst f g`.
+- Base change and descent of the positive-power projective ampleness predicate,
+  and its comparison with positivity on geometric components. C7 below still
+  distinguishes the Noetherian-base theorem from arbitrary-base descent.
+- The smooth-fiber criterion, level-isomorphism quotient/presheaf, and the
+  rational exact-order point construction and generator invariance.
+
+The next implementation leaves refine A6a below: (1) descend locally free
+rank-one ideal modules from an fppf cover; (2) prove the canonical ideal-module
+comparison invertible for relative Cartier base change; (3) obtain the divisor
+line-bundle comparison and projective power base change; (4) prove the general
+fiber/component ampleness criterion and the required arbitrary-base descent.
+Each leaf has the same 240-line maximum and must split further if necessary.
+These are unresolved proof obligations, not ready imports or completed APIs.
+`Mazur_statement` is still required by the final FLT theorem.
+
+Read-only boundary checks:
+
+```sh
+rg -n 'def baseChangeId|def baseChangeComp|theorem baseChange_.*comp|theorem baseChange_assoc' FLT/Mazur/GeneralizedCurveBaseChange*.lean
+rg -n 'structure FiniteSubgroup|def IsCartierGenerator|def IsCyclic|theorem IsCyclic' FLT/Mazur/GeneralizedCurve*.lean
+rg -n 'def RelativeAmple|def IsAmple|theorem isAmple' FLT/Mazur/GeneralizedCurveAmpleSubgroup.lean
+rg -n 'IsIso.*idealModulePullbackHom|idealModulePullbackHom.*isIso' FLT/Mazur/IdealModulePullback*.lean
+rg -n 'Mazur_statement' FLT/Assumptions/Mazur.lean
+```
+
 ## W51 dispatch: full-category coherence and level structures
 
 Each new implementation leaf is capped at 240 lines, including its header.
@@ -31,7 +104,9 @@ Validation is by one foreground module build and one module linter at a time,
 plus an originating-declaration axiom audit. The W51 handoff distinguishes
 completed rows from remaining obligations and records checked-at evidence.
 
-## Relative DR objects and base change (W48–W50)
+## Relative DR objects and base change (W48–W50 historical boundary)
+
+The remaining-A3 statements in this historical section are superseded by W51 above.
 
 W50 proves arbitrary smooth-locus base change and constructs the full DR
 pullback object and functor. This closes the geometric input left open by
