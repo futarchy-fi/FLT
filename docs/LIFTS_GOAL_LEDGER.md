@@ -4,6 +4,56 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
+## W40 proved scope — finite normalization and the Kummer boundary sign
+
+W40 identifies the actual finite uniformizer carry with
+`relativeFundamentalOrdinaryClass`. The proof compares continuous and ordinary
+representatives, transports the finite field through its actual inclusion into
+the unramified union, and uses injective absolute inflation with positive
+invariant `1/n`. No comparison isomorphism or evaluation is assumed.
+
+The existing `finiteArtin` sends a uniformizer to **negative** arithmetic
+Frobenius. `positiveFiniteArtin` explicitly negates that map, retains its
+surjectivity and algebraic norm kernel, and commutes with every finite tower.
+Its uniformizer theorem covers every positive degree, including degree one.
+The Frobenius used in the original subfield of the closure is transported from
+the existing arithmetic Frobenius through the canonical field equivalence.
+
+The Kummer calculation proves a further, separate statement: the existing
+root-ratio-first continuous cup, included into field-unit coefficients, has
+H² class equal to the **negative** positive parameter-carry class. The bounding
+cochain is the chosen root raised to integer representatives of the character;
+algebraic closedness supplies the root. This does not yet evaluate the
+parameter carry's invariant at the Artin image for an arbitrary character.
+
+Validation: ten modules, 954 lines, maximum 123/200; all 52 named declarations
+passed individual foreground builds, one-module linters, and axiom audits.
+Only `propext`, `Classical.choice`, and `Quot.sound` occur in the new declarations.
+Proof commits: `d6121062`, `e7e871fd`. Integration merged `origin/main` at
+`2363004c` in `7dcb31c6`. Checked at 2026-10-04T00:58:30Z;
+`python3 Scratch/LiftsW40/check.py` checks source hashes, saved successful
+build/lint/axiom logs, declaration coverage, line caps, permitted proof edits,
+sorted root imports, and the post-merge build-input snapshot. It checks saved
+root/endpoint results rather than rerunning Lean. The lifting endpoints still
+have `sorryAx`; `PNat.pow_add_pow_ne_pow` also retains `Mazur_statement`.
+
+### Remaining work, in order
+
+1. Prove character evaluation for the positive parameter carry: for a finite
+   character factoring through an actual finite Galois extension, its absolute
+   invariant must equal the rational-circle image of that character evaluated
+   on `positiveFiniteArtin` of the parameter. The uniformizer computation in
+   an unramified stage does not prove this for arbitrary characters. The new
+   `kummerCarryCup_class` supplies the required cup-order minus sign once this
+   evaluation is proved. Construct any needed finite-character descent and
+   coefficient/cohomology comparisons, without evaluation premises.
+2. Finish the Kummer H² coefficient-inclusion/vanishing comparison and the
+   continuous reciprocity assembly needed by E1c7, then derive E1d's independent
+   unit-class annihilator statement and its scalar extension.
+3. Only after E1 closes, re-audit and split the later lifting gates. The
+   Serre-weight evaluation and arbitrary-prime Raynaud classification APIs
+   remain unavailable; no dispatch or ready-API claim is made for them here.
+
 ## W39 proved scope — invariant composite and unrestricted Artin towers
 
 W39 computes the negative connecting composite of the actual invariant
