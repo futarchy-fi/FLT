@@ -2354,6 +2354,7 @@ public import FLT.Mazur.AffineQuasiCoherentBaseChange
 public import FLT.Mazur.AffineRestrictionImmersion
 public import FLT.Mazur.AffineStalkExtension
 public import FLT.Mazur.AffineStalkMorphism
+public import FLT.Mazur.AffineTrivialLineSectionOpen
 public import FLT.Mazur.AmpleAffineBase
 public import FLT.Mazur.AmpleAffinePullback
 public import FLT.Mazur.AmpleCartesianAffineOpen
@@ -2488,11 +2489,16 @@ public import FLT.Mazur.CurveDivisorLengthSupport
 public import FLT.Mazur.CurveEulerCharacteristic
 public import FLT.Mazur.CurveFiberHypotheses
 public import FLT.Mazur.CurveFinite
+public import FLT.Mazur.CurveGenericLineComparison
 public import FLT.Mazur.CurveGenus
+public import FLT.Mazur.CurveIdealTwistDegree
+public import FLT.Mazur.CurveLineTensorDegree
 public import FLT.Mazur.CurveNode
 public import FLT.Mazur.CurveNodeAffineCompletion
 public import FLT.Mazur.CurveNodeOpenCover
 public import FLT.Mazur.CurveNodeOpenImmersion
+public import FLT.Mazur.CurvePositiveDegreeAffineSection
+public import FLT.Mazur.CurvePositiveDegreeSections
 public import FLT.Mazur.CuspCollision
 public import FLT.Mazur.CuspOrderNumerator
 public import FLT.Mazur.CyclicNodeChart
@@ -2556,7 +2562,10 @@ public import FLT.Mazur.FiniteDivisorComponentAvoidance
 public import FLT.Mazur.FiniteSchemeInvertibleSections
 public import FLT.Mazur.FiniteSchemeLength
 public import FLT.Mazur.FiniteSchemeLineCohomology
+public import FLT.Mazur.FiniteSchemeLineTwist
 public import FLT.Mazur.FiniteSectionProjectivePresentation
+public import FLT.Mazur.FiniteSupportClosedDescent
+public import FLT.Mazur.FiniteSupportEulerCharacteristic
 public import FLT.Mazur.FlasqueDirectImageAcyclic
 public import FLT.Mazur.FlatCartesianSectionGluing
 public import FLT.Mazur.FlatFiniteEqualizer
@@ -2630,6 +2639,7 @@ public import FLT.Mazur.IdealPowerCompatibility
 public import FLT.Mazur.IdealPowerExtensionCharts
 public import FLT.Mazur.IdealPowerExtensionGluing
 public import FLT.Mazur.IdealQuotientExact
+public import FLT.Mazur.IdealTwistSectionOpen
 public import FLT.Mazur.IncreasingCechComplex
 public import FLT.Mazur.InjectiveHorseshoe
 public import FLT.Mazur.IntegralBase
