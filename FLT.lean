@@ -2362,6 +2362,7 @@ public import FLT.Mazur.AmpleAffinePullback
 public import FLT.Mazur.AmpleCartesianAffineOpen
 public import FLT.Mazur.AmpleChartGeneratorRatios
 public import FLT.Mazur.AmpleChartSectionExtension
+public import FLT.Mazur.AmpleCoherentVanishing
 public import FLT.Mazur.AmpleCommonDegree
 public import FLT.Mazur.AmpleGlobalGeneration
 public import FLT.Mazur.AmpleLineBundle
@@ -2479,6 +2480,7 @@ public import FLT.Mazur.CoherentSubquotient
 public import FLT.Mazur.CoherentSubsheafACC
 public import FLT.Mazur.CoherentSupport
 public import FLT.Mazur.CoherentSupportedDecomposition
+public import FLT.Mazur.ComaximalIdealSequence
 public import FLT.Mazur.CommonIdealDirectSum
 public import FLT.Mazur.ConstantCyclicGenerator
 public import FLT.Mazur.ConstantCyclicGroup
@@ -2487,6 +2489,7 @@ public import FLT.Mazur.ConstantDegree
 public import FLT.Mazur.Contracts
 public import FLT.Mazur.CoproductConstantSections
 public import FLT.Mazur.CubicMobiusClearing
+public import FLT.Mazur.CurveAmpleDegree
 public import FLT.Mazur.CurveDivisorLengthSupport
 public import FLT.Mazur.CurveEulerCharacteristic
 public import FLT.Mazur.CurveFiberHypotheses
@@ -2500,6 +2503,7 @@ public import FLT.Mazur.CurveNodeAffineCompletion
 public import FLT.Mazur.CurveNodeOpenCover
 public import FLT.Mazur.CurveNodeOpenImmersion
 public import FLT.Mazur.CurvePositiveDegreeAffineSection
+public import FLT.Mazur.CurvePositiveDegreeAmple
 public import FLT.Mazur.CurvePositiveDegreeCohomologyVanishing
 public import FLT.Mazur.CurvePositiveDegreeSections
 public import FLT.Mazur.CuspCollision
@@ -2560,8 +2564,10 @@ public import FLT.Mazur.FiniteAffineCoverFiniteness
 public import FLT.Mazur.FiniteAffineLineCover
 public import FLT.Mazur.FiniteCechCyclesScalars
 public import FLT.Mazur.FiniteCechTermScalars
+public import FLT.Mazur.FiniteClosedIdealSection
 public import FLT.Mazur.FiniteDivisorCohomology
 public import FLT.Mazur.FiniteDivisorComponentAvoidance
+public import FLT.Mazur.FinitePushforwardAmpleVanishing
 public import FLT.Mazur.FiniteSchemeInvertibleSections
 public import FLT.Mazur.FiniteSchemeLength
 public import FLT.Mazur.FiniteSchemeLineCohomology
@@ -2569,6 +2575,7 @@ public import FLT.Mazur.FiniteSchemeLineTwist
 public import FLT.Mazur.FiniteSectionProjectivePresentation
 public import FLT.Mazur.FiniteSupportClosedDescent
 public import FLT.Mazur.FiniteSupportEulerCharacteristic
+public import FLT.Mazur.FiniteSupportEulerPositive
 public import FLT.Mazur.FlasqueDirectImageAcyclic
 public import FLT.Mazur.FlatCartesianSectionGluing
 public import FLT.Mazur.FlatFiniteEqualizer
@@ -2631,6 +2638,7 @@ public import FLT.Mazur.HomogeneousLocalizationBaseChange
 public import FLT.Mazur.HomogeneousLocalizationGenerator
 public import FLT.Mazur.HomogeneousLocalizationScalars
 public import FLT.Mazur.IdealCartierNeighborhood
+public import FLT.Mazur.IdealCohomologyAmpleCriterion
 public import FLT.Mazur.IdealModuleAffineTensor
 public import FLT.Mazur.IdealModulePrincipalPullback
 public import FLT.Mazur.IdealModulePullback
@@ -2641,6 +2649,7 @@ public import FLT.Mazur.IdealPowerCompatibility
 public import FLT.Mazur.IdealPowerExtensionCharts
 public import FLT.Mazur.IdealPowerExtensionGluing
 public import FLT.Mazur.IdealQuotientExact
+public import FLT.Mazur.IdealQuotientSectionLift
 public import FLT.Mazur.IdealTwistCohomologyStabilization
 public import FLT.Mazur.IdealTwistCohomologySystem
 public import FLT.Mazur.IdealTwistCohomologyVanishing
