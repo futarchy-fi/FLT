@@ -2445,6 +2445,7 @@ public import FLT.Mazur.ClosedDirectImageComposition
 public import FLT.Mazur.ClosedImmersionModulePushforward
 public import FLT.Mazur.ClosedLineProjectionFormula
 public import FLT.Mazur.ClosedModuleDescent
+public import FLT.Mazur.ClosedPointLineSection
 public import FLT.Mazur.ClosedProjectiveSerreVanishing
 public import FLT.Mazur.ClosedPushforwardCohomology
 public import FLT.Mazur.ClosedPushforwardFull
@@ -2490,6 +2491,8 @@ public import FLT.Mazur.Contracts
 public import FLT.Mazur.CoproductConstantSections
 public import FLT.Mazur.CubicMobiusClearing
 public import FLT.Mazur.CurveAmpleDegree
+public import FLT.Mazur.CurveComponentAmpleCriterion
+public import FLT.Mazur.CurveDivisorAmpleSupport
 public import FLT.Mazur.CurveDivisorLengthSupport
 public import FLT.Mazur.CurveEulerCharacteristic
 public import FLT.Mazur.CurveFiberHypotheses
@@ -2580,6 +2583,8 @@ public import FLT.Mazur.FiniteSectionProjectivePresentation
 public import FLT.Mazur.FiniteSupportClosedDescent
 public import FLT.Mazur.FiniteSupportEulerCharacteristic
 public import FLT.Mazur.FiniteSupportEulerPositive
+public import FLT.Mazur.FiniteSurjectiveAmpleDescent
+public import FLT.Mazur.FiniteSurjectiveCoherentWitness
 public import FLT.Mazur.FlasqueDirectImageAcyclic
 public import FLT.Mazur.FlatCartesianSectionGluing
 public import FLT.Mazur.FlatFiniteEqualizer
@@ -2605,6 +2610,7 @@ public import FLT.Mazur.GeneralizedCurveCartierStalks
 public import FLT.Mazur.GeneralizedCurveCategory
 public import FLT.Mazur.GeneralizedCurveCyclicSubgroup
 public import FLT.Mazur.GeneralizedCurveDivisorPullback
+public import FLT.Mazur.GeneralizedCurveFiberAmple
 public import FLT.Mazur.GeneralizedCurveFiniteSubgroup
 public import FLT.Mazur.GeneralizedCurveGeneratorTransport
 public import FLT.Mazur.GeneralizedCurveGraph
@@ -2620,7 +2626,9 @@ public import FLT.Mazur.GeneralizedEllipticCurve
 public import FLT.Mazur.GeneratorDenominatorLocalization
 public import FLT.Mazur.GenericFibers
 public import FLT.Mazur.GenericIdealInjection
+public import FLT.Mazur.GenericIdealSumComparison
 public import FLT.Mazur.GenericIdealSupport
+public import FLT.Mazur.GenericWitnessIdealVanishing
 public import FLT.Mazur.GlobalClosedModuleDescent
 public import FLT.Mazur.GlobalEvaluationSpan
 public import FLT.Mazur.GlobalGenerationTransport
@@ -2642,6 +2650,7 @@ public import FLT.Mazur.HomogeneousLocalizationBaseChange
 public import FLT.Mazur.HomogeneousLocalizationGenerator
 public import FLT.Mazur.HomogeneousLocalizationScalars
 public import FLT.Mazur.IdealCartierNeighborhood
+public import FLT.Mazur.IdealCohomologyAmpleAnyBase
 public import FLT.Mazur.IdealCohomologyAmpleCriterion
 public import FLT.Mazur.IdealModuleAffineTensor
 public import FLT.Mazur.IdealModulePrincipalPullback
@@ -2661,11 +2670,13 @@ public import FLT.Mazur.IdealTwistCohomologySystem
 public import FLT.Mazur.IdealTwistCohomologyVanishing
 public import FLT.Mazur.IdealTwistSectionOpen
 public import FLT.Mazur.IdealTwistTransitionExact
+public import FLT.Mazur.IdealWitnessSupportInduction
 public import FLT.Mazur.IncreasingCechComplex
 public import FLT.Mazur.InjectiveHorseshoe
 public import FLT.Mazur.IntegralBase
 public import FLT.Mazur.IntegralClosedSupport
 public import FLT.Mazur.IntegralDimension
+public import FLT.Mazur.IrreducibleComponentAmple
 public import FLT.Mazur.LaurentRingSurjectivity
 public import FLT.Mazur.LaurentTensor
 public import FLT.Mazur.LaurentUnitPoints
@@ -3248,6 +3259,7 @@ public import FLT.Mazur.StructureDirectImageHZero
 public import FLT.Mazur.StructureDirectImageSections
 public import FLT.Mazur.StructureImageOpenChart
 public import FLT.Mazur.SurjectiveDominantEpi
+public import FLT.Mazur.SurjectiveStructureSupport
 public import FLT.Mazur.TensorPowerDistribution
 public import FLT.Mazur.TensorPowerGeneratorOpen
 public import FLT.Mazur.TensorPowerReassociation
