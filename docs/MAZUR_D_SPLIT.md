@@ -178,3 +178,12 @@ module linters pass; all 28 new theorems have only propext, Classical.choice and
 Quot.sound in their axiom sets. Modules have 108, 135, 134 and 135 physical lines,
 respectively, against the 240-line caps. Re-run the axiom checks with
 `lake env lean Scratch/MazurDW2/Axioms.lean` (untracked validation artifact).
+
+### D-W2 root verification (2026-10-04 22:59 UTC)
+
+After commit `ba010248`, fetched origin/main (`baff6e10`) and ran
+`git merge origin/main`: already up to date. The required foreground
+`LEAN_NUM_THREADS=2 lake build FLT` passed all 12,519 jobs, including FLT and
+FermatsLastTheorem, with no declaration clashes. Evidence:
+`Scratch/MazurDW2/root-build.log`. The guarded global axiom audit still contains
+Mazur_statement and sorryAx; these foundation leaves do not remove either.
