@@ -2467,6 +2467,7 @@ public import FLT.Mazur.CartierDivisorComponentRestriction
 public import FLT.Mazur.CartierDivisorMultiplicity
 public import FLT.Mazur.CartierFppfDescent
 public import FLT.Mazur.CartierIdealFinitePresentation
+public import FLT.Mazur.CartierIdealPullbackComparison
 public import FLT.Mazur.CartierIdealStalkDescent
 public import FLT.Mazur.CartierIdealStalkNeighborhood
 public import FLT.Mazur.CartierTensorRank
@@ -2601,7 +2602,10 @@ public import FLT.Mazur.DivisorCanonicalComposition
 public import FLT.Mazur.DivisorCanonicalOperations
 public import FLT.Mazur.DivisorCanonicalSection
 public import FLT.Mazur.DivisorChartCokernel
+public import FLT.Mazur.DivisorClosedCokernel
 public import FLT.Mazur.DivisorCohomologicalDegree
+public import FLT.Mazur.DivisorComponentDegree
+public import FLT.Mazur.DivisorIdealEvaluation
 public import FLT.Mazur.DivisorInvertibleSheaf
 public import FLT.Mazur.DivisorLineBundle
 public import FLT.Mazur.DivisorLineBundlePower
@@ -2619,6 +2623,7 @@ public import FLT.Mazur.DivisorRestrictCoherence
 public import FLT.Mazur.DivisorSectionComplement
 public import FLT.Mazur.DivisorSectionExact
 public import FLT.Mazur.DivisorStalkLength
+public import FLT.Mazur.DivisorTensorSequence
 public import FLT.Mazur.EtaleCoordinate
 public import FLT.Mazur.EtaleDimGe
 public import FLT.Mazur.EtaleDimLe
@@ -2632,6 +2637,9 @@ public import FLT.Mazur.FiniteAffineCoverDimension
 public import FLT.Mazur.FiniteAffineCoverFiniteness
 public import FLT.Mazur.FiniteCechCyclesScalars
 public import FLT.Mazur.FiniteCechTermScalars
+public import FLT.Mazur.FiniteDivisorCohomology
+public import FLT.Mazur.FiniteDivisorComponentAvoidance
+public import FLT.Mazur.FiniteSchemeInvertibleSections
 public import FLT.Mazur.FiniteSchemeLength
 public import FLT.Mazur.FiniteSectionProjectivePresentation
 public import FLT.Mazur.FlasqueDirectImageAcyclic
@@ -2705,6 +2713,7 @@ public import FLT.Mazur.IdealPowerChartDescent
 public import FLT.Mazur.IdealPowerCompatibility
 public import FLT.Mazur.IdealPowerExtensionCharts
 public import FLT.Mazur.IdealPowerExtensionGluing
+public import FLT.Mazur.IdealQuotientExact
 public import FLT.Mazur.IncreasingCechComplex
 public import FLT.Mazur.InjectiveHorseshoe
 public import FLT.Mazur.IntegralBase
