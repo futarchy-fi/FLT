@@ -381,10 +381,12 @@ public import FLT.GaloisRepresentation.Extensions.OrdinaryFiltrationSplitting
 public import FLT.GaloisRepresentation.Extensions.OrdinaryFiltrationTwist
 public import FLT.GaloisRepresentation.Extensions.OrdinaryFiltrationUnit
 public import FLT.GaloisRepresentation.Extensions.OrdinaryFiniteDVRAction
+public import FLT.GaloisRepresentation.Extensions.OrdinaryFiniteRootClass
 public import FLT.GaloisRepresentation.Extensions.OrdinaryFramedRepresentation
 public import FLT.GaloisRepresentation.Extensions.OrdinaryGaloisClass
 public import FLT.GaloisRepresentation.Extensions.OrdinaryHomCoordinates
 public import FLT.GaloisRepresentation.Extensions.OrdinaryInertiaExponent
+public import FLT.GaloisRepresentation.Extensions.OrdinaryRootClass
 public import FLT.GaloisRepresentation.Extensions.OrdinaryTwist
 public import FLT.GaloisRepresentation.Extensions.PeuCohomologyComparison
 public import FLT.GaloisRepresentation.Extensions.PeuRamifiedClass
@@ -624,6 +626,8 @@ public import FLT.GroupScheme.ConstantCoordinates
 public import FLT.GroupScheme.ConstantCyclicOneFiber
 public import FLT.GroupScheme.ConstantFiltrationPurity
 public import FLT.GroupScheme.ConstantFiniteFlat
+public import FLT.GroupScheme.ConstantGroupModel
+public import FLT.GroupScheme.ConstantGroupPoints
 public import FLT.GroupScheme.ConstantModelIdentification
 public import FLT.GroupScheme.ConstantMuThreeCocycleSplitting
 public import FLT.GroupScheme.ConstantMuThreeGlobalSplitting
@@ -642,6 +646,7 @@ public import FLT.GroupScheme.CotangentAmitsurExact
 public import FLT.GroupScheme.CubicKummerCocycle
 public import FLT.GroupScheme.CyclicPowerElimination
 public import FLT.GroupScheme.CyclotomicModelIdentification
+public import FLT.GroupScheme.DiagonalGroupModel
 public import FLT.GroupScheme.DiagonalizableFiniteFlat
 public import FLT.GroupScheme.DiagonalizablePointPurity
 public import FLT.GroupScheme.DirectLimitFiniteRelation
@@ -671,6 +676,7 @@ public import FLT.GroupScheme.FiniteAlgebraComponentPoint
 public import FLT.GroupScheme.FiniteAlgebraComponents
 public import FLT.GroupScheme.FiniteAlgebraPointComponent
 public import FLT.GroupScheme.FiniteAlgebraPrincipalComponents
+public import FLT.GroupScheme.FiniteDiagonalPoints
 public import FLT.GroupScheme.FiniteFlat
 public import FLT.GroupScheme.FiniteFlatCartierTangent
 public import FLT.GroupScheme.FiniteFlatClosureChange
@@ -705,6 +711,8 @@ public import FLT.GroupScheme.FiniteHopfFreeness
 public import FLT.GroupScheme.FiniteHopfIdentityAntipode
 public import FLT.GroupScheme.FiniteHopfIdentityComponent
 public import FLT.GroupScheme.FinitePresentationPointCover
+public import FLT.GroupScheme.FiniteRootProjection
+public import FLT.GroupScheme.FiniteUnitReconstruction
 public import FLT.GroupScheme.FlatAugmentationTangent
 public import FLT.GroupScheme.FlatCotangentHomNaturality
 public import FLT.GroupScheme.FlatCoverReductionKernel
@@ -755,6 +763,7 @@ public import FLT.GroupScheme.GlobalModel
 public import FLT.GroupScheme.GlobalModelAwayTwo
 public import FLT.GroupScheme.GlobalModelOverInt
 public import FLT.GroupScheme.GroupAlgebraCoactionBasis
+public import FLT.GroupScheme.GroupLikeBasisTransport
 public import FLT.GroupScheme.HeightOneStructure
 public import FLT.GroupScheme.HenselianComponents
 public import FLT.GroupScheme.HenselianConnectedLocal
@@ -838,6 +847,7 @@ public import FLT.GroupScheme.LiftedQuotientReduction
 public import FLT.GroupScheme.LinearKummerClass
 public import FLT.GroupScheme.LocalBialgebraDerivations
 public import FLT.GroupScheme.LocalCoefficientConjugacy
+public import FLT.GroupScheme.LocalConstantIdentification
 public import FLT.GroupScheme.LocalDifferentBounds
 public import FLT.GroupScheme.LocalDifferentConjugates
 public import FLT.GroupScheme.LocalDifferentEquiv
@@ -858,7 +868,9 @@ public import FLT.GroupScheme.LocalInertiaCriticalExponent
 public import FLT.GroupScheme.LocalInertiaMaximum
 public import FLT.GroupScheme.LocalInertiaPolynomial
 public import FLT.GroupScheme.LocalIntegralPowerBasis
+public import FLT.GroupScheme.LocalIntegralScalars
 public import FLT.GroupScheme.LocalInvertibleSubmodule
+public import FLT.GroupScheme.LocalModelIdentification
 public import FLT.GroupScheme.LocalPerturbedWitness
 public import FLT.GroupScheme.LocalPointField
 public import FLT.GroupScheme.LocalPointFieldPoints
@@ -872,8 +884,24 @@ public import FLT.GroupScheme.NilpotentCovering
 public import FLT.GroupScheme.NilpotentGeometricCharacteristic
 public import FLT.GroupScheme.OrderThreeModelIdentification
 public import FLT.GroupScheme.OrdinaryFiltrationModels
+public import FLT.GroupScheme.OrdinaryFiniteDiagonalKernel
+public import FLT.GroupScheme.OrdinaryFiniteFiberDifference
+public import FLT.GroupScheme.OrdinaryFiniteKernelBasis
+public import FLT.GroupScheme.OrdinaryFiniteKummerClass
+public import FLT.GroupScheme.OrdinaryFiniteRootRatio
+public import FLT.GroupScheme.OrdinaryFiniteUnitClass
+public import FLT.GroupScheme.OrdinaryFiniteUnitParameter
 public import FLT.GroupScheme.OrdinaryIntegralFiberCocycle
+public import FLT.GroupScheme.OrdinaryIntegralFiberGalois
 public import FLT.GroupScheme.OrdinaryIntegralQuotientPoint
+public import FLT.GroupScheme.OrdinaryIntegralRootDifference
+public import FLT.GroupScheme.OrdinaryLocalConstantQuotient
+public import FLT.GroupScheme.OrdinaryLocalDiagonalKernel
+public import FLT.GroupScheme.OrdinaryLocalKernelBasis
+public import FLT.GroupScheme.OrdinaryLocalKummerClass
+public import FLT.GroupScheme.OrdinaryLocalRootRatio
+public import FLT.GroupScheme.OrdinaryLocalScalars
+public import FLT.GroupScheme.OrdinaryLocalUnitParameter
 public import FLT.GroupScheme.OrdinaryModelFiberPoints
 public import FLT.GroupScheme.OrdinaryNormalizedDifference
 public import FLT.GroupScheme.PDivisibleColimitLifting
@@ -939,6 +967,8 @@ public import FLT.GroupScheme.PolynomialCoefficientKernel
 public import FLT.GroupScheme.PolynomialLocalDimension
 public import FLT.GroupScheme.PolynomialLocalParameterCriterion
 public import FLT.GroupScheme.PrimeCyclotomicCoefficients
+public import FLT.GroupScheme.PrimeDiagonalPoints
+public import FLT.GroupScheme.PrimeDualCharacters
 public import FLT.GroupScheme.PrimeRootCoordinates
 public import FLT.GroupScheme.PrimeUnitSubspace
 public import FLT.GroupScheme.PrimitiveRootCoordinates
@@ -957,6 +987,7 @@ public import FLT.GroupScheme.QuadraticTwistMonoidal
 public import FLT.GroupScheme.QuadraticTwistPoints
 public import FLT.GroupScheme.QuadraticTwistTensor
 public import FLT.GroupScheme.QuotientFiberFreeness
+public import FLT.GroupScheme.QuotientGroupBasisTransport
 public import FLT.GroupScheme.RationalCoordinateRegularPresentation
 public import FLT.GroupScheme.RationalCubeValuations
 public import FLT.GroupScheme.RationalIntegralExactness
