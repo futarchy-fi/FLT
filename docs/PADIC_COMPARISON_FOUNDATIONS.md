@@ -2963,12 +2963,12 @@ Hopf model with its original closed embedding.
 | CE6 / `RationalIdentityComponentModel` | Constructed the finite-flat connected model, its closed embedding and injective original point map. |
 | CE7 / `BialgebraSurjectiveFactor`, `RationalIdentityComponentMaps` | Descended original morphisms to those same quotient models; proved uniqueness and functoriality. |
 | CE8 / `RationalConnectedLevelTower` | Constructed both connected transitions, their coherence, closed inclusions, inherited p-power annihilators and both multiplication factorizations. |
-| CE9 / connected exactness | Open: prove faithful flatness of connected reductions and their actual scheme kernel equations. Split these two proofs into separate files. |
-| CE10 / connected height | Open: prove a common connected height and level rank formula; only then bundle the connected p-divisible system. |
-| CE11 / etale quotient levels | Open: construct the actual quotient of each original level by its connected subgroup, retaining the quotient map. |
-| CE12 / etale quotient property | Open: prove the quotient is etale over the original base; do not replace it by constant points without proving descent. |
-| CE13 / etale quotient tower | Open: construct both quotient transitions, prove coherence and p-divisible axioms in separate capped files. |
-| CE14 / original exact sequence | Open: prove exactness of the original connected-etale level sequence and of its Tate sequence, retaining the extension class. |
+| CE9 / `RationalIdentityMapFaithfullyFlat`, `RationalConnectedKernel` | Proved faithful flatness of the actual connected reductions and their integral scheme-kernel equations. |
+| CE10 / `RationalConnectedRanks`, `RationalConnectedSystem` | Proved the common connected height, bounded by the original height, and all level ranks; bundled the original connected p-divisible system. |
+| CE11 / `RationalComponentQuotient` | Constructed the original finite-flat quotient by contraction, its faithfully flat projection and its exact connected kernel ideal. |
+| CE12 / `RationalComponentQuotientEtale` | Proved finite etaleness over the original base by faithfully descending idempotence of the augmentation ideal. No constant-group replacement is used. |
+| CE13 / `RationalEtaleLevelTower`, `RationalEtaleReductionFlat`, `RationalEtaleRanks` | Constructed both transitions, naturality, coherence, multiplication, annihilators, faithfully flat reductions and complementary-height ranks. Closed inclusions and the integral transition-kernel equations remain open; the quotient is not yet bundled as a p-divisible system. |
+| CE14 / `RationalConnectedEtaleExtension`, `RationalEtaleTateModule`, `RationalEtaleTateGalois` | Constructed the original level extensions, including their torsors, and the exact sequence of p-adic inverse-limit modules with original Galois equivariance. The right-hand limit is defined directly from the quotient tower; identifying it with the Tate module of a bundled quotient system awaits CE13. No splitting is claimed. |
 | HT1 / original Hodge-Tate maps | Open: identify the existing dlog and infinitesimal maps with the correctly twisted Lie terms, including coefficient completion. |
 | HT2 / connected comparison | Open: prove the connected Hodge-Tate exact sequence; split kernel, image and dimension arguments. Connectedness alone supplies none of these conclusions. |
 | HT3 / full Cartier compatibility | Open: compute the pairing on both Hodge-Tate components and assemble it through CE14. The W59 constant calculation is a required test. |
@@ -2976,17 +2976,30 @@ Hopf model with its original closed embedding.
 | P2-P6 | Open: integrality, original Galois equivariance, injectivity, surjectivity and filtration strictness for that actual de Rham map. |
 
 The existing `PDivisibleSystem.Hom` fixes the same height on source and target.
-CE14 must allow different heights for the connected inclusion and etale
-quotient; do not reuse that interface with a false equality of heights.
+W60 adds `VariableHeightHom` and constructs the actual connected inclusion
+with source height `rationalConnectedHeight`. Its induced Tate map is p-adic
+linear and injective. The quotient level ranks are
+`p ^ (n * (height - rationalConnectedHeight))`.
 
-CE8 is a coherent tower, not yet a `PDivisibleSystem`: CE9 and CE10 are
-substantive missing proofs. CE11-CE14 are not implemented, so W59 does not
-claim a completed connected-etale decomposition. HT1-HT3, DR1, P2-P6,
-W1-W3 and the original family admission remain open. No change to an
-existing admitted module is authorized by this task.
+The connected tower is now a `PDivisibleSystem`. The quotient levels are
+finite etale, but CE13 still needs closed inclusions and the integral
+transition-kernel equations. Do not infer either from the rank formula.
+The exact inverse-limit sequence was proved directly: finite nonempty fibres
+have compatible choices, and levelwise exactness plus injectivity identifies
+the kernel with the original connected Tate module. Both maps commute with
+the original Galois action. The level extensions and torsor maps retain the
+original extension; no product decomposition or section is constructed.
 
-Validation, exact commits and checked-at times are recorded in the untracked
-`FAMILY_W59_DONE.md` and `W59_VALIDATION.json`. Recheck with
-`python3 W59_FINAL_CHECKS.py`; each new module is built in the foreground,
-linted individually and audited for axioms. The final root build follows
-merging origin/main. No whole-library lint is used.
+HT1-HT3, DR1, P2-P6, W1-W3 and the original family admission remain open.
+The connected-etale exact sequence is not the Hodge-Tate sequence displayed
+above. In particular, nothing here restores W57's refuted full-period identity
+or establishes de Rham admissibility. No edit of an existing admitted module
+is authorized by this task.
+
+Validation, source hashes, exact commits and checked-at times are recorded in
+the untracked `FAMILY_W60_DONE.md`, `W60_VALIDATION.json` and
+`W60_AXIOM_RESULT.json`. Recheck with `python3 W60_FINAL_CHECKS.py`;
+`python3 W60_VALIDATE.py` builds each new module in the foreground and lints
+one module at a time. `python3 W60_RUN_AXIOMS.py` audits the new declarations
+and the original family boundary. The final root build follows merging
+origin/main; no whole-library lint is used.
