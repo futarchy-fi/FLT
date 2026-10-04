@@ -2036,3 +2036,40 @@ neighbourhood over the original base, including arbitrary-base
 approximation. F14's finite relative cover, C4–C12's relative flatness and
 the formal-smoothness assembly remain unproved. None of these statements
 follows solely from the new absolute geometric presentations.
+
+
+### W47: actual residue-field fibre comparison
+
+F12 now applies to each specified polynomial presentation of the actual
+characteristic-p residue division fibre at every prime over its kernel.
+`DivisionResidueLocalCI.exists_residue_division_regular_relations_atPrime`
+constructs a list with exactly as many relations as polynomial variables,
+generating the original localized kernel and regular over the original field.
+There is no rational-residue hypothesis and no assumed geometric kernel square.
+
+The implementation leaves (whole-module cap 150) are:
+
+| Leaf | Module | Result |
+|---|---|---|
+| F12y | `MvPolynomial.GeometricPointLocalization` | Flat local coefficient map at any geometric point and its contraction; comparison of the extended original ideal. |
+| F12z | `MvPolynomial.GeometricRegularDescent` | Descend the generator bound through the flat local map, apply the geometric parameter criterion, and reflect regularity. |
+| F12aa | `MvPolynomial.CoefficientPresentation` | Extend a specified polynomial presentation with its coordinates, surjectivity and entire kernel. |
+| F12ab | `GroupScheme.ComponentLocalizedKernel` | Projecting onto a pointed component preserves the original kernel after localization; prove this using the primitive idempotent. |
+| F12ac | `GroupScheme.GeometricHopfLocalizedKernel` | Square generators and the actual component quotient for the original geometric presentation. |
+| F12ad | `GroupScheme.HopfGeometricPresentationDescent` | Connect the geometric component kernel to the original localized presentation and descend regular relations. |
+| F12ae | `GroupScheme.HopfGeometricPointDescent` | Retain a specified original fibre point through the geometric comparison. |
+| F12af | `GroupScheme.DivisionResidueFibreComparison` | Construct the comparison for the actual residue division fibre by tensor cancellation and division translation. |
+| F12ag | `MvPolynomial.ResidueGeometricPoint` | Construct a geometric point above each original prime, with exactly that contracted ideal. |
+| F12ah | `GroupScheme.DivisionResidueRegularPresentation` | Apply the constructed comparison at every specified geometric point of the actual residue fibre. |
+| F12ai | `GroupScheme.DivisionResidueLocalCI` | Apply the geometric-point construction at every prime of the original residue-field presentation. |
+
+This replaces the rational-origin restriction of F12x in the actual fibre
+application: F12z uses `Ideal.exists_ofList_of_map_eq_span` and faithfully flat
+reflection directly at the contracted geometric point. F12x remains a valid
+specialized interface. The result concerns characteristic-p residue fields,
+as required for p-nilpotent test algebras.
+
+F13 still requires spreading these presentations over the original arbitrary
+base. A finite chart cover of an individual residue fibre does not imply
+F14's relative chart cover. C4–C12 and the formal-smoothness assembly remain
+unproved; the family admission has not been replaced.
