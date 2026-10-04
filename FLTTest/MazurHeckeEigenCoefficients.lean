@@ -15,7 +15,9 @@ open Lean Elab Command
 
 run_elab do
   for n in #[``FLT.Mazur.eq_zero_of_hecke_relations,
-      ``FLT.Mazur.coeff_one_ne_zero_of_hecke_relations] do
+      ``FLT.Mazur.coeff_one_ne_zero_of_hecke_relations,
+      ``FLT.Mazur.exists_coeff_one_ne_zero_of_hecke_action,
+      ``FLT.Mazur.coeff_one_surjective_of_hecke_action] do
     for a in ← Lean.collectAxioms n do
       unless #[``propext, ``Classical.choice, ``Quot.sound].contains a do
         throwError "Unexpected axiom {a} in {n}"

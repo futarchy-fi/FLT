@@ -15,6 +15,8 @@ public import Mathlib.Tactic
 The coefficient argument in Mazur (1978), Proposition 3.1: the weight-two
 Hecke eigenrelations away from the level, and the U relation at the level,
 force a cuspidal expansion with vanishing first coefficient to vanish.
+For a nonzero space carrying these actions, injectivity of the expansion
+makes the first-coefficient functional surjective without choosing eigenvectors.
 
 This is the algebraic recurrence step over an arbitrary coefficient ring.
 It does not construct modular curves, Hecke actions on differentials, the
@@ -68,5 +70,64 @@ theorem coeff_one_ne_zero_of_hecke_relations {R : Type*} [Ring R]
   apply hf
   ext n
   simpa using congrFun h n
+
+/-- A nonzero space with an injective cuspidal expansion and the prime Hecke
+coefficient formulas has a vector with nonzero first coefficient. This avoids
+choosing simultaneous eigenvectors or extending the coefficient field. -/
+theorem exists_coeff_one_ne_zero_of_hecke_action
+    {K V : Type*} [Field K] [AddCommGroup V] [Module K V] [Nontrivial V]
+    (q : V →ₗ[K] PowerSeries K) (hq : Function.Injective q)
+    (N : ℕ) (U : V →ₗ[K] V) (T : ℕ → V →ₗ[K] V)
+    (hzero : ∀ v, (q v).coeff 0 = 0)
+    (hU : ∀ v m, (q v).coeff (N * m) = (q (U v)).coeff m)
+    (hT : ∀ l, l.Prime → l ≠ N → ∀ v m,
+      (q v).coeff (l * m) = (q (T l v)).coeff m -
+        if l ∣ m then (l : K) * (q v).coeff (m / l) else 0) :
+    ∃ v, (q v).coeff 1 ≠ 0 := by
+  by_contra h
+  push Not at h
+  have hall : ∀ n v, (q v).coeff n = 0 := by
+    intro n
+    induction n using Nat.strong_induction_on with
+    | h n ih =>
+      intro v
+      by_cases hn0 : n = 0
+      · simpa [hn0] using hzero v
+      by_cases hn1 : n = 1
+      · simpa [hn1] using h v
+      obtain ⟨l, hl, hln⟩ := Nat.exists_prime_and_dvd hn1
+      have hm : n / l < n := Nat.div_lt_self (Nat.pos_of_ne_zero hn0) hl.one_lt
+      have hmm : n / l / l < n := lt_of_le_of_lt (Nat.div_le_self _ _) hm
+      have heq : l * (n / l) = n := Nat.mul_div_cancel' hln
+      by_cases hlN : l = N
+      · have hh := hU v (n / l)
+        rw [← hlN, heq, ih _ hm] at hh
+        exact hh
+      · have hh := hT l hl hlN v (n / l)
+        rw [heq, ih _ hm, ih _ hmm] at hh
+        simpa using hh
+  obtain ⟨v, hv⟩ := exists_ne (0 : V)
+  apply hv
+  apply hq
+  ext n
+  simp [hall]
+
+/-- In the same setting, the first-coefficient functional is surjective.
+This is the linear-algebra endpoint needed for the cotangent direction at
+a cusp, once the geometric expansion map and Hecke formulas are proved. -/
+theorem coeff_one_surjective_of_hecke_action
+    {K V : Type*} [Field K] [AddCommGroup V] [Module K V] [Nontrivial V]
+    (q : V →ₗ[K] PowerSeries K) (hq : Function.Injective q)
+    (N : ℕ) (U : V →ₗ[K] V) (T : ℕ → V →ₗ[K] V)
+    (hzero : ∀ v, (q v).coeff 0 = 0)
+    (hU : ∀ v m, (q v).coeff (N * m) = (q (U v)).coeff m)
+    (hT : ∀ l, l.Prime → l ≠ N → ∀ v m,
+      (q v).coeff (l * m) = (q (T l v)).coeff m -
+        if l ∣ m then (l : K) * (q v).coeff (m / l) else 0) :
+    Function.Surjective (fun v ↦ (q v).coeff 1) := by
+  obtain ⟨v, hv⟩ := exists_coeff_one_ne_zero_of_hecke_action q hq N U T hzero hU hT
+  intro a
+  refine ⟨(a / (q v).coeff 1) • v, ?_⟩
+  simp [smul_eq_mul, div_mul_cancel₀ _ hv]
 
 end FLT.Mazur

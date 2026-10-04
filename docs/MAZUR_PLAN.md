@@ -35,14 +35,22 @@ is needed; do not schedule the characteristic-p part of Proposition 3.1.
    rational points. These are missing global inputs, not parameters to
    hide in a new definition of the target.
 2. Prove formal immersion at the cusp in characteristic 3. This requires
-   injectivity on cotangent spaces for the optimal quotient, a nonzero
-   simultaneous Hecke eigenvector after extending the residue field, the
-   q-expansion principle, and the coefficient recurrences.
+   injectivity on cotangent spaces for the optimal quotient, the
+   q-expansion principle, and the Hecke action with its coefficient formulas.
+   The source uses simultaneous eigenvectors after a field extension; the
+   algebraic step now implemented below works directly on the stable space.
    **Implemented algebraic substep:** `FLT/Mazur/HeckeEigenCoefficients.lean`
    proves that a cuspidal sequence satisfying the weight-two T_l and U_p
    recurrences vanishes if its first coefficient vanishes. The power-series
    corollary gives a nonzero first coefficient for a nonzero expansion over
-   any coefficient ring. It does not prove the geometric hypotheses.
+   any coefficient ring. The additional theorem
+   `coeff_one_surjective_of_hecke_action` proves surjectivity of the
+   first-coefficient functional on a nonzero vector space with an injective
+   cuspidal expansion and the T_l/U_p coefficient formulas. Strong induction
+   on the coefficient index, applied to all vectors, replaces the choice of
+   eigenvectors; no finite-dimensionality or field extension is needed for
+   this algebraic step. The actual Hecke action on cotangent expansions and
+   its compatibility with the modular morphism are still unproved.
 3. For a rational cyclic p-subgroup, prove that potentially multiplicative
    reduction at 3 specializes to a cusp. Use the cusp involution, torsion
    specialization and formal immersion to obtain a contradiction.
