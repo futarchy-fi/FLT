@@ -4,6 +4,182 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
+## W62 — effective integral algebra descent for unramified twists
+
+Validation receipt check: `python3 Scratch/LiftsW62/check.py`. The check prints
+its checked-at time and verifies source hashes, saved foreground builds,
+individual-module lint and declaration axiom audits. It does not rerun Lean.
+The W62 result outside this tracked directory records commits and validation.
+
+| Item | New module | Proved scope |
+|---|---|---|
+| Fixed coordinates | `GroupScheme.SemilinearFixedAlgebra` | Actual fixed subalgebra, orbit sums, finite flatness over Dedekind bases and freeness over local Dedekind bases. |
+| Effective scalar recovery | `GroupScheme.SemilinearScalarRecovery` | Constructs both inverses to scalar extension from coefficient trace and Galois orthogonality identities. No recovery equivalence is an input. |
+| Generic-field recovery | `GroupScheme.GaloisFieldScalarRecovery` | Derives orthogonality coordinates from independence of field automorphisms; effective algebra descent for finite Galois fields. |
+| Integral coordinates | `GroupScheme.GaloisIntegralCoordinates` | Constructs the coefficient trace from fixed scalars and Galois coordinates from a unit evaluation determinant. |
+| Trivial-inertia recovery | `GroupScheme.ResidueGaloisCoordinates` | Faithful residue characters produce a basis of evaluation vectors and a unit determinant. Trivial integral inertia implies faithful residue characters. Thus no determinant or coordinates are assumed in local unramified recovery. |
+| Actual splitting ring | `AbsoluteGaloisGroup.UnramifiedCharacterAlgebraDescent` | Specializes recovery to the integral closure in the actual character-kernel field, proves faithful flatness and finite free fixed coordinates. |
+| General tensor action | `GroupScheme.SemilinearTensorTwist` | Constructs the simultaneous coefficient/coordinate group action, its action law and its fixed algebra. |
+| Point transformation | `GroupScheme.SemilinearTwistPoints` | Coefficient evaluation obeys the inverse-coordinate-action transformation law for an arbitrary group. |
+| Actual twist recovery | `AbsoluteGaloisGroup.UnramifiedCharacterTwist` | Scalar recovery over the actual splitting ring, descent of generic etaleness, and a bijection of algebra points with the specified transformation law. |
+| Integral unit action | `GroupScheme.LocalIntegralScalarUnits` | Constructs coordinate automorphisms from the existing integral scalar maps on the specified local finite-flat model; proves the unit group law and the scalar action on points. |
+| Original model and character | `GroupScheme.LocalUnramifiedScalarTwist` | Uses that constructed unit action and the actual finite character. Proves finite free twist coordinates, an etale generic coordinate algebra, splitting-base recovery and the original point module's inverse-character Galois transformation. |
+
+This wave proves **effective descent of the underlying algebra** for the
+nontrivial unramified character twist. The final construction uses the
+original finite-flat model, its original coefficient action, the proved
+small-ramification scalar extension theorem, and the actual character-kernel
+splitting field. It does not assume an integral twisting action, a unit
+Galois determinant, trace coordinates or a scalar-recovery equivalence.
+No prime-to-group-order division is needed for effective algebra descent.
+
+The point bijection is with **algebra homomorphisms on the fixed coordinates**.
+It has the prescribed Galois transformation, but no descended Hopf structure
+or convolution-group comparison is asserted. R1 still requires the tensor
+comparison for fixed algebras, descent of comultiplication/counit/antipode and
+all their laws, then an actual finite-flat group-scheme model and transport
+of the ordinary filtration/unit-class theorem. Do not treat the new point
+bijection alone as a finite-flat twist theorem.
+
+Arithmetic Noetherianity of the actual HR quotient, the matched unframed
+image and the finite p-adic order carrying the lift remain open, with the
+framed/unframed distinction of `LIFTS_W59_GLOBAL_CONTRACTS.md` unchanged.
+No arithmetic finite tangent/presentation theorem is proved in this wave.
+S0a3 generalization, Lp0 and G0a–G1c remain. The exact lifting admission and
+its dependency in `PNat.pow_add_pow_ne_pow` have not been removed; the saved
+`Scratch/LiftsW62/FinalAxioms.lean` audit checks both endpoints.
+
+## W61 — extracted inertia characters and proved root-kernel containment
+
+Validation receipt check: `python3 Scratch/LiftsW61/check.py`. It prints its
+checked-at time and verifies source hashes and saved build, per-module lint
+and axiom-audit receipts; it does not rerun Lean.
+
+| Item | Module | Proved scope |
+|---|---|---|
+| Scalar character extraction | `RepresentationTheory.ScalarCharacterKernel` | Extracts a character from the constructed rank-one scalar action and proves its kernel equals the original representation kernel. |
+| Distinct conjugates | `RepresentationTheory.ScalarCharacterFrobenius` | A Frobenius-fixed character on a simple prime-field representation forces dimension one; rank two has distinct conjugates. |
+| Actual inertia scalars | `AbsoluteGaloisGroup.InertiaScalarCharacter` | Constructs the quadratic finite scalar field and character from continuous simple rank-two inertia; proves field cardinality, kernel equality and distinct conjugates. A same-kernel character is continuous. |
+| Residue realization | `SerreWeight.ScalarCharacterRoots` | Embeds finite scalar units into roots of unity, preserving the character kernel and distinct Frobenius conjugates. |
+| Actual inertia eigencharacters | `AbsoluteGaloisGroup.NiveauTwoInertiaCharacter` | Constructs a degree-p²−1 residue-root character from the original representation, with open unchanged kernel and both characteristic-polynomial factors. |
+| Finite tame image | `AbsoluteGaloisGroup.InertiaCyclicQuotient` | An open kernel on inertia contains a finite Galois restriction kernel; every finite prime-to-p quotient or image is cyclic. No extension of the character to the whole local Galois group is required. |
+| Cyclic joint image | `SerreWeight.CyclicPairKernel` | Surjectivity of one character in a cyclic joint image proves kernel containment by comparing exponent and cardinality. |
+| Arithmetic root-kernel gate | `AbsoluteGaloisGroup.RootCharacterKernel` | Every open-kernel degree-n root-valued inertia character kills the specified degree-n uniformizer-root kernel, for n prime to p. Derives the unique reduced exponent. |
+| Combined normalization | `AbsoluteGaloisGroup.NiveauTwoInertiaNormalization` | For continuous simple rank-two **prime-field inertia** representations at p, constructs the character, proves root-kernel containment, and normalizes one Frobenius orientation with a<p−1 and 1≤b<p. |
+
+The general prime-to-p root-kernel gate is proved. The representation theorem
+assumes irreducibility of the **inertia representation over ZMod p**. It does
+not classify every irreducible whole-local representation over an arbitrary
+finite coefficient field, nor prove absolute irreducibility after restriction.
+The characteristic-polynomial formula uses the actual extracted scalar action;
+no asserted character, kernel containment or nonfixedness is an input.
+
+S0a3 still requires general coefficient fields, the whole-local/inertia branch
+comparison, full recipe independence and the symmetric-power composition-factor
+comparison. Ordinary niveau-one normalization over general coefficients and the
+independent integral exclusion of the non-peu branch remain. No numerical
+Serre-weight evaluation or arbitrary-p Raynaud classification is claimed.
+R1, Lp0, arithmetic Noetherianity and G0a–G1c remain in the priority order from
+W60; this wave does not prove them. `IsHardlyRamified.lifts` and
+`PNat.pow_add_pow_ne_pow` retain their existing admissions; recheck with the
+saved `Scratch/LiftsW61/FinalAxioms.lean` command.
+
+## W60 — extracted ordinary branches and niveau-two normalization
+
+Validation receipt check: `python3 Scratch/LiftsW60/check.py`. This reports
+its checked-at time and checks source hashes against the saved foreground
+build, module-lint and axiom-audit receipts. It does not rerun Lean.
+
+| Item | Module | Proved scope |
+|---|---|---|
+| Unique reduced character exponent | `SerreWeight.CyclicCharacterExponent` | Existence, uniqueness and change-of-generator formula for a surjective finite cyclic character quotient. |
+| Actual inertia normalization | `AbsoluteGaloisGroup.RootCharacterExponent` | Unique exponent for the constructed root quotient; independence of root and uniformizer. Kernel containment remains explicit. |
+| Niveau-two digit normalization | `SerreWeight.NiveauTwoDigits`, `AbsoluteGaloisGroup.NiveauTwoCharacterNormalization` | Frobenius exchanges the two base-p digits. A nonfixed character of the actual rational degree-p²−1 root quotient has a normalized conjugate with determinant exponent a<p−1 and 1≤b<p. Its determinant factor is the actual cyclotomic character. |
+| Independent non-peu branch | `Extensions.OrdinaryFiltrationRamification`, `SerreWeight.OrdinaryBranch` | The actual extracted class satisfies the independent cup-annihilator condition whenever the filtration splits. Non-peu implies nonsplit. Branch selection tests actual splitting and the whole-local Hom character, and is invariant under both line basis changes and simultaneous twists. |
+| Actual prime-field recipe input | `SerreWeight.NormalizedOrdinaryInput` | Constructs `ReducibleInput` from the filtration, the surjective inertia restriction and kernel containment. The exceptional exponent-one field is proved from the whole-local character equality; neither the branch nor a weight is supplied. |
+
+The niveau-two theorem classifies characters of a specified quotient, not
+all irreducible residual representations. Proving that the actual inertia
+representation supplies those characters and the required kernel containment
+remains necessary. The ordinary construction requires an actual exact line
+filtration and currently uses prime-field coefficients for exponent
+extraction. It does not prove uniqueness under changing the invariant line,
+coefficient-extension compatibility of the full recipe, or the symmetric-power
+composition-factor comparison. No numerical Serre-weight evaluation follows.
+
+R1 effective quotient-twist Hopf construction, Lp0 universal integral
+PD-envelope/Frobenius/B_cris comparison, arithmetic Noetherianity, and G0a–G1c
+remain unresolved in this wave. The restored priority order is unchanged.
+The endpoint `IsHardlyRamified.lifts` is unchanged; use `#print axioms` on
+that theorem and `PNat.pow_add_pow_ne_pow` to check the remaining admissions.
+
+## W59 — C1 circularity audit and restored arithmetic priorities
+
+Checked 2026-10-04 against `HardlyRamifiedWittPoint`,
+`HardlyRamifiedWittLift`, `HardlyRamifiedWittResidual`, and the exact `lifts`
+statement in `HardlyRamified/Lift.lean`. These are distinct assertions:
+
+- **Bare C1** asks for a continuous global characteristic-zero lift of the
+  residual representation. It omits HR local conditions and finite free
+  p-adic coefficients. It is not literally the `lifts` theorem, and no
+  equivalence with that theorem has been proved. An unrestricted lift may
+  have extra ramification; it cannot witness an HR quotient point.
+- **C1 together with C2–C6** asks for that same lift with determinant,
+  away-inertia, the prescribed quotient at two, and every finite-flat open
+  reduction. `flatPointOfFramedLift` then constructs a characteristic-zero
+  point of the actual HR quotient. Conversely its universal representation
+  already has these conditions, and `flatObject_exists_charZero_iff` proves
+  point existence equivalent to exclusion of every p-power from the flat
+  ideal. This is precisely the unresolved nonvanishing assertion, not an
+  independent proof of it.
+- **The exact `lifts` endpoint** additionally requires a finite free p-adic
+  coefficient order, original residue field and tensor-conjugacy witness,
+  in independent universes. These integral and universe obligations prevent
+  calling the current proartinian point criterion an exact equivalence with
+  `lifts`. C0's Eisenstein targets do not construct a representation or a
+  specialization map.
+
+Thus using C1–C6 to prove the HR quotient's characteristic zero is circular
+as a proof strategy unless their existence is independently established.
+There is no proof that global Selmer/modularity is the only possible route;
+it is the source-matched route retained here (KW II Proposition 4.5,
+Theorem 10.1 and Corollary 4.7). Deprioritize C1–C6. Work in order on
+S0a2/S0a3, effective R1 quotient-twist descent, Lp0 crystalline comparison,
+Noetherianity and the finite coefficient order, then the specified global
+Selmer contracts. Do not dispatch numerical weight evaluation or arbitrary-p
+Raynaud classification as available APIs. No global admission is removed by
+this audit.
+
+### W59 local comparison and remaining boundary
+
+Validation is checked by `python3 Scratch/LiftsW59/check.py`, which prints
+its checked-at time and verifies source hashes and saved foreground Lean
+receipts. It does not rerun Lean; the untracked W59 result lists commits and
+build commands. Require that check before treating this inventory as validated.
+
+| Item | New module under `FLT/AbsoluteGaloisGroup/` | Scope |
+|---|---|---|
+| S0a2 completeness | `CompletionIntegersAdic` | Proves the actual valuation topology is maximal-ideal adic, derives algebraic completeness and Henselianity at every number-field finite place, and constructs primitive tame roots in the base. |
+| S0a2 normality | `TameRootGaloisModel` | The exact chosen root field is Galois; constructs its open normal level, actual integral uniformizer and finite/absolute character comparison. |
+| S0a2 common level | `TameCommonLevel` | Constructs a finite comparison field containing any specified model and the chosen root; proves the actual ramification-exponent formula. |
+| S0a2 transfer | `UniformizerCharacterTransfer`, `FiniteUniformizerTransfer` | Proves the valuation-power relation under an injective local integral map, then constructs the actual nested finite-level maps, their equivariance and commuting residue inclusions. |
+| S0a2/S0a3 comparison | `TameSpecifiedModelComparison` | Eliminates the common-level character to obtain chi_model^k = tameCharacter^e in the actual absolute residue field, with both exponents positive and their valuations specified. |
+
+This removes the previous general-number-field normality gap and supplies
+transfer of uniformizer characters to the specified finite model. It does
+not cancel noninvertible exponents, extract every representation's normalized
+inertial type, or prove numerical Serre-weight evaluations. S0a3's niveau-two,
+non-peu and symmetric-power composition-factor gates remain first in priority.
+R1 effective twisted Hopf descent, Lp0 PD-envelope universality/Frobenius/B_cris,
+arithmetic Noetherianity, and the finite order carrying a lift remain open.
+
+[Global Selmer contracts](LIFTS_W59_GLOBAL_CONTRACTS.md) specify G0a–G1c,
+the separate modularity/finiteness gate, and exact integral assembly. They
+also correct a ring mismatch: KW II Theorem 10.1 concerns the **unframed
+image** in a global framed local-condition ring, not the full framed HR
+quotient. This source distinction must survive the eventual Lean comparison.
+The new modules do not remove `sorryAx` from `lifts` or the FLT endpoint.
+
 ## W43 — integral ordinary models, weight specification, and universe transport
 
 The W43 status supersedes the “next bounded gates” statuses in the historical
