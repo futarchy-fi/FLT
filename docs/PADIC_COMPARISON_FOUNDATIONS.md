@@ -2510,3 +2510,133 @@ realization and the final delegation of that admission remain outstanding.
 Validation is reproducible with the individual foreground builds, sequential
 module-only lints and named axiom audits recorded in the untracked
 `FAMILY_W52_DONE.md`, `W52_VALIDATION.json` and `W52_AXIOMS.log`.
+
+## W53: actual Cartier-dual system and Tate evaluation
+
+The W52 C1–C3 obligations are implemented over a principal domain with an
+arbitrary characteristic-zero fraction field. They therefore apply to the
+original rational-place completion. No generic-Q extension theorem is used
+to assert local exactness. The complete modules below each have a 150-line cap.
+
+| Leaf | Module | Proved output |
+|---|---|---|
+| C1a | `CartierDualConvolution` | Transposition reverses composition and preserves convolution and its natural powers. |
+| C1b | `RaynaudCartierArithmetic` | Actual integral duals preserve multiplication, annihilation and coordinate rank. |
+| C1c | `PDivisibleCartierTransitions` | The original transposed inclusions/reductions satisfy identity, composition and both multiplication factorizations. |
+| C2 | `CartierDualSurjection` | A surjective coordinate map has faithfully flat transpose, using split injectivity after every residue base change. |
+| C3a | `HopfExactPair` | An actual augmentation-kernel presentation gives the original kernel torsor and its faithfully flat invariants. |
+| C3b | `HopfExactPairAnnihilator` | The annihilator of the actual dual augmentation ideal is exactly the original quotient coordinates. |
+| C3c | `HopfExactPairDualKernel` | The dual augmentation quotient is flat and pairs perfectly with the original quotient coordinates. |
+| C3d | `HopfExactPairDuality` | Integral biduality identifies that quotient with the intended dual; proves dual closedness and the actual dual kernel equation. |
+| C3e | `PDivisibleCartierSystem` | Assembles the actual dual p-divisible system with all structure obligations proved. |
+| C4a | `CartierPairingNaturality` | Geometric evaluation tensors and characters respect transposition of the given Hopf maps. |
+| C4b | `RaynaudCartierPairing` | The specified original and dual local point groups carry their actual Cartier pairing, natural for integral maps. |
+| C4c | `RaynaudCartierPairingLaws` | Additivity in original points and the actual annihilating exponent of each Cartier value. |
+| C4d | `RaynaudCartierPairingGalois` | Original local Galois equivariance of that pairing. |
+| C4e | `PDivisibleCartierTatePairing` | The dual Tate limit, its p-adic linear evaluations, inclusion compatibility, and the paired cyclotomic transition law. |
+| C4f | `PDivisibleCartierTateGalois` | The actual paired sequence lies in the inverse limit of p-power roots and is Galois equivariant. |
+| C4g | `PDivisibleRationalCartier` | Instantiates the actual rational-place dual system and applies the proved integral tangent coefficient comparisons to its own cotangent limit. |
+| C4h | `RaynaudCartierCharacters` | The actual dual point group is the full character group; finite evaluation is additive in both arguments and separates dual points. |
+
+The finite exactness proof takes the original coordinate maps, surjectivity,
+faithful flatness and augmentation-kernel equation. It introduces no new
+record assuming a dual extension or a comparison. Faithfully flat descent
+identifies original quotient coordinates as kernel invariants. Their pairing
+with the dual augmentation quotient is perfect. That quotient is finite
+projective because the transposed inclusion is faithfully flat; integral
+biduality then proves both dual closedness and the required equality of ideals.
+
+For a dual Tate vector y and an original Tate vector x, the value at level n
+is the original Cartier evaluation on their actual n-th coordinates. It is
+killed by p^n, and raising its level-n value to p^(n-m) gives its level-m
+value. The same evaluation on a fixed original point is unchanged by its
+inclusion into a higher level. Galois acts on these values through its
+original action on the algebraic closure of the actual fraction field.
+
+### Remaining C4 and period boundary
+
+The root-valued Tate pairing and the integral tangent coefficient pairings
+are proved separately. Their infinitesimal compatibility has **not** been
+proved. Applying W52 to the dual system gives its integral coefficient
+comparison; it does not identify a Tate vector with an integral tangent
+functional. Consequently C4 as a whole, the period comparison and the family
+admission remain open. The original `mem_isCompatible` module is unchanged.
+
+The next required refinement, with each complete module still capped at 150
+lines, is:
+
+| Next leaf | Required artifact |
+|---|---|
+| C4i | Extend actual finite Cartier characters from generic points to the appropriate integral test algebras, retaining the original coordinate maps. |
+| C4j | Extract their infinitesimal differential/logarithmic derivative and prove independence of representatives and compatibility with the original level transitions. |
+| C4k | Identify that differential with the already proved original integral tangent coefficient evaluation; establish the level/limit formula. |
+| P1a | Construct the period-valued map from those specific Tate vectors and the existing period rings, with the original rational-place field and Galois transport. |
+| P1b | Prove independence and coefficient/level compatibility of the period construction. |
+| P2–P6 | Integrality, original Galois equivariance, injectivity, surjectivity and filtration strictness, separately. |
+| W1–W3 | Coefficient-embedding decomposition, two-weight support and determinant rank-one calculation, followed by compatible-family realization. |
+
+The untracked `FAMILY_W53_DONE.md` records the checked commits and evidence.
+Recheck with the individual foreground builds, module-only lints and named
+axiom audit listed there. No period comparison or removal of the existing
+admission is claimed by these finite and Tate-level constructions.
+
+## W54: integral test characters, their differential, and actual root periods
+
+Every complete new module below is capped at 150 lines. No existing proof
+module is edited. C4i–C4k now have original-coordinate constructions and
+finite/limit evaluation formulas. A separate construction sends the original
+Cartier root sequences into the existing de Rham period ring. **The equality
+between the period's first-order term and the integral cotangent construction
+is still unproved.** Consequently the full P1 comparison and P2–P6 are not
+claimed, and `mem_isCompatible` retains its existing admission.
+
+| Leaf | Module | Proved output |
+|---|---|---|
+| C4i.1 | `CartierTestAlgebra` | Canonical dual tensors for arbitrary integral test algebras; multiplicative Cartier characters valued in actual units. |
+| C4i.2 | `CartierTestNaturality` | Basis-independent evaluation, original coordinate-map naturality and equality with the existing geometric character. |
+| C4i.3 | `CartierTestCoefficients` | Coefficient specialization and original transposed morphisms preserve characters. |
+| C4i.4 | `CartierTestBaseChange` | Original dual bases and Cartier evaluation commute with scalar extension. |
+| C4i.5 | `RaynaudGeometricIntegralPoints` | Every specified geometric point extends uniquely to the actual integral closure; no lifting hypothesis. |
+| C4i.6 | `RaynaudIntegralCartier` | Actual local dual points give integral test characters whose generic values equal the original finite pairing. |
+| C4j.1 | `CartierCotangentTensor` | Canonical original-coordinate representing element and actual augmentation-cotangent tensor; contraction differentiates evaluation. |
+| C4j.2 | `CartierSquareZeroDifferential` | Character minus one equals the linear logarithmic differential on every square-zero point; values lie in the actual reduction kernel. |
+| C4j.3 | `CartierDualElementNaturality` | Coordinate and coefficient transport of representing elements and cotangent tensors. |
+| C4j.4 | `FiniteFlatCartierDifferential` | The original model morphisms preserve the dlog tensors and tangent contractions. |
+| C4j.5 | `PDivisibleCartierDlogLimit` | Actual dual Tate vectors give coherent integral dlog tensors under the original cotangent restrictions, with coefficient compatibility. |
+| C4k.1 | `PDivisibleCartierDifferential` | Original W52 integral tangent coefficient contraction equals the actual differential; limit representatives exist and contraction is independent of them. |
+| C4k.2 | `PDivisibleCartierDlogPairing` | Instantiates that equality and the square-zero character formula on the specified actual dual Tate coordinates. |
+| P1 roots | `PDivisibleRationalCartierRoots` | Original rational-place roots become integral C_p roots, a compatible perfection sequence and a sharp-one element of the existing tilt. |
+| P1 logarithm | `ComplexSharpOneLog` | Any specified sharp-one tilt element has an actual convergent de Rham logarithm, finite truncations, first-order formula and Galois transport. |
+| P1 values | `PDivisibleRationalCartierPeriods` | Period values of pairs of original Tate vectors, finite-precision formulas, uniqueness and first-filtration membership. |
+| P3 values | `PDivisibleRationalCartierPeriodGalois` | Original local Galois equivariance through the fixed rational-place transport, from roots through tilt to actual period values. |
+
+The dlog output is a coherent sequence of **cotangent tensors**. Its
+contraction with integral tangents is proved; it is not asserted to be an
+integral tangent vector. Similarly, the period output is a value attached
+to two Tate vectors. Linearity in those vectors, a comparison isomorphism,
+and any identification of its kernel or image are not inferred from the
+existence of that value.
+
+### Remaining proof obligations, in order
+
+| Next capped leaf | Required artifact |
+|---|---|
+| P1c | Prove additivity and p-adic linearity of the actual Tate dlog/period constructions, including any completion needed in the integral cotangent target. |
+| P1d | Construct the period-to-cotangent first-order identification for these specific original Tate vectors; show the Teichmuller linear term contracts to the C4k integral pairing. This is the next comparison gap. |
+| P1e | Assemble the required one-vector comparison map from that identification, with coefficient and original level compatibility. |
+| P2 | Prove the lattice/integrality statement for that comparison. Integral roots and first-filtration membership of their logarithm do not establish this statement. |
+| P3 | Lift the proved equivariance of root period values to the actual comparison map. |
+| P4–P6 | Prove comparison injectivity, surjectivity and filtration strictness separately. |
+| W1–W3 | Coefficient-embedding decomposition, two-weight support and determinant rank-one calculation, then compatible-family realization. |
+
+The finite cotangents are p-power torsion. Scalar extension directly to a
+ring in which p is invertible therefore loses their tangent information.
+The integral inverse limit and its coefficient completion must precede
+rationalization; the root-period construction alone does not supply that
+comparison.
+
+Only an axiom-clean replacement permits the later delegation of the
+existing admission, whose module is outside this task's edit scope.
+Validation evidence and exact local commits are in the untracked
+`FAMILY_W54_DONE.md`, with reproducible per-module builds/lints and named
+axiom audits. No whole-library lint is used.
