@@ -4,6 +4,41 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
+## W61 — extracted inertia characters and proved root-kernel containment
+
+Validation receipt check: `python3 Scratch/LiftsW61/check.py`. It prints its
+checked-at time and verifies source hashes and saved build, per-module lint
+and axiom-audit receipts; it does not rerun Lean.
+
+| Item | Module | Proved scope |
+|---|---|---|
+| Scalar character extraction | `RepresentationTheory.ScalarCharacterKernel` | Extracts a character from the constructed rank-one scalar action and proves its kernel equals the original representation kernel. |
+| Distinct conjugates | `RepresentationTheory.ScalarCharacterFrobenius` | A Frobenius-fixed character on a simple prime-field representation forces dimension one; rank two has distinct conjugates. |
+| Actual inertia scalars | `AbsoluteGaloisGroup.InertiaScalarCharacter` | Constructs the quadratic finite scalar field and character from continuous simple rank-two inertia; proves field cardinality, kernel equality and distinct conjugates. A same-kernel character is continuous. |
+| Residue realization | `SerreWeight.ScalarCharacterRoots` | Embeds finite scalar units into roots of unity, preserving the character kernel and distinct Frobenius conjugates. |
+| Actual inertia eigencharacters | `AbsoluteGaloisGroup.NiveauTwoInertiaCharacter` | Constructs a degree-p²−1 residue-root character from the original representation, with open unchanged kernel and both characteristic-polynomial factors. |
+| Finite tame image | `AbsoluteGaloisGroup.InertiaCyclicQuotient` | An open kernel on inertia contains a finite Galois restriction kernel; every finite prime-to-p quotient or image is cyclic. No extension of the character to the whole local Galois group is required. |
+| Cyclic joint image | `SerreWeight.CyclicPairKernel` | Surjectivity of one character in a cyclic joint image proves kernel containment by comparing exponent and cardinality. |
+| Arithmetic root-kernel gate | `AbsoluteGaloisGroup.RootCharacterKernel` | Every open-kernel degree-n root-valued inertia character kills the specified degree-n uniformizer-root kernel, for n prime to p. Derives the unique reduced exponent. |
+| Combined normalization | `AbsoluteGaloisGroup.NiveauTwoInertiaNormalization` | For continuous simple rank-two **prime-field inertia** representations at p, constructs the character, proves root-kernel containment, and normalizes one Frobenius orientation with a<p−1 and 1≤b<p. |
+
+The general prime-to-p root-kernel gate is proved. The representation theorem
+assumes irreducibility of the **inertia representation over ZMod p**. It does
+not classify every irreducible whole-local representation over an arbitrary
+finite coefficient field, nor prove absolute irreducibility after restriction.
+The characteristic-polynomial formula uses the actual extracted scalar action;
+no asserted character, kernel containment or nonfixedness is an input.
+
+S0a3 still requires general coefficient fields, the whole-local/inertia branch
+comparison, full recipe independence and the symmetric-power composition-factor
+comparison. Ordinary niveau-one normalization over general coefficients and the
+independent integral exclusion of the non-peu branch remain. No numerical
+Serre-weight evaluation or arbitrary-p Raynaud classification is claimed.
+R1, Lp0, arithmetic Noetherianity and G0a–G1c remain in the priority order from
+W60; this wave does not prove them. `IsHardlyRamified.lifts` and
+`PNat.pow_add_pow_ne_pow` retain their existing admissions; recheck with the
+saved `Scratch/LiftsW61/FinalAxioms.lean` command.
+
 ## W60 — extracted ordinary branches and niveau-two normalization
 
 Validation receipt check: `python3 Scratch/LiftsW60/check.py`. This reports

@@ -46,9 +46,11 @@ public import FLT.AbsoluteGaloisGroup.FundamentalCyclotomic
 public import FLT.AbsoluteGaloisGroup.FundamentalTame
 public import FLT.AbsoluteGaloisGroup.HigherNiveauCyclotomicNorm
 public import FLT.AbsoluteGaloisGroup.InertiaComparison
+public import FLT.AbsoluteGaloisGroup.InertiaCyclicQuotient
 public import FLT.AbsoluteGaloisGroup.InertiaDescentField
 public import FLT.AbsoluteGaloisGroup.InertiaDescentHenselian
 public import FLT.AbsoluteGaloisGroup.InertiaDescentUniformizer
+public import FLT.AbsoluteGaloisGroup.InertiaScalarCharacter
 public import FLT.AbsoluteGaloisGroup.LocalCompositum
 public import FLT.AbsoluteGaloisGroup.LocalCyclotomicCharacter
 public import FLT.AbsoluteGaloisGroup.LocalCyclotomicGenerator
@@ -57,7 +59,9 @@ public import FLT.AbsoluteGaloisGroup.LocalCyclotomicRamification
 public import FLT.AbsoluteGaloisGroup.LocalCyclotomicSurjectivity
 public import FLT.AbsoluteGaloisGroup.LocalCyclotomicTame
 public import FLT.AbsoluteGaloisGroup.NiveauTwoCharacterNormalization
+public import FLT.AbsoluteGaloisGroup.NiveauTwoInertiaCharacter
 public import FLT.AbsoluteGaloisGroup.NiveauTwoInertiaGenerator
+public import FLT.AbsoluteGaloisGroup.NiveauTwoInertiaNormalization
 public import FLT.AbsoluteGaloisGroup.OpenNormalFixedField
 public import FLT.AbsoluteGaloisGroup.RationalPrimeUniformizer
 public import FLT.AbsoluteGaloisGroup.RationalTameCommonLevel
@@ -67,6 +71,7 @@ public import FLT.AbsoluteGaloisGroup.RootCharacterCyclotomicNorm
 public import FLT.AbsoluteGaloisGroup.RootCharacterExponent
 public import FLT.AbsoluteGaloisGroup.RootCharacterGenerator
 public import FLT.AbsoluteGaloisGroup.RootCharacterIndependence
+public import FLT.AbsoluteGaloisGroup.RootCharacterKernel
 public import FLT.AbsoluteGaloisGroup.RootCharacterResidue
 public import FLT.AbsoluteGaloisGroup.RootCharacterTopology
 public import FLT.AbsoluteGaloisGroup.RootCharacterUniformizer
@@ -240,6 +245,8 @@ public import FLT.Deformations.RepresentationTheory.RankTwoNonzeroTraceSpectrum
 public import FLT.Deformations.RepresentationTheory.RankTwoScalarQuotient
 public import FLT.Deformations.RepresentationTheory.RankTwoSimpleFactors
 public import FLT.Deformations.RepresentationTheory.ScalarActionCharpoly
+public import FLT.Deformations.RepresentationTheory.ScalarCharacterFrobenius
+public import FLT.Deformations.RepresentationTheory.ScalarCharacterKernel
 public import FLT.Deformations.RepresentationTheory.SelfTwistTrace
 public import FLT.Deformations.RepresentationTheory.SimpleScalarDegree
 public import FLT.Deformations.RepresentationTheory.StableLinePair
@@ -627,11 +634,13 @@ public import FLT.GaloisRepresentation.HardlyRamified.TrivialPrimeFiltrationExte
 public import FLT.GaloisRepresentation.HardlyRamified.ULiftGenericRecovery
 public import FLT.GaloisRepresentation.HardlyRamified.ULiftHardlyRamified
 public import FLT.GaloisRepresentation.SerreWeight.CyclicCharacterExponent
+public import FLT.GaloisRepresentation.SerreWeight.CyclicPairKernel
 public import FLT.GaloisRepresentation.SerreWeight.NiveauTwoDigits
 public import FLT.GaloisRepresentation.SerreWeight.NormalizedCharacterExponent
 public import FLT.GaloisRepresentation.SerreWeight.NormalizedOrdinaryInput
 public import FLT.GaloisRepresentation.SerreWeight.NormalizedRecipe
 public import FLT.GaloisRepresentation.SerreWeight.OrdinaryBranch
+public import FLT.GaloisRepresentation.SerreWeight.ScalarCharacterRoots
 public import FLT.GlobalLanglandsConjectures.GLnDefs
 public import FLT.GlobalLanglandsConjectures.GLzero
 public import FLT.GroupScheme.ActualThreeAdicKummerCube
