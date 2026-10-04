@@ -2361,6 +2361,7 @@ public import FLT.Mazur.AdicCompletionQuotientEquiv
 public import FLT.Mazur.AdicCompletionScalars
 public import FLT.Mazur.AffineAnnihilator
 public import FLT.Mazur.AffineBranchSequence
+public import FLT.Mazur.AffineCartesianSectionScalars
 public import FLT.Mazur.AffineClosedModuleDescent
 public import FLT.Mazur.AffineCoherent
 public import FLT.Mazur.AffineCoherentSubmoduleExtension
@@ -2385,6 +2386,8 @@ public import FLT.Mazur.AffineImageSectionTransport
 public import FLT.Mazur.AffineIntersectionRestriction
 public import FLT.Mazur.AffineKernelLocalization
 public import FLT.Mazur.AffineModuleExact
+public import FLT.Mazur.AffineModuleGlobalSections
+public import FLT.Mazur.AffineModulePullbackSections
 public import FLT.Mazur.AffineModuleSupport
 public import FLT.Mazur.AffineNodeNormalizationExact
 public import FLT.Mazur.AffineOpenDenominators
@@ -2392,6 +2395,7 @@ public import FLT.Mazur.AffinePullbackIdeal
 public import FLT.Mazur.AffinePullbackIntersection
 public import FLT.Mazur.AffinePushforwardCohomology
 public import FLT.Mazur.AffinePushforwardQuasicoherent
+public import FLT.Mazur.AffineQuasiCoherentBaseChange
 public import FLT.Mazur.AffineRestrictionImmersion
 public import FLT.Mazur.AffineStalkExtension
 public import FLT.Mazur.AffineStalkMorphism
@@ -2679,6 +2683,7 @@ public import FLT.Mazur.ModulePullbackRestrictionPasting
 public import FLT.Mazur.ModulePullbackTrivializationCoherence
 public import FLT.Mazur.ModulePullbackUnitCoherence
 public import FLT.Mazur.ModuleSealedPullbackRatio
+public import FLT.Mazur.ModuleSectionBaseChange
 public import FLT.Mazur.ModuleSectionCocycleIso
 public import FLT.Mazur.ModuleSectionIsomorphismTransport
 public import FLT.Mazur.ModuleSectionMap
@@ -3069,6 +3074,7 @@ public import FLT.Mazur.ProperCohomologyWitnesses
 public import FLT.Mazur.ProperCurveGenus
 public import FLT.Mazur.PuncturedNodeRestrictionComparison
 public import FLT.Mazur.PushforwardCech
+public import FLT.Mazur.PushoutModuleScalars
 public import FLT.Mazur.RationalFibers
 public import FLT.Mazur.RefinedChartSpectrum
 public import FLT.Mazur.RelativeAmpleAffineBaseChange
