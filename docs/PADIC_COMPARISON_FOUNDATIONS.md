@@ -1941,3 +1941,98 @@ Recheck this checkpoint with the individual module builds, individual
 `lake exe runLinter MODULE` calls and `#print axioms` for each named
 declaration. W44's untracked handoff records the exact module counts,
 commits, checked-at timestamp and validation logs.
+
+
+### W45: localized descent and Noetherian principal ideal charts
+
+The following are implementation leaves, each capped at 150 whole-module
+lines. They refine F12–F14; they do not close the formal-smoothness gate.
+
+| Leaf | Module | Obligation |
+|---|---|---|
+| F12c | `MvPolynomial.OriginLocalizationMap` | Construct the original-coordinate local coefficient map; prove flatness and faithful-flat reflection of regularity. |
+| F12d | `MvPolynomial.LocalizedFiniteFieldDescent` | Descend numerators and denominators of a finite localized relation list to one finite field, retaining order, length and regularity. |
+| F12e | `MvPolynomial.LocalizedQuotientDescent` | Reconstruct the quotient after extending the localized source, with its explicit tensor coordinate formula and injectivity of the descended quotient map. |
+| F12f | `FaithfullyFlatPresentationDescent` | Reflect the kernel, regularity and quotient isomorphism through a specified faithfully flat coordinate square. |
+| F12g | `GroupScheme.FiniteHopfComponentFiniteFieldPresentation` | Apply finite coefficient-field descent and reconstruction to W44's actual geometric Hopf components. |
+| F12h | `LocalRing.AlgebraicTensor` | Prove that algebraic coefficient extension preserves locality for a local algebra with rational residue field. |
+| F12i | `MvPolynomial.OriginResidue` | Compute the rational local residue field, evaluation map and coefficient-compatible local map. |
+| F12j | `MvPolynomial.OriginTensorMaps` | Construct both coefficient-tensor/localization maps, proving all new denominators invertible. |
+| F12k | `MvPolynomial.OriginTensorEquiv` | Prove those maps inverse, with the original coefficient and fraction formula. |
+| F12l | `MvPolynomial.FiniteFieldPresentationDescent` | Descend the localized regular quotient to a finite field, reconstruct it by coefficient-field base change, and retain the quotient coordinate formula. |
+| F13c | `Regular.UnitMultiples` | Unit changes preserve each prefix ideal and regularity test. |
+| F13d | `Regular.ClearLocalizedRelations` | Clear a localized regular relation list using numerators in the original ideal. |
+| F13e | `Localization.PrincipalIdealComparison` | Spread equality of finite ideals from a prime, controlling the entire localized kernel; retain equality after denominator refinement. |
+| F13f | `Regular.PrincipalRefinement` | Refine principal regularity neighbourhoods while preserving the nonzero quotient at the original prime. |
+| F13g | `Regular.PrincipalIdealPresentation` | Produce one Noetherian principal neighbourhood with regular numerators and the full relation ideal. |
+| F14a | `Localization.QuotientAwayPresentation` | Identify these quotients with the actual principal localizations of the original quotient, preserving coordinates. |
+| F14b | `Regular.FinitePrincipalIdealCover` | From regular presentations at every prime over an ideal, extract a finite principal unit-ideal cover and its coordinate-compatible presentation isomorphisms. |
+
+F12e extends the localized polynomial source. F12h–l prove the stronger
+coefficient-field reconstruction: algebraic field extension commutes with
+the rational polynomial local ring, and hence with the quotient by the
+descended relation list. The quotient isomorphism retains its original
+coordinate formula. F12g applies this to the geometric Hopf components.
+
+F12f proves reflection for a specified commuting square. Constructing the
+comparison with a presentation over the original residue field, including
+any change of polynomial presentation, remains an obligation. Descent to
+a finite extension is not yet descent of the CI property to that residue
+field. No conclusion-assuming record is used.
+
+F13g and F14b concern a Noetherian ring and an ideal whose regular local
+presentations are already supplied. They prove denominator clearing,
+kernel control, principal charts and finite extraction in that setting.
+They do not spread the relative fibre condition over an arbitrary base,
+or supply those hypotheses for the actual division algebra.
+C4–C12 and the original lifting/formal-smoothness assembly remain separate.
+
+### W46: prescribed geometric coordinates and constructed coefficient squares
+
+These F12 leaves have a 150-line whole-module cap. They reduce the
+presentation-comparison obligation; the all-fibres residue-field CI application remains open.
+
+| Leaf | Module | Obligation |
+|---|---|---|
+| F12m | `MvPolynomial.GraphIdeal` | Compute the entire kernel after adding redundant polynomial coordinates: graph equations plus the extended original kernel, with an explicit finite ordered relation list. |
+| F12n | `MvPolynomial.GraphRegularSequence` | Identify the graph quotient with the coefficient ring; prove that graph equations followed by the original regular relations are regular in that order. |
+| F12o | `MvPolynomial.OriginPresentationBaseChange` | Construct coefficient base change of a specified rational local presentation, prove surjectivity and extension of its full kernel, and reflect a specified original relation list with its quotient coordinates. |
+| F12p | `GroupScheme.RationalCoordinateRegularPresentation` | Identify the rational point attached to arbitrary local coordinates, and convert a square kernel into regular localized relations and the original quotient map. |
+| F12q | `GroupScheme.LocalHopfArbitraryCoordinates` | Translate by the counit internally to construct square relations for arbitrary generating coordinates of a finite local Hopf algebra over a perfect field. |
+| F12r | `GroupScheme.LocalHopfCoordinateRegularPresentation` | Apply F12p–q to every specified generating tuple, retaining the full localized kernel and coordinate-compatible quotient isomorphism. |
+| F12s | `GroupScheme.FiniteHopfComponentCoordinatePresentation` | Apply translation to the identity Hopf component to produce square kernels and regular local presentations in arbitrary prescribed coordinates of every geometric component. |
+| F12t | `LocalRing.ResidueGenerators` | Lift a basis of the residue module to a generating family of a finite module over the original local ring. |
+| F12u | `LocalRing.GeneratorDescent` | Compare residue dimensions under local base change and descend a bound on the number of generators; the geometric generators need not descend. |
+| F12v | `FlatIdealBaseChange` | Identify the tensor of an ideal with its actual extended ideal under a flat map, preserving original elements. |
+| F12w | `LocalRing.IdealGeneratorDescent` | Apply F12u–v to construct an original n-element relation list from n generators of the extended ideal. |
+| F12x | `MvPolynomial.OriginRegularDescent` | Descend a square geometric kernel to regular original relations for an Artinian quotient at the rational origin, with the specified quotient map. |
+
+F12s strengthens the existential geometric presentation from W44: its
+input is the specified coordinate tuple and its surjective evaluation map.
+It does not replace those coordinates by minimal generators. F12m–n
+handle stabilization by redundant variables, including regularity; they do
+not prove cancellation or arbitrary change-of-presentation invariance.
+
+F12o constructs the commuting coefficient square in the rational-origin,
+algebraic-field-extension case. F12t–w supply the missing generator bound:
+flat local base change identifies the extended ideal as a module tensor;
+residue dimensions agree, and Nakayama lifts an original residue basis.
+F12x then applies the rational polynomial parameter criterion. Its input
+is an n-element generating family of the geometric kernel; neither a
+descending relation list nor geometric regularity is assumed. The output
+includes n original regular relations, the full kernel and the original
+quotient-coordinate formula.
+
+The remaining F12 application must identify the actual geometric fibre
+presentation with this constructed comparison. Non-rational residue
+points require the appropriate localization after field extension; the
+origin equivalence alone does not supply that comparison. F12s supplies
+relations for each specified geometric component, while F12x handles the
+specified rational-origin coefficient square. Their hypotheses have not
+yet been connected for all fibres of the original division algebra.
+
+F13 still requires relative presentations and a fibre-regularity
+neighbourhood over the original base, including arbitrary-base
+approximation. F14's finite relative cover, C4–C12's relative flatness and
+the formal-smoothness assembly remain unproved. None of these statements
+follows solely from the new absolute geometric presentations.
