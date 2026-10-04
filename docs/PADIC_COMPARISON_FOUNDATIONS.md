@@ -1719,3 +1719,41 @@ This split is committed before the implementation. In particular a
 conditional covering lemma must not be reported as existence of flat
 lifts, and a lifted quotient presentation must not be reported as a
 relative complete intersection.
+
+W42 implementation subdivision (all caps 150): 3a uses
+`PolynomialCoefficientKernel`, `LiftedQuotientReduction`, and
+`LiftedPresentationReduction`; 3b uses `SurjectiveReductionBaseChange` and
+`LiftedPresentationBaseChange`; 4a–b use `NilpotentCovering` and
+`LiftedChartCover`. In the last module every individual chart's flatness
+is still an input; joint covering of the product is proved. The point
+transport theorem is over the original coefficient ring R, not B, since
+original coordinate rings need not be B-algebras.
+
+For nilpotent coefficient kernels the element reducing to 1 in 00ST is
+already a unit. Thus this special case can avoid the open-locus step by
+proving invariance of fibres under the nilpotent quotient and applying
+00SW directly. **00SW remains unimplemented.** The current Mathlib has
+regular-local-ring definitions and stability under polynomials, but no
+Cohen–Macaulay or syntomic API giving this relative flatness result. For
+p-nilpotent test algebras only characteristic-p geometric fibres occur;
+a characteristic-zero branch is needed only for the more general claim.
+The first unresolved mathematical gate is still 2b.i–iii, followed by
+3c's relative-CI flatness theorem. These are substantial missing theory,
+not an external authorization issue or a missing typeclass instance.
+
+The source dependency behind 3c is not just 00SW's short statement:
+00SV proves regularity and flatness of successive relation quotients;
+its Noetherian case uses the fibrewise regular-sequence flatness criterion,
+and its arbitrary-base case uses 00SU's Noetherian approximation followed
+by filtered-colimit exactness and flatness. The present tests B,C are
+arbitrary algebras, so silently adding Noetherian hypotheses would not
+close the target. A next wave must split this dependency itself into
+proof-sized leaves before attempting 3c; W42 does not call it implemented.
+
+Checked implementation boundary: the seven W42 modules prove 3a, 3b,
+and the conditional covering/finite-product part of 4a–b. Each is below
+150 lines; individual build/lint and complete named axiom audits are in
+the untracked W42 validation artifacts. They do not supply 2b's charts,
+3c's flatness, the point on a *faithfully flat* lifted cover, the original
+overlap application, or formal smoothness. The existing family admission
+is untouched. See `FAMILY_W42_DONE.md` for the checked commit and evidence.
