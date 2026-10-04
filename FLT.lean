@@ -688,7 +688,11 @@ public import FLT.GroupScheme.CartierDualSpecialFiber
 public import FLT.GroupScheme.CartierDualSurjection
 public import FLT.GroupScheme.CartierDualTangent
 public import FLT.GroupScheme.CartierDualTorsor
+public import FLT.GroupScheme.CartierLinearCotangent
+public import FLT.GroupScheme.CartierLinearEvaluation
 public import FLT.GroupScheme.CartierPairingNaturality
+public import FLT.GroupScheme.CartierReducedDifferential
+public import FLT.GroupScheme.CartierReducedNaturality
 public import FLT.GroupScheme.CartierSquareZeroDifferential
 public import FLT.GroupScheme.CartierTestAlgebra
 public import FLT.GroupScheme.CartierTestBaseChange
@@ -896,6 +900,7 @@ public import FLT.GroupScheme.HopfTorsorDescent
 public import FLT.GroupScheme.HopfTorsorFree
 public import FLT.GroupScheme.HopfTorsorSpecialization
 public import FLT.GroupScheme.InfinitesimalConvolutionAddition
+public import FLT.GroupScheme.InfinitesimalCotangentAddition
 public import FLT.GroupScheme.InfinitesimalPointCorrection
 public import FLT.GroupScheme.InfinitesimalTangentCocycle
 public import FLT.GroupScheme.IntegralCartierConstantPoints
@@ -1080,6 +1085,7 @@ public import FLT.GroupScheme.PDivisibleRationalCartierRoots
 public import FLT.GroupScheme.PDivisibleRationalCotangent
 public import FLT.GroupScheme.PDivisibleRationalPlaceTransport
 public import FLT.GroupScheme.PDivisibleRationalTateAction
+public import FLT.GroupScheme.PDivisibleReducedCartierPairing
 public import FLT.GroupScheme.PDivisibleSquareZeroColimitLift
 public import FLT.GroupScheme.PDivisibleSquareZeroFormalSmoothness
 public import FLT.GroupScheme.PDivisibleSquareZeroLifting
@@ -1150,6 +1156,7 @@ public import FLT.GroupScheme.QuadraticTwistPoints
 public import FLT.GroupScheme.QuadraticTwistTensor
 public import FLT.GroupScheme.QuotientFiberFreeness
 public import FLT.GroupScheme.QuotientGroupBasisTransport
+public import FLT.GroupScheme.RationalCartierFirstOrder
 public import FLT.GroupScheme.RationalCoordinateRegularPresentation
 public import FLT.GroupScheme.RationalCubeValuations
 public import FLT.GroupScheme.RationalIntegralExactness
@@ -1159,7 +1166,12 @@ public import FLT.GroupScheme.RationalIntegralTransition
 public import FLT.GroupScheme.RationalPlaceIntegralCoefficients
 public import FLT.GroupScheme.RationalPlaceTateCotangentPrecision
 public import FLT.GroupScheme.RationalPlaceTateInfinitesimal
+public import FLT.GroupScheme.RationalPlaceTateInfinitesimalFinite
 public import FLT.GroupScheme.RationalPlaceTatePrecisionLift
+public import FLT.GroupScheme.RationalPlaceTateReducedCartier
+public import FLT.GroupScheme.RationalPlaceTateTangentAdditivity
+public import FLT.GroupScheme.RationalPlaceTateTangentEvaluation
+public import FLT.GroupScheme.RationalPlaceTateTangentLinearity
 public import FLT.GroupScheme.RationalPlaceTateThickeningLift
 public import FLT.GroupScheme.RationalPlaceThickening
 public import FLT.GroupScheme.RaynaudAbsoluteTameCommutativity
@@ -1422,6 +1434,7 @@ public import FLT.GroupScheme.SquareZeroConvolutionLift
 public import FLT.GroupScheme.SquareZeroLiftNaturality
 public import FLT.GroupScheme.SquareZeroPointDifference
 public import FLT.GroupScheme.SquareZeroPointLift
+public import FLT.GroupScheme.SquareZeroPointLiftMultiplication
 public import FLT.GroupScheme.SquareZeroReductionBaseChange
 public import FLT.GroupScheme.StableSubgroupExtension
 public import FLT.GroupScheme.SupportedKummerCubes
@@ -3176,6 +3189,7 @@ public import FLT.PadicHodgeTheory.ComplexThetaQuotientScalars
 public import FLT.PadicHodgeTheory.ComplexThetaQuotientSeparated
 public import FLT.PadicHodgeTheory.ComplexThetaQuotientTopology
 public import FLT.PadicHodgeTheory.ComplexThetaUnitReflection
+public import FLT.PadicHodgeTheory.ComplexThickeningRootPower
 public import FLT.PadicHodgeTheory.ComplexThickeningTransitions
 public import FLT.PadicHodgeTheory.ComplexTiltContinuity
 public import FLT.PadicHodgeTheory.ComplexTiltDivisibility

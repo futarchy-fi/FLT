@@ -2763,3 +2763,71 @@ The untracked `FAMILY_W56_DONE.md` records the local commits and validation;
 axiom coverage, edit scope and the required merged root build. No
 whole-library lint is used. The untracked `W56_COMPARISON_PLAN.md` describes
 one proposed route for the remaining character calculation; it is not a proof.
+
+
+## W57: reduced Cartier evaluation and linearity of the actual tangent
+
+The original dual Tate character now has a choice-independent differential
+on the actual infinitesimal colimit. Dual coefficients lift linearly by
+finite freeness. Their contraction with a kernel-valued tangent is
+independent of the lift because the coefficient kernel is square-zero.
+Original inclusions preserve the pairing, so every finite representative
+computes the same value. This does not assert that a dual character lifts
+as an algebra character.
+
+For the actual Tate infinitesimal, the zeroth simultaneous lift has the
+specified original level-s representative. Its reduced Cartier value is
+contraction of the original integral tangent tensor with any linear lift
+of the original dual dlog coefficients. Reduction of those coefficients
+is the original dlog tensor.
+
+The canonical square-zero multiplication lift preserves convolution.
+Consequently the constructed cotangent functional and integral tangent
+tensor are additive in the original Tate vector. At p-precision s they
+depend only on its level-s coordinate; residue scalar comparison proves
+p-adic linearity over the specified original integral base. P1e's linearity
+obligation is proved. Identifying this map with the period comparison is
+still part of the open P1d.3 comparison.
+
+Independently, the first-order Teichmuller difference of the original
+Cartier roots is now expressed as a^(p^s)-1 for *any* lift a of the original
+level-s Cartier value. The reduced finite character is proved to be that
+same original Cartier root. These results identify both sides of the
+remaining equation; they do not prove equality between the sides.
+
+| Capped leaf | Module | Proved output |
+|---|---|---|
+| P1d.3e | `CartierLinearEvaluation` | Basis-free linear coefficient pairing and independence on square-zero tangents. |
+| P1d.3f | `CartierLinearCotangent` | Lifted cotangent tensor, contraction and reduction to original dlog. |
+| P1d.3g | `CartierReducedDifferential` | Existence of linear coefficient lifts and choice-independent differential. |
+| P1d.3h | `CartierReducedNaturality` | Original morphism naturality and arbitrary-lift cotangent contraction. |
+| P1d.3i | `PDivisibleReducedCartierPairing` | Actual dual Tate differential on the infinitesimal colimit, independent of representative. |
+| P1d.3j | `RationalPlaceTateInfinitesimalFinite` | Specified original level-s representative and its cotangent functional. |
+| P1d.3k | `RationalPlaceTateReducedCartier` | Reduced original Cartier differential on the constructed Tate point. |
+| P1d.3l | `RationalPlaceTateTangentEvaluation` | Its contraction against the actual original tangent tensor. |
+| P1d.3m | `ComplexThickeningRootPower` | Any lift of a finite root computes the unshifted Teichmuller value. |
+| P1d.3n | `RationalCartierFirstOrder` | Original finite character/root identification and first-order Teichmuller difference. |
+| P1e.1 | `SquareZeroPointLiftMultiplication` | Canonical lifts preserve convolution and augmentation. |
+| P1e.2 | `InfinitesimalCotangentAddition` | Cotangent extraction takes convolution to addition. |
+| P1e.3 | `RationalPlaceTateTangentAdditivity` | Actual Tate cotangent functional and tangent tensor are additive. |
+| P1e.4 | `RationalPlaceTateTangentLinearity` | Actual Tate tangent maps are p-adic linear and factor through finite coordinates. |
+
+### Remaining comparison boundary after W57
+
+At precision s, prove
+`rationalPlaceTateReducedCartier X s y x = rationalCartierFirstOrder X s y x`.
+Equivalently, evaluate the canonical p^s convolution lift of the original
+level-s Tate coordinate against linearly lifted dual coefficients and
+identify its augmentation difference with a^(p^s)-1. The existing
+multiplicative character theorem applies to an algebra-valued character;
+linear coefficient lifts do not satisfy that hypothesis. No such algebra
+lift or coefficient section has been assumed.
+
+Then pass through coefficient completion, identify the logarithmic period,
+and prove P2–P6: comparison integrality, original Galois equivariance,
+injectivity, surjectivity and filtration strictness. The family admission
+and `PNat.pow_add_pow_ne_pow` remain outside these proved leaves.
+
+The untracked `FAMILY_W57_DONE.md` records commits and validation;
+`W57_FINAL_CHECKS.py` rechecks source hashes, individual build/lint logs,
+axiom coverage, line caps, edit scope and the required post-merge root build.
