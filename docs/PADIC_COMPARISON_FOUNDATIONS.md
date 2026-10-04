@@ -2073,3 +2073,33 @@ F13 still requires spreading these presentations over the original arbitrary
 base. A finite chart cover of an individual residue fibre does not imply
 F14's relative chart cover. C4–C12 and the formal-smoothness assembly remain
 unproved; the family admission has not been replaced.
+
+
+W47 further leaves (cap 150 each):
+
+| Leaf | Module | Result |
+|---|---|---|
+| F14c | `Regular.FinitePresentationCover` | Extract finite principal charts of a specified algebra presentation, retaining the number of equations and the original coordinate map to each actual localization. |
+| F12aj | `GroupScheme.DivisionResidueFiniteCharts` | Apply finite extraction to the actual residue division fibre; the chart denominators generate the unit ideal in that fibre. |
+| F12ak | `GroupScheme.DivisionPullbackFibreLocalCI` | Apply F12ai to every field-valued fibre of the actual division pullback over an arbitrary p-nilpotent test algebra. Derive the characteristic from nilpotence and construct the tensor cancellation. |
+| F13h | `Flat.PresentationKernelIntersection` | Use the flat target's equational criterion to prove that the original kernel intersects any extended base ideal in their product. No Noetherian or principal-ideal assumption. |
+| F13i | `Flat.FibreRelationLifting` | Nakayama lifts generators through any extended base ideal contained in the presentation source's Jacobson radical, using the proved intersection formula. |
+| F13j | `Flat.ReducedPresentation` | Construct the actual reduced algebra map, compute its entire kernel, and lift reduced generators to a coordinate-compatible presentation of the original flat target. |
+
+The exact F12 application theorem is
+`ThreeAdicPlan.PDivisibleSystem.exists_division_pullback_fibre_regular_relations`.
+Its inputs are the actual system, a point into a p-nilpotent test algebra,
+a field-valued specialization, and any surjective polynomial presentation of
+that fibre. It proves regularity and generation at every prime of that
+original presentation. It assumes neither a geometric comparison nor an
+original regular list. Taking the field to be a residue field includes
+non-rational points of the original base.
+
+F13j lifts generators modulo a base ideal, under an explicit finite-kernel
+hypothesis. Applying it to F12ak still requires the localized residue-fibre
+comparison over the original base, finite generation for that localized
+presentation, clearing denominators, and simultaneous fibre regularity on
+the resulting neighbourhood. F13j does not assert those conclusions or
+flatness of a newly lifted chart. F14c/F12aj cover a single residue fibre;
+F14's relative cover is still missing. C4–C12's adic criterion, approximation,
+relative flatness and the later formal-smoothness assembly remain open.

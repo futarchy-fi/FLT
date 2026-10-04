@@ -618,7 +618,9 @@ public import FLT.GroupScheme.DiagonalizableFiniteFlat
 public import FLT.GroupScheme.DiagonalizablePointPurity
 public import FLT.GroupScheme.DirectLimitFiniteRelation
 public import FLT.GroupScheme.DivisionGeometricFibre
+public import FLT.GroupScheme.DivisionPullbackFibreLocalCI
 public import FLT.GroupScheme.DivisionResidueFibreComparison
+public import FLT.GroupScheme.DivisionResidueFiniteCharts
 public import FLT.GroupScheme.DivisionResidueLocalCI
 public import FLT.GroupScheme.DivisionResidueRegularPresentation
 public import FLT.GroupScheme.EtaleBaseChangeTower
@@ -1770,6 +1772,9 @@ public import FLT.Mathlib.RingTheory.DiscreteValuationRing.UnramifiedSubalgebra
 public import FLT.Mathlib.RingTheory.Discriminant
 public import FLT.Mathlib.RingTheory.FaithfullyFlatPresentationDescent
 public import FLT.Mathlib.RingTheory.FiniteTorsionModule
+public import FLT.Mathlib.RingTheory.Flat.FibreRelationLifting
+public import FLT.Mathlib.RingTheory.Flat.PresentationKernelIntersection
+public import FLT.Mathlib.RingTheory.Flat.ReducedPresentation
 public import FLT.Mathlib.RingTheory.FlatIdealBaseChange
 public import FLT.Mathlib.RingTheory.FrobeniusAugmentation
 public import FLT.Mathlib.RingTheory.FrobeniusImage
@@ -1831,6 +1836,7 @@ public import FLT.Mathlib.RingTheory.Regular.AssociatedPrimeQuotient
 public import FLT.Mathlib.RingTheory.Regular.ClearLocalizedRelations
 public import FLT.Mathlib.RingTheory.Regular.FaithfullyFlatDescent
 public import FLT.Mathlib.RingTheory.Regular.FiniteLocalizationInjectivity
+public import FLT.Mathlib.RingTheory.Regular.FinitePresentationCover
 public import FLT.Mathlib.RingTheory.Regular.FinitePrincipalIdealCover
 public import FLT.Mathlib.RingTheory.Regular.LengthBound
 public import FLT.Mathlib.RingTheory.Regular.LocalizationInjectivity
