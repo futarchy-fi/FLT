@@ -4,6 +4,36 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
+## W65 — finite coefficient parameters and the Hermite counting step
+
+Evidence check: `python3 Scratch/LiftsW65/check.py` verifies saved source/log
+hashes and prints the checked-at time. Rebuild and lint each module separately
+with `python3 Scratch/LiftsW65/validate.py`. These scripts and the detailed
+`LIFTS_W65_RESULT.md` handoff remain untracked outside the source tree.
+
+| Item | New module | Proved scope |
+|---|---|---|
+| Exact kernel field | `AbsoluteGaloisGroup.FiniteImageField` | Finite Galois field of the actual continuous kernel; faithful finite representation, inflation identity, degree equal to image size. |
+| Hermite counting | `AbsoluteGaloisGroup.HermiteFiniteRepresentations` | Only finitely many continuous maps into a fixed finite group have bounded kernel-field discriminant, including all frames and nonsurjective maps. |
+| Trace extensionality | `DeSmitLenstra.TraceMorphismExt` | Maps out of the universal trace ring are determined by traces, using density. |
+| Image parameters | `HardlyRamifiedTraceParameters` | The recovery frame identifies descended traces with projected universal traces; coefficient specialization is injective and kills the specified inertia. |
+| Finite image tests | `HardlyRamifiedFiniteParameters` | Actual image-parameter fields have bounded degree and are fixed by inertia away from 2p; bounded discriminants give finite coefficient parameters. |
+| Finite framed tests | `HardlyRamifiedFramedParameters` | Corresponding injectivity, degree, inertia and conditional finiteness for the actual framed HR quotient. |
+| Frame comparison | `HardlyRamifiedParameterComparison` | A framed parameter and its restriction to the trace image cut out the same embedded field and have the same discriminant. |
+
+**Arithmetic Noetherianity remains open.** The conditional finiteness theorems
+expose a uniform discriminant bound as a hypothesis, not a field in a record.
+Degree bounds and trivial action of the specified inertia are proved; the
+ramification/different bridge producing the discriminant bound is not.
+A finite tangent-space identification and complete-local presentation are also
+still required. Nothing here proves that every image-ring parameter extends
+to the framed ring; the comparison only applies to actual restrictions.
+
+No finite p-adic coefficient order, KW II selected-local-ring comparison,
+integral finite-flat descent, or characteristic-zero point is obtained.
+D3/D4/I0, S0a3, Lp0 and G0a–G1c retain their prior proof obligations.
+The endpoint axiom audit remains the check for elimination of `sorryAx`.
+
 ## W64 — the actual trace image in the finite-flat HR quotient
 
 Evidence check: `python3 Scratch/LiftsW64/check.py` prints the checked-at time

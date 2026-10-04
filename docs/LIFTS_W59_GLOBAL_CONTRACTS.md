@@ -44,6 +44,26 @@ parameter. `ProfiniteUniversalLift` constructs a limit over finite quotients;
 Noetherianity does not follow by taking this limit. Arithmetic control of the
 finite-ramification deformation tangent space is still needed.
 
+W65 proves the finite counting part of the arithmetic tangent strategy.
+`finite_representations_discr_bdd` applies Hermite to the **actual kernel
+fields**, then counts the finite possible coefficient functions on each
+finite Galois group. `HardlyRamifiedFramedParameters` and
+`HardlyRamifiedFiniteParameters` inject parameter maps into these continuous
+representations and prove uniform degree bounds and pointwise inertia
+triviality. Both give finiteness conditional on a uniform discriminant bound.
+`HardlyRamifiedParameterComparison` uses the specialized recovery frame to
+identify kernel fields for a framed map and its trace restriction. It does
+not show all trace-image maps extend to the framed quotient.
+
+The next arithmetic input is a uniform different/discriminant bound for the
+finite fields of these fixed-target representations, derived from their
+specified inertia conditions and bounded degree. Triviality of the selected
+absolute inertia elements must first be compared with unramifiedness of the
+finite field at every prime outside {2,p}. `NumberField.finite_of_discr_bdd`
+now supplies the counting step, but neither the discriminant bound nor the
+finite tangent/presentation theorem. Check saved W65 evidence with
+`python3 Scratch/LiftsW65/check.py`.
+
 ## Required arithmetic objects
 
 Start with the original finite residual field k, odd prime p, and rank-two
