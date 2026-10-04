@@ -754,6 +754,10 @@ public import FLT.GroupScheme.KummerRootClass
 public import FLT.GroupScheme.KummerTwist
 public import FLT.GroupScheme.KummerUnitClass
 public import FLT.GroupScheme.KummerUnitTransport
+public import FLT.GroupScheme.LiftedChartCover
+public import FLT.GroupScheme.LiftedPresentationBaseChange
+public import FLT.GroupScheme.LiftedPresentationReduction
+public import FLT.GroupScheme.LiftedQuotientReduction
 public import FLT.GroupScheme.LinearKummerClass
 public import FLT.GroupScheme.LocalBialgebraDerivations
 public import FLT.GroupScheme.LocalCoefficientConjugacy
@@ -782,6 +786,7 @@ public import FLT.GroupScheme.ModelPoints
 public import FLT.GroupScheme.MonicCoverLifting
 public import FLT.GroupScheme.MuThreeCubicCoordinates
 public import FLT.GroupScheme.MultiplicativeFiltrationPurity
+public import FLT.GroupScheme.NilpotentCovering
 public import FLT.GroupScheme.OrderThreeModelIdentification
 public import FLT.GroupScheme.OrdinaryFiltrationModels
 public import FLT.GroupScheme.PDivisibleColimitLifting
@@ -842,6 +847,7 @@ public import FLT.GroupScheme.PointDifferentConductor
 public import FLT.GroupScheme.PointDifferentials
 public import FLT.GroupScheme.PointFieldEvaluation
 public import FLT.GroupScheme.PointImageConductor
+public import FLT.GroupScheme.PolynomialCoefficientKernel
 public import FLT.GroupScheme.PrimeCyclotomicCoefficients
 public import FLT.GroupScheme.PrimeRootCoordinates
 public import FLT.GroupScheme.PrimeUnitSubspace
@@ -1114,6 +1120,7 @@ public import FLT.GroupScheme.SquareZeroReductionBaseChange
 public import FLT.GroupScheme.StableSubgroupExtension
 public import FLT.GroupScheme.SupportedKummerCubes
 public import FLT.GroupScheme.SupportedKummerValuations
+public import FLT.GroupScheme.SurjectiveReductionBaseChange
 public import FLT.GroupScheme.TateProjectionSurjective
 public import FLT.GroupScheme.ThreeAdicCubes
 public import FLT.GroupScheme.ThreeAdicLocalPresentation
