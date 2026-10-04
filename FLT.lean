@@ -635,6 +635,7 @@ public import FLT.GroupScheme.AugmentedPolynomialLocalParameters
 public import FLT.GroupScheme.BialgebraBaseChange
 public import FLT.GroupScheme.CanonicalCompositionSeries
 public import FLT.GroupScheme.CanonicalFactorFiltration
+public import FLT.GroupScheme.CartierCotangentTensor
 public import FLT.GroupScheme.CartierDualAlgebra
 public import FLT.GroupScheme.CartierDualAugmentation
 public import FLT.GroupScheme.CartierDualBaseChange
@@ -642,6 +643,7 @@ public import FLT.GroupScheme.CartierDualBaseChangeHopf
 public import FLT.GroupScheme.CartierDualCharacterGroup
 public import FLT.GroupScheme.CartierDualCoalgebra
 public import FLT.GroupScheme.CartierDualConvolution
+public import FLT.GroupScheme.CartierDualElementNaturality
 public import FLT.GroupScheme.CartierDualEtale
 public import FLT.GroupScheme.CartierDualFaithfullyFlat
 public import FLT.GroupScheme.CartierDualGeometric
@@ -657,6 +659,11 @@ public import FLT.GroupScheme.CartierDualSurjection
 public import FLT.GroupScheme.CartierDualTangent
 public import FLT.GroupScheme.CartierDualTorsor
 public import FLT.GroupScheme.CartierPairingNaturality
+public import FLT.GroupScheme.CartierSquareZeroDifferential
+public import FLT.GroupScheme.CartierTestAlgebra
+public import FLT.GroupScheme.CartierTestBaseChange
+public import FLT.GroupScheme.CartierTestCoefficients
+public import FLT.GroupScheme.CartierTestNaturality
 public import FLT.GroupScheme.CategoryDExactSubquotients
 public import FLT.GroupScheme.CoactionBasisMultiplication
 public import FLT.GroupScheme.CoactionBasisProjectors
@@ -725,6 +732,7 @@ public import FLT.GroupScheme.FiniteAlgebraPointComponent
 public import FLT.GroupScheme.FiniteAlgebraPrincipalComponents
 public import FLT.GroupScheme.FiniteDiagonalPoints
 public import FLT.GroupScheme.FiniteFlat
+public import FLT.GroupScheme.FiniteFlatCartierDifferential
 public import FLT.GroupScheme.FiniteFlatCartierTangent
 public import FLT.GroupScheme.FiniteFlatClosureChange
 public import FLT.GroupScheme.FiniteFlatCotangent
@@ -968,6 +976,9 @@ public import FLT.GroupScheme.OrdinaryLocalScalars
 public import FLT.GroupScheme.OrdinaryLocalUnitParameter
 public import FLT.GroupScheme.OrdinaryModelFiberPoints
 public import FLT.GroupScheme.OrdinaryNormalizedDifference
+public import FLT.GroupScheme.PDivisibleCartierDifferential
+public import FLT.GroupScheme.PDivisibleCartierDlogLimit
+public import FLT.GroupScheme.PDivisibleCartierDlogPairing
 public import FLT.GroupScheme.PDivisibleCartierSystem
 public import FLT.GroupScheme.PDivisibleCartierTateGalois
 public import FLT.GroupScheme.PDivisibleCartierTatePairing
@@ -1009,6 +1020,9 @@ public import FLT.GroupScheme.PDivisibleOverlapCorrection
 public import FLT.GroupScheme.PDivisiblePointColimit
 public import FLT.GroupScheme.PDivisiblePointEquiv
 public import FLT.GroupScheme.PDivisibleRationalCartier
+public import FLT.GroupScheme.PDivisibleRationalCartierPeriodGalois
+public import FLT.GroupScheme.PDivisibleRationalCartierPeriods
+public import FLT.GroupScheme.PDivisibleRationalCartierRoots
 public import FLT.GroupScheme.PDivisibleRationalCotangent
 public import FLT.GroupScheme.PDivisibleRationalPlaceTransport
 public import FLT.GroupScheme.PDivisibleRationalTateAction
@@ -1175,6 +1189,7 @@ public import FLT.GroupScheme.RaynaudFundamentalScalingUnits
 public import FLT.GroupScheme.RaynaudGeneralLayerDescent
 public import FLT.GroupScheme.RaynaudGenericHopfMap
 public import FLT.GroupScheme.RaynaudGenericSplitExtension
+public import FLT.GroupScheme.RaynaudGeometricIntegralPoints
 public import FLT.GroupScheme.RaynaudHenselianCharacters
 public import FLT.GroupScheme.RaynaudHenselianFactor
 public import FLT.GroupScheme.RaynaudHenselianScalarRigidity
@@ -1190,6 +1205,7 @@ public import FLT.GroupScheme.RaynaudInertiaCompatibleExtension
 public import FLT.GroupScheme.RaynaudInertiaFactorDescent
 public import FLT.GroupScheme.RaynaudInertiaScalarFiltration
 public import FLT.GroupScheme.RaynaudInertiaSimpleScalars
+public import FLT.GroupScheme.RaynaudIntegralCartier
 public import FLT.GroupScheme.RaynaudIntegralCharacterRank
 public import FLT.GroupScheme.RaynaudIntegralClosureBound
 public import FLT.GroupScheme.RaynaudIntegralCoordinateCharacter
@@ -3059,6 +3075,7 @@ public import FLT.PadicHodgeTheory.ComplexPadicScalars
 public import FLT.PadicHodgeTheory.ComplexRelativeAxDescent
 public import FLT.PadicHodgeTheory.ComplexScalarClosed
 public import FLT.PadicHodgeTheory.ComplexSharpEquivariance
+public import FLT.PadicHodgeTheory.ComplexSharpOneLog
 public import FLT.PadicHodgeTheory.ComplexSharpSurjective
 public import FLT.PadicHodgeTheory.ComplexThetaEquivariance
 public import FLT.PadicHodgeTheory.ComplexThetaGenerator
