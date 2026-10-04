@@ -1061,6 +1061,7 @@ public import FLT.Mazur.FiniteAffineCoverFiniteness
 public import FLT.Mazur.FiniteCechCyclesScalars
 public import FLT.Mazur.FiniteCechTermScalars
 public import FLT.Mazur.FlasqueDirectImageAcyclic
+public import FLT.Mazur.FormalImmersionLocal
 public import FLT.Mazur.GenericFibers
 public import FLT.Mazur.GenericIdealInjection
 public import FLT.Mazur.GenericIdealSupport
