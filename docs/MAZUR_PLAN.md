@@ -90,6 +90,51 @@ the Néron additive-reduction component bound. Neither new local module is
 yet in the FLT proof's dependency chain. All global arithmetic assumptions
 are unchanged.
 
+### Geometric integration audit — 2026-10-04
+
+Rechecked the tree at `98a340ab` before attempting to instantiate the
+first-coefficient theorem. This audit adds no arithmetic theorem.
+
+* `FLT/Mazur/Contracts.lean`: `IntegralData` takes the scheme, two
+  sections and the moduli assignment as fields; `QuotientData` takes
+  the target and projection as fields. Neither is a construction of X0(p),
+  its Jacobian, or an Eisenstein quotient.
+* `FLT/Mazur/CuspCollision.lean` is a conditional consumer of those
+  data and specialization hypotheses. It belongs to the historical
+  two-cusp route; it does not instantiate the 1978 modular map.
+* `FLT/Mazur/ProperCoherentCohomology.lean` supplies finite actual
+  coherent cohomology for proper schemes. This is usable foundation, but
+  finite H1 is not a represented Picard functor or a Jacobian scheme.
+* The elliptic-curve source tree supplies Weierstrass equations, point
+  groups, function fields and torsion algebra. Searches there and in the
+  Mathlib elliptic-curve tree did not locate the projective Weierstrass
+  group scheme over arbitrary bases needed for the modular moduli problem.
+
+**First missing geometric construction:** a represented integral modular
+curve with its cusp chart and the moduli interpretation used by the
+rational p-isogeny. The parallel Jacobian branch needs representability of
+the relative Picard functor, followed by the degree-zero Jacobian and
+Abel–Jacobi map. The existing proper-cohomology results are a starting
+point for that branch, not a substitute for it.
+
+Consequently there is currently no actual cotangent space of the required
+Eisenstein quotient to use as V in `coeff_one_surjective_of_hecke_action`,
+nor a modular differential map to identify with its coefficient functional.
+Adding a structure that assumes these objects would not cross this boundary.
+
+The external [MazurTheorem README](https://raw.githubusercontent.com/Vilin97/MazurTheorem/main/README.md),
+checked on the same date, likewise lists represented Jacobians and
+represented X0(N) as unfinished foundation packages. No finished external
+constructor was identified for direct integration. Its reported progress
+is not a verification of its source or of compatibility with this Lean pin.
+
+**Execution consequence:** stop adding standalone coefficient or local-ring
+criteria. Further implementation must construct the actual moduli/Picard
+objects (with the necessary group-scheme and descent foundations), or port
+a verified construction when one becomes available. The global gap is not
+an omitted invocation of either newly proved local lemma.
+All FLT arithmetic assumptions remain unchanged.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
