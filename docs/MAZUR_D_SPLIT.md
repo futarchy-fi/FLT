@@ -13,6 +13,8 @@ Subdivision recorded before implementation; each new module has cap 240 lines.
 | A1-F2b.iv.1 | EllipticFormalNegation | Integral normalized negation, its chart equation and involution. |
 | A1-F2b.iv.2 | EllipticFormalSymmetry | Symmetry of the slope, intercept and third intersection. |
 | A1-F2b.iv.3 | EllipticFormalAddition | Negation of the third intersection, identity and symmetry. |
+| A1-F2b.iv.4 | EllipticFormalSubstitution | Substitution compatibility and representation by the two-variable series. |
+| A1-F2b.iv.5 | EllipticFormalLinearTerms | Axis identities, symmetry and the two linear coefficients of the series. |
 | A1-F2b.v | EllipticFormalGroupLaw | Associativity and the actual FormalGroup construction, with linear coefficients. |
 
 F2c/F2d/F3 and later arithmetic leaves retain their previous order. The first
