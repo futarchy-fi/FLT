@@ -2094,9 +2094,11 @@ public import FLT.Mazur.ModulePresheafLinearHom
 public import FLT.Mazur.ModulePresheafPullbackSections
 public import FLT.Mazur.ModulePresheafTensorHom
 public import FLT.Mazur.ModulePresheafTensorPullback
+public import FLT.Mazur.ModulePullbackMapEquality
 public import FLT.Mazur.ModulePullbackRestrictionPasting
 public import FLT.Mazur.ModulePullbackTrivializationCoherence
 public import FLT.Mazur.ModulePullbackUnitCoherence
+public import FLT.Mazur.ModuleSealedPullbackRatio
 public import FLT.Mazur.ModuleSectionCocycleIso
 public import FLT.Mazur.ModuleSectionIsomorphismTransport
 public import FLT.Mazur.ModuleSectionMap
@@ -2217,8 +2219,12 @@ public import FLT.Mazur.PolygonAtlasCocone
 public import FLT.Mazur.PolygonAtlasSmoothLocus
 public import FLT.Mazur.PolygonBoundaryDivisor
 public import FLT.Mazur.PolygonBranchDifferenceSheaf
+public import FLT.Mazur.PolygonCanonicalBranchGenerators
 public import FLT.Mazur.PolygonCanonicalChartPullback
 public import FLT.Mazur.PolygonCanonicalChartRing
+public import FLT.Mazur.PolygonCanonicalComponent
+public import FLT.Mazur.PolygonCanonicalComponentImages
+public import FLT.Mazur.PolygonCanonicalComponentRatios
 public import FLT.Mazur.PolygonCanonicalSection
 public import FLT.Mazur.PolygonChartScaling
 public import FLT.Mazur.PolygonClassifiedFamily
@@ -2378,7 +2384,9 @@ public import FLT.Mazur.ProjectiveLineMarkedSectionTransition
 public import FLT.Mazur.ProjectiveLineMarkedTransition
 public import FLT.Mazur.ProjectiveLineProductCharts
 public import FLT.Mazur.ProjectiveLineProductOverlap
+public import FLT.Mazur.ProjectiveLineRightCanonicalRatios
 public import FLT.Mazur.ProjectiveLineScaling
+public import FLT.Mazur.ProjectiveLineSealedCanonicalRatios
 public import FLT.Mazur.ProjectiveLineStandardCharts
 public import FLT.Mazur.ProjectiveLineStandardComparison
 public import FLT.Mazur.ProjectiveLineStandardOverlap
