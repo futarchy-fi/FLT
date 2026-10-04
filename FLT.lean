@@ -614,6 +614,8 @@ public import FLT.GroupScheme.CyclicPowerElimination
 public import FLT.GroupScheme.CyclotomicModelIdentification
 public import FLT.GroupScheme.DiagonalizableFiniteFlat
 public import FLT.GroupScheme.DiagonalizablePointPurity
+public import FLT.GroupScheme.DirectLimitFiniteRelation
+public import FLT.GroupScheme.DivisionGeometricFibre
 public import FLT.GroupScheme.EtaleBaseChangeTower
 public import FLT.GroupScheme.EtaleGenericMorphismExtension
 public import FLT.GroupScheme.EtaleGroupAlgebra
@@ -657,6 +659,7 @@ public import FLT.GroupScheme.FlatAugmentationTangent
 public import FLT.GroupScheme.FlatCotangentHomNaturality
 public import FLT.GroupScheme.FlatCoverReductionKernel
 public import FLT.GroupScheme.FlatCoverSquareZero
+public import FLT.GroupScheme.FlatModuleDirectLimit
 public import FLT.GroupScheme.FlatReductionKernel
 public import FLT.GroupScheme.FlatTensorHomKernel
 public import FLT.GroupScheme.FontaineConvolutionApproximation
@@ -695,6 +698,7 @@ public import FLT.GroupScheme.GenericFiberPrimitiveDenominator
 public import FLT.GroupScheme.GenericFiberScaledMultiplication
 public import FLT.GroupScheme.GenericFieldChange
 public import FLT.GroupScheme.GenericMorphismScalarExtension
+public import FLT.GroupScheme.GeometricFibrePoint
 public import FLT.GroupScheme.GlobalModel
 public import FLT.GroupScheme.GlobalModelAwayTwo
 public import FLT.GroupScheme.GlobalModelOverInt
@@ -705,6 +709,7 @@ public import FLT.GroupScheme.HenselianIdempotents
 public import FLT.GroupScheme.HopfDifferentials
 public import FLT.GroupScheme.HopfFrobenius
 public import FLT.GroupScheme.HopfPointCongruence
+public import FLT.GroupScheme.HopfPointedFibre
 public import FLT.GroupScheme.HopfPoints
 public import FLT.GroupScheme.HopfPointsClosureChange
 public import FLT.GroupScheme.HopfShear
@@ -756,6 +761,7 @@ public import FLT.GroupScheme.KummerUnitClass
 public import FLT.GroupScheme.KummerUnitTransport
 public import FLT.GroupScheme.LiftedChartCover
 public import FLT.GroupScheme.LiftedPresentationBaseChange
+public import FLT.GroupScheme.LiftedPresentationGeometricFibre
 public import FLT.GroupScheme.LiftedPresentationReduction
 public import FLT.GroupScheme.LiftedQuotientReduction
 public import FLT.GroupScheme.LinearKummerClass
@@ -787,6 +793,7 @@ public import FLT.GroupScheme.MonicCoverLifting
 public import FLT.GroupScheme.MuThreeCubicCoordinates
 public import FLT.GroupScheme.MultiplicativeFiltrationPurity
 public import FLT.GroupScheme.NilpotentCovering
+public import FLT.GroupScheme.NilpotentGeometricCharacteristic
 public import FLT.GroupScheme.OrderThreeModelIdentification
 public import FLT.GroupScheme.OrdinaryFiltrationModels
 public import FLT.GroupScheme.PDivisibleColimitLifting
@@ -806,6 +813,7 @@ public import FLT.GroupScheme.PDivisibleInfinitesimalCorrection
 public import FLT.GroupScheme.PDivisibleInfinitesimalFlatCover
 public import FLT.GroupScheme.PDivisibleInfinitesimalStages
 public import FLT.GroupScheme.PDivisibleIntegralTangent
+public import FLT.GroupScheme.PDivisibleKernelFibre
 public import FLT.GroupScheme.PDivisiblePointColimit
 public import FLT.GroupScheme.PDivisibleRationalCotangent
 public import FLT.GroupScheme.PDivisibleRationalPlaceTransport
@@ -1091,6 +1099,7 @@ public import FLT.GroupScheme.RaynaudUnramifiedOrder
 public import FLT.GroupScheme.RaynaudUnramifiedQuotient
 public import FLT.GroupScheme.RaynaudUnramifiedStage
 public import FLT.GroupScheme.RaynaudValuationDigits
+public import FLT.GroupScheme.ReductionGeometricFibre
 public import FLT.GroupScheme.RelativeCotangentNaturality
 public import FLT.GroupScheme.RelativeFlatCotangent
 public import FLT.GroupScheme.RelativeFlatHomKernel
