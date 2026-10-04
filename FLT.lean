@@ -696,9 +696,13 @@ public import FLT.GroupScheme.CartierDualTangent
 public import FLT.GroupScheme.CartierDualTorsor
 public import FLT.GroupScheme.CartierLinearCotangent
 public import FLT.GroupScheme.CartierLinearEvaluation
+public import FLT.GroupScheme.CartierLinearEvaluationBase
+public import FLT.GroupScheme.CartierLinearLiftCounterexample
+public import FLT.GroupScheme.CartierLinearLiftCounterexampleData
 public import FLT.GroupScheme.CartierPairingNaturality
 public import FLT.GroupScheme.CartierReducedDifferential
 public import FLT.GroupScheme.CartierReducedNaturality
+public import FLT.GroupScheme.CartierReducedUnramified
 public import FLT.GroupScheme.CartierSquareZeroDifferential
 public import FLT.GroupScheme.CartierTestAlgebra
 public import FLT.GroupScheme.CartierTestBaseChange
@@ -1175,6 +1179,7 @@ public import FLT.GroupScheme.RationalPlaceTateInfinitesimal
 public import FLT.GroupScheme.RationalPlaceTateInfinitesimalFinite
 public import FLT.GroupScheme.RationalPlaceTatePrecisionLift
 public import FLT.GroupScheme.RationalPlaceTateReducedCartier
+public import FLT.GroupScheme.RationalPlaceTateReducedUnramified
 public import FLT.GroupScheme.RationalPlaceTateTangentAdditivity
 public import FLT.GroupScheme.RationalPlaceTateTangentEvaluation
 public import FLT.GroupScheme.RationalPlaceTateTangentLinearity
@@ -1435,6 +1440,7 @@ public import FLT.GroupScheme.SplitKummerModel
 public import FLT.GroupScheme.SplitKummerPointLaw
 public import FLT.GroupScheme.SplitKummerResidue
 public import FLT.GroupScheme.SquareZeroAugmentationPoints
+public import FLT.GroupScheme.SquareZeroCharacteristicTwoRoot
 public import FLT.GroupScheme.SquareZeroConvolution
 public import FLT.GroupScheme.SquareZeroConvolutionLift
 public import FLT.GroupScheme.SquareZeroLiftNaturality
