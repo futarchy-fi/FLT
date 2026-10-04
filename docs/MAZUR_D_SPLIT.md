@@ -44,7 +44,8 @@ MAZUR_GOAL_LEDGER source table; [M] is Mazur (1977).
 | G1-D2a | GenericSectionUniqueness | 160 | Restriction injectivity from a reduced base along a dominant map to a separated target; apply to canonical generic points. |
 | G1-D2b | ProperStalkExtension | 240 | Spread the valuative lift at a point of an integral base with valuation stalk to an open neighborhood; preserve the generic point and base equation. |
 | G1-D2c | ProperSectionGluing | 240 | Glue those neighborhoods by generic uniqueness; unique global section. |
-| G1-D2d | IntegralPointExtension | 240 | Prove valuation-stalk/fraction-field hypotheses for Z[1/(2p)], identify the canonical generic map, conclude G1Extension. |
+| G1-D2d.i | DedekindPointExtension | 160 | Prove valuation stalks for Dedekind spectra; transport the extension to any specified fraction field. |
+| G1-D2d.ii | IntegralPointExtension | 160 | Prove valuation-stalk/fraction-field hypotheses for Z[1/(2p)], identify the canonical generic map, conclude G1Extension. |
 | A1-F1 | EllipticReductionKernel | 240 | Construct local minimal-model reduction and its kernel from actual rational points; requires the local model and group-law comparison. |
 | A1-F2 | EllipticFormalParameter | 240 | Construct the formal parameter and multiplication series for that kernel, with integral coefficients. Depends F1. |
 | A1-F3 | EllipticFormalTorsionBound | 240 | Prove valuation bounds for multiplication, including the small-prime exceptions. Depends F2; [M] III §5 Step 1. |
@@ -72,3 +73,37 @@ Each implemented module: foreground `LEAN_NUM_THREADS=2 lake build MODULE`,
 then `lake exe runLinter MODULE` alone, then `#print axioms` for every new
 theorem (allowed: propext, Classical.choice, Quot.sound only). Before handoff:
 merge origin/main, build `FLT` once, check caps and declaration clashes.
+
+## Implementation boundary (2026-10-04)
+
+G1-D1 and G1-D2 are implemented by the six modules above.
+`g1Extension_of_isProper` proves the actual contract for `p ≠ 0` and proper
+`D.X.hom`. No canonical-map hypothesis is assumed: `IntegralBase.generic_unique`
+proves every map from Spec Q to this base equals the canonical map. The modular
+curve itself and its properness remain G1-C work.
+
+The next leaf A1-F1 is not supplied by existing reduction APIs:
+`WeierstrassCurve.reducePoint` in `EllipticCurve/PointReduction.lean:30` requires
+`(W.map (residue A)).IsElliptic`; `reducePointHom` additionally uses an
+algebraically closed generic field. Additive and multiplicative special fibers
+are singular, and arbitrary rational points can meet singular points on a
+minimal Weierstrass model. A1 needs the actual nonsingular-reduction subgroup
+E₀(K), its reduction homomorphism and formal kernel E₁(K), then their comparison
+with the Néron model. Sending all singular reductions to zero is not that map.
+`Reduction.exists_isMinimal` constructs a minimal equation but does not prove
+these subgroup, component, or formal multiplication assertions.
+
+A concrete prerequisite subdivision for A1-F1 is: (i) define E₀(K) through
+projective reduction and prove closure under addition/negation (cap 240),
+(ii) construct its homomorphism to the smooth special cubic and characterize
+E₁(K) by the formal parameter (cap 240), (iii) construct/compare the Néron
+identity fiber and its component quotient (each further leaf cap 240). None
+is marked implemented. Formal multiplication coefficients and local valuation
+bounds must then be proved before any semistability/component corollary.
+
+For G2-D5, `ThreeAdicPlan.ModelHom.surjective_of_padic_power` is an existing
+odd-prime rigidity theorem for supplied finite-flat Hopf models. Its inputs
+are actual `FF` models and a generically bijective `ModelHom`; it does not
+construct the torsion closure in the abelian scheme or identify specialization.
+The missing comparison cannot be replaced by assuming an injective reduction
+map. A1, G2-D5 and `Mazur_statement` therefore remain open.

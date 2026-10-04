@@ -2504,6 +2504,7 @@ public import FLT.Mazur.CyclicProductDescent
 public import FLT.Mazur.CyclicProductEndpoints
 public import FLT.Mazur.CyclicProductNormalization
 public import FLT.Mazur.DRFiberClassification
+public import FLT.Mazur.DedekindPointExtension
 public import FLT.Mazur.DirectImageInjectives
 public import FLT.Mazur.DisjointClosedCoproduct
 public import FLT.Mazur.DisjointStructureCohomology
@@ -2592,6 +2593,7 @@ public import FLT.Mazur.GeneratorDenominatorLocalization
 public import FLT.Mazur.GenericFibers
 public import FLT.Mazur.GenericIdealInjection
 public import FLT.Mazur.GenericIdealSupport
+public import FLT.Mazur.GenericSectionUniqueness
 public import FLT.Mazur.GlobalClosedModuleDescent
 public import FLT.Mazur.GlobalEvaluationSpan
 public import FLT.Mazur.GlobalGenerationTransport
@@ -2628,6 +2630,7 @@ public import FLT.Mazur.InjectiveHorseshoe
 public import FLT.Mazur.IntegralBase
 public import FLT.Mazur.IntegralClosedSupport
 public import FLT.Mazur.IntegralDimension
+public import FLT.Mazur.IntegralPointExtension
 public import FLT.Mazur.LaurentRingSurjectivity
 public import FLT.Mazur.LaurentTensor
 public import FLT.Mazur.LaurentUnitPoints
@@ -3076,6 +3079,9 @@ public import FLT.Mazur.ProperAmpleConverse
 public import FLT.Mazur.ProperCoherentCohomology
 public import FLT.Mazur.ProperCohomologyWitnesses
 public import FLT.Mazur.ProperCurveGenus
+public import FLT.Mazur.ProperPointExtension
+public import FLT.Mazur.ProperSectionGluing
+public import FLT.Mazur.ProperStalkExtension
 public import FLT.Mazur.PuncturedNodeRestrictionComparison
 public import FLT.Mazur.PushforwardCech
 public import FLT.Mazur.PushoutModuleScalars
