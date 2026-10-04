@@ -107,3 +107,13 @@ are actual `FF` models and a generically bijective `ModelHom`; it does not
 construct the torsion closure in the abelian scheme or identify specialization.
 The missing comparison cannot be replaced by assuming an injective reduction
 map. A1, G2-D5 and `Mazur_statement` therefore remain open.
+
+## Checked validation (2026-10-04 22:41 UTC)
+
+Six module builds and six individual module linters passed. All 15 new theorems
+and G1Extension were checked with `#print axioms`: only propext, Classical.choice
+and Quot.sound. Each new module is 51–92 lines. After merging origin/main
+`0d2a816c` in `a3ef538d`, `LEAN_NUM_THREADS=2 lake build FLT` passed all 12,505
+jobs, including the root and FermatsLastTheorem. Root imports are sorted and
+`git diff --check` passed. The guarded final theorem audit still includes
+Mazur_statement and sorryAx; the arithmetic leaves above are not closed.
