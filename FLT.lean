@@ -32,6 +32,7 @@ public import FLT.AINTLIB.DedekindResidue.Lemma2
 public import FLT.AbsoluteGaloisGroup.CocycleFiniteGalois
 public import FLT.AbsoluteGaloisGroup.CompletionComparison
 public import FLT.AbsoluteGaloisGroup.CyclotomicCharacterNaturality
+public import FLT.AbsoluteGaloisGroup.FiniteCharacterInertia
 public import FLT.AbsoluteGaloisGroup.FiniteTameQuotient
 public import FLT.AbsoluteGaloisGroup.FirstRamificationFiltration
 public import FLT.AbsoluteGaloisGroup.FirstRamificationPGroup
@@ -138,6 +139,7 @@ public import FLT.Deformations.DeSmitLenstra.UniversalMoritaData
 public import FLT.Deformations.DeSmitLenstra.UniversalTraceLift
 public import FLT.Deformations.FixedResidualQuotientIdeal
 public import FLT.Deformations.FramedQuotientIdeal
+public import FLT.Deformations.HardlyRamifiedTwoQuotient
 public import FLT.Deformations.HardlyRamifiedUniversal
 public import FLT.Deformations.IsProartinian
 public import FLT.Deformations.IsResidueAlgebra
@@ -378,6 +380,7 @@ public import FLT.GaloisRepresentation.Extensions.OrdinaryFiltrationClass
 public import FLT.GaloisRepresentation.Extensions.OrdinaryFiltrationSplitting
 public import FLT.GaloisRepresentation.Extensions.OrdinaryFiltrationTwist
 public import FLT.GaloisRepresentation.Extensions.OrdinaryFiltrationUnit
+public import FLT.GaloisRepresentation.Extensions.OrdinaryFiniteDVRAction
 public import FLT.GaloisRepresentation.Extensions.OrdinaryFramedRepresentation
 public import FLT.GaloisRepresentation.Extensions.OrdinaryGaloisClass
 public import FLT.GaloisRepresentation.Extensions.OrdinaryHomCoordinates
@@ -385,6 +388,8 @@ public import FLT.GaloisRepresentation.Extensions.OrdinaryInertiaExponent
 public import FLT.GaloisRepresentation.Extensions.OrdinaryTwist
 public import FLT.GaloisRepresentation.Extensions.PeuCohomologyComparison
 public import FLT.GaloisRepresentation.Extensions.PeuRamifiedClass
+public import FLT.GaloisRepresentation.Extensions.RankOneCharacter
+public import FLT.GaloisRepresentation.Extensions.SurjectiveQuotientFrame
 public import FLT.GaloisRepresentation.Extensions.TensorCharacterClasses
 public import FLT.GaloisRepresentation.HardlyRamified.AbsIrredAdapter
 public import FLT.GaloisRepresentation.HardlyRamified.AbsoluteIrreducibility
@@ -781,6 +786,7 @@ public import FLT.GroupScheme.IntegralEtaleModelRamification
 public import FLT.GroupScheme.IntegralExtensionComposition
 public import FLT.GroupScheme.IntegralExtensionKernel
 public import FLT.GroupScheme.IntegralExtensionPullback
+public import FLT.GroupScheme.IntegralFixedPoints
 public import FLT.GroupScheme.IntegralGroupLike
 public import FLT.GroupScheme.IntegralHopfAlgebra
 public import FLT.GroupScheme.IntegralHopfPoints
@@ -849,6 +855,8 @@ public import FLT.GroupScheme.NilpotentCovering
 public import FLT.GroupScheme.NilpotentGeometricCharacteristic
 public import FLT.GroupScheme.OrderThreeModelIdentification
 public import FLT.GroupScheme.OrdinaryFiltrationModels
+public import FLT.GroupScheme.OrdinaryIntegralFiberCocycle
+public import FLT.GroupScheme.OrdinaryIntegralQuotientPoint
 public import FLT.GroupScheme.OrdinaryModelFiberPoints
 public import FLT.GroupScheme.OrdinaryNormalizedDifference
 public import FLT.GroupScheme.PDivisibleColimitLifting
@@ -2706,6 +2714,7 @@ public import FLT.PadicHodgeTheory.ComplexDeRhamGraded
 public import FLT.PadicHodgeTheory.ComplexDeRhamGradedGalois
 public import FLT.PadicHodgeTheory.ComplexDeRhamResidue
 public import FLT.PadicHodgeTheory.ComplexDeRhamRings
+public import FLT.PadicHodgeTheory.ComplexEigenperiodFiltration
 public import FLT.PadicHodgeTheory.ComplexFiniteLogAlgebra
 public import FLT.PadicHodgeTheory.ComplexFiniteLogEvaluation
 public import FLT.PadicHodgeTheory.ComplexFiniteLogLimit
