@@ -3250,3 +3250,20 @@ are inputs for A1, not yet its analytic coordinate/logarithm construction.
 The analytic derivative identification, Lie dimension sum and exactness
 remain unproved. Recheck the new leaves using `python3 W67_FINAL_CHECKS.py`;
 module logs, source hashes and axiom results accompany `FAMILY_W67_DONE.md`.
+
+## W68: original completed points before the analytic logarithm
+
+Refine A1 into the following leaves before implementation (each new module
+at most 150 lines). These construct the actual inverse limit of the original
+point colimits; no logarithm or comparison property is built into its data.
+
+| Leaf | Module / obligation | Dependencies |
+|---|---|---|
+| A1a | `PDivisiblePointColimitGroup`: convolution group law on the original point colimit, natural coefficient maps, agreement with original multiplication | Original finite Hopf points |
+| A1b | `RationalPlacePointPrecision`: original O_C/p-power reduction composition and surjectivity on colimit points at positive precision | Proved nilpotent formal smoothness |
+| A1c | `RationalPlaceCompletedPoints`: compatible original point sequences, abelian group, finite-level integral specialization | A1a–A1b |
+| A1d | `RationalPlaceCompletedPointLifting`: surjectivity of each positive-precision projection | A1b–A1c and recursive compatible lifting |
+
+The topology, connected formal coordinates, convergent logarithm, local
+isomorphism and torsion kernel require further leaves after these algebraic
+constructions. A2, C, D, HT3 and the period/family obligations remain open.
