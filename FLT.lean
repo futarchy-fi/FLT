@@ -2484,6 +2484,7 @@ public import FLT.Mazur.CoherentSupport
 public import FLT.Mazur.CoherentSupportedDecomposition
 public import FLT.Mazur.ComaximalIdealSequence
 public import FLT.Mazur.CommonIdealDirectSum
+public import FLT.Mazur.CommonRelationIntegerModel
 public import FLT.Mazur.ConstantCyclicGenerator
 public import FLT.Mazur.ConstantCyclicGroup
 public import FLT.Mazur.ConstantCyclicInclusion
@@ -2567,9 +2568,12 @@ public import FLT.Mazur.FamilyTransport
 public import FLT.Mazur.FiniteAffineCoverDimension
 public import FLT.Mazur.FiniteAffineCoverFiniteness
 public import FLT.Mazur.FiniteAffineLineCover
+public import FLT.Mazur.FiniteArrowIntegerModel
 public import FLT.Mazur.FiniteCechCyclesScalars
 public import FLT.Mazur.FiniteCechTermScalars
 public import FLT.Mazur.FiniteClosedIdealSection
+public import FLT.Mazur.FiniteDiagramCoverModel
+public import FLT.Mazur.FiniteDiagramIntegerModel
 public import FLT.Mazur.FiniteDivisorCohomology
 public import FLT.Mazur.FiniteDivisorComponentAvoidance
 public import FLT.Mazur.FinitePresentationIntegerModel
@@ -2587,6 +2591,7 @@ public import FLT.Mazur.FiniteSupportEulerCharacteristic
 public import FLT.Mazur.FiniteSupportEulerPositive
 public import FLT.Mazur.FiniteSurjectiveAmpleDescent
 public import FLT.Mazur.FiniteSurjectiveCoherentWitness
+public import FLT.Mazur.FixedTargetIntegerModel
 public import FLT.Mazur.FlasqueDirectImageAcyclic
 public import FLT.Mazur.FlatCartesianSectionGluing
 public import FLT.Mazur.FlatFiniteEqualizer
@@ -2676,6 +2681,8 @@ public import FLT.Mazur.IdealTwistTransitionExact
 public import FLT.Mazur.IdealWitnessSupportInduction
 public import FLT.Mazur.IncreasingCechComplex
 public import FLT.Mazur.InjectiveHorseshoe
+public import FLT.Mazur.IntegerModelEventualEquality
+public import FLT.Mazur.IntegerModelTransition
 public import FLT.Mazur.IntegralBase
 public import FLT.Mazur.IntegralClosedSupport
 public import FLT.Mazur.IntegralDimension
@@ -3040,6 +3047,7 @@ public import FLT.Mazur.PrincipalGeneratorExtension
 public import FLT.Mazur.PrincipalLocalizationGeneration
 public import FLT.Mazur.PrincipalLocalizationIntersection
 public import FLT.Mazur.PrincipalLocalizationPullback
+public import FLT.Mazur.PrincipalOpenIntegerModel
 public import FLT.Mazur.PrincipalSectionExtension
 public import FLT.Mazur.PrincipalSubmoduleCoordinates
 public import FLT.Mazur.PrincipalSubmoduleOverlap
@@ -3174,6 +3182,7 @@ public import FLT.Mazur.RingEqualizerDescent
 public import FLT.Mazur.RingEqualizerLocalDescent
 public import FLT.Mazur.RingEqualizerLocalization
 public import FLT.Mazur.ScalarCohomology
+public import FLT.Mazur.ScalarCompatibleIntegerModel
 public import FLT.Mazur.ScalarExtensionDirectSum
 public import FLT.Mazur.SchematicDescentGluing
 public import FLT.Mazur.SchemeCohomologyIso
