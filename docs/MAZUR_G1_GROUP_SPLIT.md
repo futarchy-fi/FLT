@@ -1,6 +1,88 @@
 # G1 after G5: polygon action, genus and the remaining Mazur gates
 
 
+
+## W48: relative DR object and polygon constructor; A3 partially implemented
+
+Checked at 2026-10-04T07:34:17+00:00 against the new source modules listed below.
+Recheck each module with `LEAN_NUM_THREADS=2 lake build FLT.Mazur.MODULE` and
+`LEAN_NUM_THREADS=2 lake exe runLinter FLT.Mazur.MODULE`, one module at a time.
+The untracked `W48_CHECK_SOURCE.py`, `W48_ALL_AXIOMS.txt` and `BLOCKED.md`
+record validation and the remaining proof obligation. This section supersedes
+W47's A1/A2 status; it does not close A3 or remove `Mazur_statement`.
+
+`GeneralizedEllipticCurve` defines DR II.1.12 over schemes in `Type`, matching
+the existing genus/cohomology API. It retains a classified genus-one family,
+a commutative group scheme identified with the actual relative smooth open,
+the whole-curve action, its unit/associativity laws, restriction to group
+multiplication, and the geometric rotation condition. These are the defining
+DR conditions; no moduli or arithmetic conclusion is a record field.
+
+`GeneralizedCurveGraph` quantifies over every geometric point and every
+rational point of the actual pulled-back group. Its cyclic indexing is an
+equivalence onto all irreducible components and all nonsmooth points, with
+actual point/component incidence. It requires one common rotation index for
+vertices and edges. One-gon loops and the two distinct two-gon edges remain.
+`PolygonGroupPoints` proves that unit/component coordinates exhaust group
+points. `PolygonGeneralizedCurve.curve` uses that result with the existing
+family, smooth-open, action and geometric-translation proofs to construct
+an unconditional polygon instance. Its separate `smooth_restriction` theorem
+also exposes multiplication on the actual smooth open.
+
+`GeneralizedCurveCategory` constructs compatible morphisms, their category,
+identity-section preservation and underlying curve/group isomorphisms. The
+curve forgetful functor is faithful: the curve map determines the group map
+because the smooth-group inclusion is a monomorphism.
+
+The implemented parts of A3 are:
+
+- `GeneralizedCurvePullback`: actual arbitrary-base pullbacks of the family,
+  commutative group, inclusion and action; unit, associativity, multiplication
+  restriction and compatibility of pulled-back morphisms.
+- `GeneralizedCurvePullbackCoherence`: the canonical identity/composition
+  comparisons, naturality, and their compatibility with inclusions, actions,
+  group identities and multiplication.
+- `GeneralizedCurveGraphTransport` and `GeneralizedCurveGraphBaseChange`:
+  transport of actual components/nodes through equivariant isomorphisms, and
+  geometric rotations for the actual pulled-back action.
+- `GeneralizedCurveSmoothPullback`: smoothness of the actual smooth open and
+  group, and a canonical open immersion `smoothPullbackComparison` from the
+  pulled-back group to the new relative smooth open. Its composite with the
+  smooth-open inclusion is exactly the pulled-back original inclusion.
+
+**Remaining A3 geometric input:** prove that `smoothPullbackComparison` is
+surjective for arbitrary base change. Only its open-immersion property is
+proved. The needed general geometric lemma is that for flat locally finitely
+presented `f : X ⟶ S` and arbitrary `g : T ⟶ S`,
+
+```lean
+pullback.fst f g ⁻¹ᵁ f.smoothLocus = (pullback.snd f g).smoothLocus
+```
+
+Mathlib's `Scheme.Hom.preimage_smoothLocus_eq` concerns precomposition by an
+open immersion; it does not give this arbitrary-base equality. The new proofs
+do not assume the missing equality or surjectivity. Once supplied, turn the
+comparison into an isomorphism, assemble the full generalized-curve pullback
+functor, lift the proved comparisons to that category and verify its coherence
+identities. The present comparisons alone are not a completed A3 functor.
+
+Read-only checks for the producer/remaining boundary:
+
+```sh
+rg -n 'structure GeneralizedEllipticCurve|rotations|smoothIso' FLT/Mazur/GeneralizedEllipticCurve.lean
+rg -n 'groupPoint_surjective|gmPoint_surjective' FLT/Mazur/PolygonGroupPoints.lean
+rg -n 'field_rotations|geometric_rotations|def curve|smooth_restriction' FLT/Mazur/PolygonGeneralizedCurve.lean
+rg -n 'instance : Category|Faithful|identitySection' FLT/Mazur/GeneralizedCurveCategory.lean
+rg -n 'theorem pullback_|smoothPullbackComparison' FLT/Mazur/GeneralizedCurve*.lean
+rg -n 'preimage_smoothLocus_eq|smoothLocus' .lake/packages/mathlib/Mathlib/AlgebraicGeometry/Morphisms/Smooth.lean
+rg -n 'Mazur_statement' FLT/Assumptions/Mazur.lean
+```
+
+A4–A8 level, ampleness and moduli work, the later cusp constructions, and the
+arithmetic gates retain W47's remaining scope. No existing Lean consumer was
+changed; only new modules and sorted root imports are added.
+
+
 ## W47: cubic very ampleness proved; G1 moduli integration remains
 
 Checked at 2026-10-04 06:42 UTC against the W47 source modules below. This
