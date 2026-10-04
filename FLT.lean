@@ -1088,7 +1088,10 @@ public import FLT.LocalClassFieldTheory.AdicIntegerTopology
 public import FLT.LocalClassFieldTheory.AdicSeriesEvaluation
 public import FLT.LocalClassFieldTheory.AdicSeriesField
 public import FLT.LocalClassFieldTheory.BoundaryCocycleRepresentatives
+public import FLT.LocalClassFieldTheory.CanonicalCharacterArtin
 public import FLT.LocalClassFieldTheory.CanonicalFixedFieldArtin
+public import FLT.LocalClassFieldTheory.CharacterCarryArtinEvaluation
+public import FLT.LocalClassFieldTheory.CharacterFieldCarry
 public import FLT.LocalClassFieldTheory.CochainFiniteImage
 public import FLT.LocalClassFieldTheory.CochainHomologyClass
 public import FLT.LocalClassFieldTheory.CochainOpenNormal
@@ -1134,9 +1137,13 @@ public import FLT.LocalClassFieldTheory.ContinuousTransfer
 public import FLT.LocalClassFieldTheory.CorestrictionInvariant
 public import FLT.LocalClassFieldTheory.CorestrictionRestrictionH2
 public import FLT.LocalClassFieldTheory.CyclicCarry
+public import FLT.LocalClassFieldTheory.CyclicCarryArtinInvariant
 public import FLT.LocalClassFieldTheory.CyclicCarryCoefficientCup
 public import FLT.LocalClassFieldTheory.CyclicCarryConnecting
 public import FLT.LocalClassFieldTheory.CyclicCarryNormSum
+public import FLT.LocalClassFieldTheory.CyclicCharacterArtin
+public import FLT.LocalClassFieldTheory.CyclicCharacterCoordinates
+public import FLT.LocalClassFieldTheory.CyclicExtensionCharacterEvaluation
 public import FLT.LocalClassFieldTheory.CyclicIntegerCohomology
 public import FLT.LocalClassFieldTheory.CyclicPeriodicComplex
 public import FLT.LocalClassFieldTheory.CyclicPeriodicExact
@@ -1163,6 +1170,7 @@ public import FLT.LocalClassFieldTheory.FiniteArtinFieldwiseNorm
 public import FLT.LocalClassFieldTheory.FiniteArtinFixedFieldNorm
 public import FLT.LocalClassFieldTheory.FiniteArtinNormImage
 public import FLT.LocalClassFieldTheory.FiniteArtinTower
+public import FLT.LocalClassFieldTheory.FiniteCharacterDescent
 public import FLT.LocalClassFieldTheory.FiniteCharacteristicZeroCohomology
 public import FLT.LocalClassFieldTheory.FiniteContinuousComparison
 public import FLT.LocalClassFieldTheory.FiniteContinuousH2Class
@@ -1175,6 +1183,7 @@ public import FLT.LocalClassFieldTheory.FiniteHomologyCard
 public import FLT.LocalClassFieldTheory.FiniteInflationCocycleDescent
 public import FLT.LocalClassFieldTheory.FiniteInflationRestrictionExact
 public import FLT.LocalClassFieldTheory.FiniteKernelCocycleCorrection
+public import FLT.LocalClassFieldTheory.FiniteParameterCarry
 public import FLT.LocalClassFieldTheory.FiniteQuotientArtin
 public import FLT.LocalClassFieldTheory.FiniteQuotientArtinCup
 public import FLT.LocalClassFieldTheory.FiniteRelativeCocycleDescent
@@ -1251,6 +1260,8 @@ public import FLT.LocalClassFieldTheory.KernelCocycleDescent
 public import FLT.LocalClassFieldTheory.KernelCocycleNormalization
 public import FLT.LocalClassFieldTheory.KernelMixedCocycle
 public import FLT.LocalClassFieldTheory.KernelSectionCorrection
+public import FLT.LocalClassFieldTheory.KummerArtinEvaluation
+public import FLT.LocalClassFieldTheory.KummerArtinVanishing
 public import FLT.LocalClassFieldTheory.KummerParameterCarry
 public import FLT.LocalClassFieldTheory.LocalDegreeFormula
 public import FLT.LocalClassFieldTheory.LocalExpEquivalence
@@ -1292,6 +1303,8 @@ public import FLT.LocalClassFieldTheory.OneCocycleInvariantSequence
 public import FLT.LocalClassFieldTheory.OneCocycleNegativeBoundary
 public import FLT.LocalClassFieldTheory.OneCocycleScalarBoundary
 public import FLT.LocalClassFieldTheory.OrderHomScale
+public import FLT.LocalClassFieldTheory.ParameterCarryCharacterComparison
+public import FLT.LocalClassFieldTheory.ParameterCarryInflation
 public import FLT.LocalClassFieldTheory.PositiveFiniteArtin
 public import FLT.LocalClassFieldTheory.PositiveFiniteArtinTower
 public import FLT.LocalClassFieldTheory.PowerClassOrder
@@ -1346,6 +1359,7 @@ public import FLT.LocalClassFieldTheory.ResidueNorm
 public import FLT.LocalClassFieldTheory.ResidueNormLift
 public import FLT.LocalClassFieldTheory.RestrictedCochainDescent
 public import FLT.LocalClassFieldTheory.RestrictionSurjective
+public import FLT.LocalClassFieldTheory.RootCoefficientBoundary
 public import FLT.LocalClassFieldTheory.ScalarCochainCup
 public import FLT.LocalClassFieldTheory.SixTermCard
 public import FLT.LocalClassFieldTheory.SolvableCyclicQuotient
