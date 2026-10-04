@@ -2036,3 +2036,70 @@ neighbourhood over the original base, including arbitrary-base
 approximation. F14's finite relative cover, C4–C12's relative flatness and
 the formal-smoothness assembly remain unproved. None of these statements
 follows solely from the new absolute geometric presentations.
+
+
+### W47: actual residue-field fibre comparison
+
+F12 now applies to each specified polynomial presentation of the actual
+characteristic-p residue division fibre at every prime over its kernel.
+`DivisionResidueLocalCI.exists_residue_division_regular_relations_atPrime`
+constructs a list with exactly as many relations as polynomial variables,
+generating the original localized kernel and regular over the original field.
+There is no rational-residue hypothesis and no assumed geometric kernel square.
+
+The implementation leaves (whole-module cap 150) are:
+
+| Leaf | Module | Result |
+|---|---|---|
+| F12y | `MvPolynomial.GeometricPointLocalization` | Flat local coefficient map at any geometric point and its contraction; comparison of the extended original ideal. |
+| F12z | `MvPolynomial.GeometricRegularDescent` | Descend the generator bound through the flat local map, apply the geometric parameter criterion, and reflect regularity. |
+| F12aa | `MvPolynomial.CoefficientPresentation` | Extend a specified polynomial presentation with its coordinates, surjectivity and entire kernel. |
+| F12ab | `GroupScheme.ComponentLocalizedKernel` | Projecting onto a pointed component preserves the original kernel after localization; prove this using the primitive idempotent. |
+| F12ac | `GroupScheme.GeometricHopfLocalizedKernel` | Square generators and the actual component quotient for the original geometric presentation. |
+| F12ad | `GroupScheme.HopfGeometricPresentationDescent` | Connect the geometric component kernel to the original localized presentation and descend regular relations. |
+| F12ae | `GroupScheme.HopfGeometricPointDescent` | Retain a specified original fibre point through the geometric comparison. |
+| F12af | `GroupScheme.DivisionResidueFibreComparison` | Construct the comparison for the actual residue division fibre by tensor cancellation and division translation. |
+| F12ag | `MvPolynomial.ResidueGeometricPoint` | Construct a geometric point above each original prime, with exactly that contracted ideal. |
+| F12ah | `GroupScheme.DivisionResidueRegularPresentation` | Apply the constructed comparison at every specified geometric point of the actual residue fibre. |
+| F12ai | `GroupScheme.DivisionResidueLocalCI` | Apply the geometric-point construction at every prime of the original residue-field presentation. |
+
+This replaces the rational-origin restriction of F12x in the actual fibre
+application: F12z uses `Ideal.exists_ofList_of_map_eq_span` and faithfully flat
+reflection directly at the contracted geometric point. F12x remains a valid
+specialized interface. The result concerns characteristic-p residue fields,
+as required for p-nilpotent test algebras.
+
+F13 still requires spreading these presentations over the original arbitrary
+base. A finite chart cover of an individual residue fibre does not imply
+F14's relative chart cover. C4–C12 and the formal-smoothness assembly remain
+unproved; the family admission has not been replaced.
+
+
+W47 further leaves (cap 150 each):
+
+| Leaf | Module | Result |
+|---|---|---|
+| F14c | `Regular.FinitePresentationCover` | Extract finite principal charts of a specified algebra presentation, retaining the number of equations and the original coordinate map to each actual localization. |
+| F12aj | `GroupScheme.DivisionResidueFiniteCharts` | Apply finite extraction to the actual residue division fibre; the chart denominators generate the unit ideal in that fibre. |
+| F12ak | `GroupScheme.DivisionPullbackFibreLocalCI` | Apply F12ai to every field-valued fibre of the actual division pullback over an arbitrary p-nilpotent test algebra. Derive the characteristic from nilpotence and construct the tensor cancellation. |
+| F13h | `Flat.PresentationKernelIntersection` | Use the flat target's equational criterion to prove that the original kernel intersects any extended base ideal in their product. No Noetherian or principal-ideal assumption. |
+| F13i | `Flat.FibreRelationLifting` | Nakayama lifts generators through any extended base ideal contained in the presentation source's Jacobson radical, using the proved intersection formula. |
+| F13j | `Flat.ReducedPresentation` | Construct the actual reduced algebra map, compute its entire kernel, and lift reduced generators to a coordinate-compatible presentation of the original flat target. |
+
+The exact F12 application theorem is
+`ThreeAdicPlan.PDivisibleSystem.exists_division_pullback_fibre_regular_relations`.
+Its inputs are the actual system, a point into a p-nilpotent test algebra,
+a field-valued specialization, and any surjective polynomial presentation of
+that fibre. It proves regularity and generation at every prime of that
+original presentation. It assumes neither a geometric comparison nor an
+original regular list. Taking the field to be a residue field includes
+non-rational points of the original base.
+
+F13j lifts generators modulo a base ideal, under an explicit finite-kernel
+hypothesis. Applying it to F12ak still requires the localized residue-fibre
+comparison over the original base, finite generation for that localized
+presentation, clearing denominators, and simultaneous fibre regularity on
+the resulting neighbourhood. F13j does not assert those conclusions or
+flatness of a newly lifted chart. F14c/F12aj cover a single residue fibre;
+F14's relative cover is still missing. C4–C12's adic criterion, approximation,
+relative flatness and the later formal-smoothness assembly remain open.
