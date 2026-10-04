@@ -2397,11 +2397,13 @@ public import FLT.Mazur.AffineCohomologyVanishingRelInjective
 public import FLT.Mazur.AffineCohomologyVanishingSpectrum
 public import FLT.Mazur.AffineCoverCohomology
 public import FLT.Mazur.AffineCoverIntersections
+public import FLT.Mazur.AffineFaithfullyFlatEpimorphisms
 public import FLT.Mazur.AffineFpqcRefinement
 public import FLT.Mazur.AffineIdealPowerExtension
 public import FLT.Mazur.AffineImageSectionTransport
 public import FLT.Mazur.AffineIntersectionRestriction
 public import FLT.Mazur.AffineKernelLocalization
+public import FLT.Mazur.AffineModuleEpimorphisms
 public import FLT.Mazur.AffineModuleExact
 public import FLT.Mazur.AffineModuleGlobalSections
 public import FLT.Mazur.AffineModulePullbackSections
@@ -2409,6 +2411,7 @@ public import FLT.Mazur.AffineModuleSupport
 public import FLT.Mazur.AffineNodeNormalizationExact
 public import FLT.Mazur.AffineOpenCartesianSections
 public import FLT.Mazur.AffineOpenDenominators
+public import FLT.Mazur.AffinePullbackEpiReflection
 public import FLT.Mazur.AffinePullbackIdeal
 public import FLT.Mazur.AffinePullbackIntersection
 public import FLT.Mazur.AffinePushforwardCohomology
@@ -2423,6 +2426,7 @@ public import FLT.Mazur.AmpleCartesianAffineOpen
 public import FLT.Mazur.AmpleChartGeneratorRatios
 public import FLT.Mazur.AmpleChartSectionExtension
 public import FLT.Mazur.AmpleCommonDegree
+public import FLT.Mazur.AmpleGlobalGeneration
 public import FLT.Mazur.AmpleLineBundle
 public import FLT.Mazur.AmplePrincipalLocality
 public import FLT.Mazur.AnnihilatorCoherence
@@ -2599,10 +2603,13 @@ public import FLT.Mazur.FiniteSectionProjectivePresentation
 public import FLT.Mazur.FlasqueDirectImageAcyclic
 public import FLT.Mazur.FlatCartesianSectionGluing
 public import FLT.Mazur.FlatFiniteEqualizer
+public import FLT.Mazur.FlatGlobalGenerationDescent
 public import FLT.Mazur.FlatGlobalSectionBaseChange
 public import FLT.Mazur.FlatGlobalSectionExpansion
 public import FLT.Mazur.FlatIdealTensor
 public import FLT.Mazur.FlatSectionEqualizer
+public import FLT.Mazur.FpqcGlobalGenerationDescent
+public import FLT.Mazur.FpqcModuleEpimorphisms
 public import FLT.Mazur.GeneralizedCurveAmpleBaseChange
 public import FLT.Mazur.GeneralizedCurveAmpleSubgroup
 public import FLT.Mazur.GeneralizedCurveBaseChange
@@ -2631,6 +2638,8 @@ public import FLT.Mazur.GenericFibers
 public import FLT.Mazur.GenericIdealInjection
 public import FLT.Mazur.GenericIdealSupport
 public import FLT.Mazur.GlobalClosedModuleDescent
+public import FLT.Mazur.GlobalEvaluationSpan
+public import FLT.Mazur.GlobalGenerationTransport
 public import FLT.Mazur.GlobalIdealPower
 public import FLT.Mazur.GlobalIdealPowerCompatibility
 public import FLT.Mazur.GroupSectionBaseChange
@@ -2657,6 +2666,7 @@ public import FLT.Mazur.LaurentTensor
 public import FLT.Mazur.LaurentUnitPoints
 public import FLT.Mazur.LineBundleSectionOpenPullback
 public import FLT.Mazur.LineEndpointTransport
+public import FLT.Mazur.LinePowerEvaluationDescent
 public import FLT.Mazur.LinePullbackRestriction
 public import FLT.Mazur.LineStructureProjection
 public import FLT.Mazur.LocalCartierGeneratorDescent
