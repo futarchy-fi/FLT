@@ -2876,3 +2876,117 @@ Validation evidence and checked-at times are recorded in the untracked
 `python3 W58_FINAL_CHECKS.py`. That command checks individual build/lint logs,
 source hashes, complete named-declaration axiom coverage, line caps, edit scope,
 and the required post-merge root build.
+
+## W59: constant-system calculation and connected levels over the original base
+
+The constant height-one p-divisible system is now constructed at the original
+rational place for every `2 < p`. The restriction comes from the existing
+integral exactness API; it is not a mathematical restriction on constant
+p-divisible groups. Its levels are the actual constant models on
+`Z/(p^n)`, including level zero. All coordinate inclusions, reductions,
+faithful-flatness statements, kernel equations and ranks are proved.
+
+The compatible residue classes of one and a constructed Cartier-dual Tate
+vector pair to the repository's *same chosen* cyclotomic root sequence.
+Their logarithmic period is exactly `complexCyclotomicLog p`. At integral
+first-order precision s, their period is `[epsilon]-1` modulo
+`ker(theta)^2 + (p^s)`. This value is nonzero for some positive s: the
+cyclotomic difference is not in `ker(theta)^2`, and that ideal is p-adically
+closed by the already proved cyclotomic regularity theorem. Nonvanishing
+at every s is neither needed nor asserted.
+
+On these very same Tate vectors, `rationalPlaceTateReducedCartier` is zero
+at every precision, because the original coordinate algebras are etale.
+`ConstantRationalPower.firstOrder_comparison_fails` therefore refutes the
+specialized W57 equality on an actual rational-place p-divisible system.
+This strengthens W58's abstract linear-lift counterexample. The nonzero
+Cartier period pairs the etale factor with its multiplicative Cartier dual;
+it does not assign weight -1 to the constant representation.
+
+### Correct comparison target
+
+Use the connected-etale sequence, retaining the original nonsplit group
+and the original Galois action. This sequence is not a direct-product
+identification over the original base. The connected part can itself have
+both Hodge-Tate weights: connectedness does not mean multiplicative type.
+Thus restricting the disproved full-period identity to all Tate vectors
+of the connected part is not yet a justified replacement theorem.
+
+The expected covariant Hodge-Tate exact sequence is
+
+```
+0 -> Lie(G) tensor C_p(1) -> T_p(G) tensor C_p
+  -> (Lie(G^vee))^* tensor C_p -> 0.
+```
+
+Both Lie terms must be retained. For the constant etale system the left
+term is zero and the degree-zero term accounts for the Tate module; its
+dual supplies the cyclotomic pairing. For a connected height-two,
+dimension-one group the right term need not vanish. A formula using only
+the tangent of G can at most describe the corresponding Hodge-Tate
+component after that component has actually been identified. No such
+identification is supplied as a constructor field or hypothesis here.
+
+P1d.3 must consequently be split into construction of the Hodge-Tate maps,
+proof of their exactness, and compatibility of the Cartier pairing with
+both components. The original one-sided equality is retired. The
+Hodge-Tate sequence alone also does not prove de Rham admissibility:
+the filtered de Rham comparison still requires a period realization, for
+example through the universal extension or the Dieudonne crystal.
+
+Source boundary: [T] remains the source for the Hodge-Tate sequence.
+A fresh inspection of [BC], pp. 93-95, confirms that Thm. 7.2.8 concerns
+full faithfulness and discusses Tate's discovery of the decomposition;
+Thm. 7.2.10 gives the Honda classification. Neither is a preexisting
+Lean comparison theorem. [BC] Thm. 12.3.2 still uses the crystallinity
+input identified above. The exact sequence displayed here is a corrected
+mathematical target, not a theorem claimed to have been formalized in W59.
+
+### Original-system connected-etale leaves
+
+Every complete new Lean file remains capped at 150 lines. The component
+construction uses the actual rational-place integer ring, not an implicit
+identification with Z_3. Its special-fibre ideal is the extension of the
+original maximal ideal. Finite flatness gives completeness and Henselian
+idempotent lifting; the finite residue algebra is Artinian. These provide
+actual connected finite-flat algebra factors. The counit selects one;
+inversion and comultiplication descend to it, giving a connected finite-flat
+Hopf model with its original closed embedding.
+
+| Leaf / module | Construction and status |
+|---|---|
+| CE1 / `RationalComponentLifting` | Proved completeness, Henselian lifting and Artinian special fibres over the original base. |
+| CE2 / `RationalConnectedComponents` | Constructed the full algebra decomposition into connected finite-flat factors. |
+| CE3 / `RationalIdentityComponent` | Constructed the counit-selected identity factor and its actual counit. |
+| CE4 / `RationalIdentityComponentAntipode` | Proved antipode stability and the counit kernel condition. |
+| CE5 / `RationalIdentityComponentHopf` | Constructed the Hopf quotient, using connectedness of its tensor square. |
+| CE6 / `RationalIdentityComponentModel` | Constructed the finite-flat connected model, its closed embedding and injective original point map. |
+| CE7 / `BialgebraSurjectiveFactor`, `RationalIdentityComponentMaps` | Descended original morphisms to those same quotient models; proved uniqueness and functoriality. |
+| CE8 / `RationalConnectedLevelTower` | Constructed both connected transitions, their coherence, closed inclusions, inherited p-power annihilators and both multiplication factorizations. |
+| CE9 / connected exactness | Open: prove faithful flatness of connected reductions and their actual scheme kernel equations. Split these two proofs into separate files. |
+| CE10 / connected height | Open: prove a common connected height and level rank formula; only then bundle the connected p-divisible system. |
+| CE11 / etale quotient levels | Open: construct the actual quotient of each original level by its connected subgroup, retaining the quotient map. |
+| CE12 / etale quotient property | Open: prove the quotient is etale over the original base; do not replace it by constant points without proving descent. |
+| CE13 / etale quotient tower | Open: construct both quotient transitions, prove coherence and p-divisible axioms in separate capped files. |
+| CE14 / original exact sequence | Open: prove exactness of the original connected-etale level sequence and of its Tate sequence, retaining the extension class. |
+| HT1 / original Hodge-Tate maps | Open: identify the existing dlog and infinitesimal maps with the correctly twisted Lie terms, including coefficient completion. |
+| HT2 / connected comparison | Open: prove the connected Hodge-Tate exact sequence; split kernel, image and dimension arguments. Connectedness alone supplies none of these conclusions. |
+| HT3 / full Cartier compatibility | Open: compute the pairing on both Hodge-Tate components and assemble it through CE14. The W59 constant calculation is a required test. |
+| DR1 / period realization | Open: construct the universal-extension/Dieudonne period realization with the original generic fibre and filtration. |
+| P2-P6 | Open: integrality, original Galois equivariance, injectivity, surjectivity and filtration strictness for that actual de Rham map. |
+
+The existing `PDivisibleSystem.Hom` fixes the same height on source and target.
+CE14 must allow different heights for the connected inclusion and etale
+quotient; do not reuse that interface with a false equality of heights.
+
+CE8 is a coherent tower, not yet a `PDivisibleSystem`: CE9 and CE10 are
+substantive missing proofs. CE11-CE14 are not implemented, so W59 does not
+claim a completed connected-etale decomposition. HT1-HT3, DR1, P2-P6,
+W1-W3 and the original family admission remain open. No change to an
+existing admitted module is authorized by this task.
+
+Validation, exact commits and checked-at times are recorded in the untracked
+`FAMILY_W59_DONE.md` and `W59_VALIDATION.json`. Recheck with
+`python3 W59_FINAL_CHECKS.py`; each new module is built in the foreground,
+linted individually and audited for axioms. The final root build follows
+merging origin/main. No whole-library lint is used.
