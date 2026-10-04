@@ -2640,7 +2640,10 @@ public import FLT.Mazur.IdealPowerCompatibility
 public import FLT.Mazur.IdealPowerExtensionCharts
 public import FLT.Mazur.IdealPowerExtensionGluing
 public import FLT.Mazur.IdealQuotientExact
+public import FLT.Mazur.IdealTwistCohomologyStabilization
+public import FLT.Mazur.IdealTwistCohomologySystem
 public import FLT.Mazur.IdealTwistSectionOpen
+public import FLT.Mazur.IdealTwistTransitionExact
 public import FLT.Mazur.IncreasingCechComplex
 public import FLT.Mazur.InjectiveHorseshoe
 public import FLT.Mazur.IntegralBase
@@ -2654,6 +2657,8 @@ public import FLT.Mazur.LineEndpointTransport
 public import FLT.Mazur.LinePowerEvaluationDescent
 public import FLT.Mazur.LinePowerSectionBaseChange
 public import FLT.Mazur.LinePullbackRestriction
+public import FLT.Mazur.LineSectionGenericOpen
+public import FLT.Mazur.LineSectionTwistSystem
 public import FLT.Mazur.LineSheafDualEvaluation
 public import FLT.Mazur.LineStructureProjection
 public import FLT.Mazur.LocalCartierGeneratorDescent
