@@ -660,6 +660,7 @@ public import FLT.GroupScheme.BialgebraBaseChange
 public import FLT.GroupScheme.CanonicalCompositionSeries
 public import FLT.GroupScheme.CanonicalFactorFiltration
 public import FLT.GroupScheme.CartierCotangentTensor
+public import FLT.GroupScheme.CartierDlogAdditivity
 public import FLT.GroupScheme.CartierDualAlgebra
 public import FLT.GroupScheme.CartierDualAugmentation
 public import FLT.GroupScheme.CartierDualBaseChange
@@ -667,6 +668,7 @@ public import FLT.GroupScheme.CartierDualBaseChangeHopf
 public import FLT.GroupScheme.CartierDualCharacterGroup
 public import FLT.GroupScheme.CartierDualCoalgebra
 public import FLT.GroupScheme.CartierDualConvolution
+public import FLT.GroupScheme.CartierDualElementMultiplication
 public import FLT.GroupScheme.CartierDualElementNaturality
 public import FLT.GroupScheme.CartierDualEtale
 public import FLT.GroupScheme.CartierDualFaithfullyFlat
@@ -1005,13 +1007,18 @@ public import FLT.GroupScheme.OrdinaryLocalUnitParameter
 public import FLT.GroupScheme.OrdinaryModelFiberPoints
 public import FLT.GroupScheme.OrdinaryNormalizedDifference
 public import FLT.GroupScheme.PDivisibleCartierDifferential
+public import FLT.GroupScheme.PDivisibleCartierDlogAdditivity
 public import FLT.GroupScheme.PDivisibleCartierDlogLimit
+public import FLT.GroupScheme.PDivisibleCartierDlogLinearity
 public import FLT.GroupScheme.PDivisibleCartierDlogPairing
+public import FLT.GroupScheme.PDivisibleCartierPairingBilinear
+public import FLT.GroupScheme.PDivisibleCartierPairingScalars
 public import FLT.GroupScheme.PDivisibleCartierSystem
 public import FLT.GroupScheme.PDivisibleCartierTateGalois
 public import FLT.GroupScheme.PDivisibleCartierTatePairing
 public import FLT.GroupScheme.PDivisibleCartierTransitions
 public import FLT.GroupScheme.PDivisibleColimitLifting
+public import FLT.GroupScheme.PDivisibleCompletedDlogCoefficients
 public import FLT.GroupScheme.PDivisibleCorrectedLocalPoint
 public import FLT.GroupScheme.PDivisibleCotangentArithmetic
 public import FLT.GroupScheme.PDivisibleCotangentComplete
@@ -1026,6 +1033,8 @@ public import FLT.GroupScheme.PDivisibleCotangentLimitFinite
 public import FLT.GroupScheme.PDivisibleCotangentLimitReduction
 public import FLT.GroupScheme.PDivisibleCotangentPrimeInjective
 public import FLT.GroupScheme.PDivisibleCotangentSurjective
+public import FLT.GroupScheme.PDivisibleCotangentTensorCompletion
+public import FLT.GroupScheme.PDivisibleCotangentTensorReduction
 public import FLT.GroupScheme.PDivisibleCotangentTransitions
 public import FLT.GroupScheme.PDivisibleDivisionCover
 public import FLT.GroupScheme.PDivisibleFormalCotangent
@@ -1048,7 +1057,9 @@ public import FLT.GroupScheme.PDivisibleOverlapCorrection
 public import FLT.GroupScheme.PDivisiblePointColimit
 public import FLT.GroupScheme.PDivisiblePointEquiv
 public import FLT.GroupScheme.PDivisibleRationalCartier
+public import FLT.GroupScheme.PDivisibleRationalCartierPeriodAdditivity
 public import FLT.GroupScheme.PDivisibleRationalCartierPeriodGalois
+public import FLT.GroupScheme.PDivisibleRationalCartierPeriodLinearity
 public import FLT.GroupScheme.PDivisibleRationalCartierPeriods
 public import FLT.GroupScheme.PDivisibleRationalCartierRoots
 public import FLT.GroupScheme.PDivisibleRationalCotangent
@@ -1239,6 +1250,7 @@ public import FLT.GroupScheme.RaynaudIntegralClosureBound
 public import FLT.GroupScheme.RaynaudIntegralCoordinateCharacter
 public import FLT.GroupScheme.RaynaudIntegralCoordinates
 public import FLT.GroupScheme.RaynaudIntegralFiltration
+public import FLT.GroupScheme.RaynaudIntegralPointAddition
 public import FLT.GroupScheme.RaynaudIntegralUnitCorrection
 public import FLT.GroupScheme.RaynaudInvariantLineCharpoly
 public import FLT.GroupScheme.RaynaudInversionBasis
@@ -3106,9 +3118,14 @@ public import FLT.PadicHodgeTheory.ComplexPadicScalarAction
 public import FLT.PadicHodgeTheory.ComplexPadicScalarResidue
 public import FLT.PadicHodgeTheory.ComplexPadicScalars
 public import FLT.PadicHodgeTheory.ComplexRelativeAxDescent
+public import FLT.PadicHodgeTheory.ComplexRootLogLinearity
+public import FLT.PadicHodgeTheory.ComplexRootPowerBounds
+public import FLT.PadicHodgeTheory.ComplexRootPowerConvergence
+public import FLT.PadicHodgeTheory.ComplexRootSequenceShift
 public import FLT.PadicHodgeTheory.ComplexScalarClosed
 public import FLT.PadicHodgeTheory.ComplexSharpEquivariance
 public import FLT.PadicHodgeTheory.ComplexSharpOneLog
+public import FLT.PadicHodgeTheory.ComplexSharpOneLogAdditivity
 public import FLT.PadicHodgeTheory.ComplexSharpSurjective
 public import FLT.PadicHodgeTheory.ComplexThetaEquivariance
 public import FLT.PadicHodgeTheory.ComplexThetaGenerator
@@ -3133,6 +3150,7 @@ public import FLT.PadicHodgeTheory.FractionalPrincipalGraded
 public import FLT.PadicHodgeTheory.FractionalPrincipalGradedProduct
 public import FLT.PadicHodgeTheory.IdealPowerDifference
 public import FLT.PadicHodgeTheory.NilpotentLogPower
+public import FLT.PadicHodgeTheory.NilpotentLogProduct
 public import FLT.PadicHodgeTheory.NilpotentSeriesEvaluation
 public import FLT.PadicHodgeTheory.NilpotentSeriesSubstitution
 public import FLT.PadicHodgeTheory.NormalizedTraceEquivariance
