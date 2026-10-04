@@ -1788,7 +1788,7 @@ is mandatory; independent ready leaves can proceed while theory is missing.
 | F13 / RelativeCIChartNeighbourhood | Spread a regular fibre presentation to a principal neighbourhood of the corresponding point of the original finitely presented division algebra, retaining the quotient map. | F11–F12 and the flatness/localization chain below; source 00SY. |
 | F14 / FiniteDivisionCICharts | Extract finitely many F13 neighbourhoods by quasicompactness and prove their defining elements generate the unit ideal. | F13; W42 `LiftedChartCover` consumes this conclusion. |
 
-F6–F14 are genuine outstanding mathematical lemmas, not new structures
+F6–F14 are mathematical proof obligations (W44 results recorded below), not new structures
 whose fields assert the desired property. The broad parameter theorem in
 F9 may need another internal split; no implementation is scheduled until
 its depth argument is specified. All other rows name a single coordinate,
@@ -1860,7 +1860,7 @@ unproved. A parent row is an assembly milestone, not an implementation leaf.
 These rows expose further foundational assumptions rather than silently
 calling them library results: F9a needs a depth/associated-prime theorem,
 F9c needs the regular-element dimension/depth theorem, and C8a–b need
-fibre-dimension theory. They are still research dependencies and their
+fibre-dimension theory. F9 is proved in W44 below; C8a–b remain research dependencies whose
 150-line budgets are planned, not validated line counts. The ready leaves
 implemented in W43 do not establish any of those assumptions.
 
@@ -1902,4 +1902,42 @@ the parameter bound, and Rees for the regular-quotient depth drop.
 (in namespace `HopfAlgebra`) applies this to the actual minimal local Hopf
 presentation. All 13 foundation modules passed individual build and lint;
 all 34 named declarations have only the standard three axioms.
-F6–7, F11–14 and the flatness/assembly milestones remain outstanding.
+F6–7 and F11 are now implemented in the leaves below. F12–13 have partial
+foundations; F14 and the flatness/assembly milestones remain outstanding.
+
+### W44: geometric local factors and descent foundations
+
+The identity factor is the quotient by its complementary primitive
+idempotent. Its comultiplication, counit and antipode descend from the
+original Hopf algebra. Translation by a rational point restricts to an
+isomorphism from that point's local factor to the identity factor.
+`GeometricDivisionLocalCI` applies the resulting regular presentations to
+W43's actual geometric division fibre, retaining the original
+comultiplication formula and kernel inclusion. The geometric factor
+idempotents generate one, and each factor is its principal localization.
+This is a cover over the geometric field; it does not supply F14's relative
+charts over the original base.
+
+| Item | New-module leaves (each at most 150 lines) | Result |
+|---|---|---|
+| F6 | `FiniteAlgebraComponents`, `FiniteAlgebraPointComponent`, `FiniteHopfIdentityAntipode`, `FiniteHopfIdentityComponent` | Identity local factor with the induced Hopf structure and surjective bialgebra map. |
+| F7 | `FiniteAlgebraComponentMap`, `FiniteAlgebraComponentPoint`, `HopfPointTranslation`, `FiniteHopfComponentTranslation` | Rational points on factors, restricted translations and formulas on representatives. |
+| F11 | `LocalHopfRationalRegularPresentation`, `FiniteHopfComponentRegularPresentation`, `FiniteAlgebraPrincipalComponents`, `GeometricDivisionLocalCI` | Regular presentations of all actual geometric fibre factors and their finite principal cover. |
+| F12a | `Regular.FaithfullyFlatDescent` | Faithfully flat reflection of regularity, including all quotient injectivity tests. |
+| F12b | `MvPolynomial.FiniteFieldDescent` | Finite polynomial relation lists descend to a finite subextension of an algebraic field extension; regularity descends with them. |
+| F13a | `Regular.LocalizationInjectivity`, `Regular.FiniteLocalizationInjectivity` | Finitely many maps with finite kernels that are injective at a prime are injective on one principal neighbourhood. |
+| F13b | `Regular.LocalizationRegularity`, `Regular.PrincipalNeighbourhood` | A regular sequence on a Noetherian module at a prime is regular on a principal neighbourhood; includes the ring form. |
+
+F12 still needs descent of the localized presentation, its quotient
+isomorphism and its coordinate map, and comparison with a presentation
+over the residue field. F13b spreads a specified list of original-ring
+elements; it does not spread the relative fibre condition or produce the
+original algebra's chart presentation. That requires clearing localized
+relations, controlling the presentation kernel and the relative flatness
+criterion. F14's finite relative chart family, C4–C12's remaining flatness
+leaves and the covering/lifting assembly are not proved here.
+
+Recheck this checkpoint with the individual module builds, individual
+`lake exe runLinter MODULE` calls and `#print axioms` for each named
+declaration. W44's untracked handoff records the exact module counts,
+commits, checked-at timestamp and validation logs.

@@ -617,6 +617,11 @@ public import FLT.GroupScheme.EtaleSplitting
 public import FLT.GroupScheme.FaithfullyFlatPointDescent
 public import FLT.GroupScheme.FaithfullyFlatQuotient
 public import FLT.GroupScheme.FaithfullyFlatRetraction
+public import FLT.GroupScheme.FiniteAlgebraComponentMap
+public import FLT.GroupScheme.FiniteAlgebraComponentPoint
+public import FLT.GroupScheme.FiniteAlgebraComponents
+public import FLT.GroupScheme.FiniteAlgebraPointComponent
+public import FLT.GroupScheme.FiniteAlgebraPrincipalComponents
 public import FLT.GroupScheme.FiniteFlat
 public import FLT.GroupScheme.FiniteFlatCartierTangent
 public import FLT.GroupScheme.FiniteFlatClosureChange
@@ -643,7 +648,11 @@ public import FLT.GroupScheme.FiniteFlatSubquotientBaseChange
 public import FLT.GroupScheme.FiniteFlatTangentNaturality
 public import FLT.GroupScheme.FiniteFlatTowerClosure
 public import FLT.GroupScheme.FiniteFreeAdicComplete
+public import FLT.GroupScheme.FiniteHopfComponentRegularPresentation
+public import FLT.GroupScheme.FiniteHopfComponentTranslation
 public import FLT.GroupScheme.FiniteHopfFreeness
+public import FLT.GroupScheme.FiniteHopfIdentityAntipode
+public import FLT.GroupScheme.FiniteHopfIdentityComponent
 public import FLT.GroupScheme.FinitePresentationPointCover
 public import FLT.GroupScheme.FlatAugmentationTangent
 public import FLT.GroupScheme.FlatCotangentHomNaturality
@@ -688,6 +697,7 @@ public import FLT.GroupScheme.GenericFiberPrimitiveDenominator
 public import FLT.GroupScheme.GenericFiberScaledMultiplication
 public import FLT.GroupScheme.GenericFieldChange
 public import FLT.GroupScheme.GenericMorphismScalarExtension
+public import FLT.GroupScheme.GeometricDivisionLocalCI
 public import FLT.GroupScheme.GeometricFibrePoint
 public import FLT.GroupScheme.GlobalModel
 public import FLT.GroupScheme.GlobalModelAwayTwo
@@ -699,6 +709,7 @@ public import FLT.GroupScheme.HenselianIdempotents
 public import FLT.GroupScheme.HopfDifferentials
 public import FLT.GroupScheme.HopfFrobenius
 public import FLT.GroupScheme.HopfPointCongruence
+public import FLT.GroupScheme.HopfPointTranslation
 public import FLT.GroupScheme.HopfPointedFibre
 public import FLT.GroupScheme.HopfPoints
 public import FLT.GroupScheme.HopfPointsClosureChange
@@ -768,6 +779,7 @@ public import FLT.GroupScheme.LocalFiniteFlatExtension
 public import FLT.GroupScheme.LocalHenselian
 public import FLT.GroupScheme.LocalHopfLocalizedPresentation
 public import FLT.GroupScheme.LocalHopfPresentation
+public import FLT.GroupScheme.LocalHopfRationalRegularPresentation
 public import FLT.GroupScheme.LocalHopfRegularPresentation
 public import FLT.GroupScheme.LocalInertiaCriticalExponent
 public import FLT.GroupScheme.LocalInertiaMaximum
@@ -1704,6 +1716,7 @@ public import FLT.Mathlib.RingTheory.Localization.BaseChange
 public import FLT.Mathlib.RingTheory.LocalizedPresentation
 public import FLT.Mathlib.RingTheory.LocalizedRelationReduction
 public import FLT.Mathlib.RingTheory.MvPolynomial.CoefficientKernel
+public import FLT.Mathlib.RingTheory.MvPolynomial.FiniteFieldDescent
 public import FLT.Mathlib.RingTheory.MvPolynomial.FrobeniusGenerators
 public import FLT.Mathlib.RingTheory.MvPolynomial.FrobeniusRelationDescent
 public import FLT.Mathlib.RingTheory.MvPolynomial.HeightOneIdeal
@@ -1727,10 +1740,15 @@ public import FLT.Mathlib.RingTheory.PresentationJacobianBound
 public import FLT.Mathlib.RingTheory.RamificationInertia.Basic
 public import FLT.Mathlib.RingTheory.Regular.AssociatedPrimeDimension
 public import FLT.Mathlib.RingTheory.Regular.AssociatedPrimeQuotient
+public import FLT.Mathlib.RingTheory.Regular.FaithfullyFlatDescent
+public import FLT.Mathlib.RingTheory.Regular.FiniteLocalizationInjectivity
 public import FLT.Mathlib.RingTheory.Regular.LengthBound
+public import FLT.Mathlib.RingTheory.Regular.LocalizationInjectivity
+public import FLT.Mathlib.RingTheory.Regular.LocalizationRegularity
 public import FLT.Mathlib.RingTheory.Regular.ParameterFirstRegular
 public import FLT.Mathlib.RingTheory.Regular.ParameterIdealDimension
 public import FLT.Mathlib.RingTheory.Regular.ParameterSequence
+public import FLT.Mathlib.RingTheory.Regular.PrincipalNeighbourhood
 public import FLT.Mathlib.RingTheory.Regular.QuotientDepth
 public import FLT.Mathlib.RingTheory.RelationLifting
 public import FLT.Mathlib.RingTheory.SimpleRing.TensorProduct
