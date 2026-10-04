@@ -1,5 +1,88 @@
 # G1 after G5: polygon action, genus and the remaining Mazur gates
 
+
+## W47: cubic very ampleness proved; G1 moduli integration remains
+
+Checked at 2026-10-04 06:42 UTC against the W47 source modules below. This
+section supersedes the historical polygon-ampleness blockers in the W25–W46
+notes. The later generalized-curve and arithmetic gates remain open.
+
+D09 is proved in `PolygonCubicPointSeparation`: the actual
+`cubicProjectiveMorphism` is injective on all scheme points and is a closed
+immersion. On each torus, a branch-linear coordinate is 1 on its own
+component and 0 on every other component. Every node has all these linear
+coordinates zero. Node-value coordinates distinguish the split nodes; the
+one-gon has one node. Thus the linear coordinates also separate nodes from
+tori, without needing a separate uniform-interior-coordinate calculation.
+The exact inverse-image theorem `cubicProjectiveMorphism_preimage_linear`
+identifies each linear-coordinate chart's preimage with its torus open.
+The proof uses the established nonsmooth-point classification and local
+torus immersion, then W46's properness and stalk-surjectivity criterion.
+
+D10 is proved in `PolygonCubicVeryAmple`. The closed immersion, its existing
+over-base equation and `cubicProjectiveOOneIso` construct an actual
+`ProjectiveSpace.VeryAmplePresentation` of O(3D). The divisor-power
+isomorphism gives a presentation and `RelativeVeryAmple` for the tensor cube
+of `FCurve.divisorLineBundle` for `PolygonBoundaryDivisor.ideal`. The positive
+power witness is 3. This applies over every field `K : Type`, for all
+positive polygon sizes and all chosen units `a`; it includes the all-one
+cyclic boundary divisor and characteristic dividing the polygon size.
+
+Recheck the completed endpoints with:
+
+```sh
+LEAN_NUM_THREADS=2 lake build FLT.Mazur.PolygonCubicPointSeparation
+LEAN_NUM_THREADS=2 lake build FLT.Mazur.PolygonCubicVeryAmple
+rg -n 'preimage_linear|theorem cubicProjectiveMorphism_' FLT/Mazur/PolygonCubicPointSeparation.lean
+rg -n 'Presentation|theorem .*relativeVeryAmple' FLT/Mazur/PolygonCubicVeryAmple.lean
+```
+
+The seven new modules are each below 240 lines. Individual builds, individual
+module linters, originating-declaration axiom checks and the final root build
+are recorded in the untracked W47 validation files and `MAZUR_W47_DONE.md`.
+These checks permit only `propext`, `Classical.choice` and `Quot.sound`.
+
+### Next G1 gates
+
+| Gate | Available input | Remaining construction |
+| --- | --- | --- |
+| A1 relative generalized curves | `PolygonClassifiedFamily.family`, `PolygonActionSmooth.smooth_restriction`, `PolygonGeometricTranslations` | Assemble the relative family, actual smooth group/action and geometric graph condition into the DR object; construct the polygon example from the proved inputs. |
+| A2–A3 morphisms and pullback | `ClassifiedGenusOneFamily.baseChange`, `PolygonActionBaseChange`, `PolygonActionFieldExtension.action` | Compatible morphisms, their category, arbitrary-base pullback of the full object and identity/composition coherence. |
+| A4–A5 cyclic level | `PolygonCyclicDivisor`, `PolygonCyclicDivisorOrbit`, `PolygonCyclicDivisorPullback`, `PolygonDivisorDegree` | General finite locally free subgroups and Cartier cyclic generators with descent; the all-one polygon example already has the required rank/group data. |
+| A6 ampleness | W47's tensor-cube theorem for the chosen polygon boundary divisor | General subgroup divisors, the smooth-fiber case and the arbitrary-test-scheme criterion. W47 does not prove the general support/ampleness equivalence or its descent. |
+| A7–A8 moduli input | The geometric and divisor ingredients above | Isomorphism classes, the actual pullback presheaf and rational exact-order points as finite étale subgroup schemes. |
+| B4, C, B5–B6 | Existing polygon boundary examples | Contract the identity-component subgroup case, construct the atlas and coarse quotient, then integral cusp sections and disjointness. |
+
+The next bounded work is A1 integration: first specify the relative
+DR II.1.12 object and its morphisms, retaining the actual action on the smooth
+open and the graph condition; then construct the polygon instance from the
+named proofs. Split each checked implementation into modules of at most
+240 lines. This audit does not certify the old 200–500-line contract groups
+as ready leaves or assume their missing conclusions as record fields.
+
+For A6, preserve the distinction in `FCURVE_CONTRACTS` C7: the available
+Noetherian-base ampleness statement does not establish arbitrary-base
+descent. The actual projective tensor-cube presentation closes the selected
+field-valued boundary example. Further pullback and level-moduli interfaces
+must state and prove their own comparisons.
+
+Read-only checks for the remaining API boundaries:
+
+```sh
+rg -n 'structure ClassifiedGenusOneFamily|baseChange' FLT/Mazur/ClassifiedGenusOneFamily.lean
+rg -n 'theorem family|smooth_restriction|component_rotation|node_rotation' FLT/Mazur/Polygon{ClassifiedFamily,ActionSmooth,GeometricTranslations}.lean
+rg -n 'def |theorem ' FLT/Mazur/Polygon{CyclicDivisor,CyclicDivisorOrbit,CyclicDivisorPullback,DivisorDegree}.lean
+rg -n 'G1Geometry|G2Finite|G2Cusps|structure IntegralData' FLT/Mazur/{Contracts,GenericFibers}.lean
+rg -n 'Mazur_statement|mazur_W' FLT/Assumptions/Mazur.lean FLT/Assembly/ExistingInputs.lean
+```
+
+`Contracts.lean` still specifies supplied moduli/arithmetic data and its
+consumers. The modular curve, coarse moduli construction, cusp specialization,
+Jacobian/Eisenstein quotient and A1–A5 arithmetic proofs remain necessary.
+`Mazur_statement` remains in the final FLT theorem's dependencies; W47 does
+not change existing consumers.
+
+
 P4 (`PolygonNodeEqualizer`) and P5 (`PolygonIncidence`) supply local ring
 exactness and cyclic linear exactness. They do not construct a polygon or
 identify that linear complex with sheaf cohomology. This split develops the
