@@ -2148,6 +2148,8 @@ public import FLT.Mazur.FiniteCechCyclesScalars
 public import FLT.Mazur.FiniteCechTermScalars
 public import FLT.Mazur.FlasqueDirectImageAcyclic
 public import FLT.Mazur.GeneralizedCurveBaseChange
+public import FLT.Mazur.GeneralizedCurveBaseChangeCoherence
+public import FLT.Mazur.GeneralizedCurveBaseChangeIso
 public import FLT.Mazur.GeneralizedCurveCategory
 public import FLT.Mazur.GeneralizedCurveGraph
 public import FLT.Mazur.GeneralizedCurveGraphBaseChange
@@ -2338,6 +2340,7 @@ public import FLT.Mazur.OpenSheafFreeComparison
 public import FLT.Mazur.OpenSheafRestriction
 public import FLT.Mazur.OverCoproductModuleSections
 public import FLT.Mazur.OverPoints
+public import FLT.Mazur.OverPullbackCoherence
 public import FLT.Mazur.OverPullbackCoproduct
 public import FLT.Mazur.OverPullbackLocalPushout
 public import FLT.Mazur.PinchingAffineDescent

@@ -2,6 +2,35 @@
 
 
 
+## W51 dispatch: full-category coherence and level structures
+
+Each new implementation leaf is capped at 240 lines, including its header.
+The following subdivision replaces the historical 200–450-line A4–A8 groups.
+A split row is a proof obligation, not a supplied conclusion.
+
+| Item | Construction | Prerequisites |
+| --- | --- | --- |
+| A3a | Lift the canonical identity/composition isomorphisms and naturality to DR objects | W50 full base change |
+| A3b | Projection formulas and both unit identities; threefold associativity | A3a |
+| A4a | Finite locally free closed subgroup of specified rank; pullback and transport | ConstantDegree, A3 |
+| A4b | Whole-curve closed embedding, actual kernel ideal, base-change equality | A4a, properness |
+| A4c | Realize the all-one polygon divisor as an A4 subgroup | PolygonCyclicDivisor, PolygonDivisorDegree |
+| A5a | Cartier generator as equality with the scheme-theoretic sum of powers; pullback | A4b, RelativeSums |
+| A5b | Fppf-local generators, base change and descent of the cyclic condition | A5a, fppf covers and comparison isomorphisms |
+| A5c | Polygon generator in the general cyclic-level interface | A4c, A5a–b |
+| A6a | Subgroup divisor line bundle and relative ampleness, with pullback/descent | A5, divisor line-bundle base change |
+| A6b | Smooth-fiber ampleness and polygon component criterion | A6a, geometric fiber arguments |
+| A6c | General-level split-polygon instance from the proved tensor cube | A5c, PolygonCubicVeryAmple |
+| A7a | Compatible level isomorphisms and their equivalence relation | A5–A6 |
+| A7b | Isomorphism-class presheaf with identity/composition laws | A7a, A3 |
+| A8a | Rational exact-order point gives a finite étale closed subgroup | ConstantCyclicGroup, group sections |
+| A8b | Its Cartier-generator and ampleness proofs; moduli point | A8a, A5–A7 |
+| A8c | Change-of-generator invariance of that actual moduli point | A8b |
+
+Validation is by one foreground module build and one module linter at a time,
+plus an originating-declaration axiom audit. The W51 handoff distinguishes
+completed rows from remaining obligations and records checked-at evidence.
+
 ## Relative DR objects and base change (W48–W50)
 
 W50 proves arbitrary smooth-locus base change and constructs the full DR
