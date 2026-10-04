@@ -1309,3 +1309,39 @@ Checked by the per-module foreground builds, individual lints and named
 axiom audits recorded in `FAMILY_W37_DONE.md`; rerun those commands for a
 current status. The unchanged general family theorem remains outside
 these cotangent/tangent results and still requires admission removal.
+
+## W38 infinitesimal lifting split (committed before implementation)
+
+Every leaf below has a 150-line complete-module cap. The first target is
+an actual lifting theorem, retaining the original coordinate algebra:
+for a square-zero ideal J in a test R-algebra B, with N J = 0, every
+B/J-valued point x of a finite-flat level has a B-valued lift of [N]x.
+Lift x R-linearly using projectivity and take its N-th convolution power.
+The multiplicativity defect disappears by the square-zero binomial formula.
+This theorem lifts multiplication of points; it is **not** formal smoothness
+of the level, nor lifting of x itself into a higher level.
+
+| Leaf / proposed module | Proof obligation | Cap |
+|---|---|---:|
+| S1 / SquareZeroConvolution | Congruent linear maps have equal N-th convolution powers when J² = 0 and N J = 0. | 150 |
+| S2 / ConvolutionTensorPower | Precomposition with multiplication and tensor-square followed by multiplication commute with convolution powers. | 150 |
+| S3 / SquareZeroConvolutionLift | The convolution power of an arbitrary linear lift is an actual algebra map. | 150 |
+| S4 / FiniteFlatSquareZeroLifting | Obtain linear lifts from the original finite-free coordinate module; prove the quotient identity with the original multiplication morphism. | 150 |
+| S5 / PDivisibleSquareZeroLifting | Specialize to the original p-power levels, preserving their original maps. | 150 |
+
+The remaining geometric gate needs separate proofs, not an input lifting
+field: (S6) construct the connected formal functor or actual level-colimit
+functor; (S7) prove that every point across a square-zero thickening lifts
+at some higher original level, using the finite-flat exactness and
+p-divisibility; (S8) pass from square-zero to nilpotent thickenings.
+S7 is large missing theory: S1–S5 alone lift [N]x, and division in an fppf
+sheaf does not itself produce a section over B or a lift of x. No such
+surjectivity is to be inferred from the binomial calculation.
+
+After this gate: identify the formal cotangent with the existing inverse
+limit, prove torsion-freeness and finite freeness, and prove that reducing
+the integral dual gives all torsion-valued tangents with the same pairing.
+Then construct the actual Cartier-dual level/limit comparison and period
+pairing, in the existing integrality/equivariance/injectivity/surjectivity/
+strictness order. These remain distinct proof obligations; none is to be
+assumed as a record field or inferred from finite generation alone.
