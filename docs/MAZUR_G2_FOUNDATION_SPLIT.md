@@ -62,9 +62,9 @@ representability and the Jacobian require independent foundations beyond [M].
 
 | Gate | Required statement | Depends on | Dispatch status |
 | --- | --- | --- | --- |
-| P7 | Identify affine scheme line bundles with invertible ring modules, compatibly with tensor/pullback | P4, affine module equivalence | Needs comparison proof |
-| P8 | Build the relative presheaf on `Over S` using actual fiber-product pullbacks and prove its composition laws | P5 | Needs cartesian-square assembly |
-| P9 | Construct line-bundle descent along faithfully flat affine maps; prove effectiveness | P7 | Needs source-level descent subdivision |
+| P7 | Identify affine scheme line bundles with invertible ring modules, compatibly with tensor/pullback | P4, affine module equivalence | Implemented in W2; checks below |
+| P8 | Build the relative presheaf on `Over S` using actual fiber-product pullbacks and prove its composition laws | P5 | Implemented in W2; checks below |
+| P9 | Construct line-bundle descent along faithfully flat affine maps; prove effectiveness | P7 | Coalgebra module descent implemented; geometric cocycle and invertibility descent remain |
 | P10 | Prove fppf descent on schemes and construct relative Picard sheaf with presheaf comparison | P8, P9 | Needs site/base-change subdivision |
 | P11 | Rigidified line bundles have trivial relative automorphisms under universally O-connected proper fibers | P6, cohomology/base change | Needs automorphism and H0 comparison |
 | P12 | Define degree on line bundles on smooth proper curves, prove tensor additivity and base-change invariance | P7, divisor/degree comparison | Needs divisor-class and degree subdivision |
@@ -143,3 +143,80 @@ FermatsLastTheorem. Its guarded axiom check still includes
 `Mazur_statement` and `sorryAx`. P1–P6 are discharged (P2 reused from main);
 P7–P21 and the Mazur endpoint remain open. Reproduction commands and logs
 are indexed in the local untracked `BLOCKED.md`; no push was performed.
+
+
+## W2 implementation and next source split (2026-10-04)
+
+The W1 release sections above describe their historical checks. The current
+W2 sources can be checked with the following individual commands; run them
+sequentially with `LEAN_NUM_THREADS=2`, never whole-library lint:
+
+| Module (`FLT.Mazur.` prefix) | Mathematical output | Read-only checks |
+| --- | --- | --- |
+| AffinePicardSections | Invertibility of affine sections; multiplicative map; injectivity by the actual affine counit | `lake build FLT.Mazur.AffinePicardSections`; `lake exe runLinter FLT.Mazur.AffinePicardSections` |
+| TildeInvertibleLocal | Principal-open trivializations from the finite localization cover of an invertible module, in arbitrary universes | `lake build FLT.Mazur.TildeInvertibleLocal`; `lake exe runLinter FLT.Mazur.TildeInvertibleLocal` |
+| AffinePicardComparison | Multiplicative equivalence with `CommRing.Pic` of actual global sections; naturality for every affine morphism | `lake build FLT.Mazur.AffinePicardComparison`; `lake exe runLinter FLT.Mazur.AffinePicardComparison` |
+| RelativePicardPresheaf | Actual functor on `(Over S)ᵒᵖ`, using fiber products and quotient groups | `lake build FLT.Mazur.RelativePicardPresheaf`; `lake exe runLinter FLT.Mazur.RelativePicardPresheaf` |
+| AffineModuleCoalgebraDescent | A quasi-coherent sheaf from a faithfully flat scalar-extension coalgebra, with pullback reconstruction respecting the coaction and recovery of canonical data | `lake build FLT.Mazur.AffineModuleCoalgebraDescent`; `lake exe runLinter FLT.Mazur.AffineModuleCoalgebraDescent` |
+
+These five foreground builds and individual lints passed on 2026-10-04.
+The per-release untracked `BLOCKED.md` records the final axiom audit, exact
+commits and root integration check. Each module is below 240 physical lines.
+P7 does not require a finite scheme, a Noetherian base, or characteristic
+restrictions. Its group equivalence incorporates tensor compatibility;
+`affineEquiv_pullback` proves compatibility with arbitrary affine pullback.
+The P8 value remains a presheaf value; no fppf sheafness is asserted.
+
+### P9: faithfully flat line-bundle descent
+
+Source proof: [Stacks, Proposition 35.3.9, tag 023N](https://stacks.math.columbia.edu/tag/023N),
+read 2026-10-04. For a faithfully flat map R → A and a cocycle φ on N,
+the descended module is the equalizer
+`{ n ∈ N | 1 ⊗ n = φ(n ⊗ 1) }`. Faithful flatness and the cocycle equation
+prove `A ⊗ M ≅ N`; the source reduces this to the split case after a further
+faithfully flat extension. This is an effectiveness proof, not an existence
+field to assume.
+
+Mathlib `Algebra/Category/ModuleCat/Descent.lean` proves
+`comonadicExtendScalars`. W2 transports this actual equivalence through
+`tilde`, obtaining the sheaf and its reconstruction isomorphism in
+`AffineModuleCoalgebraDescent`. Its `coefficientIso_coaction` checks
+compatibility with the original coalgebra coaction. The input is a module
+with counit/coassociativity data; it contains no descended-object witness.
+
+The following leaves remain, each to be split again if it exceeds 240 lines:
+
+| Leaf | Required output | Dependencies |
+| --- | --- | --- |
+| P9b | Translate a geometric isomorphism between the two pullbacks over `Spec(A ⊗[R] A)`, with diagonal and triple-overlap cocycle equations, into the scalar-extension coalgebra; prove the reverse translation | Affine pullback comparison, tensor associativity, Spec tensor/fiber-product comparison |
+| P9c | Prove invertibility descends under faithfully flat scalar extension; one route is descent of finite presentation/projectivity followed by base-change of dual evaluation and reflection of isomorphisms | Finiteness descent, dual base change, faithfully flat reflection |
+| P9d | Apply P9c to the descended coefficient module, then P7 to obtain a line bundle with its **specified geometric** descent datum | W2 coalgebra sheaf descent, P9b, P9c |
+| P9e | Descend morphisms and isomorphisms compatibly, then glue across affine refinements to obtain the scheme-level stack assertion | P9d, open-cover gluing, base-change coherence |
+
+Mathlib's module-descent file still explicitly marks effective descent for
+the scalar-extension pseudofunctor as TODO. Likewise
+`CategoryTheory/Sites/Descent/DescentDataAsCoalgebra.lean` marks its comparison
+with geometric `DescentData` as TODO. These are the exact unchecked interfaces;
+W2's coalgebra construction does not claim to solve them. P9c is also not a
+consequence of the ring Picard map being injective: Picard pullback along a
+faithfully flat map need not be injective.
+
+### P15: representability source and dependency boundary
+
+Source: [Stacks, Section 44.6, tag 0B9R](https://stacks.math.columbia.edu/tag/0B9R),
+read 2026-10-04, together with [the Picard functor, tag 0B9K](https://stacks.math.columbia.edu/tag/0B9K).
+For a smooth projective pointed curve, the source first proves universal
+H0 base change, identifies the normalized kernel functor with the relative
+Picard sheaf, and constructs an open subfunctor represented by an open of
+`Hilb^g`. The universal divisor is normalized along the point; cohomology
+and base change identify the locus whose derived pushforward is a line
+bundle in degree zero. These open pieces feed the representability proof.
+
+The required proof leaves are: universal H0 comparison; rigidification and
+fppf sheaf comparison; existence of the divisor parameter space and universal
+divisor; openness and base change of the required cohomology locus; the
+universal-divisor/line-bundle bijection; and assembly of the representing
+scheme. The existing P6 normalization and W2 P8 presheaf supply only parts
+of the inputs. No Hilbert scheme, Jacobian, or abelian variety has been
+chosen in place of these proofs. P10–P21 and the unconditional Mazur producer
+remain open; this release does not remove `Mazur_statement`.

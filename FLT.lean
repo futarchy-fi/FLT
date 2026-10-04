@@ -2337,6 +2337,7 @@ public import FLT.Mazur.AffineIdealPowerExtension
 public import FLT.Mazur.AffineImageSectionTransport
 public import FLT.Mazur.AffineIntersectionRestriction
 public import FLT.Mazur.AffineKernelLocalization
+public import FLT.Mazur.AffineModuleCoalgebraDescent
 public import FLT.Mazur.AffineModuleEpimorphisms
 public import FLT.Mazur.AffineModuleExact
 public import FLT.Mazur.AffineModuleGlobalSections
@@ -2345,6 +2346,8 @@ public import FLT.Mazur.AffineModuleSupport
 public import FLT.Mazur.AffineNodeNormalizationExact
 public import FLT.Mazur.AffineOpenCartesianSections
 public import FLT.Mazur.AffineOpenDenominators
+public import FLT.Mazur.AffinePicardComparison
+public import FLT.Mazur.AffinePicardSections
 public import FLT.Mazur.AffinePullbackEpiReflection
 public import FLT.Mazur.AffinePullbackIdeal
 public import FLT.Mazur.AffinePullbackIntersection
@@ -3113,6 +3116,7 @@ public import FLT.Mazur.RelativeCartierIdealPullback
 public import FLT.Mazur.RelativeDirectImageComposition
 public import FLT.Mazur.RelativeDirectImageForgetting
 public import FLT.Mazur.RelativeDirectImageOpenResolution
+public import FLT.Mazur.RelativePicardPresheaf
 public import FLT.Mazur.RelativePicardQuotient
 public import FLT.Mazur.RelativePinchingDescent
 public import FLT.Mazur.RelativePinchingLocalDescent
@@ -3225,6 +3229,7 @@ public import FLT.Mazur.TensorPowerDistribution
 public import FLT.Mazur.TensorPowerGeneratorOpen
 public import FLT.Mazur.TensorPowerReassociation
 public import FLT.Mazur.TernaryOpenDescent
+public import FLT.Mazur.TildeInvertibleLocal
 public import FLT.Mazur.TildePrincipalOpen
 public import FLT.Mazur.TorusChartScalars
 public import FLT.Mazur.UniversallyClosedFiniteCover
