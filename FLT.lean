@@ -1781,11 +1781,13 @@ public import FLT.Mazur.AffineCohomologyVanishingSpectrum
 public import FLT.Mazur.AffineCoverCohomology
 public import FLT.Mazur.AffineCoverIntersections
 public import FLT.Mazur.AffineIdealPowerExtension
+public import FLT.Mazur.AffineIntersectionRestriction
 public import FLT.Mazur.AffineKernelLocalization
 public import FLT.Mazur.AffineModuleExact
 public import FLT.Mazur.AffineModuleSupport
 public import FLT.Mazur.AffineNodeNormalizationExact
 public import FLT.Mazur.AffinePullbackIdeal
+public import FLT.Mazur.AffinePullbackIntersection
 public import FLT.Mazur.AffinePushforwardCohomology
 public import FLT.Mazur.AffinePushforwardQuasicoherent
 public import FLT.Mazur.AffineStalkExtension
@@ -2151,6 +2153,8 @@ public import FLT.Mazur.PolygonCanonicalChartRing
 public import FLT.Mazur.PolygonCanonicalComponent
 public import FLT.Mazur.PolygonCanonicalComponentImages
 public import FLT.Mazur.PolygonCanonicalComponentRatios
+public import FLT.Mazur.PolygonCanonicalDenominatorPolynomial
+public import FLT.Mazur.PolygonCanonicalOverlapRing
 public import FLT.Mazur.PolygonCanonicalSection
 public import FLT.Mazur.PolygonCanonicalTorusTransition
 public import FLT.Mazur.PolygonChartScaling
@@ -2242,6 +2246,8 @@ public import FLT.Mazur.PolygonNormalizationTorusPullback
 public import FLT.Mazur.PolygonNormalizationTransport
 public import FLT.Mazur.PolygonOneGonCompletion
 public import FLT.Mazur.PolygonOneGonDenominator
+public import FLT.Mazur.PolygonOneGonPuncturedPullback
+public import FLT.Mazur.PolygonOneGonTorusIntersection
 public import FLT.Mazur.PolygonPinchingAffineBaseChange
 public import FLT.Mazur.PolygonPinchingDiagram
 public import FLT.Mazur.PolygonPinchingFlatBaseChange
@@ -2253,6 +2259,7 @@ public import FLT.Mazur.PolygonPowerNodeEndpoints
 public import FLT.Mazur.PolygonPowerNodeWeights
 public import FLT.Mazur.PolygonProductAtlas
 public import FLT.Mazur.PolygonProper
+public import FLT.Mazur.PolygonPuncturedCanonicalEquations
 public import FLT.Mazur.PolygonPureDimension
 public import FLT.Mazur.PolygonScalingNaturality
 public import FLT.Mazur.PolygonSeparated
@@ -2260,6 +2267,8 @@ public import FLT.Mazur.PolygonSmoothLocus
 public import FLT.Mazur.PolygonSplitGroup
 public import FLT.Mazur.PolygonSplitNodeCompletion
 public import FLT.Mazur.PolygonSplitNodeDenominator
+public import FLT.Mazur.PolygonSplitPuncturedPullback
+public import FLT.Mazur.PolygonSplitTorusBranches
 public import FLT.Mazur.PolygonStructureInclusion
 public import FLT.Mazur.PolygonTranslationImages
 public import FLT.Mazur.PolygonUniversalAction
@@ -2269,6 +2278,7 @@ public import FLT.Mazur.PowerSeriesQuotientCompletion
 public import FLT.Mazur.PowerSeriesSubstitutionEquiv
 public import FLT.Mazur.PrincipalAffineRefinement
 public import FLT.Mazur.PrincipalLocalizationGeneration
+public import FLT.Mazur.PrincipalLocalizationIntersection
 public import FLT.Mazur.PrincipalLocalizationPullback
 public import FLT.Mazur.PrincipalSubmoduleCoordinates
 public import FLT.Mazur.PrincipalSubmoduleOverlap
@@ -2362,6 +2372,7 @@ public import FLT.Mazur.ProjectiveTwistingSheafTensor
 public import FLT.Mazur.ProperCoherentCohomology
 public import FLT.Mazur.ProperCohomologyWitnesses
 public import FLT.Mazur.ProperCurveGenus
+public import FLT.Mazur.PuncturedNodeRestrictionComparison
 public import FLT.Mazur.PushforwardCech
 public import FLT.Mazur.RationalFibers
 public import FLT.Mazur.RelativeCartier
