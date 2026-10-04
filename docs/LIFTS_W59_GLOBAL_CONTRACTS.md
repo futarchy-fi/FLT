@@ -78,12 +78,14 @@ quotient and coefficient maps.
    permit cancelling a noninvertible exponent. Niveau-two, non-peu branches,
    normalization independence and actual symmetric-power composition
    factors remain. No numerical Serre-weight evaluation is available here.
-2. R1: descend the quotient-twisted **Hopf algebra**, with semilinear cocycle,
-   tensor/comultiplication, counit and antipode compatibility. Prove faithful
-   flat base-change recovery, finite local freeness and the prescribed
-   Galois-equivariant generic fiber. `UnramifiedCharacterIntegers` gives the
-   splitting base; `IntegralQuotientDescent` descends a map through an already
-   constructed quotient. Neither constructs this twisted object.
+2. R1: W63 constructs the actual quotient-twisted Hopf algebra, tensor
+   comparison, triple-overlap cocycle, Hopf-compatible scalar recovery and
+   finite-flat model. `GroupScheme.OrdinaryUnramifiedUnitClass` transports
+   the ordinary filtration and proves the unit class and independent peu
+   condition for finite residual coefficients, small ramification, an
+   unramified quotient and a whole-local cyclotomic Hom character. The
+   whole-local/inertia comparison needed for general S0a3 remains. Check
+   `python3 Scratch/LiftsW63/check.py` for saved source and validation evidence.
 3. Lp0: prove the integral PD-envelope universal property for arbitrary PD
    targets, with p-compatibility, not just minimality within A_inf[1/p].
    `DividedPowerHull`/`ComplexDividedPowerHull` only prove the latter. Prove

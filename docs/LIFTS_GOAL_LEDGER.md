@@ -4,6 +4,45 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
+## W63 — Hopf descent and the ordinary unramified-quotient unit theorem
+
+Validation receipt check: `python3 Scratch/LiftsW63/check.py`. It reports its
+checked-at time and checks source/log hashes, foreground module builds,
+individual-module lint, every new declaration's axioms, and the post-merge
+root build. It checks saved evidence; it does not rerun Lean. Commit IDs and
+the full module inventory are in the untracked `LIFTS_W63_RESULT.md`.
+
+| Item | New modules | Proved scope |
+|---|---|---|
+| Tensor descent | `GroupScheme.TensorScalarComparison`, `TwistTensorMaps`, `TwistTensorRecovery`, `TwistTensorCoherence` | Constructs the tensor comparison on actual fixed algebras, proves bijectivity by faithful flatness and effective recovery, and proves associativity. |
+| Overlap cocycle | `GroupScheme.ScalarRecoveryOverlap`, `AbsoluteGaloisGroup.UnramifiedCharacterTensor` | Pulls recovery through the three coefficient embeddings into the triple tensor overlap and proves the cocycle; discharges recovery for the actual character splitting ring. |
+| Hopf operations | `GroupScheme.TwistHopfOperations`, `TwistPointTensor`, `TwistHopfPoints` | Constructs comultiplication, counit and antipode and identifies their evaluations with the original group operations. |
+| Hopf laws | `GroupScheme.PointCoalgebraLaws`, `PointHopfLaws`, `EtalePointHopf`, `EtalePointCocommutativity`, `TwistHopfDescent` | Generic etale points separate integral coordinates and their tensor powers; derives all Hopf laws and cocommutativity. |
+| Hopf recovery | `GroupScheme.TwistHopfComparison`, `TwistHopfScalarRecovery`, `CharacterIntegralFixedScalars`, `AbsoluteGaloisGroup.UnramifiedCharacterHopf`, `UnramifiedCharacterHopfComparison` | Constructs the arithmetic fixed Hopf algebra, convolution-group equivalence and bialgebra scalar-recovery equivalence, hence antipode compatibility. |
+| Actual model | `GroupScheme.LocalUnramifiedHopfTwist`, `LocalUnramifiedTwistGroupPoints` | Packages the actual fixed coordinates as a finite-flat model; its additive point comparison has the inverse-character Galois action. |
+| Original coefficients and filtration | `Extensions.OrdinaryFiltrationTransport`, `GroupScheme.LocalUnramifiedTwistFiltration` | Transports the original coefficient module and exact filtration; proves preservation of the extracted extension class. |
+| Unit class and non-peu exclusion | `GroupScheme.OrdinaryUnramifiedUnitClass` | Twists by the inverse unramified quotient, applies the integral unit theorem to the actual model, and transports back. The independent cup-annihilator criterion then excludes the non-peu branch. |
+
+The final theorems `ThreeAdicPlan.ordinaryUnramifiedExtensionUnit` and
+`ordinaryUnramifiedExtensionPeu` use finite residual coefficients, an actual
+finite-flat model over a number-field completion, small ramification
+`order(p) < p - 1`, continuous unramified quotient character, and a
+**whole-local** cyclotomic Hom character. Continuity of the original point
+orbits and completeness of the local integers are explicit. The quotient
+need not be trivial. The splitting extension, integral coordinate action,
+Hopf structure, point comparison and unit witness are constructed.
+
+This closes the W62 R1 construction and its ordinary unit-class application
+under those hypotheses. It does not turn an inertia-only character equality
+into a whole-local one or classify arbitrary residual representations.
+Arithmetic Noetherianity of the HR quotient and matched unframed image still
+requires finite arithmetic tangent/presentation input. The finite p-adic
+order carrying the lift additionally needs D3/D4/I0. S0a3 still needs general
+coefficient normalization, whole-local/inertia comparison, full recipe
+independence and symmetric-power composition factors. Lp0 and G0a–G1c remain.
+The endpoint audit in `Scratch/LiftsW63/FinalAxioms.lean` checks that `lifts`
+and `PNat.pow_add_pow_ne_pow` still depend on `sorryAx`.
+
 ## W62 — effective integral algebra descent for unramified twists
 
 Validation receipt check: `python3 Scratch/LiftsW62/check.py`. The check prints
