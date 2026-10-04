@@ -639,6 +639,7 @@ public import FLT.GroupScheme.AugmentationKernelPrecomposition
 public import FLT.GroupScheme.AugmentationTangentRelations
 public import FLT.GroupScheme.AugmentedPolynomialLocalParameters
 public import FLT.GroupScheme.BialgebraBaseChange
+public import FLT.GroupScheme.BialgebraSurjectiveFactor
 public import FLT.GroupScheme.CanonicalCompositionSeries
 public import FLT.GroupScheme.CanonicalFactorFiltration
 public import FLT.GroupScheme.CartierCotangentTensor
@@ -694,6 +695,7 @@ public import FLT.GroupScheme.ConstantCyclicOneFiber
 public import FLT.GroupScheme.ConstantFiltrationPurity
 public import FLT.GroupScheme.ConstantFiniteFlat
 public import FLT.GroupScheme.ConstantGroupModel
+public import FLT.GroupScheme.ConstantGroupMorphisms
 public import FLT.GroupScheme.ConstantGroupPoints
 public import FLT.GroupScheme.ConstantModelIdentification
 public import FLT.GroupScheme.ConstantMuThreeCocycleSplitting
@@ -703,6 +705,14 @@ public import FLT.GroupScheme.ConstantMuThreeKummerValuations
 public import FLT.GroupScheme.ConstantMuThreeSectionCocycle
 public import FLT.GroupScheme.ConstantMuThreeSplitting
 public import FLT.GroupScheme.ConstantMuThreeTorsion
+public import FLT.GroupScheme.ConstantPowerCharacters
+public import FLT.GroupScheme.ConstantPowerCoherence
+public import FLT.GroupScheme.ConstantPowerResidues
+public import FLT.GroupScheme.ConstantRationalCartierPeriod
+public import FLT.GroupScheme.ConstantRationalPowerLevels
+public import FLT.GroupScheme.ConstantRationalPowerSystem
+public import FLT.GroupScheme.ConstantRationalTateAction
+public import FLT.GroupScheme.ConstantRationalTateVectors
 public import FLT.GroupScheme.ContinuousKummerClass
 public import FLT.GroupScheme.ContinuousKummerParameter
 public import FLT.GroupScheme.ConvolutionBaseChange
@@ -1126,8 +1136,17 @@ public import FLT.GroupScheme.QuadraticTwistTensor
 public import FLT.GroupScheme.QuotientFiberFreeness
 public import FLT.GroupScheme.QuotientGroupBasisTransport
 public import FLT.GroupScheme.RationalCartierFirstOrder
+public import FLT.GroupScheme.RationalComponentLifting
+public import FLT.GroupScheme.RationalConnectedComponents
+public import FLT.GroupScheme.RationalConnectedLevelTower
 public import FLT.GroupScheme.RationalCoordinateRegularPresentation
 public import FLT.GroupScheme.RationalCubeValuations
+public import FLT.GroupScheme.RationalCyclotomicRoots
+public import FLT.GroupScheme.RationalIdentityComponent
+public import FLT.GroupScheme.RationalIdentityComponentAntipode
+public import FLT.GroupScheme.RationalIdentityComponentHopf
+public import FLT.GroupScheme.RationalIdentityComponentMaps
+public import FLT.GroupScheme.RationalIdentityComponentModel
 public import FLT.GroupScheme.RationalIntegralExactness
 public import FLT.GroupScheme.RationalIntegralKernel
 public import FLT.GroupScheme.RationalIntegralQuotient
@@ -3060,6 +3079,7 @@ public import FLT.PadicHodgeTheory.ComplexCyclotomicAction
 public import FLT.PadicHodgeTheory.ComplexCyclotomicApproximation
 public import FLT.PadicHodgeTheory.ComplexCyclotomicClosure
 public import FLT.PadicHodgeTheory.ComplexCyclotomicCompleted
+public import FLT.PadicHodgeTheory.ComplexCyclotomicFirstOrder
 public import FLT.PadicHodgeTheory.ComplexCyclotomicGalois
 public import FLT.PadicHodgeTheory.ComplexCyclotomicKernel
 public import FLT.PadicHodgeTheory.ComplexCyclotomicKernelDescent
