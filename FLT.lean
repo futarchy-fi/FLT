@@ -588,6 +588,7 @@ public import FLT.GroupScheme.ConstantMuThreeTorsion
 public import FLT.GroupScheme.ContinuousKummerClass
 public import FLT.GroupScheme.ContinuousKummerParameter
 public import FLT.GroupScheme.ConvolutionBaseChange
+public import FLT.GroupScheme.ConvolutionTensorPower
 public import FLT.GroupScheme.CoordinateOrder
 public import FLT.GroupScheme.CubicKummerCocycle
 public import FLT.GroupScheme.CyclicPowerElimination
@@ -623,6 +624,7 @@ public import FLT.GroupScheme.FiniteFlatQuotientUniverses
 public import FLT.GroupScheme.FiniteFlatRestrictedScalarExtension
 public import FLT.GroupScheme.FiniteFlatScalarExtension
 public import FLT.GroupScheme.FiniteFlatSectionDescent
+public import FLT.GroupScheme.FiniteFlatSquareZeroLifting
 public import FLT.GroupScheme.FiniteFlatSubobject
 public import FLT.GroupScheme.FiniteFlatSubobjectUniverses
 public import FLT.GroupScheme.FiniteFlatSubquotientBaseChange
@@ -764,6 +766,7 @@ public import FLT.GroupScheme.PDivisibleIntegralTangent
 public import FLT.GroupScheme.PDivisibleRationalCotangent
 public import FLT.GroupScheme.PDivisibleRationalPlaceTransport
 public import FLT.GroupScheme.PDivisibleRationalTateAction
+public import FLT.GroupScheme.PDivisibleSquareZeroLifting
 public import FLT.GroupScheme.PDivisibleSystem
 public import FLT.GroupScheme.PDivisibleSystemCategory
 public import FLT.GroupScheme.PDivisibleTangentNaturality
@@ -1057,6 +1060,10 @@ public import FLT.GroupScheme.SplitKummerGeneralPointLaw
 public import FLT.GroupScheme.SplitKummerModel
 public import FLT.GroupScheme.SplitKummerPointLaw
 public import FLT.GroupScheme.SplitKummerResidue
+public import FLT.GroupScheme.SquareZeroConvolution
+public import FLT.GroupScheme.SquareZeroConvolutionLift
+public import FLT.GroupScheme.SquareZeroLiftNaturality
+public import FLT.GroupScheme.SquareZeroPointLift
 public import FLT.GroupScheme.StableSubgroupExtension
 public import FLT.GroupScheme.SupportedKummerCubes
 public import FLT.GroupScheme.SupportedKummerValuations

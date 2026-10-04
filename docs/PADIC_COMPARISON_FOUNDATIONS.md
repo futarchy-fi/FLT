@@ -1359,3 +1359,31 @@ commuting maps of square-zero test-algebra thickenings. The convolution
 precomposition identity is a separate lemma in `ConvolutionTensorPower`,
 still within its cap. These are equalities of the constructed points, not
 new coherence hypotheses on a p-divisible system.
+
+### W38 implementation boundary
+
+`FF.exists_multiply_lift` and `PDivisibleSystem.exists_pow_point_lift`
+construct actual algebra-valued lifts of multiplication. Both ordered
+transition composites have corresponding lifting theorems using the
+system's specified inclusion and reduction maps. `squareZeroPointLift`
+is independent of all linear-lift choices, reduces to the original
+convolution power, agrees with the N-th power of any existing algebra
+lift, and commutes with source bialgebra morphisms and maps of test-algebra
+thickenings. No replacement integral model is chosen.
+
+The full infinitesimal-surjectivity gate remains open. A geometric route
+must construct local division points across a lifted flat cover and then
+descend their lifts. Merely knowing fppf-local divisibility on the quotient
+does not provide that cover or a descended point. Identifying differences
+of local lifts with a quasi-coherent infinitesimal kernel and proving its
+descent on affine test schemes are additional mathematical obligations.
+These require separate capped source proofs before implementation.
+
+Accordingly, this wave does not identify a formally smooth object's
+cotangent, prove cotangent-limit torsion-freeness, prove reduction of the
+integral dual, or construct the Cartier-dual limit/period pairing. S1–S5
+are prerequisites for S7, not a proof of S7. The admission-removal target
+is unchanged. Validation commands, checked time, and explicit remaining
+obligations are recorded in the untracked `FAMILY_W38_DONE.md`; per-module
+builds, individual lints, and named axiom audits must be rerun to refresh
+its snapshot.
