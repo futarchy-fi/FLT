@@ -1089,3 +1089,125 @@ fixed-residue scalar subtraction and the reverse B_dR fixed-field inclusion;
 then the explicit comparison contracts, coefficient decomposition and both
 graded ranks. The general family theorem is unchanged. These new analytic
 and graded endpoints do not by themselves remove its `sorryAx` dependency.
+
+## W36 invariant-order split (before implementation)
+
+Each complete new module is capped at 150 lines. `ComplexInvariantOrder`
+uses the DVR unit-times-integer-power decomposition in the original field,
+passes its invariant representative to the actual graded quotient, and
+uses the nonzero residue of a unit to force degree zero.
+`ComplexFixedResidue` descends the resulting integral representative's
+fixed residue to the original Q_p and subtracts that scalar; it proves
+that a fixed integral element with zero residue must vanish.
+`ComplexDeRhamFixedScalars` combines these proofs to identify the fixed
+field with the image of the original Q_p embedding and proves uniqueness.
+No fixed-field or comparison conclusion is added as an assumption.
+
+W36 rational-place refinement (caps 150): `AlgebraicClosureGaloisTransport`
+constructs conjugation of actual closure automorphisms along a base-field
+isomorphism, with the commuting evaluation formula.
+`PDivisibleRationalPlaceTransport` specializes the actual continuous field
+and integer-ring identifications and their commuting square, and fixes one
+compatible closure/Galois identification. `PDivisibleRationalTateAction`
+uses this identification on the original system's coherent sequences and
+proves evaluation equivariance; it does not replace those sequences with
+an unrelated representation. Continuity and coordinate base transport
+must be proved where used in the comparison construction.
+
+W36 cotangent refinement (caps 150): `FiniteFlatCotangent` defines the
+actual augmentation ideal modulo its square and induces maps from the
+specified integral Hopf maps, proving identity, composition and
+surjectivity for closed immersions. `PDivisibleCotangentTransitions`
+specializes to both original level maps and proves their coherence and
+multiplication factorizations. `PDivisibleCotangentLimit` constructs the
+inverse limit along inclusions, with its actual projections and
+functoriality. Finite-level cotangents are torsion: their integral linear
+duals cannot be substituted for the tangent module of the p-divisible
+group. Tangent/Cartier compatibility therefore remains a separate proof
+obligation after these constructions.
+
+W36 continuity refinement (cap 150): `AlgebraicClosureGaloisContinuity`
+identifies the chosen conjugation with the continuous restriction map on
+actual closures; compactness gives continuity of its same inverse.
+The rational-place specialization and the action on the original Tate
+module then retain their actual Krull and inverse-limit topologies.
+
+W36 tangent refinement (caps 150): `AugmentationTangent` defines Leibniz
+functionals with values in an arbitrary base module and proves descent
+through the actual augmentation square. `AugmentationTangentEquiv`
+identifies these functionals with linear maps from the actual cotangent
+quotient. `CartierDualTangent` identifies scalar-valued tangent functionals
+with primitive elements of the actual integral Cartier dual, using its
+proved perfect coordinate pairing. These are finite-level algebraic
+inputs; a p-divisible tangent/dual limit comparison and an actual period
+pairing are further obligations, not consequences of giving these names.
+
+W36 tangent naturality refinement (cap 150): `FiniteFlatTangentNaturality`
+constructs precomposition by the original integral model map, proves
+Leibniz and compatibility with the cotangent equivalence. The construction
+retains arbitrary target modules, and so applies after taking torsion
+coefficients. The Cartier identification is natural under the actual
+transposed coordinate maps, rather than an independently chosen pairing.
+
+W36 cotangent lifting refinement (cap 150):
+`PDivisibleCotangentSurjective` constructs successive actual lifts of a
+prescribed level cotangent and proves coherence at all ordered levels.
+This proves each inverse-limit evaluation is surjective without imposing
+finiteness of the underlying cotangent sets or assuming a limit-lifting
+property. `FiniteFlatCartierTangent` specializes finite-level tangent and
+Cartier naturality to the actual finite-flat models.
+
+### W36 implementation boundary
+
+The original period fixed-field endpoint now has unconditional entry points
+`complexDeRham_fixed_unit_exponent_eq_zero`,
+`complexDeRham_fixed_exists_unit`,
+`complexDeRham_fixed_eq_residue_scalar`, and
+`complexDeRham_fixed_iff_mem_range`. Nonzero field invariants have order
+zero; subtracting their unique original Q_p residue scalar leaves a fixed
+integral element with zero residue, which must vanish. Both B_dR and
+B_dR+ have exactly the original Q_p image as their invariant elements.
+
+The rational-place field and integer maps commute with their actual
+inclusions. `rationalPlaceGaloisContinuousEquiv` uses one chosen compatible
+closure map in both directions. `rationalTateAction` preserves the
+original Tate module, with its original finite-level evaluations and
+reductions, and is jointly continuous for its existing topology. No
+unrelated representation or fresh finite-flat model replaces that system.
+
+The actual augmentation cotangent quotients now have surjective inverse
+transitions, coherent opposite pullbacks and both multiplication-morphism
+factorizations. `cotangentLimit` is their actual inverse limit;
+`cotangentEval_surjective` constructs compatible lifts of every level
+cotangent. These facts do not yet identify the differential of
+multiplication by n with scalar multiplication by n.
+
+`augmentationTangentEquiv` represents tangent functionals with arbitrary
+module coefficients by maps from the actual augmentation quotient.
+`cotangentPrimitiveEquiv` identifies its scalar dual with primitive
+elements of the actual integral Cartier dual. The finite-flat
+specializations commute with the original integral morphisms and their
+Cartier transposes. No interchange of inverse limits and duals, finite
+freeness of the cotangent limit, or p-divisible tangent comparison is
+asserted by these finite-level results.
+
+Next bounded leaves before closing `PDivisibleTangentDuality`:
+
+1. Prove the cotangent differential of convolution addition and of
+   multiplication by n; specialize to the original p-power levels.
+2. Prove the required integral cotangent-limit finiteness and reduction
+   comparisons, then construct the corresponding tangent object. Split
+   the needed formal-smoothness or deformation-theoretic input before
+   implementation; it is not supplied by the inverse-limit definition.
+3. Construct the Cartier-dual level/limit system and prove the required
+   tangent/dual compatibility with those same integral identifications.
+4. Construct the actual period pairing; prove integrality, equivariance,
+   injectivity, surjectivity and filtration strictness in the existing
+   comparison-contract order. Coefficient components, support,
+   determinant compatibility and both graded ranks follow only after it.
+
+All these are proof obligations. The general family theorem is unchanged;
+the fixed-field and finite-level duality theorems do not remove its
+`sorryAx`. Recheck every new module with its foreground module build,
+individual lint and `#print axioms`; FAMILY_W36_DONE.md records the
+checked snapshot and its local evidence files.
