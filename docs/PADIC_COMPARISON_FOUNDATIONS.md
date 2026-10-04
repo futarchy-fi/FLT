@@ -1352,3 +1352,10 @@ of the same point have identical convolution powers, and an existing
 algebra lift is sent to its original N-th power. It retains the exact
 quotient map. This independence result is needed for future descent; it
 does not assert that a division point or a descent datum exists.
+
+W38 naturality refinement (cap 150): `SquareZeroLiftNaturality` proves
+compatibility of the canonical lift with actual bialgebra source maps and
+commuting maps of square-zero test-algebra thickenings. The convolution
+precomposition identity is a separate lemma in `ConvolutionTensorPower`,
+still within its cap. These are equalities of the constructed points, not
+new coherence hypotheses on a p-divisible system.
