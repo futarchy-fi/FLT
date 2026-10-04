@@ -4,6 +4,29 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
+## W43 — integral ordinary models, weight specification, and universe transport
+
+The W43 status supersedes the “next bounded gates” statuses in the historical
+W42 section below. Validation receipt: `python3 Scratch/LiftsW43/check.py`;
+its output supplies the checked-at time and verifies saved logs/source hashes,
+not a fresh Lean run. The receipt must pass before these items are considered
+validated.
+
+| Item | Constructed result | Still required |
+|---|---|---|
+| R1a1 | `GroupScheme.OrdinaryFiltrationModels`: schematic submodel and contracted quotient in the specified middle model, canonical integral extension, original injection/projection and coefficient-linear point maps. | Automatic ordinary filtration extraction, integral coefficient endomorphisms, multiplicative/étale model identifications, unramified twist descent. The existing W42 exact filtration is the input. |
+| R1b1, partial | `GroupScheme.IntegralQuotientPointFiber`: actual tensor-product fibre over an integral point of the contracted quotient, finite faithfully flat over the base. | Specialize to the point one of an identified constant quotient, construct the multiplicative torsor action, derive an integral unit, and prove normalized generic-class compatibility. No unit witness is supplied. |
+| S0a1 | `SerreWeight.NormalizedRecipe`: source-matched finite branch table, scalar and p=3 cases, normalized bounds. | Arithmetic extraction, normalization and full twist invariance. This is branch data, not a Serre-weight evaluation. |
+| S0a3 specification | [Numerical convention](LIFTS_NUMERICAL_WEIGHT_CONVENTION.md): least classical weight >=2 via symmetric-power composition factors. | Existence and comparison theorem before implementing `serreWeight`. |
+| C1u | `HardlyRamified.ResidualCyclotomicUniverses`: absolute irreducibility on the cyclotomic kernel at the exact independent universes of `lifts`. | No remaining universe gate for this restriction theorem. It does not construct a lift. |
+| Lp0 / L20 | [Local conditions](LIFTS_LOCAL_CONDITION_CONTRACTS.md) matches KW II; `SpecifiedTwoQuotient` preserves a fixed quotient under conjugation and coefficient extension. | Integral crystalline comparison, character-lift construction and arithmetic local rings. |
+| D1a first leaf | `Deformations.OpenIdealCondition`: quotient by a proper open ideal corepresents its actual kernel condition; factor, uniqueness, continuity and naturality proved. | Arbitrary closed ideals, identification of arithmetic local ideals and effectivity. |
+
+The global lifting admission is unchanged. The restrictions against supplied
+isomorphisms, supplied evaluations and conclusion-bearing model fields remain.
+All new modules are <=200 lines; existing Lean modules are unchanged except
+sorted imports in `FLT.lean`.
+
 ## W42 — actual ordinary representations and corrected downstream gates
 
 W42 constructs the actual continuous Hom-valued class of an exact two-line

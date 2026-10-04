@@ -6,6 +6,25 @@ finite-flat/unit theorem. Recheck with `python3 Scratch/LiftsW42/audit-next.py`;
 that command records its time, source hashes and the actual searches. Saved
 external sources and their URLs/hashes are in `Scratch/LiftsW42/sources.json`.
 
+## W43 delta
+
+`OrdinaryFiltrationModels` now constructs the schematic submodel, contracted
+quotient and integral extension for a supplied W42 ordinary generic filtration
+on the points of a chosen model. It preserves the actual coefficient-linear
+point maps. Integral coefficient actions and multiplicative/étale integral
+identifications are not supplied or proved by this construction.
+`IntegralQuotientPointFiber` constructs the fibre over an actual integral point
+of that quotient and proves it finite faithfully flat. The multiplicative
+torsor identification, integral-unit parameter and W42 generic-class comparison
+remain R1a2/R1b1–3. The existing order-three identification theorems are over
+`ZInvTwo` and do not provide arbitrary-prime local identifications.
+
+The normalized weight table below is now encoded in `NormalizedRecipe`.
+See [the numerical convention](LIFTS_NUMERICAL_WEIGHT_CONVENTION.md) for the
+separate classical-weight specification; no S1 evaluation is available.
+Validation receipt: `python3 Scratch/LiftsW43/check.py` (saved checks and source
+hashes; it prints checked-at time and does not rerun Lean).
+
 ## The proved representation input
 
 `OrdinaryFiltration ρ α β` is an exact sequence of the actual representations
