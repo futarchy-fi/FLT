@@ -1457,3 +1457,82 @@ Validation is reproducible through `W39_FINAL_CHECKS.py` and the commands
 in untracked `FAMILY_W39_DONE.md`; that report carries the checked time,
 local commits and evidence. New modules are built in the foreground,
 linted individually, and all named declarations receive an axiom audit.
+
+## W40 cover-deformation and infinitesimal-descent split
+
+Source check: Mathlib revision `c32e1ec0d1eb5237ba344eee50162f45d5b0fc76`.
+Every row is a complete new module capped at 150 lines. Ready rows are
+implemented in table order; dependencies still missing are stated explicitly.
+No row supplies formal smoothness or a correcting cochain as an input field.
+
+| Leaf / module | Exact obligation and source match | Readiness / dependencies | Cap |
+|---|---|---|---:|
+| L6b.1 / MonicCoverLifting | Lift a positive-degree monic polynomial through a surjection, retaining its degree; its root algebra is a faithfully flat finite free cover and maps to the original root algebra. Mathlib `Polynomial.lifts_and_natDegree_eq_and_monic`, `Monic.free_adjoinRoot`, `AdjoinRoot.mapAlgHom`. | Ready. This is a monic local-presentation case, not a presentation theorem for the division cover. | 150 |
+| L6b.2 / DivisionCoverPresentation | Refine the actual L6a cover by local presentations whose equations admit flat lifts; retain the map from the original division algebra and jointly surjective charts. | Missing mathematical proof. Arbitrary finite-flat algebras cannot simply be declared liftable. Monic presentations from L6b.1 cannot be assumed for L6a. | 150 |
+| L6b.3 / DivisionCoverDeformation | Lift each chosen presentation, prove flatness via its relation criterion and lift the covering condition across the nilpotent ideal. | Depends on L6b.2; Mathlib smooth lifting requires an already formally smooth source and does not establish this obligation. | 150 |
+| L6b.4 / LiftedDivisionCover | Assemble the lifted charts into a faithfully flat B-cover and identify its reduction with a refinement supporting the original division point. | Depends on L6b.2–3; retain all quotient and division maps. | 150 |
+| L7a.1 / FlatReductionKernel | Identify the kernel of the actual tensor algebra map with the tensor of the original reduction kernel, including evaluation on pure tensors. Mathlib `LinearMap.tensorKerEquiv` in `Flat.Equalizer`. | Ready independently of L6b. | 150 |
+| L7a.2 / SquareZeroReductionBaseChange | Prove surjectivity, square-zero kernel and annihilator preservation for the actual base-changed reduction. Mathlib `Algebra.TensorProduct.lTensor_ker`, `Ideal.map_pow`, tensor map surjectivity. | Ready after L7a.1; uses the actual ring map, not an abstract replacement module. | 150 |
+| L7a.3 / AugmentationKernelNaturality | Construct maps on the actual reduction kernels and augmentation points for a commuting square; prove tangent extraction and reconstruction commute pointwise. | Ready after the W39 kernel equivalence; does not assert Hom/tensor commutation. | 150 |
+| L7a.4 / InfinitesimalConvolutionAddition | Show convolution of augmentation points corresponds to addition of tangents using square-zero products and the counit identities. | Separate tensor-induction proof; needed before transporting the group cocycle to an additive one. | 150 |
+| L7a.5 / InfinitesimalKernelQuasiCoherent | Identify the colimit kernel with a tensor module, respecting base change, original inclusions and the actual cotangent pairing. | Requires a justified Hom/base-change argument; finite-level cotangent modules are not assumed projective. L7a.1 alone does not prove this. | 150 |
+| L7b.1 / AmitsurDegreeOneMaps | Define the two alternating coface maps on module-valued double/triple tensors and prove their composite is zero. | Ready source algebra: tensor universal property and associativity. | 150 |
+| L7b.2 / AmitsurSplitContraction | Given a linear retraction of the unit, contract a degree-one cocycle by evaluating its first tensor factor; prove the correcting coboundary identity. | Depends on L7b.1. The retraction will come from multiplication after base change, not be assumed on a general cover. | 150 |
+| L7b.3 / AmitsurFaithfullyFlatExact | Tensor the complex with the cover, use multiplication to contract it, and reflect exactness. Mathlib `Module.FaithfullyFlat.lTensor_reflects_exact`. | Depends on L7b.1–2 and explicit associativity comparisons. The degree-zero `IsEffective` theorem does not suffice. | 150 |
+| L7b.4 / InfinitesimalFiniteStageCorrection | Apply degree-one exactness to the actual discrepancy; represent the resulting colimit correction and all equalities at a common original finite level. | Depends on L6b.4, L7a.4–5, L7b.3 and the original directed-colimit equality criterion. | 150 |
+
+Mathlib `Smooth.Basic` (`FormallySmooth.exists_lift`,
+`FormallySmooth.iff_comp_surjective`) assumes the formal smoothness that
+this gate seeks to prove. `Smooth.Quotient` lifts smoothness of an already
+flat algebra across a thickening; it does not construct that flat algebra.
+`Flat.FaithfullyFlat.Descent` reflects injectivity/surjectivity, and
+`TensorProduct.IncludeLeftSubRight` proves degree-zero exactness only.
+The Cech files found under `CategoryTheory.Sites.SheafCohomology` and
+`AlgebraicTopology` do not directly supply this affine module-valued
+Amitsur degree-one calculation. These are API matches and explicit gaps,
+not a citation to an unverified general smoothness theorem.
+
+L8/L9 and all W39 cotangent/period-comparison gates remain downstream.
+
+W40 refinement before L7b.2–3 implementation: use the multiplication
+contraction directly on the complex after tensoring with S. Its map
+`S ⊗ (S ⊗ M) → S ⊗ M` multiplies the first two factors. Thus the
+`AmitsurSplitContraction` leaf proves this explicit base-changed homotopy,
+without introducing a hypothetical linear retraction of S → R. The
+`AmitsurFaithfullyFlatExact` leaf then reflects exactness. This avoids a
+separate change-of-base-ring identification and keeps both caps at 150.
+
+### W40 implementation boundary
+
+L6b.1, L7a.1–4 and L7b.1–3 are implemented in the eight named modules.
+The monic-cover theorem constructs a finite free faithfully flat root
+algebra over B with the original root and coefficient comparison to C.
+It does not turn L6a's division cover into a monic presentation, or assert
+that an arbitrary flat cover lifts.
+
+The base-change comparison identifies the actual tensor algebra kernel,
+with its pure-tensor formula. Surjectivity and the square-zero property
+survive arbitrary base change; the kernel comparison and annihilator
+transport use flatness. Tangent extraction/reconstruction commute with
+actual maps of thickenings, and convolution becomes addition on the
+actual augmentation kernel. These statements do not commute Hom with
+tensor for a nonprojective cotangent module.
+
+The Amitsur modules prove degree-one exactness for every module M and
+every faithfully flat R-algebra S, with explicit double/triple tensor
+maps and a multiplication contraction after base change. In particular,
+each cocycle in S tensor S tensor M has an actual correcting cochain in
+S tensor M. No quasi-coherence or correction-existence hypothesis is
+hidden in a record. This removes the abstract affine degree-one
+exactness gap, but does not identify the original colimit point kernel
+with such a tensor module or put its correction at an original finite
+level.
+
+Remaining in order: L6b.2–4 (presentation/refinement, deformation and
+assembly of the lifted division cover), L7a.5 (the actual quasi-coherent
+kernel identification), L7b.4 (original finite-stage correction), L8/L9,
+and the previously listed formal-cotangent and period-comparison gates.
+The family admission is unchanged. Reproduce the validation via
+`W40_MODULES.txt`, individual build/lint commands, `W40_AXIOMS.lean`,
+`W40_BOUNDARY_AXIOMS.lean` and `W40_FINAL_CHECKS.py`; the untracked
+`FAMILY_W40_DONE.md` records the checked time and exact local commits.
