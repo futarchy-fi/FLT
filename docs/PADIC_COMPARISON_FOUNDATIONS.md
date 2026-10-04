@@ -2437,3 +2437,76 @@ Recheck the implementation with the foreground module builds, individual
 module lints, and named axiom audits recorded in `FAMILY_W51_DONE.md`.
 The handoff records timestamps, commits, and the post-merge root build;
 this section specifies the theorem boundary rather than a live CI status.
+
+## W52: cotangent freeness and reduction of the original integral tangent
+
+The first two obligations after W51 are proved. Formal smoothness is applied
+to actual split square-zero test algebras to obtain functional lifting;
+freeness is a consequence, never a hypothesis in the system-level results.
+Every new module below is capped at 150 whole-file lines.
+
+| Leaf | Module | Proved output |
+|---|---|---|
+| F1 | `AugmentationCotangentNaturality` | Changing test algebras postcomposes the original cotangent functional with the specified reduction-kernel map. |
+| F2 | `PDivisibleCotangentKernelLifting` | W51's nilpotent lifting theorem lifts every represented kernel-valued functional across a surjective square-zero map of test algebras. |
+| F3 | `Mathlib.RingTheory.SplitSquareZeroTest` | The kernel of S plus M is M; module surjections give surjective algebra maps with square-zero kernel, preserving p-nilpotence. |
+| F4 | `PDivisibleCotangentFunctionalLifting` | For every p-nilpotent R-algebra S and every surjection of S-modules M to N, each R-linear functional from the original cotangent limit to N lifts to M. |
+| F5 | `Mathlib.RingTheory.PrincipalPowerTorsion` | In a free module over R/(a^(n+1)), a-torsion is divisible by a^n, by cancellation in the domain R. |
+| F6 | `PDivisibleCotangentPrimeInjective` | Functional lifting into free modules over R/(p^(n+1)) proves multiplication by p injective on the original cotangent inverse limit. |
+| F7 | `PDivisibleCotangentFree` | DVR factorization gives torsion-freeness; prior finite generation gives finite freeness, also at the original rational place. |
+| D1 | `Mathlib.LinearAlgebra.FreeDualReduction` | The integral dual of a free module modulo a is all R/(a)-valued functionals, with the original evaluation formula. |
+| D2 | `PDivisibleIntegralTangentReduction` | The original integral tangent modulo p^n is all functionals on the original level-n cotangent, equivalently its already defined Leibniz tangents. |
+| D3 | `PDivisibleIntegralTangentReductionNaturality` | Reduction preserves original system maps and is independent of the auxiliary base identification; includes the original rational-place pairing. |
+| D4 | `PDivisibleIntegralTangentCoefficients` | Tensoring the integral tangent with any coefficient module gives all cotangent-limit functionals, and all original level functionals for p-power torsion coefficients. |
+| D5 | `PDivisibleIntegralInfinitesimal` | Tensoring the integral tangent with an actual square-zero reduction kernel represents the actual original infinitesimal point colimit and retains its finite-level pairing. |
+| D6 | `PDivisibleIntegralPairingPerfect` | The original integral evaluation pairing is perfect; the cotangent is its tangent's full integral dual. |
+
+### Why infinitesimal lifting proves torsion-freeness
+
+Let x in the original limit satisfy p*x = 0. At each n, equip the original
+level-(n+1) cotangent with its R/(p^(n+1))-action and choose a finite free
+surjection onto it. F4 lifts the original evaluation map through that
+surjection. The lifted image of x is killed by p. Coordinate cancellation
+in F5 makes it divisible by p^n. Its image in the original level-n
+cotangent therefore vanishes. The original inverse-limit extensionality
+then gives x = 0. Factoring every nonzero p-adic scalar as a unit times a
+power of p proves full torsion-freeness. This argument constructs no
+complete representing coordinate algebra and needs none.
+
+The dual reduction comparison sends the class of an integral functional d,
+evaluated on the original level-n image of x, to d(x) modulo p^n. Its
+surjectivity follows from the proved cotangent freeness. For arbitrary
+module coefficients M, the tensor comparison sends d tensor a to the
+functional x ↦ d(x)*a. W51's identification then gives the actual
+infinitesimal-point comparison for every square-zero reduction with
+p-nilpotent source. These are integral tangent statements; they do not
+identify Tate sequences with a period-module basis.
+
+### Remaining Cartier and period boundary
+
+The W29 D2 contracts still require a Cartier-dual level system and a period
+comparison. In particular, `RaynaudCartierDual` supplies individual local
+Cartier-dual models and transposed maps, but does not assemble a dual
+`PDivisibleSystem`. Several existing extension-duality theorems concern
+`FiniteFlatObject` with generic field Q, so they cannot be applied to the
+original rational-place completion without proving the corresponding local
+statements. The next proof-sized split is:
+
+| Next leaf, cap 150 each | Required artifact |
+|---|---|
+| C1 | Transpose the original reduction/inclusion maps; prove identity, composition and both multiplication factorizations on the actual dual coordinate algebras. |
+| C2 | Prove dual closedness and faithful flatness over the local base, including the actual residue-base-change maps. |
+| C3 | Prove the actual dual augmentation-kernel equation, annihilation and coordinate rank; assemble the dual p-divisible system. Split this leaf further before exceeding the cap. |
+| C4 | Construct the dual Tate limit, its original transition/evaluation pairings and compatibility with integral tangent coefficient extension. |
+| P1 | Construct the period pairing from these particular points and the existing period rings; prove its coefficient and level compatibilities. |
+| P2–P6 | Prove integrality, original Galois equivariance, injectivity, surjectivity and filtration strictness, respectively; each remains a separate proof obligation. |
+| W1–W3 | Prove coefficient-embedding decomposition, the two-weight support and the determinant calculation forcing rank one in each prescribed degree. |
+
+No record introduced here assumes a comparison isomorphism or any of these
+remaining conclusions. `IsHardlyRamified.mem_isCompatible` is unchanged
+and still has the existing admission. The later compatible-family
+realization and the final delegation of that admission remain outstanding.
+
+Validation is reproducible with the individual foreground builds, sequential
+module-only lints and named axiom audits recorded in the untracked
+`FAMILY_W52_DONE.md`, `W52_VALIDATION.json` and `W52_AXIOMS.log`.
