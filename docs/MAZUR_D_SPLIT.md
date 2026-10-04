@@ -117,3 +117,64 @@ and Quot.sound. Each new module is 51–92 lines. After merging origin/main
 jobs, including the root and FermatsLastTheorem. Root imports are sorted and
 `git diff --check` passed. The guarded final theorem audit still includes
 Mazur_statement and sorryAx; the arithmetic leaves above are not closed.
+
+## D-W2: projective reduction foundation leaves
+
+A1-F1 is larger than one 240-line module. Work first constructs actual projective
+reduction, including singular reductions; it does not replace singular points by
+infinity. The following leaves precede the subgroup and homomorphism assertions.
+
+| Item | Module under `FLT/Mazur/` | Cap | Output |
+| --- | --- | ---: | --- |
+| A1-F1a.i | ValuationProjectiveNormalization | 240 | Every nonzero finite coordinate vector has an integral representative with a unit coordinate; primitive representatives equivalent over the fraction field differ by an integral unit. |
+| A1-F1a.ii | EllipticProjectiveReduction | 240 | Choice-independent projective reduction on actual generic-fiber points, satisfying the reduced equation even at bad reduction. |
+| A1-F1a.iii | EllipticSmoothReduction | 240 | Nonsingular-reduction locus, infinity fiber, and compatibility with negation; no claim of additive closure until proved. |
+| A1-F1a.iv | EllipticReductionInfinityChart | 240 | Identify the infinity fiber by vanishing of the reduced Z coordinate; establish its integral formal-parameter chart. |
+| A1-F1b.i | EllipticSmoothReductionAddition | 240 | Prove nonsingular-reduction locus closed under addition using integral group-law charts, including opposite reductions. |
+| A1-F1b.ii | EllipticReductionKernel | 240 | Package the proved locus as E₀, its reduction homomorphism, and E₁ as the kernel; compare with formal coordinates. |
+
+Formal multiplication, Néron components and the subsequent arithmetic leaves stay
+in the order above. A set closed under negation alone does not close A1-F1.
+
+### D-W2 implementation boundary
+
+The four A1-F1a leaves above are implemented. `projectiveReduction` accepts actual
+generic-fiber projective points of any integral Weierstrass equation over a
+valuation subring, with no good-reduction or algebraic-closure assumption. Its
+primitive reduced coordinates are nonzero and satisfy the special cubic. Singular
+reductions remain singular projective classes. `SmoothReduction` and
+`InfinityReduction` are predicates on these actual points, stable under negation;
+`smoothReductionPoint` maps the former locus to actual smooth special-fiber points.
+They have **not** been promoted to subgroups.
+
+`infinityReduction_affine_iff` identifies the infinity fiber with the failure of
+joint integrality of the affine coordinates. `exists_infinity_parameters` constructs
+the actual integral coordinates t = -X/Y and s = -Z/Y in the maximal ideal and
+proves s = t³ + a₁ts + a₂t²s + a₃s² + a₄ts² + a₆s³. It does not construct a power
+series expressing s in terms of t or a formal multiplication law.
+
+The first remaining statements are:
+
+- `SmoothReduction A W P → SmoothReduction A W Q → SmoothReduction A W (P + Q)`.
+- The reduction of that sum equals the sum of `smoothReductionPoint` values.
+
+The generic projective addition formulas do not directly prove these statements:
+Mathlib `Projective/Formula.lean`, `addXYZ_self`, gives the zero vector on coincident
+inputs. Distinct generic points can have coincident reductions, so reducing their
+secant formula can give zero rather than a primitive vector. `Projective.map_add`
+only transports through field homomorphisms and does not apply to the residue map.
+Integral group-law charts or explicit exceptional-denominator arguments still
+need construction. Existing `PointReductionAddition`/`PointReductionKernel` APIs
+package addition using an elliptic special fiber, so they cannot directly supply
+these bad-reduction statements.
+
+After those statements: package E₀ and the reduction homomorphism, define E₁ as
+its kernel, then implement A1-F2/F3. A1-C1 (Néron model/components and bounds),
+A1-S1/S2, A1-C2/C3/Cp, and G2-D5/D6 remain unimplemented here. No later arithmetic
+leaf is closed by the projective-coordinate foundation.
+
+Validation of these leaves: four foreground module builds and four individual
+module linters pass; all 28 new theorems have only propext, Classical.choice and
+Quot.sound in their axiom sets. Modules have 108, 135, 134 and 135 physical lines,
+respectively, against the 240-line caps. Re-run the axiom checks with
+`lake env lean Scratch/MazurDW2/Axioms.lean` (untracked validation artifact).

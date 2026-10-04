@@ -2544,6 +2544,9 @@ public import FLT.Mazur.DivisorStalkLength
 public import FLT.Mazur.DivisorTensorSequence
 public import FLT.Mazur.DivisorTwistedDegree
 public import FLT.Mazur.DivisorTwistedSequence
+public import FLT.Mazur.EllipticProjectiveReduction
+public import FLT.Mazur.EllipticReductionInfinityChart
+public import FLT.Mazur.EllipticSmoothReduction
 public import FLT.Mazur.EtaleCoordinate
 public import FLT.Mazur.EtaleDimGe
 public import FLT.Mazur.EtaleDimLe
@@ -3229,6 +3232,7 @@ public import FLT.Mazur.TernaryOpenDescent
 public import FLT.Mazur.TildePrincipalOpen
 public import FLT.Mazur.TorusChartScalars
 public import FLT.Mazur.UniversallyClosedFiniteCover
+public import FLT.Mazur.ValuationProjectiveNormalization
 public import FLT.Mazur.VeryAmpleAffineSections
 public import FLT.Mazur.VeryAmplePresentationBaseChange
 public import FLT.MazurChapter.AdmissibleGroupSchemes
