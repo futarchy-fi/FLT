@@ -138,6 +138,7 @@ public import FLT.Deformations.IsProartinian
 public import FLT.Deformations.IsResidueAlgebra
 public import FLT.Deformations.Lemmas
 public import FLT.Deformations.LiftFunctor
+public import FLT.Deformations.OpenIdealCondition
 public import FLT.Deformations.ProartinianQuotients
 public import FLT.Deformations.Representable
 public import FLT.Deformations.RepresentationTheory.AbsoluteGaloisGroup
@@ -153,6 +154,7 @@ public import FLT.Deformations.RepresentationTheory.CyclotomicGeneratorTrace
 public import FLT.Deformations.RepresentationTheory.CyclotomicInertiaDetection
 public import FLT.Deformations.RepresentationTheory.CyclotomicQuadraticDetection
 public import FLT.Deformations.RepresentationTheory.CyclotomicSmallPrimes
+public import FLT.Deformations.RepresentationTheory.EquivAbsoluteIrreducible
 public import FLT.Deformations.RepresentationTheory.Etale
 public import FLT.Deformations.RepresentationTheory.FamilyTracePair
 public import FLT.Deformations.RepresentationTheory.FiniteFieldQuadraticSpectrum
@@ -500,12 +502,14 @@ public import FLT.GaloisRepresentation.HardlyRamified.ResidualCharacterInertiaTw
 public import FLT.GaloisRepresentation.HardlyRamified.ResidualCharacteristic
 public import FLT.GaloisRepresentation.HardlyRamified.ResidualCyclotomicDeterminant
 public import FLT.GaloisRepresentation.HardlyRamified.ResidualCyclotomicRestriction
+public import FLT.GaloisRepresentation.HardlyRamified.ResidualCyclotomicUniverses
 public import FLT.GaloisRepresentation.HardlyRamified.ResidualGlobalModel
 public import FLT.GaloisRepresentation.HardlyRamified.ResidualOddness
 public import FLT.GaloisRepresentation.HardlyRamified.ResidualPointModule
 public import FLT.GaloisRepresentation.HardlyRamified.ResidualReducibleFiltration
 public import FLT.GaloisRepresentation.HardlyRamified.ResidualTameTwo
 public import FLT.GaloisRepresentation.HardlyRamified.RibetAdapters
+public import FLT.GaloisRepresentation.HardlyRamified.SpecifiedTwoQuotient
 public import FLT.GaloisRepresentation.HardlyRamified.StandardFamilyMember
 public import FLT.GaloisRepresentation.HardlyRamified.StandardIntegralUniverses
 public import FLT.GaloisRepresentation.HardlyRamified.SubquotientUniverses
@@ -549,6 +553,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.TrivialPrimeFiltrationCoex
 public import FLT.GaloisRepresentation.HardlyRamified.TrivialPrimeFiltrationExtension
 public import FLT.GaloisRepresentation.HardlyRamified.ULiftGenericRecovery
 public import FLT.GaloisRepresentation.HardlyRamified.ULiftHardlyRamified
+public import FLT.GaloisRepresentation.SerreWeight.NormalizedRecipe
 public import FLT.GlobalLanglandsConjectures.GLnDefs
 public import FLT.GlobalLanglandsConjectures.GLzero
 public import FLT.GroupScheme.ActualThreeAdicKummerCube
@@ -731,6 +736,7 @@ public import FLT.GroupScheme.IntegralKernelEquations
 public import FLT.GroupScheme.IntegralQuotientDescent
 public import FLT.GroupScheme.IntegralQuotientFaithfullyFlat
 public import FLT.GroupScheme.IntegralQuotientIdentification
+public import FLT.GroupScheme.IntegralQuotientPointFiber
 public import FLT.GroupScheme.IntegralSimpleQuotient
 public import FLT.GroupScheme.IntegralSimpleSubobject
 public import FLT.GroupScheme.IntegralSubquotientExtension
@@ -782,6 +788,7 @@ public import FLT.GroupScheme.MuThreeCubicCoordinates
 public import FLT.GroupScheme.MultiplicativeFiltrationPurity
 public import FLT.GroupScheme.NilpotentCovering
 public import FLT.GroupScheme.OrderThreeModelIdentification
+public import FLT.GroupScheme.OrdinaryFiltrationModels
 public import FLT.GroupScheme.PDivisibleColimitLifting
 public import FLT.GroupScheme.PDivisibleCotangentArithmetic
 public import FLT.GroupScheme.PDivisibleCotangentComplete
