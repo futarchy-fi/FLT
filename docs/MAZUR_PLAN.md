@@ -200,6 +200,85 @@ p ≥17. Replacing this gap with a claim that positive genus implies no
 rational points is false. An elementary route needs an independently
 verified global lemma before it can be budgeted as an implementation route.
 
+### (e) Audit of alternative 2 — 2026-10-04
+
+Checked against code at `14204538`. This is a source/dependency investigation;
+no new exclusion theorem or formalized global input is claimed.
+
+**Finding:** the restricted target has a published isogeny route, but no
+verified cheaper Lean implementation was located. Do not infer that the
+valuation-to-Néron-component identification is indispensable merely because
+it is the next step in the old plan.
+
+1. **Degree 2p route.** From the forbidden injection, combine one nonzero
+   two-torsion point T with the p-torsion point P. Since p is odd, T+P has
+   order 2p, so quotienting by its cyclic subgroup gives a rational cyclic
+   2p-isogeny. The group-order step is already
+   `FLT.addOrderOf_fullTwoPrime_mixed`; the isogeny and global exclusion
+   must still be supplied. Only one rational two-torsion point is used.
+
+2. **Degree 4p route, using full two-torsion.** Pick distinct rational
+   order-two kernels H1,H2 on E. Compose the dual of E -> E/H1 with
+   E -> E/H2. The resulting degree-four isogeny from E/H1 is cyclic
+   (the second step does not backtrack along the first). The p-subgroup
+   survives the first quotient and combines with this stable cyclic
+   order-four kernel to give a stable cyclic subgroup of order 4p.
+   This proof sketch still requires formal degree/kernel and dual-isogeny
+   results; a point-group homomorphism alone is not enough.
+
+   This reduction is explicitly used in Golfieri Madriaga–Pacetti,
+   [Lemma 5.1](https://arxiv.org/html/2412.08804v2#S5).
+   Jarvis–Meekin, [Section 4](https://www.afjarvis.org.uk/maths/jarvismeekin08-fermat-jnt3079.pdf),
+   also identifies the full-level-two plus cyclic-p moduli curve with X0(4p)
+   over Q. Forgetting the generator of P is legitimate for this exclusion.
+
+3. **The global input has not disappeared.** The classification recorded in
+   Chiloyan–Lozano-Robledo,
+   [Theorem 4.6](https://arxiv.org/pdf/2001.05616), allows no degree 2p
+   for prime p >= 17 and no degree 4p for prime p >= 5. Applying it proves
+   the desired contradiction mathematically. However, the source explicitly
+   traces the classification to Mazur and the composite-level results of
+   Kenku and others. Assuming it in Lean would replace an unproved deep
+   theorem by another one. The isogeny-*torsion* graph classification also
+   uses Mazur's torsion theorem and cannot be used as an independent shortcut.
+
+**Why the local leaves cannot finish the proof.** For a local field Q_l,
+take the Tate period q = l^(2p). In Q_l^*/q^Z, the classes of -1 and l
+generate C2 x C(2p): l has order 2p by valuation, -1 has order two,
+and their subgroups intersect trivially. Thus this group contains precisely
+the configuration at issue, including for l=2 or 3. This is a local example,
+not a rational curve over Q or a counterexample to the desired theorem.
+It shows that full two-torsion does not by itself turn our valuation-class
+injection into a contradiction.
+
+**A relevant alternative to the old 1977 proof.** Mazur,
+[Rational isogenies of prime degree (1978), Proposition 3.1,
+Corollary 4.4 and Theorem 4.1](https://www.math.columbia.edu/~goldfeld/Mazur-Goldfeld1978.pdf),
+gives a formal-immersion proof: a rational prime isogeny for p >= 17
+forces potentially good reduction at 3; specialization and the additive
+component bound exclude additive reduction for a rational p-point; finite
+field counting excludes good reduction. This replaces the explicit
+cyclotomic-extension/Herbrand/isogeny-iteration tail A3–A5 of the older
+route. It still requires the Eisenstein quotient with finite rational
+points, formal immersion, and local specialization. It proves the stronger
+prime-point exclusion, so it is a competing strategy, not exploitation of
+the full-two hypothesis.
+
+**Code availability and decision boundary.** Searches of FLT and the
+relevant Mathlib arithmetic/geometry trees found no usable Kenku
+classification, X0(4p) rational-point exclusion, Eisenstein quotient, or
+formal-immersion endpoint. The current `QuotientCurve.lean` endpoint handles
+odd kernels, and does not supply the even-degree bridge above.
+The external [MazurTheorem project](https://github.com/Vilin97/MazurTheorem)
+also reports unfinished global foundations; its README is not a proof artifact.
+
+The investigation therefore establishes a valid mathematical route for
+alternative 2, but not a shorter formalization. Before switching,
+audit the proofs of the *restricted* 2p/4p exclusion against the 1978
+formal-immersion route. No further standalone Néron-component construction
+is justified solely by the current audit. Existing verified lemmas remain
+valid, and the FLT assembly and its assumptions remain unchanged.
+
 ## First three bounded leaves
 
 These are honest algebraic interfaces, not three steps that nearly finish
