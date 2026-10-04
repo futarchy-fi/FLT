@@ -2468,6 +2468,7 @@ public import FLT.Mazur.LaurentUnitPoints
 public import FLT.Mazur.LineBundleSectionOpenPullback
 public import FLT.Mazur.LineEndpointTransport
 public import FLT.Mazur.LinePowerEvaluationDescent
+public import FLT.Mazur.LinePowerSectionBaseChange
 public import FLT.Mazur.LinePullbackRestriction
 public import FLT.Mazur.LineStructureProjection
 public import FLT.Mazur.LocalCartierGeneratorDescent
@@ -2945,6 +2946,7 @@ public import FLT.Mazur.RingEqualizerDescent
 public import FLT.Mazur.RingEqualizerLocalDescent
 public import FLT.Mazur.RingEqualizerLocalization
 public import FLT.Mazur.ScalarCohomology
+public import FLT.Mazur.ScalarExtensionDirectSum
 public import FLT.Mazur.SchematicDescentGluing
 public import FLT.Mazur.SchemeCohomologyIso
 public import FLT.Mazur.SchemeCohomologyIsoCocycles
@@ -2959,6 +2961,9 @@ public import FLT.Mazur.SectionCoverCoordinates
 public import FLT.Mazur.SectionCoverDiscrepancy
 public import FLT.Mazur.SectionDivisors
 public import FLT.Mazur.SectionGeneratorScalar
+public import FLT.Mazur.SectionGradedBaseChange
+public import FLT.Mazur.SectionGradedMultiplication
+public import FLT.Mazur.SectionGradedSum
 public import FLT.Mazur.SectionKernelLocal
 public import FLT.Mazur.SectionPowerGluing
 public import FLT.Mazur.SectionProjectiveImmersion
