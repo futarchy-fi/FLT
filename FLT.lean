@@ -2344,6 +2344,8 @@ public import FLT.Mazur.AffinePushforwardQuasicoherent
 public import FLT.Mazur.AffineRestrictionImmersion
 public import FLT.Mazur.AffineStalkExtension
 public import FLT.Mazur.AffineStalkMorphism
+public import FLT.Mazur.AmpleAffinePullback
+public import FLT.Mazur.AmpleCommonDegree
 public import FLT.Mazur.AmpleLineBundle
 public import FLT.Mazur.AnnihilatorCoherence
 public import FLT.Mazur.AnnihilatorStalk
@@ -2424,6 +2426,7 @@ public import FLT.Mazur.ClosedPushforwardFull
 public import FLT.Mazur.ClosedPushforwardRestriction
 public import FLT.Mazur.ClosedSubschemeCohomology
 public import FLT.Mazur.ClosedSubsets
+public import FLT.Mazur.CocycleGlobalSectionCoordinate
 public import FLT.Mazur.CoherentAffineCoverSections
 public import FLT.Mazur.CoherentClosedPushforward
 public import FLT.Mazur.CoherentClosedReduction
@@ -2565,6 +2568,7 @@ public import FLT.Mazur.IntegralDimension
 public import FLT.Mazur.LaurentRingSurjectivity
 public import FLT.Mazur.LaurentTensor
 public import FLT.Mazur.LaurentUnitPoints
+public import FLT.Mazur.LineBundleSectionOpenPullback
 public import FLT.Mazur.LineEndpointTransport
 public import FLT.Mazur.LinePullbackRestriction
 public import FLT.Mazur.LineStructureProjection
@@ -2597,6 +2601,8 @@ public import FLT.Mazur.ModuleGlobalSectionExt
 public import FLT.Mazur.ModuleGlobalSectionPullback
 public import FLT.Mazur.ModuleGlobalUnitGenerator
 public import FLT.Mazur.ModuleHomIsomorphismOpen
+public import FLT.Mazur.ModuleHomOpenTransport
+public import FLT.Mazur.ModuleHomTrivialOpen
 public import FLT.Mazur.ModuleImageSection
 public import FLT.Mazur.ModuleInjectiveFlasque
 public import FLT.Mazur.ModuleLineBundlePullback
@@ -2918,6 +2924,8 @@ public import FLT.Mazur.ProjectiveChartPolynomialEquiv
 public import FLT.Mazur.ProjectiveChartSectionPullback
 public import FLT.Mazur.ProjectiveCoherentCharts
 public import FLT.Mazur.ProjectiveCoherentCohomology
+public import FLT.Mazur.ProjectiveCoordinateGeneratorOpen
+public import FLT.Mazur.ProjectiveCoordinateSections
 public import FLT.Mazur.ProjectiveGeneration
 public import FLT.Mazur.ProjectiveGenerationEventually
 public import FLT.Mazur.ProjectiveLineActionAssociativity
@@ -3002,6 +3010,7 @@ public import FLT.Mazur.RationalFibers
 public import FLT.Mazur.RefinedChartSpectrum
 public import FLT.Mazur.RelativeAmplePresentationTransport
 public import FLT.Mazur.RelativeAmpleProper
+public import FLT.Mazur.RelativeAmpleSectionComparison
 public import FLT.Mazur.RelativeCartier
 public import FLT.Mazur.RelativeCartierBaseChange
 public import FLT.Mazur.RelativeCartierDivisorPullback
@@ -3050,10 +3059,13 @@ public import FLT.Mazur.StructureDirectImageHZero
 public import FLT.Mazur.StructureDirectImageSections
 public import FLT.Mazur.StructureImageOpenChart
 public import FLT.Mazur.SurjectiveDominantEpi
+public import FLT.Mazur.TensorPowerGeneratorOpen
+public import FLT.Mazur.TensorPowerReassociation
 public import FLT.Mazur.TernaryOpenDescent
 public import FLT.Mazur.TildePrincipalOpen
 public import FLT.Mazur.TorusChartScalars
 public import FLT.Mazur.UniversallyClosedFiniteCover
+public import FLT.Mazur.VeryAmpleAffineSections
 public import FLT.Mazur.VeryAmplePresentationBaseChange
 public import FLT.MazurChapter.AdmissibleGroupSchemes
 public import FLT.MazurW
