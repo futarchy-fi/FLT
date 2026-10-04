@@ -588,6 +588,7 @@ public import FLT.GroupScheme.ConstantMuThreeTorsion
 public import FLT.GroupScheme.ContinuousKummerClass
 public import FLT.GroupScheme.ContinuousKummerParameter
 public import FLT.GroupScheme.ConvolutionBaseChange
+public import FLT.GroupScheme.ConvolutionTensorPower
 public import FLT.GroupScheme.CoordinateOrder
 public import FLT.GroupScheme.CubicKummerCocycle
 public import FLT.GroupScheme.CyclicPowerElimination
@@ -608,6 +609,10 @@ public import FLT.GroupScheme.FiniteFlat
 public import FLT.GroupScheme.FiniteFlatCartierTangent
 public import FLT.GroupScheme.FiniteFlatClosureChange
 public import FLT.GroupScheme.FiniteFlatCotangent
+public import FLT.GroupScheme.FiniteFlatCotangentArithmetic
+public import FLT.GroupScheme.FiniteFlatCotangentFinite
+public import FLT.GroupScheme.FiniteFlatCotangentImage
+public import FLT.GroupScheme.FiniteFlatCotangentKernel
 public import FLT.GroupScheme.FiniteFlatDifferentials
 public import FLT.GroupScheme.FiniteFlatExtensionKernelIso
 public import FLT.GroupScheme.FiniteFlatExtensionQuotientIso
@@ -619,6 +624,7 @@ public import FLT.GroupScheme.FiniteFlatQuotientUniverses
 public import FLT.GroupScheme.FiniteFlatRestrictedScalarExtension
 public import FLT.GroupScheme.FiniteFlatScalarExtension
 public import FLT.GroupScheme.FiniteFlatSectionDescent
+public import FLT.GroupScheme.FiniteFlatSquareZeroLifting
 public import FLT.GroupScheme.FiniteFlatSubobject
 public import FLT.GroupScheme.FiniteFlatSubobjectUniverses
 public import FLT.GroupScheme.FiniteFlatSubquotientBaseChange
@@ -746,13 +752,25 @@ public import FLT.GroupScheme.ModelPoints
 public import FLT.GroupScheme.MuThreeCubicCoordinates
 public import FLT.GroupScheme.MultiplicativeFiltrationPurity
 public import FLT.GroupScheme.OrderThreeModelIdentification
+public import FLT.GroupScheme.PDivisibleCotangentArithmetic
+public import FLT.GroupScheme.PDivisibleCotangentComplete
+public import FLT.GroupScheme.PDivisibleCotangentExactness
+public import FLT.GroupScheme.PDivisibleCotangentFiniteSets
+public import FLT.GroupScheme.PDivisibleCotangentGenerators
 public import FLT.GroupScheme.PDivisibleCotangentLimit
+public import FLT.GroupScheme.PDivisibleCotangentLimitFinite
+public import FLT.GroupScheme.PDivisibleCotangentLimitReduction
 public import FLT.GroupScheme.PDivisibleCotangentSurjective
 public import FLT.GroupScheme.PDivisibleCotangentTransitions
+public import FLT.GroupScheme.PDivisibleIntegralTangent
+public import FLT.GroupScheme.PDivisibleRationalCotangent
 public import FLT.GroupScheme.PDivisibleRationalPlaceTransport
 public import FLT.GroupScheme.PDivisibleRationalTateAction
+public import FLT.GroupScheme.PDivisibleSquareZeroLifting
 public import FLT.GroupScheme.PDivisibleSystem
 public import FLT.GroupScheme.PDivisibleSystemCategory
+public import FLT.GroupScheme.PDivisibleTangentNaturality
+public import FLT.GroupScheme.PDivisibleTangentReduction
 public import FLT.GroupScheme.PDivisibleTateAction
 public import FLT.GroupScheme.PDivisibleTateCompact
 public import FLT.GroupScheme.PDivisibleTateModule
@@ -779,6 +797,7 @@ public import FLT.GroupScheme.PadicMuThreeConnected
 public import FLT.GroupScheme.PadicPatchingArithmetic
 public import FLT.GroupScheme.PadicPatchingRings
 public import FLT.GroupScheme.PadicTensorPatching
+public import FLT.GroupScheme.PadicTorsionScalarContinuity
 public import FLT.GroupScheme.PointDifferentConductor
 public import FLT.GroupScheme.PointDifferentials
 public import FLT.GroupScheme.PointFieldEvaluation
@@ -1041,6 +1060,10 @@ public import FLT.GroupScheme.SplitKummerGeneralPointLaw
 public import FLT.GroupScheme.SplitKummerModel
 public import FLT.GroupScheme.SplitKummerPointLaw
 public import FLT.GroupScheme.SplitKummerResidue
+public import FLT.GroupScheme.SquareZeroConvolution
+public import FLT.GroupScheme.SquareZeroConvolutionLift
+public import FLT.GroupScheme.SquareZeroLiftNaturality
+public import FLT.GroupScheme.SquareZeroPointLift
 public import FLT.GroupScheme.StableSubgroupExtension
 public import FLT.GroupScheme.SupportedKummerCubes
 public import FLT.GroupScheme.SupportedKummerValuations
@@ -1096,6 +1119,7 @@ public import FLT.LocalClassFieldTheory.AdicIntegerSpace
 public import FLT.LocalClassFieldTheory.AdicIntegerTopology
 public import FLT.LocalClassFieldTheory.AdicSeriesEvaluation
 public import FLT.LocalClassFieldTheory.AdicSeriesField
+public import FLT.LocalClassFieldTheory.BoundaryCocycleRepresentatives
 public import FLT.LocalClassFieldTheory.CanonicalFixedFieldArtin
 public import FLT.LocalClassFieldTheory.CochainFiniteImage
 public import FLT.LocalClassFieldTheory.CochainHomologyClass
@@ -1142,6 +1166,7 @@ public import FLT.LocalClassFieldTheory.ContinuousTransfer
 public import FLT.LocalClassFieldTheory.CorestrictionInvariant
 public import FLT.LocalClassFieldTheory.CorestrictionRestrictionH2
 public import FLT.LocalClassFieldTheory.CyclicCarry
+public import FLT.LocalClassFieldTheory.CyclicCarryCoefficientCup
 public import FLT.LocalClassFieldTheory.CyclicCarryConnecting
 public import FLT.LocalClassFieldTheory.CyclicCarryNormSum
 public import FLT.LocalClassFieldTheory.CyclicIntegerCohomology
@@ -1168,6 +1193,7 @@ public import FLT.LocalClassFieldTheory.FiniteArtinCoprimeTower
 public import FLT.LocalClassFieldTheory.FiniteArtinFieldwiseNorm
 public import FLT.LocalClassFieldTheory.FiniteArtinFixedFieldNorm
 public import FLT.LocalClassFieldTheory.FiniteArtinNormImage
+public import FLT.LocalClassFieldTheory.FiniteArtinTower
 public import FLT.LocalClassFieldTheory.FiniteCharacteristicZeroCohomology
 public import FLT.LocalClassFieldTheory.FiniteContinuousComparison
 public import FLT.LocalClassFieldTheory.FiniteCyclicHerbrand
@@ -1191,6 +1217,8 @@ public import FLT.LocalClassFieldTheory.FiniteSubgroupCocycleCorrection
 public import FLT.LocalClassFieldTheory.FiniteTateNormTower
 public import FLT.LocalClassFieldTheory.FiniteTateVanishing
 public import FLT.LocalClassFieldTheory.FiniteTowerInflatedCup
+public import FLT.LocalClassFieldTheory.FiniteTowerQuotientCoefficients
+public import FLT.LocalClassFieldTheory.FiniteTowerQuotientComparison
 public import FLT.LocalClassFieldTheory.FiniteUnitInvariants
 public import FLT.LocalClassFieldTheory.FixedCoefficientBoundary
 public import FLT.LocalClassFieldTheory.FixedCoefficientCochain
@@ -1243,8 +1271,11 @@ public import FLT.LocalClassFieldTheory.IntegralUnitInvariants
 public import FLT.LocalClassFieldTheory.IntegralUnitRepresentation
 public import FLT.LocalClassFieldTheory.IntermediateDvr
 public import FLT.LocalClassFieldTheory.IntermediateDvrAlgebra
+public import FLT.LocalClassFieldTheory.InvariantNegativeComposite
+public import FLT.LocalClassFieldTheory.InvariantNegativeFirstBoundary
 public import FLT.LocalClassFieldTheory.InvariantRestriction
 public import FLT.LocalClassFieldTheory.InvariantStageTransition
+public import FLT.LocalClassFieldTheory.InvariantTwoClassNegativeCup
 public import FLT.LocalClassFieldTheory.InvariantTwoExtensionInflation
 public import FLT.LocalClassFieldTheory.KernelCocycleDescent
 public import FLT.LocalClassFieldTheory.KernelCocycleNormalization
@@ -1297,6 +1328,8 @@ public import FLT.LocalClassFieldTheory.PrincipalNormGraded
 public import FLT.LocalClassFieldTheory.PrincipalUnitFiltration
 public import FLT.LocalClassFieldTheory.PrincipalUnitNorm
 public import FLT.LocalClassFieldTheory.PrincipalUnitResidue
+public import FLT.LocalClassFieldTheory.QuotientBoundaryDescent
+public import FLT.LocalClassFieldTheory.QuotientInflationInjective
 public import FLT.LocalClassFieldTheory.RamifiedFieldHerbrand
 public import FLT.LocalClassFieldTheory.RamifiedOrderScale
 public import FLT.LocalClassFieldTheory.RamifiedOrderSequence
@@ -1306,7 +1339,9 @@ public import FLT.LocalClassFieldTheory.RationalTorsion
 public import FLT.LocalClassFieldTheory.RationalUnramifiedCharacters
 public import FLT.LocalClassFieldTheory.RelativeDegreeTorsionClass
 public import FLT.LocalClassFieldTheory.RelativeFundamentalAcyclic
+public import FLT.LocalClassFieldTheory.RelativeFundamentalClassQuotient
 public import FLT.LocalClassFieldTheory.RelativeFundamentalCupIso
+public import FLT.LocalClassFieldTheory.RelativeFundamentalCupTower
 public import FLT.LocalClassFieldTheory.RelativeFundamentalCupTowerDegree
 public import FLT.LocalClassFieldTheory.RelativeFundamentalCyclicSubgroup
 public import FLT.LocalClassFieldTheory.RelativeFundamentalExtension
@@ -1321,6 +1356,8 @@ public import FLT.LocalClassFieldTheory.RelativeFundamentalSubgroup
 public import FLT.LocalClassFieldTheory.RelativeFundamentalTateCup
 public import FLT.LocalClassFieldTheory.RelativeInflationTower
 public import FLT.LocalClassFieldTheory.RelativeInvariantClassInflation
+public import FLT.LocalClassFieldTheory.RelativeInvariantClassUnique
+public import FLT.LocalClassFieldTheory.RelativeInvariantNegativeCup
 public import FLT.LocalClassFieldTheory.RelativeLowerBound
 public import FLT.LocalClassFieldTheory.RelativeOrderInduction
 public import FLT.LocalClassFieldTheory.RelativeRestrictionKernel
@@ -1353,6 +1390,7 @@ public import FLT.LocalClassFieldTheory.SubgroupTateVanishing
 public import FLT.LocalClassFieldTheory.SubgroupTransferNorm
 public import FLT.LocalClassFieldTheory.SylowNormDetection
 public import FLT.LocalClassFieldTheory.SylowTateDetection
+public import FLT.LocalClassFieldTheory.TateBoundaryLowDegree
 public import FLT.LocalClassFieldTheory.TateClassArithmetic
 public import FLT.LocalClassFieldTheory.TateCocycleClass
 public import FLT.LocalClassFieldTheory.TateCupComparison
@@ -1389,6 +1427,7 @@ public import FLT.LocalClassFieldTheory.TrivialH1Characters
 public import FLT.LocalClassFieldTheory.TrivialRestrictionNaturality
 public import FLT.LocalClassFieldTheory.TwoCocycleInflationSum
 public import FLT.LocalClassFieldTheory.TwoCocycleNormSum
+public import FLT.LocalClassFieldTheory.TwoExtensionBoundaryCup
 public import FLT.LocalClassFieldTheory.TwoExtensionCochainCup
 public import FLT.LocalClassFieldTheory.TwoExtensionCorestriction
 public import FLT.LocalClassFieldTheory.TwoExtensionDeflation
@@ -1454,6 +1493,7 @@ public import FLT.LocalClassFieldTheory.UnramifiedOrderSection
 public import FLT.LocalClassFieldTheory.UnramifiedOrderSequence
 public import FLT.LocalClassFieldTheory.UnramifiedOrderTower
 public import FLT.LocalClassFieldTheory.UnramifiedPolynomial
+public import FLT.LocalClassFieldTheory.UnramifiedStageCarryCup
 public import FLT.LocalClassFieldTheory.UnramifiedStageFrobenius
 public import FLT.LocalClassFieldTheory.UnramifiedStageOrderH2
 public import FLT.LocalClassFieldTheory.UnramifiedStageOrderMaps
@@ -1562,6 +1602,7 @@ public import FLT.Mathlib.RepresentationTheory.Homological.ContCohomology.CupPro
 public import FLT.Mathlib.RingTheory.AdicCompletion.Power
 public import FLT.Mathlib.RingTheory.AdicCompletion.PowerQuotients
 public import FLT.Mathlib.RingTheory.AdjoinRoot
+public import FLT.Mathlib.RingTheory.AugmentationConvolution
 public import FLT.Mathlib.RingTheory.AugmentationCotangent
 public import FLT.Mathlib.RingTheory.AugmentationGenerators
 public import FLT.Mathlib.RingTheory.AugmentationTangent
@@ -1586,6 +1627,7 @@ public import FLT.Mathlib.RingTheory.DiscreteValuationRing.TotalRamification
 public import FLT.Mathlib.RingTheory.DiscreteValuationRing.UniformizerMinpoly
 public import FLT.Mathlib.RingTheory.DiscreteValuationRing.UnramifiedSubalgebra
 public import FLT.Mathlib.RingTheory.Discriminant
+public import FLT.Mathlib.RingTheory.FiniteTorsionModule
 public import FLT.Mathlib.RingTheory.FrobeniusAugmentation
 public import FLT.Mathlib.RingTheory.FrobeniusImage
 public import FLT.Mathlib.RingTheory.GeneratorsDifferentialRelations
@@ -1604,6 +1646,7 @@ public import FLT.Mathlib.RingTheory.MvPolynomial.HeightOneIdeal
 public import FLT.Mathlib.RingTheory.MvPolynomial.LocalizedReduction
 public import FLT.Mathlib.RingTheory.MvPolynomial.NilpotentPresentation
 public import FLT.Mathlib.RingTheory.MvPolynomial.RedundantCoordinates
+public import FLT.Mathlib.RingTheory.NilpotentGeneratorLifting
 public import FLT.Mathlib.RingTheory.NilpotentRelationLifting
 public import FLT.Mathlib.RingTheory.Norm.Quadratic
 public import FLT.Mathlib.RingTheory.Norm.Quotient
