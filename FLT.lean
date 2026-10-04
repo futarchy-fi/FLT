@@ -1853,6 +1853,7 @@ public import FLT.Mazur.DivisorLineBundleSumOpenCoherence
 public import FLT.Mazur.DivisorLineBundleSumRestrict
 public import FLT.Mazur.DivisorLineBundleSumUnit
 public import FLT.Mazur.DivisorLinePullback
+public import FLT.Mazur.DivisorPowerCanonicalSection
 public import FLT.Mazur.DivisorPowerVeryAmple
 public import FLT.Mazur.DivisorRestrictCoherence
 public import FLT.Mazur.EtaleCoordinate
@@ -1889,6 +1890,8 @@ public import FLT.Mazur.IntegralClosedSupport
 public import FLT.Mazur.IntegralDimension
 public import FLT.Mazur.LaurentTensor
 public import FLT.Mazur.LaurentUnitPoints
+public import FLT.Mazur.LineEndpointTransport
+public import FLT.Mazur.LinePullbackRestriction
 public import FLT.Mazur.LineStructureProjection
 public import FLT.Mazur.LocalizationCech
 public import FLT.Mazur.LocalizationCechCompare
@@ -1907,6 +1910,7 @@ public import FLT.Mazur.ModuleCohomologyExact
 public import FLT.Mazur.ModuleCohomologyRing
 public import FLT.Mazur.ModuleCohomologyVanishing
 public import FLT.Mazur.ModuleDerivedAbelianComparison
+public import FLT.Mazur.ModuleDisjointSectionGluing
 public import FLT.Mazur.ModuleDualSectionCancellation
 public import FLT.Mazur.ModuleExactOpenCover
 public import FLT.Mazur.ModuleFreeOpen
@@ -2011,6 +2015,7 @@ public import FLT.Mazur.OpenSheafExtensionExact
 public import FLT.Mazur.OpenSheafExtensionStalks
 public import FLT.Mazur.OpenSheafFreeComparison
 public import FLT.Mazur.OpenSheafRestriction
+public import FLT.Mazur.OverCoproductModuleSections
 public import FLT.Mazur.OverPoints
 public import FLT.Mazur.OverPullbackCoproduct
 public import FLT.Mazur.OverPullbackLocalPushout
@@ -2039,7 +2044,9 @@ public import FLT.Mazur.PolygonComponentDistinct
 public import FLT.Mazur.PolygonComponentImages
 public import FLT.Mazur.PolygonConnected
 public import FLT.Mazur.PolygonConstantSections
+public import FLT.Mazur.PolygonCubicChartGeneration
 public import FLT.Mazur.PolygonCubicInterpolation
+public import FLT.Mazur.PolygonCubicSections
 public import FLT.Mazur.PolygonCyclicAtlas
 public import FLT.Mazur.PolygonCyclicCocone
 public import FLT.Mazur.PolygonCyclicDescent
@@ -2053,12 +2060,14 @@ public import FLT.Mazur.PolygonCyclicPushout
 public import FLT.Mazur.PolygonCyclicSeparated
 public import FLT.Mazur.PolygonDimension
 public import FLT.Mazur.PolygonDirectImageCohomology
+public import FLT.Mazur.PolygonDirectPowerComparison
 public import FLT.Mazur.PolygonDivisorCoproduct
 public import FLT.Mazur.PolygonDivisorDegree
 public import FLT.Mazur.PolygonDivisorLineComparison
 public import FLT.Mazur.PolygonDivisorLinePowerPullback
 public import FLT.Mazur.PolygonDivisorLinePullback
 public import FLT.Mazur.PolygonDivisorNormalizationPullback
+public import FLT.Mazur.PolygonDivisorPolynomialHZero
 public import FLT.Mazur.PolygonDivisorPowerPullback
 public import FLT.Mazur.PolygonFieldExtension
 public import FLT.Mazur.PolygonGenusOne
@@ -2070,6 +2079,7 @@ public import FLT.Mazur.PolygonIdealModulePullback
 public import FLT.Mazur.PolygonIncidence
 public import FLT.Mazur.PolygonIncidenceQuotient
 public import FLT.Mazur.PolygonLineHZero
+public import FLT.Mazur.PolygonLineNodeRestriction
 public import FLT.Mazur.PolygonLineNormalization
 public import FLT.Mazur.PolygonMarkedSections
 public import FLT.Mazur.PolygonNodalCore
@@ -2091,6 +2101,7 @@ public import FLT.Mazur.PolygonNormalizationExact
 public import FLT.Mazur.PolygonNormalizationFinite
 public import FLT.Mazur.PolygonNormalizationHOne
 public import FLT.Mazur.PolygonNormalizationHZero
+public import FLT.Mazur.PolygonNormalizationSectionFamilies
 public import FLT.Mazur.PolygonNormalizationTorusPullback
 public import FLT.Mazur.PolygonNormalizationTransport
 public import FLT.Mazur.PolygonOneGonCompletion
@@ -2099,6 +2110,10 @@ public import FLT.Mazur.PolygonPinchingDiagram
 public import FLT.Mazur.PolygonPinchingFlatBaseChange
 public import FLT.Mazur.PolygonPinchingTensor
 public import FLT.Mazur.PolygonPolynomialMatching
+public import FLT.Mazur.PolygonPowerBranchValues
+public import FLT.Mazur.PolygonPowerCanonicalSection
+public import FLT.Mazur.PolygonPowerNodeEndpoints
+public import FLT.Mazur.PolygonPowerNodeWeights
 public import FLT.Mazur.PolygonProductAtlas
 public import FLT.Mazur.PolygonProper
 public import FLT.Mazur.PolygonPureDimension
@@ -2224,6 +2239,8 @@ public import FLT.Mazur.SchemeCohomologyIso
 public import FLT.Mazur.SchemeCohomologyIsoCocycles
 public import FLT.Mazur.SchemeCoproductCohomology
 public import FLT.Mazur.SchemeCoproductSections
+public import FLT.Mazur.SealedLineRestriction
+public import FLT.Mazur.SealedLineRestrictionSections
 public import FLT.Mazur.SectionCharts
 public import FLT.Mazur.SectionDivisors
 public import FLT.Mazur.SectionKernelLocal
