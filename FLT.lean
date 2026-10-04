@@ -144,6 +144,8 @@ public import FLT.Deformations.IsResidueAlgebra
 public import FLT.Deformations.Lemmas
 public import FLT.Deformations.LiftFunctor
 public import FLT.Deformations.OpenIdealCondition
+public import FLT.Deformations.OrdinaryQuadraticUniversalQuotient
+public import FLT.Deformations.OrdinaryUniversalQuotient
 public import FLT.Deformations.ProartinianQuotients
 public import FLT.Deformations.Representable
 public import FLT.Deformations.RepresentationTheory.AbsoluteGaloisGroup
@@ -210,6 +212,7 @@ public import FLT.Deformations.RepresentationTheory.TraceCompatiblePair
 public import FLT.Deformations.RepresentationTheory.TrivialQuotientKernel
 public import FLT.Deformations.RepresentationTheory.ULiftCoefficientTensor
 public import FLT.Deformations.Subfunctor
+public import FLT.Deformations.UniversalLocalQuotient
 public import FLT.DivisionAlgebra.Finiteness
 public import FLT.EllipticCurve.CoefficientAction
 public import FLT.EllipticCurve.CoordinateRing
@@ -357,6 +360,7 @@ public import FLT.GaloisRepresentation.Extensions.ContinuousH1Comparison
 public import FLT.GaloisRepresentation.Extensions.ContinuousH1Equiv
 public import FLT.GaloisRepresentation.Extensions.ContinuousH2Comparison
 public import FLT.GaloisRepresentation.Extensions.ExtendedUnitSubspace
+public import FLT.GaloisRepresentation.Extensions.FiniteCoefficientWildKernel
 public import FLT.GaloisRepresentation.Extensions.FiniteDescent
 public import FLT.GaloisRepresentation.Extensions.FiniteInertiaExponent
 public import FLT.GaloisRepresentation.Extensions.HomogeneousCup
@@ -367,12 +371,14 @@ public import FLT.GaloisRepresentation.Extensions.LiftCocycle
 public import FLT.GaloisRepresentation.Extensions.LinearClassCoordinates
 public import FLT.GaloisRepresentation.Extensions.LinearCoefficientMap
 public import FLT.GaloisRepresentation.Extensions.LinearContinuousClass
+public import FLT.GaloisRepresentation.Extensions.OrdinaryAdaptedFrame
 public import FLT.GaloisRepresentation.Extensions.OrdinaryFiltration
 public import FLT.GaloisRepresentation.Extensions.OrdinaryFiltrationBasis
 public import FLT.GaloisRepresentation.Extensions.OrdinaryFiltrationClass
 public import FLT.GaloisRepresentation.Extensions.OrdinaryFiltrationSplitting
 public import FLT.GaloisRepresentation.Extensions.OrdinaryFiltrationTwist
 public import FLT.GaloisRepresentation.Extensions.OrdinaryFiltrationUnit
+public import FLT.GaloisRepresentation.Extensions.OrdinaryFramedRepresentation
 public import FLT.GaloisRepresentation.Extensions.OrdinaryGaloisClass
 public import FLT.GaloisRepresentation.Extensions.OrdinaryHomCoordinates
 public import FLT.GaloisRepresentation.Extensions.OrdinaryInertiaExponent
@@ -768,6 +774,7 @@ public import FLT.GroupScheme.IntegralHopfAlgebra
 public import FLT.GroupScheme.IntegralHopfPoints
 public import FLT.GroupScheme.IntegralKernelBaseChange
 public import FLT.GroupScheme.IntegralKernelEquations
+public import FLT.GroupScheme.IntegralModelPoints
 public import FLT.GroupScheme.IntegralQuotientDescent
 public import FLT.GroupScheme.IntegralQuotientFaithfullyFlat
 public import FLT.GroupScheme.IntegralQuotientFiberTorsor
@@ -828,6 +835,8 @@ public import FLT.GroupScheme.NilpotentCovering
 public import FLT.GroupScheme.NilpotentGeometricCharacteristic
 public import FLT.GroupScheme.OrderThreeModelIdentification
 public import FLT.GroupScheme.OrdinaryFiltrationModels
+public import FLT.GroupScheme.OrdinaryModelFiberPoints
+public import FLT.GroupScheme.OrdinaryNormalizedDifference
 public import FLT.GroupScheme.PDivisibleColimitLifting
 public import FLT.GroupScheme.PDivisibleCotangentArithmetic
 public import FLT.GroupScheme.PDivisibleCotangentComplete
@@ -2640,6 +2649,7 @@ public import FLT.PadicHodgeTheory.ComplexCyclotomicTilt
 public import FLT.PadicHodgeTheory.ComplexCyclotomicTraceInvariant
 public import FLT.PadicHodgeTheory.ComplexDeRhamDVR
 public import FLT.PadicHodgeTheory.ComplexDeRhamDenominators
+public import FLT.PadicHodgeTheory.ComplexDeRhamEigenperiods
 public import FLT.PadicHodgeTheory.ComplexDeRhamEquivariance
 public import FLT.PadicHodgeTheory.ComplexDeRhamFieldGalois
 public import FLT.PadicHodgeTheory.ComplexDeRhamFiltration
