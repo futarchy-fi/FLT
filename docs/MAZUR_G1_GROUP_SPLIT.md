@@ -2,14 +2,19 @@
 
 
 
-## W48: relative DR object and polygon constructor; A3 partially implemented
+## Relative DR objects and base change (W48–W50)
 
-Checked at 2026-10-04T07:34:17+00:00 against the new source modules listed below.
-Recheck each module with `LEAN_NUM_THREADS=2 lake build FLT.Mazur.MODULE` and
-`LEAN_NUM_THREADS=2 lake exe runLinter FLT.Mazur.MODULE`, one module at a time.
-The untracked `W48_CHECK_SOURCE.py`, `W48_ALL_AXIOMS.txt` and `BLOCKED.md`
-record validation and the remaining proof obligation. This section supersedes
-W47's A1/A2 status; it does not close A3 or remove `Mazur_statement`.
+W50 proves arbitrary smooth-locus base change and constructs the full DR
+pullback object and functor. This closes the geometric input left open by
+W48/W49. The identity/composition comparisons have not yet been lifted to
+the full DR category with coherence identities, so A3 as a whole remains open.
+`Mazur_statement` has not been removed.
+
+Recheck the new proof chain with
+`LEAN_NUM_THREADS=2 lake build FLT.Mazur.GeneralizedCurveBaseChange`.
+Lint individual modules only: `lake exe runLinter MODULE`.
+The W50 handoff records the checked-at time, individual builds, lint results,
+full originating-declaration axiom audit and post-merge root build.
 
 `GeneralizedEllipticCurve` defines DR II.1.12 over schemes in `Type`, matching
 the existing genus/cohomology API. It retains a classified genus-one family,
@@ -50,21 +55,28 @@ The implemented parts of A3 are:
   pulled-back group to the new relative smooth open. Its composite with the
   smooth-open inclusion is exactly the pulled-back original inclusion.
 
-**Remaining A3 geometric input:** prove that `smoothPullbackComparison` is
-surjective for arbitrary base change. Only its open-immersion property is
-proved. The needed general geometric lemma is that for flat locally finitely
-presented `f : X ⟶ S` and arbitrary `g : T ⟶ S`,
+W50 supplies the remaining geometric input:
 
-```lean
-pullback.fst f g ⁻¹ᵁ f.smoothLocus = (pullback.snd f g).smoothLocus
-```
+- `SmoothLocusGlobalFiber` globalizes the affine pointwise fibre criterion
+  through open source and target charts for flat locally finitely presented maps.
+- `CotangentBaseChange` and `PointwiseDescent` prove smoothness descent at a
+  chosen prime under flat base change, hence under arbitrary field extensions.
+  Only smoothness of the chosen localization is required. The proof descends
+  flatness of differentials and vanishing of first cotangent homology through
+  the faithfully flat map of local rings.
+- `SmoothLocusFieldExtension` and `SmoothLocusBaseChange` combine that descent
+  with canonical fibre pullback squares to prove
+  `pullback.fst f g ⁻¹ᵁ f.smoothLocus = (pullback.snd f g).smoothLocus`
+  for flat locally finitely presented `f` and arbitrary `g`.
+- `GeneralizedCurveSmoothBaseChange` proves the canonical comparison
+  surjective and turns it into `smoothPullbackIso`, retaining the inclusion.
+- `GeneralizedCurveBaseChange` constructs `E.baseChange g` with the classified
+  family, smooth group, whole-curve action and geometric rotations, and the
+  functor `baseChangeFunctor g` on compatible morphisms.
 
-Mathlib's `Scheme.Hom.preimage_smoothLocus_eq` concerns precomposition by an
-open immersion; it does not give this arbitrary-base equality. The new proofs
-do not assume the missing equality or surjectivity. Once supplied, turn the
-comparison into an isomorphism, assemble the full generalized-curve pullback
-functor, lift the proved comparisons to that category and verify its coherence
-identities. The present comparisons alone are not a completed A3 functor.
+**Remaining A3 work:** lift the existing identity/composition comparisons
+from curves and groups to the full generalized-curve category, and prove
+its coherence identities. A4–A8 and the later arithmetic gates remain.
 
 Read-only checks for the producer/remaining boundary:
 
