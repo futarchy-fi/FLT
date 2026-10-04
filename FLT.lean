@@ -159,6 +159,7 @@ public import FLT.Deformations.ClosedIdealCondition
 public import FLT.Deformations.ClosedIdealQuotient
 public import FLT.Deformations.ClosedIdealSimultaneous
 public import FLT.Deformations.ContinuousRepresentation.IsTopologicalModule
+public import FLT.Deformations.ContinuousTangent
 public import FLT.Deformations.DeSmitLenstra
 public import FLT.Deformations.DeSmitLenstra.CompatibleIdempotent
 public import FLT.Deformations.DeSmitLenstra.FramedCompletion
@@ -175,6 +176,7 @@ public import FLT.Deformations.DeSmitLenstra.TraceSpecialization
 public import FLT.Deformations.DeSmitLenstra.UniversalLift
 public import FLT.Deformations.DeSmitLenstra.UniversalMoritaData
 public import FLT.Deformations.DeSmitLenstra.UniversalTraceLift
+public import FLT.Deformations.DualNumberTest
 public import FLT.Deformations.EisensteinCoefficientObject
 public import FLT.Deformations.FixedResidualQuotientIdeal
 public import FLT.Deformations.FlatClosedCondition
@@ -195,7 +197,9 @@ public import FLT.Deformations.HardlyRamifiedFlatQuotient
 public import FLT.Deformations.HardlyRamifiedFramedParameters
 public import FLT.Deformations.HardlyRamifiedParameterBounds
 public import FLT.Deformations.HardlyRamifiedParameterComparison
+public import FLT.Deformations.HardlyRamifiedParameterFiniteness
 public import FLT.Deformations.HardlyRamifiedParameterUnramified
+public import FLT.Deformations.HardlyRamifiedTangentFinite
 public import FLT.Deformations.HardlyRamifiedTraceArithmetic
 public import FLT.Deformations.HardlyRamifiedTraceImage
 public import FLT.Deformations.HardlyRamifiedTraceLift
@@ -2103,6 +2107,7 @@ public import FLT.Mathlib.NumberTheory.NumberField.InfiniteAdeleRing
 public import FLT.Mathlib.NumberTheory.NumberField.InfinitePlace.Basic
 public import FLT.Mathlib.NumberTheory.NumberField.InfinitePlace.Completion
 public import FLT.Mathlib.NumberTheory.Padics.DifferentBound
+public import FLT.Mathlib.NumberTheory.Padics.DifferentBoundEquiv
 public import FLT.Mathlib.NumberTheory.Padics.HeightOneSpectrum
 public import FLT.Mathlib.NumberTheory.Padics.PadicIntegers
 public import FLT.Mathlib.NumberTheory.Padics.PolynomialSpecialFiber
@@ -3132,6 +3137,8 @@ public import FLT.NumberField.Completion.FieldEquiv
 public import FLT.NumberField.Completion.Finite
 public import FLT.NumberField.Completion.Infinite
 public import FLT.NumberField.Completion.Normal
+public import FLT.NumberField.Completion.RankBound
+public import FLT.NumberField.Completion.UniformDifferentBound
 public import FLT.NumberField.DifferentDiscriminant
 public import FLT.NumberField.DifferentExponentBounds
 public import FLT.NumberField.DifferentTower
@@ -3141,6 +3148,7 @@ public import FLT.NumberField.HeightOneSpectrum
 public import FLT.NumberField.InfiniteAdeleRing
 public import FLT.NumberField.InfinitePlace.Extension
 public import FLT.NumberField.Padics.RestrictedProduct
+public import FLT.NumberField.UniformDifferentExponent
 public import FLT.NumberField.UnramifiedPrimeSupport
 public import FLT.NumberField.Zeta.Partial
 public import FLT.NumberField.ZetaFE.Leaves1
