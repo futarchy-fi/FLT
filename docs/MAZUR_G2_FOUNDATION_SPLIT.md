@@ -103,3 +103,26 @@ New modules and sorted FLT.lean imports only. Before handoff merge
 origin/main and build FLT once. Record actual sizes/commits and any open
 construction gate in the untracked W1 handoff. Mazur_statement remains
 until its unconditional producer and final integration are proved.
+
+## Integration update (2026-10-04)
+
+Fresh origin/main `0d2a816c` added `LineSheafDualEvaluation` after this
+audit was committed. Its `LocallyFreeRankOne.dual` and
+`lineSheafDualEvaluationIso` discharge P2. W1's independently implemented
+`LineBundleDualEvaluation` was removed during integration; P3 now imports
+and uses the upstream proof. Thus the final release adds five modules,
+not a second dual-evaluation implementation. P1 and P3–P6 are implemented;
+P7–P21 remain open. Builds, individual lints, axiom checks and the final
+root integration result are recorded in the untracked `BLOCKED.md`.
+
+The next P7 subdivision should first construct the map from affine scheme
+Picard classes to `CommRing.Pic` of the actual global-section ring.
+`FiniteSchemeInvertibleSections.finiteScheme_sections_invertible` already
+contains the affine tensor calculation, but its public statement assumes a
+finite scheme over a field. Generalize that calculation using P2 and
+`ModuleSheafTensor.affineSectionsEquiv`; use `affineAdjunction` from
+`AffineModuleGlobalSections` to prove injectivity. The converse still needs
+local trivializations of the tilde sheaf from
+`Module.Invertible.exists_finset_free_localization`, and compatibility
+with tensor and arbitrary affine pullback. These are proof obligations,
+not assumptions to put into a comparison structure.
