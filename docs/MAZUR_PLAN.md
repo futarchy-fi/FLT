@@ -1,32 +1,65 @@
 # MZ0: an honest route to `MazurTorsionExclusion`
 
-Checked against FLT commit `ebda856762c41368c7942d2aa004c51b7d2d2dc4`
-on 2026-09-28 UTC. This is a source-grounded research plan, not a proof of
+Original audit: FLT commit `ebda856762c41368c7942d2aa004c51b7d2d2dc4`,
+2026-09-28 UTC. Route revised 2026-10-04 from code base `ab6ed86d`. This is a source-grounded research plan, not a proof of
 Mazur's theorem. The first elementary leaf is implemented in
 `FLT/EllipticCurve/FullTwoPrimeTorsion.lean`.
 
 ## Decision
 
-Use the **prime-level argument in Mazur (1977), Chapter III, §5,
-pp. 156–160**, to prove `NoLargePrimeTorsion`, then apply the existing
+**Updated 2026-10-04: execute the prime-level formal-immersion route of
+Mazur (1978), Proposition 3.1, Corollaries 4.3–4.4 and Theorem 4.1.**
+The user selected this route after the comparison with cyclic 4p-isogenies.
+Restrict to p >= 17 and reduction at 3. Prove `NoLargePrimeTorsion`, then
+use the already proved
 `FLT.Assembly.mazurTorsionExclusion_of_noLargePrimeTorsion`.
-This is the shortest complete route substantiated in this investigation,
-not a claim that no shorter proof could exist. It discards the extra
-full-two-torsion hypothesis deliberately: the existing prime-level adapter
-is ready, and the cited proof needs less machinery than a complete torsion
-classification or a composite-level isogeny classification.
 
-**The remaining arithmetic is months-scale infrastructure.** A preliminary
-engineering allowance is **25,000–70,000 new Lean lines and 2,500–7,000
-worker-hours**, including foundational APIs, proof development, and review.
-These are rough estimates, not measured throughput or a delivery promise;
-source-level design of the modular Jacobian may increase them substantially.
-Several contributors over many months is a realistic planning unit. No
-weekend-sized path from the current category-D results was found.
+This supersedes the 1977 Chapter III §5 route selected in the original
+version of this document. The descriptions and budgets of that route below
+are historical comparisons, not the current execution queue. In particular,
+its explicit Herbrand and iterated-isogeny tail A3–A5 is not scheduled.
+The old line/hour estimates are not estimates for this new route.
 
-The immediate deliverable is this committed plan and a clean elementary
-leaf. It does **not** remove `Mazur_statement` from the FLT proof, prove
-`NoLargePrimeTorsion`, or prove `MazurTorsionExclusion` unconditionally.
+The global arithmetic remains unfinished. No new axiom, admitted theorem,
+or replacement assumption is authorized as a way to close this gap.
+The current FLT assembly still uses `Mazur_statement`.
+
+### Current execution chain
+
+Source: [Mazur (1978), §§3–4](https://www.math.columbia.edu/~goldfeld/Mazur-Goldfeld1978.pdf).
+Only the case of residue characteristic 3, distinct from the prime level p,
+is needed; do not schedule the characteristic-p part of Proposition 3.1.
+
+1. Construct the integral modular curve X0(p) near its cusps at 3, its
+   Jacobian and the nonzero optimal Eisenstein quotient with finite
+   rational points. These are missing global inputs, not parameters to
+   hide in a new definition of the target.
+2. Prove formal immersion at the cusp in characteristic 3. This requires
+   injectivity on cotangent spaces for the optimal quotient, a nonzero
+   simultaneous Hecke eigenvector after extending the residue field, the
+   q-expansion principle, and the coefficient recurrences.
+   **Implemented algebraic substep:** `FLT/Mazur/HeckeEigenCoefficients.lean`
+   proves that a cuspidal sequence satisfying the weight-two T_l and U_p
+   recurrences vanishes if its first coefficient vanishes. The power-series
+   corollary gives a nonzero first coefficient for a nonzero expansion over
+   any coefficient ring. It does not prove the geometric hypotheses.
+3. For a rational cyclic p-subgroup, prove that potentially multiplicative
+   reduction at 3 specializes to a cusp. Use the cusp involution, torsion
+   specialization and formal immersion to obtain a contradiction.
+   This is the restricted Corollary 4.4 endpoint: potentially good reduction.
+4. For a rational point of order p, exclude additive reduction using the
+   component bound and additive identity component; then exclude good
+   reduction. The existing `SmallResidueTorsion.lean` supplies the good
+   integral-model exclusion. The actual Néron specialization and additive
+   component bound still need construction; a generic group lemma is not
+   their proof.
+5. Apply the existing prime-torsion adapter to the FLT target.
+
+**Next unresolved geometric boundary:** realize the Hecke recurrences on
+cotangent q-expansions at the cusp and prove their injectivity. Standalone
+Tate valuation or one-gon work is not automatically on this critical path.
+The new coefficient module is currently a verified dependency leaf; it is
+not imported by the FLT proof and removes none of its arithmetic assumptions.
 
 ## Exact target and the already completed adapters
 
@@ -115,7 +148,7 @@ restricted class was found either.
 **Verdict:** no justified reduction to existing endpoints. No finite estimate
 for a purported shortcut; the missing global step is the research problem.
 
-### (b) Eisenstein ideal / modular curves — chosen prime-level variant
+### (b) Eisenstein ideal / modular curves — historical 1977 variant
 
 The injection supplies a point of order p and also one of order 2p (first
 leaf below). Thus maps to `X₁(p)`, `X₁(2p)`, and `X₀(2p)` are candidates.
@@ -168,9 +201,9 @@ six with `6 < p - 1`; the existing three-primary Fontaine bound is not this
 rigidity theorem.
 
 A formal-immersion proof is an alternative presentation of the modular
-argument, not a proved shortcut here. This plan follows the explicit
-original cusp-specialization/Herbrand route instead of silently assuming
-formal immersion or a winding quotient.
+argument, not a proved shortcut here. The original plan followed the explicit
+cusp-specialization/Herbrand route. The current decision above supersedes
+that choice; formal immersion must now be proved, not assumed.
 
 ### (c) Kamienny / Merel
 
@@ -273,13 +306,13 @@ The external [MazurTheorem project](https://github.com/Vilin97/MazurTheorem)
 also reports unfinished global foundations; its README is not a proof artifact.
 
 The investigation therefore establishes a valid mathematical route for
-alternative 2, but not a shorter formalization. Before switching,
-audit the proofs of the *restricted* 2p/4p exclusion against the 1978
-formal-immersion route. No further standalone Néron-component construction
+alternative 2, but not a shorter formalization. The subsequent comparison
+favored the restricted 1978 formal-immersion route, which the user has now
+selected; see the updated decision above. No further standalone Néron-component construction
 is justified solely by the current audit. Existing verified lemmas remain
 valid, and the FLT assembly and its assumptions remain unchanged.
 
-## First three bounded leaves
+## Historical first three bounded leaves (not the current queue)
 
 These are honest algebraic interfaces, not three steps that nearly finish
 Mazur. L2/L3 clarify the exact special-case hypothesis for an alternative
@@ -339,7 +372,7 @@ L2 + L3 convert the target into: for an elliptic E with an injected
 `(ZMod 2)²`, there is no point of order p. Estimate a further 20–40 lines /
 1–2 hours for that curve-specific equivalence; no global theorem is gained.
 
-## Missing arithmetic: statements, dependencies, and budgets
+## Historical 1977 arithmetic: statements, dependencies, and budgets
 
 The following are **statement sketches**, not declarations to add with
 unproved fields. Identifiers such as `X0Integral`, `EisensteinQuotient`,

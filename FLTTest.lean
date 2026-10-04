@@ -15,6 +15,7 @@ import FLTTest.MazurCurveFinite
 import FLTTest.MazurDualLocalization
 import FLTTest.MazurDualTensorSheaf
 import FLTTest.MazurGenericFibers
+import FLTTest.MazurHeckeEigenCoefficients
 import FLTTest.MazurModuleCohomology
 import FLTTest.MazurMultiplicativeModel
 import FLTTest.MazurOneGon

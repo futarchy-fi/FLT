@@ -1067,6 +1067,7 @@ public import FLT.Mazur.GenericIdealSupport
 public import FLT.Mazur.GlobalClosedModuleDescent
 public import FLT.Mazur.GlobalIdealPower
 public import FLT.Mazur.GlobalIdealPowerCompatibility
+public import FLT.Mazur.HeckeEigenCoefficients
 public import FLT.Mazur.HigherDirectImageOpenSheafification
 public import FLT.Mazur.HigherDirectImagePresheaf
 public import FLT.Mazur.HigherDirectImagePresheafRestriction
