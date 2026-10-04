@@ -3267,3 +3267,10 @@ point colimits; no logarithm or comparison property is built into its data.
 The topology, connected formal coordinates, convergent logarithm, local
 isomorphism and torsion kernel require further leaves after these algebraic
 constructions. A2, C, D, HT3 and the period/family obligations remain open.
+
+W68 refinement before A1e: `RationalPlaceCompletedPointTopology` (cap 150)
+equips the actual positive-precision residue groups with discrete uniformity
+and the completed group with the induced inverse-limit uniformity. Prove
+closedness, completeness, Hausdorff separation, continuity of the group law,
+and continuity of the original projections. This is the adic topology; it
+does not assert analytic coordinates or a logarithm.
