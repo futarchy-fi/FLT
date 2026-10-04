@@ -1536,3 +1536,224 @@ The family admission is unchanged. Reproduce the validation via
 `W40_MODULES.txt`, individual build/lint commands, `W40_AXIOMS.lean`,
 `W40_BOUNDARY_AXIOMS.lean` and `W40_FINAL_CHECKS.py`; the untracked
 `FAMILY_W40_DONE.md` records the checked time and exact local commits.
+
+## W41 refinement: flat tensoring of actual tangent relations
+
+The L6b.2 presentation theorem is still absent: finite flatness of the
+original cover does not exhibit liftable equations. No flat deformation
+or formal smoothness is inferred from the monic special case.
+
+For L7a.5, nonprojectivity of the cotangent is not by itself an obstruction.
+Use the original finite free coordinate algebra A. The Leibniz relation
+map A tensor A -> A sends a tensor b to ab - epsilon(a)b - epsilon(b)a.
+Its precomposition kernel is exactly the module of augmentation tangents.
+Both coordinate sources are finite projective, so Mathlib
+`TensorProduct.lTensorHomEquivHomLTensor` applies to their Hom modules;
+`LinearMap.tensorKerEquiv` then commutes this kernel with flat tensoring.
+This proves a canonical finite-level comparison without asserting that
+the cotangent quotient is projective. The original cotangent pairing
+must be retained by an evaluation lemma.
+
+| Leaf | Obligation | Cap |
+|---|---|---:|
+| L7a.5a / FlatTensorHomKernel | Flat tensor comparison for kernels of precomposition between Hom modules with finite projective sources; pure-tensor evaluation. | 150 |
+| L7a.5b / AugmentationTangentRelations | Original Leibniz relation map and its exact tangent-kernel identification. | 150 |
+| L7a.5c / FlatAugmentationTangent | Combine the two comparisons and preserve the original cotangent pairing and source maps. | 150 |
+
+The comparison is initially over the same base ring. For a cover of a
+test algebra B, the required specialization uses B tensor_R A and its
+augmentation to B. Passage through the original directed colimit,
+overlap transport and finite-stage correction remain separate obligations.
+These leaves do not supply L6b or assemble formal smoothness.
+
+W41 additional source refinement: `cotangentRestriction_ker_scalar` already
+identifies the kernel of restriction to level r with p^r multiples. Thus
+for coefficients killed by p^r, precomposition with restriction is an
+isomorphism at every level >= r. This uses only the original finite-level
+exactness, not finiteness of the underlying cotangent sets or an inverse
+limit argument. Split into `PDivisibleTangentStabilization` (150), original
+augmentation-kernel inclusion compatibility (150), and identification of
+the actual colimit augmentation kernel with level-r tangents (150).
+
+The stage/colimit leaves are named `PDivisibleInfinitesimalStages` and
+`PDivisibleInfinitesimalColimit`. The latter must prove bijectivity of the
+map from the actual level-r kernel into the actual point-colimit kernel;
+it cannot define a substitute colimit or assume representative existence.
+
+L6b.2 splits further: `FinitePresentationPointCover` (150) proves the
+actual tensor division cover is finite and finitely presented, using the
+finite free original coordinates, restriction of finite presentation and
+base change (`Finiteness.ModuleFinitePresentation`, `FiniteStability`).
+This is not yet a liftable local presentation: a finite set of arbitrary
+relations does not prove flatness of their lifts. The regular-sequence or
+other liftable refinement remains the next geometric obligation.
+
+L7b.4 also separates transport from existence: `InfinitesimalTangentCocycle`
+(150) converts the actual group discrepancy cocycle into an additive
+identity of original kernel-valued tangents. `CotangentAmitsurComparison`
+(150) transports the tensor differentials through the proved finite-level
+cotangent comparison; `CotangentAmitsurExact` (150) constructs a correcting
+cotangent functional from that cocycle. Specializing to a flat cover of B
+still needs the relative B-linear comparison and the actual overlap maps.
+
+To address the test-algebra base precisely, add `RelativeHomRelations`
+(150): the tensor/Hom adjunction identifies R-linear relation functionals
+with B-linear functionals on B tensor_R coordinates. Then
+`RelativeFlatHomKernel` (150) applies flat kernel comparison over B to
+that finite free presentation. `RelativeFlatCotangent` (150) specializes
+to the original augmentation relation and cotangent pairing. No flatness
+of B over R is required: only the actual cover S over B is flat.
+
+`FlatCoverReductionKernel` (150) removes the redundant tensor-with-B
+factor from the reduction kernel: for the actual cover D over B, identify
+D tensor_B ker(B -> C) with ker(D -> D tensor_B C). This is needed to
+apply the relative cotangent comparison to actual test-algebra points,
+rather than points of an isomorphic but unrecorded algebra.
+
+`FlatCoverSquareZero` (150) transports the square-zero condition and its
+p-power annihilator to the actual cover reduction. Then
+`PDivisibleInfinitesimalFlatCover` (150) identifies the actual colimit
+kernel over D with D tensor_B Hom_R(original level-r cotangent, J), and
+records the original pairing. This is the required coefficient base B,
+with no assumption that B or D is flat over R.
+
+Final W41 refinement: the Amitsur comparison and correction leaves use
+B throughout, via `relativeFlatCotangentHomEquiv`, rather than assuming
+flatness over R. `RelativeCotangentNaturality` (150) retains original
+cotangent transitions and maps of flat B-covers. Finally,
+`PDivisibleInfinitesimalCorrection` (150) converts a cotangent cocycle into
+an actual augmentation point of the specified original level r on D;
+its original cotangent functional is a correcting cochain. The cocycle
+condition remains a mathematical input about the supplied discrepancy,
+not an assumption that a correction exists. The outstanding application
+must form that discrepancy from actual local division lifts and identify
+its three overlap pullbacks with these differentials.
+
+### W41 implementation boundary
+
+The new leaves prove finite presentation of the actual division cover,
+but do not give it a liftable refinement. L6b.2's remaining presentation
+argument and L6b.3–4 are still open. In particular no lifted flat B-cover
+or formal-smoothness theorem has been constructed.
+
+The infinitesimal representation has advanced beyond W40. Kernel-valued
+tangents killed by p^r stabilize at original level r, using the existing
+finite-level cotangent exactness. The actual point-colimit augmentation
+kernel is equivalent to that original level kernel. On any flat B-cover
+D its actual reduction kernel is D tensor_B J, and the actual colimit
+infinitesimal kernel is D tensor_B Hom_R(Cotangent_r, J). The equivalence
+retains the original cotangent pairing. Source inclusions, cotangent
+transitions and maps of flat covers have their explicit comparison
+lemmas. No projectivity of Cotangent_r, flatness of B over R, or finiteness
+of the underlying cotangent sets is assumed.
+
+For descent, actual equal-reduction point differences satisfy an additive
+tangent/cotangent cocycle identity. The relative cotangent comparison
+intertwines the first two Amitsur differentials over B. Every such
+cotangent cocycle has a correcting cochain, and
+`exists_original_infinitesimal_correction` represents that cochain by an
+actual augmentation point at the specified original level r on D.
+
+The remaining L7b.4 application must still start with actual local
+inclusion lifts, form their double/triple-overlap discrepancy, and prove
+that its pullbacks match the displayed relative Amitsur maps. It must
+then correct those original local points and descend them. The additive
+cocycle identity and the correction theorem are not themselves that
+application. L8/L9, the connected formal object and its cotangent, and
+all earlier period-comparison gates remain open. The family admission
+has not been edited or removed.
+
+Reproduce the source/object, cap, per-module build/lint and named-axiom
+checks with `W41_FINAL_CHECKS.py`; `FAMILY_W41_DONE.md` records the checked
+snapshot and local commits. These artifacts remain untracked outside FLT/.
+
+## W42: source proof for the lifted-presentation gate
+
+The relevant source is Stacks **00T0** (lifting syntomic algebras), with
+**00SY** (local relative complete-intersection presentations), **00ST**
+(localizing a lifted presentation) and **00SW** (relative global complete
+intersections are syntomic). The statements and proofs were checked in
+`algebra.tex` of stacks/stacks-project on 2026-10-04. These are source
+proofs to formalize, not available Lean theorems.
+
+For a syntomic C-algebra E, 00SY gives finitely many principal charts
+E[1/s_i] presented as relative complete intersections. Lift their finitely
+many equations to B and form D_i. The reduction of D_i is the specified
+chart, by the quotient universal property, without any flatness assertion.
+00ST localizes D_i at an element reducing to 1 to make it a relative
+complete intersection; 00SW proves flatness. If ker(B -> C) is nilpotent,
+every B-prime comes from a C-prime; hence the jointly surjective reduced
+charts are still jointly surjective over B. A finite product of the flat
+D_i is then faithfully flat. The chart identifications transport the
+*specified* map from the original division algebra to this reduction.
+
+The unresolved premise is that the actual division cover is syntomic.
+It is a torsor under a finite flat kernel group, so a route is to trivialize
+geometric fibres, use finite group-scheme complete-intersection structure,
+and descend the fibre property. `HopfAlgebra.exists_minimal_square_presentation`
+is a starting theorem only for a **local Hopf algebra over a perfect field
+of positive characteristic**. It does not prove the torsor statement,
+the regular-sequence property, characteristic-zero fibres, or descent of
+complete-intersection fibres. None of these may be inferred from finite
+presentation or from the existence of equally many generators and relations.
+A general fppf-to-syntomic refinement is not asserted here.
+
+Every implementation leaf below has a 150-line whole-module cap. The
+large leaves must be further split before implementation if that cap
+cannot be met; the table does not declare unproved source lemmas ready.
+
+| Leaf / proposed module | Exact obligation and source | State before implementation |
+|---|---|---|
+| L6b.2b.i / DivisionTorsorFibres | Identify each geometric fibre of the actual reduction pullback with its original kernel group after choosing a point; retain the action and coordinate maps. | Missing group/torsor theory. |
+| L6b.2b.ii / FiniteHopfFibreCI | Extend the existing local perfect-field square-presentation theorem to geometric fibres, and prove regularity of their relations. | Missing fibre decomposition and commutative algebra. |
+| L6b.2b.iii / DivisionSyntomicCharts | Descend the fibre property and extract a finite unit-ideal family of relative CI presentations (00SY). | Missing syntomic and relative CI APIs; depends on i–ii. |
+| L6b.3a / LiftedPresentationReduction | Lift the equations of a specified finite presentation through a coefficient surjection; construct its quotient map and compute its kernel. | Ready: `MvPolynomial.map_surjective`, ideal map/comap and quotient APIs. No flatness conclusion. |
+| L6b.3b / LiftedPresentationBaseChange | Identify the actual reduction of the lifted quotient with the original presented algebra, retaining polynomial representatives and the original point. | Ready after 3a; quotient and tensor universal properties. |
+| L6b.3c / RelativeCIDeformation | Prove the fibre-dimension/regular-sequence flatness theorem, then the localization step of 00ST/00SW. | Large missing theory; flatness is to be proved, not put in a presentation record. |
+| L6b.4a / NilpotentCovering | Prove surjectivity on spectra across a nilpotent quotient and lift faithful covering in a commuting square once flatness is proved. | Ready: prime map/comap and `FaithfullyFlat.of_comap_surjective`. |
+| L6b.4b / LiftedChartCover | Assemble finitely many flat lifted charts and transfer the actual division point to their reduction. | Product flatness and chart assembly after 2b.iii/3c. |
+| L7b.4 / OriginalOverlapAssembly | Instantiate W41's original kernel/cotangent equivalences on these double/triple overlaps and apply its original correction. | Blocked on an actual flat lifted cover. |
+| L8–9 / OriginalFormalSmoothness | Descend corrected local lifts and iterate along a nilpotent filtration. | Blocked on the preceding construction; family admission unchanged. |
+
+This split is committed before the implementation. In particular a
+conditional covering lemma must not be reported as existence of flat
+lifts, and a lifted quotient presentation must not be reported as a
+relative complete intersection.
+
+W42 implementation subdivision (all caps 150): 3a uses
+`PolynomialCoefficientKernel`, `LiftedQuotientReduction`, and
+`LiftedPresentationReduction`; 3b uses `SurjectiveReductionBaseChange` and
+`LiftedPresentationBaseChange`; 4a–b use `NilpotentCovering` and
+`LiftedChartCover`. In the last module every individual chart's flatness
+is still an input; joint covering of the product is proved. The point
+transport theorem is over the original coefficient ring R, not B, since
+original coordinate rings need not be B-algebras.
+
+For nilpotent coefficient kernels the element reducing to 1 in 00ST is
+already a unit. Thus this special case can avoid the open-locus step by
+proving invariance of fibres under the nilpotent quotient and applying
+00SW directly. **00SW remains unimplemented.** The current Mathlib has
+regular-local-ring definitions and stability under polynomials, but no
+Cohen–Macaulay or syntomic API giving this relative flatness result. For
+p-nilpotent test algebras only characteristic-p geometric fibres occur;
+a characteristic-zero branch is needed only for the more general claim.
+The first unresolved mathematical gate is still 2b.i–iii, followed by
+3c's relative-CI flatness theorem. These are substantial missing theory,
+not an external authorization issue or a missing typeclass instance.
+
+The source dependency behind 3c is not just 00SW's short statement:
+00SV proves regularity and flatness of successive relation quotients;
+its Noetherian case uses the fibrewise regular-sequence flatness criterion,
+and its arbitrary-base case uses 00SU's Noetherian approximation followed
+by filtered-colimit exactness and flatness. The present tests B,C are
+arbitrary algebras, so silently adding Noetherian hypotheses would not
+close the target. A next wave must split this dependency itself into
+proof-sized leaves before attempting 3c; W42 does not call it implemented.
+
+Checked implementation boundary: the seven W42 modules prove 3a, 3b,
+and the conditional covering/finite-product part of 4a–b. Each is below
+150 lines; individual build/lint and complete named axiom audits are in
+the untracked W42 validation artifacts. They do not supply 2b's charts,
+3c's flatness, the point on a *faithfully flat* lifted cover, the original
+overlap application, or formal smoothness. The existing family admission
+is untouched. See `FAMILY_W42_DONE.md` for the checked commit and evidence.
