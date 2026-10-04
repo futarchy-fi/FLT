@@ -568,6 +568,7 @@ public import FLT.GroupScheme.CartierDualModelIso
 public import FLT.GroupScheme.CartierDualPairing
 public import FLT.GroupScheme.CartierDualPointFiltration
 public import FLT.GroupScheme.CartierDualSpecialFiber
+public import FLT.GroupScheme.CartierDualTangent
 public import FLT.GroupScheme.CartierDualTorsor
 public import FLT.GroupScheme.CategoryDExactSubquotients
 public import FLT.GroupScheme.CompletionDifferent
@@ -587,6 +588,7 @@ public import FLT.GroupScheme.ConstantMuThreeTorsion
 public import FLT.GroupScheme.ContinuousKummerClass
 public import FLT.GroupScheme.ContinuousKummerParameter
 public import FLT.GroupScheme.ConvolutionBaseChange
+public import FLT.GroupScheme.ConvolutionTensorPower
 public import FLT.GroupScheme.CoordinateOrder
 public import FLT.GroupScheme.CubicKummerCocycle
 public import FLT.GroupScheme.CyclicPowerElimination
@@ -604,7 +606,13 @@ public import FLT.GroupScheme.EtaleSplitting
 public import FLT.GroupScheme.FaithfullyFlatQuotient
 public import FLT.GroupScheme.FaithfullyFlatRetraction
 public import FLT.GroupScheme.FiniteFlat
+public import FLT.GroupScheme.FiniteFlatCartierTangent
 public import FLT.GroupScheme.FiniteFlatClosureChange
+public import FLT.GroupScheme.FiniteFlatCotangent
+public import FLT.GroupScheme.FiniteFlatCotangentArithmetic
+public import FLT.GroupScheme.FiniteFlatCotangentFinite
+public import FLT.GroupScheme.FiniteFlatCotangentImage
+public import FLT.GroupScheme.FiniteFlatCotangentKernel
 public import FLT.GroupScheme.FiniteFlatDifferentials
 public import FLT.GroupScheme.FiniteFlatExtensionKernelIso
 public import FLT.GroupScheme.FiniteFlatExtensionQuotientIso
@@ -616,9 +624,11 @@ public import FLT.GroupScheme.FiniteFlatQuotientUniverses
 public import FLT.GroupScheme.FiniteFlatRestrictedScalarExtension
 public import FLT.GroupScheme.FiniteFlatScalarExtension
 public import FLT.GroupScheme.FiniteFlatSectionDescent
+public import FLT.GroupScheme.FiniteFlatSquareZeroLifting
 public import FLT.GroupScheme.FiniteFlatSubobject
 public import FLT.GroupScheme.FiniteFlatSubobjectUniverses
 public import FLT.GroupScheme.FiniteFlatSubquotientBaseChange
+public import FLT.GroupScheme.FiniteFlatTangentNaturality
 public import FLT.GroupScheme.FiniteFlatTowerClosure
 public import FLT.GroupScheme.FiniteFreeAdicComplete
 public import FLT.GroupScheme.FiniteHopfFreeness
@@ -742,8 +752,25 @@ public import FLT.GroupScheme.ModelPoints
 public import FLT.GroupScheme.MuThreeCubicCoordinates
 public import FLT.GroupScheme.MultiplicativeFiltrationPurity
 public import FLT.GroupScheme.OrderThreeModelIdentification
+public import FLT.GroupScheme.PDivisibleCotangentArithmetic
+public import FLT.GroupScheme.PDivisibleCotangentComplete
+public import FLT.GroupScheme.PDivisibleCotangentExactness
+public import FLT.GroupScheme.PDivisibleCotangentFiniteSets
+public import FLT.GroupScheme.PDivisibleCotangentGenerators
+public import FLT.GroupScheme.PDivisibleCotangentLimit
+public import FLT.GroupScheme.PDivisibleCotangentLimitFinite
+public import FLT.GroupScheme.PDivisibleCotangentLimitReduction
+public import FLT.GroupScheme.PDivisibleCotangentSurjective
+public import FLT.GroupScheme.PDivisibleCotangentTransitions
+public import FLT.GroupScheme.PDivisibleIntegralTangent
+public import FLT.GroupScheme.PDivisibleRationalCotangent
+public import FLT.GroupScheme.PDivisibleRationalPlaceTransport
+public import FLT.GroupScheme.PDivisibleRationalTateAction
+public import FLT.GroupScheme.PDivisibleSquareZeroLifting
 public import FLT.GroupScheme.PDivisibleSystem
 public import FLT.GroupScheme.PDivisibleSystemCategory
+public import FLT.GroupScheme.PDivisibleTangentNaturality
+public import FLT.GroupScheme.PDivisibleTangentReduction
 public import FLT.GroupScheme.PDivisibleTateAction
 public import FLT.GroupScheme.PDivisibleTateCompact
 public import FLT.GroupScheme.PDivisibleTateModule
@@ -770,6 +797,7 @@ public import FLT.GroupScheme.PadicMuThreeConnected
 public import FLT.GroupScheme.PadicPatchingArithmetic
 public import FLT.GroupScheme.PadicPatchingRings
 public import FLT.GroupScheme.PadicTensorPatching
+public import FLT.GroupScheme.PadicTorsionScalarContinuity
 public import FLT.GroupScheme.PointDifferentConductor
 public import FLT.GroupScheme.PointDifferentials
 public import FLT.GroupScheme.PointFieldEvaluation
@@ -1032,6 +1060,10 @@ public import FLT.GroupScheme.SplitKummerGeneralPointLaw
 public import FLT.GroupScheme.SplitKummerModel
 public import FLT.GroupScheme.SplitKummerPointLaw
 public import FLT.GroupScheme.SplitKummerResidue
+public import FLT.GroupScheme.SquareZeroConvolution
+public import FLT.GroupScheme.SquareZeroConvolutionLift
+public import FLT.GroupScheme.SquareZeroLiftNaturality
+public import FLT.GroupScheme.SquareZeroPointLift
 public import FLT.GroupScheme.StableSubgroupExtension
 public import FLT.GroupScheme.SupportedKummerCubes
 public import FLT.GroupScheme.SupportedKummerValuations
@@ -1580,8 +1612,11 @@ public import FLT.Mathlib.RepresentationTheory.Homological.ContCohomology.CupPro
 public import FLT.Mathlib.RingTheory.AdicCompletion.Power
 public import FLT.Mathlib.RingTheory.AdicCompletion.PowerQuotients
 public import FLT.Mathlib.RingTheory.AdjoinRoot
+public import FLT.Mathlib.RingTheory.AugmentationConvolution
 public import FLT.Mathlib.RingTheory.AugmentationCotangent
 public import FLT.Mathlib.RingTheory.AugmentationGenerators
+public import FLT.Mathlib.RingTheory.AugmentationTangent
+public import FLT.Mathlib.RingTheory.AugmentationTangentEquiv
 public import FLT.Mathlib.RingTheory.ConvolutionTensorPair
 public import FLT.Mathlib.RingTheory.CotangentGenerators
 public import FLT.Mathlib.RingTheory.CotangentQuotient
@@ -1602,6 +1637,7 @@ public import FLT.Mathlib.RingTheory.DiscreteValuationRing.TotalRamification
 public import FLT.Mathlib.RingTheory.DiscreteValuationRing.UniformizerMinpoly
 public import FLT.Mathlib.RingTheory.DiscreteValuationRing.UnramifiedSubalgebra
 public import FLT.Mathlib.RingTheory.Discriminant
+public import FLT.Mathlib.RingTheory.FiniteTorsionModule
 public import FLT.Mathlib.RingTheory.FrobeniusAugmentation
 public import FLT.Mathlib.RingTheory.FrobeniusImage
 public import FLT.Mathlib.RingTheory.GeneratorsDifferentialRelations
@@ -1620,6 +1656,7 @@ public import FLT.Mathlib.RingTheory.MvPolynomial.HeightOneIdeal
 public import FLT.Mathlib.RingTheory.MvPolynomial.LocalizedReduction
 public import FLT.Mathlib.RingTheory.MvPolynomial.NilpotentPresentation
 public import FLT.Mathlib.RingTheory.MvPolynomial.RedundantCoordinates
+public import FLT.Mathlib.RingTheory.NilpotentGeneratorLifting
 public import FLT.Mathlib.RingTheory.NilpotentRelationLifting
 public import FLT.Mathlib.RingTheory.Norm.Quadratic
 public import FLT.Mathlib.RingTheory.Norm.Quotient
@@ -2369,6 +2406,8 @@ public import FLT.PadicHodgeTheory.AdicRegularCancellation
 public import FLT.PadicHodgeTheory.AdicRingFunctor
 public import FLT.PadicHodgeTheory.AdicSeries
 public import FLT.PadicHodgeTheory.AdicUnitReflection
+public import FLT.PadicHodgeTheory.AlgebraicClosureGaloisContinuity
+public import FLT.PadicHodgeTheory.AlgebraicClosureGaloisTransport
 public import FLT.PadicHodgeTheory.AxDegreeBudget
 public import FLT.PadicHodgeTheory.ComplexAxDescent
 public import FLT.PadicHodgeTheory.ComplexAxFixedScalars
@@ -2399,6 +2438,7 @@ public import FLT.PadicHodgeTheory.ComplexDeRhamDenominators
 public import FLT.PadicHodgeTheory.ComplexDeRhamEquivariance
 public import FLT.PadicHodgeTheory.ComplexDeRhamFieldGalois
 public import FLT.PadicHodgeTheory.ComplexDeRhamFiltration
+public import FLT.PadicHodgeTheory.ComplexDeRhamFixedScalars
 public import FLT.PadicHodgeTheory.ComplexDeRhamFractionField
 public import FLT.PadicHodgeTheory.ComplexDeRhamGalois
 public import FLT.PadicHodgeTheory.ComplexDeRhamGraded
@@ -2410,6 +2450,7 @@ public import FLT.PadicHodgeTheory.ComplexFiniteLogEvaluation
 public import FLT.PadicHodgeTheory.ComplexFiniteLogLimit
 public import FLT.PadicHodgeTheory.ComplexFiniteThetaScalars
 public import FLT.PadicHodgeTheory.ComplexFiniteThetaTopology
+public import FLT.PadicHodgeTheory.ComplexFixedResidue
 public import FLT.PadicHodgeTheory.ComplexFontaineTheta
 public import FLT.PadicHodgeTheory.ComplexGaloisAction
 public import FLT.PadicHodgeTheory.ComplexGaloisApproximation
@@ -2425,6 +2466,7 @@ public import FLT.PadicHodgeTheory.ComplexIntegerGradedInvariants
 public import FLT.PadicHodgeTheory.ComplexIntegerGradedProduct
 public import FLT.PadicHodgeTheory.ComplexIntegerGradedScalars
 public import FLT.PadicHodgeTheory.ComplexIntegerInvertP
+public import FLT.PadicHodgeTheory.ComplexInvariantOrder
 public import FLT.PadicHodgeTheory.ComplexLocalizedGalois
 public import FLT.PadicHodgeTheory.ComplexNonzeroTwistVanishing
 public import FLT.PadicHodgeTheory.ComplexPadicScalarAction
