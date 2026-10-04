@@ -2166,9 +2166,9 @@ All names below are under `FLT.Mathlib.RingTheory` unless prefixed
 ### Remaining flatness and assembly boundary
 
 C7a–c construct a Noetherian coefficient stage; they do **not** assert that
-the fibre-regularity property holds at that stage. The Noetherian local
+the fibre-regularity property holds at that stage. W49 below proves the Noetherian local
 flatness criterion C4a–g, regular-sequence quotient induction C5, and local
-to global flatness C6 remain unproved. C8's eventual regularity-stage
+to global flatness C6. C8's eventual regularity-stage
 spreading and C9's varying-stage colimit comparison also remain. Principal
 localization must be included in these approximation comparisons. C10–C12
 then need to prove flatness of the actual **lifted** relation charts.
@@ -2185,3 +2185,72 @@ The read-only reproducible checks are individual `lake build MODULE`,
 `lake exe runLinter MODULE`, and `#print axioms` for every new declaration;
 the final handoff records their checked-at time, source hashes and the
 single post-merge root build.
+
+
+## W49: adic local flatness and Noetherian relative complete intersections
+
+The C4–C6 proof chain is now implemented. Its strongest local statement,
+`Module.Flat.injective_and_flat_of_local_residue`, starts with a right exact
+sequence `N → M → Q`, a flat `R`-module `M`, and an `N` finite over a
+Noetherian local `R`-algebra `S`. For a local map `R → S`, injectivity of
+`N → M` on the residue fibre implies injectivity upstairs and `R`-flatness
+of `Q`. No target-quotient flatness is assumed. The base `R` need not itself
+be Noetherian in this criterion.
+
+The graded comparison includes the actual quotient `M/IM` and a formula
+on quotient representatives. Tensor right exactness supplies the successive
+adic rows; flatness of the original target supplies their left injectivity.
+An exact-sequence argument propagates residual injectivity through powers.
+Krull intersection then separates the finite source.
+
+C4e uses an equivalent proof that avoids rebuilding scalar structures over
+`R/J`: it proves injectivity modulo `J + m^n`, using a transition kernel
+annihilated by `m`. Applying Krull intersection to `N/JN` reflects membership
+in `JN`. Thus the original map remains injective after tensoring with `R/J`
+for every ideal `J`. A tensor diagram chase with `J → R → R/J` and
+`Flat.iff_rTensor_injective'` proves cokernel flatness.
+
+| Leaf | Module under `FLT.Mathlib.RingTheory` | Proven output |
+|---|---|---|
+| C4a | `Flat.AdicGradedTensorComparison` | Graded tensor and module-quotient comparisons, including representative formulas. |
+| C4b | `Flat.AdicQuotientExactRow` | Exact adic rows and injectivity of their left tensor map for flat modules. |
+| C4c.1 | `Flat.TensorInjectivityExtension` | Injectivity across a short exact tensor sequence. |
+| C4c.2 | `Flat.AdicInjectivityInduction` | Injectivity modulo all positive powers. |
+| C4d | `Flat.AdicSeparatedInjectivity` | Krull-separated injectivity, including the local-map corollary. |
+| C4e.1 | `Flat.AdicBaseIdealInduction` | Injectivity modulo `J + m^n`. |
+| C4e.2 | `Flat.AdicSubmoduleClosed` | Closedness of each submodule in the finite Noetherian module. |
+| C4e.3 | `Flat.QuotientTensorInjectivity` | Tensor injectivity is reflection of ideal-multiple membership. |
+| C4e.4 | `Flat.QuotientBaseInjectivity` | Injectivity modulo every base ideal. |
+| C4f | `Flat.FlatCokernelIdealCriterion` | The flat-cokernel ideal criterion. |
+| C4g.1 | `Flat.LocalFlatCokernel` | Local injectivity and flat cokernel assembly. |
+| C4g.2 | `Flat.NoetherianFibreRegularElement` | Regularity and flat scalar quotient; also the actual ring quotient `S/(x)`. |
+| C5a | `Flat.RelativeQuotSMulTensor` | Scalar quotient/tensor comparison over the smaller base, linear over the ambient algebra. |
+| C5b | `Flat.FibreRegularSequenceInduction` | Ordered regular-sequence induction and flatness of every original prefix quotient. |
+| C6a | `Flat.LocalizedQuotientFlatness` | Relative quotient flatness checked in ambient maximal localizations. |
+| C6b | `Flat.NoetherianRelativeCIFlat` | Stalk induction and global flatness, requiring regularity only on the zero locus. |
+| C6c | `Flat.StalkFibreQuotient` | The stalk fibre as a quotient by the original contracted prime. |
+| C6d | `Flat.FibreRegularityAtStalk` | Transport of the specified fibre equations to that stalk fibre. |
+| C6e | `Flat.NoetherianFibreCIFlat` | Global flatness from regularity at fibre points on the zero locus. |
+| C6f | `MvPolynomial.NoetherianFibreQuotientFlat` | The criterion in finite polynomial coordinates over a Noetherian base. |
+
+Every leaf is a new module of at most 150 lines. The verification entry points
+are `W49_VALIDATE.py` (individual foreground builds and module-only lint),
+`W49_AXIOMS.lean` (all new declarations), and `W49_BOUNDARY_AXIOMS.lean`.
+The untracked `FAMILY_W49_DONE.md` records checked-at timestamps, source hashes,
+commits, and the required post-merge root build.
+
+### Remaining formal-smoothness boundary
+
+C4–C6 do not prove that a finite coefficient stage inherits the required
+fibre regularity. C7 still needs principal-localization data, C8 must spread
+fibre regularity to a suitable Noetherian stage, and C9–C10 must construct
+and use the varying-stage comparison to obtain arbitrary-base flatness.
+The general C6 ambient-algebra criterion applies to a Noetherian principal
+localization when its fibre condition is supplied; the coefficient-stage
+and lifted-chart comparisons must still supply that condition.
+
+C11–C12 must transfer regularity through the nilpotent coefficient kernel
+and prove the actual lifted charts flat before W42's cover assembly applies.
+Local point lifts, compatible overlaps, descent, nilpotent iteration, and
+later family-realization obligations remain. No new theorem in W49 asserts
+formal smoothness or removes the existing `mem_isCompatible` admission.
