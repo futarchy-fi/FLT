@@ -166,6 +166,8 @@ public import FLT.Deformations.DeSmitLenstra.ProfiniteFramedLimit
 public import FLT.Deformations.DeSmitLenstra.ProfiniteFramedQuotients
 public import FLT.Deformations.DeSmitLenstra.ProfiniteUniversalLift
 public import FLT.Deformations.DeSmitLenstra.TraceCoefficients
+public import FLT.Deformations.DeSmitLenstra.TraceImageLift
+public import FLT.Deformations.DeSmitLenstra.TraceSpecialization
 public import FLT.Deformations.DeSmitLenstra.UniversalLift
 public import FLT.Deformations.DeSmitLenstra.UniversalMoritaData
 public import FLT.Deformations.DeSmitLenstra.UniversalTraceLift
@@ -185,6 +187,9 @@ public import FLT.Deformations.HardlyRamifiedArithmeticResidual
 public import FLT.Deformations.HardlyRamifiedFlatLift
 public import FLT.Deformations.HardlyRamifiedFlatPoint
 public import FLT.Deformations.HardlyRamifiedFlatQuotient
+public import FLT.Deformations.HardlyRamifiedTraceArithmetic
+public import FLT.Deformations.HardlyRamifiedTraceImage
+public import FLT.Deformations.HardlyRamifiedTraceLift
 public import FLT.Deformations.HardlyRamifiedTwoQuotient
 public import FLT.Deformations.HardlyRamifiedUniversal
 public import FLT.Deformations.HardlyRamifiedWittLift
@@ -197,6 +202,7 @@ public import FLT.Deformations.LiftFunctor
 public import FLT.Deformations.OpenIdealCondition
 public import FLT.Deformations.OrdinaryQuadraticUniversalQuotient
 public import FLT.Deformations.OrdinaryUniversalQuotient
+public import FLT.Deformations.ProartinianImage
 public import FLT.Deformations.ProartinianQuotients
 public import FLT.Deformations.Representable
 public import FLT.Deformations.RepresentationTheory.AbsoluteGaloisGroup
