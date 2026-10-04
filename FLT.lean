@@ -136,6 +136,8 @@ public import FLT.Deformations.DeSmitLenstra.TraceCoefficients
 public import FLT.Deformations.DeSmitLenstra.UniversalLift
 public import FLT.Deformations.DeSmitLenstra.UniversalMoritaData
 public import FLT.Deformations.DeSmitLenstra.UniversalTraceLift
+public import FLT.Deformations.FixedResidualQuotientIdeal
+public import FLT.Deformations.FramedQuotientIdeal
 public import FLT.Deformations.HardlyRamifiedUniversal
 public import FLT.Deformations.IsProartinian
 public import FLT.Deformations.IsResidueAlgebra
@@ -356,6 +358,7 @@ public import FLT.GaloisRepresentation.Extensions.ContinuousH1Equiv
 public import FLT.GaloisRepresentation.Extensions.ContinuousH2Comparison
 public import FLT.GaloisRepresentation.Extensions.ExtendedUnitSubspace
 public import FLT.GaloisRepresentation.Extensions.FiniteDescent
+public import FLT.GaloisRepresentation.Extensions.FiniteInertiaExponent
 public import FLT.GaloisRepresentation.Extensions.HomogeneousCup
 public import FLT.GaloisRepresentation.Extensions.HomogeneousOne
 public import FLT.GaloisRepresentation.Extensions.HomogeneousTwo
@@ -597,6 +600,10 @@ public import FLT.GroupScheme.CartierDualSpecialFiber
 public import FLT.GroupScheme.CartierDualTangent
 public import FLT.GroupScheme.CartierDualTorsor
 public import FLT.GroupScheme.CategoryDExactSubquotients
+public import FLT.GroupScheme.CoactionBasisMultiplication
+public import FLT.GroupScheme.CoactionBasisProjectors
+public import FLT.GroupScheme.CoactionDescentLaws
+public import FLT.GroupScheme.CoactionTorsorGrading
 public import FLT.GroupScheme.CompletionDifferent
 public import FLT.GroupScheme.ConnectedTensorPoint
 public import FLT.GroupScheme.ConstantCartierDual
@@ -708,6 +715,7 @@ public import FLT.GroupScheme.GenericMorphismScalarExtension
 public import FLT.GroupScheme.GlobalModel
 public import FLT.GroupScheme.GlobalModelAwayTwo
 public import FLT.GroupScheme.GlobalModelOverInt
+public import FLT.GroupScheme.GroupAlgebraCoactionBasis
 public import FLT.GroupScheme.HeightOneStructure
 public import FLT.GroupScheme.HenselianComponents
 public import FLT.GroupScheme.HenselianConnectedLocal
@@ -716,11 +724,15 @@ public import FLT.GroupScheme.HopfDifferentials
 public import FLT.GroupScheme.HopfFiberPointAction
 public import FLT.GroupScheme.HopfFrobenius
 public import FLT.GroupScheme.HopfPointCongruence
+public import FLT.GroupScheme.HopfPointFiberCoactionLaws
 public import FLT.GroupScheme.HopfPointFiberDescent
 public import FLT.GroupScheme.HopfPointFiberDifferenceEvaluation
+public import FLT.GroupScheme.HopfPointFiberGradedGenerator
 public import FLT.GroupScheme.HopfPointFiberHomogeneous
 public import FLT.GroupScheme.HopfPointFiberLocalGenerator
 public import FLT.GroupScheme.HopfPointFiberPoints
+public import FLT.GroupScheme.HopfPointFiberProjectors
+public import FLT.GroupScheme.HopfPointFiberStrongGrading
 public import FLT.GroupScheme.HopfPointFiberTorsor
 public import FLT.GroupScheme.HopfPoints
 public import FLT.GroupScheme.HopfPointsClosureChange
