@@ -4,6 +4,87 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
+## W42 — actual ordinary representations and corrected downstream gates
+
+W42 constructs the actual continuous Hom-valued class of an exact two-line
+filtration, proves section independence and the b/a basis-change formula, and
+constructs simultaneous twists with unchanged Hom class. `OrdinaryGaloisClass`
+discharges orbit continuity from `GaloisRep`. The local representation predicate
+uses the independent cup test; `ordinaryRepresentationPeuRamified_iff_unit`
+proves its equivalence with the existing unit condition. No comparison
+isomorphism, evaluation, extension class or unit witness is an input field.
+The whole local Hom character must be cyclotomic; equality only on inertia is
+insufficient for this theorem.
+
+Proof inventory: `Extensions.OrdinaryFiltration`, `OrdinaryFiltrationClass`,
+`OrdinaryGaloisClass`, `OrdinaryFiltrationBasis`, `OrdinaryFiltrationTwist`,
+`OrdinaryFiltrationUnit`, and
+`LocalClassFieldTheory.OrdinaryRepresentationUnitCriterion`.
+The first six paths are under `FLT/GaloisRepresentation/`.
+
+The [source contract](LIFTS_ORDINARY_SOURCE_MATCH.md) matches the integral
+parameter to the **fppf** Kummer sequence (Stacks 040N), and the independent
+odd-prime weight-set recipe to BDJ Theorem 3.17, including scalar inertia,
+peu/tres, split/nonsplit, p=3 and niveau-two branches. It splits the integral
+model/fibre/parameter/generic-compatibility steps. The numerical `serreWeight`
+convention still needs its own checked specification. Neither finite-flat
+arithmetic nor a weight evaluation is asserted by the new Lean modules.
+
+### Correction to W41: C1 has a proved direct route
+
+The source re-audit finds more than W41's prime-field spectrum:
+
+- `ThreeAdicPlan.coefficient_flat_trace_ne_zero` constructs the nonzero trace
+  at a cyclotomic inertia generator over the **original coefficient field**.
+- `coefficient_flat_spectrum` gives mapped characteristic-polynomial roots,
+  their trace/determinant, and ratio different from −1. It does **not** assert
+  the prime-field p±1 ratio classification over arbitrary coefficients.
+- `GaloisRep.flat_cyclotomic_restriction_absolute_of_isFlatAt` combines that
+  trace with the proved quadratic self-twist/Clifford obstruction and descends
+  from algebraically closed coefficient extensions.
+- `IsHardlyRamified.residual_cyclotomic_restriction_absolute` applies it to
+  every finite residual field with `k V : Type`; the existing mod-three
+  reducibility theorem excludes p=3 under residual irreducibility. This route
+  does not depend on the missing Serre-weight recipe.
+
+The last theorem quantifies over coefficient extensions in universe u, but its
+original k and V are in Type 0. `lifts` has independent arbitrary universes for
+k and V. Preserve that distinction: the remaining C1 work is universe/endpoint
+transport if the full polymorphic endpoint is retained, not another arithmetic
+restriction proof. The p=3 ordinary trace theorem still has zero trace; the
+HR theorem excludes that case globally rather than changing the local theorem.
+
+`ExistingAxioms.lean` checks the HR restriction theorem, its flatness frontend,
+and `hardlyRamified_exists_universalTraceLift`: all use only propext,
+Classical.choice and Quot.sound. The unrestricted universal deformation theorem
+is thus a proved input, but not a local-condition or characteristic-zero theorem.
+
+### Next bounded gates after this re-audit
+
+These replace stale dependency claims below, not the exact `lifts` statement.
+Every eventual Lean module has cap 200; refine a leaf further if needed.
+
+| Leaf | Concrete next artifact | Status/dependencies |
+|---|---|---|
+| C1u | Transport the proved Type-0 HR restriction to the exact residual universes, constructing the finite field/module replacements and all HR/restriction comparisons. | Arithmetic C1 is proved; inspect existing universe transports before coding. Never supply an equivalence as a new endpoint premise. |
+| Lp0 | Exact local functor specification for weight-2 crystalline deformations and the integral finite-flat models at every open ideal, matched to KW II §3.2.2/Prop. 3.6. | Specification first. R1 and integral crystalline comparison remain missing. |
+| L20 | Compare the actual condition at 2 with KW II §3.3.4: fix the unramified quadratic quotient character, not merely inertia trace 2. | A source/API mismatch checklist is bounded and ready; no local ring is asserted. |
+| D1a | Construct quotient/closed-condition functors on the existing unrestricted universal ring and prove their universal property for the specified local conditions. | Needs Lp0/L20 and proofs of closure. `isCorepresentable_narrowSLiftFunctor` still has `sorry`. |
+| G0 | Specify actual global/local adjoint cohomology, localization and dual local conditions; identify a source for their finiteness/exactness. | Ready as source/interface audit. `PoitouTateData.orderFormula` assumes the formula, so its projection theorem is not arithmetic duality evidence. |
+| G1 | Construct the Selmer tangent/obstruction presentation, then prove the KW II Prop. 4.5 dimension bound. | Blocked on G0 arithmetic duality and D1a. Do not turn the order formula into an assumed record field. |
+| M0 | Hypothesis-by-hypothesis KW II Thms. 6.1/8.2/10.1 and Prop. 9.2 map: residual seed, auxiliary totally real fields, disjointness, local conditions, comparison. | Source/interface work; no implemented modularity lifting theorem was located. Coordinate compatible-family work rather than duplicate it. |
+| D3/D4 | Prove global p-adic finiteness and p-nonnilpotence, then use the existing prime-avoiding-p/domain-free lemmas. | Depends on local rings, G1 and M0 arithmetic, not unrestricted representability alone. |
+| I0 | Recover a coefficient order with the original residue field, a free rank-two module, continuity and the exact residual conjugacy. | Integral descent remains required; the normalization may enlarge the residue field. |
+
+Checked at 2026-10-04T03:25:27Z. Source-contract recheck:
+`python3 Scratch/LiftsW42/audit-next.py`. All seven modules (565 lines,
+maximum 129/200) passed individual builds, linters and audits of 30 named
+declarations, with only propext, Classical.choice and Quot.sound. Saved Lean
+validation and the final source hashes are checked by
+`python3 Scratch/LiftsW42/check.py`; it does not rerun Lean. Final check time and
+integration commits are recorded in the untracked W42 result. The global lifting
+admission and `Mazur_statement` at the positive-natural FLT endpoint remain.
+
 ## W41 proved scope — character evaluation and the independent unit annihilator
 
 W41 proves arbitrary finite-character carry evaluation, the root-ratio-first
