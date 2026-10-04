@@ -4,6 +4,73 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
+## W59 — C1 circularity audit and restored arithmetic priorities
+
+Checked 2026-10-04 against `HardlyRamifiedWittPoint`,
+`HardlyRamifiedWittLift`, `HardlyRamifiedWittResidual`, and the exact `lifts`
+statement in `HardlyRamified/Lift.lean`. These are distinct assertions:
+
+- **Bare C1** asks for a continuous global characteristic-zero lift of the
+  residual representation. It omits HR local conditions and finite free
+  p-adic coefficients. It is not literally the `lifts` theorem, and no
+  equivalence with that theorem has been proved. An unrestricted lift may
+  have extra ramification; it cannot witness an HR quotient point.
+- **C1 together with C2–C6** asks for that same lift with determinant,
+  away-inertia, the prescribed quotient at two, and every finite-flat open
+  reduction. `flatPointOfFramedLift` then constructs a characteristic-zero
+  point of the actual HR quotient. Conversely its universal representation
+  already has these conditions, and `flatObject_exists_charZero_iff` proves
+  point existence equivalent to exclusion of every p-power from the flat
+  ideal. This is precisely the unresolved nonvanishing assertion, not an
+  independent proof of it.
+- **The exact `lifts` endpoint** additionally requires a finite free p-adic
+  coefficient order, original residue field and tensor-conjugacy witness,
+  in independent universes. These integral and universe obligations prevent
+  calling the current proartinian point criterion an exact equivalence with
+  `lifts`. C0's Eisenstein targets do not construct a representation or a
+  specialization map.
+
+Thus using C1–C6 to prove the HR quotient's characteristic zero is circular
+as a proof strategy unless their existence is independently established.
+There is no proof that global Selmer/modularity is the only possible route;
+it is the source-matched route retained here (KW II Proposition 4.5,
+Theorem 10.1 and Corollary 4.7). Deprioritize C1–C6. Work in order on
+S0a2/S0a3, effective R1 quotient-twist descent, Lp0 crystalline comparison,
+Noetherianity and the finite coefficient order, then the specified global
+Selmer contracts. Do not dispatch numerical weight evaluation or arbitrary-p
+Raynaud classification as available APIs. No global admission is removed by
+this audit.
+
+### W59 local comparison and remaining boundary
+
+Validation is checked by `python3 Scratch/LiftsW59/check.py`, which prints
+its checked-at time and verifies source hashes and saved foreground Lean
+receipts. It does not rerun Lean; the untracked W59 result lists commits and
+build commands. Require that check before treating this inventory as validated.
+
+| Item | New module under `FLT/AbsoluteGaloisGroup/` | Scope |
+|---|---|---|
+| S0a2 completeness | `CompletionIntegersAdic` | Proves the actual valuation topology is maximal-ideal adic, derives algebraic completeness and Henselianity at every number-field finite place, and constructs primitive tame roots in the base. |
+| S0a2 normality | `TameRootGaloisModel` | The exact chosen root field is Galois; constructs its open normal level, actual integral uniformizer and finite/absolute character comparison. |
+| S0a2 common level | `TameCommonLevel` | Constructs a finite comparison field containing any specified model and the chosen root; proves the actual ramification-exponent formula. |
+| S0a2 transfer | `UniformizerCharacterTransfer`, `FiniteUniformizerTransfer` | Proves the valuation-power relation under an injective local integral map, then constructs the actual nested finite-level maps, their equivariance and commuting residue inclusions. |
+| S0a2/S0a3 comparison | `TameSpecifiedModelComparison` | Eliminates the common-level character to obtain chi_model^k = tameCharacter^e in the actual absolute residue field, with both exponents positive and their valuations specified. |
+
+This removes the previous general-number-field normality gap and supplies
+transfer of uniformizer characters to the specified finite model. It does
+not cancel noninvertible exponents, extract every representation's normalized
+inertial type, or prove numerical Serre-weight evaluations. S0a3's niveau-two,
+non-peu and symmetric-power composition-factor gates remain first in priority.
+R1 effective twisted Hopf descent, Lp0 PD-envelope universality/Frobenius/B_cris,
+arithmetic Noetherianity, and the finite order carrying a lift remain open.
+
+[Global Selmer contracts](LIFTS_W59_GLOBAL_CONTRACTS.md) specify G0a–G1c,
+the separate modularity/finiteness gate, and exact integral assembly. They
+also correct a ring mismatch: KW II Theorem 10.1 concerns the **unframed
+image** in a global framed local-condition ring, not the full framed HR
+quotient. This source distinction must survive the eventual Lean comparison.
+The new modules do not remove `sorryAx` from `lifts` or the FLT endpoint.
+
 ## W43 — integral ordinary models, weight specification, and universe transport
 
 The W43 status supersedes the “next bounded gates” statuses in the historical
