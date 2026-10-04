@@ -4,6 +4,119 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
+## W40 proved scope — finite normalization and the Kummer boundary sign
+
+W40 identifies the actual finite uniformizer carry with
+`relativeFundamentalOrdinaryClass`. The proof compares continuous and ordinary
+representatives, transports the finite field through its actual inclusion into
+the unramified union, and uses injective absolute inflation with positive
+invariant `1/n`. No comparison isomorphism or evaluation is assumed.
+
+The existing `finiteArtin` sends a uniformizer to **negative** arithmetic
+Frobenius. `positiveFiniteArtin` explicitly negates that map, retains its
+surjectivity and algebraic norm kernel, and commutes with every finite tower.
+Its uniformizer theorem covers every positive degree, including degree one.
+The Frobenius used in the original subfield of the closure is transported from
+the existing arithmetic Frobenius through the canonical field equivalence.
+
+The Kummer calculation proves a further, separate statement: the existing
+root-ratio-first continuous cup, included into field-unit coefficients, has
+H² class equal to the **negative** positive parameter-carry class. The bounding
+cochain is the chosen root raised to integer representatives of the character;
+algebraic closedness supplies the root. This does not yet evaluate the
+parameter carry's invariant at the Artin image for an arbitrary character.
+
+Validation: ten modules, 954 lines, maximum 123/200; all 52 named declarations
+passed individual foreground builds, one-module linters, and axiom audits.
+Only `propext`, `Classical.choice`, and `Quot.sound` occur in the new declarations.
+Proof commits: `d6121062`, `e7e871fd`. Integration merged `origin/main` at
+`2363004c` in `7dcb31c6`. Checked at 2026-10-04T00:58:30Z;
+`python3 Scratch/LiftsW40/check.py` checks source hashes, saved successful
+build/lint/axiom logs, declaration coverage, line caps, permitted proof edits,
+sorted root imports, and the post-merge build-input snapshot. It checks saved
+root/endpoint results rather than rerunning Lean. The lifting endpoints still
+have `sorryAx`; `PNat.pow_add_pow_ne_pow` also retains `Mazur_statement`.
+
+### Remaining work, in order
+
+1. Prove character evaluation for the positive parameter carry: for a finite
+   character factoring through an actual finite Galois extension, its absolute
+   invariant must equal the rational-circle image of that character evaluated
+   on `positiveFiniteArtin` of the parameter. The uniformizer computation in
+   an unramified stage does not prove this for arbitrary characters. The new
+   `kummerCarryCup_class` supplies the required cup-order minus sign once this
+   evaluation is proved. Construct any needed finite-character descent and
+   coefficient/cohomology comparisons, without evaluation premises.
+2. Finish the Kummer H² coefficient-inclusion/vanishing comparison and the
+   continuous reciprocity assembly needed by E1c7, then derive E1d's independent
+   unit-class annihilator statement and its scalar extension.
+3. Only after E1 closes, re-audit and split the later lifting gates. The
+   Serre-weight evaluation and arbitrary-prime Raynaud classification APIs
+   remain unavailable; no dispatch or ready-API claim is made for them here.
+
+## W39 proved scope — invariant composite and unrestricted Artin towers
+
+W39 computes the negative connecting composite of the actual invariant
+sequences, identifies its ordinary two-class with the independently
+constructed smaller-field fundamental class, and proves compatibility of
+the actual finite Artin maps in every finite tower. Shared-prime relative
+degrees are included; no degree cancellation or assumed comparison is used.
+
+The explicit positive carry with uniformizer coefficients has negative Tate
+value at arithmetic Frobenius for degree > 1. This is a cocycle evaluation,
+not yet an
+evaluation of `finiteArtin`: the finite-stage carry still needs identification
+with the independently constructed fundamental class. Positive reciprocity
+normalization must retain this sign. E1c7/E1d and removal of `sorryAx` remain
+open. Kummer–Artin evaluation and later lifting gates have not advanced.
+
+Checked 2026-10-04T00:08:56Z at integrated proof head `5ab1664a`, after merging
+`origin/main` at `bd950c51`. Read-only evidence check:
+`python3 Scratch/LiftsW39/check.py` verifies source hashes, saved successful
+module build/lint/axiom logs, declaration audit coverage, permitted proof-commit
+edits, sorted imports, line caps and the post-merge Lean/build-input snapshot.
+It checks saved root/endpoint results; it does not rerun Lean. All 17 new
+modules (1,493 lines; maximum 109/200) and all 56 named declarations passed;
+the only axioms used by those declarations are `propext`, `Classical.choice`,
+`Quot.sound`. Foreground root and endpoint builds passed; no whole-library
+lint ran. The final endpoint audit still lists `sorryAx` for the lifting
+statements and additionally `Mazur_statement` for `PNat.pow_add_pow_ne_pow`.
+
+- `invariantNegativeComposite_eq_negativeCupQuotient` computes the two actual
+  negative connecting maps using subgroup norm lifts; the quotient norm then
+  composes with the subgroup norm to give the ambient norm.
+- `twoExtension_boundary_negative_cup` identifies that composite with cup by
+  the ordinary connecting class. `relativeFundamentalInvariantTwoClass_negativeCup_deflation`
+  gives the unscaled arithmetic square.
+- `quotientInflationH2_injective` proves ordinary inflation injectivity from
+  subgroup H¹ vanishing by correcting and descending a bounding cochain.
+  Arithmetic subgroup Tate vanishing supplies that hypothesis.
+- `finiteTowerQuotientGroup` and `finiteTowerQuotientCoefficients` identify the
+  quotient group and its fixed coefficients with the smaller-field data.
+  Their inflation, scalar, cup and deflation squares use the actual maps.
+- `relativeFundamentalOrdinaryClass_quotient` identifies the two independently
+  constructed classes using injective inflation and their normalizations.
+  `relativeFundamentalTateCup_tower` and `finiteArtin_tower` compare the actual
+  cups and their inverses without a coprimality restriction.
+- `unramifiedStageCarry_positive_frobenius` evaluates the explicit positive
+  uniformizer carry (degree > 1) to the **negative** uniformizer Tate class.
+  Its negated Frobenius input gives the positive class. Neither statement replaces the
+  missing arithmetic fundamental-class identification.
+
+### Remaining work after W39
+
+1. Identify the finite-stage uniformizer carry with the independently defined
+   relative fundamental class through actual inflation and the absolute
+   invariant. Establish positive-Frobenius reciprocity with an explicit sign
+   convention: the current inverse-cup `finiteArtin` has no built-in negation.
+2. Prove Kummer–Artin evaluation with the cup-order sign, then E1d's
+   annihilator statement.
+3. Re-audit and split later lifting gates only after E1 closes. No Serre-weight
+   evaluation or arbitrary-p Raynaud classification API is assumed.
+
+The W38 sections below record the earlier state; the first tower gate listed
+there is superseded by W39.
+
 ## W38 proved scope — quotient descent and invariant-class normalization
 
 **W38 proves unscaled descent of the upper-field negative cup to a quotient

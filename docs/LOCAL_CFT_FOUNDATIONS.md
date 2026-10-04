@@ -8,7 +8,23 @@ are design sketches, not elaborated declarations or certified size estimates;
 split again before implementation if a proof exceeds the cap. No missing
 theorem may become a structure field, parameter standing for E1c7, or axiom.
 
-Latest validated scope: **W35**. The full lifting goal remains unmet.
+Latest validated scope: **W40**. The full lifting goal remains unmet.
+
+## W40: finite positive reciprocity and the Kummer carry comparison
+
+The finite uniformizer carry is now identified with the independently
+constructed relative fundamental class. `positiveFiniteArtin` explicitly
+negates the existing inverse-cup Artin map, has the same norm kernel, commutes
+with finite towers, and sends a uniformizer to arithmetic Frobenius in every
+positive unramified degree. `kummerCarryCup_class` identifies the included
+root-ratio-first Kummer cup with the negative parameter carry.
+
+General Artin-character evaluation of that carry, the Kummer coefficient
+comparison, E1d, and removal of `sorryAx` remain open. The next contracts and
+module validation are in [the W40 ledger](LIFTS_GOAL_LEDGER.md).
+Checked at 2026-10-04T00:58:30Z; read-only evidence check:
+`python3 Scratch/LiftsW40/check.py` (saved logs and source hashes, no Lean rerun).
+The sections below record earlier waves at their stated dates.
 
 ## W35 proved scope
 
