@@ -1134,6 +1134,7 @@ public import FLT.LocalClassFieldTheory.ContinuousTransfer
 public import FLT.LocalClassFieldTheory.CorestrictionInvariant
 public import FLT.LocalClassFieldTheory.CorestrictionRestrictionH2
 public import FLT.LocalClassFieldTheory.CyclicCarry
+public import FLT.LocalClassFieldTheory.CyclicCarryCoefficientCup
 public import FLT.LocalClassFieldTheory.CyclicCarryConnecting
 public import FLT.LocalClassFieldTheory.CyclicCarryNormSum
 public import FLT.LocalClassFieldTheory.CyclicIntegerCohomology
@@ -1160,6 +1161,7 @@ public import FLT.LocalClassFieldTheory.FiniteArtinCoprimeTower
 public import FLT.LocalClassFieldTheory.FiniteArtinFieldwiseNorm
 public import FLT.LocalClassFieldTheory.FiniteArtinFixedFieldNorm
 public import FLT.LocalClassFieldTheory.FiniteArtinNormImage
+public import FLT.LocalClassFieldTheory.FiniteArtinTower
 public import FLT.LocalClassFieldTheory.FiniteCharacteristicZeroCohomology
 public import FLT.LocalClassFieldTheory.FiniteContinuousComparison
 public import FLT.LocalClassFieldTheory.FiniteCyclicHerbrand
@@ -1183,6 +1185,8 @@ public import FLT.LocalClassFieldTheory.FiniteSubgroupCocycleCorrection
 public import FLT.LocalClassFieldTheory.FiniteTateNormTower
 public import FLT.LocalClassFieldTheory.FiniteTateVanishing
 public import FLT.LocalClassFieldTheory.FiniteTowerInflatedCup
+public import FLT.LocalClassFieldTheory.FiniteTowerQuotientCoefficients
+public import FLT.LocalClassFieldTheory.FiniteTowerQuotientComparison
 public import FLT.LocalClassFieldTheory.FiniteUnitInvariants
 public import FLT.LocalClassFieldTheory.FixedCoefficientBoundary
 public import FLT.LocalClassFieldTheory.FixedCoefficientCochain
@@ -1292,6 +1296,8 @@ public import FLT.LocalClassFieldTheory.PrincipalNormGraded
 public import FLT.LocalClassFieldTheory.PrincipalUnitFiltration
 public import FLT.LocalClassFieldTheory.PrincipalUnitNorm
 public import FLT.LocalClassFieldTheory.PrincipalUnitResidue
+public import FLT.LocalClassFieldTheory.QuotientBoundaryDescent
+public import FLT.LocalClassFieldTheory.QuotientInflationInjective
 public import FLT.LocalClassFieldTheory.RamifiedFieldHerbrand
 public import FLT.LocalClassFieldTheory.RamifiedOrderScale
 public import FLT.LocalClassFieldTheory.RamifiedOrderSequence
@@ -1301,7 +1307,9 @@ public import FLT.LocalClassFieldTheory.RationalTorsion
 public import FLT.LocalClassFieldTheory.RationalUnramifiedCharacters
 public import FLT.LocalClassFieldTheory.RelativeDegreeTorsionClass
 public import FLT.LocalClassFieldTheory.RelativeFundamentalAcyclic
+public import FLT.LocalClassFieldTheory.RelativeFundamentalClassQuotient
 public import FLT.LocalClassFieldTheory.RelativeFundamentalCupIso
+public import FLT.LocalClassFieldTheory.RelativeFundamentalCupTower
 public import FLT.LocalClassFieldTheory.RelativeFundamentalCupTowerDegree
 public import FLT.LocalClassFieldTheory.RelativeFundamentalCyclicSubgroup
 public import FLT.LocalClassFieldTheory.RelativeFundamentalExtension
@@ -1316,6 +1324,7 @@ public import FLT.LocalClassFieldTheory.RelativeFundamentalSubgroup
 public import FLT.LocalClassFieldTheory.RelativeFundamentalTateCup
 public import FLT.LocalClassFieldTheory.RelativeInflationTower
 public import FLT.LocalClassFieldTheory.RelativeInvariantClassInflation
+public import FLT.LocalClassFieldTheory.RelativeInvariantClassUnique
 public import FLT.LocalClassFieldTheory.RelativeInvariantNegativeCup
 public import FLT.LocalClassFieldTheory.RelativeLowerBound
 public import FLT.LocalClassFieldTheory.RelativeOrderInduction
@@ -1452,6 +1461,7 @@ public import FLT.LocalClassFieldTheory.UnramifiedOrderSection
 public import FLT.LocalClassFieldTheory.UnramifiedOrderSequence
 public import FLT.LocalClassFieldTheory.UnramifiedOrderTower
 public import FLT.LocalClassFieldTheory.UnramifiedPolynomial
+public import FLT.LocalClassFieldTheory.UnramifiedStageCarryCup
 public import FLT.LocalClassFieldTheory.UnramifiedStageFrobenius
 public import FLT.LocalClassFieldTheory.UnramifiedStageOrderH2
 public import FLT.LocalClassFieldTheory.UnramifiedStageOrderMaps
