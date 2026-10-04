@@ -2254,3 +2254,113 @@ and prove the actual lifted charts flat before W42's cover assembly applies.
 Local point lifts, compatible overlaps, descent, nilpotent iteration, and
 later family-realization obligations remain. No new theorem in W49 asserts
 formal smoothness or removes the existing `mem_isCompatible` admission.
+
+## W50: zero-dimensional approximation and the actual lifted flat chart cover
+
+The finite division charts admit a shorter route through the C8–C10 gate:
+all their fibres have dimension zero, and their presentations are square.
+The new proof uses that specialization; it does not assert the general
+positive-dimensional version of C8b. Each module below is capped at 150
+lines. Validation commands, checked source hashes, axiom results and local
+commits are recorded in the untracked `FAMILY_W50_DONE.md` and
+`W50_VALIDATION.json` handoff artifacts.
+
+### Coefficient stages and dimension
+
+C7 is completed by `Localization.PrincipalBaseChangeEquiv`,
+`MvPolynomial.PrincipalRelationBaseChange`, and
+`MvPolynomial.NoetherianPrincipalStage`. Relations and the principal
+denominator descend simultaneously. Tensor base change reconstructs the
+actual localized quotient and preserves every polynomial representative.
+W48's coefficient-identity reflection still applies to this finite data.
+
+C8a is proved in `KrullDimension.IntegralExtension`,
+`TensorProduct.IntegralMap`, `KrullDimension.FieldBaseChange`, and
+`KrullDimension.FibreFieldExtension`. Going up lifts finite prime chains;
+incomparability bounds them in the other direction. Noether normalization
+remains integral and injective after tensoring with a field extension.
+Consequently finite-type Krull dimension, including the zero ring case,
+is invariant under arbitrary field extension. The residue-field comparison
+uses the prime actually contracted along the coefficient-stage map.
+
+For C8b, `QuasiFinitePrincipalNeighbourhood` uses Mathlib's proved Zariski
+main theorem to produce a principal quasi-finite neighbourhood.
+`ZeroDimensionalFibreNeighbourhood` supplies its hypothesis from the
+dimension of the **whole residue fibre** at the contracted base prime.
+It does not substitute the dimension of a local ring for dimension near
+a fibre point: for example, the generic stalk of an affine line has
+dimension zero, although every nonempty open of that line has dimension
+one. `KrullDimension.QuasiFiniteBound` also supplies the general dimension
+bound for a quasi-finite algebra over a polynomial ring; constructing that
+polynomial map near a point of a positive-dimensional fibre remains open.
+
+C8c's zero-dimensional application is in `QuasiFiniteBaseChangeFibre`,
+`FiniteImagePrincipalCover`, and `QuasiFiniteImageCover`. A quasi-finite
+final base change gives dimension-zero stage fibres at the primes seen
+by that final base. Principal neighbourhoods at those points have a finite
+subfamily whose images generate the unit ideal in the final algebra.
+Primes outside that image are not assumed good.
+
+C8d is in `MvPolynomial.EnlargedCoefficientStage`,
+`Ideal.QuotientUnitCertificate`, and `MvPolynomial.UnitIdealCertificateStage`.
+The proof lifts the equation for a quotient cover, adds the coefficients
+of the relation-ideal membership witnesses, and enlarges the original
+finitely generated integer subalgebra. Injectivity of the coefficient map
+reflects the polynomial certificate. The strengthened statement retains
+the canonical images of the originally chosen relations and opens.
+
+C8e's zero-dimensional assembly is in `QuasiFiniteUnitCover`,
+`QuasiFiniteCertificateStage`, and `NoetherianQuasiFiniteStage`.
+Good principal charts remain quasi-finite after coefficient base change;
+the descended unit-ideal certificate makes them a cover of the enlarged
+stage. Thus the enlarged Noetherian relation quotient is itself
+quasi-finite. This property is proved, not included as a field in an
+approximation record. The finite-variable index may be in `Type`; the
+coefficient ring is universe-polymorphic.
+
+### Flatness and the lifted cover
+
+`NoetherianQuasiFiniteSquareFlat` uses the finite-fibre kernel parameter
+criterion to prove regularity of the specified square equations at every
+residue-fibre prime, then applies W49's Noetherian flatness theorem.
+`QuasiFiniteSquareFlat` obtains a good Noetherian stage from C8e and
+transports its flatness through the exact relation-base-change equivalence.
+This proves arbitrary-base flatness of quasi-finite square quotients.
+For this route, a directed-colimit comparison (C9/C10a–b) is unnecessary:
+one flat stage reconstructs the entire fixed finite presentation after
+base change. The general colimit statements have not been implemented.
+
+C11/C12 are instantiated by `LiftedPresentationQuasiFinite` and
+`LiftedSquarePresentationFlat`. Every residue field kills the nilpotent
+coefficient kernel, so W43's exact presentation-fibre comparison proves
+quasi-finiteness of the actual lifted equations. Arbitrary-base square
+flatness then proves those equations define a flat algebra upstairs.
+
+`RelationQuotientPresentation` and `PrincipalSquarePresentation` retain
+the original principal chart by adding one inverse variable and one
+relation. They convert d equations in d localized polynomial variables
+into d+1 equations in d+1 polynomial variables. This includes the
+principal denominator in the presentation before lifting it.
+
+`LiftedSquareChartCover` proves faithful flatness of the finite product
+using the original reduced covering condition. `LiftedPrincipalSquareCover`
+constructs the square presentations and coefficient lifts, proves this
+faithful flatness, and supplies the exact tensor-reduction equivalences.
+Finally `DivisionLiftedFlatCharts.exists_division_lifted_flat_charts`
+applies these constructions to W48's original division pullback, without
+asking the caller for chart presentations, regularity, or lifted flatness.
+Its witnesses retain the original quotient map, denominators, chart
+presentations, lifted equations and reduced-chart equivalences. W42's
+`exists_point_on_lifted_reduction` transfers original division points to
+these particular reduced charts with their coordinate composites intact.
+
+### Remaining formal-smoothness boundary
+
+The lifted flat cover does not supply local inclusion lifts of the
+p-divisible-system points. Those must still be constructed and compared
+on the actual double and triple overlaps. W41's cotangent/Amitsur
+correction theorem must then be applied to those discrepancies, followed
+by affine point descent and nilpotent iteration (L7b.4/L8–9). Formal
+smoothness, the later cotangent/duality/period gates, and the replacement
+of `IsHardlyRamified.mem_isCompatible` remain unproved. The existing
+admission module is unchanged, as required by this task's edit boundary.
