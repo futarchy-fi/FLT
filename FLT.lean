@@ -1671,6 +1671,10 @@ public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.Reduction
 public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.SplitDescent
 public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.VariableChange
 public import FLT.Mathlib.AlgebraicGeometry.EllipticCurve.Weierstrass
+public import FLT.Mathlib.AlgebraicGeometry.Morphisms.SmoothLocusAffineFiber
+public import FLT.Mathlib.AlgebraicGeometry.Morphisms.SmoothLocusFiber
+public import FLT.Mathlib.AlgebraicGeometry.Morphisms.SmoothLocusSpec
+public import FLT.Mathlib.AlgebraicGeometry.Morphisms.SmoothLocusTransport
 public import FLT.Mathlib.Analysis.Normed.Algebra.Convolution
 public import FLT.Mathlib.Analysis.Normed.Algebra.CubicRoot
 public import FLT.Mathlib.Analysis.Normed.Field.CubicHensel
@@ -1834,6 +1838,8 @@ public import FLT.Mathlib.RingTheory.Regular.QuotientDepth
 public import FLT.Mathlib.RingTheory.Regular.UnitMultiples
 public import FLT.Mathlib.RingTheory.RelationLifting
 public import FLT.Mathlib.RingTheory.SimpleRing.TensorProduct
+public import FLT.Mathlib.RingTheory.Smooth.FiberLocalization
+public import FLT.Mathlib.RingTheory.Smooth.LocalFiber
 public import FLT.Mathlib.RingTheory.Spectrum.Prime.RingHom
 public import FLT.Mathlib.RingTheory.TensorProduct.Basis
 public import FLT.Mathlib.RingTheory.TensorProduct.Pi
