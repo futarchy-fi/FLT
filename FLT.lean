@@ -151,6 +151,7 @@ public import FLT.Deformations.DeSmitLenstra.TraceCoefficients
 public import FLT.Deformations.DeSmitLenstra.UniversalLift
 public import FLT.Deformations.DeSmitLenstra.UniversalMoritaData
 public import FLT.Deformations.DeSmitLenstra.UniversalTraceLift
+public import FLT.Deformations.EisensteinCoefficientObject
 public import FLT.Deformations.FixedResidualQuotientIdeal
 public import FLT.Deformations.FlatClosedCondition
 public import FLT.Deformations.FlatClosedQuotient
@@ -252,6 +253,7 @@ public import FLT.Deformations.WittCoefficientFaithfulness
 public import FLT.Deformations.WittCoefficientResidue
 public import FLT.Deformations.WittCoefficientRing
 public import FLT.Deformations.WittFlatNonvanishing
+public import FLT.Deformations.WittRamifiedCoefficients
 public import FLT.DivisionAlgebra.Finiteness
 public import FLT.EllipticCurve.CoefficientAction
 public import FLT.EllipticCurve.CoordinateRing
