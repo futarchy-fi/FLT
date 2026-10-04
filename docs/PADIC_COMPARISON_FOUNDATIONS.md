@@ -2640,3 +2640,56 @@ existing admission, whose module is outside this task's edit scope.
 Validation evidence and exact local commits are in the untracked
 `FAMILY_W54_DONE.md`, with reproducible per-module builds/lints and named
 axiom audits. No whole-library lint is used.
+
+## W55: integral coefficient completion and p-adic linearity
+
+P1c now has an integral coefficient comparison and proved linearity for both
+actual Tate constructions. The complete new modules listed below are each
+at most 150 lines. The period/cotangent first-order identification P1d is
+still open; neither that comparison nor removal of `mem_isCompatible`'s
+admission follows from linearity.
+
+| Leaf | Module | Proved output |
+|---|---|---|
+| P1c.1 | `PDivisibleCotangentTensorReduction` | Tensor right exactness identifies the original finite cotangent tensor with the p-power quotient of the integral limit tensor, for arbitrary coefficient algebras; no flatness hypothesis. |
+| P1c.2 | `PDivisibleCotangentTensorCompletion` | The actual coherent cotangent tensors are linearly equivalent to the p-adic completion of the integral coefficient tensor; completed dlog recovers every original finite tensor and is unique. |
+| P1c.3 | `PDivisibleCompletedDlogCoefficients` | The standard adic completion of coefficient specialization preserves the actual completed dlog and every original finite evaluation. |
+| P1c.4 | `CartierDualElementMultiplication` | Integral biduality identifies convolution with multiplication of original representing tensors, with augmentation one. |
+| P1c.5 | `CartierDlogAdditivity` | The integral augmentation differential satisfies tensor Leibniz; actual dual-point convolution adds dlog tensors. |
+| P1c.6 | `RaynaudIntegralPointAddition` | Unique integral extensions preserve original point addition and the identity. |
+| P1c.7 | `PDivisibleCartierDlogAdditivity` | Actual finite, coherent and completed Tate differentials are additive maps. |
+| P1c.8 | `PDivisibleCartierDlogLinearity` | Finite p-power annihilation and actual p-adic residues prove semilinearity under the specified base identification, also in the completed integral tensor. |
+| P1c.9 | `PDivisibleCartierPairingBilinear` | The original finite Cartier pairing and its original Tate evaluations are additive in both variables. |
+| P1c.10 | `PDivisibleCartierPairingScalars` | P-adic scalars act by the actual finite residue exponent in either argument; the root pairing is p-adically balanced. |
+| P1c.11 | `NilpotentLogProduct` | Finite logarithms of products add in a principal nilpotent ideal, proved by formal-series evaluation. |
+| P1c.12 | `ComplexSharpOneLogAdditivity` | Actual sharp-one logarithms add on products in the existing de Rham ring, using its finite theta quotients. |
+| P1c.13 | `PDivisibleRationalCartierPeriodAdditivity` | Original roots, tilt elements and logarithmic periods respect addition in both original Tate vectors. |
+| P1c.14 | `ComplexRootSequenceShift` | Shifts of arbitrary actual integral root sequences retain the original sharp values and p-power identities. |
+| P1c.15 | `ComplexRootPowerBounds` | Original rootwise power equalities give integral p/theta precision bounds before inverting p. |
+| P1c.16 | `ComplexRootPowerConvergence` | These bounds prove convergence of integer powers in integral theta quotients and the existing finite de Rham quotients. |
+| P1c.17 | `ComplexRootLogLinearity` | Actual rootwise p-adic exponentiation multiplies the convergent logarithm by the existing p-adic scalar embedding. |
+| P1c.18 | `PDivisibleRationalCartierPeriodLinearity` | The actual original period pairing is p-adic bilinear, with the original rational-place transport. |
+
+The completion comparison uses finiteness of the original level cotangent
+sets. This is already proved for a base identified with Z_p by
+`levelCotangent_finite_of_equiv`, including the actual rational place.
+It does not assert that an uncompleted tensor is complete, nor does it
+extend an individual torsion cotangent to a ring where p is invertible.
+
+### Remaining work, in order
+
+| Next capped leaf | Required artifact |
+|---|---|
+| P1d.1 | Construct the integral theta/p-power square-zero coefficient thickenings and their maps from the original rational-place base; verify the actual reduction kernels and nilpotence. |
+| P1d.2 | Use original finite-level formal smoothness to construct compatible integral/infinitesimal lifts of the specified Tate points in these thickenings. Existing `exists_nilpotent_inclusion_lift` supplies individual higher-level lifts, not the required simultaneous compatibility. |
+| P1d.3 | Evaluate the original Cartier characters on those lifts and identify the resulting first-order Teichmuller term with the C4k integral cotangent contraction; prove independence of lifts and passage through the coefficient completion. |
+| P1e | Assemble the one-vector comparison with coefficient, original-level and transport compatibility. A bilinear period value is not this comparison. |
+| P2–P6 | Comparison integrality, original Galois equivariance, injectivity, surjectivity and filtration strictness. |
+| W1–W3 | Coefficient-embedding decomposition, two-weight support, determinant rank-one calculation and compatible-family realization. |
+
+Only then can the existing family admission delegate to an axiom-clean
+replacement. Its module remains outside this task's permitted edit scope.
+The untracked `FAMILY_W55_DONE.md` records checked commits and reproducible
+validation; `W55_FINAL_CHECKS.py` checks the source hashes, individual
+build/lint records, named axiom audit, line caps, edit scope and merged root
+build. No whole-library lint is used.
