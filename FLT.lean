@@ -730,6 +730,7 @@ public import FLT.GroupScheme.ConstantPowerCharacters
 public import FLT.GroupScheme.ConstantPowerCoherence
 public import FLT.GroupScheme.ConstantPowerResidues
 public import FLT.GroupScheme.ConstantRationalCartierPeriod
+public import FLT.GroupScheme.ConstantRationalHodgeTateDlog
 public import FLT.GroupScheme.ConstantRationalPowerLevels
 public import FLT.GroupScheme.ConstantRationalPowerSystem
 public import FLT.GroupScheme.ConstantRationalTateAction
@@ -2145,6 +2146,7 @@ public import FLT.Mathlib.RingTheory.AugmentationCotangent
 public import FLT.Mathlib.RingTheory.AugmentationGenerators
 public import FLT.Mathlib.RingTheory.AugmentationTangent
 public import FLT.Mathlib.RingTheory.AugmentationTangentEquiv
+public import FLT.Mathlib.RingTheory.AugmentationUnramifiedCotangent
 public import FLT.Mathlib.RingTheory.ConvolutionTensorPair
 public import FLT.Mathlib.RingTheory.CotangentGenerators
 public import FLT.Mathlib.RingTheory.CotangentQuotient
