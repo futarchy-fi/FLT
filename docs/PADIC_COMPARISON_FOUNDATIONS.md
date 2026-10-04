@@ -1387,3 +1387,73 @@ is unchanged. Validation commands, checked time, and explicit remaining
 obligations are recorded in the untracked `FAMILY_W38_DONE.md`; per-module
 builds, individual lints, and named axiom audits must be rerun to refresh
 its snapshot.
+
+## W39 source-matched formal-functor lifting split
+
+The exact target is: for a surjective test-algebra map q : B → C with
+square-zero kernel J killed by p^r, every x : A_n → C has some m ≥ n
+and y : A_m → B with q ∘ y = x ∘ inclusion(n,m). Here A_n is the
+original coordinate ring. On nilpotent p-test algebras such an r exists.
+Neither same-level multiplication lifting nor a local division point
+alone proves this target. The following leaves use the indicated actual
+source APIs; every proposed complete module has a 150-line cap.
+
+| Leaf / module | Source and proof, retaining original maps | Readiness |
+|---|---|---|
+| L1 / PDivisiblePointColimit | `PDivisibleSystem.inclusion_refl`, `inclusion_comp`, `closed`; Mathlib `Order.DirectedInverseSystem.DirectLimit`. Form the pointwise filtered colimit of A_n-valued points with the specified inclusions; construct test-algebra maps and identity/composition laws. | Ready. This is a functor of sets, not a claim of fppf sheafification or connected representability. |
+| L2 / PDivisibleColimitLifting | `DirectLimit.setoid`, representative induction. Prove that surjectivity on this colimit is equivalent to the exact higher-level lifting target above. Move both representatives to their common comparison level. | Ready; a criterion, not a proof of its sides. |
+| L3 / SquareZeroAugmentationPoints | `AlgHom.augmentationTangent`, `augmentationTangentEquiv`; the square-zero product identity. Identify points reducing to the actual augmentation with tangent functionals valued in J by f ↦ f−ε and d ↦ ε+d. | Ready; applies to the actual infinitesimal kernel at every original level. |
+| L4 / SquareZeroPointDifference | Actual Hopf convolution inverse and `AlgHom.comp_convMul_distrib`; translate two local lifts with equal reduction to an augmentation point. Identify that difference using L3, not the coordinatewise difference at an arbitrary point. | Ready after L3. |
+| L5 / FaithfullyFlatPointDescent | Mathlib `Algebra.IsEffective.of_faithfullyFlat` in `RingTheory.TensorProduct.IncludeLeftSubRight`. Descend each coordinate of a point whose two pullbacks agree, and prove the resulting map is an algebra map by injectivity. | Ready; proves effective descent of an existing datum, not existence of that datum. |
+| L6a / DivisionCover | Base-change the system's original faithfully flat reduction along x to obtain a cover of Spec C with the tautological division point. | Requires explicit tensor-base-change/point comparison; finite-level exactness alone is not a lifted cover of Spec B. |
+| L6b / LiftedDivisionCover | Construct a faithfully flat B-algebra D whose reduction supports the specified division point. A flat C-algebra need not have a given flat B-lift for free; prove the needed local presentation/deformation result. | Large missing theory: no source theorem in the current import closure supplies this existence. Split its presentation and obstruction proofs before implementation. |
+| L7a / LocalLiftDifferenceCocycle | On D⊗_B D use L4 to identify the discrepancy of local lifts with actual J-valued tangents and prove the triple-overlap cocycle equation, compatible with original inclusions. | Depends on L6b and a comparison of kernels under flat base change. |
+| L7b / InfinitesimalCocycleCorrection | Prove affine faithfully flat degree-one exactness for that quasi-coherent kernel; construct a correction killing the discrepancy at a common finite level. | Large missing theory: L5 is degree-zero equalizer exactness only; it does not kill a cocycle. No correction is assumed as a record field. |
+| L8 / PDivisibleFormalLifting | Correct the actual local points, descend with L5, retain q∘y=x∘inclusion, and use L2. | Blocked on L6b and L7b; W38's canonical lift does not bypass either. |
+| L9 / NilpotentFormalLifting | Factor a nilpotent thickening into square-zero quotients and compose the finite-level lifts, keeping ordered inclusion maps. | Blocked on L8. |
+
+This is the algebraic source-level expansion of the geometric route
+recorded in W38, not a claim that a cited general p-divisible-group
+smoothness theorem has already been formalized. In particular, L6b and
+L7b are explicitly unproved mathematical inputs, not permitted hypotheses
+of the final smoothness theorem. A different proof that avoids either
+must be split and source-checked before replacing this route.
+
+After L8/L9, the connected formal object's representability and its
+cotangent identification with `cotangentLimit` still need separate proofs.
+Then prove torsion-freeness, finite freeness, integral-dual reduction,
+Cartier-dual limit compatibility, and period pairing in the existing D2
+order. A pointwise colimit definition or a finite-level kernel equivalence
+does not establish any of those claims or remove the family admission.
+
+### W39 implementation boundary
+
+L1–L5 and L6a now have capped modules. `PDivisiblePointColimit` constructs
+the functor with injective original level maps. `PDivisibleColimitLifting`
+proves the exact higher-level lifting criterion, without asserting
+surjectivity. `SquareZeroAugmentationPoints` identifies the actual kernel
+of reduction with J-valued tangents and hence with maps from the original
+augmentation cotangent quotient. `SquareZeroPointDifference` translates
+equal-reduction points using the original antipode, proves recovery and
+the group cocycle identity, and identifies that discrepancy with a tangent.
+It does not establish the flat-base-change or quasi-coherent comparisons
+required in L7a/L7b.
+
+`FaithfullyFlatPointDescent` constructs the unique affine algebra point
+from equal overlap pullbacks and proves that a prescribed reduction can
+be checked after an injective comparison. `PDivisibleDivisionCover`
+constructs the actual tensor-product cover of C carrying a division point
+for the specified reduction. It proves faithful flatness, without claiming
+that this cover lifts to B or that it is finitely presented.
+
+L6b (a lifted division cover) and L7b (affine infinitesimal cocycle
+correction, with flat-base-change and finite-stage compatibility) remain
+large missing theory. L8/L9, connected formal representability, cotangent
+limit identification/freeness, integral-dual reduction and all period
+comparison gates remain open. No new premise or record field supplies
+any of these conclusions. The family admission is unchanged.
+
+Validation is reproducible through `W39_FINAL_CHECKS.py` and the commands
+in untracked `FAMILY_W39_DONE.md`; that report carries the checked time,
+local commits and evidence. New modules are built in the foreground,
+linted individually, and all named declarations receive an axiom audit.
