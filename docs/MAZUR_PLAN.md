@@ -351,6 +351,15 @@ the Tate exponent, **not yet about the Néron component group**. It does not
 exclude a cyclic rational prime-torsion subgroup. Identifying components,
 handling nonsplit/additive reduction, and A2–A5 remain open.
 
+`FLT/FreyCurve/Serre/TateValuationClass.lean` now constructs the valuation
+class homomorphism on Tate points, with target the nonzero value group modulo
+powers of the valuation of the Tate period. Its kernel consists exactly of
+points admitting a representative of valuation one. On torsion, zero
+valuation class forces zero Tate exponent; hence large prime torsion injects
+into this valuation quotient under the preceding residue bound. This closes
+the algebraic quotient construction and kernel description, but not the
+geometric identification with Néron components or the global argument.
+
 ```lean
 theorem semistable_of_large_prime_point (hP) : SemistableEverywhere E
 

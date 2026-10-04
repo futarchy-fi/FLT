@@ -6,7 +6,7 @@ Authors: krandder
 module
 
 import FLT.EllipticCurve.SmallResidueTorsion
-import FLT.FreyCurve.Serre.TateRationalTorsion
+import FLT.FreyCurve.Serre.TateValuationClass
 import Mathlib.Algebra.Field.ZMod
 import Lean
 
@@ -29,7 +29,14 @@ run_elab do
       ``ValuationSubring.eq_one_of_prime_pow_eq_one_of_residue_card_lt,
       ``WeierstrassCurve.eq_zero_of_tateTorsionQuotient_eq_zero,
       ``WeierstrassCurve.tateTorsionQuotient_injective_of_residue_card_lt,
-      ``WeierstrassCurve.card_tate_torsion_le_prime_of_residue_card_lt] do
+      ``WeierstrassCurve.card_tate_torsion_le_prime_of_residue_card_lt,
+      ``WeierstrassCurve.tateUnitValuation,
+      ``WeierstrassCurve.tateValuationClass,
+      ``WeierstrassCurve.tateValuationClass_tatePoint,
+      ``WeierstrassCurve.tateValuationClass_tatePoint_eq_zero_iff,
+      ``WeierstrassCurve.tateValuationClass_eq_zero_iff,
+      ``WeierstrassCurve.tateTorsionQuotient_eq_zero_of_valuationClass_eq_zero,
+      ``WeierstrassCurve.tateValuationClass_injective_on_prime_torsion] do
     for a in ← Lean.collectAxioms n do
       unless #[``propext, ``Classical.choice, ``Quot.sound].contains a do
         throwError "Unexpected axiom {a} in {n}"

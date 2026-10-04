@@ -263,6 +263,7 @@ public import FLT.FreyCurve.Serre.TateKummer
 public import FLT.FreyCurve.Serre.TateRationalTorsion
 public import FLT.FreyCurve.Serre.TateTorsion
 public import FLT.FreyCurve.Serre.TateUnramified
+public import FLT.FreyCurve.Serre.TateValuationClass
 public import FLT.FreyCurve.Serre.TwistFlat
 public import FLT.FreyCurve.Serre.Unramified
 public import FLT.FreyCurve.Serre.UnramifiedCharacter
