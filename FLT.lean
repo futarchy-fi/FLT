@@ -138,7 +138,13 @@ public import FLT.Deformations.DeSmitLenstra.UniversalLift
 public import FLT.Deformations.DeSmitLenstra.UniversalMoritaData
 public import FLT.Deformations.DeSmitLenstra.UniversalTraceLift
 public import FLT.Deformations.FixedResidualQuotientIdeal
+public import FLT.Deformations.FramedArithmeticIdeal
+public import FLT.Deformations.FramedDeterminantIdeal
 public import FLT.Deformations.FramedQuotientIdeal
+public import FLT.Deformations.FramedTrivialityIdeal
+public import FLT.Deformations.HardlyRamifiedArithmeticAtTwo
+public import FLT.Deformations.HardlyRamifiedArithmeticQuotient
+public import FLT.Deformations.HardlyRamifiedArithmeticResidual
 public import FLT.Deformations.HardlyRamifiedTwoQuotient
 public import FLT.Deformations.HardlyRamifiedUniversal
 public import FLT.Deformations.IsProartinian
@@ -214,6 +220,7 @@ public import FLT.Deformations.RepresentationTheory.TraceCompatiblePair
 public import FLT.Deformations.RepresentationTheory.TrivialQuotientKernel
 public import FLT.Deformations.RepresentationTheory.ULiftCoefficientTensor
 public import FLT.Deformations.Subfunctor
+public import FLT.Deformations.UniversalArithmeticQuotient
 public import FLT.Deformations.UniversalLocalQuotient
 public import FLT.DivisionAlgebra.Finiteness
 public import FLT.EllipticCurve.CoefficientAction
