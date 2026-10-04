@@ -2812,22 +2812,67 @@ remaining equation; they do not prove equality between the sides.
 | P1e.3 | `RationalPlaceTateTangentAdditivity` | Actual Tate cotangent functional and tangent tensor are additive. |
 | P1e.4 | `RationalPlaceTateTangentLinearity` | Actual Tate tangent maps are p-adic linear and factor through finite coordinates. |
 
-### Remaining comparison boundary after W57
+### W58: the proposed linear-lift calculation is false
 
-At precision s, prove
-`rationalPlaceTateReducedCartier X s y x = rationalCartierFirstOrder X s y x`.
-Equivalently, evaluate the canonical p^s convolution lift of the original
-level-s Tate coordinate against linearly lifted dual coefficients and
-identify its augmentation difference with a^(p^s)-1. The existing
-multiplicative character theorem applies to an algebra-valued character;
-linear coefficient lifts do not satisfy that hypothesis. No such algebra
-lift or coefficient section has been assumed.
+W57 proposed proving
+`rationalPlaceTateReducedCartier X s y x = rationalCartierFirstOrder X s y x`
+by a general convolution/linear-coefficient identity. That supporting identity
+is false under its stated square-zero and kernel-annihilation hypotheses.
+It must not be used as a proof obligation for the next implementation leaf.
 
-Then pass through coefficient completion, identify the logarithmic period,
-and prove P2–P6: comparison integrality, original Galois equivariance,
-injectivity, surjectivity and filtration strictness. The family admission
-and `PNat.pow_add_pow_ne_pow` remain outside these proved leaves.
+The kernel-checked counterexample uses the constant group of order two over
+ZMod 16, with reduction to ZMod 8. Its kernel has square zero and is killed by
+two. The original generator already lifts as an algebra point and its square
+is the augmentation, so its canonical doubled lift has zero tangent. The
+reduced dual character sends the generator to three. Its explicitly
+constructed linear coefficient lift really reduces to that algebra character,
+but its pairing with the generator has square minus one equal to eight.
+`linear_convolution_identity_fails` proves the two proposed sides unequal.
+`reducedCharacter_has_no_algebra_lift` also rules out repairing this example
+by silently replacing the linear lift with an algebra lift.
 
-The untracked `FAMILY_W57_DONE.md` records commits and validation;
-`W57_FINAL_CHECKS.py` rechecks source hashes, individual build/lint logs,
-axiom coverage, line caps, edit scope and the required post-merge root build.
+The issue is not removed just by requiring two to kill the entire coefficient
+ring. `SquareZeroCharacteristicTwoRoot` constructs
+B = F₂[T]/(T⁴), J = (T²), q:B → B/J. It proves J² = 0, 2B = 0,
+q(1+T)² = 1, and that every lift of this reduced root has square different
+from one. Applying the constant order-two group construction to this root
+gives the same mathematical obstruction. The module checks these coefficient
+and root claims; the full Hopf counterexample module uses ZMod 16 → ZMod 8.
+
+Separately, `rationalPlaceTateReducedCartier_unramified` proves a fact about
+the actual rational-place construction: its reduced pairing is zero whenever
+the original level-s coordinate algebra is formally unramified. This follows
+from uniqueness of lifting over the actual square-zero coefficient kernel,
+without any extra assumption about a comparison or a period.
+
+| Capped leaf | Module | Proved output |
+|---|---|---|
+| W58.1 | `CartierLinearEvaluationBase` | Linear evaluation over the base ring is ordinary dual evaluation. |
+| W58.2 | `CartierLinearLiftCounterexampleData` | Actual finite free constant coordinates, square-zero reduction, reduced algebra character and linear lift. |
+| W58.3 | `CartierLinearLiftCounterexample` | Failure of the proposed identity and nonexistence of an algebra character lift. |
+| W58.4 | `CartierReducedUnramified` | Unramified augmentation points and their reduced Cartier differentials are zero. |
+| W58.5 | `RationalPlaceTateReducedUnramified` | The actual rational-place reduced pairing vanishes at unramified levels. |
+| W58.6 | `SquareZeroCharacteristicTwoRoot` | A genuine nonlifting quadratic root even with 2B = 0. |
+
+### Remaining comparison work after W58
+
+P1d.3 needs a mathematical redesign before coefficient completion or the
+logarithmic period identification can proceed. First check the proposed
+specialized equality on the constant étale p-divisible system: the reduced
+pairing is zero by the theorem above, whereas its original Cartier roots
+are cyclotomic. A complete Lean instantiation of that system and a nonzero
+first-order cyclotomic period have **not** been proved in W58. Thus W58
+formally refutes the general calculation, not the specialized equality.
+
+A replacement comparison must account for the étale contribution before
+claiming equality with the full Cartier period. No corrected identity,
+universal-extension construction, or additional comparison hypothesis is
+asserted here. P2–P6, W1–W3, the family admission, and the final FLT boundary
+remain unfinished. The prior tangent additivity and p-adic linearity results
+remain valid but do not resolve this obstruction.
+
+Validation evidence and checked-at times are recorded in the untracked
+`FAMILY_W58_DONE.md` and `W58_FINAL_CHECKS.json`; the read-only recheck is
+`python3 W58_FINAL_CHECKS.py`. That command checks individual build/lint logs,
+source hashes, complete named-declaration axiom coverage, line caps, edit scope,
+and the required post-merge root build.
