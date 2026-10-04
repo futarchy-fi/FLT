@@ -220,3 +220,49 @@ A1-F2 also requires multiple capped leaves. After constructing E₀/E₁:
 
 F2a alone is not a multiplication law or the evaluation comparison. F3 requires
 F2c/d, including the residue-characteristic-primary multiplication estimates.
+
+F2a is further split before implementing the actual-parameter comparison:
+`EllipticInfinityPowerSeries` (F2a.i, cap 240) constructs the universal integral
+series; `EllipticInfinityParameter` (F2a.ii, cap 240) proves uniqueness of the
+maximal-ideal chart and constructs an injective parameter on actual E₁ points.
+Neither leaf substitutes for F2b's addition law or F2d's convergence proof.
+
+### D-W3 implementation boundary (2026-10-04)
+
+A1-F1b.i.1–5 and A1-F1b.ii are implemented. `SmoothReduction.add` proves closure
+on actual projective points; `smoothReductionPoint_add` proves additivity.
+`ellipticE0` and `ellipticE1` are actual subgroups, and `smoothReductionHom_ker`
+identifies the reduction kernel with E₁ pulled back to E₀. The special cubic is
+allowed to be singular, the valuation subring is arbitrary, and no algebraic
+closure, lifting-surjectivity or closure assumption is added.
+
+The exceptional cases are proved: `slope_mem_of_addX_mem` forces integral slope
+from integral sum; `not_opposite_of_integral_slope` contradicts smoothness for
+opposite reductions, including reduced order-two points. Translation by a point
+reducing to infinity preserves arbitrary integral affine coordinates modulo the
+maximal ideal. If a sum of two infinity-fiber points were integral, translation
+by its negative would give the contradiction used in `reducesTo_add_zero`.
+
+F2a.i and F2a.ii are implemented. `infinitySeries` is constructed over **any**
+commutative coefficient ring, not postulated: a monic reciprocal cubic is Hensel
+lifted in the T-adically complete power-series ring. The series satisfies the
+infinity equation, has zero constant coefficient and cubic coefficient one,
+is the unique zero-constant solution, and commutes with coefficient-ring maps.
+`infinityParameter` is an injective function from actual E₁ points to the
+valuation subring, with image in the maximal ideal, and vanishes exactly at zero.
+`infinityChart_eq_cube_mul_unit` proves the actual relation s = t³ times a unit
+of residue one. These are coordinate statements, not formal multiplication.
+
+The next unimplemented statement is F2b: construct an integral two-variable
+power series F_W(X,Y) for this Weierstrass curve and prove its formal-group
+identities. In the t,s chart, a candidate uses the divided difference
+λ = (s(X)-s(Y))/(X-Y), ν = s(X)-λX, and the third intersection of the line
+s = λt+ν with the cubic, followed by Weierstrass negation. The divided difference,
+unit denominators, group identities and comparison with actual addition still
+need proofs; one-variable uniqueness by itself does not supply them. Subdivide
+F2b further before a proof exceeds 240 lines.
+
+After F2b: multiplication series F2c, convergent comparison F2d, valuation bounds
+F3, the actual Néron model/component classification C1, semistability S1/S2,
+components C2/C3/Cp, and abelian torsion closure/odd-prime specialization D5/D6.
+No claim is made to finish those leaves or to remove `Mazur_statement`.
