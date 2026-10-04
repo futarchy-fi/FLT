@@ -2151,6 +2151,7 @@ public import FLT.Mazur.GeneralizedCurveBaseChange
 public import FLT.Mazur.GeneralizedCurveBaseChangeCoherence
 public import FLT.Mazur.GeneralizedCurveBaseChangeIso
 public import FLT.Mazur.GeneralizedCurveCategory
+public import FLT.Mazur.GeneralizedCurveFiniteSubgroup
 public import FLT.Mazur.GeneralizedCurveGraph
 public import FLT.Mazur.GeneralizedCurveGraphBaseChange
 public import FLT.Mazur.GeneralizedCurveGraphTransport
@@ -2158,6 +2159,7 @@ public import FLT.Mazur.GeneralizedCurvePullback
 public import FLT.Mazur.GeneralizedCurvePullbackCoherence
 public import FLT.Mazur.GeneralizedCurveSmoothBaseChange
 public import FLT.Mazur.GeneralizedCurveSmoothPullback
+public import FLT.Mazur.GeneralizedCurveSubgroupIdeal
 public import FLT.Mazur.GeneralizedEllipticCurve
 public import FLT.Mazur.GeneratorDenominatorLocalization
 public import FLT.Mazur.GenericFibers
@@ -2426,6 +2428,7 @@ public import FLT.Mazur.PolygonDivisorNormalizationPullback
 public import FLT.Mazur.PolygonDivisorPolynomialHZero
 public import FLT.Mazur.PolygonDivisorPowerPullback
 public import FLT.Mazur.PolygonFieldExtension
+public import FLT.Mazur.PolygonFiniteSubgroup
 public import FLT.Mazur.PolygonGeneralizedCurve
 public import FLT.Mazur.PolygonGenusOne
 public import FLT.Mazur.PolygonGeometricGenus
