@@ -2364,3 +2364,76 @@ by affine point descent and nilpotent iteration (L7b.4/L8–9). Formal
 smoothness, the later cotangent/duality/period gates, and the replacement
 of `IsHardlyRamified.mem_isCompatible` remain unproved. The existing
 admission module is unchanged, as required by this task's edit boundary.
+
+## W51: local inclusion lifts, actual overlap correction, and formal smoothness
+
+The W50 boundary is resolved by the following capped leaves. Every module
+below has at most 150 lines. The proofs use the original level coordinate
+maps throughout; they introduce no hypothesis asserting liftability,
+formal smoothness, or existence of a correcting cochain.
+
+| Leaf | Modules | Proof obligation |
+|---|---|---|
+| L7b.4a | `LiftedPresentationPoint`, `PrincipalDivisionPoint` | Preserve C-coefficients and the original reduction-map composite when transferring a principal division-chart point through W42's specified presentation equivalence. |
+| L7b.4b | `FiniteProductReductionPoint`, `DivisionLiftedReductionPoint` | Assemble those points on the actual tensor reduction of W50's faithfully flat product cover. |
+| L7b.4c | `DivisionLocalInclusionLift` | Lift the p-power multiple of that division point across the square-zero cover reduction; the original reduction/inclusion equation identifies its reduction with the required inclusion of the original point. |
+| L8a | `FlatCoverPointOverlap`, `FlatCoverDiscrepancyCocycle` | The actual local lift has equal reductions on double overlaps. Its three actual pullbacks satisfy the triple-overlap group/tangent identity. |
+| L8b | `FlatCoverKernelAmitsur`, `FlatCoverKernelDifferential`, `PointDifferenceCotangentEvaluation` | Identify the double-overlap kernel with D tensor D tensor J, retain coordinate evaluations, and intertwine both Amitsur differentials with the actual overlap maps. |
+| L8c | `FlatCoverCotangentDiscrepancy`, `FlatCoverAugmentationMap`, `PDivisibleOverlapCorrection` | Construct the cotangent-valued discrepancy, prove its Amitsur cocycle equation, and apply W41's `exists_original_infinitesimal_correction` to this particular cocycle. |
+| L8d | `InfinitesimalPointCorrection`, `PDivisibleCorrectedLocalPoint` | Translate by the correcting point to obtain equal overlap pullbacks without changing the original reduction. |
+| L9a | `PDivisibleLocalLiftDescent`, `PDivisibleSquareZeroFormalSmoothness` | Faithfully flat affine descent gives a global inclusion lift; consequently the original point colimit is surjective across square-zero thickenings of p-nilpotent algebras. |
+| L9b | `PDivisiblePointEquiv`, `PDivisibleFormalSmoothness` | Iterate along nilpotent ideals and transport through the original quotient-kernel equivalence, retaining an explicit higher-original-level inclusion lift. |
+| Cotangent identification | `PDivisibleInfinitesimalPairing`, `PDivisibleFormalCotangent`, `PDivisibleNilpotentCotangent` | Identify the actual colimit infinitesimal kernel with Hom from the original cotangent inverse limit, with every original finite-level pairing and independence of the chosen annihilating power. |
+
+### Precise lifting theorem
+
+`PDivisibleSystem.pointColimitMap_surjective_nilpotent` proves that, for
+an original system X over the local base R and every surjective R-algebra
+map q : B -> C with nilpotent kernel and nilpotent p in B, the induced map
+`X.PointColimit B -> X.PointColimit C` is surjective.
+`exists_nilpotent_inclusion_lift` states the equivalent original-level
+result: each point x at level n has a lift y at some level m >= n with
+`q.comp y = x.comp (X.inclusion h).toAlgHom`.
+
+The square-zero proof constructs W50's cover internally, transfers its
+specified division point, and applies the multiplication lift on the
+original higher level. It then forms that lift's discrepancy, verifies
+its triple-overlap identity, and identifies its actual kernel-valued
+cotangent cocycle. W41's Amitsur theorem produces a correcting original
+level point. Translation gives equal overlaps, and faithfully flat point
+descent returns a point over B with the prescribed reduction. Nilpotent
+iteration uses successive square-zero quotients and actual test-algebra
+composition. It does not assume a smooth representing algebra.
+
+### Precise cotangent identification
+
+`formalInfinitesimalCotangentEquiv` identifies the actual augmentation
+kernel of the same original point-colimit functor across q with
+`X.cotangentLimit ->ₗ[R] RingHom.ker q`, when q has square-zero kernel
+annihilated by a power of p and the original level cotangent sets are
+finite. `formalInfinitesimalCotangentEquiv_mk` retains the original
+coordinate cotangent functional composed with `X.cotangentEval n` for
+**every** original level n. The equivalence is independent of the
+annihilating power, not merely an equivalence for one chosen level.
+
+`nilpotentInfinitesimalCotangentEquiv` obtains the exponent internally
+from p-nilpotence of B. At the original rational place,
+`rationalPlaceFormalInfinitesimalCotangentEquiv` discharges finite-level
+finiteness using the previously proved theorem. Thus this identification
+has no extra finiteness premise for that original base.
+
+### Boundary after these leaves
+
+These statements prove formal smoothness in the equivalent original
+level-system sense requested in W37's first obligation, and identify its
+infinitesimal functor with the existing cotangent limit. They do not
+construct a complete representing coordinate algebra, nor prove that
+the cotangent limit is torsion-free or finite free. The later dual
+reduction, Cartier-dual limit, period pairing, and family-realization
+gates remain. In particular the existing `mem_isCompatible` admission
+is not replaced; its module is outside this task's edit boundary.
+
+Recheck the implementation with the foreground module builds, individual
+module lints, and named axiom audits recorded in `FAMILY_W51_DONE.md`.
+The handoff records timestamps, commits, and the post-merge root build;
+this section specifies the theorem boundary rather than a live CI status.
