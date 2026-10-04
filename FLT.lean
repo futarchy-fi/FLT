@@ -625,6 +625,7 @@ public import FLT.GroupScheme.AlgebraicClosureKummer
 public import FLT.GroupScheme.AmitsurDegreeOneMaps
 public import FLT.GroupScheme.AmitsurFaithfullyFlatExact
 public import FLT.GroupScheme.AmitsurSplitContraction
+public import FLT.GroupScheme.AugmentationCotangentNaturality
 public import FLT.GroupScheme.AugmentationKernelNaturality
 public import FLT.GroupScheme.AugmentationKernelPrecomposition
 public import FLT.GroupScheme.AugmentationTangentRelations
@@ -964,10 +965,14 @@ public import FLT.GroupScheme.PDivisibleCotangentArithmetic
 public import FLT.GroupScheme.PDivisibleCotangentComplete
 public import FLT.GroupScheme.PDivisibleCotangentExactness
 public import FLT.GroupScheme.PDivisibleCotangentFiniteSets
+public import FLT.GroupScheme.PDivisibleCotangentFree
+public import FLT.GroupScheme.PDivisibleCotangentFunctionalLifting
 public import FLT.GroupScheme.PDivisibleCotangentGenerators
+public import FLT.GroupScheme.PDivisibleCotangentKernelLifting
 public import FLT.GroupScheme.PDivisibleCotangentLimit
 public import FLT.GroupScheme.PDivisibleCotangentLimitFinite
 public import FLT.GroupScheme.PDivisibleCotangentLimitReduction
+public import FLT.GroupScheme.PDivisibleCotangentPrimeInjective
 public import FLT.GroupScheme.PDivisibleCotangentSurjective
 public import FLT.GroupScheme.PDivisibleCotangentTransitions
 public import FLT.GroupScheme.PDivisibleDivisionCover
@@ -978,7 +983,12 @@ public import FLT.GroupScheme.PDivisibleInfinitesimalCorrection
 public import FLT.GroupScheme.PDivisibleInfinitesimalFlatCover
 public import FLT.GroupScheme.PDivisibleInfinitesimalPairing
 public import FLT.GroupScheme.PDivisibleInfinitesimalStages
+public import FLT.GroupScheme.PDivisibleIntegralInfinitesimal
+public import FLT.GroupScheme.PDivisibleIntegralPairingPerfect
 public import FLT.GroupScheme.PDivisibleIntegralTangent
+public import FLT.GroupScheme.PDivisibleIntegralTangentCoefficients
+public import FLT.GroupScheme.PDivisibleIntegralTangentReduction
+public import FLT.GroupScheme.PDivisibleIntegralTangentReductionNaturality
 public import FLT.GroupScheme.PDivisibleKernelFibre
 public import FLT.GroupScheme.PDivisibleLocalLiftDescent
 public import FLT.GroupScheme.PDivisibleNilpotentCotangent
@@ -1862,6 +1872,7 @@ public import FLT.Mathlib.LinearAlgebra.Countable
 public import FLT.Mathlib.LinearAlgebra.Determinant
 public import FLT.Mathlib.LinearAlgebra.Dimension.Constructions
 public import FLT.Mathlib.LinearAlgebra.Dimension.IsQuadraticExtension
+public import FLT.Mathlib.LinearAlgebra.FreeDualReduction
 public import FLT.Mathlib.LinearAlgebra.InvolutionFixedSpace
 public import FLT.Mathlib.LinearAlgebra.Matrix.GeneralLinearGroup.Defs
 public import FLT.Mathlib.LinearAlgebra.Matrix.Transvection
@@ -2049,6 +2060,7 @@ public import FLT.Mathlib.RingTheory.PowerBasisConjugateDifferent
 public import FLT.Mathlib.RingTheory.PowerBasisDifferentialBezout
 public import FLT.Mathlib.RingTheory.PowerBasisDifferentials
 public import FLT.Mathlib.RingTheory.PresentationJacobianBound
+public import FLT.Mathlib.RingTheory.PrincipalPowerTorsion
 public import FLT.Mathlib.RingTheory.RamificationInertia.Basic
 public import FLT.Mathlib.RingTheory.Regular.AssociatedPrimeDimension
 public import FLT.Mathlib.RingTheory.Regular.AssociatedPrimeQuotient
@@ -2079,6 +2091,7 @@ public import FLT.Mathlib.RingTheory.Smooth.FiberLocalization
 public import FLT.Mathlib.RingTheory.Smooth.LocalFiber
 public import FLT.Mathlib.RingTheory.Smooth.PointwiseDescent
 public import FLT.Mathlib.RingTheory.Spectrum.Prime.RingHom
+public import FLT.Mathlib.RingTheory.SplitSquareZeroTest
 public import FLT.Mathlib.RingTheory.TensorProduct.Basis
 public import FLT.Mathlib.RingTheory.TensorProduct.IntegralMap
 public import FLT.Mathlib.RingTheory.TensorProduct.Pi
