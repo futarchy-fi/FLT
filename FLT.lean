@@ -1917,11 +1917,15 @@ public import FLT.Mazur.ModulePresheafTensorPullback
 public import FLT.Mazur.ModulePullbackRestrictionPasting
 public import FLT.Mazur.ModulePullbackTrivializationCoherence
 public import FLT.Mazur.ModulePullbackUnitCoherence
+public import FLT.Mazur.ModuleSectionCocycleIso
 public import FLT.Mazur.ModuleSectionIsomorphismTransport
 public import FLT.Mazur.ModuleSectionMap
 public import FLT.Mazur.ModuleSectionProjectiveChart
 public import FLT.Mazur.ModuleSectionProjectiveGluing
+public import FLT.Mazur.ModuleSectionProjectiveOOne
+public import FLT.Mazur.ModuleSectionProjectiveOver
 public import FLT.Mazur.ModuleSectionProjectiveOverlap
+public import FLT.Mazur.ModuleSectionProjectiveTransition
 public import FLT.Mazur.ModuleSectionRatioBasicOpen
 public import FLT.Mazur.ModuleSectionRatioOpen
 public import FLT.Mazur.ModuleSectionRatioPullback
@@ -2047,8 +2051,10 @@ public import FLT.Mazur.PolygonCubicGenerationCover
 public import FLT.Mazur.PolygonCubicGlobalGeneration
 public import FLT.Mazur.PolygonCubicInterpolation
 public import FLT.Mazur.PolygonCubicNonvanishing
+public import FLT.Mazur.PolygonCubicOOnePullback
 public import FLT.Mazur.PolygonCubicProjectiveCharts
 public import FLT.Mazur.PolygonCubicProjectiveMorphism
+public import FLT.Mazur.PolygonCubicProjectiveOver
 public import FLT.Mazur.PolygonCubicSections
 public import FLT.Mazur.PolygonCubicTorusGenerator
 public import FLT.Mazur.PolygonCyclicAtlas
@@ -2144,6 +2150,7 @@ public import FLT.Mazur.ProjectiveChartEvaluation
 public import FLT.Mazur.ProjectiveChartMapCompatibility
 public import FLT.Mazur.ProjectiveChartNoetherian
 public import FLT.Mazur.ProjectiveChartPolynomialEquiv
+public import FLT.Mazur.ProjectiveChartSectionPullback
 public import FLT.Mazur.ProjectiveCoherentCharts
 public import FLT.Mazur.ProjectiveCoherentCohomology
 public import FLT.Mazur.ProjectiveGeneration
@@ -2205,6 +2212,7 @@ public import FLT.Mazur.ProjectiveTwistCechCohomologyFullSupport
 public import FLT.Mazur.ProjectiveTwistCechCohomologySum
 public import FLT.Mazur.ProjectiveTwistCechCohomologySumHomology
 public import FLT.Mazur.ProjectiveTwistCechCohomologyTwist
+public import FLT.Mazur.ProjectiveTwistChartSection
 public import FLT.Mazur.ProjectiveTwistCocycle
 public import FLT.Mazur.ProjectiveTwistCohomology
 public import FLT.Mazur.ProjectiveTwistGradedCech
