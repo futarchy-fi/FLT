@@ -1142,6 +1142,7 @@ public import FLT.LocalClassFieldTheory.CyclicPeriodicComplex
 public import FLT.LocalClassFieldTheory.CyclicPeriodicExact
 public import FLT.LocalClassFieldTheory.CyclicPeriodicHomology
 public import FLT.LocalClassFieldTheory.CyclicRelativeOrder
+public import FLT.LocalClassFieldTheory.CyclicRootCupBoundary
 public import FLT.LocalClassFieldTheory.CyclicSixTermSequence
 public import FLT.LocalClassFieldTheory.CyclicTateSplice
 public import FLT.LocalClassFieldTheory.CyclicTateVanishing
@@ -1250,6 +1251,7 @@ public import FLT.LocalClassFieldTheory.KernelCocycleDescent
 public import FLT.LocalClassFieldTheory.KernelCocycleNormalization
 public import FLT.LocalClassFieldTheory.KernelMixedCocycle
 public import FLT.LocalClassFieldTheory.KernelSectionCorrection
+public import FLT.LocalClassFieldTheory.KummerParameterCarry
 public import FLT.LocalClassFieldTheory.LocalDegreeFormula
 public import FLT.LocalClassFieldTheory.LocalExpEquivalence
 public import FLT.LocalClassFieldTheory.LocalExpEquivariance
