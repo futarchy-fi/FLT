@@ -2056,6 +2056,14 @@ public import FLT.Mazur.FiniteAffineCoverFiniteness
 public import FLT.Mazur.FiniteCechCyclesScalars
 public import FLT.Mazur.FiniteCechTermScalars
 public import FLT.Mazur.FlasqueDirectImageAcyclic
+public import FLT.Mazur.GeneralizedCurveCategory
+public import FLT.Mazur.GeneralizedCurveGraph
+public import FLT.Mazur.GeneralizedCurveGraphBaseChange
+public import FLT.Mazur.GeneralizedCurveGraphTransport
+public import FLT.Mazur.GeneralizedCurvePullback
+public import FLT.Mazur.GeneralizedCurvePullbackCoherence
+public import FLT.Mazur.GeneralizedCurveSmoothPullback
+public import FLT.Mazur.GeneralizedEllipticCurve
 public import FLT.Mazur.GeneratorDenominatorLocalization
 public import FLT.Mazur.GenericFibers
 public import FLT.Mazur.GenericIdealInjection
@@ -2322,10 +2330,12 @@ public import FLT.Mazur.PolygonDivisorNormalizationPullback
 public import FLT.Mazur.PolygonDivisorPolynomialHZero
 public import FLT.Mazur.PolygonDivisorPowerPullback
 public import FLT.Mazur.PolygonFieldExtension
+public import FLT.Mazur.PolygonGeneralizedCurve
 public import FLT.Mazur.PolygonGenusOne
 public import FLT.Mazur.PolygonGeometricGenus
 public import FLT.Mazur.PolygonGeometricGraph
 public import FLT.Mazur.PolygonGeometricTranslations
+public import FLT.Mazur.PolygonGroupPoints
 public import FLT.Mazur.PolygonHZeroIncidence
 public import FLT.Mazur.PolygonIdealModulePullback
 public import FLT.Mazur.PolygonIncidence
