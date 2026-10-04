@@ -6,13 +6,14 @@ Authors: krandder
 module
 
 public import FLT.Deformations.ArithmeticGaloisFixedField
+public import FLT.Deformations.HardlyRamifiedArithmeticDescent
 public import FLT.Deformations.RepresentationTheory.AdjointTateDual
 public import FLT.GaloisRepresentation.HardlyRamified.ResidualCharacteristic
 
 /-!
 # The actual arithmetic HR adjoint and Tate dual
 
-Descend the original framed residual representation to its arithmetic
+Use the original framed residual representation on its arithmetic
 quotient. Its determinant is the original cyclotomic scalar, so twisting
 the contragredient by that determinant gives the arithmetic Tate dual.
 -/
@@ -33,11 +34,6 @@ variable (O : Type) [CommRing O] [IsLocalRing O] [IsNoetherianRing O]
   (hdim : Module.rank (residueField (𝓞 := O)) V = 2)
   (ρ : GaloisRep ℚ (residueField (𝓞 := O)) V) (hρ : IsHardlyRamified hp hdim ρ)
 local notation "k" => residueField (𝓞 := O)
-
-/-- The original framed residual representation on the actual profinite arithmetic quotient. -/
-def hardlyArithmeticResidual : HardlyArithmeticGaloisGroup p →ₜ* GL (Fin 2) k :=
-  hardlyArithmeticGaloisDescend p (hardlyTwoFramedResidual O hp hdim ρ hρ)
-    (hardlyTwoFramedResidual_away O hp hdim ρ hρ)
 
 /-- The arithmetic cyclotomic character extracted from the actual residual determinant. -/
 def hardlyArithmeticCyclotomic : HardlyArithmeticGaloisGroup p →* kˣ :=

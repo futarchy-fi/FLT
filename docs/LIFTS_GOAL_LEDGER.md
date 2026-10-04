@@ -40,7 +40,7 @@ local maps into the same arithmetic quotient. `TraceZeroPairing` proves the
 actual rank-two trace pairing is invariant and nondegenerate when two is
 nonzero. `AdjointTateDual` constructs the contragredient cyclotomic twist and
 the equivariant linear-dual identification. `HardlyRamifiedAdjointDual`
-descends the original framed residual representation, identifies its
+uses the already descended original framed residual representation, identifies its
 determinant with the original cyclotomic scalar, and constructs its Tate
 dual and perfect trace pairing using the original odd-prime hypothesis.
 This is coefficient-module duality, not perfect local cohomological duality.
