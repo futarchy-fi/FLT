@@ -56,6 +56,7 @@ public import FLT.AbsoluteGaloisGroup.LocalCyclotomicInertia
 public import FLT.AbsoluteGaloisGroup.LocalCyclotomicRamification
 public import FLT.AbsoluteGaloisGroup.LocalCyclotomicSurjectivity
 public import FLT.AbsoluteGaloisGroup.LocalCyclotomicTame
+public import FLT.AbsoluteGaloisGroup.NiveauTwoCharacterNormalization
 public import FLT.AbsoluteGaloisGroup.NiveauTwoInertiaGenerator
 public import FLT.AbsoluteGaloisGroup.OpenNormalFixedField
 public import FLT.AbsoluteGaloisGroup.RationalPrimeUniformizer
@@ -63,6 +64,7 @@ public import FLT.AbsoluteGaloisGroup.RationalTameCommonLevel
 public import FLT.AbsoluteGaloisGroup.RationalTameRootModel
 public import FLT.AbsoluteGaloisGroup.RootCharacter
 public import FLT.AbsoluteGaloisGroup.RootCharacterCyclotomicNorm
+public import FLT.AbsoluteGaloisGroup.RootCharacterExponent
 public import FLT.AbsoluteGaloisGroup.RootCharacterGenerator
 public import FLT.AbsoluteGaloisGroup.RootCharacterIndependence
 public import FLT.AbsoluteGaloisGroup.RootCharacterResidue
@@ -422,6 +424,7 @@ public import FLT.GaloisRepresentation.Extensions.OrdinaryAdaptedFrame
 public import FLT.GaloisRepresentation.Extensions.OrdinaryFiltration
 public import FLT.GaloisRepresentation.Extensions.OrdinaryFiltrationBasis
 public import FLT.GaloisRepresentation.Extensions.OrdinaryFiltrationClass
+public import FLT.GaloisRepresentation.Extensions.OrdinaryFiltrationRamification
 public import FLT.GaloisRepresentation.Extensions.OrdinaryFiltrationSplitting
 public import FLT.GaloisRepresentation.Extensions.OrdinaryFiltrationTwist
 public import FLT.GaloisRepresentation.Extensions.OrdinaryFiltrationUnit
@@ -623,8 +626,12 @@ public import FLT.GaloisRepresentation.HardlyRamified.TrivialPrimeFiltrationCoex
 public import FLT.GaloisRepresentation.HardlyRamified.TrivialPrimeFiltrationExtension
 public import FLT.GaloisRepresentation.HardlyRamified.ULiftGenericRecovery
 public import FLT.GaloisRepresentation.HardlyRamified.ULiftHardlyRamified
+public import FLT.GaloisRepresentation.SerreWeight.CyclicCharacterExponent
+public import FLT.GaloisRepresentation.SerreWeight.NiveauTwoDigits
 public import FLT.GaloisRepresentation.SerreWeight.NormalizedCharacterExponent
+public import FLT.GaloisRepresentation.SerreWeight.NormalizedOrdinaryInput
 public import FLT.GaloisRepresentation.SerreWeight.NormalizedRecipe
+public import FLT.GaloisRepresentation.SerreWeight.OrdinaryBranch
 public import FLT.GlobalLanglandsConjectures.GLnDefs
 public import FLT.GlobalLanglandsConjectures.GLzero
 public import FLT.GroupScheme.ActualThreeAdicKummerCube
