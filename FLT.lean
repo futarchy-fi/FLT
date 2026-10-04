@@ -381,6 +381,7 @@ public import FLT.GaloisRepresentation.Extensions.OrdinaryFiltrationSplitting
 public import FLT.GaloisRepresentation.Extensions.OrdinaryFiltrationTwist
 public import FLT.GaloisRepresentation.Extensions.OrdinaryFiltrationUnit
 public import FLT.GaloisRepresentation.Extensions.OrdinaryFiniteDVRAction
+public import FLT.GaloisRepresentation.Extensions.OrdinaryFiniteRootClass
 public import FLT.GaloisRepresentation.Extensions.OrdinaryFramedRepresentation
 public import FLT.GaloisRepresentation.Extensions.OrdinaryGaloisClass
 public import FLT.GaloisRepresentation.Extensions.OrdinaryHomCoordinates
@@ -665,6 +666,7 @@ public import FLT.GroupScheme.FiniteAlgebraComponentPoint
 public import FLT.GroupScheme.FiniteAlgebraComponents
 public import FLT.GroupScheme.FiniteAlgebraPointComponent
 public import FLT.GroupScheme.FiniteAlgebraPrincipalComponents
+public import FLT.GroupScheme.FiniteDiagonalPoints
 public import FLT.GroupScheme.FiniteFlat
 public import FLT.GroupScheme.FiniteFlatCartierTangent
 public import FLT.GroupScheme.FiniteFlatClosureChange
@@ -699,6 +701,8 @@ public import FLT.GroupScheme.FiniteHopfFreeness
 public import FLT.GroupScheme.FiniteHopfIdentityAntipode
 public import FLT.GroupScheme.FiniteHopfIdentityComponent
 public import FLT.GroupScheme.FinitePresentationPointCover
+public import FLT.GroupScheme.FiniteRootProjection
+public import FLT.GroupScheme.FiniteUnitReconstruction
 public import FLT.GroupScheme.FlatAugmentationTangent
 public import FLT.GroupScheme.FlatCotangentHomNaturality
 public import FLT.GroupScheme.FlatCoverReductionKernel
@@ -867,6 +871,13 @@ public import FLT.GroupScheme.NilpotentCovering
 public import FLT.GroupScheme.NilpotentGeometricCharacteristic
 public import FLT.GroupScheme.OrderThreeModelIdentification
 public import FLT.GroupScheme.OrdinaryFiltrationModels
+public import FLT.GroupScheme.OrdinaryFiniteDiagonalKernel
+public import FLT.GroupScheme.OrdinaryFiniteFiberDifference
+public import FLT.GroupScheme.OrdinaryFiniteKernelBasis
+public import FLT.GroupScheme.OrdinaryFiniteKummerClass
+public import FLT.GroupScheme.OrdinaryFiniteRootRatio
+public import FLT.GroupScheme.OrdinaryFiniteUnitClass
+public import FLT.GroupScheme.OrdinaryFiniteUnitParameter
 public import FLT.GroupScheme.OrdinaryIntegralFiberCocycle
 public import FLT.GroupScheme.OrdinaryIntegralFiberGalois
 public import FLT.GroupScheme.OrdinaryIntegralQuotientPoint
@@ -944,6 +955,7 @@ public import FLT.GroupScheme.PolynomialLocalDimension
 public import FLT.GroupScheme.PolynomialLocalParameterCriterion
 public import FLT.GroupScheme.PrimeCyclotomicCoefficients
 public import FLT.GroupScheme.PrimeDiagonalPoints
+public import FLT.GroupScheme.PrimeDualCharacters
 public import FLT.GroupScheme.PrimeRootCoordinates
 public import FLT.GroupScheme.PrimeUnitSubspace
 public import FLT.GroupScheme.PrimitiveRootCoordinates
