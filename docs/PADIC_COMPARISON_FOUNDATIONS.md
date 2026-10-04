@@ -2036,3 +2036,607 @@ neighbourhood over the original base, including arbitrary-base
 approximation. F14's finite relative cover, C4–C12's relative flatness and
 the formal-smoothness assembly remain unproved. None of these statements
 follows solely from the new absolute geometric presentations.
+
+
+### W47: actual residue-field fibre comparison
+
+F12 now applies to each specified polynomial presentation of the actual
+characteristic-p residue division fibre at every prime over its kernel.
+`DivisionResidueLocalCI.exists_residue_division_regular_relations_atPrime`
+constructs a list with exactly as many relations as polynomial variables,
+generating the original localized kernel and regular over the original field.
+There is no rational-residue hypothesis and no assumed geometric kernel square.
+
+The implementation leaves (whole-module cap 150) are:
+
+| Leaf | Module | Result |
+|---|---|---|
+| F12y | `MvPolynomial.GeometricPointLocalization` | Flat local coefficient map at any geometric point and its contraction; comparison of the extended original ideal. |
+| F12z | `MvPolynomial.GeometricRegularDescent` | Descend the generator bound through the flat local map, apply the geometric parameter criterion, and reflect regularity. |
+| F12aa | `MvPolynomial.CoefficientPresentation` | Extend a specified polynomial presentation with its coordinates, surjectivity and entire kernel. |
+| F12ab | `GroupScheme.ComponentLocalizedKernel` | Projecting onto a pointed component preserves the original kernel after localization; prove this using the primitive idempotent. |
+| F12ac | `GroupScheme.GeometricHopfLocalizedKernel` | Square generators and the actual component quotient for the original geometric presentation. |
+| F12ad | `GroupScheme.HopfGeometricPresentationDescent` | Connect the geometric component kernel to the original localized presentation and descend regular relations. |
+| F12ae | `GroupScheme.HopfGeometricPointDescent` | Retain a specified original fibre point through the geometric comparison. |
+| F12af | `GroupScheme.DivisionResidueFibreComparison` | Construct the comparison for the actual residue division fibre by tensor cancellation and division translation. |
+| F12ag | `MvPolynomial.ResidueGeometricPoint` | Construct a geometric point above each original prime, with exactly that contracted ideal. |
+| F12ah | `GroupScheme.DivisionResidueRegularPresentation` | Apply the constructed comparison at every specified geometric point of the actual residue fibre. |
+| F12ai | `GroupScheme.DivisionResidueLocalCI` | Apply the geometric-point construction at every prime of the original residue-field presentation. |
+
+This replaces the rational-origin restriction of F12x in the actual fibre
+application: F12z uses `Ideal.exists_ofList_of_map_eq_span` and faithfully flat
+reflection directly at the contracted geometric point. F12x remains a valid
+specialized interface. The result concerns characteristic-p residue fields,
+as required for p-nilpotent test algebras.
+
+F13 still requires spreading these presentations over the original arbitrary
+base. A finite chart cover of an individual residue fibre does not imply
+F14's relative chart cover. C4–C12 and the formal-smoothness assembly remain
+unproved; the family admission has not been replaced.
+
+
+W47 further leaves (cap 150 each):
+
+| Leaf | Module | Result |
+|---|---|---|
+| F14c | `Regular.FinitePresentationCover` | Extract finite principal charts of a specified algebra presentation, retaining the number of equations and the original coordinate map to each actual localization. |
+| F12aj | `GroupScheme.DivisionResidueFiniteCharts` | Apply finite extraction to the actual residue division fibre; the chart denominators generate the unit ideal in that fibre. |
+| F12ak | `GroupScheme.DivisionPullbackFibreLocalCI` | Apply F12ai to every field-valued fibre of the actual division pullback over an arbitrary p-nilpotent test algebra. Derive the characteristic from nilpotence and construct the tensor cancellation. |
+| F13h | `Flat.PresentationKernelIntersection` | Use the flat target's equational criterion to prove that the original kernel intersects any extended base ideal in their product. No Noetherian or principal-ideal assumption. |
+| F13i | `Flat.FibreRelationLifting` | Nakayama lifts generators through any extended base ideal contained in the presentation source's Jacobson radical, using the proved intersection formula. |
+| F13j | `Flat.ReducedPresentation` | Construct the actual reduced algebra map, compute its entire kernel, and lift reduced generators to a coordinate-compatible presentation of the original flat target. |
+
+The exact F12 application theorem is
+`ThreeAdicPlan.PDivisibleSystem.exists_division_pullback_fibre_regular_relations`.
+Its inputs are the actual system, a point into a p-nilpotent test algebra,
+a field-valued specialization, and any surjective polynomial presentation of
+that fibre. It proves regularity and generation at every prime of that
+original presentation. It assumes neither a geometric comparison nor an
+original regular list. Taking the field to be a residue field includes
+non-rational points of the original base.
+
+F13j lifts generators modulo a base ideal, under an explicit finite-kernel
+hypothesis. Applying it to F12ak still requires the localized residue-fibre
+comparison over the original base, finite generation for that localized
+presentation, clearing denominators, and simultaneous fibre regularity on
+the resulting neighbourhood. F13j does not assert those conclusions or
+flatness of a newly lifted chart. F14c/F12aj cover a single residue fibre;
+F14's relative cover is still missing. C4–C12's adic criterion, approximation,
+relative flatness and the later formal-smoothness assembly remain open.
+
+## W48: actual relative charts and Noetherian coefficient reconstruction
+
+The original relative presentation and finite-cover part of F13/F14 is now
+proved over an arbitrary test algebra. `DivisionRelativeCICover` constructs
+an ordinary polynomial presentation internally, then finitely many principal
+charts of the **actual division pullback**. The defining elements generate one
+in that pullback. Each chart has exactly as many equations as polynomial
+variables, retains the original coordinate map, and its specified equation
+list is regular at every point of every field-valued fibre on the chart.
+This is a relative cover over the original test algebra, extending W47's
+cover of one residue field. It is not a flatness theorem for newly lifted
+quotients or a formal-smoothness theorem.
+
+The finite-target argument supplies simultaneous fibre regularity directly:
+any square list generating a local presentation kernel of a finite field
+algebra is regular. The proof passes to a geometric point, applies the
+rational polynomial parameter criterion to the actual Artinian quotient,
+and reflects the regularity of the **specified list** by faithful flatness.
+An ideal equality on a principal open survives any coefficient map where
+the denominator is a unit. Consequently the same original relation list
+works on every field fibre of that chart. No Noetherian assumption is
+introduced on the original base, and no stage-regularity assertion is used
+as a replacement for C8.
+
+### New capped leaves
+
+All names below are under `FLT.Mathlib.RingTheory` unless prefixed
+`GroupScheme`. Each new module has at most 150 whole-file lines.
+
+| Leaf | Module | Proved obligation |
+|---|---|---|
+| F13k | `Flat.LocalizedFinitePresentation` | Original local presentation map, surjectivity, full kernel, finite generation from finite presentation, and the contracted base prime's radical inclusion. |
+| F13l | `Flat.LocalizedRelationLifting` | Apply arbitrary-base-ideal relation lifting with the actual finite kernel and radical inputs. |
+| F13m | `Flat.LocalizedResidueQuotient` | Localized residue-fibre/quotient equivalence, preserving original coordinates. |
+| F13n | `Flat.LocalizedResidueKernel` | Tensor right exactness identifies the entire fibre kernel with the reduced original local kernel. |
+| F13o | `Flat.ResidueRelationLifting` | Lift actual fibre relation generators through that comparison. |
+| F13p | `Flat.ResiduePresentationPoint` | Construct the fibre point with the required contraction and kernel containment. |
+| F13q | `Flat.ResidueRegularLifting` | Retain equation count, full generation, order, and regularity after reduction. |
+| F13r | `MvPolynomial.BaseChangePresentation` | Base change of a specified polynomial presentation over arbitrary coefficient rings. |
+| F13s | `Regular.LocalPresentationTransport` | Transport local ideals and regular lists through coordinate equivalences. |
+| F13t | `MvPolynomial.TensorLocalRelations` | Transfer polynomial-fibre relations to tensor-product coordinates. |
+| F13u | `MvPolynomial.RelativeLocalRelations` | Assemble original local equations from the actual residue-fibre relations. |
+| F13v | `GroupScheme.DivisionRelativeLocalRelations` | Apply F13u to the actual division pullback, deriving finiteness and flatness inputs. |
+| F13w | `Regular.CommonDenominatorRelations` | Clear one common denominator inside the original ideal and preserve a regular reduction. |
+| F13x | `Regular.RelativePrincipalRelations` | Spread full-kernel generation to a principal neighbourhood without Noetherian hypotheses. |
+| F14d | `Localization.PrincipalPresentationEquiv` | Identify a principal relation quotient with the actual target chart and original coordinates. |
+| F13y | `GroupScheme.DivisionPrincipalRelations` | Construct those principal charts for the actual division pullback. |
+| F13z | `Localization.ArtinianPresentation` | Localized kernels of presentations of Artinian algebras have Artinian quotient. |
+| F13aa | `MvPolynomial.GeometricParameterRegularity` | Reflect regularity of a specified square geometric parameter list. |
+| F13ab | `MvPolynomial.FiniteFibreParameterRegularity` | Every square local kernel list of a finite field algebra is regular. |
+| F13ac | `Localization.PrincipalIdealBaseChange` | Transport principal-open ideal equality along any map inverting its denominator. |
+| F13ad | `MvPolynomial.PrincipalFibreRegularity` | Prove simultaneous field-fibre regularity on the entire principal chart. |
+| F14e | `Regular.FiniteRelativePresentationCover` | Extract a finite principal cover, retaining the full kernels, equation counts and coordinate equivalences. |
+| F14f | `GroupScheme.DivisionRelativeFiniteCharts` | Finite relative fibre-regular cover for any specified original division presentation. |
+| F14g | `GroupScheme.DivisionRelativeCICover` | Construct that original polynomial presentation internally; no presentation input is required. |
+| C7a | `MvPolynomial.NoetherianCoefficientStage` | Descend finite polynomial data to a finitely generated integer subalgebra and reflect all polynomial identities among it. |
+| C7b | `MvPolynomial.RelationBaseChange` | Relation quotients commute with arbitrary coefficient base change, on original polynomial representatives. |
+| C7c | `MvPolynomial.NoetherianRelationStage` | Reconstruct a finite relation quotient exactly from the chosen Noetherian coefficient stage. |
+
+### Remaining flatness and assembly boundary
+
+C7a–c construct a Noetherian coefficient stage; they do **not** assert that
+the fibre-regularity property holds at that stage. W49 below proves the Noetherian local
+flatness criterion C4a–g, regular-sequence quotient induction C5, and local
+to global flatness C6. C8's eventual regularity-stage
+spreading and C9's varying-stage colimit comparison also remain. Principal
+localization must be included in these approximation comparisons. C10–C12
+then need to prove flatness of the actual **lifted** relation charts.
+
+W42's finite-product/cover lemmas can use the new original principal cover
+only after that lifted-chart flatness and the compatible reduction maps
+are supplied. Local point lifts, overlaps, descent, nilpotent iteration,
+and the subsequent family-realization obligations remain. In particular,
+`IsHardlyRamified.mem_isCompatible` has not been replaced or edited.
+
+Validation evidence is recorded in the untracked `FAMILY_W48_DONE.md`,
+`W48_VALIDATION.json`, `W48_AXIOMS.log`, and `W48_BOUNDARY_AXIOMS.log`.
+The read-only reproducible checks are individual `lake build MODULE`,
+`lake exe runLinter MODULE`, and `#print axioms` for every new declaration;
+the final handoff records their checked-at time, source hashes and the
+single post-merge root build.
+
+
+## W49: adic local flatness and Noetherian relative complete intersections
+
+The C4–C6 proof chain is now implemented. Its strongest local statement,
+`Module.Flat.injective_and_flat_of_local_residue`, starts with a right exact
+sequence `N → M → Q`, a flat `R`-module `M`, and an `N` finite over a
+Noetherian local `R`-algebra `S`. For a local map `R → S`, injectivity of
+`N → M` on the residue fibre implies injectivity upstairs and `R`-flatness
+of `Q`. No target-quotient flatness is assumed. The base `R` need not itself
+be Noetherian in this criterion.
+
+The graded comparison includes the actual quotient `M/IM` and a formula
+on quotient representatives. Tensor right exactness supplies the successive
+adic rows; flatness of the original target supplies their left injectivity.
+An exact-sequence argument propagates residual injectivity through powers.
+Krull intersection then separates the finite source.
+
+C4e uses an equivalent proof that avoids rebuilding scalar structures over
+`R/J`: it proves injectivity modulo `J + m^n`, using a transition kernel
+annihilated by `m`. Applying Krull intersection to `N/JN` reflects membership
+in `JN`. Thus the original map remains injective after tensoring with `R/J`
+for every ideal `J`. A tensor diagram chase with `J → R → R/J` and
+`Flat.iff_rTensor_injective'` proves cokernel flatness.
+
+| Leaf | Module under `FLT.Mathlib.RingTheory` | Proven output |
+|---|---|---|
+| C4a | `Flat.AdicGradedTensorComparison` | Graded tensor and module-quotient comparisons, including representative formulas. |
+| C4b | `Flat.AdicQuotientExactRow` | Exact adic rows and injectivity of their left tensor map for flat modules. |
+| C4c.1 | `Flat.TensorInjectivityExtension` | Injectivity across a short exact tensor sequence. |
+| C4c.2 | `Flat.AdicInjectivityInduction` | Injectivity modulo all positive powers. |
+| C4d | `Flat.AdicSeparatedInjectivity` | Krull-separated injectivity, including the local-map corollary. |
+| C4e.1 | `Flat.AdicBaseIdealInduction` | Injectivity modulo `J + m^n`. |
+| C4e.2 | `Flat.AdicSubmoduleClosed` | Closedness of each submodule in the finite Noetherian module. |
+| C4e.3 | `Flat.QuotientTensorInjectivity` | Tensor injectivity is reflection of ideal-multiple membership. |
+| C4e.4 | `Flat.QuotientBaseInjectivity` | Injectivity modulo every base ideal. |
+| C4f | `Flat.FlatCokernelIdealCriterion` | The flat-cokernel ideal criterion. |
+| C4g.1 | `Flat.LocalFlatCokernel` | Local injectivity and flat cokernel assembly. |
+| C4g.2 | `Flat.NoetherianFibreRegularElement` | Regularity and flat scalar quotient; also the actual ring quotient `S/(x)`. |
+| C5a | `Flat.RelativeQuotSMulTensor` | Scalar quotient/tensor comparison over the smaller base, linear over the ambient algebra. |
+| C5b | `Flat.FibreRegularSequenceInduction` | Ordered regular-sequence induction and flatness of every original prefix quotient. |
+| C6a | `Flat.LocalizedQuotientFlatness` | Relative quotient flatness checked in ambient maximal localizations. |
+| C6b | `Flat.NoetherianRelativeCIFlat` | Stalk induction and global flatness, requiring regularity only on the zero locus. |
+| C6c | `Flat.StalkFibreQuotient` | The stalk fibre as a quotient by the original contracted prime. |
+| C6d | `Flat.FibreRegularityAtStalk` | Transport of the specified fibre equations to that stalk fibre. |
+| C6e | `Flat.NoetherianFibreCIFlat` | Global flatness from regularity at fibre points on the zero locus. |
+| C6f | `MvPolynomial.NoetherianFibreQuotientFlat` | The criterion in finite polynomial coordinates over a Noetherian base. |
+
+Every leaf is a new module of at most 150 lines. The verification entry points
+are `W49_VALIDATE.py` (individual foreground builds and module-only lint),
+`W49_AXIOMS.lean` (all new declarations), and `W49_BOUNDARY_AXIOMS.lean`.
+The untracked `FAMILY_W49_DONE.md` records checked-at timestamps, source hashes,
+commits, and the required post-merge root build.
+
+### Remaining formal-smoothness boundary
+
+C4–C6 do not prove that a finite coefficient stage inherits the required
+fibre regularity. C7 still needs principal-localization data, C8 must spread
+fibre regularity to a suitable Noetherian stage, and C9–C10 must construct
+and use the varying-stage comparison to obtain arbitrary-base flatness.
+The general C6 ambient-algebra criterion applies to a Noetherian principal
+localization when its fibre condition is supplied; the coefficient-stage
+and lifted-chart comparisons must still supply that condition.
+
+C11–C12 must transfer regularity through the nilpotent coefficient kernel
+and prove the actual lifted charts flat before W42's cover assembly applies.
+Local point lifts, compatible overlaps, descent, nilpotent iteration, and
+later family-realization obligations remain. No new theorem in W49 asserts
+formal smoothness or removes the existing `mem_isCompatible` admission.
+
+## W50: zero-dimensional approximation and the actual lifted flat chart cover
+
+The finite division charts admit a shorter route through the C8–C10 gate:
+all their fibres have dimension zero, and their presentations are square.
+The new proof uses that specialization; it does not assert the general
+positive-dimensional version of C8b. Each module below is capped at 150
+lines. Validation commands, checked source hashes, axiom results and local
+commits are recorded in the untracked `FAMILY_W50_DONE.md` and
+`W50_VALIDATION.json` handoff artifacts.
+
+### Coefficient stages and dimension
+
+C7 is completed by `Localization.PrincipalBaseChangeEquiv`,
+`MvPolynomial.PrincipalRelationBaseChange`, and
+`MvPolynomial.NoetherianPrincipalStage`. Relations and the principal
+denominator descend simultaneously. Tensor base change reconstructs the
+actual localized quotient and preserves every polynomial representative.
+W48's coefficient-identity reflection still applies to this finite data.
+
+C8a is proved in `KrullDimension.IntegralExtension`,
+`TensorProduct.IntegralMap`, `KrullDimension.FieldBaseChange`, and
+`KrullDimension.FibreFieldExtension`. Going up lifts finite prime chains;
+incomparability bounds them in the other direction. Noether normalization
+remains integral and injective after tensoring with a field extension.
+Consequently finite-type Krull dimension, including the zero ring case,
+is invariant under arbitrary field extension. The residue-field comparison
+uses the prime actually contracted along the coefficient-stage map.
+
+For C8b, `QuasiFinitePrincipalNeighbourhood` uses Mathlib's proved Zariski
+main theorem to produce a principal quasi-finite neighbourhood.
+`ZeroDimensionalFibreNeighbourhood` supplies its hypothesis from the
+dimension of the **whole residue fibre** at the contracted base prime.
+It does not substitute the dimension of a local ring for dimension near
+a fibre point: for example, the generic stalk of an affine line has
+dimension zero, although every nonempty open of that line has dimension
+one. `KrullDimension.QuasiFiniteBound` also supplies the general dimension
+bound for a quasi-finite algebra over a polynomial ring; constructing that
+polynomial map near a point of a positive-dimensional fibre remains open.
+
+C8c's zero-dimensional application is in `QuasiFiniteBaseChangeFibre`,
+`FiniteImagePrincipalCover`, and `QuasiFiniteImageCover`. A quasi-finite
+final base change gives dimension-zero stage fibres at the primes seen
+by that final base. Principal neighbourhoods at those points have a finite
+subfamily whose images generate the unit ideal in the final algebra.
+Primes outside that image are not assumed good.
+
+C8d is in `MvPolynomial.EnlargedCoefficientStage`,
+`Ideal.QuotientUnitCertificate`, and `MvPolynomial.UnitIdealCertificateStage`.
+The proof lifts the equation for a quotient cover, adds the coefficients
+of the relation-ideal membership witnesses, and enlarges the original
+finitely generated integer subalgebra. Injectivity of the coefficient map
+reflects the polynomial certificate. The strengthened statement retains
+the canonical images of the originally chosen relations and opens.
+
+C8e's zero-dimensional assembly is in `QuasiFiniteUnitCover`,
+`QuasiFiniteCertificateStage`, and `NoetherianQuasiFiniteStage`.
+Good principal charts remain quasi-finite after coefficient base change;
+the descended unit-ideal certificate makes them a cover of the enlarged
+stage. Thus the enlarged Noetherian relation quotient is itself
+quasi-finite. This property is proved, not included as a field in an
+approximation record. The finite-variable index may be in `Type`; the
+coefficient ring is universe-polymorphic.
+
+### Flatness and the lifted cover
+
+`NoetherianQuasiFiniteSquareFlat` uses the finite-fibre kernel parameter
+criterion to prove regularity of the specified square equations at every
+residue-fibre prime, then applies W49's Noetherian flatness theorem.
+`QuasiFiniteSquareFlat` obtains a good Noetherian stage from C8e and
+transports its flatness through the exact relation-base-change equivalence.
+This proves arbitrary-base flatness of quasi-finite square quotients.
+For this route, a directed-colimit comparison (C9/C10a–b) is unnecessary:
+one flat stage reconstructs the entire fixed finite presentation after
+base change. The general colimit statements have not been implemented.
+
+C11/C12 are instantiated by `LiftedPresentationQuasiFinite` and
+`LiftedSquarePresentationFlat`. Every residue field kills the nilpotent
+coefficient kernel, so W43's exact presentation-fibre comparison proves
+quasi-finiteness of the actual lifted equations. Arbitrary-base square
+flatness then proves those equations define a flat algebra upstairs.
+
+`RelationQuotientPresentation` and `PrincipalSquarePresentation` retain
+the original principal chart by adding one inverse variable and one
+relation. They convert d equations in d localized polynomial variables
+into d+1 equations in d+1 polynomial variables. This includes the
+principal denominator in the presentation before lifting it.
+
+`LiftedSquareChartCover` proves faithful flatness of the finite product
+using the original reduced covering condition. `LiftedPrincipalSquareCover`
+constructs the square presentations and coefficient lifts, proves this
+faithful flatness, and supplies the exact tensor-reduction equivalences.
+Finally `DivisionLiftedFlatCharts.exists_division_lifted_flat_charts`
+applies these constructions to W48's original division pullback, without
+asking the caller for chart presentations, regularity, or lifted flatness.
+Its witnesses retain the original quotient map, denominators, chart
+presentations, lifted equations and reduced-chart equivalences. W42's
+`exists_point_on_lifted_reduction` transfers original division points to
+these particular reduced charts with their coordinate composites intact.
+
+### Remaining formal-smoothness boundary
+
+The lifted flat cover does not supply local inclusion lifts of the
+p-divisible-system points. Those must still be constructed and compared
+on the actual double and triple overlaps. W41's cotangent/Amitsur
+correction theorem must then be applied to those discrepancies, followed
+by affine point descent and nilpotent iteration (L7b.4/L8–9). Formal
+smoothness, the later cotangent/duality/period gates, and the replacement
+of `IsHardlyRamified.mem_isCompatible` remain unproved. The existing
+admission module is unchanged, as required by this task's edit boundary.
+
+## W51: local inclusion lifts, actual overlap correction, and formal smoothness
+
+The W50 boundary is resolved by the following capped leaves. Every module
+below has at most 150 lines. The proofs use the original level coordinate
+maps throughout; they introduce no hypothesis asserting liftability,
+formal smoothness, or existence of a correcting cochain.
+
+| Leaf | Modules | Proof obligation |
+|---|---|---|
+| L7b.4a | `LiftedPresentationPoint`, `PrincipalDivisionPoint` | Preserve C-coefficients and the original reduction-map composite when transferring a principal division-chart point through W42's specified presentation equivalence. |
+| L7b.4b | `FiniteProductReductionPoint`, `DivisionLiftedReductionPoint` | Assemble those points on the actual tensor reduction of W50's faithfully flat product cover. |
+| L7b.4c | `DivisionLocalInclusionLift` | Lift the p-power multiple of that division point across the square-zero cover reduction; the original reduction/inclusion equation identifies its reduction with the required inclusion of the original point. |
+| L8a | `FlatCoverPointOverlap`, `FlatCoverDiscrepancyCocycle` | The actual local lift has equal reductions on double overlaps. Its three actual pullbacks satisfy the triple-overlap group/tangent identity. |
+| L8b | `FlatCoverKernelAmitsur`, `FlatCoverKernelDifferential`, `PointDifferenceCotangentEvaluation` | Identify the double-overlap kernel with D tensor D tensor J, retain coordinate evaluations, and intertwine both Amitsur differentials with the actual overlap maps. |
+| L8c | `FlatCoverCotangentDiscrepancy`, `FlatCoverAugmentationMap`, `PDivisibleOverlapCorrection` | Construct the cotangent-valued discrepancy, prove its Amitsur cocycle equation, and apply W41's `exists_original_infinitesimal_correction` to this particular cocycle. |
+| L8d | `InfinitesimalPointCorrection`, `PDivisibleCorrectedLocalPoint` | Translate by the correcting point to obtain equal overlap pullbacks without changing the original reduction. |
+| L9a | `PDivisibleLocalLiftDescent`, `PDivisibleSquareZeroFormalSmoothness` | Faithfully flat affine descent gives a global inclusion lift; consequently the original point colimit is surjective across square-zero thickenings of p-nilpotent algebras. |
+| L9b | `PDivisiblePointEquiv`, `PDivisibleFormalSmoothness` | Iterate along nilpotent ideals and transport through the original quotient-kernel equivalence, retaining an explicit higher-original-level inclusion lift. |
+| Cotangent identification | `PDivisibleInfinitesimalPairing`, `PDivisibleFormalCotangent`, `PDivisibleNilpotentCotangent` | Identify the actual colimit infinitesimal kernel with Hom from the original cotangent inverse limit, with every original finite-level pairing and independence of the chosen annihilating power. |
+
+### Precise lifting theorem
+
+`PDivisibleSystem.pointColimitMap_surjective_nilpotent` proves that, for
+an original system X over the local base R and every surjective R-algebra
+map q : B -> C with nilpotent kernel and nilpotent p in B, the induced map
+`X.PointColimit B -> X.PointColimit C` is surjective.
+`exists_nilpotent_inclusion_lift` states the equivalent original-level
+result: each point x at level n has a lift y at some level m >= n with
+`q.comp y = x.comp (X.inclusion h).toAlgHom`.
+
+The square-zero proof constructs W50's cover internally, transfers its
+specified division point, and applies the multiplication lift on the
+original higher level. It then forms that lift's discrepancy, verifies
+its triple-overlap identity, and identifies its actual kernel-valued
+cotangent cocycle. W41's Amitsur theorem produces a correcting original
+level point. Translation gives equal overlaps, and faithfully flat point
+descent returns a point over B with the prescribed reduction. Nilpotent
+iteration uses successive square-zero quotients and actual test-algebra
+composition. It does not assume a smooth representing algebra.
+
+### Precise cotangent identification
+
+`formalInfinitesimalCotangentEquiv` identifies the actual augmentation
+kernel of the same original point-colimit functor across q with
+`X.cotangentLimit ->ₗ[R] RingHom.ker q`, when q has square-zero kernel
+annihilated by a power of p and the original level cotangent sets are
+finite. `formalInfinitesimalCotangentEquiv_mk` retains the original
+coordinate cotangent functional composed with `X.cotangentEval n` for
+**every** original level n. The equivalence is independent of the
+annihilating power, not merely an equivalence for one chosen level.
+
+`nilpotentInfinitesimalCotangentEquiv` obtains the exponent internally
+from p-nilpotence of B. At the original rational place,
+`rationalPlaceFormalInfinitesimalCotangentEquiv` discharges finite-level
+finiteness using the previously proved theorem. Thus this identification
+has no extra finiteness premise for that original base.
+
+### Boundary after these leaves
+
+These statements prove formal smoothness in the equivalent original
+level-system sense requested in W37's first obligation, and identify its
+infinitesimal functor with the existing cotangent limit. They do not
+construct a complete representing coordinate algebra, nor prove that
+the cotangent limit is torsion-free or finite free. The later dual
+reduction, Cartier-dual limit, period pairing, and family-realization
+gates remain. In particular the existing `mem_isCompatible` admission
+is not replaced; its module is outside this task's edit boundary.
+
+Recheck the implementation with the foreground module builds, individual
+module lints, and named axiom audits recorded in `FAMILY_W51_DONE.md`.
+The handoff records timestamps, commits, and the post-merge root build;
+this section specifies the theorem boundary rather than a live CI status.
+
+## W52: cotangent freeness and reduction of the original integral tangent
+
+The first two obligations after W51 are proved. Formal smoothness is applied
+to actual split square-zero test algebras to obtain functional lifting;
+freeness is a consequence, never a hypothesis in the system-level results.
+Every new module below is capped at 150 whole-file lines.
+
+| Leaf | Module | Proved output |
+|---|---|---|
+| F1 | `AugmentationCotangentNaturality` | Changing test algebras postcomposes the original cotangent functional with the specified reduction-kernel map. |
+| F2 | `PDivisibleCotangentKernelLifting` | W51's nilpotent lifting theorem lifts every represented kernel-valued functional across a surjective square-zero map of test algebras. |
+| F3 | `Mathlib.RingTheory.SplitSquareZeroTest` | The kernel of S plus M is M; module surjections give surjective algebra maps with square-zero kernel, preserving p-nilpotence. |
+| F4 | `PDivisibleCotangentFunctionalLifting` | For every p-nilpotent R-algebra S and every surjection of S-modules M to N, each R-linear functional from the original cotangent limit to N lifts to M. |
+| F5 | `Mathlib.RingTheory.PrincipalPowerTorsion` | In a free module over R/(a^(n+1)), a-torsion is divisible by a^n, by cancellation in the domain R. |
+| F6 | `PDivisibleCotangentPrimeInjective` | Functional lifting into free modules over R/(p^(n+1)) proves multiplication by p injective on the original cotangent inverse limit. |
+| F7 | `PDivisibleCotangentFree` | DVR factorization gives torsion-freeness; prior finite generation gives finite freeness, also at the original rational place. |
+| D1 | `Mathlib.LinearAlgebra.FreeDualReduction` | The integral dual of a free module modulo a is all R/(a)-valued functionals, with the original evaluation formula. |
+| D2 | `PDivisibleIntegralTangentReduction` | The original integral tangent modulo p^n is all functionals on the original level-n cotangent, equivalently its already defined Leibniz tangents. |
+| D3 | `PDivisibleIntegralTangentReductionNaturality` | Reduction preserves original system maps and is independent of the auxiliary base identification; includes the original rational-place pairing. |
+| D4 | `PDivisibleIntegralTangentCoefficients` | Tensoring the integral tangent with any coefficient module gives all cotangent-limit functionals, and all original level functionals for p-power torsion coefficients. |
+| D5 | `PDivisibleIntegralInfinitesimal` | Tensoring the integral tangent with an actual square-zero reduction kernel represents the actual original infinitesimal point colimit and retains its finite-level pairing. |
+| D6 | `PDivisibleIntegralPairingPerfect` | The original integral evaluation pairing is perfect; the cotangent is its tangent's full integral dual. |
+
+### Why infinitesimal lifting proves torsion-freeness
+
+Let x in the original limit satisfy p*x = 0. At each n, equip the original
+level-(n+1) cotangent with its R/(p^(n+1))-action and choose a finite free
+surjection onto it. F4 lifts the original evaluation map through that
+surjection. The lifted image of x is killed by p. Coordinate cancellation
+in F5 makes it divisible by p^n. Its image in the original level-n
+cotangent therefore vanishes. The original inverse-limit extensionality
+then gives x = 0. Factoring every nonzero p-adic scalar as a unit times a
+power of p proves full torsion-freeness. This argument constructs no
+complete representing coordinate algebra and needs none.
+
+The dual reduction comparison sends the class of an integral functional d,
+evaluated on the original level-n image of x, to d(x) modulo p^n. Its
+surjectivity follows from the proved cotangent freeness. For arbitrary
+module coefficients M, the tensor comparison sends d tensor a to the
+functional x ↦ d(x)*a. W51's identification then gives the actual
+infinitesimal-point comparison for every square-zero reduction with
+p-nilpotent source. These are integral tangent statements; they do not
+identify Tate sequences with a period-module basis.
+
+### Remaining Cartier and period boundary
+
+The W29 D2 contracts still require a Cartier-dual level system and a period
+comparison. In particular, `RaynaudCartierDual` supplies individual local
+Cartier-dual models and transposed maps, but does not assemble a dual
+`PDivisibleSystem`. Several existing extension-duality theorems concern
+`FiniteFlatObject` with generic field Q, so they cannot be applied to the
+original rational-place completion without proving the corresponding local
+statements. The next proof-sized split is:
+
+| Next leaf, cap 150 each | Required artifact |
+|---|---|
+| C1 | Transpose the original reduction/inclusion maps; prove identity, composition and both multiplication factorizations on the actual dual coordinate algebras. |
+| C2 | Prove dual closedness and faithful flatness over the local base, including the actual residue-base-change maps. |
+| C3 | Prove the actual dual augmentation-kernel equation, annihilation and coordinate rank; assemble the dual p-divisible system. Split this leaf further before exceeding the cap. |
+| C4 | Construct the dual Tate limit, its original transition/evaluation pairings and compatibility with integral tangent coefficient extension. |
+| P1 | Construct the period pairing from these particular points and the existing period rings; prove its coefficient and level compatibilities. |
+| P2–P6 | Prove integrality, original Galois equivariance, injectivity, surjectivity and filtration strictness, respectively; each remains a separate proof obligation. |
+| W1–W3 | Prove coefficient-embedding decomposition, the two-weight support and the determinant calculation forcing rank one in each prescribed degree. |
+
+No record introduced here assumes a comparison isomorphism or any of these
+remaining conclusions. `IsHardlyRamified.mem_isCompatible` is unchanged
+and still has the existing admission. The later compatible-family
+realization and the final delegation of that admission remain outstanding.
+
+Validation is reproducible with the individual foreground builds, sequential
+module-only lints and named axiom audits recorded in the untracked
+`FAMILY_W52_DONE.md`, `W52_VALIDATION.json` and `W52_AXIOMS.log`.
+
+## W53: actual Cartier-dual system and Tate evaluation
+
+The W52 C1–C3 obligations are implemented over a principal domain with an
+arbitrary characteristic-zero fraction field. They therefore apply to the
+original rational-place completion. No generic-Q extension theorem is used
+to assert local exactness. The complete modules below each have a 150-line cap.
+
+| Leaf | Module | Proved output |
+|---|---|---|
+| C1a | `CartierDualConvolution` | Transposition reverses composition and preserves convolution and its natural powers. |
+| C1b | `RaynaudCartierArithmetic` | Actual integral duals preserve multiplication, annihilation and coordinate rank. |
+| C1c | `PDivisibleCartierTransitions` | The original transposed inclusions/reductions satisfy identity, composition and both multiplication factorizations. |
+| C2 | `CartierDualSurjection` | A surjective coordinate map has faithfully flat transpose, using split injectivity after every residue base change. |
+| C3a | `HopfExactPair` | An actual augmentation-kernel presentation gives the original kernel torsor and its faithfully flat invariants. |
+| C3b | `HopfExactPairAnnihilator` | The annihilator of the actual dual augmentation ideal is exactly the original quotient coordinates. |
+| C3c | `HopfExactPairDualKernel` | The dual augmentation quotient is flat and pairs perfectly with the original quotient coordinates. |
+| C3d | `HopfExactPairDuality` | Integral biduality identifies that quotient with the intended dual; proves dual closedness and the actual dual kernel equation. |
+| C3e | `PDivisibleCartierSystem` | Assembles the actual dual p-divisible system with all structure obligations proved. |
+| C4a | `CartierPairingNaturality` | Geometric evaluation tensors and characters respect transposition of the given Hopf maps. |
+| C4b | `RaynaudCartierPairing` | The specified original and dual local point groups carry their actual Cartier pairing, natural for integral maps. |
+| C4c | `RaynaudCartierPairingLaws` | Additivity in original points and the actual annihilating exponent of each Cartier value. |
+| C4d | `RaynaudCartierPairingGalois` | Original local Galois equivariance of that pairing. |
+| C4e | `PDivisibleCartierTatePairing` | The dual Tate limit, its p-adic linear evaluations, inclusion compatibility, and the paired cyclotomic transition law. |
+| C4f | `PDivisibleCartierTateGalois` | The actual paired sequence lies in the inverse limit of p-power roots and is Galois equivariant. |
+| C4g | `PDivisibleRationalCartier` | Instantiates the actual rational-place dual system and applies the proved integral tangent coefficient comparisons to its own cotangent limit. |
+| C4h | `RaynaudCartierCharacters` | The actual dual point group is the full character group; finite evaluation is additive in both arguments and separates dual points. |
+
+The finite exactness proof takes the original coordinate maps, surjectivity,
+faithful flatness and augmentation-kernel equation. It introduces no new
+record assuming a dual extension or a comparison. Faithfully flat descent
+identifies original quotient coordinates as kernel invariants. Their pairing
+with the dual augmentation quotient is perfect. That quotient is finite
+projective because the transposed inclusion is faithfully flat; integral
+biduality then proves both dual closedness and the required equality of ideals.
+
+For a dual Tate vector y and an original Tate vector x, the value at level n
+is the original Cartier evaluation on their actual n-th coordinates. It is
+killed by p^n, and raising its level-n value to p^(n-m) gives its level-m
+value. The same evaluation on a fixed original point is unchanged by its
+inclusion into a higher level. Galois acts on these values through its
+original action on the algebraic closure of the actual fraction field.
+
+### Remaining C4 and period boundary
+
+The root-valued Tate pairing and the integral tangent coefficient pairings
+are proved separately. Their infinitesimal compatibility has **not** been
+proved. Applying W52 to the dual system gives its integral coefficient
+comparison; it does not identify a Tate vector with an integral tangent
+functional. Consequently C4 as a whole, the period comparison and the family
+admission remain open. The original `mem_isCompatible` module is unchanged.
+
+The next required refinement, with each complete module still capped at 150
+lines, is:
+
+| Next leaf | Required artifact |
+|---|---|
+| C4i | Extend actual finite Cartier characters from generic points to the appropriate integral test algebras, retaining the original coordinate maps. |
+| C4j | Extract their infinitesimal differential/logarithmic derivative and prove independence of representatives and compatibility with the original level transitions. |
+| C4k | Identify that differential with the already proved original integral tangent coefficient evaluation; establish the level/limit formula. |
+| P1a | Construct the period-valued map from those specific Tate vectors and the existing period rings, with the original rational-place field and Galois transport. |
+| P1b | Prove independence and coefficient/level compatibility of the period construction. |
+| P2–P6 | Integrality, original Galois equivariance, injectivity, surjectivity and filtration strictness, separately. |
+| W1–W3 | Coefficient-embedding decomposition, two-weight support and determinant rank-one calculation, followed by compatible-family realization. |
+
+The untracked `FAMILY_W53_DONE.md` records the checked commits and evidence.
+Recheck with the individual foreground builds, module-only lints and named
+axiom audit listed there. No period comparison or removal of the existing
+admission is claimed by these finite and Tate-level constructions.
+
+## W54: integral test characters, their differential, and actual root periods
+
+Every complete new module below is capped at 150 lines. No existing proof
+module is edited. C4i–C4k now have original-coordinate constructions and
+finite/limit evaluation formulas. A separate construction sends the original
+Cartier root sequences into the existing de Rham period ring. **The equality
+between the period's first-order term and the integral cotangent construction
+is still unproved.** Consequently the full P1 comparison and P2–P6 are not
+claimed, and `mem_isCompatible` retains its existing admission.
+
+| Leaf | Module | Proved output |
+|---|---|---|
+| C4i.1 | `CartierTestAlgebra` | Canonical dual tensors for arbitrary integral test algebras; multiplicative Cartier characters valued in actual units. |
+| C4i.2 | `CartierTestNaturality` | Basis-independent evaluation, original coordinate-map naturality and equality with the existing geometric character. |
+| C4i.3 | `CartierTestCoefficients` | Coefficient specialization and original transposed morphisms preserve characters. |
+| C4i.4 | `CartierTestBaseChange` | Original dual bases and Cartier evaluation commute with scalar extension. |
+| C4i.5 | `RaynaudGeometricIntegralPoints` | Every specified geometric point extends uniquely to the actual integral closure; no lifting hypothesis. |
+| C4i.6 | `RaynaudIntegralCartier` | Actual local dual points give integral test characters whose generic values equal the original finite pairing. |
+| C4j.1 | `CartierCotangentTensor` | Canonical original-coordinate representing element and actual augmentation-cotangent tensor; contraction differentiates evaluation. |
+| C4j.2 | `CartierSquareZeroDifferential` | Character minus one equals the linear logarithmic differential on every square-zero point; values lie in the actual reduction kernel. |
+| C4j.3 | `CartierDualElementNaturality` | Coordinate and coefficient transport of representing elements and cotangent tensors. |
+| C4j.4 | `FiniteFlatCartierDifferential` | The original model morphisms preserve the dlog tensors and tangent contractions. |
+| C4j.5 | `PDivisibleCartierDlogLimit` | Actual dual Tate vectors give coherent integral dlog tensors under the original cotangent restrictions, with coefficient compatibility. |
+| C4k.1 | `PDivisibleCartierDifferential` | Original W52 integral tangent coefficient contraction equals the actual differential; limit representatives exist and contraction is independent of them. |
+| C4k.2 | `PDivisibleCartierDlogPairing` | Instantiates that equality and the square-zero character formula on the specified actual dual Tate coordinates. |
+| P1 roots | `PDivisibleRationalCartierRoots` | Original rational-place roots become integral C_p roots, a compatible perfection sequence and a sharp-one element of the existing tilt. |
+| P1 logarithm | `ComplexSharpOneLog` | Any specified sharp-one tilt element has an actual convergent de Rham logarithm, finite truncations, first-order formula and Galois transport. |
+| P1 values | `PDivisibleRationalCartierPeriods` | Period values of pairs of original Tate vectors, finite-precision formulas, uniqueness and first-filtration membership. |
+| P3 values | `PDivisibleRationalCartierPeriodGalois` | Original local Galois equivariance through the fixed rational-place transport, from roots through tilt to actual period values. |
+
+The dlog output is a coherent sequence of **cotangent tensors**. Its
+contraction with integral tangents is proved; it is not asserted to be an
+integral tangent vector. Similarly, the period output is a value attached
+to two Tate vectors. Linearity in those vectors, a comparison isomorphism,
+and any identification of its kernel or image are not inferred from the
+existence of that value.
+
+### Remaining proof obligations, in order
+
+| Next capped leaf | Required artifact |
+|---|---|
+| P1c | Prove additivity and p-adic linearity of the actual Tate dlog/period constructions, including any completion needed in the integral cotangent target. |
+| P1d | Construct the period-to-cotangent first-order identification for these specific original Tate vectors; show the Teichmuller linear term contracts to the C4k integral pairing. This is the next comparison gap. |
+| P1e | Assemble the required one-vector comparison map from that identification, with coefficient and original level compatibility. |
+| P2 | Prove the lattice/integrality statement for that comparison. Integral roots and first-filtration membership of their logarithm do not establish this statement. |
+| P3 | Lift the proved equivariance of root period values to the actual comparison map. |
+| P4–P6 | Prove comparison injectivity, surjectivity and filtration strictness separately. |
+| W1–W3 | Coefficient-embedding decomposition, two-weight support and determinant rank-one calculation, then compatible-family realization. |
+
+The finite cotangents are p-power torsion. Scalar extension directly to a
+ring in which p is invertible therefore loses their tangent information.
+The integral inverse limit and its coefficient completion must precede
+rationalization; the root-period construction alone does not supply that
+comparison.
+
+Only an axiom-clean replacement permits the later delegation of the
+existing admission, whose module is outside this task's edit scope.
+Validation evidence and exact local commits are in the untracked
+`FAMILY_W54_DONE.md`, with reproducible per-module builds/lints and named
+axiom audits. No whole-library lint is used.
