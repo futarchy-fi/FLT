@@ -126,3 +126,20 @@ local trivializations of the tilde sheaf from
 `Module.Invertible.exists_finset_free_localization`, and compatibility
 with tensor and arbitrary affine pullback. These are proof obligations,
 not assumptions to put into a comparison structure.
+
+## Checked release (2026-10-04 22:42 UTC)
+
+At Lean source head `ff86441e`, the five retained modules total 452 physical
+lines (107, 61, 82, 92, 110; each below 240). Individual foreground builds
+and `lake exe runLinter MODULE` passed. The module-origin axiom audit
+checked 90 declarations (24, 14, 16, 14, 22 respectively), including
+generated declarations, with only `propext`, `Classical.choice`,
+`Quot.sound`. The identity-relative-group, arbitrary-base normalization
+and characteristic-two consumer checks compiled.
+
+After merge `3cd5323f` of fresh origin/main `0d2a816c`, the single foreground
+`LEAN_NUM_THREADS=2 lake build FLT` passed all 12504 jobs, including
+FermatsLastTheorem. Its guarded axiom check still includes
+`Mazur_statement` and `sorryAx`. P1–P6 are discharged (P2 reused from main);
+P7–P21 and the Mazur endpoint remain open. Reproduction commands and logs
+are indexed in the local untracked `BLOCKED.md`; no push was performed.
