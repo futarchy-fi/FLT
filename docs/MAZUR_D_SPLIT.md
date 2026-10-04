@@ -187,3 +187,36 @@ After commit `ba010248`, fetched origin/main (`baff6e10`) and ran
 FermatsLastTheorem, with no declaration clashes. Evidence:
 `Scratch/MazurDW2/root-build.log`. The guarded global axiom audit still contains
 Mazur_statement and sorryAx; these foundation leaves do not remove either.
+
+## D-W3: additive closure subdivision
+
+Before implementation, split A1-F1b.i into the following leaves (each cap 240
+physical lines). These proofs retain bad reduction and arbitrary valuation
+subrings; smoothness of individual reduced points is not good reduction.
+
+| Item | Module under `FLT/Mazur/` | Cap | Output |
+| --- | --- | ---: | --- |
+| A1-F1b.i.1 | EllipticReductionRelation | 240 | Relate actual affine points via projective reduction; zero, integral, negation and uniqueness APIs. |
+| A1-F1b.i.2 | EllipticReductionTranslation | 240 | Adding a nonintegral point to any integral affine point gives integral coordinates with the same residues; no elliptic special-fiber assumption. |
+| A1-F1b.i.3 | EllipticReductionAffineAddition | 240 | Compatible addition when integral smooth reductions are not opposite, using the two slope charts. |
+| A1-F1b.i.4 | EllipticReductionOpposite | 240 | Opposite smooth affine reductions sum to infinity; use integrality of the slope when the sum is integral to exclude that case. |
+| A1-F1b.i.5 | EllipticSmoothReductionAddition | 240 | Full compatibility and smooth-locus closure, including the sum of two infinity-fiber points. |
+| A1-F1b.ii | EllipticReductionKernel | 240 | E₀ subgroup, actual reduction homomorphism and E₁ kernel. |
+
+The two-infinity case can be reduced to translation: if their sum were integral,
+translation by its negative would contradict the known infinity reduction of the
+other point. Later arithmetic leaves still follow the original order.
+
+### D-W3 formal-series subdivision
+
+A1-F2 also requires multiple capped leaves. After constructing E₀/E₁:
+
+| Item | Module under `FLT/Mazur/` | Cap | Output |
+| --- | --- | ---: | --- |
+| A1-F2a | EllipticInfinityPowerSeries | 240 | Construct the integral solution s(T) of the infinity-chart equation, with s(T) = T³ times a unit of constant term one. |
+| A1-F2b | EllipticFormalGroupLaw | 240 | Construct the two-variable integral addition law and prove its identities from the actual Weierstrass law; split again before exceeding the cap. |
+| A1-F2c | EllipticFormalMultiplication | 240 | Multiplication series [n](T) with its linear coefficient and higher-order divisibility properties. |
+| A1-F2d | EllipticFormalEvaluation | 240 | Identify convergent evaluation on the complete local base with actual E₁ addition and multiplication. |
+
+F2a alone is not a multiplication law or the evaluation comparison. F3 requires
+F2c/d, including the residue-characteristic-primary multiplication estimates.

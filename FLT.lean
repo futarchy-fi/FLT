@@ -2545,8 +2545,14 @@ public import FLT.Mazur.DivisorTensorSequence
 public import FLT.Mazur.DivisorTwistedDegree
 public import FLT.Mazur.DivisorTwistedSequence
 public import FLT.Mazur.EllipticProjectiveReduction
+public import FLT.Mazur.EllipticReductionAffineAddition
 public import FLT.Mazur.EllipticReductionInfinityChart
+public import FLT.Mazur.EllipticReductionKernel
+public import FLT.Mazur.EllipticReductionOpposite
+public import FLT.Mazur.EllipticReductionRelation
+public import FLT.Mazur.EllipticReductionTranslation
 public import FLT.Mazur.EllipticSmoothReduction
+public import FLT.Mazur.EllipticSmoothReductionAddition
 public import FLT.Mazur.EtaleCoordinate
 public import FLT.Mazur.EtaleDimGe
 public import FLT.Mazur.EtaleDimLe
