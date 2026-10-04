@@ -2453,6 +2453,8 @@ public import FLT.Mazur.CartesianSectionRestriction
 public import FLT.Mazur.CartierAffineFppfDescent
 public import FLT.Mazur.CartierChartFlat
 public import FLT.Mazur.CartierCharts
+public import FLT.Mazur.CartierDivisorComponentRestriction
+public import FLT.Mazur.CartierDivisorMultiplicity
 public import FLT.Mazur.CartierFppfDescent
 public import FLT.Mazur.CartierIdealFinitePresentation
 public import FLT.Mazur.CartierIdealStalkDescent
@@ -2562,6 +2564,8 @@ public import FLT.Mazur.ConstantDegree
 public import FLT.Mazur.Contracts
 public import FLT.Mazur.CoproductConstantSections
 public import FLT.Mazur.CubicMobiusClearing
+public import FLT.Mazur.CurveDivisorLengthSupport
+public import FLT.Mazur.CurveEulerCharacteristic
 public import FLT.Mazur.CurveFiberHypotheses
 public import FLT.Mazur.CurveFinite
 public import FLT.Mazur.CurveGenus
@@ -2586,6 +2590,8 @@ public import FLT.Mazur.DisjointStructureCohomology
 public import FLT.Mazur.DivisorCanonicalComposition
 public import FLT.Mazur.DivisorCanonicalOperations
 public import FLT.Mazur.DivisorCanonicalSection
+public import FLT.Mazur.DivisorChartCokernel
+public import FLT.Mazur.DivisorCohomologicalDegree
 public import FLT.Mazur.DivisorInvertibleSheaf
 public import FLT.Mazur.DivisorLineBundle
 public import FLT.Mazur.DivisorLineBundlePower
@@ -2601,6 +2607,8 @@ public import FLT.Mazur.DivisorPowerCanonicalSection
 public import FLT.Mazur.DivisorPowerVeryAmple
 public import FLT.Mazur.DivisorRestrictCoherence
 public import FLT.Mazur.DivisorSectionComplement
+public import FLT.Mazur.DivisorSectionExact
+public import FLT.Mazur.DivisorStalkLength
 public import FLT.Mazur.EtaleCoordinate
 public import FLT.Mazur.EtaleDimGe
 public import FLT.Mazur.EtaleDimLe
@@ -2614,6 +2622,7 @@ public import FLT.Mazur.FiniteAffineCoverDimension
 public import FLT.Mazur.FiniteAffineCoverFiniteness
 public import FLT.Mazur.FiniteCechCyclesScalars
 public import FLT.Mazur.FiniteCechTermScalars
+public import FLT.Mazur.FiniteSchemeLength
 public import FLT.Mazur.FiniteSectionProjectivePresentation
 public import FLT.Mazur.FlasqueDirectImageAcyclic
 public import FLT.Mazur.FlatCartesianSectionGluing
