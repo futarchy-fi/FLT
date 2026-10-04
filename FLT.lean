@@ -659,6 +659,7 @@ public import FLT.GroupScheme.FiniteFlatSubquotientBaseChange
 public import FLT.GroupScheme.FiniteFlatTangentNaturality
 public import FLT.GroupScheme.FiniteFlatTowerClosure
 public import FLT.GroupScheme.FiniteFreeAdicComplete
+public import FLT.GroupScheme.FiniteHopfComponentCoordinatePresentation
 public import FLT.GroupScheme.FiniteHopfComponentFiniteFieldPresentation
 public import FLT.GroupScheme.FiniteHopfComponentRegularPresentation
 public import FLT.GroupScheme.FiniteHopfComponentTranslation
@@ -790,6 +791,8 @@ public import FLT.GroupScheme.LocalEisensteinPresentation
 public import FLT.GroupScheme.LocalEtalePoint
 public import FLT.GroupScheme.LocalFiniteFlatExtension
 public import FLT.GroupScheme.LocalHenselian
+public import FLT.GroupScheme.LocalHopfArbitraryCoordinates
+public import FLT.GroupScheme.LocalHopfCoordinateRegularPresentation
 public import FLT.GroupScheme.LocalHopfLocalizedPresentation
 public import FLT.GroupScheme.LocalHopfPresentation
 public import FLT.GroupScheme.LocalHopfRationalRegularPresentation
@@ -892,6 +895,7 @@ public import FLT.GroupScheme.QuadraticTwistMonoidal
 public import FLT.GroupScheme.QuadraticTwistPoints
 public import FLT.GroupScheme.QuadraticTwistTensor
 public import FLT.GroupScheme.QuotientFiberFreeness
+public import FLT.GroupScheme.RationalCoordinateRegularPresentation
 public import FLT.GroupScheme.RationalCubeValuations
 public import FLT.GroupScheme.RationalIntegralExactness
 public import FLT.GroupScheme.RationalIntegralKernel
@@ -1759,6 +1763,7 @@ public import FLT.Mathlib.RingTheory.DiscreteValuationRing.UnramifiedSubalgebra
 public import FLT.Mathlib.RingTheory.Discriminant
 public import FLT.Mathlib.RingTheory.FaithfullyFlatPresentationDescent
 public import FLT.Mathlib.RingTheory.FiniteTorsionModule
+public import FLT.Mathlib.RingTheory.FlatIdealBaseChange
 public import FLT.Mathlib.RingTheory.FrobeniusAugmentation
 public import FLT.Mathlib.RingTheory.FrobeniusImage
 public import FLT.Mathlib.RingTheory.GeneratorsDifferentialRelations
@@ -1767,7 +1772,10 @@ public import FLT.Mathlib.RingTheory.IdealMultiplicityMap
 public import FLT.Mathlib.RingTheory.LocalFrobeniusInduction
 public import FLT.Mathlib.RingTheory.LocalRing.AlgebraicTensor
 public import FLT.Mathlib.RingTheory.LocalRing.Defs
+public import FLT.Mathlib.RingTheory.LocalRing.GeneratorDescent
+public import FLT.Mathlib.RingTheory.LocalRing.IdealGeneratorDescent
 public import FLT.Mathlib.RingTheory.LocalRing.MaximalIdeal.Basic
+public import FLT.Mathlib.RingTheory.LocalRing.ResidueGenerators
 public import FLT.Mathlib.RingTheory.Localization.BaseChange
 public import FLT.Mathlib.RingTheory.Localization.PrincipalIdealComparison
 public import FLT.Mathlib.RingTheory.Localization.QuotientAwayPresentation
@@ -1778,12 +1786,16 @@ public import FLT.Mathlib.RingTheory.MvPolynomial.FiniteFieldDescent
 public import FLT.Mathlib.RingTheory.MvPolynomial.FiniteFieldPresentationDescent
 public import FLT.Mathlib.RingTheory.MvPolynomial.FrobeniusGenerators
 public import FLT.Mathlib.RingTheory.MvPolynomial.FrobeniusRelationDescent
+public import FLT.Mathlib.RingTheory.MvPolynomial.GraphIdeal
+public import FLT.Mathlib.RingTheory.MvPolynomial.GraphRegularSequence
 public import FLT.Mathlib.RingTheory.MvPolynomial.HeightOneIdeal
 public import FLT.Mathlib.RingTheory.MvPolynomial.LocalizedFiniteFieldDescent
 public import FLT.Mathlib.RingTheory.MvPolynomial.LocalizedQuotientDescent
 public import FLT.Mathlib.RingTheory.MvPolynomial.LocalizedReduction
 public import FLT.Mathlib.RingTheory.MvPolynomial.NilpotentPresentation
 public import FLT.Mathlib.RingTheory.MvPolynomial.OriginLocalizationMap
+public import FLT.Mathlib.RingTheory.MvPolynomial.OriginPresentationBaseChange
+public import FLT.Mathlib.RingTheory.MvPolynomial.OriginRegularDescent
 public import FLT.Mathlib.RingTheory.MvPolynomial.OriginResidue
 public import FLT.Mathlib.RingTheory.MvPolynomial.OriginTensorEquiv
 public import FLT.Mathlib.RingTheory.MvPolynomial.OriginTensorMaps
