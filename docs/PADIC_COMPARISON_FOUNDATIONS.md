@@ -3274,3 +3274,12 @@ and the completed group with the induced inverse-limit uniformity. Prove
 closedness, completeness, Hausdorff separation, continuity of the group law,
 and continuity of the original projections. This is the adic topology; it
 does not assert analytic coordinates or a logarithm.
+
+W68 refinement before A1f–A1h (each cap 150):
+`PDivisiblePointColimitTorsion` proves that the actual level-n points are
+killed by p^n, hence each point colimit is p-primary torsion.
+`RationalPlacePointCompletionEmbedding` proves that O_C separation makes
+the original point completion injective, and retains those torsion points.
+`RationalPlaceCompletedPointContraction` proves p-power iterates of every
+completed point tend to the identity in the adic topology. Contraction is
+a prerequisite for extending a local logarithm; it does not construct one.
