@@ -385,6 +385,7 @@ public import FLT.GaloisRepresentation.Extensions.OrdinaryFramedRepresentation
 public import FLT.GaloisRepresentation.Extensions.OrdinaryGaloisClass
 public import FLT.GaloisRepresentation.Extensions.OrdinaryHomCoordinates
 public import FLT.GaloisRepresentation.Extensions.OrdinaryInertiaExponent
+public import FLT.GaloisRepresentation.Extensions.OrdinaryRootClass
 public import FLT.GaloisRepresentation.Extensions.OrdinaryTwist
 public import FLT.GaloisRepresentation.Extensions.PeuCohomologyComparison
 public import FLT.GaloisRepresentation.Extensions.PeuRamifiedClass
@@ -623,6 +624,8 @@ public import FLT.GroupScheme.ConstantCoordinates
 public import FLT.GroupScheme.ConstantCyclicOneFiber
 public import FLT.GroupScheme.ConstantFiltrationPurity
 public import FLT.GroupScheme.ConstantFiniteFlat
+public import FLT.GroupScheme.ConstantGroupModel
+public import FLT.GroupScheme.ConstantGroupPoints
 public import FLT.GroupScheme.ConstantModelIdentification
 public import FLT.GroupScheme.ConstantMuThreeCocycleSplitting
 public import FLT.GroupScheme.ConstantMuThreeGlobalSplitting
@@ -825,6 +828,7 @@ public import FLT.GroupScheme.LiftedQuotientReduction
 public import FLT.GroupScheme.LinearKummerClass
 public import FLT.GroupScheme.LocalBialgebraDerivations
 public import FLT.GroupScheme.LocalCoefficientConjugacy
+public import FLT.GroupScheme.LocalConstantIdentification
 public import FLT.GroupScheme.LocalDifferentBounds
 public import FLT.GroupScheme.LocalDifferentConjugates
 public import FLT.GroupScheme.LocalDifferentEquiv
@@ -845,7 +849,9 @@ public import FLT.GroupScheme.LocalInertiaCriticalExponent
 public import FLT.GroupScheme.LocalInertiaMaximum
 public import FLT.GroupScheme.LocalInertiaPolynomial
 public import FLT.GroupScheme.LocalIntegralPowerBasis
+public import FLT.GroupScheme.LocalIntegralScalars
 public import FLT.GroupScheme.LocalInvertibleSubmodule
+public import FLT.GroupScheme.LocalModelIdentification
 public import FLT.GroupScheme.LocalPerturbedWitness
 public import FLT.GroupScheme.LocalPointField
 public import FLT.GroupScheme.LocalPointFieldPoints
@@ -861,6 +867,9 @@ public import FLT.GroupScheme.OrderThreeModelIdentification
 public import FLT.GroupScheme.OrdinaryFiltrationModels
 public import FLT.GroupScheme.OrdinaryIntegralFiberCocycle
 public import FLT.GroupScheme.OrdinaryIntegralQuotientPoint
+public import FLT.GroupScheme.OrdinaryIntegralRootDifference
+public import FLT.GroupScheme.OrdinaryLocalConstantQuotient
+public import FLT.GroupScheme.OrdinaryLocalScalars
 public import FLT.GroupScheme.OrdinaryModelFiberPoints
 public import FLT.GroupScheme.OrdinaryNormalizedDifference
 public import FLT.GroupScheme.PDivisibleColimitLifting
