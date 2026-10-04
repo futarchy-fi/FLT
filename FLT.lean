@@ -1060,6 +1060,15 @@ public import FLT.GroupScheme.PDivisibleCartierTatePairing
 public import FLT.GroupScheme.PDivisibleCartierTransitions
 public import FLT.GroupScheme.PDivisibleColimitLifting
 public import FLT.GroupScheme.PDivisibleCompletedDlogCoefficients
+public import FLT.GroupScheme.PDivisibleContinuousCoordinatePoints
+public import FLT.GroupScheme.PDivisibleCoordinateClosedCotangent
+public import FLT.GroupScheme.PDivisibleCoordinateCotangent
+public import FLT.GroupScheme.PDivisibleCoordinateFormalSmoothness
+public import FLT.GroupScheme.PDivisibleCoordinateLimit
+public import FLT.GroupScheme.PDivisibleCoordinateParameters
+public import FLT.GroupScheme.PDivisibleCoordinatePoints
+public import FLT.GroupScheme.PDivisibleCoordinateQuotient
+public import FLT.GroupScheme.PDivisibleCoordinateTopology
 public import FLT.GroupScheme.PDivisibleCorrectedLocalPoint
 public import FLT.GroupScheme.PDivisibleCotangentArithmetic
 public import FLT.GroupScheme.PDivisibleCotangentComplete
@@ -1073,6 +1082,7 @@ public import FLT.GroupScheme.PDivisibleCotangentLimit
 public import FLT.GroupScheme.PDivisibleCotangentLimitFinite
 public import FLT.GroupScheme.PDivisibleCotangentLimitReduction
 public import FLT.GroupScheme.PDivisibleCotangentPrimeInjective
+public import FLT.GroupScheme.PDivisibleCotangentRepresentativeLift
 public import FLT.GroupScheme.PDivisibleCotangentSurjective
 public import FLT.GroupScheme.PDivisibleCotangentTensorCompletion
 public import FLT.GroupScheme.PDivisibleCotangentTensorReduction

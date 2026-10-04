@@ -3328,3 +3328,42 @@ Checked at 2026-10-04T21:40:48.213844+00:00.
 Evidence: `W69_VALIDATION.json`, `W69_AXIOMS.log`; read-only recheck:
 `python3 W69_FINAL_CHECKS.py`. The analytic chart, logarithm, Cartier
 comparison, Lie dimension sum and downstream family obligations remain open.
+
+## W70: original coordinate algebra and compatible cotangent representatives
+
+The original coordinate inverse limit is now constructed, with its complete
+separated level topology. Continuous maps from it to discrete test algebras
+are naturally equivalent to the original point colimit. This is a proved
+prorepresentation; it is not yet a power-series presentation.
+
+| Leaf | New module in `FLT.GroupScheme` | Cap |
+|---|---|---:|
+| A1m | `PDivisibleCoordinateLimit`: original algebra and universal property | 150 |
+| A1n | `PDivisibleCoordinateQuotient`: surjective evaluations and original finite quotients | 150 |
+| A1o | `PDivisibleCoordinatePoints`: natural representation by maps killing a level ideal | 150 |
+| A1p | `PDivisibleCoordinateTopology`: complete separated topology and evaluation fiber basis | 150 |
+| A1q | `PDivisibleContinuousCoordinatePoints`: continuous prorepresentation | 150 |
+| A1r | `PDivisibleCoordinateFormalSmoothness`: continuous lifting over p-nilpotent test rings | 150 |
+| A1s | `PDivisibleCotangentRepresentativeLift`: finite representatives with prescribed cotangent | 150 |
+| A1t | `PDivisibleCoordinateCotangent`: actual augmentation and original derivative | 150 |
+| A1u | `PDivisibleCoordinateParameters`: compatible representatives of every cotangent vector | 150 |
+| A1v | `PDivisibleCoordinateClosedCotangent`: derivative kernel is the closed augmentation square | 150 |
+
+The cotangent quotient uses the closure of the square, not an unproved
+identification with the algebraic square. A1u lifts a chosen family of
+cotangent vectors to actual compatible functions. It does not assert these
+functions generate the algebra, or give an analytic coordinate system.
+A1r proves lifting only for discrete p-nilpotent test algebras; it does not
+assert unrestricted algebraic formal smoothness.
+
+Next: for the original connected system, construct the power-series
+presentation and prove the required parameter/coefficient topology
+comparison. The level topology here gives every finite coordinate ring the
+discrete topology. No equality with a parameter-adic or coefficient-adic
+topology has been proved. Then prove nonlinear estimates, logarithm and
+inverse, analytic Cartier derivative, independent Lie dimension sum and
+HT2, followed by HT3, DR1/P2–P6 and W1–W3. The family admission remains.
+
+Validation evidence and checked-at timestamps are in `W70_VALIDATION.json`,
+`W70_AXIOMS.log` and `W70_ROOT_BUILD_RESULT.json`; read-only recheck:
+`python3 W70_FINAL_CHECKS.py`. Notes remain outside the library and untracked.
