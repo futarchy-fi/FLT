@@ -4,6 +4,113 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
+## W41 proved scope — character evaluation and the independent unit annihilator
+
+W41 proves arbitrary finite-character carry evaluation, the root-ratio-first
+Kummer–Artin minus sign, and both directions of the independent prime and
+residual-field unit annihilator. The result uses the existing predicates
+`IsPeuRamifiedClass`, `primeUnitSubspace`, `IsExtendedUnitClass`, and
+`OrdinaryUnitClass`; none was defined to make the comparison automatic.
+
+`characterFixedField` constructs the finite cyclic kernel field and proves
+faithfulness of the descended character. `characterArtinValue_carry` evaluates
+the carry on its actual positive finite Artin map, with canonical integers.
+`characterCarry_artin_tower_evaluation` transports the result to arbitrary
+finite Galois overfields, without cyclicity of the larger field.
+`finiteStage_character_evaluation` starts with a character on a caller-selected
+finite Galois stage, proves containment of the kernel field, and evaluates
+that stage's existing Artin map. No evaluation or comparison isomorphism is
+an input.
+
+`rootCoefficientH2_injective` proves that inclusion into field-unit
+coefficients reflects zero on actual continuous H²: Hilbert 90 and a root
+correct the bounding cochain into root coefficients. `rootLocalInvariant`
+then constructs an injective invariant on root-coefficient H².
+`rootLocalInvariant_kummer` gives the negative positive-Artin value.
+`continuousKummerCup_zero_iff_artin` connects zero detection to the existing
+homogeneous continuous-cohomology cup.
+
+For E1d1, the unramified Frobenius degree character detects integer order
+modulo the root prime. Dividing by a power of a uniformizer proves precisely
+the independent unit-representative criterion. Continuous character descent
+identifies the unramified-quotient tests with the original inertia-annihilator
+predicate. For E1d2, finite coefficient coordinates transport every unramified
+dual character and actual continuous boundary in both directions. Thus the
+extended annihilator is the span of the prime annihilator, identified with
+`extendedUnitSubspace`. This is pairing compatibility, beyond a vector-space
+comparison alone.
+
+`localPeuRamified_iff_primeUnitSubspace` and
+`localPeuRamified_iff_extendedUnitClass` use the existing valuation inertia at
+number-field completions with complete integers. The rational-place theorems
+discharge completeness internally. `localOrdinaryPeuRamified_iff_unit` uses
+the constructed actual Hom coordinates and concludes the existing
+`OrdinaryUnitClass` criterion. This closes the ordinary class-level E1
+arithmetic contract, including E1d1/d2; it does not construct a global lift.
+A standalone inverse-limit reciprocity API is not asserted by these theorems.
+
+Checked at 2026-10-04T02:55:26Z, integrated proof head `d6d49047` after
+merging `origin/main` at `cceaae2a`. All 39 modules (3,021 lines,
+maximum 128/200) and all 132 named declarations passed foreground module builds,
+individual module linters, and axiom audits. Only `propext`, `Classical.choice`,
+and `Quot.sound` occur. Proof commits: `cb016c1b`, `6cbfd5df`.
+
+Read-only evidence check: `python3 Scratch/LiftsW41/check.py` checks source
+hashes, saved successful build/lint/axiom results, declaration coverage,
+permitted proof edits, sorted imports, line caps, the post-merge build-input
+snapshot and downstream-audit source hashes. It checks saved Lean results;
+it does not rerun Lean. The required post-merge `LEAN_NUM_THREADS=2 lake build FLT`
+ran once and passed without name clashes. The endpoint build and final audit
+passed. The lifting endpoints still depend on `sorryAx`, and
+`PNat.pow_add_pow_ne_pow` additionally retains `Mazur_statement`.
+
+### Subsequent lifting gates: checked source contracts, no dispatch
+
+The historical tables below retain their original snapshots. This section
+supersedes their claims that the E1 arithmetic comparison is absent.
+The exact global endpoint remains `GaloisRepresentation.IsHardlyRamified.lifts`,
+with arbitrary finite residual field and every odd prime, and is unchanged.
+
+The re-audit finds a proved positive input beyond the old order-three audit:
+`ThreeAdicPlan.FF.primeInertia_tame_spectrum` works at rational places for
+p > 3, prime-field rank two, and the actual cyclotomic determinant. It proves
+a characteristic-polynomial factorization at one inertia element, eigenvalue
+ratio order p−1 or p+1, and nonzero trace. It does not identify the ordinary
+extension class as a unit class or implement a Serre-weight recipe. The
+order-three `model_presentation` remains a distinct theorem over ℤ₃.
+Searches find no `serreWeight`, `IsPeuRamifiee`, or
+`ordinary_extension_unit_iff` declaration. The continuous class-level names
+above are the implemented E1 API; the old representation-level names are
+still sketches. Broad finite-flat/unit searches only find the pre-existing
+order-three Kummer example and the zero model, not R1's theorem.
+
+The next work is split into the following reviewable contracts. These are
+proposed work, not implemented declarations or ready arithmetic adapters.
+Proof modules remain capped at 200 lines and must split further if needed.
+
+| Leaf | Concrete artifact or theorem contract | Existing input and remaining condition |
+|---|---|---|
+| E1r1 / ordinary representation extraction | Construct the continuous Hom-valued class from an actual two-line filtration; prove its class is unchanged by changing the splitting. | Reuse `liftCocycle`, `continuous_liftCocycle`, `ContinuousClass`, `ordinaryHomCoordinates`; construct the injection and quotient-line normalization from the filtration. No supplied extension-class comparison. |
+| E1r2 / representation unit criterion | Apply `localOrdinaryPeuRamified_iff_unit` to E1r1's class, with basis/twist independence from `OrdinaryTwist`. | E1r1; retain the actual cyclotomic Hom-character equality. Define the representation predicate via the independent cup test, never via units or finite flatness. |
+| S0a / full recipe specification | Source-matched branch table for the independent two-dimensional Serre recipe, including scalar/exceptional, ordinary peu/tres and niveau-two cases; identify each needed representation invariant. | E1 supplies only the ordinary cup test. No Serre-weight definition exists; specification/review must precede S0 implementation and S1 evaluation. Not dispatched. |
+| R1a / integral ordinary extension extraction | From an actual finite-flat ordinary model, construct the rank-one submodel and quotient with their actual generic-point characters and coefficient actions. | Existing finite-flat subobject/quotient and character-factor APIs; the required multiplicative/étale identifications and arbitrary-residual-field transport still need proof. |
+| R1b / integral extension parameter | Prove that the Kummer class of R1a's actual generic extension has an integral-unit representative, using an independently constructed integral extension parameter. | Missing arithmetic theorem; E1 is only the final unit-to-peu adapter. No unit witness may be added as a model field or a premise. Foundation requires its own source match and split. |
+| R2a / full inertia classification audit | Separate existing prime-field rank-two characteristic-polynomial statements from full representation isomorphisms, all finite residual fields, and p=3. Record precise missing transport and classification statements. | `FF.primeInertia_tame_spectrum`, `original_reducible_charpoly`, fundamental-character APIs. No arbitrary-prime Raynaud classification dispatch or completeness claim. |
+| C1a / cyclotomic restriction route check | Determine whether the available nonzero-trace inertia element and Clifford theory can supply the needed restriction irreducibility in the exact endpoint context; otherwise retain the source-matched KW route. | Residual absolute irreducibility and the prime-field spectrum are narrower than arbitrary-k `lifts`. This is a research contract, not an assumed C1 theorem. |
+
+S1/S2/S3, R1/R2, C1 and deformation gates remain blocked on their stated
+missing inputs. In particular unrestricted representability does not prove
+local conditions, global dimension, finiteness, or integral crystalline
+models. `isCorepresentable_narrowSLiftFunctor` still contains an admission.
+No Serre-weight evaluation, arbitrary-prime Raynaud classification, global
+lifting theorem, or endpoint rewiring was implemented or dispatched.
+
+Downstream source audit checked at 2026-10-04T02:49:31.164024+00:00, at `d6d49047`:
+`python3 Scratch/LiftsW41/audit-next.py` reruns the recorded read-only searches
+and saves their exact commands, results and source hashes in
+`Scratch/LiftsW41/next-gates-audit.json`. These are source-contract findings,
+not a fresh axiom audit of the older Raynaud/deformation declarations.
+
 ## W40 proved scope — finite normalization and the Kummer boundary sign
 
 W40 identifies the actual finite uniformizer carry with
