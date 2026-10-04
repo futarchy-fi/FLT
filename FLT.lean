@@ -34,6 +34,7 @@ public import FLT.AbsoluteGaloisGroup.CompletionComparison
 public import FLT.AbsoluteGaloisGroup.CyclotomicCharacterNaturality
 public import FLT.AbsoluteGaloisGroup.FiniteCharacterInertia
 public import FLT.AbsoluteGaloisGroup.FiniteTameQuotient
+public import FLT.AbsoluteGaloisGroup.FiniteTameRootExponent
 public import FLT.AbsoluteGaloisGroup.FiniteUniformizerRootCharacter
 public import FLT.AbsoluteGaloisGroup.FirstRamificationFiltration
 public import FLT.AbsoluteGaloisGroup.FirstRamificationPGroup
@@ -56,6 +57,8 @@ public import FLT.AbsoluteGaloisGroup.LocalCyclotomicTame
 public import FLT.AbsoluteGaloisGroup.NiveauTwoInertiaGenerator
 public import FLT.AbsoluteGaloisGroup.OpenNormalFixedField
 public import FLT.AbsoluteGaloisGroup.RationalPrimeUniformizer
+public import FLT.AbsoluteGaloisGroup.RationalTameCommonLevel
+public import FLT.AbsoluteGaloisGroup.RationalTameRootModel
 public import FLT.AbsoluteGaloisGroup.RootCharacter
 public import FLT.AbsoluteGaloisGroup.RootCharacterCyclotomicNorm
 public import FLT.AbsoluteGaloisGroup.RootCharacterGenerator
@@ -64,10 +67,15 @@ public import FLT.AbsoluteGaloisGroup.RootCharacterResidue
 public import FLT.AbsoluteGaloisGroup.RootCharacterTopology
 public import FLT.AbsoluteGaloisGroup.RootCharacterUniformizer
 public import FLT.AbsoluteGaloisGroup.RootInertiaTransitivity
+public import FLT.AbsoluteGaloisGroup.RootUniformizerDegree
 public import FLT.AbsoluteGaloisGroup.RootUniformizerModel
 public import FLT.AbsoluteGaloisGroup.TameCharacter
 public import FLT.AbsoluteGaloisGroup.TameCharacterSurjective
+public import FLT.AbsoluteGaloisGroup.TameRootField
+public import FLT.AbsoluteGaloisGroup.TameRootIntegers
 public import FLT.AbsoluteGaloisGroup.TameRootIntegralModel
+public import FLT.AbsoluteGaloisGroup.TameRootsOfUnity
+public import FLT.AbsoluteGaloisGroup.UniformizerCharacterPowers
 public import FLT.AbsoluteGaloisGroup.Unramified
 public import FLT.AbsoluteGaloisGroup.UnramifiedCharacterIntegers
 public import FLT.AbsoluteGaloisGroup.UnramifiedCharacterSplitting
