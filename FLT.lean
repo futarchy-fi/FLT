@@ -2300,6 +2300,7 @@ public import FLT.Mazur.PolygonCubicGlobalGeneration
 public import FLT.Mazur.PolygonCubicInterpolation
 public import FLT.Mazur.PolygonCubicNonvanishing
 public import FLT.Mazur.PolygonCubicOOnePullback
+public import FLT.Mazur.PolygonCubicPointSeparation
 public import FLT.Mazur.PolygonCubicProjectiveCharts
 public import FLT.Mazur.PolygonCubicProjectiveMorphism
 public import FLT.Mazur.PolygonCubicProjectiveOver
@@ -2310,9 +2311,11 @@ public import FLT.Mazur.PolygonCubicTorusGenerator
 public import FLT.Mazur.PolygonCubicTorusImages
 public import FLT.Mazur.PolygonCubicTorusImmersion
 public import FLT.Mazur.PolygonCubicTorusNumerators
+public import FLT.Mazur.PolygonCubicTorusPointSeparation
 public import FLT.Mazur.PolygonCubicTorusPullback
 public import FLT.Mazur.PolygonCubicTorusRatios
 public import FLT.Mazur.PolygonCubicTorusSurjectivity
+public import FLT.Mazur.PolygonCubicVeryAmple
 public import FLT.Mazur.PolygonCyclicAtlas
 public import FLT.Mazur.PolygonCyclicCocone
 public import FLT.Mazur.PolygonCyclicDescent
@@ -2380,6 +2383,7 @@ public import FLT.Mazur.PolygonOneGonDenominator
 public import FLT.Mazur.PolygonOneGonGeneratorIdentities
 public import FLT.Mazur.PolygonOneGonInterpolationEquations
 public import FLT.Mazur.PolygonOneGonLocalizedImages
+public import FLT.Mazur.PolygonOneGonNodePointSeparation
 public import FLT.Mazur.PolygonOneGonPolynomialEquations
 public import FLT.Mazur.PolygonOneGonPuncturedPullback
 public import FLT.Mazur.PolygonOneGonRefinementCover
@@ -2408,7 +2412,9 @@ public import FLT.Mazur.PolygonSplitInterpolationEquations
 public import FLT.Mazur.PolygonSplitLaurentNumerators
 public import FLT.Mazur.PolygonSplitLocalizedImages
 public import FLT.Mazur.PolygonSplitNodeCompletion
+public import FLT.Mazur.PolygonSplitNodeCoordinateValues
 public import FLT.Mazur.PolygonSplitNodeDenominator
+public import FLT.Mazur.PolygonSplitNodePointSeparation
 public import FLT.Mazur.PolygonSplitPuncturedPullback
 public import FLT.Mazur.PolygonSplitRefinementCover
 public import FLT.Mazur.PolygonSplitRefinementValue
@@ -2434,6 +2440,7 @@ public import FLT.Mazur.ProjectiveChartDenominators
 public import FLT.Mazur.ProjectiveChartEvaluation
 public import FLT.Mazur.ProjectiveChartMapCompatibility
 public import FLT.Mazur.ProjectiveChartNoetherian
+public import FLT.Mazur.ProjectiveChartPointMembership
 public import FLT.Mazur.ProjectiveChartPolynomialEquiv
 public import FLT.Mazur.ProjectiveChartSectionPullback
 public import FLT.Mazur.ProjectiveCoherentCharts
