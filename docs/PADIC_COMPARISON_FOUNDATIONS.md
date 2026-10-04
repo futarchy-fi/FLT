@@ -1870,3 +1870,17 @@ W43's C11 implementation is subdivided into `ReductionGeometricFibre`
 representative formula). F1 supplies unique factorization of reduced-valued
 points through a nilpotent surjection. C1–C2 concern a fixed base; C10a–b
 are explicitly still required for the varying-base source argument.
+
+### W44: dimension and depth foundations first
+
+F8 is split into the following new-module leaves (150 lines each):
+`MvPolynomial.VariableRegularSequence` proves regularity of distinct variables
+by the monomial-ideal membership criterion; `MvPolynomial.TranslatedVariables`
+transfers this to variable differences at any rational point;
+`PolynomialLocalDimension` localizes these sequences and computes dimension
+from their length and the polynomial dimension upper bound.
+For F9c, use `KrullDimension.Regular` for dimension and `Depth.Rees` for
+regular-sequence existence; the deprecated `Regular.Depth` file supplies
+neither a depth definition nor a Cohen–Macaulay theorem. The depth/associated
+prime comparison in F9a and the parameter theorem in F9d remain proof
+obligations, not consequences of the `IsRegularLocalRing` typeclass.
