@@ -657,3 +657,49 @@ of the chosen reconstruction isomorphisms. P10–P21 (relative Picard comparison
 cohomology/base change, representability, and the actual modular-curve/Jacobian
 producer) remain separate obligations. These results do not remove
 `Mazur_statement` from the endpoint.
+
+## W17: affine refinement reconstruction and recognition
+
+The following modules develop the first remaining W16 item. Each can be checked
+with `LEAN_NUM_THREADS=2 lake build FLT.Mazur.MODULE` followed by
+`LEAN_NUM_THREADS=2 lake exe runLinter FLT.Mazur.MODULE`, one module at a time.
+Declaration-level axiom receipts and checked-at validation are in the untracked
+`G2_W17_*_AXIOMS.log` and `MAZUR_G2_W17_DONE.md` handoff.
+
+| Module (`FLT.Mazur.` prefix) | Proved interface |
+| --- | --- |
+| AffineRefinementPullback | Natural comparison of iterated pullbacks around a commutative affine square; transport of reconstruction and its map square |
+| AffineQuasicoherentPullbackFaithful | Faithfully flat pullback detects maps between arbitrary affine quasi-coherent sheaves and verifies proposed inverses |
+| AffineDescentRefinementReconstruction | Restrict a descended sheaf and its reconstruction; restricted descended maps satisfy the refined square and are uniquely determined by it |
+| AffineGeometricDescentComposition | Actual overlap compatibility is closed under identities and composition; descended maps and isomorphisms preserve composition |
+| AffineCoalgebraDescentRecognition | A canonical-coalgebra isomorphism identifies a candidate module with the descended module, uniquely with its specified coefficient reconstruction; the same square holds on tilde sheaves |
+| AffinePullbackCoefficientRecognition | Lifting the scalar-extension coefficient chart recovers the given geometric reconstruction exactly |
+| AffineGeometricDescentRecognition | An explicit coaction equation on a candidate's coefficient chart constructs its isomorphism to the descended sheaf, with exact reconstruction and uniqueness |
+| AffineDescentRefinementComparison | Conditional comparison between restriction and separately descended refined data; comparison is natural for compatible maps |
+| SchemeOverlapRefinement | Restrict actual categorical overlap isomorphisms along a commutative refinement square; preserve compatible maps and prove the defining conjugation square |
+| AffineGeometricOverlapRefinement | Normalize that restricted categorical overlap on the refined tensor-spectrum chart, with exact recovery of the categorical overlap |
+| SchemeOverlapRefinementCoherence | Maps of double overlaps preserve the diagonal, identity refinements, and composition as actual scheme-morphism equalities |
+
+The comparison hypothesis `AffineGeometricDescentRecognition.CoactionCompatible`
+is the equation intertwining the canonical scalar-extension coaction with the
+specified datum through the reconstruction's coefficient chart. It is not yet
+proved for the constructed refined overlap. In particular, the conditional
+comparison does not finish affine-refinement descent or scheme-level P9e.
+The last row concerns maps of schemes; it does not assert preservation of the
+sheaf overlap's diagonal or cocycle laws.
+
+Continue in this order:
+
+1. Prove that `AffineGeometricOverlapRefinement.overlap` preserves the geometric
+   diagonal and cocycle equations, and bundle it as the refined `Data`. The
+   scheme maps and projection comparisons are in `SchemeOverlapRefinement`;
+   its companion coherence module supplies the diagonal and composition maps.
+2. Prove `CoactionCompatible` for `AffineDescentRefinement.reconstruction` and
+   this constructed datum. Apply `comparisonIso` and its reconstruction equation;
+   prove identity and composite coherence of the comparison isomorphisms by
+   faithful-flat uniqueness, including the pullback composition comparisons.
+3. Glue the objects and maps across affine covers to finish scheme-level P9e.
+4. Supply the geometric locally-free-rank-one to coefficient-invertibility
+   bridge before invoking affine line-bundle descent on geometric inputs.
+5. Continue P10–P21 as already ordered above. None of these modules removes
+   `Mazur_statement` or constructs the actual modular curve/Jacobian producer.
