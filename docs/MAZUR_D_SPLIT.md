@@ -1,6 +1,6 @@
 # Mazur track D: extension and local arithmetic
 
-## D-W9: elliptic component quotient via minimal equations
+## D-W10: elliptic component quotient via minimal equations
 
 This replaces the general Néron-model prerequisite in the older C1 rows below.
 For an elliptic curve over a complete DVR with perfect residue field, use a
@@ -24,8 +24,18 @@ Consumer labels describe dependencies, not completed downstream theorems.
 | C1.3 | `EllipticSingularDivisibility` / 240 | For integral coordinates x,y in an ideal I, a₃,a₄ in I and the curve equation imply a₆ in I². This is the point-exclusion calculation in the type II branch. | Additive bound A1-C1 via C1.6; S1 and C2/C3. |
 | C1.4a.i | `EllipticNormalizedSingularity` / 240 | For a₃=a₄=a₆=0 over a field, prove the origin is the unique singular affine point, also in characteristics 2 and 3. Identify the coefficients after translating a supplied singular point. | Every bad-reduction branch of A1-C1; S1/S2, C2/C3/Cp. |
 | C1.4a.ii | `EllipticNormalizedTypeII` / 240 | Combine C1.3 and C1.4a.i: a₃,a₄,a₆ in the maximal ideal and a₆ outside its square imply E₀=E and trivial quotient. This is the normalized type II calculation, before proving general normal-form existence. | C1.6a and additive A1-C1; S1, C2/C3. |
-| C1.4a.iii | `EllipticSingularNormalForm` / 240 | Prove a bad special cubic over a perfect residue field has a rational singular point; lift its coordinates and translate integrally to (0,0). Identify the tangent cone and prove the further normalizations used by the Tate branches. | Every bad-reduction branch of A1-C1; S1/S2, C2/C3/Cp. |
-| C1.4b | `EllipticComponentVariableChange` / 240 | Integral unit variable changes induce point-group equivalences preserving E₀ and hence the quotient. | Transport all branch calculations to A1-C1; S1/S2, C2/C3/Cp. |
+| C1.4a.iii.1 | `EllipticSingularVariableChange` / 240 | Transport singular affine points through arbitrary admissible variable changes. | Normal-form existence for all branches. |
+| C1.4a.iii.2 | `EllipticSingularSmallChar` / 240 | Rational singular-point existence over perfect fields in characteristics 2 and 3, using the standard normal forms. | C1.4a.iii.3. |
+| C1.4a.iii.3 | `EllipticRationalSingularity` / 240 | Prove Δ=0 iff a rational singular affine point exists over a perfect field, including the explicit short-equation formula away from 2 and 3. | C1.4a.iii.4. |
+| C1.4a.iii.4 | `EllipticIntegralSingularTranslation` / 240 | Lift the singular residue coordinates and translate integrally with u=1; a₃,a₄,a₆ enter the maximal ideal, while Δ and c₄ are unchanged. | All bad-reduction branches. |
+| C1.4a.iii.5 | `EllipticCuspTangent` / 240 | Identify the tangent cone, prove its repeated direction rational over a perfect field, and shear a normalized cusp to y²=x³. | C1.4a.iii.6. |
+| C1.4a.iii.6 | `EllipticIntegralCuspNormalization` / 240 | Δ,c₄ in the maximal ideal imply an integral u=1 change putting all five coefficients in that ideal. | Initial additive normalization; higher valuation tests remain in C1.6. |
+| C1.4a.iii.7 | `EllipticNodeTangent` / 240 | Identify the node polynomial with the scaled tangent quadratic; splitting and c₄≠0 yield a shear with a₁≠0 and a₂=a₃=a₄=a₆=0. | C1.4a.iii.8. |
+| C1.4a.iii.8 | `EllipticIntegralNodeNormalization` / 240 | Lift the split tangent shear: a₁ is a unit and a₂,a₃,a₄,a₆ lie in the maximal ideal. | Initial split multiplicative normalization for C1.5. |
+| C1.4b.i | `EllipticVariableChangeSmoothness` / 240 | Transform the two partial derivatives and prove nonsingularity invariant without assuming a smooth cubic. | Bad special fibers in C1.4b.iii. |
+| C1.4b.ii | `EllipticVariableChangeIntegrality` / 240 | Integral unit coordinate changes preserve integrality of x and of the coordinate pair. | Infinity chart in C1.4b.iii. |
+| C1.4b.iii | `EllipticVariableChangeReduction` / 240 | Integral and nonintegral affine charts together prove smooth reduction invariant. | C1.4b.iv. |
+| C1.4b.iv | `EllipticComponentVariableChange` / 240 | Integral unit variable changes induce generic point-group equivalences carrying E₀ onto E₀, hence additive equivalences of E/E₀ commuting with the quotient maps. | Transport all branch calculations to A1-C1; S1/S2, C2/C3/Cp. |
 | C1.5a | `EllipticSplitComponentClasses` / 240 | In split multiplicative normal form, construct a class map to Z/nZ and prove its kernel is E₀ by the valuation branches of point addition. | Split branch of A1-C1; C2/C3/Cp. |
 | C1.5b | `EllipticSplitComponentOrder` / 240 | Lift all n classes over the complete DVR and obtain E/E₀ ≃+ Z/nZ; thus cyclic of order ord(Δ). | A1-C1; C2/C3/Cp. |
 | C1.5c | `EllipticNonsplitComponents` / 240 | Compare E₀ under the unramified quadratic splitting extension, inject rational classes into geometric classes, and prove Galois acts by negation. Deduce cardinality at most 2. | A1-C1; nonsplit exclusions in C2/C3/Cp. |
@@ -47,31 +57,31 @@ comparisons, branch coverage and cardinality bounds must all be proved.
 The existing elliptic E₀ specialization theorems do not supply the abelian
 specialization required by A2. G1 (wt-r5a) and G2 (wt-r1e) retain their scopes.
 
-### D-W9 implementation boundary and evidence
+### D-W10 implementation boundary and evidence
 
-Checked 2026-10-05 01:50 UTC. Proof commit `ece0202d` implements C1.1,
-C1.2, C1.3, C1.4a.i and C1.4a.ii in the five named modules above
-(65, 67, 66, 69 and 80 lines respectively). In particular, the normalized
-type II coefficient tests prove E₀=E and a trivial quotient in all residue
-characteristics. They do not establish the full additive bound.
+The initial rational singular-point, cusp and split-node normalizations are
+proved by C1.4a.iii.1–8. The proofs include residue characteristics 2 and 3.
+C1.4b.i–iv transport the actual E₀ subgroup and E/E₀ quotient through an
+integral variable change with unit u. Generic ellipticity is required for the
+point-group isomorphism; the special cubic is allowed to be singular.
 
-The first open foundation is C1.4a.iii: from Δ=0 over a perfect residue
-field, prove existence of x,y satisfying the cubic equation but not the
-nonsingularity predicate, then lift and normalize integrally. The translated
-coefficient theorem in C1.4a.i assumes a supplied singular point; it does not
-prove this existence theorem. Search evidence is recorded in
-`Scratch/MazurDW9/foundation-search.log`. The old general Néron-model blocker
-below is superseded for the local point-group route, not discharged by it.
+The first open leaf is C1.5a: construct the split multiplicative component
+class map from the actual equation, then prove its kernel is E₀. The initial
+normal form does not provide the deeper coefficient/valuation tests, class
+surjectivity, the nonsplit comparison, or the additive branch bounds. Those
+remain in C1.5–C1.7. No S1/S2, C2/C3/Cp or A2 conclusion follows yet.
 
-All five foreground module builds and individual module linters pass;
-logs are `Scratch/MazurDW9/MODULE-build.log` and `MODULE-lint.log`.
-All 20 new theorems and both definitions use only propext, Classical.choice
-and Quot.sound: re-run `lake env lean Scratch/MazurDW9/Axioms.lean`;
-evidence `Scratch/MazurDW9/axioms.log` (22 checks).
-Merged `origin/main` at `3ffbce70` in `47a2846f`; the required foreground
-`LEAN_NUM_THREADS=2 lake build FLT` passed 12,673 jobs without name clashes
-(`Scratch/MazurDW9/root-build.log`). Root imports remain sorted and unique.
-No S1/S2, C2/C3/Cp or A2 conclusion is claimed by these leaves.
+Validation for this batch is recorded by the per-module foreground build and
+lint logs under `Scratch/MazurDW10/`. Re-run each name in `modules.txt` with
+`LEAN_NUM_THREADS=2 lake build FLT.Mazur.MODULE` and
+`LEAN_NUM_THREADS=2 lake exe runLinter FLT.Mazur.MODULE`, one at a time.
+`LEAN_NUM_THREADS=2 lake env lean Scratch/MazurDW10/Axioms.lean` audits every
+new theorem and definition; `root-build.log` records the post-merge root build.
+The checked-at result and commit table are in the untracked D-W10 handoff.
+
+D-W9 (`ece0202d`) supplied C1.1–C1.3 and C1.4a.i–ii, including the normalized
+type II quotient calculation. The older general Néron-model blocker below is
+superseded for the local point-group route. It is not needed by this route.
 
 ## D-W4: formal addition construction leaves
 
