@@ -3209,6 +3209,7 @@ public import FLT.Mazur.NodeDenominatorRestriction
 public import FLT.Mazur.NodeInfinitesimalObstruction
 public import FLT.Mazur.NodeLocalDescent
 public import FLT.Mazur.NodeLocalizedEqualizer
+public import FLT.Mazur.NodeNonsplitTangent
 public import FLT.Mazur.NodeNormalizationBaseChange
 public import FLT.Mazur.NodePinchingDescent
 public import FLT.Mazur.NodePinchingExistence
@@ -3216,8 +3217,11 @@ public import FLT.Mazur.NodePuncturedDenominatorRestriction
 public import FLT.Mazur.NodeQuotient
 public import FLT.Mazur.NodeSmoothLocus
 public import FLT.Mazur.NodeTangentAlgebra
+public import FLT.Mazur.NodeTangentDepth
 public import FLT.Mazur.NodeTangentExtension
+public import FLT.Mazur.NodeTangentFractionField
 public import FLT.Mazur.NodeTangentShear
+public import FLT.Mazur.NodeTangentUnramified
 public import FLT.Mazur.OneGonAffineCover
 public import FLT.Mazur.OneGonAffineNormalization
 public import FLT.Mazur.OneGonAffineNormalizationCoordinates
