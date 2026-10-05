@@ -157,6 +157,30 @@ the construction works for any coefficient ring and Weierstrass equation;
 the existing universal equation can be substituted later.
 
 
+### Two-chart scheme gluing — 2026-10-04
+
+`FLT/EllipticCurve/CubicCharts.lean` now constructs both chart rings and
+their localizations at the second coordinate. The coordinate substitution
+(u,v)=(x/y,1/y) is an actual algebra map on the localizations; both
+compositions are proved to be the identity. This yields `overlapEquiv`
+over an arbitrary commutative base ring, without discriminant assumptions.
+
+`FLT/EllipticCurve/CubicScheme.lean` uses that equivalence to glue the two
+affine spectra along open immersions. The resulting `scheme W` is a
+constructed scheme with two open chart maps, a proof that they cover every
+point, a structural morphism to Spec R, and the infinity section inherited
+from `InfinityChart`. Both chart projections agree on the overlap.
+
+This completes the explicit two-chart gluing proposed in the previous
+entry. It does not yet identify the glued scheme with the projective
+hypersurface as a closed subscheme of P2, prove properness or smoothness,
+or construct its group-scheme law. Those are the next geometric obligations
+before a modular moduli construction; X0(p), the represented Jacobian and
+the Eisenstein quotient remain absent. All FLT arithmetic assumptions are
+unchanged. The audit test checks every declaration in the new namespace,
+and exercises nonreduced and residue-characteristic-three bases.
+
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:

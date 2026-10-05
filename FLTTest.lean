@@ -33,4 +33,5 @@ import FLTTest.MazurStalkFibers
 import FLTTest.QuaternionFiniteIndex
 import FLTTest.SmallResidueTorsion
 import FLTTest.ThreeAdicConsolidation
+import FLTTest.WeierstrassCubicScheme
 import FLTTest.WeierstrassInfinityChart
