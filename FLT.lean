@@ -2900,6 +2900,7 @@ public import FLT.Mazur.EllipticDoubleRootIteration
 public import FLT.Mazur.EllipticDoubleRootOddBound
 public import FLT.Mazur.EllipticDoubleRootSeparable
 public import FLT.Mazur.EllipticExtensionChartClosure
+public import FLT.Mazur.EllipticExtensionClosureQuasiFinite
 public import FLT.Mazur.EllipticExtensionPrimeSubgroup
 public import FLT.Mazur.EllipticFormalAddition
 public import FLT.Mazur.EllipticFormalAdditionComparison
@@ -3074,6 +3075,7 @@ public import FLT.Mazur.EllipticStarZeroResidue
 public import FLT.Mazur.EllipticStarZeroSlope
 public import FLT.Mazur.EllipticSubgroupChartClosure
 public import FLT.Mazur.EllipticSubgroupChartGeneric
+public import FLT.Mazur.EllipticSubgroupClosedFiberPoints
 public import FLT.Mazur.EllipticSubgroupClosureGluing
 public import FLT.Mazur.EllipticSubgroupClosureProperties
 public import FLT.Mazur.EllipticSubgroupClosureQuasiFinite
