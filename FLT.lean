@@ -2538,6 +2538,8 @@ public import FLT.Mazur.AffineDirectTripleMiddleBalance
 public import FLT.Mazur.AffineDirectTriplePureTransport
 public import FLT.Mazur.AffineDirectTripleSections
 public import FLT.Mazur.AffineDirectTripleTransport
+public import FLT.Mazur.AffineEffectiveCompositeReconstruction
+public import FLT.Mazur.AffineEffectiveCompositionChart
 public import FLT.Mazur.AffineEffectiveRefinementComparison
 public import FLT.Mazur.AffineEffectiveRefinementIdentity
 public import FLT.Mazur.AffineEffectiveRefinementNaturality
@@ -2622,9 +2624,12 @@ public import FLT.Mazur.AffinePushforwardQuasicoherent
 public import FLT.Mazur.AffineQuasiCoherentBaseChange
 public import FLT.Mazur.AffineQuasicoherentPullbackFaithful
 public import FLT.Mazur.AffineReconstructionCoefficientChart
+public import FLT.Mazur.AffineRefinedCompositionCompatibility
 public import FLT.Mazur.AffineRefinementCoactionCompatibility
+public import FLT.Mazur.AffineRefinementComposition
 public import FLT.Mazur.AffineRefinementIdentity
 public import FLT.Mazur.AffineRefinementPullback
+public import FLT.Mazur.AffineRefinementReconstructionMap
 public import FLT.Mazur.AffineRestrictionImmersion
 public import FLT.Mazur.AffineReverseGeometricOverlap
 public import FLT.Mazur.AffineReverseOverlapCocycle
@@ -3910,6 +3915,7 @@ public import FLT.Mazur.PushoutModuleScalars
 public import FLT.Mazur.QuadraticComponentBound
 public import FLT.Mazur.QuasiCoherentAffineBasePullback
 public import FLT.Mazur.RationalFibers
+public import FLT.Mazur.ReconstructionComposition
 public import FLT.Mazur.RefinedChartSpectrum
 public import FLT.Mazur.RelativeAmpleAffineBaseChange
 public import FLT.Mazur.RelativeAmpleBaseChange
@@ -3976,6 +3982,8 @@ public import FLT.Mazur.SchemeOverlapTransportComposition
 public import FLT.Mazur.SchemePicardClasses
 public import FLT.Mazur.SchemePicardGroup
 public import FLT.Mazur.SchemePicardPullback
+public import FLT.Mazur.SchemePullbackCompositeCharts
+public import FLT.Mazur.SchemePullbackCompositeRecognition
 public import FLT.Mazur.SchemePullbackIdentityCharts
 public import FLT.Mazur.SchemePullbackOverlap
 public import FLT.Mazur.SchemePullbackOverlapNormalization
@@ -4094,7 +4102,11 @@ public import FLT.Mazur.ValuationProjectiveNormalization
 public import FLT.Mazur.ValuationRingModel
 public import FLT.Mazur.VeryAmpleAffineSections
 public import FLT.Mazur.VeryAmplePresentationBaseChange
+public import FLT.Mazur.WeierstrassAdditionChartCompatibility
+public import FLT.Mazur.WeierstrassAffineProduct
 public import FLT.Mazur.WeierstrassChartOverlap
+public import FLT.Mazur.WeierstrassIntegralAdditionCharts
+public import FLT.Mazur.WeierstrassIntegralAdditionFormula
 public import FLT.Mazur.WeierstrassIntegralChart
 public import FLT.MazurChapter.AdmissibleGroupSchemes
 public import FLT.MazurW
