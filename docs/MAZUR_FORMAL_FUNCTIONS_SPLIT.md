@@ -45,10 +45,15 @@ Existing modules are reused without edits.
 | F0b | All-degree finite base-ring cohomology, two-out-of-three and generic-rank-one devissage | F0a, `CoherentGenericRankOneCriterion` |
 | F0c | All-degree finiteness under closed and acyclic direct image, plus closed projective presentations | F0b, existing ring-linear comparisons and projective finiteness |
 | F1a | Closed projective embedding of the Noetherian affine-base Chow modification | `ChowAffineBaseGraphProductComparison`, finite Segre embedding |
-| F1b | One Chow line very ample for both projections; simultaneous acyclic powers | F1a, `RelativeSerreVanishing` |
-| F1c | Coherence of the Chow power direct image on each affine open | F1b, projective finiteness, affine sections localization |
-| F1d | Closed Chow witness support and generic rank one over a Noetherian ring | F1c, existing generic-neighborhood and closed-stalk comparisons |
-| F1e | Proper coherent cohomology finite over a Noetherian ring, all degrees | F0b-F0c, F1b-F1d |
+| F1b1 | One Chow line very ample for both projections | F1a, `RelativeVeryAmpleLineBundle` |
+| F1b2 | Simultaneous acyclic powers with finite base-ring cohomology | F1b1, F0c, `RelativeSerreVanishing` |
+| F1c1 | Chow affine pieces and overlaps localize over the base | F1b1, existing base-linear equalizer |
+| F1c2 | Transport piece coordinates to the equalizer localization | F1c1 |
+| F1c3 | Actual direct-image sections localize on each affine target open | F1c2, existing restriction comparisons |
+| F1c4 | Finite sections and coherence of the Chow power direct image | F1c3, projective finiteness |
+| F1d1 | Rank-one coordinates on the actual Chow direct-image generic stalk | F1b1, existing generic-neighborhood comparisons |
+| F1d2 | Closed Chow witness support and residue rank one | F1c4, F1d1, existing closed-stalk comparisons |
+| F1e | Proper coherent cohomology finite over a Noetherian ring, all degrees | F0b-F0c, F1b2, F1d2 |
 | F2a | Actual m-adic coefficient quotients, transition maps and graded exact sequences | ideal multiplication and sheaf cokernels |
 | F2b | Uniform Serre bound for the finite-type associated graded coefficient module | F2a, graded coherent Serre theorem (Stacks 30.19.3) |
 | F2c | Vanishing on all infinitesimal fibres and surjective H0 transition maps | F2b, cohomology exact sequence |
