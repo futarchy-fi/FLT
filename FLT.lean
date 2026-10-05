@@ -2905,10 +2905,12 @@ public import FLT.Mazur.FiniteAffineCoverDimension
 public import FLT.Mazur.FiniteAffineCoverFiniteness
 public import FLT.Mazur.FiniteAffineIntersectionDiagram
 public import FLT.Mazur.FiniteAffineLineCover
+public import FLT.Mazur.FiniteAffineProperIntegerDescent
 public import FLT.Mazur.FiniteArrowIntegerModel
 public import FLT.Mazur.FiniteCechCyclesScalars
 public import FLT.Mazur.FiniteCechTermScalars
 public import FLT.Mazur.FiniteClosedIdealSection
+public import FLT.Mazur.FiniteClosedImmersionIntegerDescent
 public import FLT.Mazur.FiniteDiagramCoverModel
 public import FLT.Mazur.FiniteDiagramIntegerModel
 public import FLT.Mazur.FiniteDiagramUnitDescent
@@ -3068,6 +3070,7 @@ public import FLT.Mazur.IntegerModelMonicLifts
 public import FLT.Mazur.IntegerModelOpenImmersionBaseChange
 public import FLT.Mazur.IntegerModelOpenImmersionDescent
 public import FLT.Mazur.IntegerModelOpenImmersionRefinement
+public import FLT.Mazur.IntegerModelPropertyTransport
 public import FLT.Mazur.IntegerModelPullbackDescent
 public import FLT.Mazur.IntegerModelPullbackTransport
 public import FLT.Mazur.IntegerModelRelationDescent
