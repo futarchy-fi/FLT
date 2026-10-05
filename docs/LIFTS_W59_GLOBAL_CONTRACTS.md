@@ -24,10 +24,134 @@ unframed image and prove its comparison to our functor, including how the
 specified row is recovered by a frame choice. Noetherianity of a framed
 ring and module finiteness of an unframed image are different gates.
 
+W64 constructs `hardlyTraceImageObject`, the closed-kernel presentation of
+the actual universal trace-ring image inside `hardlyFlatObject`, with its
+original residue field. `hardlyTraceImageEquiv` identifies it with the closed
+trace subalgebra. `exists_hardlyTraceImageLift_with_row` constructs a descended
+representation and a strict frame recovering the original HR representation
+and its row at two. The descended representation has the original determinant
+and is unramified away from 2p (`HardlyRamifiedTraceArithmetic`).
+
+W69 proves finite-flat descent to the smaller image ring in
+`HardlyRamifiedTraceFlat`, using the compact coefficient injection and
+schematic closure on cofinal finite reductions. The comparison with KW II's
+completed tensor product remains. W68 proves Noetherianity of both actual
+rings; p-adic module finiteness is still missing. The generic theorem
+`ProartinianCat.imageObject_isNoetherian` requires a Noetherian **source**;
+Noetherianity of a framed target would not imply Noetherianity of its subring.
+Check the saved W64 evidence with `python3 Scratch/LiftsW64/check.py`.
+
+W70 descends the specified quotient itself to the trace image. The actual
+Frobenius value at two gives a unit residual eigenvalue gap; the strict
+recovery frame then determines a normalized quotient row over the smaller
+ring. `HardlyRamifiedTraceTwoQuotient` preserves its original residual row
+under every coefficient specialization, including prime quotients.
+`HardlyRamifiedTraceConditions` constructs the continuous unramified
+quadratic quotient action and proves the complete HR predicate, with the
+p-adic scalar tower explicitly matched. Recheck with
+`python3 Scratch/LiftsW70/check.py`. This does not supply D3/D4 or the KW
+local-ring comparison.
+
 `DeSmitLenstra/FramedCompletion` proves Noetherianity with a **finite group**
 parameter. `ProfiniteUniversalLift` constructs a limit over finite quotients;
-Noetherianity does not follow by taking this limit. Arithmetic control of the
-finite-ramification deformation tangent space is still needed.
+Noetherianity does not follow by taking this limit. W67/W68 instead supply
+arithmetic control of the continuous tangent space and a power-series presentation.
+
+W65 proves the finite counting part of the arithmetic tangent strategy.
+`finite_representations_discr_bdd` applies Hermite to the **actual kernel
+fields**, then counts the finite possible coefficient functions on each
+finite Galois group. `HardlyRamifiedFramedParameters` and
+`HardlyRamifiedFiniteParameters` inject parameter maps into these continuous
+representations and prove uniform degree bounds and pointwise inertia
+triviality. Both give finiteness conditional on a uniform discriminant bound.
+`HardlyRamifiedParameterComparison` uses the specialized recovery frame to
+identify kernel fields for a framed map and its trace restriction. It does
+not show all trace-image maps extend to the framed quotient.
+
+W66 proves the selected-inertia comparison for the exact parameter fields:
+`HardlyRamifiedParameterUnramified` gives arithmetic unramifiedness outside
+{2,p}, over both the integers of Q and Z, and vanishing different exponents.
+`FinitePrimeDiscriminantBound` and `HardlyRamifiedParameterBounds` now reduce
+the uniform discriminant estimate to bounds for normalized different
+exponents at 2 and p. This is a conditional reduction, not Noetherianity.
+
+`DiscreteValuationRing.UniformizerDifferentBound` proves the local estimate
+`v(different) ≤ v(e) + e - 1` for a totally ramified uniformizer power basis,
+and proves that rank times a base uniformizer lies in the different of a
+finite totally ramified DVR extension without a chosen basis as input.
+`HenselianDifferentBound` constructs the unramified coefficient ring and
+uses different transitivity to remove the total-ramification hypothesis.
+`Padics.DifferentBound` proves that p^(N+1) belongs to the different of every
+finite Henselian DVR extension of Zp with integral rank at most N.
+
+W67 instantiates this bound on the full completed integer rings.
+`NumberField.Completion.RankBound` bounds the local integral rank by the
+global degree. `Completion.UniformDifferentBound` uses the proved
+Henselianity and the original p-adic base isomorphism; the different remains
+over that original base. `UniformDifferentExponent` compares local and
+global exponents at every prime above a rational prime.
+`HardlyRamifiedParameterFiniteness` proves the explicit bound
+`(2*p)^((N+1)*N)` and unconditional finite coefficient parameters for each
+finite discrete test ring, with `N = Nat.card (GL (Fin 2) A)`.
+
+`DualNumberTest` constructs the finite test object with the original residue
+field. `ContinuousTangent` identifies its parameter maps with continuous
+coefficient-linear Leibniz functionals at the specified residue map.
+`HardlyRamifiedTangentFinite` applies the arithmetic counting theorem to
+prove finite dimension of these tangent spaces for both the actual framed
+HR quotient and, under irreducibility, its trace image.
+
+W68 closes the topology and Noetherianity gap. `FiniteTangentSeparation`
+uses cotangent duality only after killing the coefficient maximal ideal in
+a discrete quotient. `ContinuousTangentAdic` compares the common continuous
+tangent kernel with the closed relative-square ideal. Compact Nakayama and
+finite quotient representatives give actual maximal-ideal generators.
+`PowerSeriesPresentation` constructs a surjection from a finite-variable
+power-series algebra over the original coefficient ring, complete for the
+variable ideal. Generators include coefficient directions, so the original
+coefficient ring need not be complete. `HardlyRamifiedNoetherian` proves
+Noetherianity and adic completeness of both actual HR rings independently;
+no Noetherianity assertion about the unrestricted trace source is made.
+The G0/G1 Selmer identification and D3 module finiteness remain separate.
+Check saved evidence with `python3 Scratch/LiftsW68/check.py`.
+
+## W72 boundary and next bounded G0/G1 leaves
+
+`ArithmeticGaloisQuotient` constructs the quotient of the actual G_Q by the
+closed normal subgroup generated by the specified excluded inertia images.
+Its continuous descent is unique and compatible with the original local
+maps. `HardlyRamifiedArithmeticDescent` supplies the residual, framed HR and
+quotient-adapted trace representations on it. W72's
+`ArithmeticGaloisFixedField` identifies the quotient with the Galois group
+of the actual fixed field, as a group and topological space, and proves its
+profinite topology. Embedding-change conjugacy and arithmetic H^i comparisons
+remain. Recheck the W72 source/log hashes and checked-at time with
+`python3 Scratch/LiftsW72/check.py`; rerun Lean with its `validate.py`.
+
+`HardlyRamifiedTangentEquations` proves the product derivative, zero second
+row at two and determinant derivative for continuous tangent functionals on
+the actual framed HR ring. W72's `HardlyRamifiedTangentCocycle` normalizes by
+the inverse residual matrix and constructs a continuous cocycle in the
+trace-zero adjoint itself. The exact quotient row stays zero.
+`DualNumberMatrixFrame` constructs every dual-number strict frame and proves
+that strict derivative changes are equivalent to adjoint coboundaries. These
+are matrix-level comparisons and necessary tangent conditions, not an
+equivalence with the local deformation tangent image or arithmetic Selmer classes.
+
+| Next bounded leaf | Done line | Dependency |
+|---|---|---|
+| G0a1 | Fixed field and profinite topology proved; still prove embedding-change conjugacy for the original local maps. | ArithmeticGaloisFixedField; original local embeddings. |
+| G0a2 | Trace-zero adjoint action constructed; still construct the cyclotomic Tate dual and prove trace pairing nondegenerate for odd p. | MatrixTangentTrace and finite residual linear algebra. |
+| G0a3 | Instantiate continuous H⁰/H¹/H² and linear localization maps for those actual modules; prove arithmetic finite-dimensionality. | G0a2 and arithmetic cohomology finiteness, not just finite coefficient cardinality. |
+| G0b1 | Actual continuous trace-zero cocycle and matrix strict-frame/coboundary equivalence proved; still compare universal parameter equivalences and arithmetic quotient classes. | HardlyRamifiedTangentCocycle, DualNumberMatrixFrame and universal parameter maps. |
+| G0b2 | Identify the specified quotient-at-two tangent image in both directions, including residual unramified cases; preserve its fixed integral character. The zero row is only a necessary condition. | G0b1 and local framed universal property. |
+| G0b3 | Identify the finite-flat/crystalline tangent image at p and unramified/odd images at other places. | Lp0, G0b1; no replacement by Hodge–Tate weights alone. |
+| G0c–d | Construct perfect local pairings, arithmetic Poitou–Tate exactness and the dimension formula. | G0a/b; no order-formula field as evidence. |
+| G1a–c | Prove tangent/obstruction identification, small-extension lifting, relation bound and dimension ≥1 on the matched unframed image. | G0c/d, selected local dimensions and the completed tensor product comparison. |
+
+These are specifications, not assumed mathematical inputs. Split each leaf
+further whenever its implementation would exceed 200 lines. D3/D4 remain
+deferred as specified in the W71 section of `LIFTS_GOAL_LEDGER.md`.
 
 ## Required arithmetic objects
 
@@ -78,12 +202,14 @@ quotient and coefficient maps.
    permit cancelling a noninvertible exponent. Niveau-two, non-peu branches,
    normalization independence and actual symmetric-power composition
    factors remain. No numerical Serre-weight evaluation is available here.
-2. R1: descend the quotient-twisted **Hopf algebra**, with semilinear cocycle,
-   tensor/comultiplication, counit and antipode compatibility. Prove faithful
-   flat base-change recovery, finite local freeness and the prescribed
-   Galois-equivariant generic fiber. `UnramifiedCharacterIntegers` gives the
-   splitting base; `IntegralQuotientDescent` descends a map through an already
-   constructed quotient. Neither constructs this twisted object.
+2. R1: W63 constructs the actual quotient-twisted Hopf algebra, tensor
+   comparison, triple-overlap cocycle, Hopf-compatible scalar recovery and
+   finite-flat model. `GroupScheme.OrdinaryUnramifiedUnitClass` transports
+   the ordinary filtration and proves the unit class and independent peu
+   condition for finite residual coefficients, small ramification, an
+   unramified quotient and a whole-local cyclotomic Hom character. The
+   whole-local/inertia comparison needed for general S0a3 remains. Check
+   `python3 Scratch/LiftsW63/check.py` for saved source and validation evidence.
 3. Lp0: prove the integral PD-envelope universal property for arbitrary PD
    targets, with p-compatibility, not just minimality within A_inf[1/p].
    `DividedPowerHull`/`ComplexDividedPowerHull` only prove the latter. Prove
@@ -92,10 +218,15 @@ quotient and coefficient maps.
    integral lattice at every level. Frobenius does not preserve the theta
    ideal; the source's actual theta-generator computation forbids using a
    theta-adic extension in place of the crystalline construction.
-4. Noetherianity and the finite coefficient order: establish the arithmetic
-   finite tangent/presentation input; then quotient Noetherianity is formal.
-   The order carrying a lift additionally needs D3/D4/I0. Do not report the
-   candidate Eisenstein coefficient rings of W58 as that order.
+4. The finite coefficient order: W68 proves arithmetic Noetherianity and
+   adic completeness; W69 proves finite-flat descent to the actual trace
+   image. `PrimeCoefficientOrder` and `HardlyRamifiedTraceOrder` construct
+   prime quotients with the original residue field and representation.
+   Given D3 finiteness and a prime avoiding p, they are finite free
+   characteristic-zero domains with the original quotient/module topology.
+   W70 supplies the quotient at two and all four HR conditions. D3/D4,
+   the selected-local comparison and exact tensor-conjugacy assembly remain. These conditional order
+   theorems do not supply the missing arithmetic inputs or close I0.
 
 These unresolved inputs are mathematical gaps, not a request for permission.
 The lifting admission and its dependency at the FLT endpoint remain until
