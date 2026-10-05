@@ -20,6 +20,22 @@ universe u v u' v'
 namespace FLT.Mazur.ReconstructionComposition
 variable {C : Type u} [Category.{v} C] {D : Type u'} [Category.{v'} D]
 
+/-- Compose three reconstruction squares before comparing with another path. -/
+theorem chain (F : C ⥤ D) {A₀ A₁ A₂ B : C} {M N : D}
+    (f : A₀ ⟶ A₁) (g : A₁ ⟶ A₂) (k : A₂ ⟶ B)
+    (e : F.obj B ⟶ N) (e₂ : F.obj A₂ ⟶ M) (e₁ : F.obj A₁ ⟶ M)
+    (e₀ : F.obj A₀ ⟶ M) (t : M ⟶ N)
+    (hk : F.map k ≫ e = e₂ ≫ t) (hg : F.map g ≫ e₂ = e₁)
+    (hf : F.map f ≫ e₁ = e₀) : F.map (f ≫ g ≫ k) ≫ e = e₀ ≫ t := by
+  simp only [Functor.map_comp, Category.assoc]
+  rw [hk, ← Category.assoc (F.map g), hg, ← Category.assoc (F.map f), hf]
+
+/-- Precompose one reconstruction square with any map in the source category. -/
+theorem precompose (F : C ⥤ D) {A B C' : C} {M : D}
+    (f : A ⟶ B) (g : B ⟶ C') (e : F.obj C' ⟶ M) (e' : F.obj B ⟶ M)
+    (h : F.map g ≫ e = e') : F.map (f ≫ g) ≫ e = F.map f ≫ e' := by
+  rw [Functor.map_comp, Category.assoc, h]
+
 /-- Three reconstruction squares and the chart square give composite reconstruction. -/
 theorem square (F : C ⥤ D) {A₀ A₁ A₂ B₀ B₁ : C} {M N : D}
     (f : A₀ ⟶ A₁) (g : A₁ ⟶ A₂) (k : A₂ ⟶ B₁) (h : A₀ ⟶ B₀) (l : B₀ ⟶ B₁)
