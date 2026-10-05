@@ -3049,6 +3049,7 @@ public import FLT.Mazur.IdealTwistTransitionExact
 public import FLT.Mazur.IdealWitnessSupportInduction
 public import FLT.Mazur.IncreasingCechComplex
 public import FLT.Mazur.InjectiveHorseshoe
+public import FLT.Mazur.IntegerModelAffineProperDescent
 public import FLT.Mazur.IntegerModelAtlasDiagram
 public import FLT.Mazur.IntegerModelBaseChange
 public import FLT.Mazur.IntegerModelClosedImmersionDescent
@@ -3057,10 +3058,13 @@ public import FLT.Mazur.IntegerModelDiagramTransport
 public import FLT.Mazur.IntegerModelEventualEquality
 public import FLT.Mazur.IntegerModelEventualInverse
 public import FLT.Mazur.IntegerModelEventualUnits
+public import FLT.Mazur.IntegerModelFiniteDescent
 public import FLT.Mazur.IntegerModelHomExtension
 public import FLT.Mazur.IntegerModelHomTransport
+public import FLT.Mazur.IntegerModelIntegralElements
 public import FLT.Mazur.IntegerModelIsomorphismDescent
 public import FLT.Mazur.IntegerModelMarkedExtension
+public import FLT.Mazur.IntegerModelMonicLifts
 public import FLT.Mazur.IntegerModelOpenImmersionBaseChange
 public import FLT.Mazur.IntegerModelOpenImmersionDescent
 public import FLT.Mazur.IntegerModelOpenImmersionRefinement
