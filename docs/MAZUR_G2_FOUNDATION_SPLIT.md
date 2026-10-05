@@ -962,3 +962,57 @@ The direct wrapper specializing unit coherence to literal identity ring maps
 exceeded the memory guard and is retained only as untracked WIP. The accepted
 uniform identity theorem has been checked by Lean's kernel at the default limits.
 No library declaration depends on that rejected wrapper.
+
+
+## W23: actual affine composition charts (2026-10-05)
+
+W22 remaining item 1 is proved. `AffineRefinementPullback.compositionChart`
+includes the actual equality `Spec.map (a ≫ c) = Spec.map c ≫ Spec.map a`.
+Both `squareIso_composition` and `reconstruction_composition` include the base
+and cover charts for two arbitrary commutative affine squares.
+
+Item 2 is partially proved. `compositionData_compatible` derives compatibility
+of the actual successively refined datum and the composite-refined datum from
+compatible reconstruction, using the actual cover composition chart.
+`compositionDescentIso` descends that chart; its reconstruction theorem is
+proved. `effectiveComparisonIso_reconstruction_twice` proves that restricting
+the first effective comparison identifies the second reconstruction with the
+successively restricted original chart.
+
+| Module (`FLT.Mazur.` prefix) | Proved interface |
+| --- | --- |
+| SchemePullbackCompositeCharts | Square and reconstruction composition with specified composite maps |
+| SchemePullbackCompositeRecognition | Transport through named charts with explicit object endpoints |
+| AffineRefinementComposition | Actual affine base/cover charts and composition of reconstruction |
+| AffineRefinedCompositionCompatibility | The cover composition chart intertwines actual refined data |
+| AffineRefinementReconstructionMap | Refinement preserves maps identifying two reconstructions |
+| AffineEffectiveCompositionChart | Descended cover chart and its reconstruction equation |
+| ReconstructionComposition | General categorical reconstruction-path calculations |
+| AffineEffectiveCompositeReconstruction | The twice-refined effective reconstruction square |
+
+The final `effectiveComparisonIso` composition equality is **not proved**.
+The attempted full equality and a separate successive-path reconstruction
+lemma elaborated but exceeded the default kernel budget. These attempts are
+untracked diagnostics outside `FLT/` and are not imported. No resource limit
+was increased. General categorical factoring alone did not resolve this cost.
+
+Continue in order:
+
+1. Finish the effective composition equality using the accepted actual-data
+   comparison and twice-refined reconstruction. First isolate the expensive
+   conversion in the successive-path reconstruction; consider explicit-endpoint
+   wrappers for the composite effective maps before applying reconstruction
+   uniqueness. Do not assume compatibility or the composition equation.
+2. Assemble the actual affine descent charts into `ModuleSheafGluing.Data`,
+   prove its transitions/cocycle, and glue objects and maps to finish P9e.
+   Existing `ModuleSheafGluing` and `ModuleSheafMorphismGluing` supply generic
+   gluing. Connecting the actual affine charts to this interface remains open.
+3. Supply locally-free-rank-one to invertible coefficients, then P10–P21 and
+   the modular curve/Jacobian constructions, separately from G1 and track D.
+
+Validation can be rechecked with `python3 G2_W23_SOURCE_CHECK.py` in the worker
+checkout. It checks committed source, the 240-line module and 100-character
+line caps, build/lint/axiom/probe receipts, root imports, and the post-merge root
+build. The untracked W23 handoff records the check timestamp and commits.
+`rg -n Mazur_statement FLT/Assumptions/Mazur.lean FermatsLastTheorem.lean`
+checks the endpoint: the Mazur assumption remains; P9e remains open.
