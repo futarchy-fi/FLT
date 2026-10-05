@@ -4,6 +4,46 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
+## W67 — actual completion bounds and finite continuous tangent spaces
+
+Check the saved sources, logs, line caps, commit identities and main ancestry
+with `python3 Scratch/LiftsW67/check.py`; it prints the checked-at time.
+Rerun foreground builds, one-module lint and axiom checks with
+`python3 Scratch/LiftsW67/validate.py`. The detailed `LIFTS_W67_RESULT.md`
+handoff and validation artifacts remain untracked outside the source tree.
+
+| Item | New module | Proved scope |
+|---|---|---|
+| Original local base | `Padics.DifferentBoundEquiv` | Transports the uniformizer and divisibility across a p-adic base isomorphism, keeping the different over the original base. |
+| Integral rank | `NumberField.Completion.RankBound` | Identifies integral and local field rank and bounds both by the global degree. |
+| Actual local different | `NumberField.Completion.UniformDifferentBound` | Instantiates Henselianity on the full completed integer ring and proves prime-power containment; translates containment into global different exponents. |
+| Global exponent | `NumberField.UniformDifferentExponent` | Every prime above q satisfies `d(P) ≤ (N+1)e(P)` when the global degree is at most N. |
+| Actual HR finiteness | `HardlyRamifiedParameterFiniteness` | Both parameter fields have discriminant at most `(2*p)^((N+1)*N)`, with `N = Nat.card (GL (Fin 2) A)`; coefficient maps into each finite discrete test ring are finite. Trace finiteness uses the original irreducibility hypothesis. |
+| Dual-number test | `DualNumberTest` | Constructs the finite local test object over the original residue field and proves residue compatibility. |
+| Tangent identification | `ContinuousTangent` | Identifies dual-number maps with continuous coefficient-linear Leibniz functionals at the specified residue map. |
+| Arithmetic tangent finiteness | `HardlyRamifiedTangentFinite` | Proves finite dimension of these continuous tangent spaces for both the actual framed HR quotient and the trace image. |
+
+The completion-to-global application left open in W66 is now proved; the
+exceptional-prime bounds are no longer assumptions of the new HR finiteness
+theorems. The finite test-ring maps have also been identified with continuous
+tangent functionals. These are tangents of the constructed rings; no Selmer
+identification or comparison with the KW selected local deformation rings is
+asserted.
+
+**The lifting goal and arithmetic Noetherianity remain open.** The next step
+is to construct a complete-local presentation from finite continuous tangent
+space: establish the needed topological generation and adic completeness,
+then a surjection from a finite-variable complete Noetherian coefficient
+algebra. The algebraic cotangent space must not be silently substituted for
+its continuous dual before this topology comparison is proved. Noetherianity
+of the unrestricted universal trace source is not supplied by these results.
+
+The finite p-adic order still requires KW II selected-local-ring comparison,
+integral finite-flat descent and D3/D4/I0. S0a3, Lp0 and G0a–G1c retain their
+prior obligations. No Serre-weight evaluation or arbitrary-p Raynaud API was
+introduced. Earlier wave sections below record their then-proved boundaries;
+the W67 results supersede their outstanding completion and counting gaps.
+
 ## W66 — arithmetic unramifiedness and the local different estimate
 
 Check the saved sources, logs, line caps and commits with
