@@ -2535,6 +2535,7 @@ public import FLT.Mazur.AffineFiberProductOverlap
 public import FLT.Mazur.AffineFpqcRefinement
 public import FLT.Mazur.AffineGeometricDatumComparison
 public import FLT.Mazur.AffineGeometricDescent
+public import FLT.Mazur.AffineGeometricDescentComposition
 public import FLT.Mazur.AffineGeometricDescentMorphisms
 public import FLT.Mazur.AffineGeometricMapComparison
 public import FLT.Mazur.AffineGeometricOverlap
