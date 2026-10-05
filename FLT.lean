@@ -2634,10 +2634,14 @@ public import FLT.Mazur.EllipticInfinityPowerSeries
 public import FLT.Mazur.EllipticLocalAddition
 public import FLT.Mazur.EllipticLocalChartPoint
 public import FLT.Mazur.EllipticLocalCubicExpansion
+public import FLT.Mazur.EllipticLocalDepth
 public import FLT.Mazur.EllipticLocalEvaluation
 public import FLT.Mazur.EllipticLocalIntegerMultiplication
 public import FLT.Mazur.EllipticLocalMultiplication
 public import FLT.Mazur.EllipticLocalValuation
+public import FLT.Mazur.EllipticPadicKernel
+public import FLT.Mazur.EllipticPadicSpecialization
+public import FLT.Mazur.EllipticPrimeToResidueSpecialization
 public import FLT.Mazur.EllipticProjectiveReduction
 public import FLT.Mazur.EllipticReductionAffineAddition
 public import FLT.Mazur.EllipticReductionInfinityChart
@@ -2647,6 +2651,8 @@ public import FLT.Mazur.EllipticReductionRelation
 public import FLT.Mazur.EllipticReductionTranslation
 public import FLT.Mazur.EllipticSmoothReduction
 public import FLT.Mazur.EllipticSmoothReductionAddition
+public import FLT.Mazur.EllipticUnramifiedKernel
+public import FLT.Mazur.EllipticUnramifiedSpecialization
 public import FLT.Mazur.EllipticUnramifiedTorsion
 public import FLT.Mazur.EtaleCoordinate
 public import FLT.Mazur.EtaleDimGe
@@ -2939,6 +2945,7 @@ public import FLT.Mazur.OverPoints
 public import FLT.Mazur.OverPullbackCoherence
 public import FLT.Mazur.OverPullbackCoproduct
 public import FLT.Mazur.OverPullbackLocalPushout
+public import FLT.Mazur.PadicValuationRing
 public import FLT.Mazur.PinchingAffineDescent
 public import FLT.Mazur.PinchingChartBaseChange
 public import FLT.Mazur.PinchingNeighborhoods
