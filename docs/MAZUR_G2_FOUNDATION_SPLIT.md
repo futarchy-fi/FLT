@@ -754,3 +754,49 @@ Validation is reproducible per module with foreground
 The untracked W18 handoff records checked-at receipts, declaration-level axiom
 checks, source caps, commits, main ancestry, and the required root build.
 No result here removes `Mazur_statement` from the endpoint.
+
+
+## W19: actual refined data and reconstruction-chart data
+
+The first open W18 item is complete. `AffineGeometricOverlapRefinement.data`
+constructs the refined `AffineGeometricDescent.Data` from the original datum
+and the commutative ring square. Both equations are proved: the existing
+W18 diagonal law and the new `overlap_cocycle`. No refined equation is an
+additional hypothesis.
+
+| Module (`FLT.Mazur.` prefix) | Proved interface |
+| --- | --- |
+| AffinePullbackNormalization | Objectwise pullback conjugation equals general scheme normalization |
+| AffineFiberProductCocycle | Affine pair transport and the categorical fiber-product cocycle agree |
+| AffineTripleOverlapRefinement | Double and triple tensor ring maps, with all three coordinate squares |
+| AffineTripleOverlapRefinementSquares | Actual triple-spectrum map and all three categorical pair squares |
+| SchemeOverlapRefinementTripleCocycle | Commuting triple-overlap squares preserve the original cocycle under restriction |
+| AffineFiberProductCocycleChart | The categorical affine cocycle equals the general scheme predicate on its actual maps |
+| AffineFiberProductRefinementCocycle | Apply those squares to preserve the actual affine categorical cocycle |
+| AffineGeometricRefinementData | Construct the refined geometric datum with its proved diagonal and cocycle laws |
+| AffineCoefficientChartDatum | A coefficient reconstruction chart transports canonical tensor data and intertwines coactions |
+| AffineGeometricChartDatum | Construct actual geometric chart data and prove its reconstruction coaction compatibility |
+
+The last two modules start W18 item 2. `chartData_compatible` concerns the
+constructed `chartData`, not the actual datum `AffineGeometricOverlapRefinement.data`.
+Proving that these two data agree for `AffineDescentRefinement.reconstruction`
+remains necessary before applying the W17 refinement comparison unconditionally.
+The interrupted uniqueness attempt is retained outside FLT/ and is not a result.
+
+Continue in this order:
+
+1. Identify the actual refined overlap with the geometric datum determined by
+   its reconstruction's coefficient chart. A missing intermediate comparison
+   identifies the geometric overlap of a pullback sheaf with its canonical
+   coefficient datum, and proves that comparison respects refinement squares.
+   Prove `CoactionCompatible` for the actual refined datum; apply W17 comparison
+   and reconstruction, then prove identity/composition coherence by uniqueness.
+2. Glue the objects and maps across affine covers to finish P9e.
+3. Bridge geometric locally-free rank one to invertible affine coefficients.
+4. Continue P10–P21, including the actual modular curve and Jacobian producers.
+
+Read-only validation commands remain the per-module build, single-module
+linter, and originating-module axiom audit. The untracked W19 handoff records
+checked-at receipts and the root build after merging main. The endpoint check
+`rg -n Mazur_statement FLT/Assumptions/Mazur.lean FermatsLastTheorem.lean`
+still finds the Mazur assumption; this checkpoint does not remove it.

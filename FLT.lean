@@ -2503,6 +2503,7 @@ public import FLT.Mazur.AffineCartesianSectionScalars
 public import FLT.Mazur.AffineClosedModuleDescent
 public import FLT.Mazur.AffineCoalgebraDescentRecognition
 public import FLT.Mazur.AffineCoalgebraSheafNaturality
+public import FLT.Mazur.AffineCoefficientChartDatum
 public import FLT.Mazur.AffineCoefficientUnitLaws
 public import FLT.Mazur.AffineCoherent
 public import FLT.Mazur.AffineCoherentSubmoduleExtension
@@ -2533,10 +2534,14 @@ public import FLT.Mazur.AffineDirectTripleSections
 public import FLT.Mazur.AffineDirectTripleTransport
 public import FLT.Mazur.AffineFaithfullyFlatEpimorphisms
 public import FLT.Mazur.AffineFaithfullyFlatPullbackFaithful
+public import FLT.Mazur.AffineFiberProductCocycle
+public import FLT.Mazur.AffineFiberProductCocycleChart
 public import FLT.Mazur.AffineFiberProductDiagonal
 public import FLT.Mazur.AffineFiberProductOverlap
 public import FLT.Mazur.AffineFiberProductPairTransport
+public import FLT.Mazur.AffineFiberProductRefinementCocycle
 public import FLT.Mazur.AffineFpqcRefinement
+public import FLT.Mazur.AffineGeometricChartDatum
 public import FLT.Mazur.AffineGeometricDatumComparison
 public import FLT.Mazur.AffineGeometricDescent
 public import FLT.Mazur.AffineGeometricDescentComposition
@@ -2546,6 +2551,7 @@ public import FLT.Mazur.AffineGeometricMapComparison
 public import FLT.Mazur.AffineGeometricOverlap
 public import FLT.Mazur.AffineGeometricOverlapRefinement
 public import FLT.Mazur.AffineGeometricOverlapRefinementDiagonal
+public import FLT.Mazur.AffineGeometricRefinementData
 public import FLT.Mazur.AffineGeometricTensorCocycle
 public import FLT.Mazur.AffineGeometricTensorDatum
 public import FLT.Mazur.AffineIdealPowerExtension
@@ -2596,6 +2602,7 @@ public import FLT.Mazur.AffinePullbackEpiReflection
 public import FLT.Mazur.AffinePullbackHomExt
 public import FLT.Mazur.AffinePullbackIdeal
 public import FLT.Mazur.AffinePullbackIntersection
+public import FLT.Mazur.AffinePullbackNormalization
 public import FLT.Mazur.AffinePushforwardCohomology
 public import FLT.Mazur.AffinePushforwardQuasicoherent
 public import FLT.Mazur.AffineQuasiCoherentBaseChange
@@ -2625,6 +2632,8 @@ public import FLT.Mazur.AffineTripleOverlapCoefficients
 public import FLT.Mazur.AffineTripleOverlapEvaluation
 public import FLT.Mazur.AffineTripleOverlapMaps
 public import FLT.Mazur.AffineTripleOverlapPullback
+public import FLT.Mazur.AffineTripleOverlapRefinement
+public import FLT.Mazur.AffineTripleOverlapRefinementSquares
 public import FLT.Mazur.AffineTripleUnitCoefficients
 public import FLT.Mazur.AffineTrivialLineSectionOpen
 public import FLT.Mazur.AmpleAffineBase
@@ -3877,6 +3886,7 @@ public import FLT.Mazur.SchemeOverlapRefinement
 public import FLT.Mazur.SchemeOverlapRefinementCocycle
 public import FLT.Mazur.SchemeOverlapRefinementCoherence
 public import FLT.Mazur.SchemeOverlapRefinementDiagonal
+public import FLT.Mazur.SchemeOverlapRefinementTripleCocycle
 public import FLT.Mazur.SchemeOverlapTransportComposition
 public import FLT.Mazur.SchemePicardClasses
 public import FLT.Mazur.SchemePicardGroup
