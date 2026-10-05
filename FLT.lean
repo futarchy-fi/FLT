@@ -2528,6 +2528,7 @@ public import FLT.Mazur.AffineDirectTriplePureTransport
 public import FLT.Mazur.AffineDirectTripleSections
 public import FLT.Mazur.AffineDirectTripleTransport
 public import FLT.Mazur.AffineFaithfullyFlatEpimorphisms
+public import FLT.Mazur.AffineFiberProductOverlap
 public import FLT.Mazur.AffineFpqcRefinement
 public import FLT.Mazur.AffineGeometricDatumComparison
 public import FLT.Mazur.AffineGeometricOverlap
