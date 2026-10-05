@@ -2501,6 +2501,7 @@ public import FLT.Mazur.AffineBaseSectionFunctor
 public import FLT.Mazur.AffineBranchSequence
 public import FLT.Mazur.AffineCartesianSectionScalars
 public import FLT.Mazur.AffineClosedModuleDescent
+public import FLT.Mazur.AffineCoalgebraDescentRecognition
 public import FLT.Mazur.AffineCoalgebraSheafNaturality
 public import FLT.Mazur.AffineCoefficientUnitLaws
 public import FLT.Mazur.AffineCoherent
