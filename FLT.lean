@@ -2794,6 +2794,7 @@ public import FLT.Mazur.EllipticNodeDepthNormalization
 public import FLT.Mazur.EllipticNodeDepthStep
 public import FLT.Mazur.EllipticNodeDifferenceCoordinates
 public import FLT.Mazur.EllipticNodeDifferenceFactors
+public import FLT.Mazur.EllipticNodeDifferenceLabels
 public import FLT.Mazur.EllipticNodeDiscriminantDepth
 public import FLT.Mazur.EllipticNodeEqualDepthSlope
 public import FLT.Mazur.EllipticNodeLabelDescent
@@ -2801,6 +2802,7 @@ public import FLT.Mazur.EllipticNodeLabelFibers
 public import FLT.Mazur.EllipticNodeLabelSeparation
 public import FLT.Mazur.EllipticNodeMiddleAddition
 public import FLT.Mazur.EllipticNodeMiddleLabels
+public import FLT.Mazur.EllipticNodeMixedLabels
 public import FLT.Mazur.EllipticNodeOppositeAddition
 public import FLT.Mazur.EllipticNodeOppositeLabels
 public import FLT.Mazur.EllipticNodeOppositeSlope
