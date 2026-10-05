@@ -317,8 +317,8 @@ Recheck each module using `LEAN_NUM_THREADS=2 lake build MODULE` and
 module. These exports are the evidence for the table; the W5 handoff records
 build, lint, axiom-audit, and integration results with their check times.
 
-The first remaining step is to prove the scalar/unit and morphism laws of
-`AffineIteratedPullbackSections.liftSections` without expensive conversion
+At the W5 handoff, the first remaining step was to prove the scalar/unit and
+morphism laws of `AffineIteratedPullbackSections.liftSections` without expensive conversion
 between additive global sections and module-valued affine sections. The
 attempted `liftSections_unit` and `liftSections_map` proofs exceeded the
 default kernel budget. A bounded larger-budget attempt was interrupted at
@@ -333,3 +333,32 @@ reverse diagonal/cocycle laws, exact round-trips, and coherence with the
 categorical fiber-product datum are still the next P9b obligations. P9d,
 P9e, representability, actual `J0(p)`, and Abel–Jacobi at infinity follow only
 after the earlier interfaces are proved.
+
+
+## W6: normalized coefficient lifting laws
+
+`AffineCoefficientUnitLaws` gives the generic coefficient unit followed by
+an arbitrary sheaf map: evaluation, scalar compatibility, and naturality
+under conjugated pullback maps. Its unbundled-ring scalar specialization
+keeps the sheaf objects abstract when converting the ring-map coercion.
+
+`AffineIteratedPullbackLaws` proves the previously missing `liftSections_unit`,
+`liftSections_smul_unit`, and `liftSections_map`. It also exports the scalar
+law on every section, an evaluation lemma, and the equality with the generic
+construction. The equality is rewritten explicitly before specialization;
+this avoids the kernel timeouts encountered by direct definitional conversion.
+Neither module changes the heartbeat budget.
+
+Checked 2026-10-05 using a foreground `LEAN_NUM_THREADS=2 lake build MODULE`
+and `LEAN_NUM_THREADS=2 lake exe runLinter MODULE` for each module. The module
+builds took 2.4 and 3.1 seconds. `G2_W6_AXIOMS.lean` audited all 12 originating
+declarations; only `propext`, `Classical.choice`, and `Quot.sound` occurred.
+Re-run those commands and the audit for current evidence. Integration checks
+and their timestamps are recorded in the untracked W6 handoff.
+
+The next open item is still the three actual pair-transport coefficient
+comparisons and the full forward tensor cocycle. The attempted triple-overlap
+modules are unverified drafts outside the source tree, not library exports.
+Reverse overlap reconstruction, reverse diagonal/cocycle, exact round-trips,
+categorical fiber-product coherence, geometric P9d/P9e, and P10–P21 remain
+open. These lifting laws do not remove `Mazur_statement` from the endpoint.
