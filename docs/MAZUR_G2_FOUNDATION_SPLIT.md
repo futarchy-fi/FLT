@@ -657,3 +657,100 @@ of the chosen reconstruction isomorphisms. P10–P21 (relative Picard comparison
 cohomology/base change, representability, and the actual modular-curve/Jacobian
 producer) remain separate obligations. These results do not remove
 `Mazur_statement` from the endpoint.
+
+## W17: affine refinement reconstruction and recognition
+
+The following modules develop the first remaining W16 item. Each can be checked
+with `LEAN_NUM_THREADS=2 lake build FLT.Mazur.MODULE` followed by
+`LEAN_NUM_THREADS=2 lake exe runLinter FLT.Mazur.MODULE`, one module at a time.
+Declaration-level axiom receipts and checked-at validation are in the untracked
+`G2_W17_*_AXIOMS.log` and `MAZUR_G2_W17_DONE.md` handoff.
+
+| Module (`FLT.Mazur.` prefix) | Proved interface |
+| --- | --- |
+| AffineRefinementPullback | Natural comparison of iterated pullbacks around a commutative affine square; transport of reconstruction and its map square |
+| AffineQuasicoherentPullbackFaithful | Faithfully flat pullback detects maps between arbitrary affine quasi-coherent sheaves and verifies proposed inverses |
+| AffineDescentRefinementReconstruction | Restrict a descended sheaf and its reconstruction; restricted descended maps satisfy the refined square and are uniquely determined by it |
+| AffineGeometricDescentComposition | Actual overlap compatibility is closed under identities and composition; descended maps and isomorphisms preserve composition |
+| AffineCoalgebraDescentRecognition | A canonical-coalgebra isomorphism identifies a candidate module with the descended module, uniquely with its specified coefficient reconstruction; the same square holds on tilde sheaves |
+| AffinePullbackCoefficientRecognition | Lifting the scalar-extension coefficient chart recovers the given geometric reconstruction exactly |
+| AffineGeometricDescentRecognition | An explicit coaction equation on a candidate's coefficient chart constructs its isomorphism to the descended sheaf, with exact reconstruction and uniqueness |
+| AffineDescentRefinementComparison | Conditional comparison between restriction and separately descended refined data; comparison is natural for compatible maps |
+| SchemeOverlapRefinement | Restrict actual categorical overlap isomorphisms along a commutative refinement square; preserve compatible maps and prove the defining conjugation square |
+| AffineGeometricOverlapRefinement | Normalize that restricted categorical overlap on the refined tensor-spectrum chart, with exact recovery of the categorical overlap |
+| SchemeOverlapRefinementCoherence | Maps of double overlaps preserve the diagonal, identity refinements, and composition as actual scheme-morphism equalities |
+
+The comparison hypothesis `AffineGeometricDescentRecognition.CoactionCompatible`
+is the equation intertwining the canonical scalar-extension coaction with the
+specified datum through the reconstruction's coefficient chart. It is not yet
+proved for the constructed refined overlap. In particular, the conditional
+comparison does not finish affine-refinement descent or scheme-level P9e.
+The last row concerns maps of schemes; it does not assert preservation of the
+sheaf overlap's diagonal or cocycle laws.
+
+The W18 checkpoint below advances this list. At the W17 checkpoint the order was:
+
+1. Prove that `AffineGeometricOverlapRefinement.overlap` preserves the geometric
+   diagonal and cocycle equations, and bundle it as the refined `Data`. The
+   scheme maps and projection comparisons are in `SchemeOverlapRefinement`;
+   its companion coherence module supplies the diagonal and composition maps.
+2. Prove `CoactionCompatible` for `AffineDescentRefinement.reconstruction` and
+   this constructed datum. Apply `comparisonIso` and its reconstruction equation;
+   prove identity and composite coherence of the comparison isomorphisms by
+   faithful-flat uniqueness, including the pullback composition comparisons.
+3. Glue the objects and maps across affine covers to finish scheme-level P9e.
+4. Supply the geometric locally-free-rank-one to coefficient-invertibility
+   bridge before invoking affine line-bundle descent on geometric inputs.
+5. Continue P10–P21 as already ordered above. None of these modules removes
+   `Mazur_statement` or constructs the actual modular curve/Jacobian producer.
+
+
+## W18: sheaf diagonal preservation and cocycle transport
+
+The diagonal part of W17 item 1 is proved by
+`AffineGeometricOverlapRefinement.overlap_diagonal`. Its hypothesis is the
+original geometric `Data`; the refined diagonal equation is not an additional
+assumption. The cocycle infrastructure below does not yet discharge the
+refined affine cocycle or construct the refined `Data`.
+
+| Module (`FLT.Mazur.` prefix) | Proved interface |
+| --- | --- |
+| SheafPullbackPathComparison | Normalized path comparison, associativity, and both unit laws |
+| SchemeOverlapDiagonalChart | Actual sheaf diagonal equations survive chart normalization |
+| SheafPullbackRetractionSquare | Projection and diagonal squares commute with sheaf retraction comparisons |
+| SchemeOverlapRefinementDiagonal | The categorical overlap refinement preserves the sheaf diagonal equation |
+| SchemeOverlapDiagonalDetection | A chart containing the diagonal detects its sheaf equation |
+| AffineFiberProductDiagonal | Equivalence of affine and categorical diagonal laws; reconstruction preserves them |
+| AffineGeometricOverlapRefinementDiagonal | The constructed refined affine overlap has its geometric diagonal law |
+| SchemeOverlapTransportComposition | Successive normalized overlap transports agree with transport along the composite |
+| SchemeOverlapCocycleChart | Double-overlap chart normalization preserves and detects cocycles on a common triple test scheme |
+| SchemeOverlapCocyclePullback | Normalized pullback preserves composition and restricts a cocycle to another triple test scheme |
+| SchemeOverlapBaseChange | Changing the coordinate sheaf base commutes with pair transport and preserves composition |
+| SchemeOverlapRefinementCocycle | Restriction preserves a cocycle on specified composite pair maps; its restriction equals the existing categorical refinement |
+| AffineFiberProductPairTransport | Pair maps from the affine triple overlap to the categorical double overlap, their projection squares, and coordinate sheaf transports |
+
+`SchemeOverlapRefinementCocycle.restrict_cocycle` takes the original overlap's
+cocycle on the composite pair maps from the refined triple test scheme.
+It does not assume the restricted overlap's cocycle. To apply it to affine
+refinement, construct the map from the refined affine triple overlap to the
+original one, prove its coordinate and pair squares, and pull back the original
+cocycle using `SchemeOverlapCocycleChart.pullback_cocycle`.
+
+Continue in this order:
+
+1. Compare affine pair transport with `AffineGeometricOverlap.fiberProductTransport`,
+   then complete the affine triple-overlap refinement and cocycle comparison.
+   Prove `AffineGeometricOverlapRefinement.overlap` has the cocycle and combine
+   it with `overlap_diagonal` to produce the refined `AffineGeometricDescent.Data`.
+2. Prove `CoactionCompatible` for the W17 reconstruction and the constructed
+   refined datum, then comparison identity/composition coherence by uniqueness.
+3. Glue across affine covers to finish P9e.
+4. Bridge geometric locally-free rank one to invertible affine coefficients.
+5. Continue P10–P21, including the actual modular curve and Jacobian producers.
+
+Validation is reproducible per module with foreground
+`LEAN_NUM_THREADS=2 lake build FLT.Mazur.MODULE` and
+`LEAN_NUM_THREADS=2 lake exe runLinter FLT.Mazur.MODULE`.
+The untracked W18 handoff records checked-at receipts, declaration-level axiom
+checks, source caps, commits, main ancestry, and the required root build.
+No result here removes `Mazur_statement` from the endpoint.
