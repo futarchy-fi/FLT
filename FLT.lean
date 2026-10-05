@@ -2550,6 +2550,7 @@ public import FLT.Mazur.AffineFaithfullyFlatPullbackFaithful
 public import FLT.Mazur.AffineFiberProductCocycle
 public import FLT.Mazur.AffineFiberProductCocycleChart
 public import FLT.Mazur.AffineFiberProductDiagonal
+public import FLT.Mazur.AffineFiberProductMapCompatibility
 public import FLT.Mazur.AffineFiberProductOverlap
 public import FLT.Mazur.AffineFiberProductPairTransport
 public import FLT.Mazur.AffineFiberProductRefinementCocycle
