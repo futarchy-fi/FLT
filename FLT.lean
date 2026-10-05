@@ -2408,6 +2408,7 @@ public import FLT.Mazur.AmplePrincipalLocality
 public import FLT.Mazur.AnnihilatorCoherence
 public import FLT.Mazur.AnnihilatorStalk
 public import FLT.Mazur.AnnihilatorSubsheaf
+public import FLT.Mazur.BaseChangedPresentationModel
 public import FLT.Mazur.BinaryOpenDescent
 public import FLT.Mazur.CartesianOpenSectionMap
 public import FLT.Mazur.CartesianSectionRestriction
@@ -2593,6 +2594,7 @@ public import FLT.Mazur.DivisorStalkLength
 public import FLT.Mazur.DivisorTensorSequence
 public import FLT.Mazur.DivisorTwistedDegree
 public import FLT.Mazur.DivisorTwistedSequence
+public import FLT.Mazur.EnlargedPresentationModel
 public import FLT.Mazur.EtaleCoordinate
 public import FLT.Mazur.EtaleDimGe
 public import FLT.Mazur.EtaleDimLe
@@ -2719,6 +2721,7 @@ public import FLT.Mazur.IdealTwistTransitionExact
 public import FLT.Mazur.IdealWitnessSupportInduction
 public import FLT.Mazur.IncreasingCechComplex
 public import FLT.Mazur.InjectiveHorseshoe
+public import FLT.Mazur.IntegerModelBaseChange
 public import FLT.Mazur.IntegerModelEventualEquality
 public import FLT.Mazur.IntegerModelEventualInverse
 public import FLT.Mazur.IntegerModelEventualUnits
@@ -3086,12 +3089,18 @@ public import FLT.Mazur.PolynomialRelationIntegerModel
 public import FLT.Mazur.PowerSeriesQuotientCompletion
 public import FLT.Mazur.PowerSeriesSubstitutionEquiv
 public import FLT.Mazur.PrincipalAffineRefinement
+public import FLT.Mazur.PrincipalChartIntegerDescent
+public import FLT.Mazur.PrincipalChartOpenImmersion
 public import FLT.Mazur.PrincipalComparisonIntegerModel
+public import FLT.Mazur.PrincipalComparisonRecovery
 public import FLT.Mazur.PrincipalGeneratorExtension
+public import FLT.Mazur.PrincipalIntegerModelIsomorphism
 public import FLT.Mazur.PrincipalLocalizationGeneration
 public import FLT.Mazur.PrincipalLocalizationIntersection
 public import FLT.Mazur.PrincipalLocalizationPullback
+public import FLT.Mazur.PrincipalModelBaseChange
 public import FLT.Mazur.PrincipalOpenIntegerModel
+public import FLT.Mazur.PrincipalPresentationIntegerModel
 public import FLT.Mazur.PrincipalSectionExtension
 public import FLT.Mazur.PrincipalSubmoduleCoordinates
 public import FLT.Mazur.PrincipalSubmoduleOverlap
