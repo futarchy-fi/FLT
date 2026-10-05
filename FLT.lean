@@ -3964,6 +3964,7 @@ public import FLT.Mazur.SchemePullbackSquareComposition
 public import FLT.Mazur.SchemePullbackSquareIdentity
 public import FLT.Mazur.SchemeReconstructionOverlapSquare
 public import FLT.Mazur.SchemeRefinementReconstruction
+public import FLT.Mazur.SchemeTripleOverlap
 public import FLT.Mazur.SealedLineRestriction
 public import FLT.Mazur.SealedLineRestrictionSections
 public import FLT.Mazur.SectionBaseLocalization
