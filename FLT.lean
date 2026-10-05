@@ -2398,6 +2398,7 @@ public import FLT.Mazur.AffineNodeNormalizationExact
 public import FLT.Mazur.AffineOpenCartesianSections
 public import FLT.Mazur.AffineOpenCechBoundary
 public import FLT.Mazur.AffineOpenDenominators
+public import FLT.Mazur.AffineOpenImmersionLocalizationCriterion
 public import FLT.Mazur.AffinePullbackEpiReflection
 public import FLT.Mazur.AffinePullbackIdeal
 public import FLT.Mazur.AffinePullbackIntersection
@@ -2534,6 +2535,7 @@ public import FLT.Mazur.CoherentSubsheafACC
 public import FLT.Mazur.CoherentSupport
 public import FLT.Mazur.CoherentSupportedDecomposition
 public import FLT.Mazur.ComaximalIdealSequence
+public import FLT.Mazur.CommonCoefficientStage
 public import FLT.Mazur.CommonIdealDirectSum
 public import FLT.Mazur.CommonModelEventualEquality
 public import FLT.Mazur.CommonRelationIntegerModel
@@ -2630,6 +2632,8 @@ public import FLT.Mazur.FiniteDiagramIntegerModel
 public import FLT.Mazur.FiniteDivisorCohomology
 public import FLT.Mazur.FiniteDivisorComponentAvoidance
 public import FLT.Mazur.FinitePresentationIntegerModel
+public import FLT.Mazur.FinitePrincipalChartIntegerDescent
+public import FLT.Mazur.FinitePrincipalTargetRefinement
 public import FLT.Mazur.FinitePushforwardAmpleVanishing
 public import FLT.Mazur.FinitePushforwardCoherent
 public import FLT.Mazur.FinitePushforwardIdealImage
@@ -2735,12 +2739,15 @@ public import FLT.Mazur.IdealWitnessSupportInduction
 public import FLT.Mazur.IncreasingCechComplex
 public import FLT.Mazur.InjectiveHorseshoe
 public import FLT.Mazur.IntegerModelBaseChange
+public import FLT.Mazur.IntegerModelDiagramTransport
 public import FLT.Mazur.IntegerModelEventualEquality
 public import FLT.Mazur.IntegerModelEventualInverse
 public import FLT.Mazur.IntegerModelEventualUnits
 public import FLT.Mazur.IntegerModelHomExtension
 public import FLT.Mazur.IntegerModelHomTransport
 public import FLT.Mazur.IntegerModelIsomorphismDescent
+public import FLT.Mazur.IntegerModelOpenImmersionBaseChange
+public import FLT.Mazur.IntegerModelPullbackTransport
 public import FLT.Mazur.IntegerModelTransition
 public import FLT.Mazur.IntegralBase
 public import FLT.Mazur.IntegralClosedSupport
@@ -2774,6 +2781,8 @@ public import FLT.Mazur.LocalizationDegreePiece
 public import FLT.Mazur.LocalizationDegreeShift
 public import FLT.Mazur.LocalizationJointRestriction
 public import FLT.Mazur.LocalizedAdicCompletion
+public import FLT.Mazur.LocalizedIntegerChartComparison
+public import FLT.Mazur.LocalizedIntegerModelIsomorphism
 public import FLT.Mazur.MarkedIntegerModel
 public import FLT.Mazur.ModuleBinarySectionGluing
 public import FLT.Mazur.ModuleCechScalar
@@ -3114,10 +3123,12 @@ public import FLT.Mazur.PrincipalLocalizationPullback
 public import FLT.Mazur.PrincipalModelBaseChange
 public import FLT.Mazur.PrincipalOpenIntegerModel
 public import FLT.Mazur.PrincipalPresentationIntegerModel
+public import FLT.Mazur.PrincipalRefinementOpenImmersion
 public import FLT.Mazur.PrincipalSectionExtension
 public import FLT.Mazur.PrincipalSubmoduleCoordinates
 public import FLT.Mazur.PrincipalSubmoduleOverlap
 public import FLT.Mazur.PrincipalSubmoduleSectionLocalization
+public import FLT.Mazur.PrincipalTargetRestrictionIsomorphism
 public import FLT.Mazur.ProjectiveActionFieldExtension
 public import FLT.Mazur.ProjectiveActionPullback
 public import FLT.Mazur.ProjectiveAffineChartEmbedding
