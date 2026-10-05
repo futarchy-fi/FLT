@@ -32,7 +32,7 @@ variable (w : φ ≫ b = a ≫ ψ) (v : ψ ≫ d = c ≫ χ)
 variable {A : (Spec R).Modules} [A.IsQuasicoherent]
 variable {M : (Spec S).Modules} [M.IsQuasicoherent] (D : Data φ M)
 variable (e : (pullback (Spec.map φ)).obj A ≅ M)
-local instance {T U : CommRingCat.{u}} (f : T ⟶ U)
+local instance isQuasicoherent_compositionDataPullback {T U : CommRingCat.{u}} (f : T ⟶ U)
     (P : (Spec T).Modules) [P.IsQuasicoherent] :
     ((pullback (Spec.map f)).obj P).IsQuasicoherent :=
   AffineModulePullbackSections.isQuasicoherent_pullback f P
