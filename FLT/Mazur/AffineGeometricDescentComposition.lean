@@ -29,7 +29,7 @@ variable (D : Data φ M) (E : Data φ N) (F : Data φ P)
 omit [M.IsQuasicoherent] in
 /-- The identity map satisfies the actual geometric overlap square. -/
 theorem mapCompatible_id : MapCompatible φ D D (𝟙 M) := by
-  letI := φ.hom.toAlgebra
+  let _ := φ.hom.toAlgebra
   change AffineGeometricMapComparison.Compatible R S M M D.val D.val (𝟙 M)
   simp [AffineGeometricMapComparison.Compatible]
 
@@ -38,7 +38,7 @@ omit [M.IsQuasicoherent] [N.IsQuasicoherent] [P.IsQuasicoherent] in
 theorem mapCompatible_comp (f : M ⟶ N) (g : N ⟶ P)
     (hf : MapCompatible φ D E f) (hg : MapCompatible φ E F g) :
     MapCompatible φ D F (f ≫ g) := by
-  letI := φ.hom.toAlgebra
+  let _ := φ.hom.toAlgebra
   change AffineGeometricMapComparison.Compatible R S M N D.val E.val f at hf
   change AffineGeometricMapComparison.Compatible R S N P E.val F.val g at hg
   change AffineGeometricMapComparison.Compatible R S M P D.val F.val (f ≫ g)
