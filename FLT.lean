@@ -2788,6 +2788,7 @@ public import FLT.Mazur.DivisorTwistedDegree
 public import FLT.Mazur.DivisorTwistedSequence
 public import FLT.Mazur.EllipticAdditiveDepthRefinement
 public import FLT.Mazur.EllipticAdditiveFirstBranches
+public import FLT.Mazur.EllipticAdditiveStarTranslation
 public import FLT.Mazur.EllipticAdditiveTranslationDepth
 public import FLT.Mazur.EllipticComponentBaseChange
 public import FLT.Mazur.EllipticComponentQuotient
@@ -2896,6 +2897,7 @@ public import FLT.Mazur.EllipticNormalizedStarZero
 public import FLT.Mazur.EllipticNormalizedTypeII
 public import FLT.Mazur.EllipticNormalizedTypeIII
 public import FLT.Mazur.EllipticNormalizedTypeIV
+public import FLT.Mazur.EllipticNormalizedTypeIVStar
 public import FLT.Mazur.EllipticPadicKernel
 public import FLT.Mazur.EllipticPadicSpecialization
 public import FLT.Mazur.EllipticPointMapCoordinates
@@ -2910,6 +2912,8 @@ public import FLT.Mazur.EllipticReductionKernel
 public import FLT.Mazur.EllipticReductionOpposite
 public import FLT.Mazur.EllipticReductionRelation
 public import FLT.Mazur.EllipticReductionTranslation
+public import FLT.Mazur.EllipticRepeatedCubicPoint
+public import FLT.Mazur.EllipticRepeatedCubicTranslation
 public import FLT.Mazur.EllipticShearDescent
 public import FLT.Mazur.EllipticShearedComponentExtension
 public import FLT.Mazur.EllipticSingularDivisibility
@@ -2929,6 +2933,8 @@ public import FLT.Mazur.EllipticTypeIVAddition
 public import FLT.Mazur.EllipticTypeIVComponentComparison
 public import FLT.Mazur.EllipticTypeIVCoordinates
 public import FLT.Mazur.EllipticTypeIVResidue
+public import FLT.Mazur.EllipticTypeIVScaledComparison
+public import FLT.Mazur.EllipticTypeIVStarCoordinates
 public import FLT.Mazur.EllipticUnramifiedKernel
 public import FLT.Mazur.EllipticUnramifiedSpecialization
 public import FLT.Mazur.EllipticUnramifiedTorsion
@@ -3650,6 +3656,7 @@ public import FLT.Mazur.RelativeSerreLocalizedTower
 public import FLT.Mazur.RelativeSerreVanishing
 public import FLT.Mazur.RelativeSums
 public import FLT.Mazur.RelativeVeryAmpleLineBundle
+public import FLT.Mazur.RepeatedCubicRoots
 public import FLT.Mazur.RightDerivedDimensionShift
 public import FLT.Mazur.RingEqualizerAwayEndpoint
 public import FLT.Mazur.RingEqualizerDescent
