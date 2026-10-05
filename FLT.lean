@@ -2630,6 +2630,7 @@ public import FLT.Mazur.AffineRefinementComposition
 public import FLT.Mazur.AffineRefinementIdentity
 public import FLT.Mazur.AffineRefinementPullback
 public import FLT.Mazur.AffineRefinementReconstructionMap
+public import FLT.Mazur.AffineRefinementReconstructionRecognition
 public import FLT.Mazur.AffineRestrictionImmersion
 public import FLT.Mazur.AffineReverseGeometricOverlap
 public import FLT.Mazur.AffineReverseOverlapCocycle
