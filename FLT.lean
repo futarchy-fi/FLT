@@ -2907,7 +2907,9 @@ public import FLT.Mazur.EllipticDoubleRootIteration
 public import FLT.Mazur.EllipticDoubleRootOddBound
 public import FLT.Mazur.EllipticDoubleRootSeparable
 public import FLT.Mazur.EllipticExtensionChartClosure
+public import FLT.Mazur.EllipticExtensionClosureFinite
 public import FLT.Mazur.EllipticExtensionClosureQuasiFinite
+public import FLT.Mazur.EllipticExtensionClosureRankBound
 public import FLT.Mazur.EllipticExtensionPrimeSubgroup
 public import FLT.Mazur.EllipticFormalAddition
 public import FLT.Mazur.EllipticFormalAdditionComparison
@@ -3083,10 +3085,15 @@ public import FLT.Mazur.EllipticStarZeroSlope
 public import FLT.Mazur.EllipticSubgroupChartClosure
 public import FLT.Mazur.EllipticSubgroupChartGeneric
 public import FLT.Mazur.EllipticSubgroupClosedFiberPoints
+public import FLT.Mazur.EllipticSubgroupClosureFinite
 public import FLT.Mazur.EllipticSubgroupClosureGluing
 public import FLT.Mazur.EllipticSubgroupClosureProperties
 public import FLT.Mazur.EllipticSubgroupClosureQuasiFinite
 public import FLT.Mazur.EllipticSubgroupClosureSeparated
+public import FLT.Mazur.EllipticSubgroupGenericSection
+public import FLT.Mazur.EllipticSubgroupGlobalAlgebra
+public import FLT.Mazur.EllipticSubgroupGlobalEvaluation
+public import FLT.Mazur.EllipticSubgroupGlobalRankBound
 public import FLT.Mazur.EllipticSubgroupIntegralEvaluation
 public import FLT.Mazur.EllipticSubgroupIntegralSection
 public import FLT.Mazur.EllipticSubgroupOverlapClosure
@@ -3096,6 +3103,8 @@ public import FLT.Mazur.EllipticSubgroupOverlapGraph
 public import FLT.Mazur.EllipticSubgroupOverlapLocalization
 public import FLT.Mazur.EllipticSubgroupPointKernels
 public import FLT.Mazur.EllipticSubgroupPointLocalization
+public import FLT.Mazur.EllipticSubgroupSectionCover
+public import FLT.Mazur.EllipticSubgroupSectionGenericCompatibility
 public import FLT.Mazur.EllipticTangentParameterHom
 public import FLT.Mazur.EllipticTripleRootBranches
 public import FLT.Mazur.EllipticTypeIIIDepth
