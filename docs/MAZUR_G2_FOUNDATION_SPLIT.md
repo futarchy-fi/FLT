@@ -489,3 +489,137 @@ Then construct reverse overlap, diagonal/cocycle, exact round-trips, and
 categorical fiber-product coherence before geometric P9d/P9e and P10–P21.
 The new chart has not been proved equal to W9's `directSections` or W8's
 iterated `lastSections`. No removal of `Mazur_statement` is claimed.
+
+## W11: scaled transport through the actual pair pullbacks
+
+Three further leaves advance the first open W10 item:
+
+| Module | Result | Lines/cap |
+| --- | --- | --- |
+| `AffineDirectTripleMiddleBalance` | The pair12 second-chart lift and pair23 first-chart lift agree after multiplying by the omitted coordinate scalars | 49/240 |
+| `AffineScaledPullbackSections` | Conjugated pullback maps preserve scalar multiples of normalized units; a tensor-ring specialization retains abstract target sheaves | 52/240 |
+| `AffineScaledTripleTransport` | Actual normalized transport intertwines scaled coefficient sections for arbitrary pair map, coordinate maps, scalar, and overlap tensor | 67/240 |
+
+The scalar transport proof needs an intermediate tensor-ring specialization
+with abstract target sheaves. It aligns the scalar `Semiring` instances before
+substituting the concrete coordinate pullbacks, avoiding the kernel conversion
+that prevented the direct application of sheaf linearity. Both scalar transport
+equations use actual comparison morphisms; the second uses the existing
+`tensorEquiv_sections` reconstruction equation.
+
+Validation: separate foreground `LEAN_NUM_THREADS=2 lake build MODULE` and
+`LEAN_NUM_THREADS=2 lake exe runLinter MODULE` passed for all three modules on
+2026-10-05 at 05:39 UTC. The originating-declaration audit is
+`LEAN_NUM_THREADS=2 lake env lean G2_W11_AXIOMS.lean`; checked-at results and
+commits are recorded in the untracked W11 handoff.
+
+The full `transport23_coefficients` equation is still open at its join with
+`AffineDirectTripleAdditivity.sections`. The pure-tensor attempt exposes a
+remaining coefficient-module instance mismatch; even the variable-tensor
+composition currently times out during kernel checking. Thus the full forward
+cocycle and `toDatum` remain open. The reverse overlap, round-trips, categorical
+normalization coherence, geometric P9d/P9e, and P10–P21 remain in the same order.
+No geometric datum, representability witness, or Jacobian witness is assumed,
+and no removal of `Mazur_statement` is claimed.
+
+
+## W12: direct-chart join and pure last-pair transport
+
+`AffineDirectTripleTransport.transport23_outer` joins the scaled pair23
+transport to `AffineDirectTripleAdditivity.sections` for every overlap tensor.
+`AffineDirectTriplePureTransport.transport23_tmul` combines that join with
+`middleLift_balance`, proving actual last-pair transport on each pure inner
+tensor. Its `outer_smul` lemma aligns the scalar notation with an abstract
+sheaf target; the explicit tensor input keeps the coefficient instances fixed.
+Both concrete results use the existing actual sheaf maps and comparisons.
+
+`AffineTensorTransportAdditivity.transport_coefficients` proves the abstract
+additive extension from pure tensors to arbitrary coefficient tensors. Its
+specialization to the actual sheaf maps is a separate, unfinished obligation:
+the attempted specialization still incurs expensive conversions between
+bundled ring carriers and the triple tensor ring, and between expanded
+pullbacks and the `coordinate` abbreviation. The generic induction theorem
+alone does not establish the concrete `transport23_coefficients` equation.
+
+Validation on 2026-10-05: individual foreground builds and one-module lints
+for these three modules; originating-declaration axiom audit via
+`LEAN_NUM_THREADS=2 lake env lean G2_W12_AXIOMS.lean`. Checked-at evidence,
+commits, and the post-merge root-build result are in the untracked W12 handoff.
+The remaining order is the concrete additive specialization, full forward
+cocycle and `toDatum`, reverse overlap and round-trips, categorical
+normalization, geometric P9d/P9e, then P10–P21. `Mazur_statement` remains.
+
+
+## W13: concrete additive maps and a bundled generator criterion
+
+`AffineTripleCoefficientMaps` defines `coefficientTransport`, the actual
+pair23 section map after the scaled pair12 lift, and `coefficientAction`,
+the last-slot tensor action followed by the direct third-coordinate chart.
+`coefficientAction_apply` evaluates the latter on every tensor;
+`coefficientAction_tmul` evaluates it on generators. The pure evaluation
+uses an abstract tensor calculation before applying the actual section
+chart, avoiding reduction of the concrete sheaf construction.
+
+`AffineTripleCoefficientExtensionality.coefficientMaps_eq_iff` reduces
+identity of these two actual additive maps to their pure-tensor values.
+`coefficientMaps_eq_of_tmul` and
+`coefficientTransport_coefficients_of_tmul` use the evaluated right-hand
+side. They require a generator equation for the **bundled** transport map.
+They do not establish that hypothesis from the existing **unbundled**
+`transport23_tmul` theorem.
+
+The first ordered item therefore remains open. The next step is an
+evaluation bridge from `coefficientTransport` to the unbundled section
+formula, then use `transport23_tmul` to discharge the generator hypothesis.
+The attempted bridge elaborates after coercion simplification but still
+hits a kernel timeout; no failed bridge is imported. Full forward cocycle,
+`toDatum`, reverse overlap and round-trips, categorical normalization,
+geometric P9d/P9e, and P10–P21 remain in their previous order.
+`Mazur_statement` has not been removed.
+
+Checked at 2026-10-05T07:01:09.437602+00:00: separate foreground builds and module-only lints
+passed for both 81-line modules. Recheck with
+`LEAN_NUM_THREADS=2 lake build FLT.Mazur.AffineTripleCoefficientMaps` and the
+corresponding `AffineTripleCoefficientExtensionality` target, then run
+`lake exe runLinter MODULE` once for each module. The axiom audit and
+post-sync root-build evidence are in the untracked W13 handoff.
+
+
+## W15: arbitrary coefficients, the full cocycle, and the forward datum
+
+`AffineDirectTripleCoefficients.transport23_coefficients` extends the actual
+last-pair section formula to every coefficient tensor. It uses tensor induction
+with the sheaves kept abstract until the scalar instances have been fixed.
+This directly proves the unbundled equation requested after W13; the auxiliary
+bundled `coefficientTransport_apply` bridge is not needed by this route.
+
+`AffineGeometricTensorCocycle` evaluates the geometric `CocycleCompatible`
+equation on sections, combines the first-coordinate balance and the scaled
+pair12/pair13 transports, and proves `tensorEquiv_cocycle` for every `n,s,t`.
+The injective direct third-coordinate chart detects the resulting tensor
+identity. Explicit tensor type ascriptions keep the coefficient instances
+aligned; the composed section formulas use the expanded pair12/pair13 maps.
+
+`AffineGeometricTensorDatum.toDatum` constructs the actual `Datum R S
+(coefficients S M)` from a geometric overlap, `DiagonalCompatible`, and
+`CocycleCompatible`. Its four fields use the specified tensor isomorphism and
+proved scalar, diagonal, and cocycle equations. `toDatum_overlap_sections`
+reconstructs the given sheaf map on sections, and `toDatum_coaction_apply`
+identifies the coaction at the unit tensor factor. No descended object or
+Jacobian witness is a parameter. This forward construction uses the direct
+chart throughout and does not require an older iterated-chart comparison.
+
+The next obligation is the reverse geometric overlap from a tensor isomorphism
+respecting both scalar actions, followed by its diagonal/cocycle equations,
+exact round-trips, and categorical fiber-product normalization coherence.
+Geometric P9d/P9e and P10–P21 follow in their previous order. The forward datum
+alone does not remove `Mazur_statement`.
+
+The three modules have 89, 120, and 58 lines (cap 240 each). The coefficient
+specialization, full cocycle, and datum constructor each scope `maxRecDepth
+2048` to one declaration; heartbeat and memory limits are unchanged.
+Validation commands are individual `LEAN_NUM_THREADS=2 lake build MODULE`,
+individual `lake exe runLinter MODULE`, the declaration audit in the untracked
+`G2_W15_AXIOMS.lean`, and the post-merge `LEAN_NUM_THREADS=2 lake build FLT`.
+The checked-at receipts and remaining-work handoff are in the untracked
+`MAZUR_G2_W15_DONE.md`; this paragraph is not a completion claim for G2.
