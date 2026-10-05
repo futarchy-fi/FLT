@@ -2917,6 +2917,8 @@ public import FLT.Mazur.FiniteIntegerModelElementRelations
 public import FLT.Mazur.FiniteIntegerModelPullbacks
 public import FLT.Mazur.FiniteIntegerModelRelations
 public import FLT.Mazur.FiniteIntegerModelUnits
+public import FLT.Mazur.FiniteIntersectionCocycleModel
+public import FLT.Mazur.FiniteIntersectionCocycleUnits
 public import FLT.Mazur.FiniteIntersectionCoordinateGluing
 public import FLT.Mazur.FiniteIntersectionCoordinateSquares
 public import FLT.Mazur.FiniteIntersectionGluingRecovery
@@ -2925,7 +2927,9 @@ public import FLT.Mazur.FiniteIntersectionModelGluing
 public import FLT.Mazur.FiniteIntersectionScalarGluingOver
 public import FLT.Mazur.FiniteIntersectionScalarGluingRecovery
 public import FLT.Mazur.FiniteIntersectionSchemeDescent
+public import FLT.Mazur.FiniteIntersectionSectionComparison
 public import FLT.Mazur.FiniteIntersectionSectionDiagram
+public import FLT.Mazur.FiniteLineCocycleModel
 public import FLT.Mazur.FiniteLocalizedIntegerComparisons
 public import FLT.Mazur.FiniteOpenImmersionIntegerDescent
 public import FLT.Mazur.FinitePresentationIntegerModel
@@ -3061,6 +3065,7 @@ public import FLT.Mazur.IntegralClosedSupport
 public import FLT.Mazur.IntegralDimension
 public import FLT.Mazur.IntegralPointExtension
 public import FLT.Mazur.IntersectionDiagramGluing
+public import FLT.Mazur.IntersectionGluingCharts
 public import FLT.Mazur.IrreducibleComponentAmple
 public import FLT.Mazur.LaurentRingSurjectivity
 public import FLT.Mazur.LaurentTensor
@@ -3077,6 +3082,10 @@ public import FLT.Mazur.LineSectionTwistRestriction
 public import FLT.Mazur.LineSectionTwistSystem
 public import FLT.Mazur.LineSheafDualEvaluation
 public import FLT.Mazur.LineStructureProjection
+public import FLT.Mazur.LineTrivializationCocycle
+public import FLT.Mazur.LineTrivializationCocycleRecovery
+public import FLT.Mazur.LineTrivializationCoordinates
+public import FLT.Mazur.LinearCoordinateRatio
 public import FLT.Mazur.LocalCartierGeneratorDescent
 public import FLT.Mazur.LocalLineTwistLocalization
 public import FLT.Mazur.LocalizationCech
