@@ -2524,6 +2524,7 @@ public import FLT.Mazur.AffineDirectTripleBalance
 public import FLT.Mazur.AffineDirectTripleEvaluation
 public import FLT.Mazur.AffineDirectTripleMiddleBalance
 public import FLT.Mazur.AffineDirectTripleSections
+public import FLT.Mazur.AffineDirectTripleTransport
 public import FLT.Mazur.AffineFaithfullyFlatEpimorphisms
 public import FLT.Mazur.AffineFpqcRefinement
 public import FLT.Mazur.AffineGeometricOverlap
