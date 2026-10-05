@@ -159,6 +159,7 @@ public import FLT.EllipticCurve.CoefficientAction
 public import FLT.EllipticCurve.CoordinateRing
 public import FLT.EllipticCurve.CoordinateRingDedekind
 public import FLT.EllipticCurve.CubicCharts
+public import FLT.EllipticCurve.CubicProjectiveClosed
 public import FLT.EllipticCurve.CubicProjectiveCover
 public import FLT.EllipticCurve.CubicProjectiveMorphism
 public import FLT.EllipticCurve.CubicScheme

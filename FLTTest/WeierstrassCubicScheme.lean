@@ -5,7 +5,7 @@ Authors: krandder
 -/
 module
 
-import FLT.EllipticCurve.CubicProjectiveMorphism
+import FLT.EllipticCurve.CubicProjectiveClosed
 import Mathlib.Data.ZMod.Basic
 import Lean
 

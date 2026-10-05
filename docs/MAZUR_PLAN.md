@@ -227,6 +227,31 @@ The existing namespace-wide test now audits the new module transitively;
 no FLT arithmetic assumption has been removed.
 
 
+### Global closed immersion and properness — 2026-10-05
+
+`FLT/EllipticCurve/CubicProjectiveClosed.lean` closes the projective
+embedding/properness obligations from the preceding update. It proves
+that the inverse images of D+(Z) and D+(Y) are exactly the ordinary and
+infinity source charts. The resulting pullback identifications make the
+global restrictions the already constructed affine closed immersions.
+
+The homogeneous cubic has degree three and vanishes in both quotient
+chart rings. Its projective complement therefore has empty inverse
+image. D+(Z), D+(Y), and that complement cover the entire projective
+plane, so locality at the target proves `toProjective_isClosedImmersion`.
+Composition with the proper projective-plane projection proves
+`toBase_isProper` for every commutative coefficient ring and every
+Weierstrass equation, including singular equations and nonreduced bases.
+
+The existing namespace-wide axiom audit now imports this module.
+These are actual scheme-morphism theorems, without new arithmetic
+hypotheses. The next geometric obligations are smoothness for elliptic
+equations and the scheme-level group law, followed by the modular
+moduli construction. The integral modular curve, represented Jacobian,
+optimal Eisenstein quotient, and the remaining arithmetic steps of the
+1978 route are still missing; FLT's arithmetic assumptions are unchanged.
+
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
