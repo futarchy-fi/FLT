@@ -2860,6 +2860,7 @@ public import FLT.Mazur.EllipticAdditiveLaterBranches
 public import FLT.Mazur.EllipticAdditiveStarTranslation
 public import FLT.Mazur.EllipticAdditiveTorsionExclusion
 public import FLT.Mazur.EllipticAdditiveTranslationDepth
+public import FLT.Mazur.EllipticCompleteSemistableExtension
 public import FLT.Mazur.EllipticComponentBaseChange
 public import FLT.Mazur.EllipticComponentQuotient
 public import FLT.Mazur.EllipticComponentVariableChange
@@ -2875,6 +2876,7 @@ public import FLT.Mazur.EllipticDoubleRootEvenSlope
 public import FLT.Mazur.EllipticDoubleRootIteration
 public import FLT.Mazur.EllipticDoubleRootOddBound
 public import FLT.Mazur.EllipticDoubleRootSeparable
+public import FLT.Mazur.EllipticExtensionPrimeSubgroup
 public import FLT.Mazur.EllipticFormalAddition
 public import FLT.Mazur.EllipticFormalAdditionComparison
 public import FLT.Mazur.EllipticFormalAssociativity
@@ -3088,6 +3090,8 @@ public import FLT.Mazur.FiniteCechCyclesScalars
 public import FLT.Mazur.FiniteCechTermScalars
 public import FLT.Mazur.FiniteClosedIdealSection
 public import FLT.Mazur.FiniteClosedImmersionIntegerDescent
+public import FLT.Mazur.FiniteDVRAbsoluteRamification
+public import FLT.Mazur.FiniteDVRComplete
 public import FLT.Mazur.FiniteDiagramCoverModel
 public import FLT.Mazur.FiniteDiagramIntegerModel
 public import FLT.Mazur.FiniteDiagramUnitDescent
