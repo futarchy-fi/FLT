@@ -24,6 +24,21 @@ unframed image and prove its comparison to our functor, including how the
 specified row is recovered by a frame choice. Noetherianity of a framed
 ring and module finiteness of an unframed image are different gates.
 
+W64 constructs `hardlyTraceImageObject`, the closed-kernel presentation of
+the actual universal trace-ring image inside `hardlyFlatObject`, with its
+original residue field. `hardlyTraceImageEquiv` identifies it with the closed
+trace subalgebra. `exists_hardlyTraceImageLift_with_row` constructs a descended
+representation and a strict frame recovering the original HR representation
+and its row at two. The descended representation has the original determinant
+and is unramified away from 2p (`HardlyRamifiedTraceArithmetic`).
+
+This is not yet the comparison with KW II's completed tensor product or a
+proof of finite-flat descent to the smaller image ring. Noetherianity and
+p-adic module finiteness are still missing. The generic theorem
+`ProartinianCat.imageObject_isNoetherian` requires a Noetherian **source**;
+Noetherianity of a framed target would not imply Noetherianity of its subring.
+Check the saved W64 evidence with `python3 Scratch/LiftsW64/check.py`.
+
 `DeSmitLenstra/FramedCompletion` proves Noetherianity with a **finite group**
 parameter. `ProfiniteUniversalLift` constructs a limit over finite quotients;
 Noetherianity does not follow by taking this limit. Arithmetic control of the
