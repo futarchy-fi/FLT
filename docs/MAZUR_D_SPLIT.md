@@ -91,6 +91,11 @@ commit IDs after validation and the required post-merge root build.
 Checked 2026-10-05 02:43 UTC: all nine individual builds and linters passed
 without warnings; all 26 theorem audits contain only propext, Classical.choice
 and Quot.sound. Each module has 45–115 physical lines (cap 240).
+Proof commit: `c88c88cb`. Fetched main at `a57f98ff`, merged in `f25d8e1c`.
+Checked 2026-10-05 02:49 UTC: the foreground post-merge `lake build FLT`
+passed all 12,743 jobs including FLT and FermatsLastTheorem, with no declaration
+clashes. Evidence: `Scratch/MazurDW11/root-build.log`;
+`python3 Scratch/MazurDW11/check.py` checks the recorded logs and module caps.
 
 ### D-W10 implementation boundary and evidence
 
