@@ -2501,6 +2501,7 @@ public import FLT.Mazur.AffineBaseSectionFunctor
 public import FLT.Mazur.AffineBranchSequence
 public import FLT.Mazur.AffineCartesianSectionScalars
 public import FLT.Mazur.AffineClosedModuleDescent
+public import FLT.Mazur.AffineClosureFiniteness
 public import FLT.Mazur.AffineCoalgebraSheafNaturality
 public import FLT.Mazur.AffineCoefficientUnitLaws
 public import FLT.Mazur.AffineCoherent
@@ -2532,6 +2533,7 @@ public import FLT.Mazur.AffineFaithfullyFlatEpimorphisms
 public import FLT.Mazur.AffineFaithfullyFlatPullbackFaithful
 public import FLT.Mazur.AffineFiberProductOverlap
 public import FLT.Mazur.AffineFpqcRefinement
+public import FLT.Mazur.AffineGenericClosure
 public import FLT.Mazur.AffineGeometricDatumComparison
 public import FLT.Mazur.AffineGeometricDescent
 public import FLT.Mazur.AffineGeometricDescentMorphisms
