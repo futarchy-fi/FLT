@@ -2526,6 +2526,7 @@ public import FLT.Mazur.AffineCohomologyVanishingRelInjective
 public import FLT.Mazur.AffineCohomologyVanishingSpectrum
 public import FLT.Mazur.AffineCoverCohomology
 public import FLT.Mazur.AffineCoverIntersections
+public import FLT.Mazur.AffineDescentReconstructionComposition
 public import FLT.Mazur.AffineDescentRefinementComparison
 public import FLT.Mazur.AffineDescentRefinementReconstruction
 public import FLT.Mazur.AffineDirectTripleAdditivity
