@@ -2604,6 +2604,7 @@ public import FLT.Mazur.AffineTripleOverlapCoefficients
 public import FLT.Mazur.AffineTripleOverlapEvaluation
 public import FLT.Mazur.AffineTripleOverlapMaps
 public import FLT.Mazur.AffineTripleOverlapPullback
+public import FLT.Mazur.AffineTripleUnitCoefficients
 public import FLT.Mazur.AffineTrivialLineSectionOpen
 public import FLT.Mazur.AmpleAffineBase
 public import FLT.Mazur.AmpleAffinePullback
