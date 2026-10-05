@@ -623,3 +623,37 @@ individual `lake exe runLinter MODULE`, the declaration audit in the untracked
 `G2_W15_AXIOMS.lean`, and the post-merge `LEAN_NUM_THREADS=2 lake build FLT`.
 The checked-at receipts and remaining-work handoff are in the untracked
 `MAZUR_G2_W15_DONE.md`; this paragraph is not a completion claim for G2.
+
+## W16: reverse comparison and affine geometric descent
+
+The reverse comparison is now implemented by the modules below. Recheck each
+with `LEAN_NUM_THREADS=2 lake build FLT.Mazur.MODULE` and then
+`LEAN_NUM_THREADS=2 lake exe runLinter FLT.Mazur.MODULE`, one module at a time.
+The declarations themselves are the evidence for the interfaces in this table.
+
+| Modules (`FLT.Mazur.` prefix) | Proved interface |
+| --- | --- |
+| AffineSectionsReconstruction, AffineTensorSectionIso, AffineReverseGeometricOverlap | Reconstruct the actual overlap from both tensor scalar actions; exact tensor/overlap round-trips |
+| AffinePullbackHomExt, AffineReverseOverlapDiagonal | Detect maps on unit sections; recover the geometric diagonal from contraction |
+| AffinePairUnitTransport, AffineTripleUnitCoefficients, AffineReverseOverlapCocycle | Recover the actual geometric cocycle from its unit-factor tensor equation; equivalence with the full tensor cocycle |
+| AffineGeometricDatumComparison | Tensor data reconstruct geometric diagonal and cocycle equations, with exact round-trips |
+| AffineFiberProductOverlap | Mutually inverse normalization and reconstruction for actual categorical fiber-product overlaps |
+| AffineGeometricDescent | Construct the descended affine sheaf and pullback reconstruction; recover the specified overlap via `fromCoalgebra_toCoalgebra_overlap`; invertible coefficients give a line bundle |
+| AffineOverlapMapSections, AffineGeometricMapComparison | Naturality of both coefficient charts; equivalence between actual geometric squares and tensor compatibility |
+| AffineCoalgebraSheafNaturality, AffineFaithfullyFlatPullbackFaithful | Naturality of reconstruction and faithfulness of pullback on tilde sheaves |
+| AffineGeometricDescentMorphisms | Descend compatible geometric morphisms and isomorphisms; prove the actual sheaf reconstruction square and uniqueness of its descended map |
+
+The reverse-cocycle memory issue is avoided by specializing the scalar ring
+while source and target sheaves remain abstract. Specializing directly to
+concrete pullback sheaves forces expensive definitional comparisons. Small
+intermediate lemmas keep the final reverse cocycle within ordinary resource
+limits; no tensor-product implementation is unfolded in that proof.
+
+This supplies affine geometric object reconstruction and uniquely determined
+morphism reconstruction. The line-bundle theorem currently takes invertibility
+of the affine coefficient module as its hypothesis. Scheme-level P9e still
+requires compatibility under affine refinements and gluing, including coherence
+of the chosen reconstruction isomorphisms. P10–P21 (relative Picard comparison,
+cohomology/base change, representability, and the actual modular-curve/Jacobian
+producer) remain separate obligations. These results do not remove
+`Mazur_statement` from the endpoint.
