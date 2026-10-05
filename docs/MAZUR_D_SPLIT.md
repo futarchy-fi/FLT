@@ -1,6 +1,6 @@
 # Mazur track D: extension and local arithmetic
 
-## D-W10: elliptic component quotient via minimal equations
+## D-W11: elliptic component quotient via minimal equations
 
 This replaces the general Néron-model prerequisite in the older C1 rows below.
 For an elliptic curve over a complete DVR with perfect residue field, use a
@@ -36,6 +36,16 @@ Consumer labels describe dependencies, not completed downstream theorems.
 | C1.4b.ii | `EllipticVariableChangeIntegrality` / 240 | Integral unit coordinate changes preserve integrality of x and of the coordinate pair. | Infinity chart in C1.4b.iii. |
 | C1.4b.iii | `EllipticVariableChangeReduction` / 240 | Integral and nonintegral affine charts together prove smooth reduction invariant. | C1.4b.iv. |
 | C1.4b.iv | `EllipticComponentVariableChange` / 240 | Integral unit variable changes induce generic point-group equivalences carrying E₀ onto E₀, hence additive equivalences of E/E₀ commuting with the quotient maps. | Transport all branch calculations to A1-C1; S1/S2, C2/C3/Cp. |
+| C1.5a.i | `EllipticNodeDepthStep` / 240 | Integral translations deepen a₃,a₄ from Iᵏ to Iᵏ⁺¹, preserve a₁, and change a₆ only in I²ᵏ, in every characteristic. | C1.5a.ii. |
+| C1.5a.ii | `EllipticNodeDepthNormalization` / 240 | Iterate translations to any finite depth and compose with the initial split-node normalization. No completeness hypothesis. | C1.5a.iv. |
+| C1.5a.iii | `EllipticNodeDiscriminantDepth` / 240 | Modulo deep a₃,a₄, Δ is a₆ times a unit; identify their ideal-adic depths. | C1.5a.iv. |
+| C1.5a.iv | `EllipticSplitDepthModel` / 240 | Construct an integral u=1 model with a₃,a₄ in mⁿ⁺¹ and a₆ of exact depth n from the exact depth n of Δ. | Point-branch calculations. |
+| C1.5a.v | `EllipticSplitOrderOne` / 240 | Prove E₀=E and the actual E/E₀ quotient trivial when split multiplicative Δ has order one; transport from the deep model. | Order-one case of C1.5. |
+| C1.5a.vi | `EllipticNodeScaledEquation` / 240 | Cancel the common coordinate factor; identify the two tangent factors, exclusive branches below the midpoint, and unit factors at the midpoint. | C1.5a.ix. |
+| C1.5a.vii | `EllipticNodePointDepth` / 240 | The actual integral equation bounds common coordinate depth by n/2 when a₆ has exact depth n. | C1.5a.viii. |
+| C1.5a.viii | `EllipticNodeCoordinateFactor` / 240 | Extract primitive coordinates at some depth k≤n/2 for a principal maximal ideal; construct the scaled coefficient factors. | C1.5a.ix. |
+| C1.5a.ix | `EllipticNodePointBranches` / 240 | Derive tangent branches from the deep coefficients below/at n/2, and identify smooth reduction exactly with common depth zero. | C1.5a.x. |
+| C1.5a.x | Further leaves / ≤240 each | Assign labels 0, ±k, n/2 to actual generic points; prove compatibility with inverse and every addition branch, then construct the map to Z/nZ with kernel the actual E₀. | C1.5a, C1.5b/c. |
 | C1.5a | `EllipticSplitComponentClasses` / 240 | In split multiplicative normal form, construct a class map to Z/nZ and prove its kernel is E₀ by the valuation branches of point addition. | Split branch of A1-C1; C2/C3/Cp. |
 | C1.5b | `EllipticSplitComponentOrder` / 240 | Lift all n classes over the complete DVR and obtain E/E₀ ≃+ Z/nZ; thus cyclic of order ord(Δ). | A1-C1; C2/C3/Cp. |
 | C1.5c | `EllipticNonsplitComponents` / 240 | Compare E₀ under the unramified quadratic splitting extension, inject rational classes into geometric classes, and prove Galois acts by negation. Deduce cardinality at most 2. | A1-C1; nonsplit exclusions in C2/C3/Cp. |
@@ -57,6 +67,31 @@ comparisons, branch coverage and cardinality bounds must all be proved.
 The existing elliptic E₀ specialization theorems do not supply the abelian
 specialization required by A2. G1 (wt-r5a) and G2 (wt-r1e) retain their scopes.
 
+### D-W11 implementation boundary
+
+C1.5a.i–ix supply finite-depth models and point-branch calculations. They do
+not assume any component-group classification. In particular, the complete
+split order-one quotient calculation now follows from the integral equation.
+For higher order, C1.5a.x is the first open subleaf: translate the branch data
+into labels on actual generic points and prove their addition law. The finite
+common-depth decomposition and its smooth-reduction criterion do not by
+themselves prove that equal labels give equal component classes.
+
+The later ordered work remains C1.5b/c (class lifting, cyclic order and
+nonsplit comparison), C1.6/7 (additive branches and exhaustiveness), then
+smooth special groups, S1/S2, C2/C3/Cp and A2 with the separate G1/G2 work.
+No higher-order component bound or Mazur conclusion is claimed in this batch.
+
+Validation commands and evidence are under `Scratch/MazurDW11/`: one
+foreground `LEAN_NUM_THREADS=2 lake build FLT.Mazur.MODULE` and one
+`LEAN_NUM_THREADS=2 lake exe runLinter FLT.Mazur.MODULE` for each entry in
+`modules.txt`; `lake env lean Scratch/MazurDW11/Axioms.lean` audits all 26 new
+theorems. The untracked `MAZUR_D_W11_DONE.md` records checked-at results and
+commit IDs after validation and the required post-merge root build.
+Checked 2026-10-05 02:43 UTC: all nine individual builds and linters passed
+without warnings; all 26 theorem audits contain only propext, Classical.choice
+and Quot.sound. Each module has 45–115 physical lines (cap 240).
+
 ### D-W10 implementation boundary and evidence
 
 The initial rational singular-point, cusp and split-node normalizations are
@@ -65,7 +100,7 @@ C1.4b.i–iv transport the actual E₀ subgroup and E/E₀ quotient through an
 integral variable change with unit u. Generic ellipticity is required for the
 point-group isomorphism; the special cubic is allowed to be singular.
 
-The first open leaf is C1.5a: construct the split multiplicative component
+At the D-W10 boundary the first open leaf was C1.5a: construct the split multiplicative component
 class map from the actual equation, then prove its kernel is E₀. The initial
 normal form does not provide the deeper coefficient/valuation tests, class
 surjectivity, the nonsplit comparison, or the additive branch bounds. Those
