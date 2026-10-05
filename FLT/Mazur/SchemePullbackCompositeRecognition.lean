@@ -22,6 +22,12 @@ namespace FLT.Mazur.SchemePullbackSquare
 open SheafPullbackPathComparison
 set_option backward.isDefEq.respectTransparency false
 set_option backward.defeqAttrib.useBackward true
+/-- A pullback composition chart with explicit object endpoints. -/
+def compositionChart {U V W : Scheme.{u}} (f : U ⟶ V) (g : V ⟶ W)
+    (k : U ⟶ W) (h : f ≫ g = k) (A : W.Modules) :
+    (pullback f).obj ((pullback g).obj A) ≅ (pullback k).obj A :=
+  (comparison f g k h).app A
+
 variable {X Y X' Y' X'' Y'' : Scheme.{u}}
 variable (p : Y ⟶ X) (q : Y' ⟶ X') (r : Y'' ⟶ X'')
 variable (a : X' ⟶ X) (b : Y' ⟶ Y) (c : X'' ⟶ X') (d : Y'' ⟶ Y')
@@ -35,11 +41,16 @@ theorem squareIso_composition_of_eq (A : X.Modules)
     (J : pullback c ⋙ pullback r ≅ pullback q ⋙ pullback d)
     (K : pullback ac ⋙ pullback r ≅ pullback p ⋙ pullback bd)
     (hI : I = squareIso p q a b w) (hJ : J = squareIso q r c d v)
-    (hK : K = squareIso p r ac bd wv) :
-    (pullback r).map ((comparison c a ac ha).hom.app A) ≫ K.hom.app A =
+    (hK : K = squareIso p r ac bd wv)
+    (B : (pullback c).obj ((pullback a).obj A) ≅ (pullback ac).obj A)
+    (C : (pullback d).obj ((pullback b).obj ((pullback p).obj A)) ≅
+      (pullback bd).obj ((pullback p).obj A))
+    (hB : B = compositionChart c a ac ha A)
+    (hC : C = compositionChart d b bd hb ((pullback p).obj A)) :
+    (pullback r).map B.hom ≫ K.hom.app A =
       J.hom.app ((pullback a).obj A) ≫ (pullback d).map (I.hom.app A) ≫
-        (comparison d b bd hb).hom.app ((pullback p).obj A) := by
-  rw [hI, hJ, hK]
+        C.hom := by
+  rw [hI, hJ, hK, hB, hC]
   exact squareIso_composite_charts p q r a b c d w v ac bd ha hb wv A
 
 /-- Recognize composition for independently named reconstruction charts. -/
@@ -51,10 +62,13 @@ theorem reconstruction_composition_of_eq {A : X.Modules} {M : Y.Modules}
     (G : (pullback r).obj ((pullback ac).obj A) ≅ (pullback bd).obj M)
     (hE : E = reconstructionChart p q a b w e)
     (hF : F = reconstructionChart q r c d v E)
-    (hG : G = reconstructionChart p r ac bd wv e) :
-    F.hom ≫ (comparison d b bd hb).hom.app M =
-      (pullback r).map ((comparison c a ac ha).hom.app A) ≫ G.hom := by
-  rw [hF, hE, hG]
+    (hG : G = reconstructionChart p r ac bd wv e)
+    (B : (pullback c).obj ((pullback a).obj A) ≅ (pullback ac).obj A)
+    (C : (pullback d).obj ((pullback b).obj M) ≅ (pullback bd).obj M)
+    (hB : B = compositionChart c a ac ha A)
+    (hC : C = compositionChart d b bd hb M) :
+    F.hom ≫ C.hom = (pullback r).map B.hom ≫ G.hom := by
+  rw [hF, hE, hG, hB, hC]
   exact reconstructionChart_composition p q r a b c d w v ac bd ha hb wv e
 
 end FLT.Mazur.SchemePullbackSquare
