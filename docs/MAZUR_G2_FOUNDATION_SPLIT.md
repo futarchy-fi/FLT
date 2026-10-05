@@ -267,6 +267,11 @@ library in this worker's memory cgroup. The W4 handoff records the actual
 validation time and commits; these source-level interfaces are the durable
 proof artifacts.
 
+Module-level checks completed 2026-10-05 00:14 UTC: the per-module build
+and lint commands above passed for all five modules. The W4 axiom audit
+checked 99 originating declarations, using only `propext`, `Classical.choice`,
+and `Quot.sound`. Full P9b remains unproved for the reasons below.
+
 ### Remaining geometric interfaces, in order
 
 1. Compare all three actual triple-overlap projection pullbacks with tensor
