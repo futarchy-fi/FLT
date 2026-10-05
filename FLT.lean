@@ -2543,6 +2543,7 @@ public import FLT.Mazur.AffineFiberProductRefinementCocycle
 public import FLT.Mazur.AffineFpqcRefinement
 public import FLT.Mazur.AffineGeometricChartDatum
 public import FLT.Mazur.AffineGeometricChartRecognition
+public import FLT.Mazur.AffineGeometricCoactionUnits
 public import FLT.Mazur.AffineGeometricDatumComparison
 public import FLT.Mazur.AffineGeometricDescent
 public import FLT.Mazur.AffineGeometricDescentComposition
