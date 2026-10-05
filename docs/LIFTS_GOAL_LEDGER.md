@@ -4,6 +4,44 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
+## W70 — the specified quotient descends to trace coefficients
+
+The quotient at two is now constructed over the actual trace image and
+specializes to every prime coefficient order. The full `IsHardlyRamified`
+predicate holds after every coefficient specialization whose p-adic scalar
+map factors through the original coefficient base. **Arithmetic module
+finiteness and nonnilpotence remain open; the lifting goal is not closed.**
+
+Recheck the sources, saved validation logs, line caps and main ancestry with
+`python3 Scratch/LiftsW70/check.py`, which prints a checked-at timestamp.
+Rerun foreground builds, sequential individual-module lint and axiom audits
+with `python3 Scratch/LiftsW70/validate.py`. These local receipts and
+`LIFTS_W70_RESULT.md` are untracked workspace artifacts.
+
+| Component | Module | Proved boundary |
+|---|---|---|
+| Normalized quotient descent | `RepresentationTheory.NormalizedQuotientDescent` | A unit eigenvalue gap and an injective coefficient map descend the entire eigenrow. The normalized functional is surjective and unique. |
+| Actual Frobenius gap | `HardlyRamifiedTwoFrobenius` | Naturality transports the cyclotomic Frobenius value 2 to Q2. The actual residual determinant and quadratic quotient imply a unit eigenvalue gap. |
+| Trace-image row | `HardlyRamifiedTraceTwoRow` | Constructs the normalized eigenrow over the actual trace image; it reduces to the original second-coordinate quotient and recovers the frame row up to a unit. |
+| Specialized quotient | `HardlyRamifiedTraceTwoQuotient` | Constructs a surjective functional equivariant for the fixed integral sign character on every coefficient specialization, including every prime quotient. |
+| Scalar continuity | `RepresentationTheory.ScalarQuotient` | Recovers continuity from an equivariant surjective functional and constructs the corresponding rank-one Galois action. |
+| Complete HR predicate | `HardlyRamifiedTraceConditions` | Proves the specified quotient predicate, triviality on the original dyadic inertia, the quadratic action, and all four HR conditions on the same specialized lift. |
+
+The row is determined by its Frobenius equation, not chosen after changing
+the residue field. If its coefficients after extension are `(a,b)`, the
+strict recovery frame makes `b` a unit; the constructed parameter satisfies
+`inc(t)*b=a`. Injectivity then descends every local equivariance equation.
+Continuity comes from evaluating the actual quotient on one vector mapping
+to 1, so no continuity assumption on a new character is added.
+
+This closes W69's specified-quotient descent obligation. It does not prove
+the KW selected-local-ring/completed-tensor-product comparison, D3 finiteness
+via M0, or D4 nonnilpotence. Original-module tensor-conjugacy, integral
+assembly, S0a3, Lp0 and G0a–G1c retain their stated obligations. In particular,
+finite-flat reductions and the full HR predicate do not imply p-adic module
+finiteness or a characteristic-zero point. No numerical Serre-weight or
+arbitrary-p Raynaud classification API is introduced.
+
 ## W69 — finite-flat descent and prime coefficient orders
 
 Recheck sources, saved validation evidence, line caps and main ancestry with

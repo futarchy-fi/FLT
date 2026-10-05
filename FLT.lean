@@ -208,11 +208,15 @@ public import FLT.Deformations.HardlyRamifiedParameterUnramified
 public import FLT.Deformations.HardlyRamifiedTangentFinite
 public import FLT.Deformations.HardlyRamifiedTangentQuotient
 public import FLT.Deformations.HardlyRamifiedTraceArithmetic
+public import FLT.Deformations.HardlyRamifiedTraceConditions
 public import FLT.Deformations.HardlyRamifiedTraceFlat
 public import FLT.Deformations.HardlyRamifiedTraceImage
 public import FLT.Deformations.HardlyRamifiedTraceLift
 public import FLT.Deformations.HardlyRamifiedTraceOrder
 public import FLT.Deformations.HardlyRamifiedTraceParameters
+public import FLT.Deformations.HardlyRamifiedTraceTwoQuotient
+public import FLT.Deformations.HardlyRamifiedTraceTwoRow
+public import FLT.Deformations.HardlyRamifiedTwoFrobenius
 public import FLT.Deformations.HardlyRamifiedTwoQuotient
 public import FLT.Deformations.HardlyRamifiedUniversal
 public import FLT.Deformations.HardlyRamifiedWittLift
@@ -273,6 +277,7 @@ public import FLT.Deformations.RepresentationTheory.Irreducible
 public import FLT.Deformations.RepresentationTheory.IteratedBaseChangeIrreducible
 public import FLT.Deformations.RepresentationTheory.MappedRankTwoCharpoly
 public import FLT.Deformations.RepresentationTheory.MappedTameSpectrum
+public import FLT.Deformations.RepresentationTheory.NormalizedQuotientDescent
 public import FLT.Deformations.RepresentationTheory.PGroupInvariants
 public import FLT.Deformations.RepresentationTheory.PadicIdealCofinal
 public import FLT.Deformations.RepresentationTheory.PadicIdealOpen
@@ -288,6 +293,7 @@ public import FLT.Deformations.RepresentationTheory.RankTwoSimpleFactors
 public import FLT.Deformations.RepresentationTheory.ScalarActionCharpoly
 public import FLT.Deformations.RepresentationTheory.ScalarCharacterFrobenius
 public import FLT.Deformations.RepresentationTheory.ScalarCharacterKernel
+public import FLT.Deformations.RepresentationTheory.ScalarQuotient
 public import FLT.Deformations.RepresentationTheory.SelfTwistTrace
 public import FLT.Deformations.RepresentationTheory.SimpleScalarDegree
 public import FLT.Deformations.RepresentationTheory.StableLinePair
