@@ -2881,6 +2881,7 @@ public import FLT.Mazur.EllipticAdditiveLaterBranches
 public import FLT.Mazur.EllipticAdditiveStarTranslation
 public import FLT.Mazur.EllipticAdditiveTorsionExclusion
 public import FLT.Mazur.EllipticAdditiveTranslationDepth
+public import FLT.Mazur.EllipticCompleteSemistableExtension
 public import FLT.Mazur.EllipticComponentBaseChange
 public import FLT.Mazur.EllipticComponentQuotient
 public import FLT.Mazur.EllipticComponentVariableChange
@@ -2896,6 +2897,7 @@ public import FLT.Mazur.EllipticDoubleRootEvenSlope
 public import FLT.Mazur.EllipticDoubleRootIteration
 public import FLT.Mazur.EllipticDoubleRootOddBound
 public import FLT.Mazur.EllipticDoubleRootSeparable
+public import FLT.Mazur.EllipticExtensionPrimeSubgroup
 public import FLT.Mazur.EllipticFormalAddition
 public import FLT.Mazur.EllipticFormalAdditionComparison
 public import FLT.Mazur.EllipticFormalAssociativity
@@ -3004,8 +3006,11 @@ public import FLT.Mazur.EllipticNodeTripleDepth
 public import FLT.Mazur.EllipticNodeUnequalDepthAddition
 public import FLT.Mazur.EllipticNodeUniformizerLabel
 public import FLT.Mazur.EllipticNodeVariableChangeLabel
+public import FLT.Mazur.EllipticNonsplitNodalGroup
 public import FLT.Mazur.EllipticNonsplitNodeBound
+public import FLT.Mazur.EllipticNonsplitNodeChart
 public import FLT.Mazur.EllipticNonsplitNodeComponents
+public import FLT.Mazur.EllipticNonsplitNodeGroup
 public import FLT.Mazur.EllipticNonsplitNodeParameter
 public import FLT.Mazur.EllipticNonsplitNormOneHom
 public import FLT.Mazur.EllipticNormalizedDoubleRoot
@@ -3026,6 +3031,7 @@ public import FLT.Mazur.EllipticPrimeToResidueSpecialization
 public import FLT.Mazur.EllipticPrimeTorsionComponents
 public import FLT.Mazur.EllipticProjectiveBaseChange
 public import FLT.Mazur.EllipticProjectiveReduction
+public import FLT.Mazur.EllipticRamifiedCoefficientDepths
 public import FLT.Mazur.EllipticRationalSingularity
 public import FLT.Mazur.EllipticReductionAffineAddition
 public import FLT.Mazur.EllipticReductionBaseChange
@@ -3036,8 +3042,12 @@ public import FLT.Mazur.EllipticReductionRelation
 public import FLT.Mazur.EllipticReductionTranslation
 public import FLT.Mazur.EllipticRepeatedCubicPoint
 public import FLT.Mazur.EllipticRepeatedCubicTranslation
+public import FLT.Mazur.EllipticSemistableExtension
 public import FLT.Mazur.EllipticShearDescent
 public import FLT.Mazur.EllipticShearedComponentExtension
+public import FLT.Mazur.EllipticShortSemistableExtension
+public import FLT.Mazur.EllipticShortUnitReduction
+public import FLT.Mazur.EllipticShortWeightedModel
 public import FLT.Mazur.EllipticSingularDivisibility
 public import FLT.Mazur.EllipticSingularPointChart
 public import FLT.Mazur.EllipticSingularSmallChar
@@ -3068,6 +3078,7 @@ public import FLT.Mazur.EllipticTypeIVCoordinates
 public import FLT.Mazur.EllipticTypeIVResidue
 public import FLT.Mazur.EllipticTypeIVScaledComparison
 public import FLT.Mazur.EllipticTypeIVStarCoordinates
+public import FLT.Mazur.EllipticUnitInvariantsReduction
 public import FLT.Mazur.EllipticUnramifiedKernel
 public import FLT.Mazur.EllipticUnramifiedSpecialization
 public import FLT.Mazur.EllipticUnramifiedTorsion
@@ -3100,6 +3111,8 @@ public import FLT.Mazur.FiniteCechCyclesScalars
 public import FLT.Mazur.FiniteCechTermScalars
 public import FLT.Mazur.FiniteClosedIdealSection
 public import FLT.Mazur.FiniteClosedImmersionIntegerDescent
+public import FLT.Mazur.FiniteDVRAbsoluteRamification
+public import FLT.Mazur.FiniteDVRComplete
 public import FLT.Mazur.FiniteDiagramCoverModel
 public import FLT.Mazur.FiniteDiagramIntegerModel
 public import FLT.Mazur.FiniteDiagramUnitDescent
@@ -3225,9 +3238,19 @@ public import FLT.Mazur.HomogeneousLocalizationBaseChange
 public import FLT.Mazur.HomogeneousLocalizationGenerator
 public import FLT.Mazur.HomogeneousLocalizationScalars
 public import FLT.Mazur.IdealAdicCohomology
+public import FLT.Mazur.IdealAdicGradedAssociativity
+public import FLT.Mazur.IdealAdicGradedBaseAlgebra
+public import FLT.Mazur.IdealAdicGradedBaseProduct
+public import FLT.Mazur.IdealAdicGradedClosedAction
 public import FLT.Mazur.IdealAdicGradedClosedTwist
 public import FLT.Mazur.IdealAdicGradedLineTwist
+public import FLT.Mazur.IdealAdicGradedMultiplication
+public import FLT.Mazur.IdealAdicGradedPullback
+public import FLT.Mazur.IdealAdicGradedRing
+public import FLT.Mazur.IdealAdicGradedSectionAction
+public import FLT.Mazur.IdealAdicGradedSections
 public import FLT.Mazur.IdealAdicGradedSequence
+public import FLT.Mazur.IdealAdicGradedUnit
 public import FLT.Mazur.IdealAdicLineQuotient
 public import FLT.Mazur.IdealAdicLineTower
 public import FLT.Mazur.IdealAdicQuotient
@@ -3244,6 +3267,7 @@ public import FLT.Mazur.IdealPowerCompatibility
 public import FLT.Mazur.IdealPowerExtensionCharts
 public import FLT.Mazur.IdealPowerExtensionGluing
 public import FLT.Mazur.IdealPowerGenericComparison
+public import FLT.Mazur.IdealPowerMultiplication
 public import FLT.Mazur.IdealPowerVanishingTransfer
 public import FLT.Mazur.IdealQuotientExact
 public import FLT.Mazur.IdealQuotientSectionLift
@@ -3407,6 +3431,7 @@ public import FLT.Mazur.ModuleSheafUnitCocycleRestrict
 public import FLT.Mazur.ModuleSheafificationTensor
 public import FLT.Mazur.ModuleStalkExact
 public import FLT.Mazur.ModuleSubobjectCoverEquality
+public import FLT.Mazur.ModuleTensorCokernelDescent
 public import FLT.Mazur.ModuleTensorPowerSection
 public import FLT.Mazur.ModuleTensorPowerSectionInduction
 public import FLT.Mazur.ModuleTensorPullbackRestriction
@@ -3443,6 +3468,7 @@ public import FLT.Mazur.NodeTangentFractionField
 public import FLT.Mazur.NodeTangentGaloisLabel
 public import FLT.Mazur.NodeTangentShear
 public import FLT.Mazur.NodeTangentShearRealization
+public import FLT.Mazur.NodeTangentSlopeDescent
 public import FLT.Mazur.NodeTangentSplitComponent
 public import FLT.Mazur.NodeTangentUnramified
 public import FLT.Mazur.NodeTangentValuationConjugation
@@ -3675,6 +3701,7 @@ public import FLT.Mazur.PolynomialEndpointInterpolation
 public import FLT.Mazur.PolynomialRelationIntegerModel
 public import FLT.Mazur.PowerSeriesQuotientCompletion
 public import FLT.Mazur.PowerSeriesSubstitutionEquiv
+public import FLT.Mazur.PrimeTorsionSemistabilityAway
 public import FLT.Mazur.PrincipalAffineRefinement
 public import FLT.Mazur.PrincipalChartIntegerDescent
 public import FLT.Mazur.PrincipalChartOpenImmersion
@@ -3965,6 +3992,7 @@ public import FLT.Mazur.TildeInvertibleLocal
 public import FLT.Mazur.TildePrincipalOpen
 public import FLT.Mazur.TorusChartScalars
 public import FLT.Mazur.TrivialLineTwistLocalization
+public import FLT.Mazur.UniformizerRootExtension
 public import FLT.Mazur.UnitIntegerModel
 public import FLT.Mazur.UniversallyClosedFiniteCover
 public import FLT.Mazur.ValuationProjectiveNormalization
