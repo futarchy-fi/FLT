@@ -421,6 +421,20 @@ commutative bases. Global involutivity and preservation of the infinity
 section still need proofs. Addition and the group axioms are also
 unfinished, as are the modular and arithmetic inputs to Mazur's theorem.
 
+### Global negation is involutive and fixes infinity
+
+`FLT/EllipticCurve/CubicNegationInvolution.lean` proves, over every
+commutative base ring, that the glued negation composed with itself is the
+identity. The proof lifts negation to a self-map of the refined infinity
+neighborhood, proves its involutivity by localization, and checks the global
+identity on the open cover. It packages the result as `negationIso`.
+The infinity section factors through this neighborhood, where evaluation
+at the origin proves `infinity_negation`.
+
+These results require neither an invertible discriminant nor division by
+2 or 3. They do not construct addition or establish the group scheme axioms.
+The modular and arithmetic objects required by the Mazur route remain open.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:

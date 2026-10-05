@@ -165,6 +165,7 @@ public import FLT.EllipticCurve.CubicCharts
 public import FLT.EllipticCurve.CubicIntegral
 public import FLT.EllipticCurve.CubicNegation
 public import FLT.EllipticCurve.CubicNegationGlobal
+public import FLT.EllipticCurve.CubicNegationInvolution
 public import FLT.EllipticCurve.CubicNegationOverlap
 public import FLT.EllipticCurve.CubicProjectiveClosed
 public import FLT.EllipticCurve.CubicProjectiveCover
