@@ -2374,6 +2374,7 @@ public import FLT.Mazur.AffineAnnihilator
 public import FLT.Mazur.AffineBranchSequence
 public import FLT.Mazur.AffineCartesianSectionScalars
 public import FLT.Mazur.AffineClosedModuleDescent
+public import FLT.Mazur.AffineCoefficientUnitLaws
 public import FLT.Mazur.AffineCoherent
 public import FLT.Mazur.AffineCoherentSubmoduleExtension
 public import FLT.Mazur.AffineCoherentSubmoduleRestriction
@@ -2397,6 +2398,7 @@ public import FLT.Mazur.AffineGeometricOverlap
 public import FLT.Mazur.AffineIdealPowerExtension
 public import FLT.Mazur.AffineImageSectionTransport
 public import FLT.Mazur.AffineIntersectionRestriction
+public import FLT.Mazur.AffineIteratedPullbackLaws
 public import FLT.Mazur.AffineIteratedPullbackSections
 public import FLT.Mazur.AffineKernelLocalization
 public import FLT.Mazur.AffineLineCoalgebraDescent
