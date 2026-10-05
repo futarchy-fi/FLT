@@ -4,6 +4,53 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
+## W73 — arithmetic kernels, enlarged PD ideals and adjoint duality
+
+Validation evidence is in `Scratch/LiftsW73/`: `validate.py` repeats the
+foreground builds, individual lints and exhaustive declaration axiom audit;
+`check.py` checks the accepted source/log hashes and prints its checked-at
+time. The untracked acceptance report is `LIFTS_W73_RESULT.md`.
+**The lifting admission remains open.**
+
+S0a3: `SerreWeight/ArithmeticCharacterKernel` identifies the actual
+cyclotomic inertia kernel with the specified tame-abelian subgroup. Thus
+characters already satisfying the specified tame condition obtain the
+normalization kernel condition. Independently, every continuous prime-field
+inertia character kills the cyclotomic kernel: the joint finite inertia
+image is cyclic of prime-to-p order. This does not prove tameness for every
+required character over an arbitrary residual coefficient field, compare
+different invariant lines, or construct symmetric-power composition factors.
+
+Lp0: `RationalPDDescent` proves integrality on a whole ideal from its
+generators. `RationalPDSum` constructs operations on the sum of an existing
+integral PD ideal and a base PD ideal inside a rational algebra. Applied to
+the actual hull in `ComplexRelativePDHull`, it gives operations on the theta
+ideal plus `(p)`, retains the old theta operations, proves compatibility
+with the original p-adic scalar map, and constructs the relative presentation's
+map to this compatible hull. `ComplexRelativePDReduction` proves `(p)` is a
+sub-PD ideal and descends the operations to the quotient modulo p.
+**These are operations on the embedded hull and its reduction. Operations on
+the abstract integral/relative presentations and their universal PD-envelope
+property remain unproved.** No injectivity of the comparison map is asserted.
+
+G0a: `AbsoluteGaloisGroup/EmbeddingConjugacy` constructs the source automorphism
+comparing two closure embeddings and proves conjugacy of their continuous
+restriction maps. `ArithmeticLocalConjugacy` applies this to the original
+local maps into the same arithmetic quotient. `TraceZeroPairing` proves the
+actual rank-two trace pairing is invariant and nondegenerate when two is
+nonzero. `AdjointTateDual` constructs the contragredient cyclotomic twist and
+the equivariant linear-dual identification. `HardlyRamifiedAdjointDual`
+uses the already descended original framed residual representation, identifies its
+determinant with the original cyclotomic scalar, and constructs its Tate
+dual and perfect trace pairing using the original odd-prime hypothesis.
+This is coefficient-module duality, not perfect local cohomological duality.
+
+The remaining G0a–G1c obligations are continuous linear cohomology and
+localization, independence on cohomology classes, arithmetic finiteness,
+universal tangent/Selmer comparison and exact local images, local duality,
+Poitou–Tate, obstruction/relation bounds and the same image ring's dimension
+bound. D3/D4/I0 retain the W71 source-matched splits below; none is closed.
+
 ## W72 — local normalization, relative relations and arithmetic tangent cocycles
 
 Checked against the new-module builds, individual lints and exhaustive axiom
