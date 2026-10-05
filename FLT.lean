@@ -2405,6 +2405,7 @@ public import FLT.Mazur.AffineTensorCoalgebraComparison
 public import FLT.Mazur.AffineTensorCocycle
 public import FLT.Mazur.AffineTensorCocycleTransport
 public import FLT.Mazur.AffineTensorDescentMorphisms
+public import FLT.Mazur.AffineTripleOverlapMaps
 public import FLT.Mazur.AffineTrivialLineSectionOpen
 public import FLT.Mazur.AmpleAffineBase
 public import FLT.Mazur.AmpleAffinePullback
