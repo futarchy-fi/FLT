@@ -3636,6 +3636,7 @@ public import FLT.Mazur.PolynomialEndpointInterpolation
 public import FLT.Mazur.PolynomialRelationIntegerModel
 public import FLT.Mazur.PowerSeriesQuotientCompletion
 public import FLT.Mazur.PowerSeriesSubstitutionEquiv
+public import FLT.Mazur.PrimeTorsionSemistabilityAway
 public import FLT.Mazur.PrincipalAffineRefinement
 public import FLT.Mazur.PrincipalChartIntegerDescent
 public import FLT.Mazur.PrincipalChartOpenImmersion
