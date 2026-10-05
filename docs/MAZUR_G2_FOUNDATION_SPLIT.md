@@ -356,9 +356,39 @@ declarations; only `propext`, `Classical.choice`, and `Quot.sound` occurred.
 Re-run those commands and the audit for current evidence. Integration checks
 and their timestamps are recorded in the untracked W6 handoff.
 
-The next open item is still the three actual pair-transport coefficient
-comparisons and the full forward tensor cocycle. The attempted triple-overlap
-modules are unverified drafts outside the source tree, not library exports.
+At the W6 handoff, the next open item was the three actual pair-transport
+coefficient comparisons and the full forward tensor cocycle. The W6 drafts
+were unverified and outside the source tree; W7 exports part of this interface below.
 Reverse overlap reconstruction, reverse diagonal/cocycle, exact round-trips,
 categorical fiber-product coherence, geometric P9d/P9e, and P10–P21 remain
 open. These lifting laws do not remove `Mazur_statement` from the endpoint.
+
+## W7: actual pair transports and the last-coordinate chart
+
+`AffineTripleOverlapPullback` constructs all three normalized actual sheaf
+isomorphisms and states their sheaf cocycle equation. Its `transport_sections`
+proves the coefficient comparison for every pair map, hence for `pair12`,
+`pair23`, and `pair13`. The formula uses `mappedUnit` explicitly on each side;
+it identifies the transported first chart with the second chart applied to
+the specified `AffineGeometricOverlap.tensorEquiv`.
+
+`AffineTripleOverlapCoefficients.lastSections` constructs the additive
+isomorphism from `S ⊗[R] (S ⊗[R] N)` to the actual last-coordinate sections.
+It uses `AffinePairPullbackSections.linearSections`, a second affine section
+comparison, and the actual pullback composition comparison. Bijectivity is
+proved from that construction; no injectivity hypothesis is introduced.
+
+These two modules form a 171-line leaf. Neither changes heartbeat or recursion
+limits. The module builds, individual module lint, declaration axiom audit,
+three concrete pair specializations, and root integration check are recorded
+with timestamps in the untracked W7 handoff. Re-run `lake build MODULE`,
+`lake exe runLinter MODULE`, and `lake env lean G2_W7_AXIOMS.lean` for current
+evidence, using `LEAN_NUM_THREADS=2` and one module at a time.
+
+The scalar-normalized first/second coefficient formulas, evaluation of
+`lastSections` on pure tensors, and the full forward tensor cocycle remain
+open. The failed wrappers and normalization experiments are outside the source
+tree. In particular, this does not supply `AffineTripleOverlapCocycle.toDatum`.
+Next are the reverse overlap, both reverse compatibility equations, exact
+round-trips, categorical fiber-product coherence, geometric P9d/P9e, and
+P10–P21. `Mazur_statement` has not been removed.
