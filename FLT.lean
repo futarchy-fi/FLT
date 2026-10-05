@@ -3243,6 +3243,7 @@ public import FLT.Mazur.IdealAdicGradedDegreeZeroGeneration
 public import FLT.Mazur.IdealAdicGradedLineTwist
 public import FLT.Mazur.IdealAdicGradedMultiplication
 public import FLT.Mazur.IdealAdicGradedPullback
+public import FLT.Mazur.IdealAdicGradedRestriction
 public import FLT.Mazur.IdealAdicGradedRing
 public import FLT.Mazur.IdealAdicGradedSectionAction
 public import FLT.Mazur.IdealAdicGradedSections
