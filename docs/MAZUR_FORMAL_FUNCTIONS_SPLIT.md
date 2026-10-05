@@ -136,3 +136,32 @@ uniform Serre argument of Stacks 30.19.3. The algebraic Rees-algebra API
 in Mathlib is not a sheaf-cohomology theorem. No arbitrary maximum over
 the infinitely many degree-wise bounds is taken here. F3a-F3c, L2 and
 removal of `Mazur_statement` remain open.
+
+## W98: graded line-twist comparison
+
+`IdealAdicGradedLineTwist` constructs `idealGraded I n` as the cokernel of
+I^(n+1) → I^n between actual ideal modules. Its `gradedLineTwistIso`
+identifies the image-filtration coefficient `graded I L n` with
+`idealGraded I n ⊗ L`. The proof identifies the ideal tensor with the
+scalar-action image, intertwines the actual adjacent power transitions,
+and preserves the quotient projection. These declarations are in
+`FLT.Mazur.IdealAdicQuotient`.
+
+`IdealAdicGradedClosedTwist` proves that this coefficient is killed by I
+and constructs its coherent descent `closedIdealGraded I n` to
+I.subscheme. `gradedPowerClosedTwistIso` identifies `graded I (L^d) n`
+with the closed pushforward of `closedIdealGraded I n ⊗ (L|I)^d`,
+including d = 0. Thus the closed coefficient is independent of d.
+
+This supplies the line-power graded-twist comparison part of F2b. A
+family of coherent closed coefficients indexed by n is not yet a
+finite-type graded module over the base associated-graded algebra:
+that requires actual graded multiplication maps, their identities, and
+a finite-generation comparison. The uniform Serre theorem and F2c's
+unconditional application therefore remain open, followed by F3a-F3c.
+
+Validation check: build and lint `FLT.Mazur.IdealAdicGradedLineTwist` and
+`FLT.Mazur.IdealAdicGradedClosedTwist` individually using the commands
+above; audit all declarations owned by those modules. W98's untracked
+`BLOCKED.md` and `W98_RECHECK.py` record the timestamped receipts and
+verify their source hashes.
