@@ -359,6 +359,27 @@ are now available, but the passage to the global universal property
 has not yet been formalized. Geometric connectedness and the subsequent
 modular and arithmetic constructions remain unfinished.
 
+### Global base change and geometric connectedness (2026-10-05)
+
+`FLT/EllipticCurve/CubicBaseChangeGlobal.lean` closes the global
+cartesian-square step left open above. The preimage of each chart under
+the coefficient morphism is exactly the corresponding chart. This gives
+cartesian restriction squares, and the open-cover criterion transports
+the known chart base-change squares to the global square.
+
+The resulting `baseChangeIso` identifies the cubic with extended
+coefficients with the actual scheme-theoretic pullback, compatibly with
+both projections. Since the model over every field is integral and
+connected, `toBase_geometricallyConnected` now proves geometric
+connectedness over every commutative coefficient ring. No invertible
+discriminant hypothesis is required for this connectedness result.
+
+Together with the earlier work, the structural morphism is proper and
+geometrically connected, and is smooth of relative dimension one when
+the discriminant is invertible. The group law and the modular objects
+needed by the Mazur route remain unfinished; no arithmetic FLT
+assumption is removed by these geometric results.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
