@@ -2843,6 +2843,9 @@ public import FLT.Mazur.EllipticNodeDiscriminantDepth
 public import FLT.Mazur.EllipticNodeEqualDepthSlope
 public import FLT.Mazur.EllipticNodeFirstBranchSlope
 public import FLT.Mazur.EllipticNodeFirstTriple
+public import FLT.Mazur.EllipticNodeGenericNonsingular
+public import FLT.Mazur.EllipticNodeHenselCoordinates
+public import FLT.Mazur.EllipticNodeHenselGenerator
 public import FLT.Mazur.EllipticNodeLabelAdditivity
 public import FLT.Mazur.EllipticNodeLabelDecode
 public import FLT.Mazur.EllipticNodeLabelDescent
@@ -3017,6 +3020,7 @@ public import FLT.Mazur.GradedProjUnitChart
 public import FLT.Mazur.GradedProjUnitChartMap
 public import FLT.Mazur.GradedProjUnitChartOpens
 public import FLT.Mazur.GroupSectionBaseChange
+public import FLT.Mazur.HenselianSmallCubic
 public import FLT.Mazur.HigherDirectImageOpenSheafification
 public import FLT.Mazur.HigherDirectImagePresheaf
 public import FLT.Mazur.HigherDirectImagePresheafRestriction
