@@ -2602,6 +2602,7 @@ public import FLT.Mazur.AffineModuleExact
 public import FLT.Mazur.AffineModuleGlobalSections
 public import FLT.Mazur.AffineModulePullbackSections
 public import FLT.Mazur.AffineModuleSupport
+public import FLT.Mazur.AffineNamedRefinementReconstruction
 public import FLT.Mazur.AffineNodeNormalizationExact
 public import FLT.Mazur.AffineOpenCartesianSections
 public import FLT.Mazur.AffineOpenCechBoundary
