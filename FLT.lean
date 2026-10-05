@@ -2890,6 +2890,7 @@ public import FLT.Mazur.EllipticDoubleRootEvenSlope
 public import FLT.Mazur.EllipticDoubleRootIteration
 public import FLT.Mazur.EllipticDoubleRootOddBound
 public import FLT.Mazur.EllipticDoubleRootSeparable
+public import FLT.Mazur.EllipticExtensionChartClosure
 public import FLT.Mazur.EllipticExtensionPrimeSubgroup
 public import FLT.Mazur.EllipticFormalAddition
 public import FLT.Mazur.EllipticFormalAdditionComparison
@@ -3062,6 +3063,8 @@ public import FLT.Mazur.EllipticStarTranslationDepth
 public import FLT.Mazur.EllipticStarZeroCoordinates
 public import FLT.Mazur.EllipticStarZeroResidue
 public import FLT.Mazur.EllipticStarZeroSlope
+public import FLT.Mazur.EllipticSubgroupChartClosure
+public import FLT.Mazur.EllipticSubgroupChartGeneric
 public import FLT.Mazur.EllipticTangentParameterHom
 public import FLT.Mazur.EllipticTripleRootBranches
 public import FLT.Mazur.EllipticTypeIIIDepth
@@ -3142,6 +3145,7 @@ public import FLT.Mazur.FiniteLineSheafDescent
 public import FLT.Mazur.FiniteLineSheafModel
 public import FLT.Mazur.FiniteLocalizedIntegerComparisons
 public import FLT.Mazur.FiniteOpenImmersionIntegerDescent
+public import FLT.Mazur.FinitePointAlgebraInterpolation
 public import FLT.Mazur.FinitePresentationIntegerModel
 public import FLT.Mazur.FinitePrincipalChartIntegerDescent
 public import FLT.Mazur.FinitePrincipalTargetRefinement

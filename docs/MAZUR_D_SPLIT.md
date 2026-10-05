@@ -1,7 +1,43 @@
 # Mazur track D: extension and local arithmetic
 
 
-## D-W28: integral closure construction (ordered split)
+## D-W29: concrete integral charts and subgroup coordinate maps
+
+Eight new leaves implement the first geometric constructions from W28:
+
+| Leaf | Module | Lines/cap | Output |
+| --- | --- | --- | --- |
+| Chart algebra | `WeierstrassIntegralChart` | 97/240 | Cubic quotient, universal coordinates, evaluation. |
+| Integral cover | `EllipticIntegralChartCover` | 82/240 | Every primitive generic point has Y or Z a unit; integral normalization. |
+| Point comparison | `EllipticIntegralChartEvaluation` | 91/240 | Generic and residue evaluations; equality with actual projective reduction. |
+| Ambient overlap | `WeierstrassChartOverlap` | 118/240 | Explicit inverse algebra maps between the localized standard charts. |
+| Subgroup closure | `EllipticSubgroupChartClosure` | 90/240 | Actual subgroup coordinate map, kernel quotient, torsion-freeness and DVR flatness. |
+| Finite interpolation | `FinitePointAlgebraInterpolation` | 67/240 | A separating map to a finite function algebra is surjective. |
+| Generic comparison | `EllipticSubgroupChartGeneric` | 74/240 | Closure generic-fiber equivalence and generic rank by chart point count. |
+| Transported subgroup | `EllipticExtensionChartClosure` | 75/240 | Instantiate at `ellipticExtensionPointHom`; projective subgroup order p. |
+
+Validation is recorded in the untracked `Scratch/MazurDW29/` receipts; run
+`python3 Scratch/MazurDW29/check.py` to recheck caps, module build/lint logs,
+axiom sets, root build and the merged-main relation. The final W29 handoff
+records the timestamp and commits. These constructions do not complete S2b.
+
+The next leaf is compatibility of the **closure ideals** under the already
+constructed ambient overlap equivalences. This needs restriction to the
+subgroup points lying in both generic charts, followed by localization of
+both kernel quotients. Glue those closures and prove global finiteness.
+The two standard affine chart closures must not simply be assumed finite:
+a generic point can belong to a chart while its specialization leaves that
+chart, so the normalized generic coordinate may have a denominator. W29's
+flatness and generic comparison deliberately require no such integrality.
+
+After gluing and finiteness, construct integral group operations on the good
+model and the relevant smooth multiplicative model, prove preservation of
+the subgroup closure, and finish the Hopf and special-fiber group comparisons.
+The proved chart evaluation comparison supplies the pointwise reduction part,
+but does not prove these group-scheme comparisons. Apply rigidity only after
+those obligations. C2/C3/Cp, A2 and final axiom removal remain downstream.
+
+## D-W28: integral closure construction (historical ordered split)
 
 The four steps below are proof obligations, not hypotheses to add to a model
 record. Each Lean leaf has cap 240 lines. Good and multiplicative reduction
@@ -29,9 +65,10 @@ is excluded.
    comparisons, then apply finite-flat rigidity with the S2a ramification
    bound. Continue S2b, C2/C3/Cp, A2 and the final axiom removal in that order.
 
-The immediate leaf is the affine quotient/image construction. The next
-geometric obligation is a covering by suitable integral charts; no claim
-that F3 already supplies all affine coordinate integrality is assumed.
+The original first leaf was the affine quotient/image construction. W29 above
+now supplies normalized integral point charts and ambient overlap maps; closure
+ideal gluing and global finiteness remain. F3 is not assumed to imply integrality
+of every coordinate on the full standard generic chart.
 
 ### W28 algebraic progress and geometric boundary
 
