@@ -4094,6 +4094,7 @@ public import FLT.Mazur.WeierstrassIntegralAdditionFormula
 public import FLT.Mazur.WeierstrassIntegralChart
 public import FLT.Mazur.WeierstrassReciprocalAdditionChart
 public import FLT.Mazur.WeierstrassReciprocalAdditionFormula
+public import FLT.Mazur.WeierstrassVerticalAdditionCharts
 public import FLT.MazurChapter.AdmissibleGroupSchemes
 public import FLT.MazurW
 public import FLT.MazurWOfPrimeTorsion
