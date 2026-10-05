@@ -2538,6 +2538,7 @@ public import FLT.Mazur.AffineGeometricDatumComparison
 public import FLT.Mazur.AffineGeometricDescent
 public import FLT.Mazur.AffineGeometricDescentComposition
 public import FLT.Mazur.AffineGeometricDescentMorphisms
+public import FLT.Mazur.AffineGeometricDescentRecognition
 public import FLT.Mazur.AffineGeometricMapComparison
 public import FLT.Mazur.AffineGeometricOverlap
 public import FLT.Mazur.AffineGeometricTensorCocycle
