@@ -252,6 +252,33 @@ optimal Eisenstein quotient, and the remaining arithmetic steps of the
 1978 route are still missing; FLT's arithmetic assumptions are unchanged.
 
 
+### Smoothness of the proper Weierstrass scheme — 2026-10-05
+
+`FLT/EllipticCurve/CubicSmooth.lean` proves `toBase_smooth` under
+`W.IsElliptic`, meaning the discriminant is invertible. The proof works
+over arbitrary commutative base rings, including nonreduced rings and
+residue characteristics two and three.
+
+Each partial-derivative localization has an explicit submersive
+presentation and is therefore a smooth algebra. On the ordinary affine
+chart, simultaneous vanishing of both derivatives would give a singular
+point over a residue field, contradicting the invertible discriminant.
+On the infinity chart, the overlap coordinate and transverse derivative
+generate the unit ideal even without the ellipticity assumption.
+The overlap is smooth by the already constructed algebra isomorphism
+with the localized ordinary chart. Locality then gives smoothness of
+both affine charts and of the actual global structural morphism.
+
+Together with the preceding properness theorem and the infinity section,
+this supplies a proper smooth pointed scheme for every elliptic
+Weierstrass equation. It does not yet prove relative dimension one,
+geometric connectedness, or the scheme-level group law. Those remaining
+elliptic-family properties and the modular moduli construction still
+precede the represented Jacobian and Eisenstein quotient. The namespace
+audit includes the new proofs; the FLT arithmetic assumptions remain
+unchanged.
+
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
