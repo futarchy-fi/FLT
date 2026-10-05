@@ -2518,6 +2518,8 @@ public import FLT.Mazur.AffineIdealPowerExtension
 public import FLT.Mazur.AffineImageSectionTransport
 public import FLT.Mazur.AffineIntegerModel
 public import FLT.Mazur.AffineIntersectionDiagramGluing
+public import FLT.Mazur.AffineIntersectionGluingBaseChange
+public import FLT.Mazur.AffineIntersectionProjection
 public import FLT.Mazur.AffineIntersectionRestriction
 public import FLT.Mazur.AffineIntersectionScalarExtension
 public import FLT.Mazur.AffineKernelLocalization
@@ -2748,6 +2750,8 @@ public import FLT.Mazur.DivisorTensorSequence
 public import FLT.Mazur.DivisorTwistedDegree
 public import FLT.Mazur.DivisorTwistedSequence
 public import FLT.Mazur.EnlargedPresentationModel
+public import FLT.Mazur.EquifiberedGluingBaseChange
+public import FLT.Mazur.EquifiberedSchemeGluing
 public import FLT.Mazur.EtaleCoordinate
 public import FLT.Mazur.EtaleDimGe
 public import FLT.Mazur.EtaleDimLe
@@ -2778,7 +2782,9 @@ public import FLT.Mazur.FiniteIntersectionCoordinateSquares
 public import FLT.Mazur.FiniteIntersectionGluingRecovery
 public import FLT.Mazur.FiniteIntersectionIntegerModel
 public import FLT.Mazur.FiniteIntersectionModelGluing
+public import FLT.Mazur.FiniteIntersectionScalarGluingOver
 public import FLT.Mazur.FiniteIntersectionScalarGluingRecovery
+public import FLT.Mazur.FiniteIntersectionSchemeDescent
 public import FLT.Mazur.FiniteIntersectionSectionDiagram
 public import FLT.Mazur.FiniteLocalizedIntegerComparisons
 public import FLT.Mazur.FiniteOpenImmersionIntegerDescent
