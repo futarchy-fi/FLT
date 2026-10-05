@@ -3065,6 +3065,8 @@ public import FLT.Mazur.EllipticStarZeroResidue
 public import FLT.Mazur.EllipticStarZeroSlope
 public import FLT.Mazur.EllipticSubgroupChartClosure
 public import FLT.Mazur.EllipticSubgroupChartGeneric
+public import FLT.Mazur.EllipticSubgroupOverlapClosure
+public import FLT.Mazur.EllipticSubgroupOverlapEvaluation
 public import FLT.Mazur.EllipticTangentParameterHom
 public import FLT.Mazur.EllipticTripleRootBranches
 public import FLT.Mazur.EllipticTypeIIIDepth
