@@ -2582,6 +2582,7 @@ public import FLT.Mazur.AffinePushforwardQuasicoherent
 public import FLT.Mazur.AffineQuasiCoherentBaseChange
 public import FLT.Mazur.AffineRestrictionImmersion
 public import FLT.Mazur.AffineReverseGeometricOverlap
+public import FLT.Mazur.AffineReverseOverlapDiagonal
 public import FLT.Mazur.AffineScaledPullbackSections
 public import FLT.Mazur.AffineScaledTripleTransport
 public import FLT.Mazur.AffineSectionsReconstruction
