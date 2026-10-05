@@ -54,7 +54,7 @@ theorem toFiberProduct_overlap :
     letI := ψ.hom.toAlgebra
     toFiberProduct R' S' ((pullback (Spec.map b)).obj M) (overlap φ ψ a b w M D) =
       fiberProductOverlap φ ψ a b w M D := by
-  letI := ψ.hom.toAlgebra
+  let _ := ψ.hom.toAlgebra
   exact toFiberProduct_fromFiberProduct R' S' ((pullback (Spec.map b)).obj M) _
 
 end FLT.Mazur.AffineGeometricOverlapRefinement
