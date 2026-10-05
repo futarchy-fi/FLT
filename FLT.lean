@@ -2531,6 +2531,9 @@ public import FLT.Mazur.AffineIntersectionGluingBaseChange
 public import FLT.Mazur.AffineIntersectionGluingSections
 public import FLT.Mazur.AffineIntersectionModelSheaf
 public import FLT.Mazur.AffineIntersectionProjection
+public import FLT.Mazur.AffineIntersectionProjectionCocycle
+public import FLT.Mazur.AffineIntersectionProjectionSections
+public import FLT.Mazur.AffineIntersectionProjectionSheaf
 public import FLT.Mazur.AffineIntersectionRestriction
 public import FLT.Mazur.AffineIntersectionScalarExtension
 public import FLT.Mazur.AffineIteratedPullbackLaws
@@ -3080,6 +3083,7 @@ public import FLT.Mazur.ModuleSubobjectCoverEquality
 public import FLT.Mazur.ModuleTensorPowerSection
 public import FLT.Mazur.ModuleTensorPowerSectionInduction
 public import FLT.Mazur.ModuleTensorPullbackRestriction
+public import FLT.Mazur.ModuleUnitCocycleCongr
 public import FLT.Mazur.ModuleUnitCocyclePullback
 public import FLT.Mazur.MultiplicativeGroupDimension
 public import FLT.Mazur.MultiplicativeGroupFieldExtension
