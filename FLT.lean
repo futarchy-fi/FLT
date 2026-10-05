@@ -2778,6 +2778,7 @@ public import FLT.Mazur.DivisorStalkLength
 public import FLT.Mazur.DivisorTensorSequence
 public import FLT.Mazur.DivisorTwistedDegree
 public import FLT.Mazur.DivisorTwistedSequence
+public import FLT.Mazur.EllipticComponentBaseChange
 public import FLT.Mazur.EllipticComponentQuotient
 public import FLT.Mazur.EllipticComponentVariableChange
 public import FLT.Mazur.EllipticCuspTangent
@@ -2881,9 +2882,11 @@ public import FLT.Mazur.EllipticNormalizedTypeII
 public import FLT.Mazur.EllipticPadicKernel
 public import FLT.Mazur.EllipticPadicSpecialization
 public import FLT.Mazur.EllipticPrimeToResidueSpecialization
+public import FLT.Mazur.EllipticProjectiveBaseChange
 public import FLT.Mazur.EllipticProjectiveReduction
 public import FLT.Mazur.EllipticRationalSingularity
 public import FLT.Mazur.EllipticReductionAffineAddition
+public import FLT.Mazur.EllipticReductionBaseChange
 public import FLT.Mazur.EllipticReductionInfinityChart
 public import FLT.Mazur.EllipticReductionKernel
 public import FLT.Mazur.EllipticReductionOpposite
