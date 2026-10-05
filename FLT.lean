@@ -2584,6 +2584,7 @@ public import FLT.Mazur.AffinePairUnitTransport
 public import FLT.Mazur.AffinePicardComparison
 public import FLT.Mazur.AffinePicardSections
 public import FLT.Mazur.AffineProductMap
+public import FLT.Mazur.AffinePullbackCoefficientRecognition
 public import FLT.Mazur.AffinePullbackCorner
 public import FLT.Mazur.AffinePullbackEpiReflection
 public import FLT.Mazur.AffinePullbackHomExt
