@@ -1,5 +1,50 @@
 # Mazur track D: extension and local arithmetic
 
+## D-W31: point sections, point quotients, and finite fibers
+
+The actual glued subgroup closure is now proved locally quasi-finite for
+finite H. `ellipticExtensionClosure_locallyQuasiFinite` applies this to the
+transported prime-order subgroup and the Y/Z gluing, deriving finiteness of H
+from the generator's order. **Global finiteness and rank p remain open.**
+
+The new proof constructs integral point sections through the actual closure
+kernel. It then identifies each individual point quotient with the principal
+base localization at its primitive chart coordinate. Those closed point
+subschemes cover every chart prime, and each has an open immersion to the
+base. Thus each contributes at most one point to a fiber. Finite-type descent
+proves quasi-finiteness of the gluing. The closed-fiber description additionally
+shows that every chart point over the closed base point is the reduction of
+an actual integral subgroup point; it makes no reducedness claim.
+
+The eight modules are `EllipticSubgroupIntegralEvaluation`,
+`EllipticSubgroupIntegralSection`, `FinitePointKernelCover`,
+`EllipticSubgroupPointKernels`, `EllipticSubgroupPointLocalization`,
+`EllipticSubgroupClosureQuasiFinite`, `EllipticSubgroupClosedFiberPoints`, and
+`EllipticExtensionClosureQuasiFinite`. They contain 685 lines in total, with
+53–137 lines per module against the 240-line cap. Proof commits are
+`4f383e5d`, `66e49dcf`, and `4ed13712`.
+
+The first continuation item is still properness and rank p. An ambient
+projective closed immersion would establish properness. Alternatively,
+compare the point-quotient maps with the restrictions of the integral
+sections, prove those sections jointly cover the global closure, and deduce
+universal closedness from their finite coproduct; separatedness still needs
+proof. Mathlib already supplies
+`IsFinite.of_isProper_of_locallyQuasiFinite`. Once finite, the generic chart
+comparisons and subgroup cardinality determine rank p. The integral group
+operations, specialization/rigidity, S2b, and final axiom removal remain open.
+
+Checked at 2026-10-05T14:08:15.456816+00:00: all eight foreground module builds and
+individual linters pass without warnings. All 49 exported declarations,
+including generated reassociation lemmas, use only propext, Classical.choice,
+and Quot.sound. Timed probes peaked at 1,832,844 KiB RSS. Main `80235827`
+was merged as `70805bec`; the required foreground FLT build passed all
+13,325 jobs without warnings or declaration clashes. The final theorem still
+uses Mazur_statement and sorryAx. Re-run
+`python3 Scratch/MazurDW31/check.py` to check source hashes, caps, receipts,
+axiom sets, root-build success, and ancestry of the recorded merge. Fresh
+Lean audits are `Scratch/MazurDW31/Axioms.lean` and `GlobalAxioms.lean`.
+
 
 ## D-W30: compatible closure overlaps and the glued scheme
 
