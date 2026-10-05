@@ -849,3 +849,59 @@ Validation is reproducible with per-module `lake build`, per-module
 handoff records checked-at receipts and the required post-merge root build.
 The endpoint check remains `rg -n Mazur_statement FLT/Assumptions/Mazur.lean
 FermatsLastTheorem.lean`; these modules do not remove that assumption.
+
+
+## W21: compatibility with the actual affine refinement (2026-10-05)
+
+The first two remaining W20 items are proved. Canonical geometric overlaps
+commute with the reconstruction square, and both directions of the actual
+categorical fiber-product/tensor-spectrum chart preserve them.
+`AffineGeometricDescentRecognition.refinement_compatible` proves coaction
+compatibility for `AffineGeometricOverlapRefinement.data` and the transported
+reconstruction. It needs compatibility only for the original chart.
+`AffineDescentRefinement.effective_reconstruction_compatible` supplies that
+original compatibility for the effective reconstruction, so its conclusion has
+no coaction-compatibility hypothesis.
+
+| Module (`FLT.Mazur.` prefix) | Proved interface |
+| --- | --- |
+| SchemePullbackSquare | Normalized paths commute with a scheme square |
+| SchemePullbackOverlapSquare | Base change identifies canonical overlaps across the square |
+| SchemeOverlapConjugation | Normalization preserves arbitrary reconstruction charts |
+| SchemeReconstructionOverlapSquare | Base change transports the full reconstruction chart |
+| SchemeCanonicalOverlapRefinement | Actual categorical refinement preserves canonical overlaps |
+| AffineCanonicalOverlapChart | Canonical overlaps agree in both affine chart directions |
+| AffineRefinementCoactionCompatibility | Actual refined data and transported charts are coaction-compatible |
+| AffineEffectiveRefinementComparison | Effective comparison, reconstruction equation, and uniqueness |
+| SchemeCanonicalOverlapNaturality | A reconstruction square intertwines canonical scheme overlaps |
+
+`effectiveComparisonIso` now compares restriction of effective descent with
+effective descent of the actual refined datum, without an extra compatibility
+assumption. Its reconstruction equation and uniqueness are proved.
+This completes the object comparison portion of W20 item 3.
+
+Continue in this order:
+
+1. Finish affine map compatibility and naturality. The scheme-level theorem
+   `SchemePullbackOverlap.chartOverlap_compatible` is proved. Applying it through
+   `coactionCompatible_iff_canonical_overlap` to the affine `MapCompatible`
+   statement still needs a smaller kernel-checkable proof. The W21 attempt
+   elaborated but exceeded the default kernel limit; neither that attempt nor
+   the dependent effective-naturality wrapper is a validated result. Both are
+   retained as untracked WIP files outside the library.
+2. Prove identity/composition coherence of `effectiveComparisonIso`, using its
+   reconstruction equation and `effectiveComparisonIso_unique`. Include the
+   actual identifications of the sheaves and geometric data under successive
+   refinement; coherence of the overlap scheme maps alone is insufficient.
+3. Glue the objects and maps across affine covers to finish P9e.
+4. Supply locally-free-rank-one to invertible coefficients, then continue
+   P10–P21 and the actual modular curve/Jacobian constructions. Keep G1 and
+   track D separate.
+
+Checks: individual `lake build FLT.Mazur.MODULE`, single-module
+`lake exe runLinter FLT.Mazur.MODULE`, and originating-module axiom audits.
+The untracked W21 handoff records checked-at receipts, memory measurements,
+and the root build after merging main. Re-run `python3 G2_W21_SOURCE_CHECK.py`
+for the local receipt. The endpoint source check remains
+`rg -n Mazur_statement FLT/Assumptions/Mazur.lean FermatsLastTheorem.lean`;
+this checkpoint does not remove the Mazur assumption or finish P9e.
