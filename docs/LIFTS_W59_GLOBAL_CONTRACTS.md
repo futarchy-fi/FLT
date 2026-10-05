@@ -71,13 +71,30 @@ uses different transitivity to remove the total-ramification hypothesis.
 `Padics.DifferentBound` proves that p^(N+1) belongs to the different of every
 finite Henselian DVR extension of Zp with integral rank at most N.
 
-Still required: instantiate this bound on each actual parameter-field
-completion, transport the rational completion integer ring to Zp, bound the
-local integral rank by the global degree and compare local/global different
-exponents. Then identify finite-test-ring maps with tangent spaces and
-construct the complete-local presentation. Hermite counting alone does not
-prove these statements. Check saved evidence with
-`python3 Scratch/LiftsW66/check.py`.
+W67 instantiates this bound on the full completed integer rings.
+`NumberField.Completion.RankBound` bounds the local integral rank by the
+global degree. `Completion.UniformDifferentBound` uses the proved
+Henselianity and the original p-adic base isomorphism; the different remains
+over that original base. `UniformDifferentExponent` compares local and
+global exponents at every prime above a rational prime.
+`HardlyRamifiedParameterFiniteness` proves the explicit bound
+`(2*p)^((N+1)*N)` and unconditional finite coefficient parameters for each
+finite discrete test ring, with `N = Nat.card (GL (Fin 2) A)`.
+
+`DualNumberTest` constructs the finite test object with the original residue
+field. `ContinuousTangent` identifies its parameter maps with continuous
+coefficient-linear Leibniz functionals at the specified residue map.
+`HardlyRamifiedTangentFinite` applies the arithmetic counting theorem to
+prove finite dimension of these tangent spaces for both the actual framed
+HR quotient and, under irreducibility, its trace image.
+
+Still required: derive topological finite generation and the adic topology
+from these continuous tangents and construct a finite-variable complete-local
+presentation. An algebraic cotangent identification requires a topology
+comparison; finite continuous dual alone must not be substituted into an
+algebraic Nakayama lemma. The G0/G1 Selmer identification is also separate.
+Noetherianity of a target still does not imply Noetherianity of its subring.
+Check saved evidence with `python3 Scratch/LiftsW67/check.py`.
 
 ## Required arithmetic objects
 
