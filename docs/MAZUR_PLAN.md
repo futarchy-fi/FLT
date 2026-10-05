@@ -319,6 +319,27 @@ steps, followed by compatibility with base change for geometric
 connectedness. The modular objects and arithmetic exclusion remain
 unfinished; no FLT assumption is removed by this result.
 
+### Integral infinity chart and connected glued cubic (2026-10-05)
+
+`FLT/EllipticCurve/CubicIntegral.lean` completes the infinity-chart and
+global connectedness steps left open above. An explicit change of variables
+presents the infinity ring as a monic cubic extension of R[v]. Freeness
+over R[v] makes multiplication by v injective over any domain R.
+Consequently its localization into the integral overlap is injective,
+and the infinity ring is itself a domain.
+
+The overlap is dense in both charts. The gluing equation then proves
+that the ordinary chart is dense in the whole cubic, giving global
+irreducibility and connectedness. Reducedness descends from the two
+affine charts, so `scheme_isIntegral` holds for every integral coefficient
+ring, without requiring an invertible discriminant.
+
+Geometric connectedness still requires identifying the base-changed
+scheme with the construction for the base-changed coefficients.
+Connectedness of the original scheme alone does not discharge that step.
+The group law, modular objects and arithmetic exclusion remain unfinished;
+this result removes no assumption from the FLT assembly.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
