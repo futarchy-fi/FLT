@@ -2538,6 +2538,7 @@ public import FLT.Mazur.AffineFiberProductCocycleChart
 public import FLT.Mazur.AffineFiberProductDiagonal
 public import FLT.Mazur.AffineFiberProductOverlap
 public import FLT.Mazur.AffineFiberProductPairTransport
+public import FLT.Mazur.AffineFiberProductRefinementCocycle
 public import FLT.Mazur.AffineFpqcRefinement
 public import FLT.Mazur.AffineGeometricDatumComparison
 public import FLT.Mazur.AffineGeometricDescent
