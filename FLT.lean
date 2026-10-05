@@ -2602,12 +2602,14 @@ public import FLT.Mazur.EllipticFormalFieldPoint
 public import FLT.Mazur.EllipticFormalFirstOrder
 public import FLT.Mazur.EllipticFormalGenericParameters
 public import FLT.Mazur.EllipticFormalGroupLaw
+public import FLT.Mazur.EllipticFormalIntegerMultiplication
 public import FLT.Mazur.EllipticFormalIntersection
 public import FLT.Mazur.EllipticFormalInverse
 public import FLT.Mazur.EllipticFormalLinearTerms
 public import FLT.Mazur.EllipticFormalMultiplication
 public import FLT.Mazur.EllipticFormalNegation
 public import FLT.Mazur.EllipticFormalProjective
+public import FLT.Mazur.EllipticFormalQuadratic
 public import FLT.Mazur.EllipticFormalSecant
 public import FLT.Mazur.EllipticFormalSecantComparison
 public import FLT.Mazur.EllipticFormalSubstitution
@@ -2618,8 +2620,11 @@ public import FLT.Mazur.EllipticInfinityParameter
 public import FLT.Mazur.EllipticInfinityPowerSeries
 public import FLT.Mazur.EllipticLocalAddition
 public import FLT.Mazur.EllipticLocalChartPoint
+public import FLT.Mazur.EllipticLocalCubicExpansion
 public import FLT.Mazur.EllipticLocalEvaluation
+public import FLT.Mazur.EllipticLocalIntegerMultiplication
 public import FLT.Mazur.EllipticLocalMultiplication
+public import FLT.Mazur.EllipticLocalValuation
 public import FLT.Mazur.EllipticProjectiveReduction
 public import FLT.Mazur.EllipticReductionAffineAddition
 public import FLT.Mazur.EllipticReductionInfinityChart
@@ -2629,6 +2634,7 @@ public import FLT.Mazur.EllipticReductionRelation
 public import FLT.Mazur.EllipticReductionTranslation
 public import FLT.Mazur.EllipticSmoothReduction
 public import FLT.Mazur.EllipticSmoothReductionAddition
+public import FLT.Mazur.EllipticUnramifiedTorsion
 public import FLT.Mazur.EtaleCoordinate
 public import FLT.Mazur.EtaleDimGe
 public import FLT.Mazur.EtaleDimLe
