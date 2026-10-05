@@ -1,5 +1,38 @@
 # Mazur track D: extension and local arithmetic
 
+
+## D-W28: integral closure construction (ordered split)
+
+The four steps below are proof obligations, not hypotheses to add to a model
+record. Each Lean leaf has cap 240 lines. Good and multiplicative reduction
+must both be covered; the admitted general good-reduction flatness theorem
+is excluded.
+
+1. **Affine closure algebra.** For an integral chart algebra A and its map
+   f into the generic finite etale subgroup algebra B, use A / ker(f),
+   identify it with the image, and prove torsion-freeness and flatness over
+   the DVR. Recover the generic algebra when the generic chart map is onto.
+   This step does not require A itself to be finite or a Hopf algebra.
+2. **Finiteness and rank.** Prove integrality of the chart generators using
+   the actual torsion-point bounds, then finite generation plus integrality
+   gives a finite module. Recover rank p from the generic comparison.
+   Good reduction needs charts including the identity: affine x,y have
+   poles there. Multiplicative reduction additionally needs the Tate/node
+   chart and a proof that the chosen charts cover the subgroup closure.
+3. **Hopf operations.** Prove that product closures embed into the generic
+   product using flatness over the DVR. Restrict the integral ambient group
+   law to the closure, then descend comultiplication, counit and antipode.
+   Product flatness alone does not extend a rational group law across a
+   node: the Weierstrass smooth locus or a suitable group model is needed.
+4. **Specialization.** Prove the chart evaluation maps commute with residue
+   reduction and agree with actual elliptic point reduction. Glue the chart
+   comparisons, then apply finite-flat rigidity with the S2a ramification
+   bound. Continue S2b, C2/C3/Cp, A2 and the final axiom removal in that order.
+
+The immediate leaf is the affine quotient/image construction. The next
+geometric obligation is a covering by suitable integral charts; no claim
+that F3 already supplies all affine coordinate integrality is assumed.
+
 ## D-W13: nodal label descent and a component bound
 
 C1.5a.x.10 now has proofs of label addition for E₀ translations, equal-depth
