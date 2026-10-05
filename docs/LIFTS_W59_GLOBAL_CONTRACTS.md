@@ -32,12 +32,25 @@ representation and a strict frame recovering the original HR representation
 and its row at two. The descended representation has the original determinant
 and is unramified away from 2p (`HardlyRamifiedTraceArithmetic`).
 
-This is not yet the comparison with KW II's completed tensor product or a
-proof of finite-flat descent to the smaller image ring. W68 proves
-Noetherianity of both actual rings; p-adic module finiteness is still missing. The generic theorem
+W69 proves finite-flat descent to the smaller image ring in
+`HardlyRamifiedTraceFlat`, using the compact coefficient injection and
+schematic closure on cofinal finite reductions. The comparison with KW II's
+completed tensor product remains. W68 proves Noetherianity of both actual
+rings; p-adic module finiteness is still missing. The generic theorem
 `ProartinianCat.imageObject_isNoetherian` requires a Noetherian **source**;
 Noetherianity of a framed target would not imply Noetherianity of its subring.
 Check the saved W64 evidence with `python3 Scratch/LiftsW64/check.py`.
+
+W70 descends the specified quotient itself to the trace image. The actual
+Frobenius value at two gives a unit residual eigenvalue gap; the strict
+recovery frame then determines a normalized quotient row over the smaller
+ring. `HardlyRamifiedTraceTwoQuotient` preserves its original residual row
+under every coefficient specialization, including prime quotients.
+`HardlyRamifiedTraceConditions` constructs the continuous unramified
+quadratic quotient action and proves the complete HR predicate, with the
+p-adic scalar tower explicitly matched. Recheck with
+`python3 Scratch/LiftsW70/check.py`. This does not supply D3/D4 or the KW
+local-ring comparison.
 
 `DeSmitLenstra/FramedCompletion` proves Noetherianity with a **finite group**
 parameter. `ProfiniteUniversalLift` constructs a limit over finite quotients;
@@ -168,9 +181,14 @@ quotient and coefficient maps.
    ideal; the source's actual theta-generator computation forbids using a
    theta-adic extension in place of the crystalline construction.
 4. The finite coefficient order: W68 proves arithmetic Noetherianity and
-   adic completeness. The order carrying a lift still needs the selected-local
-   comparison, integral finite-flat descent and D3/D4/I0. Do not report the
-   candidate Eisenstein coefficient rings of W58 as that order.
+   adic completeness; W69 proves finite-flat descent to the actual trace
+   image. `PrimeCoefficientOrder` and `HardlyRamifiedTraceOrder` construct
+   prime quotients with the original residue field and representation.
+   Given D3 finiteness and a prime avoiding p, they are finite free
+   characteristic-zero domains with the original quotient/module topology.
+   W70 supplies the quotient at two and all four HR conditions. D3/D4,
+   the selected-local comparison and exact tensor-conjugacy assembly remain. These conditional order
+   theorems do not supply the missing arithmetic inputs or close I0.
 
 These unresolved inputs are mathematical gaps, not a request for permission.
 The lifting admission and its dependency at the FLT endpoint remain until

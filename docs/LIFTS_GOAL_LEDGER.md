@@ -4,6 +4,82 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
+## W70 — the specified quotient descends to trace coefficients
+
+The quotient at two is now constructed over the actual trace image and
+specializes to every prime coefficient order. The full `IsHardlyRamified`
+predicate holds after every coefficient specialization whose p-adic scalar
+map factors through the original coefficient base. **Arithmetic module
+finiteness and nonnilpotence remain open; the lifting goal is not closed.**
+
+Recheck the sources, saved validation logs, line caps and main ancestry with
+`python3 Scratch/LiftsW70/check.py`, which prints a checked-at timestamp.
+Rerun foreground builds, sequential individual-module lint and axiom audits
+with `python3 Scratch/LiftsW70/validate.py`. These local receipts and
+`LIFTS_W70_RESULT.md` are untracked workspace artifacts.
+
+| Component | Module | Proved boundary |
+|---|---|---|
+| Normalized quotient descent | `RepresentationTheory.NormalizedQuotientDescent` | A unit eigenvalue gap and an injective coefficient map descend the entire eigenrow. The normalized functional is surjective and unique. |
+| Actual Frobenius gap | `HardlyRamifiedTwoFrobenius` | Naturality transports the cyclotomic Frobenius value 2 to Q2. The actual residual determinant and quadratic quotient imply a unit eigenvalue gap. |
+| Trace-image row | `HardlyRamifiedTraceTwoRow` | Constructs the normalized eigenrow over the actual trace image; it reduces to the original second-coordinate quotient and recovers the frame row up to a unit. |
+| Specialized quotient | `HardlyRamifiedTraceTwoQuotient` | Constructs a surjective functional equivariant for the fixed integral sign character on every coefficient specialization, including every prime quotient. |
+| Scalar continuity | `RepresentationTheory.ScalarQuotient` | Recovers continuity from an equivariant surjective functional and constructs the corresponding rank-one Galois action. |
+| Complete HR predicate | `HardlyRamifiedTraceConditions` | Proves the specified quotient predicate, triviality on the original dyadic inertia, the quadratic action, and all four HR conditions on the same specialized lift. |
+
+The row is determined by its Frobenius equation, not chosen after changing
+the residue field. If its coefficients after extension are `(a,b)`, the
+strict recovery frame makes `b` a unit; the constructed parameter satisfies
+`inc(t)*b=a`. Injectivity then descends every local equivariance equation.
+Continuity comes from evaluating the actual quotient on one vector mapping
+to 1, so no continuity assumption on a new character is added.
+
+This closes W69's specified-quotient descent obligation. It does not prove
+the KW selected-local-ring/completed-tensor-product comparison, D3 finiteness
+via M0, or D4 nonnilpotence. Original-module tensor-conjugacy, integral
+assembly, S0a3, Lp0 and G0a–G1c retain their stated obligations. In particular,
+finite-flat reductions and the full HR predicate do not imply p-adic module
+finiteness or a characteristic-zero point. No numerical Serre-weight or
+arbitrary-p Raynaud classification API is introduced.
+
+## W69 — finite-flat descent and prime coefficient orders
+
+Recheck sources, saved validation evidence, line caps and main ancestry with
+`python3 Scratch/LiftsW69/check.py`; it prints the checked-at time. Rerun the
+foreground builds, individual-module lint and axiom audits with
+`python3 Scratch/LiftsW69/validate.py`. Evidence and the detailed
+`LIFTS_W69_RESULT.md` remain untracked outside the source and docs trees.
+
+**Finite-flat descent to the actual trace-image lift is proved. The finite
+p-adic order and lifting goal remain conditional on arithmetic inputs.**
+Noetherianity from W68 now also constructs prime coefficient quotients in the
+original residue-field category, without normalization.
+
+| Item | New module | Proved scope |
+|---|---|---|
+| Integral finite-flat descent | `RepresentationTheory.FlatCoefficientDescent` | An induced coefficient topology makes pulled-back open ideals cofinal. Schematic closure descends their finite-flat reductions. Continuous injections from compact coefficients satisfy this topology hypothesis. |
+| Recovery frames | `RepresentationTheory.FlatMatrixConjugation` | Matrix recovery gives the exact linear conjugacy and preserves finite-flatness on all open reductions. |
+| Actual HR application | `HardlyRamifiedTraceFlat` | Proves finite-flatness of the constructed trace-image lift and every coefficient specialization, from the original irreducible HR input. |
+| Finite-order topology | `FinitePadicOrderTopology` | Finite free p-adic coefficients with continuous scalars have the module topology; p-power ideals are open and cofinal in the original topology. |
+| Prime order construction | `PrimeCoefficientOrder` | A prime avoiding p in a p-adically finite Noetherian proartinian ring gives a finite free characteristic-zero domain with the original residue field and quotient topology. Nonnilpotence produces such a prime. Finiteness and nonnilpotence are hypotheses. |
+| Actual trace prime lift | `HardlyRamifiedTraceOrder` | Constructs the continuous residual-compatible lift on every prime quotient of the actual trace image, with cyclotomic determinant, trivial away-inertia and finite-flat open reductions. It has finite free characteristic-zero coefficients and the module topology when the arithmetic finiteness, avoidance and scalar-continuity inputs hold. |
+
+The finite-flat argument uses subobjects of *finite reductions*, not an
+assertion that the whole coefficient inclusion is finite flat. A pulled-back
+open ideal need only be contained in the requested source ideal; the existing
+quotient theorem then supplies the requested reduction.
+
+The missing arithmetic inputs remain D3 module finiteness and D4
+nonnilpotence, requiring the source-matched KW local rings, M0 and G0/G1.
+The prescribed quotient at two has only been recovered after extension to
+the framed ring; descending that quotient to the trace image/order is still
+required. The exact original-module tensor conjugacy and integral assembly
+also remain. Thus this closes the finite-flat descent component, not I0 as
+a whole or the KW selected-local-ring comparison. S0a3 and Lp0 retain their
+stated gaps; no numerical Serre-weight or arbitrary-p Raynaud API is asserted.
+Earlier wave sections record historical boundaries; this section supersedes
+their open finite-flat descent obligation for the actual trace-image lift.
+
 ## W68 — arithmetic Noetherianity via the actual topology
 
 Recheck sources, validation-log hashes, line caps and main ancestry with
