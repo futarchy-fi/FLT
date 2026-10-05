@@ -3937,6 +3937,7 @@ public import FLT.Mazur.SchemeCohomologyIso
 public import FLT.Mazur.SchemeCohomologyIsoCocycles
 public import FLT.Mazur.SchemeCoproductCohomology
 public import FLT.Mazur.SchemeCoproductSections
+public import FLT.Mazur.SchemeGeometricDescentCocycleTest
 public import FLT.Mazur.SchemeGeometricDescentData
 public import FLT.Mazur.SchemeModulePullbackUnits
 public import FLT.Mazur.SchemeOverlapBaseChange
