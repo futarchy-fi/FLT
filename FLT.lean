@@ -2830,11 +2830,15 @@ public import FLT.Mazur.EllipticAdditiveDepthRefinement
 public import FLT.Mazur.EllipticAdditiveFirstBranches
 public import FLT.Mazur.EllipticAdditiveLaterBranches
 public import FLT.Mazur.EllipticAdditiveStarTranslation
+public import FLT.Mazur.EllipticAdditiveTorsionExclusion
 public import FLT.Mazur.EllipticAdditiveTranslationDepth
 public import FLT.Mazur.EllipticComponentBaseChange
 public import FLT.Mazur.EllipticComponentQuotient
 public import FLT.Mazur.EllipticComponentVariableChange
+public import FLT.Mazur.EllipticCuspAddition
+public import FLT.Mazur.EllipticCuspParametrization
 public import FLT.Mazur.EllipticCuspTangent
+public import FLT.Mazur.EllipticCuspidalGroup
 public import FLT.Mazur.EllipticDoubleRootCoordinates
 public import FLT.Mazur.EllipticDoubleRootEvenBound
 public import FLT.Mazur.EllipticDoubleRootEvenComparison
@@ -2986,6 +2990,7 @@ public import FLT.Mazur.EllipticSingularDivisibility
 public import FLT.Mazur.EllipticSingularPointChart
 public import FLT.Mazur.EllipticSingularSmallChar
 public import FLT.Mazur.EllipticSingularVariableChange
+public import FLT.Mazur.EllipticSmoothPointChange
 public import FLT.Mazur.EllipticSmoothReduction
 public import FLT.Mazur.EllipticSmoothReductionAddition
 public import FLT.Mazur.EllipticSplitDepthModel
