@@ -2501,6 +2501,7 @@ public import FLT.Mazur.AffineBaseSectionFunctor
 public import FLT.Mazur.AffineBranchSequence
 public import FLT.Mazur.AffineCartesianSectionScalars
 public import FLT.Mazur.AffineClosedModuleDescent
+public import FLT.Mazur.AffineCoefficientUnitLaws
 public import FLT.Mazur.AffineCoherent
 public import FLT.Mazur.AffineCoherentSubmoduleExtension
 public import FLT.Mazur.AffineCoherentSubmoduleRestriction
@@ -2520,6 +2521,7 @@ public import FLT.Mazur.AffineCoverCohomology
 public import FLT.Mazur.AffineCoverIntersections
 public import FLT.Mazur.AffineFaithfullyFlatEpimorphisms
 public import FLT.Mazur.AffineFpqcRefinement
+public import FLT.Mazur.AffineGeometricOverlap
 public import FLT.Mazur.AffineIdealPowerExtension
 public import FLT.Mazur.AffineImageSectionTransport
 public import FLT.Mazur.AffineIntegerModel
@@ -2528,8 +2530,13 @@ public import FLT.Mazur.AffineIntersectionGluingBaseChange
 public import FLT.Mazur.AffineIntersectionProjection
 public import FLT.Mazur.AffineIntersectionRestriction
 public import FLT.Mazur.AffineIntersectionScalarExtension
+public import FLT.Mazur.AffineIteratedPullbackLaws
+public import FLT.Mazur.AffineIteratedPullbackSections
 public import FLT.Mazur.AffineKernelLocalization
+public import FLT.Mazur.AffineLiftedOverlapCoefficients
+public import FLT.Mazur.AffineLineCoalgebraDescent
 public import FLT.Mazur.AffineLineTwistLocalization
+public import FLT.Mazur.AffineModuleCoalgebraDescent
 public import FLT.Mazur.AffineModuleEpimorphisms
 public import FLT.Mazur.AffineModuleExact
 public import FLT.Mazur.AffineModuleGlobalSections
@@ -2540,6 +2547,12 @@ public import FLT.Mazur.AffineOpenCartesianSections
 public import FLT.Mazur.AffineOpenCechBoundary
 public import FLT.Mazur.AffineOpenDenominators
 public import FLT.Mazur.AffineOpenImmersionLocalizationCriterion
+public import FLT.Mazur.AffineOverlapDiagonal
+public import FLT.Mazur.AffineOverlapPullback
+public import FLT.Mazur.AffineOverlapTensor
+public import FLT.Mazur.AffinePairPullbackSections
+public import FLT.Mazur.AffinePicardComparison
+public import FLT.Mazur.AffinePicardSections
 public import FLT.Mazur.AffinePullbackCorner
 public import FLT.Mazur.AffinePullbackEpiReflection
 public import FLT.Mazur.AffinePullbackIdeal
@@ -2553,6 +2566,14 @@ public import FLT.Mazur.AffineSquareScalarExtension
 public import FLT.Mazur.AffineSquareTensorComparison
 public import FLT.Mazur.AffineStalkExtension
 public import FLT.Mazur.AffineStalkMorphism
+public import FLT.Mazur.AffineTensorCoalgebraComparison
+public import FLT.Mazur.AffineTensorCocycle
+public import FLT.Mazur.AffineTensorCocycleTransport
+public import FLT.Mazur.AffineTensorDescentMorphisms
+public import FLT.Mazur.AffineTripleOverlapCoefficients
+public import FLT.Mazur.AffineTripleOverlapEvaluation
+public import FLT.Mazur.AffineTripleOverlapMaps
+public import FLT.Mazur.AffineTripleOverlapPullback
 public import FLT.Mazur.AffineTrivialLineSectionOpen
 public import FLT.Mazur.AmpleAffineBase
 public import FLT.Mazur.AmpleAffinePullback
@@ -2768,6 +2789,7 @@ public import FLT.Mazur.ExactFunctorInjectiveExt
 public import FLT.Mazur.ExactSourceDenominatorLift
 public import FLT.Mazur.FCurveContracts
 public import FLT.Mazur.FaithfullyFlatFinitePresentation
+public import FLT.Mazur.FaithfullyFlatInvertible
 public import FLT.Mazur.FamilyTransport
 public import FLT.Mazur.FiniteAffineAtlasDiagramDescent
 public import FLT.Mazur.FiniteAffineCoverDimension
@@ -3126,6 +3148,7 @@ public import FLT.Mazur.PinchingAffineDescent
 public import FLT.Mazur.PinchingChartBaseChange
 public import FLT.Mazur.PinchingNeighborhoods
 public import FLT.Mazur.PinchingPullbackTransport
+public import FLT.Mazur.PointedPicardNormalization
 public import FLT.Mazur.PolygonActionAssociativity
 public import FLT.Mazur.PolygonActionBaseChange
 public import FLT.Mazur.PolygonActionFieldExtension
@@ -3431,6 +3454,8 @@ public import FLT.Mazur.RelativeCartierIdealPullback
 public import FLT.Mazur.RelativeDirectImageComposition
 public import FLT.Mazur.RelativeDirectImageForgetting
 public import FLT.Mazur.RelativeDirectImageOpenResolution
+public import FLT.Mazur.RelativePicardPresheaf
+public import FLT.Mazur.RelativePicardQuotient
 public import FLT.Mazur.RelativePinchingDescent
 public import FLT.Mazur.RelativePinchingLocalDescent
 public import FLT.Mazur.RelativePinchingNeighborhoods
@@ -3457,6 +3482,10 @@ public import FLT.Mazur.SchemeCohomologyIso
 public import FLT.Mazur.SchemeCohomologyIsoCocycles
 public import FLT.Mazur.SchemeCoproductCohomology
 public import FLT.Mazur.SchemeCoproductSections
+public import FLT.Mazur.SchemeModulePullbackUnits
+public import FLT.Mazur.SchemePicardClasses
+public import FLT.Mazur.SchemePicardGroup
+public import FLT.Mazur.SchemePicardPullback
 public import FLT.Mazur.SealedLineRestriction
 public import FLT.Mazur.SealedLineRestrictionSections
 public import FLT.Mazur.SectionBaseLocalization
@@ -3546,6 +3575,7 @@ public import FLT.Mazur.TensorPowerDistribution
 public import FLT.Mazur.TensorPowerGeneratorOpen
 public import FLT.Mazur.TensorPowerReassociation
 public import FLT.Mazur.TernaryOpenDescent
+public import FLT.Mazur.TildeInvertibleLocal
 public import FLT.Mazur.TildePrincipalOpen
 public import FLT.Mazur.TorusChartScalars
 public import FLT.Mazur.TrivialLineTwistLocalization
