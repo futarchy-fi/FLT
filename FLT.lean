@@ -154,6 +154,7 @@ public import FLT.DedekindDomain.FiniteAdeleRing.TensorRestrictedProduct
 public import FLT.DedekindDomain.IntegralClosure
 public import FLT.Deformations.Algebra.InverseLimit.Basic
 public import FLT.Deformations.Algebra.InverseLimit.Topology
+public import FLT.Deformations.ArithmeticGaloisFixedField
 public import FLT.Deformations.ArithmeticGaloisQuotient
 public import FLT.Deformations.Categories
 public import FLT.Deformations.ClosedIdealCondition
@@ -207,6 +208,7 @@ public import FLT.Deformations.HardlyRamifiedParameterBounds
 public import FLT.Deformations.HardlyRamifiedParameterComparison
 public import FLT.Deformations.HardlyRamifiedParameterFiniteness
 public import FLT.Deformations.HardlyRamifiedParameterUnramified
+public import FLT.Deformations.HardlyRamifiedTangentCocycle
 public import FLT.Deformations.HardlyRamifiedTangentEquations
 public import FLT.Deformations.HardlyRamifiedTangentFinite
 public import FLT.Deformations.HardlyRamifiedTangentQuotient
@@ -256,6 +258,7 @@ public import FLT.Deformations.RepresentationTheory.CyclotomicGeneratorTrace
 public import FLT.Deformations.RepresentationTheory.CyclotomicInertiaDetection
 public import FLT.Deformations.RepresentationTheory.CyclotomicQuadraticDetection
 public import FLT.Deformations.RepresentationTheory.CyclotomicSmallPrimes
+public import FLT.Deformations.RepresentationTheory.DualNumberMatrixFrame
 public import FLT.Deformations.RepresentationTheory.EquivAbsoluteIrreducible
 public import FLT.Deformations.RepresentationTheory.Etale
 public import FLT.Deformations.RepresentationTheory.FamilyTracePair
@@ -283,6 +286,8 @@ public import FLT.Deformations.RepresentationTheory.Irreducible
 public import FLT.Deformations.RepresentationTheory.IteratedBaseChangeIrreducible
 public import FLT.Deformations.RepresentationTheory.MappedRankTwoCharpoly
 public import FLT.Deformations.RepresentationTheory.MappedTameSpectrum
+public import FLT.Deformations.RepresentationTheory.MatrixAdjointCocycle
+public import FLT.Deformations.RepresentationTheory.MatrixTangentTrace
 public import FLT.Deformations.RepresentationTheory.NormalizedQuotientDescent
 public import FLT.Deformations.RepresentationTheory.NormalizedQuotientShear
 public import FLT.Deformations.RepresentationTheory.PGroupInvariants
@@ -690,8 +695,10 @@ public import FLT.GaloisRepresentation.HardlyRamified.ULiftGenericRecovery
 public import FLT.GaloisRepresentation.HardlyRamified.ULiftHardlyRamified
 public import FLT.GaloisRepresentation.SerreWeight.CoefficientCharacterExponent
 public import FLT.GaloisRepresentation.SerreWeight.CoefficientOrdinaryInput
+public import FLT.GaloisRepresentation.SerreWeight.CoefficientOrdinaryInvariance
 public import FLT.GaloisRepresentation.SerreWeight.CyclicCharacterExponent
 public import FLT.GaloisRepresentation.SerreWeight.CyclicPairKernel
+public import FLT.GaloisRepresentation.SerreWeight.LocalCharacterNormalization
 public import FLT.GaloisRepresentation.SerreWeight.NiveauTwoDigits
 public import FLT.GaloisRepresentation.SerreWeight.NormalizedCharacterExponent
 public import FLT.GaloisRepresentation.SerreWeight.NormalizedOrdinaryInput
@@ -3565,6 +3572,7 @@ public import FLT.PadicHodgeTheory.ComplexPadicScalarAction
 public import FLT.PadicHodgeTheory.ComplexPadicScalarResidue
 public import FLT.PadicHodgeTheory.ComplexPadicScalars
 public import FLT.PadicHodgeTheory.ComplexRelativeAxDescent
+public import FLT.PadicHodgeTheory.ComplexRelativePDPresentation
 public import FLT.PadicHodgeTheory.ComplexRootLogLinearity
 public import FLT.PadicHodgeTheory.ComplexRootPowerBounds
 public import FLT.PadicHodgeTheory.ComplexRootPowerConvergence
@@ -3637,6 +3645,7 @@ public import FLT.PadicHodgeTheory.PadicUniformizerOrthogonality
 public import FLT.PadicHodgeTheory.PolynomialNearbyRoot
 public import FLT.PadicHodgeTheory.PowerSeriesLogPower
 public import FLT.PadicHodgeTheory.PrincipalGradedPiece
+public import FLT.PadicHodgeTheory.RelativePDPresentation
 public import FLT.PadicHodgeTheory.UltrametricPolynomialCoefficients
 public import FLT.Patching.Algebra
 public import FLT.Patching.Module
