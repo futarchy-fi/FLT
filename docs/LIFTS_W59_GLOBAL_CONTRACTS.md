@@ -24,10 +24,45 @@ unframed image and prove its comparison to our functor, including how the
 specified row is recovered by a frame choice. Noetherianity of a framed
 ring and module finiteness of an unframed image are different gates.
 
+W64 constructs `hardlyTraceImageObject`, the closed-kernel presentation of
+the actual universal trace-ring image inside `hardlyFlatObject`, with its
+original residue field. `hardlyTraceImageEquiv` identifies it with the closed
+trace subalgebra. `exists_hardlyTraceImageLift_with_row` constructs a descended
+representation and a strict frame recovering the original HR representation
+and its row at two. The descended representation has the original determinant
+and is unramified away from 2p (`HardlyRamifiedTraceArithmetic`).
+
+This is not yet the comparison with KW II's completed tensor product or a
+proof of finite-flat descent to the smaller image ring. Noetherianity and
+p-adic module finiteness are still missing. The generic theorem
+`ProartinianCat.imageObject_isNoetherian` requires a Noetherian **source**;
+Noetherianity of a framed target would not imply Noetherianity of its subring.
+Check the saved W64 evidence with `python3 Scratch/LiftsW64/check.py`.
+
 `DeSmitLenstra/FramedCompletion` proves Noetherianity with a **finite group**
 parameter. `ProfiniteUniversalLift` constructs a limit over finite quotients;
 Noetherianity does not follow by taking this limit. Arithmetic control of the
 finite-ramification deformation tangent space is still needed.
+
+W65 proves the finite counting part of the arithmetic tangent strategy.
+`finite_representations_discr_bdd` applies Hermite to the **actual kernel
+fields**, then counts the finite possible coefficient functions on each
+finite Galois group. `HardlyRamifiedFramedParameters` and
+`HardlyRamifiedFiniteParameters` inject parameter maps into these continuous
+representations and prove uniform degree bounds and pointwise inertia
+triviality. Both give finiteness conditional on a uniform discriminant bound.
+`HardlyRamifiedParameterComparison` uses the specialized recovery frame to
+identify kernel fields for a framed map and its trace restriction. It does
+not show all trace-image maps extend to the framed quotient.
+
+The next arithmetic input is a uniform different/discriminant bound for the
+finite fields of these fixed-target representations, derived from their
+specified inertia conditions and bounded degree. Triviality of the selected
+absolute inertia elements must first be compared with unramifiedness of the
+finite field at every prime outside {2,p}. `NumberField.finite_of_discr_bdd`
+now supplies the counting step, but neither the discriminant bound nor the
+finite tangent/presentation theorem. Check saved W65 evidence with
+`python3 Scratch/LiftsW65/check.py`.
 
 ## Required arithmetic objects
 
