@@ -3318,6 +3318,7 @@ public import FLT.Mazur.IdealAdicGradedClosedTwist
 public import FLT.Mazur.IdealAdicGradedDegreeZero
 public import FLT.Mazur.IdealAdicGradedDegreeZeroGeneration
 public import FLT.Mazur.IdealAdicGradedLineTwist
+public import FLT.Mazur.IdealAdicGradedLocalization
 public import FLT.Mazur.IdealAdicGradedMultiplication
 public import FLT.Mazur.IdealAdicGradedPullback
 public import FLT.Mazur.IdealAdicGradedRestriction
