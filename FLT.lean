@@ -3086,10 +3086,13 @@ public import FLT.Mazur.EllipticSubgroupClosedFiberPoints
 public import FLT.Mazur.EllipticSubgroupClosureGluing
 public import FLT.Mazur.EllipticSubgroupClosureProperties
 public import FLT.Mazur.EllipticSubgroupClosureQuasiFinite
+public import FLT.Mazur.EllipticSubgroupClosureSeparated
 public import FLT.Mazur.EllipticSubgroupIntegralEvaluation
 public import FLT.Mazur.EllipticSubgroupIntegralSection
 public import FLT.Mazur.EllipticSubgroupOverlapClosure
+public import FLT.Mazur.EllipticSubgroupOverlapCoordinates
 public import FLT.Mazur.EllipticSubgroupOverlapEvaluation
+public import FLT.Mazur.EllipticSubgroupOverlapGraph
 public import FLT.Mazur.EllipticSubgroupOverlapLocalization
 public import FLT.Mazur.EllipticSubgroupPointKernels
 public import FLT.Mazur.EllipticSubgroupPointLocalization
