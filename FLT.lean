@@ -2903,10 +2903,16 @@ public import FLT.Mazur.EllipticLocalMultiplication
 public import FLT.Mazur.EllipticLocalValuation
 public import FLT.Mazur.EllipticMinimalAdditiveComponents
 public import FLT.Mazur.EllipticMinimalDiscriminant
+public import FLT.Mazur.EllipticNodalDepthNormalization
+public import FLT.Mazur.EllipticNodalDeterminantStep
+public import FLT.Mazur.EllipticNodalDiscriminantDepth
 public import FLT.Mazur.EllipticNodeAdditionCoordinates
 public import FLT.Mazur.EllipticNodeAdditionProduct
 public import FLT.Mazur.EllipticNodeBranchInverse
 public import FLT.Mazur.EllipticNodeBranchLabel
+public import FLT.Mazur.EllipticNodeChangeCoordinates
+public import FLT.Mazur.EllipticNodeChangeDepth
+public import FLT.Mazur.EllipticNodeChangeResidue
 public import FLT.Mazur.EllipticNodeComponentBound
 public import FLT.Mazur.EllipticNodeComponentCyclic
 public import FLT.Mazur.EllipticNodeComponentGenerator
@@ -2938,6 +2944,7 @@ public import FLT.Mazur.EllipticNodeLineProducts
 public import FLT.Mazur.EllipticNodeMiddleAddition
 public import FLT.Mazur.EllipticNodeMiddleLabels
 public import FLT.Mazur.EllipticNodeMixedLabels
+public import FLT.Mazur.EllipticNodeModelDepth
 public import FLT.Mazur.EllipticNodeOppositeAddition
 public import FLT.Mazur.EllipticNodeOppositeLabels
 public import FLT.Mazur.EllipticNodeOppositeSlope
@@ -2950,6 +2957,7 @@ public import FLT.Mazur.EllipticNodeSameBranchSlope
 public import FLT.Mazur.EllipticNodeScaledEquation
 public import FLT.Mazur.EllipticNodeSecantReduction
 public import FLT.Mazur.EllipticNodeSecantSlope
+public import FLT.Mazur.EllipticNodeSmallChangeLabel
 public import FLT.Mazur.EllipticNodeSumDepth
 public import FLT.Mazur.EllipticNodeTangent
 public import FLT.Mazur.EllipticNodeTangentSwap
@@ -2958,7 +2966,9 @@ public import FLT.Mazur.EllipticNodeThirdIntersection
 public import FLT.Mazur.EllipticNodeTripleDepth
 public import FLT.Mazur.EllipticNodeUnequalDepthAddition
 public import FLT.Mazur.EllipticNodeUniformizerLabel
+public import FLT.Mazur.EllipticNodeVariableChangeLabel
 public import FLT.Mazur.EllipticNonsplitNodeBound
+public import FLT.Mazur.EllipticNonsplitNodeComponents
 public import FLT.Mazur.EllipticNormalizedDoubleRoot
 public import FLT.Mazur.EllipticNormalizedMinimalAdditive
 public import FLT.Mazur.EllipticNormalizedSingularity
@@ -2973,6 +2983,7 @@ public import FLT.Mazur.EllipticPadicKernel
 public import FLT.Mazur.EllipticPadicSpecialization
 public import FLT.Mazur.EllipticPointMapCoordinates
 public import FLT.Mazur.EllipticPrimeToResidueSpecialization
+public import FLT.Mazur.EllipticPrimeTorsionComponents
 public import FLT.Mazur.EllipticProjectiveBaseChange
 public import FLT.Mazur.EllipticProjectiveReduction
 public import FLT.Mazur.EllipticRationalSingularity
