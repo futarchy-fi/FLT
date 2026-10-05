@@ -2422,6 +2422,8 @@ public import FLT.Mazur.AdicCompletionPrincipal
 public import FLT.Mazur.AdicCompletionQuotientEquiv
 public import FLT.Mazur.AdicCompletionScalars
 public import FLT.Mazur.AffineAnnihilator
+public import FLT.Mazur.AffineBaseSectionAlgebra
+public import FLT.Mazur.AffineBaseSectionFunctor
 public import FLT.Mazur.AffineBranchSequence
 public import FLT.Mazur.AffineCartesianSectionScalars
 public import FLT.Mazur.AffineClosedModuleDescent
@@ -2447,7 +2449,9 @@ public import FLT.Mazur.AffineFpqcRefinement
 public import FLT.Mazur.AffineIdealPowerExtension
 public import FLT.Mazur.AffineImageSectionTransport
 public import FLT.Mazur.AffineIntegerModel
+public import FLT.Mazur.AffineIntersectionDiagramGluing
 public import FLT.Mazur.AffineIntersectionRestriction
+public import FLT.Mazur.AffineIntersectionScalarExtension
 public import FLT.Mazur.AffineKernelLocalization
 public import FLT.Mazur.AffineLineTwistLocalization
 public import FLT.Mazur.AffineModuleEpimorphisms
@@ -2701,6 +2705,13 @@ public import FLT.Mazur.FiniteDivisorCohomology
 public import FLT.Mazur.FiniteDivisorComponentAvoidance
 public import FLT.Mazur.FiniteIntegerModelPullbacks
 public import FLT.Mazur.FiniteIntegerModelRelations
+public import FLT.Mazur.FiniteIntersectionCoordinateGluing
+public import FLT.Mazur.FiniteIntersectionCoordinateSquares
+public import FLT.Mazur.FiniteIntersectionGluingRecovery
+public import FLT.Mazur.FiniteIntersectionIntegerModel
+public import FLT.Mazur.FiniteIntersectionModelGluing
+public import FLT.Mazur.FiniteIntersectionScalarGluingRecovery
+public import FLT.Mazur.FiniteIntersectionSectionDiagram
 public import FLT.Mazur.FiniteLocalizedIntegerComparisons
 public import FLT.Mazur.FiniteOpenImmersionIntegerDescent
 public import FLT.Mazur.FinitePresentationIntegerModel
@@ -2832,6 +2843,7 @@ public import FLT.Mazur.IntegerModelTransition
 public import FLT.Mazur.IntegralBase
 public import FLT.Mazur.IntegralClosedSupport
 public import FLT.Mazur.IntegralDimension
+public import FLT.Mazur.IntersectionDiagramGluing
 public import FLT.Mazur.IrreducibleComponentAmple
 public import FLT.Mazur.LaurentRingSurjectivity
 public import FLT.Mazur.LaurentTensor
