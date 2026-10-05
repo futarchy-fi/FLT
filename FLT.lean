@@ -2484,6 +2484,7 @@ public import FLT.Mazur.CoherentSupport
 public import FLT.Mazur.CoherentSupportedDecomposition
 public import FLT.Mazur.ComaximalIdealSequence
 public import FLT.Mazur.CommonIdealDirectSum
+public import FLT.Mazur.CommonModelEventualEquality
 public import FLT.Mazur.CommonRelationIntegerModel
 public import FLT.Mazur.ConstantCyclicGenerator
 public import FLT.Mazur.ConstantCyclicGroup
@@ -2682,6 +2683,11 @@ public import FLT.Mazur.IdealWitnessSupportInduction
 public import FLT.Mazur.IncreasingCechComplex
 public import FLT.Mazur.InjectiveHorseshoe
 public import FLT.Mazur.IntegerModelEventualEquality
+public import FLT.Mazur.IntegerModelEventualInverse
+public import FLT.Mazur.IntegerModelEventualUnits
+public import FLT.Mazur.IntegerModelHomExtension
+public import FLT.Mazur.IntegerModelHomTransport
+public import FLT.Mazur.IntegerModelIsomorphismDescent
 public import FLT.Mazur.IntegerModelTransition
 public import FLT.Mazur.IntegralBase
 public import FLT.Mazur.IntegralClosedSupport
@@ -3043,6 +3049,7 @@ public import FLT.Mazur.PolynomialRelationIntegerModel
 public import FLT.Mazur.PowerSeriesQuotientCompletion
 public import FLT.Mazur.PowerSeriesSubstitutionEquiv
 public import FLT.Mazur.PrincipalAffineRefinement
+public import FLT.Mazur.PrincipalComparisonIntegerModel
 public import FLT.Mazur.PrincipalGeneratorExtension
 public import FLT.Mazur.PrincipalLocalizationGeneration
 public import FLT.Mazur.PrincipalLocalizationIntersection
