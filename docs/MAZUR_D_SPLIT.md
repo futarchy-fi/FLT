@@ -572,3 +572,80 @@ bounds F3, and the Néron/component and semistability leaves remain open.
   three axioms. Re-run `lake env lean Scratch/MazurDW5/GlobalAxioms.lean`;
   evidence: `Scratch/MazurDW5/global-axioms.log`.
 - No push, whole-library lint, fleet request, or G1/G2 work was performed.
+
+
+## W14: full label additivity and cyclic component quotient
+
+C1.5a.x.10.m is discharged. `nodePointLabel_add` proves addition on the
+actual generic elliptic-curve group. `nodePointLabelHom` has kernel E₀;
+`nodeComponentLabelHom` packages the already canonical quotient label as an
+injective additive map into Z/nZ. The actual component quotient is therefore
+cyclic, of order dividing n, and n times any generic point lies in E₀.
+
+The proof first computes exact primitive coordinates for unequal opposite
+branches, including a deeper midpoint. For same-branch wraparound, the
+pairwise-product coefficient forces the line intercept to have at least
+the sum of the two smallest depths. The first-branch tangent test gives one
+extra power beyond the largest depth. Its square is therefore deeper than
+the product of all three x-coordinates. Comparing the product coefficient
+with the exact depth of a₆ gives k+j+r=n. The actual third intersection is
+proved to be the negative sum; tangent/doubling charts are included.
+
+`NodePointCoordinates.add_first_depth_le_middle` and
+`NodePointCoordinates.add_first_depth_gt_middle` recover the exact common
+depth and branch from the addition law: k+j up to the midpoint, n-(k+j)
+on the opposite branch after it. `nodeComponentLabelEquivOfOne` reduces
+exact order n and lifting all labels to constructing one actual point of
+label one. This is an explicit hypothesis, not yet discharged by completeness.
+
+The next open item is C1.5b's lifted generator over the complete DVR, followed
+by nonsplit descent and the additive component bounds. These results do not
+remove `Mazur_statement` from the global FLT theorem. All eighteen modules
+below contain at most 106 lines (cap 240). The W14 proof commits add only
+these modules and sorted FLT.lean imports.
+
+| Item | Module under FLT/Mazur | Lines/cap | Commit |
+| --- | --- | ---: | --- |
+| cleared product identity | EllipticNodeAdditionProduct.lean | 70/240 | e561b076 |
+| primitive difference factors | EllipticNodeDifferenceFactors.lean | 84/240 | e561b076 |
+| actual addition witnesses | EllipticNodeAdditionCoordinates.lean | 58/240 | e561b076 |
+| exact difference coordinates | EllipticNodeDifferenceCoordinates.lean | 82/240 | e561b076 |
+| difference label law | EllipticNodeDifferenceLabels.lean | 68/240 | 1751ebb7 |
+| all opposite/midpoint sums | EllipticNodeMixedLabels.lean | 98/240 | 1751ebb7 |
+| line coefficient identities | EllipticNodeLineProducts.lean | 50/240 | d71f2ebf |
+| exact triple depth | EllipticNodeTripleDepth.lean | 106/240 | d71f2ebf |
+| ordered first-branch slope | EllipticNodeFirstBranchSlope.lean | 90/240 | d71f2ebf |
+| actual third intersection | EllipticNodeThirdIntersection.lean | 67/240 | d71f2ebf |
+| wraparound depth sum | EllipticNodeFirstTriple.lean | 80/240 | d71f2ebf |
+| first-branch label law | EllipticNodeSameBranchLabels.lean | 97/240 | d71f2ebf |
+| full label additivity | EllipticNodeLabelAdditivity.lean | 84/240 | d71f2ebf |
+| additive maps and kernel | EllipticNodeLabelHom.lean | 82/240 | 5f15f50d |
+| cyclicity/order divisibility | EllipticNodeComponentCyclic.lean | 50/240 | 5f15f50d |
+| label decoding | EllipticNodeLabelDecode.lean | 54/240 | 5f15f50d |
+| exact same-branch sum depths | EllipticNodeSumDepth.lean | 60/240 | 5f15f50d |
+| lifted-generator criterion | EllipticNodeComponentGenerator.lean | 60/240 | 5f15f50d |
+
+### Checked validation (2026-10-05 04:50 UTC)
+
+- All eighteen foreground `LEAN_NUM_THREADS=2 lake build MODULE` runs and
+  individual `lake exe runLinter MODULE` runs passed without warnings.
+  Evidence: `Scratch/MazurDW14/MODULE-build.log` and `MODULE-lint.log`.
+  No whole-library lint was run.
+- All 44 theorems and three new map/equivalence definitions depend only on
+  propext, Classical.choice and Quot.sound. The audit was rerun after the
+  merge: `LEAN_NUM_THREADS=2 lake env lean Scratch/MazurDW14/Axioms.lean`;
+  evidence: `Scratch/MazurDW14/axioms.log` (47 declarations).
+- `python3 Scratch/MazurDW14/check.py` passes: module caps (50–106 lines),
+  no admitted declarations, build/lint evidence, standard-only axiom sets,
+  sorted unique imports, `git diff --check`, and merged origin/main ancestry.
+- Fetched origin/main `6cac0cea` and merged as `561f6a2b`. The only conflict
+  was FLT.lean imports; both sets were retained in sorted unique order.
+  Required foreground `LEAN_NUM_THREADS=2 lake build FLT` passed all 12,986
+  jobs, including FLT and FermatsLastTheorem, with no declaration clashes.
+  Evidence: `Scratch/MazurDW14/root-build.log`.
+- The global theorem still uses Mazur_statement and sorryAx alongside the
+  standard three. Re-run `LEAN_NUM_THREADS=2 lake env lean
+  Scratch/MazurDW14/GlobalAxioms.lean`; evidence: `global-axioms.log`.
+- Inspected the live G1 wt-r5a and G2 wt-r1e briefs. No scope overlap,
+  peer restart, fleet request, harness change, push, or whole-library lint.
+  Handoff at the requested context boundary; no missing-foundation blocker.
