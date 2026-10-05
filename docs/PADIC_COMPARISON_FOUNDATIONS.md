@@ -2967,9 +2967,9 @@ Hopf model with its original closed embedding.
 | CE10 / `RationalConnectedRanks`, `RationalConnectedSystem` | Proved the common connected height, bounded by the original height, and all level ranks; bundled the original connected p-divisible system. |
 | CE11 / `RationalComponentQuotient` | Constructed the original finite-flat quotient by contraction, its faithfully flat projection and its exact connected kernel ideal. |
 | CE12 / `RationalComponentQuotientEtale` | Proved finite etaleness over the original base by faithfully descending idempotence of the augmentation ideal. No constant-group replacement is used. |
-| CE13 / `RationalEtaleLevelTower`, `RationalEtaleReductionFlat`, `RationalEtaleRanks` | Constructed both transitions, naturality, coherence, multiplication, annihilators, faithfully flat reductions and complementary-height ranks. Closed inclusions and the integral transition-kernel equations remain open; the quotient is not yet bundled as a p-divisible system. |
-| CE14 / `RationalConnectedEtaleExtension`, `RationalEtaleTateModule`, `RationalEtaleTateGalois` | Constructed the original level extensions, including their torsors, and the exact sequence of p-adic inverse-limit modules with original Galois equivariance. The right-hand limit is defined directly from the quotient tower; identifying it with the Tate module of a bundled quotient system awaits CE13. No splitting is claimed. |
-| HT1 / original Hodge-Tate maps | Open: identify the existing dlog and infinitesimal maps with the correctly twisted Lie terms, including coefficient completion. |
+| CE13 / `RationalEtaleClosed`, `RationalEtaleGenericKernel`, `RationalEtaleKernel`, `RationalEtaleSystem` | Proved closed quotient inclusions for every prime, generic exactness with the actual maps, and integral kernel equations using flatness. Bundled the original quotient system with its proved complementary height. |
+| CE14 / `RationalEtaleSystemProjection`, `RationalConnectedEtaleSystemExtension` | Constructed the quotient system morphism and identified its Tate module and projection with the previous original inverse limit. Proved surjectivity, the connected kernel and original Galois equivariance. The level extensions retain the same maps and torsors; no splitting is chosen. |
+| HT1 / `RationalConnectedLie`, `RationalPlaceCompletedCotangent`, `RationalPlaceHodgeTateRight` | Partial: identified the original connected Lie module, proved the quotient Lie module is zero, removed integral completion over actual O_C, and constructed the right lattice differential into the dual Lie module of the actual Cartier dual over C_p. W62 proves full C_p scalar extension and original Galois equivariance, constructs the Lie transpose and its positive-twist source action, and proves separation of dual Tate vectors. The left map into the original Tate realization remains open. |
 | HT2 / connected comparison | Open: prove the connected Hodge-Tate exact sequence; split kernel, image and dimension arguments. Connectedness alone supplies none of these conclusions. |
 | HT3 / full Cartier compatibility | Open: compute the pairing on both Hodge-Tate components and assemble it through CE14. The W59 constant calculation is a required test. |
 | DR1 / period realization | Open: construct the universal-extension/Dieudonne period realization with the original generic fibre and filtration. |
@@ -2981,25 +2981,389 @@ with source height `rationalConnectedHeight`. Its induced Tate map is p-adic
 linear and injective. The quotient level ranks are
 `p ^ (n * (height - rationalConnectedHeight))`.
 
-The connected tower is now a `PDivisibleSystem`. The quotient levels are
-finite etale, but CE13 still needs closed inclusions and the integral
-transition-kernel equations. Do not infer either from the rank formula.
+Both the connected tower and its original finite etale quotient are now
+`PDivisibleSystem`s. Closedness is proved from reflection of the connected
+kernel and etale rigidity. Integral exactness uses the proved actual generic
+sequence and flatness, rather than inferring it from ranks alone.
 The exact inverse-limit sequence was proved directly: finite nonempty fibres
 have compatible choices, and levelwise exactness plus injectivity identifies
 the kernel with the original connected Tate module. Both maps commute with
 the original Galois action. The level extensions and torsor maps retain the
 original extension; no product decomposition or section is constructed.
 
-HT1-HT3, DR1, P2-P6, W1-W3 and the original family admission remain open.
+HT1 is partially constructed; HT2-HT3, DR1, P2-P6, W1-W3 and the original
+family admission remain open.
 The connected-etale exact sequence is not the Hodge-Tate sequence displayed
 above. In particular, nothing here restores W57's refuted full-period identity
 or establishes de Rham admissibility. No edit of an existing admitted module
 is authorized by this task.
 
 Validation, source hashes, exact commits and checked-at times are recorded in
-the untracked `FAMILY_W60_DONE.md`, `W60_VALIDATION.json` and
-`W60_AXIOM_RESULT.json`. Recheck with `python3 W60_FINAL_CHECKS.py`;
-`python3 W60_VALIDATE.py` builds each new module in the foreground and lints
-one module at a time. `python3 W60_RUN_AXIOMS.py` audits the new declarations
+the untracked `FAMILY_W61_DONE.md`, `W61_VALIDATION.json` and
+`W61_AXIOM_RESULT.json`. Recheck with `python3 W61_FINAL_CHECKS.py`;
+`python3 W61_VALIDATE.py` builds each new module in the foreground and lints
+one module at a time. `python3 W61_RUN_AXIOMS.py` audits the new declarations
 and the original family boundary. The final root build follows merging
 origin/main; no whole-library lint is used.
+
+## W61: original Lie modules and completed right differential
+
+`RationalConnectedCotangentLevels` proves that the actual connected embedding
+induces a cotangent isomorphism, because its coordinate kernel is idempotent.
+`PDivisibleVariableHeightCotangent` lifts these isomorphisms through the actual
+inverse systems. Dualizing gives `rationalConnectedLieEquiv`. The actual etale
+quotient has zero cotangent and Lie modules. Neither statement identifies the
+connected group with a multiplicative group.
+
+`AdicFiniteFreeCoefficients` proves completeness using finite free coordinates,
+without a Noetherian assumption on O_C. The resulting
+`rationalPlaceCompletedCotangentEquiv` identifies the completed cotangent tensor
+with the actual integral O_C tensor and inverts the canonical completion map.
+`rationalPlaceHodgeTateDlogIntegral` retains every original finite Cartier
+differential. Only after this completion comparison are coefficients mapped
+to C_p, using the fixed original closure transport.
+
+`PDivisibleCartierBidual` constructs the integral system map into the actual
+double dual. Composing its Tate map with the differential of the Cartier dual
+and the original cotangent/Lie biduality gives
+`rationalPlaceHodgeTateRight` on the original Tate lattice. This is a semilinear
+lattice map into `(Lie(G^vee))^* tensor C_p`. W62 extends it over C_p and
+proves its equivariance as described below. The twisted left map into the
+original Tate realization and exactness remain open.
+The W59 constant-system counterexample remains a required sanity check.
+
+Read-only evidence for these implementation claims is the W61 source and
+per-module logs, checked-at timestamps and axiom coverage in
+`W61_VALIDATION.json` and `W61_AXIOM_RESULT.json`; rerun
+`python3 W61_FINAL_CHECKS.py` for the source/hash, scope and final-build check.
+
+## W62: full right realization and original Galois equivariance
+
+`RationalPlaceComplexScalarExtension` proves the original integral scalar
+identification agrees with the standard Z_p embedding in C_p. It constructs
+and characterizes the unique C_p-linear extension of an original semilinear
+lattice map. `RationalPlaceHodgeTateRealization` applies this to the actual
+right differential and identifies its source with C_p tensor over Q_p of
+the rationalized original Tate module. Swapping the target tensor factors
+does not replace the original Cartier-dual Lie module.
+
+`RationalPlaceCoefficientGalois` fixes the original integral base inside the
+actual coefficient action. `RationalPlaceCartierDlogGalois` proves finite
+Cartier-coordinate and differential equivariance. Integral completeness
+makes finite evaluations jointly injective, so
+`RationalPlaceHodgeTateDlogGalois` carries this identity through the integral
+limit and then to C_p. `RationalPlaceHodgeTateRightGalois` proves original
+bidual and right-lattice equivariance. `RationalPlaceTateRealizationGalois`
+constructs the diagonal action and proves its group and semilinearity laws;
+`RationalPlaceHodgeTateEquivariance` proves full right-map equivariance for
+both the original local Galois group and its standard Q_p coordinates.
+
+For the left map, `PDivisibleTateEvaluationSurjective` proves unconditional
+surjectivity of the original finite Tate evaluations from faithful flatness.
+It upgrades finite Cartier separation to separation against actual full
+Tate vectors. Separation does not prove perfectness of the scalar-extended
+pairing. `RationalPlaceHodgeTateLieTranspose` transposes the actual dlog using
+the original Lie-cotangent contraction. Its target is the C_p-dual of the
+Cartier Tate realization, not yet the original Tate realization.
+`RationalPlaceHodgeTateLieTwist` constructs the original Lie source with its
+positive cyclotomic action and proves the group law. It does not assert that
+this source embeds into the Tate module.
+
+Remaining HT1 steps are to prove perfect Tate Cartier duality, identify the
+positively twisted dual Cartier Tate realization with the original Tate
+realization using the actual pairing, and transport the constructed Lie
+transpose through that identification. HT2 still needs the kernel, image
+and dimension arguments for connected systems and assembly through CE14.
+HT3, DR1/P2-P6 and W1-W3 remain open. The original family admission is
+unchanged. The W59 constant-system counterexample remains required: an
+etale Lie module can vanish while its actual Cartier period is nonzero.
+
+Read-only evidence for W62 is recorded with checked-at times and source
+hashes in `W62_VALIDATION.json` and `W62_AXIOM_RESULT.json`, and summarized in
+untracked `FAMILY_W62_DONE.md`. Recheck `python3 W62_FINAL_CHECKS.py`;
+`python3 W62_VALIDATE.py` builds and lints one new module at a time, and
+`python3 W62_RUN_AXIOMS.py` audits every source-named declaration and the
+original family boundary. The required root build follows the main merge.
+
+## W63 perfect Tate duality prerequisites
+
+Work in the original system, without comparison hypotheses. Each new complete
+module has cap 150 lines. First prove generic exactness from the specified
+closed inclusions, faithfully flat reductions, kernel equations and ranks
+(`PDivisibleGenericExactness`). Then prove coherent p-power division and the
+actual Tate quotient comparison (`PDivisibleTateReduction`). Lift finite-level
+generators through the compact inverse limit (`PDivisibleTateFinite`), and
+prove torsion-freeness and freeness (`PDivisibleTateFree`). Rank control and
+perfect Cartier duality follow these prerequisites; connected Hodge–Tate
+exactness, both-component compatibility and filtered de Rham comparison remain
+separate gates. No map or nondegeneracy theorem alone closes those gates.
+
+W63 refinement (cap 150 each): `PDivisibleTateRank` identifies tensor reduction
+with the original finite points and proves rank equals height.
+`TateRootModule` builds the genuine coherent-root target with residue scalar
+actions. Integral perfectness must construct all root-valued linear
+functionals from actual dual Tate vectors; it cannot follow from equal rank
+and integral nondegeneracy alone.
+
+W63 further leaves, each cap 150: `PDivisibleFiniteRootPairing` proves finite
+bilinearity, `PDivisibleTateRootPairing` packages the original root-valued
+limit map, and `PDivisibleRootFunctionalDescent` descends every root-valued
+linear functional to the original finite levels. `PDivisibleTateRootDuality`
+proves coherence of its finite Cartier representatives and hence perfect
+integral duality. `ConstantRationalTateBasis` proves that the prescribed
+constant Tate generator is a basis. `RationalPlaceTateRootRank` identifies
+its dual Tate module with the actual roots and proves finite freeness and
+rank one (using the existing odd-prime constant-system constructor).
+`PDivisibleTateRootGalois` proves original Galois compatibility, and
+`RationalPlaceTateRealizationRank` computes the full C_p realization ranks.
+These leave the standard positive cyclotomic twist identification and the
+actual left Hodge–Tate map as distinct HT1
+work. HT2–HT3, filtered period realization and weights are not consequences
+of integral duality alone.
+
+W63 final refinement (cap 150): `RationalPlaceTateRootDuality` uses the proved
+finite freeness to commute Hom with C_p scalar extension, giving perfect
+duality on the original full realizations with the genuine root-line target.
+The remaining HT1 identification is with the standard positive cyclotomic
+twist, followed by transport of the Lie transpose to the actual left map.
+
+W63 verification is recorded with source hashes and checked-at timestamps in
+`W63_VALIDATION.json` and `W63_AXIOM_RESULT.json`; `W63_ROOT_BUILD_RESULT.json`
+records the root build after the main merge. Recheck all claims with
+`python3 W63_FINAL_CHECKS.py`. The untracked `FAMILY_W63_DONE.md` lists the
+individual leaves and exact remaining boundary. The original family admission
+and the constant-system sanity check are unchanged.
+
+## W64: prescribed cyclotomic coordinates and the actual left map
+
+Each leaf retains the 150-line cap. The next HT1 leaves are
+`RationalCyclotomicRootVector` (primitive finite generators),
+`RationalCyclotomicRootBasis` (compact compatible coefficient fibres), and
+`RationalCyclotomicRootGalois` (the original positive character action).
+`RationalPlaceRootTwist` extends those prescribed coordinates over C_p.
+`RationalPlaceTateScalarDuality` orients the original perfect pairing toward
+the original Tate realization by vector-space evaluation, and
+`RationalPlaceTateRootEquivariance` checks both original Galois factors.
+`RationalPlaceHodgeTateLeft`, `RationalPlaceLieTransposeGalois`, and
+`RationalPlaceHodgeTateLeftGalois` transport the original Lie transpose and
+prove its positive-twist equivariance.
+
+For HT2, split the remaining linear algebra from the connected comparison:
+`RationalPlaceLieEvaluationEquiv` identifies the full cotangent dual;
+`RationalPlaceHodgeTateLeftImage` describes the actual kernel and image and
+reduces left injectivity to surjectivity of the original Cartier differential;
+`RationalPlaceHodgeTateLeftRank` expresses the kernel defect in terms of that
+same differential rank. `RationalPlaceTwistSeparation` and
+`RationalPlaceHodgeTateComplex` use nonzero-twist vanishing to show that the
+original right map kills the original left image.
+
+None of these linear-algebra reductions establishes connected differential
+surjectivity or equality of the left image and the right kernel. The next
+comparison leaf must prove differential surjectivity for the original
+connected system without accepting it as data, then establish the exact
+kernel and assemble through the connected-etale extension. Full HT3,
+DR1/P2-P6, W1-W3 and replacement of the original family admission remain
+separate work. The original constant-system period sanity check is retained.
+
+## W66: check the direction before applying Tate comparison
+
+The proposed map `T(G) tensor C -> t_(G^dual)^* tensor C` is a quotient
+map in the Hodge–Tate sequence; it is not generally injective. A Tate twist
+does not change this dimension obstruction. In the current API,
+`rationalPlaceHodgeTateDlogLinear X` has source the realization of
+`X.cartierDual`, and target the cotangent realization of `X`.
+For the constant height-one system X, its target is zero and its source has
+dimension one. Thus the proposed injectivity step, as written, is false.
+The transpose has a different source, and its injectivity remains the
+comparison theorem, equivalent to surjectivity of this dlog map.
+
+Split before implementation (each new module capped at 150 lines):
+
+| Leaf | Module / obligation | Dependency / status at split |
+|---|---|---|
+| a0 | `AugmentationUnramifiedCotangent`: zero augmentation cotangent for an unramified algebra | Prove from formal etaleness of the augmentation |
+| a1 | `ConstantRationalHodgeTateDlog`: zero dlog, one-dimensional source, failure of injectivity on the actual constant system | a0 and existing Tate rank theorem |
+| a2 | Logarithm comparison for the original connected system and its dual | Open analytic input; do not assume injectivity of dlog |
+| a3 | Injectivity of the actual transposed Lie-to-Tate map | Requires a2, not dimension counting alone |
+| b | Orthogonality of actual left/right maps | Already `rationalPlaceHodgeTate_range_le_ker`; full dual pairing compatibility remains HT3 |
+| c | Dimension sum for original Lie modules and dual | Must justify the original cotangent ranks, not merely Tate rank = height |
+| d | Image = kernel and right surjectivity for original maps | Requires a3, b, c and the corresponding dual comparison |
+
+Leaves a2–d name mathematical obligations, not new records containing those
+obligations as fields. Do not add conditional exactness wrappers in place
+of the missing comparison. HT3, DR1/P2–P6 and W1–W3 remain downstream.
+
+
+## W67: primary-source orientation and Cartier adjunction
+
+Source checked against J. Tate, *p-Divisible Groups*, in *Proceedings of a
+Conference on Local Fields* (1967), pp. 158–183, especially pp. 167–169,
+177–180. The scan is available at
+https://www.math.arizona.edu/~cais/scans/Proceedings_on_a_Conference_in_Local_Fields.pdf .
+Proposition 11, not Proposition 4, proves injectivity of
+`dα : t_G(C) → Hom_Zp(T(G′), C)`. Proposition 4 concerns connected–etale
+points; Theorem 2 concerns nonzero-twist cohomology. Theorem 3 and its
+Corollary 2 give the comparison and decomposition. The independent dimension
+sum is Proposition 3, p. 166 (Frobenius/Verschiebung).
+
+Here `rationalPlaceHodgeTateLieTranspose X` has the orientation of `dα`;
+`rationalPlaceHodgeTateDlogLinear X` is its transpose under Lie evaluation.
+Identifying the former with the derivative of Tate's analytic character map
+is an unproved comparison, not a consequence of naming the maps.
+Tate's `G(S)` is `lim_i colim_n G_n(S/m^i S)`, not just the union of finite
+level points. Its logarithm has torsion kernel; over algebraically closed C
+it induces `G(O_C)/G(O_C)_tors ≅ t_G(C)`. His proof uses torsion-freeness
+of `ker α` after the torsion pairing is proved bijective, never of all G(S).
+Fontaine, *Groupes p-divisibles sur les corps locaux* (1977), V §1.1,
+pp. 225–226, distinguishes `T(G)`, `U₀(G)=T(G) tensor Qp`, and the larger
+universal cover `U(G)`; these must not be substituted for each other.
+
+Split before implementation; all new modules capped at 150 lines:
+
+| Leaf | Original-map obligation | Status at split |
+|---|---|---|
+| B1 / `PDivisibleCartierBidualTateEquiv` | Prove the specified bidual Tate map bijective using actual finite evaluation | Open algebraic prerequisite |
+| B2 / `RationalPlaceHodgeTateRightCotangent` | Extend that bidual equivalence and factor the actual right map through the dual differential | Open algebraic prerequisite |
+| B3 / `RationalPlaceHodgeTateCartierAdjunction` | Pair the right map with dual Lie vectors; identify its kernel as a Cartier annihilator; prove orthogonality of the two actual left images in bidual coordinates | Open; no comparison hypothesis |
+| A1 | Construct the connected formal group, completed points, analytic logarithm and its torsion quotient from the original system | Open analytic construction |
+| A2 | Compare the derivative of the analytic Cartier character with the original completed differential, then prove transpose injectivity | Requires A1 and Tate Proposition 11 argument |
+| C | Original Lie dimension sum from Frobenius/Verschiebung and finite-flat ranks | Open; not implied by Tate-module height |
+| D | Exactness and connected–etale assembly | Requires A2, its dual, B3 and C |
+
+B1–B3 do not close A1–D. No conditional exactness wrapper replaces the
+analytic construction. HT3 beyond the proved pairings, DR1/P2–P6, W1–W3,
+and the family admission remain separate obligations.
+
+W67 refinement before B4 implementation: `RationalPlaceHodgeTateOrthogonality`
+(cap 150) proves orthogonality directly in X's original Cartier pairing from
+the positive character actions on both actual left maps. This avoids needing
+to identify the dual-system bidual pairing with the original pairing first.
+It remains a zero-component compatibility theorem, not full HT3 or exactness.
+
+W67 proved B1–B4: actual bidual Tate bijectivity; right-map factorization
+through the original dual dlog; right-kernel annihilator identification in
+bidual Cartier coordinates; and orthogonality in both that pairing and X's
+original root-valued Cartier pairing. None assumes differential surjectivity.
+The existing p-nilpotent formal smoothness and infinitesimal cotangent
+representation (`PDivisibleFormalSmoothness`, `PDivisibleFormalCotangent`)
+are inputs for A1, not yet its analytic coordinate/logarithm construction.
+The analytic derivative identification, Lie dimension sum and exactness
+remain unproved. Recheck the new leaves using `python3 W67_FINAL_CHECKS.py`;
+module logs, source hashes and axiom results accompany `FAMILY_W67_DONE.md`.
+
+## W68: original completed points before the analytic logarithm
+
+Refine A1 into the following leaves before implementation (each new module
+at most 150 lines). These construct the actual inverse limit of the original
+point colimits; no logarithm or comparison property is built into its data.
+
+| Leaf | Module / obligation | Dependencies |
+|---|---|---|
+| A1a | `PDivisiblePointColimitGroup`: convolution group law on the original point colimit, natural coefficient maps, agreement with original multiplication | Original finite Hopf points |
+| A1b | `RationalPlacePointPrecision`: original O_C/p-power reduction composition and surjectivity on colimit points at positive precision | Proved nilpotent formal smoothness |
+| A1c | `RationalPlaceCompletedPoints`: compatible original point sequences, abelian group, finite-level integral specialization | A1a–A1b |
+| A1d | `RationalPlaceCompletedPointLifting`: surjectivity of each positive-precision projection | A1b–A1c and recursive compatible lifting |
+
+The topology, connected formal coordinates, convergent logarithm, local
+isomorphism and torsion kernel require further leaves after these algebraic
+constructions. A2, C, D, HT3 and the period/family obligations remain open.
+
+W68 refinement before A1e: `RationalPlaceCompletedPointTopology` (cap 150)
+equips the actual positive-precision residue groups with discrete uniformity
+and the completed group with the induced inverse-limit uniformity. Prove
+closedness, completeness, Hausdorff separation, continuity of the group law,
+and continuity of the original projections. This is the adic topology; it
+does not assert analytic coordinates or a logarithm.
+
+W68 refinement before A1f–A1h (each cap 150):
+`PDivisiblePointColimitTorsion` proves that the actual level-n points are
+killed by p^n, hence each point colimit is p-primary torsion.
+`RationalPlacePointCompletionEmbedding` proves that O_C separation makes
+the original point completion injective, and retains those torsion points.
+`RationalPlaceCompletedPointContraction` proves p-power iterates of every
+completed point tend to the identity in the adic topology. Contraction is
+a prerequisite for extending a local logarithm; it does not construct one.
+
+W68 constructs A1a–A1h: the actual convolution group and positive-precision
+inverse limit, surjective residue projections, complete Hausdorff adic
+topology, faithful embedding of the original integral torsion points, and
+convergence of p-power iterates to the identity. The finite-level index can
+grow with precision. Neither a uniform annihilator of completed points nor
+surjectivity of the integral point-colimit embedding is asserted.
+
+The next missing construction is a local analytic chart for the original
+connected formal group, compatible with its cotangent limit, with estimates
+on the nonlinear terms of p-multiplication. That chart and the logarithm
+limit/local inverse are not consequences of the proved contraction alone.
+The torsion-kernel equality, analytic Cartier derivative identification,
+independent Lie dimension sum, HT2 and downstream obligations remain open.
+
+## W69: cotangent coordinates on finite precision fibers
+
+Before an analytic chart can be constructed, identify its required finite
+precision differentials on the original group. Refine this algebraic part
+into leaves of at most 150 lines each:
+
+| Leaf | Module / obligation | Dependencies |
+|---|---|---|
+| A1i | `PDivisiblePointKernelCotangent`: original reduction kernel as a group is the additive cotangent dual for a square-zero coefficient kernel | W66 formal cotangent and W68 convolution |
+| A1j | `PDivisiblePointFiberCotangent`: translate any specified original lift to give cotangent coordinates on its reduction fiber | A1i |
+| A1k | `RationalPlacePrecisionCotangent`: square-zero adjacent precision kernels and original rational-place fiber coordinates | A1j and positive-precision lifting |
+| A1l | `RationalPlaceCompletedPointCotangent`: realization of every precision tangent direction by actual completed points | A1k and completed-point lifting |
+
+These are finite precision coordinates, not an analytic chart. They do not
+supply power-series representation, nonlinear estimates, a logarithm,
+Cartier comparison, or HT2. Those remain separate proof obligations.
+
+A1l additionally proves uniform precision gain: for a completed point
+trivial at precision s+1, p^n times that point is trivial at precision
+s+n+1. A single annihilator at the initial residue precision controls all
+higher precisions with a linear bound. This is a filtration estimate;
+nonlinear error bounds in a fixed analytic chart remain unproved.
+
+W69 proves A1i–A1l in four new modules (99, 76, 90 and 98 lines).
+Each passes foreground build and individual module lint; all 26 explicit
+new declarations use only propext, Classical.choice and Quot.sound.
+Checked at 2026-10-04T21:40:48.213844+00:00.
+Evidence: `W69_VALIDATION.json`, `W69_AXIOMS.log`; read-only recheck:
+`python3 W69_FINAL_CHECKS.py`. The analytic chart, logarithm, Cartier
+comparison, Lie dimension sum and downstream family obligations remain open.
+
+## W70: original coordinate algebra and compatible cotangent representatives
+
+The original coordinate inverse limit is now constructed, with its complete
+separated level topology. Continuous maps from it to discrete test algebras
+are naturally equivalent to the original point colimit. This is a proved
+prorepresentation; it is not yet a power-series presentation.
+
+| Leaf | New module in `FLT.GroupScheme` | Cap |
+|---|---|---:|
+| A1m | `PDivisibleCoordinateLimit`: original algebra and universal property | 150 |
+| A1n | `PDivisibleCoordinateQuotient`: surjective evaluations and original finite quotients | 150 |
+| A1o | `PDivisibleCoordinatePoints`: natural representation by maps killing a level ideal | 150 |
+| A1p | `PDivisibleCoordinateTopology`: complete separated topology and evaluation fiber basis | 150 |
+| A1q | `PDivisibleContinuousCoordinatePoints`: continuous prorepresentation | 150 |
+| A1r | `PDivisibleCoordinateFormalSmoothness`: continuous lifting over p-nilpotent test rings | 150 |
+| A1s | `PDivisibleCotangentRepresentativeLift`: finite representatives with prescribed cotangent | 150 |
+| A1t | `PDivisibleCoordinateCotangent`: actual augmentation and original derivative | 150 |
+| A1u | `PDivisibleCoordinateParameters`: compatible representatives of every cotangent vector | 150 |
+| A1v | `PDivisibleCoordinateClosedCotangent`: derivative kernel is the closed augmentation square | 150 |
+
+The cotangent quotient uses the closure of the square, not an unproved
+identification with the algebraic square. A1u lifts a chosen family of
+cotangent vectors to actual compatible functions. It does not assert these
+functions generate the algebra, or give an analytic coordinate system.
+A1r proves lifting only for discrete p-nilpotent test algebras; it does not
+assert unrestricted algebraic formal smoothness.
+
+Next: for the original connected system, construct the power-series
+presentation and prove the required parameter/coefficient topology
+comparison. The level topology here gives every finite coordinate ring the
+discrete topology. No equality with a parameter-adic or coefficient-adic
+topology has been proved. Then prove nonlinear estimates, logarithm and
+inverse, analytic Cartier derivative, independent Lie dimension sum and
+HT2, followed by HT3, DR1/P2–P6 and W1–W3. The family admission remains.
+
+Validation evidence and checked-at timestamps are in `W70_VALIDATION.json`,
+`W70_AXIOMS.log` and `W70_ROOT_BUILD_RESULT.json`; read-only recheck:
+`python3 W70_FINAL_CHECKS.py`. Notes remain outside the library and untracked.
