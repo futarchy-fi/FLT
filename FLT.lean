@@ -3205,9 +3205,16 @@ public import FLT.Mazur.HomogeneousLocalizationGenerator
 public import FLT.Mazur.HomogeneousLocalizationScalars
 public import FLT.Mazur.IdealAdicCohomology
 public import FLT.Mazur.IdealAdicGradedAssociativity
+public import FLT.Mazur.IdealAdicGradedBaseAlgebra
+public import FLT.Mazur.IdealAdicGradedBaseProduct
+public import FLT.Mazur.IdealAdicGradedClosedAction
 public import FLT.Mazur.IdealAdicGradedClosedTwist
 public import FLT.Mazur.IdealAdicGradedLineTwist
 public import FLT.Mazur.IdealAdicGradedMultiplication
+public import FLT.Mazur.IdealAdicGradedPullback
+public import FLT.Mazur.IdealAdicGradedRing
+public import FLT.Mazur.IdealAdicGradedSectionAction
+public import FLT.Mazur.IdealAdicGradedSections
 public import FLT.Mazur.IdealAdicGradedSequence
 public import FLT.Mazur.IdealAdicGradedUnit
 public import FLT.Mazur.IdealAdicLineQuotient
