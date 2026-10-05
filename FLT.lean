@@ -2521,6 +2521,7 @@ public import FLT.Mazur.AffineCoverCohomology
 public import FLT.Mazur.AffineCoverIntersections
 public import FLT.Mazur.AffineDirectTripleAdditivity
 public import FLT.Mazur.AffineDirectTripleBalance
+public import FLT.Mazur.AffineDirectTripleCoefficients
 public import FLT.Mazur.AffineDirectTripleEvaluation
 public import FLT.Mazur.AffineDirectTripleMiddleBalance
 public import FLT.Mazur.AffineDirectTriplePureTransport
