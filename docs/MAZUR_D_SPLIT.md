@@ -1,6 +1,63 @@
 # Mazur track D: extension and local arithmetic
 
 
+## D-W30: compatible closure overlaps and the glued scheme
+
+The closure-ideal compatibility and gluing item from W29 is proved.
+`EllipticSubgroupChart.gluedClosure A W H j k` glues the two actual kernel
+quotients along their principal localizations. For the integral Weierstrass
+cover use `j = 1`, `k = 2`. The construction works for any subgroup, without
+assuming it finite. Its structural morphism is quasi-compact and locally of
+finite type; over a DVR it is flat. **Global finiteness and rank p remain open.**
+
+| Leaf | Module | Lines/cap | Commit |
+| --- | --- | --- | --- |
+| Localized evaluation kernel | `LocalizedPointAlgebraKernel` | 80/240 | `4ae2115a` |
+| Actual subgroup overlap evaluation | `EllipticSubgroupOverlapEvaluation` | 119/240 | `e5d8b5f8` |
+| Compatible ideals and quotient transitions | `EllipticSubgroupOverlapClosure` | 88/240 | `e5d8b5f8` |
+| Principal localizations of the closures | `EllipticSubgroupOverlapLocalization` | 73/240 | `c2b0a294` |
+| Glued scheme, open charts, base morphism | `EllipticSubgroupClosureGluing` | 138/240 | `c2b0a294` |
+| Flatness, finite type, quasi-compactness | `EllipticSubgroupClosureProperties` | 94/240 | `0550d807` |
+
+The kernel lemma restricts field-valued functions to the points where the
+inverted coordinate is nonzero. Multiplying by that coordinate kills all
+excluded points, so its proof needs no finiteness hypothesis. On elliptic
+points, changing the chart is exactly division by the new normalizing
+coordinate. The ambient transition therefore identifies the localized
+kernels. Quotienting gives inverse overlap maps; localization of quotients
+then supplies actual open immersions for scheme gluing.
+
+Checked at 2026-10-05T13:34:29.357316+00:00: all six foreground module builds and individual
+linters passed without warnings. The 62 exported declarations (including
+instances and generated reassociation lemmas) use only propext,
+Classical.choice and Quot.sound. Timed module probes peaked at 1,789,928 KiB
+RSS. Main `9b8bf5c4` was merged in `d201ce61`; the foreground root build passed
+all 13,317 jobs without declaration clashes. Receipts and source hashes are
+in the untracked `Scratch/MazurDW30/`; run
+`python3 Scratch/MazurDW30/check.py` to verify the recorded checks against the
+current source. The final theorem axiom audit is in `global.axioms.log`.
+
+### Ordered continuation after W30
+
+1. **Global finiteness and rank p.** Apply the Y/Z gluing to
+   `ellipticExtensionProjectiveSubgroup`. Relate it to the schematic closure
+   in the integral projective cubic and prove global finiteness, then recover
+   rank p using the generic chart comparisons and the subgroup-cardinality
+   theorem. The identification with an ambient projective closed subscheme
+   is not yet constructed. A possible route is the schematic union of the
+   finitely many integral point sections; this route is not yet proved.
+   Do not assume the standard affine closure algebras are finite: a point
+   may leave a chart on specialization and introduce denominators.
+2. **Integral group operations.** Construct the good-reduction ambient group
+   law and the relevant smooth multiplicative group model. Prove closure
+   preservation and the Hopf identities. The full nodal cubic is not a group
+   scheme, and flatness does not extend a rational group law across its node.
+3. **Specialization and rigidity.** Glue the pointwise chart-reduction
+   comparisons into the needed group-model comparison. Apply finite-flat
+   rigidity with the S2a bound only after the missing group and finiteness
+   obligations have been discharged. S2b remains open.
+4. Continue C2/C3/Cp, A2 using G1/G2 foundations, and final axiom removal.
+
 ## D-W29: concrete integral charts and subgroup coordinate maps
 
 Eight new leaves implement the first geometric constructions from W28:
@@ -26,10 +83,8 @@ Validation is recorded in the untracked `Scratch/MazurDW29/` receipts; run
 axiom sets, root build and the merged-main relation. The final W29 handoff
 records the timestamp and commits. These constructions do not complete S2b.
 
-The next leaf is compatibility of the **closure ideals** under the already
-constructed ambient overlap equivalences. This needs restriction to the
-subgroup points lying in both generic charts, followed by localization of
-both kernel quotients. Glue those closures and prove global finiteness.
+W30 above discharges compatibility of the closure ideals and glues the two
+closures along their principal opens. Global finiteness is the next open item.
 The two standard affine chart closures must not simply be assumed finite:
 a generic point can belong to a chart while its specialization leaves that
 chart, so the normalized generic coordinate may have a denominator. W29's
@@ -71,8 +126,8 @@ is excluded.
    bound. Continue S2b, C2/C3/Cp, A2 and the final axiom removal in that order.
 
 The original first leaf was the affine quotient/image construction. W29 above
-now supplies normalized integral point charts and ambient overlap maps; closure
-ideal gluing and global finiteness remain. F3 is not assumed to imply integrality
+supplies normalized integral point charts and ambient overlap maps; W30 adds
+closure-ideal compatibility and scheme gluing. Global finiteness remains. F3 is not assumed to imply integrality
 of every coordinate on the full standard generic chart.
 
 ### W28 algebraic progress and geometric boundary
