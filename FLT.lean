@@ -2542,6 +2542,7 @@ public import FLT.Mazur.AffineEffectiveRefinementComparison
 public import FLT.Mazur.AffineEffectiveRefinementIdentity
 public import FLT.Mazur.AffineEffectiveRefinementNaturality
 public import FLT.Mazur.AffineEffectiveSecondReconstruction
+public import FLT.Mazur.AffineEffectiveSuccessiveReconstruction
 public import FLT.Mazur.AffineFaithfullyFlatEpimorphisms
 public import FLT.Mazur.AffineFaithfullyFlatPullbackFaithful
 public import FLT.Mazur.AffineFiberProductCocycle
