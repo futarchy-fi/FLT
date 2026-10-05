@@ -3223,6 +3223,7 @@ public import FLT.Mazur.IdealAdicGradedBaseAlgebra
 public import FLT.Mazur.IdealAdicGradedBaseProduct
 public import FLT.Mazur.IdealAdicGradedClosedAction
 public import FLT.Mazur.IdealAdicGradedClosedTwist
+public import FLT.Mazur.IdealAdicGradedDegreeZeroGeneration
 public import FLT.Mazur.IdealAdicGradedLineTwist
 public import FLT.Mazur.IdealAdicGradedMultiplication
 public import FLT.Mazur.IdealAdicGradedPullback
