@@ -340,6 +340,25 @@ Connectedness of the original scheme alone does not discharge that step.
 The group law, modular objects and arithmetic exclusion remain unfinished;
 this result removes no assumption from the FLT assembly.
 
+### Cartesian chart base change and glued coefficient morphism (2026-10-05)
+
+`FLT/EllipticCurve/CubicBaseChange.lean` constructs explicit algebra
+isomorphisms from S tensor_R (chart ring over R) to the chart ring with
+coefficients extended to S. The quotient ideal is transported using
+`map_equation`. The isomorphisms preserve the two coordinates and
+prove that each chart square is a scheme-theoretic pullback.
+
+The coefficient maps extend to the overlap localizations and commute
+with the chart transition. They therefore glue to an actual global
+`coefficientMorphism`, with proved restrictions to both charts and
+compatibility with the map of coefficient bases.
+
+The remaining base-change step is the cartesian property of this
+global square. The local pullback proofs and transition compatibility
+are now available, but the passage to the global universal property
+has not yet been formalized. Geometric connectedness and the subsequent
+modular and arithmetic constructions remain unfinished.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
