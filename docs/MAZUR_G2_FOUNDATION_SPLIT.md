@@ -454,3 +454,38 @@ instance-matching timeouts in their additive branches. The full forward
 cocycle and geometric `toDatum` remain open, followed by the reverse
 comparison and the previously listed geometric obligations. No removal
 of `Mazur_statement` is claimed.
+
+
+## W10: arbitrary tensors and first-coordinate balance
+
+`AffineDirectTripleAdditivity` proves the two general pair formulas
+`directSections_outer` and `directSections_insertMiddle` for every inner
+tensor. Its `sections` chart uses the same restricted coefficient instance
+as `firstSections` and `secondSections`. It is constructed from the actual
+third-coordinate scalar extension and affine section comparison, and has a
+proved pure-tensor evaluation. The tensor-induction arguments are proved
+first for abstract additive diagrams, then specialized; this avoids expanding
+the sheaf module structures during the induction's kernel check.
+
+`AffineDirectTripleBalance.firstLift_balance` proves the equality of the
+normalized first-coordinate lifts along pair12 and pair13 for every
+coefficient and both extra scalars. It uses actual `mappedUnit` and
+`comparison` terms, followed by commutativity of the two triple scalars.
+
+These modules have 126 and 49 lines. Their validation commands are the
+individual `LEAN_NUM_THREADS=2 lake build MODULE`, separate
+`LEAN_NUM_THREADS=2 lake exe runLinter MODULE`, and
+`LEAN_NUM_THREADS=2 lake env lean G2_W10_AXIOMS.lean`. Checked-at results,
+commits, and the final root-build result are in the untracked W10 handoff.
+
+The first remaining obligation is `transport23_coefficients`: identify the
+actual last-pair transport with tensor transport for arbitrary inner tensors.
+The attempted pure case encounters a kernel conversion bottleneck between
+bundled and unbundled scalar instances; no transport23 theorem from these
+experiments is delivered. Combine that identity, first-coordinate balance,
+the general pair13 formula, all three `transport_sections` equations, and
+`CocycleCompatible` to finish the full tensor cocycle and geometric `toDatum`.
+Then construct reverse overlap, diagonal/cocycle, exact round-trips, and
+categorical fiber-product coherence before geometric P9d/P9e and P10–P21.
+The new chart has not been proved equal to W9's `directSections` or W8's
+iterated `lastSections`. No removal of `Mazur_statement` is claimed.
