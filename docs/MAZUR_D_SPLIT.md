@@ -77,7 +77,12 @@ lint logs under `Scratch/MazurDW10/`. Re-run each name in `modules.txt` with
 `LEAN_NUM_THREADS=2 lake exe runLinter FLT.Mazur.MODULE`, one at a time.
 `LEAN_NUM_THREADS=2 lake env lean Scratch/MazurDW10/Axioms.lean` audits every
 new theorem and definition; `root-build.log` records the post-merge root build.
-The checked-at result and commit table are in the untracked D-W10 handoff.
+Checked 2026-10-05 02:19 UTC: all 12 module builds and individual linters
+passed; all 39 theorems and 3 definitions use only propext, Classical.choice
+and Quot.sound. Proof commits are `71ce44b7` and `f7060194`. Fetched main at
+`4d046136`, merged in `f8f3ac20`; the foreground root build passed 12,702 jobs,
+including FLT and FermatsLastTheorem, with no declaration clashes. Evidence:
+`Scratch/MazurDW10/axioms.log`, per-module logs and `root-build.log`.
 
 D-W9 (`ece0202d`) supplied C1.1–C1.3 and C1.4a.i–ii, including the normalized
 type II quotient calculation. The older general Néron-model blocker below is
