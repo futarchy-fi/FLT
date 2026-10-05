@@ -2574,6 +2574,7 @@ public import FLT.Mazur.AffinePicardSections
 public import FLT.Mazur.AffineProductMap
 public import FLT.Mazur.AffinePullbackCorner
 public import FLT.Mazur.AffinePullbackEpiReflection
+public import FLT.Mazur.AffinePullbackHomExt
 public import FLT.Mazur.AffinePullbackIdeal
 public import FLT.Mazur.AffinePullbackIntersection
 public import FLT.Mazur.AffinePushforwardCohomology
