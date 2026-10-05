@@ -423,3 +423,34 @@ There is still no geometric `toDatum` constructor. Reverse overlap,
 diagonal/cocycle and exact round-trips, categorical fiber-product coherence,
 geometric P9d/P9e, and P10–P21 follow in the existing order. This work does
 not remove `Mazur_statement`.
+
+
+## W9: a direct third-coordinate chart
+
+`AffineDirectTripleSections` constructs `directSections`, an additive
+isomorphism onto coefficients of the actual `coord3` pullback. It rotates
+the triple tensor ring so that the restricted third-coordinate scalar
+becomes the first scalar, cancels base change, and uses the direct affine
+pullback section comparison. `directSections_tmul` gives the fully normalized
+pure-tensor formula with scalar `a ⊗ (b ⊗ 1)` and the direct unit.
+
+`AffineDirectTripleEvaluation` identifies this chart on pure tensors with
+the normalized `pair23` pullback after the outer scalar, and with the
+normalized `pair13` pullback after inserting the middle scalar. Both use
+the existing actual composition comparisons and `second_normalized`.
+
+These modules have 90 and 70 lines. Their checks are the per-module
+`LEAN_NUM_THREADS=2 lake build MODULE`, separate
+`LEAN_NUM_THREADS=2 lake exe runLinter MODULE`, and the originating-declaration
+axiom audit `LEAN_NUM_THREADS=2 lake env lean G2_W9_AXIOMS.lean`. Checked-at
+results and commits are recorded in the untracked W9 handoff.
+
+This is an alternative direct chart; equality with W8's iterated
+`lastSections` has not been proved. The next step is to extend the two
+pure-tensor pair formulas to arbitrary tensors by additivity, then combine
+the three `transport_sections` equations and `CocycleCompatible` using
+`directSections` injectivity. The general-form prototypes still encounter
+instance-matching timeouts in their additive branches. The full forward
+cocycle and geometric `toDatum` remain open, followed by the reverse
+comparison and the previously listed geometric obligations. No removal
+of `Mazur_statement` is claimed.
