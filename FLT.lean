@@ -2569,6 +2569,7 @@ public import FLT.Mazur.AffineOverlapDiagonal
 public import FLT.Mazur.AffineOverlapPullback
 public import FLT.Mazur.AffineOverlapTensor
 public import FLT.Mazur.AffinePairPullbackSections
+public import FLT.Mazur.AffinePairUnitTransport
 public import FLT.Mazur.AffinePicardComparison
 public import FLT.Mazur.AffinePicardSections
 public import FLT.Mazur.AffineProductMap
