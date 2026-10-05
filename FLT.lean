@@ -2595,6 +2595,7 @@ public import FLT.Mazur.AmpleChartGeneratorRatios
 public import FLT.Mazur.AmpleChartSectionExtension
 public import FLT.Mazur.AmpleCoherentVanishing
 public import FLT.Mazur.AmpleCommonDegree
+public import FLT.Mazur.AmpleFiberCartesianDescent
 public import FLT.Mazur.AmpleGlobalGeneration
 public import FLT.Mazur.AmpleLineBundle
 public import FLT.Mazur.AmplePrincipalLocality
@@ -3619,10 +3620,12 @@ public import FLT.Mazur.ProjectiveTwistedPresentation
 public import FLT.Mazur.ProjectiveTwistingSheaf
 public import FLT.Mazur.ProjectiveTwistingSheafTensor
 public import FLT.Mazur.ProperAmpleConverse
+public import FLT.Mazur.ProperAmpleFiberModel
 public import FLT.Mazur.ProperCoherentCohomology
 public import FLT.Mazur.ProperCohomologyWitnesses
 public import FLT.Mazur.ProperCoverImmersionCriterion
 public import FLT.Mazur.ProperCurveGenus
+public import FLT.Mazur.ProperLineSheafDescent
 public import FLT.Mazur.ProperPointExtension
 public import FLT.Mazur.ProperSectionGluing
 public import FLT.Mazur.ProperStalkExtension
