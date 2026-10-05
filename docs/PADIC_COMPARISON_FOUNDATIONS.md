@@ -2969,7 +2969,7 @@ Hopf model with its original closed embedding.
 | CE12 / `RationalComponentQuotientEtale` | Proved finite etaleness over the original base by faithfully descending idempotence of the augmentation ideal. No constant-group replacement is used. |
 | CE13 / `RationalEtaleClosed`, `RationalEtaleGenericKernel`, `RationalEtaleKernel`, `RationalEtaleSystem` | Proved closed quotient inclusions for every prime, generic exactness with the actual maps, and integral kernel equations using flatness. Bundled the original quotient system with its proved complementary height. |
 | CE14 / `RationalEtaleSystemProjection`, `RationalConnectedEtaleSystemExtension` | Constructed the quotient system morphism and identified its Tate module and projection with the previous original inverse limit. Proved surjectivity, the connected kernel and original Galois equivariance. The level extensions retain the same maps and torsors; no splitting is chosen. |
-| HT1 / `RationalConnectedLie`, `RationalPlaceCompletedCotangent`, `RationalPlaceHodgeTateRight` | Partial: identified the original connected Lie module, proved the quotient Lie module is zero, removed integral completion over actual O_C, and constructed the right lattice differential into the dual Lie module of the actual Cartier dual over C_p. Full C_p scalar extension, original Galois equivariance and the twisted left map remain open. |
+| HT1 / `RationalConnectedLie`, `RationalPlaceCompletedCotangent`, `RationalPlaceHodgeTateRight` | Partial: identified the original connected Lie module, proved the quotient Lie module is zero, removed integral completion over actual O_C, and constructed the right lattice differential into the dual Lie module of the actual Cartier dual over C_p. W62 proves full C_p scalar extension and original Galois equivariance, constructs the Lie transpose and its positive-twist source action, and proves separation of dual Tate vectors. The left map into the original Tate realization remains open. |
 | HT2 / connected comparison | Open: prove the connected Hodge-Tate exact sequence; split kernel, image and dimension arguments. Connectedness alone supplies none of these conclusions. |
 | HT3 / full Cartier compatibility | Open: compute the pairing on both Hodge-Tate components and assemble it through CE14. The W59 constant calculation is a required test. |
 | DR1 / period realization | Open: construct the universal-extension/Dieudonne period realization with the original generic fibre and filtration. |
@@ -3027,11 +3027,60 @@ to C_p, using the fixed original closure transport.
 double dual. Composing its Tate map with the differential of the Cartier dual
 and the original cotangent/Lie biduality gives
 `rationalPlaceHodgeTateRight` on the original Tate lattice. This is a semilinear
-lattice map into `(Lie(G^vee))^* tensor C_p`; the full C_p-linear right map,
-its equivariance, the twisted left map, and exactness have not been proved.
+lattice map into `(Lie(G^vee))^* tensor C_p`. W62 extends it over C_p and
+proves its equivariance as described below. The twisted left map into the
+original Tate realization and exactness remain open.
 The W59 constant-system counterexample remains a required sanity check.
 
 Read-only evidence for these implementation claims is the W61 source and
 per-module logs, checked-at timestamps and axiom coverage in
 `W61_VALIDATION.json` and `W61_AXIOM_RESULT.json`; rerun
 `python3 W61_FINAL_CHECKS.py` for the source/hash, scope and final-build check.
+
+## W62: full right realization and original Galois equivariance
+
+`RationalPlaceComplexScalarExtension` proves the original integral scalar
+identification agrees with the standard Z_p embedding in C_p. It constructs
+and characterizes the unique C_p-linear extension of an original semilinear
+lattice map. `RationalPlaceHodgeTateRealization` applies this to the actual
+right differential and identifies its source with C_p tensor over Q_p of
+the rationalized original Tate module. Swapping the target tensor factors
+does not replace the original Cartier-dual Lie module.
+
+`RationalPlaceCoefficientGalois` fixes the original integral base inside the
+actual coefficient action. `RationalPlaceCartierDlogGalois` proves finite
+Cartier-coordinate and differential equivariance. Integral completeness
+makes finite evaluations jointly injective, so
+`RationalPlaceHodgeTateDlogGalois` carries this identity through the integral
+limit and then to C_p. `RationalPlaceHodgeTateRightGalois` proves original
+bidual and right-lattice equivariance. `RationalPlaceTateRealizationGalois`
+constructs the diagonal action and proves its group and semilinearity laws;
+`RationalPlaceHodgeTateEquivariance` proves full right-map equivariance for
+both the original local Galois group and its standard Q_p coordinates.
+
+For the left map, `PDivisibleTateEvaluationSurjective` proves unconditional
+surjectivity of the original finite Tate evaluations from faithful flatness.
+It upgrades finite Cartier separation to separation against actual full
+Tate vectors. Separation does not prove perfectness of the scalar-extended
+pairing. `RationalPlaceHodgeTateLieTranspose` transposes the actual dlog using
+the original Lie-cotangent contraction. Its target is the C_p-dual of the
+Cartier Tate realization, not yet the original Tate realization.
+`RationalPlaceHodgeTateLieTwist` constructs the original Lie source with its
+positive cyclotomic action and proves the group law. It does not assert that
+this source embeds into the Tate module.
+
+Remaining HT1 steps are to prove perfect Tate Cartier duality, identify the
+positively twisted dual Cartier Tate realization with the original Tate
+realization using the actual pairing, and transport the constructed Lie
+transpose through that identification. HT2 still needs the kernel, image
+and dimension arguments for connected systems and assembly through CE14.
+HT3, DR1/P2-P6 and W1-W3 remain open. The original family admission is
+unchanged. The W59 constant-system counterexample remains required: an
+etale Lie module can vanish while its actual Cartier period is nonzero.
+
+Read-only evidence for W62 is recorded with checked-at times and source
+hashes in `W62_VALIDATION.json` and `W62_AXIOM_RESULT.json`, and summarized in
+untracked `FAMILY_W62_DONE.md`. Recheck `python3 W62_FINAL_CHECKS.py`;
+`python3 W62_VALIDATE.py` builds and lints one new module at a time, and
+`python3 W62_RUN_AXIOMS.py` audits every source-named declaration and the
+original family boundary. The required root build follows the main merge.
