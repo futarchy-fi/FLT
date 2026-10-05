@@ -3348,6 +3348,7 @@ public import FLT.Mazur.IdealAdicRelativeSheafCharts
 public import FLT.Mazur.IdealAdicRelativeSheafFinite
 public import FLT.Mazur.IdealAdicRelativeSheafGenerators
 public import FLT.Mazur.IdealAdicRelativeTilde
+public import FLT.Mazur.IdealAdicRelativeTransitionGeometry
 public import FLT.Mazur.IdealCartierNeighborhood
 public import FLT.Mazur.IdealCohomologyAmpleAnyBase
 public import FLT.Mazur.IdealCohomologyAmpleCriterion
