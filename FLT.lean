@@ -2890,6 +2890,7 @@ public import FLT.Mazur.EllipticNonsplitNodeBound
 public import FLT.Mazur.EllipticNormalizedSingularity
 public import FLT.Mazur.EllipticNormalizedTypeII
 public import FLT.Mazur.EllipticNormalizedTypeIII
+public import FLT.Mazur.EllipticNormalizedTypeIV
 public import FLT.Mazur.EllipticPadicKernel
 public import FLT.Mazur.EllipticPadicSpecialization
 public import FLT.Mazur.EllipticPointMapCoordinates
@@ -2914,7 +2915,12 @@ public import FLT.Mazur.EllipticSmoothReduction
 public import FLT.Mazur.EllipticSmoothReductionAddition
 public import FLT.Mazur.EllipticSplitDepthModel
 public import FLT.Mazur.EllipticSplitOrderOne
+public import FLT.Mazur.EllipticTypeIIIDepth
 public import FLT.Mazur.EllipticTypeIIISlope
+public import FLT.Mazur.EllipticTypeIVAddition
+public import FLT.Mazur.EllipticTypeIVComponentComparison
+public import FLT.Mazur.EllipticTypeIVCoordinates
+public import FLT.Mazur.EllipticTypeIVResidue
 public import FLT.Mazur.EllipticUnramifiedKernel
 public import FLT.Mazur.EllipticUnramifiedSpecialization
 public import FLT.Mazur.EllipticUnramifiedTorsion
