@@ -3252,6 +3252,7 @@ public import FLT.Mazur.IdealAdicGradedUnit
 public import FLT.Mazur.IdealAdicLineQuotient
 public import FLT.Mazur.IdealAdicLineTower
 public import FLT.Mazur.IdealAdicQuotient
+public import FLT.Mazur.IdealAdicRelativeClosedModule
 public import FLT.Mazur.IdealAdicRelativeGradedAlgebra
 public import FLT.Mazur.IdealCartierNeighborhood
 public import FLT.Mazur.IdealCohomologyAmpleAnyBase
