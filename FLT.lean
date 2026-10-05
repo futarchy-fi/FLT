@@ -2387,6 +2387,7 @@ public import FLT.Mazur.AffineGeometricOverlap
 public import FLT.Mazur.AffineIdealPowerExtension
 public import FLT.Mazur.AffineImageSectionTransport
 public import FLT.Mazur.AffineIntersectionRestriction
+public import FLT.Mazur.AffineIteratedPullbackSections
 public import FLT.Mazur.AffineKernelLocalization
 public import FLT.Mazur.AffineLineCoalgebraDescent
 public import FLT.Mazur.AffineLineTwistLocalization

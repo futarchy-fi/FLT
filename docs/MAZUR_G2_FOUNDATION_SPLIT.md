@@ -299,3 +299,37 @@ and `Quot.sound`. Full P9b remains unproved for the reasons below.
 
 Each leaf remains capped at 240 physical lines. None of the new comparison
 results removes `Mazur_statement` from the endpoint's axiom dependencies.
+
+
+## W5: triple pair maps and coefficient-lifting foundations
+
+The following interfaces extend W4. They do not yet construct a full
+geometric/tensor descent equivalence.
+
+| Module (`FLT.Mazur.` prefix) | Proved or constructed interface |
+| --- | --- |
+| AffineTripleOverlapMaps | The three tensor-ring pair maps, their pure-tensor formulas, six coordinate identities, and identification with the actual scheme fiber-product lift |
+| AffinePairPullbackSections | The second-projection coefficient equivalence for unequal affine factors, its complete tensor-ring scalar action, and its base-linear form |
+| AffineIteratedPullbackSections | Actual composition/equality pullback isomorphism and unit normalization; affine coefficient unit and its naturality; construction of normalized coefficient lifting |
+
+Recheck each module using `LEAN_NUM_THREADS=2 lake build MODULE` and
+`LEAN_NUM_THREADS=2 lake exe runLinter MODULE`, one linter invocation per
+module. These exports are the evidence for the table; the W5 handoff records
+build, lint, axiom-audit, and integration results with their check times.
+
+The first remaining step is to prove the scalar/unit and morphism laws of
+`AffineIteratedPullbackSections.liftSections` without expensive conversion
+between additive global sections and module-valued affine sections. The
+attempted `liftSections_unit` and `liftSections_map` proofs exceeded the
+default kernel budget. A bounded larger-budget attempt was interrupted at
+the requested context handoff; it is not a proof result. No enlarged budget
+is present in the committed modules.
+
+Then specialize the comparison to all three pair projections, construct the
+last-coordinate coefficient chart `S ⊗[R] (S ⊗[R] N)`, and use its injectivity
+to derive the full tensor cocycle for every `n`, `s`, and `t`. Those assertions
+are not exported by the W5 modules. The reverse overlap reconstruction,
+reverse diagonal/cocycle laws, exact round-trips, and coherence with the
+categorical fiber-product datum are still the next P9b obligations. P9d,
+P9e, representability, actual `J0(p)`, and Abel–Jacobi at infinity follow only
+after the earlier interfaces are proved.
