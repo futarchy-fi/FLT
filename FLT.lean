@@ -3820,6 +3820,7 @@ public import FLT.Mazur.SchemeCohomologyIsoCocycles
 public import FLT.Mazur.SchemeCoproductCohomology
 public import FLT.Mazur.SchemeCoproductSections
 public import FLT.Mazur.SchemeModulePullbackUnits
+public import FLT.Mazur.SchemeOverlapBaseChange
 public import FLT.Mazur.SchemeOverlapCocycleChart
 public import FLT.Mazur.SchemeOverlapCocyclePullback
 public import FLT.Mazur.SchemeOverlapDiagonalChart
