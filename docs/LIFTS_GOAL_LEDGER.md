@@ -4,6 +4,42 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
+## W66 — arithmetic unramifiedness and the local different estimate
+
+Check the saved sources, logs, line caps and commits with
+`python3 Scratch/LiftsW66/check.py`; it prints its checked-at time.
+Rerun foreground builds, individual module lint and axiom checks with
+`python3 Scratch/LiftsW66/validate.py`. Evidence and the detailed
+`LIFTS_W66_RESULT.md` handoff remain untracked outside the source tree.
+
+| Item | New module | Proved scope |
+|---|---|---|
+| Kernel inertia comparison | `AbsoluteGaloisGroup.FiniteImageUnramified` | Identifies the local restriction kernel; trivial absolute inertia makes every prime above the selected place unramified. |
+| Absolute prime support | `NumberField.UnramifiedPrimeSupport` | Converts rational-place unramifiedness to unramifiedness over integers, including the zero prime, and controls the support of the different. |
+| Global norm bound | `NumberField.FinitePrimeDiscriminantBound` | Local bounds `d(P) ≤ c(q)e(P)` imply a global ideal containment and discriminant bound for any finite exceptional prime set. |
+| Actual parameter fields | `HardlyRamifiedParameterUnramified` | Both framed and trace parameter fields are arithmetically unramified outside 2p; their different exponents there vanish. |
+| Conditional parameter finiteness | `HardlyRamifiedParameterBounds` | Only the exceptional-prime exponent bounds remain hypotheses for a uniform discriminant bound and finite coefficient maps. |
+| Uniformizer noncancellation | `DiscreteValuationRing.PolynomialValuation` | Short polynomial terms have distinct valuations modulo the mapped uniformizer valuation; evaluation cannot cancel the minimum. |
+| Local different estimate | `DiscreteValuationRing.UniformizerDifferentBound` | Proves `v(different) ≤ v(e) + e - 1` in a totally ramified uniformizer power basis and that rank times a base uniformizer belongs to the different, without requiring a chosen power basis. |
+
+| Unramified different | `DiscreteValuationRing.UnramifiedDifferent` | A base uniformizer staying irreducible gives the unit different over a finite-residue-field DVR. |
+| General Henselian extension | `DiscreteValuationRing.HenselianDifferentBound` | Constructs the unramified coefficient ring and applies different transitivity: rank times the base uniformizer belongs to the different. |
+| Uniform p-adic bound | `Padics.DifferentBound` | A finite Henselian DVR extension of the p-adic integers of rank at most N has p^(N+1) in its different. |
+
+**The lifting goal remains open.** The uniform local p-adic bound is proved,
+including descent through the constructed unramified coefficient ring. It
+must still be applied to the actual parameter-field completions: transport
+the base integer ring, prove the local integral rank bound by global degree,
+and use the completion comparison to bound global different exponents.
+Those local bounds are still explicit hypotheses in the HR parameter
+finiteness theorems. Arithmetic tangent-space identification and a
+complete-local presentation remain required for Noetherianity.
+
+The finite coefficient order still requires KW II selected-local-ring
+comparison, integral finite-flat descent and D3/D4/I0. S0a3, Lp0 and G0a–G1c
+remain behind this first-priority arithmetic gap. No numerical Serre-weight
+evaluation or arbitrary-p Raynaud classification API is claimed.
+
 ## W65 — finite coefficient parameters and the Hermite counting step
 
 Evidence check: `python3 Scratch/LiftsW65/check.py` verifies saved source/log

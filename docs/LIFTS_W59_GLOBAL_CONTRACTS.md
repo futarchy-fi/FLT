@@ -55,14 +55,29 @@ triviality. Both give finiteness conditional on a uniform discriminant bound.
 identify kernel fields for a framed map and its trace restriction. It does
 not show all trace-image maps extend to the framed quotient.
 
-The next arithmetic input is a uniform different/discriminant bound for the
-finite fields of these fixed-target representations, derived from their
-specified inertia conditions and bounded degree. Triviality of the selected
-absolute inertia elements must first be compared with unramifiedness of the
-finite field at every prime outside {2,p}. `NumberField.finite_of_discr_bdd`
-now supplies the counting step, but neither the discriminant bound nor the
-finite tangent/presentation theorem. Check saved W65 evidence with
-`python3 Scratch/LiftsW65/check.py`.
+W66 proves the selected-inertia comparison for the exact parameter fields:
+`HardlyRamifiedParameterUnramified` gives arithmetic unramifiedness outside
+{2,p}, over both the integers of Q and Z, and vanishing different exponents.
+`FinitePrimeDiscriminantBound` and `HardlyRamifiedParameterBounds` now reduce
+the uniform discriminant estimate to bounds for normalized different
+exponents at 2 and p. This is a conditional reduction, not Noetherianity.
+
+`DiscreteValuationRing.UniformizerDifferentBound` proves the local estimate
+`v(different) ≤ v(e) + e - 1` for a totally ramified uniformizer power basis,
+and proves that rank times a base uniformizer lies in the different of a
+finite totally ramified DVR extension without a chosen basis as input.
+`HenselianDifferentBound` constructs the unramified coefficient ring and
+uses different transitivity to remove the total-ramification hypothesis.
+`Padics.DifferentBound` proves that p^(N+1) belongs to the different of every
+finite Henselian DVR extension of Zp with integral rank at most N.
+
+Still required: instantiate this bound on each actual parameter-field
+completion, transport the rational completion integer ring to Zp, bound the
+local integral rank by the global degree and compare local/global different
+exponents. Then identify finite-test-ring maps with tangent spaces and
+construct the complete-local presentation. Hermite counting alone does not
+prove these statements. Check saved evidence with
+`python3 Scratch/LiftsW66/check.py`.
 
 ## Required arithmetic objects
 

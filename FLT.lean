@@ -35,6 +35,7 @@ public import FLT.AbsoluteGaloisGroup.CompletionIntegersAdic
 public import FLT.AbsoluteGaloisGroup.CyclotomicCharacterNaturality
 public import FLT.AbsoluteGaloisGroup.FiniteCharacterInertia
 public import FLT.AbsoluteGaloisGroup.FiniteImageField
+public import FLT.AbsoluteGaloisGroup.FiniteImageUnramified
 public import FLT.AbsoluteGaloisGroup.FiniteTameQuotient
 public import FLT.AbsoluteGaloisGroup.FiniteTameRootExponent
 public import FLT.AbsoluteGaloisGroup.FiniteUniformizerRootCharacter
@@ -192,7 +193,9 @@ public import FLT.Deformations.HardlyRamifiedFlatLift
 public import FLT.Deformations.HardlyRamifiedFlatPoint
 public import FLT.Deformations.HardlyRamifiedFlatQuotient
 public import FLT.Deformations.HardlyRamifiedFramedParameters
+public import FLT.Deformations.HardlyRamifiedParameterBounds
 public import FLT.Deformations.HardlyRamifiedParameterComparison
+public import FLT.Deformations.HardlyRamifiedParameterUnramified
 public import FLT.Deformations.HardlyRamifiedTraceArithmetic
 public import FLT.Deformations.HardlyRamifiedTraceImage
 public import FLT.Deformations.HardlyRamifiedTraceLift
@@ -2099,6 +2102,7 @@ public import FLT.Mathlib.NumberTheory.NumberField.FiniteAdeleRing
 public import FLT.Mathlib.NumberTheory.NumberField.InfiniteAdeleRing
 public import FLT.Mathlib.NumberTheory.NumberField.InfinitePlace.Basic
 public import FLT.Mathlib.NumberTheory.NumberField.InfinitePlace.Completion
+public import FLT.Mathlib.NumberTheory.Padics.DifferentBound
 public import FLT.Mathlib.NumberTheory.Padics.HeightOneSpectrum
 public import FLT.Mathlib.NumberTheory.Padics.PadicIntegers
 public import FLT.Mathlib.NumberTheory.Padics.PolynomialSpecialFiber
@@ -2132,11 +2136,15 @@ public import FLT.Mathlib.RingTheory.DifferentPowerBasis
 public import FLT.Mathlib.RingTheory.DiscreteValuationRing.AdjoinRoot
 public import FLT.Mathlib.RingTheory.DiscreteValuationRing.Eisenstein
 public import FLT.Mathlib.RingTheory.DiscreteValuationRing.EisensteinExtension
+public import FLT.Mathlib.RingTheory.DiscreteValuationRing.HenselianDifferentBound
 public import FLT.Mathlib.RingTheory.DiscreteValuationRing.Monogenic
+public import FLT.Mathlib.RingTheory.DiscreteValuationRing.PolynomialValuation
 public import FLT.Mathlib.RingTheory.DiscreteValuationRing.ResidueGenerator
 public import FLT.Mathlib.RingTheory.DiscreteValuationRing.Separable
 public import FLT.Mathlib.RingTheory.DiscreteValuationRing.TotalRamification
+public import FLT.Mathlib.RingTheory.DiscreteValuationRing.UniformizerDifferentBound
 public import FLT.Mathlib.RingTheory.DiscreteValuationRing.UniformizerMinpoly
+public import FLT.Mathlib.RingTheory.DiscreteValuationRing.UnramifiedDifferent
 public import FLT.Mathlib.RingTheory.DiscreteValuationRing.UnramifiedSubalgebra
 public import FLT.Mathlib.RingTheory.Discriminant
 public import FLT.Mathlib.RingTheory.FaithfullyFlatPresentationDescent
@@ -3352,10 +3360,12 @@ public import FLT.NumberField.DifferentDiscriminant
 public import FLT.NumberField.DifferentExponentBounds
 public import FLT.NumberField.DifferentTower
 public import FLT.NumberField.DiscriminantBounds
+public import FLT.NumberField.FinitePrimeDiscriminantBound
 public import FLT.NumberField.HeightOneSpectrum
 public import FLT.NumberField.InfiniteAdeleRing
 public import FLT.NumberField.InfinitePlace.Extension
 public import FLT.NumberField.Padics.RestrictedProduct
+public import FLT.NumberField.UnramifiedPrimeSupport
 public import FLT.NumberField.Zeta.Partial
 public import FLT.NumberField.ZetaFE.Leaves1
 public import FLT.NumberField.ZetaFE.ZeroTheoryN2
