@@ -302,6 +302,23 @@ The namespace-wide audit includes both the strengthened presentation and
 the new global dimension theorem. No FLT arithmetic assumption is removed.
 
 
+### Integral ordinary chart and dense overlap (2026-10-05)
+
+`FLT/EllipticCurve/CubicAffineDomain.lean` identifies the ordinary chart
+with the library's Weierstrass coordinate ring by an explicit algebra
+equivalence. Consequently, over any integral coefficient ring the
+ordinary chart ring is a domain, including for singular cubics. The
+power basis proves the overlap coordinate is nonzero, so both
+presentations of the overlap are domains as well. Their spectra are
+irreducible, and the overlap is dense in the ordinary chart.
+
+This closes the ordinary-chart part of the connectedness argument.
+It does not prove that the infinity chart is integral or that the
+ordinary chart is dense in the full glued scheme. Those remain the next
+steps, followed by compatibility with base change for geometric
+connectedness. The modular objects and arithmetic exclusion remain
+unfinished; no FLT assumption is removed by this result.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
