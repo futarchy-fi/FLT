@@ -3323,6 +3323,7 @@ public import FLT.Mazur.IdealAdicGradedMultiplication
 public import FLT.Mazur.IdealAdicGradedPullback
 public import FLT.Mazur.IdealAdicGradedRestriction
 public import FLT.Mazur.IdealAdicGradedRing
+public import FLT.Mazur.IdealAdicGradedRingLocalization
 public import FLT.Mazur.IdealAdicGradedSectionAction
 public import FLT.Mazur.IdealAdicGradedSections
 public import FLT.Mazur.IdealAdicGradedSequence
