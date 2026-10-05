@@ -163,6 +163,7 @@ public import FLT.EllipticCurve.CubicBaseChange
 public import FLT.EllipticCurve.CubicBaseChangeGlobal
 public import FLT.EllipticCurve.CubicCharts
 public import FLT.EllipticCurve.CubicIntegral
+public import FLT.EllipticCurve.CubicNegation
 public import FLT.EllipticCurve.CubicProjectiveClosed
 public import FLT.EllipticCurve.CubicProjectiveCover
 public import FLT.EllipticCurve.CubicProjectiveMorphism

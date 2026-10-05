@@ -20,7 +20,7 @@ a function by its conjugate gives its polynomial norm.
 open Polynomial
 open scoped Polynomial.Bivariate
 namespace WeierstrassCurve.Affine.CoordinateRing
-variable {F : Type*} [Field F] (W : WeierstrassCurve.Affine F)
+variable {F : Type*} [CommRing F] (W : WeierstrassCurve.Affine F)
 /-- Pullback by point negation, fixing the polynomial subring in the x-coordinate. -/
 noncomputable def negHom : W.CoordinateRing →ₐ[F[X]] W.CoordinateRing :=
   AdjoinRoot.liftAlgHom W.polynomial (Algebra.ofId _ _) (mk W W.negPolynomial) (by

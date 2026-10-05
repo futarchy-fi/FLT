@@ -5,7 +5,7 @@ Authors: krandder
 -/
 module
 
-import FLT.EllipticCurve.CubicBaseChangeGlobal
+import FLT.EllipticCurve.CubicNegation
 import Mathlib.Data.ZMod.Basic
 import Lean
 
