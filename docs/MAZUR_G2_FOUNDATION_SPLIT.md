@@ -548,3 +548,38 @@ commits, and the post-merge root-build result are in the untracked W12 handoff.
 The remaining order is the concrete additive specialization, full forward
 cocycle and `toDatum`, reverse overlap and round-trips, categorical
 normalization, geometric P9d/P9e, then P10–P21. `Mazur_statement` remains.
+
+
+## W13: concrete additive maps and a bundled generator criterion
+
+`AffineTripleCoefficientMaps` defines `coefficientTransport`, the actual
+pair23 section map after the scaled pair12 lift, and `coefficientAction`,
+the last-slot tensor action followed by the direct third-coordinate chart.
+`coefficientAction_apply` evaluates the latter on every tensor;
+`coefficientAction_tmul` evaluates it on generators. The pure evaluation
+uses an abstract tensor calculation before applying the actual section
+chart, avoiding reduction of the concrete sheaf construction.
+
+`AffineTripleCoefficientExtensionality.coefficientMaps_eq_iff` reduces
+identity of these two actual additive maps to their pure-tensor values.
+`coefficientMaps_eq_of_tmul` and
+`coefficientTransport_coefficients_of_tmul` use the evaluated right-hand
+side. They require a generator equation for the **bundled** transport map.
+They do not establish that hypothesis from the existing **unbundled**
+`transport23_tmul` theorem.
+
+The first ordered item therefore remains open. The next step is an
+evaluation bridge from `coefficientTransport` to the unbundled section
+formula, then use `transport23_tmul` to discharge the generator hypothesis.
+The attempted bridge elaborates after coercion simplification but still
+hits a kernel timeout; no failed bridge is imported. Full forward cocycle,
+`toDatum`, reverse overlap and round-trips, categorical normalization,
+geometric P9d/P9e, and P10–P21 remain in their previous order.
+`Mazur_statement` has not been removed.
+
+Checked at 2026-10-05T07:01:09.437602+00:00: separate foreground builds and module-only lints
+passed for both 81-line modules. Recheck with
+`LEAN_NUM_THREADS=2 lake build FLT.Mazur.AffineTripleCoefficientMaps` and the
+corresponding `AffineTripleCoefficientExtensionality` target, then run
+`lake exe runLinter MODULE` once for each module. The axiom audit and
+post-sync root-build evidence are in the untracked W13 handoff.
