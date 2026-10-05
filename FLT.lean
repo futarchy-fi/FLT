@@ -33,6 +33,7 @@ public import FLT.AbsoluteGaloisGroup.CocycleFiniteGalois
 public import FLT.AbsoluteGaloisGroup.CompletionComparison
 public import FLT.AbsoluteGaloisGroup.CompletionIntegersAdic
 public import FLT.AbsoluteGaloisGroup.CyclotomicCharacterNaturality
+public import FLT.AbsoluteGaloisGroup.EmbeddingConjugacy
 public import FLT.AbsoluteGaloisGroup.FiniteCharacterInertia
 public import FLT.AbsoluteGaloisGroup.FiniteImageField
 public import FLT.AbsoluteGaloisGroup.FiniteImageUnramified
@@ -156,6 +157,7 @@ public import FLT.Deformations.Algebra.InverseLimit.Basic
 public import FLT.Deformations.Algebra.InverseLimit.Topology
 public import FLT.Deformations.ArithmeticGaloisFixedField
 public import FLT.Deformations.ArithmeticGaloisQuotient
+public import FLT.Deformations.ArithmeticLocalConjugacy
 public import FLT.Deformations.Categories
 public import FLT.Deformations.ClosedIdealCondition
 public import FLT.Deformations.ClosedIdealQuotient
@@ -194,6 +196,7 @@ public import FLT.Deformations.FramedArithmeticIdeal
 public import FLT.Deformations.FramedDeterminantIdeal
 public import FLT.Deformations.FramedQuotientIdeal
 public import FLT.Deformations.FramedTrivialityIdeal
+public import FLT.Deformations.HardlyRamifiedAdjointDual
 public import FLT.Deformations.HardlyRamifiedArithmeticAtTwo
 public import FLT.Deformations.HardlyRamifiedArithmeticDescent
 public import FLT.Deformations.HardlyRamifiedArithmeticQuotient
@@ -246,6 +249,7 @@ public import FLT.Deformations.ProartinianNakayama
 public import FLT.Deformations.ProartinianQuotients
 public import FLT.Deformations.Representable
 public import FLT.Deformations.RepresentationTheory.AbsoluteGaloisGroup
+public import FLT.Deformations.RepresentationTheory.AdjointTateDual
 public import FLT.Deformations.RepresentationTheory.BrauerEffectivityCoefficients
 public import FLT.Deformations.RepresentationTheory.Burnside
 public import FLT.Deformations.RepresentationTheory.CharacterFiltrationDeterminant
@@ -318,6 +322,7 @@ public import FLT.Deformations.RepresentationTheory.TorsionReductionTower
 public import FLT.Deformations.RepresentationTheory.TorsionTensorCompletion
 public import FLT.Deformations.RepresentationTheory.TorsionTensorMaps
 public import FLT.Deformations.RepresentationTheory.TraceCompatiblePair
+public import FLT.Deformations.RepresentationTheory.TraceZeroPairing
 public import FLT.Deformations.RepresentationTheory.TrivialQuotientKernel
 public import FLT.Deformations.RepresentationTheory.ULiftCoefficientTensor
 public import FLT.Deformations.Subfunctor
@@ -693,6 +698,7 @@ public import FLT.GaloisRepresentation.HardlyRamified.TrivialPrimeFiltrationCoex
 public import FLT.GaloisRepresentation.HardlyRamified.TrivialPrimeFiltrationExtension
 public import FLT.GaloisRepresentation.HardlyRamified.ULiftGenericRecovery
 public import FLT.GaloisRepresentation.HardlyRamified.ULiftHardlyRamified
+public import FLT.GaloisRepresentation.SerreWeight.ArithmeticCharacterKernel
 public import FLT.GaloisRepresentation.SerreWeight.CoefficientCharacterExponent
 public import FLT.GaloisRepresentation.SerreWeight.CoefficientOrdinaryInput
 public import FLT.GaloisRepresentation.SerreWeight.CoefficientOrdinaryInvariance
@@ -3585,7 +3591,9 @@ public import FLT.PadicHodgeTheory.ComplexPadicScalarAction
 public import FLT.PadicHodgeTheory.ComplexPadicScalarResidue
 public import FLT.PadicHodgeTheory.ComplexPadicScalars
 public import FLT.PadicHodgeTheory.ComplexRelativeAxDescent
+public import FLT.PadicHodgeTheory.ComplexRelativePDHull
 public import FLT.PadicHodgeTheory.ComplexRelativePDPresentation
+public import FLT.PadicHodgeTheory.ComplexRelativePDReduction
 public import FLT.PadicHodgeTheory.ComplexRootLogLinearity
 public import FLT.PadicHodgeTheory.ComplexRootPowerBounds
 public import FLT.PadicHodgeTheory.ComplexRootPowerConvergence
@@ -3658,6 +3666,8 @@ public import FLT.PadicHodgeTheory.PadicUniformizerOrthogonality
 public import FLT.PadicHodgeTheory.PolynomialNearbyRoot
 public import FLT.PadicHodgeTheory.PowerSeriesLogPower
 public import FLT.PadicHodgeTheory.PrincipalGradedPiece
+public import FLT.PadicHodgeTheory.RationalPDDescent
+public import FLT.PadicHodgeTheory.RationalPDSum
 public import FLT.PadicHodgeTheory.RelativePDPresentation
 public import FLT.PadicHodgeTheory.UltrametricPolynomialCoefficients
 public import FLT.Patching.Algebra
