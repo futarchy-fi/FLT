@@ -2582,10 +2582,13 @@ public import FLT.Mazur.EllipticFormalBaseChange
 public import FLT.Mazur.EllipticFormalCoordinates
 public import FLT.Mazur.EllipticFormalCubic
 public import FLT.Mazur.EllipticFormalFieldPoint
+public import FLT.Mazur.EllipticFormalFirstOrder
 public import FLT.Mazur.EllipticFormalGenericParameters
 public import FLT.Mazur.EllipticFormalGroupLaw
 public import FLT.Mazur.EllipticFormalIntersection
+public import FLT.Mazur.EllipticFormalInverse
 public import FLT.Mazur.EllipticFormalLinearTerms
+public import FLT.Mazur.EllipticFormalMultiplication
 public import FLT.Mazur.EllipticFormalNegation
 public import FLT.Mazur.EllipticFormalProjective
 public import FLT.Mazur.EllipticFormalSecant
