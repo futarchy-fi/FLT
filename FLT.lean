@@ -2678,6 +2678,7 @@ public import FLT.Mazur.ChowWitnessGenericRestriction
 public import FLT.Mazur.ChowWitnessSectionsLocalization
 public import FLT.Mazur.ChowWitnessSectionsLocalizationAssembly
 public import FLT.Mazur.ClassifiedGenusOneFamily
+public import FLT.Mazur.ClopenLimitDescent
 public import FLT.Mazur.ClosedCohomologyFinite
 public import FLT.Mazur.ClosedDescentCharts
 public import FLT.Mazur.ClosedDescentGluingData
@@ -2696,9 +2697,12 @@ public import FLT.Mazur.ClosedPushforwardRestriction
 public import FLT.Mazur.ClosedSubschemeCohomology
 public import FLT.Mazur.ClosedSubsets
 public import FLT.Mazur.CocycleGlobalSectionCoordinate
+public import FLT.Mazur.CoefficientImmersionClosedDescent
 public import FLT.Mazur.CoefficientModelFiniteness
 public import FLT.Mazur.CoefficientModelLimit
 public import FLT.Mazur.CoefficientModelRecovery
+public import FLT.Mazur.CoefficientOpenClosedDescent
+public import FLT.Mazur.CoefficientProperDescent
 public import FLT.Mazur.CoefficientSpectrumLimit
 public import FLT.Mazur.CoefficientStageColimit
 public import FLT.Mazur.CoefficientStageDiagram
