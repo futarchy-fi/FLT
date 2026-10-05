@@ -2530,6 +2530,7 @@ public import FLT.Mazur.AffineIdealPowerExtension
 public import FLT.Mazur.AffineImageSectionTransport
 public import FLT.Mazur.AffineIntegerModel
 public import FLT.Mazur.AffineIntersectionDiagramGluing
+public import FLT.Mazur.AffineIntersectionFinitePresentation
 public import FLT.Mazur.AffineIntersectionGluedModelSheaf
 public import FLT.Mazur.AffineIntersectionGluingBaseChange
 public import FLT.Mazur.AffineIntersectionGluingSections
@@ -2684,6 +2685,7 @@ public import FLT.Mazur.ClosedPushforwardRestriction
 public import FLT.Mazur.ClosedSubschemeCohomology
 public import FLT.Mazur.ClosedSubsets
 public import FLT.Mazur.CocycleGlobalSectionCoordinate
+public import FLT.Mazur.CoefficientModelFiniteness
 public import FLT.Mazur.CoefficientModelLimit
 public import FLT.Mazur.CoefficientModelRecovery
 public import FLT.Mazur.CoefficientSpectrumLimit
@@ -2991,6 +2993,8 @@ public import FLT.Mazur.FiniteSupportEulerPositive
 public import FLT.Mazur.FiniteSurjectiveAmpleDescent
 public import FLT.Mazur.FiniteSurjectiveCoherentWitness
 public import FLT.Mazur.FiniteTensorIntegerClosedImmersion
+public import FLT.Mazur.FinitelyPresentedIntersectionCocycleModel
+public import FLT.Mazur.FinitelyPresentedLineSheafDescent
 public import FLT.Mazur.FixedModelElementLifts
 public import FLT.Mazur.FixedTargetIntegerModel
 public import FLT.Mazur.FlasqueDirectImageAcyclic
