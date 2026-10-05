@@ -55,14 +55,46 @@ triviality. Both give finiteness conditional on a uniform discriminant bound.
 identify kernel fields for a framed map and its trace restriction. It does
 not show all trace-image maps extend to the framed quotient.
 
-The next arithmetic input is a uniform different/discriminant bound for the
-finite fields of these fixed-target representations, derived from their
-specified inertia conditions and bounded degree. Triviality of the selected
-absolute inertia elements must first be compared with unramifiedness of the
-finite field at every prime outside {2,p}. `NumberField.finite_of_discr_bdd`
-now supplies the counting step, but neither the discriminant bound nor the
-finite tangent/presentation theorem. Check saved W65 evidence with
-`python3 Scratch/LiftsW65/check.py`.
+W66 proves the selected-inertia comparison for the exact parameter fields:
+`HardlyRamifiedParameterUnramified` gives arithmetic unramifiedness outside
+{2,p}, over both the integers of Q and Z, and vanishing different exponents.
+`FinitePrimeDiscriminantBound` and `HardlyRamifiedParameterBounds` now reduce
+the uniform discriminant estimate to bounds for normalized different
+exponents at 2 and p. This is a conditional reduction, not Noetherianity.
+
+`DiscreteValuationRing.UniformizerDifferentBound` proves the local estimate
+`v(different) ≤ v(e) + e - 1` for a totally ramified uniformizer power basis,
+and proves that rank times a base uniformizer lies in the different of a
+finite totally ramified DVR extension without a chosen basis as input.
+`HenselianDifferentBound` constructs the unramified coefficient ring and
+uses different transitivity to remove the total-ramification hypothesis.
+`Padics.DifferentBound` proves that p^(N+1) belongs to the different of every
+finite Henselian DVR extension of Zp with integral rank at most N.
+
+W67 instantiates this bound on the full completed integer rings.
+`NumberField.Completion.RankBound` bounds the local integral rank by the
+global degree. `Completion.UniformDifferentBound` uses the proved
+Henselianity and the original p-adic base isomorphism; the different remains
+over that original base. `UniformDifferentExponent` compares local and
+global exponents at every prime above a rational prime.
+`HardlyRamifiedParameterFiniteness` proves the explicit bound
+`(2*p)^((N+1)*N)` and unconditional finite coefficient parameters for each
+finite discrete test ring, with `N = Nat.card (GL (Fin 2) A)`.
+
+`DualNumberTest` constructs the finite test object with the original residue
+field. `ContinuousTangent` identifies its parameter maps with continuous
+coefficient-linear Leibniz functionals at the specified residue map.
+`HardlyRamifiedTangentFinite` applies the arithmetic counting theorem to
+prove finite dimension of these tangent spaces for both the actual framed
+HR quotient and, under irreducibility, its trace image.
+
+Still required: derive topological finite generation and the adic topology
+from these continuous tangents and construct a finite-variable complete-local
+presentation. An algebraic cotangent identification requires a topology
+comparison; finite continuous dual alone must not be substituted into an
+algebraic Nakayama lemma. The G0/G1 Selmer identification is also separate.
+Noetherianity of a target still does not imply Noetherianity of its subring.
+Check saved evidence with `python3 Scratch/LiftsW67/check.py`.
 
 ## Required arithmetic objects
 
