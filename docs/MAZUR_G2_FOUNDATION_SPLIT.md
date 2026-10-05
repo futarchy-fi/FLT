@@ -489,3 +489,35 @@ Then construct reverse overlap, diagonal/cocycle, exact round-trips, and
 categorical fiber-product coherence before geometric P9d/P9e and P10–P21.
 The new chart has not been proved equal to W9's `directSections` or W8's
 iterated `lastSections`. No removal of `Mazur_statement` is claimed.
+
+## W11: scaled transport through the actual pair pullbacks
+
+Three further leaves advance the first open W10 item:
+
+| Module | Result | Lines/cap |
+| --- | --- | --- |
+| `AffineDirectTripleMiddleBalance` | The pair12 second-chart lift and pair23 first-chart lift agree after multiplying by the omitted coordinate scalars | 49/240 |
+| `AffineScaledPullbackSections` | Conjugated pullback maps preserve scalar multiples of normalized units; a tensor-ring specialization retains abstract target sheaves | 52/240 |
+| `AffineScaledTripleTransport` | Actual normalized transport intertwines scaled coefficient sections for arbitrary pair map, coordinate maps, scalar, and overlap tensor | 67/240 |
+
+The scalar transport proof needs an intermediate tensor-ring specialization
+with abstract target sheaves. It aligns the scalar `Semiring` instances before
+substituting the concrete coordinate pullbacks, avoiding the kernel conversion
+that prevented the direct application of sheaf linearity. Both scalar transport
+equations use actual comparison morphisms; the second uses the existing
+`tensorEquiv_sections` reconstruction equation.
+
+Validation: separate foreground `LEAN_NUM_THREADS=2 lake build MODULE` and
+`LEAN_NUM_THREADS=2 lake exe runLinter MODULE` passed for all three modules on
+2026-10-05 at 05:39 UTC. The originating-declaration audit is
+`LEAN_NUM_THREADS=2 lake env lean G2_W11_AXIOMS.lean`; checked-at results and
+commits are recorded in the untracked W11 handoff.
+
+The full `transport23_coefficients` equation is still open at its join with
+`AffineDirectTripleAdditivity.sections`. The pure-tensor attempt exposes a
+remaining coefficient-module instance mismatch; even the variable-tensor
+composition currently times out during kernel checking. Thus the full forward
+cocycle and `toDatum` remain open. The reverse overlap, round-trips, categorical
+normalization coherence, geometric P9d/P9e, and P10–P21 remain in the same order.
+No geometric datum, representability witness, or Jacobian witness is assumed,
+and no removal of `Mazur_statement` is claimed.
