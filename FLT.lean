@@ -2922,6 +2922,8 @@ public import FLT.Mazur.EllipticGoodComponent
 public import FLT.Mazur.EllipticInfinityEvaluation
 public import FLT.Mazur.EllipticInfinityParameter
 public import FLT.Mazur.EllipticInfinityPowerSeries
+public import FLT.Mazur.EllipticIntegralChartCover
+public import FLT.Mazur.EllipticIntegralChartEvaluation
 public import FLT.Mazur.EllipticIntegralCuspNormalization
 public import FLT.Mazur.EllipticIntegralNodeNormalization
 public import FLT.Mazur.EllipticIntegralSingularTranslation
@@ -3979,6 +3981,7 @@ public import FLT.Mazur.ValuationProjectiveNormalization
 public import FLT.Mazur.ValuationRingModel
 public import FLT.Mazur.VeryAmpleAffineSections
 public import FLT.Mazur.VeryAmplePresentationBaseChange
+public import FLT.Mazur.WeierstrassIntegralChart
 public import FLT.MazurChapter.AdmissibleGroupSchemes
 public import FLT.MazurW
 public import FLT.MazurWOfPrimeTorsion
