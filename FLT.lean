@@ -2430,6 +2430,7 @@ public import FLT.Mazur.AffineOpenCartesianSections
 public import FLT.Mazur.AffineOpenCechBoundary
 public import FLT.Mazur.AffineOpenDenominators
 public import FLT.Mazur.AffineOpenImmersionLocalizationCriterion
+public import FLT.Mazur.AffinePullbackCorner
 public import FLT.Mazur.AffinePullbackEpiReflection
 public import FLT.Mazur.AffinePullbackIdeal
 public import FLT.Mazur.AffinePullbackIntersection
@@ -2437,6 +2438,9 @@ public import FLT.Mazur.AffinePushforwardCohomology
 public import FLT.Mazur.AffinePushforwardQuasicoherent
 public import FLT.Mazur.AffineQuasiCoherentBaseChange
 public import FLT.Mazur.AffineRestrictionImmersion
+public import FLT.Mazur.AffineSquareEquivalences
+public import FLT.Mazur.AffineSquareScalarExtension
+public import FLT.Mazur.AffineSquareTensorComparison
 public import FLT.Mazur.AffineStalkExtension
 public import FLT.Mazur.AffineStalkMorphism
 public import FLT.Mazur.AffineTrivialLineSectionOpen
@@ -2570,6 +2574,7 @@ public import FLT.Mazur.CommonCoefficientStage
 public import FLT.Mazur.CommonIdealDirectSum
 public import FLT.Mazur.CommonModelEventualEquality
 public import FLT.Mazur.CommonRelationIntegerModel
+public import FLT.Mazur.CommutativeIntegerModelPullbackDescent
 public import FLT.Mazur.ConstantCyclicGenerator
 public import FLT.Mazur.ConstantCyclicGroup
 public import FLT.Mazur.ConstantCyclicInclusion
@@ -2651,8 +2656,10 @@ public import FLT.Mazur.ExactSourceDenominatorLift
 public import FLT.Mazur.FCurveContracts
 public import FLT.Mazur.FaithfullyFlatFinitePresentation
 public import FLT.Mazur.FamilyTransport
+public import FLT.Mazur.FiniteAffineAtlasDiagramDescent
 public import FLT.Mazur.FiniteAffineCoverDimension
 public import FLT.Mazur.FiniteAffineCoverFiniteness
+public import FLT.Mazur.FiniteAffineIntersectionDiagram
 public import FLT.Mazur.FiniteAffineLineCover
 public import FLT.Mazur.FiniteArrowIntegerModel
 public import FLT.Mazur.FiniteCechCyclesScalars
@@ -2662,6 +2669,7 @@ public import FLT.Mazur.FiniteDiagramCoverModel
 public import FLT.Mazur.FiniteDiagramIntegerModel
 public import FLT.Mazur.FiniteDivisorCohomology
 public import FLT.Mazur.FiniteDivisorComponentAvoidance
+public import FLT.Mazur.FiniteIntegerModelPullbacks
 public import FLT.Mazur.FiniteIntegerModelRelations
 public import FLT.Mazur.FiniteLocalizedIntegerComparisons
 public import FLT.Mazur.FiniteOpenImmersionIntegerDescent
@@ -2773,6 +2781,7 @@ public import FLT.Mazur.IdealTwistTransitionExact
 public import FLT.Mazur.IdealWitnessSupportInduction
 public import FLT.Mazur.IncreasingCechComplex
 public import FLT.Mazur.InjectiveHorseshoe
+public import FLT.Mazur.IntegerModelAtlasDiagram
 public import FLT.Mazur.IntegerModelBaseChange
 public import FLT.Mazur.IntegerModelCoverDescent
 public import FLT.Mazur.IntegerModelDiagramTransport
@@ -2785,8 +2794,10 @@ public import FLT.Mazur.IntegerModelIsomorphismDescent
 public import FLT.Mazur.IntegerModelOpenImmersionBaseChange
 public import FLT.Mazur.IntegerModelOpenImmersionDescent
 public import FLT.Mazur.IntegerModelOpenImmersionRefinement
+public import FLT.Mazur.IntegerModelPullbackDescent
 public import FLT.Mazur.IntegerModelPullbackTransport
 public import FLT.Mazur.IntegerModelRelationDescent
+public import FLT.Mazur.IntegerModelSquareComparison
 public import FLT.Mazur.IntegerModelTransition
 public import FLT.Mazur.IntegralBase
 public import FLT.Mazur.IntegralClosedSupport
@@ -3303,6 +3314,8 @@ public import FLT.Mazur.RingEqualizerLocalization
 public import FLT.Mazur.ScalarCohomology
 public import FLT.Mazur.ScalarCompatibleIntegerModel
 public import FLT.Mazur.ScalarExtensionDirectSum
+public import FLT.Mazur.ScalarExtensionIsomorphismDescent
+public import FLT.Mazur.ScalarExtensionPullbackDescent
 public import FLT.Mazur.SchematicDescentGluing
 public import FLT.Mazur.SchemeCohomologyIso
 public import FLT.Mazur.SchemeCohomologyIsoCocycles
