@@ -1,5 +1,118 @@
 # Mazur track D: extension and local arithmetic
 
+
+## D-W29: concrete integral charts and subgroup coordinate maps
+
+Eight new leaves implement the first geometric constructions from W28:
+
+| Leaf | Module | Lines/cap | Output |
+| --- | --- | --- | --- |
+| Chart algebra | `WeierstrassIntegralChart` | 97/240 | Cubic quotient, universal coordinates, evaluation. |
+| Integral cover | `EllipticIntegralChartCover` | 82/240 | Every primitive generic point has Y or Z a unit; integral normalization. |
+| Point comparison | `EllipticIntegralChartEvaluation` | 91/240 | Generic and residue evaluations; equality with actual projective reduction. |
+| Ambient overlap | `WeierstrassChartOverlap` | 118/240 | Explicit inverse algebra maps between the localized standard charts. |
+| Subgroup closure | `EllipticSubgroupChartClosure` | 90/240 | Actual subgroup coordinate map, kernel quotient, torsion-freeness and DVR flatness. |
+| Finite interpolation | `FinitePointAlgebraInterpolation` | 67/240 | A separating map to a finite function algebra is surjective. |
+| Generic comparison | `EllipticSubgroupChartGeneric` | 74/240 | Closure generic-fiber equivalence and generic rank by chart point count. |
+| Transported subgroup | `EllipticExtensionChartClosure` | 75/240 | Instantiate at `ellipticExtensionPointHom`; projective subgroup order p. |
+
+Checked 2026-10-05 12:55 UTC: all eight module builds and individual linters
+passed, as did the foreground root build (13,284 jobs) after merging main
+`766bc1ba`. All 60 audited declarations use only propext, Classical.choice and
+Quot.sound; the largest module probe used 1,593,152 KiB RSS. The final theorem
+still depends on Mazur_statement and sorryAx (see `global-axioms.log`).
+Validation is recorded in the untracked `Scratch/MazurDW29/` receipts; run
+`python3 Scratch/MazurDW29/check.py` to recheck caps, module build/lint logs,
+axiom sets, root build and the merged-main relation. The final W29 handoff
+records the timestamp and commits. These constructions do not complete S2b.
+
+The next leaf is compatibility of the **closure ideals** under the already
+constructed ambient overlap equivalences. This needs restriction to the
+subgroup points lying in both generic charts, followed by localization of
+both kernel quotients. Glue those closures and prove global finiteness.
+The two standard affine chart closures must not simply be assumed finite:
+a generic point can belong to a chart while its specialization leaves that
+chart, so the normalized generic coordinate may have a denominator. W29's
+flatness and generic comparison deliberately require no such integrality.
+
+After gluing and finiteness, construct integral group operations on the good
+model and the relevant smooth multiplicative model, prove preservation of
+the subgroup closure, and finish the Hopf and special-fiber group comparisons.
+The proved chart evaluation comparison supplies the pointwise reduction part,
+but does not prove these group-scheme comparisons. Apply rigidity only after
+those obligations. C2/C3/Cp, A2 and final axiom removal remain downstream.
+
+## D-W28: integral closure construction (historical ordered split)
+
+The four steps below are proof obligations, not hypotheses to add to a model
+record. Each Lean leaf has cap 240 lines. Good and multiplicative reduction
+must both be covered; the admitted general good-reduction flatness theorem
+is excluded.
+
+1. **Affine closure algebra.** For an integral chart algebra A and its map
+   f into the generic finite etale subgroup algebra B, use A / ker(f),
+   identify it with the image, and prove torsion-freeness and flatness over
+   the DVR. Recover the generic algebra when the generic chart map is onto.
+   This step does not require A itself to be finite or a Hopf algebra.
+2. **Finiteness and rank.** Prove integrality of the chart generators using
+   the actual torsion-point bounds, then finite generation plus integrality
+   gives a finite module. Recover rank p from the generic comparison.
+   Good reduction needs charts including the identity: affine x,y have
+   poles there. Multiplicative reduction additionally needs the Tate/node
+   chart and a proof that the chosen charts cover the subgroup closure.
+3. **Hopf operations.** Prove that product closures embed into the generic
+   product using flatness over the DVR. Restrict the integral ambient group
+   law to the closure, then descend comultiplication, counit and antipode.
+   Product flatness alone does not extend a rational group law across a
+   node: the Weierstrass smooth locus or a suitable group model is needed.
+4. **Specialization.** Prove the chart evaluation maps commute with residue
+   reduction and agree with actual elliptic point reduction. Glue the chart
+   comparisons, then apply finite-flat rigidity with the S2a ramification
+   bound. Continue S2b, C2/C3/Cp, A2 and the final axiom removal in that order.
+
+The original first leaf was the affine quotient/image construction. W29 above
+now supplies normalized integral point charts and ambient overlap maps; closure
+ideal gluing and global finiteness remain. F3 is not assumed to imply integrality
+of every coordinate on the full standard generic chart.
+
+### W28 algebraic progress and geometric boundary
+
+`AffineGenericClosure` (103/240 lines) proves the quotient/image description,
+torsion-freeness, Dedekind flatness and generic comparison without an ambient
+finite-flat or Hopf hypothesis. `AffineClosureFiniteness` (61/240 lines) proves
+finiteness from integral images of finitely many algebra generators, then
+identifies the rank with the generic dimension over a PID. Both are in commit
+`982e3da6`; these are algebraic lemmas, not an elliptic torsion model.
+
+Checked 2026-10-05 12:18 UTC: individual builds and individual module linters
+pass; all eleven new theorem/map declarations use only propext,
+Classical.choice and Quot.sound. Re-run the two module builds, their individual
+`lake exe runLinter MODULE` commands, and `lake env lean
+Scratch/MazurDW28/Axioms.lean`; receipts are in `Scratch/MazurDW28/`.
+
+The first unproved geometric obligation is to instantiate the coordinate map
+for the actual subgroup and cover its integral closure with compatible affine
+charts. Primitive integral projective representatives already exist in
+`EllipticProjectiveReduction`; they do not give a single affine coordinate
+algebra for the whole subgroup, which includes the point at infinity.
+
+The strongest F3 kernel theorem in `EllipticUnramifiedTorsion` assumes that the
+maximal ideal is generated by the annihilator. `EllipticLocalValuation` only
+excludes nonzero torsion with parameter deeper than that annihilator. Neither
+statement supplies the requested ramified chart construction from S2a.
+
+There is also a separate multiplicative-reduction obligation. The full nodal
+Weierstrass cubic is not a group scheme; the actual reduction homomorphism in
+`EllipticReductionKernel` has domain E0, the smooth-reduction subgroup.
+Consequently product flatness cannot by itself induce Hopf operations on an
+arbitrary closure in the nodal cubic. Prove that this particular subgroup
+stays in the smooth group model, or construct a suitable group model and
+compare its point reduction. This is not a field to assume in a new record.
+The good-reduction branch likewise still needs the concrete chart gluing,
+integral group operations and point-reduction comparison.
+
+S2b and the downstream C2/C3/Cp, A2 and axiom-removal tasks remain open.
+
 ## D-W13: nodal label descent and a component bound
 
 C1.5a.x.10 now has proofs of label addition for E₀ translations, equal-depth
