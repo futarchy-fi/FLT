@@ -3297,6 +3297,8 @@ public import FLT.Mazur.HomIntegerModel
 public import FLT.Mazur.HomogeneousLocalizationBaseChange
 public import FLT.Mazur.HomogeneousLocalizationGenerator
 public import FLT.Mazur.HomogeneousLocalizationScalars
+public import FLT.Mazur.IdealAdicAffineGeneration
+public import FLT.Mazur.IdealAdicAffineProjection
 public import FLT.Mazur.IdealAdicBaseGradedGenerators
 public import FLT.Mazur.IdealAdicBasePowerGenerators
 public import FLT.Mazur.IdealAdicClosedCoefficientCharts
@@ -3327,10 +3329,15 @@ public import FLT.Mazur.IdealAdicLineTower
 public import FLT.Mazur.IdealAdicQuotient
 public import FLT.Mazur.IdealAdicRelativeAffineSheaf
 public import FLT.Mazur.IdealAdicRelativeClosedModule
+public import FLT.Mazur.IdealAdicRelativeFinitePresentation
 public import FLT.Mazur.IdealAdicRelativeGradedAlgebra
+public import FLT.Mazur.IdealAdicRelativeNoetherian
 public import FLT.Mazur.IdealAdicRelativePresheaf
 public import FLT.Mazur.IdealAdicRelativeQuasiCoherent
 public import FLT.Mazur.IdealAdicRelativeRestriction
+public import FLT.Mazur.IdealAdicRelativeScheme
+public import FLT.Mazur.IdealAdicRelativeSchemeCharts
+public import FLT.Mazur.IdealAdicRelativeSchemeCover
 public import FLT.Mazur.IdealAdicRelativeSheaf
 public import FLT.Mazur.IdealAdicRelativeSheafCharts
 public import FLT.Mazur.IdealAdicRelativeSheafFinite
