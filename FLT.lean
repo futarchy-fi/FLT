@@ -2534,6 +2534,7 @@ public import FLT.Mazur.AffineDirectTripleTransport
 public import FLT.Mazur.AffineFaithfullyFlatEpimorphisms
 public import FLT.Mazur.AffineFaithfullyFlatPullbackFaithful
 public import FLT.Mazur.AffineFiberProductCocycle
+public import FLT.Mazur.AffineFiberProductCocycleChart
 public import FLT.Mazur.AffineFiberProductDiagonal
 public import FLT.Mazur.AffineFiberProductOverlap
 public import FLT.Mazur.AffineFiberProductPairTransport
