@@ -3215,6 +3215,9 @@ public import FLT.Mazur.NodePinchingExistence
 public import FLT.Mazur.NodePuncturedDenominatorRestriction
 public import FLT.Mazur.NodeQuotient
 public import FLT.Mazur.NodeSmoothLocus
+public import FLT.Mazur.NodeTangentAlgebra
+public import FLT.Mazur.NodeTangentExtension
+public import FLT.Mazur.NodeTangentShear
 public import FLT.Mazur.OneGonAffineCover
 public import FLT.Mazur.OneGonAffineNormalization
 public import FLT.Mazur.OneGonAffineNormalizationCoordinates
