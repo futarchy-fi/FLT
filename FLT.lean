@@ -2521,11 +2521,17 @@ public import FLT.Mazur.AffineCoverCohomology
 public import FLT.Mazur.AffineCoverIntersections
 public import FLT.Mazur.AffineDirectTripleAdditivity
 public import FLT.Mazur.AffineDirectTripleBalance
+public import FLT.Mazur.AffineDirectTripleCoefficients
 public import FLT.Mazur.AffineDirectTripleEvaluation
+public import FLT.Mazur.AffineDirectTripleMiddleBalance
+public import FLT.Mazur.AffineDirectTriplePureTransport
 public import FLT.Mazur.AffineDirectTripleSections
+public import FLT.Mazur.AffineDirectTripleTransport
 public import FLT.Mazur.AffineFaithfullyFlatEpimorphisms
 public import FLT.Mazur.AffineFpqcRefinement
 public import FLT.Mazur.AffineGeometricOverlap
+public import FLT.Mazur.AffineGeometricTensorCocycle
+public import FLT.Mazur.AffineGeometricTensorDatum
 public import FLT.Mazur.AffineIdealPowerExtension
 public import FLT.Mazur.AffineImageSectionTransport
 public import FLT.Mazur.AffineIntegerModel
@@ -2574,6 +2580,8 @@ public import FLT.Mazur.AffinePushforwardCohomology
 public import FLT.Mazur.AffinePushforwardQuasicoherent
 public import FLT.Mazur.AffineQuasiCoherentBaseChange
 public import FLT.Mazur.AffineRestrictionImmersion
+public import FLT.Mazur.AffineScaledPullbackSections
+public import FLT.Mazur.AffineScaledTripleTransport
 public import FLT.Mazur.AffineSquareEquivalences
 public import FLT.Mazur.AffineSquareScalarExtension
 public import FLT.Mazur.AffineSquareTensorComparison
@@ -2583,6 +2591,9 @@ public import FLT.Mazur.AffineTensorCoalgebraComparison
 public import FLT.Mazur.AffineTensorCocycle
 public import FLT.Mazur.AffineTensorCocycleTransport
 public import FLT.Mazur.AffineTensorDescentMorphisms
+public import FLT.Mazur.AffineTensorTransportAdditivity
+public import FLT.Mazur.AffineTripleCoefficientExtensionality
+public import FLT.Mazur.AffineTripleCoefficientMaps
 public import FLT.Mazur.AffineTripleOverlapCoefficients
 public import FLT.Mazur.AffineTripleOverlapEvaluation
 public import FLT.Mazur.AffineTripleOverlapMaps
@@ -2824,6 +2835,7 @@ public import FLT.Mazur.DivisorStalkLength
 public import FLT.Mazur.DivisorTensorSequence
 public import FLT.Mazur.DivisorTwistedDegree
 public import FLT.Mazur.DivisorTwistedSequence
+public import FLT.Mazur.DoubleRootComponentBound
 public import FLT.Mazur.EllipticAdditiveDepthRefinement
 public import FLT.Mazur.EllipticAdditiveFirstBranches
 public import FLT.Mazur.EllipticAdditiveLaterBranches
@@ -2833,6 +2845,14 @@ public import FLT.Mazur.EllipticComponentBaseChange
 public import FLT.Mazur.EllipticComponentQuotient
 public import FLT.Mazur.EllipticComponentVariableChange
 public import FLT.Mazur.EllipticCuspTangent
+public import FLT.Mazur.EllipticDoubleRootCoordinates
+public import FLT.Mazur.EllipticDoubleRootEvenBound
+public import FLT.Mazur.EllipticDoubleRootEvenComparison
+public import FLT.Mazur.EllipticDoubleRootEvenCoordinates
+public import FLT.Mazur.EllipticDoubleRootEvenSlope
+public import FLT.Mazur.EllipticDoubleRootIteration
+public import FLT.Mazur.EllipticDoubleRootOddBound
+public import FLT.Mazur.EllipticDoubleRootSeparable
 public import FLT.Mazur.EllipticFormalAddition
 public import FLT.Mazur.EllipticFormalAdditionComparison
 public import FLT.Mazur.EllipticFormalAssociativity
@@ -2875,6 +2895,8 @@ public import FLT.Mazur.EllipticLocalEvaluation
 public import FLT.Mazur.EllipticLocalIntegerMultiplication
 public import FLT.Mazur.EllipticLocalMultiplication
 public import FLT.Mazur.EllipticLocalValuation
+public import FLT.Mazur.EllipticMinimalAdditiveComponents
+public import FLT.Mazur.EllipticMinimalDiscriminant
 public import FLT.Mazur.EllipticNodeAdditionCoordinates
 public import FLT.Mazur.EllipticNodeAdditionProduct
 public import FLT.Mazur.EllipticNodeBranchInverse
@@ -2931,6 +2953,8 @@ public import FLT.Mazur.EllipticNodeTripleDepth
 public import FLT.Mazur.EllipticNodeUnequalDepthAddition
 public import FLT.Mazur.EllipticNodeUniformizerLabel
 public import FLT.Mazur.EllipticNonsplitNodeBound
+public import FLT.Mazur.EllipticNormalizedDoubleRoot
+public import FLT.Mazur.EllipticNormalizedMinimalAdditive
 public import FLT.Mazur.EllipticNormalizedSingularity
 public import FLT.Mazur.EllipticNormalizedStarZero
 public import FLT.Mazur.EllipticNormalizedTypeII
@@ -2964,6 +2988,7 @@ public import FLT.Mazur.EllipticSingularVariableChange
 public import FLT.Mazur.EllipticSmoothReduction
 public import FLT.Mazur.EllipticSmoothReductionAddition
 public import FLT.Mazur.EllipticSplitDepthModel
+public import FLT.Mazur.EllipticSplitNodeComponents
 public import FLT.Mazur.EllipticSplitOrderOne
 public import FLT.Mazur.EllipticStarDeepCoordinates
 public import FLT.Mazur.EllipticStarTranslationDepth
@@ -3707,6 +3732,7 @@ public import FLT.Mazur.ProperStalkExtension
 public import FLT.Mazur.PuncturedNodeRestrictionComparison
 public import FLT.Mazur.PushforwardCech
 public import FLT.Mazur.PushoutModuleScalars
+public import FLT.Mazur.QuadraticComponentBound
 public import FLT.Mazur.RationalFibers
 public import FLT.Mazur.RefinedChartSpectrum
 public import FLT.Mazur.RelativeAmpleAffineBaseChange
