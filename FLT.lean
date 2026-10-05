@@ -2552,6 +2552,7 @@ public import FLT.Mazur.AffineGeometricMapComparison
 public import FLT.Mazur.AffineGeometricOverlap
 public import FLT.Mazur.AffineGeometricOverlapRefinement
 public import FLT.Mazur.AffineGeometricOverlapRefinementDiagonal
+public import FLT.Mazur.AffineGeometricReconstructionCompatibility
 public import FLT.Mazur.AffineGeometricRefinementData
 public import FLT.Mazur.AffineGeometricTensorCocycle
 public import FLT.Mazur.AffineGeometricTensorDatum
