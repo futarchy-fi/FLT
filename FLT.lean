@@ -3331,6 +3331,7 @@ public import FLT.Mazur.IdealAdicRelativePresheaf
 public import FLT.Mazur.IdealAdicRelativeQuasiCoherent
 public import FLT.Mazur.IdealAdicRelativeRestriction
 public import FLT.Mazur.IdealAdicRelativeScheme
+public import FLT.Mazur.IdealAdicRelativeSchemeCharts
 public import FLT.Mazur.IdealAdicRelativeSheaf
 public import FLT.Mazur.IdealAdicRelativeSheafCharts
 public import FLT.Mazur.IdealAdicRelativeSheafFinite
