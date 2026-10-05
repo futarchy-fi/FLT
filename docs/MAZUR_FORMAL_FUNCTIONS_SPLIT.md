@@ -103,3 +103,36 @@ FLT.Mazur.MODULE`; lint only that module with `lake exe runLinter
 FLT.Mazur.MODULE`. Audit every new declaration with `#print axioms` against
 `propext`, `Classical.choice`, `Quot.sound`. W96's untracked handoff records
 which leaves were actually completed and their validation receipts.
+
+## W97: base thickenings and compatible line quotients
+
+The line-coefficient part of F2a3 is now constructed, including the actual
+restriction maps. `BaseAdicThickening` extends an ideal J of R to X and
+identifies its powers on every affine chart. `BaseAdicQuotientSpectrum`
+identifies the resulting closed subscheme with
+X × Spec(R / J^n), compatibly with the immersion into X. Specializing J
+to `IsLocalRing.maximalIdeal R` gives the required local-base thickenings.
+These statements do not assume flatness of the residue-field map.
+
+`IdealAdicLineQuotient.lineQuotientClosedIso` identifies L / I^n L with
+the closed pushforward of the actual pullback of L. Its projection is
+proved to be the pullback adjunction unit. This comparison holds for any
+scheme and line sheaf; it does not require Noetherianity.
+`IdealAdicLineTower` compares every reduction and the inverse systems in
+the locally Noetherian coherent setting used by the existing tower. It
+also compares quotients of L^d with powers of its closed restriction,
+including d = 0, and retains the unit compatibility.
+
+This completes the geometric comparison for the line powers in the
+stated H0-lifting target. A corresponding theorem for an arbitrary
+coherent coefficient M is not claimed by these modules.
+
+The next unresolved input is F2b: one Serre bound simultaneously valid
+for every associated-graded degree. The existing
+`AmpleLineBundle.coherent_vanishing` supplies a bound for one coherent
+coefficient at a time, and `graded_idealKilled` supplies annihilation of
+each graded piece. Neither supplies the finite-type graded sheaf and
+uniform Serre argument of Stacks 30.19.3. The algebraic Rees-algebra API
+in Mathlib is not a sheaf-cohomology theorem. No arbitrary maximum over
+the infinitely many degree-wise bounds is taken here. F3a-F3c, L2 and
+removal of `Mazur_statement` remain open.
