@@ -2596,6 +2596,7 @@ public import FLT.Mazur.AffinePullbackEpiReflection
 public import FLT.Mazur.AffinePullbackHomExt
 public import FLT.Mazur.AffinePullbackIdeal
 public import FLT.Mazur.AffinePullbackIntersection
+public import FLT.Mazur.AffinePullbackNormalization
 public import FLT.Mazur.AffinePushforwardCohomology
 public import FLT.Mazur.AffinePushforwardQuasicoherent
 public import FLT.Mazur.AffineQuasiCoherentBaseChange
