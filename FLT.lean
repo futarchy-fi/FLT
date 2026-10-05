@@ -2595,6 +2595,7 @@ public import FLT.Mazur.EllipticFormalSecant
 public import FLT.Mazur.EllipticFormalSecantComparison
 public import FLT.Mazur.EllipticFormalSubstitution
 public import FLT.Mazur.EllipticFormalSymmetry
+public import FLT.Mazur.EllipticInfinityEvaluation
 public import FLT.Mazur.EllipticInfinityParameter
 public import FLT.Mazur.EllipticInfinityPowerSeries
 public import FLT.Mazur.EllipticProjectiveReduction

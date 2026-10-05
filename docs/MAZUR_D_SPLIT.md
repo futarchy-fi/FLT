@@ -332,3 +332,37 @@ foreground `LEAN_NUM_THREADS=2 lake build FLT` passed all 12,563 jobs, including
 FLT and FermatsLastTheorem, with no declaration clashes (`root-build.log`).
 The final theorem audit still lists Mazur_statement and sorryAx, checked by
 `lake env lean Scratch/MazurDW4/GlobalAxioms.lean` (`global-axioms.log`).
+
+
+### D-W5 associativity and evaluation subdivision
+
+Each new module retains the 240-line cap. These leaves extend A1-F2b.v,
+then begin multiplication and convergent evaluation in the original order.
+
+| Item | Module | Output |
+| --- | --- | --- |
+| A1-F2b.v.1 | EllipticFormalBaseChange | Naturality of all formal operations under coefficient-ring homomorphisms. |
+| A1-F2b.v.2 | EllipticFormalProjective | Unit Z-partial derivative, actual projective chart points, and parameter injectivity. |
+| A1-F2b.v.3 | EllipticFormalSecantComparison | Polynomial comparison with Mathlib's projective secant formula. |
+| A1-F2b.v.4 | EllipticFormalAdditionComparison | Explicit scale relating projective addition to the normalized formal sum. |
+| A1-F2b.v.5 | EllipticFormalFieldPoint | Injective field-valued points and addition comparison at distinct formal parameters. |
+| A1-F2b.v.6 | EllipticFormalGenericParameters | Nondegeneracy of the four secants needed for generic associativity. |
+| A1-F2b.v.7 | EllipticFormalAssociativity | Associativity over domains via their series fraction fields. |
+| A1-F2b.v.8 | EllipticFormalGroupLaw | Universal coefficient specialization, associativity over every commutative ring, and a commutative FormalGroup. |
+| A1-F2b.vi / F2c.i | EllipticFormalFirstOrder | Cubic coordinate divisibility and linear terms of all operations. |
+| A1-F2b.vii | EllipticFormalInverse | Actual negation comparison and both formal inverse identities. |
+| A1-F2c.ii | EllipticFormalMultiplication | Natural multiplication, scalar addition/composition, substitution/base change, and linear coefficient n with quadratic remainder. |
+| A1-F2d.i | EllipticInfinityEvaluation | Convergent coordinate evaluation on complete valuation rings and reconstruction of actual E₁ representatives. |
+
+The generic associativity proof uses four secants with distinct endpoints in
+three independent variables. No tangent comparison is assumed: the resulting
+three-variable identity specializes to arbitrary zero-constant parameters.
+The inverse identity is first proved over the universal characteristic-zero
+domain, then specialized and substituted; it holds also in characteristic two.
+
+F2d.i reconstructs coordinates, not an additive equivalence with E₁. Still needed:
+multivariate evaluation of the addition series, its comparison with actual
+point addition (including coincident evaluated parameters), and the resulting
+multiplication compatibility. F2c supplies natural scalars and the quadratic
+remainder; stronger residue-characteristic coefficient divisibility, valuation
+bounds F3, and the Néron/component and semistability leaves remain open.
