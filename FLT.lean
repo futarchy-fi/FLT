@@ -3818,6 +3818,7 @@ public import FLT.Mazur.SchemeCohomologyIsoCocycles
 public import FLT.Mazur.SchemeCoproductCohomology
 public import FLT.Mazur.SchemeCoproductSections
 public import FLT.Mazur.SchemeModulePullbackUnits
+public import FLT.Mazur.SchemeOverlapDiagonalChart
 public import FLT.Mazur.SchemeOverlapRefinement
 public import FLT.Mazur.SchemeOverlapRefinementCoherence
 public import FLT.Mazur.SchemePicardClasses
