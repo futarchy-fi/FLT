@@ -3249,6 +3249,7 @@ public import FLT.Mazur.HomogeneousLocalizationScalars
 public import FLT.Mazur.IdealAdicBaseGradedGenerators
 public import FLT.Mazur.IdealAdicBasePowerGenerators
 public import FLT.Mazur.IdealAdicClosedGradedModule
+public import FLT.Mazur.IdealAdicClosedGradedRestriction
 public import FLT.Mazur.IdealAdicClosedScalar
 public import FLT.Mazur.IdealAdicCohomology
 public import FLT.Mazur.IdealAdicGradedAssociativity
