@@ -32,10 +32,7 @@ variable (w : φ ≫ b = a ≫ ψ) (v : ψ ≫ d = c ≫ χ)
 variable (hφ : φ.hom.FaithfullyFlat) (hψ : ψ.hom.FaithfullyFlat)
 variable (hχ : χ.hom.FaithfullyFlat)
 variable {M : (Spec S).Modules} [M.IsQuasicoherent] (D : Data φ M)
-local instance isQuasicoherent_secondCompositionPullback {T U : CommRingCat.{u}} (f : T ⟶ U)
-    (P : (Spec T).Modules) [P.IsQuasicoherent] :
-    ((pullback (Spec.map f)).obj P).IsQuasicoherent :=
-  AffineModulePullbackSections.isQuasicoherent_pullback f P
+attribute [local instance] isQuasicoherent_twiceReconstructionPullback
 
 /-- The second comparison followed by the descended cover chart reconstructs the cover chart. -/
 theorem effectiveComparisonIso_second_reconstruction :
