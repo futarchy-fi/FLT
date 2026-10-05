@@ -366,3 +366,25 @@ point addition (including coincident evaluated parameters), and the resulting
 multiplication compatibility. F2c supplies natural scalars and the quadratic
 remainder; stronger residue-characteristic coefficient divisibility, valuation
 bounds F3, and the Néron/component and semistability leaves remain open.
+
+### Checked validation (2026-10-05 00:29 UTC)
+
+- All twelve new modules built in foreground `LEAN_NUM_THREADS=2 lake build MODULE`
+  runs and passed individual `lake exe runLinter MODULE` runs. Logs:
+  `Scratch/MazurDW5/*-build.log` and `*-lint.log`.
+- All 61 new theorem declarations, plus `formalGroup` and its commutativity
+  instance, were axiom-audited: only propext, Classical.choice and Quot.sound.
+  Re-run `LEAN_NUM_THREADS=2 lake env lean Scratch/MazurDW5/Axioms.lean`;
+  evidence: `Scratch/MazurDW5/axioms.log` (63 checks).
+- Modules are 43–120 lines, each below 240. No sorry/axiom/admit declarations.
+  `git diff --check` passes; FLT.lean imports are sorted and unique. All task
+  Lean changes are new modules plus root imports; the upstream merge also
+  brings its own unrelated modules.
+- Merged origin/main at `5d03b585` in `c62e5dd4`. The required foreground
+  `LEAN_NUM_THREADS=2 lake build FLT` passed all 12,612 jobs, including FLT
+  and FermatsLastTheorem, with no declaration clashes. Evidence:
+  `Scratch/MazurDW5/root-build.log`.
+- Global audit still lists Mazur_statement and sorryAx alongside the standard
+  three axioms. Re-run `lake env lean Scratch/MazurDW5/GlobalAxioms.lean`;
+  evidence: `Scratch/MazurDW5/global-axioms.log`.
+- No push, whole-library lint, fleet request, or G1/G2 work was performed.
