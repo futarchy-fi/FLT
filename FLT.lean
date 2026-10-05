@@ -4116,12 +4116,17 @@ public import FLT.Mazur.ValuationProjectiveNormalization
 public import FLT.Mazur.ValuationRingModel
 public import FLT.Mazur.VeryAmpleAffineSections
 public import FLT.Mazur.VeryAmplePresentationBaseChange
+public import FLT.Mazur.WeierstrassAdditionAffineCoverage
 public import FLT.Mazur.WeierstrassAdditionChartCompatibility
 public import FLT.Mazur.WeierstrassAffineProduct
 public import FLT.Mazur.WeierstrassChartOverlap
 public import FLT.Mazur.WeierstrassIntegralAdditionCharts
 public import FLT.Mazur.WeierstrassIntegralAdditionFormula
 public import FLT.Mazur.WeierstrassIntegralChart
+public import FLT.Mazur.WeierstrassReciprocalAdditionChart
+public import FLT.Mazur.WeierstrassReciprocalAdditionCompatibility
+public import FLT.Mazur.WeierstrassReciprocalAdditionFormula
+public import FLT.Mazur.WeierstrassVerticalAdditionCharts
 public import FLT.MazurChapter.AdmissibleGroupSchemes
 public import FLT.MazurW
 public import FLT.MazurWOfPrimeTorsion
