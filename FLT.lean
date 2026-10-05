@@ -3982,6 +3982,7 @@ public import FLT.Mazur.SchemeOverlapProjectionComposition
 public import FLT.Mazur.SchemeOverlapRefinement
 public import FLT.Mazur.SchemeOverlapRefinementCocycle
 public import FLT.Mazur.SchemeOverlapRefinementCoherence
+public import FLT.Mazur.SchemeOverlapRefinementComposition
 public import FLT.Mazur.SchemeOverlapRefinementDiagonal
 public import FLT.Mazur.SchemeOverlapRefinementTripleCocycle
 public import FLT.Mazur.SchemeOverlapTransportComposition
