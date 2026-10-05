@@ -3984,6 +3984,7 @@ public import FLT.Mazur.SchemeAffineChartRefinementCategory
 public import FLT.Mazur.SchemeAffineChartRefinementIdentity
 public import FLT.Mazur.SchemeAffineChartRefinementNaturality
 public import FLT.Mazur.SchemeAffineCommonRefinement
+public import FLT.Mazur.SchemeAffineCommonRefinementCompatibility
 public import FLT.Mazur.SchemeAffineDescentChart
 public import FLT.Mazur.SchemeAffineRefinementCompatibility
 public import FLT.Mazur.SchemeBaseChangeLimit
