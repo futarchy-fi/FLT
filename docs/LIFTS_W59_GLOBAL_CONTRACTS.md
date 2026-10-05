@@ -41,6 +41,17 @@ rings; p-adic module finiteness is still missing. The generic theorem
 Noetherianity of a framed target would not imply Noetherianity of its subring.
 Check the saved W64 evidence with `python3 Scratch/LiftsW64/check.py`.
 
+W70 descends the specified quotient itself to the trace image. The actual
+Frobenius value at two gives a unit residual eigenvalue gap; the strict
+recovery frame then determines a normalized quotient row over the smaller
+ring. `HardlyRamifiedTraceTwoQuotient` preserves its original residual row
+under every coefficient specialization, including prime quotients.
+`HardlyRamifiedTraceConditions` constructs the continuous unramified
+quadratic quotient action and proves the complete HR predicate, with the
+p-adic scalar tower explicitly matched. Recheck with
+`python3 Scratch/LiftsW70/check.py`. This does not supply D3/D4 or the KW
+local-ring comparison.
+
 `DeSmitLenstra/FramedCompletion` proves Noetherianity with a **finite group**
 parameter. `ProfiniteUniversalLift` constructs a limit over finite quotients;
 Noetherianity does not follow by taking this limit. W67/W68 instead supply
@@ -175,8 +186,8 @@ quotient and coefficient maps.
    prime quotients with the original residue field and representation.
    Given D3 finiteness and a prime avoiding p, they are finite free
    characteristic-zero domains with the original quotient/module topology.
-   D3/D4, the selected-local comparison, descent of the quotient at two,
-   and exact tensor-conjugacy assembly remain. These conditional order
+   W70 supplies the quotient at two and all four HR conditions. D3/D4,
+   the selected-local comparison and exact tensor-conjugacy assembly remain. These conditional order
    theorems do not supply the missing arithmetic inputs or close I0.
 
 These unresolved inputs are mathematical gaps, not a request for permission.
