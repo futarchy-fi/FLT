@@ -69,7 +69,8 @@ theorem fromFiberProduct_injective : Function.Injective (fromFiberProduct R S M)
   change (firstProjectionIso R S M).inv ≫ _ ≫ (secondProjectionIso R S M).hom =
     (firstProjectionIso R S M).inv ≫ _ ≫ (secondProjectionIso R S M).hom at hh
   exact (cancel_mono (secondProjectionIso R S M).hom).mp
-    ((cancel_epi (firstProjectionIso R S M).inv).mp (by simpa only [Category.assoc, Functor.mapIso_hom] using hh))
+    ((cancel_epi (firstProjectionIso R S M).inv).mp
+      (by simpa only [Category.assoc, Functor.mapIso_hom] using hh))
 
 /-- Reconstruction after normalization returns the original categorical overlap. -/
 theorem toFiberProduct_fromFiberProduct (e : FiberProductOverlap R S M) :
