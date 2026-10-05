@@ -4113,6 +4113,7 @@ public import FLT.Mazur.WeierstrassCubicPolarization
 public import FLT.Mazur.WeierstrassInfinityAdditionChart
 public import FLT.Mazur.WeierstrassInfinityAdditionFormula
 public import FLT.Mazur.WeierstrassInfinityAdditionSlope
+public import FLT.Mazur.WeierstrassInfinityPairSection
 public import FLT.Mazur.WeierstrassIntegralAdditionCharts
 public import FLT.Mazur.WeierstrassIntegralAdditionFormula
 public import FLT.Mazur.WeierstrassIntegralChart
