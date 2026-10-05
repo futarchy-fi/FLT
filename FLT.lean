@@ -2777,6 +2777,7 @@ public import FLT.Mazur.EllipticLocalMultiplication
 public import FLT.Mazur.EllipticLocalValuation
 public import FLT.Mazur.EllipticNodeBranchInverse
 public import FLT.Mazur.EllipticNodeBranchLabel
+public import FLT.Mazur.EllipticNodeComponentBound
 public import FLT.Mazur.EllipticNodeComponentInverse
 public import FLT.Mazur.EllipticNodeComponentLabel
 public import FLT.Mazur.EllipticNodeCoordinateFactor
@@ -2785,6 +2786,9 @@ public import FLT.Mazur.EllipticNodeDepthNormalization
 public import FLT.Mazur.EllipticNodeDepthStep
 public import FLT.Mazur.EllipticNodeDiscriminantDepth
 public import FLT.Mazur.EllipticNodeEqualDepthSlope
+public import FLT.Mazur.EllipticNodeLabelDescent
+public import FLT.Mazur.EllipticNodeLabelFibers
+public import FLT.Mazur.EllipticNodeLabelSeparation
 public import FLT.Mazur.EllipticNodeMiddleAddition
 public import FLT.Mazur.EllipticNodeMiddleLabels
 public import FLT.Mazur.EllipticNodeOppositeAddition
@@ -2793,6 +2797,8 @@ public import FLT.Mazur.EllipticNodeOppositeSlope
 public import FLT.Mazur.EllipticNodePointBranches
 public import FLT.Mazur.EllipticNodePointCoordinates
 public import FLT.Mazur.EllipticNodePointDepth
+public import FLT.Mazur.EllipticNodeSameBranchAddition
+public import FLT.Mazur.EllipticNodeSameBranchSlope
 public import FLT.Mazur.EllipticNodeScaledEquation
 public import FLT.Mazur.EllipticNodeSecantReduction
 public import FLT.Mazur.EllipticNodeSecantSlope
