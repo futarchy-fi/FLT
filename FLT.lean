@@ -2501,6 +2501,7 @@ public import FLT.Mazur.AffineBaseSectionFunctor
 public import FLT.Mazur.AffineBasisFiniteCover
 public import FLT.Mazur.AffineBasisSheafExtension
 public import FLT.Mazur.AffineBranchSequence
+public import FLT.Mazur.AffineCanonicalMapCompatibility
 public import FLT.Mazur.AffineCanonicalOverlapChart
 public import FLT.Mazur.AffineCanonicalOverlapRecognition
 public import FLT.Mazur.AffineCartesianSectionScalars
@@ -2538,6 +2539,8 @@ public import FLT.Mazur.AffineDirectTriplePureTransport
 public import FLT.Mazur.AffineDirectTripleSections
 public import FLT.Mazur.AffineDirectTripleTransport
 public import FLT.Mazur.AffineEffectiveRefinementComparison
+public import FLT.Mazur.AffineEffectiveRefinementIdentity
+public import FLT.Mazur.AffineEffectiveRefinementNaturality
 public import FLT.Mazur.AffineFaithfullyFlatEpimorphisms
 public import FLT.Mazur.AffineFaithfullyFlatPullbackFaithful
 public import FLT.Mazur.AffineFiberProductCocycle
@@ -2620,6 +2623,7 @@ public import FLT.Mazur.AffineQuasiCoherentBaseChange
 public import FLT.Mazur.AffineQuasicoherentPullbackFaithful
 public import FLT.Mazur.AffineReconstructionCoefficientChart
 public import FLT.Mazur.AffineRefinementCoactionCompatibility
+public import FLT.Mazur.AffineRefinementIdentity
 public import FLT.Mazur.AffineRefinementPullback
 public import FLT.Mazur.AffineRestrictionImmersion
 public import FLT.Mazur.AffineReverseGeometricOverlap
@@ -2914,6 +2918,7 @@ public import FLT.Mazur.EllipticDoubleRootIteration
 public import FLT.Mazur.EllipticDoubleRootOddBound
 public import FLT.Mazur.EllipticDoubleRootSeparable
 public import FLT.Mazur.EllipticExtensionChartClosure
+public import FLT.Mazur.EllipticExtensionClosureQuasiFinite
 public import FLT.Mazur.EllipticExtensionPrimeSubgroup
 public import FLT.Mazur.EllipticFormalAddition
 public import FLT.Mazur.EllipticFormalAdditionComparison
@@ -3088,11 +3093,17 @@ public import FLT.Mazur.EllipticStarZeroResidue
 public import FLT.Mazur.EllipticStarZeroSlope
 public import FLT.Mazur.EllipticSubgroupChartClosure
 public import FLT.Mazur.EllipticSubgroupChartGeneric
+public import FLT.Mazur.EllipticSubgroupClosedFiberPoints
 public import FLT.Mazur.EllipticSubgroupClosureGluing
 public import FLT.Mazur.EllipticSubgroupClosureProperties
+public import FLT.Mazur.EllipticSubgroupClosureQuasiFinite
+public import FLT.Mazur.EllipticSubgroupIntegralEvaluation
+public import FLT.Mazur.EllipticSubgroupIntegralSection
 public import FLT.Mazur.EllipticSubgroupOverlapClosure
 public import FLT.Mazur.EllipticSubgroupOverlapEvaluation
 public import FLT.Mazur.EllipticSubgroupOverlapLocalization
+public import FLT.Mazur.EllipticSubgroupPointKernels
+public import FLT.Mazur.EllipticSubgroupPointLocalization
 public import FLT.Mazur.EllipticTangentParameterHom
 public import FLT.Mazur.EllipticTripleRootBranches
 public import FLT.Mazur.EllipticTypeIIIDepth
@@ -3175,6 +3186,7 @@ public import FLT.Mazur.FiniteLineSheafModel
 public import FLT.Mazur.FiniteLocalizedIntegerComparisons
 public import FLT.Mazur.FiniteOpenImmersionIntegerDescent
 public import FLT.Mazur.FinitePointAlgebraInterpolation
+public import FLT.Mazur.FinitePointKernelCover
 public import FLT.Mazur.FinitePresentationIntegerModel
 public import FLT.Mazur.FinitePrincipalChartIntegerDescent
 public import FLT.Mazur.FinitePrincipalTargetRefinement
@@ -3926,6 +3938,7 @@ public import FLT.Mazur.ScalarExtensionIsomorphismDescent
 public import FLT.Mazur.ScalarExtensionPullbackDescent
 public import FLT.Mazur.SchematicDescentGluing
 public import FLT.Mazur.SchemeBaseChangeLimit
+public import FLT.Mazur.SchemeCanonicalMapRecognition
 public import FLT.Mazur.SchemeCanonicalOverlapNaturality
 public import FLT.Mazur.SchemeCanonicalOverlapRefinement
 public import FLT.Mazur.SchemeCohomologyIso
@@ -3948,11 +3961,15 @@ public import FLT.Mazur.SchemeOverlapTransportComposition
 public import FLT.Mazur.SchemePicardClasses
 public import FLT.Mazur.SchemePicardGroup
 public import FLT.Mazur.SchemePicardPullback
+public import FLT.Mazur.SchemePullbackIdentityCharts
 public import FLT.Mazur.SchemePullbackOverlap
 public import FLT.Mazur.SchemePullbackOverlapNormalization
 public import FLT.Mazur.SchemePullbackOverlapSquare
 public import FLT.Mazur.SchemePullbackSquare
+public import FLT.Mazur.SchemePullbackSquareComposition
+public import FLT.Mazur.SchemePullbackSquareIdentity
 public import FLT.Mazur.SchemeReconstructionOverlapSquare
+public import FLT.Mazur.SchemeRefinementReconstruction
 public import FLT.Mazur.SealedLineRestriction
 public import FLT.Mazur.SealedLineRestrictionSections
 public import FLT.Mazur.SectionBaseLocalization
