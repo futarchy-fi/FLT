@@ -3076,6 +3076,8 @@ public import FLT.Mazur.EllipticSubgroupChartClosure
 public import FLT.Mazur.EllipticSubgroupChartGeneric
 public import FLT.Mazur.EllipticSubgroupClosureGluing
 public import FLT.Mazur.EllipticSubgroupClosureProperties
+public import FLT.Mazur.EllipticSubgroupIntegralEvaluation
+public import FLT.Mazur.EllipticSubgroupIntegralSection
 public import FLT.Mazur.EllipticSubgroupOverlapClosure
 public import FLT.Mazur.EllipticSubgroupOverlapEvaluation
 public import FLT.Mazur.EllipticSubgroupOverlapLocalization
