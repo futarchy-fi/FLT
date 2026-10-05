@@ -16,6 +16,11 @@ Eight new leaves implement the first geometric constructions from W28:
 | Generic comparison | `EllipticSubgroupChartGeneric` | 74/240 | Closure generic-fiber equivalence and generic rank by chart point count. |
 | Transported subgroup | `EllipticExtensionChartClosure` | 75/240 | Instantiate at `ellipticExtensionPointHom`; projective subgroup order p. |
 
+Checked 2026-10-05 12:55 UTC: all eight module builds and individual linters
+passed, as did the foreground root build (13,284 jobs) after merging main
+`766bc1ba`. All 60 audited declarations use only propext, Classical.choice and
+Quot.sound; the largest module probe used 1,593,152 KiB RSS. The final theorem
+still depends on Mazur_statement and sorryAx (see `global-axioms.log`).
 Validation is recorded in the untracked `Scratch/MazurDW29/` receipts; run
 `python3 Scratch/MazurDW29/check.py` to recheck caps, module build/lint logs,
 axiom sets, root build and the merged-main relation. The final W29 handoff
