@@ -2784,6 +2784,9 @@ public import FLT.Mazur.EllipticNodeCoordinateUnique
 public import FLT.Mazur.EllipticNodeDepthNormalization
 public import FLT.Mazur.EllipticNodeDepthStep
 public import FLT.Mazur.EllipticNodeDiscriminantDepth
+public import FLT.Mazur.EllipticNodeEqualDepthSlope
+public import FLT.Mazur.EllipticNodeMiddleAddition
+public import FLT.Mazur.EllipticNodeMiddleLabels
 public import FLT.Mazur.EllipticNodeOppositeAddition
 public import FLT.Mazur.EllipticNodeOppositeLabels
 public import FLT.Mazur.EllipticNodeOppositeSlope
