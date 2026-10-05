@@ -905,3 +905,60 @@ and the root build after merging main. Re-run `python3 G2_W21_SOURCE_CHECK.py`
 for the local receipt. The endpoint source check remains
 `rg -n Mazur_statement FLT/Assumptions/Mazur.lean FermatsLastTheorem.lean`;
 this checkpoint does not remove the Mazur assumption or finish P9e.
+
+
+## W22: affine naturality and effective identity coherence (2026-10-05)
+
+W21 remaining item 1 is proved. A reconstruction square between coaction-compatible
+charts implies `MapCompatible`. Applying this to the effective reconstruction proves
+compatibility of the actual refined map and naturality of `effectiveComparisonIso`,
+without any extra compatibility hypothesis on that refined map.
+
+For item 2, identity coherence is proved uniformly for refinement maps `a` and `b`
+whose spectrum maps are identities. `identityData_compatible` intertwines the actual
+refined datum with the original datum using the cover unit chart. `identityDescentIso`
+descends that chart, and `effectiveComparisonIso_identity` identifies its composite
+with effective comparison as the base unit chart. The identity conditions are
+`Spec.map a = 𝟙 _` and `Spec.map b = 𝟙 _`; the original cover is faithfully flat.
+
+Scheme-level composition coherence is also proved, including reconstruction maps
+and the actual base and cover pullback composition charts. Its affine specialization
+and comparison of the actual successive-refinement data remain open.
+
+| Module (`FLT.Mazur.` prefix) | Proved interface |
+| --- | --- |
+| SchemeCanonicalMapRecognition | Equality with canonical overlaps transports map compatibility |
+| AffineCanonicalMapCompatibility | A compatible reconstruction square implies `MapCompatible` |
+| AffineEffectiveRefinementNaturality | Actual refined maps are compatible; effective comparison is natural |
+| SchemePullbackSquareIdentity | Normalized square comparisons and reconstruction respect units |
+| SchemePullbackIdentityCharts | Unit charts with explicit source and target sheaves |
+| SchemeRefinementReconstruction | Reconstruction charts with explicit iterated-pullback endpoints |
+| SchemePullbackSquareComposition | Composition coherence of squares and reconstructed charts |
+| AffineRefinementIdentity | Affine reconstruction respects unit charts for identity spectrum maps |
+| AffineEffectiveRefinementIdentity | Actual identity-refined data and effective comparison respect units |
+
+Continue in this order:
+
+1. Specialize `SchemePullbackSquare.squareIso_composition` and
+   `reconstruction_composition` to two affine refinement squares. Include the
+   spectrum map comparison for composite ring maps and both sheaf pullback charts.
+   The explicit-endpoint `reconstructionChart` can help control conversions.
+2. Use `mapCompatible_of_reconstruction` to identify the actual successively refined
+   datum with the datum refined along the composite square. Descend that chart and
+   prove composition coherence of `effectiveComparisonIso` by reconstruction
+   uniqueness. Identity coherence and naturality are already available.
+3. Glue objects and maps across affine covers to finish P9e.
+4. Supply locally-free-rank-one to invertible coefficients, then continue P10–P21
+   and the actual modular curve/Jacobian constructions, separately from G1 and track D.
+
+Checked on 2026-10-05 with individual `lake build FLT.Mazur.MODULE`, single-module
+`lake exe runLinter FLT.Mazur.MODULE`, and originating-module axiom audits. The
+untracked W22 handoff records exact timestamps, memory measurements, commits, and
+post-merge root-build receipts; `python3 G2_W22_SOURCE_CHECK.py` reruns its local checks.
+The endpoint check is `rg -n Mazur_statement FLT/Assumptions/Mazur.lean
+FermatsLastTheorem.lean`; P9e and removal of the Mazur assumption remain open.
+
+The direct wrapper specializing unit coherence to literal identity ring maps
+exceeded the memory guard and is retained only as untracked WIP. The accepted
+uniform identity theorem has been checked by Lean's kernel at the default limits.
+No library declaration depends on that rejected wrapper.
