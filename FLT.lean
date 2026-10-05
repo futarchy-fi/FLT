@@ -2679,6 +2679,7 @@ public import FLT.Mazur.CommonIdealDirectSum
 public import FLT.Mazur.CommonModelEventualEquality
 public import FLT.Mazur.CommonRelationIntegerModel
 public import FLT.Mazur.CommutativeIntegerModelPullbackDescent
+public import FLT.Mazur.CompactSchemeIntegerDescent
 public import FLT.Mazur.ConstantCyclicGenerator
 public import FLT.Mazur.ConstantCyclicGroup
 public import FLT.Mazur.ConstantCyclicInclusion
@@ -2773,10 +2774,13 @@ public import FLT.Mazur.FiniteCechTermScalars
 public import FLT.Mazur.FiniteClosedIdealSection
 public import FLT.Mazur.FiniteDiagramCoverModel
 public import FLT.Mazur.FiniteDiagramIntegerModel
+public import FLT.Mazur.FiniteDiagramUnitDescent
 public import FLT.Mazur.FiniteDivisorCohomology
 public import FLT.Mazur.FiniteDivisorComponentAvoidance
+public import FLT.Mazur.FiniteIntegerModelElementRelations
 public import FLT.Mazur.FiniteIntegerModelPullbacks
 public import FLT.Mazur.FiniteIntegerModelRelations
+public import FLT.Mazur.FiniteIntegerModelUnits
 public import FLT.Mazur.FiniteIntersectionCoordinateGluing
 public import FLT.Mazur.FiniteIntersectionCoordinateSquares
 public import FLT.Mazur.FiniteIntersectionGluingRecovery
@@ -2906,6 +2910,7 @@ public import FLT.Mazur.IntegerModelEventualUnits
 public import FLT.Mazur.IntegerModelHomExtension
 public import FLT.Mazur.IntegerModelHomTransport
 public import FLT.Mazur.IntegerModelIsomorphismDescent
+public import FLT.Mazur.IntegerModelMarkedExtension
 public import FLT.Mazur.IntegerModelOpenImmersionBaseChange
 public import FLT.Mazur.IntegerModelOpenImmersionDescent
 public import FLT.Mazur.IntegerModelOpenImmersionRefinement
