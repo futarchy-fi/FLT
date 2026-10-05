@@ -800,3 +800,52 @@ linter, and originating-module axiom audit. The untracked W19 handoff records
 checked-at receipts and the root build after merging main. The endpoint check
 `rg -n Mazur_statement FLT/Assumptions/Mazur.lean FermatsLastTheorem.lean`
 still finds the Mazur assumption; this checkpoint does not remove it.
+
+
+## W20: canonical reconstruction recognition (2026-10-05)
+
+The coefficient/geometric comparison left open in W19 is now proved.
+`AffineCanonicalOverlapRecognition.coactionCompatible_iff_canonical_overlap`
+identifies coaction compatibility with equality of the specified geometric overlap
+and the canonical pullback overlap transported through the reconstruction chart.
+`chartData_val_eq_canonical_overlap` identifies the tensor-constructed chart datum
+with that actual geometric overlap.
+
+| Module (`FLT.Mazur.` prefix) | Proved interface |
+| --- | --- |
+| AffineTensorCoactionRecognition | A coefficient coaction determines its tensor datum |
+| AffineGeometricChartRecognition | A chart has a unique compatible geometric datum |
+| AffineReconstructionCoefficientChart | Compute the chart of a lifted module reconstruction |
+| AffineGeometricReconstructionCompatibility | The original effective reconstruction is compatible; its chart recovers the original datum and recognition is the identity |
+| AffineGeometricCoactionUnits | Compatibility is equivalent to the actual overlap equation on reconstructed base unit sections |
+| SchemePullbackOverlap | Construct the canonical geometric overlap and prove its unit section equation |
+| AffineOverlapUnitDetection | Reconstructed base unit sections determine arbitrary geometric overlaps, without diagonal or cocycle hypotheses |
+| AffineCanonicalOverlapRecognition | Coaction compatibility is precisely equality with the canonical geometric overlap |
+| SchemePullbackOverlapNormalization | Normalization along an overlap map preserves the canonical overlap |
+
+The W18/W19 refinement obligation is still open. In particular, this checkpoint
+does **not** prove `CoactionCompatible` for
+`AffineGeometricOverlapRefinement.data` and `AffineDescentRefinement.reconstruction`.
+The original reconstruction theorem concerns the original datum, before refinement.
+
+Continue with the remaining geometric comparison:
+
+1. Prove canonical overlaps commute with the change of base sheaf and with the
+   reconstruction square. Combine `SchemePullbackOverlap.normalize_overlap`,
+   `SchemeOverlapBaseChange.normalize_baseChange`, and
+   `SheafPullbackPathComparison.comparison_assoc` for the two projection paths.
+2. Apply that result to the actual affine refinement and its `squareIso`, including
+   the tensor-spectrum/fiber-product chart conversions. Use
+   `coactionCompatible_iff_canonical_overlap` to obtain the missing refined
+   `CoactionCompatible` theorem. The original overlap is canonical by
+   `reconstruction_compatible` and the same equivalence.
+3. Apply W17 `comparisonIso`, then prove identity/composition coherence by faithful
+   pullback uniqueness. Glue across affine covers to finish P9e.
+4. Supply locally-free-rank-one to invertible coefficients, then continue P10–P21
+   and the actual modular curve/Jacobian producers. G1 and track D remain separate.
+
+Validation is reproducible with per-module `lake build`, per-module
+`lake exe runLinter`, and originating-module axiom audits. The untracked W20
+handoff records checked-at receipts and the required post-merge root build.
+The endpoint check remains `rg -n Mazur_statement FLT/Assumptions/Mazur.lean
+FermatsLastTheorem.lean`; these modules do not remove that assumption.
