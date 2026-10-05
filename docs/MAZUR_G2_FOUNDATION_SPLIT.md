@@ -245,32 +245,52 @@ axiom audit, commit IDs, physical sizes, consumer checks, and integration
 build. No scheme-level descent or representability claim follows from this
 table alone.
 
-### The first remaining geometric interface
+### W4: geometric projection coordinates and forward diagonal
 
-P9b is still open **on sheaves**. The two tensor modules above are explicit
-algebraic models; W3 does not yet identify their descent equations with
-those for the actual pullback sheaves over the double and triple fiber
-products. A complete next implementation must prove these comparisons:
+The double-overlap section comparison is implemented in the following new
+modules. Full P9b still requires the triple-overlap comparison and the
+reverse construction. The diagonal theorem is a forward implication for
+the actual sheaf equation in the tensor-spectrum chart; it is not a proved
+equivalence of geometric and tensor descent data.
 
-1. Identify sections of the two pullbacks over `Spec(S ⊗[R] S)` with
-   `N ⊗[R] S` and `S ⊗[R] N`, respecting **both** scalar actions.
-   Use `AffineModulePullbackSections.sectionsIso`/`tildePullbackIso` and
-   `AlgebraicGeometry.pullbackSpecIso`, whose projection formulas are in
-   Mathlib `AlgebraicGeometry/Pullbacks.lean`.
-2. Prove these isomorphisms commute with the diagonal and all three maps
-   from the triple fiber product. Only then may geometric cocycle equations
-   be translated into `Datum.diagonal` and `Datum.cocycle`, and conversely.
-   The triple tensor identity must be proved under these comparison maps;
-   it must not be a new field assumed of geometric input.
-3. Transport the already constructed line bundle and its reconstruction
-   through that comparison. Check agreement with the **specified** geometric
-   datum using `fromCoalgebra_toCoalgebra_overlap`, not just equality of a
-   Picard class. This finishes the geometric part of P9d.
+| Module (`FLT.Mazur.` prefix) | Proved interface |
+| --- | --- |
+| AffineOverlapTensor | Identify extension along both tensor-ring inclusions with the ordered coefficient tensors; compute both overlap-ring actions |
+| AffineOverlapPullback | Identify actual projection-pullback sections with both tensor modules; give unit formulas, scalar laws, and comparison with the fiber-product projection sheaves |
+| AffineGeometricOverlap | Construct the tensor overlap from a sheaf isomorphism; prove first-scalar linearity, second-scalar compatibility, and exact section-map reconstruction; transport an actual fiber-product isomorphism to the chart |
+| SchemeModulePullbackUnits | Prove unit normalization for composition, identity, equality, and retractions from adjunction mates; compute affine retraction on scalar multiples |
+| AffineOverlapDiagonal | Identify tensor multiplication with the actual diagonal chart; prove diagonal evaluation is tensor contraction and derive `tensorEquiv_diagonal` from `DiagonalCompatible` |
+
+Recheck each module separately with `LEAN_NUM_THREADS=2 lake build MODULE`
+and `LEAN_NUM_THREADS=2 lake exe runLinter MODULE`. Never lint the whole
+library in this worker's memory cgroup. The W4 handoff records the actual
+validation time and commits; these source-level interfaces are the durable
+proof artifacts.
+
+### Remaining geometric interfaces, in order
+
+1. Compare all three actual triple-overlap projection pullbacks with tensor
+   coordinates. The new `comp_unit` and `spec_unit_smul` formulas give
+   normalization on unit tensors. Compute the three ring maps explicitly:
+   `s ⊗ t ↦ s ⊗ (t ⊗ 1)`, `s ⊗ t ↦ 1 ⊗ (s ⊗ t)`, and
+   `s ⊗ t ↦ s ⊗ (1 ⊗ t)`. Prove these are the corresponding scheme maps;
+   use the section comparison and scalar generation to derive the full
+   `Datum.cocycle` equation, including arbitrary two extra scalars.
+2. Construct the geometric overlap back from a tensor isomorphism respecting
+   both scalar actions. Prove diagonal and cocycle compatibility in reverse,
+   and both round-trips. `tensorEquiv_sections` records exact recovery of
+   the original section map; quasi-coherent reconstruction can promote
+   section equality to sheaf-map equality. Coherence with the categorical
+   fiber-product normalizations must also be proved, not assumed.
+3. Transport the existing descended line bundle and reconstruction through
+   this full comparison. Recover the **specified** geometric datum using
+   `fromCoalgebra_toCoalgebra_overlap`; equality of a Picard class is
+   insufficient. This is the remaining geometric part of P9d.
 4. Translate compatible geometric maps using `coaction_comm_iff`, descend
-   them with `descendedModuleMap_unique`, and prove coherence under affine
-   refinement before gluing. This finishes P9e; its gluing is not present yet.
+   with `descendedModuleMap_unique`, and prove affine-refinement coherence
+   before gluing. This is P9e; scheme-level stack descent is still open.
+5. Continue P10–P21 in the order above. No representability witness, actual
+   `J0(p)`, or Abel–Jacobi-at-infinity producer follows from W4.
 
-Each of these should be split into modules of at most 240 physical lines.
-P10–P21 retain the representability dependencies listed above. In particular
-there is no actual `J0(p)` or Abel–Jacobi-at-infinity producer from W3, and
-`Mazur_statement` remains in the endpoint's axiom dependencies.
+Each leaf remains capped at 240 physical lines. None of the new comparison
+results removes `Mazur_statement` from the endpoint's axiom dependencies.

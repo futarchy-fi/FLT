@@ -2333,6 +2333,7 @@ public import FLT.Mazur.AffineCoverCohomology
 public import FLT.Mazur.AffineCoverIntersections
 public import FLT.Mazur.AffineFaithfullyFlatEpimorphisms
 public import FLT.Mazur.AffineFpqcRefinement
+public import FLT.Mazur.AffineGeometricOverlap
 public import FLT.Mazur.AffineIdealPowerExtension
 public import FLT.Mazur.AffineImageSectionTransport
 public import FLT.Mazur.AffineIntersectionRestriction
@@ -2349,6 +2350,9 @@ public import FLT.Mazur.AffineNodeNormalizationExact
 public import FLT.Mazur.AffineOpenCartesianSections
 public import FLT.Mazur.AffineOpenCechBoundary
 public import FLT.Mazur.AffineOpenDenominators
+public import FLT.Mazur.AffineOverlapDiagonal
+public import FLT.Mazur.AffineOverlapPullback
+public import FLT.Mazur.AffineOverlapTensor
 public import FLT.Mazur.AffinePicardComparison
 public import FLT.Mazur.AffinePicardSections
 public import FLT.Mazur.AffinePullbackEpiReflection
@@ -3170,6 +3174,7 @@ public import FLT.Mazur.SchemeCohomologyIso
 public import FLT.Mazur.SchemeCohomologyIsoCocycles
 public import FLT.Mazur.SchemeCoproductCohomology
 public import FLT.Mazur.SchemeCoproductSections
+public import FLT.Mazur.SchemeModulePullbackUnits
 public import FLT.Mazur.SchemePicardClasses
 public import FLT.Mazur.SchemePicardGroup
 public import FLT.Mazur.SchemePicardPullback
