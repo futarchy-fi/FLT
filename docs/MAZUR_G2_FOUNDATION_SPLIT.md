@@ -583,3 +583,43 @@ passed for both 81-line modules. Recheck with
 corresponding `AffineTripleCoefficientExtensionality` target, then run
 `lake exe runLinter MODULE` once for each module. The axiom audit and
 post-sync root-build evidence are in the untracked W13 handoff.
+
+
+## W15: arbitrary coefficients, the full cocycle, and the forward datum
+
+`AffineDirectTripleCoefficients.transport23_coefficients` extends the actual
+last-pair section formula to every coefficient tensor. It uses tensor induction
+with the sheaves kept abstract until the scalar instances have been fixed.
+This directly proves the unbundled equation requested after W13; the auxiliary
+bundled `coefficientTransport_apply` bridge is not needed by this route.
+
+`AffineGeometricTensorCocycle` evaluates the geometric `CocycleCompatible`
+equation on sections, combines the first-coordinate balance and the scaled
+pair12/pair13 transports, and proves `tensorEquiv_cocycle` for every `n,s,t`.
+The injective direct third-coordinate chart detects the resulting tensor
+identity. Explicit tensor type ascriptions keep the coefficient instances
+aligned; the composed section formulas use the expanded pair12/pair13 maps.
+
+`AffineGeometricTensorDatum.toDatum` constructs the actual `Datum R S
+(coefficients S M)` from a geometric overlap, `DiagonalCompatible`, and
+`CocycleCompatible`. Its four fields use the specified tensor isomorphism and
+proved scalar, diagonal, and cocycle equations. `toDatum_overlap_sections`
+reconstructs the given sheaf map on sections, and `toDatum_coaction_apply`
+identifies the coaction at the unit tensor factor. No descended object or
+Jacobian witness is a parameter. This forward construction uses the direct
+chart throughout and does not require an older iterated-chart comparison.
+
+The next obligation is the reverse geometric overlap from a tensor isomorphism
+respecting both scalar actions, followed by its diagonal/cocycle equations,
+exact round-trips, and categorical fiber-product normalization coherence.
+Geometric P9d/P9e and P10–P21 follow in their previous order. The forward datum
+alone does not remove `Mazur_statement`.
+
+The three modules have 89, 120, and 58 lines (cap 240 each). The coefficient
+specialization, full cocycle, and datum constructor each scope `maxRecDepth
+2048` to one declaration; heartbeat and memory limits are unchanged.
+Validation commands are individual `LEAN_NUM_THREADS=2 lake build MODULE`,
+individual `lake exe runLinter MODULE`, the declaration audit in the untracked
+`G2_W15_AXIOMS.lean`, and the post-merge `LEAN_NUM_THREADS=2 lake build FLT`.
+The checked-at receipts and remaining-work handoff are in the untracked
+`MAZUR_G2_W15_DONE.md`; this paragraph is not a completion claim for G2.
