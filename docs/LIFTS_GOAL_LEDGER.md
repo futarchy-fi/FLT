@@ -4,6 +4,44 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
+## W69 — finite-flat descent and prime coefficient orders
+
+Recheck sources, saved validation evidence, line caps and main ancestry with
+`python3 Scratch/LiftsW69/check.py`; it prints the checked-at time. Rerun the
+foreground builds, individual-module lint and axiom audits with
+`python3 Scratch/LiftsW69/validate.py`. Evidence and the detailed
+`LIFTS_W69_RESULT.md` remain untracked outside the source and docs trees.
+
+**Finite-flat descent to the actual trace-image lift is proved. The finite
+p-adic order and lifting goal remain conditional on arithmetic inputs.**
+Noetherianity from W68 now also constructs prime coefficient quotients in the
+original residue-field category, without normalization.
+
+| Item | New module | Proved scope |
+|---|---|---|
+| Integral finite-flat descent | `RepresentationTheory.FlatCoefficientDescent` | An induced coefficient topology makes pulled-back open ideals cofinal. Schematic closure descends their finite-flat reductions. Continuous injections from compact coefficients satisfy this topology hypothesis. |
+| Recovery frames | `RepresentationTheory.FlatMatrixConjugation` | Matrix recovery gives the exact linear conjugacy and preserves finite-flatness on all open reductions. |
+| Actual HR application | `HardlyRamifiedTraceFlat` | Proves finite-flatness of the constructed trace-image lift and every coefficient specialization, from the original irreducible HR input. |
+| Finite-order topology | `FinitePadicOrderTopology` | Finite free p-adic coefficients with continuous scalars have the module topology; p-power ideals are open and cofinal in the original topology. |
+| Prime order construction | `PrimeCoefficientOrder` | A prime avoiding p in a p-adically finite Noetherian proartinian ring gives a finite free characteristic-zero domain with the original residue field and quotient topology. Nonnilpotence produces such a prime. Finiteness and nonnilpotence are hypotheses. |
+| Actual trace prime lift | `HardlyRamifiedTraceOrder` | Constructs the continuous residual-compatible lift on every prime quotient of the actual trace image, with cyclotomic determinant, trivial away-inertia and finite-flat open reductions. It has finite free characteristic-zero coefficients and the module topology when the arithmetic finiteness, avoidance and scalar-continuity inputs hold. |
+
+The finite-flat argument uses subobjects of *finite reductions*, not an
+assertion that the whole coefficient inclusion is finite flat. A pulled-back
+open ideal need only be contained in the requested source ideal; the existing
+quotient theorem then supplies the requested reduction.
+
+The missing arithmetic inputs remain D3 module finiteness and D4
+nonnilpotence, requiring the source-matched KW local rings, M0 and G0/G1.
+The prescribed quotient at two has only been recovered after extension to
+the framed ring; descending that quotient to the trace image/order is still
+required. The exact original-module tensor conjugacy and integral assembly
+also remain. Thus this closes the finite-flat descent component, not I0 as
+a whole or the KW selected-local-ring comparison. S0a3 and Lp0 retain their
+stated gaps; no numerical Serre-weight or arbitrary-p Raynaud API is asserted.
+Earlier wave sections record historical boundaries; this section supersedes
+their open finite-flat descent obligation for the actual trace-image lift.
+
 ## W68 — arithmetic Noetherianity via the actual topology
 
 Recheck sources, validation-log hashes, line caps and main ancestry with
