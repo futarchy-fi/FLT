@@ -2561,6 +2561,7 @@ public import FLT.Mazur.AffineOverlapTensor
 public import FLT.Mazur.AffinePairPullbackSections
 public import FLT.Mazur.AffinePicardComparison
 public import FLT.Mazur.AffinePicardSections
+public import FLT.Mazur.AffineProductMap
 public import FLT.Mazur.AffinePullbackCorner
 public import FLT.Mazur.AffinePullbackEpiReflection
 public import FLT.Mazur.AffinePullbackIdeal
@@ -2924,6 +2925,7 @@ public import FLT.Mazur.FiniteIntersectionCocycleModel
 public import FLT.Mazur.FiniteIntersectionCocycleUnits
 public import FLT.Mazur.FiniteIntersectionCoordinateGluing
 public import FLT.Mazur.FiniteIntersectionCoordinateSquares
+public import FLT.Mazur.FiniteIntersectionDiagonalCoordinates
 public import FLT.Mazur.FiniteIntersectionGluedRecoveryComparison
 public import FLT.Mazur.FiniteIntersectionGluedSheafRecovery
 public import FLT.Mazur.FiniteIntersectionGluingRecovery
@@ -2959,6 +2961,7 @@ public import FLT.Mazur.FiniteSupportEulerCharacteristic
 public import FLT.Mazur.FiniteSupportEulerPositive
 public import FLT.Mazur.FiniteSurjectiveAmpleDescent
 public import FLT.Mazur.FiniteSurjectiveCoherentWitness
+public import FLT.Mazur.FiniteTensorIntegerClosedImmersion
 public import FLT.Mazur.FixedModelElementLifts
 public import FLT.Mazur.FixedTargetIntegerModel
 public import FLT.Mazur.FlasqueDirectImageAcyclic
@@ -3695,6 +3698,7 @@ public import FLT.Mazur.SegreChartQuotient
 public import FLT.Mazur.SegreClosedImmersion
 public import FLT.Mazur.SegreSchemeMorphism
 public import FLT.Mazur.SeparatedOpenCover
+public import FLT.Mazur.SeparatedOverlapPullback
 public import FLT.Mazur.SequentialCechLocalization
 public import FLT.Mazur.SequentialCochainBoundary
 public import FLT.Mazur.SequentialFiniteProducts
@@ -3709,6 +3713,11 @@ public import FLT.Mazur.StructureDirectImageSections
 public import FLT.Mazur.StructureImageOpenChart
 public import FLT.Mazur.SurjectiveDominantEpi
 public import FLT.Mazur.SurjectiveStructureSupport
+public import FLT.Mazur.TensorIntegerModelClosedImmersion
+public import FLT.Mazur.TensorIntegerModelMap
+public import FLT.Mazur.TensorIntegerModelPresentation
+public import FLT.Mazur.TensorIntegerModelRecovery
+public import FLT.Mazur.TensorIntegerModelTransport
 public import FLT.Mazur.TensorPowerDistribution
 public import FLT.Mazur.TensorPowerGeneratorOpen
 public import FLT.Mazur.TensorPowerReassociation
