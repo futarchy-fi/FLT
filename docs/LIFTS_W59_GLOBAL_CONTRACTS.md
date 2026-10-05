@@ -140,8 +140,8 @@ equivalence with the local deformation tangent image or arithmetic Selmer classe
 
 | Next bounded leaf | Done line | Dependency |
 |---|---|---|
-| G0a1 | Fixed field and profinite topology proved; still prove embedding-change conjugacy for the original local maps. | ArithmeticGaloisFixedField; original local embeddings. |
-| G0a2 | Trace-zero adjoint action constructed; still construct the cyclotomic Tate dual and prove trace pairing nondegenerate for odd p. | MatrixTangentTrace and finite residual linear algebra. |
+| G0a1 | Fixed field, profinite topology and conjugacy for the original local maps proved. Independence of the induced cohomology maps remains. | ArithmeticGaloisFixedField, ArithmeticLocalConjugacy; continuous cohomology. |
+| G0a2 | Actual arithmetic Tate dual and perfect equivariant trace pairing constructed for the original odd prime. Continuous cohomology and local cohomological pairings remain. | HardlyRamifiedAdjointDual, TraceZeroPairing, AdjointTateDual. |
 | G0a3 | Instantiate continuous H⁰/H¹/H² and linear localization maps for those actual modules; prove arithmetic finite-dimensionality. | G0a2 and arithmetic cohomology finiteness, not just finite coefficient cardinality. |
 | G0b1 | Actual continuous trace-zero cocycle and matrix strict-frame/coboundary equivalence proved; still compare universal parameter equivalences and arithmetic quotient classes. | HardlyRamifiedTangentCocycle, DualNumberMatrixFrame and universal parameter maps. |
 | G0b2 | Identify the specified quotient-at-two tangent image in both directions, including residual unramified cases; preserve its fixed integral character. The zero row is only a necessary condition. | G0b1 and local framed universal property. |
