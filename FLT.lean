@@ -2499,6 +2499,7 @@ public import FLT.Mazur.AffineAnnihilator
 public import FLT.Mazur.AffineBaseSectionAlgebra
 public import FLT.Mazur.AffineBaseSectionFunctor
 public import FLT.Mazur.AffineBranchSequence
+public import FLT.Mazur.AffineCanonicalOverlapRecognition
 public import FLT.Mazur.AffineCartesianSectionScalars
 public import FLT.Mazur.AffineClosedModuleDescent
 public import FLT.Mazur.AffineClosureFiniteness
@@ -2544,6 +2545,8 @@ public import FLT.Mazur.AffineFiberProductRefinementCocycle
 public import FLT.Mazur.AffineFpqcRefinement
 public import FLT.Mazur.AffineGenericClosure
 public import FLT.Mazur.AffineGeometricChartDatum
+public import FLT.Mazur.AffineGeometricChartRecognition
+public import FLT.Mazur.AffineGeometricCoactionUnits
 public import FLT.Mazur.AffineGeometricDatumComparison
 public import FLT.Mazur.AffineGeometricDescent
 public import FLT.Mazur.AffineGeometricDescentComposition
@@ -2553,6 +2556,7 @@ public import FLT.Mazur.AffineGeometricMapComparison
 public import FLT.Mazur.AffineGeometricOverlap
 public import FLT.Mazur.AffineGeometricOverlapRefinement
 public import FLT.Mazur.AffineGeometricOverlapRefinementDiagonal
+public import FLT.Mazur.AffineGeometricReconstructionCompatibility
 public import FLT.Mazur.AffineGeometricRefinementData
 public import FLT.Mazur.AffineGeometricTensorCocycle
 public import FLT.Mazur.AffineGeometricTensorDatum
@@ -2593,6 +2597,7 @@ public import FLT.Mazur.AffineOverlapDiagonal
 public import FLT.Mazur.AffineOverlapMapSections
 public import FLT.Mazur.AffineOverlapPullback
 public import FLT.Mazur.AffineOverlapTensor
+public import FLT.Mazur.AffineOverlapUnitDetection
 public import FLT.Mazur.AffinePairPullbackSections
 public import FLT.Mazur.AffinePairUnitTransport
 public import FLT.Mazur.AffinePicardComparison
@@ -2609,6 +2614,7 @@ public import FLT.Mazur.AffinePushforwardCohomology
 public import FLT.Mazur.AffinePushforwardQuasicoherent
 public import FLT.Mazur.AffineQuasiCoherentBaseChange
 public import FLT.Mazur.AffineQuasicoherentPullbackFaithful
+public import FLT.Mazur.AffineReconstructionCoefficientChart
 public import FLT.Mazur.AffineRefinementPullback
 public import FLT.Mazur.AffineRestrictionImmersion
 public import FLT.Mazur.AffineReverseGeometricOverlap
@@ -2622,6 +2628,7 @@ public import FLT.Mazur.AffineSquareScalarExtension
 public import FLT.Mazur.AffineSquareTensorComparison
 public import FLT.Mazur.AffineStalkExtension
 public import FLT.Mazur.AffineStalkMorphism
+public import FLT.Mazur.AffineTensorCoactionRecognition
 public import FLT.Mazur.AffineTensorCoalgebraComparison
 public import FLT.Mazur.AffineTensorCocycle
 public import FLT.Mazur.AffineTensorCocycleTransport
@@ -3904,6 +3911,8 @@ public import FLT.Mazur.SchemeOverlapTransportComposition
 public import FLT.Mazur.SchemePicardClasses
 public import FLT.Mazur.SchemePicardGroup
 public import FLT.Mazur.SchemePicardPullback
+public import FLT.Mazur.SchemePullbackOverlap
+public import FLT.Mazur.SchemePullbackOverlapNormalization
 public import FLT.Mazur.SealedLineRestriction
 public import FLT.Mazur.SealedLineRestrictionSections
 public import FLT.Mazur.SectionBaseLocalization
