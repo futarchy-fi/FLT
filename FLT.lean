@@ -3227,6 +3227,7 @@ public import FLT.Mazur.NodeTangentExtension
 public import FLT.Mazur.NodeTangentFractionField
 public import FLT.Mazur.NodeTangentShear
 public import FLT.Mazur.NodeTangentUnramified
+public import FLT.Mazur.NodeTangentValuationModel
 public import FLT.Mazur.OneGonAffineCover
 public import FLT.Mazur.OneGonAffineNormalization
 public import FLT.Mazur.OneGonAffineNormalizationCoordinates
@@ -3717,6 +3718,7 @@ public import FLT.Mazur.TrivialLineTwistLocalization
 public import FLT.Mazur.UnitIntegerModel
 public import FLT.Mazur.UniversallyClosedFiniteCover
 public import FLT.Mazur.ValuationProjectiveNormalization
+public import FLT.Mazur.ValuationRingModel
 public import FLT.Mazur.VeryAmpleAffineSections
 public import FLT.Mazur.VeryAmplePresentationBaseChange
 public import FLT.MazurChapter.AdmissibleGroupSchemes
