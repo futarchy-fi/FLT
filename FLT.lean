@@ -3304,6 +3304,7 @@ public import FLT.Mazur.IdealAdicAffineGeneration
 public import FLT.Mazur.IdealAdicAffineProjection
 public import FLT.Mazur.IdealAdicBaseGradedGenerators
 public import FLT.Mazur.IdealAdicBasePowerGenerators
+public import FLT.Mazur.IdealAdicChartLocalization
 public import FLT.Mazur.IdealAdicClosedCoefficientCharts
 public import FLT.Mazur.IdealAdicClosedGradedModule
 public import FLT.Mazur.IdealAdicClosedGradedRestriction
