@@ -521,3 +521,30 @@ cocycle and `toDatum` remain open. The reverse overlap, round-trips, categorical
 normalization coherence, geometric P9d/P9e, and P10–P21 remain in the same order.
 No geometric datum, representability witness, or Jacobian witness is assumed,
 and no removal of `Mazur_statement` is claimed.
+
+
+## W12: direct-chart join and pure last-pair transport
+
+`AffineDirectTripleTransport.transport23_outer` joins the scaled pair23
+transport to `AffineDirectTripleAdditivity.sections` for every overlap tensor.
+`AffineDirectTriplePureTransport.transport23_tmul` combines that join with
+`middleLift_balance`, proving actual last-pair transport on each pure inner
+tensor. Its `outer_smul` lemma aligns the scalar notation with an abstract
+sheaf target; the explicit tensor input keeps the coefficient instances fixed.
+Both concrete results use the existing actual sheaf maps and comparisons.
+
+`AffineTensorTransportAdditivity.transport_coefficients` proves the abstract
+additive extension from pure tensors to arbitrary coefficient tensors. Its
+specialization to the actual sheaf maps is a separate, unfinished obligation:
+the attempted specialization still incurs expensive conversions between
+bundled ring carriers and the triple tensor ring, and between expanded
+pullbacks and the `coordinate` abbreviation. The generic induction theorem
+alone does not establish the concrete `transport23_coefficients` equation.
+
+Validation on 2026-10-05: individual foreground builds and one-module lints
+for these three modules; originating-declaration axiom audit via
+`LEAN_NUM_THREADS=2 lake env lean G2_W12_AXIOMS.lean`. Checked-at evidence,
+commits, and the post-merge root-build result are in the untracked W12 handoff.
+The remaining order is the concrete additive specialization, full forward
+cocycle and `toDatum`, reverse overlap and round-trips, categorical
+normalization, geometric P9d/P9e, then P10–P21. `Mazur_statement` remains.
