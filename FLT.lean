@@ -2535,6 +2535,7 @@ public import FLT.Mazur.AffineFaithfullyFlatEpimorphisms
 public import FLT.Mazur.AffineFaithfullyFlatPullbackFaithful
 public import FLT.Mazur.AffineFiberProductDiagonal
 public import FLT.Mazur.AffineFiberProductOverlap
+public import FLT.Mazur.AffineFiberProductPairTransport
 public import FLT.Mazur.AffineFpqcRefinement
 public import FLT.Mazur.AffineGeometricDatumComparison
 public import FLT.Mazur.AffineGeometricDescent
