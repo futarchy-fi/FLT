@@ -3924,6 +3924,7 @@ public import FLT.Mazur.SchemePullbackOverlap
 public import FLT.Mazur.SchemePullbackOverlapNormalization
 public import FLT.Mazur.SchemePullbackOverlapSquare
 public import FLT.Mazur.SchemePullbackSquare
+public import FLT.Mazur.SchemePullbackSquareIdentity
 public import FLT.Mazur.SchemeReconstructionOverlapSquare
 public import FLT.Mazur.SealedLineRestriction
 public import FLT.Mazur.SealedLineRestrictionSections
