@@ -2521,11 +2521,17 @@ public import FLT.Mazur.AffineCoverCohomology
 public import FLT.Mazur.AffineCoverIntersections
 public import FLT.Mazur.AffineDirectTripleAdditivity
 public import FLT.Mazur.AffineDirectTripleBalance
+public import FLT.Mazur.AffineDirectTripleCoefficients
 public import FLT.Mazur.AffineDirectTripleEvaluation
+public import FLT.Mazur.AffineDirectTripleMiddleBalance
+public import FLT.Mazur.AffineDirectTriplePureTransport
 public import FLT.Mazur.AffineDirectTripleSections
+public import FLT.Mazur.AffineDirectTripleTransport
 public import FLT.Mazur.AffineFaithfullyFlatEpimorphisms
 public import FLT.Mazur.AffineFpqcRefinement
 public import FLT.Mazur.AffineGeometricOverlap
+public import FLT.Mazur.AffineGeometricTensorCocycle
+public import FLT.Mazur.AffineGeometricTensorDatum
 public import FLT.Mazur.AffineIdealPowerExtension
 public import FLT.Mazur.AffineImageSectionTransport
 public import FLT.Mazur.AffineIntegerModel
@@ -2574,6 +2580,8 @@ public import FLT.Mazur.AffinePushforwardCohomology
 public import FLT.Mazur.AffinePushforwardQuasicoherent
 public import FLT.Mazur.AffineQuasiCoherentBaseChange
 public import FLT.Mazur.AffineRestrictionImmersion
+public import FLT.Mazur.AffineScaledPullbackSections
+public import FLT.Mazur.AffineScaledTripleTransport
 public import FLT.Mazur.AffineSquareEquivalences
 public import FLT.Mazur.AffineSquareScalarExtension
 public import FLT.Mazur.AffineSquareTensorComparison
@@ -2583,6 +2591,9 @@ public import FLT.Mazur.AffineTensorCoalgebraComparison
 public import FLT.Mazur.AffineTensorCocycle
 public import FLT.Mazur.AffineTensorCocycleTransport
 public import FLT.Mazur.AffineTensorDescentMorphisms
+public import FLT.Mazur.AffineTensorTransportAdditivity
+public import FLT.Mazur.AffineTripleCoefficientExtensionality
+public import FLT.Mazur.AffineTripleCoefficientMaps
 public import FLT.Mazur.AffineTripleOverlapCoefficients
 public import FLT.Mazur.AffineTripleOverlapEvaluation
 public import FLT.Mazur.AffineTripleOverlapMaps
