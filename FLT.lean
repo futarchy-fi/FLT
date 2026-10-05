@@ -2540,6 +2540,7 @@ public import FLT.Mazur.AffineIntersectionProjectionSections
 public import FLT.Mazur.AffineIntersectionProjectionSheaf
 public import FLT.Mazur.AffineIntersectionRestriction
 public import FLT.Mazur.AffineIntersectionScalarExtension
+public import FLT.Mazur.AffineIntersectionSeparated
 public import FLT.Mazur.AffineIteratedPullbackLaws
 public import FLT.Mazur.AffineIteratedPullbackSections
 public import FLT.Mazur.AffineKernelLocalization
@@ -2941,6 +2942,8 @@ public import FLT.Mazur.FiniteIntegerModelElementRelations
 public import FLT.Mazur.FiniteIntegerModelPullbacks
 public import FLT.Mazur.FiniteIntegerModelRelations
 public import FLT.Mazur.FiniteIntegerModelUnits
+public import FLT.Mazur.FiniteIntersectionClosedCocycleModel
+public import FLT.Mazur.FiniteIntersectionClosedModel
 public import FLT.Mazur.FiniteIntersectionCocycleModel
 public import FLT.Mazur.FiniteIntersectionCocycleUnits
 public import FLT.Mazur.FiniteIntersectionCoordinateGluing
@@ -2976,6 +2979,7 @@ public import FLT.Mazur.FiniteSchemeLength
 public import FLT.Mazur.FiniteSchemeLineCohomology
 public import FLT.Mazur.FiniteSchemeLineTwist
 public import FLT.Mazur.FiniteSectionProjectivePresentation
+public import FLT.Mazur.FiniteSeparatedLineSheafDescent
 public import FLT.Mazur.FiniteSupportClosedDescent
 public import FLT.Mazur.FiniteSupportEulerCharacteristic
 public import FLT.Mazur.FiniteSupportEulerPositive
@@ -3078,6 +3082,7 @@ public import FLT.Mazur.IntegerModelAffineProperDescent
 public import FLT.Mazur.IntegerModelAtlasDiagram
 public import FLT.Mazur.IntegerModelBaseChange
 public import FLT.Mazur.IntegerModelClosedImmersionDescent
+public import FLT.Mazur.IntegerModelClosedProductTransport
 public import FLT.Mazur.IntegerModelCoverDescent
 public import FLT.Mazur.IntegerModelDiagramTransport
 public import FLT.Mazur.IntegerModelEventualEquality
@@ -3107,6 +3112,7 @@ public import FLT.Mazur.IntegralPointExtension
 public import FLT.Mazur.IntersectionDiagramGluing
 public import FLT.Mazur.IntersectionGluingCharts
 public import FLT.Mazur.IntersectionGluingSections
+public import FLT.Mazur.IntersectionModelClosedProducts
 public import FLT.Mazur.IntersectionUnitCocycle
 public import FLT.Mazur.IntersectionUnitCocycleRecovery
 public import FLT.Mazur.IrreducibleComponentAmple
