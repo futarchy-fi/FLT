@@ -2569,6 +2569,7 @@ public import FLT.Mazur.AffineOpenCechBoundary
 public import FLT.Mazur.AffineOpenDenominators
 public import FLT.Mazur.AffineOpenImmersionLocalizationCriterion
 public import FLT.Mazur.AffineOverlapDiagonal
+public import FLT.Mazur.AffineOverlapMapSections
 public import FLT.Mazur.AffineOverlapPullback
 public import FLT.Mazur.AffineOverlapTensor
 public import FLT.Mazur.AffinePairPullbackSections
