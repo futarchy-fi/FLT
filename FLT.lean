@@ -3051,6 +3051,7 @@ public import FLT.Mazur.IncreasingCechComplex
 public import FLT.Mazur.InjectiveHorseshoe
 public import FLT.Mazur.IntegerModelAtlasDiagram
 public import FLT.Mazur.IntegerModelBaseChange
+public import FLT.Mazur.IntegerModelClosedImmersionDescent
 public import FLT.Mazur.IntegerModelCoverDescent
 public import FLT.Mazur.IntegerModelDiagramTransport
 public import FLT.Mazur.IntegerModelEventualEquality
@@ -3067,6 +3068,7 @@ public import FLT.Mazur.IntegerModelPullbackDescent
 public import FLT.Mazur.IntegerModelPullbackTransport
 public import FLT.Mazur.IntegerModelRelationDescent
 public import FLT.Mazur.IntegerModelSquareComparison
+public import FLT.Mazur.IntegerModelSurjectiveDescent
 public import FLT.Mazur.IntegerModelTransition
 public import FLT.Mazur.IntegralBase
 public import FLT.Mazur.IntegralClosedSupport
