@@ -2624,6 +2624,7 @@ public import FLT.Mazur.DivisorTensorSequence
 public import FLT.Mazur.DivisorTwistedDegree
 public import FLT.Mazur.DivisorTwistedSequence
 public import FLT.Mazur.EllipticComponentQuotient
+public import FLT.Mazur.EllipticCuspTangent
 public import FLT.Mazur.EllipticFormalAddition
 public import FLT.Mazur.EllipticFormalAdditionComparison
 public import FLT.Mazur.EllipticFormalAssociativity
@@ -2655,6 +2656,8 @@ public import FLT.Mazur.EllipticGoodComponent
 public import FLT.Mazur.EllipticInfinityEvaluation
 public import FLT.Mazur.EllipticInfinityParameter
 public import FLT.Mazur.EllipticInfinityPowerSeries
+public import FLT.Mazur.EllipticIntegralCuspNormalization
+public import FLT.Mazur.EllipticIntegralSingularTranslation
 public import FLT.Mazur.EllipticLocalAddition
 public import FLT.Mazur.EllipticLocalChartPoint
 public import FLT.Mazur.EllipticLocalCubicExpansion
@@ -2669,6 +2672,7 @@ public import FLT.Mazur.EllipticPadicKernel
 public import FLT.Mazur.EllipticPadicSpecialization
 public import FLT.Mazur.EllipticPrimeToResidueSpecialization
 public import FLT.Mazur.EllipticProjectiveReduction
+public import FLT.Mazur.EllipticRationalSingularity
 public import FLT.Mazur.EllipticReductionAffineAddition
 public import FLT.Mazur.EllipticReductionInfinityChart
 public import FLT.Mazur.EllipticReductionKernel
@@ -2676,6 +2680,8 @@ public import FLT.Mazur.EllipticReductionOpposite
 public import FLT.Mazur.EllipticReductionRelation
 public import FLT.Mazur.EllipticReductionTranslation
 public import FLT.Mazur.EllipticSingularDivisibility
+public import FLT.Mazur.EllipticSingularSmallChar
+public import FLT.Mazur.EllipticSingularVariableChange
 public import FLT.Mazur.EllipticSmoothReduction
 public import FLT.Mazur.EllipticSmoothReductionAddition
 public import FLT.Mazur.EllipticUnramifiedKernel
