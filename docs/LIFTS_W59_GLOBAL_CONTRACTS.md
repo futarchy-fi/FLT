@@ -33,16 +33,16 @@ and its row at two. The descended representation has the original determinant
 and is unramified away from 2p (`HardlyRamifiedTraceArithmetic`).
 
 This is not yet the comparison with KW II's completed tensor product or a
-proof of finite-flat descent to the smaller image ring. Noetherianity and
-p-adic module finiteness are still missing. The generic theorem
+proof of finite-flat descent to the smaller image ring. W68 proves
+Noetherianity of both actual rings; p-adic module finiteness is still missing. The generic theorem
 `ProartinianCat.imageObject_isNoetherian` requires a Noetherian **source**;
 Noetherianity of a framed target would not imply Noetherianity of its subring.
 Check the saved W64 evidence with `python3 Scratch/LiftsW64/check.py`.
 
 `DeSmitLenstra/FramedCompletion` proves Noetherianity with a **finite group**
 parameter. `ProfiniteUniversalLift` constructs a limit over finite quotients;
-Noetherianity does not follow by taking this limit. Arithmetic control of the
-finite-ramification deformation tangent space is still needed.
+Noetherianity does not follow by taking this limit. W67/W68 instead supply
+arithmetic control of the continuous tangent space and a power-series presentation.
 
 W65 proves the finite counting part of the arithmetic tangent strategy.
 `finite_representations_discr_bdd` applies Hermite to the **actual kernel
@@ -88,13 +88,19 @@ coefficient-linear Leibniz functionals at the specified residue map.
 prove finite dimension of these tangent spaces for both the actual framed
 HR quotient and, under irreducibility, its trace image.
 
-Still required: derive topological finite generation and the adic topology
-from these continuous tangents and construct a finite-variable complete-local
-presentation. An algebraic cotangent identification requires a topology
-comparison; finite continuous dual alone must not be substituted into an
-algebraic Nakayama lemma. The G0/G1 Selmer identification is also separate.
-Noetherianity of a target still does not imply Noetherianity of its subring.
-Check saved evidence with `python3 Scratch/LiftsW67/check.py`.
+W68 closes the topology and Noetherianity gap. `FiniteTangentSeparation`
+uses cotangent duality only after killing the coefficient maximal ideal in
+a discrete quotient. `ContinuousTangentAdic` compares the common continuous
+tangent kernel with the closed relative-square ideal. Compact Nakayama and
+finite quotient representatives give actual maximal-ideal generators.
+`PowerSeriesPresentation` constructs a surjection from a finite-variable
+power-series algebra over the original coefficient ring, complete for the
+variable ideal. Generators include coefficient directions, so the original
+coefficient ring need not be complete. `HardlyRamifiedNoetherian` proves
+Noetherianity and adic completeness of both actual HR rings independently;
+no Noetherianity assertion about the unrestricted trace source is made.
+The G0/G1 Selmer identification and D3 module finiteness remain separate.
+Check saved evidence with `python3 Scratch/LiftsW68/check.py`.
 
 ## Required arithmetic objects
 
@@ -161,9 +167,9 @@ quotient and coefficient maps.
    integral lattice at every level. Frobenius does not preserve the theta
    ideal; the source's actual theta-generator computation forbids using a
    theta-adic extension in place of the crystalline construction.
-4. Noetherianity and the finite coefficient order: establish the arithmetic
-   finite tangent/presentation input; then quotient Noetherianity is formal.
-   The order carrying a lift additionally needs D3/D4/I0. Do not report the
+4. The finite coefficient order: W68 proves arithmetic Noetherianity and
+   adic completeness. The order carrying a lift still needs the selected-local
+   comparison, integral finite-flat descent and D3/D4/I0. Do not report the
    candidate Eisenstein coefficient rings of W58 as that order.
 
 These unresolved inputs are mathematical gaps, not a request for permission.

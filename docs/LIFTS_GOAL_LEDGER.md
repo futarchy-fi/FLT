@@ -4,6 +4,48 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
+## W68 — arithmetic Noetherianity via the actual topology
+
+Recheck sources, validation-log hashes, line caps and main ancestry with
+`python3 Scratch/LiftsW68/check.py`; it prints the checked-at time. Rerun
+foreground builds, individual-module lint and axiom audits with
+`python3 Scratch/LiftsW68/validate.py`. The detailed `LIFTS_W68_RESULT.md`
+and evidence remain untracked outside the source and docs trees.
+
+**The actual framed HR quotient and trace image are Noetherian and adically
+complete. The lifting goal and finite p-adic coefficient order remain open.**
+The trace result uses the original irreducibility hypothesis. It does not
+infer Noetherianity of a subring from that of its ambient ring.
+
+| Item | New module | Proved scope |
+|---|---|---|
+| Common finite quotient | `FiniteParameterQuotient` | A finite family of discrete parameters factors uniquely through a single proper open quotient. |
+| Tangent stabilization | `ContinuousTangentQuotient` | Pullback is linear over the original residue field and is an isomorphism at one finite quotient and every finer quotient. |
+| Arithmetic stabilization | `HardlyRamifiedTangentQuotient` | Applies stabilization to both actual HR rings. |
+| Discrete separation | `FiniteTangentSeparation` | After killing the coefficient maximal ideal, augmentation-cotangent duality separates every relative-square class in a discrete quotient. |
+| Compact Nakayama | `ProartinianNakayama` | Ordinary Nakayama is used only in Artinian open quotients; closedness then recovers the original ideal containment. |
+| Generator lifting | `ProartinianGenerators` | Lifts finitely many quotient classes and turns an open ideal inside the closed relative-square ideal into actual maximal-ideal generators. |
+| Topology comparison | `ProartinianAdicTopology` | A finitely generated maximal ideal has open powers; the original ring is adically complete. |
+| Continuous-to-adic bridge | `ContinuousTangentAdic` | The common tangent kernel lies in the closure of the relative-square ideal. Finite continuous tangents imply finite maximal-ideal generation and adic completeness. |
+| Power-series presentation | `PowerSeriesPresentation` | Surjection from a finite-variable power-series algebra over the original coefficient ring; Noetherianity descends along this map. |
+| Arithmetic application | `HardlyRamifiedNoetherian` | Proves finite maximal-ideal generation, adic topology/completeness, presentations and Noetherianity of the actual framed quotient and trace image. |
+
+The presentation uses generators of the entire maximal ideal, including
+coefficient directions. Its power-series source is complete for the variable
+ideal, so no completeness assumption on the original coefficient ring is
+needed. Surjectivity follows from completeness for that ideal, separation
+of the target and surjectivity on the original residue field. This does not
+assert that an arbitrary incomplete coefficient ring yields a source complete
+for its own maximal ideal.
+
+The finite coefficient order still needs the KW II selected-local-ring
+comparison, integral finite-flat descent and D3/D4/I0. In particular,
+Noetherianity does not imply finite generation as a Zp-module, p nonnilpotence,
+or the G0/G1 Selmer comparisons. S0a3, Lp0 and G0a–G1c retain their stated
+proof obligations. No numerical Serre-weight or arbitrary-p Raynaud API was
+introduced. Earlier wave sections below record historical boundaries; W68
+supersedes their outstanding arithmetic Noetherianity and topology gaps.
+
 ## W67 — actual completion bounds and finite continuous tangent spaces
 
 Check the saved sources, logs, line caps, commit identities and main ancestry
