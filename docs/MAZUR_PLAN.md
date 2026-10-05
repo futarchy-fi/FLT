@@ -401,6 +401,26 @@ involution and preservation of the infinity section. Addition and the
 group axioms remain unfinished, as do the modular and arithmetic inputs
 to the Mazur route.
 
+### Glued global negation morphism (2026-10-05)
+
+`FLT/EllipticCurve/CubicNegationOverlap.lean` constructs the refined
+intersection by inverting the infinity negation denominator on the
+ordinary overlap. A localization pushout proves that this is the actual
+scheme-theoretic intersection of the two infinity-chart opens. The
+affine and infinity formulas agree as algebra homomorphisms there,
+and hence as morphisms into the glued cubic.
+
+`FLT/EllipticCurve/CubicNegationGlobal.lean` constructs the refined
+open cover, glues the two local maps on the infinity chart, and then
+glues with affine negation on the original cover. The resulting
+`negation` is a morphism of the full scheme, with proved chart
+restrictions and `negation_toBase`.
+
+This closes the local-to-global gluing step for negation over arbitrary
+commutative bases. Global involutivity and preservation of the infinity
+section still need proofs. Addition and the group axioms are also
+unfinished, as are the modular and arithmetic inputs to Mazur's theorem.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
