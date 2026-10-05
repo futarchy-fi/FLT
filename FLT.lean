@@ -3957,6 +3957,7 @@ public import FLT.Mazur.ScalarExtensionDirectSum
 public import FLT.Mazur.ScalarExtensionIsomorphismDescent
 public import FLT.Mazur.ScalarExtensionPullbackDescent
 public import FLT.Mazur.SchematicDescentGluing
+public import FLT.Mazur.SchemeAffineChartComposition
 public import FLT.Mazur.SchemeAffineChartDescent
 public import FLT.Mazur.SchemeAffineRefinementCompatibility
 public import FLT.Mazur.SchemeBaseChangeLimit
