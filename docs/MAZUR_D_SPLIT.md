@@ -1,5 +1,52 @@
 # Mazur track D: extension and local arithmetic
 
+## D-W9: elliptic component quotient via minimal equations
+
+This replaces the general Néron-model prerequisite in the older C1 rows below.
+For an elliptic curve over a complete DVR with perfect residue field, use a
+minimal integral Weierstrass equation W and the actual subgroup E₀(K) of
+points whose primitive projective reduction is nonsingular. The rational
+component quotient means E(K)/E₀(K), not the geometric component group.
+The applications use finite residue fields. Discriminant orders below are
+normalized additive valuations, so n = ord(Δ) is a positive integer in the
+multiplicative case. No general Néron mapping property is needed for these
+local point-group assertions.
+
+Each planned new module has cap 240 physical lines. Implementation order is
+the table order; a case calculation and exhaustiveness are separate proofs.
+Consumer labels describe dependencies, not completed downstream theorems.
+
+| Leaf | Module / cap | Exact output | Consumer |
+| --- | --- | --- | --- |
+| C1.0 | Existing `EllipticReductionKernel` | `ellipticE0` is the nonsingular-reduction subgroup, for any integral equation over a valuation subring. Specialize it to a minimal equation over the complete DVR. | A1-C1; S1/S2 and C2/C3/Cp through C1.1. |
+| C1.1 | `EllipticComponentQuotient` / 240 | Actual quotient E(K)/E₀(K), surjective quotient homomorphism, kernel E₀, and equal-class criterion by smooth reduction of P−Q. | A1-C1; S1/S2, C2/C3/Cp. |
+| C1.2 | `EllipticGoodComponent` / 240 | Smooth special cubic implies E₀=E and trivial quotient; connect this to Mathlib's minimal-model `HasGoodReduction`. | Good branch of A1-C1; C2/C3 through good-reduction point counts. |
+| C1.3 | `EllipticSingularDivisibility` / 240 | For integral coordinates x,y in an ideal I, a₃,a₄ in I and the curve equation imply a₆ in I². This is the point-exclusion calculation in the type II branch. | Additive bound A1-C1 via C1.6; S1 and C2/C3. |
+| C1.4a.i | `EllipticNormalizedSingularity` / 240 | For a₃=a₄=a₆=0 over a field, prove the origin is the unique singular affine point, also in characteristics 2 and 3. Identify the coefficients after translating a supplied singular point. | Every bad-reduction branch of A1-C1; S1/S2, C2/C3/Cp. |
+| C1.4a.ii | `EllipticNormalizedTypeII` / 240 | Combine C1.3 and C1.4a.i: a₃,a₄,a₆ in the maximal ideal and a₆ outside its square imply E₀=E and trivial quotient. This is the normalized type II calculation, before proving general normal-form existence. | C1.6a and additive A1-C1; S1, C2/C3. |
+| C1.4a.iii | `EllipticSingularNormalForm` / 240 | Prove a bad special cubic over a perfect residue field has a rational singular point; lift its coordinates and translate integrally to (0,0). Identify the tangent cone and prove the further normalizations used by the Tate branches. | Every bad-reduction branch of A1-C1; S1/S2, C2/C3/Cp. |
+| C1.4b | `EllipticComponentVariableChange` / 240 | Integral unit variable changes induce point-group equivalences preserving E₀ and hence the quotient. | Transport all branch calculations to A1-C1; S1/S2, C2/C3/Cp. |
+| C1.5a | `EllipticSplitComponentClasses` / 240 | In split multiplicative normal form, construct a class map to Z/nZ and prove its kernel is E₀ by the valuation branches of point addition. | Split branch of A1-C1; C2/C3/Cp. |
+| C1.5b | `EllipticSplitComponentOrder` / 240 | Lift all n classes over the complete DVR and obtain E/E₀ ≃+ Z/nZ; thus cyclic of order ord(Δ). | A1-C1; C2/C3/Cp. |
+| C1.5c | `EllipticNonsplitComponents` / 240 | Compare E₀ under the unramified quadratic splitting extension, inject rational classes into geometric classes, and prove Galois acts by negation. Deduce cardinality at most 2. | A1-C1; nonsplit exclusions in C2/C3/Cp. |
+| C1.6a | `EllipticTateTypeII` / 240 | Normalized type II: C1.3 excludes any singular reduction, so E/E₀ is trivial. | Additive branch A1-C1; S1, C2/C3. |
+| C1.6b | `EllipticTateTypesIIIIV` / 240 | Normalized types III and IV: classify point cosets and bound their number by 2 and 3 respectively, including residue characteristics 2 and 3. | Additive branch A1-C1; S1, C2/C3. |
+| C1.6c | `EllipticTateTypeIStar` / 240 | Normalized Iₙ* branches: iterate the valuation tests, prove termination, and bound point cosets by 4. Subdivide the iteration proof further if needed. | Additive branch A1-C1; S1, C2/C3. |
+| C1.6d | `EllipticTateDualTypes` / 240 | Normalized IV*, III*, II*: bound cosets by 3, 2, 1 respectively from the remaining coefficient tests. | Additive branch A1-C1; S1, C2/C3. |
+| C1.7 | `EllipticTateExhaustion` / 240 | Prove the Tate-algorithm branches exhaust minimal additive equations; the final rescaling alternative contradicts minimality. Combine to obtain finite E/E₀ of order at most 4. | A1-C1; S1, C2/C3; S2 before/after base change. |
+| C1.8 | `EllipticSmoothSpecialGroups` / 240 | Parametrize the smooth singular cubic: additive group for a cusp, multiplicative group for a split node, norm-one group for a nonsplit node; prove compatibility with reduction addition. | S1, C2/C3/Cp; S2 after semistable base change. |
+| S1 | `PrimeTorsionSemistabilityAway` / 240 | For a prime-order point with prime ≥17 away from residue characteristic, the component bound forces it into E₀; the additive smooth group and F3 then exclude additive reduction. | A1-S1, then C2/C3 and A2. |
+| S2a | `EllipticSemistableExtension` / 240 | At the torsion prime ≥17 construct a semistable extension of ramification degree ≤6 from the minimal-equation cases. | A1-S2, then Cp. |
+| S2b | `EllipticTorsionClosure` / 240 | Construct the finite-flat order-p closure and its generic/special-fiber comparisons over that extension; apply proved rigidity with e<p−1. Split construction into further leaves as needed. | A1-S2, then Cp and A2. |
+| C2/C3/Cp | Original named modules / ≤240 each | Apply the quotient bounds, explicit smooth-group orders, F3 specialization and S1/S2 to the local prime-order point; retain the separate 2, 3 and p cases. | A1 component conclusions, then A2. |
+| A2 | Further leaves / ≤240 each | Combine local component conclusions with G1/G2 cusp comparison and odd-prime abelian specialization at every bad prime. | Global Mazur argument; depends on the separate G1/G2 workers. |
+
+Neither a Kodaira label with a supplied cardinality field nor a finite-group
+bound assumed as a hypothesis proves C1.5–C1.7. The normal forms, quotient
+comparisons, branch coverage and cardinality bounds must all be proved.
+The existing elliptic E₀ specialization theorems do not supply the abelian
+specialization required by A2. G1 (wt-r5a) and G2 (wt-r1e) retain their scopes.
+
 ## D-W4: formal addition construction leaves
 
 Subdivision recorded before implementation; each new module has cap 240 lines.
