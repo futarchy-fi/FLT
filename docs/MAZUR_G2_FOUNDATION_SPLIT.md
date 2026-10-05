@@ -385,10 +385,41 @@ with timestamps in the untracked W7 handoff. Re-run `lake build MODULE`,
 `lake exe runLinter MODULE`, and `lake env lean G2_W7_AXIOMS.lean` for current
 evidence, using `LEAN_NUM_THREADS=2` and one module at a time.
 
-The scalar-normalized first/second coefficient formulas, evaluation of
-`lastSections` on pure tensors, and the full forward tensor cocycle remain
-open. The failed wrappers and normalization experiments are outside the source
+At the W7 boundary, the scalar-normalized first/second coefficient formulas,
+evaluation of `lastSections` on pure tensors, and the full forward tensor
+cocycle were open; W8 below advances the first two interfaces. The failed wrappers and normalization experiments are outside the source
 tree. In particular, this does not supply `AffineTripleOverlapCocycle.toDatum`.
 Next are the reverse overlap, both reverse compatibility equations, exact
 round-trips, categorical fiber-product coherence, geometric P9d/P9e, and
 P10–P21. `Mazur_statement` has not been removed.
+
+
+## W8: normalized pair coefficients and iterated chart evaluation
+
+`AffineLiftedOverlapCoefficients` proves `first_normalized` and
+`second_normalized`: the actual normalized pair lift sends a pure tensor
+to the pair ring map applied to its scalar, acting on the direct coordinate
+unit. The intermediate `first_mapped` and `second_mapped` theorems retain
+an arbitrary target sheaf. Explicit specialization avoids unfolding the
+actual comparison while checking the scalar law.
+
+`AffineTripleOverlapEvaluation` proves `lastSections_outer_apply`, identifies
+`linearSections` with the specified `secondSections`, and gives
+`lastSections_tmul_iterated`. This last formula evaluates the two coefficient
+tensors while retaining the outer section/comparison chain; it does **not**
+yet move both scalars through that chain to the direct third-coordinate unit.
+
+The modules contain 78 and 76 lines, respectively (each below the 240-line
+leaf cap), with no new axioms or admissions and no limit overrides. Validation
+commands are `LEAN_NUM_THREADS=2 lake build MODULE`,
+`LEAN_NUM_THREADS=2 lake exe runLinter MODULE` separately for each module,
+and `LEAN_NUM_THREADS=2 lake env lean G2_W8_AXIOMS.lean`. The untracked W8
+handoff records the checked-at times, results, and concrete consumer checks.
+
+Next: finish scalar normalization of the outer last-coordinate chain, then
+combine all three `transport_sections` equations with `CocycleCompatible`
+and `lastSections` injectivity to prove the full forward tensor cocycle.
+There is still no geometric `toDatum` constructor. Reverse overlap,
+diagonal/cocycle and exact round-trips, categorical fiber-product coherence,
+geometric P9d/P9e, and P10–P21 follow in the existing order. This work does
+not remove `Mazur_statement`.
