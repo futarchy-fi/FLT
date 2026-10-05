@@ -2965,8 +2965,11 @@ public import FLT.Mazur.EllipticNodeTripleDepth
 public import FLT.Mazur.EllipticNodeUnequalDepthAddition
 public import FLT.Mazur.EllipticNodeUniformizerLabel
 public import FLT.Mazur.EllipticNodeVariableChangeLabel
+public import FLT.Mazur.EllipticNonsplitNodalGroup
 public import FLT.Mazur.EllipticNonsplitNodeBound
+public import FLT.Mazur.EllipticNonsplitNodeChart
 public import FLT.Mazur.EllipticNonsplitNodeComponents
+public import FLT.Mazur.EllipticNonsplitNodeGroup
 public import FLT.Mazur.EllipticNonsplitNodeParameter
 public import FLT.Mazur.EllipticNonsplitNormOneHom
 public import FLT.Mazur.EllipticNormalizedDoubleRoot
@@ -3400,6 +3403,7 @@ public import FLT.Mazur.NodeTangentFractionField
 public import FLT.Mazur.NodeTangentGaloisLabel
 public import FLT.Mazur.NodeTangentShear
 public import FLT.Mazur.NodeTangentShearRealization
+public import FLT.Mazur.NodeTangentSlopeDescent
 public import FLT.Mazur.NodeTangentSplitComponent
 public import FLT.Mazur.NodeTangentUnramified
 public import FLT.Mazur.NodeTangentValuationConjugation
