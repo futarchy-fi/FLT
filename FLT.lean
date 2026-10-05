@@ -2528,7 +2528,10 @@ public import FLT.Mazur.AffineIdealPowerExtension
 public import FLT.Mazur.AffineImageSectionTransport
 public import FLT.Mazur.AffineIntegerModel
 public import FLT.Mazur.AffineIntersectionDiagramGluing
+public import FLT.Mazur.AffineIntersectionGluedModelSheaf
 public import FLT.Mazur.AffineIntersectionGluingBaseChange
+public import FLT.Mazur.AffineIntersectionGluingSections
+public import FLT.Mazur.AffineIntersectionModelSheaf
 public import FLT.Mazur.AffineIntersectionProjection
 public import FLT.Mazur.AffineIntersectionRestriction
 public import FLT.Mazur.AffineIntersectionScalarExtension
@@ -2943,6 +2946,7 @@ public import FLT.Mazur.FiniteIntersectionSchemeDescent
 public import FLT.Mazur.FiniteIntersectionSectionComparison
 public import FLT.Mazur.FiniteIntersectionSectionDiagram
 public import FLT.Mazur.FiniteLineCocycleModel
+public import FLT.Mazur.FiniteLineSheafModel
 public import FLT.Mazur.FiniteLocalizedIntegerComparisons
 public import FLT.Mazur.FiniteOpenImmersionIntegerDescent
 public import FLT.Mazur.FinitePresentationIntegerModel
@@ -3079,6 +3083,9 @@ public import FLT.Mazur.IntegralDimension
 public import FLT.Mazur.IntegralPointExtension
 public import FLT.Mazur.IntersectionDiagramGluing
 public import FLT.Mazur.IntersectionGluingCharts
+public import FLT.Mazur.IntersectionGluingSections
+public import FLT.Mazur.IntersectionUnitCocycle
+public import FLT.Mazur.IntersectionUnitCocycleRecovery
 public import FLT.Mazur.IrreducibleComponentAmple
 public import FLT.Mazur.LaurentRingSurjectivity
 public import FLT.Mazur.LaurentTensor
@@ -3253,6 +3260,8 @@ public import FLT.Mazur.OpenCoverDimension
 public import FLT.Mazur.OpenDirectImageCohomology
 public import FLT.Mazur.OpenDirectImageNaturality
 public import FLT.Mazur.OpenDirectImageRestriction
+public import FLT.Mazur.OpenImageSectionPullback
+public import FLT.Mazur.OpenImmersionSectionComparison
 public import FLT.Mazur.OpenIrreducibleComponent
 public import FLT.Mazur.OpenModuleDirectImageCohomology
 public import FLT.Mazur.OpenModuleSectionScalars
