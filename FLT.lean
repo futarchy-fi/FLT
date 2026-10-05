@@ -2707,7 +2707,10 @@ public import FLT.Mazur.EllipticLocalEvaluation
 public import FLT.Mazur.EllipticLocalIntegerMultiplication
 public import FLT.Mazur.EllipticLocalMultiplication
 public import FLT.Mazur.EllipticLocalValuation
+public import FLT.Mazur.EllipticNodeBranchInverse
+public import FLT.Mazur.EllipticNodeBranchLabel
 public import FLT.Mazur.EllipticNodeCoordinateFactor
+public import FLT.Mazur.EllipticNodeCoordinateUnique
 public import FLT.Mazur.EllipticNodeDepthNormalization
 public import FLT.Mazur.EllipticNodeDepthStep
 public import FLT.Mazur.EllipticNodeDiscriminantDepth
