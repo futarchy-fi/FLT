@@ -3191,9 +3191,12 @@ public import FLT.Mazur.HomogeneousLocalizationBaseChange
 public import FLT.Mazur.HomogeneousLocalizationGenerator
 public import FLT.Mazur.HomogeneousLocalizationScalars
 public import FLT.Mazur.IdealAdicCohomology
+public import FLT.Mazur.IdealAdicGradedAssociativity
 public import FLT.Mazur.IdealAdicGradedClosedTwist
 public import FLT.Mazur.IdealAdicGradedLineTwist
+public import FLT.Mazur.IdealAdicGradedMultiplication
 public import FLT.Mazur.IdealAdicGradedSequence
+public import FLT.Mazur.IdealAdicGradedUnit
 public import FLT.Mazur.IdealAdicLineQuotient
 public import FLT.Mazur.IdealAdicLineTower
 public import FLT.Mazur.IdealAdicQuotient
@@ -3210,6 +3213,7 @@ public import FLT.Mazur.IdealPowerCompatibility
 public import FLT.Mazur.IdealPowerExtensionCharts
 public import FLT.Mazur.IdealPowerExtensionGluing
 public import FLT.Mazur.IdealPowerGenericComparison
+public import FLT.Mazur.IdealPowerMultiplication
 public import FLT.Mazur.IdealPowerVanishingTransfer
 public import FLT.Mazur.IdealQuotientExact
 public import FLT.Mazur.IdealQuotientSectionLift
@@ -3373,6 +3377,7 @@ public import FLT.Mazur.ModuleSheafUnitCocycleRestrict
 public import FLT.Mazur.ModuleSheafificationTensor
 public import FLT.Mazur.ModuleStalkExact
 public import FLT.Mazur.ModuleSubobjectCoverEquality
+public import FLT.Mazur.ModuleTensorCokernelDescent
 public import FLT.Mazur.ModuleTensorPowerSection
 public import FLT.Mazur.ModuleTensorPowerSectionInduction
 public import FLT.Mazur.ModuleTensorPullbackRestriction
