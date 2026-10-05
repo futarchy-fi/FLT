@@ -279,6 +279,29 @@ audit includes the new proofs; the FLT arithmetic assumptions remain
 unchanged.
 
 
+### Relative dimension one and nonempty fibers — 2026-10-05
+
+The derivative presentations in `CubicSmooth.lean` now carry the stronger
+`IsStandardSmoothOfRelativeDimension 1` property. Their three generators
+and two relations give dimension one; the earlier standard-smoothness
+instance is derived from this stronger result.
+
+`FLT/EllipticCurve/CubicRelativeDimension.lean` transports that dimension
+through the affine derivative cover, the explicit overlap equivalence,
+and the infinity cover. Locality at the source proves
+`toBase_dimension_one : SmoothOfRelativeDimension 1 (toBase W)` for
+`W.IsElliptic`. The infinity section also proves `toBase_surjective`
+without an ellipticity hypothesis, so every fiber is nonempty.
+
+These results strengthen the actual proper smooth structural morphism;
+they do not construct a group law. Geometric connectedness of the fibers
+and the scheme-level group law remain before the modular construction.
+The integral modular curve, represented Jacobian, Eisenstein quotient
+and arithmetic steps of Mazur's 1978 route are still unproved.
+The namespace-wide audit includes both the strengthened presentation and
+the new global dimension theorem. No FLT arithmetic assumption is removed.
+
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:

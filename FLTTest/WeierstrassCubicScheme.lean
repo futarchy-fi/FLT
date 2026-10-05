@@ -5,7 +5,7 @@ Authors: krandder
 -/
 module
 
-import FLT.EllipticCurve.CubicSmooth
+import FLT.EllipticCurve.CubicRelativeDimension
 import Mathlib.Data.ZMod.Basic
 import Lean
 

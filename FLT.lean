@@ -162,6 +162,7 @@ public import FLT.EllipticCurve.CubicCharts
 public import FLT.EllipticCurve.CubicProjectiveClosed
 public import FLT.EllipticCurve.CubicProjectiveCover
 public import FLT.EllipticCurve.CubicProjectiveMorphism
+public import FLT.EllipticCurve.CubicRelativeDimension
 public import FLT.EllipticCurve.CubicScheme
 public import FLT.EllipticCurve.CubicSmooth
 public import FLT.EllipticCurve.DivisionPolynomialDifferential

@@ -54,9 +54,9 @@ theorem chartPresentation_jacobian (b : Bool) (i : Fin 2) :
 /-- The localization of a chart at a partial derivative. -/
 abbrev DerivativeRing (b : Bool) (i : Fin 2) := Localization.Away (derivative W b i)
 
-/-- Inverting the chosen partial derivative makes the chart standard smooth. -/
-instance derivativeRing_isStandardSmooth (b : Bool) (i : Fin 2) :
-    IsStandardSmooth R (DerivativeRing W b i) := by
+/-- Each derivative localization is standard smooth of relative dimension one. -/
+instance derivativeRing_isStandardSmoothOfRelativeDimension (b : Bool) (i : Fin 2) :
+    IsStandardSmoothOfRelativeDimension 1 R (DerivativeRing W b i) := by
   let P := chartPresentation W b i
   let Q := PreSubmersivePresentation.localizationAway (DerivativeRing W b i) (derivative W b i)
   have hd : IsUnit (algebraMap (Ring W b) (DerivativeRing W b i) (derivative W b i)) :=
@@ -66,7 +66,13 @@ instance derivativeRing_isStandardSmooth (b : Bool) (i : Fin 2) :
       jacobian_isUnit := by
         simpa [Q, P, Algebra.smul_def, chartPresentation_jacobian, -isUnit_map_iff]
           using hd.mul hd }
-  exact S.isStandardSmooth
+  apply S.isStandardSmoothOfRelativeDimension
+  simp [Presentation.dimension]
+
+/-- Inverting a partial derivative makes the chart standard smooth. -/
+instance derivativeRing_isStandardSmooth (b : Bool) (i : Fin 2) :
+    IsStandardSmooth R (DerivativeRing W b i) :=
+  IsStandardSmoothOfRelativeDimension.isStandardSmooth 1
 
 /-- These actual localized coordinate algebras are smooth over the coefficient base. -/
 instance derivativeRing_smooth (b : Bool) (i : Fin 2) :
