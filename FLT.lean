@@ -2540,6 +2540,7 @@ public import FLT.Mazur.AffineDirectTripleTransport
 public import FLT.Mazur.AffineEffectiveCompositeReconstruction
 public import FLT.Mazur.AffineEffectiveCompositionChart
 public import FLT.Mazur.AffineEffectiveRefinementComparison
+public import FLT.Mazur.AffineEffectiveRefinementComposition
 public import FLT.Mazur.AffineEffectiveRefinementIdentity
 public import FLT.Mazur.AffineEffectiveRefinementNaturality
 public import FLT.Mazur.AffineEffectiveSecondReconstruction
