@@ -154,6 +154,8 @@ public import FLT.DedekindDomain.FiniteAdeleRing.TensorRestrictedProduct
 public import FLT.DedekindDomain.IntegralClosure
 public import FLT.Deformations.Algebra.InverseLimit.Basic
 public import FLT.Deformations.Algebra.InverseLimit.Topology
+public import FLT.Deformations.ArithmeticGaloisFixedField
+public import FLT.Deformations.ArithmeticGaloisQuotient
 public import FLT.Deformations.Categories
 public import FLT.Deformations.ClosedIdealCondition
 public import FLT.Deformations.ClosedIdealQuotient
@@ -193,6 +195,7 @@ public import FLT.Deformations.FramedDeterminantIdeal
 public import FLT.Deformations.FramedQuotientIdeal
 public import FLT.Deformations.FramedTrivialityIdeal
 public import FLT.Deformations.HardlyRamifiedArithmeticAtTwo
+public import FLT.Deformations.HardlyRamifiedArithmeticDescent
 public import FLT.Deformations.HardlyRamifiedArithmeticQuotient
 public import FLT.Deformations.HardlyRamifiedArithmeticResidual
 public import FLT.Deformations.HardlyRamifiedFiniteParameters
@@ -205,6 +208,8 @@ public import FLT.Deformations.HardlyRamifiedParameterBounds
 public import FLT.Deformations.HardlyRamifiedParameterComparison
 public import FLT.Deformations.HardlyRamifiedParameterFiniteness
 public import FLT.Deformations.HardlyRamifiedParameterUnramified
+public import FLT.Deformations.HardlyRamifiedTangentCocycle
+public import FLT.Deformations.HardlyRamifiedTangentEquations
 public import FLT.Deformations.HardlyRamifiedTangentFinite
 public import FLT.Deformations.HardlyRamifiedTangentQuotient
 public import FLT.Deformations.HardlyRamifiedTraceArithmetic
@@ -214,6 +219,9 @@ public import FLT.Deformations.HardlyRamifiedTraceImage
 public import FLT.Deformations.HardlyRamifiedTraceLift
 public import FLT.Deformations.HardlyRamifiedTraceOrder
 public import FLT.Deformations.HardlyRamifiedTraceParameters
+public import FLT.Deformations.HardlyRamifiedTracePoint
+public import FLT.Deformations.HardlyRamifiedTraceRetraction
+public import FLT.Deformations.HardlyRamifiedTraceShear
 public import FLT.Deformations.HardlyRamifiedTraceTwoQuotient
 public import FLT.Deformations.HardlyRamifiedTraceTwoRow
 public import FLT.Deformations.HardlyRamifiedTwoFrobenius
@@ -250,6 +258,7 @@ public import FLT.Deformations.RepresentationTheory.CyclotomicGeneratorTrace
 public import FLT.Deformations.RepresentationTheory.CyclotomicInertiaDetection
 public import FLT.Deformations.RepresentationTheory.CyclotomicQuadraticDetection
 public import FLT.Deformations.RepresentationTheory.CyclotomicSmallPrimes
+public import FLT.Deformations.RepresentationTheory.DualNumberMatrixFrame
 public import FLT.Deformations.RepresentationTheory.EquivAbsoluteIrreducible
 public import FLT.Deformations.RepresentationTheory.Etale
 public import FLT.Deformations.RepresentationTheory.FamilyTracePair
@@ -277,7 +286,10 @@ public import FLT.Deformations.RepresentationTheory.Irreducible
 public import FLT.Deformations.RepresentationTheory.IteratedBaseChangeIrreducible
 public import FLT.Deformations.RepresentationTheory.MappedRankTwoCharpoly
 public import FLT.Deformations.RepresentationTheory.MappedTameSpectrum
+public import FLT.Deformations.RepresentationTheory.MatrixAdjointCocycle
+public import FLT.Deformations.RepresentationTheory.MatrixTangentTrace
 public import FLT.Deformations.RepresentationTheory.NormalizedQuotientDescent
+public import FLT.Deformations.RepresentationTheory.NormalizedQuotientShear
 public import FLT.Deformations.RepresentationTheory.PGroupInvariants
 public import FLT.Deformations.RepresentationTheory.PadicIdealCofinal
 public import FLT.Deformations.RepresentationTheory.PadicIdealOpen
@@ -681,8 +693,12 @@ public import FLT.GaloisRepresentation.HardlyRamified.TrivialPrimeFiltrationCoex
 public import FLT.GaloisRepresentation.HardlyRamified.TrivialPrimeFiltrationExtension
 public import FLT.GaloisRepresentation.HardlyRamified.ULiftGenericRecovery
 public import FLT.GaloisRepresentation.HardlyRamified.ULiftHardlyRamified
+public import FLT.GaloisRepresentation.SerreWeight.CoefficientCharacterExponent
+public import FLT.GaloisRepresentation.SerreWeight.CoefficientOrdinaryInput
+public import FLT.GaloisRepresentation.SerreWeight.CoefficientOrdinaryInvariance
 public import FLT.GaloisRepresentation.SerreWeight.CyclicCharacterExponent
 public import FLT.GaloisRepresentation.SerreWeight.CyclicPairKernel
+public import FLT.GaloisRepresentation.SerreWeight.LocalCharacterNormalization
 public import FLT.GaloisRepresentation.SerreWeight.NiveauTwoDigits
 public import FLT.GaloisRepresentation.SerreWeight.NormalizedCharacterExponent
 public import FLT.GaloisRepresentation.SerreWeight.NormalizedOrdinaryInput
@@ -3494,6 +3510,7 @@ public import FLT.PadicHodgeTheory.ComplexIntegerGradedInvariants
 public import FLT.PadicHodgeTheory.ComplexIntegerGradedProduct
 public import FLT.PadicHodgeTheory.ComplexIntegerGradedScalars
 public import FLT.PadicHodgeTheory.ComplexIntegerInvertP
+public import FLT.PadicHodgeTheory.ComplexIntegralPDPresentation
 public import FLT.PadicHodgeTheory.ComplexIntegralThickening
 public import FLT.PadicHodgeTheory.ComplexInvariantOrder
 public import FLT.PadicHodgeTheory.ComplexLocalizedFrobenius
@@ -3505,6 +3522,7 @@ public import FLT.PadicHodgeTheory.ComplexPadicScalarAction
 public import FLT.PadicHodgeTheory.ComplexPadicScalarResidue
 public import FLT.PadicHodgeTheory.ComplexPadicScalars
 public import FLT.PadicHodgeTheory.ComplexRelativeAxDescent
+public import FLT.PadicHodgeTheory.ComplexRelativePDPresentation
 public import FLT.PadicHodgeTheory.ComplexRootLogLinearity
 public import FLT.PadicHodgeTheory.ComplexRootPowerBounds
 public import FLT.PadicHodgeTheory.ComplexRootPowerConvergence
@@ -3538,6 +3556,7 @@ public import FLT.PadicHodgeTheory.FractionalPrincipalFiltration
 public import FLT.PadicHodgeTheory.FractionalPrincipalGraded
 public import FLT.PadicHodgeTheory.FractionalPrincipalGradedProduct
 public import FLT.PadicHodgeTheory.IdealPowerDifference
+public import FLT.PadicHodgeTheory.IntegralPDPresentation
 public import FLT.PadicHodgeTheory.IntegralThickeningReduction
 public import FLT.PadicHodgeTheory.NilpotentLogPower
 public import FLT.PadicHodgeTheory.NilpotentLogProduct
@@ -3576,6 +3595,7 @@ public import FLT.PadicHodgeTheory.PadicUniformizerOrthogonality
 public import FLT.PadicHodgeTheory.PolynomialNearbyRoot
 public import FLT.PadicHodgeTheory.PowerSeriesLogPower
 public import FLT.PadicHodgeTheory.PrincipalGradedPiece
+public import FLT.PadicHodgeTheory.RelativePDPresentation
 public import FLT.PadicHodgeTheory.UltrametricPolynomialCoefficients
 public import FLT.Patching.Algebra
 public import FLT.Patching.Module
