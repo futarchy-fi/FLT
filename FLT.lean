@@ -3978,6 +3978,7 @@ public import FLT.Mazur.SchemeOverlapConjugation
 public import FLT.Mazur.SchemeOverlapDiagonalChart
 public import FLT.Mazur.SchemeOverlapDiagonalDetection
 public import FLT.Mazur.SchemeOverlapNormalizationNaturality
+public import FLT.Mazur.SchemeOverlapProjectionComposition
 public import FLT.Mazur.SchemeOverlapRefinement
 public import FLT.Mazur.SchemeOverlapRefinementCocycle
 public import FLT.Mazur.SchemeOverlapRefinementCoherence
