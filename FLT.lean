@@ -2537,6 +2537,7 @@ public import FLT.Mazur.AffineDirectTriplePureTransport
 public import FLT.Mazur.AffineDirectTripleSections
 public import FLT.Mazur.AffineDirectTripleTransport
 public import FLT.Mazur.AffineEffectiveRefinementComparison
+public import FLT.Mazur.AffineEffectiveRefinementNaturality
 public import FLT.Mazur.AffineFaithfullyFlatEpimorphisms
 public import FLT.Mazur.AffineFaithfullyFlatPullbackFaithful
 public import FLT.Mazur.AffineFiberProductCocycle
