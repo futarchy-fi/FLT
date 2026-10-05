@@ -2788,6 +2788,7 @@ public import FLT.Mazur.DivisorTwistedDegree
 public import FLT.Mazur.DivisorTwistedSequence
 public import FLT.Mazur.EllipticAdditiveDepthRefinement
 public import FLT.Mazur.EllipticAdditiveFirstBranches
+public import FLT.Mazur.EllipticAdditiveLaterBranches
 public import FLT.Mazur.EllipticAdditiveStarTranslation
 public import FLT.Mazur.EllipticAdditiveTranslationDepth
 public import FLT.Mazur.EllipticComponentBaseChange
@@ -2896,6 +2897,8 @@ public import FLT.Mazur.EllipticNormalizedSingularity
 public import FLT.Mazur.EllipticNormalizedStarZero
 public import FLT.Mazur.EllipticNormalizedTypeII
 public import FLT.Mazur.EllipticNormalizedTypeIII
+public import FLT.Mazur.EllipticNormalizedTypeIIIStar
+public import FLT.Mazur.EllipticNormalizedTypeIIStar
 public import FLT.Mazur.EllipticNormalizedTypeIV
 public import FLT.Mazur.EllipticNormalizedTypeIVStar
 public import FLT.Mazur.EllipticPadicKernel
@@ -2924,11 +2927,15 @@ public import FLT.Mazur.EllipticSmoothReduction
 public import FLT.Mazur.EllipticSmoothReductionAddition
 public import FLT.Mazur.EllipticSplitDepthModel
 public import FLT.Mazur.EllipticSplitOrderOne
+public import FLT.Mazur.EllipticStarDeepCoordinates
+public import FLT.Mazur.EllipticStarTranslationDepth
 public import FLT.Mazur.EllipticStarZeroCoordinates
 public import FLT.Mazur.EllipticStarZeroResidue
 public import FLT.Mazur.EllipticStarZeroSlope
+public import FLT.Mazur.EllipticTripleRootBranches
 public import FLT.Mazur.EllipticTypeIIIDepth
 public import FLT.Mazur.EllipticTypeIIISlope
+public import FLT.Mazur.EllipticTypeIIIStarSlope
 public import FLT.Mazur.EllipticTypeIVAddition
 public import FLT.Mazur.EllipticTypeIVComponentComparison
 public import FLT.Mazur.EllipticTypeIVCoordinates
@@ -2941,6 +2948,7 @@ public import FLT.Mazur.EllipticUnramifiedTorsion
 public import FLT.Mazur.EllipticVariableChangeIntegrality
 public import FLT.Mazur.EllipticVariableChangeReduction
 public import FLT.Mazur.EllipticVariableChangeSmoothness
+public import FLT.Mazur.EllipticWeightedScaling
 public import FLT.Mazur.EnlargedPresentationModel
 public import FLT.Mazur.EquifiberedGluingBaseChange
 public import FLT.Mazur.EquifiberedSchemeGluing
