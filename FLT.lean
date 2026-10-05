@@ -3246,6 +3246,7 @@ public import FLT.Mazur.IdealPowerExtensionCharts
 public import FLT.Mazur.IdealPowerExtensionGluing
 public import FLT.Mazur.IdealPowerGenericComparison
 public import FLT.Mazur.IdealPowerMultiplication
+public import FLT.Mazur.IdealPowerProductSurjective
 public import FLT.Mazur.IdealPowerVanishingTransfer
 public import FLT.Mazur.IdealQuotientExact
 public import FLT.Mazur.IdealQuotientSectionLift
