@@ -11,6 +11,15 @@ has 67–104 lines against its 240-line cap. C1.5a.x.10 is the first open item:
 the label function is not yet proved additive, so no cyclic classification
 or homomorphism to Z/nZ is claimed.
 
+Post-merge check, 2026-10-05 03:20 UTC: merged origin/main `2c7abf4e` in
+`1f25b205`. The required foreground `LEAN_NUM_THREADS=2 lake build FLT`
+passed all 12,763 jobs, including FLT and FermatsLastTheorem, with no declaration
+clashes (`Scratch/MazurDW12/root-build.log`). `python3 Scratch/MazurDW12/check.py`
+passes the module caps, individual build/lint logs, 35 axiom audits, sorted
+unique imports, merged-main ancestry and root-build result. The global audit
+still lists `Mazur_statement` and `sorryAx` alongside the standard three
+(`lake env lean Scratch/MazurDW12/GlobalAxioms.lean`, `global-axioms.log`).
+
 This replaces the general Néron-model prerequisite in the older C1 rows below.
 For an elliptic curve over a complete DVR with perfect residue field, use a
 minimal integral Weierstrass equation W and the actual subgroup E₀(K) of
