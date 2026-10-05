@@ -2499,6 +2499,7 @@ public import FLT.Mazur.AffineAnnihilator
 public import FLT.Mazur.AffineBaseSectionAlgebra
 public import FLT.Mazur.AffineBaseSectionFunctor
 public import FLT.Mazur.AffineBranchSequence
+public import FLT.Mazur.AffineCanonicalOverlapChart
 public import FLT.Mazur.AffineCanonicalOverlapRecognition
 public import FLT.Mazur.AffineCartesianSectionScalars
 public import FLT.Mazur.AffineClosedModuleDescent
