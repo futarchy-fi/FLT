@@ -2990,6 +2990,7 @@ public import FLT.Mazur.EllipticPrimeToResidueSpecialization
 public import FLT.Mazur.EllipticPrimeTorsionComponents
 public import FLT.Mazur.EllipticProjectiveBaseChange
 public import FLT.Mazur.EllipticProjectiveReduction
+public import FLT.Mazur.EllipticRamifiedCoefficientDepths
 public import FLT.Mazur.EllipticRationalSingularity
 public import FLT.Mazur.EllipticReductionAffineAddition
 public import FLT.Mazur.EllipticReductionBaseChange
@@ -3000,8 +3001,12 @@ public import FLT.Mazur.EllipticReductionRelation
 public import FLT.Mazur.EllipticReductionTranslation
 public import FLT.Mazur.EllipticRepeatedCubicPoint
 public import FLT.Mazur.EllipticRepeatedCubicTranslation
+public import FLT.Mazur.EllipticSemistableExtension
 public import FLT.Mazur.EllipticShearDescent
 public import FLT.Mazur.EllipticShearedComponentExtension
+public import FLT.Mazur.EllipticShortSemistableExtension
+public import FLT.Mazur.EllipticShortUnitReduction
+public import FLT.Mazur.EllipticShortWeightedModel
 public import FLT.Mazur.EllipticSingularDivisibility
 public import FLT.Mazur.EllipticSingularPointChart
 public import FLT.Mazur.EllipticSingularSmallChar
@@ -3032,6 +3037,7 @@ public import FLT.Mazur.EllipticTypeIVCoordinates
 public import FLT.Mazur.EllipticTypeIVResidue
 public import FLT.Mazur.EllipticTypeIVScaledComparison
 public import FLT.Mazur.EllipticTypeIVStarCoordinates
+public import FLT.Mazur.EllipticUnitInvariantsReduction
 public import FLT.Mazur.EllipticUnramifiedKernel
 public import FLT.Mazur.EllipticUnramifiedSpecialization
 public import FLT.Mazur.EllipticUnramifiedTorsion
@@ -3914,6 +3920,7 @@ public import FLT.Mazur.TildeInvertibleLocal
 public import FLT.Mazur.TildePrincipalOpen
 public import FLT.Mazur.TorusChartScalars
 public import FLT.Mazur.TrivialLineTwistLocalization
+public import FLT.Mazur.UniformizerRootExtension
 public import FLT.Mazur.UnitIntegerModel
 public import FLT.Mazur.UniversallyClosedFiniteCover
 public import FLT.Mazur.ValuationProjectiveNormalization
