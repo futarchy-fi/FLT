@@ -47,6 +47,32 @@ comparisons, branch coverage and cardinality bounds must all be proved.
 The existing elliptic E₀ specialization theorems do not supply the abelian
 specialization required by A2. G1 (wt-r5a) and G2 (wt-r1e) retain their scopes.
 
+### D-W9 implementation boundary and evidence
+
+Checked 2026-10-05 01:50 UTC. Proof commit `ece0202d` implements C1.1,
+C1.2, C1.3, C1.4a.i and C1.4a.ii in the five named modules above
+(65, 67, 66, 69 and 80 lines respectively). In particular, the normalized
+type II coefficient tests prove E₀=E and a trivial quotient in all residue
+characteristics. They do not establish the full additive bound.
+
+The first open foundation is C1.4a.iii: from Δ=0 over a perfect residue
+field, prove existence of x,y satisfying the cubic equation but not the
+nonsingularity predicate, then lift and normalize integrally. The translated
+coefficient theorem in C1.4a.i assumes a supplied singular point; it does not
+prove this existence theorem. Search evidence is recorded in
+`Scratch/MazurDW9/foundation-search.log`. The old general Néron-model blocker
+below is superseded for the local point-group route, not discharged by it.
+
+All five foreground module builds and individual module linters pass;
+logs are `Scratch/MazurDW9/MODULE-build.log` and `MODULE-lint.log`.
+All 20 new theorems and both definitions use only propext, Classical.choice
+and Quot.sound: re-run `lake env lean Scratch/MazurDW9/Axioms.lean`;
+evidence `Scratch/MazurDW9/axioms.log` (22 checks).
+Merged `origin/main` at `3ffbce70` in `47a2846f`; the required foreground
+`LEAN_NUM_THREADS=2 lake build FLT` passed 12,673 jobs without name clashes
+(`Scratch/MazurDW9/root-build.log`). Root imports remain sorted and unique.
+No S1/S2, C2/C3/Cp or A2 conclusion is claimed by these leaves.
+
 ## D-W4: formal addition construction leaves
 
 Subdivision recorded before implementation; each new module has cap 240 lines.
