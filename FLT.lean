@@ -2858,6 +2858,8 @@ public import FLT.Mazur.EllipticLocalEvaluation
 public import FLT.Mazur.EllipticLocalIntegerMultiplication
 public import FLT.Mazur.EllipticLocalMultiplication
 public import FLT.Mazur.EllipticLocalValuation
+public import FLT.Mazur.EllipticMinimalAdditiveComponents
+public import FLT.Mazur.EllipticMinimalDiscriminant
 public import FLT.Mazur.EllipticNodeAdditionCoordinates
 public import FLT.Mazur.EllipticNodeAdditionProduct
 public import FLT.Mazur.EllipticNodeBranchInverse
@@ -2915,6 +2917,7 @@ public import FLT.Mazur.EllipticNodeUnequalDepthAddition
 public import FLT.Mazur.EllipticNodeUniformizerLabel
 public import FLT.Mazur.EllipticNonsplitNodeBound
 public import FLT.Mazur.EllipticNormalizedDoubleRoot
+public import FLT.Mazur.EllipticNormalizedMinimalAdditive
 public import FLT.Mazur.EllipticNormalizedSingularity
 public import FLT.Mazur.EllipticNormalizedStarZero
 public import FLT.Mazur.EllipticNormalizedTypeII
@@ -2948,6 +2951,7 @@ public import FLT.Mazur.EllipticSingularVariableChange
 public import FLT.Mazur.EllipticSmoothReduction
 public import FLT.Mazur.EllipticSmoothReductionAddition
 public import FLT.Mazur.EllipticSplitDepthModel
+public import FLT.Mazur.EllipticSplitNodeComponents
 public import FLT.Mazur.EllipticSplitOrderOne
 public import FLT.Mazur.EllipticStarDeepCoordinates
 public import FLT.Mazur.EllipticStarTranslationDepth
