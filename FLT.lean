@@ -2994,7 +2994,11 @@ public import FLT.Mazur.EllipticSmoothPointChange
 public import FLT.Mazur.EllipticSmoothReduction
 public import FLT.Mazur.EllipticSmoothReductionAddition
 public import FLT.Mazur.EllipticSplitDepthModel
+public import FLT.Mazur.EllipticSplitNodalGroup
+public import FLT.Mazur.EllipticSplitNodeAddition
 public import FLT.Mazur.EllipticSplitNodeComponents
+public import FLT.Mazur.EllipticSplitNodeGroup
+public import FLT.Mazur.EllipticSplitNodeParametrization
 public import FLT.Mazur.EllipticSplitOrderOne
 public import FLT.Mazur.EllipticStarDeepCoordinates
 public import FLT.Mazur.EllipticStarTranslationDepth
