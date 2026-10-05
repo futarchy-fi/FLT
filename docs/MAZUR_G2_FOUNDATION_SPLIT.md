@@ -1099,7 +1099,10 @@ only `propext`, `Classical.choice`, and `Quot.sound` occur.
 
 No `ModuleSheafGluing.Data` for an open cover has been assembled. The supplied
 common refinement is geometric input; its existence on overlap subopens and
-independence from its choice remain to be proved. The next steps are composition
+independence from its choice remain to be proved. These refinements factor over
+the same covering scheme Y. Unrelated covering charts need a comparison induced
+by the original double-overlap isomorphism on Y ×[X] Y; a common refinement
+factoring through both charts over Y need not exist. The next steps are composition
 coherence of the constructed chart comparisons, stability of transitions under
 further common refinements, choosing the affine chart covers, and assembly of
 open-chart transitions and gluing. P9e and P10–P21 remain open.
