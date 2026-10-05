@@ -2684,6 +2684,11 @@ public import FLT.Mazur.ClosedPushforwardRestriction
 public import FLT.Mazur.ClosedSubschemeCohomology
 public import FLT.Mazur.ClosedSubsets
 public import FLT.Mazur.CocycleGlobalSectionCoordinate
+public import FLT.Mazur.CoefficientModelLimit
+public import FLT.Mazur.CoefficientModelRecovery
+public import FLT.Mazur.CoefficientSpectrumLimit
+public import FLT.Mazur.CoefficientStageColimit
+public import FLT.Mazur.CoefficientStageDiagram
 public import FLT.Mazur.CoherentAffineCoverSections
 public import FLT.Mazur.CoherentClosedPushforward
 public import FLT.Mazur.CoherentClosedReduction
@@ -3645,6 +3650,7 @@ public import FLT.Mazur.ScalarExtensionDirectSum
 public import FLT.Mazur.ScalarExtensionIsomorphismDescent
 public import FLT.Mazur.ScalarExtensionPullbackDescent
 public import FLT.Mazur.SchematicDescentGluing
+public import FLT.Mazur.SchemeBaseChangeLimit
 public import FLT.Mazur.SchemeCohomologyIso
 public import FLT.Mazur.SchemeCohomologyIsoCocycles
 public import FLT.Mazur.SchemeCoproductCohomology
