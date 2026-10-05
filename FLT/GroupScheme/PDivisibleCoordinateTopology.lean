@@ -23,8 +23,10 @@ variable {R K : Type} [CommRing R] [IsLocalRing R] [Field K] [Algebra R K]
   (X : PDivisibleSystem R K p height)
 
 /-- The discrete uniformity used only on the original finite coordinate algebras. -/
-local instance coordinateLevelUniformSpace (n : ℕ) : UniformSpace (X.level n).CoordinateRing := ⊥
-local instance coordinateLevelDiscreteUniformity (n : ℕ) : DiscreteUniformity (X.level n).CoordinateRing := ⟨rfl⟩
+local instance coordinateLevelUniformSpace (n : ℕ) :
+    UniformSpace (X.level n).CoordinateRing := ⊥
+local instance coordinateLevelDiscreteUniformity (n : ℕ) :
+    DiscreteUniformity (X.level n).CoordinateRing := ⟨rfl⟩
 
 /-- The coordinate limit has the uniformity induced from its discrete finite levels. -/
 instance coordinateLimitUniformSpace : UniformSpace X.coordinateLimit :=

@@ -18,8 +18,10 @@ variable {R K : Type} [CommRing R] [IsLocalRing R] [Field K] [Algebra R K]
   [TopologicalSpace B] [DiscreteTopology B] [TopologicalSpace C] [DiscreteTopology C]
 
 /-- The discrete uniformity used only on the original finite coordinate algebras. -/
-local instance continuousCoordinateLevelUniformSpace (n : ℕ) : UniformSpace (X.level n).CoordinateRing := ⊥
-local instance continuousCoordinateLevelDiscreteUniformity (n : ℕ) : DiscreteUniformity (X.level n).CoordinateRing := ⟨rfl⟩
+local instance continuousCoordinateLevelUniformSpace (n : ℕ) :
+    UniformSpace (X.level n).CoordinateRing := ⊥
+local instance continuousCoordinateLevelDiscreteUniformity (n : ℕ) :
+    DiscreteUniformity (X.level n).CoordinateRing := ⟨rfl⟩
 
 /-- Continuity into a discrete test algebra is exactly annihilation of a level ideal. -/
 theorem continuous_coordinateMap_iff (f : X.coordinateLimit →ₐ[R] B) :
