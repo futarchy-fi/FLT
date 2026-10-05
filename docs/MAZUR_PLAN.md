@@ -181,6 +181,28 @@ unchanged. The audit test checks every declaration in the new namespace,
 and exercises nonreduced and residue-characteristic-three bases.
 
 
+### Projective comparison: cover and chart immersions — 2026-10-05
+
+`FLT/EllipticCurve/CubicProjectiveCover.lean` proves that the actual
+projective zero locus of the homogeneous Weierstrass polynomial lies in
+D+(Y) union D+(Z). At a prime ideal, the equation and Y=Z=0 force X^3=0
+and hence X=0, contradicting membership in projective space. This uses
+arbitrary coefficient rings, not just field-valued points.
+
+The module also constructs both chart morphisms to the same polynomial
+projective plane, proves they are immersions over the coefficient base,
+and checks that their coordinate permutations pull the homogeneous cubic
+back to the two equations used in the gluing.
+
+**Still missing for projective identification:** equality of these actual
+scheme morphisms on the overlap, descent to the glued scheme, and the
+closed-immersion proof. Coverage of points alone does not prove any of
+these scheme-level assertions. Properness and the subsequent smooth
+group-scheme/modular constructions remain unproved. The namespace-wide
+trust audit includes the new comparison declarations; no arithmetic
+assumption of FLT is removed.
+
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
