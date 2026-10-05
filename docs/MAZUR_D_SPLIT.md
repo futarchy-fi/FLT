@@ -1,6 +1,15 @@
 # Mazur track D: extension and local arithmetic
 
-## D-W11: elliptic component quotient via minimal equations
+## D-W12: elliptic component quotient via minimal equations
+
+Checked 2026-10-05 03:16 UTC: C1.5a.x.1–9 have foreground module builds,
+individual module linters, and audits of all 33 new theorems plus both label
+functions. Every audited axiom set is contained in {propext, Classical.choice,
+Quot.sound}; evidence is `Scratch/MazurDW12/*-build.log`, `*-lint.log`, and
+`axioms.log` (rerun `lake env lean Scratch/MazurDW12/Axioms.lean`). Each module
+has 67–104 lines against its 240-line cap. C1.5a.x.10 is the first open item:
+the label function is not yet proved additive, so no cyclic classification
+or homomorphism to Z/nZ is claimed.
 
 This replaces the general Néron-model prerequisite in the older C1 rows below.
 For an elliptic curve over a complete DVR with perfect residue field, use a
@@ -45,7 +54,16 @@ Consumer labels describe dependencies, not completed downstream theorems.
 | C1.5a.vii | `EllipticNodePointDepth` / 240 | The actual integral equation bounds common coordinate depth by n/2 when a₆ has exact depth n. | C1.5a.viii. |
 | C1.5a.viii | `EllipticNodeCoordinateFactor` / 240 | Extract primitive coordinates at some depth k≤n/2 for a principal maximal ideal; construct the scaled coefficient factors. | C1.5a.ix. |
 | C1.5a.ix | `EllipticNodePointBranches` / 240 | Derive tangent branches from the deep coefficients below/at n/2, and identify smooth reduction exactly with common depth zero. | C1.5a.x. |
-| C1.5a.x | Further leaves / ≤240 each | Assign labels 0, ±k, n/2 to actual generic points; prove compatibility with inverse and every addition branch, then construct the map to Z/nZ with kernel the actual E₀. | C1.5a, C1.5b/c. |
+| C1.5a.x.1 | `EllipticNodeCoordinateUnique` / 240 | Primitive factorizations fix the depth and both quotients. | C1.5a.x.10. |
+| C1.5a.x.2 | `EllipticNodeBranchLabel` / 240 | Signed depth labels; zero and midpoint rules; independence of factorization. | C1.5a.x.10. |
+| C1.5a.x.3 | `EllipticNodeBranchInverse` / 240 | The actual inverse coordinate exchanges the strict tangent branches. | C1.5a.x.10. |
+| C1.5a.x.4 | `EllipticNodePointCoordinates` / 240 | Unique primitive witnesses for actual generic points; existence outside E₀. | C1.5a.x.10. |
+| C1.5a.x.5 | `EllipticNodeComponentLabel` / 240 | A function on actual generic points with zero fiber exactly E₀; no additivity assumed. | C1.5a.x.10. |
+| C1.5a.x.6 | `EllipticNodeComponentInverse` / 240 | Actual generic negation negates the label, including smooth and midpoint cases. | C1.5a.x.10. |
+| C1.5a.x.7 | `EllipticNodeSecantSlope` / 240 | Integral secant slopes at unequal depths and their reduced tangent directions. | C1.5a.x.10. |
+| C1.5a.x.8 | `EllipticNodeSecantReduction` / 240 | Actual addition at an integral nodal tangent slope has singular reduction. | C1.5a.x.10. |
+| C1.5a.x.9 | `EllipticNodeUnequalDepthAddition` / 240 | Positive unequal depths cannot sum into E₀ and give distinct actual E/E₀ classes. | C1.5a.x.10. |
+| C1.5a.x.10 | Further leaves / ≤240 each | Prove the exact label of P+Q in every branch (smooth translations, unequal/equal depths, doubling, cancellation and midpoint); package the additive map to Z/nZ with kernel E₀. | C1.5a, C1.5b/c. |
 | C1.5a | `EllipticSplitComponentClasses` / 240 | In split multiplicative normal form, construct a class map to Z/nZ and prove its kernel is E₀ by the valuation branches of point addition. | Split branch of A1-C1; C2/C3/Cp. |
 | C1.5b | `EllipticSplitComponentOrder` / 240 | Lift all n classes over the complete DVR and obtain E/E₀ ≃+ Z/nZ; thus cyclic of order ord(Δ). | A1-C1; C2/C3/Cp. |
 | C1.5c | `EllipticNonsplitComponents` / 240 | Compare E₀ under the unramified quadratic splitting extension, inject rational classes into geometric classes, and prove Galois acts by negation. Deduce cardinality at most 2. | A1-C1; nonsplit exclusions in C2/C3/Cp. |
