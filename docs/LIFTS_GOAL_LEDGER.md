@@ -4,6 +4,70 @@ This is a delta to [LF0](LIFT_FAMILY_PLAN.md), especially its restricted lifting
 contract and K1, and [CORE](CORE_PLAN.md), L0–L6. It does not replace those plans
 or their shared lifting/family budget. Queue IDs below are **GL**, not their L IDs.
 
+## W72 — local normalization, relative relations and arithmetic tangent cocycles
+
+Checked against the new-module builds, individual lints and exhaustive axiom
+receipts in `Scratch/LiftsW72/`; `python3 Scratch/LiftsW72/check.py` reports
+its checked-at time and checks saved source/log hashes. Rerun Lean with
+`python3 Scratch/LiftsW72/validate.py`. The acceptance handoff is
+`LIFTS_W72_RESULT.md` (untracked). **The lifting admission remains open.**
+
+S0a3 advances in `SerreWeight/LocalCharacterNormalization` and
+`CoefficientOrdinaryInvariance`. The already proved surjectivity of the actual
+rational p-adic inertia cyclotomic character supplies the surjectivity input
+for arbitrary coefficient fields. Kernel containment is still a hypothesis.
+Normalization extracts an unramified whole-local factor; equality with the
+whole-local cyclotomic character is equivalent to exponent one **and**
+triviality of that factor. The complete ordinary input and its finite recipe
+table are invariant under rescaling both line bases and simultaneous twists.
+This does not prove kernel containment for every required character, compare
+different invariant lines, identify symmetric-power composition factors, or
+evaluate the numerical Serre weight.
+
+Lp0 advances in `RelativePDPresentation` and
+`ComplexRelativePDPresentation`. The relative quotient imposes every base
+PD relation and maps to arbitrary compatible PD targets, including torsion
+targets; symbol values determine these maps uniquely. The actual A_inf
+specialization uses **ker(theta) + (p)** and the canonical divided powers on
+(p) in the original p-adic integers. This is necessary because (p) is not
+part of the theta kernel. These are compatibility relations and a weak
+mapping property, **not constructed PD operations on the presentation**.
+The earlier map from the absolute theta presentation to the theta hull
+cannot simply be reused as a relative PD map: an enlarged PD ideal containing
+p must first be constructed and compared. PD operations/descent, that
+comparison, Frobenius stability, completion, B_cris, exact comparison and
+integral lattice recovery remain. W58's Frobenius/theta counterexample is
+unchanged.
+
+G0a advances in `ArithmeticGaloisFixedField`: the same closed ramification
+kernel has a fixed field in the original algebraic closure, with exactly that
+fixing subgroup. Restriction identifies its Galois group with the arithmetic
+quotient as both a group and a topological space. The quotient is consequently
+profinite with its original topology. Independence under changes of local
+embeddings and the arithmetic H^i comparisons remain separate.
+
+G0b advances in `RepresentationTheory/MatrixAdjointCocycle`,
+`MatrixTangentTrace`, `DualNumberMatrixFrame`, and
+`HardlyRamifiedTangentCocycle`. The actual derivative is continuous; right
+normalization gives a continuous cocycle in the **trace-zero adjoint itself**.
+Its trace is zero by the actual fixed determinant equation, and the exact
+second row at two remains zero. Explicit dual-number strict frames compute
+the conjugation derivative. Every frame reducing to the identity has this
+form, and strict derivative changes are equivalent to adjoint coboundaries.
+This proves the matrix comparison, not an equivalence between the HR tangent
+space and arithmetic Selmer classes: the exact local images, especially
+finite-flat/crystalline at p, remain unproved. Tate duals, perfect local
+pairings, Poitou–Tate, obstruction theory and the matched image-ring dimension
+bound are still required; see [the updated G0/G1 leaves](LIFTS_W59_GLOBAL_CONTRACTS.md).
+
+D3/D4 remain deferred until the local gates close. W71's source-matched split
+below still applies: identify the selected completed-tensor-product image,
+construct the auxiliary totally real residual modular seed, prove patched
+finiteness over that field, and descend finiteness by restriction. Only then
+combine finiteness with the same ring's dimension bound to rule out nilpotent
+p, extract the prime order, and recover the original scalar/tensor data.
+Neither the trace retraction nor these tangent cocycles prove those inputs.
+
 ## W71 — strict trace retraction and the next local foundations
 
 Checked source against foreground module builds and per-module lint/axiom
