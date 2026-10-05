@@ -1075,3 +1075,39 @@ receipts, root imports, and the post-merge root build. The untracked W24 handoff
 records its timestamp, commits, memory measurements, and remaining work.
 `rg -n Mazur_statement FLT/Assumptions/Mazur.lean FermatsLastTheorem.lean` checks
 the endpoint: the Mazur assumption remains. P9e is not complete.
+
+
+## W25: scheme refinement composition and common affine chart transitions
+
+Checked at 2026-10-05T17:11:50.359694+00:00. Eight new modules passed foreground builds and separate
+single-module lints. Their originating-module audits checked 112 declarations;
+only `propext`, `Classical.choice`, and `Quot.sound` occur.
+
+- `SchemeOverlapProjectionComposition` and `SchemeOverlapRefinementComposition`
+  prove that actual projection charts compose and that the cover composition
+  isomorphism intertwines successive and composite scheme descent data.
+- `SchemeAffineChartComposition` and `SchemeAffineChartRefinement` extract this
+  compatibility, descend the cover chart, and construct the effective comparison
+  between a restricted chart sheaf and direct descent on the composite chart.
+  Its reconstruction square and uniqueness are proved.
+- `SchemeAffineChartNamedRefinement` and `SchemeAffineChartRefinementNaturality`
+  support independently named common chart endpoints and prove compatibility
+  with descended maps from the original scheme datum.
+- `SchemeAffineDescentChart` bundles only geometric chart/refinement inputs.
+  `SchemeAffineCommonRefinement` constructs transitions on one common affine
+  refinement, with identity, inverse, cocycle, uniqueness, and map naturality.
+
+No `ModuleSheafGluing.Data` for an open cover has been assembled. The supplied
+common refinement is geometric input; its existence on overlap subopens and
+independence from its choice remain to be proved. The next steps are composition
+coherence of the constructed chart comparisons, stability of transitions under
+further common refinements, choosing the affine chart covers, and assembly of
+open-chart transitions and gluing. P9e and P10–P21 remain open.
+
+Validation commands for each named module are
+`LEAN_NUM_THREADS=2 lake build FLT.Mazur.MODULE` and
+`LEAN_NUM_THREADS=2 lake exe runLinter FLT.Mazur.MODULE`.
+Each leaf has at most 240 lines, with no line over 100 characters.
+The read-only endpoint check
+`rg -n Mazur_statement FLT/Assumptions/Mazur.lean FermatsLastTheorem.lean`
+continues to find the Mazur assumption.
