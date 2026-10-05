@@ -2957,9 +2957,12 @@ public import FLT.Mazur.EllipticNodeUniformizerLabel
 public import FLT.Mazur.EllipticNodeVariableChangeLabel
 public import FLT.Mazur.EllipticNonsplitNodeBound
 public import FLT.Mazur.EllipticNonsplitNodeComponents
+public import FLT.Mazur.EllipticNonsplitNodeParameter
+public import FLT.Mazur.EllipticNonsplitNormOneHom
 public import FLT.Mazur.EllipticNormalizedDoubleRoot
 public import FLT.Mazur.EllipticNormalizedMinimalAdditive
 public import FLT.Mazur.EllipticNormalizedSingularity
+public import FLT.Mazur.EllipticNormalizedSlope
 public import FLT.Mazur.EllipticNormalizedStarZero
 public import FLT.Mazur.EllipticNormalizedTypeII
 public import FLT.Mazur.EllipticNormalizedTypeIII
@@ -3005,6 +3008,7 @@ public import FLT.Mazur.EllipticStarTranslationDepth
 public import FLT.Mazur.EllipticStarZeroCoordinates
 public import FLT.Mazur.EllipticStarZeroResidue
 public import FLT.Mazur.EllipticStarZeroSlope
+public import FLT.Mazur.EllipticTangentParameterHom
 public import FLT.Mazur.EllipticTripleRootBranches
 public import FLT.Mazur.EllipticTypeIIIDepth
 public import FLT.Mazur.EllipticTypeIIISlope
@@ -3377,6 +3381,7 @@ public import FLT.Mazur.NodeSmoothLocus
 public import FLT.Mazur.NodeTangentAlgebra
 public import FLT.Mazur.NodeTangentDepth
 public import FLT.Mazur.NodeTangentExtension
+public import FLT.Mazur.NodeTangentFieldFixed
 public import FLT.Mazur.NodeTangentFractionField
 public import FLT.Mazur.NodeTangentGaloisLabel
 public import FLT.Mazur.NodeTangentShear
