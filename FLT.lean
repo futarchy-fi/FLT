@@ -2637,6 +2637,8 @@ public import FLT.Mazur.AffineReverseOverlapDiagonal
 public import FLT.Mazur.AffineScaledPullbackSections
 public import FLT.Mazur.AffineScaledTripleTransport
 public import FLT.Mazur.AffineSectionsReconstruction
+public import FLT.Mazur.AffineSourcePullbackSections
+public import FLT.Mazur.AffineSourceSectionComparison
 public import FLT.Mazur.AffineSquareEquivalences
 public import FLT.Mazur.AffineSquareScalarExtension
 public import FLT.Mazur.AffineSquareTensorComparison
@@ -3323,14 +3325,17 @@ public import FLT.Mazur.IdealAdicGradedUnit
 public import FLT.Mazur.IdealAdicLineQuotient
 public import FLT.Mazur.IdealAdicLineTower
 public import FLT.Mazur.IdealAdicQuotient
+public import FLT.Mazur.IdealAdicRelativeAffineSheaf
 public import FLT.Mazur.IdealAdicRelativeClosedModule
 public import FLT.Mazur.IdealAdicRelativeGradedAlgebra
 public import FLT.Mazur.IdealAdicRelativePresheaf
+public import FLT.Mazur.IdealAdicRelativeQuasiCoherent
 public import FLT.Mazur.IdealAdicRelativeRestriction
 public import FLT.Mazur.IdealAdicRelativeSheaf
 public import FLT.Mazur.IdealAdicRelativeSheafCharts
 public import FLT.Mazur.IdealAdicRelativeSheafFinite
 public import FLT.Mazur.IdealAdicRelativeSheafGenerators
+public import FLT.Mazur.IdealAdicRelativeTilde
 public import FLT.Mazur.IdealCartierNeighborhood
 public import FLT.Mazur.IdealCohomologyAmpleAnyBase
 public import FLT.Mazur.IdealCohomologyAmpleCriterion
@@ -3508,6 +3513,7 @@ public import FLT.Mazur.ModuleSheafTensorTilde
 public import FLT.Mazur.ModuleSheafUnitCocycle
 public import FLT.Mazur.ModuleSheafUnitCocycleRestrict
 public import FLT.Mazur.ModuleSheafificationTensor
+public import FLT.Mazur.ModuleSourceSectionBaseChange
 public import FLT.Mazur.ModuleStalkExact
 public import FLT.Mazur.ModuleSubobjectCoverEquality
 public import FLT.Mazur.ModuleTensorCokernelDescent
@@ -3907,6 +3913,7 @@ public import FLT.Mazur.PuncturedNodeRestrictionComparison
 public import FLT.Mazur.PushforwardCech
 public import FLT.Mazur.PushoutModuleScalars
 public import FLT.Mazur.QuadraticComponentBound
+public import FLT.Mazur.QuasiCoherentAffineBasePullback
 public import FLT.Mazur.RationalFibers
 public import FLT.Mazur.ReconstructionComposition
 public import FLT.Mazur.RefinedChartSpectrum
@@ -4085,6 +4092,7 @@ public import FLT.Mazur.TensorPowerReassociation
 public import FLT.Mazur.TernaryOpenDescent
 public import FLT.Mazur.TildeInvertibleLocal
 public import FLT.Mazur.TildePrincipalOpen
+public import FLT.Mazur.TildeSourceSectionComparison
 public import FLT.Mazur.TorusChartScalars
 public import FLT.Mazur.TrivialLineTwistLocalization
 public import FLT.Mazur.UniformizerRootExtension
