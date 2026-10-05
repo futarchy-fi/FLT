@@ -2967,9 +2967,9 @@ Hopf model with its original closed embedding.
 | CE10 / `RationalConnectedRanks`, `RationalConnectedSystem` | Proved the common connected height, bounded by the original height, and all level ranks; bundled the original connected p-divisible system. |
 | CE11 / `RationalComponentQuotient` | Constructed the original finite-flat quotient by contraction, its faithfully flat projection and its exact connected kernel ideal. |
 | CE12 / `RationalComponentQuotientEtale` | Proved finite etaleness over the original base by faithfully descending idempotence of the augmentation ideal. No constant-group replacement is used. |
-| CE13 / `RationalEtaleLevelTower`, `RationalEtaleReductionFlat`, `RationalEtaleRanks` | Constructed both transitions, naturality, coherence, multiplication, annihilators, faithfully flat reductions and complementary-height ranks. Closed inclusions and the integral transition-kernel equations remain open; the quotient is not yet bundled as a p-divisible system. |
-| CE14 / `RationalConnectedEtaleExtension`, `RationalEtaleTateModule`, `RationalEtaleTateGalois` | Constructed the original level extensions, including their torsors, and the exact sequence of p-adic inverse-limit modules with original Galois equivariance. The right-hand limit is defined directly from the quotient tower; identifying it with the Tate module of a bundled quotient system awaits CE13. No splitting is claimed. |
-| HT1 / original Hodge-Tate maps | Open: identify the existing dlog and infinitesimal maps with the correctly twisted Lie terms, including coefficient completion. |
+| CE13 / `RationalEtaleClosed`, `RationalEtaleGenericKernel`, `RationalEtaleKernel`, `RationalEtaleSystem` | Proved closed quotient inclusions for every prime, generic exactness with the actual maps, and integral kernel equations using flatness. Bundled the original quotient system with its proved complementary height. |
+| CE14 / `RationalEtaleSystemProjection`, `RationalConnectedEtaleSystemExtension` | Constructed the quotient system morphism and identified its Tate module and projection with the previous original inverse limit. Proved surjectivity, the connected kernel and original Galois equivariance. The level extensions retain the same maps and torsors; no splitting is chosen. |
+| HT1 / `RationalConnectedLie`, `RationalPlaceCompletedCotangent`, `RationalPlaceHodgeTateRight` | Partial: identified the original connected Lie module, proved the quotient Lie module is zero, removed integral completion over actual O_C, and constructed the right lattice differential into the dual Lie module of the actual Cartier dual over C_p. Full C_p scalar extension, original Galois equivariance and the twisted left map remain open. |
 | HT2 / connected comparison | Open: prove the connected Hodge-Tate exact sequence; split kernel, image and dimension arguments. Connectedness alone supplies none of these conclusions. |
 | HT3 / full Cartier compatibility | Open: compute the pairing on both Hodge-Tate components and assemble it through CE14. The W59 constant calculation is a required test. |
 | DR1 / period realization | Open: construct the universal-extension/Dieudonne period realization with the original generic fibre and filtration. |
@@ -2981,25 +2981,57 @@ with source height `rationalConnectedHeight`. Its induced Tate map is p-adic
 linear and injective. The quotient level ranks are
 `p ^ (n * (height - rationalConnectedHeight))`.
 
-The connected tower is now a `PDivisibleSystem`. The quotient levels are
-finite etale, but CE13 still needs closed inclusions and the integral
-transition-kernel equations. Do not infer either from the rank formula.
+Both the connected tower and its original finite etale quotient are now
+`PDivisibleSystem`s. Closedness is proved from reflection of the connected
+kernel and etale rigidity. Integral exactness uses the proved actual generic
+sequence and flatness, rather than inferring it from ranks alone.
 The exact inverse-limit sequence was proved directly: finite nonempty fibres
 have compatible choices, and levelwise exactness plus injectivity identifies
 the kernel with the original connected Tate module. Both maps commute with
 the original Galois action. The level extensions and torsor maps retain the
 original extension; no product decomposition or section is constructed.
 
-HT1-HT3, DR1, P2-P6, W1-W3 and the original family admission remain open.
+HT1 is partially constructed; HT2-HT3, DR1, P2-P6, W1-W3 and the original
+family admission remain open.
 The connected-etale exact sequence is not the Hodge-Tate sequence displayed
 above. In particular, nothing here restores W57's refuted full-period identity
 or establishes de Rham admissibility. No edit of an existing admitted module
 is authorized by this task.
 
 Validation, source hashes, exact commits and checked-at times are recorded in
-the untracked `FAMILY_W60_DONE.md`, `W60_VALIDATION.json` and
-`W60_AXIOM_RESULT.json`. Recheck with `python3 W60_FINAL_CHECKS.py`;
-`python3 W60_VALIDATE.py` builds each new module in the foreground and lints
-one module at a time. `python3 W60_RUN_AXIOMS.py` audits the new declarations
+the untracked `FAMILY_W61_DONE.md`, `W61_VALIDATION.json` and
+`W61_AXIOM_RESULT.json`. Recheck with `python3 W61_FINAL_CHECKS.py`;
+`python3 W61_VALIDATE.py` builds each new module in the foreground and lints
+one module at a time. `python3 W61_RUN_AXIOMS.py` audits the new declarations
 and the original family boundary. The final root build follows merging
 origin/main; no whole-library lint is used.
+
+## W61: original Lie modules and completed right differential
+
+`RationalConnectedCotangentLevels` proves that the actual connected embedding
+induces a cotangent isomorphism, because its coordinate kernel is idempotent.
+`PDivisibleVariableHeightCotangent` lifts these isomorphisms through the actual
+inverse systems. Dualizing gives `rationalConnectedLieEquiv`. The actual etale
+quotient has zero cotangent and Lie modules. Neither statement identifies the
+connected group with a multiplicative group.
+
+`AdicFiniteFreeCoefficients` proves completeness using finite free coordinates,
+without a Noetherian assumption on O_C. The resulting
+`rationalPlaceCompletedCotangentEquiv` identifies the completed cotangent tensor
+with the actual integral O_C tensor and inverts the canonical completion map.
+`rationalPlaceHodgeTateDlogIntegral` retains every original finite Cartier
+differential. Only after this completion comparison are coefficients mapped
+to C_p, using the fixed original closure transport.
+
+`PDivisibleCartierBidual` constructs the integral system map into the actual
+double dual. Composing its Tate map with the differential of the Cartier dual
+and the original cotangent/Lie biduality gives
+`rationalPlaceHodgeTateRight` on the original Tate lattice. This is a semilinear
+lattice map into `(Lie(G^vee))^* tensor C_p`; the full C_p-linear right map,
+its equivariance, the twisted left map, and exactness have not been proved.
+The W59 constant-system counterexample remains a required sanity check.
+
+Read-only evidence for these implementation claims is the W61 source and
+per-module logs, checked-at timestamps and axiom coverage in
+`W61_VALIDATION.json` and `W61_AXIOM_RESULT.json`; rerun
+`python3 W61_FINAL_CHECKS.py` for the source/hash, scope and final-build check.
