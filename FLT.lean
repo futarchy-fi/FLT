@@ -3136,6 +3136,9 @@ public import FLT.Mazur.HomIntegerModel
 public import FLT.Mazur.HomogeneousLocalizationBaseChange
 public import FLT.Mazur.HomogeneousLocalizationGenerator
 public import FLT.Mazur.HomogeneousLocalizationScalars
+public import FLT.Mazur.IdealAdicCohomology
+public import FLT.Mazur.IdealAdicGradedSequence
+public import FLT.Mazur.IdealAdicQuotient
 public import FLT.Mazur.IdealCartierNeighborhood
 public import FLT.Mazur.IdealCohomologyAmpleAnyBase
 public import FLT.Mazur.IdealCohomologyAmpleCriterion

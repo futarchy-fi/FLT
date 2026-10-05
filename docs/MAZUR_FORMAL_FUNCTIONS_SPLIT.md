@@ -54,10 +54,12 @@ Existing modules are reused without edits.
 | F1d1 | Rank-one coordinates on the actual Chow direct-image generic stalk | F1b1, existing generic-neighborhood comparisons |
 | F1d2 | Closed Chow witness support and residue rank one | F1c4, F1d1, existing closed-stalk comparisons |
 | F1e | Proper coherent cohomology finite over a Noetherian ring, all degrees | F0b-F0c, F1b2, F1d2 |
-| F2a | Actual m-adic coefficient quotients, transition maps and graded exact sequences | ideal multiplication and sheaf cokernels |
-| F2b | Uniform Serre bound for the finite-type associated graded coefficient module | F2a, graded coherent Serre theorem (Stacks 30.19.3) |
-| F2c | Vanishing on all infinitesimal fibres and surjective H0 transition maps | F2b, cohomology exact sequence |
-| F3a | Artin-Rees control of cohomology filtrations for the proper coefficient system | F1e, F2a; Stacks 30.20.4 |
+| F2a1 | Actual ideal-adic coefficient quotients and compatible epimorphic transitions | ideal multiplication and sheaf cokernels |
+| F2a2 | Canonical graded short exact sequences with ideal-annihilated kernels | F2a1, cokernel-composition snake lemma |
+| F2a3 | Specialize to the base maximal ideal; compare powers, quotient pullback and tensor powers | F2a1-F2a2, base ideal pullback |
+| F2b | Uniform Serre bound for the finite-type associated graded coefficient module | F2a3, graded coherent Serre theorem (Stacks 30.19.3) |
+| F2c | Quotient vanishing and surjective H0 reductions from graded vanishing | F2a2, cohomology exact sequence; applying it needs F2b |
+| F3a | Artin-Rees control of cohomology filtrations for the proper coefficient system | F1e, F2a3; Stacks 30.20.4 |
 | F3b | H0 completion-to-inverse-limit comparison with quotient compatibility | F3a, completion and inverse-limit APIs; Stacks 30.20.5 |
 | F3c | Eventual surjectivity onto the closed fibre, using induced-topology comparison | F2c, F3a-F3b; Stacks 30.20.4(3) |
 | F4a | Lift a finite ample fibre presentation and shrink by properness (0D2N) | F3c, `ProperFiberNeighborhood` |
@@ -69,6 +71,30 @@ does not permit applying `FlatGlobalSectionBaseChange` to that map.
 Full proper-only 0D2S still requires proper inverse-system approximation;
 one finitely presented cartesian model does not prove that full statement.
 A7-A8 remain downstream, and the parallel D/G2 lanes remain separate.
+
+## W96 implementation boundary
+
+`ModuleRingCohomologyExact`, `CoherentRingCohomologyFinite` and
+`RingCohomologyFinitePushforward` supply F0a-F0c. The affine-base Chow
+modules supply F1a-F1d2. `ProperRingCohomologyFinite` assembles F1e:
+`FLT.Mazur.Chow.AffineBase.proper_coherent_hasFiniteRingCohomology`
+proves all-degree finite cohomology for any coherent coefficient on a
+proper scheme over a Noetherian ring (schemes in universe zero).
+The ring action is the one induced by the specified structure morphism.
+The rank-one witnesses and their cohomology finiteness are constructed.
+
+`IdealAdicQuotient` constructs M / I^n M and its inverse system for an
+actual ideal sheaf I. `IdealAdicGradedSequence` proves the canonical
+short exact sequence with kernel I^n M / I^(n+1) M and its annihilation
+by I. These are F2a1-F2a2, not yet the base-maximal-ideal identification.
+`IdealAdicCohomology` supplies F2c as an implication from graded
+vanishing, including surjectivity across any finite number of reductions.
+It does not supply the uniform bound needed to apply that implication.
+
+The next missing inputs are F2a3/F2b and F3a-F3c. In particular no theorem
+here identifies completed H0 with the compatible quotient sections, nor
+shows that original sections surject onto the closed fibre. L2, arbitrary
+base transfer, A7-A8 and removal of `Mazur_statement` remain unproved.
 
 ## Recheck
 
