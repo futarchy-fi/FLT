@@ -34,6 +34,7 @@ public import FLT.AbsoluteGaloisGroup.CompletionComparison
 public import FLT.AbsoluteGaloisGroup.CompletionIntegersAdic
 public import FLT.AbsoluteGaloisGroup.CyclotomicCharacterNaturality
 public import FLT.AbsoluteGaloisGroup.FiniteCharacterInertia
+public import FLT.AbsoluteGaloisGroup.FiniteImageField
 public import FLT.AbsoluteGaloisGroup.FiniteTameQuotient
 public import FLT.AbsoluteGaloisGroup.FiniteTameRootExponent
 public import FLT.AbsoluteGaloisGroup.FiniteUniformizerRootCharacter
@@ -44,6 +45,7 @@ public import FLT.AbsoluteGaloisGroup.FirstRamificationRestriction
 public import FLT.AbsoluteGaloisGroup.FundamentalCoefficients
 public import FLT.AbsoluteGaloisGroup.FundamentalCyclotomic
 public import FLT.AbsoluteGaloisGroup.FundamentalTame
+public import FLT.AbsoluteGaloisGroup.HermiteFiniteRepresentations
 public import FLT.AbsoluteGaloisGroup.HigherNiveauCyclotomicNorm
 public import FLT.AbsoluteGaloisGroup.InertiaComparison
 public import FLT.AbsoluteGaloisGroup.InertiaCyclicQuotient
@@ -166,6 +168,9 @@ public import FLT.Deformations.DeSmitLenstra.ProfiniteFramedLimit
 public import FLT.Deformations.DeSmitLenstra.ProfiniteFramedQuotients
 public import FLT.Deformations.DeSmitLenstra.ProfiniteUniversalLift
 public import FLT.Deformations.DeSmitLenstra.TraceCoefficients
+public import FLT.Deformations.DeSmitLenstra.TraceImageLift
+public import FLT.Deformations.DeSmitLenstra.TraceMorphismExt
+public import FLT.Deformations.DeSmitLenstra.TraceSpecialization
 public import FLT.Deformations.DeSmitLenstra.UniversalLift
 public import FLT.Deformations.DeSmitLenstra.UniversalMoritaData
 public import FLT.Deformations.DeSmitLenstra.UniversalTraceLift
@@ -182,9 +187,16 @@ public import FLT.Deformations.FramedTrivialityIdeal
 public import FLT.Deformations.HardlyRamifiedArithmeticAtTwo
 public import FLT.Deformations.HardlyRamifiedArithmeticQuotient
 public import FLT.Deformations.HardlyRamifiedArithmeticResidual
+public import FLT.Deformations.HardlyRamifiedFiniteParameters
 public import FLT.Deformations.HardlyRamifiedFlatLift
 public import FLT.Deformations.HardlyRamifiedFlatPoint
 public import FLT.Deformations.HardlyRamifiedFlatQuotient
+public import FLT.Deformations.HardlyRamifiedFramedParameters
+public import FLT.Deformations.HardlyRamifiedParameterComparison
+public import FLT.Deformations.HardlyRamifiedTraceArithmetic
+public import FLT.Deformations.HardlyRamifiedTraceImage
+public import FLT.Deformations.HardlyRamifiedTraceLift
+public import FLT.Deformations.HardlyRamifiedTraceParameters
 public import FLT.Deformations.HardlyRamifiedTwoQuotient
 public import FLT.Deformations.HardlyRamifiedUniversal
 public import FLT.Deformations.HardlyRamifiedWittLift
@@ -197,6 +209,7 @@ public import FLT.Deformations.LiftFunctor
 public import FLT.Deformations.OpenIdealCondition
 public import FLT.Deformations.OrdinaryQuadraticUniversalQuotient
 public import FLT.Deformations.OrdinaryUniversalQuotient
+public import FLT.Deformations.ProartinianImage
 public import FLT.Deformations.ProartinianQuotients
 public import FLT.Deformations.Representable
 public import FLT.Deformations.RepresentationTheory.AbsoluteGaloisGroup
