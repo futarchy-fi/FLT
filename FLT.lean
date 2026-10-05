@@ -2594,6 +2594,10 @@ public import FLT.Mazur.EllipticFormalAssociativity
 public import FLT.Mazur.EllipticFormalBaseChange
 public import FLT.Mazur.EllipticFormalCoordinates
 public import FLT.Mazur.EllipticFormalCubic
+public import FLT.Mazur.EllipticFormalDoubling
+public import FLT.Mazur.EllipticFormalEvaluationAddition
+public import FLT.Mazur.EllipticFormalEvaluationCongruence
+public import FLT.Mazur.EllipticFormalEvaluationPoint
 public import FLT.Mazur.EllipticFormalFieldPoint
 public import FLT.Mazur.EllipticFormalFirstOrder
 public import FLT.Mazur.EllipticFormalGenericParameters
@@ -2608,9 +2612,14 @@ public import FLT.Mazur.EllipticFormalSecant
 public import FLT.Mazur.EllipticFormalSecantComparison
 public import FLT.Mazur.EllipticFormalSubstitution
 public import FLT.Mazur.EllipticFormalSymmetry
+public import FLT.Mazur.EllipticFormalTangent
 public import FLT.Mazur.EllipticInfinityEvaluation
 public import FLT.Mazur.EllipticInfinityParameter
 public import FLT.Mazur.EllipticInfinityPowerSeries
+public import FLT.Mazur.EllipticLocalAddition
+public import FLT.Mazur.EllipticLocalChartPoint
+public import FLT.Mazur.EllipticLocalEvaluation
+public import FLT.Mazur.EllipticLocalMultiplication
 public import FLT.Mazur.EllipticProjectiveReduction
 public import FLT.Mazur.EllipticReductionAffineAddition
 public import FLT.Mazur.EllipticReductionInfinityChart
