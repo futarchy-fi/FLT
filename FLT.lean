@@ -3825,6 +3825,7 @@ public import FLT.Mazur.SchemeOverlapDiagonalDetection
 public import FLT.Mazur.SchemeOverlapRefinement
 public import FLT.Mazur.SchemeOverlapRefinementCoherence
 public import FLT.Mazur.SchemeOverlapRefinementDiagonal
+public import FLT.Mazur.SchemeOverlapTransportComposition
 public import FLT.Mazur.SchemePicardClasses
 public import FLT.Mazur.SchemePicardGroup
 public import FLT.Mazur.SchemePicardPullback
