@@ -2786,6 +2786,8 @@ public import FLT.Mazur.EllipticNodeAdditionProduct
 public import FLT.Mazur.EllipticNodeBranchInverse
 public import FLT.Mazur.EllipticNodeBranchLabel
 public import FLT.Mazur.EllipticNodeComponentBound
+public import FLT.Mazur.EllipticNodeComponentCyclic
+public import FLT.Mazur.EllipticNodeComponentGenerator
 public import FLT.Mazur.EllipticNodeComponentInverse
 public import FLT.Mazur.EllipticNodeComponentLabel
 public import FLT.Mazur.EllipticNodeCoordinateFactor
@@ -2800,8 +2802,10 @@ public import FLT.Mazur.EllipticNodeEqualDepthSlope
 public import FLT.Mazur.EllipticNodeFirstBranchSlope
 public import FLT.Mazur.EllipticNodeFirstTriple
 public import FLT.Mazur.EllipticNodeLabelAdditivity
+public import FLT.Mazur.EllipticNodeLabelDecode
 public import FLT.Mazur.EllipticNodeLabelDescent
 public import FLT.Mazur.EllipticNodeLabelFibers
+public import FLT.Mazur.EllipticNodeLabelHom
 public import FLT.Mazur.EllipticNodeLabelSeparation
 public import FLT.Mazur.EllipticNodeLineProducts
 public import FLT.Mazur.EllipticNodeMiddleAddition
@@ -2819,6 +2823,7 @@ public import FLT.Mazur.EllipticNodeSameBranchSlope
 public import FLT.Mazur.EllipticNodeScaledEquation
 public import FLT.Mazur.EllipticNodeSecantReduction
 public import FLT.Mazur.EllipticNodeSecantSlope
+public import FLT.Mazur.EllipticNodeSumDepth
 public import FLT.Mazur.EllipticNodeTangent
 public import FLT.Mazur.EllipticNodeThirdIntersection
 public import FLT.Mazur.EllipticNodeTripleDepth
