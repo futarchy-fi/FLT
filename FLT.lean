@@ -3247,12 +3247,16 @@ public import FLT.Mazur.HomIntegerModel
 public import FLT.Mazur.HomogeneousLocalizationBaseChange
 public import FLT.Mazur.HomogeneousLocalizationGenerator
 public import FLT.Mazur.HomogeneousLocalizationScalars
+public import FLT.Mazur.IdealAdicBaseGradedGenerators
+public import FLT.Mazur.IdealAdicBasePowerGenerators
+public import FLT.Mazur.IdealAdicClosedGradedModule
 public import FLT.Mazur.IdealAdicCohomology
 public import FLT.Mazur.IdealAdicGradedAssociativity
 public import FLT.Mazur.IdealAdicGradedBaseAlgebra
 public import FLT.Mazur.IdealAdicGradedBaseProduct
 public import FLT.Mazur.IdealAdicGradedClosedAction
 public import FLT.Mazur.IdealAdicGradedClosedTwist
+public import FLT.Mazur.IdealAdicGradedDegreeZeroGeneration
 public import FLT.Mazur.IdealAdicGradedLineTwist
 public import FLT.Mazur.IdealAdicGradedMultiplication
 public import FLT.Mazur.IdealAdicGradedPullback
@@ -3278,6 +3282,7 @@ public import FLT.Mazur.IdealPowerExtensionCharts
 public import FLT.Mazur.IdealPowerExtensionGluing
 public import FLT.Mazur.IdealPowerGenericComparison
 public import FLT.Mazur.IdealPowerMultiplication
+public import FLT.Mazur.IdealPowerProductSurjective
 public import FLT.Mazur.IdealPowerVanishingTransfer
 public import FLT.Mazur.IdealQuotientExact
 public import FLT.Mazur.IdealQuotientSectionLift
