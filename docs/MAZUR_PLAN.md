@@ -203,6 +203,30 @@ trust audit includes the new comparison declarations; no arithmetic
 assumption of FLT is removed.
 
 
+### Projective descent — 2026-10-05
+
+`FLT/EllipticCurve/CubicProjectiveMorphism.lean` proves equality of the two
+actual scheme morphisms on the gluing overlap. It evaluates projective
+coordinate ratios in the quotient chart rings, extends the ordinary
+restriction through the projective Y/Z localization, and proves that its
+second restriction is the infinity substitution (x/y,1/y). Thus
+`toProjective` is now a constructed morphism from the glued Weierstrass
+scheme to P2, with both chart restrictions and base compatibility proved.
+
+The chart ring maps are surjective, so each map into its standard affine
+projective chart is a closed immersion. The module also computes the
+inverse image of every standard projective open on each source chart.
+All statements hold over arbitrary commutative rings.
+
+The next obligation is to identify the restrictions of the global
+morphism with these affine closed immersions and prove the global closed
+immersion, including its behavior outside D+(Y) union D+(Z).
+The global closed immersion, properness, smooth group scheme, modular
+curve, represented Jacobian and Eisenstein quotient remain unproved.
+The existing namespace-wide test now audits the new module transitively;
+no FLT arithmetic assumption has been removed.
+
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
