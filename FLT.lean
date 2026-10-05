@@ -2498,6 +2498,8 @@ public import FLT.Mazur.AdicCompletionScalars
 public import FLT.Mazur.AffineAnnihilator
 public import FLT.Mazur.AffineBaseSectionAlgebra
 public import FLT.Mazur.AffineBaseSectionFunctor
+public import FLT.Mazur.AffineBasisFiniteCover
+public import FLT.Mazur.AffineBasisSheafExtension
 public import FLT.Mazur.AffineBranchSequence
 public import FLT.Mazur.AffineCanonicalMapCompatibility
 public import FLT.Mazur.AffineCanonicalOverlapChart
@@ -3144,6 +3146,7 @@ public import FLT.Mazur.FiniteCechCyclesScalars
 public import FLT.Mazur.FiniteCechTermScalars
 public import FLT.Mazur.FiniteClosedIdealSection
 public import FLT.Mazur.FiniteClosedImmersionIntegerDescent
+public import FLT.Mazur.FiniteCoverDirectSumSheaf
 public import FLT.Mazur.FiniteDVRAbsoluteRamification
 public import FLT.Mazur.FiniteDVRComplete
 public import FLT.Mazur.FiniteDiagramCoverModel
@@ -3274,8 +3277,12 @@ public import FLT.Mazur.HomogeneousLocalizationGenerator
 public import FLT.Mazur.HomogeneousLocalizationScalars
 public import FLT.Mazur.IdealAdicBaseGradedGenerators
 public import FLT.Mazur.IdealAdicBasePowerGenerators
+public import FLT.Mazur.IdealAdicClosedCoefficientCharts
 public import FLT.Mazur.IdealAdicClosedGradedModule
+public import FLT.Mazur.IdealAdicClosedGradedRestriction
+public import FLT.Mazur.IdealAdicClosedGradedSheaf
 public import FLT.Mazur.IdealAdicClosedScalar
+public import FLT.Mazur.IdealAdicCoefficientAffineSheaf
 public import FLT.Mazur.IdealAdicCohomology
 public import FLT.Mazur.IdealAdicGradedAssociativity
 public import FLT.Mazur.IdealAdicGradedBaseAlgebra
@@ -3298,7 +3305,12 @@ public import FLT.Mazur.IdealAdicLineTower
 public import FLT.Mazur.IdealAdicQuotient
 public import FLT.Mazur.IdealAdicRelativeClosedModule
 public import FLT.Mazur.IdealAdicRelativeGradedAlgebra
+public import FLT.Mazur.IdealAdicRelativePresheaf
 public import FLT.Mazur.IdealAdicRelativeRestriction
+public import FLT.Mazur.IdealAdicRelativeSheaf
+public import FLT.Mazur.IdealAdicRelativeSheafCharts
+public import FLT.Mazur.IdealAdicRelativeSheafFinite
+public import FLT.Mazur.IdealAdicRelativeSheafGenerators
 public import FLT.Mazur.IdealCartierNeighborhood
 public import FLT.Mazur.IdealCohomologyAmpleAnyBase
 public import FLT.Mazur.IdealCohomologyAmpleCriterion
