@@ -4108,6 +4108,7 @@ public import FLT.Mazur.WeierstrassAdditionNormalization
 public import FLT.Mazur.WeierstrassAdditionSchemeCover
 public import FLT.Mazur.WeierstrassAffineProduct
 public import FLT.Mazur.WeierstrassChartOverlap
+public import FLT.Mazur.WeierstrassCubicPolarization
 public import FLT.Mazur.WeierstrassIntegralAdditionCharts
 public import FLT.Mazur.WeierstrassIntegralAdditionFormula
 public import FLT.Mazur.WeierstrassIntegralChart
