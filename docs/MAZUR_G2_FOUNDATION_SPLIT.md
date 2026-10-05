@@ -727,6 +727,7 @@ refined affine cocycle or construct the refined `Data`.
 | SchemeOverlapCocyclePullback | Normalized pullback preserves composition and restricts a cocycle to another triple test scheme |
 | SchemeOverlapBaseChange | Changing the coordinate sheaf base commutes with pair transport and preserves composition |
 | SchemeOverlapRefinementCocycle | Restriction preserves a cocycle on specified composite pair maps; its restriction equals the existing categorical refinement |
+| AffineFiberProductPairTransport | Pair maps from the affine triple overlap to the categorical double overlap, their projection squares, and coordinate sheaf transports |
 
 `SchemeOverlapRefinementCocycle.restrict_cocycle` takes the original overlap's
 cocycle on the composite pair maps from the refined triple test scheme.
@@ -737,7 +738,8 @@ cocycle using `SchemeOverlapCocycleChart.pullback_cocycle`.
 
 Continue in this order:
 
-1. Complete that affine triple-overlap construction and cocycle comparison.
+1. Compare affine pair transport with `AffineGeometricOverlap.fiberProductTransport`,
+   then complete the affine triple-overlap refinement and cocycle comparison.
    Prove `AffineGeometricOverlapRefinement.overlap` has the cocycle and combine
    it with `overlap_diagonal` to produce the refined `AffineGeometricDescent.Data`.
 2. Prove `CoactionCompatible` for the W17 reconstruction and the constructed
