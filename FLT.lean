@@ -2639,10 +2639,16 @@ public import FLT.Mazur.CechSortingMaps
 public import FLT.Mazur.CechSortingRecursiveHomotopy
 public import FLT.Mazur.CechSortingTupleChains
 public import FLT.Mazur.ChowAffineBaseChartData
+public import FLT.Mazur.ChowAffineBaseChartImageClosure
 public import FLT.Mazur.ChowAffineBaseChartImmersion
 public import FLT.Mazur.ChowAffineBaseGraphClosure
+public import FLT.Mazur.ChowAffineBaseGraphProductComparison
 public import FLT.Mazur.ChowAffineBaseGraphRestriction
+public import FLT.Mazur.ChowAffineBaseProductImageFactors
+public import FLT.Mazur.ChowAffineBaseProductOpenGluing
+public import FLT.Mazur.ChowAffineBaseProductOpenProper
 public import FLT.Mazur.ChowAffineBaseProjectiveProduct
+public import FLT.Mazur.ChowAffineBasePropernessCriterion
 public import FLT.Mazur.ChowAffineBaseSourceClosure
 public import FLT.Mazur.ChowAffineCover
 public import FLT.Mazur.ChowAffineEmbedding
@@ -3611,6 +3617,7 @@ public import FLT.Mazur.ProjectiveTwistingSheafTensor
 public import FLT.Mazur.ProperAmpleConverse
 public import FLT.Mazur.ProperCoherentCohomology
 public import FLT.Mazur.ProperCohomologyWitnesses
+public import FLT.Mazur.ProperCoverImmersionCriterion
 public import FLT.Mazur.ProperCurveGenus
 public import FLT.Mazur.ProperPointExtension
 public import FLT.Mazur.ProperSectionGluing
