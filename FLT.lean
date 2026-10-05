@@ -3979,6 +3979,7 @@ public import FLT.Mazur.SchemeAffineChartNamedRefinement
 public import FLT.Mazur.SchemeAffineChartReconstruction
 public import FLT.Mazur.SchemeAffineChartRefinement
 public import FLT.Mazur.SchemeAffineChartRefinementCategory
+public import FLT.Mazur.SchemeAffineChartRefinementIdentity
 public import FLT.Mazur.SchemeAffineChartRefinementNaturality
 public import FLT.Mazur.SchemeAffineCommonRefinement
 public import FLT.Mazur.SchemeAffineDescentChart
