@@ -177,6 +177,7 @@ public import FLT.EllipticCurve.CubicDenseComparison
 public import FLT.EllipticCurve.CubicFieldCover
 public import FLT.EllipticCurve.CubicFirstInputAddition
 public import FLT.EllipticCurve.CubicGlobalAddition
+public import FLT.EllipticCurve.CubicGlobalCommutativity
 public import FLT.EllipticCurve.CubicGlobalIdentity
 public import FLT.EllipticCurve.CubicInfinityAddition
 public import FLT.EllipticCurve.CubicInfinityChartAddition
@@ -204,6 +205,7 @@ public import FLT.EllipticCurve.CubicNegation
 public import FLT.EllipticCurve.CubicNegationGlobal
 public import FLT.EllipticCurve.CubicNegationInvolution
 public import FLT.EllipticCurve.CubicNegationOverlap
+public import FLT.EllipticCurve.CubicProductDensity
 public import FLT.EllipticCurve.CubicProjectiveAddition
 public import FLT.EllipticCurve.CubicProjectiveClosed
 public import FLT.EllipticCurve.CubicProjectiveComparison

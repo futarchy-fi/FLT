@@ -768,6 +768,20 @@ so the earlier affine computations are linked to this global operation.
 Commutativity and associativity remain unproved globally at this point;
 none of the outstanding modular arithmetic inputs is discharged.
 
+### Global commutativity — 2026-10-06 17:58 UTC
+
+`CubicProductDensity` transports ordinary-chart determination along arbitrary
+coefficient extensions and proves that a morphism from the cubic product
+into a separated relative target is determined by the ordinary-affine
+product. The argument does not discard nilpotents.
+
+`CubicGlobalCommutativity.addition_comm` identifies factor interchange with
+the tensor-product interchange and applies the verified affine
+commutativity law. It also proves the global left inverse law. Thus the
+constructed operation now has a two-sided identity, two-sided inverses,
+and commutativity. **Associativity is still missing**; no group-scheme
+instance or Mazur torsion exclusion is asserted.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:

@@ -5,7 +5,7 @@ Authors: krandder
 -/
 module
 
-import FLT.EllipticCurve.CubicGlobalIdentity
+import FLT.EllipticCurve.CubicGlobalCommutativity
 import FLT.EllipticCurve.CubicAffineInverse
 import FLT.EllipticCurve.CubicInfinityChartAddition
 import FLT.EllipticCurve.CubicInfinityFiniteComparison
