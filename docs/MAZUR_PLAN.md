@@ -1128,7 +1128,7 @@ The next geometric leaf is the complement of the zero section in the
 actual finite étale torsion scheme, a parameter scheme for fiberwise
 nonzero torsion points toward prime-level structures.
 
-### Represented nonzero torsion — 2026-10-06 22:45 UTC
+### Represented nonzero torsion — 2026-10-06 22:43 UTC
 
 `CubicNonzeroTorsion` constructs the complement of the zero section in
 the actual torsion scheme. The zero section is both open and closed when
@@ -1142,6 +1142,25 @@ of additive order p. Over a separably closed field their cardinality is
 n² - 1. All results passed the namespace axiom audit, targeted build,
 linter, and import checks. This is a level-point parameter scheme over a
 given elliptic model, not the quotient modular curve X0(p).
+
+### Universal Weierstrass level parameters — 2026-10-06 22:49 UTC
+
+`CubicLevelParameters` proves that nonzero invertible-order torsion
+covers every base point when n > 1. It constructs the ring
+ℤ[A₁,A₂,A₃,A₄,A₆,1/(nΔ)], its universal elliptic equation, and the actual
+finite étale surjective nonzero-torsion scheme over this coefficient
+space. The coefficient ring represents exactly the equations with Δ
+and n invertible; specialization and its inverse are proved.
+
+For prime p, the fiber over a specified field-valued elliptic equation
+is explicitly equivalent to its points of additive order p. This
+constructs Weierstrass-coordinate parameters with a level point.
+Forgetting coordinates and passing from a generator to a cyclic
+subgroup are still quotient constructions, and the cusp compactification,
+Jacobian and Eisenstein quotient remain unfinished.
+
+The targeted builds, full cubic axiom audit, linter, and import checks
+passed. No modular-curve representability assertion was assumed.
 
 ## Exact target and the already completed adapters
 

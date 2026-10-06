@@ -201,6 +201,7 @@ public import FLT.EllipticCurve.CubicInfinityRegular
 public import FLT.EllipticCurve.CubicInfinityRestriction
 public import FLT.EllipticCurve.CubicIntegral
 public import FLT.EllipticCurve.CubicIntegralReduction
+public import FLT.EllipticCurve.CubicLevelParameters
 public import FLT.EllipticCurve.CubicMixedAddition
 public import FLT.EllipticCurve.CubicMixedAffine
 public import FLT.EllipticCurve.CubicMixedChartAddition
