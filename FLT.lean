@@ -177,6 +177,7 @@ public import FLT.EllipticCurve.CubicDenseComparison
 public import FLT.EllipticCurve.CubicFieldCover
 public import FLT.EllipticCurve.CubicFirstInputAddition
 public import FLT.EllipticCurve.CubicGlobalAddition
+public import FLT.EllipticCurve.CubicGlobalIdentity
 public import FLT.EllipticCurve.CubicInfinityAddition
 public import FLT.EllipticCurve.CubicInfinityChartAddition
 public import FLT.EllipticCurve.CubicInfinityChord

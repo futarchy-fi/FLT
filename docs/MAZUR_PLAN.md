@@ -754,6 +754,20 @@ supply the global group laws, particularly associativity, or the modular
 curve, Jacobian/Eisenstein quotient, specialization, and formal-immersion
 arguments needed for Mazur torsion exclusion and FLT.
 
+### Global identity and inverse laws — 2026-10-06 17:53 UTC
+
+`CubicGlobalIdentity` proves that the overlap inside the infinity chart is
+schematically dense over every coefficient ring. Consequently equality of
+maps from the cubic to a separated relative target can be checked on the
+ordinary chart, without a reducedness assumption.
+
+The actual descended `addition` now satisfies both global infinity identity
+laws and the right inverse law for the previously constructed `negation`.
+The proof includes the scheme-product evaluation maps and their projections,
+so the earlier affine computations are linked to this global operation.
+Commutativity and associativity remain unproved globally at this point;
+none of the outstanding modular arithmetic inputs is discharged.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
