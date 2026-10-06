@@ -187,6 +187,7 @@ public import FLT.EllipticCurve.CubicMixedChartAddition
 public import FLT.EllipticCurve.CubicMixedCover
 public import FLT.EllipticCurve.CubicMixedGluing
 public import FLT.EllipticCurve.CubicMixedOpposite
+public import FLT.EllipticCurve.CubicMixedProjective
 public import FLT.EllipticCurve.CubicMixedRegular
 public import FLT.EllipticCurve.CubicMixedRestriction
 public import FLT.EllipticCurve.CubicNegation
@@ -200,6 +201,7 @@ public import FLT.EllipticCurve.CubicProjectiveCover
 public import FLT.EllipticCurve.CubicProjectiveIdentity
 public import FLT.EllipticCurve.CubicProjectiveLocal
 public import FLT.EllipticCurve.CubicProjectiveMorphism
+public import FLT.EllipticCurve.CubicProjectiveNormalization
 public import FLT.EllipticCurve.CubicRelativeDimension
 public import FLT.EllipticCurve.CubicScheme
 public import FLT.EllipticCurve.CubicSecant

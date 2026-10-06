@@ -677,6 +677,26 @@ cubic-namespace axiom audit passed. Linters passed for
 `CubicMixedRegular`; `mk_all --check` and `git diff --check` passed.
 No new axioms or admissions were added.
 
+## Whole mixed-chart projective comparison (2026-10-06, 17:07 UTC)
+
+`CubicMixedProjective` now proves `mixedChartAddition_projective` for both
+output charts. It compares the maps on the categorical pullback of the
+finite-input and projective domains, then descends the equality along the
+scheme-theoretically dominant finite-input restriction.
+
+`CubicProjectiveNormalization` proves that any normalized homogeneous
+formula factors through the actual localization domain: the normalized
+coordinate supplies the unit, and the induced chart homomorphism is proved
+equal to the proposed normalization. Applying this to both orders of the
+mixed inputs gives `mixedChartAddition_normalized` and
+`oppositeMixedAddition_normalized`.
+
+This closes the first extension obligation recorded above. The two
+infinity-pair/finite-input comparisons and their gluing remain open.
+Targeted builds, the cubic-namespace axiom audit, the mixed-projective
+linter, `mk_all --check`, and `git diff --check` passed.
+No new axioms or admissions were added.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
