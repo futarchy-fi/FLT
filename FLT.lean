@@ -179,6 +179,7 @@ public import FLT.EllipticCurve.CubicCyclicDedekind
 public import FLT.EllipticCurve.CubicCyclicEtaleField
 public import FLT.EllipticCurve.CubicCyclicGaloisDescent
 public import FLT.EllipticCurve.CubicCyclicNaturality
+public import FLT.EllipticCurve.CubicCyclicSpecialization
 public import FLT.EllipticCurve.CubicDenseComparison
 public import FLT.EllipticCurve.CubicFieldAddition
 public import FLT.EllipticCurve.CubicFieldAdditionTangent

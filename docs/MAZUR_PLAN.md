@@ -1294,6 +1294,23 @@ bases relevant to reduction at 3 for good elliptic models. It does not
 cover the higher-dimensional universal coefficient ring or degenerating
 elliptic models at the cusps. All new declarations pass the axiom audit.
 
+### 2026-10-06: integral extension and injective specialization
+
+`CubicCyclicSpecialization.lean` extends every fraction-field point of
+the actual scalar quotient uniquely to a section over an integrally
+closed coefficient ring. The construction descends coordinates using
+integrality of the finite invariant algebra. It defines a canonical
+specialization to any residue-field algebra and proves compatibility
+with restriction of existing integral sections.
+
+Over a local Dedekind base this specialization is injective. The proof
+uses the open diagonal of an unramified finite-type morphism: its
+equalizer contains the closed point of the local spectrum and hence
+covers the whole spectrum. This gives actual parameter specialization
+for good elliptic models, including Galois-stable cyclic subgroups without
+rational generators. Degenerating models and cusp specialization remain
+outside this result.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
