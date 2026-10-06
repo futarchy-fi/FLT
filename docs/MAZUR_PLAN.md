@@ -1066,6 +1066,21 @@ divisible by the residue characteristic is not covered.
 The module build, namespace-wide standard-axiom audit, targeted linter,
 import registration check and whitespace check passed.
 
+### Finite flat and étale integral torsion — 2026-10-06 22:24 UTC
+
+`CubicTorsionFlat` globalizes the local freeness criterion by localizing
+at maximal ideals. A finite module over an integral domain with constant
+field-fiber dimension is flat. Applied to the constructed torsion algebra,
+this gives `torsionCoordinate_flat`, `torsionCoordinate_isFiniteFlat`,
+`torsionCoordinate_etale`, and `torsionModel_etale` over noetherian
+integral bases when n is invertible. These refer to the actual kernel
+and its coordinate Hopf algebra; no replacement model is assumed.
+
+The restriction that n be a unit is essential to this proof. Flatness
+at residue characteristics dividing n, the Galois-equivariant classical
+point comparison, and the global Mazur arithmetic remain separate work.
+Targeted builds and the namespace axiom audit accompany this leaf.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
