@@ -7,6 +7,7 @@ module
 
 public import FLT.EllipticCurve.CubicTorsionQuotient
 public import Mathlib.Algebra.Polynomial.OfFn
+public import Mathlib.AlgebraicGeometry.AlgClosed.Basic
 /-! # Field-valued fibers of the scalar quotient
 
 The actual quotient map identifies exactly scalar orbits on field-valued
@@ -16,7 +17,7 @@ points over a general field is not asserted.
 -/
 
 open Polynomial
-open AlgebraicGeometry CategoryTheory Opposite
+open AlgebraicGeometry CategoryTheory CategoryTheory.Limits Opposite
 @[expose] public noncomputable section
 set_option backward.isDefEq.respectTransparency false
 set_option backward.defeqAttrib.useBackward true
@@ -57,6 +58,24 @@ theorem invariantPoint_orbit
     Polynomial.ofFn_coeff_eq_val_of_lt _ (e σ).isLt, e.symm_apply_apply] using hc
 
 universe u
+/-- A finite surjective morphism lifts points valued in an algebraically closed field. -/
+theorem finiteSurjective_geometricPoint_lift
+    {X Y : Scheme.{u}} (f : X ⟶ Y) [IsFinite f] [Surjective f]
+    (K : Type u) [Field K] [IsAlgClosed K] (p : Spec (.of K) ⟶ Y) :
+    ∃ q : Spec (.of K) ⟶ X, q ≫ f = p := by
+  let s := pullback.snd f p
+  have : Surjective s := inferInstance
+  obtain ⟨x, _⟩ := s.surjective (IsLocalRing.closedPoint K)
+  have : Nonempty (↑(pullback f p) : Type u) := ⟨x⟩
+  have : JacobsonSpace (↑(pullback f p) : Type u) := LocallyOfFiniteType.jacobsonSpace s
+  obtain ⟨z, _, hz⟩ := nonempty_inter_closedPoints
+    (Z := (Set.univ : Set (↑(pullback f p) : Type u))) Set.univ_nonempty isOpen_univ.isLocallyClosed
+  change IsClosed {z} at hz
+  refine ⟨pointOfClosedPoint s z hz ≫ pullback.fst f p, ?_⟩
+  rw [Category.assoc, pullback.condition, ← Category.assoc]
+  change (pointOfClosedPoint s z hz ≫ s) ≫ p = p
+  rw [pointOfClosedPoint_comp, Category.id_comp]
+
 variable {R : Type u} [CommRing R]
 
 /-- Algebra maps are points of the affine spectrum over the base. -/
@@ -165,5 +184,20 @@ theorem scalarQuotientFieldPoint_fiber (K : Type u) [Field K] [Algebra R K]
     exact ⟨σ, nonzeroTorsionCoordinatePoint_scalar W n K g σ⟩
   · rintro ⟨σ, rfl⟩
     rw [Category.assoc, scalarQuotientMap_invariant_inv]
+
+/-- Every geometric point of the scalar quotient has a nonzero torsion generator. -/
+theorem scalarQuotientFieldPoint_surjective (K : Type u) [Field K] [IsAlgClosed K]
+    [Algebra R K] :
+    Function.Surjective (fun p : pointSource K ⟶ nonzeroTorsionModel W n =>
+      p ≫ scalarQuotientMap W n) := by
+  intro p
+  let := scalarQuotientMap_finite W n
+  let := scalarQuotientMap_surjective W n
+  obtain ⟨q, hq⟩ := finiteSurjective_geometricPoint_lift
+    (scalarQuotientMap W n).left K p.left
+  refine ⟨Over.homMk q ?_, ?_⟩
+  · rw [← (scalarQuotientMap W n).w, ← Category.assoc, hq]
+    exact p.w
+  · exact Over.OverMorphism.ext hq
 
 end WeierstrassCurve.CubicCharts

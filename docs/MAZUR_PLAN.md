@@ -1199,7 +1199,10 @@ equivalence is compatible with both the geometric scalar action and
 restriction to invariant coordinates. The orbit-separation proof uses an
 orbit polynomial, so it does not assume that the scalar group order is
 invertible. Surjectivity on rational points over arbitrary fields is not
-claimed; algebraically closed point lifting is the next step.
+claimed. The finite-surjective lifting theorem now proves that every
+algebraically closed point of this quotient has a nonzero torsion
+generator. Together the two theorems identify its geometric points with
+scalar orbits.
 
 The namespace-wide axiom audit passes with only the standard logical
 axioms. This is a statement about the affine quotient over a fixed
