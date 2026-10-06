@@ -1208,6 +1208,23 @@ The namespace-wide axiom audit passes with only the standard logical
 axioms. This is a statement about the affine quotient over a fixed
 Weierstrass model, not a construction of X0(p).
 
+### 2026-10-06: geometric classification by prime cyclic subgroups
+
+`CubicPrimeCyclicSubgroups.lean` constructs a bijection from the actual
+scalar quotient's points over an algebraically closed field to subgroups
+of order p in the elliptic curve group. The generator compatibility
+theorem identifies its value with the subgroup spanned by that generator.
+The proof combines geometric lifting, exact orbit fibers, and the
+prime-order cyclic-group theorem. Over an arbitrary field, the generator
+map still covers all subgroups of its rational-point group, but no
+surjectivity from rational generators onto all rational quotient points
+is asserted.
+
+This completes the cyclic-subgroup interpretation for the fixed-model
+affine parameter scheme. The quotient by changes of Weierstrass
+coordinates, cusp compactification, and global Mazur arithmetic remain
+open. The new declarations pass the namespace-wide axiom audit.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
