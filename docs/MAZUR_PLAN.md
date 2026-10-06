@@ -1109,7 +1109,7 @@ integral bases with n invertible. Its point-group identification is
 retained explicitly rather than postulated. Build, full cubic-namespace
 axiom audit, linter, and import checks passed.
 
-### Good reduction of the actual torsion representation — 2026-10-06 22:39 UTC
+### Good reduction of the actual torsion representation — 2026-10-06 22:36 UTC
 
 `CubicGoodReduction` constructs the geometric model-to-curve point
 equivalence, restricts it to the torsion carrier of `E.galoisRep`, and
@@ -1127,6 +1127,21 @@ Mazur exclusion.
 The next geometric leaf is the complement of the zero section in the
 actual finite étale torsion scheme, a parameter scheme for fiberwise
 nonzero torsion points toward prime-level structures.
+
+### Represented nonzero torsion — 2026-10-06 22:45 UTC
+
+`CubicNonzeroTorsion` constructs the complement of the zero section in
+the actual torsion scheme. The zero section is both open and closed when
+n is a unit; its complement is therefore finite and étale over the base.
+For every scheme source, the new parameter scheme represents torsion
+maps whose image avoids the zero section.
+
+Over fields, the representing equivalence identifies these points with
+classical nonzero n-torsion. At prime level p they are exactly the points
+of additive order p. Over a separably closed field their cardinality is
+n² - 1. All results passed the namespace axiom audit, targeted build,
+linter, and import checks. This is a level-point parameter scheme over a
+given elliptic model, not the quotient modular curve X0(p).
 
 ## Exact target and the already completed adapters
 
