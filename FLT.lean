@@ -174,7 +174,10 @@ public import FLT.EllipticCurve.CubicChartProductCover
 public import FLT.EllipticCurve.CubicCharts
 public import FLT.EllipticCurve.CubicChord
 public import FLT.EllipticCurve.CubicDenseComparison
+public import FLT.EllipticCurve.CubicFieldAddition
+public import FLT.EllipticCurve.CubicFieldAdditionTangent
 public import FLT.EllipticCurve.CubicFieldCover
+public import FLT.EllipticCurve.CubicFieldPoints
 public import FLT.EllipticCurve.CubicFirstInputAddition
 public import FLT.EllipticCurve.CubicGlobalAddition
 public import FLT.EllipticCurve.CubicGlobalCommutativity

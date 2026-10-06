@@ -782,6 +782,21 @@ constructed operation now has a two-sided identity, two-sided inverses,
 and commutativity. **Associativity is still missing**; no group-scheme
 instance or Mazur torsion exclusion is asserted.
 
+### Comparison with classical field-valued addition — 2026-10-06 18:09 UTC
+
+`CubicFieldPoints` realizes classical nonsingular points as morphisms into the
+glued cubic and proves compatibility with negation and infinity.
+`CubicFieldAddition` evaluates the secant localization at distinct
+horizontal coordinates. `CubicFieldAdditionTangent` evaluates the tangent
+localization, handles inverse and infinity pairs, and proves
+`fieldPointPair_add`: the global scheme addition induces exactly the
+established classical group law over every field algebra of the base.
+
+This comparison is a proved input to a potential associativity argument,
+not yet associativity of the scheme morphism. Exhaustion of field-valued
+scheme points by classical points and the scheme-level descent of that
+identity remain the next steps.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
