@@ -797,6 +797,27 @@ not yet associativity of the scheme morphism. Exhaustion of field-valued
 scheme points by classical points and the scheme-level descent of that
 identity remain the next steps.
 
+### Scheme-level associativity — 2026-10-06 18:16 UTC
+
+`CubicFieldPointClassification` proves that every morphism from a field
+spectrum over the coefficient base is a classical point. It handles the
+ordinary chart, the finite part of the infinity chart, and its origin.
+
+`CubicAssociativity.addMorphisms_assoc_of_isReduced` then proves
+associativity on every reduced source by checking the actual residue-field
+morphisms into the separated cubic. Geometric integrality of the fibers,
+flatness, and the noetherian reduced base imply reducedness of the actual
+triple product. Hence `addition_assoc` proves the scheme-level associativity
+law over any reduced noetherian coefficient ring. Finally
+`addMorphisms_assoc` pulls that law back to **arbitrary** source schemes,
+including nonreduced sources, over such a base.
+
+The base hypotheses are explicit; associativity over an arbitrary
+nonreduced coefficient ring has not been established here. The proof
+contains no new axiom or admitted step. Packaging the verified laws as a
+commutative group object is next. The modular and arithmetic Mazur inputs
+remain open.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:

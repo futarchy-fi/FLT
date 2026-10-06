@@ -5,7 +5,7 @@ Authors: krandder
 -/
 module
 
-import FLT.EllipticCurve.CubicFieldAdditionTangent
+import FLT.EllipticCurve.CubicAssociativity
 import FLT.EllipticCurve.CubicAffineInverse
 import FLT.EllipticCurve.CubicInfinityChartAddition
 import FLT.EllipticCurve.CubicInfinityFiniteComparison

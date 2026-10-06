@@ -165,6 +165,7 @@ public import FLT.EllipticCurve.CubicAffineCommutativity
 public import FLT.EllipticCurve.CubicAffineDomain
 public import FLT.EllipticCurve.CubicAffineInverse
 public import FLT.EllipticCurve.CubicAffineInverseCover
+public import FLT.EllipticCurve.CubicAssociativity
 public import FLT.EllipticCurve.CubicBaseChange
 public import FLT.EllipticCurve.CubicBaseChangeGlobal
 public import FLT.EllipticCurve.CubicChartAddition
@@ -177,6 +178,7 @@ public import FLT.EllipticCurve.CubicDenseComparison
 public import FLT.EllipticCurve.CubicFieldAddition
 public import FLT.EllipticCurve.CubicFieldAdditionTangent
 public import FLT.EllipticCurve.CubicFieldCover
+public import FLT.EllipticCurve.CubicFieldPointClassification
 public import FLT.EllipticCurve.CubicFieldPoints
 public import FLT.EllipticCurve.CubicFirstInputAddition
 public import FLT.EllipticCurve.CubicGlobalAddition
