@@ -1234,6 +1234,20 @@ coefficient field. The proof uses the established p²-1 generator count
 and exact quotient fibers. This is a geometric-point count, not yet a
 proof that the quotient is finite étale or locally free of rank p+1.
 
+### 2026-10-06: universal cyclic parameter scheme
+
+`CubicUniversalCyclicParameters.lean` constructs the scalar quotient over
+the universal Weierstrass coefficient ring with p and the discriminant
+inverted. The parameter map and the map forgetting a generator are finite
+and surjective. Specialization at any geometric elliptic equation
+classifies its subgroups of order p and has p+1 points. A rational point
+of exact order p supplies an actual rational parameter without an
+algebraic-closedness hypothesis.
+
+The construction is over the space of equations; it does not yet divide
+by coordinate changes or adjoin cusps. Quotient étaleness over the
+coefficient ring is also still open. The new file passes the axiom audit.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
