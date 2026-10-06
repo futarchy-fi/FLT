@@ -1225,6 +1225,15 @@ affine parameter scheme. The quotient by changes of Weierstrass
 coordinates, cusp compactification, and global Mazur arithmetic remain
 open. The new declarations pass the namespace-wide axiom audit.
 
+### 2026-10-06: geometric size of the prime cyclic quotient
+
+`CubicPrimeCyclicDegree.lean` identifies the fiber over a generator image
+with the group of units modulo p, and proves that the actual scalar
+quotient has exactly p+1 points over every algebraically closed
+coefficient field. The proof uses the established p²-1 generator count
+and exact quotient fibers. This is a geometric-point count, not yet a
+proof that the quotient is finite étale or locally free of rank p+1.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
