@@ -478,6 +478,56 @@ overlap identities, and treating inputs at infinity remain separate steps.
 No global addition or group scheme structure is claimed, and the modular
 and arithmetic inputs to the Mazur route remain open.
 
+### Affine input coverage and vertical overlap (2026-10-06)
+
+`CubicAdditionCover.lean` proves that the four addition denominators generate
+the unit ideal whenever the discriminant is invertible. Testing in residue
+fields reduces the result to the nonsingularity criterion. This constructs
+`affineAdditionCover`, an actual scheme open cover of the entire ordinary
+chart product, including nonreduced coefficient bases.
+
+`CubicVerticalOverlap.lean` proves homogeneous cross-multiplication
+identities and uses them to identify the two vertical addition maps as
+algebra maps and scheme morphisms on their fiber-product intersection.
+`CubicChartPoint.lean` supplies the general transition criterion for comparing
+outputs in the ordinary and infinity charts.
+
+The mixed overlaps between ordinary-output and infinity-output addition
+maps still need to be instantiated and checked. Cover descent, inputs
+involving infinity, and the global group axioms remain open.
+
+### Mixed-chart chord compatibility (2026-10-06)
+
+`CubicMixedAddition.lean` proves both ordinary/infinity coordinate transition
+identities from homogeneous cross multiplication. The resulting scheme
+criterion is applied to secant and tangent addition against each of the
+two vertical maps, under any common restriction of their input pair.
+These are equalities of scheme morphisms over arbitrary coefficient rings.
+
+Together with the earlier same-chart overlaps, the coordinate compatibility
+needed for the four-piece affine-input cover is available. Transporting it
+to the cover's canonical pullbacks and applying descent remains to be done;
+pairs involving an input at infinity and the global group laws remain open.
+
+### Descended addition for all ordinary affine inputs (2026-10-06)
+
+`CubicAffineAddition.lean` transports the six distinct overlap comparisons
+to the cover's canonical pullbacks and applies scheme descent. The result
+`affineAddition` is defined on the whole spectrum of the affine pair ring,
+with proved restriction to all four local formulas and compatibility
+with the coefficient base. `affineAdditionMorphism` expresses it on the
+actual fiber product of the two ordinary affine charts.
+
+Thus doubling, opposite affine points, and sums at infinity are included
+in one morphism, over any commutative coefficient ring with invertible
+discriminant. This closes the affine-input gluing step.
+
+The remaining geometric work includes inputs involving infinity and the
+global group laws. Integral modular curves, a represented Jacobian and
+Eisenstein quotient, and the arithmetic formal-immersion argument are
+still missing. No arithmetic assumption in the FLT assembly is discharged
+by this construction.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
