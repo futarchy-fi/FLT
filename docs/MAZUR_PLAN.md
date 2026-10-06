@@ -1264,6 +1264,20 @@ Weierstrass parameter scheme. It does not construct the coordinate-change
 quotient or the compactified modular curve. The new declarations pass the
 namespace-wide axiom audit.
 
+### 2026-10-06: finite étale cyclic quotients over fields
+
+`CubicCyclicEtaleField.lean` proves that the actual invariant algebra is
+finite étale over any coefficient field with invertible level. No
+perfection hypothesis or invertibility of the scalar-group order is
+needed: injectivity into the generator algebra is preserved after
+extending to an algebraic closure, where reducedness gives étaleness,
+and faithfully flat descent returns to the original field.
+
+At prime level, the invariant algebra has dimension p+1, and forgetting
+the generator is an étale morphism. These strengthen the earlier
+geometric-point count. Étaleness over the integral universal coefficient
+ring remains a separate obligation.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:

@@ -9,6 +9,7 @@ import FLT.EllipticCurve.CubicIntegralReduction
 import FLT.EllipticCurve.CubicGoodReduction
 import FLT.EllipticCurve.CubicLevelParameters
 import FLT.EllipticCurve.CubicTorsionQuotient
+import FLT.EllipticCurve.CubicCyclicEtaleField
 import FLT.EllipticCurve.CubicCyclicNaturality
 import FLT.EllipticCurve.CubicCyclicGaloisDescent
 import FLT.EllipticCurve.CubicUniversalCyclicParameters
