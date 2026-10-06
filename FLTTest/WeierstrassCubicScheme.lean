@@ -5,8 +5,9 @@ Authors: krandder
 -/
 module
 
-import FLT.EllipticCurve.CubicAffineAddition
-import FLT.EllipticCurve.CubicInfinityIdentity
+import FLT.EllipticCurve.CubicInfinityComparison
+import FLT.EllipticCurve.CubicMixedChartAddition
+import FLT.EllipticCurve.CubicSecantRegular
 import Mathlib.Data.ZMod.Basic
 import Lean
 

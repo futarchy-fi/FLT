@@ -551,10 +551,40 @@ compatibility with the already glued affine addition, and group identities
 remain to be assembled. The modular-curve, Jacobian, Eisenstein quotient,
 formal-immersion and arithmetic FLT leaves remain open.
 
-Checked 2026-10-06, 15:23 UTC: targeted builds, the cubic namespace axiom audit,
+Checked 2026-10-06, 15:22 UTC: targeted builds, the cubic namespace axiom audit,
 `runLinter FLT.EllipticCurve.CubicInfinityIdentity`, `mk_all --check`, and
 `git diff --check` passed. The namespace audit accepts only `propext`,
 `Classical.choice`, and `Quot.sound`.
+
+## Mixed-chart descent and comparison (2026-10-06)
+
+`CubicMixedCover` proves that the finite-first-input open and the normalized
+projective open cover the entire infinity-chart times affine-chart product.
+`CubicMixedAffine` pulls back the existing affine addition to the first open.
+`CubicMixedGluing` proves agreement on their actual scheme-theoretic intersection,
+and `CubicMixedChartAddition` applies descent to obtain
+`mixedChartAdditionMorphism` on the whole mixed chart product, with base
+compatibility and the infinity identity.
+
+`CubicProjectiveComparison` compares arbitrary target normalizations via
+homogeneous cross products. `CubicInfinityComparison` proves an exact
+cubic-factor identity and equality of the infinity/projective morphisms on
+every common domain. `CubicSecantProjective` identifies the projective formula
+with the already descended affine addition whenever its output is affine.
+`CubicSecantRegular` proves the x-difference is a nonzerodivisor over every
+commutative base, using the free Weierstrass coordinate algebra; restriction
+to the secant open is therefore injective without a reducedness assumption.
+
+The remaining global step is to combine the input chart products and the
+infinity-pair neighborhood, prove their remaining agreements, and establish
+the group laws. This does not close the modular-curve/Jacobian or Mazur
+arithmetic leaves.
+
+Checked 2026-10-06, 15:54 UTC: the targeted builds and full cubic-namespace
+axiom audit passed. Linters passed for `CubicMixedChartAddition`,
+`CubicInfinityComparison`, and `CubicSecantRegular`; the registered imports
+and diff checks passed for these modules. No new axioms or admissions were
+introduced.
 
 ## Exact target and the already completed adapters
 
