@@ -644,9 +644,24 @@ The next exact obligations are the comparisons between the infinity-pair
 piece and each finite-input piece. The finite/finite comparison is complete;
 the other two are not yet asserted as theorems. Use the dense projective
 restriction, its flat base changes, the two-output mixed comparison, and
-input chart transitions to finish those equalities. Then glue the three
-pieces, compare and glue the four input-chart products, and prove the
-remaining global group laws, especially associativity.
+input chart transitions to finish those equalities. More precisely, first
+extend `mixed_addition_agreement` from `MixedAffineRing` to the entire
+mixed-chart/projective-domain intersection: localize that intersection
+further at `mixedFirstZ`, use `mixedChartAddition_after_finite` there,
+and descend equality by schematic dominance. Regularity of
+`mixedFirstZ` and flatness of the localization justify this extension.
+
+Next, on the tensor-product intersection of `InfinityAdditionRing` with
+each `InfinityFiniteRing`, localize at the image of
+`infinityProjectiveDenominator`. Flat base change gives schematic
+dominance of this restriction. The finite input has an invertible
+chart-transition coordinate, so the homogeneous projective law changes
+by an invertible square factor; compare its normalized output using
+`chart_point_agreement_of_scaled`, then descend equality. These
+extensions and input-transition comparisons are still proof obligations,
+not completed declarations. Finally glue the three pieces, compare and
+glue the four input-chart products, and prove the remaining global group
+laws, especially associativity.
 
 `CubicMixedRegular` also proves schematic density of the finite-first-input
 open in the whole mixed chart, again over arbitrary coefficient rings.
