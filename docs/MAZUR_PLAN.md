@@ -1081,6 +1081,20 @@ at residue characteristics dividing n, the Galois-equivariant classical
 point comparison, and the global Mazur arithmetic remain separate work.
 Targeted builds and the namespace axiom audit accompany this leaf.
 
+### Naturality of the classical torsion comparison — 2026-10-06 22:31 UTC
+
+`CubicTorsionNaturality` proves that affine evaluation and the point
+morphism commute with field algebra maps. This passes through the
+classical point equivalence, the represented multiplication kernel, and
+the Hopf-spectrum comparison. The resulting theorem
+`torsionCoordinateClassicalMulEquiv_postcomp` identifies postcomposition
+of coordinate points with the usual coordinatewise map on classical
+torsion. It applies to arbitrary field maps, hence to Galois automorphisms.
+
+The module and all cubic declarations passed the Lean axiom audit,
+the linter, import registration, and whitespace checks. Packaging the
+generic-fiber comparison as a finite-flat Galois model is the next step.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:

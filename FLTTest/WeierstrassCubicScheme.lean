@@ -6,6 +6,7 @@ Authors: krandder
 module
 
 import FLT.EllipticCurve.CubicIntegralReduction
+import FLT.EllipticCurve.CubicTorsionNaturality
 import FLT.EllipticCurve.CubicTorsionFlat
 import FLT.EllipticCurve.CubicTorsionEtaleAlgebra
 import FLT.EllipticCurve.CubicTorsionEtaleFibers
