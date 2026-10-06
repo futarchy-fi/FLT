@@ -6,7 +6,7 @@ Authors: krandder
 module
 
 import FLT.EllipticCurve.CubicIntegralReduction
-import FLT.EllipticCurve.CubicTorsionRank
+import FLT.EllipticCurve.CubicTorsionLocalFree
 import FLT.EllipticCurve.CubicTorsionEtaleAlgebra
 import FLT.EllipticCurve.CubicTorsionEtaleFibers
 import FLT.EllipticCurve.CubicAffineInverse

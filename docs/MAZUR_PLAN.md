@@ -1047,6 +1047,25 @@ The full FLT build, cubic-namespace axiom audit, targeted rank-module
 linter, import registration check and whitespace check pass with this
 theorem. Its proof uses only the standard audited axioms.
 
+### Finite free local torsion — 2026-10-06 22:18 UTC
+
+`CubicTorsionLocalFree` proves a general local criterion: a finite module
+over a local ring is free if its residual dimension equals its dimension
+over a field on which the coefficient ring acts faithfully. The proof
+lifts a residual basis, applies Nakayama to obtain generators, and detects
+their linear independence after passage to that field.
+
+Applied to the actual coordinate algebra, the already proved n² fiber
+dimensions give `torsionCoordinate_local_free` over a noetherian local
+integral base whenever n is a unit. Together with the differential result,
+`torsionCoordinate_local_etale` proves that this algebra is étale.
+No flatness assumption is introduced. This includes the prime-to-residue-
+characteristic case needed for good-reduction models; torsion of order
+divisible by the residue characteristic is not covered.
+
+The module build, namespace-wide standard-axiom audit, targeted linter,
+import registration check and whitespace check passed.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
