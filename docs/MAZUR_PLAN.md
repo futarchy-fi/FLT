@@ -958,6 +958,20 @@ Flatness, rank and étaleness are not consequences of this topological
 fiber argument and remain unproved. The modular and global arithmetic
 inputs to FLT are unchanged.
 
+### Finite torsion group and coordinate Hopf algebra — 2026-10-06 21:12 UTC
+
+`CubicTorsionGroup` realizes the torsion point functor as a functor to
+commutative groups and transports it through the proved representing
+bijection. The resulting `CommGrpObj` is on the actual equalizer scheme.
+The inclusion is proved to be a group homomorphism and multiplication by n
+is identically zero on all its scheme-valued points.
+
+`CubicTorsionHopf` constructs the finite global-section algebra of this
+affine torsion scheme and its Hopf algebra structure through the existing
+affine-group equivalence. Its spectrum is isomorphic to the actual
+represented kernel. These constructions introduce no flatness assumption
+and do not yet prove that the integral algebra is flat or étale.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:

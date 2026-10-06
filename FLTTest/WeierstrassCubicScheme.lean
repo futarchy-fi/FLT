@@ -6,7 +6,7 @@ Authors: krandder
 module
 
 import FLT.EllipticCurve.CubicIntegralReduction
-import FLT.EllipticCurve.CubicTorsionFinite
+import FLT.EllipticCurve.CubicTorsionHopf
 import FLT.EllipticCurve.CubicAffineInverse
 import FLT.EllipticCurve.CubicInfinityChartAddition
 import FLT.EllipticCurve.CubicInfinityFiniteComparison

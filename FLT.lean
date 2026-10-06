@@ -232,6 +232,8 @@ public import FLT.EllipticCurve.CubicTangent
 public import FLT.EllipticCurve.CubicTorsionFieldPoints
 public import FLT.EllipticCurve.CubicTorsionFinite
 public import FLT.EllipticCurve.CubicTorsionGeometricFiber
+public import FLT.EllipticCurve.CubicTorsionGroup
+public import FLT.EllipticCurve.CubicTorsionHopf
 public import FLT.EllipticCurve.CubicTorsionModel
 public import FLT.EllipticCurve.CubicValuativeSpecialization
 public import FLT.EllipticCurve.CubicVerticalAddition
