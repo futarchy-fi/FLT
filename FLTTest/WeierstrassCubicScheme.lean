@@ -5,9 +5,9 @@ Authors: krandder
 -/
 module
 
+import FLT.EllipticCurve.CubicAffineInverse
 import FLT.EllipticCurve.CubicInfinityComparison
-import FLT.EllipticCurve.CubicMixedChartAddition
-import FLT.EllipticCurve.CubicSecantRegular
+import FLT.EllipticCurve.CubicMixedOpposite
 import Mathlib.Data.ZMod.Basic
 import Lean
 

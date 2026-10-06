@@ -586,6 +586,30 @@ axiom audit passed. Linters passed for `CubicMixedChartAddition`,
 and diff checks passed for these modules. No new axioms or admissions were
 introduced.
 
+## Commutativity, inverse law, and both mixed identities (2026-10-06)
+
+`CubicDenseComparison` proves uniqueness of maps into a separated relative
+scheme after a scheme-theoretically dominant restriction, and establishes
+that the secant open has this property over every commutative base.
+`CubicAffineCommutativity` applies it to prove commutativity of the entire
+descended affine-input addition.
+
+`CubicAffineInverseCover` restricts the four-open addition cover to the graph
+P ↦ (P,-P). The two ordinary-output denominators vanish, and the two vertical
+domains cover this graph. `CubicAffineInverse` then proves the scheme-morphism
+identity `affineAddition_inverse`, including vertical tangents and two-torsion.
+This is the inverse law, not Mazur's exclusion of large rational prime torsion.
+
+`CubicMixedOpposite` supplies the whole opposite mixed chart and proves the
+left and right infinity identities on the affine chart. Three input-chart
+products now carry descended additions. The infinity-chart product still
+needs its local pieces glued, followed by gluing the chart products and
+proving the remaining global group laws, in particular associativity.
+
+Checked 2026-10-06, 16:14 UTC: targeted builds, the full cubic-namespace axiom
+audit, linters for `CubicAffineInverse` and `CubicMixedOpposite`, and the import
+and diff checks passed for this step. No new axioms or admissions were added.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
