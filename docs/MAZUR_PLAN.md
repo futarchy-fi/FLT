@@ -1248,6 +1248,22 @@ The construction is over the space of equations; it does not yet divide
 by coordinate changes or adjoin cusps. Quotient étaleness over the
 coefficient ring is also still open. The new file passes the axiom audit.
 
+### 2026-10-06: rational cyclic parameters via Galois descent
+
+`CubicCyclicNaturality.lean` proves compatibility of the geometric
+subgroup classification with field extensions. A rational quotient
+parameter therefore gives a Galois-stable geometric subgroup.
+`CubicCyclicGaloisDescent.lean` proves the converse and uniqueness by
+descending the invariant coordinate algebra point along a Galois
+extension. When the extension field is algebraically closed, this gives
+an actual equivalence between rational quotient points and Galois-stable
+subgroups of order p, without assuming a rational generator.
+
+This closes the rational cyclic-subgroup interpretation for the fixed
+Weierstrass parameter scheme. It does not construct the coordinate-change
+quotient or the compactified modular curve. The new declarations pass the
+namespace-wide axiom audit.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:

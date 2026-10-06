@@ -175,6 +175,8 @@ public import FLT.EllipticCurve.CubicChartProductCover
 public import FLT.EllipticCurve.CubicCharts
 public import FLT.EllipticCurve.CubicChord
 public import FLT.EllipticCurve.CubicClassicalReduction
+public import FLT.EllipticCurve.CubicCyclicGaloisDescent
+public import FLT.EllipticCurve.CubicCyclicNaturality
 public import FLT.EllipticCurve.CubicDenseComparison
 public import FLT.EllipticCurve.CubicFieldAddition
 public import FLT.EllipticCurve.CubicFieldAdditionTangent
