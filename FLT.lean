@@ -249,6 +249,7 @@ public import FLT.EllipticCurve.CubicTorsionLocalFree
 public import FLT.EllipticCurve.CubicTorsionModel
 public import FLT.EllipticCurve.CubicTorsionNaturality
 public import FLT.EllipticCurve.CubicTorsionRank
+public import FLT.EllipticCurve.CubicTorsionScalars
 public import FLT.EllipticCurve.CubicTorsionUnramified
 public import FLT.EllipticCurve.CubicValuativeSpecialization
 public import FLT.EllipticCurve.CubicVerticalAddition

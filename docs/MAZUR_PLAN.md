@@ -1162,6 +1162,20 @@ Jacobian and Eisenstein quotient remain unfinished.
 The targeted builds, full cubic axiom audit, linter, and import checks
 passed. No modular-curve representability assertion was assumed.
 
+### Scalar action and change of generator — 2026-10-06 22:57 UTC
+
+`CubicTorsionScalars` constructs genuine scheme automorphisms of the
+torsion kernel from units in ℤ/nℤ. They preserve the zero section and
+restrict to the nonzero torsion parameter scheme. The identity and
+composition laws give an action into the scheme automorphism group.
+
+The field-point comparison identifies this action with ordinary scalar
+multiplication. At prime level it is free on every field-valued nonzero
+torsion point. The module passed the namespace axiom audit, linter,
+targeted build and import checks. The next construction is the affine
+quotient by this actual action, using its coordinate invariants; no
+quotient modular curve or Eisenstein input has yet been supplied.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
