@@ -241,6 +241,7 @@ public import FLT.EllipticCurve.CubicTorsionHopf
 public import FLT.EllipticCurve.CubicTorsionHopfComparison
 public import FLT.EllipticCurve.CubicTorsionHopfPoints
 public import FLT.EllipticCurve.CubicTorsionModel
+public import FLT.EllipticCurve.CubicTorsionRank
 public import FLT.EllipticCurve.CubicTorsionUnramified
 public import FLT.EllipticCurve.CubicValuativeSpecialization
 public import FLT.EllipticCurve.CubicVerticalAddition

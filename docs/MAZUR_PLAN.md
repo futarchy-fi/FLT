@@ -1030,6 +1030,23 @@ standard-axiom audit and the characteristic-two examples. Targeted linters
 passed for all new or changed proof modules, `mk_all --check` required no
 update, and `git diff --check` passed. No heartbeat limit was increased.
 
+### Rank of the prime-to-characteristic fibers — 2026-10-06 21:46 UTC
+
+`CubicTorsionRank` adds `torsionCoordinate_field_finrank` in the
+`WeierstrassCurve.CubicCharts` namespace, proving that the coordinate
+fiber over K has dimension n² when n is nonzero in a separably closed
+extension L of K. It composes
+`GaloisModule.finrank_eq_natCard_algHom`, the tensor-algebra adjunction,
+the classical torsion group comparison, and the proved division-polynomial
+cardinality theorem. Its hypotheses include the compatible R–K–L algebra
+tower; invertibility in R and integral flatness are not assumed.
+This settles the expected dimension of these field fibers. Integral
+flatness and the lengths at characteristics dividing n remain open.
+
+The full FLT build, cubic-namespace axiom audit, targeted rank-module
+linter, import registration check and whitespace check pass with this
+theorem. Its proof uses only the standard audited axioms.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
