@@ -1109,6 +1109,25 @@ integral bases with n invertible. Its point-group identification is
 retained explicitly rather than postulated. Build, full cubic-namespace
 axiom audit, linter, and import checks passed.
 
+### Good reduction of the actual torsion representation — 2026-10-06 22:39 UTC
+
+`CubicGoodReduction` constructs the geometric model-to-curve point
+equivalence, restricts it to the torsion carrier of `E.galoisRep`, and
+proves that it intertwines the existing Galois action. This gives
+`isFiniteFlat_torsion_of_integral_model` and
+`isFiniteFlat_torsion_of_goodReduction_unit`.
+
+The latter uses the actual integral Weierstrass model and its unit
+discriminant. It requires n to be a unit, but imposes neither a short
+equation nor a rational two-torsion point, and uses no good-reduction
+flatness admission. The full cubic namespace audit and targeted builds
+passed. This does not prove flatness at primes dividing n or the global
+Mazur exclusion.
+
+The next geometric leaf is the complement of the zero section in the
+actual finite étale torsion scheme, a parameter scheme for fiberwise
+nonzero torsion points toward prime-level structures.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:

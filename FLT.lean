@@ -185,6 +185,7 @@ public import FLT.EllipticCurve.CubicFirstInputAddition
 public import FLT.EllipticCurve.CubicGlobalAddition
 public import FLT.EllipticCurve.CubicGlobalCommutativity
 public import FLT.EllipticCurve.CubicGlobalIdentity
+public import FLT.EllipticCurve.CubicGoodReduction
 public import FLT.EllipticCurve.CubicGroupScheme
 public import FLT.EllipticCurve.CubicInfinityAddition
 public import FLT.EllipticCurve.CubicInfinityChartAddition
