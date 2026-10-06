@@ -913,6 +913,17 @@ the kernel without a new comparison. `NTorsionFinite` contains
 universal invariant-differential formulas. These are source-level inputs
 to investigate, not completed comparison theorems for `torsionModel`.
 
+The pinned Mathlib already supplies
+`IsFinite.of_isProper_of_locallyQuasiFinite` in
+`AlgebraicGeometry/ZariskisMainTheorem.lean`, and
+`locallyQuasiFinite_iff_finite_preimage_singleton` under local finite type
+and quasi-compactness in `Morphisms/QuasiFinite.lean`. Thus a possible
+finiteness route for the new kernel is to establish its closed immersion
+into the proper cubic and the required finite geometric fibers, then use
+these existing scheme theorems. Those hypotheses still need proofs for
+`torsionModel`; the arithmetic specialization result alone does not
+supply them. Flatness and rank would remain separate obligations.
+
 The unconditional FLT theorem is not established by this session.
 `FLT/Assembly/Final.lean` still exposes the five arithmetic inputs:
 Mazur torsion exclusion, hardly ramified lifting, compatible families,
