@@ -1176,7 +1176,7 @@ targeted build and import checks. The next construction is the affine
 quotient by this actual action, using its coordinate invariants; no
 quotient modular curve or Eisenstein input has yet been supplied.
 
-### Constructed affine scalar quotient — 2026-10-06 23:10 UTC
+### Constructed affine scalar quotient — 2026-10-06 23:08 UTC
 
 `CubicTorsionQuotient` transports the actual scheme action to the
 nonzero-torsion coordinate algebra by inverse pullback. Its fixed
@@ -1190,6 +1190,20 @@ All declarations passed the cubic-namespace axiom audit, targeted builds,
 linter and import checks. The geometric-point orbit identification and
 étaleness of this quotient are not asserted by this leaf. It is not yet
 the coordinate-change quotient X0(p), nor its cusp compactification.
+
+### 2026-10-06: field-valued fibers of the scalar quotient
+
+`CubicTorsionQuotientPoints.lean` proves that the actual quotient map on
+field-valued points identifies exactly scalar orbits. The coordinate
+equivalence is compatible with both the geometric scalar action and
+restriction to invariant coordinates. The orbit-separation proof uses an
+orbit polynomial, so it does not assume that the scalar group order is
+invertible. Surjectivity on rational points over arbitrary fields is not
+claimed; algebraically closed point lifting is the next step.
+
+The namespace-wide axiom audit passes with only the standard logical
+axioms. This is a statement about the affine quotient over a fixed
+Weierstrass model, not a construction of X0(p).
 
 ## Exact target and the already completed adapters
 
