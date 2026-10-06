@@ -174,6 +174,7 @@ public import FLT.EllipticCurve.CubicChartPoint
 public import FLT.EllipticCurve.CubicChartProductCover
 public import FLT.EllipticCurve.CubicCharts
 public import FLT.EllipticCurve.CubicChord
+public import FLT.EllipticCurve.CubicClassicalReduction
 public import FLT.EllipticCurve.CubicDenseComparison
 public import FLT.EllipticCurve.CubicFieldAddition
 public import FLT.EllipticCurve.CubicFieldAdditionTangent
@@ -227,6 +228,7 @@ public import FLT.EllipticCurve.CubicSecantProjective
 public import FLT.EllipticCurve.CubicSecantRegular
 public import FLT.EllipticCurve.CubicSmooth
 public import FLT.EllipticCurve.CubicTangent
+public import FLT.EllipticCurve.CubicValuativeSpecialization
 public import FLT.EllipticCurve.CubicVerticalAddition
 public import FLT.EllipticCurve.CubicVerticalOverlap
 public import FLT.EllipticCurve.CubicVerticalProjective

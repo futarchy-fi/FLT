@@ -833,6 +833,25 @@ construct modular curves, their Jacobians/Eisenstein quotients, or prove
 the torsion-exclusion theorem. General coefficient bases beyond the
 reduced noetherian case are not covered by this group-object instance.
 
+### Proper extension and classical reduction — 2026-10-06 18:32 UTC
+
+`CubicValuativeSpecialization.genericPoint_extends` applies the proper
+valuative criterion to extend each fraction-field point to a section over
+a valuation ring. Separatedness and schematic dominance prove uniqueness.
+Over a noetherian valuation ring with a unit discriminant,
+`genericRestrictionEquiv` is an isomorphism of groups, and
+`specializationHom` extends then restricts a section to a field algebra,
+in particular the residue field.
+
+`CubicClassicalReduction` proves injectivity of the classical-point
+encoding, upgrades the earlier surjectivity to a group equivalence, and
+constructs `classicalReductionHom` between the classical point groups.
+Every torsion relation is preserved, including for points whose ordinary
+affine coordinates are not integral. This does **not** yet prove
+injectivity on prime-to-residue-characteristic torsion or exact
+preservation of point order. The reduction-kernel argument and the
+remaining modular/Eisenstein/formal-immersion inputs are still open.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
