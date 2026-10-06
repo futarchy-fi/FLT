@@ -236,6 +236,7 @@ public import FLT.EllipticCurve.CubicTorsionEtaleFibers
 public import FLT.EllipticCurve.CubicTorsionFieldPoints
 public import FLT.EllipticCurve.CubicTorsionFinite
 public import FLT.EllipticCurve.CubicTorsionFlat
+public import FLT.EllipticCurve.CubicTorsionGenericPoints
 public import FLT.EllipticCurve.CubicTorsionGeometricFiber
 public import FLT.EllipticCurve.CubicTorsionGroup
 public import FLT.EllipticCurve.CubicTorsionHopf

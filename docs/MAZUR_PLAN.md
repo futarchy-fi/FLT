@@ -1081,7 +1081,7 @@ at residue characteristics dividing n, the Galois-equivariant classical
 point comparison, and the global Mazur arithmetic remain separate work.
 Targeted builds and the namespace axiom audit accompany this leaf.
 
-### Naturality of the classical torsion comparison — 2026-10-06 22:31 UTC
+### Naturality of the classical torsion comparison — 2026-10-06 22:28 UTC
 
 `CubicTorsionNaturality` proves that affine evaluation and the point
 morphism commute with field algebra maps. This passes through the
@@ -1094,6 +1094,20 @@ torsion. It applies to arbitrary field maps, hence to Galois automorphisms.
 The module and all cubic declarations passed the Lean axiom audit,
 the linter, import registration, and whitespace checks. Packaging the
 generic-fiber comparison as a finite-flat Galois model is the next step.
+
+### Equivariant generic torsion points — 2026-10-06 22:34 UTC
+
+`CubicTorsionGenericPoints` proves that restricting generic-fiber
+algebra maps preserves convolution, identifies their additive group with
+the classical n-torsion subgroup, and proves compatibility with field
+endomorphisms. A specified equivariant classical comparison therefore
+gives an actual bijective equivariant map from the constructed model.
+
+`isFiniteFlat_of_unit_torsion` now supplies the existing
+`GaloisModule.IsFiniteFlat` interface from this model over noetherian
+integral bases with n invertible. Its point-group identification is
+retained explicitly rather than postulated. Build, full cubic-namespace
+axiom audit, linter, and import checks passed.
 
 ## Exact target and the already completed adapters
 
