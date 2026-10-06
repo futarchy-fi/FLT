@@ -1278,6 +1278,22 @@ the generator is an étale morphism. These strengthen the earlier
 geometric-point count. Étaleness over the integral universal coefficient
 ring remains a separate obligation.
 
+### 2026-10-06: finite étale cyclic parameters over Dedekind bases
+
+`CubicCyclicDedekind.lean` proves integral flatness and étaleness of the
+actual invariant algebra over a Dedekind coefficient ring, with
+invertible torsion order. The invariant inclusion stays injective after
+arbitrary base change: its cokernel embeds into the torsion-free module
+of scalar differences and is flat over the Dedekind base. The resulting
+field fibers embed in étale algebras and are étale. Finite differentials,
+the support criterion, and Nakayama give étaleness over the base.
+
+The generator-forgetting morphism is also étale. At prime level every
+field fiber has dimension p+1. This includes the discrete valuation
+bases relevant to reduction at 3 for good elliptic models. It does not
+cover the higher-dimensional universal coefficient ring or degenerating
+elliptic models at the cusps. All new declarations pass the axiom audit.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
