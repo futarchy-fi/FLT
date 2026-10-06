@@ -435,6 +435,28 @@ These results require neither an invertible discriminant nor division by
 2 or 3. They do not construct addition or establish the group scheme axioms.
 The modular and arithmetic objects required by the Mazur route remain open.
 
+### Addition on the secant open (2026-10-05)
+
+`FLT/EllipticCurve/CubicSecant.lean` constructs an actual addition
+morphism on the open of the cubic product where both inputs are in the
+ordinary chart and their x-coordinate difference is invertible.
+The domain is the spectrum of a localization of the tensor product of
+the two chart rings. `secantInclusion` is proved to be an open immersion
+into the scheme-theoretic product over the coefficient base, with its
+two projection formulas verified.
+
+A polynomial certificate proves the usual secant coordinates satisfy
+the Weierstrass equation over arbitrary commutative rings whenever the
+denominator is a unit. This gives a quotient algebra map and the
+scheme morphism `secantAddition`, compatible with the base.
+No field, smoothness, or invertibility of 2 or 3 is assumed.
+
+This is only one open of the required addition domain. Pairs with equal
+x-coordinate (including doubling and opposite points), pairs involving
+infinity, compatibility on further overlaps, and the global group laws
+remain to be constructed. The modular and arithmetic inputs to the Mazur
+route are still missing.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
