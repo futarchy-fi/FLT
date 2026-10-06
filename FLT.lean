@@ -171,10 +171,15 @@ public import FLT.EllipticCurve.CubicChartPoint
 public import FLT.EllipticCurve.CubicCharts
 public import FLT.EllipticCurve.CubicChord
 public import FLT.EllipticCurve.CubicDenseComparison
+public import FLT.EllipticCurve.CubicFieldCover
 public import FLT.EllipticCurve.CubicInfinityAddition
 public import FLT.EllipticCurve.CubicInfinityChord
 public import FLT.EllipticCurve.CubicInfinityComparison
+public import FLT.EllipticCurve.CubicInfinityCover
+public import FLT.EllipticCurve.CubicInfinityFiniteComparison
 public import FLT.EllipticCurve.CubicInfinityIdentity
+public import FLT.EllipticCurve.CubicInfinityPieces
+public import FLT.EllipticCurve.CubicInfinityRegular
 public import FLT.EllipticCurve.CubicIntegral
 public import FLT.EllipticCurve.CubicMixedAddition
 public import FLT.EllipticCurve.CubicMixedAffine
@@ -182,6 +187,8 @@ public import FLT.EllipticCurve.CubicMixedChartAddition
 public import FLT.EllipticCurve.CubicMixedCover
 public import FLT.EllipticCurve.CubicMixedGluing
 public import FLT.EllipticCurve.CubicMixedOpposite
+public import FLT.EllipticCurve.CubicMixedRegular
+public import FLT.EllipticCurve.CubicMixedRestriction
 public import FLT.EllipticCurve.CubicNegation
 public import FLT.EllipticCurve.CubicNegationGlobal
 public import FLT.EllipticCurve.CubicNegationInvolution
@@ -202,6 +209,7 @@ public import FLT.EllipticCurve.CubicSmooth
 public import FLT.EllipticCurve.CubicTangent
 public import FLT.EllipticCurve.CubicVerticalAddition
 public import FLT.EllipticCurve.CubicVerticalOverlap
+public import FLT.EllipticCurve.CubicVerticalProjective
 public import FLT.EllipticCurve.DivisionPolynomialDifferential
 public import FLT.EllipticCurve.DivisionPolynomialDifferentialIdentity
 public import FLT.EllipticCurve.DivisionPolynomialSeparable

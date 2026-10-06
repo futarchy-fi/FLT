@@ -610,6 +610,58 @@ Checked 2026-10-06, 16:14 UTC: targeted builds, the full cubic-namespace axiom
 audit, linters for `CubicAffineInverse` and `CubicMixedOpposite`, and the import
 and diff checks passed for this step. No new axioms or admissions were added.
 
+## Infinity-chart coverage and dense comparison domains (2026-10-06)
+
+`CubicFieldCover` turns factorizations of all field-valued points into an actual
+affine open cover using residue fields. `CubicInfinityCover` applies this to
+the infinity-chart product: the open where the first input is finite, the
+open where the second is finite, and the divided-difference addition domain
+containing the pair of infinities cover the entire product.
+
+`CubicInfinityPieces` equips all three opens with actual addition morphisms.
+`CubicMixedRestriction` proves that both mixed additions restrict to the
+existing affine addition after a chart change. `CubicInfinityFiniteComparison`
+uses these identities and affine commutativity to prove agreement of the
+two finite-input pieces, including equality on their categorical pullback.
+
+`CubicInfinityRegular` proves that v minus any coefficient is regular on
+the infinity chart over every commutative base, using its monic cubic
+presentation over the v-line. The v-difference remains regular on the
+product and the slope domain; the chord relation then makes the
+u-difference regular there. Consequently the projective output denominator
+is regular on the infinity-addition domain. Its localization is
+scheme-theoretically dominant, factors through the normalized projective
+law, and agrees there with the infinity law. This schematic density is
+preserved by flat base change, so it can be used on open intersections
+without discarding nilpotent information.
+
+`CubicVerticalProjective` proves that infinity-output normalizations of
+both chord laws agree with the descended affine addition. In particular,
+the homogeneous projective comparison now includes sums equal to infinity.
+`mixed_addition_agreement` has been generalized to both output charts.
+
+The next exact obligations are the comparisons between the infinity-pair
+piece and each finite-input piece. The finite/finite comparison is complete;
+the other two are not yet asserted as theorems. Use the dense projective
+restriction, its flat base changes, the two-output mixed comparison, and
+input chart transitions to finish those equalities. Then glue the three
+pieces, compare and glue the four input-chart products, and prove the
+remaining global group laws, especially associativity.
+
+`CubicMixedRegular` also proves schematic density of the finite-first-input
+open in the whole mixed chart, again over arbitrary coefficient rings.
+
+These results do not yet construct the modular curve, represented Jacobian,
+Eisenstein quotient, cotangent/Hecke argument, or specialization/formal
+immersion input of Mazur's 1978 route. They do not prove rational torsion
+exclusion or the remaining FLT arithmetic leaves.
+
+Checked 2026-10-06, 16:48 UTC: all targeted builds and the expanded
+cubic-namespace axiom audit passed. Linters passed for
+`CubicInfinityFiniteComparison`, `CubicInfinityRegular`, and
+`CubicMixedRegular`; `mk_all --check` and `git diff --check` passed.
+No new axioms or admissions were added.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:

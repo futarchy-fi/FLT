@@ -6,8 +6,11 @@ Authors: krandder
 module
 
 import FLT.EllipticCurve.CubicAffineInverse
+import FLT.EllipticCurve.CubicInfinityFiniteComparison
 import FLT.EllipticCurve.CubicInfinityComparison
+import FLT.EllipticCurve.CubicInfinityRegular
 import FLT.EllipticCurve.CubicMixedOpposite
+import FLT.EllipticCurve.CubicMixedRegular
 import Mathlib.Data.ZMod.Basic
 import Lean
 

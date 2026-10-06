@@ -6,7 +6,7 @@ Authors: krandder
 module
 
 public import FLT.EllipticCurve.CubicMixedAffine
-public import FLT.EllipticCurve.CubicSecantProjective
+public import FLT.EllipticCurve.CubicVerticalProjective
 
 /-! # Compatibility on the mixed-chart addition cover -/
 
@@ -65,24 +65,24 @@ theorem mixedAffine_projective_sum :
 
 /-- Compatibility for arbitrary common coefficient algebras, hence for the
 scheme-theoretic intersection of the two mixed-chart opens. -/
-theorem mixed_addition_agreement [W.IsElliptic]
+theorem mixed_addition_agreement [W.IsElliptic] {d : Bool}
     {S : Type u} [CommRing S] [Algebra R S]
     (f : MixedAffineRing W →ₐ[R] S)
-    (g : ProjectiveAdditionRing W true false false →ₐ[R] S)
+    (g : ProjectiveAdditionRing W true false d →ₐ[R] S)
     (h : f.comp (mixedAffineRestriction W) =
-      g.comp (projectiveAdditionRestriction W true false false)) :
+      g.comp (projectiveAdditionRestriction W true false d)) :
     Spec.map (CommRingCat.ofHom f.toRingHom) ≫ mixedAffineAddition W =
-      Spec.map (CommRingCat.ofHom g.toRingHom) ≫ projectiveAddition W true false false := by
+      Spec.map (CommRingCat.ofHom g.toRingHom) ≫ projectiveAddition W true false d := by
   let a := f.comp (mixedAffineFirst W)
   let b := f.comp (mixedAffineRight W)
   let E := W.map (algebraMap R S)
   let P := E.toProjective.addXYZ (chartPointCoords W false a) (chartPointCoords W false b)
   have hp (i : Fin 3) :
-      g (projectiveAdditionRestriction W true false false (chartPairSum W true false i)) =
+      g (projectiveAdditionRestriction W true false d (chartPairSum W true false i)) =
         f (mixedAffineLeft W (coord W true 1)) ^ 2 * P i := by
     have he := DFunLike.congr_fun h (chartPairSum W true false i)
     change f (mixedAffineRestriction W (chartPairSum W true false i)) =
-      g (projectiveAdditionRestriction W true false false (chartPairSum W true false i)) at he
+      g (projectiveAdditionRestriction W true false d (chartPairSum W true false i)) at he
     have hm := congrArg f (congrFun (mixedAffine_projective_sum W) i)
     simp only [Function.comp_apply, Pi.smul_apply, smul_eq_mul, map_mul, map_pow] at hm
     have hb := Projective.baseChange_addXYZ (W' := W.toProjective) f
@@ -92,15 +92,24 @@ theorem mixed_addition_agreement [W.IsElliptic]
     exact he.symm.trans (hm.trans
       (congrArg (fun x ↦ f (mixedAffineLeft W (coord W true 1)) ^ 2 * x) (congrFun hb i).symm))
   have hg (i : Fin 3) :
-      chartPointCoords W false (g.comp (projectiveAdditionSum W true false false)) i =
+      chartPointCoords W d (g.comp (projectiveAdditionSum W true false d)) i =
         P i * (f (mixedAffineLeft W (coord W true 1)) ^ 2 *
-          g (projectiveAdditionInv W true false false)) := by
+          g (projectiveAdditionInv W true false d)) := by
     rw [projectiveAdditionSum_normalized_map, hp]
     ring
-  have he := affineAddition_projective_comparison W a b
-    (g.comp (projectiveAdditionSum W true false false))
-    (f (mixedAffineLeft W (coord W true 1)) ^ 2 *
-      g (projectiveAdditionInv W true false false)) hg
+  have he : Spec.map (CommRingCat.ofHom (Algebra.TensorProduct.productMap a b).toRingHom) ≫
+      affineAddition W =
+        Spec.map (CommRingCat.ofHom (g.comp (projectiveAdditionSum W true false d)).toRingHom) ≫
+          sourceChart W d := by
+    cases d
+    · exact affineAddition_projective_comparison W a b
+        (g.comp (projectiveAdditionSum W true false false))
+        (f (mixedAffineLeft W (coord W true 1)) ^ 2 *
+          g (projectiveAdditionInv W true false false)) hg
+    · exact affineAddition_projective_infinity_comparison W a b
+        (g.comp (projectiveAdditionSum W true false true))
+        (f (mixedAffineLeft W (coord W true 1)) ^ 2 *
+          g (projectiveAdditionInv W true false true)) hg
   have hi : f.comp (mixedAffineInputs W) = Algebra.TensorProduct.productMap a b := by
     apply Algebra.TensorProduct.ext'
     intro x y
