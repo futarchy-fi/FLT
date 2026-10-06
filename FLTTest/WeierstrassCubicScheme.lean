@@ -5,7 +5,8 @@ Authors: krandder
 -/
 module
 
-import FLT.EllipticCurve.CubicSecant
+import FLT.EllipticCurve.CubicAdditionOverlap
+import FLT.EllipticCurve.CubicVerticalAddition
 import Mathlib.Data.ZMod.Basic
 import Lean
 

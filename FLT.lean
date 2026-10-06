@@ -158,10 +158,12 @@ public import FLT.DivisionAlgebra.Finiteness
 public import FLT.EllipticCurve.CoefficientAction
 public import FLT.EllipticCurve.CoordinateRing
 public import FLT.EllipticCurve.CoordinateRingDedekind
+public import FLT.EllipticCurve.CubicAdditionOverlap
 public import FLT.EllipticCurve.CubicAffineDomain
 public import FLT.EllipticCurve.CubicBaseChange
 public import FLT.EllipticCurve.CubicBaseChangeGlobal
 public import FLT.EllipticCurve.CubicCharts
+public import FLT.EllipticCurve.CubicChord
 public import FLT.EllipticCurve.CubicIntegral
 public import FLT.EllipticCurve.CubicNegation
 public import FLT.EllipticCurve.CubicNegationGlobal
@@ -174,6 +176,8 @@ public import FLT.EllipticCurve.CubicRelativeDimension
 public import FLT.EllipticCurve.CubicScheme
 public import FLT.EllipticCurve.CubicSecant
 public import FLT.EllipticCurve.CubicSmooth
+public import FLT.EllipticCurve.CubicTangent
+public import FLT.EllipticCurve.CubicVerticalAddition
 public import FLT.EllipticCurve.DivisionPolynomialDifferential
 public import FLT.EllipticCurve.DivisionPolynomialDifferentialIdentity
 public import FLT.EllipticCurve.DivisionPolynomialSeparable

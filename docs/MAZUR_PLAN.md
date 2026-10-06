@@ -457,6 +457,27 @@ infinity, compatibility on further overlaps, and the global group laws
 remain to be constructed. The modular and arithmetic inputs to the Mazur
 route are still missing.
 
+### Tangents, vertical chords, and the first addition overlap (2026-10-06)
+
+`CubicTangent.lean` constructs addition on the open where
+y2+y1+a1*x2+a3 is invertible, including nonvertical tangents. A divided
+difference identity supplies the slope without cancelling x2-x1.
+`CubicAdditionOverlap.lean` proves equality with secant addition as
+algebra maps and scheme morphisms on their actual fiber-product intersection.
+
+`CubicChord.lean` proves homogeneous chord certificates valid over arbitrary
+commutative rings and their normalization in the infinity chart.
+`CubicVerticalAddition.lean` uses the secant and divided-difference versions
+to construct two further morphisms on the opens where the homogeneous
+output Y-coordinate is invertible. Each is an actual open of the cubic
+product and is compatible with the base.
+
+The four denominators cover pairs over a field when the first point is
+nonsingular. Lifting this to a scheme open cover, proving the remaining
+overlap identities, and treating inputs at infinity remain separate steps.
+No global addition or group scheme structure is claimed, and the modular
+and arithmetic inputs to the Mazur route remain open.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
