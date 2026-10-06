@@ -528,6 +528,34 @@ Eisenstein quotient, and the arithmetic formal-immersion argument are
 still missing. No arithmetic assumption in the FLT assembly is discharged
 by this construction.
 
+## Local addition domains including infinity (2026-10-06)
+
+The projective and infinity addition modules now supply genuine open domains
+of the full cubic product over every commutative coefficient ring:
+
+- `CubicProjectiveAddition` proves by polarization that Mathlib's homogeneous
+  `addXYZ` preserves the cubic equation, including over nonreduced rings.
+- `CubicProjectiveLocal` normalizes this law on either target chart, for all
+  pairs of input charts, with open-immersion inclusions and base compatibility.
+- `CubicProjectiveIdentity` factors the whole infinity-times-affine section
+  through the corresponding open and proves its addition is the affine chart
+  inclusion; both input projections are checked.
+- `CubicInfinityChord` supplies a divided-difference law regular at the pair
+  of infinities. `CubicInfinityAddition` constructs its actual local morphism.
+  `CubicInfinityIdentity` lifts the pair of infinity sections into that domain
+  and proves its sum is infinity.
+
+No inversion of 2 or 3 and no new ellipticity hypothesis is used for these
+local constructions. They do not yet define the global addition: coverage,
+compatibility with the already glued affine addition, and group identities
+remain to be assembled. The modular-curve, Jacobian, Eisenstein quotient,
+formal-immersion and arithmetic FLT leaves remain open.
+
+Checked 2026-10-06, 15:23 UTC: targeted builds, the cubic namespace axiom audit,
+`runLinter FLT.EllipticCurve.CubicInfinityIdentity`, `mk_all --check`, and
+`git diff --check` passed. The namespace audit accepts only `propext`,
+`Classical.choice`, and `Quot.sound`.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:

@@ -6,6 +6,7 @@ Authors: krandder
 module
 
 import FLT.EllipticCurve.CubicAffineAddition
+import FLT.EllipticCurve.CubicInfinityIdentity
 import Mathlib.Data.ZMod.Basic
 import Lean
 
