@@ -818,6 +818,21 @@ contains no new axiom or admitted step. Packaging the verified laws as a
 commutative group object is next. The modular and arithmetic Mazur inputs
 remain open.
 
+### Constructed commutative group scheme — 2026-10-06 18:25 UTC
+
+`CubicGroupScheme.groupModel` now has an actual `CommGrpObj` instance over
+`Spec R`, when `R` is reduced and noetherian and the discriminant of `W`
+is a unit. Its multiplication, identity, and inverse are precisely the
+globally descended `addition`, `infinity`, and `negation`; the monoidal
+product coherence laws are proved from the preceding scheme identities.
+
+The same object has verified properness, smoothness, relative dimension
+one, and geometrically connected fibers. This closes the smooth
+Weierstrass group-model construction over the stated bases. It does not
+construct modular curves, their Jacobians/Eisenstein quotients, or prove
+the torsion-exclusion theorem. General coefficient bases beyond the
+reduced noetherian case are not covered by this group-object instance.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
