@@ -199,6 +199,7 @@ public import FLT.EllipticCurve.CubicInfinityProjective
 public import FLT.EllipticCurve.CubicInfinityRegular
 public import FLT.EllipticCurve.CubicInfinityRestriction
 public import FLT.EllipticCurve.CubicIntegral
+public import FLT.EllipticCurve.CubicIntegralReduction
 public import FLT.EllipticCurve.CubicMixedAddition
 public import FLT.EllipticCurve.CubicMixedAffine
 public import FLT.EllipticCurve.CubicMixedChartAddition
@@ -228,6 +229,7 @@ public import FLT.EllipticCurve.CubicSecantProjective
 public import FLT.EllipticCurve.CubicSecantRegular
 public import FLT.EllipticCurve.CubicSmooth
 public import FLT.EllipticCurve.CubicTangent
+public import FLT.EllipticCurve.CubicTorsionModel
 public import FLT.EllipticCurve.CubicValuativeSpecialization
 public import FLT.EllipticCurve.CubicVerticalAddition
 public import FLT.EllipticCurve.CubicVerticalOverlap

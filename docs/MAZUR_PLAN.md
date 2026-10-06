@@ -852,6 +852,74 @@ injectivity on prime-to-residue-characteristic torsion or exact
 preservation of point order. The reduction-kernel argument and the
 remaining modular/Eisenstein/formal-immersion inputs are still open.
 
+### Geometric reduction and its torsion kernel (2026-10-06, second two-hour session)
+
+`CubicIntegralReduction.lean` now constructs the section attached to an
+integral affine solution and proves its compatibility with coefficient
+extension. The properness-based `classicalReductionHom` therefore agrees
+with coordinate reduction on integral affine points. Combining this identity
+with the existing division-polynomial theorem
+`integral_coordinates_of_unit_nsmul` proves that its kernel contains no
+nonzero point killed by an integer invertible in the valuation ring, and
+that reduction is injective on all points killed by that integer.
+The exact additive order is preserved. The same injectivity is proved
+for actual scheme-valued points; two torsion sections agreeing on the
+special fiber are equal.
+The hypotheses are a noetherian valuation subring of the fraction field
+and an elliptic integral Weierstrass model (good reduction).
+
+This is a proved compatibility and kernel theorem for the actual geometric
+reduction map. It does not assert good reduction for an arbitrary rational
+elliptic curve and does not settle the multiplicative or additive cases.
+The modular curve, Eisenstein quotient, formal immersion and bad-reduction
+arguments listed above are still required for Mazur's rational torsion
+exclusion. No formal-group kernel hypothesis has been introduced.
+
+### Represented multiplication kernel — 2026-10-06 18:51 UTC
+
+`CubicTorsionModel` constructs the actual multiplication-by-n morphism on
+the cubic group scheme and its equalizer with the zero morphism in schemes
+over the coefficient base. `torsionModelPointEquiv` proves the universal
+property for every source scheme over that base: its maps into this kernel
+are exactly the scheme-valued points killed by n. This is an actual
+represented torsion object, not a structure with an assumed representing
+scheme. The base is still reduced and noetherian, with unit discriminant.
+
+Finiteness, flatness, the expected rank, and étaleness when n is invertible
+have not been proved for this new scheme. Those properties and the
+construction and descent of level structures remain necessary before this
+kernel supplies the modular moduli problem. No modular curve or rational
+torsion exclusion follows from representability alone.
+
+### Verification and continuation boundary — 2026-10-06 18:54 UTC
+
+The full `lake build FLT FLTTest.WeierstrassCubicScheme` succeeded after
+integration of the final two modules (10,461 jobs, including
+`FermatsLastTheorem`). Targeted `runLinter` passed for
+`CubicIntegralReduction` and `CubicTorsionModel`; the preceding modules
+were linted at their respective commits. `mk_all --check` reported no
+update necessary, and `git diff --check` passed. The cubic namespace audit
+accepts only `propext`, `Classical.choice` and `Quot.sound`.
+The 24 geometric source modules added in this session contain no
+`sorry`, `admit`, `native_decide` or new axiom declarations.
+
+A concrete continuation is to prove finiteness, flatness and the expected
+rank of the represented multiplication kernel, and étaleness at invertible
+orders, before constructing and descending level structures. Existing
+`OddTorsionModel` supplies a finite free affine envelope, but its own
+multiplicity caveat explicitly prevents identifying that envelope with
+the kernel without a new comparison. `NTorsionFinite` contains
+`Universal.curve`; `MultiplicationDifferential` contains the proved
+universal invariant-differential formulas. These are source-level inputs
+to investigate, not completed comparison theorems for `torsionModel`.
+
+The unconditional FLT theorem is not established by this session.
+`FLT/Assembly/Final.lean` still exposes the five arithmetic inputs:
+Mazur torsion exclusion, hardly ramified lifting, compatible families,
+sorted extension existence and three-adic character purity. The source
+search found no production use of `knownin1980s`; its only remaining
+occurrence is the negative unknown-identifier test.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
