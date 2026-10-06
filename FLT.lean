@@ -167,11 +167,15 @@ public import FLT.EllipticCurve.CubicAffineInverse
 public import FLT.EllipticCurve.CubicAffineInverseCover
 public import FLT.EllipticCurve.CubicBaseChange
 public import FLT.EllipticCurve.CubicBaseChangeGlobal
+public import FLT.EllipticCurve.CubicChartAddition
+public import FLT.EllipticCurve.CubicChartIntersection
 public import FLT.EllipticCurve.CubicChartPoint
+public import FLT.EllipticCurve.CubicChartProductCover
 public import FLT.EllipticCurve.CubicCharts
 public import FLT.EllipticCurve.CubicChord
 public import FLT.EllipticCurve.CubicDenseComparison
 public import FLT.EllipticCurve.CubicFieldCover
+public import FLT.EllipticCurve.CubicFirstInputAddition
 public import FLT.EllipticCurve.CubicInfinityAddition
 public import FLT.EllipticCurve.CubicInfinityChartAddition
 public import FLT.EllipticCurve.CubicInfinityChord
@@ -183,6 +187,7 @@ public import FLT.EllipticCurve.CubicInfinityIdentity
 public import FLT.EllipticCurve.CubicInfinityPieces
 public import FLT.EllipticCurve.CubicInfinityProjective
 public import FLT.EllipticCurve.CubicInfinityRegular
+public import FLT.EllipticCurve.CubicInfinityRestriction
 public import FLT.EllipticCurve.CubicIntegral
 public import FLT.EllipticCurve.CubicMixedAddition
 public import FLT.EllipticCurve.CubicMixedAffine

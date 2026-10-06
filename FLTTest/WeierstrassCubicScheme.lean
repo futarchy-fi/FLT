@@ -5,6 +5,7 @@ Authors: krandder
 -/
 module
 
+import FLT.EllipticCurve.CubicFirstInputAddition
 import FLT.EllipticCurve.CubicAffineInverse
 import FLT.EllipticCurve.CubicInfinityChartAddition
 import FLT.EllipticCurve.CubicInfinityFiniteComparison

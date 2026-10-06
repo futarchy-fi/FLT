@@ -723,6 +723,23 @@ Checked: targeted build, expanded cubic-namespace axiom audit,
 `mk_all --check`, and `git diff --check` passed.
 No new axioms or admissions were added.
 
+### First-input descent — 2026-10-06 17:45 UTC
+
+`CubicInfinityRestriction` proves both input chart-transition identities for
+the descended infinity-chart addition. `CubicChartIntersection` identifies the
+actual chart intersection, and `CubicChartProductCover` transports that
+pullback square and the two-chart cover along any morphism to the base.
+`CubicChartAddition` places all four verified additions under one interface
+and proves the spectrum/tensor-product naturality used to transport their
+transition formulas to scheme products.
+
+`CubicFirstInputAddition.fixedSecondAddition` now glues the first input over
+the entire cubic, with the second input in either chosen chart. Its chart
+restrictions and coefficient-base compatibility are proved. These are actual
+descents of the explicit local formulas, with no new arithmetic assumptions.
+The second-input gluing and global group laws remain to be completed; the
+modular and arithmetic gaps listed above remain open.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
