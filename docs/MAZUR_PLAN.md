@@ -1176,6 +1176,21 @@ targeted build and import checks. The next construction is the affine
 quotient by this actual action, using its coordinate invariants; no
 quotient modular curve or Eisenstein input has yet been supplied.
 
+### Constructed affine scalar quotient — 2026-10-06 23:10 UTC
+
+`CubicTorsionQuotient` transports the actual scheme action to the
+nonzero-torsion coordinate algebra by inverse pullback. Its fixed
+subalgebra defines an actual affine scheme, finite over the coefficient
+base, and the map from nonzero torsion is finite and surjective.
+The map is invariant under every generator change.
+
+Invariant algebra maps factor uniquely through the fixed subalgebra.
+Prime ideals above the same invariant prime form one scalar orbit.
+All declarations passed the cubic-namespace axiom audit, targeted builds,
+linter and import checks. The geometric-point orbit identification and
+étaleness of this quotient are not asserted by this leaf. It is not yet
+the coordinate-change quotient X0(p), nor its cusp compactification.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:

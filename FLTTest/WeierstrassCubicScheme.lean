@@ -8,7 +8,7 @@ module
 import FLT.EllipticCurve.CubicIntegralReduction
 import FLT.EllipticCurve.CubicGoodReduction
 import FLT.EllipticCurve.CubicLevelParameters
-import FLT.EllipticCurve.CubicTorsionScalars
+import FLT.EllipticCurve.CubicTorsionQuotient
 import FLT.EllipticCurve.CubicTorsionFlat
 import FLT.EllipticCurve.CubicTorsionEtaleAlgebra
 import FLT.EllipticCurve.CubicTorsionEtaleFibers
