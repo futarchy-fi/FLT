@@ -697,6 +697,32 @@ Targeted builds, the cubic-namespace axiom audit, the mixed-projective
 linter, `mk_all --check`, and `git diff --check` passed.
 No new axioms or admissions were added.
 
+## Infinity-chart addition glued (2026-10-06, 17:18 UTC)
+
+`CubicInfinityProjective` proves the input chart-change scaling identity
+and compares each finite-input addition with any normalized projective
+output. `CubicInfinityGluing` proves the two remaining comparisons:
+localizing a flat intersection at the regular projective denominator
+gives the common projective formula, and schematic dominance descends
+the equality. The result is applied to the actual tensor-product
+intersections of the three-open cover.
+
+`CubicInfinityChartAddition` now constructs `infinityChartAddition`
+and its version on the categorical product of infinity charts.
+All three pieces glue, the result is a morphism over the coefficient
+base, and the pair of infinity sections is sent to infinity.
+
+Thus each of the four input-chart products carries a descended addition.
+The next geometric step is compatibility under input chart transitions
+and gluing those four maps to the full cubic product; the global group
+laws, especially associativity, remain to be proved. The modular and
+arithmetic steps of Mazur's route remain open.
+
+Checked: targeted build, expanded cubic-namespace axiom audit,
+`runLinter FLT.EllipticCurve.CubicInfinityChartAddition`,
+`mk_all --check`, and `git diff --check` passed.
+No new axioms or admissions were added.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:

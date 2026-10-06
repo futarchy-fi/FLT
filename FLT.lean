@@ -173,12 +173,15 @@ public import FLT.EllipticCurve.CubicChord
 public import FLT.EllipticCurve.CubicDenseComparison
 public import FLT.EllipticCurve.CubicFieldCover
 public import FLT.EllipticCurve.CubicInfinityAddition
+public import FLT.EllipticCurve.CubicInfinityChartAddition
 public import FLT.EllipticCurve.CubicInfinityChord
 public import FLT.EllipticCurve.CubicInfinityComparison
 public import FLT.EllipticCurve.CubicInfinityCover
 public import FLT.EllipticCurve.CubicInfinityFiniteComparison
+public import FLT.EllipticCurve.CubicInfinityGluing
 public import FLT.EllipticCurve.CubicInfinityIdentity
 public import FLT.EllipticCurve.CubicInfinityPieces
+public import FLT.EllipticCurve.CubicInfinityProjective
 public import FLT.EllipticCurve.CubicInfinityRegular
 public import FLT.EllipticCurve.CubicIntegral
 public import FLT.EllipticCurve.CubicMixedAddition
