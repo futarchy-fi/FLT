@@ -51,4 +51,18 @@ def torsionModelPointEquiv (n : ℕ) (X : Over (Spec (.of R))) :
     apply Subtype.ext
     simp
 
+
+/-- The canonical closed inclusion of the multiplication kernel into the cubic. -/
+abbrev torsionInclusion (n : ℕ) : torsionModel W n ⟶ groupModel W :=
+  equalizer.ι (multiplicationOver W n) (1 : groupModel W ⟶ groupModel W)
+
+instance torsionInclusionClosedImmersion (n : ℕ) :
+    IsClosedImmersion (torsionInclusion W n).left :=
+  inferInstanceAs (IsClosedImmersion
+    (equalizer.ι (multiplicationOver W n) (1 : groupModel W ⟶ groupModel W)).left)
+
+theorem torsionModel_proper (n : ℕ) : IsProper (torsionModel W n).hom := by
+  rw [← (torsionInclusion W n).w]
+  infer_instance
+
 end WeierstrassCurve.CubicCharts

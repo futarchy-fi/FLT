@@ -885,8 +885,10 @@ are exactly the scheme-valued points killed by n. This is an actual
 represented torsion object, not a structure with an assumed representing
 scheme. The base is still reduced and noetherian, with unit discriminant.
 
-Finiteness, flatness, the expected rank, and étaleness when n is invertible
-have not been proved for this new scheme. Those properties and the
+The canonical inclusion is now proved to be a closed immersion, and the
+represented torsion scheme is proper over the coefficient base. Finiteness,
+flatness and the expected rank for nonzero n, and étaleness when n is
+invertible, have not been proved for this new scheme. Those properties and the
 construction and descent of level structures remain necessary before this
 kernel supplies the modular moduli problem. No modular curve or rational
 torsion exclusion follows from representability alone.
@@ -904,7 +906,7 @@ The 24 geometric source modules added in this session contain no
 `sorry`, `admit`, `native_decide` or new axiom declarations.
 
 A concrete continuation is to prove finiteness, flatness and the expected
-rank of the represented multiplication kernel, and étaleness at invertible
+rank of the represented multiplication kernel for nonzero orders, and étaleness at invertible
 orders, before constructing and descending level structures. Existing
 `OddTorsionModel` supplies a finite free affine envelope, but its own
 multiplicity caveat explicitly prevents identifying that envelope with
@@ -918,11 +920,15 @@ The pinned Mathlib already supplies
 `AlgebraicGeometry/ZariskisMainTheorem.lean`, and
 `locallyQuasiFinite_iff_finite_preimage_singleton` under local finite type
 and quasi-compactness in `Morphisms/QuasiFinite.lean`. Thus a possible
-finiteness route for the new kernel is to establish its closed immersion
-into the proper cubic and the required finite geometric fibers, then use
-these existing scheme theorems. Those hypotheses still need proofs for
-`torsionModel`; the arithmetic specialization result alone does not
+finiteness route for the new kernel uses the now-proved closed immersion
+and properness, then establishes finite geometric fibers and applies
+these existing scheme theorems. The finite-fiber hypothesis still needs
+a proof for `torsionModel`; the arithmetic specialization result alone does not
 supply them. Flatness and rank would remain separate obligations.
+
+Final refinement at 18:59 UTC: the closed immersion and properness proofs
+were added to `CubicTorsionModel`; the full FLT build and cubic namespace
+audit passed again after this change.
 
 The unconditional FLT theorem is not established by this session.
 `FLT/Assembly/Final.lean` still exposes the five arithmetic inputs:
