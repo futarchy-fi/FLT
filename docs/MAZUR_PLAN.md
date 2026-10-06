@@ -740,6 +740,20 @@ descents of the explicit local formulas, with no new arithmetic assumptions.
 The second-input gluing and global group laws remain to be completed; the
 modular and arithmetic gaps listed above remain open.
 
+### Global cubic addition — 2026-10-06 17:47 UTC
+
+`CubicGlobalAddition.addition` is a morphism from the full cubic product over
+the coefficient base to the cubic. The second-input overlap comparison is
+proved by the first-input open cover, then the second-input cover performs
+the final descent. `addition_restrict_pair` identifies its restriction to
+every product of the two charts with the corresponding explicit addition.
+`addition_toBase` proves that the operation is over the coefficient base.
+
+This completes the chart descent boundary recorded above. It does not yet
+supply the global group laws, particularly associativity, or the modular
+curve, Jacobian/Eisenstein quotient, specialization, and formal-immersion
+arguments needed for Mazur torsion exclusion and FLT.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
