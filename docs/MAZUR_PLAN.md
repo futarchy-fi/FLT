@@ -937,6 +937,27 @@ sorted extension existence and three-adic character purity. The source
 search found no production use of `knownin1980s`; its only remaining
 occurrence is the negative unknown-identifier test.
 
+### Finite represented torsion — 2026-10-06 20:52 UTC
+
+`CubicTorsionFieldPoints` identifies maps into the actual kernel with
+classical points killed by n, and proves that this set is finite over
+every field when n is nonzero. `CubicTorsionGeometricFiber` uses the
+closed-point correspondence over algebraically closed fields, the Jacobson
+property and compactness to prove that each geometric fiber has a finite
+underlying space. This argument does not discard scheme nilpotents.
+
+`CubicTorsionFinite` descends topological finiteness from the algebraic
+closure to arbitrary field fibers, proves local quasi-finiteness over the
+coefficient base, and applies the already proved properness together with
+Mathlib's Zariski main theorem. Thus `torsionModel_finite` proves that the
+actual nonzero-order kernel is finite over every reduced noetherian base
+with elliptic Weierstrass model. No invertibility assumption on n is
+needed for this finiteness theorem.
+
+Flatness, rank and étaleness are not consequences of this topological
+fiber argument and remain unproved. The modular and global arithmetic
+inputs to FLT are unchanged.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
