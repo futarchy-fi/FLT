@@ -41,8 +41,8 @@ instance torsionCoordinateAlgebra (n : ℕ) [NeZero n] :
   instAlgebraCarrierObjOppositeOpensCarrierCarrierCommRingCatPresheafOpOpensTopOfOverSpecOfIsAffine
     (R := .of R) (X := (torsionModel W n).left)
 
-instance torsionCoordinateHopfAlgebra (n : ℕ) [NeZero n] :
-    HopfAlgebra R (torsionCoordinateRing W n) := by
+/-- The coordinate algebra with the cogroup structure transported from the actual torsion group. -/
+def torsionCoordinateCogrp (n : ℕ) [NeZero n] : Grp (CommAlgCat R)ᵒᵖ := by
   letI : (algSpec (.of R)).Braided := braidedAlgSpec (R := .of R)
   let G := (torsionModel W n).left
   have : GrpObj ((algSpec (.of R)).obj (.op (CommAlgCat.of R (torsionCoordinateRing W n)))) :=
@@ -50,8 +50,12 @@ instance torsionCoordinateHopfAlgebra (n : ℕ) [NeZero n] :
   have : GrpObj (Opposite.op (CommAlgCat.of R (torsionCoordinateRing W n))) :=
     (algSpec.fullyFaithful (R := .of R)).grpObj
       (Opposite.op (CommAlgCat.of R (torsionCoordinateRing W n)))
-  exact ((commHopfAlgCatEquivCogrpCommAlgCat R).inverse.obj
-    (.op (.mk (Opposite.op (CommAlgCat.of R (torsionCoordinateRing W n)))))).hopfAlgebra
+  exact Grp.mk (Opposite.op (CommAlgCat.of R (torsionCoordinateRing W n)))
+
+instance torsionCoordinateHopfAlgebra (n : ℕ) [NeZero n] :
+    HopfAlgebra R (torsionCoordinateRing W n) :=
+  ((commHopfAlgCatEquivCogrpCommAlgCat R).inverse.obj
+    (Opposite.op (torsionCoordinateCogrp W n))).hopfAlgebra
 
 /-- The actual coordinate Hopf algebra is finite as a module over the base. -/
 theorem torsionCoordinateRing_finite (n : ℕ) [NeZero n] :

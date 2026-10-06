@@ -972,6 +972,64 @@ affine-group equivalence. Its spectrum is isomorphic to the actual
 represented kernel. These constructions introduce no flatness assumption
 and do not yet prove that the integral algebra is flat or étale.
 
+### Compatible coordinate group and unramified torsion — 2026-10-06 21:33 UTC
+
+`CubicTorsionHopfComparison` identifies the coordinate Hopf spectrum with
+the actual torsion group as a group object. `CubicTorsionHopfPoints`
+therefore identifies convolution on algebra-valued points with the
+represented torsion law, proves that all these points are killed by n,
+and proves their commutativity. The categorical comparisons are factored
+through general lemmas to keep elaboration within the existing heartbeat
+limit.
+
+`CubicTorsionDifferentials` detects cocommutativity using the two universal
+tensor-valued points, with no flatness or generic-fiber hypothesis. The
+existing square-zero derivation argument then proves that n annihilates
+the entire module of Kähler differentials. When n is a unit in the base,
+the actual coordinate algebra is formally unramified.
+
+`CubicTorsionUnramified` transfers this property to the actual represented
+kernel scheme. `CubicTorsionEtaleFibers` proves that every field fiber is
+étale under the same unit hypothesis; flatness over a field is automatic.
+This is not a proof of flatness over the original integral base, nor of
+the expected rank. Those remain necessary before packaging a finite-flat
+integral model. No global Mazur or FLT arithmetic input has been discharged.
+
+### Étale generic coordinate fiber — 2026-10-06 21:34 UTC
+
+`CubicTorsionEtaleAlgebra` transports the annihilation of differentials
+through the canonical Kähler base-change equivalence. It proves
+`torsionCoordinate_field_etale`: for every field algebra K over the base,
+the actual coordinate algebra K ⊗ A is étale if n is a unit in K.
+No invertibility of n in the original base is assumed. In particular this
+supplies the generic-étaleness property needed by the finite-flat model
+record in characteristic zero. Integral flatness and the equivariant
+generic-point identification still need to be supplied to that record.
+
+### Classical torsion group comparison — 2026-10-06 21:39 UTC
+
+`CubicTorsionClassicalGroup` upgrades the classical field-point bijection
+to a multiplicative equivalence. It then identifies convolution points of
+the actual coordinate Hopf algebra with the classical subgroup killed by n.
+This holds over arbitrary field algebras, including positive characteristic.
+Naturality with respect to field automorphisms, and hence the explicit
+Galois-equivariant adapter required by the finite-flat model record,
+remain to be checked.
+
+The classical cardinality input is already available as
+`WeierstrassCurve.n_torsion_card` in `FLT/EllipticCurve/Torsion.lean`:
+over a separably closed field with n nonzero, the classical subgroup has
+n² elements. The remaining rank work concerns the constructed coordinate
+algebra and its fibers; this classical counting theorem need not be
+reproved. It does not give the scheme-theoretic length at characteristics
+dividing n.
+
+Validation for this tranche: the full `lake build FLT` target and
+`FLTTest.WeierstrassCubicScheme` passed, including the namespace-wide
+standard-axiom audit and the characteristic-two examples. Targeted linters
+passed for all new or changed proof modules, `mk_all --check` required no
+update, and `git diff --check` passed. No heartbeat limit was increased.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
