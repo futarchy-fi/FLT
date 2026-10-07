@@ -1399,6 +1399,20 @@ Weierstrass coefficient ring is now covered, including characteristic 3
 when p-1 vanishes there. Extending the relative subgroup construction to
 this generality is the next integration step.
 
+### Universal cyclic subgroup scheme (2026-10-07)
+
+The incidence, fiber, relative-group and closed-embedding constructions
+now work over every noetherian integral coefficient base at prime
+level. `CubicUniversalCyclicGroup` instantiates them over the actual
+universal coefficient ring: it constructs a finite étale commutative
+group over `universalCyclicParameters p`, with a closed subgroup
+inclusion into the pulled-back universal torsion and exactly p points
+in every geometric fiber. The universal parameter and generator maps
+are also proved étale. This discharges the previously missing universal
+cyclic subgroup family over the space of Weierstrass equations. It does
+not yet quotient coordinate changes or construct X0(p), cusps, the
+Jacobian, or the arithmetic Eisenstein quotient.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:

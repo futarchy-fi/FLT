@@ -5,11 +5,11 @@ Authors: krandder
 -/
 module
 
-public import FLT.EllipticCurve.CubicPrimeCyclicDegree
+public import FLT.EllipticCurve.CubicCyclicEtale
 public import FLT.EllipticCurve.CubicLevelParameters
 /-! # Universal prime cyclic parameters for Weierstrass equations
 
-The scalar quotient over the universal coefficient ring is finite and
+The prime scalar quotient over the universal coefficient ring is finite étale and
 surjective. Its geometric fibers classify subgroups of order p and have
 p+1 points. A rational generator also supplies an actual rational point
 of this parameter scheme. Quotienting changes of Weierstrass coordinates
@@ -47,6 +47,16 @@ theorem universalCyclicGeneratorMap_finite (p : ℕ) [NeZero p] :
 theorem universalCyclicGeneratorMap_surjective (p : ℕ) [NeZero p] :
     Surjective (universalCyclicGeneratorMap p).left :=
   scalarQuotientMap_surjective (levelCurve p) p
+
+/-- The universal prime cyclic parameter scheme is étale over the coefficient space. -/
+theorem universalCyclicParameters_etale (p : ℕ) [Fact p.Prime] [NeZero p] :
+    Etale (universalCyclicParameters p).hom :=
+  scalarQuotientModel_etale (levelCurve p) p
+
+/-- Forgetting a universal prime generator is an étale morphism. -/
+theorem universalCyclicGeneratorMap_etale (p : ℕ) [Fact p.Prime] [NeZero p] :
+    Etale (universalCyclicGeneratorMap p).left :=
+  scalarQuotientMap_etale (levelCurve p) p
 
 /-- Every coefficient point has a prime cyclic parameter above it. -/
 theorem universalCyclicParameters_surjective (p : ℕ) [Fact p.Prime] [NeZero p] :

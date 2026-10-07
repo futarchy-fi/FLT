@@ -43,7 +43,7 @@ theorem over_geometricPoints_cover {R : Type u} [CommRing R]
   change (X.left.fromSpecResidueField x) _ ∈ U at hx
   rwa [Scheme.fromSpecResidueField_apply] at hx
 
-variable {R : Type u} [CommRing R] [IsDedekindDomain R]
+variable {R : Type u} [CommRing R] [IsNoetherianRing R] [IsDomain R]
 variable (W : WeierstrassCurve R) [W.IsElliptic]
 variable (p : ℕ) [Fact p.Prime] [NeZero p] [Fact (IsUnit (p : R))]
 
@@ -65,7 +65,6 @@ def cyclicPointToTorsion (X : Over (scalarQuotientModel W p).left)
       cyclicIncidenceInclusion_toBase, ← Category.assoc]
     exact congrArg (fun h => h ≫ (scalarQuotientModel W p).hom) f.w)
 
-omit [Fact p.Prime] in
 /-- The cyclic-family point map into torsion is injective for every scheme source. -/
 theorem cyclicPointToTorsion_injective (X : Over (scalarQuotientModel W p).left) :
     Function.Injective (cyclicPointToTorsion W p X) := by

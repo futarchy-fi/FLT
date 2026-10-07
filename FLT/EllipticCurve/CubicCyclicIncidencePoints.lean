@@ -76,7 +76,7 @@ def coprodSectionFiberEquiv (K : Type u) [Field K] {X Y : Scheme.{u}}
         exact ⟨none, Subtype.ext (congrArg (fun h => h ≫ coprod.inl) hz.symm)⟩
       · exact ⟨some ⟨g, by simpa using hz⟩, rfl⟩)
 
-variable {R : Type u} [CommRing R] [IsDedekindDomain R]
+variable {R : Type u} [CommRing R] [IsNoetherianRing R] [IsDomain R]
 variable (W : WeierstrassCurve R) [W.IsElliptic]
 variable (p : ℕ) [Fact p.Prime] [NeZero p] [Fact (IsUnit (p : R))]
 variable (K : Type u) [Field K] [Algebra R K]
@@ -129,7 +129,6 @@ def cyclicIncidenceTorsionPoint
     rw [← Category.assoc (cyclicIncidenceInclusion W p),
       cyclicIncidenceInclusion_toBase, ← Category.assoc, z.property, q.w])
 
-omit [Fact p.Prime] in
 /-- The incidence embedding is injective on torsion-valued fiber points. -/
 theorem cyclicIncidenceTorsionPoint_injective
     (q : pointSource K ⟶ scalarQuotientModel W p) :
@@ -203,7 +202,7 @@ theorem cyclicIncidenceClassicalPoint_mem
     rw [cyclicIncidenceTorsionPoint_generator]
     exact AddSubgroup.mem_zmultiples _
 
-omit [Fact p.Prime] [IsAlgClosed K] in
+omit [IsAlgClosed K] in
 /-- Distinct incidence fiber points give distinct classical points. -/
 theorem cyclicIncidenceClassicalPoint_injective
     (q : pointSource K ⟶ scalarQuotientModel W p) :

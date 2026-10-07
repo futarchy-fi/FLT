@@ -21,7 +21,7 @@ set_option backward.isDefEq.respectTransparency false
 set_option backward.defeqAttrib.useBackward true
 namespace WeierstrassCurve.CubicCharts
 universe u
-variable {R : Type u} [CommRing R] [IsDedekindDomain R]
+variable {R : Type u} [CommRing R] [IsNoetherianRing R] [IsDomain R]
 variable (W : WeierstrassCurve R) [W.IsElliptic]
 variable (p : ℕ) [Fact p.Prime] [NeZero p] [Fact (IsUnit (p : R))]
 

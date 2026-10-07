@@ -5,11 +5,11 @@ Authors: krandder
 -/
 module
 
-public import FLT.EllipticCurve.CubicCyclicDedekind
+public import FLT.EllipticCurve.CubicCyclicEtale
 
 /-! # The finite étale cyclic incidence family
 
-Over a Dedekind coefficient base, adjoin the zero section to the generator
+Over a noetherian integral coefficient base, adjoin the zero section to the generator
 scheme over the scalar quotient. The resulting family embeds as an open
 and closed subscheme of the torsion scheme over the quotient. Its group
 structure and prime-level degree are established separately.
@@ -54,7 +54,7 @@ theorem coprodDesc_open_of_disjoint {X Y Z : Scheme.{u}}
       simp only [coprodOpenCover, 
         coprod.inl_desc, coprod.inr_desc] <;> infer_instance
 
-variable {R : Type u} [CommRing R] [IsDedekindDomain R]
+variable {R : Type u} [CommRing R] [IsNoetherianRing R] [IsDomain R]
 variable (W : WeierstrassCurve R) [W.IsElliptic]
 variable (n : ℕ) [NeZero n] [Fact (IsUnit (n : R))]
 
@@ -85,10 +85,10 @@ theorem cyclicIncidenceZero_open : IsOpenImmersion (cyclicIncidenceZero W n) := 
   have := Etale.of_comp (cyclicIncidenceZero W n) (pullback.fst _ _)
   exact IsOpenImmersion.of_flat_of_mono _
 
-/-- The generator part of the incidence family is open over a Dedekind base. -/
-theorem cyclicIncidenceGenerator_open :
+/-- The generator part of the incidence family is open over an integral base. -/
+theorem cyclicIncidenceGenerator_open [Fact n.Prime] :
     IsOpenImmersion (cyclicIncidenceGenerator W n) := by
-  have := scalarQuotientModel_etale_dedekind W n
+  have := scalarQuotientModel_etale W n
   have : Etale (cyclicIncidenceGenerator W n ≫
       pullback.snd (scalarQuotientModel W n).hom (torsionModel W n).hom) := by
     simp only [cyclicIncidenceGenerator, pullback.lift_snd]
@@ -126,7 +126,7 @@ def cyclicIncidenceInclusion : cyclicIncidenceFamily W n ⟶ cyclicIncidenceAmbi
   coprod.desc (cyclicIncidenceZero W n) (cyclicIncidenceGenerator W n)
 
 /-- The incidence family is an open subscheme of the ambient torsion scheme. -/
-theorem cyclicIncidenceInclusion_open :
+theorem cyclicIncidenceInclusion_open [Fact n.Prime] :
     IsOpenImmersion (cyclicIncidenceInclusion W n) := by
   have := cyclicIncidenceZero_open W n
   have := cyclicIncidenceGenerator_open W n
@@ -146,14 +146,14 @@ theorem cyclicIncidenceInclusion_toBase :
     cyclicIncidenceToBase, cyclicIncidenceZero, cyclicIncidenceGenerator]
 
 /-- The incidence family is étale over its cyclic parameters. -/
-theorem cyclicIncidenceToBase_etale : Etale (cyclicIncidenceToBase W n) := by
+theorem cyclicIncidenceToBase_etale [Fact n.Prime] : Etale (cyclicIncidenceToBase W n) := by
   have := cyclicIncidenceInclusion_open W n
   have := torsionModel_etale W n Fact.out
   rw [← cyclicIncidenceInclusion_toBase]
   infer_instance
 
 /-- The incidence family is also a closed subscheme of the ambient torsion scheme. -/
-theorem cyclicIncidenceInclusion_closed :
+theorem cyclicIncidenceInclusion_closed [Fact n.Prime] :
     IsClosedImmersion (cyclicIncidenceInclusion W n) := by
   have := cyclicIncidenceToBase_finite W n
   have := cyclicIncidenceInclusion_open W n
