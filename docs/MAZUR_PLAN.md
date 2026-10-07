@@ -1345,6 +1345,15 @@ The construction has no assumed subgroup family. The group law and
 prime-level degree of this family remain the next verification steps;
 this is not yet the modular curve or its compactification.
 
+### Geometric incidence fibers (2026-10-07)
+
+`CubicCyclicIncidencePoints` proves that each geometric prime-level
+incidence fiber has exactly p points. Its actual map into the torsion
+scheme is injective and identifies the fiber with the order-p subgroup
+classified by its scalar-quotient parameter. The proof uses the zero
+component and the p-1 generators, and does not assume a group structure
+on the family. Constructing that relative group structure is next.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:

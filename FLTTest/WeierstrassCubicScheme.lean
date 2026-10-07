@@ -31,6 +31,7 @@ import FLT.EllipticCurve.CubicMixedRegular
 import FLT.EllipticCurve.CubicMixedProjective
 import Mathlib.Data.ZMod.Basic
 import FLT.EllipticCurve.CubicCyclicIncidence
+import FLT.EllipticCurve.CubicCyclicIncidencePoints
 import Lean
 
 /-! # Trust audit of both chart transitions and the glued scheme -/
