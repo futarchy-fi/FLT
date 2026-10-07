@@ -1562,6 +1562,23 @@ This completes effective descent through the scalar quotient. Descent
 through all changes of Weierstrass coordinates and construction of the
 compactified modular curve remain separate, unfinished steps.
 
+### Legendre representatives including characteristic three — 2026-10-07
+
+`CubicLegendre.lean` constructs the Legendre equation, computes its
+discriminant and j-invariant, and proves that every elliptic equation over
+an algebraically closed field of characteristic different from two is
+related to one by an admissible coordinate change. The parameter is
+constructed as a root of the degree-six j-polynomial; its values zero
+and one are excluded by the nonzero constant value 256. Mathlib's existing
+classification by j provides the coordinate change. Characteristic three
+is included, so this supplies geometric representatives relevant to the
+selected residue-three route.
+
+This is a geometric representative theorem, not yet an integral modular
+curve or a compactification. The next concrete model is the Legendre
+parameter ring with 2, the prime level, λ and λ-1 inverted, carrying the
+already constructed cyclic parameter family.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
