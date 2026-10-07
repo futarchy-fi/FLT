@@ -4053,6 +4053,7 @@ public import FLT.Mazur.SchemeAffineCrossRefinementRawRestriction
 public import FLT.Mazur.SchemeAffineCrossRefinementRestriction
 public import FLT.Mazur.SchemeAffineDescentChart
 public import FLT.Mazur.SchemeAffineOpenOverlapCover
+public import FLT.Mazur.SchemeAffineOverlapChartCommonRefinement
 public import FLT.Mazur.SchemeAffineOverlapChartComparison
 public import FLT.Mazur.SchemeAffineRefinementCompatibility
 public import FLT.Mazur.SchemeAffineTensorCrossRefinement
