@@ -2614,6 +2614,7 @@ public import FLT.Mazur.AffineOpenCartesianSections
 public import FLT.Mazur.AffineOpenCechBoundary
 public import FLT.Mazur.AffineOpenCoverCommonRefinement
 public import FLT.Mazur.AffineOpenCoverComparisonGluing
+public import FLT.Mazur.AffineOpenCoverGluingIso
 public import FLT.Mazur.AffineOpenDenominators
 public import FLT.Mazur.AffineOpenImmersionLocalizationCriterion
 public import FLT.Mazur.AffineOverlapDiagonal
