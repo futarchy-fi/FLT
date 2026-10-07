@@ -2653,6 +2653,7 @@ public import FLT.Mazur.AffineTensorCocycleTransport
 public import FLT.Mazur.AffineTensorDescentMorphisms
 public import FLT.Mazur.AffineTensorSectionIso
 public import FLT.Mazur.AffineTensorTransportAdditivity
+public import FLT.Mazur.AffineTildePullbackMap
 public import FLT.Mazur.AffineTripleCoefficientExtensionality
 public import FLT.Mazur.AffineTripleCoefficientMaps
 public import FLT.Mazur.AffineTripleOverlapCoefficients
