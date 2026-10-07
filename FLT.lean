@@ -4243,6 +4243,8 @@ public import FLT.Mazur.WeierstrassAdditionSlopeFamilies
 public import FLT.Mazur.WeierstrassAdditionStructure
 public import FLT.Mazur.WeierstrassAffineAdditionGluing
 public import FLT.Mazur.WeierstrassAffineAdditionTransport
+public import FLT.Mazur.WeierstrassAffineNegation
+public import FLT.Mazur.WeierstrassAffineNegationAddition
 public import FLT.Mazur.WeierstrassAffinePolynomialFormula
 public import FLT.Mazur.WeierstrassAffinePolynomialIntersections
 public import FLT.Mazur.WeierstrassAffinePolynomialScaling
@@ -4255,7 +4257,10 @@ public import FLT.Mazur.WeierstrassCubicPolarization
 public import FLT.Mazur.WeierstrassGlobalAdditionCover
 public import FLT.Mazur.WeierstrassGlobalAdditionGluing
 public import FLT.Mazur.WeierstrassGlobalAdditionIdentity
+public import FLT.Mazur.WeierstrassGlobalAdditionInverse
 public import FLT.Mazur.WeierstrassGlobalAdditionZeroRestrictions
+public import FLT.Mazur.WeierstrassGlobalNegation
+public import FLT.Mazur.WeierstrassGlobalNegationInvolution
 public import FLT.Mazur.WeierstrassInfinityAdditionChart
 public import FLT.Mazur.WeierstrassInfinityAdditionCompatibility
 public import FLT.Mazur.WeierstrassInfinityAdditionFormula
@@ -4269,6 +4274,13 @@ public import FLT.Mazur.WeierstrassInfinityIdentityChart
 public import FLT.Mazur.WeierstrassInfinityIdentityCover
 public import FLT.Mazur.WeierstrassInfinityIdentityFormula
 public import FLT.Mazur.WeierstrassInfinityIdentityNeighborhood
+public import FLT.Mazur.WeierstrassInfinityInverseCover
+public import FLT.Mazur.WeierstrassInfinityInverseNeighborhood
+public import FLT.Mazur.WeierstrassInfinityInverseScheme
+public import FLT.Mazur.WeierstrassInfinityNegationAddition
+public import FLT.Mazur.WeierstrassInfinityNegationChart
+public import FLT.Mazur.WeierstrassInfinityNegationFormula
+public import FLT.Mazur.WeierstrassInfinityNegationInvolution
 public import FLT.Mazur.WeierstrassInfinityOutputComparison
 public import FLT.Mazur.WeierstrassInfinityOutputTransition
 public import FLT.Mazur.WeierstrassInfinityOverlapScheme
@@ -4301,6 +4313,13 @@ public import FLT.Mazur.WeierstrassMixedIntersectionScheme
 public import FLT.Mazur.WeierstrassMixedOutputComparison
 public import FLT.Mazur.WeierstrassMixedProductAdditionGluing
 public import FLT.Mazur.WeierstrassMixedProductCover
+public import FLT.Mazur.WeierstrassNegationAdditionDescent
+public import FLT.Mazur.WeierstrassNegationAdditionPullback
+public import FLT.Mazur.WeierstrassNegationCover
+public import FLT.Mazur.WeierstrassNegationIntersection
+public import FLT.Mazur.WeierstrassNegationOverlap
+public import FLT.Mazur.WeierstrassNegationPairSections
+public import FLT.Mazur.WeierstrassOrdinaryNegationEmpty
 public import FLT.Mazur.WeierstrassPolynomialInputCurveComparison
 public import FLT.Mazur.WeierstrassPolynomialInputOutputOverlap
 public import FLT.Mazur.WeierstrassPolynomialInputTransition
