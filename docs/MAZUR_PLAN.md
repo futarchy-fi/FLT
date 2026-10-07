@@ -1949,6 +1949,31 @@ the same action. Once that comparison is proved, apply the descent,
 prove inverse and cocycle identities, and continue the modular curve
 construction. None of the three final arithmetic inputs has been removed.
 
+### Actual coefficient action and coordinate conjugacy — 2026-10-07 11:53 UTC
+
+Implemented `CubicCoefficientAction.lean`. An endomorphism of the
+coefficient algebra acts on both chart rings through their tensor-product
+presentations. It fixes the coordinates, acts on scalars as specified,
+and fixes the map from the original chart. The explicit chart maps
+agree with the global map defined by the cartesian coefficient square.
+
+The global `coefficientEnd_variableChange` proves that this action
+conjugates an admissible coordinate change to the change obtained by
+applying the coefficient endomorphism. This is proved on the actual
+glued cubic, over arbitrary commutative rings, using affine-chart
+density. `coefficientEnd_quadratic` identifies the root-negating action
+with the pulled-back quadratic covering involution. The distinguished
+root unit is sent to its negative.
+
+The module and cubic namespace axiom audit passed (4539 jobs).
+No new axioms, admissions, or increased elaboration limits were used.
+The remaining next step is to propagate this actual covering-action
+comparison through torsion and the cyclic quotient, then use the
+existing root-sign independence to establish the invariant map required
+by `quadraticCyclicDesc`. The descended Legendre maps and their
+inverse/cocycle identities are still unconstructed. The three final
+arithmetic inputs of FLT remain unchanged.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:

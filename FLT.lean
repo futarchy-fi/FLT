@@ -181,6 +181,7 @@ public import FLT.EllipticCurve.CubicChartProductCover
 public import FLT.EllipticCurve.CubicCharts
 public import FLT.EllipticCurve.CubicChord
 public import FLT.EllipticCurve.CubicClassicalReduction
+public import FLT.EllipticCurve.CubicCoefficientAction
 public import FLT.EllipticCurve.CubicCyclicDedekind
 public import FLT.EllipticCurve.CubicCyclicEmbedding
 public import FLT.EllipticCurve.CubicCyclicEtale
