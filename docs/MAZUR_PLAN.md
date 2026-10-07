@@ -1762,8 +1762,10 @@ nontrivial commutative base with two invertible; no noetherian, reduced,
 or domain hypothesis is added.
 
 Both modules pass compilation, the geometric namespace axiom audit
-(4530 jobs), and their linters. No new axioms, admissions or increased
-elaboration limits were introduced. This continuation advances the
+(4530 jobs), and their linters. The complete `lake build FLT` at
+`43efc71b` passed all 10528 jobs, including `FermatsLastTheorem`.
+`mk_all --check` and `git diff --check` also passed. No new axioms,
+admissions or increased elaboration limits were introduced. This continuation advances the
 geometric descent machinery; it does not close any of the three
 remaining arithmetic leaves.
 
