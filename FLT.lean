@@ -4021,6 +4021,7 @@ public import FLT.Mazur.SchemeAffineChartRefinementCategory
 public import FLT.Mazur.SchemeAffineChartRefinementIdentity
 public import FLT.Mazur.SchemeAffineChartRefinementNaturality
 public import FLT.Mazur.SchemeAffineCommonBaseCover
+public import FLT.Mazur.SchemeAffineCommonCoverUniversal
 public import FLT.Mazur.SchemeAffineCommonRefinement
 public import FLT.Mazur.SchemeAffineCommonRefinementCompatibility
 public import FLT.Mazur.SchemeAffineCrossChartFamily
