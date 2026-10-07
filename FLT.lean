@@ -4046,6 +4046,7 @@ public import FLT.Mazur.SchemeAffineCrossRefinementMiddle
 public import FLT.Mazur.SchemeAffineCrossRefinementObjectPresentation
 public import FLT.Mazur.SchemeAffineCrossRefinementOuterRestriction
 public import FLT.Mazur.SchemeAffineCrossRefinementPresentation
+public import FLT.Mazur.SchemeAffineCrossRefinementQuasicoherent
 public import FLT.Mazur.SchemeAffineCrossRefinementRawRestriction
 public import FLT.Mazur.SchemeAffineCrossRefinementRestriction
 public import FLT.Mazur.SchemeAffineDescentChart
