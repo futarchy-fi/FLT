@@ -1832,7 +1832,9 @@ The construction itself only needs nonzero level; primality is used
 for the sign-independence theorem. The linter caught and removed the
 unneeded primality parameter on the construction. The module passes
 compilation, the geometric namespace axiom audit (4533 jobs), and its
-linter, with no new axioms, admissions, or increased elaboration limits.
+linter. The full `lake build FLT` at `46de8488` passed all 10531 jobs,
+including `FermatsLastTheorem`; import and diff checks also passed.
+No new axioms, admissions, or increased elaboration limits were introduced.
 
 This closes the domain obligation for the universal reciprocal cover.
 The analogous √−1 cover presentation, the domain presentations of the
