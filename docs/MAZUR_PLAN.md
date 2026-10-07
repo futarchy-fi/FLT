@@ -1546,6 +1546,22 @@ for the constructed transport of cyclic parameters. Thus composed
 equivariant changes induce the same cyclic-parameter map as successive
 transport, as needed for cocycle compatibility.
 
+### Effective scalar descent for arbitrary targets — 2026-10-07
+
+`CubicScalarDescent.lean` constructs the actual kernel pair of the
+prime-level generator-forgetting map. The graphs of scalar multiplication
+are open immersions and cover this relation scheme; the cover proof uses
+the established field-valued fiber classification and geometric points
+covering schemes. Consequently any scalar-invariant morphism to any scheme
+coequalizes the relation projections and descends uniquely through the
+finite étale generator cover. The equivalence `scalarQuotientHomEquiv`
+expresses the categorical quotient property for arbitrary scheme targets,
+not just affine coordinate homomorphisms.
+
+This completes effective descent through the scalar quotient. Descent
+through all changes of Weierstrass coordinates and construction of the
+compactified modular curve remain separate, unfinished steps.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:

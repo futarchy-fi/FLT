@@ -244,6 +244,7 @@ public import FLT.EllipticCurve.CubicProjectiveLocal
 public import FLT.EllipticCurve.CubicProjectiveMorphism
 public import FLT.EllipticCurve.CubicProjectiveNormalization
 public import FLT.EllipticCurve.CubicRelativeDimension
+public import FLT.EllipticCurve.CubicScalarDescent
 public import FLT.EllipticCurve.CubicScheme
 public import FLT.EllipticCurve.CubicSecant
 public import FLT.EllipticCurve.CubicSecantProjective
