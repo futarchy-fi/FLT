@@ -2067,6 +2067,36 @@ Jacobian, Eisenstein quotient, or the modular formal immersion. The final FLT
 theorem still depends on Mazur_statement and the two existing arithmetic
 sorry proofs.
 
+### Cyclic double relations and the descended return swap — 2026-10-07
+
+Implemented `CubicLegendreCyclicInvolutions.lean`. Coordinate changes whose
+product is the identity or the sign change induce identity cyclic transport.
+This proves the local double-swap relation and the local reciprocal relation
+with inverse roots. Identity changes and equal coordinate isomorphisms are
+handled explicitly, without increasing proof limits.
+
+The module also constructs `legendreSwapReturnDescendedMap` over the
+universal Legendre base. Its local coordinate change uses the same root of
+-1 on the swapped equation. Cancelling the effective coefficient cover
+proves that the descended return followed by the existing descended swap is
+the identity. The opposite order follows from the already verified
+isomorphism property. Thus both inverse identities hold for this explicitly
+constructed return map.
+
+The module build and namespace-wide trust audit passed all 4544 jobs.
+The full lake build FLT passed all 10541 jobs, including FermatsLastTheorem.
+Generated imports and whitespace checks also passed.
+The module linter passed. Direct axiom checks for the local cyclic relations
+and the two descended inverse identities use only propext, Classical.choice
+and Quot.sound. No new arithmetic assumption was introduced.
+
+Remaining: the reciprocal return still needs its comparison between the
+different root covers; mixed permutation relations and the action on the
+whole descended family are not proved. In particular, this is not a
+construction of X0(p), its compactification, Jacobian, Eisenstein quotient,
+or modular formal immersion. Mazur_statement and the two existing FLT
+arithmetic sorry proofs remain unchanged.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
