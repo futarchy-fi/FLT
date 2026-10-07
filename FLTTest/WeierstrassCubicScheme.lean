@@ -32,6 +32,7 @@ import FLT.EllipticCurve.CubicMixedProjective
 import Mathlib.Data.ZMod.Basic
 import FLT.EllipticCurve.CubicCyclicIncidence
 import FLT.EllipticCurve.CubicCyclicIncidencePoints
+import FLT.EllipticCurve.CubicCyclicParameterTransport
 import FLT.EllipticCurve.CubicCyclicGroup
 import FLT.EllipticCurve.CubicCyclicEmbedding
 import FLT.EllipticCurve.CubicInvariantTrace

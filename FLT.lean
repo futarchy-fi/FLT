@@ -184,6 +184,7 @@ public import FLT.EllipticCurve.CubicCyclicGroup
 public import FLT.EllipticCurve.CubicCyclicIncidence
 public import FLT.EllipticCurve.CubicCyclicIncidencePoints
 public import FLT.EllipticCurve.CubicCyclicNaturality
+public import FLT.EllipticCurve.CubicCyclicParameterTransport
 public import FLT.EllipticCurve.CubicCyclicSpecialization
 public import FLT.EllipticCurve.CubicDenseComparison
 public import FLT.EllipticCurve.CubicFieldAddition

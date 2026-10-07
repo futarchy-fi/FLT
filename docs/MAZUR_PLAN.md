@@ -1505,6 +1505,38 @@ scalar actions used on coordinate rings. This provides the equivariance
 needed to descend the actual transport to the invariant scalar quotient;
 it does not yet construct the modular quotient by coordinate changes.
 
+### Cyclic parameters under coordinate changes — 2026-10-07
+
+`CubicCyclicParameterTransport.lean` constructs an isomorphism of the actual
+scalar quotient schemes from an equivariant isomorphism of nonzero torsion.
+The invariant-ring map and the commuting diagram with the map forgetting a
+generator are proved. Applying this construction to admissible changes of
+Weierstrass coordinates gives `variableChangeCyclicParameterIso` and its
+commuting quotient square. The base is a noetherian domain, the equation is
+elliptic and the torsion order is invertible.
+
+This identifies the existing cyclic parameters across coordinate choices.
+It is not a construction of their global moduli quotient, its cusps,
+Jacobian or Eisenstein quotient; those arithmetic-route inputs remain open.
+
+### Eight-hour campaign checkpoint — 2026-10-07 03:55 UTC
+
+Checked with `lake build FLT.EllipticCurve.CubicCyclicParameterTransport
+FLTTest.WeierstrassCubicScheme` (4482 jobs) and
+`lake exe runLinter FLT.EllipticCurve.CubicCyclicParameterTransport`.
+Both passed. The namespace audit accepts only `propext`,
+`Classical.choice` and `Quot.sound` for these geometric declarations.
+A full `lake build FLT` had also passed at `39df46a4` earlier in this block;
+that build still includes the legacy arithmetic inputs and is not a
+completed unconditional FLT proof.
+
+The current constructed boundary is coordinate-independent transport of
+the scalar quotient and its generator map over a fixed coefficient base.
+Next: establish composition/descent for these maps, then continue the
+actual modular-geometry construction. The modular curve with cusps,
+Jacobian/Eisenstein quotient, modular cotangent comparison and bad-reduction
+arguments listed above remain unresolved; no replacement axioms were added.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
