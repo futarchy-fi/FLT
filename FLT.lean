@@ -2654,6 +2654,7 @@ public import FLT.Mazur.AffineTensorCocycleTransport
 public import FLT.Mazur.AffineTensorDescentMorphisms
 public import FLT.Mazur.AffineTensorSectionIso
 public import FLT.Mazur.AffineTensorTransportAdditivity
+public import FLT.Mazur.AffineTildeMorphismCoherence
 public import FLT.Mazur.AffineTildePullbackMap
 public import FLT.Mazur.AffineTildePullbackSectionMap
 public import FLT.Mazur.AffineTildeSemilinearCoherence
