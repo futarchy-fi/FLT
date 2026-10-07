@@ -3543,6 +3543,7 @@ public import FLT.Mazur.ModuleSheafDualSheaf
 public import FLT.Mazur.ModuleSheafGluing
 public import FLT.Mazur.ModuleSheafInternalHom
 public import FLT.Mazur.ModuleSheafMorphismGluing
+public import FLT.Mazur.ModuleSheafMorphismRefinement
 public import FLT.Mazur.ModuleSheafOpenImmersionGluing
 public import FLT.Mazur.ModuleSheafOpenImmersionLocalHom
 public import FLT.Mazur.ModuleSheafOpenIsoDetection
