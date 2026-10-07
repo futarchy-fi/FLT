@@ -4142,6 +4142,7 @@ public import FLT.Mazur.WeierstrassAdditionSchemeCover
 public import FLT.Mazur.WeierstrassAdditionSlopeFamilies
 public import FLT.Mazur.WeierstrassAffineAdditionTransport
 public import FLT.Mazur.WeierstrassAffinePolynomialFormula
+public import FLT.Mazur.WeierstrassAffinePolynomialScaling
 public import FLT.Mazur.WeierstrassAffineProduct
 public import FLT.Mazur.WeierstrassChartOverlap
 public import FLT.Mazur.WeierstrassCubicPolarization
