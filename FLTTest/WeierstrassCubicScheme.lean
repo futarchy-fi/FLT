@@ -42,6 +42,7 @@ import FLT.EllipticCurve.CubicVariableChangeGlobal
 import FLT.EllipticCurve.CubicVariableChangeIso
 import FLT.EllipticCurve.CubicVariableChangeGroup
 import FLT.EllipticCurve.CubicTorsionTransport
+import FLT.EllipticCurve.CubicNonzeroTransport
 import FLT.EllipticCurve.CubicInvariantTransport
 import FLT.EllipticCurve.CubicVariableChangeOverlap
 import Lean

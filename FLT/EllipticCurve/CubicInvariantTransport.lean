@@ -65,7 +65,7 @@ theorem affineCoordinateIso_commutes (A B : Type u) [CommRing A] [CommRing B]
 
 
 /-- An equivariant algebra isomorphism restricts to an isomorphism of invariant algebras. -/
-def invariantAlgebraEquiv {A B G : Type u} [CommRing A] [CommRing B]
+def invariantAlgebraEquiv {A B : Type u} {G : Type*} [CommRing A] [CommRing B]
     [Algebra R A] [Algebra R B] [Group G]
     [MulSemiringAction G A] [MulSemiringAction G B]
     [SMulCommClass G R A] [SMulCommClass G R B]

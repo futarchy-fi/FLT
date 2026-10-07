@@ -228,6 +228,7 @@ public import FLT.EllipticCurve.CubicNegationGlobal
 public import FLT.EllipticCurve.CubicNegationInvolution
 public import FLT.EllipticCurve.CubicNegationOverlap
 public import FLT.EllipticCurve.CubicNonzeroTorsion
+public import FLT.EllipticCurve.CubicNonzeroTransport
 public import FLT.EllipticCurve.CubicPrimeCyclicDegree
 public import FLT.EllipticCurve.CubicPrimeCyclicSubgroups
 public import FLT.EllipticCurve.CubicProductDensity

@@ -1483,6 +1483,18 @@ fixed subalgebras. This supplies the algebraic descent step for transporting
 the scalar quotient once the nonzero torsion isomorphism and its scalar
 compatibility are in place.
 
+### Restriction to the actual nonzero torsion scheme — 2026-10-07
+
+`CubicNonzeroTransport` proves that a pointed torsion-scheme isomorphism
+identifies the open complements of the zero sections. The restriction is
+an isomorphism over the coefficient base, using the library's restriction
+of scheme isomorphisms to opens.
+`variableChangeNonzeroTorsionIso` applies this to the actual torsion
+isomorphism induced by an admissible Weierstrass change. No invertibility
+assumption on the nonzero order is needed for this restriction itself.
+Scalar compatibility and the induced cyclic-quotient transport are the
+remaining links before this can be used in the coordinate-change descent.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
