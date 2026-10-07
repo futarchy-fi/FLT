@@ -2532,6 +2532,7 @@ public import FLT.Mazur.AffineCoverIntersections
 public import FLT.Mazur.AffineDescentReconstructionComposition
 public import FLT.Mazur.AffineDescentRefinementComparison
 public import FLT.Mazur.AffineDescentRefinementReconstruction
+public import FLT.Mazur.AffineDescentTransportRefinement
 public import FLT.Mazur.AffineDirectTripleAdditivity
 public import FLT.Mazur.AffineDirectTripleBalance
 public import FLT.Mazur.AffineDirectTripleCoefficients
