@@ -169,6 +169,7 @@ public import FLT.EllipticCurve.CubicAssociativity
 public import FLT.EllipticCurve.CubicBaseChange
 public import FLT.EllipticCurve.CubicBaseChangeAddition
 public import FLT.EllipticCurve.CubicBaseChangeGlobal
+public import FLT.EllipticCurve.CubicBaseChangeGroup
 public import FLT.EllipticCurve.CubicChartAddition
 public import FLT.EllipticCurve.CubicChartIntersection
 public import FLT.EllipticCurve.CubicChartPoint
