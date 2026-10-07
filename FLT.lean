@@ -4229,6 +4229,7 @@ public import FLT.Mazur.WeierstrassInfinityAffineFormula
 public import FLT.Mazur.WeierstrassInfinityAffineNormalization
 public import FLT.Mazur.WeierstrassInfinityAffineSlopeIdentity
 public import FLT.Mazur.WeierstrassInfinityChartCompatibility
+public import FLT.Mazur.WeierstrassInfinityIdentityChart
 public import FLT.Mazur.WeierstrassInfinityIdentityFormula
 public import FLT.Mazur.WeierstrassInfinityOutputComparison
 public import FLT.Mazur.WeierstrassInfinityOutputTransition
