@@ -229,6 +229,7 @@ public import FLT.EllipticCurve.CubicLegendre
 public import FLT.EllipticCurve.CubicLegendreAction
 public import FLT.EllipticCurve.CubicLegendreCyclicDescent
 public import FLT.EllipticCurve.CubicLegendreCyclicIso
+public import FLT.EllipticCurve.CubicLegendreCyclicRelations
 public import FLT.EllipticCurve.CubicLegendreFibers
 public import FLT.EllipticCurve.CubicLegendreFieldOrbits
 public import FLT.EllipticCurve.CubicLegendreJFinite

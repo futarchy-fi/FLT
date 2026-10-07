@@ -2041,6 +2041,32 @@ cover is not yet a proof of those specific relations. The cusp,
 compactification and Mazur arithmetic constructions, and the other
 two final FLT arithmetic inputs, remain unfinished.
 
+### Composition of cyclic transports and local Legendre products — 2026-10-07
+
+Implemented `CubicLegendreCyclicRelations.lean`. Identified affine coordinate
+maps and their global curve isomorphisms compose by multiplication of variable
+changes. Transport on nonzero torsion and cyclic parameters preserves identity
+and composition. For a root u of -1, the square of the Legendre swap change is
+the sign change with scale -1; reciprocal changes with roots u and u inverse
+multiply to the identity.
+
+The module and the existing namespace-wide trust audit passed a 4543-job
+build. The full lake build FLT then passed all 10540 jobs, including
+FermatsLastTheorem. The module linter, generated-import check and whitespace
+check passed.
+The direct axiom checks for the composition and local-product theorems use
+only propext, Classical.choice and Quot.sound (or a subset). No proof limits
+were increased.
+
+These are identities of actual coordinate and cyclic transports, but the
+full permutation action on the descended family remains unconstructed.
+The next step is to apply the composition identities and sign independence
+to local cyclic relations, then compare them on common coefficient covers
+and descend the relations. This does not yet construct X0(p), its cusps,
+Jacobian, Eisenstein quotient, or the modular formal immersion. The final FLT
+theorem still depends on Mazur_statement and the two existing arithmetic
+sorry proofs.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
