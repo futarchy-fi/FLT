@@ -3366,6 +3366,9 @@ public import FLT.Mazur.IdealAdicRelativeFinitePresentation
 public import FLT.Mazur.IdealAdicRelativeGradedAlgebra
 public import FLT.Mazur.IdealAdicRelativeLocalization
 public import FLT.Mazur.IdealAdicRelativeNoetherian
+public import FLT.Mazur.IdealAdicRelativeOverlapCoefficientCharts
+public import FLT.Mazur.IdealAdicRelativeOverlapCover
+public import FLT.Mazur.IdealAdicRelativeOverlapRefinementCover
 public import FLT.Mazur.IdealAdicRelativePresheaf
 public import FLT.Mazur.IdealAdicRelativePrincipalCharts
 public import FLT.Mazur.IdealAdicRelativePrincipalOverlap
@@ -3551,8 +3554,12 @@ public import FLT.Mazur.ModuleSheafDualSheaf
 public import FLT.Mazur.ModuleSheafGluing
 public import FLT.Mazur.ModuleSheafInternalHom
 public import FLT.Mazur.ModuleSheafMorphismGluing
+public import FLT.Mazur.ModuleSheafMorphismRefinement
+public import FLT.Mazur.ModuleSheafOpenImmersionGluing
+public import FLT.Mazur.ModuleSheafOpenImmersionLocalHom
 public import FLT.Mazur.ModuleSheafOpenIsoDetection
 public import FLT.Mazur.ModuleSheafPullbackIsoDetection
+public import FLT.Mazur.ModuleSheafPullbackMapRefinement
 public import FLT.Mazur.ModuleSheafTensor
 public import FLT.Mazur.ModuleSheafTensorAffine
 public import FLT.Mazur.ModuleSheafTensorAffineOpen
@@ -4154,6 +4161,8 @@ public import FLT.Mazur.SeparatedOverlapPullback
 public import FLT.Mazur.SequentialCechLocalization
 public import FLT.Mazur.SequentialCochainBoundary
 public import FLT.Mazur.SequentialFiniteProducts
+public import FLT.Mazur.SheafPullbackLocalComparison
+public import FLT.Mazur.SheafPullbackObjectwiseRefinement
 public import FLT.Mazur.SheafPullbackPathComparison
 public import FLT.Mazur.SheafPullbackRetractionSquare
 public import FLT.Mazur.SmoothCurveDimension
