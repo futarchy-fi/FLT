@@ -1884,6 +1884,12 @@ universal reciprocal cover and the universal Gaussian swap cover.
 This closes the previously open domain obligations on these overlaps;
 no domain assumption is made on their unsplit tensor product.
 
+Validation: the module, the cubic namespace axiom audit, and both
+Legendre instance checks passed (4536 jobs); the module linter,
+`mk_all --check`, and `git diff --check` passed. Full `lake build FLT`
+at code commit `c8f120d4` passed all 10533 jobs, including the final
+entry point. Its arithmetic axiom report is unchanged.
+
 The next step is coefficient-change naturality for the actual
 coordinate transports, then for torsion and cyclic quotients, so that
 the constructed sign-independent transports satisfy the actual
