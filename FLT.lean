@@ -3995,6 +3995,7 @@ public import FLT.Mazur.SchemeCohomologyIso
 public import FLT.Mazur.SchemeCohomologyIsoCocycles
 public import FLT.Mazur.SchemeCoproductCohomology
 public import FLT.Mazur.SchemeCoproductSections
+public import FLT.Mazur.SchemeCrossCoverCocycle
 public import FLT.Mazur.SchemeCrossCoverOverlap
 public import FLT.Mazur.SchemeDescentAffineCharts
 public import FLT.Mazur.SchemeDescentPairTransport
