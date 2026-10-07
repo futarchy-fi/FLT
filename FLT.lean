@@ -3353,6 +3353,7 @@ public import FLT.Mazur.IdealAdicLineTower
 public import FLT.Mazur.IdealAdicQuotient
 public import FLT.Mazur.IdealAdicRelativeAffineOverlap
 public import FLT.Mazur.IdealAdicRelativeAffineSheaf
+public import FLT.Mazur.IdealAdicRelativeAmbientCoefficient
 public import FLT.Mazur.IdealAdicRelativeChartScalar
 public import FLT.Mazur.IdealAdicRelativeChartTransition
 public import FLT.Mazur.IdealAdicRelativeClosedModule
