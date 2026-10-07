@@ -4251,6 +4251,7 @@ public import FLT.Mazur.WeierstrassIntegralCurveTwoChartCover
 public import FLT.Mazur.WeierstrassLocalAdditionCurveComparison
 public import FLT.Mazur.WeierstrassMixedIntersectionScheme
 public import FLT.Mazur.WeierstrassMixedOutputComparison
+public import FLT.Mazur.WeierstrassMixedProductAdditionGluing
 public import FLT.Mazur.WeierstrassMixedProductCover
 public import FLT.Mazur.WeierstrassPolynomialInputOutputOverlap
 public import FLT.Mazur.WeierstrassPolynomialInputTransition
