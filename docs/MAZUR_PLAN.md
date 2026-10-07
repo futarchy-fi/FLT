@@ -1857,6 +1857,9 @@ theorem identifies the choices of root i and -i.
 
 The module and the existing cubic namespace axiom audit compile
 (4535 jobs). No new axiom or admission was introduced.
+The module linter, `mk_all --check`, and `git diff --check` passed.
+Full `lake build FLT` at code commit `b9706d99` passed all 10532 jobs,
+including `FermatsLastTheorem`; its guarded axiom report is unchanged.
 Together with the reciprocal-cover presentation this closes the domain
 obligations for both individual root covers. The corresponding obligations
 for their sign-chart overlaps, coefficient-change naturality, and the
