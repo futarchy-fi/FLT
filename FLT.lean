@@ -4253,6 +4253,7 @@ public import FLT.Mazur.WeierstrassScaledChartComparison
 public import FLT.Mazur.WeierstrassTransportedAdditionRing
 public import FLT.Mazur.WeierstrassTransportedPolynomialComparison
 public import FLT.Mazur.WeierstrassTransportedPolynomialScheme
+public import FLT.Mazur.WeierstrassTripleChartCocycle
 public import FLT.Mazur.WeierstrassTripleChartOverlap
 public import FLT.Mazur.WeierstrassVerticalAdditionCharts
 public import FLT.Mazur.WeierstrassVerticalChartCompatibility
