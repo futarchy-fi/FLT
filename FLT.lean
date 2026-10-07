@@ -4214,6 +4214,7 @@ public import FLT.Mazur.WeierstrassAdditionSlopeFamilies
 public import FLT.Mazur.WeierstrassAdditionStructure
 public import FLT.Mazur.WeierstrassAffineAdditionGluing
 public import FLT.Mazur.WeierstrassAffineAdditionTransport
+public import FLT.Mazur.WeierstrassAffineNegation
 public import FLT.Mazur.WeierstrassAffinePolynomialFormula
 public import FLT.Mazur.WeierstrassAffinePolynomialIntersections
 public import FLT.Mazur.WeierstrassAffinePolynomialScaling
