@@ -3372,6 +3372,7 @@ public import FLT.Mazur.IdealAdicRelativeOverlapCoefficientCharts
 public import FLT.Mazur.IdealAdicRelativeOverlapCover
 public import FLT.Mazur.IdealAdicRelativeOverlapProjections
 public import FLT.Mazur.IdealAdicRelativeOverlapRefinementCover
+public import FLT.Mazur.IdealAdicRelativeOverlapTransportRefinement
 public import FLT.Mazur.IdealAdicRelativePresheaf
 public import FLT.Mazur.IdealAdicRelativePrincipalCharts
 public import FLT.Mazur.IdealAdicRelativePrincipalOverlap
