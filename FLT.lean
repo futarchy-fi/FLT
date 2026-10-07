@@ -4275,6 +4275,7 @@ public import FLT.Mazur.WeierstrassTripleChartOverlap
 public import FLT.Mazur.WeierstrassVerticalAdditionCharts
 public import FLT.Mazur.WeierstrassVerticalChartCompatibility
 public import FLT.Mazur.WeierstrassVietaNormalization
+public import FLT.Mazur.WeierstrassYProductAdditionGluing
 public import FLT.Mazur.WeierstrassYProductCover
 public import FLT.MazurChapter.AdmissibleGroupSchemes
 public import FLT.MazurW
