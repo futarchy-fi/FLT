@@ -4114,6 +4114,7 @@ public import FLT.Mazur.SequentialCechLocalization
 public import FLT.Mazur.SequentialCochainBoundary
 public import FLT.Mazur.SequentialFiniteProducts
 public import FLT.Mazur.SheafPullbackLocalComparison
+public import FLT.Mazur.SheafPullbackObjectwiseRefinement
 public import FLT.Mazur.SheafPullbackPathComparison
 public import FLT.Mazur.SheafPullbackRetractionSquare
 public import FLT.Mazur.SmoothCurveDimension
