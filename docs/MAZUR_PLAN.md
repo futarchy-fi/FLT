@@ -1367,6 +1367,15 @@ the relative group family over Dedekind coefficient bases; extension to
 the higher-dimensional universal coefficient ring, coordinate-change
 quotients, compactification, and the global Mazur argument are still open.
 
+### Closed cyclic subgroup embedding (2026-10-07)
+
+`CubicCyclicEmbedding` constructs the actual torsion pullback to the
+parameter scheme and proves that the incidence inclusion is a
+homomorphism of group schemes and a closed immersion. The group
+structure on the ambient pullback represents the original torsion
+point functor, so the compatibility is with the actual cubic group
+law. The coefficient-base restriction is still Dedekind here.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
