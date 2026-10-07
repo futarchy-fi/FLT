@@ -4046,6 +4046,7 @@ public import FLT.Mazur.SchemeAffineCommonCoverUniversal
 public import FLT.Mazur.SchemeAffineCommonRefinement
 public import FLT.Mazur.SchemeAffineCommonRefinementCompatibility
 public import FLT.Mazur.SchemeAffineCrossChartFamily
+public import FLT.Mazur.SchemeAffineCrossCoverCocycle
 public import FLT.Mazur.SchemeAffineCrossCoverCoherence
 public import FLT.Mazur.SchemeAffineCrossCoverDescent
 public import FLT.Mazur.SchemeAffineCrossCoverRefinement
