@@ -4183,6 +4183,7 @@ public import FLT.Mazur.WeierstrassSameOutputIntersections
 public import FLT.Mazur.WeierstrassScaledChartComparison
 public import FLT.Mazur.WeierstrassTransportedAdditionRing
 public import FLT.Mazur.WeierstrassTransportedPolynomialComparison
+public import FLT.Mazur.WeierstrassTransportedPolynomialScheme
 public import FLT.Mazur.WeierstrassVerticalAdditionCharts
 public import FLT.Mazur.WeierstrassVerticalChartCompatibility
 public import FLT.Mazur.WeierstrassYProductCover
