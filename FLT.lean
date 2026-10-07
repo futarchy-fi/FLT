@@ -4280,6 +4280,7 @@ public import FLT.Mazur.WeierstrassMixedProductCover
 public import FLT.Mazur.WeierstrassNegationCover
 public import FLT.Mazur.WeierstrassNegationIntersection
 public import FLT.Mazur.WeierstrassNegationOverlap
+public import FLT.Mazur.WeierstrassNegationPairSections
 public import FLT.Mazur.WeierstrassPolynomialInputCurveComparison
 public import FLT.Mazur.WeierstrassPolynomialInputOutputOverlap
 public import FLT.Mazur.WeierstrassPolynomialInputTransition
