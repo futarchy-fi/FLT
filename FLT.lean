@@ -4124,6 +4124,7 @@ public import FLT.Mazur.WeierstrassInfinityAdditionFormula
 public import FLT.Mazur.WeierstrassInfinityAdditionScheme
 public import FLT.Mazur.WeierstrassInfinityAdditionSlope
 public import FLT.Mazur.WeierstrassInfinityChartCompatibility
+public import FLT.Mazur.WeierstrassInfinityOutputTransition
 public import FLT.Mazur.WeierstrassInfinityPairSection
 public import FLT.Mazur.WeierstrassInfinityProjectiveOverlap
 public import FLT.Mazur.WeierstrassInputAdditionCovers
