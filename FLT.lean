@@ -3356,6 +3356,7 @@ public import FLT.Mazur.IdealAdicRelativeFinitePresentation
 public import FLT.Mazur.IdealAdicRelativeGradedAlgebra
 public import FLT.Mazur.IdealAdicRelativeLocalization
 public import FLT.Mazur.IdealAdicRelativeNoetherian
+public import FLT.Mazur.IdealAdicRelativeOverlapCover
 public import FLT.Mazur.IdealAdicRelativePresheaf
 public import FLT.Mazur.IdealAdicRelativePrincipalCharts
 public import FLT.Mazur.IdealAdicRelativePrincipalOverlap
