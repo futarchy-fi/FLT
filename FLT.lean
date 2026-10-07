@@ -4137,6 +4137,7 @@ public import FLT.Mazur.WeierstrassAdditionChartCompatibility
 public import FLT.Mazur.WeierstrassAdditionInfinitySections
 public import FLT.Mazur.WeierstrassAdditionNormalization
 public import FLT.Mazur.WeierstrassAdditionSchemeCover
+public import FLT.Mazur.WeierstrassAffineAdditionTransport
 public import FLT.Mazur.WeierstrassAffineProduct
 public import FLT.Mazur.WeierstrassChartOverlap
 public import FLT.Mazur.WeierstrassCubicPolarization
@@ -4146,10 +4147,18 @@ public import FLT.Mazur.WeierstrassInfinityAdditionFormula
 public import FLT.Mazur.WeierstrassInfinityAdditionScheme
 public import FLT.Mazur.WeierstrassInfinityAdditionSlope
 public import FLT.Mazur.WeierstrassInfinityChartCompatibility
+public import FLT.Mazur.WeierstrassInfinityOutputTransition
+public import FLT.Mazur.WeierstrassInfinityOverlapScheme
 public import FLT.Mazur.WeierstrassInfinityPairSection
+public import FLT.Mazur.WeierstrassInfinityProjectiveOverlap
+public import FLT.Mazur.WeierstrassInputAdditionCovers
 public import FLT.Mazur.WeierstrassIntegralAdditionCharts
 public import FLT.Mazur.WeierstrassIntegralAdditionFormula
 public import FLT.Mazur.WeierstrassIntegralChart
+public import FLT.Mazur.WeierstrassMixedProductCover
+public import FLT.Mazur.WeierstrassProductBoundaryPoints
+public import FLT.Mazur.WeierstrassProductOverlap
+public import FLT.Mazur.WeierstrassProductOverlapScheme
 public import FLT.Mazur.WeierstrassProjectiveAdditionBoundary
 public import FLT.Mazur.WeierstrassProjectiveAdditionChart
 public import FLT.Mazur.WeierstrassProjectiveChartProduct
@@ -4158,6 +4167,7 @@ public import FLT.Mazur.WeierstrassReciprocalAdditionCompatibility
 public import FLT.Mazur.WeierstrassReciprocalAdditionFormula
 public import FLT.Mazur.WeierstrassVerticalAdditionCharts
 public import FLT.Mazur.WeierstrassVerticalChartCompatibility
+public import FLT.Mazur.WeierstrassYProductCover
 public import FLT.MazurChapter.AdmissibleGroupSchemes
 public import FLT.MazurW
 public import FLT.MazurWOfPrimeTorsion
