@@ -1966,6 +1966,9 @@ with the pulled-back quadratic covering involution. The distinguished
 root unit is sent to its negative.
 
 The module and cubic namespace axiom audit passed (4539 jobs).
+The module linter, `mk_all --check`, and `git diff --check` passed.
+Full `lake build FLT` at code commit `c0b9f0d5` passed all 10536 jobs,
+including the final theorem; its arithmetic axiom report is unchanged.
 No new axioms, admissions, or increased elaboration limits were used.
 The remaining next step is to propagate this actual covering-action
 comparison through torsion and the cyclic quotient, then use the
