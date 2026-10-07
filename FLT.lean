@@ -3344,6 +3344,7 @@ public import FLT.Mazur.IdealAdicRelativeChartTransition
 public import FLT.Mazur.IdealAdicRelativeClosedModule
 public import FLT.Mazur.IdealAdicRelativeCoefficientBaseChange
 public import FLT.Mazur.IdealAdicRelativeCoefficientLocalization
+public import FLT.Mazur.IdealAdicRelativeCoefficientModuleMap
 public import FLT.Mazur.IdealAdicRelativeCoefficientRestriction
 public import FLT.Mazur.IdealAdicRelativeCoefficientSheafMap
 public import FLT.Mazur.IdealAdicRelativeCommonRefinement
