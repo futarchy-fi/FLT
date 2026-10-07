@@ -4168,6 +4168,7 @@ public import FLT.Mazur.WeierstrassInfinityTransportedIntersection
 public import FLT.Mazur.WeierstrassInfinityTransportedOrdinary
 public import FLT.Mazur.WeierstrassInfinityTransportedOutput
 public import FLT.Mazur.WeierstrassInfinityTransportedReciprocal
+public import FLT.Mazur.WeierstrassInfinityTransportedScheme
 public import FLT.Mazur.WeierstrassInfinityTransportedSlopes
 public import FLT.Mazur.WeierstrassInfinityVietaComparison
 public import FLT.Mazur.WeierstrassInputAdditionCovers
