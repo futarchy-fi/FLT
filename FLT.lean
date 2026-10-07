@@ -4240,6 +4240,7 @@ public import FLT.Mazur.WeierstrassInfinityTransportedScheme
 public import FLT.Mazur.WeierstrassInfinityTransportedSlopes
 public import FLT.Mazur.WeierstrassInfinityVietaComparison
 public import FLT.Mazur.WeierstrassInputAdditionCovers
+public import FLT.Mazur.WeierstrassInputAdditionRestrictions
 public import FLT.Mazur.WeierstrassInputPolynomialScaling
 public import FLT.Mazur.WeierstrassInputProductAddition
 public import FLT.Mazur.WeierstrassIntegralAdditionCharts
