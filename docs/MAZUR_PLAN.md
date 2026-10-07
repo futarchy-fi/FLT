@@ -1702,6 +1702,17 @@ silently inferred from finite étaleness. Compactification, cusps, the
 Jacobian/Eisenstein quotient, formal immersion, and the needed bad-reduction
 specialization and additive-component bound remain open.
 
+The next local relation has an explicit algebraic starting point.
+For two roots u and v of the same unit, with two invertible,
+(u−v)(u+v)=0 and (u−v)+(u+v)=2u is a unit. Hence the principal opens
+D(u−v) and D(u+v) cover: on the first, u=−v; on the second, u=v.
+The remaining Lean work is to construct these restrictions of the
+quadratic overlap, identify the induced coordinate maps with the identity
+or elliptic negation, and then apply
+`scalarQuotientTransportIso_eq_of_scalar` before gluing. This paragraph
+specifies the next proof; it is not a claim that those scheme maps or
+their cocycle have already been formalized.
+
 The attempted extra theorem asserting injectivity of the invariant
 quotient on geometric points did not pass elaboration within the existing
 Lean limits and was not integrated. The committed field-orbit and
