@@ -1450,6 +1450,18 @@ quotient is the next step.
 The complete `lake build FLT` at commit `39df46a4` passed all 10,501 jobs;
 that verifies integration, not completion of the remaining FLT inputs.
 
+### Coordinate changes of the actual group scheme — 2026-10-07
+
+`CubicVariableChangeGroup` identifies the constructed scheme morphism on
+every coefficient-field-valued point with the classical additive coordinate
+isomorphism. Residue-field comparison proves preservation of addition on
+reduced sources, then on the actual smooth product of the cubics.
+`variableChangeOverIso` is therefore an isomorphism over the coefficient
+base whose forward and inverse maps are group homomorphisms, for reduced
+noetherian bases. This is an actual geometric compatibility theorem, not a
+replacement of the group scheme by a set of field-valued points.
+Restriction to the torsion and scalar-quotient schemes remains the next step.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:

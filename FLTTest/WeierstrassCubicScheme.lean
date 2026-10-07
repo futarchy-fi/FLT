@@ -40,6 +40,7 @@ import FLT.EllipticCurve.CubicUniversalCyclicGroup
 import FLT.EllipticCurve.CubicVariableChange
 import FLT.EllipticCurve.CubicVariableChangeGlobal
 import FLT.EllipticCurve.CubicVariableChangeIso
+import FLT.EllipticCurve.CubicVariableChangeGroup
 import FLT.EllipticCurve.CubicVariableChangeOverlap
 import Lean
 

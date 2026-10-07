@@ -271,6 +271,7 @@ public import FLT.EllipticCurve.CubicUniversalCyclicParameters
 public import FLT.EllipticCurve.CubicValuativeSpecialization
 public import FLT.EllipticCurve.CubicVariableChange
 public import FLT.EllipticCurve.CubicVariableChangeGlobal
+public import FLT.EllipticCurve.CubicVariableChangeGroup
 public import FLT.EllipticCurve.CubicVariableChangeIso
 public import FLT.EllipticCurve.CubicVariableChangeOverlap
 public import FLT.EllipticCurve.CubicVerticalAddition
