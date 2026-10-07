@@ -4249,6 +4249,7 @@ public import FLT.Mazur.WeierstrassInfinityIdentityCover
 public import FLT.Mazur.WeierstrassInfinityIdentityFormula
 public import FLT.Mazur.WeierstrassInfinityIdentityNeighborhood
 public import FLT.Mazur.WeierstrassInfinityNegationChart
+public import FLT.Mazur.WeierstrassInfinityNegationFormula
 public import FLT.Mazur.WeierstrassInfinityNegationInvolution
 public import FLT.Mazur.WeierstrassInfinityOutputComparison
 public import FLT.Mazur.WeierstrassInfinityOutputTransition
