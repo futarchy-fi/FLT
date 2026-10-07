@@ -1628,6 +1628,16 @@ work. The authorized block still ends at 09:55:56 UTC. Work resumed on
 the explicit monic presentation and its finite flat cover; the next
 geometric boundary is the remaining coordinate-symmetry quotient.
 
+### Addition under coefficient extension — 2026-10-07
+
+`CubicBaseChangeAddition.lean` proves that the constructed coefficient
+morphism preserves infinity and affine evaluation. It identifies the
+classical point groups along algebra towers and proves compatibility
+with addition on every reduced scheme of points. Over a noetherian
+reduced new coefficient ring, this yields compatibility with the actual
+global addition morphism. This is the group-law input needed to extend
+the existing scheme base-change isomorphism to torsion and cyclic data.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
