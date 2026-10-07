@@ -2097,6 +2097,34 @@ construction of X0(p), its compactification, Jacobian, Eisenstein quotient,
 or modular formal immersion. Mazur_statement and the two existing FLT
 arithmetic sorry proofs remain unchanged.
 
+### Reciprocal coefficient-cover comparison — 2026-10-07
+
+Implemented `CubicQuadraticReciprocal.lean`. For a unit d and invertible 2,
+the actual standard-etale algebras adjoining roots of d and its inverse
+are isomorphic. The forward map sends the original root t to d times the
+target root s; the return map sends s to d inverse times t. Both compositions
+are proved to be identities, and the unit-level formulas identify these
+images with the inverse distinguished roots.
+
+Applying Spec gives an isomorphism of the two actual coefficient covers.
+It preserves the map to Spec R and intertwines the sign involutions.
+Domain and noetherian properties transfer to the reciprocal root algebra;
+these transfers are explicit theorems rather than recursive typeclass
+instances.
+
+The module and namespace-wide trust audit passed all 4545 jobs. The full
+lake build FLT passed all 10542 jobs, including FermatsLastTheorem. The
+module linter, generated-import check and whitespace check passed. Direct
+axiom checks for the algebra equivalence, inverse-root formulas and
+sign-equivariant scheme comparison use only propext, Classical.choice
+and Quot.sound. No proof limits or arithmetic assumptions were changed.
+
+The coefficient-cover comparison is now constructed. Still missing is the
+compatibility of the actual cyclic transports with this comparison, followed
+by descent of the reciprocal return relation. Mixed permutation relations
+and the full family action remain unfinished. The final arithmetic gaps
+remain Mazur_statement and the two existing lifting/family sorry proofs.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
