@@ -170,6 +170,8 @@ public import FLT.EllipticCurve.CubicBaseChange
 public import FLT.EllipticCurve.CubicBaseChangeAddition
 public import FLT.EllipticCurve.CubicBaseChangeGlobal
 public import FLT.EllipticCurve.CubicBaseChangeGroup
+public import FLT.EllipticCurve.CubicBaseChangeNonzero
+public import FLT.EllipticCurve.CubicBaseChangeScalars
 public import FLT.EllipticCurve.CubicBaseChangeTorsion
 public import FLT.EllipticCurve.CubicChartAddition
 public import FLT.EllipticCurve.CubicChartIntersection
