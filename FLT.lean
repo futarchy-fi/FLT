@@ -4231,6 +4231,7 @@ public import FLT.Mazur.WeierstrassInfinityAffineSlopeIdentity
 public import FLT.Mazur.WeierstrassInfinityChartCompatibility
 public import FLT.Mazur.WeierstrassInfinityIdentityChart
 public import FLT.Mazur.WeierstrassInfinityIdentityFormula
+public import FLT.Mazur.WeierstrassInfinityIdentityNeighborhood
 public import FLT.Mazur.WeierstrassInfinityOutputComparison
 public import FLT.Mazur.WeierstrassInfinityOutputTransition
 public import FLT.Mazur.WeierstrassInfinityOverlapScheme
