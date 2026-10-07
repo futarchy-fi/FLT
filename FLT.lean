@@ -4164,6 +4164,7 @@ public import FLT.Mazur.WeierstrassInfinityProjectiveOverlap
 public import FLT.Mazur.WeierstrassInfinityTransportedInputs
 public import FLT.Mazur.WeierstrassInfinityTransportedIntersection
 public import FLT.Mazur.WeierstrassInfinityTransportedSlopes
+public import FLT.Mazur.WeierstrassInfinityVietaComparison
 public import FLT.Mazur.WeierstrassInputAdditionCovers
 public import FLT.Mazur.WeierstrassInputPolynomialScaling
 public import FLT.Mazur.WeierstrassIntegralAdditionCharts
