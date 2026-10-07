@@ -4232,6 +4232,7 @@ public import FLT.Mazur.WeierstrassCubicPolarization
 public import FLT.Mazur.WeierstrassGlobalAdditionCover
 public import FLT.Mazur.WeierstrassGlobalAdditionGluing
 public import FLT.Mazur.WeierstrassGlobalAdditionIdentity
+public import FLT.Mazur.WeierstrassGlobalAdditionInverse
 public import FLT.Mazur.WeierstrassGlobalAdditionZeroRestrictions
 public import FLT.Mazur.WeierstrassGlobalNegation
 public import FLT.Mazur.WeierstrassGlobalNegationInvolution
