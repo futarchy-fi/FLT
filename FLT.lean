@@ -4228,6 +4228,7 @@ public import FLT.Mazur.WeierstrassGlobalAdditionCover
 public import FLT.Mazur.WeierstrassGlobalAdditionGluing
 public import FLT.Mazur.WeierstrassGlobalAdditionIdentity
 public import FLT.Mazur.WeierstrassGlobalAdditionZeroRestrictions
+public import FLT.Mazur.WeierstrassGlobalNegation
 public import FLT.Mazur.WeierstrassInfinityAdditionChart
 public import FLT.Mazur.WeierstrassInfinityAdditionCompatibility
 public import FLT.Mazur.WeierstrassInfinityAdditionFormula
