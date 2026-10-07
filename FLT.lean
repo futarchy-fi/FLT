@@ -4214,6 +4214,7 @@ public import FLT.Mazur.WeierstrassAffineProduct
 public import FLT.Mazur.WeierstrassAffineVietaFormula
 public import FLT.Mazur.WeierstrassChartOverlap
 public import FLT.Mazur.WeierstrassChartSchemeGluingData
+public import FLT.Mazur.WeierstrassCrossInputAdditionComparison
 public import FLT.Mazur.WeierstrassCubicPolarization
 public import FLT.Mazur.WeierstrassGlobalAdditionCover
 public import FLT.Mazur.WeierstrassInfinityAdditionChart
