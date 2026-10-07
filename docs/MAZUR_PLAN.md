@@ -1742,6 +1742,38 @@ still contain their existing admissions. The guarded final axiom report
 still includes `Mazur_statement` and `sorryAx`. No new admission,
 axiom, or increased elaboration limit was introduced in this campaign.
 
+### Quadratic overlaps and effective sign descent — 2026-10-07 10:10 UTC
+
+The next local relation described in the preceding checkpoint is now
+formalized in `CubicQuadraticOverlap.lean`. The actual fiber product of
+the quadratic cover with itself has a tensor-product presentation and a
+two-chart open cover, using the sum and difference of its distinguished
+roots. These charts are disjoint. The two coordinate maps coincide on
+the sum chart and differ by the explicitly constructed sign involution
+on the difference chart. The corresponding identities hold for the
+actual kernel-pair projections, not just for points.
+
+`CubicQuadraticDescent.lean` uses those identities and the finite étale
+effective epimorphism to construct `quadraticEtaleDesc`. A morphism from
+the quadratic covering scheme to any scheme descends uniquely when it
+is invariant under the sign involution. Factorization, uniqueness and
+`quadraticEtaleHomEquiv` are proved. The descent result assumes a
+nontrivial commutative base with two invertible; no noetherian, reduced,
+or domain hypothesis is added.
+
+Both modules pass compilation, the geometric namespace axiom audit
+(4530 jobs), and their linters. No new axioms, admissions or increased
+elaboration limits were introduced. This continuation advances the
+geometric descent machinery; it does not close any of the three
+remaining arithmetic leaves.
+
+The next application is to the Legendre cyclic family: compare the
+coordinate transports for opposite root choices with elliptic negation,
+then identify their induced cyclic maps using
+`scalarQuotientTransportIso_eq_of_scalar`. The root-cover domain
+presentations and the family cocycle still need verification. The
+general sign-descent theorem does not itself establish these inputs.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
