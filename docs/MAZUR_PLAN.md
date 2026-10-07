@@ -1590,6 +1590,15 @@ and its geometric fibers classify order-p subgroups of the specialized
 Legendre equation. This reduces the coefficient chart to one parameter
 while retaining characteristic three for prime levels at least 17.
 
+### Monic integral relation for Legendre parameters — 2026-10-07
+
+`CubicLegendreMonic.lean` proves the monic degree-six relation obtained by
+normalizing j by 256. Every root and its difference from one are units,
+over any commutative coefficient ring. It also proves the denominator-free
+j-equation for the actual Legendre curve and compatibility with coefficient
+maps. These identities permit a finite integral presentation of the
+Legendre chart over the j-line; the scheme finiteness argument is next.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
