@@ -1936,7 +1936,10 @@ proved involutive and fixes the base parameter. `quadraticCyclicDesc`
 constructs the descended morphism, with its factorization and uniqueness
 theorems. Explicit examples verify the effective-epimorphism instance
 for both universal Legendre root covers. The module and the namespace
-axiom audit passed (4538 jobs).
+axiom audit passed (4538 jobs). The module linter, `mk_all --check`,
+and `git diff --check` passed. Full `lake build FLT` at code commit
+`4565bc8b` passed all 10535 jobs, including the final theorem; its
+guarded arithmetic axiom report is unchanged.
 
 The remaining specific obligation is to prove invariance of the
 Legendre coordinate-transport map under this actual cyclic covering
