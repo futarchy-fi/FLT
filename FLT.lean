@@ -4158,6 +4158,7 @@ public import FLT.Mazur.WeierstrassProjectiveChartProduct
 public import FLT.Mazur.WeierstrassReciprocalAdditionChart
 public import FLT.Mazur.WeierstrassReciprocalAdditionCompatibility
 public import FLT.Mazur.WeierstrassReciprocalAdditionFormula
+public import FLT.Mazur.WeierstrassSameOutputIntersections
 public import FLT.Mazur.WeierstrassVerticalAdditionCharts
 public import FLT.Mazur.WeierstrassVerticalChartCompatibility
 public import FLT.Mazur.WeierstrassYProductCover
