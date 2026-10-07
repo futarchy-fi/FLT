@@ -1638,6 +1638,28 @@ reduced new coefficient ring, this yields compatibility with the actual
 global addition morphism. This is the group-law input needed to extend
 the existing scheme base-change isomorphism to torsion and cyclic data.
 
+### Checkpoint 2026-10-07 08:42 UTC — coefficient extension
+
+The new modules `CubicBaseChangeAddition`, `CubicBaseChangeGroup`,
+`CubicBaseChangeTorsion`, `CubicBaseChangeNonzero`,
+`CubicBaseChangeScalars`, and `CubicBaseChangeCyclic` identify the actual
+coefficient-extension curve, its full torsion, nonzero torsion, and prime
+cyclic-parameter quotient with their categorical base changes. The group
+comparison preserves addition and the unit; the torsion comparison is
+obtained by preservation of equalizers. The zero-section square is
+cartesian, so its complement commutes with base change. Scalar descent
+constructs the quotient comparison; étaleness, surjectivity, and
+injectivity on geometric points prove it is an isomorphism.
+
+These are scheme isomorphisms, not just bijections of field-valued points.
+The cyclic result assumes noetherian integral coefficient rings, prime
+level invertible on the base, and an elliptic equation. It does not invert
+p-1. All six modules pass their builds, the namespace axiom audit, and
+the linter. This closes the coefficient-extension compatibility needed
+to transport the Legendre cyclic family. It does not yet construct the
+remaining Legendre symmetry quotient, compactification, cusps, Jacobian,
+Eisenstein quotient, or formal-immersion theorem.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:

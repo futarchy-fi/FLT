@@ -168,6 +168,7 @@ public import FLT.EllipticCurve.CubicAffineInverseCover
 public import FLT.EllipticCurve.CubicAssociativity
 public import FLT.EllipticCurve.CubicBaseChange
 public import FLT.EllipticCurve.CubicBaseChangeAddition
+public import FLT.EllipticCurve.CubicBaseChangeCyclic
 public import FLT.EllipticCurve.CubicBaseChangeGlobal
 public import FLT.EllipticCurve.CubicBaseChangeGroup
 public import FLT.EllipticCurve.CubicBaseChangeNonzero
