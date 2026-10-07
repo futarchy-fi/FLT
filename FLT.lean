@@ -4219,6 +4219,7 @@ public import FLT.Mazur.WeierstrassCrossInputAdditionComparison
 public import FLT.Mazur.WeierstrassCubicPolarization
 public import FLT.Mazur.WeierstrassGlobalAdditionCover
 public import FLT.Mazur.WeierstrassGlobalAdditionGluing
+public import FLT.Mazur.WeierstrassGlobalAdditionZeroRestrictions
 public import FLT.Mazur.WeierstrassInfinityAdditionChart
 public import FLT.Mazur.WeierstrassInfinityAdditionCompatibility
 public import FLT.Mazur.WeierstrassInfinityAdditionFormula
