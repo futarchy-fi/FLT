@@ -1713,6 +1713,15 @@ or elliptic negation, and then apply
 specifies the next proof; it is not a claim that those scheme maps or
 their cocycle have already been formalized.
 
+A concrete way to discharge the domain restriction is to prove explicit
+presentations of the root covers: adjoining a square root of λ should
+replace λ by u² in the localized polynomial chart, while adjoining a
+square root of −1 should replace the integer coefficients by Gaussian
+integers. The combined cover then has both substitutions. These expected
+presentations, including their inverse maps and localization conditions,
+remain to be verified in Lean. They offer a route using the existing
+domain-valued cyclic base-change theorem.
+
 The attempted extra theorem asserting injectivity of the invariant
 quotient on geometric points did not pass elaboration within the existing
 Lean limits and was not integrated. The committed field-orbit and
