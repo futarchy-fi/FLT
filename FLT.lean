@@ -4150,6 +4150,7 @@ public import FLT.Mazur.WeierstrassInputAdditionCovers
 public import FLT.Mazur.WeierstrassIntegralAdditionCharts
 public import FLT.Mazur.WeierstrassIntegralAdditionFormula
 public import FLT.Mazur.WeierstrassIntegralChart
+public import FLT.Mazur.WeierstrassMixedOutputComparison
 public import FLT.Mazur.WeierstrassMixedProductCover
 public import FLT.Mazur.WeierstrassProductBoundaryPoints
 public import FLT.Mazur.WeierstrassProductOverlap
