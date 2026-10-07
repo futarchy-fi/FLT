@@ -4071,6 +4071,7 @@ public import FLT.Mazur.SchemeAffineOverlapChartCommonRefinement
 public import FLT.Mazur.SchemeAffineOverlapChartComparison
 public import FLT.Mazur.SchemeAffineOverlapCommonComparison
 public import FLT.Mazur.SchemeAffineOverlapCommonCovering
+public import FLT.Mazur.SchemeAffineOverlapGluing
 public import FLT.Mazur.SchemeAffineOverlapLocalComparison
 public import FLT.Mazur.SchemeAffineOverlapLocalRefinement
 public import FLT.Mazur.SchemeAffineOverlapObjectwiseComparison
