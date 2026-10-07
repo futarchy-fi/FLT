@@ -3403,6 +3403,7 @@ public import FLT.Mazur.IdealAdicRelativeTransitionRefinement
 public import FLT.Mazur.IdealAdicRelativeTripleCoefficientCocycle
 public import FLT.Mazur.IdealAdicRelativeTripleCoefficientMaps
 public import FLT.Mazur.IdealAdicRelativeTripleCoefficientNormalization
+public import FLT.Mazur.IdealAdicRelativeTripleImageOpen
 public import FLT.Mazur.IdealAdicRelativeTripleOverlapCover
 public import FLT.Mazur.IdealAdicRelativeTripleProjections
 public import FLT.Mazur.IdealAdicRelativeTripleRefinement
