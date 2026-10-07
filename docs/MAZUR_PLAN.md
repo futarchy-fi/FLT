@@ -1473,6 +1473,16 @@ torsion morphisms. Applied to the coordinate-change group isomorphism,
 not merely their geometric points. No invertibility assumption on n is
 needed for this transport statement.
 
+### Equivariant transport of affine coordinate invariants — 2026-10-07
+
+`CubicInvariantTransport` constructs coordinate pullback along an
+isomorphism of presented affine schemes using the fully faithful spectrum
+functor. It proves that commuting scheme actions induce commuting pullbacks.
+An equivariant algebra isomorphism then restricts to an isomorphism of the
+fixed subalgebras. This supplies the algebraic descent step for transporting
+the scalar quotient once the nonzero torsion isomorphism and its scalar
+compatibility are in place.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
