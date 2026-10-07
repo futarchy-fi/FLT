@@ -2030,6 +2030,9 @@ are now proved to be isomorphisms. Their packaged versions
 have exactly those existing forward maps.
 
 The new module and the cubic namespace axiom audit passed (4542 jobs).
+The module linter, `mk_all --check`, and `git diff --check` passed.
+Full `lake build FLT` at code commit `fbee94f7` passed all 10539 jobs,
+including the final theorem, with its arithmetic axiom report unchanged.
 The next obligation is to compare the specific Legendre transitions
 on common coefficient covers and prove the permutation/cocycle
 relations, then construct the corresponding modular parameter
