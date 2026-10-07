@@ -1868,6 +1868,29 @@ a construction of X0(p), its compactification, or the Mazur arithmetic
 argument. The three-input FLT theorem still depends on Mazur torsion
 exclusion and the existing lifting/compatible-family admissions.
 
+### Integral sign charts of the quadratic kernel pair — 2026-10-07 11:12 UTC
+
+Implemented `CubicQuadraticOverlapIntegral.lean`. For any commutative
+base ring in which 2 is a unit, tensor-product evaluation at the two
+possible root signs extends to each actual localized sign chart of
+the quadratic kernel pair. Both inverse identities with the second
+projection are proved. Thus `quadraticOverlapChartEquiv` identifies
+each sign-chart algebra with the original quadratic étale algebra.
+
+The chart rings inherit the domain and noetherian properties of the
+cover algebra, and invertible levels pull back along the second
+projection. Explicit checks instantiate these properties on both the
+universal reciprocal cover and the universal Gaussian swap cover.
+This closes the previously open domain obligations on these overlaps;
+no domain assumption is made on their unsplit tensor product.
+
+The next step is coefficient-change naturality for the actual
+coordinate transports, then for torsion and cyclic quotients, so that
+the constructed sign-independent transports satisfy the actual
+descent relation. The descended family, its cocycle, compactification,
+and the Mazur arithmetic argument remain incomplete. The other two
+arithmetic leaves of the three-input FLT assembly remain unchanged.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:

@@ -10,6 +10,7 @@ import FLT.EllipticCurve.CubicGoodReduction
 import FLT.EllipticCurve.CubicLegendre
 import FLT.EllipticCurve.CubicQuadraticEtale
 import FLT.EllipticCurve.CubicQuadraticOverlap
+import FLT.EllipticCurve.CubicQuadraticOverlapIntegral
 import FLT.EllipticCurve.CubicQuadraticDescent
 import FLT.EllipticCurve.CubicLegendreSymmetries
 import FLT.EllipticCurve.CubicLegendreSign
@@ -114,3 +115,20 @@ example (W : WeierstrassCurve (ZMod 2)) [W.IsElliptic] :
     Algebra.Etale (ZMod 2)
       ((ZMod 2) ⊗[ZMod 2] WeierstrassCurve.CubicCharts.torsionCoordinateRing W 3) :=
   WeierstrassCurve.CubicCharts.torsionCoordinate_field_etale W 3 (ZMod 2) (by decide)
+
+-- Both actual quadratic kernel pairs have integral noetherian sign charts.
+open WeierstrassCurve.CubicCharts in
+example (p : ℕ) [NeZero p] (i : Bool) :
+    IsDomain (QuadraticOverlapChartRing (legendreParameterUnit p) i) := inferInstance
+
+open WeierstrassCurve.CubicCharts in
+example (p : ℕ) (i : Bool) :
+    IsNoetherianRing (QuadraticOverlapChartRing (legendreParameterUnit p) i) := inferInstance
+
+open WeierstrassCurve.CubicCharts in
+example (p : ℕ) [NeZero p] (i : Bool) :
+    IsDomain (QuadraticOverlapChartRing (-1 : (LegendreBase p)ˣ) i) := inferInstance
+
+open WeierstrassCurve.CubicCharts in
+example (p : ℕ) (i : Bool) :
+    IsNoetherianRing (QuadraticOverlapChartRing (-1 : (LegendreBase p)ˣ) i) := inferInstance

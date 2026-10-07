@@ -265,6 +265,7 @@ public import FLT.EllipticCurve.CubicProjectiveNormalization
 public import FLT.EllipticCurve.CubicQuadraticDescent
 public import FLT.EllipticCurve.CubicQuadraticEtale
 public import FLT.EllipticCurve.CubicQuadraticOverlap
+public import FLT.EllipticCurve.CubicQuadraticOverlapIntegral
 public import FLT.EllipticCurve.CubicRelativeDimension
 public import FLT.EllipticCurve.CubicScalarDescent
 public import FLT.EllipticCurve.CubicScheme
