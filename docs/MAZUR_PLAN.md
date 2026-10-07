@@ -1437,6 +1437,19 @@ including nonreduced rings. Its affine and infinity restrictions are proved.
 The inverse, composition laws and induced action on cyclic parameters are
 subsequent steps; this does not yet construct the modular quotient.
 
+### Pointed isomorphisms and composition laws — 2026-10-07
+
+`CubicVariableChangeIso` proves the identity and composition laws for the
+actual global coordinate-change morphisms, including the transports between
+equal Weierstrass equations. The inverse admissible change supplies a
+two-sided inverse. The resulting `variableChangeIso` preserves the
+distinguished infinity section, over arbitrary commutative coefficient rings.
+The proof uses schematic density of the affine chart, so it retains nilpotent
+coefficients. Compatibility with the group law and the cyclic parameter
+quotient is the next step.
+The complete `lake build FLT` at commit `39df46a4` passed all 10,501 jobs;
+that verifies integration, not completion of the remaining FLT inputs.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
