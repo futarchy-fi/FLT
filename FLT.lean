@@ -4145,6 +4145,7 @@ public import FLT.Mazur.WeierstrassAffinePolynomialFormula
 public import FLT.Mazur.WeierstrassAffinePolynomialIntersections
 public import FLT.Mazur.WeierstrassAffinePolynomialScaling
 public import FLT.Mazur.WeierstrassAffineProduct
+public import FLT.Mazur.WeierstrassAffineVietaFormula
 public import FLT.Mazur.WeierstrassChartOverlap
 public import FLT.Mazur.WeierstrassCubicPolarization
 public import FLT.Mazur.WeierstrassInfinityAdditionChart
