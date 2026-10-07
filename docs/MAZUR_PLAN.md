@@ -1311,6 +1311,29 @@ for good elliptic models, including Galois-stable cyclic subgroups without
 rational generators. Degenerating models and cusp specialization remain
 outside this result.
 
+### Validation of the 2026-10-06 work block
+
+The complete `lake build FLT` passed (10,491 jobs, including
+`FermatsLastTheorem`). Every new module passed its linter, and
+`FLTTest.WeierstrassCubicScheme` audits every declaration in
+`WeierstrassCurve.CubicCharts`, including transitive dependencies.
+Explicit axiom checks of torsion étaleness, good-reduction finite-flat
+representations, rational cyclic classification, integral quotient
+étaleness and degree, and injective specialization report only
+`propext`, `Classical.choice`, and `Quot.sound`.
+A separate Lean check at level 19 in characteristic 3 verifies étaleness,
+dimension 20, and the generator map, although the scalar-group order 18
+vanishes in that characteristic.
+
+This block does not finish FLT or rational torsion exclusion. The
+fixed-equation cyclic parameter scheme still needs the quotient by
+Weierstrass coordinate changes and cusp compactification. The actual
+universal cyclic subgroup scheme, global Jacobian/Eisenstein quotient,
+cotangent/Hecke compatibility and formal immersion, and the bad-reduction
+specialization/component arguments remain open. The five arithmetic
+inputs listed in `FLT/Assembly/Final.lean` are not discharged by these
+geometric results, and the legacy assembly still uses `Mazur_statement`.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
