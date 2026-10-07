@@ -4282,6 +4282,7 @@ public import FLT.Mazur.WeierstrassMixedIntersectionScheme
 public import FLT.Mazur.WeierstrassMixedOutputComparison
 public import FLT.Mazur.WeierstrassMixedProductAdditionGluing
 public import FLT.Mazur.WeierstrassMixedProductCover
+public import FLT.Mazur.WeierstrassNegationAdditionPullback
 public import FLT.Mazur.WeierstrassNegationCover
 public import FLT.Mazur.WeierstrassNegationIntersection
 public import FLT.Mazur.WeierstrassNegationOverlap
