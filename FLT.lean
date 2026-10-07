@@ -4063,6 +4063,7 @@ public import FLT.Mazur.SchemeAffineOpenOverlapCover
 public import FLT.Mazur.SchemeAffineOverlapChartCommonRefinement
 public import FLT.Mazur.SchemeAffineOverlapChartComparison
 public import FLT.Mazur.SchemeAffineOverlapLocalComparison
+public import FLT.Mazur.SchemeAffineOverlapObjectwiseComparison
 public import FLT.Mazur.SchemeAffineRefinementCompatibility
 public import FLT.Mazur.SchemeAffineTensorCrossRefinement
 public import FLT.Mazur.SchemeBaseChangeLimit
