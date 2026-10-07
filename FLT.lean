@@ -3347,6 +3347,7 @@ public import FLT.Mazur.IdealAdicRelativeCoefficientBaseChange
 public import FLT.Mazur.IdealAdicRelativeCoefficientLocalization
 public import FLT.Mazur.IdealAdicRelativeCoefficientModuleMap
 public import FLT.Mazur.IdealAdicRelativeCoefficientRestriction
+public import FLT.Mazur.IdealAdicRelativeCoefficientSheafCoherence
 public import FLT.Mazur.IdealAdicRelativeCoefficientSheafMap
 public import FLT.Mazur.IdealAdicRelativeCommonRefinement
 public import FLT.Mazur.IdealAdicRelativeFinitePresentation
