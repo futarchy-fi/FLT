@@ -92,4 +92,42 @@ theorem scalarQuotientTransportIso_trans
     ← scalarQuotientTransportIso_quotient, Category.assoc,
     ← scalarQuotientTransportIso_quotient]
   simp only [Iso.trans_hom, Category.assoc]
+
+omit [Fact (IsUnit (p : R))] in
+/-- Scalar automorphisms commute with every inverse scalar action. -/
+theorem scalarTransport_scalar_equivariant (W : WeierstrassCurve R) [W.IsElliptic]
+    (a b : (ZMod p)ˣ) :
+    (nonzeroTorsionScalarAction W p b).inv ≫ (nonzeroTorsionScalarAction W p a).hom =
+      (nonzeroTorsionScalarAction W p a).hom ≫ (nonzeroTorsionScalarAction W p b).inv := by
+  have h := congrArg (nonzeroTorsionScalarAction W p) (mul_comm a b⁻¹)
+  simpa only [map_mul, map_inv, Aut.Aut_mul_def, Aut.Aut_inv_def, Iso.trans_hom,
+    Iso.symm_hom] using
+    congrArg Iso.hom h
+
+/-- Multiplying generators by a unit induces the identity on cyclic parameters. -/
+theorem scalarQuotientTransportIso_scalar (W : WeierstrassCurve R) [W.IsElliptic]
+    (a : (ZMod p)ˣ) :
+    scalarQuotientTransportIso (V := W) (W := W) p (nonzeroTorsionScalarAction W p a)
+      (scalarTransport_scalar_equivariant p W a) = Iso.refl _ := by
+  apply Iso.ext
+  apply (cancel_epi (scalarQuotientMap W p)).mp
+  rw [← scalarQuotientTransportIso_quotient, scalarQuotientMap_invariant]
+  simp
+
+/-- Transport maps differing by a scalar induce the same cyclic-parameter isomorphism. -/
+theorem scalarQuotientTransportIso_eq_of_scalar
+    (e f : nonzeroTorsionModel V p ≅ nonzeroTorsionModel W p)
+    (he : ∀ a : (ZMod p)ˣ, (nonzeroTorsionScalarAction V p a).inv ≫ e.hom =
+      e.hom ≫ (nonzeroTorsionScalarAction W p a).inv)
+    (hf : ∀ a : (ZMod p)ˣ, (nonzeroTorsionScalarAction V p a).inv ≫ f.hom =
+      f.hom ≫ (nonzeroTorsionScalarAction W p a).inv)
+    (a : (ZMod p)ˣ) (h : f.hom = e.hom ≫ (nonzeroTorsionScalarAction W p a).hom) :
+    scalarQuotientTransportIso (V := V) (W := W) p e he =
+      scalarQuotientTransportIso (V := V) (W := W) p f hf := by
+  apply Iso.ext
+  apply (cancel_epi (scalarQuotientMap V p)).mp
+  rw [← scalarQuotientTransportIso_quotient, ← scalarQuotientTransportIso_quotient,
+    h, Category.assoc, scalarQuotientMap_invariant]
+
+
 end WeierstrassCurve.CubicCharts
