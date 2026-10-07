@@ -269,6 +269,7 @@ public import FLT.EllipticCurve.CubicTorsionUnramified
 public import FLT.EllipticCurve.CubicUniversalCyclicGroup
 public import FLT.EllipticCurve.CubicUniversalCyclicParameters
 public import FLT.EllipticCurve.CubicValuativeSpecialization
+public import FLT.EllipticCurve.CubicVariableChange
 public import FLT.EllipticCurve.CubicVerticalAddition
 public import FLT.EllipticCurve.CubicVerticalOverlap
 public import FLT.EllipticCurve.CubicVerticalProjective

@@ -1413,6 +1413,17 @@ cyclic subgroup family over the space of Weierstrass equations. It does
 not yet quotient coordinate changes or construct X0(p), cusps, the
 Jacobian, or the arithmetic Eisenstein quotient.
 
+### Local coordinate-change morphisms (2026-10-07)
+
+`CubicVariableChange` proves the homogeneous substitution identity for
+every admissible Weierstrass coordinate change over an arbitrary
+commutative ring, constructs its actual affine-chart map, and constructs
+the regular infinity-chart map after inverting the transformed
+Y-coordinate. A span identity proves that the required infinity
+neighborhood and ordinary overlap cover. These are maps between the
+actual cubic charts, including over nonreduced bases; their overlap
+compatibility and global gluing are next.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
