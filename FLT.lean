@@ -2505,6 +2505,7 @@ public import FLT.Mazur.AffineCanonicalMapCompatibility
 public import FLT.Mazur.AffineCanonicalOverlapChart
 public import FLT.Mazur.AffineCanonicalOverlapRecognition
 public import FLT.Mazur.AffineCartesianSectionScalars
+public import FLT.Mazur.AffineChartSectionLocalization
 public import FLT.Mazur.AffineClosedModuleDescent
 public import FLT.Mazur.AffineClosureFiniteness
 public import FLT.Mazur.AffineCoalgebraDescentRecognition
@@ -2611,6 +2612,7 @@ public import FLT.Mazur.AffinePairPullbackSections
 public import FLT.Mazur.AffinePairUnitTransport
 public import FLT.Mazur.AffinePicardComparison
 public import FLT.Mazur.AffinePicardSections
+public import FLT.Mazur.AffinePieceSectionLocalization
 public import FLT.Mazur.AffineProductMap
 public import FLT.Mazur.AffinePullbackCoefficientRecognition
 public import FLT.Mazur.AffinePullbackCorner
@@ -2867,6 +2869,7 @@ public import FLT.Mazur.CyclicProductNormalization
 public import FLT.Mazur.DRFiberClassification
 public import FLT.Mazur.DedekindPointExtension
 public import FLT.Mazur.DirectImageInjectives
+public import FLT.Mazur.DirectSumLocalization
 public import FLT.Mazur.DisjointClosedCoproduct
 public import FLT.Mazur.DisjointStructureCohomology
 public import FLT.Mazur.DivisorCanonicalComposition
@@ -3301,6 +3304,7 @@ public import FLT.Mazur.IdealAdicAffineGeneration
 public import FLT.Mazur.IdealAdicAffineProjection
 public import FLT.Mazur.IdealAdicBaseGradedGenerators
 public import FLT.Mazur.IdealAdicBasePowerGenerators
+public import FLT.Mazur.IdealAdicChartLocalization
 public import FLT.Mazur.IdealAdicClosedCoefficientCharts
 public import FLT.Mazur.IdealAdicClosedGradedModule
 public import FLT.Mazur.IdealAdicClosedGradedRestriction
@@ -3316,10 +3320,12 @@ public import FLT.Mazur.IdealAdicGradedClosedTwist
 public import FLT.Mazur.IdealAdicGradedDegreeZero
 public import FLT.Mazur.IdealAdicGradedDegreeZeroGeneration
 public import FLT.Mazur.IdealAdicGradedLineTwist
+public import FLT.Mazur.IdealAdicGradedLocalization
 public import FLT.Mazur.IdealAdicGradedMultiplication
 public import FLT.Mazur.IdealAdicGradedPullback
 public import FLT.Mazur.IdealAdicGradedRestriction
 public import FLT.Mazur.IdealAdicGradedRing
+public import FLT.Mazur.IdealAdicGradedRingLocalization
 public import FLT.Mazur.IdealAdicGradedSectionAction
 public import FLT.Mazur.IdealAdicGradedSections
 public import FLT.Mazur.IdealAdicGradedSequence
@@ -3328,11 +3334,19 @@ public import FLT.Mazur.IdealAdicLineQuotient
 public import FLT.Mazur.IdealAdicLineTower
 public import FLT.Mazur.IdealAdicQuotient
 public import FLT.Mazur.IdealAdicRelativeAffineSheaf
+public import FLT.Mazur.IdealAdicRelativeChartScalar
+public import FLT.Mazur.IdealAdicRelativeChartTransition
 public import FLT.Mazur.IdealAdicRelativeClosedModule
+public import FLT.Mazur.IdealAdicRelativeCoefficientBaseChange
+public import FLT.Mazur.IdealAdicRelativeCoefficientLocalization
+public import FLT.Mazur.IdealAdicRelativeCoefficientRestriction
 public import FLT.Mazur.IdealAdicRelativeFinitePresentation
 public import FLT.Mazur.IdealAdicRelativeGradedAlgebra
+public import FLT.Mazur.IdealAdicRelativeLocalization
 public import FLT.Mazur.IdealAdicRelativeNoetherian
 public import FLT.Mazur.IdealAdicRelativePresheaf
+public import FLT.Mazur.IdealAdicRelativePrincipalCharts
+public import FLT.Mazur.IdealAdicRelativePrincipalSheaf
 public import FLT.Mazur.IdealAdicRelativeQuasiCoherent
 public import FLT.Mazur.IdealAdicRelativeRestriction
 public import FLT.Mazur.IdealAdicRelativeScheme
@@ -3343,6 +3357,7 @@ public import FLT.Mazur.IdealAdicRelativeSheafCharts
 public import FLT.Mazur.IdealAdicRelativeSheafFinite
 public import FLT.Mazur.IdealAdicRelativeSheafGenerators
 public import FLT.Mazur.IdealAdicRelativeTilde
+public import FLT.Mazur.IdealAdicRelativeTransitionGeometry
 public import FLT.Mazur.IdealCartierNeighborhood
 public import FLT.Mazur.IdealCohomologyAmpleAnyBase
 public import FLT.Mazur.IdealCohomologyAmpleCriterion
