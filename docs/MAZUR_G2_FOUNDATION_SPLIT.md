@@ -1016,3 +1016,101 @@ line caps, build/lint/axiom/probe receipts, root imports, and the post-merge roo
 build. The untracked W23 handoff records the check timestamp and commits.
 `rg -n Mazur_statement FLT/Assumptions/Mazur.lean FermatsLastTheorem.lean`
 checks the endpoint: the Mazur assumption remains; P9e remains open.
+
+
+## W24: effective composition and actual scheme-data charts (2026-10-05)
+
+W23 remaining item 1 is proved. `effectiveComparisonIso_composition` identifies
+successive effective comparisons with the composite comparison, using the actual
+base pullback chart and the descended actual cover chart. No composition or
+compatibility hypothesis was added.
+
+The kernel timeout had two separate causes. Reusing
+`isQuasicoherent_twiceReconstructionPullback` avoids expensive conversions between
+fresh local instances. The remaining nested reconstruction compared the named
+intermediate `sheaf` with a literal pullback object. A general recognition lemma
+transports the object equality before specialization; the concrete theorem keeps
+that named source explicit in `Functor.map`. Resource limits remain unchanged.
+
+Item 2 now has actual local objects and maps, but **open-cover gluing is not
+assembled**. `SchemeGeometricDescent.Data` uses the actual categorical double
+and triple overlaps. Its affine extraction proves both tensor-chart laws and
+recovers the supplied categorical overlap. `chartSheaf`, `chartReconstruction`,
+and `chartMap` perform effective descent on a chosen affine faithfully flat chart;
+`chartMap_reconstruction` recovers the original restricted scheme map.
+Quasi-coherence of the sheaf on the chosen cover chart is an explicit input.
+
+| Module (`FLT.Mazur.` prefix) | Proved interface |
+| --- | --- |
+| AffineEffectiveSecondReconstruction | Reconstruction of the second comparison and cover chart |
+| AffineEffectiveSuccessiveReconstruction | Full successive-path reconstruction |
+| AffineRefinementReconstructionRecognition | Composition with an identified intermediate sheaf |
+| AffineDescentReconstructionComposition | Named reconstruction composition |
+| AffineEffectiveRefinementComposition | The actual effective comparison composition equality |
+| SchemeTripleOverlap | Categorical triple overlap, pair maps, and refinement squares |
+| SchemeGeometricDescentData | Actual scheme data and refinement preserving their laws and maps |
+| SchemeGeometricDescentCocycleTest | Canonical cocycle tested on arbitrary compatible pair maps |
+| SchemeDescentAffineCharts | Actual affine data extracted from scheme data, with overlap recovery |
+| SchemeOverlapNormalizationNaturality | Normalization preserves compatible overlap morphisms |
+| AffineFiberProductMapCompatibility | Compatible maps pass to the actual tensor-spectrum chart |
+| SchemeAffineChartDescent | Actual affine descended objects, maps, and reconstruction squares |
+| SchemeAffineRefinementCompatibility | Scheme extraction agrees with existing affine refinement |
+
+Continue in order:
+
+1. Assemble `ModuleSheafGluing.Data` from these actual affine descended charts.
+   Choose affine faithfully flat chart covers and common refinements over overlap
+   subopens. Prove comparison of the chart data obtained through the different
+   paths, construct the transition isomorphisms, and prove their cocycle using
+   effective composition and reconstruction uniqueness. The generic scheme
+   refinement currently has maps on triple overlaps, but not a theorem identifying
+   successive and composite scheme overlap isomorphisms. Supply that comparison
+   where needed; do not assume it as a field. Glue objects and compatible maps.
+2. Supply locally-free-rank-one to invertible affine coefficients, then continue
+   P10–P21 and the modular curve/Jacobian constructions. Keep G1 and track D separate.
+
+The W24 worker's `python3 G2_W24_SOURCE_CHECK.py` checks committed source, the
+240-line module and 100-character line caps, individual build/lint/axiom/probe
+receipts, root imports, and the post-merge root build. The untracked W24 handoff
+records its timestamp, commits, memory measurements, and remaining work.
+`rg -n Mazur_statement FLT/Assumptions/Mazur.lean FermatsLastTheorem.lean` checks
+the endpoint: the Mazur assumption remains. P9e is not complete.
+
+
+## W25: scheme refinement composition and common affine chart transitions
+
+Checked at 2026-10-05T17:11:50.359694+00:00. Eight new modules passed foreground builds and separate
+single-module lints. Their originating-module audits checked 112 declarations;
+only `propext`, `Classical.choice`, and `Quot.sound` occur.
+
+- `SchemeOverlapProjectionComposition` and `SchemeOverlapRefinementComposition`
+  prove that actual projection charts compose and that the cover composition
+  isomorphism intertwines successive and composite scheme descent data.
+- `SchemeAffineChartComposition` and `SchemeAffineChartRefinement` extract this
+  compatibility, descend the cover chart, and construct the effective comparison
+  between a restricted chart sheaf and direct descent on the composite chart.
+  Its reconstruction square and uniqueness are proved.
+- `SchemeAffineChartNamedRefinement` and `SchemeAffineChartRefinementNaturality`
+  support independently named common chart endpoints and prove compatibility
+  with descended maps from the original scheme datum.
+- `SchemeAffineDescentChart` bundles only geometric chart/refinement inputs.
+  `SchemeAffineCommonRefinement` constructs transitions on one common affine
+  refinement, with identity, inverse, cocycle, uniqueness, and map naturality.
+
+No `ModuleSheafGluing.Data` for an open cover has been assembled. The supplied
+common refinement is geometric input; its existence on overlap subopens and
+independence from its choice remain to be proved. These refinements factor over
+the same covering scheme Y. Unrelated covering charts need a comparison induced
+by the original double-overlap isomorphism on Y ×[X] Y; a common refinement
+factoring through both charts over Y need not exist. The next steps are composition
+coherence of the constructed chart comparisons, stability of transitions under
+further common refinements, choosing the affine chart covers, and assembly of
+open-chart transitions and gluing. P9e and P10–P21 remain open.
+
+Validation commands for each named module are
+`LEAN_NUM_THREADS=2 lake build FLT.Mazur.MODULE` and
+`LEAN_NUM_THREADS=2 lake exe runLinter FLT.Mazur.MODULE`.
+Each leaf has at most 240 lines, with no line over 100 characters.
+The read-only endpoint check
+`rg -n Mazur_statement FLT/Assumptions/Mazur.lean FermatsLastTheorem.lean`
+continues to find the Mazur assumption.
