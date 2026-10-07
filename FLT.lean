@@ -4254,6 +4254,7 @@ public import FLT.Mazur.WeierstrassIntegralCurveMorphisms
 public import FLT.Mazur.WeierstrassIntegralCurveProduct
 public import FLT.Mazur.WeierstrassIntegralCurveTwoChartCover
 public import FLT.Mazur.WeierstrassIntegralProductOverlap
+public import FLT.Mazur.WeierstrassIntegralZeroSection
 public import FLT.Mazur.WeierstrassLocalAdditionCurveComparison
 public import FLT.Mazur.WeierstrassMixedIntersectionScheme
 public import FLT.Mazur.WeierstrassMixedOutputComparison
