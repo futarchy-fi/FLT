@@ -186,6 +186,7 @@ public import FLT.EllipticCurve.CubicCyclicIncidencePoints
 public import FLT.EllipticCurve.CubicCyclicNaturality
 public import FLT.EllipticCurve.CubicCyclicParameterTransport
 public import FLT.EllipticCurve.CubicCyclicSpecialization
+public import FLT.EllipticCurve.CubicCyclicTransportFunctor
 public import FLT.EllipticCurve.CubicDenseComparison
 public import FLT.EllipticCurve.CubicFieldAddition
 public import FLT.EllipticCurve.CubicFieldAdditionTangent

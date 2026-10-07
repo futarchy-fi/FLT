@@ -1537,6 +1537,15 @@ actual modular-geometry construction. The modular curve with cusps,
 Jacobian/Eisenstein quotient, modular cotangent comparison and bad-reduction
 arguments listed above remain unresolved; no replacement axioms were added.
 
+### Composition of cyclic parameter transport — 2026-10-07
+
+`CubicCyclicTransportFunctor.lean` proves that forgetting a prime generator
+is an effective epimorphism of schemes: it is a finite étale surjection.
+Cancellation by this cover establishes the identity and composition laws
+for the constructed transport of cyclic parameters. Thus composed
+equivariant changes induce the same cyclic-parameter map as successive
+transport, as needed for cocycle compatibility.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
