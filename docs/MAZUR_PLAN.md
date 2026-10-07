@@ -1376,6 +1376,17 @@ structure on the ambient pullback represents the original torsion
 point functor, so the compatibility is with the actual cubic group
 law. The coefficient-base restriction is still Dedekind here.
 
+### Trace retraction without inverting the scalar-group order (2026-10-07)
+
+`CubicInvariantTrace` proves an algebraic descent lemma for finite group
+actions free on field-valued points. Dedekind independence of distinct
+multiplicative characters and integral lying-over imply surjectivity of
+the orbit trace to the invariant algebra. A trace-one element produces
+a linear retraction; invariants of a flat algebra are therefore flat,
+and their inclusion stays injective after every base change. No division
+by the group order is used. This is the algebraic input for removing the
+Dedekind restriction from the prime-level cyclic parameter construction.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
