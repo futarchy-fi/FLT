@@ -1354,6 +1354,19 @@ classified by its scalar-quotient parameter. The proof uses the zero
 component and the p-1 generators, and does not assume a group structure
 on the family. Constructing that relative group structure is next.
 
+### Relative cyclic group scheme (2026-10-07)
+
+`CubicCyclicGroup` constructs the commutative group structure on the
+actual incidence family over the scalar parameter scheme. Geometric
+fiber membership implies factorization through the open incidence
+embedding, so addition and inverse restrict to the family over every
+scheme source, including nonreduced sources. The represented subgroup
+functor gives all group axioms, finite étaleness, and annihilation by p.
+The point map into actual torsion preserves the group law. This completes
+the relative group family over Dedekind coefficient bases; extension to
+the higher-dimensional universal coefficient ring, coordinate-change
+quotients, compactification, and the global Mazur argument are still open.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
