@@ -4145,8 +4145,11 @@ public import FLT.Mazur.VeryAmplePresentationBaseChange
 public import FLT.Mazur.WeierstrassAdditionAffineCoverage
 public import FLT.Mazur.WeierstrassAdditionChartCompatibility
 public import FLT.Mazur.WeierstrassAdditionInfinitySections
+public import FLT.Mazur.WeierstrassAdditionIntersections
 public import FLT.Mazur.WeierstrassAdditionNormalization
+public import FLT.Mazur.WeierstrassAdditionOutputFamilies
 public import FLT.Mazur.WeierstrassAdditionSchemeCover
+public import FLT.Mazur.WeierstrassAdditionSlopeFamilies
 public import FLT.Mazur.WeierstrassAffineAdditionTransport
 public import FLT.Mazur.WeierstrassAffineProduct
 public import FLT.Mazur.WeierstrassChartOverlap
@@ -4162,10 +4165,14 @@ public import FLT.Mazur.WeierstrassInfinityOverlapScheme
 public import FLT.Mazur.WeierstrassInfinityPairSection
 public import FLT.Mazur.WeierstrassInfinityProjectiveOverlap
 public import FLT.Mazur.WeierstrassInputAdditionCovers
+public import FLT.Mazur.WeierstrassInputPolynomialScaling
 public import FLT.Mazur.WeierstrassIntegralAdditionCharts
 public import FLT.Mazur.WeierstrassIntegralAdditionFormula
 public import FLT.Mazur.WeierstrassIntegralChart
+public import FLT.Mazur.WeierstrassMixedIntersectionScheme
+public import FLT.Mazur.WeierstrassMixedOutputComparison
 public import FLT.Mazur.WeierstrassMixedProductCover
+public import FLT.Mazur.WeierstrassPolynomialInputTransition
 public import FLT.Mazur.WeierstrassProductBoundaryPoints
 public import FLT.Mazur.WeierstrassProductOverlap
 public import FLT.Mazur.WeierstrassProductOverlapScheme
@@ -4175,6 +4182,8 @@ public import FLT.Mazur.WeierstrassProjectiveChartProduct
 public import FLT.Mazur.WeierstrassReciprocalAdditionChart
 public import FLT.Mazur.WeierstrassReciprocalAdditionCompatibility
 public import FLT.Mazur.WeierstrassReciprocalAdditionFormula
+public import FLT.Mazur.WeierstrassSameOutputIntersections
+public import FLT.Mazur.WeierstrassScaledChartComparison
 public import FLT.Mazur.WeierstrassVerticalAdditionCharts
 public import FLT.Mazur.WeierstrassVerticalChartCompatibility
 public import FLT.Mazur.WeierstrassYProductCover
