@@ -8,6 +8,8 @@ module
 import FLT.EllipticCurve.CubicIntegralReduction
 import FLT.EllipticCurve.CubicGoodReduction
 import FLT.EllipticCurve.CubicLegendre
+import FLT.EllipticCurve.CubicQuadraticEtale
+import FLT.EllipticCurve.CubicLegendreSymmetries
 import FLT.EllipticCurve.CubicBaseChangeAddition
 import FLT.EllipticCurve.CubicBaseChangeGroup
 import FLT.EllipticCurve.CubicBaseChangeTorsion

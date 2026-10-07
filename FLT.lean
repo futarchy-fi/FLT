@@ -225,6 +225,7 @@ public import FLT.EllipticCurve.CubicLegendre
 public import FLT.EllipticCurve.CubicLegendreJFinite
 public import FLT.EllipticCurve.CubicLegendreMonic
 public import FLT.EllipticCurve.CubicLegendreParameters
+public import FLT.EllipticCurve.CubicLegendreSymmetries
 public import FLT.EllipticCurve.CubicLevelParameters
 public import FLT.EllipticCurve.CubicMixedAddition
 public import FLT.EllipticCurve.CubicMixedAffine
@@ -253,6 +254,7 @@ public import FLT.EllipticCurve.CubicProjectiveIdentity
 public import FLT.EllipticCurve.CubicProjectiveLocal
 public import FLT.EllipticCurve.CubicProjectiveMorphism
 public import FLT.EllipticCurve.CubicProjectiveNormalization
+public import FLT.EllipticCurve.CubicQuadraticEtale
 public import FLT.EllipticCurve.CubicRelativeDimension
 public import FLT.EllipticCurve.CubicScalarDescent
 public import FLT.EllipticCurve.CubicScheme
