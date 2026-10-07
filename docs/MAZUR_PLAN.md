@@ -2011,6 +2011,33 @@ compactification. The present result is not a construction of X0(p)
 or the Mazur arithmetic argument. The lifting and compatible-family
 leaves also remain unproved. No new axiom or admission was introduced.
 
+### Inverses of the descended Legendre maps — 2026-10-07 12:20 UTC
+
+Implemented `CubicLegendreCyclicIso.lean`. For an isomorphism of cyclic
+parameters on a quadratic root cover, invariance of its projection
+implies full equivariance by the cartesian coefficient square. The
+inverse local isomorphism is therefore invariant too. Descending
+both maps and cancelling the effective covering projections proves
+both inverse identities.
+
+`quadraticCyclicDescIso` packages this construction and supplies
+factorization identities for both directions. Its identity, inverse,
+and composition laws are proved for maps compared on the same
+quadratic cover. The previously constructed
+`legendreSwapDescendedOver` and `legendreReciprocalDescendedOver`
+are now proved to be isomorphisms. Their packaged versions
+`legendreSwapDescendedIso` and `legendreReciprocalDescendedIso`
+have exactly those existing forward maps.
+
+The new module and the cubic namespace axiom audit passed (4542 jobs).
+The next obligation is to compare the specific Legendre transitions
+on common coefficient covers and prove the permutation/cocycle
+relations, then construct the corresponding modular parameter
+quotient. Generic preservation of composition on one quadratic
+cover is not yet a proof of those specific relations. The cusp,
+compactification and Mazur arithmetic constructions, and the other
+two final FLT arithmetic inputs, remain unfinished.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:

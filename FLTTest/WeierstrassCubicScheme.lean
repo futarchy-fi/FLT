@@ -72,6 +72,7 @@ import FLT.EllipticCurve.CubicVariableChangeBaseChange
 import FLT.EllipticCurve.CubicCoefficientAction
 import FLT.EllipticCurve.CubicCyclicCoefficientAction
 import FLT.EllipticCurve.CubicLegendreCyclicDescent
+import FLT.EllipticCurve.CubicLegendreCyclicIso
 import FLT.EllipticCurve.CubicTorsionTransport
 import FLT.EllipticCurve.CubicNonzeroScalarTransport
 import FLT.EllipticCurve.CubicNonzeroTransport
