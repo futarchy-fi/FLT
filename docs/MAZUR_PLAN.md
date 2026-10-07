@@ -1424,6 +1424,19 @@ neighborhood and ordinary overlap cover. These are maps between the
 actual cubic charts, including over nonreduced bases; their overlap
 compatibility and global gluing are next.
 
+### Global admissible coordinate changes — 2026-10-07
+
+`CubicVariableChangeOverlap` proves that the affine and infinity formulas
+are normalizations of the same homogeneous coordinates on the actual
+intersection. The localization square is cartesian.
+`CubicVariableChangeGlobal` glues the two principal infinity opens and
+then the two cubic charts, producing
+`variableChangeMorphism W C : scheme (C • W) ⟶ scheme W`.
+The global map preserves the coefficient base over every commutative ring,
+including nonreduced rings. Its affine and infinity restrictions are proved.
+The inverse, composition laws and induced action on cyclic parameters are
+subsequent steps; this does not yet construct the modular quotient.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
