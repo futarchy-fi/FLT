@@ -67,6 +67,7 @@ import FLT.EllipticCurve.CubicVariableChange
 import FLT.EllipticCurve.CubicVariableChangeGlobal
 import FLT.EllipticCurve.CubicVariableChangeIso
 import FLT.EllipticCurve.CubicVariableChangeGroup
+import FLT.EllipticCurve.CubicVariableChangeBaseChange
 import FLT.EllipticCurve.CubicTorsionTransport
 import FLT.EllipticCurve.CubicNonzeroScalarTransport
 import FLT.EllipticCurve.CubicNonzeroTransport

@@ -1897,6 +1897,31 @@ descent relation. The descended family, its cocycle, compactification,
 and the Mazur arithmetic argument remain incomplete. The other two
 arithmetic leaves of the three-input FLT assembly remain unchanged.
 
+### Coordinate transport commutes with coefficient extension — 2026-10-07 11:23 UTC
+
+Implemented `CubicVariableChangeBaseChange.lean`. An identified
+admissible coordinate change commutes with coefficient extension on
+affine coordinates and on the glued cubic scheme, over arbitrary
+commutative coefficient rings. For noetherian domains the proved
+square restricts to full torsion, to nonzero torsion, and to the actual
+prime-level cyclic quotient. The final
+`variableChangeCyclic_coefficient` instantiates these restrictions with
+the actual coordinate-change isomorphisms; it does not assume their
+coefficient square.
+
+The module and cubic namespace axiom audit passed (4537 jobs), as did
+the module linter. After the formatting cleanup, the combined full
+`lake build FLT FLTTest.WeierstrassCubicScheme` passed all 10535 jobs.
+`mk_all --check` and `git diff --check` also passed. No new axiom or
+admission was introduced. This closes coefficient-change naturality
+for coordinate transports.
+The next construction must use this naturality and the sign-chart
+equivalences to prove the actual quadratic descent relation for the
+Legendre cyclic family, then construct its descent and verify the
+transition cocycle. X0(p), its cusps/compactification, Eisenstein
+quotient and Mazur arithmetic argument are still unfinished, as are
+the separate lifting and compatible-family inputs of FLT.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
