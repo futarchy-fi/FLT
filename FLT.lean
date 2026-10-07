@@ -3362,6 +3362,7 @@ public import FLT.Mazur.IdealAdicRelativeCoefficientRestriction
 public import FLT.Mazur.IdealAdicRelativeCoefficientSheafCoherence
 public import FLT.Mazur.IdealAdicRelativeCoefficientSheafIso
 public import FLT.Mazur.IdealAdicRelativeCoefficientSheafMap
+public import FLT.Mazur.IdealAdicRelativeCoefficientTransportRefinement
 public import FLT.Mazur.IdealAdicRelativeCommonRefinement
 public import FLT.Mazur.IdealAdicRelativeFinitePresentation
 public import FLT.Mazur.IdealAdicRelativeGradedAlgebra
@@ -3369,7 +3370,10 @@ public import FLT.Mazur.IdealAdicRelativeLocalization
 public import FLT.Mazur.IdealAdicRelativeNoetherian
 public import FLT.Mazur.IdealAdicRelativeOverlapCoefficientCharts
 public import FLT.Mazur.IdealAdicRelativeOverlapCover
+public import FLT.Mazur.IdealAdicRelativeOverlapProjections
 public import FLT.Mazur.IdealAdicRelativeOverlapRefinementCover
+public import FLT.Mazur.IdealAdicRelativeOverlapSpectrumMaps
+public import FLT.Mazur.IdealAdicRelativeOverlapTransportRefinement
 public import FLT.Mazur.IdealAdicRelativePresheaf
 public import FLT.Mazur.IdealAdicRelativePrincipalCharts
 public import FLT.Mazur.IdealAdicRelativePrincipalOverlap
