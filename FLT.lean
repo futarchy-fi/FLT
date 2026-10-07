@@ -4016,6 +4016,7 @@ public import FLT.Mazur.SchemeAffineCrossChartFamily
 public import FLT.Mazur.SchemeAffineCrossCoverCoherence
 public import FLT.Mazur.SchemeAffineCrossCoverDescent
 public import FLT.Mazur.SchemeAffineCrossCoverRefinement
+public import FLT.Mazur.SchemeAffineCrossCoverRefinementRecognition
 public import FLT.Mazur.SchemeAffineCrossRefinement
 public import FLT.Mazur.SchemeAffineCrossRefinementComparison
 public import FLT.Mazur.SchemeAffineCrossRefinementRestriction
