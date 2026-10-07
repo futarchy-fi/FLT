@@ -3366,6 +3366,7 @@ public import FLT.Mazur.IdealAdicRelativeCoefficientTransportRefinement
 public import FLT.Mazur.IdealAdicRelativeCommonRefinement
 public import FLT.Mazur.IdealAdicRelativeFinitePresentation
 public import FLT.Mazur.IdealAdicRelativeGradedAlgebra
+public import FLT.Mazur.IdealAdicRelativeImageOpenCover
 public import FLT.Mazur.IdealAdicRelativeLocalization
 public import FLT.Mazur.IdealAdicRelativeNoetherian
 public import FLT.Mazur.IdealAdicRelativeOverlapCoefficientCharts
