@@ -2125,6 +2125,34 @@ by descent of the reciprocal return relation. Mixed permutation relations
 and the full family action remain unfinished. The final arithmetic gaps
 remain Mazur_statement and the two existing lifting/family sorry proofs.
 
+### Cyclic comparison and descent over reciprocal covers — 2026-10-07
+
+Implemented `CubicCyclicCoefficientComparison.lean`. A homomorphism of
+coefficient R-algebras now induces an actual map between the corresponding
+cyclic-parameter schemes, using their cartesian coefficient squares.
+Identity and composition are verified, giving a cyclic-scheme isomorphism
+for every coefficient algebra equivalence. For endomorphisms this agrees
+with the previously constructed coefficient action.
+
+Specializing to the reciprocal quadratic algebra equivalence gives
+`quadraticReciprocalCyclicIso`. It preserves projection to the original
+cyclic scheme and intertwines the covering sign involutions. The theorem
+`quadraticReciprocalCyclic_desc` proves that transporting any invariant
+map along this comparison preserves its descended map. No new descent
+hypothesis is assumed in place of this equality.
+
+The module and the namespace-wide trust audit passed all 4546 jobs.
+The full lake build FLT passed all 10543 jobs, including FermatsLastTheorem.
+The module linter, generated-import check and whitespace check passed.
+Direct axiom checks for the comparison isomorphisms and the descent equality
+use only propext, Classical.choice and Quot.sound.
+
+Remaining: identify the specific Legendre coordinate transports across
+this cyclic comparison. That naturality must connect the local reciprocal
+double relation to the descended return map. Mixed permutation relations
+and the full family action remain open. The final FLT proof still depends
+on Mazur_statement and the two lifting/compatible-family sorry proofs.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
