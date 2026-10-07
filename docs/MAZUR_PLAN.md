@@ -1660,6 +1660,68 @@ to transport the Legendre cyclic family. It does not yet construct the
 remaining Legendre symmetry quotient, compactification, cusps, Jacobian,
 Eisenstein quotient, or formal-immersion theorem.
 
+### Campaign checkpoint — 2026-10-07 09:50 UTC
+
+The requested window is 01:55:56–09:55:56 UTC. The authorization interruption
+around 04:17–07:28 UTC, recorded above, is not counted as completed proof work.
+
+Since the coefficient-extension checkpoint, the following actual objects
+and proofs have been integrated:
+
+- `CubicQuadraticEtale` constructs the square-root covers of a unit.
+  With two invertible they are finite étale, free of rank two, and
+  surjective over a nontrivial base.
+- `CubicLegendreSymmetries` constructs the coordinate isomorphisms for
+  λ ↦ 1−λ and λ ↦ λ⁻¹ on those covers, and proves compatibility with
+  the group law over the stated noetherian reduced bases.
+- `CubicLegendreFibers` factors the cleared j-relation and proves the
+  six-parameter classification over every field of characteristic
+  different from two, including characteristic three.
+- `CubicLegendreParameterSymmetries` and `CubicLegendreAction` construct
+  the integral automorphisms over the j-line, prove the involution and
+  braid relations, and assemble the action of `DihedralGroup 3`.
+  The fixed subring gives an actual finite surjective quotient of the
+  coefficient chart; that quotient is finite and surjective over the
+  j-line. Prime ideals with the same invariant contraction form an orbit.
+- `CubicLegendreFieldOrbits` proves that equality of the actual j-invariant
+  is equivalent to belonging to the same symmetry orbit for field-valued
+  points. Restriction to the invariant ring identifies exactly the same
+  points as j. This does not assert an isomorphism between the invariant
+  spectrum and the j-line.
+- `CubicCyclicTransportFunctor` now proves that scalar transport induces
+  the identity on cyclic parameters, and that two equivariant transports
+  differing by a scalar induce the same cyclic-parameter isomorphism.
+
+These are verified geometric results, not the construction of X0(p).
+The next required step is to transport the cyclic family through the
+Legendre root covers, prove the actual scalar ambiguity on their overlaps,
+and descend with the cocycle identities. The cyclic base-change theorem
+currently assumes noetherian domains; applicability on the root covers
+or an extension to their reduced components must be established, not
+silently inferred from finite étaleness. Compactification, cusps, the
+Jacobian/Eisenstein quotient, formal immersion, and the needed bad-reduction
+specialization and additive-component bound remain open.
+
+The attempted extra theorem asserting injectivity of the invariant
+quotient on geometric points did not pass elaboration within the existing
+Lean limits and was not integrated. The committed field-orbit and
+invariant-fiber theorems above did pass.
+
+At code commit `a6e70373`, the latest leaf build and geometric namespace
+axiom audit passed (4528 jobs), and the changed-module linters,
+`mk_all --check`, and `git diff --check` passed. The final full
+`lake build FLT` at `a6e70373` passed all 10526 jobs, including
+`FermatsLastTheorem`, around 09:51 UTC.
+
+The current entry point is the **three-input** assembly in
+`FermatsLastTheorem.lean`, not the older five-input interface in
+`FLT/Assembly/Final.lean`. Its remaining arithmetic leaves are Mazur's
+rational torsion exclusion, integral lifting, and compatible families.
+`HardlyRamified/Lift.lean:48` and `HardlyRamified/Family.lean:68`
+still contain their existing admissions. The guarded final axiom report
+still includes `Mazur_statement` and `sorryAx`. No new admission,
+axiom, or increased elaboration limit was introduced in this campaign.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
