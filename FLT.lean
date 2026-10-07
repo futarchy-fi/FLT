@@ -2656,6 +2656,7 @@ public import FLT.Mazur.AffineTensorSectionIso
 public import FLT.Mazur.AffineTensorTransportAdditivity
 public import FLT.Mazur.AffineTildePullbackMap
 public import FLT.Mazur.AffineTildePullbackSectionMap
+public import FLT.Mazur.AffineTildeSemilinearCoherence
 public import FLT.Mazur.AffineTildeSemilinearMap
 public import FLT.Mazur.AffineTripleCoefficientExtensionality
 public import FLT.Mazur.AffineTripleCoefficientMaps
