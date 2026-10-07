@@ -4160,6 +4160,7 @@ public import FLT.Mazur.WeierstrassInfinityOutputTransition
 public import FLT.Mazur.WeierstrassInfinityOverlapScheme
 public import FLT.Mazur.WeierstrassInfinityPairSection
 public import FLT.Mazur.WeierstrassInfinityProjectiveOverlap
+public import FLT.Mazur.WeierstrassInfinityTransportedInputs
 public import FLT.Mazur.WeierstrassInfinityTransportedIntersection
 public import FLT.Mazur.WeierstrassInputAdditionCovers
 public import FLT.Mazur.WeierstrassInputPolynomialScaling
