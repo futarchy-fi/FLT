@@ -3370,6 +3370,7 @@ public import FLT.Mazur.IdealAdicRelativeLocalization
 public import FLT.Mazur.IdealAdicRelativeNoetherian
 public import FLT.Mazur.IdealAdicRelativeOverlapCoefficientCharts
 public import FLT.Mazur.IdealAdicRelativeOverlapCoefficientGluing
+public import FLT.Mazur.IdealAdicRelativeOverlapCoefficientNormalization
 public import FLT.Mazur.IdealAdicRelativeOverlapCover
 public import FLT.Mazur.IdealAdicRelativeOverlapLocalHomRefinement
 public import FLT.Mazur.IdealAdicRelativeOverlapMapCompatibility
