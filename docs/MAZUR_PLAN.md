@@ -1776,6 +1776,40 @@ then identify their induced cyclic maps using
 presentations and the family cocycle still need verification. The
 general sign-descent theorem does not itself establish these inputs.
 
+### Legendre sign ambiguity on cyclic parameters — 2026-10-07 10:32 UTC
+
+`CubicLegendreSign.lean` now identifies the actual local curve morphisms
+for opposite square-root choices. In both the swap and reciprocal cases,
+changing u to −u composes the original morphism with elliptic negation.
+The proof compares affine pullbacks and then uses schematic density to
+identify the global maps. These curve identities hold over arbitrary
+commutative coefficient rings.
+
+`CubicCyclicSign.lean` identifies the scalar −1 with inversion on the
+represented torsion scheme, restricts group-scheme transport to nonzero
+torsion, and proves its scalar compatibility. The induced cyclic
+transport commutes with forgetting a generator. At invertible prime
+level, two curve isomorphisms differing by negation induce exactly the
+same cyclic-parameter isomorphism. Applying this to the actual Legendre
+maps gives `legendreSwapCyclicParameterIso_neg` and
+`legendreReciprocalCyclicParameterIso_neg`.
+
+Both modules compile, pass the geometric namespace axiom audit (4532
+jobs), and pass their linters. No new axioms, admissions, or increased
+elaboration limits were introduced. The cyclic statements retain the
+existing noetherian domain assumptions; the curve-level sign identities
+do not need those assumptions.
+
+This proves the sign independence of the local cyclic maps, but does not
+yet glue the universal family over the original parameter base.
+The remaining geometric steps include the root-cover domain
+presentations, the presentations of the sign charts of their overlaps,
+compatibility of coordinate transport with the coefficient base-change
+comparisons, and the resulting family descent and cocycle. The general
+quadratic descent theorem and sign independence are now proved inputs
+to those steps, not substitutes for them. Mazur, integral lifting and
+compatible families remain the three open arithmetic leaves of FLT.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:

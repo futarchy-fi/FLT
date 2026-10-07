@@ -12,6 +12,8 @@ import FLT.EllipticCurve.CubicQuadraticEtale
 import FLT.EllipticCurve.CubicQuadraticOverlap
 import FLT.EllipticCurve.CubicQuadraticDescent
 import FLT.EllipticCurve.CubicLegendreSymmetries
+import FLT.EllipticCurve.CubicLegendreSign
+import FLT.EllipticCurve.CubicCyclicSign
 import FLT.EllipticCurve.CubicLegendreFibers
 import FLT.EllipticCurve.CubicLegendreParameterSymmetries
 import FLT.EllipticCurve.CubicLegendreAction

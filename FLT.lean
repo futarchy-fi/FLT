@@ -191,6 +191,7 @@ public import FLT.EllipticCurve.CubicCyclicIncidence
 public import FLT.EllipticCurve.CubicCyclicIncidencePoints
 public import FLT.EllipticCurve.CubicCyclicNaturality
 public import FLT.EllipticCurve.CubicCyclicParameterTransport
+public import FLT.EllipticCurve.CubicCyclicSign
 public import FLT.EllipticCurve.CubicCyclicSpecialization
 public import FLT.EllipticCurve.CubicCyclicTransportFunctor
 public import FLT.EllipticCurve.CubicDenseComparison
@@ -229,6 +230,7 @@ public import FLT.EllipticCurve.CubicLegendreJFinite
 public import FLT.EllipticCurve.CubicLegendreMonic
 public import FLT.EllipticCurve.CubicLegendreParameterSymmetries
 public import FLT.EllipticCurve.CubicLegendreParameters
+public import FLT.EllipticCurve.CubicLegendreSign
 public import FLT.EllipticCurve.CubicLegendreSymmetries
 public import FLT.EllipticCurve.CubicLevelParameters
 public import FLT.EllipticCurve.CubicMixedAddition
