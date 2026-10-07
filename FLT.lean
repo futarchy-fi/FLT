@@ -182,6 +182,7 @@ public import FLT.EllipticCurve.CubicCharts
 public import FLT.EllipticCurve.CubicChord
 public import FLT.EllipticCurve.CubicClassicalReduction
 public import FLT.EllipticCurve.CubicCoefficientAction
+public import FLT.EllipticCurve.CubicCyclicCoefficientAction
 public import FLT.EllipticCurve.CubicCyclicDedekind
 public import FLT.EllipticCurve.CubicCyclicEmbedding
 public import FLT.EllipticCurve.CubicCyclicEtale
@@ -226,6 +227,7 @@ public import FLT.EllipticCurve.CubicInvariantTrace
 public import FLT.EllipticCurve.CubicInvariantTransport
 public import FLT.EllipticCurve.CubicLegendre
 public import FLT.EllipticCurve.CubicLegendreAction
+public import FLT.EllipticCurve.CubicLegendreCyclicDescent
 public import FLT.EllipticCurve.CubicLegendreFibers
 public import FLT.EllipticCurve.CubicLegendreFieldOrbits
 public import FLT.EllipticCurve.CubicLegendreJFinite

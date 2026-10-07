@@ -1977,6 +1977,40 @@ by `quadraticCyclicDesc`. The descended Legendre maps and their
 inverse/cocycle identities are still unconstructed. The three final
 arithmetic inputs of FLT remain unchanged.
 
+### Actual descent of both Legendre cyclic maps — 2026-10-07 12:08 UTC
+
+Implemented `CubicCyclicCoefficientAction.lean` and
+`CubicLegendreCyclicDescent.lean`. Coefficient actions on full torsion,
+nonzero torsion, and cyclic parameters commute with the inclusions and
+the scalar quotient. The coordinate conjugacy proved on the curve
+therefore propagates to the actual cyclic transport. In the quadratic
+case this action is proved equal to the covering involution used by
+`quadraticCyclicDesc`.
+
+Combining that identification with root-sign independence proves the
+actual invariance condition, rather than assuming it.
+`quadraticCoordinateDesc` constructs the descended coordinate map,
+`quadraticCoordinateDesc_fac` proves that it recovers the local
+transport, and `quadraticCoordinateDesc_toBase` proves that it
+preserves the original coefficient base.
+
+Both universal Legendre cases are instantiated:
+`legendreSwapDescendedMap` and `legendreReciprocalDescendedMap`.
+Their `DescendedOver` versions are morphisms over the original
+Legendre base. These maps no longer retain a square-root choice.
+The two modules and the cubic namespace axiom audit passed (4541 jobs).
+Both module linters passed. After formatting cleanup, the combined full
+`lake build FLT FLTTest.WeierstrassCubicScheme` passed all 10539 jobs.
+`mk_all --check` and `git diff --check` passed; the final arithmetic
+axiom report remains unchanged.
+
+The next geometric obligation is to construct/prove the inverses of
+the descended maps and establish their transition/cocycle identities,
+then form the modular parameter quotient and continue toward cusps and
+compactification. The present result is not a construction of X0(p)
+or the Mazur arithmetic argument. The lifting and compatible-family
+leaves also remain unproved. No new axiom or admission was introduced.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
