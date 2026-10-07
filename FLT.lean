@@ -4153,6 +4153,7 @@ public import FLT.Mazur.WeierstrassInfinityAdditionCompatibility
 public import FLT.Mazur.WeierstrassInfinityAdditionFormula
 public import FLT.Mazur.WeierstrassInfinityAdditionScheme
 public import FLT.Mazur.WeierstrassInfinityAdditionSlope
+public import FLT.Mazur.WeierstrassInfinityAffineFormula
 public import FLT.Mazur.WeierstrassInfinityAffineNormalization
 public import FLT.Mazur.WeierstrassInfinityAffineSlopeIdentity
 public import FLT.Mazur.WeierstrassInfinityChartCompatibility
