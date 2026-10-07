@@ -4138,6 +4138,7 @@ public import FLT.Mazur.WeierstrassReciprocalAdditionCompatibility
 public import FLT.Mazur.WeierstrassReciprocalAdditionFormula
 public import FLT.Mazur.WeierstrassVerticalAdditionCharts
 public import FLT.Mazur.WeierstrassVerticalChartCompatibility
+public import FLT.Mazur.WeierstrassYProductCover
 public import FLT.MazurChapter.AdmissibleGroupSchemes
 public import FLT.MazurW
 public import FLT.MazurWOfPrimeTorsion
