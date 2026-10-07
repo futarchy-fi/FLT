@@ -13,6 +13,7 @@ import FLT.EllipticCurve.CubicLegendreSymmetries
 import FLT.EllipticCurve.CubicLegendreFibers
 import FLT.EllipticCurve.CubicLegendreParameterSymmetries
 import FLT.EllipticCurve.CubicLegendreAction
+import FLT.EllipticCurve.CubicLegendreFieldOrbits
 import FLT.EllipticCurve.CubicBaseChangeAddition
 import FLT.EllipticCurve.CubicBaseChangeGroup
 import FLT.EllipticCurve.CubicBaseChangeTorsion
