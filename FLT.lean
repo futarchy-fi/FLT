@@ -2653,6 +2653,9 @@ public import FLT.Mazur.AffineTensorCocycleTransport
 public import FLT.Mazur.AffineTensorDescentMorphisms
 public import FLT.Mazur.AffineTensorSectionIso
 public import FLT.Mazur.AffineTensorTransportAdditivity
+public import FLT.Mazur.AffineTildePullbackMap
+public import FLT.Mazur.AffineTildePullbackSectionMap
+public import FLT.Mazur.AffineTildeSemilinearMap
 public import FLT.Mazur.AffineTripleCoefficientExtensionality
 public import FLT.Mazur.AffineTripleCoefficientMaps
 public import FLT.Mazur.AffineTripleOverlapCoefficients
@@ -3340,12 +3343,17 @@ public import FLT.Mazur.IdealAdicRelativeClosedModule
 public import FLT.Mazur.IdealAdicRelativeCoefficientBaseChange
 public import FLT.Mazur.IdealAdicRelativeCoefficientLocalization
 public import FLT.Mazur.IdealAdicRelativeCoefficientRestriction
+public import FLT.Mazur.IdealAdicRelativeCoefficientSheafMap
+public import FLT.Mazur.IdealAdicRelativeCommonRefinement
 public import FLT.Mazur.IdealAdicRelativeFinitePresentation
 public import FLT.Mazur.IdealAdicRelativeGradedAlgebra
 public import FLT.Mazur.IdealAdicRelativeLocalization
 public import FLT.Mazur.IdealAdicRelativeNoetherian
 public import FLT.Mazur.IdealAdicRelativePresheaf
 public import FLT.Mazur.IdealAdicRelativePrincipalCharts
+public import FLT.Mazur.IdealAdicRelativePrincipalOverlap
+public import FLT.Mazur.IdealAdicRelativePrincipalOverlapCocycle
+public import FLT.Mazur.IdealAdicRelativePrincipalSections
 public import FLT.Mazur.IdealAdicRelativePrincipalSheaf
 public import FLT.Mazur.IdealAdicRelativeQuasiCoherent
 public import FLT.Mazur.IdealAdicRelativeRestriction
