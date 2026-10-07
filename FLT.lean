@@ -4062,6 +4062,7 @@ public import FLT.Mazur.SchemeAffineDescentChart
 public import FLT.Mazur.SchemeAffineOpenOverlapCover
 public import FLT.Mazur.SchemeAffineOverlapChartCommonRefinement
 public import FLT.Mazur.SchemeAffineOverlapChartComparison
+public import FLT.Mazur.SchemeAffineOverlapCommonComparison
 public import FLT.Mazur.SchemeAffineOverlapCommonCovering
 public import FLT.Mazur.SchemeAffineOverlapLocalComparison
 public import FLT.Mazur.SchemeAffineOverlapLocalRefinement
