@@ -4191,6 +4191,7 @@ public import FLT.Mazur.WeierstrassTransportedPolynomialComparison
 public import FLT.Mazur.WeierstrassTransportedPolynomialScheme
 public import FLT.Mazur.WeierstrassVerticalAdditionCharts
 public import FLT.Mazur.WeierstrassVerticalChartCompatibility
+public import FLT.Mazur.WeierstrassVietaNormalization
 public import FLT.Mazur.WeierstrassYProductCover
 public import FLT.MazurChapter.AdmissibleGroupSchemes
 public import FLT.MazurW
