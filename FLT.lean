@@ -265,6 +265,7 @@ public import FLT.EllipticCurve.CubicTorsionQuotient
 public import FLT.EllipticCurve.CubicTorsionQuotientPoints
 public import FLT.EllipticCurve.CubicTorsionRank
 public import FLT.EllipticCurve.CubicTorsionScalars
+public import FLT.EllipticCurve.CubicTorsionTransport
 public import FLT.EllipticCurve.CubicTorsionUnramified
 public import FLT.EllipticCurve.CubicUniversalCyclicGroup
 public import FLT.EllipticCurve.CubicUniversalCyclicParameters

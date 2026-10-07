@@ -1462,6 +1462,17 @@ noetherian bases. This is an actual geometric compatibility theorem, not a
 replacement of the group scheme by a set of field-valued points.
 Restriction to the torsion and scalar-quotient schemes remains the next step.
 
+### Functorial transport of the entire torsion scheme — 2026-10-07
+
+`CubicTorsionTransport` restricts any homomorphism of the constructed cubic
+group schemes to the actual kernel of multiplication by n. This restriction
+commutes with the closed torsion inclusion, preserves the group structure,
+and respects identity and composition. Inverse homomorphisms give inverse
+torsion morphisms. Applied to the coordinate-change group isomorphism,
+`variableChangeTorsionIso` identifies the entire n-torsion schemes,
+not merely their geometric points. No invertibility assumption on n is
+needed for this transport statement.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
