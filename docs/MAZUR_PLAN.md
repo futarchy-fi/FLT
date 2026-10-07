@@ -1334,6 +1334,17 @@ specialization/component arguments remain open. The five arithmetic
 inputs listed in `FLT/Assembly/Final.lean` are not discharged by these
 geometric results, and the legacy assembly still uses `Mazur_statement`.
 
+### Cyclic incidence family (2026-10-07)
+
+`CubicCyclicIncidence` constructs the actual family obtained by adjoining
+zero to the nonzero-generator scheme over the scalar quotient, over a
+Dedekind coefficient base with invertible level. It proves that this
+family is finite étale over the parameter scheme, and that its map into
+the base-changed torsion scheme is both an open and a closed immersion.
+The construction has no assumed subgroup family. The group law and
+prime-level degree of this family remain the next verification steps;
+this is not yet the modular curve or its compactification.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
