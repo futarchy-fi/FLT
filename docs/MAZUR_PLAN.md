@@ -1795,7 +1795,9 @@ maps gives `legendreSwapCyclicParameterIso_neg` and
 `legendreReciprocalCyclicParameterIso_neg`.
 
 Both modules compile, pass the geometric namespace axiom audit (4532
-jobs), and pass their linters. No new axioms, admissions, or increased
+jobs), and pass their linters. The full `lake build FLT` at `259c6b6d`
+passed all 10530 jobs, including `FermatsLastTheorem`. The import and
+diff checks passed as well. No new axioms, admissions, or increased
 elaboration limits were introduced. The cyclic statements retain the
 existing noetherian domain assumptions; the curve-level sign identities
 do not need those assumptions.
