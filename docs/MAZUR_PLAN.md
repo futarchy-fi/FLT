@@ -1842,6 +1842,29 @@ sign charts in the overlaps, coefficient-transport naturality, and the
 family descent/cocycle are still required. No arithmetic FLT leaf is
 claimed closed by this geometric presentation.
 
+### Gaussian swap-cover presentation — 2026-10-07 11:04 UTC
+
+Implemented `CubicLegendreSwapCover.lean`. The actual standard étale
+algebra adjoining a square root of -1 over `LegendreBase p` is explicitly
+isomorphic, over that base, to
+`ℤ[i][λ, 1/(2pλ(λ-1))]`. Both composite maps are proved to be identities;
+Gaussian coefficients are evaluated using `Zsqrtd.lift`.
+Consequently the actual swap-cover algebra is a noetherian domain for
+nonzero level. The existing cyclic coordinate transport can now be
+instantiated on this cover: `legendreUniversalSwapCyclicIso` transports
+cyclic subgroups under λ ↦ 1-λ, and its prime-level sign-independence
+theorem identifies the choices of root i and -i.
+
+The module and the existing cubic namespace axiom audit compile
+(4535 jobs). No new axiom or admission was introduced.
+Together with the reciprocal-cover presentation this closes the domain
+obligations for both individual root covers. The corresponding obligations
+for their sign-chart overlaps, coefficient-change naturality, and the
+actual descended cyclic family and its cocycle remain open. This is not
+a construction of X0(p), its compactification, or the Mazur arithmetic
+argument. The three-input FLT theorem still depends on Mazur torsion
+exclusion and the existing lifting/compatible-family admissions.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
