@@ -177,6 +177,7 @@ public import FLT.EllipticCurve.CubicChord
 public import FLT.EllipticCurve.CubicClassicalReduction
 public import FLT.EllipticCurve.CubicCyclicDedekind
 public import FLT.EllipticCurve.CubicCyclicEmbedding
+public import FLT.EllipticCurve.CubicCyclicEtale
 public import FLT.EllipticCurve.CubicCyclicEtaleField
 public import FLT.EllipticCurve.CubicCyclicGaloisDescent
 public import FLT.EllipticCurve.CubicCyclicGroup

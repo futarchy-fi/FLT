@@ -1387,6 +1387,18 @@ and their inclusion stays injective after every base change. No division
 by the group order is used. This is the algebraic input for removing the
 Dedekind restriction from the prime-level cyclic parameter construction.
 
+### Cyclic quotient étale over the full coefficient base (2026-10-07)
+
+`CubicCyclicEtale` applies the trace retraction to the free scalar action
+on nonzero prime torsion. It proves flatness, injectivity after arbitrary
+base change, finite étaleness of the actual quotient and its generator
+map, and fiber dimension p+1 over every noetherian integral coefficient
+base. The Dedekind restriction has been removed from these prime-level
+quotient theorems. In particular the higher-dimensional universal
+Weierstrass coefficient ring is now covered, including characteristic 3
+when p-1 vanishes there. Extending the relative subgroup construction to
+this generality is the next integration step.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:

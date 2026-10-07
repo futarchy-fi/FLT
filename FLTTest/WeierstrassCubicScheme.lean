@@ -35,6 +35,7 @@ import FLT.EllipticCurve.CubicCyclicIncidencePoints
 import FLT.EllipticCurve.CubicCyclicGroup
 import FLT.EllipticCurve.CubicCyclicEmbedding
 import FLT.EllipticCurve.CubicInvariantTrace
+import FLT.EllipticCurve.CubicCyclicEtale
 import Lean
 
 /-! # Trust audit of both chart transitions and the glued scheme -/
