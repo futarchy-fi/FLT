@@ -216,6 +216,7 @@ public import FLT.EllipticCurve.CubicIntegralReduction
 public import FLT.EllipticCurve.CubicInvariantTrace
 public import FLT.EllipticCurve.CubicInvariantTransport
 public import FLT.EllipticCurve.CubicLegendre
+public import FLT.EllipticCurve.CubicLegendreJFinite
 public import FLT.EllipticCurve.CubicLegendreMonic
 public import FLT.EllipticCurve.CubicLegendreParameters
 public import FLT.EllipticCurve.CubicLevelParameters

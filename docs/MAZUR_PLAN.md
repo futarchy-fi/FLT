@@ -1599,6 +1599,35 @@ j-equation for the actual Legendre curve and compatibility with coefficient
 maps. These identities permit a finite integral presentation of the
 Legendre chart over the j-line; the scheme finiteness argument is next.
 
+### Finite flat cover of the j-line — 2026-10-07 07:44 UTC
+
+`CubicLegendreJFinite.lean` identifies the actual Legendre parameter ring
+with the algebra obtained by adjoining a root of the monic degree-six
+relation over `ℤ[1/(2p)][j]`. Both maps and both inverse identities are
+proved. The resulting power basis makes the Legendre ring free of rank
+six for nonzero p. The scheme map to the j-line is finite, flat and
+surjective. Composing with the constructed prime cyclic parameter scheme
+gives a finite flat surjective cyclic-parameter cover of the same j-line.
+
+This is an actual integral cover carrying cyclic data. Quotienting the
+remaining Legendre coordinate symmetries, adjoining cusps and constructing
+the Jacobian/Eisenstein quotient are still required for the chosen Mazur
+route. Finiteness of this chart does not establish those steps.
+
+### Eight-hour campaign checkpoint — 2026-10-07 07:44 UTC
+
+At `aecf8472`, `lake build FLT` passed all 10513 jobs, including
+`FermatsLastTheorem` (completed around 07:32 UTC). The geometric namespace
+audits and module linters passed for the committed transport, scalar
+descent and Legendre modules. The arithmetic inputs of the final FLT
+assembly remain unchanged.
+
+The tool/SSH authorization phase interrupted progress between the checks
+around 04:17 and 07:28 UTC. This interval is not claimed as completed proof
+work. The authorized block still ends at 09:55:56 UTC. Work resumed on
+the explicit monic presentation and its finite flat cover; the next
+geometric boundary is the remaining coordinate-symmetry quotient.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:

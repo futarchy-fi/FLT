@@ -8,6 +8,7 @@ module
 import FLT.EllipticCurve.CubicIntegralReduction
 import FLT.EllipticCurve.CubicGoodReduction
 import FLT.EllipticCurve.CubicLegendre
+import FLT.EllipticCurve.CubicLegendreJFinite
 import FLT.EllipticCurve.CubicLegendreMonic
 import FLT.EllipticCurve.CubicLegendreParameters
 import FLT.EllipticCurve.CubicLevelParameters
