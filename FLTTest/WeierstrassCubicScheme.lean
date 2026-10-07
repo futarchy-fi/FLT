@@ -12,6 +12,7 @@ import FLT.EllipticCurve.CubicQuadraticEtale
 import FLT.EllipticCurve.CubicQuadraticOverlap
 import FLT.EllipticCurve.CubicQuadraticOverlapIntegral
 import FLT.EllipticCurve.CubicQuadraticDescent
+import FLT.EllipticCurve.CubicCyclicQuadraticDescent
 import FLT.EllipticCurve.CubicLegendreSymmetries
 import FLT.EllipticCurve.CubicLegendreSign
 import FLT.EllipticCurve.CubicCyclicSign
@@ -133,3 +134,16 @@ example (p : ℕ) [NeZero p] (i : Bool) :
 open WeierstrassCurve.CubicCharts in
 example (p : ℕ) (i : Bool) :
     IsNoetherianRing (QuadraticOverlapChartRing (-1 : (LegendreBase p)ˣ) i) := inferInstance
+
+-- Actual Legendre root covers support effective descent of cyclic parameters.
+open WeierstrassCurve.CubicCharts in
+example (p : ℕ) [Fact p.Prime] :
+    EffectiveEpi (coefficientScalarQuotientMorphism
+      (legendreModel p) (LegendreUniversalReciprocalRing p) p) := by
+  exact quadraticCyclicCoverEffectiveEpi (legendreParameterUnit p) (legendreModel p) p
+
+open WeierstrassCurve.CubicCharts in
+example (p : ℕ) [Fact p.Prime] :
+    EffectiveEpi (coefficientScalarQuotientMorphism
+      (legendreModel p) (LegendreUniversalSwapRing p) p) := by
+  exact quadraticCyclicCoverEffectiveEpi (-1 : (LegendreBase p)ˣ) (legendreModel p) p

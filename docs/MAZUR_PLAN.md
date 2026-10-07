@@ -1922,6 +1922,30 @@ transition cocycle. X0(p), its cusps/compactification, Eisenstein
 quotient and Mazur arithmetic argument are still unfinished, as are
 the separate lifting and compatible-family inputs of FLT.
 
+### Relative quadratic descent on cyclic parameters — 2026-10-07 11:35 UTC
+
+Implemented `CubicCyclicQuadraticDescent.lean`. The root-sign involution
+and the sign-chart argument now work after arbitrary scheme base change.
+An invariant map to any scheme coequalizes the actual covering relation
+and descends uniquely through the pulled-back quadratic cover.
+
+The cyclic coefficient comparison identifies the actual cyclic-parameter
+scheme over the quadratic algebra with this pullback. Its coefficient
+map is an effective epimorphism; the transported covering involution is
+proved involutive and fixes the base parameter. `quadraticCyclicDesc`
+constructs the descended morphism, with its factorization and uniqueness
+theorems. Explicit examples verify the effective-epimorphism instance
+for both universal Legendre root covers. The module and the namespace
+axiom audit passed (4538 jobs).
+
+The remaining specific obligation is to prove invariance of the
+Legendre coordinate-transport map under this actual cyclic covering
+involution, using coefficient naturality and root-sign independence.
+The new construction does not assume that these are definitionally
+the same action. Once that comparison is proved, apply the descent,
+prove inverse and cocycle identities, and continue the modular curve
+construction. None of the three final arithmetic inputs has been removed.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
