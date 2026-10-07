@@ -4008,6 +4008,7 @@ public import FLT.Mazur.SchemeAffineCrossCoverDescent
 public import FLT.Mazur.SchemeAffineCrossRefinement
 public import FLT.Mazur.SchemeAffineCrossRefinementComparison
 public import FLT.Mazur.SchemeAffineDescentChart
+public import FLT.Mazur.SchemeAffineOpenOverlapCover
 public import FLT.Mazur.SchemeAffineRefinementCompatibility
 public import FLT.Mazur.SchemeAffineTensorCrossRefinement
 public import FLT.Mazur.SchemeBaseChangeLimit
