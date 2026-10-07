@@ -10,6 +10,7 @@ import FLT.EllipticCurve.CubicGoodReduction
 import FLT.EllipticCurve.CubicLegendre
 import FLT.EllipticCurve.CubicBaseChangeAddition
 import FLT.EllipticCurve.CubicBaseChangeGroup
+import FLT.EllipticCurve.CubicBaseChangeTorsion
 import FLT.EllipticCurve.CubicLegendreJFinite
 import FLT.EllipticCurve.CubicLegendreMonic
 import FLT.EllipticCurve.CubicLegendreParameters
