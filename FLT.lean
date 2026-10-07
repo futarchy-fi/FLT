@@ -4038,6 +4038,7 @@ public import FLT.Mazur.SchemeAffineCrossCoverRefinement
 public import FLT.Mazur.SchemeAffineCrossCoverRefinementRecognition
 public import FLT.Mazur.SchemeAffineCrossRefinement
 public import FLT.Mazur.SchemeAffineCrossRefinementBaseChoice
+public import FLT.Mazur.SchemeAffineCrossRefinementBaseSquare
 public import FLT.Mazur.SchemeAffineCrossRefinementCanonical
 public import FLT.Mazur.SchemeAffineCrossRefinementChoiceIndependence
 public import FLT.Mazur.SchemeAffineCrossRefinementComparison
