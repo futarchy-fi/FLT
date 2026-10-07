@@ -4127,6 +4127,7 @@ public import FLT.Mazur.VeryAmplePresentationBaseChange
 public import FLT.Mazur.WeierstrassAdditionAffineCoverage
 public import FLT.Mazur.WeierstrassAdditionChartCompatibility
 public import FLT.Mazur.WeierstrassAdditionInfinitySections
+public import FLT.Mazur.WeierstrassAdditionIntersections
 public import FLT.Mazur.WeierstrassAdditionNormalization
 public import FLT.Mazur.WeierstrassAdditionSchemeCover
 public import FLT.Mazur.WeierstrassAffineAdditionTransport
