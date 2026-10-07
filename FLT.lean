@@ -4060,6 +4060,7 @@ public import FLT.Mazur.SchemeAffineCrossRefinementComparison
 public import FLT.Mazur.SchemeAffineCrossRefinementCoverIndependence
 public import FLT.Mazur.SchemeAffineCrossRefinementEffectiveRestriction
 public import FLT.Mazur.SchemeAffineCrossRefinementFamily
+public import FLT.Mazur.SchemeAffineCrossRefinementFamilyComparison
 public import FLT.Mazur.SchemeAffineCrossRefinementMiddle
 public import FLT.Mazur.SchemeAffineCrossRefinementObjectPresentation
 public import FLT.Mazur.SchemeAffineCrossRefinementOuterRestriction
