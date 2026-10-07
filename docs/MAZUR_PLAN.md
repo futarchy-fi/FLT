@@ -1495,6 +1495,16 @@ assumption on the nonzero order is needed for this restriction itself.
 Scalar compatibility and the induced cyclic-quotient transport are the
 remaining links before this can be used in the coordinate-change descent.
 
+### Scalar compatibility of coordinate transport — 2026-10-07
+
+`CubicNonzeroScalarTransport.lean` proves that homomorphisms of actual
+torsion group schemes commute with scalar units. Restriction to the
+complement of the zero section preserves this identity. In particular,
+admissible changes of Weierstrass coordinates intertwine the inverse
+scalar actions used on coordinate rings. This provides the equivariance
+needed to descend the actual transport to the invariant scalar quotient;
+it does not yet construct the modular quotient by coordinate changes.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
