@@ -1579,6 +1579,17 @@ curve or a compactification. The next concrete model is the Legendre
 parameter ring with 2, the prime level, λ and λ-1 inverted, carrying the
 already constructed cyclic parameter family.
 
+### Integral Legendre chart with cyclic parameters — 2026-10-07
+
+`CubicLegendreParameters.lean` constructs
+`LegendreBase p = ℤ[λ,1/(2pλ(λ-1))]`, its elliptic Legendre equation and
+the universal specialization maps. A proved equivalence identifies maps
+out of this ring with parameters for which 2, p, λ and λ-1 are units.
+The actual prime cyclic parameter scheme over this chart is finite étale,
+and its geometric fibers classify order-p subgroups of the specialized
+Legendre equation. This reduces the coefficient chart to one parameter
+while retaining characteristic three for prime levels at least 17.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
