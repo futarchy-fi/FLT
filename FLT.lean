@@ -4024,8 +4024,6 @@ public import FLT.Mazur.SchemeAffineCrossRefinementObjectPresentation
 public import FLT.Mazur.SchemeAffineCrossRefinementPresentation
 public import FLT.Mazur.SchemeAffineCrossRefinementRawRestriction
 public import FLT.Mazur.SchemeAffineCrossRefinementRestriction
-public import FLT.Mazur.SchemeAffineCrossRefinementRingRestriction
-public import FLT.Mazur.SchemeAffineCrossRefinementTypedComparison
 public import FLT.Mazur.SchemeAffineDescentChart
 public import FLT.Mazur.SchemeAffineOpenOverlapCover
 public import FLT.Mazur.SchemeAffineRefinementCompatibility
