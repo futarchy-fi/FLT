@@ -3352,6 +3352,7 @@ public import FLT.Mazur.IdealAdicRelativeNoetherian
 public import FLT.Mazur.IdealAdicRelativePresheaf
 public import FLT.Mazur.IdealAdicRelativePrincipalCharts
 public import FLT.Mazur.IdealAdicRelativePrincipalOverlap
+public import FLT.Mazur.IdealAdicRelativePrincipalOverlapCocycle
 public import FLT.Mazur.IdealAdicRelativePrincipalSections
 public import FLT.Mazur.IdealAdicRelativePrincipalSheaf
 public import FLT.Mazur.IdealAdicRelativeQuasiCoherent
