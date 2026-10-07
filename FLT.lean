@@ -4340,6 +4340,7 @@ public import FLT.Mazur.WeierstrassSlopeSwapFormula
 public import FLT.Mazur.WeierstrassSwappedAdditionIntersections
 public import FLT.Mazur.WeierstrassSwappedMixedOutput
 public import FLT.Mazur.WeierstrassSwappedReciprocalOutput
+public import FLT.Mazur.WeierstrassSwappedSameOutputSchemes
 public import FLT.Mazur.WeierstrassSwappedSlopeComparison
 public import FLT.Mazur.WeierstrassSwappedSlopeRelations
 public import FLT.Mazur.WeierstrassTransportedAdditionRing
