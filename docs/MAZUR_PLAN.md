@@ -1812,6 +1812,34 @@ quadratic descent theorem and sign independence are now proved inputs
 to those steps, not substitutes for them. Mazur, integral lifting and
 compatible families remain the three open arithmetic leaves of FLT.
 
+### Universal reciprocal cover as a domain — 2026-10-07 10:50 UTC
+
+`CubicLegendreReciprocalCover.lean` constructs mutually inverse algebra
+maps between the actual standard étale cover adjoining √λ and
+the explicit ring ℤ[t, 1/(2pt(t²−1))]. The equivalence is over the
+Legendre base, whose parameter maps to t². Both inverse identities are
+proved, so this is a presentation of the actual covering algebra.
+
+For nonzero level, the presentation proves that
+`LegendreUniversalReciprocalRing p` is a domain; it is noetherian as
+well. Invertibility of the level and ellipticity of the two lifted
+Legendre equations are verified. Consequently,
+`legendreUniversalReciprocalCyclicIso` constructs the cyclic reciprocal
+transport on this concrete universal cover. At prime level, its
+independence of the distinguished root's sign is also proved.
+
+The construction itself only needs nonzero level; primality is used
+for the sign-independence theorem. The linter caught and removed the
+unneeded primality parameter on the construction. The module passes
+compilation, the geometric namespace axiom audit (4533 jobs), and its
+linter, with no new axioms, admissions, or increased elaboration limits.
+
+This closes the domain obligation for the universal reciprocal cover.
+The analogous √−1 cover presentation, the domain presentations of the
+sign charts in the overlaps, coefficient-transport naturality, and the
+family descent/cocycle are still required. No arithmetic FLT leaf is
+claimed closed by this geometric presentation.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
