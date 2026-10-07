@@ -4164,6 +4164,7 @@ public import FLT.Mazur.WeierstrassMixedOutputComparison
 public import FLT.Mazur.WeierstrassMixedProductCover
 public import FLT.Mazur.WeierstrassPolynomialInputTransition
 public import FLT.Mazur.WeierstrassPolynomialOutputComparison
+public import FLT.Mazur.WeierstrassPolynomialOutputIntersections
 public import FLT.Mazur.WeierstrassProductBoundaryPoints
 public import FLT.Mazur.WeierstrassProductOverlap
 public import FLT.Mazur.WeierstrassProductOverlapScheme
