@@ -4363,6 +4363,7 @@ public import FLT.Mazur.WeierstrassInfinityAffineSlopeIdentity
 public import FLT.Mazur.WeierstrassInfinityChartCompatibility
 public import FLT.Mazur.WeierstrassInfinityChartSpecialization
 public import FLT.Mazur.WeierstrassInfinityDividedLine
+public import FLT.Mazur.WeierstrassInfinityFactorCancellation
 public import FLT.Mazur.WeierstrassInfinityGlobalDomain
 public import FLT.Mazur.WeierstrassInfinityIdentityChart
 public import FLT.Mazur.WeierstrassInfinityIdentityCover
