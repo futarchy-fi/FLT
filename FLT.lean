@@ -2814,6 +2814,7 @@ public import FLT.Mazur.BinaryOpenDescent
 public import FLT.Mazur.CartesianOpenSectionMap
 public import FLT.Mazur.CartesianSectionRestriction
 public import FLT.Mazur.CartesianStructureComplexExactness
+public import FLT.Mazur.CartesianStructureComplexGluing
 public import FLT.Mazur.CartesianStructureSections
 public import FLT.Mazur.CartesianStructureTensorRestrictions
 public import FLT.Mazur.CartierAffineFppfDescent
