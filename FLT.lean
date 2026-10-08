@@ -5168,6 +5168,7 @@ public import FLT.Mazur.WeierstrassModificationYOpenImmersion
 public import FLT.Mazur.WeierstrassModificationYOpenMaps
 public import FLT.Mazur.WeierstrassModificationYOriginalLocalization
 public import FLT.Mazur.WeierstrassModificationYOverlap
+public import FLT.Mazur.WeierstrassModificationYReesChart
 public import FLT.Mazur.WeierstrassModificationYRegular
 public import FLT.Mazur.WeierstrassModificationYReverse
 public import FLT.Mazur.WeierstrassModificationYSaturation
