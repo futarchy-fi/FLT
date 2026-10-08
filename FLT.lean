@@ -4749,6 +4749,7 @@ public import FLT.Mazur.SmoothDimensionBound
 public import FLT.Mazur.SmoothGeometricallyReduced
 public import FLT.Mazur.SmoothOpenSectionCartier
 public import FLT.Mazur.SmoothSectionCartier
+public import FLT.Mazur.SplitEvaluationTensorKernel
 public import FLT.Mazur.StalkBaseClosedFiber
 public import FLT.Mazur.StalkBaseLocalization
 public import FLT.Mazur.StalkBaseSectionLifting
