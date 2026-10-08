@@ -4814,6 +4814,7 @@ public import FLT.Mazur.WeierstrassReciprocalChartSpecialization
 public import FLT.Mazur.WeierstrassReciprocalCubicSpecialization
 public import FLT.Mazur.WeierstrassReciprocalCubicTriple
 public import FLT.Mazur.WeierstrassReciprocalGlobalDomains
+public import FLT.Mazur.WeierstrassReciprocalOrdinaryComparison
 public import FLT.Mazur.WeierstrassReciprocalOutputRegular
 public import FLT.Mazur.WeierstrassReciprocalSecantTriple
 public import FLT.Mazur.WeierstrassReciprocalSecantTripleAlgebra
