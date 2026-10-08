@@ -4860,6 +4860,7 @@ public import FLT.Mazur.WeierstrassSplitNodalOrdinaryScheme
 public import FLT.Mazur.WeierstrassSplitNodalOrdinaryUnits
 public import FLT.Mazur.WeierstrassSplitNodalParameterComparison
 public import FLT.Mazur.WeierstrassSplitNodalPartialMultiplication
+public import FLT.Mazur.WeierstrassSplitNodalPartialSmoothMultiplication
 public import FLT.Mazur.WeierstrassSplitNodalPointBaseChange
 public import FLT.Mazur.WeierstrassSplitNodalPointMultiplication
 public import FLT.Mazur.WeierstrassSplitNodalPoints
