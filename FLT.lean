@@ -3613,6 +3613,7 @@ public import FLT.Mazur.ModuleSheafMorphismGluing
 public import FLT.Mazur.ModuleSheafMorphismRefinement
 public import FLT.Mazur.ModuleSheafOpenImmersionGluing
 public import FLT.Mazur.ModuleSheafOpenImmersionLocalHom
+public import FLT.Mazur.ModuleSheafOpenImmersionRefinementSections
 public import FLT.Mazur.ModuleSheafOpenImmersionSections
 public import FLT.Mazur.ModuleSheafOpenImmersionTopSections
 public import FLT.Mazur.ModuleSheafOpenIsoDetection
