@@ -4071,6 +4071,7 @@ public import FLT.Mazur.ScalarExtensionIsomorphismDescent
 public import FLT.Mazur.ScalarExtensionPullbackDescent
 public import FLT.Mazur.SchematicDescentGluing
 public import FLT.Mazur.SchemeAffineAmbientTestCocycle
+public import FLT.Mazur.SchemeAffineAmbientTestNaturality
 public import FLT.Mazur.SchemeAffineAmbientTestRefinement
 public import FLT.Mazur.SchemeAffineBaseTripleCocycle
 public import FLT.Mazur.SchemeAffineChartBaseChange
