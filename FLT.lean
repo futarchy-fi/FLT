@@ -4079,6 +4079,7 @@ public import FLT.Mazur.RationalFibers
 public import FLT.Mazur.ReconstructionComposition
 public import FLT.Mazur.ReesAlgebraBaseChange
 public import FLT.Mazur.ReesAlgebraMap
+public import FLT.Mazur.ReesModuleBaseChange
 public import FLT.Mazur.ReesModuleDirectSum
 public import FLT.Mazur.ReesModuleMap
 public import FLT.Mazur.RefinedChartSpectrum
