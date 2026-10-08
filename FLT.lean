@@ -4137,6 +4137,7 @@ public import FLT.Mazur.SchemeAffineCrossRefinementRawRestriction
 public import FLT.Mazur.SchemeAffineCrossRefinementRestriction
 public import FLT.Mazur.SchemeAffineDescentChart
 public import FLT.Mazur.SchemeAffineFlatRefinement
+public import FLT.Mazur.SchemeAffineFlatRefinementThrough
 public import FLT.Mazur.SchemeAffineFppfChart
 public import FLT.Mazur.SchemeAffineFppfChartCover
 public import FLT.Mazur.SchemeAffineImageTestComparison
