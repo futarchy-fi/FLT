@@ -2722,6 +2722,7 @@ public import FLT.Mazur.BaseAdicReesLocalization
 public import FLT.Mazur.BaseAdicReesModuleChart
 public import FLT.Mazur.BaseAdicReesModuleLocalization
 public import FLT.Mazur.BaseAdicReesOverlap
+public import FLT.Mazur.BaseAdicReesOverlapCompatibility
 public import FLT.Mazur.BaseAdicReesOverlapCover
 public import FLT.Mazur.BaseAdicReesOverlapLocalHom
 public import FLT.Mazur.BaseAdicReesOverlapRefinementCover
