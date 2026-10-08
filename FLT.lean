@@ -4233,6 +4233,7 @@ public import FLT.Mazur.PrincipalFamilyLimits
 public import FLT.Mazur.PrincipalFamilyRelations
 public import FLT.Mazur.PrincipalFamilyStages
 public import FLT.Mazur.PrincipalFamilySurjective
+public import FLT.Mazur.PrincipalFanDirected
 public import FLT.Mazur.PrincipalFanStages
 public import FLT.Mazur.PrincipalGeneratorExtension
 public import FLT.Mazur.PrincipalIntegerModelIsomorphism
