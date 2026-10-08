@@ -3676,6 +3676,7 @@ public import FLT.Mazur.HigherDirectImagePresheafRestriction
 public import FLT.Mazur.HilbertChartAlgebra
 public import FLT.Mazur.HilbertChartBasisAlgebra
 public import FLT.Mazur.HilbertChartBasisRelations
+public import FLT.Mazur.HilbertChartCoefficientMap
 public import FLT.Mazur.HilbertChartEquations
 public import FLT.Mazur.HilbertChartEvaluationSurjective
 public import FLT.Mazur.HilbertChartGeneratorMap
