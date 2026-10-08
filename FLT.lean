@@ -4377,6 +4377,7 @@ public import FLT.Mazur.WeierstrassTransportedAdditionRing
 public import FLT.Mazur.WeierstrassTransportedPolynomialComparison
 public import FLT.Mazur.WeierstrassTransportedPolynomialScheme
 public import FLT.Mazur.WeierstrassTripleAdditionCover
+public import FLT.Mazur.WeierstrassTripleCenteredRelations
 public import FLT.Mazur.WeierstrassTripleChartCocycle
 public import FLT.Mazur.WeierstrassTripleChartOverlap
 public import FLT.Mazur.WeierstrassTripleFullAdditionCover
