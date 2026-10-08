@@ -4613,6 +4613,7 @@ public import FLT.Mazur.WeierstrassInputSwap
 public import FLT.Mazur.WeierstrassIntegralAdditionCharts
 public import FLT.Mazur.WeierstrassIntegralAdditionCommutative
 public import FLT.Mazur.WeierstrassIntegralAdditionFormula
+public import FLT.Mazur.WeierstrassIntegralAssociativity
 public import FLT.Mazur.WeierstrassIntegralChart
 public import FLT.Mazur.WeierstrassIntegralCurveGluing
 public import FLT.Mazur.WeierstrassIntegralCurveMorphisms
