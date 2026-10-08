@@ -4170,6 +4170,7 @@ public import FLT.Mazur.SchemeAffineCommonSectionMaps
 public import FLT.Mazur.SchemeAffineCommonSectionRecovery
 public import FLT.Mazur.SchemeAffineCommonSectionSquareComparison
 public import FLT.Mazur.SchemeAffineCommonSectionTransport
+public import FLT.Mazur.SchemeAffineCommonSectionTransportPullback
 public import FLT.Mazur.SchemeAffineCoverRecovery
 public import FLT.Mazur.SchemeAffineCoverRecoveryCompatibility
 public import FLT.Mazur.SchemeAffineCoverTestOriginalMap
