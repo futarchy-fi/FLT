@@ -4213,6 +4213,7 @@ public import FLT.Mazur.OpenSheafFreeComparison
 public import FLT.Mazur.OpenSheafRestriction
 public import FLT.Mazur.OrderedCurveDivisor
 public import FLT.Mazur.OrderedCurveDivisorFinite
+public import FLT.Mazur.OrderedCurveDivisorPresentation
 public import FLT.Mazur.OrderedCurveDivisorPullback
 public import FLT.Mazur.OrderedCurvePermutation
 public import FLT.Mazur.OrderedCurvePower
