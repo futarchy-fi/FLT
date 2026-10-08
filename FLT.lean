@@ -2710,6 +2710,7 @@ public import FLT.Mazur.AnnihilatorSubsheaf
 public import FLT.Mazur.BaseAdicCohomologyFiltration
 public import FLT.Mazur.BaseAdicQuotientSpectrum
 public import FLT.Mazur.BaseAdicReesChart
+public import FLT.Mazur.BaseAdicReesCover
 public import FLT.Mazur.BaseAdicReesRestriction
 public import FLT.Mazur.BaseAdicReesSpace
 public import FLT.Mazur.BaseAdicThickening
