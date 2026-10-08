@@ -4348,6 +4348,7 @@ public import FLT.Mazur.WeierstrassOrdinaryChartSpecialization
 public import FLT.Mazur.WeierstrassOrdinaryNegationEmpty
 public import FLT.Mazur.WeierstrassOrdinaryTripleAlgebra
 public import FLT.Mazur.WeierstrassOrdinaryTripleCoordinates
+public import FLT.Mazur.WeierstrassOrdinaryTripleSchemes
 public import FLT.Mazur.WeierstrassPolynomialAdditionSwap
 public import FLT.Mazur.WeierstrassPolynomialInputCurveComparison
 public import FLT.Mazur.WeierstrassPolynomialInputOutputOverlap
