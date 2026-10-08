@@ -4382,6 +4382,7 @@ public import FLT.Mazur.WeierstrassTripleChartOverlap
 public import FLT.Mazur.WeierstrassTripleFullAdditionCover
 public import FLT.Mazur.WeierstrassTripleFullInputs
 public import FLT.Mazur.WeierstrassTripleInnerAdditionCover
+public import FLT.Mazur.WeierstrassTripleSlopeAlgebra
 public import FLT.Mazur.WeierstrassVerticalAdditionCharts
 public import FLT.Mazur.WeierstrassVerticalChartCompatibility
 public import FLT.Mazur.WeierstrassVietaNormalization
