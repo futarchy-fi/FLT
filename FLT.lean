@@ -5131,6 +5131,7 @@ public import FLT.Mazur.WeierstrassModificationYOpenMaps
 public import FLT.Mazur.WeierstrassModificationYOverlap
 public import FLT.Mazur.WeierstrassModificationYReverse
 public import FLT.Mazur.WeierstrassModificationYScaleLocalization
+public import FLT.Mazur.WeierstrassModificationYTripleOverlap
 public import FLT.Mazur.WeierstrassNegationAdditionDescent
 public import FLT.Mazur.WeierstrassNegationAdditionPullback
 public import FLT.Mazur.WeierstrassNegationCover
