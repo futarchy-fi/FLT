@@ -2667,6 +2667,7 @@ public import FLT.Mazur.AffineRefinementIdentity
 public import FLT.Mazur.AffineRefinementPullback
 public import FLT.Mazur.AffineRefinementReconstructionMap
 public import FLT.Mazur.AffineRefinementReconstructionRecognition
+public import FLT.Mazur.AffineRelativeFiberCriterion
 public import FLT.Mazur.AffineRestrictionImmersion
 public import FLT.Mazur.AffineReverseGeometricOverlap
 public import FLT.Mazur.AffineReverseOverlapCocycle
@@ -2713,6 +2714,9 @@ public import FLT.Mazur.AmpleChartSectionExtension
 public import FLT.Mazur.AmpleCoherentVanishing
 public import FLT.Mazur.AmpleCommonDegree
 public import FLT.Mazur.AmpleFiberCartesianDescent
+public import FLT.Mazur.AmpleFiberGeneratorNeighborhood
+public import FLT.Mazur.AmpleFiberGlobalGenerators
+public import FLT.Mazur.AmpleFiberProjectiveCoordinates
 public import FLT.Mazur.AmpleGlobalGeneration
 public import FLT.Mazur.AmpleHighDegreeSectionCover
 public import FLT.Mazur.AmpleLineBundle
@@ -3330,7 +3334,9 @@ public import FLT.Mazur.FCurveContracts
 public import FLT.Mazur.FaithfullyFlatFinitePresentation
 public import FLT.Mazur.FaithfullyFlatInvertible
 public import FLT.Mazur.FamilyTransport
+public import FLT.Mazur.FiberAffineOpenBaseChange
 public import FLT.Mazur.FiniteAffineAtlasDiagramDescent
+public import FLT.Mazur.FiniteAffineBaseNeighborhood
 public import FLT.Mazur.FiniteAffineCoverDimension
 public import FLT.Mazur.FiniteAffineCoverFiniteness
 public import FLT.Mazur.FiniteAffineIntersectionDiagram
@@ -3390,10 +3396,12 @@ public import FLT.Mazur.FinitePushforwardAmpleVanishing
 public import FLT.Mazur.FinitePushforwardCoherent
 public import FLT.Mazur.FinitePushforwardIdealImage
 public import FLT.Mazur.FinitePushforwardIdealVanishing
+public import FLT.Mazur.FiniteRelativeFiberNeighborhood
 public import FLT.Mazur.FiniteSchemeInvertibleSections
 public import FLT.Mazur.FiniteSchemeLength
 public import FLT.Mazur.FiniteSchemeLineCohomology
 public import FLT.Mazur.FiniteSchemeLineTwist
+public import FLT.Mazur.FiniteSectionCoverReindex
 public import FLT.Mazur.FiniteSectionProjectivePresentation
 public import FLT.Mazur.FiniteSeparatedLineSheafDescent
 public import FLT.Mazur.FiniteSupportClosedDescent
@@ -4257,6 +4265,7 @@ public import FLT.Mazur.ProperCohomologyWitnesses
 public import FLT.Mazur.ProperCoverImmersionCriterion
 public import FLT.Mazur.ProperCurveGenus
 public import FLT.Mazur.ProperFiberNeighborhood
+public import FLT.Mazur.ProperFiniteFiberNeighborhood
 public import FLT.Mazur.ProperIntegralConstantSections
 public import FLT.Mazur.ProperLineSheafDescent
 public import FLT.Mazur.ProperLocalAmpleFiberGenerators
@@ -4300,6 +4309,7 @@ public import FLT.Mazur.RelativeCartierIdealPullback
 public import FLT.Mazur.RelativeDirectImageComposition
 public import FLT.Mazur.RelativeDirectImageForgetting
 public import FLT.Mazur.RelativeDirectImageOpenResolution
+public import FLT.Mazur.RelativeFiberMorphism
 public import FLT.Mazur.RelativeJetSmoothObstruction
 public import FLT.Mazur.RelativePicardPresheaf
 public import FLT.Mazur.RelativePicardQuotient
@@ -4560,6 +4570,7 @@ public import FLT.Mazur.SectionGradedSum
 public import FLT.Mazur.SectionGradedUnit
 public import FLT.Mazur.SectionKernelLocal
 public import FLT.Mazur.SectionPowerGluing
+public import FLT.Mazur.SectionProjectiveFiniteNeighborhood
 public import FLT.Mazur.SectionProjectiveImmersion
 public import FLT.Mazur.SectionSumFinite
 public import FLT.Mazur.SegreChartMaps
@@ -4589,6 +4600,7 @@ public import FLT.Mazur.SmoothOpenSectionCartier
 public import FLT.Mazur.SmoothSectionCartier
 public import FLT.Mazur.StalkBaseClosedFiber
 public import FLT.Mazur.StalkBaseLocalization
+public import FLT.Mazur.StalkBaseNumeratorOpen
 public import FLT.Mazur.StalkBaseSectionLifting
 public import FLT.Mazur.StalkBaseSectionNumerator
 public import FLT.Mazur.StructureCohomologyFinite
