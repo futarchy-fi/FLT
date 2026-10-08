@@ -4426,6 +4426,7 @@ public import FLT.Mazur.SchemeFppfSourceLineMapEquivalence
 public import FLT.Mazur.SchemeFppfSourceLineMapPreimage
 public import FLT.Mazur.SchemeGeometricDescentCocycleTest
 public import FLT.Mazur.SchemeGeometricDescentData
+public import FLT.Mazur.SchemeIndependentPairNormalization
 public import FLT.Mazur.SchemeLineBundleCategory
 public import FLT.Mazur.SchemeLineCanonicalFunctor
 public import FLT.Mazur.SchemeLineDescentCategory
