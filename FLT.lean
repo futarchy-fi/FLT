@@ -2951,6 +2951,7 @@ public import FLT.Mazur.CoefficientModelRecovery
 public import FLT.Mazur.CoefficientOpenClosedDescent
 public import FLT.Mazur.CoefficientProperDescent
 public import FLT.Mazur.CoefficientPropertyComparison
+public import FLT.Mazur.CoefficientRecoveredProperty
 public import FLT.Mazur.CoefficientSectionDescent
 public import FLT.Mazur.CoefficientSpectrumLimit
 public import FLT.Mazur.CoefficientStageColimit
