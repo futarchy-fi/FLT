@@ -3068,6 +3068,7 @@ public import FLT.Mazur.DivisorTwistedDegree
 public import FLT.Mazur.DivisorTwistedSequence
 public import FLT.Mazur.DoubleRootComponentBound
 public import FLT.Mazur.EllipticAbstractGoodReductionClosure
+public import FLT.Mazur.EllipticAbstractMultiplicativeComponents
 public import FLT.Mazur.EllipticAdditiveDepthRefinement
 public import FLT.Mazur.EllipticAdditiveFirstBranches
 public import FLT.Mazur.EllipticAdditiveLaterBranches
