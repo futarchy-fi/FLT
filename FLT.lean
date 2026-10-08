@@ -5154,6 +5154,7 @@ public import FLT.Mazur.WeierstrassModificationYMorphism
 public import FLT.Mazur.WeierstrassModificationYOpenImmersion
 public import FLT.Mazur.WeierstrassModificationYOpenMaps
 public import FLT.Mazur.WeierstrassModificationYOverlap
+public import FLT.Mazur.WeierstrassModificationYRegular
 public import FLT.Mazur.WeierstrassModificationYReverse
 public import FLT.Mazur.WeierstrassModificationYScaleLocalization
 public import FLT.Mazur.WeierstrassModificationYTripleOverlap
