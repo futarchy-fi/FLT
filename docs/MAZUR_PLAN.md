@@ -2153,6 +2153,36 @@ double relation to the descended return map. Mixed permutation relations
 and the full family action remain open. The final FLT proof still depends
 on Mazur_statement and the two lifting/compatible-family sorry proofs.
 
+### Coordinate naturality between coefficient covers — 2026-10-08
+
+Implemented `CubicCoefficientNaturality.lean`. A homomorphism between two
+coefficient R-algebras induces explicit maps on both cubic charts and a
+global comparison of the glued curves. The chart formulas prove that this
+comparison commutes with a coordinate change after mapping its coefficients.
+No domain or noetherian hypothesis is needed for this curve-level identity.
+
+Under the existing elliptic/noetherian-domain hypotheses, the identity
+restricts to full torsion, nonzero torsion and the cyclic quotient. The
+result `coefficientCompare_variableChange_cyclic` is naturality for the
+actual cyclic maps, not an assumed compatibility field.
+
+The reciprocal specialization `quadraticReciprocalChange_cyclic` identifies
+transport by the distinguished root on the first quadratic cover with
+transport by the inverse distinguished root on the reciprocal cover.
+It uses the constructed cover comparison and the actual coordinate formula.
+Direct axiom checks for this specialization and both general naturality
+theorems use only propext, Classical.choice and Quot.sound.
+
+Validation: the module and namespace-wide trust audit passed all 4547 jobs.
+The full lake build FLT passed all 10544 jobs, including FermatsLastTheorem.
+The module linter, generated-import check and whitespace check passed.
+
+Remaining: combine this naturality with the local reciprocal double relation
+to prove the two compositions of the descended reciprocal return map.
+Mixed permutation relations and the full family action remain open.
+None of the three global arithmetic gaps (Mazur_statement, integral lifting,
+compatible families) is discharged by these geometric results.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
