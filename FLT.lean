@@ -5171,6 +5171,7 @@ public import FLT.Mazur.WeierstrassSmoothPointEquiv
 public import FLT.Mazur.WeierstrassSmoothPolynomialDomain
 public import FLT.Mazur.WeierstrassSmoothProductFieldPoints
 public import FLT.Mazur.WeierstrassSmoothProductOpen
+public import FLT.Mazur.WeierstrassSmoothProjectiveGroup
 public import FLT.Mazur.WeierstrassSmoothReciprocalTriple
 public import FLT.Mazur.WeierstrassSmoothSevenPoints
 public import FLT.Mazur.WeierstrassSmoothTransportedComparison
