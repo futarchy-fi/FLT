@@ -2726,6 +2726,7 @@ public import FLT.Mazur.AmplePrincipalLocality
 public import FLT.Mazur.AnnihilatorCoherence
 public import FLT.Mazur.AnnihilatorStalk
 public import FLT.Mazur.AnnihilatorSubsheaf
+public import FLT.Mazur.ArtinianClosedFiberFunctions
 public import FLT.Mazur.ArtinianProperAffineBaseChange
 public import FLT.Mazur.ArtinianProperRelativeFunctions
 public import FLT.Mazur.ArtinianProperStructureSheaf
