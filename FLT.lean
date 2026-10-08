@@ -4941,6 +4941,7 @@ public import FLT.Mazur.WeierstrassDilatationGenericFiber
 public import FLT.Mazur.WeierstrassDilatationLifting
 public import FLT.Mazur.WeierstrassDilatationLocalization
 public import FLT.Mazur.WeierstrassDilatationMorphism
+public import FLT.Mazur.WeierstrassDilatationReesChart
 public import FLT.Mazur.WeierstrassDilatationRefinement
 public import FLT.Mazur.WeierstrassDilatationResidueDepth
 public import FLT.Mazur.WeierstrassDilatationResidueFiber
