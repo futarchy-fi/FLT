@@ -3266,6 +3266,7 @@ public import FLT.Mazur.EllipticRepeatedCubicPoint
 public import FLT.Mazur.EllipticRepeatedCubicTranslation
 public import FLT.Mazur.EllipticScaledTorsionReduction
 public import FLT.Mazur.EllipticScalingSmoothTorsion
+public import FLT.Mazur.EllipticSectionSpecialFiber
 public import FLT.Mazur.EllipticSemistableExtension
 public import FLT.Mazur.EllipticShearDescent
 public import FLT.Mazur.EllipticShearedComponentExtension
