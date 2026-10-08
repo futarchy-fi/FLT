@@ -4117,6 +4117,7 @@ public import FLT.Mazur.SchemeAffineImageTestComparison
 public import FLT.Mazur.SchemeAffineImageTestRefinement
 public import FLT.Mazur.SchemeAffineOpenOverlapCover
 public import FLT.Mazur.SchemeAffineOpenTestComparison
+public import FLT.Mazur.SchemeAffineOpenTestEvaluation
 public import FLT.Mazur.SchemeAffineOverlapChartCommonRefinement
 public import FLT.Mazur.SchemeAffineOverlapChartComparison
 public import FLT.Mazur.SchemeAffineOverlapCommonComparison
