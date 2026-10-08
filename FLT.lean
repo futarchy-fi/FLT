@@ -4023,6 +4023,7 @@ public import FLT.Mazur.ModuleSheafProjectionTopNaturality
 public import FLT.Mazur.ModuleSheafPullbackIsoDetection
 public import FLT.Mazur.ModuleSheafPullbackMapRefinement
 public import FLT.Mazur.ModuleSheafRefinementGluing
+public import FLT.Mazur.ModuleSheafScalarEndomorphisms
 public import FLT.Mazur.ModuleSheafSectionScalars
 public import FLT.Mazur.ModuleSheafTensor
 public import FLT.Mazur.ModuleSheafTensorAffine
