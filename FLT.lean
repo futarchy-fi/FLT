@@ -3307,6 +3307,7 @@ public import FLT.Mazur.EllipticSubgroupIntegralConstantCoordinates
 public import FLT.Mazur.EllipticSubgroupIntegralEvaluation
 public import FLT.Mazur.EllipticSubgroupIntegralSection
 public import FLT.Mazur.EllipticSubgroupLocalConstantRigidity
+public import FLT.Mazur.EllipticSubgroupLocalSpecialization
 public import FLT.Mazur.EllipticSubgroupOverlapClosure
 public import FLT.Mazur.EllipticSubgroupOverlapCoordinates
 public import FLT.Mazur.EllipticSubgroupOverlapEvaluation
