@@ -4313,6 +4313,7 @@ public import FLT.Mazur.SchemeCanonicalOverlapDiagonal
 public import FLT.Mazur.SchemeCanonicalOverlapLaws
 public import FLT.Mazur.SchemeCanonicalOverlapNaturality
 public import FLT.Mazur.SchemeCanonicalOverlapRefinement
+public import FLT.Mazur.SchemeCanonicalRecoveryCompatibility
 public import FLT.Mazur.SchemeCohomologyIso
 public import FLT.Mazur.SchemeCohomologyIsoCocycles
 public import FLT.Mazur.SchemeCoproductCohomology
