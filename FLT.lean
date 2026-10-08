@@ -2722,6 +2722,7 @@ public import FLT.Mazur.AnnihilatorSubsheaf
 public import FLT.Mazur.BaseAdicCohomologyFiltration
 public import FLT.Mazur.BaseAdicCohomologyImageStability
 public import FLT.Mazur.BaseAdicCohomologyReconstruction
+public import FLT.Mazur.BaseAdicCohomologySeparated
 public import FLT.Mazur.BaseAdicFiniteSectionLifting
 public import FLT.Mazur.BaseAdicFormalFunctions
 public import FLT.Mazur.BaseAdicFormalInjectivity
