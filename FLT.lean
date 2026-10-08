@@ -4062,6 +4062,7 @@ public import FLT.Mazur.SchemeAffineCrossRefinementEffectiveRestriction
 public import FLT.Mazur.SchemeAffineCrossRefinementFamily
 public import FLT.Mazur.SchemeAffineCrossRefinementFamilyComparison
 public import FLT.Mazur.SchemeAffineCrossRefinementFamilyNormalization
+public import FLT.Mazur.SchemeAffineCrossRefinementFamilyRecognition
 public import FLT.Mazur.SchemeAffineCrossRefinementFamilyReconstruction
 public import FLT.Mazur.SchemeAffineCrossRefinementMiddle
 public import FLT.Mazur.SchemeAffineCrossRefinementObjectPresentation
