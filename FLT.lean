@@ -3252,6 +3252,7 @@ public import FLT.Mazur.EllipticSubgroupAmbientChartPreimage
 public import FLT.Mazur.EllipticSubgroupAmbientClosedImmersion
 public import FLT.Mazur.EllipticSubgroupAmbientMorphism
 public import FLT.Mazur.EllipticSubgroupAmbientOverlap
+public import FLT.Mazur.EllipticSubgroupAmbientPoints
 public import FLT.Mazur.EllipticSubgroupChartClosure
 public import FLT.Mazur.EllipticSubgroupChartGeneric
 public import FLT.Mazur.EllipticSubgroupClosedFiberPoints
