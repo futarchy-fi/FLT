@@ -57,6 +57,6 @@ theorem exists_complete_semistable_extension_injections (p : ℕ) [Fact p.Prime]
     hdeg, he, he', hred, hgood, ?_⟩
   let _ : CharZero L := charZero_of_injective_algebraMap (algebraMap K L).injective
   intro hmult
-  exact abstractPrimeComponentInjection_of_multiplicative (K := K) W U C hC p (by omega) he' 
+  exact abstractPrimeComponentInjection_of_multiplicative (K := K) W U C hC p (by omega) he'
 
 end FLT.Mazur
