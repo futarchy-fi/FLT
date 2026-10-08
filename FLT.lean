@@ -4383,6 +4383,7 @@ public import FLT.Mazur.WeierstrassMixedLeftReciprocalInverse
 public import FLT.Mazur.WeierstrassMixedOutputComparison
 public import FLT.Mazur.WeierstrassMixedProductAdditionGluing
 public import FLT.Mazur.WeierstrassMixedProductCover
+public import FLT.Mazur.WeierstrassMixedRightReciprocalDomain
 public import FLT.Mazur.WeierstrassMixedRightReciprocalGlobal
 public import FLT.Mazur.WeierstrassMixedRightReciprocalInverse
 public import FLT.Mazur.WeierstrassMixedTripleAlgebraUnits
