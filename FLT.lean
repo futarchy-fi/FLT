@@ -2995,6 +2995,7 @@ public import FLT.Mazur.ConstantCyclicGenerator
 public import FLT.Mazur.ConstantCyclicGroup
 public import FLT.Mazur.ConstantCyclicInclusion
 public import FLT.Mazur.ConstantDegree
+public import FLT.Mazur.ConstantGroupTensorEvaluation
 public import FLT.Mazur.Contracts
 public import FLT.Mazur.CoproductConstantSections
 public import FLT.Mazur.CubicComponentBound
@@ -3287,7 +3288,11 @@ public import FLT.Mazur.EllipticSubgroupClosureProperties
 public import FLT.Mazur.EllipticSubgroupClosureQuasiFinite
 public import FLT.Mazur.EllipticSubgroupClosureSeparated
 public import FLT.Mazur.EllipticSubgroupClosureZero
+public import FLT.Mazur.EllipticSubgroupFiniteFlatModel
+public import FLT.Mazur.EllipticSubgroupFiniteFlatPoints
+public import FLT.Mazur.EllipticSubgroupGenericConstantCoordinates
 public import FLT.Mazur.EllipticSubgroupGenericDensity
+public import FLT.Mazur.EllipticSubgroupGenericHopfComparison
 public import FLT.Mazur.EllipticSubgroupGenericSection
 public import FLT.Mazur.EllipticSubgroupGenericSectionInjective
 public import FLT.Mazur.EllipticSubgroupGlobalAlgebra
@@ -3295,6 +3300,8 @@ public import FLT.Mazur.EllipticSubgroupGlobalEvaluation
 public import FLT.Mazur.EllipticSubgroupGlobalRank
 public import FLT.Mazur.EllipticSubgroupGlobalRankBound
 public import FLT.Mazur.EllipticSubgroupHopfEvaluation
+public import FLT.Mazur.EllipticSubgroupHopfMultiplication
+public import FLT.Mazur.EllipticSubgroupHopfSpecialization
 public import FLT.Mazur.EllipticSubgroupIntegralEvaluation
 public import FLT.Mazur.EllipticSubgroupIntegralSection
 public import FLT.Mazur.EllipticSubgroupOverlapClosure
@@ -3307,6 +3314,8 @@ public import FLT.Mazur.EllipticSubgroupPointLocalization
 public import FLT.Mazur.EllipticSubgroupSectionCover
 public import FLT.Mazur.EllipticSubgroupSectionFamilyDensity
 public import FLT.Mazur.EllipticSubgroupSectionGenericCompatibility
+public import FLT.Mazur.EllipticSubgroupSpecialFiber
+public import FLT.Mazur.EllipticSubgroupTensorEvaluation
 public import FLT.Mazur.EllipticTangentParameterHom
 public import FLT.Mazur.EllipticTripleRootBranches
 public import FLT.Mazur.EllipticTypeIIIDepth
