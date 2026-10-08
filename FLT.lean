@@ -3124,6 +3124,7 @@ public import FLT.Mazur.EllipticFormalSubstitution
 public import FLT.Mazur.EllipticFormalSymmetry
 public import FLT.Mazur.EllipticFormalTangent
 public import FLT.Mazur.EllipticGoodComponent
+public import FLT.Mazur.EllipticGoodReductionDiscriminant
 public import FLT.Mazur.EllipticInfinityEvaluation
 public import FLT.Mazur.EllipticInfinityParameter
 public import FLT.Mazur.EllipticInfinityPowerSeries
