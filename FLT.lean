@@ -4453,6 +4453,7 @@ public import FLT.Mazur.SchemeIndependentCanonicalFamily
 public import FLT.Mazur.SchemeIndependentCanonicalOverlap
 public import FLT.Mazur.SchemeIndependentCanonicalSource
 public import FLT.Mazur.SchemeIndependentFamilyAssemblyFullyFaithful
+public import FLT.Mazur.SchemeIndependentFamilyEquivalence
 public import FLT.Mazur.SchemeIndependentFamilyLineCategory
 public import FLT.Mazur.SchemeIndependentFamilyLineData
 public import FLT.Mazur.SchemeIndependentPairNormalization
