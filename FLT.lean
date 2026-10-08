@@ -4626,6 +4626,7 @@ public import FLT.Mazur.WeierstrassIntegralCurveGluing
 public import FLT.Mazur.WeierstrassIntegralCurveMorphisms
 public import FLT.Mazur.WeierstrassIntegralCurveProduct
 public import FLT.Mazur.WeierstrassIntegralCurveTwoChartCover
+public import FLT.Mazur.WeierstrassIntegralGroup
 public import FLT.Mazur.WeierstrassIntegralGroupOperations
 public import FLT.Mazur.WeierstrassIntegralProductOverlap
 public import FLT.Mazur.WeierstrassIntegralTripleFlat
