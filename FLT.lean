@@ -4386,6 +4386,7 @@ public import FLT.Mazur.SchemeDescentTransportTest
 public import FLT.Mazur.SchemeFppfFamilyCover
 public import FLT.Mazur.SchemeFppfFamilyLineDescent
 public import FLT.Mazur.SchemeFppfLineBaseChange
+public import FLT.Mazur.SchemeFppfLineBaseChangeRecovery
 public import FLT.Mazur.SchemeFppfLineBaseRecovery
 public import FLT.Mazur.SchemeFppfLineBaseRecoveryCharts
 public import FLT.Mazur.SchemeFppfLineBaseRecoveryNaturality
