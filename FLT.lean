@@ -2736,6 +2736,7 @@ public import FLT.Mazur.BaseAdicReesSheafIso
 public import FLT.Mazur.BaseAdicReesSheafMap
 public import FLT.Mazur.BaseAdicReesSpace
 public import FLT.Mazur.BaseAdicReesSpectrum
+public import FLT.Mazur.BaseAdicReesSpectrumAmbientImageIso
 public import FLT.Mazur.BaseAdicReesSpectrumAmbientSheaf
 public import FLT.Mazur.BaseAdicReesSpectrumComparison
 public import FLT.Mazur.BaseAdicReesSpectrumImageOpenCover
