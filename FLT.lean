@@ -4430,6 +4430,7 @@ public import FLT.Mazur.VeryAmplePresentationBaseChange
 public import FLT.Mazur.WeierstrassAdditionAffineCoverage
 public import FLT.Mazur.WeierstrassAdditionChartCompatibility
 public import FLT.Mazur.WeierstrassAdditionInfinitySections
+public import FLT.Mazur.WeierstrassAdditionInputCharts
 public import FLT.Mazur.WeierstrassAdditionIntersections
 public import FLT.Mazur.WeierstrassAdditionLocalCharts
 public import FLT.Mazur.WeierstrassAdditionNormalization
