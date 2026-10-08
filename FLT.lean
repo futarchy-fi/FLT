@@ -4490,6 +4490,8 @@ public import FLT.Mazur.WeierstrassChartCrossComparison
 public import FLT.Mazur.WeierstrassChartEvaluationComparison
 public import FLT.Mazur.WeierstrassChartFactorUnit
 public import FLT.Mazur.WeierstrassChartInjectiveDescent
+public import FLT.Mazur.WeierstrassChartJacobian
+public import FLT.Mazur.WeierstrassChartJacobianCover
 public import FLT.Mazur.WeierstrassChartOverlap
 public import FLT.Mazur.WeierstrassChartSchemeGluingData
 public import FLT.Mazur.WeierstrassChartUnitLift
