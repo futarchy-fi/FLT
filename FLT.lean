@@ -4789,6 +4789,7 @@ public import FLT.Mazur.WeierstrassOrdinaryTripleSchemes
 public import FLT.Mazur.WeierstrassOverlapDiagonalAlgebra
 public import FLT.Mazur.WeierstrassPartialAdditionSmoothInputs
 public import FLT.Mazur.WeierstrassPartialAdditionSmoothResidues
+public import FLT.Mazur.WeierstrassPartialChartSmoothLocus
 public import FLT.Mazur.WeierstrassPartialFieldPointComparison
 public import FLT.Mazur.WeierstrassPartialOrdinaryPointComparison
 public import FLT.Mazur.WeierstrassPolynomialAdditionSwap
