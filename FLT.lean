@@ -4164,6 +4164,7 @@ public import FLT.Mazur.SchemeAffineOpenGluingMapRecovery
 public import FLT.Mazur.SchemeAffineOpenGluingProjection
 public import FLT.Mazur.SchemeAffineOpenGluingRecovery
 public import FLT.Mazur.SchemeAffineOpenOverlapCover
+public import FLT.Mazur.SchemeAffineOpenProjectionComparison
 public import FLT.Mazur.SchemeAffineOpenTestComparison
 public import FLT.Mazur.SchemeAffineOpenTestEvaluation
 public import FLT.Mazur.SchemeAffineOpenTestNaturality
