@@ -3403,6 +3403,7 @@ public import FLT.Mazur.IdealAdicRelativePrincipalOverlapCocycle
 public import FLT.Mazur.IdealAdicRelativePrincipalOverlapRefinement
 public import FLT.Mazur.IdealAdicRelativePrincipalSections
 public import FLT.Mazur.IdealAdicRelativePrincipalSheaf
+public import FLT.Mazur.IdealAdicRelativePushforwardOpens
 public import FLT.Mazur.IdealAdicRelativeQuasiCoherent
 public import FLT.Mazur.IdealAdicRelativeRestriction
 public import FLT.Mazur.IdealAdicRelativeScheme
