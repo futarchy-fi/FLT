@@ -2612,6 +2612,7 @@ public import FLT.Mazur.AffineModuleSupport
 public import FLT.Mazur.AffineNamedRefinementCompositionRecognition
 public import FLT.Mazur.AffineNamedRefinementNaturality
 public import FLT.Mazur.AffineNamedRefinementReconstruction
+public import FLT.Mazur.AffineNamedRefinementSection
 public import FLT.Mazur.AffineNodeNormalizationExact
 public import FLT.Mazur.AffineOpenCartesianSections
 public import FLT.Mazur.AffineOpenCechBoundary
