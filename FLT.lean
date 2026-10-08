@@ -4336,6 +4336,7 @@ public import FLT.Mazur.SequentialCochainBoundary
 public import FLT.Mazur.SequentialFiniteProducts
 public import FLT.Mazur.SheafPullbackLocalComparison
 public import FLT.Mazur.SheafPullbackMapNormalization
+public import FLT.Mazur.SheafPullbackNamedSquare
 public import FLT.Mazur.SheafPullbackNormalizedRefinement
 public import FLT.Mazur.SheafPullbackObjectwiseRefinement
 public import FLT.Mazur.SheafPullbackPathComparison
