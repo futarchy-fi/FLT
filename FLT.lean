@@ -4313,6 +4313,7 @@ public import FLT.Mazur.PrincipalLocalizationPullback
 public import FLT.Mazur.PrincipalLocalizationSquare
 public import FLT.Mazur.PrincipalLocalizedKernelPaths
 public import FLT.Mazur.PrincipalModelBaseChange
+public import FLT.Mazur.PrincipalOccurrenceDirected
 public import FLT.Mazur.PrincipalOccurrenceExistence
 public import FLT.Mazur.PrincipalOccurrenceStages
 public import FLT.Mazur.PrincipalOpenIntegerModel
