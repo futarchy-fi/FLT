@@ -4557,6 +4557,7 @@ public import FLT.Mazur.WeierstrassFiveRegularSectionDescent
 public import FLT.Mazur.WeierstrassFiveRegularTriple
 public import FLT.Mazur.WeierstrassFlatSectionRegular
 public import FLT.Mazur.WeierstrassFourPairAssociativity
+public import FLT.Mazur.WeierstrassGeneralizedEllipticModel
 public import FLT.Mazur.WeierstrassGenusOneFamily
 public import FLT.Mazur.WeierstrassGeometricConnected
 public import FLT.Mazur.WeierstrassGeometricIntegral
