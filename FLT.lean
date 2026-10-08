@@ -3550,6 +3550,7 @@ public import FLT.Mazur.ModuleHomOpenTransport
 public import FLT.Mazur.ModuleHomTrivialOpen
 public import FLT.Mazur.ModuleImageSection
 public import FLT.Mazur.ModuleInjectiveFlasque
+public import FLT.Mazur.ModuleLineBundleOpenCover
 public import FLT.Mazur.ModuleLineBundlePullback
 public import FLT.Mazur.ModuleLineBundleTensorPullback
 public import FLT.Mazur.ModuleLineTensorExact
