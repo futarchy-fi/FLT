@@ -3476,6 +3476,7 @@ public import FLT.Mazur.IdealPowerExtensionGluing
 public import FLT.Mazur.IdealPowerGenericComparison
 public import FLT.Mazur.IdealPowerMultiplication
 public import FLT.Mazur.IdealPowerProductSurjective
+public import FLT.Mazur.IdealPowerReesChart
 public import FLT.Mazur.IdealPowerReesLocalization
 public import FLT.Mazur.IdealPowerReesRestriction
 public import FLT.Mazur.IdealPowerReesSections
