@@ -3391,6 +3391,7 @@ public import FLT.Mazur.IdealAdicRelativeDescendedUnderlying
 public import FLT.Mazur.IdealAdicRelativeFinitePresentation
 public import FLT.Mazur.IdealAdicRelativeGeometricScalars
 public import FLT.Mazur.IdealAdicRelativeGradedAlgebra
+public import FLT.Mazur.IdealAdicRelativeHomogeneousRetract
 public import FLT.Mazur.IdealAdicRelativeImageCoefficient
 public import FLT.Mazur.IdealAdicRelativeImageCoefficientCocycle
 public import FLT.Mazur.IdealAdicRelativeImageCoefficientTransition
