@@ -3249,6 +3249,7 @@ public import FLT.Mazur.EllipticStarZeroCoordinates
 public import FLT.Mazur.EllipticStarZeroResidue
 public import FLT.Mazur.EllipticStarZeroSlope
 public import FLT.Mazur.EllipticSubgroupAmbientChartPreimage
+public import FLT.Mazur.EllipticSubgroupAmbientClosedImmersion
 public import FLT.Mazur.EllipticSubgroupAmbientMorphism
 public import FLT.Mazur.EllipticSubgroupAmbientOverlap
 public import FLT.Mazur.EllipticSubgroupChartClosure
