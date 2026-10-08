@@ -2739,6 +2739,7 @@ public import FLT.Mazur.BaseAdicReesModelSourceScalars
 public import FLT.Mazur.BaseAdicReesModelTransitionSections
 public import FLT.Mazur.BaseAdicReesModuleChart
 public import FLT.Mazur.BaseAdicReesModuleLocalization
+public import FLT.Mazur.BaseAdicReesNativeBaseScalars
 public import FLT.Mazur.BaseAdicReesNativeSectionNaturality
 public import FLT.Mazur.BaseAdicReesOverlap
 public import FLT.Mazur.BaseAdicReesOverlapCompatibility
