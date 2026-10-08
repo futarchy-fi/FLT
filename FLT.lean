@@ -2738,6 +2738,7 @@ public import FLT.Mazur.BaseAdicReesSpace
 public import FLT.Mazur.BaseAdicReesSpectrum
 public import FLT.Mazur.BaseAdicReesSpectrumComparison
 public import FLT.Mazur.BaseAdicReesSpectrumOverlap
+public import FLT.Mazur.BaseAdicReesSpectrumOverlapAffineNormalization
 public import FLT.Mazur.BaseAdicReesSpectrumOverlapCompatibility
 public import FLT.Mazur.BaseAdicReesSpectrumOverlapSheafIso
 public import FLT.Mazur.BaseAdicReesSpectrumOverlapSheafMap
