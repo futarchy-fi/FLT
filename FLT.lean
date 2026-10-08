@@ -4410,6 +4410,7 @@ public import FLT.Mazur.WeierstrassReciprocalChartSpecialization
 public import FLT.Mazur.WeierstrassReciprocalGlobalDomains
 public import FLT.Mazur.WeierstrassReciprocalSecantTriple
 public import FLT.Mazur.WeierstrassReciprocalSecantTripleAlgebra
+public import FLT.Mazur.WeierstrassReciprocalSecantTripleGlobal
 public import FLT.Mazur.WeierstrassReciprocalSecantTripleSchemes
 public import FLT.Mazur.WeierstrassReciprocalTripleCentered
 public import FLT.Mazur.WeierstrassReciprocalTripleCoordinates
