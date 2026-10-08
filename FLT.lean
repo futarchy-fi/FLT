@@ -2722,6 +2722,7 @@ public import FLT.Mazur.AmpleGlobalGeneration
 public import FLT.Mazur.AmpleHighDegreeSectionCover
 public import FLT.Mazur.AmpleLineBundle
 public import FLT.Mazur.AmplePrincipalLocality
+public import FLT.Mazur.AmpleSectionCoverPullback
 public import FLT.Mazur.AnnihilatorCoherence
 public import FLT.Mazur.AnnihilatorStalk
 public import FLT.Mazur.AnnihilatorSubsheaf
