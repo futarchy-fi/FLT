@@ -28,18 +28,18 @@ universe u
 variable {R : Type u} [CommRing R] (W : WeierstrassCurve R)
 
 /-- The left input of the infinity domain is its original product projection. -/
-theorem infinityAdditionInclusion_left :
+theorem infinityAdditionInclusion_smoothInputLeft :
     infinityAdditionInclusion W ≫
         Spec.map (CommRingCat.ofHom (chartProductLeft W 1 1).toRingHom) =
-      Spec.map (CommRingCat.ofHom (infinityInputLeft W).toRingHom) := by
+      Spec.map (CommRingCat.ofHom (infinitySmoothInputLeft W).toRingHom) := by
   rw [infinityAdditionInclusion, ← Spec.map_comp]
   rfl
 
 /-- The right input of the infinity domain is its original product projection. -/
-theorem infinityAdditionInclusion_right :
+theorem infinityAdditionInclusion_smoothInputRight :
     infinityAdditionInclusion W ≫
         Spec.map (CommRingCat.ofHom (chartProductRight W 1 1).toRingHom) =
-      Spec.map (CommRingCat.ofHom (infinityInputRight W).toRingHom) := by
+      Spec.map (CommRingCat.ofHom (infinitySmoothInputRight W).toRingHom) := by
   rw [infinityAdditionInclusion, ← Spec.map_comp]
   rfl
 
@@ -56,7 +56,7 @@ theorem infinitySmoothInputOpen_preimage :
   rw [he, Scheme.Hom.preimage_inf, infinitySmoothInputOpen]
   simp only [Scheme.Hom.comp_preimage, integralCurveChart_preimage_smooth]
   rw [← Scheme.Hom.comp_preimage, ← Scheme.Hom.comp_preimage,
-    infinityAdditionInclusion_left, infinityAdditionInclusion_right]
+    infinityAdditionInclusion_smoothInputLeft, infinityAdditionInclusion_smoothInputRight]
 
 /-- The original input map of the smooth infinity domain. -/
 def smoothInfinityInput :

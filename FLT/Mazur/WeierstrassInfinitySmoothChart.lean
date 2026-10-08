@@ -28,18 +28,18 @@ universe u
 variable {R : Type u} [CommRing R] (W : WeierstrassCurve R)
 
 /-- The original left input of the original infinity addition chart. -/
-def infinityInputLeft : Coordinate W 1 →ₐ[R] InfinityAdditionOpen W :=
+def infinitySmoothInputLeft : Coordinate W 1 →ₐ[R] InfinityAdditionOpen W :=
   (infinityAdditionRestriction W).comp (chartProductLeft W 1 1)
 
 /-- The original right input of the original infinity addition chart. -/
-def infinityInputRight : Coordinate W 1 →ₐ[R] InfinityAdditionOpen W :=
+def infinitySmoothInputRight : Coordinate W 1 →ₐ[R] InfinityAdditionOpen W :=
   (infinityAdditionRestriction W).comp (chartProductRight W 1 1)
 
 /-- The actual smooth-input open in the original infinity output domain. -/
 def infinitySmoothInputOpen : (Spec (.of (InfinityAdditionOpen W))).Opens :=
-  (Spec.map (CommRingCat.ofHom (infinityInputLeft W).toRingHom) ≫
+  (Spec.map (CommRingCat.ofHom (infinitySmoothInputLeft W).toRingHom) ≫
       integralCurveChart W 1) ⁻¹ᵁ integralSmoothOpen W ⊓
-    (Spec.map (CommRingCat.ofHom (infinityInputRight W).toRingHom) ≫
+    (Spec.map (CommRingCat.ofHom (infinitySmoothInputRight W).toRingHom) ≫
       integralCurveChart W 1) ⁻¹ᵁ integralSmoothOpen W
 
 /-- The original infinity chart sends all actual smooth inputs into the relative smooth locus. -/
@@ -50,8 +50,8 @@ theorem infinitySmoothInputOpen_output (p : Spec (.of (InfinityAdditionOpen W)))
   apply chartAlgebra_smooth_at_of_residue W 1 (infinityAdditionChart W) p
   exact infinityFieldPoint_nonsingular W
     (IsScalarTower.toAlgHom R (InfinityAdditionOpen W) p.asIdeal.ResidueField)
-    (chartAlgebra_residue_nonsingular_at W 1 (infinityInputLeft W) p hp.1)
-    (chartAlgebra_residue_nonsingular_at W 1 (infinityInputRight W) p hp.2)
+    (chartAlgebra_residue_nonsingular_at W 1 (infinitySmoothInputLeft W) p hp.1)
+    (chartAlgebra_residue_nonsingular_at W 1 (infinitySmoothInputRight W) p hp.2)
 
 /-- The original infinity addition morphism restricted to its full smooth-input open. -/
 def infinitySmoothChart :
