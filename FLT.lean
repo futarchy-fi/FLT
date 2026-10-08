@@ -4473,6 +4473,7 @@ public import FLT.Mazur.WeierstrassInfinityTransportedSlopes
 public import FLT.Mazur.WeierstrassInfinityTripleCenteredPencils
 public import FLT.Mazur.WeierstrassInfinityTripleCommonInputs
 public import FLT.Mazur.WeierstrassInfinityTripleComparison
+public import FLT.Mazur.WeierstrassInfinityTripleCrossDenominators
 public import FLT.Mazur.WeierstrassInfinityTripleDividedCoefficients
 public import FLT.Mazur.WeierstrassInfinityTripleFullMember
 public import FLT.Mazur.WeierstrassInfinityTripleInputPairBezout
