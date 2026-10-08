@@ -3478,6 +3478,7 @@ public import FLT.Mazur.FiniteRelationDetection
 public import FLT.Mazur.FiniteRelationFiniteHomDescent
 public import FLT.Mazur.FiniteRelationHomDescent
 public import FLT.Mazur.FiniteRelationHomEquality
+public import FLT.Mazur.FiniteRelationIdealRealization
 public import FLT.Mazur.FiniteRelationIteratedDetection
 public import FLT.Mazur.FiniteRelationIteratedFiniteMaps
 public import FLT.Mazur.FiniteRelationIteratedHomDescent
