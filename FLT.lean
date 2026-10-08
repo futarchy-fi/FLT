@@ -3343,6 +3343,7 @@ public import FLT.Mazur.IdealAdicClosedScalar
 public import FLT.Mazur.IdealAdicCoefficientAffineSheaf
 public import FLT.Mazur.IdealAdicCohomology
 public import FLT.Mazur.IdealAdicCohomologyImage
+public import FLT.Mazur.IdealAdicCohomologyQuotient
 public import FLT.Mazur.IdealAdicCohomologyScalars
 public import FLT.Mazur.IdealAdicGradedAssociativity
 public import FLT.Mazur.IdealAdicGradedBaseAlgebra
