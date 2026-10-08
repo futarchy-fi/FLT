@@ -2727,8 +2727,12 @@ public import FLT.Mazur.ArtinianRelativeSectionCriterion
 public import FLT.Mazur.ArtinianSectionKernel
 public import FLT.Mazur.BaseAdicCohomologyFiltration
 public import FLT.Mazur.BaseAdicCohomologyImageStability
+public import FLT.Mazur.BaseAdicFormalFunctions
 public import FLT.Mazur.BaseAdicFormalInjectivity
+public import FLT.Mazur.BaseAdicFormalSurjectivity
 public import FLT.Mazur.BaseAdicHZeroImageStability
+public import FLT.Mazur.BaseAdicImageCompletion
+public import FLT.Mazur.BaseAdicPowerKernelFinite
 public import FLT.Mazur.BaseAdicQuotientSpectrum
 public import FLT.Mazur.BaseAdicReesAffineOverlap
 public import FLT.Mazur.BaseAdicReesBaseScalars
@@ -3464,9 +3468,12 @@ public import FLT.Mazur.IdealAdicCohomology
 public import FLT.Mazur.IdealAdicCohomologyImage
 public import FLT.Mazur.IdealAdicCohomologyQuotient
 public import FLT.Mazur.IdealAdicCohomologyScalars
+public import FLT.Mazur.IdealAdicCompatibleImages
+public import FLT.Mazur.IdealAdicConnecting
 public import FLT.Mazur.IdealAdicFormalComparison
 public import FLT.Mazur.IdealAdicFormalFiniteComparison
 public import FLT.Mazur.IdealAdicFormalInjectivity
+public import FLT.Mazur.IdealAdicFormalRange
 public import FLT.Mazur.IdealAdicGradedAssociativity
 public import FLT.Mazur.IdealAdicGradedBaseAlgebra
 public import FLT.Mazur.IdealAdicGradedBaseProduct
@@ -3486,6 +3493,7 @@ public import FLT.Mazur.IdealAdicGradedSectionAction
 public import FLT.Mazur.IdealAdicGradedSections
 public import FLT.Mazur.IdealAdicGradedSequence
 public import FLT.Mazur.IdealAdicGradedUnit
+public import FLT.Mazur.IdealAdicImageCompletion
 public import FLT.Mazur.IdealAdicLineQuotient
 public import FLT.Mazur.IdealAdicLineTower
 public import FLT.Mazur.IdealAdicQuotient
@@ -4096,6 +4104,10 @@ public import FLT.Mazur.PolygonUniversalScaling
 public import FLT.Mazur.PolynomialEndpointInterpolation
 public import FLT.Mazur.PolynomialRelationIntegerModel
 public import FLT.Mazur.PowerCohomologyHZeroSections
+public import FLT.Mazur.PowerCohomologyKernelGenerators
+public import FLT.Mazur.PowerCohomologyKernelReduction
+public import FLT.Mazur.PowerCohomologyKernelScalar
+public import FLT.Mazur.PowerCohomologyKernelVanishing
 public import FLT.Mazur.PowerCohomologyReesAction
 public import FLT.Mazur.PowerCohomologyReesComparison
 public import FLT.Mazur.PowerCohomologyReesQuotient
