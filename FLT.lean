@@ -4307,6 +4307,7 @@ public import FLT.Mazur.WeierstrassAffineAdditionTransport
 public import FLT.Mazur.WeierstrassAffineInputFactorization
 public import FLT.Mazur.WeierstrassAffineNegation
 public import FLT.Mazur.WeierstrassAffineNegationAddition
+public import FLT.Mazur.WeierstrassAffineOuterTripleGlobal
 public import FLT.Mazur.WeierstrassAffineOutputDomains
 public import FLT.Mazur.WeierstrassAffineOutputOpen
 public import FLT.Mazur.WeierstrassAffineOutputTripleDomain
