@@ -2714,6 +2714,7 @@ public import FLT.Mazur.AmpleCoherentVanishing
 public import FLT.Mazur.AmpleCommonDegree
 public import FLT.Mazur.AmpleFiberCartesianDescent
 public import FLT.Mazur.AmpleGlobalGeneration
+public import FLT.Mazur.AmpleHighDegreeSectionCover
 public import FLT.Mazur.AmpleLineBundle
 public import FLT.Mazur.AmplePrincipalLocality
 public import FLT.Mazur.AnnihilatorCoherence
