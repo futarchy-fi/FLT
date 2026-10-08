@@ -3284,6 +3284,7 @@ public import FLT.Mazur.EllipticSubgroupClosureSeparated
 public import FLT.Mazur.EllipticSubgroupClosureZero
 public import FLT.Mazur.EllipticSubgroupGenericConstantCoordinates
 public import FLT.Mazur.EllipticSubgroupGenericDensity
+public import FLT.Mazur.EllipticSubgroupGenericHopfComparison
 public import FLT.Mazur.EllipticSubgroupGenericSection
 public import FLT.Mazur.EllipticSubgroupGenericSectionInjective
 public import FLT.Mazur.EllipticSubgroupGlobalAlgebra
