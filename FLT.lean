@@ -3387,6 +3387,7 @@ public import FLT.Mazur.FinitePushforwardIdealImage
 public import FLT.Mazur.FinitePushforwardIdealVanishing
 public import FLT.Mazur.FiniteRelationColimit
 public import FLT.Mazur.FiniteRelationDetection
+public import FLT.Mazur.FiniteRelationSpectrum
 public import FLT.Mazur.FiniteRelationStages
 public import FLT.Mazur.FiniteRelativeFiberNeighborhood
 public import FLT.Mazur.FiniteSchemeInvertibleSections
