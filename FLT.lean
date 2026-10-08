@@ -2750,6 +2750,7 @@ public import FLT.Mazur.BaseAdicReesRestriction
 public import FLT.Mazur.BaseAdicReesSheafCocycle
 public import FLT.Mazur.BaseAdicReesSheafIso
 public import FLT.Mazur.BaseAdicReesSheafMap
+public import FLT.Mazur.BaseAdicReesSourceScalars
 public import FLT.Mazur.BaseAdicReesSpace
 public import FLT.Mazur.BaseAdicReesSpectrum
 public import FLT.Mazur.BaseAdicReesSpectrumAmbientImageIso
