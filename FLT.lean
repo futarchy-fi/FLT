@@ -4220,6 +4220,7 @@ public import FLT.Mazur.SchemeAffineCrossRefinementRestriction
 public import FLT.Mazur.SchemeAffineCrossSectionComparison
 public import FLT.Mazur.SchemeAffineCrossSectionEquation
 public import FLT.Mazur.SchemeAffineCrossSectionMaps
+public import FLT.Mazur.SchemeAffineCrossSectionPostcomposition
 public import FLT.Mazur.SchemeAffineCrossSectionReconstruction
 public import FLT.Mazur.SchemeAffineDescentChart
 public import FLT.Mazur.SchemeAffineExplicitCommonSectionMaps
