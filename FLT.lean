@@ -2935,6 +2935,7 @@ public import FLT.Mazur.ClosedSubsets
 public import FLT.Mazur.CocycleGlobalSectionCoordinate
 public import FLT.Mazur.CoefficientImmersionClosedDescent
 public import FLT.Mazur.CoefficientModelFiniteness
+public import FLT.Mazur.CoefficientModelHomDescent
 public import FLT.Mazur.CoefficientModelLimit
 public import FLT.Mazur.CoefficientModelRecovery
 public import FLT.Mazur.CoefficientOpenClosedDescent
