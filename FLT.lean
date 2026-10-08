@@ -4225,6 +4225,7 @@ public import FLT.Mazur.PrincipalIntegerRestriction
 public import FLT.Mazur.PrincipalLayeredCofinal
 public import FLT.Mazur.PrincipalLayeredDirected
 public import FLT.Mazur.PrincipalLayeredLimits
+public import FLT.Mazur.PrincipalLayeredPaths
 public import FLT.Mazur.PrincipalLayeredStages
 public import FLT.Mazur.PrincipalLocalizationGeneration
 public import FLT.Mazur.PrincipalLocalizationIntersection
