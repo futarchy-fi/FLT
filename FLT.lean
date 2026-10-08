@@ -4859,6 +4859,7 @@ public import FLT.Mazur.WeierstrassSplitNodalPointMultiplication
 public import FLT.Mazur.WeierstrassSplitNodalPoints
 public import FLT.Mazur.WeierstrassSplitNodalReciprocalMultiplication
 public import FLT.Mazur.WeierstrassSplitNodalReciprocalParameter
+public import FLT.Mazur.WeierstrassSplitNodalReciprocalScheme
 public import FLT.Mazur.WeierstrassSplitNodalRelativeSmooth
 public import FLT.Mazur.WeierstrassSplitNodalRelativeTangent
 public import FLT.Mazur.WeierstrassSplitNodalSlopeRelations
