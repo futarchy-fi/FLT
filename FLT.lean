@@ -3457,6 +3457,7 @@ public import FLT.Mazur.IdealAdicCompatibleImages
 public import FLT.Mazur.IdealAdicFormalComparison
 public import FLT.Mazur.IdealAdicFormalFiniteComparison
 public import FLT.Mazur.IdealAdicFormalInjectivity
+public import FLT.Mazur.IdealAdicFormalRange
 public import FLT.Mazur.IdealAdicGradedAssociativity
 public import FLT.Mazur.IdealAdicGradedBaseAlgebra
 public import FLT.Mazur.IdealAdicGradedBaseProduct
