@@ -4237,6 +4237,7 @@ public import FLT.Mazur.PrincipalFamilyLimits
 public import FLT.Mazur.PrincipalFamilyRelations
 public import FLT.Mazur.PrincipalFamilyStages
 public import FLT.Mazur.PrincipalFamilySurjective
+public import FLT.Mazur.PrincipalFanCompatibleKernelIsomorphisms
 public import FLT.Mazur.PrincipalFanDirected
 public import FLT.Mazur.PrincipalFanIsomorphismLimits
 public import FLT.Mazur.PrincipalFanIsomorphismOpens
