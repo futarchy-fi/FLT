@@ -3834,6 +3834,7 @@ public import FLT.Mazur.NodeTangentValuationModel
 public import FLT.Mazur.NoetherianDirectSumSheaf
 public import FLT.Mazur.NoetherianModuleSum
 public import FLT.Mazur.NoetherianModuleSumInclusions
+public import FLT.Mazur.NoetherianSumCechTerms
 public import FLT.Mazur.OneGonAffineCover
 public import FLT.Mazur.OneGonAffineNormalization
 public import FLT.Mazur.OneGonAffineNormalizationCoordinates
