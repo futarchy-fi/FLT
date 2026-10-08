@@ -3706,6 +3706,7 @@ public import FLT.Mazur.IncreasingCechComplex
 public import FLT.Mazur.IncreasingCechCycles
 public import FLT.Mazur.IncreasingCechFlatTerms
 public import FLT.Mazur.IncreasingCechGenericCohomology
+public import FLT.Mazur.IncreasingCechGenericKernel
 public import FLT.Mazur.IncreasingCechLocalization
 public import FLT.Mazur.IncreasingCechProperFinite
 public import FLT.Mazur.IncreasingCechScalars
