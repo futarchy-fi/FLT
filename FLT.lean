@@ -3757,6 +3757,7 @@ public import FLT.Mazur.IncreasingCechLocalizedCartesian
 public import FLT.Mazur.IncreasingCechPrincipalComparison
 public import FLT.Mazur.IncreasingCechProperFinite
 public import FLT.Mazur.IncreasingCechScalars
+public import FLT.Mazur.IncreasingCechSectionCoordinates
 public import FLT.Mazur.IncreasingCechTensorCoordinates
 public import FLT.Mazur.IncreasingCechZeroRestriction
 public import FLT.Mazur.IncreasingCechZeroSections
