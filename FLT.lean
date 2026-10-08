@@ -4600,6 +4600,7 @@ public import FLT.Mazur.WeierstrassIntegralCurveMorphisms
 public import FLT.Mazur.WeierstrassIntegralCurveProduct
 public import FLT.Mazur.WeierstrassIntegralCurveTwoChartCover
 public import FLT.Mazur.WeierstrassIntegralProductOverlap
+public import FLT.Mazur.WeierstrassIntegralTripleFlat
 public import FLT.Mazur.WeierstrassIntegralTripleProduct
 public import FLT.Mazur.WeierstrassIntegralZeroSection
 public import FLT.Mazur.WeierstrassLineCubicFactorization
