@@ -4127,6 +4127,7 @@ public import FLT.Mazur.SchemeAffineOpenGluingRecovery
 public import FLT.Mazur.SchemeAffineOpenOverlapCover
 public import FLT.Mazur.SchemeAffineOpenTestComparison
 public import FLT.Mazur.SchemeAffineOpenTestEvaluation
+public import FLT.Mazur.SchemeAffineOpenTestNaturality
 public import FLT.Mazur.SchemeAffineOpenTransitionCocycle
 public import FLT.Mazur.SchemeAffineOverlapChartCommonRefinement
 public import FLT.Mazur.SchemeAffineOverlapChartComparison
