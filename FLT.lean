@@ -4488,6 +4488,7 @@ public import FLT.Mazur.WeierstrassInfinityTripleCenteredPencils
 public import FLT.Mazur.WeierstrassInfinityTripleCommonInputs
 public import FLT.Mazur.WeierstrassInfinityTripleComparison
 public import FLT.Mazur.WeierstrassInfinityTripleCrossDenominators
+public import FLT.Mazur.WeierstrassInfinityTripleDefectCoefficients
 public import FLT.Mazur.WeierstrassInfinityTripleDividedCoefficients
 public import FLT.Mazur.WeierstrassInfinityTripleEndpointIdeals
 public import FLT.Mazur.WeierstrassInfinityTripleFullMember
