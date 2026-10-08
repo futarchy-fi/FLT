@@ -3361,6 +3361,7 @@ public import FLT.Mazur.IdealAdicRelativeChartScalar
 public import FLT.Mazur.IdealAdicRelativeChartTransition
 public import FLT.Mazur.IdealAdicRelativeClosedModule
 public import FLT.Mazur.IdealAdicRelativeCoefficientBaseChange
+public import FLT.Mazur.IdealAdicRelativeCoefficientDescent
 public import FLT.Mazur.IdealAdicRelativeCoefficientGeometricRefinement
 public import FLT.Mazur.IdealAdicRelativeCoefficientLocalization
 public import FLT.Mazur.IdealAdicRelativeCoefficientModuleMap
