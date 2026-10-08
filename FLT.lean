@@ -2739,6 +2739,7 @@ public import FLT.Mazur.BaseAdicReesSpectrum
 public import FLT.Mazur.BaseAdicReesSpectrumComparison
 public import FLT.Mazur.BaseAdicReesSpectrumImageOpenCover
 public import FLT.Mazur.BaseAdicReesSpectrumImageSheaf
+public import FLT.Mazur.BaseAdicReesSpectrumImageSheafTransition
 public import FLT.Mazur.BaseAdicReesSpectrumOverlap
 public import FLT.Mazur.BaseAdicReesSpectrumOverlapAffineNormalization
 public import FLT.Mazur.BaseAdicReesSpectrumOverlapCompatibility
