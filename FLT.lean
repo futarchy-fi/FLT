@@ -4538,6 +4538,7 @@ public import FLT.Mazur.WeierstrassCrossInputAdditionComparison
 public import FLT.Mazur.WeierstrassCubicAmbientCohomology
 public import FLT.Mazur.WeierstrassCubicEquationTransition
 public import FLT.Mazur.WeierstrassCubicPolarization
+public import FLT.Mazur.WeierstrassCubicSection
 public import FLT.Mazur.WeierstrassFieldChartPresentation
 public import FLT.Mazur.WeierstrassFiveAffineTriple
 public import FLT.Mazur.WeierstrassFiveRegularChartDescent
