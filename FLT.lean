@@ -4315,6 +4315,7 @@ public import FLT.Mazur.SchemeAffineOverlapObjectwiseComparison
 public import FLT.Mazur.SchemeAffineOverlapTestNormalization
 public import FLT.Mazur.SchemeAffineOverlapTestRecovery
 public import FLT.Mazur.SchemeAffineRecognitionCrossRefinement
+public import FLT.Mazur.SchemeAffineRecognitionNaturality
 public import FLT.Mazur.SchemeAffineRecognitionRefinement
 public import FLT.Mazur.SchemeAffineRecognitionTest
 public import FLT.Mazur.SchemeAffineReconstructionRecognition
