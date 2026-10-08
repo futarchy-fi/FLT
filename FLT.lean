@@ -4448,6 +4448,7 @@ public import FLT.Mazur.SchemeGeometricDescentData
 public import FLT.Mazur.SchemeIndependentCanonicalCocycle
 public import FLT.Mazur.SchemeIndependentCanonicalFamily
 public import FLT.Mazur.SchemeIndependentCanonicalOverlap
+public import FLT.Mazur.SchemeIndependentCanonicalSource
 public import FLT.Mazur.SchemeIndependentFamilyAssemblyFullyFaithful
 public import FLT.Mazur.SchemeIndependentFamilyLineCategory
 public import FLT.Mazur.SchemeIndependentFamilyLineData
