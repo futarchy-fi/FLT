@@ -4440,6 +4440,7 @@ public import FLT.Mazur.WeierstrassChartUnitLift
 public import FLT.Mazur.WeierstrassCrossInputAdditionComparison
 public import FLT.Mazur.WeierstrassCubicPolarization
 public import FLT.Mazur.WeierstrassFiveAffineTriple
+public import FLT.Mazur.WeierstrassFourPairAssociativity
 public import FLT.Mazur.WeierstrassGlobalAdditionCover
 public import FLT.Mazur.WeierstrassGlobalAdditionGluing
 public import FLT.Mazur.WeierstrassGlobalAdditionIdentity
