@@ -4816,6 +4816,7 @@ public import FLT.Mazur.WeierstrassReciprocalCubicTriple
 public import FLT.Mazur.WeierstrassReciprocalGlobalDomains
 public import FLT.Mazur.WeierstrassReciprocalOrdinaryComparison
 public import FLT.Mazur.WeierstrassReciprocalOutputRegular
+public import FLT.Mazur.WeierstrassReciprocalPointComparison
 public import FLT.Mazur.WeierstrassReciprocalSecantTriple
 public import FLT.Mazur.WeierstrassReciprocalSecantTripleAlgebra
 public import FLT.Mazur.WeierstrassReciprocalSecantTripleDomain
