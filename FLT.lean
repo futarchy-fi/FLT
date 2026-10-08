@@ -3722,6 +3722,7 @@ public import FLT.Mazur.IncreasingCechGenericCohomology
 public import FLT.Mazur.IncreasingCechGenericKernel
 public import FLT.Mazur.IncreasingCechGenericSections
 public import FLT.Mazur.IncreasingCechLocalization
+public import FLT.Mazur.IncreasingCechLocalizedCartesian
 public import FLT.Mazur.IncreasingCechProperFinite
 public import FLT.Mazur.IncreasingCechScalars
 public import FLT.Mazur.IncreasingCechTensorCoordinates
