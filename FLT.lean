@@ -4488,6 +4488,7 @@ public import FLT.Mazur.WeierstrassInfinityTripleParamCubics
 public import FLT.Mazur.WeierstrassInfinityTripleParamPolynomials
 public import FLT.Mazur.WeierstrassInfinityTripleParamRegular
 public import FLT.Mazur.WeierstrassInfinityTriplePencil
+public import FLT.Mazur.WeierstrassInfinityTriplePencilEndpoints
 public import FLT.Mazur.WeierstrassInfinityTriplePolynomials
 public import FLT.Mazur.WeierstrassInfinityTripleResidualCubic
 public import FLT.Mazur.WeierstrassInfinityTripleResidualDegree
