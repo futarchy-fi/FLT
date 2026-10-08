@@ -4409,6 +4409,7 @@ public import FLT.Mazur.SchemeFppfFamilyPairTestRecovery
 public import FLT.Mazur.SchemeFppfFamilyTripleChart
 public import FLT.Mazur.SchemeFppfFamilyTripleCoordinates
 public import FLT.Mazur.SchemeFppfFamilyTripleCover
+public import FLT.Mazur.SchemeFppfFamilyTripleRecovery
 public import FLT.Mazur.SchemeFppfFamilyTripleRecovery12
 public import FLT.Mazur.SchemeFppfFamilyTripleRecovery23
 public import FLT.Mazur.SchemeFppfLineBaseChange
