@@ -4911,6 +4911,7 @@ public import FLT.Mazur.WeierstrassSmoothAdditionIdentity
 public import FLT.Mazur.WeierstrassSmoothAdditionInverse
 public import FLT.Mazur.WeierstrassSmoothAdditionOriginalFormulas
 public import FLT.Mazur.WeierstrassSmoothAffineAddition
+public import FLT.Mazur.WeierstrassSmoothAffineCommutativity
 public import FLT.Mazur.WeierstrassSmoothAffineCover
 public import FLT.Mazur.WeierstrassSmoothAffineDomain
 public import FLT.Mazur.WeierstrassSmoothAffineIdentity
