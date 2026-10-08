@@ -4280,6 +4280,7 @@ public import FLT.Mazur.SchemeDescentCrossCoverCompatibility
 public import FLT.Mazur.SchemeDescentPairTransport
 public import FLT.Mazur.SchemeDescentTransportSquares
 public import FLT.Mazur.SchemeFppfLineGluing
+public import FLT.Mazur.SchemeFppfSourceLineGlobalRecovery
 public import FLT.Mazur.SchemeFppfSourceLineGluing
 public import FLT.Mazur.SchemeFppfSourceLineMap
 public import FLT.Mazur.SchemeGeometricDescentCocycleTest
