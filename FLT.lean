@@ -4492,6 +4492,7 @@ public import FLT.Mazur.SmoothDimensionBound
 public import FLT.Mazur.SmoothOpenSectionCartier
 public import FLT.Mazur.SmoothSectionCartier
 public import FLT.Mazur.StructureCohomologyFinite
+public import FLT.Mazur.StructureCohomologyOverIso
 public import FLT.Mazur.StructureDirectImageHZero
 public import FLT.Mazur.StructureDirectImageSections
 public import FLT.Mazur.StructureImageOpenChart
@@ -4578,9 +4579,18 @@ public import FLT.Mazur.WeierstrassCoefficientChartPreimage
 public import FLT.Mazur.WeierstrassConstantSections
 public import FLT.Mazur.WeierstrassCrossInputAdditionComparison
 public import FLT.Mazur.WeierstrassCubicAmbientCohomology
+public import FLT.Mazur.WeierstrassCubicBaseScalars
+public import FLT.Mazur.WeierstrassCubicChartRegular
 public import FLT.Mazur.WeierstrassCubicEquationTransition
+public import FLT.Mazur.WeierstrassCubicExactSequence
+public import FLT.Mazur.WeierstrassCubicGenus
+public import FLT.Mazur.WeierstrassCubicLocalKernel
 public import FLT.Mazur.WeierstrassCubicMultiplication
+public import FLT.Mazur.WeierstrassCubicMultiplicationMono
 public import FLT.Mazur.WeierstrassCubicPolarization
+public import FLT.Mazur.WeierstrassCubicPushforwardH1
+public import FLT.Mazur.WeierstrassCubicQuotient
+public import FLT.Mazur.WeierstrassCubicQuotientChart
 public import FLT.Mazur.WeierstrassCubicSection
 public import FLT.Mazur.WeierstrassFieldChartPresentation
 public import FLT.Mazur.WeierstrassFiveAffineTriple
@@ -4589,6 +4599,8 @@ public import FLT.Mazur.WeierstrassFiveRegularSectionDescent
 public import FLT.Mazur.WeierstrassFiveRegularTriple
 public import FLT.Mazur.WeierstrassFlatSectionRegular
 public import FLT.Mazur.WeierstrassFourPairAssociativity
+public import FLT.Mazur.WeierstrassGeneralizedEllipticModel
+public import FLT.Mazur.WeierstrassGenusOneFamily
 public import FLT.Mazur.WeierstrassGeometricConnected
 public import FLT.Mazur.WeierstrassGeometricIntegral
 public import FLT.Mazur.WeierstrassGlobalAdditionCover
