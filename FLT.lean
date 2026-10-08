@@ -2937,6 +2937,7 @@ public import FLT.Mazur.CoefficientImmersionClosedDescent
 public import FLT.Mazur.CoefficientModelFiniteness
 public import FLT.Mazur.CoefficientModelHomDescent
 public import FLT.Mazur.CoefficientModelLimit
+public import FLT.Mazur.CoefficientModelMorphism
 public import FLT.Mazur.CoefficientModelRecovery
 public import FLT.Mazur.CoefficientOpenClosedDescent
 public import FLT.Mazur.CoefficientProperDescent
