@@ -4422,6 +4422,7 @@ public import FLT.Mazur.WeierstrassInfinityAffineSlopeIdentity
 public import FLT.Mazur.WeierstrassInfinityChartCompatibility
 public import FLT.Mazur.WeierstrassInfinityChartSpecialization
 public import FLT.Mazur.WeierstrassInfinityCubicDifference
+public import FLT.Mazur.WeierstrassInfinityCubicResidualCoefficients
 public import FLT.Mazur.WeierstrassInfinityDividedLine
 public import FLT.Mazur.WeierstrassInfinityFactorCancellation
 public import FLT.Mazur.WeierstrassInfinityGlobalDomain
