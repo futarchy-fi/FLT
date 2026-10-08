@@ -4485,6 +4485,7 @@ public import FLT.Mazur.WeierstrassInfinityTriplePencil
 public import FLT.Mazur.WeierstrassInfinityTriplePolynomials
 public import FLT.Mazur.WeierstrassInfinityTripleResidualCubic
 public import FLT.Mazur.WeierstrassInfinityTripleResidualReciprocity
+public import FLT.Mazur.WeierstrassInfinityTripleResidualSystem
 public import FLT.Mazur.WeierstrassInfinityTripleScalarCross
 public import FLT.Mazur.WeierstrassInfinityTripleScalarLaws
 public import FLT.Mazur.WeierstrassInfinityTripleScalarMaps
