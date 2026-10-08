@@ -4567,6 +4567,7 @@ public import FLT.Mazur.SmoothOpenSectionCartier
 public import FLT.Mazur.SmoothSectionCartier
 public import FLT.Mazur.StalkBaseClosedFiber
 public import FLT.Mazur.StalkBaseLocalization
+public import FLT.Mazur.StalkBaseNumeratorOpen
 public import FLT.Mazur.StalkBaseSectionLifting
 public import FLT.Mazur.StalkBaseSectionNumerator
 public import FLT.Mazur.StructureCohomologyFinite
