@@ -3833,6 +3833,7 @@ public import FLT.Mazur.IteratedQuotientAlgebra
 public import FLT.Mazur.IteratedQuotientArrow
 public import FLT.Mazur.IteratedQuotientDiagramStages
 public import FLT.Mazur.IteratedQuotientProjection
+public import FLT.Mazur.IteratedQuotientRecovery
 public import FLT.Mazur.IteratedQuotientRepresentatives
 public import FLT.Mazur.LaurentRingSurjectivity
 public import FLT.Mazur.LaurentTensor
