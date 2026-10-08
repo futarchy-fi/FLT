@@ -5033,6 +5033,7 @@ public import FLT.Mazur.WeierstrassSplitNodalReciprocalScheme
 public import FLT.Mazur.WeierstrassSplitNodalRelativeSmooth
 public import FLT.Mazur.WeierstrassSplitNodalRelativeTangent
 public import FLT.Mazur.WeierstrassSplitNodalSlopeRelations
+public import FLT.Mazur.WeierstrassSplitNodalSmoothAdditionComparison
 public import FLT.Mazur.WeierstrassSplitNodalSmoothChartCoordinates
 public import FLT.Mazur.WeierstrassSplitNodalSmoothFormulaComparison
 public import FLT.Mazur.WeierstrassSplitNodalSmoothGroup
