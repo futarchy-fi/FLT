@@ -2503,6 +2503,7 @@ public import FLT.Mazur.AffineBaseSectionAlgebra
 public import FLT.Mazur.AffineBaseSectionFunctor
 public import FLT.Mazur.AffineBasisDirectSum
 public import FLT.Mazur.AffineBasisFiniteCover
+public import FLT.Mazur.AffineBasisModuleIso
 public import FLT.Mazur.AffineBasisModuleMorphism
 public import FLT.Mazur.AffineBasisSheafExtension
 public import FLT.Mazur.AffineBasisSumCoproduct
