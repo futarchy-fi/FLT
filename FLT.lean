@@ -2721,10 +2721,14 @@ public import FLT.Mazur.BaseAdicReesGeometricRefinement
 public import FLT.Mazur.BaseAdicReesLocalization
 public import FLT.Mazur.BaseAdicReesModelCohomologyFinite
 public import FLT.Mazur.BaseAdicReesModelDescent
+public import FLT.Mazur.BaseAdicReesModelOverlapRecovery
+public import FLT.Mazur.BaseAdicReesModelProjectionCompatibility
 public import FLT.Mazur.BaseAdicReesModelPushforward
 public import FLT.Mazur.BaseAdicReesModelSectionCoordinates
+public import FLT.Mazur.BaseAdicReesModelTransitionSections
 public import FLT.Mazur.BaseAdicReesModuleChart
 public import FLT.Mazur.BaseAdicReesModuleLocalization
+public import FLT.Mazur.BaseAdicReesNativeSectionNaturality
 public import FLT.Mazur.BaseAdicReesOverlap
 public import FLT.Mazur.BaseAdicReesOverlapCompatibility
 public import FLT.Mazur.BaseAdicReesOverlapCover
@@ -3684,6 +3688,8 @@ public import FLT.Mazur.ModuleSectionRatios
 public import FLT.Mazur.ModuleSectionRegularity
 public import FLT.Mazur.ModuleSectionUnit
 public import FLT.Mazur.ModuleSheafAffineTestCompatibility
+public import FLT.Mazur.ModuleSheafChartOverlapRecovery
+public import FLT.Mazur.ModuleSheafChartRecoveryRefinement
 public import FLT.Mazur.ModuleSheafCoordinateNaturality
 public import FLT.Mazur.ModuleSheafDual
 public import FLT.Mazur.ModuleSheafDualInternalHom
@@ -3697,6 +3703,7 @@ public import FLT.Mazur.ModuleSheafGluingMapRestriction
 public import FLT.Mazur.ModuleSheafGluingTransport
 public import FLT.Mazur.ModuleSheafGluingTransportMap
 public import FLT.Mazur.ModuleSheafGluingTransportProjection
+public import FLT.Mazur.ModuleSheafImageIsoProjectionRecovery
 public import FLT.Mazur.ModuleSheafImageOpenSections
 public import FLT.Mazur.ModuleSheafInternalHom
 public import FLT.Mazur.ModuleSheafLocalEquation
