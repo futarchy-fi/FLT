@@ -4344,6 +4344,7 @@ public import FLT.Mazur.WeierstrassNegationCover
 public import FLT.Mazur.WeierstrassNegationIntersection
 public import FLT.Mazur.WeierstrassNegationOverlap
 public import FLT.Mazur.WeierstrassNegationPairSections
+public import FLT.Mazur.WeierstrassOrdinaryChartSpecialization
 public import FLT.Mazur.WeierstrassOrdinaryNegationEmpty
 public import FLT.Mazur.WeierstrassOrdinaryTripleCoordinates
 public import FLT.Mazur.WeierstrassPolynomialAdditionSwap
