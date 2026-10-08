@@ -4415,6 +4415,7 @@ public import FLT.Mazur.WeierstrassReciprocalSecantTripleGlobal
 public import FLT.Mazur.WeierstrassReciprocalSecantTripleSchemes
 public import FLT.Mazur.WeierstrassReciprocalTripleCentered
 public import FLT.Mazur.WeierstrassReciprocalTripleCoordinates
+public import FLT.Mazur.WeierstrassReciprocalTripleCubicSlopes
 public import FLT.Mazur.WeierstrassReciprocalTripleNumerators
 public import FLT.Mazur.WeierstrassReciprocalTripleSlopes
 public import FLT.Mazur.WeierstrassSameOutputIntersections
