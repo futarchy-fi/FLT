@@ -229,6 +229,7 @@ public import FLT.EllipticCurve.CubicInvariantTrace
 public import FLT.EllipticCurve.CubicInvariantTransport
 public import FLT.EllipticCurve.CubicLegendre
 public import FLT.EllipticCurve.CubicLegendreAction
+public import FLT.EllipticCurve.CubicLegendreCyclicBraid
 public import FLT.EllipticCurve.CubicLegendreCyclicDescent
 public import FLT.EllipticCurve.CubicLegendreCyclicInvolutions
 public import FLT.EllipticCurve.CubicLegendreCyclicIso

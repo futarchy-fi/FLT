@@ -2210,6 +2210,34 @@ remain open; the integral modular curve and subsequent Mazur arithmetic are
 still unconstructed. Mazur_statement and the existing lifting and compatible
 family sorry proofs remain dependencies of the final FLT theorem.
 
+### Local mixed Legendre relation — 2026-10-08
+
+Implemented `CubicLegendreCyclicBraid.lean`. Given unit roots u of -1,
+v of 1-lambda and w of lambda, the compatible root u*v/w squares to
+1 - lambda^(-1). The actual swap-reciprocal-swap and
+reciprocal-swap-reciprocal coordinate products agree exactly. Their
+target Legendre equations are identified, including the two parameter
+expressions for the common endpoint.
+
+The resulting actual cyclic transports agree by
+`legendreBraid_cyclic`. The additional triple-composition theorem
+identifies composition of three cyclic coordinate transports with
+transport by the product of their coordinate changes.
+
+The module and namespace-wide trust audit passed all 4549 jobs. The full
+lake build FLT passed all 10546 jobs, including FermatsLastTheorem. The
+module linter, generated-import check and whitespace check passed. Direct
+axiom checks for the cyclic relation and triple composition use only
+propext, Classical.choice and Quot.sound; the coordinate and parameter
+identities use only propext and Quot.sound.
+
+This is a local relation with explicit compatible roots. A common
+coefficient cover carrying all three roots must still be constructed with
+the properties needed by cyclic descent. The mixed relation must then be
+compared with the descended maps and descended to the universal base.
+The full family action and modular quotient remain unconstructed; the
+three arithmetic FLT gaps are unchanged.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
