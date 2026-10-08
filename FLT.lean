@@ -4511,6 +4511,7 @@ public import FLT.Mazur.WeierstrassInfinityOutputTransition
 public import FLT.Mazur.WeierstrassInfinityOverlapScheme
 public import FLT.Mazur.WeierstrassInfinityPairSection
 public import FLT.Mazur.WeierstrassInfinityPencilPolynomial
+public import FLT.Mazur.WeierstrassInfinityProductFlat
 public import FLT.Mazur.WeierstrassInfinityProjectiveOverlap
 public import FLT.Mazur.WeierstrassInfinityQuadraticBaseChange
 public import FLT.Mazur.WeierstrassInfinityQuadraticLift
