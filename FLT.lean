@@ -2854,6 +2854,7 @@ public import FLT.Mazur.CoherentSubsheafACC
 public import FLT.Mazur.CoherentSupport
 public import FLT.Mazur.CoherentSupportedDecomposition
 public import FLT.Mazur.CohomologyImageArtinRees
+public import FLT.Mazur.CohomologyImageReesModule
 public import FLT.Mazur.ComaximalIdealSequence
 public import FLT.Mazur.CommonCoefficientStage
 public import FLT.Mazur.CommonIdealDirectSum
