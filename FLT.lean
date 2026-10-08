@@ -4418,6 +4418,7 @@ public import FLT.Mazur.WeierstrassReciprocalCenteredCubics
 public import FLT.Mazur.WeierstrassReciprocalCentering
 public import FLT.Mazur.WeierstrassReciprocalChartSpecialization
 public import FLT.Mazur.WeierstrassReciprocalCubicSpecialization
+public import FLT.Mazur.WeierstrassReciprocalCubicTriple
 public import FLT.Mazur.WeierstrassReciprocalGlobalDomains
 public import FLT.Mazur.WeierstrassReciprocalSecantTriple
 public import FLT.Mazur.WeierstrassReciprocalSecantTripleAlgebra
