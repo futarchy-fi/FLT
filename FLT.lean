@@ -3408,6 +3408,7 @@ public import FLT.Mazur.FinitePointAlgebraInterpolation
 public import FLT.Mazur.FinitePointKernelCover
 public import FLT.Mazur.FinitePresentationIntegerModel
 public import FLT.Mazur.FinitePrincipalChartIntegerDescent
+public import FLT.Mazur.FinitePrincipalIdealPatching
 public import FLT.Mazur.FinitePrincipalTargetRefinement
 public import FLT.Mazur.FiniteProductDirectSum
 public import FLT.Mazur.FiniteProjectiveSectionAmple
@@ -4271,6 +4272,7 @@ public import FLT.Mazur.PrincipalTriangleEquations
 public import FLT.Mazur.PrincipalTriangleSchemes
 public import FLT.Mazur.PrincipalTriangleStages
 public import FLT.Mazur.PrincipalUnaryIncidenceRefinement
+public import FLT.Mazur.PrincipalUnaryLayeredIsomorphisms
 public import FLT.Mazur.ProjectiveActionFieldExtension
 public import FLT.Mazur.ProjectiveActionPullback
 public import FLT.Mazur.ProjectiveAffineChartEmbedding
