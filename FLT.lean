@@ -3457,6 +3457,7 @@ public import FLT.Mazur.FiniteLocalizedPolynomialCoefficients
 public import FLT.Mazur.FiniteModuleAdicComplete
 public import FLT.Mazur.FiniteModuleAdicCompleteLarge
 public import FLT.Mazur.FiniteNeighborhoodAffineOpens
+public import FLT.Mazur.FiniteOccurrenceIteratedCoefficients
 public import FLT.Mazur.FiniteOccurrenceLocalizedCoefficients
 public import FLT.Mazur.FiniteOpenImmersionIntegerDescent
 public import FLT.Mazur.FinitePointAlgebraInterpolation
@@ -3827,8 +3828,8 @@ public import FLT.Mazur.IntersectionModelClosedProducts
 public import FLT.Mazur.IntersectionUnitCocycle
 public import FLT.Mazur.IntersectionUnitCocycleRecovery
 public import FLT.Mazur.IrreducibleComponentAmple
-public import FLT.Mazur.IteratedOldArrowRepresentatives
 public public import FLT.Mazur.IteratedPolynomialDataRelations
+public import FLT.Mazur.IteratedOldArrowRepresentatives
 public import FLT.Mazur.IteratedOldDenominatorRecovery
 public import FLT.Mazur.IteratedOldDiagramRepresentatives
 public import FLT.Mazur.IteratedPolynomialDataStages
