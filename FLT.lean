@@ -4820,6 +4820,7 @@ public import FLT.Mazur.WeierstrassSmoothZeroSection
 public import FLT.Mazur.WeierstrassSpecSectionMorphism
 public import FLT.Mazur.WeierstrassSpecSections
 public import FLT.Mazur.WeierstrassSplitNodalChart
+public import FLT.Mazur.WeierstrassSplitNodalLaurent
 public import FLT.Mazur.WeierstrassSwappedAdditionIntersections
 public import FLT.Mazur.WeierstrassSwappedInfinityOutput
 public import FLT.Mazur.WeierstrassSwappedInfinitySchemes
