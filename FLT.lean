@@ -3461,6 +3461,7 @@ public import FLT.Mazur.FiniteTypePrincipalApproximation
 public import FLT.Mazur.FiniteTypePrincipalComposition
 public import FLT.Mazur.FiniteTypePrincipalDiamonds
 public import FLT.Mazur.FiniteTypePrincipalFiniteMaps
+public import FLT.Mazur.FiniteTypePrincipalIsomorphismDescent
 public import FLT.Mazur.FiniteTypePrincipalMaps
 public import FLT.Mazur.FiniteTypePrincipalPresentation
 public import FLT.Mazur.FiniteTypePrincipalSurjectiveLifts
