@@ -4045,6 +4045,7 @@ public import FLT.Mazur.OverPoints
 public import FLT.Mazur.OverPullbackCoherence
 public import FLT.Mazur.OverPullbackCoproduct
 public import FLT.Mazur.OverPullbackLocalPushout
+public import FLT.Mazur.PadicValuationArithmetic
 public import FLT.Mazur.PadicValuationRing
 public import FLT.Mazur.PinchingAffineDescent
 public import FLT.Mazur.PinchingChartBaseChange
