@@ -4075,6 +4075,7 @@ public import FLT.Mazur.NoetherianSumCechCohomology
 public import FLT.Mazur.NoetherianSumCechComplex
 public import FLT.Mazur.NoetherianSumCechInclusion
 public import FLT.Mazur.NoetherianSumCechTerms
+public import FLT.Mazur.OccurrenceDiagramCoefficients
 public import FLT.Mazur.OneGonAffineCover
 public import FLT.Mazur.OneGonAffineNormalization
 public import FLT.Mazur.OneGonAffineNormalizationCoordinates
