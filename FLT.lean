@@ -3298,6 +3298,7 @@ public import FLT.Mazur.EllipticSplitDepthModel
 public import FLT.Mazur.EllipticSplitNodalGroup
 public import FLT.Mazur.EllipticSplitNodeAddition
 public import FLT.Mazur.EllipticSplitNodeComponents
+public import FLT.Mazur.EllipticSplitNodeDilatation
 public import FLT.Mazur.EllipticSplitNodeGroup
 public import FLT.Mazur.EllipticSplitNodeParametrization
 public import FLT.Mazur.EllipticSplitOrderOne
