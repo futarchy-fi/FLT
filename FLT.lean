@@ -4209,6 +4209,7 @@ public import FLT.Mazur.PrincipalCoordinateStages
 public import FLT.Mazur.PrincipalFamilyCofinal
 public import FLT.Mazur.PrincipalFamilyDirected
 public import FLT.Mazur.PrincipalFamilyLimits
+public import FLT.Mazur.PrincipalFamilyRelations
 public import FLT.Mazur.PrincipalFamilyStages
 public import FLT.Mazur.PrincipalGeneratorExtension
 public import FLT.Mazur.PrincipalIntegerModelIsomorphism
