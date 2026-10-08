@@ -3594,6 +3594,7 @@ public import FLT.Mazur.ModuleSheafEvaluatedGluing
 public import FLT.Mazur.ModuleSheafGluing
 public import FLT.Mazur.ModuleSheafImageOpenSections
 public import FLT.Mazur.ModuleSheafInternalHom
+public import FLT.Mazur.ModuleSheafLocalEquation
 public import FLT.Mazur.ModuleSheafLocalEvaluation
 public import FLT.Mazur.ModuleSheafLocalHomComparison
 public import FLT.Mazur.ModuleSheafLocalHomNormalization
