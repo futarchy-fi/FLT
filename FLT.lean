@@ -2491,6 +2491,8 @@ public import FLT.Mazur.AbsoluteDirectImageCohomology
 public import FLT.Mazur.AcyclicDirectImageResolution
 public import FLT.Mazur.AcyclicPushforwardCohomology
 public import FLT.Mazur.AcyclicResolutionComparison
+public import FLT.Mazur.AdditiveSheafModuleTransport
+public import FLT.Mazur.AdditiveSheafMultiplication
 public import FLT.Mazur.AdicCompletionAlgEquiv
 public import FLT.Mazur.AdicCompletionPrincipal
 public import FLT.Mazur.AdicCompletionQuotientEquiv
@@ -3380,6 +3382,9 @@ public import FLT.Mazur.IdealAdicRelativeCoefficientSheafIso
 public import FLT.Mazur.IdealAdicRelativeCoefficientSheafMap
 public import FLT.Mazur.IdealAdicRelativeCoefficientTransportRefinement
 public import FLT.Mazur.IdealAdicRelativeCommonRefinement
+public import FLT.Mazur.IdealAdicRelativeDescendedClosedAlgebra
+public import FLT.Mazur.IdealAdicRelativeDescendedMultiplication
+public import FLT.Mazur.IdealAdicRelativeDescendedScalars
 public import FLT.Mazur.IdealAdicRelativeDescendedUnderlying
 public import FLT.Mazur.IdealAdicRelativeFinitePresentation
 public import FLT.Mazur.IdealAdicRelativeGradedAlgebra
@@ -3413,6 +3418,7 @@ public import FLT.Mazur.IdealAdicRelativeProjectionOverlap
 public import FLT.Mazur.IdealAdicRelativeProjectionSections
 public import FLT.Mazur.IdealAdicRelativePushforwardOpens
 public import FLT.Mazur.IdealAdicRelativePushforwardSections
+public import FLT.Mazur.IdealAdicRelativePushforwardSerreBound
 public import FLT.Mazur.IdealAdicRelativeQuasiCoherent
 public import FLT.Mazur.IdealAdicRelativeRecoveryIdentity
 public import FLT.Mazur.IdealAdicRelativeRecoveryRefinement
@@ -3422,6 +3428,7 @@ public import FLT.Mazur.IdealAdicRelativeRestriction
 public import FLT.Mazur.IdealAdicRelativeScheme
 public import FLT.Mazur.IdealAdicRelativeSchemeCharts
 public import FLT.Mazur.IdealAdicRelativeSchemeCover
+public import FLT.Mazur.IdealAdicRelativeSerreBound
 public import FLT.Mazur.IdealAdicRelativeSheaf
 public import FLT.Mazur.IdealAdicRelativeSheafCharts
 public import FLT.Mazur.IdealAdicRelativeSheafFinite
