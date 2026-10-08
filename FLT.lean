@@ -4699,6 +4699,7 @@ public import FLT.Mazur.WeierstrassTripleChartOverlap
 public import FLT.Mazur.WeierstrassTripleFullAdditionCover
 public import FLT.Mazur.WeierstrassTripleFullInputs
 public import FLT.Mazur.WeierstrassTripleInnerAdditionCover
+public import FLT.Mazur.WeierstrassTripleInnerOutputRegular
 public import FLT.Mazur.WeierstrassTripleSlopeAlgebra
 public import FLT.Mazur.WeierstrassTripleTangentSlopeAlgebra
 public import FLT.Mazur.WeierstrassVerticalAdditionCharts
