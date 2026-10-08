@@ -2718,6 +2718,7 @@ public import FLT.Mazur.BaseAdicReesLocalization
 public import FLT.Mazur.BaseAdicReesModuleChart
 public import FLT.Mazur.BaseAdicReesModuleLocalization
 public import FLT.Mazur.BaseAdicReesOverlap
+public import FLT.Mazur.BaseAdicReesPrincipalModel
 public import FLT.Mazur.BaseAdicReesRestriction
 public import FLT.Mazur.BaseAdicReesSpace
 public import FLT.Mazur.BaseAdicReesTensorModule
