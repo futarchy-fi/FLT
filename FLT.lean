@@ -4406,6 +4406,7 @@ public import FLT.Mazur.SchemeFppfFamilyMemberOverlap
 public import FLT.Mazur.SchemeFppfFamilyOverlapAssembly
 public import FLT.Mazur.SchemeFppfFamilyOverlapCover
 public import FLT.Mazur.SchemeFppfFamilyOverlapMapAssembly
+public import FLT.Mazur.SchemeFppfFamilyOverlapMapDetection
 public import FLT.Mazur.SchemeFppfFamilyPairMapRecovery
 public import FLT.Mazur.SchemeFppfFamilyPairNormalization
 public import FLT.Mazur.SchemeFppfFamilyPairTestRecovery
