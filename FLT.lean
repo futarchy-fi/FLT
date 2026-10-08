@@ -3452,6 +3452,7 @@ public import FLT.Mazur.FiniteLineCocycleModel
 public import FLT.Mazur.FiniteLineSheafDescent
 public import FLT.Mazur.FiniteLineSheafModel
 public import FLT.Mazur.FiniteLocalizedIntegerComparisons
+public import FLT.Mazur.FiniteLocalizedPolynomialCoefficients
 public import FLT.Mazur.FiniteModuleAdicComplete
 public import FLT.Mazur.FiniteModuleAdicCompleteLarge
 public import FLT.Mazur.FiniteNeighborhoodAffineOpens
