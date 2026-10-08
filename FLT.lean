@@ -2818,6 +2818,7 @@ public import FLT.Mazur.BaseAdicReesSpectrumTripleSheafCocycle
 public import FLT.Mazur.BaseAdicReesSpectrumTripleSheafMaps
 public import FLT.Mazur.BaseAdicReesSpectrumTripleSheafNormalization
 public import FLT.Mazur.BaseAdicReesTensorModule
+public import FLT.Mazur.BaseAdicSectionReconstruction
 public import FLT.Mazur.BaseAdicThickening
 public import FLT.Mazur.BaseChangedPresentationModel
 public import FLT.Mazur.BinaryOpenDescent
