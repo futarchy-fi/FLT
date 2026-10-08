@@ -4202,6 +4202,7 @@ public import FLT.Mazur.SchemeAffineCrossSectionEquation
 public import FLT.Mazur.SchemeAffineCrossSectionMaps
 public import FLT.Mazur.SchemeAffineCrossSectionReconstruction
 public import FLT.Mazur.SchemeAffineDescentChart
+public import FLT.Mazur.SchemeAffineExplicitCommonSectionMaps
 public import FLT.Mazur.SchemeAffineFlatRefinement
 public import FLT.Mazur.SchemeAffineFlatRefinementThrough
 public import FLT.Mazur.SchemeAffineFppfChart
