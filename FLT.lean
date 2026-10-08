@@ -4090,6 +4090,7 @@ public import FLT.Mazur.SchemeAffineCrossChartFamily
 public import FLT.Mazur.SchemeAffineCrossCoverCocycle
 public import FLT.Mazur.SchemeAffineCrossCoverCoherence
 public import FLT.Mazur.SchemeAffineCrossCoverDescent
+public import FLT.Mazur.SchemeAffineCrossCoverNaturality
 public import FLT.Mazur.SchemeAffineCrossCoverRefinement
 public import FLT.Mazur.SchemeAffineCrossCoverRefinementRecognition
 public import FLT.Mazur.SchemeAffineCrossRefinement
