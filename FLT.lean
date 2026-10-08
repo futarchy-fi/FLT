@@ -2720,6 +2720,7 @@ public import FLT.Mazur.BaseAdicReesCover
 public import FLT.Mazur.BaseAdicReesGeometricRefinement
 public import FLT.Mazur.BaseAdicReesLocalization
 public import FLT.Mazur.BaseAdicReesModelAffineRecovery
+public import FLT.Mazur.BaseAdicReesModelChartNaturality
 public import FLT.Mazur.BaseAdicReesModelCohomologyFinite
 public import FLT.Mazur.BaseAdicReesModelDescent
 public import FLT.Mazur.BaseAdicReesModelFullOverlapRecovery
