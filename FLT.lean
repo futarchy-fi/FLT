@@ -4286,6 +4286,7 @@ public import FLT.Mazur.WeierstrassAffineProductSwap
 public import FLT.Mazur.WeierstrassAffineVietaFormula
 public import FLT.Mazur.WeierstrassAllOrdinaryTripleAlgebra
 public import FLT.Mazur.WeierstrassAllOrdinaryTripleCoordinates
+public import FLT.Mazur.WeierstrassAllOrdinaryTripleDomain
 public import FLT.Mazur.WeierstrassAllOrdinaryTripleGlobal
 public import FLT.Mazur.WeierstrassAllOrdinaryTripleSchemes
 public import FLT.Mazur.WeierstrassChartOverlap
