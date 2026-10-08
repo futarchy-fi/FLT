@@ -4328,6 +4328,7 @@ public import FLT.Mazur.SchemeDescentMapLaws
 public import FLT.Mazur.SchemeDescentPairTransport
 public import FLT.Mazur.SchemeDescentTransportSquares
 public import FLT.Mazur.SchemeDescentTransportTest
+public import FLT.Mazur.SchemeFppfLineBaseRecoveryCharts
 public import FLT.Mazur.SchemeFppfLineGluing
 public import FLT.Mazur.SchemeFppfLineGluingFunctor
 public import FLT.Mazur.SchemeFppfLinePullbackFaithful
