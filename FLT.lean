@@ -3457,6 +3457,7 @@ public import FLT.Mazur.GenericIdealSumComparison
 public import FLT.Mazur.GenericIdealSupport
 public import FLT.Mazur.GenericSectionUniqueness
 public import FLT.Mazur.GenericWitnessIdealVanishing
+public import FLT.Mazur.GeometricallyConnectedDescent
 public import FLT.Mazur.GlobalClosedModuleDescent
 public import FLT.Mazur.GlobalEvaluationSpan
 public import FLT.Mazur.GlobalGenerationTransport
