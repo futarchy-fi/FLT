@@ -4076,6 +4076,7 @@ public import FLT.Mazur.QuadraticComponentBound
 public import FLT.Mazur.QuasiCoherentAffineBasePullback
 public import FLT.Mazur.RationalFibers
 public import FLT.Mazur.ReconstructionComposition
+public import FLT.Mazur.ReesAlgebraBaseChange
 public import FLT.Mazur.ReesAlgebraMap
 public import FLT.Mazur.ReesModuleDirectSum
 public import FLT.Mazur.ReesModuleMap
