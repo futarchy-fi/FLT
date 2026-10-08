@@ -4171,6 +4171,7 @@ public import FLT.Mazur.SchemeAffineCommonSectionRecovery
 public import FLT.Mazur.SchemeAffineCommonSectionSquareComparison
 public import FLT.Mazur.SchemeAffineCommonSectionTransport
 public import FLT.Mazur.SchemeAffineCoverRecovery
+public import FLT.Mazur.SchemeAffineCoverRecoveryCompatibility
 public import FLT.Mazur.SchemeAffineCoverTestOriginalMap
 public import FLT.Mazur.SchemeAffineCoverTestRecovery
 public import FLT.Mazur.SchemeAffineCrossChartFamily
