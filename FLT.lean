@@ -3674,6 +3674,7 @@ public import FLT.Mazur.HigherDirectImageOpenSheafification
 public import FLT.Mazur.HigherDirectImagePresheaf
 public import FLT.Mazur.HigherDirectImagePresheafRestriction
 public import FLT.Mazur.HilbertChartEquations
+public import FLT.Mazur.HilbertChartMultiplication
 public import FLT.Mazur.HomIntegerModel
 public import FLT.Mazur.HomogeneousLocalizationBaseChange
 public import FLT.Mazur.HomogeneousLocalizationGenerator
