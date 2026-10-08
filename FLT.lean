@@ -4944,6 +4944,7 @@ public import FLT.Mazur.WeierstrassSmoothFiberCore
 public import FLT.Mazur.WeierstrassSmoothFiveAffineTriple
 public import FLT.Mazur.WeierstrassSmoothFivePoints
 public import FLT.Mazur.WeierstrassSmoothFiveRegularChartDescent
+public import FLT.Mazur.WeierstrassSmoothFiveRegularSectionDescent
 public import FLT.Mazur.WeierstrassSmoothFormulaComparison
 public import FLT.Mazur.WeierstrassSmoothInfinityCommutativity
 public import FLT.Mazur.WeierstrassSmoothInfinityDomain
