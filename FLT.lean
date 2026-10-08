@@ -4650,6 +4650,7 @@ public import FLT.Mazur.WeierstrassIntegralGroup
 public import FLT.Mazur.WeierstrassIntegralGroupOperations
 public import FLT.Mazur.WeierstrassIntegralProductOverlap
 public import FLT.Mazur.WeierstrassIntegralSeparated
+public import FLT.Mazur.WeierstrassIntegralSmooth
 public import FLT.Mazur.WeierstrassIntegralTripleFlat
 public import FLT.Mazur.WeierstrassIntegralTripleProduct
 public import FLT.Mazur.WeierstrassIntegralZeroSection
