@@ -4235,6 +4235,7 @@ public import FLT.Mazur.PrincipalFamilyStages
 public import FLT.Mazur.PrincipalFamilySurjective
 public import FLT.Mazur.PrincipalFanDirected
 public import FLT.Mazur.PrincipalFanIsomorphismRefinement
+public import FLT.Mazur.PrincipalFanIsomorphismStages
 public import FLT.Mazur.PrincipalFanStages
 public import FLT.Mazur.PrincipalGeneratorExtension
 public import FLT.Mazur.PrincipalIntegerModelIsomorphism
