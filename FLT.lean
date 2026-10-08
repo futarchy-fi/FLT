@@ -4163,6 +4163,7 @@ public import FLT.Mazur.PrincipalIntegerRestriction
 public import FLT.Mazur.PrincipalLocalizationGeneration
 public import FLT.Mazur.PrincipalLocalizationIntersection
 public import FLT.Mazur.PrincipalLocalizationPullback
+public import FLT.Mazur.PrincipalLocalizationSquare
 public import FLT.Mazur.PrincipalModelBaseChange
 public import FLT.Mazur.PrincipalOpenIntegerModel
 public import FLT.Mazur.PrincipalPresentationIntegerModel
