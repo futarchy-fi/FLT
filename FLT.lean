@@ -3078,6 +3078,7 @@ public import FLT.Mazur.EllipticAdditiveStarTranslation
 public import FLT.Mazur.EllipticAdditiveTorsionExclusion
 public import FLT.Mazur.EllipticAdditiveTranslationDepth
 public import FLT.Mazur.EllipticCompleteExtensionComparisons
+public import FLT.Mazur.EllipticCompleteExtensionInjections
 public import FLT.Mazur.EllipticCompleteExtensionSpecialization
 public import FLT.Mazur.EllipticCompleteSemistableExtension
 public import FLT.Mazur.EllipticComponentBaseChange
