@@ -5142,6 +5142,7 @@ public import FLT.Mazur.WeierstrassModificationFractionOverlap
 public import FLT.Mazur.WeierstrassModificationGluing
 public import FLT.Mazur.WeierstrassModificationReesCoordinates
 public import FLT.Mazur.WeierstrassModificationReesOverlap
+public import FLT.Mazur.WeierstrassModificationReesYHorizontalOverlap
 public import FLT.Mazur.WeierstrassModificationXAlgebra
 public import FLT.Mazur.WeierstrassModificationXContractionOverlap
 public import FLT.Mazur.WeierstrassModificationXFlat
