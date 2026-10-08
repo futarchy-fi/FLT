@@ -4681,6 +4681,7 @@ public import FLT.Mazur.WeierstrassIntegralCurveGluing
 public import FLT.Mazur.WeierstrassIntegralCurveMorphisms
 public import FLT.Mazur.WeierstrassIntegralCurveProduct
 public import FLT.Mazur.WeierstrassIntegralCurveTwoChartCover
+public import FLT.Mazur.WeierstrassIntegralDomain
 public import FLT.Mazur.WeierstrassIntegralFaithfullyFlat
 public import FLT.Mazur.WeierstrassIntegralFinitePresentation
 public import FLT.Mazur.WeierstrassIntegralGroup
