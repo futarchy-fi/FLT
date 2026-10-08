@@ -4278,6 +4278,7 @@ public import FLT.Mazur.WeierstrassAffineAdditionSwapDescent
 public import FLT.Mazur.WeierstrassAffineAdditionTransport
 public import FLT.Mazur.WeierstrassAffineNegation
 public import FLT.Mazur.WeierstrassAffineNegationAddition
+public import FLT.Mazur.WeierstrassAffineOutputDomains
 public import FLT.Mazur.WeierstrassAffinePolynomialFormula
 public import FLT.Mazur.WeierstrassAffinePolynomialIntersections
 public import FLT.Mazur.WeierstrassAffinePolynomialScaling
