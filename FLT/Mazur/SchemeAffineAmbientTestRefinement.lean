@@ -40,9 +40,9 @@ theorem ambientTestComparison_refine (t : Z ⟶ W) (a : W ⟶ X)
       (pullbackComp t a).hom.app ((pushforward C.base).obj (C.sheaf D)) ≫
         C.ambientTestComparison C' D (t ≫ a) (t ≫ i) (t ≫ j)
           (by rw [Category.assoc, hi]) (by rw [Category.assoc, hj]) := by
-  have hci := coordinateIso_refine t i C.base a hi (t ≫ i) rfl (t ≫ a) rfl
+  have hci := coordinateIso_refine t i C.base a hi (t ≫ i) (t ≫ a) rfl rfl
     (by rw [Category.assoc, hi]) (C.sheaf D)
-  have hcj := coordinateIso_refine t j C'.base a hj (t ≫ j) rfl (t ≫ a) rfl
+  have hcj := coordinateIso_refine t j C'.base a hj (t ≫ j) (t ≫ a) rfl rfl
     (by rw [Category.assoc, hj]) (C'.sheaf D)
   simp only [SheafPullbackPathComparison.comparison, pullbackCongr,
     eqToIso_refl, Iso.trans_refl] at hci hcj
