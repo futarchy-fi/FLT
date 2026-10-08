@@ -5145,6 +5145,7 @@ public import FLT.Mazur.WeierstrassModificationXFractionMap
 public import FLT.Mazur.WeierstrassModificationXIncidenceRegular
 public import FLT.Mazur.WeierstrassModificationXLocalization
 public import FLT.Mazur.WeierstrassModificationXMorphism
+public import FLT.Mazur.WeierstrassModificationXOriginalLocalization
 public import FLT.Mazur.WeierstrassModificationXOverlap
 public import FLT.Mazur.WeierstrassModificationXPresentation
 public import FLT.Mazur.WeierstrassModificationXSaturation
