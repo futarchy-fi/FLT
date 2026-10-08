@@ -3638,6 +3638,7 @@ public import FLT.Mazur.ModuleSheafProjectionNormalization
 public import FLT.Mazur.ModuleSheafPullbackIsoDetection
 public import FLT.Mazur.ModuleSheafPullbackMapRefinement
 public import FLT.Mazur.ModuleSheafRefinementGluing
+public import FLT.Mazur.ModuleSheafSectionScalars
 public import FLT.Mazur.ModuleSheafTensor
 public import FLT.Mazur.ModuleSheafTensorAffine
 public import FLT.Mazur.ModuleSheafTensorAffineOpen
