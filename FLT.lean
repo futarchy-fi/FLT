@@ -4661,6 +4661,7 @@ public import FLT.Mazur.WeierstrassIntegralProductOverlap
 public import FLT.Mazur.WeierstrassIntegralProjectiveClosed
 public import FLT.Mazur.WeierstrassIntegralProjectiveMap
 public import FLT.Mazur.WeierstrassIntegralProjectivePreimage
+public import FLT.Mazur.WeierstrassIntegralProper
 public import FLT.Mazur.WeierstrassIntegralSeparated
 public import FLT.Mazur.WeierstrassIntegralSmooth
 public import FLT.Mazur.WeierstrassIntegralTripleFlat
