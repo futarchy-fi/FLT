@@ -4447,6 +4447,7 @@ public import FLT.Mazur.ProperPointedLineSheafDescent
 public import FLT.Mazur.ProperRelativeEvaluationLocus
 public import FLT.Mazur.ProperRingCohomologyFinite
 public import FLT.Mazur.ProperSectionGluing
+public import FLT.Mazur.ProperSmoothConnectedFiberOpen
 public import FLT.Mazur.ProperSmoothGenericFiberOpen
 public import FLT.Mazur.ProperSmoothPointedLineSheafDescent
 public import FLT.Mazur.ProperStalkExtension
