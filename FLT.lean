@@ -4475,6 +4475,7 @@ public import FLT.Mazur.WeierstrassInfinityTripleNegatedPencils
 public import FLT.Mazur.WeierstrassInfinityTripleOuterDifference
 public import FLT.Mazur.WeierstrassInfinityTripleOuterPencils
 public import FLT.Mazur.WeierstrassInfinityTripleOutputParameter
+public import FLT.Mazur.WeierstrassInfinityTripleParamPolynomials
 public import FLT.Mazur.WeierstrassInfinityTriplePencil
 public import FLT.Mazur.WeierstrassInfinityTriplePolynomials
 public import FLT.Mazur.WeierstrassInfinityTripleResidualCubic
