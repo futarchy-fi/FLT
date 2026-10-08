@@ -4140,6 +4140,7 @@ public import FLT.Mazur.SchemeAffineFlatRefinement
 public import FLT.Mazur.SchemeAffineFlatRefinementThrough
 public import FLT.Mazur.SchemeAffineFppfChart
 public import FLT.Mazur.SchemeAffineFppfChartCover
+public import FLT.Mazur.SchemeAffineFppfChartThrough
 public import FLT.Mazur.SchemeAffineImageTestComparison
 public import FLT.Mazur.SchemeAffineImageTestNaturality
 public import FLT.Mazur.SchemeAffineImageTestRefinement
