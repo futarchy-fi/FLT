@@ -4183,6 +4183,7 @@ public import FLT.Mazur.RelativePicardBaseChangeGeometry
 public import FLT.Mazur.RelativePicardFppfComparison
 public import FLT.Mazur.RelativePicardFppfSheaf
 public import FLT.Mazur.RelativePicardPresheaf
+public import FLT.Mazur.RelativePicardPresheafBaseChange
 public import FLT.Mazur.RelativePicardQuotient
 public import FLT.Mazur.RelativePinchingDescent
 public import FLT.Mazur.RelativePinchingLocalDescent
