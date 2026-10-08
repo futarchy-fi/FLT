@@ -3837,6 +3837,7 @@ public import FLT.Mazur.IteratedPolynomialStableStages
 public import FLT.Mazur.IteratedQuotientAlgebra
 public import FLT.Mazur.IteratedQuotientArrow
 public import FLT.Mazur.IteratedQuotientDiagramStages
+public import FLT.Mazur.IteratedQuotientInverseDataStages
 public import FLT.Mazur.IteratedQuotientOldDenominator
 public import FLT.Mazur.IteratedQuotientOriginalDiagrams
 public import FLT.Mazur.IteratedQuotientProjection
