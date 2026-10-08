@@ -4145,6 +4145,7 @@ public import FLT.Mazur.ProperCohomologyWitnesses
 public import FLT.Mazur.ProperCoverImmersionCriterion
 public import FLT.Mazur.ProperCurveGenus
 public import FLT.Mazur.ProperFiberNeighborhood
+public import FLT.Mazur.ProperIntegralConstantSections
 public import FLT.Mazur.ProperLineSheafDescent
 public import FLT.Mazur.ProperPointExtension
 public import FLT.Mazur.ProperRingCohomologyFinite
@@ -4508,6 +4509,7 @@ public import FLT.Mazur.WeierstrassAdditionSwapFormula
 public import FLT.Mazur.WeierstrassAffineAdditionGluing
 public import FLT.Mazur.WeierstrassAffineAdditionSwapDescent
 public import FLT.Mazur.WeierstrassAffineAdditionTransport
+public import FLT.Mazur.WeierstrassAffineChartDense
 public import FLT.Mazur.WeierstrassAffineCoordinateFlat
 public import FLT.Mazur.WeierstrassAffineInputFactorization
 public import FLT.Mazur.WeierstrassAffineInputTripleDomain
@@ -4549,8 +4551,13 @@ public import FLT.Mazur.WeierstrassChartSchemeGluingData
 public import FLT.Mazur.WeierstrassChartStandardSmooth
 public import FLT.Mazur.WeierstrassChartUnitLift
 public import FLT.Mazur.WeierstrassCoefficientChartPreimage
+public import FLT.Mazur.WeierstrassConstantSections
 public import FLT.Mazur.WeierstrassCrossInputAdditionComparison
+public import FLT.Mazur.WeierstrassCubicAmbientCohomology
+public import FLT.Mazur.WeierstrassCubicEquationTransition
+public import FLT.Mazur.WeierstrassCubicMultiplication
 public import FLT.Mazur.WeierstrassCubicPolarization
+public import FLT.Mazur.WeierstrassCubicSection
 public import FLT.Mazur.WeierstrassFieldChartPresentation
 public import FLT.Mazur.WeierstrassFiveAffineTriple
 public import FLT.Mazur.WeierstrassFiveRegularChartDescent
@@ -4558,6 +4565,8 @@ public import FLT.Mazur.WeierstrassFiveRegularSectionDescent
 public import FLT.Mazur.WeierstrassFiveRegularTriple
 public import FLT.Mazur.WeierstrassFlatSectionRegular
 public import FLT.Mazur.WeierstrassFourPairAssociativity
+public import FLT.Mazur.WeierstrassGeometricConnected
+public import FLT.Mazur.WeierstrassGeometricIntegral
 public import FLT.Mazur.WeierstrassGlobalAdditionCover
 public import FLT.Mazur.WeierstrassGlobalAdditionGluing
 public import FLT.Mazur.WeierstrassGlobalAdditionIdentity
@@ -4698,6 +4707,7 @@ public import FLT.Mazur.WeierstrassIntegralCurveGluing
 public import FLT.Mazur.WeierstrassIntegralCurveMorphisms
 public import FLT.Mazur.WeierstrassIntegralCurveProduct
 public import FLT.Mazur.WeierstrassIntegralCurveTwoChartCover
+public import FLT.Mazur.WeierstrassIntegralDomain
 public import FLT.Mazur.WeierstrassIntegralFaithfullyFlat
 public import FLT.Mazur.WeierstrassIntegralFinitePresentation
 public import FLT.Mazur.WeierstrassIntegralGroup
@@ -4796,6 +4806,7 @@ public import FLT.Mazur.WeierstrassReciprocalTripleSlopes
 public import FLT.Mazur.WeierstrassSameOutputIntersections
 public import FLT.Mazur.WeierstrassScaledChartComparison
 public import FLT.Mazur.WeierstrassSlopeSwapFormula
+public import FLT.Mazur.WeierstrassSmoothFiberCore
 public import FLT.Mazur.WeierstrassSpecSectionMorphism
 public import FLT.Mazur.WeierstrassSpecSections
 public import FLT.Mazur.WeierstrassSwappedAdditionIntersections
