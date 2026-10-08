@@ -2724,6 +2724,7 @@ public import FLT.Mazur.BaseAdicCohomologyImageStability
 public import FLT.Mazur.BaseAdicFormalInjectivity
 public import FLT.Mazur.BaseAdicHZeroImageStability
 public import FLT.Mazur.BaseAdicImageCompletion
+public import FLT.Mazur.BaseAdicPowerKernelFinite
 public import FLT.Mazur.BaseAdicQuotientSpectrum
 public import FLT.Mazur.BaseAdicReesAffineOverlap
 public import FLT.Mazur.BaseAdicReesBaseScalars
