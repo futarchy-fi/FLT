@@ -4084,6 +4084,7 @@ public import FLT.Mazur.SchemeAffineOverlapGluing
 public import FLT.Mazur.SchemeAffineOverlapLocalComparison
 public import FLT.Mazur.SchemeAffineOverlapLocalRefinement
 public import FLT.Mazur.SchemeAffineOverlapObjectwiseComparison
+public import FLT.Mazur.SchemeAffineOverlapTestNormalization
 public import FLT.Mazur.SchemeAffineOverlapTestRecovery
 public import FLT.Mazur.SchemeAffineRefinementCompatibility
 public import FLT.Mazur.SchemeAffineTensorCrossRefinement
