@@ -2826,6 +2826,7 @@ public import FLT.Mazur.BaseAdicReesTensorModule
 public import FLT.Mazur.BaseAdicThickening
 public import FLT.Mazur.BaseChangedPresentationModel
 public import FLT.Mazur.BinaryOpenDescent
+public import FLT.Mazur.CartesianMorphismRecovery
 public import FLT.Mazur.CartesianOpenSectionMap
 public import FLT.Mazur.CartesianSectionRestriction
 public import FLT.Mazur.CartesianStructureComplexExactness
