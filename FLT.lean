@@ -4866,6 +4866,7 @@ public import FLT.Mazur.WeierstrassDilatationFiberNormalForm
 public import FLT.Mazur.WeierstrassDilatationGenericFiber
 public import FLT.Mazur.WeierstrassDilatationLifting
 public import FLT.Mazur.WeierstrassDilatationMorphism
+public import FLT.Mazur.WeierstrassDilatationRefinement
 public import FLT.Mazur.WeierstrassDilatationResidueDepth
 public import FLT.Mazur.WeierstrassDilatationResidueFiber
 public import FLT.Mazur.WeierstrassDilatationUnitComparison
