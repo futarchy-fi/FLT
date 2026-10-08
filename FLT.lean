@@ -4088,6 +4088,7 @@ public import FLT.Mazur.PowerCohomologyHZeroSections
 public import FLT.Mazur.PowerCohomologyKernelGenerators
 public import FLT.Mazur.PowerCohomologyKernelReduction
 public import FLT.Mazur.PowerCohomologyKernelScalar
+public import FLT.Mazur.PowerCohomologyKernelVanishing
 public import FLT.Mazur.PowerCohomologyReesAction
 public import FLT.Mazur.PowerCohomologyReesComparison
 public import FLT.Mazur.PowerCohomologyReesQuotient
