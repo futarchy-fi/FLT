@@ -4246,6 +4246,7 @@ public import FLT.Mazur.PrincipalSubmoduleCoordinates
 public import FLT.Mazur.PrincipalSubmoduleOverlap
 public import FLT.Mazur.PrincipalSubmoduleSectionLocalization
 public import FLT.Mazur.PrincipalTargetRestrictionIsomorphism
+public import FLT.Mazur.PrincipalTriangleCofinal
 public import FLT.Mazur.PrincipalTriangleDirected
 public import FLT.Mazur.PrincipalTriangleEquations
 public import FLT.Mazur.PrincipalTriangleStages
