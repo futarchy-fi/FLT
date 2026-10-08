@@ -4534,6 +4534,9 @@ public import FLT.Mazur.WeierstrassAllOrdinaryTripleCoordinates
 public import FLT.Mazur.WeierstrassAllOrdinaryTripleDomain
 public import FLT.Mazur.WeierstrassAllOrdinaryTripleGlobal
 public import FLT.Mazur.WeierstrassAllOrdinaryTripleSchemes
+public import FLT.Mazur.WeierstrassChartBaseChange
+public import FLT.Mazur.WeierstrassChartBaseChangeSquare
+public import FLT.Mazur.WeierstrassChartCoefficientMap
 public import FLT.Mazur.WeierstrassChartCrossComparison
 public import FLT.Mazur.WeierstrassChartEvaluationComparison
 public import FLT.Mazur.WeierstrassChartFactorUnit
@@ -4545,6 +4548,7 @@ public import FLT.Mazur.WeierstrassChartPresentation
 public import FLT.Mazur.WeierstrassChartSchemeGluingData
 public import FLT.Mazur.WeierstrassChartStandardSmooth
 public import FLT.Mazur.WeierstrassChartUnitLift
+public import FLT.Mazur.WeierstrassCoefficientChartPreimage
 public import FLT.Mazur.WeierstrassCrossInputAdditionComparison
 public import FLT.Mazur.WeierstrassCubicPolarization
 public import FLT.Mazur.WeierstrassFieldChartPresentation
@@ -4686,8 +4690,10 @@ public import FLT.Mazur.WeierstrassIntegralAdditionCharts
 public import FLT.Mazur.WeierstrassIntegralAdditionCommutative
 public import FLT.Mazur.WeierstrassIntegralAdditionFormula
 public import FLT.Mazur.WeierstrassIntegralAssociativity
+public import FLT.Mazur.WeierstrassIntegralBaseChange
 public import FLT.Mazur.WeierstrassIntegralChart
 public import FLT.Mazur.WeierstrassIntegralChartIntersection
+public import FLT.Mazur.WeierstrassIntegralCoefficientMap
 public import FLT.Mazur.WeierstrassIntegralCurveGluing
 public import FLT.Mazur.WeierstrassIntegralCurveMorphisms
 public import FLT.Mazur.WeierstrassIntegralCurveProduct
@@ -4697,6 +4703,10 @@ public import FLT.Mazur.WeierstrassIntegralFinitePresentation
 public import FLT.Mazur.WeierstrassIntegralGroup
 public import FLT.Mazur.WeierstrassIntegralGroupOperations
 public import FLT.Mazur.WeierstrassIntegralProductOverlap
+public import FLT.Mazur.WeierstrassIntegralProjectiveClosed
+public import FLT.Mazur.WeierstrassIntegralProjectiveMap
+public import FLT.Mazur.WeierstrassIntegralProjectivePreimage
+public import FLT.Mazur.WeierstrassIntegralProper
 public import FLT.Mazur.WeierstrassIntegralSeparated
 public import FLT.Mazur.WeierstrassIntegralSmooth
 public import FLT.Mazur.WeierstrassIntegralTripleFlat
@@ -4751,6 +4761,8 @@ public import FLT.Mazur.WeierstrassProductOverlapFlat
 public import FLT.Mazur.WeierstrassProductOverlapScheme
 public import FLT.Mazur.WeierstrassProjectiveAdditionBoundary
 public import FLT.Mazur.WeierstrassProjectiveAdditionChart
+public import FLT.Mazur.WeierstrassProjectiveChartAlgebra
+public import FLT.Mazur.WeierstrassProjectiveChartEquation
 public import FLT.Mazur.WeierstrassProjectiveChartProduct
 public import FLT.Mazur.WeierstrassProjectiveGroupComparison
 public import FLT.Mazur.WeierstrassProjectivePointComparison
