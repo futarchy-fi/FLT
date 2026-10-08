@@ -2737,6 +2737,7 @@ public import FLT.Mazur.BaseAdicReesSpectrum
 public import FLT.Mazur.BaseAdicReesSpectrumComparison
 public import FLT.Mazur.BaseAdicReesSpectrumOverlap
 public import FLT.Mazur.BaseAdicReesSpectrumOverlapCompatibility
+public import FLT.Mazur.BaseAdicReesSpectrumOverlapSheafIso
 public import FLT.Mazur.BaseAdicReesSpectrumOverlapSheafMap
 public import FLT.Mazur.BaseAdicReesSpectrumTransport
 public import FLT.Mazur.BaseAdicReesTensorModule
