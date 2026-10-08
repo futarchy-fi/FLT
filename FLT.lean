@@ -4407,6 +4407,7 @@ public import FLT.Mazur.WeierstrassReciprocalAdditionFormula
 public import FLT.Mazur.WeierstrassReciprocalAffineUnits
 public import FLT.Mazur.WeierstrassReciprocalCentering
 public import FLT.Mazur.WeierstrassReciprocalChartSpecialization
+public import FLT.Mazur.WeierstrassReciprocalGlobalDomains
 public import FLT.Mazur.WeierstrassReciprocalSecantTriple
 public import FLT.Mazur.WeierstrassReciprocalSecantTripleAlgebra
 public import FLT.Mazur.WeierstrassReciprocalSecantTripleSchemes
