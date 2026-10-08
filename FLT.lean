@@ -3732,6 +3732,7 @@ public import FLT.Mazur.LinearCoordinateRatio
 public import FLT.Mazur.LocalCartierGeneratorDescent
 public import FLT.Mazur.LocalClosedFiberBaseChange
 public import FLT.Mazur.LocalClosedFiberTensorComplex
+public import FLT.Mazur.LocalClosedFiberUniversalFunctions
 public import FLT.Mazur.LocalLineTwistLocalization
 public import FLT.Mazur.LocalizationCech
 public import FLT.Mazur.LocalizationCechCompare
