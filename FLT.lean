@@ -4424,6 +4424,7 @@ public import FLT.Mazur.WeierstrassInfinityChartSpecialization
 public import FLT.Mazur.WeierstrassInfinityCubicDifference
 public import FLT.Mazur.WeierstrassInfinityCubicResidualCoefficients
 public import FLT.Mazur.WeierstrassInfinityDividedLine
+public import FLT.Mazur.WeierstrassInfinityDividedQuadraticCoefficients
 public import FLT.Mazur.WeierstrassInfinityFactorCancellation
 public import FLT.Mazur.WeierstrassInfinityGlobalDomain
 public import FLT.Mazur.WeierstrassInfinityHomogeneousComparison
