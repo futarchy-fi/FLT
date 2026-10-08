@@ -4726,6 +4726,7 @@ public import FLT.Mazur.SheafPullbackSectionSquare
 public import FLT.Mazur.SheafPullbackTestReconstruction
 public import FLT.Mazur.ShortComplexSumHomologyInclusion
 public import FLT.Mazur.SmoothAffineCoefficientModels
+public import FLT.Mazur.SmoothAlgebraReduced
 public import FLT.Mazur.SmoothCurveDimension
 public import FLT.Mazur.SmoothDimension
 public import FLT.Mazur.SmoothDimensionBound
