@@ -4311,6 +4311,7 @@ public import FLT.Mazur.SchemeGeometricDescentCocycleTest
 public import FLT.Mazur.SchemeGeometricDescentData
 public import FLT.Mazur.SchemeModulePullbackOpenUnits
 public import FLT.Mazur.SchemeModulePullbackUnits
+public import FLT.Mazur.SchemeNormalizedRecoveryOverlap
 public import FLT.Mazur.SchemeOverlapBaseChange
 public import FLT.Mazur.SchemeOverlapCocycleChart
 public import FLT.Mazur.SchemeOverlapCocyclePullback
