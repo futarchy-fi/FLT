@@ -3868,6 +3868,7 @@ public import FLT.Mazur.LocalizedKernelComparison
 public import FLT.Mazur.LocalizedKernelPathCompatibility
 public import FLT.Mazur.LocalizedPointAlgebraKernel
 public import FLT.Mazur.LocalizedPolynomialDiagramCoefficients
+public import FLT.Mazur.LocalizedPolynomialStableRelations
 public import FLT.Mazur.MarkedIntegerModel
 public import FLT.Mazur.ModuleBinarySectionGluing
 public import FLT.Mazur.ModuleCechScalar
