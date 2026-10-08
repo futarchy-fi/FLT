@@ -4239,6 +4239,7 @@ public import FLT.Mazur.ProperCohomologyWitnesses
 public import FLT.Mazur.ProperCoverImmersionCriterion
 public import FLT.Mazur.ProperCurveGenus
 public import FLT.Mazur.ProperFiberNeighborhood
+public import FLT.Mazur.ProperFiniteFiberNeighborhood
 public import FLT.Mazur.ProperIntegralConstantSections
 public import FLT.Mazur.ProperLineSheafDescent
 public import FLT.Mazur.ProperLocalAmpleFiberGenerators
