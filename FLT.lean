@@ -3241,6 +3241,7 @@ public import FLT.Mazur.EllipticNormalizedTypeIIStar
 public import FLT.Mazur.EllipticNormalizedTypeIV
 public import FLT.Mazur.EllipticNormalizedTypeIVStar
 public import FLT.Mazur.EllipticPadicKernel
+public import FLT.Mazur.EllipticPadicPrimeSemistability
 public import FLT.Mazur.EllipticPadicSpecialization
 public import FLT.Mazur.EllipticPointMapCoordinates
 public import FLT.Mazur.EllipticPrimeSubgroupComponents
