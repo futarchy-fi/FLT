@@ -2371,6 +2371,15 @@ and the glued curve. It does not yet identify the corresponding maps on
 torsion or cyclic quotients; those compatibilities are needed for the
 parameter-changing automorphism relations.
 
+### Composition on actual cyclic parameters (2026-10-08)
+
+`CubicCyclicCoefficientTower` extends the coefficient tower identity to
+full torsion, nonzero torsion, and the actual cyclic quotient. Congruence
+isomorphisms for equal equations commute with inclusions and the quotient
+map. This closes the composition compatibility left open in the preceding
+curve-level entry. Naturality of descended coordinate maps under parameter
+changes is still required for the Legendre automorphism relations.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:

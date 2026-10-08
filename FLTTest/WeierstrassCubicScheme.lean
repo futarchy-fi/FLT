@@ -87,6 +87,7 @@ import FLT.EllipticCurve.CubicLegendreBraidLastCover
 import FLT.EllipticCurve.CubicLegendreDescendedBraid
 import FLT.EllipticCurve.CubicLegendreCyclicAutomorphisms
 import FLT.EllipticCurve.CubicCoefficientTower
+import FLT.EllipticCurve.CubicCyclicCoefficientTower
 import FLT.EllipticCurve.CubicTorsionTransport
 import FLT.EllipticCurve.CubicNonzeroScalarTransport
 import FLT.EllipticCurve.CubicNonzeroTransport
