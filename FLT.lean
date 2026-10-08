@@ -4954,6 +4954,7 @@ public import FLT.Mazur.WeierstrassSmoothInputAddition
 public import FLT.Mazur.WeierstrassSmoothInputCompatibility
 public import FLT.Mazur.WeierstrassSmoothInputSwap
 public import FLT.Mazur.WeierstrassSmoothLocalInverse
+public import FLT.Mazur.WeierstrassSmoothLocalOutputRegular
 public import FLT.Mazur.WeierstrassSmoothMixedAddition
 public import FLT.Mazur.WeierstrassSmoothMixedCommutativity
 public import FLT.Mazur.WeierstrassSmoothMixedCover
