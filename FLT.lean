@@ -3381,6 +3381,7 @@ public import FLT.Mazur.IdealAdicRelativeOverlapCoefficientCharts
 public import FLT.Mazur.IdealAdicRelativeOverlapCoefficientGluing
 public import FLT.Mazur.IdealAdicRelativeOverlapCoefficientNormalization
 public import FLT.Mazur.IdealAdicRelativeOverlapCover
+public import FLT.Mazur.IdealAdicRelativeOverlapImageIso
 public import FLT.Mazur.IdealAdicRelativeOverlapLocalHomRefinement
 public import FLT.Mazur.IdealAdicRelativeOverlapMapCompatibility
 public import FLT.Mazur.IdealAdicRelativeOverlapProjections
