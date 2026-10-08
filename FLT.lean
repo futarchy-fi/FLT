@@ -3687,6 +3687,7 @@ public import FLT.Mazur.ModuleSheafAffinePairTestDetection
 public import FLT.Mazur.ModuleSheafAffineTestCompatibility
 public import FLT.Mazur.ModuleSheafCoordinateNaturality
 public import FLT.Mazur.ModuleSheafDisjointGluing
+public import FLT.Mazur.ModuleSheafDisjointPullbackGluing
 public import FLT.Mazur.ModuleSheafDual
 public import FLT.Mazur.ModuleSheafDualInternalHom
 public import FLT.Mazur.ModuleSheafDualPullback
