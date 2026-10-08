@@ -2723,6 +2723,7 @@ public import FLT.Mazur.BaseAdicReesModelCohomologyFinite
 public import FLT.Mazur.BaseAdicReesModelDescent
 public import FLT.Mazur.BaseAdicReesModelPushforward
 public import FLT.Mazur.BaseAdicReesModelSectionCoordinates
+public import FLT.Mazur.BaseAdicReesModelTransitionSections
 public import FLT.Mazur.BaseAdicReesModuleChart
 public import FLT.Mazur.BaseAdicReesModuleLocalization
 public import FLT.Mazur.BaseAdicReesNativeSectionNaturality
