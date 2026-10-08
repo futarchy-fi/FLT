@@ -2736,6 +2736,7 @@ public import FLT.Mazur.BaseAdicReesModelFullOverlapRecovery
 public import FLT.Mazur.BaseAdicReesModelGlobalSections
 public import FLT.Mazur.BaseAdicReesModelHZeroHomogeneous
 public import FLT.Mazur.BaseAdicReesModelHZeroInclusions
+public import FLT.Mazur.BaseAdicReesModelHZeroLinear
 public import FLT.Mazur.BaseAdicReesModelHZeroSum
 public import FLT.Mazur.BaseAdicReesModelHomogeneous
 public import FLT.Mazur.BaseAdicReesModelOverlapRecovery
