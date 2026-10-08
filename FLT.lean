@@ -3592,6 +3592,7 @@ public import FLT.Mazur.ModuleSheafDualPullbackUnit
 public import FLT.Mazur.ModuleSheafDualSheaf
 public import FLT.Mazur.ModuleSheafEvaluatedGluing
 public import FLT.Mazur.ModuleSheafGluing
+public import FLT.Mazur.ModuleSheafGluingMapRestriction
 public import FLT.Mazur.ModuleSheafGluingTransport
 public import FLT.Mazur.ModuleSheafGluingTransportMap
 public import FLT.Mazur.ModuleSheafImageOpenSections
