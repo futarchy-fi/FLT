@@ -3393,6 +3393,7 @@ public import FLT.Mazur.FiniteRelationDetection
 public import FLT.Mazur.FiniteRelationFiniteHomDescent
 public import FLT.Mazur.FiniteRelationHomDescent
 public import FLT.Mazur.FiniteRelationHomEquality
+public import FLT.Mazur.FiniteRelationLocalizationColimit
 public import FLT.Mazur.FiniteRelationLocalizationDetection
 public import FLT.Mazur.FiniteRelationLocalizationStages
 public import FLT.Mazur.FiniteRelationSpectrum
