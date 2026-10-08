@@ -2731,6 +2731,7 @@ public import FLT.Mazur.BaseAdicReesModelChartNaturality
 public import FLT.Mazur.BaseAdicReesModelCoefficientScalars
 public import FLT.Mazur.BaseAdicReesModelCohomologyFinite
 public import FLT.Mazur.BaseAdicReesModelDescent
+public import FLT.Mazur.BaseAdicReesModelDirectImageCohomology
 public import FLT.Mazur.BaseAdicReesModelFullOverlapRecovery
 public import FLT.Mazur.BaseAdicReesModelGlobalSections
 public import FLT.Mazur.BaseAdicReesModelHZeroSum
