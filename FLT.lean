@@ -4200,6 +4200,7 @@ public import FLT.Mazur.OpenSheafFreeComparison
 public import FLT.Mazur.OpenSheafRestriction
 public import FLT.Mazur.OrderedCurveDivisor
 public import FLT.Mazur.OrderedCurveDivisorPullback
+public import FLT.Mazur.OrderedCurvePermutation
 public import FLT.Mazur.OrderedCurvePower
 public import FLT.Mazur.OverCoproductModuleSections
 public import FLT.Mazur.OverPoints
