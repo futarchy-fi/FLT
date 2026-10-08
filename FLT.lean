@@ -5158,6 +5158,7 @@ public import FLT.Mazur.WeierstrassModificationYRegular
 public import FLT.Mazur.WeierstrassModificationYReverse
 public import FLT.Mazur.WeierstrassModificationYSaturation
 public import FLT.Mazur.WeierstrassModificationYScaleLocalization
+public import FLT.Mazur.WeierstrassModificationYTotalTransform
 public import FLT.Mazur.WeierstrassModificationYTripleOverlap
 public import FLT.Mazur.WeierstrassNegationAdditionDescent
 public import FLT.Mazur.WeierstrassNegationAdditionPullback
