@@ -4537,6 +4537,7 @@ public import FLT.Mazur.WeierstrassConstantSections
 public import FLT.Mazur.WeierstrassCrossInputAdditionComparison
 public import FLT.Mazur.WeierstrassCubicAmbientCohomology
 public import FLT.Mazur.WeierstrassCubicEquationTransition
+public import FLT.Mazur.WeierstrassCubicMultiplication
 public import FLT.Mazur.WeierstrassCubicPolarization
 public import FLT.Mazur.WeierstrassCubicSection
 public import FLT.Mazur.WeierstrassFieldChartPresentation
