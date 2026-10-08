@@ -4406,6 +4406,7 @@ public import FLT.Mazur.PushoutModuleScalars
 public import FLT.Mazur.QuadraticComponentBound
 public import FLT.Mazur.QuasiCoherentAffineBasePullback
 public import FLT.Mazur.RationalFibers
+public import FLT.Mazur.RationalPrimeTorsionGeometricModel
 public import FLT.Mazur.RationalPrimeTorsionLocalModel
 public import FLT.Mazur.ReconstructionComposition
 public import FLT.Mazur.ReesAffineModel
