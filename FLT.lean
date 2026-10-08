@@ -3677,6 +3677,7 @@ public import FLT.Mazur.HilbertChartAlgebra
 public import FLT.Mazur.HilbertChartAlgebraRealization
 public import FLT.Mazur.HilbertChartBasisAlgebra
 public import FLT.Mazur.HilbertChartBasisRelations
+public import FLT.Mazur.HilbertChartClassifyingMap
 public import FLT.Mazur.HilbertChartCoefficientMap
 public import FLT.Mazur.HilbertChartEquations
 public import FLT.Mazur.HilbertChartEvaluationSurjective
