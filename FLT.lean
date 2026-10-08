@@ -4096,6 +4096,7 @@ public import FLT.Mazur.ReesModuleBaseChange
 public import FLT.Mazur.ReesModuleDirectSum
 public import FLT.Mazur.ReesModuleIdealCongr
 public import FLT.Mazur.ReesModuleMap
+public import FLT.Mazur.ReesRelativeLocalization
 public import FLT.Mazur.ReesRelativeModuleMap
 public import FLT.Mazur.ReesRelativeNaturality
 public import FLT.Mazur.RefinedChartSpectrum
