@@ -4835,6 +4835,7 @@ public import FLT.Mazur.WeierstrassSplitNodalLaurent
 public import FLT.Mazur.WeierstrassSplitNodalNegationComparison
 public import FLT.Mazur.WeierstrassSplitNodalObstruction
 public import FLT.Mazur.WeierstrassSplitNodalPoints
+public import FLT.Mazur.WeierstrassSplitNodalRelativeTangent
 public import FLT.Mazur.WeierstrassSplitNodalTorus
 public import FLT.Mazur.WeierstrassSplitNodalUnitPoints
 public import FLT.Mazur.WeierstrassSwappedAdditionIntersections
