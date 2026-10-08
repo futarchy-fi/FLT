@@ -3260,6 +3260,7 @@ public import FLT.Mazur.EllipticScaledTorsionReduction
 public import FLT.Mazur.EllipticSemistableExtension
 public import FLT.Mazur.EllipticShearDescent
 public import FLT.Mazur.EllipticShearedComponentExtension
+public import FLT.Mazur.EllipticShortExtensionScaling
 public import FLT.Mazur.EllipticShortSemistableExtension
 public import FLT.Mazur.EllipticShortUnitReduction
 public import FLT.Mazur.EllipticShortWeightedModel
