@@ -3003,6 +3003,7 @@ public import FLT.Mazur.CommonModelEventualEquality
 public import FLT.Mazur.CommonRelationIntegerModel
 public import FLT.Mazur.CommutativeIntegerModelPullbackDescent
 public import FLT.Mazur.CompactSchemeIntegerDescent
+public import FLT.Mazur.ConnectedOfGlobalSections
 public import FLT.Mazur.ConstantCyclicGenerator
 public import FLT.Mazur.ConstantCyclicGroup
 public import FLT.Mazur.ConstantCyclicInclusion
