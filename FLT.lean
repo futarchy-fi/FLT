@@ -4278,6 +4278,7 @@ public import FLT.Mazur.ProperPointExtension
 public import FLT.Mazur.ProperPointedLineSheafDescent
 public import FLT.Mazur.ProperRingCohomologyFinite
 public import FLT.Mazur.ProperSectionGluing
+public import FLT.Mazur.ProperSmoothPointedLineSheafDescent
 public import FLT.Mazur.ProperStalkExtension
 public import FLT.Mazur.PuncturedNodeRestrictionComparison
 public import FLT.Mazur.PushforwardCech
