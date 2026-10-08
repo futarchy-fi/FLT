@@ -4339,6 +4339,7 @@ public import FLT.Mazur.WeierstrassScaledChartComparison
 public import FLT.Mazur.WeierstrassSlopeSwapFormula
 public import FLT.Mazur.WeierstrassSwappedAdditionIntersections
 public import FLT.Mazur.WeierstrassSwappedMixedOutput
+public import FLT.Mazur.WeierstrassSwappedMixedSchemes
 public import FLT.Mazur.WeierstrassSwappedReciprocalOutput
 public import FLT.Mazur.WeierstrassSwappedSameOutputSchemes
 public import FLT.Mazur.WeierstrassSwappedSlopeComparison
