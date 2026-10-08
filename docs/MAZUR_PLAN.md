@@ -2274,6 +2274,32 @@ namespace axiom audit. The remaining geometric step is comparison and
 descent of the mixed cyclic relation along this common cover.
 The three arithmetic gaps of FLT are unchanged.
 
+### Common-cover comparison and effective descent — 2026-10-08
+
+Implemented `CubicLegendreBraidComparison.lean`. The common coefficient
+cover and its actual cyclic pullback are effective epimorphisms.
+Consequently, two cyclic maps agree if their pullbacks to the common
+cover agree. This is a proved equality criterion, not an assumed descent
+property.
+
+The module constructs the three cyclic refinement maps to the quadratic
+covers for -1, lambda and 1-lambda, with their coefficient compatibility
+identities. The complementary-root algebra is a noetherian domain:
+its inclusion into the common domain is injective by flat tensor-product
+base change and the faithful coefficient map. Prime level is invertible.
+
+`quadraticCoordinateDesc_braid_fac` identifies a quadratic descended
+coordinate map, after common-cover pullback, with the actual coefficient
+transport of that coordinate change. Its proof combines the existing
+descent factorization and coordinate naturality across coefficient maps.
+The module passes the namespace axiom audit.
+
+The remaining mixed-relation obligation is to assemble the two sequences
+of actual descended coordinate maps, identify their transported roots
+and endpoint curves, and apply the local braid equality with the proved
+common-cover equality criterion. No global mixed relation or modular
+quotient is asserted, and the three arithmetic FLT gaps remain.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
