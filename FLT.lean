@@ -4103,6 +4103,7 @@ public import FLT.Mazur.SchemeAffineOverlapObjectwiseComparison
 public import FLT.Mazur.SchemeAffineOverlapTestNormalization
 public import FLT.Mazur.SchemeAffineOverlapTestRecovery
 public import FLT.Mazur.SchemeAffineRefinementCompatibility
+public import FLT.Mazur.SchemeAffineSchemeTestComparison
 public import FLT.Mazur.SchemeAffineTensorCrossRefinement
 public import FLT.Mazur.SchemeAffineTestComparison
 public import FLT.Mazur.SchemeAffineTripleComparisonCocycle
