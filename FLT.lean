@@ -4495,6 +4495,7 @@ public import FLT.Mazur.WeierstrassChartJacobianCover
 public import FLT.Mazur.WeierstrassChartOverlap
 public import FLT.Mazur.WeierstrassChartPresentation
 public import FLT.Mazur.WeierstrassChartSchemeGluingData
+public import FLT.Mazur.WeierstrassChartStandardSmooth
 public import FLT.Mazur.WeierstrassChartUnitLift
 public import FLT.Mazur.WeierstrassCrossInputAdditionComparison
 public import FLT.Mazur.WeierstrassCubicPolarization
