@@ -3868,6 +3868,7 @@ public import FLT.Mazur.NoetherianInfinitesimalFiberFunctions
 public import FLT.Mazur.NoetherianModuleSum
 public import FLT.Mazur.NoetherianModuleSumInclusions
 public import FLT.Mazur.NoetherianProperEvaluation
+public import FLT.Mazur.NoetherianProperRelativeFunctions
 public import FLT.Mazur.NoetherianSumCechCohomology
 public import FLT.Mazur.NoetherianSumCechComplex
 public import FLT.Mazur.NoetherianSumCechInclusion
