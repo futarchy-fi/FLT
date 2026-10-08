@@ -3856,6 +3856,7 @@ public import FLT.Mazur.LocalizationDegreeMonomial
 public import FLT.Mazur.LocalizationDegreePiece
 public import FLT.Mazur.LocalizationDegreeShift
 public import FLT.Mazur.LocalizationJointRestriction
+public import FLT.Mazur.LocalizationRelationClosure
 public import FLT.Mazur.LocalizedAdicCompletion
 public import FLT.Mazur.LocalizedBaseSectionNumerator
 public import FLT.Mazur.LocalizedIdealOverlapMembership
