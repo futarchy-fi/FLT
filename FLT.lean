@@ -4950,6 +4950,7 @@ public import FLT.Mazur.WeierstrassSmoothFivePoints
 public import FLT.Mazur.WeierstrassSmoothFiveRegularChartDescent
 public import FLT.Mazur.WeierstrassSmoothFiveRegularSectionDescent
 public import FLT.Mazur.WeierstrassSmoothFormulaComparison
+public import FLT.Mazur.WeierstrassSmoothGroup
 public import FLT.Mazur.WeierstrassSmoothGroupOperations
 public import FLT.Mazur.WeierstrassSmoothInfinityCommutativity
 public import FLT.Mazur.WeierstrassSmoothInfinityDomain
