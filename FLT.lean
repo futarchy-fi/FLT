@@ -4409,6 +4409,7 @@ public import FLT.Mazur.WeierstrassInfinityInverseNeighborhood
 public import FLT.Mazur.WeierstrassInfinityInverseScheme
 public import FLT.Mazur.WeierstrassInfinityLineCoordinates
 public import FLT.Mazur.WeierstrassInfinityLinePolynomial
+public import FLT.Mazur.WeierstrassInfinityLineReconstruction
 public import FLT.Mazur.WeierstrassInfinityNegationAddition
 public import FLT.Mazur.WeierstrassInfinityNegationChart
 public import FLT.Mazur.WeierstrassInfinityNegationFormula
