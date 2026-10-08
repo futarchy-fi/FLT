@@ -3089,6 +3089,7 @@ public import FLT.Mazur.EllipticCuspAddition
 public import FLT.Mazur.EllipticCuspParametrization
 public import FLT.Mazur.EllipticCuspTangent
 public import FLT.Mazur.EllipticCuspidalGroup
+public import FLT.Mazur.EllipticDilatationPointSection
 public import FLT.Mazur.EllipticDoubleRootCoordinates
 public import FLT.Mazur.EllipticDoubleRootEvenBound
 public import FLT.Mazur.EllipticDoubleRootEvenComparison
@@ -3139,6 +3140,8 @@ public import FLT.Mazur.EllipticFormalSymmetry
 public import FLT.Mazur.EllipticFormalTangent
 public import FLT.Mazur.EllipticGoodComponent
 public import FLT.Mazur.EllipticGoodReductionDiscriminant
+public import FLT.Mazur.EllipticGoodReductionModelSections
+public import FLT.Mazur.EllipticGoodReductionOriginalPoints
 public import FLT.Mazur.EllipticInfinityEvaluation
 public import FLT.Mazur.EllipticInfinityParameter
 public import FLT.Mazur.EllipticInfinityPowerSeries
@@ -3295,6 +3298,7 @@ public import FLT.Mazur.EllipticSplitDepthModel
 public import FLT.Mazur.EllipticSplitNodalGroup
 public import FLT.Mazur.EllipticSplitNodeAddition
 public import FLT.Mazur.EllipticSplitNodeComponents
+public import FLT.Mazur.EllipticSplitNodeDilatation
 public import FLT.Mazur.EllipticSplitNodeGroup
 public import FLT.Mazur.EllipticSplitNodeParametrization
 public import FLT.Mazur.EllipticSplitOrderOne
@@ -4897,6 +4901,13 @@ public import FLT.Mazur.WeierstrassCubicPushforwardH1
 public import FLT.Mazur.WeierstrassCubicQuotient
 public import FLT.Mazur.WeierstrassCubicQuotientChart
 public import FLT.Mazur.WeierstrassCubicSection
+public import FLT.Mazur.WeierstrassDilatationAlgebra
+public import FLT.Mazur.WeierstrassDilatationBaseChange
+public import FLT.Mazur.WeierstrassDilatationCoefficients
+public import FLT.Mazur.WeierstrassDilatationGenericFiber
+public import FLT.Mazur.WeierstrassDilatationLifting
+public import FLT.Mazur.WeierstrassDilatationMorphism
+public import FLT.Mazur.WeierstrassDilatationUnitComparison
 public import FLT.Mazur.WeierstrassFieldChartPresentation
 public import FLT.Mazur.WeierstrassFiniteChartDescent
 public import FLT.Mazur.WeierstrassFiveAffineTriple
@@ -4906,6 +4917,7 @@ public import FLT.Mazur.WeierstrassFiveRegularTriple
 public import FLT.Mazur.WeierstrassFlatSectionRegular
 public import FLT.Mazur.WeierstrassFourPairAssociativity
 public import FLT.Mazur.WeierstrassGeneralizedEllipticModel
+public import FLT.Mazur.WeierstrassGeneralizedSmoothComparison
 public import FLT.Mazur.WeierstrassGenusOneFamily
 public import FLT.Mazur.WeierstrassGeometricConnected
 public import FLT.Mazur.WeierstrassGeometricIntegral
