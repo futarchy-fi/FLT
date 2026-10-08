@@ -4519,6 +4519,7 @@ public import FLT.Mazur.ProperSectionGluing
 public import FLT.Mazur.ProperSmoothAffineFunctions
 public import FLT.Mazur.ProperSmoothConnectedFiberOpen
 public import FLT.Mazur.ProperSmoothGenericFiberOpen
+public import FLT.Mazur.ProperSmoothLineRigidity
 public import FLT.Mazur.ProperSmoothPointedLineSheafDescent
 public import FLT.Mazur.ProperSmoothStructureSheaf
 public import FLT.Mazur.ProperStalkExtension
