@@ -3873,6 +3873,7 @@ public import FLT.Mazur.LineSectionTwistCoordinates
 public import FLT.Mazur.LineSectionTwistRestriction
 public import FLT.Mazur.LineSectionTwistSystem
 public import FLT.Mazur.LineSheafDualEvaluation
+public import FLT.Mazur.LineSheafLocalEndomorphisms
 public import FLT.Mazur.LineStructureProjection
 public import FLT.Mazur.LineTrivializationCocycle
 public import FLT.Mazur.LineTrivializationCocycleRecovery
