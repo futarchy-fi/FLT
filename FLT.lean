@@ -4541,6 +4541,7 @@ public import FLT.Mazur.WeierstrassInfinityTripleDefectReduction
 public import FLT.Mazur.WeierstrassInfinityTripleDividedCoefficients
 public import FLT.Mazur.WeierstrassInfinityTripleEndpointIdeals
 public import FLT.Mazur.WeierstrassInfinityTripleFullMember
+public import FLT.Mazur.WeierstrassInfinityTripleInnerFlat
 public import FLT.Mazur.WeierstrassInfinityTripleInputOpen
 public import FLT.Mazur.WeierstrassInfinityTripleInputPairBezout
 public import FLT.Mazur.WeierstrassInfinityTripleInputPairCoefficients
