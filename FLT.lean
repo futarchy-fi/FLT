@@ -5125,6 +5125,7 @@ public import FLT.Mazur.WeierstrassModificationYAlgebra
 public import FLT.Mazur.WeierstrassModificationYCompatibility
 public import FLT.Mazur.WeierstrassModificationYContractionOverlap
 public import FLT.Mazur.WeierstrassModificationYCover
+public import FLT.Mazur.WeierstrassModificationYDescent
 public import FLT.Mazur.WeierstrassModificationYHorizontalLocalization
 public import FLT.Mazur.WeierstrassModificationYIntersection
 public import FLT.Mazur.WeierstrassModificationYInverse
