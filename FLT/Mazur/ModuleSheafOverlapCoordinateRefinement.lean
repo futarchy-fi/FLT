@@ -39,7 +39,7 @@ theorem coordinateIso_refine (t : Z ⟶ W) (p : W ⟶ Y) (i : Y ⟶ X)
     Functor.mapIso_hom, Functor.map_comp, Category.assoc]
   simp only [← Functor.map_comp_assoc, Iso.hom_inv_id_app_assoc]
   rw [comparison_assoc_assoc t p i p' r r' hp h hr h']
-  simp only [Category.assoc, Iso.hom_inv_id_app_assoc]
+  simp only [Iso.hom_inv_id_app_assoc]
   exact (comparison t p p' hp).hom.naturality (openCounitIso i M).hom
 
 end FLT.Mazur.ModuleSheafOverlapImageTransition
