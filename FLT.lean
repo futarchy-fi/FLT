@@ -2612,6 +2612,9 @@ public import FLT.Mazur.AffineNamedRefinementReconstruction
 public import FLT.Mazur.AffineNodeNormalizationExact
 public import FLT.Mazur.AffineOpenCartesianSections
 public import FLT.Mazur.AffineOpenCechBoundary
+public import FLT.Mazur.AffineOpenCoverCommonRefinement
+public import FLT.Mazur.AffineOpenCoverComparisonGluing
+public import FLT.Mazur.AffineOpenCoverGluingIso
 public import FLT.Mazur.AffineOpenDenominators
 public import FLT.Mazur.AffineOpenImmersionLocalizationCriterion
 public import FLT.Mazur.AffineOverlapDiagonal
@@ -4074,6 +4077,7 @@ public import FLT.Mazur.SchemeAffineCommonCoverUniversal
 public import FLT.Mazur.SchemeAffineCommonRefinement
 public import FLT.Mazur.SchemeAffineCommonRefinementCompatibility
 public import FLT.Mazur.SchemeAffineCrossChartFamily
+public import FLT.Mazur.SchemeAffineCrossCoverCocycle
 public import FLT.Mazur.SchemeAffineCrossCoverCoherence
 public import FLT.Mazur.SchemeAffineCrossCoverDescent
 public import FLT.Mazur.SchemeAffineCrossCoverRefinement
@@ -4086,6 +4090,9 @@ public import FLT.Mazur.SchemeAffineCrossRefinementChoiceIndependence
 public import FLT.Mazur.SchemeAffineCrossRefinementComparison
 public import FLT.Mazur.SchemeAffineCrossRefinementCoverIndependence
 public import FLT.Mazur.SchemeAffineCrossRefinementEffectiveRestriction
+public import FLT.Mazur.SchemeAffineCrossRefinementFamily
+public import FLT.Mazur.SchemeAffineCrossRefinementFamilyComparison
+public import FLT.Mazur.SchemeAffineCrossRefinementFamilyReconstruction
 public import FLT.Mazur.SchemeAffineCrossRefinementMiddle
 public import FLT.Mazur.SchemeAffineCrossRefinementObjectPresentation
 public import FLT.Mazur.SchemeAffineCrossRefinementOuterRestriction
@@ -4099,6 +4106,7 @@ public import FLT.Mazur.SchemeAffineOverlapChartCommonRefinement
 public import FLT.Mazur.SchemeAffineOverlapChartComparison
 public import FLT.Mazur.SchemeAffineOverlapCommonComparison
 public import FLT.Mazur.SchemeAffineOverlapCommonCovering
+public import FLT.Mazur.SchemeAffineOverlapGluing
 public import FLT.Mazur.SchemeAffineOverlapLocalComparison
 public import FLT.Mazur.SchemeAffineOverlapLocalRefinement
 public import FLT.Mazur.SchemeAffineOverlapObjectwiseComparison
