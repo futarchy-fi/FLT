@@ -3839,6 +3839,7 @@ public import FLT.Mazur.IteratedQuotientOriginalDiagrams
 public import FLT.Mazur.IteratedQuotientProjection
 public import FLT.Mazur.IteratedQuotientRecovery
 public import FLT.Mazur.IteratedQuotientRepresentatives
+public import FLT.Mazur.IteratedRefinementSquareCriteria
 public import FLT.Mazur.LaurentRingSurjectivity
 public import FLT.Mazur.LaurentTensor
 public import FLT.Mazur.LaurentUnitMultiplication
