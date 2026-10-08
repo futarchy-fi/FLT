@@ -3601,6 +3601,7 @@ public import FLT.Mazur.IntersectionUnitCocycleRecovery
 public import FLT.Mazur.IrreducibleComponentAmple
 public import FLT.Mazur.LaurentRingSurjectivity
 public import FLT.Mazur.LaurentTensor
+public import FLT.Mazur.LaurentUnitMultiplication
 public import FLT.Mazur.LaurentUnitPoints
 public import FLT.Mazur.LineBundleSectionOpenPullback
 public import FLT.Mazur.LineEndpointTransport
