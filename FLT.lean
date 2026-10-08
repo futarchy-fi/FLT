@@ -4898,6 +4898,7 @@ public import FLT.Mazur.WeierstrassSmoothAffineCover
 public import FLT.Mazur.WeierstrassSmoothAffineDomain
 public import FLT.Mazur.WeierstrassSmoothAffineTransport
 public import FLT.Mazur.WeierstrassSmoothChartCompatibility
+public import FLT.Mazur.WeierstrassSmoothCrossAffine
 public import FLT.Mazur.WeierstrassSmoothFiberCore
 public import FLT.Mazur.WeierstrassSmoothInfinityDomain
 public import FLT.Mazur.WeierstrassSmoothInputAddition
