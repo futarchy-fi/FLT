@@ -4257,6 +4257,7 @@ public import FLT.Mazur.WeierstrassGlobalAdditionIdentity
 public import FLT.Mazur.WeierstrassGlobalAdditionInverse
 public import FLT.Mazur.WeierstrassGlobalAdditionZeroRestrictions
 public import FLT.Mazur.WeierstrassGlobalAffineSwap
+public import FLT.Mazur.WeierstrassGlobalInfinitySwap
 public import FLT.Mazur.WeierstrassGlobalNegation
 public import FLT.Mazur.WeierstrassGlobalNegationInvolution
 public import FLT.Mazur.WeierstrassGlobalPolynomialSwap
