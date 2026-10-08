@@ -3509,6 +3509,7 @@ public import FLT.Mazur.FiniteRelationLocalizationStages
 public import FLT.Mazur.FiniteRelationLocalizationSurjectiveDescent
 public import FLT.Mazur.FiniteRelationPrincipalCoverModels
 public import FLT.Mazur.FiniteRelationPrincipalPathQuotients
+public import FLT.Mazur.FiniteRelationPrincipalProjection
 public import FLT.Mazur.FiniteRelationSpectrum
 public import FLT.Mazur.FiniteRelationStages
 public import FLT.Mazur.FiniteRelationSurjectiveDescent
