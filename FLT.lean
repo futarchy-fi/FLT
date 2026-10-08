@@ -3146,6 +3146,7 @@ public import FLT.Mazur.EllipticIntegralChartEvaluation
 public import FLT.Mazur.EllipticIntegralCuspNormalization
 public import FLT.Mazur.EllipticIntegralNodeNormalization
 public import FLT.Mazur.EllipticIntegralPointSection
+public import FLT.Mazur.EllipticIntegralSectionIdentity
 public import FLT.Mazur.EllipticIntegralSectionReduction
 public import FLT.Mazur.EllipticIntegralSingularTranslation
 public import FLT.Mazur.EllipticLocalAddition
