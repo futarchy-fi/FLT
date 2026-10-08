@@ -3074,6 +3074,7 @@ public import FLT.Mazur.EllipticAbstractMultiplicativeComponents
 public import FLT.Mazur.EllipticAdditiveDepthRefinement
 public import FLT.Mazur.EllipticAdditiveFirstBranches
 public import FLT.Mazur.EllipticAdditiveLaterBranches
+public import FLT.Mazur.EllipticAdditiveScalingDepth
 public import FLT.Mazur.EllipticAdditiveStarTranslation
 public import FLT.Mazur.EllipticAdditiveTorsionExclusion
 public import FLT.Mazur.EllipticAdditiveTranslationDepth
