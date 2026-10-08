@@ -2323,6 +2323,35 @@ assemble the intermediate descended maps and apply their common-cover
 comparison to the local braid identity. Arithmetic FLT inputs remain
 unchanged.
 
+### Actual descended mixed relation — 2026-10-08
+
+Implemented `CubicLegendreDescendedBraid.lean`. All intermediate
+Legendre curves are proved elliptic, and both paths are actual composites
+of quadratic descended maps with the same source and target:
+`legendreBraidLeftComposite` and `legendreBraidRightComposite`.
+
+The theorem `legendreBraid_descended` proves these composites equal.
+Each of the six steps is compared with its coordinate transport on the
+common coefficient cover using `quadraticCoordinateDesc_braid_fac`.
+The three-step transport theorem replaces each path by transport along
+its coordinate product. The explicit root maps identify these products
+with S(u)R(v)S(u) and R(uv/w)S(u)R(w), and the proved local braid identity
+identifies them. The common cyclic cover is an effective epimorphism,
+so this equality descends to the original Legendre base.
+
+This resolves the full-composite equality left open in the preceding
+updates. The proof uses a separate categorical composition lemma to
+avoid expanding the cyclic isomorphisms during rewriting; no heartbeat
+or kernel limits are increased. The module passes the namespace axiom
+audit without admitted statements.
+
+The result concerns the displayed cyclic schemes over the fixed
+Legendre base. A group action on the universal cyclic family requires
+assembling the maps that change the parameter, including their
+coefficient compatibility. The modular quotient, cusps and global
+Mazur arithmetic still remain; none of FLT's three arithmetic inputs
+has been removed by this geometric relation.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
