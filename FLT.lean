@@ -4298,6 +4298,7 @@ public import FLT.Mazur.PrincipalLocalizationSquare
 public import FLT.Mazur.PrincipalModelBaseChange
 public import FLT.Mazur.PrincipalOpenIntegerModel
 public import FLT.Mazur.PrincipalOpenIntersectionModels
+public import FLT.Mazur.PrincipalOpenSectionAlgebra
 public import FLT.Mazur.PrincipalPresentationIntegerModel
 public import FLT.Mazur.PrincipalRefinementOpenImmersion
 public import FLT.Mazur.PrincipalRestrictionEquivalence
