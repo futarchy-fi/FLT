@@ -3659,6 +3659,7 @@ public import FLT.Mazur.ModuleSectionRatioPullback
 public import FLT.Mazur.ModuleSectionRatios
 public import FLT.Mazur.ModuleSectionRegularity
 public import FLT.Mazur.ModuleSectionUnit
+public import FLT.Mazur.ModuleSheafAffineTestCompatibility
 public import FLT.Mazur.ModuleSheafCoordinateNaturality
 public import FLT.Mazur.ModuleSheafDual
 public import FLT.Mazur.ModuleSheafDualInternalHom
@@ -4227,6 +4228,9 @@ public import FLT.Mazur.SchemeAffineCrossRefinementPresentation
 public import FLT.Mazur.SchemeAffineCrossRefinementQuasicoherent
 public import FLT.Mazur.SchemeAffineCrossRefinementRawRestriction
 public import FLT.Mazur.SchemeAffineCrossRefinementRestriction
+public import FLT.Mazur.SchemeAffineCrossSectionComparison
+public import FLT.Mazur.SchemeAffineCrossSectionMaps
+public import FLT.Mazur.SchemeAffineCrossSectionReconstruction
 public import FLT.Mazur.SchemeAffineDescentChart
 public import FLT.Mazur.SchemeAffineFlatRefinement
 public import FLT.Mazur.SchemeAffineFlatRefinementThrough
@@ -4238,6 +4242,8 @@ public import FLT.Mazur.SchemeAffineFppfSourceCover
 public import FLT.Mazur.SchemeAffineImageTestComparison
 public import FLT.Mazur.SchemeAffineImageTestNaturality
 public import FLT.Mazur.SchemeAffineImageTestRefinement
+public import FLT.Mazur.SchemeAffineNamedCrossSectionMaps
+public import FLT.Mazur.SchemeAffineNamedSectionMapEquation
 public import FLT.Mazur.SchemeAffineOpenGluing
 public import FLT.Mazur.SchemeAffineOpenGluingLine
 public import FLT.Mazur.SchemeAffineOpenGluingMap
@@ -4270,6 +4276,7 @@ public import FLT.Mazur.SchemeAffineSchemeTestNaturality
 public import FLT.Mazur.SchemeAffineSchemeTestRefinement
 public import FLT.Mazur.SchemeAffineSourceMapFaithful
 public import FLT.Mazur.SchemeAffineSourceRecovery
+public import FLT.Mazur.SchemeAffineSourceRecoveryNormalization
 public import FLT.Mazur.SchemeAffineSourceTestReconstruction
 public import FLT.Mazur.SchemeAffineSourceTestRecovery
 public import FLT.Mazur.SchemeAffineTensorCrossRefinement
