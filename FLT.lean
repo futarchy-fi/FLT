@@ -4658,6 +4658,7 @@ public import FLT.Mazur.WeierstrassNegationPairSections
 public import FLT.Mazur.WeierstrassNormalizedProjectivePoint
 public import FLT.Mazur.WeierstrassOrdinaryChartSpecialization
 public import FLT.Mazur.WeierstrassOrdinaryDomainLift
+public import FLT.Mazur.WeierstrassOrdinaryFieldAddition
 public import FLT.Mazur.WeierstrassOrdinaryGlobalDomains
 public import FLT.Mazur.WeierstrassOrdinaryNegationEmpty
 public import FLT.Mazur.WeierstrassOrdinarySchemeLift
