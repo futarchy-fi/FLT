@@ -4922,6 +4922,7 @@ public import FLT.Mazur.WeierstrassSmoothCrossPolynomial
 public import FLT.Mazur.WeierstrassSmoothFactorAddition
 public import FLT.Mazur.WeierstrassSmoothFactorProduct
 public import FLT.Mazur.WeierstrassSmoothFiberCore
+public import FLT.Mazur.WeierstrassSmoothInfinityCommutativity
 public import FLT.Mazur.WeierstrassSmoothInfinityDomain
 public import FLT.Mazur.WeierstrassSmoothInfinityIdentity
 public import FLT.Mazur.WeierstrassSmoothInputAddition
