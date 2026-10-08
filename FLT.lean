@@ -2725,6 +2725,7 @@ public import FLT.Mazur.BaseAdicReesModelPushforward
 public import FLT.Mazur.BaseAdicReesModelSectionCoordinates
 public import FLT.Mazur.BaseAdicReesModuleChart
 public import FLT.Mazur.BaseAdicReesModuleLocalization
+public import FLT.Mazur.BaseAdicReesNativeSectionNaturality
 public import FLT.Mazur.BaseAdicReesOverlap
 public import FLT.Mazur.BaseAdicReesOverlapCompatibility
 public import FLT.Mazur.BaseAdicReesOverlapCover
