@@ -3284,6 +3284,7 @@ public import FLT.Mazur.EllipticSubgroupGlobalAlgebra
 public import FLT.Mazur.EllipticSubgroupGlobalEvaluation
 public import FLT.Mazur.EllipticSubgroupGlobalRank
 public import FLT.Mazur.EllipticSubgroupGlobalRankBound
+public import FLT.Mazur.EllipticSubgroupHopfEvaluation
 public import FLT.Mazur.EllipticSubgroupIntegralEvaluation
 public import FLT.Mazur.EllipticSubgroupIntegralSection
 public import FLT.Mazur.EllipticSubgroupOverlapClosure
