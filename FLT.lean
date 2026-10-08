@@ -4852,6 +4852,7 @@ public import FLT.Mazur.WeierstrassSplitNodalLaurent
 public import FLT.Mazur.WeierstrassSplitNodalNegationComparison
 public import FLT.Mazur.WeierstrassSplitNodalObstruction
 public import FLT.Mazur.WeierstrassSplitNodalOrdinaryMultiplication
+public import FLT.Mazur.WeierstrassSplitNodalOrdinaryParameter
 public import FLT.Mazur.WeierstrassSplitNodalOrdinaryUnits
 public import FLT.Mazur.WeierstrassSplitNodalParameterComparison
 public import FLT.Mazur.WeierstrassSplitNodalPartialMultiplication
