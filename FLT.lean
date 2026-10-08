@@ -4489,6 +4489,7 @@ public import FLT.Mazur.SchemeOverlapTransportComposition
 public import FLT.Mazur.SchemePicardClasses
 public import FLT.Mazur.SchemePicardGroup
 public import FLT.Mazur.SchemePicardPullback
+public import FLT.Mazur.SchemeProperGeometricFiberSections
 public import FLT.Mazur.SchemePullbackCompositeCharts
 public import FLT.Mazur.SchemePullbackCompositeRecognition
 public import FLT.Mazur.SchemePullbackIdentityCharts
