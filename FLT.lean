@@ -4367,6 +4367,7 @@ public import FLT.Mazur.SchemeDescentTransportSquares
 public import FLT.Mazur.SchemeDescentTransportTest
 public import FLT.Mazur.SchemeFppfLineBaseRecovery
 public import FLT.Mazur.SchemeFppfLineBaseRecoveryCharts
+public import FLT.Mazur.SchemeFppfLineBaseRecoveryNaturality
 public import FLT.Mazur.SchemeFppfLineCanonicalProperties
 public import FLT.Mazur.SchemeFppfLineGluing
 public import FLT.Mazur.SchemeFppfLineGluingFunctor
