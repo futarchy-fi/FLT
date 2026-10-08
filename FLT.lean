@@ -3314,6 +3314,7 @@ public import FLT.Mazur.EllipticSubgroupOverlapLocalization
 public import FLT.Mazur.EllipticSubgroupPointKernels
 public import FLT.Mazur.EllipticSubgroupPointLocalization
 public import FLT.Mazur.EllipticSubgroupReducedSections
+public import FLT.Mazur.EllipticSubgroupReductionComparison
 public import FLT.Mazur.EllipticSubgroupSectionCover
 public import FLT.Mazur.EllipticSubgroupSectionFamilyDensity
 public import FLT.Mazur.EllipticSubgroupSectionGenericCompatibility
