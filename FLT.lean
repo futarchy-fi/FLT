@@ -2737,6 +2737,7 @@ public import FLT.Mazur.BaseAdicReesModelCoefficientScalars
 public import FLT.Mazur.BaseAdicReesModelCohomologyFinite
 public import FLT.Mazur.BaseAdicReesModelCohomologyHomogeneous
 public import FLT.Mazur.BaseAdicReesModelCohomologyInclusion
+public import FLT.Mazur.BaseAdicReesModelCohomologyLinear
 public import FLT.Mazur.BaseAdicReesModelCohomologySum
 public import FLT.Mazur.BaseAdicReesModelDescent
 public import FLT.Mazur.BaseAdicReesModelDirectImageCohomology
