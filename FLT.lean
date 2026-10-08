@@ -3366,6 +3366,7 @@ public import FLT.Mazur.FlatGradedProjChartBaseChange
 public import FLT.Mazur.FlatHomogeneousLocalizationBaseChange
 public import FLT.Mazur.FlatIdealTensor
 public import FLT.Mazur.FlatSectionEqualizer
+public import FLT.Mazur.FlatStructureSectionComplex
 public import FLT.Mazur.FpqcGlobalGenerationDescent
 public import FLT.Mazur.FpqcModuleEpimorphisms
 public import FLT.Mazur.GeneralizedCurveAmpleBaseChange
