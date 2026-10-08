@@ -3459,6 +3459,7 @@ public import FLT.Mazur.FiniteTypePrincipalDiamonds
 public import FLT.Mazur.FiniteTypePrincipalFiniteMaps
 public import FLT.Mazur.FiniteTypePrincipalMaps
 public import FLT.Mazur.FiniteTypePrincipalPresentation
+public import FLT.Mazur.FiniteTypePrincipalSurjectiveLifts
 public import FLT.Mazur.FiniteTypeRelationPresentation
 public import FLT.Mazur.FinitelyPresentedIntersectionCocycleModel
 public import FLT.Mazur.FinitelyPresentedLineSheafDescent
