@@ -4095,6 +4095,7 @@ public import FLT.Mazur.SchemeAffineCrossRefinementQuasicoherent
 public import FLT.Mazur.SchemeAffineCrossRefinementRawRestriction
 public import FLT.Mazur.SchemeAffineCrossRefinementRestriction
 public import FLT.Mazur.SchemeAffineDescentChart
+public import FLT.Mazur.SchemeAffineImageTestComparison
 public import FLT.Mazur.SchemeAffineOpenOverlapCover
 public import FLT.Mazur.SchemeAffineOverlapChartCommonRefinement
 public import FLT.Mazur.SchemeAffineOverlapChartComparison
