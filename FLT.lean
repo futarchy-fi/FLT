@@ -2725,7 +2725,9 @@ public import FLT.Mazur.BaseAdicReesOverlap
 public import FLT.Mazur.BaseAdicReesOverlapCompatibility
 public import FLT.Mazur.BaseAdicReesOverlapCover
 public import FLT.Mazur.BaseAdicReesOverlapLocalHom
+public import FLT.Mazur.BaseAdicReesOverlapNormalization
 public import FLT.Mazur.BaseAdicReesOverlapRefinementCover
+public import FLT.Mazur.BaseAdicReesOverlapSheafIso
 public import FLT.Mazur.BaseAdicReesOverlapSheafMap
 public import FLT.Mazur.BaseAdicReesPrincipalModel
 public import FLT.Mazur.BaseAdicReesRestriction
@@ -2733,6 +2735,13 @@ public import FLT.Mazur.BaseAdicReesSheafCocycle
 public import FLT.Mazur.BaseAdicReesSheafIso
 public import FLT.Mazur.BaseAdicReesSheafMap
 public import FLT.Mazur.BaseAdicReesSpace
+public import FLT.Mazur.BaseAdicReesSpectrum
+public import FLT.Mazur.BaseAdicReesSpectrumComparison
+public import FLT.Mazur.BaseAdicReesSpectrumOverlap
+public import FLT.Mazur.BaseAdicReesSpectrumOverlapCompatibility
+public import FLT.Mazur.BaseAdicReesSpectrumOverlapSheafIso
+public import FLT.Mazur.BaseAdicReesSpectrumOverlapSheafMap
+public import FLT.Mazur.BaseAdicReesSpectrumTransport
 public import FLT.Mazur.BaseAdicReesTensorModule
 public import FLT.Mazur.BaseAdicThickening
 public import FLT.Mazur.BaseChangedPresentationModel
