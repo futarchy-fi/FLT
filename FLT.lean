@@ -4291,6 +4291,7 @@ public import FLT.Mazur.SchemeAffineOverlapMapNormalization
 public import FLT.Mazur.SchemeAffineOverlapObjectwiseComparison
 public import FLT.Mazur.SchemeAffineOverlapTestNormalization
 public import FLT.Mazur.SchemeAffineOverlapTestRecovery
+public import FLT.Mazur.SchemeAffineRecognitionCrossRefinement
 public import FLT.Mazur.SchemeAffineRecognitionRefinement
 public import FLT.Mazur.SchemeAffineReconstructionRecognition
 public import FLT.Mazur.SchemeAffineRefinementCompatibility
