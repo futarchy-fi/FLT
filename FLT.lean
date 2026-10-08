@@ -2724,6 +2724,7 @@ public import FLT.Mazur.BaseAdicReesCocycle
 public import FLT.Mazur.BaseAdicReesCommonRefinement
 public import FLT.Mazur.BaseAdicReesCover
 public import FLT.Mazur.BaseAdicReesGeometricRefinement
+public import FLT.Mazur.BaseAdicReesHZeroFinite
 public import FLT.Mazur.BaseAdicReesLocalization
 public import FLT.Mazur.BaseAdicReesModelAffineRecovery
 public import FLT.Mazur.BaseAdicReesModelBaseScalars
