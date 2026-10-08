@@ -4181,6 +4181,7 @@ public import FLT.Mazur.SchemeAffineSchemeTestCocycle
 public import FLT.Mazur.SchemeAffineSchemeTestComparison
 public import FLT.Mazur.SchemeAffineSchemeTestNaturality
 public import FLT.Mazur.SchemeAffineSchemeTestRefinement
+public import FLT.Mazur.SchemeAffineSourceMapFaithful
 public import FLT.Mazur.SchemeAffineSourceRecovery
 public import FLT.Mazur.SchemeAffineTensorCrossRefinement
 public import FLT.Mazur.SchemeAffineTestComparison
