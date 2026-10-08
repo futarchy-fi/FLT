@@ -4842,6 +4842,7 @@ public import FLT.Mazur.WeierstrassProjectivePointNaturality
 public import FLT.Mazur.WeierstrassProjectivePointNegation
 public import FLT.Mazur.WeierstrassProjectivePointSmooth
 public import FLT.Mazur.WeierstrassProjectiveRelativeSmoothCriterion
+public import FLT.Mazur.WeierstrassProjectiveSmoothResidues
 public import FLT.Mazur.WeierstrassReciprocalAdditionChart
 public import FLT.Mazur.WeierstrassReciprocalAdditionCompatibility
 public import FLT.Mazur.WeierstrassReciprocalAdditionFormula
