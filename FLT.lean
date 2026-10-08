@@ -4381,6 +4381,7 @@ public import FLT.Mazur.WeierstrassInfinityTransportedScheme
 public import FLT.Mazur.WeierstrassInfinityTransportedSlopes
 public import FLT.Mazur.WeierstrassInfinityTripleCommonInputs
 public import FLT.Mazur.WeierstrassInfinityTripleFullMember
+public import FLT.Mazur.WeierstrassInfinityTripleSections
 public import FLT.Mazur.WeierstrassInfinityVietaComparison
 public import FLT.Mazur.WeierstrassInputAdditionCovers
 public import FLT.Mazur.WeierstrassInputAdditionRestrictions
