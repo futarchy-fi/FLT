@@ -4815,6 +4815,7 @@ public import FLT.Mazur.TensorKernelArtinian
 public import FLT.Mazur.TensorKernelCyclic
 public import FLT.Mazur.TensorKernelExtension
 public import FLT.Mazur.TensorKernelFiniteLength
+public import FLT.Mazur.TensorKernelFlatCokernel
 public import FLT.Mazur.TensorPowerDistribution
 public import FLT.Mazur.TensorPowerGeneratorOpen
 public import FLT.Mazur.TensorPowerReassociation
