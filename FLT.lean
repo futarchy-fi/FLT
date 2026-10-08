@@ -4363,6 +4363,7 @@ public import FLT.Mazur.WeierstrassNegationPairSections
 public import FLT.Mazur.WeierstrassOrdinaryChartSpecialization
 public import FLT.Mazur.WeierstrassOrdinaryGlobalDomains
 public import FLT.Mazur.WeierstrassOrdinaryNegationEmpty
+public import FLT.Mazur.WeierstrassOrdinarySpecializationUnits
 public import FLT.Mazur.WeierstrassOrdinaryTripleAlgebra
 public import FLT.Mazur.WeierstrassOrdinaryTripleCoordinates
 public import FLT.Mazur.WeierstrassOrdinaryTripleDomain
