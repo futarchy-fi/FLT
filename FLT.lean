@@ -2725,6 +2725,7 @@ public import FLT.Mazur.BaseAdicReesModelCohomologyFinite
 public import FLT.Mazur.BaseAdicReesModelDescent
 public import FLT.Mazur.BaseAdicReesModelFullOverlapRecovery
 public import FLT.Mazur.BaseAdicReesModelOverlapRecovery
+public import FLT.Mazur.BaseAdicReesModelPowerNaturality
 public import FLT.Mazur.BaseAdicReesModelProjectionCompatibility
 public import FLT.Mazur.BaseAdicReesModelProjectionNaturality
 public import FLT.Mazur.BaseAdicReesModelProjectionSections
