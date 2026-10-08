@@ -4651,6 +4651,7 @@ public import FLT.Mazur.WeierstrassIntegralAdditionCharts
 public import FLT.Mazur.WeierstrassIntegralAdditionCommutative
 public import FLT.Mazur.WeierstrassIntegralAdditionFormula
 public import FLT.Mazur.WeierstrassIntegralAssociativity
+public import FLT.Mazur.WeierstrassIntegralBaseChange
 public import FLT.Mazur.WeierstrassIntegralChart
 public import FLT.Mazur.WeierstrassIntegralChartIntersection
 public import FLT.Mazur.WeierstrassIntegralCoefficientMap
