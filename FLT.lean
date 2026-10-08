@@ -4986,6 +4986,7 @@ public import FLT.Mazur.WeierstrassSmoothMixedRightReciprocalTriple
 public import FLT.Mazur.WeierstrassSmoothNegation
 public import FLT.Mazur.WeierstrassSmoothNegationGraphs
 public import FLT.Mazur.WeierstrassSmoothOriginalAffine
+public import FLT.Mazur.WeierstrassSmoothPairAffineDescent
 public import FLT.Mazur.WeierstrassSmoothPolynomialDomain
 public import FLT.Mazur.WeierstrassSmoothProductFieldPoints
 public import FLT.Mazur.WeierstrassSmoothProductOpen
