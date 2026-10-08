@@ -4845,6 +4845,7 @@ public import FLT.Mazur.WeierstrassSpecSections
 public import FLT.Mazur.WeierstrassSplitNodalAffineParameters
 public import FLT.Mazur.WeierstrassSplitNodalChart
 public import FLT.Mazur.WeierstrassSplitNodalChartGroup
+public import FLT.Mazur.WeierstrassSplitNodalChartParameters
 public import FLT.Mazur.WeierstrassSplitNodalFieldSmooth
 public import FLT.Mazur.WeierstrassSplitNodalInversion
 public import FLT.Mazur.WeierstrassSplitNodalLaurent
