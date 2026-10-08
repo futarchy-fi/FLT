@@ -2854,6 +2854,7 @@ public import FLT.Mazur.CoherentSubsheafACC
 public import FLT.Mazur.CoherentSupport
 public import FLT.Mazur.CoherentSupportedDecomposition
 public import FLT.Mazur.CohomologyImageArtinRees
+public import FLT.Mazur.CohomologyImageReesModule
 public import FLT.Mazur.ComaximalIdealSequence
 public import FLT.Mazur.CommonCoefficientStage
 public import FLT.Mazur.CommonIdealDirectSum
@@ -3475,6 +3476,9 @@ public import FLT.Mazur.IdealPowerExtensionGluing
 public import FLT.Mazur.IdealPowerGenericComparison
 public import FLT.Mazur.IdealPowerMultiplication
 public import FLT.Mazur.IdealPowerProductSurjective
+public import FLT.Mazur.IdealPowerReesLocalization
+public import FLT.Mazur.IdealPowerReesRestriction
+public import FLT.Mazur.IdealPowerReesSections
 public import FLT.Mazur.IdealPowerScalarLift
 public import FLT.Mazur.IdealPowerVanishingTransfer
 public import FLT.Mazur.IdealQuotientExact
@@ -4078,6 +4082,12 @@ public import FLT.Mazur.QuadraticComponentBound
 public import FLT.Mazur.QuasiCoherentAffineBasePullback
 public import FLT.Mazur.RationalFibers
 public import FLT.Mazur.ReconstructionComposition
+public import FLT.Mazur.ReesAffineModel
+public import FLT.Mazur.ReesAlgebraBaseChange
+public import FLT.Mazur.ReesAlgebraMap
+public import FLT.Mazur.ReesModuleBaseChange
+public import FLT.Mazur.ReesModuleDirectSum
+public import FLT.Mazur.ReesModuleMap
 public import FLT.Mazur.RefinedChartSpectrum
 public import FLT.Mazur.RelativeAmpleAffineBaseChange
 public import FLT.Mazur.RelativeAmpleBaseChange
