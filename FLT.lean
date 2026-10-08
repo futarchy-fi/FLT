@@ -4108,6 +4108,7 @@ public import FLT.Mazur.SchemeAffineCrossRefinementFamilyNormalization
 public import FLT.Mazur.SchemeAffineCrossRefinementFamilyRecognition
 public import FLT.Mazur.SchemeAffineCrossRefinementFamilyReconstruction
 public import FLT.Mazur.SchemeAffineCrossRefinementMiddle
+public import FLT.Mazur.SchemeAffineCrossRefinementNaturality
 public import FLT.Mazur.SchemeAffineCrossRefinementObjectPresentation
 public import FLT.Mazur.SchemeAffineCrossRefinementOuterRestriction
 public import FLT.Mazur.SchemeAffineCrossRefinementPresentation
