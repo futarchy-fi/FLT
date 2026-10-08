@@ -4538,6 +4538,7 @@ public import FLT.Mazur.WeierstrassCrossInputAdditionComparison
 public import FLT.Mazur.WeierstrassCubicAmbientCohomology
 public import FLT.Mazur.WeierstrassCubicChartRegular
 public import FLT.Mazur.WeierstrassCubicEquationTransition
+public import FLT.Mazur.WeierstrassCubicExactSequence
 public import FLT.Mazur.WeierstrassCubicLocalKernel
 public import FLT.Mazur.WeierstrassCubicMultiplication
 public import FLT.Mazur.WeierstrassCubicMultiplicationMono
