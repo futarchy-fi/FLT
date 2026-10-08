@@ -2679,6 +2679,8 @@ public import FLT.Mazur.AffineTensorCocycleTransport
 public import FLT.Mazur.AffineTensorDescentMorphisms
 public import FLT.Mazur.AffineTensorSectionIso
 public import FLT.Mazur.AffineTensorTransportAdditivity
+public import FLT.Mazur.AffineTildeBaseChangeIso
+public import FLT.Mazur.AffineTildeBaseChangeUnit
 public import FLT.Mazur.AffineTildeMorphismCoherence
 public import FLT.Mazur.AffineTildePullbackMap
 public import FLT.Mazur.AffineTildePullbackSectionMap
@@ -2711,8 +2713,16 @@ public import FLT.Mazur.AnnihilatorSubsheaf
 public import FLT.Mazur.BaseAdicCohomologyFiltration
 public import FLT.Mazur.BaseAdicQuotientSpectrum
 public import FLT.Mazur.BaseAdicReesChart
+public import FLT.Mazur.BaseAdicReesCocycle
+public import FLT.Mazur.BaseAdicReesCover
+public import FLT.Mazur.BaseAdicReesLocalization
+public import FLT.Mazur.BaseAdicReesModuleChart
+public import FLT.Mazur.BaseAdicReesModuleLocalization
+public import FLT.Mazur.BaseAdicReesOverlap
+public import FLT.Mazur.BaseAdicReesPrincipalModel
 public import FLT.Mazur.BaseAdicReesRestriction
 public import FLT.Mazur.BaseAdicReesSpace
+public import FLT.Mazur.BaseAdicReesTensorModule
 public import FLT.Mazur.BaseAdicThickening
 public import FLT.Mazur.BaseChangedPresentationModel
 public import FLT.Mazur.BinaryOpenDescent
@@ -4095,8 +4105,10 @@ public import FLT.Mazur.ReesModuleBaseChange
 public import FLT.Mazur.ReesModuleDirectSum
 public import FLT.Mazur.ReesModuleIdealCongr
 public import FLT.Mazur.ReesModuleMap
+public import FLT.Mazur.ReesRelativeLocalization
 public import FLT.Mazur.ReesRelativeModuleMap
 public import FLT.Mazur.ReesRelativeNaturality
+public import FLT.Mazur.ReesRelativeScalarTower
 public import FLT.Mazur.RefinedChartSpectrum
 public import FLT.Mazur.RelativeAmpleAffineBaseChange
 public import FLT.Mazur.RelativeAmpleBaseChange
