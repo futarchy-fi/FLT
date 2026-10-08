@@ -3412,6 +3412,7 @@ public import FLT.Mazur.IdealAdicRelativeProjectionSections
 public import FLT.Mazur.IdealAdicRelativePushforwardOpens
 public import FLT.Mazur.IdealAdicRelativePushforwardSections
 public import FLT.Mazur.IdealAdicRelativeQuasiCoherent
+public import FLT.Mazur.IdealAdicRelativeRecoveryIdentity
 public import FLT.Mazur.IdealAdicRelativeRecoveryRefinement
 public import FLT.Mazur.IdealAdicRelativeRestriction
 public import FLT.Mazur.IdealAdicRelativeScheme
