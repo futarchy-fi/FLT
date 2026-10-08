@@ -4376,6 +4376,7 @@ public import FLT.Mazur.PrincipalFanPathIsomorphisms
 public import FLT.Mazur.PrincipalFanRefinedRestrictionPaths
 public import FLT.Mazur.PrincipalFanRefinedRestrictionTargets
 public import FLT.Mazur.PrincipalFanRestrictionCoordinates
+public import FLT.Mazur.PrincipalFanRestrictionTransitions
 public import FLT.Mazur.PrincipalFanRestrictionUniqueness
 public import FLT.Mazur.PrincipalFanStages
 public import FLT.Mazur.PrincipalFiniteRestrictionPaths
