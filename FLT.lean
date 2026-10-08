@@ -4485,6 +4485,7 @@ public import FLT.Mazur.WeierstrassInfinityLineParameter
 public import FLT.Mazur.WeierstrassInfinityLinePolynomial
 public import FLT.Mazur.WeierstrassInfinityLineReconstruction
 public import FLT.Mazur.WeierstrassInfinityLinearParameterRegular
+public import FLT.Mazur.WeierstrassInfinityMonicPolynomial
 public import FLT.Mazur.WeierstrassInfinityNegationAddition
 public import FLT.Mazur.WeierstrassInfinityNegationChart
 public import FLT.Mazur.WeierstrassInfinityNegationFormula
