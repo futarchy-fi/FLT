@@ -3876,6 +3876,7 @@ public import FLT.Mazur.LineSheafDualEvaluation
 public import FLT.Mazur.LineSheafEndomorphismSheaf
 public import FLT.Mazur.LineSheafGlobalEndomorphisms
 public import FLT.Mazur.LineSheafLocalEndomorphisms
+public import FLT.Mazur.LineSheafScalarAutomorphisms
 public import FLT.Mazur.LineStructureProjection
 public import FLT.Mazur.LineTrivializationCocycle
 public import FLT.Mazur.LineTrivializationCocycleRecovery
