@@ -19,7 +19,7 @@ fraction data. Every second target retains its prescribed denominator.
 
 namespace FLT.Mazur.FinitePolynomialCoefficients
 
-universe u v w z t
+universe u v w z t e h
 
 variable {R : Type u} [CommRing R] {ι : Type v} [Finite ι]
   (n : ι → ℕ) (r : ∀ i, MvPolynomial (Fin (n i)) R)
@@ -27,8 +27,8 @@ variable {R : Type u} [CommRing R] {ι : Type v} [Finite ι]
   (s : ∀ i, J i → Localization.Away (r i))
   {K : ι → Type z} [∀ i, Finite (K i)]
   {L : ∀ i, J i → Type t} [∀ i j, Finite (L i j)]
-  {E : ι → ι → Type w} [∀ i j, Finite (E i j)]
-  {H : ∀ (_ : ι) j, J j → Type z} [∀ i j k, Finite (H i j k)]
+  {E : ι → ι → Type e} [∀ i j, Finite (E i j)]
+  {H : ∀ (_ : ι) j, J j → Type h} [∀ i j k, Finite (H i j k)]
 
 /-- Descend both levels of a finite diagram through one coefficient ring. -/
 theorem exists_iterated_diagram_coefficients
