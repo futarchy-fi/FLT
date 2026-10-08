@@ -2733,6 +2733,7 @@ public import FLT.Mazur.BaseAdicReesSheafCocycle
 public import FLT.Mazur.BaseAdicReesSheafIso
 public import FLT.Mazur.BaseAdicReesSheafMap
 public import FLT.Mazur.BaseAdicReesSpace
+public import FLT.Mazur.BaseAdicReesSpectrum
 public import FLT.Mazur.BaseAdicReesTensorModule
 public import FLT.Mazur.BaseAdicThickening
 public import FLT.Mazur.BaseChangedPresentationModel
