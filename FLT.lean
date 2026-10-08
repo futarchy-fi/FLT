@@ -3472,6 +3472,7 @@ public import FLT.Mazur.FiniteDiagramIntegerModel
 public import FLT.Mazur.FiniteDiagramUnitDescent
 public import FLT.Mazur.FiniteDivisorCohomology
 public import FLT.Mazur.FiniteDivisorComponentAvoidance
+public import FLT.Mazur.FiniteDivisorLengthAdditivity
 public import FLT.Mazur.FiniteEvaluationLocus
 public import FLT.Mazur.FiniteFieldRankLength
 public import FLT.Mazur.FiniteFlatAffineLocalFree
