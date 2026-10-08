@@ -3475,6 +3475,7 @@ public import FLT.Mazur.FiniteRelationIteratedDetection
 public import FLT.Mazur.FiniteRelationIteratedFiniteMaps
 public import FLT.Mazur.FiniteRelationIteratedHomDescent
 public import FLT.Mazur.FiniteRelationIteratedRestrictionPaths
+public import FLT.Mazur.FiniteRelationIteratedSourceRefinement
 public import FLT.Mazur.FiniteRelationIteratedStages
 public import FLT.Mazur.FiniteRelationLocalizationColimit
 public import FLT.Mazur.FiniteRelationLocalizationCompatibleHomDescent
