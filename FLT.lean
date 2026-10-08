@@ -4952,6 +4952,7 @@ public import FLT.Mazur.WeierstrassSmoothInfinityDomain
 public import FLT.Mazur.WeierstrassSmoothInfinityIdentity
 public import FLT.Mazur.WeierstrassSmoothInputAddition
 public import FLT.Mazur.WeierstrassSmoothInputCompatibility
+public import FLT.Mazur.WeierstrassSmoothInputOutputRegular
 public import FLT.Mazur.WeierstrassSmoothInputSwap
 public import FLT.Mazur.WeierstrassSmoothLocalInverse
 public import FLT.Mazur.WeierstrassSmoothLocalOutputRegular
