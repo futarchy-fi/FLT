@@ -4236,6 +4236,7 @@ public import FLT.Mazur.SchemeAffineImageTestNaturality
 public import FLT.Mazur.SchemeAffineImageTestRefinement
 public import FLT.Mazur.SchemeAffineNamedCrossSectionMaps
 public import FLT.Mazur.SchemeAffineNamedSectionMapEquation
+public import FLT.Mazur.SchemeAffineNamedSectionPostcomposition
 public import FLT.Mazur.SchemeAffineOpenGluing
 public import FLT.Mazur.SchemeAffineOpenGluingLine
 public import FLT.Mazur.SchemeAffineOpenGluingMap
