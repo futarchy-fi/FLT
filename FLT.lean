@@ -4274,6 +4274,7 @@ public import FLT.Mazur.SchemeAffineSchemeTestCocycle
 public import FLT.Mazur.SchemeAffineSchemeTestComparison
 public import FLT.Mazur.SchemeAffineSchemeTestNaturality
 public import FLT.Mazur.SchemeAffineSchemeTestRefinement
+public import FLT.Mazur.SchemeAffineSourceGlobalOverlap
 public import FLT.Mazur.SchemeAffineSourceGlobalRecovery
 public import FLT.Mazur.SchemeAffineSourceGlobalTestTransport
 public import FLT.Mazur.SchemeAffineSourceMapFaithful
