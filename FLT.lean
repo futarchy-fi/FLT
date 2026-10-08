@@ -3302,6 +3302,7 @@ public import FLT.Mazur.EllipticSubgroupGlobalRankBound
 public import FLT.Mazur.EllipticSubgroupHopfEvaluation
 public import FLT.Mazur.EllipticSubgroupHopfMultiplication
 public import FLT.Mazur.EllipticSubgroupHopfSpecialization
+public import FLT.Mazur.EllipticSubgroupIntegralConstantCoordinates
 public import FLT.Mazur.EllipticSubgroupIntegralEvaluation
 public import FLT.Mazur.EllipticSubgroupIntegralSection
 public import FLT.Mazur.EllipticSubgroupOverlapClosure
