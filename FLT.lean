@@ -4484,6 +4484,7 @@ public import FLT.Mazur.WeierstrassChartSchemeGluingData
 public import FLT.Mazur.WeierstrassChartUnitLift
 public import FLT.Mazur.WeierstrassCrossInputAdditionComparison
 public import FLT.Mazur.WeierstrassCubicPolarization
+public import FLT.Mazur.WeierstrassFieldChartPresentation
 public import FLT.Mazur.WeierstrassFiveAffineTriple
 public import FLT.Mazur.WeierstrassFiveRegularChartDescent
 public import FLT.Mazur.WeierstrassFiveRegularSectionDescent
