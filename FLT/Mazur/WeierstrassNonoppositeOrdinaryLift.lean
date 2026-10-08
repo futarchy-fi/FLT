@@ -113,4 +113,3 @@ theorem projectiveToIntegral_add_nonopposite (hΔ : IsUnit W.Δ) {x₁ x₂ y₁
   simpa only [ha, hc, Matrix.cons_val_zero, Matrix.cons_val_one] using he
 
 end FLT.Mazur.WeierstrassIntegralChart
-
