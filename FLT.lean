@@ -4471,6 +4471,7 @@ public import FLT.Mazur.WeierstrassInfinityPencilPolynomial
 public import FLT.Mazur.WeierstrassInfinityProjectiveOverlap
 public import FLT.Mazur.WeierstrassInfinityQuadraticBaseChange
 public import FLT.Mazur.WeierstrassInfinityQuadraticLift
+public import FLT.Mazur.WeierstrassInfinityQuadraticWeight
 public import FLT.Mazur.WeierstrassInfinityResidualElimination
 public import FLT.Mazur.WeierstrassInfinityReverseCross
 public import FLT.Mazur.WeierstrassInfinitySlopeMap
