@@ -4341,6 +4341,7 @@ public import FLT.Mazur.SheafPullbackNormalizedRefinement
 public import FLT.Mazur.SheafPullbackObjectwiseRefinement
 public import FLT.Mazur.SheafPullbackPathComparison
 public import FLT.Mazur.SheafPullbackRetractionSquare
+public import FLT.Mazur.SheafPullbackSectionReconstruction
 public import FLT.Mazur.SheafPullbackSectionSquare
 public import FLT.Mazur.SmoothCurveDimension
 public import FLT.Mazur.SmoothDimension
