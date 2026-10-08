@@ -4813,6 +4813,7 @@ public import FLT.Mazur.WeierstrassSameOutputIntersections
 public import FLT.Mazur.WeierstrassScaledChartComparison
 public import FLT.Mazur.WeierstrassSlopeSwapFormula
 public import FLT.Mazur.WeierstrassSmoothFiberCore
+public import FLT.Mazur.WeierstrassSmoothZeroSection
 public import FLT.Mazur.WeierstrassSpecSectionMorphism
 public import FLT.Mazur.WeierstrassSpecSections
 public import FLT.Mazur.WeierstrassSwappedAdditionIntersections
