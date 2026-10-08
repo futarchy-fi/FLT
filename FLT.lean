@@ -2723,6 +2723,7 @@ public import FLT.Mazur.BaseAdicReesOverlap
 public import FLT.Mazur.BaseAdicReesPrincipalModel
 public import FLT.Mazur.BaseAdicReesRestriction
 public import FLT.Mazur.BaseAdicReesSheafCocycle
+public import FLT.Mazur.BaseAdicReesSheafIso
 public import FLT.Mazur.BaseAdicReesSheafMap
 public import FLT.Mazur.BaseAdicReesSpace
 public import FLT.Mazur.BaseAdicReesTensorModule
