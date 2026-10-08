@@ -183,6 +183,7 @@ public import FLT.EllipticCurve.CubicChord
 public import FLT.EllipticCurve.CubicClassicalReduction
 public import FLT.EllipticCurve.CubicCoefficientAction
 public import FLT.EllipticCurve.CubicCoefficientNaturality
+public import FLT.EllipticCurve.CubicCoefficientTower
 public import FLT.EllipticCurve.CubicCyclicCoefficientAction
 public import FLT.EllipticCurve.CubicCyclicCoefficientComparison
 public import FLT.EllipticCurve.CubicCyclicDedekind

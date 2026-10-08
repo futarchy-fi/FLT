@@ -2362,6 +2362,15 @@ relations as parameter-changing automorphisms still need proof; the existing
 fixed-base mixed relation alone does not establish those compatibilities.
 No modular quotient, compactification, or arithmetic Mazur input follows yet.
 
+### Composition of actual coefficient morphisms (2026-10-08)
+
+`CubicCoefficientTower` proves that successive extensions along a scalar
+tower agree with direct extension, after transporting along the equality of
+Weierstrass equations. This holds on both explicit chart rings, their spectra,
+and the glued curve. It does not yet identify the corresponding maps on
+torsion or cyclic quotients; those compatibilities are needed for the
+parameter-changing automorphism relations.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
