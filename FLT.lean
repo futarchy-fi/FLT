@@ -4556,6 +4556,7 @@ public import FLT.Mazur.StructureDirectImageSections
 public import FLT.Mazur.StructureImageOpenChart
 public import FLT.Mazur.SurjectiveDominantEpi
 public import FLT.Mazur.SurjectiveStructureSupport
+public import FLT.Mazur.SurjectiveTowerLifting
 public import FLT.Mazur.TensorIntegerModelClosedImmersion
 public import FLT.Mazur.TensorIntegerModelMap
 public import FLT.Mazur.TensorIntegerModelPresentation
