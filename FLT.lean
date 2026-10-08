@@ -2612,6 +2612,9 @@ public import FLT.Mazur.AffineNamedRefinementReconstruction
 public import FLT.Mazur.AffineNodeNormalizationExact
 public import FLT.Mazur.AffineOpenCartesianSections
 public import FLT.Mazur.AffineOpenCechBoundary
+public import FLT.Mazur.AffineOpenCoverCommonRefinement
+public import FLT.Mazur.AffineOpenCoverComparisonGluing
+public import FLT.Mazur.AffineOpenCoverGluingIso
 public import FLT.Mazur.AffineOpenDenominators
 public import FLT.Mazur.AffineOpenImmersionLocalizationCriterion
 public import FLT.Mazur.AffineOverlapDiagonal
@@ -3355,6 +3358,7 @@ public import FLT.Mazur.IdealAdicLineTower
 public import FLT.Mazur.IdealAdicQuotient
 public import FLT.Mazur.IdealAdicRelativeAffineOverlap
 public import FLT.Mazur.IdealAdicRelativeAffineSheaf
+public import FLT.Mazur.IdealAdicRelativeAmbientCoefficient
 public import FLT.Mazur.IdealAdicRelativeChartScalar
 public import FLT.Mazur.IdealAdicRelativeChartTransition
 public import FLT.Mazur.IdealAdicRelativeClosedModule
@@ -3373,6 +3377,7 @@ public import FLT.Mazur.IdealAdicRelativeGradedAlgebra
 public import FLT.Mazur.IdealAdicRelativeImageCoefficient
 public import FLT.Mazur.IdealAdicRelativeImageCoefficientTransition
 public import FLT.Mazur.IdealAdicRelativeImageOpenCover
+public import FLT.Mazur.IdealAdicRelativeImageTransitionTransport
 public import FLT.Mazur.IdealAdicRelativeLocalization
 public import FLT.Mazur.IdealAdicRelativeNoetherian
 public import FLT.Mazur.IdealAdicRelativeOverlapCoefficientCharts
@@ -3404,6 +3409,8 @@ public import FLT.Mazur.IdealAdicRelativeSheafGenerators
 public import FLT.Mazur.IdealAdicRelativeTilde
 public import FLT.Mazur.IdealAdicRelativeTransitionGeometry
 public import FLT.Mazur.IdealAdicRelativeTransitionRefinement
+public import FLT.Mazur.IdealAdicRelativeTripleAmbientCocycle
+public import FLT.Mazur.IdealAdicRelativeTripleAmbientMaps
 public import FLT.Mazur.IdealAdicRelativeTripleCoefficientCocycle
 public import FLT.Mazur.IdealAdicRelativeTripleCoefficientMaps
 public import FLT.Mazur.IdealAdicRelativeTripleCoefficientNormalization
@@ -3578,12 +3585,15 @@ public import FLT.Mazur.ModuleSheafGluing
 public import FLT.Mazur.ModuleSheafImageOpenSections
 public import FLT.Mazur.ModuleSheafInternalHom
 public import FLT.Mazur.ModuleSheafLocalHomComparison
+public import FLT.Mazur.ModuleSheafLocalHomNormalization
 public import FLT.Mazur.ModuleSheafLocalHomRefinement
+public import FLT.Mazur.ModuleSheafLocalIsoTransport
 public import FLT.Mazur.ModuleSheafMorphismGluing
 public import FLT.Mazur.ModuleSheafMorphismRefinement
 public import FLT.Mazur.ModuleSheafOpenImmersionGluing
 public import FLT.Mazur.ModuleSheafOpenImmersionLocalHom
 public import FLT.Mazur.ModuleSheafOpenIsoDetection
+public import FLT.Mazur.ModuleSheafOverlapCoordinateRefinement
 public import FLT.Mazur.ModuleSheafOverlapImageTransition
 public import FLT.Mazur.ModuleSheafPullbackIsoDetection
 public import FLT.Mazur.ModuleSheafPullbackMapRefinement
@@ -4058,6 +4068,7 @@ public import FLT.Mazur.SchemeAffineCommonCoverUniversal
 public import FLT.Mazur.SchemeAffineCommonRefinement
 public import FLT.Mazur.SchemeAffineCommonRefinementCompatibility
 public import FLT.Mazur.SchemeAffineCrossChartFamily
+public import FLT.Mazur.SchemeAffineCrossCoverCocycle
 public import FLT.Mazur.SchemeAffineCrossCoverCoherence
 public import FLT.Mazur.SchemeAffineCrossCoverDescent
 public import FLT.Mazur.SchemeAffineCrossCoverRefinement
@@ -4070,6 +4081,9 @@ public import FLT.Mazur.SchemeAffineCrossRefinementChoiceIndependence
 public import FLT.Mazur.SchemeAffineCrossRefinementComparison
 public import FLT.Mazur.SchemeAffineCrossRefinementCoverIndependence
 public import FLT.Mazur.SchemeAffineCrossRefinementEffectiveRestriction
+public import FLT.Mazur.SchemeAffineCrossRefinementFamily
+public import FLT.Mazur.SchemeAffineCrossRefinementFamilyComparison
+public import FLT.Mazur.SchemeAffineCrossRefinementFamilyReconstruction
 public import FLT.Mazur.SchemeAffineCrossRefinementMiddle
 public import FLT.Mazur.SchemeAffineCrossRefinementObjectPresentation
 public import FLT.Mazur.SchemeAffineCrossRefinementOuterRestriction
@@ -4083,6 +4097,7 @@ public import FLT.Mazur.SchemeAffineOverlapChartCommonRefinement
 public import FLT.Mazur.SchemeAffineOverlapChartComparison
 public import FLT.Mazur.SchemeAffineOverlapCommonComparison
 public import FLT.Mazur.SchemeAffineOverlapCommonCovering
+public import FLT.Mazur.SchemeAffineOverlapGluing
 public import FLT.Mazur.SchemeAffineOverlapLocalComparison
 public import FLT.Mazur.SchemeAffineOverlapLocalRefinement
 public import FLT.Mazur.SchemeAffineOverlapObjectwiseComparison
