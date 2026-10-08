@@ -3752,6 +3752,7 @@ public import FLT.Mazur.IncreasingCechCycles
 public import FLT.Mazur.IncreasingCechEvaluationComparison
 public import FLT.Mazur.IncreasingCechFlatTerms
 public import FLT.Mazur.IncreasingCechGenericCohomology
+public import FLT.Mazur.IncreasingCechGenericEvaluation
 public import FLT.Mazur.IncreasingCechGenericKernel
 public import FLT.Mazur.IncreasingCechGenericSections
 public import FLT.Mazur.IncreasingCechLocalization
