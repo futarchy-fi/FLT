@@ -3710,6 +3710,7 @@ public import FLT.Mazur.IncreasingCechGenericKernel
 public import FLT.Mazur.IncreasingCechLocalization
 public import FLT.Mazur.IncreasingCechProperFinite
 public import FLT.Mazur.IncreasingCechScalars
+public import FLT.Mazur.IncreasingCechZeroRestriction
 public import FLT.Mazur.InfinitesimalClosedFiberFunctions
 public import FLT.Mazur.InfinitesimalStructureProjection
 public import FLT.Mazur.InjectiveHorseshoe
