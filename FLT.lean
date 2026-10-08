@@ -4305,6 +4305,7 @@ public import FLT.Mazur.WeierstrassAffineAdditionGluing
 public import FLT.Mazur.WeierstrassAffineAdditionSwapDescent
 public import FLT.Mazur.WeierstrassAffineAdditionTransport
 public import FLT.Mazur.WeierstrassAffineInputFactorization
+public import FLT.Mazur.WeierstrassAffineInputTripleDomain
 public import FLT.Mazur.WeierstrassAffineInputTripleGlobal
 public import FLT.Mazur.WeierstrassAffineNegation
 public import FLT.Mazur.WeierstrassAffineNegationAddition
