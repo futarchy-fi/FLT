@@ -5,7 +5,7 @@ Authors: The FLT Project
 -/
 module
 
-public import FLT.Mazur.ModuleSheafGluing
+public import FLT.Mazur.ModuleSheafEvaluatedGluing
 public import FLT.Mazur.ModuleSheafLocalIsoTransport
 
 /-!
@@ -46,5 +46,13 @@ def ofPushforwardIso
     have he (z : Γ(N j, V)) : (e j).hom.app V ((e j).inv.app V z) = z :=
       congrArg (fun f ↦ f.app V z) (e j).inv_hom_id
     rw [he, hc i j k V hi hj hk]
+
+/-- Sealed ambient section cocycles also transfer to the original chart objects. -/
+def ofPushforwardIsoEval
+    (hc : ∀ i j k V (hi : V ≤ U i) (hj : V ≤ U j) (hk : V ≤ U k) (s : Γ(N i, V)),
+      localEval (t j k).hom (le_inf hj hk) (localEval (t i j).hom (le_inf hi hj) s) =
+        localEval (t i k).hom (le_inf hi hk) s) : Data U :=
+  ofPushforwardIso U M N e t (fun i j k V hi hj hk s ↦ by
+    simpa only [localEval] using hc i j k V hi hj hk s)
 
 end FLT.Mazur.ModuleSheafGluing
