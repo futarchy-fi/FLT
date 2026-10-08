@@ -4251,6 +4251,7 @@ public import FLT.Mazur.SchemeAffineSchemeTestCocycle
 public import FLT.Mazur.SchemeAffineSchemeTestComparison
 public import FLT.Mazur.SchemeAffineSchemeTestNaturality
 public import FLT.Mazur.SchemeAffineSchemeTestRefinement
+public import FLT.Mazur.SchemeAffineSourceGlobalRecovery
 public import FLT.Mazur.SchemeAffineSourceMapFaithful
 public import FLT.Mazur.SchemeAffineSourceRecovery
 public import FLT.Mazur.SchemeAffineSourceRecoveryCompatibility
