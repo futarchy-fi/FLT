@@ -4437,6 +4437,7 @@ public import FLT.Mazur.SchemeOverlapCocyclePullback
 public import FLT.Mazur.SchemeOverlapConjugation
 public import FLT.Mazur.SchemeOverlapDiagonalChart
 public import FLT.Mazur.SchemeOverlapDiagonalDetection
+public import FLT.Mazur.SchemeOverlapDiagonalSourceIso
 public import FLT.Mazur.SchemeOverlapNormalizationNaturality
 public import FLT.Mazur.SchemeOverlapProjectionComposition
 public import FLT.Mazur.SchemeOverlapRefinement
