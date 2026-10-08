@@ -3315,6 +3315,7 @@ public import FLT.Mazur.FaithfullyFlatFinitePresentation
 public import FLT.Mazur.FaithfullyFlatInvertible
 public import FLT.Mazur.FamilyTransport
 public import FLT.Mazur.FiberAffineOpenBaseChange
+public import FLT.Mazur.FiberAffineOpenBaseIso
 public import FLT.Mazur.FiniteAffineAtlasDiagramDescent
 public import FLT.Mazur.FiniteAffineBaseNeighborhood
 public import FLT.Mazur.FiniteAffineCoverDimension
