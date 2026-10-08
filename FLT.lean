@@ -4250,6 +4250,7 @@ public import FLT.Mazur.ProperGlobalSectionFinite
 public import FLT.Mazur.ProperIntegralConstantSections
 public import FLT.Mazur.ProperLineSheafDescent
 public import FLT.Mazur.ProperPointExtension
+public import FLT.Mazur.ProperPointedLineSheafDescent
 public import FLT.Mazur.ProperRingCohomologyFinite
 public import FLT.Mazur.ProperSectionGluing
 public import FLT.Mazur.ProperStalkExtension
