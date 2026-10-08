@@ -4429,6 +4429,7 @@ public import FLT.Mazur.WeierstrassReciprocalTripleAlgebra
 public import FLT.Mazur.WeierstrassReciprocalTripleCentered
 public import FLT.Mazur.WeierstrassReciprocalTripleCoordinates
 public import FLT.Mazur.WeierstrassReciprocalTripleCubicSlopes
+public import FLT.Mazur.WeierstrassReciprocalTripleDomain
 public import FLT.Mazur.WeierstrassReciprocalTripleGlobal
 public import FLT.Mazur.WeierstrassReciprocalTripleNumerators
 public import FLT.Mazur.WeierstrassReciprocalTripleSchemes
