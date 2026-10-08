@@ -3470,6 +3470,7 @@ public import FLT.Mazur.FiniteRelationLocalizationHomDescent
 public import FLT.Mazur.FiniteRelationLocalizationHomEquality
 public import FLT.Mazur.FiniteRelationLocalizationSpectrum
 public import FLT.Mazur.FiniteRelationLocalizationStages
+public import FLT.Mazur.FiniteRelationLocalizationSurjectiveDescent
 public import FLT.Mazur.FiniteRelationPrincipalCoverModels
 public import FLT.Mazur.FiniteRelationSpectrum
 public import FLT.Mazur.FiniteRelationStages
@@ -3497,6 +3498,7 @@ public import FLT.Mazur.FiniteTypePrincipalDiamonds
 public import FLT.Mazur.FiniteTypePrincipalFiniteMaps
 public import FLT.Mazur.FiniteTypePrincipalMaps
 public import FLT.Mazur.FiniteTypePrincipalPresentation
+public import FLT.Mazur.FiniteTypePrincipalSurjectiveLifts
 public import FLT.Mazur.FiniteTypeRelationPresentation
 public import FLT.Mazur.FinitelyPresentedIntersectionCocycleModel
 public import FLT.Mazur.FinitelyPresentedLineSheafDescent
@@ -4269,6 +4271,13 @@ public import FLT.Mazur.PrincipalFamilyStages
 public import FLT.Mazur.PrincipalGeneratorExtension
 public import FLT.Mazur.PrincipalIntegerModelIsomorphism
 public import FLT.Mazur.PrincipalIntegerRestriction
+public import FLT.Mazur.PrincipalLayeredCofinal
+public import FLT.Mazur.PrincipalLayeredDirected
+public import FLT.Mazur.PrincipalLayeredLimits
+public import FLT.Mazur.PrincipalLayeredPathEquationStages
+public import FLT.Mazur.PrincipalLayeredPathEquations
+public import FLT.Mazur.PrincipalLayeredPaths
+public import FLT.Mazur.PrincipalLayeredStages
 public import FLT.Mazur.PrincipalLocalizationGeneration
 public import FLT.Mazur.PrincipalLocalizationIntersection
 public import FLT.Mazur.PrincipalLocalizationPullback
@@ -4284,6 +4293,11 @@ public import FLT.Mazur.PrincipalSubmoduleCoordinates
 public import FLT.Mazur.PrincipalSubmoduleOverlap
 public import FLT.Mazur.PrincipalSubmoduleSectionLocalization
 public import FLT.Mazur.PrincipalTargetRestrictionIsomorphism
+public import FLT.Mazur.PrincipalTriangleCofinal
+public import FLT.Mazur.PrincipalTriangleDirected
+public import FLT.Mazur.PrincipalTriangleEquations
+public import FLT.Mazur.PrincipalTriangleSchemes
+public import FLT.Mazur.PrincipalTriangleStages
 public import FLT.Mazur.ProjectiveActionFieldExtension
 public import FLT.Mazur.ProjectiveActionPullback
 public import FLT.Mazur.ProjectiveAffineChartEmbedding
