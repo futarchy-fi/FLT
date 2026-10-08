@@ -4222,6 +4222,7 @@ public import FLT.Mazur.PrincipalFamilyStages
 public import FLT.Mazur.PrincipalGeneratorExtension
 public import FLT.Mazur.PrincipalIntegerModelIsomorphism
 public import FLT.Mazur.PrincipalIntegerRestriction
+public import FLT.Mazur.PrincipalLayeredCofinal
 public import FLT.Mazur.PrincipalLayeredDirected
 public import FLT.Mazur.PrincipalLayeredStages
 public import FLT.Mazur.PrincipalLocalizationGeneration
