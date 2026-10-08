@@ -4948,6 +4948,7 @@ public import FLT.Mazur.WeierstrassSmoothMixedAddition
 public import FLT.Mazur.WeierstrassSmoothMixedCommutativity
 public import FLT.Mazur.WeierstrassSmoothMixedCover
 public import FLT.Mazur.WeierstrassSmoothMixedLeftReciprocalTriple
+public import FLT.Mazur.WeierstrassSmoothMixedRightReciprocalTriple
 public import FLT.Mazur.WeierstrassSmoothNegation
 public import FLT.Mazur.WeierstrassSmoothNegationGraphs
 public import FLT.Mazur.WeierstrassSmoothOriginalAffine
