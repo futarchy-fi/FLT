@@ -3375,11 +3375,13 @@ public import FLT.Mazur.IdealAdicRelativeCoefficientLocalization
 public import FLT.Mazur.IdealAdicRelativeCoefficientModuleMap
 public import FLT.Mazur.IdealAdicRelativeCoefficientProjection
 public import FLT.Mazur.IdealAdicRelativeCoefficientRestriction
+public import FLT.Mazur.IdealAdicRelativeCoefficientSectionNaturality
 public import FLT.Mazur.IdealAdicRelativeCoefficientSheafCoherence
 public import FLT.Mazur.IdealAdicRelativeCoefficientSheafIso
 public import FLT.Mazur.IdealAdicRelativeCoefficientSheafMap
 public import FLT.Mazur.IdealAdicRelativeCoefficientTransportRefinement
 public import FLT.Mazur.IdealAdicRelativeCommonRefinement
+public import FLT.Mazur.IdealAdicRelativeDescendedUnderlying
 public import FLT.Mazur.IdealAdicRelativeFinitePresentation
 public import FLT.Mazur.IdealAdicRelativeGradedAlgebra
 public import FLT.Mazur.IdealAdicRelativeImageCoefficient
@@ -3413,7 +3415,10 @@ public import FLT.Mazur.IdealAdicRelativeProjectionSections
 public import FLT.Mazur.IdealAdicRelativePushforwardOpens
 public import FLT.Mazur.IdealAdicRelativePushforwardSections
 public import FLT.Mazur.IdealAdicRelativeQuasiCoherent
+public import FLT.Mazur.IdealAdicRelativeRecoveryIdentity
 public import FLT.Mazur.IdealAdicRelativeRecoveryRefinement
+public import FLT.Mazur.IdealAdicRelativeRecoverySectionRefinement
+public import FLT.Mazur.IdealAdicRelativeRecoverySections
 public import FLT.Mazur.IdealAdicRelativeRestriction
 public import FLT.Mazur.IdealAdicRelativeScheme
 public import FLT.Mazur.IdealAdicRelativeSchemeCharts
@@ -3624,6 +3629,9 @@ public import FLT.Mazur.ModuleSheafOpenImageMapRecovery
 public import FLT.Mazur.ModuleSheafOpenImageRecovery
 public import FLT.Mazur.ModuleSheafOpenImmersionGluing
 public import FLT.Mazur.ModuleSheafOpenImmersionLocalHom
+public import FLT.Mazur.ModuleSheafOpenImmersionRefinementSections
+public import FLT.Mazur.ModuleSheafOpenImmersionSections
+public import FLT.Mazur.ModuleSheafOpenImmersionTopSections
 public import FLT.Mazur.ModuleSheafOpenIsoDetection
 public import FLT.Mazur.ModuleSheafOverlapCoordinateRefinement
 public import FLT.Mazur.ModuleSheafOverlapImageTransition
@@ -4186,6 +4194,7 @@ public import FLT.Mazur.SchemeDescentPairTransport
 public import FLT.Mazur.SchemeDescentTransportSquares
 public import FLT.Mazur.SchemeGeometricDescentCocycleTest
 public import FLT.Mazur.SchemeGeometricDescentData
+public import FLT.Mazur.SchemeModulePullbackOpenUnits
 public import FLT.Mazur.SchemeModulePullbackUnits
 public import FLT.Mazur.SchemeOverlapBaseChange
 public import FLT.Mazur.SchemeOverlapCocycleChart
