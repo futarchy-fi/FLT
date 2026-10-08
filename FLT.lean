@@ -3144,6 +3144,7 @@ public import FLT.Mazur.EllipticIntegralChartCover
 public import FLT.Mazur.EllipticIntegralChartEvaluation
 public import FLT.Mazur.EllipticIntegralCuspNormalization
 public import FLT.Mazur.EllipticIntegralNodeNormalization
+public import FLT.Mazur.EllipticIntegralPointSection
 public import FLT.Mazur.EllipticIntegralSingularTranslation
 public import FLT.Mazur.EllipticLocalAddition
 public import FLT.Mazur.EllipticLocalChartPoint
