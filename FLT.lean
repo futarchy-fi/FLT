@@ -4223,6 +4223,7 @@ public import FLT.Mazur.PrincipalFamilyCofinal
 public import FLT.Mazur.PrincipalFamilyConeEquations
 public import FLT.Mazur.PrincipalFamilyDirected
 public import FLT.Mazur.PrincipalFamilyEquationStages
+public import FLT.Mazur.PrincipalFamilyIsomorphismAmbient
 public import FLT.Mazur.PrincipalFamilyIsomorphismLimits
 public import FLT.Mazur.PrincipalFamilyIsomorphismOpens
 public import FLT.Mazur.PrincipalFamilyIsomorphismRefinement
