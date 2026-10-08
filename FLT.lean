@@ -4821,6 +4821,7 @@ public import FLT.Mazur.WeierstrassPartialChartSmoothLocus
 public import FLT.Mazur.WeierstrassPartialFieldPointComparison
 public import FLT.Mazur.WeierstrassPartialOrdinaryPointComparison
 public import FLT.Mazur.WeierstrassPolynomialAdditionSwap
+public import FLT.Mazur.WeierstrassPolynomialFieldSmooth
 public import FLT.Mazur.WeierstrassPolynomialInputCurveComparison
 public import FLT.Mazur.WeierstrassPolynomialInputOutputOverlap
 public import FLT.Mazur.WeierstrassPolynomialInputTransition
