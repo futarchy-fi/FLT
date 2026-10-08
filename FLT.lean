@@ -2493,6 +2493,7 @@ public import FLT.Mazur.AcyclicPushforwardCohomology
 public import FLT.Mazur.AcyclicResolutionComparison
 public import FLT.Mazur.AdditiveComplexDirectSum
 public import FLT.Mazur.AdditiveComplexSumHomology
+public import FLT.Mazur.AdditiveComplexSumHomologyInclusion
 public import FLT.Mazur.AdditiveSheafModuleTransport
 public import FLT.Mazur.AdditiveSheafMultiplication
 public import FLT.Mazur.AdicCompletionAlgEquiv
@@ -2500,6 +2501,7 @@ public import FLT.Mazur.AdicCompletionPrincipal
 public import FLT.Mazur.AdicCompletionQuotientEquiv
 public import FLT.Mazur.AdicCompletionScalars
 public import FLT.Mazur.AffineAdicCohomologyImage
+public import FLT.Mazur.AffineAdicFormalComparison
 public import FLT.Mazur.AffineAnnihilator
 public import FLT.Mazur.AffineBaseSectionAlgebra
 public import FLT.Mazur.AffineBaseSectionFunctor
@@ -2718,12 +2720,15 @@ public import FLT.Mazur.AnnihilatorCoherence
 public import FLT.Mazur.AnnihilatorStalk
 public import FLT.Mazur.AnnihilatorSubsheaf
 public import FLT.Mazur.BaseAdicCohomologyFiltration
+public import FLT.Mazur.BaseAdicCohomologyImageStability
+public import FLT.Mazur.BaseAdicFormalInjectivity
 public import FLT.Mazur.BaseAdicHZeroImageStability
 public import FLT.Mazur.BaseAdicQuotientSpectrum
 public import FLT.Mazur.BaseAdicReesAffineOverlap
 public import FLT.Mazur.BaseAdicReesBaseScalars
 public import FLT.Mazur.BaseAdicReesChart
 public import FLT.Mazur.BaseAdicReesCocycle
+public import FLT.Mazur.BaseAdicReesCohomologyFinite
 public import FLT.Mazur.BaseAdicReesCommonRefinement
 public import FLT.Mazur.BaseAdicReesCover
 public import FLT.Mazur.BaseAdicReesGeometricRefinement
@@ -2734,6 +2739,9 @@ public import FLT.Mazur.BaseAdicReesModelBaseScalars
 public import FLT.Mazur.BaseAdicReesModelChartNaturality
 public import FLT.Mazur.BaseAdicReesModelCoefficientScalars
 public import FLT.Mazur.BaseAdicReesModelCohomologyFinite
+public import FLT.Mazur.BaseAdicReesModelCohomologyHomogeneous
+public import FLT.Mazur.BaseAdicReesModelCohomologyInclusion
+public import FLT.Mazur.BaseAdicReesModelCohomologyLinear
 public import FLT.Mazur.BaseAdicReesModelCohomologySum
 public import FLT.Mazur.BaseAdicReesModelDescent
 public import FLT.Mazur.BaseAdicReesModelDirectImageCohomology
@@ -3446,6 +3454,8 @@ public import FLT.Mazur.IdealAdicCohomologyImage
 public import FLT.Mazur.IdealAdicCohomologyQuotient
 public import FLT.Mazur.IdealAdicCohomologyScalars
 public import FLT.Mazur.IdealAdicFormalComparison
+public import FLT.Mazur.IdealAdicFormalFiniteComparison
+public import FLT.Mazur.IdealAdicFormalInjectivity
 public import FLT.Mazur.IdealAdicGradedAssociativity
 public import FLT.Mazur.IdealAdicGradedBaseAlgebra
 public import FLT.Mazur.IdealAdicGradedBaseProduct
@@ -3622,6 +3632,7 @@ public import FLT.Mazur.IntegralBase
 public import FLT.Mazur.IntegralClosedSupport
 public import FLT.Mazur.IntegralDimension
 public import FLT.Mazur.IntegralPointExtension
+public import FLT.Mazur.IntegralShortHomologyNaturality
 public import FLT.Mazur.IntersectionDiagramGluing
 public import FLT.Mazur.IntersectionGluingCharts
 public import FLT.Mazur.IntersectionGluingSections
@@ -3840,6 +3851,7 @@ public import FLT.Mazur.NoetherianModuleSum
 public import FLT.Mazur.NoetherianModuleSumInclusions
 public import FLT.Mazur.NoetherianSumCechCohomology
 public import FLT.Mazur.NoetherianSumCechComplex
+public import FLT.Mazur.NoetherianSumCechInclusion
 public import FLT.Mazur.NoetherianSumCechTerms
 public import FLT.Mazur.OneGonAffineCover
 public import FLT.Mazur.OneGonAffineNormalization
@@ -4515,6 +4527,7 @@ public import FLT.Mazur.SheafPullbackRetractionSquare
 public import FLT.Mazur.SheafPullbackSectionReconstruction
 public import FLT.Mazur.SheafPullbackSectionSquare
 public import FLT.Mazur.SheafPullbackTestReconstruction
+public import FLT.Mazur.ShortComplexSumHomologyInclusion
 public import FLT.Mazur.SmoothCurveDimension
 public import FLT.Mazur.SmoothDimension
 public import FLT.Mazur.SmoothDimensionBound
