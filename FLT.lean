@@ -2491,6 +2491,7 @@ public import FLT.Mazur.AbsoluteDirectImageCohomology
 public import FLT.Mazur.AcyclicDirectImageResolution
 public import FLT.Mazur.AcyclicPushforwardCohomology
 public import FLT.Mazur.AcyclicResolutionComparison
+public import FLT.Mazur.AdditiveSheafModuleTransport
 public import FLT.Mazur.AdditiveSheafMultiplication
 public import FLT.Mazur.AdicCompletionAlgEquiv
 public import FLT.Mazur.AdicCompletionPrincipal
