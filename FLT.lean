@@ -4541,6 +4541,7 @@ public import FLT.Mazur.WeierstrassCubicEquationTransition
 public import FLT.Mazur.WeierstrassCubicMultiplication
 public import FLT.Mazur.WeierstrassCubicMultiplicationMono
 public import FLT.Mazur.WeierstrassCubicPolarization
+public import FLT.Mazur.WeierstrassCubicQuotient
 public import FLT.Mazur.WeierstrassCubicSection
 public import FLT.Mazur.WeierstrassFieldChartPresentation
 public import FLT.Mazur.WeierstrassFiveAffineTriple
