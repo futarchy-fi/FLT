@@ -4912,6 +4912,7 @@ public import FLT.Mazur.WeierstrassReciprocalTripleNumerators
 public import FLT.Mazur.WeierstrassReciprocalTripleSchemes
 public import FLT.Mazur.WeierstrassReciprocalTripleSlopes
 public import FLT.Mazur.WeierstrassReciprocalZeroPointComparison
+public import FLT.Mazur.WeierstrassRegularChartSectionDescent
 public import FLT.Mazur.WeierstrassRelativeSmoothOpen
 public import FLT.Mazur.WeierstrassSameOutputIntersections
 public import FLT.Mazur.WeierstrassScaledChartComparison
