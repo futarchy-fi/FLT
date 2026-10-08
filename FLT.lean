@@ -2709,6 +2709,7 @@ public import FLT.Mazur.AnnihilatorStalk
 public import FLT.Mazur.AnnihilatorSubsheaf
 public import FLT.Mazur.BaseAdicCohomologyFiltration
 public import FLT.Mazur.BaseAdicQuotientSpectrum
+public import FLT.Mazur.BaseAdicReesChart
 public import FLT.Mazur.BaseAdicThickening
 public import FLT.Mazur.BaseChangedPresentationModel
 public import FLT.Mazur.BinaryOpenDescent
