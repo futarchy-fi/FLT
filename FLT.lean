@@ -4874,6 +4874,7 @@ public import FLT.Mazur.WeierstrassScaledChartComparison
 public import FLT.Mazur.WeierstrassSingularJetObstruction
 public import FLT.Mazur.WeierstrassSingularJetTranslation
 public import FLT.Mazur.WeierstrassSlopeSwapFormula
+public import FLT.Mazur.WeierstrassSmoothChartCompatibility
 public import FLT.Mazur.WeierstrassSmoothFiberCore
 public import FLT.Mazur.WeierstrassSmoothNegation
 public import FLT.Mazur.WeierstrassSmoothZeroSection
