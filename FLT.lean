@@ -4506,6 +4506,7 @@ public import FLT.Mazur.SchemePullbackSquareComposition
 public import FLT.Mazur.SchemePullbackSquareIdentity
 public import FLT.Mazur.SchemeRecognitionTransport
 public import FLT.Mazur.SchemeReconstructionOverlapSquare
+public import FLT.Mazur.SchemeReducedHZeroBaseChange
 public import FLT.Mazur.SchemeReducedRelativeBaseChange
 public import FLT.Mazur.SchemeReducedRelativeHZero
 public import FLT.Mazur.SchemeReducedRelativeSections
