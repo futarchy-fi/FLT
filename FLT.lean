@@ -2627,12 +2627,14 @@ public import FLT.Mazur.AffinePieceSectionLocalization
 public import FLT.Mazur.AffineProductMap
 public import FLT.Mazur.AffinePullbackCoefficientRecognition
 public import FLT.Mazur.AffinePullbackComparisonSections
+public import FLT.Mazur.AffinePullbackCompositeTransport
 public import FLT.Mazur.AffinePullbackCorner
 public import FLT.Mazur.AffinePullbackEpiReflection
 public import FLT.Mazur.AffinePullbackHomExt
 public import FLT.Mazur.AffinePullbackIdeal
 public import FLT.Mazur.AffinePullbackIntersection
 public import FLT.Mazur.AffinePullbackNormalization
+public import FLT.Mazur.AffinePullbackNormalizedSquare
 public import FLT.Mazur.AffinePushforwardCohomology
 public import FLT.Mazur.AffinePushforwardQuasicoherent
 public import FLT.Mazur.AffineQuasiCoherentBaseChange
@@ -4064,7 +4066,11 @@ public import FLT.Mazur.SchemeAffineDescentChart
 public import FLT.Mazur.SchemeAffineOpenOverlapCover
 public import FLT.Mazur.SchemeAffineOverlapChartCommonRefinement
 public import FLT.Mazur.SchemeAffineOverlapChartComparison
+public import FLT.Mazur.SchemeAffineOverlapCommonComparison
+public import FLT.Mazur.SchemeAffineOverlapCommonCovering
 public import FLT.Mazur.SchemeAffineOverlapLocalComparison
+public import FLT.Mazur.SchemeAffineOverlapLocalRefinement
+public import FLT.Mazur.SchemeAffineOverlapObjectwiseComparison
 public import FLT.Mazur.SchemeAffineRefinementCompatibility
 public import FLT.Mazur.SchemeAffineTensorCrossRefinement
 public import FLT.Mazur.SchemeBaseChangeLimit
