@@ -3749,6 +3749,7 @@ public import FLT.Mazur.IncreasingCechCartesianTerms
 public import FLT.Mazur.IncreasingCechCohomology
 public import FLT.Mazur.IncreasingCechComplex
 public import FLT.Mazur.IncreasingCechCycles
+public import FLT.Mazur.IncreasingCechEvaluationComparison
 public import FLT.Mazur.IncreasingCechFlatTerms
 public import FLT.Mazur.IncreasingCechGenericCohomology
 public import FLT.Mazur.IncreasingCechGenericKernel
