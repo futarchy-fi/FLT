@@ -4555,6 +4555,7 @@ public import FLT.Mazur.SequentialCechLocalization
 public import FLT.Mazur.SequentialCochainBoundary
 public import FLT.Mazur.SequentialFiniteProducts
 public import FLT.Mazur.SheafPullbackCoordinateRecovery
+public import FLT.Mazur.SheafPullbackCoordinateRecoveryNaturality
 public import FLT.Mazur.SheafPullbackLocalComparison
 public import FLT.Mazur.SheafPullbackMapNormalization
 public import FLT.Mazur.SheafPullbackMapNormalizationNaturality
