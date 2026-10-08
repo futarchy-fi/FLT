@@ -2738,6 +2738,7 @@ public import FLT.Mazur.BaseAdicReesModelProjectionNaturality
 public import FLT.Mazur.BaseAdicReesModelProjectionSections
 public import FLT.Mazur.BaseAdicReesModelPushforward
 public import FLT.Mazur.BaseAdicReesModelRestrictionRecovery
+public import FLT.Mazur.BaseAdicReesModelScalarRestriction
 public import FLT.Mazur.BaseAdicReesModelSectionCoordinates
 public import FLT.Mazur.BaseAdicReesModelSheafSum
 public import FLT.Mazur.BaseAdicReesModelSourceScalars
