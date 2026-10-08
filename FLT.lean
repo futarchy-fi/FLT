@@ -3132,6 +3132,8 @@ public import FLT.Mazur.EllipticDoubleRootEvenSlope
 public import FLT.Mazur.EllipticDoubleRootIteration
 public import FLT.Mazur.EllipticDoubleRootOddBound
 public import FLT.Mazur.EllipticDoubleRootSeparable
+public import FLT.Mazur.EllipticE0GeometricGroup
+public import FLT.Mazur.EllipticE0SectionEquiv
 public import FLT.Mazur.EllipticExtensionChartClosure
 public import FLT.Mazur.EllipticExtensionClosureFinite
 public import FLT.Mazur.EllipticExtensionClosureQuasiFinite
@@ -3179,6 +3181,9 @@ public import FLT.Mazur.EllipticIntegralChartCover
 public import FLT.Mazur.EllipticIntegralChartEvaluation
 public import FLT.Mazur.EllipticIntegralCuspNormalization
 public import FLT.Mazur.EllipticIntegralNodeNormalization
+public import FLT.Mazur.EllipticIntegralPointSection
+public import FLT.Mazur.EllipticIntegralSectionIdentity
+public import FLT.Mazur.EllipticIntegralSectionReduction
 public import FLT.Mazur.EllipticIntegralSingularTranslation
 public import FLT.Mazur.EllipticLocalAddition
 public import FLT.Mazur.EllipticLocalChartPoint
@@ -3265,6 +3270,7 @@ public import FLT.Mazur.EllipticNonsplitNodeGroup
 public import FLT.Mazur.EllipticNonsplitNodeParameter
 public import FLT.Mazur.EllipticNonsplitNormOneHom
 public import FLT.Mazur.EllipticNormalizedDoubleRoot
+public import FLT.Mazur.EllipticNormalizedIntegralLift
 public import FLT.Mazur.EllipticNormalizedMinimalAdditive
 public import FLT.Mazur.EllipticNormalizedSingularity
 public import FLT.Mazur.EllipticNormalizedSlope
@@ -3298,6 +3304,7 @@ public import FLT.Mazur.EllipticRepeatedCubicPoint
 public import FLT.Mazur.EllipticRepeatedCubicTranslation
 public import FLT.Mazur.EllipticScaledTorsionReduction
 public import FLT.Mazur.EllipticScalingSmoothTorsion
+public import FLT.Mazur.EllipticSectionSpecialFiber
 public import FLT.Mazur.EllipticSemistableExtension
 public import FLT.Mazur.EllipticShearDescent
 public import FLT.Mazur.EllipticShearedComponentExtension
@@ -3315,6 +3322,7 @@ public import FLT.Mazur.EllipticSmallRamificationSpecialization
 public import FLT.Mazur.EllipticSmallRamificationTorsion
 public import FLT.Mazur.EllipticSmallResidueComponents
 public import FLT.Mazur.EllipticSmallResidueTorsion
+public import FLT.Mazur.EllipticSmoothIntegralSection
 public import FLT.Mazur.EllipticSmoothPointChange
 public import FLT.Mazur.EllipticSmoothReduction
 public import FLT.Mazur.EllipticSmoothReductionAddition
@@ -3361,6 +3369,7 @@ public import FLT.Mazur.EllipticSubgroupGenericDensity
 public import FLT.Mazur.EllipticSubgroupGenericHopfComparison
 public import FLT.Mazur.EllipticSubgroupGenericSection
 public import FLT.Mazur.EllipticSubgroupGenericSectionInjective
+public import FLT.Mazur.EllipticSubgroupGeometricComponent
 public import FLT.Mazur.EllipticSubgroupGlobalAlgebra
 public import FLT.Mazur.EllipticSubgroupGlobalEvaluation
 public import FLT.Mazur.EllipticSubgroupGlobalRank
@@ -4522,6 +4531,7 @@ public import FLT.Mazur.PushoutModuleScalars
 public import FLT.Mazur.QuadraticComponentBound
 public import FLT.Mazur.QuasiCoherentAffineBasePullback
 public import FLT.Mazur.RationalFibers
+public import FLT.Mazur.RationalPrimeTorsionGeometricModel
 public import FLT.Mazur.RationalPrimeTorsionLocalModel
 public import FLT.Mazur.ReconstructionComposition
 public import FLT.Mazur.ReesAffineModel
@@ -5385,6 +5395,8 @@ public import FLT.Mazur.WeierstrassSmoothAffineTripleDescent
 public import FLT.Mazur.WeierstrassSmoothAllOrdinaryTriple
 public import FLT.Mazur.WeierstrassSmoothAssociativity
 public import FLT.Mazur.WeierstrassSmoothChartCompatibility
+public import FLT.Mazur.WeierstrassSmoothCoefficientPreimage
+public import FLT.Mazur.WeierstrassSmoothConnected
 public import FLT.Mazur.WeierstrassSmoothCrossAffine
 public import FLT.Mazur.WeierstrassSmoothCrossPolynomial
 public import FLT.Mazur.WeierstrassSmoothFactorAddition
@@ -5416,11 +5428,15 @@ public import FLT.Mazur.WeierstrassSmoothMixedLeftReciprocalTriple
 public import FLT.Mazur.WeierstrassSmoothMixedRightReciprocalTriple
 public import FLT.Mazur.WeierstrassSmoothNegation
 public import FLT.Mazur.WeierstrassSmoothNegationGraphs
+public import FLT.Mazur.WeierstrassSmoothNonoppositePoints
+public import FLT.Mazur.WeierstrassSmoothOrdinaryPointComparison
 public import FLT.Mazur.WeierstrassSmoothOriginalAffine
 public import FLT.Mazur.WeierstrassSmoothPairAffineDescent
+public import FLT.Mazur.WeierstrassSmoothPointEquiv
 public import FLT.Mazur.WeierstrassSmoothPolynomialDomain
 public import FLT.Mazur.WeierstrassSmoothProductFieldPoints
 public import FLT.Mazur.WeierstrassSmoothProductOpen
+public import FLT.Mazur.WeierstrassSmoothProjectiveGroup
 public import FLT.Mazur.WeierstrassSmoothReciprocalTriple
 public import FLT.Mazur.WeierstrassSmoothSevenPoints
 public import FLT.Mazur.WeierstrassSmoothTransportedComparison
