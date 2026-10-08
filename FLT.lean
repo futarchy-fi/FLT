@@ -3081,6 +3081,7 @@ public import FLT.Mazur.DisjointClosedCoproduct
 public import FLT.Mazur.DisjointGenericNeighborhoods
 public import FLT.Mazur.DisjointRestrictionIso
 public import FLT.Mazur.DisjointStructureCohomology
+public import FLT.Mazur.DivisorBaseChangeRank
 public import FLT.Mazur.DivisorCanonicalComposition
 public import FLT.Mazur.DivisorCanonicalOperations
 public import FLT.Mazur.DivisorCanonicalSection
