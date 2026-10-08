@@ -4908,6 +4908,7 @@ public import FLT.Mazur.WeierstrassSmoothProductFieldPoints
 public import FLT.Mazur.WeierstrassSmoothProductOpen
 public import FLT.Mazur.WeierstrassSmoothTransportedComparison
 public import FLT.Mazur.WeierstrassSmoothTransportedCover
+public import FLT.Mazur.WeierstrassSmoothYProductCover
 public import FLT.Mazur.WeierstrassSmoothZeroSection
 public import FLT.Mazur.WeierstrassSpecSectionMorphism
 public import FLT.Mazur.WeierstrassSpecSections
