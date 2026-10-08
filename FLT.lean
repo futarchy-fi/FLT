@@ -3076,6 +3076,7 @@ public import FLT.Mazur.DedekindPointExtension
 public import FLT.Mazur.DirectImageInjectives
 public import FLT.Mazur.DirectSumLocalization
 public import FLT.Mazur.DisjointClosedCoproduct
+public import FLT.Mazur.DisjointGenericNeighborhoods
 public import FLT.Mazur.DisjointStructureCohomology
 public import FLT.Mazur.DivisorCanonicalComposition
 public import FLT.Mazur.DivisorCanonicalOperations
