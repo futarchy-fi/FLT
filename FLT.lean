@@ -3416,6 +3416,7 @@ public import FLT.Mazur.FixedTargetIntegerModel
 public import FLT.Mazur.FlasqueDirectImageAcyclic
 public import FLT.Mazur.FlatCartesianSectionGluing
 public import FLT.Mazur.FlatFiniteEqualizer
+public import FLT.Mazur.FlatGlobalFunctionsPushout
 public import FLT.Mazur.FlatGlobalGenerationDescent
 public import FLT.Mazur.FlatGlobalSectionBaseChange
 public import FLT.Mazur.FlatGlobalSectionExpansion
