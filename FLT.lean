@@ -4349,6 +4349,7 @@ public import FLT.Mazur.WeierstrassOrdinaryGlobalDomains
 public import FLT.Mazur.WeierstrassOrdinaryNegationEmpty
 public import FLT.Mazur.WeierstrassOrdinaryTripleAlgebra
 public import FLT.Mazur.WeierstrassOrdinaryTripleCoordinates
+public import FLT.Mazur.WeierstrassOrdinaryTripleGlobalComparison
 public import FLT.Mazur.WeierstrassOrdinaryTripleSchemes
 public import FLT.Mazur.WeierstrassPolynomialAdditionSwap
 public import FLT.Mazur.WeierstrassPolynomialInputCurveComparison
