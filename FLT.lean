@@ -2921,6 +2921,7 @@ public import FLT.Mazur.ClosedImmersionModulePushforward
 public import FLT.Mazur.ClosedLineProjectionFormula
 public import FLT.Mazur.ClosedModuleDescent
 public import FLT.Mazur.ClosedPointLineSection
+public import FLT.Mazur.ClosedPointQuotientFiber
 public import FLT.Mazur.ClosedProjectiveSerreVanishing
 public import FLT.Mazur.ClosedPushforwardCohomology
 public import FLT.Mazur.ClosedPushforwardFull
