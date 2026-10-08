@@ -3831,6 +3831,7 @@ public import FLT.Mazur.IteratedPolynomialStableRelations
 public import FLT.Mazur.IteratedPolynomialStableStages
 public import FLT.Mazur.IteratedQuotientAlgebra
 public import FLT.Mazur.IteratedQuotientArrow
+public import FLT.Mazur.IteratedQuotientDiagramStages
 public import FLT.Mazur.IteratedQuotientProjection
 public import FLT.Mazur.IteratedQuotientRepresentatives
 public import FLT.Mazur.LaurentRingSurjectivity
