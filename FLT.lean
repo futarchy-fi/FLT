@@ -3145,6 +3145,7 @@ public import FLT.Mazur.EllipticLocalMultiplication
 public import FLT.Mazur.EllipticLocalValuation
 public import FLT.Mazur.EllipticMinimalAdditiveComponents
 public import FLT.Mazur.EllipticMinimalDiscriminant
+public import FLT.Mazur.EllipticMultiplicativeValuationEquation
 public import FLT.Mazur.EllipticNodalDepthNormalization
 public import FLT.Mazur.EllipticNodalDeterminantStep
 public import FLT.Mazur.EllipticNodalDiscriminantDepth
