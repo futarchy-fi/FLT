@@ -2497,10 +2497,12 @@ public import FLT.Mazur.AdicCompletionAlgEquiv
 public import FLT.Mazur.AdicCompletionPrincipal
 public import FLT.Mazur.AdicCompletionQuotientEquiv
 public import FLT.Mazur.AdicCompletionScalars
+public import FLT.Mazur.AffineAdicCohomologyImage
 public import FLT.Mazur.AffineAnnihilator
 public import FLT.Mazur.AffineBaseSectionAlgebra
 public import FLT.Mazur.AffineBaseSectionFunctor
 public import FLT.Mazur.AffineBasisFiniteCover
+public import FLT.Mazur.AffineBasisModuleMorphism
 public import FLT.Mazur.AffineBasisSheafExtension
 public import FLT.Mazur.AffineBranchSequence
 public import FLT.Mazur.AffineCanonicalMapCompatibility
@@ -2705,6 +2707,7 @@ public import FLT.Mazur.AmplePrincipalLocality
 public import FLT.Mazur.AnnihilatorCoherence
 public import FLT.Mazur.AnnihilatorStalk
 public import FLT.Mazur.AnnihilatorSubsheaf
+public import FLT.Mazur.BaseAdicCohomologyFiltration
 public import FLT.Mazur.BaseAdicQuotientSpectrum
 public import FLT.Mazur.BaseAdicThickening
 public import FLT.Mazur.BaseChangedPresentationModel
@@ -2850,6 +2853,8 @@ public import FLT.Mazur.CoherentSubquotient
 public import FLT.Mazur.CoherentSubsheafACC
 public import FLT.Mazur.CoherentSupport
 public import FLT.Mazur.CoherentSupportedDecomposition
+public import FLT.Mazur.CohomologyImageArtinRees
+public import FLT.Mazur.CohomologyImageReesModule
 public import FLT.Mazur.ComaximalIdealSequence
 public import FLT.Mazur.CommonCoefficientStage
 public import FLT.Mazur.CommonIdealDirectSum
@@ -3340,11 +3345,16 @@ public import FLT.Mazur.IdealAdicClosedGradedSheaf
 public import FLT.Mazur.IdealAdicClosedScalar
 public import FLT.Mazur.IdealAdicCoefficientAffineSheaf
 public import FLT.Mazur.IdealAdicCohomology
+public import FLT.Mazur.IdealAdicCohomologyImage
+public import FLT.Mazur.IdealAdicCohomologyQuotient
+public import FLT.Mazur.IdealAdicCohomologyScalars
+public import FLT.Mazur.IdealAdicFormalComparison
 public import FLT.Mazur.IdealAdicGradedAssociativity
 public import FLT.Mazur.IdealAdicGradedBaseAlgebra
 public import FLT.Mazur.IdealAdicGradedBaseProduct
 public import FLT.Mazur.IdealAdicGradedClosedAction
 public import FLT.Mazur.IdealAdicGradedClosedTwist
+public import FLT.Mazur.IdealAdicGradedComponentRestriction
 public import FLT.Mazur.IdealAdicGradedDegreeZero
 public import FLT.Mazur.IdealAdicGradedDegreeZeroGeneration
 public import FLT.Mazur.IdealAdicGradedLineTwist
@@ -3388,7 +3398,9 @@ public import FLT.Mazur.IdealAdicRelativeDescendedMultiplication
 public import FLT.Mazur.IdealAdicRelativeDescendedScalars
 public import FLT.Mazur.IdealAdicRelativeDescendedUnderlying
 public import FLT.Mazur.IdealAdicRelativeFinitePresentation
+public import FLT.Mazur.IdealAdicRelativeGeometricScalars
 public import FLT.Mazur.IdealAdicRelativeGradedAlgebra
+public import FLT.Mazur.IdealAdicRelativeHomogeneousRetract
 public import FLT.Mazur.IdealAdicRelativeImageCoefficient
 public import FLT.Mazur.IdealAdicRelativeImageCoefficientCocycle
 public import FLT.Mazur.IdealAdicRelativeImageCoefficientTransition
@@ -3423,6 +3435,7 @@ public import FLT.Mazur.IdealAdicRelativePushforwardSerreBound
 public import FLT.Mazur.IdealAdicRelativeQuasiCoherent
 public import FLT.Mazur.IdealAdicRelativeRecoveryIdentity
 public import FLT.Mazur.IdealAdicRelativeRecoveryRefinement
+public import FLT.Mazur.IdealAdicRelativeRecoveryScalars
 public import FLT.Mazur.IdealAdicRelativeRecoverySectionRefinement
 public import FLT.Mazur.IdealAdicRelativeRecoverySections
 public import FLT.Mazur.IdealAdicRelativeRestriction
@@ -3446,6 +3459,8 @@ public import FLT.Mazur.IdealAdicRelativeTripleImageOpen
 public import FLT.Mazur.IdealAdicRelativeTripleOverlapCover
 public import FLT.Mazur.IdealAdicRelativeTripleProjections
 public import FLT.Mazur.IdealAdicRelativeTripleRefinement
+public import FLT.Mazur.IdealAdicUniformGradedVanishing
+public import FLT.Mazur.IdealAdicUniformQuotientVanishing
 public import FLT.Mazur.IdealCartierNeighborhood
 public import FLT.Mazur.IdealCohomologyAmpleAnyBase
 public import FLT.Mazur.IdealCohomologyAmpleCriterion
@@ -3461,6 +3476,10 @@ public import FLT.Mazur.IdealPowerExtensionGluing
 public import FLT.Mazur.IdealPowerGenericComparison
 public import FLT.Mazur.IdealPowerMultiplication
 public import FLT.Mazur.IdealPowerProductSurjective
+public import FLT.Mazur.IdealPowerReesLocalization
+public import FLT.Mazur.IdealPowerReesRestriction
+public import FLT.Mazur.IdealPowerReesSections
+public import FLT.Mazur.IdealPowerScalarLift
 public import FLT.Mazur.IdealPowerVanishingTransfer
 public import FLT.Mazur.IdealQuotientExact
 public import FLT.Mazur.IdealQuotientSectionLift
@@ -3649,6 +3668,7 @@ public import FLT.Mazur.ModuleSheafProjectionNormalization
 public import FLT.Mazur.ModuleSheafPullbackIsoDetection
 public import FLT.Mazur.ModuleSheafPullbackMapRefinement
 public import FLT.Mazur.ModuleSheafRefinementGluing
+public import FLT.Mazur.ModuleSheafSectionScalars
 public import FLT.Mazur.ModuleSheafTensor
 public import FLT.Mazur.ModuleSheafTensorAffine
 public import FLT.Mazur.ModuleSheafTensorAffineOpen
@@ -4062,6 +4082,12 @@ public import FLT.Mazur.QuadraticComponentBound
 public import FLT.Mazur.QuasiCoherentAffineBasePullback
 public import FLT.Mazur.RationalFibers
 public import FLT.Mazur.ReconstructionComposition
+public import FLT.Mazur.ReesAffineModel
+public import FLT.Mazur.ReesAlgebraBaseChange
+public import FLT.Mazur.ReesAlgebraMap
+public import FLT.Mazur.ReesModuleBaseChange
+public import FLT.Mazur.ReesModuleDirectSum
+public import FLT.Mazur.ReesModuleMap
 public import FLT.Mazur.RefinedChartSpectrum
 public import FLT.Mazur.RelativeAmpleAffineBaseChange
 public import FLT.Mazur.RelativeAmpleBaseChange
