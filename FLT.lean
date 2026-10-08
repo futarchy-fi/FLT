@@ -4663,6 +4663,7 @@ public import FLT.Mazur.WeierstrassInfinityDenominatorShift
 public import FLT.Mazur.WeierstrassInfinityDividedLine
 public import FLT.Mazur.WeierstrassInfinityDividedQuadraticCoefficients
 public import FLT.Mazur.WeierstrassInfinityFactorCancellation
+public import FLT.Mazur.WeierstrassInfinityFieldSmooth
 public import FLT.Mazur.WeierstrassInfinityFourLawAffine
 public import FLT.Mazur.WeierstrassInfinityGlobalDomain
 public import FLT.Mazur.WeierstrassInfinityHomogeneousComparison
