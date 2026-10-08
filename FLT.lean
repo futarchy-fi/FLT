@@ -4640,6 +4640,7 @@ public import FLT.Mazur.WeierstrassPolynomialOutputComparison
 public import FLT.Mazur.WeierstrassPolynomialOutputIntersections
 public import FLT.Mazur.WeierstrassProductBoundaryPoints
 public import FLT.Mazur.WeierstrassProductOverlap
+public import FLT.Mazur.WeierstrassProductOverlapFlat
 public import FLT.Mazur.WeierstrassProductOverlapScheme
 public import FLT.Mazur.WeierstrassProjectiveAdditionBoundary
 public import FLT.Mazur.WeierstrassProjectiveAdditionChart
