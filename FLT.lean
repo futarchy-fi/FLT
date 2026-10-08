@@ -5149,6 +5149,7 @@ public import FLT.Mazur.WeierstrassModificationXMorphism
 public import FLT.Mazur.WeierstrassModificationXOriginalLocalization
 public import FLT.Mazur.WeierstrassModificationXOverlap
 public import FLT.Mazur.WeierstrassModificationXPresentation
+public import FLT.Mazur.WeierstrassModificationXReesChart
 public import FLT.Mazur.WeierstrassModificationXSaturation
 public import FLT.Mazur.WeierstrassModificationXTotalTransform
 public import FLT.Mazur.WeierstrassModificationYAlgebra
