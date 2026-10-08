@@ -4202,6 +4202,7 @@ public import FLT.Mazur.SchemeAffineBaseRecovery
 public import FLT.Mazur.SchemeAffineBaseRecoveryCharts
 public import FLT.Mazur.SchemeAffineBaseRecoveryCompatibility
 public import FLT.Mazur.SchemeAffineBaseRecoveryNaturality
+public import FLT.Mazur.SchemeAffineBaseSourceRecovery
 public import FLT.Mazur.SchemeAffineBaseTripleCocycle
 public import FLT.Mazur.SchemeAffineChartBaseChange
 public import FLT.Mazur.SchemeAffineChartComparisonComposition
