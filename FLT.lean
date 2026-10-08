@@ -2719,8 +2719,12 @@ public import FLT.Mazur.AmplePrincipalLocality
 public import FLT.Mazur.AnnihilatorCoherence
 public import FLT.Mazur.AnnihilatorStalk
 public import FLT.Mazur.AnnihilatorSubsheaf
+public import FLT.Mazur.BaseAdicClosedAmpleSections
 public import FLT.Mazur.BaseAdicCohomologyFiltration
 public import FLT.Mazur.BaseAdicCohomologyImageStability
+public import FLT.Mazur.BaseAdicCohomologyReconstruction
+public import FLT.Mazur.BaseAdicCohomologySeparated
+public import FLT.Mazur.BaseAdicFiniteSectionLifting
 public import FLT.Mazur.BaseAdicFormalFunctions
 public import FLT.Mazur.BaseAdicFormalInjectivity
 public import FLT.Mazur.BaseAdicFormalSurjectivity
@@ -2817,6 +2821,7 @@ public import FLT.Mazur.BaseAdicReesSpectrumTripleSheafCocycle
 public import FLT.Mazur.BaseAdicReesSpectrumTripleSheafMaps
 public import FLT.Mazur.BaseAdicReesSpectrumTripleSheafNormalization
 public import FLT.Mazur.BaseAdicReesTensorModule
+public import FLT.Mazur.BaseAdicSectionReconstruction
 public import FLT.Mazur.BaseAdicThickening
 public import FLT.Mazur.BaseChangedPresentationModel
 public import FLT.Mazur.BinaryOpenDescent
@@ -3348,6 +3353,8 @@ public import FLT.Mazur.FiniteLineCocycleModel
 public import FLT.Mazur.FiniteLineSheafDescent
 public import FLT.Mazur.FiniteLineSheafModel
 public import FLT.Mazur.FiniteLocalizedIntegerComparisons
+public import FLT.Mazur.FiniteModuleAdicComplete
+public import FLT.Mazur.FiniteModuleAdicCompleteLarge
 public import FLT.Mazur.FiniteOpenImmersionIntegerDescent
 public import FLT.Mazur.FinitePointAlgebraInterpolation
 public import FLT.Mazur.FinitePointKernelCover
@@ -3447,6 +3454,8 @@ public import FLT.Mazur.IdealAdicAffineProjection
 public import FLT.Mazur.IdealAdicBaseGradedGenerators
 public import FLT.Mazur.IdealAdicBasePowerGenerators
 public import FLT.Mazur.IdealAdicChartLocalization
+public import FLT.Mazur.IdealAdicClosedAmpleSerreBound
+public import FLT.Mazur.IdealAdicClosedAmpleVanishing
 public import FLT.Mazur.IdealAdicClosedCoefficientCharts
 public import FLT.Mazur.IdealAdicClosedGradedModule
 public import FLT.Mazur.IdealAdicClosedGradedRestriction
@@ -3456,9 +3465,12 @@ public import FLT.Mazur.IdealAdicCoefficientAffineSheaf
 public import FLT.Mazur.IdealAdicCohomology
 public import FLT.Mazur.IdealAdicCohomologyImage
 public import FLT.Mazur.IdealAdicCohomologyQuotient
+public import FLT.Mazur.IdealAdicCohomologyRestriction
 public import FLT.Mazur.IdealAdicCohomologyScalars
 public import FLT.Mazur.IdealAdicCompatibleImages
+public import FLT.Mazur.IdealAdicCompatibleLifting
 public import FLT.Mazur.IdealAdicConnecting
+public import FLT.Mazur.IdealAdicFiniteLifting
 public import FLT.Mazur.IdealAdicFormalComparison
 public import FLT.Mazur.IdealAdicFormalFiniteComparison
 public import FLT.Mazur.IdealAdicFormalInjectivity
@@ -4552,6 +4564,7 @@ public import FLT.Mazur.StructureDirectImageSections
 public import FLT.Mazur.StructureImageOpenChart
 public import FLT.Mazur.SurjectiveDominantEpi
 public import FLT.Mazur.SurjectiveStructureSupport
+public import FLT.Mazur.SurjectiveTowerLifting
 public import FLT.Mazur.TensorIntegerModelClosedImmersion
 public import FLT.Mazur.TensorIntegerModelMap
 public import FLT.Mazur.TensorIntegerModelPresentation
