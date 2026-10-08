@@ -4964,6 +4964,7 @@ public import FLT.Mazur.WeierstrassSmoothFiveRegularChartDescent
 public import FLT.Mazur.WeierstrassSmoothFiveRegularSectionDescent
 public import FLT.Mazur.WeierstrassSmoothFormulaComparison
 public import FLT.Mazur.WeierstrassSmoothGoodReductionAddition
+public import FLT.Mazur.WeierstrassSmoothGoodReductionGroup
 public import FLT.Mazur.WeierstrassSmoothGoodReductionLocal
 public import FLT.Mazur.WeierstrassSmoothGroup
 public import FLT.Mazur.WeierstrassSmoothGroupOperations
