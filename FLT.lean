@@ -3692,6 +3692,7 @@ public import FLT.Mazur.ModuleSectionRatioPullback
 public import FLT.Mazur.ModuleSectionRatios
 public import FLT.Mazur.ModuleSectionRegularity
 public import FLT.Mazur.ModuleSectionUnit
+public import FLT.Mazur.ModuleSheafAdjointPathNaturality
 public import FLT.Mazur.ModuleSheafAffineTestCompatibility
 public import FLT.Mazur.ModuleSheafChartOverlapRecovery
 public import FLT.Mazur.ModuleSheafChartRecoveryRefinement
