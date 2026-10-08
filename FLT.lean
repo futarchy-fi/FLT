@@ -3603,6 +3603,7 @@ public import FLT.Mazur.ModuleSheafLocalHomRefinement
 public import FLT.Mazur.ModuleSheafLocalIsoCocycle
 public import FLT.Mazur.ModuleSheafLocalIsoEvaluation
 public import FLT.Mazur.ModuleSheafLocalIsoTransport
+public import FLT.Mazur.ModuleSheafLocalNaturality
 public import FLT.Mazur.ModuleSheafMorphismGluing
 public import FLT.Mazur.ModuleSheafMorphismRefinement
 public import FLT.Mazur.ModuleSheafOpenImageChart
