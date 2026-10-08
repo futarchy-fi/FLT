@@ -3557,6 +3557,7 @@ public import FLT.Mazur.FixedModelElementLifts
 public import FLT.Mazur.FixedTargetIntegerModel
 public import FLT.Mazur.FlasqueDirectImageAcyclic
 public import FLT.Mazur.FlatCartesianSectionGluing
+public import FLT.Mazur.FlatCoefficientAllCohomology
 public import FLT.Mazur.FlatCoefficientCohomology
 public import FLT.Mazur.FlatCoefficientSections
 public import FLT.Mazur.FlatCokernelStep
