@@ -4203,6 +4203,7 @@ public import FLT.Mazur.SchemeAffineSchemeTestNaturality
 public import FLT.Mazur.SchemeAffineSchemeTestRefinement
 public import FLT.Mazur.SchemeAffineSourceMapFaithful
 public import FLT.Mazur.SchemeAffineSourceRecovery
+public import FLT.Mazur.SchemeAffineSourceTestReconstruction
 public import FLT.Mazur.SchemeAffineSourceTestRecovery
 public import FLT.Mazur.SchemeAffineTensorCrossRefinement
 public import FLT.Mazur.SchemeAffineTestComparison
