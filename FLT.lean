@@ -4546,6 +4546,7 @@ public import FLT.Mazur.WeierstrassInfinityTripleInputPairBezout
 public import FLT.Mazur.WeierstrassInfinityTripleInputPairCoefficients
 public import FLT.Mazur.WeierstrassInfinityTripleInputRegular
 public import FLT.Mazur.WeierstrassInfinityTripleIntermediateTorsion
+public import FLT.Mazur.WeierstrassInfinityTripleLastPair
 public import FLT.Mazur.WeierstrassInfinityTripleLineResidual
 public import FLT.Mazur.WeierstrassInfinityTripleNegatedPencils
 public import FLT.Mazur.WeierstrassInfinityTripleObstructionTorsion
