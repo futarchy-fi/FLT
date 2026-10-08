@@ -3462,6 +3462,7 @@ public import FLT.Mazur.IdealAdicCohomologyQuotient
 public import FLT.Mazur.IdealAdicCohomologyRestriction
 public import FLT.Mazur.IdealAdicCohomologyScalars
 public import FLT.Mazur.IdealAdicCompatibleImages
+public import FLT.Mazur.IdealAdicCompatibleLifting
 public import FLT.Mazur.IdealAdicConnecting
 public import FLT.Mazur.IdealAdicFormalComparison
 public import FLT.Mazur.IdealAdicFormalFiniteComparison
