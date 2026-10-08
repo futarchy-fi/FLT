@@ -2725,6 +2725,7 @@ public import FLT.Mazur.BaseAdicReesAffineOverlap
 public import FLT.Mazur.BaseAdicReesBaseScalars
 public import FLT.Mazur.BaseAdicReesChart
 public import FLT.Mazur.BaseAdicReesCocycle
+public import FLT.Mazur.BaseAdicReesCohomologyFinite
 public import FLT.Mazur.BaseAdicReesCommonRefinement
 public import FLT.Mazur.BaseAdicReesCover
 public import FLT.Mazur.BaseAdicReesGeometricRefinement
