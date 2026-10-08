@@ -3458,6 +3458,13 @@ public import FLT.Mazur.FiniteNeighborhoodAffineOpens
 public import FLT.Mazur.FiniteOpenImmersionIntegerDescent
 public import FLT.Mazur.FinitePointAlgebraInterpolation
 public import FLT.Mazur.FinitePointKernelCover
+public import FLT.Mazur.FinitePolynomialCoefficientRing
+public import FLT.Mazur.FinitePolynomialDiagramCoefficients
+public import FLT.Mazur.FinitePolynomialDiagramEquations
+public import FLT.Mazur.FinitePolynomialDiagramRefinement
+public import FLT.Mazur.FinitePolynomialEquationSeeds
+public import FLT.Mazur.FinitePolynomialStableRelations
+public import FLT.Mazur.FinitePolynomialStableStages
 public import FLT.Mazur.FinitePresentationIntegerModel
 public import FLT.Mazur.FinitePrincipalChartIntegerDescent
 public import FLT.Mazur.FinitePrincipalIdealPatching
@@ -3475,6 +3482,7 @@ public import FLT.Mazur.FiniteRelationDetection
 public import FLT.Mazur.FiniteRelationFiniteHomDescent
 public import FLT.Mazur.FiniteRelationHomDescent
 public import FLT.Mazur.FiniteRelationHomEquality
+public import FLT.Mazur.FiniteRelationIdealRealization
 public import FLT.Mazur.FiniteRelationIteratedDetection
 public import FLT.Mazur.FiniteRelationIteratedFiniteMaps
 public import FLT.Mazur.FiniteRelationIteratedHomDescent
@@ -3520,6 +3528,9 @@ public import FLT.Mazur.FiniteTensorIntegerClosedImmersion
 public import FLT.Mazur.FiniteTypeAffineApproximation
 public import FLT.Mazur.FiniteTypeApproximationDiamonds
 public import FLT.Mazur.FiniteTypeApproximationMaps
+public import FLT.Mazur.FiniteTypeDiagramRefinement
+public import FLT.Mazur.FiniteTypeDiagramStages
+public import FLT.Mazur.FiniteTypePolynomialArrows
 public import FLT.Mazur.FiniteTypePrincipalApproximation
 public import FLT.Mazur.FiniteTypePrincipalComposition
 public import FLT.Mazur.FiniteTypePrincipalDiamonds
@@ -4029,6 +4040,7 @@ public import FLT.Mazur.NodeTangentValuationModel
 public import FLT.Mazur.NoetherianDirectSumSheaf
 public import FLT.Mazur.NoetherianModuleSum
 public import FLT.Mazur.NoetherianModuleSumInclusions
+public import FLT.Mazur.NoetherianRelationContraction
 public import FLT.Mazur.NoetherianSumCechCohomology
 public import FLT.Mazur.NoetherianSumCechComplex
 public import FLT.Mazur.NoetherianSumCechInclusion
