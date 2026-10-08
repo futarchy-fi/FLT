@@ -4508,6 +4508,7 @@ public import FLT.Mazur.WeierstrassInfinityNormalizedLine
 public import FLT.Mazur.WeierstrassInfinityOutputComparison
 public import FLT.Mazur.WeierstrassInfinityOutputParameter
 public import FLT.Mazur.WeierstrassInfinityOutputPolynomial
+public import FLT.Mazur.WeierstrassInfinityOutputRegularCriterion
 public import FLT.Mazur.WeierstrassInfinityOutputTransition
 public import FLT.Mazur.WeierstrassInfinityOverlapScheme
 public import FLT.Mazur.WeierstrassInfinityPairSection
