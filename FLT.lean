@@ -3616,6 +3616,7 @@ public import FLT.Mazur.GenericFibers
 public import FLT.Mazur.GenericIdealInjection
 public import FLT.Mazur.GenericIdealSumComparison
 public import FLT.Mazur.GenericIdealSupport
+public import FLT.Mazur.GenericLineTrivialization
 public import FLT.Mazur.GenericSectionUniqueness
 public import FLT.Mazur.GenericWitnessIdealVanishing
 public import FLT.Mazur.GeometricallyConnectedDescent
