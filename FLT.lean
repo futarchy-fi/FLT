@@ -3052,6 +3052,7 @@ public import FLT.Mazur.CurveNode
 public import FLT.Mazur.CurveNodeAffineCompletion
 public import FLT.Mazur.CurveNodeOpenCover
 public import FLT.Mazur.CurveNodeOpenImmersion
+public import FLT.Mazur.CurvePicardDegree
 public import FLT.Mazur.CurvePositiveDegreeAffineSection
 public import FLT.Mazur.CurvePositiveDegreeAmple
 public import FLT.Mazur.CurvePositiveDegreeCohomologyVanishing
