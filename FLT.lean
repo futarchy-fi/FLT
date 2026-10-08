@@ -2599,6 +2599,7 @@ public import FLT.Mazur.AffineIteratedPullbackSections
 public import FLT.Mazur.AffineKernelLocalization
 public import FLT.Mazur.AffineLiftedOverlapCoefficients
 public import FLT.Mazur.AffineLineCoalgebraDescent
+public import FLT.Mazur.AffineLineCoefficients
 public import FLT.Mazur.AffineLineTwistLocalization
 public import FLT.Mazur.AffineModuleCoalgebraDescent
 public import FLT.Mazur.AffineModuleEpimorphisms
