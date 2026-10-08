@@ -5071,6 +5071,7 @@ public import FLT.Mazur.WeierstrassModificationYCover
 public import FLT.Mazur.WeierstrassModificationYHorizontalLocalization
 public import FLT.Mazur.WeierstrassModificationYInverse
 public import FLT.Mazur.WeierstrassModificationYMorphism
+public import FLT.Mazur.WeierstrassModificationYOpenMaps
 public import FLT.Mazur.WeierstrassModificationYOverlap
 public import FLT.Mazur.WeierstrassModificationYReverse
 public import FLT.Mazur.WeierstrassModificationYScaleLocalization
