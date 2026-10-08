@@ -3488,6 +3488,7 @@ public import FLT.Mazur.FiniteTypeApproximationMaps
 public import FLT.Mazur.FiniteTypePrincipalApproximation
 public import FLT.Mazur.FiniteTypePrincipalComposition
 public import FLT.Mazur.FiniteTypePrincipalDiamonds
+public import FLT.Mazur.FiniteTypePrincipalFiniteMaps
 public import FLT.Mazur.FiniteTypePrincipalMaps
 public import FLT.Mazur.FiniteTypePrincipalPresentation
 public import FLT.Mazur.FiniteTypeRelationPresentation
@@ -4287,6 +4288,12 @@ public import FLT.Mazur.PowerSeriesQuotientCompletion
 public import FLT.Mazur.PowerSeriesSubstitutionEquiv
 public import FLT.Mazur.PrimeTorsionSemistabilityAway
 public import FLT.Mazur.PrincipalAffineRefinement
+public import FLT.Mazur.PrincipalBipartiteCofinal
+public import FLT.Mazur.PrincipalBipartiteDirected
+public import FLT.Mazur.PrincipalBipartiteEquationStages
+public import FLT.Mazur.PrincipalBipartiteLimits
+public import FLT.Mazur.PrincipalBipartiteRelations
+public import FLT.Mazur.PrincipalBipartiteStages
 public import FLT.Mazur.PrincipalChartIntegerDescent
 public import FLT.Mazur.PrincipalChartOpenImmersion
 public import FLT.Mazur.PrincipalComparisonIntegerModel
@@ -4295,6 +4302,13 @@ public import FLT.Mazur.PrincipalCoordinateCofinal
 public import FLT.Mazur.PrincipalCoordinateDirected
 public import FLT.Mazur.PrincipalCoordinateLimits
 public import FLT.Mazur.PrincipalCoordinateStages
+public import FLT.Mazur.PrincipalFamilyCofinal
+public import FLT.Mazur.PrincipalFamilyConeEquations
+public import FLT.Mazur.PrincipalFamilyDirected
+public import FLT.Mazur.PrincipalFamilyEquationStages
+public import FLT.Mazur.PrincipalFamilyLimits
+public import FLT.Mazur.PrincipalFamilyRelations
+public import FLT.Mazur.PrincipalFamilyStages
 public import FLT.Mazur.PrincipalGeneratorExtension
 public import FLT.Mazur.PrincipalIntegerModelIsomorphism
 public import FLT.Mazur.PrincipalIntegerRestriction
