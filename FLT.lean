@@ -4496,6 +4496,7 @@ public import FLT.Mazur.WeierstrassAllOrdinaryTripleDomain
 public import FLT.Mazur.WeierstrassAllOrdinaryTripleGlobal
 public import FLT.Mazur.WeierstrassAllOrdinaryTripleSchemes
 public import FLT.Mazur.WeierstrassChartBaseChange
+public import FLT.Mazur.WeierstrassChartBaseChangeSquare
 public import FLT.Mazur.WeierstrassChartCoefficientMap
 public import FLT.Mazur.WeierstrassChartCrossComparison
 public import FLT.Mazur.WeierstrassChartEvaluationComparison
