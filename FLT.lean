@@ -4894,6 +4894,7 @@ public import FLT.Mazur.WeierstrassSingularJetObstruction
 public import FLT.Mazur.WeierstrassSingularJetTranslation
 public import FLT.Mazur.WeierstrassSlopeSwapFormula
 public import FLT.Mazur.WeierstrassSmoothAdditionGluing
+public import FLT.Mazur.WeierstrassSmoothAdditionOriginalFormulas
 public import FLT.Mazur.WeierstrassSmoothAffineAddition
 public import FLT.Mazur.WeierstrassSmoothAffineCover
 public import FLT.Mazur.WeierstrassSmoothAffineDomain
