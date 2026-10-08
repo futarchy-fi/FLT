@@ -4305,6 +4305,7 @@ public import FLT.Mazur.SchemeAffineTripleComparisonCocycle
 public import FLT.Mazur.SchemeAffineTripleRefinementFamily
 public import FLT.Mazur.SchemeBaseChangeLimit
 public import FLT.Mazur.SchemeCanonicalMapRecognition
+public import FLT.Mazur.SchemeCanonicalOverlapLaws
 public import FLT.Mazur.SchemeCanonicalOverlapNaturality
 public import FLT.Mazur.SchemeCanonicalOverlapRefinement
 public import FLT.Mazur.SchemeCohomologyIso
