@@ -4341,6 +4341,7 @@ public import FLT.Mazur.WeierstrassScaledChartComparison
 public import FLT.Mazur.WeierstrassSlopeSwapFormula
 public import FLT.Mazur.WeierstrassSwappedAdditionIntersections
 public import FLT.Mazur.WeierstrassSwappedInfinityOutput
+public import FLT.Mazur.WeierstrassSwappedInfinitySchemes
 public import FLT.Mazur.WeierstrassSwappedInfinitySlopes
 public import FLT.Mazur.WeierstrassSwappedMixedOutput
 public import FLT.Mazur.WeierstrassSwappedMixedSchemes
