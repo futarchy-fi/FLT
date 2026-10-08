@@ -4270,6 +4270,7 @@ public import FLT.Mazur.PrincipalTriangleDirected
 public import FLT.Mazur.PrincipalTriangleEquations
 public import FLT.Mazur.PrincipalTriangleSchemes
 public import FLT.Mazur.PrincipalTriangleStages
+public import FLT.Mazur.PrincipalUnaryIncidenceRefinement
 public import FLT.Mazur.ProjectiveActionFieldExtension
 public import FLT.Mazur.ProjectiveActionPullback
 public import FLT.Mazur.ProjectiveAffineChartEmbedding
