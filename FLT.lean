@@ -3610,6 +3610,7 @@ public import FLT.Mazur.ModuleSheafMorphismGluing
 public import FLT.Mazur.ModuleSheafMorphismRefinement
 public import FLT.Mazur.ModuleSheafOpenImageChart
 public import FLT.Mazur.ModuleSheafOpenImageMap
+public import FLT.Mazur.ModuleSheafOpenImageMapRecovery
 public import FLT.Mazur.ModuleSheafOpenImageRecovery
 public import FLT.Mazur.ModuleSheafOpenImmersionGluing
 public import FLT.Mazur.ModuleSheafOpenImmersionLocalHom
