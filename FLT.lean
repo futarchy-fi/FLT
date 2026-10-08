@@ -2735,6 +2735,7 @@ public import FLT.Mazur.BaseAdicReesSheafMap
 public import FLT.Mazur.BaseAdicReesSpace
 public import FLT.Mazur.BaseAdicReesSpectrum
 public import FLT.Mazur.BaseAdicReesSpectrumComparison
+public import FLT.Mazur.BaseAdicReesSpectrumTransport
 public import FLT.Mazur.BaseAdicReesTensorModule
 public import FLT.Mazur.BaseAdicThickening
 public import FLT.Mazur.BaseChangedPresentationModel
