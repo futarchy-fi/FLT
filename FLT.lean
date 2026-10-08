@@ -3288,6 +3288,7 @@ public import FLT.Mazur.EllipticSubgroupClosureProperties
 public import FLT.Mazur.EllipticSubgroupClosureQuasiFinite
 public import FLT.Mazur.EllipticSubgroupClosureSeparated
 public import FLT.Mazur.EllipticSubgroupClosureZero
+public import FLT.Mazur.EllipticSubgroupConstantModelComparison
 public import FLT.Mazur.EllipticSubgroupFiniteFlatModel
 public import FLT.Mazur.EllipticSubgroupFiniteFlatPoints
 public import FLT.Mazur.EllipticSubgroupGenericConstantCoordinates
