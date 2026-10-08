@@ -4403,6 +4403,7 @@ public import FLT.Mazur.SchemeGeometricDescentData
 public import FLT.Mazur.SchemeLineBundleCategory
 public import FLT.Mazur.SchemeLineCanonicalFunctor
 public import FLT.Mazur.SchemeLineDescentCategory
+public import FLT.Mazur.SchemeLineDescentRefinement
 public import FLT.Mazur.SchemeModulePullbackOpenUnits
 public import FLT.Mazur.SchemeModulePullbackUnits
 public import FLT.Mazur.SchemeNormalizedRecoveryOverlap
