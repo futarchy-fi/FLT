@@ -3269,6 +3269,7 @@ public import FLT.Mazur.EllipticSubgroupClosureFinite
 public import FLT.Mazur.EllipticSubgroupClosureGluing
 public import FLT.Mazur.EllipticSubgroupClosureGroup
 public import FLT.Mazur.EllipticSubgroupClosureHopf
+public import FLT.Mazur.EllipticSubgroupClosureHopfOperations
 public import FLT.Mazur.EllipticSubgroupClosureNegation
 public import FLT.Mazur.EllipticSubgroupClosureProduct
 public import FLT.Mazur.EllipticSubgroupClosureProductDensity
