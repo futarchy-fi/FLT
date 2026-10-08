@@ -4659,6 +4659,7 @@ public import FLT.Mazur.WeierstrassIntegralGroup
 public import FLT.Mazur.WeierstrassIntegralGroupOperations
 public import FLT.Mazur.WeierstrassIntegralProductOverlap
 public import FLT.Mazur.WeierstrassIntegralProjectiveMap
+public import FLT.Mazur.WeierstrassIntegralProjectivePreimage
 public import FLT.Mazur.WeierstrassIntegralSeparated
 public import FLT.Mazur.WeierstrassIntegralSmooth
 public import FLT.Mazur.WeierstrassIntegralTripleFlat
