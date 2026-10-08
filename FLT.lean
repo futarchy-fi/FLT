@@ -3810,6 +3810,7 @@ public import FLT.Mazur.IncreasingCechCartesianReindex
 public import FLT.Mazur.IncreasingCechCartesianSectionFormula
 public import FLT.Mazur.IncreasingCechCartesianTerms
 public import FLT.Mazur.IncreasingCechCoefficientDifferential
+public import FLT.Mazur.IncreasingCechCoefficientKernel
 public import FLT.Mazur.IncreasingCechCoefficientReindex
 public import FLT.Mazur.IncreasingCechCoefficientTerms
 public import FLT.Mazur.IncreasingCechCohomology
