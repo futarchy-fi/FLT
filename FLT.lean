@@ -3583,6 +3583,7 @@ public import FLT.Mazur.ModuleSectionRatioPullback
 public import FLT.Mazur.ModuleSectionRatios
 public import FLT.Mazur.ModuleSectionRegularity
 public import FLT.Mazur.ModuleSectionUnit
+public import FLT.Mazur.ModuleSheafCoordinateNaturality
 public import FLT.Mazur.ModuleSheafDual
 public import FLT.Mazur.ModuleSheafDualInternalHom
 public import FLT.Mazur.ModuleSheafDualPullback
