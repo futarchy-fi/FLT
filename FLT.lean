@@ -2719,6 +2719,7 @@ public import FLT.Mazur.AmplePrincipalLocality
 public import FLT.Mazur.AnnihilatorCoherence
 public import FLT.Mazur.AnnihilatorStalk
 public import FLT.Mazur.AnnihilatorSubsheaf
+public import FLT.Mazur.BaseAdicClosedAmpleSections
 public import FLT.Mazur.BaseAdicCohomologyFiltration
 public import FLT.Mazur.BaseAdicCohomologyImageStability
 public import FLT.Mazur.BaseAdicCohomologyReconstruction
