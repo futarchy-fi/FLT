@@ -4528,6 +4528,7 @@ public import FLT.Mazur.ProperCurveGenus
 public import FLT.Mazur.ProperFiberEvaluationLocus
 public import FLT.Mazur.ProperFiberNeighborhood
 public import FLT.Mazur.ProperFiberTensorComplex
+public import FLT.Mazur.ProperFieldCohomologyBaseChange
 public import FLT.Mazur.ProperFiniteFiberNeighborhood
 public import FLT.Mazur.ProperGlobalSectionFinite
 public import FLT.Mazur.ProperIntegralConstantSections
