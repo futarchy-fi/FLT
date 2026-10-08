@@ -3373,6 +3373,7 @@ public import FLT.Mazur.IdealAdicRelativeCommonRefinement
 public import FLT.Mazur.IdealAdicRelativeFinitePresentation
 public import FLT.Mazur.IdealAdicRelativeGradedAlgebra
 public import FLT.Mazur.IdealAdicRelativeImageCoefficient
+public import FLT.Mazur.IdealAdicRelativeImageCoefficientCocycle
 public import FLT.Mazur.IdealAdicRelativeImageCoefficientTransition
 public import FLT.Mazur.IdealAdicRelativeImageOpenCover
 public import FLT.Mazur.IdealAdicRelativeImageTransitionSections
