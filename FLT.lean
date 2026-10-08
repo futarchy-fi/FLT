@@ -4391,6 +4391,7 @@ public import FLT.Mazur.SchemeDescentTransportSquares
 public import FLT.Mazur.SchemeDescentTransportTest
 public import FLT.Mazur.SchemeFppfFamilyCover
 public import FLT.Mazur.SchemeFppfFamilyLineDescent
+public import FLT.Mazur.SchemeFppfFamilyOverlapCover
 public import FLT.Mazur.SchemeFppfLineBaseChange
 public import FLT.Mazur.SchemeFppfLineBaseChangeRecovery
 public import FLT.Mazur.SchemeFppfLineBaseRecovery
