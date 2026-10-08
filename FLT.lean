@@ -3697,6 +3697,7 @@ public import FLT.Mazur.LocalizationDegreePiece
 public import FLT.Mazur.LocalizationDegreeShift
 public import FLT.Mazur.LocalizationJointRestriction
 public import FLT.Mazur.LocalizedAdicCompletion
+public import FLT.Mazur.LocalizedBaseSectionNumerator
 public import FLT.Mazur.LocalizedIntegerChartComparison
 public import FLT.Mazur.LocalizedIntegerComparisonTransport
 public import FLT.Mazur.LocalizedIntegerModelIsomorphism
