@@ -3230,6 +3230,7 @@ public import FLT.Mazur.EllipticNonsplitNodeGroup
 public import FLT.Mazur.EllipticNonsplitNodeParameter
 public import FLT.Mazur.EllipticNonsplitNormOneHom
 public import FLT.Mazur.EllipticNormalizedDoubleRoot
+public import FLT.Mazur.EllipticNormalizedIntegralLift
 public import FLT.Mazur.EllipticNormalizedMinimalAdditive
 public import FLT.Mazur.EllipticNormalizedSingularity
 public import FLT.Mazur.EllipticNormalizedSlope
