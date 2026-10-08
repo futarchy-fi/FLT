@@ -3444,6 +3444,7 @@ public import FLT.Mazur.FiniteTypeAffineApproximation
 public import FLT.Mazur.FiniteTypeApproximationDiamonds
 public import FLT.Mazur.FiniteTypeApproximationMaps
 public import FLT.Mazur.FiniteTypePrincipalApproximation
+public import FLT.Mazur.FiniteTypePrincipalComposition
 public import FLT.Mazur.FiniteTypePrincipalDiamonds
 public import FLT.Mazur.FiniteTypePrincipalMaps
 public import FLT.Mazur.FiniteTypePrincipalPresentation
