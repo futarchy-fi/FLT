@@ -4141,6 +4141,7 @@ public import FLT.Mazur.SchemeAffineSchemeTestComparison
 public import FLT.Mazur.SchemeAffineSchemeTestRefinement
 public import FLT.Mazur.SchemeAffineTensorCrossRefinement
 public import FLT.Mazur.SchemeAffineTestComparison
+public import FLT.Mazur.SchemeAffineTestNaturality
 public import FLT.Mazur.SchemeAffineTripleComparisonCocycle
 public import FLT.Mazur.SchemeAffineTripleRefinementFamily
 public import FLT.Mazur.SchemeBaseChangeLimit
