@@ -3830,6 +3830,7 @@ public import FLT.Mazur.LocalizedIntegerChartComparison
 public import FLT.Mazur.LocalizedIntegerComparisonTransport
 public import FLT.Mazur.LocalizedIntegerModelIsomorphism
 public import FLT.Mazur.LocalizedKernelComparison
+public import FLT.Mazur.LocalizedKernelPathCompatibility
 public import FLT.Mazur.LocalizedPointAlgebraKernel
 public import FLT.Mazur.MarkedIntegerModel
 public import FLT.Mazur.ModuleBinarySectionGluing
