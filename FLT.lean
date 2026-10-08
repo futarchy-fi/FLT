@@ -3609,6 +3609,7 @@ public import FLT.Mazur.ModuleSheafOpenImmersionLocalHom
 public import FLT.Mazur.ModuleSheafOpenIsoDetection
 public import FLT.Mazur.ModuleSheafOverlapCoordinateRefinement
 public import FLT.Mazur.ModuleSheafOverlapImageTransition
+public import FLT.Mazur.ModuleSheafProjectionNormalization
 public import FLT.Mazur.ModuleSheafPullbackIsoDetection
 public import FLT.Mazur.ModuleSheafPullbackMapRefinement
 public import FLT.Mazur.ModuleSheafRefinementGluing
