@@ -4842,6 +4842,7 @@ public import FLT.Mazur.WeierstrassSmoothNegation
 public import FLT.Mazur.WeierstrassSmoothZeroSection
 public import FLT.Mazur.WeierstrassSpecSectionMorphism
 public import FLT.Mazur.WeierstrassSpecSections
+public import FLT.Mazur.WeierstrassSplitNodalAffineParameters
 public import FLT.Mazur.WeierstrassSplitNodalChart
 public import FLT.Mazur.WeierstrassSplitNodalChartGroup
 public import FLT.Mazur.WeierstrassSplitNodalFieldSmooth
