@@ -4500,6 +4500,7 @@ public import FLT.Mazur.WeierstrassInfinityIdentityFormula
 public import FLT.Mazur.WeierstrassInfinityIdentityNeighborhood
 public import FLT.Mazur.WeierstrassInfinityInnerCross
 public import FLT.Mazur.WeierstrassInfinityInnerPencil
+public import FLT.Mazur.WeierstrassInfinityInputMinorRegular
 public import FLT.Mazur.WeierstrassInfinityInputTriple
 public import FLT.Mazur.WeierstrassInfinityInverseCover
 public import FLT.Mazur.WeierstrassInfinityInverseNeighborhood
