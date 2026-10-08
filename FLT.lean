@@ -4831,6 +4831,7 @@ public import FLT.Mazur.WeierstrassSplitNodalChartGroup
 public import FLT.Mazur.WeierstrassSplitNodalInversion
 public import FLT.Mazur.WeierstrassSplitNodalLaurent
 public import FLT.Mazur.WeierstrassSplitNodalNegationComparison
+public import FLT.Mazur.WeierstrassSplitNodalObstruction
 public import FLT.Mazur.WeierstrassSplitNodalPoints
 public import FLT.Mazur.WeierstrassSplitNodalTorus
 public import FLT.Mazur.WeierstrassSplitNodalUnitPoints
