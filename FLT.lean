@@ -3476,6 +3476,7 @@ public import FLT.Mazur.IdealAdicGradedSectionAction
 public import FLT.Mazur.IdealAdicGradedSections
 public import FLT.Mazur.IdealAdicGradedSequence
 public import FLT.Mazur.IdealAdicGradedUnit
+public import FLT.Mazur.IdealAdicImageCompletion
 public import FLT.Mazur.IdealAdicLineQuotient
 public import FLT.Mazur.IdealAdicLineTower
 public import FLT.Mazur.IdealAdicQuotient
