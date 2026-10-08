@@ -4685,6 +4685,7 @@ public import FLT.Mazur.StructureCohomologyFinite
 public import FLT.Mazur.StructureCohomologyOverIso
 public import FLT.Mazur.StructureDirectImageHZero
 public import FLT.Mazur.StructureDirectImageSections
+public import FLT.Mazur.StructureIdealPowerQuotient
 public import FLT.Mazur.StructureImageOpenChart
 public import FLT.Mazur.SurjectiveDominantEpi
 public import FLT.Mazur.SurjectiveStructureSupport
