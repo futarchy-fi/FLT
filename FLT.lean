@@ -2951,6 +2951,7 @@ public import FLT.Mazur.CoefficientModelLimit
 public import FLT.Mazur.CoefficientModelMorphism
 public import FLT.Mazur.CoefficientModelRecovery
 public import FLT.Mazur.CoefficientOpenClosedDescent
+public import FLT.Mazur.CoefficientOpenNeighborhood
 public import FLT.Mazur.CoefficientProperDescent
 public import FLT.Mazur.CoefficientPropertyComparison
 public import FLT.Mazur.CoefficientRecoveredProperty
