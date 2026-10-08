@@ -3867,6 +3867,7 @@ public import FLT.Mazur.NoetherianDirectSumSheaf
 public import FLT.Mazur.NoetherianInfinitesimalFiberFunctions
 public import FLT.Mazur.NoetherianModuleSum
 public import FLT.Mazur.NoetherianModuleSumInclusions
+public import FLT.Mazur.NoetherianProperAffineBaseChange
 public import FLT.Mazur.NoetherianProperEvaluation
 public import FLT.Mazur.NoetherianProperRelativeFunctions
 public import FLT.Mazur.NoetherianProperStructureSheaf
