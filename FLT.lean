@@ -3635,6 +3635,7 @@ public import FLT.Mazur.ModuleSheafGluing
 public import FLT.Mazur.ModuleSheafGluingMapRestriction
 public import FLT.Mazur.ModuleSheafGluingTransport
 public import FLT.Mazur.ModuleSheafGluingTransportMap
+public import FLT.Mazur.ModuleSheafGluingTransportProjection
 public import FLT.Mazur.ModuleSheafImageOpenSections
 public import FLT.Mazur.ModuleSheafInternalHom
 public import FLT.Mazur.ModuleSheafLocalEquation
@@ -3652,6 +3653,7 @@ public import FLT.Mazur.ModuleSheafMorphismRefinement
 public import FLT.Mazur.ModuleSheafOpenImageChart
 public import FLT.Mazur.ModuleSheafOpenImageMap
 public import FLT.Mazur.ModuleSheafOpenImageMapRecovery
+public import FLT.Mazur.ModuleSheafOpenImageProjectionRecovery
 public import FLT.Mazur.ModuleSheafOpenImageRecovery
 public import FLT.Mazur.ModuleSheafOpenImmersionGluing
 public import FLT.Mazur.ModuleSheafOpenImmersionLocalHom
@@ -3661,6 +3663,7 @@ public import FLT.Mazur.ModuleSheafOpenImmersionTopSections
 public import FLT.Mazur.ModuleSheafOpenIsoDetection
 public import FLT.Mazur.ModuleSheafOverlapCoordinateRefinement
 public import FLT.Mazur.ModuleSheafOverlapImageTransition
+public import FLT.Mazur.ModuleSheafOverlapProjectionRecovery
 public import FLT.Mazur.ModuleSheafProjectionNormalization
 public import FLT.Mazur.ModuleSheafPullbackIsoDetection
 public import FLT.Mazur.ModuleSheafPullbackMapRefinement
@@ -4142,10 +4145,15 @@ public import FLT.Mazur.SchemeAffineChartRefinement
 public import FLT.Mazur.SchemeAffineChartRefinementCategory
 public import FLT.Mazur.SchemeAffineChartRefinementIdentity
 public import FLT.Mazur.SchemeAffineChartRefinementNaturality
+public import FLT.Mazur.SchemeAffineChartTestRecovery
+public import FLT.Mazur.SchemeAffineCommonBaseChartRecovery
 public import FLT.Mazur.SchemeAffineCommonBaseCover
+public import FLT.Mazur.SchemeAffineCommonBaseTestComparison
+public import FLT.Mazur.SchemeAffineCommonCoverSection
 public import FLT.Mazur.SchemeAffineCommonCoverUniversal
 public import FLT.Mazur.SchemeAffineCommonRefinement
 public import FLT.Mazur.SchemeAffineCommonRefinementCompatibility
+public import FLT.Mazur.SchemeAffineCommonSectionTransport
 public import FLT.Mazur.SchemeAffineCoverRecovery
 public import FLT.Mazur.SchemeAffineCrossChartFamily
 public import FLT.Mazur.SchemeAffineCrossCoverCocycle
@@ -4192,8 +4200,10 @@ public import FLT.Mazur.SchemeAffineOpenGluingLine
 public import FLT.Mazur.SchemeAffineOpenGluingMap
 public import FLT.Mazur.SchemeAffineOpenGluingMapLaws
 public import FLT.Mazur.SchemeAffineOpenGluingMapRecovery
+public import FLT.Mazur.SchemeAffineOpenGluingProjection
 public import FLT.Mazur.SchemeAffineOpenGluingRecovery
 public import FLT.Mazur.SchemeAffineOpenOverlapCover
+public import FLT.Mazur.SchemeAffineOpenProjectionComparison
 public import FLT.Mazur.SchemeAffineOpenTestComparison
 public import FLT.Mazur.SchemeAffineOpenTestEvaluation
 public import FLT.Mazur.SchemeAffineOpenTestNaturality
@@ -4219,6 +4229,8 @@ public import FLT.Mazur.SchemeAffineSourceRecovery
 public import FLT.Mazur.SchemeAffineTensorCrossRefinement
 public import FLT.Mazur.SchemeAffineTestComparison
 public import FLT.Mazur.SchemeAffineTestNaturality
+public import FLT.Mazur.SchemeAffineTestProjectionComparison
+public import FLT.Mazur.SchemeAffineTestProjectionRefinement
 public import FLT.Mazur.SchemeAffineTripleComparisonCocycle
 public import FLT.Mazur.SchemeAffineTripleRefinementFamily
 public import FLT.Mazur.SchemeBaseChangeLimit
