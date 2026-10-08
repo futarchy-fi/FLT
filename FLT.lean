@@ -2501,6 +2501,7 @@ public import FLT.Mazur.AffineAdicCohomologyImage
 public import FLT.Mazur.AffineAnnihilator
 public import FLT.Mazur.AffineBaseSectionAlgebra
 public import FLT.Mazur.AffineBaseSectionFunctor
+public import FLT.Mazur.AffineBasisDirectSum
 public import FLT.Mazur.AffineBasisFiniteCover
 public import FLT.Mazur.AffineBasisModuleMorphism
 public import FLT.Mazur.AffineBasisSheafExtension
