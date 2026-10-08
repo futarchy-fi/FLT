@@ -4225,6 +4225,7 @@ public import FLT.Mazur.PrincipalIntegerRestriction
 public import FLT.Mazur.PrincipalLayeredCofinal
 public import FLT.Mazur.PrincipalLayeredDirected
 public import FLT.Mazur.PrincipalLayeredLimits
+public import FLT.Mazur.PrincipalLayeredPathEquationStages
 public import FLT.Mazur.PrincipalLayeredPathEquations
 public import FLT.Mazur.PrincipalLayeredPaths
 public import FLT.Mazur.PrincipalLayeredStages
