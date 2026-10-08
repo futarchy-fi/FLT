@@ -4083,6 +4083,7 @@ public import FLT.Mazur.SchemeAffineOverlapLocalRefinement
 public import FLT.Mazur.SchemeAffineOverlapObjectwiseComparison
 public import FLT.Mazur.SchemeAffineRefinementCompatibility
 public import FLT.Mazur.SchemeAffineTensorCrossRefinement
+public import FLT.Mazur.SchemeAffineTripleRefinementFamily
 public import FLT.Mazur.SchemeBaseChangeLimit
 public import FLT.Mazur.SchemeCanonicalMapRecognition
 public import FLT.Mazur.SchemeCanonicalOverlapNaturality
