@@ -2746,6 +2746,7 @@ public import FLT.Mazur.BaseAdicReesSpectrumTransport
 public import FLT.Mazur.BaseAdicReesSpectrumTripleOverlapCover
 public import FLT.Mazur.BaseAdicReesSpectrumTripleProjections
 public import FLT.Mazur.BaseAdicReesSpectrumTripleRefinement
+public import FLT.Mazur.BaseAdicReesSpectrumTripleSheafCocycle
 public import FLT.Mazur.BaseAdicReesSpectrumTripleSheafMaps
 public import FLT.Mazur.BaseAdicReesSpectrumTripleSheafNormalization
 public import FLT.Mazur.BaseAdicReesTensorModule
