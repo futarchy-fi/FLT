@@ -4113,6 +4113,7 @@ public import FLT.Mazur.SchemeAffineChartRefinementCategory
 public import FLT.Mazur.SchemeAffineChartRefinementIdentity
 public import FLT.Mazur.SchemeAffineChartRefinementNaturality
 public import FLT.Mazur.SchemeAffineChartTestRecovery
+public import FLT.Mazur.SchemeAffineCommonBaseChartRecovery
 public import FLT.Mazur.SchemeAffineCommonBaseCover
 public import FLT.Mazur.SchemeAffineCommonBaseTestComparison
 public import FLT.Mazur.SchemeAffineCommonCoverUniversal
