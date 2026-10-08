@@ -3434,6 +3434,7 @@ public import FLT.Mazur.FiniteRelationLocalizationHomEquality
 public import FLT.Mazur.FiniteRelationLocalizationKernels
 public import FLT.Mazur.FiniteRelationLocalizationNumerators
 public import FLT.Mazur.FiniteRelationLocalizationQuotientEquiv
+public import FLT.Mazur.FiniteRelationLocalizationSharedIdeals
 public import FLT.Mazur.FiniteRelationLocalizationSpectrum
 public import FLT.Mazur.FiniteRelationLocalizationStages
 public import FLT.Mazur.FiniteRelationLocalizationSurjectiveDescent
