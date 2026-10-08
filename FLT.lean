@@ -2920,6 +2920,7 @@ public import FLT.Mazur.ClosedDirectImageComposition
 public import FLT.Mazur.ClosedImmersionModulePushforward
 public import FLT.Mazur.ClosedLineProjectionFormula
 public import FLT.Mazur.ClosedModuleDescent
+public import FLT.Mazur.ClosedPointFiberAmple
 public import FLT.Mazur.ClosedPointLineSection
 public import FLT.Mazur.ClosedPointQuotientFiber
 public import FLT.Mazur.ClosedProjectiveSerreVanishing
