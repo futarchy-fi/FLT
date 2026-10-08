@@ -2717,6 +2717,7 @@ public import FLT.Mazur.BaseAdicReesModuleChart
 public import FLT.Mazur.BaseAdicReesOverlap
 public import FLT.Mazur.BaseAdicReesRestriction
 public import FLT.Mazur.BaseAdicReesSpace
+public import FLT.Mazur.BaseAdicReesTensorModule
 public import FLT.Mazur.BaseAdicThickening
 public import FLT.Mazur.BaseChangedPresentationModel
 public import FLT.Mazur.BinaryOpenDescent
