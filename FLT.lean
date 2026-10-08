@@ -3094,6 +3094,7 @@ public import FLT.Mazur.EllipticExtensionClosureFinite
 public import FLT.Mazur.EllipticExtensionClosureQuasiFinite
 public import FLT.Mazur.EllipticExtensionClosureRank
 public import FLT.Mazur.EllipticExtensionClosureRankBound
+public import FLT.Mazur.EllipticExtensionGoodReductionClosure
 public import FLT.Mazur.EllipticExtensionPrimeSubgroup
 public import FLT.Mazur.EllipticFormalAddition
 public import FLT.Mazur.EllipticFormalAdditionComparison
