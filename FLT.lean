@@ -4314,6 +4314,7 @@ public import FLT.Mazur.PrincipalLocalizationPullback
 public import FLT.Mazur.PrincipalLocalizationSquare
 public import FLT.Mazur.PrincipalLocalizedKernelPaths
 public import FLT.Mazur.PrincipalModelBaseChange
+public import FLT.Mazur.PrincipalOccurrenceAmbientSquares
 public import FLT.Mazur.PrincipalOccurrenceChangeRefinement
 public import FLT.Mazur.PrincipalOccurrenceCoordinateChanges
 public import FLT.Mazur.PrincipalOccurrenceDirected
