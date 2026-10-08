@@ -4238,6 +4238,7 @@ public import FLT.Mazur.ProperCurveGenus
 public import FLT.Mazur.ProperFiberNeighborhood
 public import FLT.Mazur.ProperIntegralConstantSections
 public import FLT.Mazur.ProperLineSheafDescent
+public import FLT.Mazur.ProperLocalAmpleFiberGenerators
 public import FLT.Mazur.ProperLocalFiberCover
 public import FLT.Mazur.ProperPointExtension
 public import FLT.Mazur.ProperRingCohomologyFinite
