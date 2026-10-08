@@ -4337,6 +4337,7 @@ public import FLT.Mazur.PrincipalOccurrenceChangeRefinement
 public import FLT.Mazur.PrincipalOccurrenceCoordinateChanges
 public import FLT.Mazur.PrincipalOccurrenceDirected
 public import FLT.Mazur.PrincipalOccurrenceExistence
+public import FLT.Mazur.PrincipalOccurrenceFiniteRestrictions
 public import FLT.Mazur.PrincipalOccurrenceOpenEmbeddings
 public import FLT.Mazur.PrincipalOccurrencePathIsomorphisms
 public import FLT.Mazur.PrincipalOccurrenceStages
