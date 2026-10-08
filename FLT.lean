@@ -2727,6 +2727,7 @@ public import FLT.Mazur.BaseAdicReesOverlapCover
 public import FLT.Mazur.BaseAdicReesOverlapLocalHom
 public import FLT.Mazur.BaseAdicReesOverlapNormalization
 public import FLT.Mazur.BaseAdicReesOverlapRefinementCover
+public import FLT.Mazur.BaseAdicReesOverlapSheafIso
 public import FLT.Mazur.BaseAdicReesOverlapSheafMap
 public import FLT.Mazur.BaseAdicReesPrincipalModel
 public import FLT.Mazur.BaseAdicReesRestriction
