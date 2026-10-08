@@ -3097,6 +3097,7 @@ public import FLT.Mazur.EllipticDoubleRootEvenSlope
 public import FLT.Mazur.EllipticDoubleRootIteration
 public import FLT.Mazur.EllipticDoubleRootOddBound
 public import FLT.Mazur.EllipticDoubleRootSeparable
+public import FLT.Mazur.EllipticE0GeometricGroup
 public import FLT.Mazur.EllipticE0SectionEquiv
 public import FLT.Mazur.EllipticExtensionChartClosure
 public import FLT.Mazur.EllipticExtensionClosureFinite
