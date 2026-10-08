@@ -4206,6 +4206,7 @@ public import FLT.Mazur.ProperConnectedReducedSections
 public import FLT.Mazur.ProperCoverImmersionCriterion
 public import FLT.Mazur.ProperCurveGenus
 public import FLT.Mazur.ProperFiberNeighborhood
+public import FLT.Mazur.ProperFiberTensorComplex
 public import FLT.Mazur.ProperGlobalSectionFinite
 public import FLT.Mazur.ProperIntegralConstantSections
 public import FLT.Mazur.ProperLineSheafDescent
