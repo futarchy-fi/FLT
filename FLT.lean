@@ -2848,6 +2848,7 @@ public import FLT.Mazur.BaseAdicSectionReconstruction
 public import FLT.Mazur.BaseAdicThickening
 public import FLT.Mazur.BaseChangedPresentationModel
 public import FLT.Mazur.BinaryOpenDescent
+public import FLT.Mazur.CartesianCoefficientPositiveHomology
 public import FLT.Mazur.CartesianMonoGroup
 public import FLT.Mazur.CartesianMonoMonoid
 public import FLT.Mazur.CartesianMorphismRecovery
