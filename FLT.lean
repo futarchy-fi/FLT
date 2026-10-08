@@ -4933,6 +4933,7 @@ public import FLT.Mazur.WeierstrassSmoothTransportedComparison
 public import FLT.Mazur.WeierstrassSmoothTransportedCover
 public import FLT.Mazur.WeierstrassSmoothYAddition
 public import FLT.Mazur.WeierstrassSmoothYCompatibility
+public import FLT.Mazur.WeierstrassSmoothYIdentity
 public import FLT.Mazur.WeierstrassSmoothYProductCover
 public import FLT.Mazur.WeierstrassSmoothZeroGraphs
 public import FLT.Mazur.WeierstrassSmoothZeroSection
