@@ -4474,6 +4474,7 @@ public import FLT.Mazur.WeierstrassInfinityTripleCommonInputs
 public import FLT.Mazur.WeierstrassInfinityTripleComparison
 public import FLT.Mazur.WeierstrassInfinityTripleDividedCoefficients
 public import FLT.Mazur.WeierstrassInfinityTripleFullMember
+public import FLT.Mazur.WeierstrassInfinityTripleInputPairBezout
 public import FLT.Mazur.WeierstrassInfinityTripleInputPairCoefficients
 public import FLT.Mazur.WeierstrassInfinityTripleLineResidual
 public import FLT.Mazur.WeierstrassInfinityTripleNegatedPencils
