@@ -4378,6 +4378,7 @@ public import FLT.Mazur.WeierstrassIntegralTripleProduct
 public import FLT.Mazur.WeierstrassIntegralZeroSection
 public import FLT.Mazur.WeierstrassLocalAdditionCurveComparison
 public import FLT.Mazur.WeierstrassMixedIntersectionScheme
+public import FLT.Mazur.WeierstrassMixedLeftReciprocalInverse
 public import FLT.Mazur.WeierstrassMixedOutputComparison
 public import FLT.Mazur.WeierstrassMixedProductAdditionGluing
 public import FLT.Mazur.WeierstrassMixedProductCover
