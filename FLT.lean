@@ -3678,6 +3678,7 @@ public import FLT.Mazur.IdealTwistTransitionExact
 public import FLT.Mazur.IdealWitnessSupportInduction
 public import FLT.Mazur.IncreasingCechCohomology
 public import FLT.Mazur.IncreasingCechComplex
+public import FLT.Mazur.IncreasingCechProperFinite
 public import FLT.Mazur.IncreasingCechScalars
 public import FLT.Mazur.InfinitesimalClosedFiberFunctions
 public import FLT.Mazur.InfinitesimalStructureProjection
