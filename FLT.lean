@@ -4399,6 +4399,7 @@ public import FLT.Mazur.SchemeDescentTransportSquares
 public import FLT.Mazur.SchemeDescentTransportTest
 public import FLT.Mazur.SchemeFamilyTripleOverlap
 public import FLT.Mazur.SchemeFppfFamilyCover
+public import FLT.Mazur.SchemeFppfFamilyDiagonalAssembly
 public import FLT.Mazur.SchemeFppfFamilyLineDescent
 public import FLT.Mazur.SchemeFppfFamilyMemberOverlap
 public import FLT.Mazur.SchemeFppfFamilyOverlapAssembly
