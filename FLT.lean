@@ -2719,11 +2719,15 @@ public import FLT.Mazur.BaseAdicReesCommonRefinement
 public import FLT.Mazur.BaseAdicReesCover
 public import FLT.Mazur.BaseAdicReesGeometricRefinement
 public import FLT.Mazur.BaseAdicReesLocalization
+public import FLT.Mazur.BaseAdicReesModelAffineRecovery
 public import FLT.Mazur.BaseAdicReesModelCohomologyFinite
 public import FLT.Mazur.BaseAdicReesModelDescent
+public import FLT.Mazur.BaseAdicReesModelFullOverlapRecovery
 public import FLT.Mazur.BaseAdicReesModelOverlapRecovery
 public import FLT.Mazur.BaseAdicReesModelProjectionCompatibility
+public import FLT.Mazur.BaseAdicReesModelProjectionNaturality
 public import FLT.Mazur.BaseAdicReesModelPushforward
+public import FLT.Mazur.BaseAdicReesModelRestrictionRecovery
 public import FLT.Mazur.BaseAdicReesModelSectionCoordinates
 public import FLT.Mazur.BaseAdicReesModelTransitionSections
 public import FLT.Mazur.BaseAdicReesModuleChart
@@ -2747,6 +2751,7 @@ public import FLT.Mazur.BaseAdicReesSpectrum
 public import FLT.Mazur.BaseAdicReesSpectrumAmbientImageIso
 public import FLT.Mazur.BaseAdicReesSpectrumAmbientSheaf
 public import FLT.Mazur.BaseAdicReesSpectrumComparison
+public import FLT.Mazur.BaseAdicReesSpectrumIdentity
 public import FLT.Mazur.BaseAdicReesSpectrumImageOpenCover
 public import FLT.Mazur.BaseAdicReesSpectrumImageSheaf
 public import FLT.Mazur.BaseAdicReesSpectrumImageSheafCocycle
@@ -2759,6 +2764,7 @@ public import FLT.Mazur.BaseAdicReesSpectrumOverlapCompatibility
 public import FLT.Mazur.BaseAdicReesSpectrumOverlapImageIso
 public import FLT.Mazur.BaseAdicReesSpectrumOverlapSheafIso
 public import FLT.Mazur.BaseAdicReesSpectrumOverlapSheafMap
+public import FLT.Mazur.BaseAdicReesSpectrumRestriction
 public import FLT.Mazur.BaseAdicReesSpectrumSheafDescent
 public import FLT.Mazur.BaseAdicReesSpectrumTransport
 public import FLT.Mazur.BaseAdicReesSpectrumTripleAmbientCocycle
@@ -3687,6 +3693,7 @@ public import FLT.Mazur.ModuleSectionRatioPullback
 public import FLT.Mazur.ModuleSectionRatios
 public import FLT.Mazur.ModuleSectionRegularity
 public import FLT.Mazur.ModuleSectionUnit
+public import FLT.Mazur.ModuleSheafAdjointPathNaturality
 public import FLT.Mazur.ModuleSheafAffinePairTestDetection
 public import FLT.Mazur.ModuleSheafAffineTestCompatibility
 public import FLT.Mazur.ModuleSheafChartOverlapRecovery
@@ -3707,6 +3714,8 @@ public import FLT.Mazur.ModuleSheafGluingMapRestriction
 public import FLT.Mazur.ModuleSheafGluingTransport
 public import FLT.Mazur.ModuleSheafGluingTransportMap
 public import FLT.Mazur.ModuleSheafGluingTransportProjection
+public import FLT.Mazur.ModuleSheafIdentityCocycle
+public import FLT.Mazur.ModuleSheafIdentityRecovery
 public import FLT.Mazur.ModuleSheafImageIsoProjectionRecovery
 public import FLT.Mazur.ModuleSheafImageOpenSections
 public import FLT.Mazur.ModuleSheafInternalHom
@@ -4447,6 +4456,7 @@ public import FLT.Mazur.SchemeLineCanonicalFunctor
 public import FLT.Mazur.SchemeLineDescentCategory
 public import FLT.Mazur.SchemeLineDescentRefinement
 public import FLT.Mazur.SchemeModulePullbackOpenUnits
+public import FLT.Mazur.SchemeModulePullbackUnitSections
 public import FLT.Mazur.SchemeModulePullbackUnits
 public import FLT.Mazur.SchemeNormalizedRecoveryOverlap
 public import FLT.Mazur.SchemeOverlapBaseChange
@@ -4617,6 +4627,7 @@ public import FLT.Mazur.WeierstrassAdditionSchemeCover
 public import FLT.Mazur.WeierstrassAdditionSlopeFamilies
 public import FLT.Mazur.WeierstrassAdditionStructure
 public import FLT.Mazur.WeierstrassAdditionSwapFormula
+public import FLT.Mazur.WeierstrassAffineAdditionDomain
 public import FLT.Mazur.WeierstrassAffineAdditionGluing
 public import FLT.Mazur.WeierstrassAffineAdditionSwapDescent
 public import FLT.Mazur.WeierstrassAffineAdditionTransport
@@ -4634,6 +4645,7 @@ public import FLT.Mazur.WeierstrassAffineOutputOpen
 public import FLT.Mazur.WeierstrassAffineOutputTripleDomain
 public import FLT.Mazur.WeierstrassAffineOutputTripleGlobal
 public import FLT.Mazur.WeierstrassAffinePairDescent
+public import FLT.Mazur.WeierstrassAffinePartialAddition
 public import FLT.Mazur.WeierstrassAffinePolynomialFormula
 public import FLT.Mazur.WeierstrassAffinePolynomialIntersections
 public import FLT.Mazur.WeierstrassAffinePolynomialScaling
@@ -4925,12 +4937,23 @@ public import FLT.Mazur.WeierstrassReciprocalTripleGlobal
 public import FLT.Mazur.WeierstrassReciprocalTripleNumerators
 public import FLT.Mazur.WeierstrassReciprocalTripleSchemes
 public import FLT.Mazur.WeierstrassReciprocalTripleSlopes
+public import FLT.Mazur.WeierstrassRelativeSmoothOpen
 public import FLT.Mazur.WeierstrassSameOutputIntersections
 public import FLT.Mazur.WeierstrassScaledChartComparison
 public import FLT.Mazur.WeierstrassSlopeSwapFormula
 public import FLT.Mazur.WeierstrassSmoothFiberCore
+public import FLT.Mazur.WeierstrassSmoothNegation
+public import FLT.Mazur.WeierstrassSmoothZeroSection
 public import FLT.Mazur.WeierstrassSpecSectionMorphism
 public import FLT.Mazur.WeierstrassSpecSections
+public import FLT.Mazur.WeierstrassSplitNodalChart
+public import FLT.Mazur.WeierstrassSplitNodalChartGroup
+public import FLT.Mazur.WeierstrassSplitNodalInversion
+public import FLT.Mazur.WeierstrassSplitNodalLaurent
+public import FLT.Mazur.WeierstrassSplitNodalNegationComparison
+public import FLT.Mazur.WeierstrassSplitNodalPoints
+public import FLT.Mazur.WeierstrassSplitNodalTorus
+public import FLT.Mazur.WeierstrassSplitNodalUnitPoints
 public import FLT.Mazur.WeierstrassSwappedAdditionIntersections
 public import FLT.Mazur.WeierstrassSwappedInfinityOutput
 public import FLT.Mazur.WeierstrassSwappedInfinitySchemes
