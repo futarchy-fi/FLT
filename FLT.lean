@@ -4730,6 +4730,7 @@ public import FLT.Mazur.SmoothAlgebraReduced
 public import FLT.Mazur.SmoothCurveDimension
 public import FLT.Mazur.SmoothDimension
 public import FLT.Mazur.SmoothDimensionBound
+public import FLT.Mazur.SmoothGeometricallyReduced
 public import FLT.Mazur.SmoothOpenSectionCartier
 public import FLT.Mazur.SmoothSectionCartier
 public import FLT.Mazur.StructureCohomologyFinite
