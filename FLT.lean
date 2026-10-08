@@ -4129,6 +4129,7 @@ public import FLT.Mazur.SchemeAffineImageTestComparison
 public import FLT.Mazur.SchemeAffineImageTestNaturality
 public import FLT.Mazur.SchemeAffineImageTestRefinement
 public import FLT.Mazur.SchemeAffineOpenGluing
+public import FLT.Mazur.SchemeAffineOpenGluingLine
 public import FLT.Mazur.SchemeAffineOpenGluingMap
 public import FLT.Mazur.SchemeAffineOpenGluingMapRecovery
 public import FLT.Mazur.SchemeAffineOpenGluingRecovery
