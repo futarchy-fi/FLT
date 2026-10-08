@@ -4395,6 +4395,7 @@ public import FLT.Mazur.SchemeCanonicalOverlapRefinement
 public import FLT.Mazur.SchemeCanonicalRecoveryCompatibility
 public import FLT.Mazur.SchemeCohomologyIso
 public import FLT.Mazur.SchemeCohomologyIsoCocycles
+public import FLT.Mazur.SchemeConnectedFiberSections
 public import FLT.Mazur.SchemeCoproductCohomology
 public import FLT.Mazur.SchemeCoproductLineGluing
 public import FLT.Mazur.SchemeCoproductModuleEquivalence
