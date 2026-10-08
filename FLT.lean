@@ -2505,6 +2505,7 @@ public import FLT.Mazur.AffineBasisDirectSum
 public import FLT.Mazur.AffineBasisFiniteCover
 public import FLT.Mazur.AffineBasisModuleMorphism
 public import FLT.Mazur.AffineBasisSheafExtension
+public import FLT.Mazur.AffineBasisSumMaps
 public import FLT.Mazur.AffineBranchSequence
 public import FLT.Mazur.AffineCanonicalMapCompatibility
 public import FLT.Mazur.AffineCanonicalOverlapChart
