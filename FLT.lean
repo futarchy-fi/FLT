@@ -4314,6 +4314,7 @@ public import FLT.Mazur.WeierstrassAffineOutputDomains
 public import FLT.Mazur.WeierstrassAffineOutputOpen
 public import FLT.Mazur.WeierstrassAffineOutputTripleDomain
 public import FLT.Mazur.WeierstrassAffineOutputTripleGlobal
+public import FLT.Mazur.WeierstrassAffinePairDescent
 public import FLT.Mazur.WeierstrassAffinePolynomialFormula
 public import FLT.Mazur.WeierstrassAffinePolynomialIntersections
 public import FLT.Mazur.WeierstrassAffinePolynomialScaling
