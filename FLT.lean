@@ -4339,6 +4339,7 @@ public import FLT.Mazur.PrincipalOccurrenceStages
 public import FLT.Mazur.PrincipalOccurrenceSurjective
 public import FLT.Mazur.PrincipalOpenIntegerModel
 public import FLT.Mazur.PrincipalOpenIntersectionModels
+public import FLT.Mazur.PrincipalOriginalRestrictionPaths
 public import FLT.Mazur.PrincipalPresentationIntegerModel
 public import FLT.Mazur.PrincipalRefinementOpenImmersion
 public import FLT.Mazur.PrincipalRestrictionEquivalence
