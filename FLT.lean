@@ -3122,6 +3122,7 @@ public import FLT.Mazur.EllipticFormalLinearTerms
 public import FLT.Mazur.EllipticFormalMultiplication
 public import FLT.Mazur.EllipticFormalNegation
 public import FLT.Mazur.EllipticFormalPrimeCoefficients
+public import FLT.Mazur.EllipticFormalPrimeExpansion
 public import FLT.Mazur.EllipticFormalProjective
 public import FLT.Mazur.EllipticFormalQuadratic
 public import FLT.Mazur.EllipticFormalSecant
