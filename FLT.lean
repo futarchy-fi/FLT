@@ -2946,6 +2946,7 @@ public import FLT.Mazur.ClosedSubsets
 public import FLT.Mazur.CocycleGlobalSectionCoordinate
 public import FLT.Mazur.CoefficientCartesianHomDescent
 public import FLT.Mazur.CoefficientCartesianProperty
+public import FLT.Mazur.CoefficientConnectedNeighborhood
 public import FLT.Mazur.CoefficientImmersionClosedDescent
 public import FLT.Mazur.CoefficientInverseEquations
 public import FLT.Mazur.CoefficientIsomorphismDescent
