@@ -3348,6 +3348,7 @@ public import FLT.Mazur.FiniteLineCocycleModel
 public import FLT.Mazur.FiniteLineSheafDescent
 public import FLT.Mazur.FiniteLineSheafModel
 public import FLT.Mazur.FiniteLocalizedIntegerComparisons
+public import FLT.Mazur.FiniteModuleAdicComplete
 public import FLT.Mazur.FiniteOpenImmersionIntegerDescent
 public import FLT.Mazur.FinitePointAlgebraInterpolation
 public import FLT.Mazur.FinitePointKernelCover
