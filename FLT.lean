@@ -4220,6 +4220,7 @@ public import FLT.Mazur.OrderedCurveDivisorFinite
 public import FLT.Mazur.OrderedCurveDivisorLocalFree
 public import FLT.Mazur.OrderedCurveDivisorPresentation
 public import FLT.Mazur.OrderedCurveDivisorPullback
+public import FLT.Mazur.OrderedCurveDivisorRank
 public import FLT.Mazur.OrderedCurvePermutation
 public import FLT.Mazur.OrderedCurvePower
 public import FLT.Mazur.OverCoproductModuleSections
