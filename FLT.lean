@@ -5067,6 +5067,7 @@ public import FLT.Mazur.WeierstrassModificationXMorphism
 public import FLT.Mazur.WeierstrassModificationXOverlap
 public import FLT.Mazur.WeierstrassModificationYAlgebra
 public import FLT.Mazur.WeierstrassModificationYCover
+public import FLT.Mazur.WeierstrassModificationYHorizontalLocalization
 public import FLT.Mazur.WeierstrassModificationYInverse
 public import FLT.Mazur.WeierstrassModificationYMorphism
 public import FLT.Mazur.WeierstrassModificationYOverlap
