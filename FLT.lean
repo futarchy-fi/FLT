@@ -3041,6 +3041,7 @@ public import FLT.Mazur.CubicComponentBound
 public import FLT.Mazur.CubicMobiusClearing
 public import FLT.Mazur.CurveAmpleDegree
 public import FLT.Mazur.CurveComponentAmpleCriterion
+public import FLT.Mazur.CurveDegreeFieldBaseChange
 public import FLT.Mazur.CurveDivisorAmpleSupport
 public import FLT.Mazur.CurveDivisorLengthSupport
 public import FLT.Mazur.CurveEulerCharacteristic
