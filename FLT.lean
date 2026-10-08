@@ -3609,6 +3609,7 @@ public import FLT.Mazur.ModuleSheafGluing
 public import FLT.Mazur.ModuleSheafGluingMapRestriction
 public import FLT.Mazur.ModuleSheafGluingTransport
 public import FLT.Mazur.ModuleSheafGluingTransportMap
+public import FLT.Mazur.ModuleSheafGluingTransportProjection
 public import FLT.Mazur.ModuleSheafImageOpenSections
 public import FLT.Mazur.ModuleSheafInternalHom
 public import FLT.Mazur.ModuleSheafLocalEquation
