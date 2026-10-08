@@ -4283,6 +4283,7 @@ public import FLT.Mazur.RelativeCartierIdealPullback
 public import FLT.Mazur.RelativeDirectImageComposition
 public import FLT.Mazur.RelativeDirectImageForgetting
 public import FLT.Mazur.RelativeDirectImageOpenResolution
+public import FLT.Mazur.RelativeFiberMorphism
 public import FLT.Mazur.RelativeJetSmoothObstruction
 public import FLT.Mazur.RelativePicardPresheaf
 public import FLT.Mazur.RelativePicardQuotient
