@@ -3826,6 +3826,7 @@ public import FLT.Mazur.IntersectionModelClosedProducts
 public import FLT.Mazur.IntersectionUnitCocycle
 public import FLT.Mazur.IntersectionUnitCocycleRecovery
 public import FLT.Mazur.IrreducibleComponentAmple
+public import FLT.Mazur.IteratedPolynomialDiagramCoefficients
 public import FLT.Mazur.LaurentRingSurjectivity
 public import FLT.Mazur.LaurentTensor
 public import FLT.Mazur.LaurentUnitMultiplication
