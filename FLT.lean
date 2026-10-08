@@ -4179,6 +4179,7 @@ public import FLT.Mazur.SchemeAffineCommonSectionBranches
 public import FLT.Mazur.SchemeAffineCommonSectionCancellation
 public import FLT.Mazur.SchemeAffineCommonSectionComparison
 public import FLT.Mazur.SchemeAffineCommonSectionMaps
+public import FLT.Mazur.SchemeAffineCommonSectionPostcomposition
 public import FLT.Mazur.SchemeAffineCommonSectionRecovery
 public import FLT.Mazur.SchemeAffineCommonSectionSquareComparison
 public import FLT.Mazur.SchemeAffineCommonSectionTransport
