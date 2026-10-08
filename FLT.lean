@@ -3301,6 +3301,7 @@ public import FLT.Mazur.EllipticSubgroupPointLocalization
 public import FLT.Mazur.EllipticSubgroupSectionCover
 public import FLT.Mazur.EllipticSubgroupSectionFamilyDensity
 public import FLT.Mazur.EllipticSubgroupSectionGenericCompatibility
+public import FLT.Mazur.EllipticSubgroupTensorEvaluation
 public import FLT.Mazur.EllipticTangentParameterHom
 public import FLT.Mazur.EllipticTripleRootBranches
 public import FLT.Mazur.EllipticTypeIIIDepth
