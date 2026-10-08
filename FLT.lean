@@ -4320,6 +4320,7 @@ public import FLT.Mazur.WeierstrassAffinePolynomialIntersections
 public import FLT.Mazur.WeierstrassAffinePolynomialScaling
 public import FLT.Mazur.WeierstrassAffineProduct
 public import FLT.Mazur.WeierstrassAffineProductSwap
+public import FLT.Mazur.WeierstrassAffineTripleDescent
 public import FLT.Mazur.WeierstrassAffineVietaFormula
 public import FLT.Mazur.WeierstrassAllOrdinaryTripleAlgebra
 public import FLT.Mazur.WeierstrassAllOrdinaryTripleCoordinates
