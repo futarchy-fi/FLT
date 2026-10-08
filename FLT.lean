@@ -4295,6 +4295,7 @@ public import FLT.Mazur.PrincipalFanIsomorphismLimits
 public import FLT.Mazur.PrincipalFanIsomorphismOpens
 public import FLT.Mazur.PrincipalFanIsomorphismRefinement
 public import FLT.Mazur.PrincipalFanIsomorphismStages
+public import FLT.Mazur.PrincipalFanPathIsomorphisms
 public import FLT.Mazur.PrincipalFanStages
 public import FLT.Mazur.PrincipalGeneratorExtension
 public import FLT.Mazur.PrincipalIntegerModelIsomorphism
