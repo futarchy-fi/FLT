@@ -3710,6 +3710,7 @@ public import FLT.Mazur.IdealWitnessSupportInduction
 public import FLT.Mazur.IncreasingCechBaseComplex
 public import FLT.Mazur.IncreasingCechBaseCycles
 public import FLT.Mazur.IncreasingCechBaseFlat
+public import FLT.Mazur.IncreasingCechCartesianTerms
 public import FLT.Mazur.IncreasingCechCohomology
 public import FLT.Mazur.IncreasingCechComplex
 public import FLT.Mazur.IncreasingCechCycles
