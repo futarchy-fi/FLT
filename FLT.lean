@@ -3460,6 +3460,7 @@ public import FLT.Mazur.FinitePointAlgebraInterpolation
 public import FLT.Mazur.FinitePointKernelCover
 public import FLT.Mazur.FinitePolynomialCoefficientRing
 public import FLT.Mazur.FinitePolynomialDiagramCoefficients
+public import FLT.Mazur.FinitePolynomialDiagramEquations
 public import FLT.Mazur.FinitePolynomialEquationSeeds
 public import FLT.Mazur.FinitePolynomialStableRelations
 public import FLT.Mazur.FinitePolynomialStableStages
