@@ -4163,6 +4163,7 @@ public import FLT.Mazur.SchemeAffineChartComposition
 public import FLT.Mazur.SchemeAffineChartDescent
 public import FLT.Mazur.SchemeAffineChartMapLaws
 public import FLT.Mazur.SchemeAffineChartNamedRefinement
+public import FLT.Mazur.SchemeAffineChartPullbackFaithful
 public import FLT.Mazur.SchemeAffineChartReconstruction
 public import FLT.Mazur.SchemeAffineChartRefinement
 public import FLT.Mazur.SchemeAffineChartRefinementCategory
