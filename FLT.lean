@@ -4513,6 +4513,7 @@ public import FLT.Mazur.WeierstrassInfinityTransportedOutput
 public import FLT.Mazur.WeierstrassInfinityTransportedReciprocal
 public import FLT.Mazur.WeierstrassInfinityTransportedScheme
 public import FLT.Mazur.WeierstrassInfinityTransportedSlopes
+public import FLT.Mazur.WeierstrassInfinityTripleAffineLocalization
 public import FLT.Mazur.WeierstrassInfinityTripleCenteredPencils
 public import FLT.Mazur.WeierstrassInfinityTripleCommonInputs
 public import FLT.Mazur.WeierstrassInfinityTripleComparison
