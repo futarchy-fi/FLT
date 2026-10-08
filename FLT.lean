@@ -4164,6 +4164,7 @@ public import FLT.Mazur.SchemeAffineCommonCoverUniversal
 public import FLT.Mazur.SchemeAffineCommonRefinement
 public import FLT.Mazur.SchemeAffineCommonRefinementCompatibility
 public import FLT.Mazur.SchemeAffineCommonSectionBranches
+public import FLT.Mazur.SchemeAffineCommonSectionCancellation
 public import FLT.Mazur.SchemeAffineCommonSectionMaps
 public import FLT.Mazur.SchemeAffineCommonSectionRecovery
 public import FLT.Mazur.SchemeAffineCommonSectionTransport
