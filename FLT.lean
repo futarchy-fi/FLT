@@ -4199,6 +4199,7 @@ public import FLT.Mazur.RelativeCartierIdealPullback
 public import FLT.Mazur.RelativeDirectImageComposition
 public import FLT.Mazur.RelativeDirectImageForgetting
 public import FLT.Mazur.RelativeDirectImageOpenResolution
+public import FLT.Mazur.RelativeJetSmoothObstruction
 public import FLT.Mazur.RelativePicardBaseChangeGeometry
 public import FLT.Mazur.RelativePicardFppfBaseChange
 public import FLT.Mazur.RelativePicardFppfComparison
@@ -4906,6 +4907,7 @@ public import FLT.Mazur.WeierstrassOrdinaryTripleDomain
 public import FLT.Mazur.WeierstrassOrdinaryTripleGlobalComparison
 public import FLT.Mazur.WeierstrassOrdinaryTripleSchemes
 public import FLT.Mazur.WeierstrassOverlapDiagonalAlgebra
+public import FLT.Mazur.WeierstrassPartialOrdinaryPointComparison
 public import FLT.Mazur.WeierstrassPolynomialAdditionSwap
 public import FLT.Mazur.WeierstrassPolynomialInputCurveComparison
 public import FLT.Mazur.WeierstrassPolynomialInputOutputOverlap
@@ -4950,6 +4952,7 @@ public import FLT.Mazur.WeierstrassReciprocalTripleGlobal
 public import FLT.Mazur.WeierstrassReciprocalTripleNumerators
 public import FLT.Mazur.WeierstrassReciprocalTripleSchemes
 public import FLT.Mazur.WeierstrassReciprocalTripleSlopes
+public import FLT.Mazur.WeierstrassReciprocalZeroPointComparison
 public import FLT.Mazur.WeierstrassRelativeSmoothOpen
 public import FLT.Mazur.WeierstrassSameOutputIntersections
 public import FLT.Mazur.WeierstrassScaledChartComparison
@@ -4961,10 +4964,18 @@ public import FLT.Mazur.WeierstrassSpecSectionMorphism
 public import FLT.Mazur.WeierstrassSpecSections
 public import FLT.Mazur.WeierstrassSplitNodalChart
 public import FLT.Mazur.WeierstrassSplitNodalChartGroup
+public import FLT.Mazur.WeierstrassSplitNodalFieldSmooth
 public import FLT.Mazur.WeierstrassSplitNodalInversion
 public import FLT.Mazur.WeierstrassSplitNodalLaurent
 public import FLT.Mazur.WeierstrassSplitNodalNegationComparison
+public import FLT.Mazur.WeierstrassSplitNodalObstruction
+public import FLT.Mazur.WeierstrassSplitNodalOrdinaryMultiplication
+public import FLT.Mazur.WeierstrassSplitNodalParameterComparison
+public import FLT.Mazur.WeierstrassSplitNodalPointMultiplication
 public import FLT.Mazur.WeierstrassSplitNodalPoints
+public import FLT.Mazur.WeierstrassSplitNodalRelativeSmooth
+public import FLT.Mazur.WeierstrassSplitNodalRelativeTangent
+public import FLT.Mazur.WeierstrassSplitNodalSmoothGroup
 public import FLT.Mazur.WeierstrassSplitNodalTorus
 public import FLT.Mazur.WeierstrassSplitNodalUnitPoints
 public import FLT.Mazur.WeierstrassSwappedAdditionIntersections
