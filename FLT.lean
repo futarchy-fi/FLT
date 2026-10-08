@@ -4504,6 +4504,7 @@ public import FLT.Mazur.WeierstrassInfinityTripleParamRegular
 public import FLT.Mazur.WeierstrassInfinityTriplePencil
 public import FLT.Mazur.WeierstrassInfinityTriplePencilEndpoints
 public import FLT.Mazur.WeierstrassInfinityTriplePolynomials
+public import FLT.Mazur.WeierstrassInfinityTripleQuadraticDefect
 public import FLT.Mazur.WeierstrassInfinityTripleResidualCubic
 public import FLT.Mazur.WeierstrassInfinityTripleResidualDegree
 public import FLT.Mazur.WeierstrassInfinityTripleResidualReciprocity
