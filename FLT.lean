@@ -3427,6 +3427,7 @@ public import FLT.Mazur.IdealAdicRelativeRestriction
 public import FLT.Mazur.IdealAdicRelativeScheme
 public import FLT.Mazur.IdealAdicRelativeSchemeCharts
 public import FLT.Mazur.IdealAdicRelativeSchemeCover
+public import FLT.Mazur.IdealAdicRelativeSerreBound
 public import FLT.Mazur.IdealAdicRelativeSheaf
 public import FLT.Mazur.IdealAdicRelativeSheafCharts
 public import FLT.Mazur.IdealAdicRelativeSheafFinite
