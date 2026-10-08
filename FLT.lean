@@ -3451,6 +3451,7 @@ public import FLT.Mazur.IdealAdicRelativeTripleOverlapCover
 public import FLT.Mazur.IdealAdicRelativeTripleProjections
 public import FLT.Mazur.IdealAdicRelativeTripleRefinement
 public import FLT.Mazur.IdealAdicUniformGradedVanishing
+public import FLT.Mazur.IdealAdicUniformQuotientVanishing
 public import FLT.Mazur.IdealCartierNeighborhood
 public import FLT.Mazur.IdealCohomologyAmpleAnyBase
 public import FLT.Mazur.IdealCohomologyAmpleCriterion
