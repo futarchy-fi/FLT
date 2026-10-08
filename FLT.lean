@@ -4903,6 +4903,7 @@ public import FLT.Mazur.WeierstrassSmoothCrossPolynomial
 public import FLT.Mazur.WeierstrassSmoothFiberCore
 public import FLT.Mazur.WeierstrassSmoothInfinityDomain
 public import FLT.Mazur.WeierstrassSmoothInputAddition
+public import FLT.Mazur.WeierstrassSmoothInputCompatibility
 public import FLT.Mazur.WeierstrassSmoothMixedAddition
 public import FLT.Mazur.WeierstrassSmoothMixedCover
 public import FLT.Mazur.WeierstrassSmoothNegation
