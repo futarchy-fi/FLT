@@ -4380,6 +4380,7 @@ public import FLT.Mazur.SchemeDescentMapLaws
 public import FLT.Mazur.SchemeDescentPairTransport
 public import FLT.Mazur.SchemeDescentTransportSquares
 public import FLT.Mazur.SchemeDescentTransportTest
+public import FLT.Mazur.SchemeFppfFamilyCover
 public import FLT.Mazur.SchemeFppfLineBaseRecovery
 public import FLT.Mazur.SchemeFppfLineBaseRecoveryCharts
 public import FLT.Mazur.SchemeFppfLineBaseRecoveryNaturality
