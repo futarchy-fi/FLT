@@ -4189,6 +4189,7 @@ public import FLT.Mazur.SchemeAffineCommonSectionTransportPullback
 public import FLT.Mazur.SchemeAffineCommonSectionTransportRecovery
 public import FLT.Mazur.SchemeAffineCoverRecovery
 public import FLT.Mazur.SchemeAffineCoverRecoveryCompatibility
+public import FLT.Mazur.SchemeAffineCoverRecoveryTransport
 public import FLT.Mazur.SchemeAffineCoverTestOriginalMap
 public import FLT.Mazur.SchemeAffineCoverTestRecovery
 public import FLT.Mazur.SchemeAffineCrossChartFamily
