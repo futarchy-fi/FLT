@@ -3344,6 +3344,7 @@ public import FLT.Mazur.IdealAdicGradedBaseAlgebra
 public import FLT.Mazur.IdealAdicGradedBaseProduct
 public import FLT.Mazur.IdealAdicGradedClosedAction
 public import FLT.Mazur.IdealAdicGradedClosedTwist
+public import FLT.Mazur.IdealAdicGradedComponentRestriction
 public import FLT.Mazur.IdealAdicGradedDegreeZero
 public import FLT.Mazur.IdealAdicGradedDegreeZeroGeneration
 public import FLT.Mazur.IdealAdicGradedLineTwist
