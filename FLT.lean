@@ -3283,6 +3283,7 @@ public import FLT.Mazur.EllipticSmallRamificationSpecialization
 public import FLT.Mazur.EllipticSmallRamificationTorsion
 public import FLT.Mazur.EllipticSmallResidueComponents
 public import FLT.Mazur.EllipticSmallResidueTorsion
+public import FLT.Mazur.EllipticSmoothIntegralSection
 public import FLT.Mazur.EllipticSmoothPointChange
 public import FLT.Mazur.EllipticSmoothReduction
 public import FLT.Mazur.EllipticSmoothReductionAddition
