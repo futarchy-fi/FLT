@@ -3452,6 +3452,7 @@ public import FLT.Mazur.IdealAdicCohomologyImage
 public import FLT.Mazur.IdealAdicCohomologyQuotient
 public import FLT.Mazur.IdealAdicCohomologyScalars
 public import FLT.Mazur.IdealAdicFormalComparison
+public import FLT.Mazur.IdealAdicFormalInjectivity
 public import FLT.Mazur.IdealAdicGradedAssociativity
 public import FLT.Mazur.IdealAdicGradedBaseAlgebra
 public import FLT.Mazur.IdealAdicGradedBaseProduct
