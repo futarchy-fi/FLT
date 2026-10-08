@@ -3453,6 +3453,7 @@ public import FLT.Mazur.IdealAdicCohomology
 public import FLT.Mazur.IdealAdicCohomologyImage
 public import FLT.Mazur.IdealAdicCohomologyQuotient
 public import FLT.Mazur.IdealAdicCohomologyScalars
+public import FLT.Mazur.IdealAdicCompatibleImages
 public import FLT.Mazur.IdealAdicFormalComparison
 public import FLT.Mazur.IdealAdicFormalFiniteComparison
 public import FLT.Mazur.IdealAdicFormalInjectivity
