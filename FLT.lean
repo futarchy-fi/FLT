@@ -4201,6 +4201,7 @@ public import FLT.Mazur.PrincipalAffineRefinement
 public import FLT.Mazur.PrincipalBipartiteCofinal
 public import FLT.Mazur.PrincipalBipartiteDirected
 public import FLT.Mazur.PrincipalBipartiteLimits
+public import FLT.Mazur.PrincipalBipartiteRelations
 public import FLT.Mazur.PrincipalBipartiteStages
 public import FLT.Mazur.PrincipalChartIntegerDescent
 public import FLT.Mazur.PrincipalChartOpenImmersion
