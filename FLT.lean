@@ -4061,6 +4061,7 @@ public import FLT.Mazur.PowerCohomologyReesQuotient
 public import FLT.Mazur.PowerCohomologyReesScalars
 public import FLT.Mazur.PowerCohomologyScalarMaps
 public import FLT.Mazur.PowerCohomologyShift
+public import FLT.Mazur.PowerScalarSectionCoordinates
 public import FLT.Mazur.PowerSeriesQuotientCompletion
 public import FLT.Mazur.PowerSeriesSubstitutionEquiv
 public import FLT.Mazur.PrimeTorsionSemistabilityAway
