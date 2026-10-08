@@ -3584,6 +3584,7 @@ public import FLT.Mazur.ModuleSheafInternalHom
 public import FLT.Mazur.ModuleSheafLocalHomComparison
 public import FLT.Mazur.ModuleSheafLocalHomNormalization
 public import FLT.Mazur.ModuleSheafLocalHomRefinement
+public import FLT.Mazur.ModuleSheafLocalIsoEvaluation
 public import FLT.Mazur.ModuleSheafLocalIsoTransport
 public import FLT.Mazur.ModuleSheafMorphismGluing
 public import FLT.Mazur.ModuleSheafMorphismRefinement
