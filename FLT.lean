@@ -2751,6 +2751,7 @@ public import FLT.Mazur.BaseAdicReesSpectrumOverlapCompatibility
 public import FLT.Mazur.BaseAdicReesSpectrumOverlapImageIso
 public import FLT.Mazur.BaseAdicReesSpectrumOverlapSheafIso
 public import FLT.Mazur.BaseAdicReesSpectrumOverlapSheafMap
+public import FLT.Mazur.BaseAdicReesSpectrumSheafDescent
 public import FLT.Mazur.BaseAdicReesSpectrumTransport
 public import FLT.Mazur.BaseAdicReesSpectrumTripleAmbientCocycle
 public import FLT.Mazur.BaseAdicReesSpectrumTripleAmbientMaps
