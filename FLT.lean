@@ -3423,6 +3423,7 @@ public import FLT.Mazur.IdealAdicRelativePushforwardSerreBound
 public import FLT.Mazur.IdealAdicRelativeQuasiCoherent
 public import FLT.Mazur.IdealAdicRelativeRecoveryIdentity
 public import FLT.Mazur.IdealAdicRelativeRecoveryRefinement
+public import FLT.Mazur.IdealAdicRelativeRecoveryScalars
 public import FLT.Mazur.IdealAdicRelativeRecoverySectionRefinement
 public import FLT.Mazur.IdealAdicRelativeRecoverySections
 public import FLT.Mazur.IdealAdicRelativeRestriction
