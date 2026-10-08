@@ -4386,6 +4386,7 @@ public import FLT.Mazur.PrincipalOccurrencePathIsomorphisms
 public import FLT.Mazur.PrincipalOccurrenceStages
 public import FLT.Mazur.PrincipalOccurrenceSurjective
 public import FLT.Mazur.PrincipalOccurrenceTargetBounds
+public import FLT.Mazur.PrincipalOldArrowRepresentatives
 public import FLT.Mazur.PrincipalOpenIntegerModel
 public import FLT.Mazur.PrincipalOpenIntersectionModels
 public import FLT.Mazur.PrincipalOriginalRestrictionPaths
