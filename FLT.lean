@@ -3417,6 +3417,7 @@ public import FLT.Mazur.FiniteRelationLocalizationColimit
 public import FLT.Mazur.FiniteRelationLocalizationDetection
 public import FLT.Mazur.FiniteRelationLocalizationFiniteDetection
 public import FLT.Mazur.FiniteRelationLocalizationHomDescent
+public import FLT.Mazur.FiniteRelationLocalizationHomEquality
 public import FLT.Mazur.FiniteRelationLocalizationSpectrum
 public import FLT.Mazur.FiniteRelationLocalizationStages
 public import FLT.Mazur.FiniteRelationPrincipalCoverModels
