@@ -3361,6 +3361,7 @@ public import FLT.Mazur.EllipticTypeIVResidue
 public import FLT.Mazur.EllipticTypeIVScaledComparison
 public import FLT.Mazur.EllipticTypeIVStarCoordinates
 public import FLT.Mazur.EllipticUnitInvariantsReduction
+public import FLT.Mazur.EllipticUnramifiedAdditiveTorsion
 public import FLT.Mazur.EllipticUnramifiedKernel
 public import FLT.Mazur.EllipticUnramifiedSpecialization
 public import FLT.Mazur.EllipticUnramifiedTorsion
