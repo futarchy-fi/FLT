@@ -3541,6 +3541,7 @@ public import FLT.Mazur.GeneralizedCurveSubgroupComparison
 public import FLT.Mazur.GeneralizedCurveSubgroupIdeal
 public import FLT.Mazur.GeneralizedEllipticCurve
 public import FLT.Mazur.GeneratorDenominatorLocalization
+public import FLT.Mazur.GenericConnectedFiberOpen
 public import FLT.Mazur.GenericFibers
 public import FLT.Mazur.GenericIdealInjection
 public import FLT.Mazur.GenericIdealSumComparison
