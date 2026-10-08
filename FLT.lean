@@ -2710,6 +2710,9 @@ public import FLT.Mazur.AnnihilatorStalk
 public import FLT.Mazur.AnnihilatorSubsheaf
 public import FLT.Mazur.BaseAdicCohomologyFiltration
 public import FLT.Mazur.BaseAdicQuotientSpectrum
+public import FLT.Mazur.BaseAdicReesChart
+public import FLT.Mazur.BaseAdicReesRestriction
+public import FLT.Mazur.BaseAdicReesSpace
 public import FLT.Mazur.BaseAdicThickening
 public import FLT.Mazur.BaseChangedPresentationModel
 public import FLT.Mazur.BinaryOpenDescent
@@ -3477,6 +3480,8 @@ public import FLT.Mazur.IdealPowerExtensionGluing
 public import FLT.Mazur.IdealPowerGenericComparison
 public import FLT.Mazur.IdealPowerMultiplication
 public import FLT.Mazur.IdealPowerProductSurjective
+public import FLT.Mazur.IdealPowerReesAction
+public import FLT.Mazur.IdealPowerReesChart
 public import FLT.Mazur.IdealPowerReesLocalization
 public import FLT.Mazur.IdealPowerReesRestriction
 public import FLT.Mazur.IdealPowerReesSections
@@ -4088,7 +4093,10 @@ public import FLT.Mazur.ReesAlgebraBaseChange
 public import FLT.Mazur.ReesAlgebraMap
 public import FLT.Mazur.ReesModuleBaseChange
 public import FLT.Mazur.ReesModuleDirectSum
+public import FLT.Mazur.ReesModuleIdealCongr
 public import FLT.Mazur.ReesModuleMap
+public import FLT.Mazur.ReesRelativeModuleMap
+public import FLT.Mazur.ReesRelativeNaturality
 public import FLT.Mazur.RefinedChartSpectrum
 public import FLT.Mazur.RelativeAmpleAffineBaseChange
 public import FLT.Mazur.RelativeAmpleBaseChange
