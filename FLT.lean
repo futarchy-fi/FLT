@@ -4414,6 +4414,7 @@ public import FLT.Mazur.WeierstrassReciprocalAdditionChart
 public import FLT.Mazur.WeierstrassReciprocalAdditionCompatibility
 public import FLT.Mazur.WeierstrassReciprocalAdditionFormula
 public import FLT.Mazur.WeierstrassReciprocalAffineUnits
+public import FLT.Mazur.WeierstrassReciprocalCenteredCubics
 public import FLT.Mazur.WeierstrassReciprocalCentering
 public import FLT.Mazur.WeierstrassReciprocalChartSpecialization
 public import FLT.Mazur.WeierstrassReciprocalGlobalDomains
