@@ -2812,6 +2812,7 @@ public import FLT.Mazur.BaseChangedPresentationModel
 public import FLT.Mazur.BinaryOpenDescent
 public import FLT.Mazur.CartesianOpenSectionMap
 public import FLT.Mazur.CartesianSectionRestriction
+public import FLT.Mazur.CartesianStructureSections
 public import FLT.Mazur.CartierAffineFppfDescent
 public import FLT.Mazur.CartierChartFlat
 public import FLT.Mazur.CartierCharts
