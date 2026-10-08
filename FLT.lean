@@ -3230,6 +3230,7 @@ public import FLT.Mazur.EllipticNormalizedTypeIVStar
 public import FLT.Mazur.EllipticPadicKernel
 public import FLT.Mazur.EllipticPadicSpecialization
 public import FLT.Mazur.EllipticPointMapCoordinates
+public import FLT.Mazur.EllipticPrimeSubgroupComponents
 public import FLT.Mazur.EllipticPrimeToResidueSpecialization
 public import FLT.Mazur.EllipticPrimeTorsionComponents
 public import FLT.Mazur.EllipticProjectiveBaseChange
