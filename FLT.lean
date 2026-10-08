@@ -4390,6 +4390,7 @@ public import FLT.Mazur.WeierstrassInfinityDividedLine
 public import FLT.Mazur.WeierstrassInfinityFactorCancellation
 public import FLT.Mazur.WeierstrassInfinityGlobalDomain
 public import FLT.Mazur.WeierstrassInfinityHomogeneousComparison
+public import FLT.Mazur.WeierstrassInfinityHomogeneousPencil
 public import FLT.Mazur.WeierstrassInfinityIdentityChart
 public import FLT.Mazur.WeierstrassInfinityIdentityCover
 public import FLT.Mazur.WeierstrassInfinityIdentityFormula
