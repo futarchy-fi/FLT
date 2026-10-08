@@ -4929,6 +4929,7 @@ public import FLT.Mazur.WeierstrassSwappedSameOutputSchemes
 public import FLT.Mazur.WeierstrassSwappedSlopeComparison
 public import FLT.Mazur.WeierstrassSwappedSlopeRelations
 public import FLT.Mazur.WeierstrassTransportedAdditionRing
+public import FLT.Mazur.WeierstrassTransportedComparisonArbitrary
 public import FLT.Mazur.WeierstrassTransportedOutputRegular
 public import FLT.Mazur.WeierstrassTransportedPolynomialComparison
 public import FLT.Mazur.WeierstrassTransportedPolynomialScheme
