@@ -5123,6 +5123,7 @@ public import FLT.Mazur.SurjectiveAlgHomKernelEquiv
 public import FLT.Mazur.SurjectiveDominantEpi
 public import FLT.Mazur.SurjectiveStructureSupport
 public import FLT.Mazur.SurjectiveTowerLifting
+public import FLT.Mazur.SymmetricAffineLineParameters
 public import FLT.Mazur.TensorEvaluationSemilinear
 public import FLT.Mazur.TensorIntegerModelClosedImmersion
 public import FLT.Mazur.TensorIntegerModelMap
