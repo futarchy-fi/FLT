@@ -2352,6 +2352,16 @@ coefficient compatibility. The modular quotient, cusps and global
 Mazur arithmetic still remain; none of FLT's three arithmetic inputs
 has been removed by this geometric relation.
 
+### Cyclic automorphisms over the j-line (2026-10-08)
+
+`CubicLegendreCyclicAutomorphisms` combines coefficient ring equivalences with
+the descended coordinate isomorphisms. The swap and reciprocal now define
+actual automorphisms of the Legendre cyclic scheme over the j-line, with
+their stated parameter maps on the Legendre base. Their involution and braid
+relations as parameter-changing automorphisms still need proof; the existing
+fixed-base mixed relation alone does not establish those compatibilities.
+No modular quotient, compactification, or arithmetic Mazur input follows yet.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
