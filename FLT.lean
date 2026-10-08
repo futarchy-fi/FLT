@@ -3378,6 +3378,7 @@ public import FLT.Mazur.FiniteSchemeInvertibleSections
 public import FLT.Mazur.FiniteSchemeLength
 public import FLT.Mazur.FiniteSchemeLineCohomology
 public import FLT.Mazur.FiniteSchemeLineTwist
+public import FLT.Mazur.FiniteSectionCoverReindex
 public import FLT.Mazur.FiniteSectionProjectivePresentation
 public import FLT.Mazur.FiniteSeparatedLineSheafDescent
 public import FLT.Mazur.FiniteSupportClosedDescent
