@@ -4373,6 +4373,7 @@ public import FLT.Mazur.PrincipalOriginalRestrictionPaths
 public import FLT.Mazur.PrincipalPresentationIntegerModel
 public import FLT.Mazur.PrincipalQuotientAlgebra
 public import FLT.Mazur.PrincipalQuotientArrow
+public import FLT.Mazur.PrincipalQuotientDiagramStages
 public import FLT.Mazur.PrincipalQuotientProjection
 public import FLT.Mazur.PrincipalQuotientRepresentatives
 public import FLT.Mazur.PrincipalRefinementOpenImmersion
