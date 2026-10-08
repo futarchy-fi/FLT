@@ -4928,6 +4928,7 @@ public import FLT.Mazur.WeierstrassSmoothAffineCommutativity
 public import FLT.Mazur.WeierstrassSmoothAffineCover
 public import FLT.Mazur.WeierstrassSmoothAffineDomain
 public import FLT.Mazur.WeierstrassSmoothAffineIdentity
+public import FLT.Mazur.WeierstrassSmoothAffineInputTriple
 public import FLT.Mazur.WeierstrassSmoothAffineOuterTriple
 public import FLT.Mazur.WeierstrassSmoothAffineOutputFactorization
 public import FLT.Mazur.WeierstrassSmoothAffineTransport
