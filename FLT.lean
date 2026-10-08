@@ -3365,6 +3365,7 @@ public import FLT.Mazur.IdealAdicRelativeCoefficientDescent
 public import FLT.Mazur.IdealAdicRelativeCoefficientGeometricRefinement
 public import FLT.Mazur.IdealAdicRelativeCoefficientLocalization
 public import FLT.Mazur.IdealAdicRelativeCoefficientModuleMap
+public import FLT.Mazur.IdealAdicRelativeCoefficientProjection
 public import FLT.Mazur.IdealAdicRelativeCoefficientRestriction
 public import FLT.Mazur.IdealAdicRelativeCoefficientSheafCoherence
 public import FLT.Mazur.IdealAdicRelativeCoefficientSheafIso
