@@ -3261,6 +3261,7 @@ public import FLT.Mazur.EllipticSubgroupAmbientSectionLaws
 public import FLT.Mazur.EllipticSubgroupChartClosure
 public import FLT.Mazur.EllipticSubgroupChartGeneric
 public import FLT.Mazur.EllipticSubgroupClosedFiberPoints
+public import FLT.Mazur.EllipticSubgroupClosureAddition
 public import FLT.Mazur.EllipticSubgroupClosureFinite
 public import FLT.Mazur.EllipticSubgroupClosureGluing
 public import FLT.Mazur.EllipticSubgroupClosureNegation
