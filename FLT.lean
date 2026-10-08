@@ -4493,6 +4493,7 @@ public import FLT.Mazur.WeierstrassChartInjectiveDescent
 public import FLT.Mazur.WeierstrassChartJacobian
 public import FLT.Mazur.WeierstrassChartJacobianCover
 public import FLT.Mazur.WeierstrassChartOverlap
+public import FLT.Mazur.WeierstrassChartPresentation
 public import FLT.Mazur.WeierstrassChartSchemeGluingData
 public import FLT.Mazur.WeierstrassChartUnitLift
 public import FLT.Mazur.WeierstrassCrossInputAdditionComparison
