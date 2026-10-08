@@ -3050,6 +3050,7 @@ public import FLT.Mazur.CurveFiberHypotheses
 public import FLT.Mazur.CurveFinite
 public import FLT.Mazur.CurveGenericLineComparison
 public import FLT.Mazur.CurveGenus
+public import FLT.Mazur.CurveGraphPullback
 public import FLT.Mazur.CurveIdealTwistDegree
 public import FLT.Mazur.CurveLineTensorDegree
 public import FLT.Mazur.CurveNode
