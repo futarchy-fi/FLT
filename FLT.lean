@@ -4194,6 +4194,7 @@ public import FLT.Mazur.PrincipalComparisonIntegerModel
 public import FLT.Mazur.PrincipalComparisonRecovery
 public import FLT.Mazur.PrincipalCoordinateCofinal
 public import FLT.Mazur.PrincipalCoordinateDirected
+public import FLT.Mazur.PrincipalCoordinateLimits
 public import FLT.Mazur.PrincipalCoordinateStages
 public import FLT.Mazur.PrincipalGeneratorExtension
 public import FLT.Mazur.PrincipalIntegerModelIsomorphism
