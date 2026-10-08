@@ -4183,6 +4183,7 @@ public import FLT.Mazur.SchemeAffineCommonSectionPostcomposition
 public import FLT.Mazur.SchemeAffineCommonSectionRecovery
 public import FLT.Mazur.SchemeAffineCommonSectionSquareComparison
 public import FLT.Mazur.SchemeAffineCommonSectionTransport
+public import FLT.Mazur.SchemeAffineCommonSectionTransportEquation
 public import FLT.Mazur.SchemeAffineCommonSectionTransportPullback
 public import FLT.Mazur.SchemeAffineCommonSectionTransportRecovery
 public import FLT.Mazur.SchemeAffineCoverRecovery
