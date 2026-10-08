@@ -4301,6 +4301,7 @@ public import FLT.Mazur.WeierstrassInputPolynomialScaling
 public import FLT.Mazur.WeierstrassInputProductAddition
 public import FLT.Mazur.WeierstrassInputSwap
 public import FLT.Mazur.WeierstrassIntegralAdditionCharts
+public import FLT.Mazur.WeierstrassIntegralAdditionCommutative
 public import FLT.Mazur.WeierstrassIntegralAdditionFormula
 public import FLT.Mazur.WeierstrassIntegralChart
 public import FLT.Mazur.WeierstrassIntegralCurveGluing
