@@ -3473,6 +3473,7 @@ public import FLT.Mazur.FiniteRelationLocalizationHomEquality
 public import FLT.Mazur.FiniteRelationLocalizationKernels
 public import FLT.Mazur.FiniteRelationLocalizationNumerators
 public import FLT.Mazur.FiniteRelationLocalizationOverlapQuotients
+public import FLT.Mazur.FiniteRelationLocalizationPathQuotients
 public import FLT.Mazur.FiniteRelationLocalizationQuotientEquiv
 public import FLT.Mazur.FiniteRelationLocalizationSharedIdeals
 public import FLT.Mazur.FiniteRelationLocalizationSpectrum
