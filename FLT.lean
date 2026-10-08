@@ -4394,6 +4394,7 @@ public import FLT.Mazur.WeierstrassInfinityTransportedScheme
 public import FLT.Mazur.WeierstrassInfinityTransportedSlopes
 public import FLT.Mazur.WeierstrassInfinityTripleCommonInputs
 public import FLT.Mazur.WeierstrassInfinityTripleFullMember
+public import FLT.Mazur.WeierstrassInfinityTripleScalarCross
 public import FLT.Mazur.WeierstrassInfinityTripleScalarLaws
 public import FLT.Mazur.WeierstrassInfinityTripleScalarMaps
 public import FLT.Mazur.WeierstrassInfinityTripleSections
