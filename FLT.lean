@@ -3358,6 +3358,7 @@ public import FLT.Mazur.IdealAdicLineTower
 public import FLT.Mazur.IdealAdicQuotient
 public import FLT.Mazur.IdealAdicRelativeAffineOverlap
 public import FLT.Mazur.IdealAdicRelativeAffineProjection
+public import FLT.Mazur.IdealAdicRelativeAffineRecovery
 public import FLT.Mazur.IdealAdicRelativeAffineSheaf
 public import FLT.Mazur.IdealAdicRelativeAmbientCoefficient
 public import FLT.Mazur.IdealAdicRelativeAmbientImageIso
