@@ -4935,6 +4935,7 @@ public import FLT.Mazur.WeierstrassDilatationAlgebra
 public import FLT.Mazur.WeierstrassDilatationBaseChange
 public import FLT.Mazur.WeierstrassDilatationCoefficients
 public import FLT.Mazur.WeierstrassDilatationFiberNormalForm
+public import FLT.Mazur.WeierstrassDilatationFractionMap
 public import FLT.Mazur.WeierstrassDilatationGenericFiber
 public import FLT.Mazur.WeierstrassDilatationLifting
 public import FLT.Mazur.WeierstrassDilatationMorphism
