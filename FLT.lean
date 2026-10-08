@@ -5070,6 +5070,7 @@ public import FLT.Mazur.SectionProjectiveFiniteNeighborhood
 public import FLT.Mazur.SectionProjectiveImmersion
 public import FLT.Mazur.SectionSumFieldLength
 public import FLT.Mazur.SectionSumFinite
+public import FLT.Mazur.SectionSumRank
 public import FLT.Mazur.SegreChartMaps
 public import FLT.Mazur.SegreChartQuotient
 public import FLT.Mazur.SegreClosedImmersion
