@@ -4008,6 +4008,7 @@ public import FLT.Mazur.PolygonUniversalAction
 public import FLT.Mazur.PolygonUniversalScaling
 public import FLT.Mazur.PolynomialEndpointInterpolation
 public import FLT.Mazur.PolynomialRelationIntegerModel
+public import FLT.Mazur.PowerCohomologyReesAction
 public import FLT.Mazur.PowerCohomologyScalarMaps
 public import FLT.Mazur.PowerCohomologyShift
 public import FLT.Mazur.PowerSeriesQuotientCompletion
