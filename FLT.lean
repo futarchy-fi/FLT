@@ -4475,6 +4475,7 @@ public import FLT.Mazur.WeierstrassInfinityTripleCommonInputs
 public import FLT.Mazur.WeierstrassInfinityTripleComparison
 public import FLT.Mazur.WeierstrassInfinityTripleCrossDenominators
 public import FLT.Mazur.WeierstrassInfinityTripleDividedCoefficients
+public import FLT.Mazur.WeierstrassInfinityTripleEndpointIdeals
 public import FLT.Mazur.WeierstrassInfinityTripleFullMember
 public import FLT.Mazur.WeierstrassInfinityTripleInputPairBezout
 public import FLT.Mazur.WeierstrassInfinityTripleInputPairCoefficients
