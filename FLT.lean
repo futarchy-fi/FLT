@@ -4933,6 +4933,7 @@ public import FLT.Mazur.WeierstrassSmoothAffineOuterTriple
 public import FLT.Mazur.WeierstrassSmoothAffineOutputFactorization
 public import FLT.Mazur.WeierstrassSmoothAffinePairDescent
 public import FLT.Mazur.WeierstrassSmoothAffineTransport
+public import FLT.Mazur.WeierstrassSmoothAffineTripleDescent
 public import FLT.Mazur.WeierstrassSmoothAllOrdinaryTriple
 public import FLT.Mazur.WeierstrassSmoothChartCompatibility
 public import FLT.Mazur.WeierstrassSmoothCrossAffine
