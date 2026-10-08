@@ -3688,6 +3688,7 @@ public import FLT.Mazur.ModuleSectionRegularity
 public import FLT.Mazur.ModuleSectionUnit
 public import FLT.Mazur.ModuleSheafAffineTestCompatibility
 public import FLT.Mazur.ModuleSheafChartOverlapRecovery
+public import FLT.Mazur.ModuleSheafChartRecoveryRefinement
 public import FLT.Mazur.ModuleSheafCoordinateNaturality
 public import FLT.Mazur.ModuleSheafDual
 public import FLT.Mazur.ModuleSheafDualInternalHom
