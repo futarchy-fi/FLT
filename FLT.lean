@@ -4839,6 +4839,7 @@ public import FLT.Mazur.WeierstrassReciprocalZeroPointComparison
 public import FLT.Mazur.WeierstrassRelativeSmoothOpen
 public import FLT.Mazur.WeierstrassSameOutputIntersections
 public import FLT.Mazur.WeierstrassScaledChartComparison
+public import FLT.Mazur.WeierstrassSingularJetObstruction
 public import FLT.Mazur.WeierstrassSlopeSwapFormula
 public import FLT.Mazur.WeierstrassSmoothFiberCore
 public import FLT.Mazur.WeierstrassSmoothNegation
