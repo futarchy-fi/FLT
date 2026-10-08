@@ -2183,6 +2183,33 @@ Mixed permutation relations and the full family action remain open.
 None of the three global arithmetic gaps (Mazur_statement, integral lifting,
 compatible families) is discharged by these geometric results.
 
+### Descended reciprocal return completed — 2026-10-08
+
+Implemented `CubicLegendreReciprocalReturn.lean`. The reciprocal coordinate
+map on the inverse-parameter root cover now descends to an explicit return
+map on the universal Legendre cyclic scheme. The proof uses coefficient
+naturality to move the original map to that cover, applies the verified
+local inverse-product relation, and cancels the effective covering map.
+
+Both compositions with the existing descended reciprocal map are identities.
+The return preserves the original coefficient base. The theorem
+`legendreReciprocalReturnDescendedOver_eq_inv` identifies this actual
+coordinate-descended return with the inverse of
+`legendreReciprocalDescendedIso`, not just with an unspecified inverse.
+
+The module and namespace-wide trust audit passed all 4548 jobs. The full
+lake build FLT passed all 10545 jobs, including FermatsLastTheorem. The
+module linter, generated-import check and whitespace check passed. Direct axiom
+checks for the two universal compositions and the inverse identification use
+only propext, Classical.choice and Quot.sound.
+
+This completes the reciprocal return comparison across its two root covers.
+The swap return identities were already established. Mixed permutation
+relations, their common-cover comparisons, and the full action on the family
+remain open; the integral modular curve and subsequent Mazur arithmetic are
+still unconstructed. Mazur_statement and the existing lifting and compatible
+family sorry proofs remain dependencies of the final FLT theorem.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
