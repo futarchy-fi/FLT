@@ -4872,6 +4872,7 @@ public import FLT.Mazur.WeierstrassDilatationMorphism
 public import FLT.Mazur.WeierstrassDilatationRefinement
 public import FLT.Mazur.WeierstrassDilatationResidueDepth
 public import FLT.Mazur.WeierstrassDilatationResidueFiber
+public import FLT.Mazur.WeierstrassDilatationResidueGeometry
 public import FLT.Mazur.WeierstrassDilatationUnitComparison
 public import FLT.Mazur.WeierstrassFieldChartPresentation
 public import FLT.Mazur.WeierstrassFiniteChartDescent
