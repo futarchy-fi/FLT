@@ -3383,6 +3383,7 @@ public import FLT.Mazur.IdealAdicRelativeCoefficientSheafMap
 public import FLT.Mazur.IdealAdicRelativeCoefficientTransportRefinement
 public import FLT.Mazur.IdealAdicRelativeCommonRefinement
 public import FLT.Mazur.IdealAdicRelativeDescendedMultiplication
+public import FLT.Mazur.IdealAdicRelativeDescendedScalars
 public import FLT.Mazur.IdealAdicRelativeDescendedUnderlying
 public import FLT.Mazur.IdealAdicRelativeFinitePresentation
 public import FLT.Mazur.IdealAdicRelativeGradedAlgebra
