@@ -4155,6 +4155,7 @@ public import FLT.Mazur.ProperAmpleConverse
 public import FLT.Mazur.ProperAmpleFiberModel
 public import FLT.Mazur.ProperCoherentCohomology
 public import FLT.Mazur.ProperCohomologyWitnesses
+public import FLT.Mazur.ProperConnectedReducedSections
 public import FLT.Mazur.ProperCoverImmersionCriterion
 public import FLT.Mazur.ProperCurveGenus
 public import FLT.Mazur.ProperFiberNeighborhood
