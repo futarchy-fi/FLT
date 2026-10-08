@@ -2678,6 +2678,7 @@ public import FLT.Mazur.AffineReverseOverlapCocycle
 public import FLT.Mazur.AffineReverseOverlapDiagonal
 public import FLT.Mazur.AffineScaledPullbackSections
 public import FLT.Mazur.AffineScaledTripleTransport
+public import FLT.Mazur.AffineSectionEvaluationCoordinates
 public import FLT.Mazur.AffineSectionsReconstruction
 public import FLT.Mazur.AffineSourcePullbackSections
 public import FLT.Mazur.AffineSourceSectionComparison
