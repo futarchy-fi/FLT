@@ -4707,6 +4707,7 @@ public import FLT.Mazur.WeierstrassInfinityQuadraticWeight
 public import FLT.Mazur.WeierstrassInfinityResidualElimination
 public import FLT.Mazur.WeierstrassInfinityReverseCross
 public import FLT.Mazur.WeierstrassInfinitySlopeMap
+public import FLT.Mazur.WeierstrassInfinitySmoothChart
 public import FLT.Mazur.WeierstrassInfinitySpecializedFactorization
 public import FLT.Mazur.WeierstrassInfinityTransportedComparison
 public import FLT.Mazur.WeierstrassInfinityTransportedInputs
