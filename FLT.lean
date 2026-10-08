@@ -2714,6 +2714,7 @@ public import FLT.Mazur.AmpleCoherentVanishing
 public import FLT.Mazur.AmpleCommonDegree
 public import FLT.Mazur.AmpleFiberCartesianDescent
 public import FLT.Mazur.AmpleGlobalGeneration
+public import FLT.Mazur.AmpleHighDegreeSectionCover
 public import FLT.Mazur.AmpleLineBundle
 public import FLT.Mazur.AmplePrincipalLocality
 public import FLT.Mazur.AnnihilatorCoherence
@@ -2920,7 +2921,10 @@ public import FLT.Mazur.ClosedDirectImageComposition
 public import FLT.Mazur.ClosedImmersionModulePushforward
 public import FLT.Mazur.ClosedLineProjectionFormula
 public import FLT.Mazur.ClosedModuleDescent
+public import FLT.Mazur.ClosedPointFiberAmple
+public import FLT.Mazur.ClosedPointFiberSectionLifting
 public import FLT.Mazur.ClosedPointLineSection
+public import FLT.Mazur.ClosedPointQuotientFiber
 public import FLT.Mazur.ClosedProjectiveSerreVanishing
 public import FLT.Mazur.ClosedPushforwardCohomology
 public import FLT.Mazur.ClosedPushforwardFull
@@ -3702,6 +3706,7 @@ public import FLT.Mazur.LocalizationDegreePiece
 public import FLT.Mazur.LocalizationDegreeShift
 public import FLT.Mazur.LocalizationJointRestriction
 public import FLT.Mazur.LocalizedAdicCompletion
+public import FLT.Mazur.LocalizedBaseSectionNumerator
 public import FLT.Mazur.LocalizedIntegerChartComparison
 public import FLT.Mazur.LocalizedIntegerComparisonTransport
 public import FLT.Mazur.LocalizedIntegerModelIsomorphism
@@ -3722,6 +3727,7 @@ public import FLT.Mazur.ModuleFreeOpen
 public import FLT.Mazur.ModuleGlobalEvaluationPullback
 public import FLT.Mazur.ModuleGlobalGeneration
 public import FLT.Mazur.ModuleGlobalSectionExt
+public import FLT.Mazur.ModuleGlobalSectionIso
 public import FLT.Mazur.ModuleGlobalSectionPullback
 public import FLT.Mazur.ModuleGlobalUnitGenerator
 public import FLT.Mazur.ModuleHomIsomorphismOpen
@@ -4242,6 +4248,8 @@ public import FLT.Mazur.ProperCurveGenus
 public import FLT.Mazur.ProperFiberNeighborhood
 public import FLT.Mazur.ProperIntegralConstantSections
 public import FLT.Mazur.ProperLineSheafDescent
+public import FLT.Mazur.ProperLocalAmpleFiberGenerators
+public import FLT.Mazur.ProperLocalFiberCover
 public import FLT.Mazur.ProperPointExtension
 public import FLT.Mazur.ProperRingCohomologyFinite
 public import FLT.Mazur.ProperSectionGluing
@@ -4566,6 +4574,10 @@ public import FLT.Mazur.SmoothDimension
 public import FLT.Mazur.SmoothDimensionBound
 public import FLT.Mazur.SmoothOpenSectionCartier
 public import FLT.Mazur.SmoothSectionCartier
+public import FLT.Mazur.StalkBaseClosedFiber
+public import FLT.Mazur.StalkBaseLocalization
+public import FLT.Mazur.StalkBaseSectionLifting
+public import FLT.Mazur.StalkBaseSectionNumerator
 public import FLT.Mazur.StructureCohomologyFinite
 public import FLT.Mazur.StructureCohomologyOverIso
 public import FLT.Mazur.StructureDirectImageHZero
