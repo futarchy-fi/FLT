@@ -4409,6 +4409,7 @@ public import FLT.Mazur.WeierstrassInfinityOutputComparison
 public import FLT.Mazur.WeierstrassInfinityOutputTransition
 public import FLT.Mazur.WeierstrassInfinityOverlapScheme
 public import FLT.Mazur.WeierstrassInfinityPairSection
+public import FLT.Mazur.WeierstrassInfinityPencilPolynomial
 public import FLT.Mazur.WeierstrassInfinityProjectiveOverlap
 public import FLT.Mazur.WeierstrassInfinityReverseCross
 public import FLT.Mazur.WeierstrassInfinitySlopeMap
