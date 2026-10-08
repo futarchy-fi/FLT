@@ -4197,6 +4197,7 @@ public import FLT.Mazur.SchematicDescentGluing
 public import FLT.Mazur.SchemeAffineAmbientTestCocycle
 public import FLT.Mazur.SchemeAffineAmbientTestNaturality
 public import FLT.Mazur.SchemeAffineAmbientTestRefinement
+public import FLT.Mazur.SchemeAffineBaseCoverRecovery
 public import FLT.Mazur.SchemeAffineBaseRecovery
 public import FLT.Mazur.SchemeAffineBaseRecoveryCharts
 public import FLT.Mazur.SchemeAffineBaseRecoveryCompatibility
