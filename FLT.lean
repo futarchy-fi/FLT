@@ -2719,7 +2719,10 @@ public import FLT.Mazur.BaseAdicReesCommonRefinement
 public import FLT.Mazur.BaseAdicReesCover
 public import FLT.Mazur.BaseAdicReesGeometricRefinement
 public import FLT.Mazur.BaseAdicReesLocalization
+public import FLT.Mazur.BaseAdicReesModelCohomologyFinite
 public import FLT.Mazur.BaseAdicReesModelDescent
+public import FLT.Mazur.BaseAdicReesModelPushforward
+public import FLT.Mazur.BaseAdicReesModelSectionCoordinates
 public import FLT.Mazur.BaseAdicReesModuleChart
 public import FLT.Mazur.BaseAdicReesModuleLocalization
 public import FLT.Mazur.BaseAdicReesOverlap
@@ -4008,6 +4011,13 @@ public import FLT.Mazur.PolygonUniversalAction
 public import FLT.Mazur.PolygonUniversalScaling
 public import FLT.Mazur.PolynomialEndpointInterpolation
 public import FLT.Mazur.PolynomialRelationIntegerModel
+public import FLT.Mazur.PowerCohomologyHZeroSections
+public import FLT.Mazur.PowerCohomologyReesAction
+public import FLT.Mazur.PowerCohomologyReesComparison
+public import FLT.Mazur.PowerCohomologyReesQuotient
+public import FLT.Mazur.PowerCohomologyReesScalars
+public import FLT.Mazur.PowerCohomologyScalarMaps
+public import FLT.Mazur.PowerCohomologyShift
 public import FLT.Mazur.PowerSeriesQuotientCompletion
 public import FLT.Mazur.PowerSeriesSubstitutionEquiv
 public import FLT.Mazur.PrimeTorsionSemistabilityAway
@@ -4143,6 +4153,7 @@ public import FLT.Mazur.RationalFibers
 public import FLT.Mazur.ReconstructionComposition
 public import FLT.Mazur.ReesAffineModel
 public import FLT.Mazur.ReesAlgebraBaseChange
+public import FLT.Mazur.ReesAlgebraDirectSum
 public import FLT.Mazur.ReesAlgebraMap
 public import FLT.Mazur.ReesModuleBaseChange
 public import FLT.Mazur.ReesModuleDirectSum
