@@ -3608,6 +3608,7 @@ public import FLT.Mazur.ModuleSheafInternalHom
 public import FLT.Mazur.ModuleSheafLocalEquation
 public import FLT.Mazur.ModuleSheafLocalEvaluation
 public import FLT.Mazur.ModuleSheafLocalHomComparison
+public import FLT.Mazur.ModuleSheafLocalHomComposition
 public import FLT.Mazur.ModuleSheafLocalHomNormalization
 public import FLT.Mazur.ModuleSheafLocalHomRefinement
 public import FLT.Mazur.ModuleSheafLocalIsoEvaluation
@@ -4081,6 +4082,9 @@ public import FLT.Mazur.ScalarExtensionDirectSum
 public import FLT.Mazur.ScalarExtensionIsomorphismDescent
 public import FLT.Mazur.ScalarExtensionPullbackDescent
 public import FLT.Mazur.SchematicDescentGluing
+public import FLT.Mazur.SchemeAffineAmbientTestCocycle
+public import FLT.Mazur.SchemeAffineAmbientTestRefinement
+public import FLT.Mazur.SchemeAffineBaseTripleCocycle
 public import FLT.Mazur.SchemeAffineChartBaseChange
 public import FLT.Mazur.SchemeAffineChartComparisonComposition
 public import FLT.Mazur.SchemeAffineChartComposition
@@ -4123,6 +4127,7 @@ public import FLT.Mazur.SchemeAffineCrossRefinementQuasicoherent
 public import FLT.Mazur.SchemeAffineCrossRefinementRawRestriction
 public import FLT.Mazur.SchemeAffineCrossRefinementRestriction
 public import FLT.Mazur.SchemeAffineDescentChart
+public import FLT.Mazur.SchemeAffineImageTestComparison
 public import FLT.Mazur.SchemeAffineOpenOverlapCover
 public import FLT.Mazur.SchemeAffineOverlapChartCommonRefinement
 public import FLT.Mazur.SchemeAffineOverlapChartComparison
@@ -4131,10 +4136,14 @@ public import FLT.Mazur.SchemeAffineOverlapCommonCovering
 public import FLT.Mazur.SchemeAffineOverlapGluing
 public import FLT.Mazur.SchemeAffineOverlapLocalComparison
 public import FLT.Mazur.SchemeAffineOverlapLocalRefinement
+public import FLT.Mazur.SchemeAffineOverlapMapNormalization
 public import FLT.Mazur.SchemeAffineOverlapObjectwiseComparison
 public import FLT.Mazur.SchemeAffineOverlapTestNormalization
 public import FLT.Mazur.SchemeAffineOverlapTestRecovery
 public import FLT.Mazur.SchemeAffineRefinementCompatibility
+public import FLT.Mazur.SchemeAffineSchemeTestCocycle
+public import FLT.Mazur.SchemeAffineSchemeTestComparison
+public import FLT.Mazur.SchemeAffineSchemeTestRefinement
 public import FLT.Mazur.SchemeAffineTensorCrossRefinement
 public import FLT.Mazur.SchemeAffineTestComparison
 public import FLT.Mazur.SchemeAffineTripleComparisonCocycle
