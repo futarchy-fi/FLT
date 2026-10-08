@@ -3684,6 +3684,7 @@ public import FLT.Mazur.HilbertChartEquations
 public import FLT.Mazur.HilbertChartEvaluationSurjective
 public import FLT.Mazur.HilbertChartGeneratorMap
 public import FLT.Mazur.HilbertChartMultiplication
+public import FLT.Mazur.HilbertChartSpecialization
 public import FLT.Mazur.HilbertChartStructureConstants
 public import FLT.Mazur.HilbertChartUniversalClosedFamily
 public import FLT.Mazur.HilbertChartUniversalFamily
