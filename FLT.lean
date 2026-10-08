@@ -2615,6 +2615,8 @@ public import FLT.Mazur.AffineOpenCechBoundary
 public import FLT.Mazur.AffineOpenCoverCommonRefinement
 public import FLT.Mazur.AffineOpenCoverComparisonGluing
 public import FLT.Mazur.AffineOpenCoverGluingIso
+public import FLT.Mazur.AffineOpenCoverTestRecovery
+public import FLT.Mazur.AffineOpenCoverTestRefinement
 public import FLT.Mazur.AffineOpenDenominators
 public import FLT.Mazur.AffineOpenImmersionLocalizationCriterion
 public import FLT.Mazur.AffineOverlapDiagonal
@@ -4100,7 +4102,10 @@ public import FLT.Mazur.SchemeAffineCrossRefinementComparison
 public import FLT.Mazur.SchemeAffineCrossRefinementCoverIndependence
 public import FLT.Mazur.SchemeAffineCrossRefinementEffectiveRestriction
 public import FLT.Mazur.SchemeAffineCrossRefinementFamily
+public import FLT.Mazur.SchemeAffineCrossRefinementFamilyChoice
 public import FLT.Mazur.SchemeAffineCrossRefinementFamilyComparison
+public import FLT.Mazur.SchemeAffineCrossRefinementFamilyNormalization
+public import FLT.Mazur.SchemeAffineCrossRefinementFamilyRecognition
 public import FLT.Mazur.SchemeAffineCrossRefinementFamilyReconstruction
 public import FLT.Mazur.SchemeAffineCrossRefinementMiddle
 public import FLT.Mazur.SchemeAffineCrossRefinementObjectPresentation
@@ -4119,8 +4124,13 @@ public import FLT.Mazur.SchemeAffineOverlapGluing
 public import FLT.Mazur.SchemeAffineOverlapLocalComparison
 public import FLT.Mazur.SchemeAffineOverlapLocalRefinement
 public import FLT.Mazur.SchemeAffineOverlapObjectwiseComparison
+public import FLT.Mazur.SchemeAffineOverlapTestNormalization
+public import FLT.Mazur.SchemeAffineOverlapTestRecovery
 public import FLT.Mazur.SchemeAffineRefinementCompatibility
 public import FLT.Mazur.SchemeAffineTensorCrossRefinement
+public import FLT.Mazur.SchemeAffineTestComparison
+public import FLT.Mazur.SchemeAffineTripleComparisonCocycle
+public import FLT.Mazur.SchemeAffineTripleRefinementFamily
 public import FLT.Mazur.SchemeBaseChangeLimit
 public import FLT.Mazur.SchemeCanonicalMapRecognition
 public import FLT.Mazur.SchemeCanonicalOverlapNaturality
