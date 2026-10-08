@@ -3358,6 +3358,7 @@ public import FLT.Mazur.IdealAdicLineTower
 public import FLT.Mazur.IdealAdicQuotient
 public import FLT.Mazur.IdealAdicRelativeAffineOverlap
 public import FLT.Mazur.IdealAdicRelativeAffineSheaf
+public import FLT.Mazur.IdealAdicRelativeAmbientCoefficient
 public import FLT.Mazur.IdealAdicRelativeChartScalar
 public import FLT.Mazur.IdealAdicRelativeChartTransition
 public import FLT.Mazur.IdealAdicRelativeClosedModule
@@ -3376,6 +3377,7 @@ public import FLT.Mazur.IdealAdicRelativeGradedAlgebra
 public import FLT.Mazur.IdealAdicRelativeImageCoefficient
 public import FLT.Mazur.IdealAdicRelativeImageCoefficientTransition
 public import FLT.Mazur.IdealAdicRelativeImageOpenCover
+public import FLT.Mazur.IdealAdicRelativeImageTransitionTransport
 public import FLT.Mazur.IdealAdicRelativeLocalization
 public import FLT.Mazur.IdealAdicRelativeNoetherian
 public import FLT.Mazur.IdealAdicRelativeOverlapCoefficientCharts
@@ -3407,6 +3409,8 @@ public import FLT.Mazur.IdealAdicRelativeSheafGenerators
 public import FLT.Mazur.IdealAdicRelativeTilde
 public import FLT.Mazur.IdealAdicRelativeTransitionGeometry
 public import FLT.Mazur.IdealAdicRelativeTransitionRefinement
+public import FLT.Mazur.IdealAdicRelativeTripleAmbientCocycle
+public import FLT.Mazur.IdealAdicRelativeTripleAmbientMaps
 public import FLT.Mazur.IdealAdicRelativeTripleCoefficientCocycle
 public import FLT.Mazur.IdealAdicRelativeTripleCoefficientMaps
 public import FLT.Mazur.IdealAdicRelativeTripleCoefficientNormalization
@@ -3581,12 +3585,15 @@ public import FLT.Mazur.ModuleSheafGluing
 public import FLT.Mazur.ModuleSheafImageOpenSections
 public import FLT.Mazur.ModuleSheafInternalHom
 public import FLT.Mazur.ModuleSheafLocalHomComparison
+public import FLT.Mazur.ModuleSheafLocalHomNormalization
 public import FLT.Mazur.ModuleSheafLocalHomRefinement
+public import FLT.Mazur.ModuleSheafLocalIsoTransport
 public import FLT.Mazur.ModuleSheafMorphismGluing
 public import FLT.Mazur.ModuleSheafMorphismRefinement
 public import FLT.Mazur.ModuleSheafOpenImmersionGluing
 public import FLT.Mazur.ModuleSheafOpenImmersionLocalHom
 public import FLT.Mazur.ModuleSheafOpenIsoDetection
+public import FLT.Mazur.ModuleSheafOverlapCoordinateRefinement
 public import FLT.Mazur.ModuleSheafOverlapImageTransition
 public import FLT.Mazur.ModuleSheafPullbackIsoDetection
 public import FLT.Mazur.ModuleSheafPullbackMapRefinement
