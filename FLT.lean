@@ -4653,6 +4653,7 @@ public import FLT.Mazur.TensorIntegerModelMap
 public import FLT.Mazur.TensorIntegerModelPresentation
 public import FLT.Mazur.TensorIntegerModelRecovery
 public import FLT.Mazur.TensorIntegerModelTransport
+public import FLT.Mazur.TensorKernelArtinian
 public import FLT.Mazur.TensorKernelExtension
 public import FLT.Mazur.TensorKernelFiniteLength
 public import FLT.Mazur.TensorPowerDistribution
