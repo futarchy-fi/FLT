@@ -2725,6 +2725,7 @@ public import FLT.Mazur.BaseAdicReesModelDescent
 public import FLT.Mazur.BaseAdicReesModelFullOverlapRecovery
 public import FLT.Mazur.BaseAdicReesModelOverlapRecovery
 public import FLT.Mazur.BaseAdicReesModelProjectionCompatibility
+public import FLT.Mazur.BaseAdicReesModelProjectionNaturality
 public import FLT.Mazur.BaseAdicReesModelPushforward
 public import FLT.Mazur.BaseAdicReesModelRestrictionRecovery
 public import FLT.Mazur.BaseAdicReesModelSectionCoordinates
