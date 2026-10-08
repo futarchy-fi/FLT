@@ -4192,6 +4192,7 @@ public import FLT.Mazur.SchemeAffineCoverRecoveryCompatibility
 public import FLT.Mazur.SchemeAffineCoverRecoveryTransport
 public import FLT.Mazur.SchemeAffineCoverTestOriginalMap
 public import FLT.Mazur.SchemeAffineCoverTestRecovery
+public import FLT.Mazur.SchemeAffineCoverTestTransport
 public import FLT.Mazur.SchemeAffineCrossChartFamily
 public import FLT.Mazur.SchemeAffineCrossCoverCocycle
 public import FLT.Mazur.SchemeAffineCrossCoverCoherence
