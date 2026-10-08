@@ -3605,6 +3605,7 @@ public import FLT.Mazur.ModuleSheafLocalIsoTransport
 public import FLT.Mazur.ModuleSheafMorphismGluing
 public import FLT.Mazur.ModuleSheafMorphismRefinement
 public import FLT.Mazur.ModuleSheafOpenImageChart
+public import FLT.Mazur.ModuleSheafOpenImageRecovery
 public import FLT.Mazur.ModuleSheafOpenImmersionGluing
 public import FLT.Mazur.ModuleSheafOpenImmersionLocalHom
 public import FLT.Mazur.ModuleSheafOpenIsoDetection
