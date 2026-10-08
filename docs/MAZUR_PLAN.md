@@ -2253,6 +2253,27 @@ followed by an actual localization equivalence. This remains unproved.
 The cyclic mixed relation on this cover and its global descent are still
 pending; no arithmetic input to FLT has been removed.
 
+### Domain of the common cover — 2026-10-08
+
+Implemented `CubicLegendreBraidIntegral.lean`, resolving the domain
+obligation from the preceding update. The conic parameter t=w/(1+v)
+is an explicit unit on the actual triple cover. The identities
+(1+t²)v=1-t² and (1+t²)w=2t give polynomial coordinates over Gaussian
+integers, with 2pt(1+t²)(1-t²) inverted.
+
+Actual maps in both directions are constructed over the Legendre base.
+The composition on the triple cover fixes each of its three generators.
+This proves injectivity into the localized Gaussian polynomial domain
+and hence `IsDomain (LegendreBraidRing p)` for nonzero p.
+No inference from a tensor product of domains is used. A two-sided
+equivalence is not asserted or needed for this domain proof.
+
+The actual cyclic coefficient cover `legendreBraidCyclicCover` now
+elaborates with the resulting domain instance. The module passes the
+namespace axiom audit. The remaining geometric step is comparison and
+descent of the mixed cyclic relation along this common cover.
+The three arithmetic gaps of FLT are unchanged.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
