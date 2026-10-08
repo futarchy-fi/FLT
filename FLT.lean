@@ -4321,6 +4321,7 @@ public import FLT.Mazur.SchemeCrossCoverCocycle
 public import FLT.Mazur.SchemeCrossCoverOverlap
 public import FLT.Mazur.SchemeDescentAffineCharts
 public import FLT.Mazur.SchemeDescentCrossCoverCompatibility
+public import FLT.Mazur.SchemeDescentMapLaws
 public import FLT.Mazur.SchemeDescentPairTransport
 public import FLT.Mazur.SchemeDescentTransportSquares
 public import FLT.Mazur.SchemeDescentTransportTest
