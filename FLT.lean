@@ -4403,6 +4403,7 @@ public import FLT.Mazur.SchemeFppfFamilyLineDescent
 public import FLT.Mazur.SchemeFppfFamilyOverlapAssembly
 public import FLT.Mazur.SchemeFppfFamilyOverlapCover
 public import FLT.Mazur.SchemeFppfFamilyTripleChart
+public import FLT.Mazur.SchemeFppfFamilyTripleCover
 public import FLT.Mazur.SchemeFppfLineBaseChange
 public import FLT.Mazur.SchemeFppfLineBaseChangeRecovery
 public import FLT.Mazur.SchemeFppfLineBaseRecovery
