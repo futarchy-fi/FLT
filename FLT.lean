@@ -2715,6 +2715,7 @@ public import FLT.Mazur.AmpleCoherentVanishing
 public import FLT.Mazur.AmpleCommonDegree
 public import FLT.Mazur.AmpleFiberAffineNeighborhood
 public import FLT.Mazur.AmpleFiberBaseChange
+public import FLT.Mazur.AmpleFiberBaseIso
 public import FLT.Mazur.AmpleFiberCartesianDescent
 public import FLT.Mazur.AmpleFiberFiniteCoordinates
 public import FLT.Mazur.AmpleFiberGeneratorNeighborhood
