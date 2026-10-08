@@ -4447,6 +4447,7 @@ public import FLT.Mazur.SchemeFppfSourceLineMapPreimage
 public import FLT.Mazur.SchemeGeometricDescentCocycleTest
 public import FLT.Mazur.SchemeGeometricDescentData
 public import FLT.Mazur.SchemeIndependentCanonicalCocycle
+public import FLT.Mazur.SchemeIndependentCanonicalCompatibility
 public import FLT.Mazur.SchemeIndependentCanonicalCoordinate
 public import FLT.Mazur.SchemeIndependentCanonicalFamily
 public import FLT.Mazur.SchemeIndependentCanonicalOverlap
