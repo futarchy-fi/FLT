@@ -3527,6 +3527,7 @@ public import FLT.Mazur.FiniteTensorIntegerClosedImmersion
 public import FLT.Mazur.FiniteTypeAffineApproximation
 public import FLT.Mazur.FiniteTypeApproximationDiamonds
 public import FLT.Mazur.FiniteTypeApproximationMaps
+public import FLT.Mazur.FiniteTypeDiagramStages
 public import FLT.Mazur.FiniteTypePolynomialArrows
 public import FLT.Mazur.FiniteTypePrincipalApproximation
 public import FLT.Mazur.FiniteTypePrincipalComposition
