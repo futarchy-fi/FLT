@@ -5159,6 +5159,7 @@ public import FLT.Mazur.WeierstrassModificationYCover
 public import FLT.Mazur.WeierstrassModificationYDescent
 public import FLT.Mazur.WeierstrassModificationYFractionEquation
 public import FLT.Mazur.WeierstrassModificationYFractionMap
+public import FLT.Mazur.WeierstrassModificationYGenerators
 public import FLT.Mazur.WeierstrassModificationYHorizontalLocalization
 public import FLT.Mazur.WeierstrassModificationYIntersection
 public import FLT.Mazur.WeierstrassModificationYInverse
