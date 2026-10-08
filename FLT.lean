@@ -4409,6 +4409,7 @@ public import FLT.Mazur.WeierstrassIntegralCurveTwoChartCover
 public import FLT.Mazur.WeierstrassIntegralProductOverlap
 public import FLT.Mazur.WeierstrassIntegralTripleProduct
 public import FLT.Mazur.WeierstrassIntegralZeroSection
+public import FLT.Mazur.WeierstrassLineCubicFactorization
 public import FLT.Mazur.WeierstrassLocalAdditionCurveComparison
 public import FLT.Mazur.WeierstrassMixedIntersectionScheme
 public import FLT.Mazur.WeierstrassMixedLeftReciprocalDomain
