@@ -4466,6 +4466,7 @@ public import FLT.Mazur.WeierstrassAllOrdinaryTripleCoordinates
 public import FLT.Mazur.WeierstrassAllOrdinaryTripleDomain
 public import FLT.Mazur.WeierstrassAllOrdinaryTripleGlobal
 public import FLT.Mazur.WeierstrassAllOrdinaryTripleSchemes
+public import FLT.Mazur.WeierstrassChartCrossComparison
 public import FLT.Mazur.WeierstrassChartFactorUnit
 public import FLT.Mazur.WeierstrassChartOverlap
 public import FLT.Mazur.WeierstrassChartSchemeGluingData
