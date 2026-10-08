@@ -4511,6 +4511,7 @@ public import FLT.Mazur.WeierstrassInfinityTriplePolynomials
 public import FLT.Mazur.WeierstrassInfinityTripleQuadraticDefect
 public import FLT.Mazur.WeierstrassInfinityTripleResidualCubic
 public import FLT.Mazur.WeierstrassInfinityTripleResidualDegree
+public import FLT.Mazur.WeierstrassInfinityTripleResidualIdeals
 public import FLT.Mazur.WeierstrassInfinityTripleResidualReciprocity
 public import FLT.Mazur.WeierstrassInfinityTripleResidualSystem
 public import FLT.Mazur.WeierstrassInfinityTripleScalarCross
