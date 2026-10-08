@@ -4635,6 +4635,7 @@ public import FLT.Mazur.WeierstrassIntegralAdditionCommutative
 public import FLT.Mazur.WeierstrassIntegralAdditionFormula
 public import FLT.Mazur.WeierstrassIntegralAssociativity
 public import FLT.Mazur.WeierstrassIntegralChart
+public import FLT.Mazur.WeierstrassIntegralChartIntersection
 public import FLT.Mazur.WeierstrassIntegralCurveGluing
 public import FLT.Mazur.WeierstrassIntegralCurveMorphisms
 public import FLT.Mazur.WeierstrassIntegralCurveProduct
@@ -4682,6 +4683,7 @@ public import FLT.Mazur.WeierstrassOrdinaryTripleCoordinates
 public import FLT.Mazur.WeierstrassOrdinaryTripleDomain
 public import FLT.Mazur.WeierstrassOrdinaryTripleGlobalComparison
 public import FLT.Mazur.WeierstrassOrdinaryTripleSchemes
+public import FLT.Mazur.WeierstrassOverlapDiagonalAlgebra
 public import FLT.Mazur.WeierstrassPolynomialAdditionSwap
 public import FLT.Mazur.WeierstrassPolynomialInputCurveComparison
 public import FLT.Mazur.WeierstrassPolynomialInputOutputOverlap
