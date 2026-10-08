@@ -4970,6 +4970,7 @@ public import FLT.Mazur.WeierstrassSmoothPolynomialDomain
 public import FLT.Mazur.WeierstrassSmoothProductFieldPoints
 public import FLT.Mazur.WeierstrassSmoothProductOpen
 public import FLT.Mazur.WeierstrassSmoothReciprocalTriple
+public import FLT.Mazur.WeierstrassSmoothSevenPoints
 public import FLT.Mazur.WeierstrassSmoothTransportedComparison
 public import FLT.Mazur.WeierstrassSmoothTransportedCover
 public import FLT.Mazur.WeierstrassSmoothTransportedOutputRegular
