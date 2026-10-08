@@ -232,6 +232,7 @@ public import FLT.EllipticCurve.CubicLegendreAction
 public import FLT.EllipticCurve.CubicLegendreBraidComparison
 public import FLT.EllipticCurve.CubicLegendreBraidCover
 public import FLT.EllipticCurve.CubicLegendreBraidIntegral
+public import FLT.EllipticCurve.CubicLegendreBraidLastCover
 public import FLT.EllipticCurve.CubicLegendreCyclicBraid
 public import FLT.EllipticCurve.CubicLegendreCyclicDescent
 public import FLT.EllipticCurve.CubicLegendreCyclicInvolutions

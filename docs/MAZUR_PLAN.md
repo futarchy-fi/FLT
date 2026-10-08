@@ -2300,6 +2300,29 @@ and endpoint curves, and apply the local braid equality with the proved
 common-cover equality criterion. No global mixed relation or modular
 quotient is asserted, and the three arithmetic FLT gaps remain.
 
+### Last reciprocal step of the mixed relation — 2026-10-08
+
+Implemented `CubicLegendreBraidLastCover.lean`. Transport along a
+coefficient ring equivalence yields a ring equivalence of the quadratic
+etale presentations. Applying the reciprocal parameter equivalence to
+the complementary unit proves that the cover for 1-lambda⁻¹ is a
+noetherian domain. This equivalence transports coefficients; it is not
+asserted to fix the Legendre base.
+
+The map from that quadratic algebra into the actual common cover sends
+its unit root to u*v/w. The square equation and the mapped coordinate
+change are proved. Both the source Legendre curve and its reciprocal
+are elliptic. The actual final reciprocal coordinate map descends to an
+isomorphism of cyclic schemes preserving the original coefficient base.
+
+The final parameter is proved equal to 1-(1-lambda)⁻¹, so the two mixed
+paths have the same endpoint. This closes construction of the last
+reciprocal step, not equality of the full descended composites.
+The module passes the namespace axiom audit. The remaining task is to
+assemble the intermediate descended maps and apply their common-cover
+comparison to the local braid identity. Arithmetic FLT inputs remain
+unchanged.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:

@@ -83,6 +83,7 @@ import FLT.EllipticCurve.CubicLegendreCyclicBraid
 import FLT.EllipticCurve.CubicLegendreBraidCover
 import FLT.EllipticCurve.CubicLegendreBraidIntegral
 import FLT.EllipticCurve.CubicLegendreBraidComparison
+import FLT.EllipticCurve.CubicLegendreBraidLastCover
 import FLT.EllipticCurve.CubicTorsionTransport
 import FLT.EllipticCurve.CubicNonzeroScalarTransport
 import FLT.EllipticCurve.CubicNonzeroTransport
