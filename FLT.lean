@@ -5059,6 +5059,7 @@ public import FLT.Mazur.WeierstrassMixedRightReciprocalInverse
 public import FLT.Mazur.WeierstrassMixedTripleAlgebraUnits
 public import FLT.Mazur.WeierstrassMixedTripleSchemeUnits
 public import FLT.Mazur.WeierstrassMixedTripleSlopes
+public import FLT.Mazur.WeierstrassModificationXAlgebra
 public import FLT.Mazur.WeierstrassNegationAdditionDescent
 public import FLT.Mazur.WeierstrassNegationAdditionPullback
 public import FLT.Mazur.WeierstrassNegationCover
