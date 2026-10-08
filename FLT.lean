@@ -2869,6 +2869,7 @@ public import FLT.Mazur.CartierIdealFinitePresentation
 public import FLT.Mazur.CartierIdealPullbackComparison
 public import FLT.Mazur.CartierIdealStalkDescent
 public import FLT.Mazur.CartierIdealStalkNeighborhood
+public import FLT.Mazur.CartierImmersionFinitePresentation
 public import FLT.Mazur.CartierTensorRank
 public import FLT.Mazur.CechAcyclicCokernel
 public import FLT.Mazur.CechAcyclicComparison
