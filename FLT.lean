@@ -4716,6 +4716,7 @@ public import FLT.Mazur.WeierstrassProductOverlapScheme
 public import FLT.Mazur.WeierstrassProjectiveAdditionBoundary
 public import FLT.Mazur.WeierstrassProjectiveAdditionChart
 public import FLT.Mazur.WeierstrassProjectiveChartAlgebra
+public import FLT.Mazur.WeierstrassProjectiveChartEquation
 public import FLT.Mazur.WeierstrassProjectiveChartProduct
 public import FLT.Mazur.WeierstrassProjectiveGroupComparison
 public import FLT.Mazur.WeierstrassProjectivePointComparison
