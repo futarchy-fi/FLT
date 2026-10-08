@@ -4407,6 +4407,7 @@ public import FLT.Mazur.SchemeFppfFamilyOverlapCover
 public import FLT.Mazur.SchemeFppfFamilyPairNormalization
 public import FLT.Mazur.SchemeFppfFamilyPairTestRecovery
 public import FLT.Mazur.SchemeFppfFamilyTripleChart
+public import FLT.Mazur.SchemeFppfFamilyTripleCoordinates
 public import FLT.Mazur.SchemeFppfFamilyTripleCover
 public import FLT.Mazur.SchemeFppfLineBaseChange
 public import FLT.Mazur.SchemeFppfLineBaseChangeRecovery
