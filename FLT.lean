@@ -4856,6 +4856,7 @@ public import FLT.Mazur.WeierstrassCubicPushforwardH1
 public import FLT.Mazur.WeierstrassCubicQuotient
 public import FLT.Mazur.WeierstrassCubicQuotientChart
 public import FLT.Mazur.WeierstrassCubicSection
+public import FLT.Mazur.WeierstrassDilatationAlgebra
 public import FLT.Mazur.WeierstrassFieldChartPresentation
 public import FLT.Mazur.WeierstrassFiniteChartDescent
 public import FLT.Mazur.WeierstrassFiveAffineTriple
