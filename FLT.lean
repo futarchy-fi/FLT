@@ -4048,6 +4048,7 @@ public import FLT.Mazur.ScalarExtensionDirectSum
 public import FLT.Mazur.ScalarExtensionIsomorphismDescent
 public import FLT.Mazur.ScalarExtensionPullbackDescent
 public import FLT.Mazur.SchematicDescentGluing
+public import FLT.Mazur.SchemeAffineBaseTripleCocycle
 public import FLT.Mazur.SchemeAffineChartBaseChange
 public import FLT.Mazur.SchemeAffineChartComparisonComposition
 public import FLT.Mazur.SchemeAffineChartComposition
