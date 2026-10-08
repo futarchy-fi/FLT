@@ -3828,10 +3828,11 @@ public import FLT.Mazur.IntersectionModelClosedProducts
 public import FLT.Mazur.IntersectionUnitCocycle
 public import FLT.Mazur.IntersectionUnitCocycleRecovery
 public import FLT.Mazur.IrreducibleComponentAmple
-public public import FLT.Mazur.IteratedPolynomialDataRelations
 public import FLT.Mazur.IteratedOldArrowRepresentatives
 public import FLT.Mazur.IteratedOldDenominatorRecovery
 public import FLT.Mazur.IteratedOldDiagramRepresentatives
+public import FLT.Mazur.IteratedOldTargetStages
+public import FLT.Mazur.IteratedPolynomialDataRelations
 public import FLT.Mazur.IteratedPolynomialDataStages
 public import FLT.Mazur.IteratedPolynomialDiagramCoefficients
 public import FLT.Mazur.IteratedPolynomialStableRelations
