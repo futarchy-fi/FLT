@@ -5,7 +5,7 @@ Authors: The FLT Project
 -/
 module
 
-public import FLT.Mazur.AmpleAffinePullback
+public import FLT.Mazur.ClosedPointFiberAmple
 
 /-!
 # Transport of ampleness from an open subscheme to its image
@@ -27,20 +27,12 @@ universe u
 
 namespace FLT.Mazur.FCurve
 
-/-- Pullback along a scheme isomorphism reflects and preserves ampleness. -/
-theorem ampleLineBundle_pullback_iso_iff {X Y : Scheme.{u}} (e : Y ≅ X)
-    (L : X.Modules) : AmpleLineBundle ((pullback e.hom).obj L) ↔ AmpleLineBundle L := by
-  refine ⟨fun h ↦ ?_, fun h ↦ h.pullback_affine e.hom⟩
-  exact (h.pullback_affine e.inv).of_iso
-    (((pullbackComp e.inv e.hom).app L ≪≫
-      (pullbackCongr e.inv_hom_id).app L ≪≫ (pullbackId X).app L).symm)
-
 /-- Ampleness on a restricted open immersion is ampleness on its image open. -/
 theorem ampleLineBundle_openImage {X Y : Scheme.{u}} (j : Y ⟶ X) [IsOpenImmersion j]
     (U : Y.Opens) (L : X.Modules)
     (h : AmpleLineBundle ((pullback U.ι).obj ((pullback j).obj L))) :
     AmpleLineBundle ((pullback (j ''ᵁ U).ι).obj L) := by
-  apply (ampleLineBundle_pullback_iso_iff (j.isoImage U) _).mp
+  apply (ampleLineBundle_pullback_iso_iff (j.isoImage U).hom _).mp
   exact h.of_iso ((pullbackComp (j.isoImage U).hom (j ''ᵁ U).ι).app L ≪≫
     (pullbackCongr (Scheme.Hom.isoImage_hom_ι j U)).app L ≪≫
     ((pullbackComp U.ι j).app L).symm)
