@@ -2238,6 +2238,21 @@ compared with the descended maps and descended to the universal base.
 The full family action and modular quotient remain unconstructed; the
 three arithmetic FLT gaps are unchanged.
 
+### Common mixed-relation cover — 2026-10-08
+
+Implemented `CubicLegendreBraidCover.lean`: the tensor product of the
+quadratic covers for -1, lambda and 1-lambda is finite, free, etale and
+surjective. Its three explicit unit roots realize the mixed Legendre
+coordinate relation. The module is included in the namespace axiom audit.
+
+The cover has not yet been proved to be a domain. Tensor products of
+domains need not be domains, so this cannot be supplied by inference
+from the separate quadratic factors. A candidate next construction is
+the conic parametrization for v²+w²=1 over Gaussian coefficients,
+followed by an actual localization equivalence. This remains unproved.
+The cyclic mixed relation on this cover and its global descent are still
+pending; no arithmetic input to FLT has been removed.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
