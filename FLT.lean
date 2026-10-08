@@ -4540,6 +4540,7 @@ public import FLT.Mazur.WeierstrassCubicBaseScalars
 public import FLT.Mazur.WeierstrassCubicChartRegular
 public import FLT.Mazur.WeierstrassCubicEquationTransition
 public import FLT.Mazur.WeierstrassCubicExactSequence
+public import FLT.Mazur.WeierstrassCubicGenus
 public import FLT.Mazur.WeierstrassCubicLocalKernel
 public import FLT.Mazur.WeierstrassCubicMultiplication
 public import FLT.Mazur.WeierstrassCubicMultiplicationMono
