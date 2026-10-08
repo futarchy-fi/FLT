@@ -2722,6 +2722,7 @@ public import FLT.Mazur.AnnihilatorSubsheaf
 public import FLT.Mazur.BaseAdicCohomologyFiltration
 public import FLT.Mazur.BaseAdicCohomologyImageStability
 public import FLT.Mazur.BaseAdicFormalInjectivity
+public import FLT.Mazur.BaseAdicFormalSurjectivity
 public import FLT.Mazur.BaseAdicHZeroImageStability
 public import FLT.Mazur.BaseAdicImageCompletion
 public import FLT.Mazur.BaseAdicPowerKernelFinite
