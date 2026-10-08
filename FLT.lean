@@ -4569,6 +4569,7 @@ public import FLT.Mazur.RationalPrimeTorsionLocalModel
 public import FLT.Mazur.ReconstructionComposition
 public import FLT.Mazur.ReducedCurveLineComparison
 public import FLT.Mazur.ReducedCurveLineTensorDegree
+public import FLT.Mazur.ReducedCurvePicardDegree
 public import FLT.Mazur.ReducedDenseRestriction
 public import FLT.Mazur.ReesAffineModel
 public import FLT.Mazur.ReesAlgebraBaseChange
