@@ -3677,6 +3677,7 @@ public import FLT.Mazur.IdealTwistCohomologyVanishing
 public import FLT.Mazur.IdealTwistSectionOpen
 public import FLT.Mazur.IdealTwistTransitionExact
 public import FLT.Mazur.IdealWitnessSupportInduction
+public import FLT.Mazur.IncreasingCechBaseCycles
 public import FLT.Mazur.IncreasingCechCohomology
 public import FLT.Mazur.IncreasingCechComplex
 public import FLT.Mazur.IncreasingCechCycles
