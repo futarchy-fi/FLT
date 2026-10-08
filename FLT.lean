@@ -4967,6 +4967,7 @@ public import FLT.Mazur.WeierstrassSmoothProductOpen
 public import FLT.Mazur.WeierstrassSmoothReciprocalTriple
 public import FLT.Mazur.WeierstrassSmoothTransportedComparison
 public import FLT.Mazur.WeierstrassSmoothTransportedCover
+public import FLT.Mazur.WeierstrassSmoothTripleInputRegular
 public import FLT.Mazur.WeierstrassSmoothTripleProduct
 public import FLT.Mazur.WeierstrassSmoothTripleProjections
 public import FLT.Mazur.WeierstrassSmoothYAddition
