@@ -3342,6 +3342,7 @@ public import FLT.Mazur.EllipticUnitInvariantsReduction
 public import FLT.Mazur.EllipticUnramifiedKernel
 public import FLT.Mazur.EllipticUnramifiedSpecialization
 public import FLT.Mazur.EllipticUnramifiedTorsion
+public import FLT.Mazur.EllipticValuationRingEquation
 public import FLT.Mazur.EllipticVariableChangeIntegrality
 public import FLT.Mazur.EllipticVariableChangeReduction
 public import FLT.Mazur.EllipticVariableChangeSmoothness
