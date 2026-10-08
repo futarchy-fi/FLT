@@ -6,6 +6,7 @@ Authors: krandder
 module
 
 public import FLT.Mazur.WeierstrassChartFactorUnit
+public import FLT.Mazur.WeierstrassChartInjectiveDescent
 public import FLT.Mazur.WeierstrassTransportedOutputRegular
 
 /-!
@@ -26,14 +27,6 @@ set_option backward.isDefEq.respectTransparency false
 set_option backward.defeqAttrib.useBackward true
 
 universe u
-
-/-- Source composition is pullback of the specialized chart sections. -/
-theorem specSectionHom_precomp {X Y : Scheme.{u}} {A : Type u} [CommRing A]
-    (f : X ⟶ Y) (g : Y ⟶ Spec (.of A)) :
-    specSectionHom (f ≫ g) = f.appTop.hom.comp (specSectionHom g) := by
-  unfold specSectionHom
-  rw [Scheme.Hom.comp_appTop]
-  rfl
 
 /-- Regularity of a global section can be checked on any actual open cover. -/
 theorem isRegular_of_openCover {X : Scheme.{u}} (C : X.OpenCover) (a : Γ(X, ⊤))
