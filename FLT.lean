@@ -2749,6 +2749,7 @@ public import FLT.Mazur.BaseAdicReesSpectrum
 public import FLT.Mazur.BaseAdicReesSpectrumAmbientImageIso
 public import FLT.Mazur.BaseAdicReesSpectrumAmbientSheaf
 public import FLT.Mazur.BaseAdicReesSpectrumComparison
+public import FLT.Mazur.BaseAdicReesSpectrumIdentity
 public import FLT.Mazur.BaseAdicReesSpectrumImageOpenCover
 public import FLT.Mazur.BaseAdicReesSpectrumImageSheaf
 public import FLT.Mazur.BaseAdicReesSpectrumImageSheafCocycle
