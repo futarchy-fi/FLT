@@ -3372,6 +3372,7 @@ public import FLT.Mazur.IdealAdicRelativeGradedAlgebra
 public import FLT.Mazur.IdealAdicRelativeImageCoefficient
 public import FLT.Mazur.IdealAdicRelativeImageCoefficientTransition
 public import FLT.Mazur.IdealAdicRelativeImageOpenCover
+public import FLT.Mazur.IdealAdicRelativeImageTransitionTransport
 public import FLT.Mazur.IdealAdicRelativeLocalization
 public import FLT.Mazur.IdealAdicRelativeNoetherian
 public import FLT.Mazur.IdealAdicRelativeOverlapCoefficientCharts
