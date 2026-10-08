@@ -4311,6 +4311,7 @@ public import FLT.Mazur.PrincipalFanIsomorphismRefinement
 public import FLT.Mazur.PrincipalFanIsomorphismStages
 public import FLT.Mazur.PrincipalFanPathIsomorphisms
 public import FLT.Mazur.PrincipalFanStages
+public import FLT.Mazur.PrincipalFiniteRestrictionPaths
 public import FLT.Mazur.PrincipalGeneratorExtension
 public import FLT.Mazur.PrincipalIntegerModelIsomorphism
 public import FLT.Mazur.PrincipalIntegerRestriction
