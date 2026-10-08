@@ -4306,6 +4306,7 @@ public import FLT.Mazur.PrincipalBipartiteRelations
 public import FLT.Mazur.PrincipalBipartiteStages
 public import FLT.Mazur.PrincipalChartIntegerDescent
 public import FLT.Mazur.PrincipalChartOpenImmersion
+public import FLT.Mazur.PrincipalCoefficientTransport
 public import FLT.Mazur.PrincipalComparisonIntegerModel
 public import FLT.Mazur.PrincipalComparisonRecovery
 public import FLT.Mazur.PrincipalCoordinateCofinal
