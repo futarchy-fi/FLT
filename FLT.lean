@@ -2839,6 +2839,7 @@ public import FLT.Mazur.BaseChangedPresentationModel
 public import FLT.Mazur.BinaryOpenDescent
 public import FLT.Mazur.BlowupFractionChart
 public import FLT.Mazur.BlowupFractionChartLocalization
+public import FLT.Mazur.BlowupFractionChartRatio
 public import FLT.Mazur.CartesianMonoGroup
 public import FLT.Mazur.CartesianMonoMonoid
 public import FLT.Mazur.CartesianOpenSectionMap
