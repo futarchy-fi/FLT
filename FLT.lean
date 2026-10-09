@@ -4731,6 +4731,7 @@ public import FLT.Mazur.PrincipalOccurrenceDirected
 public import FLT.Mazur.PrincipalOccurrenceExistence
 public import FLT.Mazur.PrincipalOccurrenceFiniteRestrictions
 public import FLT.Mazur.PrincipalOccurrenceGluedCartesian
+public import FLT.Mazur.PrincipalOccurrenceGluedIncidence
 public import FLT.Mazur.PrincipalOccurrenceGluedTransitions
 public import FLT.Mazur.PrincipalOccurrenceGluingChartMaps
 public import FLT.Mazur.PrincipalOccurrenceGluingIndex
