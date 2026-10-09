@@ -5668,6 +5668,7 @@ public import FLT.Mazur.WeierstrassDividedFiniteIteration
 public import FLT.Mazur.WeierstrassDividedFiniteOverlap
 public import FLT.Mazur.WeierstrassDividedFiniteProper
 public import FLT.Mazur.WeierstrassDividedFiniteResidueNodes
+public import FLT.Mazur.WeierstrassDividedFiniteResidueOverlap
 public import FLT.Mazur.WeierstrassDividedFiniteSmoothOpen
 public import FLT.Mazur.WeierstrassDividedFiniteTensorCharts
 public import FLT.Mazur.WeierstrassDividedFiniteTensorGeometry
