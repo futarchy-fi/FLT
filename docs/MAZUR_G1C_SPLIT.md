@@ -26,8 +26,8 @@ stabilizers: that proposition assumes the relation morphism is a monomorphism.
 
 Two routes were considered: the free-action torsor theorem, and gluing spectra
 of invariant rings on invariant affine opens. Use the latter, since it allows
-stabilizers. A full nonfree scheme quotient and its universal property remain
-foundation theorems to prove, not fields to request in an atlas record.
+stabilizers. The nonfree scheme quotient and its universal property are constructed
+in W175--W177 below, rather than requested as fields of an atlas record.
 
 ## Existing ingredients, checked in source
 
@@ -222,23 +222,57 @@ this worktree. The manifest and handoff remain untracked outside source paths.
   projections, with group and inverse laws proved from the pullback property.
 
 These are module-qualified descriptions; the source specifies the shared namespaces.
-General flat base change of the global quotient is still open. The earlier
+At the W176 boundary, global flat base change was still open. The earlier
 localization theorem alone was not a general flat invariant-ring theorem;
-W176 supplies the actual flat tensor comparison used in the next step.
+W176 supplies the flat tensor comparison used in W177 below.
+
+## Global flat base change implemented in W177
+
+Checked by the foreground module builds, individual module lints, bounded probes,
+and declaration axiom audits recorded in `W177_MANIFEST.json`; reproduce their
+source hashes, caps, diagnostics, main ancestry, and final root-build evidence with
+`python3 W177_RECHECK.py`. The manifest and handoff stay outside tracked source paths.
+
+- `FiniteGroupPullbackComparison` proves equivariance of actual cartesian models
+  and of the morphisms induced by restriction of the base.
+- `SchemeQuotientTensorModel` identifies the tensor spectrum with the pullback of
+  the quotient of an actual affine scheme, including both projections and actions.
+- `StableAffineQuotientBaseCharts` constructs affine base charts subordinate to
+  quotient charts, their flat morphisms, and their affine pullback sources.
+- `StableAffineQuotientPullbackCharts` embeds those sources as equivariant open
+  subschemes of the global pullback, proves the cartesian squares, and covers it.
+- `SchemeQuotientAffineBaseCoordinates` constructs the algebra on global sections
+  from an actual affine base morphism, and derives module flatness from flatness.
+- `SchemeQuotientAffineFlatComparison` identifies each actual tensor quotient
+  with its affine base, equivariantly and with the prescribed quotient projection.
+- `SchemeFiniteGroupDescent`, `FiniteGroupSpectrumAction`, and
+  `FiniteGroupQuotientDescent` supply arbitrary-target descent for both actual
+  affine scheme quotients and fixed-ring spectra, with a constructed comparison iso.
+- `SchemeQuotientAffineFlatDescent` transports the full universal property to the
+  actual affine pullback, proving its base projection is an epimorphism.
+- `StableAffineQuotientFlatLocalDescent` constructs local descents on the affine
+  base charts and proves cancellation through the global pullback projection.
+- `StableAffineQuotientFlatDescent.flatLocalDesc_compatible` proves equality on
+  actual scheme overlaps by cancellation after a further open base change.
+  `flatDesc` glues these morphisms on the new base; `flatDesc_fac` proves its
+  factorization; `existsUnique_flatDesc` and
+  `invariant_iff_existsUnique_flatDesc` prove the full quotient universal property.
+
+The last theorem applies to every flat `f : S ⟶ glued ρ` and every scheme target.
+The action is `FiniteGroupPullback.action` on the actual `pullback (map ρ hcover) f`.
+The new base need not be affine or separated, and no group order is inverted.
+Thus FQ9's categorical quotient property is preserved by arbitrary flat base change.
+The proof constructs tensor comparisons, actual source covers, and scheme gluing;
+it does not identify only the underlying point sets. For a nonseparated new base,
+no application of the separated-source `StableAffineQuotient.glued` constructor
+is claimed for the pullback source itself; the actual new base is its quotient.
 
 ## Next missing proof and ordered remaining work
 
-1. Finish flat base change for the **global** quotient (FQ9). For
-   `q := StableAffineQuotient.map ρ hcover` and flat `f : S ⟶ glued ρ`, use
-   `FiniteGroupPullback.action ρ q (map_invariant ρ hcover) f` on `pullback q f`.
-   Refine `S` by affine opens inside inverse images of quotient charts. Use
-   `chart_isPullback` to identify the pulled-back sources with affine tensor
-   spectra; prove their actions match the tensor action, transport
-   `flatQuotientIso`, and glue the actual comparisons. Prove uniqueness and
-   scheme-level compatibility. No global comparison or equivariant transport
-   of these affine pullback identifications has yet been constructed.
-2. Construct the actual rigidified auxiliary level atlas and relation, then C2.
-   Prove C3--C8, including boundary points, characteristic 3, geometric integrality,
+1. Construct the actual rigidified auxiliary level atlas and relation, then C2.
+   The quotient foundation through FQ9 is available for its actual finite-group
+   action once the invariant affine cover has been supplied.
+2. Prove C3--C8, including boundary points, characteristic 3, geometric integrality,
    and the actual prime-torsion and cusp comparisons. D and G2 stay with their workers.
 
 The source still declares `Mazur_statement` in `FLT/Assumptions/Mazur.lean` and
