@@ -3873,6 +3873,7 @@ public import FLT.Mazur.HilbertChartIdealSheafTransition
 public import FLT.Mazur.HilbertChartIdentityIdeal
 public import FLT.Mazur.HilbertChartIsomorphismInvariance
 public import FLT.Mazur.HilbertChartMultiplication
+public import FLT.Mazur.HilbertChartNoetherian
 public import FLT.Mazur.HilbertChartOverlapIso
 public import FLT.Mazur.HilbertChartParameterRecovery
 public import FLT.Mazur.HilbertChartPointClassification
