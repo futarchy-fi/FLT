@@ -3800,6 +3800,7 @@ public import FLT.Mazur.HilbertPolynomialParameterChart
 public import FLT.Mazur.HilbertPolynomialParameterClosedPullback
 public import FLT.Mazur.HilbertPolynomialParameterDegree
 public import FLT.Mazur.HilbertPolynomialParameterIdeal
+public import FLT.Mazur.HilbertPolynomialParameterInverse
 public import FLT.Mazur.HilbertPolynomialParameterRecovery
 public import FLT.Mazur.HilbertPolynomialQuotientBaseChange
 public import FLT.Mazur.HilbertPolynomialSchemeOver
