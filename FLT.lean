@@ -4432,6 +4432,7 @@ public import FLT.Mazur.PrincipalOccurrenceLocalEquationRefinement
 public import FLT.Mazur.PrincipalOccurrenceMixedBijections
 public import FLT.Mazur.PrincipalOccurrenceOpenEmbeddings
 public import FLT.Mazur.PrincipalOccurrenceOverlapPatches
+public import FLT.Mazur.PrincipalOccurrencePatchCartesian
 public import FLT.Mazur.PrincipalOccurrencePatchCoordinates
 public import FLT.Mazur.PrincipalOccurrencePatchGluing
 public import FLT.Mazur.PrincipalOccurrencePatchRefinement
