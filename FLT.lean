@@ -3610,6 +3610,7 @@ public import FLT.Mazur.FiniteFlatCoefficientIdeal
 public import FLT.Mazur.FiniteFlatLocalIdealPresentation
 public import FLT.Mazur.FiniteFlatQuotientTrivialization
 public import FLT.Mazur.FiniteFlatSubschemeQuotient
+public import FLT.Mazur.FiniteFreeChartTransitions
 public import FLT.Mazur.FiniteFreeQuotientIdealPresentation
 public import FLT.Mazur.FiniteHomologyFiberVanishing
 public import FLT.Mazur.FiniteIntegerModelElementRelations
