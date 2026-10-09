@@ -5731,6 +5731,7 @@ public import FLT.Mazur.WeierstrassDividedOlderGlobalZeroSuccessive
 public import FLT.Mazur.WeierstrassDividedOlderIndexedNodeCover
 public import FLT.Mazur.WeierstrassDividedOlderResidueNodes
 public import FLT.Mazur.WeierstrassDividedOlderSuccessiveCharts
+public import FLT.Mazur.WeierstrassDividedOlderZeroIndexedNodeCover
 public import FLT.Mazur.WeierstrassDividedResidueAtlasFinite
 public import FLT.Mazur.WeierstrassDividedResidueAtlasRefinement
 public import FLT.Mazur.WeierstrassDividedTensorAtlasComparison
