@@ -2844,6 +2844,7 @@ public import FLT.Mazur.BlowupReesDegreeZeroEquiv
 public import FLT.Mazur.BlowupReesDegreeZeroMap
 public import FLT.Mazur.BlowupReesGrading
 public import FLT.Mazur.BlowupReesHomogeneous
+public import FLT.Mazur.BlowupReesProjChart
 public import FLT.Mazur.CartesianMonoGroup
 public import FLT.Mazur.CartesianMonoMonoid
 public import FLT.Mazur.CartesianOpenSectionMap
