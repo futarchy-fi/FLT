@@ -3694,6 +3694,7 @@ public import FLT.Mazur.HilbertBasisOpen
 public import FLT.Mazur.HilbertBasisOpenInvariance
 public import FLT.Mazur.HilbertBasisPrincipalCompatibility
 public import FLT.Mazur.HilbertBasisResidueField
+public import FLT.Mazur.HilbertBasisSchemeBaseChange
 public import FLT.Mazur.HilbertBasisSchemeCover
 public import FLT.Mazur.HilbertBasisSchemeGluing
 public import FLT.Mazur.HilbertBasisSchemeOver
