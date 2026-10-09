@@ -2693,6 +2693,7 @@ public import FLT.Mazur.AffineScaledPullbackSections
 public import FLT.Mazur.AffineScaledTripleTransport
 public import FLT.Mazur.AffineSectionEvaluationCoordinates
 public import FLT.Mazur.AffineSectionsReconstruction
+public import FLT.Mazur.AffineSmoothFiniteFlatCartier
 public import FLT.Mazur.AffineSourcePullbackSections
 public import FLT.Mazur.AffineSourceSectionComparison
 public import FLT.Mazur.AffineSquareEquivalences
