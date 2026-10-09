@@ -5282,6 +5282,7 @@ public import FLT.Mazur.SchemeNormalizedRecoveryOverlap
 public import FLT.Mazur.SchemeOpenPushoutCharts
 public import FLT.Mazur.SchemeOpenPushoutIntersection
 public import FLT.Mazur.SchemeOpenReplacementPreimage
+public import FLT.Mazur.SchemeOpenReplacementProper
 public import FLT.Mazur.SchemeOverlapBaseChange
 public import FLT.Mazur.SchemeOverlapCocycleChart
 public import FLT.Mazur.SchemeOverlapCocycleDetection
