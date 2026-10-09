@@ -3815,6 +3815,7 @@ public import FLT.Mazur.HilbertPolynomialSchemeOver
 public import FLT.Mazur.HilbertPolynomialSchemeOverlap
 public import FLT.Mazur.HilbertPolynomialSchemeParameterDegree
 public import FLT.Mazur.HilbertPolynomialSchemeParameterIdeal
+public import FLT.Mazur.HilbertPolynomialSchemeRecovery
 public import FLT.Mazur.HilbertPolynomialUniversalChartPullback
 public import FLT.Mazur.HilbertPolynomialUniversalClosedPullback
 public import FLT.Mazur.HilbertPolynomialUniversalDegree
