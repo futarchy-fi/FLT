@@ -3531,6 +3531,7 @@ public import FLT.Mazur.EtaleFiniteQuotientBranch
 public import FLT.Mazur.EtaleFiniteSupportCartier
 public import FLT.Mazur.EtaleLocalParameterIdeals
 public import FLT.Mazur.EtalePrimeParameterIdeals
+public import FLT.Mazur.EtaleQuasiFiniteCartierDescent
 public import FLT.Mazur.EvaluatedPrincipalRefinement
 public import FLT.Mazur.EventualTwistVanishing
 public import FLT.Mazur.ExactFunctorInjectiveExt
