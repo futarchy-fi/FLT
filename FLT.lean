@@ -4633,6 +4633,7 @@ public import FLT.Mazur.PinchingAffineDescent
 public import FLT.Mazur.PinchingChartBaseChange
 public import FLT.Mazur.PinchingNeighborhoods
 public import FLT.Mazur.PinchingPullbackTransport
+public import FLT.Mazur.PointedCurveLargeDegree
 public import FLT.Mazur.PointedFieldGeometricConnectedness
 public import FLT.Mazur.PointedPicardNormalization
 public import FLT.Mazur.PolygonActionAssociativity
