@@ -2735,6 +2735,7 @@ public import FLT.Mazur.AmbientHilbertUniversalFamily
 public import FLT.Mazur.AmbientHilbertUniversalIdeal
 public import FLT.Mazur.AmbientHilbertUniversalIntersection
 public import FLT.Mazur.AmbientHilbertUniversalPairCompatibility
+public import FLT.Mazur.AmbientHilbertUniversalPullback
 public import FLT.Mazur.AmbientQuotientRelativeBaseChange
 public import FLT.Mazur.AmbientQuotientRelativeSpace
 public import FLT.Mazur.AmbientQuotientSchemeFamilies
