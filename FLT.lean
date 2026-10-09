@@ -4598,6 +4598,7 @@ public import FLT.Mazur.PolynomialEndpointInterpolation
 public import FLT.Mazur.PolynomialRelationIntegerModel
 public import FLT.Mazur.PolynomialRelativeAffineChart
 public import FLT.Mazur.PolynomialRelativeAffineCover
+public import FLT.Mazur.PolynomialRelativeAffineNaturality
 public import FLT.Mazur.PolynomialRelativeAmbient
 public import FLT.Mazur.PolynomialSpectrumBaseChangeCover
 public import FLT.Mazur.PowerCohomologyHZeroSections
