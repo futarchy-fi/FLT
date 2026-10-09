@@ -4846,6 +4846,7 @@ public import FLT.Mazur.PrincipalOccurrenceTargetPatchSelection
 public import FLT.Mazur.PrincipalOldArrowRepresentatives
 public import FLT.Mazur.PrincipalOpenIntegerModel
 public import FLT.Mazur.PrincipalOpenIntersectionModels
+public import FLT.Mazur.PrincipalOpenNormalization
 public import FLT.Mazur.PrincipalOpenSectionAlgebra
 public import FLT.Mazur.PrincipalOpenTensor
 public import FLT.Mazur.PrincipalOpenTensorGeometry
