@@ -2980,6 +2980,7 @@ public import FLT.Mazur.ClosedIdealAffineCoverDescent
 public import FLT.Mazur.ClosedIdealCartesianDegree
 public import FLT.Mazur.ClosedIdealCoverGluing
 public import FLT.Mazur.ClosedIdealCoverRestriction
+public import FLT.Mazur.ClosedImmersionIdealCorrespondence
 public import FLT.Mazur.ClosedImmersionModulePushforward
 public import FLT.Mazur.ClosedLineProjectionFormula
 public import FLT.Mazur.ClosedModuleDescent
