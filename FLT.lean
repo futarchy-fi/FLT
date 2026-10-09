@@ -4408,6 +4408,7 @@ public import FLT.Mazur.OpenImmersionImageUnionPullback
 public import FLT.Mazur.OpenImmersionImageUnionPullbackLift
 public import FLT.Mazur.OpenImmersionImageUnionReindex
 public import FLT.Mazur.OpenImmersionSectionComparison
+public import FLT.Mazur.OpenIntersectionProduct
 public import FLT.Mazur.OpenIrreducibleComponent
 public import FLT.Mazur.OpenModuleDirectImageCohomology
 public import FLT.Mazur.OpenModuleSectionScalars
