@@ -3815,6 +3815,7 @@ public import FLT.Mazur.HilbertChartTupleTransitionTests
 public import FLT.Mazur.HilbertChartUniversalClosedFamily
 public import FLT.Mazur.HilbertChartUniversalFamily
 public import FLT.Mazur.HilbertCommonAmbientOverlap
+public import FLT.Mazur.HilbertCommonOpenRestriction
 public import FLT.Mazur.HilbertFaithfullyFlatTupleBasis
 public import FLT.Mazur.HilbertIntrinsicBasisBaseChange
 public import FLT.Mazur.HilbertIntrinsicBasisEquiv
