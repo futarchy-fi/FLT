@@ -3555,6 +3555,7 @@ public import FLT.Mazur.FiniteGroupInvariantPolynomial
 public import FLT.Mazur.FiniteGroupInvariantRing
 public import FLT.Mazur.FiniteGroupInvariantSpectrum
 public import FLT.Mazur.FiniteGroupOpenRestriction
+public import FLT.Mazur.FiniteGroupPullbackAction
 public import FLT.Mazur.FiniteGroupQuotientFinite
 public import FLT.Mazur.FiniteGroupQuotientFlatBaseChange
 public import FLT.Mazur.FiniteGroupQuotientGeometricPoints
