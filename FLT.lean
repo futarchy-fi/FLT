@@ -6023,6 +6023,7 @@ public import FLT.Mazur.WeierstrassModificationXScaleOneMaps
 public import FLT.Mazur.WeierstrassModificationXScaleOneTensor
 public import FLT.Mazur.WeierstrassModificationXSlopeOpen
 public import FLT.Mazur.WeierstrassModificationXTotalTransform
+public import FLT.Mazur.WeierstrassModificationXZeroResidue
 public import FLT.Mazur.WeierstrassModificationYAlgebra
 public import FLT.Mazur.WeierstrassModificationYCompatibility
 public import FLT.Mazur.WeierstrassModificationYContractionOverlap
