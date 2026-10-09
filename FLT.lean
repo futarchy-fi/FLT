@@ -3546,10 +3546,14 @@ public import FLT.Mazur.FinitePolynomialEquationSeeds
 public import FLT.Mazur.FinitePolynomialStableRelations
 public import FLT.Mazur.FinitePolynomialStableStages
 public import FLT.Mazur.FinitePresentationIntegerModel
+public import FLT.Mazur.FinitePrincipalAtlasAffineLimit
 public import FLT.Mazur.FinitePrincipalAtlasAmbientTripleStage
 public import FLT.Mazur.FinitePrincipalAtlasCoherentStage
 public import FLT.Mazur.FinitePrincipalAtlasCoherentTripleStage
+public import FLT.Mazur.FinitePrincipalAtlasCommonCover
+public import FLT.Mazur.FinitePrincipalAtlasCommonRecovery
 public import FLT.Mazur.FinitePrincipalAtlasComparisonStage
+public import FLT.Mazur.FinitePrincipalAtlasCone
 public import FLT.Mazur.FinitePrincipalAtlasCoordinates
 public import FLT.Mazur.FinitePrincipalAtlasCoverStage
 public import FLT.Mazur.FinitePrincipalAtlasDiagonalStage
@@ -3562,6 +3566,8 @@ public import FLT.Mazur.FinitePrincipalAtlasOriginalPairUnion
 public import FLT.Mazur.FinitePrincipalAtlasOriginalTripleCover
 public import FLT.Mazur.FinitePrincipalAtlasPairUnion
 public import FLT.Mazur.FinitePrincipalAtlasPairUnionRecovery
+public import FLT.Mazur.FinitePrincipalAtlasProjection
+public import FLT.Mazur.FinitePrincipalAtlasProjectionCartesian
 public import FLT.Mazur.FinitePrincipalAtlasTargetCovers
 public import FLT.Mazur.FinitePrincipalAtlasTargetGluing
 public import FLT.Mazur.FinitePrincipalAtlasTripleComparison
@@ -4374,6 +4380,7 @@ public import FLT.Mazur.OpenDirectImageCohomology
 public import FLT.Mazur.OpenDirectImageNaturality
 public import FLT.Mazur.OpenDirectImageRestriction
 public import FLT.Mazur.OpenImageSectionPullback
+public import FLT.Mazur.OpenImmersionCommonCover
 public import FLT.Mazur.OpenImmersionImagePullbackCover
 public import FLT.Mazur.OpenImmersionImageUnion
 public import FLT.Mazur.OpenImmersionImageUnionCartesian
@@ -4728,7 +4735,10 @@ public import FLT.Mazur.PrincipalOccurrenceDiagramResult
 public import FLT.Mazur.PrincipalOccurrenceDirected
 public import FLT.Mazur.PrincipalOccurrenceExistence
 public import FLT.Mazur.PrincipalOccurrenceFiniteRestrictions
+public import FLT.Mazur.PrincipalOccurrenceGluedCartesian
+public import FLT.Mazur.PrincipalOccurrenceGluedIncidence
 public import FLT.Mazur.PrincipalOccurrenceGluedTransitions
+public import FLT.Mazur.PrincipalOccurrenceGluingAffineLimit
 public import FLT.Mazur.PrincipalOccurrenceGluingChartMaps
 public import FLT.Mazur.PrincipalOccurrenceGluingIndex
 public import FLT.Mazur.PrincipalOccurrenceGluingStage
