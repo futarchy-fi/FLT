@@ -4416,6 +4416,7 @@ public import FLT.Mazur.PrincipalOccurrenceBijectiveIndex
 public import FLT.Mazur.PrincipalOccurrenceChangeRefinement
 public import FLT.Mazur.PrincipalOccurrenceCofinalBijections
 public import FLT.Mazur.PrincipalOccurrenceCoordinateChanges
+public import FLT.Mazur.PrincipalOccurrenceCrossChartIntersections
 public import FLT.Mazur.PrincipalOccurrenceDiagramCoordinates
 public import FLT.Mazur.PrincipalOccurrenceDiagramEdges
 public import FLT.Mazur.PrincipalOccurrenceDiagramFiniteRestrictions
