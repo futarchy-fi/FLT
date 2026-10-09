@@ -2753,6 +2753,7 @@ public import FLT.Mazur.AmbientQuotientRelativeSpace
 public import FLT.Mazur.AmbientQuotientSchemeFamilies
 public import FLT.Mazur.AmpleAffineBase
 public import FLT.Mazur.AmpleAffinePullback
+public import FLT.Mazur.AmpleAmbientHilbertClassification
 public import FLT.Mazur.AmpleCartesianAffineOpen
 public import FLT.Mazur.AmpleChartGeneratorRatios
 public import FLT.Mazur.AmpleChartSectionExtension
