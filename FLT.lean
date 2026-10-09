@@ -2998,6 +2998,7 @@ public import FLT.Mazur.ClosedSubsets
 public import FLT.Mazur.CocycleGlobalCoordinates
 public import FLT.Mazur.CocycleGlobalSectionCoordinate
 public import FLT.Mazur.CocycleGlobalSectionLimitDescent
+public import FLT.Mazur.CocycleSectionOpenComparison
 public import FLT.Mazur.CocycleSectionOpenRecovery
 public import FLT.Mazur.CocycleSheafLimitDescent
 public import FLT.Mazur.CoefficientCartesianHomDescent
