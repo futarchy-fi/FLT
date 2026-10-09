@@ -3710,6 +3710,7 @@ public import FLT.Mazur.HilbertChartStructureConstants
 public import FLT.Mazur.HilbertChartUniversalClosedFamily
 public import FLT.Mazur.HilbertChartUniversalFamily
 public import FLT.Mazur.HilbertFaithfullyFlatTupleBasis
+public import FLT.Mazur.HilbertIntrinsicBasisBaseChange
 public import FLT.Mazur.HilbertIntrinsicBasisOpen
 public import FLT.Mazur.HilbertIntrinsicResidueBasis
 public import FLT.Mazur.HilbertLocalResidueBasis
