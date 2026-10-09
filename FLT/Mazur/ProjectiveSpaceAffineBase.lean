@@ -62,7 +62,7 @@ theorem affine_isPullback {X Y : Scheme.{u}} [IsAffine X] [IsAffine Y]
   · exact Scheme.isoSpec_inv_naturality f
 
 /-- Restricting the affine base gives an open immersion of projective charts. -/
-instance coefficientMap_isOpenImmersion {X Y : Scheme.{u}} [IsAffine X] [IsAffine Y]
+instance affineCoefficientMap_isOpenImmersion {X Y : Scheme.{u}} [IsAffine X] [IsAffine Y]
     (f : X ⟶ Y) [IsOpenImmersion f] (ι : Type u) [Finite ι] :
     IsOpenImmersion (coefficientMap f.appTop.hom ι) :=
   IsOpenImmersion.of_isPullback (affine_isPullback f ι).flip inferInstance
