@@ -4232,6 +4232,7 @@ public import FLT.Mazur.IncreasingCechLocalizedSectionFormula
 public import FLT.Mazur.IncreasingCechModuleHomology
 public import FLT.Mazur.IncreasingCechPrincipalComparison
 public import FLT.Mazur.IncreasingCechProperFinite
+public import FLT.Mazur.IncreasingCechResidueVanishing
 public import FLT.Mazur.IncreasingCechScalars
 public import FLT.Mazur.IncreasingCechSectionCoordinates
 public import FLT.Mazur.IncreasingCechTensorCoordinates
