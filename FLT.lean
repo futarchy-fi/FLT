@@ -2846,6 +2846,7 @@ public import FLT.Mazur.BlowupReesDegreeZeroEquiv
 public import FLT.Mazur.BlowupReesDegreeZeroMap
 public import FLT.Mazur.BlowupReesGrading
 public import FLT.Mazur.BlowupReesHomogeneous
+public import FLT.Mazur.BlowupReesIrrelevant
 public import FLT.Mazur.BlowupReesProjChart
 public import FLT.Mazur.BlowupReesRatio
 public import FLT.Mazur.BlowupReesRatioLocalization
