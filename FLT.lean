@@ -3842,6 +3842,7 @@ public import FLT.Mazur.HilbertOpenInclusionExtension
 public import FLT.Mazur.HilbertOpenInclusionFamilies
 public import FLT.Mazur.HilbertOpenIntrinsicClassification
 public import FLT.Mazur.HilbertOpenOverlapCoherence
+public import FLT.Mazur.HilbertOverlapRestriction
 public import FLT.Mazur.HilbertPolynomialAffineClassification
 public import FLT.Mazur.HilbertPolynomialAffineNaturality
 public import FLT.Mazur.HilbertPolynomialAmbient
