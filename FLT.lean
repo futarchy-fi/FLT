@@ -3821,6 +3821,7 @@ public import FLT.Mazur.HilbertIntrinsicBasisEquiv
 public import FLT.Mazur.HilbertIntrinsicBasisGlobal
 public import FLT.Mazur.HilbertIntrinsicBasisOpen
 public import FLT.Mazur.HilbertIntrinsicResidueBasis
+public import FLT.Mazur.HilbertIntrinsicUniversalOverlap
 public import FLT.Mazur.HilbertLocalResidueBasis
 public import FLT.Mazur.HilbertLocalizationIsomorphismOpen
 public import FLT.Mazur.HilbertLocalizedTupleBasis
