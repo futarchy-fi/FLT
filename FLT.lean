@@ -2977,6 +2977,7 @@ public import FLT.Mazur.ClosedDirectImageAcyclic
 public import FLT.Mazur.ClosedDirectImageComposition
 public import FLT.Mazur.ClosedFiberTensorExactness
 public import FLT.Mazur.ClosedIdealAffineCoverDescent
+public import FLT.Mazur.ClosedIdealCartesianDegree
 public import FLT.Mazur.ClosedIdealCoverGluing
 public import FLT.Mazur.ClosedIdealCoverRestriction
 public import FLT.Mazur.ClosedImmersionModulePushforward
