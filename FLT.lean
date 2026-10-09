@@ -4420,6 +4420,7 @@ public import FLT.Mazur.PrincipalOccurrenceCoordinateChanges
 public import FLT.Mazur.PrincipalOccurrenceCrossChartCoordinates
 public import FLT.Mazur.PrincipalOccurrenceCrossChartIntersections
 public import FLT.Mazur.PrincipalOccurrenceCrossChartTriples
+public import FLT.Mazur.PrincipalOccurrenceCrossEquationRefinement
 public import FLT.Mazur.PrincipalOccurrenceDiagramCoordinates
 public import FLT.Mazur.PrincipalOccurrenceDiagramEdges
 public import FLT.Mazur.PrincipalOccurrenceDiagramFiniteRestrictions
