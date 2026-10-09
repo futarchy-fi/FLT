@@ -2851,6 +2851,7 @@ public import FLT.Mazur.BlowupReesRatioLocalization
 public import FLT.Mazur.BlowupReesRatioOriginal
 public import FLT.Mazur.BlowupReesRatioRight
 public import FLT.Mazur.BlowupReesRatioScheme
+public import FLT.Mazur.BlowupReesRatioTransition
 public import FLT.Mazur.BlowupReesZeroComponent
 public import FLT.Mazur.CartesianMonoGroup
 public import FLT.Mazur.CartesianMonoMonoid
