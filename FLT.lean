@@ -6085,6 +6085,7 @@ public import FLT.Mazur.WeierstrassSuccessiveReesProjEmbedding
 public import FLT.Mazur.WeierstrassSuccessiveReesProjGluing
 public import FLT.Mazur.WeierstrassSuccessiveReesProjIso
 public import FLT.Mazur.WeierstrassSuccessiveReesProjOverlap
+public import FLT.Mazur.WeierstrassSuccessiveReesProper
 public import FLT.Mazur.WeierstrassSuccessiveReesSchemeOverlap
 public import FLT.Mazur.WeierstrassSuccessiveReplacementAtlas
 public import FLT.Mazur.WeierstrassSuccessiveReplacementGluing
