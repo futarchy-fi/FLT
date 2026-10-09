@@ -3786,6 +3786,7 @@ public import FLT.Mazur.HilbertPolynomialBasisOpen
 public import FLT.Mazur.HilbertPolynomialChartDegree
 public import FLT.Mazur.HilbertPolynomialChartGluing
 public import FLT.Mazur.HilbertPolynomialClosedFamilyComparison
+public import FLT.Mazur.HilbertPolynomialFamilyAffineTest
 public import FLT.Mazur.HilbertPolynomialFamilyAmbient
 public import FLT.Mazur.HilbertPolynomialFamilyAmbientNaturality
 public import FLT.Mazur.HilbertPolynomialFamilyBaseChangeRank
