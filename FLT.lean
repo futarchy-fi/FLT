@@ -3606,6 +3606,7 @@ public import FLT.Mazur.FiniteIteratedPolynomialCoefficients
 public import FLT.Mazur.FiniteLineCocycleModel
 public import FLT.Mazur.FiniteLineSheafDescent
 public import FLT.Mazur.FiniteLineSheafModel
+public import FLT.Mazur.FiniteLocalizedIdealQuotient
 public import FLT.Mazur.FiniteLocalizedIntegerComparisons
 public import FLT.Mazur.FiniteLocalizedPolynomialCoefficients
 public import FLT.Mazur.FiniteLocallyFreeDegreeAffine
