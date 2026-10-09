@@ -2631,6 +2631,7 @@ public import FLT.Mazur.AffineNamedRefinementSection
 public import FLT.Mazur.AffineNodeNormalizationExact
 public import FLT.Mazur.AffineOpenCartesianSections
 public import FLT.Mazur.AffineOpenCechBoundary
+public import FLT.Mazur.AffineOpenClosedLimitDescent
 public import FLT.Mazur.AffineOpenCoverCommonRefinement
 public import FLT.Mazur.AffineOpenCoverComparisonGluing
 public import FLT.Mazur.AffineOpenCoverGluingIso
