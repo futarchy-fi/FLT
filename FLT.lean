@@ -3554,6 +3554,7 @@ public import FLT.Mazur.FinitePrincipalAtlasCoordinates
 public import FLT.Mazur.FinitePrincipalAtlasCoverStage
 public import FLT.Mazur.FinitePrincipalAtlasDiagonalStage
 public import FLT.Mazur.FinitePrincipalAtlasGluing
+public import FLT.Mazur.FinitePrincipalAtlasGluingCofinal
 public import FLT.Mazur.FinitePrincipalAtlasImageStage
 public import FLT.Mazur.FinitePrincipalAtlasOccurrences
 public import FLT.Mazur.FinitePrincipalAtlasOriginalCovers
