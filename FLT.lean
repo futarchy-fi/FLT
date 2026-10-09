@@ -5690,6 +5690,7 @@ public import FLT.Mazur.WeierstrassDividedFiniteStageRetention
 public import FLT.Mazur.WeierstrassDividedFiniteTensorAtlas
 public import FLT.Mazur.WeierstrassDividedFiniteTensorCharts
 public import FLT.Mazur.WeierstrassDividedFiniteTensorGeometry
+public import FLT.Mazur.WeierstrassDividedFiniteTensorIntersection
 public import FLT.Mazur.WeierstrassDividedFiniteTensorOverlap
 public import FLT.Mazur.WeierstrassDividedFiniteYBoundary
 public import FLT.Mazur.WeierstrassDividedFiniteYStep
