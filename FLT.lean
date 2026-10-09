@@ -2844,6 +2844,7 @@ public import FLT.Mazur.BlowupFractionChartRatio
 public import FLT.Mazur.BlowupReesContraction
 public import FLT.Mazur.BlowupReesDegreeZeroEquiv
 public import FLT.Mazur.BlowupReesDegreeZeroMap
+public import FLT.Mazur.BlowupReesGeneratorSpan
 public import FLT.Mazur.BlowupReesGrading
 public import FLT.Mazur.BlowupReesHomogeneous
 public import FLT.Mazur.BlowupReesIrrelevant
