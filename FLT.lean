@@ -3602,6 +3602,7 @@ public import FLT.Mazur.FiniteRelationLocalizationStages
 public import FLT.Mazur.FiniteRelationLocalizationSurjectiveDescent
 public import FLT.Mazur.FiniteRelationLocalizedCoverDescent
 public import FLT.Mazur.FiniteRelationLocalizedInclusionDescent
+public import FLT.Mazur.FiniteRelationLocalizedUnionDescent
 public import FLT.Mazur.FiniteRelationPrincipalCoverModels
 public import FLT.Mazur.FiniteRelationPrincipalPathQuotients
 public import FLT.Mazur.FiniteRelationPrincipalProjection
