@@ -4208,6 +4208,7 @@ public import FLT.Mazur.IncreasingCechComplex
 public import FLT.Mazur.IncreasingCechCycles
 public import FLT.Mazur.IncreasingCechEvaluationComparison
 public import FLT.Mazur.IncreasingCechFiberEvaluation
+public import FLT.Mazur.IncreasingCechFlatKernels
 public import FLT.Mazur.IncreasingCechFlatTerms
 public import FLT.Mazur.IncreasingCechGenericCohomology
 public import FLT.Mazur.IncreasingCechGenericEvaluation
