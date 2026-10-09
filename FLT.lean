@@ -3716,6 +3716,7 @@ public import FLT.Mazur.HilbertAmbientChartNaturality
 public import FLT.Mazur.HilbertAmbientClosedFamily
 public import FLT.Mazur.HilbertAmbientFactorization
 public import FLT.Mazur.HilbertAmbientQuotientEvaluation
+public import FLT.Mazur.HilbertAmbientRelationImage
 public import FLT.Mazur.HilbertAmbientRelations
 public import FLT.Mazur.HilbertBasisAffineClassification
 public import FLT.Mazur.HilbertBasisAffineFactorization
