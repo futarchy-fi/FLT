@@ -5609,6 +5609,7 @@ public import FLT.Mazur.WeierstrassDividedDepthBoundaryPullback
 public import FLT.Mazur.WeierstrassDividedDepthData
 public import FLT.Mazur.WeierstrassDividedDepthMaps
 public import FLT.Mazur.WeierstrassDividedDepthOriginalOpen
+public import FLT.Mazur.WeierstrassDividedDepthStructure
 public import FLT.Mazur.WeierstrassDividedDepthYBoundary
 public import FLT.Mazur.WeierstrassDividedExterior
 public import FLT.Mazur.WeierstrassDividedExteriorLocalContraction
