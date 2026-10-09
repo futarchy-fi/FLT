@@ -4075,6 +4075,15 @@ public import FLT.Mazur.NoetherianSumCechCohomology
 public import FLT.Mazur.NoetherianSumCechComplex
 public import FLT.Mazur.NoetherianSumCechInclusion
 public import FLT.Mazur.NoetherianSumCechTerms
+public import FLT.Mazur.OccurrenceDiagramCoefficients
+public import FLT.Mazur.OccurrenceMixedSourceRefinement
+public import FLT.Mazur.OccurrenceMixedSourceRepresentatives
+public import FLT.Mazur.OccurrenceOldDiagramRefinement
+public import FLT.Mazur.OccurrenceOldDiagramRepresentatives
+public import FLT.Mazur.OccurrenceOldTargetStages
+public import FLT.Mazur.OccurrencePolynomialDataRelations
+public import FLT.Mazur.OccurrencePolynomialDataStages
+public import FLT.Mazur.OccurrenceQuotientInverseStages
 public import FLT.Mazur.OneGonAffineCover
 public import FLT.Mazur.OneGonAffineNormalization
 public import FLT.Mazur.OneGonAffineNormalizationCoordinates
@@ -4364,7 +4373,10 @@ public import FLT.Mazur.PrincipalFanIsomorphismOpens
 public import FLT.Mazur.PrincipalFanIsomorphismRefinement
 public import FLT.Mazur.PrincipalFanIsomorphismStages
 public import FLT.Mazur.PrincipalFanPathIsomorphisms
+public import FLT.Mazur.PrincipalFanRefinedRestrictionPaths
+public import FLT.Mazur.PrincipalFanRefinedRestrictionTargets
 public import FLT.Mazur.PrincipalFanRestrictionCoordinates
+public import FLT.Mazur.PrincipalFanRestrictionTransitions
 public import FLT.Mazur.PrincipalFanRestrictionUniqueness
 public import FLT.Mazur.PrincipalFanStages
 public import FLT.Mazur.PrincipalFiniteRestrictionPaths
@@ -4393,6 +4405,7 @@ public import FLT.Mazur.PrincipalOccurrenceExistence
 public import FLT.Mazur.PrincipalOccurrenceFiniteRestrictions
 public import FLT.Mazur.PrincipalOccurrenceOpenEmbeddings
 public import FLT.Mazur.PrincipalOccurrencePathIsomorphisms
+public import FLT.Mazur.PrincipalOccurrenceRefinedPaths
 public import FLT.Mazur.PrincipalOccurrenceStages
 public import FLT.Mazur.PrincipalOccurrenceSurjective
 public import FLT.Mazur.PrincipalOccurrenceTargetBounds
