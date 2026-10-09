@@ -5218,6 +5218,7 @@ public import FLT.Mazur.WeierstrassModificationReesGluing
 public import FLT.Mazur.WeierstrassModificationReesOverlap
 public import FLT.Mazur.WeierstrassModificationReesProjContraction
 public import FLT.Mazur.WeierstrassModificationReesProjCover
+public import FLT.Mazur.WeierstrassModificationReesProjEmbedding
 public import FLT.Mazur.WeierstrassModificationReesProjGluing
 public import FLT.Mazur.WeierstrassModificationReesProjOverlap
 public import FLT.Mazur.WeierstrassModificationReesProjYHorizontal
