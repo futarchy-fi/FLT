@@ -3713,6 +3713,7 @@ public import FLT.Mazur.HigherDirectImagePresheaf
 public import FLT.Mazur.HigherDirectImagePresheafRestriction
 public import FLT.Mazur.HilbertAmbientChartClassification
 public import FLT.Mazur.HilbertAmbientChartNaturality
+public import FLT.Mazur.HilbertAmbientClosedFamily
 public import FLT.Mazur.HilbertAmbientFactorization
 public import FLT.Mazur.HilbertAmbientQuotientEvaluation
 public import FLT.Mazur.HilbertAmbientRelations
