@@ -4422,6 +4422,7 @@ public import FLT.Mazur.ModuleSectionUnit
 public import FLT.Mazur.ModuleSheafAdjointPathNaturality
 public import FLT.Mazur.ModuleSheafAffinePairTestDetection
 public import FLT.Mazur.ModuleSheafAffineTestCompatibility
+public import FLT.Mazur.ModuleSheafBidual
 public import FLT.Mazur.ModuleSheafChartOverlapRecovery
 public import FLT.Mazur.ModuleSheafChartRecoveryRefinement
 public import FLT.Mazur.ModuleSheafCoordinateNaturality
