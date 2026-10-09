@@ -4316,6 +4316,7 @@ public import FLT.Mazur.LocalizedSmoothFiniteFlatCartier
 public import FLT.Mazur.LocalizedSmoothLocalEquation
 public import FLT.Mazur.LocalizedTensorCancellation
 public import FLT.Mazur.LocallyNoetherianUniversalStructureSheaf
+public import FLT.Mazur.LocallySmoothFiniteFlatCartier
 public import FLT.Mazur.MarkedIntegerModel
 public import FLT.Mazur.MaximalAdicDetection
 public import FLT.Mazur.ModuleBinarySectionGluing
