@@ -2995,6 +2995,7 @@ public import FLT.Mazur.ClosedPushforwardFull
 public import FLT.Mazur.ClosedPushforwardRestriction
 public import FLT.Mazur.ClosedSubschemeCohomology
 public import FLT.Mazur.ClosedSubsets
+public import FLT.Mazur.CocycleGlobalCoordinates
 public import FLT.Mazur.CocycleGlobalSectionCoordinate
 public import FLT.Mazur.CocycleSheafLimitDescent
 public import FLT.Mazur.CoefficientCartesianHomDescent
