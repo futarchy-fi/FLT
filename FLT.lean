@@ -4334,6 +4334,7 @@ public import FLT.Mazur.NeronPolygonScaling
 public import FLT.Mazur.NestedOpenCohomologyCoherence
 public import FLT.Mazur.NodalFiberAlgebra
 public import FLT.Mazur.NodalFiberNodeComparison
+public import FLT.Mazur.NodalFiberParameterTransport
 public import FLT.Mazur.NodalFiberUnitComparison
 public import FLT.Mazur.NodalGenusOneBaseChange
 public import FLT.Mazur.NodalGeometricFiberGenus
