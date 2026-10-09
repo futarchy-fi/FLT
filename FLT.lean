@@ -4299,6 +4299,7 @@ public import FLT.Mazur.LineImageCartier
 public import FLT.Mazur.LinePowerEvaluationDescent
 public import FLT.Mazur.LinePowerSectionBaseChange
 public import FLT.Mazur.LinePullbackRestriction
+public import FLT.Mazur.LineSectionCanonicalRecovery
 public import FLT.Mazur.LineSectionCohomologyAnnihilation
 public import FLT.Mazur.LineSectionCohomologySurjection
 public import FLT.Mazur.LineSectionEvaluation
