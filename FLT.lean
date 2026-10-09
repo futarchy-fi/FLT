@@ -5582,6 +5582,7 @@ public import FLT.Mazur.WeierstrassDilatationResidueGeometry
 public import FLT.Mazur.WeierstrassDilatationSaturation
 public import FLT.Mazur.WeierstrassDilatationUnitComparison
 public import FLT.Mazur.WeierstrassDividedDepthBoundary
+public import FLT.Mazur.WeierstrassDividedDepthBoundaryPullback
 public import FLT.Mazur.WeierstrassDividedDepthData
 public import FLT.Mazur.WeierstrassDividedDepthMaps
 public import FLT.Mazur.WeierstrassDividedExterior
