@@ -3560,6 +3560,7 @@ public import FLT.Mazur.FinitePrincipalAtlasPairUnion
 public import FLT.Mazur.FinitePrincipalAtlasPairUnionRecovery
 public import FLT.Mazur.FinitePrincipalAtlasTargetCovers
 public import FLT.Mazur.FinitePrincipalAtlasTargetGluing
+public import FLT.Mazur.FinitePrincipalAtlasTripleCoverStage
 public import FLT.Mazur.FinitePrincipalChartIntegerDescent
 public import FLT.Mazur.FinitePrincipalIdealPatching
 public import FLT.Mazur.FinitePrincipalTargetRefinement
