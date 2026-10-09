@@ -6236,6 +6236,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXResidueMiddleOverlap
 public import FLT.Mazur.WeierstrassSuccessiveXResidueMiddleUnion
 public import FLT.Mazur.WeierstrassSuccessiveXResidueNodeContraction
 public import FLT.Mazur.WeierstrassSuccessiveXResidueNodeGeometry
+public import FLT.Mazur.WeierstrassSuccessiveXResidueTransitionBaseChange
 public import FLT.Mazur.WeierstrassSuccessiveXSaturation
 public import FLT.Mazur.WeierstrassSuccessiveXSchemeOverlap
 public import FLT.Mazur.WeierstrassSuccessiveXSplitFiber
