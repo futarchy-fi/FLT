@@ -104,26 +104,63 @@ These names are module-qualified here; the declarations share the namespace
 linted individually, and audited for only the three standard axioms. Validation
 logs and the reproducible manifest remain outside the tracked source directories.
 
-The next missing theorem is [01ZY](https://stacks.math.columbia.edu/tag/01ZY),
-Lemma 28.30.5: every finite set in a scheme with an ample invertible sheaf lies
-in a common affine open. `VeryAmpleAffineSections` supplies individual affine
-neighborhoods, not one affine neighborhood of a whole orbit. The required bridge
-is not obtained by intersecting an arbitrary affine cover of the points.
+## Non-affine neighborhoods and overlap foundations implemented in W174
 
-Split FQ7 further before the global gluing step:
+Checked 2026-10-09 against the named declarations below. Each new module has a
+bounded foreground probe, module build, individual lint, and declaration axiom
+audit; the reproducible `W174_RECHECK.py` and manifest accompany the local handoff.
+All these modules remain at most 240 lines.
 
-1. Homogeneous prime avoidance, Stacks [00JS](https://stacks.math.columbia.edu/tag/00JS),
-   Lemma 10.57.6, for finitely many homogeneous primes and a homogeneous ideal.
-2. Use it to prove 01ZY for locally closed subschemes of Proj, retaining an actual
-   affine basic open that contains the whole finite set and avoids the boundary.
-3. Reuse `SectionGradedProjOfAmple.isOpenImmersion` to transfer this to schemes
-   with the existing ample line-bundle predicate.
-4. For a finite group action, intersect the translates of the common affine
-   neighborhood to obtain a stable affine neighborhood; prove affineness using
-   separatedness and prove that it still contains the orbit.
+- `HomogeneousIdealWitness` extracts positive homogeneous components outside a
+  homogeneous ideal. `HomogeneousPrimeAvoidance.exists_positive_avoiding` proves
+  Stacks [00JS](https://stacks.math.columbia.edu/tag/00JS), including finite residue
+  fields and nontrivial containments among the primes.
+- `ProjectiveFiniteAffineNeighborhood.exists_basicOpen` puts every finite set in
+  an open of Proj inside one positive homogeneous basic open contained in it.
+- `AmpleFiniteAffineNeighborhood.of_ample` transfers this through the established
+  section-ring Proj open immersion, proving the required
+  [01ZY](https://stacks.math.columbia.edu/tag/01ZY) neighborhood result.
+- `FiniteGroupAffineNeighborhood.exists_invariant_affine` intersects translates
+  and proves that the orbit remains in an affine invariant neighborhood.
+  `FiniteGroupInvariantAffineCover` assembles the actual cover and affine overlaps.
+  These results assume a separated scheme with the existing ample line bundle.
+- `FiniteGroupOpenRestriction` constructs the genuine restricted actions and
+  proves equivariance of inclusions between stable opens.
+- `SchemeCoordinateAction` constructs inverse-pullback actions on global sections.
+  `SchemeFiniteGroupQuotient` applies the fixed-ring quotient to actual affine
+  schemes, with invariant, integral, surjective quotient maps.
+- `SchemeFiniteGroupQuotientMaps` constructs maps of fixed rings and quotient
+  spectra, retaining naturality and composition. The composition law alone does
+  not constitute a glued scheme or full gluing data.
+- `SchemeFiniteGroupQuotientOrbits` proves that the fibers are the original
+  scheme-action orbits and that stable opens descend to opens.
+- `SchemeFiniteGroupQuotientOpenEmbedding` proves the induced map of quotients
+  of an equivariant affine open immersion is a **topological** open embedding.
+  This theorem alone does not establish its structure-sheaf isomorphisms.
+- `SchemeFiniteGroupPrincipalQuotient` proves a **scheme** open immersion for an
+  invariant principal-open inclusion using the fixed-ring localization theorem.
+- `SchemeFiniteGroupInvariantPrincipal` gives invariant principal neighborhoods
+  inside stable opens and identifies the actual principal quotient image.
 
-FQ8 must then construct the action on each affine chart's coordinate ring,
-compare restrictions on invariant principal overlaps, prove the cocycle, and
-apply scheme gluing. FQ9 extends descent to arbitrary scheme targets and proves
-flat base change. None of those global theorems, or C1--C8, is claimed here.
-The specified tags 07S7/07S9 cannot discharge these gaps.
+Module names above are under `FLT/Mazur/`; namespaces are documented in source.
+FQ7 is now proved. The D and G2 lanes remain outside this work.
+
+## Next missing proof and ordered remaining work
+
+1. Upgrade the general topological quotient overlap embedding to a scheme open
+   immersion. Cover the stable affine overlap by invariant principal opens using
+   `exists_invariant_principal`; identify the restrictions via the proved
+   `principalQuotientMap_isOpenImmersion` and functorial quotient maps.
+   The arbitrary equivariant-isomorphism comparison and its compatibility with
+   the chosen principal restrictions still need proofs; do not assume stalk maps.
+2. Construct the quotient overlap identifications and cocycles as actual scheme
+   morphisms, assemble scheme gluing data, glue the quotient, and construct the
+   global invariant quotient map. The existing affine cover has no glued quotient.
+3. Prove descent to arbitrary scheme targets and flat base change (FQ9).
+4. Construct the actual rigidified auxiliary level atlas and relation, then C2.
+   Prove C3--C8, including boundary points, characteristic 3, geometric integrality,
+   and the actual prime-torsion and cusp comparisons.
+
+The source still declares `Mazur_statement` in `FLT/Assumptions/Mazur.lean` and
+uses it in `FLT/MazurW.lean`; reproduce with `git grep -n Mazur_statement -- FLT`.
+No replacement of that assumption or coarse modular curve is claimed.
