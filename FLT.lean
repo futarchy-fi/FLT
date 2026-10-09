@@ -3624,6 +3624,7 @@ public import FLT.Mazur.FiniteFreeChartTransitions
 public import FLT.Mazur.FiniteFreeContragredient
 public import FLT.Mazur.FiniteFreeContragredientCoefficients
 public import FLT.Mazur.FiniteFreeContragredientEvaluation
+public import FLT.Mazur.FiniteFreeDualProjectivePoints
 public import FLT.Mazur.FiniteFreeDualProjectiveRefinement
 public import FLT.Mazur.FiniteFreeDualProjectiveTransitions
 public import FLT.Mazur.FiniteFreeProjectiveAtlasDiagram
