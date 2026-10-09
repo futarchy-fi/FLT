@@ -5638,6 +5638,7 @@ public import FLT.Mazur.WeierstrassDilatationRefinement
 public import FLT.Mazur.WeierstrassDilatationResidueDepth
 public import FLT.Mazur.WeierstrassDilatationResidueFiber
 public import FLT.Mazur.WeierstrassDilatationResidueGeometry
+public import FLT.Mazur.WeierstrassDilatationResidueLaurent
 public import FLT.Mazur.WeierstrassDilatationResidueRetained
 public import FLT.Mazur.WeierstrassDilatationSaturation
 public import FLT.Mazur.WeierstrassDilatationUnitComparison
