@@ -5821,6 +5821,7 @@ public import FLT.Mazur.WeierstrassInfinityReverseCross
 public import FLT.Mazur.WeierstrassInfinitySlopeMap
 public import FLT.Mazur.WeierstrassInfinitySmoothChart
 public import FLT.Mazur.WeierstrassInfinitySpecializedFactorization
+public import FLT.Mazur.WeierstrassInfinityTensorBoundary
 public import FLT.Mazur.WeierstrassInfinityTransportedComparison
 public import FLT.Mazur.WeierstrassInfinityTransportedInputs
 public import FLT.Mazur.WeierstrassInfinityTransportedIntersection
