@@ -4369,6 +4369,7 @@ public import FLT.Mazur.OpenDirectImageCohomology
 public import FLT.Mazur.OpenDirectImageNaturality
 public import FLT.Mazur.OpenDirectImageRestriction
 public import FLT.Mazur.OpenImageSectionPullback
+public import FLT.Mazur.OpenImmersionImagePullbackCover
 public import FLT.Mazur.OpenImmersionImageUnion
 public import FLT.Mazur.OpenImmersionImageUnionCartesian
 public import FLT.Mazur.OpenImmersionImageUnionGluing
