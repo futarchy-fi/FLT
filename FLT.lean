@@ -4692,6 +4692,7 @@ public import FLT.Mazur.PrincipalOccurrenceOriginalCross
 public import FLT.Mazur.PrincipalOccurrenceOriginalGeometry
 public import FLT.Mazur.PrincipalOccurrenceOriginalImageComparison
 public import FLT.Mazur.PrincipalOccurrenceOriginalPatches
+public import FLT.Mazur.PrincipalOccurrenceOriginalSubfamily
 public import FLT.Mazur.PrincipalOccurrenceOverlapPatches
 public import FLT.Mazur.PrincipalOccurrencePatchCartesian
 public import FLT.Mazur.PrincipalOccurrencePatchCoordinates
