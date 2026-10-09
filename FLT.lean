@@ -2864,6 +2864,7 @@ public import FLT.Mazur.BlowupReesGeneratorSpan
 public import FLT.Mazur.BlowupReesGrading
 public import FLT.Mazur.BlowupReesHomogeneous
 public import FLT.Mazur.BlowupReesIrrelevant
+public import FLT.Mazur.BlowupReesOriginalOpen
 public import FLT.Mazur.BlowupReesProjChart
 public import FLT.Mazur.BlowupReesProper
 public import FLT.Mazur.BlowupReesRatio
