@@ -3748,6 +3748,7 @@ public import FLT.Mazur.FlatScalarHomology
 public import FLT.Mazur.FlatSectionEqualizer
 public import FLT.Mazur.FlatStructureCohomology
 public import FLT.Mazur.FlatStructureSectionComplex
+public import FLT.Mazur.FlatTensorFixedSubmodule
 public import FLT.Mazur.FpqcGlobalGenerationDescent
 public import FLT.Mazur.FpqcModuleEpimorphisms
 public import FLT.Mazur.GeneralizedCurveAmpleBaseChange
