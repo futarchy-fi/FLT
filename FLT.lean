@@ -6199,6 +6199,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXReesChart
 public import FLT.Mazur.WeierstrassSuccessiveXReesScheme
 public import FLT.Mazur.WeierstrassSuccessiveXSaturation
 public import FLT.Mazur.WeierstrassSuccessiveXSchemeOverlap
+public import FLT.Mazur.WeierstrassSuccessiveXSplitFiber
 public import FLT.Mazur.WeierstrassSuccessiveXTotalTransform
 public import FLT.Mazur.WeierstrassSwappedAdditionIntersections
 public import FLT.Mazur.WeierstrassSwappedInfinityOutput
