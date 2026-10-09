@@ -4287,6 +4287,7 @@ public import FLT.Mazur.LineSectionTwistCoordinates
 public import FLT.Mazur.LineSectionTwistRestriction
 public import FLT.Mazur.LineSectionTwistSystem
 public import FLT.Mazur.LineSectionZeroDivisor
+public import FLT.Mazur.LineSectionZeroIdealOrbits
 public import FLT.Mazur.LineSheafDualEvaluation
 public import FLT.Mazur.LineSheafEndomorphismSheaf
 public import FLT.Mazur.LineSheafGlobalEndomorphisms
