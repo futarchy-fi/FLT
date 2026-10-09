@@ -5318,6 +5318,7 @@ public import FLT.Mazur.SchemeFiniteGroupQuotient
 public import FLT.Mazur.SchemeFiniteGroupQuotientIso
 public import FLT.Mazur.SchemeFiniteGroupQuotientMaps
 public import FLT.Mazur.SchemeFiniteGroupQuotientOpenEmbedding
+public import FLT.Mazur.SchemeFiniteGroupQuotientOpenImmersion
 public import FLT.Mazur.SchemeFiniteGroupQuotientOrbits
 public import FLT.Mazur.SchemeFlatProductDensity
 public import FLT.Mazur.SchemeFppfCanonicalPairRecovery
