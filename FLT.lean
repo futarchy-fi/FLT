@@ -4822,6 +4822,7 @@ public import FLT.Mazur.PowerSeriesQuotientCompletion
 public import FLT.Mazur.PowerSeriesSubstitutionEquiv
 public import FLT.Mazur.PrimeCharacteristicScalar
 public import FLT.Mazur.PrimeCoefficientLocalization
+public import FLT.Mazur.PrimeQuasiFiniteSmoothCartier
 public import FLT.Mazur.PrimeSmoothFiniteFlatCartier
 public import FLT.Mazur.PrimeSmoothLocalizationCartier
 public import FLT.Mazur.PrimeTorsionComponentsAtPrime
