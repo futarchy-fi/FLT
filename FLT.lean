@@ -4401,6 +4401,7 @@ public import FLT.Mazur.PrincipalOccurrenceAmbientIndex
 public import FLT.Mazur.PrincipalOccurrenceAmbientSquares
 public import FLT.Mazur.PrincipalOccurrenceChangeRefinement
 public import FLT.Mazur.PrincipalOccurrenceCoordinateChanges
+public import FLT.Mazur.PrincipalOccurrenceDiagramCoordinates
 public import FLT.Mazur.PrincipalOccurrenceDiagramEdges
 public import FLT.Mazur.PrincipalOccurrenceDirected
 public import FLT.Mazur.PrincipalOccurrenceExistence
