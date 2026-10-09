@@ -5586,6 +5586,7 @@ public import FLT.Mazur.WeierstrassDividedDepthBoundaryPullback
 public import FLT.Mazur.WeierstrassDividedDepthData
 public import FLT.Mazur.WeierstrassDividedDepthMaps
 public import FLT.Mazur.WeierstrassDividedExterior
+public import FLT.Mazur.WeierstrassDividedExteriorLocalContraction
 public import FLT.Mazur.WeierstrassDividedExteriorReassociation
 public import FLT.Mazur.WeierstrassDividedExteriorStep
 public import FLT.Mazur.WeierstrassDividedFiniteAtlas
