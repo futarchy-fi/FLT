@@ -3682,6 +3682,7 @@ public import FLT.Mazur.HilbertBasisDeterminant
 public import FLT.Mazur.HilbertBasisNeighborhoodCompatibility
 public import FLT.Mazur.HilbertBasisOpen
 public import FLT.Mazur.HilbertBasisOpenInvariance
+public import FLT.Mazur.HilbertBasisPrincipalCompatibility
 public import FLT.Mazur.HilbertBasisResidueField
 public import FLT.Mazur.HilbertBasisSchemeCover
 public import FLT.Mazur.HilbertChartAlgebra
