@@ -4367,6 +4367,7 @@ public import FLT.Mazur.OpenImmersionImageUnion
 public import FLT.Mazur.OpenImmersionImageUnionCartesian
 public import FLT.Mazur.OpenImmersionImageUnionGluing
 public import FLT.Mazur.OpenImmersionImageUnionIsomorphism
+public import FLT.Mazur.OpenImmersionImageUnionReindex
 public import FLT.Mazur.OpenImmersionSectionComparison
 public import FLT.Mazur.OpenIrreducibleComponent
 public import FLT.Mazur.OpenModuleDirectImageCohomology
