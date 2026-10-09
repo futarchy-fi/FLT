@@ -3793,6 +3793,7 @@ public import FLT.Mazur.HilbertPolynomialFamilyMorphism
 public import FLT.Mazur.HilbertPolynomialFamilyNaturality
 public import FLT.Mazur.HilbertPolynomialFamilyPrincipal
 public import FLT.Mazur.HilbertPolynomialFamilyRestriction
+public import FLT.Mazur.HilbertPolynomialParameterClosedPullback
 public import FLT.Mazur.HilbertPolynomialParameterIdeal
 public import FLT.Mazur.HilbertPolynomialQuotientBaseChange
 public import FLT.Mazur.HilbertPolynomialSchemeOver
