@@ -4701,6 +4701,7 @@ public import FLT.Mazur.PrincipalOccurrenceAtlasImageRefinement
 public import FLT.Mazur.PrincipalOccurrenceAtlasQuotientEquations
 public import FLT.Mazur.PrincipalOccurrenceBijectiveIndex
 public import FLT.Mazur.PrincipalOccurrenceChangeRefinement
+public import FLT.Mazur.PrincipalOccurrenceChartDiagram
 public import FLT.Mazur.PrincipalOccurrenceCofinalBijections
 public import FLT.Mazur.PrincipalOccurrenceCoherentRefinement
 public import FLT.Mazur.PrincipalOccurrenceCommonDoublePullback
