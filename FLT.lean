@@ -5127,6 +5127,7 @@ public import FLT.Mazur.ProjectiveChartNoetherian
 public import FLT.Mazur.ProjectiveChartPointMembership
 public import FLT.Mazur.ProjectiveChartPolynomialEquiv
 public import FLT.Mazur.ProjectiveChartSectionPullback
+public import FLT.Mazur.ProjectiveCoefficientFunctor
 public import FLT.Mazur.ProjectiveCoherentCharts
 public import FLT.Mazur.ProjectiveCoherentCohomology
 public import FLT.Mazur.ProjectiveCoordinateGeneratorOpen
