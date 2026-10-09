@@ -4678,6 +4678,7 @@ public import FLT.Mazur.PrincipalOccurrenceBijectiveIndex
 public import FLT.Mazur.PrincipalOccurrenceChangeRefinement
 public import FLT.Mazur.PrincipalOccurrenceCofinalBijections
 public import FLT.Mazur.PrincipalOccurrenceCoherentRefinement
+public import FLT.Mazur.PrincipalOccurrenceCommonFamily
 public import FLT.Mazur.PrincipalOccurrenceComparisonCancellation
 public import FLT.Mazur.PrincipalOccurrenceComparisonLocalCoordinates
 public import FLT.Mazur.PrincipalOccurrenceComparisonNaturality
