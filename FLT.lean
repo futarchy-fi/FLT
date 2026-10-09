@@ -5237,6 +5237,7 @@ public import FLT.Mazur.WeierstrassModificationXCoefficients
 public import FLT.Mazur.WeierstrassModificationXContractionOverlap
 public import FLT.Mazur.WeierstrassModificationXFiberBranches
 public import FLT.Mazur.WeierstrassModificationXFiberConic
+public import FLT.Mazur.WeierstrassModificationXFiberConicGeometry
 public import FLT.Mazur.WeierstrassModificationXFiberConicQuotient
 public import FLT.Mazur.WeierstrassModificationXFiberFirstNode
 public import FLT.Mazur.WeierstrassModificationXFiberKernels
