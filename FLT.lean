@@ -3753,6 +3753,7 @@ public import FLT.Mazur.HilbertLocalResidueBasis
 public import FLT.Mazur.HilbertLocalizationIsomorphismOpen
 public import FLT.Mazur.HilbertLocalizedTupleBasis
 public import FLT.Mazur.HilbertMonomialBasisNeighborhood
+public import FLT.Mazur.HilbertMonomialChartCover
 public import FLT.Mazur.HilbertMonomialFiberBasis
 public import FLT.Mazur.HilbertPolynomialBasisCover
 public import FLT.Mazur.HilbertPolynomialBasisNaturality
