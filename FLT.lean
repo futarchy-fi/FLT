@@ -5760,6 +5760,7 @@ public import FLT.Mazur.WeierstrassGlobalInfinitySwap
 public import FLT.Mazur.WeierstrassGlobalNegation
 public import FLT.Mazur.WeierstrassGlobalNegationInvolution
 public import FLT.Mazur.WeierstrassGlobalPolynomialSwap
+public import FLT.Mazur.WeierstrassInfinitesimalChart
 public import FLT.Mazur.WeierstrassInfinityAdditionChart
 public import FLT.Mazur.WeierstrassInfinityAdditionCompatibility
 public import FLT.Mazur.WeierstrassInfinityAdditionFormula
