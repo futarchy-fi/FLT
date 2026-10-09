@@ -4955,6 +4955,7 @@ public import FLT.Mazur.PrincipalUnaryLayeredIsomorphisms
 public import FLT.Mazur.ProjectiveActionFieldExtension
 public import FLT.Mazur.ProjectiveActionPullback
 public import FLT.Mazur.ProjectiveAffineChartEmbedding
+public import FLT.Mazur.ProjectiveAmbientHilbertClassification
 public import FLT.Mazur.ProjectiveChartDenominators
 public import FLT.Mazur.ProjectiveChartEvaluation
 public import FLT.Mazur.ProjectiveChartMapCompatibility
