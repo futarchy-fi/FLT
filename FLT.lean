@@ -3730,6 +3730,7 @@ public import FLT.Mazur.HilbertChartEquations
 public import FLT.Mazur.HilbertChartEvaluationSurjective
 public import FLT.Mazur.HilbertChartFiberCoordinates
 public import FLT.Mazur.HilbertChartGeneratorMap
+public import FLT.Mazur.HilbertChartIdealEvaluation
 public import FLT.Mazur.HilbertChartIdentityIdeal
 public import FLT.Mazur.HilbertChartIsomorphismInvariance
 public import FLT.Mazur.HilbertChartMultiplication
