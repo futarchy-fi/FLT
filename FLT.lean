@@ -5029,6 +5029,7 @@ public import FLT.Mazur.QuadraticComponentBound
 public import FLT.Mazur.QuasiCoherentAffineBasePullback
 public import FLT.Mazur.QuasiCoherentSchemePullback
 public import FLT.Mazur.RationalCyclicCartierGenerator
+public import FLT.Mazur.RationalCyclicGeneratorChange
 public import FLT.Mazur.RationalCyclicModuliPoint
 public import FLT.Mazur.RationalCyclicSubgroup
 public import FLT.Mazur.RationalFibers
