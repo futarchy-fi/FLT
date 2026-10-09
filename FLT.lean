@@ -4078,6 +4078,7 @@ public import FLT.Mazur.NoetherianSumCechTerms
 public import FLT.Mazur.OccurrenceDiagramCoefficients
 public import FLT.Mazur.OccurrenceMixedSourceRefinement
 public import FLT.Mazur.OccurrenceMixedSourceRepresentatives
+public import FLT.Mazur.OccurrenceMixedSourceResult
 public import FLT.Mazur.OccurrenceOldDiagramRefinement
 public import FLT.Mazur.OccurrenceOldDiagramRepresentatives
 public import FLT.Mazur.OccurrenceOldTargetStages
