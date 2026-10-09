@@ -4599,6 +4599,7 @@ public import FLT.Mazur.OpenSheafExtensionExact
 public import FLT.Mazur.OpenSheafExtensionStalks
 public import FLT.Mazur.OpenSheafFreeComparison
 public import FLT.Mazur.OpenSheafRestriction
+public import FLT.Mazur.OpenSubschemeQuotientProperties
 public import FLT.Mazur.OrderedCurveDivisor
 public import FLT.Mazur.OrderedCurveDivisorFinite
 public import FLT.Mazur.OrderedCurveDivisorLocalFree
