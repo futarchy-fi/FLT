@@ -3581,6 +3581,7 @@ public import FLT.Mazur.FinitePresentationIntegerModel
 public import FLT.Mazur.FinitePrincipalAtlasAffineIntersections
 public import FLT.Mazur.FinitePrincipalAtlasAffineLimit
 public import FLT.Mazur.FinitePrincipalAtlasAmbientTripleStage
+public import FLT.Mazur.FinitePrincipalAtlasAmpleFiber
 public import FLT.Mazur.FinitePrincipalAtlasBaseChangeLimit
 public import FLT.Mazur.FinitePrincipalAtlasCoherentStage
 public import FLT.Mazur.FinitePrincipalAtlasCoherentTripleStage
