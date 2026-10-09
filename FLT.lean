@@ -5280,6 +5280,7 @@ public import FLT.Mazur.WeierstrassModificationXOriginalLocalization
 public import FLT.Mazur.WeierstrassModificationXOverlap
 public import FLT.Mazur.WeierstrassModificationXPresentation
 public import FLT.Mazur.WeierstrassModificationXReesChart
+public import FLT.Mazur.WeierstrassModificationXResidueContraction
 public import FLT.Mazur.WeierstrassModificationXResidueFiber
 public import FLT.Mazur.WeierstrassModificationXResidueNodeGeometry
 public import FLT.Mazur.WeierstrassModificationXSaturation
