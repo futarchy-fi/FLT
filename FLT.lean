@@ -5133,6 +5133,7 @@ public import FLT.Mazur.ProjectiveAmbientHilbertParameter
 public import FLT.Mazur.ProjectiveChartDenominators
 public import FLT.Mazur.ProjectiveChartEvaluation
 public import FLT.Mazur.ProjectiveChartMapCompatibility
+public import FLT.Mazur.ProjectiveChartMapCompatibilityUniverse
 public import FLT.Mazur.ProjectiveChartNoetherian
 public import FLT.Mazur.ProjectiveChartPointMembership
 public import FLT.Mazur.ProjectiveChartPolynomialEquiv
