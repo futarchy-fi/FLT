@@ -2595,6 +2595,7 @@ public import FLT.Mazur.AffineGeometricRefinementData
 public import FLT.Mazur.AffineGeometricTensorCocycle
 public import FLT.Mazur.AffineGeometricTensorDatum
 public import FLT.Mazur.AffineIdealPowerExtension
+public import FLT.Mazur.AffineIdealSheafComparison
 public import FLT.Mazur.AffineImageSectionTransport
 public import FLT.Mazur.AffineIntegerModel
 public import FLT.Mazur.AffineIntersectionDiagramGluing
