@@ -6205,6 +6205,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodeCoordinates
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodeEquiv
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodeMaps
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleOverlap
+public import FLT.Mazur.WeierstrassSuccessiveXMiddleSecondNode
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleTangentSwitch
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleUnion
 public import FLT.Mazur.WeierstrassSuccessiveXMonic
