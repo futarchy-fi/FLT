@@ -3762,6 +3762,7 @@ public import FLT.Mazur.HilbertMonomialFiberBasis
 public import FLT.Mazur.HilbertPolynomialBasisCover
 public import FLT.Mazur.HilbertPolynomialBasisNaturality
 public import FLT.Mazur.HilbertPolynomialBasisOpen
+public import FLT.Mazur.HilbertPolynomialChartGluing
 public import FLT.Mazur.HilbertPolynomialQuotientBaseChange
 public import FLT.Mazur.HilbertPrincipalBaseChangeMorphism
 public import FLT.Mazur.HilbertPrincipalBaseChangeScalars
