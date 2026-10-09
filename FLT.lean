@@ -3679,6 +3679,7 @@ public import FLT.Mazur.HigherDirectImageOpenSheafification
 public import FLT.Mazur.HigherDirectImagePresheaf
 public import FLT.Mazur.HigherDirectImagePresheafRestriction
 public import FLT.Mazur.HilbertBasisDeterminant
+public import FLT.Mazur.HilbertBasisNeighborhoodCompatibility
 public import FLT.Mazur.HilbertBasisOpen
 public import FLT.Mazur.HilbertBasisOpenInvariance
 public import FLT.Mazur.HilbertBasisResidueField
