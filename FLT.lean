@@ -3546,6 +3546,7 @@ public import FLT.Mazur.FinitePolynomialEquationSeeds
 public import FLT.Mazur.FinitePolynomialStableRelations
 public import FLT.Mazur.FinitePolynomialStableStages
 public import FLT.Mazur.FinitePresentationIntegerModel
+public import FLT.Mazur.FinitePrincipalAtlasOccurrences
 public import FLT.Mazur.FinitePrincipalChartIntegerDescent
 public import FLT.Mazur.FinitePrincipalIdealPatching
 public import FLT.Mazur.FinitePrincipalTargetRefinement
