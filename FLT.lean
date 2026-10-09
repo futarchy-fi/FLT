@@ -2840,6 +2840,7 @@ public import FLT.Mazur.BinaryOpenDescent
 public import FLT.Mazur.BlowupFractionChart
 public import FLT.Mazur.BlowupFractionChartLocalization
 public import FLT.Mazur.BlowupFractionChartRatio
+public import FLT.Mazur.BlowupReesDegreeZeroMap
 public import FLT.Mazur.BlowupReesGrading
 public import FLT.Mazur.BlowupReesHomogeneous
 public import FLT.Mazur.CartesianMonoGroup
