@@ -5663,6 +5663,7 @@ public import FLT.Mazur.WeierstrassModificationXBaseChangeGenerators
 public import FLT.Mazur.WeierstrassModificationXCoefficients
 public import FLT.Mazur.WeierstrassModificationXConicFirstInverse
 public import FLT.Mazur.WeierstrassModificationXConicFirstParameter
+public import FLT.Mazur.WeierstrassModificationXConicIncidenceCharts
 public import FLT.Mazur.WeierstrassModificationXConicInverseCoordinates
 public import FLT.Mazur.WeierstrassModificationXConicParameterOrigin
 public import FLT.Mazur.WeierstrassModificationXConicSecondCoordinates
