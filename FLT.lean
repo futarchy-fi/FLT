@@ -4302,6 +4302,7 @@ public import FLT.Mazur.LinePullbackRestriction
 public import FLT.Mazur.LineSectionCanonicalRecovery
 public import FLT.Mazur.LineSectionCohomologyAnnihilation
 public import FLT.Mazur.LineSectionCohomologySurjection
+public import FLT.Mazur.LineSectionDivisorCorrespondence
 public import FLT.Mazur.LineSectionEvaluation
 public import FLT.Mazur.LineSectionGenericOpen
 public import FLT.Mazur.LineSectionTwistCoordinates
