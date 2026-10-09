@@ -3736,6 +3736,7 @@ public import FLT.Mazur.HilbertChartPointClassification
 public import FLT.Mazur.HilbertChartPointFamily
 public import FLT.Mazur.HilbertChartPointIdeal
 public import FLT.Mazur.HilbertChartQuotientBasis
+public import FLT.Mazur.HilbertChartReverseTransition
 public import FLT.Mazur.HilbertChartSpecialization
 public import FLT.Mazur.HilbertChartSpecializationEvaluation
 public import FLT.Mazur.HilbertChartStructureConstants
