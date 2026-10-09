@@ -3160,6 +3160,7 @@ public import FLT.Mazur.CurveGenus
 public import FLT.Mazur.CurveGraphPullback
 public import FLT.Mazur.CurveIdealTwistDegree
 public import FLT.Mazur.CurveLargeDegreeVanishing
+public import FLT.Mazur.CurveLineHigherVanishing
 public import FLT.Mazur.CurveLineSectionOrbits
 public import FLT.Mazur.CurveLineTensorDegree
 public import FLT.Mazur.CurveNode
