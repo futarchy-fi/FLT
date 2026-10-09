@@ -2398,6 +2398,17 @@ transport along the inverse equivalence, after equation congruence.
 Naturality of the quadratic descended coordinate maps still needs proof
 before these results yield the Legendre automorphism relations.
 
+### Combined coefficient and coordinate composition (2026-10-09)
+
+`cyclicCoordinateRingMap_comp` now computes the actual composite of two
+coordinate transports with changing coefficient rings. The coordinate
+product is D times the image of C under the second coefficient map.
+`cyclicCoordinateRingMap_return_neg` proves this composite is identity
+when the coefficient composite is identity, a₁ = a₃ = 0, and that product
+is negation. This is a conditional local composition theorem, not yet the
+involution relation for the global descended Legendre automorphisms.
+The required root-cover maps and their descent compatibilities remain open.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:

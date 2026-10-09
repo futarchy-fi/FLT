@@ -12,7 +12,10 @@ Identity and composition of the actual coefficient maps apply to explicit
 ring homomorphisms, without a fixed algebra structure on the coefficient
 rings. Coordinate-change transport commutes with these maps.
 The inverse of transport by a ring equivalence is transport by its inverse,
-after identifying the resulting Weierstrass equation.
+after identifying the resulting Weierstrass equation. Combined coefficient
+and coordinate transports obey the corresponding composition law. If the
+coefficient composite is identity and the coordinate product is negation,
+the cyclic composite is identity for equations with a₁ = a₃ = 0.
 
 These results supply coefficient compatibilities for parameter-changing
 Legendre maps. Naturality of the quadratic descended coordinate maps and
@@ -110,5 +113,88 @@ theorem ringEquivCyclicIso_inv_ringHom (e : R ≃+* S) :
     ringHomCyclicMap_equiv_return]
   exact (congrArg Over.Hom.left
     (cyclicModelCongr _ p W (ringEquiv_map_return W e)).inv_hom_id).symm
+
+theorem cyclicCoordinateRingMap_comp (f : R →+* S) (g : S →+* T)
+    (V : WeierstrassCurve S) [V.IsElliptic]
+    (U : WeierstrassCurve T) [U.IsElliptic]
+    (C : VariableChange S) (D : VariableChange T)
+    (hC : C • W.map f = V) (hD : D • V.map g = U) :
+    ((groupCyclicParameterIso p (variableChangeCongrOverIso (V.map g) U D hD)).hom.left ≫
+      ringHomCyclicMap V p g) ≫
+      ((groupCyclicParameterIso p (variableChangeCongrOverIso (W.map f) V C hC)).hom.left ≫
+        ringHomCyclicMap W p f) =
+    (groupCyclicParameterIso p (variableChangeCongrOverIso ((W.map f).map g) U
+      (D * C.map g) (by rw [mul_smul, map_variableChange, hC, hD]))).hom.left ≫
+        (cyclicModelCongr _ p _ (W.map_map f g)).hom.left ≫
+          ringHomCyclicMap W p (g.comp f) := by
+  have hc := ringHomCyclicMap_variableChange (W.map f) p g V C hC
+  have ht := congrArg (fun e => e.hom.left)
+    (variableChangeCyclic_trans ((W.map f).map g) p (V.map g) U D (C.map g)
+      (by rw [map_variableChange, hC]) hD)
+  simp only [Iso.trans_hom, Over.comp_left] at ht
+  simp only [Category.assoc]
+  rw [← Category.assoc (ringHomCyclicMap V p g), ← hc]
+  simp only [← Category.assoc]
+  rw [ht]
+  simp only [Category.assoc]
+  rw [ringHomCyclicMap_comp]
+
+theorem variableChangeCyclic_source_congr
+    (A B U : WeierstrassCurve R) [A.IsElliptic] [B.IsElliptic] [U.IsElliptic]
+    (hAB : A = B) (C : VariableChange R) (hC : C • A = U) :
+    (groupCyclicParameterIso p (variableChangeCongrOverIso A U C hC)).hom.left ≫
+      (cyclicModelCongr A p B hAB).hom.left =
+        (groupCyclicParameterIso p
+          (variableChangeCongrOverIso B U C (hAB ▸ hC))).hom.left := by
+  subst B
+  simp [cyclicModelCongr]
+
+theorem cyclicCoordinateRingMap_comp_eq (f : R →+* S) (g : S →+* T) (k : R →+* T)
+    (hk : g.comp f = k)
+    (V : WeierstrassCurve S) [V.IsElliptic]
+    (U : WeierstrassCurve T) [U.IsElliptic]
+    (C : VariableChange S) (D : VariableChange T)
+    (hC : C • W.map f = V) (hD : D • V.map g = U) :
+    ((groupCyclicParameterIso p (variableChangeCongrOverIso (V.map g) U D hD)).hom.left ≫
+      ringHomCyclicMap V p g) ≫
+      ((groupCyclicParameterIso p (variableChangeCongrOverIso (W.map f) V C hC)).hom.left ≫
+        ringHomCyclicMap W p f) =
+    (groupCyclicParameterIso p (variableChangeCongrOverIso ((W.map f).map g) U
+      (D * C.map g) (by rw [mul_smul, map_variableChange, hC, hD]))).hom.left ≫
+        (cyclicModelCongr _ p _ ((W.map_map f g).trans (congrArg W.map hk))).hom.left ≫
+          ringHomCyclicMap W p k := by
+  subst k
+  exact cyclicCoordinateRingMap_comp W p f g V U C D hC hD
+
+theorem cyclicCoordinateRingMap_return_neg (f : R →+* S) (g : S →+* R)
+    (hgf : g.comp f = RingHom.id R)
+    (V : WeierstrassCurve S) [V.IsElliptic]
+    (C : VariableChange S) (D : VariableChange R)
+    (hC : C • W.map f = V) (hD : D • V.map g = W)
+    (ha₁ : W.a₁ = 0) (ha₃ : W.a₃ = 0)
+    (hprod : D * C.map g = signCoordinateChange (-1) 0) :
+    ((groupCyclicParameterIso p (variableChangeCongrOverIso (V.map g) W D hD)).hom.left ≫
+      ringHomCyclicMap V p g) ≫
+      ((groupCyclicParameterIso p (variableChangeCongrOverIso (W.map f) V C hC)).hom.left ≫
+        ringHomCyclicMap W p f) = 𝟙 _ := by
+  have ht := cyclicCoordinateRingMap_comp_eq W p f g (RingHom.id R) hgf V W C D hC hD
+  simp only [ringHomCyclicMap_id, Category.comp_id] at ht
+  rw [variableChangeCyclic_source_congr] at ht
+  have hn : signCoordinateChange (-1 : Rˣ) 0 • W = W := by
+    have h : (W.map f).map g = W := by
+      rw [WeierstrassCurve.map_map, hgf]
+      rfl
+    rw [← hprod, mul_smul, ← h, map_variableChange, hC, hD]
+    exact h.symm
+  have he := variableChangeCyclic_congr W p W (D * C.map g)
+    (signCoordinateChange (-1) 0) (by simpa only [WeierstrassCurve.map_id] using
+      (show (D * C.map g) • W.map (RingHom.id R) = W from
+        by rw [← hgf, ← WeierstrassCurve.map_map, mul_smul, map_variableChange, hC, hD]))
+    hn hprod
+  have hz := signCoordinateCyclic_neg_one W p ha₁ ha₃ hn
+  exact ht.trans (by
+    simpa only [WeierstrassCurve.map_id, Iso.refl_hom, Over.id_left] using
+      congrArg (fun e : scalarQuotientModel W p ≅ scalarQuotientModel W p =>
+        e.hom.left) (he.trans hz))
 
 end WeierstrassCurve.CubicCharts
