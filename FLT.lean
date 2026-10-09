@@ -2848,6 +2848,7 @@ public import FLT.Mazur.BlowupReesHomogeneous
 public import FLT.Mazur.BlowupReesProjChart
 public import FLT.Mazur.BlowupReesRatio
 public import FLT.Mazur.BlowupReesRatioLocalization
+public import FLT.Mazur.BlowupReesRatioScheme
 public import FLT.Mazur.CartesianMonoGroup
 public import FLT.Mazur.CartesianMonoMonoid
 public import FLT.Mazur.CartesianOpenSectionMap
