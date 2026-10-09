@@ -5707,6 +5707,7 @@ public import FLT.Mazur.WeierstrassDividedInitialAtlasIndex
 public import FLT.Mazur.WeierstrassDividedInitialExterior
 public import FLT.Mazur.WeierstrassDividedInitialGlobalResidueNodes
 public import FLT.Mazur.WeierstrassDividedInitialGlobalTensorChart
+public import FLT.Mazur.WeierstrassDividedInitialIndexedNodeCover
 public import FLT.Mazur.WeierstrassDividedInitialTensorChart
 public import FLT.Mazur.WeierstrassDividedOlderAtlasIndex
 public import FLT.Mazur.WeierstrassDividedOlderGlobalNodeComponents
