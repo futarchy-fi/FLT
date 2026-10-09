@@ -3551,6 +3551,7 @@ public import FLT.Mazur.FiniteGroupInvariantPolynomial
 public import FLT.Mazur.FiniteGroupInvariantRing
 public import FLT.Mazur.FiniteGroupInvariantSpectrum
 public import FLT.Mazur.FiniteGroupQuotientFinite
+public import FLT.Mazur.FiniteGroupQuotientGeometricPoints
 public import FLT.Mazur.FiniteGroupQuotientPrincipalChart
 public import FLT.Mazur.FiniteIntegerModelElementRelations
 public import FLT.Mazur.FiniteIntegerModelPullbacks
