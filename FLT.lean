@@ -5427,6 +5427,7 @@ public import FLT.Mazur.SchemePullbackOverlapSquare
 public import FLT.Mazur.SchemePullbackSquare
 public import FLT.Mazur.SchemePullbackSquareComposition
 public import FLT.Mazur.SchemePullbackSquareIdentity
+public import FLT.Mazur.SchemeQuotientTensorModel
 public import FLT.Mazur.SchemeRecognitionTransport
 public import FLT.Mazur.SchemeReconstructionOverlapSquare
 public import FLT.Mazur.SchemeReducedHZeroBaseChange
