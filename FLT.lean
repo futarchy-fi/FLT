@@ -3094,6 +3094,7 @@ public import FLT.Mazur.ConstantCyclicFiniteEtale
 public import FLT.Mazur.ConstantCyclicGenerator
 public import FLT.Mazur.ConstantCyclicGroup
 public import FLT.Mazur.ConstantCyclicInclusion
+public import FLT.Mazur.ConstantCyclicRelativeGeometry
 public import FLT.Mazur.ConstantCyclicSectionClosed
 public import FLT.Mazur.ConstantCyclicSectionMap
 public import FLT.Mazur.ConstantDegree
