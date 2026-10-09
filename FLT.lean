@@ -4415,6 +4415,7 @@ public import FLT.Mazur.PrincipalOccurrenceDiagramResult
 public import FLT.Mazur.PrincipalOccurrenceDirected
 public import FLT.Mazur.PrincipalOccurrenceExistence
 public import FLT.Mazur.PrincipalOccurrenceFiniteRestrictions
+public import FLT.Mazur.PrincipalOccurrenceMixedBijections
 public import FLT.Mazur.PrincipalOccurrenceOpenEmbeddings
 public import FLT.Mazur.PrincipalOccurrencePathIsomorphisms
 public import FLT.Mazur.PrincipalOccurrenceRecoveredRestrictions
