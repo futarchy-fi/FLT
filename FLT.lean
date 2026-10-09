@@ -4422,6 +4422,7 @@ public import FLT.Mazur.PrincipalOccurrenceOpenEmbeddings
 public import FLT.Mazur.PrincipalOccurrencePathIsomorphisms
 public import FLT.Mazur.PrincipalOccurrenceRecoveredRestrictions
 public import FLT.Mazur.PrincipalOccurrenceRefinedPaths
+public import FLT.Mazur.PrincipalOccurrenceRestrictionCoherence
 public import FLT.Mazur.PrincipalOccurrenceRestrictionSquares
 public import FLT.Mazur.PrincipalOccurrenceStageFromDiagram
 public import FLT.Mazur.PrincipalOccurrenceStages
