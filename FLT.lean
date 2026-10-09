@@ -4615,6 +4615,7 @@ public import FLT.Mazur.NormalizedSectionLineBaseChange
 public import FLT.Mazur.NormalizedSectionLinePrincipalRestriction
 public import FLT.Mazur.NormalizedSectionLineSheaf
 public import FLT.Mazur.NormalizedSectionLineSheafBaseChange
+public import FLT.Mazur.NormalizedSectionLineSheafOverlap
 public import FLT.Mazur.OccurrenceDiagramCoefficients
 public import FLT.Mazur.OccurrenceMixedSourceRefinement
 public import FLT.Mazur.OccurrenceMixedSourceRepresentatives
