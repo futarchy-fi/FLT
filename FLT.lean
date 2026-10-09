@@ -6199,6 +6199,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXOverlapCompatibility
 public import FLT.Mazur.WeierstrassSuccessiveXParameterEquiv
 public import FLT.Mazur.WeierstrassSuccessiveXReesChart
 public import FLT.Mazur.WeierstrassSuccessiveXReesScheme
+public import FLT.Mazur.WeierstrassSuccessiveXResidueFiber
 public import FLT.Mazur.WeierstrassSuccessiveXSaturation
 public import FLT.Mazur.WeierstrassSuccessiveXSchemeOverlap
 public import FLT.Mazur.WeierstrassSuccessiveXSplitFiber
