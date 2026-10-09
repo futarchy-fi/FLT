@@ -5636,6 +5636,7 @@ public import FLT.Mazur.WeierstrassDividedFiniteIteration
 public import FLT.Mazur.WeierstrassDividedFiniteProper
 public import FLT.Mazur.WeierstrassDividedFiniteSmoothOpen
 public import FLT.Mazur.WeierstrassDividedFiniteTensorCharts
+public import FLT.Mazur.WeierstrassDividedFiniteTensorGeometry
 public import FLT.Mazur.WeierstrassDividedFiniteYBoundary
 public import FLT.Mazur.WeierstrassDividedFiniteYStep
 public import FLT.Mazur.WeierstrassDividedGlobalFiniteFlat
