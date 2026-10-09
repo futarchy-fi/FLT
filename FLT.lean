@@ -4397,6 +4397,7 @@ public import FLT.Mazur.LocalizedPolynomialStableStages
 public import FLT.Mazur.LocalizedSmoothFiniteFlatCartier
 public import FLT.Mazur.LocalizedSmoothLocalEquation
 public import FLT.Mazur.LocalizedTensorCancellation
+public import FLT.Mazur.LocallyFreeProjectiveQuotient
 public import FLT.Mazur.LocallyNoetherianUniversalStructureSheaf
 public import FLT.Mazur.LocallySmoothFiniteFlatCartier
 public import FLT.Mazur.LocallySmoothQuasiFiniteCartier
