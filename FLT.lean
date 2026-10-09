@@ -2582,6 +2582,7 @@ public import FLT.Mazur.AffineFiberProductOverlap
 public import FLT.Mazur.AffineFiberProductPairTransport
 public import FLT.Mazur.AffineFiberProductRefinementCocycle
 public import FLT.Mazur.AffineFiniteFreeAtlas
+public import FLT.Mazur.AffineFiniteFreeDirectedCover
 public import FLT.Mazur.AffineFiniteTypeModelSystem
 public import FLT.Mazur.AffineFpqcRefinement
 public import FLT.Mazur.AffineFreeSheafCoordinateNormalization
