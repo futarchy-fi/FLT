@@ -17,7 +17,8 @@ result. These statements apply to enlarged, nonaffine exteriors as well.
 @[expose] public noncomputable section
 open AlgebraicGeometry CategoryTheory CategoryTheory.Limits
 namespace FLT.Mazur.SchemeOpenPushout
-variable {O E X : Scheme} (e : O ⟶ E) (x : O ⟶ X)
+universe u
+variable {O E X : Scheme.{u}} (e : O ⟶ E) (x : O ⟶ X)
   [IsOpenImmersion e] [IsOpenImmersion x]
 
 instance inl_isOpenImmersion : IsOpenImmersion (pushout.inl e x) := by
@@ -29,7 +30,7 @@ instance inr_isOpenImmersion : IsOpenImmersion (pushout.inr e x) := by
   infer_instance
 
 /-- Every point of an open gluing lies in one of its two original charts. -/
-theorem charts_cover (z : (pushout e x : Scheme)) :
+theorem charts_cover (z : (pushout e x : Scheme.{u})) :
     (∃ a, pushout.inl e x a = z) ∨ ∃ a, pushout.inr e x a = z := by
   obtain ⟨i, a, ha⟩ := Scheme.IsLocallyDirected.ι_jointly_surjective (span e x) z
   cases i with
