@@ -5742,6 +5742,7 @@ public import FLT.Mazur.SectionGradedSum
 public import FLT.Mazur.SectionGradedUnit
 public import FLT.Mazur.SectionKernelLocal
 public import FLT.Mazur.SectionLineChartOverlap
+public import FLT.Mazur.SectionLinePointBaseChange
 public import FLT.Mazur.SectionPowerGluing
 public import FLT.Mazur.SectionProjectiveFiniteNeighborhood
 public import FLT.Mazur.SectionProjectiveImmersion
