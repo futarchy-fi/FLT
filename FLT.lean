@@ -5761,6 +5761,7 @@ public import FLT.Mazur.WeierstrassModificationXFullNodeEquiv
 public import FLT.Mazur.WeierstrassModificationXFullNodeInverseCoordinates
 public import FLT.Mazur.WeierstrassModificationXFullNodeOpen
 public import FLT.Mazur.WeierstrassModificationXFullNodeOrigin
+public import FLT.Mazur.WeierstrassModificationXFullSecondNode
 public import FLT.Mazur.WeierstrassModificationXGenerators
 public import FLT.Mazur.WeierstrassModificationXIncidenceRegular
 public import FLT.Mazur.WeierstrassModificationXLocalization
