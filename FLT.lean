@@ -5200,6 +5200,7 @@ public import FLT.Mazur.WeierstrassModificationReesContraction
 public import FLT.Mazur.WeierstrassModificationReesCoordinates
 public import FLT.Mazur.WeierstrassModificationReesGluing
 public import FLT.Mazur.WeierstrassModificationReesOverlap
+public import FLT.Mazur.WeierstrassModificationReesProjContraction
 public import FLT.Mazur.WeierstrassModificationReesProjGluing
 public import FLT.Mazur.WeierstrassModificationReesProjOverlap
 public import FLT.Mazur.WeierstrassModificationReesProjYHorizontal
