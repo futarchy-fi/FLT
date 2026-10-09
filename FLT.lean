@@ -5348,6 +5348,7 @@ public import FLT.Mazur.SchemeRelativeNilpotentSections
 public import FLT.Mazur.SchemeSectionFamilyProduct
 public import FLT.Mazur.SchemeSourceTestOverlapRecognition
 public import FLT.Mazur.SchemeTripleOverlap
+public import FLT.Mazur.SchemeUnchangedOpen
 public import FLT.Mazur.SealedLineRestriction
 public import FLT.Mazur.SealedLineRestrictionSections
 public import FLT.Mazur.SectionBaseLocalization
