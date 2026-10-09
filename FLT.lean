@@ -3070,6 +3070,7 @@ public import FLT.Mazur.CompactOpenAmbientUnitDescent
 public import FLT.Mazur.CompactOpenSectionDescent
 public import FLT.Mazur.CompactOpenUnitDescent
 public import FLT.Mazur.CompactSchemeIntegerDescent
+public import FLT.Mazur.CompatibleSubgroupIso
 public import FLT.Mazur.ConnectedClosedFiberThickening
 public import FLT.Mazur.ConnectedFiberGeneralization
 public import FLT.Mazur.ConnectedFiberPrimeStratum
