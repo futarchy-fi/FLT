@@ -3057,6 +3057,7 @@ public import FLT.Mazur.CommonModelEventualEquality
 public import FLT.Mazur.CommonRelationIntegerModel
 public import FLT.Mazur.CommutativeIntegerModelPullbackDescent
 public import FLT.Mazur.CompactOpenAffineLimit
+public import FLT.Mazur.CompactOpenUnitDescent
 public import FLT.Mazur.CompactSchemeIntegerDescent
 public import FLT.Mazur.ConnectedClosedFiberThickening
 public import FLT.Mazur.ConnectedFiberGeneralization
