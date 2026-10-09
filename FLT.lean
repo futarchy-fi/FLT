@@ -5227,6 +5227,7 @@ public import FLT.Mazur.ProjectiveTwistVanishing
 public import FLT.Mazur.ProjectiveTwistedPresentation
 public import FLT.Mazur.ProjectiveTwistingSheaf
 public import FLT.Mazur.ProjectiveTwistingSheafTensor
+public import FLT.Mazur.ProjectiveUnitChartEvaluation
 public import FLT.Mazur.ProperAmpleConverse
 public import FLT.Mazur.ProperAmpleFiberApproximation
 public import FLT.Mazur.ProperAmpleFiberModel
