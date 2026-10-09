@@ -3806,6 +3806,7 @@ public import FLT.Mazur.HilbertMonomialChartCover
 public import FLT.Mazur.HilbertMonomialFiberBasis
 public import FLT.Mazur.HilbertMonomialPrincipalSpecCover
 public import FLT.Mazur.HilbertOpenAmbientBaseChange
+public import FLT.Mazur.HilbertOpenAmbientCartesian
 public import FLT.Mazur.HilbertOpenAmbientClassification
 public import FLT.Mazur.HilbertOpenAmbientFamilies
 public import FLT.Mazur.HilbertOpenAmbientNaturality
