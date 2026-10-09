@@ -5400,6 +5400,7 @@ public import FLT.Mazur.SegreChartQuotient
 public import FLT.Mazur.SegreClosedImmersion
 public import FLT.Mazur.SegreSchemeMorphism
 public import FLT.Mazur.SeparatedOpenCover
+public import FLT.Mazur.SeparatedOverlapClosedComparison
 public import FLT.Mazur.SeparatedOverlapPullback
 public import FLT.Mazur.SequentialCechLocalization
 public import FLT.Mazur.SequentialCochainBoundary
