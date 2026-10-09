@@ -5111,6 +5111,7 @@ public import FLT.Mazur.RelativeIdealFamilies
 public import FLT.Mazur.RelativeIdealFamilyCover
 public import FLT.Mazur.RelativeIdealFamilyIsoCoherence
 public import FLT.Mazur.RelativeIdealFamilyIsomorphism
+public import FLT.Mazur.RelativeIdealFamilySupportOpen
 public import FLT.Mazur.RelativeIdealOpenExtension
 public import FLT.Mazur.RelativeIdealSupportRange
 public import FLT.Mazur.RelativeIdealSupportedRestriction
