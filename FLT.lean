@@ -4544,6 +4544,8 @@ public import FLT.Mazur.OrderedCurveDivisorPullback
 public import FLT.Mazur.OrderedCurveDivisorRank
 public import FLT.Mazur.OrderedCurvePermutation
 public import FLT.Mazur.OrderedCurvePower
+public import FLT.Mazur.OrderedRelativeIdealBaseChange
+public import FLT.Mazur.OrderedRelativeIdealFamily
 public import FLT.Mazur.OverCoproductModuleSections
 public import FLT.Mazur.OverPoints
 public import FLT.Mazur.OverPullbackCoherence
