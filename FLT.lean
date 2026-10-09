@@ -4117,6 +4117,7 @@ public import FLT.Mazur.IntegerModelRelationDescent
 public import FLT.Mazur.IntegerModelSquareComparison
 public import FLT.Mazur.IntegerModelSurjectiveDescent
 public import FLT.Mazur.IntegerModelTransition
+public import FLT.Mazur.IntegralAlgebraicallyClosedLifting
 public import FLT.Mazur.IntegralBase
 public import FLT.Mazur.IntegralClosedSupport
 public import FLT.Mazur.IntegralDimension
