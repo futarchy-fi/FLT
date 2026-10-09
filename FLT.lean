@@ -6180,6 +6180,7 @@ public import FLT.Mazur.WeierstrassSuccessiveScaleReesChart
 public import FLT.Mazur.WeierstrassSuccessiveScaleReesScheme
 public import FLT.Mazur.WeierstrassSuccessiveXAlgebra
 public import FLT.Mazur.WeierstrassSuccessiveXBaseChange
+public import FLT.Mazur.WeierstrassSuccessiveXBaseChangeCoordinates
 public import FLT.Mazur.WeierstrassSuccessiveXCoefficients
 public import FLT.Mazur.WeierstrassSuccessiveXContraction
 public import FLT.Mazur.WeierstrassSuccessiveXDepthComparison
