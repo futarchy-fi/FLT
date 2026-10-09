@@ -6179,6 +6179,7 @@ public import FLT.Mazur.WeierstrassSuccessiveScaleFractions
 public import FLT.Mazur.WeierstrassSuccessiveScaleReesChart
 public import FLT.Mazur.WeierstrassSuccessiveScaleReesScheme
 public import FLT.Mazur.WeierstrassSuccessiveXAlgebra
+public import FLT.Mazur.WeierstrassSuccessiveXCoefficients
 public import FLT.Mazur.WeierstrassSuccessiveXContraction
 public import FLT.Mazur.WeierstrassSuccessiveXDepthComparison
 public import FLT.Mazur.WeierstrassSuccessiveXFlat
