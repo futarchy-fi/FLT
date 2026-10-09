@@ -4993,6 +4993,7 @@ public import FLT.Mazur.ProperLineSheafFinitePresentationEnvelope
 public import FLT.Mazur.ProperLocalAmpleFiberGenerators
 public import FLT.Mazur.ProperLocalFiberCover
 public import FLT.Mazur.ProperOnlyAmpleFiberNeighborhood
+public import FLT.Mazur.ProperOnlyRelativeAmpleFibers
 public import FLT.Mazur.ProperPointExtension
 public import FLT.Mazur.ProperPointedLineSheafDescent
 public import FLT.Mazur.ProperRelativeEvaluationLocus
