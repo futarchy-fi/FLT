@@ -4700,6 +4700,7 @@ public import FLT.Mazur.PrincipalOccurrenceCommonIdentities
 public import FLT.Mazur.PrincipalOccurrenceCommonPatchComparison
 public import FLT.Mazur.PrincipalOccurrenceCommonPatchRoutes
 public import FLT.Mazur.PrincipalOccurrenceCommonRecovery
+public import FLT.Mazur.PrincipalOccurrenceCommonTransition
 public import FLT.Mazur.PrincipalOccurrenceCommonTripleLift
 public import FLT.Mazur.PrincipalOccurrenceCommonUnion
 public import FLT.Mazur.PrincipalOccurrenceComparisonCancellation
