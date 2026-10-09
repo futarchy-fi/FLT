@@ -5317,6 +5317,7 @@ public import FLT.Mazur.SchemeFiniteGroupInvariantPrincipal
 public import FLT.Mazur.SchemeFiniteGroupPrincipalComparison
 public import FLT.Mazur.SchemeFiniteGroupPrincipalQuotient
 public import FLT.Mazur.SchemeFiniteGroupQuotient
+public import FLT.Mazur.SchemeFiniteGroupQuotientEpi
 public import FLT.Mazur.SchemeFiniteGroupQuotientIso
 public import FLT.Mazur.SchemeFiniteGroupQuotientMaps
 public import FLT.Mazur.SchemeFiniteGroupQuotientOpenEmbedding
