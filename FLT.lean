@@ -6192,6 +6192,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXHorizontalLocalization
 public import FLT.Mazur.WeierstrassSuccessiveXHorizontalMaps
 public import FLT.Mazur.WeierstrassSuccessiveXHorizontalScheme
 public import FLT.Mazur.WeierstrassSuccessiveXLocalization
+public import FLT.Mazur.WeierstrassSuccessiveXMiddleConic
 public import FLT.Mazur.WeierstrassSuccessiveXMonic
 public import FLT.Mazur.WeierstrassSuccessiveXMonicComparison
 public import FLT.Mazur.WeierstrassSuccessiveXOverlap
