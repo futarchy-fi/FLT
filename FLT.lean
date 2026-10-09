@@ -4659,6 +4659,7 @@ public import FLT.Mazur.PrincipalModelBaseChange
 public import FLT.Mazur.PrincipalOccurrenceActualAtlasEquations
 public import FLT.Mazur.PrincipalOccurrenceActualCoverRoutes
 public import FLT.Mazur.PrincipalOccurrenceAllAtlasComparisons
+public import FLT.Mazur.PrincipalOccurrenceAmbientComparisons
 public import FLT.Mazur.PrincipalOccurrenceAmbientIndex
 public import FLT.Mazur.PrincipalOccurrenceAmbientSquares
 public import FLT.Mazur.PrincipalOccurrenceAtlasComparisons
