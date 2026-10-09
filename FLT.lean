@@ -2725,6 +2725,7 @@ public import FLT.Mazur.AmpleChartGeneratorRatios
 public import FLT.Mazur.AmpleChartSectionExtension
 public import FLT.Mazur.AmpleCoherentVanishing
 public import FLT.Mazur.AmpleCommonDegree
+public import FLT.Mazur.AmpleCyclicLevel
 public import FLT.Mazur.AmpleFiberAffineNeighborhood
 public import FLT.Mazur.AmpleFiberBaseChange
 public import FLT.Mazur.AmpleFiberBaseIso
