@@ -3550,6 +3550,7 @@ public import FLT.Mazur.FinitePrincipalAtlasCoordinates
 public import FLT.Mazur.FinitePrincipalAtlasOccurrences
 public import FLT.Mazur.FinitePrincipalAtlasOriginalCovers
 public import FLT.Mazur.FinitePrincipalAtlasTargetCovers
+public import FLT.Mazur.FinitePrincipalAtlasTargetGluing
 public import FLT.Mazur.FinitePrincipalChartIntegerDescent
 public import FLT.Mazur.FinitePrincipalIdealPatching
 public import FLT.Mazur.FinitePrincipalTargetRefinement
