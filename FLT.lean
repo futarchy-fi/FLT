@@ -3673,6 +3673,7 @@ public import FLT.Mazur.FiniteTypePrincipalMaps
 public import FLT.Mazur.FiniteTypePrincipalPresentation
 public import FLT.Mazur.FiniteTypePrincipalSurjectiveLifts
 public import FLT.Mazur.FiniteTypeRelationPresentation
+public import FLT.Mazur.FinitelyPresentedImmersedProperCover
 public import FLT.Mazur.FinitelyPresentedIntersectionCocycleModel
 public import FLT.Mazur.FinitelyPresentedLineSheafDescent
 public import FLT.Mazur.FixedModelElementLifts
