@@ -5640,6 +5640,7 @@ public import FLT.Mazur.WeierstrassDilatationMorphism
 public import FLT.Mazur.WeierstrassDilatationParameterCongruence
 public import FLT.Mazur.WeierstrassDilatationReesChart
 public import FLT.Mazur.WeierstrassDilatationRefinement
+public import FLT.Mazur.WeierstrassDilatationResidueBoundaryFunctions
 public import FLT.Mazur.WeierstrassDilatationResidueCoordinates
 public import FLT.Mazur.WeierstrassDilatationResidueDepth
 public import FLT.Mazur.WeierstrassDilatationResidueFiber
