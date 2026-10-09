@@ -2731,6 +2731,7 @@ public import FLT.Mazur.AmbientHilbertPairTransitions
 public import FLT.Mazur.AmbientHilbertTripleIntersection
 public import FLT.Mazur.AmbientHilbertTripleRoutes
 public import FLT.Mazur.AmbientHilbertUniversalCover
+public import FLT.Mazur.AmbientHilbertUniversalPairCompatibility
 public import FLT.Mazur.AmbientQuotientRelativeBaseChange
 public import FLT.Mazur.AmbientQuotientRelativeSpace
 public import FLT.Mazur.AmbientQuotientSchemeFamilies
