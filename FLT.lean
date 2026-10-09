@@ -4441,6 +4441,7 @@ public import FLT.Mazur.PrincipalOccurrenceCrossChartTriples
 public import FLT.Mazur.PrincipalOccurrenceCrossEquationRefinement
 public import FLT.Mazur.PrincipalOccurrenceCrossNaturality
 public import FLT.Mazur.PrincipalOccurrenceCrossQuotientCoordinates
+public import FLT.Mazur.PrincipalOccurrenceCrossTransitionCoordinates
 public import FLT.Mazur.PrincipalOccurrenceDiagramCoordinates
 public import FLT.Mazur.PrincipalOccurrenceDiagramEdges
 public import FLT.Mazur.PrincipalOccurrenceDiagramFiniteRestrictions
