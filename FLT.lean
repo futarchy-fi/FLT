@@ -5751,6 +5751,7 @@ public import FLT.Mazur.WeierstrassIntegralCoefficientMap
 public import FLT.Mazur.WeierstrassIntegralCurveGluing
 public import FLT.Mazur.WeierstrassIntegralCurveMorphisms
 public import FLT.Mazur.WeierstrassIntegralCurveProduct
+public import FLT.Mazur.WeierstrassIntegralCurvePushout
 public import FLT.Mazur.WeierstrassIntegralCurveTwoChartCover
 public import FLT.Mazur.WeierstrassIntegralDomain
 public import FLT.Mazur.WeierstrassIntegralFaithfullyFlat
