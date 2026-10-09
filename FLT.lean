@@ -4407,6 +4407,7 @@ public import FLT.Mazur.PrincipalOccurrenceCoordinateChanges
 public import FLT.Mazur.PrincipalOccurrenceDiagramCoordinates
 public import FLT.Mazur.PrincipalOccurrenceDiagramEdges
 public import FLT.Mazur.PrincipalOccurrenceDiagramFiniteRestrictions
+public import FLT.Mazur.PrincipalOccurrenceDiagramRefinement
 public import FLT.Mazur.PrincipalOccurrenceDiagramRestrictions
 public import FLT.Mazur.PrincipalOccurrenceDiagramResult
 public import FLT.Mazur.PrincipalOccurrenceDirected
