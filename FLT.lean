@@ -5092,6 +5092,7 @@ public import FLT.Mazur.ReducedCurveLineTensorDegree
 public import FLT.Mazur.ReducedCurvePicardDegree
 public import FLT.Mazur.ReducedDenseRestriction
 public import FLT.Mazur.ReducedFiberBasis
+public import FLT.Mazur.ReducedGeometricFiberFlat
 public import FLT.Mazur.ReducedLocalConstantFiberRank
 public import FLT.Mazur.ReesAffineModel
 public import FLT.Mazur.ReesAlgebraBaseChange
