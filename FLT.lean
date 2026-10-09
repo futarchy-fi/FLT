@@ -4433,6 +4433,7 @@ public import FLT.Mazur.OpenImmersionSectionComparison
 public import FLT.Mazur.OpenIrreducibleComponent
 public import FLT.Mazur.OpenModuleDirectImageCohomology
 public import FLT.Mazur.OpenModuleSectionScalars
+public import FLT.Mazur.OpenSchemeParameters
 public import FLT.Mazur.OpenSheafCohomology
 public import FLT.Mazur.OpenSheafCohomologyRestriction
 public import FLT.Mazur.OpenSheafExtensionExact
