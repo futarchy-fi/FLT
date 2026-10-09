@@ -5113,6 +5113,7 @@ public import FLT.Mazur.RelativeDirectImageForgetting
 public import FLT.Mazur.RelativeDirectImageOpenResolution
 public import FLT.Mazur.RelativeFiberMorphism
 public import FLT.Mazur.RelativeJetSmoothObstruction
+public import FLT.Mazur.RelativeMarkingSections
 public import FLT.Mazur.RelativePicardBaseChangeGeometry
 public import FLT.Mazur.RelativePicardFppfBaseChange
 public import FLT.Mazur.RelativePicardFppfComparison
