@@ -2974,6 +2974,7 @@ public import FLT.Mazur.ClosedDescentOverlapCoherence
 public import FLT.Mazur.ClosedDirectImageAcyclic
 public import FLT.Mazur.ClosedDirectImageComposition
 public import FLT.Mazur.ClosedFiberTensorExactness
+public import FLT.Mazur.ClosedImmersionCartesianCover
 public import FLT.Mazur.ClosedImmersionModulePushforward
 public import FLT.Mazur.ClosedLineProjectionFormula
 public import FLT.Mazur.ClosedModuleDescent
