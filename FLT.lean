@@ -3780,6 +3780,7 @@ public import FLT.Mazur.HilbertPolynomialAmbientOverlap
 public import FLT.Mazur.HilbertPolynomialBasisCover
 public import FLT.Mazur.HilbertPolynomialBasisNaturality
 public import FLT.Mazur.HilbertPolynomialBasisOpen
+public import FLT.Mazur.HilbertPolynomialChartDegree
 public import FLT.Mazur.HilbertPolynomialChartGluing
 public import FLT.Mazur.HilbertPolynomialClosedFamilyComparison
 public import FLT.Mazur.HilbertPolynomialFamilyAmbient
