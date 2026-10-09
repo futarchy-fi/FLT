@@ -83,3 +83,47 @@ The atlas/quotient foundation is not charged to the C1/C2 application budget.
 Track D's local arithmetic and G2's Picard/Jacobian constructions stay with their
 existing workers. The interrupted Picard/arithmetic files in this worktree are
 outside this split and must not be silently counted as G1-C progress.
+
+## Implemented affine foundation and remaining gate
+
+Checked 2026-10-09: FQ1--FQ6's affine results are implemented in the new
+`FiniteGroup*` and `InvariantLocalization*` modules. In particular:
+
+- `FiniteGroupAffineQuotient.existsUnique_affine_desc` constructs descent to
+  spectra; it does not yet prove the universal property for arbitrary schemes.
+- `FiniteGroupQuotientPrincipalChart.principalQuotientOpenIso` identifies actual
+  principal quotient opens, with the coordinate-map and structure-map comparisons.
+- `FiniteGroupInvariantOpens.exists_invariant_basicOpen` constructs invariant
+  principal neighborhoods inside invariant opens of an **already affine** scheme.
+- `FiniteGroupQuotientGeometricPoints.fieldPointMap_bijective` and
+  `FiniteGroupQuotientSchemePoints` classify actual algebraically closed points.
+  This includes stabilizers and arbitrary characteristic for affine actions.
+
+These names are module-qualified here; the declarations share the namespace
+`FLT.Mazur.FiniteGroupQuotient`. Each module is at most 240 lines and was built,
+linted individually, and audited for only the three standard axioms. Validation
+logs and the reproducible manifest remain outside the tracked source directories.
+
+The next missing theorem is [01ZY](https://stacks.math.columbia.edu/tag/01ZY),
+Lemma 28.30.5: every finite set in a scheme with an ample invertible sheaf lies
+in a common affine open. `VeryAmpleAffineSections` supplies individual affine
+neighborhoods, not one affine neighborhood of a whole orbit. The required bridge
+is not obtained by intersecting an arbitrary affine cover of the points.
+
+Split FQ7 further before the global gluing step:
+
+1. Homogeneous prime avoidance, Stacks [00JS](https://stacks.math.columbia.edu/tag/00JS),
+   Lemma 10.57.6, for finitely many homogeneous primes and a homogeneous ideal.
+2. Use it to prove 01ZY for locally closed subschemes of Proj, retaining an actual
+   affine basic open that contains the whole finite set and avoids the boundary.
+3. Reuse `SectionGradedProjOfAmple.isOpenImmersion` to transfer this to schemes
+   with the existing ample line-bundle predicate.
+4. For a finite group action, intersect the translates of the common affine
+   neighborhood to obtain a stable affine neighborhood; prove affineness using
+   separatedness and prove that it still contains the orbit.
+
+FQ8 must then construct the action on each affine chart's coordinate ring,
+compare restrictions on invariant principal overlaps, prove the cocycle, and
+apply scheme gluing. FQ9 extends descent to arbitrary scheme targets and proves
+flat base change. None of those global theorems, or C1--C8, is claimed here.
+The specified tags 07S7/07S9 cannot discharge these gaps.
