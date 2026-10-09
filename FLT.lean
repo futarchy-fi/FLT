@@ -4994,6 +4994,7 @@ public import FLT.Mazur.ProperSmoothLineRigidity
 public import FLT.Mazur.ProperSmoothPointedLineSheafDescent
 public import FLT.Mazur.ProperSmoothStructureSheaf
 public import FLT.Mazur.ProperStageBaseChangeLimit
+public import FLT.Mazur.ProperStageResidueFiberLimit
 public import FLT.Mazur.ProperStalkExtension
 public import FLT.Mazur.PuncturedNodeRestrictionComparison
 public import FLT.Mazur.PushforwardCech
