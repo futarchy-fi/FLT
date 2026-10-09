@@ -3569,6 +3569,7 @@ public import FLT.Mazur.FinitePrincipalAtlasPairUnion
 public import FLT.Mazur.FinitePrincipalAtlasPairUnionRecovery
 public import FLT.Mazur.FinitePrincipalAtlasProjection
 public import FLT.Mazur.FinitePrincipalAtlasProjectionCartesian
+public import FLT.Mazur.FinitePrincipalAtlasProjectionClosed
 public import FLT.Mazur.FinitePrincipalAtlasTargetCovers
 public import FLT.Mazur.FinitePrincipalAtlasTargetGluing
 public import FLT.Mazur.FinitePrincipalAtlasTripleComparison
