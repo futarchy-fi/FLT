@@ -3736,6 +3736,7 @@ public import FLT.Mazur.HilbertAmbientSchemeClassification
 public import FLT.Mazur.HilbertAmbientSchemeFactorization
 public import FLT.Mazur.HilbertAmbientSchemeNaturality
 public import FLT.Mazur.HilbertAmbientSchemeParameters
+public import FLT.Mazur.HilbertAmbientSupportFactorization
 public import FLT.Mazur.HilbertAmbientUniversalFamily
 public import FLT.Mazur.HilbertBasisAffineClassification
 public import FLT.Mazur.HilbertBasisAffineFactorization
