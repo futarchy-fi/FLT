@@ -5045,6 +5045,7 @@ public import FLT.Mazur.RelativeDirectImageComposition
 public import FLT.Mazur.RelativeDirectImageForgetting
 public import FLT.Mazur.RelativeDirectImageOpenResolution
 public import FLT.Mazur.RelativeFiberMorphism
+public import FLT.Mazur.RelativeIdealAmbientHom
 public import FLT.Mazur.RelativeIdealFamilies
 public import FLT.Mazur.RelativeIdealFamilyIsoCoherence
 public import FLT.Mazur.RelativeIdealFamilyIsomorphism
