@@ -2747,6 +2747,7 @@ public import FLT.Mazur.AmbientHilbertSupportedClassification
 public import FLT.Mazur.AmbientHilbertSupportedCoverGluing
 public import FLT.Mazur.AmbientHilbertTripleIntersection
 public import FLT.Mazur.AmbientHilbertTripleRoutes
+public import FLT.Mazur.AmbientHilbertUniversalCartier
 public import FLT.Mazur.AmbientHilbertUniversalCover
 public import FLT.Mazur.AmbientHilbertUniversalFamily
 public import FLT.Mazur.AmbientHilbertUniversalFiberCartier
