@@ -3723,6 +3723,7 @@ public import FLT.Mazur.HilbertAmbientClosedParameter
 public import FLT.Mazur.HilbertAmbientContainmentTest
 public import FLT.Mazur.HilbertAmbientFactorization
 public import FLT.Mazur.HilbertAmbientParameterChart
+public import FLT.Mazur.HilbertAmbientParameterCover
 public import FLT.Mazur.HilbertAmbientQuotientEvaluation
 public import FLT.Mazur.HilbertAmbientRelationImage
 public import FLT.Mazur.HilbertAmbientRelationOverlap
