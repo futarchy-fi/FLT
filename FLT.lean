@@ -3731,6 +3731,7 @@ public import FLT.Mazur.HilbertChartGeneratorMap
 public import FLT.Mazur.HilbertChartIdentityIdeal
 public import FLT.Mazur.HilbertChartIsomorphismInvariance
 public import FLT.Mazur.HilbertChartMultiplication
+public import FLT.Mazur.HilbertChartOverlapIso
 public import FLT.Mazur.HilbertChartParameterRecovery
 public import FLT.Mazur.HilbertChartPointClassification
 public import FLT.Mazur.HilbertChartPointFamily
