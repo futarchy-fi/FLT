@@ -6195,6 +6195,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXMonic
 public import FLT.Mazur.WeierstrassSuccessiveXMonicComparison
 public import FLT.Mazur.WeierstrassSuccessiveXOverlap
 public import FLT.Mazur.WeierstrassSuccessiveXOverlapCompatibility
+public import FLT.Mazur.WeierstrassSuccessiveXParameterEquiv
 public import FLT.Mazur.WeierstrassSuccessiveXReesChart
 public import FLT.Mazur.WeierstrassSuccessiveXReesScheme
 public import FLT.Mazur.WeierstrassSuccessiveXSaturation
