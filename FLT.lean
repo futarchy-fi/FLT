@@ -6020,6 +6020,7 @@ public import FLT.Mazur.WeierstrassModificationXResidueTensorFunctions
 public import FLT.Mazur.WeierstrassModificationXSaturation
 public import FLT.Mazur.WeierstrassModificationXScaleOneEquiv
 public import FLT.Mazur.WeierstrassModificationXScaleOneMaps
+public import FLT.Mazur.WeierstrassModificationXScaleOneTensor
 public import FLT.Mazur.WeierstrassModificationXSlopeOpen
 public import FLT.Mazur.WeierstrassModificationXTotalTransform
 public import FLT.Mazur.WeierstrassModificationYAlgebra
