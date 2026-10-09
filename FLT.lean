@@ -4707,6 +4707,7 @@ public import FLT.Mazur.PrincipalOccurrencePatchImageIsomorphisms
 public import FLT.Mazur.PrincipalOccurrencePatchImageRoutes
 public import FLT.Mazur.PrincipalOccurrencePatchNaturality
 public import FLT.Mazur.PrincipalOccurrencePatchRefinement
+public import FLT.Mazur.PrincipalOccurrencePatchReversal
 public import FLT.Mazur.PrincipalOccurrencePathIsomorphisms
 public import FLT.Mazur.PrincipalOccurrenceRecoveredRestrictions
 public import FLT.Mazur.PrincipalOccurrenceRefinedPaths
