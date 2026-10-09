@@ -4008,6 +4008,7 @@ public import FLT.Mazur.IdealPowerScalarLift
 public import FLT.Mazur.IdealPowerVanishingTransfer
 public import FLT.Mazur.IdealQuotientExact
 public import FLT.Mazur.IdealQuotientSectionLift
+public import FLT.Mazur.IdealSheafOpenCoverDetection
 public import FLT.Mazur.IdealTwistCohomologyStabilization
 public import FLT.Mazur.IdealTwistCohomologySystem
 public import FLT.Mazur.IdealTwistCohomologyVanishing
