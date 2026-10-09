@@ -145,21 +145,57 @@ All these modules remain at most 240 lines.
 Module names above are under `FLT/Mazur/`; namespaces are documented in source.
 FQ7 is now proved. The D and G2 lanes remain outside this work.
 
+## Global quotient and affine-target descent implemented in W175
+
+Checked 2026-10-09 against the declarations below. Reproduce the source hashes,
+line caps, bounded probe logs, foreground builds, individual lints, declaration
+axiom audits, main ancestry, and root build with `python3 W175_RECHECK.py` in
+this worktree. The local handoff and manifest stay outside tracked source paths.
+
+- `SchemeFiniteGroupQuotientIso.quotientIso` constructs the quotient isomorphism
+  of an actual equivariant scheme isomorphism, including its inverse.
+- `SchemeFiniteGroupPrincipalComparison.principalChartIso` identifies inverse-image
+  principal charts inside the image of an open immersion. The comparison is
+  equivariant and its quotient commutes with the ambient quotient maps.
+- `SchemeFiniteGroupQuotientOpenImmersion.quotientHom_isOpenImmersion` proves the
+  general scheme-level overlap assertion by a cover of invariant principal opens.
+- `StableAffineQuotientDiagram` constructs the diagram of all actual invariant
+  affine opens and their invariant-coordinate quotients. Its arrows are open immersions.
+- `StableAffineQuotientOverlap.diagram_isLocallyDirected` proves the overlap
+  condition using actual orbit fibers and affine intersections on a separated scheme.
+- `StableAffineQuotientGluing.glueData` applies scheme gluing to that proved diagram;
+  `glueData_cocycle` is the full scheme pullback cocycle. `glued`, `chartMap`, and
+  `gluedCover` give the actual quotient scheme, chart maps, and open cover.
+- `StableAffineQuotientMap.map` glues the original quotient maps to an invariant
+  surjective global morphism. `AmpleFiniteGroupQuotient.ample_charts_cover` supplies
+  coverage from the established ample line bundle, and `ampleMap` applies it.
+- `StableAffineQuotientChartPreimage.map_preimage_chart` identifies every original
+  affine chart as the inverse image of its quotient chart.
+- `StableAffineQuotientCartesian.chart_isPullback` proves the chart squares are
+  cartesian. `map_integral`, `map_isQuotientMap`, and `map_eq_iff_orbit` prove
+  integrality, the quotient topology, and exact orbit fibers of the global map.
+- `SchemeFiniteGroupAffineDescent.existsUnique_affine_desc` transports coordinate
+  descent to actual affine source and target schemes.
+- `StableAffineQuotientAffineDescent.existsUnique_affineDesc` constructs unique
+  descent from the glued quotient to any affine target, using an actual cocone
+  of the unique local descents. This does not yet handle arbitrary scheme targets.
+
+These are module-qualified descriptions; the source specifies the shared namespaces.
+FQ8's overlap and scheme gluing construction is now proved for separated schemes
+with the established ample line bundle. FQ9 remains open beyond affine targets.
+
 ## Next missing proof and ordered remaining work
 
-1. Upgrade the general topological quotient overlap embedding to a scheme open
-   immersion. Cover the stable affine overlap by invariant principal opens using
-   `exists_invariant_principal`; identify the restrictions via the proved
-   `principalQuotientMap_isOpenImmersion` and functorial quotient maps.
-   The arbitrary equivariant-isomorphism comparison and its compatibility with
-   the chosen principal restrictions still need proofs; do not assume stalk maps.
-2. Construct the quotient overlap identifications and cocycles as actual scheme
-   morphisms, assemble scheme gluing data, glue the quotient, and construct the
-   global invariant quotient map. The existing affine cover has no glued quotient.
-3. Prove descent to arbitrary scheme targets and flat base change (FQ9).
-4. Construct the actual rigidified auxiliary level atlas and relation, then C2.
+1. Extend the quotient universal property to arbitrary scheme targets (FQ9).
+   Cover the target by affine opens and use stable inverse images and invariant
+   principal neighborhoods in affine source charts. Construct the local descents,
+   prove their agreement as scheme morphisms, and glue them. The global affine-target
+   theorem does not alone provide uniqueness for maps to arbitrary schemes.
+2. Prove flat base change for the global quotient, using fixed-ring base change,
+   the constructed chart squares, and scheme-level comparison maps (FQ9).
+3. Construct the actual rigidified auxiliary level atlas and relation, then C2.
    Prove C3--C8, including boundary points, characteristic 3, geometric integrality,
-   and the actual prime-torsion and cusp comparisons.
+   and the actual prime-torsion and cusp comparisons. D and G2 stay with their workers.
 
 The source still declares `Mazur_statement` in `FLT/Assumptions/Mazur.lean` and
 uses it in `FLT/MazurW.lean`; reproduce with `git grep -n Mazur_statement -- FLT`.
