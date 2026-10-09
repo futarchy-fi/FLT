@@ -4276,6 +4276,7 @@ public import FLT.Mazur.LinePowerEvaluationDescent
 public import FLT.Mazur.LinePowerSectionBaseChange
 public import FLT.Mazur.LinePullbackRestriction
 public import FLT.Mazur.LineSectionCohomologyAnnihilation
+public import FLT.Mazur.LineSectionCohomologySurjection
 public import FLT.Mazur.LineSectionGenericOpen
 public import FLT.Mazur.LineSectionTwistCoordinates
 public import FLT.Mazur.LineSectionTwistRestriction
