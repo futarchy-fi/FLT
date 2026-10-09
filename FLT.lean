@@ -5639,6 +5639,7 @@ public import FLT.Mazur.WeierstrassDividedGlobalFiniteSmoothEmbedding
 public import FLT.Mazur.WeierstrassDividedGlobalFiniteSmoothOpen
 public import FLT.Mazur.WeierstrassDividedGlobalFiniteStep
 public import FLT.Mazur.WeierstrassDividedGlobalFiniteZero
+public import FLT.Mazur.WeierstrassDividedGlobalInitialComparison
 public import FLT.Mazur.WeierstrassDividedInitialExterior
 public import FLT.Mazur.WeierstrassFieldChartPresentation
 public import FLT.Mazur.WeierstrassFiniteChartDescent
