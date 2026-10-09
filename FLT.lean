@@ -4481,6 +4481,7 @@ public import FLT.Mazur.OpenCoverDimension
 public import FLT.Mazur.OpenDirectImageCohomology
 public import FLT.Mazur.OpenDirectImageNaturality
 public import FLT.Mazur.OpenDirectImageRestriction
+public import FLT.Mazur.OpenIdealExtensionBaseChange
 public import FLT.Mazur.OpenIdealFamilyOverlap
 public import FLT.Mazur.OpenIdealNestedExtension
 public import FLT.Mazur.OpenImageSectionPullback
