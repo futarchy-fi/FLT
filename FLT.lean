@@ -3688,6 +3688,7 @@ public import FLT.Mazur.HilbertChartGeneratorMap
 public import FLT.Mazur.HilbertChartIsomorphismInvariance
 public import FLT.Mazur.HilbertChartMultiplication
 public import FLT.Mazur.HilbertChartParameterRecovery
+public import FLT.Mazur.HilbertChartPointFamily
 public import FLT.Mazur.HilbertChartSpecialization
 public import FLT.Mazur.HilbertChartSpecializationEvaluation
 public import FLT.Mazur.HilbertChartStructureConstants
