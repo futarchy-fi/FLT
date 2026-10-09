@@ -4405,6 +4405,7 @@ public import FLT.Mazur.PrincipalOccurrenceExistence
 public import FLT.Mazur.PrincipalOccurrenceFiniteRestrictions
 public import FLT.Mazur.PrincipalOccurrenceOpenEmbeddings
 public import FLT.Mazur.PrincipalOccurrencePathIsomorphisms
+public import FLT.Mazur.PrincipalOccurrenceRefinedPaths
 public import FLT.Mazur.PrincipalOccurrenceStages
 public import FLT.Mazur.PrincipalOccurrenceSurjective
 public import FLT.Mazur.PrincipalOccurrenceTargetBounds
