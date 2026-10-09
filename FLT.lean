@@ -3576,6 +3576,7 @@ public import FLT.Mazur.FinitePrincipalAtlasTargetGluing
 public import FLT.Mazur.FinitePrincipalAtlasTripleComparison
 public import FLT.Mazur.FinitePrincipalAtlasTripleCoverStage
 public import FLT.Mazur.FinitePrincipalAtlasTripleRoutes
+public import FLT.Mazur.FinitePrincipalAtlasUpperLimit
 public import FLT.Mazur.FinitePrincipalChartIntegerDescent
 public import FLT.Mazur.FinitePrincipalIdealPatching
 public import FLT.Mazur.FinitePrincipalTargetRefinement
