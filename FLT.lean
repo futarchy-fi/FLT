@@ -5495,6 +5495,7 @@ public import FLT.Mazur.WeierstrassCubicSection
 public import FLT.Mazur.WeierstrassDilatationAlgebra
 public import FLT.Mazur.WeierstrassDilatationBaseChange
 public import FLT.Mazur.WeierstrassDilatationCoefficients
+public import FLT.Mazur.WeierstrassDilatationDepthComposition
 public import FLT.Mazur.WeierstrassDilatationDepthTransition
 public import FLT.Mazur.WeierstrassDilatationFiberNormalForm
 public import FLT.Mazur.WeierstrassDilatationFractionMap
