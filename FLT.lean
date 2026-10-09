@@ -5659,6 +5659,7 @@ public import FLT.Mazur.WeierstrassModificationReesYScaleOverlap
 public import FLT.Mazur.WeierstrassModificationReesYScaleScheme
 public import FLT.Mazur.WeierstrassModificationXAlgebra
 public import FLT.Mazur.WeierstrassModificationXBaseChange
+public import FLT.Mazur.WeierstrassModificationXBaseChangeGenerators
 public import FLT.Mazur.WeierstrassModificationXCoefficients
 public import FLT.Mazur.WeierstrassModificationXContractionOverlap
 public import FLT.Mazur.WeierstrassModificationXCoordinateCasts
