@@ -6082,6 +6082,7 @@ public import FLT.Mazur.WeierstrassSuccessiveReplacementReassociation
 public import FLT.Mazur.WeierstrassSuccessiveScaleEmbedding
 public import FLT.Mazur.WeierstrassSuccessiveScaleFractions
 public import FLT.Mazur.WeierstrassSuccessiveScaleReesChart
+public import FLT.Mazur.WeierstrassSuccessiveScaleReesScheme
 public import FLT.Mazur.WeierstrassSuccessiveXAlgebra
 public import FLT.Mazur.WeierstrassSuccessiveXContraction
 public import FLT.Mazur.WeierstrassSuccessiveXDepthComparison
