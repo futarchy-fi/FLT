@@ -5638,6 +5638,7 @@ public import FLT.Mazur.WeierstrassGlobalAffineSwap
 public import FLT.Mazur.WeierstrassGlobalInfinitySwap
 public import FLT.Mazur.WeierstrassGlobalModificationFlat
 public import FLT.Mazur.WeierstrassGlobalModificationGluing
+public import FLT.Mazur.WeierstrassGlobalModificationOriginalOpen
 public import FLT.Mazur.WeierstrassGlobalModificationProper
 public import FLT.Mazur.WeierstrassGlobalModificationZero
 public import FLT.Mazur.WeierstrassGlobalNegation
