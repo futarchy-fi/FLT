@@ -5151,6 +5151,7 @@ public import FLT.Mazur.ProjectiveFiniteSeparation
 public import FLT.Mazur.ProjectiveGeneration
 public import FLT.Mazur.ProjectiveGenerationEventually
 public import FLT.Mazur.ProjectiveHomogeneousEvaluation
+public import FLT.Mazur.ProjectiveHomogeneousPoint
 public import FLT.Mazur.ProjectiveLineActionAssociativity
 public import FLT.Mazur.ProjectiveLineActionEndpoints
 public import FLT.Mazur.ProjectiveLineActionPoints
