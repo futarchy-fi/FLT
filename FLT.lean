@@ -5491,6 +5491,7 @@ public import FLT.Mazur.TensorKernelExtension
 public import FLT.Mazur.TensorKernelFiniteLength
 public import FLT.Mazur.TensorKernelFlatCokernel
 public import FLT.Mazur.TensorOpenChart
+public import FLT.Mazur.TensorOpenChartRange
 public import FLT.Mazur.TensorPowerDistribution
 public import FLT.Mazur.TensorPowerGeneratorOpen
 public import FLT.Mazur.TensorPowerReassociation
@@ -5634,6 +5635,7 @@ public import FLT.Mazur.WeierstrassDividedFiniteFlat
 public import FLT.Mazur.WeierstrassDividedFiniteIteration
 public import FLT.Mazur.WeierstrassDividedFiniteProper
 public import FLT.Mazur.WeierstrassDividedFiniteSmoothOpen
+public import FLT.Mazur.WeierstrassDividedFiniteTensorCharts
 public import FLT.Mazur.WeierstrassDividedFiniteYBoundary
 public import FLT.Mazur.WeierstrassDividedFiniteYStep
 public import FLT.Mazur.WeierstrassDividedGlobalFiniteFlat
