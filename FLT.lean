@@ -2746,6 +2746,7 @@ public import FLT.Mazur.AmbientHilbertTripleIntersection
 public import FLT.Mazur.AmbientHilbertTripleRoutes
 public import FLT.Mazur.AmbientHilbertUniversalCover
 public import FLT.Mazur.AmbientHilbertUniversalFamily
+public import FLT.Mazur.AmbientHilbertUniversalFiberCartier
 public import FLT.Mazur.AmbientHilbertUniversalIdeal
 public import FLT.Mazur.AmbientHilbertUniversalIntersection
 public import FLT.Mazur.AmbientHilbertUniversalPairCompatibility
