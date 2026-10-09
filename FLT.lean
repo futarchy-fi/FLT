@@ -3785,6 +3785,7 @@ public import FLT.Mazur.HilbertPolynomialFamilyAmbient
 public import FLT.Mazur.HilbertPolynomialFamilyBaseChangeRank
 public import FLT.Mazur.HilbertPolynomialFamilyMorphism
 public import FLT.Mazur.HilbertPolynomialFamilyNaturality
+public import FLT.Mazur.HilbertPolynomialFamilyPrincipal
 public import FLT.Mazur.HilbertPolynomialFamilyRestriction
 public import FLT.Mazur.HilbertPolynomialQuotientBaseChange
 public import FLT.Mazur.HilbertPolynomialSchemeOver
