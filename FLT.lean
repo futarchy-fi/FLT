@@ -4082,6 +4082,7 @@ public import FLT.Mazur.IntegralClosedSupport
 public import FLT.Mazur.IntegralDimension
 public import FLT.Mazur.IntegralPointExtension
 public import FLT.Mazur.IntegralShortHomologyNaturality
+public import FLT.Mazur.IntersectionCocycleLimitUnits
 public import FLT.Mazur.IntersectionDiagramGluing
 public import FLT.Mazur.IntersectionGluingCharts
 public import FLT.Mazur.IntersectionGluingSections
