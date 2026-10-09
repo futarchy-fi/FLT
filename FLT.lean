@@ -5725,6 +5725,7 @@ public import FLT.Mazur.WeierstrassDividedOlderAtlasIndex
 public import FLT.Mazur.WeierstrassDividedOlderGlobalNodeComponents
 public import FLT.Mazur.WeierstrassDividedOlderGlobalResidueNodes
 public import FLT.Mazur.WeierstrassDividedOlderGlobalTensorCharts
+public import FLT.Mazur.WeierstrassDividedOlderGlobalZeroSuccessive
 public import FLT.Mazur.WeierstrassDividedOlderIndexedNodeCover
 public import FLT.Mazur.WeierstrassDividedOlderResidueNodes
 public import FLT.Mazur.WeierstrassDividedOlderSuccessiveCharts
