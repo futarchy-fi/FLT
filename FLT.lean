@@ -4485,6 +4485,7 @@ public import FLT.Mazur.PrincipalOccurrenceSurjective
 public import FLT.Mazur.PrincipalOccurrenceSurjectiveBijections
 public import FLT.Mazur.PrincipalOccurrenceTargetBounds
 public import FLT.Mazur.PrincipalOccurrenceTargetChartGluing
+public import FLT.Mazur.PrincipalOccurrenceTargetChartNaturality
 public import FLT.Mazur.PrincipalOccurrenceTargetPatchSelection
 public import FLT.Mazur.PrincipalOldArrowRepresentatives
 public import FLT.Mazur.PrincipalOpenIntegerModel
