@@ -5697,6 +5697,7 @@ public import FLT.Mazur.WeierstrassModificationXResidueContractionGeometry
 public import FLT.Mazur.WeierstrassModificationXResidueFiber
 public import FLT.Mazur.WeierstrassModificationXResidueGeneratorReduction
 public import FLT.Mazur.WeierstrassModificationXResidueIncidenceContraction
+public import FLT.Mazur.WeierstrassModificationXResidueNamedGenerators
 public import FLT.Mazur.WeierstrassModificationXResidueNodeGeometry
 public import FLT.Mazur.WeierstrassModificationXResidueTensorFunctions
 public import FLT.Mazur.WeierstrassModificationXSaturation
