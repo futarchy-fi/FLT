@@ -5186,6 +5186,7 @@ public import FLT.Mazur.ProjectiveSectionExtensionCoordinates
 public import FLT.Mazur.ProjectiveSectionZeroDivisors
 public import FLT.Mazur.ProjectiveSerrePresentationTower
 public import FLT.Mazur.ProjectiveSerreVanishing
+public import FLT.Mazur.ProjectiveSpaceAffineBase
 public import FLT.Mazur.ProjectiveSpaceAffineBaseChange
 public import FLT.Mazur.ProjectiveSpaceCharts
 public import FLT.Mazur.ProjectiveSpaceCoefficientMap
