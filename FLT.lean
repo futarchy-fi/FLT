@@ -5108,6 +5108,7 @@ public import FLT.Mazur.RelativeCartier
 public import FLT.Mazur.RelativeCartierBaseChange
 public import FLT.Mazur.RelativeCartierDivisorPullback
 public import FLT.Mazur.RelativeCartierIdealPullback
+public import FLT.Mazur.RelativeCyclicSubgroup
 public import FLT.Mazur.RelativeDirectImageComposition
 public import FLT.Mazur.RelativeDirectImageForgetting
 public import FLT.Mazur.RelativeDirectImageOpenResolution
