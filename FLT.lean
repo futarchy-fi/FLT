@@ -2673,6 +2673,7 @@ public import FLT.Mazur.AffineRestrictionImmersion
 public import FLT.Mazur.AffineReverseGeometricOverlap
 public import FLT.Mazur.AffineReverseOverlapCocycle
 public import FLT.Mazur.AffineReverseOverlapDiagonal
+public import FLT.Mazur.AffineScalarMap
 public import FLT.Mazur.AffineScaledPullbackSections
 public import FLT.Mazur.AffineScaledTripleTransport
 public import FLT.Mazur.AffineSectionsReconstruction
