@@ -3554,6 +3554,7 @@ public import FLT.Mazur.FinitePrincipalAtlasCoordinates
 public import FLT.Mazur.FinitePrincipalAtlasCoverStage
 public import FLT.Mazur.FinitePrincipalAtlasDiagonalStage
 public import FLT.Mazur.FinitePrincipalAtlasGluing
+public import FLT.Mazur.FinitePrincipalAtlasGluingCofinal
 public import FLT.Mazur.FinitePrincipalAtlasImageStage
 public import FLT.Mazur.FinitePrincipalAtlasOccurrences
 public import FLT.Mazur.FinitePrincipalAtlasOriginalCovers
@@ -4697,8 +4698,12 @@ public import FLT.Mazur.PrincipalOccurrenceCommonDoubleRoutes
 public import FLT.Mazur.PrincipalOccurrenceCommonFamily
 public import FLT.Mazur.PrincipalOccurrenceCommonGluing
 public import FLT.Mazur.PrincipalOccurrenceCommonIdentities
+public import FLT.Mazur.PrincipalOccurrenceCommonNaturality
 public import FLT.Mazur.PrincipalOccurrenceCommonPatchComparison
 public import FLT.Mazur.PrincipalOccurrenceCommonPatchRoutes
+public import FLT.Mazur.PrincipalOccurrenceCommonRecovery
+public import FLT.Mazur.PrincipalOccurrenceCommonTransition
+public import FLT.Mazur.PrincipalOccurrenceCommonTransitionLaws
 public import FLT.Mazur.PrincipalOccurrenceCommonTripleLift
 public import FLT.Mazur.PrincipalOccurrenceCommonUnion
 public import FLT.Mazur.PrincipalOccurrenceComparisonCancellation
@@ -4723,6 +4728,10 @@ public import FLT.Mazur.PrincipalOccurrenceDiagramResult
 public import FLT.Mazur.PrincipalOccurrenceDirected
 public import FLT.Mazur.PrincipalOccurrenceExistence
 public import FLT.Mazur.PrincipalOccurrenceFiniteRestrictions
+public import FLT.Mazur.PrincipalOccurrenceGluedTransitions
+public import FLT.Mazur.PrincipalOccurrenceGluingChartMaps
+public import FLT.Mazur.PrincipalOccurrenceGluingIndex
+public import FLT.Mazur.PrincipalOccurrenceGluingStage
 public import FLT.Mazur.PrincipalOccurrenceImageInclusions
 public import FLT.Mazur.PrincipalOccurrenceIncidentPatchRoutes
 public import FLT.Mazur.PrincipalOccurrenceLocalEquationRefinement
@@ -5207,6 +5216,8 @@ public import FLT.Mazur.SchemeFppfSourceLineMapPreimage
 public import FLT.Mazur.SchemeGeometricDescentCocycleTest
 public import FLT.Mazur.SchemeGeometricDescentData
 public import FLT.Mazur.SchemeGeometricFiberH0Comparison
+public import FLT.Mazur.SchemeGlueDataMap
+public import FLT.Mazur.SchemeGlueDataMapCartesian
 public import FLT.Mazur.SchemeIndependentCanonicalCocycle
 public import FLT.Mazur.SchemeIndependentCanonicalCompatibility
 public import FLT.Mazur.SchemeIndependentCanonicalCoordinate
