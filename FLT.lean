@@ -5690,6 +5690,7 @@ public import FLT.Mazur.WeierstrassDividedGlobalFiniteZero
 public import FLT.Mazur.WeierstrassDividedGlobalInitialComparison
 public import FLT.Mazur.WeierstrassDividedGlobalResidueNodes
 public import FLT.Mazur.WeierstrassDividedGlobalResidueOverlap
+public import FLT.Mazur.WeierstrassDividedGlobalTensorAtlas
 public import FLT.Mazur.WeierstrassDividedGlobalTensorCharts
 public import FLT.Mazur.WeierstrassDividedGlobalTensorEmbedding
 public import FLT.Mazur.WeierstrassDividedGlobalTensorGluing
