@@ -2583,6 +2583,7 @@ public import FLT.Mazur.AffineFiberProductPairTransport
 public import FLT.Mazur.AffineFiberProductRefinementCocycle
 public import FLT.Mazur.AffineFiniteTypeModelSystem
 public import FLT.Mazur.AffineFpqcRefinement
+public import FLT.Mazur.AffineFreeSheafCoordinateNormalization
 public import FLT.Mazur.AffineFreeSheafCoordinates
 public import FLT.Mazur.AffineFreeSheafSectionCoordinates
 public import FLT.Mazur.AffineGenericClosure
