@@ -5546,6 +5546,7 @@ public import FLT.Mazur.StableAffineQuotientAffineDescent
 public import FLT.Mazur.StableAffineQuotientCartesian
 public import FLT.Mazur.StableAffineQuotientChartIntersection
 public import FLT.Mazur.StableAffineQuotientChartPreimage
+public import FLT.Mazur.StableAffineQuotientDescent
 public import FLT.Mazur.StableAffineQuotientDescentCover
 public import FLT.Mazur.StableAffineQuotientDiagram
 public import FLT.Mazur.StableAffineQuotientGluing
