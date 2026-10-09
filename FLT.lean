@@ -2972,6 +2972,7 @@ public import FLT.Mazur.ChowWitnessSectionsLocalizationAssembly
 public import FLT.Mazur.ClassifiedGenusOneFamily
 public import FLT.Mazur.ClopenLimitDescent
 public import FLT.Mazur.ClosedCohomologyFinite
+public import FLT.Mazur.ClosedCoverLimitDescent
 public import FLT.Mazur.ClosedDescentCharts
 public import FLT.Mazur.ClosedDescentGluingData
 public import FLT.Mazur.ClosedDescentGluingMaps
