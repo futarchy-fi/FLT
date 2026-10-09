@@ -3478,6 +3478,7 @@ public import FLT.Mazur.FamilyTransport
 public import FLT.Mazur.FiberAffineOpenBaseChange
 public import FLT.Mazur.FiberAffineOpenBaseIso
 public import FLT.Mazur.FieldCoefficientCohomologyDimension
+public import FLT.Mazur.FilteredRingFiniteEqualities
 public import FLT.Mazur.FiniteAffineAtlasDiagramDescent
 public import FLT.Mazur.FiniteAffineBaseNeighborhood
 public import FLT.Mazur.FiniteAffineCoverDimension
