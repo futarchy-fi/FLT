@@ -2722,6 +2722,7 @@ public import FLT.Mazur.AffineTrivialLineSectionOpen
 public import FLT.Mazur.AmbientHilbertChartFamilyPullback
 public import FLT.Mazur.AmbientHilbertChartSystem
 public import FLT.Mazur.AmbientHilbertChartUniversalFamily
+public import FLT.Mazur.AmbientHilbertCommonFamily
 public import FLT.Mazur.AmbientHilbertGluedBase
 public import FLT.Mazur.AmbientHilbertGluedCharts
 public import FLT.Mazur.AmbientHilbertGluing
