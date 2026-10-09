@@ -3885,6 +3885,7 @@ public import FLT.Mazur.HomogeneousIdealWitness
 public import FLT.Mazur.HomogeneousLocalizationBaseChange
 public import FLT.Mazur.HomogeneousLocalizationGenerator
 public import FLT.Mazur.HomogeneousLocalizationScalars
+public import FLT.Mazur.HomogeneousPrimeAvoidance
 public import FLT.Mazur.IdealAdicAffineGeneration
 public import FLT.Mazur.IdealAdicAffineProjection
 public import FLT.Mazur.IdealAdicBaseGradedGenerators
