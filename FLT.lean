@@ -5808,6 +5808,7 @@ public import FLT.Mazur.WeierstrassMixedTripleSlopes
 public import FLT.Mazur.WeierstrassModificationAffineContraction
 public import FLT.Mazur.WeierstrassModificationAffineProper
 public import FLT.Mazur.WeierstrassModificationAtlas
+public import FLT.Mazur.WeierstrassModificationCenterSmooth
 public import FLT.Mazur.WeierstrassModificationChartIntersection
 public import FLT.Mazur.WeierstrassModificationFlat
 public import FLT.Mazur.WeierstrassModificationFractionOverlap
