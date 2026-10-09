@@ -3897,6 +3897,7 @@ public import FLT.Mazur.HilbertPrincipalBaseChangeScalars
 public import FLT.Mazur.HilbertPrincipalLocalizationScalars
 public import FLT.Mazur.HilbertPrincipalRestriction
 public import FLT.Mazur.HilbertSupportOpenLattice
+public import FLT.Mazur.HilbertSupportOpenPullback
 public import FLT.Mazur.HilbertTupleBasisTower
 public import FLT.Mazur.HomIntegerModel
 public import FLT.Mazur.HomogeneousLocalizationBaseChange
