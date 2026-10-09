@@ -3728,6 +3728,7 @@ public import FLT.Mazur.HilbertAmbientQuotientEvaluation
 public import FLT.Mazur.HilbertAmbientRelationImage
 public import FLT.Mazur.HilbertAmbientRelationOverlap
 public import FLT.Mazur.HilbertAmbientRelations
+public import FLT.Mazur.HilbertAmbientSchemeClassification
 public import FLT.Mazur.HilbertAmbientSchemeFactorization
 public import FLT.Mazur.HilbertAmbientSchemeParameters
 public import FLT.Mazur.HilbertBasisAffineClassification
