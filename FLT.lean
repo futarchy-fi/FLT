@@ -5711,6 +5711,7 @@ public import FLT.Mazur.WeierstrassDividedGlobalTensorGluing
 public import FLT.Mazur.WeierstrassDividedGlobalTensorInfinity
 public import FLT.Mazur.WeierstrassDividedGlobalTensorIntersection
 public import FLT.Mazur.WeierstrassDividedGlobalZeroComponents
+public import FLT.Mazur.WeierstrassDividedGlobalZeroIntersection
 public import FLT.Mazur.WeierstrassDividedGlobalZeroNodes
 public import FLT.Mazur.WeierstrassDividedGlobalZeroOverlap
 public import FLT.Mazur.WeierstrassDividedGlobalZeroSuccessive
