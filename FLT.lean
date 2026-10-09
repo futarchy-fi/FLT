@@ -3562,6 +3562,7 @@ public import FLT.Mazur.FinitePrincipalAtlasDiagonalStage
 public import FLT.Mazur.FinitePrincipalAtlasGluing
 public import FLT.Mazur.FinitePrincipalAtlasGluingCofinal
 public import FLT.Mazur.FinitePrincipalAtlasImageStage
+public import FLT.Mazur.FinitePrincipalAtlasLimit
 public import FLT.Mazur.FinitePrincipalAtlasOccurrences
 public import FLT.Mazur.FinitePrincipalAtlasOriginalCovers
 public import FLT.Mazur.FinitePrincipalAtlasOriginalPairUnion
