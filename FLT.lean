@@ -2724,6 +2724,7 @@ public import FLT.Mazur.AmbientHilbertChartParameterEquality
 public import FLT.Mazur.AmbientHilbertChartSupport
 public import FLT.Mazur.AmbientHilbertChartSystem
 public import FLT.Mazur.AmbientHilbertChartUniversalFamily
+public import FLT.Mazur.AmbientHilbertClassificationNaturality
 public import FLT.Mazur.AmbientHilbertCommonFamily
 public import FLT.Mazur.AmbientHilbertFiberSupportCover
 public import FLT.Mazur.AmbientHilbertGluedBase
