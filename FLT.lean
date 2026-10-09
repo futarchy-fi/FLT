@@ -5816,6 +5816,7 @@ public import FLT.Mazur.WeierstrassInfinityQuadraticBaseChange
 public import FLT.Mazur.WeierstrassInfinityQuadraticLift
 public import FLT.Mazur.WeierstrassInfinityQuadraticWeight
 public import FLT.Mazur.WeierstrassInfinityResidualElimination
+public import FLT.Mazur.WeierstrassInfinityResidueBoundary
 public import FLT.Mazur.WeierstrassInfinityResidueGeometry
 public import FLT.Mazur.WeierstrassInfinityResidueTensor
 public import FLT.Mazur.WeierstrassInfinityReverseCross
