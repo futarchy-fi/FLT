@@ -2728,6 +2728,7 @@ public import FLT.Mazur.AmbientHilbertCommonFamily
 public import FLT.Mazur.AmbientHilbertGluedBase
 public import FLT.Mazur.AmbientHilbertGluedCharts
 public import FLT.Mazur.AmbientHilbertGluing
+public import FLT.Mazur.AmbientHilbertLocalParameters
 public import FLT.Mazur.AmbientHilbertOpenParameterFamily
 public import FLT.Mazur.AmbientHilbertOverlapParameterFamily
 public import FLT.Mazur.AmbientHilbertPairTransitions
