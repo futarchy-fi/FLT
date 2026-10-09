@@ -4612,6 +4612,7 @@ public import FLT.Mazur.NoetherianUniversalStructureSheaf
 public import FLT.Mazur.NonzeroLineSectionExact
 public import FLT.Mazur.NormalizedSectionLine
 public import FLT.Mazur.NormalizedSectionLineBaseChange
+public import FLT.Mazur.NormalizedSectionLinePrincipalRestriction
 public import FLT.Mazur.NormalizedSectionLineSheaf
 public import FLT.Mazur.NormalizedSectionLineSheafBaseChange
 public import FLT.Mazur.OccurrenceDiagramCoefficients
