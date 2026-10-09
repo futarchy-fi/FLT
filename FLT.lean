@@ -5873,6 +5873,7 @@ public import FLT.Mazur.WeierstrassModificationXConicIncidenceCharts
 public import FLT.Mazur.WeierstrassModificationXConicIncidenceOrientation
 public import FLT.Mazur.WeierstrassModificationXConicInverseCoordinates
 public import FLT.Mazur.WeierstrassModificationXConicParameterOrigin
+public import FLT.Mazur.WeierstrassModificationXConicRegular
 public import FLT.Mazur.WeierstrassModificationXConicSecondCoordinates
 public import FLT.Mazur.WeierstrassModificationXConicSecondOpen
 public import FLT.Mazur.WeierstrassModificationXConicSmooth
