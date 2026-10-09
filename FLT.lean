@@ -4443,6 +4443,7 @@ public import FLT.Mazur.PrincipalOccurrenceFiniteRestrictions
 public import FLT.Mazur.PrincipalOccurrenceLocalEquationRefinement
 public import FLT.Mazur.PrincipalOccurrenceMixedBijections
 public import FLT.Mazur.PrincipalOccurrenceOpenEmbeddings
+public import FLT.Mazur.PrincipalOccurrenceOriginalCartesian
 public import FLT.Mazur.PrincipalOccurrenceOriginalCross
 public import FLT.Mazur.PrincipalOccurrenceOriginalGeometry
 public import FLT.Mazur.PrincipalOccurrenceOriginalPatches
