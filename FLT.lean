@@ -3728,6 +3728,7 @@ public import FLT.Mazur.HilbertChartSpecialization
 public import FLT.Mazur.HilbertChartSpecializationEvaluation
 public import FLT.Mazur.HilbertChartStructureConstants
 public import FLT.Mazur.HilbertChartTupleTransition
+public import FLT.Mazur.HilbertChartTupleTransitionTests
 public import FLT.Mazur.HilbertChartUniversalClosedFamily
 public import FLT.Mazur.HilbertChartUniversalFamily
 public import FLT.Mazur.HilbertFaithfullyFlatTupleBasis
