@@ -4477,6 +4477,7 @@ public import FLT.Mazur.PrincipalOccurrenceRestrictionCoherence
 public import FLT.Mazur.PrincipalOccurrenceRestrictionSquares
 public import FLT.Mazur.PrincipalOccurrenceStageFromDiagram
 public import FLT.Mazur.PrincipalOccurrenceStages
+public import FLT.Mazur.PrincipalOccurrenceSubfamilyGluing
 public import FLT.Mazur.PrincipalOccurrenceSurjective
 public import FLT.Mazur.PrincipalOccurrenceSurjectiveBijections
 public import FLT.Mazur.PrincipalOccurrenceTargetBounds
