@@ -2503,6 +2503,7 @@ public import FLT.Mazur.AdicCompletionScalars
 public import FLT.Mazur.AffineAdicCohomologyImage
 public import FLT.Mazur.AffineAdicFormalComparison
 public import FLT.Mazur.AffineAnnihilator
+public import FLT.Mazur.AffineAtlasSeparatedLimit
 public import FLT.Mazur.AffineBaseChangeCoefficients
 public import FLT.Mazur.AffineBaseSectionAlgebra
 public import FLT.Mazur.AffineBaseSectionFunctor
