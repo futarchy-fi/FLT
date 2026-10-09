@@ -5623,6 +5623,7 @@ public import FLT.Mazur.UniformizerRootExtension
 public import FLT.Mazur.UnitIntegerModel
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryLevel
 public import FLT.Mazur.UniversalWeierstrassCyclicAuxiliary
+public import FLT.Mazur.UniversalWeierstrassCyclicLevel
 public import FLT.Mazur.UniversalWeierstrassCyclicSubgroup
 public import FLT.Mazur.UniversalWeierstrassParameter
 public import FLT.Mazur.UniversallyClosedFiniteCover
