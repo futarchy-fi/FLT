@@ -3568,6 +3568,7 @@ public import FLT.Mazur.FinitePrincipalAtlasOccurrences
 public import FLT.Mazur.FinitePrincipalAtlasOriginalCovers
 public import FLT.Mazur.FinitePrincipalAtlasOriginalPairUnion
 public import FLT.Mazur.FinitePrincipalAtlasOriginalTripleCover
+public import FLT.Mazur.FinitePrincipalAtlasOver
 public import FLT.Mazur.FinitePrincipalAtlasPairUnion
 public import FLT.Mazur.FinitePrincipalAtlasPairUnionRecovery
 public import FLT.Mazur.FinitePrincipalAtlasProjection
