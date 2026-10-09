@@ -3809,6 +3809,7 @@ public import FLT.Mazur.HilbertPolynomialParameterRecovery
 public import FLT.Mazur.HilbertPolynomialQuotientBaseChange
 public import FLT.Mazur.HilbertPolynomialSchemeAffineNaturality
 public import FLT.Mazur.HilbertPolynomialSchemeAffineParameter
+public import FLT.Mazur.HilbertPolynomialSchemeFaithful
 public import FLT.Mazur.HilbertPolynomialSchemeOver
 public import FLT.Mazur.HilbertPolynomialSchemeOverlap
 public import FLT.Mazur.HilbertPolynomialSchemeParameterDegree
