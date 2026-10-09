@@ -3711,6 +3711,7 @@ public import FLT.Mazur.HilbertBasisSchemeCover
 public import FLT.Mazur.HilbertBasisSchemeGlobal
 public import FLT.Mazur.HilbertBasisSchemeGluing
 public import FLT.Mazur.HilbertBasisSchemeOver
+public import FLT.Mazur.HilbertBasisTupleAffineComparison
 public import FLT.Mazur.HilbertChartAlgebra
 public import FLT.Mazur.HilbertChartAlgebraRealization
 public import FLT.Mazur.HilbertChartAlgebraSpecialization
