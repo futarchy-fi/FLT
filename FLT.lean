@@ -5603,6 +5603,7 @@ public import FLT.Mazur.ShortComplexSumHomologyInclusion
 public import FLT.Mazur.SmoothAffineCoefficientModels
 public import FLT.Mazur.SmoothAlgebraReduced
 public import FLT.Mazur.SmoothCurveDimension
+public import FLT.Mazur.SmoothCurveFiberCartier
 public import FLT.Mazur.SmoothCurvePicardDegree
 public import FLT.Mazur.SmoothDimension
 public import FLT.Mazur.SmoothDimensionBound
