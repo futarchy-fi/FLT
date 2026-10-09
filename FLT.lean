@@ -5077,6 +5077,7 @@ public import FLT.Mazur.RelativeIdealAmbientIsoSquare
 public import FLT.Mazur.RelativeIdealFamilies
 public import FLT.Mazur.RelativeIdealFamilyIsoCoherence
 public import FLT.Mazur.RelativeIdealFamilyIsomorphism
+public import FLT.Mazur.RelativeIdealOpenExtension
 public import FLT.Mazur.RelativeJetSmoothObstruction
 public import FLT.Mazur.RelativePicardBaseChangeGeometry
 public import FLT.Mazur.RelativePicardFppfBaseChange
