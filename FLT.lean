@@ -5593,6 +5593,7 @@ public import FLT.Mazur.WeierstrassDividedExteriorStep
 public import FLT.Mazur.WeierstrassDividedFiniteAtlas
 public import FLT.Mazur.WeierstrassDividedFiniteContraction
 public import FLT.Mazur.WeierstrassDividedFiniteIteration
+public import FLT.Mazur.WeierstrassDividedFiniteProper
 public import FLT.Mazur.WeierstrassDividedInitialExterior
 public import FLT.Mazur.WeierstrassFieldChartPresentation
 public import FLT.Mazur.WeierstrassFiniteChartDescent
