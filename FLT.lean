@@ -6026,6 +6026,7 @@ public import FLT.Mazur.WeierstrassModificationXSlopeOpen
 public import FLT.Mazur.WeierstrassModificationXTotalTransform
 public import FLT.Mazur.WeierstrassModificationXZeroResidue
 public import FLT.Mazur.WeierstrassModificationXZeroResidueGeometry
+public import FLT.Mazur.WeierstrassModificationXZeroResidueSmooth
 public import FLT.Mazur.WeierstrassModificationYAlgebra
 public import FLT.Mazur.WeierstrassModificationYCompatibility
 public import FLT.Mazur.WeierstrassModificationYContractionOverlap
