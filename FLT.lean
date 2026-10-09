@@ -4432,6 +4432,7 @@ public import FLT.Mazur.PrincipalOccurrenceOpenEmbeddings
 public import FLT.Mazur.PrincipalOccurrenceOverlapPatches
 public import FLT.Mazur.PrincipalOccurrencePatchCoordinates
 public import FLT.Mazur.PrincipalOccurrencePatchGluing
+public import FLT.Mazur.PrincipalOccurrencePatchRefinement
 public import FLT.Mazur.PrincipalOccurrencePathIsomorphisms
 public import FLT.Mazur.PrincipalOccurrenceRecoveredRestrictions
 public import FLT.Mazur.PrincipalOccurrenceRefinedPaths
