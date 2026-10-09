@@ -6076,6 +6076,7 @@ public import FLT.Mazur.WeierstrassSplitNodalSmoothGroup
 public import FLT.Mazur.WeierstrassSplitNodalSmoothGroupComparison
 public import FLT.Mazur.WeierstrassSplitNodalTorus
 public import FLT.Mazur.WeierstrassSplitNodalUnitPoints
+public import FLT.Mazur.WeierstrassSuccessiveReesCoordinates
 public import FLT.Mazur.WeierstrassSuccessiveReplacementAtlas
 public import FLT.Mazur.WeierstrassSuccessiveReplacementGluing
 public import FLT.Mazur.WeierstrassSuccessiveReplacementReassociation
