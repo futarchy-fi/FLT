@@ -5167,6 +5167,7 @@ public import FLT.Mazur.ProjectiveLineStandardOverlap
 public import FLT.Mazur.ProjectiveLineTopology
 public import FLT.Mazur.ProjectiveLineUniversalAction
 public import FLT.Mazur.ProjectiveLinearIsomorphism
+public import FLT.Mazur.ProjectiveLinearOver
 public import FLT.Mazur.ProjectiveLinearSubstitution
 public import FLT.Mazur.ProjectiveOverlapModuleLocalization
 public import FLT.Mazur.ProjectiveProductChartCover
