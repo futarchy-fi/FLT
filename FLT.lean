@@ -2720,6 +2720,7 @@ public import FLT.Mazur.AffineTripleOverlapRefinementSquares
 public import FLT.Mazur.AffineTripleUnitCoefficients
 public import FLT.Mazur.AffineTrivialLineSectionOpen
 public import FLT.Mazur.AmbientHilbertChartFamilyPullback
+public import FLT.Mazur.AmbientHilbertChartSupport
 public import FLT.Mazur.AmbientHilbertChartSystem
 public import FLT.Mazur.AmbientHilbertChartUniversalFamily
 public import FLT.Mazur.AmbientHilbertCommonFamily
