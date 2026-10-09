@@ -3741,6 +3741,7 @@ public import FLT.Mazur.HilbertChartReverseTransition
 public import FLT.Mazur.HilbertChartSpecialization
 public import FLT.Mazur.HilbertChartSpecializationEvaluation
 public import FLT.Mazur.HilbertChartStructureConstants
+public import FLT.Mazur.HilbertChartTransitionCocycle
 public import FLT.Mazur.HilbertChartTripleTransition
 public import FLT.Mazur.HilbertChartTupleTransition
 public import FLT.Mazur.HilbertChartTupleTransitionTests
