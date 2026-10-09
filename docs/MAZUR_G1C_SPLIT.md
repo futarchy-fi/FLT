@@ -278,3 +278,62 @@ is claimed for the pullback source itself; the actual new base is its quotient.
 The source still declares `Mazur_statement` in `FLT/Assumptions/Mazur.lean` and
 uses it in `FLT/MazurW.lean`; reproduce with `git grep -n Mazur_statement -- FLT`.
 No replacement of that assumption or coarse modular curve is claimed.
+
+
+## Relative marking schemes and a smooth parameter family constructed in W178
+
+Checked by the named declaration audits, individual lints, and foreground builds
+in `W178_MANIFEST.json`; `python3 W178_RECHECK.py` rechecks their evidence and the
+final root build. These eight new modules are each at most 240 lines.
+
+- `AuxiliaryLevelHomScheme` constructs an equalizer in the actual finite power
+  of a group scheme. `markingEquiv` represents homomorphisms from a finite group
+  into its sections on every test scheme, including nonreduced schemes.
+- `AuxiliaryLevelRelabeling` constructs precomposition morphisms and the actual
+  automorphism-group action, retaining the original base morphism.
+- `AuxiliaryLevelKernelLocus` constructs the closed scheme equalizers where a
+  label vanishes. Relabeling gives isomorphisms of these schemes and transports
+  their images; this is stronger than comparing underlying values of sections.
+- `AuxiliaryLevelFaithfulOpen` removes the nontrivial kernel loci and restricts
+  the actual finite-group action. The marking on every nonempty test scheme
+  is injective.
+- `AuxiliaryLevelFaithfulRepresentation` proves the converse: universal
+  injectivity forces factorization through that open, uniquely. It tests all
+  nonempty base changes, rather than just the original base's global sections.
+- `UniversalWeierstrassParameter` constructs
+  `Z[a1,a2,a3,a4,a6,1/(2 Delta)]`, its actual smooth equation, and natural
+  specialization to every smooth Weierstrass equation with two invertible.
+- `UniversalWeierstrassAuxiliaryLevel` applies the marking construction to the
+  actual generalized elliptic curve of that universal equation, with labels
+  `(Z/n)^2`. Its marked sections are n-torsion. A concrete characteristic-three
+  coefficient map proves that characteristic three was not silently removed.
+- `UniversalWeierstrassCyclicAuxiliary` constructs the parameter scheme with
+  labels `(Z/4)^2 x Z/p`, its finite independent relabeling action, and its map
+  forgetting the cyclic generator. The distinguished section has exact order p
+  on every nonempty test scheme, proved from the faithful-open condition.
+
+This is progress within C1, not completion of C1 or C2. A fixed Weierstrass
+presentation is still part of the parameter data. Quotienting these parameter
+schemes only by the finite relabeling group would not remove changes of
+Weierstrass coordinates and would not construct the coarse modular curve.
+The characteristic-three point constructed here is a point of the coefficient
+scheme, not yet a point of the auxiliary marking scheme.
+
+Continue the first open application item in this order:
+
+1. From `cyclicAuxiliaryScheme`, construct the actual rank-p finite etale closed
+   subgroup over the parameter scheme and its cyclic ample Cartier divisor.
+   Extend the existing field-only `ConstantCyclicFiniteEtale` and
+   `ConstantCyclicSectionClosed` results to the required general base using
+   universal faithfulness; global exact order alone is insufficient there.
+2. Prove the full auxiliary torsion and local existence assertions, and remove
+   Weierstrass coordinate choices by actual isomorphism descent. Establish
+   rigidity and representability of the resulting auxiliary modular object.
+3. Add the polygon boundary charts, their relations and compatibility with the
+   smooth family; restrict to the required arithmetic base. Construct the
+   resulting atlas's finite action and invariant affine cover, then apply C2.
+4. Continue C3--C8 as above. D and G2 remain with their existing workers.
+
+No finiteness or etaleness of the marking scheme over the coefficient scheme,
+coverage of the generalized-elliptic moduli functor, boundary compactification,
+or invariant affine cover of a modular atlas is claimed by these constructions.
