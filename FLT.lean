@@ -5527,6 +5527,7 @@ public import FLT.Mazur.TensorOpenChart
 public import FLT.Mazur.TensorOpenChartIntersection
 public import FLT.Mazur.TensorOpenChartOverlap
 public import FLT.Mazur.TensorOpenChartRange
+public import FLT.Mazur.TensorOpenExteriorIntersection
 public import FLT.Mazur.TensorPowerDistribution
 public import FLT.Mazur.TensorPowerGeneratorOpen
 public import FLT.Mazur.TensorPowerReassociation
