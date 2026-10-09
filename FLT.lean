@@ -3709,6 +3709,7 @@ public import FLT.Mazur.HilbertChartStructureConstants
 public import FLT.Mazur.HilbertChartUniversalClosedFamily
 public import FLT.Mazur.HilbertChartUniversalFamily
 public import FLT.Mazur.HilbertLocalizationIsomorphismOpen
+public import FLT.Mazur.HilbertLocalizedTupleBasis
 public import FLT.Mazur.HilbertPolynomialQuotientBaseChange
 public import FLT.Mazur.HomIntegerModel
 public import FLT.Mazur.HomogeneousLocalizationBaseChange
