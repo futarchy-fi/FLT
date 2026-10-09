@@ -5694,6 +5694,7 @@ public import FLT.Mazur.WeierstrassDividedGlobalTensorEmbedding
 public import FLT.Mazur.WeierstrassDividedGlobalTensorGluing
 public import FLT.Mazur.WeierstrassDividedGlobalTensorInfinity
 public import FLT.Mazur.WeierstrassDividedInitialExterior
+public import FLT.Mazur.WeierstrassDividedOlderAtlasIndex
 public import FLT.Mazur.WeierstrassDividedOlderResidueNodes
 public import FLT.Mazur.WeierstrassDividedOlderSuccessiveCharts
 public import FLT.Mazur.WeierstrassDividedTensorYBoundary
