@@ -4433,6 +4433,7 @@ public import FLT.Mazur.PrincipalOccurrenceCofinalBijections
 public import FLT.Mazur.PrincipalOccurrenceComparisonLocalCoordinates
 public import FLT.Mazur.PrincipalOccurrenceComparisonScalars
 public import FLT.Mazur.PrincipalOccurrenceCoordinateChanges
+public import FLT.Mazur.PrincipalOccurrenceCoverRefinement
 public import FLT.Mazur.PrincipalOccurrenceCrossChartCoordinates
 public import FLT.Mazur.PrincipalOccurrenceCrossChartIntersections
 public import FLT.Mazur.PrincipalOccurrenceCrossChartTriples
