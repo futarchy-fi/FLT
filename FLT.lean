@@ -5664,6 +5664,7 @@ public import FLT.Mazur.WeierstrassModificationXCoefficients
 public import FLT.Mazur.WeierstrassModificationXConicFirstInverse
 public import FLT.Mazur.WeierstrassModificationXConicFirstParameter
 public import FLT.Mazur.WeierstrassModificationXConicInverseCoordinates
+public import FLT.Mazur.WeierstrassModificationXConicTangentSwitch
 public import FLT.Mazur.WeierstrassModificationXContractionOverlap
 public import FLT.Mazur.WeierstrassModificationXCoordinateCasts
 public import FLT.Mazur.WeierstrassModificationXExtendedCastEvaluation
