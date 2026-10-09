@@ -5283,6 +5283,7 @@ public import FLT.Mazur.WeierstrassModificationXReesChart
 public import FLT.Mazur.WeierstrassModificationXResidueContraction
 public import FLT.Mazur.WeierstrassModificationXResidueContractionGeometry
 public import FLT.Mazur.WeierstrassModificationXResidueFiber
+public import FLT.Mazur.WeierstrassModificationXResidueIncidenceContraction
 public import FLT.Mazur.WeierstrassModificationXResidueNodeGeometry
 public import FLT.Mazur.WeierstrassModificationXResidueTensorFunctions
 public import FLT.Mazur.WeierstrassModificationXSaturation
