@@ -4924,6 +4924,7 @@ public import FLT.Mazur.ProjectiveCoherentCharts
 public import FLT.Mazur.ProjectiveCoherentCohomology
 public import FLT.Mazur.ProjectiveCoordinateGeneratorOpen
 public import FLT.Mazur.ProjectiveCoordinateSections
+public import FLT.Mazur.ProjectiveFiniteAffineNeighborhood
 public import FLT.Mazur.ProjectiveGeneration
 public import FLT.Mazur.ProjectiveGenerationEventually
 public import FLT.Mazur.ProjectiveLineActionAssociativity
