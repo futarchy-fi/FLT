@@ -5080,6 +5080,7 @@ public import FLT.Mazur.RelativeDirectImageOpenResolution
 public import FLT.Mazur.RelativeFiberMorphism
 public import FLT.Mazur.RelativeIdealAmbientHom
 public import FLT.Mazur.RelativeIdealAmbientIsoSquare
+public import FLT.Mazur.RelativeIdealExtensionIsomorphism
 public import FLT.Mazur.RelativeIdealExtensionNaturality
 public import FLT.Mazur.RelativeIdealFamilies
 public import FLT.Mazur.RelativeIdealFamilyIsoCoherence
