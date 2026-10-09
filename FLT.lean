@@ -5645,6 +5645,7 @@ public import FLT.Mazur.UniversalWeierstrassGeometricLevelFour
 public import FLT.Mazur.UniversalWeierstrassParameter
 public import FLT.Mazur.UniversallyClosedFiniteCover
 public import FLT.Mazur.UniversallyDistinctSections
+public import FLT.Mazur.UnramifiedSectionImmersion
 public import FLT.Mazur.ValuationProjectiveNormalization
 public import FLT.Mazur.ValuationRingCompleteModel
 public import FLT.Mazur.ValuationRingHenselianModel
