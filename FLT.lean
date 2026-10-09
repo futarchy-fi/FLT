@@ -3686,6 +3686,7 @@ public import FLT.Mazur.HenselianSmallCubic
 public import FLT.Mazur.HigherDirectImageOpenSheafification
 public import FLT.Mazur.HigherDirectImagePresheaf
 public import FLT.Mazur.HigherDirectImagePresheafRestriction
+public import FLT.Mazur.HilbertBasisAffineClassification
 public import FLT.Mazur.HilbertBasisAffineFactorization
 public import FLT.Mazur.HilbertBasisBaseChangeCover
 public import FLT.Mazur.HilbertBasisDeterminant
