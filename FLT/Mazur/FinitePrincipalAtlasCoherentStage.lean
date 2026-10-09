@@ -87,7 +87,7 @@ theorem exists_finitePrincipalAtlas_cover_comparison_stage :
   obtain ⟨z, hxz, hs, hz, hcz⟩ := exists_finitePrincipalAtlas_cover_stage U f x s t ht
   have H := exists_finitePrincipalAtlas_comparison_stage U f
   have H' := H z hz z.source
-  obtain ⟨w, hzw, _, hw, he⟩ := H' 
+  obtain ⟨w, hzw, _, hw, he⟩ := H'
   refine ⟨w, hxz.trans hzw,
     fun i ↦ (hs i).trans (principalOccurrence_source_mono (dst := D) (a := AA) (b := BB)
       (f := fun i k ↦ (E i k).toAlgHom) hzw i), hw, hcz w hzw hw, he⟩
