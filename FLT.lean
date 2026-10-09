@@ -3750,6 +3750,7 @@ public import FLT.Mazur.FlatGradedProjChartBaseChange
 public import FLT.Mazur.FlatHomogeneousLocalizationBaseChange
 public import FLT.Mazur.FlatIdealTensor
 public import FLT.Mazur.FlatQuotientCartierFiber
+public import FLT.Mazur.FlatQuotientIdealBaseChange
 public import FLT.Mazur.FlatQuotientIdealFiber
 public import FLT.Mazur.FlatQuotientLocalCartier
 public import FLT.Mazur.FlatScalarHomology
