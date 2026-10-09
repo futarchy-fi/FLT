@@ -4424,6 +4424,7 @@ public import FLT.Mazur.PrincipalModelBaseChange
 public import FLT.Mazur.PrincipalOccurrenceAmbientIndex
 public import FLT.Mazur.PrincipalOccurrenceAmbientSquares
 public import FLT.Mazur.PrincipalOccurrenceAtlasComparisons
+public import FLT.Mazur.PrincipalOccurrenceAtlasEquationRefinement
 public import FLT.Mazur.PrincipalOccurrenceAtlasQuotientEquations
 public import FLT.Mazur.PrincipalOccurrenceBijectiveIndex
 public import FLT.Mazur.PrincipalOccurrenceChangeRefinement
