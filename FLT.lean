@@ -5240,6 +5240,7 @@ public import FLT.Mazur.WeierstrassModificationXFiberConic
 public import FLT.Mazur.WeierstrassModificationXFiberConicGeometry
 public import FLT.Mazur.WeierstrassModificationXFiberConicQuotient
 public import FLT.Mazur.WeierstrassModificationXFiberFirstNode
+public import FLT.Mazur.WeierstrassModificationXFiberIntersection
 public import FLT.Mazur.WeierstrassModificationXFiberKernels
 public import FLT.Mazur.WeierstrassModificationXFiberNodeGeometry
 public import FLT.Mazur.WeierstrassModificationXFiberNodeMaps
