@@ -6195,6 +6195,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXBaseChangeCoordinates
 public import FLT.Mazur.WeierstrassSuccessiveXCoefficients
 public import FLT.Mazur.WeierstrassSuccessiveXContraction
 public import FLT.Mazur.WeierstrassSuccessiveXDepthComparison
+public import FLT.Mazur.WeierstrassSuccessiveXDepthTensorOverlap
 public import FLT.Mazur.WeierstrassSuccessiveXFlat
 public import FLT.Mazur.WeierstrassSuccessiveXFractionEmbedding
 public import FLT.Mazur.WeierstrassSuccessiveXGenerators
