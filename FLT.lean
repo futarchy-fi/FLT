@@ -4569,6 +4569,7 @@ public import FLT.Mazur.PolygonUniversalScaling
 public import FLT.Mazur.PolynomialCoefficientArrow
 public import FLT.Mazur.PolynomialEndpointInterpolation
 public import FLT.Mazur.PolynomialRelationIntegerModel
+public import FLT.Mazur.PolynomialSpectrumBaseChangeCover
 public import FLT.Mazur.PowerCohomologyHZeroSections
 public import FLT.Mazur.PowerCohomologyKernelGenerators
 public import FLT.Mazur.PowerCohomologyKernelReduction
