@@ -3812,6 +3812,7 @@ public import FLT.Mazur.HilbertPolynomialSchemeAffineParameter
 public import FLT.Mazur.HilbertPolynomialSchemeClassification
 public import FLT.Mazur.HilbertPolynomialSchemeFaithful
 public import FLT.Mazur.HilbertPolynomialSchemeMorphism
+public import FLT.Mazur.HilbertPolynomialSchemeNaturality
 public import FLT.Mazur.HilbertPolynomialSchemeOver
 public import FLT.Mazur.HilbertPolynomialSchemeOverlap
 public import FLT.Mazur.HilbertPolynomialSchemeParameterDegree
