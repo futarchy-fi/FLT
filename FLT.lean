@@ -3526,6 +3526,7 @@ public import FLT.Mazur.EtaleAlgebraReduced
 public import FLT.Mazur.EtaleCoordinate
 public import FLT.Mazur.EtaleDimGe
 public import FLT.Mazur.EtaleDimLe
+public import FLT.Mazur.EtaleFiniteQuotientBranch
 public import FLT.Mazur.EtaleFiniteSupportCartier
 public import FLT.Mazur.EtaleLocalParameterIdeals
 public import FLT.Mazur.EtalePrimeParameterIdeals
