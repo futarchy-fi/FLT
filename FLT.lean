@@ -5086,6 +5086,7 @@ public import FLT.Mazur.RationalFibers
 public import FLT.Mazur.RationalPrimeTorsionGeometricModel
 public import FLT.Mazur.RationalPrimeTorsionLocalModel
 public import FLT.Mazur.ReconstructionComposition
+public import FLT.Mazur.ReducedConstantFiberFlat
 public import FLT.Mazur.ReducedCurveLineComparison
 public import FLT.Mazur.ReducedCurveLineTensorDegree
 public import FLT.Mazur.ReducedCurvePicardDegree
