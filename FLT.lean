@@ -3494,6 +3494,7 @@ public import FLT.Mazur.EtaleDimLe
 public import FLT.Mazur.EvaluatedPrincipalRefinement
 public import FLT.Mazur.EventualTwistVanishing
 public import FLT.Mazur.ExactFunctorInjectiveExt
+public import FLT.Mazur.ExactOrderCyclicPowers
 public import FLT.Mazur.ExactSourceDenominatorLift
 public import FLT.Mazur.FCurveContracts
 public import FLT.Mazur.FaithfullyFlatFinitePresentation
