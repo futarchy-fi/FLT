@@ -3009,6 +3009,7 @@ public import FLT.Mazur.CoefficientSmoothDescent
 public import FLT.Mazur.CoefficientSpectrumLimit
 public import FLT.Mazur.CoefficientStageColimit
 public import FLT.Mazur.CoefficientStageDiagram
+public import FLT.Mazur.CofinalUpperLimit
 public import FLT.Mazur.CoherentAffineCoverSections
 public import FLT.Mazur.CoherentClosedPushforward
 public import FLT.Mazur.CoherentClosedReduction
