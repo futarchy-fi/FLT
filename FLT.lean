@@ -3552,6 +3552,7 @@ public import FLT.Mazur.FinitePrincipalAtlasCoherentTripleStage
 public import FLT.Mazur.FinitePrincipalAtlasCommonCover
 public import FLT.Mazur.FinitePrincipalAtlasCommonRecovery
 public import FLT.Mazur.FinitePrincipalAtlasComparisonStage
+public import FLT.Mazur.FinitePrincipalAtlasCone
 public import FLT.Mazur.FinitePrincipalAtlasCoordinates
 public import FLT.Mazur.FinitePrincipalAtlasCoverStage
 public import FLT.Mazur.FinitePrincipalAtlasDiagonalStage
