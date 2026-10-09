@@ -2735,6 +2735,7 @@ public import FLT.Mazur.AmpleFiberFiniteCoordinates
 public import FLT.Mazur.AmpleFiberGeneratorNeighborhood
 public import FLT.Mazur.AmpleFiberGlobalGenerators
 public import FLT.Mazur.AmpleFiberProjectiveCoordinates
+public import FLT.Mazur.AmpleFiniteAffineNeighborhood
 public import FLT.Mazur.AmpleGlobalGeneration
 public import FLT.Mazur.AmpleHighDegreeSectionCover
 public import FLT.Mazur.AmpleLineBundle
