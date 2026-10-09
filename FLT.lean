@@ -2721,6 +2721,7 @@ public import FLT.Mazur.AffineTripleUnitCoefficients
 public import FLT.Mazur.AffineTrivialLineSectionOpen
 public import FLT.Mazur.AmbientHilbertChartSystem
 public import FLT.Mazur.AmbientHilbertGluedBase
+public import FLT.Mazur.AmbientHilbertGluedCharts
 public import FLT.Mazur.AmbientHilbertGluing
 public import FLT.Mazur.AmbientHilbertPairTransitions
 public import FLT.Mazur.AmbientHilbertTripleIntersection
