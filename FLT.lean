@@ -2718,6 +2718,7 @@ public import FLT.Mazur.AffineTripleOverlapRefinement
 public import FLT.Mazur.AffineTripleOverlapRefinementSquares
 public import FLT.Mazur.AffineTripleUnitCoefficients
 public import FLT.Mazur.AffineTrivialLineSectionOpen
+public import FLT.Mazur.AmbientQuotientRelativeBaseChange
 public import FLT.Mazur.AmbientQuotientRelativeSpace
 public import FLT.Mazur.AmbientQuotientSchemeFamilies
 public import FLT.Mazur.AmpleAffineBase
