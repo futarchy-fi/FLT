@@ -4745,6 +4745,7 @@ public import FLT.Mazur.PrincipalOccurrenceExistence
 public import FLT.Mazur.PrincipalOccurrenceFiniteRestrictions
 public import FLT.Mazur.PrincipalOccurrenceGluedCartesian
 public import FLT.Mazur.PrincipalOccurrenceGluedClosed
+public import FLT.Mazur.PrincipalOccurrenceGluedFiniteness
 public import FLT.Mazur.PrincipalOccurrenceGluedIncidence
 public import FLT.Mazur.PrincipalOccurrenceGluedStructure
 public import FLT.Mazur.PrincipalOccurrenceGluedTransitions
