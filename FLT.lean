@@ -4367,6 +4367,7 @@ public import FLT.Mazur.PrincipalFamilySurjective
 public import FLT.Mazur.PrincipalFanCompatibleKernelIsomorphisms
 public import FLT.Mazur.PrincipalFanDirected
 public import FLT.Mazur.PrincipalFanFiniteRestrictions
+public import FLT.Mazur.PrincipalFanInitialRestriction
 public import FLT.Mazur.PrincipalFanIntersections
 public import FLT.Mazur.PrincipalFanIsomorphismLimits
 public import FLT.Mazur.PrincipalFanIsomorphismOpens
