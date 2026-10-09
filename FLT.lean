@@ -198,6 +198,7 @@ public import FLT.EllipticCurve.CubicCyclicIncidencePoints
 public import FLT.EllipticCurve.CubicCyclicNaturality
 public import FLT.EllipticCurve.CubicCyclicParameterTransport
 public import FLT.EllipticCurve.CubicCyclicQuadraticDescent
+public import FLT.EllipticCurve.CubicCyclicRingMaps
 public import FLT.EllipticCurve.CubicCyclicSign
 public import FLT.EllipticCurve.CubicCyclicSpecialization
 public import FLT.EllipticCurve.CubicCyclicTransportFunctor

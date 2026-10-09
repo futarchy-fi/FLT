@@ -2388,6 +2388,16 @@ torsion, and cyclic quotient. Thus both identity and scalar-tower composition
 are established for the actual coefficient maps. Compatibility of descended
 coordinate maps under parameter changes remains open.
 
+### Explicit coefficient maps and inverse transport (2026-10-09)
+
+`CubicCyclicRingMaps` proves identity and composition for actual cyclic
+transport along explicit ring homomorphisms, including parameter changes.
+It proves compatibility with coordinate changes defined over the source
+ring and identifies the inverse of ring-equivalence transport with
+transport along the inverse equivalence, after equation congruence.
+Naturality of the quadratic descended coordinate maps still needs proof
+before these results yield the Legendre automorphism relations.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
