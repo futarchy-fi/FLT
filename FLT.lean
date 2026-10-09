@@ -5524,6 +5524,7 @@ public import FLT.Mazur.TensorKernelExtension
 public import FLT.Mazur.TensorKernelFiniteLength
 public import FLT.Mazur.TensorKernelFlatCokernel
 public import FLT.Mazur.TensorOpenChart
+public import FLT.Mazur.TensorOpenChartIntersection
 public import FLT.Mazur.TensorOpenChartOverlap
 public import FLT.Mazur.TensorOpenChartRange
 public import FLT.Mazur.TensorPowerDistribution
