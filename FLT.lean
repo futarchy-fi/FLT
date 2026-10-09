@@ -4848,6 +4848,7 @@ public import FLT.Mazur.PrincipalOpenIntegerModel
 public import FLT.Mazur.PrincipalOpenIntersectionModels
 public import FLT.Mazur.PrincipalOpenSectionAlgebra
 public import FLT.Mazur.PrincipalOpenTensor
+public import FLT.Mazur.PrincipalOpenTensorGeometry
 public import FLT.Mazur.PrincipalOpenTensorTransition
 public import FLT.Mazur.PrincipalOpenTransport
 public import FLT.Mazur.PrincipalOpenTransportGeometry
