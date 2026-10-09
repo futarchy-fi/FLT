@@ -2546,6 +2546,7 @@ public import FLT.Mazur.AffineCohomologyVanishingRelInjective
 public import FLT.Mazur.AffineCohomologyVanishingSpectrum
 public import FLT.Mazur.AffineComparisonConjugation
 public import FLT.Mazur.AffineComparisonSquare
+public import FLT.Mazur.AffineCoverClosedLimit
 public import FLT.Mazur.AffineCoverCohomology
 public import FLT.Mazur.AffineCoverIntersections
 public import FLT.Mazur.AffineDescentReconstructionComposition
