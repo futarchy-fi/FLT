@@ -4096,6 +4096,7 @@ public import FLT.Mazur.IntersectionDiagramGluing
 public import FLT.Mazur.IntersectionGluingCharts
 public import FLT.Mazur.IntersectionGluingSections
 public import FLT.Mazur.IntersectionModelClosedProducts
+public import FLT.Mazur.IntersectionSectionGluing
 public import FLT.Mazur.IntersectionSectionLimitCoordinates
 public import FLT.Mazur.IntersectionUnitCocycle
 public import FLT.Mazur.IntersectionUnitCocycleRecovery
