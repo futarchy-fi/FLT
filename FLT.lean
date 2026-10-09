@@ -4129,6 +4129,7 @@ public import FLT.Mazur.IntersectionSectionLimitCoordinates
 public import FLT.Mazur.IntersectionUnitCocycle
 public import FLT.Mazur.IntersectionUnitCocycleRecovery
 public import FLT.Mazur.InvariantLocalizationAction
+public import FLT.Mazur.InvariantLocalizationComparison
 public import FLT.Mazur.InvariantLocalizationNumerator
 public import FLT.Mazur.IrreducibleComponentAmple
 public import FLT.Mazur.IteratedOldArrowRepresentatives
