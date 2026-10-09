@@ -5707,6 +5707,7 @@ public import FLT.Mazur.WeierstrassDividedOlderGlobalTensorCharts
 public import FLT.Mazur.WeierstrassDividedOlderIndexedNodeCover
 public import FLT.Mazur.WeierstrassDividedOlderResidueNodes
 public import FLT.Mazur.WeierstrassDividedOlderSuccessiveCharts
+public import FLT.Mazur.WeierstrassDividedResidueAtlasRefinement
 public import FLT.Mazur.WeierstrassDividedTensorAtlasComparison
 public import FLT.Mazur.WeierstrassDividedTensorYBoundary
 public import FLT.Mazur.WeierstrassDividedTerminalResidueAtlas
