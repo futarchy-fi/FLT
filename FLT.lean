@@ -3810,6 +3810,7 @@ public import FLT.Mazur.HilbertPolynomialQuotientBaseChange
 public import FLT.Mazur.HilbertPolynomialSchemeAffineNaturality
 public import FLT.Mazur.HilbertPolynomialSchemeAffineParameter
 public import FLT.Mazur.HilbertPolynomialSchemeOver
+public import FLT.Mazur.HilbertPolynomialSchemeOverlap
 public import FLT.Mazur.HilbertPolynomialSchemeParameterDegree
 public import FLT.Mazur.HilbertPolynomialSchemeParameterIdeal
 public import FLT.Mazur.HilbertPolynomialUniversalChartPullback
