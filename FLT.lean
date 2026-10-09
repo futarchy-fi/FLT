@@ -3548,6 +3548,7 @@ public import FLT.Mazur.FiniteFlatAffineLocalFree
 public import FLT.Mazur.FiniteGroupAffineNeighborhood
 public import FLT.Mazur.FiniteGroupAffineQuotient
 public import FLT.Mazur.FiniteGroupFieldPointOrbits
+public import FLT.Mazur.FiniteGroupInvariantAffineCover
 public import FLT.Mazur.FiniteGroupInvariantOpens
 public import FLT.Mazur.FiniteGroupInvariantPolynomial
 public import FLT.Mazur.FiniteGroupInvariantRing
