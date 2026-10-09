@@ -5702,6 +5702,7 @@ public import FLT.Mazur.WeierstrassModificationXOverlap
 public import FLT.Mazur.WeierstrassModificationXPresentation
 public import FLT.Mazur.WeierstrassModificationXReesChart
 public import FLT.Mazur.WeierstrassModificationXResidueCastFactorization
+public import FLT.Mazur.WeierstrassModificationXResidueConicContraction
 public import FLT.Mazur.WeierstrassModificationXResidueContraction
 public import FLT.Mazur.WeierstrassModificationXResidueContractionGeometry
 public import FLT.Mazur.WeierstrassModificationXResidueFiber
