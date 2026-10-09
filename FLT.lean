@@ -5791,6 +5791,7 @@ public import FLT.Mazur.WeierstrassInfinityInputTriple
 public import FLT.Mazur.WeierstrassInfinityInverseCover
 public import FLT.Mazur.WeierstrassInfinityInverseNeighborhood
 public import FLT.Mazur.WeierstrassInfinityInverseScheme
+public import FLT.Mazur.WeierstrassInfinityLaurentPuncture
 public import FLT.Mazur.WeierstrassInfinityLineCoordinates
 public import FLT.Mazur.WeierstrassInfinityLineParameter
 public import FLT.Mazur.WeierstrassInfinityLinePolynomial
