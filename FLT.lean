@@ -2503,6 +2503,7 @@ public import FLT.Mazur.AdicCompletionScalars
 public import FLT.Mazur.AffineAdicCohomologyImage
 public import FLT.Mazur.AffineAdicFormalComparison
 public import FLT.Mazur.AffineAnnihilator
+public import FLT.Mazur.AffineAtlasSeparatedLimit
 public import FLT.Mazur.AffineBaseChangeCoefficients
 public import FLT.Mazur.AffineBaseSectionAlgebra
 public import FLT.Mazur.AffineBaseSectionFunctor
@@ -2545,6 +2546,7 @@ public import FLT.Mazur.AffineCohomologyVanishingRelInjective
 public import FLT.Mazur.AffineCohomologyVanishingSpectrum
 public import FLT.Mazur.AffineComparisonConjugation
 public import FLT.Mazur.AffineComparisonSquare
+public import FLT.Mazur.AffineCoverClosedLimit
 public import FLT.Mazur.AffineCoverCohomology
 public import FLT.Mazur.AffineCoverIntersections
 public import FLT.Mazur.AffineDescentReconstructionComposition
@@ -2970,6 +2972,7 @@ public import FLT.Mazur.ChowWitnessSectionsLocalizationAssembly
 public import FLT.Mazur.ClassifiedGenusOneFamily
 public import FLT.Mazur.ClopenLimitDescent
 public import FLT.Mazur.ClosedCohomologyFinite
+public import FLT.Mazur.ClosedCoverLimitDescent
 public import FLT.Mazur.ClosedDescentCharts
 public import FLT.Mazur.ClosedDescentGluingData
 public import FLT.Mazur.ClosedDescentGluingMaps
@@ -2978,6 +2981,7 @@ public import FLT.Mazur.ClosedDirectImageAcyclic
 public import FLT.Mazur.ClosedDirectImageComposition
 public import FLT.Mazur.ClosedFiberTensorExactness
 public import FLT.Mazur.ClosedImmersionCartesianCover
+public import FLT.Mazur.ClosedImmersionLimitDescent
 public import FLT.Mazur.ClosedImmersionModulePushforward
 public import FLT.Mazur.ClosedLineProjectionFormula
 public import FLT.Mazur.ClosedModuleDescent
@@ -3583,6 +3587,8 @@ public import FLT.Mazur.FinitePrincipalAtlasPairUnionRecovery
 public import FLT.Mazur.FinitePrincipalAtlasProjection
 public import FLT.Mazur.FinitePrincipalAtlasProjectionCartesian
 public import FLT.Mazur.FinitePrincipalAtlasProjectionClosed
+public import FLT.Mazur.FinitePrincipalAtlasProper
+public import FLT.Mazur.FinitePrincipalAtlasSeparated
 public import FLT.Mazur.FinitePrincipalAtlasTargetCovers
 public import FLT.Mazur.FinitePrincipalAtlasTargetGluing
 public import FLT.Mazur.FinitePrincipalAtlasTripleComparison
@@ -3668,6 +3674,7 @@ public import FLT.Mazur.FiniteTypePrincipalMaps
 public import FLT.Mazur.FiniteTypePrincipalPresentation
 public import FLT.Mazur.FiniteTypePrincipalSurjectiveLifts
 public import FLT.Mazur.FiniteTypeRelationPresentation
+public import FLT.Mazur.FinitelyPresentedImmersedProperCover
 public import FLT.Mazur.FinitelyPresentedIntersectionCocycleModel
 public import FLT.Mazur.FinitelyPresentedLineSheafDescent
 public import FLT.Mazur.FixedModelElementLifts
@@ -4000,6 +4007,7 @@ public import FLT.Mazur.IdealTwistCohomologyVanishing
 public import FLT.Mazur.IdealTwistSectionOpen
 public import FLT.Mazur.IdealTwistTransitionExact
 public import FLT.Mazur.IdealWitnessSupportInduction
+public import FLT.Mazur.ImmersedProperCoverBaseChange
 public import FLT.Mazur.IncreasingCechAffineGeneric
 public import FLT.Mazur.IncreasingCechBaseComplex
 public import FLT.Mazur.IncreasingCechBaseCycles
@@ -4408,6 +4416,9 @@ public import FLT.Mazur.OpenImmersionImageUnionPullback
 public import FLT.Mazur.OpenImmersionImageUnionPullbackLift
 public import FLT.Mazur.OpenImmersionImageUnionReindex
 public import FLT.Mazur.OpenImmersionSectionComparison
+public import FLT.Mazur.OpenIntersectionClosedProjection
+public import FLT.Mazur.OpenIntersectionProduct
+public import FLT.Mazur.OpenIntersectionRefinement
 public import FLT.Mazur.OpenIrreducibleComponent
 public import FLT.Mazur.OpenModuleDirectImageCohomology
 public import FLT.Mazur.OpenModuleSectionScalars
@@ -4929,17 +4940,21 @@ public import FLT.Mazur.ProperAmpleFiberApproximation
 public import FLT.Mazur.ProperAmpleFiberModel
 public import FLT.Mazur.ProperAmpleFiberNeighborhood
 public import FLT.Mazur.ProperAmpleFiberNoetherian
+public import FLT.Mazur.ProperClosedLimitDescent
 public import FLT.Mazur.ProperCoherentCohomology
 public import FLT.Mazur.ProperCohomologyWitnesses
 public import FLT.Mazur.ProperConnectedReducedSections
 public import FLT.Mazur.ProperCoverImmersionCriterion
+public import FLT.Mazur.ProperCoverLimitDescent
 public import FLT.Mazur.ProperCurveGenus
 public import FLT.Mazur.ProperFiberEvaluationLocus
 public import FLT.Mazur.ProperFiberNeighborhood
 public import FLT.Mazur.ProperFiberTensorComplex
 public import FLT.Mazur.ProperFieldCohomologyBaseChange
 public import FLT.Mazur.ProperFiniteFiberNeighborhood
+public import FLT.Mazur.ProperFinitePresentationEnvelope
 public import FLT.Mazur.ProperGlobalSectionFinite
+public import FLT.Mazur.ProperImmersedCover
 public import FLT.Mazur.ProperIntegralConstantSections
 public import FLT.Mazur.ProperLineSheafDescent
 public import FLT.Mazur.ProperLocalAmpleFiberGenerators
@@ -5195,6 +5210,7 @@ public import FLT.Mazur.SchemeCanonicalOverlapNaturality
 public import FLT.Mazur.SchemeCanonicalOverlapRefinement
 public import FLT.Mazur.SchemeCanonicalRecoveryCompatibility
 public import FLT.Mazur.SchemeChartBaseScalars
+public import FLT.Mazur.SchemeClosedBaseChange
 public import FLT.Mazur.SchemeCohomologyIso
 public import FLT.Mazur.SchemeCohomologyIsoCocycles
 public import FLT.Mazur.SchemeConeGluing
@@ -5399,6 +5415,7 @@ public import FLT.Mazur.SegreChartMaps
 public import FLT.Mazur.SegreChartQuotient
 public import FLT.Mazur.SegreClosedImmersion
 public import FLT.Mazur.SegreSchemeMorphism
+public import FLT.Mazur.SeparatedFinitePresentationModel
 public import FLT.Mazur.SeparatedOpenCover
 public import FLT.Mazur.SeparatedOverlapClosedComparison
 public import FLT.Mazur.SeparatedOverlapPullback
