@@ -3680,6 +3680,7 @@ public import FLT.Mazur.HilbertChartBaseChange
 public import FLT.Mazur.HilbertChartBasisAlgebra
 public import FLT.Mazur.HilbertChartBasisRelations
 public import FLT.Mazur.HilbertChartClassification
+public import FLT.Mazur.HilbertChartClassificationNaturality
 public import FLT.Mazur.HilbertChartClassifyingMap
 public import FLT.Mazur.HilbertChartCoefficientMap
 public import FLT.Mazur.HilbertChartEquations
