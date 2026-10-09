@@ -3690,6 +3690,7 @@ public import FLT.Mazur.HilbertChartMultiplication
 public import FLT.Mazur.HilbertChartParameterRecovery
 public import FLT.Mazur.HilbertChartPointClassification
 public import FLT.Mazur.HilbertChartPointFamily
+public import FLT.Mazur.HilbertChartQuotientBasis
 public import FLT.Mazur.HilbertChartSpecialization
 public import FLT.Mazur.HilbertChartSpecializationEvaluation
 public import FLT.Mazur.HilbertChartStructureConstants
