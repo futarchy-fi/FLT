@@ -3835,6 +3835,7 @@ public import FLT.Mazur.HilbertOpenAmbientFamilies
 public import FLT.Mazur.HilbertOpenAmbientNaturality
 public import FLT.Mazur.HilbertOpenAmbientOverlap
 public import FLT.Mazur.HilbertOpenAmbientUniversalFamily
+public import FLT.Mazur.HilbertOpenInclusionFamilies
 public import FLT.Mazur.HilbertOpenIntrinsicClassification
 public import FLT.Mazur.HilbertOpenOverlapCoherence
 public import FLT.Mazur.HilbertPolynomialAffineClassification
