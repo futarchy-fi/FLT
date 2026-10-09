@@ -3554,6 +3554,7 @@ public import FLT.Mazur.FiniteDivisorLengthAdditivity
 public import FLT.Mazur.FiniteEvaluationLocus
 public import FLT.Mazur.FiniteFieldRankLength
 public import FLT.Mazur.FiniteFlatAffineLocalFree
+public import FLT.Mazur.FiniteGeometricSections
 public import FLT.Mazur.FiniteGroupAffineNeighborhood
 public import FLT.Mazur.FiniteGroupAffineQuotient
 public import FLT.Mazur.FiniteGroupFieldPointOrbits
