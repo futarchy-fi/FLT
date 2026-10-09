@@ -5640,6 +5640,7 @@ public import FLT.Mazur.WeierstrassGlobalModificationFlat
 public import FLT.Mazur.WeierstrassGlobalModificationGluing
 public import FLT.Mazur.WeierstrassGlobalModificationOriginalOpen
 public import FLT.Mazur.WeierstrassGlobalModificationProper
+public import FLT.Mazur.WeierstrassGlobalModificationSmoothOpen
 public import FLT.Mazur.WeierstrassGlobalModificationZero
 public import FLT.Mazur.WeierstrassGlobalNegation
 public import FLT.Mazur.WeierstrassGlobalNegationInvolution
