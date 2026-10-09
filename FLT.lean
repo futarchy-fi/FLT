@@ -4656,6 +4656,7 @@ public import FLT.Mazur.OpenIntersectionProduct
 public import FLT.Mazur.OpenIntersectionRefinement
 public import FLT.Mazur.OpenIrreducibleComponent
 public import FLT.Mazur.OpenModuleDirectImageCohomology
+public import FLT.Mazur.OpenModuleRestrictionCoherence
 public import FLT.Mazur.OpenModuleSectionScalars
 public import FLT.Mazur.OpenRestrictionClosed
 public import FLT.Mazur.OpenRestrictionInclusion
