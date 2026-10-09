@@ -4702,6 +4702,7 @@ public import FLT.Mazur.PrincipalOccurrenceAtlasCoverEquations
 public import FLT.Mazur.PrincipalOccurrenceAtlasEquationRefinement
 public import FLT.Mazur.PrincipalOccurrenceAtlasImageRefinement
 public import FLT.Mazur.PrincipalOccurrenceAtlasQuotientEquations
+public import FLT.Mazur.PrincipalOccurrenceBaseCompatibility
 public import FLT.Mazur.PrincipalOccurrenceBijectiveIndex
 public import FLT.Mazur.PrincipalOccurrenceChangeRefinement
 public import FLT.Mazur.PrincipalOccurrenceChartDiagram
