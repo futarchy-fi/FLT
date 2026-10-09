@@ -3698,6 +3698,7 @@ public import FLT.Mazur.HilbertChartSpecializationEvaluation
 public import FLT.Mazur.HilbertChartStructureConstants
 public import FLT.Mazur.HilbertChartUniversalClosedFamily
 public import FLT.Mazur.HilbertChartUniversalFamily
+public import FLT.Mazur.HilbertPolynomialQuotientBaseChange
 public import FLT.Mazur.HomIntegerModel
 public import FLT.Mazur.HomogeneousLocalizationBaseChange
 public import FLT.Mazur.HomogeneousLocalizationGenerator
