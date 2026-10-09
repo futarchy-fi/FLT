@@ -4251,6 +4251,7 @@ public import FLT.Mazur.ModuleTensorPowerSectionInduction
 public import FLT.Mazur.ModuleTensorPullbackRestriction
 public import FLT.Mazur.ModuleUnitCocycleCongr
 public import FLT.Mazur.ModuleUnitCocyclePullback
+public import FLT.Mazur.MonoFamilySchemeGluing
 public import FLT.Mazur.MultiplicativeGroupDimension
 public import FLT.Mazur.MultiplicativeGroupFieldExtension
 public import FLT.Mazur.MultiplicativeGroupScheme
