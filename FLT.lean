@@ -4729,6 +4729,7 @@ public import FLT.Mazur.PrincipalOccurrenceExistence
 public import FLT.Mazur.PrincipalOccurrenceFiniteRestrictions
 public import FLT.Mazur.PrincipalOccurrenceGluedTransitions
 public import FLT.Mazur.PrincipalOccurrenceGluingChartMaps
+public import FLT.Mazur.PrincipalOccurrenceGluingIndex
 public import FLT.Mazur.PrincipalOccurrenceGluingStage
 public import FLT.Mazur.PrincipalOccurrenceImageInclusions
 public import FLT.Mazur.PrincipalOccurrenceIncidentPatchRoutes
