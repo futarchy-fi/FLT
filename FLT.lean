@@ -4712,6 +4712,7 @@ public import FLT.Mazur.PrincipalOccurrenceSurjective
 public import FLT.Mazur.PrincipalOccurrenceSurjectiveBijections
 public import FLT.Mazur.PrincipalOccurrenceTargetBounds
 public import FLT.Mazur.PrincipalOccurrenceTargetChartGluing
+public import FLT.Mazur.PrincipalOccurrenceTargetChartIncident
 public import FLT.Mazur.PrincipalOccurrenceTargetChartNaturality
 public import FLT.Mazur.PrincipalOccurrenceTargetChartRecovery
 public import FLT.Mazur.PrincipalOccurrenceTargetPatchSelection
