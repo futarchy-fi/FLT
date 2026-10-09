@@ -3774,6 +3774,7 @@ public import FLT.Mazur.HilbertMonomialChartCover
 public import FLT.Mazur.HilbertMonomialFiberBasis
 public import FLT.Mazur.HilbertMonomialPrincipalSpecCover
 public import FLT.Mazur.HilbertPolynomialAmbient
+public import FLT.Mazur.HilbertPolynomialAmbientCartesian
 public import FLT.Mazur.HilbertPolynomialAmbientCover
 public import FLT.Mazur.HilbertPolynomialAmbientNaturality
 public import FLT.Mazur.HilbertPolynomialAmbientOverlap
