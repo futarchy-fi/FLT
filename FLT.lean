@@ -2488,6 +2488,7 @@ public import FLT.Mathlib.Topology.MetricSpace.Pseudo.Matrix
 public import FLT.Mathlib.Topology.Polish
 public import FLT.Mazur.AbelianInjectiveFlasque
 public import FLT.Mazur.AbsoluteDirectImageCohomology
+public import FLT.Mazur.AcyclicCoefficientCohomology
 public import FLT.Mazur.AcyclicDirectImageResolution
 public import FLT.Mazur.AcyclicLineSectionBaseChange
 public import FLT.Mazur.AcyclicPushforwardCohomology
