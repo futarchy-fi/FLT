@@ -4694,6 +4694,7 @@ public import FLT.Mazur.PrincipalOccurrenceCoherentRefinement
 public import FLT.Mazur.PrincipalOccurrenceCommonDoublePullback
 public import FLT.Mazur.PrincipalOccurrenceCommonDoubleRoutes
 public import FLT.Mazur.PrincipalOccurrenceCommonFamily
+public import FLT.Mazur.PrincipalOccurrenceCommonGluing
 public import FLT.Mazur.PrincipalOccurrenceCommonIdentities
 public import FLT.Mazur.PrincipalOccurrenceCommonPatchComparison
 public import FLT.Mazur.PrincipalOccurrenceCommonPatchRoutes
