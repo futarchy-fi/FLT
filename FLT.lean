@@ -3089,6 +3089,7 @@ public import FLT.Mazur.ConnectedFiberGeneralization
 public import FLT.Mazur.ConnectedFiberPrimeStratum
 public import FLT.Mazur.ConnectedOfGlobalSections
 public import FLT.Mazur.ConnectedPointedLineSheafDescent
+public import FLT.Mazur.ConstantCyclicAffineGeometry
 public import FLT.Mazur.ConstantCyclicFiniteEtale
 public import FLT.Mazur.ConstantCyclicGenerator
 public import FLT.Mazur.ConstantCyclicGroup
