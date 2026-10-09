@@ -5739,6 +5739,7 @@ public import FLT.Mazur.WeierstrassDividedOlderGlobalZeroSuccessive
 public import FLT.Mazur.WeierstrassDividedOlderIndexedIntersections
 public import FLT.Mazur.WeierstrassDividedOlderIndexedNodeCover
 public import FLT.Mazur.WeierstrassDividedOlderInfinityPreimage
+public import FLT.Mazur.WeierstrassDividedOlderResidueInfinity
 public import FLT.Mazur.WeierstrassDividedOlderResidueNodes
 public import FLT.Mazur.WeierstrassDividedOlderSuccessiveCharts
 public import FLT.Mazur.WeierstrassDividedOlderZeroIndexedNodeCover
