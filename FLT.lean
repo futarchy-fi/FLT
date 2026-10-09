@@ -5617,6 +5617,7 @@ public import FLT.Mazur.WeierstrassDividedExteriorLocalContraction
 public import FLT.Mazur.WeierstrassDividedExteriorOriginalOpen
 public import FLT.Mazur.WeierstrassDividedExteriorProper
 public import FLT.Mazur.WeierstrassDividedExteriorReassociation
+public import FLT.Mazur.WeierstrassDividedExteriorSmoothOpen
 public import FLT.Mazur.WeierstrassDividedExteriorStep
 public import FLT.Mazur.WeierstrassDividedExteriorYBoundary
 public import FLT.Mazur.WeierstrassDividedFiniteAffineProper
