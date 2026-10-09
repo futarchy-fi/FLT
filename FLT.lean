@@ -3150,6 +3150,7 @@ public import FLT.Mazur.CurvePositiveDegreeAffineSection
 public import FLT.Mazur.CurvePositiveDegreeAmple
 public import FLT.Mazur.CurvePositiveDegreeCohomologyVanishing
 public import FLT.Mazur.CurvePositiveDegreeSections
+public import FLT.Mazur.CurveRiemannRochEuler
 public import FLT.Mazur.CuspCollision
 public import FLT.Mazur.CuspOrderNumerator
 public import FLT.Mazur.CyclicNodeChart
