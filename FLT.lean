@@ -6202,6 +6202,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXMiddleFirstParameter
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleIncidence
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleLines
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodeCoordinates
+public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodeEquiv
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodeMaps
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleOverlap
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleUnion
