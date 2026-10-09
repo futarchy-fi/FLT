@@ -3808,6 +3808,7 @@ public import FLT.Mazur.HilbertMonomialPrincipalSpecCover
 public import FLT.Mazur.HilbertOpenAmbientBaseChange
 public import FLT.Mazur.HilbertOpenAmbientClassification
 public import FLT.Mazur.HilbertOpenAmbientFamilies
+public import FLT.Mazur.HilbertOpenAmbientNaturality
 public import FLT.Mazur.HilbertPolynomialAffineClassification
 public import FLT.Mazur.HilbertPolynomialAffineNaturality
 public import FLT.Mazur.HilbertPolynomialAmbient
