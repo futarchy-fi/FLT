@@ -3562,6 +3562,7 @@ public import FLT.Mazur.FiniteGroupQuotientFlatBaseChange
 public import FLT.Mazur.FiniteGroupQuotientGeometricPoints
 public import FLT.Mazur.FiniteGroupQuotientPrincipalChart
 public import FLT.Mazur.FiniteGroupQuotientSchemePoints
+public import FLT.Mazur.FiniteGroupSpectrumAction
 public import FLT.Mazur.FiniteIntegerModelElementRelations
 public import FLT.Mazur.FiniteIntegerModelPullbacks
 public import FLT.Mazur.FiniteIntegerModelRelations
