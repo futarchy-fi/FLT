@@ -181,19 +181,63 @@ this worktree. The local handoff and manifest stay outside tracked source paths.
   of the unique local descents. This does not yet handle arbitrary scheme targets.
 
 These are module-qualified descriptions; the source specifies the shared namespaces.
-FQ8's overlap and scheme gluing construction is now proved for separated schemes
-with the established ample line bundle. FQ9 remains open beyond affine targets.
+FQ8's overlap and scheme gluing construction is proved for separated schemes
+with the established ample line bundle. The W176 results below extend FQ9.
+
+## Arbitrary-target descent and affine flat base change implemented in W176
+
+Checked 2026-10-09 against the declarations below. Reproduce the source hashes,
+line caps, bounded probe logs, foreground builds, individual lints, declaration
+axiom audits, main ancestry, and root build with `python3 W176_RECHECK.py` in
+this worktree. The manifest and handoff remain untracked outside source paths.
+
+- `SchemeFiniteGroupQuotientEpi.quotientMap_cancel` proves equality of maps to
+  arbitrary scheme targets by common affine target and invariant principal
+  source neighborhoods. `quotientMap_epi` is the resulting scheme epimorphism.
+- `StableAffineQuotientChartIntersection.chartIntersectionIso` identifies the
+  quotient of a stable affine intersection with the actual scheme pullback
+  of its quotient charts. `localDesc_compatible` proves overlap equality.
+- `StableAffineQuotientNeighborhood.exists_chart_subset` refines invariant
+  opens by actual stable affine charts. `exists_chart_affine_target` adapts
+  those charts to affine neighborhoods in any scheme target.
+- `StableAffineQuotientDescentCover` constructs source and quotient covers
+  adapted to affine target opens and compatible local descended morphisms.
+- `StableAffineQuotientDescent.existsUnique_desc` proves the universal property
+  for **arbitrary scheme targets**. `desc` is the actual gluing, `desc_fac` its
+  factorization, and `map_epi` supplies uniqueness on scheme morphisms.
+- `FlatTensorFixedSubmodule.existsUnique_fixed_lift` proves flat tensor
+  exactness for simultaneous fixed points of a finite family. No invertibility
+  of the group order is required.
+- `InvariantFlatTensorAction` constructs the group action on the actual tensor
+  algebra over the original fixed ring, fixing the new base scalars.
+- `InvariantFlatTensorComparison.tensorInvariantEquiv` identifies the actual
+  fixed ring of that tensor algebra with the new flat base ring. Its underlying
+  map is the actual scalar map, with both injectivity and surjectivity proved.
+- `FiniteGroupQuotientFlatBaseChange.flatQuotientIso` and
+  `flatQuotient_isPullback` give the scheme isomorphism and cartesian square
+  for a flat affine base change over the original affine quotient. The source
+  projection is equivariant for the constructed tensor action.
+- `FiniteGroupPullbackAction.action` constructs the action on an actual scheme
+  pullback of an invariant map; `action_fst` and `action_snd` retain its two
+  projections, with group and inverse laws proved from the pullback property.
+
+These are module-qualified descriptions; the source specifies the shared namespaces.
+General flat base change of the global quotient is still open. The earlier
+localization theorem alone was not a general flat invariant-ring theorem;
+W176 supplies the actual flat tensor comparison used in the next step.
 
 ## Next missing proof and ordered remaining work
 
-1. Extend the quotient universal property to arbitrary scheme targets (FQ9).
-   Cover the target by affine opens and use stable inverse images and invariant
-   principal neighborhoods in affine source charts. Construct the local descents,
-   prove their agreement as scheme morphisms, and glue them. The global affine-target
-   theorem does not alone provide uniqueness for maps to arbitrary schemes.
-2. Prove flat base change for the global quotient, using fixed-ring base change,
-   the constructed chart squares, and scheme-level comparison maps (FQ9).
-3. Construct the actual rigidified auxiliary level atlas and relation, then C2.
+1. Finish flat base change for the **global** quotient (FQ9). For
+   `q := StableAffineQuotient.map ρ hcover` and flat `f : S ⟶ glued ρ`, use
+   `FiniteGroupPullback.action ρ q (map_invariant ρ hcover) f` on `pullback q f`.
+   Refine `S` by affine opens inside inverse images of quotient charts. Use
+   `chart_isPullback` to identify the pulled-back sources with affine tensor
+   spectra; prove their actions match the tensor action, transport
+   `flatQuotientIso`, and glue the actual comparisons. Prove uniqueness and
+   scheme-level compatibility. No global comparison or equivariant transport
+   of these affine pullback identifications has yet been constructed.
+2. Construct the actual rigidified auxiliary level atlas and relation, then C2.
    Prove C3--C8, including boundary points, characteristic 3, geometric integrality,
    and the actual prime-torsion and cusp comparisons. D and G2 stay with their workers.
 
