@@ -5687,6 +5687,7 @@ public import FLT.Mazur.WeierstrassDividedGlobalFiniteSmoothOpen
 public import FLT.Mazur.WeierstrassDividedGlobalFiniteStep
 public import FLT.Mazur.WeierstrassDividedGlobalFiniteZero
 public import FLT.Mazur.WeierstrassDividedGlobalInitialComparison
+public import FLT.Mazur.WeierstrassDividedGlobalResidueOverlap
 public import FLT.Mazur.WeierstrassDividedGlobalTensorCharts
 public import FLT.Mazur.WeierstrassDividedGlobalTensorEmbedding
 public import FLT.Mazur.WeierstrassDividedInitialExterior
