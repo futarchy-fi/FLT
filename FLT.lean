@@ -4282,6 +4282,7 @@ public import FLT.Mazur.LocalizationJointRestriction
 public import FLT.Mazur.LocalizationRelationClosure
 public import FLT.Mazur.LocalizedAdicCompletion
 public import FLT.Mazur.LocalizedBaseSectionNumerator
+public import FLT.Mazur.LocalizedCoefficientFiberCartier
 public import FLT.Mazur.LocalizedHomologyComparison
 public import FLT.Mazur.LocalizedIdealOverlapMembership
 public import FLT.Mazur.LocalizedIntegerChartComparison
