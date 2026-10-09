@@ -3793,6 +3793,7 @@ public import FLT.Mazur.HilbertPolynomialFamilyRestriction
 public import FLT.Mazur.HilbertPolynomialQuotientBaseChange
 public import FLT.Mazur.HilbertPolynomialSchemeOver
 public import FLT.Mazur.HilbertPolynomialUniversalChartPullback
+public import FLT.Mazur.HilbertPolynomialUniversalClosedPullback
 public import FLT.Mazur.HilbertPolynomialUniversalDegree
 public import FLT.Mazur.HilbertPolynomialUniversalFamilyPullback
 public import FLT.Mazur.HilbertPolynomialUniversalIdeal
