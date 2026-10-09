@@ -3807,6 +3807,7 @@ public import FLT.Mazur.HilbertPolynomialParameterInverse
 public import FLT.Mazur.HilbertPolynomialParameterRecovery
 public import FLT.Mazur.HilbertPolynomialQuotientBaseChange
 public import FLT.Mazur.HilbertPolynomialSchemeOver
+public import FLT.Mazur.HilbertPolynomialSchemeParameterIdeal
 public import FLT.Mazur.HilbertPolynomialUniversalChartPullback
 public import FLT.Mazur.HilbertPolynomialUniversalClosedPullback
 public import FLT.Mazur.HilbertPolynomialUniversalDegree
