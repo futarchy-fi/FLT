@@ -6198,6 +6198,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXMiddleConic
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleExtension
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleIncidence
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleLines
+public import FLT.Mazur.WeierstrassSuccessiveXMiddleOverlap
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleUnion
 public import FLT.Mazur.WeierstrassSuccessiveXMonic
 public import FLT.Mazur.WeierstrassSuccessiveXMonicComparison
