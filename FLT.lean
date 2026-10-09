@@ -5780,6 +5780,7 @@ public import FLT.Mazur.WeierstrassMixedRightReciprocalInverse
 public import FLT.Mazur.WeierstrassMixedTripleAlgebraUnits
 public import FLT.Mazur.WeierstrassMixedTripleSchemeUnits
 public import FLT.Mazur.WeierstrassMixedTripleSlopes
+public import FLT.Mazur.WeierstrassModificationAffineContraction
 public import FLT.Mazur.WeierstrassModificationAtlas
 public import FLT.Mazur.WeierstrassModificationChartIntersection
 public import FLT.Mazur.WeierstrassModificationFlat
