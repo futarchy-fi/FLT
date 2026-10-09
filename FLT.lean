@@ -3686,6 +3686,7 @@ public import FLT.Mazur.FiniteSectionCoverReindex
 public import FLT.Mazur.FiniteSectionProjectivePresentation
 public import FLT.Mazur.FiniteSeparatedLineSheafDescent
 public import FLT.Mazur.FiniteSubgroupClassPresheaf
+public import FLT.Mazur.FiniteSubgroupPicard
 public import FLT.Mazur.FiniteSupportClosedDescent
 public import FLT.Mazur.FiniteSupportEulerCharacteristic
 public import FLT.Mazur.FiniteSupportEulerPositive
