@@ -3544,6 +3544,7 @@ public import FLT.Mazur.FiniteDivisorLengthAdditivity
 public import FLT.Mazur.FiniteEvaluationLocus
 public import FLT.Mazur.FiniteFieldRankLength
 public import FLT.Mazur.FiniteFlatAffineLocalFree
+public import FLT.Mazur.FiniteGroupAffineQuotient
 public import FLT.Mazur.FiniteGroupInvariantRing
 public import FLT.Mazur.FiniteGroupInvariantSpectrum
 public import FLT.Mazur.FiniteIntegerModelElementRelations
