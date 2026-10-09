@@ -2719,6 +2719,7 @@ public import FLT.Mazur.AffineTripleOverlapRefinement
 public import FLT.Mazur.AffineTripleOverlapRefinementSquares
 public import FLT.Mazur.AffineTripleUnitCoefficients
 public import FLT.Mazur.AffineTrivialLineSectionOpen
+public import FLT.Mazur.AmbientHilbertChartFamilyPullback
 public import FLT.Mazur.AmbientHilbertChartSystem
 public import FLT.Mazur.AmbientHilbertChartUniversalFamily
 public import FLT.Mazur.AmbientHilbertGluedBase
@@ -3833,6 +3834,7 @@ public import FLT.Mazur.HilbertIntrinsicBasisBaseChange
 public import FLT.Mazur.HilbertIntrinsicBasisEquiv
 public import FLT.Mazur.HilbertIntrinsicBasisGlobal
 public import FLT.Mazur.HilbertIntrinsicBasisOpen
+public import FLT.Mazur.HilbertIntrinsicContainingExtension
 public import FLT.Mazur.HilbertIntrinsicExtension
 public import FLT.Mazur.HilbertIntrinsicInclusion
 public import FLT.Mazur.HilbertIntrinsicResidueBasis
