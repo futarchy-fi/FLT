@@ -6080,6 +6080,7 @@ public import FLT.Mazur.WeierstrassSuccessiveReesCoordinates
 public import FLT.Mazur.WeierstrassSuccessiveReesCover
 public import FLT.Mazur.WeierstrassSuccessiveReesEquation
 public import FLT.Mazur.WeierstrassSuccessiveReesOverlap
+public import FLT.Mazur.WeierstrassSuccessiveReesSchemeOverlap
 public import FLT.Mazur.WeierstrassSuccessiveReplacementAtlas
 public import FLT.Mazur.WeierstrassSuccessiveReplacementGluing
 public import FLT.Mazur.WeierstrassSuccessiveReplacementReassociation
