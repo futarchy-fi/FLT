@@ -5311,6 +5311,7 @@ public import FLT.Mazur.SchemeDescentPairTransport
 public import FLT.Mazur.SchemeDescentTransportSquares
 public import FLT.Mazur.SchemeDescentTransportTest
 public import FLT.Mazur.SchemeFamilyTripleOverlap
+public import FLT.Mazur.SchemeFiniteGroupInvariantPrincipal
 public import FLT.Mazur.SchemeFiniteGroupPrincipalQuotient
 public import FLT.Mazur.SchemeFiniteGroupQuotient
 public import FLT.Mazur.SchemeFiniteGroupQuotientMaps
