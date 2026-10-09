@@ -5758,6 +5758,7 @@ public import FLT.Mazur.WeierstrassModificationXFractionEquation
 public import FLT.Mazur.WeierstrassModificationXFractionMap
 public import FLT.Mazur.WeierstrassModificationXFullNodeBranches
 public import FLT.Mazur.WeierstrassModificationXFullNodeEquiv
+public import FLT.Mazur.WeierstrassModificationXFullNodeGeometry
 public import FLT.Mazur.WeierstrassModificationXFullNodeIncidenceOrientation
 public import FLT.Mazur.WeierstrassModificationXFullNodeInverseCoordinates
 public import FLT.Mazur.WeierstrassModificationXFullNodeOpen
