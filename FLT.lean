@@ -2734,6 +2734,7 @@ public import FLT.Mazur.AmbientHilbertOverlapParameterFamily
 public import FLT.Mazur.AmbientHilbertPairTransitions
 public import FLT.Mazur.AmbientHilbertParameterFaithful
 public import FLT.Mazur.AmbientHilbertSupportedClassification
+public import FLT.Mazur.AmbientHilbertSupportedCoverGluing
 public import FLT.Mazur.AmbientHilbertTripleIntersection
 public import FLT.Mazur.AmbientHilbertTripleRoutes
 public import FLT.Mazur.AmbientHilbertUniversalCover
