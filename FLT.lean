@@ -2881,6 +2881,7 @@ public import FLT.Mazur.CartesianStructureComplexGluing
 public import FLT.Mazur.CartesianStructurePositiveHomology
 public import FLT.Mazur.CartesianStructureSections
 public import FLT.Mazur.CartesianStructureTensorRestrictions
+public import FLT.Mazur.CartesianUpperCone
 public import FLT.Mazur.CartierAffineFppfDescent
 public import FLT.Mazur.CartierChartFlat
 public import FLT.Mazur.CartierCharts
@@ -2973,6 +2974,7 @@ public import FLT.Mazur.ClosedDescentOverlapCoherence
 public import FLT.Mazur.ClosedDirectImageAcyclic
 public import FLT.Mazur.ClosedDirectImageComposition
 public import FLT.Mazur.ClosedFiberTensorExactness
+public import FLT.Mazur.ClosedImmersionCartesianCover
 public import FLT.Mazur.ClosedImmersionModulePushforward
 public import FLT.Mazur.ClosedLineProjectionFormula
 public import FLT.Mazur.ClosedModuleDescent
@@ -3009,6 +3011,7 @@ public import FLT.Mazur.CoefficientSmoothDescent
 public import FLT.Mazur.CoefficientSpectrumLimit
 public import FLT.Mazur.CoefficientStageColimit
 public import FLT.Mazur.CoefficientStageDiagram
+public import FLT.Mazur.CofinalUpperLimit
 public import FLT.Mazur.CoherentAffineCoverSections
 public import FLT.Mazur.CoherentClosedPushforward
 public import FLT.Mazur.CoherentClosedReduction
@@ -3560,19 +3563,23 @@ public import FLT.Mazur.FinitePrincipalAtlasDiagonalStage
 public import FLT.Mazur.FinitePrincipalAtlasGluing
 public import FLT.Mazur.FinitePrincipalAtlasGluingCofinal
 public import FLT.Mazur.FinitePrincipalAtlasImageStage
+public import FLT.Mazur.FinitePrincipalAtlasLimit
 public import FLT.Mazur.FinitePrincipalAtlasOccurrences
 public import FLT.Mazur.FinitePrincipalAtlasOriginalCovers
 public import FLT.Mazur.FinitePrincipalAtlasOriginalPairUnion
 public import FLT.Mazur.FinitePrincipalAtlasOriginalTripleCover
+public import FLT.Mazur.FinitePrincipalAtlasOver
 public import FLT.Mazur.FinitePrincipalAtlasPairUnion
 public import FLT.Mazur.FinitePrincipalAtlasPairUnionRecovery
 public import FLT.Mazur.FinitePrincipalAtlasProjection
 public import FLT.Mazur.FinitePrincipalAtlasProjectionCartesian
+public import FLT.Mazur.FinitePrincipalAtlasProjectionClosed
 public import FLT.Mazur.FinitePrincipalAtlasTargetCovers
 public import FLT.Mazur.FinitePrincipalAtlasTargetGluing
 public import FLT.Mazur.FinitePrincipalAtlasTripleComparison
 public import FLT.Mazur.FinitePrincipalAtlasTripleCoverStage
 public import FLT.Mazur.FinitePrincipalAtlasTripleRoutes
+public import FLT.Mazur.FinitePrincipalAtlasUpperLimit
 public import FLT.Mazur.FinitePrincipalChartIntegerDescent
 public import FLT.Mazur.FinitePrincipalIdealPatching
 public import FLT.Mazur.FinitePrincipalTargetRefinement
@@ -4696,8 +4703,10 @@ public import FLT.Mazur.PrincipalOccurrenceAtlasCoverEquations
 public import FLT.Mazur.PrincipalOccurrenceAtlasEquationRefinement
 public import FLT.Mazur.PrincipalOccurrenceAtlasImageRefinement
 public import FLT.Mazur.PrincipalOccurrenceAtlasQuotientEquations
+public import FLT.Mazur.PrincipalOccurrenceBaseCompatibility
 public import FLT.Mazur.PrincipalOccurrenceBijectiveIndex
 public import FLT.Mazur.PrincipalOccurrenceChangeRefinement
+public import FLT.Mazur.PrincipalOccurrenceChartDiagram
 public import FLT.Mazur.PrincipalOccurrenceCofinalBijections
 public import FLT.Mazur.PrincipalOccurrenceCoherentRefinement
 public import FLT.Mazur.PrincipalOccurrenceCommonDoublePullback
@@ -4736,7 +4745,10 @@ public import FLT.Mazur.PrincipalOccurrenceDirected
 public import FLT.Mazur.PrincipalOccurrenceExistence
 public import FLT.Mazur.PrincipalOccurrenceFiniteRestrictions
 public import FLT.Mazur.PrincipalOccurrenceGluedCartesian
+public import FLT.Mazur.PrincipalOccurrenceGluedClosed
+public import FLT.Mazur.PrincipalOccurrenceGluedFiniteness
 public import FLT.Mazur.PrincipalOccurrenceGluedIncidence
+public import FLT.Mazur.PrincipalOccurrenceGluedStructure
 public import FLT.Mazur.PrincipalOccurrenceGluedTransitions
 public import FLT.Mazur.PrincipalOccurrenceGluingAffineLimit
 public import FLT.Mazur.PrincipalOccurrenceGluingChartMaps
@@ -5170,6 +5182,7 @@ public import FLT.Mazur.SchemeCanonicalRecoveryCompatibility
 public import FLT.Mazur.SchemeChartBaseScalars
 public import FLT.Mazur.SchemeCohomologyIso
 public import FLT.Mazur.SchemeCohomologyIsoCocycles
+public import FLT.Mazur.SchemeConeGluing
 public import FLT.Mazur.SchemeConnectedFiberSections
 public import FLT.Mazur.SchemeCoproductCohomology
 public import FLT.Mazur.SchemeCoproductLineGluing
