@@ -3802,6 +3802,7 @@ public import FLT.Mazur.GenericIdealSupport
 public import FLT.Mazur.GenericLineTrivialization
 public import FLT.Mazur.GenericSectionUniqueness
 public import FLT.Mazur.GenericWitnessIdealVanishing
+public import FLT.Mazur.GeometricSectionQuasiFinite
 public import FLT.Mazur.GeometricallyConnectedDescent
 public import FLT.Mazur.GeometricallyConnectedLocus
 public import FLT.Mazur.GlobalClosedModuleDescent
