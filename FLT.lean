@@ -5540,6 +5540,7 @@ public import FLT.Mazur.SmoothSectionCartier
 public import FLT.Mazur.SpectrumFieldCohomologyCoordinates
 public import FLT.Mazur.SplitEvaluationTensorKernel
 public import FLT.Mazur.StableAffineQuotientDiagram
+public import FLT.Mazur.StableAffineQuotientGluing
 public import FLT.Mazur.StableAffineQuotientOverlap
 public import FLT.Mazur.StalkBaseClosedFiber
 public import FLT.Mazur.StalkBaseLocalization
