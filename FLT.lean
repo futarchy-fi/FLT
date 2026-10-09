@@ -5296,6 +5296,7 @@ public import FLT.Mazur.SchemeCohomologyIso
 public import FLT.Mazur.SchemeCohomologyIsoCocycles
 public import FLT.Mazur.SchemeConeGluing
 public import FLT.Mazur.SchemeConnectedFiberSections
+public import FLT.Mazur.SchemeCoordinateAction
 public import FLT.Mazur.SchemeCoproductCohomology
 public import FLT.Mazur.SchemeCoproductLineGluing
 public import FLT.Mazur.SchemeCoproductModuleEquivalence
