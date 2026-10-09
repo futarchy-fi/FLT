@@ -3106,6 +3106,7 @@ public import FLT.Mazur.CoherentSubquotient
 public import FLT.Mazur.CoherentSubsheafACC
 public import FLT.Mazur.CoherentSupport
 public import FLT.Mazur.CoherentSupportedDecomposition
+public import FLT.Mazur.CohomologicallyFlatSections
 public import FLT.Mazur.CohomologyImageArtinRees
 public import FLT.Mazur.CohomologyImageReesModule
 public import FLT.Mazur.ComaximalIdealSequence
