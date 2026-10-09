@@ -5311,6 +5311,7 @@ public import FLT.Mazur.SchemeDescentPairTransport
 public import FLT.Mazur.SchemeDescentTransportSquares
 public import FLT.Mazur.SchemeDescentTransportTest
 public import FLT.Mazur.SchemeFamilyTripleOverlap
+public import FLT.Mazur.SchemeFiniteGroupQuotient
 public import FLT.Mazur.SchemeFlatProductDensity
 public import FLT.Mazur.SchemeFppfCanonicalPairRecovery
 public import FLT.Mazur.SchemeFppfFamilyCocycleAssembly
