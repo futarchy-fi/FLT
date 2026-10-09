@@ -5606,6 +5606,7 @@ public import FLT.Mazur.SmoothCurveDimension
 public import FLT.Mazur.SmoothCurvePicardDegree
 public import FLT.Mazur.SmoothDimension
 public import FLT.Mazur.SmoothDimensionBound
+public import FLT.Mazur.SmoothFiniteSubschemeCartier
 public import FLT.Mazur.SmoothGeometricallyReduced
 public import FLT.Mazur.SmoothOpenSectionCartier
 public import FLT.Mazur.SmoothSectionCartier
