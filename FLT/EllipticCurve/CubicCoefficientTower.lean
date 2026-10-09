@@ -11,6 +11,7 @@ public import FLT.EllipticCurve.CubicVariableChangeBaseChange
 For a scalar tower, the two successive coefficient morphisms agree with
 direct extension after identifying their Weierstrass equations.
 The identity is checked on both quotient chart rings and then glued.
+Extension by the identity coefficient map is also the identity curve map.
 
 This supplies the curve-level compatibility needed for composition of
 parameter-changing cyclic automorphisms. Compatibility on torsion and
@@ -89,5 +90,28 @@ theorem coefficientMorphism_tower :
       Category.assoc, ← sourceChart_coefficientMorphism, ← Category.assoc,
       (chart_eqToHom (coefficientTower_curve (S := S) (T := T) W) true),
       Category.assoc]
+
+theorem chartCoefficientMap_self (b : Bool) :
+    chartCoefficientMap W R b = RingHom.id _ := by
+  apply Ideal.Quotient.ringHom_ext
+  apply RingHom.ext
+  intro f
+  rw [RingHom.comp_apply, chartCoefficientMap_mk]
+  simp [MvPolynomial.map_id]
+
+theorem chartCoefficientMorphism_self (b : Bool) :
+    chartCoefficientMorphism W R b = 𝟙 _ := by
+  dsimp only [chartCoefficientMorphism]
+  rw [chartCoefficientMap_self]
+  exact Spec.map_id _
+
+theorem coefficientMorphism_self : coefficientMorphism W R = 𝟙 _ := by
+  apply pushout.hom_ext
+  · change affineChart (W.map (algebraMap R R)) ≫ _ = affineChart W ≫ 𝟙 _
+    rw [affineChart_coefficientMorphism, chartCoefficientMorphism_self]
+    simp
+  · change infinityChart (W.map (algebraMap R R)) ≫ _ = infinityChart W ≫ 𝟙 _
+    rw [infinityChart_coefficientMorphism, chartCoefficientMorphism_self]
+    simp
 
 end WeierstrassCurve.CubicCharts

@@ -12,6 +12,7 @@ public import FLT.EllipticCurve.CubicLegendreCyclicAutomorphisms
 The scalar-tower identity for curve maps restricts to torsion and nonzero
 torsion, then descends to cyclic parameters. Equality of equations transports
 the intermediate models and commutes with their inclusions and quotient maps.
+Identity extension is proved to induce identity on all three models.
 
 This is composition for actual coefficient morphisms. Naturality of the
 descended coordinate maps under parameter changes is still needed to deduce
@@ -102,4 +103,22 @@ theorem coefficientScalarQuotientMorphism_tower :
   rw [← cyclicModelCongr_quotient]
   simp only [Category.assoc, coefficientScalarQuotientMorphism_generators]
 
+theorem coefficientTorsionMorphism_self (n : ℕ) :
+    coefficientTorsionMorphism W R n = 𝟙 _ := by
+  apply (cancel_mono (torsionInclusion W n).left).mp
+  rw [coefficientTorsionMorphism_inclusion, coefficientMorphism_self]
+  simp
+
+theorem coefficientNonzeroTorsionMorphism_self (n : ℕ) [NeZero n] :
+    coefficientNonzeroTorsionMorphism W R n = 𝟙 _ := by
+  apply (cancel_mono (nonzeroTorsionInclusion W n).left).mp
+  rw [coefficientNonzeroTorsionMorphism_inclusion, coefficientTorsionMorphism_self]
+  simp
+
+theorem coefficientScalarQuotientMorphism_self (p : ℕ) [Fact p.Prime]
+    [Fact (IsUnit (p : R))] :
+    coefficientScalarQuotientMorphism W R p = 𝟙 _ := by
+  apply (cancel_epi (scalarQuotientMap (W.map (algebraMap R R)) p).left).mp
+  rw [coefficientScalarQuotientMorphism_generators, coefficientNonzeroTorsionMorphism_self]
+  simp
 end WeierstrassCurve.CubicCharts

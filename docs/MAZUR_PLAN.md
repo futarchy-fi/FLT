@@ -2380,6 +2380,14 @@ map. This closes the composition compatibility left open in the preceding
 curve-level entry. Naturality of descended coordinate maps under parameter
 changes is still required for the Legendre automorphism relations.
 
+### Identity coefficient extension (2026-10-08)
+
+The coefficient tower modules also prove that extension by the identity
+ring map induces identity on the chart rings, curve, full torsion, nonzero
+torsion, and cyclic quotient. Thus both identity and scalar-tower composition
+are established for the actual coefficient maps. Compatibility of descended
+coordinate maps under parameter changes remains open.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
