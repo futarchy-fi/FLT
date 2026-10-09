@@ -2737,6 +2737,7 @@ public import FLT.Mazur.AmpleGlobalGeneration
 public import FLT.Mazur.AmpleHighDegreeSectionCover
 public import FLT.Mazur.AmpleLineBundle
 public import FLT.Mazur.AmpleLineLimitDescent
+public import FLT.Mazur.AmpleOpenAffineRecovery
 public import FLT.Mazur.AmpleOpenImage
 public import FLT.Mazur.AmplePreimageSectionCover
 public import FLT.Mazur.AmplePrincipalLocality
