@@ -3711,6 +3711,7 @@ public import FLT.Mazur.HilbertChartUniversalFamily
 public import FLT.Mazur.HilbertIntrinsicBasisOpen
 public import FLT.Mazur.HilbertLocalizationIsomorphismOpen
 public import FLT.Mazur.HilbertLocalizedTupleBasis
+public import FLT.Mazur.HilbertPolynomialBasisCover
 public import FLT.Mazur.HilbertPolynomialBasisOpen
 public import FLT.Mazur.HilbertPolynomialQuotientBaseChange
 public import FLT.Mazur.HomIntegerModel
