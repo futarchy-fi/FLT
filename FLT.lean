@@ -4577,6 +4577,7 @@ public import FLT.Mazur.PrimeTorsionComponentsAtThree
 public import FLT.Mazur.PrimeTorsionComponentsAtTwo
 public import FLT.Mazur.PrimeTorsionSemistabilityAtPrime
 public import FLT.Mazur.PrimeTorsionSemistabilityAway
+public import FLT.Mazur.PrincipalAffineOpenCoordinates
 public import FLT.Mazur.PrincipalAffineRefinement
 public import FLT.Mazur.PrincipalBipartiteCofinal
 public import FLT.Mazur.PrincipalBipartiteDirected
