@@ -4006,6 +4006,7 @@ public import FLT.Mazur.IdealAdicUniformQuotientVanishing
 public import FLT.Mazur.IdealCartierNeighborhood
 public import FLT.Mazur.IdealCohomologyAmpleAnyBase
 public import FLT.Mazur.IdealCohomologyAmpleCriterion
+public import FLT.Mazur.IdealFamilyIsomorphism
 public import FLT.Mazur.IdealModuleAffineTensor
 public import FLT.Mazur.IdealModulePrincipalPullback
 public import FLT.Mazur.IdealModulePullback
