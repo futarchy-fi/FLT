@@ -3571,6 +3571,7 @@ public import FLT.Mazur.FiniteFieldRankLength
 public import FLT.Mazur.FiniteFlatAffineLocalFree
 public import FLT.Mazur.FiniteFlatCoefficientIdeal
 public import FLT.Mazur.FiniteFlatLocalIdealPresentation
+public import FLT.Mazur.FiniteFlatQuotientTrivialization
 public import FLT.Mazur.FiniteFreeQuotientIdealPresentation
 public import FLT.Mazur.FiniteIntegerModelElementRelations
 public import FLT.Mazur.FiniteIntegerModelPullbacks
