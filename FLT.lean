@@ -4665,6 +4665,7 @@ public import FLT.Mazur.PrincipalOccurrenceAmbientComparisons
 public import FLT.Mazur.PrincipalOccurrenceAmbientIndex
 public import FLT.Mazur.PrincipalOccurrenceAmbientSquares
 public import FLT.Mazur.PrincipalOccurrenceAmbientUnion
+public import FLT.Mazur.PrincipalOccurrenceAmbientUnionRecovery
 public import FLT.Mazur.PrincipalOccurrenceAtlasComparisons
 public import FLT.Mazur.PrincipalOccurrenceAtlasCoverEquations
 public import FLT.Mazur.PrincipalOccurrenceAtlasEquationRefinement
