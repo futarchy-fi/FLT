@@ -3685,6 +3685,7 @@ public import FLT.Mazur.HilbertBasisOpenInvariance
 public import FLT.Mazur.HilbertBasisPrincipalCompatibility
 public import FLT.Mazur.HilbertBasisResidueField
 public import FLT.Mazur.HilbertBasisSchemeCover
+public import FLT.Mazur.HilbertBasisSchemeGluing
 public import FLT.Mazur.HilbertChartAlgebra
 public import FLT.Mazur.HilbertChartAlgebraRealization
 public import FLT.Mazur.HilbertChartAlgebraSpecialization
