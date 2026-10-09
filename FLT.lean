@@ -4823,6 +4823,7 @@ public import FLT.Mazur.PowerScalarSectionCoordinates
 public import FLT.Mazur.PowerSeriesLeadingComposition
 public import FLT.Mazur.PowerSeriesQuotientCompletion
 public import FLT.Mazur.PowerSeriesSubstitutionEquiv
+public import FLT.Mazur.PresentedFiniteCoefficientBranch
 public import FLT.Mazur.PrimeCharacteristicScalar
 public import FLT.Mazur.PrimeCoefficientLocalization
 public import FLT.Mazur.PrimeQuasiFiniteSmoothCartier
