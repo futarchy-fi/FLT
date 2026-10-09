@@ -5691,6 +5691,7 @@ public import FLT.Mazur.WeierstrassDividedGlobalResidueNodes
 public import FLT.Mazur.WeierstrassDividedGlobalResidueOverlap
 public import FLT.Mazur.WeierstrassDividedGlobalTensorCharts
 public import FLT.Mazur.WeierstrassDividedGlobalTensorEmbedding
+public import FLT.Mazur.WeierstrassDividedGlobalTensorInfinity
 public import FLT.Mazur.WeierstrassDividedInitialExterior
 public import FLT.Mazur.WeierstrassDividedOlderResidueNodes
 public import FLT.Mazur.WeierstrassDividedOlderSuccessiveCharts
