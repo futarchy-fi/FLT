@@ -4310,6 +4310,7 @@ public import FLT.Mazur.LineSectionCohomologySurjection
 public import FLT.Mazur.LineSectionDivisorCorrespondence
 public import FLT.Mazur.LineSectionEvaluation
 public import FLT.Mazur.LineSectionGenericOpen
+public import FLT.Mazur.LineSectionProjectiveBaseChange
 public import FLT.Mazur.LineSectionTwistCoordinates
 public import FLT.Mazur.LineSectionTwistRestriction
 public import FLT.Mazur.LineSectionTwistSystem
