@@ -6080,6 +6080,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXOverlap
 public import FLT.Mazur.WeierstrassSuccessiveXOverlapCompatibility
 public import FLT.Mazur.WeierstrassSuccessiveXSaturation
 public import FLT.Mazur.WeierstrassSuccessiveXSchemeOverlap
+public import FLT.Mazur.WeierstrassSuccessiveXTotalTransform
 public import FLT.Mazur.WeierstrassSwappedAdditionIntersections
 public import FLT.Mazur.WeierstrassSwappedInfinityOutput
 public import FLT.Mazur.WeierstrassSwappedInfinitySchemes
