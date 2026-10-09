@@ -5610,6 +5610,7 @@ public import FLT.Mazur.WeierstrassDividedDepthOriginalOpen
 public import FLT.Mazur.WeierstrassDividedDepthYBoundary
 public import FLT.Mazur.WeierstrassDividedExterior
 public import FLT.Mazur.WeierstrassDividedExteriorLocalContraction
+public import FLT.Mazur.WeierstrassDividedExteriorOriginalOpen
 public import FLT.Mazur.WeierstrassDividedExteriorProper
 public import FLT.Mazur.WeierstrassDividedExteriorReassociation
 public import FLT.Mazur.WeierstrassDividedExteriorStep
