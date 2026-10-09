@@ -4699,6 +4699,7 @@ public import FLT.Mazur.PrincipalOccurrenceOverlapPatches
 public import FLT.Mazur.PrincipalOccurrencePatchCartesian
 public import FLT.Mazur.PrincipalOccurrencePatchCoordinates
 public import FLT.Mazur.PrincipalOccurrencePatchGluing
+public import FLT.Mazur.PrincipalOccurrencePatchImageIsomorphisms
 public import FLT.Mazur.PrincipalOccurrencePatchNaturality
 public import FLT.Mazur.PrincipalOccurrencePatchRefinement
 public import FLT.Mazur.PrincipalOccurrencePathIsomorphisms
