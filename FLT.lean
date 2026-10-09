@@ -3818,6 +3818,7 @@ public import FLT.Mazur.FlatStructureSectionComplex
 public import FLT.Mazur.FpqcGlobalGenerationDescent
 public import FLT.Mazur.FpqcModuleEpimorphisms
 public import FLT.Mazur.FreeSheafRestrictionCoherence
+public import FLT.Mazur.FreeSheafSectionCoordinates
 public import FLT.Mazur.GeneralizedCurveAmpleBaseChange
 public import FLT.Mazur.GeneralizedCurveAmpleDescent
 public import FLT.Mazur.GeneralizedCurveAmpleSubgroup
