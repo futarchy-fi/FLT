@@ -5192,6 +5192,7 @@ public import FLT.Mazur.QuasiFiniteCoefficientQuotient
 public import FLT.Mazur.QuasiFiniteIdealQuotient
 public import FLT.Mazur.QuasiFiniteSmoothLocalEquation
 public import FLT.Mazur.QuasicoherentImageIdeal
+public import FLT.Mazur.QuasicoherentImageIdealOrbits
 public import FLT.Mazur.RationalFibers
 public import FLT.Mazur.RationalPrimeTorsionGeometricModel
 public import FLT.Mazur.RationalPrimeTorsionLocalModel
