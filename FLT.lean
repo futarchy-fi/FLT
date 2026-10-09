@@ -6135,6 +6135,7 @@ public import FLT.Mazur.WeierstrassSplitNodalTorus
 public import FLT.Mazur.WeierstrassSplitNodalUnitPoints
 public import FLT.Mazur.WeierstrassSuccessiveDepthProper
 public import FLT.Mazur.WeierstrassSuccessiveHorizontalPreimage
+public import FLT.Mazur.WeierstrassSuccessiveOriginalOpen
 public import FLT.Mazur.WeierstrassSuccessiveReesCoordinates
 public import FLT.Mazur.WeierstrassSuccessiveReesCover
 public import FLT.Mazur.WeierstrassSuccessiveReesEquation
