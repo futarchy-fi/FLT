@@ -6027,6 +6027,7 @@ public import FLT.Mazur.WeierstrassSplitNodalSmoothGroup
 public import FLT.Mazur.WeierstrassSplitNodalSmoothGroupComparison
 public import FLT.Mazur.WeierstrassSplitNodalTorus
 public import FLT.Mazur.WeierstrassSplitNodalUnitPoints
+public import FLT.Mazur.WeierstrassSuccessiveXAlgebra
 public import FLT.Mazur.WeierstrassSwappedAdditionIntersections
 public import FLT.Mazur.WeierstrassSwappedInfinityOutput
 public import FLT.Mazur.WeierstrassSwappedInfinitySchemes
