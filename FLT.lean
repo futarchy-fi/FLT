@@ -6798,6 +6798,7 @@ public import FLT.Mazur.WeierstrassOriginImageEquation
 public import FLT.Mazur.WeierstrassOriginIsomorphismAffine
 public import FLT.Mazur.WeierstrassOriginIsomorphismCoordinates
 public import FLT.Mazur.WeierstrassOriginIsomorphismDivisor
+public import FLT.Mazur.WeierstrassOriginIsomorphismSections
 public import FLT.Mazur.WeierstrassOriginJets
 public import FLT.Mazur.WeierstrassOriginMonomialPoles
 public import FLT.Mazur.WeierstrassOriginNeighborhoodCover
