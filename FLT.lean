@@ -5477,6 +5477,7 @@ public import FLT.Mazur.PrincipalRefinementOpenImmersion
 public import FLT.Mazur.PrincipalRefinementSquareCriteria
 public import FLT.Mazur.PrincipalRelationClosure
 public import FLT.Mazur.PrincipalRestrictionEquivalence
+public import FLT.Mazur.PrincipalScalarCokernel
 public import FLT.Mazur.PrincipalSectionExtension
 public import FLT.Mazur.PrincipalSubmoduleCoordinates
 public import FLT.Mazur.PrincipalSubmoduleOverlap
