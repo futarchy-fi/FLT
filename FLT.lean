@@ -5968,6 +5968,7 @@ public import FLT.Mazur.RigidifiedPicardClasses
 public import FLT.Mazur.RigidifiedPicardFppfComparison
 public import FLT.Mazur.RigidifiedPicardPresheaf
 public import FLT.Mazur.RigidifiedPicardPullback
+public import FLT.Mazur.RigidifiedPicardPullbackCoherence
 public import FLT.Mazur.RingCohomologyFinitePushforward
 public import FLT.Mazur.RingEqualizerAwayEndpoint
 public import FLT.Mazur.RingEqualizerDescent
