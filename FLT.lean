@@ -3298,6 +3298,7 @@ public import FLT.Mazur.DualAtlasSectionCommonPoint
 public import FLT.Mazur.DualAtlasSectionLineCover
 public import FLT.Mazur.DualAtlasSectionLineOverlap
 public import FLT.Mazur.DualAtlasSectionLocalLines
+public import FLT.Mazur.DualAtlasSectionLocalSubobjects
 public import FLT.Mazur.DualAtlasSectionNormalizedRefinement
 public import FLT.Mazur.EllipticAbstractComponentInjection
 public import FLT.Mazur.EllipticAbstractGoodReductionClosure
