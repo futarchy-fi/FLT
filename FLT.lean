@@ -5745,6 +5745,7 @@ public import FLT.Mazur.WeierstrassDividedOlderExtendedParameterOrigins
 public import FLT.Mazur.WeierstrassDividedOlderExtendedSectionSquares
 public import FLT.Mazur.WeierstrassDividedOlderExtendedSections
 public import FLT.Mazur.WeierstrassDividedOlderGlobalComponentSections
+public import FLT.Mazur.WeierstrassDividedOlderGlobalConicBoundary
 public import FLT.Mazur.WeierstrassDividedOlderGlobalConicOverlap
 public import FLT.Mazur.WeierstrassDividedOlderGlobalExterior
 public import FLT.Mazur.WeierstrassDividedOlderGlobalInfinityIntersection
