@@ -7149,6 +7149,7 @@ public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveIndexedMap
 public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveLineBranches
 public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveTensorCompatibility
 public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveTensorDesc
+public import FLT.Mazur.WeierstrassDividedZeroCyclePushout
 public import FLT.Mazur.WeierstrassDividedZeroCycleTerminalAtlasCompatibility
 public import FLT.Mazur.WeierstrassDividedZeroCycleTerminalExt
 public import FLT.Mazur.WeierstrassDividedZeroCycleTerminalMap
