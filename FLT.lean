@@ -4614,6 +4614,7 @@ public import FLT.Mazur.NormalizedSectionLine
 public import FLT.Mazur.NormalizedSectionLineBaseChange
 public import FLT.Mazur.NormalizedSectionLineOverlapBaseChange
 public import FLT.Mazur.NormalizedSectionLinePrincipalRestriction
+public import FLT.Mazur.NormalizedSectionLineRechart
 public import FLT.Mazur.NormalizedSectionLineSheaf
 public import FLT.Mazur.NormalizedSectionLineSheafBaseChange
 public import FLT.Mazur.NormalizedSectionLineSheafOverlap
