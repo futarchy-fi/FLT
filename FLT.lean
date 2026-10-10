@@ -4553,6 +4553,7 @@ public import FLT.Mazur.LocallySmoothQuasiFiniteCartier
 public import FLT.Mazur.LocallySplitInclusionPullback
 public import FLT.Mazur.LocallySplitLineAmbientChart
 public import FLT.Mazur.LocallySplitLineAmbientTransport
+public import FLT.Mazur.LocallySplitLineAtlasChartRecovery
 public import FLT.Mazur.LocallySplitLineAtlasIndependence
 public import FLT.Mazur.LocallySplitLineAtlasSection
 public import FLT.Mazur.LocallySplitLineChartRefinement
