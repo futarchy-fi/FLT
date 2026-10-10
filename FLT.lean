@@ -5808,6 +5808,7 @@ public import FLT.Mazur.ProperFamilyRigidifiedComparisons
 public import FLT.Mazur.ProperFamilyRigidifiedFppfCocycles
 public import FLT.Mazur.ProperFamilyRigidifiedFppfDiagonals
 public import FLT.Mazur.ProperFamilyRigidifiedFppfPairs
+public import FLT.Mazur.ProperFamilyRigidifiedIndependentReturn
 public import FLT.Mazur.ProperFamilyRigidifiedLineDescent
 public import FLT.Mazur.ProperFamilyRigidifiedLocalRepresentatives
 public import FLT.Mazur.ProperFamilyRigidifiedLocalTrivializations
