@@ -6718,6 +6718,7 @@ public import FLT.Mazur.WeierstrassDividedTensorYBoundary
 public import FLT.Mazur.WeierstrassDividedTerminalAllExteriorNodes
 public import FLT.Mazur.WeierstrassDividedTerminalBranchIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalBranchesNodeIntersection
+public import FLT.Mazur.WeierstrassDividedTerminalComponentRanges
 public import FLT.Mazur.WeierstrassDividedTerminalComponentStructure
 public import FLT.Mazur.WeierstrassDividedTerminalComponents
 public import FLT.Mazur.WeierstrassDividedTerminalConicBoundary
