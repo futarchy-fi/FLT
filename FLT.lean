@@ -6157,6 +6157,7 @@ public import FLT.Mazur.WeierstrassAdditionSchemeCover
 public import FLT.Mazur.WeierstrassAdditionSlopeFamilies
 public import FLT.Mazur.WeierstrassAdditionStructure
 public import FLT.Mazur.WeierstrassAdditionSwapFormula
+public import FLT.Mazur.WeierstrassAdmissibleMapUnique
 public import FLT.Mazur.WeierstrassAdmissibleScale
 public import FLT.Mazur.WeierstrassAffineAdditionDomain
 public import FLT.Mazur.WeierstrassAffineAdditionGluing
