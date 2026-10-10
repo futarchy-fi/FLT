@@ -5174,6 +5174,7 @@ public import FLT.Mazur.PolygonPureDimension
 public import FLT.Mazur.PolygonRefinedClosedCharts
 public import FLT.Mazur.PolygonScaledReciprocal
 public import FLT.Mazur.PolygonScalingNaturality
+public import FLT.Mazur.PolygonSectionRingFunctor
 public import FLT.Mazur.PolygonSeparated
 public import FLT.Mazur.PolygonSmoothLocus
 public import FLT.Mazur.PolygonSmoothingBaseChange
