@@ -6795,6 +6795,7 @@ public import FLT.Mazur.WeierstrassOriginIdealInvariant
 public import FLT.Mazur.WeierstrassOriginIdealSheaf
 public import FLT.Mazur.WeierstrassOriginImageCharts
 public import FLT.Mazur.WeierstrassOriginImageEquation
+public import FLT.Mazur.WeierstrassOriginIsomorphismAffine
 public import FLT.Mazur.WeierstrassOriginJets
 public import FLT.Mazur.WeierstrassOriginMonomialPoles
 public import FLT.Mazur.WeierstrassOriginNeighborhoodCover
