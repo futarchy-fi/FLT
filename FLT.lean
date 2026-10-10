@@ -3623,6 +3623,7 @@ public import FLT.Mazur.FiniteFlatSubschemeQuotient
 public import FLT.Mazur.FiniteFreeChartProjectiveRestriction
 public import FLT.Mazur.FiniteFreeChartProjectiveTransitions
 public import FLT.Mazur.FiniteFreeChartRestriction
+public import FLT.Mazur.FiniteFreeChartSectionLinePullback
 public import FLT.Mazur.FiniteFreeChartSectionLines
 public import FLT.Mazur.FiniteFreeChartTransitions
 public import FLT.Mazur.FiniteFreeContragredient
