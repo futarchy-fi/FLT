@@ -6694,6 +6694,7 @@ public import FLT.Mazur.WeierstrassDividedFinalRetainedConic
 public import FLT.Mazur.WeierstrassDividedFinalRetainedNodesDistinct
 public import FLT.Mazur.WeierstrassDividedFinalTerminalComponents
 public import FLT.Mazur.WeierstrassDividedFinalTerminalOverComponents
+public import FLT.Mazur.WeierstrassDividedFinalZeroBranchCharts
 public import FLT.Mazur.WeierstrassDividedFinalZeroExterior
 public import FLT.Mazur.WeierstrassDividedFinalZeroExteriorRanges
 public import FLT.Mazur.WeierstrassDividedFiniteAffineProper
