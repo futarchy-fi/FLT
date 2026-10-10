@@ -2997,7 +2997,9 @@ public import FLT.Mazur.CartesianStructurePositiveHomology
 public import FLT.Mazur.CartesianStructureSections
 public import FLT.Mazur.CartesianStructureTensorRestrictions
 public import FLT.Mazur.CartesianUpperCone
+public import FLT.Mazur.CartierAbelDirectImageSections
 public import FLT.Mazur.CartierAbelFiber
+public import FLT.Mazur.CartierAbelIntegralFiberSections
 public import FLT.Mazur.CartierAbelRelativeBaseChange
 public import FLT.Mazur.CartierAbelRelativeQuotient
 public import FLT.Mazur.CartierAbelSectionQuotient
@@ -4536,8 +4538,10 @@ public import FLT.Mazur.LineSheafSectionRigidity
 public import FLT.Mazur.LineStructureProjection
 public import FLT.Mazur.LineSubbundleGluing
 public import FLT.Mazur.LineSubbundleGluingPullback
+public import FLT.Mazur.LineTensorEquivalence
 public import FLT.Mazur.LineTensorInverseComparison
 public import FLT.Mazur.LineTensorInverseCompatibility
+public import FLT.Mazur.LineTensorSectionEquiv
 public import FLT.Mazur.LineTrivializationCocycle
 public import FLT.Mazur.LineTrivializationCocycleRecovery
 public import FLT.Mazur.LineTrivializationCoordinates
@@ -6140,6 +6144,7 @@ public import FLT.Mazur.TensorOpenChart
 public import FLT.Mazur.TensorOpenChartCommonBoundary
 public import FLT.Mazur.TensorOpenChartCommonIntersection
 public import FLT.Mazur.TensorOpenChartIntersection
+public import FLT.Mazur.TensorOpenChartNodeExclusion
 public import FLT.Mazur.TensorOpenChartOverlap
 public import FLT.Mazur.TensorOpenChartRange
 public import FLT.Mazur.TensorOpenChartTargetTransport
@@ -6156,6 +6161,10 @@ public import FLT.Mazur.TildeSourceSectionComparison
 public import FLT.Mazur.TorusChartScalars
 public import FLT.Mazur.TrivialLineTwistLocalization
 public import FLT.Mazur.TrivializedLineSheafLimitDescent
+public import FLT.Mazur.TwistedSectionIntegralCriterion
+public import FLT.Mazur.TwistedSectionPushforward
+public import FLT.Mazur.TwistedSectionPushforwardNaturality
+public import FLT.Mazur.TwistedSectionRegularity
 public import FLT.Mazur.UniformizerRootExtension
 public import FLT.Mazur.UnitIntegerModel
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryAffineSections
@@ -6392,6 +6401,15 @@ public import FLT.Mazur.WeierstrassDividedExteriorReassociation
 public import FLT.Mazur.WeierstrassDividedExteriorSmoothOpen
 public import FLT.Mazur.WeierstrassDividedExteriorStep
 public import FLT.Mazur.WeierstrassDividedExteriorYBoundary
+public import FLT.Mazur.WeierstrassDividedFinalInitialNodesDistinct
+public import FLT.Mazur.WeierstrassDividedFinalNodeAdjacent
+public import FLT.Mazur.WeierstrassDividedFinalNodeChart
+public import FLT.Mazur.WeierstrassDividedFinalNodeCoproduct
+public import FLT.Mazur.WeierstrassDividedFinalNodeFamily
+public import FLT.Mazur.WeierstrassDividedFinalNodeNonadjacent
+public import FLT.Mazur.WeierstrassDividedFinalNodeOrigins
+public import FLT.Mazur.WeierstrassDividedFinalNodesDistinct
+public import FLT.Mazur.WeierstrassDividedFinalRetainedNodesDistinct
 public import FLT.Mazur.WeierstrassDividedFiniteAffineProper
 public import FLT.Mazur.WeierstrassDividedFiniteAtlas
 public import FLT.Mazur.WeierstrassDividedFiniteChartStructure
@@ -6454,6 +6472,7 @@ public import FLT.Mazur.WeierstrassDividedInitialGlobalResidueNodes
 public import FLT.Mazur.WeierstrassDividedInitialGlobalSections
 public import FLT.Mazur.WeierstrassDividedInitialGlobalTensorChart
 public import FLT.Mazur.WeierstrassDividedInitialIndexedNodeCover
+public import FLT.Mazur.WeierstrassDividedInitialPrecedingExterior
 public import FLT.Mazur.WeierstrassDividedInitialResidueAtlas
 public import FLT.Mazur.WeierstrassDividedInitialTensorChart
 public import FLT.Mazur.WeierstrassDividedInitialZeroInfinity
@@ -6508,6 +6527,7 @@ public import FLT.Mazur.WeierstrassDividedOlderZeroExtendedOrigins
 public import FLT.Mazur.WeierstrassDividedOlderZeroExtendedSections
 public import FLT.Mazur.WeierstrassDividedOlderZeroIndexedNodeCover
 public import FLT.Mazur.WeierstrassDividedOppositeBoundarySupport
+public import FLT.Mazur.WeierstrassDividedOrderedRetainedSections
 public import FLT.Mazur.WeierstrassDividedPreviousBoundaryAlgebra
 public import FLT.Mazur.WeierstrassDividedResidueAtlasExtension
 public import FLT.Mazur.WeierstrassDividedResidueAtlasFinite
@@ -6521,6 +6541,7 @@ public import FLT.Mazur.WeierstrassDividedSkippedTensorIntersection
 public import FLT.Mazur.WeierstrassDividedSuccessiveOriginalY
 public import FLT.Mazur.WeierstrassDividedTensorAtlasComparison
 public import FLT.Mazur.WeierstrassDividedTensorYBoundary
+public import FLT.Mazur.WeierstrassDividedTerminalAllExteriorNodes
 public import FLT.Mazur.WeierstrassDividedTerminalBranchIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalBranchesNodeIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalConicBoundary
