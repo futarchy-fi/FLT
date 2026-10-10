@@ -7231,6 +7231,7 @@ public import FLT.Mazur.WeierstrassDividedZeroCycleZeroPositiveTensorCompatibili
 public import FLT.Mazur.WeierstrassDividedZeroCycleZeroTensorDesc
 public import FLT.Mazur.WeierstrassDividedZeroEqualityCocone
 public import FLT.Mazur.WeierstrassDividedZeroEqualityComponentGeometry
+public import FLT.Mazur.WeierstrassDividedZeroEqualityConicBranches
 public import FLT.Mazur.WeierstrassDividedZeroEqualityCycle
 public import FLT.Mazur.WeierstrassDividedZeroEqualityCycleCoverage
 public import FLT.Mazur.WeierstrassDividedZeroEqualityCycleEndCharts
