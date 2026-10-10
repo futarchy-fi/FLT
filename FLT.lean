@@ -4560,6 +4560,7 @@ public import FLT.Mazur.LineSectionZeroIdealOrbits
 public import FLT.Mazur.LineSectionZeroIdealPullback
 public import FLT.Mazur.LineSheafBidual
 public import FLT.Mazur.LineSheafDualEvaluation
+public import FLT.Mazur.LineSheafDualInvolution
 public import FLT.Mazur.LineSheafDualTriangle
 public import FLT.Mazur.LineSheafEndomorphismSheaf
 public import FLT.Mazur.LineSheafEvaluationBalance
