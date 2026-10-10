@@ -5592,6 +5592,7 @@ public import FLT.Mazur.RelativePicardFppfSheaf
 public import FLT.Mazur.RelativePicardPresheaf
 public import FLT.Mazur.RelativePicardPresheafBaseChange
 public import FLT.Mazur.RelativePicardQuotient
+public import FLT.Mazur.RelativePicardTwistIso
 public import FLT.Mazur.RelativePinchingDescent
 public import FLT.Mazur.RelativePinchingLocalDescent
 public import FLT.Mazur.RelativePinchingNeighborhoods
