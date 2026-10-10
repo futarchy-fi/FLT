@@ -2844,6 +2844,7 @@ public import FLT.Mazur.AmplePreimageSectionCover
 public import FLT.Mazur.AmplePrincipalLocality
 public import FLT.Mazur.AmpleSectionCoverPullback
 public import FLT.Mazur.AmpleTwistedSectionLifting
+public import FLT.Mazur.AmpleVeroneseEvaluation
 public import FLT.Mazur.AnnihilatorCoherence
 public import FLT.Mazur.AnnihilatorStalk
 public import FLT.Mazur.AnnihilatorSubsheaf
