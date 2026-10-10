@@ -6999,6 +6999,7 @@ public import FLT.Mazur.WeierstrassDividedZeroBoundaryFunctions
 public import FLT.Mazur.WeierstrassDividedZeroCycleAtlasCompatibility
 public import FLT.Mazur.WeierstrassDividedZeroCycleAtlasDisjoint
 public import FLT.Mazur.WeierstrassDividedZeroCycleAtlasFamily
+public import FLT.Mazur.WeierstrassDividedZeroCycleAtlasTerminalNonadjacent
 public import FLT.Mazur.WeierstrassDividedZeroCycleAtlasTerminalSeparation
 public import FLT.Mazur.WeierstrassDividedZeroCycleAttachmentBranches
 public import FLT.Mazur.WeierstrassDividedZeroCycleAttachmentCompatibility
