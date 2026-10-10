@@ -6497,6 +6497,7 @@ public import FLT.Mazur.WeierstrassDividedInitialIndexedNodeCover
 public import FLT.Mazur.WeierstrassDividedInitialLineBoundary
 public import FLT.Mazur.WeierstrassDividedInitialParameterOverlap
 public import FLT.Mazur.WeierstrassDividedInitialPrecedingExterior
+public import FLT.Mazur.WeierstrassDividedInitialProjectiveComponents
 public import FLT.Mazur.WeierstrassDividedInitialResidueAtlas
 public import FLT.Mazur.WeierstrassDividedInitialRetainedBoundary
 public import FLT.Mazur.WeierstrassDividedInitialTensorBoundary
