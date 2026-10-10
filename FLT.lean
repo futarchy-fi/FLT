@@ -5105,6 +5105,7 @@ public import FLT.Mazur.PolygonClosedEvaluationLifting
 public import FLT.Mazur.PolygonClosedScalarLifting
 public import FLT.Mazur.PolygonCoconeComparison
 public import FLT.Mazur.PolygonCohomologyIncidence
+public import FLT.Mazur.PolygonCompatibleCoefficientFlatness
 public import FLT.Mazur.PolygonCompatibleDegreeExactness
 public import FLT.Mazur.PolygonCompatibleDegreeLifting
 public import FLT.Mazur.PolygonCompatibleDegreeProjection
