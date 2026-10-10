@@ -6361,6 +6361,7 @@ public import FLT.Mazur.SectionProjectiveFiniteNeighborhood
 public import FLT.Mazur.SectionProjectiveImmersion
 public import FLT.Mazur.SectionRetainedChartComparison
 public import FLT.Mazur.SectionRetainedChartMorphism
+public import FLT.Mazur.SectionRetainedProjBaseCoefficients
 public import FLT.Mazur.SectionRetainedProjChart
 public import FLT.Mazur.SectionRetainedProjConstruction
 public import FLT.Mazur.SectionRetainedProjGluing
