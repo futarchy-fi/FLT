@@ -7041,6 +7041,7 @@ public import FLT.Mazur.WeierstrassTransportedComparisonArbitrary
 public import FLT.Mazur.WeierstrassTransportedOutputRegular
 public import FLT.Mazur.WeierstrassTransportedPolynomialComparison
 public import FLT.Mazur.WeierstrassTransportedPolynomialScheme
+public import FLT.Mazur.WeierstrassTriangularFrame
 public import FLT.Mazur.WeierstrassTripleAdditionCover
 public import FLT.Mazur.WeierstrassTripleCenteredCubics
 public import FLT.Mazur.WeierstrassTripleCenteredRelations
