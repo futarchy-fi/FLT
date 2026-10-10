@@ -2712,6 +2712,7 @@ public import FLT.Mazur.AffineScalarMapComposition
 public import FLT.Mazur.AffineScaledPullbackSections
 public import FLT.Mazur.AffineScaledTripleTransport
 public import FLT.Mazur.AffineSectionEvaluationCoordinates
+public import FLT.Mazur.AffineSectionLineCanonicalPoint
 public import FLT.Mazur.AffineSectionLineCanonicalPullback
 public import FLT.Mazur.AffineSectionLineCanonicalRestriction
 public import FLT.Mazur.AffineSectionLineChartRestriction
@@ -2732,6 +2733,8 @@ public import FLT.Mazur.AffineSplitLineAmbientTransport
 public import FLT.Mazur.AffineSplitLineCoordinatePullback
 public import FLT.Mazur.AffineSplitLineCoordinates
 public import FLT.Mazur.AffineSplitLineFrameIndependence
+public import FLT.Mazur.AffineSplitLineNormalizedSource
+public import FLT.Mazur.AffineSplitLinePointRecovery
 public import FLT.Mazur.AffineSplitLineProjectivePullback
 public import FLT.Mazur.AffineSplitLineProjectiveRefinement
 public import FLT.Mazur.AffineSplitLineSectionCoordinates
@@ -3297,11 +3300,13 @@ public import FLT.Mazur.DualAtlasSectionBaseNeighborhood
 public import FLT.Mazur.DualAtlasSectionChartPoints
 public import FLT.Mazur.DualAtlasSectionCommonPoint
 public import FLT.Mazur.DualAtlasSectionForwardLine
+public import FLT.Mazur.DualAtlasSectionForwardReverse
 public import FLT.Mazur.DualAtlasSectionLineCover
 public import FLT.Mazur.DualAtlasSectionLineOverlap
 public import FLT.Mazur.DualAtlasSectionLocalLines
 public import FLT.Mazur.DualAtlasSectionLocalSubobjects
 public import FLT.Mazur.DualAtlasSectionNormalizedRefinement
+public import FLT.Mazur.DualAtlasSectionReverseForward
 public import FLT.Mazur.EllipticAbstractComponentInjection
 public import FLT.Mazur.EllipticAbstractGoodReductionClosure
 public import FLT.Mazur.EllipticAbstractMultiplicativeComponents
@@ -4470,6 +4475,7 @@ public import FLT.Mazur.LinePowerEvaluationDescent
 public import FLT.Mazur.LinePowerSectionBaseChange
 public import FLT.Mazur.LinePowerSectionLimitDescent
 public import FLT.Mazur.LinePullbackRestriction
+public import FLT.Mazur.LineRecoveryPullback
 public import FLT.Mazur.LineSectionCanonicalRecovery
 public import FLT.Mazur.LineSectionCohomologyAnnihilation
 public import FLT.Mazur.LineSectionCohomologySurjection
@@ -4549,12 +4555,16 @@ public import FLT.Mazur.LocallySmoothQuasiFiniteCartier
 public import FLT.Mazur.LocallySplitInclusionPullback
 public import FLT.Mazur.LocallySplitLineAmbientChart
 public import FLT.Mazur.LocallySplitLineAmbientTransport
+public import FLT.Mazur.LocallySplitLineAtlasChartRecovery
 public import FLT.Mazur.LocallySplitLineAtlasIndependence
 public import FLT.Mazur.LocallySplitLineAtlasSection
 public import FLT.Mazur.LocallySplitLineChartRefinement
 public import FLT.Mazur.LocallySplitLineDualChartCompatibility
+public import FLT.Mazur.LocallySplitLineNormalizedChart
 public import FLT.Mazur.LocallySplitLineOpenRestriction
+public import FLT.Mazur.LocallySplitLinePointRecovery
 public import FLT.Mazur.LocallySplitLineSourceTransport
+public import FLT.Mazur.LocallySplitSheafMonomorphism
 public import FLT.Mazur.LocallySplitSheafPullback
 public import FLT.Mazur.LocallySplitSheafTransport
 public import FLT.Mazur.MarkedIntegerModel
@@ -6035,6 +6045,7 @@ public import FLT.Mazur.SplitLineProjectiveMorphism
 public import FLT.Mazur.SplitLineProjectiveNaturality
 public import FLT.Mazur.SplitLineProjectivePullback
 public import FLT.Mazur.SplitLineProjectiveUnitRecovery
+public import FLT.Mazur.SplitLineRestrictionSubobjects
 public import FLT.Mazur.SplitSheafLinePullback
 public import FLT.Mazur.SplitSheafLinePullbackComposition
 public import FLT.Mazur.StableAffineQuotientAffineDescent
