@@ -7848,6 +7848,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXZeroExteriorBoundary
 public import FLT.Mazur.WeierstrassSuccessiveXZeroIncidenceBoundary
 public import FLT.Mazur.WeierstrassSuccessiveXZeroNodeIdeals
 public import FLT.Mazur.WeierstrassSuccessiveXZeroNodeMaps
+public import FLT.Mazur.WeierstrassSuccessiveXZeroNodePunctures
 public import FLT.Mazur.WeierstrassSuccessiveXZeroOverlap
 public import FLT.Mazur.WeierstrassSuccessiveXZeroResidue
 public import FLT.Mazur.WeierstrassSwappedAdditionIntersections
