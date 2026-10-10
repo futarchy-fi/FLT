@@ -5765,6 +5765,7 @@ public import FLT.Mazur.WeierstrassGeneralizedEllipticModel
 public import FLT.Mazur.WeierstrassGeneralizedSmoothComparison
 public import FLT.Mazur.WeierstrassGenusOneFamily
 public import FLT.Mazur.WeierstrassGeometricConnected
+public import FLT.Mazur.WeierstrassGeometricFourBasis
 public import FLT.Mazur.WeierstrassGeometricFourTorsion
 public import FLT.Mazur.WeierstrassGeometricIntegral
 public import FLT.Mazur.WeierstrassGlobalAdditionCover
