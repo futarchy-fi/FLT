@@ -6222,6 +6222,7 @@ public import FLT.Mazur.WeierstrassDividedFiniteContraction
 public import FLT.Mazur.WeierstrassDividedFiniteExteriorPullback
 public import FLT.Mazur.WeierstrassDividedFiniteFlat
 public import FLT.Mazur.WeierstrassDividedFiniteIteration
+public import FLT.Mazur.WeierstrassDividedFiniteLineBoundary
 public import FLT.Mazur.WeierstrassDividedFiniteLineBranches
 public import FLT.Mazur.WeierstrassDividedFiniteLineContractions
 public import FLT.Mazur.WeierstrassDividedFiniteLineReciprocals
