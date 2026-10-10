@@ -5282,6 +5282,7 @@ public import FLT.Mazur.PolygonTranslationImages
 public import FLT.Mazur.PolygonUniversalAction
 public import FLT.Mazur.PolygonUniversalScaling
 public import FLT.Mazur.PolygonVeroneseDegreeExactness
+public import FLT.Mazur.PolygonVeroneseEvaluationKernel
 public import FLT.Mazur.PolygonVeroneseHomogeneousReduction
 public import FLT.Mazur.PolygonVeroneseParameterIdeal
 public import FLT.Mazur.PolynomialAffineIdealDegree
