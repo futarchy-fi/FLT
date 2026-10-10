@@ -7566,6 +7566,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXZeroConicBoundary
 public import FLT.Mazur.WeierstrassSuccessiveXZeroConicIntegralBoundary
 public import FLT.Mazur.WeierstrassSuccessiveXZeroConicIntegralNormalization
 public import FLT.Mazur.WeierstrassSuccessiveXZeroContraction
+public import FLT.Mazur.WeierstrassSuccessiveXZeroExteriorBoundary
 public import FLT.Mazur.WeierstrassSuccessiveXZeroIncidenceBoundary
 public import FLT.Mazur.WeierstrassSuccessiveXZeroNodeIdeals
 public import FLT.Mazur.WeierstrassSuccessiveXZeroNodeMaps
