@@ -2972,6 +2972,7 @@ public import FLT.Mazur.BaseAdicReesSpectrumTripleSheafMaps
 public import FLT.Mazur.BaseAdicReesSpectrumTripleSheafNormalization
 public import FLT.Mazur.BaseAdicReesTensorModule
 public import FLT.Mazur.BaseAdicSectionReconstruction
+public import FLT.Mazur.BaseAdicSectionSuccessorReconstruction
 public import FLT.Mazur.BaseAdicThickening
 public import FLT.Mazur.BaseChangeSectionEquiv
 public import FLT.Mazur.BaseChangedPresentationModel
@@ -4097,7 +4098,12 @@ public import FLT.Mazur.GradedProjArbitraryBaseChange
 public import FLT.Mazur.GradedProjBaseChangeMap
 public import FLT.Mazur.GradedProjChartArbitraryBaseChange
 public import FLT.Mazur.GradedProjDedekindFlatness
+public import FLT.Mazur.GradedProjEqualDegreeCover
 public import FLT.Mazur.GradedProjEventualGenerationCover
+public import FLT.Mazur.GradedProjLineCoordinates
+public import FLT.Mazur.GradedProjLineRatioCocycle
+public import FLT.Mazur.GradedProjLineSectionCocycle
+public import FLT.Mazur.GradedProjLineSheaf
 public import FLT.Mazur.GradedProjPositiveBasis
 public import FLT.Mazur.GradedProjRegradedEvaluation
 public import FLT.Mazur.GradedProjRingEquiv
@@ -5122,7 +5128,10 @@ public import FLT.Mazur.PolygonCompatibleSectionScalars
 public import FLT.Mazur.PolygonCompatibleVeronese
 public import FLT.Mazur.PolygonCompatibleZeroCoefficients
 public import FLT.Mazur.PolygonCompleteBaseMarkings
+public import FLT.Mazur.PolygonCompleteCoefficientLine
+public import FLT.Mazur.PolygonCompleteCoefficientReconstruction
 public import FLT.Mazur.PolygonCompleteFamilyFlatness
+public import FLT.Mazur.PolygonCompleteLineQuotient
 public import FLT.Mazur.PolygonCompleteMarkingSpecialization
 public import FLT.Mazur.PolygonComponentDistinct
 public import FLT.Mazur.PolygonComponentImages
