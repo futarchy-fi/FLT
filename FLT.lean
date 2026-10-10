@@ -5115,6 +5115,7 @@ public import FLT.Mazur.PolygonCyclicNormalizationPullback
 public import FLT.Mazur.PolygonCyclicNormalizationRanges
 public import FLT.Mazur.PolygonCyclicPushout
 public import FLT.Mazur.PolygonCyclicSeparated
+public import FLT.Mazur.PolygonDegreeZeroScalarExactness
 public import FLT.Mazur.PolygonDimension
 public import FLT.Mazur.PolygonDirectImageCohomology
 public import FLT.Mazur.PolygonDirectPowerComparison
