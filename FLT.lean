@@ -7447,6 +7447,7 @@ public import FLT.Mazur.WeierstrassModificationXAlgebra
 public import FLT.Mazur.WeierstrassModificationXBaseChange
 public import FLT.Mazur.WeierstrassModificationXBaseChangeGenerators
 public import FLT.Mazur.WeierstrassModificationXCoefficients
+public import FLT.Mazur.WeierstrassModificationXConicBoundaryCharts
 public import FLT.Mazur.WeierstrassModificationXConicBoundaryOverlap
 public import FLT.Mazur.WeierstrassModificationXConicBoundaryParameters
 public import FLT.Mazur.WeierstrassModificationXConicFirstInverse
