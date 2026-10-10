@@ -5722,6 +5722,7 @@ public import FLT.Mazur.ProperFamilyAbelRepresentation
 public import FLT.Mazur.ProperFamilyAtlasCartesian
 public import FLT.Mazur.ProperFamilyAtlasRecovery
 public import FLT.Mazur.ProperFamilyDivisorNaturality
+public import FLT.Mazur.ProperFamilyFiberFunctor
 public import FLT.Mazur.ProperFamilyFiberPullback
 public import FLT.Mazur.ProperFamilyLineClassification
 public import FLT.Mazur.ProperFamilyLineDescent
