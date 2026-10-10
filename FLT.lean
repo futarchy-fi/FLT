@@ -5737,6 +5737,7 @@ public import FLT.Mazur.WeierstrassDividedOlderExtendedOrigins
 public import FLT.Mazur.WeierstrassDividedOlderExtendedSections
 public import FLT.Mazur.WeierstrassDividedOlderGlobalExterior
 public import FLT.Mazur.WeierstrassDividedOlderGlobalInfinityIntersection
+public import FLT.Mazur.WeierstrassDividedOlderGlobalMiddleComponents
 public import FLT.Mazur.WeierstrassDividedOlderGlobalNodeComponents
 public import FLT.Mazur.WeierstrassDividedOlderGlobalResidueNodes
 public import FLT.Mazur.WeierstrassDividedOlderGlobalSections
