@@ -5730,6 +5730,7 @@ public import FLT.Mazur.WeierstrassDividedInitialZeroInfinity
 public import FLT.Mazur.WeierstrassDividedInitialZeroSlopeChart
 public import FLT.Mazur.WeierstrassDividedOlderAtlasIndex
 public import FLT.Mazur.WeierstrassDividedOlderExtendedNodeLoci
+public import FLT.Mazur.WeierstrassDividedOlderExtendedSections
 public import FLT.Mazur.WeierstrassDividedOlderGlobalExterior
 public import FLT.Mazur.WeierstrassDividedOlderGlobalInfinityIntersection
 public import FLT.Mazur.WeierstrassDividedOlderGlobalNodeComponents
