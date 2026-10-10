@@ -6166,6 +6166,7 @@ public import FLT.Mazur.UniversalWeierstrassAuxiliaryEtale
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryFieldCoordinates
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryFrameUnits
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryFullBasis
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryFullMarkingSections
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryFullNormalizedMarking
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryIsomorphismUnique
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryLevel
