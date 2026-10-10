@@ -5021,6 +5021,7 @@ public import FLT.Mazur.PolygonClassifiedFamily
 public import FLT.Mazur.PolygonCoconeComparison
 public import FLT.Mazur.PolygonCohomologyIncidence
 public import FLT.Mazur.PolygonCompatibleSectionRing
+public import FLT.Mazur.PolygonCompatibleSectionScalars
 public import FLT.Mazur.PolygonComponentDistinct
 public import FLT.Mazur.PolygonComponentImages
 public import FLT.Mazur.PolygonConnected
