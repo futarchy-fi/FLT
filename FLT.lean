@@ -3287,6 +3287,7 @@ public import FLT.Mazur.DRFiberClassification
 public import FLT.Mazur.DedekindPointExtension
 public import FLT.Mazur.DirectImageBaseChangeAdjoints
 public import FLT.Mazur.DirectImageBaseChangeMate
+public import FLT.Mazur.DirectImageBaseChangeNormalizedPasting
 public import FLT.Mazur.DirectImageBaseChangePasting
 public import FLT.Mazur.DirectImageBaseChangeRestriction
 public import FLT.Mazur.DirectImageBaseChangeUnit
@@ -4593,6 +4594,7 @@ public import FLT.Mazur.LineSectionZeroDivisor
 public import FLT.Mazur.LineSectionZeroIdealOrbits
 public import FLT.Mazur.LineSectionZeroIdealPullback
 public import FLT.Mazur.LineSheafBidual
+public import FLT.Mazur.LineSheafBidualPullback
 public import FLT.Mazur.LineSheafDualEvaluation
 public import FLT.Mazur.LineSheafDualInvolution
 public import FLT.Mazur.LineSheafDualTriangle
@@ -4751,6 +4753,7 @@ public import FLT.Mazur.ModuleSheafAdjointPathNaturality
 public import FLT.Mazur.ModuleSheafAffinePairTestDetection
 public import FLT.Mazur.ModuleSheafAffineTestCompatibility
 public import FLT.Mazur.ModuleSheafBidual
+public import FLT.Mazur.ModuleSheafBidualPullback
 public import FLT.Mazur.ModuleSheafBinarySections
 public import FLT.Mazur.ModuleSheafChartOverlapRecovery
 public import FLT.Mazur.ModuleSheafChartRecoveryRefinement
@@ -4827,6 +4830,7 @@ public import FLT.Mazur.ModuleTensorCokernelDescent
 public import FLT.Mazur.ModuleTensorPowerSection
 public import FLT.Mazur.ModuleTensorPowerSectionInduction
 public import FLT.Mazur.ModuleTensorPullbackRestriction
+public import FLT.Mazur.ModuleTensorPullbackSymmetry
 public import FLT.Mazur.ModuleUnitCocycleCongr
 public import FLT.Mazur.ModuleUnitCocyclePullback
 public import FLT.Mazur.MonoFamilySchemeGluing
@@ -5666,6 +5670,10 @@ public import FLT.Mazur.ProperConnectedReducedSections
 public import FLT.Mazur.ProperCoverImmersionCriterion
 public import FLT.Mazur.ProperCoverLimitDescent
 public import FLT.Mazur.ProperCurveGenus
+public import FLT.Mazur.ProperFamilyAtlasCartesian
+public import FLT.Mazur.ProperFamilyAtlasRecovery
+public import FLT.Mazur.ProperFamilyTwistedRecovery
+public import FLT.Mazur.ProperFamilyUniversalLineRecovery
 public import FLT.Mazur.ProperFiberEvaluationLocus
 public import FLT.Mazur.ProperFiberNeighborhood
 public import FLT.Mazur.ProperFiberTensorComplex
@@ -5725,6 +5733,7 @@ public import FLT.Mazur.ProperTwistedLineDescent
 public import FLT.Mazur.ProperUniversalCartierDivisor
 public import FLT.Mazur.ProperUniversalDirectImageLine
 public import FLT.Mazur.ProperUniversalDirectImagePasting
+public import FLT.Mazur.ProperUniversalRetainedSection
 public import FLT.Mazur.PullbackOverlapBaseChange
 public import FLT.Mazur.PuncturedNodeRestrictionComparison
 public import FLT.Mazur.PushforwardCech
@@ -5827,6 +5836,7 @@ public import FLT.Mazur.ResidueNonvanishingLocallySplit
 public import FLT.Mazur.ResidueNonvanishingOpenPullback
 public import FLT.Mazur.ResiduePullbackNonvanishingTransport
 public import FLT.Mazur.ResidueVectorRetraction
+public import FLT.Mazur.RetainedLineTwistedSection
 public import FLT.Mazur.RightDerivedDimensionShift
 public import FLT.Mazur.RigidifiedLineIsomorphisms
 public import FLT.Mazur.RingCohomologyFinitePushforward
