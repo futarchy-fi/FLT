@@ -7599,6 +7599,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodeOrigin
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodePushout
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleOverlap
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleSecondNode
+public import FLT.Mazur.WeierstrassSuccessiveXMiddleSplitBranchCharts
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleSplitBranchCoordinates
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleSplitBranchMaps
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleSplitOppositeConic
