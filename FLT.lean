@@ -4519,6 +4519,7 @@ public import FLT.Mazur.InvariantLocalizationComparison
 public import FLT.Mazur.InvariantLocalizationCoordinates
 public import FLT.Mazur.InvariantLocalizationNumerator
 public import FLT.Mazur.IrreducibleComponentAmple
+public import FLT.Mazur.IsomorphicClosedPullback
 public import FLT.Mazur.IteratedOldArrowRepresentatives
 public import FLT.Mazur.IteratedOldDenominatorRecovery
 public import FLT.Mazur.IteratedOldDiagramRefinement
