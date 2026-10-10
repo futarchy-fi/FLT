@@ -3332,6 +3332,7 @@ public import FLT.Mazur.DualAtlasSectionLocalSubobjects
 public import FLT.Mazur.DualAtlasSectionNormalizedRefinement
 public import FLT.Mazur.DualAtlasSectionReverseForward
 public import FLT.Mazur.DualFreeSheafCoordinates
+public import FLT.Mazur.DualPullbackComposition
 public import FLT.Mazur.EllipticAbstractComponentInjection
 public import FLT.Mazur.EllipticAbstractGoodReductionClosure
 public import FLT.Mazur.EllipticAbstractMultiplicativeComponents
