@@ -5739,6 +5739,7 @@ public import FLT.Mazur.WeierstrassDividedOlderGlobalZeroConic
 public import FLT.Mazur.WeierstrassDividedOlderGlobalZeroNodeBoundaries
 public import FLT.Mazur.WeierstrassDividedOlderGlobalZeroNodes
 public import FLT.Mazur.WeierstrassDividedOlderGlobalZeroSections
+public import FLT.Mazur.WeierstrassDividedOlderGlobalZeroSlope
 public import FLT.Mazur.WeierstrassDividedOlderGlobalZeroSuccessive
 public import FLT.Mazur.WeierstrassDividedOlderIndexedIntersections
 public import FLT.Mazur.WeierstrassDividedOlderIndexedNodeCover
