@@ -5498,6 +5498,7 @@ public import FLT.Mazur.ProperIntegralConstantSections
 public import FLT.Mazur.ProperLineFiberVanishing
 public import FLT.Mazur.ProperLinePushforwardBaseChange
 public import FLT.Mazur.ProperLinePushforwardLocalFree
+public import FLT.Mazur.ProperLinePushforwardMate
 public import FLT.Mazur.ProperLinePushforwardTilde
 public import FLT.Mazur.ProperLineSectionProjective
 public import FLT.Mazur.ProperLineSheafDescent
