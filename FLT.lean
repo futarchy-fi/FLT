@@ -6398,6 +6398,7 @@ public import FLT.Mazur.TrivializedLineSheafLimitDescent
 public import FLT.Mazur.TwistedSectionBaseChange
 public import FLT.Mazur.TwistedSectionBaseChangeRegularity
 public import FLT.Mazur.TwistedSectionBaseLineNaturality
+public import FLT.Mazur.TwistedSectionBidual
 public import FLT.Mazur.TwistedSectionCartierTransport
 public import FLT.Mazur.TwistedSectionCoefficientNaturality
 public import FLT.Mazur.TwistedSectionIntegralCriterion
