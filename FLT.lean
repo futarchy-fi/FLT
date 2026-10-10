@@ -7926,6 +7926,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXTerminalConicCover
 public import FLT.Mazur.WeierstrassSuccessiveXTerminalConicOrigin
 public import FLT.Mazur.WeierstrassSuccessiveXTerminalConicParameters
 public import FLT.Mazur.WeierstrassSuccessiveXTerminalLaurentBoundary
+public import FLT.Mazur.WeierstrassSuccessiveXTerminalLaurentComponent
 public import FLT.Mazur.WeierstrassSuccessiveXTerminalNodePunctures
 public import FLT.Mazur.WeierstrassSuccessiveXTotalTransform
 public import FLT.Mazur.WeierstrassSuccessiveXZeroConicBoundary
