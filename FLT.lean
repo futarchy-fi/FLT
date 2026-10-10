@@ -3781,6 +3781,7 @@ public import FLT.Mazur.FiniteFreeDualPointBaseChange
 public import FLT.Mazur.FiniteFreeDualProjectivePoints
 public import FLT.Mazur.FiniteFreeDualProjectiveRefinement
 public import FLT.Mazur.FiniteFreeDualProjectiveTransitions
+public import FLT.Mazur.FiniteFreeFrameHorizontal
 public import FLT.Mazur.FiniteFreeFramePasting
 public import FLT.Mazur.FiniteFreeFrameRestrictionSquare
 public import FLT.Mazur.FiniteFreeInheritedChartTransitions
