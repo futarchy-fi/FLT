@@ -6931,6 +6931,7 @@ public import FLT.Mazur.WeierstrassDividedDepthStructure
 public import FLT.Mazur.WeierstrassDividedDepthYBoundary
 public import FLT.Mazur.WeierstrassDividedEqualityComponentEndpoints
 public import FLT.Mazur.WeierstrassDividedEqualityNodeFamily
+public import FLT.Mazur.WeierstrassDividedEqualityNodesDistinct
 public import FLT.Mazur.WeierstrassDividedExterior
 public import FLT.Mazur.WeierstrassDividedExteriorBranchIntersections
 public import FLT.Mazur.WeierstrassDividedExteriorIntersections
@@ -7222,7 +7223,14 @@ public import FLT.Mazur.WeierstrassDividedZeroCycleZeroAtlasConics
 public import FLT.Mazur.WeierstrassDividedZeroCycleZeroIndexedMap
 public import FLT.Mazur.WeierstrassDividedZeroCycleZeroPositiveTensorCompatibility
 public import FLT.Mazur.WeierstrassDividedZeroCycleZeroTensorDesc
+public import FLT.Mazur.WeierstrassDividedZeroEqualityCocone
+public import FLT.Mazur.WeierstrassDividedZeroEqualityComponentGeometry
+public import FLT.Mazur.WeierstrassDividedZeroEqualityCycle
+public import FLT.Mazur.WeierstrassDividedZeroEqualityCycleCoverage
+public import FLT.Mazur.WeierstrassDividedZeroEqualityCycleEndCharts
 public import FLT.Mazur.WeierstrassDividedZeroEqualityCycleIndices
+public import FLT.Mazur.WeierstrassDividedZeroEqualityCycleRanges
+public import FLT.Mazur.WeierstrassDividedZeroEqualityPolygonMap
 public import FLT.Mazur.WeierstrassDividedZeroExteriorCoverage
 public import FLT.Mazur.WeierstrassDividedZeroExteriorCurve
 public import FLT.Mazur.WeierstrassDividedZeroExteriorLaurent
@@ -7929,8 +7937,12 @@ public import FLT.Mazur.WeierstrassSuccessiveXMiddleFirstParameter
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleIncidence
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleIntersection
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleLines
+public import FLT.Mazur.WeierstrassSuccessiveXMiddleLocalizedBranchCoordinates
+public import FLT.Mazur.WeierstrassSuccessiveXMiddleLocalizedBranchParameters
+public import FLT.Mazur.WeierstrassSuccessiveXMiddleLocalizedPushout
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodeBranches
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodeCoordinates
+public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodeEqualizer
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodeEquiv
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodeMaps
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodeOrigin
