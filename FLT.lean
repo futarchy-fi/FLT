@@ -5756,6 +5756,7 @@ public import FLT.Mazur.ProperFamilyOriginalOrbits
 public import FLT.Mazur.ProperFamilyOriginalPullback
 public import FLT.Mazur.ProperFamilyOriginalSectionRecovery
 public import FLT.Mazur.ProperFamilyOriginalZeroIdeal
+public import FLT.Mazur.ProperFamilyPrescribedComposition
 public import FLT.Mazur.ProperFamilyPrescribedIdentity
 public import FLT.Mazur.ProperFamilyRepresentedDivisor
 public import FLT.Mazur.ProperFamilySectionOrbits
@@ -6378,6 +6379,7 @@ public import FLT.Mazur.SheafPullbackNamedSquare
 public import FLT.Mazur.SheafPullbackNormalizedRefinement
 public import FLT.Mazur.SheafPullbackObjectwiseRefinement
 public import FLT.Mazur.SheafPullbackPathComparison
+public import FLT.Mazur.SheafPullbackPathPentagon
 public import FLT.Mazur.SheafPullbackRetractionSquare
 public import FLT.Mazur.SheafPullbackSectionReconstruction
 public import FLT.Mazur.SheafPullbackSectionSquare
