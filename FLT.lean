@@ -6301,6 +6301,7 @@ public import FLT.Mazur.SchemeIndependentFamilyAssemblyFullyFaithful
 public import FLT.Mazur.SchemeIndependentFamilyEquivalence
 public import FLT.Mazur.SchemeIndependentFamilyLineCategory
 public import FLT.Mazur.SchemeIndependentFamilyLineData
+public import FLT.Mazur.SchemeIndependentFrameGluing
 public import FLT.Mazur.SchemeIndependentNormalizationCoherence
 public import FLT.Mazur.SchemeIndependentNormalizationRetraction
 public import FLT.Mazur.SchemeIndependentNormalizationSquare
