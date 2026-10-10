@@ -6201,6 +6201,7 @@ public import FLT.Mazur.UniformizerRootExtension
 public import FLT.Mazur.UnitIntegerModel
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryActualNormalizationIso
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryAffineSections
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryArithmeticAction
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryCoefficientGroup
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryCoordinateExt
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryCoordinateInverse
