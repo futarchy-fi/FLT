@@ -5285,6 +5285,7 @@ public import FLT.Mazur.PolygonTranslationImages
 public import FLT.Mazur.PolygonUniversalAction
 public import FLT.Mazur.PolygonUniversalScaling
 public import FLT.Mazur.PolygonVeroneseAdicReduction
+public import FLT.Mazur.PolygonVeroneseClosedGeneration
 public import FLT.Mazur.PolygonVeroneseDegreeComplete
 public import FLT.Mazur.PolygonVeroneseDegreeExactness
 public import FLT.Mazur.PolygonVeroneseDegreeFinite
