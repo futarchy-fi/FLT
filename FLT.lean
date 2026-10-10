@@ -7130,6 +7130,7 @@ public import FLT.Mazur.WeierstrassDividedZeroCycleExteriorMaps
 public import FLT.Mazur.WeierstrassDividedZeroCycleGlobalChainRestrictions
 public import FLT.Mazur.WeierstrassDividedZeroCycleGlobalDesc
 public import FLT.Mazur.WeierstrassDividedZeroCycleGlobalEndCharts
+public import FLT.Mazur.WeierstrassDividedZeroCycleGlobalExteriorRestriction
 public import FLT.Mazur.WeierstrassDividedZeroCycleGlobalNodeRestrictions
 public import FLT.Mazur.WeierstrassDividedZeroCycleGlobalPositiveCharts
 public import FLT.Mazur.WeierstrassDividedZeroCycleHomExt
