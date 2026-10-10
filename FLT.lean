@@ -2706,6 +2706,7 @@ public import FLT.Mazur.AffineScaledTripleTransport
 public import FLT.Mazur.AffineSectionEvaluationCoordinates
 public import FLT.Mazur.AffineSectionLineGeometricPullback
 public import FLT.Mazur.AffineSectionLineGluing
+public import FLT.Mazur.AffineSectionLinePoint
 public import FLT.Mazur.AffineSectionLinePullbackSquares
 public import FLT.Mazur.AffineSectionLineRankOne
 public import FLT.Mazur.AffineSectionLineSubobjectEquality
