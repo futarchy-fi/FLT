@@ -6018,6 +6018,7 @@ public import FLT.Mazur.WeierstrassModificationXConicGeometry
 public import FLT.Mazur.WeierstrassModificationXConicIncidenceCharts
 public import FLT.Mazur.WeierstrassModificationXConicIncidenceOrientation
 public import FLT.Mazur.WeierstrassModificationXConicInverseCoordinates
+public import FLT.Mazur.WeierstrassModificationXConicOverlapGeometry
 public import FLT.Mazur.WeierstrassModificationXConicParameterOrigin
 public import FLT.Mazur.WeierstrassModificationXConicParameterOverlap
 public import FLT.Mazur.WeierstrassModificationXConicParameterSections
