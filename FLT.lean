@@ -5933,6 +5933,7 @@ public import FLT.Mazur.RelativeJetSmoothObstruction
 public import FLT.Mazur.RelativeMarkingSections
 public import FLT.Mazur.RelativePicardBaseChangeGeometry
 public import FLT.Mazur.RelativePicardCoverDiagonal
+public import FLT.Mazur.RelativePicardCoverTriples
 public import FLT.Mazur.RelativePicardFppfBaseChange
 public import FLT.Mazur.RelativePicardFppfComparison
 public import FLT.Mazur.RelativePicardFppfCover
