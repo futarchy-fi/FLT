@@ -5644,6 +5644,7 @@ public import FLT.Mazur.UnitIntegerModel
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryAffineSections
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryCoverage
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryEtale
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryFieldCoordinates
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryFullBasis
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryLevel
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryTorsionCover
