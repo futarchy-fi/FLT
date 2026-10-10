@@ -5226,6 +5226,7 @@ public import FLT.Mazur.PolygonStageFlatLayer
 public import FLT.Mazur.PolygonStageLayerSequence
 public import FLT.Mazur.PolygonStageLineLayer
 public import FLT.Mazur.PolygonStageLineSectionFlat
+public import FLT.Mazur.PolygonStageRestrictionIdeal
 public import FLT.Mazur.PolygonStructureInclusion
 public import FLT.Mazur.PolygonTranslationImages
 public import FLT.Mazur.PolygonUniversalAction
