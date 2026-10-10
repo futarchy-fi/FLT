@@ -6147,6 +6147,7 @@ public import FLT.Mazur.WeierstrassDividedSuccessiveOriginalY
 public import FLT.Mazur.WeierstrassDividedTensorAtlasComparison
 public import FLT.Mazur.WeierstrassDividedTensorYBoundary
 public import FLT.Mazur.WeierstrassDividedTerminalConicBoundary
+public import FLT.Mazur.WeierstrassDividedTerminalConicBranches
 public import FLT.Mazur.WeierstrassDividedTerminalConicCoordinates
 public import FLT.Mazur.WeierstrassDividedTerminalFullConicIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalLineDisjoint
