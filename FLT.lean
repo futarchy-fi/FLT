@@ -5221,6 +5221,7 @@ public import FLT.Mazur.PolygonSplitRefinementValue
 public import FLT.Mazur.PolygonSplitTorusBranches
 public import FLT.Mazur.PolygonStageCoefficientKernel
 public import FLT.Mazur.PolygonStageFlatLayer
+public import FLT.Mazur.PolygonStageLayerSequence
 public import FLT.Mazur.PolygonStageLineSectionFlat
 public import FLT.Mazur.PolygonStructureInclusion
 public import FLT.Mazur.PolygonTranslationImages
