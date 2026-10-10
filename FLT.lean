@@ -5053,6 +5053,7 @@ public import FLT.Mazur.PointedCurveLargeDegree
 public import FLT.Mazur.PointedCurveUniformAcyclicity
 public import FLT.Mazur.PointedCurveUniformRiemannRoch
 public import FLT.Mazur.PointedFieldGeometricConnectedness
+public import FLT.Mazur.PointedPicardBaseChange
 public import FLT.Mazur.PointedPicardNormalization
 public import FLT.Mazur.PointedStructureModuleComparison
 public import FLT.Mazur.PolygonActionAssociativity
