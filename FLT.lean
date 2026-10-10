@@ -6287,6 +6287,7 @@ public import FLT.Mazur.SchemeIndependentCanonicalCocycle
 public import FLT.Mazur.SchemeIndependentCanonicalCompatibility
 public import FLT.Mazur.SchemeIndependentCanonicalCoordinate
 public import FLT.Mazur.SchemeIndependentCanonicalFamily
+public import FLT.Mazur.SchemeIndependentCanonicalFullyFaithful
 public import FLT.Mazur.SchemeIndependentCanonicalOverlap
 public import FLT.Mazur.SchemeIndependentCanonicalSource
 public import FLT.Mazur.SchemeIndependentCanonicalSourceNaturality
