@@ -7212,6 +7212,7 @@ public import FLT.Mazur.WeierstrassVariableChangeAffineRestriction
 public import FLT.Mazur.WeierstrassVariableChangeCoordinateCover
 public import FLT.Mazur.WeierstrassVariableChangeCubicSubstitution
 public import FLT.Mazur.WeierstrassVariableChangeFrame
+public import FLT.Mazur.WeierstrassVariableChangeGroup
 public import FLT.Mazur.WeierstrassVariableChangeHomogeneous
 public import FLT.Mazur.WeierstrassVariableChangeIntegralEquation
 public import FLT.Mazur.WeierstrassVariableChangeIntegralIso
