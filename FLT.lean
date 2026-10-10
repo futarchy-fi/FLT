@@ -4100,6 +4100,7 @@ public import FLT.Mazur.GradedProjArbitraryBaseChange
 public import FLT.Mazur.GradedProjBaseChangeMap
 public import FLT.Mazur.GradedProjChartArbitraryBaseChange
 public import FLT.Mazur.GradedProjChartSections
+public import FLT.Mazur.GradedProjCoefficientAmple
 public import FLT.Mazur.GradedProjCoefficientChartPullback
 public import FLT.Mazur.GradedProjCoefficientComparisonCoherence
 public import FLT.Mazur.GradedProjCoefficientComparisonNormalization
