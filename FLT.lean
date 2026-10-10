@@ -6981,6 +6981,7 @@ public import FLT.Mazur.WeierstrassDividedZeroCycleLocalMaps
 public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveConicBranches
 public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveDescent
 public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveExt
+public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveIndexedMap
 public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveLineBranches
 public import FLT.Mazur.WeierstrassDividedZeroCycleTerminalExt
 public import FLT.Mazur.WeierstrassDividedZeroCycleTerminalMap
