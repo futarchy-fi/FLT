@@ -2998,6 +2998,7 @@ public import FLT.Mazur.CartesianStructureSections
 public import FLT.Mazur.CartesianStructureTensorRestrictions
 public import FLT.Mazur.CartesianUpperCone
 public import FLT.Mazur.CartierAbelFiber
+public import FLT.Mazur.CartierAbelTwistedSections
 public import FLT.Mazur.CartierAffineFppfDescent
 public import FLT.Mazur.CartierChartFlat
 public import FLT.Mazur.CartierCharts
