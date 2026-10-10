@@ -5682,6 +5682,7 @@ public import FLT.Mazur.ProperFamilyLineDescent
 public import FLT.Mazur.ProperFamilyOriginalOrbits
 public import FLT.Mazur.ProperFamilyOriginalSectionRecovery
 public import FLT.Mazur.ProperFamilyOriginalZeroIdeal
+public import FLT.Mazur.ProperFamilyRepresentedDivisor
 public import FLT.Mazur.ProperFamilySectionOrbits
 public import FLT.Mazur.ProperFamilySectionPullback
 public import FLT.Mazur.ProperFamilySplitDirectImageSections
