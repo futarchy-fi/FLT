@@ -6035,6 +6035,7 @@ public import FLT.Mazur.WeierstrassModificationXFullSecondNode
 public import FLT.Mazur.WeierstrassModificationXFullSecondNodeBranches
 public import FLT.Mazur.WeierstrassModificationXGenerators
 public import FLT.Mazur.WeierstrassModificationXIncidenceRegular
+public import FLT.Mazur.WeierstrassModificationXIncidenceSectionMaps
 public import FLT.Mazur.WeierstrassModificationXLocalization
 public import FLT.Mazur.WeierstrassModificationXMorphism
 public import FLT.Mazur.WeierstrassModificationXOriginalLocalization
