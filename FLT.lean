@@ -3165,6 +3165,7 @@ public import FLT.Mazur.CoherentRingCohomologyFinite
 public import FLT.Mazur.CoherentSubmoduleEnlargement
 public import FLT.Mazur.CoherentSubmoduleExtension
 public import FLT.Mazur.CoherentSubmoduleGluing
+public import FLT.Mazur.CoherentSubmoduleLocalEquality
 public import FLT.Mazur.CoherentSubmoduleUnion
 public import FLT.Mazur.CoherentSubquotient
 public import FLT.Mazur.CoherentSubsheafACC
