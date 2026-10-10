@@ -2658,6 +2658,7 @@ public import FLT.Mazur.AffineNamedRefinementCompositionRecognition
 public import FLT.Mazur.AffineNamedRefinementNaturality
 public import FLT.Mazur.AffineNamedRefinementReconstruction
 public import FLT.Mazur.AffineNamedRefinementSection
+public import FLT.Mazur.AffineNeighborhoodStageReconstruction
 public import FLT.Mazur.AffineNodeNormalizationExact
 public import FLT.Mazur.AffineOpenCartesianSections
 public import FLT.Mazur.AffineOpenCechBoundary
@@ -2752,6 +2753,7 @@ public import FLT.Mazur.AffineSplitLineSourceTransport
 public import FLT.Mazur.AffineSquareEquivalences
 public import FLT.Mazur.AffineSquareScalarExtension
 public import FLT.Mazur.AffineSquareTensorComparison
+public import FLT.Mazur.AffineStagePointReconstruction
 public import FLT.Mazur.AffineStalkExtension
 public import FLT.Mazur.AffineStalkMorphism
 public import FLT.Mazur.AffineTensorCoactionRecognition
@@ -4094,6 +4096,7 @@ public import FLT.Mazur.GlueDataQuasiSeparated
 public import FLT.Mazur.GradedProjArbitraryBaseChange
 public import FLT.Mazur.GradedProjBaseChangeMap
 public import FLT.Mazur.GradedProjChartArbitraryBaseChange
+public import FLT.Mazur.GradedProjDedekindFlatness
 public import FLT.Mazur.GradedProjEventualGenerationCover
 public import FLT.Mazur.GradedProjPositiveBasis
 public import FLT.Mazur.GradedProjRegradedEvaluation
@@ -4639,6 +4642,7 @@ public import FLT.Mazur.LineTrivializationCocycleRecovery
 public import FLT.Mazur.LineTrivializationCoordinates
 public import FLT.Mazur.LinearCoordinateRatio
 public import FLT.Mazur.LinearRankOneFrameUnit
+public import FLT.Mazur.LocalBaseSectionDisjointness
 public import FLT.Mazur.LocalCartierGeneratorDescent
 public import FLT.Mazur.LocalClosedFiberBaseChange
 public import FLT.Mazur.LocalClosedFiberConnectedness
@@ -5104,6 +5108,7 @@ public import FLT.Mazur.PolygonClosedEvaluationLifting
 public import FLT.Mazur.PolygonClosedScalarLifting
 public import FLT.Mazur.PolygonCoconeComparison
 public import FLT.Mazur.PolygonCohomologyIncidence
+public import FLT.Mazur.PolygonCompatibleCoefficientFlatness
 public import FLT.Mazur.PolygonCompatibleDegreeExactness
 public import FLT.Mazur.PolygonCompatibleDegreeLifting
 public import FLT.Mazur.PolygonCompatibleDegreeProjection
@@ -5116,6 +5121,9 @@ public import FLT.Mazur.PolygonCompatibleSectionRing
 public import FLT.Mazur.PolygonCompatibleSectionScalars
 public import FLT.Mazur.PolygonCompatibleVeronese
 public import FLT.Mazur.PolygonCompatibleZeroCoefficients
+public import FLT.Mazur.PolygonCompleteBaseMarkings
+public import FLT.Mazur.PolygonCompleteFamilyFlatness
+public import FLT.Mazur.PolygonCompleteMarkingSpecialization
 public import FLT.Mazur.PolygonComponentDistinct
 public import FLT.Mazur.PolygonComponentImages
 public import FLT.Mazur.PolygonConnected
@@ -5213,6 +5221,7 @@ public import FLT.Mazur.PolygonLineHZero
 public import FLT.Mazur.PolygonLineNodeRestriction
 public import FLT.Mazur.PolygonLineNormalization
 public import FLT.Mazur.PolygonMarkedSections
+public import FLT.Mazur.PolygonMarkingAffineNeighborhood
 public import FLT.Mazur.PolygonNodalCore
 public import FLT.Mazur.PolygonNodeAffineCharts
 public import FLT.Mazur.PolygonNodeBranchIntersection
@@ -5374,7 +5383,10 @@ public import FLT.Mazur.PowerCohomologyShift
 public import FLT.Mazur.PowerScalarSectionCoordinates
 public import FLT.Mazur.PowerSeriesLeadingComposition
 public import FLT.Mazur.PowerSeriesNilpotentHom
+public import FLT.Mazur.PowerSeriesParameterFlatness
 public import FLT.Mazur.PowerSeriesQuotientCompletion
+public import FLT.Mazur.PowerSeriesStageReconstruction
+public import FLT.Mazur.PowerSeriesStageRingLift
 public import FLT.Mazur.PowerSeriesSubstitutionEquiv
 public import FLT.Mazur.PowerSeriesTruncatedPolynomial
 public import FLT.Mazur.PresentedFiniteCoefficientBranch
