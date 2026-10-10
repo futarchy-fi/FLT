@@ -5729,6 +5729,7 @@ public import FLT.Mazur.ProperFamilyLineClassification
 public import FLT.Mazur.ProperFamilyLineDescent
 public import FLT.Mazur.ProperFamilyNaturalRepresentation
 public import FLT.Mazur.ProperFamilyOriginalOrbits
+public import FLT.Mazur.ProperFamilyOriginalPullback
 public import FLT.Mazur.ProperFamilyOriginalSectionRecovery
 public import FLT.Mazur.ProperFamilyOriginalZeroIdeal
 public import FLT.Mazur.ProperFamilyRepresentedDivisor
