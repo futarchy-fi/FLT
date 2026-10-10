@@ -5068,6 +5068,7 @@ public import FLT.Mazur.PolygonCohomologyIncidence
 public import FLT.Mazur.PolygonCompatibleDegreeExactness
 public import FLT.Mazur.PolygonCompatibleDegreeLifting
 public import FLT.Mazur.PolygonCompatibleDegreeProjection
+public import FLT.Mazur.PolygonCompatibleDegreeZero
 public import FLT.Mazur.PolygonCompatibleHomogeneousSections
 public import FLT.Mazur.PolygonCompatibleParameterRegularity
 public import FLT.Mazur.PolygonCompatibleSectionAlgebra
