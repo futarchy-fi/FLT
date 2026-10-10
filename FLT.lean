@@ -6950,6 +6950,7 @@ public import FLT.Mazur.WeierstrassDividedExteriorYBoundary
 public import FLT.Mazur.WeierstrassDividedFinalAdjacentComponents
 public import FLT.Mazur.WeierstrassDividedFinalAdjacentConicBranches
 public import FLT.Mazur.WeierstrassDividedFinalAdjacentOverComponents
+public import FLT.Mazur.WeierstrassDividedFinalAdjacentZeroCharts
 public import FLT.Mazur.WeierstrassDividedFinalBranchChains
 public import FLT.Mazur.WeierstrassDividedFinalChainCoverage
 public import FLT.Mazur.WeierstrassDividedFinalChainPairIntersections
