@@ -5324,6 +5324,7 @@ public import FLT.Mazur.PolygonOneGonRefinementValue
 public import FLT.Mazur.PolygonOneGonTorusIntersection
 public import FLT.Mazur.PolygonOriginalAdicRealization
 public import FLT.Mazur.PolygonOriginalAffineQuotient
+public import FLT.Mazur.PolygonOriginalAffineScalars
 public import FLT.Mazur.PolygonOriginalAffineTransition
 public import FLT.Mazur.PolygonOriginalBoundarySectionReconstruction
 public import FLT.Mazur.PolygonOriginalStageAdicSquare
