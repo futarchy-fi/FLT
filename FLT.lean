@@ -5377,6 +5377,7 @@ public import FLT.Mazur.PowerCohomologyShift
 public import FLT.Mazur.PowerScalarSectionCoordinates
 public import FLT.Mazur.PowerSeriesLeadingComposition
 public import FLT.Mazur.PowerSeriesNilpotentHom
+public import FLT.Mazur.PowerSeriesParameterFlatness
 public import FLT.Mazur.PowerSeriesQuotientCompletion
 public import FLT.Mazur.PowerSeriesStageReconstruction
 public import FLT.Mazur.PowerSeriesStageRingLift
