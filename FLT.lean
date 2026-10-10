@@ -4098,6 +4098,8 @@ public import FLT.Mazur.GradedProjArbitraryBaseChange
 public import FLT.Mazur.GradedProjBaseChangeMap
 public import FLT.Mazur.GradedProjChartArbitraryBaseChange
 public import FLT.Mazur.GradedProjChartSections
+public import FLT.Mazur.GradedProjCoefficientGeneration
+public import FLT.Mazur.GradedProjCoefficientSections
 public import FLT.Mazur.GradedProjDedekindFlatness
 public import FLT.Mazur.GradedProjEqualDegreeCover
 public import FLT.Mazur.GradedProjEventualGenerationCover
@@ -4107,6 +4109,7 @@ public import FLT.Mazur.GradedProjLineSectionCocycle
 public import FLT.Mazur.GradedProjLineSheaf
 public import FLT.Mazur.GradedProjLineTransitionEvaluation
 public import FLT.Mazur.GradedProjMapChartSections
+public import FLT.Mazur.GradedProjMapPullbackSections
 public import FLT.Mazur.GradedProjPositiveBasis
 public import FLT.Mazur.GradedProjRegradedEvaluation
 public import FLT.Mazur.GradedProjRingEquiv
@@ -4763,7 +4766,9 @@ public import FLT.Mazur.ModulePullbackUnitCoherence
 public import FLT.Mazur.ModuleRingCohomologyExact
 public import FLT.Mazur.ModuleSealedPullbackRatio
 public import FLT.Mazur.ModuleSectionBaseChange
+public import FLT.Mazur.ModuleSectionCocycleEvaluation
 public import FLT.Mazur.ModuleSectionCocycleIso
+public import FLT.Mazur.ModuleSectionCocyclePullbackNormalization
 public import FLT.Mazur.ModuleSectionExactness
 public import FLT.Mazur.ModuleSectionIsomorphismTransport
 public import FLT.Mazur.ModuleSectionMap
@@ -5131,9 +5136,13 @@ public import FLT.Mazur.PolygonCompatibleSectionScalars
 public import FLT.Mazur.PolygonCompatibleVeronese
 public import FLT.Mazur.PolygonCompatibleZeroCoefficients
 public import FLT.Mazur.PolygonCompleteBaseMarkings
+public import FLT.Mazur.PolygonCompleteBoundaryLineComparison
+public import FLT.Mazur.PolygonCompleteBoundaryQuotient
+public import FLT.Mazur.PolygonCompleteBoundarySectionTransport
 public import FLT.Mazur.PolygonCompleteCoefficientLine
 public import FLT.Mazur.PolygonCompleteCoefficientOpens
 public import FLT.Mazur.PolygonCompleteCoefficientReconstruction
+public import FLT.Mazur.PolygonCompleteCoordinateEvaluation
 public import FLT.Mazur.PolygonCompleteFamilyFlatness
 public import FLT.Mazur.PolygonCompleteLineQuotient
 public import FLT.Mazur.PolygonCompleteMarkingSpecialization
@@ -6445,6 +6454,7 @@ public import FLT.Mazur.SectionRetainedCoordinateRatios
 public import FLT.Mazur.SectionRetainedFractionEquation
 public import FLT.Mazur.SectionRetainedFractionUniqueness
 public import FLT.Mazur.SectionRetainedLineEvaluation
+public import FLT.Mazur.SectionRetainedMappedRatios
 public import FLT.Mazur.SectionRetainedProjBaseCoefficients
 public import FLT.Mazur.SectionRetainedProjChart
 public import FLT.Mazur.SectionRetainedProjConstruction
