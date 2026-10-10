@@ -6481,6 +6481,7 @@ public import FLT.Mazur.TensorPowerDistribution
 public import FLT.Mazur.TensorPowerGeneratorOpen
 public import FLT.Mazur.TensorPowerReassociation
 public import FLT.Mazur.TensorPullbackComposition
+public import FLT.Mazur.TensorPullbackIdentity
 public import FLT.Mazur.TernaryOpenDescent
 public import FLT.Mazur.TildeFiniteFreeLocalization
 public import FLT.Mazur.TildeInvertibleLocal
