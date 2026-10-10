@@ -3799,6 +3799,7 @@ public import FLT.Mazur.FiniteFreePullbackFrame
 public import FLT.Mazur.FiniteFreeQuotientIdealPresentation
 public import FLT.Mazur.FiniteFreeRefinementPullback
 public import FLT.Mazur.FiniteFreeSectionLineTransport
+public import FLT.Mazur.FiniteFreeTensorSections
 public import FLT.Mazur.FiniteGeometricSections
 public import FLT.Mazur.FiniteGroupAffineNeighborhood
 public import FLT.Mazur.FiniteGroupAffineQuotient
