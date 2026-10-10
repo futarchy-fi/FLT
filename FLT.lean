@@ -5805,6 +5805,7 @@ public import FLT.Mazur.ProperFamilyPrescribedComposition
 public import FLT.Mazur.ProperFamilyPrescribedIdentity
 public import FLT.Mazur.ProperFamilyRepresentedDivisor
 public import FLT.Mazur.ProperFamilyRigidifiedComparisons
+public import FLT.Mazur.ProperFamilyRigidifiedEffectivePair
 public import FLT.Mazur.ProperFamilyRigidifiedEffectiveRecoveryCharts
 public import FLT.Mazur.ProperFamilyRigidifiedFppfCocycles
 public import FLT.Mazur.ProperFamilyRigidifiedFppfDiagonals
