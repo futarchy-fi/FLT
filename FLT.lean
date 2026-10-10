@@ -7294,6 +7294,7 @@ public import FLT.Mazur.WeierstrassDividedZeroEqualityTerminalBranches
 public import FLT.Mazur.WeierstrassDividedZeroEqualityTerminalExt
 public import FLT.Mazur.WeierstrassDividedZeroEqualityTerminalFamilyDescent
 public import FLT.Mazur.WeierstrassDividedZeroEqualityTerminalLineBranches
+public import FLT.Mazur.WeierstrassDividedZeroEqualityUniversalHomExt
 public import FLT.Mazur.WeierstrassDividedZeroExteriorCoverage
 public import FLT.Mazur.WeierstrassDividedZeroExteriorCurve
 public import FLT.Mazur.WeierstrassDividedZeroExteriorLaurent
