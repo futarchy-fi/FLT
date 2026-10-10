@@ -2842,6 +2842,8 @@ public import FLT.Mazur.AmpleOpenAffineRecovery
 public import FLT.Mazur.AmpleOpenImage
 public import FLT.Mazur.AmplePreimageSectionCover
 public import FLT.Mazur.AmplePrincipalLocality
+public import FLT.Mazur.AmpleRetainedChartGeneration
+public import FLT.Mazur.AmpleRetainedSectionCover
 public import FLT.Mazur.AmpleSectionCoverPullback
 public import FLT.Mazur.AmpleTwistedSectionLifting
 public import FLT.Mazur.AmpleVeroneseEvaluation
@@ -4092,7 +4094,9 @@ public import FLT.Mazur.GlueDataQuasiSeparated
 public import FLT.Mazur.GradedProjArbitraryBaseChange
 public import FLT.Mazur.GradedProjBaseChangeMap
 public import FLT.Mazur.GradedProjChartArbitraryBaseChange
+public import FLT.Mazur.GradedProjEventualGenerationCover
 public import FLT.Mazur.GradedProjPositiveBasis
+public import FLT.Mazur.GradedProjRegradedEvaluation
 public import FLT.Mazur.GradedProjRingEquiv
 public import FLT.Mazur.GradedProjRingEquivNaturality
 public import FLT.Mazur.GradedProjStructuralMap
@@ -4280,6 +4284,7 @@ public import FLT.Mazur.HomogeneousIdealWitness
 public import FLT.Mazur.HomogeneousLocalizationArbitraryBaseChange
 public import FLT.Mazur.HomogeneousLocalizationBaseChange
 public import FLT.Mazur.HomogeneousLocalizationGenerator
+public import FLT.Mazur.HomogeneousLocalizationRegradedMap
 public import FLT.Mazur.HomogeneousLocalizationRetraction
 public import FLT.Mazur.HomogeneousLocalizationScalars
 public import FLT.Mazur.HomogeneousPrimeAvoidance
@@ -5307,6 +5312,8 @@ public import FLT.Mazur.PolygonStageLineQuotient
 public import FLT.Mazur.PolygonStageLineSectionFlat
 public import FLT.Mazur.PolygonStageParameterSections
 public import FLT.Mazur.PolygonStageRestrictionIdeal
+public import FLT.Mazur.PolygonStageRetainedCanonicalMap
+public import FLT.Mazur.PolygonStageRetainedRecovery
 public import FLT.Mazur.PolygonStageScalarComparison
 public import FLT.Mazur.PolygonStageVeroneseGrading
 public import FLT.Mazur.PolygonStageVeroneseProj
@@ -5725,6 +5732,8 @@ public import FLT.Mazur.ProperAmpleFiberEnvelope
 public import FLT.Mazur.ProperAmpleFiberModel
 public import FLT.Mazur.ProperAmpleFiberNeighborhood
 public import FLT.Mazur.ProperAmpleFiberNoetherian
+public import FLT.Mazur.ProperAmpleRetainedChartCover
+public import FLT.Mazur.ProperAmpleRetainedProjIso
 public import FLT.Mazur.ProperAtlasAbelEquivalence
 public import FLT.Mazur.ProperAtlasAbelFiber
 public import FLT.Mazur.ProperAtlasAbelNaturality
@@ -5938,6 +5947,8 @@ public import FLT.Mazur.RetainedLineSectionPullback
 public import FLT.Mazur.RetainedLineSectionPullbackIso
 public import FLT.Mazur.RetainedLineTwistedSection
 public import FLT.Mazur.RetainedSubringGrading
+public import FLT.Mazur.RetainedSubringLocalization
+public import FLT.Mazur.RetainedSubringZeroRing
 public import FLT.Mazur.RightDerivedDimensionShift
 public import FLT.Mazur.RigidifiedLineIsomorphisms
 public import FLT.Mazur.RingCohomologyFinitePushforward
@@ -6356,6 +6367,14 @@ public import FLT.Mazur.SectionLinePointOverlapEquality
 public import FLT.Mazur.SectionPowerGluing
 public import FLT.Mazur.SectionProjectiveFiniteNeighborhood
 public import FLT.Mazur.SectionProjectiveImmersion
+public import FLT.Mazur.SectionRetainedChartComparison
+public import FLT.Mazur.SectionRetainedChartMorphism
+public import FLT.Mazur.SectionRetainedProjChart
+public import FLT.Mazur.SectionRetainedProjConstruction
+public import FLT.Mazur.SectionRetainedProjGluing
+public import FLT.Mazur.SectionRetainedProjOfAmple
+public import FLT.Mazur.SectionRetainedProjOpens
+public import FLT.Mazur.SectionRetainedProjStructuralMap
 public import FLT.Mazur.SectionSumFiberDegree
 public import FLT.Mazur.SectionSumFieldLength
 public import FLT.Mazur.SectionSumFinite
