@@ -7954,6 +7954,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodeOrigin
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodePushout
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleOverlap
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleParameterBranchCharts
+public import FLT.Mazur.WeierstrassSuccessiveXMiddleParameterDescent
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleParameterPushout
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleScaledDescent
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleSecondNode
