@@ -6053,6 +6053,7 @@ public import FLT.Mazur.WeierstrassNegationOverlap
 public import FLT.Mazur.WeierstrassNegationPairSections
 public import FLT.Mazur.WeierstrassNonoppositeOrdinaryLift
 public import FLT.Mazur.WeierstrassNonzeroPointAffine
+public import FLT.Mazur.WeierstrassNormalFormPoles
 public import FLT.Mazur.WeierstrassNormalizedProjectivePoint
 public import FLT.Mazur.WeierstrassOrdinaryChartSpecialization
 public import FLT.Mazur.WeierstrassOrdinaryDomainLift
