@@ -4104,6 +4104,7 @@ public import FLT.Mazur.GradedProjStructuralNaturality
 public import FLT.Mazur.GradedProjUnitChart
 public import FLT.Mazur.GradedProjUnitChartMap
 public import FLT.Mazur.GradedProjUnitChartOpens
+public import FLT.Mazur.GradedProjZeroMapNaturality
 public import FLT.Mazur.GradedQuotientTensorComparison
 public import FLT.Mazur.GroupMarkingBaseChange
 public import FLT.Mazur.GroupMarkingBaseChangeInverse
@@ -5250,6 +5251,8 @@ public import FLT.Mazur.PolygonOneGonPuncturedPullback
 public import FLT.Mazur.PolygonOneGonRefinementCover
 public import FLT.Mazur.PolygonOneGonRefinementValue
 public import FLT.Mazur.PolygonOneGonTorusIntersection
+public import FLT.Mazur.PolygonOriginalAdicRealization
+public import FLT.Mazur.PolygonOriginalStageAdicSquare
 public import FLT.Mazur.PolygonPinchingAffineBaseChange
 public import FLT.Mazur.PolygonPinchingDiagram
 public import FLT.Mazur.PolygonPinchingFlatBaseChange
@@ -5266,6 +5269,7 @@ public import FLT.Mazur.PolygonProper
 public import FLT.Mazur.PolygonPuncturedCanonicalEquations
 public import FLT.Mazur.PolygonPureDimension
 public import FLT.Mazur.PolygonRefinedClosedCharts
+public import FLT.Mazur.PolygonRetainedStageMarkings
 public import FLT.Mazur.PolygonScaledReciprocal
 public import FLT.Mazur.PolygonScalingNaturality
 public import FLT.Mazur.PolygonSectionRingFunctor
@@ -5312,7 +5316,9 @@ public import FLT.Mazur.PolygonStageLineQuotient
 public import FLT.Mazur.PolygonStageLineSectionFlat
 public import FLT.Mazur.PolygonStageParameterSections
 public import FLT.Mazur.PolygonStageRestrictionIdeal
+public import FLT.Mazur.PolygonStageRetainedBaseComparison
 public import FLT.Mazur.PolygonStageRetainedCanonicalMap
+public import FLT.Mazur.PolygonStageRetainedNaturality
 public import FLT.Mazur.PolygonStageRetainedRecovery
 public import FLT.Mazur.PolygonStageScalarComparison
 public import FLT.Mazur.PolygonStageVeroneseGrading
@@ -5946,6 +5952,7 @@ public import FLT.Mazur.RetainedLineOriginalTwist
 public import FLT.Mazur.RetainedLineSectionPullback
 public import FLT.Mazur.RetainedLineSectionPullbackIso
 public import FLT.Mazur.RetainedLineTwistedSection
+public import FLT.Mazur.RetainedSubringGradedMap
 public import FLT.Mazur.RetainedSubringGrading
 public import FLT.Mazur.RetainedSubringLocalization
 public import FLT.Mazur.RetainedSubringZeroRing
@@ -6364,14 +6371,20 @@ public import FLT.Mazur.SectionKernelLocal
 public import FLT.Mazur.SectionLineChartOverlap
 public import FLT.Mazur.SectionLinePointBaseChange
 public import FLT.Mazur.SectionLinePointOverlapEquality
+public import FLT.Mazur.SectionLinePullbackFraction
 public import FLT.Mazur.SectionPowerGluing
 public import FLT.Mazur.SectionProjectiveFiniteNeighborhood
 public import FLT.Mazur.SectionProjectiveImmersion
 public import FLT.Mazur.SectionRetainedChartComparison
 public import FLT.Mazur.SectionRetainedChartMorphism
+public import FLT.Mazur.SectionRetainedFractionEquation
+public import FLT.Mazur.SectionRetainedFractionUniqueness
+public import FLT.Mazur.SectionRetainedLineEvaluation
+public import FLT.Mazur.SectionRetainedProjBaseCoefficients
 public import FLT.Mazur.SectionRetainedProjChart
 public import FLT.Mazur.SectionRetainedProjConstruction
 public import FLT.Mazur.SectionRetainedProjGluing
+public import FLT.Mazur.SectionRetainedProjNaturality
 public import FLT.Mazur.SectionRetainedProjOfAmple
 public import FLT.Mazur.SectionRetainedProjOpens
 public import FLT.Mazur.SectionRetainedProjStructuralMap
