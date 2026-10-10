@@ -6727,6 +6727,7 @@ public import FLT.Mazur.WeierstrassDividedTerminalZeroCrossedIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalZeroNodalChart
 public import FLT.Mazur.WeierstrassDividedZeroBoundaryFunctions
 public import FLT.Mazur.WeierstrassDividedZeroExteriorCurve
+public import FLT.Mazur.WeierstrassDividedZeroExteriorLaurent
 public import FLT.Mazur.WeierstrassDividedZeroIncidenceInfinity
 public import FLT.Mazur.WeierstrassDividedZeroNodalGeometry
 public import FLT.Mazur.WeierstrassDividedZeroNodalGluing
