@@ -4524,6 +4524,7 @@ public import FLT.Mazur.LinePowerSectionBaseChange
 public import FLT.Mazur.LinePowerSectionLimitDescent
 public import FLT.Mazur.LinePullbackRestriction
 public import FLT.Mazur.LineRecoveryPullback
+public import FLT.Mazur.LineScalarExtensionNonvanishing
 public import FLT.Mazur.LineSectionCanonicalRecovery
 public import FLT.Mazur.LineSectionCohomologyAnnihilation
 public import FLT.Mazur.LineSectionCohomologySurjection
