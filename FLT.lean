@@ -3300,6 +3300,7 @@ public import FLT.Mazur.DualAtlasBaseChangeCharts
 public import FLT.Mazur.DualAtlasBaseChangeCover
 public import FLT.Mazur.DualAtlasBaseChangeRefinement
 public import FLT.Mazur.DualAtlasBaseChangeReverse
+public import FLT.Mazur.DualAtlasPulledFrameRefinement
 public import FLT.Mazur.DualAtlasSectionBaseNeighborhood
 public import FLT.Mazur.DualAtlasSectionChartPoints
 public import FLT.Mazur.DualAtlasSectionCommonPoint
