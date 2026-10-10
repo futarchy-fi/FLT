@@ -6141,6 +6141,7 @@ public import FLT.Mazur.WeierstrassAffineProductSwap
 public import FLT.Mazur.WeierstrassAffineRelativeSmoothCriterion
 public import FLT.Mazur.WeierstrassAffineRelativeTangent
 public import FLT.Mazur.WeierstrassAffineTripleDescent
+public import FLT.Mazur.WeierstrassAffineVariableChangeMap
 public import FLT.Mazur.WeierstrassAffineVietaFormula
 public import FLT.Mazur.WeierstrassAllOrdinaryTripleAlgebra
 public import FLT.Mazur.WeierstrassAllOrdinaryTripleCoordinates
