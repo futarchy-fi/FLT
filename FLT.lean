@@ -4100,6 +4100,7 @@ public import FLT.Mazur.GradedProjDedekindFlatness
 public import FLT.Mazur.GradedProjEventualGenerationCover
 public import FLT.Mazur.GradedProjLineCoordinates
 public import FLT.Mazur.GradedProjLineRatioCocycle
+public import FLT.Mazur.GradedProjLineSectionCocycle
 public import FLT.Mazur.GradedProjPositiveBasis
 public import FLT.Mazur.GradedProjRegradedEvaluation
 public import FLT.Mazur.GradedProjRingEquiv
