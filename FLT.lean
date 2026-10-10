@@ -5616,6 +5616,7 @@ public import FLT.Mazur.ProperRelativeCartierAtlas
 public import FLT.Mazur.ProperRelativeCartierAtlasQuotient
 public import FLT.Mazur.ProperRelativeCartierBaseOrbits
 public import FLT.Mazur.ProperRelativeEvaluationLocus
+public import FLT.Mazur.ProperRelativeLineComparison
 public import FLT.Mazur.ProperRingCohomologyFinite
 public import FLT.Mazur.ProperSectionGluing
 public import FLT.Mazur.ProperSectionSplittingCriterion
