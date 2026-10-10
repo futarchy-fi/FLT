@@ -5129,6 +5129,7 @@ public import FLT.Mazur.PolygonCompatibleVeronese
 public import FLT.Mazur.PolygonCompatibleZeroCoefficients
 public import FLT.Mazur.PolygonCompleteBaseMarkings
 public import FLT.Mazur.PolygonCompleteCoefficientLine
+public import FLT.Mazur.PolygonCompleteCoefficientReconstruction
 public import FLT.Mazur.PolygonCompleteFamilyFlatness
 public import FLT.Mazur.PolygonCompleteLineQuotient
 public import FLT.Mazur.PolygonCompleteMarkingSpecialization
