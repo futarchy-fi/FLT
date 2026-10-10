@@ -5821,6 +5821,7 @@ public import FLT.Mazur.ProperFamilyRigidifiedLineDescent
 public import FLT.Mazur.ProperFamilyRigidifiedLocalRepresentatives
 public import FLT.Mazur.ProperFamilyRigidifiedLocalTrivializations
 public import FLT.Mazur.ProperFamilyRigidifiedNamedTransitions
+public import FLT.Mazur.ProperFamilyRigidifiedRecoveryPairs
 public import FLT.Mazur.ProperFamilyRigidifiedTransitions
 public import FLT.Mazur.ProperFamilyRigidifiedTripleEdges
 public import FLT.Mazur.ProperFamilyRigidifiedTripleTransitions
@@ -6281,11 +6282,14 @@ public import FLT.Mazur.SchemeIndependentCanonicalFamily
 public import FLT.Mazur.SchemeIndependentCanonicalOverlap
 public import FLT.Mazur.SchemeIndependentCanonicalSource
 public import FLT.Mazur.SchemeIndependentDiagonalIdentity
+public import FLT.Mazur.SchemeIndependentEffectivePairCharts
+public import FLT.Mazur.SchemeIndependentEffectiveRecovery
 public import FLT.Mazur.SchemeIndependentFamilyAssemblyFullyFaithful
 public import FLT.Mazur.SchemeIndependentFamilyEquivalence
 public import FLT.Mazur.SchemeIndependentFamilyLineCategory
 public import FLT.Mazur.SchemeIndependentFamilyLineData
 public import FLT.Mazur.SchemeIndependentNormalizationCoherence
+public import FLT.Mazur.SchemeIndependentNormalizationRetraction
 public import FLT.Mazur.SchemeIndependentNormalizationSquare
 public import FLT.Mazur.SchemeIndependentPairNormalization
 public import FLT.Mazur.SchemeIndependentRecoveryNormalization
@@ -6356,6 +6360,8 @@ public import FLT.Mazur.SchemeRefinementReconstruction
 public import FLT.Mazur.SchemeRelativeNilpotentKernel
 public import FLT.Mazur.SchemeRelativeNilpotentSections
 public import FLT.Mazur.SchemeSectionFamilyProduct
+public import FLT.Mazur.SchemeSectionFrameCompatibility
+public import FLT.Mazur.SchemeSectionFrameNormalization
 public import FLT.Mazur.SchemeSourceTestOverlapRecognition
 public import FLT.Mazur.SchemeTripleOverlap
 public import FLT.Mazur.SchemeUnchangedOpen
@@ -7017,6 +7023,9 @@ public import FLT.Mazur.WeierstrassDividedInitialTensorIntersection
 public import FLT.Mazur.WeierstrassDividedInitialZeroInfinity
 public import FLT.Mazur.WeierstrassDividedInitialZeroLaurent
 public import FLT.Mazur.WeierstrassDividedInitialZeroSlopeChart
+public import FLT.Mazur.WeierstrassDividedLaurentTerminalAttachments
+public import FLT.Mazur.WeierstrassDividedLaurentTerminalEmbedding
+public import FLT.Mazur.WeierstrassDividedLaurentTerminalMap
 public import FLT.Mazur.WeierstrassDividedLocalizedIntersection
 public import FLT.Mazur.WeierstrassDividedNonadjacentGlobalIntersection
 public import FLT.Mazur.WeierstrassDividedNonadjacentTensorIntersection
@@ -7144,11 +7153,18 @@ public import FLT.Mazur.WeierstrassDividedZeroCycleAttachmentExt
 public import FLT.Mazur.WeierstrassDividedZeroCycleAttachmentMaps
 public import FLT.Mazur.WeierstrassDividedZeroCycleExteriorExt
 public import FLT.Mazur.WeierstrassDividedZeroCycleExteriorMaps
+public import FLT.Mazur.WeierstrassDividedZeroCycleGlobalChainRestrictions
+public import FLT.Mazur.WeierstrassDividedZeroCycleGlobalComponentRestrictions
 public import FLT.Mazur.WeierstrassDividedZeroCycleGlobalDesc
+public import FLT.Mazur.WeierstrassDividedZeroCycleGlobalEndCharts
+public import FLT.Mazur.WeierstrassDividedZeroCycleGlobalExteriorRestriction
+public import FLT.Mazur.WeierstrassDividedZeroCycleGlobalNodeRestrictions
+public import FLT.Mazur.WeierstrassDividedZeroCycleGlobalPositiveCharts
 public import FLT.Mazur.WeierstrassDividedZeroCycleHomExt
 public import FLT.Mazur.WeierstrassDividedZeroCycleIndexedExt
 public import FLT.Mazur.WeierstrassDividedZeroCycleIndices
 public import FLT.Mazur.WeierstrassDividedZeroCycleLocalMaps
+public import FLT.Mazur.WeierstrassDividedZeroCyclePolygonIso
 public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveAtlasBranches
 public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveAtlasCompatibility
 public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveAtlasNodes
@@ -7160,6 +7176,7 @@ public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveIndexedMap
 public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveLineBranches
 public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveTensorCompatibility
 public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveTensorDesc
+public import FLT.Mazur.WeierstrassDividedZeroCyclePushout
 public import FLT.Mazur.WeierstrassDividedZeroCycleTerminalAtlasCompatibility
 public import FLT.Mazur.WeierstrassDividedZeroCycleTerminalExt
 public import FLT.Mazur.WeierstrassDividedZeroCycleTerminalMap
@@ -7504,6 +7521,7 @@ public import FLT.Mazur.WeierstrassModificationXFullNodeZeroDescent
 public import FLT.Mazur.WeierstrassModificationXFullSecondNode
 public import FLT.Mazur.WeierstrassModificationXFullSecondNodeBranches
 public import FLT.Mazur.WeierstrassModificationXGenerators
+public import FLT.Mazur.WeierstrassModificationXIncidenceBranchCover
 public import FLT.Mazur.WeierstrassModificationXIncidenceLineSections
 public import FLT.Mazur.WeierstrassModificationXIncidenceRegular
 public import FLT.Mazur.WeierstrassModificationXIncidenceSectionMaps
@@ -7933,6 +7951,10 @@ public import FLT.Mazur.WeierstrassSuccessiveXTerminalConicBranches
 public import FLT.Mazur.WeierstrassSuccessiveXTerminalConicCover
 public import FLT.Mazur.WeierstrassSuccessiveXTerminalConicOrigin
 public import FLT.Mazur.WeierstrassSuccessiveXTerminalConicParameters
+public import FLT.Mazur.WeierstrassSuccessiveXTerminalLaurentBoundary
+public import FLT.Mazur.WeierstrassSuccessiveXTerminalLaurentComponent
+public import FLT.Mazur.WeierstrassSuccessiveXTerminalLaurentMarks
+public import FLT.Mazur.WeierstrassSuccessiveXTerminalLaurentSmooth
 public import FLT.Mazur.WeierstrassSuccessiveXTerminalNodePunctures
 public import FLT.Mazur.WeierstrassSuccessiveXTotalTransform
 public import FLT.Mazur.WeierstrassSuccessiveXZeroConicBoundary
