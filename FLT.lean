@@ -7183,6 +7183,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXTensorContraction
 public import FLT.Mazur.WeierstrassSuccessiveXTensorOverlap
 public import FLT.Mazur.WeierstrassSuccessiveXTensorOverlapGeometry
 public import FLT.Mazur.WeierstrassSuccessiveXTerminalConicBranches
+public import FLT.Mazur.WeierstrassSuccessiveXTerminalConicOrigin
 public import FLT.Mazur.WeierstrassSuccessiveXTerminalConicParameters
 public import FLT.Mazur.WeierstrassSuccessiveXTotalTransform
 public import FLT.Mazur.WeierstrassSuccessiveXZeroConicBoundary
