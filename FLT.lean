@@ -6132,6 +6132,7 @@ public import FLT.Mazur.UniversalWeierstrassAuxiliaryFullBasis
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryIsomorphismUnique
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryLevel
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryMarkingInvariant
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryMarkingTransport
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalEquation
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizationGroup
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizationInvariant
