@@ -4750,6 +4750,7 @@ public import FLT.Mazur.ModuleLineBundleOpenCover
 public import FLT.Mazur.ModuleLineBundlePullback
 public import FLT.Mazur.ModuleLineBundleTensorPullback
 public import FLT.Mazur.ModuleLineTensorExact
+public import FLT.Mazur.ModuleLocalSectionEvaluation
 public import FLT.Mazur.ModuleOpenCohomology
 public import FLT.Mazur.ModuleOpenCohomologyRestriction
 public import FLT.Mazur.ModulePresheafLinearHom
