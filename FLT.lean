@@ -6072,6 +6072,7 @@ public import FLT.Mazur.WeierstrassOriginAutomorphismCoordinates
 public import FLT.Mazur.WeierstrassOriginAutomorphismExt
 public import FLT.Mazur.WeierstrassOriginIdeal
 public import FLT.Mazur.WeierstrassOriginParameter
+public import FLT.Mazur.WeierstrassOriginPoleCoordinates
 public import FLT.Mazur.WeierstrassOverlapDiagonalAlgebra
 public import FLT.Mazur.WeierstrassPartialAdditionSmoothInputs
 public import FLT.Mazur.WeierstrassPartialAdditionSmoothResidues
