@@ -5628,6 +5628,7 @@ public import FLT.Mazur.ProperGlobalSectionCartier
 public import FLT.Mazur.ProperGlobalSectionFinite
 public import FLT.Mazur.ProperImmersedCover
 public import FLT.Mazur.ProperIntegralConstantSections
+public import FLT.Mazur.ProperLineArbitraryBaseChange
 public import FLT.Mazur.ProperLineFiberVanishing
 public import FLT.Mazur.ProperLineIsomorphismDescent
 public import FLT.Mazur.ProperLineIteratedFiberVanishing
