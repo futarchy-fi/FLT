@@ -2706,7 +2706,9 @@ public import FLT.Mazur.AffineScaledTripleTransport
 public import FLT.Mazur.AffineSectionEvaluationCoordinates
 public import FLT.Mazur.AffineSectionLineGeometricPullback
 public import FLT.Mazur.AffineSectionLineGluing
+public import FLT.Mazur.AffineSectionLinePullbackSquares
 public import FLT.Mazur.AffineSectionLineRankOne
+public import FLT.Mazur.AffineSectionLineSubobjectEquality
 public import FLT.Mazur.AffineSectionsReconstruction
 public import FLT.Mazur.AffineSmoothFiniteFlatCartier
 public import FLT.Mazur.AffineSourcePullbackSections
@@ -3626,6 +3628,7 @@ public import FLT.Mazur.FiniteFlatCoefficientIdeal
 public import FLT.Mazur.FiniteFlatLocalIdealPresentation
 public import FLT.Mazur.FiniteFlatQuotientTrivialization
 public import FLT.Mazur.FiniteFlatSubschemeQuotient
+public import FLT.Mazur.FiniteFreeChartPointCompatibility
 public import FLT.Mazur.FiniteFreeChartProjectiveRestriction
 public import FLT.Mazur.FiniteFreeChartProjectiveTransitions
 public import FLT.Mazur.FiniteFreeChartRestriction
@@ -5798,6 +5801,7 @@ public import FLT.Mazur.SectionGradedUnit
 public import FLT.Mazur.SectionKernelLocal
 public import FLT.Mazur.SectionLineChartOverlap
 public import FLT.Mazur.SectionLinePointBaseChange
+public import FLT.Mazur.SectionLinePointOverlapEquality
 public import FLT.Mazur.SectionPowerGluing
 public import FLT.Mazur.SectionProjectiveFiniteNeighborhood
 public import FLT.Mazur.SectionProjectiveImmersion
@@ -5850,6 +5854,9 @@ public import FLT.Mazur.SpecChartIdealPreimage
 public import FLT.Mazur.SpectrumFieldCohomologyCoordinates
 public import FLT.Mazur.SpectrumSmoothFiniteFlatCartier
 public import FLT.Mazur.SplitEvaluationTensorKernel
+public import FLT.Mazur.SplitLineCoordinateCover
+public import FLT.Mazur.SplitLineCoordinateNaturality
+public import FLT.Mazur.SplitLineImageChart
 public import FLT.Mazur.StalkBaseClosedFiber
 public import FLT.Mazur.StalkBaseLocalization
 public import FLT.Mazur.StalkBaseNumeratorOpen
