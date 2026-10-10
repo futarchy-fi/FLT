@@ -6733,6 +6733,7 @@ public import FLT.Mazur.WeierstrassDividedAdjacentPairIntersections
 public import FLT.Mazur.WeierstrassDividedAdjacentParameterIntersection
 public import FLT.Mazur.WeierstrassDividedAdjacentParameterOrigins
 public import FLT.Mazur.WeierstrassDividedAdjacentParameterStructure
+public import FLT.Mazur.WeierstrassDividedAdjacentPunctureCompatibility
 public import FLT.Mazur.WeierstrassDividedAdjacentRetainedComponents
 public import FLT.Mazur.WeierstrassDividedAdjacentRetainedExterior
 public import FLT.Mazur.WeierstrassDividedAdjacentRetainedIntegral
