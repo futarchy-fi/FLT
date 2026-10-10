@@ -6885,6 +6885,7 @@ public import FLT.Mazur.WeierstrassDividedZeroSplitCycleIntersections
 public import FLT.Mazur.WeierstrassDividedZeroSplitCycleRanges
 public import FLT.Mazur.WeierstrassDividedZeroSplitCycleSeparation
 public import FLT.Mazur.WeierstrassDividedZeroSplitNormalizationSurjective
+public import FLT.Mazur.WeierstrassDividedZeroSplitPointClassification
 public import FLT.Mazur.WeierstrassEquationTransport
 public import FLT.Mazur.WeierstrassFieldChartPresentation
 public import FLT.Mazur.WeierstrassFiniteChartDescent
