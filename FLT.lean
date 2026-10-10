@@ -2737,6 +2737,7 @@ public import FLT.Mazur.AffineSectionsReconstruction
 public import FLT.Mazur.AffineSmoothFiniteFlatCartier
 public import FLT.Mazur.AffineSourcePullbackSections
 public import FLT.Mazur.AffineSourceSectionComparison
+public import FLT.Mazur.AffineSpectrumKernelIdeal
 public import FLT.Mazur.AffineSplitLineAmbientTransport
 public import FLT.Mazur.AffineSplitLineCoordinatePullback
 public import FLT.Mazur.AffineSplitLineCoordinates
@@ -4002,6 +4003,7 @@ public import FLT.Mazur.FlatQuotientCartierFiber
 public import FLT.Mazur.FlatQuotientIdealBaseChange
 public import FLT.Mazur.FlatQuotientIdealFiber
 public import FLT.Mazur.FlatQuotientLocalCartier
+public import FLT.Mazur.FlatScalarExactness
 public import FLT.Mazur.FlatScalarHomology
 public import FLT.Mazur.FlatSectionEqualizer
 public import FLT.Mazur.FlatStructureCohomology
@@ -4519,6 +4521,7 @@ public import FLT.Mazur.InvariantLocalizationComparison
 public import FLT.Mazur.InvariantLocalizationCoordinates
 public import FLT.Mazur.InvariantLocalizationNumerator
 public import FLT.Mazur.IrreducibleComponentAmple
+public import FLT.Mazur.IsomorphicClosedPullback
 public import FLT.Mazur.IteratedOldArrowRepresentatives
 public import FLT.Mazur.IteratedOldDenominatorRecovery
 public import FLT.Mazur.IteratedOldDiagramRefinement
@@ -5011,6 +5014,8 @@ public import FLT.Mazur.PolygonAtlas
 public import FLT.Mazur.PolygonAtlasCocone
 public import FLT.Mazur.PolygonAtlasSmoothLocus
 public import FLT.Mazur.PolygonBoundaryDivisor
+public import FLT.Mazur.PolygonBoundaryReductionSequence
+public import FLT.Mazur.PolygonBoundaryTensorQuotient
 public import FLT.Mazur.PolygonBranchDifferenceSheaf
 public import FLT.Mazur.PolygonCanonicalBranchGenerators
 public import FLT.Mazur.PolygonCanonicalChartPullback
@@ -5220,6 +5225,14 @@ public import FLT.Mazur.PolygonSplitPuncturedPullback
 public import FLT.Mazur.PolygonSplitRefinementCover
 public import FLT.Mazur.PolygonSplitRefinementValue
 public import FLT.Mazur.PolygonSplitTorusBranches
+public import FLT.Mazur.PolygonStageClosedImmersion
+public import FLT.Mazur.PolygonStageCoefficientKernel
+public import FLT.Mazur.PolygonStageFlatLayer
+public import FLT.Mazur.PolygonStageLayerSequence
+public import FLT.Mazur.PolygonStageLineLayer
+public import FLT.Mazur.PolygonStageLineQuotient
+public import FLT.Mazur.PolygonStageLineSectionFlat
+public import FLT.Mazur.PolygonStageRestrictionIdeal
 public import FLT.Mazur.PolygonStructureInclusion
 public import FLT.Mazur.PolygonTranslationImages
 public import FLT.Mazur.PolygonUniversalAction
