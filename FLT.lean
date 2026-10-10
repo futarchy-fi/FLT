@@ -4649,6 +4649,7 @@ public import FLT.Mazur.LocallySplitLineNormalizedChart
 public import FLT.Mazur.LocallySplitLineOpenRestriction
 public import FLT.Mazur.LocallySplitLinePointRecovery
 public import FLT.Mazur.LocallySplitLineSourceTransport
+public import FLT.Mazur.LocallySplitOpenCover
 public import FLT.Mazur.LocallySplitResidueCriterion
 public import FLT.Mazur.LocallySplitSheafMonomorphism
 public import FLT.Mazur.LocallySplitSheafPullback
