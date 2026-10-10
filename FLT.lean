@@ -6293,6 +6293,7 @@ public import FLT.Mazur.SchemeIndependentCanonicalFamily
 public import FLT.Mazur.SchemeIndependentCanonicalFullyFaithful
 public import FLT.Mazur.SchemeIndependentCanonicalIsoGluing
 public import FLT.Mazur.SchemeIndependentCanonicalOverlap
+public import FLT.Mazur.SchemeIndependentCanonicalPairDetection
 public import FLT.Mazur.SchemeIndependentCanonicalSource
 public import FLT.Mazur.SchemeIndependentCanonicalSourceNaturality
 public import FLT.Mazur.SchemeIndependentCanonicalUnitFrames
