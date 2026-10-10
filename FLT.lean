@@ -6292,6 +6292,7 @@ public import FLT.Mazur.SchemeIndependentCanonicalIsoGluing
 public import FLT.Mazur.SchemeIndependentCanonicalOverlap
 public import FLT.Mazur.SchemeIndependentCanonicalSource
 public import FLT.Mazur.SchemeIndependentCanonicalSourceNaturality
+public import FLT.Mazur.SchemeIndependentCanonicalUnitFrames
 public import FLT.Mazur.SchemeIndependentDiagonalIdentity
 public import FLT.Mazur.SchemeIndependentEffectivePairCharts
 public import FLT.Mazur.SchemeIndependentEffectivePairReturn
