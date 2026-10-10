@@ -6368,6 +6368,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXReesChart
 public import FLT.Mazur.WeierstrassSuccessiveXReesScheme
 public import FLT.Mazur.WeierstrassSuccessiveXResidueDividedOverlap
 public import FLT.Mazur.WeierstrassSuccessiveXResidueFiber
+public import FLT.Mazur.WeierstrassSuccessiveXResidueIncidencePoints
 public import FLT.Mazur.WeierstrassSuccessiveXResidueIntegralNormalization
 public import FLT.Mazur.WeierstrassSuccessiveXResidueMiddle
 public import FLT.Mazur.WeierstrassSuccessiveXResidueMiddleComponents
