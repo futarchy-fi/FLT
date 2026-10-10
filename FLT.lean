@@ -6053,6 +6053,7 @@ public import FLT.Mazur.WeierstrassDividedFiniteFlat
 public import FLT.Mazur.WeierstrassDividedFiniteIteration
 public import FLT.Mazur.WeierstrassDividedFiniteLineBranches
 public import FLT.Mazur.WeierstrassDividedFiniteLineContractions
+public import FLT.Mazur.WeierstrassDividedFiniteLineReciprocals
 public import FLT.Mazur.WeierstrassDividedFiniteNodeComponents
 public import FLT.Mazur.WeierstrassDividedFiniteNodeContractions
 public import FLT.Mazur.WeierstrassDividedFiniteOverlap
