@@ -6609,6 +6609,7 @@ public import FLT.Mazur.WeierstrassDividedDepthOriginalOpen
 public import FLT.Mazur.WeierstrassDividedDepthStructure
 public import FLT.Mazur.WeierstrassDividedDepthYBoundary
 public import FLT.Mazur.WeierstrassDividedExterior
+public import FLT.Mazur.WeierstrassDividedExteriorBranchIntersections
 public import FLT.Mazur.WeierstrassDividedExteriorIntersections
 public import FLT.Mazur.WeierstrassDividedExteriorLocalContraction
 public import FLT.Mazur.WeierstrassDividedExteriorOriginalOpen
