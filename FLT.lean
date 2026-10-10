@@ -3333,6 +3333,11 @@ public import FLT.Mazur.DivisorTensorSequence
 public import FLT.Mazur.DivisorTwistedDegree
 public import FLT.Mazur.DivisorTwistedSequence
 public import FLT.Mazur.DoubleRootComponentBound
+public import FLT.Mazur.DualAtlasAmbientBaseChange
+public import FLT.Mazur.DualAtlasAmbientBaseChangeCharts
+public import FLT.Mazur.DualAtlasAmbientCharts
+public import FLT.Mazur.DualAtlasAmbientIso
+public import FLT.Mazur.DualAtlasAmbientMap
 public import FLT.Mazur.DualAtlasBaseChangeCharts
 public import FLT.Mazur.DualAtlasBaseChangeCover
 public import FLT.Mazur.DualAtlasBaseChangeDirectedCover
@@ -3346,6 +3351,7 @@ public import FLT.Mazur.DualAtlasGeometricCartesian
 public import FLT.Mazur.DualAtlasGeometricReverseSquare
 public import FLT.Mazur.DualAtlasGeometricSectionPullback
 public import FLT.Mazur.DualAtlasLineClassification
+public import FLT.Mazur.DualAtlasLinePullbackCoherence
 public import FLT.Mazur.DualAtlasLineQuotient
 public import FLT.Mazur.DualAtlasPulledFrameRefinement
 public import FLT.Mazur.DualAtlasSectionBaseNeighborhood
@@ -3755,6 +3761,7 @@ public import FLT.Mazur.FiniteFlatCoefficientIdeal
 public import FLT.Mazur.FiniteFlatLocalIdealPresentation
 public import FLT.Mazur.FiniteFlatQuotientTrivialization
 public import FLT.Mazur.FiniteFlatSubschemeQuotient
+public import FLT.Mazur.FiniteFreeAmbientChartRefinement
 public import FLT.Mazur.FiniteFreeChartGeneratorRestriction
 public import FLT.Mazur.FiniteFreeChartPointCompatibility
 public import FLT.Mazur.FiniteFreeChartProjectiveRestriction
