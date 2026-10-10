@@ -5120,6 +5120,9 @@ public import FLT.Mazur.PolygonScaledReciprocal
 public import FLT.Mazur.PolygonScalingNaturality
 public import FLT.Mazur.PolygonSeparated
 public import FLT.Mazur.PolygonSmoothLocus
+public import FLT.Mazur.PolygonSmoothingBaseChange
+public import FLT.Mazur.PolygonSmoothingRing
+public import FLT.Mazur.PolygonSmoothingSpecialFiber
 public import FLT.Mazur.PolygonSplitGeneratorIdentities
 public import FLT.Mazur.PolygonSplitGroup
 public import FLT.Mazur.PolygonSplitInterpolationEquations
@@ -6211,6 +6214,7 @@ public import FLT.Mazur.UniformizerRootExtension
 public import FLT.Mazur.UnitIntegerModel
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryActualNormalizationIso
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryAffineSections
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryArithmeticAction
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryCoefficientGroup
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryCoordinateExt
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryCoordinateInverse
@@ -6231,6 +6235,7 @@ public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalEquation
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizationGroup
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizationInvariant
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizationNatural
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizedAction
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizedCoefficientMaps
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizedEvaluationNaturality
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizedFixedCoordinates
@@ -6250,6 +6255,9 @@ public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizedUniversalMarking
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryPointCoordinates
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryProperNormalization
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryPullbackSections
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryRelabelComparison
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryRelabelCoordinates
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryRelabelNormalization
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryRelativePoint
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryRelativeRigidity
 public import FLT.Mazur.UniversalWeierstrassAuxiliarySchemeAffineAgreement
