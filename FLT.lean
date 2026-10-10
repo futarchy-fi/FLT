@@ -5697,6 +5697,7 @@ public import FLT.Mazur.WeierstrassAffineMonicComparison
 public import FLT.Mazur.WeierstrassAffineMorphismExt
 public import FLT.Mazur.WeierstrassAffineNegation
 public import FLT.Mazur.WeierstrassAffineNegationAddition
+public import FLT.Mazur.WeierstrassAffineNormalForm
 public import FLT.Mazur.WeierstrassAffineOuterTripleGlobal
 public import FLT.Mazur.WeierstrassAffineOutputDomains
 public import FLT.Mazur.WeierstrassAffineOutputOpen
