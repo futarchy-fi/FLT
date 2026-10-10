@@ -5718,7 +5718,10 @@ public import FLT.Mazur.ProperCoverLimitDescent
 public import FLT.Mazur.ProperCurveGenus
 public import FLT.Mazur.ProperFamilyAtlasCartesian
 public import FLT.Mazur.ProperFamilyAtlasRecovery
+public import FLT.Mazur.ProperFamilyOriginalSectionRecovery
+public import FLT.Mazur.ProperFamilyOriginalZeroIdeal
 public import FLT.Mazur.ProperFamilySectionPullback
+public import FLT.Mazur.ProperFamilySplitDirectImageSections
 public import FLT.Mazur.ProperFamilyTwistedRecovery
 public import FLT.Mazur.ProperFamilyUniversalLineRecovery
 public import FLT.Mazur.ProperFamilyUniversalSectionRecovery
@@ -5837,6 +5840,7 @@ public import FLT.Mazur.RelativeCartier
 public import FLT.Mazur.RelativeCartierBaseChange
 public import FLT.Mazur.RelativeCartierDivisorPullback
 public import FLT.Mazur.RelativeCartierIdealPullback
+public import FLT.Mazur.RelativeCartierOriginalSquare
 public import FLT.Mazur.RelativeCyclicSubgroup
 public import FLT.Mazur.RelativeDirectImageComposition
 public import FLT.Mazur.RelativeDirectImageForgetting
@@ -5885,6 +5889,7 @@ public import FLT.Mazur.ResidueNonvanishingLocallySplit
 public import FLT.Mazur.ResidueNonvanishingOpenPullback
 public import FLT.Mazur.ResiduePullbackNonvanishingTransport
 public import FLT.Mazur.ResidueVectorRetraction
+public import FLT.Mazur.RetainedLineOriginalTwist
 public import FLT.Mazur.RetainedLineSectionPullback
 public import FLT.Mazur.RetainedLineSectionPullbackIso
 public import FLT.Mazur.RetainedLineTwistedSection
@@ -6450,6 +6455,7 @@ public import FLT.Mazur.TwistedEvaluationSectionSum
 public import FLT.Mazur.TwistedSectionBaseChange
 public import FLT.Mazur.TwistedSectionBaseChangeRegularity
 public import FLT.Mazur.TwistedSectionBaseLineNaturality
+public import FLT.Mazur.TwistedSectionBidual
 public import FLT.Mazur.TwistedSectionCartierTransport
 public import FLT.Mazur.TwistedSectionCoefficientNaturality
 public import FLT.Mazur.TwistedSectionIntegralCriterion
