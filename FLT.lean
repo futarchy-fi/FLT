@@ -6830,6 +6830,7 @@ public import FLT.Mazur.WeierstrassOriginIsomorphismCoordinates
 public import FLT.Mazur.WeierstrassOriginIsomorphismDivisor
 public import FLT.Mazur.WeierstrassOriginIsomorphismPoles
 public import FLT.Mazur.WeierstrassOriginIsomorphismSections
+public import FLT.Mazur.WeierstrassOriginIsomorphismUnits
 public import FLT.Mazur.WeierstrassOriginJets
 public import FLT.Mazur.WeierstrassOriginMonomialPoles
 public import FLT.Mazur.WeierstrassOriginNeighborhoodCover
