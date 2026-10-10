@@ -4036,6 +4036,7 @@ public import FLT.Mazur.GradedProjUnitChartMap
 public import FLT.Mazur.GradedProjUnitChartOpens
 public import FLT.Mazur.GroupMarkingBaseChange
 public import FLT.Mazur.GroupMarkingTransport
+public import FLT.Mazur.GroupMarkingTransportEvaluation
 public import FLT.Mazur.GroupMarkingTransportNaturality
 public import FLT.Mazur.GroupSectionBaseChange
 public import FLT.Mazur.GroupTorsionCommutativeStructure
