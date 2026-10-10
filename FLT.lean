@@ -2586,6 +2586,7 @@ public import FLT.Mazur.AffineFiniteFreeDirectedCover
 public import FLT.Mazur.AffineFiniteTypeModelSystem
 public import FLT.Mazur.AffineFpqcRefinement
 public import FLT.Mazur.AffineFreeSectionLineBaseChange
+public import FLT.Mazur.AffineFreeSectionLineComparison
 public import FLT.Mazur.AffineFreeSectionLineTransport
 public import FLT.Mazur.AffineFreeSheafCoordinateNormalization
 public import FLT.Mazur.AffineFreeSheafCoordinatePullback
