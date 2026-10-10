@@ -5781,6 +5781,7 @@ public import FLT.Mazur.ProperFamilyRepresentedDivisor
 public import FLT.Mazur.ProperFamilyRigidifiedComparisons
 public import FLT.Mazur.ProperFamilyRigidifiedFppfPairs
 public import FLT.Mazur.ProperFamilyRigidifiedLocalRepresentatives
+public import FLT.Mazur.ProperFamilyRigidifiedNamedTransitions
 public import FLT.Mazur.ProperFamilyRigidifiedTransitions
 public import FLT.Mazur.ProperFamilySectionCoherence
 public import FLT.Mazur.ProperFamilySectionOrbits
