@@ -4768,6 +4768,7 @@ public import FLT.Mazur.ModulePullbackSectionTransport
 public import FLT.Mazur.ModulePullbackTrivializationCoherence
 public import FLT.Mazur.ModulePullbackTrivializationSections
 public import FLT.Mazur.ModulePullbackUnitCoherence
+public import FLT.Mazur.ModulePushforwardSectionTransition
 public import FLT.Mazur.ModuleRingCohomologyExact
 public import FLT.Mazur.ModuleSealedPullbackRatio
 public import FLT.Mazur.ModuleSectionBaseChange
