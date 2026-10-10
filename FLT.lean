@@ -2522,6 +2522,7 @@ public import FLT.Mazur.AffineCanonicalMapCompatibility
 public import FLT.Mazur.AffineCanonicalOverlapChart
 public import FLT.Mazur.AffineCanonicalOverlapRecognition
 public import FLT.Mazur.AffineCartesianSectionScalars
+public import FLT.Mazur.AffineChartResidueRetraction
 public import FLT.Mazur.AffineChartSectionLineRecovery
 public import FLT.Mazur.AffineChartSectionLocalization
 public import FLT.Mazur.AffineChartSourceScalars
@@ -2701,6 +2702,7 @@ public import FLT.Mazur.AffineRefinementReconstructionMap
 public import FLT.Mazur.AffineRefinementReconstructionRecognition
 public import FLT.Mazur.AffineRelativeFiberCriterion
 public import FLT.Mazur.AffineResidueEvaluationComparison
+public import FLT.Mazur.AffineResidueLineRetraction
 public import FLT.Mazur.AffineResidueSectionCoefficients
 public import FLT.Mazur.AffineRestrictionImmersion
 public import FLT.Mazur.AffineReverseGeometricOverlap
@@ -2755,6 +2757,7 @@ public import FLT.Mazur.AffineTildeBaseChangeIso
 public import FLT.Mazur.AffineTildeBaseChangeUnit
 public import FLT.Mazur.AffineTildeMorphismCoherence
 public import FLT.Mazur.AffineTildePullbackMap
+public import FLT.Mazur.AffineTildePullbackNonvanishing
 public import FLT.Mazur.AffineTildePullbackSectionMap
 public import FLT.Mazur.AffineTildeSemilinearCoherence
 public import FLT.Mazur.AffineTildeSemilinearMap
@@ -2848,6 +2851,7 @@ public import FLT.Mazur.AuxiliaryLevelFaithfulRepresentation
 public import FLT.Mazur.AuxiliaryLevelFieldMarking
 public import FLT.Mazur.AuxiliaryLevelHomScheme
 public import FLT.Mazur.AuxiliaryLevelKernelLocus
+public import FLT.Mazur.AuxiliaryLevelMappedFaithfulness
 public import FLT.Mazur.AuxiliaryLevelRelabeling
 public import FLT.Mazur.AuxiliaryTorsionMarkingComparison
 public import FLT.Mazur.BaseAdicClosedAmpleSections
@@ -3001,6 +3005,7 @@ public import FLT.Mazur.CartierAbelDirectImageBaseChange
 public import FLT.Mazur.CartierAbelDirectImageSections
 public import FLT.Mazur.CartierAbelFiber
 public import FLT.Mazur.CartierAbelIntegralFiberSections
+public import FLT.Mazur.CartierAbelLocallySplit
 public import FLT.Mazur.CartierAbelProperBaseChange
 public import FLT.Mazur.CartierAbelPulledSectionAdjoint
 public import FLT.Mazur.CartierAbelRelativeBaseChange
@@ -4047,6 +4052,7 @@ public import FLT.Mazur.GradedProjUnitChart
 public import FLT.Mazur.GradedProjUnitChartMap
 public import FLT.Mazur.GradedProjUnitChartOpens
 public import FLT.Mazur.GroupMarkingBaseChange
+public import FLT.Mazur.GroupMarkingBaseChangeInverse
 public import FLT.Mazur.GroupMarkingTransport
 public import FLT.Mazur.GroupMarkingTransportNaturality
 public import FLT.Mazur.GroupSectionBaseChange
@@ -4524,6 +4530,7 @@ public import FLT.Mazur.LinePowerSectionBaseChange
 public import FLT.Mazur.LinePowerSectionLimitDescent
 public import FLT.Mazur.LinePullbackRestriction
 public import FLT.Mazur.LineRecoveryPullback
+public import FLT.Mazur.LineScalarExtensionNonvanishing
 public import FLT.Mazur.LineSectionCanonicalRecovery
 public import FLT.Mazur.LineSectionCohomologyAnnihilation
 public import FLT.Mazur.LineSectionCohomologySurjection
@@ -4617,6 +4624,7 @@ public import FLT.Mazur.LocallySplitLineNormalizedChart
 public import FLT.Mazur.LocallySplitLineOpenRestriction
 public import FLT.Mazur.LocallySplitLinePointRecovery
 public import FLT.Mazur.LocallySplitLineSourceTransport
+public import FLT.Mazur.LocallySplitResidueCriterion
 public import FLT.Mazur.LocallySplitSheafMonomorphism
 public import FLT.Mazur.LocallySplitSheafPullback
 public import FLT.Mazur.LocallySplitSheafTransport
@@ -5536,6 +5544,7 @@ public import FLT.Mazur.ProperSmoothGenericFiberOpen
 public import FLT.Mazur.ProperSmoothLineRigidity
 public import FLT.Mazur.ProperSmoothPointedLineSheafDescent
 public import FLT.Mazur.ProperSmoothStructureSheaf
+public import FLT.Mazur.ProperSplitSectionFiberRegularity
 public import FLT.Mazur.ProperStageAmpleFiberDescent
 public import FLT.Mazur.ProperStageBaseChangeLimit
 public import FLT.Mazur.ProperStageFiberProjection
@@ -5638,6 +5647,9 @@ public import FLT.Mazur.RelativeSerreVanishing
 public import FLT.Mazur.RelativeSums
 public import FLT.Mazur.RelativeVeryAmpleLineBundle
 public import FLT.Mazur.RepeatedCubicRoots
+public import FLT.Mazur.ResidueNonvanishingLocallySplit
+public import FLT.Mazur.ResidueNonvanishingOpenPullback
+public import FLT.Mazur.ResiduePullbackNonvanishingTransport
 public import FLT.Mazur.ResidueVectorRetraction
 public import FLT.Mazur.RightDerivedDimensionShift
 public import FLT.Mazur.RigidifiedLineIsomorphisms
@@ -6180,6 +6192,7 @@ public import FLT.Mazur.TorusChartScalars
 public import FLT.Mazur.TrivialLineTwistLocalization
 public import FLT.Mazur.TrivializedLineSheafLimitDescent
 public import FLT.Mazur.TwistedSectionBaseChange
+public import FLT.Mazur.TwistedSectionBaseChangeRegularity
 public import FLT.Mazur.TwistedSectionIntegralCriterion
 public import FLT.Mazur.TwistedSectionPushforward
 public import FLT.Mazur.TwistedSectionPushforwardNaturality
@@ -6206,17 +6219,25 @@ public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalEquation
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizationGroup
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizationInvariant
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizationNatural
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizedCoefficientMaps
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizedFrame
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizedIsomorphism
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizedLevelPoint
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizedMarkingSections
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizedParameter
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizedParameterBasis
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizedPointNaturality
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizedPointSections
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizedSections
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizedSlicePoint
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizedTorsionBasis
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizedUniversalMarking
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryPointCoordinates
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryProperNormalization
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryPullbackSections
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryRelativePoint
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryRelativeRigidity
+public import FLT.Mazur.UniversalWeierstrassAuxiliarySchemeRelativePoint
 public import FLT.Mazur.UniversalWeierstrassAuxiliarySchemeRigidity
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryTorsionBasisMaps
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryTorsionCover
@@ -6613,6 +6634,7 @@ public import FLT.Mazur.WeierstrassDividedZeroNodalGeometry
 public import FLT.Mazur.WeierstrassDividedZeroNodalGluing
 public import FLT.Mazur.WeierstrassDividedZeroNodalProjective
 public import FLT.Mazur.WeierstrassDividedZeroResidueAtlas
+public import FLT.Mazur.WeierstrassEquationTransport
 public import FLT.Mazur.WeierstrassFieldChartPresentation
 public import FLT.Mazur.WeierstrassFiniteChartDescent
 public import FLT.Mazur.WeierstrassFiveAffineTriple
