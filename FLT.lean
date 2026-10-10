@@ -6072,6 +6072,7 @@ public import FLT.Mazur.WeierstrassOriginAutomorphismCoordinates
 public import FLT.Mazur.WeierstrassOriginAutomorphismExt
 public import FLT.Mazur.WeierstrassOriginIdeal
 public import FLT.Mazur.WeierstrassOriginJets
+public import FLT.Mazur.WeierstrassOriginMonomialPoles
 public import FLT.Mazur.WeierstrassOriginNeighborhoodCover
 public import FLT.Mazur.WeierstrassOriginParameter
 public import FLT.Mazur.WeierstrassOriginParameterOrder
