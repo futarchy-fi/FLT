@@ -4526,6 +4526,7 @@ public import FLT.Mazur.LocallySplitInclusionPullback
 public import FLT.Mazur.LocallySplitLineAmbientChart
 public import FLT.Mazur.LocallySplitLineAmbientTransport
 public import FLT.Mazur.LocallySplitLineChartRefinement
+public import FLT.Mazur.LocallySplitLineDualChartCompatibility
 public import FLT.Mazur.LocallySplitLineOpenRestriction
 public import FLT.Mazur.LocallySplitLineSourceTransport
 public import FLT.Mazur.LocallySplitSheafPullback
