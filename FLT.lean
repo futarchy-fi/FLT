@@ -5311,6 +5311,7 @@ public import FLT.Mazur.PolygonStageParameterSections
 public import FLT.Mazur.PolygonStageRestrictionIdeal
 public import FLT.Mazur.PolygonStageRetainedBaseComparison
 public import FLT.Mazur.PolygonStageRetainedCanonicalMap
+public import FLT.Mazur.PolygonStageRetainedNaturality
 public import FLT.Mazur.PolygonStageRetainedRecovery
 public import FLT.Mazur.PolygonStageScalarComparison
 public import FLT.Mazur.PolygonStageVeroneseGrading
