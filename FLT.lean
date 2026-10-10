@@ -5071,6 +5071,7 @@ public import FLT.Mazur.PolygonInfinitesimalBaseChange
 public import FLT.Mazur.PolygonInfinitesimalCoefficientDiagram
 public import FLT.Mazur.PolygonInfinitesimalDiagram
 public import FLT.Mazur.PolygonInfinitesimalFamily
+public import FLT.Mazur.PolygonInfinitesimalMarkedBaseChange
 public import FLT.Mazur.PolygonInfinitesimalMarkings
 public import FLT.Mazur.PolygonInfinitesimalSeparated
 public import FLT.Mazur.PolygonInfinitesimalSpecialFiber
