@@ -5026,6 +5026,7 @@ public import FLT.Mazur.OrderedRelativeIdealFamily
 public import FLT.Mazur.OriginalFamilyIdentityComparison
 public import FLT.Mazur.OriginalFamilySquareComposition
 public import FLT.Mazur.OriginalFamilyTwistComparison
+public import FLT.Mazur.OriginalFamilyTwistComposition
 public import FLT.Mazur.OriginalTwistIsoRigidity
 public import FLT.Mazur.OriginalTwistLineOrbits
 public import FLT.Mazur.OriginalTwistOrbitRelation
