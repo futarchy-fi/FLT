@@ -6091,9 +6091,17 @@ public import FLT.Mazur.UniversalWeierstrassAuxiliaryCoordinateUnits
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryCoverage
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryEtale
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryFieldCoordinates
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryFrameUnits
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryFullBasis
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryIsomorphismUnique
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryLevel
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalEquation
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizationNatural
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizedFrame
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizedSections
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryPullbackSections
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryRelativeRigidity
+public import FLT.Mazur.UniversalWeierstrassAuxiliarySchemeRigidity
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryTorsionCover
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryTorsionDisjoint
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryTorsionSections
@@ -6159,6 +6167,9 @@ public import FLT.Mazur.WeierstrassAffineProductSwap
 public import FLT.Mazur.WeierstrassAffineRelativeSmoothCriterion
 public import FLT.Mazur.WeierstrassAffineRelativeTangent
 public import FLT.Mazur.WeierstrassAffineTripleDescent
+public import FLT.Mazur.WeierstrassAffineVariableChangeEquiv
+public import FLT.Mazur.WeierstrassAffineVariableChangeMap
+public import FLT.Mazur.WeierstrassAffineVariableChangeSections
 public import FLT.Mazur.WeierstrassAffineVietaFormula
 public import FLT.Mazur.WeierstrassAllOrdinaryTripleAlgebra
 public import FLT.Mazur.WeierstrassAllOrdinaryTripleCoordinates
@@ -6394,6 +6405,8 @@ public import FLT.Mazur.WeierstrassFourMarkingFrame
 public import FLT.Mazur.WeierstrassFourMarkingRigidity
 public import FLT.Mazur.WeierstrassFourPairAssociativity
 public import FLT.Mazur.WeierstrassFourTorsionFinite
+public import FLT.Mazur.WeierstrassFrameNormalEquation
+public import FLT.Mazur.WeierstrassFrameNormalization
 public import FLT.Mazur.WeierstrassGeneralizedEllipticModel
 public import FLT.Mazur.WeierstrassGeneralizedSmoothComparison
 public import FLT.Mazur.WeierstrassGenusOneFamily
@@ -6747,6 +6760,7 @@ public import FLT.Mazur.WeierstrassNodalResidueTransition
 public import FLT.Mazur.WeierstrassNonoppositeOrdinaryLift
 public import FLT.Mazur.WeierstrassNonzeroPointAffine
 public import FLT.Mazur.WeierstrassNormalFormPoles
+public import FLT.Mazur.WeierstrassNormalizedFrameUnique
 public import FLT.Mazur.WeierstrassNormalizedProjectivePoint
 public import FLT.Mazur.WeierstrassOrdinaryChartSpecialization
 public import FLT.Mazur.WeierstrassOrdinaryDomainLift
@@ -7103,6 +7117,8 @@ public import FLT.Mazur.WeierstrassTripleInnerOutputRegular
 public import FLT.Mazur.WeierstrassTripleSlopeAlgebra
 public import FLT.Mazur.WeierstrassTripleTangentSlopeAlgebra
 public import FLT.Mazur.WeierstrassVariableChangeFrame
+public import FLT.Mazur.WeierstrassVariableChangeIntegralEquation
+public import FLT.Mazur.WeierstrassVariableChangeScaledCoefficients
 public import FLT.Mazur.WeierstrassVerticalAdditionCharts
 public import FLT.Mazur.WeierstrassVerticalChartCompatibility
 public import FLT.Mazur.WeierstrassVietaNormalization
