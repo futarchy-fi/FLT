@@ -6007,6 +6007,7 @@ public import FLT.Mazur.SchemeUnchangedOpenPullback
 public import FLT.Mazur.SealedLineRestriction
 public import FLT.Mazur.SealedLineRestrictionSections
 public import FLT.Mazur.SectionBaseLocalization
+public import FLT.Mazur.SectionCartierOpenDescent
 public import FLT.Mazur.SectionChartGenerators
 public import FLT.Mazur.SectionCharts
 public import FLT.Mazur.SectionCoverCoordinates
