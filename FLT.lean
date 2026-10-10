@@ -6468,6 +6468,7 @@ public import FLT.Mazur.WeierstrassDividedGlobalZeroSuccessive
 public import FLT.Mazur.WeierstrassDividedInfinityLaurentChart
 public import FLT.Mazur.WeierstrassDividedInfinityLaurentGluing
 public import FLT.Mazur.WeierstrassDividedInitialAtlasIndex
+public import FLT.Mazur.WeierstrassDividedInitialConicParameters
 public import FLT.Mazur.WeierstrassDividedInitialExtendedOrigins
 public import FLT.Mazur.WeierstrassDividedInitialExtendedSections
 public import FLT.Mazur.WeierstrassDividedInitialExterior
