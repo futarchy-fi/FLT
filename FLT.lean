@@ -5298,6 +5298,7 @@ public import FLT.Mazur.PolygonVeroneseDegreeExactness
 public import FLT.Mazur.PolygonVeroneseDegreeFinite
 public import FLT.Mazur.PolygonVeroneseEvaluationKernel
 public import FLT.Mazur.PolygonVeroneseFiniteType
+public import FLT.Mazur.PolygonVeroneseGrading
 public import FLT.Mazur.PolygonVeroneseHomogeneousReduction
 public import FLT.Mazur.PolygonVeroneseParameterIdeal
 public import FLT.Mazur.PolygonVeroneseProductLifting
