@@ -2500,6 +2500,7 @@ public import FLT.Mazur.AdditiveComplexSumHomologyInclusion
 public import FLT.Mazur.AdditiveSheafModuleTransport
 public import FLT.Mazur.AdditiveSheafMultiplication
 public import FLT.Mazur.AdicCompletionAlgEquiv
+public import FLT.Mazur.AdicCompletionPositiveLimit
 public import FLT.Mazur.AdicCompletionPrincipal
 public import FLT.Mazur.AdicCompletionQuotientEquiv
 public import FLT.Mazur.AdicCompletionScalars
@@ -5324,7 +5325,14 @@ public import FLT.Mazur.PolygonOneGonRefinementCover
 public import FLT.Mazur.PolygonOneGonRefinementValue
 public import FLT.Mazur.PolygonOneGonTorusIntersection
 public import FLT.Mazur.PolygonOriginalAdicRealization
+public import FLT.Mazur.PolygonOriginalAffineCompletion
+public import FLT.Mazur.PolygonOriginalAffineNeighborhood
+public import FLT.Mazur.PolygonOriginalAffineQuotient
+public import FLT.Mazur.PolygonOriginalAffineScalars
+public import FLT.Mazur.PolygonOriginalAffineTransition
 public import FLT.Mazur.PolygonOriginalBoundarySectionReconstruction
+public import FLT.Mazur.PolygonOriginalCompletionAlgebra
+public import FLT.Mazur.PolygonOriginalNeighborhoodTransition
 public import FLT.Mazur.PolygonOriginalStageAdicSquare
 public import FLT.Mazur.PolygonPinchingAffineBaseChange
 public import FLT.Mazur.PolygonPinchingDiagram
@@ -6647,6 +6655,7 @@ public import FLT.Mazur.StructureImageOpenChart
 public import FLT.Mazur.SuccessiveIncidenceAlgebra
 public import FLT.Mazur.SurjectiveAlgHomKernelEquiv
 public import FLT.Mazur.SurjectiveDominantEpi
+public import FLT.Mazur.SurjectiveIdealPowerQuotient
 public import FLT.Mazur.SurjectiveKernelPushout
 public import FLT.Mazur.SurjectivePolynomialArrowRepresentatives
 public import FLT.Mazur.SurjectiveStructureSupport
