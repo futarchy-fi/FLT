@@ -7247,6 +7247,7 @@ public import FLT.Mazur.WeierstrassDividedZeroEqualityIndexedExt
 public import FLT.Mazur.WeierstrassDividedZeroEqualityPolygonMap
 public import FLT.Mazur.WeierstrassDividedZeroEqualityTerminalBranches
 public import FLT.Mazur.WeierstrassDividedZeroEqualityTerminalExt
+public import FLT.Mazur.WeierstrassDividedZeroEqualityTerminalFamilyDescent
 public import FLT.Mazur.WeierstrassDividedZeroEqualityTerminalLineBranches
 public import FLT.Mazur.WeierstrassDividedZeroExteriorCoverage
 public import FLT.Mazur.WeierstrassDividedZeroExteriorCurve
