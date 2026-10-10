@@ -7202,6 +7202,7 @@ public import FLT.Mazur.WeierstrassModificationXFiberTangentSwitch
 public import FLT.Mazur.WeierstrassModificationXFlat
 public import FLT.Mazur.WeierstrassModificationXFractionEquation
 public import FLT.Mazur.WeierstrassModificationXFractionMap
+public import FLT.Mazur.WeierstrassModificationXFullNodeBranchCoordinates
 public import FLT.Mazur.WeierstrassModificationXFullNodeBranches
 public import FLT.Mazur.WeierstrassModificationXFullNodeEqualizer
 public import FLT.Mazur.WeierstrassModificationXFullNodeEquiv
