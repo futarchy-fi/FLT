@@ -3349,8 +3349,12 @@ public import FLT.Mazur.DualAtlasChartRefinement
 public import FLT.Mazur.DualAtlasForwardGeometricPullback
 public import FLT.Mazur.DualAtlasGeometricBaseChange
 public import FLT.Mazur.DualAtlasGeometricCartesian
+public import FLT.Mazur.DualAtlasGeometricComposition
 public import FLT.Mazur.DualAtlasGeometricReverseSquare
 public import FLT.Mazur.DualAtlasGeometricSectionPullback
+public import FLT.Mazur.DualAtlasIteratedChartMaps
+public import FLT.Mazur.DualAtlasIteratedCharts
+public import FLT.Mazur.DualAtlasIteratedFrames
 public import FLT.Mazur.DualAtlasLineClassification
 public import FLT.Mazur.DualAtlasLinePullbackCoherence
 public import FLT.Mazur.DualAtlasLineQuotient
@@ -3368,6 +3372,8 @@ public import FLT.Mazur.DualAtlasSectionNormalizedRefinement
 public import FLT.Mazur.DualAtlasSectionReverseForward
 public import FLT.Mazur.DualAtlasSectionTransport
 public import FLT.Mazur.DualAtlasUniversalLine
+public import FLT.Mazur.DualAtlasUniversalLinePullback
+public import FLT.Mazur.DualAtlasUniversalLineRecovery
 public import FLT.Mazur.DualFreeSheafCoordinates
 public import FLT.Mazur.DualProjectiveAtlasNoetherian
 public import FLT.Mazur.DualPullbackComposition
@@ -3781,6 +3787,7 @@ public import FLT.Mazur.FiniteFreeDualPointBaseChange
 public import FLT.Mazur.FiniteFreeDualProjectivePoints
 public import FLT.Mazur.FiniteFreeDualProjectiveRefinement
 public import FLT.Mazur.FiniteFreeDualProjectiveTransitions
+public import FLT.Mazur.FiniteFreeFrameHorizontal
 public import FLT.Mazur.FiniteFreeFramePasting
 public import FLT.Mazur.FiniteFreeFrameRestrictionSquare
 public import FLT.Mazur.FiniteFreeInheritedChartTransitions
@@ -4713,6 +4720,7 @@ public import FLT.Mazur.ModulePresheafPullbackSections
 public import FLT.Mazur.ModulePresheafTensorHom
 public import FLT.Mazur.ModulePresheafTensorPullback
 public import FLT.Mazur.ModulePullbackMapEquality
+public import FLT.Mazur.ModulePullbackRestrictionHorizontal
 public import FLT.Mazur.ModulePullbackRestrictionPasting
 public import FLT.Mazur.ModulePullbackSectionCoherence
 public import FLT.Mazur.ModulePullbackSectionTransport
@@ -4840,6 +4848,7 @@ public import FLT.Mazur.NodalFiberParameterTransport
 public import FLT.Mazur.NodalFiberUnitComparison
 public import FLT.Mazur.NodalGenusOneBaseChange
 public import FLT.Mazur.NodalGeometricFiberGenus
+public import FLT.Mazur.NodeBranchPushout
 public import FLT.Mazur.NodeDenominatorEqualizer
 public import FLT.Mazur.NodeDenominatorGeneration
 public import FLT.Mazur.NodeDenominatorRestriction
@@ -5728,6 +5737,7 @@ public import FLT.Mazur.ProperStalkExtension
 public import FLT.Mazur.ProperTwistedLineDescent
 public import FLT.Mazur.ProperUniversalCartierDivisor
 public import FLT.Mazur.ProperUniversalDirectImageLine
+public import FLT.Mazur.ProperUniversalDirectImagePasting
 public import FLT.Mazur.PullbackOverlapBaseChange
 public import FLT.Mazur.PuncturedNodeRestrictionComparison
 public import FLT.Mazur.PushforwardCech
@@ -6648,6 +6658,7 @@ public import FLT.Mazur.WeierstrassDividedAdjacentZeroParameterIntersection
 public import FLT.Mazur.WeierstrassDividedAdjacentZeroSectionSeparation
 public import FLT.Mazur.WeierstrassDividedBoundaryNormalization
 public import FLT.Mazur.WeierstrassDividedBranchChainIntersections
+public import FLT.Mazur.WeierstrassDividedBranchPairSeparation
 public import FLT.Mazur.WeierstrassDividedComponentPairCoverage
 public import FLT.Mazur.WeierstrassDividedConicBoundaryAllDepths
 public import FLT.Mazur.WeierstrassDividedConicBoundaryGeometryAllDepths
@@ -6828,6 +6839,7 @@ public import FLT.Mazur.WeierstrassDividedOlderIndexedNodeCover
 public import FLT.Mazur.WeierstrassDividedOlderInfinityPreimage
 public import FLT.Mazur.WeierstrassDividedOlderResidueInfinity
 public import FLT.Mazur.WeierstrassDividedOlderResidueNodes
+public import FLT.Mazur.WeierstrassDividedOlderSplitNodeCover
 public import FLT.Mazur.WeierstrassDividedOlderSuccessiveCharts
 public import FLT.Mazur.WeierstrassDividedOlderZeroConicParameters
 public import FLT.Mazur.WeierstrassDividedOlderZeroExtendedGeometry
@@ -6855,6 +6867,7 @@ public import FLT.Mazur.WeierstrassDividedSuccessiveOriginalY
 public import FLT.Mazur.WeierstrassDividedTensorAtlasComparison
 public import FLT.Mazur.WeierstrassDividedTensorYBoundary
 public import FLT.Mazur.WeierstrassDividedTerminalAllExteriorNodes
+public import FLT.Mazur.WeierstrassDividedTerminalAtlasPushout
 public import FLT.Mazur.WeierstrassDividedTerminalBranchIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalBranchesNodeIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalComponentExclusions
@@ -6904,8 +6917,11 @@ public import FLT.Mazur.WeierstrassDividedZeroSplitCocone
 public import FLT.Mazur.WeierstrassDividedZeroSplitComponentInjectivity
 public import FLT.Mazur.WeierstrassDividedZeroSplitCycle
 public import FLT.Mazur.WeierstrassDividedZeroSplitCycleCoverage
+public import FLT.Mazur.WeierstrassDividedZeroSplitCycleIntersections
 public import FLT.Mazur.WeierstrassDividedZeroSplitCycleRanges
+public import FLT.Mazur.WeierstrassDividedZeroSplitCycleSeparation
 public import FLT.Mazur.WeierstrassDividedZeroSplitNormalizationSurjective
+public import FLT.Mazur.WeierstrassDividedZeroSplitPointClassification
 public import FLT.Mazur.WeierstrassEquationTransport
 public import FLT.Mazur.WeierstrassFieldChartPresentation
 public import FLT.Mazur.WeierstrassFiniteChartDescent
@@ -7577,10 +7593,12 @@ public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodeCoordinates
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodeEquiv
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodeMaps
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodeOrigin
+public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodePushout
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleOverlap
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleSecondNode
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleTangentSwitch
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleUnion
+public import FLT.Mazur.WeierstrassSuccessiveXMiddleZeroNode
 public import FLT.Mazur.WeierstrassSuccessiveXMonic
 public import FLT.Mazur.WeierstrassSuccessiveXMonicComparison
 public import FLT.Mazur.WeierstrassSuccessiveXOverlap
