@@ -4764,6 +4764,7 @@ public import FLT.Mazur.ModulePullbackUnitCoherence
 public import FLT.Mazur.ModuleRingCohomologyExact
 public import FLT.Mazur.ModuleSealedPullbackRatio
 public import FLT.Mazur.ModuleSectionBaseChange
+public import FLT.Mazur.ModuleSectionCocycleEvaluation
 public import FLT.Mazur.ModuleSectionCocycleIso
 public import FLT.Mazur.ModuleSectionExactness
 public import FLT.Mazur.ModuleSectionIsomorphismTransport
