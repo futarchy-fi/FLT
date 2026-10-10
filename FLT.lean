@@ -3312,6 +3312,9 @@ public import FLT.Mazur.DivisorLineBundleSumOpenCoherence
 public import FLT.Mazur.DivisorLineBundleSumRestrict
 public import FLT.Mazur.DivisorLineBundleSumUnit
 public import FLT.Mazur.DivisorLinePullback
+public import FLT.Mazur.DivisorLinePullbackComposition
+public import FLT.Mazur.DivisorLinePullbackIdentity
+public import FLT.Mazur.DivisorLinePullbackTransport
 public import FLT.Mazur.DivisorPowerCanonicalSection
 public import FLT.Mazur.DivisorPowerEulerCharacteristic
 public import FLT.Mazur.DivisorPowerTwistDegree
@@ -3319,6 +3322,7 @@ public import FLT.Mazur.DivisorPowerVeryAmple
 public import FLT.Mazur.DivisorRestrictCoherence
 public import FLT.Mazur.DivisorSectionComplement
 public import FLT.Mazur.DivisorSectionExact
+public import FLT.Mazur.DivisorSectionRigidity
 public import FLT.Mazur.DivisorStalkLength
 public import FLT.Mazur.DivisorTensorSequence
 public import FLT.Mazur.DivisorTwistedDegree
@@ -5090,8 +5094,10 @@ public import FLT.Mazur.PolygonInfinitesimalDivisor
 public import FLT.Mazur.PolygonInfinitesimalDivisorLine
 public import FLT.Mazur.PolygonInfinitesimalFamily
 public import FLT.Mazur.PolygonInfinitesimalFieldFiber
+public import FLT.Mazur.PolygonInfinitesimalLineCoherence
 public import FLT.Mazur.PolygonInfinitesimalMarkedBaseChange
 public import FLT.Mazur.PolygonInfinitesimalMarkings
+public import FLT.Mazur.PolygonInfinitesimalSectionRings
 public import FLT.Mazur.PolygonInfinitesimalSeparated
 public import FLT.Mazur.PolygonInfinitesimalSpecialDivisor
 public import FLT.Mazur.PolygonInfinitesimalSpecialFiber
@@ -5159,6 +5165,8 @@ public import FLT.Mazur.PolygonPowerBranchValues
 public import FLT.Mazur.PolygonPowerCanonicalSection
 public import FLT.Mazur.PolygonPowerNodeEndpoints
 public import FLT.Mazur.PolygonPowerNodeWeights
+public import FLT.Mazur.PolygonPowerSeriesBase
+public import FLT.Mazur.PolygonPowerSeriesSystem
 public import FLT.Mazur.PolygonProductAtlas
 public import FLT.Mazur.PolygonProper
 public import FLT.Mazur.PolygonPuncturedCanonicalEquations
@@ -5225,8 +5233,10 @@ public import FLT.Mazur.PowerCohomologyScalarMaps
 public import FLT.Mazur.PowerCohomologyShift
 public import FLT.Mazur.PowerScalarSectionCoordinates
 public import FLT.Mazur.PowerSeriesLeadingComposition
+public import FLT.Mazur.PowerSeriesNilpotentHom
 public import FLT.Mazur.PowerSeriesQuotientCompletion
 public import FLT.Mazur.PowerSeriesSubstitutionEquiv
+public import FLT.Mazur.PowerSeriesTruncatedPolynomial
 public import FLT.Mazur.PresentedFiniteCoefficientBranch
 public import FLT.Mazur.PrimeCharacteristicScalar
 public import FLT.Mazur.PrimeCoefficientLocalization
@@ -6120,6 +6130,8 @@ public import FLT.Mazur.SectionGradedCoordinateEvaluation
 public import FLT.Mazur.SectionGradedCoordinateIndependence
 public import FLT.Mazur.SectionGradedCoordinates
 public import FLT.Mazur.SectionGradedGeneratorLocalization
+public import FLT.Mazur.SectionGradedIsoMultiplication
+public import FLT.Mazur.SectionGradedIsoRing
 public import FLT.Mazur.SectionGradedLocalCoordinates
 public import FLT.Mazur.SectionGradedMultiplication
 public import FLT.Mazur.SectionGradedPowerGenerators
