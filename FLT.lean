@@ -3349,8 +3349,12 @@ public import FLT.Mazur.DualAtlasChartRefinement
 public import FLT.Mazur.DualAtlasForwardGeometricPullback
 public import FLT.Mazur.DualAtlasGeometricBaseChange
 public import FLT.Mazur.DualAtlasGeometricCartesian
+public import FLT.Mazur.DualAtlasGeometricComposition
 public import FLT.Mazur.DualAtlasGeometricReverseSquare
 public import FLT.Mazur.DualAtlasGeometricSectionPullback
+public import FLT.Mazur.DualAtlasIteratedChartMaps
+public import FLT.Mazur.DualAtlasIteratedCharts
+public import FLT.Mazur.DualAtlasIteratedFrames
 public import FLT.Mazur.DualAtlasLineClassification
 public import FLT.Mazur.DualAtlasLinePullbackCoherence
 public import FLT.Mazur.DualAtlasLineQuotient
@@ -3368,6 +3372,8 @@ public import FLT.Mazur.DualAtlasSectionNormalizedRefinement
 public import FLT.Mazur.DualAtlasSectionReverseForward
 public import FLT.Mazur.DualAtlasSectionTransport
 public import FLT.Mazur.DualAtlasUniversalLine
+public import FLT.Mazur.DualAtlasUniversalLinePullback
+public import FLT.Mazur.DualAtlasUniversalLineRecovery
 public import FLT.Mazur.DualFreeSheafCoordinates
 public import FLT.Mazur.DualProjectiveAtlasNoetherian
 public import FLT.Mazur.DualPullbackComposition
@@ -3781,6 +3787,7 @@ public import FLT.Mazur.FiniteFreeDualPointBaseChange
 public import FLT.Mazur.FiniteFreeDualProjectivePoints
 public import FLT.Mazur.FiniteFreeDualProjectiveRefinement
 public import FLT.Mazur.FiniteFreeDualProjectiveTransitions
+public import FLT.Mazur.FiniteFreeFrameHorizontal
 public import FLT.Mazur.FiniteFreeFramePasting
 public import FLT.Mazur.FiniteFreeFrameRestrictionSquare
 public import FLT.Mazur.FiniteFreeInheritedChartTransitions
@@ -4713,6 +4720,7 @@ public import FLT.Mazur.ModulePresheafPullbackSections
 public import FLT.Mazur.ModulePresheafTensorHom
 public import FLT.Mazur.ModulePresheafTensorPullback
 public import FLT.Mazur.ModulePullbackMapEquality
+public import FLT.Mazur.ModulePullbackRestrictionHorizontal
 public import FLT.Mazur.ModulePullbackRestrictionPasting
 public import FLT.Mazur.ModulePullbackSectionCoherence
 public import FLT.Mazur.ModulePullbackSectionTransport
@@ -5716,6 +5724,7 @@ public import FLT.Mazur.ProperStalkExtension
 public import FLT.Mazur.ProperTwistedLineDescent
 public import FLT.Mazur.ProperUniversalCartierDivisor
 public import FLT.Mazur.ProperUniversalDirectImageLine
+public import FLT.Mazur.ProperUniversalDirectImagePasting
 public import FLT.Mazur.PullbackOverlapBaseChange
 public import FLT.Mazur.PuncturedNodeRestrictionComparison
 public import FLT.Mazur.PushforwardCech
