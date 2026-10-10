@@ -4104,6 +4104,7 @@ public import FLT.Mazur.GradedProjStructuralNaturality
 public import FLT.Mazur.GradedProjUnitChart
 public import FLT.Mazur.GradedProjUnitChartMap
 public import FLT.Mazur.GradedProjUnitChartOpens
+public import FLT.Mazur.GradedProjZeroMapNaturality
 public import FLT.Mazur.GradedQuotientTensorComparison
 public import FLT.Mazur.GroupMarkingBaseChange
 public import FLT.Mazur.GroupMarkingBaseChangeInverse
