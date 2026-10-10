@@ -3000,6 +3000,7 @@ public import FLT.Mazur.CartesianUpperCone
 public import FLT.Mazur.CartierAbelDirectImageSections
 public import FLT.Mazur.CartierAbelFiber
 public import FLT.Mazur.CartierAbelIntegralFiberSections
+public import FLT.Mazur.CartierAbelPulledSectionAdjoint
 public import FLT.Mazur.CartierAbelRelativeBaseChange
 public import FLT.Mazur.CartierAbelRelativeQuotient
 public import FLT.Mazur.CartierAbelSectionQuotient
@@ -3265,6 +3266,8 @@ public import FLT.Mazur.CyclicProductEndpoints
 public import FLT.Mazur.CyclicProductNormalization
 public import FLT.Mazur.DRFiberClassification
 public import FLT.Mazur.DedekindPointExtension
+public import FLT.Mazur.DirectImageBaseChangeAdjoints
+public import FLT.Mazur.DirectImageBaseChangeMate
 public import FLT.Mazur.DirectImageInjectives
 public import FLT.Mazur.DirectSumLocalization
 public import FLT.Mazur.DisjointClosedCoproduct
@@ -4540,6 +4543,8 @@ public import FLT.Mazur.LineTensorEquivalence
 public import FLT.Mazur.LineTensorInverseComparison
 public import FLT.Mazur.LineTensorInverseCompatibility
 public import FLT.Mazur.LineTensorSectionEquiv
+public import FLT.Mazur.LineTensorSectionPullback
+public import FLT.Mazur.LineTensorSectionTransport
 public import FLT.Mazur.LineTrivializationCocycle
 public import FLT.Mazur.LineTrivializationCocycleRecovery
 public import FLT.Mazur.LineTrivializationCoordinates
@@ -5500,6 +5505,7 @@ public import FLT.Mazur.ProperIntegralConstantSections
 public import FLT.Mazur.ProperLineFiberVanishing
 public import FLT.Mazur.ProperLinePushforwardBaseChange
 public import FLT.Mazur.ProperLinePushforwardLocalFree
+public import FLT.Mazur.ProperLinePushforwardMate
 public import FLT.Mazur.ProperLinePushforwardTilde
 public import FLT.Mazur.ProperLineSectionProjective
 public import FLT.Mazur.ProperLineSheafDescent
@@ -5510,6 +5516,7 @@ public import FLT.Mazur.ProperOnlyAmpleFiberNeighborhood
 public import FLT.Mazur.ProperOnlyRelativeAmpleFibers
 public import FLT.Mazur.ProperPointExtension
 public import FLT.Mazur.ProperPointedLineSheafDescent
+public import FLT.Mazur.ProperPushforwardReconstructionUnit
 public import FLT.Mazur.ProperRelativeEvaluationLocus
 public import FLT.Mazur.ProperRingCohomologyFinite
 public import FLT.Mazur.ProperSectionGluing
@@ -6152,6 +6159,7 @@ public import FLT.Mazur.TensorOpenExteriorIntersection
 public import FLT.Mazur.TensorPowerDistribution
 public import FLT.Mazur.TensorPowerGeneratorOpen
 public import FLT.Mazur.TensorPowerReassociation
+public import FLT.Mazur.TensorPullbackComposition
 public import FLT.Mazur.TernaryOpenDescent
 public import FLT.Mazur.TildeFiniteFreeLocalization
 public import FLT.Mazur.TildeInvertibleLocal
