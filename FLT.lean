@@ -5733,6 +5733,7 @@ public import FLT.Mazur.WeierstrassDividedOlderGlobalInfinityIntersection
 public import FLT.Mazur.WeierstrassDividedOlderGlobalNodeComponents
 public import FLT.Mazur.WeierstrassDividedOlderGlobalResidueNodes
 public import FLT.Mazur.WeierstrassDividedOlderGlobalTensorCharts
+public import FLT.Mazur.WeierstrassDividedOlderGlobalZeroBoundaries
 public import FLT.Mazur.WeierstrassDividedOlderGlobalZeroComponents
 public import FLT.Mazur.WeierstrassDividedOlderGlobalZeroConic
 public import FLT.Mazur.WeierstrassDividedOlderGlobalZeroNodes
