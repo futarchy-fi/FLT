@@ -7916,6 +7916,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXMiddleIntersection
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleLines
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodeBranches
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodeCoordinates
+public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodeEqualizer
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodeEquiv
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodeMaps
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodeOrigin
