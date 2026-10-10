@@ -4094,6 +4094,7 @@ public import FLT.Mazur.GradedProjBaseChangeMap
 public import FLT.Mazur.GradedProjChartArbitraryBaseChange
 public import FLT.Mazur.GradedProjPositiveBasis
 public import FLT.Mazur.GradedProjRingEquiv
+public import FLT.Mazur.GradedProjRingEquivNaturality
 public import FLT.Mazur.GradedProjStructuralMap
 public import FLT.Mazur.GradedProjStructuralNaturality
 public import FLT.Mazur.GradedProjUnitChart
