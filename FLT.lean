@@ -5128,6 +5128,7 @@ public import FLT.Mazur.PolygonSmoothingLeftPuncture
 public import FLT.Mazur.PolygonSmoothingQuadraticModel
 public import FLT.Mazur.PolygonSmoothingRing
 public import FLT.Mazur.PolygonSmoothingSpecialFiber
+public import FLT.Mazur.PolygonSmoothingTransition
 public import FLT.Mazur.PolygonSplitGeneratorIdentities
 public import FLT.Mazur.PolygonSplitGroup
 public import FLT.Mazur.PolygonSplitInterpolationEquations
