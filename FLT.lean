@@ -7563,6 +7563,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXMiddleOverlap
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleSecondNode
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleTangentSwitch
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleUnion
+public import FLT.Mazur.WeierstrassSuccessiveXMiddleZeroNode
 public import FLT.Mazur.WeierstrassSuccessiveXMonic
 public import FLT.Mazur.WeierstrassSuccessiveXMonicComparison
 public import FLT.Mazur.WeierstrassSuccessiveXOverlap
