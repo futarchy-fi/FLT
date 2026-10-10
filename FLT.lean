@@ -4104,6 +4104,7 @@ public import FLT.Mazur.GradedProjStructuralNaturality
 public import FLT.Mazur.GradedProjUnitChart
 public import FLT.Mazur.GradedProjUnitChartMap
 public import FLT.Mazur.GradedProjUnitChartOpens
+public import FLT.Mazur.GradedProjZeroMapNaturality
 public import FLT.Mazur.GradedQuotientTensorComparison
 public import FLT.Mazur.GroupMarkingBaseChange
 public import FLT.Mazur.GroupMarkingBaseChangeInverse
@@ -5253,6 +5254,8 @@ public import FLT.Mazur.PolygonOneGonPuncturedPullback
 public import FLT.Mazur.PolygonOneGonRefinementCover
 public import FLT.Mazur.PolygonOneGonRefinementValue
 public import FLT.Mazur.PolygonOneGonTorusIntersection
+public import FLT.Mazur.PolygonOriginalAdicRealization
+public import FLT.Mazur.PolygonOriginalStageAdicSquare
 public import FLT.Mazur.PolygonPinchingAffineBaseChange
 public import FLT.Mazur.PolygonPinchingDiagram
 public import FLT.Mazur.PolygonPinchingFlatBaseChange
@@ -5269,6 +5272,7 @@ public import FLT.Mazur.PolygonProper
 public import FLT.Mazur.PolygonPuncturedCanonicalEquations
 public import FLT.Mazur.PolygonPureDimension
 public import FLT.Mazur.PolygonRefinedClosedCharts
+public import FLT.Mazur.PolygonRetainedStageMarkings
 public import FLT.Mazur.PolygonScaledReciprocal
 public import FLT.Mazur.PolygonScalingNaturality
 public import FLT.Mazur.PolygonSectionRingFunctor
@@ -5315,7 +5319,9 @@ public import FLT.Mazur.PolygonStageLineQuotient
 public import FLT.Mazur.PolygonStageLineSectionFlat
 public import FLT.Mazur.PolygonStageParameterSections
 public import FLT.Mazur.PolygonStageRestrictionIdeal
+public import FLT.Mazur.PolygonStageRetainedBaseComparison
 public import FLT.Mazur.PolygonStageRetainedCanonicalMap
+public import FLT.Mazur.PolygonStageRetainedNaturality
 public import FLT.Mazur.PolygonStageRetainedRecovery
 public import FLT.Mazur.PolygonStageScalarComparison
 public import FLT.Mazur.PolygonStageVeroneseGrading
@@ -5951,6 +5957,7 @@ public import FLT.Mazur.RetainedLineOriginalTwist
 public import FLT.Mazur.RetainedLineSectionPullback
 public import FLT.Mazur.RetainedLineSectionPullbackIso
 public import FLT.Mazur.RetainedLineTwistedSection
+public import FLT.Mazur.RetainedSubringGradedMap
 public import FLT.Mazur.RetainedSubringGrading
 public import FLT.Mazur.RetainedSubringLocalization
 public import FLT.Mazur.RetainedSubringZeroRing
@@ -6374,14 +6381,20 @@ public import FLT.Mazur.SectionKernelLocal
 public import FLT.Mazur.SectionLineChartOverlap
 public import FLT.Mazur.SectionLinePointBaseChange
 public import FLT.Mazur.SectionLinePointOverlapEquality
+public import FLT.Mazur.SectionLinePullbackFraction
 public import FLT.Mazur.SectionPowerGluing
 public import FLT.Mazur.SectionProjectiveFiniteNeighborhood
 public import FLT.Mazur.SectionProjectiveImmersion
 public import FLT.Mazur.SectionRetainedChartComparison
 public import FLT.Mazur.SectionRetainedChartMorphism
+public import FLT.Mazur.SectionRetainedFractionEquation
+public import FLT.Mazur.SectionRetainedFractionUniqueness
+public import FLT.Mazur.SectionRetainedLineEvaluation
+public import FLT.Mazur.SectionRetainedProjBaseCoefficients
 public import FLT.Mazur.SectionRetainedProjChart
 public import FLT.Mazur.SectionRetainedProjConstruction
 public import FLT.Mazur.SectionRetainedProjGluing
+public import FLT.Mazur.SectionRetainedProjNaturality
 public import FLT.Mazur.SectionRetainedProjOfAmple
 public import FLT.Mazur.SectionRetainedProjOpens
 public import FLT.Mazur.SectionRetainedProjStructuralMap
@@ -6765,6 +6778,7 @@ public import FLT.Mazur.WeierstrassDividedAdjacentExtendedEmptyIntersections
 public import FLT.Mazur.WeierstrassDividedAdjacentExtendedParameterIntersection
 public import FLT.Mazur.WeierstrassDividedAdjacentFullConicIntersection
 public import FLT.Mazur.WeierstrassDividedAdjacentGlobalPunctures
+public import FLT.Mazur.WeierstrassDividedAdjacentIndexedIntersection
 public import FLT.Mazur.WeierstrassDividedAdjacentIntegralBoundary
 public import FLT.Mazur.WeierstrassDividedAdjacentNormalizedIntersection
 public import FLT.Mazur.WeierstrassDividedAdjacentOrderedConicIntersection
@@ -6773,6 +6787,7 @@ public import FLT.Mazur.WeierstrassDividedAdjacentPairIntersections
 public import FLT.Mazur.WeierstrassDividedAdjacentParameterIntersection
 public import FLT.Mazur.WeierstrassDividedAdjacentParameterOrigins
 public import FLT.Mazur.WeierstrassDividedAdjacentParameterStructure
+public import FLT.Mazur.WeierstrassDividedAdjacentPunctureCompatibility
 public import FLT.Mazur.WeierstrassDividedAdjacentRetainedComponents
 public import FLT.Mazur.WeierstrassDividedAdjacentRetainedExterior
 public import FLT.Mazur.WeierstrassDividedAdjacentRetainedIntegral
@@ -7066,6 +7081,9 @@ public import FLT.Mazur.WeierstrassDividedZeroCycleHomExt
 public import FLT.Mazur.WeierstrassDividedZeroCycleIndexedExt
 public import FLT.Mazur.WeierstrassDividedZeroCycleIndices
 public import FLT.Mazur.WeierstrassDividedZeroCycleLocalMaps
+public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveAtlasBranches
+public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveAtlasNodes
+public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveBranchOverlaps
 public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveConicBranches
 public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveDescent
 public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveExt
@@ -7073,6 +7091,7 @@ public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveIndexedMap
 public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveLineBranches
 public import FLT.Mazur.WeierstrassDividedZeroCycleTerminalExt
 public import FLT.Mazur.WeierstrassDividedZeroCycleTerminalMap
+public import FLT.Mazur.WeierstrassDividedZeroCycleZeroAtlasConics
 public import FLT.Mazur.WeierstrassDividedZeroCycleZeroIndexedMap
 public import FLT.Mazur.WeierstrassDividedZeroExteriorCoverage
 public import FLT.Mazur.WeierstrassDividedZeroExteriorCurve
@@ -7753,6 +7772,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXBaseChangeCoordinates
 public import FLT.Mazur.WeierstrassSuccessiveXCoefficients
 public import FLT.Mazur.WeierstrassSuccessiveXConicBoundaryCoordinates
 public import FLT.Mazur.WeierstrassSuccessiveXConicPunctureCompatibility
+public import FLT.Mazur.WeierstrassSuccessiveXConicPunctureDescent
 public import FLT.Mazur.WeierstrassSuccessiveXConicPunctureInclusion
 public import FLT.Mazur.WeierstrassSuccessiveXConicPuncturedParameters
 public import FLT.Mazur.WeierstrassSuccessiveXContraction
