@@ -5329,6 +5329,7 @@ public import FLT.Mazur.PolygonOriginalAffineQuotient
 public import FLT.Mazur.PolygonOriginalAffineScalars
 public import FLT.Mazur.PolygonOriginalAffineTransition
 public import FLT.Mazur.PolygonOriginalBoundarySectionReconstruction
+public import FLT.Mazur.PolygonOriginalCompletionAlgebra
 public import FLT.Mazur.PolygonOriginalStageAdicSquare
 public import FLT.Mazur.PolygonPinchingAffineBaseChange
 public import FLT.Mazur.PolygonPinchingDiagram
