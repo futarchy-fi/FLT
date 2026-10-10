@@ -6831,6 +6831,7 @@ public import FLT.Mazur.WeierstrassDividedOlderResidueNodes
 public import FLT.Mazur.WeierstrassDividedOlderSplitNodeCover
 public import FLT.Mazur.WeierstrassDividedOlderSuccessiveCharts
 public import FLT.Mazur.WeierstrassDividedOlderZeroConicParameters
+public import FLT.Mazur.WeierstrassDividedOlderZeroEqualizerCover
 public import FLT.Mazur.WeierstrassDividedOlderZeroExtendedGeometry
 public import FLT.Mazur.WeierstrassDividedOlderZeroExtendedOrigins
 public import FLT.Mazur.WeierstrassDividedOlderZeroExtendedSections
