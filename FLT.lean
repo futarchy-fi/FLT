@@ -2844,6 +2844,8 @@ public import FLT.Mazur.AmplePreimageSectionCover
 public import FLT.Mazur.AmplePrincipalLocality
 public import FLT.Mazur.AmpleSectionCoverPullback
 public import FLT.Mazur.AmpleTwistedSectionLifting
+public import FLT.Mazur.AmpleVeroneseEvaluation
+public import FLT.Mazur.AmpleVeroneseMultiplication
 public import FLT.Mazur.AnnihilatorCoherence
 public import FLT.Mazur.AnnihilatorStalk
 public import FLT.Mazur.AnnihilatorSubsheaf
@@ -3800,6 +3802,7 @@ public import FLT.Mazur.FiniteFreePullbackFrame
 public import FLT.Mazur.FiniteFreeQuotientIdealPresentation
 public import FLT.Mazur.FiniteFreeRefinementPullback
 public import FLT.Mazur.FiniteFreeSectionLineTransport
+public import FLT.Mazur.FiniteFreeTensorSections
 public import FLT.Mazur.FiniteGeometricSections
 public import FLT.Mazur.FiniteGroupAffineNeighborhood
 public import FLT.Mazur.FiniteGroupAffineQuotient
@@ -5293,13 +5296,20 @@ public import FLT.Mazur.PolygonTranslationImages
 public import FLT.Mazur.PolygonUniversalAction
 public import FLT.Mazur.PolygonUniversalScaling
 public import FLT.Mazur.PolygonVeroneseAdicReduction
+public import FLT.Mazur.PolygonVeroneseBoundedGenerators
 public import FLT.Mazur.PolygonVeroneseClosedGeneration
+public import FLT.Mazur.PolygonVeroneseClosedLifts
 public import FLT.Mazur.PolygonVeroneseDegreeComplete
 public import FLT.Mazur.PolygonVeroneseDegreeExactness
 public import FLT.Mazur.PolygonVeroneseDegreeFinite
 public import FLT.Mazur.PolygonVeroneseEvaluationKernel
+public import FLT.Mazur.PolygonVeroneseFiniteType
+public import FLT.Mazur.PolygonVeroneseGrading
 public import FLT.Mazur.PolygonVeroneseHomogeneousReduction
 public import FLT.Mazur.PolygonVeroneseParameterIdeal
+public import FLT.Mazur.PolygonVeroneseProductLifting
+public import FLT.Mazur.PolygonVeroneseProperProj
+public import FLT.Mazur.PolygonVeroneseZeroRing
 public import FLT.Mazur.PolynomialAffineIdealDegree
 public import FLT.Mazur.PolynomialCoefficientArrow
 public import FLT.Mazur.PolynomialEndpointInterpolation
@@ -6441,6 +6451,7 @@ public import FLT.Mazur.TildeSourceSectionComparison
 public import FLT.Mazur.TorusChartScalars
 public import FLT.Mazur.TrivialLineTwistLocalization
 public import FLT.Mazur.TrivializedLineSheafLimitDescent
+public import FLT.Mazur.TwistedEvaluationSectionSum
 public import FLT.Mazur.TwistedSectionBaseChange
 public import FLT.Mazur.TwistedSectionBaseChangeRegularity
 public import FLT.Mazur.TwistedSectionBaseLineNaturality
