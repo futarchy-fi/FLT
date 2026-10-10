@@ -5679,6 +5679,7 @@ public import FLT.Mazur.ProperFamilyAtlasRecovery
 public import FLT.Mazur.ProperFamilyLineClassification
 public import FLT.Mazur.ProperFamilyOriginalSectionRecovery
 public import FLT.Mazur.ProperFamilyOriginalZeroIdeal
+public import FLT.Mazur.ProperFamilySectionOrbits
 public import FLT.Mazur.ProperFamilySectionPullback
 public import FLT.Mazur.ProperFamilySplitDirectImageSections
 public import FLT.Mazur.ProperFamilyTwistedRecovery
