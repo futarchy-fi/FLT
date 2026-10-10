@@ -2999,6 +2999,7 @@ public import FLT.Mazur.CartesianStructureTensorRestrictions
 public import FLT.Mazur.CartesianUpperCone
 public import FLT.Mazur.CartierAbelFiber
 public import FLT.Mazur.CartierAbelRelativeBaseChange
+public import FLT.Mazur.CartierAbelRelativeQuotient
 public import FLT.Mazur.CartierAbelSectionQuotient
 public import FLT.Mazur.CartierAbelTwistBaseChange
 public import FLT.Mazur.CartierAbelTwistedSections
