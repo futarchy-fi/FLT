@@ -5277,6 +5277,7 @@ public import FLT.Mazur.PrincipalOpenNormalization
 public import FLT.Mazur.PrincipalOpenSectionAlgebra
 public import FLT.Mazur.PrincipalOpenTensor
 public import FLT.Mazur.PrincipalOpenTensorGeometry
+public import FLT.Mazur.PrincipalOpenTensorPullback
 public import FLT.Mazur.PrincipalOpenTensorTransition
 public import FLT.Mazur.PrincipalOpenTensorTransitionBase
 public import FLT.Mazur.PrincipalOpenTransport
@@ -6087,10 +6088,12 @@ public import FLT.Mazur.TensorKernelFiniteLength
 public import FLT.Mazur.TensorKernelFlatCokernel
 public import FLT.Mazur.TensorOpenChart
 public import FLT.Mazur.TensorOpenChartCommonBoundary
+public import FLT.Mazur.TensorOpenChartCommonIntersection
 public import FLT.Mazur.TensorOpenChartIntersection
 public import FLT.Mazur.TensorOpenChartOverlap
 public import FLT.Mazur.TensorOpenChartRange
 public import FLT.Mazur.TensorOpenChartTargetTransport
+public import FLT.Mazur.TensorOpenChartVanishingSeparation
 public import FLT.Mazur.TensorOpenExteriorIntersection
 public import FLT.Mazur.TensorPowerDistribution
 public import FLT.Mazur.TensorPowerGeneratorOpen
@@ -6267,6 +6270,7 @@ public import FLT.Mazur.WeierstrassDividedAdjacentRetainedIntegral
 public import FLT.Mazur.WeierstrassDividedAdjacentRetainedIntersection
 public import FLT.Mazur.WeierstrassDividedAdjacentRetainedPunctures
 public import FLT.Mazur.WeierstrassDividedAdjacentRetainedTensor
+public import FLT.Mazur.WeierstrassDividedAdjacentRetainedTensorIntersection
 public import FLT.Mazur.WeierstrassDividedAdjacentTensorBoundary
 public import FLT.Mazur.WeierstrassDividedBoundaryNormalization
 public import FLT.Mazur.WeierstrassDividedDepthAffine
@@ -6352,6 +6356,9 @@ public import FLT.Mazur.WeierstrassDividedInitialResidueAtlas
 public import FLT.Mazur.WeierstrassDividedInitialTensorChart
 public import FLT.Mazur.WeierstrassDividedInitialZeroInfinity
 public import FLT.Mazur.WeierstrassDividedInitialZeroSlopeChart
+public import FLT.Mazur.WeierstrassDividedLocalizedIntersection
+public import FLT.Mazur.WeierstrassDividedNonadjacentGlobalIntersection
+public import FLT.Mazur.WeierstrassDividedNonadjacentTensorIntersection
 public import FLT.Mazur.WeierstrassDividedOlderAtlasIndex
 public import FLT.Mazur.WeierstrassDividedOlderConicExteriorDisjoint
 public import FLT.Mazur.WeierstrassDividedOlderConicPunctures
@@ -6397,6 +6404,7 @@ public import FLT.Mazur.WeierstrassDividedOlderZeroExtendedGeometry
 public import FLT.Mazur.WeierstrassDividedOlderZeroExtendedOrigins
 public import FLT.Mazur.WeierstrassDividedOlderZeroExtendedSections
 public import FLT.Mazur.WeierstrassDividedOlderZeroIndexedNodeCover
+public import FLT.Mazur.WeierstrassDividedOppositeBoundarySupport
 public import FLT.Mazur.WeierstrassDividedPreviousBoundaryAlgebra
 public import FLT.Mazur.WeierstrassDividedResidueAtlasExtension
 public import FLT.Mazur.WeierstrassDividedResidueAtlasFinite
@@ -6404,6 +6412,9 @@ public import FLT.Mazur.WeierstrassDividedResidueAtlasRefinement
 public import FLT.Mazur.WeierstrassDividedResidueMiddleIntersection
 public import FLT.Mazur.WeierstrassDividedRetainedExteriorIntersection
 public import FLT.Mazur.WeierstrassDividedRetentionSuccessor
+public import FLT.Mazur.WeierstrassDividedSkippedAtlasRange
+public import FLT.Mazur.WeierstrassDividedSkippedChartSupport
+public import FLT.Mazur.WeierstrassDividedSkippedTensorIntersection
 public import FLT.Mazur.WeierstrassDividedSuccessiveOriginalY
 public import FLT.Mazur.WeierstrassDividedTensorAtlasComparison
 public import FLT.Mazur.WeierstrassDividedTensorYBoundary
