@@ -2592,6 +2592,7 @@ public import FLT.Mazur.AffineFreeSheafCoordinateNormalization
 public import FLT.Mazur.AffineFreeSheafCoordinatePullback
 public import FLT.Mazur.AffineFreeSheafCoordinates
 public import FLT.Mazur.AffineFreeSheafSectionCoordinates
+public import FLT.Mazur.AffineGeneratorPointCoefficientTransport
 public import FLT.Mazur.AffineGeneratorPointLinearTransport
 public import FLT.Mazur.AffineGenericClosure
 public import FLT.Mazur.AffineGeometricChartDatum
