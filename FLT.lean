@@ -6220,6 +6220,7 @@ public import FLT.Mazur.WeierstrassDividedAdjacentConicExterior
 public import FLT.Mazur.WeierstrassDividedAdjacentGlobalPunctures
 public import FLT.Mazur.WeierstrassDividedAdjacentIntegralBoundary
 public import FLT.Mazur.WeierstrassDividedAdjacentRetainedIntegral
+public import FLT.Mazur.WeierstrassDividedAdjacentRetainedPunctures
 public import FLT.Mazur.WeierstrassDividedAdjacentRetainedTensor
 public import FLT.Mazur.WeierstrassDividedAdjacentTensorBoundary
 public import FLT.Mazur.WeierstrassDividedBoundaryNormalization
