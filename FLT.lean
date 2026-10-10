@@ -6395,6 +6395,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXParameterEquiv
 public import FLT.Mazur.WeierstrassSuccessiveXReesChart
 public import FLT.Mazur.WeierstrassSuccessiveXReesScheme
 public import FLT.Mazur.WeierstrassSuccessiveXResidueComponentPoints
+public import FLT.Mazur.WeierstrassSuccessiveXResidueConicBoundaryGeometry
 public import FLT.Mazur.WeierstrassSuccessiveXResidueDividedOverlap
 public import FLT.Mazur.WeierstrassSuccessiveXResidueFiber
 public import FLT.Mazur.WeierstrassSuccessiveXResidueIncidencePoints
