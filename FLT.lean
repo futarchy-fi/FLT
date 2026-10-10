@@ -4575,6 +4575,7 @@ public import FLT.Mazur.LineTensorInverseCompatibility
 public import FLT.Mazur.LineTensorSectionEquiv
 public import FLT.Mazur.LineTensorSectionPullback
 public import FLT.Mazur.LineTensorSectionTransport
+public import FLT.Mazur.LineTensorSourceNaturality
 public import FLT.Mazur.LineTrivializationCocycle
 public import FLT.Mazur.LineTrivializationCocycleRecovery
 public import FLT.Mazur.LineTrivializationCoordinates
