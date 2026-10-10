@@ -2643,6 +2643,7 @@ public import FLT.Mazur.AffineLiftedOverlapCoefficients
 public import FLT.Mazur.AffineLineCoalgebraDescent
 public import FLT.Mazur.AffineLineCoefficients
 public import FLT.Mazur.AffineLineTwistLocalization
+public import FLT.Mazur.AffineLocalFiberRegularQuotient
 public import FLT.Mazur.AffineModuleCoalgebraDescent
 public import FLT.Mazur.AffineModuleEpimorphisms
 public import FLT.Mazur.AffineModuleExact
@@ -3688,6 +3689,7 @@ public import FLT.Mazur.FamilyTransport
 public import FLT.Mazur.FiberAffineOpenBaseChange
 public import FLT.Mazur.FiberAffineOpenBaseIso
 public import FLT.Mazur.FiberCohomologyTensorExactness
+public import FLT.Mazur.FiberwiseRegularFlatQuotient
 public import FLT.Mazur.FieldCoefficientCohomologyDimension
 public import FLT.Mazur.FilteredDiagramSectionDescent
 public import FLT.Mazur.FilteredDiagramUnitDescent
@@ -3964,6 +3966,7 @@ public import FLT.Mazur.FlatCartesianSectionGluing
 public import FLT.Mazur.FlatCoefficientAllCohomology
 public import FLT.Mazur.FlatCoefficientCohomology
 public import FLT.Mazur.FlatCoefficientSections
+public import FLT.Mazur.FlatCokernelResidueIdeals
 public import FLT.Mazur.FlatCokernelStep
 public import FLT.Mazur.FlatFiniteEqualizer
 public import FLT.Mazur.FlatGlobalFunctionsPushout
@@ -4443,6 +4446,7 @@ public import FLT.Mazur.IncreasingCechZeroCoordinates
 public import FLT.Mazur.IncreasingCechZeroRestriction
 public import FLT.Mazur.IncreasingCechZeroSections
 public import FLT.Mazur.InfinitesimalClosedFiberFunctions
+public import FLT.Mazur.InfinitesimalCoefficientLength
 public import FLT.Mazur.InfinitesimalStructureProjection
 public import FLT.Mazur.InjectiveHorseshoe
 public import FLT.Mazur.IntegerModelAffineProperDescent
@@ -4572,6 +4576,8 @@ public import FLT.Mazur.LocalClosedFiberBaseChange
 public import FLT.Mazur.LocalClosedFiberConnectedness
 public import FLT.Mazur.LocalClosedFiberTensorComplex
 public import FLT.Mazur.LocalClosedFiberUniversalFunctions
+public import FLT.Mazur.LocalFiberRegularQuotient
+public import FLT.Mazur.LocalFiberTensorInjectivity
 public import FLT.Mazur.LocalLineTwistLocalization
 public import FLT.Mazur.LocalLocalizationCartier
 public import FLT.Mazur.LocalizationCech
@@ -5163,6 +5169,7 @@ public import FLT.Mazur.PowerSeriesSubstitutionEquiv
 public import FLT.Mazur.PresentedFiniteCoefficientBranch
 public import FLT.Mazur.PrimeCharacteristicScalar
 public import FLT.Mazur.PrimeCoefficientLocalization
+public import FLT.Mazur.PrimeLocalFiberRegularQuotient
 public import FLT.Mazur.PrimeQuasiFiniteSmoothCartier
 public import FLT.Mazur.PrimeSmoothFiniteFlatCartier
 public import FLT.Mazur.PrimeSmoothLocalizationCartier
@@ -5650,6 +5657,7 @@ public import FLT.Mazur.RelativeSerreVanishing
 public import FLT.Mazur.RelativeSums
 public import FLT.Mazur.RelativeVeryAmpleLineBundle
 public import FLT.Mazur.RepeatedCubicRoots
+public import FLT.Mazur.ResidueFiberRegularLocalization
 public import FLT.Mazur.ResidueNonvanishingLocallySplit
 public import FLT.Mazur.ResidueNonvanishingOpenPullback
 public import FLT.Mazur.ResiduePullbackNonvanishingTransport
@@ -6161,7 +6169,9 @@ public import FLT.Mazur.SurjectivePolynomialArrowRepresentatives
 public import FLT.Mazur.SurjectiveStructureSupport
 public import FLT.Mazur.SurjectiveTowerLifting
 public import FLT.Mazur.SymmetricAffineLineParameters
+public import FLT.Mazur.TensorAdicSeparation
 public import FLT.Mazur.TensorEvaluationSemilinear
+public import FLT.Mazur.TensorInjectivityFiniteLength
 public import FLT.Mazur.TensorIntegerModelClosedImmersion
 public import FLT.Mazur.TensorIntegerModelMap
 public import FLT.Mazur.TensorIntegerModelPresentation
@@ -6543,18 +6553,27 @@ public import FLT.Mazur.WeierstrassDividedInitialConicParameters
 public import FLT.Mazur.WeierstrassDividedInitialExtendedOrigins
 public import FLT.Mazur.WeierstrassDividedInitialExtendedSections
 public import FLT.Mazur.WeierstrassDividedInitialExterior
+public import FLT.Mazur.WeierstrassDividedInitialExteriorCurve
 public import FLT.Mazur.WeierstrassDividedInitialGlobalResidueNodes
 public import FLT.Mazur.WeierstrassDividedInitialGlobalSections
 public import FLT.Mazur.WeierstrassDividedInitialGlobalTensorChart
+public import FLT.Mazur.WeierstrassDividedInitialIncidenceInfinity
+public import FLT.Mazur.WeierstrassDividedInitialIncidenceLine
 public import FLT.Mazur.WeierstrassDividedInitialIndexedNodeCover
+public import FLT.Mazur.WeierstrassDividedInitialInfinityPreimage
 public import FLT.Mazur.WeierstrassDividedInitialLineBoundary
+public import FLT.Mazur.WeierstrassDividedInitialLineIntersection
+public import FLT.Mazur.WeierstrassDividedInitialParameterIntersection
 public import FLT.Mazur.WeierstrassDividedInitialParameterOverlap
 public import FLT.Mazur.WeierstrassDividedInitialPrecedingExterior
 public import FLT.Mazur.WeierstrassDividedInitialProjectiveComponents
 public import FLT.Mazur.WeierstrassDividedInitialResidueAtlas
 public import FLT.Mazur.WeierstrassDividedInitialRetainedBoundary
+public import FLT.Mazur.WeierstrassDividedInitialRetainedIntersection
 public import FLT.Mazur.WeierstrassDividedInitialTensorBoundary
 public import FLT.Mazur.WeierstrassDividedInitialTensorChart
+public import FLT.Mazur.WeierstrassDividedInitialTensorInfinityIntersection
+public import FLT.Mazur.WeierstrassDividedInitialTensorIntersection
 public import FLT.Mazur.WeierstrassDividedInitialZeroInfinity
 public import FLT.Mazur.WeierstrassDividedInitialZeroSlopeChart
 public import FLT.Mazur.WeierstrassDividedLocalizedIntersection
@@ -6955,6 +6974,7 @@ public import FLT.Mazur.WeierstrassModificationXFullNodeOrigin
 public import FLT.Mazur.WeierstrassModificationXFullSecondNode
 public import FLT.Mazur.WeierstrassModificationXFullSecondNodeBranches
 public import FLT.Mazur.WeierstrassModificationXGenerators
+public import FLT.Mazur.WeierstrassModificationXIncidenceLineSections
 public import FLT.Mazur.WeierstrassModificationXIncidenceRegular
 public import FLT.Mazur.WeierstrassModificationXIncidenceSectionMaps
 public import FLT.Mazur.WeierstrassModificationXLocalization
@@ -6972,6 +6992,7 @@ public import FLT.Mazur.WeierstrassModificationXResidueFullNodeFunctions
 public import FLT.Mazur.WeierstrassModificationXResidueFullNodeGeometry
 public import FLT.Mazur.WeierstrassModificationXResidueGeneratorReduction
 public import FLT.Mazur.WeierstrassModificationXResidueIncidenceContraction
+public import FLT.Mazur.WeierstrassModificationXResidueInfinityBoundary
 public import FLT.Mazur.WeierstrassModificationXResidueLinesGenerators
 public import FLT.Mazur.WeierstrassModificationXResidueNamedGenerators
 public import FLT.Mazur.WeierstrassModificationXResidueNodeCoordinateMaps
