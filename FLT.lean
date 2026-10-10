@@ -5054,6 +5054,9 @@ public import FLT.Mazur.PointedCurveLargeDegree
 public import FLT.Mazur.PointedCurveUniformAcyclicity
 public import FLT.Mazur.PointedCurveUniformRiemannRoch
 public import FLT.Mazur.PointedFieldGeometricConnectedness
+public import FLT.Mazur.PointedPicardBaseChange
+public import FLT.Mazur.PointedPicardFppfComparison
+public import FLT.Mazur.PointedPicardKernelPresheaf
 public import FLT.Mazur.PointedPicardNormalization
 public import FLT.Mazur.PointedStructureModuleComparison
 public import FLT.Mazur.PolygonActionAssociativity
@@ -5775,6 +5778,8 @@ public import FLT.Mazur.ProperFamilyOriginalZeroIdeal
 public import FLT.Mazur.ProperFamilyPrescribedComposition
 public import FLT.Mazur.ProperFamilyPrescribedIdentity
 public import FLT.Mazur.ProperFamilyRepresentedDivisor
+public import FLT.Mazur.ProperFamilyRigidifiedComparisons
+public import FLT.Mazur.ProperFamilyRigidifiedLocalRepresentatives
 public import FLT.Mazur.ProperFamilySectionCoherence
 public import FLT.Mazur.ProperFamilySectionOrbits
 public import FLT.Mazur.ProperFamilySectionPullback
@@ -5957,7 +5962,12 @@ public import FLT.Mazur.RetainedSubringGrading
 public import FLT.Mazur.RetainedSubringLocalization
 public import FLT.Mazur.RetainedSubringZeroRing
 public import FLT.Mazur.RightDerivedDimensionShift
+public import FLT.Mazur.RigidifiedLineIsomorphismExistence
 public import FLT.Mazur.RigidifiedLineIsomorphisms
+public import FLT.Mazur.RigidifiedPicardClasses
+public import FLT.Mazur.RigidifiedPicardFppfComparison
+public import FLT.Mazur.RigidifiedPicardPresheaf
+public import FLT.Mazur.RigidifiedPicardPullback
 public import FLT.Mazur.RingCohomologyFinitePushforward
 public import FLT.Mazur.RingEqualizerAwayEndpoint
 public import FLT.Mazur.RingEqualizerDescent
