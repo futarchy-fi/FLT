@@ -5509,6 +5509,7 @@ public import FLT.Mazur.StructureImageOpenChart
 public import FLT.Mazur.SuccessiveIncidenceAlgebra
 public import FLT.Mazur.SurjectiveAlgHomKernelEquiv
 public import FLT.Mazur.SurjectiveDominantEpi
+public import FLT.Mazur.SurjectiveKernelPushout
 public import FLT.Mazur.SurjectivePolynomialArrowRepresentatives
 public import FLT.Mazur.SurjectiveStructureSupport
 public import FLT.Mazur.SurjectiveTowerLifting
