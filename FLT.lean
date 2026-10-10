@@ -6554,6 +6554,7 @@ public import FLT.Mazur.WeierstrassDividedInitialExtendedOrigins
 public import FLT.Mazur.WeierstrassDividedInitialExtendedSections
 public import FLT.Mazur.WeierstrassDividedInitialExterior
 public import FLT.Mazur.WeierstrassDividedInitialExteriorCurve
+public import FLT.Mazur.WeierstrassDividedInitialExteriorLaurent
 public import FLT.Mazur.WeierstrassDividedInitialGlobalResidueNodes
 public import FLT.Mazur.WeierstrassDividedInitialGlobalSections
 public import FLT.Mazur.WeierstrassDividedInitialGlobalTensorChart
@@ -6570,6 +6571,7 @@ public import FLT.Mazur.WeierstrassDividedInitialProjectiveComponents
 public import FLT.Mazur.WeierstrassDividedInitialResidueAtlas
 public import FLT.Mazur.WeierstrassDividedInitialRetainedBoundary
 public import FLT.Mazur.WeierstrassDividedInitialRetainedIntersection
+public import FLT.Mazur.WeierstrassDividedInitialSlopeTransition
 public import FLT.Mazur.WeierstrassDividedInitialTensorBoundary
 public import FLT.Mazur.WeierstrassDividedInitialTensorChart
 public import FLT.Mazur.WeierstrassDividedInitialTensorInfinityIntersection
@@ -6998,6 +7000,8 @@ public import FLT.Mazur.WeierstrassModificationXResidueNamedGenerators
 public import FLT.Mazur.WeierstrassModificationXResidueNodeCoordinateMaps
 public import FLT.Mazur.WeierstrassModificationXResidueNodeFunctions
 public import FLT.Mazur.WeierstrassModificationXResidueNodeGeometry
+public import FLT.Mazur.WeierstrassModificationXResidueSlopeLaurent
+public import FLT.Mazur.WeierstrassModificationXResidueSlopeTransition
 public import FLT.Mazur.WeierstrassModificationXResidueTensorFunctions
 public import FLT.Mazur.WeierstrassModificationXSaturation
 public import FLT.Mazur.WeierstrassModificationXScaleOneEquiv
@@ -7170,6 +7174,8 @@ public import FLT.Mazur.WeierstrassScaledChartComparison
 public import FLT.Mazur.WeierstrassSecantMorphismExt
 public import FLT.Mazur.WeierstrassSingularJetObstruction
 public import FLT.Mazur.WeierstrassSingularJetTranslation
+public import FLT.Mazur.WeierstrassSlopeLaurentGeometry
+public import FLT.Mazur.WeierstrassSlopeLaurentLocalization
 public import FLT.Mazur.WeierstrassSlopeSwapFormula
 public import FLT.Mazur.WeierstrassSmoothAdditionCommutative
 public import FLT.Mazur.WeierstrassSmoothAdditionGluing
