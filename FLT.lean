@@ -6327,6 +6327,7 @@ public import FLT.Mazur.SectionLinePointOverlapEquality
 public import FLT.Mazur.SectionPowerGluing
 public import FLT.Mazur.SectionProjectiveFiniteNeighborhood
 public import FLT.Mazur.SectionProjectiveImmersion
+public import FLT.Mazur.SectionRetainedChartComparison
 public import FLT.Mazur.SectionSumFiberDegree
 public import FLT.Mazur.SectionSumFieldLength
 public import FLT.Mazur.SectionSumFinite
