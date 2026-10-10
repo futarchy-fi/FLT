@@ -3334,6 +3334,8 @@ public import FLT.Mazur.DualAtlasGeometricBaseChange
 public import FLT.Mazur.DualAtlasGeometricCartesian
 public import FLT.Mazur.DualAtlasGeometricReverseSquare
 public import FLT.Mazur.DualAtlasGeometricSectionPullback
+public import FLT.Mazur.DualAtlasLineClassification
+public import FLT.Mazur.DualAtlasLineQuotient
 public import FLT.Mazur.DualAtlasPulledFrameRefinement
 public import FLT.Mazur.DualAtlasSectionBaseNeighborhood
 public import FLT.Mazur.DualAtlasSectionChartPoints
@@ -4558,6 +4560,8 @@ public import FLT.Mazur.LineSectionZeroIdealOrbits
 public import FLT.Mazur.LineSectionZeroIdealPullback
 public import FLT.Mazur.LineSheafBidual
 public import FLT.Mazur.LineSheafDualEvaluation
+public import FLT.Mazur.LineSheafDualInvolution
+public import FLT.Mazur.LineSheafDualTriangle
 public import FLT.Mazur.LineSheafEndomorphismSheaf
 public import FLT.Mazur.LineSheafEvaluationBalance
 public import FLT.Mazur.LineSheafGlobalEndomorphisms
@@ -4573,6 +4577,7 @@ public import FLT.Mazur.LineTensorInverseCompatibility
 public import FLT.Mazur.LineTensorSectionEquiv
 public import FLT.Mazur.LineTensorSectionPullback
 public import FLT.Mazur.LineTensorSectionTransport
+public import FLT.Mazur.LineTensorSourceNaturality
 public import FLT.Mazur.LineTrivializationCocycle
 public import FLT.Mazur.LineTrivializationCocycleRecovery
 public import FLT.Mazur.LineTrivializationCoordinates
@@ -5066,6 +5071,13 @@ public import FLT.Mazur.PolygonHZeroIncidence
 public import FLT.Mazur.PolygonIdealModulePullback
 public import FLT.Mazur.PolygonIncidence
 public import FLT.Mazur.PolygonIncidenceQuotient
+public import FLT.Mazur.PolygonInfinitesimalAtlas
+public import FLT.Mazur.PolygonInfinitesimalDiagram
+public import FLT.Mazur.PolygonInfinitesimalFamily
+public import FLT.Mazur.PolygonInfinitesimalMarkings
+public import FLT.Mazur.PolygonInfinitesimalSeparated
+public import FLT.Mazur.PolygonInfinitesimalSpecialFiber
+public import FLT.Mazur.PolygonInfinitesimalStages
 public import FLT.Mazur.PolygonLineHZero
 public import FLT.Mazur.PolygonLineNodeRestriction
 public import FLT.Mazur.PolygonLineNormalization
@@ -5135,6 +5147,8 @@ public import FLT.Mazur.PolygonSmoothingBranchSwap
 public import FLT.Mazur.PolygonSmoothingFlat
 public import FLT.Mazur.PolygonSmoothingLeftPuncture
 public import FLT.Mazur.PolygonSmoothingMarkedSection
+public import FLT.Mazur.PolygonSmoothingNilpotentBranches
+public import FLT.Mazur.PolygonSmoothingOverlapGraph
 public import FLT.Mazur.PolygonSmoothingPunctureBaseChange
 public import FLT.Mazur.PolygonSmoothingQuadraticModel
 public import FLT.Mazur.PolygonSmoothingRing
@@ -5541,6 +5555,7 @@ public import FLT.Mazur.ProperAmpleFiberEnvelope
 public import FLT.Mazur.ProperAmpleFiberModel
 public import FLT.Mazur.ProperAmpleFiberNeighborhood
 public import FLT.Mazur.ProperAmpleFiberNoetherian
+public import FLT.Mazur.ProperAtlasAbelFiber
 public import FLT.Mazur.ProperClosedLimitDescent
 public import FLT.Mazur.ProperCoherentCohomology
 public import FLT.Mazur.ProperCohomologyFieldVanishing
@@ -5573,6 +5588,9 @@ public import FLT.Mazur.ProperOnlyRelativeAmpleFibers
 public import FLT.Mazur.ProperPointExtension
 public import FLT.Mazur.ProperPointedLineSheafDescent
 public import FLT.Mazur.ProperPushforwardReconstructionUnit
+public import FLT.Mazur.ProperRelativeCartierAtlas
+public import FLT.Mazur.ProperRelativeCartierAtlasQuotient
+public import FLT.Mazur.ProperRelativeCartierBaseOrbits
 public import FLT.Mazur.ProperRelativeEvaluationLocus
 public import FLT.Mazur.ProperRingCohomologyFinite
 public import FLT.Mazur.ProperSectionGluing
@@ -5583,6 +5601,7 @@ public import FLT.Mazur.ProperSmoothGenericFiberOpen
 public import FLT.Mazur.ProperSmoothLineRigidity
 public import FLT.Mazur.ProperSmoothPointedLineSheafDescent
 public import FLT.Mazur.ProperSmoothStructureSheaf
+public import FLT.Mazur.ProperSplitDirectImageSections
 public import FLT.Mazur.ProperSplitSectionFiberRegularity
 public import FLT.Mazur.ProperSplitSectionRelativeCartier
 public import FLT.Mazur.ProperStageAmpleFiberDescent
@@ -6237,6 +6256,7 @@ public import FLT.Mazur.TrivialLineTwistLocalization
 public import FLT.Mazur.TrivializedLineSheafLimitDescent
 public import FLT.Mazur.TwistedSectionBaseChange
 public import FLT.Mazur.TwistedSectionBaseChangeRegularity
+public import FLT.Mazur.TwistedSectionBaseLineNaturality
 public import FLT.Mazur.TwistedSectionIntegralCriterion
 public import FLT.Mazur.TwistedSectionPullbackMonicity
 public import FLT.Mazur.TwistedSectionPushforward
