@@ -5857,6 +5857,7 @@ public import FLT.Mazur.SplitLineCoordinateCover
 public import FLT.Mazur.SplitLineCoordinateNaturality
 public import FLT.Mazur.SplitLineImageChart
 public import FLT.Mazur.SplitLinePrincipalPoints
+public import FLT.Mazur.SplitLineProjectiveMorphism
 public import FLT.Mazur.StalkBaseClosedFiber
 public import FLT.Mazur.StalkBaseLocalization
 public import FLT.Mazur.StalkBaseNumeratorOpen
