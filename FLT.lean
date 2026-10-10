@@ -5485,6 +5485,7 @@ public import FLT.Mazur.ProjectiveLineCharts
 public import FLT.Mazur.ProjectiveLineCohomologyVanishing
 public import FLT.Mazur.ProjectiveLineConstantSections
 public import FLT.Mazur.ProjectiveLineEndpointCover
+public import FLT.Mazur.ProjectiveLineEndpointReversal
 public import FLT.Mazur.ProjectiveLineEndpoints
 public import FLT.Mazur.ProjectiveLineFieldExtension
 public import FLT.Mazur.ProjectiveLineHomogeneousCoordinates
@@ -5495,6 +5496,7 @@ public import FLT.Mazur.ProjectiveLineInfinityTorusMarks
 public import FLT.Mazur.ProjectiveLineInfinityTorusTransition
 public import FLT.Mazur.ProjectiveLineInteriorGenerator
 public import FLT.Mazur.ProjectiveLineInteriorRatios
+public import FLT.Mazur.ProjectiveLineMapRange
 public import FLT.Mazur.ProjectiveLineMarkedCharts
 public import FLT.Mazur.ProjectiveLineMarkedDualCoordinates
 public import FLT.Mazur.ProjectiveLineMarkedEndpointSections
@@ -6563,6 +6565,7 @@ public import FLT.Mazur.WeierstrassDividedExteriorStep
 public import FLT.Mazur.WeierstrassDividedExteriorYBoundary
 public import FLT.Mazur.WeierstrassDividedFinalAdjacentComponents
 public import FLT.Mazur.WeierstrassDividedFinalAdjacentOverComponents
+public import FLT.Mazur.WeierstrassDividedFinalBranchChains
 public import FLT.Mazur.WeierstrassDividedFinalInitialComponents
 public import FLT.Mazur.WeierstrassDividedFinalInitialNodesDistinct
 public import FLT.Mazur.WeierstrassDividedFinalNodeAdjacent
@@ -6575,6 +6578,7 @@ public import FLT.Mazur.WeierstrassDividedFinalNodesDistinct
 public import FLT.Mazur.WeierstrassDividedFinalRetainedNodesDistinct
 public import FLT.Mazur.WeierstrassDividedFinalTerminalComponents
 public import FLT.Mazur.WeierstrassDividedFinalTerminalOverComponents
+public import FLT.Mazur.WeierstrassDividedFinalZeroExterior
 public import FLT.Mazur.WeierstrassDividedFiniteAffineProper
 public import FLT.Mazur.WeierstrassDividedFiniteAtlas
 public import FLT.Mazur.WeierstrassDividedFiniteChartStructure
@@ -6733,6 +6737,7 @@ public import FLT.Mazur.WeierstrassDividedTensorYBoundary
 public import FLT.Mazur.WeierstrassDividedTerminalAllExteriorNodes
 public import FLT.Mazur.WeierstrassDividedTerminalBranchIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalBranchesNodeIntersection
+public import FLT.Mazur.WeierstrassDividedTerminalComponentRanges
 public import FLT.Mazur.WeierstrassDividedTerminalComponentStructure
 public import FLT.Mazur.WeierstrassDividedTerminalComponents
 public import FLT.Mazur.WeierstrassDividedTerminalConicBoundary
@@ -6758,6 +6763,7 @@ public import FLT.Mazur.WeierstrassDividedTerminalZeroConicIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalZeroCrossedIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalZeroNodalChart
 public import FLT.Mazur.WeierstrassDividedZeroBoundaryFunctions
+public import FLT.Mazur.WeierstrassDividedZeroCycleIndices
 public import FLT.Mazur.WeierstrassDividedZeroExteriorCoverage
 public import FLT.Mazur.WeierstrassDividedZeroExteriorCurve
 public import FLT.Mazur.WeierstrassDividedZeroExteriorLaurent
@@ -6770,6 +6776,9 @@ public import FLT.Mazur.WeierstrassDividedZeroNodalProjective
 public import FLT.Mazur.WeierstrassDividedZeroResidueAtlas
 public import FLT.Mazur.WeierstrassDividedZeroSlopeContraction
 public import FLT.Mazur.WeierstrassDividedZeroSlopeLaurent
+public import FLT.Mazur.WeierstrassDividedZeroSplitCocone
+public import FLT.Mazur.WeierstrassDividedZeroSplitCycle
+public import FLT.Mazur.WeierstrassDividedZeroSplitCycleRanges
 public import FLT.Mazur.WeierstrassEquationTransport
 public import FLT.Mazur.WeierstrassFieldChartPresentation
 public import FLT.Mazur.WeierstrassFiniteChartDescent
