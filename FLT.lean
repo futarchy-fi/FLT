@@ -5310,6 +5310,7 @@ public import FLT.Mazur.PolygonOneGonRefinementCover
 public import FLT.Mazur.PolygonOneGonRefinementValue
 public import FLT.Mazur.PolygonOneGonTorusIntersection
 public import FLT.Mazur.PolygonOriginalAdicRealization
+public import FLT.Mazur.PolygonOriginalBoundarySectionReconstruction
 public import FLT.Mazur.PolygonOriginalStageAdicSquare
 public import FLT.Mazur.PolygonPinchingAffineBaseChange
 public import FLT.Mazur.PolygonPinchingDiagram
