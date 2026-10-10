@@ -5528,6 +5528,7 @@ public import FLT.Mazur.ProperAmpleFiberEnvelope
 public import FLT.Mazur.ProperAmpleFiberModel
 public import FLT.Mazur.ProperAmpleFiberNeighborhood
 public import FLT.Mazur.ProperAmpleFiberNoetherian
+public import FLT.Mazur.ProperAtlasAbelFiber
 public import FLT.Mazur.ProperClosedLimitDescent
 public import FLT.Mazur.ProperCoherentCohomology
 public import FLT.Mazur.ProperCohomologyFieldVanishing
