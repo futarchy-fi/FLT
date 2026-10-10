@@ -2849,7 +2849,6 @@ public import FLT.Mazur.AuxiliaryLevelFieldMarking
 public import FLT.Mazur.AuxiliaryLevelHomScheme
 public import FLT.Mazur.AuxiliaryLevelKernelLocus
 public import FLT.Mazur.AuxiliaryLevelMappedFaithfulness
-public import FLT.Mazur.AuxiliaryLevelMarkingNaturality
 public import FLT.Mazur.AuxiliaryLevelRelabeling
 public import FLT.Mazur.AuxiliaryTorsionMarkingComparison
 public import FLT.Mazur.BaseAdicClosedAmpleSections
