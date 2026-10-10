@@ -4618,6 +4618,7 @@ public import FLT.Mazur.NormalizedSectionLinePrincipalRechart
 public import FLT.Mazur.NormalizedSectionLinePrincipalRestriction
 public import FLT.Mazur.NormalizedSectionLinePullbackComposition
 public import FLT.Mazur.NormalizedSectionLineRechart
+public import FLT.Mazur.NormalizedSectionLineRefinedInclusion
 public import FLT.Mazur.NormalizedSectionLineSheaf
 public import FLT.Mazur.NormalizedSectionLineSheafBaseChange
 public import FLT.Mazur.NormalizedSectionLineSheafOverlap
