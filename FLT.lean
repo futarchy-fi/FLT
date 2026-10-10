@@ -2706,6 +2706,7 @@ public import FLT.Mazur.AffineScaledTripleTransport
 public import FLT.Mazur.AffineSectionEvaluationCoordinates
 public import FLT.Mazur.AffineSectionLineGeometricPullback
 public import FLT.Mazur.AffineSectionLineGluing
+public import FLT.Mazur.AffineSectionLinePoint
 public import FLT.Mazur.AffineSectionLinePullbackSquares
 public import FLT.Mazur.AffineSectionLineRankOne
 public import FLT.Mazur.AffineSectionLineSubobjectEquality
@@ -2713,6 +2714,8 @@ public import FLT.Mazur.AffineSectionsReconstruction
 public import FLT.Mazur.AffineSmoothFiniteFlatCartier
 public import FLT.Mazur.AffineSourcePullbackSections
 public import FLT.Mazur.AffineSourceSectionComparison
+public import FLT.Mazur.AffineSplitLineCoordinates
+public import FLT.Mazur.AffineSplitLineFrameIndependence
 public import FLT.Mazur.AffineSquareEquivalences
 public import FLT.Mazur.AffineSquareScalarExtension
 public import FLT.Mazur.AffineSquareTensorComparison
@@ -4386,6 +4389,7 @@ public import FLT.Mazur.LineTrivializationCocycle
 public import FLT.Mazur.LineTrivializationCocycleRecovery
 public import FLT.Mazur.LineTrivializationCoordinates
 public import FLT.Mazur.LinearCoordinateRatio
+public import FLT.Mazur.LinearRankOneFrameUnit
 public import FLT.Mazur.LocalCartierGeneratorDescent
 public import FLT.Mazur.LocalClosedFiberBaseChange
 public import FLT.Mazur.LocalClosedFiberConnectedness
@@ -5858,6 +5862,9 @@ public import FLT.Mazur.SplitEvaluationTensorKernel
 public import FLT.Mazur.SplitLineCoordinateCover
 public import FLT.Mazur.SplitLineCoordinateNaturality
 public import FLT.Mazur.SplitLineImageChart
+public import FLT.Mazur.SplitLinePrincipalPoints
+public import FLT.Mazur.SplitLineProjectiveFrame
+public import FLT.Mazur.SplitLineProjectiveMorphism
 public import FLT.Mazur.StalkBaseClosedFiber
 public import FLT.Mazur.StalkBaseLocalization
 public import FLT.Mazur.StalkBaseNumeratorOpen
