@@ -6131,6 +6131,7 @@ public import FLT.Mazur.UniversalWeierstrassFourTorsionFinite
 public import FLT.Mazur.UniversalWeierstrassFourTorsionUnramified
 public import FLT.Mazur.UniversalWeierstrassGeometricLevelFour
 public import FLT.Mazur.UniversalWeierstrassMarkedCoordinateRigidity
+public import FLT.Mazur.UniversalWeierstrassNormalizedSliceRing
 public import FLT.Mazur.UniversalWeierstrassParameter
 public import FLT.Mazur.UniversallyClosedFiniteCover
 public import FLT.Mazur.UniversallyDistinctSections
