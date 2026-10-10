@@ -6073,6 +6073,7 @@ public import FLT.Mazur.WeierstrassOriginAutomorphismExt
 public import FLT.Mazur.WeierstrassOriginIdeal
 public import FLT.Mazur.WeierstrassOriginNeighborhoodCover
 public import FLT.Mazur.WeierstrassOriginParameter
+public import FLT.Mazur.WeierstrassOriginParameterOrder
 public import FLT.Mazur.WeierstrassOriginPoleCoordinates
 public import FLT.Mazur.WeierstrassOverlapDiagonalAlgebra
 public import FLT.Mazur.WeierstrassPartialAdditionSmoothInputs
