@@ -3000,7 +3000,10 @@ public import FLT.Mazur.BlowupReesRatioRight
 public import FLT.Mazur.BlowupReesRatioScheme
 public import FLT.Mazur.BlowupReesRatioTransition
 public import FLT.Mazur.BlowupReesZeroComponent
+public import FLT.Mazur.BoundedFlatAcyclicNeighborhood
+public import FLT.Mazur.BoundedFlatAcyclicOpen
 public import FLT.Mazur.BoundedFlatFiberVanishing
+public import FLT.Mazur.BoundedFlatVanishingStalks
 public import FLT.Mazur.CanonicalCechSectionComparison
 public import FLT.Mazur.CanonicalLineSectionBaseChange
 public import FLT.Mazur.CanonicalSectionComposition
@@ -3733,6 +3736,7 @@ public import FLT.Mazur.FaithfullyFlatInvertible
 public import FLT.Mazur.FamilyTransport
 public import FLT.Mazur.FiberAffineOpenBaseChange
 public import FLT.Mazur.FiberAffineOpenBaseIso
+public import FLT.Mazur.FiberCohomologyTensorCriterion
 public import FLT.Mazur.FiberCohomologyTensorExactness
 public import FLT.Mazur.FiberwiseRegularFlatQuotient
 public import FLT.Mazur.FieldCoefficientCohomologyDimension
@@ -4663,6 +4667,7 @@ public import FLT.Mazur.LineTrivializationCoordinates
 public import FLT.Mazur.LinearCoordinateRatio
 public import FLT.Mazur.LinearRankOneFrameUnit
 public import FLT.Mazur.LocalBaseSectionDisjointness
+public import FLT.Mazur.LocalBoundedFlatVanishing
 public import FLT.Mazur.LocalCartierGeneratorDescent
 public import FLT.Mazur.LocalClosedFiberBaseChange
 public import FLT.Mazur.LocalClosedFiberConnectedness
@@ -4701,6 +4706,7 @@ public import FLT.Mazur.LocalizedPolynomialStableStages
 public import FLT.Mazur.LocalizedSmoothFiniteFlatCartier
 public import FLT.Mazur.LocalizedSmoothLocalEquation
 public import FLT.Mazur.LocalizedTensorCancellation
+public import FLT.Mazur.LocalizedTensorExactness
 public import FLT.Mazur.LocallyFiniteFreeOpenCover
 public import FLT.Mazur.LocallyFramedSplitLineCoverIndependence
 public import FLT.Mazur.LocallyFramedSplitLineNaturality
@@ -5886,12 +5892,15 @@ public import FLT.Mazur.ProperGlobalSectionFinite
 public import FLT.Mazur.ProperGlobalSplitDirectImageSections
 public import FLT.Mazur.ProperImmersedCover
 public import FLT.Mazur.ProperIntegralConstantSections
+public import FLT.Mazur.ProperLineAcyclicLocus
+public import FLT.Mazur.ProperLineAcyclicNeighborhood
 public import FLT.Mazur.ProperLineArbitraryBaseChange
 public import FLT.Mazur.ProperLineChartFiberVanishing
 public import FLT.Mazur.ProperLineFiberVanishing
 public import FLT.Mazur.ProperLineIsomorphismDescent
 public import FLT.Mazur.ProperLineIteratedArbitraryBaseChange
 public import FLT.Mazur.ProperLineIteratedFiberVanishing
+public import FLT.Mazur.ProperLinePrincipalRankOne
 public import FLT.Mazur.ProperLinePushforwardBaseChange
 public import FLT.Mazur.ProperLinePushforwardLocalFree
 public import FLT.Mazur.ProperLinePushforwardMate
