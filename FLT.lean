@@ -6990,6 +6990,7 @@ public import FLT.Mazur.WeierstrassModificationXResidueNamedGenerators
 public import FLT.Mazur.WeierstrassModificationXResidueNodeCoordinateMaps
 public import FLT.Mazur.WeierstrassModificationXResidueNodeFunctions
 public import FLT.Mazur.WeierstrassModificationXResidueNodeGeometry
+public import FLT.Mazur.WeierstrassModificationXResidueSlopeLaurent
 public import FLT.Mazur.WeierstrassModificationXResidueSlopeTransition
 public import FLT.Mazur.WeierstrassModificationXResidueTensorFunctions
 public import FLT.Mazur.WeierstrassModificationXSaturation
