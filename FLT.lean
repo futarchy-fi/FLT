@@ -5723,6 +5723,7 @@ public import FLT.Mazur.ProperCurveGenus
 public import FLT.Mazur.ProperFamilyAbelRepresentation
 public import FLT.Mazur.ProperFamilyAtlasCartesian
 public import FLT.Mazur.ProperFamilyAtlasRecovery
+public import FLT.Mazur.ProperFamilyBaseRepresentation
 public import FLT.Mazur.ProperFamilyCanonicalTests
 public import FLT.Mazur.ProperFamilyDivisorNaturality
 public import FLT.Mazur.ProperFamilyFiberFunctor
