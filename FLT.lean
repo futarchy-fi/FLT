@@ -6624,6 +6624,7 @@ public import FLT.Mazur.WeierstrassDividedAdjacentZeroParameterIntersection
 public import FLT.Mazur.WeierstrassDividedAdjacentZeroSectionSeparation
 public import FLT.Mazur.WeierstrassDividedBoundaryNormalization
 public import FLT.Mazur.WeierstrassDividedBranchChainIntersections
+public import FLT.Mazur.WeierstrassDividedBranchPairSeparation
 public import FLT.Mazur.WeierstrassDividedComponentPairCoverage
 public import FLT.Mazur.WeierstrassDividedConicBoundaryAllDepths
 public import FLT.Mazur.WeierstrassDividedConicBoundaryGeometryAllDepths
