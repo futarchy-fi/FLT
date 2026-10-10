@@ -4854,6 +4854,7 @@ public import FLT.Mazur.PolygonNodeBranches
 public import FLT.Mazur.PolygonNodeChartScalars
 public import FLT.Mazur.PolygonNodeCompletionCriterion
 public import FLT.Mazur.PolygonNodeDenominatorCover
+public import FLT.Mazur.PolygonNodeDifferenceOpen
 public import FLT.Mazur.PolygonNodeDimension
 public import FLT.Mazur.PolygonNodeEqualizer
 public import FLT.Mazur.PolygonNodeEqualizerComparison
