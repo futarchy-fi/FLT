@@ -4525,6 +4525,7 @@ public import FLT.Mazur.LocallySmoothQuasiFiniteCartier
 public import FLT.Mazur.LocallySplitInclusionPullback
 public import FLT.Mazur.LocallySplitLineAmbientChart
 public import FLT.Mazur.LocallySplitLineAmbientTransport
+public import FLT.Mazur.LocallySplitLineAtlasSection
 public import FLT.Mazur.LocallySplitLineChartRefinement
 public import FLT.Mazur.LocallySplitLineDualChartCompatibility
 public import FLT.Mazur.LocallySplitLineOpenRestriction
