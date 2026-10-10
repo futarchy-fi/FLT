@@ -3812,6 +3812,7 @@ public import FLT.Mazur.GenericWitnessIdealVanishing
 public import FLT.Mazur.GeometricOpenFactorization
 public import FLT.Mazur.GeometricPointCoverCriterion
 public import FLT.Mazur.GeometricSectionQuasiFinite
+public import FLT.Mazur.GeometricSectionUnits
 public import FLT.Mazur.GeometricallyConnectedDescent
 public import FLT.Mazur.GeometricallyConnectedLocus
 public import FLT.Mazur.GlobalClosedModuleDescent
