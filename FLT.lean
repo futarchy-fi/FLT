@@ -6196,6 +6196,7 @@ public import FLT.Mazur.WeierstrassDilatationUnitComparison
 public import FLT.Mazur.WeierstrassDilatationZeroResidue
 public import FLT.Mazur.WeierstrassDilatationZeroResidueBoundary
 public import FLT.Mazur.WeierstrassDilatationZeroResidueGeometry
+public import FLT.Mazur.WeierstrassDividedAdjacentBoundaryReciprocals
 public import FLT.Mazur.WeierstrassDividedBoundaryNormalization
 public import FLT.Mazur.WeierstrassDividedDepthAffine
 public import FLT.Mazur.WeierstrassDividedDepthBoundary
