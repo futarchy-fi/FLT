@@ -6304,6 +6304,7 @@ public import FLT.Mazur.SplitLineProjectiveNaturality
 public import FLT.Mazur.SplitLineProjectivePullback
 public import FLT.Mazur.SplitLineProjectiveUnitRecovery
 public import FLT.Mazur.SplitLineRestrictionSubobjects
+public import FLT.Mazur.SplitPairEqualizer
 public import FLT.Mazur.SplitSheafLinePullback
 public import FLT.Mazur.SplitSheafLinePullbackComposition
 public import FLT.Mazur.StableAffineQuotientAffineDescent
