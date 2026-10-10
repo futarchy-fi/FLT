@@ -5263,6 +5263,7 @@ public import FLT.Mazur.PolygonProper
 public import FLT.Mazur.PolygonPuncturedCanonicalEquations
 public import FLT.Mazur.PolygonPureDimension
 public import FLT.Mazur.PolygonRefinedClosedCharts
+public import FLT.Mazur.PolygonRetainedStageMarkings
 public import FLT.Mazur.PolygonScaledReciprocal
 public import FLT.Mazur.PolygonScalingNaturality
 public import FLT.Mazur.PolygonSectionRingFunctor
