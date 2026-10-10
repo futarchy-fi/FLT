@@ -5653,6 +5653,7 @@ public import FLT.Mazur.RelativeSerreVanishing
 public import FLT.Mazur.RelativeSums
 public import FLT.Mazur.RelativeVeryAmpleLineBundle
 public import FLT.Mazur.RepeatedCubicRoots
+public import FLT.Mazur.ResidueFiberRegularLocalization
 public import FLT.Mazur.ResidueNonvanishingLocallySplit
 public import FLT.Mazur.ResidueNonvanishingOpenPullback
 public import FLT.Mazur.ResiduePullbackNonvanishingTransport
