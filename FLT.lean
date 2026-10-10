@@ -6527,6 +6527,7 @@ public import FLT.Mazur.WeierstrassDividedTerminalFullConicIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalLineDisjoint
 public import FLT.Mazur.WeierstrassDividedTerminalNodeChartExclusion
 public import FLT.Mazur.WeierstrassDividedTerminalNodeIncidence
+public import FLT.Mazur.WeierstrassDividedTerminalParameterOrigins
 public import FLT.Mazur.WeierstrassDividedTerminalResidueAtlas
 public import FLT.Mazur.WeierstrassDividedTerminalResidueBoundary
 public import FLT.Mazur.WeierstrassDividedTerminalResidueCharts
