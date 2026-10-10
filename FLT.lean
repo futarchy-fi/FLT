@@ -3372,6 +3372,7 @@ public import FLT.Mazur.DualAtlasSectionReverseForward
 public import FLT.Mazur.DualAtlasSectionTransport
 public import FLT.Mazur.DualAtlasUniversalLine
 public import FLT.Mazur.DualAtlasUniversalLinePullback
+public import FLT.Mazur.DualAtlasUniversalLineRecovery
 public import FLT.Mazur.DualFreeSheafCoordinates
 public import FLT.Mazur.DualProjectiveAtlasNoetherian
 public import FLT.Mazur.DualPullbackComposition
