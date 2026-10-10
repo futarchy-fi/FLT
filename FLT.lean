@@ -5155,6 +5155,7 @@ public import FLT.Mazur.PolygonCompleteBoundaryLineComparison
 public import FLT.Mazur.PolygonCompleteBoundaryLocalComparison
 public import FLT.Mazur.PolygonCompleteBoundaryQuotient
 public import FLT.Mazur.PolygonCompleteBoundarySectionTransport
+public import FLT.Mazur.PolygonCompleteCoefficientCoherence
 public import FLT.Mazur.PolygonCompleteCoefficientLine
 public import FLT.Mazur.PolygonCompleteCoefficientOpens
 public import FLT.Mazur.PolygonCompleteCoefficientReconstruction
