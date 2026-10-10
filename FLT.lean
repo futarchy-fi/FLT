@@ -3165,6 +3165,7 @@ public import FLT.Mazur.CoherentRingCohomologyFinite
 public import FLT.Mazur.CoherentSubmoduleEnlargement
 public import FLT.Mazur.CoherentSubmoduleExtension
 public import FLT.Mazur.CoherentSubmoduleGluing
+public import FLT.Mazur.CoherentSubmoduleLocalEquality
 public import FLT.Mazur.CoherentSubmoduleUnion
 public import FLT.Mazur.CoherentSubquotient
 public import FLT.Mazur.CoherentSubsheafACC
@@ -3292,8 +3293,14 @@ public import FLT.Mazur.DivisorTensorSequence
 public import FLT.Mazur.DivisorTwistedDegree
 public import FLT.Mazur.DivisorTwistedSequence
 public import FLT.Mazur.DoubleRootComponentBound
+public import FLT.Mazur.DualAtlasSectionBaseNeighborhood
 public import FLT.Mazur.DualAtlasSectionChartPoints
+public import FLT.Mazur.DualAtlasSectionCommonPoint
+public import FLT.Mazur.DualAtlasSectionForwardLine
+public import FLT.Mazur.DualAtlasSectionLineCover
+public import FLT.Mazur.DualAtlasSectionLineOverlap
 public import FLT.Mazur.DualAtlasSectionLocalLines
+public import FLT.Mazur.DualAtlasSectionLocalSubobjects
 public import FLT.Mazur.DualAtlasSectionNormalizedRefinement
 public import FLT.Mazur.EllipticAbstractComponentInjection
 public import FLT.Mazur.EllipticAbstractGoodReductionClosure
@@ -3684,6 +3691,7 @@ public import FLT.Mazur.FiniteFlatCoefficientIdeal
 public import FLT.Mazur.FiniteFlatLocalIdealPresentation
 public import FLT.Mazur.FiniteFlatQuotientTrivialization
 public import FLT.Mazur.FiniteFlatSubschemeQuotient
+public import FLT.Mazur.FiniteFreeChartGeneratorRestriction
 public import FLT.Mazur.FiniteFreeChartPointCompatibility
 public import FLT.Mazur.FiniteFreeChartProjectiveRestriction
 public import FLT.Mazur.FiniteFreeChartProjectiveTransitions
@@ -3692,6 +3700,7 @@ public import FLT.Mazur.FiniteFreeChartSectionLineComparison
 public import FLT.Mazur.FiniteFreeChartSectionLinePullback
 public import FLT.Mazur.FiniteFreeChartSectionLines
 public import FLT.Mazur.FiniteFreeChartTransitions
+public import FLT.Mazur.FiniteFreeChartUnitRefinement
 public import FLT.Mazur.FiniteFreeContragredient
 public import FLT.Mazur.FiniteFreeContragredientCoefficients
 public import FLT.Mazur.FiniteFreeContragredientEvaluation
@@ -3699,6 +3708,7 @@ public import FLT.Mazur.FiniteFreeDualPointBaseChange
 public import FLT.Mazur.FiniteFreeDualProjectivePoints
 public import FLT.Mazur.FiniteFreeDualProjectiveRefinement
 public import FLT.Mazur.FiniteFreeDualProjectiveTransitions
+public import FLT.Mazur.FiniteFreeInheritedChartTransitions
 public import FLT.Mazur.FiniteFreeProjectiveAtlasDiagram
 public import FLT.Mazur.FiniteFreeProjectiveChartRefinement
 public import FLT.Mazur.FiniteFreeQuotientIdealPresentation
@@ -6113,6 +6123,7 @@ public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalEquation
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizationNatural
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizedFrame
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizedSections
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryProperNormalization
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryPullbackSections
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryRelativeRigidity
 public import FLT.Mazur.UniversalWeierstrassAuxiliarySchemeRigidity
@@ -6608,6 +6619,7 @@ public import FLT.Mazur.WeierstrassIntegralAssociativity
 public import FLT.Mazur.WeierstrassIntegralBaseChange
 public import FLT.Mazur.WeierstrassIntegralChart
 public import FLT.Mazur.WeierstrassIntegralChartIntersection
+public import FLT.Mazur.WeierstrassIntegralChartProjectivePoint
 public import FLT.Mazur.WeierstrassIntegralCoefficientMap
 public import FLT.Mazur.WeierstrassIntegralCurveGluing
 public import FLT.Mazur.WeierstrassIntegralCurveMorphisms
@@ -6628,6 +6640,7 @@ public import FLT.Mazur.WeierstrassIntegralSeparated
 public import FLT.Mazur.WeierstrassIntegralSmooth
 public import FLT.Mazur.WeierstrassIntegralTripleFlat
 public import FLT.Mazur.WeierstrassIntegralTripleProduct
+public import FLT.Mazur.WeierstrassIntegralUnitPoint
 public import FLT.Mazur.WeierstrassIntegralZeroSection
 public import FLT.Mazur.WeierstrassLineCubicFactorization
 public import FLT.Mazur.WeierstrassLocalAdditionCurveComparison
@@ -6831,6 +6844,11 @@ public import FLT.Mazur.WeierstrassOriginIdealInvariant
 public import FLT.Mazur.WeierstrassOriginIdealSheaf
 public import FLT.Mazur.WeierstrassOriginImageCharts
 public import FLT.Mazur.WeierstrassOriginImageEquation
+public import FLT.Mazur.WeierstrassOriginIsomorphismAffine
+public import FLT.Mazur.WeierstrassOriginIsomorphismCoordinates
+public import FLT.Mazur.WeierstrassOriginIsomorphismDivisor
+public import FLT.Mazur.WeierstrassOriginIsomorphismPoles
+public import FLT.Mazur.WeierstrassOriginIsomorphismSections
 public import FLT.Mazur.WeierstrassOriginJets
 public import FLT.Mazur.WeierstrassOriginMonomialPoles
 public import FLT.Mazur.WeierstrassOriginNeighborhoodCover
@@ -7158,9 +7176,21 @@ public import FLT.Mazur.WeierstrassTripleInnerAdditionCover
 public import FLT.Mazur.WeierstrassTripleInnerOutputRegular
 public import FLT.Mazur.WeierstrassTripleSlopeAlgebra
 public import FLT.Mazur.WeierstrassTripleTangentSlopeAlgebra
+public import FLT.Mazur.WeierstrassVariableChangeAffineRestriction
+public import FLT.Mazur.WeierstrassVariableChangeCoordinateCover
+public import FLT.Mazur.WeierstrassVariableChangeCubicSubstitution
 public import FLT.Mazur.WeierstrassVariableChangeFrame
+public import FLT.Mazur.WeierstrassVariableChangeHomogeneous
 public import FLT.Mazur.WeierstrassVariableChangeIntegralEquation
+public import FLT.Mazur.WeierstrassVariableChangeIntegralIso
+public import FLT.Mazur.WeierstrassVariableChangeIntegralMorphism
+public import FLT.Mazur.WeierstrassVariableChangeLinear
+public import FLT.Mazur.WeierstrassVariableChangeLocalCoordinates
+public import FLT.Mazur.WeierstrassVariableChangeLocalMorphism
+public import FLT.Mazur.WeierstrassVariableChangeProjectiveInverse
+public import FLT.Mazur.WeierstrassVariableChangeProjectivePoints
 public import FLT.Mazur.WeierstrassVariableChangeScaledCoefficients
+public import FLT.Mazur.WeierstrassVariableChangeZero
 public import FLT.Mazur.WeierstrassVerticalAdditionCharts
 public import FLT.Mazur.WeierstrassVerticalChartCompatibility
 public import FLT.Mazur.WeierstrassVietaNormalization
