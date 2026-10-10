@@ -2504,6 +2504,7 @@ public import FLT.Mazur.AdicCompletionPrincipal
 public import FLT.Mazur.AdicCompletionQuotientEquiv
 public import FLT.Mazur.AdicCompletionScalars
 public import FLT.Mazur.AdicFiniteGenerationLifting
+public import FLT.Mazur.AdicSectionIsoReconstruction
 public import FLT.Mazur.AffineAdicCohomologyImage
 public import FLT.Mazur.AffineAdicFormalComparison
 public import FLT.Mazur.AffineAnnihilator
@@ -4103,11 +4104,14 @@ public import FLT.Mazur.GradedProjArbitraryBaseChange
 public import FLT.Mazur.GradedProjBaseChangeMap
 public import FLT.Mazur.GradedProjChartArbitraryBaseChange
 public import FLT.Mazur.GradedProjChartSections
+public import FLT.Mazur.GradedProjCoefficientChartPullback
 public import FLT.Mazur.GradedProjCoefficientComparisonCoherence
 public import FLT.Mazur.GradedProjCoefficientComparisonNormalization
 public import FLT.Mazur.GradedProjCoefficientGeneration
 public import FLT.Mazur.GradedProjCoefficientLocalMap
+public import FLT.Mazur.GradedProjCoefficientSectionTransport
 public import FLT.Mazur.GradedProjCoefficientSections
+public import FLT.Mazur.GradedProjCoefficientStageCoherence
 public import FLT.Mazur.GradedProjDedekindFlatness
 public import FLT.Mazur.GradedProjEqualDegreeCover
 public import FLT.Mazur.GradedProjEventualGenerationCover
@@ -4734,6 +4738,8 @@ public import FLT.Mazur.MarkedIntegerModel
 public import FLT.Mazur.MaximalAdicDetection
 public import FLT.Mazur.ModuleBinarySectionGluing
 public import FLT.Mazur.ModuleCechScalar
+public import FLT.Mazur.ModuleCocycleChartSections
+public import FLT.Mazur.ModuleCocycleSectionImage
 public import FLT.Mazur.ModuleCohomology
 public import FLT.Mazur.ModuleCohomologyExact
 public import FLT.Mazur.ModuleCohomologyRing
@@ -4772,10 +4778,12 @@ public import FLT.Mazur.ModulePullbackRestrictionHorizontal
 public import FLT.Mazur.ModulePullbackRestrictionPasting
 public import FLT.Mazur.ModulePullbackSectionCoherence
 public import FLT.Mazur.ModulePullbackSectionTransport
+public import FLT.Mazur.ModulePullbackStageIso
 public import FLT.Mazur.ModulePullbackTrivializationCoherence
 public import FLT.Mazur.ModulePullbackTrivializationSections
 public import FLT.Mazur.ModulePullbackUnitCoherence
 public import FLT.Mazur.ModulePushforwardSectionTransition
+public import FLT.Mazur.ModulePushforwardTransitionCoherence
 public import FLT.Mazur.ModuleRingCohomologyExact
 public import FLT.Mazur.ModuleSealedPullbackRatio
 public import FLT.Mazur.ModuleSectionBaseChange
@@ -5150,16 +5158,22 @@ public import FLT.Mazur.PolygonCompatibleSectionScalars
 public import FLT.Mazur.PolygonCompatibleVeronese
 public import FLT.Mazur.PolygonCompatibleZeroCoefficients
 public import FLT.Mazur.PolygonCompleteBaseMarkings
+public import FLT.Mazur.PolygonCompleteBoundaryCoordinateTransport
 public import FLT.Mazur.PolygonCompleteBoundaryFactorization
 public import FLT.Mazur.PolygonCompleteBoundaryLineComparison
 public import FLT.Mazur.PolygonCompleteBoundaryLocalComparison
 public import FLT.Mazur.PolygonCompleteBoundaryQuotient
+public import FLT.Mazur.PolygonCompleteBoundaryQuotientTransition
+public import FLT.Mazur.PolygonCompleteBoundarySectionProjection
 public import FLT.Mazur.PolygonCompleteBoundarySectionTransport
+public import FLT.Mazur.PolygonCompleteBoundaryTransitionCoherence
+public import FLT.Mazur.PolygonCompleteCoefficientCoherence
 public import FLT.Mazur.PolygonCompleteCoefficientLine
 public import FLT.Mazur.PolygonCompleteCoefficientOpens
 public import FLT.Mazur.PolygonCompleteCoefficientReconstruction
 public import FLT.Mazur.PolygonCompleteCoordinateEvaluation
 public import FLT.Mazur.PolygonCompleteFamilyFlatness
+public import FLT.Mazur.PolygonCompleteLineOriginalReduction
 public import FLT.Mazur.PolygonCompleteLineQuotient
 public import FLT.Mazur.PolygonCompleteMarkingSpecialization
 public import FLT.Mazur.PolygonComponentDistinct
@@ -5303,6 +5317,7 @@ public import FLT.Mazur.PolygonOneGonRefinementCover
 public import FLT.Mazur.PolygonOneGonRefinementValue
 public import FLT.Mazur.PolygonOneGonTorusIntersection
 public import FLT.Mazur.PolygonOriginalAdicRealization
+public import FLT.Mazur.PolygonOriginalBoundarySectionReconstruction
 public import FLT.Mazur.PolygonOriginalStageAdicSquare
 public import FLT.Mazur.PolygonPinchingAffineBaseChange
 public import FLT.Mazur.PolygonPinchingDiagram
@@ -6948,6 +6963,8 @@ public import FLT.Mazur.WeierstrassDividedDepthYBoundary
 public import FLT.Mazur.WeierstrassDividedEqualityComponentEndpoints
 public import FLT.Mazur.WeierstrassDividedEqualityNodeFamily
 public import FLT.Mazur.WeierstrassDividedEqualityNodesDistinct
+public import FLT.Mazur.WeierstrassDividedEqualityTerminalNodeDescent
+public import FLT.Mazur.WeierstrassDividedEqualityTerminalNodeParameters
 public import FLT.Mazur.WeierstrassDividedExterior
 public import FLT.Mazur.WeierstrassDividedExteriorBranchIntersections
 public import FLT.Mazur.WeierstrassDividedExteriorIntersections
@@ -6975,6 +6992,7 @@ public import FLT.Mazur.WeierstrassDividedFinalNodeFamily
 public import FLT.Mazur.WeierstrassDividedFinalNodeNonadjacent
 public import FLT.Mazur.WeierstrassDividedFinalNodeOrigins
 public import FLT.Mazur.WeierstrassDividedFinalNodesDistinct
+public import FLT.Mazur.WeierstrassDividedFinalParameterLineCharts
 public import FLT.Mazur.WeierstrassDividedFinalRetainedConic
 public import FLT.Mazur.WeierstrassDividedFinalRetainedNodesDistinct
 public import FLT.Mazur.WeierstrassDividedFinalSplitBranchCharts
@@ -7119,6 +7137,7 @@ public import FLT.Mazur.WeierstrassDividedOlderGlobalZeroSuccessive
 public import FLT.Mazur.WeierstrassDividedOlderIndexedIntersections
 public import FLT.Mazur.WeierstrassDividedOlderIndexedNodeCover
 public import FLT.Mazur.WeierstrassDividedOlderInfinityPreimage
+public import FLT.Mazur.WeierstrassDividedOlderParameterNodeBranches
 public import FLT.Mazur.WeierstrassDividedOlderResidueInfinity
 public import FLT.Mazur.WeierstrassDividedOlderResidueNodes
 public import FLT.Mazur.WeierstrassDividedOlderSplitNodeBranches
@@ -7245,8 +7264,10 @@ public import FLT.Mazur.WeierstrassDividedZeroEqualityCycle
 public import FLT.Mazur.WeierstrassDividedZeroEqualityCycleCoverage
 public import FLT.Mazur.WeierstrassDividedZeroEqualityCycleEndCharts
 public import FLT.Mazur.WeierstrassDividedZeroEqualityCycleIndices
+public import FLT.Mazur.WeierstrassDividedZeroEqualityCycleLineBranches
 public import FLT.Mazur.WeierstrassDividedZeroEqualityCycleRanges
 public import FLT.Mazur.WeierstrassDividedZeroEqualityPolygonMap
+public import FLT.Mazur.WeierstrassDividedZeroEqualityTerminalBranches
 public import FLT.Mazur.WeierstrassDividedZeroExteriorCoverage
 public import FLT.Mazur.WeierstrassDividedZeroExteriorCurve
 public import FLT.Mazur.WeierstrassDividedZeroExteriorLaurent
@@ -7530,6 +7551,7 @@ public import FLT.Mazur.WeierstrassModificationXConicIncidencePreimage
 public import FLT.Mazur.WeierstrassModificationXConicInverseCoordinates
 public import FLT.Mazur.WeierstrassModificationXConicOverlapGeometry
 public import FLT.Mazur.WeierstrassModificationXConicOverlapParameterMaps
+public import FLT.Mazur.WeierstrassModificationXConicParameterNegation
 public import FLT.Mazur.WeierstrassModificationXConicParameterOrigin
 public import FLT.Mazur.WeierstrassModificationXConicParameterOverlap
 public import FLT.Mazur.WeierstrassModificationXConicParameterSections
@@ -7954,7 +7976,9 @@ public import FLT.Mazur.WeierstrassSuccessiveXMiddleIncidence
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleIntersection
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleLines
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleLocalizedBranchCoordinates
+public import FLT.Mazur.WeierstrassSuccessiveXMiddleLocalizedBranchMaps
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleLocalizedBranchParameters
+public import FLT.Mazur.WeierstrassSuccessiveXMiddleLocalizedOppositeConic
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleLocalizedPushout
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodeBranches
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodeCoordinates
@@ -7964,6 +7988,9 @@ public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodeMaps
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodeOrigin
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodePushout
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleOverlap
+public import FLT.Mazur.WeierstrassSuccessiveXMiddleParameterBranchCharts
+public import FLT.Mazur.WeierstrassSuccessiveXMiddleParameterDescent
+public import FLT.Mazur.WeierstrassSuccessiveXMiddleParameterPushout
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleScaledDescent
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleSecondNode
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleSplitBranchCharts
@@ -8004,6 +8031,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXResidueNodeGeometry
 public import FLT.Mazur.WeierstrassSuccessiveXResidueNodeIdeals
 public import FLT.Mazur.WeierstrassSuccessiveXResidueNodeMaps
 public import FLT.Mazur.WeierstrassSuccessiveXResidueNodePunctures
+public import FLT.Mazur.WeierstrassSuccessiveXResidueParameterBranchCharts
 public import FLT.Mazur.WeierstrassSuccessiveXResidueSplitBranchCharts
 public import FLT.Mazur.WeierstrassSuccessiveXResidueTransitionBaseChange
 public import FLT.Mazur.WeierstrassSuccessiveXResidueZeroNodeDisjoint
