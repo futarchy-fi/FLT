@@ -5257,6 +5257,7 @@ public import FLT.Mazur.ProjectiveUniversalLineComparison
 public import FLT.Mazur.ProjectiveUniversalLineRefinementWitness
 public import FLT.Mazur.ProjectiveUniversalLineTripleComparison
 public import FLT.Mazur.ProjectiveUniversalLineTriplePaths
+public import FLT.Mazur.ProjectiveUniversalLineTripleRefinement
 public import FLT.Mazur.ProperAmpleConverse
 public import FLT.Mazur.ProperAmpleFiberApproximation
 public import FLT.Mazur.ProperAmpleFiberModel
