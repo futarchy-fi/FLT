@@ -4738,6 +4738,7 @@ public import FLT.Mazur.ModuleSectionRatioOpenPullback
 public import FLT.Mazur.ModuleSectionRatioPullback
 public import FLT.Mazur.ModuleSectionRatios
 public import FLT.Mazur.ModuleSectionRegularity
+public import FLT.Mazur.ModuleSectionScalarExactness
 public import FLT.Mazur.ModuleSectionTransport
 public import FLT.Mazur.ModuleSectionTransportRestriction
 public import FLT.Mazur.ModuleSectionUnit
