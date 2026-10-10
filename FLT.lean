@@ -4836,6 +4836,7 @@ public import FLT.Mazur.NodalFiberParameterTransport
 public import FLT.Mazur.NodalFiberUnitComparison
 public import FLT.Mazur.NodalGenusOneBaseChange
 public import FLT.Mazur.NodalGeometricFiberGenus
+public import FLT.Mazur.NodeBranchPushout
 public import FLT.Mazur.NodeDenominatorEqualizer
 public import FLT.Mazur.NodeDenominatorGeneration
 public import FLT.Mazur.NodeDenominatorRestriction
