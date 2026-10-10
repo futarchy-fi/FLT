@@ -5304,6 +5304,7 @@ public import FLT.Mazur.PolygonStageLineSectionFlat
 public import FLT.Mazur.PolygonStageParameterSections
 public import FLT.Mazur.PolygonStageRestrictionIdeal
 public import FLT.Mazur.PolygonStageRetainedCanonicalMap
+public import FLT.Mazur.PolygonStageRetainedRecovery
 public import FLT.Mazur.PolygonStageScalarComparison
 public import FLT.Mazur.PolygonStageVeroneseGrading
 public import FLT.Mazur.PolygonStageVeroneseProj
