@@ -3303,6 +3303,7 @@ public import FLT.Mazur.DualAtlasBaseChangeOverlapMaps
 public import FLT.Mazur.DualAtlasBaseChangeRefinement
 public import FLT.Mazur.DualAtlasBaseChangeReverse
 public import FLT.Mazur.DualAtlasChartRefinement
+public import FLT.Mazur.DualAtlasForwardGeometricPullback
 public import FLT.Mazur.DualAtlasGeometricBaseChange
 public import FLT.Mazur.DualAtlasGeometricCartesian
 public import FLT.Mazur.DualAtlasGeometricReverseSquare
