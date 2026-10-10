@@ -6526,6 +6526,7 @@ public import FLT.Mazur.WeierstrassDividedInitialExterior
 public import FLT.Mazur.WeierstrassDividedInitialGlobalResidueNodes
 public import FLT.Mazur.WeierstrassDividedInitialGlobalSections
 public import FLT.Mazur.WeierstrassDividedInitialGlobalTensorChart
+public import FLT.Mazur.WeierstrassDividedInitialIncidenceInfinity
 public import FLT.Mazur.WeierstrassDividedInitialIncidenceLine
 public import FLT.Mazur.WeierstrassDividedInitialIndexedNodeCover
 public import FLT.Mazur.WeierstrassDividedInitialInfinityPreimage
