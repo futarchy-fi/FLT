@@ -7600,6 +7600,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodePushout
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleOverlap
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleSecondNode
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleSplitBranchCoordinates
+public import FLT.Mazur.WeierstrassSuccessiveXMiddleSplitBranchMaps
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleTangentSwitch
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleUnion
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleZeroNode
