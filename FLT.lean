@@ -3298,6 +3298,7 @@ public import FLT.Mazur.DivisorTwistedSequence
 public import FLT.Mazur.DoubleRootComponentBound
 public import FLT.Mazur.DualAtlasBaseChangeCharts
 public import FLT.Mazur.DualAtlasBaseChangeCover
+public import FLT.Mazur.DualAtlasBaseChangeReverse
 public import FLT.Mazur.DualAtlasSectionBaseNeighborhood
 public import FLT.Mazur.DualAtlasSectionChartPoints
 public import FLT.Mazur.DualAtlasSectionCommonPoint
