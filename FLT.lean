@@ -6366,6 +6366,7 @@ public import FLT.Mazur.WeierstrassDividedExteriorYBoundary
 public import FLT.Mazur.WeierstrassDividedFinalNodeAdjacent
 public import FLT.Mazur.WeierstrassDividedFinalNodeChart
 public import FLT.Mazur.WeierstrassDividedFinalNodeFamily
+public import FLT.Mazur.WeierstrassDividedFinalNodeNonadjacent
 public import FLT.Mazur.WeierstrassDividedFiniteAffineProper
 public import FLT.Mazur.WeierstrassDividedFiniteAtlas
 public import FLT.Mazur.WeierstrassDividedFiniteChartStructure
