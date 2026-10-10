@@ -6109,6 +6109,7 @@ public import FLT.Mazur.SectionGradedCoordinateEvaluation
 public import FLT.Mazur.SectionGradedCoordinateIndependence
 public import FLT.Mazur.SectionGradedCoordinates
 public import FLT.Mazur.SectionGradedGeneratorLocalization
+public import FLT.Mazur.SectionGradedIsoMultiplication
 public import FLT.Mazur.SectionGradedLocalCoordinates
 public import FLT.Mazur.SectionGradedMultiplication
 public import FLT.Mazur.SectionGradedPowerGenerators
