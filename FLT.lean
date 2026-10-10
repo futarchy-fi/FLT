@@ -6417,6 +6417,7 @@ public import FLT.Mazur.TildeSourceSectionComparison
 public import FLT.Mazur.TorusChartScalars
 public import FLT.Mazur.TrivialLineTwistLocalization
 public import FLT.Mazur.TrivializedLineSheafLimitDescent
+public import FLT.Mazur.TwistedEvaluationSectionSum
 public import FLT.Mazur.TwistedSectionBaseChange
 public import FLT.Mazur.TwistedSectionBaseChangeRegularity
 public import FLT.Mazur.TwistedSectionBaseLineNaturality
