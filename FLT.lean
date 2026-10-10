@@ -5037,6 +5037,7 @@ public import FLT.Mazur.PolygonChartScaling
 public import FLT.Mazur.PolygonClassifiedFamily
 public import FLT.Mazur.PolygonCoconeComparison
 public import FLT.Mazur.PolygonCohomologyIncidence
+public import FLT.Mazur.PolygonCompatibleDegreeLifting
 public import FLT.Mazur.PolygonCompatibleDegreeProjection
 public import FLT.Mazur.PolygonCompatibleHomogeneousSections
 public import FLT.Mazur.PolygonCompatibleSectionAlgebra
