@@ -6372,6 +6372,7 @@ public import FLT.Mazur.SectionRetainedProjBaseCoefficients
 public import FLT.Mazur.SectionRetainedProjChart
 public import FLT.Mazur.SectionRetainedProjConstruction
 public import FLT.Mazur.SectionRetainedProjGluing
+public import FLT.Mazur.SectionRetainedProjNaturality
 public import FLT.Mazur.SectionRetainedProjOfAmple
 public import FLT.Mazur.SectionRetainedProjOpens
 public import FLT.Mazur.SectionRetainedProjStructuralMap
