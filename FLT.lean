@@ -5086,6 +5086,7 @@ public import FLT.Mazur.PolygonInfinitesimalMarkedBaseChange
 public import FLT.Mazur.PolygonInfinitesimalMarkings
 public import FLT.Mazur.PolygonInfinitesimalSeparated
 public import FLT.Mazur.PolygonInfinitesimalSpecialFiber
+public import FLT.Mazur.PolygonInfinitesimalStageDivisor
 public import FLT.Mazur.PolygonInfinitesimalStageFiber
 public import FLT.Mazur.PolygonInfinitesimalStageGenus
 public import FLT.Mazur.PolygonInfinitesimalStageProper
