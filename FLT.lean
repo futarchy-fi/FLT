@@ -6801,6 +6801,7 @@ public import FLT.Mazur.WeierstrassDividedAdjacentSectionSeparation
 public import FLT.Mazur.WeierstrassDividedAdjacentSplitNodeBranches
 public import FLT.Mazur.WeierstrassDividedAdjacentTensorBoundary
 public import FLT.Mazur.WeierstrassDividedAdjacentTerminalIntersection
+public import FLT.Mazur.WeierstrassDividedAdjacentZeroBranchCompatibility
 public import FLT.Mazur.WeierstrassDividedAdjacentZeroComponents
 public import FLT.Mazur.WeierstrassDividedAdjacentZeroConicComparison
 public import FLT.Mazur.WeierstrassDividedAdjacentZeroCrossedIntersection
