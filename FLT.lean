@@ -3286,6 +3286,8 @@ public import FLT.Mazur.DRFiberClassification
 public import FLT.Mazur.DedekindPointExtension
 public import FLT.Mazur.DirectImageBaseChangeAdjoints
 public import FLT.Mazur.DirectImageBaseChangeMate
+public import FLT.Mazur.DirectImageBaseChangePasting
+public import FLT.Mazur.DirectImageBaseChangeRestriction
 public import FLT.Mazur.DirectImageBaseChangeUnit
 public import FLT.Mazur.DirectImageInjectives
 public import FLT.Mazur.DirectImageOpenBaseChange
@@ -5629,6 +5631,7 @@ public import FLT.Mazur.ProperAtlasAbelFiber
 public import FLT.Mazur.ProperAtlasAbelNaturality
 public import FLT.Mazur.ProperAtlasCanonicalBaseChange
 public import FLT.Mazur.ProperAtlasSectionBaseChange
+public import FLT.Mazur.ProperChangedBaseCartierSections
 public import FLT.Mazur.ProperClosedLimitDescent
 public import FLT.Mazur.ProperCoherentCohomology
 public import FLT.Mazur.ProperCohomologyFieldVanishing
@@ -5646,10 +5649,14 @@ public import FLT.Mazur.ProperFinitePresentationEnvelope
 public import FLT.Mazur.ProperGlobalDirectImageCharts
 public import FLT.Mazur.ProperGlobalSectionCartier
 public import FLT.Mazur.ProperGlobalSectionFinite
+public import FLT.Mazur.ProperGlobalSplitDirectImageSections
 public import FLT.Mazur.ProperImmersedCover
 public import FLT.Mazur.ProperIntegralConstantSections
+public import FLT.Mazur.ProperLineArbitraryBaseChange
+public import FLT.Mazur.ProperLineChartFiberVanishing
 public import FLT.Mazur.ProperLineFiberVanishing
 public import FLT.Mazur.ProperLineIsomorphismDescent
+public import FLT.Mazur.ProperLineIteratedArbitraryBaseChange
 public import FLT.Mazur.ProperLineIteratedFiberVanishing
 public import FLT.Mazur.ProperLinePushforwardBaseChange
 public import FLT.Mazur.ProperLinePushforwardLocalFree
@@ -5689,6 +5696,8 @@ public import FLT.Mazur.ProperStageFiberProjection
 public import FLT.Mazur.ProperStageResidueFiberLimit
 public import FLT.Mazur.ProperStalkExtension
 public import FLT.Mazur.ProperTwistedLineDescent
+public import FLT.Mazur.ProperUniversalCartierDivisor
+public import FLT.Mazur.ProperUniversalDirectImageLine
 public import FLT.Mazur.PullbackOverlapBaseChange
 public import FLT.Mazur.PuncturedNodeRestrictionComparison
 public import FLT.Mazur.PushforwardCech
@@ -6104,6 +6113,7 @@ public import FLT.Mazur.SchemePullbackOverlapSquare
 public import FLT.Mazur.SchemePullbackSquare
 public import FLT.Mazur.SchemePullbackSquareComposition
 public import FLT.Mazur.SchemePullbackSquareIdentity
+public import FLT.Mazur.SchemePullbackSquarePasting
 public import FLT.Mazur.SchemeQuotientAffineBaseCoordinates
 public import FLT.Mazur.SchemeQuotientAffineFlatComparison
 public import FLT.Mazur.SchemeQuotientAffineFlatDescent
