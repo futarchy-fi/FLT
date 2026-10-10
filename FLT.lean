@@ -4105,6 +4105,7 @@ public import FLT.Mazur.GradedProjLineCoordinates
 public import FLT.Mazur.GradedProjLineRatioCocycle
 public import FLT.Mazur.GradedProjLineSectionCocycle
 public import FLT.Mazur.GradedProjLineSheaf
+public import FLT.Mazur.GradedProjLineTransitionEvaluation
 public import FLT.Mazur.GradedProjPositiveBasis
 public import FLT.Mazur.GradedProjRegradedEvaluation
 public import FLT.Mazur.GradedProjRingEquiv
