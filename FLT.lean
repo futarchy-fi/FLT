@@ -5140,6 +5140,7 @@ public import FLT.Mazur.PolygonSmoothingBaseChange
 public import FLT.Mazur.PolygonSmoothingBranchOpens
 public import FLT.Mazur.PolygonSmoothingBranchSwap
 public import FLT.Mazur.PolygonSmoothingCoefficientBranches
+public import FLT.Mazur.PolygonSmoothingCoefficientSquares
 public import FLT.Mazur.PolygonSmoothingFlat
 public import FLT.Mazur.PolygonSmoothingLeftPuncture
 public import FLT.Mazur.PolygonSmoothingMarkedSection
