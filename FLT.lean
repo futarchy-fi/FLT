@@ -3296,6 +3296,10 @@ public import FLT.Mazur.DivisorTensorSequence
 public import FLT.Mazur.DivisorTwistedDegree
 public import FLT.Mazur.DivisorTwistedSequence
 public import FLT.Mazur.DoubleRootComponentBound
+public import FLT.Mazur.DualAtlasBaseChangeCharts
+public import FLT.Mazur.DualAtlasBaseChangeCover
+public import FLT.Mazur.DualAtlasBaseChangeRefinement
+public import FLT.Mazur.DualAtlasBaseChangeReverse
 public import FLT.Mazur.DualAtlasSectionBaseNeighborhood
 public import FLT.Mazur.DualAtlasSectionChartPoints
 public import FLT.Mazur.DualAtlasSectionCommonPoint
@@ -3307,6 +3311,7 @@ public import FLT.Mazur.DualAtlasSectionLocalLines
 public import FLT.Mazur.DualAtlasSectionLocalSubobjects
 public import FLT.Mazur.DualAtlasSectionNormalizedRefinement
 public import FLT.Mazur.DualAtlasSectionReverseForward
+public import FLT.Mazur.DualFreeSheafCoordinates
 public import FLT.Mazur.EllipticAbstractComponentInjection
 public import FLT.Mazur.EllipticAbstractGoodReductionClosure
 public import FLT.Mazur.EllipticAbstractMultiplicativeComponents
@@ -3716,6 +3721,7 @@ public import FLT.Mazur.FiniteFreeDualProjectiveTransitions
 public import FLT.Mazur.FiniteFreeInheritedChartTransitions
 public import FLT.Mazur.FiniteFreeProjectiveAtlasDiagram
 public import FLT.Mazur.FiniteFreeProjectiveChartRefinement
+public import FLT.Mazur.FiniteFreePullbackFrame
 public import FLT.Mazur.FiniteFreeQuotientIdealPresentation
 public import FLT.Mazur.FiniteFreeSectionLineTransport
 public import FLT.Mazur.FiniteGeometricSections
@@ -3946,6 +3952,11 @@ public import FLT.Mazur.FlatTensorFixedSubmodule
 public import FLT.Mazur.FormallyUnramifiedQuotientCriterion
 public import FLT.Mazur.FpqcGlobalGenerationDescent
 public import FLT.Mazur.FpqcModuleEpimorphisms
+public import FLT.Mazur.FramedDualProjectiveChanges
+public import FLT.Mazur.FramedDualProjectiveComposition
+public import FLT.Mazur.FramedDualProjectivePullback
+public import FLT.Mazur.FramedDualProjectiveReverse
+public import FLT.Mazur.FreeSheafPullbackRestriction
 public import FLT.Mazur.FreeSheafRestrictionCoherence
 public import FLT.Mazur.FreeSheafSectionCoordinates
 public import FLT.Mazur.GeneralizedCurveAmpleBaseChange
