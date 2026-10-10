@@ -5031,6 +5031,7 @@ public import FLT.Mazur.OriginalFamilyTwistComposition
 public import FLT.Mazur.OriginalTwistIsoRigidity
 public import FLT.Mazur.OriginalTwistLineOrbits
 public import FLT.Mazur.OriginalTwistOrbitRelation
+public import FLT.Mazur.OriginalTwistSectionCoherence
 public import FLT.Mazur.OverCoproductModuleSections
 public import FLT.Mazur.OverPoints
 public import FLT.Mazur.OverPullbackCoherence
