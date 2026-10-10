@@ -5676,6 +5676,7 @@ public import FLT.Mazur.ProperFamilyAtlasRecovery
 public import FLT.Mazur.ProperFamilySectionPullback
 public import FLT.Mazur.ProperFamilyTwistedRecovery
 public import FLT.Mazur.ProperFamilyUniversalLineRecovery
+public import FLT.Mazur.ProperFamilyUniversalSectionRecovery
 public import FLT.Mazur.ProperFiberEvaluationLocus
 public import FLT.Mazur.ProperFiberNeighborhood
 public import FLT.Mazur.ProperFiberTensorComplex
