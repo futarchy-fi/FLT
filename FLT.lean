@@ -6995,6 +6995,7 @@ public import FLT.Mazur.WeierstrassDividedTerminalZeroConicIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalZeroCrossedIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalZeroNodalChart
 public import FLT.Mazur.WeierstrassDividedZeroBoundaryFunctions
+public import FLT.Mazur.WeierstrassDividedZeroCycleAtlasFamily
 public import FLT.Mazur.WeierstrassDividedZeroCycleAttachmentBranches
 public import FLT.Mazur.WeierstrassDividedZeroCycleAttachmentCompatibility
 public import FLT.Mazur.WeierstrassDividedZeroCycleAttachmentExt
