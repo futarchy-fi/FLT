@@ -2717,6 +2717,7 @@ public import FLT.Mazur.AffineSectionLineCoefficientMap
 public import FLT.Mazur.AffineSectionLineGeometricPullback
 public import FLT.Mazur.AffineSectionLineGluing
 public import FLT.Mazur.AffineSectionLinePoint
+public import FLT.Mazur.AffineSectionLinePointRestriction
 public import FLT.Mazur.AffineSectionLinePullbackSquares
 public import FLT.Mazur.AffineSectionLineRankOne
 public import FLT.Mazur.AffineSectionLineReversePoint
