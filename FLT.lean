@@ -2503,6 +2503,7 @@ public import FLT.Mazur.AdicCompletionAlgEquiv
 public import FLT.Mazur.AdicCompletionPrincipal
 public import FLT.Mazur.AdicCompletionQuotientEquiv
 public import FLT.Mazur.AdicCompletionScalars
+public import FLT.Mazur.AdicFiniteGenerationLifting
 public import FLT.Mazur.AffineAdicCohomologyImage
 public import FLT.Mazur.AffineAdicFormalComparison
 public import FLT.Mazur.AffineAnnihilator
