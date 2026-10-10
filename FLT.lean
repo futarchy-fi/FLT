@@ -4093,6 +4093,7 @@ public import FLT.Mazur.GlueDataQuasiSeparated
 public import FLT.Mazur.GradedProjArbitraryBaseChange
 public import FLT.Mazur.GradedProjBaseChangeMap
 public import FLT.Mazur.GradedProjChartArbitraryBaseChange
+public import FLT.Mazur.GradedProjEventualGenerationCover
 public import FLT.Mazur.GradedProjPositiveBasis
 public import FLT.Mazur.GradedProjRegradedEvaluation
 public import FLT.Mazur.GradedProjRingEquiv
