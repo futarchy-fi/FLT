@@ -2997,7 +2997,9 @@ public import FLT.Mazur.CartesianStructurePositiveHomology
 public import FLT.Mazur.CartesianStructureSections
 public import FLT.Mazur.CartesianStructureTensorRestrictions
 public import FLT.Mazur.CartesianUpperCone
+public import FLT.Mazur.CartierAbelDirectImageSections
 public import FLT.Mazur.CartierAbelFiber
+public import FLT.Mazur.CartierAbelIntegralFiberSections
 public import FLT.Mazur.CartierAbelRelativeBaseChange
 public import FLT.Mazur.CartierAbelRelativeQuotient
 public import FLT.Mazur.CartierAbelSectionQuotient
@@ -4534,8 +4536,10 @@ public import FLT.Mazur.LineSheafSectionRigidity
 public import FLT.Mazur.LineStructureProjection
 public import FLT.Mazur.LineSubbundleGluing
 public import FLT.Mazur.LineSubbundleGluingPullback
+public import FLT.Mazur.LineTensorEquivalence
 public import FLT.Mazur.LineTensorInverseComparison
 public import FLT.Mazur.LineTensorInverseCompatibility
+public import FLT.Mazur.LineTensorSectionEquiv
 public import FLT.Mazur.LineTrivializationCocycle
 public import FLT.Mazur.LineTrivializationCocycleRecovery
 public import FLT.Mazur.LineTrivializationCoordinates
@@ -6155,6 +6159,10 @@ public import FLT.Mazur.TildeSourceSectionComparison
 public import FLT.Mazur.TorusChartScalars
 public import FLT.Mazur.TrivialLineTwistLocalization
 public import FLT.Mazur.TrivializedLineSheafLimitDescent
+public import FLT.Mazur.TwistedSectionIntegralCriterion
+public import FLT.Mazur.TwistedSectionPushforward
+public import FLT.Mazur.TwistedSectionPushforwardNaturality
+public import FLT.Mazur.TwistedSectionRegularity
 public import FLT.Mazur.UniformizerRootExtension
 public import FLT.Mazur.UnitIntegerModel
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryAffineSections
