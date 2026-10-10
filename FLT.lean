@@ -7094,6 +7094,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXResidueConicBoundaryGeometry
 public import FLT.Mazur.WeierstrassSuccessiveXResidueConicIntegralBoundary
 public import FLT.Mazur.WeierstrassSuccessiveXResidueDividedOverlap
 public import FLT.Mazur.WeierstrassSuccessiveXResidueFiber
+public import FLT.Mazur.WeierstrassSuccessiveXResidueIncidenceBoundary
 public import FLT.Mazur.WeierstrassSuccessiveXResidueIncidencePoints
 public import FLT.Mazur.WeierstrassSuccessiveXResidueIntegralNormalization
 public import FLT.Mazur.WeierstrassSuccessiveXResidueIntersections
