@@ -7001,6 +7001,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXResidueIncidencePoints
 public import FLT.Mazur.WeierstrassSuccessiveXResidueIntegralNormalization
 public import FLT.Mazur.WeierstrassSuccessiveXResidueIntersections
 public import FLT.Mazur.WeierstrassSuccessiveXResidueLineHorizontal
+public import FLT.Mazur.WeierstrassSuccessiveXResidueLineLocalization
 public import FLT.Mazur.WeierstrassSuccessiveXResidueMiddle
 public import FLT.Mazur.WeierstrassSuccessiveXResidueMiddleComponents
 public import FLT.Mazur.WeierstrassSuccessiveXResidueMiddleContraction
