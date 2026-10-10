@@ -2713,6 +2713,7 @@ public import FLT.Mazur.AffineSectionLineGluing
 public import FLT.Mazur.AffineSectionLinePoint
 public import FLT.Mazur.AffineSectionLinePullbackSquares
 public import FLT.Mazur.AffineSectionLineRankOne
+public import FLT.Mazur.AffineSectionLineReversePoint
 public import FLT.Mazur.AffineSectionLineSubobjectEquality
 public import FLT.Mazur.AffineSectionsReconstruction
 public import FLT.Mazur.AffineSmoothFiniteFlatCartier
