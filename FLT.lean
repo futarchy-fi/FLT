@@ -5812,6 +5812,7 @@ public import FLT.Mazur.ProperFamilyRigidifiedLineDescent
 public import FLT.Mazur.ProperFamilyRigidifiedLocalRepresentatives
 public import FLT.Mazur.ProperFamilyRigidifiedLocalTrivializations
 public import FLT.Mazur.ProperFamilyRigidifiedNamedTransitions
+public import FLT.Mazur.ProperFamilyRigidifiedRecoveryPairs
 public import FLT.Mazur.ProperFamilyRigidifiedTransitions
 public import FLT.Mazur.ProperFamilyRigidifiedTripleEdges
 public import FLT.Mazur.ProperFamilyRigidifiedTripleTransitions
@@ -6272,11 +6273,14 @@ public import FLT.Mazur.SchemeIndependentCanonicalFamily
 public import FLT.Mazur.SchemeIndependentCanonicalOverlap
 public import FLT.Mazur.SchemeIndependentCanonicalSource
 public import FLT.Mazur.SchemeIndependentDiagonalIdentity
+public import FLT.Mazur.SchemeIndependentEffectivePairCharts
+public import FLT.Mazur.SchemeIndependentEffectiveRecovery
 public import FLT.Mazur.SchemeIndependentFamilyAssemblyFullyFaithful
 public import FLT.Mazur.SchemeIndependentFamilyEquivalence
 public import FLT.Mazur.SchemeIndependentFamilyLineCategory
 public import FLT.Mazur.SchemeIndependentFamilyLineData
 public import FLT.Mazur.SchemeIndependentNormalizationCoherence
+public import FLT.Mazur.SchemeIndependentNormalizationRetraction
 public import FLT.Mazur.SchemeIndependentNormalizationSquare
 public import FLT.Mazur.SchemeIndependentPairNormalization
 public import FLT.Mazur.SchemeIndependentRecoveryNormalization
@@ -6347,6 +6351,8 @@ public import FLT.Mazur.SchemeRefinementReconstruction
 public import FLT.Mazur.SchemeRelativeNilpotentKernel
 public import FLT.Mazur.SchemeRelativeNilpotentSections
 public import FLT.Mazur.SchemeSectionFamilyProduct
+public import FLT.Mazur.SchemeSectionFrameCompatibility
+public import FLT.Mazur.SchemeSectionFrameNormalization
 public import FLT.Mazur.SchemeSourceTestOverlapRecognition
 public import FLT.Mazur.SchemeTripleOverlap
 public import FLT.Mazur.SchemeUnchangedOpen
