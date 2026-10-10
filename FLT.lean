@@ -2997,6 +2997,12 @@ public import FLT.Mazur.CartesianStructurePositiveHomology
 public import FLT.Mazur.CartesianStructureSections
 public import FLT.Mazur.CartesianStructureTensorRestrictions
 public import FLT.Mazur.CartesianUpperCone
+public import FLT.Mazur.CartierAbelFiber
+public import FLT.Mazur.CartierAbelRelativeBaseChange
+public import FLT.Mazur.CartierAbelRelativeQuotient
+public import FLT.Mazur.CartierAbelSectionQuotient
+public import FLT.Mazur.CartierAbelTwistBaseChange
+public import FLT.Mazur.CartierAbelTwistedSections
 public import FLT.Mazur.CartierAffineFppfDescent
 public import FLT.Mazur.CartierChartFlat
 public import FLT.Mazur.CartierCharts
@@ -4516,6 +4522,7 @@ public import FLT.Mazur.LineSectionTwistRestriction
 public import FLT.Mazur.LineSectionTwistSystem
 public import FLT.Mazur.LineSectionZeroDivisor
 public import FLT.Mazur.LineSectionZeroIdealOrbits
+public import FLT.Mazur.LineSectionZeroIdealPullback
 public import FLT.Mazur.LineSheafBidual
 public import FLT.Mazur.LineSheafDualEvaluation
 public import FLT.Mazur.LineSheafEndomorphismSheaf
@@ -5595,6 +5602,7 @@ public import FLT.Mazur.RelativePicardFppfSheaf
 public import FLT.Mazur.RelativePicardPresheaf
 public import FLT.Mazur.RelativePicardPresheafBaseChange
 public import FLT.Mazur.RelativePicardQuotient
+public import FLT.Mazur.RelativePicardTwistIso
 public import FLT.Mazur.RelativePinchingDescent
 public import FLT.Mazur.RelativePinchingLocalDescent
 public import FLT.Mazur.RelativePinchingNeighborhoods
