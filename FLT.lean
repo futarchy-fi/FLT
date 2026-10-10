@@ -6070,6 +6070,7 @@ public import FLT.Mazur.TensorOpenChartCommonBoundary
 public import FLT.Mazur.TensorOpenChartIntersection
 public import FLT.Mazur.TensorOpenChartOverlap
 public import FLT.Mazur.TensorOpenChartRange
+public import FLT.Mazur.TensorOpenChartTargetTransport
 public import FLT.Mazur.TensorOpenExteriorIntersection
 public import FLT.Mazur.TensorPowerDistribution
 public import FLT.Mazur.TensorPowerGeneratorOpen
@@ -6238,7 +6239,14 @@ public import FLT.Mazur.WeierstrassDilatationZeroResidue
 public import FLT.Mazur.WeierstrassDilatationZeroResidueBoundary
 public import FLT.Mazur.WeierstrassDilatationZeroResidueGeometry
 public import FLT.Mazur.WeierstrassDividedAdjacentBoundaryReciprocals
+public import FLT.Mazur.WeierstrassDividedAdjacentConicExterior
+public import FLT.Mazur.WeierstrassDividedAdjacentGlobalPunctures
 public import FLT.Mazur.WeierstrassDividedAdjacentIntegralBoundary
+public import FLT.Mazur.WeierstrassDividedAdjacentRetainedExterior
+public import FLT.Mazur.WeierstrassDividedAdjacentRetainedIntegral
+public import FLT.Mazur.WeierstrassDividedAdjacentRetainedIntersection
+public import FLT.Mazur.WeierstrassDividedAdjacentRetainedPunctures
+public import FLT.Mazur.WeierstrassDividedAdjacentRetainedTensor
 public import FLT.Mazur.WeierstrassDividedAdjacentTensorBoundary
 public import FLT.Mazur.WeierstrassDividedBoundaryNormalization
 public import FLT.Mazur.WeierstrassDividedDepthAffine
@@ -6375,6 +6383,7 @@ public import FLT.Mazur.WeierstrassDividedResidueAtlasFinite
 public import FLT.Mazur.WeierstrassDividedResidueAtlasRefinement
 public import FLT.Mazur.WeierstrassDividedResidueMiddleIntersection
 public import FLT.Mazur.WeierstrassDividedRetainedExteriorIntersection
+public import FLT.Mazur.WeierstrassDividedRetentionSuccessor
 public import FLT.Mazur.WeierstrassDividedSuccessiveOriginalY
 public import FLT.Mazur.WeierstrassDividedTensorAtlasComparison
 public import FLT.Mazur.WeierstrassDividedTensorYBoundary
@@ -7054,6 +7063,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXResidueBoundaryDisjoint
 public import FLT.Mazur.WeierstrassSuccessiveXResidueComponentPoints
 public import FLT.Mazur.WeierstrassSuccessiveXResidueConicBoundaryCoordinates
 public import FLT.Mazur.WeierstrassSuccessiveXResidueConicBoundaryGeometry
+public import FLT.Mazur.WeierstrassSuccessiveXResidueConicIntegralBoundary
 public import FLT.Mazur.WeierstrassSuccessiveXResidueDividedOverlap
 public import FLT.Mazur.WeierstrassSuccessiveXResidueFiber
 public import FLT.Mazur.WeierstrassSuccessiveXResidueIncidencePoints
