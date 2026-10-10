@@ -6190,6 +6190,7 @@ public import FLT.Mazur.UniformizerRootExtension
 public import FLT.Mazur.UnitIntegerModel
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryAffineSections
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryCoefficientGroup
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryCoordinateExt
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryCoordinateInverse
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryCoordinateSections
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryCoordinateUnits
