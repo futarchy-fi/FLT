@@ -4729,6 +4729,7 @@ public import FLT.Mazur.LocallySplitLineAtlasIndependence
 public import FLT.Mazur.LocallySplitLineAtlasSection
 public import FLT.Mazur.LocallySplitLineChartRefinement
 public import FLT.Mazur.LocallySplitLineDualChartCompatibility
+public import FLT.Mazur.LocallySplitLineIsomorphism
 public import FLT.Mazur.LocallySplitLineNormalizedChart
 public import FLT.Mazur.LocallySplitLineOpenRestriction
 public import FLT.Mazur.LocallySplitLinePointRecovery
@@ -5939,6 +5940,8 @@ public import FLT.Mazur.ProperOnlyRelativeAmpleFibers
 public import FLT.Mazur.ProperPointExtension
 public import FLT.Mazur.ProperPointedLineSheafDescent
 public import FLT.Mazur.ProperPushforwardReconstructionUnit
+public import FLT.Mazur.ProperRankOneDivisorNaturality
+public import FLT.Mazur.ProperRankOneNormalizedDivisor
 public import FLT.Mazur.ProperRelativeCartierAtlas
 public import FLT.Mazur.ProperRelativeCartierAtlasQuotient
 public import FLT.Mazur.ProperRelativeCartierBaseOrbits
@@ -5980,6 +5983,9 @@ public import FLT.Mazur.QuasiFiniteIdealQuotient
 public import FLT.Mazur.QuasiFiniteSmoothLocalEquation
 public import FLT.Mazur.QuasicoherentImageIdeal
 public import FLT.Mazur.QuasicoherentImageIdealOrbits
+public import FLT.Mazur.RankOneAmbientLineClassification
+public import FLT.Mazur.RankOneDirectImageSection
+public import FLT.Mazur.RankOneSectionDivisorUniqueness
 public import FLT.Mazur.RationalCyclicCartierGenerator
 public import FLT.Mazur.RationalCyclicGeneratorChange
 public import FLT.Mazur.RationalCyclicModuliPoint
@@ -6064,6 +6070,7 @@ public import FLT.Mazur.RelativePicardTwistIso
 public import FLT.Mazur.RelativePinchingDescent
 public import FLT.Mazur.RelativePinchingLocalDescent
 public import FLT.Mazur.RelativePinchingNeighborhoods
+public import FLT.Mazur.RelativeRankOneDivisorUniqueness
 public import FLT.Mazur.RelativeSectionAmpleBaseChange
 public import FLT.Mazur.RelativeSectionAmpleLocality
 public import FLT.Mazur.RelativeSerreAffineAcyclic
@@ -6705,6 +6712,8 @@ public import FLT.Mazur.TwistedSectionPushforwardNaturality
 public import FLT.Mazur.TwistedSectionRegularity
 public import FLT.Mazur.UniformizerRootExtension
 public import FLT.Mazur.UnitIntegerModel
+public import FLT.Mazur.UniversalDivisorCohomologyCharts
+public import FLT.Mazur.UniversalDivisorTwistedLine
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryActualNormalizationIso
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryAffineSections
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryArithmeticAction
