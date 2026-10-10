@@ -6719,6 +6719,7 @@ public import FLT.Mazur.WeierstrassOrdinaryTripleSchemes
 public import FLT.Mazur.WeierstrassOriginAutomorphismAffine
 public import FLT.Mazur.WeierstrassOriginAutomorphismCoordinates
 public import FLT.Mazur.WeierstrassOriginAutomorphismExt
+public import FLT.Mazur.WeierstrassOriginAutomorphismPoles
 public import FLT.Mazur.WeierstrassOriginAutomorphismSections
 public import FLT.Mazur.WeierstrassOriginCartier
 public import FLT.Mazur.WeierstrassOriginDivisorCoordinates
