@@ -6379,6 +6379,7 @@ public import FLT.Mazur.WeierstrassDividedResidueAtlasRefinement
 public import FLT.Mazur.WeierstrassDividedResidueMiddleIntersection
 public import FLT.Mazur.WeierstrassDividedRetainedExteriorIntersection
 public import FLT.Mazur.WeierstrassDividedRetentionSuccessor
+public import FLT.Mazur.WeierstrassDividedSkippedAtlasRange
 public import FLT.Mazur.WeierstrassDividedSkippedChartSupport
 public import FLT.Mazur.WeierstrassDividedSkippedTensorIntersection
 public import FLT.Mazur.WeierstrassDividedSuccessiveOriginalY
