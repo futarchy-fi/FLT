@@ -7123,6 +7123,7 @@ public import FLT.Mazur.WeierstrassVariableChangeCubicSubstitution
 public import FLT.Mazur.WeierstrassVariableChangeFrame
 public import FLT.Mazur.WeierstrassVariableChangeHomogeneous
 public import FLT.Mazur.WeierstrassVariableChangeIntegralEquation
+public import FLT.Mazur.WeierstrassVariableChangeIntegralIso
 public import FLT.Mazur.WeierstrassVariableChangeIntegralMorphism
 public import FLT.Mazur.WeierstrassVariableChangeLinear
 public import FLT.Mazur.WeierstrassVariableChangeLocalCoordinates
