@@ -2734,6 +2734,7 @@ public import FLT.Mazur.AffineSplitLineCoordinatePullback
 public import FLT.Mazur.AffineSplitLineCoordinates
 public import FLT.Mazur.AffineSplitLineFrameIndependence
 public import FLT.Mazur.AffineSplitLineNormalizedSource
+public import FLT.Mazur.AffineSplitLinePointRecovery
 public import FLT.Mazur.AffineSplitLineProjectivePullback
 public import FLT.Mazur.AffineSplitLineProjectiveRefinement
 public import FLT.Mazur.AffineSplitLineSectionCoordinates
