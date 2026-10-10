@@ -4729,6 +4729,7 @@ public import FLT.Mazur.MaximalAdicDetection
 public import FLT.Mazur.ModuleBinarySectionGluing
 public import FLT.Mazur.ModuleCechScalar
 public import FLT.Mazur.ModuleCocycleChartSections
+public import FLT.Mazur.ModuleCocycleSectionImage
 public import FLT.Mazur.ModuleCohomology
 public import FLT.Mazur.ModuleCohomologyExact
 public import FLT.Mazur.ModuleCohomologyRing
