@@ -4574,6 +4574,7 @@ public import FLT.Mazur.LocalClosedFiberBaseChange
 public import FLT.Mazur.LocalClosedFiberConnectedness
 public import FLT.Mazur.LocalClosedFiberTensorComplex
 public import FLT.Mazur.LocalClosedFiberUniversalFunctions
+public import FLT.Mazur.LocalFiberRegularQuotient
 public import FLT.Mazur.LocalFiberTensorInjectivity
 public import FLT.Mazur.LocalLineTwistLocalization
 public import FLT.Mazur.LocalLocalizationCartier
