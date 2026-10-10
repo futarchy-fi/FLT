@@ -7205,6 +7205,7 @@ public import FLT.Mazur.WeierstrassTripleInnerOutputRegular
 public import FLT.Mazur.WeierstrassTripleSlopeAlgebra
 public import FLT.Mazur.WeierstrassTripleTangentSlopeAlgebra
 public import FLT.Mazur.WeierstrassVariableChangeAdditionFormula
+public import FLT.Mazur.WeierstrassVariableChangeAffineProduct
 public import FLT.Mazur.WeierstrassVariableChangeAffineRestriction
 public import FLT.Mazur.WeierstrassVariableChangeCoordinateCover
 public import FLT.Mazur.WeierstrassVariableChangeCubicSubstitution
