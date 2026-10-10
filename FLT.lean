@@ -6326,6 +6326,7 @@ public import FLT.Mazur.SplitLineProjectiveUnitRecovery
 public import FLT.Mazur.SplitLineRestrictionSubobjects
 public import FLT.Mazur.SplitSheafLinePullback
 public import FLT.Mazur.SplitSheafLinePullbackComposition
+public import FLT.Mazur.SquareZeroScalarGeneration
 public import FLT.Mazur.StableAffineQuotientAffineDescent
 public import FLT.Mazur.StableAffineQuotientBaseCharts
 public import FLT.Mazur.StableAffineQuotientCartesian
