@@ -5086,6 +5086,7 @@ public import FLT.Mazur.PolygonInfinitesimalDivisor
 public import FLT.Mazur.PolygonInfinitesimalDivisorLine
 public import FLT.Mazur.PolygonInfinitesimalFamily
 public import FLT.Mazur.PolygonInfinitesimalFieldFiber
+public import FLT.Mazur.PolygonInfinitesimalLineCoherence
 public import FLT.Mazur.PolygonInfinitesimalMarkedBaseChange
 public import FLT.Mazur.PolygonInfinitesimalMarkings
 public import FLT.Mazur.PolygonInfinitesimalSeparated
