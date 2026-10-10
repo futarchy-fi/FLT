@@ -3350,6 +3350,7 @@ public import FLT.Mazur.DualAtlasGeometricBaseChange
 public import FLT.Mazur.DualAtlasGeometricCartesian
 public import FLT.Mazur.DualAtlasGeometricReverseSquare
 public import FLT.Mazur.DualAtlasGeometricSectionPullback
+public import FLT.Mazur.DualAtlasIteratedChartMaps
 public import FLT.Mazur.DualAtlasIteratedCharts
 public import FLT.Mazur.DualAtlasIteratedFrames
 public import FLT.Mazur.DualAtlasLineClassification
