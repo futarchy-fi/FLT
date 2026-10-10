@@ -6080,6 +6080,7 @@ public import FLT.Mazur.TensorOpenChartCommonBoundary
 public import FLT.Mazur.TensorOpenChartIntersection
 public import FLT.Mazur.TensorOpenChartOverlap
 public import FLT.Mazur.TensorOpenChartRange
+public import FLT.Mazur.TensorOpenChartTargetTransport
 public import FLT.Mazur.TensorOpenExteriorIntersection
 public import FLT.Mazur.TensorPowerDistribution
 public import FLT.Mazur.TensorPowerGeneratorOpen
@@ -6101,9 +6102,17 @@ public import FLT.Mazur.UniversalWeierstrassAuxiliaryCoordinateUnits
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryCoverage
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryEtale
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryFieldCoordinates
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryFrameUnits
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryFullBasis
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryIsomorphismUnique
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryLevel
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalEquation
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizationNatural
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizedFrame
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizedSections
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryPullbackSections
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryRelativeRigidity
+public import FLT.Mazur.UniversalWeierstrassAuxiliarySchemeRigidity
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryTorsionCover
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryTorsionDisjoint
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryTorsionSections
@@ -6169,6 +6178,9 @@ public import FLT.Mazur.WeierstrassAffineProductSwap
 public import FLT.Mazur.WeierstrassAffineRelativeSmoothCriterion
 public import FLT.Mazur.WeierstrassAffineRelativeTangent
 public import FLT.Mazur.WeierstrassAffineTripleDescent
+public import FLT.Mazur.WeierstrassAffineVariableChangeEquiv
+public import FLT.Mazur.WeierstrassAffineVariableChangeMap
+public import FLT.Mazur.WeierstrassAffineVariableChangeSections
 public import FLT.Mazur.WeierstrassAffineVietaFormula
 public import FLT.Mazur.WeierstrassAllOrdinaryTripleAlgebra
 public import FLT.Mazur.WeierstrassAllOrdinaryTripleCoordinates
@@ -6237,7 +6249,14 @@ public import FLT.Mazur.WeierstrassDilatationZeroResidue
 public import FLT.Mazur.WeierstrassDilatationZeroResidueBoundary
 public import FLT.Mazur.WeierstrassDilatationZeroResidueGeometry
 public import FLT.Mazur.WeierstrassDividedAdjacentBoundaryReciprocals
+public import FLT.Mazur.WeierstrassDividedAdjacentConicExterior
+public import FLT.Mazur.WeierstrassDividedAdjacentGlobalPunctures
 public import FLT.Mazur.WeierstrassDividedAdjacentIntegralBoundary
+public import FLT.Mazur.WeierstrassDividedAdjacentRetainedExterior
+public import FLT.Mazur.WeierstrassDividedAdjacentRetainedIntegral
+public import FLT.Mazur.WeierstrassDividedAdjacentRetainedIntersection
+public import FLT.Mazur.WeierstrassDividedAdjacentRetainedPunctures
+public import FLT.Mazur.WeierstrassDividedAdjacentRetainedTensor
 public import FLT.Mazur.WeierstrassDividedAdjacentTensorBoundary
 public import FLT.Mazur.WeierstrassDividedBoundaryNormalization
 public import FLT.Mazur.WeierstrassDividedDepthAffine
@@ -6374,6 +6393,7 @@ public import FLT.Mazur.WeierstrassDividedResidueAtlasFinite
 public import FLT.Mazur.WeierstrassDividedResidueAtlasRefinement
 public import FLT.Mazur.WeierstrassDividedResidueMiddleIntersection
 public import FLT.Mazur.WeierstrassDividedRetainedExteriorIntersection
+public import FLT.Mazur.WeierstrassDividedRetentionSuccessor
 public import FLT.Mazur.WeierstrassDividedSuccessiveOriginalY
 public import FLT.Mazur.WeierstrassDividedTensorAtlasComparison
 public import FLT.Mazur.WeierstrassDividedTensorYBoundary
@@ -6404,6 +6424,8 @@ public import FLT.Mazur.WeierstrassFourMarkingFrame
 public import FLT.Mazur.WeierstrassFourMarkingRigidity
 public import FLT.Mazur.WeierstrassFourPairAssociativity
 public import FLT.Mazur.WeierstrassFourTorsionFinite
+public import FLT.Mazur.WeierstrassFrameNormalEquation
+public import FLT.Mazur.WeierstrassFrameNormalization
 public import FLT.Mazur.WeierstrassGeneralizedEllipticModel
 public import FLT.Mazur.WeierstrassGeneralizedSmoothComparison
 public import FLT.Mazur.WeierstrassGenusOneFamily
@@ -6757,6 +6779,7 @@ public import FLT.Mazur.WeierstrassNodalResidueTransition
 public import FLT.Mazur.WeierstrassNonoppositeOrdinaryLift
 public import FLT.Mazur.WeierstrassNonzeroPointAffine
 public import FLT.Mazur.WeierstrassNormalFormPoles
+public import FLT.Mazur.WeierstrassNormalizedFrameUnique
 public import FLT.Mazur.WeierstrassNormalizedProjectivePoint
 public import FLT.Mazur.WeierstrassOrdinaryChartSpecialization
 public import FLT.Mazur.WeierstrassOrdinaryDomainLift
@@ -7050,6 +7073,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXResidueBoundaryDisjoint
 public import FLT.Mazur.WeierstrassSuccessiveXResidueComponentPoints
 public import FLT.Mazur.WeierstrassSuccessiveXResidueConicBoundaryCoordinates
 public import FLT.Mazur.WeierstrassSuccessiveXResidueConicBoundaryGeometry
+public import FLT.Mazur.WeierstrassSuccessiveXResidueConicIntegralBoundary
 public import FLT.Mazur.WeierstrassSuccessiveXResidueDividedOverlap
 public import FLT.Mazur.WeierstrassSuccessiveXResidueFiber
 public import FLT.Mazur.WeierstrassSuccessiveXResidueIncidencePoints
@@ -7113,6 +7137,8 @@ public import FLT.Mazur.WeierstrassTripleInnerOutputRegular
 public import FLT.Mazur.WeierstrassTripleSlopeAlgebra
 public import FLT.Mazur.WeierstrassTripleTangentSlopeAlgebra
 public import FLT.Mazur.WeierstrassVariableChangeFrame
+public import FLT.Mazur.WeierstrassVariableChangeIntegralEquation
+public import FLT.Mazur.WeierstrassVariableChangeScaledCoefficients
 public import FLT.Mazur.WeierstrassVerticalAdditionCharts
 public import FLT.Mazur.WeierstrassVerticalChartCompatibility
 public import FLT.Mazur.WeierstrassVietaNormalization
