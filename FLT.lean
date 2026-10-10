@@ -5373,6 +5373,7 @@ public import FLT.Mazur.PowerScalarSectionCoordinates
 public import FLT.Mazur.PowerSeriesLeadingComposition
 public import FLT.Mazur.PowerSeriesNilpotentHom
 public import FLT.Mazur.PowerSeriesQuotientCompletion
+public import FLT.Mazur.PowerSeriesStageReconstruction
 public import FLT.Mazur.PowerSeriesSubstitutionEquiv
 public import FLT.Mazur.PowerSeriesTruncatedPolynomial
 public import FLT.Mazur.PresentedFiniteCoefficientBranch
