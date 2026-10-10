@@ -5019,6 +5019,7 @@ public import FLT.Mazur.PolygonBoundaryDivisor
 public import FLT.Mazur.PolygonBoundaryLayerQuotient
 public import FLT.Mazur.PolygonBoundaryReductionSequence
 public import FLT.Mazur.PolygonBoundaryTensorQuotient
+public import FLT.Mazur.PolygonBoundaryUniformLifting
 public import FLT.Mazur.PolygonBranchDifferenceSheaf
 public import FLT.Mazur.PolygonCanonicalBranchGenerators
 public import FLT.Mazur.PolygonCanonicalChartPullback
