@@ -6071,6 +6071,7 @@ public import FLT.Mazur.WeierstrassOriginAutomorphismAffine
 public import FLT.Mazur.WeierstrassOriginAutomorphismCoordinates
 public import FLT.Mazur.WeierstrassOriginAutomorphismExt
 public import FLT.Mazur.WeierstrassOriginIdeal
+public import FLT.Mazur.WeierstrassOriginNeighborhoodCover
 public import FLT.Mazur.WeierstrassOriginParameter
 public import FLT.Mazur.WeierstrassOriginPoleCoordinates
 public import FLT.Mazur.WeierstrassOverlapDiagonalAlgebra
