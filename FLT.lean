@@ -5033,6 +5033,7 @@ public import FLT.Mazur.PolygonBoundaryParameterAnnihilator
 public import FLT.Mazur.PolygonBoundaryParameterImage
 public import FLT.Mazur.PolygonBoundaryReductionSequence
 public import FLT.Mazur.PolygonBoundaryScalarExactness
+public import FLT.Mazur.PolygonBoundarySeriesDegree
 public import FLT.Mazur.PolygonBoundaryStageVanishing
 public import FLT.Mazur.PolygonBoundaryTensorQuotient
 public import FLT.Mazur.PolygonBoundaryUniformLifting
