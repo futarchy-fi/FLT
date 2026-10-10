@@ -7233,6 +7233,7 @@ public import FLT.Mazur.WeierstrassDividedZeroEqualityCycle
 public import FLT.Mazur.WeierstrassDividedZeroEqualityCycleCoverage
 public import FLT.Mazur.WeierstrassDividedZeroEqualityCycleEndCharts
 public import FLT.Mazur.WeierstrassDividedZeroEqualityCycleIndices
+public import FLT.Mazur.WeierstrassDividedZeroEqualityCycleLineBranches
 public import FLT.Mazur.WeierstrassDividedZeroEqualityCycleRanges
 public import FLT.Mazur.WeierstrassDividedZeroEqualityPolygonMap
 public import FLT.Mazur.WeierstrassDividedZeroExteriorCoverage
