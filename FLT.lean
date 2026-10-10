@@ -5078,12 +5078,23 @@ public import FLT.Mazur.PolygonIdealModulePullback
 public import FLT.Mazur.PolygonIncidence
 public import FLT.Mazur.PolygonIncidenceQuotient
 public import FLT.Mazur.PolygonInfinitesimalAtlas
+public import FLT.Mazur.PolygonInfinitesimalBaseChange
+public import FLT.Mazur.PolygonInfinitesimalCoefficientDiagram
+public import FLT.Mazur.PolygonInfinitesimalCoefficientTransport
 public import FLT.Mazur.PolygonInfinitesimalDiagram
 public import FLT.Mazur.PolygonInfinitesimalFamily
+public import FLT.Mazur.PolygonInfinitesimalFieldFiber
+public import FLT.Mazur.PolygonInfinitesimalMarkedBaseChange
 public import FLT.Mazur.PolygonInfinitesimalMarkings
 public import FLT.Mazur.PolygonInfinitesimalSeparated
 public import FLT.Mazur.PolygonInfinitesimalSpecialFiber
+public import FLT.Mazur.PolygonInfinitesimalStageFiber
+public import FLT.Mazur.PolygonInfinitesimalStageGenus
+public import FLT.Mazur.PolygonInfinitesimalStageProper
+public import FLT.Mazur.PolygonInfinitesimalStageReduction
+public import FLT.Mazur.PolygonInfinitesimalStageRestriction
 public import FLT.Mazur.PolygonInfinitesimalStages
+public import FLT.Mazur.PolygonInfinitesimalSystem
 public import FLT.Mazur.PolygonLineHZero
 public import FLT.Mazur.PolygonLineNodeRestriction
 public import FLT.Mazur.PolygonLineNormalization
@@ -5150,6 +5161,8 @@ public import FLT.Mazur.PolygonSmoothLocus
 public import FLT.Mazur.PolygonSmoothingBaseChange
 public import FLT.Mazur.PolygonSmoothingBranchOpens
 public import FLT.Mazur.PolygonSmoothingBranchSwap
+public import FLT.Mazur.PolygonSmoothingCoefficientBranches
+public import FLT.Mazur.PolygonSmoothingCoefficientSquares
 public import FLT.Mazur.PolygonSmoothingFlat
 public import FLT.Mazur.PolygonSmoothingLeftPuncture
 public import FLT.Mazur.PolygonSmoothingMarkedSection
@@ -5466,6 +5479,7 @@ public import FLT.Mazur.ProjectiveLineConstantSections
 public import FLT.Mazur.ProjectiveLineEndpointCover
 public import FLT.Mazur.ProjectiveLineEndpoints
 public import FLT.Mazur.ProjectiveLineFieldExtension
+public import FLT.Mazur.ProjectiveLineHomogeneousCoordinates
 public import FLT.Mazur.ProjectiveLineInfinityTorusAlgebra
 public import FLT.Mazur.ProjectiveLineInfinityTorusCover
 public import FLT.Mazur.ProjectiveLineInfinityTorusGluing
@@ -5491,6 +5505,9 @@ public import FLT.Mazur.ProjectiveLineRightCanonicalRatios
 public import FLT.Mazur.ProjectiveLineScaledReciprocalGluing
 public import FLT.Mazur.ProjectiveLineScaling
 public import FLT.Mazur.ProjectiveLineSealedCanonicalRatios
+public import FLT.Mazur.ProjectiveLineSlopeNormalization
+public import FLT.Mazur.ProjectiveLineSlopeNormalizationCharts
+public import FLT.Mazur.ProjectiveLineSlopeNormalizationLinear
 public import FLT.Mazur.ProjectiveLineStandardCharts
 public import FLT.Mazur.ProjectiveLineStandardComparison
 public import FLT.Mazur.ProjectiveLineStandardOverlap
@@ -6613,6 +6630,7 @@ public import FLT.Mazur.WeierstrassDividedInitialExtendedSections
 public import FLT.Mazur.WeierstrassDividedInitialExterior
 public import FLT.Mazur.WeierstrassDividedInitialExteriorCurve
 public import FLT.Mazur.WeierstrassDividedInitialExteriorLaurent
+public import FLT.Mazur.WeierstrassDividedInitialExteriorOriented
 public import FLT.Mazur.WeierstrassDividedInitialExteriorProjective
 public import FLT.Mazur.WeierstrassDividedInitialGlobalResidueNodes
 public import FLT.Mazur.WeierstrassDividedInitialGlobalSections
@@ -6636,6 +6654,7 @@ public import FLT.Mazur.WeierstrassDividedInitialTensorChart
 public import FLT.Mazur.WeierstrassDividedInitialTensorInfinityIntersection
 public import FLT.Mazur.WeierstrassDividedInitialTensorIntersection
 public import FLT.Mazur.WeierstrassDividedInitialZeroInfinity
+public import FLT.Mazur.WeierstrassDividedInitialZeroLaurent
 public import FLT.Mazur.WeierstrassDividedInitialZeroSlopeChart
 public import FLT.Mazur.WeierstrassDividedLocalizedIntersection
 public import FLT.Mazur.WeierstrassDividedNonadjacentGlobalIntersection
@@ -7073,6 +7092,7 @@ public import FLT.Mazur.WeierstrassModificationXZeroResidue
 public import FLT.Mazur.WeierstrassModificationXZeroResidueBoundary
 public import FLT.Mazur.WeierstrassModificationXZeroResidueGeometry
 public import FLT.Mazur.WeierstrassModificationXZeroResidueInfinity
+public import FLT.Mazur.WeierstrassModificationXZeroResidueLaurent
 public import FLT.Mazur.WeierstrassModificationXZeroResidueSmooth
 public import FLT.Mazur.WeierstrassModificationYAlgebra
 public import FLT.Mazur.WeierstrassModificationYCompatibility
