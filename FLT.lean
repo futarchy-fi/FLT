@@ -4098,7 +4098,10 @@ public import FLT.Mazur.GradedProjArbitraryBaseChange
 public import FLT.Mazur.GradedProjBaseChangeMap
 public import FLT.Mazur.GradedProjChartArbitraryBaseChange
 public import FLT.Mazur.GradedProjChartSections
+public import FLT.Mazur.GradedProjCoefficientComparisonCoherence
+public import FLT.Mazur.GradedProjCoefficientComparisonNormalization
 public import FLT.Mazur.GradedProjCoefficientGeneration
+public import FLT.Mazur.GradedProjCoefficientLocalMap
 public import FLT.Mazur.GradedProjCoefficientSections
 public import FLT.Mazur.GradedProjDedekindFlatness
 public import FLT.Mazur.GradedProjEqualDegreeCover
@@ -4750,6 +4753,7 @@ public import FLT.Mazur.ModuleLineBundleOpenCover
 public import FLT.Mazur.ModuleLineBundlePullback
 public import FLT.Mazur.ModuleLineBundleTensorPullback
 public import FLT.Mazur.ModuleLineTensorExact
+public import FLT.Mazur.ModuleLocalSectionEvaluation
 public import FLT.Mazur.ModuleOpenCohomology
 public import FLT.Mazur.ModuleOpenCohomologyRestriction
 public import FLT.Mazur.ModulePresheafLinearHom
@@ -4762,7 +4766,9 @@ public import FLT.Mazur.ModulePullbackRestrictionPasting
 public import FLT.Mazur.ModulePullbackSectionCoherence
 public import FLT.Mazur.ModulePullbackSectionTransport
 public import FLT.Mazur.ModulePullbackTrivializationCoherence
+public import FLT.Mazur.ModulePullbackTrivializationSections
 public import FLT.Mazur.ModulePullbackUnitCoherence
+public import FLT.Mazur.ModulePushforwardSectionTransition
 public import FLT.Mazur.ModuleRingCohomologyExact
 public import FLT.Mazur.ModuleSealedPullbackRatio
 public import FLT.Mazur.ModuleSectionBaseChange
@@ -5021,6 +5027,7 @@ public import FLT.Mazur.OpenIrreducibleComponent
 public import FLT.Mazur.OpenModuleDirectImageCohomology
 public import FLT.Mazur.OpenModuleRestrictionCoherence
 public import FLT.Mazur.OpenModuleSectionScalars
+public import FLT.Mazur.OpenRestrictedScalarPullback
 public import FLT.Mazur.OpenRestrictionClosed
 public import FLT.Mazur.OpenRestrictionInclusion
 public import FLT.Mazur.OpenRestrictionLimitMap
@@ -5136,7 +5143,9 @@ public import FLT.Mazur.PolygonCompatibleSectionScalars
 public import FLT.Mazur.PolygonCompatibleVeronese
 public import FLT.Mazur.PolygonCompatibleZeroCoefficients
 public import FLT.Mazur.PolygonCompleteBaseMarkings
+public import FLT.Mazur.PolygonCompleteBoundaryFactorization
 public import FLT.Mazur.PolygonCompleteBoundaryLineComparison
+public import FLT.Mazur.PolygonCompleteBoundaryLocalComparison
 public import FLT.Mazur.PolygonCompleteBoundaryQuotient
 public import FLT.Mazur.PolygonCompleteBoundarySectionTransport
 public import FLT.Mazur.PolygonCompleteCoefficientLine
