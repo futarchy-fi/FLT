@@ -5736,6 +5736,7 @@ public import FLT.Mazur.ProperUniversalCartierDivisor
 public import FLT.Mazur.ProperUniversalDirectImageLine
 public import FLT.Mazur.ProperUniversalDirectImagePasting
 public import FLT.Mazur.ProperUniversalRetainedSection
+public import FLT.Mazur.ProperUniversalTensorIdentification
 public import FLT.Mazur.PullbackOverlapBaseChange
 public import FLT.Mazur.PuncturedNodeRestrictionComparison
 public import FLT.Mazur.PushforwardCech
