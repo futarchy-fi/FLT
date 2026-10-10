@@ -5117,6 +5117,7 @@ public import FLT.Mazur.PolygonCompatibleSectionScalars
 public import FLT.Mazur.PolygonCompatibleVeronese
 public import FLT.Mazur.PolygonCompatibleZeroCoefficients
 public import FLT.Mazur.PolygonCompleteBaseMarkings
+public import FLT.Mazur.PolygonCompleteMarkingSpecialization
 public import FLT.Mazur.PolygonComponentDistinct
 public import FLT.Mazur.PolygonComponentImages
 public import FLT.Mazur.PolygonConnected
