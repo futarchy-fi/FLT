@@ -4730,6 +4730,7 @@ public import FLT.Mazur.ModuleRingCohomologyExact
 public import FLT.Mazur.ModuleSealedPullbackRatio
 public import FLT.Mazur.ModuleSectionBaseChange
 public import FLT.Mazur.ModuleSectionCocycleIso
+public import FLT.Mazur.ModuleSectionExactness
 public import FLT.Mazur.ModuleSectionIsomorphismTransport
 public import FLT.Mazur.ModuleSectionMap
 public import FLT.Mazur.ModuleSectionProjectiveChart
@@ -4745,6 +4746,8 @@ public import FLT.Mazur.ModuleSectionRatioOpenPullback
 public import FLT.Mazur.ModuleSectionRatioPullback
 public import FLT.Mazur.ModuleSectionRatios
 public import FLT.Mazur.ModuleSectionRegularity
+public import FLT.Mazur.ModuleSectionScalarExactness
+public import FLT.Mazur.ModuleSectionTransport
 public import FLT.Mazur.ModuleSectionTransportRestriction
 public import FLT.Mazur.ModuleSectionUnit
 public import FLT.Mazur.ModuleSheafAdjointPathNaturality
@@ -5031,9 +5034,17 @@ public import FLT.Mazur.PolygonAtlas
 public import FLT.Mazur.PolygonAtlasCocone
 public import FLT.Mazur.PolygonAtlasSmoothLocus
 public import FLT.Mazur.PolygonBoundaryClosedLayer
+public import FLT.Mazur.PolygonBoundaryClosedLifting
 public import FLT.Mazur.PolygonBoundaryDivisor
+public import FLT.Mazur.PolygonBoundaryGradedExactness
+public import FLT.Mazur.PolygonBoundaryGradedParameter
 public import FLT.Mazur.PolygonBoundaryLayerQuotient
+public import FLT.Mazur.PolygonBoundaryParameterAnnihilator
+public import FLT.Mazur.PolygonBoundaryParameterImage
 public import FLT.Mazur.PolygonBoundaryReductionSequence
+public import FLT.Mazur.PolygonBoundaryScalarExactness
+public import FLT.Mazur.PolygonBoundarySeriesDegree
+public import FLT.Mazur.PolygonBoundaryStageVanishing
 public import FLT.Mazur.PolygonBoundaryTensorQuotient
 public import FLT.Mazur.PolygonBoundaryUniformLifting
 public import FLT.Mazur.PolygonBranchDifferenceSheaf
@@ -5056,10 +5067,12 @@ public import FLT.Mazur.PolygonCohomologyIncidence
 public import FLT.Mazur.PolygonCompatibleDegreeLifting
 public import FLT.Mazur.PolygonCompatibleDegreeProjection
 public import FLT.Mazur.PolygonCompatibleHomogeneousSections
+public import FLT.Mazur.PolygonCompatibleParameterRegularity
 public import FLT.Mazur.PolygonCompatibleSectionAlgebra
 public import FLT.Mazur.PolygonCompatibleSectionReduction
 public import FLT.Mazur.PolygonCompatibleSectionRing
 public import FLT.Mazur.PolygonCompatibleSectionScalars
+public import FLT.Mazur.PolygonCompatibleVeronese
 public import FLT.Mazur.PolygonComponentDistinct
 public import FLT.Mazur.PolygonComponentImages
 public import FLT.Mazur.PolygonConnected
@@ -5840,6 +5853,7 @@ public import FLT.Mazur.ScalarEndomorphismPullback
 public import FLT.Mazur.ScalarExtensionDirectSum
 public import FLT.Mazur.ScalarExtensionIsomorphismDescent
 public import FLT.Mazur.ScalarExtensionPullbackDescent
+public import FLT.Mazur.ScalarTowerDivision
 public import FLT.Mazur.SchematicDescentGluing
 public import FLT.Mazur.SchemeAffineAmbientTestCocycle
 public import FLT.Mazur.SchemeAffineAmbientTestNaturality
@@ -6200,6 +6214,7 @@ public import FLT.Mazur.SectionGradedGeneratorLocalization
 public import FLT.Mazur.SectionGradedIsoMultiplication
 public import FLT.Mazur.SectionGradedIsoRing
 public import FLT.Mazur.SectionGradedLineCoherence
+public import FLT.Mazur.SectionGradedLineKernel
 public import FLT.Mazur.SectionGradedLinePullback
 public import FLT.Mazur.SectionGradedLineRingCoherence
 public import FLT.Mazur.SectionGradedLocalCoordinates
