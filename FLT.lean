@@ -5816,6 +5816,7 @@ public import FLT.Mazur.ProperFamilyRigidifiedLocalRepresentatives
 public import FLT.Mazur.ProperFamilyRigidifiedLocalTrivializations
 public import FLT.Mazur.ProperFamilyRigidifiedNamedTransitions
 public import FLT.Mazur.ProperFamilyRigidifiedRecoveryPairs
+public import FLT.Mazur.ProperFamilyRigidifiedReturnedRecoveryCharts
 public import FLT.Mazur.ProperFamilyRigidifiedTransitions
 public import FLT.Mazur.ProperFamilyRigidifiedTripleEdges
 public import FLT.Mazur.ProperFamilyRigidifiedTripleTransitions
