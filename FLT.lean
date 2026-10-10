@@ -4868,6 +4868,7 @@ public import FLT.Mazur.PolygonNodeBranches
 public import FLT.Mazur.PolygonNodeChartScalars
 public import FLT.Mazur.PolygonNodeCompletionCriterion
 public import FLT.Mazur.PolygonNodeDenominatorCover
+public import FLT.Mazur.PolygonNodeDifferenceOpen
 public import FLT.Mazur.PolygonNodeDimension
 public import FLT.Mazur.PolygonNodeEqualizer
 public import FLT.Mazur.PolygonNodeEqualizerComparison
@@ -6121,6 +6122,7 @@ public import FLT.Mazur.WeierstrassDividedInitialZeroInfinity
 public import FLT.Mazur.WeierstrassDividedInitialZeroSlopeChart
 public import FLT.Mazur.WeierstrassDividedOlderAtlasIndex
 public import FLT.Mazur.WeierstrassDividedOlderConicExteriorDisjoint
+public import FLT.Mazur.WeierstrassDividedOlderConicPunctures
 public import FLT.Mazur.WeierstrassDividedOlderExtendedComponentOrigins
 public import FLT.Mazur.WeierstrassDividedOlderExtendedConicOverlap
 public import FLT.Mazur.WeierstrassDividedOlderExtendedDisjoint
@@ -6171,6 +6173,9 @@ public import FLT.Mazur.WeierstrassDividedSuccessiveOriginalY
 public import FLT.Mazur.WeierstrassDividedTensorAtlasComparison
 public import FLT.Mazur.WeierstrassDividedTensorYBoundary
 public import FLT.Mazur.WeierstrassDividedTerminalConicBoundary
+public import FLT.Mazur.WeierstrassDividedTerminalConicBranches
+public import FLT.Mazur.WeierstrassDividedTerminalConicCoordinates
+public import FLT.Mazur.WeierstrassDividedTerminalConicCover
 public import FLT.Mazur.WeierstrassDividedTerminalFullConicIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalLineDisjoint
 public import FLT.Mazur.WeierstrassDividedTerminalResidueAtlas
@@ -6752,6 +6757,8 @@ public import FLT.Mazur.WeierstrassSuccessiveXBaseChange
 public import FLT.Mazur.WeierstrassSuccessiveXBaseChangeCoordinates
 public import FLT.Mazur.WeierstrassSuccessiveXCoefficients
 public import FLT.Mazur.WeierstrassSuccessiveXConicBoundaryCoordinates
+public import FLT.Mazur.WeierstrassSuccessiveXConicPunctureCompatibility
+public import FLT.Mazur.WeierstrassSuccessiveXConicPuncturedParameters
 public import FLT.Mazur.WeierstrassSuccessiveXContraction
 public import FLT.Mazur.WeierstrassSuccessiveXDepthComparison
 public import FLT.Mazur.WeierstrassSuccessiveXDepthTensorOverlap
@@ -6814,6 +6821,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXSplitFiber
 public import FLT.Mazur.WeierstrassSuccessiveXTensorContraction
 public import FLT.Mazur.WeierstrassSuccessiveXTensorOverlap
 public import FLT.Mazur.WeierstrassSuccessiveXTensorOverlapGeometry
+public import FLT.Mazur.WeierstrassSuccessiveXTerminalConicBranches
 public import FLT.Mazur.WeierstrassSuccessiveXTerminalConicParameters
 public import FLT.Mazur.WeierstrassSuccessiveXTotalTransform
 public import FLT.Mazur.WeierstrassSuccessiveXZeroContraction
