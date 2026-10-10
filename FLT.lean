@@ -6768,6 +6768,7 @@ public import FLT.Mazur.WeierstrassDividedAdjacentExtendedEmptyIntersections
 public import FLT.Mazur.WeierstrassDividedAdjacentExtendedParameterIntersection
 public import FLT.Mazur.WeierstrassDividedAdjacentFullConicIntersection
 public import FLT.Mazur.WeierstrassDividedAdjacentGlobalPunctures
+public import FLT.Mazur.WeierstrassDividedAdjacentIndexedIntersection
 public import FLT.Mazur.WeierstrassDividedAdjacentIntegralBoundary
 public import FLT.Mazur.WeierstrassDividedAdjacentNormalizedIntersection
 public import FLT.Mazur.WeierstrassDividedAdjacentOrderedConicIntersection
@@ -6776,6 +6777,7 @@ public import FLT.Mazur.WeierstrassDividedAdjacentPairIntersections
 public import FLT.Mazur.WeierstrassDividedAdjacentParameterIntersection
 public import FLT.Mazur.WeierstrassDividedAdjacentParameterOrigins
 public import FLT.Mazur.WeierstrassDividedAdjacentParameterStructure
+public import FLT.Mazur.WeierstrassDividedAdjacentPunctureCompatibility
 public import FLT.Mazur.WeierstrassDividedAdjacentRetainedComponents
 public import FLT.Mazur.WeierstrassDividedAdjacentRetainedExterior
 public import FLT.Mazur.WeierstrassDividedAdjacentRetainedIntegral
@@ -7069,6 +7071,9 @@ public import FLT.Mazur.WeierstrassDividedZeroCycleHomExt
 public import FLT.Mazur.WeierstrassDividedZeroCycleIndexedExt
 public import FLT.Mazur.WeierstrassDividedZeroCycleIndices
 public import FLT.Mazur.WeierstrassDividedZeroCycleLocalMaps
+public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveAtlasBranches
+public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveAtlasNodes
+public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveBranchOverlaps
 public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveConicBranches
 public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveDescent
 public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveExt
@@ -7076,6 +7081,7 @@ public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveIndexedMap
 public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveLineBranches
 public import FLT.Mazur.WeierstrassDividedZeroCycleTerminalExt
 public import FLT.Mazur.WeierstrassDividedZeroCycleTerminalMap
+public import FLT.Mazur.WeierstrassDividedZeroCycleZeroAtlasConics
 public import FLT.Mazur.WeierstrassDividedZeroCycleZeroIndexedMap
 public import FLT.Mazur.WeierstrassDividedZeroExteriorCoverage
 public import FLT.Mazur.WeierstrassDividedZeroExteriorCurve
@@ -7756,6 +7762,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXBaseChangeCoordinates
 public import FLT.Mazur.WeierstrassSuccessiveXCoefficients
 public import FLT.Mazur.WeierstrassSuccessiveXConicBoundaryCoordinates
 public import FLT.Mazur.WeierstrassSuccessiveXConicPunctureCompatibility
+public import FLT.Mazur.WeierstrassSuccessiveXConicPunctureDescent
 public import FLT.Mazur.WeierstrassSuccessiveXConicPunctureInclusion
 public import FLT.Mazur.WeierstrassSuccessiveXConicPuncturedParameters
 public import FLT.Mazur.WeierstrassSuccessiveXContraction
