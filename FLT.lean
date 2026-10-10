@@ -4098,6 +4098,7 @@ public import FLT.Mazur.GradedProjArbitraryBaseChange
 public import FLT.Mazur.GradedProjBaseChangeMap
 public import FLT.Mazur.GradedProjChartArbitraryBaseChange
 public import FLT.Mazur.GradedProjChartSections
+public import FLT.Mazur.GradedProjCoefficientGeneration
 public import FLT.Mazur.GradedProjCoefficientSections
 public import FLT.Mazur.GradedProjDedekindFlatness
 public import FLT.Mazur.GradedProjEqualDegreeCover
