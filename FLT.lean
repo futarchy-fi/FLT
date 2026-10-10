@@ -5964,6 +5964,7 @@ public import FLT.Mazur.RetainedSubringZeroRing
 public import FLT.Mazur.RightDerivedDimensionShift
 public import FLT.Mazur.RigidifiedLineIsomorphismExistence
 public import FLT.Mazur.RigidifiedLineIsomorphisms
+public import FLT.Mazur.RigidifiedPicardBaseCharts
 public import FLT.Mazur.RigidifiedPicardClasses
 public import FLT.Mazur.RigidifiedPicardFppfComparison
 public import FLT.Mazur.RigidifiedPicardPresheaf
