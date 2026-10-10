@@ -3034,6 +3034,8 @@ public import FLT.Mazur.CartierIdealPullbackComparison
 public import FLT.Mazur.CartierIdealStalkDescent
 public import FLT.Mazur.CartierIdealStalkNeighborhood
 public import FLT.Mazur.CartierImmersionFinitePresentation
+public import FLT.Mazur.CartierRetainedLineBaseChange
+public import FLT.Mazur.CartierRetainedLineProjections
 public import FLT.Mazur.CartierSectionPairEquivalence
 public import FLT.Mazur.CartierSupportOpenDescent
 public import FLT.Mazur.CartierTensorRank
@@ -5596,6 +5598,8 @@ public import FLT.Mazur.ProperAmpleFiberNeighborhood
 public import FLT.Mazur.ProperAmpleFiberNoetherian
 public import FLT.Mazur.ProperAtlasAbelEquivalence
 public import FLT.Mazur.ProperAtlasAbelFiber
+public import FLT.Mazur.ProperAtlasAbelNaturality
+public import FLT.Mazur.ProperAtlasCanonicalBaseChange
 public import FLT.Mazur.ProperAtlasSectionBaseChange
 public import FLT.Mazur.ProperClosedLimitDescent
 public import FLT.Mazur.ProperCoherentCohomology
@@ -5616,6 +5620,7 @@ public import FLT.Mazur.ProperImmersedCover
 public import FLT.Mazur.ProperIntegralConstantSections
 public import FLT.Mazur.ProperLineFiberVanishing
 public import FLT.Mazur.ProperLineIsomorphismDescent
+public import FLT.Mazur.ProperLineIteratedFiberVanishing
 public import FLT.Mazur.ProperLinePushforwardBaseChange
 public import FLT.Mazur.ProperLinePushforwardLocalFree
 public import FLT.Mazur.ProperLinePushforwardMate
@@ -5634,7 +5639,9 @@ public import FLT.Mazur.ProperRelativeCartierAtlas
 public import FLT.Mazur.ProperRelativeCartierAtlasQuotient
 public import FLT.Mazur.ProperRelativeCartierBaseOrbits
 public import FLT.Mazur.ProperRelativeEvaluationLocus
+public import FLT.Mazur.ProperRelativeLineComparison
 public import FLT.Mazur.ProperRingCohomologyFinite
+public import FLT.Mazur.ProperSectionAffineCoverCartier
 public import FLT.Mazur.ProperSectionGluing
 public import FLT.Mazur.ProperSectionSplittingCriterion
 public import FLT.Mazur.ProperSmoothAffineFunctions
@@ -6093,6 +6100,7 @@ public import FLT.Mazur.SealedLineRestriction
 public import FLT.Mazur.SealedLineRestrictionSections
 public import FLT.Mazur.SectionBaseLocalization
 public import FLT.Mazur.SectionCartesianKernel
+public import FLT.Mazur.SectionCartierBaseOpen
 public import FLT.Mazur.SectionCartierOpenDescent
 public import FLT.Mazur.SectionChartGenerators
 public import FLT.Mazur.SectionCharts
@@ -6303,6 +6311,7 @@ public import FLT.Mazur.TrivializedLineSheafLimitDescent
 public import FLT.Mazur.TwistedSectionBaseChange
 public import FLT.Mazur.TwistedSectionBaseChangeRegularity
 public import FLT.Mazur.TwistedSectionBaseLineNaturality
+public import FLT.Mazur.TwistedSectionCartierTransport
 public import FLT.Mazur.TwistedSectionIntegralCriterion
 public import FLT.Mazur.TwistedSectionPullbackMonicity
 public import FLT.Mazur.TwistedSectionPushforward
