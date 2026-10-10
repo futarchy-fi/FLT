@@ -6694,6 +6694,7 @@ public import FLT.Mazur.WeierstrassDividedFinalNodesDistinct
 public import FLT.Mazur.WeierstrassDividedFinalRetainedConic
 public import FLT.Mazur.WeierstrassDividedFinalRetainedNodesDistinct
 public import FLT.Mazur.WeierstrassDividedFinalSplitBranchCharts
+public import FLT.Mazur.WeierstrassDividedFinalSplitLineCharts
 public import FLT.Mazur.WeierstrassDividedFinalTerminalComponents
 public import FLT.Mazur.WeierstrassDividedFinalTerminalOverComponents
 public import FLT.Mazur.WeierstrassDividedFinalZeroBranchCharts
