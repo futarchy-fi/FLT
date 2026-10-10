@@ -3697,6 +3697,7 @@ public import FLT.Mazur.FiniteFreeChartSectionLineComparison
 public import FLT.Mazur.FiniteFreeChartSectionLinePullback
 public import FLT.Mazur.FiniteFreeChartSectionLines
 public import FLT.Mazur.FiniteFreeChartTransitions
+public import FLT.Mazur.FiniteFreeChartUnitRefinement
 public import FLT.Mazur.FiniteFreeContragredient
 public import FLT.Mazur.FiniteFreeContragredientCoefficients
 public import FLT.Mazur.FiniteFreeContragredientEvaluation
