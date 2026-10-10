@@ -4273,6 +4273,7 @@ public import FLT.Mazur.HilbertTupleBasisTower
 public import FLT.Mazur.HomIntegerModel
 public import FLT.Mazur.HomogeneousFractionProjection
 public import FLT.Mazur.HomogeneousIdealWitness
+public import FLT.Mazur.HomogeneousLocalizationArbitraryBaseChange
 public import FLT.Mazur.HomogeneousLocalizationBaseChange
 public import FLT.Mazur.HomogeneousLocalizationGenerator
 public import FLT.Mazur.HomogeneousLocalizationRetraction
