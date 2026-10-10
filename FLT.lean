@@ -7220,6 +7220,7 @@ public import FLT.Mazur.WeierstrassVariableChangeLocalMorphism
 public import FLT.Mazur.WeierstrassVariableChangeProjectiveInverse
 public import FLT.Mazur.WeierstrassVariableChangeProjectivePoints
 public import FLT.Mazur.WeierstrassVariableChangeScaledCoefficients
+public import FLT.Mazur.WeierstrassVariableChangeSecant
 public import FLT.Mazur.WeierstrassVariableChangeZero
 public import FLT.Mazur.WeierstrassVerticalAdditionCharts
 public import FLT.Mazur.WeierstrassVerticalChartCompatibility
