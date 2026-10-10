@@ -5562,6 +5562,7 @@ public import FLT.Mazur.ProperSmoothLineRigidity
 public import FLT.Mazur.ProperSmoothPointedLineSheafDescent
 public import FLT.Mazur.ProperSmoothStructureSheaf
 public import FLT.Mazur.ProperSplitSectionFiberRegularity
+public import FLT.Mazur.ProperSplitSectionRelativeCartier
 public import FLT.Mazur.ProperStageAmpleFiberDescent
 public import FLT.Mazur.ProperStageBaseChangeLimit
 public import FLT.Mazur.ProperStageFiberProjection
