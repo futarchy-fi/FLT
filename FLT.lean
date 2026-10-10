@@ -4612,7 +4612,6 @@ public import FLT.Mazur.ModulePresheafPullbackSections
 public import FLT.Mazur.ModulePresheafTensorHom
 public import FLT.Mazur.ModulePresheafTensorPullback
 public import FLT.Mazur.ModulePullbackMapEquality
-public import FLT.Mazur.ModulePullbackRestrictionNaturality
 public import FLT.Mazur.ModulePullbackRestrictionPasting
 public import FLT.Mazur.ModulePullbackSectionCoherence
 public import FLT.Mazur.ModulePullbackSectionTransport
