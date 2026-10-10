@@ -6715,6 +6715,7 @@ public import FLT.Mazur.WeierstrassModificationXFiberBranches
 public import FLT.Mazur.WeierstrassModificationXFiberConic
 public import FLT.Mazur.WeierstrassModificationXFiberConicGeometry
 public import FLT.Mazur.WeierstrassModificationXFiberConicNodeParameter
+public import FLT.Mazur.WeierstrassModificationXFiberConicOpen
 public import FLT.Mazur.WeierstrassModificationXFiberConicQuotient
 public import FLT.Mazur.WeierstrassModificationXFiberConstantCast
 public import FLT.Mazur.WeierstrassModificationXFiberExteriorGeometry
