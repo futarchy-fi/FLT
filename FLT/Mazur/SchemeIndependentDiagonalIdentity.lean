@@ -39,4 +39,13 @@ theorem diagonal_of_normalize_refl (l r : Z ⟶ Y) (d : Y ⟶ Z)
   simp only [Category.assoc, Iso.hom_inv_id_app_assoc, Category.id_comp] at hc
   exact hc
 
+/-- A named identity coordinate detects the diagonal without unfolding the source modules. -/
+theorem diagonal_of_normalize_named_refl (l r : Z ⟶ Y) (d : Y ⟶ Z)
+    (c : Y ⟶ Y) (hc : c = 𝟙 Y) (hl : d ≫ l = c) (hr : d ≫ r = c)
+    (M : Y.Modules) (e : (pullback l).obj M ≅ (pullback r).obj M)
+    (h : normalize l r d c c hl hr M M e = Iso.refl _) :
+    DiagonalCompatible l r d (hl.trans hc) (hr.trans hc) M e := by
+  subst c
+  exact diagonal_of_normalize_refl l r d hl hr M e h
+
 end FLT.Mazur.SchemeIndependentPairNormalization
