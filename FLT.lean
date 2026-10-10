@@ -4630,6 +4630,7 @@ public import FLT.Mazur.LocalizedPolynomialStableStages
 public import FLT.Mazur.LocalizedSmoothFiniteFlatCartier
 public import FLT.Mazur.LocalizedSmoothLocalEquation
 public import FLT.Mazur.LocalizedTensorCancellation
+public import FLT.Mazur.LocallyFiniteFreeOpenCover
 public import FLT.Mazur.LocallyFramedSplitLineCoverIndependence
 public import FLT.Mazur.LocallyFramedSplitLineNaturality
 public import FLT.Mazur.LocallyFramedSplitLineProjective
