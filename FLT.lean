@@ -6530,6 +6530,7 @@ public import FLT.Mazur.WeierstrassDilatationZeroResidue
 public import FLT.Mazur.WeierstrassDilatationZeroResidueBoundary
 public import FLT.Mazur.WeierstrassDilatationZeroResidueGeometry
 public import FLT.Mazur.WeierstrassDividedAdjacentBoundaryReciprocals
+public import FLT.Mazur.WeierstrassDividedAdjacentComponentDisjoint
 public import FLT.Mazur.WeierstrassDividedAdjacentComponentInjectivity
 public import FLT.Mazur.WeierstrassDividedAdjacentComponentRanges
 public import FLT.Mazur.WeierstrassDividedAdjacentComponentStructure
