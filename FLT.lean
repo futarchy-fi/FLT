@@ -6526,6 +6526,7 @@ public import FLT.Mazur.WeierstrassDividedOlderZeroExtendedOrigins
 public import FLT.Mazur.WeierstrassDividedOlderZeroExtendedSections
 public import FLT.Mazur.WeierstrassDividedOlderZeroIndexedNodeCover
 public import FLT.Mazur.WeierstrassDividedOppositeBoundarySupport
+public import FLT.Mazur.WeierstrassDividedOrderedAdjacentComponents
 public import FLT.Mazur.WeierstrassDividedOrderedRetainedSections
 public import FLT.Mazur.WeierstrassDividedPreviousBoundaryAlgebra
 public import FLT.Mazur.WeierstrassDividedResidueAtlasExtension
