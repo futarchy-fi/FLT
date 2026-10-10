@@ -7210,6 +7210,7 @@ public import FLT.Mazur.WeierstrassModificationXFullNodeEqualizer
 public import FLT.Mazur.WeierstrassModificationXFullNodeEquiv
 public import FLT.Mazur.WeierstrassModificationXFullNodeFunctions
 public import FLT.Mazur.WeierstrassModificationXFullNodeGeometry
+public import FLT.Mazur.WeierstrassModificationXFullNodeIncidenceBranch
 public import FLT.Mazur.WeierstrassModificationXFullNodeIncidenceOrientation
 public import FLT.Mazur.WeierstrassModificationXFullNodeInverseCoordinates
 public import FLT.Mazur.WeierstrassModificationXFullNodeOpen
