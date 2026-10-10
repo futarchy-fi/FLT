@@ -6486,6 +6486,7 @@ public import FLT.Mazur.WeierstrassDividedTerminalResidueAtlas
 public import FLT.Mazur.WeierstrassDividedTerminalResidueBoundary
 public import FLT.Mazur.WeierstrassDividedTerminalResidueCharts
 public import FLT.Mazur.WeierstrassDividedTerminalZeroBoundary
+public import FLT.Mazur.WeierstrassDividedTerminalZeroBranchIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalZeroConicBranches
 public import FLT.Mazur.WeierstrassDividedTerminalZeroConicIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalZeroNodalChart
