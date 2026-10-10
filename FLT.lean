@@ -6589,6 +6589,7 @@ public import FLT.Mazur.WeierstrassIntegralSeparated
 public import FLT.Mazur.WeierstrassIntegralSmooth
 public import FLT.Mazur.WeierstrassIntegralTripleFlat
 public import FLT.Mazur.WeierstrassIntegralTripleProduct
+public import FLT.Mazur.WeierstrassIntegralUnitPoint
 public import FLT.Mazur.WeierstrassIntegralZeroSection
 public import FLT.Mazur.WeierstrassLineCubicFactorization
 public import FLT.Mazur.WeierstrassLocalAdditionCurveComparison
