@@ -5883,6 +5883,7 @@ public import FLT.Mazur.ProperLinePushforwardMate
 public import FLT.Mazur.ProperLinePushforwardTilde
 public import FLT.Mazur.ProperLineRankOneDetection
 public import FLT.Mazur.ProperLineRankOneDirectImage
+public import FLT.Mazur.ProperLineRankOneOpenFactorization
 public import FLT.Mazur.ProperLineSectionProjective
 public import FLT.Mazur.ProperLineSectionRankLocus
 public import FLT.Mazur.ProperLineSheafDescent
