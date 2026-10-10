@@ -7048,6 +7048,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXBaseChangeCoordinates
 public import FLT.Mazur.WeierstrassSuccessiveXCoefficients
 public import FLT.Mazur.WeierstrassSuccessiveXConicBoundaryCoordinates
 public import FLT.Mazur.WeierstrassSuccessiveXConicPunctureCompatibility
+public import FLT.Mazur.WeierstrassSuccessiveXConicPunctureInclusion
 public import FLT.Mazur.WeierstrassSuccessiveXConicPuncturedParameters
 public import FLT.Mazur.WeierstrassSuccessiveXContraction
 public import FLT.Mazur.WeierstrassSuccessiveXDepthComparison
