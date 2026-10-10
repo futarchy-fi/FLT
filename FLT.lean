@@ -5944,6 +5944,7 @@ public import FLT.Mazur.RelativePicardPresheaf
 public import FLT.Mazur.RelativePicardPresheafBaseChange
 public import FLT.Mazur.RelativePicardPullbackSquares
 public import FLT.Mazur.RelativePicardQuotient
+public import FLT.Mazur.RelativePicardTripleCoordinates
 public import FLT.Mazur.RelativePicardTripleTotalChart
 public import FLT.Mazur.RelativePicardTwistIso
 public import FLT.Mazur.RelativePinchingDescent
