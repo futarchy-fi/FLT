@@ -3508,6 +3508,7 @@ public import FLT.Mazur.EtaleAlgebraReduced
 public import FLT.Mazur.EtaleCoordinate
 public import FLT.Mazur.EtaleDimGe
 public import FLT.Mazur.EtaleDimLe
+public import FLT.Mazur.EtaleMarkingScheme
 public import FLT.Mazur.EvaluatedPrincipalRefinement
 public import FLT.Mazur.EventualTwistVanishing
 public import FLT.Mazur.ExactFunctorInjectiveExt
