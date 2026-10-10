@@ -7288,6 +7288,7 @@ public import FLT.Mazur.WeierstrassDividedZeroEqualityHomExt
 public import FLT.Mazur.WeierstrassDividedZeroEqualityIndexedExt
 public import FLT.Mazur.WeierstrassDividedZeroEqualityLengthTwoAttachmentExt
 public import FLT.Mazur.WeierstrassDividedZeroEqualityLengthTwoBranches
+public import FLT.Mazur.WeierstrassDividedZeroEqualityLengthTwoHomExt
 public import FLT.Mazur.WeierstrassDividedZeroEqualityPolygonMap
 public import FLT.Mazur.WeierstrassDividedZeroEqualityTerminalBranches
 public import FLT.Mazur.WeierstrassDividedZeroEqualityTerminalExt
