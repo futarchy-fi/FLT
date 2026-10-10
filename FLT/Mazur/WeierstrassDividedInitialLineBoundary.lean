@@ -45,7 +45,7 @@ local notation "L" => residueFiniteLineBoundaryMap hπ data D 0 h1 hstart hk r h
 local notation "ρ" => PolygonScaledReciprocal.reciprocal scale
 
 /-- The actual first line boundary, transported through the original initial transition. -/
-def initialLineBoundaryMap : Q →ₐ[K] K[T;T⁻¹] :=
+@[irreducible] def initialLineBoundaryMap : Q →ₐ[K] K[T;T⁻¹] :=
   ((ρ).comp L).comp (e).symm.toAlgHom
 
 /-- The original initial incidence keeps the inverse reciprocal scale. -/
@@ -53,6 +53,7 @@ theorem initialLineBoundaryMap_t :
     initialLineBoundaryMap hπ data D h1 hstart hk r hr scale
       (algebraMap A Q ((1 : K) ⊗ₜ[R] t₀)) =
         LaurentPolynomial.C (↑scale⁻¹ : K) * LaurentPolynomial.T 1 := by
+  rw [initialLineBoundaryMap]
   change ρ (L ((e).symm _)) = _
   rw [tensorOverlap_symm_t]
   erw [residueFiniteLineBoundaryMap_inverse hπ data D 0 h1 hstart hk r hr]
@@ -62,6 +63,7 @@ theorem initialLineBoundaryMap_t :
 theorem initialLineBoundaryMap_v :
     initialLineBoundaryMap hπ data D h1 hstart hk r hr scale
       (algebraMap A Q ((1 : K) ⊗ₜ[R] v₀)) = LaurentPolynomial.C r := by
+  rw [initialLineBoundaryMap]
   change ρ (L ((e).symm _)) = _
   rw [tensorOverlap_symm_v, map_mul]
   erw [residueFiniteLineBoundaryMap_inverse hπ data D 0 h1 hstart hk r hr,
