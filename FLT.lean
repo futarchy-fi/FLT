@@ -2676,6 +2676,7 @@ public import FLT.Mazur.AffinePicardComparison
 public import FLT.Mazur.AffinePicardSections
 public import FLT.Mazur.AffinePieceSectionLocalization
 public import FLT.Mazur.AffineProductMap
+public import FLT.Mazur.AffineProjectivePointLineCover
 public import FLT.Mazur.AffinePullbackCoefficientRecognition
 public import FLT.Mazur.AffinePullbackComparisonSections
 public import FLT.Mazur.AffinePullbackCompositeTransport
