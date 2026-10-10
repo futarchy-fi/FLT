@@ -5609,6 +5609,7 @@ public import FLT.Mazur.ProperFiberTensorComplex
 public import FLT.Mazur.ProperFieldCohomologyBaseChange
 public import FLT.Mazur.ProperFiniteFiberNeighborhood
 public import FLT.Mazur.ProperFinitePresentationEnvelope
+public import FLT.Mazur.ProperGlobalDirectImageCharts
 public import FLT.Mazur.ProperGlobalSectionCartier
 public import FLT.Mazur.ProperGlobalSectionFinite
 public import FLT.Mazur.ProperImmersedCover
