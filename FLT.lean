@@ -6915,6 +6915,8 @@ public import FLT.Mazur.WeierstrassDividedDepthMaps
 public import FLT.Mazur.WeierstrassDividedDepthOriginalOpen
 public import FLT.Mazur.WeierstrassDividedDepthStructure
 public import FLT.Mazur.WeierstrassDividedDepthYBoundary
+public import FLT.Mazur.WeierstrassDividedEqualityComponentEndpoints
+public import FLT.Mazur.WeierstrassDividedEqualityNodeFamily
 public import FLT.Mazur.WeierstrassDividedExterior
 public import FLT.Mazur.WeierstrassDividedExteriorBranchIntersections
 public import FLT.Mazur.WeierstrassDividedExteriorIntersections
@@ -7044,6 +7046,7 @@ public import FLT.Mazur.WeierstrassDividedInitialZeroSlopeChart
 public import FLT.Mazur.WeierstrassDividedLaurentTerminalAttachments
 public import FLT.Mazur.WeierstrassDividedLaurentTerminalEmbedding
 public import FLT.Mazur.WeierstrassDividedLaurentTerminalMap
+public import FLT.Mazur.WeierstrassDividedLaurentTerminalProjectiveComponent
 public import FLT.Mazur.WeierstrassDividedLocalizedIntersection
 public import FLT.Mazur.WeierstrassDividedNonadjacentGlobalIntersection
 public import FLT.Mazur.WeierstrassDividedNonadjacentTensorIntersection
@@ -7205,6 +7208,7 @@ public import FLT.Mazur.WeierstrassDividedZeroCycleZeroAtlasConics
 public import FLT.Mazur.WeierstrassDividedZeroCycleZeroIndexedMap
 public import FLT.Mazur.WeierstrassDividedZeroCycleZeroPositiveTensorCompatibility
 public import FLT.Mazur.WeierstrassDividedZeroCycleZeroTensorDesc
+public import FLT.Mazur.WeierstrassDividedZeroEqualityCycleIndices
 public import FLT.Mazur.WeierstrassDividedZeroExteriorCoverage
 public import FLT.Mazur.WeierstrassDividedZeroExteriorCurve
 public import FLT.Mazur.WeierstrassDividedZeroExteriorLaurent
@@ -7476,6 +7480,7 @@ public import FLT.Mazur.WeierstrassModificationXBaseChange
 public import FLT.Mazur.WeierstrassModificationXBaseChangeGenerators
 public import FLT.Mazur.WeierstrassModificationXCoefficients
 public import FLT.Mazur.WeierstrassModificationXConicBoundaryCharts
+public import FLT.Mazur.WeierstrassModificationXConicBoundaryIntersection
 public import FLT.Mazur.WeierstrassModificationXConicBoundaryOverlap
 public import FLT.Mazur.WeierstrassModificationXConicBoundaryParameters
 public import FLT.Mazur.WeierstrassModificationXConicFirstInverse
@@ -7968,6 +7973,8 @@ public import FLT.Mazur.WeierstrassSuccessiveXTensorContraction
 public import FLT.Mazur.WeierstrassSuccessiveXTensorOverlap
 public import FLT.Mazur.WeierstrassSuccessiveXTensorOverlapGeometry
 public import FLT.Mazur.WeierstrassSuccessiveXTerminalAffineCover
+public import FLT.Mazur.WeierstrassSuccessiveXTerminalAffineIntersection
+public import FLT.Mazur.WeierstrassSuccessiveXTerminalAffineStructure
 public import FLT.Mazur.WeierstrassSuccessiveXTerminalBranchIntersection
 public import FLT.Mazur.WeierstrassSuccessiveXTerminalConicBranches
 public import FLT.Mazur.WeierstrassSuccessiveXTerminalConicCover
@@ -7982,6 +7989,8 @@ public import FLT.Mazur.WeierstrassSuccessiveXTerminalLaurentParameters
 public import FLT.Mazur.WeierstrassSuccessiveXTerminalLaurentRange
 public import FLT.Mazur.WeierstrassSuccessiveXTerminalLaurentSmooth
 public import FLT.Mazur.WeierstrassSuccessiveXTerminalNodePunctures
+public import FLT.Mazur.WeierstrassSuccessiveXTerminalProjectiveIso
+public import FLT.Mazur.WeierstrassSuccessiveXTerminalProjectiveStructure
 public import FLT.Mazur.WeierstrassSuccessiveXTerminalSecondAffineChart
 public import FLT.Mazur.WeierstrassSuccessiveXTerminalSecondAffineGluing
 public import FLT.Mazur.WeierstrassSuccessiveXTotalTransform
