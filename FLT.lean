@@ -4443,6 +4443,7 @@ public import FLT.Mazur.IncreasingCechZeroCoordinates
 public import FLT.Mazur.IncreasingCechZeroRestriction
 public import FLT.Mazur.IncreasingCechZeroSections
 public import FLT.Mazur.InfinitesimalClosedFiberFunctions
+public import FLT.Mazur.InfinitesimalCoefficientLength
 public import FLT.Mazur.InfinitesimalStructureProjection
 public import FLT.Mazur.InjectiveHorseshoe
 public import FLT.Mazur.IntegerModelAffineProperDescent
