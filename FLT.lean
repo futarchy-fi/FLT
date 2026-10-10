@@ -2712,6 +2712,7 @@ public import FLT.Mazur.AffineScalarMapComposition
 public import FLT.Mazur.AffineScaledPullbackSections
 public import FLT.Mazur.AffineScaledTripleTransport
 public import FLT.Mazur.AffineSectionEvaluationCoordinates
+public import FLT.Mazur.AffineSectionLineCanonicalPoint
 public import FLT.Mazur.AffineSectionLineCanonicalPullback
 public import FLT.Mazur.AffineSectionLineCanonicalRestriction
 public import FLT.Mazur.AffineSectionLineChartRestriction
