@@ -6546,6 +6546,7 @@ public import FLT.Mazur.WeierstrassDividedInitialExtendedOrigins
 public import FLT.Mazur.WeierstrassDividedInitialExtendedSections
 public import FLT.Mazur.WeierstrassDividedInitialExterior
 public import FLT.Mazur.WeierstrassDividedInitialExteriorCurve
+public import FLT.Mazur.WeierstrassDividedInitialExteriorLaurent
 public import FLT.Mazur.WeierstrassDividedInitialGlobalResidueNodes
 public import FLT.Mazur.WeierstrassDividedInitialGlobalSections
 public import FLT.Mazur.WeierstrassDividedInitialGlobalTensorChart
