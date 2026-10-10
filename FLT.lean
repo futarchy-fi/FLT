@@ -4535,6 +4535,7 @@ public import FLT.Mazur.LineSubbundleGluingPullback
 public import FLT.Mazur.LineTensorEquivalence
 public import FLT.Mazur.LineTensorInverseComparison
 public import FLT.Mazur.LineTensorInverseCompatibility
+public import FLT.Mazur.LineTensorSectionEquiv
 public import FLT.Mazur.LineTrivializationCocycle
 public import FLT.Mazur.LineTrivializationCocycleRecovery
 public import FLT.Mazur.LineTrivializationCoordinates
