@@ -6073,6 +6073,7 @@ public import FLT.Mazur.UniversalWeierstrassAuxiliaryIsomorphismUnique
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryLevel
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalEquation
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizationNatural
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizedFrame
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizedSections
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryPullbackSections
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryRelativeRigidity
