@@ -5473,6 +5473,7 @@ public import FLT.Mazur.ProjectiveLineConstantSections
 public import FLT.Mazur.ProjectiveLineEndpointCover
 public import FLT.Mazur.ProjectiveLineEndpoints
 public import FLT.Mazur.ProjectiveLineFieldExtension
+public import FLT.Mazur.ProjectiveLineHomogeneousCoordinates
 public import FLT.Mazur.ProjectiveLineInfinityTorusAlgebra
 public import FLT.Mazur.ProjectiveLineInfinityTorusCover
 public import FLT.Mazur.ProjectiveLineInfinityTorusGluing
@@ -5498,6 +5499,9 @@ public import FLT.Mazur.ProjectiveLineRightCanonicalRatios
 public import FLT.Mazur.ProjectiveLineScaledReciprocalGluing
 public import FLT.Mazur.ProjectiveLineScaling
 public import FLT.Mazur.ProjectiveLineSealedCanonicalRatios
+public import FLT.Mazur.ProjectiveLineSlopeNormalization
+public import FLT.Mazur.ProjectiveLineSlopeNormalizationCharts
+public import FLT.Mazur.ProjectiveLineSlopeNormalizationLinear
 public import FLT.Mazur.ProjectiveLineStandardCharts
 public import FLT.Mazur.ProjectiveLineStandardComparison
 public import FLT.Mazur.ProjectiveLineStandardOverlap
@@ -6616,6 +6620,7 @@ public import FLT.Mazur.WeierstrassDividedInitialExtendedSections
 public import FLT.Mazur.WeierstrassDividedInitialExterior
 public import FLT.Mazur.WeierstrassDividedInitialExteriorCurve
 public import FLT.Mazur.WeierstrassDividedInitialExteriorLaurent
+public import FLT.Mazur.WeierstrassDividedInitialExteriorOriented
 public import FLT.Mazur.WeierstrassDividedInitialExteriorProjective
 public import FLT.Mazur.WeierstrassDividedInitialGlobalResidueNodes
 public import FLT.Mazur.WeierstrassDividedInitialGlobalSections
@@ -6639,6 +6644,7 @@ public import FLT.Mazur.WeierstrassDividedInitialTensorChart
 public import FLT.Mazur.WeierstrassDividedInitialTensorInfinityIntersection
 public import FLT.Mazur.WeierstrassDividedInitialTensorIntersection
 public import FLT.Mazur.WeierstrassDividedInitialZeroInfinity
+public import FLT.Mazur.WeierstrassDividedInitialZeroLaurent
 public import FLT.Mazur.WeierstrassDividedInitialZeroSlopeChart
 public import FLT.Mazur.WeierstrassDividedLocalizedIntersection
 public import FLT.Mazur.WeierstrassDividedNonadjacentGlobalIntersection
@@ -7076,6 +7082,7 @@ public import FLT.Mazur.WeierstrassModificationXZeroResidue
 public import FLT.Mazur.WeierstrassModificationXZeroResidueBoundary
 public import FLT.Mazur.WeierstrassModificationXZeroResidueGeometry
 public import FLT.Mazur.WeierstrassModificationXZeroResidueInfinity
+public import FLT.Mazur.WeierstrassModificationXZeroResidueLaurent
 public import FLT.Mazur.WeierstrassModificationXZeroResidueSmooth
 public import FLT.Mazur.WeierstrassModificationYAlgebra
 public import FLT.Mazur.WeierstrassModificationYCompatibility
