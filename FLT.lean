@@ -5993,6 +5993,7 @@ public import FLT.Mazur.RelativePicardFppfComparison
 public import FLT.Mazur.RelativePicardFppfCover
 public import FLT.Mazur.RelativePicardFppfPairs
 public import FLT.Mazur.RelativePicardFppfSheaf
+public import FLT.Mazur.RelativePicardFppfSheafCriterion
 public import FLT.Mazur.RelativePicardPresheaf
 public import FLT.Mazur.RelativePicardPresheafBaseChange
 public import FLT.Mazur.RelativePicardPullbackSquares
