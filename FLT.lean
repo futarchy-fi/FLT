@@ -2704,6 +2704,7 @@ public import FLT.Mazur.AffineScalarMapComposition
 public import FLT.Mazur.AffineScaledPullbackSections
 public import FLT.Mazur.AffineScaledTripleTransport
 public import FLT.Mazur.AffineSectionEvaluationCoordinates
+public import FLT.Mazur.AffineSectionLineRankOne
 public import FLT.Mazur.AffineSectionsReconstruction
 public import FLT.Mazur.AffineSmoothFiniteFlatCartier
 public import FLT.Mazur.AffineSourcePullbackSections
