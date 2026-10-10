@@ -5065,6 +5065,7 @@ public import FLT.Mazur.PolygonCanonicalTorusTransition
 public import FLT.Mazur.PolygonCartierGenerator
 public import FLT.Mazur.PolygonChartScaling
 public import FLT.Mazur.PolygonClassifiedFamily
+public import FLT.Mazur.PolygonClosedEvaluationLifting
 public import FLT.Mazur.PolygonClosedScalarLifting
 public import FLT.Mazur.PolygonCoconeComparison
 public import FLT.Mazur.PolygonCohomologyIncidence
