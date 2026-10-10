@@ -6134,6 +6134,7 @@ public import FLT.Mazur.SectionGradedIsoMultiplication
 public import FLT.Mazur.SectionGradedIsoRing
 public import FLT.Mazur.SectionGradedLineCoherence
 public import FLT.Mazur.SectionGradedLinePullback
+public import FLT.Mazur.SectionGradedLineRingCoherence
 public import FLT.Mazur.SectionGradedLocalCoordinates
 public import FLT.Mazur.SectionGradedMultiplication
 public import FLT.Mazur.SectionGradedPowerGenerators
