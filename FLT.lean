@@ -6833,6 +6833,7 @@ public import FLT.Mazur.WeierstrassDividedSuccessiveOriginalY
 public import FLT.Mazur.WeierstrassDividedTensorAtlasComparison
 public import FLT.Mazur.WeierstrassDividedTensorYBoundary
 public import FLT.Mazur.WeierstrassDividedTerminalAllExteriorNodes
+public import FLT.Mazur.WeierstrassDividedTerminalAtlasPushout
 public import FLT.Mazur.WeierstrassDividedTerminalBranchIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalBranchesNodeIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalComponentExclusions
