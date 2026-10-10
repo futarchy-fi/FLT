@@ -2585,6 +2585,7 @@ public import FLT.Mazur.AffineFiniteFreeAtlas
 public import FLT.Mazur.AffineFiniteFreeDirectedCover
 public import FLT.Mazur.AffineFiniteTypeModelSystem
 public import FLT.Mazur.AffineFpqcRefinement
+public import FLT.Mazur.AffineFramedLineHomExt
 public import FLT.Mazur.AffineFreeSectionLineBaseChange
 public import FLT.Mazur.AffineFreeSectionLineComparison
 public import FLT.Mazur.AffineFreeSectionLineTransport
