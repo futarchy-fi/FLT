@@ -2592,6 +2592,7 @@ public import FLT.Mazur.AffineFreeSheafCoordinateNormalization
 public import FLT.Mazur.AffineFreeSheafCoordinatePullback
 public import FLT.Mazur.AffineFreeSheafCoordinates
 public import FLT.Mazur.AffineFreeSheafSectionCoordinates
+public import FLT.Mazur.AffineGeneratorPointCoefficientTransport
 public import FLT.Mazur.AffineGeneratorPointLinearTransport
 public import FLT.Mazur.AffineGenericClosure
 public import FLT.Mazur.AffineGeometricChartDatum
@@ -2714,11 +2715,13 @@ public import FLT.Mazur.AffineSectionLineGluing
 public import FLT.Mazur.AffineSectionLinePoint
 public import FLT.Mazur.AffineSectionLinePullbackSquares
 public import FLT.Mazur.AffineSectionLineRankOne
+public import FLT.Mazur.AffineSectionLineReversePoint
 public import FLT.Mazur.AffineSectionLineSubobjectEquality
 public import FLT.Mazur.AffineSectionsReconstruction
 public import FLT.Mazur.AffineSmoothFiniteFlatCartier
 public import FLT.Mazur.AffineSourcePullbackSections
 public import FLT.Mazur.AffineSourceSectionComparison
+public import FLT.Mazur.AffineSplitLineAmbientTransport
 public import FLT.Mazur.AffineSplitLineCoordinatePullback
 public import FLT.Mazur.AffineSplitLineCoordinates
 public import FLT.Mazur.AffineSplitLineFrameIndependence
@@ -4525,6 +4528,13 @@ public import FLT.Mazur.LocallySmoothFiniteFlatCartier
 public import FLT.Mazur.LocallySmoothQuasiFiniteCartier
 public import FLT.Mazur.LocallySplitInclusionPullback
 public import FLT.Mazur.LocallySplitLineAmbientChart
+public import FLT.Mazur.LocallySplitLineAmbientTransport
+public import FLT.Mazur.LocallySplitLineAtlasIndependence
+public import FLT.Mazur.LocallySplitLineAtlasSection
+public import FLT.Mazur.LocallySplitLineChartRefinement
+public import FLT.Mazur.LocallySplitLineDualChartCompatibility
+public import FLT.Mazur.LocallySplitLineOpenRestriction
+public import FLT.Mazur.LocallySplitLineSourceTransport
 public import FLT.Mazur.LocallySplitSheafPullback
 public import FLT.Mazur.LocallySplitSheafTransport
 public import FLT.Mazur.MarkedIntegerModel
@@ -5999,9 +6009,11 @@ public import FLT.Mazur.SplitLineCoordinateNaturality
 public import FLT.Mazur.SplitLineImageChart
 public import FLT.Mazur.SplitLinePrincipalPoints
 public import FLT.Mazur.SplitLineProjectiveFrame
+public import FLT.Mazur.SplitLineProjectiveLinearTransport
 public import FLT.Mazur.SplitLineProjectiveMorphism
 public import FLT.Mazur.SplitLineProjectiveNaturality
 public import FLT.Mazur.SplitLineProjectivePullback
+public import FLT.Mazur.SplitLineProjectiveUnitRecovery
 public import FLT.Mazur.SplitSheafLinePullback
 public import FLT.Mazur.SplitSheafLinePullbackComposition
 public import FLT.Mazur.StableAffineQuotientAffineDescent
