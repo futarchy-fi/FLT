@@ -5446,6 +5446,7 @@ public import FLT.Mazur.ProjectiveLineConstantSections
 public import FLT.Mazur.ProjectiveLineEndpointCover
 public import FLT.Mazur.ProjectiveLineEndpoints
 public import FLT.Mazur.ProjectiveLineFieldExtension
+public import FLT.Mazur.ProjectiveLineHomogeneousCoordinates
 public import FLT.Mazur.ProjectiveLineInfinityTorusAlgebra
 public import FLT.Mazur.ProjectiveLineInfinityTorusCover
 public import FLT.Mazur.ProjectiveLineInfinityTorusGluing
