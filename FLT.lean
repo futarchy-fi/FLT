@@ -7967,6 +7967,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXTerminalLaurentParameters
 public import FLT.Mazur.WeierstrassSuccessiveXTerminalLaurentRange
 public import FLT.Mazur.WeierstrassSuccessiveXTerminalLaurentSmooth
 public import FLT.Mazur.WeierstrassSuccessiveXTerminalNodePunctures
+public import FLT.Mazur.WeierstrassSuccessiveXTerminalProjectiveIso
 public import FLT.Mazur.WeierstrassSuccessiveXTerminalSecondAffineChart
 public import FLT.Mazur.WeierstrassSuccessiveXTerminalSecondAffineGluing
 public import FLT.Mazur.WeierstrassSuccessiveXTotalTransform
