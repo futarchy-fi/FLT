@@ -4532,6 +4532,7 @@ public import FLT.Mazur.LineSheafSectionRigidity
 public import FLT.Mazur.LineStructureProjection
 public import FLT.Mazur.LineSubbundleGluing
 public import FLT.Mazur.LineSubbundleGluingPullback
+public import FLT.Mazur.LineTensorEquivalence
 public import FLT.Mazur.LineTensorInverseComparison
 public import FLT.Mazur.LineTensorInverseCompatibility
 public import FLT.Mazur.LineTrivializationCocycle
