@@ -2522,6 +2522,7 @@ public import FLT.Mazur.AffineCanonicalMapCompatibility
 public import FLT.Mazur.AffineCanonicalOverlapChart
 public import FLT.Mazur.AffineCanonicalOverlapRecognition
 public import FLT.Mazur.AffineCartesianSectionScalars
+public import FLT.Mazur.AffineChartSectionLineRecovery
 public import FLT.Mazur.AffineChartSectionLocalization
 public import FLT.Mazur.AffineChartSourceScalars
 public import FLT.Mazur.AffineClosedLimitDescent
@@ -2585,6 +2586,7 @@ public import FLT.Mazur.AffineFiniteFreeAtlas
 public import FLT.Mazur.AffineFiniteFreeDirectedCover
 public import FLT.Mazur.AffineFiniteTypeModelSystem
 public import FLT.Mazur.AffineFpqcRefinement
+public import FLT.Mazur.AffineFramedLineHomExt
 public import FLT.Mazur.AffineFreeSectionLineBaseChange
 public import FLT.Mazur.AffineFreeSectionLineComparison
 public import FLT.Mazur.AffineFreeSectionLineTransport
@@ -2674,6 +2676,7 @@ public import FLT.Mazur.AffinePicardComparison
 public import FLT.Mazur.AffinePicardSections
 public import FLT.Mazur.AffinePieceSectionLocalization
 public import FLT.Mazur.AffineProductMap
+public import FLT.Mazur.AffineProjectivePointLineCover
 public import FLT.Mazur.AffinePullbackCoefficientRecognition
 public import FLT.Mazur.AffinePullbackComparisonSections
 public import FLT.Mazur.AffinePullbackCompositeTransport
@@ -2709,10 +2712,14 @@ public import FLT.Mazur.AffineScalarMapComposition
 public import FLT.Mazur.AffineScaledPullbackSections
 public import FLT.Mazur.AffineScaledTripleTransport
 public import FLT.Mazur.AffineSectionEvaluationCoordinates
+public import FLT.Mazur.AffineSectionLineCanonicalPullback
+public import FLT.Mazur.AffineSectionLineCanonicalRestriction
+public import FLT.Mazur.AffineSectionLineChartRestriction
 public import FLT.Mazur.AffineSectionLineCoefficientMap
 public import FLT.Mazur.AffineSectionLineGeometricPullback
 public import FLT.Mazur.AffineSectionLineGluing
 public import FLT.Mazur.AffineSectionLinePoint
+public import FLT.Mazur.AffineSectionLinePointRestriction
 public import FLT.Mazur.AffineSectionLinePullbackSquares
 public import FLT.Mazur.AffineSectionLineRankOne
 public import FLT.Mazur.AffineSectionLineReversePoint
@@ -3285,6 +3292,9 @@ public import FLT.Mazur.DivisorTensorSequence
 public import FLT.Mazur.DivisorTwistedDegree
 public import FLT.Mazur.DivisorTwistedSequence
 public import FLT.Mazur.DoubleRootComponentBound
+public import FLT.Mazur.DualAtlasSectionChartPoints
+public import FLT.Mazur.DualAtlasSectionLocalLines
+public import FLT.Mazur.DualAtlasSectionNormalizedRefinement
 public import FLT.Mazur.EllipticAbstractComponentInjection
 public import FLT.Mazur.EllipticAbstractGoodReductionClosure
 public import FLT.Mazur.EllipticAbstractMultiplicativeComponents
