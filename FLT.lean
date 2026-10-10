@@ -5988,6 +5988,7 @@ public import FLT.Mazur.SplitLineImageChart
 public import FLT.Mazur.SplitLinePrincipalPoints
 public import FLT.Mazur.SplitLineProjectiveFrame
 public import FLT.Mazur.SplitLineProjectiveMorphism
+public import FLT.Mazur.SplitLineProjectiveNaturality
 public import FLT.Mazur.SplitLineProjectivePullback
 public import FLT.Mazur.SplitSheafLinePullback
 public import FLT.Mazur.SplitSheafLinePullbackComposition
