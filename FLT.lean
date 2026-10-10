@@ -4576,6 +4576,7 @@ public import FLT.Mazur.LineSubbundleGluingPullback
 public import FLT.Mazur.LineTensorEquivalence
 public import FLT.Mazur.LineTensorInverseComparison
 public import FLT.Mazur.LineTensorInverseCompatibility
+public import FLT.Mazur.LineTensorLeftCancellation
 public import FLT.Mazur.LineTensorSectionEquiv
 public import FLT.Mazur.LineTensorSectionPullback
 public import FLT.Mazur.LineTensorSectionTransport
