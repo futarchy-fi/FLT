@@ -5821,6 +5821,7 @@ public import FLT.Mazur.ProperFamilyRigidifiedEffectiveRecoveryCharts
 public import FLT.Mazur.ProperFamilyRigidifiedFppfCocycles
 public import FLT.Mazur.ProperFamilyRigidifiedFppfDiagonals
 public import FLT.Mazur.ProperFamilyRigidifiedFppfPairs
+public import FLT.Mazur.ProperFamilyRigidifiedGlobalTrivialization
 public import FLT.Mazur.ProperFamilyRigidifiedIndependentHomReturn
 public import FLT.Mazur.ProperFamilyRigidifiedIndependentReturn
 public import FLT.Mazur.ProperFamilyRigidifiedLineDescent
