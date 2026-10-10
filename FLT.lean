@@ -7119,6 +7119,7 @@ public import FLT.Mazur.WeierstrassTripleTangentSlopeAlgebra
 public import FLT.Mazur.WeierstrassVariableChangeFrame
 public import FLT.Mazur.WeierstrassVariableChangeHomogeneous
 public import FLT.Mazur.WeierstrassVariableChangeIntegralEquation
+public import FLT.Mazur.WeierstrassVariableChangeLinear
 public import FLT.Mazur.WeierstrassVariableChangeScaledCoefficients
 public import FLT.Mazur.WeierstrassVerticalAdditionCharts
 public import FLT.Mazur.WeierstrassVerticalChartCompatibility
