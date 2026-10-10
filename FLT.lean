@@ -4043,9 +4043,11 @@ public import FLT.Mazur.GroupMarkingBaseChange
 public import FLT.Mazur.GroupMarkingTransport
 public import FLT.Mazur.GroupMarkingTransportNaturality
 public import FLT.Mazur.GroupSectionBaseChange
+public import FLT.Mazur.GroupTorsionBaseChange
 public import FLT.Mazur.GroupTorsionCommutativeStructure
 public import FLT.Mazur.GroupTorsionProper
 public import FLT.Mazur.GroupTorsionScheme
+public import FLT.Mazur.GroupTorsionTransport
 public import FLT.Mazur.HenselianRingEquivalence
 public import FLT.Mazur.HenselianSmallCubic
 public import FLT.Mazur.HigherDirectImageOpenSheafification
@@ -6184,6 +6186,7 @@ public import FLT.Mazur.UniversalWeierstrassAuxiliaryEtale
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryFieldCoordinates
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryFrameUnits
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryFullBasis
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryFullMarkingSections
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryFullNormalizedMarking
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryIsomorphismUnique
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryLevel
@@ -6195,12 +6198,17 @@ public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizationInvariant
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizationNatural
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizedFrame
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizedIsomorphism
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizedMarkingSections
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizedParameter
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizedSections
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizedTorsionBasis
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryPointCoordinates
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryProperNormalization
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryPullbackSections
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryRelativePoint
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryRelativeRigidity
 public import FLT.Mazur.UniversalWeierstrassAuxiliarySchemeRigidity
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryTorsionBasisMaps
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryTorsionCover
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryTorsionDisjoint
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryTorsionSections
