@@ -6227,6 +6227,7 @@ public import FLT.Mazur.TrivialLineTwistLocalization
 public import FLT.Mazur.TrivializedLineSheafLimitDescent
 public import FLT.Mazur.TwistedSectionBaseChange
 public import FLT.Mazur.TwistedSectionBaseChangeRegularity
+public import FLT.Mazur.TwistedSectionBaseLineNaturality
 public import FLT.Mazur.TwistedSectionIntegralCriterion
 public import FLT.Mazur.TwistedSectionPullbackMonicity
 public import FLT.Mazur.TwistedSectionPushforward
