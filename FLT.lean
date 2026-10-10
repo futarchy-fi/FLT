@@ -2704,6 +2704,9 @@ public import FLT.Mazur.AffineScalarMapComposition
 public import FLT.Mazur.AffineScaledPullbackSections
 public import FLT.Mazur.AffineScaledTripleTransport
 public import FLT.Mazur.AffineSectionEvaluationCoordinates
+public import FLT.Mazur.AffineSectionLineGeometricPullback
+public import FLT.Mazur.AffineSectionLineGluing
+public import FLT.Mazur.AffineSectionLineRankOne
 public import FLT.Mazur.AffineSectionsReconstruction
 public import FLT.Mazur.AffineSmoothFiniteFlatCartier
 public import FLT.Mazur.AffineSourcePullbackSections
@@ -3626,6 +3629,7 @@ public import FLT.Mazur.FiniteFlatSubschemeQuotient
 public import FLT.Mazur.FiniteFreeChartProjectiveRestriction
 public import FLT.Mazur.FiniteFreeChartProjectiveTransitions
 public import FLT.Mazur.FiniteFreeChartRestriction
+public import FLT.Mazur.FiniteFreeChartSectionLineComparison
 public import FLT.Mazur.FiniteFreeChartSectionLinePullback
 public import FLT.Mazur.FiniteFreeChartSectionLines
 public import FLT.Mazur.FiniteFreeChartTransitions
@@ -4371,6 +4375,8 @@ public import FLT.Mazur.LineSheafLocalEndomorphisms
 public import FLT.Mazur.LineSheafScalarAutomorphisms
 public import FLT.Mazur.LineSheafSectionRigidity
 public import FLT.Mazur.LineStructureProjection
+public import FLT.Mazur.LineSubbundleGluing
+public import FLT.Mazur.LineSubbundleGluingPullback
 public import FLT.Mazur.LineTensorInverseComparison
 public import FLT.Mazur.LineTensorInverseCompatibility
 public import FLT.Mazur.LineTrivializationCocycle
@@ -4418,6 +4424,7 @@ public import FLT.Mazur.LocallyFreeProjectiveQuotient
 public import FLT.Mazur.LocallyNoetherianUniversalStructureSheaf
 public import FLT.Mazur.LocallySmoothFiniteFlatCartier
 public import FLT.Mazur.LocallySmoothQuasiFiniteCartier
+public import FLT.Mazur.LocallySplitInclusionPullback
 public import FLT.Mazur.MarkedIntegerModel
 public import FLT.Mazur.MaximalAdicDetection
 public import FLT.Mazur.ModuleBinarySectionGluing
@@ -4622,6 +4629,7 @@ public import FLT.Mazur.NoetherianUniversalStructureSheaf
 public import FLT.Mazur.NonzeroLineSectionExact
 public import FLT.Mazur.NormalizedSectionLine
 public import FLT.Mazur.NormalizedSectionLineBaseChange
+public import FLT.Mazur.NormalizedSectionLineCommonPrincipal
 public import FLT.Mazur.NormalizedSectionLineLinearBaseChange
 public import FLT.Mazur.NormalizedSectionLineLinearTransport
 public import FLT.Mazur.NormalizedSectionLineOverlapBaseChange
