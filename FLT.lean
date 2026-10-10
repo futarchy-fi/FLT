@@ -5609,6 +5609,7 @@ public import FLT.Mazur.ProperAtlasAbelFiber
 public import FLT.Mazur.ProperAtlasAbelNaturality
 public import FLT.Mazur.ProperAtlasCanonicalBaseChange
 public import FLT.Mazur.ProperAtlasSectionBaseChange
+public import FLT.Mazur.ProperChangedBaseCartierSections
 public import FLT.Mazur.ProperClosedLimitDescent
 public import FLT.Mazur.ProperCoherentCohomology
 public import FLT.Mazur.ProperCohomologyFieldVanishing
