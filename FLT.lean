@@ -5164,6 +5164,7 @@ public import FLT.Mazur.PowerSeriesSubstitutionEquiv
 public import FLT.Mazur.PresentedFiniteCoefficientBranch
 public import FLT.Mazur.PrimeCharacteristicScalar
 public import FLT.Mazur.PrimeCoefficientLocalization
+public import FLT.Mazur.PrimeLocalFiberRegularQuotient
 public import FLT.Mazur.PrimeQuasiFiniteSmoothCartier
 public import FLT.Mazur.PrimeSmoothFiniteFlatCartier
 public import FLT.Mazur.PrimeSmoothLocalizationCartier
