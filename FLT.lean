@@ -5734,6 +5734,7 @@ public import FLT.Mazur.WeierstrassDividedInitialZeroInfinity
 public import FLT.Mazur.WeierstrassDividedInitialZeroSlopeChart
 public import FLT.Mazur.WeierstrassDividedOlderAtlasIndex
 public import FLT.Mazur.WeierstrassDividedOlderExtendedComponentOrigins
+public import FLT.Mazur.WeierstrassDividedOlderExtendedConicOverlap
 public import FLT.Mazur.WeierstrassDividedOlderExtendedMiddleComponents
 public import FLT.Mazur.WeierstrassDividedOlderExtendedNodeLoci
 public import FLT.Mazur.WeierstrassDividedOlderExtendedOrigins
