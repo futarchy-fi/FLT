@@ -7045,6 +7045,7 @@ public import FLT.Mazur.WeierstrassDividedZeroBoundaryFunctions
 public import FLT.Mazur.WeierstrassDividedZeroCycleAtlasAdjacentReduction
 public import FLT.Mazur.WeierstrassDividedZeroCycleAtlasCompatibility
 public import FLT.Mazur.WeierstrassDividedZeroCycleAtlasDisjoint
+public import FLT.Mazur.WeierstrassDividedZeroCycleAtlasEndReduction
 public import FLT.Mazur.WeierstrassDividedZeroCycleAtlasFamily
 public import FLT.Mazur.WeierstrassDividedZeroCycleAtlasInfinityCompatibility
 public import FLT.Mazur.WeierstrassDividedZeroCycleAtlasSlopeIntersection
