@@ -5066,6 +5066,13 @@ public import FLT.Mazur.PolygonHZeroIncidence
 public import FLT.Mazur.PolygonIdealModulePullback
 public import FLT.Mazur.PolygonIncidence
 public import FLT.Mazur.PolygonIncidenceQuotient
+public import FLT.Mazur.PolygonInfinitesimalAtlas
+public import FLT.Mazur.PolygonInfinitesimalDiagram
+public import FLT.Mazur.PolygonInfinitesimalFamily
+public import FLT.Mazur.PolygonInfinitesimalMarkings
+public import FLT.Mazur.PolygonInfinitesimalSeparated
+public import FLT.Mazur.PolygonInfinitesimalSpecialFiber
+public import FLT.Mazur.PolygonInfinitesimalStages
 public import FLT.Mazur.PolygonLineHZero
 public import FLT.Mazur.PolygonLineNodeRestriction
 public import FLT.Mazur.PolygonLineNormalization
@@ -5135,6 +5142,8 @@ public import FLT.Mazur.PolygonSmoothingBranchSwap
 public import FLT.Mazur.PolygonSmoothingFlat
 public import FLT.Mazur.PolygonSmoothingLeftPuncture
 public import FLT.Mazur.PolygonSmoothingMarkedSection
+public import FLT.Mazur.PolygonSmoothingNilpotentBranches
+public import FLT.Mazur.PolygonSmoothingOverlapGraph
 public import FLT.Mazur.PolygonSmoothingPunctureBaseChange
 public import FLT.Mazur.PolygonSmoothingQuadraticModel
 public import FLT.Mazur.PolygonSmoothingRing
