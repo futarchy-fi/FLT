@@ -4828,6 +4828,7 @@ public import FLT.Mazur.ModuleTensorCokernelDescent
 public import FLT.Mazur.ModuleTensorPowerSection
 public import FLT.Mazur.ModuleTensorPowerSectionInduction
 public import FLT.Mazur.ModuleTensorPullbackRestriction
+public import FLT.Mazur.ModuleTensorPullbackSymmetry
 public import FLT.Mazur.ModuleUnitCocycleCongr
 public import FLT.Mazur.ModuleUnitCocyclePullback
 public import FLT.Mazur.MonoFamilySchemeGluing
