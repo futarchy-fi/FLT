@@ -5063,6 +5063,7 @@ public import FLT.Mazur.PolygonCompatibleSectionAlgebra
 public import FLT.Mazur.PolygonCompatibleSectionReduction
 public import FLT.Mazur.PolygonCompatibleSectionRing
 public import FLT.Mazur.PolygonCompatibleSectionScalars
+public import FLT.Mazur.PolygonCompatibleVeronese
 public import FLT.Mazur.PolygonComponentDistinct
 public import FLT.Mazur.PolygonComponentImages
 public import FLT.Mazur.PolygonConnected
