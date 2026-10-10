@@ -3034,6 +3034,8 @@ public import FLT.Mazur.CartierIdealPullbackComparison
 public import FLT.Mazur.CartierIdealStalkDescent
 public import FLT.Mazur.CartierIdealStalkNeighborhood
 public import FLT.Mazur.CartierImmersionFinitePresentation
+public import FLT.Mazur.CartierRetainedLineBaseChange
+public import FLT.Mazur.CartierRetainedLineProjections
 public import FLT.Mazur.CartierSectionPairEquivalence
 public import FLT.Mazur.CartierSupportOpenDescent
 public import FLT.Mazur.CartierTensorRank
@@ -3310,6 +3312,9 @@ public import FLT.Mazur.DivisorLineBundleSumOpenCoherence
 public import FLT.Mazur.DivisorLineBundleSumRestrict
 public import FLT.Mazur.DivisorLineBundleSumUnit
 public import FLT.Mazur.DivisorLinePullback
+public import FLT.Mazur.DivisorLinePullbackComposition
+public import FLT.Mazur.DivisorLinePullbackIdentity
+public import FLT.Mazur.DivisorLinePullbackTransport
 public import FLT.Mazur.DivisorPowerCanonicalSection
 public import FLT.Mazur.DivisorPowerEulerCharacteristic
 public import FLT.Mazur.DivisorPowerTwistDegree
@@ -3317,6 +3322,7 @@ public import FLT.Mazur.DivisorPowerVeryAmple
 public import FLT.Mazur.DivisorRestrictCoherence
 public import FLT.Mazur.DivisorSectionComplement
 public import FLT.Mazur.DivisorSectionExact
+public import FLT.Mazur.DivisorSectionRigidity
 public import FLT.Mazur.DivisorStalkLength
 public import FLT.Mazur.DivisorTensorSequence
 public import FLT.Mazur.DivisorTwistedDegree
@@ -5088,8 +5094,10 @@ public import FLT.Mazur.PolygonInfinitesimalDivisor
 public import FLT.Mazur.PolygonInfinitesimalDivisorLine
 public import FLT.Mazur.PolygonInfinitesimalFamily
 public import FLT.Mazur.PolygonInfinitesimalFieldFiber
+public import FLT.Mazur.PolygonInfinitesimalLineCoherence
 public import FLT.Mazur.PolygonInfinitesimalMarkedBaseChange
 public import FLT.Mazur.PolygonInfinitesimalMarkings
+public import FLT.Mazur.PolygonInfinitesimalSectionRings
 public import FLT.Mazur.PolygonInfinitesimalSeparated
 public import FLT.Mazur.PolygonInfinitesimalSpecialDivisor
 public import FLT.Mazur.PolygonInfinitesimalSpecialFiber
@@ -5157,6 +5165,8 @@ public import FLT.Mazur.PolygonPowerBranchValues
 public import FLT.Mazur.PolygonPowerCanonicalSection
 public import FLT.Mazur.PolygonPowerNodeEndpoints
 public import FLT.Mazur.PolygonPowerNodeWeights
+public import FLT.Mazur.PolygonPowerSeriesBase
+public import FLT.Mazur.PolygonPowerSeriesSystem
 public import FLT.Mazur.PolygonProductAtlas
 public import FLT.Mazur.PolygonProper
 public import FLT.Mazur.PolygonPuncturedCanonicalEquations
@@ -5223,8 +5233,10 @@ public import FLT.Mazur.PowerCohomologyScalarMaps
 public import FLT.Mazur.PowerCohomologyShift
 public import FLT.Mazur.PowerScalarSectionCoordinates
 public import FLT.Mazur.PowerSeriesLeadingComposition
+public import FLT.Mazur.PowerSeriesNilpotentHom
 public import FLT.Mazur.PowerSeriesQuotientCompletion
 public import FLT.Mazur.PowerSeriesSubstitutionEquiv
+public import FLT.Mazur.PowerSeriesTruncatedPolynomial
 public import FLT.Mazur.PresentedFiniteCoefficientBranch
 public import FLT.Mazur.PrimeCharacteristicScalar
 public import FLT.Mazur.PrimeCoefficientLocalization
@@ -5586,6 +5598,8 @@ public import FLT.Mazur.ProperAmpleFiberNeighborhood
 public import FLT.Mazur.ProperAmpleFiberNoetherian
 public import FLT.Mazur.ProperAtlasAbelEquivalence
 public import FLT.Mazur.ProperAtlasAbelFiber
+public import FLT.Mazur.ProperAtlasAbelNaturality
+public import FLT.Mazur.ProperAtlasCanonicalBaseChange
 public import FLT.Mazur.ProperAtlasSectionBaseChange
 public import FLT.Mazur.ProperClosedLimitDescent
 public import FLT.Mazur.ProperCoherentCohomology
@@ -5606,6 +5620,7 @@ public import FLT.Mazur.ProperImmersedCover
 public import FLT.Mazur.ProperIntegralConstantSections
 public import FLT.Mazur.ProperLineFiberVanishing
 public import FLT.Mazur.ProperLineIsomorphismDescent
+public import FLT.Mazur.ProperLineIteratedFiberVanishing
 public import FLT.Mazur.ProperLinePushforwardBaseChange
 public import FLT.Mazur.ProperLinePushforwardLocalFree
 public import FLT.Mazur.ProperLinePushforwardMate
@@ -5624,7 +5639,9 @@ public import FLT.Mazur.ProperRelativeCartierAtlas
 public import FLT.Mazur.ProperRelativeCartierAtlasQuotient
 public import FLT.Mazur.ProperRelativeCartierBaseOrbits
 public import FLT.Mazur.ProperRelativeEvaluationLocus
+public import FLT.Mazur.ProperRelativeLineComparison
 public import FLT.Mazur.ProperRingCohomologyFinite
+public import FLT.Mazur.ProperSectionAffineCoverCartier
 public import FLT.Mazur.ProperSectionGluing
 public import FLT.Mazur.ProperSectionSplittingCriterion
 public import FLT.Mazur.ProperSmoothAffineFunctions
@@ -6083,6 +6100,7 @@ public import FLT.Mazur.SealedLineRestriction
 public import FLT.Mazur.SealedLineRestrictionSections
 public import FLT.Mazur.SectionBaseLocalization
 public import FLT.Mazur.SectionCartesianKernel
+public import FLT.Mazur.SectionCartierBaseOpen
 public import FLT.Mazur.SectionCartierOpenDescent
 public import FLT.Mazur.SectionChartGenerators
 public import FLT.Mazur.SectionCharts
@@ -6112,6 +6130,8 @@ public import FLT.Mazur.SectionGradedCoordinateEvaluation
 public import FLT.Mazur.SectionGradedCoordinateIndependence
 public import FLT.Mazur.SectionGradedCoordinates
 public import FLT.Mazur.SectionGradedGeneratorLocalization
+public import FLT.Mazur.SectionGradedIsoMultiplication
+public import FLT.Mazur.SectionGradedIsoRing
 public import FLT.Mazur.SectionGradedLocalCoordinates
 public import FLT.Mazur.SectionGradedMultiplication
 public import FLT.Mazur.SectionGradedPowerGenerators
@@ -6291,6 +6311,7 @@ public import FLT.Mazur.TrivializedLineSheafLimitDescent
 public import FLT.Mazur.TwistedSectionBaseChange
 public import FLT.Mazur.TwistedSectionBaseChangeRegularity
 public import FLT.Mazur.TwistedSectionBaseLineNaturality
+public import FLT.Mazur.TwistedSectionCartierTransport
 public import FLT.Mazur.TwistedSectionIntegralCriterion
 public import FLT.Mazur.TwistedSectionPullbackMonicity
 public import FLT.Mazur.TwistedSectionPushforward
