@@ -3165,6 +3165,7 @@ public import FLT.Mazur.CoherentRingCohomologyFinite
 public import FLT.Mazur.CoherentSubmoduleEnlargement
 public import FLT.Mazur.CoherentSubmoduleExtension
 public import FLT.Mazur.CoherentSubmoduleGluing
+public import FLT.Mazur.CoherentSubmoduleLocalEquality
 public import FLT.Mazur.CoherentSubmoduleUnion
 public import FLT.Mazur.CoherentSubquotient
 public import FLT.Mazur.CoherentSubsheafACC
@@ -3292,8 +3293,14 @@ public import FLT.Mazur.DivisorTensorSequence
 public import FLT.Mazur.DivisorTwistedDegree
 public import FLT.Mazur.DivisorTwistedSequence
 public import FLT.Mazur.DoubleRootComponentBound
+public import FLT.Mazur.DualAtlasSectionBaseNeighborhood
 public import FLT.Mazur.DualAtlasSectionChartPoints
+public import FLT.Mazur.DualAtlasSectionCommonPoint
+public import FLT.Mazur.DualAtlasSectionForwardLine
+public import FLT.Mazur.DualAtlasSectionLineCover
+public import FLT.Mazur.DualAtlasSectionLineOverlap
 public import FLT.Mazur.DualAtlasSectionLocalLines
+public import FLT.Mazur.DualAtlasSectionLocalSubobjects
 public import FLT.Mazur.DualAtlasSectionNormalizedRefinement
 public import FLT.Mazur.EllipticAbstractComponentInjection
 public import FLT.Mazur.EllipticAbstractGoodReductionClosure
@@ -3684,6 +3691,7 @@ public import FLT.Mazur.FiniteFlatCoefficientIdeal
 public import FLT.Mazur.FiniteFlatLocalIdealPresentation
 public import FLT.Mazur.FiniteFlatQuotientTrivialization
 public import FLT.Mazur.FiniteFlatSubschemeQuotient
+public import FLT.Mazur.FiniteFreeChartGeneratorRestriction
 public import FLT.Mazur.FiniteFreeChartPointCompatibility
 public import FLT.Mazur.FiniteFreeChartProjectiveRestriction
 public import FLT.Mazur.FiniteFreeChartProjectiveTransitions
@@ -3692,6 +3700,7 @@ public import FLT.Mazur.FiniteFreeChartSectionLineComparison
 public import FLT.Mazur.FiniteFreeChartSectionLinePullback
 public import FLT.Mazur.FiniteFreeChartSectionLines
 public import FLT.Mazur.FiniteFreeChartTransitions
+public import FLT.Mazur.FiniteFreeChartUnitRefinement
 public import FLT.Mazur.FiniteFreeContragredient
 public import FLT.Mazur.FiniteFreeContragredientCoefficients
 public import FLT.Mazur.FiniteFreeContragredientEvaluation
@@ -3699,6 +3708,7 @@ public import FLT.Mazur.FiniteFreeDualPointBaseChange
 public import FLT.Mazur.FiniteFreeDualProjectivePoints
 public import FLT.Mazur.FiniteFreeDualProjectiveRefinement
 public import FLT.Mazur.FiniteFreeDualProjectiveTransitions
+public import FLT.Mazur.FiniteFreeInheritedChartTransitions
 public import FLT.Mazur.FiniteFreeProjectiveAtlasDiagram
 public import FLT.Mazur.FiniteFreeProjectiveChartRefinement
 public import FLT.Mazur.FiniteFreeQuotientIdealPresentation
