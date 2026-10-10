@@ -2737,6 +2737,7 @@ public import FLT.Mazur.AffineSectionsReconstruction
 public import FLT.Mazur.AffineSmoothFiniteFlatCartier
 public import FLT.Mazur.AffineSourcePullbackSections
 public import FLT.Mazur.AffineSourceSectionComparison
+public import FLT.Mazur.AffineSpectrumKernelIdeal
 public import FLT.Mazur.AffineSplitLineAmbientTransport
 public import FLT.Mazur.AffineSplitLineCoordinatePullback
 public import FLT.Mazur.AffineSplitLineCoordinates
@@ -3285,6 +3286,8 @@ public import FLT.Mazur.DRFiberClassification
 public import FLT.Mazur.DedekindPointExtension
 public import FLT.Mazur.DirectImageBaseChangeAdjoints
 public import FLT.Mazur.DirectImageBaseChangeMate
+public import FLT.Mazur.DirectImageBaseChangePasting
+public import FLT.Mazur.DirectImageBaseChangeRestriction
 public import FLT.Mazur.DirectImageBaseChangeUnit
 public import FLT.Mazur.DirectImageInjectives
 public import FLT.Mazur.DirectImageOpenBaseChange
@@ -4000,6 +4003,7 @@ public import FLT.Mazur.FlatQuotientCartierFiber
 public import FLT.Mazur.FlatQuotientIdealBaseChange
 public import FLT.Mazur.FlatQuotientIdealFiber
 public import FLT.Mazur.FlatQuotientLocalCartier
+public import FLT.Mazur.FlatScalarExactness
 public import FLT.Mazur.FlatScalarHomology
 public import FLT.Mazur.FlatSectionEqualizer
 public import FLT.Mazur.FlatStructureCohomology
@@ -4517,6 +4521,7 @@ public import FLT.Mazur.InvariantLocalizationComparison
 public import FLT.Mazur.InvariantLocalizationCoordinates
 public import FLT.Mazur.InvariantLocalizationNumerator
 public import FLT.Mazur.IrreducibleComponentAmple
+public import FLT.Mazur.IsomorphicClosedPullback
 public import FLT.Mazur.IteratedOldArrowRepresentatives
 public import FLT.Mazur.IteratedOldDenominatorRecovery
 public import FLT.Mazur.IteratedOldDiagramRefinement
@@ -5009,6 +5014,8 @@ public import FLT.Mazur.PolygonAtlas
 public import FLT.Mazur.PolygonAtlasCocone
 public import FLT.Mazur.PolygonAtlasSmoothLocus
 public import FLT.Mazur.PolygonBoundaryDivisor
+public import FLT.Mazur.PolygonBoundaryReductionSequence
+public import FLT.Mazur.PolygonBoundaryTensorQuotient
 public import FLT.Mazur.PolygonBranchDifferenceSheaf
 public import FLT.Mazur.PolygonCanonicalBranchGenerators
 public import FLT.Mazur.PolygonCanonicalChartPullback
@@ -5218,6 +5225,14 @@ public import FLT.Mazur.PolygonSplitPuncturedPullback
 public import FLT.Mazur.PolygonSplitRefinementCover
 public import FLT.Mazur.PolygonSplitRefinementValue
 public import FLT.Mazur.PolygonSplitTorusBranches
+public import FLT.Mazur.PolygonStageClosedImmersion
+public import FLT.Mazur.PolygonStageCoefficientKernel
+public import FLT.Mazur.PolygonStageFlatLayer
+public import FLT.Mazur.PolygonStageLayerSequence
+public import FLT.Mazur.PolygonStageLineLayer
+public import FLT.Mazur.PolygonStageLineQuotient
+public import FLT.Mazur.PolygonStageLineSectionFlat
+public import FLT.Mazur.PolygonStageRestrictionIdeal
 public import FLT.Mazur.PolygonStructureInclusion
 public import FLT.Mazur.PolygonTranslationImages
 public import FLT.Mazur.PolygonUniversalAction
@@ -5617,6 +5632,7 @@ public import FLT.Mazur.ProperAtlasAbelFiber
 public import FLT.Mazur.ProperAtlasAbelNaturality
 public import FLT.Mazur.ProperAtlasCanonicalBaseChange
 public import FLT.Mazur.ProperAtlasSectionBaseChange
+public import FLT.Mazur.ProperChangedBaseCartierSections
 public import FLT.Mazur.ProperClosedLimitDescent
 public import FLT.Mazur.ProperCoherentCohomology
 public import FLT.Mazur.ProperCohomologyFieldVanishing
@@ -5634,10 +5650,14 @@ public import FLT.Mazur.ProperFinitePresentationEnvelope
 public import FLT.Mazur.ProperGlobalDirectImageCharts
 public import FLT.Mazur.ProperGlobalSectionCartier
 public import FLT.Mazur.ProperGlobalSectionFinite
+public import FLT.Mazur.ProperGlobalSplitDirectImageSections
 public import FLT.Mazur.ProperImmersedCover
 public import FLT.Mazur.ProperIntegralConstantSections
+public import FLT.Mazur.ProperLineArbitraryBaseChange
+public import FLT.Mazur.ProperLineChartFiberVanishing
 public import FLT.Mazur.ProperLineFiberVanishing
 public import FLT.Mazur.ProperLineIsomorphismDescent
+public import FLT.Mazur.ProperLineIteratedArbitraryBaseChange
 public import FLT.Mazur.ProperLineIteratedFiberVanishing
 public import FLT.Mazur.ProperLinePushforwardBaseChange
 public import FLT.Mazur.ProperLinePushforwardLocalFree
@@ -5677,6 +5697,8 @@ public import FLT.Mazur.ProperStageFiberProjection
 public import FLT.Mazur.ProperStageResidueFiberLimit
 public import FLT.Mazur.ProperStalkExtension
 public import FLT.Mazur.ProperTwistedLineDescent
+public import FLT.Mazur.ProperUniversalCartierDivisor
+public import FLT.Mazur.ProperUniversalDirectImageLine
 public import FLT.Mazur.PullbackOverlapBaseChange
 public import FLT.Mazur.PuncturedNodeRestrictionComparison
 public import FLT.Mazur.PushforwardCech
@@ -6092,6 +6114,7 @@ public import FLT.Mazur.SchemePullbackOverlapSquare
 public import FLT.Mazur.SchemePullbackSquare
 public import FLT.Mazur.SchemePullbackSquareComposition
 public import FLT.Mazur.SchemePullbackSquareIdentity
+public import FLT.Mazur.SchemePullbackSquarePasting
 public import FLT.Mazur.SchemeQuotientAffineBaseCoordinates
 public import FLT.Mazur.SchemeQuotientAffineFlatComparison
 public import FLT.Mazur.SchemeQuotientAffineFlatDescent
