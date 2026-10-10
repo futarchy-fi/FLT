@@ -5023,6 +5023,7 @@ public import FLT.Mazur.OrderedProjectiveHilbertNaturality
 public import FLT.Mazur.OrderedProjectiveHilbertParameter
 public import FLT.Mazur.OrderedRelativeIdealBaseChange
 public import FLT.Mazur.OrderedRelativeIdealFamily
+public import FLT.Mazur.OriginalFamilyIdentityComparison
 public import FLT.Mazur.OriginalFamilyTwistComparison
 public import FLT.Mazur.OriginalTwistIsoRigidity
 public import FLT.Mazur.OriginalTwistLineOrbits
