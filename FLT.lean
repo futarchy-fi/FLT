@@ -3353,6 +3353,7 @@ public import FLT.Mazur.DualAtlasSectionLocalSubobjects
 public import FLT.Mazur.DualAtlasSectionNormalizedRefinement
 public import FLT.Mazur.DualAtlasSectionReverseForward
 public import FLT.Mazur.DualAtlasSectionTransport
+public import FLT.Mazur.DualAtlasUniversalLine
 public import FLT.Mazur.DualFreeSheafCoordinates
 public import FLT.Mazur.DualProjectiveAtlasNoetherian
 public import FLT.Mazur.DualPullbackComposition
