@@ -5562,6 +5562,7 @@ public import FLT.Mazur.ProperPointedLineSheafDescent
 public import FLT.Mazur.ProperPushforwardReconstructionUnit
 public import FLT.Mazur.ProperRelativeCartierAtlas
 public import FLT.Mazur.ProperRelativeCartierAtlasQuotient
+public import FLT.Mazur.ProperRelativeCartierBaseOrbits
 public import FLT.Mazur.ProperRelativeEvaluationLocus
 public import FLT.Mazur.ProperRingCohomologyFinite
 public import FLT.Mazur.ProperSectionGluing
