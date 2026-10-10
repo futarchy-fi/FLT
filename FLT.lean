@@ -6831,6 +6831,7 @@ public import FLT.Mazur.WeierstrassOriginIsomorphismAdmissible
 public import FLT.Mazur.WeierstrassOriginIsomorphismAffine
 public import FLT.Mazur.WeierstrassOriginIsomorphismCoordinates
 public import FLT.Mazur.WeierstrassOriginIsomorphismDivisor
+public import FLT.Mazur.WeierstrassOriginIsomorphismEvaluation
 public import FLT.Mazur.WeierstrassOriginIsomorphismPoles
 public import FLT.Mazur.WeierstrassOriginIsomorphismSections
 public import FLT.Mazur.WeierstrassOriginIsomorphismUnits
