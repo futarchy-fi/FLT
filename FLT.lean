@@ -2585,6 +2585,9 @@ public import FLT.Mazur.AffineFiniteFreeAtlas
 public import FLT.Mazur.AffineFiniteFreeDirectedCover
 public import FLT.Mazur.AffineFiniteTypeModelSystem
 public import FLT.Mazur.AffineFpqcRefinement
+public import FLT.Mazur.AffineFreeSectionLineBaseChange
+public import FLT.Mazur.AffineFreeSectionLineComparison
+public import FLT.Mazur.AffineFreeSectionLineTransport
 public import FLT.Mazur.AffineFreeSheafCoordinateNormalization
 public import FLT.Mazur.AffineFreeSheafCoordinatePullback
 public import FLT.Mazur.AffineFreeSheafCoordinates
@@ -3623,6 +3626,8 @@ public import FLT.Mazur.FiniteFlatSubschemeQuotient
 public import FLT.Mazur.FiniteFreeChartProjectiveRestriction
 public import FLT.Mazur.FiniteFreeChartProjectiveTransitions
 public import FLT.Mazur.FiniteFreeChartRestriction
+public import FLT.Mazur.FiniteFreeChartSectionLinePullback
+public import FLT.Mazur.FiniteFreeChartSectionLines
 public import FLT.Mazur.FiniteFreeChartTransitions
 public import FLT.Mazur.FiniteFreeContragredient
 public import FLT.Mazur.FiniteFreeContragredientCoefficients
@@ -3634,6 +3639,7 @@ public import FLT.Mazur.FiniteFreeDualProjectiveTransitions
 public import FLT.Mazur.FiniteFreeProjectiveAtlasDiagram
 public import FLT.Mazur.FiniteFreeProjectiveChartRefinement
 public import FLT.Mazur.FiniteFreeQuotientIdealPresentation
+public import FLT.Mazur.FiniteFreeSectionLineTransport
 public import FLT.Mazur.FiniteHomologyFiberVanishing
 public import FLT.Mazur.FiniteIntegerModelElementRelations
 public import FLT.Mazur.FiniteIntegerModelPullbacks
@@ -4616,11 +4622,14 @@ public import FLT.Mazur.NoetherianUniversalStructureSheaf
 public import FLT.Mazur.NonzeroLineSectionExact
 public import FLT.Mazur.NormalizedSectionLine
 public import FLT.Mazur.NormalizedSectionLineBaseChange
+public import FLT.Mazur.NormalizedSectionLineLinearBaseChange
 public import FLT.Mazur.NormalizedSectionLineLinearTransport
 public import FLT.Mazur.NormalizedSectionLineOverlapBaseChange
 public import FLT.Mazur.NormalizedSectionLinePrincipalRechart
 public import FLT.Mazur.NormalizedSectionLinePrincipalRestriction
+public import FLT.Mazur.NormalizedSectionLinePullbackComposition
 public import FLT.Mazur.NormalizedSectionLineRechart
+public import FLT.Mazur.NormalizedSectionLineRefinedInclusion
 public import FLT.Mazur.NormalizedSectionLineSheaf
 public import FLT.Mazur.NormalizedSectionLineSheafBaseChange
 public import FLT.Mazur.NormalizedSectionLineSheafOverlap
@@ -5261,6 +5270,11 @@ public import FLT.Mazur.ProjectiveUnitChartEvaluation
 public import FLT.Mazur.ProjectiveUnitChartPoint
 public import FLT.Mazur.ProjectiveUniversalChartLine
 public import FLT.Mazur.ProjectiveUniversalChartLineOverlap
+public import FLT.Mazur.ProjectiveUniversalLineComparison
+public import FLT.Mazur.ProjectiveUniversalLineRefinementWitness
+public import FLT.Mazur.ProjectiveUniversalLineTripleComparison
+public import FLT.Mazur.ProjectiveUniversalLineTriplePaths
+public import FLT.Mazur.ProjectiveUniversalLineTripleRefinement
 public import FLT.Mazur.ProperAmpleConverse
 public import FLT.Mazur.ProperAmpleFiberApproximation
 public import FLT.Mazur.ProperAmpleFiberModel
