@@ -5881,6 +5881,7 @@ public import FLT.Mazur.ProperLinePushforwardLocalFree
 public import FLT.Mazur.ProperLinePushforwardMate
 public import FLT.Mazur.ProperLinePushforwardTilde
 public import FLT.Mazur.ProperLineSectionProjective
+public import FLT.Mazur.ProperLineSectionRankLocus
 public import FLT.Mazur.ProperLineSheafDescent
 public import FLT.Mazur.ProperLineSheafFinitePresentationEnvelope
 public import FLT.Mazur.ProperLocalAmpleFiberGenerators
