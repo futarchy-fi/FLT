@@ -6072,6 +6072,7 @@ public import FLT.Mazur.WeierstrassOrdinaryTripleSchemes
 public import FLT.Mazur.WeierstrassOriginAutomorphismAffine
 public import FLT.Mazur.WeierstrassOriginAutomorphismCoordinates
 public import FLT.Mazur.WeierstrassOriginAutomorphismExt
+public import FLT.Mazur.WeierstrassOriginCartier
 public import FLT.Mazur.WeierstrassOriginIdeal
 public import FLT.Mazur.WeierstrassOriginIdealAffine
 public import FLT.Mazur.WeierstrassOriginIdealInvariant
