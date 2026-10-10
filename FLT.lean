@@ -5694,6 +5694,7 @@ public import FLT.Mazur.WeierstrassAffineInputFactorization
 public import FLT.Mazur.WeierstrassAffineInputTripleDomain
 public import FLT.Mazur.WeierstrassAffineInputTripleGlobal
 public import FLT.Mazur.WeierstrassAffineMonicComparison
+public import FLT.Mazur.WeierstrassAffineMorphismExt
 public import FLT.Mazur.WeierstrassAffineNegation
 public import FLT.Mazur.WeierstrassAffineNegationAddition
 public import FLT.Mazur.WeierstrassAffineOuterTripleGlobal
@@ -6066,7 +6067,7 @@ public import FLT.Mazur.WeierstrassOrdinaryTripleDomain
 public import FLT.Mazur.WeierstrassOrdinaryTripleGlobalComparison
 public import FLT.Mazur.WeierstrassOrdinaryTripleSchemes
 public import FLT.Mazur.WeierstrassOriginAutomorphismAffine
-public import FLT.Mazur.WeierstrassOverlapDiagonalAlgebra
+public public import FLT.Mazur.WeierstrassOverlapDiagonalAlgebra
 public import FLT.Mazur.WeierstrassPartialAdditionSmoothInputs
 public import FLT.Mazur.WeierstrassPartialAdditionSmoothResidues
 public import FLT.Mazur.WeierstrassPartialChartSmoothLocus
