@@ -3333,6 +3333,7 @@ public import FLT.Mazur.DivisorTwistedDegree
 public import FLT.Mazur.DivisorTwistedSequence
 public import FLT.Mazur.DoubleRootComponentBound
 public import FLT.Mazur.DualAtlasAmbientCharts
+public import FLT.Mazur.DualAtlasAmbientMap
 public import FLT.Mazur.DualAtlasBaseChangeCharts
 public import FLT.Mazur.DualAtlasBaseChangeCover
 public import FLT.Mazur.DualAtlasBaseChangeDirectedCover
