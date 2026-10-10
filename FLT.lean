@@ -6901,6 +6901,7 @@ public import FLT.Mazur.WeierstrassDividedZeroCycleAttachmentBranches
 public import FLT.Mazur.WeierstrassDividedZeroCycleAttachmentExt
 public import FLT.Mazur.WeierstrassDividedZeroCycleIndices
 public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveConicBranches
+public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveLineBranches
 public import FLT.Mazur.WeierstrassDividedZeroExteriorCoverage
 public import FLT.Mazur.WeierstrassDividedZeroExteriorCurve
 public import FLT.Mazur.WeierstrassDividedZeroExteriorLaurent
