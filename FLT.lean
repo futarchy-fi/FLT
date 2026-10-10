@@ -7628,6 +7628,7 @@ public import FLT.Mazur.WeierstrassModificationXFullNodeIncidenceOrientation
 public import FLT.Mazur.WeierstrassModificationXFullNodeInverseCoordinates
 public import FLT.Mazur.WeierstrassModificationXFullNodeOpen
 public import FLT.Mazur.WeierstrassModificationXFullNodeOrigin
+public import FLT.Mazur.WeierstrassModificationXFullNodeParameterDescent
 public import FLT.Mazur.WeierstrassModificationXFullNodeProjectiveDescent
 public import FLT.Mazur.WeierstrassModificationXFullNodePushout
 public import FLT.Mazur.WeierstrassModificationXFullNodeZeroDescent
