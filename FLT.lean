@@ -4852,6 +4852,7 @@ public import FLT.Mazur.NodeDenominatorRestriction
 public import FLT.Mazur.NodeInfinitesimalObstruction
 public import FLT.Mazur.NodeLocalDescent
 public import FLT.Mazur.NodeLocalizedEqualizer
+public import FLT.Mazur.NodeLocalizedPushout
 public import FLT.Mazur.NodeNonsplitTangent
 public import FLT.Mazur.NodeNormalizationBaseChange
 public import FLT.Mazur.NodePinchingDescent
@@ -7210,6 +7211,7 @@ public import FLT.Mazur.WeierstrassModificationXFullNodeIncidenceOrientation
 public import FLT.Mazur.WeierstrassModificationXFullNodeInverseCoordinates
 public import FLT.Mazur.WeierstrassModificationXFullNodeOpen
 public import FLT.Mazur.WeierstrassModificationXFullNodeOrigin
+public import FLT.Mazur.WeierstrassModificationXFullNodePushout
 public import FLT.Mazur.WeierstrassModificationXFullSecondNode
 public import FLT.Mazur.WeierstrassModificationXFullSecondNodeBranches
 public import FLT.Mazur.WeierstrassModificationXGenerators
