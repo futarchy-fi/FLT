@@ -5703,6 +5703,7 @@ public import FLT.Mazur.WeierstrassAffineOutputTripleDomain
 public import FLT.Mazur.WeierstrassAffineOutputTripleGlobal
 public import FLT.Mazur.WeierstrassAffinePairDescent
 public import FLT.Mazur.WeierstrassAffinePartialAddition
+public import FLT.Mazur.WeierstrassAffinePointNonzero
 public import FLT.Mazur.WeierstrassAffinePolynomialFormula
 public import FLT.Mazur.WeierstrassAffinePolynomialIntersections
 public import FLT.Mazur.WeierstrassAffinePolynomialScaling
