@@ -5134,6 +5134,7 @@ public import FLT.Mazur.PrincipalOpenTensorGeometry
 public import FLT.Mazur.PrincipalOpenTensorTransition
 public import FLT.Mazur.PrincipalOpenTransport
 public import FLT.Mazur.PrincipalOpenTransportGeometry
+public import FLT.Mazur.PrincipalOpenVanishingIntersection
 public import FLT.Mazur.PrincipalOriginalRestrictionPaths
 public import FLT.Mazur.PrincipalPresentationIntegerModel
 public import FLT.Mazur.PrincipalQuotientAlgebra
