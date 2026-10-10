@@ -5811,6 +5811,7 @@ public import FLT.Mazur.ProperFamilyOriginalOrbits
 public import FLT.Mazur.ProperFamilyOriginalPullback
 public import FLT.Mazur.ProperFamilyOriginalSectionRecovery
 public import FLT.Mazur.ProperFamilyOriginalZeroIdeal
+public import FLT.Mazur.ProperFamilyPointedComparisonIsomorphisms
 public import FLT.Mazur.ProperFamilyPointedFppfSheaf
 public import FLT.Mazur.ProperFamilyPrescribedComposition
 public import FLT.Mazur.ProperFamilyPrescribedIdentity
