@@ -5135,8 +5135,17 @@ public import FLT.Mazur.PolygonScalingNaturality
 public import FLT.Mazur.PolygonSeparated
 public import FLT.Mazur.PolygonSmoothLocus
 public import FLT.Mazur.PolygonSmoothingBaseChange
+public import FLT.Mazur.PolygonSmoothingBranchOpens
+public import FLT.Mazur.PolygonSmoothingBranchSwap
+public import FLT.Mazur.PolygonSmoothingFlat
+public import FLT.Mazur.PolygonSmoothingLeftPuncture
+public import FLT.Mazur.PolygonSmoothingMarkedSection
+public import FLT.Mazur.PolygonSmoothingPunctureBaseChange
+public import FLT.Mazur.PolygonSmoothingQuadraticModel
 public import FLT.Mazur.PolygonSmoothingRing
+public import FLT.Mazur.PolygonSmoothingSpecialBranches
 public import FLT.Mazur.PolygonSmoothingSpecialFiber
+public import FLT.Mazur.PolygonSmoothingTransition
 public import FLT.Mazur.PolygonSplitGeneratorIdentities
 public import FLT.Mazur.PolygonSplitGroup
 public import FLT.Mazur.PolygonSplitInterpolationEquations
@@ -5442,6 +5451,11 @@ public import FLT.Mazur.ProjectiveLineConstantSections
 public import FLT.Mazur.ProjectiveLineEndpointCover
 public import FLT.Mazur.ProjectiveLineEndpoints
 public import FLT.Mazur.ProjectiveLineFieldExtension
+public import FLT.Mazur.ProjectiveLineInfinityTorusAlgebra
+public import FLT.Mazur.ProjectiveLineInfinityTorusCover
+public import FLT.Mazur.ProjectiveLineInfinityTorusGluing
+public import FLT.Mazur.ProjectiveLineInfinityTorusMarks
+public import FLT.Mazur.ProjectiveLineInfinityTorusTransition
 public import FLT.Mazur.ProjectiveLineInteriorGenerator
 public import FLT.Mazur.ProjectiveLineInteriorRatios
 public import FLT.Mazur.ProjectiveLineMarkedCharts
@@ -6580,6 +6594,7 @@ public import FLT.Mazur.WeierstrassDividedInitialExtendedSections
 public import FLT.Mazur.WeierstrassDividedInitialExterior
 public import FLT.Mazur.WeierstrassDividedInitialExteriorCurve
 public import FLT.Mazur.WeierstrassDividedInitialExteriorLaurent
+public import FLT.Mazur.WeierstrassDividedInitialExteriorProjective
 public import FLT.Mazur.WeierstrassDividedInitialGlobalResidueNodes
 public import FLT.Mazur.WeierstrassDividedInitialGlobalSections
 public import FLT.Mazur.WeierstrassDividedInitialGlobalTensorChart
