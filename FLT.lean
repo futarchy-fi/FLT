@@ -5473,6 +5473,7 @@ public import FLT.Mazur.ProjectiveLineScaledReciprocalGluing
 public import FLT.Mazur.ProjectiveLineScaling
 public import FLT.Mazur.ProjectiveLineSealedCanonicalRatios
 public import FLT.Mazur.ProjectiveLineSlopeNormalization
+public import FLT.Mazur.ProjectiveLineSlopeNormalizationCharts
 public import FLT.Mazur.ProjectiveLineSlopeNormalizationLinear
 public import FLT.Mazur.ProjectiveLineStandardCharts
 public import FLT.Mazur.ProjectiveLineStandardComparison
