@@ -6078,6 +6078,7 @@ public import FLT.Mazur.WeierstrassOriginParameter
 public import FLT.Mazur.WeierstrassOriginParameterOrder
 public import FLT.Mazur.WeierstrassOriginPoleBounds
 public import FLT.Mazur.WeierstrassOriginPoleCoordinates
+public import FLT.Mazur.WeierstrassOriginPoleSums
 public import FLT.Mazur.WeierstrassOriginPunctureGeometry
 public import FLT.Mazur.WeierstrassOverlapDiagonalAlgebra
 public import FLT.Mazur.WeierstrassPartialAdditionSmoothInputs
