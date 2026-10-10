@@ -5673,6 +5673,7 @@ public import FLT.Mazur.ProperCoverLimitDescent
 public import FLT.Mazur.ProperCurveGenus
 public import FLT.Mazur.ProperFamilyAtlasCartesian
 public import FLT.Mazur.ProperFamilyAtlasRecovery
+public import FLT.Mazur.ProperFamilySectionPullback
 public import FLT.Mazur.ProperFamilyTwistedRecovery
 public import FLT.Mazur.ProperFamilyUniversalLineRecovery
 public import FLT.Mazur.ProperFiberEvaluationLocus
