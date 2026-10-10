@@ -5164,6 +5164,7 @@ public import FLT.Mazur.PolygonCompleteBoundaryQuotientTransition
 public import FLT.Mazur.PolygonCompleteBoundarySectionProjection
 public import FLT.Mazur.PolygonCompleteBoundarySectionTransport
 public import FLT.Mazur.PolygonCompleteBoundaryTransitionCoherence
+public import FLT.Mazur.PolygonCompleteClosedFiber
 public import FLT.Mazur.PolygonCompleteCoefficientAmple
 public import FLT.Mazur.PolygonCompleteCoefficientCoherence
 public import FLT.Mazur.PolygonCompleteCoefficientLine
