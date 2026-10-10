@@ -6273,6 +6273,7 @@ public import FLT.Mazur.SchemeIndependentFamilyEquivalence
 public import FLT.Mazur.SchemeIndependentFamilyLineCategory
 public import FLT.Mazur.SchemeIndependentFamilyLineData
 public import FLT.Mazur.SchemeIndependentNormalizationCoherence
+public import FLT.Mazur.SchemeIndependentNormalizationRetraction
 public import FLT.Mazur.SchemeIndependentNormalizationSquare
 public import FLT.Mazur.SchemeIndependentPairNormalization
 public import FLT.Mazur.SchemeIndependentRecoveryNormalization
