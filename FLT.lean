@@ -6030,6 +6030,7 @@ public import FLT.Mazur.WeierstrassModificationXConicSecondCoordinates
 public import FLT.Mazur.WeierstrassModificationXConicSecondOpen
 public import FLT.Mazur.WeierstrassModificationXConicSmooth
 public import FLT.Mazur.WeierstrassModificationXConicTangentSwitch
+public import FLT.Mazur.WeierstrassModificationXConicZeroParameters
 public import FLT.Mazur.WeierstrassModificationXContractionOverlap
 public import FLT.Mazur.WeierstrassModificationXCoordinateCasts
 public import FLT.Mazur.WeierstrassModificationXExtendedCastEvaluation
