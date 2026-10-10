@@ -6274,6 +6274,7 @@ public import FLT.Mazur.SchemeIndependentCanonicalOverlap
 public import FLT.Mazur.SchemeIndependentCanonicalSource
 public import FLT.Mazur.SchemeIndependentDiagonalIdentity
 public import FLT.Mazur.SchemeIndependentEffectivePairCharts
+public import FLT.Mazur.SchemeIndependentEffectivePairReturn
 public import FLT.Mazur.SchemeIndependentEffectiveRecovery
 public import FLT.Mazur.SchemeIndependentFamilyAssemblyFullyFaithful
 public import FLT.Mazur.SchemeIndependentFamilyEquivalence
