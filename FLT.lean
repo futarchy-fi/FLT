@@ -4594,6 +4594,7 @@ public import FLT.Mazur.LineSectionZeroDivisor
 public import FLT.Mazur.LineSectionZeroIdealOrbits
 public import FLT.Mazur.LineSectionZeroIdealPullback
 public import FLT.Mazur.LineSheafBidual
+public import FLT.Mazur.LineSheafBidualPullback
 public import FLT.Mazur.LineSheafDualEvaluation
 public import FLT.Mazur.LineSheafDualInvolution
 public import FLT.Mazur.LineSheafDualTriangle
