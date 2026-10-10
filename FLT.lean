@@ -5007,6 +5007,7 @@ public import FLT.Mazur.ProperSmoothStructureSheaf
 public import FLT.Mazur.ProperStageBaseChangeLimit
 public import FLT.Mazur.ProperStageResidueFiberLimit
 public import FLT.Mazur.ProperStalkExtension
+public import FLT.Mazur.PullbackOverlapBaseChange
 public import FLT.Mazur.PuncturedNodeRestrictionComparison
 public import FLT.Mazur.PushforwardCech
 public import FLT.Mazur.PushoutModuleScalars
