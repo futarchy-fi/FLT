@@ -5077,6 +5077,7 @@ public import FLT.Mazur.PolygonInfinitesimalMarkings
 public import FLT.Mazur.PolygonInfinitesimalSeparated
 public import FLT.Mazur.PolygonInfinitesimalSpecialFiber
 public import FLT.Mazur.PolygonInfinitesimalStageFiber
+public import FLT.Mazur.PolygonInfinitesimalStageProper
 public import FLT.Mazur.PolygonInfinitesimalStageReduction
 public import FLT.Mazur.PolygonInfinitesimalStageRestriction
 public import FLT.Mazur.PolygonInfinitesimalStages
