@@ -3005,6 +3005,7 @@ public import FLT.Mazur.CartierAbelProperBaseChange
 public import FLT.Mazur.CartierAbelPulledSectionAdjoint
 public import FLT.Mazur.CartierAbelRelativeBaseChange
 public import FLT.Mazur.CartierAbelRelativeQuotient
+public import FLT.Mazur.CartierAbelResidueNonvanishing
 public import FLT.Mazur.CartierAbelSectionQuotient
 public import FLT.Mazur.CartierAbelSquareComparison
 public import FLT.Mazur.CartierAbelTwistBaseChange
