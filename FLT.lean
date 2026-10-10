@@ -4097,6 +4097,7 @@ public import FLT.Mazur.GlueDataQuasiSeparated
 public import FLT.Mazur.GradedProjArbitraryBaseChange
 public import FLT.Mazur.GradedProjBaseChangeMap
 public import FLT.Mazur.GradedProjChartArbitraryBaseChange
+public import FLT.Mazur.GradedProjChartSections
 public import FLT.Mazur.GradedProjDedekindFlatness
 public import FLT.Mazur.GradedProjEqualDegreeCover
 public import FLT.Mazur.GradedProjEventualGenerationCover
@@ -4104,6 +4105,8 @@ public import FLT.Mazur.GradedProjLineCoordinates
 public import FLT.Mazur.GradedProjLineRatioCocycle
 public import FLT.Mazur.GradedProjLineSectionCocycle
 public import FLT.Mazur.GradedProjLineSheaf
+public import FLT.Mazur.GradedProjLineTransitionEvaluation
+public import FLT.Mazur.GradedProjMapChartSections
 public import FLT.Mazur.GradedProjPositiveBasis
 public import FLT.Mazur.GradedProjRegradedEvaluation
 public import FLT.Mazur.GradedProjRingEquiv
@@ -5129,6 +5132,7 @@ public import FLT.Mazur.PolygonCompatibleVeronese
 public import FLT.Mazur.PolygonCompatibleZeroCoefficients
 public import FLT.Mazur.PolygonCompleteBaseMarkings
 public import FLT.Mazur.PolygonCompleteCoefficientLine
+public import FLT.Mazur.PolygonCompleteCoefficientOpens
 public import FLT.Mazur.PolygonCompleteCoefficientReconstruction
 public import FLT.Mazur.PolygonCompleteFamilyFlatness
 public import FLT.Mazur.PolygonCompleteLineQuotient
@@ -5195,6 +5199,7 @@ public import FLT.Mazur.PolygonGeometricGraph
 public import FLT.Mazur.PolygonGeometricTranslations
 public import FLT.Mazur.PolygonGroupPoints
 public import FLT.Mazur.PolygonHZeroIncidence
+public import FLT.Mazur.PolygonHomogeneousBoundaryEvaluation
 public import FLT.Mazur.PolygonIdealModulePullback
 public import FLT.Mazur.PolygonIncidence
 public import FLT.Mazur.PolygonIncidenceQuotient
@@ -6430,6 +6435,7 @@ public import FLT.Mazur.SectionProjectiveFiniteNeighborhood
 public import FLT.Mazur.SectionProjectiveImmersion
 public import FLT.Mazur.SectionRetainedChartComparison
 public import FLT.Mazur.SectionRetainedChartMorphism
+public import FLT.Mazur.SectionRetainedCoordinateRatios
 public import FLT.Mazur.SectionRetainedFractionEquation
 public import FLT.Mazur.SectionRetainedFractionUniqueness
 public import FLT.Mazur.SectionRetainedLineEvaluation
@@ -6441,6 +6447,7 @@ public import FLT.Mazur.SectionRetainedProjNaturality
 public import FLT.Mazur.SectionRetainedProjOfAmple
 public import FLT.Mazur.SectionRetainedProjOpens
 public import FLT.Mazur.SectionRetainedProjStructuralMap
+public import FLT.Mazur.SectionRetainedSheafEvaluation
 public import FLT.Mazur.SectionSumFiberDegree
 public import FLT.Mazur.SectionSumFieldLength
 public import FLT.Mazur.SectionSumFinite
