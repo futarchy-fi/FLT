@@ -3921,6 +3921,7 @@ public import FLT.Mazur.FinitePrincipalChartIntegerDescent
 public import FLT.Mazur.FinitePrincipalIdealPatching
 public import FLT.Mazur.FinitePrincipalTargetRefinement
 public import FLT.Mazur.FiniteProductDirectSum
+public import FLT.Mazur.FiniteProjectiveRankOneTrivialization
 public import FLT.Mazur.FiniteProjectiveSectionAmple
 public import FLT.Mazur.FiniteProjectiveTildeLocal
 public import FLT.Mazur.FinitePushforwardAmpleVanishing
@@ -5880,7 +5881,13 @@ public import FLT.Mazur.ProperLinePushforwardBaseChange
 public import FLT.Mazur.ProperLinePushforwardLocalFree
 public import FLT.Mazur.ProperLinePushforwardMate
 public import FLT.Mazur.ProperLinePushforwardTilde
+public import FLT.Mazur.ProperLineRankOneCohomology
+public import FLT.Mazur.ProperLineRankOneDetection
+public import FLT.Mazur.ProperLineRankOneDirectImage
+public import FLT.Mazur.ProperLineRankOneOpenBaseChange
+public import FLT.Mazur.ProperLineRankOneOpenFactorization
 public import FLT.Mazur.ProperLineSectionProjective
+public import FLT.Mazur.ProperLineSectionRankLocus
 public import FLT.Mazur.ProperLineSheafDescent
 public import FLT.Mazur.ProperLineSheafFinitePresentationEnvelope
 public import FLT.Mazur.ProperLocalAmpleFiberGenerators
