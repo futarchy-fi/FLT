@@ -4036,7 +4036,9 @@ public import FLT.Mazur.GradedProjStructuralNaturality
 public import FLT.Mazur.GradedProjUnitChart
 public import FLT.Mazur.GradedProjUnitChartMap
 public import FLT.Mazur.GradedProjUnitChartOpens
+public import FLT.Mazur.GroupMarkingBaseChange
 public import FLT.Mazur.GroupMarkingTransport
+public import FLT.Mazur.GroupMarkingTransportNaturality
 public import FLT.Mazur.GroupSectionBaseChange
 public import FLT.Mazur.GroupTorsionCommutativeStructure
 public import FLT.Mazur.GroupTorsionProper
@@ -6140,6 +6142,7 @@ public import FLT.Mazur.TensorOpenChart
 public import FLT.Mazur.TensorOpenChartCommonBoundary
 public import FLT.Mazur.TensorOpenChartCommonIntersection
 public import FLT.Mazur.TensorOpenChartIntersection
+public import FLT.Mazur.TensorOpenChartNodeExclusion
 public import FLT.Mazur.TensorOpenChartOverlap
 public import FLT.Mazur.TensorOpenChartRange
 public import FLT.Mazur.TensorOpenChartTargetTransport
@@ -6163,6 +6166,7 @@ public import FLT.Mazur.TwistedSectionRegularity
 public import FLT.Mazur.UniformizerRootExtension
 public import FLT.Mazur.UnitIntegerModel
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryAffineSections
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryCoefficientGroup
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryCoordinateInverse
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryCoordinateSections
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryCoordinateUnits
@@ -6171,6 +6175,7 @@ public import FLT.Mazur.UniversalWeierstrassAuxiliaryEtale
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryFieldCoordinates
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryFrameUnits
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryFullBasis
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryFullNormalizedMarking
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryIsomorphismUnique
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryLevel
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryMarkingInvariant
@@ -6184,6 +6189,7 @@ public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizedIsomorphism
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizedSections
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryProperNormalization
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryPullbackSections
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryRelativePoint
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryRelativeRigidity
 public import FLT.Mazur.UniversalWeierstrassAuxiliarySchemeRigidity
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryTorsionCover
@@ -6281,7 +6287,15 @@ public import FLT.Mazur.WeierstrassChartPresentation
 public import FLT.Mazur.WeierstrassChartSchemeGluingData
 public import FLT.Mazur.WeierstrassChartStandardSmooth
 public import FLT.Mazur.WeierstrassChartUnitLift
+public import FLT.Mazur.WeierstrassCoefficientAddition
+public import FLT.Mazur.WeierstrassCoefficientAffineProduct
 public import FLT.Mazur.WeierstrassCoefficientChartPreimage
+public import FLT.Mazur.WeierstrassCoefficientGroup
+public import FLT.Mazur.WeierstrassCoefficientMarking
+public import FLT.Mazur.WeierstrassCoefficientMonoidalComparison
+public import FLT.Mazur.WeierstrassCoefficientProductMorphism
+public import FLT.Mazur.WeierstrassCoefficientSecant
+public import FLT.Mazur.WeierstrassCoefficientZero
 public import FLT.Mazur.WeierstrassConstantSections
 public import FLT.Mazur.WeierstrassCrossInputAdditionComparison
 public import FLT.Mazur.WeierstrassCubicAmbientCohomology
@@ -6379,6 +6393,15 @@ public import FLT.Mazur.WeierstrassDividedExteriorReassociation
 public import FLT.Mazur.WeierstrassDividedExteriorSmoothOpen
 public import FLT.Mazur.WeierstrassDividedExteriorStep
 public import FLT.Mazur.WeierstrassDividedExteriorYBoundary
+public import FLT.Mazur.WeierstrassDividedFinalInitialNodesDistinct
+public import FLT.Mazur.WeierstrassDividedFinalNodeAdjacent
+public import FLT.Mazur.WeierstrassDividedFinalNodeChart
+public import FLT.Mazur.WeierstrassDividedFinalNodeCoproduct
+public import FLT.Mazur.WeierstrassDividedFinalNodeFamily
+public import FLT.Mazur.WeierstrassDividedFinalNodeNonadjacent
+public import FLT.Mazur.WeierstrassDividedFinalNodeOrigins
+public import FLT.Mazur.WeierstrassDividedFinalNodesDistinct
+public import FLT.Mazur.WeierstrassDividedFinalRetainedNodesDistinct
 public import FLT.Mazur.WeierstrassDividedFiniteAffineProper
 public import FLT.Mazur.WeierstrassDividedFiniteAtlas
 public import FLT.Mazur.WeierstrassDividedFiniteChartStructure
@@ -6441,6 +6464,7 @@ public import FLT.Mazur.WeierstrassDividedInitialGlobalResidueNodes
 public import FLT.Mazur.WeierstrassDividedInitialGlobalSections
 public import FLT.Mazur.WeierstrassDividedInitialGlobalTensorChart
 public import FLT.Mazur.WeierstrassDividedInitialIndexedNodeCover
+public import FLT.Mazur.WeierstrassDividedInitialPrecedingExterior
 public import FLT.Mazur.WeierstrassDividedInitialResidueAtlas
 public import FLT.Mazur.WeierstrassDividedInitialTensorChart
 public import FLT.Mazur.WeierstrassDividedInitialZeroInfinity
@@ -6495,6 +6519,7 @@ public import FLT.Mazur.WeierstrassDividedOlderZeroExtendedOrigins
 public import FLT.Mazur.WeierstrassDividedOlderZeroExtendedSections
 public import FLT.Mazur.WeierstrassDividedOlderZeroIndexedNodeCover
 public import FLT.Mazur.WeierstrassDividedOppositeBoundarySupport
+public import FLT.Mazur.WeierstrassDividedOrderedRetainedSections
 public import FLT.Mazur.WeierstrassDividedPreviousBoundaryAlgebra
 public import FLT.Mazur.WeierstrassDividedResidueAtlasExtension
 public import FLT.Mazur.WeierstrassDividedResidueAtlasFinite
@@ -6508,6 +6533,7 @@ public import FLT.Mazur.WeierstrassDividedSkippedTensorIntersection
 public import FLT.Mazur.WeierstrassDividedSuccessiveOriginalY
 public import FLT.Mazur.WeierstrassDividedTensorAtlasComparison
 public import FLT.Mazur.WeierstrassDividedTensorYBoundary
+public import FLT.Mazur.WeierstrassDividedTerminalAllExteriorNodes
 public import FLT.Mazur.WeierstrassDividedTerminalBranchIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalBranchesNodeIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalConicBoundary
