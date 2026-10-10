@@ -5066,6 +5066,7 @@ public import FLT.Mazur.PolygonHZeroIncidence
 public import FLT.Mazur.PolygonIdealModulePullback
 public import FLT.Mazur.PolygonIncidence
 public import FLT.Mazur.PolygonIncidenceQuotient
+public import FLT.Mazur.PolygonInfinitesimalAtlas
 public import FLT.Mazur.PolygonInfinitesimalDiagram
 public import FLT.Mazur.PolygonLineHZero
 public import FLT.Mazur.PolygonLineNodeRestriction
