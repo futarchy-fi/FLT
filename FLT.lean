@@ -5599,6 +5599,7 @@ public import FLT.Mazur.ProperImmersedCover
 public import FLT.Mazur.ProperIntegralConstantSections
 public import FLT.Mazur.ProperLineFiberVanishing
 public import FLT.Mazur.ProperLineIsomorphismDescent
+public import FLT.Mazur.ProperLineIteratedFiberVanishing
 public import FLT.Mazur.ProperLinePushforwardBaseChange
 public import FLT.Mazur.ProperLinePushforwardLocalFree
 public import FLT.Mazur.ProperLinePushforwardMate
