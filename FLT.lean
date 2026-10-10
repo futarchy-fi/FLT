@@ -5115,6 +5115,7 @@ public import FLT.Mazur.PolygonScalingNaturality
 public import FLT.Mazur.PolygonSeparated
 public import FLT.Mazur.PolygonSmoothLocus
 public import FLT.Mazur.PolygonSmoothingRing
+public import FLT.Mazur.PolygonSmoothingSpecialFiber
 public import FLT.Mazur.PolygonSplitGeneratorIdentities
 public import FLT.Mazur.PolygonSplitGroup
 public import FLT.Mazur.PolygonSplitInterpolationEquations
