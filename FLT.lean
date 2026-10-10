@@ -3000,6 +3000,7 @@ public import FLT.Mazur.CartesianUpperCone
 public import FLT.Mazur.CartierAbelDirectImageSections
 public import FLT.Mazur.CartierAbelFiber
 public import FLT.Mazur.CartierAbelIntegralFiberSections
+public import FLT.Mazur.CartierAbelPulledSectionAdjoint
 public import FLT.Mazur.CartierAbelRelativeBaseChange
 public import FLT.Mazur.CartierAbelRelativeQuotient
 public import FLT.Mazur.CartierAbelSectionQuotient
