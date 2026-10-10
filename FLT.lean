@@ -5978,6 +5978,7 @@ public import FLT.Mazur.SpecChartIdealPreimage
 public import FLT.Mazur.SpectrumFieldCohomologyCoordinates
 public import FLT.Mazur.SpectrumSmoothFiniteFlatCartier
 public import FLT.Mazur.SplitEvaluationTensorKernel
+public import FLT.Mazur.SplitLineAffineNeighborhood
 public import FLT.Mazur.SplitLineCoordinateCover
 public import FLT.Mazur.SplitLineCoordinateNaturality
 public import FLT.Mazur.SplitLineImageChart
