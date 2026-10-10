@@ -5953,6 +5953,7 @@ public import FLT.Mazur.RetainedSubringGrading
 public import FLT.Mazur.RetainedSubringLocalization
 public import FLT.Mazur.RetainedSubringZeroRing
 public import FLT.Mazur.RightDerivedDimensionShift
+public import FLT.Mazur.RigidifiedLineIsomorphismExistence
 public import FLT.Mazur.RigidifiedLineIsomorphisms
 public import FLT.Mazur.RingCohomologyFinitePushforward
 public import FLT.Mazur.RingEqualizerAwayEndpoint
