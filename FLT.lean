@@ -5779,7 +5779,9 @@ public import FLT.Mazur.ProperFamilyPrescribedComposition
 public import FLT.Mazur.ProperFamilyPrescribedIdentity
 public import FLT.Mazur.ProperFamilyRepresentedDivisor
 public import FLT.Mazur.ProperFamilyRigidifiedComparisons
+public import FLT.Mazur.ProperFamilyRigidifiedFppfPairs
 public import FLT.Mazur.ProperFamilyRigidifiedLocalRepresentatives
+public import FLT.Mazur.ProperFamilyRigidifiedTransitions
 public import FLT.Mazur.ProperFamilySectionCoherence
 public import FLT.Mazur.ProperFamilySectionOrbits
 public import FLT.Mazur.ProperFamilySectionPullback
@@ -5930,9 +5932,12 @@ public import FLT.Mazur.RelativeMarkingSections
 public import FLT.Mazur.RelativePicardBaseChangeGeometry
 public import FLT.Mazur.RelativePicardFppfBaseChange
 public import FLT.Mazur.RelativePicardFppfComparison
+public import FLT.Mazur.RelativePicardFppfCover
+public import FLT.Mazur.RelativePicardFppfPairs
 public import FLT.Mazur.RelativePicardFppfSheaf
 public import FLT.Mazur.RelativePicardPresheaf
 public import FLT.Mazur.RelativePicardPresheafBaseChange
+public import FLT.Mazur.RelativePicardPullbackSquares
 public import FLT.Mazur.RelativePicardQuotient
 public import FLT.Mazur.RelativePicardTwistIso
 public import FLT.Mazur.RelativePinchingDescent
@@ -5964,10 +5969,13 @@ public import FLT.Mazur.RetainedSubringZeroRing
 public import FLT.Mazur.RightDerivedDimensionShift
 public import FLT.Mazur.RigidifiedLineIsomorphismExistence
 public import FLT.Mazur.RigidifiedLineIsomorphisms
+public import FLT.Mazur.RigidifiedPicardBaseCharts
 public import FLT.Mazur.RigidifiedPicardClasses
 public import FLT.Mazur.RigidifiedPicardFppfComparison
 public import FLT.Mazur.RigidifiedPicardPresheaf
 public import FLT.Mazur.RigidifiedPicardPullback
+public import FLT.Mazur.RigidifiedPicardPullbackCharts
+public import FLT.Mazur.RigidifiedPicardPullbackCoherence
 public import FLT.Mazur.RingCohomologyFinitePushforward
 public import FLT.Mazur.RingEqualizerAwayEndpoint
 public import FLT.Mazur.RingEqualizerDescent
