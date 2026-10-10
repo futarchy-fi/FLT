@@ -6068,6 +6068,7 @@ public import FLT.Mazur.UniversalWeierstrassAuxiliaryCoverage
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryEtale
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryFieldCoordinates
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryFullBasis
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryIsomorphismUnique
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryLevel
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryPullbackSections
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryRelativeRigidity
