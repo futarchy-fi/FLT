@@ -6134,6 +6134,7 @@ public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalEquation
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizationNatural
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizedFrame
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizedSections
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryProperNormalization
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryPullbackSections
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryRelativeRigidity
 public import FLT.Mazur.UniversalWeierstrassAuxiliarySchemeRigidity
@@ -6620,6 +6621,7 @@ public import FLT.Mazur.WeierstrassIntegralAssociativity
 public import FLT.Mazur.WeierstrassIntegralBaseChange
 public import FLT.Mazur.WeierstrassIntegralChart
 public import FLT.Mazur.WeierstrassIntegralChartIntersection
+public import FLT.Mazur.WeierstrassIntegralChartProjectivePoint
 public import FLT.Mazur.WeierstrassIntegralCoefficientMap
 public import FLT.Mazur.WeierstrassIntegralCurveGluing
 public import FLT.Mazur.WeierstrassIntegralCurveMorphisms
@@ -6640,6 +6642,7 @@ public import FLT.Mazur.WeierstrassIntegralSeparated
 public import FLT.Mazur.WeierstrassIntegralSmooth
 public import FLT.Mazur.WeierstrassIntegralTripleFlat
 public import FLT.Mazur.WeierstrassIntegralTripleProduct
+public import FLT.Mazur.WeierstrassIntegralUnitPoint
 public import FLT.Mazur.WeierstrassIntegralZeroSection
 public import FLT.Mazur.WeierstrassLineCubicFactorization
 public import FLT.Mazur.WeierstrassLocalAdditionCurveComparison
@@ -6843,6 +6846,11 @@ public import FLT.Mazur.WeierstrassOriginIdealInvariant
 public import FLT.Mazur.WeierstrassOriginIdealSheaf
 public import FLT.Mazur.WeierstrassOriginImageCharts
 public import FLT.Mazur.WeierstrassOriginImageEquation
+public import FLT.Mazur.WeierstrassOriginIsomorphismAffine
+public import FLT.Mazur.WeierstrassOriginIsomorphismCoordinates
+public import FLT.Mazur.WeierstrassOriginIsomorphismDivisor
+public import FLT.Mazur.WeierstrassOriginIsomorphismPoles
+public import FLT.Mazur.WeierstrassOriginIsomorphismSections
 public import FLT.Mazur.WeierstrassOriginJets
 public import FLT.Mazur.WeierstrassOriginMonomialPoles
 public import FLT.Mazur.WeierstrassOriginNeighborhoodCover
@@ -7168,9 +7176,21 @@ public import FLT.Mazur.WeierstrassTripleInnerAdditionCover
 public import FLT.Mazur.WeierstrassTripleInnerOutputRegular
 public import FLT.Mazur.WeierstrassTripleSlopeAlgebra
 public import FLT.Mazur.WeierstrassTripleTangentSlopeAlgebra
+public import FLT.Mazur.WeierstrassVariableChangeAffineRestriction
+public import FLT.Mazur.WeierstrassVariableChangeCoordinateCover
+public import FLT.Mazur.WeierstrassVariableChangeCubicSubstitution
 public import FLT.Mazur.WeierstrassVariableChangeFrame
+public import FLT.Mazur.WeierstrassVariableChangeHomogeneous
 public import FLT.Mazur.WeierstrassVariableChangeIntegralEquation
+public import FLT.Mazur.WeierstrassVariableChangeIntegralIso
+public import FLT.Mazur.WeierstrassVariableChangeIntegralMorphism
+public import FLT.Mazur.WeierstrassVariableChangeLinear
+public import FLT.Mazur.WeierstrassVariableChangeLocalCoordinates
+public import FLT.Mazur.WeierstrassVariableChangeLocalMorphism
+public import FLT.Mazur.WeierstrassVariableChangeProjectiveInverse
+public import FLT.Mazur.WeierstrassVariableChangeProjectivePoints
 public import FLT.Mazur.WeierstrassVariableChangeScaledCoefficients
+public import FLT.Mazur.WeierstrassVariableChangeZero
 public import FLT.Mazur.WeierstrassVerticalAdditionCharts
 public import FLT.Mazur.WeierstrassVerticalChartCompatibility
 public import FLT.Mazur.WeierstrassVietaNormalization
