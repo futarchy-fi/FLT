@@ -7729,6 +7729,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXResidueNodeIdeals
 public import FLT.Mazur.WeierstrassSuccessiveXResidueNodeMaps
 public import FLT.Mazur.WeierstrassSuccessiveXResidueSplitBranchCharts
 public import FLT.Mazur.WeierstrassSuccessiveXResidueTransitionBaseChange
+public import FLT.Mazur.WeierstrassSuccessiveXResidueZeroNodeDisjoint
 public import FLT.Mazur.WeierstrassSuccessiveXSaturation
 public import FLT.Mazur.WeierstrassSuccessiveXScaleOne
 public import FLT.Mazur.WeierstrassSuccessiveXSchemeOverlap
