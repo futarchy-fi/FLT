@@ -4641,6 +4641,7 @@ public import FLT.Mazur.LineTrivializationCocycleRecovery
 public import FLT.Mazur.LineTrivializationCoordinates
 public import FLT.Mazur.LinearCoordinateRatio
 public import FLT.Mazur.LinearRankOneFrameUnit
+public import FLT.Mazur.LocalBaseSectionDisjointness
 public import FLT.Mazur.LocalCartierGeneratorDescent
 public import FLT.Mazur.LocalClosedFiberBaseChange
 public import FLT.Mazur.LocalClosedFiberConnectedness
