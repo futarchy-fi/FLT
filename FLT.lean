@@ -2711,6 +2711,7 @@ public import FLT.Mazur.AffineScaledPullbackSections
 public import FLT.Mazur.AffineScaledTripleTransport
 public import FLT.Mazur.AffineSectionEvaluationCoordinates
 public import FLT.Mazur.AffineSectionLineCanonicalPullback
+public import FLT.Mazur.AffineSectionLineCanonicalRestriction
 public import FLT.Mazur.AffineSectionLineCoefficientMap
 public import FLT.Mazur.AffineSectionLineGeometricPullback
 public import FLT.Mazur.AffineSectionLineGluing
