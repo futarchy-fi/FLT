@@ -7165,6 +7165,7 @@ public import FLT.Mazur.WeierstrassScaledChartComparison
 public import FLT.Mazur.WeierstrassSecantMorphismExt
 public import FLT.Mazur.WeierstrassSingularJetObstruction
 public import FLT.Mazur.WeierstrassSingularJetTranslation
+public import FLT.Mazur.WeierstrassSlopeLaurentGeometry
 public import FLT.Mazur.WeierstrassSlopeLaurentLocalization
 public import FLT.Mazur.WeierstrassSlopeSwapFormula
 public import FLT.Mazur.WeierstrassSmoothAdditionCommutative
