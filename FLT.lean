@@ -5508,6 +5508,7 @@ public import FLT.Mazur.ProjectiveLineInfinityTorusMarks
 public import FLT.Mazur.ProjectiveLineInfinityTorusTransition
 public import FLT.Mazur.ProjectiveLineInteriorGenerator
 public import FLT.Mazur.ProjectiveLineInteriorRatios
+public import FLT.Mazur.ProjectiveLineMapInjectivity
 public import FLT.Mazur.ProjectiveLineMapRange
 public import FLT.Mazur.ProjectiveLineMarkedCharts
 public import FLT.Mazur.ProjectiveLineMarkedDualCoordinates
