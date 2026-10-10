@@ -7145,6 +7145,7 @@ public import FLT.Mazur.WeierstrassTransportedComparisonArbitrary
 public import FLT.Mazur.WeierstrassTransportedOutputRegular
 public import FLT.Mazur.WeierstrassTransportedPolynomialComparison
 public import FLT.Mazur.WeierstrassTransportedPolynomialScheme
+public import FLT.Mazur.WeierstrassTriangularAdmissible
 public import FLT.Mazur.WeierstrassTriangularCoordinates
 public import FLT.Mazur.WeierstrassTriangularFrame
 public import FLT.Mazur.WeierstrassTriangularRelation
