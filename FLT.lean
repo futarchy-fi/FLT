@@ -6536,6 +6536,7 @@ public import FLT.Mazur.WeierstrassDividedInitialRetainedBoundary
 public import FLT.Mazur.WeierstrassDividedInitialRetainedIntersection
 public import FLT.Mazur.WeierstrassDividedInitialTensorBoundary
 public import FLT.Mazur.WeierstrassDividedInitialTensorChart
+public import FLT.Mazur.WeierstrassDividedInitialTensorIntersection
 public import FLT.Mazur.WeierstrassDividedInitialZeroInfinity
 public import FLT.Mazur.WeierstrassDividedInitialZeroSlopeChart
 public import FLT.Mazur.WeierstrassDividedLocalizedIntersection
