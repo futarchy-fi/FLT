@@ -5471,6 +5471,7 @@ public import FLT.Mazur.ProjectiveLineCharts
 public import FLT.Mazur.ProjectiveLineCohomologyVanishing
 public import FLT.Mazur.ProjectiveLineConstantSections
 public import FLT.Mazur.ProjectiveLineEndpointCover
+public import FLT.Mazur.ProjectiveLineEndpointReversal
 public import FLT.Mazur.ProjectiveLineEndpoints
 public import FLT.Mazur.ProjectiveLineFieldExtension
 public import FLT.Mazur.ProjectiveLineHomogeneousCoordinates
