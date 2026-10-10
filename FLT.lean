@@ -5636,6 +5636,7 @@ public import FLT.Mazur.TrivializedLineSheafLimitDescent
 public import FLT.Mazur.UniformizerRootExtension
 public import FLT.Mazur.UnitIntegerModel
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryLevel
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryTorsionCover
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryTorsionDisjoint
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryTorsionSections
 public import FLT.Mazur.UniversalWeierstrassCyclicAuxiliary
