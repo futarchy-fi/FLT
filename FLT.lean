@@ -3734,6 +3734,7 @@ public import FLT.Mazur.FaithfullyFlatInvertible
 public import FLT.Mazur.FamilyTransport
 public import FLT.Mazur.FiberAffineOpenBaseChange
 public import FLT.Mazur.FiberAffineOpenBaseIso
+public import FLT.Mazur.FiberCohomologyTensorCriterion
 public import FLT.Mazur.FiberCohomologyTensorExactness
 public import FLT.Mazur.FiberwiseRegularFlatQuotient
 public import FLT.Mazur.FieldCoefficientCohomologyDimension
