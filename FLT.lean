@@ -4933,6 +4933,7 @@ public import FLT.Mazur.OpenRestrictionInclusion
 public import FLT.Mazur.OpenRestrictionLimitMap
 public import FLT.Mazur.OpenSchemeParameters
 public import FLT.Mazur.OpenSectionFilteredColimit
+public import FLT.Mazur.OpenSectionMonicity
 public import FLT.Mazur.OpenSectionTopComparison
 public import FLT.Mazur.OpenSheafCohomology
 public import FLT.Mazur.OpenSheafCohomologyRestriction
