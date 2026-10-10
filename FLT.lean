@@ -2755,6 +2755,7 @@ public import FLT.Mazur.AffineTildeBaseChangeIso
 public import FLT.Mazur.AffineTildeBaseChangeUnit
 public import FLT.Mazur.AffineTildeMorphismCoherence
 public import FLT.Mazur.AffineTildePullbackMap
+public import FLT.Mazur.AffineTildePullbackNonvanishing
 public import FLT.Mazur.AffineTildePullbackSectionMap
 public import FLT.Mazur.AffineTildeSemilinearCoherence
 public import FLT.Mazur.AffineTildeSemilinearMap
