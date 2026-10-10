@@ -7013,6 +7013,9 @@ public import FLT.Mazur.WeierstrassDividedInitialTensorIntersection
 public import FLT.Mazur.WeierstrassDividedInitialZeroInfinity
 public import FLT.Mazur.WeierstrassDividedInitialZeroLaurent
 public import FLT.Mazur.WeierstrassDividedInitialZeroSlopeChart
+public import FLT.Mazur.WeierstrassDividedLaurentTerminalAttachments
+public import FLT.Mazur.WeierstrassDividedLaurentTerminalEmbedding
+public import FLT.Mazur.WeierstrassDividedLaurentTerminalMap
 public import FLT.Mazur.WeierstrassDividedLocalizedIntersection
 public import FLT.Mazur.WeierstrassDividedNonadjacentGlobalIntersection
 public import FLT.Mazur.WeierstrassDividedNonadjacentTensorIntersection
@@ -7938,6 +7941,10 @@ public import FLT.Mazur.WeierstrassSuccessiveXTerminalConicBranches
 public import FLT.Mazur.WeierstrassSuccessiveXTerminalConicCover
 public import FLT.Mazur.WeierstrassSuccessiveXTerminalConicOrigin
 public import FLT.Mazur.WeierstrassSuccessiveXTerminalConicParameters
+public import FLT.Mazur.WeierstrassSuccessiveXTerminalLaurentBoundary
+public import FLT.Mazur.WeierstrassSuccessiveXTerminalLaurentComponent
+public import FLT.Mazur.WeierstrassSuccessiveXTerminalLaurentMarks
+public import FLT.Mazur.WeierstrassSuccessiveXTerminalLaurentSmooth
 public import FLT.Mazur.WeierstrassSuccessiveXTerminalNodePunctures
 public import FLT.Mazur.WeierstrassSuccessiveXTotalTransform
 public import FLT.Mazur.WeierstrassSuccessiveXZeroConicBoundary
