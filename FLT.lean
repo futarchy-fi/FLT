@@ -4554,6 +4554,7 @@ public import FLT.Mazur.LocallySplitLineAtlasIndependence
 public import FLT.Mazur.LocallySplitLineAtlasSection
 public import FLT.Mazur.LocallySplitLineChartRefinement
 public import FLT.Mazur.LocallySplitLineDualChartCompatibility
+public import FLT.Mazur.LocallySplitLineNormalizedChart
 public import FLT.Mazur.LocallySplitLineOpenRestriction
 public import FLT.Mazur.LocallySplitLineSourceTransport
 public import FLT.Mazur.LocallySplitSheafPullback
