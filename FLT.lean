@@ -3754,6 +3754,7 @@ public import FLT.Mazur.FiniteFlatCoefficientIdeal
 public import FLT.Mazur.FiniteFlatLocalIdealPresentation
 public import FLT.Mazur.FiniteFlatQuotientTrivialization
 public import FLT.Mazur.FiniteFlatSubschemeQuotient
+public import FLT.Mazur.FiniteFreeAmbientChartRefinement
 public import FLT.Mazur.FiniteFreeChartGeneratorRestriction
 public import FLT.Mazur.FiniteFreeChartPointCompatibility
 public import FLT.Mazur.FiniteFreeChartProjectiveRestriction
