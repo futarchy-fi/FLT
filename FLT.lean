@@ -3287,6 +3287,7 @@ public import FLT.Mazur.DRFiberClassification
 public import FLT.Mazur.DedekindPointExtension
 public import FLT.Mazur.DirectImageBaseChangeAdjoints
 public import FLT.Mazur.DirectImageBaseChangeMate
+public import FLT.Mazur.DirectImageBaseChangeNormalizedPasting
 public import FLT.Mazur.DirectImageBaseChangePasting
 public import FLT.Mazur.DirectImageBaseChangeRestriction
 public import FLT.Mazur.DirectImageBaseChangeUnit
