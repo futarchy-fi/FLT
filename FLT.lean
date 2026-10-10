@@ -6394,6 +6394,7 @@ public import FLT.Mazur.TwistedSectionBaseChange
 public import FLT.Mazur.TwistedSectionBaseChangeRegularity
 public import FLT.Mazur.TwistedSectionBaseLineNaturality
 public import FLT.Mazur.TwistedSectionCartierTransport
+public import FLT.Mazur.TwistedSectionCoefficientNaturality
 public import FLT.Mazur.TwistedSectionIntegralCriterion
 public import FLT.Mazur.TwistedSectionLocalSplitting
 public import FLT.Mazur.TwistedSectionPullbackMonicity
