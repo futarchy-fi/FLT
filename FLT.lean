@@ -5026,6 +5026,12 @@ public import FLT.Mazur.PolygonChartScaling
 public import FLT.Mazur.PolygonClassifiedFamily
 public import FLT.Mazur.PolygonCoconeComparison
 public import FLT.Mazur.PolygonCohomologyIncidence
+public import FLT.Mazur.PolygonCompatibleDegreeProjection
+public import FLT.Mazur.PolygonCompatibleHomogeneousSections
+public import FLT.Mazur.PolygonCompatibleSectionAlgebra
+public import FLT.Mazur.PolygonCompatibleSectionReduction
+public import FLT.Mazur.PolygonCompatibleSectionRing
+public import FLT.Mazur.PolygonCompatibleSectionScalars
 public import FLT.Mazur.PolygonComponentDistinct
 public import FLT.Mazur.PolygonComponentImages
 public import FLT.Mazur.PolygonConnected
@@ -5180,6 +5186,7 @@ public import FLT.Mazur.PolygonPureDimension
 public import FLT.Mazur.PolygonRefinedClosedCharts
 public import FLT.Mazur.PolygonScaledReciprocal
 public import FLT.Mazur.PolygonScalingNaturality
+public import FLT.Mazur.PolygonSectionRingFunctor
 public import FLT.Mazur.PolygonSeparated
 public import FLT.Mazur.PolygonSmoothLocus
 public import FLT.Mazur.PolygonSmoothingBaseChange
@@ -6142,6 +6149,9 @@ public import FLT.Mazur.SectionGradedCoordinates
 public import FLT.Mazur.SectionGradedGeneratorLocalization
 public import FLT.Mazur.SectionGradedIsoMultiplication
 public import FLT.Mazur.SectionGradedIsoRing
+public import FLT.Mazur.SectionGradedLineCoherence
+public import FLT.Mazur.SectionGradedLinePullback
+public import FLT.Mazur.SectionGradedLineRingCoherence
 public import FLT.Mazur.SectionGradedLocalCoordinates
 public import FLT.Mazur.SectionGradedMultiplication
 public import FLT.Mazur.SectionGradedPowerGenerators
@@ -6166,6 +6176,7 @@ public import FLT.Mazur.SectionGradedProjOfAmple
 public import FLT.Mazur.SectionGradedProjOpens
 public import FLT.Mazur.SectionGradedProjPullbackEvaluation
 public import FLT.Mazur.SectionGradedProjStructuralMap
+public import FLT.Mazur.SectionGradedProjection
 public import FLT.Mazur.SectionGradedPullback
 public import FLT.Mazur.SectionGradedPullbackRing
 public import FLT.Mazur.SectionGradedRestriction
