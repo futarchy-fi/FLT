@@ -2997,13 +2997,17 @@ public import FLT.Mazur.CartesianStructurePositiveHomology
 public import FLT.Mazur.CartesianStructureSections
 public import FLT.Mazur.CartesianStructureTensorRestrictions
 public import FLT.Mazur.CartesianUpperCone
+public import FLT.Mazur.CartierAbelDirectImageBaseChange
 public import FLT.Mazur.CartierAbelDirectImageSections
 public import FLT.Mazur.CartierAbelFiber
 public import FLT.Mazur.CartierAbelIntegralFiberSections
+public import FLT.Mazur.CartierAbelProperBaseChange
 public import FLT.Mazur.CartierAbelPulledSectionAdjoint
 public import FLT.Mazur.CartierAbelRelativeBaseChange
 public import FLT.Mazur.CartierAbelRelativeQuotient
+public import FLT.Mazur.CartierAbelResidueNonvanishing
 public import FLT.Mazur.CartierAbelSectionQuotient
+public import FLT.Mazur.CartierAbelSquareComparison
 public import FLT.Mazur.CartierAbelTwistBaseChange
 public import FLT.Mazur.CartierAbelTwistedSections
 public import FLT.Mazur.CartierAffineFppfDescent
@@ -3332,6 +3336,8 @@ public import FLT.Mazur.DualAtlasSectionLocalSubobjects
 public import FLT.Mazur.DualAtlasSectionNormalizedRefinement
 public import FLT.Mazur.DualAtlasSectionReverseForward
 public import FLT.Mazur.DualFreeSheafCoordinates
+public import FLT.Mazur.DualPullbackComposition
+public import FLT.Mazur.DualPullbackSquare
 public import FLT.Mazur.EllipticAbstractComponentInjection
 public import FLT.Mazur.EllipticAbstractGoodReductionClosure
 public import FLT.Mazur.EllipticAbstractMultiplicativeComponents
@@ -3980,6 +3986,7 @@ public import FLT.Mazur.FramedDualProjectiveChanges
 public import FLT.Mazur.FramedDualProjectiveComposition
 public import FLT.Mazur.FramedDualProjectivePullback
 public import FLT.Mazur.FramedDualProjectiveReverse
+public import FLT.Mazur.FreeModuleResidueRetraction
 public import FLT.Mazur.FreeSheafPullbackRestriction
 public import FLT.Mazur.FreeSheafRestrictionCoherence
 public import FLT.Mazur.FreeSheafSectionCoordinates
@@ -4508,6 +4515,7 @@ public import FLT.Mazur.LaurentTensor
 public import FLT.Mazur.LaurentUnitMultiplication
 public import FLT.Mazur.LaurentUnitPoints
 public import FLT.Mazur.LineBundleSectionOpenPullback
+public import FLT.Mazur.LineDualPullbackSquare
 public import FLT.Mazur.LineEndpointTransport
 public import FLT.Mazur.LineImageCartier
 public import FLT.Mazur.LinePowerCocyclePullback
@@ -5630,6 +5638,7 @@ public import FLT.Mazur.RelativeSerreVanishing
 public import FLT.Mazur.RelativeSums
 public import FLT.Mazur.RelativeVeryAmpleLineBundle
 public import FLT.Mazur.RepeatedCubicRoots
+public import FLT.Mazur.ResidueVectorRetraction
 public import FLT.Mazur.RightDerivedDimensionShift
 public import FLT.Mazur.RigidifiedLineIsomorphisms
 public import FLT.Mazur.RingCohomologyFinitePushforward
@@ -6170,6 +6179,7 @@ public import FLT.Mazur.TildeSourceSectionComparison
 public import FLT.Mazur.TorusChartScalars
 public import FLT.Mazur.TrivialLineTwistLocalization
 public import FLT.Mazur.TrivializedLineSheafLimitDescent
+public import FLT.Mazur.TwistedSectionBaseChange
 public import FLT.Mazur.TwistedSectionIntegralCriterion
 public import FLT.Mazur.TwistedSectionPushforward
 public import FLT.Mazur.TwistedSectionPushforwardNaturality
