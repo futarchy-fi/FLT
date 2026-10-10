@@ -5302,6 +5302,7 @@ public import FLT.Mazur.PolygonVeroneseGrading
 public import FLT.Mazur.PolygonVeroneseHomogeneousReduction
 public import FLT.Mazur.PolygonVeroneseParameterIdeal
 public import FLT.Mazur.PolygonVeroneseProductLifting
+public import FLT.Mazur.PolygonVeroneseZeroRing
 public import FLT.Mazur.PolynomialAffineIdealDegree
 public import FLT.Mazur.PolynomialCoefficientArrow
 public import FLT.Mazur.PolynomialEndpointInterpolation
