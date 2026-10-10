@@ -4280,6 +4280,7 @@ public import FLT.Mazur.HomogeneousIdealWitness
 public import FLT.Mazur.HomogeneousLocalizationArbitraryBaseChange
 public import FLT.Mazur.HomogeneousLocalizationBaseChange
 public import FLT.Mazur.HomogeneousLocalizationGenerator
+public import FLT.Mazur.HomogeneousLocalizationRegradedMap
 public import FLT.Mazur.HomogeneousLocalizationRetraction
 public import FLT.Mazur.HomogeneousLocalizationScalars
 public import FLT.Mazur.HomogeneousPrimeAvoidance
