@@ -4852,6 +4852,7 @@ public import FLT.Mazur.NodeDenominatorRestriction
 public import FLT.Mazur.NodeInfinitesimalObstruction
 public import FLT.Mazur.NodeLocalDescent
 public import FLT.Mazur.NodeLocalizedEqualizer
+public import FLT.Mazur.NodeLocalizedPushout
 public import FLT.Mazur.NodeNonsplitTangent
 public import FLT.Mazur.NodeNormalizationBaseChange
 public import FLT.Mazur.NodePinchingDescent
@@ -6304,6 +6305,9 @@ public import FLT.Mazur.SplitLineProjectiveNaturality
 public import FLT.Mazur.SplitLineProjectivePullback
 public import FLT.Mazur.SplitLineProjectiveUnitRecovery
 public import FLT.Mazur.SplitLineRestrictionSubobjects
+public import FLT.Mazur.SplitPairEqualizer
+public import FLT.Mazur.SplitPairLocalDescent
+public import FLT.Mazur.SplitPairPushout
 public import FLT.Mazur.SplitSheafLinePullback
 public import FLT.Mazur.SplitSheafLinePullbackComposition
 public import FLT.Mazur.StableAffineQuotientAffineDescent
@@ -6827,6 +6831,7 @@ public import FLT.Mazur.WeierstrassDividedOlderResidueNodes
 public import FLT.Mazur.WeierstrassDividedOlderSplitNodeCover
 public import FLT.Mazur.WeierstrassDividedOlderSuccessiveCharts
 public import FLT.Mazur.WeierstrassDividedOlderZeroConicParameters
+public import FLT.Mazur.WeierstrassDividedOlderZeroEqualizerCover
 public import FLT.Mazur.WeierstrassDividedOlderZeroExtendedGeometry
 public import FLT.Mazur.WeierstrassDividedOlderZeroExtendedOrigins
 public import FLT.Mazur.WeierstrassDividedOlderZeroExtendedSections
@@ -7198,14 +7203,21 @@ public import FLT.Mazur.WeierstrassModificationXFiberTangentSwitch
 public import FLT.Mazur.WeierstrassModificationXFlat
 public import FLT.Mazur.WeierstrassModificationXFractionEquation
 public import FLT.Mazur.WeierstrassModificationXFractionMap
+public import FLT.Mazur.WeierstrassModificationXFullFiberPushout
+public import FLT.Mazur.WeierstrassModificationXFullNodeBranchCoordinates
 public import FLT.Mazur.WeierstrassModificationXFullNodeBranches
+public import FLT.Mazur.WeierstrassModificationXFullNodeConicBranch
+public import FLT.Mazur.WeierstrassModificationXFullNodeConicParameter
+public import FLT.Mazur.WeierstrassModificationXFullNodeEqualizer
 public import FLT.Mazur.WeierstrassModificationXFullNodeEquiv
 public import FLT.Mazur.WeierstrassModificationXFullNodeFunctions
 public import FLT.Mazur.WeierstrassModificationXFullNodeGeometry
+public import FLT.Mazur.WeierstrassModificationXFullNodeIncidenceBranch
 public import FLT.Mazur.WeierstrassModificationXFullNodeIncidenceOrientation
 public import FLT.Mazur.WeierstrassModificationXFullNodeInverseCoordinates
 public import FLT.Mazur.WeierstrassModificationXFullNodeOpen
 public import FLT.Mazur.WeierstrassModificationXFullNodeOrigin
+public import FLT.Mazur.WeierstrassModificationXFullNodePushout
 public import FLT.Mazur.WeierstrassModificationXFullSecondNode
 public import FLT.Mazur.WeierstrassModificationXFullSecondNodeBranches
 public import FLT.Mazur.WeierstrassModificationXGenerators
