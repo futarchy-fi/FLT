@@ -4521,6 +4521,7 @@ public import FLT.Mazur.LocallySmoothFiniteFlatCartier
 public import FLT.Mazur.LocallySmoothQuasiFiniteCartier
 public import FLT.Mazur.LocallySplitInclusionPullback
 public import FLT.Mazur.LocallySplitSheafPullback
+public import FLT.Mazur.LocallySplitSheafTransport
 public import FLT.Mazur.MarkedIntegerModel
 public import FLT.Mazur.MaximalAdicDetection
 public import FLT.Mazur.ModuleBinarySectionGluing
