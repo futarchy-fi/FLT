@@ -6827,6 +6827,7 @@ public import FLT.Mazur.WeierstrassOriginIdealInvariant
 public import FLT.Mazur.WeierstrassOriginIdealSheaf
 public import FLT.Mazur.WeierstrassOriginImageCharts
 public import FLT.Mazur.WeierstrassOriginImageEquation
+public import FLT.Mazur.WeierstrassOriginIsomorphismAdmissible
 public import FLT.Mazur.WeierstrassOriginIsomorphismAffine
 public import FLT.Mazur.WeierstrassOriginIsomorphismCoordinates
 public import FLT.Mazur.WeierstrassOriginIsomorphismDivisor
