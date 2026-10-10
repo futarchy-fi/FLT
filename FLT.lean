@@ -6562,6 +6562,7 @@ public import FLT.Mazur.WeierstrassDividedInitialProjectiveComponents
 public import FLT.Mazur.WeierstrassDividedInitialResidueAtlas
 public import FLT.Mazur.WeierstrassDividedInitialRetainedBoundary
 public import FLT.Mazur.WeierstrassDividedInitialRetainedIntersection
+public import FLT.Mazur.WeierstrassDividedInitialSlopeTransition
 public import FLT.Mazur.WeierstrassDividedInitialTensorBoundary
 public import FLT.Mazur.WeierstrassDividedInitialTensorChart
 public import FLT.Mazur.WeierstrassDividedInitialTensorInfinityIntersection
