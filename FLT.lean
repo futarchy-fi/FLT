@@ -5036,6 +5036,7 @@ public import FLT.Mazur.PolygonAtlasCocone
 public import FLT.Mazur.PolygonAtlasSmoothLocus
 public import FLT.Mazur.PolygonBoundaryClosedLayer
 public import FLT.Mazur.PolygonBoundaryClosedLifting
+public import FLT.Mazur.PolygonBoundaryDegreeFinite
 public import FLT.Mazur.PolygonBoundaryDivisor
 public import FLT.Mazur.PolygonBoundaryGradedExactness
 public import FLT.Mazur.PolygonBoundaryGradedParameter
