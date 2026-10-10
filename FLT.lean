@@ -7206,6 +7206,7 @@ public import FLT.Mazur.WeierstrassModificationXFractionMap
 public import FLT.Mazur.WeierstrassModificationXFullFiberPushout
 public import FLT.Mazur.WeierstrassModificationXFullNodeBranchCoordinates
 public import FLT.Mazur.WeierstrassModificationXFullNodeBranches
+public import FLT.Mazur.WeierstrassModificationXFullNodeConicBranch
 public import FLT.Mazur.WeierstrassModificationXFullNodeConicParameter
 public import FLT.Mazur.WeierstrassModificationXFullNodeEqualizer
 public import FLT.Mazur.WeierstrassModificationXFullNodeEquiv
