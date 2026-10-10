@@ -4039,6 +4039,7 @@ public import FLT.Mazur.GroupMarkingTransport
 public import FLT.Mazur.GroupMarkingTransportEvaluation
 public import FLT.Mazur.GroupMarkingTransportNaturality
 public import FLT.Mazur.GroupSectionBaseChange
+public import FLT.Mazur.GroupTorsionBaseChange
 public import FLT.Mazur.GroupTorsionCommutativeStructure
 public import FLT.Mazur.GroupTorsionProper
 public import FLT.Mazur.GroupTorsionScheme
