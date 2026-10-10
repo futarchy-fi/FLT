@@ -5732,6 +5732,7 @@ public import FLT.Mazur.ProperFamilyRepresentedDivisor
 public import FLT.Mazur.ProperFamilySectionOrbits
 public import FLT.Mazur.ProperFamilySectionPullback
 public import FLT.Mazur.ProperFamilySplitDirectImageSections
+public import FLT.Mazur.ProperFamilyTestCategory
 public import FLT.Mazur.ProperFamilyTwistDescent
 public import FLT.Mazur.ProperFamilyTwistedRecovery
 public import FLT.Mazur.ProperFamilyUniversalLineRecovery
