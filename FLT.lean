@@ -6158,6 +6158,7 @@ public import FLT.Mazur.WeierstrassAffineAdditionSwapDescent
 public import FLT.Mazur.WeierstrassAffineAdditionTransport
 public import FLT.Mazur.WeierstrassAffineChartDense
 public import FLT.Mazur.WeierstrassAffineCoordinateFlat
+public import FLT.Mazur.WeierstrassAffineEquationRigidity
 public import FLT.Mazur.WeierstrassAffineInputFactorization
 public import FLT.Mazur.WeierstrassAffineInputTripleDomain
 public import FLT.Mazur.WeierstrassAffineInputTripleGlobal
