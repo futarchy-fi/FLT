@@ -5910,6 +5910,7 @@ public import FLT.Mazur.ProperLineChartFiberVanishing
 public import FLT.Mazur.ProperLineCoefficientFiberComparison
 public import FLT.Mazur.ProperLineFiberVanishing
 public import FLT.Mazur.ProperLineGeometricFiberLocus
+public import FLT.Mazur.ProperLineGlobalAcyclicOpen
 public import FLT.Mazur.ProperLineIsomorphismDescent
 public import FLT.Mazur.ProperLineIteratedArbitraryBaseChange
 public import FLT.Mazur.ProperLineIteratedFiberVanishing
