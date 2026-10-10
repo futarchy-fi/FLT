@@ -5676,6 +5676,7 @@ public import FLT.Mazur.ProperFamilyAtlasRecovery
 public import FLT.Mazur.ProperFamilyOriginalSectionRecovery
 public import FLT.Mazur.ProperFamilyOriginalZeroIdeal
 public import FLT.Mazur.ProperFamilySectionPullback
+public import FLT.Mazur.ProperFamilySplitDirectImageSections
 public import FLT.Mazur.ProperFamilyTwistedRecovery
 public import FLT.Mazur.ProperFamilyUniversalLineRecovery
 public import FLT.Mazur.ProperFamilyUniversalSectionRecovery
