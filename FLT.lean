@@ -6345,6 +6345,7 @@ public import FLT.Mazur.WeierstrassDilatationZeroResidue
 public import FLT.Mazur.WeierstrassDilatationZeroResidueBoundary
 public import FLT.Mazur.WeierstrassDilatationZeroResidueGeometry
 public import FLT.Mazur.WeierstrassDividedAdjacentBoundaryReciprocals
+public import FLT.Mazur.WeierstrassDividedAdjacentComponentStructure
 public import FLT.Mazur.WeierstrassDividedAdjacentConicExterior
 public import FLT.Mazur.WeierstrassDividedAdjacentCrossedIntersection
 public import FLT.Mazur.WeierstrassDividedAdjacentExtendedEmptyIntersections
