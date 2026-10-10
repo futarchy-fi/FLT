@@ -5254,6 +5254,7 @@ public import FLT.Mazur.ProjectiveUnitChartPoint
 public import FLT.Mazur.ProjectiveUniversalChartLine
 public import FLT.Mazur.ProjectiveUniversalChartLineOverlap
 public import FLT.Mazur.ProjectiveUniversalLineComparison
+public import FLT.Mazur.ProjectiveUniversalLineTripleComparison
 public import FLT.Mazur.ProjectiveUniversalLineTriplePaths
 public import FLT.Mazur.ProperAmpleConverse
 public import FLT.Mazur.ProperAmpleFiberApproximation
