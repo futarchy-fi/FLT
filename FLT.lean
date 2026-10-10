@@ -7061,6 +7061,7 @@ public import FLT.Mazur.WeierstrassDividedZeroCycleIndexedExt
 public import FLT.Mazur.WeierstrassDividedZeroCycleIndices
 public import FLT.Mazur.WeierstrassDividedZeroCycleLocalMaps
 public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveAtlasBranches
+public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveAtlasCompatibility
 public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveAtlasNodes
 public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveBranchOverlaps
 public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveConicBranches
