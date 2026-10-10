@@ -3294,6 +3294,7 @@ public import FLT.Mazur.DivisorTwistedSequence
 public import FLT.Mazur.DoubleRootComponentBound
 public import FLT.Mazur.DualAtlasSectionBaseNeighborhood
 public import FLT.Mazur.DualAtlasSectionChartPoints
+public import FLT.Mazur.DualAtlasSectionLineCover
 public import FLT.Mazur.DualAtlasSectionLocalLines
 public import FLT.Mazur.DualAtlasSectionNormalizedRefinement
 public import FLT.Mazur.EllipticAbstractComponentInjection
