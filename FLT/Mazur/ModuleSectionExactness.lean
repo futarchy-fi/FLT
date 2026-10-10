@@ -11,8 +11,7 @@ public import FLT.Mazur.ModuleCohomologyRing
 # Global sections and vanishing in a short exact sequence
 
 The actual section maps are exact at the middle term. Vanishing of the
-first H1 makes the quotient section map surjective, while vanishing of
-both outer cohomology groups forces vanishing of the middle group.
+first H1 makes the quotient section map surjective.
 -/
 
 @[expose] public noncomputable section
@@ -63,17 +62,5 @@ theorem moduleSections_surjective_of_h1
   exact ⟨moduleH0Equiv S.X₂ t, (moduleH0Equiv_naturality S.g t).symm.trans
     ((congrArg (moduleH0Equiv S.X₃) ht).trans
       ((moduleH0Equiv S.X₃).apply_symm_apply s))⟩
-
-/-- Vanishing of both outer groups implies vanishing of the middle group. -/
-theorem moduleH_subsingleton_middle (q : ℕ)
-    (h₁ : Subsingleton (ModuleH S.X₁ q)) (h₃ : Subsingleton (ModuleH S.X₃ q)) :
-    Subsingleton (ModuleH S.X₂ q) := by
-  have he : Function.Exact (moduleHMap S.f q) (moduleHMap S.g q) :=
-    (ShortComplex.ab_exact_iff_function_exact _).mp
-      (Sheaf.H.longSequence_exact₂' (CoherentDevissage.moduleToSheaf_shortExact hS) q)
-  have hz (s : ModuleH S.X₂ q) : s = 0 := by
-    obtain ⟨t, rfl⟩ := (he s).mp (h₃.elim _ _)
-    rw [h₁.elim t 0, map_zero]
-  exact ⟨fun a b ↦ (hz a).trans (hz b).symm⟩
 
 end FLT.Mazur.FCurve
