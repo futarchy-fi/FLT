@@ -6693,6 +6693,7 @@ public import FLT.Mazur.TwistedSectionPushforwardNaturality
 public import FLT.Mazur.TwistedSectionRegularity
 public import FLT.Mazur.UniformizerRootExtension
 public import FLT.Mazur.UnitIntegerModel
+public import FLT.Mazur.UniversalDivisorCohomologyCharts
 public import FLT.Mazur.UniversalDivisorTwistedLine
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryActualNormalizationIso
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryAffineSections
