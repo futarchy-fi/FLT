@@ -2707,6 +2707,7 @@ public import FLT.Mazur.AffineScalarMapComposition
 public import FLT.Mazur.AffineScaledPullbackSections
 public import FLT.Mazur.AffineScaledTripleTransport
 public import FLT.Mazur.AffineSectionEvaluationCoordinates
+public import FLT.Mazur.AffineSectionLineCoefficientMap
 public import FLT.Mazur.AffineSectionLineGeometricPullback
 public import FLT.Mazur.AffineSectionLineGluing
 public import FLT.Mazur.AffineSectionLinePoint
@@ -2717,8 +2718,13 @@ public import FLT.Mazur.AffineSectionsReconstruction
 public import FLT.Mazur.AffineSmoothFiniteFlatCartier
 public import FLT.Mazur.AffineSourcePullbackSections
 public import FLT.Mazur.AffineSourceSectionComparison
+public import FLT.Mazur.AffineSplitLineCoordinatePullback
 public import FLT.Mazur.AffineSplitLineCoordinates
 public import FLT.Mazur.AffineSplitLineFrameIndependence
+public import FLT.Mazur.AffineSplitLineProjectivePullback
+public import FLT.Mazur.AffineSplitLineProjectiveRefinement
+public import FLT.Mazur.AffineSplitLineSectionCoordinates
+public import FLT.Mazur.AffineSplitLineSourceTransport
 public import FLT.Mazur.AffineSquareEquivalences
 public import FLT.Mazur.AffineSquareScalarExtension
 public import FLT.Mazur.AffineSquareTensorComparison
@@ -4507,6 +4513,7 @@ public import FLT.Mazur.LocalizedPolynomialStableStages
 public import FLT.Mazur.LocalizedSmoothFiniteFlatCartier
 public import FLT.Mazur.LocalizedSmoothLocalEquation
 public import FLT.Mazur.LocalizedTensorCancellation
+public import FLT.Mazur.LocallyFramedSplitLineProjective
 public import FLT.Mazur.LocallyFreeDualProjectiveAtlas
 public import FLT.Mazur.LocallyFreeProjectiveQuotient
 public import FLT.Mazur.LocallyNoetherianUniversalStructureSheaf
@@ -4994,6 +5001,7 @@ public import FLT.Mazur.PolygonProper
 public import FLT.Mazur.PolygonPuncturedCanonicalEquations
 public import FLT.Mazur.PolygonPureDimension
 public import FLT.Mazur.PolygonRefinedClosedCharts
+public import FLT.Mazur.PolygonScaledReciprocal
 public import FLT.Mazur.PolygonScalingNaturality
 public import FLT.Mazur.PolygonSeparated
 public import FLT.Mazur.PolygonSmoothLocus
@@ -5982,6 +5990,9 @@ public import FLT.Mazur.SplitLineImageChart
 public import FLT.Mazur.SplitLinePrincipalPoints
 public import FLT.Mazur.SplitLineProjectiveFrame
 public import FLT.Mazur.SplitLineProjectiveMorphism
+public import FLT.Mazur.SplitLineProjectivePullback
+public import FLT.Mazur.SplitSheafLinePullback
+public import FLT.Mazur.SplitSheafLinePullbackComposition
 public import FLT.Mazur.StableAffineQuotientAffineDescent
 public import FLT.Mazur.StableAffineQuotientBaseCharts
 public import FLT.Mazur.StableAffineQuotientCartesian
@@ -6217,6 +6228,9 @@ public import FLT.Mazur.WeierstrassDividedFiniteContraction
 public import FLT.Mazur.WeierstrassDividedFiniteExteriorPullback
 public import FLT.Mazur.WeierstrassDividedFiniteFlat
 public import FLT.Mazur.WeierstrassDividedFiniteIteration
+public import FLT.Mazur.WeierstrassDividedFiniteLineBranches
+public import FLT.Mazur.WeierstrassDividedFiniteLineContractions
+public import FLT.Mazur.WeierstrassDividedFiniteLineReciprocals
 public import FLT.Mazur.WeierstrassDividedFiniteNodeComponents
 public import FLT.Mazur.WeierstrassDividedFiniteNodeContractions
 public import FLT.Mazur.WeierstrassDividedFiniteOverlap
@@ -6289,6 +6303,7 @@ public import FLT.Mazur.WeierstrassDividedOlderGlobalConicOverlap
 public import FLT.Mazur.WeierstrassDividedOlderGlobalExterior
 public import FLT.Mazur.WeierstrassDividedOlderGlobalInfinityIntersection
 public import FLT.Mazur.WeierstrassDividedOlderGlobalIntersections
+public import FLT.Mazur.WeierstrassDividedOlderGlobalLineExterior
 public import FLT.Mazur.WeierstrassDividedOlderGlobalMiddleComponents
 public import FLT.Mazur.WeierstrassDividedOlderGlobalNodeComponents
 public import FLT.Mazur.WeierstrassDividedOlderGlobalParameterSections
@@ -7000,6 +7015,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXResidueFiber
 public import FLT.Mazur.WeierstrassSuccessiveXResidueIncidencePoints
 public import FLT.Mazur.WeierstrassSuccessiveXResidueIntegralNormalization
 public import FLT.Mazur.WeierstrassSuccessiveXResidueIntersections
+public import FLT.Mazur.WeierstrassSuccessiveXResidueLineHorizontal
 public import FLT.Mazur.WeierstrassSuccessiveXResidueMiddle
 public import FLT.Mazur.WeierstrassSuccessiveXResidueMiddleComponents
 public import FLT.Mazur.WeierstrassSuccessiveXResidueMiddleContraction
