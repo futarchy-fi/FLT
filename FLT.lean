@@ -6899,6 +6899,7 @@ public import FLT.Mazur.WeierstrassDividedTerminalZeroNodalChart
 public import FLT.Mazur.WeierstrassDividedZeroBoundaryFunctions
 public import FLT.Mazur.WeierstrassDividedZeroCycleAttachmentBranches
 public import FLT.Mazur.WeierstrassDividedZeroCycleAttachmentExt
+public import FLT.Mazur.WeierstrassDividedZeroCycleExteriorExt
 public import FLT.Mazur.WeierstrassDividedZeroCycleIndexedExt
 public import FLT.Mazur.WeierstrassDividedZeroCycleIndices
 public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveConicBranches
