@@ -5210,6 +5210,7 @@ public import FLT.Mazur.PolygonLineHZero
 public import FLT.Mazur.PolygonLineNodeRestriction
 public import FLT.Mazur.PolygonLineNormalization
 public import FLT.Mazur.PolygonMarkedSections
+public import FLT.Mazur.PolygonMarkingAffineNeighborhood
 public import FLT.Mazur.PolygonNodalCore
 public import FLT.Mazur.PolygonNodeAffineCharts
 public import FLT.Mazur.PolygonNodeBranchIntersection
