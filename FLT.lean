@@ -2522,6 +2522,7 @@ public import FLT.Mazur.AffineCanonicalMapCompatibility
 public import FLT.Mazur.AffineCanonicalOverlapChart
 public import FLT.Mazur.AffineCanonicalOverlapRecognition
 public import FLT.Mazur.AffineCartesianSectionScalars
+public import FLT.Mazur.AffineChartResidueEquation
 public import FLT.Mazur.AffineChartResidueRetraction
 public import FLT.Mazur.AffineChartSectionLineRecovery
 public import FLT.Mazur.AffineChartSectionLocalization
@@ -2583,6 +2584,7 @@ public import FLT.Mazur.AffineFiberProductMapCompatibility
 public import FLT.Mazur.AffineFiberProductOverlap
 public import FLT.Mazur.AffineFiberProductPairTransport
 public import FLT.Mazur.AffineFiberProductRefinementCocycle
+public import FLT.Mazur.AffineFiberwiseSectionCartier
 public import FLT.Mazur.AffineFiniteFreeAtlas
 public import FLT.Mazur.AffineFiniteFreeDirectedCover
 public import FLT.Mazur.AffineFiniteTypeModelSystem
@@ -2728,6 +2730,9 @@ public import FLT.Mazur.AffineSectionLinePullbackSquares
 public import FLT.Mazur.AffineSectionLineRankOne
 public import FLT.Mazur.AffineSectionLineReversePoint
 public import FLT.Mazur.AffineSectionLineSubobjectEquality
+public import FLT.Mazur.AffineSectionMonicity
+public import FLT.Mazur.AffineSectionResidueEquation
+public import FLT.Mazur.AffineSectionTensorSquare
 public import FLT.Mazur.AffineSectionsReconstruction
 public import FLT.Mazur.AffineSmoothFiniteFlatCartier
 public import FLT.Mazur.AffineSourcePullbackSections
@@ -4540,9 +4545,11 @@ public import FLT.Mazur.LineSectionCohomologyAnnihilation
 public import FLT.Mazur.LineSectionCohomologySurjection
 public import FLT.Mazur.LineSectionDivisorCorrespondence
 public import FLT.Mazur.LineSectionEvaluation
+public import FLT.Mazur.LineSectionFrameZeroIdeal
 public import FLT.Mazur.LineSectionGenericOpen
 public import FLT.Mazur.LineSectionOpenCompact
 public import FLT.Mazur.LineSectionProjectiveBaseChange
+public import FLT.Mazur.LineSectionPullbackCoordinates
 public import FLT.Mazur.LineSectionTwistCoordinates
 public import FLT.Mazur.LineSectionTwistRestriction
 public import FLT.Mazur.LineSectionTwistSystem
@@ -4900,6 +4907,7 @@ public import FLT.Mazur.OpenCoverDimension
 public import FLT.Mazur.OpenDirectImageCohomology
 public import FLT.Mazur.OpenDirectImageNaturality
 public import FLT.Mazur.OpenDirectImageRestriction
+public import FLT.Mazur.OpenFiberSectionRegularity
 public import FLT.Mazur.OpenIdealExtensionBaseChange
 public import FLT.Mazur.OpenIdealFamilyOverlap
 public import FLT.Mazur.OpenIdealNestedExtension
@@ -4929,6 +4937,7 @@ public import FLT.Mazur.OpenRestrictionInclusion
 public import FLT.Mazur.OpenRestrictionLimitMap
 public import FLT.Mazur.OpenSchemeParameters
 public import FLT.Mazur.OpenSectionFilteredColimit
+public import FLT.Mazur.OpenSectionMonicity
 public import FLT.Mazur.OpenSectionTopComparison
 public import FLT.Mazur.OpenSheafCohomology
 public import FLT.Mazur.OpenSheafCohomologyRestriction
@@ -5507,6 +5516,7 @@ public import FLT.Mazur.ProjectiveUniversalLineRefinementWitness
 public import FLT.Mazur.ProjectiveUniversalLineTripleComparison
 public import FLT.Mazur.ProjectiveUniversalLineTriplePaths
 public import FLT.Mazur.ProjectiveUniversalLineTripleRefinement
+public import FLT.Mazur.ProperAffineSectionCartier
 public import FLT.Mazur.ProperAmpleConverse
 public import FLT.Mazur.ProperAmpleFiberApproximation
 public import FLT.Mazur.ProperAmpleFiberEnvelope
@@ -5548,6 +5558,7 @@ public import FLT.Mazur.ProperPushforwardReconstructionUnit
 public import FLT.Mazur.ProperRelativeEvaluationLocus
 public import FLT.Mazur.ProperRingCohomologyFinite
 public import FLT.Mazur.ProperSectionGluing
+public import FLT.Mazur.ProperSectionSplittingCriterion
 public import FLT.Mazur.ProperSmoothAffineFunctions
 public import FLT.Mazur.ProperSmoothConnectedFiberOpen
 public import FLT.Mazur.ProperSmoothGenericFiberOpen
@@ -5555,6 +5566,7 @@ public import FLT.Mazur.ProperSmoothLineRigidity
 public import FLT.Mazur.ProperSmoothPointedLineSheafDescent
 public import FLT.Mazur.ProperSmoothStructureSheaf
 public import FLT.Mazur.ProperSplitSectionFiberRegularity
+public import FLT.Mazur.ProperSplitSectionRelativeCartier
 public import FLT.Mazur.ProperStageAmpleFiberDescent
 public import FLT.Mazur.ProperStageBaseChangeLimit
 public import FLT.Mazur.ProperStageFiberProjection
@@ -6000,6 +6012,7 @@ public import FLT.Mazur.SchemeUnchangedOpenPullback
 public import FLT.Mazur.SealedLineRestriction
 public import FLT.Mazur.SealedLineRestrictionSections
 public import FLT.Mazur.SectionBaseLocalization
+public import FLT.Mazur.SectionCartierOpenDescent
 public import FLT.Mazur.SectionChartGenerators
 public import FLT.Mazur.SectionCharts
 public import FLT.Mazur.SectionCoverCoordinates
@@ -6207,6 +6220,7 @@ public import FLT.Mazur.TrivializedLineSheafLimitDescent
 public import FLT.Mazur.TwistedSectionBaseChange
 public import FLT.Mazur.TwistedSectionBaseChangeRegularity
 public import FLT.Mazur.TwistedSectionIntegralCriterion
+public import FLT.Mazur.TwistedSectionPullbackMonicity
 public import FLT.Mazur.TwistedSectionPushforward
 public import FLT.Mazur.TwistedSectionPushforwardNaturality
 public import FLT.Mazur.TwistedSectionRegularity
