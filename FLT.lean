@@ -5878,6 +5878,7 @@ public import FLT.Mazur.ProperGlobalSplitDirectImageSections
 public import FLT.Mazur.ProperImmersedCover
 public import FLT.Mazur.ProperIntegralConstantSections
 public import FLT.Mazur.ProperLineAcyclicLocus
+public import FLT.Mazur.ProperLineAcyclicNeighborhood
 public import FLT.Mazur.ProperLineArbitraryBaseChange
 public import FLT.Mazur.ProperLineChartFiberVanishing
 public import FLT.Mazur.ProperLineFiberVanishing
