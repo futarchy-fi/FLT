@@ -4532,6 +4532,7 @@ public import FLT.Mazur.ModuleGlobalGeneration
 public import FLT.Mazur.ModuleGlobalSectionExt
 public import FLT.Mazur.ModuleGlobalSectionIso
 public import FLT.Mazur.ModuleGlobalSectionPullback
+public import FLT.Mazur.ModuleGlobalTransportCoefficients
 public import FLT.Mazur.ModuleGlobalUnitGenerator
 public import FLT.Mazur.ModuleHomIsomorphismOpen
 public import FLT.Mazur.ModuleHomOpenTransport
