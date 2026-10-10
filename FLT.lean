@@ -6159,6 +6159,7 @@ public import FLT.Mazur.SurjectiveStructureSupport
 public import FLT.Mazur.SurjectiveTowerLifting
 public import FLT.Mazur.SymmetricAffineLineParameters
 public import FLT.Mazur.TensorEvaluationSemilinear
+public import FLT.Mazur.TensorInjectivityFiniteLength
 public import FLT.Mazur.TensorIntegerModelClosedImmersion
 public import FLT.Mazur.TensorIntegerModelMap
 public import FLT.Mazur.TensorIntegerModelPresentation
