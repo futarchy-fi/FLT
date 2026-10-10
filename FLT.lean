@@ -5028,6 +5028,7 @@ public import FLT.Mazur.PolygonBoundaryClosedLayer
 public import FLT.Mazur.PolygonBoundaryClosedLifting
 public import FLT.Mazur.PolygonBoundaryDivisor
 public import FLT.Mazur.PolygonBoundaryLayerQuotient
+public import FLT.Mazur.PolygonBoundaryParameterAnnihilator
 public import FLT.Mazur.PolygonBoundaryParameterImage
 public import FLT.Mazur.PolygonBoundaryReductionSequence
 public import FLT.Mazur.PolygonBoundaryScalarExactness
