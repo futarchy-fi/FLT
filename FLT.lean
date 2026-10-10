@@ -4615,6 +4615,7 @@ public import FLT.Mazur.NoetherianUniversalStructureSheaf
 public import FLT.Mazur.NonzeroLineSectionExact
 public import FLT.Mazur.NormalizedSectionLine
 public import FLT.Mazur.NormalizedSectionLineBaseChange
+public import FLT.Mazur.NormalizedSectionLineLinearBaseChange
 public import FLT.Mazur.NormalizedSectionLineLinearTransport
 public import FLT.Mazur.NormalizedSectionLineOverlapBaseChange
 public import FLT.Mazur.NormalizedSectionLinePrincipalRechart
