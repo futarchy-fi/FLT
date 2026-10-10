@@ -6281,6 +6281,7 @@ public import FLT.Mazur.WeierstrassDividedAdjacentRetainedTensor
 public import FLT.Mazur.WeierstrassDividedAdjacentRetainedTensorIntersection
 public import FLT.Mazur.WeierstrassDividedAdjacentSectionSeparation
 public import FLT.Mazur.WeierstrassDividedAdjacentTensorBoundary
+public import FLT.Mazur.WeierstrassDividedAdjacentZeroNormalizedIntersection
 public import FLT.Mazur.WeierstrassDividedBoundaryNormalization
 public import FLT.Mazur.WeierstrassDividedDepthAffine
 public import FLT.Mazur.WeierstrassDividedDepthBoundary
