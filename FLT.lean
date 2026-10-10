@@ -6190,6 +6190,7 @@ public import FLT.Mazur.UniversalWeierstrassAuxiliaryPullbackSections
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryRelativePoint
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryRelativeRigidity
 public import FLT.Mazur.UniversalWeierstrassAuxiliarySchemeRigidity
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryTorsionBasisMaps
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryTorsionCover
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryTorsionDisjoint
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryTorsionSections
