@@ -6718,6 +6718,7 @@ public import FLT.Mazur.WeierstrassOriginAutomorphismExt
 public import FLT.Mazur.WeierstrassOriginCartier
 public import FLT.Mazur.WeierstrassOriginDivisorCoordinates
 public import FLT.Mazur.WeierstrassOriginDivisorPullback
+public import FLT.Mazur.WeierstrassOriginGlobalPoleSections
 public import FLT.Mazur.WeierstrassOriginIdeal
 public import FLT.Mazur.WeierstrassOriginIdealAffine
 public import FLT.Mazur.WeierstrassOriginIdealInvariant
