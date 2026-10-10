@@ -6164,6 +6164,7 @@ public import FLT.Mazur.SectionGradedProjOfAmple
 public import FLT.Mazur.SectionGradedProjOpens
 public import FLT.Mazur.SectionGradedProjPullbackEvaluation
 public import FLT.Mazur.SectionGradedProjStructuralMap
+public import FLT.Mazur.SectionGradedProjection
 public import FLT.Mazur.SectionGradedPullback
 public import FLT.Mazur.SectionGradedPullbackRing
 public import FLT.Mazur.SectionGradedRestriction
