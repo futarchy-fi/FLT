@@ -3004,6 +3004,7 @@ public import FLT.Mazur.CartierAbelDirectImageBaseChange
 public import FLT.Mazur.CartierAbelDirectImageSections
 public import FLT.Mazur.CartierAbelFiber
 public import FLT.Mazur.CartierAbelIntegralFiberSections
+public import FLT.Mazur.CartierAbelLocallySplit
 public import FLT.Mazur.CartierAbelProperBaseChange
 public import FLT.Mazur.CartierAbelPulledSectionAdjoint
 public import FLT.Mazur.CartierAbelRelativeBaseChange
