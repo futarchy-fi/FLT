@@ -6432,6 +6432,7 @@ public import FLT.Mazur.SectionRetainedProjNaturality
 public import FLT.Mazur.SectionRetainedProjOfAmple
 public import FLT.Mazur.SectionRetainedProjOpens
 public import FLT.Mazur.SectionRetainedProjStructuralMap
+public import FLT.Mazur.SectionRetainedSheafEvaluation
 public import FLT.Mazur.SectionSumFiberDegree
 public import FLT.Mazur.SectionSumFieldLength
 public import FLT.Mazur.SectionSumFinite
