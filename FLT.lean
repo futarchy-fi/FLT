@@ -5555,6 +5555,7 @@ public import FLT.Mazur.ProperPushforwardReconstructionUnit
 public import FLT.Mazur.ProperRelativeEvaluationLocus
 public import FLT.Mazur.ProperRingCohomologyFinite
 public import FLT.Mazur.ProperSectionGluing
+public import FLT.Mazur.ProperSectionSplittingCriterion
 public import FLT.Mazur.ProperSmoothAffineFunctions
 public import FLT.Mazur.ProperSmoothConnectedFiberOpen
 public import FLT.Mazur.ProperSmoothGenericFiberOpen
