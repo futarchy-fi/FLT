@@ -6556,6 +6556,7 @@ public import FLT.Mazur.WeierstrassDividedFinalNodesDistinct
 public import FLT.Mazur.WeierstrassDividedFinalRetainedNodesDistinct
 public import FLT.Mazur.WeierstrassDividedFinalTerminalComponents
 public import FLT.Mazur.WeierstrassDividedFinalTerminalOverComponents
+public import FLT.Mazur.WeierstrassDividedFinalZeroExterior
 public import FLT.Mazur.WeierstrassDividedFiniteAffineProper
 public import FLT.Mazur.WeierstrassDividedFiniteAtlas
 public import FLT.Mazur.WeierstrassDividedFiniteChartStructure
