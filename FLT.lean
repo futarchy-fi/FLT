@@ -6775,6 +6775,7 @@ public import FLT.Mazur.WeierstrassDilatationZeroResidue
 public import FLT.Mazur.WeierstrassDilatationZeroResidueBoundary
 public import FLT.Mazur.WeierstrassDilatationZeroResidueGeometry
 public import FLT.Mazur.WeierstrassDividedAdjacentBoundaryReciprocals
+public import FLT.Mazur.WeierstrassDividedAdjacentBranchCompatibility
 public import FLT.Mazur.WeierstrassDividedAdjacentComponentDisjoint
 public import FLT.Mazur.WeierstrassDividedAdjacentComponentInjectivity
 public import FLT.Mazur.WeierstrassDividedAdjacentComponentRanges
@@ -6788,6 +6789,7 @@ public import FLT.Mazur.WeierstrassDividedAdjacentFullConicIntersection
 public import FLT.Mazur.WeierstrassDividedAdjacentGlobalPunctures
 public import FLT.Mazur.WeierstrassDividedAdjacentIndexedIntersection
 public import FLT.Mazur.WeierstrassDividedAdjacentIntegralBoundary
+public import FLT.Mazur.WeierstrassDividedAdjacentNodePunctures
 public import FLT.Mazur.WeierstrassDividedAdjacentNormalizedIntersection
 public import FLT.Mazur.WeierstrassDividedAdjacentOrderedConicIntersection
 public import FLT.Mazur.WeierstrassDividedAdjacentOrderedHorizontalIntersection
@@ -7074,6 +7076,7 @@ public import FLT.Mazur.WeierstrassDividedZeroBoundaryFunctions
 public import FLT.Mazur.WeierstrassDividedZeroCycleAtlasAdjacentReduction
 public import FLT.Mazur.WeierstrassDividedZeroCycleAtlasCompatibility
 public import FLT.Mazur.WeierstrassDividedZeroCycleAtlasDisjoint
+public import FLT.Mazur.WeierstrassDividedZeroCycleAtlasEndReduction
 public import FLT.Mazur.WeierstrassDividedZeroCycleAtlasFamily
 public import FLT.Mazur.WeierstrassDividedZeroCycleAtlasInfinityCompatibility
 public import FLT.Mazur.WeierstrassDividedZeroCycleAtlasSlopeIntersection
@@ -7090,6 +7093,7 @@ public import FLT.Mazur.WeierstrassDividedZeroCycleIndexedExt
 public import FLT.Mazur.WeierstrassDividedZeroCycleIndices
 public import FLT.Mazur.WeierstrassDividedZeroCycleLocalMaps
 public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveAtlasBranches
+public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveAtlasCompatibility
 public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveAtlasNodes
 public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveBranchOverlaps
 public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveConicBranches
@@ -7097,6 +7101,8 @@ public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveDescent
 public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveExt
 public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveIndexedMap
 public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveLineBranches
+public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveTensorCompatibility
+public import FLT.Mazur.WeierstrassDividedZeroCyclePositiveTensorDesc
 public import FLT.Mazur.WeierstrassDividedZeroCycleTerminalExt
 public import FLT.Mazur.WeierstrassDividedZeroCycleTerminalMap
 public import FLT.Mazur.WeierstrassDividedZeroCycleZeroAtlasConics
@@ -7848,6 +7854,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXResidueNodeContraction
 public import FLT.Mazur.WeierstrassSuccessiveXResidueNodeGeometry
 public import FLT.Mazur.WeierstrassSuccessiveXResidueNodeIdeals
 public import FLT.Mazur.WeierstrassSuccessiveXResidueNodeMaps
+public import FLT.Mazur.WeierstrassSuccessiveXResidueNodePunctures
 public import FLT.Mazur.WeierstrassSuccessiveXResidueSplitBranchCharts
 public import FLT.Mazur.WeierstrassSuccessiveXResidueTransitionBaseChange
 public import FLT.Mazur.WeierstrassSuccessiveXResidueZeroNodeDisjoint
@@ -7872,6 +7879,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXZeroExteriorBoundary
 public import FLT.Mazur.WeierstrassSuccessiveXZeroIncidenceBoundary
 public import FLT.Mazur.WeierstrassSuccessiveXZeroNodeIdeals
 public import FLT.Mazur.WeierstrassSuccessiveXZeroNodeMaps
+public import FLT.Mazur.WeierstrassSuccessiveXZeroNodePunctures
 public import FLT.Mazur.WeierstrassSuccessiveXZeroOverlap
 public import FLT.Mazur.WeierstrassSuccessiveXZeroResidue
 public import FLT.Mazur.WeierstrassSwappedAdditionIntersections
