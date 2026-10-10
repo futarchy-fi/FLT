@@ -7940,6 +7940,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXSplitFiber
 public import FLT.Mazur.WeierstrassSuccessiveXTensorContraction
 public import FLT.Mazur.WeierstrassSuccessiveXTensorOverlap
 public import FLT.Mazur.WeierstrassSuccessiveXTensorOverlapGeometry
+public import FLT.Mazur.WeierstrassSuccessiveXTerminalAffineCover
 public import FLT.Mazur.WeierstrassSuccessiveXTerminalBranchIntersection
 public import FLT.Mazur.WeierstrassSuccessiveXTerminalConicBranches
 public import FLT.Mazur.WeierstrassSuccessiveXTerminalConicCover
