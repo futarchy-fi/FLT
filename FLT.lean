@@ -4108,6 +4108,7 @@ public import FLT.Mazur.GradedProjCoefficientLocalMap
 public import FLT.Mazur.GradedProjCoefficientSectionTransport
 public import FLT.Mazur.GradedProjCoefficientSections
 public import FLT.Mazur.GradedProjCoefficientStageCoherence
+public import FLT.Mazur.GradedProjCoordinateBasicOpen
 public import FLT.Mazur.GradedProjDedekindFlatness
 public import FLT.Mazur.GradedProjEqualDegreeCover
 public import FLT.Mazur.GradedProjEventualGenerationCover
