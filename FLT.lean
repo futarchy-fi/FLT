@@ -7101,6 +7101,7 @@ public import FLT.Mazur.WeierstrassModificationXConicFirstParameter
 public import FLT.Mazur.WeierstrassModificationXConicGeometry
 public import FLT.Mazur.WeierstrassModificationXConicIncidenceCharts
 public import FLT.Mazur.WeierstrassModificationXConicIncidenceOrientation
+public import FLT.Mazur.WeierstrassModificationXConicIncidencePreimage
 public import FLT.Mazur.WeierstrassModificationXConicInverseCoordinates
 public import FLT.Mazur.WeierstrassModificationXConicOverlapGeometry
 public import FLT.Mazur.WeierstrassModificationXConicOverlapParameterMaps
