@@ -3352,6 +3352,7 @@ public import FLT.Mazur.DualAtlasSectionLocalLines
 public import FLT.Mazur.DualAtlasSectionLocalSubobjects
 public import FLT.Mazur.DualAtlasSectionNormalizedRefinement
 public import FLT.Mazur.DualAtlasSectionReverseForward
+public import FLT.Mazur.DualAtlasSectionTransport
 public import FLT.Mazur.DualFreeSheafCoordinates
 public import FLT.Mazur.DualPullbackComposition
 public import FLT.Mazur.DualPullbackSquare
@@ -4536,6 +4537,7 @@ public import FLT.Mazur.LaurentTensor
 public import FLT.Mazur.LaurentUnitMultiplication
 public import FLT.Mazur.LaurentUnitPoints
 public import FLT.Mazur.LineBundleSectionOpenPullback
+public import FLT.Mazur.LineDescentDiagonalRigidity
 public import FLT.Mazur.LineDualPullbackSquare
 public import FLT.Mazur.LineEndpointTransport
 public import FLT.Mazur.LineImageCartier
@@ -4543,6 +4545,8 @@ public import FLT.Mazur.LinePowerCocyclePullback
 public import FLT.Mazur.LinePowerEvaluationDescent
 public import FLT.Mazur.LinePowerSectionBaseChange
 public import FLT.Mazur.LinePowerSectionLimitDescent
+public import FLT.Mazur.LinePullbackAdjunction
+public import FLT.Mazur.LinePullbackIsomorphisms
 public import FLT.Mazur.LinePullbackRestriction
 public import FLT.Mazur.LineRecoveryPullback
 public import FLT.Mazur.LineScalarExtensionNonvanishing
@@ -4578,6 +4582,7 @@ public import FLT.Mazur.LineSubbundleGluingPullback
 public import FLT.Mazur.LineTensorEquivalence
 public import FLT.Mazur.LineTensorInverseComparison
 public import FLT.Mazur.LineTensorInverseCompatibility
+public import FLT.Mazur.LineTensorLeftCancellation
 public import FLT.Mazur.LineTensorSectionEquiv
 public import FLT.Mazur.LineTensorSectionPullback
 public import FLT.Mazur.LineTensorSectionTransport
@@ -4984,6 +4989,7 @@ public import FLT.Mazur.PointedCurveUniformAcyclicity
 public import FLT.Mazur.PointedCurveUniformRiemannRoch
 public import FLT.Mazur.PointedFieldGeometricConnectedness
 public import FLT.Mazur.PointedPicardNormalization
+public import FLT.Mazur.PointedStructureModuleComparison
 public import FLT.Mazur.PolygonActionAssociativity
 public import FLT.Mazur.PolygonActionBaseChange
 public import FLT.Mazur.PolygonActionFieldExtension
@@ -5489,6 +5495,7 @@ public import FLT.Mazur.ProjectiveLineCharts
 public import FLT.Mazur.ProjectiveLineCohomologyVanishing
 public import FLT.Mazur.ProjectiveLineConstantSections
 public import FLT.Mazur.ProjectiveLineEndpointCover
+public import FLT.Mazur.ProjectiveLineEndpointReversal
 public import FLT.Mazur.ProjectiveLineEndpoints
 public import FLT.Mazur.ProjectiveLineFieldExtension
 public import FLT.Mazur.ProjectiveLineHomogeneousCoordinates
@@ -5499,6 +5506,7 @@ public import FLT.Mazur.ProjectiveLineInfinityTorusMarks
 public import FLT.Mazur.ProjectiveLineInfinityTorusTransition
 public import FLT.Mazur.ProjectiveLineInteriorGenerator
 public import FLT.Mazur.ProjectiveLineInteriorRatios
+public import FLT.Mazur.ProjectiveLineMapRange
 public import FLT.Mazur.ProjectiveLineMarkedCharts
 public import FLT.Mazur.ProjectiveLineMarkedDualCoordinates
 public import FLT.Mazur.ProjectiveLineMarkedEndpointSections
@@ -5586,7 +5594,9 @@ public import FLT.Mazur.ProperAmpleFiberEnvelope
 public import FLT.Mazur.ProperAmpleFiberModel
 public import FLT.Mazur.ProperAmpleFiberNeighborhood
 public import FLT.Mazur.ProperAmpleFiberNoetherian
+public import FLT.Mazur.ProperAtlasAbelEquivalence
 public import FLT.Mazur.ProperAtlasAbelFiber
+public import FLT.Mazur.ProperAtlasSectionBaseChange
 public import FLT.Mazur.ProperClosedLimitDescent
 public import FLT.Mazur.ProperCoherentCohomology
 public import FLT.Mazur.ProperCohomologyFieldVanishing
@@ -5605,6 +5615,7 @@ public import FLT.Mazur.ProperGlobalSectionFinite
 public import FLT.Mazur.ProperImmersedCover
 public import FLT.Mazur.ProperIntegralConstantSections
 public import FLT.Mazur.ProperLineFiberVanishing
+public import FLT.Mazur.ProperLineIsomorphismDescent
 public import FLT.Mazur.ProperLinePushforwardBaseChange
 public import FLT.Mazur.ProperLinePushforwardLocalFree
 public import FLT.Mazur.ProperLinePushforwardMate
@@ -5640,6 +5651,7 @@ public import FLT.Mazur.ProperStageBaseChangeLimit
 public import FLT.Mazur.ProperStageFiberProjection
 public import FLT.Mazur.ProperStageResidueFiberLimit
 public import FLT.Mazur.ProperStalkExtension
+public import FLT.Mazur.ProperTwistedLineDescent
 public import FLT.Mazur.PullbackOverlapBaseChange
 public import FLT.Mazur.PuncturedNodeRestrictionComparison
 public import FLT.Mazur.PushforwardCech
@@ -6565,6 +6577,7 @@ public import FLT.Mazur.WeierstrassDividedExteriorStep
 public import FLT.Mazur.WeierstrassDividedExteriorYBoundary
 public import FLT.Mazur.WeierstrassDividedFinalAdjacentComponents
 public import FLT.Mazur.WeierstrassDividedFinalAdjacentOverComponents
+public import FLT.Mazur.WeierstrassDividedFinalBranchChains
 public import FLT.Mazur.WeierstrassDividedFinalInitialComponents
 public import FLT.Mazur.WeierstrassDividedFinalInitialNodesDistinct
 public import FLT.Mazur.WeierstrassDividedFinalNodeAdjacent
@@ -6577,6 +6590,7 @@ public import FLT.Mazur.WeierstrassDividedFinalNodesDistinct
 public import FLT.Mazur.WeierstrassDividedFinalRetainedNodesDistinct
 public import FLT.Mazur.WeierstrassDividedFinalTerminalComponents
 public import FLT.Mazur.WeierstrassDividedFinalTerminalOverComponents
+public import FLT.Mazur.WeierstrassDividedFinalZeroExterior
 public import FLT.Mazur.WeierstrassDividedFiniteAffineProper
 public import FLT.Mazur.WeierstrassDividedFiniteAtlas
 public import FLT.Mazur.WeierstrassDividedFiniteChartStructure
@@ -6735,6 +6749,7 @@ public import FLT.Mazur.WeierstrassDividedTensorYBoundary
 public import FLT.Mazur.WeierstrassDividedTerminalAllExteriorNodes
 public import FLT.Mazur.WeierstrassDividedTerminalBranchIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalBranchesNodeIntersection
+public import FLT.Mazur.WeierstrassDividedTerminalComponentRanges
 public import FLT.Mazur.WeierstrassDividedTerminalComponentStructure
 public import FLT.Mazur.WeierstrassDividedTerminalComponents
 public import FLT.Mazur.WeierstrassDividedTerminalConicBoundary
@@ -6760,6 +6775,7 @@ public import FLT.Mazur.WeierstrassDividedTerminalZeroConicIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalZeroCrossedIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalZeroNodalChart
 public import FLT.Mazur.WeierstrassDividedZeroBoundaryFunctions
+public import FLT.Mazur.WeierstrassDividedZeroCycleIndices
 public import FLT.Mazur.WeierstrassDividedZeroExteriorCoverage
 public import FLT.Mazur.WeierstrassDividedZeroExteriorCurve
 public import FLT.Mazur.WeierstrassDividedZeroExteriorLaurent
@@ -6772,6 +6788,9 @@ public import FLT.Mazur.WeierstrassDividedZeroNodalProjective
 public import FLT.Mazur.WeierstrassDividedZeroResidueAtlas
 public import FLT.Mazur.WeierstrassDividedZeroSlopeContraction
 public import FLT.Mazur.WeierstrassDividedZeroSlopeLaurent
+public import FLT.Mazur.WeierstrassDividedZeroSplitCocone
+public import FLT.Mazur.WeierstrassDividedZeroSplitCycle
+public import FLT.Mazur.WeierstrassDividedZeroSplitCycleRanges
 public import FLT.Mazur.WeierstrassEquationTransport
 public import FLT.Mazur.WeierstrassFieldChartPresentation
 public import FLT.Mazur.WeierstrassFiniteChartDescent
