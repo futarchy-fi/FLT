@@ -7127,6 +7127,7 @@ public import FLT.Mazur.WeierstrassDividedZeroCycleAttachmentExt
 public import FLT.Mazur.WeierstrassDividedZeroCycleAttachmentMaps
 public import FLT.Mazur.WeierstrassDividedZeroCycleExteriorExt
 public import FLT.Mazur.WeierstrassDividedZeroCycleExteriorMaps
+public import FLT.Mazur.WeierstrassDividedZeroCycleGlobalChainRestrictions
 public import FLT.Mazur.WeierstrassDividedZeroCycleGlobalDesc
 public import FLT.Mazur.WeierstrassDividedZeroCycleGlobalEndCharts
 public import FLT.Mazur.WeierstrassDividedZeroCycleGlobalNodeRestrictions
