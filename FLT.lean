@@ -2701,6 +2701,7 @@ public import FLT.Mazur.AffineRefinementReconstructionMap
 public import FLT.Mazur.AffineRefinementReconstructionRecognition
 public import FLT.Mazur.AffineRelativeFiberCriterion
 public import FLT.Mazur.AffineResidueEvaluationComparison
+public import FLT.Mazur.AffineResidueLineRetraction
 public import FLT.Mazur.AffineResidueSectionCoefficients
 public import FLT.Mazur.AffineRestrictionImmersion
 public import FLT.Mazur.AffineReverseGeometricOverlap
