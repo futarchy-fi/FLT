@@ -5728,6 +5728,7 @@ public import FLT.Mazur.ProperFamilyFiberPullback
 public import FLT.Mazur.ProperFamilyLineClassification
 public import FLT.Mazur.ProperFamilyLineDescent
 public import FLT.Mazur.ProperFamilyNaturalRepresentation
+public import FLT.Mazur.ProperFamilyOrbitPullback
 public import FLT.Mazur.ProperFamilyOriginalOrbits
 public import FLT.Mazur.ProperFamilyOriginalPullback
 public import FLT.Mazur.ProperFamilyOriginalSectionRecovery
