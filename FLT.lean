@@ -6808,6 +6808,7 @@ public import FLT.Mazur.WeierstrassDividedZeroResidueAtlas
 public import FLT.Mazur.WeierstrassDividedZeroSlopeContraction
 public import FLT.Mazur.WeierstrassDividedZeroSlopeLaurent
 public import FLT.Mazur.WeierstrassDividedZeroSplitCocone
+public import FLT.Mazur.WeierstrassDividedZeroSplitComponentInjectivity
 public import FLT.Mazur.WeierstrassDividedZeroSplitCycle
 public import FLT.Mazur.WeierstrassDividedZeroSplitCycleCoverage
 public import FLT.Mazur.WeierstrassDividedZeroSplitCycleRanges
