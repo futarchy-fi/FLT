@@ -3948,6 +3948,7 @@ public import FLT.Mazur.FlatTensorFixedSubmodule
 public import FLT.Mazur.FormallyUnramifiedQuotientCriterion
 public import FLT.Mazur.FpqcGlobalGenerationDescent
 public import FLT.Mazur.FpqcModuleEpimorphisms
+public import FLT.Mazur.FramedDualProjectiveChanges
 public import FLT.Mazur.FramedDualProjectivePullback
 public import FLT.Mazur.FreeSheafRestrictionCoherence
 public import FLT.Mazur.FreeSheafSectionCoordinates
