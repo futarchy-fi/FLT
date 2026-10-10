@@ -3296,6 +3296,7 @@ public import FLT.Mazur.DoubleRootComponentBound
 public import FLT.Mazur.DualAtlasSectionBaseNeighborhood
 public import FLT.Mazur.DualAtlasSectionChartPoints
 public import FLT.Mazur.DualAtlasSectionCommonPoint
+public import FLT.Mazur.DualAtlasSectionForwardLine
 public import FLT.Mazur.DualAtlasSectionLineCover
 public import FLT.Mazur.DualAtlasSectionLineOverlap
 public import FLT.Mazur.DualAtlasSectionLocalLines
