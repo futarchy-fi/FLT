@@ -5885,6 +5885,7 @@ public import FLT.Mazur.ProperLineFiberVanishing
 public import FLT.Mazur.ProperLineIsomorphismDescent
 public import FLT.Mazur.ProperLineIteratedArbitraryBaseChange
 public import FLT.Mazur.ProperLineIteratedFiberVanishing
+public import FLT.Mazur.ProperLinePrincipalRankOne
 public import FLT.Mazur.ProperLinePushforwardBaseChange
 public import FLT.Mazur.ProperLinePushforwardLocalFree
 public import FLT.Mazur.ProperLinePushforwardMate
