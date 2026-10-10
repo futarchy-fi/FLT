@@ -5888,6 +5888,7 @@ public import FLT.Mazur.ResidueVectorRetraction
 public import FLT.Mazur.RetainedLineSectionPullback
 public import FLT.Mazur.RetainedLineSectionPullbackIso
 public import FLT.Mazur.RetainedLineTwistedSection
+public import FLT.Mazur.RetainedSubringGrading
 public import FLT.Mazur.RightDerivedDimensionShift
 public import FLT.Mazur.RigidifiedLineIsomorphisms
 public import FLT.Mazur.RingCohomologyFinitePushforward
