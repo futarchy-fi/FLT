@@ -2842,6 +2842,7 @@ public import FLT.Mazur.AmpleOpenAffineRecovery
 public import FLT.Mazur.AmpleOpenImage
 public import FLT.Mazur.AmplePreimageSectionCover
 public import FLT.Mazur.AmplePrincipalLocality
+public import FLT.Mazur.AmpleRetainedSectionCover
 public import FLT.Mazur.AmpleSectionCoverPullback
 public import FLT.Mazur.AmpleTwistedSectionLifting
 public import FLT.Mazur.AmpleVeroneseEvaluation
