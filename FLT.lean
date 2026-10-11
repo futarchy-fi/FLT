@@ -9316,6 +9316,7 @@ public import FLT.Mazur.WeierstrassSplitDepthExceptionalBranches
 public import FLT.Mazur.WeierstrassSplitDepthExceptionalCharacters
 public import FLT.Mazur.WeierstrassSplitDepthExceptionalScaling
 public import FLT.Mazur.WeierstrassSplitDepthHorizontalOutputUnit
+public import FLT.Mazur.WeierstrassSplitDepthNormalizedDividedAction
 public import FLT.Mazur.WeierstrassSplitDepthNormalizedFractionAction
 public import FLT.Mazur.WeierstrassSplitDepthNormalizedQuotientAction
 public import FLT.Mazur.WeierstrassSplitDepthOriginalFractionAction
