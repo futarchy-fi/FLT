@@ -2499,6 +2499,7 @@ public import FLT.Mazur.AcyclicPushforwardCohomology
 public import FLT.Mazur.AcyclicRankOneBaseChange
 public import FLT.Mazur.AcyclicRankOneLineCondition
 public import FLT.Mazur.AcyclicRankOneRelativeClass
+public import FLT.Mazur.AcyclicRelativeDivisorFamilyDescent
 public import FLT.Mazur.AcyclicResolutionComparison
 public import FLT.Mazur.AcyclicTensorExactness
 public import FLT.Mazur.AdditiveComplexDirectSum
