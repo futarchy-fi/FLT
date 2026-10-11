@@ -3069,6 +3069,7 @@ public import FLT.Mazur.BaseAdicReesTensorModule
 public import FLT.Mazur.BaseAdicSectionReconstruction
 public import FLT.Mazur.BaseAdicSectionSuccessorReconstruction
 public import FLT.Mazur.BaseAdicThickening
+public import FLT.Mazur.BaseChangeCotangentFieldRank
 public import FLT.Mazur.BaseChangeSectionEquiv
 public import FLT.Mazur.BaseChangedPresentationModel
 public import FLT.Mazur.BinaryOpenDescent
