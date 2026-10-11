@@ -5309,6 +5309,7 @@ public import FLT.Mazur.OneGonSmoothingPuncturedAtlas
 public import FLT.Mazur.OneGonSmoothingPuncturedFamily
 public import FLT.Mazur.OneGonSmoothingPuncturedGroupAtlas
 public import FLT.Mazur.OneGonSmoothingPuncturedParameter
+public import FLT.Mazur.OneGonSmoothingPuncturedSchemeMarking
 public import FLT.Mazur.OneGonSmoothingSchemeAuxiliaryMarking
 public import FLT.Mazur.OneGonSmoothingSchemeNormalizedGroup
 public import FLT.Mazur.OneGonSmoothingSchemeNormalizedMarking
