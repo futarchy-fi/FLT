@@ -3864,6 +3864,7 @@ public import FLT.Mazur.FiberCohomologyTensorCriterion
 public import FLT.Mazur.FiberCohomologyTensorExactness
 public import FLT.Mazur.FiberwiseRegularFlatQuotient
 public import FLT.Mazur.FieldCoefficientCohomologyDimension
+public import FLT.Mazur.FieldNonspecialGeometricCriterion
 public import FLT.Mazur.FilteredDiagramSectionDescent
 public import FLT.Mazur.FilteredDiagramUnitDescent
 public import FLT.Mazur.FilteredRingFamilyDescent
