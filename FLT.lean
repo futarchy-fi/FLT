@@ -2508,6 +2508,7 @@ public import FLT.Mazur.AdditiveSheafModuleTransport
 public import FLT.Mazur.AdditiveSheafMultiplication
 public import FLT.Mazur.AdicCommonModelFiltration
 public import FLT.Mazur.AdicCompletedDifferentials
+public import FLT.Mazur.AdicCompletedInfinitesimalChainMap
 public import FLT.Mazur.AdicCompletedInfinitesimalHom
 public import FLT.Mazur.AdicCompletedInfinitesimalLift
 public import FLT.Mazur.AdicCompletedInfinitesimalSpaceMap
