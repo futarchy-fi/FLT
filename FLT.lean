@@ -7183,6 +7183,7 @@ public import FLT.Mazur.WeierstrassDividedFinalChainPairIntersections
 public import FLT.Mazur.WeierstrassDividedFinalExteriorChartSeparation
 public import FLT.Mazur.WeierstrassDividedFinalInitialComponents
 public import FLT.Mazur.WeierstrassDividedFinalInitialCoverage
+public import FLT.Mazur.WeierstrassDividedFinalInitialLineCharts
 public import FLT.Mazur.WeierstrassDividedFinalInitialNodesDistinct
 public import FLT.Mazur.WeierstrassDividedFinalInitialParameterCharts
 public import FLT.Mazur.WeierstrassDividedFinalNodeAdjacent
