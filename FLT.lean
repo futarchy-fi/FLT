@@ -3085,6 +3085,17 @@ public import FLT.Mazur.BaseAdicThickening
 public import FLT.Mazur.BaseChangeCotangentFieldRank
 public import FLT.Mazur.BaseChangeSectionEquiv
 public import FLT.Mazur.BaseChangedPresentationModel
+public import FLT.Mazur.BaseOpenHilbertBaseChange
+public import FLT.Mazur.BaseOpenHilbertChartFunctions
+public import FLT.Mazur.BaseOpenHilbertChartSourceSections
+public import FLT.Mazur.BaseOpenHilbertInvariantStructureSheaf
+public import FLT.Mazur.BaseOpenHilbertLocallyRingedChart
+public import FLT.Mazur.BaseOpenHilbertOrbitFibers
+public import FLT.Mazur.BaseOpenHilbertOrbitHomeomorph
+public import FLT.Mazur.BaseOpenHilbertOrbitOpen
+public import FLT.Mazur.BaseOpenHilbertOriginalInvariantFunctions
+public import FLT.Mazur.BaseOpenHilbertRelationOpenSections
+public import FLT.Mazur.BaseOpenHilbertRestrictedRelation
 public import FLT.Mazur.BinaryOpenDescent
 public import FLT.Mazur.BlowupFractionActionCover
 public import FLT.Mazur.BlowupFractionChart
@@ -7436,6 +7447,7 @@ public import FLT.Mazur.ValuationProjectiveNormalization
 public import FLT.Mazur.ValuationRingCompleteModel
 public import FLT.Mazur.ValuationRingHenselianModel
 public import FLT.Mazur.ValuationRingModel
+public import FLT.Mazur.VariableHilbertSourceIntersection
 public import FLT.Mazur.VariableTranslatedHilbertChart
 public import FLT.Mazur.VariableTranslatedHilbertOverlap
 public import FLT.Mazur.VariableTranslatedHilbertRepresentation
