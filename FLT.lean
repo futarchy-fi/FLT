@@ -5443,6 +5443,7 @@ public import FLT.Mazur.PolygonSmoothingCoefficientSquares
 public import FLT.Mazur.PolygonSmoothingCompletedDifferentials
 public import FLT.Mazur.PolygonSmoothingCoordinateIdeal
 public import FLT.Mazur.PolygonSmoothingCotangentCokernel
+public import FLT.Mazur.PolygonSmoothingCotangentRelationSequence
 public import FLT.Mazur.PolygonSmoothingDerivation
 public import FLT.Mazur.PolygonSmoothingFlat
 public import FLT.Mazur.PolygonSmoothingGenericFiber
