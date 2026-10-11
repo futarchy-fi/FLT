@@ -7011,6 +7011,10 @@ public import FLT.Mazur.SchemeReducedRelativeSections
 public import FLT.Mazur.SchemeReducedSectionDetection
 public import FLT.Mazur.SchemeReducedStructureSheaf
 public import FLT.Mazur.SchemeRefinementReconstruction
+public import FLT.Mazur.SchemeRelationFunctionDescent
+public import FLT.Mazur.SchemeRelationLocalFunctionDescent
+public import FLT.Mazur.SchemeRelationOpenFunctionDescent
+public import FLT.Mazur.SchemeRelationOpenInvariantRings
 public import FLT.Mazur.SchemeRelativeNilpotentKernel
 public import FLT.Mazur.SchemeRelativeNilpotentSections
 public import FLT.Mazur.SchemeSectionFamilyProduct
@@ -7206,8 +7210,12 @@ public import FLT.Mazur.SmoothSectionCartier
 public import FLT.Mazur.SmoothTranslationChartOrbitFibers
 public import FLT.Mazur.SmoothTranslationChartOrbitHomeomorph
 public import FLT.Mazur.SmoothTranslationGeometricClass
+public import FLT.Mazur.SmoothTranslationInvariantOpenDomains
+public import FLT.Mazur.SmoothTranslationInvariantSectionComparison
 public import FLT.Mazur.SmoothTranslationOrbitCover
 public import FLT.Mazur.SmoothTranslationOrbitOpen
+public import FLT.Mazur.SmoothTranslationOriginalInvariantDescent
+public import FLT.Mazur.SmoothTranslationRestrictedRelationCover
 public import FLT.Mazur.SpecCartesianAlgebraPushout
 public import FLT.Mazur.SpecChartIdealPreimage
 public import FLT.Mazur.SpectrumFieldCohomologyCoordinates
@@ -7480,8 +7488,12 @@ public import FLT.Mazur.VariableHilbertChartRelation
 public import FLT.Mazur.VariableHilbertChartRelationOperations
 public import FLT.Mazur.VariableHilbertChartRelationPullback
 public import FLT.Mazur.VariableHilbertIntersectionBaseChange
+public import FLT.Mazur.VariableHilbertInvariantFunctionDescent
+public import FLT.Mazur.VariableHilbertInvariantOpenDescent
 public import FLT.Mazur.VariableHilbertParameterOrbitDescent
 public import FLT.Mazur.VariableHilbertRelationBridge
+public import FLT.Mazur.VariableHilbertRelationBridgeIso
+public import FLT.Mazur.VariableHilbertRelationCover
 public import FLT.Mazur.VariableHilbertSourceIntersection
 public import FLT.Mazur.VariableTranslatedHilbertChart
 public import FLT.Mazur.VariableTranslatedHilbertOverlap
