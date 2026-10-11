@@ -7584,6 +7584,9 @@ public import FLT.Mazur.WeierstrassDividedGlobalFiniteSmoothEmbedding
 public import FLT.Mazur.WeierstrassDividedGlobalFiniteSmoothOpen
 public import FLT.Mazur.WeierstrassDividedGlobalFiniteStep
 public import FLT.Mazur.WeierstrassDividedGlobalFiniteZero
+public import FLT.Mazur.WeierstrassDividedGlobalInitialAction
+public import FLT.Mazur.WeierstrassDividedGlobalInitialActionGeometry
+public import FLT.Mazur.WeierstrassDividedGlobalInitialActionLaws
 public import FLT.Mazur.WeierstrassDividedGlobalInitialComparison
 public import FLT.Mazur.WeierstrassDividedGlobalResidueNodes
 public import FLT.Mazur.WeierstrassDividedGlobalResidueOverlap
@@ -8025,11 +8028,14 @@ public import FLT.Mazur.WeierstrassGlobalAdditionInverse
 public import FLT.Mazur.WeierstrassGlobalAdditionZeroRestrictions
 public import FLT.Mazur.WeierstrassGlobalAffineSwap
 public import FLT.Mazur.WeierstrassGlobalInfinitySwap
+public import FLT.Mazur.WeierstrassGlobalModificationActionAssociativity
 public import FLT.Mazur.WeierstrassGlobalModificationActionCenter
 public import FLT.Mazur.WeierstrassGlobalModificationActionFlatExt
 public import FLT.Mazur.WeierstrassGlobalModificationActionIdentity
+public import FLT.Mazur.WeierstrassGlobalModificationActionInverse
 public import FLT.Mazur.WeierstrassGlobalModificationActionOverlap
 public import FLT.Mazur.WeierstrassGlobalModificationActionPoints
+public import FLT.Mazur.WeierstrassGlobalModificationActionSmooth
 public import FLT.Mazur.WeierstrassGlobalModificationContractionFlatExt
 public import FLT.Mazur.WeierstrassGlobalModificationFlat
 public import FLT.Mazur.WeierstrassGlobalModificationFractionCover
@@ -8042,6 +8048,7 @@ public import FLT.Mazur.WeierstrassGlobalModificationSmoothAction
 public import FLT.Mazur.WeierstrassGlobalModificationSmoothCover
 public import FLT.Mazur.WeierstrassGlobalModificationSmoothEmbedding
 public import FLT.Mazur.WeierstrassGlobalModificationSmoothOpen
+public import FLT.Mazur.WeierstrassGlobalModificationTranslationGraph
 public import FLT.Mazur.WeierstrassGlobalModificationUnchangedLift
 public import FLT.Mazur.WeierstrassGlobalModificationUnchangedOverlap
 public import FLT.Mazur.WeierstrassGlobalModificationXOpen
