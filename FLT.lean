@@ -4713,6 +4713,7 @@ public import FLT.Mazur.LocalClosedFiberTensorComplex
 public import FLT.Mazur.LocalClosedFiberUniversalFunctions
 public import FLT.Mazur.LocalCompletionFaithfullyFlat
 public import FLT.Mazur.LocalCompletionModel
+public import FLT.Mazur.LocalCompletionModelFiltration
 public import FLT.Mazur.LocalCompletionModelModule
 public import FLT.Mazur.LocalCompletionSmoothCriterion
 public import FLT.Mazur.LocalFiberRegularQuotient
