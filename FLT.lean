@@ -7226,6 +7226,7 @@ public import FLT.Mazur.WeierstrassDividedLaurentTerminalEmbedding
 public import FLT.Mazur.WeierstrassDividedLaurentTerminalMap
 public import FLT.Mazur.WeierstrassDividedLaurentTerminalOpenExclusions
 public import FLT.Mazur.WeierstrassDividedLaurentTerminalProjectiveComponent
+public import FLT.Mazur.WeierstrassDividedLaurentTerminalZeroExclusions
 public import FLT.Mazur.WeierstrassDividedLaurentZeroRetainedIntersection
 public import FLT.Mazur.WeierstrassDividedLocalizedIntersection
 public import FLT.Mazur.WeierstrassDividedNonadjacentGlobalIntersection
