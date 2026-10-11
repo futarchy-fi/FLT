@@ -7369,6 +7369,7 @@ public import FLT.Mazur.WeierstrassDividedInitialParameterIntersection
 public import FLT.Mazur.WeierstrassDividedInitialParameterOverlap
 public import FLT.Mazur.WeierstrassDividedInitialPrecedingExterior
 public import FLT.Mazur.WeierstrassDividedInitialProjectiveComponents
+public import FLT.Mazur.WeierstrassDividedInitialPunctureCompatibility
 public import FLT.Mazur.WeierstrassDividedInitialResidueAtlas
 public import FLT.Mazur.WeierstrassDividedInitialRetainedBoundary
 public import FLT.Mazur.WeierstrassDividedInitialRetainedIntersection
