@@ -7835,6 +7835,7 @@ public import FLT.Mazur.WeierstrassDilatationFractionMap
 public import FLT.Mazur.WeierstrassDilatationGenerators
 public import FLT.Mazur.WeierstrassDilatationGenericFiber
 public import FLT.Mazur.WeierstrassDilatationHorizontalCongruence
+public import FLT.Mazur.WeierstrassDilatationLaurentPointCharacters
 public import FLT.Mazur.WeierstrassDilatationLifting
 public import FLT.Mazur.WeierstrassDilatationLocalization
 public import FLT.Mazur.WeierstrassDilatationMorphism
