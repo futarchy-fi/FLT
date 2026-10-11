@@ -8074,6 +8074,7 @@ public import FLT.Mazur.WeierstrassLeftSmoothInputAddition
 public import FLT.Mazur.WeierstrassLeftSmoothInputCompatibility
 public import FLT.Mazur.WeierstrassLeftSmoothInputOutputRegular
 public import FLT.Mazur.WeierstrassLeftSmoothInputRestrictions
+public import FLT.Mazur.WeierstrassLeftSmoothInverseAction
 public import FLT.Mazur.WeierstrassLeftSmoothLocalOutputRegular
 public import FLT.Mazur.WeierstrassLeftSmoothMixedAddition
 public import FLT.Mazur.WeierstrassLeftSmoothMixedLeftReciprocalTriple
