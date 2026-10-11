@@ -8005,6 +8005,7 @@ public import FLT.Mazur.WeierstrassDividedFiniteLineContractions
 public import FLT.Mazur.WeierstrassDividedFiniteLineReciprocals
 public import FLT.Mazur.WeierstrassDividedFiniteNodeComponents
 public import FLT.Mazur.WeierstrassDividedFiniteNodeContractions
+public import FLT.Mazur.WeierstrassDividedFiniteOriginalXOpen
 public import FLT.Mazur.WeierstrassDividedFiniteOverlap
 public import FLT.Mazur.WeierstrassDividedFiniteProper
 public import FLT.Mazur.WeierstrassDividedFiniteResidueNodes
@@ -8178,6 +8179,7 @@ public import FLT.Mazur.WeierstrassDividedNonadjacentTensorIntersection
 public import FLT.Mazur.WeierstrassDividedOlderAtlasIndex
 public import FLT.Mazur.WeierstrassDividedOlderConicExteriorDisjoint
 public import FLT.Mazur.WeierstrassDividedOlderConicPunctures
+public import FLT.Mazur.WeierstrassDividedOlderCubicAction
 public import FLT.Mazur.WeierstrassDividedOlderExtendedComponentOrigins
 public import FLT.Mazur.WeierstrassDividedOlderExtendedConicOverlap
 public import FLT.Mazur.WeierstrassDividedOlderExtendedDisjoint
@@ -8221,6 +8223,7 @@ public import FLT.Mazur.WeierstrassDividedOlderResidueNodes
 public import FLT.Mazur.WeierstrassDividedOlderSplitNodeBranches
 public import FLT.Mazur.WeierstrassDividedOlderSplitNodeCover
 public import FLT.Mazur.WeierstrassDividedOlderSuccessiveCharts
+public import FLT.Mazur.WeierstrassDividedOlderTensorPointAction
 public import FLT.Mazur.WeierstrassDividedOlderZeroConicParameters
 public import FLT.Mazur.WeierstrassDividedOlderZeroConstantNodeDescent
 public import FLT.Mazur.WeierstrassDividedOlderZeroEqualizerCover
@@ -8233,6 +8236,7 @@ public import FLT.Mazur.WeierstrassDividedOppositeBoundarySupport
 public import FLT.Mazur.WeierstrassDividedOrderedAdjacentComponents
 public import FLT.Mazur.WeierstrassDividedOrderedPairCoverage
 public import FLT.Mazur.WeierstrassDividedOrderedRetainedSections
+public import FLT.Mazur.WeierstrassDividedOriginalXOpen
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityAction
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityActionComparison
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityAtlasCompatibility
@@ -8332,6 +8336,9 @@ public import FLT.Mazur.WeierstrassDividedSkippedAtlasRange
 public import FLT.Mazur.WeierstrassDividedSkippedChartSupport
 public import FLT.Mazur.WeierstrassDividedSkippedTensorIntersection
 public import FLT.Mazur.WeierstrassDividedSmoothCoefficientEmbedding
+public import FLT.Mazur.WeierstrassDividedSmoothSuccessiveCoefficientAction
+public import FLT.Mazur.WeierstrassDividedSmoothSuccessiveIntegralAction
+public import FLT.Mazur.WeierstrassDividedSmoothSuccessiveResidueAction
 public import FLT.Mazur.WeierstrassDividedSuccessiveOriginalY
 public import FLT.Mazur.WeierstrassDividedSuccessorActionAtlas
 public import FLT.Mazur.WeierstrassDividedSuccessorActionInput
@@ -9244,6 +9251,7 @@ public import FLT.Mazur.WeierstrassSmoothHorizontalFactorOrder
 public import FLT.Mazur.WeierstrassSmoothHorizontalGlobalAction
 public import FLT.Mazur.WeierstrassSmoothHorizontalIncidenceUnits
 public import FLT.Mazur.WeierstrassSmoothHorizontalIntegralActionSource
+public import FLT.Mazur.WeierstrassSmoothHorizontalIntegralCubicAction
 public import FLT.Mazur.WeierstrassSmoothHorizontalLaurentEvaluation
 public import FLT.Mazur.WeierstrassSmoothHorizontalPairDensity
 public import FLT.Mazur.WeierstrassSmoothHorizontalPairExt
@@ -9282,7 +9290,11 @@ public import FLT.Mazur.WeierstrassSmoothProductOpen
 public import FLT.Mazur.WeierstrassSmoothProjectiveGroup
 public import FLT.Mazur.WeierstrassSmoothReciprocalTriple
 public import FLT.Mazur.WeierstrassSmoothSevenPoints
+public import FLT.Mazur.WeierstrassSmoothSuccessiveIntegralCubicMaps
+public import FLT.Mazur.WeierstrassSmoothSuccessiveIntegralRegular
+public import FLT.Mazur.WeierstrassSmoothSuccessiveIntegralResiduePoint
 public import FLT.Mazur.WeierstrassSmoothSuccessiveIntegralTransport
+public import FLT.Mazur.WeierstrassSmoothSuccessiveOriginalFunctions
 public import FLT.Mazur.WeierstrassSmoothSuccessiveResidueInputs
 public import FLT.Mazur.WeierstrassSmoothSuccessiveResidueOutputs
 public import FLT.Mazur.WeierstrassSmoothSuccessiveTensorInput
