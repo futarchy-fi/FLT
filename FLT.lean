@@ -7440,6 +7440,7 @@ public import FLT.Mazur.ValuationRingHenselianModel
 public import FLT.Mazur.ValuationRingModel
 public import FLT.Mazur.VariableHilbertChartRelation
 public import FLT.Mazur.VariableHilbertChartRelationOperations
+public import FLT.Mazur.VariableHilbertChartRelationPullback
 public import FLT.Mazur.VariableHilbertIntersectionBaseChange
 public import FLT.Mazur.VariableHilbertParameterOrbitDescent
 public import FLT.Mazur.VariableHilbertRelationBridge
