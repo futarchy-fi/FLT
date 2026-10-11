@@ -7008,6 +7008,7 @@ public import FLT.Mazur.SmoothNonspecialDivisorCover
 public import FLT.Mazur.SmoothNonspecialDivisorLift
 public import FLT.Mazur.SmoothNonspecialLineLift
 public import FLT.Mazur.SmoothOpenSectionCartier
+public import FLT.Mazur.SmoothOrderedLineParameters
 public import FLT.Mazur.SmoothQuasiFiniteCartierCriterion
 public import FLT.Mazur.SmoothQuasiFiniteIdealCharts
 public import FLT.Mazur.SmoothRelativeCotangentRank
