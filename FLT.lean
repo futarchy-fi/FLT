@@ -3397,6 +3397,7 @@ public import FLT.Mazur.CurveNode
 public import FLT.Mazur.CurveNodeAffineCompletion
 public import FLT.Mazur.CurveNodeOpenCover
 public import FLT.Mazur.CurveNodeOpenImmersion
+public import FLT.Mazur.CurveNonspecialDivisor
 public import FLT.Mazur.CurveNonspecialLine
 public import FLT.Mazur.CurvePicardDegree
 public import FLT.Mazur.CurvePositiveDegreeAffineSection
