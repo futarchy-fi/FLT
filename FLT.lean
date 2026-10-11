@@ -5777,6 +5777,7 @@ public import FLT.Mazur.PolygonStageClosedImmersion
 public import FLT.Mazur.PolygonStageCoefficientFamilies
 public import FLT.Mazur.PolygonStageCoefficientKernel
 public import FLT.Mazur.PolygonStageCoefficientNaturality
+public import FLT.Mazur.PolygonStageCoefficientSystems
 public import FLT.Mazur.PolygonStageCoefficientTransitions
 public import FLT.Mazur.PolygonStageFlatLayer
 public import FLT.Mazur.PolygonStageLayerSequence
