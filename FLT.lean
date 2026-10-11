@@ -4720,6 +4720,7 @@ public import FLT.Mazur.LineTrivializationCocycle
 public import FLT.Mazur.LineTrivializationCocycleRecovery
 public import FLT.Mazur.LineTrivializationCoordinates
 public import FLT.Mazur.LinearCoordinateRatio
+public import FLT.Mazur.LinearMapKernelTransport
 public import FLT.Mazur.LinearRankOneFrameUnit
 public import FLT.Mazur.LocalBaseSectionDisjointness
 public import FLT.Mazur.LocalBoundedFlatVanishing
