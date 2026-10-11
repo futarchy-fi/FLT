@@ -2610,6 +2610,7 @@ public import FLT.Mazur.AffineBranchSequence
 public import FLT.Mazur.AffineCanonicalMapCompatibility
 public import FLT.Mazur.AffineCanonicalOverlapChart
 public import FLT.Mazur.AffineCanonicalOverlapRecognition
+public import FLT.Mazur.AffineCartesianSectionPushout
 public import FLT.Mazur.AffineCartesianSectionScalars
 public import FLT.Mazur.AffineChartResidueEquation
 public import FLT.Mazur.AffineChartResidueRetraction
@@ -2853,6 +2854,7 @@ public import FLT.Mazur.AffineStalkFirstCotangent
 public import FLT.Mazur.AffineStalkMorphism
 public import FLT.Mazur.AffineStructuralRelativeDimension
 public import FLT.Mazur.AffineStructuralSmoothLocus
+public import FLT.Mazur.AffineStructuralStandardSmoothChart
 public import FLT.Mazur.AffineTensorCoactionRecognition
 public import FLT.Mazur.AffineTensorCoalgebraComparison
 public import FLT.Mazur.AffineTensorCocycle
@@ -3071,6 +3073,7 @@ public import FLT.Mazur.BaseAdicReesSpectrumTripleSheafNormalization
 public import FLT.Mazur.BaseAdicReesTensorModule
 public import FLT.Mazur.BaseAdicSectionReconstruction
 public import FLT.Mazur.BaseAdicSectionSuccessorReconstruction
+public import FLT.Mazur.BaseAdicStructureVanishing
 public import FLT.Mazur.BaseAdicThickening
 public import FLT.Mazur.BaseChangeCotangentFieldRank
 public import FLT.Mazur.BaseChangeSectionEquiv
@@ -3113,6 +3116,7 @@ public import FLT.Mazur.CartesianMonoMonoid
 public import FLT.Mazur.CartesianMorphismRecovery
 public import FLT.Mazur.CartesianOpenSectionMap
 public import FLT.Mazur.CartesianSectionRestriction
+public import FLT.Mazur.CartesianStandardSmoothDimension
 public import FLT.Mazur.CartesianStructureComplexExactness
 public import FLT.Mazur.CartesianStructureComplexGluing
 public import FLT.Mazur.CartesianStructurePositiveHomology
@@ -5370,6 +5374,8 @@ public import FLT.Mazur.PolygonCompleteConstantSections
 public import FLT.Mazur.PolygonCompleteCoordinateEvaluation
 public import FLT.Mazur.PolygonCompleteFamilyFlatness
 public import FLT.Mazur.PolygonCompleteFiberMarkings
+public import FLT.Mazur.PolygonCompleteGenericPureDimension
+public import FLT.Mazur.PolygonCompleteGenericRelativeDimension
 public import FLT.Mazur.PolygonCompleteGenericSmooth
 public import FLT.Mazur.PolygonCompleteGeometricGenericFiber
 public import FLT.Mazur.PolygonCompleteGeometricallyConnected
@@ -5412,6 +5418,7 @@ public import FLT.Mazur.PolygonCompleteNodeStalkCompletion
 public import FLT.Mazur.PolygonCompleteNodeStalkEvaluation
 public import FLT.Mazur.PolygonCompleteNodeStalkH1Equiv
 public import FLT.Mazur.PolygonCompleteNodeStalkMap
+public import FLT.Mazur.PolygonCompleteSmoothDimensionOpen
 public import FLT.Mazur.PolygonCompleteUniversalFunctions
 public import FLT.Mazur.PolygonCompleteZeroParameterFiber
 public import FLT.Mazur.PolygonComponentDistinct
@@ -6248,6 +6255,7 @@ public import FLT.Mazur.ProperUniversalDirectImagePasting
 public import FLT.Mazur.ProperUniversalRetainedSection
 public import FLT.Mazur.ProperUniversalTensorIdentification
 public import FLT.Mazur.PullbackOverlapBaseChange
+public import FLT.Mazur.PullbackRotationTransport
 public import FLT.Mazur.PuncturedNodeRestrictionComparison
 public import FLT.Mazur.PushforwardCech
 public import FLT.Mazur.PushoutModuleScalars
@@ -6313,6 +6321,7 @@ public import FLT.Mazur.RelativeCartierIdealFamilyDescent
 public import FLT.Mazur.RelativeCartierIdealPullback
 public import FLT.Mazur.RelativeCartierOriginalSquare
 public import FLT.Mazur.RelativeCyclicSubgroup
+public import FLT.Mazur.RelativeDimensionBaseChangeOpen
 public import FLT.Mazur.RelativeDirectImageComposition
 public import FLT.Mazur.RelativeDirectImageForgetting
 public import FLT.Mazur.RelativeDirectImageOpenResolution
@@ -6873,12 +6882,15 @@ public import FLT.Mazur.ShortComplexSumHomologyInclusion
 public import FLT.Mazur.SmoothAffineCoefficientModels
 public import FLT.Mazur.SmoothAffineLineNoetherianModel
 public import FLT.Mazur.SmoothAlgebraReduced
+public import FLT.Mazur.SmoothBaseChangeDimensionOpen
 public import FLT.Mazur.SmoothCotangentRankGenerization
 public import FLT.Mazur.SmoothCurveDimension
 public import FLT.Mazur.SmoothCurveFiberCartier
 public import FLT.Mazur.SmoothCurvePicardDegree
+public import FLT.Mazur.SmoothCurvePureDimension
 public import FLT.Mazur.SmoothDimension
 public import FLT.Mazur.SmoothDimensionBound
+public import FLT.Mazur.SmoothFieldCotangentRank
 public import FLT.Mazur.SmoothFiniteCoefficientBranch
 public import FLT.Mazur.SmoothFiniteFlatIdealCharts
 public import FLT.Mazur.SmoothFiniteSubgroupAmple
@@ -6890,6 +6902,7 @@ public import FLT.Mazur.SmoothQuasiFiniteCartierCriterion
 public import FLT.Mazur.SmoothQuasiFiniteIdealCharts
 public import FLT.Mazur.SmoothRelativeCotangentRank
 public import FLT.Mazur.SmoothSectionCartier
+public import FLT.Mazur.SpecCartesianAlgebraPushout
 public import FLT.Mazur.SpecChartIdealPreimage
 public import FLT.Mazur.SpectrumFieldCohomologyCoordinates
 public import FLT.Mazur.SpectrumSmoothFiniteFlatCartier
@@ -6942,6 +6955,7 @@ public import FLT.Mazur.StructureCohomologyFinite
 public import FLT.Mazur.StructureCohomologyOverIso
 public import FLT.Mazur.StructureDirectImageHZero
 public import FLT.Mazur.StructureDirectImageSections
+public import FLT.Mazur.StructureIdealPowerCohomology
 public import FLT.Mazur.StructureIdealPowerQuotient
 public import FLT.Mazur.StructureImageOpenChart
 public import FLT.Mazur.SubfunctorRepresentedPullback
@@ -6990,7 +7004,11 @@ public import FLT.Mazur.TildePrincipalOpen
 public import FLT.Mazur.TildeSourceSectionComparison
 public import FLT.Mazur.TorusChartScalars
 public import FLT.Mazur.TranslatedHilbertChartOverlap
+public import FLT.Mazur.TranslatedHilbertOverlapIdentities
 public import FLT.Mazur.TranslatedHilbertPicardChart
+public import FLT.Mazur.TranslatedHilbertSchemeTriple
+public import FLT.Mazur.TranslatedHilbertTripleCocycle
+public import FLT.Mazur.TranslatedHilbertTripleOverlap
 public import FLT.Mazur.TrivialLineTwistLocalization
 public import FLT.Mazur.TrivializedLineSheafLimitDescent
 public import FLT.Mazur.TwistedEvaluationSectionSum
