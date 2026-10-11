@@ -4893,6 +4893,7 @@ public import FLT.Mazur.IteratedQuotientRecovery
 public import FLT.Mazur.IteratedQuotientRepresentatives
 public import FLT.Mazur.IteratedRefinementSquareCriteria
 public import FLT.Mazur.LargeDegreeRelativeLineSections
+public import FLT.Mazur.LaurentCoefficientInjectivity
 public import FLT.Mazur.LaurentRingSurjectivity
 public import FLT.Mazur.LaurentTensor
 public import FLT.Mazur.LaurentUnitMultiplication
@@ -6355,6 +6356,7 @@ public import FLT.Mazur.ProjectiveLineMarkedSectionTransition
 public import FLT.Mazur.ProjectiveLineMarkedTransition
 public import FLT.Mazur.ProjectiveLineOpenChartExclusion
 public import FLT.Mazur.ProjectiveLinePointLoopMatching
+public import FLT.Mazur.ProjectiveLineProductChartTorusExt
 public import FLT.Mazur.ProjectiveLineProductCharts
 public import FLT.Mazur.ProjectiveLineProductOverlap
 public import FLT.Mazur.ProjectiveLineProductTorusExt
@@ -6374,6 +6376,7 @@ public import FLT.Mazur.ProjectiveLineTopology
 public import FLT.Mazur.ProjectiveLineTwistCoordinates
 public import FLT.Mazur.ProjectiveLineUniversalAction
 public import FLT.Mazur.ProjectiveLineUniversalLaurentEvaluation
+public import FLT.Mazur.ProjectiveLineUniversalLaurentProjections
 public import FLT.Mazur.ProjectiveLinearCoefficientChange
 public import FLT.Mazur.ProjectiveLinearIsomorphism
 public import FLT.Mazur.ProjectiveLinearOver
@@ -8018,6 +8021,8 @@ public import FLT.Mazur.WeierstrassDividedGlobalZeroNodes
 public import FLT.Mazur.WeierstrassDividedGlobalZeroOverlap
 public import FLT.Mazur.WeierstrassDividedGlobalZeroSuccessive
 public import FLT.Mazur.WeierstrassDividedHorizontalCoefficientPointAction
+public import FLT.Mazur.WeierstrassDividedHorizontalCyclicInput
+public import FLT.Mazur.WeierstrassDividedHorizontalCyclicPair
 public import FLT.Mazur.WeierstrassDividedHorizontalFinitePointAction
 public import FLT.Mazur.WeierstrassDividedInfinityLaurentChart
 public import FLT.Mazur.WeierstrassDividedInfinityLaurentGluing
@@ -8149,6 +8154,7 @@ public import FLT.Mazur.WeierstrassDividedPositiveEqualityAtlasFullCompatibility
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityAtlasInitialReduction
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityAtlasRecovery
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityAtlasSeparation
+public import FLT.Mazur.WeierstrassDividedPositiveEqualityBoundaryComponentAction
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityBranchIndices
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityBranches
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityCartesian
@@ -9127,6 +9133,7 @@ public import FLT.Mazur.WeierstrassSmoothCoefficientProduct
 public import FLT.Mazur.WeierstrassSmoothConnected
 public import FLT.Mazur.WeierstrassSmoothCrossAffine
 public import FLT.Mazur.WeierstrassSmoothCrossPolynomial
+public import FLT.Mazur.WeierstrassSmoothCyclicParameterDensity
 public import FLT.Mazur.WeierstrassSmoothFactorAddition
 public import FLT.Mazur.WeierstrassSmoothFactorProduct
 public import FLT.Mazur.WeierstrassSmoothFaithfulCoefficientDescent
@@ -9149,6 +9156,8 @@ public import FLT.Mazur.WeierstrassSmoothHorizontalFactorGeometry
 public import FLT.Mazur.WeierstrassSmoothHorizontalFactorOrder
 public import FLT.Mazur.WeierstrassSmoothHorizontalGlobalAction
 public import FLT.Mazur.WeierstrassSmoothHorizontalLaurentEvaluation
+public import FLT.Mazur.WeierstrassSmoothHorizontalPairDensity
+public import FLT.Mazur.WeierstrassSmoothHorizontalPairExt
 public import FLT.Mazur.WeierstrassSmoothHorizontalProductResidue
 public import FLT.Mazur.WeierstrassSmoothHorizontalProductSource
 public import FLT.Mazur.WeierstrassSmoothHorizontalReciprocalCharacters
