@@ -5707,6 +5707,7 @@ public import FLT.Mazur.PowerSeriesTruncatedPolynomial
 public import FLT.Mazur.PresentedFiniteCoefficientBranch
 public import FLT.Mazur.PrimeCharacteristicScalar
 public import FLT.Mazur.PrimeCoefficientLocalization
+public import FLT.Mazur.PrimeCotangentSmoothDimension
 public import FLT.Mazur.PrimeLocalFiberRegularQuotient
 public import FLT.Mazur.PrimeQuasiFiniteSmoothCartier
 public import FLT.Mazur.PrimeSmoothFiniteFlatCartier
