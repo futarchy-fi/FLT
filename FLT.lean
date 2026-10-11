@@ -3507,6 +3507,9 @@ public import FLT.Mazur.DivisorChartCokernel
 public import FLT.Mazur.DivisorChartNumerator
 public import FLT.Mazur.DivisorClosedCokernel
 public import FLT.Mazur.DivisorCohomologicalDegree
+public import FLT.Mazur.DivisorComplementCanonical
+public import FLT.Mazur.DivisorComplementFiltration
+public import FLT.Mazur.DivisorComplementFunctions
 public import FLT.Mazur.DivisorComponentDegree
 public import FLT.Mazur.DivisorIdealEvaluation
 public import FLT.Mazur.DivisorIdealStalkExt
@@ -3526,11 +3529,13 @@ public import FLT.Mazur.DivisorLinePullbackIdentity
 public import FLT.Mazur.DivisorLinePullbackTransport
 public import FLT.Mazur.DivisorLineSectionModel
 public import FLT.Mazur.DivisorPowerCanonicalSection
+public import FLT.Mazur.DivisorPowerComplementTransition
 public import FLT.Mazur.DivisorPowerEulerCharacteristic
 public import FLT.Mazur.DivisorPowerH1Bound
 public import FLT.Mazur.DivisorPowerH1Vanishing
 public import FLT.Mazur.DivisorPowerHZeroTransition
 public import FLT.Mazur.DivisorPowerHigherVanishing
+public import FLT.Mazur.DivisorPowerLeadingClass
 public import FLT.Mazur.DivisorPowerTwistDegree
 public import FLT.Mazur.DivisorPowerVeryAmple
 public import FLT.Mazur.DivisorRestrictCoherence
@@ -5102,6 +5107,7 @@ public import FLT.Mazur.ModuleSectionCocycleEvaluation
 public import FLT.Mazur.ModuleSectionCocycleIso
 public import FLT.Mazur.ModuleSectionCocyclePullbackNormalization
 public import FLT.Mazur.ModuleSectionExactness
+public import FLT.Mazur.ModuleSectionInverseCoordinate
 public import FLT.Mazur.ModuleSectionIsomorphismTransport
 public import FLT.Mazur.ModuleSectionMap
 public import FLT.Mazur.ModuleSectionProjectiveChart
@@ -5682,7 +5688,9 @@ public import FLT.Mazur.PolygonCompleteNodeStalkMap
 public import FLT.Mazur.PolygonCompleteOriginalSectionReconstruction
 public import FLT.Mazur.PolygonCompletePointAcyclic
 public import FLT.Mazur.PolygonCompletePointDimensions
+public import FLT.Mazur.PolygonCompletePointLeadingClasses
 public import FLT.Mazur.PolygonCompletePointNewSections
+public import FLT.Mazur.PolygonCompletePointPoleFunctions
 public import FLT.Mazur.PolygonCompletePointPowerComparison
 public import FLT.Mazur.PolygonCompletePointPowerVanishing
 public import FLT.Mazur.PolygonCompletePointSectionBaseChange
