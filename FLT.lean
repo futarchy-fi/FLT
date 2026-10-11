@@ -3206,6 +3206,7 @@ public import FLT.Mazur.CartierAffineFppfDescent
 public import FLT.Mazur.CartierBoundarySectionRingNaturality
 public import FLT.Mazur.CartierChartFlat
 public import FLT.Mazur.CartierCharts
+public import FLT.Mazur.CartierComplementRestriction
 public import FLT.Mazur.CartierDivisorComponentRestriction
 public import FLT.Mazur.CartierDivisorMultiplicity
 public import FLT.Mazur.CartierFiberNeighborhood
@@ -3507,13 +3508,18 @@ public import FLT.Mazur.DivisorChartCokernel
 public import FLT.Mazur.DivisorChartNumerator
 public import FLT.Mazur.DivisorClosedCokernel
 public import FLT.Mazur.DivisorCohomologicalDegree
+public import FLT.Mazur.DivisorCokernelProjection
 public import FLT.Mazur.DivisorComplementCanonical
+public import FLT.Mazur.DivisorComplementFaithful
 public import FLT.Mazur.DivisorComplementFiltration
 public import FLT.Mazur.DivisorComplementFunctions
+public import FLT.Mazur.DivisorComplementLinear
 public import FLT.Mazur.DivisorComponentDegree
 public import FLT.Mazur.DivisorIdealEvaluation
 public import FLT.Mazur.DivisorIdealStalkExt
 public import FLT.Mazur.DivisorInvertibleSheaf
+public import FLT.Mazur.DivisorLeadingNonzeroProduct
+public import FLT.Mazur.DivisorLeadingRestriction
 public import FLT.Mazur.DivisorLineBundle
 public import FLT.Mazur.DivisorLineBundlePower
 public import FLT.Mazur.DivisorLineBundleRestrict
@@ -3546,6 +3552,7 @@ public import FLT.Mazur.DivisorStalkLength
 public import FLT.Mazur.DivisorTensorSequence
 public import FLT.Mazur.DivisorTranslationLine
 public import FLT.Mazur.DivisorTwistedDegree
+public import FLT.Mazur.DivisorTwistedProjection
 public import FLT.Mazur.DivisorTwistedSequence
 public import FLT.Mazur.DoubleRootComponentBound
 public import FLT.Mazur.DualAtlasAmbientBaseChange
@@ -4899,6 +4906,7 @@ public import FLT.Mazur.LaurentTensor
 public import FLT.Mazur.LaurentUnitMultiplication
 public import FLT.Mazur.LaurentUnitPoints
 public import FLT.Mazur.LineBundleSectionOpenPullback
+public import FLT.Mazur.LineCartierComplementRestriction
 public import FLT.Mazur.LineDescentDiagonalRigidity
 public import FLT.Mazur.LineDualPullbackSquare
 public import FLT.Mazur.LineEndpointTransport
@@ -5697,7 +5705,9 @@ public import FLT.Mazur.PolygonCompleteNodeStalkMap
 public import FLT.Mazur.PolygonCompleteOriginalSectionReconstruction
 public import FLT.Mazur.PolygonCompletePointAcyclic
 public import FLT.Mazur.PolygonCompletePointDimensions
+public import FLT.Mazur.PolygonCompletePointFunctionDimensions
 public import FLT.Mazur.PolygonCompletePointLeadingClasses
+public import FLT.Mazur.PolygonCompletePointLeadingProducts
 public import FLT.Mazur.PolygonCompletePointNewSections
 public import FLT.Mazur.PolygonCompletePointPoleFunctions
 public import FLT.Mazur.PolygonCompletePointPowerComparison
@@ -7200,6 +7210,7 @@ public import FLT.Mazur.SectionGradedLinePullback
 public import FLT.Mazur.SectionGradedLineRingCoherence
 public import FLT.Mazur.SectionGradedLocalCoordinates
 public import FLT.Mazur.SectionGradedMultiplication
+public import FLT.Mazur.SectionGradedNonzeroProduct
 public import FLT.Mazur.SectionGradedPowerGenerators
 public import FLT.Mazur.SectionGradedPowerRatios
 public import FLT.Mazur.SectionGradedPowers
