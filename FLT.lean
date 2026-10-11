@@ -5097,6 +5097,7 @@ public import FLT.Mazur.PinchingNeighborhoods
 public import FLT.Mazur.PinchingPullbackTransport
 public import FLT.Mazur.PointNormalizedDivisorBaseChange
 public import FLT.Mazur.PointNormalizedDivisorFiber
+public import FLT.Mazur.PointNormalizedDivisorUniqueness
 public import FLT.Mazur.PointNormalizedLineBaseChange
 public import FLT.Mazur.PointNormalizedLineBundle
 public import FLT.Mazur.PointedCurveLargeDegree
