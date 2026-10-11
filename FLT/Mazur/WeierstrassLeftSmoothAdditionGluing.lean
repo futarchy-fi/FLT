@@ -10,7 +10,7 @@ public import FLT.Mazur.WeierstrassLeftSmoothInputCompatibility
 /-!
 # Global translation on the full left smooth projective input open
 
-The four left left smooth input laws glue as scheme morphisms in arbitrary reduction.
+The four left smooth input laws glue as scheme morphisms in arbitrary reduction.
 The construction uses the original projective product cover and retains each
 chart formula on any scheme presenting the same global inputs.
 -/
