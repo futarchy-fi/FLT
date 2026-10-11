@@ -6727,6 +6727,7 @@ public import FLT.Mazur.RegularCenterResidueConormal
 public import FLT.Mazur.RegularCenterResidueConormalRatio
 public import FLT.Mazur.RegularCenterRestriction
 public import FLT.Mazur.RegularCenterSeparatedLiftExt
+public import FLT.Mazur.RegularParameterDomain
 public import FLT.Mazur.RegularParameterIdeals
 public import FLT.Mazur.RegularPrincipalOpenLiftExt
 public import FLT.Mazur.RegularPrincipalStructureQuotient
