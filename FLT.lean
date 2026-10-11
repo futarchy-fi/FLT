@@ -2516,6 +2516,7 @@ public import FLT.Mazur.AdicCompletionPrincipal
 public import FLT.Mazur.AdicCompletionQuotientEquiv
 public import FLT.Mazur.AdicCompletionScalars
 public import FLT.Mazur.AdicCotangentHomComparison
+public import FLT.Mazur.AdicCotangentTransportDerivative
 public import FLT.Mazur.AdicCotangentTransportMap
 public import FLT.Mazur.AdicDerivationCompletion
 public import FLT.Mazur.AdicDerivationExtension
