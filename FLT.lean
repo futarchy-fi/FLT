@@ -5293,6 +5293,7 @@ public import FLT.Mazur.OneGonSmoothingMarkingLine
 public import FLT.Mazur.OneGonSmoothingNodeChart
 public import FLT.Mazur.OneGonSmoothingNormalizedComparison
 public import FLT.Mazur.OneGonSmoothingNormalizedOverlap
+public import FLT.Mazur.OneGonSmoothingOverlapBaseChange
 public import FLT.Mazur.OneGonSmoothingOverlapCompatibility
 public import FLT.Mazur.OneGonSmoothingOverlapCoordinates
 public import FLT.Mazur.OneGonSmoothingPrescribedMarking
