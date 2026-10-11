@@ -7246,6 +7246,7 @@ public import FLT.Mazur.TranslatedHilbertOpenFunctions
 public import FLT.Mazur.TranslatedHilbertOrbitFibers
 public import FLT.Mazur.TranslatedHilbertOrbitHomeomorph
 public import FLT.Mazur.TranslatedHilbertOrbitOpen
+public import FLT.Mazur.TranslatedHilbertOriginalInvariantFunctions
 public import FLT.Mazur.TranslatedHilbertOverlapIdentities
 public import FLT.Mazur.TranslatedHilbertPicardChart
 public import FLT.Mazur.TranslatedHilbertRelationOpenSections
