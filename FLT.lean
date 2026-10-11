@@ -4150,6 +4150,7 @@ public import FLT.Mazur.FiniteTypePrincipalPresentation
 public import FLT.Mazur.FiniteTypePrincipalSurjectiveLifts
 public import FLT.Mazur.FiniteTypeRelationPresentation
 public import FLT.Mazur.FiniteTypeRelativeClassOpenNaturality
+public import FLT.Mazur.FiniteTypeRelativeLineModel
 public import FLT.Mazur.FiniteTypeTestAbelEquivalence
 public import FLT.Mazur.FiniteTypeTestAcyclicDirectImage
 public import FLT.Mazur.FiniteTypeTestAcyclicOpen
