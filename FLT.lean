@@ -9251,6 +9251,7 @@ public import FLT.Mazur.WeierstrassSmoothDividedProductSource
 public import FLT.Mazur.WeierstrassSmoothDividedSecantResidue
 public import FLT.Mazur.WeierstrassSmoothDividedSecantSource
 public import FLT.Mazur.WeierstrassSmoothDividedTerminalCharacter
+public import FLT.Mazur.WeierstrassSmoothDividedTerminalTensorAction
 public import FLT.Mazur.WeierstrassSmoothFactorAddition
 public import FLT.Mazur.WeierstrassSmoothFactorProduct
 public import FLT.Mazur.WeierstrassSmoothFaithfulCoefficientDescent
