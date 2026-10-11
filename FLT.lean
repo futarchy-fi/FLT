@@ -9121,6 +9121,7 @@ public import FLT.Mazur.WeierstrassSmoothHorizontalProductResidue
 public import FLT.Mazur.WeierstrassSmoothHorizontalProductSource
 public import FLT.Mazur.WeierstrassSmoothHorizontalReciprocalCharacters
 public import FLT.Mazur.WeierstrassSmoothHorizontalResidueCoordinates
+public import FLT.Mazur.WeierstrassSmoothHorizontalResiduePoint
 public import FLT.Mazur.WeierstrassSmoothHorizontalTensorAction
 public import FLT.Mazur.WeierstrassSmoothHorizontalTensorGlobalAction
 public import FLT.Mazur.WeierstrassSmoothHorizontalTensorInput
