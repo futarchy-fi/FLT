@@ -6536,6 +6536,8 @@ public import FLT.Mazur.ReesRelativeModuleMap
 public import FLT.Mazur.ReesRelativeNaturality
 public import FLT.Mazur.ReesRelativeScalarTower
 public import FLT.Mazur.RefinedChartSpectrum
+public import FLT.Mazur.RegularCenterConormalQuotient
+public import FLT.Mazur.RegularCenterConormalRatio
 public import FLT.Mazur.RegularCenterDoubleOverlap
 public import FLT.Mazur.RegularCenterGluedLift
 public import FLT.Mazur.RegularCenterOverlap
@@ -9031,6 +9033,13 @@ public import FLT.Mazur.WeierstrassSplitNodalSmoothChartCoordinates
 public import FLT.Mazur.WeierstrassSplitNodalSmoothFormulaComparison
 public import FLT.Mazur.WeierstrassSplitNodalSmoothGroup
 public import FLT.Mazur.WeierstrassSplitNodalSmoothGroupComparison
+public import FLT.Mazur.WeierstrassSplitNodalTangentBranches
+public import FLT.Mazur.WeierstrassSplitNodalTangentCharacters
+public import FLT.Mazur.WeierstrassSplitNodalTangentChart
+public import FLT.Mazur.WeierstrassSplitNodalTangentEvaluation
+public import FLT.Mazur.WeierstrassSplitNodalTangentLaurent
+public import FLT.Mazur.WeierstrassSplitNodalTangentLift
+public import FLT.Mazur.WeierstrassSplitNodalTangentSlope
 public import FLT.Mazur.WeierstrassSplitNodalTorus
 public import FLT.Mazur.WeierstrassSplitNodalUnitPoints
 public import FLT.Mazur.WeierstrassSquareZeroTorsionRigidity
