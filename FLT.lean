@@ -7030,6 +7030,7 @@ public import FLT.Mazur.SectionProjectiveFiniteNeighborhood
 public import FLT.Mazur.SectionProjectiveImmersion
 public import FLT.Mazur.SectionRetainedChartComparison
 public import FLT.Mazur.SectionRetainedChartMorphism
+public import FLT.Mazur.SectionRetainedCoefficientOpens
 public import FLT.Mazur.SectionRetainedCoordinateRatios
 public import FLT.Mazur.SectionRetainedFractionEquation
 public import FLT.Mazur.SectionRetainedFractionUniqueness
