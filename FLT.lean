@@ -2524,6 +2524,7 @@ public import FLT.Mazur.AdicConormalTargetCompletion
 public import FLT.Mazur.AdicCotangentHomComparison
 public import FLT.Mazur.AdicCotangentHomDerivative
 public import FLT.Mazur.AdicCotangentHomMap
+public import FLT.Mazur.AdicCotangentSemilinearExt
 public import FLT.Mazur.AdicCotangentSpaceLift
 public import FLT.Mazur.AdicCotangentTransportDerivative
 public import FLT.Mazur.AdicCotangentTransportEquiv
