@@ -4814,6 +4814,10 @@ public import FLT.Mazur.LineDescentDiagonalRigidity
 public import FLT.Mazur.LineDualPullbackSquare
 public import FLT.Mazur.LineEndpointTransport
 public import FLT.Mazur.LineImageCartier
+public import FLT.Mazur.LineMorphismSectionStage
+public import FLT.Mazur.LineMorphismSectionTransport
+public import FLT.Mazur.LineMorphismTensorSection
+public import FLT.Mazur.LineMorphismTensorStage
 public import FLT.Mazur.LinePowerCocyclePullback
 public import FLT.Mazur.LinePowerEvaluationDescent
 public import FLT.Mazur.LinePowerSectionBaseChange
@@ -4990,6 +4994,7 @@ public import FLT.Mazur.ModulePresheafLinearHom
 public import FLT.Mazur.ModulePresheafPullbackSections
 public import FLT.Mazur.ModulePresheafTensorHom
 public import FLT.Mazur.ModulePresheafTensorPullback
+public import FLT.Mazur.ModulePullbackComparisonRatio
 public import FLT.Mazur.ModulePullbackComparisonTransport
 public import FLT.Mazur.ModulePullbackMapEquality
 public import FLT.Mazur.ModulePullbackRestrictionHorizontal
@@ -4998,6 +5003,7 @@ public import FLT.Mazur.ModulePullbackSectionCoherence
 public import FLT.Mazur.ModulePullbackSectionIdentity
 public import FLT.Mazur.ModulePullbackSectionIsoTransport
 public import FLT.Mazur.ModulePullbackSectionTransport
+public import FLT.Mazur.ModulePullbackStageDual
 public import FLT.Mazur.ModulePullbackStageIso
 public import FLT.Mazur.ModulePullbackStageTensor
 public import FLT.Mazur.ModulePullbackTrivializationCoherence
@@ -5429,6 +5435,7 @@ public import FLT.Mazur.PolygonCompleteCoefficientAmple
 public import FLT.Mazur.PolygonCompleteCoefficientCoherence
 public import FLT.Mazur.PolygonCompleteCoefficientHomExt
 public import FLT.Mazur.PolygonCompleteCoefficientLine
+public import FLT.Mazur.PolygonCompleteCoefficientMarkedComparison
 public import FLT.Mazur.PolygonCompleteCoefficientOpens
 public import FLT.Mazur.PolygonCompleteCoefficientReconstruction
 public import FLT.Mazur.PolygonCompleteComparedSectionReconstruction
@@ -5452,10 +5459,16 @@ public import FLT.Mazur.PolygonCompleteGeometricallyConnected
 public import FLT.Mazur.PolygonCompleteGeometricallyReduced
 public import FLT.Mazur.PolygonCompleteH1Rank
 public import FLT.Mazur.PolygonCompleteH1Reduction
+public import FLT.Mazur.PolygonCompleteLineHomExt
+public import FLT.Mazur.PolygonCompleteLineHomReconstruction
+public import FLT.Mazur.PolygonCompleteLineIsoDetection
+public import FLT.Mazur.PolygonCompleteLineIsoReconstruction
 public import FLT.Mazur.PolygonCompleteLineOriginalReduction
 public import FLT.Mazur.PolygonCompleteLineQuotient
 public import FLT.Mazur.PolygonCompleteLineSectionReconstruction
 public import FLT.Mazur.PolygonCompleteMarkedClosedFiber
+public import FLT.Mazur.PolygonCompleteMarkedCoordinateGeneration
+public import FLT.Mazur.PolygonCompleteMarkedCoordinateOpens
 public import FLT.Mazur.PolygonCompleteMarkedCoordinates
 public import FLT.Mazur.PolygonCompleteMarkedLineModel
 public import FLT.Mazur.PolygonCompleteMarkedModelSections
