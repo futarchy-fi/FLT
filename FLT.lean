@@ -5096,6 +5096,12 @@ public import FLT.Mazur.PinchingAffineDescent
 public import FLT.Mazur.PinchingChartBaseChange
 public import FLT.Mazur.PinchingNeighborhoods
 public import FLT.Mazur.PinchingPullbackTransport
+public import FLT.Mazur.PointNormalizedDirectImage
+public import FLT.Mazur.PointNormalizedDivisorBaseChange
+public import FLT.Mazur.PointNormalizedDivisorFiber
+public import FLT.Mazur.PointNormalizedDivisorUniqueness
+public import FLT.Mazur.PointNormalizedLineBaseChange
+public import FLT.Mazur.PointNormalizedLineBundle
 public import FLT.Mazur.PointedCurveLargeDegree
 public import FLT.Mazur.PointedCurveUniformAcyclicity
 public import FLT.Mazur.PointedCurveUniformRiemannRoch
@@ -5832,6 +5838,7 @@ public import FLT.Mazur.ProjectiveUniversalLineRefinementWitness
 public import FLT.Mazur.ProjectiveUniversalLineTripleComparison
 public import FLT.Mazur.ProjectiveUniversalLineTriplePaths
 public import FLT.Mazur.ProjectiveUniversalLineTripleRefinement
+public import FLT.Mazur.ProperAcyclicDirectImageRepresentation
 public import FLT.Mazur.ProperAcyclicRankOneLocus
 public import FLT.Mazur.ProperAffineSectionCartier
 public import FLT.Mazur.ProperAmpleConverse
@@ -5936,6 +5943,7 @@ public import FLT.Mazur.ProperLineFiberVanishing
 public import FLT.Mazur.ProperLineGeometricFiberLocus
 public import FLT.Mazur.ProperLineGeometricSectionRank
 public import FLT.Mazur.ProperLineGlobalAcyclicOpen
+public import FLT.Mazur.ProperLineGlobalRankOneCriterion
 public import FLT.Mazur.ProperLineIsomorphismDescent
 public import FLT.Mazur.ProperLineIteratedArbitraryBaseChange
 public import FLT.Mazur.ProperLineIteratedFiberVanishing
@@ -5944,6 +5952,7 @@ public import FLT.Mazur.ProperLinePushforwardBaseChange
 public import FLT.Mazur.ProperLinePushforwardLocalFree
 public import FLT.Mazur.ProperLinePushforwardMate
 public import FLT.Mazur.ProperLinePushforwardTilde
+public import FLT.Mazur.ProperLineRankOneChartDescent
 public import FLT.Mazur.ProperLineRankOneCohomology
 public import FLT.Mazur.ProperLineRankOneDetection
 public import FLT.Mazur.ProperLineRankOneDirectImage
@@ -5962,6 +5971,7 @@ public import FLT.Mazur.ProperPointedLineSheafDescent
 public import FLT.Mazur.ProperPushforwardReconstructionUnit
 public import FLT.Mazur.ProperRankOneDivisorNaturality
 public import FLT.Mazur.ProperRankOneNormalizedDivisor
+public import FLT.Mazur.ProperRankOnePointedDivisor
 public import FLT.Mazur.ProperRelativeCartierAtlas
 public import FLT.Mazur.ProperRelativeCartierAtlasQuotient
 public import FLT.Mazur.ProperRelativeCartierBaseOrbits
@@ -6734,6 +6744,7 @@ public import FLT.Mazur.UniformizerRootExtension
 public import FLT.Mazur.UnitIntegerModel
 public import FLT.Mazur.UniversalDivisorAcyclicRankOne
 public import FLT.Mazur.UniversalDivisorCohomologyCharts
+public import FLT.Mazur.UniversalDivisorDirectImageRepresentation
 public import FLT.Mazur.UniversalDivisorGlobalCohomology
 public import FLT.Mazur.UniversalDivisorTwistedLine
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryActualNormalizationIso
