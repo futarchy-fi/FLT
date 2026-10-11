@@ -5362,6 +5362,8 @@ public import FLT.Mazur.OrderedProjectiveHilbertNaturality
 public import FLT.Mazur.OrderedProjectiveHilbertParameter
 public import FLT.Mazur.OrderedRelativeIdealBaseChange
 public import FLT.Mazur.OrderedRelativeIdealFamily
+public import FLT.Mazur.OrderedTranslationAffineParameterCover
+public import FLT.Mazur.OrderedTranslationLocallyRingedMap
 public import FLT.Mazur.OrderedTranslationOriginalFiber
 public import FLT.Mazur.OriginalFamilyIdentityComparison
 public import FLT.Mazur.OriginalFamilySectionComposition
@@ -7187,7 +7189,11 @@ public import FLT.Mazur.SmoothQuasiFiniteCartierCriterion
 public import FLT.Mazur.SmoothQuasiFiniteIdealCharts
 public import FLT.Mazur.SmoothRelativeCotangentRank
 public import FLT.Mazur.SmoothSectionCartier
+public import FLT.Mazur.SmoothTranslationChartOrbitFibers
+public import FLT.Mazur.SmoothTranslationChartOrbitHomeomorph
 public import FLT.Mazur.SmoothTranslationGeometricClass
+public import FLT.Mazur.SmoothTranslationOrbitCover
+public import FLT.Mazur.SmoothTranslationOrbitOpen
 public import FLT.Mazur.SpecCartesianAlgebraPushout
 public import FLT.Mazur.SpecChartIdealPreimage
 public import FLT.Mazur.SpectrumFieldCohomologyCoordinates
@@ -7456,6 +7462,12 @@ public import FLT.Mazur.ValuationProjectiveNormalization
 public import FLT.Mazur.ValuationRingCompleteModel
 public import FLT.Mazur.ValuationRingHenselianModel
 public import FLT.Mazur.ValuationRingModel
+public import FLT.Mazur.VariableHilbertChartRelation
+public import FLT.Mazur.VariableHilbertChartRelationOperations
+public import FLT.Mazur.VariableHilbertChartRelationPullback
+public import FLT.Mazur.VariableHilbertIntersectionBaseChange
+public import FLT.Mazur.VariableHilbertParameterOrbitDescent
+public import FLT.Mazur.VariableHilbertRelationBridge
 public import FLT.Mazur.VariableHilbertSourceIntersection
 public import FLT.Mazur.VariableTranslatedHilbertChart
 public import FLT.Mazur.VariableTranslatedHilbertOverlap
