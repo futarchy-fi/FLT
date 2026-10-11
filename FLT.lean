@@ -7714,6 +7714,7 @@ public import FLT.Mazur.WeierstrassAffineChartDense
 public import FLT.Mazur.WeierstrassAffineCoordinateFlat
 public import FLT.Mazur.WeierstrassAffineEquationEvaluation
 public import FLT.Mazur.WeierstrassAffineEquationRigidity
+public import FLT.Mazur.WeierstrassAffineEvaluationInjective
 public import FLT.Mazur.WeierstrassAffineInputFactorization
 public import FLT.Mazur.WeierstrassAffineInputTripleDomain
 public import FLT.Mazur.WeierstrassAffineInputTripleGlobal
