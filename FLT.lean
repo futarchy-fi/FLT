@@ -5822,6 +5822,7 @@ public import FLT.Mazur.PolygonVeroneseEvaluationKernel
 public import FLT.Mazur.PolygonVeroneseFiniteType
 public import FLT.Mazur.PolygonVeroneseGrading
 public import FLT.Mazur.PolygonVeroneseHomogeneousReduction
+public import FLT.Mazur.PolygonVeroneseMultipleCharts
 public import FLT.Mazur.PolygonVeroneseMultipleExactness
 public import FLT.Mazur.PolygonVeroneseMultipleInclusion
 public import FLT.Mazur.PolygonVeroneseParameterIdeal
