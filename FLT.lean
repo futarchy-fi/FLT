@@ -3085,6 +3085,7 @@ public import FLT.Mazur.BaseAdicThickening
 public import FLT.Mazur.BaseChangeCotangentFieldRank
 public import FLT.Mazur.BaseChangeSectionEquiv
 public import FLT.Mazur.BaseChangedPresentationModel
+public import FLT.Mazur.BaseOpenHilbertBaseChange
 public import FLT.Mazur.BinaryOpenDescent
 public import FLT.Mazur.BlowupFractionActionCover
 public import FLT.Mazur.BlowupFractionChart
