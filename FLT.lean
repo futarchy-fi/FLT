@@ -3082,11 +3082,17 @@ public import FLT.Mazur.BaseChangeCotangentFieldRank
 public import FLT.Mazur.BaseChangeSectionEquiv
 public import FLT.Mazur.BaseChangedPresentationModel
 public import FLT.Mazur.BinaryOpenDescent
+public import FLT.Mazur.BlowupFractionActionCover
 public import FLT.Mazur.BlowupFractionChart
 public import FLT.Mazur.BlowupFractionChartExt
 public import FLT.Mazur.BlowupFractionChartLocalization
 public import FLT.Mazur.BlowupFractionChartMap
 public import FLT.Mazur.BlowupFractionChartRatio
+public import FLT.Mazur.BlowupFractionPrincipalIdeal
+public import FLT.Mazur.BlowupFractionPrincipalLift
+public import FLT.Mazur.BlowupFractionRatioCover
+public import FLT.Mazur.BlowupFractionRatioLift
+public import FLT.Mazur.BlowupFractionTensorChart
 public import FLT.Mazur.BlowupReesContraction
 public import FLT.Mazur.BlowupReesDegreeZeroEquiv
 public import FLT.Mazur.BlowupReesDegreeZeroMap
@@ -6354,6 +6360,12 @@ public import FLT.Mazur.ReesRelativeModuleMap
 public import FLT.Mazur.ReesRelativeNaturality
 public import FLT.Mazur.ReesRelativeScalarTower
 public import FLT.Mazur.RefinedChartSpectrum
+public import FLT.Mazur.RegularCenterDoubleOverlap
+public import FLT.Mazur.RegularCenterGluedLift
+public import FLT.Mazur.RegularCenterOverlap
+public import FLT.Mazur.RegularCenterOverlapScheme
+public import FLT.Mazur.RegularCenterRatioCover
+public import FLT.Mazur.RegularCenterRestriction
 public import FLT.Mazur.RegularParameterIdeals
 public import FLT.Mazur.RegularPrincipalStructureQuotient
 public import FLT.Mazur.RelativeAbelFiberOriginalSquare
@@ -8121,6 +8133,7 @@ public import FLT.Mazur.WeierstrassLeftSmoothAdditionOutputRegular
 public import FLT.Mazur.WeierstrassLeftSmoothAdditionStructure
 public import FLT.Mazur.WeierstrassLeftSmoothAffineAddition
 public import FLT.Mazur.WeierstrassLeftSmoothAffineCenter
+public import FLT.Mazur.WeierstrassLeftSmoothAffineCenterEquality
 public import FLT.Mazur.WeierstrassLeftSmoothAffineIdentity
 public import FLT.Mazur.WeierstrassLeftSmoothAffineInputTriple
 public import FLT.Mazur.WeierstrassLeftSmoothAffineOuterTriple
@@ -8140,6 +8153,8 @@ public import FLT.Mazur.WeierstrassLeftSmoothFivePoints
 public import FLT.Mazur.WeierstrassLeftSmoothFiveRegularChartDescent
 public import FLT.Mazur.WeierstrassLeftSmoothFiveRegularSectionDescent
 public import FLT.Mazur.WeierstrassLeftSmoothFormulaComparison
+public import FLT.Mazur.WeierstrassLeftSmoothFractionActionCover
+public import FLT.Mazur.WeierstrassLeftSmoothFractionActionGluing
 public import FLT.Mazur.WeierstrassLeftSmoothGlobalCenter
 public import FLT.Mazur.WeierstrassLeftSmoothIdentity
 public import FLT.Mazur.WeierstrassLeftSmoothInfinityIdentity
