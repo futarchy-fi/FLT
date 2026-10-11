@@ -3091,6 +3091,7 @@ public import FLT.Mazur.BaseOpenHilbertChartSourceSections
 public import FLT.Mazur.BaseOpenHilbertOrbitFibers
 public import FLT.Mazur.BaseOpenHilbertOrbitHomeomorph
 public import FLT.Mazur.BaseOpenHilbertOrbitOpen
+public import FLT.Mazur.BaseOpenHilbertOriginalInvariantFunctions
 public import FLT.Mazur.BaseOpenHilbertRelationOpenSections
 public import FLT.Mazur.BaseOpenHilbertRestrictedRelation
 public import FLT.Mazur.BinaryOpenDescent
