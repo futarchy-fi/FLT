@@ -7745,6 +7745,7 @@ public import FLT.Mazur.WeierstrassDividedGlobalActionSmooth
 public import FLT.Mazur.WeierstrassDividedGlobalCoefficientAction
 public import FLT.Mazur.WeierstrassDividedGlobalCoefficientActionLaws
 public import FLT.Mazur.WeierstrassDividedGlobalCoefficientCartesian
+public import FLT.Mazur.WeierstrassDividedGlobalCoefficientOverPoints
 public import FLT.Mazur.WeierstrassDividedGlobalCoefficientSmooth
 public import FLT.Mazur.WeierstrassDividedGlobalCoefficientSmoothOrbit
 public import FLT.Mazur.WeierstrassDividedGlobalCoefficientStep
