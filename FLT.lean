@@ -8012,6 +8012,7 @@ public import FLT.Mazur.WeierstrassIntegralUnitPoint
 public import FLT.Mazur.WeierstrassIntegralZeroSection
 public import FLT.Mazur.WeierstrassLeftSmoothAffineAddition
 public import FLT.Mazur.WeierstrassLeftSmoothAffineTransport
+public import FLT.Mazur.WeierstrassLeftSmoothCrossInput
 public import FLT.Mazur.WeierstrassLeftSmoothInputAddition
 public import FLT.Mazur.WeierstrassLeftSmoothInputRestrictions
 public import FLT.Mazur.WeierstrassLeftSmoothMixedAddition
