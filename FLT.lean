@@ -2728,6 +2728,7 @@ public import FLT.Mazur.AffineGeometricTensorCocycle
 public import FLT.Mazur.AffineGeometricTensorDatum
 public import FLT.Mazur.AffineHilbertChartRelation
 public import FLT.Mazur.AffineHilbertComposableEnvelope
+public import FLT.Mazur.AffineHilbertCompositionCharts
 public import FLT.Mazur.AffineHilbertPrincipalTensorModel
 public import FLT.Mazur.AffineHilbertRelationNeighborhoods
 public import FLT.Mazur.AffineHilbertRelationOperations
