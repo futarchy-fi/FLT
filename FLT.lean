@@ -5268,6 +5268,7 @@ public import FLT.Mazur.OneGonSmoothingAffinePresentation
 public import FLT.Mazur.OneGonSmoothingEquation
 public import FLT.Mazur.OneGonSmoothingFamily
 public import FLT.Mazur.OneGonSmoothingInfinityCoordinates
+public import FLT.Mazur.OneGonSmoothingNodeChart
 public import FLT.Mazur.OneGonTransition
 public import FLT.Mazur.OpenAtlasTripleGluing
 public import FLT.Mazur.OpenChartSectionPullback
