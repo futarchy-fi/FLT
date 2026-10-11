@@ -2574,6 +2574,7 @@ public import FLT.Mazur.AdicSeparatedDifferentials
 public import FLT.Mazur.AdicSquareZeroCompletion
 public import FLT.Mazur.AdicSquareZeroComplexComparison
 public import FLT.Mazur.AdicSquareZeroConormal
+public import FLT.Mazur.AdicSquareZeroConormalFunctor
 public import FLT.Mazur.AdicSquareZeroFormalChainMap
 public import FLT.Mazur.AdicSquareZeroFormalConormal
 public import FLT.Mazur.AdicSquareZeroFormalHomotopy
