@@ -4886,6 +4886,7 @@ public import FLT.Mazur.LinePullbackIsomorphisms
 public import FLT.Mazur.LinePullbackRestriction
 public import FLT.Mazur.LineRecoveryPullback
 public import FLT.Mazur.LineRestrictionHZero
+public import FLT.Mazur.LineRestrictionHZeroFrames
 public import FLT.Mazur.LineScalarExtensionNonvanishing
 public import FLT.Mazur.LineSectionCanonicalRecovery
 public import FLT.Mazur.LineSectionCohomologyAnnihilation
