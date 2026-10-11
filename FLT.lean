@@ -3355,6 +3355,7 @@ public import FLT.Mazur.CompactOpenSectionDescent
 public import FLT.Mazur.CompactOpenUnitDescent
 public import FLT.Mazur.CompactSchemeIntegerDescent
 public import FLT.Mazur.CompactSeparatedPushforward
+public import FLT.Mazur.ComparedStageSectionReconstruction
 public import FLT.Mazur.CompatibleSubgroupAmple
 public import FLT.Mazur.CompatibleSubgroupCyclic
 public import FLT.Mazur.CompatibleSubgroupIdealIso
