@@ -9024,6 +9024,7 @@ public import FLT.Mazur.WeierstrassSmoothGoodReductionGroup
 public import FLT.Mazur.WeierstrassSmoothGoodReductionLocal
 public import FLT.Mazur.WeierstrassSmoothGroup
 public import FLT.Mazur.WeierstrassSmoothGroupOperations
+public import FLT.Mazur.WeierstrassSmoothHorizontalConcreteAction
 public import FLT.Mazur.WeierstrassSmoothHorizontalConcreteRefinement
 public import FLT.Mazur.WeierstrassSmoothHorizontalProductResidue
 public import FLT.Mazur.WeierstrassSmoothHorizontalProductSource
