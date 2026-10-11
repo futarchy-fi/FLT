@@ -4290,6 +4290,7 @@ public import FLT.Mazur.GlobalGenerationTransport
 public import FLT.Mazur.GlobalIdealPower
 public import FLT.Mazur.GlobalIdealPowerCompatibility
 public import FLT.Mazur.GlueDataQuasiSeparated
+public import FLT.Mazur.GradedDegreeProjCoefficientStructure
 public import FLT.Mazur.GradedDegreeProjInverseCharts
 public import FLT.Mazur.GradedDegreeProjIso
 public import FLT.Mazur.GradedDegreeProjMap
@@ -5455,12 +5456,16 @@ public import FLT.Mazur.PolygonCompleteClosedH1Scalars
 public import FLT.Mazur.PolygonCompleteClosedSingularPoints
 public import FLT.Mazur.PolygonCompleteClosedSmoothLocus
 public import FLT.Mazur.PolygonCompleteClosedSpecialization
+public import FLT.Mazur.PolygonCompleteCoefficientAdicComparison
 public import FLT.Mazur.PolygonCompleteCoefficientAmple
 public import FLT.Mazur.PolygonCompleteCoefficientCoherence
 public import FLT.Mazur.PolygonCompleteCoefficientHomExt
 public import FLT.Mazur.PolygonCompleteCoefficientLine
 public import FLT.Mazur.PolygonCompleteCoefficientMarkedComparison
+public import FLT.Mazur.PolygonCompleteCoefficientMarkings
+public import FLT.Mazur.PolygonCompleteCoefficientMorphism
 public import FLT.Mazur.PolygonCompleteCoefficientOpens
+public import FLT.Mazur.PolygonCompleteCoefficientPullback
 public import FLT.Mazur.PolygonCompleteCoefficientReconstruction
 public import FLT.Mazur.PolygonCompleteComparedSectionReconstruction
 public import FLT.Mazur.PolygonCompleteConstantSections
@@ -5656,7 +5661,10 @@ public import FLT.Mazur.PolygonLineNormalization
 public import FLT.Mazur.PolygonMarkedSections
 public import FLT.Mazur.PolygonMarkingAffineNeighborhood
 public import FLT.Mazur.PolygonMultipleCoefficientProjMap
+public import FLT.Mazur.PolygonMultipleCoefficientStageNaturality
 public import FLT.Mazur.PolygonMultipleCoefficientStageOpens
+public import FLT.Mazur.PolygonMultipleCoefficientStructure
+public import FLT.Mazur.PolygonMultipleCoefficientUnitChart
 public import FLT.Mazur.PolygonMultipleStageGeneratingCover
 public import FLT.Mazur.PolygonMultipleStageOpenDetection
 public import FLT.Mazur.PolygonMultipleStageUnitChart
@@ -7054,6 +7062,7 @@ public import FLT.Mazur.SectionRetainedProjOfAmple
 public import FLT.Mazur.SectionRetainedProjOpens
 public import FLT.Mazur.SectionRetainedProjStructuralMap
 public import FLT.Mazur.SectionRetainedSheafEvaluation
+public import FLT.Mazur.SectionRetainedSourceLineEvaluation
 public import FLT.Mazur.SectionSumFiberDegree
 public import FLT.Mazur.SectionSumFieldLength
 public import FLT.Mazur.SectionSumFinite
