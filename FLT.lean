@@ -5139,6 +5139,7 @@ public import FLT.Mazur.NoetherianSumCechInclusion
 public import FLT.Mazur.NoetherianSumCechTerms
 public import FLT.Mazur.NoetherianUniversalStructureSheaf
 public import FLT.Mazur.NonzeroLineSectionExact
+public import FLT.Mazur.NonzeroSectionPointCondition
 public import FLT.Mazur.NormalizedSectionLine
 public import FLT.Mazur.NormalizedSectionLineBaseChange
 public import FLT.Mazur.NormalizedSectionLineCommonPrincipal
