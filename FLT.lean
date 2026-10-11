@@ -7041,6 +7041,7 @@ public import FLT.Mazur.UnpointedAcyclicFppfDetection
 public import FLT.Mazur.UnpointedAcyclicFppfImageEquivalence
 public import FLT.Mazur.UnpointedAcyclicOpenPointedCompatibility
 public import FLT.Mazur.UnpointedLocalAcyclicDivisorCover
+public import FLT.Mazur.UnpointedLocalAcyclicEffectiveDescent
 public import FLT.Mazur.UnpointedLocalAcyclicFppfSheaf
 public import FLT.Mazur.UnramifiedSectionImmersion
 public import FLT.Mazur.UnrestrictedSmoothFamilyCartier
