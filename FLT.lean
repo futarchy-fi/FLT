@@ -2552,6 +2552,7 @@ public import FLT.Mazur.AdicFormalLiftDifference
 public import FLT.Mazur.AdicFormalLiftProjection
 public import FLT.Mazur.AdicFormalPresentationHom
 public import FLT.Mazur.AdicFormalSpaceDerivative
+public import FLT.Mazur.AdicFormalSpaceFunctor
 public import FLT.Mazur.AdicIdealCompletionRange
 public import FLT.Mazur.AdicIdealFilteredMap
 public import FLT.Mazur.AdicInfinitesimalConormal
