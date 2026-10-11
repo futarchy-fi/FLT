@@ -2506,6 +2506,7 @@ public import FLT.Mazur.AdditiveComplexSumHomology
 public import FLT.Mazur.AdditiveComplexSumHomologyInclusion
 public import FLT.Mazur.AdditiveSheafModuleTransport
 public import FLT.Mazur.AdditiveSheafMultiplication
+public import FLT.Mazur.AdicCompletedDifferentials
 public import FLT.Mazur.AdicCompletionAlgEquiv
 public import FLT.Mazur.AdicCompletionPositiveEquiv
 public import FLT.Mazur.AdicCompletionPositiveLimit
@@ -2513,10 +2514,16 @@ public import FLT.Mazur.AdicCompletionPrincipal
 public import FLT.Mazur.AdicCompletionQuotientEquiv
 public import FLT.Mazur.AdicCompletionScalars
 public import FLT.Mazur.AdicDerivationCompletion
+public import FLT.Mazur.AdicDerivationExtension
 public import FLT.Mazur.AdicDerivationFiltration
+public import FLT.Mazur.AdicDerivationNaturality
 public import FLT.Mazur.AdicDerivationQuotient
+public import FLT.Mazur.AdicDerivationUniqueness
 public import FLT.Mazur.AdicFiniteGenerationLifting
+public import FLT.Mazur.AdicFiniteModuleExt
+public import FLT.Mazur.AdicFiniteModuleLift
 public import FLT.Mazur.AdicSectionIsoReconstruction
+public import FLT.Mazur.AdicSeparatedDerivation
 public import FLT.Mazur.AffineAdicCohomologyImage
 public import FLT.Mazur.AffineAdicFormalComparison
 public import FLT.Mazur.AffineAnnihilator
@@ -5416,7 +5423,9 @@ public import FLT.Mazur.PolygonSmoothingBranchOpens
 public import FLT.Mazur.PolygonSmoothingBranchSwap
 public import FLT.Mazur.PolygonSmoothingCoefficientBranches
 public import FLT.Mazur.PolygonSmoothingCoefficientSquares
+public import FLT.Mazur.PolygonSmoothingCompletedDifferentials
 public import FLT.Mazur.PolygonSmoothingCoordinateIdeal
+public import FLT.Mazur.PolygonSmoothingDerivation
 public import FLT.Mazur.PolygonSmoothingFlat
 public import FLT.Mazur.PolygonSmoothingGenericFiber
 public import FLT.Mazur.PolygonSmoothingLeftPuncture
@@ -6056,6 +6065,7 @@ public import FLT.Mazur.QuasiFiniteIdealQuotient
 public import FLT.Mazur.QuasiFiniteSmoothLocalEquation
 public import FLT.Mazur.QuasicoherentImageIdeal
 public import FLT.Mazur.QuasicoherentImageIdealOrbits
+public import FLT.Mazur.QuotientRelativeDerivation
 public import FLT.Mazur.RankOneAmbientLineClassification
 public import FLT.Mazur.RankOneDirectImageSection
 public import FLT.Mazur.RankOneSectionDivisorUniqueness
