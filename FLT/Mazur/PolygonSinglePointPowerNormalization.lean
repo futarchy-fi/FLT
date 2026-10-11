@@ -9,6 +9,7 @@ public import FLT.Mazur.PolygonSinglePointLineNormalization
 public import FLT.Mazur.PolygonDivisorPowerPullback
 public import FLT.Mazur.ProjectiveLineMarkedSectionTransition
 public import FLT.Mazur.DivisorLineBundlePower
+public import Mathlib.Tactic.IrreducibleDef
 
 /-!
 # Actual single-point powers on polygon normalization
@@ -60,7 +61,7 @@ theorem pointPowerIdealComparison_isIso (a : Kˣ) (i j : Fin n) (m : ℕ) :
     exact effectiveCartier_top
 
 /-- On its marked component O(mP) is the original polynomial-coordinate line. -/
-def ownComponentPowerIso (a : Kˣ) (j : Fin n) (m : ℕ) :
+irreducible_def ownComponentPowerIso (a : Kˣ) (j : Fin n) (m : ℕ) :
     (Scheme.Modules.pullback (componentι K n j ≫ p).left).obj
       (pointPower K n hn p q h a j m) ≅ ProjectiveLineMarkedSectionTransition.line K a m := by
   let _ := pointPowerIdealComparison_isIso K n hn p q h a j j m
@@ -69,7 +70,7 @@ def ownComponentPowerIso (a : Kˣ) (j : Fin n) (m : ℕ) :
     (by rw [idealSheaf_comap_pow, section_ideal K n hn p q h a j])
 
 /-- On every other component the full ideal power is canonically trivial. -/
-def otherComponentPowerIso (a : Kˣ) {i j : Fin n} (hij : i ≠ j) (m : ℕ) :
+irreducible_def otherComponentPowerIso (a : Kˣ) {i j : Fin n} (hij : i ≠ j) (m : ℕ) :
     (Scheme.Modules.pullback (componentι K n i ≫ p).left).obj
       (pointPower K n hn p q h a j m) ≅ structureModule (ProjectiveLine.scheme K) := by
   let _ := pointPowerIdealComparison_isIso K n hn p q h a i j m
