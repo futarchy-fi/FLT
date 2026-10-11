@@ -7592,6 +7592,7 @@ public import FLT.Mazur.WeierstrassDividedFirstFractionAlgebra
 public import FLT.Mazur.WeierstrassDividedFirstFractionCenter
 public import FLT.Mazur.WeierstrassDividedFirstFractionCoordinates
 public import FLT.Mazur.WeierstrassDividedFirstFractionDomain
+public import FLT.Mazur.WeierstrassDividedFirstFractionUnique
 public import FLT.Mazur.WeierstrassDividedFullResidueAtlas
 public import FLT.Mazur.WeierstrassDividedGlobalConicCoordinates
 public import FLT.Mazur.WeierstrassDividedGlobalConicIntersection
