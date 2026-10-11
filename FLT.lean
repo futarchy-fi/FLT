@@ -7184,6 +7184,7 @@ public import FLT.Mazur.WeierstrassDividedFinalExteriorChartSeparation
 public import FLT.Mazur.WeierstrassDividedFinalInitialComponents
 public import FLT.Mazur.WeierstrassDividedFinalInitialCoverage
 public import FLT.Mazur.WeierstrassDividedFinalInitialNodesDistinct
+public import FLT.Mazur.WeierstrassDividedFinalInitialParameterCharts
 public import FLT.Mazur.WeierstrassDividedFinalNodeAdjacent
 public import FLT.Mazur.WeierstrassDividedFinalNodeChart
 public import FLT.Mazur.WeierstrassDividedFinalNodeCoproduct
