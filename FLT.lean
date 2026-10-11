@@ -8015,6 +8015,7 @@ public import FLT.Mazur.WeierstrassLeftSmoothAdditionStructure
 public import FLT.Mazur.WeierstrassLeftSmoothAffineAddition
 public import FLT.Mazur.WeierstrassLeftSmoothAffineTransport
 public import FLT.Mazur.WeierstrassLeftSmoothCrossInput
+public import FLT.Mazur.WeierstrassLeftSmoothFactorProduct
 public import FLT.Mazur.WeierstrassLeftSmoothInputAddition
 public import FLT.Mazur.WeierstrassLeftSmoothInputCompatibility
 public import FLT.Mazur.WeierstrassLeftSmoothInputRestrictions
