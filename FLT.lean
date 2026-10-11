@@ -7078,6 +7078,7 @@ public import FLT.Mazur.SmoothHilbertGeometricCoverage
 public import FLT.Mazur.SmoothHilbertIntersectionComponents
 public import FLT.Mazur.SmoothHilbertIntersectionLift
 public import FLT.Mazur.SmoothHilbertIntersectionSource
+public import FLT.Mazur.SmoothHilbertInvariantQuotient
 public import FLT.Mazur.SmoothHilbertLocallyRingedQuotient
 public import FLT.Mazur.SmoothHilbertRelation
 public import FLT.Mazur.SmoothHilbertRelationOperations
