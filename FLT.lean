@@ -2489,6 +2489,7 @@ public import FLT.Mathlib.Topology.Polish
 public import FLT.Mazur.AbelianInjectiveFlasque
 public import FLT.Mazur.AbsoluteDirectImageCohomology
 public import FLT.Mazur.AcyclicCoefficientCohomology
+public import FLT.Mazur.AcyclicDegreePicardRepresentation
 public import FLT.Mazur.AcyclicDirectImageResolution
 public import FLT.Mazur.AcyclicDivisorDegreePresheaf
 public import FLT.Mazur.AcyclicHilbertDivisorRepresentation
