@@ -3090,6 +3090,7 @@ public import FLT.Mazur.BaseMarkedHilbertFullIntersection
 public import FLT.Mazur.BaseMarkedHilbertIdentities
 public import FLT.Mazur.BaseMarkedHilbertIntersection
 public import FLT.Mazur.BaseMarkedHilbertOverlap
+public import FLT.Mazur.BaseMarkedHilbertSchemeCocycle
 public import FLT.Mazur.BaseMarkedHilbertSchemeTriple
 public import FLT.Mazur.BaseMarkedHilbertTriple
 public import FLT.Mazur.BaseOpenHilbertBaseChange
