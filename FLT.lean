@@ -3517,6 +3517,7 @@ public import FLT.Mazur.DivisorComponentDegree
 public import FLT.Mazur.DivisorIdealEvaluation
 public import FLT.Mazur.DivisorIdealStalkExt
 public import FLT.Mazur.DivisorInvertibleSheaf
+public import FLT.Mazur.DivisorLeadingRestriction
 public import FLT.Mazur.DivisorLineBundle
 public import FLT.Mazur.DivisorLineBundlePower
 public import FLT.Mazur.DivisorLineBundleRestrict
