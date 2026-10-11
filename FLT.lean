@@ -8023,6 +8023,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXHorizontalScheme
 public import FLT.Mazur.WeierstrassSuccessiveXLocalization
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleComponents
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleConic
+public import FLT.Mazur.WeierstrassSuccessiveXMiddleConicFactor
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleDisjoint
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleExtension
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleFirstParameter
