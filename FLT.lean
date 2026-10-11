@@ -9058,6 +9058,7 @@ public import FLT.Mazur.WeierstrassSmoothTripleInputRegular
 public import FLT.Mazur.WeierstrassSmoothTripleProduct
 public import FLT.Mazur.WeierstrassSmoothTripleProjections
 public import FLT.Mazur.WeierstrassSmoothYAddition
+public import FLT.Mazur.WeierstrassSmoothYAffineResidue
 public import FLT.Mazur.WeierstrassSmoothYAffineSource
 public import FLT.Mazur.WeierstrassSmoothYCompatibility
 public import FLT.Mazur.WeierstrassSmoothYIdentity
