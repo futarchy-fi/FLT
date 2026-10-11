@@ -7305,6 +7305,7 @@ public import FLT.Mazur.WeierstrassDividedZeroEqualityCycleRanges
 public import FLT.Mazur.WeierstrassDividedZeroEqualityEarlierExt
 public import FLT.Mazur.WeierstrassDividedZeroEqualityHomExt
 public import FLT.Mazur.WeierstrassDividedZeroEqualityIndexedExt
+public import FLT.Mazur.WeierstrassDividedZeroEqualityInteriorIndexedDesc
 public import FLT.Mazur.WeierstrassDividedZeroEqualityInteriorLocalMaps
 public import FLT.Mazur.WeierstrassDividedZeroEqualityLengthTwoAttachmentExt
 public import FLT.Mazur.WeierstrassDividedZeroEqualityLengthTwoBranches
