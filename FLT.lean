@@ -2915,6 +2915,7 @@ public import FLT.Mazur.AmbientHilbertUniversalPullback
 public import FLT.Mazur.AmbientQuotientRelativeBaseChange
 public import FLT.Mazur.AmbientQuotientRelativeSpace
 public import FLT.Mazur.AmbientQuotientSchemeFamilies
+public import FLT.Mazur.AmpleAcyclicNonzeroSection
 public import FLT.Mazur.AmpleAffineBase
 public import FLT.Mazur.AmpleAffinePullback
 public import FLT.Mazur.AmpleAmbientHilbertClassification
@@ -3397,6 +3398,8 @@ public import FLT.Mazur.CurveNode
 public import FLT.Mazur.CurveNodeAffineCompletion
 public import FLT.Mazur.CurveNodeOpenCover
 public import FLT.Mazur.CurveNodeOpenImmersion
+public import FLT.Mazur.CurveNonspecialDivisor
+public import FLT.Mazur.CurveNonspecialLine
 public import FLT.Mazur.CurvePicardDegree
 public import FLT.Mazur.CurvePositiveDegreeAffineSection
 public import FLT.Mazur.CurvePositiveDegreeAmple
@@ -3955,6 +3958,7 @@ public import FLT.Mazur.FiniteGroupQuotientPrincipalChart
 public import FLT.Mazur.FiniteGroupQuotientSchemePoints
 public import FLT.Mazur.FiniteGroupSpectrumAction
 public import FLT.Mazur.FiniteHomologyFiberVanishing
+public import FLT.Mazur.FiniteIdealConditionDimension
 public import FLT.Mazur.FiniteIntegerModelElementRelations
 public import FLT.Mazur.FiniteIntegerModelPullbacks
 public import FLT.Mazur.FiniteIntegerModelRelations
@@ -4621,6 +4625,7 @@ public import FLT.Mazur.IdealAdicUniformQuotientVanishing
 public import FLT.Mazur.IdealCartierNeighborhood
 public import FLT.Mazur.IdealCohomologyAmpleAnyBase
 public import FLT.Mazur.IdealCohomologyAmpleCriterion
+public import FLT.Mazur.IdealConditionAcyclic
 public import FLT.Mazur.IdealFamilyIsomorphism
 public import FLT.Mazur.IdealIsomorphismExtension
 public import FLT.Mazur.IdealModuleAffineTensor
@@ -5141,6 +5146,7 @@ public import FLT.Mazur.NoetherianSumCechInclusion
 public import FLT.Mazur.NoetherianSumCechTerms
 public import FLT.Mazur.NoetherianUniversalStructureSheaf
 public import FLT.Mazur.NonzeroLineSectionExact
+public import FLT.Mazur.NonzeroSectionPointCondition
 public import FLT.Mazur.NormalizedSectionLine
 public import FLT.Mazur.NormalizedSectionLineBaseChange
 public import FLT.Mazur.NormalizedSectionLineCommonPrincipal
@@ -6795,6 +6801,8 @@ public import FLT.Mazur.SectionCartierBaseOpen
 public import FLT.Mazur.SectionCartierOpenDescent
 public import FLT.Mazur.SectionChartGenerators
 public import FLT.Mazur.SectionCharts
+public import FLT.Mazur.SectionConditionAcyclic
+public import FLT.Mazur.SectionConditionDimension
 public import FLT.Mazur.SectionCoverCoordinates
 public import FLT.Mazur.SectionCoverDiscrepancy
 public import FLT.Mazur.SectionDivisors
