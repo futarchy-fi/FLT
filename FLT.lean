@@ -7598,6 +7598,7 @@ public import FLT.Mazur.VariableHilbertRelationBridge
 public import FLT.Mazur.VariableHilbertRelationBridgeIso
 public import FLT.Mazur.VariableHilbertRelationCover
 public import FLT.Mazur.VariableHilbertSourceIntersection
+public import FLT.Mazur.VariableHilbertSplitChange
 public import FLT.Mazur.VariableTranslatedHilbertChart
 public import FLT.Mazur.VariableTranslatedHilbertOverlap
 public import FLT.Mazur.VariableTranslatedHilbertRepresentation
