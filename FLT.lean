@@ -7340,6 +7340,7 @@ public import FLT.Mazur.WeierstrassDividedInfinityLaurentChart
 public import FLT.Mazur.WeierstrassDividedInfinityLaurentGluing
 public import FLT.Mazur.WeierstrassDividedInitialAtlasIndex
 public import FLT.Mazur.WeierstrassDividedInitialBoundaryGeometry
+public import FLT.Mazur.WeierstrassDividedInitialBranchCompatibility
 public import FLT.Mazur.WeierstrassDividedInitialChartCoverage
 public import FLT.Mazur.WeierstrassDividedInitialCommonBoundaryAlgebra
 public import FLT.Mazur.WeierstrassDividedInitialCommonBoundaryHomExt
