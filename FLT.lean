@@ -5769,6 +5769,7 @@ public import FLT.Mazur.PolygonSplitRefinementCover
 public import FLT.Mazur.PolygonSplitRefinementValue
 public import FLT.Mazur.PolygonSplitTorusBranches
 public import FLT.Mazur.PolygonStageClosedImmersion
+public import FLT.Mazur.PolygonStageCoefficientFamilies
 public import FLT.Mazur.PolygonStageCoefficientKernel
 public import FLT.Mazur.PolygonStageCoefficientNaturality
 public import FLT.Mazur.PolygonStageFlatLayer
