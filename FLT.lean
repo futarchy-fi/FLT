@@ -3963,6 +3963,7 @@ public import FLT.Mazur.FieldCoefficientCohomologyDimension
 public import FLT.Mazur.FieldNonspecialGeometricCriterion
 public import FLT.Mazur.FilteredDiagramSectionDescent
 public import FLT.Mazur.FilteredDiagramUnitDescent
+public import FLT.Mazur.FilteredPoleBasis
 public import FLT.Mazur.FilteredRingFamilyDescent
 public import FLT.Mazur.FilteredRingFamilyElements
 public import FLT.Mazur.FilteredRingFiniteEqualities
