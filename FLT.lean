@@ -8042,6 +8042,7 @@ public import FLT.Mazur.WeierstrassInfinityResidueZero
 public import FLT.Mazur.WeierstrassInfinityReverseCross
 public import FLT.Mazur.WeierstrassInfinitySlopeMap
 public import FLT.Mazur.WeierstrassInfinitySmoothChart
+public import FLT.Mazur.WeierstrassInfinitySmoothReesLift
 public import FLT.Mazur.WeierstrassInfinitySpecializedFactorization
 public import FLT.Mazur.WeierstrassInfinitySquareZero
 public import FLT.Mazur.WeierstrassInfinityTensorBoundary
