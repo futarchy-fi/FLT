@@ -3092,7 +3092,18 @@ public import FLT.Mazur.BaseMarkedHilbertChangePullback
 public import FLT.Mazur.BaseMarkedHilbertChartChange
 public import FLT.Mazur.BaseMarkedHilbertChartPreimage
 public import FLT.Mazur.BaseMarkedHilbertCocycle
+public import FLT.Mazur.BaseMarkedHilbertFullChartPullback
+public import FLT.Mazur.BaseMarkedHilbertFullClass
+public import FLT.Mazur.BaseMarkedHilbertFullGeometry
 public import FLT.Mazur.BaseMarkedHilbertFullIntersection
+public import FLT.Mazur.BaseMarkedHilbertFullLift
+public import FLT.Mazur.BaseMarkedHilbertFullLiftRange
+public import FLT.Mazur.BaseMarkedHilbertFullRelation
+public import FLT.Mazur.BaseMarkedHilbertFullRepresentation
+public import FLT.Mazur.BaseMarkedHilbertFullTestChange
+public import FLT.Mazur.BaseMarkedHilbertFullTestCover
+public import FLT.Mazur.BaseMarkedHilbertFullTestPullback
+public import FLT.Mazur.BaseMarkedHilbertFullUnion
 public import FLT.Mazur.BaseMarkedHilbertGluedBase
 public import FLT.Mazur.BaseMarkedHilbertGluedChange
 public import FLT.Mazur.BaseMarkedHilbertGluedInjectivity
@@ -3101,6 +3112,7 @@ public import FLT.Mazur.BaseMarkedHilbertGluedPicard
 public import FLT.Mazur.BaseMarkedHilbertGluing
 public import FLT.Mazur.BaseMarkedHilbertIdentities
 public import FLT.Mazur.BaseMarkedHilbertIntersection
+public import FLT.Mazur.BaseMarkedHilbertOriginalRelation
 public import FLT.Mazur.BaseMarkedHilbertOverlap
 public import FLT.Mazur.BaseMarkedHilbertOverlapChange
 public import FLT.Mazur.BaseMarkedHilbertSchemeCocycle
@@ -6669,6 +6681,8 @@ public import FLT.Mazur.RelativeIdealSupportRange
 public import FLT.Mazur.RelativeIdealSupportedRestriction
 public import FLT.Mazur.RelativeJetSmoothObstruction
 public import FLT.Mazur.RelativeMarkingSections
+public import FLT.Mazur.RelativeOpenUnion
+public import FLT.Mazur.RelativeOpenUnionGluing
 public import FLT.Mazur.RelativePicardBaseChangeGeometry
 public import FLT.Mazur.RelativePicardCoproductSection
 public import FLT.Mazur.RelativePicardCoverDiagonal
