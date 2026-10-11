@@ -5463,6 +5463,7 @@ public import FLT.Mazur.PolygonCompleteCoefficientAmple
 public import FLT.Mazur.PolygonCompleteCoefficientCoherence
 public import FLT.Mazur.PolygonCompleteCoefficientFinite
 public import FLT.Mazur.PolygonCompleteCoefficientHomExt
+public import FLT.Mazur.PolygonCompleteCoefficientIsomorphism
 public import FLT.Mazur.PolygonCompleteCoefficientLine
 public import FLT.Mazur.PolygonCompleteCoefficientMarkedComparison
 public import FLT.Mazur.PolygonCompleteCoefficientMarkings
