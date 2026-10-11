@@ -3235,6 +3235,7 @@ public import FLT.Mazur.ChowWitnessFiniteCohomology
 public import FLT.Mazur.ChowWitnessGenericRestriction
 public import FLT.Mazur.ChowWitnessSectionsLocalization
 public import FLT.Mazur.ChowWitnessSectionsLocalizationAssembly
+public import FLT.Mazur.ClassifiedGenusOneCartesian
 public import FLT.Mazur.ClassifiedGenusOneFamily
 public import FLT.Mazur.ClopenLimitDescent
 public import FLT.Mazur.ClosedCohomologyFinite
@@ -5372,6 +5373,8 @@ public import FLT.Mazur.PolygonCompleteBoundaryQuotientTransition
 public import FLT.Mazur.PolygonCompleteBoundarySectionProjection
 public import FLT.Mazur.PolygonCompleteBoundarySectionTransport
 public import FLT.Mazur.PolygonCompleteBoundaryTransitionCoherence
+public import FLT.Mazur.PolygonCompleteCartesianMarkings
+public import FLT.Mazur.PolygonCompleteClassifiedFibers
 public import FLT.Mazur.PolygonCompleteClosedFiber
 public import FLT.Mazur.PolygonCompleteClosedGenus
 public import FLT.Mazur.PolygonCompleteClosedH1Scalars
@@ -5385,6 +5388,7 @@ public import FLT.Mazur.PolygonCompleteCoefficientOpens
 public import FLT.Mazur.PolygonCompleteCoefficientReconstruction
 public import FLT.Mazur.PolygonCompleteConstantSections
 public import FLT.Mazur.PolygonCompleteCoordinateEvaluation
+public import FLT.Mazur.PolygonCompleteDivisorRestriction
 public import FLT.Mazur.PolygonCompleteFamilyFlatness
 public import FLT.Mazur.PolygonCompleteFiberMarkings
 public import FLT.Mazur.PolygonCompleteFieldH1
@@ -5393,6 +5397,7 @@ public import FLT.Mazur.PolygonCompleteGenericH1
 public import FLT.Mazur.PolygonCompleteGenericPureDimension
 public import FLT.Mazur.PolygonCompleteGenericRelativeDimension
 public import FLT.Mazur.PolygonCompleteGenericSmooth
+public import FLT.Mazur.PolygonCompleteGenusOneFamily
 public import FLT.Mazur.PolygonCompleteGeometricGenericFiber
 public import FLT.Mazur.PolygonCompleteGeometricallyConnected
 public import FLT.Mazur.PolygonCompleteGeometricallyReduced
@@ -5400,7 +5405,12 @@ public import FLT.Mazur.PolygonCompleteH1Rank
 public import FLT.Mazur.PolygonCompleteH1Reduction
 public import FLT.Mazur.PolygonCompleteLineOriginalReduction
 public import FLT.Mazur.PolygonCompleteLineQuotient
+public import FLT.Mazur.PolygonCompleteMarkedClosedFiber
+public import FLT.Mazur.PolygonCompleteMarkingCartier
+public import FLT.Mazur.PolygonCompleteMarkingDivisor
+public import FLT.Mazur.PolygonCompleteMarkingNaturality
 public import FLT.Mazur.PolygonCompleteMarkingSpecialization
+public import FLT.Mazur.PolygonCompleteMarkingUniqueness
 public import FLT.Mazur.PolygonCompleteNodeAffineCotangentRank
 public import FLT.Mazur.PolygonCompleteNodeAffineIdeal
 public import FLT.Mazur.PolygonCompleteNodeArithmeticAction
@@ -5438,6 +5448,7 @@ public import FLT.Mazur.PolygonCompleteNodeStalkH1Equiv
 public import FLT.Mazur.PolygonCompleteNodeStalkMap
 public import FLT.Mazur.PolygonCompletePrincipalClosedFiber
 public import FLT.Mazur.PolygonCompleteSmoothDimensionOpen
+public import FLT.Mazur.PolygonCompleteStageMarkings
 public import FLT.Mazur.PolygonCompleteStructureCohomology
 public import FLT.Mazur.PolygonCompleteUniversalFunctions
 public import FLT.Mazur.PolygonCompleteZeroParameterFiber
@@ -5740,6 +5751,7 @@ public import FLT.Mazur.PowerSeriesLeadingComposition
 public import FLT.Mazur.PowerSeriesNilpotentHom
 public import FLT.Mazur.PowerSeriesParameterFlatness
 public import FLT.Mazur.PowerSeriesQuotientCompletion
+public import FLT.Mazur.PowerSeriesSchemePointExt
 public import FLT.Mazur.PowerSeriesStageReconstruction
 public import FLT.Mazur.PowerSeriesStageRingLift
 public import FLT.Mazur.PowerSeriesSubstitutionEquiv
