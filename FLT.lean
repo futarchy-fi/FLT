@@ -3089,6 +3089,7 @@ public import FLT.Mazur.BaseMarkedHilbertFullIntersection
 public import FLT.Mazur.BaseMarkedHilbertIdentities
 public import FLT.Mazur.BaseMarkedHilbertIntersection
 public import FLT.Mazur.BaseMarkedHilbertOverlap
+public import FLT.Mazur.BaseMarkedHilbertTriple
 public import FLT.Mazur.BaseOpenHilbertBaseChange
 public import FLT.Mazur.BaseOpenHilbertChartFunctions
 public import FLT.Mazur.BaseOpenHilbertChartSourceSections
