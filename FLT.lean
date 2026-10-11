@@ -5929,6 +5929,7 @@ public import FLT.Mazur.ProperFinitePresentationEnvelope
 public import FLT.Mazur.ProperGeometricAcyclicDirectImage
 public import FLT.Mazur.ProperGeometricRankOneOpen
 public import FLT.Mazur.ProperGlobalDirectImageCharts
+public import FLT.Mazur.ProperGlobalRankOneDivisor
 public import FLT.Mazur.ProperGlobalSectionCartier
 public import FLT.Mazur.ProperGlobalSectionFinite
 public import FLT.Mazur.ProperGlobalSplitDirectImageSections
