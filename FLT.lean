@@ -5371,6 +5371,7 @@ public import FLT.Mazur.PolygonCompleteNodeFirstCotangent
 public import FLT.Mazur.PolygonCompleteNodeGenericDifferentials
 public import FLT.Mazur.PolygonCompleteNodeGenericH1
 public import FLT.Mazur.PolygonCompleteNodeGenericSmooth
+public import FLT.Mazur.PolygonCompleteNodeGenerizationSmooth
 public import FLT.Mazur.PolygonCompleteNodeGermH1Equiv
 public import FLT.Mazur.PolygonCompleteNodeInfinitesimalLift
 public import FLT.Mazur.PolygonCompleteNodeLocalFiniteness
