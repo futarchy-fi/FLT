@@ -7023,6 +7023,7 @@ public import FLT.Mazur.SmoothNonspecialDivisorLift
 public import FLT.Mazur.SmoothNonspecialLineLift
 public import FLT.Mazur.SmoothOpenSectionCartier
 public import FLT.Mazur.SmoothOrderedLineParameters
+public import FLT.Mazur.SmoothOrderedTranslationTests
 public import FLT.Mazur.SmoothOriginalFiberLineParameters
 public import FLT.Mazur.SmoothQuasiFiniteCartierCriterion
 public import FLT.Mazur.SmoothQuasiFiniteIdealCharts
