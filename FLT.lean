@@ -6840,6 +6840,7 @@ public import FLT.Mazur.TwistedSectionPushforward
 public import FLT.Mazur.TwistedSectionPushforwardNaturality
 public import FLT.Mazur.TwistedSectionRegularity
 public import FLT.Mazur.TwoGeneratorRelationBaseChange
+public import FLT.Mazur.TwoGeneratorRelationKernelBaseChange
 public import FLT.Mazur.TwoGeneratorRelationQuotient
 public import FLT.Mazur.TwoGeneratorRelationSequence
 public import FLT.Mazur.TwoGeneratorRelationUnit
