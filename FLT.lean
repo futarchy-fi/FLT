@@ -9531,6 +9531,7 @@ public import FLT.Mazur.WeierstrassYProductAdditionGluing
 public import FLT.Mazur.WeierstrassYProductCover
 public import FLT.Mazur.WeightedPoleCubicNormalization
 public import FLT.Mazur.WeightedPoleMonomials
+public import FLT.Mazur.WeightedPoleNormalForms
 public import FLT.MazurChapter.AdmissibleGroupSchemes
 public import FLT.MazurW
 public import FLT.MazurWOfPrimeTorsion
