@@ -2506,13 +2506,17 @@ public import FLT.Mazur.AdditiveComplexSumHomology
 public import FLT.Mazur.AdditiveComplexSumHomologyInclusion
 public import FLT.Mazur.AdditiveSheafModuleTransport
 public import FLT.Mazur.AdditiveSheafMultiplication
+public import FLT.Mazur.AdicCommonModelFiltration
 public import FLT.Mazur.AdicCompletedDifferentials
 public import FLT.Mazur.AdicCompletionAlgEquiv
+public import FLT.Mazur.AdicCompletionFiltrationTransport
 public import FLT.Mazur.AdicCompletionPositiveEquiv
 public import FLT.Mazur.AdicCompletionPositiveLimit
 public import FLT.Mazur.AdicCompletionPrincipal
 public import FLT.Mazur.AdicCompletionQuotientEquiv
 public import FLT.Mazur.AdicCompletionScalars
+public import FLT.Mazur.AdicCotangentHomComparison
+public import FLT.Mazur.AdicCotangentTransportMap
 public import FLT.Mazur.AdicDerivationCompletion
 public import FLT.Mazur.AdicDerivationExtension
 public import FLT.Mazur.AdicDerivationFiltration
@@ -2524,6 +2528,7 @@ public import FLT.Mazur.AdicFiniteModuleExt
 public import FLT.Mazur.AdicFiniteModuleLift
 public import FLT.Mazur.AdicSectionIsoReconstruction
 public import FLT.Mazur.AdicSeparatedDerivation
+public import FLT.Mazur.AdicSeparatedDifferentials
 public import FLT.Mazur.AffineAdicCohomologyImage
 public import FLT.Mazur.AffineAdicFormalComparison
 public import FLT.Mazur.AffineAnnihilator
@@ -3325,6 +3330,7 @@ public import FLT.Mazur.CyclicProductEndpoints
 public import FLT.Mazur.CyclicProductNormalization
 public import FLT.Mazur.DRFiberClassification
 public import FLT.Mazur.DedekindPointExtension
+public import FLT.Mazur.DerivationAlgEquivTransport
 public import FLT.Mazur.DirectImageBaseChangeAdjoints
 public import FLT.Mazur.DirectImageBaseChangeMate
 public import FLT.Mazur.DirectImageBaseChangeNormalizedPasting
@@ -4708,6 +4714,8 @@ public import FLT.Mazur.LocalClosedFiberTensorComplex
 public import FLT.Mazur.LocalClosedFiberUniversalFunctions
 public import FLT.Mazur.LocalCompletionFaithfullyFlat
 public import FLT.Mazur.LocalCompletionModel
+public import FLT.Mazur.LocalCompletionModelFiltration
+public import FLT.Mazur.LocalCompletionModelModule
 public import FLT.Mazur.LocalCompletionSmoothCriterion
 public import FLT.Mazur.LocalFiberRegularQuotient
 public import FLT.Mazur.LocalFiberTensorInjectivity
@@ -5233,7 +5241,12 @@ public import FLT.Mazur.PolygonCompleteNodeAffineIdeal
 public import FLT.Mazur.PolygonCompleteNodeArithmeticAction
 public import FLT.Mazur.PolygonCompleteNodeArithmeticGerms
 public import FLT.Mazur.PolygonCompleteNodeCompletion
+public import FLT.Mazur.PolygonCompleteNodeCotangentAction
+public import FLT.Mazur.PolygonCompleteNodeCotangentComparison
+public import FLT.Mazur.PolygonCompleteNodeCotangentFiltration
+public import FLT.Mazur.PolygonCompleteNodeFiltration
 public import FLT.Mazur.PolygonCompleteNodeLocalFiniteness
+public import FLT.Mazur.PolygonCompleteNodeModuleFiltration
 public import FLT.Mazur.PolygonCompleteNodeNeighborhood
 public import FLT.Mazur.PolygonCompleteNodeStalkCompletion
 public import FLT.Mazur.PolygonCompleteNodeStalkEvaluation
