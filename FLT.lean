@@ -8941,6 +8941,7 @@ public import FLT.Mazur.WeierstrassSameOutputIntersections
 public import FLT.Mazur.WeierstrassScaledChartComparison
 public import FLT.Mazur.WeierstrassSecantMorphismExt
 public import FLT.Mazur.WeierstrassSecantPairRefinement
+public import FLT.Mazur.WeierstrassSecantSmoothPresentation
 public import FLT.Mazur.WeierstrassSingularJetObstruction
 public import FLT.Mazur.WeierstrassSingularJetTranslation
 public import FLT.Mazur.WeierstrassSlopeLaurentGeometry
