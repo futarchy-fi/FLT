@@ -6543,6 +6543,8 @@ public import FLT.Mazur.RegularCenterGluedLift
 public import FLT.Mazur.RegularCenterOverlap
 public import FLT.Mazur.RegularCenterOverlapScheme
 public import FLT.Mazur.RegularCenterRatioCover
+public import FLT.Mazur.RegularCenterResidueConormal
+public import FLT.Mazur.RegularCenterResidueConormalRatio
 public import FLT.Mazur.RegularCenterRestriction
 public import FLT.Mazur.RegularCenterSeparatedLiftExt
 public import FLT.Mazur.RegularParameterIdeals
@@ -8786,7 +8788,11 @@ public import FLT.Mazur.WeierstrassNormalizedFrameUnique
 public import FLT.Mazur.WeierstrassNormalizedOriginIsomorphism
 public import FLT.Mazur.WeierstrassNormalizedProjectivePoint
 public import FLT.Mazur.WeierstrassOrdinaryCenterIdeal
+public import FLT.Mazur.WeierstrassOrdinaryCenterResidueSlope
 public import FLT.Mazur.WeierstrassOrdinaryChartSpecialization
+public import FLT.Mazur.WeierstrassOrdinaryConormalError
+public import FLT.Mazur.WeierstrassOrdinaryConormalIdeal
+public import FLT.Mazur.WeierstrassOrdinaryConormalPolynomial
 public import FLT.Mazur.WeierstrassOrdinaryDomainLift
 public import FLT.Mazur.WeierstrassOrdinaryFieldAddition
 public import FLT.Mazur.WeierstrassOrdinaryGlobalDomains
@@ -9000,6 +9006,9 @@ public import FLT.Mazur.WeierstrassSmoothZeroGraphs
 public import FLT.Mazur.WeierstrassSmoothZeroSection
 public import FLT.Mazur.WeierstrassSpecSectionMorphism
 public import FLT.Mazur.WeierstrassSpecSections
+public import FLT.Mazur.WeierstrassSplitDepthConormal
+public import FLT.Mazur.WeierstrassSplitDepthExceptionalCharacters
+public import FLT.Mazur.WeierstrassSplitDepthExceptionalScaling
 public import FLT.Mazur.WeierstrassSplitDepthResidueEquation
 public import FLT.Mazur.WeierstrassSplitNodalAffineParameters
 public import FLT.Mazur.WeierstrassSplitNodalChart
