@@ -4673,6 +4673,7 @@ public import FLT.Mazur.LineSheafDualTriangle
 public import FLT.Mazur.LineSheafEndomorphismSheaf
 public import FLT.Mazur.LineSheafEvaluationBalance
 public import FLT.Mazur.LineSheafGlobalEndomorphisms
+public import FLT.Mazur.LineSheafLimitDescent
 public import FLT.Mazur.LineSheafLocalEndomorphisms
 public import FLT.Mazur.LineSheafScalarAutomorphisms
 public import FLT.Mazur.LineSheafSectionRigidity
