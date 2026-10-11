@@ -5371,6 +5371,8 @@ public import FLT.Mazur.OrderedProjectiveHilbertNaturality
 public import FLT.Mazur.OrderedProjectiveHilbertParameter
 public import FLT.Mazur.OrderedRelativeIdealBaseChange
 public import FLT.Mazur.OrderedRelativeIdealFamily
+public import FLT.Mazur.OrderedTranslationAffineParameterCover
+public import FLT.Mazur.OrderedTranslationLocallyRingedMap
 public import FLT.Mazur.OrderedTranslationOriginalFiber
 public import FLT.Mazur.OriginalFamilyIdentityComparison
 public import FLT.Mazur.OriginalFamilySectionComposition
@@ -5782,6 +5784,7 @@ public import FLT.Mazur.PolygonOriginalNodeClosed
 public import FLT.Mazur.PolygonOriginalNodePoint
 public import FLT.Mazur.PolygonOriginalStageAdicSquare
 public import FLT.Mazur.PolygonParameterProjectionComposition
+public import FLT.Mazur.PolygonParameterizedHomExt
 public import FLT.Mazur.PolygonPinchingAffineBaseChange
 public import FLT.Mazur.PolygonPinchingDiagram
 public import FLT.Mazur.PolygonPinchingFlatBaseChange
@@ -6239,6 +6242,8 @@ public import FLT.Mazur.ProjectiveLineMarkedTransition
 public import FLT.Mazur.ProjectiveLineOpenChartExclusion
 public import FLT.Mazur.ProjectiveLineProductCharts
 public import FLT.Mazur.ProjectiveLineProductOverlap
+public import FLT.Mazur.ProjectiveLineProductTorusExt
+public import FLT.Mazur.ProjectiveLineProductTorusRestriction
 public import FLT.Mazur.ProjectiveLineRightCanonicalRatios
 public import FLT.Mazur.ProjectiveLineScaledAffineOverlap
 public import FLT.Mazur.ProjectiveLineScaledReciprocalGluing
@@ -7196,7 +7201,11 @@ public import FLT.Mazur.SmoothQuasiFiniteCartierCriterion
 public import FLT.Mazur.SmoothQuasiFiniteIdealCharts
 public import FLT.Mazur.SmoothRelativeCotangentRank
 public import FLT.Mazur.SmoothSectionCartier
+public import FLT.Mazur.SmoothTranslationChartOrbitFibers
+public import FLT.Mazur.SmoothTranslationChartOrbitHomeomorph
 public import FLT.Mazur.SmoothTranslationGeometricClass
+public import FLT.Mazur.SmoothTranslationOrbitCover
+public import FLT.Mazur.SmoothTranslationOrbitOpen
 public import FLT.Mazur.SpecCartesianAlgebraPushout
 public import FLT.Mazur.SpecChartIdealPreimage
 public import FLT.Mazur.SpectrumFieldCohomologyCoordinates
@@ -7465,6 +7474,12 @@ public import FLT.Mazur.ValuationProjectiveNormalization
 public import FLT.Mazur.ValuationRingCompleteModel
 public import FLT.Mazur.ValuationRingHenselianModel
 public import FLT.Mazur.ValuationRingModel
+public import FLT.Mazur.VariableHilbertChartRelation
+public import FLT.Mazur.VariableHilbertChartRelationOperations
+public import FLT.Mazur.VariableHilbertChartRelationPullback
+public import FLT.Mazur.VariableHilbertIntersectionBaseChange
+public import FLT.Mazur.VariableHilbertParameterOrbitDescent
+public import FLT.Mazur.VariableHilbertRelationBridge
 public import FLT.Mazur.VariableHilbertSourceIntersection
 public import FLT.Mazur.VariableTranslatedHilbertChart
 public import FLT.Mazur.VariableTranslatedHilbertOverlap
@@ -7787,6 +7802,7 @@ public import FLT.Mazur.WeierstrassDividedGlobalCoefficientAction
 public import FLT.Mazur.WeierstrassDividedGlobalCoefficientActionLaws
 public import FLT.Mazur.WeierstrassDividedGlobalCoefficientCartesian
 public import FLT.Mazur.WeierstrassDividedGlobalCoefficientFaithful
+public import FLT.Mazur.WeierstrassDividedGlobalCoefficientOverAction
 public import FLT.Mazur.WeierstrassDividedGlobalCoefficientOverPoints
 public import FLT.Mazur.WeierstrassDividedGlobalCoefficientSmooth
 public import FLT.Mazur.WeierstrassDividedGlobalCoefficientSmoothOrbit
@@ -7950,6 +7966,7 @@ public import FLT.Mazur.WeierstrassDividedOrderedAdjacentComponents
 public import FLT.Mazur.WeierstrassDividedOrderedPairCoverage
 public import FLT.Mazur.WeierstrassDividedOrderedRetainedSections
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityAction
+public import FLT.Mazur.WeierstrassDividedPositiveEqualityActionComparison
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityAtlasCompatibility
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityAtlasFamily
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityAtlasFullCompatibility
@@ -7966,6 +7983,9 @@ public import FLT.Mazur.WeierstrassDividedPositiveEqualityCycleCoverage
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityCycleEndCharts
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityCycleIndices
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityCycleRanges
+public import FLT.Mazur.WeierstrassDividedPositiveEqualityCyclicTorusAction
+public import FLT.Mazur.WeierstrassDividedPositiveEqualityExteriorAction
+public import FLT.Mazur.WeierstrassDividedPositiveEqualityExteriorScaling
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityFieldPolygon
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityGeometricFiber
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityGlobalComponentRestrictions
