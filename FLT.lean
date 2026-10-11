@@ -6729,6 +6729,7 @@ public import FLT.Mazur.RelativeRelationQuotientSheaf
 public import FLT.Mazur.RelativeRelationRingedCoequalizer
 public import FLT.Mazur.RelativeRelationRingedCofork
 public import FLT.Mazur.RelativeRelationRingedDescent
+public import FLT.Mazur.RelativeRelationSplitQuotient
 public import FLT.Mazur.RelativeSectionAmpleBaseChange
 public import FLT.Mazur.RelativeSectionAmpleLocality
 public import FLT.Mazur.RelativeSerreAffineAcyclic
@@ -7608,6 +7609,12 @@ public import FLT.Mazur.VariableHilbertRelationBridge
 public import FLT.Mazur.VariableHilbertRelationBridgeIso
 public import FLT.Mazur.VariableHilbertRelationCover
 public import FLT.Mazur.VariableHilbertSourceIntersection
+public import FLT.Mazur.VariableHilbertSplitChange
+public import FLT.Mazur.VariableHilbertSplitFunctions
+public import FLT.Mazur.VariableHilbertSplitNeighborhood
+public import FLT.Mazur.VariableHilbertSplitQuotient
+public import FLT.Mazur.VariableHilbertSplitScheme
+public import FLT.Mazur.VariableHilbertSplitSheafQuotient
 public import FLT.Mazur.VariableTranslatedHilbertChart
 public import FLT.Mazur.VariableTranslatedHilbertOverlap
 public import FLT.Mazur.VariableTranslatedHilbertRepresentation
