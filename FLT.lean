@@ -2529,6 +2529,7 @@ public import FLT.Mazur.AdicFiniteGenerationLifting
 public import FLT.Mazur.AdicFiniteKernelEquiv
 public import FLT.Mazur.AdicFiniteModuleExt
 public import FLT.Mazur.AdicFiniteModuleLift
+public import FLT.Mazur.AdicPresentationFirstCotangent
 public import FLT.Mazur.AdicSectionIsoReconstruction
 public import FLT.Mazur.AdicSeparatedDerivation
 public import FLT.Mazur.AdicSeparatedDifferentials
