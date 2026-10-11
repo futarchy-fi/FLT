@@ -3899,6 +3899,7 @@ public import FLT.Mazur.FiniteAffineLineCover
 public import FLT.Mazur.FiniteAffineOpenClosedDescent
 public import FLT.Mazur.FiniteAffineProperIntegerDescent
 public import FLT.Mazur.FiniteArrowIntegerModel
+public import FLT.Mazur.FiniteCartierPointFactorization
 public import FLT.Mazur.FiniteCechCyclesScalars
 public import FLT.Mazur.FiniteCechTermScalars
 public import FLT.Mazur.FiniteClosedIdealSection
