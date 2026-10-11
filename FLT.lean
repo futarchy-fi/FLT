@@ -7780,6 +7780,7 @@ public import FLT.Mazur.WeierstrassAffineProductDifference
 public import FLT.Mazur.WeierstrassAffineProductSwap
 public import FLT.Mazur.WeierstrassAffineRelativeSmoothCriterion
 public import FLT.Mazur.WeierstrassAffineRelativeTangent
+public import FLT.Mazur.WeierstrassAffineSmoothDiscriminant
 public import FLT.Mazur.WeierstrassAffineTripleDescent
 public import FLT.Mazur.WeierstrassAffineVariableChangeEquiv
 public import FLT.Mazur.WeierstrassAffineVariableChangeMap
