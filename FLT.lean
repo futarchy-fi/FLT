@@ -8568,6 +8568,7 @@ public import FLT.Mazur.WeierstrassLeftSmoothFractionActionRatios
 public import FLT.Mazur.WeierstrassLeftSmoothGlobalCenter
 public import FLT.Mazur.WeierstrassLeftSmoothHorizontalActionPresentation
 public import FLT.Mazur.WeierstrassLeftSmoothHorizontalResidueAction
+public import FLT.Mazur.WeierstrassLeftSmoothHorizontalResidueFactor
 public import FLT.Mazur.WeierstrassLeftSmoothIdentity
 public import FLT.Mazur.WeierstrassLeftSmoothInfinityIdentity
 public import FLT.Mazur.WeierstrassLeftSmoothInputAddition
@@ -9038,6 +9039,7 @@ public import FLT.Mazur.WeierstrassSplitDepthConormal
 public import FLT.Mazur.WeierstrassSplitDepthExceptionalBranches
 public import FLT.Mazur.WeierstrassSplitDepthExceptionalCharacters
 public import FLT.Mazur.WeierstrassSplitDepthExceptionalScaling
+public import FLT.Mazur.WeierstrassSplitDepthHorizontalOutputUnit
 public import FLT.Mazur.WeierstrassSplitDepthNormalizedFractionAction
 public import FLT.Mazur.WeierstrassSplitDepthOriginalFractionAction
 public import FLT.Mazur.WeierstrassSplitDepthResidueEquation
