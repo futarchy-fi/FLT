@@ -2509,6 +2509,7 @@ public import FLT.Mazur.AdicCompletionPrincipal
 public import FLT.Mazur.AdicCompletionQuotientEquiv
 public import FLT.Mazur.AdicCompletionScalars
 public import FLT.Mazur.AdicDerivationCompletion
+public import FLT.Mazur.AdicDerivationExtension
 public import FLT.Mazur.AdicDerivationFiltration
 public import FLT.Mazur.AdicDerivationNaturality
 public import FLT.Mazur.AdicDerivationQuotient
