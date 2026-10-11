@@ -5294,6 +5294,7 @@ public import FLT.Mazur.PolygonNodalCore
 public import FLT.Mazur.PolygonNodeAffineCharts
 public import FLT.Mazur.PolygonNodeBranchIntersection
 public import FLT.Mazur.PolygonNodeBranches
+public import FLT.Mazur.PolygonNodeChartNeighborhood
 public import FLT.Mazur.PolygonNodeChartScalars
 public import FLT.Mazur.PolygonNodeCompletionCriterion
 public import FLT.Mazur.PolygonNodeDenominatorCover
