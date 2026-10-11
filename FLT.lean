@@ -6780,6 +6780,7 @@ public import FLT.Mazur.RelativePinchingDescent
 public import FLT.Mazur.RelativePinchingLocalDescent
 public import FLT.Mazur.RelativePinchingNeighborhoods
 public import FLT.Mazur.RelativeRankOneDivisorUniqueness
+public import FLT.Mazur.RelativeRelationFpqcInvariantQuotient
 public import FLT.Mazur.RelativeRelationFpqcOrbitComparison
 public import FLT.Mazur.RelativeRelationFpqcSectionComparison
 public import FLT.Mazur.RelativeRelationInvariantAffineComparison
