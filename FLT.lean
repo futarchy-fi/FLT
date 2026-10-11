@@ -7631,6 +7631,7 @@ public import FLT.Mazur.WeierstrassDividedFirstFractionUnique
 public import FLT.Mazur.WeierstrassDividedFirstInfinityAction
 public import FLT.Mazur.WeierstrassDividedFirstInfinityCenter
 public import FLT.Mazur.WeierstrassDividedFirstOutputCover
+public import FLT.Mazur.WeierstrassDividedFirstSuccessorAction
 public import FLT.Mazur.WeierstrassDividedFirstUnitAction
 public import FLT.Mazur.WeierstrassDividedFullResidueAtlas
 public import FLT.Mazur.WeierstrassDividedGlobalConicCoordinates
