@@ -7215,6 +7215,7 @@ public import FLT.Mazur.SmoothTranslationInvariantOpenDomains
 public import FLT.Mazur.SmoothTranslationInvariantOpenFunctor
 public import FLT.Mazur.SmoothTranslationInvariantSectionComparison
 public import FLT.Mazur.SmoothTranslationInvariantSheafComparison
+public import FLT.Mazur.SmoothTranslationLocallyRingedComparison
 public import FLT.Mazur.SmoothTranslationNeighborhoodDomains
 public import FLT.Mazur.SmoothTranslationOrbitCover
 public import FLT.Mazur.SmoothTranslationOrbitOpen
