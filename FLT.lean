@@ -6549,8 +6549,11 @@ public import FLT.Mazur.RegularCenterConormalQuotient
 public import FLT.Mazur.RegularCenterConormalRatio
 public import FLT.Mazur.RegularCenterDoubleOverlap
 public import FLT.Mazur.RegularCenterGluedLift
+public import FLT.Mazur.RegularCenterOriginalFractionRatios
 public import FLT.Mazur.RegularCenterOverlap
 public import FLT.Mazur.RegularCenterOverlapScheme
+public import FLT.Mazur.RegularCenterQuotientLinear
+public import FLT.Mazur.RegularCenterQuotientOpenRatios
 public import FLT.Mazur.RegularCenterRatioCover
 public import FLT.Mazur.RegularCenterResidueConormal
 public import FLT.Mazur.RegularCenterResidueConormalRatio
@@ -8561,7 +8564,10 @@ public import FLT.Mazur.WeierstrassLeftSmoothFiveRegularSectionDescent
 public import FLT.Mazur.WeierstrassLeftSmoothFormulaComparison
 public import FLT.Mazur.WeierstrassLeftSmoothFractionActionCover
 public import FLT.Mazur.WeierstrassLeftSmoothFractionActionGluing
+public import FLT.Mazur.WeierstrassLeftSmoothFractionActionRatios
 public import FLT.Mazur.WeierstrassLeftSmoothGlobalCenter
+public import FLT.Mazur.WeierstrassLeftSmoothHorizontalActionPresentation
+public import FLT.Mazur.WeierstrassLeftSmoothHorizontalResidueAction
 public import FLT.Mazur.WeierstrassLeftSmoothIdentity
 public import FLT.Mazur.WeierstrassLeftSmoothInfinityIdentity
 public import FLT.Mazur.WeierstrassLeftSmoothInputAddition
@@ -9024,9 +9030,13 @@ public import FLT.Mazur.WeierstrassSmoothZeroGraphs
 public import FLT.Mazur.WeierstrassSmoothZeroSection
 public import FLT.Mazur.WeierstrassSpecSectionMorphism
 public import FLT.Mazur.WeierstrassSpecSections
+public import FLT.Mazur.WeierstrassSplitDepthAffineParameters
 public import FLT.Mazur.WeierstrassSplitDepthConormal
+public import FLT.Mazur.WeierstrassSplitDepthExceptionalBranches
 public import FLT.Mazur.WeierstrassSplitDepthExceptionalCharacters
 public import FLT.Mazur.WeierstrassSplitDepthExceptionalScaling
+public import FLT.Mazur.WeierstrassSplitDepthNormalizedFractionAction
+public import FLT.Mazur.WeierstrassSplitDepthOriginalFractionAction
 public import FLT.Mazur.WeierstrassSplitDepthResidueEquation
 public import FLT.Mazur.WeierstrassSplitNodalAffineParameters
 public import FLT.Mazur.WeierstrassSplitNodalChart
