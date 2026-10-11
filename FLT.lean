@@ -7174,6 +7174,7 @@ public import FLT.Mazur.ValuationRingModel
 public import FLT.Mazur.VeryAmpleAffineSections
 public import FLT.Mazur.VeryAmplePresentationBaseChange
 public import FLT.Mazur.WeierstrassAdditionAffineCoverage
+public import FLT.Mazur.WeierstrassAdditionCenterContainment
 public import FLT.Mazur.WeierstrassAdditionChartCompatibility
 public import FLT.Mazur.WeierstrassAdditionInfinitySections
 public import FLT.Mazur.WeierstrassAdditionInputCharts
