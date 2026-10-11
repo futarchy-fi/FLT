@@ -9012,6 +9012,7 @@ public import FLT.Mazur.WeierstrassSplitNodalSmoothGroup
 public import FLT.Mazur.WeierstrassSplitNodalSmoothGroupComparison
 public import FLT.Mazur.WeierstrassSplitNodalTangentCharacters
 public import FLT.Mazur.WeierstrassSplitNodalTangentChart
+public import FLT.Mazur.WeierstrassSplitNodalTangentEvaluation
 public import FLT.Mazur.WeierstrassSplitNodalTangentLift
 public import FLT.Mazur.WeierstrassSplitNodalTangentSlope
 public import FLT.Mazur.WeierstrassSplitNodalTorus
