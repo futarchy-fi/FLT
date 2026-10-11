@@ -7921,6 +7921,16 @@ public import FLT.Mazur.WeierstrassDividedSkippedChartSupport
 public import FLT.Mazur.WeierstrassDividedSkippedTensorIntersection
 public import FLT.Mazur.WeierstrassDividedSmoothCoefficientEmbedding
 public import FLT.Mazur.WeierstrassDividedSuccessiveOriginalY
+public import FLT.Mazur.WeierstrassDividedSuccessorActionAtlas
+public import FLT.Mazur.WeierstrassDividedSuccessorActionInput
+public import FLT.Mazur.WeierstrassDividedSuccessorAtlasCoordinates
+public import FLT.Mazur.WeierstrassDividedSuccessorExteriorAction
+public import FLT.Mazur.WeierstrassDividedSuccessorExteriorAtlas
+public import FLT.Mazur.WeierstrassDividedSuccessorInfinityAction
+public import FLT.Mazur.WeierstrassDividedSuccessorInfinityCenter
+public import FLT.Mazur.WeierstrassDividedSuccessorOutputCover
+public import FLT.Mazur.WeierstrassDividedSuccessorRetainedCoordinates
+public import FLT.Mazur.WeierstrassDividedSuccessorUnitAction
 public import FLT.Mazur.WeierstrassDividedTensorAtlasComparison
 public import FLT.Mazur.WeierstrassDividedTensorYBoundary
 public import FLT.Mazur.WeierstrassDividedTerminalAllExteriorNodes
@@ -8873,6 +8883,7 @@ public import FLT.Mazur.WeierstrassSuccessiveReesSchemeOverlap
 public import FLT.Mazur.WeierstrassSuccessiveReplacementAtlas
 public import FLT.Mazur.WeierstrassSuccessiveReplacementGluing
 public import FLT.Mazur.WeierstrassSuccessiveReplacementReassociation
+public import FLT.Mazur.WeierstrassSuccessiveRetainedCenter
 public import FLT.Mazur.WeierstrassSuccessiveScaleEmbedding
 public import FLT.Mazur.WeierstrassSuccessiveScaleFractions
 public import FLT.Mazur.WeierstrassSuccessiveScaleReesChart
@@ -8887,6 +8898,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXConicPunctureDescent
 public import FLT.Mazur.WeierstrassSuccessiveXConicPunctureInclusion
 public import FLT.Mazur.WeierstrassSuccessiveXConicPuncturedParameters
 public import FLT.Mazur.WeierstrassSuccessiveXContraction
+public import FLT.Mazur.WeierstrassSuccessiveXDeeperCenter
 public import FLT.Mazur.WeierstrassSuccessiveXDepthComparison
 public import FLT.Mazur.WeierstrassSuccessiveXDepthTensorOverlap
 public import FLT.Mazur.WeierstrassSuccessiveXFlat
