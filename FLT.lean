@@ -3530,6 +3530,7 @@ public import FLT.Mazur.DivisorComplementLeadingProduct
 public import FLT.Mazur.DivisorComplementLinear
 public import FLT.Mazur.DivisorComponentDegree
 public import FLT.Mazur.DivisorIdealEvaluation
+public import FLT.Mazur.DivisorIdealFunctionalSection
 public import FLT.Mazur.DivisorIdealStalkExt
 public import FLT.Mazur.DivisorInvertibleSheaf
 public import FLT.Mazur.DivisorLeadingNonzeroProduct
@@ -3976,6 +3977,7 @@ public import FLT.Mazur.FieldNonspecialGeometricCriterion
 public import FLT.Mazur.FilteredDiagramSectionDescent
 public import FLT.Mazur.FilteredDiagramUnitDescent
 public import FLT.Mazur.FilteredPoleBasis
+public import FLT.Mazur.FilteredPoleInfiniteIndependence
 public import FLT.Mazur.FilteredPoleLeadingCoefficient
 public import FLT.Mazur.FilteredRingFamilyDescent
 public import FLT.Mazur.FilteredRingFamilyElements
@@ -4762,6 +4764,7 @@ public import FLT.Mazur.IdealAdicUniformQuotientVanishing
 public import FLT.Mazur.IdealCartierNeighborhood
 public import FLT.Mazur.IdealCohomologyAmpleAnyBase
 public import FLT.Mazur.IdealCohomologyAmpleCriterion
+public import FLT.Mazur.IdealComplementFunctionExtension
 public import FLT.Mazur.IdealConditionAcyclic
 public import FLT.Mazur.IdealFamilyIsomorphism
 public import FLT.Mazur.IdealIsomorphismExtension
@@ -5731,10 +5734,13 @@ public import FLT.Mazur.PolygonCompleteNodeStalkMap
 public import FLT.Mazur.PolygonCompleteOriginalSectionReconstruction
 public import FLT.Mazur.PolygonCompletePointAcyclic
 public import FLT.Mazur.PolygonCompletePointAffineMorphism
+public import FLT.Mazur.PolygonCompletePointCoordinateInjective
+public import FLT.Mazur.PolygonCompletePointCoordinateRange
 public import FLT.Mazur.PolygonCompletePointCubicRelation
 public import FLT.Mazur.PolygonCompletePointDimensions
 public import FLT.Mazur.PolygonCompletePointExactMonomials
 public import FLT.Mazur.PolygonCompletePointFunctionDimensions
+public import FLT.Mazur.PolygonCompletePointFunctionNumerators
 public import FLT.Mazur.PolygonCompletePointLeadingClasses
 public import FLT.Mazur.PolygonCompletePointLeadingProducts
 public import FLT.Mazur.PolygonCompletePointMonomialBasis
@@ -7732,6 +7738,8 @@ public import FLT.Mazur.WeierstrassAffineChartDense
 public import FLT.Mazur.WeierstrassAffineCoordinateFlat
 public import FLT.Mazur.WeierstrassAffineEquationEvaluation
 public import FLT.Mazur.WeierstrassAffineEquationRigidity
+public import FLT.Mazur.WeierstrassAffineEvaluationInjective
+public import FLT.Mazur.WeierstrassAffineEvaluationRange
 public import FLT.Mazur.WeierstrassAffineInputFactorization
 public import FLT.Mazur.WeierstrassAffineInputTripleDomain
 public import FLT.Mazur.WeierstrassAffineInputTripleGlobal
@@ -9214,6 +9222,8 @@ public import FLT.Mazur.WeierstrassSmoothHorizontalCyclicParameter
 public import FLT.Mazur.WeierstrassSmoothHorizontalFactorGeometry
 public import FLT.Mazur.WeierstrassSmoothHorizontalFactorOrder
 public import FLT.Mazur.WeierstrassSmoothHorizontalGlobalAction
+public import FLT.Mazur.WeierstrassSmoothHorizontalIncidenceUnits
+public import FLT.Mazur.WeierstrassSmoothHorizontalIntegralActionSource
 public import FLT.Mazur.WeierstrassSmoothHorizontalLaurentEvaluation
 public import FLT.Mazur.WeierstrassSmoothHorizontalPairDensity
 public import FLT.Mazur.WeierstrassSmoothHorizontalPairExt
@@ -9252,7 +9262,11 @@ public import FLT.Mazur.WeierstrassSmoothProductOpen
 public import FLT.Mazur.WeierstrassSmoothProjectiveGroup
 public import FLT.Mazur.WeierstrassSmoothReciprocalTriple
 public import FLT.Mazur.WeierstrassSmoothSevenPoints
+public import FLT.Mazur.WeierstrassSmoothSuccessiveIntegralTransport
+public import FLT.Mazur.WeierstrassSmoothSuccessiveResidueInputs
+public import FLT.Mazur.WeierstrassSmoothSuccessiveResidueOutputs
 public import FLT.Mazur.WeierstrassSmoothSuccessiveTensorInput
+public import FLT.Mazur.WeierstrassSmoothSuccessiveTransportedTensorInput
 public import FLT.Mazur.WeierstrassSmoothTransportedComparison
 public import FLT.Mazur.WeierstrassSmoothTransportedCover
 public import FLT.Mazur.WeierstrassSmoothTransportedOutputRegular
@@ -9371,6 +9385,8 @@ public import FLT.Mazur.WeierstrassSuccessiveXGluing
 public import FLT.Mazur.WeierstrassSuccessiveXHorizontalLocalization
 public import FLT.Mazur.WeierstrassSuccessiveXHorizontalMaps
 public import FLT.Mazur.WeierstrassSuccessiveXHorizontalScheme
+public import FLT.Mazur.WeierstrassSuccessiveXIncidenceExt
+public import FLT.Mazur.WeierstrassSuccessiveXIncidenceTransport
 public import FLT.Mazur.WeierstrassSuccessiveXLocalization
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleComponents
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleConic
@@ -9549,6 +9565,7 @@ public import FLT.Mazur.WeierstrassYProductAdditionGluing
 public import FLT.Mazur.WeierstrassYProductCover
 public import FLT.Mazur.WeightedPoleCubicNormalization
 public import FLT.Mazur.WeightedPoleMonomials
+public import FLT.Mazur.WeightedPoleNormalForms
 public import FLT.MazurChapter.AdmissibleGroupSchemes
 public import FLT.MazurW
 public import FLT.MazurWOfPrimeTorsion
