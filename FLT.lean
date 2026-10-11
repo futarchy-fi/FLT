@@ -8116,6 +8116,7 @@ public import FLT.Mazur.WeierstrassDividedOlderGlobalParameterSections
 public import FLT.Mazur.WeierstrassDividedOlderGlobalResidueNodes
 public import FLT.Mazur.WeierstrassDividedOlderGlobalSectionExterior
 public import FLT.Mazur.WeierstrassDividedOlderGlobalSections
+public import FLT.Mazur.WeierstrassDividedOlderGlobalStep
 public import FLT.Mazur.WeierstrassDividedOlderGlobalTensorCharts
 public import FLT.Mazur.WeierstrassDividedOlderGlobalZeroBoundaries
 public import FLT.Mazur.WeierstrassDividedOlderGlobalZeroComponents
