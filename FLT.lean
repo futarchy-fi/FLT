@@ -2583,6 +2583,7 @@ public import FLT.Mazur.AdicPresentationDerivation
 public import FLT.Mazur.AdicPresentationFirstCotangent
 public import FLT.Mazur.AdicPresentationScalarTowers
 public import FLT.Mazur.AdicSectionIsoReconstruction
+public import FLT.Mazur.AdicSectionProjectionExt
 public import FLT.Mazur.AdicSeparatedDerivation
 public import FLT.Mazur.AdicSeparatedDifferentials
 public import FLT.Mazur.AdicSquareZeroCompletion
