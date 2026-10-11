@@ -6877,6 +6877,7 @@ public import FLT.Mazur.SmoothCurveFiberCartier
 public import FLT.Mazur.SmoothCurvePicardDegree
 public import FLT.Mazur.SmoothDimension
 public import FLT.Mazur.SmoothDimensionBound
+public import FLT.Mazur.SmoothFieldCotangentRank
 public import FLT.Mazur.SmoothFiniteCoefficientBranch
 public import FLT.Mazur.SmoothFiniteFlatIdealCharts
 public import FLT.Mazur.SmoothFiniteSubgroupAmple
