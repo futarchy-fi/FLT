@@ -2532,6 +2532,7 @@ public import FLT.Mazur.AffineChartSectionLocalization
 public import FLT.Mazur.AffineChartSourceScalars
 public import FLT.Mazur.AffineClosedLimitDescent
 public import FLT.Mazur.AffineClosedModuleDescent
+public import FLT.Mazur.AffineClosedPointQuotient
 public import FLT.Mazur.AffineClosureFiniteness
 public import FLT.Mazur.AffineCoalgebraDescentRecognition
 public import FLT.Mazur.AffineCoalgebraSheafNaturality
@@ -5112,6 +5113,9 @@ public import FLT.Mazur.PolygonActionSmooth
 public import FLT.Mazur.PolygonActionTranslation
 public import FLT.Mazur.PolygonActionUnit
 public import FLT.Mazur.PolygonAdicQuotientGrading
+public import FLT.Mazur.PolygonArithmeticNodeNeighborhood
+public import FLT.Mazur.PolygonArithmeticNodePoint
+public import FLT.Mazur.PolygonArithmeticNodeTransition
 public import FLT.Mazur.PolygonAtlas
 public import FLT.Mazur.PolygonAtlasCocone
 public import FLT.Mazur.PolygonAtlasSmoothLocus
@@ -5184,6 +5188,8 @@ public import FLT.Mazur.PolygonCompleteFamilyFlatness
 public import FLT.Mazur.PolygonCompleteLineOriginalReduction
 public import FLT.Mazur.PolygonCompleteLineQuotient
 public import FLT.Mazur.PolygonCompleteMarkingSpecialization
+public import FLT.Mazur.PolygonCompleteNodeAffineIdeal
+public import FLT.Mazur.PolygonCompleteNodeNeighborhood
 public import FLT.Mazur.PolygonComponentDistinct
 public import FLT.Mazur.PolygonComponentImages
 public import FLT.Mazur.PolygonConnected
@@ -5254,6 +5260,7 @@ public import FLT.Mazur.PolygonInfinitesimalAtlas
 public import FLT.Mazur.PolygonInfinitesimalBaseChange
 public import FLT.Mazur.PolygonInfinitesimalBoundaryComparison
 public import FLT.Mazur.PolygonInfinitesimalCartier
+public import FLT.Mazur.PolygonInfinitesimalChartRestriction
 public import FLT.Mazur.PolygonInfinitesimalCoefficientDiagram
 public import FLT.Mazur.PolygonInfinitesimalCoefficientTransport
 public import FLT.Mazur.PolygonInfinitesimalDiagram
@@ -5287,6 +5294,7 @@ public import FLT.Mazur.PolygonNodalCore
 public import FLT.Mazur.PolygonNodeAffineCharts
 public import FLT.Mazur.PolygonNodeBranchIntersection
 public import FLT.Mazur.PolygonNodeBranches
+public import FLT.Mazur.PolygonNodeChartNeighborhood
 public import FLT.Mazur.PolygonNodeChartScalars
 public import FLT.Mazur.PolygonNodeCompletionCriterion
 public import FLT.Mazur.PolygonNodeDenominatorCover
@@ -5333,6 +5341,8 @@ public import FLT.Mazur.PolygonOriginalAffineTransition
 public import FLT.Mazur.PolygonOriginalBoundarySectionReconstruction
 public import FLT.Mazur.PolygonOriginalCompletionAlgebra
 public import FLT.Mazur.PolygonOriginalNeighborhoodTransition
+public import FLT.Mazur.PolygonOriginalNodeClosed
+public import FLT.Mazur.PolygonOriginalNodePoint
 public import FLT.Mazur.PolygonOriginalStageAdicSquare
 public import FLT.Mazur.PolygonPinchingAffineBaseChange
 public import FLT.Mazur.PolygonPinchingDiagram
@@ -5373,6 +5383,7 @@ public import FLT.Mazur.PolygonSmoothingOverlapGraph
 public import FLT.Mazur.PolygonSmoothingPunctureBaseChange
 public import FLT.Mazur.PolygonSmoothingQuadraticModel
 public import FLT.Mazur.PolygonSmoothingRing
+public import FLT.Mazur.PolygonSmoothingRingMap
 public import FLT.Mazur.PolygonSmoothingSingularSupport
 public import FLT.Mazur.PolygonSmoothingSpecialBranches
 public import FLT.Mazur.PolygonSmoothingSpecialFiber
