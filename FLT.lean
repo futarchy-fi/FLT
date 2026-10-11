@@ -5313,6 +5313,7 @@ public import FLT.Mazur.PolygonNodeIncidence
 public import FLT.Mazur.PolygonNodeLocalization
 public import FLT.Mazur.PolygonNodeLocus
 public import FLT.Mazur.PolygonNodeNeighborhoodScalars
+public import FLT.Mazur.PolygonNodeNeighborhoodTransition
 public import FLT.Mazur.PolygonNodePresentation
 public import FLT.Mazur.PolygonNodeRingComparison
 public import FLT.Mazur.PolygonNodeScalarExtension
