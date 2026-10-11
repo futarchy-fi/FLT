@@ -7040,6 +7040,7 @@ public import FLT.Mazur.UnpointedAcyclicAbelInjectivity
 public import FLT.Mazur.UnpointedAcyclicAbelSheafIso
 public import FLT.Mazur.UnpointedAcyclicFppfDetection
 public import FLT.Mazur.UnpointedAcyclicFppfImageEquivalence
+public import FLT.Mazur.UnpointedAcyclicOpenDivisor
 public import FLT.Mazur.UnpointedAcyclicOpenPointedCompatibility
 public import FLT.Mazur.UnpointedLocalAcyclicDivisorCover
 public import FLT.Mazur.UnpointedLocalAcyclicEffectiveDescent
