@@ -4042,6 +4042,7 @@ public import FLT.Mazur.FiniteTypeBaseIndependentLineModel
 public import FLT.Mazur.FiniteTypeDiagramRefinement
 public import FLT.Mazur.FiniteTypeDiagramStages
 public import FLT.Mazur.FiniteTypePointedAbelFppfIso
+public import FLT.Mazur.FiniteTypePointedFppfAcyclicOpen
 public import FLT.Mazur.FiniteTypePolynomialArrows
 public import FLT.Mazur.FiniteTypePrincipalApproximation
 public import FLT.Mazur.FiniteTypePrincipalComposition
