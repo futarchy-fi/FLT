@@ -4625,6 +4625,7 @@ public import FLT.Mazur.IncreasingCechZeroSections
 public import FLT.Mazur.InfinitesimalClosedFiberFunctions
 public import FLT.Mazur.InfinitesimalCoefficientLength
 public import FLT.Mazur.InfinitesimalConormalEquiv
+public import FLT.Mazur.InfinitesimalCotangentDerivation
 public import FLT.Mazur.InfinitesimalStructureProjection
 public import FLT.Mazur.InjectiveHorseshoe
 public import FLT.Mazur.IntegerModelAffineProperDescent
