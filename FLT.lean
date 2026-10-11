@@ -6980,6 +6980,7 @@ public import FLT.Mazur.TorusChartScalars
 public import FLT.Mazur.TranslatedHilbertChartOverlap
 public import FLT.Mazur.TranslatedHilbertOverlapIdentities
 public import FLT.Mazur.TranslatedHilbertPicardChart
+public import FLT.Mazur.TranslatedHilbertTripleCocycle
 public import FLT.Mazur.TranslatedHilbertTripleOverlap
 public import FLT.Mazur.TrivialLineTwistLocalization
 public import FLT.Mazur.TrivializedLineSheafLimitDescent
