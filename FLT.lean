@@ -8413,6 +8413,7 @@ public import FLT.Mazur.WeierstrassProjectivePointNaturality
 public import FLT.Mazur.WeierstrassProjectivePointNegation
 public import FLT.Mazur.WeierstrassProjectivePointSmooth
 public import FLT.Mazur.WeierstrassProjectiveRelativeSmoothCriterion
+public import FLT.Mazur.WeierstrassProjectiveSingularCenter
 public import FLT.Mazur.WeierstrassProjectiveSmoothResidues
 public import FLT.Mazur.WeierstrassRationalCyclicModuli
 public import FLT.Mazur.WeierstrassRationalGroupSection
