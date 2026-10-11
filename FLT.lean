@@ -4066,6 +4066,7 @@ public import FLT.Mazur.FiniteTypeTestClassDivisorNaturality
 public import FLT.Mazur.FiniteTypeTestLineDivisor
 public import FLT.Mazur.FiniteTypeTestRelativePicardOpen
 public import FLT.Mazur.FiniteTypeTestSectionCartier
+public import FLT.Mazur.FiniteTypeUnpointedFppfAcyclicOpen
 public import FLT.Mazur.FiniteUnramifiedConstantFiber
 public import FLT.Mazur.FiniteUnramifiedFieldLength
 public import FLT.Mazur.FinitelyPresentedImmersedProperCover
