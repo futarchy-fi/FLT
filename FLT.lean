@@ -2517,6 +2517,7 @@ public import FLT.Mazur.AdicFiniteGenerationLifting
 public import FLT.Mazur.AdicFiniteModuleExt
 public import FLT.Mazur.AdicFiniteModuleLift
 public import FLT.Mazur.AdicSectionIsoReconstruction
+public import FLT.Mazur.AdicSeparatedDerivation
 public import FLT.Mazur.AffineAdicCohomologyImage
 public import FLT.Mazur.AffineAdicFormalComparison
 public import FLT.Mazur.AffineAnnihilator
