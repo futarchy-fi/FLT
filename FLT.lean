@@ -8057,6 +8057,7 @@ public import FLT.Mazur.WeierstrassLeftSmoothAffineOuterTriple
 public import FLT.Mazur.WeierstrassLeftSmoothAffineOutputFactorization
 public import FLT.Mazur.WeierstrassLeftSmoothAffinePairDescent
 public import FLT.Mazur.WeierstrassLeftSmoothAffineTransport
+public import FLT.Mazur.WeierstrassLeftSmoothAffineTripleDescent
 public import FLT.Mazur.WeierstrassLeftSmoothAllOrdinaryTriple
 public import FLT.Mazur.WeierstrassLeftSmoothCrossInput
 public import FLT.Mazur.WeierstrassLeftSmoothFactorAddition
