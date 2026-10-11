@@ -3459,6 +3459,7 @@ public import FLT.Mazur.DivisorClosedCokernel
 public import FLT.Mazur.DivisorCohomologicalDegree
 public import FLT.Mazur.DivisorComponentDegree
 public import FLT.Mazur.DivisorIdealEvaluation
+public import FLT.Mazur.DivisorIdealStalkExt
 public import FLT.Mazur.DivisorInvertibleSheaf
 public import FLT.Mazur.DivisorLineBundle
 public import FLT.Mazur.DivisorLineBundlePower
@@ -3899,6 +3900,7 @@ public import FLT.Mazur.FiniteAffineLineCover
 public import FLT.Mazur.FiniteAffineOpenClosedDescent
 public import FLT.Mazur.FiniteAffineProperIntegerDescent
 public import FLT.Mazur.FiniteArrowIntegerModel
+public import FLT.Mazur.FiniteCartierPointFactorization
 public import FLT.Mazur.FiniteCechCyclesScalars
 public import FLT.Mazur.FiniteCechTermScalars
 public import FLT.Mazur.FiniteClosedIdealSection
@@ -3917,6 +3919,7 @@ public import FLT.Mazur.FiniteDiagramUnitDescent
 public import FLT.Mazur.FiniteDivisorCohomology
 public import FLT.Mazur.FiniteDivisorComponentAvoidance
 public import FLT.Mazur.FiniteDivisorLengthAdditivity
+public import FLT.Mazur.FiniteDivisorRationalSupport
 public import FLT.Mazur.FiniteEvaluationLocus
 public import FLT.Mazur.FiniteFamilySupportBaseChange
 public import FLT.Mazur.FiniteFamilySupportOpen
@@ -4270,6 +4273,7 @@ public import FLT.Mazur.GeometricAcyclicPicardLocality
 public import FLT.Mazur.GeometricAcyclicPicardSubfunctor
 public import FLT.Mazur.GeometricAcyclicRankOne
 public import FLT.Mazur.GeometricAcyclicRankOneLocus
+public import FLT.Mazur.GeometricFiberSmoothLineParameters
 public import FLT.Mazur.GeometricOpenFactorization
 public import FLT.Mazur.GeometricPointCoverCriterion
 public import FLT.Mazur.GeometricSectionQuasiFinite
@@ -4759,6 +4763,7 @@ public import FLT.Mazur.IntegralBase
 public import FLT.Mazur.IntegralClosedSupport
 public import FLT.Mazur.IntegralCurveCartierFinite
 public import FLT.Mazur.IntegralDimension
+public import FLT.Mazur.IntegralImageIdealStalk
 public import FLT.Mazur.IntegralPointExtension
 public import FLT.Mazur.IntegralShortHomologyNaturality
 public import FLT.Mazur.IntersectionCocycleLimitUnits
@@ -5284,6 +5289,7 @@ public import FLT.Mazur.OpenSheafExtensionStalks
 public import FLT.Mazur.OpenSheafFreeComparison
 public import FLT.Mazur.OpenSheafRestriction
 public import FLT.Mazur.OpenSubschemeQuotientProperties
+public import FLT.Mazur.OrderedCartierPointFactorization
 public import FLT.Mazur.OrderedCurveDivisor
 public import FLT.Mazur.OrderedCurveDivisorFinite
 public import FLT.Mazur.OrderedCurveDivisorLocalFree
@@ -5292,10 +5298,17 @@ public import FLT.Mazur.OrderedCurveDivisorPullback
 public import FLT.Mazur.OrderedCurveDivisorRank
 public import FLT.Mazur.OrderedCurvePermutation
 public import FLT.Mazur.OrderedCurvePower
+public import FLT.Mazur.OrderedCurvePowerSmooth
+public import FLT.Mazur.OrderedCurvePowerSuccessor
+public import FLT.Mazur.OrderedDivisorLineSpecialization
+public import FLT.Mazur.OrderedDivisorOriginalFiber
+public import FLT.Mazur.OrderedDivisorSectionSpecialization
+public import FLT.Mazur.OrderedDivisorTranslation
 public import FLT.Mazur.OrderedProjectiveHilbertNaturality
 public import FLT.Mazur.OrderedProjectiveHilbertParameter
 public import FLT.Mazur.OrderedRelativeIdealBaseChange
 public import FLT.Mazur.OrderedRelativeIdealFamily
+public import FLT.Mazur.OrderedTranslationOriginalFiber
 public import FLT.Mazur.OriginalFamilyIdentityComparison
 public import FLT.Mazur.OriginalFamilySectionComposition
 public import FLT.Mazur.OriginalFamilySquareComposition
@@ -6378,6 +6391,8 @@ public import FLT.Mazur.RationalCyclicModuliPoint
 public import FLT.Mazur.RationalCyclicSubgroup
 public import FLT.Mazur.RationalFibers
 public import FLT.Mazur.RationalPointConditionRank
+public import FLT.Mazur.RationalPointDivisorStalk
+public import FLT.Mazur.RationalPointProductStalk
 public import FLT.Mazur.RationalPrimeTorsionGeometricModel
 public import FLT.Mazur.RationalPrimeTorsionLocalModel
 public import FLT.Mazur.ReconstructionComposition
@@ -7020,6 +7035,8 @@ public import FLT.Mazur.SmoothNonspecialDivisorCover
 public import FLT.Mazur.SmoothNonspecialDivisorLift
 public import FLT.Mazur.SmoothNonspecialLineLift
 public import FLT.Mazur.SmoothOpenSectionCartier
+public import FLT.Mazur.SmoothOrderedLineParameters
+public import FLT.Mazur.SmoothOriginalFiberLineParameters
 public import FLT.Mazur.SmoothQuasiFiniteCartierCriterion
 public import FLT.Mazur.SmoothQuasiFiniteIdealCharts
 public import FLT.Mazur.SmoothRelativeCotangentRank
@@ -7569,6 +7586,9 @@ public import FLT.Mazur.WeierstrassDividedGlobalFiniteSmoothEmbedding
 public import FLT.Mazur.WeierstrassDividedGlobalFiniteSmoothOpen
 public import FLT.Mazur.WeierstrassDividedGlobalFiniteStep
 public import FLT.Mazur.WeierstrassDividedGlobalFiniteZero
+public import FLT.Mazur.WeierstrassDividedGlobalInitialAction
+public import FLT.Mazur.WeierstrassDividedGlobalInitialActionGeometry
+public import FLT.Mazur.WeierstrassDividedGlobalInitialActionLaws
 public import FLT.Mazur.WeierstrassDividedGlobalInitialComparison
 public import FLT.Mazur.WeierstrassDividedGlobalResidueNodes
 public import FLT.Mazur.WeierstrassDividedGlobalResidueOverlap
@@ -8010,11 +8030,14 @@ public import FLT.Mazur.WeierstrassGlobalAdditionInverse
 public import FLT.Mazur.WeierstrassGlobalAdditionZeroRestrictions
 public import FLT.Mazur.WeierstrassGlobalAffineSwap
 public import FLT.Mazur.WeierstrassGlobalInfinitySwap
+public import FLT.Mazur.WeierstrassGlobalModificationActionAssociativity
 public import FLT.Mazur.WeierstrassGlobalModificationActionCenter
 public import FLT.Mazur.WeierstrassGlobalModificationActionFlatExt
 public import FLT.Mazur.WeierstrassGlobalModificationActionIdentity
+public import FLT.Mazur.WeierstrassGlobalModificationActionInverse
 public import FLT.Mazur.WeierstrassGlobalModificationActionOverlap
 public import FLT.Mazur.WeierstrassGlobalModificationActionPoints
+public import FLT.Mazur.WeierstrassGlobalModificationActionSmooth
 public import FLT.Mazur.WeierstrassGlobalModificationContractionFlatExt
 public import FLT.Mazur.WeierstrassGlobalModificationFlat
 public import FLT.Mazur.WeierstrassGlobalModificationFractionCover
@@ -8027,6 +8050,7 @@ public import FLT.Mazur.WeierstrassGlobalModificationSmoothAction
 public import FLT.Mazur.WeierstrassGlobalModificationSmoothCover
 public import FLT.Mazur.WeierstrassGlobalModificationSmoothEmbedding
 public import FLT.Mazur.WeierstrassGlobalModificationSmoothOpen
+public import FLT.Mazur.WeierstrassGlobalModificationTranslationGraph
 public import FLT.Mazur.WeierstrassGlobalModificationUnchangedLift
 public import FLT.Mazur.WeierstrassGlobalModificationUnchangedOverlap
 public import FLT.Mazur.WeierstrassGlobalModificationXOpen
