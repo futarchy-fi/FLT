@@ -3474,6 +3474,7 @@ public import FLT.Mazur.DivisorLinePullback
 public import FLT.Mazur.DivisorLinePullbackComposition
 public import FLT.Mazur.DivisorLinePullbackIdentity
 public import FLT.Mazur.DivisorLinePullbackTransport
+public import FLT.Mazur.DivisorLineSectionModel
 public import FLT.Mazur.DivisorPowerCanonicalSection
 public import FLT.Mazur.DivisorPowerEulerCharacteristic
 public import FLT.Mazur.DivisorPowerTwistDegree
@@ -4994,8 +4995,11 @@ public import FLT.Mazur.ModulePullbackMapEquality
 public import FLT.Mazur.ModulePullbackRestrictionHorizontal
 public import FLT.Mazur.ModulePullbackRestrictionPasting
 public import FLT.Mazur.ModulePullbackSectionCoherence
+public import FLT.Mazur.ModulePullbackSectionIdentity
+public import FLT.Mazur.ModulePullbackSectionIsoTransport
 public import FLT.Mazur.ModulePullbackSectionTransport
 public import FLT.Mazur.ModulePullbackStageIso
+public import FLT.Mazur.ModulePullbackStageTensor
 public import FLT.Mazur.ModulePullbackTrivializationCoherence
 public import FLT.Mazur.ModulePullbackTrivializationSections
 public import FLT.Mazur.ModulePullbackUnitCoherence
@@ -5452,14 +5456,19 @@ public import FLT.Mazur.PolygonCompleteLineOriginalReduction
 public import FLT.Mazur.PolygonCompleteLineQuotient
 public import FLT.Mazur.PolygonCompleteLineSectionReconstruction
 public import FLT.Mazur.PolygonCompleteMarkedClosedFiber
+public import FLT.Mazur.PolygonCompleteMarkedCoordinates
 public import FLT.Mazur.PolygonCompleteMarkedLineModel
 public import FLT.Mazur.PolygonCompleteMarkedModelSections
+public import FLT.Mazur.PolygonCompleteMarkedPowerModel
+public import FLT.Mazur.PolygonCompleteMarkedPowerSections
 public import FLT.Mazur.PolygonCompleteMarkedStageComparison
 public import FLT.Mazur.PolygonCompleteMarkingAmple
 public import FLT.Mazur.PolygonCompleteMarkingCartier
 public import FLT.Mazur.PolygonCompleteMarkingDivisor
 public import FLT.Mazur.PolygonCompleteMarkingLineBaseChange
 public import FLT.Mazur.PolygonCompleteMarkingNaturality
+public import FLT.Mazur.PolygonCompleteMarkingPowerCoherence
+public import FLT.Mazur.PolygonCompleteMarkingSectionModel
 public import FLT.Mazur.PolygonCompleteMarkingSpecialization
 public import FLT.Mazur.PolygonCompleteMarkingUniqueness
 public import FLT.Mazur.PolygonCompleteNodeAffineCotangentRank
@@ -7114,6 +7123,7 @@ public import FLT.Mazur.TensorOpenChartVanishingSeparation
 public import FLT.Mazur.TensorOpenExteriorIntersection
 public import FLT.Mazur.TensorPowerDistribution
 public import FLT.Mazur.TensorPowerGeneratorOpen
+public import FLT.Mazur.TensorPowerPullbackComparison
 public import FLT.Mazur.TensorPowerReassociation
 public import FLT.Mazur.TensorPullbackComposition
 public import FLT.Mazur.TensorPullbackIdentity
