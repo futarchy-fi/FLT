@@ -8041,6 +8041,7 @@ public import FLT.Mazur.WeierstrassLeftSmoothInfinityIdentity
 public import FLT.Mazur.WeierstrassLeftSmoothInputAddition
 public import FLT.Mazur.WeierstrassLeftSmoothInputCompatibility
 public import FLT.Mazur.WeierstrassLeftSmoothInputRestrictions
+public import FLT.Mazur.WeierstrassLeftSmoothLocalOutputRegular
 public import FLT.Mazur.WeierstrassLeftSmoothMixedAddition
 public import FLT.Mazur.WeierstrassLeftSmoothOriginalFormulas
 public import FLT.Mazur.WeierstrassLeftSmoothProductOpen
