@@ -8109,6 +8109,7 @@ public import FLT.Mazur.WeierstrassLeftSmoothAdditionOutputRegular
 public import FLT.Mazur.WeierstrassLeftSmoothAdditionStructure
 public import FLT.Mazur.WeierstrassLeftSmoothAffineAddition
 public import FLT.Mazur.WeierstrassLeftSmoothAffineCenter
+public import FLT.Mazur.WeierstrassLeftSmoothAffineCenterEquality
 public import FLT.Mazur.WeierstrassLeftSmoothAffineIdentity
 public import FLT.Mazur.WeierstrassLeftSmoothAffineInputTriple
 public import FLT.Mazur.WeierstrassLeftSmoothAffineOuterTriple
