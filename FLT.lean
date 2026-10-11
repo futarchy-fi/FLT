@@ -3088,6 +3088,7 @@ public import FLT.Mazur.BaseChangedPresentationModel
 public import FLT.Mazur.BaseMarkedHilbertCocycle
 public import FLT.Mazur.BaseMarkedHilbertFullIntersection
 public import FLT.Mazur.BaseMarkedHilbertGluedBase
+public import FLT.Mazur.BaseMarkedHilbertGluedMap
 public import FLT.Mazur.BaseMarkedHilbertGluedPicard
 public import FLT.Mazur.BaseMarkedHilbertGluing
 public import FLT.Mazur.BaseMarkedHilbertIdentities
