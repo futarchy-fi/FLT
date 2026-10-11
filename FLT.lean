@@ -5414,6 +5414,7 @@ public import FLT.Mazur.PolygonSmoothingBranchOpens
 public import FLT.Mazur.PolygonSmoothingBranchSwap
 public import FLT.Mazur.PolygonSmoothingCoefficientBranches
 public import FLT.Mazur.PolygonSmoothingCoefficientSquares
+public import FLT.Mazur.PolygonSmoothingCompletedDifferentials
 public import FLT.Mazur.PolygonSmoothingCoordinateIdeal
 public import FLT.Mazur.PolygonSmoothingDerivation
 public import FLT.Mazur.PolygonSmoothingFlat
