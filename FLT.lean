@@ -3507,6 +3507,7 @@ public import FLT.Mazur.DivisorChartCokernel
 public import FLT.Mazur.DivisorChartNumerator
 public import FLT.Mazur.DivisorClosedCokernel
 public import FLT.Mazur.DivisorCohomologicalDegree
+public import FLT.Mazur.DivisorCokernelProjection
 public import FLT.Mazur.DivisorComplementCanonical
 public import FLT.Mazur.DivisorComplementFaithful
 public import FLT.Mazur.DivisorComplementFiltration
