@@ -6996,6 +6996,7 @@ public import FLT.Mazur.TorusChartScalars
 public import FLT.Mazur.TranslatedHilbertChartOverlap
 public import FLT.Mazur.TranslatedHilbertGluedBase
 public import FLT.Mazur.TranslatedHilbertGluedMap
+public import FLT.Mazur.TranslatedHilbertGluedMono
 public import FLT.Mazur.TranslatedHilbertGluedPicard
 public import FLT.Mazur.TranslatedHilbertGluing
 public import FLT.Mazur.TranslatedHilbertOverlapIdentities
