@@ -5686,6 +5686,7 @@ public import FLT.Mazur.PolygonInfinitesimalSystem
 public import FLT.Mazur.PolygonLineHZero
 public import FLT.Mazur.PolygonLineNodeRestriction
 public import FLT.Mazur.PolygonLineNormalization
+public import FLT.Mazur.PolygonMarkedScaling
 public import FLT.Mazur.PolygonMarkedSections
 public import FLT.Mazur.PolygonMarkingAffineNeighborhood
 public import FLT.Mazur.PolygonMultipleCoefficientProjMap
