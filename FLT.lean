@@ -9344,6 +9344,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXGluing
 public import FLT.Mazur.WeierstrassSuccessiveXHorizontalLocalization
 public import FLT.Mazur.WeierstrassSuccessiveXHorizontalMaps
 public import FLT.Mazur.WeierstrassSuccessiveXHorizontalScheme
+public import FLT.Mazur.WeierstrassSuccessiveXIncidenceExt
 public import FLT.Mazur.WeierstrassSuccessiveXIncidenceTransport
 public import FLT.Mazur.WeierstrassSuccessiveXLocalization
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleComponents
