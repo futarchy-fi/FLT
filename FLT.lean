@@ -4885,6 +4885,8 @@ public import FLT.Mazur.LinePullbackAdjunction
 public import FLT.Mazur.LinePullbackIsomorphisms
 public import FLT.Mazur.LinePullbackRestriction
 public import FLT.Mazur.LineRecoveryPullback
+public import FLT.Mazur.LineRestrictionHZero
+public import FLT.Mazur.LineRestrictionHZeroFrames
 public import FLT.Mazur.LineScalarExtensionNonvanishing
 public import FLT.Mazur.LineSectionCanonicalRecovery
 public import FLT.Mazur.LineSectionCohomologyAnnihilation
@@ -5028,6 +5030,7 @@ public import FLT.Mazur.ModuleCohomologyScalarRestriction
 public import FLT.Mazur.ModuleCohomologyVanishing
 public import FLT.Mazur.ModuleComparedSectionRatio
 public import FLT.Mazur.ModuleDerivedAbelianComparison
+public import FLT.Mazur.ModuleDirectImageHZero
 public import FLT.Mazur.ModuleDisjointSectionGluing
 public import FLT.Mazur.ModuleDualSectionCancellation
 public import FLT.Mazur.ModuleExactOpenCover
@@ -5547,6 +5550,7 @@ public import FLT.Mazur.PolygonCompleteClassifiedFibers
 public import FLT.Mazur.PolygonCompleteClosedFiber
 public import FLT.Mazur.PolygonCompleteClosedGenus
 public import FLT.Mazur.PolygonCompleteClosedH1Scalars
+public import FLT.Mazur.PolygonCompleteClosedPointCohomology
 public import FLT.Mazur.PolygonCompleteClosedPointLineComparison
 public import FLT.Mazur.PolygonCompleteClosedSingularPoints
 public import FLT.Mazur.PolygonCompleteClosedSmoothLocus
@@ -5661,6 +5665,8 @@ public import FLT.Mazur.PolygonCompleteStructureCohomology
 public import FLT.Mazur.PolygonCompleteUniversalFunctions
 public import FLT.Mazur.PolygonCompleteZeroParameterFiber
 public import FLT.Mazur.PolygonComponentDistinct
+public import FLT.Mazur.PolygonComponentHZeroEndpoints
+public import FLT.Mazur.PolygonComponentHZeroMatching
 public import FLT.Mazur.PolygonComponentImages
 public import FLT.Mazur.PolygonConnected
 public import FLT.Mazur.PolygonConstantSections
@@ -5806,6 +5812,7 @@ public import FLT.Mazur.PolygonNormalizationExact
 public import FLT.Mazur.PolygonNormalizationFinite
 public import FLT.Mazur.PolygonNormalizationHOne
 public import FLT.Mazur.PolygonNormalizationHZero
+public import FLT.Mazur.PolygonNormalizationLinearSections
 public import FLT.Mazur.PolygonNormalizationSectionFamilies
 public import FLT.Mazur.PolygonNormalizationTorusPullback
 public import FLT.Mazur.PolygonNormalizationTransport
@@ -5859,9 +5866,18 @@ public import FLT.Mazur.PolygonSectionRingFunctor
 public import FLT.Mazur.PolygonSeparated
 public import FLT.Mazur.PolygonSeriesTowerAssembly
 public import FLT.Mazur.PolygonSeriesTowerDivision
+public import FLT.Mazur.PolygonSingleExceptionalMatching
+public import FLT.Mazur.PolygonSinglePointEndpointScalars
+public import FLT.Mazur.PolygonSinglePointHZero
+public import FLT.Mazur.PolygonSinglePointHZeroCoordinates
+public import FLT.Mazur.PolygonSinglePointHZeroFrames
 public import FLT.Mazur.PolygonSinglePointLineNormalization
+public import FLT.Mazur.PolygonSinglePointLoopKernel
+public import FLT.Mazur.PolygonSinglePointMatchingCoordinates
+public import FLT.Mazur.PolygonSinglePointNodeFrame
 public import FLT.Mazur.PolygonSinglePointPowerNormalization
 public import FLT.Mazur.PolygonSinglePointPowerSections
+public import FLT.Mazur.PolygonSinglePointScalarMatching
 public import FLT.Mazur.PolygonSmoothLocus
 public import FLT.Mazur.PolygonSmoothRelativeDimension
 public import FLT.Mazur.PolygonSmoothingBaseChange
