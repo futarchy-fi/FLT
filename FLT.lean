@@ -3119,6 +3119,7 @@ public import FLT.Mazur.BoundedFlatVanishingStalks
 public import FLT.Mazur.CanonicalCechSectionComparison
 public import FLT.Mazur.CanonicalLineSectionBaseChange
 public import FLT.Mazur.CanonicalNonspecialDivisorCover
+public import FLT.Mazur.CanonicalRelativeLineModel
 public import FLT.Mazur.CanonicalSectionComposition
 public import FLT.Mazur.CanonicalSectionNaturality
 public import FLT.Mazur.CartesianAtlasAffineIntersections
