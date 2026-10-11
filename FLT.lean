@@ -8729,6 +8729,7 @@ public import FLT.Mazur.WeierstrassSquareZeroTorsionRigidity
 public import FLT.Mazur.WeierstrassSuccessiveCenterAction
 public import FLT.Mazur.WeierstrassSuccessiveCenterScaling
 public import FLT.Mazur.WeierstrassSuccessiveDepthProper
+public import FLT.Mazur.WeierstrassSuccessiveFractionAction
 public import FLT.Mazur.WeierstrassSuccessiveHorizontalPreimage
 public import FLT.Mazur.WeierstrassSuccessiveOriginalOpen
 public import FLT.Mazur.WeierstrassSuccessiveReesCoordinates
