@@ -2534,6 +2534,7 @@ public import FLT.Mazur.AdicFiniteKernelEquiv
 public import FLT.Mazur.AdicFiniteModuleExt
 public import FLT.Mazur.AdicFiniteModuleLift
 public import FLT.Mazur.AdicIdealCompletionRange
+public import FLT.Mazur.AdicInfinitesimalPresentationLift
 public import FLT.Mazur.AdicLocalizedFirstCotangent
 public import FLT.Mazur.AdicPolynomialPresentationLift
 public import FLT.Mazur.AdicPresentationFirstCotangent
