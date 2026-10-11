@@ -2508,6 +2508,7 @@ public import FLT.Mazur.AdditiveSheafModuleTransport
 public import FLT.Mazur.AdditiveSheafMultiplication
 public import FLT.Mazur.AdicCommonModelFiltration
 public import FLT.Mazur.AdicCompletedDifferentials
+public import FLT.Mazur.AdicCompletedInfinitesimalLift
 public import FLT.Mazur.AdicCompletionAlgEquiv
 public import FLT.Mazur.AdicCompletionFiltrationTransport
 public import FLT.Mazur.AdicCompletionPositiveEquiv
