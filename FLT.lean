@@ -7342,6 +7342,7 @@ public import FLT.Mazur.WeierstrassDividedInitialAtlasIndex
 public import FLT.Mazur.WeierstrassDividedInitialBoundaryGeometry
 public import FLT.Mazur.WeierstrassDividedInitialChartCoverage
 public import FLT.Mazur.WeierstrassDividedInitialCommonBoundaryAlgebra
+public import FLT.Mazur.WeierstrassDividedInitialCommonBoundaryHomExt
 public import FLT.Mazur.WeierstrassDividedInitialComponentRanges
 public import FLT.Mazur.WeierstrassDividedInitialComponentStructure
 public import FLT.Mazur.WeierstrassDividedInitialConicBoundaryAlgebra
