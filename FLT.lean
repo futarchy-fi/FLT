@@ -5691,6 +5691,7 @@ public import FLT.Mazur.PolygonCompleteLineIsoReconstruction
 public import FLT.Mazur.PolygonCompleteLineOriginalReduction
 public import FLT.Mazur.PolygonCompleteLineQuotient
 public import FLT.Mazur.PolygonCompleteLineSectionReconstruction
+public import FLT.Mazur.PolygonCompleteMarkedAffinePoints
 public import FLT.Mazur.PolygonCompleteMarkedClosedFiber
 public import FLT.Mazur.PolygonCompleteMarkedCoordinateCharts
 public import FLT.Mazur.PolygonCompleteMarkedCoordinateGeneration
@@ -5701,6 +5702,7 @@ public import FLT.Mazur.PolygonCompleteMarkedLineModel
 public import FLT.Mazur.PolygonCompleteMarkedModelSections
 public import FLT.Mazur.PolygonCompleteMarkedPowerModel
 public import FLT.Mazur.PolygonCompleteMarkedPowerSections
+public import FLT.Mazur.PolygonCompleteMarkedProjectivePoints
 public import FLT.Mazur.PolygonCompleteMarkedSectionTransport
 public import FLT.Mazur.PolygonCompleteMarkedStageComparison
 public import FLT.Mazur.PolygonCompleteMarkingAmple
@@ -5755,9 +5757,11 @@ public import FLT.Mazur.PolygonCompletePointCoordinateInjective
 public import FLT.Mazur.PolygonCompletePointCoordinateRange
 public import FLT.Mazur.PolygonCompletePointCubicRelation
 public import FLT.Mazur.PolygonCompletePointDimensions
+public import FLT.Mazur.PolygonCompletePointDivisorComparison
 public import FLT.Mazur.PolygonCompletePointExactMonomials
 public import FLT.Mazur.PolygonCompletePointFunctionDimensions
 public import FLT.Mazur.PolygonCompletePointFunctionNumerators
+public import FLT.Mazur.PolygonCompletePointInfinity
 public import FLT.Mazur.PolygonCompletePointIrreducibleAffine
 public import FLT.Mazur.PolygonCompletePointLeadingClasses
 public import FLT.Mazur.PolygonCompletePointLeadingProducts
@@ -5768,6 +5772,8 @@ public import FLT.Mazur.PolygonCompletePointNormalizedPoles
 public import FLT.Mazur.PolygonCompletePointPoleFunctions
 public import FLT.Mazur.PolygonCompletePointPowerComparison
 public import FLT.Mazur.PolygonCompletePointPowerVanishing
+public import FLT.Mazur.PolygonCompletePointProjectiveExtension
+public import FLT.Mazur.PolygonCompletePointProjectiveIso
 public import FLT.Mazur.PolygonCompletePointSectionBaseChange
 public import FLT.Mazur.PolygonCompletePointWeierstrassEquation
 public import FLT.Mazur.PolygonCompletePrincipalClosedFiber
@@ -6528,6 +6534,8 @@ public import FLT.Mazur.ProperConnectedReducedSections
 public import FLT.Mazur.ProperCoverImmersionCriterion
 public import FLT.Mazur.ProperCoverLimitDescent
 public import FLT.Mazur.ProperCurveGenus
+public import FLT.Mazur.ProperDenseOpenExtension
+public import FLT.Mazur.ProperDenseOpenIso
 public import FLT.Mazur.ProperFamilyAbelRepresentation
 public import FLT.Mazur.ProperFamilyAtlasCartesian
 public import FLT.Mazur.ProperFamilyAtlasRecovery
@@ -9062,6 +9070,7 @@ public import FLT.Mazur.WeierstrassModificationYTripleOverlap
 public import FLT.Mazur.WeierstrassModifiedSmoothAffineRefinement
 public import FLT.Mazur.WeierstrassModifiedSmoothOutputCoordinates
 public import FLT.Mazur.WeierstrassModifiedSmoothTotalCover
+public import FLT.Mazur.WeierstrassMonicOpenImmersion
 public import FLT.Mazur.WeierstrassNegationAdditionDescent
 public import FLT.Mazur.WeierstrassNegationAdditionPullback
 public import FLT.Mazur.WeierstrassNegationCover
