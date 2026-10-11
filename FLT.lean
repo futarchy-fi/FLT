@@ -5114,6 +5114,7 @@ public import FLT.Mazur.PolygonActionUnit
 public import FLT.Mazur.PolygonAdicQuotientGrading
 public import FLT.Mazur.PolygonArithmeticNodeNeighborhood
 public import FLT.Mazur.PolygonArithmeticNodePoint
+public import FLT.Mazur.PolygonArithmeticNodeTransition
 public import FLT.Mazur.PolygonAtlas
 public import FLT.Mazur.PolygonAtlasCocone
 public import FLT.Mazur.PolygonAtlasSmoothLocus
