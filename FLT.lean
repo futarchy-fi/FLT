@@ -7362,6 +7362,7 @@ public import FLT.Mazur.WeierstrassDividedZeroEqualityTerminalLineBranches
 public import FLT.Mazur.WeierstrassDividedZeroEqualityTerminalLocalMaps
 public import FLT.Mazur.WeierstrassDividedZeroEqualityTerminalTensorDesc
 public import FLT.Mazur.WeierstrassDividedZeroEqualityUniversalHomExt
+public import FLT.Mazur.WeierstrassDividedZeroEqualityZeroTensorDesc
 public import FLT.Mazur.WeierstrassDividedZeroExteriorCoverage
 public import FLT.Mazur.WeierstrassDividedZeroExteriorCurve
 public import FLT.Mazur.WeierstrassDividedZeroExteriorLaurent
