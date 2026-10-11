@@ -2552,6 +2552,7 @@ public import FLT.Mazur.AdicIdealCompletionRange
 public import FLT.Mazur.AdicIdealFilteredMap
 public import FLT.Mazur.AdicInfinitesimalConormal
 public import FLT.Mazur.AdicInfinitesimalCotangentSpace
+public import FLT.Mazur.AdicInfinitesimalOriginalChainMap
 public import FLT.Mazur.AdicInfinitesimalPresentationLift
 public import FLT.Mazur.AdicInfinitesimalSpaceMap
 public import FLT.Mazur.AdicLocalizedFirstCotangent
