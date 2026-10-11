@@ -9225,6 +9225,7 @@ public import FLT.Mazur.WeierstrassSmoothProjectiveGroup
 public import FLT.Mazur.WeierstrassSmoothReciprocalTriple
 public import FLT.Mazur.WeierstrassSmoothSevenPoints
 public import FLT.Mazur.WeierstrassSmoothSuccessiveIntegralTransport
+public import FLT.Mazur.WeierstrassSmoothSuccessiveResidueInputs
 public import FLT.Mazur.WeierstrassSmoothSuccessiveTensorInput
 public import FLT.Mazur.WeierstrassSmoothTransportedComparison
 public import FLT.Mazur.WeierstrassSmoothTransportedCover
