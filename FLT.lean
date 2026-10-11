@@ -2851,6 +2851,7 @@ public import FLT.Mazur.AffineStalkEssentialFiniteType
 public import FLT.Mazur.AffineStalkExtension
 public import FLT.Mazur.AffineStalkFirstCotangent
 public import FLT.Mazur.AffineStalkMorphism
+public import FLT.Mazur.AffineStructuralRelativeDimension
 public import FLT.Mazur.AffineStructuralSmoothLocus
 public import FLT.Mazur.AffineTensorCoactionRecognition
 public import FLT.Mazur.AffineTensorCoalgebraComparison
@@ -3071,6 +3072,7 @@ public import FLT.Mazur.BaseAdicReesTensorModule
 public import FLT.Mazur.BaseAdicSectionReconstruction
 public import FLT.Mazur.BaseAdicSectionSuccessorReconstruction
 public import FLT.Mazur.BaseAdicThickening
+public import FLT.Mazur.BaseChangeCotangentFieldRank
 public import FLT.Mazur.BaseChangeSectionEquiv
 public import FLT.Mazur.BaseChangedPresentationModel
 public import FLT.Mazur.BinaryOpenDescent
@@ -4874,6 +4876,7 @@ public import FLT.Mazur.LocalizedPointAlgebraKernel
 public import FLT.Mazur.LocalizedPolynomialDiagramCoefficients
 public import FLT.Mazur.LocalizedPolynomialStableRelations
 public import FLT.Mazur.LocalizedPolynomialStableStages
+public import FLT.Mazur.LocalizedPrimeCotangentRank
 public import FLT.Mazur.LocalizedSmoothFiniteFlatCartier
 public import FLT.Mazur.LocalizedSmoothLocalEquation
 public import FLT.Mazur.LocalizedStalkSmoothGenerization
@@ -5374,6 +5377,7 @@ public import FLT.Mazur.PolygonCompleteGeometricallyReduced
 public import FLT.Mazur.PolygonCompleteLineOriginalReduction
 public import FLT.Mazur.PolygonCompleteLineQuotient
 public import FLT.Mazur.PolygonCompleteMarkingSpecialization
+public import FLT.Mazur.PolygonCompleteNodeAffineCotangentRank
 public import FLT.Mazur.PolygonCompleteNodeAffineIdeal
 public import FLT.Mazur.PolygonCompleteNodeArithmeticAction
 public import FLT.Mazur.PolygonCompleteNodeArithmeticDifferentials
@@ -5387,6 +5391,7 @@ public import FLT.Mazur.PolygonCompleteNodeCotangentCokernel
 public import FLT.Mazur.PolygonCompleteNodeCotangentComparison
 public import FLT.Mazur.PolygonCompleteNodeCotangentEquiv
 public import FLT.Mazur.PolygonCompleteNodeCotangentFiltration
+public import FLT.Mazur.PolygonCompleteNodeDimensionOpen
 public import FLT.Mazur.PolygonCompleteNodeFieldCotangentRank
 public import FLT.Mazur.PolygonCompleteNodeFiltration
 public import FLT.Mazur.PolygonCompleteNodeFirstCotangent
@@ -5402,6 +5407,7 @@ public import FLT.Mazur.PolygonCompleteNodeModuleFiltration
 public import FLT.Mazur.PolygonCompleteNodeNeighborhood
 public import FLT.Mazur.PolygonCompleteNodeOriginalH1Equiv
 public import FLT.Mazur.PolygonCompleteNodeOriginalSpaceMap
+public import FLT.Mazur.PolygonCompleteNodeRelativeDimension
 public import FLT.Mazur.PolygonCompleteNodeStalkCompletion
 public import FLT.Mazur.PolygonCompleteNodeStalkEvaluation
 public import FLT.Mazur.PolygonCompleteNodeStalkH1Equiv
@@ -5588,6 +5594,7 @@ public import FLT.Mazur.PolygonSeparated
 public import FLT.Mazur.PolygonSeriesTowerAssembly
 public import FLT.Mazur.PolygonSeriesTowerDivision
 public import FLT.Mazur.PolygonSmoothLocus
+public import FLT.Mazur.PolygonSmoothRelativeDimension
 public import FLT.Mazur.PolygonSmoothingBaseChange
 public import FLT.Mazur.PolygonSmoothingBranchOpens
 public import FLT.Mazur.PolygonSmoothingBranchSwap
@@ -5711,6 +5718,7 @@ public import FLT.Mazur.PowerSeriesTruncatedPolynomial
 public import FLT.Mazur.PresentedFiniteCoefficientBranch
 public import FLT.Mazur.PrimeCharacteristicScalar
 public import FLT.Mazur.PrimeCoefficientLocalization
+public import FLT.Mazur.PrimeCotangentSmoothDimension
 public import FLT.Mazur.PrimeLocalFiberRegularQuotient
 public import FLT.Mazur.PrimeQuasiFiniteSmoothCartier
 public import FLT.Mazur.PrimeSmoothFiniteFlatCartier
@@ -6865,6 +6873,7 @@ public import FLT.Mazur.ShortComplexSumHomologyInclusion
 public import FLT.Mazur.SmoothAffineCoefficientModels
 public import FLT.Mazur.SmoothAffineLineNoetherianModel
 public import FLT.Mazur.SmoothAlgebraReduced
+public import FLT.Mazur.SmoothCotangentRankGenerization
 public import FLT.Mazur.SmoothCurveDimension
 public import FLT.Mazur.SmoothCurveFiberCartier
 public import FLT.Mazur.SmoothCurvePicardDegree
@@ -6879,6 +6888,7 @@ public import FLT.Mazur.SmoothGeometricallyReduced
 public import FLT.Mazur.SmoothOpenSectionCartier
 public import FLT.Mazur.SmoothQuasiFiniteCartierCriterion
 public import FLT.Mazur.SmoothQuasiFiniteIdealCharts
+public import FLT.Mazur.SmoothRelativeCotangentRank
 public import FLT.Mazur.SmoothSectionCartier
 public import FLT.Mazur.SpecChartIdealPreimage
 public import FLT.Mazur.SpectrumFieldCohomologyCoordinates
