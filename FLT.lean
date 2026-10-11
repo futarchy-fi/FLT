@@ -4889,6 +4889,7 @@ public import FLT.Mazur.LineRecoveryPullback
 public import FLT.Mazur.LineRestrictionHZero
 public import FLT.Mazur.LineRestrictionHZeroFrames
 public import FLT.Mazur.LineScalarExtensionNonvanishing
+public import FLT.Mazur.LineScalarMonicity
 public import FLT.Mazur.LineSectionCanonicalRecovery
 public import FLT.Mazur.LineSectionCohomologyAnnihilation
 public import FLT.Mazur.LineSectionCohomologySurjection
