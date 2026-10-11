@@ -2743,6 +2743,7 @@ public import FLT.Mazur.AffineLineCoalgebraDescent
 public import FLT.Mazur.AffineLineCoefficients
 public import FLT.Mazur.AffineLineTwistLocalization
 public import FLT.Mazur.AffineLocalFiberRegularQuotient
+public import FLT.Mazur.AffineLocalHilbertTranslationCover
 public import FLT.Mazur.AffineModuleCoalgebraDescent
 public import FLT.Mazur.AffineModuleEpimorphisms
 public import FLT.Mazur.AffineModuleExact
@@ -2952,6 +2953,7 @@ public import FLT.Mazur.AmpleRetainedChartGeneration
 public import FLT.Mazur.AmpleRetainedSectionCover
 public import FLT.Mazur.AmpleSectionCoverPullback
 public import FLT.Mazur.AmpleSmoothNonspecialLift
+public import FLT.Mazur.AmpleTwistLineDivisor
 public import FLT.Mazur.AmpleTwistedSectionLifting
 public import FLT.Mazur.AmpleVeroneseEvaluation
 public import FLT.Mazur.AmpleVeroneseMultiplication
@@ -3120,6 +3122,7 @@ public import FLT.Mazur.BoundedFlatVanishingStalks
 public import FLT.Mazur.CanonicalCechSectionComparison
 public import FLT.Mazur.CanonicalLineSectionBaseChange
 public import FLT.Mazur.CanonicalNonspecialDivisorCover
+public import FLT.Mazur.CanonicalRelativeLineModel
 public import FLT.Mazur.CanonicalSectionComposition
 public import FLT.Mazur.CanonicalSectionNaturality
 public import FLT.Mazur.CartesianAtlasAffineIntersections
@@ -4024,6 +4027,7 @@ public import FLT.Mazur.FinitePolynomialDiagramRefinement
 public import FLT.Mazur.FinitePolynomialEquationSeeds
 public import FLT.Mazur.FinitePolynomialStableRelations
 public import FLT.Mazur.FinitePolynomialStableStages
+public import FLT.Mazur.FinitePresentationHilbertTranslationCover
 public import FLT.Mazur.FinitePresentationIntegerModel
 public import FLT.Mazur.FinitePresentationSurjectiveScalars
 public import FLT.Mazur.FinitePresentedFlatQuotientIdeal
@@ -6973,6 +6977,12 @@ public import FLT.Mazur.SheafPullbackSectionReconstruction
 public import FLT.Mazur.SheafPullbackSectionSquare
 public import FLT.Mazur.SheafPullbackTestReconstruction
 public import FLT.Mazur.ShortComplexSumHomologyInclusion
+public import FLT.Mazur.SmallAffineParameterBases
+public import FLT.Mazur.SmallHilbertPresentation
+public import FLT.Mazur.SmallHilbertPresentationPullback
+public import FLT.Mazur.SmallHilbertTranslationAtlas
+public import FLT.Mazur.SmallRelativeLineParameters
+public import FLT.Mazur.SmallSchemePicard
 public import FLT.Mazur.SmoothAffineCoefficientModels
 public import FLT.Mazur.SmoothAffineLineNoetherianModel
 public import FLT.Mazur.SmoothAlgebraReduced
@@ -7966,6 +7976,9 @@ public import FLT.Mazur.WeierstrassFourMarkingFrame
 public import FLT.Mazur.WeierstrassFourMarkingRigidity
 public import FLT.Mazur.WeierstrassFourPairAssociativity
 public import FLT.Mazur.WeierstrassFourTorsionFinite
+public import FLT.Mazur.WeierstrassFractionSmoothGlobalLift
+public import FLT.Mazur.WeierstrassFractionSmoothPresentation
+public import FLT.Mazur.WeierstrassFractionSmoothPresentationLift
 public import FLT.Mazur.WeierstrassFrameNormalEquation
 public import FLT.Mazur.WeierstrassFrameNormalization
 public import FLT.Mazur.WeierstrassGeneralizedEllipticModel
@@ -7983,11 +7996,15 @@ public import FLT.Mazur.WeierstrassGlobalAdditionZeroRestrictions
 public import FLT.Mazur.WeierstrassGlobalAffineSwap
 public import FLT.Mazur.WeierstrassGlobalInfinitySwap
 public import FLT.Mazur.WeierstrassGlobalModificationFlat
+public import FLT.Mazur.WeierstrassGlobalModificationFractionCover
 public import FLT.Mazur.WeierstrassGlobalModificationGluing
+public import FLT.Mazur.WeierstrassGlobalModificationLocalAction
 public import FLT.Mazur.WeierstrassGlobalModificationOriginalOpen
 public import FLT.Mazur.WeierstrassGlobalModificationProper
+public import FLT.Mazur.WeierstrassGlobalModificationSmoothCover
 public import FLT.Mazur.WeierstrassGlobalModificationSmoothEmbedding
 public import FLT.Mazur.WeierstrassGlobalModificationSmoothOpen
+public import FLT.Mazur.WeierstrassGlobalModificationXOpen
 public import FLT.Mazur.WeierstrassGlobalModificationZero
 public import FLT.Mazur.WeierstrassGlobalNegation
 public import FLT.Mazur.WeierstrassGlobalNegationInvolution
@@ -8066,6 +8083,7 @@ public import FLT.Mazur.WeierstrassInfinityResidueZero
 public import FLT.Mazur.WeierstrassInfinityReverseCross
 public import FLT.Mazur.WeierstrassInfinitySlopeMap
 public import FLT.Mazur.WeierstrassInfinitySmoothChart
+public import FLT.Mazur.WeierstrassInfinitySmoothReesLift
 public import FLT.Mazur.WeierstrassInfinitySpecializedFactorization
 public import FLT.Mazur.WeierstrassInfinitySquareZero
 public import FLT.Mazur.WeierstrassInfinityTensorBoundary
@@ -8174,6 +8192,7 @@ public import FLT.Mazur.WeierstrassLeftSmoothAllOrdinaryTriple
 public import FLT.Mazur.WeierstrassLeftSmoothAssociativity
 public import FLT.Mazur.WeierstrassLeftSmoothCenterAction
 public import FLT.Mazur.WeierstrassLeftSmoothCenterInvariant
+public import FLT.Mazur.WeierstrassLeftSmoothChartCenterEquality
 public import FLT.Mazur.WeierstrassLeftSmoothCrossInput
 public import FLT.Mazur.WeierstrassLeftSmoothFactorAddition
 public import FLT.Mazur.WeierstrassLeftSmoothFactorProduct
@@ -8409,6 +8428,9 @@ public import FLT.Mazur.WeierstrassModificationYSaturation
 public import FLT.Mazur.WeierstrassModificationYScaleLocalization
 public import FLT.Mazur.WeierstrassModificationYTotalTransform
 public import FLT.Mazur.WeierstrassModificationYTripleOverlap
+public import FLT.Mazur.WeierstrassModifiedSmoothAffineRefinement
+public import FLT.Mazur.WeierstrassModifiedSmoothOutputCoordinates
+public import FLT.Mazur.WeierstrassModifiedSmoothTotalCover
 public import FLT.Mazur.WeierstrassNegationAdditionDescent
 public import FLT.Mazur.WeierstrassNegationAdditionPullback
 public import FLT.Mazur.WeierstrassNegationCover
