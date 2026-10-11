@@ -2543,6 +2543,7 @@ public import FLT.Mazur.AdicPresentationFirstCotangent
 public import FLT.Mazur.AdicSectionIsoReconstruction
 public import FLT.Mazur.AdicSeparatedDerivation
 public import FLT.Mazur.AdicSeparatedDifferentials
+public import FLT.Mazur.AdicSquareZeroCompletion
 public import FLT.Mazur.AdicSquareZeroConormal
 public import FLT.Mazur.AffineAdicCohomologyImage
 public import FLT.Mazur.AffineAdicFormalComparison
