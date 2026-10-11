@@ -3921,6 +3921,7 @@ public import FLT.Mazur.EtaleLocalParameterIdeals
 public import FLT.Mazur.EtaleMarkingScheme
 public import FLT.Mazur.EtalePolynomialPointLift
 public import FLT.Mazur.EtalePolynomialSeparableLift
+public import FLT.Mazur.EtalePolynomialSeparablePointDescent
 public import FLT.Mazur.EtalePolynomialStalkLift
 public import FLT.Mazur.EtalePrimeParameterIdeals
 public import FLT.Mazur.EtaleQuasiFiniteCartierDescent
