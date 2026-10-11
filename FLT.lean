@@ -6791,6 +6791,7 @@ public import FLT.Mazur.SchemeDescentPairTransport
 public import FLT.Mazur.SchemeDescentTransportSquares
 public import FLT.Mazur.SchemeDescentTransportTest
 public import FLT.Mazur.SchemeDisjointBaseChange
+public import FLT.Mazur.SchemeEffectiveEpiSections
 public import FLT.Mazur.SchemeFamilyTripleOverlap
 public import FLT.Mazur.SchemeFiniteGroupAffineDescent
 public import FLT.Mazur.SchemeFiniteGroupDescent
@@ -7235,6 +7236,7 @@ public import FLT.Mazur.TildeInvertibleLocal
 public import FLT.Mazur.TildePrincipalOpen
 public import FLT.Mazur.TildeSourceSectionComparison
 public import FLT.Mazur.TorusChartScalars
+public import FLT.Mazur.TranslatedHilbertChartFunctions
 public import FLT.Mazur.TranslatedHilbertChartOverlap
 public import FLT.Mazur.TranslatedHilbertCoverageCriterion
 public import FLT.Mazur.TranslatedHilbertGluedBase
@@ -7246,10 +7248,17 @@ public import FLT.Mazur.TranslatedHilbertGluedOpen
 public import FLT.Mazur.TranslatedHilbertGluedPicard
 public import FLT.Mazur.TranslatedHilbertGluing
 public import FLT.Mazur.TranslatedHilbertLocalCoverage
+public import FLT.Mazur.TranslatedHilbertOpenBaseChange
+public import FLT.Mazur.TranslatedHilbertOpenFunctions
+public import FLT.Mazur.TranslatedHilbertOrbitFibers
+public import FLT.Mazur.TranslatedHilbertOrbitHomeomorph
+public import FLT.Mazur.TranslatedHilbertOrbitOpen
 public import FLT.Mazur.TranslatedHilbertOverlapIdentities
 public import FLT.Mazur.TranslatedHilbertPicardChart
+public import FLT.Mazur.TranslatedHilbertRestrictedRelation
 public import FLT.Mazur.TranslatedHilbertSchemeCocycle
 public import FLT.Mazur.TranslatedHilbertSchemeTriple
+public import FLT.Mazur.TranslatedHilbertSourceIntersection
 public import FLT.Mazur.TranslatedHilbertTestUnion
 public import FLT.Mazur.TranslatedHilbertTestUnionBaseChange
 public import FLT.Mazur.TranslatedHilbertTestUnionLift
@@ -7932,6 +7941,16 @@ public import FLT.Mazur.WeierstrassDividedSkippedChartSupport
 public import FLT.Mazur.WeierstrassDividedSkippedTensorIntersection
 public import FLT.Mazur.WeierstrassDividedSmoothCoefficientEmbedding
 public import FLT.Mazur.WeierstrassDividedSuccessiveOriginalY
+public import FLT.Mazur.WeierstrassDividedSuccessorActionAtlas
+public import FLT.Mazur.WeierstrassDividedSuccessorActionInput
+public import FLT.Mazur.WeierstrassDividedSuccessorAtlasCoordinates
+public import FLT.Mazur.WeierstrassDividedSuccessorExteriorAction
+public import FLT.Mazur.WeierstrassDividedSuccessorExteriorAtlas
+public import FLT.Mazur.WeierstrassDividedSuccessorInfinityAction
+public import FLT.Mazur.WeierstrassDividedSuccessorInfinityCenter
+public import FLT.Mazur.WeierstrassDividedSuccessorOutputCover
+public import FLT.Mazur.WeierstrassDividedSuccessorRetainedCoordinates
+public import FLT.Mazur.WeierstrassDividedSuccessorUnitAction
 public import FLT.Mazur.WeierstrassDividedTensorAtlasComparison
 public import FLT.Mazur.WeierstrassDividedTensorYBoundary
 public import FLT.Mazur.WeierstrassDividedTerminalAllExteriorNodes
@@ -8884,6 +8903,7 @@ public import FLT.Mazur.WeierstrassSuccessiveReesSchemeOverlap
 public import FLT.Mazur.WeierstrassSuccessiveReplacementAtlas
 public import FLT.Mazur.WeierstrassSuccessiveReplacementGluing
 public import FLT.Mazur.WeierstrassSuccessiveReplacementReassociation
+public import FLT.Mazur.WeierstrassSuccessiveRetainedCenter
 public import FLT.Mazur.WeierstrassSuccessiveScaleEmbedding
 public import FLT.Mazur.WeierstrassSuccessiveScaleFractions
 public import FLT.Mazur.WeierstrassSuccessiveScaleReesChart
@@ -8898,6 +8918,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXConicPunctureDescent
 public import FLT.Mazur.WeierstrassSuccessiveXConicPunctureInclusion
 public import FLT.Mazur.WeierstrassSuccessiveXConicPuncturedParameters
 public import FLT.Mazur.WeierstrassSuccessiveXContraction
+public import FLT.Mazur.WeierstrassSuccessiveXDeeperCenter
 public import FLT.Mazur.WeierstrassSuccessiveXDepthComparison
 public import FLT.Mazur.WeierstrassSuccessiveXDepthTensorOverlap
 public import FLT.Mazur.WeierstrassSuccessiveXFlat
