@@ -5940,6 +5940,7 @@ public import FLT.Mazur.PrincipalQuotientRepresentatives
 public import FLT.Mazur.PrincipalRefinementOpenImmersion
 public import FLT.Mazur.PrincipalRefinementSquareCriteria
 public import FLT.Mazur.PrincipalRelationClosure
+public import FLT.Mazur.PrincipalResidueTensor
 public import FLT.Mazur.PrincipalRestrictionEquivalence
 public import FLT.Mazur.PrincipalScalarCohomology
 public import FLT.Mazur.PrincipalScalarCohomologyReduction
