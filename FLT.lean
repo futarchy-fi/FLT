@@ -4087,6 +4087,7 @@ public import FLT.Mazur.FiniteTypeBaseClassDivisorNaturality
 public import FLT.Mazur.FiniteTypeBaseIndependentLineModel
 public import FLT.Mazur.FiniteTypeDiagramRefinement
 public import FLT.Mazur.FiniteTypeDiagramStages
+public import FLT.Mazur.FiniteTypeFppfRepresentativeOpenOverlap
 public import FLT.Mazur.FiniteTypePointedAbelFppfIso
 public import FLT.Mazur.FiniteTypePointedFppfAcyclicOpen
 public import FLT.Mazur.FiniteTypePolynomialArrows
@@ -4099,6 +4100,7 @@ public import FLT.Mazur.FiniteTypePrincipalMaps
 public import FLT.Mazur.FiniteTypePrincipalPresentation
 public import FLT.Mazur.FiniteTypePrincipalSurjectiveLifts
 public import FLT.Mazur.FiniteTypeRelationPresentation
+public import FLT.Mazur.FiniteTypeRelativeClassOpenNaturality
 public import FLT.Mazur.FiniteTypeTestAbelEquivalence
 public import FLT.Mazur.FiniteTypeTestAcyclicDirectImage
 public import FLT.Mazur.FiniteTypeTestAcyclicOpen
@@ -4108,6 +4110,11 @@ public import FLT.Mazur.FiniteTypeTestClassDivisorNaturality
 public import FLT.Mazur.FiniteTypeTestLineDivisor
 public import FLT.Mazur.FiniteTypeTestRelativePicardOpen
 public import FLT.Mazur.FiniteTypeTestSectionCartier
+public import FLT.Mazur.FiniteTypeUnpointedAcyclicRepresentableInclusion
+public import FLT.Mazur.FiniteTypeUnpointedFppfAcyclicOpen
+public import FLT.Mazur.FiniteTypeUnpointedFppfOpenNaturality
+public import FLT.Mazur.FiniteTypeUnpointedFppfOpenRepresentation
+public import FLT.Mazur.FiniteTypeUnpointedFppfOpenYoneda
 public import FLT.Mazur.FiniteUnramifiedConstantFiber
 public import FLT.Mazur.FiniteUnramifiedFieldLength
 public import FLT.Mazur.FinitelyPresentedImmersedProperCover
@@ -6229,6 +6236,7 @@ public import FLT.Mazur.RelativeDirectImageForgetting
 public import FLT.Mazur.RelativeDirectImageOpenResolution
 public import FLT.Mazur.RelativeFiberMorphism
 public import FLT.Mazur.RelativeFiberNakayama
+public import FLT.Mazur.RelativeFppfComparisonCover
 public import FLT.Mazur.RelativeFppfLocalSubfunctor
 public import FLT.Mazur.RelativeIdealAmbientHom
 public import FLT.Mazur.RelativeIdealAmbientIsoSquare
@@ -6540,6 +6548,7 @@ public import FLT.Mazur.SchemeFppfLineGluingFunctor
 public import FLT.Mazur.SchemeFppfLinePullbackFaithful
 public import FLT.Mazur.SchemeFppfLineRecoveryTriangle
 public import FLT.Mazur.SchemeFppfLineSourceRecovery
+public import FLT.Mazur.SchemeFppfOpenDescent
 public import FLT.Mazur.SchemeFppfSourceLineGlobalOverlap
 public import FLT.Mazur.SchemeFppfSourceLineGlobalRecovery
 public import FLT.Mazur.SchemeFppfSourceLineGluing
@@ -6849,6 +6858,7 @@ public import FLT.Mazur.StructureDirectImageHZero
 public import FLT.Mazur.StructureDirectImageSections
 public import FLT.Mazur.StructureIdealPowerQuotient
 public import FLT.Mazur.StructureImageOpenChart
+public import FLT.Mazur.SubfunctorRepresentedPullback
 public import FLT.Mazur.SuccessiveIncidenceAlgebra
 public import FLT.Mazur.SurjectiveAlgHomKernelEquiv
 public import FLT.Mazur.SurjectiveDominantEpi
@@ -6996,6 +7006,9 @@ public import FLT.Mazur.UniversalWeierstrassNormalizedSliceRing
 public import FLT.Mazur.UniversalWeierstrassParameter
 public import FLT.Mazur.UniversallyClosedFiniteCover
 public import FLT.Mazur.UniversallyDistinctSections
+public import FLT.Mazur.UnpointedAcyclicFppfDetection
+public import FLT.Mazur.UnpointedAcyclicOpenPointedCompatibility
+public import FLT.Mazur.UnpointedLocalAcyclicFppfSheaf
 public import FLT.Mazur.UnramifiedSectionImmersion
 public import FLT.Mazur.UnrestrictedSmoothFamilyCartier
 public import FLT.Mazur.ValuationProjectiveNormalization
