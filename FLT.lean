@@ -2542,6 +2542,7 @@ public import FLT.Mazur.AdicFiniteGenerationLifting
 public import FLT.Mazur.AdicFiniteKernelEquiv
 public import FLT.Mazur.AdicFiniteModuleExt
 public import FLT.Mazur.AdicFiniteModuleLift
+public import FLT.Mazur.AdicFormalCotangentSpaceMap
 public import FLT.Mazur.AdicFormalLiftContinuity
 public import FLT.Mazur.AdicFormalLiftProjection
 public import FLT.Mazur.AdicFormalPresentationHom
