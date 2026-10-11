@@ -3098,6 +3098,7 @@ public import FLT.Mazur.BaseMarkedHilbertFullGeometry
 public import FLT.Mazur.BaseMarkedHilbertFullIntersection
 public import FLT.Mazur.BaseMarkedHilbertFullLift
 public import FLT.Mazur.BaseMarkedHilbertFullLiftRange
+public import FLT.Mazur.BaseMarkedHilbertFullRelation
 public import FLT.Mazur.BaseMarkedHilbertFullRepresentation
 public import FLT.Mazur.BaseMarkedHilbertFullUnion
 public import FLT.Mazur.BaseMarkedHilbertGluedBase
