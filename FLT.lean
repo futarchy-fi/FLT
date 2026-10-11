@@ -7599,6 +7599,7 @@ public import FLT.Mazur.VariableHilbertRelationBridgeIso
 public import FLT.Mazur.VariableHilbertRelationCover
 public import FLT.Mazur.VariableHilbertSourceIntersection
 public import FLT.Mazur.VariableHilbertSplitChange
+public import FLT.Mazur.VariableHilbertSplitFunctions
 public import FLT.Mazur.VariableHilbertSplitQuotient
 public import FLT.Mazur.VariableTranslatedHilbertChart
 public import FLT.Mazur.VariableTranslatedHilbertOverlap
