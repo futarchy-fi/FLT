@@ -7338,6 +7338,7 @@ public import FLT.Mazur.WeierstrassDividedPositiveEqualityBranchIndices
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityBranches
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityCocone
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityCycle
+public import FLT.Mazur.WeierstrassDividedPositiveEqualityCycleCoverage
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityCycleEndCharts
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityCycleIndices
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityCycleRanges
