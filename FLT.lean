@@ -3090,6 +3090,7 @@ public import FLT.Mazur.BlowupFractionPrincipalIdeal
 public import FLT.Mazur.BlowupFractionPrincipalLift
 public import FLT.Mazur.BlowupFractionRatioCover
 public import FLT.Mazur.BlowupFractionRatioLift
+public import FLT.Mazur.BlowupFractionTensorChart
 public import FLT.Mazur.BlowupReesContraction
 public import FLT.Mazur.BlowupReesDegreeZeroEquiv
 public import FLT.Mazur.BlowupReesDegreeZeroMap
