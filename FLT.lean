@@ -2846,6 +2846,7 @@ public import FLT.Mazur.AffineStalkEssentialFiniteType
 public import FLT.Mazur.AffineStalkExtension
 public import FLT.Mazur.AffineStalkFirstCotangent
 public import FLT.Mazur.AffineStalkMorphism
+public import FLT.Mazur.AffineStructuralSmoothLocus
 public import FLT.Mazur.AffineTensorCoactionRecognition
 public import FLT.Mazur.AffineTensorCoalgebraComparison
 public import FLT.Mazur.AffineTensorCocycle
@@ -4862,6 +4863,7 @@ public import FLT.Mazur.LocalizedPolynomialStableRelations
 public import FLT.Mazur.LocalizedPolynomialStableStages
 public import FLT.Mazur.LocalizedSmoothFiniteFlatCartier
 public import FLT.Mazur.LocalizedSmoothLocalEquation
+public import FLT.Mazur.LocalizedStalkSmoothGenerization
 public import FLT.Mazur.LocalizedTensorCancellation
 public import FLT.Mazur.LocalizedTensorExactness
 public import FLT.Mazur.LocallyFiniteFreeOpenCover
@@ -5340,6 +5342,9 @@ public import FLT.Mazur.PolygonCompleteBoundarySectionTransport
 public import FLT.Mazur.PolygonCompleteBoundaryTransitionCoherence
 public import FLT.Mazur.PolygonCompleteClosedFiber
 public import FLT.Mazur.PolygonCompleteClosedGenus
+public import FLT.Mazur.PolygonCompleteClosedSingularPoints
+public import FLT.Mazur.PolygonCompleteClosedSmoothLocus
+public import FLT.Mazur.PolygonCompleteClosedSpecialization
 public import FLT.Mazur.PolygonCompleteCoefficientAmple
 public import FLT.Mazur.PolygonCompleteCoefficientCoherence
 public import FLT.Mazur.PolygonCompleteCoefficientLine
@@ -5347,6 +5352,9 @@ public import FLT.Mazur.PolygonCompleteCoefficientOpens
 public import FLT.Mazur.PolygonCompleteCoefficientReconstruction
 public import FLT.Mazur.PolygonCompleteCoordinateEvaluation
 public import FLT.Mazur.PolygonCompleteFamilyFlatness
+public import FLT.Mazur.PolygonCompleteFiberMarkings
+public import FLT.Mazur.PolygonCompleteGenericSmooth
+public import FLT.Mazur.PolygonCompleteGeometricGenericFiber
 public import FLT.Mazur.PolygonCompleteLineOriginalReduction
 public import FLT.Mazur.PolygonCompleteLineQuotient
 public import FLT.Mazur.PolygonCompleteMarkingSpecialization
@@ -5368,6 +5376,7 @@ public import FLT.Mazur.PolygonCompleteNodeFirstCotangent
 public import FLT.Mazur.PolygonCompleteNodeGenericDifferentials
 public import FLT.Mazur.PolygonCompleteNodeGenericH1
 public import FLT.Mazur.PolygonCompleteNodeGenericSmooth
+public import FLT.Mazur.PolygonCompleteNodeGenerizationSmooth
 public import FLT.Mazur.PolygonCompleteNodeGermH1Equiv
 public import FLT.Mazur.PolygonCompleteNodeInfinitesimalLift
 public import FLT.Mazur.PolygonCompleteNodeLocalFiniteness
