@@ -5658,6 +5658,7 @@ public import FLT.Mazur.PolygonMultipleStageGeneratingCover
 public import FLT.Mazur.PolygonMultipleStageUnitChart
 public import FLT.Mazur.PolygonMultipleVeroneseIso
 public import FLT.Mazur.PolygonMultipleVeroneseProj
+public import FLT.Mazur.PolygonMultipleVeroneseStageNaturality
 public import FLT.Mazur.PolygonMultipleVeroneseStructuralMap
 public import FLT.Mazur.PolygonMultipleVeroneseUnitEvaluation
 public import FLT.Mazur.PolygonNodalCore
