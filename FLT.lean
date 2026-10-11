@@ -6528,6 +6528,7 @@ public import FLT.Mazur.RelativeRelationOrbitCoequalizer
 public import FLT.Mazur.RelativeRelationOrbitOpens
 public import FLT.Mazur.RelativeRelationOrbitTopology
 public import FLT.Mazur.RelativeRelationRingedCofork
+public import FLT.Mazur.RelativeRelationRingedDescent
 public import FLT.Mazur.RelativeSectionAmpleBaseChange
 public import FLT.Mazur.RelativeSectionAmpleLocality
 public import FLT.Mazur.RelativeSerreAffineAcyclic
