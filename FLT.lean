@@ -6677,6 +6677,7 @@ public import FLT.Mazur.SchemeAffineFppfSourceCover
 public import FLT.Mazur.SchemeAffineImageTestComparison
 public import FLT.Mazur.SchemeAffineImageTestNaturality
 public import FLT.Mazur.SchemeAffineImageTestRefinement
+public import FLT.Mazur.SchemeAffineLiftUniqueness
 public import FLT.Mazur.SchemeAffineNamedCrossSectionMaps
 public import FLT.Mazur.SchemeAffineNamedSectionMapEquation
 public import FLT.Mazur.SchemeAffineNamedSectionPostcomposition
@@ -7635,7 +7636,13 @@ public import FLT.Mazur.WeierstrassDividedFiniteYBoundary
 public import FLT.Mazur.WeierstrassDividedFiniteYStep
 public import FLT.Mazur.WeierstrassDividedFirstActionAtlas
 public import FLT.Mazur.WeierstrassDividedFirstActionInput
+public import FLT.Mazur.WeierstrassDividedFirstAtlasCoordinates
 public import FLT.Mazur.WeierstrassDividedFirstAtlasFractionAction
+public import FLT.Mazur.WeierstrassDividedFirstCrossedAction
+public import FLT.Mazur.WeierstrassDividedFirstDividedAction
+public import FLT.Mazur.WeierstrassDividedFirstExteriorAction
+public import FLT.Mazur.WeierstrassDividedFirstExteriorCenter
+public import FLT.Mazur.WeierstrassDividedFirstExteriorCoordinates
 public import FLT.Mazur.WeierstrassDividedFirstFractionAction
 public import FLT.Mazur.WeierstrassDividedFirstFractionAlgebra
 public import FLT.Mazur.WeierstrassDividedFirstFractionCenter
@@ -7648,6 +7655,10 @@ public import FLT.Mazur.WeierstrassDividedFirstFractionOpen
 public import FLT.Mazur.WeierstrassDividedFirstFractionOverlap
 public import FLT.Mazur.WeierstrassDividedFirstFractionUnique
 public import FLT.Mazur.WeierstrassDividedFirstInfinityAction
+public import FLT.Mazur.WeierstrassDividedFirstInfinityCenter
+public import FLT.Mazur.WeierstrassDividedFirstOutputCover
+public import FLT.Mazur.WeierstrassDividedFirstSuccessorAction
+public import FLT.Mazur.WeierstrassDividedFirstUnitAction
 public import FLT.Mazur.WeierstrassDividedFullResidueAtlas
 public import FLT.Mazur.WeierstrassDividedGlobalConicCoordinates
 public import FLT.Mazur.WeierstrassDividedGlobalConicIntersection
@@ -7666,8 +7677,10 @@ public import FLT.Mazur.WeierstrassDividedGlobalInitialAction
 public import FLT.Mazur.WeierstrassDividedGlobalInitialActionGeometry
 public import FLT.Mazur.WeierstrassDividedGlobalInitialActionLaws
 public import FLT.Mazur.WeierstrassDividedGlobalInitialComparison
+public import FLT.Mazur.WeierstrassDividedGlobalRegularLift
 public import FLT.Mazur.WeierstrassDividedGlobalResidueNodes
 public import FLT.Mazur.WeierstrassDividedGlobalResidueOverlap
+public import FLT.Mazur.WeierstrassDividedGlobalStepExterior
 public import FLT.Mazur.WeierstrassDividedGlobalStepOriginal
 public import FLT.Mazur.WeierstrassDividedGlobalSuccessiveCharts
 public import FLT.Mazur.WeierstrassDividedGlobalSuccessiveCover
@@ -8821,9 +8834,11 @@ public import FLT.Mazur.WeierstrassSquareZeroTorsionRigidity
 public import FLT.Mazur.WeierstrassSuccessiveCenterAction
 public import FLT.Mazur.WeierstrassSuccessiveCenterScaling
 public import FLT.Mazur.WeierstrassSuccessiveDepthProper
+public import FLT.Mazur.WeierstrassSuccessiveExteriorCenter
 public import FLT.Mazur.WeierstrassSuccessiveFractionAction
 public import FLT.Mazur.WeierstrassSuccessiveFractionRegular
 public import FLT.Mazur.WeierstrassSuccessiveHorizontalPreimage
+public import FLT.Mazur.WeierstrassSuccessiveInfinityCenter
 public import FLT.Mazur.WeierstrassSuccessiveLocalAction
 public import FLT.Mazur.WeierstrassSuccessiveOriginalOpen
 public import FLT.Mazur.WeierstrassSuccessiveReesCoordinates
