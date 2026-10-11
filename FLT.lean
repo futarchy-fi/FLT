@@ -5456,6 +5456,7 @@ public import FLT.Mazur.PolygonCompleteClosedH1Scalars
 public import FLT.Mazur.PolygonCompleteClosedSingularPoints
 public import FLT.Mazur.PolygonCompleteClosedSmoothLocus
 public import FLT.Mazur.PolygonCompleteClosedSpecialization
+public import FLT.Mazur.PolygonCompleteCoefficientAdicComparison
 public import FLT.Mazur.PolygonCompleteCoefficientAmple
 public import FLT.Mazur.PolygonCompleteCoefficientCoherence
 public import FLT.Mazur.PolygonCompleteCoefficientHomExt
