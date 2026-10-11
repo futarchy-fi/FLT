@@ -6484,6 +6484,7 @@ public import FLT.Mazur.SchemeFppfLineGluingFunctor
 public import FLT.Mazur.SchemeFppfLinePullbackFaithful
 public import FLT.Mazur.SchemeFppfLineRecoveryTriangle
 public import FLT.Mazur.SchemeFppfLineSourceRecovery
+public import FLT.Mazur.SchemeFppfOpenDescent
 public import FLT.Mazur.SchemeFppfSourceLineGlobalOverlap
 public import FLT.Mazur.SchemeFppfSourceLineGlobalRecovery
 public import FLT.Mazur.SchemeFppfSourceLineGluing
