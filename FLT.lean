@@ -7188,6 +7188,7 @@ public import FLT.Mazur.SectionGradedLinePullback
 public import FLT.Mazur.SectionGradedLineRingCoherence
 public import FLT.Mazur.SectionGradedLocalCoordinates
 public import FLT.Mazur.SectionGradedMultiplication
+public import FLT.Mazur.SectionGradedNonzeroProduct
 public import FLT.Mazur.SectionGradedPowerGenerators
 public import FLT.Mazur.SectionGradedPowerRatios
 public import FLT.Mazur.SectionGradedPowers
