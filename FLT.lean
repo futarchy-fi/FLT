@@ -7959,6 +7959,7 @@ public import FLT.Mazur.WeierstrassGlobalInfinitySwap
 public import FLT.Mazur.WeierstrassGlobalModificationFlat
 public import FLT.Mazur.WeierstrassGlobalModificationFractionCover
 public import FLT.Mazur.WeierstrassGlobalModificationGluing
+public import FLT.Mazur.WeierstrassGlobalModificationLocalAction
 public import FLT.Mazur.WeierstrassGlobalModificationOriginalOpen
 public import FLT.Mazur.WeierstrassGlobalModificationProper
 public import FLT.Mazur.WeierstrassGlobalModificationSmoothCover
