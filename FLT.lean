@@ -5764,6 +5764,7 @@ public import FLT.Mazur.PolygonCompletePointWeierstrassEquation
 public import FLT.Mazur.PolygonCompletePrincipalClosedFiber
 public import FLT.Mazur.PolygonCompleteSmoothDimensionOpen
 public import FLT.Mazur.PolygonCompleteSmoothIrreducible
+public import FLT.Mazur.PolygonCompleteSmoothPointAffine
 public import FLT.Mazur.PolygonCompleteStageMarkings
 public import FLT.Mazur.PolygonCompleteStructureCohomology
 public import FLT.Mazur.PolygonCompleteUniversalFunctions
