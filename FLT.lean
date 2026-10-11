@@ -2915,6 +2915,7 @@ public import FLT.Mazur.AmbientHilbertUniversalPullback
 public import FLT.Mazur.AmbientQuotientRelativeBaseChange
 public import FLT.Mazur.AmbientQuotientRelativeSpace
 public import FLT.Mazur.AmbientQuotientSchemeFamilies
+public import FLT.Mazur.AmpleAcyclicNonzeroSection
 public import FLT.Mazur.AmpleAffineBase
 public import FLT.Mazur.AmpleAffinePullback
 public import FLT.Mazur.AmpleAmbientHilbertClassification
@@ -3235,6 +3236,7 @@ public import FLT.Mazur.ChowWitnessFiniteCohomology
 public import FLT.Mazur.ChowWitnessGenericRestriction
 public import FLT.Mazur.ChowWitnessSectionsLocalization
 public import FLT.Mazur.ChowWitnessSectionsLocalizationAssembly
+public import FLT.Mazur.ClassifiedGenusOneCartesian
 public import FLT.Mazur.ClassifiedGenusOneFamily
 public import FLT.Mazur.ClopenLimitDescent
 public import FLT.Mazur.ClosedCohomologyFinite
@@ -3397,6 +3399,8 @@ public import FLT.Mazur.CurveNode
 public import FLT.Mazur.CurveNodeAffineCompletion
 public import FLT.Mazur.CurveNodeOpenCover
 public import FLT.Mazur.CurveNodeOpenImmersion
+public import FLT.Mazur.CurveNonspecialDivisor
+public import FLT.Mazur.CurveNonspecialLine
 public import FLT.Mazur.CurvePicardDegree
 public import FLT.Mazur.CurvePositiveDegreeAffineSection
 public import FLT.Mazur.CurvePositiveDegreeAmple
@@ -3955,6 +3959,7 @@ public import FLT.Mazur.FiniteGroupQuotientPrincipalChart
 public import FLT.Mazur.FiniteGroupQuotientSchemePoints
 public import FLT.Mazur.FiniteGroupSpectrumAction
 public import FLT.Mazur.FiniteHomologyFiberVanishing
+public import FLT.Mazur.FiniteIdealConditionDimension
 public import FLT.Mazur.FiniteIntegerModelElementRelations
 public import FLT.Mazur.FiniteIntegerModelPullbacks
 public import FLT.Mazur.FiniteIntegerModelRelations
@@ -4621,6 +4626,7 @@ public import FLT.Mazur.IdealAdicUniformQuotientVanishing
 public import FLT.Mazur.IdealCartierNeighborhood
 public import FLT.Mazur.IdealCohomologyAmpleAnyBase
 public import FLT.Mazur.IdealCohomologyAmpleCriterion
+public import FLT.Mazur.IdealConditionAcyclic
 public import FLT.Mazur.IdealFamilyIsomorphism
 public import FLT.Mazur.IdealIsomorphismExtension
 public import FLT.Mazur.IdealModuleAffineTensor
@@ -5141,6 +5147,7 @@ public import FLT.Mazur.NoetherianSumCechInclusion
 public import FLT.Mazur.NoetherianSumCechTerms
 public import FLT.Mazur.NoetherianUniversalStructureSheaf
 public import FLT.Mazur.NonzeroLineSectionExact
+public import FLT.Mazur.NonzeroSectionPointCondition
 public import FLT.Mazur.NormalizedSectionLine
 public import FLT.Mazur.NormalizedSectionLineBaseChange
 public import FLT.Mazur.NormalizedSectionLineCommonPrincipal
@@ -5367,6 +5374,8 @@ public import FLT.Mazur.PolygonCompleteBoundaryQuotientTransition
 public import FLT.Mazur.PolygonCompleteBoundarySectionProjection
 public import FLT.Mazur.PolygonCompleteBoundarySectionTransport
 public import FLT.Mazur.PolygonCompleteBoundaryTransitionCoherence
+public import FLT.Mazur.PolygonCompleteCartesianMarkings
+public import FLT.Mazur.PolygonCompleteClassifiedFibers
 public import FLT.Mazur.PolygonCompleteClosedFiber
 public import FLT.Mazur.PolygonCompleteClosedGenus
 public import FLT.Mazur.PolygonCompleteClosedH1Scalars
@@ -5380,6 +5389,7 @@ public import FLT.Mazur.PolygonCompleteCoefficientOpens
 public import FLT.Mazur.PolygonCompleteCoefficientReconstruction
 public import FLT.Mazur.PolygonCompleteConstantSections
 public import FLT.Mazur.PolygonCompleteCoordinateEvaluation
+public import FLT.Mazur.PolygonCompleteDivisorRestriction
 public import FLT.Mazur.PolygonCompleteFamilyFlatness
 public import FLT.Mazur.PolygonCompleteFiberMarkings
 public import FLT.Mazur.PolygonCompleteFieldH1
@@ -5388,6 +5398,7 @@ public import FLT.Mazur.PolygonCompleteGenericH1
 public import FLT.Mazur.PolygonCompleteGenericPureDimension
 public import FLT.Mazur.PolygonCompleteGenericRelativeDimension
 public import FLT.Mazur.PolygonCompleteGenericSmooth
+public import FLT.Mazur.PolygonCompleteGenusOneFamily
 public import FLT.Mazur.PolygonCompleteGeometricGenericFiber
 public import FLT.Mazur.PolygonCompleteGeometricallyConnected
 public import FLT.Mazur.PolygonCompleteGeometricallyReduced
@@ -5395,7 +5406,12 @@ public import FLT.Mazur.PolygonCompleteH1Rank
 public import FLT.Mazur.PolygonCompleteH1Reduction
 public import FLT.Mazur.PolygonCompleteLineOriginalReduction
 public import FLT.Mazur.PolygonCompleteLineQuotient
+public import FLT.Mazur.PolygonCompleteMarkedClosedFiber
+public import FLT.Mazur.PolygonCompleteMarkingCartier
+public import FLT.Mazur.PolygonCompleteMarkingDivisor
+public import FLT.Mazur.PolygonCompleteMarkingNaturality
 public import FLT.Mazur.PolygonCompleteMarkingSpecialization
+public import FLT.Mazur.PolygonCompleteMarkingUniqueness
 public import FLT.Mazur.PolygonCompleteNodeAffineCotangentRank
 public import FLT.Mazur.PolygonCompleteNodeAffineIdeal
 public import FLT.Mazur.PolygonCompleteNodeArithmeticAction
@@ -5433,6 +5449,7 @@ public import FLT.Mazur.PolygonCompleteNodeStalkH1Equiv
 public import FLT.Mazur.PolygonCompleteNodeStalkMap
 public import FLT.Mazur.PolygonCompletePrincipalClosedFiber
 public import FLT.Mazur.PolygonCompleteSmoothDimensionOpen
+public import FLT.Mazur.PolygonCompleteStageMarkings
 public import FLT.Mazur.PolygonCompleteStructureCohomology
 public import FLT.Mazur.PolygonCompleteUniversalFunctions
 public import FLT.Mazur.PolygonCompleteZeroParameterFiber
@@ -5735,6 +5752,7 @@ public import FLT.Mazur.PowerSeriesLeadingComposition
 public import FLT.Mazur.PowerSeriesNilpotentHom
 public import FLT.Mazur.PowerSeriesParameterFlatness
 public import FLT.Mazur.PowerSeriesQuotientCompletion
+public import FLT.Mazur.PowerSeriesSchemePointExt
 public import FLT.Mazur.PowerSeriesStageReconstruction
 public import FLT.Mazur.PowerSeriesStageRingLift
 public import FLT.Mazur.PowerSeriesSubstitutionEquiv
@@ -6784,6 +6802,8 @@ public import FLT.Mazur.SectionCartierBaseOpen
 public import FLT.Mazur.SectionCartierOpenDescent
 public import FLT.Mazur.SectionChartGenerators
 public import FLT.Mazur.SectionCharts
+public import FLT.Mazur.SectionConditionAcyclic
+public import FLT.Mazur.SectionConditionDimension
 public import FLT.Mazur.SectionCoverCoordinates
 public import FLT.Mazur.SectionCoverDiscrepancy
 public import FLT.Mazur.SectionDivisors
