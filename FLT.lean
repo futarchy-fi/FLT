@@ -7935,6 +7935,7 @@ public import FLT.Mazur.WeierstrassDividedSuccessiveOriginalY
 public import FLT.Mazur.WeierstrassDividedSuccessorActionAtlas
 public import FLT.Mazur.WeierstrassDividedSuccessorActionInput
 public import FLT.Mazur.WeierstrassDividedSuccessorAtlasCoordinates
+public import FLT.Mazur.WeierstrassDividedSuccessorDividedAction
 public import FLT.Mazur.WeierstrassDividedSuccessorExteriorAction
 public import FLT.Mazur.WeierstrassDividedSuccessorExteriorAtlas
 public import FLT.Mazur.WeierstrassDividedSuccessorFractionAction
