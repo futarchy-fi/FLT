@@ -5267,6 +5267,7 @@ public import FLT.Mazur.OneGonSeparated
 public import FLT.Mazur.OneGonSmoothingAffinePresentation
 public import FLT.Mazur.OneGonSmoothingEquation
 public import FLT.Mazur.OneGonSmoothingFamily
+public import FLT.Mazur.OneGonSmoothingInfinityChart
 public import FLT.Mazur.OneGonSmoothingInfinityCoordinates
 public import FLT.Mazur.OneGonSmoothingNodeChart
 public import FLT.Mazur.OneGonTransition
