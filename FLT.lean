@@ -5291,6 +5291,7 @@ public import FLT.Mazur.OrderedCurvePowerSmooth
 public import FLT.Mazur.OrderedCurvePowerSuccessor
 public import FLT.Mazur.OrderedDivisorLineSpecialization
 public import FLT.Mazur.OrderedDivisorSectionSpecialization
+public import FLT.Mazur.OrderedDivisorTranslation
 public import FLT.Mazur.OrderedProjectiveHilbertNaturality
 public import FLT.Mazur.OrderedProjectiveHilbertParameter
 public import FLT.Mazur.OrderedRelativeIdealBaseChange
