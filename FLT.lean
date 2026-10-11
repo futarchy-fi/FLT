@@ -2597,6 +2597,7 @@ public import FLT.Mazur.AdicSquareZeroFormalHomotopy
 public import FLT.Mazur.AffineAdicCohomologyImage
 public import FLT.Mazur.AffineAdicFormalComparison
 public import FLT.Mazur.AffineAlgebraDescentCoaction
+public import FLT.Mazur.AffineAlgebraDescentInvariantQuotient
 public import FLT.Mazur.AffineAlgebraDescentKernelPair
 public import FLT.Mazur.AffineAlgebraDescentMorphisms
 public import FLT.Mazur.AffineAlgebraDescentOverlap
