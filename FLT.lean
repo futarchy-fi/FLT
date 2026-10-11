@@ -3234,6 +3234,7 @@ public import FLT.Mazur.ChowWitnessFiniteCohomology
 public import FLT.Mazur.ChowWitnessGenericRestriction
 public import FLT.Mazur.ChowWitnessSectionsLocalization
 public import FLT.Mazur.ChowWitnessSectionsLocalizationAssembly
+public import FLT.Mazur.ClassifiedGenusOneCartesian
 public import FLT.Mazur.ClassifiedGenusOneFamily
 public import FLT.Mazur.ClopenLimitDescent
 public import FLT.Mazur.ClosedCohomologyFinite
