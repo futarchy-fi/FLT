@@ -8029,6 +8029,7 @@ public import FLT.Mazur.WeierstrassIntegralTripleProduct
 public import FLT.Mazur.WeierstrassIntegralUnitPoint
 public import FLT.Mazur.WeierstrassIntegralZeroSection
 public import FLT.Mazur.WeierstrassLeftSmoothAdditionGluing
+public import FLT.Mazur.WeierstrassLeftSmoothAdditionOutputRegular
 public import FLT.Mazur.WeierstrassLeftSmoothAdditionStructure
 public import FLT.Mazur.WeierstrassLeftSmoothAffineAddition
 public import FLT.Mazur.WeierstrassLeftSmoothAffineIdentity
