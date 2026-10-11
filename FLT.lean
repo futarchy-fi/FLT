@@ -8548,6 +8548,7 @@ public import FLT.Mazur.WeierstrassLeftSmoothFractionActionCover
 public import FLT.Mazur.WeierstrassLeftSmoothFractionActionGluing
 public import FLT.Mazur.WeierstrassLeftSmoothFractionActionRatios
 public import FLT.Mazur.WeierstrassLeftSmoothGlobalCenter
+public import FLT.Mazur.WeierstrassLeftSmoothHorizontalActionPresentation
 public import FLT.Mazur.WeierstrassLeftSmoothIdentity
 public import FLT.Mazur.WeierstrassLeftSmoothInfinityIdentity
 public import FLT.Mazur.WeierstrassLeftSmoothInputAddition
