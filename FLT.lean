@@ -7211,6 +7211,7 @@ public import FLT.Mazur.SmoothTranslationChartOrbitFibers
 public import FLT.Mazur.SmoothTranslationChartOrbitHomeomorph
 public import FLT.Mazur.SmoothTranslationGeometricClass
 public import FLT.Mazur.SmoothTranslationInvariantOpenDomains
+public import FLT.Mazur.SmoothTranslationInvariantOpenFunctor
 public import FLT.Mazur.SmoothTranslationInvariantSectionComparison
 public import FLT.Mazur.SmoothTranslationOrbitCover
 public import FLT.Mazur.SmoothTranslationOrbitOpen
