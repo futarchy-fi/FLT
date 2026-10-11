@@ -7623,6 +7623,7 @@ public import FLT.Mazur.WeierstrassDividedFirstFractionOpen
 public import FLT.Mazur.WeierstrassDividedFirstFractionOverlap
 public import FLT.Mazur.WeierstrassDividedFirstFractionUnique
 public import FLT.Mazur.WeierstrassDividedFirstInfinityAction
+public import FLT.Mazur.WeierstrassDividedFirstInfinityCenter
 public import FLT.Mazur.WeierstrassDividedFullResidueAtlas
 public import FLT.Mazur.WeierstrassDividedGlobalConicCoordinates
 public import FLT.Mazur.WeierstrassDividedGlobalConicIntersection
