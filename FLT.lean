@@ -8036,6 +8036,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXMiddleLocalizedBranchParameters
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleLocalizedOppositeConic
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleLocalizedPushout
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodeBranches
+public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodeCompatibility
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodeCoordinates
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodeEqualizer
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodeEquiv
