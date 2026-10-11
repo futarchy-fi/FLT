@@ -4989,6 +4989,7 @@ public import FLT.Mazur.ModulePresheafLinearHom
 public import FLT.Mazur.ModulePresheafPullbackSections
 public import FLT.Mazur.ModulePresheafTensorHom
 public import FLT.Mazur.ModulePresheafTensorPullback
+public import FLT.Mazur.ModulePullbackComparisonRatio
 public import FLT.Mazur.ModulePullbackComparisonTransport
 public import FLT.Mazur.ModulePullbackMapEquality
 public import FLT.Mazur.ModulePullbackRestrictionHorizontal
