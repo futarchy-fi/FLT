@@ -5659,6 +5659,7 @@ public import FLT.Mazur.PolygonMarkingAffineNeighborhood
 public import FLT.Mazur.PolygonMultipleCoefficientProjMap
 public import FLT.Mazur.PolygonMultipleCoefficientStageNaturality
 public import FLT.Mazur.PolygonMultipleCoefficientStageOpens
+public import FLT.Mazur.PolygonMultipleCoefficientStructure
 public import FLT.Mazur.PolygonMultipleCoefficientUnitChart
 public import FLT.Mazur.PolygonMultipleStageGeneratingCover
 public import FLT.Mazur.PolygonMultipleStageOpenDetection
