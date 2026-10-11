@@ -8726,6 +8726,7 @@ public import FLT.Mazur.WeierstrassSplitNodalSmoothGroupComparison
 public import FLT.Mazur.WeierstrassSplitNodalTorus
 public import FLT.Mazur.WeierstrassSplitNodalUnitPoints
 public import FLT.Mazur.WeierstrassSquareZeroTorsionRigidity
+public import FLT.Mazur.WeierstrassSuccessiveCenterScaling
 public import FLT.Mazur.WeierstrassSuccessiveDepthProper
 public import FLT.Mazur.WeierstrassSuccessiveHorizontalPreimage
 public import FLT.Mazur.WeierstrassSuccessiveOriginalOpen
