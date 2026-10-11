@@ -4357,6 +4357,7 @@ public import FLT.Mazur.GroupMarkingTransportNaturality
 public import FLT.Mazur.GroupSchemeBaseChangeComparison
 public import FLT.Mazur.GroupSchemeBaseChangeComposition
 public import FLT.Mazur.GroupSchemeBaseChangeProjections
+public import FLT.Mazur.GroupSchemeBaseChangeSections
 public import FLT.Mazur.GroupSectionBaseChange
 public import FLT.Mazur.GroupTorsionBaseChange
 public import FLT.Mazur.GroupTorsionCommutativeStructure
