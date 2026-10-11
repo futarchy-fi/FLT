@@ -4028,6 +4028,7 @@ public import FLT.Mazur.FiniteSupportEulerPositive
 public import FLT.Mazur.FiniteSurjectiveAmpleDescent
 public import FLT.Mazur.FiniteSurjectiveCoherentWitness
 public import FLT.Mazur.FiniteTensorIntegerClosedImmersion
+public import FLT.Mazur.FiniteTypeAcyclicDivisorMap
 public import FLT.Mazur.FiniteTypeAffineApproximation
 public import FLT.Mazur.FiniteTypeAffineIndependentLineModel
 public import FLT.Mazur.FiniteTypeApproximationDiamonds
