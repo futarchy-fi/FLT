@@ -2512,6 +2512,9 @@ public import FLT.Mazur.AdicCompletionPositiveLimit
 public import FLT.Mazur.AdicCompletionPrincipal
 public import FLT.Mazur.AdicCompletionQuotientEquiv
 public import FLT.Mazur.AdicCompletionScalars
+public import FLT.Mazur.AdicDerivationCompletion
+public import FLT.Mazur.AdicDerivationFiltration
+public import FLT.Mazur.AdicDerivationQuotient
 public import FLT.Mazur.AdicFiniteGenerationLifting
 public import FLT.Mazur.AdicSectionIsoReconstruction
 public import FLT.Mazur.AffineAdicCohomologyImage
@@ -2541,6 +2544,8 @@ public import FLT.Mazur.AffineChartSourceScalars
 public import FLT.Mazur.AffineChartStalkScalars
 public import FLT.Mazur.AffineClosedLimitDescent
 public import FLT.Mazur.AffineClosedModuleDescent
+public import FLT.Mazur.AffineClosedPointAlgebra
+public import FLT.Mazur.AffineClosedPointCompletion
 public import FLT.Mazur.AffineClosedPointQuotient
 public import FLT.Mazur.AffineClosureFiniteness
 public import FLT.Mazur.AffineCoalgebraDescentRecognition
@@ -2766,6 +2771,7 @@ public import FLT.Mazur.AffineSquareEquivalences
 public import FLT.Mazur.AffineSquareScalarExtension
 public import FLT.Mazur.AffineSquareTensorComparison
 public import FLT.Mazur.AffineStagePointReconstruction
+public import FLT.Mazur.AffineStalkEssentialFiniteType
 public import FLT.Mazur.AffineStalkExtension
 public import FLT.Mazur.AffineStalkMorphism
 public import FLT.Mazur.AffineTensorCoactionRecognition
@@ -4693,6 +4699,9 @@ public import FLT.Mazur.LocalClosedFiberBaseChange
 public import FLT.Mazur.LocalClosedFiberConnectedness
 public import FLT.Mazur.LocalClosedFiberTensorComplex
 public import FLT.Mazur.LocalClosedFiberUniversalFunctions
+public import FLT.Mazur.LocalCompletionFaithfullyFlat
+public import FLT.Mazur.LocalCompletionModel
+public import FLT.Mazur.LocalCompletionSmoothCriterion
 public import FLT.Mazur.LocalFiberRegularQuotient
 public import FLT.Mazur.LocalFiberTensorInjectivity
 public import FLT.Mazur.LocalLineTwistLocalization
@@ -5190,6 +5199,7 @@ public import FLT.Mazur.PolygonCompatibleSectionRing
 public import FLT.Mazur.PolygonCompatibleSectionScalars
 public import FLT.Mazur.PolygonCompatibleVeronese
 public import FLT.Mazur.PolygonCompatibleZeroCoefficients
+public import FLT.Mazur.PolygonCompleteAffinePresentation
 public import FLT.Mazur.PolygonCompleteBaseMarkings
 public import FLT.Mazur.PolygonCompleteBoundaryCoordinateTransport
 public import FLT.Mazur.PolygonCompleteBoundaryFactorization
@@ -5213,8 +5223,13 @@ public import FLT.Mazur.PolygonCompleteLineOriginalReduction
 public import FLT.Mazur.PolygonCompleteLineQuotient
 public import FLT.Mazur.PolygonCompleteMarkingSpecialization
 public import FLT.Mazur.PolygonCompleteNodeAffineIdeal
+public import FLT.Mazur.PolygonCompleteNodeArithmeticAction
+public import FLT.Mazur.PolygonCompleteNodeArithmeticGerms
 public import FLT.Mazur.PolygonCompleteNodeCompletion
+public import FLT.Mazur.PolygonCompleteNodeLocalFiniteness
 public import FLT.Mazur.PolygonCompleteNodeNeighborhood
+public import FLT.Mazur.PolygonCompleteNodeStalkCompletion
+public import FLT.Mazur.PolygonCompleteNodeStalkEvaluation
 public import FLT.Mazur.PolygonCompleteNodeStalkMap
 public import FLT.Mazur.PolygonComponentDistinct
 public import FLT.Mazur.PolygonComponentImages
