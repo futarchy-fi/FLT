@@ -9184,6 +9184,7 @@ public import FLT.Mazur.WeierstrassSmoothHorizontalCyclicParameter
 public import FLT.Mazur.WeierstrassSmoothHorizontalFactorGeometry
 public import FLT.Mazur.WeierstrassSmoothHorizontalFactorOrder
 public import FLT.Mazur.WeierstrassSmoothHorizontalGlobalAction
+public import FLT.Mazur.WeierstrassSmoothHorizontalIncidenceUnits
 public import FLT.Mazur.WeierstrassSmoothHorizontalLaurentEvaluation
 public import FLT.Mazur.WeierstrassSmoothHorizontalPairDensity
 public import FLT.Mazur.WeierstrassSmoothHorizontalPairExt
