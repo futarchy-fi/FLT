@@ -4300,6 +4300,7 @@ public import FLT.Mazur.GradedProjCoefficientComparisonNormalization
 public import FLT.Mazur.GradedProjCoefficientGeneration
 public import FLT.Mazur.GradedProjCoefficientGeneratorOpen
 public import FLT.Mazur.GradedProjCoefficientLocalMap
+public import FLT.Mazur.GradedProjCoefficientRatios
 public import FLT.Mazur.GradedProjCoefficientSectionTransport
 public import FLT.Mazur.GradedProjCoefficientSections
 public import FLT.Mazur.GradedProjCoefficientStageCoherence
@@ -4681,6 +4682,8 @@ public import FLT.Mazur.IdealPowerVanishingTransfer
 public import FLT.Mazur.IdealPresentationQuotient
 public import FLT.Mazur.IdealQuotientExact
 public import FLT.Mazur.IdealQuotientSectionLift
+public import FLT.Mazur.IdealSheafAdicStalkSeparation
+public import FLT.Mazur.IdealSheafFactorizationSupport
 public import FLT.Mazur.IdealSheafFlatDetection
 public import FLT.Mazur.IdealSheafOpenCoverDetection
 public import FLT.Mazur.IdealTwistCohomologyStabilization
@@ -4997,6 +5000,7 @@ public import FLT.Mazur.ModulePresheafLinearHom
 public import FLT.Mazur.ModulePresheafPullbackSections
 public import FLT.Mazur.ModulePresheafTensorHom
 public import FLT.Mazur.ModulePresheafTensorPullback
+public import FLT.Mazur.ModulePullbackComparedSection
 public import FLT.Mazur.ModulePullbackComparisonRatio
 public import FLT.Mazur.ModulePullbackComparisonTransport
 public import FLT.Mazur.ModulePullbackMapEquality
@@ -5032,6 +5036,7 @@ public import FLT.Mazur.ModuleSectionProjectiveTransition
 public import FLT.Mazur.ModuleSectionRatioBasicOpen
 public import FLT.Mazur.ModuleSectionRatioCoordinates
 public import FLT.Mazur.ModuleSectionRatioOpen
+public import FLT.Mazur.ModuleSectionRatioOpenIso
 public import FLT.Mazur.ModuleSectionRatioOpenPullback
 public import FLT.Mazur.ModuleSectionRatioPullback
 public import FLT.Mazur.ModuleSectionRatios
@@ -5415,6 +5420,7 @@ public import FLT.Mazur.PolygonCompatibleSectionRing
 public import FLT.Mazur.PolygonCompatibleSectionScalars
 public import FLT.Mazur.PolygonCompatibleVeronese
 public import FLT.Mazur.PolygonCompatibleZeroCoefficients
+public import FLT.Mazur.PolygonCompleteAdicIdealSeparation
 public import FLT.Mazur.PolygonCompleteAffinePresentation
 public import FLT.Mazur.PolygonCompleteBaseMarkings
 public import FLT.Mazur.PolygonCompleteBoundaryCoordinateTransport
@@ -5449,6 +5455,7 @@ public import FLT.Mazur.PolygonCompleteDivisorLineCoherence
 public import FLT.Mazur.PolygonCompleteDivisorPowerComparison
 public import FLT.Mazur.PolygonCompleteDivisorRestriction
 public import FLT.Mazur.PolygonCompleteFamilyFlatness
+public import FLT.Mazur.PolygonCompleteFamilyHomExt
 public import FLT.Mazur.PolygonCompleteFiberMarkings
 public import FLT.Mazur.PolygonCompleteFieldH1
 public import FLT.Mazur.PolygonCompleteGenericGenus
@@ -5470,13 +5477,16 @@ public import FLT.Mazur.PolygonCompleteLineOriginalReduction
 public import FLT.Mazur.PolygonCompleteLineQuotient
 public import FLT.Mazur.PolygonCompleteLineSectionReconstruction
 public import FLT.Mazur.PolygonCompleteMarkedClosedFiber
+public import FLT.Mazur.PolygonCompleteMarkedCoordinateCharts
 public import FLT.Mazur.PolygonCompleteMarkedCoordinateGeneration
 public import FLT.Mazur.PolygonCompleteMarkedCoordinateOpens
+public import FLT.Mazur.PolygonCompleteMarkedCoordinateRatios
 public import FLT.Mazur.PolygonCompleteMarkedCoordinates
 public import FLT.Mazur.PolygonCompleteMarkedLineModel
 public import FLT.Mazur.PolygonCompleteMarkedModelSections
 public import FLT.Mazur.PolygonCompleteMarkedPowerModel
 public import FLT.Mazur.PolygonCompleteMarkedPowerSections
+public import FLT.Mazur.PolygonCompleteMarkedSectionTransport
 public import FLT.Mazur.PolygonCompleteMarkedStageComparison
 public import FLT.Mazur.PolygonCompleteMarkingAmple
 public import FLT.Mazur.PolygonCompleteMarkingCartier
@@ -5762,7 +5772,9 @@ public import FLT.Mazur.PolygonSplitRefinementCover
 public import FLT.Mazur.PolygonSplitRefinementValue
 public import FLT.Mazur.PolygonSplitTorusBranches
 public import FLT.Mazur.PolygonStageClosedImmersion
+public import FLT.Mazur.PolygonStageCoefficientFamilies
 public import FLT.Mazur.PolygonStageCoefficientKernel
+public import FLT.Mazur.PolygonStageCoefficientNaturality
 public import FLT.Mazur.PolygonStageFlatLayer
 public import FLT.Mazur.PolygonStageLayerSequence
 public import FLT.Mazur.PolygonStageLineLayer
