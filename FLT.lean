@@ -7956,6 +7956,9 @@ public import FLT.Mazur.WeierstrassFourMarkingFrame
 public import FLT.Mazur.WeierstrassFourMarkingRigidity
 public import FLT.Mazur.WeierstrassFourPairAssociativity
 public import FLT.Mazur.WeierstrassFourTorsionFinite
+public import FLT.Mazur.WeierstrassFractionSmoothGlobalLift
+public import FLT.Mazur.WeierstrassFractionSmoothPresentation
+public import FLT.Mazur.WeierstrassFractionSmoothPresentationLift
 public import FLT.Mazur.WeierstrassFrameNormalEquation
 public import FLT.Mazur.WeierstrassFrameNormalization
 public import FLT.Mazur.WeierstrassGeneralizedEllipticModel
@@ -7973,11 +7976,15 @@ public import FLT.Mazur.WeierstrassGlobalAdditionZeroRestrictions
 public import FLT.Mazur.WeierstrassGlobalAffineSwap
 public import FLT.Mazur.WeierstrassGlobalInfinitySwap
 public import FLT.Mazur.WeierstrassGlobalModificationFlat
+public import FLT.Mazur.WeierstrassGlobalModificationFractionCover
 public import FLT.Mazur.WeierstrassGlobalModificationGluing
+public import FLT.Mazur.WeierstrassGlobalModificationLocalAction
 public import FLT.Mazur.WeierstrassGlobalModificationOriginalOpen
 public import FLT.Mazur.WeierstrassGlobalModificationProper
+public import FLT.Mazur.WeierstrassGlobalModificationSmoothCover
 public import FLT.Mazur.WeierstrassGlobalModificationSmoothEmbedding
 public import FLT.Mazur.WeierstrassGlobalModificationSmoothOpen
+public import FLT.Mazur.WeierstrassGlobalModificationXOpen
 public import FLT.Mazur.WeierstrassGlobalModificationZero
 public import FLT.Mazur.WeierstrassGlobalNegation
 public import FLT.Mazur.WeierstrassGlobalNegationInvolution
@@ -8056,6 +8063,7 @@ public import FLT.Mazur.WeierstrassInfinityResidueZero
 public import FLT.Mazur.WeierstrassInfinityReverseCross
 public import FLT.Mazur.WeierstrassInfinitySlopeMap
 public import FLT.Mazur.WeierstrassInfinitySmoothChart
+public import FLT.Mazur.WeierstrassInfinitySmoothReesLift
 public import FLT.Mazur.WeierstrassInfinitySpecializedFactorization
 public import FLT.Mazur.WeierstrassInfinitySquareZero
 public import FLT.Mazur.WeierstrassInfinityTensorBoundary
@@ -8164,6 +8172,7 @@ public import FLT.Mazur.WeierstrassLeftSmoothAllOrdinaryTriple
 public import FLT.Mazur.WeierstrassLeftSmoothAssociativity
 public import FLT.Mazur.WeierstrassLeftSmoothCenterAction
 public import FLT.Mazur.WeierstrassLeftSmoothCenterInvariant
+public import FLT.Mazur.WeierstrassLeftSmoothChartCenterEquality
 public import FLT.Mazur.WeierstrassLeftSmoothCrossInput
 public import FLT.Mazur.WeierstrassLeftSmoothFactorAddition
 public import FLT.Mazur.WeierstrassLeftSmoothFactorProduct
@@ -8399,6 +8408,9 @@ public import FLT.Mazur.WeierstrassModificationYSaturation
 public import FLT.Mazur.WeierstrassModificationYScaleLocalization
 public import FLT.Mazur.WeierstrassModificationYTotalTransform
 public import FLT.Mazur.WeierstrassModificationYTripleOverlap
+public import FLT.Mazur.WeierstrassModifiedSmoothAffineRefinement
+public import FLT.Mazur.WeierstrassModifiedSmoothOutputCoordinates
+public import FLT.Mazur.WeierstrassModifiedSmoothTotalCover
 public import FLT.Mazur.WeierstrassNegationAdditionDescent
 public import FLT.Mazur.WeierstrassNegationAdditionPullback
 public import FLT.Mazur.WeierstrassNegationCover
