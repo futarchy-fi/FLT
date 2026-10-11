@@ -3918,6 +3918,7 @@ public import FLT.Mazur.EtaleFiniteSupportCartier
 public import FLT.Mazur.EtaleLocalParameterIdeals
 public import FLT.Mazur.EtaleMarkingScheme
 public import FLT.Mazur.EtalePolynomialPointLift
+public import FLT.Mazur.EtalePolynomialStalkLift
 public import FLT.Mazur.EtalePrimeParameterIdeals
 public import FLT.Mazur.EtaleQuasiFiniteCartierDescent
 public import FLT.Mazur.EvaluatedPrincipalRefinement
