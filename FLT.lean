@@ -7601,6 +7601,7 @@ public import FLT.Mazur.VariableHilbertSourceIntersection
 public import FLT.Mazur.VariableHilbertSplitChange
 public import FLT.Mazur.VariableHilbertSplitFunctions
 public import FLT.Mazur.VariableHilbertSplitQuotient
+public import FLT.Mazur.VariableHilbertSplitScheme
 public import FLT.Mazur.VariableTranslatedHilbertChart
 public import FLT.Mazur.VariableTranslatedHilbertOverlap
 public import FLT.Mazur.VariableTranslatedHilbertRepresentation
