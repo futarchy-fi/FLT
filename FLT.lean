@@ -7486,8 +7486,10 @@ public import FLT.Mazur.WeierstrassDividedConicParameterTransport
 public import FLT.Mazur.WeierstrassDividedDepthAffine
 public import FLT.Mazur.WeierstrassDividedDepthBoundary
 public import FLT.Mazur.WeierstrassDividedDepthBoundaryPullback
+public import FLT.Mazur.WeierstrassDividedDepthCenterNormalization
 public import FLT.Mazur.WeierstrassDividedDepthCenterSmooth
 public import FLT.Mazur.WeierstrassDividedDepthData
+public import FLT.Mazur.WeierstrassDividedDepthLocalAction
 public import FLT.Mazur.WeierstrassDividedDepthMaps
 public import FLT.Mazur.WeierstrassDividedDepthOriginalOpen
 public import FLT.Mazur.WeierstrassDividedDepthStructure
@@ -8739,8 +8741,13 @@ public import FLT.Mazur.WeierstrassSplitNodalSmoothGroupComparison
 public import FLT.Mazur.WeierstrassSplitNodalTorus
 public import FLT.Mazur.WeierstrassSplitNodalUnitPoints
 public import FLT.Mazur.WeierstrassSquareZeroTorsionRigidity
+public import FLT.Mazur.WeierstrassSuccessiveCenterAction
+public import FLT.Mazur.WeierstrassSuccessiveCenterScaling
 public import FLT.Mazur.WeierstrassSuccessiveDepthProper
+public import FLT.Mazur.WeierstrassSuccessiveFractionAction
+public import FLT.Mazur.WeierstrassSuccessiveFractionRegular
 public import FLT.Mazur.WeierstrassSuccessiveHorizontalPreimage
+public import FLT.Mazur.WeierstrassSuccessiveLocalAction
 public import FLT.Mazur.WeierstrassSuccessiveOriginalOpen
 public import FLT.Mazur.WeierstrassSuccessiveReesCoordinates
 public import FLT.Mazur.WeierstrassSuccessiveReesCover
