@@ -6076,6 +6076,7 @@ public import FLT.Mazur.RefinedChartSpectrum
 public import FLT.Mazur.RegularParameterIdeals
 public import FLT.Mazur.RelativeAbelFiberOriginalSquare
 public import FLT.Mazur.RelativeAcyclicClassDivisor
+public import FLT.Mazur.RelativeAcyclicClassDivisorNaturality
 public import FLT.Mazur.RelativeAcyclicPicardOpen
 public import FLT.Mazur.RelativeAmpleAffineBaseChange
 public import FLT.Mazur.RelativeAmpleBaseChange
