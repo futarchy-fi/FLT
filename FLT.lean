@@ -4297,6 +4297,7 @@ public import FLT.Mazur.GradedProjCoefficientComparisonNormalization
 public import FLT.Mazur.GradedProjCoefficientGeneration
 public import FLT.Mazur.GradedProjCoefficientGeneratorOpen
 public import FLT.Mazur.GradedProjCoefficientLocalMap
+public import FLT.Mazur.GradedProjCoefficientRatios
 public import FLT.Mazur.GradedProjCoefficientSectionTransport
 public import FLT.Mazur.GradedProjCoefficientSections
 public import FLT.Mazur.GradedProjCoefficientStageCoherence
