@@ -3086,6 +3086,7 @@ public import FLT.Mazur.BaseChangeCotangentFieldRank
 public import FLT.Mazur.BaseChangeSectionEquiv
 public import FLT.Mazur.BaseChangedPresentationModel
 public import FLT.Mazur.BaseMarkedHilbertIntersection
+public import FLT.Mazur.BaseMarkedHilbertOverlap
 public import FLT.Mazur.BaseOpenHilbertBaseChange
 public import FLT.Mazur.BaseOpenHilbertChartFunctions
 public import FLT.Mazur.BaseOpenHilbertChartSourceSections
