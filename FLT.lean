@@ -4811,6 +4811,7 @@ public import FLT.Mazur.LineEndpointTransport
 public import FLT.Mazur.LineImageCartier
 public import FLT.Mazur.LineMorphismSectionTransport
 public import FLT.Mazur.LineMorphismTensorSection
+public import FLT.Mazur.LineMorphismTensorStage
 public import FLT.Mazur.LinePowerCocyclePullback
 public import FLT.Mazur.LinePowerEvaluationDescent
 public import FLT.Mazur.LinePowerSectionBaseChange
