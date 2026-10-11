@@ -7043,6 +7043,7 @@ public import FLT.Mazur.SmoothHilbertIntersectionLift
 public import FLT.Mazur.SmoothHilbertIntersectionSource
 public import FLT.Mazur.SmoothHilbertSingleSource
 public import FLT.Mazur.SmoothHilbertSourcePullback
+public import FLT.Mazur.SmoothHilbertSourceRepresentable
 public import FLT.Mazur.SmoothHilbertTestCover
 public import FLT.Mazur.SmoothNonspecialDivisorCover
 public import FLT.Mazur.SmoothNonspecialDivisorLift
