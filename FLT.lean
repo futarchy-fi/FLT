@@ -3491,6 +3491,7 @@ public import FLT.Mazur.DivisorLinePullbackTransport
 public import FLT.Mazur.DivisorLineSectionModel
 public import FLT.Mazur.DivisorPowerCanonicalSection
 public import FLT.Mazur.DivisorPowerEulerCharacteristic
+public import FLT.Mazur.DivisorPowerH1Bound
 public import FLT.Mazur.DivisorPowerTwistDegree
 public import FLT.Mazur.DivisorPowerVeryAmple
 public import FLT.Mazur.DivisorRestrictCoherence
