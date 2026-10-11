@@ -7526,6 +7526,7 @@ public import FLT.Mazur.WeierstrassDividedPositiveEqualityAtlasRecovery
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityAtlasSeparation
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityBranchIndices
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityBranches
+public import FLT.Mazur.WeierstrassDividedPositiveEqualityCartesian
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityCocone
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityComponentHomExt
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityCycle
