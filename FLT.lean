@@ -5352,6 +5352,7 @@ public import FLT.Mazur.PolygonCompleteCoefficientOpens
 public import FLT.Mazur.PolygonCompleteCoefficientReconstruction
 public import FLT.Mazur.PolygonCompleteCoordinateEvaluation
 public import FLT.Mazur.PolygonCompleteFamilyFlatness
+public import FLT.Mazur.PolygonCompleteGenericSmooth
 public import FLT.Mazur.PolygonCompleteLineOriginalReduction
 public import FLT.Mazur.PolygonCompleteLineQuotient
 public import FLT.Mazur.PolygonCompleteMarkingSpecialization
