@@ -6528,6 +6528,7 @@ public import FLT.Mazur.ReesRelativeNaturality
 public import FLT.Mazur.ReesRelativeScalarTower
 public import FLT.Mazur.RefinedChartSpectrum
 public import FLT.Mazur.RegularCenterConormalQuotient
+public import FLT.Mazur.RegularCenterConormalRatio
 public import FLT.Mazur.RegularCenterDoubleOverlap
 public import FLT.Mazur.RegularCenterGluedLift
 public import FLT.Mazur.RegularCenterOverlap
