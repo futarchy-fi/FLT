@@ -7921,6 +7921,7 @@ public import FLT.Mazur.WeierstrassDividedSuccessorExteriorAtlas
 public import FLT.Mazur.WeierstrassDividedSuccessorInfinityAction
 public import FLT.Mazur.WeierstrassDividedSuccessorInfinityCenter
 public import FLT.Mazur.WeierstrassDividedSuccessorOutputCover
+public import FLT.Mazur.WeierstrassDividedSuccessorRetainedAction
 public import FLT.Mazur.WeierstrassDividedSuccessorRetainedCenter
 public import FLT.Mazur.WeierstrassDividedSuccessorRetainedCoordinates
 public import FLT.Mazur.WeierstrassDividedSuccessorUnitAction
