@@ -9352,6 +9352,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXMiddleSplitOppositeConic
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleTangentSwitch
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleUnion
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleZeroNode
+public import FLT.Mazur.WeierstrassSuccessiveXModificationLocalization
 public import FLT.Mazur.WeierstrassSuccessiveXModificationMap
 public import FLT.Mazur.WeierstrassSuccessiveXMonic
 public import FLT.Mazur.WeierstrassSuccessiveXMonicComparison
