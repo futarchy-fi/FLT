@@ -5293,6 +5293,7 @@ public import FLT.Mazur.PolygonCompleteNodeAffineIdeal
 public import FLT.Mazur.PolygonCompleteNodeArithmeticAction
 public import FLT.Mazur.PolygonCompleteNodeArithmeticGerms
 public import FLT.Mazur.PolygonCompleteNodeCompletion
+public import FLT.Mazur.PolygonCompleteNodeConormal
 public import FLT.Mazur.PolygonCompleteNodeCotangentAction
 public import FLT.Mazur.PolygonCompleteNodeCotangentCokernel
 public import FLT.Mazur.PolygonCompleteNodeCotangentComparison
