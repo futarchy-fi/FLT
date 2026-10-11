@@ -2555,6 +2555,7 @@ public import FLT.Mazur.AdicFormalSpaceDerivative
 public import FLT.Mazur.AdicIdealCompletionRange
 public import FLT.Mazur.AdicIdealFilteredMap
 public import FLT.Mazur.AdicInfinitesimalConormal
+public import FLT.Mazur.AdicInfinitesimalConormalFunctor
 public import FLT.Mazur.AdicInfinitesimalCotangentSpace
 public import FLT.Mazur.AdicInfinitesimalOriginalChainMap
 public import FLT.Mazur.AdicInfinitesimalOriginalHomotopy
