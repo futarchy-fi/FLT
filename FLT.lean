@@ -6491,6 +6491,7 @@ public import FLT.Mazur.ProperAmpleFiberNeighborhood
 public import FLT.Mazur.ProperAmpleFiberNoetherian
 public import FLT.Mazur.ProperAmpleRetainedChartCover
 public import FLT.Mazur.ProperAmpleRetainedProjIso
+public import FLT.Mazur.ProperAmpleSectionAffine
 public import FLT.Mazur.ProperAtlasAbelEquivalence
 public import FLT.Mazur.ProperAtlasAbelFiber
 public import FLT.Mazur.ProperAtlasAbelNaturality
