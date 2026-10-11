@@ -2512,6 +2512,7 @@ public import FLT.Mazur.AdicDerivationFiltration
 public import FLT.Mazur.AdicDerivationNaturality
 public import FLT.Mazur.AdicDerivationQuotient
 public import FLT.Mazur.AdicFiniteGenerationLifting
+public import FLT.Mazur.AdicFiniteModuleExt
 public import FLT.Mazur.AdicSectionIsoReconstruction
 public import FLT.Mazur.AffineAdicCohomologyImage
 public import FLT.Mazur.AffineAdicFormalComparison
