@@ -7573,9 +7573,11 @@ public import FLT.Mazur.WeierstrassDividedAdjacentZeroOrderedConicIntersection
 public import FLT.Mazur.WeierstrassDividedAdjacentZeroParameterBranchCompatibility
 public import FLT.Mazur.WeierstrassDividedAdjacentZeroParameterIntersection
 public import FLT.Mazur.WeierstrassDividedAdjacentZeroSectionSeparation
+public import FLT.Mazur.WeierstrassDividedAtlasRegularCenter
 public import FLT.Mazur.WeierstrassDividedBoundaryNormalization
 public import FLT.Mazur.WeierstrassDividedBranchChainIntersections
 public import FLT.Mazur.WeierstrassDividedBranchPairSeparation
+public import FLT.Mazur.WeierstrassDividedChartRegularCenter
 public import FLT.Mazur.WeierstrassDividedComponentPairCoverage
 public import FLT.Mazur.WeierstrassDividedConicBoundaryAllDepths
 public import FLT.Mazur.WeierstrassDividedConicBoundaryGeometryAllDepths
@@ -7946,10 +7948,16 @@ public import FLT.Mazur.WeierstrassDividedSuccessorActionInput
 public import FLT.Mazur.WeierstrassDividedSuccessorAtlasCoordinates
 public import FLT.Mazur.WeierstrassDividedSuccessorExteriorAction
 public import FLT.Mazur.WeierstrassDividedSuccessorExteriorAtlas
+public import FLT.Mazur.WeierstrassDividedSuccessorFractionAlgebra
+public import FLT.Mazur.WeierstrassDividedSuccessorFractionCoordinates
 public import FLT.Mazur.WeierstrassDividedSuccessorInfinityAction
 public import FLT.Mazur.WeierstrassDividedSuccessorInfinityCenter
+public import FLT.Mazur.WeierstrassDividedSuccessorInfinityInputAction
 public import FLT.Mazur.WeierstrassDividedSuccessorOutputCover
+public import FLT.Mazur.WeierstrassDividedSuccessorRetainedAction
+public import FLT.Mazur.WeierstrassDividedSuccessorRetainedCenter
 public import FLT.Mazur.WeierstrassDividedSuccessorRetainedCoordinates
+public import FLT.Mazur.WeierstrassDividedSuccessorRetainedGluing
 public import FLT.Mazur.WeierstrassDividedSuccessorUnitAction
 public import FLT.Mazur.WeierstrassDividedTensorAtlasComparison
 public import FLT.Mazur.WeierstrassDividedTensorYBoundary
@@ -8756,6 +8764,7 @@ public import FLT.Mazur.WeierstrassReciprocalZeroPointComparison
 public import FLT.Mazur.WeierstrassRegularChartSectionDescent
 public import FLT.Mazur.WeierstrassRegularInputDescent
 public import FLT.Mazur.WeierstrassRelativeSmoothOpen
+public import FLT.Mazur.WeierstrassRetainedRegularCenter
 public import FLT.Mazur.WeierstrassSameOutputIntersections
 public import FLT.Mazur.WeierstrassScaledChartComparison
 public import FLT.Mazur.WeierstrassSecantMorphismExt
@@ -8900,6 +8909,7 @@ public import FLT.Mazur.WeierstrassSuccessiveReesProjIso
 public import FLT.Mazur.WeierstrassSuccessiveReesProjOverlap
 public import FLT.Mazur.WeierstrassSuccessiveReesProper
 public import FLT.Mazur.WeierstrassSuccessiveReesSchemeOverlap
+public import FLT.Mazur.WeierstrassSuccessiveRegularInputCenter
 public import FLT.Mazur.WeierstrassSuccessiveReplacementAtlas
 public import FLT.Mazur.WeierstrassSuccessiveReplacementGluing
 public import FLT.Mazur.WeierstrassSuccessiveReplacementReassociation
