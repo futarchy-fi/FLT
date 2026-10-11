@@ -3092,7 +3092,18 @@ public import FLT.Mazur.BaseMarkedHilbertChangePullback
 public import FLT.Mazur.BaseMarkedHilbertChartChange
 public import FLT.Mazur.BaseMarkedHilbertChartPreimage
 public import FLT.Mazur.BaseMarkedHilbertCocycle
+public import FLT.Mazur.BaseMarkedHilbertFullChartPullback
+public import FLT.Mazur.BaseMarkedHilbertFullClass
+public import FLT.Mazur.BaseMarkedHilbertFullGeometry
 public import FLT.Mazur.BaseMarkedHilbertFullIntersection
+public import FLT.Mazur.BaseMarkedHilbertFullLift
+public import FLT.Mazur.BaseMarkedHilbertFullLiftRange
+public import FLT.Mazur.BaseMarkedHilbertFullRelation
+public import FLT.Mazur.BaseMarkedHilbertFullRepresentation
+public import FLT.Mazur.BaseMarkedHilbertFullTestChange
+public import FLT.Mazur.BaseMarkedHilbertFullTestCover
+public import FLT.Mazur.BaseMarkedHilbertFullTestPullback
+public import FLT.Mazur.BaseMarkedHilbertFullUnion
 public import FLT.Mazur.BaseMarkedHilbertGluedBase
 public import FLT.Mazur.BaseMarkedHilbertGluedChange
 public import FLT.Mazur.BaseMarkedHilbertGluedInjectivity
@@ -3101,6 +3112,7 @@ public import FLT.Mazur.BaseMarkedHilbertGluedPicard
 public import FLT.Mazur.BaseMarkedHilbertGluing
 public import FLT.Mazur.BaseMarkedHilbertIdentities
 public import FLT.Mazur.BaseMarkedHilbertIntersection
+public import FLT.Mazur.BaseMarkedHilbertOriginalRelation
 public import FLT.Mazur.BaseMarkedHilbertOverlap
 public import FLT.Mazur.BaseMarkedHilbertOverlapChange
 public import FLT.Mazur.BaseMarkedHilbertSchemeCocycle
@@ -6338,6 +6350,7 @@ public import FLT.Mazur.ProjectiveLineStandardOverlap
 public import FLT.Mazur.ProjectiveLineTopology
 public import FLT.Mazur.ProjectiveLineTwistCoordinates
 public import FLT.Mazur.ProjectiveLineUniversalAction
+public import FLT.Mazur.ProjectiveLineUniversalLaurentEvaluation
 public import FLT.Mazur.ProjectiveLinearCoefficientChange
 public import FLT.Mazur.ProjectiveLinearIsomorphism
 public import FLT.Mazur.ProjectiveLinearOver
@@ -6679,6 +6692,8 @@ public import FLT.Mazur.RelativeIdealSupportRange
 public import FLT.Mazur.RelativeIdealSupportedRestriction
 public import FLT.Mazur.RelativeJetSmoothObstruction
 public import FLT.Mazur.RelativeMarkingSections
+public import FLT.Mazur.RelativeOpenUnion
+public import FLT.Mazur.RelativeOpenUnionGluing
 public import FLT.Mazur.RelativePicardBaseChangeGeometry
 public import FLT.Mazur.RelativePicardCoproductSection
 public import FLT.Mazur.RelativePicardCoverDiagonal
@@ -7788,6 +7803,7 @@ public import FLT.Mazur.WeierstrassDividedConicBoundaryAllDepths
 public import FLT.Mazur.WeierstrassDividedConicBoundaryGeometryAllDepths
 public import FLT.Mazur.WeierstrassDividedConicHorizontalIntersectionAllDepths
 public import FLT.Mazur.WeierstrassDividedConicParameterTransport
+public import FLT.Mazur.WeierstrassDividedCyclicSmoothParameter
 public import FLT.Mazur.WeierstrassDividedDepthAffine
 public import FLT.Mazur.WeierstrassDividedDepthBoundary
 public import FLT.Mazur.WeierstrassDividedDepthBoundaryPullback
@@ -7987,6 +8003,7 @@ public import FLT.Mazur.WeierstrassDividedInitialGlobalResidueNodes
 public import FLT.Mazur.WeierstrassDividedInitialGlobalSections
 public import FLT.Mazur.WeierstrassDividedInitialGlobalTensorChart
 public import FLT.Mazur.WeierstrassDividedInitialHorizontalActionBoundary
+public import FLT.Mazur.WeierstrassDividedInitialHorizontalActionGeometry
 public import FLT.Mazur.WeierstrassDividedInitialHorizontalLineAction
 public import FLT.Mazur.WeierstrassDividedInitialIncidenceInfinity
 public import FLT.Mazur.WeierstrassDividedInitialIncidenceLine
@@ -8005,6 +8022,7 @@ public import FLT.Mazur.WeierstrassDividedInitialResidueAtlas
 public import FLT.Mazur.WeierstrassDividedInitialRetainedBoundary
 public import FLT.Mazur.WeierstrassDividedInitialRetainedIntersection
 public import FLT.Mazur.WeierstrassDividedInitialSlopeTransition
+public import FLT.Mazur.WeierstrassDividedInitialTensorActionGeometry
 public import FLT.Mazur.WeierstrassDividedInitialTensorBoundary
 public import FLT.Mazur.WeierstrassDividedInitialTensorChart
 public import FLT.Mazur.WeierstrassDividedInitialTensorInfinityIntersection
@@ -9079,11 +9097,15 @@ public import FLT.Mazur.WeierstrassSmoothGroupOperations
 public import FLT.Mazur.WeierstrassSmoothHorizontalActionAlgebra
 public import FLT.Mazur.WeierstrassSmoothHorizontalConcreteAction
 public import FLT.Mazur.WeierstrassSmoothHorizontalConcreteRefinement
+public import FLT.Mazur.WeierstrassSmoothHorizontalCyclicParameter
+public import FLT.Mazur.WeierstrassSmoothHorizontalFactorGeometry
+public import FLT.Mazur.WeierstrassSmoothHorizontalFactorOrder
 public import FLT.Mazur.WeierstrassSmoothHorizontalLaurentEvaluation
 public import FLT.Mazur.WeierstrassSmoothHorizontalProductResidue
 public import FLT.Mazur.WeierstrassSmoothHorizontalProductSource
 public import FLT.Mazur.WeierstrassSmoothHorizontalReciprocalCharacters
 public import FLT.Mazur.WeierstrassSmoothHorizontalResidueCoordinates
+public import FLT.Mazur.WeierstrassSmoothHorizontalTensorAction
 public import FLT.Mazur.WeierstrassSmoothInfinityCommutativity
 public import FLT.Mazur.WeierstrassSmoothInfinityDomain
 public import FLT.Mazur.WeierstrassSmoothInfinityIdentity
