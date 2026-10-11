@@ -7331,6 +7331,7 @@ public import FLT.Mazur.WeierstrassDividedOppositeBoundarySupport
 public import FLT.Mazur.WeierstrassDividedOrderedAdjacentComponents
 public import FLT.Mazur.WeierstrassDividedOrderedPairCoverage
 public import FLT.Mazur.WeierstrassDividedOrderedRetainedSections
+public import FLT.Mazur.WeierstrassDividedPositiveEqualityBranchIndices
 public import FLT.Mazur.WeierstrassDividedPrecedingAtlasRange
 public import FLT.Mazur.WeierstrassDividedPreviousBoundaryAlgebra
 public import FLT.Mazur.WeierstrassDividedResidueAtlasExtension
