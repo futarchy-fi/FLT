@@ -8858,6 +8858,7 @@ public import FLT.Mazur.WeierstrassSuccessiveReesSchemeOverlap
 public import FLT.Mazur.WeierstrassSuccessiveReplacementAtlas
 public import FLT.Mazur.WeierstrassSuccessiveReplacementGluing
 public import FLT.Mazur.WeierstrassSuccessiveReplacementReassociation
+public import FLT.Mazur.WeierstrassSuccessiveRetainedCenter
 public import FLT.Mazur.WeierstrassSuccessiveScaleEmbedding
 public import FLT.Mazur.WeierstrassSuccessiveScaleFractions
 public import FLT.Mazur.WeierstrassSuccessiveScaleReesChart
