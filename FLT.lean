@@ -8018,6 +8018,7 @@ public import FLT.Mazur.WeierstrassLeftSmoothInputAddition
 public import FLT.Mazur.WeierstrassLeftSmoothInputCompatibility
 public import FLT.Mazur.WeierstrassLeftSmoothInputRestrictions
 public import FLT.Mazur.WeierstrassLeftSmoothMixedAddition
+public import FLT.Mazur.WeierstrassLeftSmoothOriginalFormulas
 public import FLT.Mazur.WeierstrassLeftSmoothProductOpen
 public import FLT.Mazur.WeierstrassLeftSmoothTransportedComparison
 public import FLT.Mazur.WeierstrassLeftSmoothTransportedCover
