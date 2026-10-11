@@ -5238,6 +5238,7 @@ public import FLT.Mazur.PolygonCompleteNodeAffineIdeal
 public import FLT.Mazur.PolygonCompleteNodeArithmeticAction
 public import FLT.Mazur.PolygonCompleteNodeArithmeticGerms
 public import FLT.Mazur.PolygonCompleteNodeCompletion
+public import FLT.Mazur.PolygonCompleteNodeCotangentAction
 public import FLT.Mazur.PolygonCompleteNodeFiltration
 public import FLT.Mazur.PolygonCompleteNodeLocalFiniteness
 public import FLT.Mazur.PolygonCompleteNodeModuleFiltration
