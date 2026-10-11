@@ -6312,6 +6312,7 @@ public import FLT.Mazur.ProjectiveLineStandardOverlap
 public import FLT.Mazur.ProjectiveLineTopology
 public import FLT.Mazur.ProjectiveLineTwistCoordinates
 public import FLT.Mazur.ProjectiveLineUniversalAction
+public import FLT.Mazur.ProjectiveLineUniversalLaurentEvaluation
 public import FLT.Mazur.ProjectiveLinearCoefficientChange
 public import FLT.Mazur.ProjectiveLinearIsomorphism
 public import FLT.Mazur.ProjectiveLinearOver
