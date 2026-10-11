@@ -7718,9 +7718,12 @@ public import FLT.Mazur.WeierstrassDividedFirstOutputCover
 public import FLT.Mazur.WeierstrassDividedFirstSuccessorAction
 public import FLT.Mazur.WeierstrassDividedFirstUnitAction
 public import FLT.Mazur.WeierstrassDividedFullResidueAtlas
+public import FLT.Mazur.WeierstrassDividedGlobalActionAssociativity
 public import FLT.Mazur.WeierstrassDividedGlobalActionConstruction
 public import FLT.Mazur.WeierstrassDividedGlobalActionIdentity
 public import FLT.Mazur.WeierstrassDividedGlobalActionInverse
+public import FLT.Mazur.WeierstrassDividedGlobalActionSmooth
+public import FLT.Mazur.WeierstrassDividedGlobalCoefficientAction
 public import FLT.Mazur.WeierstrassDividedGlobalConicCoordinates
 public import FLT.Mazur.WeierstrassDividedGlobalConicIntersection
 public import FLT.Mazur.WeierstrassDividedGlobalFiniteActionProduct
@@ -7738,7 +7741,12 @@ public import FLT.Mazur.WeierstrassDividedGlobalInitialAction
 public import FLT.Mazur.WeierstrassDividedGlobalInitialActionGeometry
 public import FLT.Mazur.WeierstrassDividedGlobalInitialActionLaws
 public import FLT.Mazur.WeierstrassDividedGlobalInitialComparison
+public import FLT.Mazur.WeierstrassDividedGlobalOriginalSmoothPoints
+public import FLT.Mazur.WeierstrassDividedGlobalOverPointAction
 public import FLT.Mazur.WeierstrassDividedGlobalPointAction
+public import FLT.Mazur.WeierstrassDividedGlobalPointActionStep
+public import FLT.Mazur.WeierstrassDividedGlobalPointSubgroups
+public import FLT.Mazur.WeierstrassDividedGlobalProjectivePointAction
 public import FLT.Mazur.WeierstrassDividedGlobalRegularLift
 public import FLT.Mazur.WeierstrassDividedGlobalResidueNodes
 public import FLT.Mazur.WeierstrassDividedGlobalResidueOverlap
@@ -7753,6 +7761,7 @@ public import FLT.Mazur.WeierstrassDividedGlobalTensorEmbedding
 public import FLT.Mazur.WeierstrassDividedGlobalTensorGluing
 public import FLT.Mazur.WeierstrassDividedGlobalTensorInfinity
 public import FLT.Mazur.WeierstrassDividedGlobalTensorIntersection
+public import FLT.Mazur.WeierstrassDividedGlobalTranslationGraph
 public import FLT.Mazur.WeierstrassDividedGlobalZeroComponents
 public import FLT.Mazur.WeierstrassDividedGlobalZeroConicIntersection
 public import FLT.Mazur.WeierstrassDividedGlobalZeroIntersection
