@@ -5446,6 +5446,7 @@ public import FLT.Mazur.PolygonCompleteH1Rank
 public import FLT.Mazur.PolygonCompleteH1Reduction
 public import FLT.Mazur.PolygonCompleteLineHomExt
 public import FLT.Mazur.PolygonCompleteLineHomReconstruction
+public import FLT.Mazur.PolygonCompleteLineIsoDetection
 public import FLT.Mazur.PolygonCompleteLineOriginalReduction
 public import FLT.Mazur.PolygonCompleteLineQuotient
 public import FLT.Mazur.PolygonCompleteLineSectionReconstruction
