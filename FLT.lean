@@ -6652,6 +6652,7 @@ public import FLT.Mazur.SchemeAffineFppfSourceCover
 public import FLT.Mazur.SchemeAffineImageTestComparison
 public import FLT.Mazur.SchemeAffineImageTestNaturality
 public import FLT.Mazur.SchemeAffineImageTestRefinement
+public import FLT.Mazur.SchemeAffineLiftUniqueness
 public import FLT.Mazur.SchemeAffineNamedCrossSectionMaps
 public import FLT.Mazur.SchemeAffineNamedSectionMapEquation
 public import FLT.Mazur.SchemeAffineNamedSectionPostcomposition
