@@ -5153,6 +5153,7 @@ public import FLT.Mazur.NoetherianUniversalStructureSheaf
 public import FLT.Mazur.NonspecialDivisorLineCover
 public import FLT.Mazur.NonspecialDivisorNeighborhood
 public import FLT.Mazur.NonspecialDivisorTestCover
+public import FLT.Mazur.NonspecialDivisorTranslationCover
 public import FLT.Mazur.NonzeroLineSectionExact
 public import FLT.Mazur.NonzeroSectionPointCondition
 public import FLT.Mazur.NormalizedSectionLine
