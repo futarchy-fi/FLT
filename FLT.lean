@@ -7924,6 +7924,7 @@ public import FLT.Mazur.WeierstrassDividedSuccessorOutputCover
 public import FLT.Mazur.WeierstrassDividedSuccessorRetainedAction
 public import FLT.Mazur.WeierstrassDividedSuccessorRetainedCenter
 public import FLT.Mazur.WeierstrassDividedSuccessorRetainedCoordinates
+public import FLT.Mazur.WeierstrassDividedSuccessorRetainedGluing
 public import FLT.Mazur.WeierstrassDividedSuccessorUnitAction
 public import FLT.Mazur.WeierstrassDividedTensorAtlasComparison
 public import FLT.Mazur.WeierstrassDividedTensorYBoundary
