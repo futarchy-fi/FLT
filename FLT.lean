@@ -3156,6 +3156,7 @@ public import FLT.Mazur.ClosedPointLineSection
 public import FLT.Mazur.ClosedPointQuotientFiber
 public import FLT.Mazur.ClosedPointStalkComposition
 public import FLT.Mazur.ClosedPointStalkMap
+public import FLT.Mazur.ClosedPointStalkQuotient
 public import FLT.Mazur.ClosedProjectiveSerreVanishing
 public import FLT.Mazur.ClosedPushforwardCohomology
 public import FLT.Mazur.ClosedPushforwardFull
