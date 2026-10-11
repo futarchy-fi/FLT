@@ -7375,6 +7375,7 @@ public import FLT.Mazur.WeierstrassDividedOrderedAdjacentComponents
 public import FLT.Mazur.WeierstrassDividedOrderedPairCoverage
 public import FLT.Mazur.WeierstrassDividedOrderedRetainedSections
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityAtlasFamily
+public import FLT.Mazur.WeierstrassDividedPositiveEqualityAtlasRecovery
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityBranchIndices
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityBranches
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityCocone
