@@ -2834,6 +2834,7 @@ public import FLT.Mazur.AffineSectionMonicity
 public import FLT.Mazur.AffineSectionResidueEquation
 public import FLT.Mazur.AffineSectionTensorSquare
 public import FLT.Mazur.AffineSectionsReconstruction
+public import FLT.Mazur.AffineSmoothEtaleCoordinates
 public import FLT.Mazur.AffineSmoothFiniteFlatCartier
 public import FLT.Mazur.AffineSourcePullbackSections
 public import FLT.Mazur.AffineSourceSectionComparison
@@ -3923,12 +3924,15 @@ public import FLT.Mazur.EquifiberedGluingBaseChange
 public import FLT.Mazur.EquifiberedSchemeGluing
 public import FLT.Mazur.EtaleAlgebraReduced
 public import FLT.Mazur.EtaleCoordinate
+public import FLT.Mazur.EtaleCoordinateSlice
 public import FLT.Mazur.EtaleDimGe
 public import FLT.Mazur.EtaleDimLe
 public import FLT.Mazur.EtaleFiniteQuotientBranch
 public import FLT.Mazur.EtaleFiniteSupportCartier
 public import FLT.Mazur.EtaleLocalParameterIdeals
 public import FLT.Mazur.EtaleMarkingScheme
+public import FLT.Mazur.EtalePolynomialPointLift
+public import FLT.Mazur.EtalePolynomialStalkLift
 public import FLT.Mazur.EtalePrimeParameterIdeals
 public import FLT.Mazur.EtaleQuasiFiniteCartierDescent
 public import FLT.Mazur.EvaluatedPrincipalRefinement
@@ -5439,11 +5443,14 @@ public import FLT.Mazur.OrderedDivisorLineSpecialization
 public import FLT.Mazur.OrderedDivisorOriginalFiber
 public import FLT.Mazur.OrderedDivisorSectionSpecialization
 public import FLT.Mazur.OrderedDivisorTranslation
+public import FLT.Mazur.OrderedHilbertEtaleResidueLift
+public import FLT.Mazur.OrderedHilbertEtaleStalkLift
 public import FLT.Mazur.OrderedProjectiveHilbertNaturality
 public import FLT.Mazur.OrderedProjectiveHilbertParameter
 public import FLT.Mazur.OrderedRelativeIdealBaseChange
 public import FLT.Mazur.OrderedRelativeIdealFamily
 public import FLT.Mazur.OrderedTranslationAffineParameterCover
+public import FLT.Mazur.OrderedTranslationEtaleResidueLift
 public import FLT.Mazur.OrderedTranslationLocallyRingedMap
 public import FLT.Mazur.OrderedTranslationOriginalFiber
 public import FLT.Mazur.OrderedTranslationQuotientCover
@@ -6758,6 +6765,7 @@ public import FLT.Mazur.RelativeSerreVanishing
 public import FLT.Mazur.RelativeSums
 public import FLT.Mazur.RelativeVeryAmpleLineBundle
 public import FLT.Mazur.RepeatedCubicRoots
+public import FLT.Mazur.ResidueCoordinateDenominators
 public import FLT.Mazur.ResidueFiberRegularLocalization
 public import FLT.Mazur.ResidueNonvanishingLocallySplit
 public import FLT.Mazur.ResidueNonvanishingOpenPullback
@@ -7296,6 +7304,8 @@ public import FLT.Mazur.SmoothCurvePicardDegree
 public import FLT.Mazur.SmoothCurvePureDimension
 public import FLT.Mazur.SmoothDimension
 public import FLT.Mazur.SmoothDimensionBound
+public import FLT.Mazur.SmoothEtaleResidueLift
+public import FLT.Mazur.SmoothEtaleStalkLift
 public import FLT.Mazur.SmoothFieldCotangentRank
 public import FLT.Mazur.SmoothFiniteCoefficientBranch
 public import FLT.Mazur.SmoothFiniteFlatIdealCharts
@@ -7620,6 +7630,7 @@ public import FLT.Mazur.ValuationRingModel
 public import FLT.Mazur.VariableHilbertChartRelation
 public import FLT.Mazur.VariableHilbertChartRelationOperations
 public import FLT.Mazur.VariableHilbertChartRelationPullback
+public import FLT.Mazur.VariableHilbertEtaleRelation
 public import FLT.Mazur.VariableHilbertIntersectionBaseChange
 public import FLT.Mazur.VariableHilbertInvariantFunctionDescent
 public import FLT.Mazur.VariableHilbertInvariantOpenDescent
@@ -8005,6 +8016,8 @@ public import FLT.Mazur.WeierstrassDividedGlobalZeroIntersection
 public import FLT.Mazur.WeierstrassDividedGlobalZeroNodes
 public import FLT.Mazur.WeierstrassDividedGlobalZeroOverlap
 public import FLT.Mazur.WeierstrassDividedGlobalZeroSuccessive
+public import FLT.Mazur.WeierstrassDividedHorizontalCoefficientPointAction
+public import FLT.Mazur.WeierstrassDividedHorizontalFinitePointAction
 public import FLT.Mazur.WeierstrassDividedInfinityLaurentChart
 public import FLT.Mazur.WeierstrassDividedInfinityLaurentGluing
 public import FLT.Mazur.WeierstrassDividedInfinityLaurentZero
@@ -8027,6 +8040,7 @@ public import FLT.Mazur.WeierstrassDividedInitialExteriorOriented
 public import FLT.Mazur.WeierstrassDividedInitialExteriorProjective
 public import FLT.Mazur.WeierstrassDividedInitialGlobalResidueNodes
 public import FLT.Mazur.WeierstrassDividedInitialGlobalSections
+public import FLT.Mazur.WeierstrassDividedInitialGlobalStep
 public import FLT.Mazur.WeierstrassDividedInitialGlobalTensorChart
 public import FLT.Mazur.WeierstrassDividedInitialHorizontalActionBoundary
 public import FLT.Mazur.WeierstrassDividedInitialHorizontalActionGeometry
@@ -8041,6 +8055,7 @@ public import FLT.Mazur.WeierstrassDividedInitialNodeBranches
 public import FLT.Mazur.WeierstrassDividedInitialNodeHomExt
 public import FLT.Mazur.WeierstrassDividedInitialParameterIntersection
 public import FLT.Mazur.WeierstrassDividedInitialParameterOverlap
+public import FLT.Mazur.WeierstrassDividedInitialPointActionPropagation
 public import FLT.Mazur.WeierstrassDividedInitialPrecedingExterior
 public import FLT.Mazur.WeierstrassDividedInitialProjectiveComponents
 public import FLT.Mazur.WeierstrassDividedInitialPunctureCompatibility
@@ -8054,6 +8069,7 @@ public import FLT.Mazur.WeierstrassDividedInitialTensorChart
 public import FLT.Mazur.WeierstrassDividedInitialTensorGlobalComparison
 public import FLT.Mazur.WeierstrassDividedInitialTensorInfinityIntersection
 public import FLT.Mazur.WeierstrassDividedInitialTensorIntersection
+public import FLT.Mazur.WeierstrassDividedInitialTensorPointAction
 public import FLT.Mazur.WeierstrassDividedInitialZeroInfinity
 public import FLT.Mazur.WeierstrassDividedInitialZeroLaurent
 public import FLT.Mazur.WeierstrassDividedInitialZeroSlopeChart
@@ -9136,8 +9152,10 @@ public import FLT.Mazur.WeierstrassSmoothHorizontalProductResidue
 public import FLT.Mazur.WeierstrassSmoothHorizontalProductSource
 public import FLT.Mazur.WeierstrassSmoothHorizontalReciprocalCharacters
 public import FLT.Mazur.WeierstrassSmoothHorizontalResidueCoordinates
+public import FLT.Mazur.WeierstrassSmoothHorizontalResiduePoint
 public import FLT.Mazur.WeierstrassSmoothHorizontalTensorAction
 public import FLT.Mazur.WeierstrassSmoothHorizontalTensorGlobalAction
+public import FLT.Mazur.WeierstrassSmoothHorizontalTensorInput
 public import FLT.Mazur.WeierstrassSmoothInfinityCommutativity
 public import FLT.Mazur.WeierstrassSmoothInfinityDomain
 public import FLT.Mazur.WeierstrassSmoothInfinityIdentity
