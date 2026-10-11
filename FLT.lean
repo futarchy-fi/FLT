@@ -4809,6 +4809,7 @@ public import FLT.Mazur.LineDescentDiagonalRigidity
 public import FLT.Mazur.LineDualPullbackSquare
 public import FLT.Mazur.LineEndpointTransport
 public import FLT.Mazur.LineImageCartier
+public import FLT.Mazur.LineMorphismSectionTransport
 public import FLT.Mazur.LineMorphismTensorSection
 public import FLT.Mazur.LinePowerCocyclePullback
 public import FLT.Mazur.LinePowerEvaluationDescent
