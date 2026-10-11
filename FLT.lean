@@ -8316,6 +8316,7 @@ public import FLT.Mazur.WeierstrassOrdinaryGlobalDomains
 public import FLT.Mazur.WeierstrassOrdinaryNegationEmpty
 public import FLT.Mazur.WeierstrassOrdinaryPointComparison
 public import FLT.Mazur.WeierstrassOrdinarySchemeLift
+public import FLT.Mazur.WeierstrassOrdinarySingularCenter
 public import FLT.Mazur.WeierstrassOrdinarySpecializationUnits
 public import FLT.Mazur.WeierstrassOrdinaryTripleAlgebra
 public import FLT.Mazur.WeierstrassOrdinaryTripleCoordinates
