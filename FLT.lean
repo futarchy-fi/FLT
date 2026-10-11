@@ -7736,6 +7736,7 @@ public import FLT.Mazur.WeierstrassDividedGlobalTensorEmbedding
 public import FLT.Mazur.WeierstrassDividedGlobalTensorGluing
 public import FLT.Mazur.WeierstrassDividedGlobalTensorInfinity
 public import FLT.Mazur.WeierstrassDividedGlobalTensorIntersection
+public import FLT.Mazur.WeierstrassDividedGlobalTranslationGraph
 public import FLT.Mazur.WeierstrassDividedGlobalZeroComponents
 public import FLT.Mazur.WeierstrassDividedGlobalZeroConicIntersection
 public import FLT.Mazur.WeierstrassDividedGlobalZeroIntersection
