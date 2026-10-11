@@ -5311,6 +5311,7 @@ public import FLT.Mazur.OneGonSmoothingPuncturedGroupAtlas
 public import FLT.Mazur.OneGonSmoothingPuncturedParameter
 public import FLT.Mazur.OneGonSmoothingSchemeAuxiliaryMarking
 public import FLT.Mazur.OneGonSmoothingSchemeNormalizedGroup
+public import FLT.Mazur.OneGonSmoothingSchemeNormalizedMarking
 public import FLT.Mazur.OneGonSmoothingSmoothGroup
 public import FLT.Mazur.OneGonSmoothingSmoothParameter
 public import FLT.Mazur.OneGonSmoothingUniversalComparison
