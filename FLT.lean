@@ -8031,6 +8031,7 @@ public import FLT.Mazur.WeierstrassIntegralZeroSection
 public import FLT.Mazur.WeierstrassLeftSmoothAdditionGluing
 public import FLT.Mazur.WeierstrassLeftSmoothAdditionStructure
 public import FLT.Mazur.WeierstrassLeftSmoothAffineAddition
+public import FLT.Mazur.WeierstrassLeftSmoothAffineIdentity
 public import FLT.Mazur.WeierstrassLeftSmoothAffineTransport
 public import FLT.Mazur.WeierstrassLeftSmoothCrossInput
 public import FLT.Mazur.WeierstrassLeftSmoothFactorAddition
