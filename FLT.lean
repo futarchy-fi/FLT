@@ -3127,6 +3127,7 @@ public import FLT.Mazur.CanonicalSectionComposition
 public import FLT.Mazur.CanonicalSectionNaturality
 public import FLT.Mazur.CartesianAtlasAffineIntersections
 public import FLT.Mazur.CartesianCoefficientPositiveHomology
+public import FLT.Mazur.CartesianIdentityQuasiFinite
 public import FLT.Mazur.CartesianMonoGroup
 public import FLT.Mazur.CartesianMonoMonoid
 public import FLT.Mazur.CartesianMorphismRecovery
