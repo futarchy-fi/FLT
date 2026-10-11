@@ -2568,6 +2568,7 @@ public import FLT.Mazur.AdicInfinitesimalPresentationLift
 public import FLT.Mazur.AdicInfinitesimalSpaceFunctor
 public import FLT.Mazur.AdicInfinitesimalSpaceMap
 public import FLT.Mazur.AdicLocalizedFirstCotangent
+public import FLT.Mazur.AdicLocalizedH1Comparison
 public import FLT.Mazur.AdicMaximalCompletion
 public import FLT.Mazur.AdicModuleIdealTransport
 public import FLT.Mazur.AdicModuleScalarChange
@@ -3835,6 +3836,7 @@ public import FLT.Mazur.ExactFunctorInjectiveExt
 public import FLT.Mazur.ExactOrderCyclicPowers
 public import FLT.Mazur.ExactSourceDenominatorLift
 public import FLT.Mazur.FCurveContracts
+public import FLT.Mazur.FaithfulTensorVanishing
 public import FLT.Mazur.FaithfullyFlatFinitePresentation
 public import FLT.Mazur.FaithfullyFlatInvertible
 public import FLT.Mazur.FaithfullyFlatTowerReflection
@@ -4824,6 +4826,7 @@ public import FLT.Mazur.LocalClosedFiberUniversalFunctions
 public import FLT.Mazur.LocalCompletionFaithfullyFlat
 public import FLT.Mazur.LocalCompletionModel
 public import FLT.Mazur.LocalCompletionModelFiltration
+public import FLT.Mazur.LocalCompletionModelFiniteEquiv
 public import FLT.Mazur.LocalCompletionModelModule
 public import FLT.Mazur.LocalCompletionSmoothCriterion
 public import FLT.Mazur.LocalFiberRegularQuotient
@@ -4852,6 +4855,7 @@ public import FLT.Mazur.LocalizedIntegerComparisonTransport
 public import FLT.Mazur.LocalizedIntegerModelIsomorphism
 public import FLT.Mazur.LocalizedKernelComparison
 public import FLT.Mazur.LocalizedKernelPathCompatibility
+public import FLT.Mazur.LocalizedOriginalSmoothCriterion
 public import FLT.Mazur.LocalizedPointAlgebraKernel
 public import FLT.Mazur.LocalizedPolynomialDiagramCoefficients
 public import FLT.Mazur.LocalizedPolynomialStableRelations
@@ -5348,7 +5352,9 @@ public import FLT.Mazur.PolygonCompleteLineQuotient
 public import FLT.Mazur.PolygonCompleteMarkingSpecialization
 public import FLT.Mazur.PolygonCompleteNodeAffineIdeal
 public import FLT.Mazur.PolygonCompleteNodeArithmeticAction
+public import FLT.Mazur.PolygonCompleteNodeArithmeticDifferentials
 public import FLT.Mazur.PolygonCompleteNodeArithmeticGerms
+public import FLT.Mazur.PolygonCompleteNodeArithmeticH1Equiv
 public import FLT.Mazur.PolygonCompleteNodeCompletedLift
 public import FLT.Mazur.PolygonCompleteNodeCompletion
 public import FLT.Mazur.PolygonCompleteNodeConormal
@@ -5359,6 +5365,10 @@ public import FLT.Mazur.PolygonCompleteNodeCotangentEquiv
 public import FLT.Mazur.PolygonCompleteNodeCotangentFiltration
 public import FLT.Mazur.PolygonCompleteNodeFiltration
 public import FLT.Mazur.PolygonCompleteNodeFirstCotangent
+public import FLT.Mazur.PolygonCompleteNodeGenericDifferentials
+public import FLT.Mazur.PolygonCompleteNodeGenericH1
+public import FLT.Mazur.PolygonCompleteNodeGenericSmooth
+public import FLT.Mazur.PolygonCompleteNodeGermH1Equiv
 public import FLT.Mazur.PolygonCompleteNodeInfinitesimalLift
 public import FLT.Mazur.PolygonCompleteNodeLocalFiniteness
 public import FLT.Mazur.PolygonCompleteNodeLocalizedCotangent
@@ -5368,6 +5378,7 @@ public import FLT.Mazur.PolygonCompleteNodeOriginalH1Equiv
 public import FLT.Mazur.PolygonCompleteNodeOriginalSpaceMap
 public import FLT.Mazur.PolygonCompleteNodeStalkCompletion
 public import FLT.Mazur.PolygonCompleteNodeStalkEvaluation
+public import FLT.Mazur.PolygonCompleteNodeStalkH1Equiv
 public import FLT.Mazur.PolygonCompleteNodeStalkMap
 public import FLT.Mazur.PolygonComponentDistinct
 public import FLT.Mazur.PolygonComponentImages
@@ -5560,12 +5571,14 @@ public import FLT.Mazur.PolygonSmoothingConormalEquiv
 public import FLT.Mazur.PolygonSmoothingConormalMap
 public import FLT.Mazur.PolygonSmoothingCoordinateIdeal
 public import FLT.Mazur.PolygonSmoothingCotangentCokernel
+public import FLT.Mazur.PolygonSmoothingCotangentFaithfulDescent
 public import FLT.Mazur.PolygonSmoothingCotangentRelationSequence
 public import FLT.Mazur.PolygonSmoothingDerivation
 public import FLT.Mazur.PolygonSmoothingFirstCotangent
 public import FLT.Mazur.PolygonSmoothingFirstCotangentBaseChange
 public import FLT.Mazur.PolygonSmoothingFlat
 public import FLT.Mazur.PolygonSmoothingGenericFiber
+public import FLT.Mazur.PolygonSmoothingH1FaithfulDescent
 public import FLT.Mazur.PolygonSmoothingLeftPuncture
 public import FLT.Mazur.PolygonSmoothingLocalizedCotangent
 public import FLT.Mazur.PolygonSmoothingMarkedSection
@@ -6899,6 +6912,7 @@ public import FLT.Mazur.SurjectiveStructureSupport
 public import FLT.Mazur.SurjectiveTowerLifting
 public import FLT.Mazur.SymmetricAffineLineParameters
 public import FLT.Mazur.TensorAdicSeparation
+public import FLT.Mazur.TensorAlgebraSemilinearEquiv
 public import FLT.Mazur.TensorEvaluationSemilinear
 public import FLT.Mazur.TensorInjectivityFiniteLength
 public import FLT.Mazur.TensorIntegerModelClosedImmersion
