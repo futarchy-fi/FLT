@@ -5146,6 +5146,7 @@ public import FLT.Mazur.NoetherianSumCechComplex
 public import FLT.Mazur.NoetherianSumCechInclusion
 public import FLT.Mazur.NoetherianSumCechTerms
 public import FLT.Mazur.NoetherianUniversalStructureSheaf
+public import FLT.Mazur.NonspecialDivisorNeighborhood
 public import FLT.Mazur.NonzeroLineSectionExact
 public import FLT.Mazur.NonzeroSectionPointCondition
 public import FLT.Mazur.NormalizedSectionLine
