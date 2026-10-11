@@ -5811,6 +5811,7 @@ public import FLT.Mazur.PolygonVeroneseAdicReduction
 public import FLT.Mazur.PolygonVeroneseBoundedGenerators
 public import FLT.Mazur.PolygonVeroneseClosedGeneration
 public import FLT.Mazur.PolygonVeroneseClosedLifts
+public import FLT.Mazur.PolygonVeroneseCoefficientMap
 public import FLT.Mazur.PolygonVeroneseDegreeComplete
 public import FLT.Mazur.PolygonVeroneseDegreeExactness
 public import FLT.Mazur.PolygonVeroneseDegreeFinite
