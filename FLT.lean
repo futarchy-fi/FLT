@@ -7613,6 +7613,7 @@ public import FLT.Mazur.WeierstrassDividedFirstActionInput
 public import FLT.Mazur.WeierstrassDividedFirstAtlasCoordinates
 public import FLT.Mazur.WeierstrassDividedFirstAtlasFractionAction
 public import FLT.Mazur.WeierstrassDividedFirstCrossedAction
+public import FLT.Mazur.WeierstrassDividedFirstExteriorAction
 public import FLT.Mazur.WeierstrassDividedFirstExteriorCenter
 public import FLT.Mazur.WeierstrassDividedFirstExteriorCoordinates
 public import FLT.Mazur.WeierstrassDividedFirstFractionAction
