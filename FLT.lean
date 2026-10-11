@@ -4565,6 +4565,7 @@ public import FLT.Mazur.IdealIsomorphismExtension
 public import FLT.Mazur.IdealModuleAffineTensor
 public import FLT.Mazur.IdealModulePrincipalPullback
 public import FLT.Mazur.IdealModulePullback
+public import FLT.Mazur.IdealModulePullbackCoherence
 public import FLT.Mazur.IdealModulePullbackRestrict
 public import FLT.Mazur.IdealModuleSheaf
 public import FLT.Mazur.IdealPowerChartDescent
