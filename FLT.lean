@@ -2583,6 +2583,7 @@ public import FLT.Mazur.AdicPresentationDerivation
 public import FLT.Mazur.AdicPresentationFirstCotangent
 public import FLT.Mazur.AdicPresentationScalarTowers
 public import FLT.Mazur.AdicSectionIsoReconstruction
+public import FLT.Mazur.AdicSectionProjectionExt
 public import FLT.Mazur.AdicSeparatedDerivation
 public import FLT.Mazur.AdicSeparatedDifferentials
 public import FLT.Mazur.AdicSquareZeroCompletion
@@ -5388,11 +5389,15 @@ public import FLT.Mazur.PolygonCompleteClosedSmoothLocus
 public import FLT.Mazur.PolygonCompleteClosedSpecialization
 public import FLT.Mazur.PolygonCompleteCoefficientAmple
 public import FLT.Mazur.PolygonCompleteCoefficientCoherence
+public import FLT.Mazur.PolygonCompleteCoefficientHomExt
 public import FLT.Mazur.PolygonCompleteCoefficientLine
 public import FLT.Mazur.PolygonCompleteCoefficientOpens
 public import FLT.Mazur.PolygonCompleteCoefficientReconstruction
 public import FLT.Mazur.PolygonCompleteConstantSections
 public import FLT.Mazur.PolygonCompleteCoordinateEvaluation
+public import FLT.Mazur.PolygonCompleteDivisorLine
+public import FLT.Mazur.PolygonCompleteDivisorLineCoherence
+public import FLT.Mazur.PolygonCompleteDivisorPowerComparison
 public import FLT.Mazur.PolygonCompleteDivisorRestriction
 public import FLT.Mazur.PolygonCompleteFamilyFlatness
 public import FLT.Mazur.PolygonCompleteFiberMarkings
@@ -5410,9 +5415,12 @@ public import FLT.Mazur.PolygonCompleteH1Rank
 public import FLT.Mazur.PolygonCompleteH1Reduction
 public import FLT.Mazur.PolygonCompleteLineOriginalReduction
 public import FLT.Mazur.PolygonCompleteLineQuotient
+public import FLT.Mazur.PolygonCompleteLineSectionReconstruction
 public import FLT.Mazur.PolygonCompleteMarkedClosedFiber
+public import FLT.Mazur.PolygonCompleteMarkingAmple
 public import FLT.Mazur.PolygonCompleteMarkingCartier
 public import FLT.Mazur.PolygonCompleteMarkingDivisor
+public import FLT.Mazur.PolygonCompleteMarkingLineBaseChange
 public import FLT.Mazur.PolygonCompleteMarkingNaturality
 public import FLT.Mazur.PolygonCompleteMarkingSpecialization
 public import FLT.Mazur.PolygonCompleteMarkingUniqueness
