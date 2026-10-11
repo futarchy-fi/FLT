@@ -2511,6 +2511,7 @@ public import FLT.Mazur.AdicDerivationCompletion
 public import FLT.Mazur.AdicDerivationFiltration
 public import FLT.Mazur.AdicDerivationNaturality
 public import FLT.Mazur.AdicDerivationQuotient
+public import FLT.Mazur.AdicDerivationUniqueness
 public import FLT.Mazur.AdicFiniteGenerationLifting
 public import FLT.Mazur.AdicFiniteModuleExt
 public import FLT.Mazur.AdicSectionIsoReconstruction
