@@ -8942,6 +8942,7 @@ public import FLT.Mazur.WeierstrassRetainedRegularCenter
 public import FLT.Mazur.WeierstrassSameOutputIntersections
 public import FLT.Mazur.WeierstrassScaledChartComparison
 public import FLT.Mazur.WeierstrassSecantHorizontalInput
+public import FLT.Mazur.WeierstrassSecantHorizontalResidueFactor
 public import FLT.Mazur.WeierstrassSecantMorphismExt
 public import FLT.Mazur.WeierstrassSecantPairRefinement
 public import FLT.Mazur.WeierstrassSecantSmoothPresentation
