@@ -4210,6 +4210,7 @@ public import FLT.Mazur.FiniteSchemeLineCohomology
 public import FLT.Mazur.FiniteSchemeLineTwist
 public import FLT.Mazur.FiniteSectionCoverReindex
 public import FLT.Mazur.FiniteSectionProjectivePresentation
+public import FLT.Mazur.FiniteSeparablePointFactor
 public import FLT.Mazur.FiniteSeparatedLineSheafDescent
 public import FLT.Mazur.FiniteSubgroupClassPresheaf
 public import FLT.Mazur.FiniteSubgroupPicard
@@ -4311,6 +4312,7 @@ public import FLT.Mazur.FreeSheafPullbackRestriction
 public import FLT.Mazur.FreeSheafRestrictionCoherence
 public import FLT.Mazur.FreeSheafSectionCoordinates
 public import FLT.Mazur.FullDivisorFlatFppfDescent
+public import FLT.Mazur.FullHilbertIntersectionSeparablePoints
 public import FLT.Mazur.GeneralizedCurveAmpleBaseChange
 public import FLT.Mazur.GeneralizedCurveAmpleDescent
 public import FLT.Mazur.GeneralizedCurveAmpleSubgroup
@@ -5031,6 +5033,7 @@ public import FLT.Mazur.LocalizedStalkSmoothGenerization
 public import FLT.Mazur.LocalizedTensorCancellation
 public import FLT.Mazur.LocalizedTensorExactness
 public import FLT.Mazur.LocallyFiniteFreeOpenCover
+public import FLT.Mazur.LocallyFiniteTypeSeparablePointFactor
 public import FLT.Mazur.LocallyFramedSplitLineCoverIndependence
 public import FLT.Mazur.LocallyFramedSplitLineNaturality
 public import FLT.Mazur.LocallyFramedSplitLineProjective
@@ -5454,9 +5457,14 @@ public import FLT.Mazur.OrderedDivisorLineSpecialization
 public import FLT.Mazur.OrderedDivisorOriginalFiber
 public import FLT.Mazur.OrderedDivisorSectionSpecialization
 public import FLT.Mazur.OrderedDivisorTranslation
+public import FLT.Mazur.OrderedHilbertEtaleGeometricCoverage
+public import FLT.Mazur.OrderedHilbertEtaleGeometricLift
 public import FLT.Mazur.OrderedHilbertEtaleResidueLift
 public import FLT.Mazur.OrderedHilbertEtaleSeparableLift
 public import FLT.Mazur.OrderedHilbertEtaleStalkLift
+public import FLT.Mazur.OrderedHilbertEtaleTestCover
+public import FLT.Mazur.OrderedHilbertEtaleTestPoints
+public import FLT.Mazur.OrderedHilbertSeparableGeometricCoverage
 public import FLT.Mazur.OrderedProjectiveHilbertNaturality
 public import FLT.Mazur.OrderedProjectiveHilbertParameter
 public import FLT.Mazur.OrderedRelativeIdealBaseChange
@@ -6048,8 +6056,10 @@ public import FLT.Mazur.PolygonVeroneseTensorReduction
 public import FLT.Mazur.PolygonVeroneseZeroRing
 public import FLT.Mazur.PolynomialAffineIdealDegree
 public import FLT.Mazur.PolynomialCoefficientArrow
+public import FLT.Mazur.PolynomialCoefficientCartesian
 public import FLT.Mazur.PolynomialEndpointInterpolation
 public import FLT.Mazur.PolynomialFlatQuotientPresentation
+public import FLT.Mazur.PolynomialGeometricRationalPoints
 public import FLT.Mazur.PolynomialRelationIntegerModel
 public import FLT.Mazur.PolynomialRelativeAffineChart
 public import FLT.Mazur.PolynomialRelativeAffineCover
@@ -7331,12 +7341,15 @@ public import FLT.Mazur.SmoothDimensionBound
 public import FLT.Mazur.SmoothEtaleResidueLift
 public import FLT.Mazur.SmoothEtaleSeparableLift
 public import FLT.Mazur.SmoothEtaleStalkLift
+public import FLT.Mazur.SmoothFiberSeparablePoints
 public import FLT.Mazur.SmoothFieldCotangentRank
 public import FLT.Mazur.SmoothFiniteCoefficientBranch
 public import FLT.Mazur.SmoothFiniteFlatIdealCharts
 public import FLT.Mazur.SmoothFiniteSubgroupAmple
 public import FLT.Mazur.SmoothFiniteSubschemeCartier
 public import FLT.Mazur.SmoothGeometricAcyclicRankOne
+public import FLT.Mazur.SmoothGeometricFiniteSeparablePoints
+public import FLT.Mazur.SmoothGeometricSeparablePoints
 public import FLT.Mazur.SmoothGeometricallyReduced
 public import FLT.Mazur.SmoothHilbertGeometricCoverage
 public import FLT.Mazur.SmoothHilbertIntersectionComponents
@@ -8101,6 +8114,9 @@ public import FLT.Mazur.WeierstrassDividedInitialTensorPointAction
 public import FLT.Mazur.WeierstrassDividedInitialZeroInfinity
 public import FLT.Mazur.WeierstrassDividedInitialZeroLaurent
 public import FLT.Mazur.WeierstrassDividedInitialZeroSlopeChart
+public import FLT.Mazur.WeierstrassDividedInteriorConicPunctures
+public import FLT.Mazur.WeierstrassDividedInteriorHorizontalCyclicInput
+public import FLT.Mazur.WeierstrassDividedInteriorHorizontalCyclicPair
 public import FLT.Mazur.WeierstrassDividedLaurentRetainedIntersection
 public import FLT.Mazur.WeierstrassDividedLaurentTerminalAttachments
 public import FLT.Mazur.WeierstrassDividedLaurentTerminalEmbedding
@@ -8138,6 +8154,7 @@ public import FLT.Mazur.WeierstrassDividedOlderGlobalParameterSections
 public import FLT.Mazur.WeierstrassDividedOlderGlobalResidueNodes
 public import FLT.Mazur.WeierstrassDividedOlderGlobalSectionExterior
 public import FLT.Mazur.WeierstrassDividedOlderGlobalSections
+public import FLT.Mazur.WeierstrassDividedOlderGlobalStep
 public import FLT.Mazur.WeierstrassDividedOlderGlobalTensorCharts
 public import FLT.Mazur.WeierstrassDividedOlderGlobalZeroBoundaries
 public import FLT.Mazur.WeierstrassDividedOlderGlobalZeroComponents
@@ -8151,6 +8168,7 @@ public import FLT.Mazur.WeierstrassDividedOlderIndexedIntersections
 public import FLT.Mazur.WeierstrassDividedOlderIndexedNodeCover
 public import FLT.Mazur.WeierstrassDividedOlderInfinityPreimage
 public import FLT.Mazur.WeierstrassDividedOlderParameterNodeBranches
+public import FLT.Mazur.WeierstrassDividedOlderPointActionPropagation
 public import FLT.Mazur.WeierstrassDividedOlderResidueInfinity
 public import FLT.Mazur.WeierstrassDividedOlderResidueNodes
 public import FLT.Mazur.WeierstrassDividedOlderSplitNodeBranches
@@ -9215,6 +9233,7 @@ public import FLT.Mazur.WeierstrassSmoothProductOpen
 public import FLT.Mazur.WeierstrassSmoothProjectiveGroup
 public import FLT.Mazur.WeierstrassSmoothReciprocalTriple
 public import FLT.Mazur.WeierstrassSmoothSevenPoints
+public import FLT.Mazur.WeierstrassSmoothSuccessiveTensorInput
 public import FLT.Mazur.WeierstrassSmoothTransportedComparison
 public import FLT.Mazur.WeierstrassSmoothTransportedCover
 public import FLT.Mazur.WeierstrassSmoothTransportedOutputRegular
@@ -9372,6 +9391,9 @@ public import FLT.Mazur.WeierstrassSuccessiveXMiddleSplitOppositeConic
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleTangentSwitch
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleUnion
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleZeroNode
+public import FLT.Mazur.WeierstrassSuccessiveXModificationGeometry
+public import FLT.Mazur.WeierstrassSuccessiveXModificationLocalization
+public import FLT.Mazur.WeierstrassSuccessiveXModificationMap
 public import FLT.Mazur.WeierstrassSuccessiveXMonic
 public import FLT.Mazur.WeierstrassSuccessiveXMonicComparison
 public import FLT.Mazur.WeierstrassSuccessiveXOverlap
