@@ -5297,6 +5297,7 @@ public import FLT.Mazur.OneGonSmoothingOverlapBaseChange
 public import FLT.Mazur.OneGonSmoothingOverlapCompatibility
 public import FLT.Mazur.OneGonSmoothingOverlapCoordinates
 public import FLT.Mazur.OneGonSmoothingPrescribedMarking
+public import FLT.Mazur.OneGonSmoothingPuncturedAtlas
 public import FLT.Mazur.OneGonSmoothingPuncturedFamily
 public import FLT.Mazur.OneGonSmoothingPuncturedParameter
 public import FLT.Mazur.OneGonSmoothingSmoothParameter
