@@ -7225,6 +7225,7 @@ public import FLT.Mazur.TranslatedHilbertGluedOpen
 public import FLT.Mazur.TranslatedHilbertGluedPicard
 public import FLT.Mazur.TranslatedHilbertGluing
 public import FLT.Mazur.TranslatedHilbertLocalCoverage
+public import FLT.Mazur.TranslatedHilbertOpenBaseChange
 public import FLT.Mazur.TranslatedHilbertOverlapIdentities
 public import FLT.Mazur.TranslatedHilbertPicardChart
 public import FLT.Mazur.TranslatedHilbertSchemeCocycle
