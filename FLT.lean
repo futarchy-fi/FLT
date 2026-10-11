@@ -8033,6 +8033,7 @@ public import FLT.Mazur.WeierstrassLeftSmoothAdditionOutputRegular
 public import FLT.Mazur.WeierstrassLeftSmoothAdditionStructure
 public import FLT.Mazur.WeierstrassLeftSmoothAffineAddition
 public import FLT.Mazur.WeierstrassLeftSmoothAffineIdentity
+public import FLT.Mazur.WeierstrassLeftSmoothAffineOutputFactorization
 public import FLT.Mazur.WeierstrassLeftSmoothAffinePairDescent
 public import FLT.Mazur.WeierstrassLeftSmoothAffineTransport
 public import FLT.Mazur.WeierstrassLeftSmoothCrossInput
