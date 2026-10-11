@@ -5709,6 +5709,7 @@ public import FLT.Mazur.PolygonPinchingDiagram
 public import FLT.Mazur.PolygonPinchingFlatBaseChange
 public import FLT.Mazur.PolygonPinchingTensor
 public import FLT.Mazur.PolygonPolynomialMatching
+public import FLT.Mazur.PolygonPositiveRetainedStage
 public import FLT.Mazur.PolygonPowerBranchValues
 public import FLT.Mazur.PolygonPowerCanonicalSection
 public import FLT.Mazur.PolygonPowerNodeEndpoints
