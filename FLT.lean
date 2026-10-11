@@ -2491,9 +2491,14 @@ public import FLT.Mazur.AbsoluteDirectImageCohomology
 public import FLT.Mazur.AcyclicCoefficientCohomology
 public import FLT.Mazur.AcyclicDirectImageResolution
 public import FLT.Mazur.AcyclicLineSectionBaseChange
+public import FLT.Mazur.AcyclicPointedAbelBaseChange
 public import FLT.Mazur.AcyclicPointedAbelEquivalence
+public import FLT.Mazur.AcyclicPointedAbelInverseNaturality
+public import FLT.Mazur.AcyclicPointedAbelPullbackLaws
 public import FLT.Mazur.AcyclicPushforwardCohomology
+public import FLT.Mazur.AcyclicRankOneBaseChange
 public import FLT.Mazur.AcyclicRankOneLineCondition
+public import FLT.Mazur.AcyclicRankOneRelativeClass
 public import FLT.Mazur.AcyclicResolutionComparison
 public import FLT.Mazur.AcyclicTensorExactness
 public import FLT.Mazur.AdditiveComplexDirectSum
@@ -2501,6 +2506,7 @@ public import FLT.Mazur.AdditiveComplexSumHomology
 public import FLT.Mazur.AdditiveComplexSumHomologyInclusion
 public import FLT.Mazur.AdditiveSheafModuleTransport
 public import FLT.Mazur.AdditiveSheafMultiplication
+public import FLT.Mazur.AdicCompletedDifferentials
 public import FLT.Mazur.AdicCompletionAlgEquiv
 public import FLT.Mazur.AdicCompletionPositiveEquiv
 public import FLT.Mazur.AdicCompletionPositiveLimit
@@ -2508,10 +2514,16 @@ public import FLT.Mazur.AdicCompletionPrincipal
 public import FLT.Mazur.AdicCompletionQuotientEquiv
 public import FLT.Mazur.AdicCompletionScalars
 public import FLT.Mazur.AdicDerivationCompletion
+public import FLT.Mazur.AdicDerivationExtension
 public import FLT.Mazur.AdicDerivationFiltration
+public import FLT.Mazur.AdicDerivationNaturality
 public import FLT.Mazur.AdicDerivationQuotient
+public import FLT.Mazur.AdicDerivationUniqueness
 public import FLT.Mazur.AdicFiniteGenerationLifting
+public import FLT.Mazur.AdicFiniteModuleExt
+public import FLT.Mazur.AdicFiniteModuleLift
 public import FLT.Mazur.AdicSectionIsoReconstruction
+public import FLT.Mazur.AdicSeparatedDerivation
 public import FLT.Mazur.AffineAdicCohomologyImage
 public import FLT.Mazur.AffineAdicFormalComparison
 public import FLT.Mazur.AffineAnnihilator
@@ -4103,6 +4115,9 @@ public import FLT.Mazur.GenericIdealSupport
 public import FLT.Mazur.GenericLineTrivialization
 public import FLT.Mazur.GenericSectionUniqueness
 public import FLT.Mazur.GenericWitnessIdealVanishing
+public import FLT.Mazur.GeometricAcyclicPicardLocality
+public import FLT.Mazur.GeometricAcyclicPicardSubfunctor
+public import FLT.Mazur.GeometricAcyclicRankOne
 public import FLT.Mazur.GeometricOpenFactorization
 public import FLT.Mazur.GeometricPointCoverCriterion
 public import FLT.Mazur.GeometricSectionQuasiFinite
@@ -5127,6 +5142,7 @@ public import FLT.Mazur.PointedFieldGeometricConnectedness
 public import FLT.Mazur.PointedPicardBaseChange
 public import FLT.Mazur.PointedPicardFppfComparison
 public import FLT.Mazur.PointedPicardKernelPresheaf
+public import FLT.Mazur.PointedPicardKernelPullback
 public import FLT.Mazur.PointedPicardNormalization
 public import FLT.Mazur.PointedStructureModuleComparison
 public import FLT.Mazur.PolygonActionAssociativity
@@ -5407,7 +5423,9 @@ public import FLT.Mazur.PolygonSmoothingBranchOpens
 public import FLT.Mazur.PolygonSmoothingBranchSwap
 public import FLT.Mazur.PolygonSmoothingCoefficientBranches
 public import FLT.Mazur.PolygonSmoothingCoefficientSquares
+public import FLT.Mazur.PolygonSmoothingCompletedDifferentials
 public import FLT.Mazur.PolygonSmoothingCoordinateIdeal
+public import FLT.Mazur.PolygonSmoothingDerivation
 public import FLT.Mazur.PolygonSmoothingFlat
 public import FLT.Mazur.PolygonSmoothingGenericFiber
 public import FLT.Mazur.PolygonSmoothingLeftPuncture
@@ -6047,6 +6065,7 @@ public import FLT.Mazur.QuasiFiniteIdealQuotient
 public import FLT.Mazur.QuasiFiniteSmoothLocalEquation
 public import FLT.Mazur.QuasicoherentImageIdeal
 public import FLT.Mazur.QuasicoherentImageIdealOrbits
+public import FLT.Mazur.QuotientRelativeDerivation
 public import FLT.Mazur.RankOneAmbientLineClassification
 public import FLT.Mazur.RankOneDirectImageSection
 public import FLT.Mazur.RankOneSectionDivisorUniqueness
@@ -6081,6 +6100,9 @@ public import FLT.Mazur.ReesRelativeScalarTower
 public import FLT.Mazur.RefinedChartSpectrum
 public import FLT.Mazur.RegularParameterIdeals
 public import FLT.Mazur.RelativeAbelFiberOriginalSquare
+public import FLT.Mazur.RelativeAcyclicClassDivisor
+public import FLT.Mazur.RelativeAcyclicClassDivisorNaturality
+public import FLT.Mazur.RelativeAcyclicPicardOpen
 public import FLT.Mazur.RelativeAmpleAffineBaseChange
 public import FLT.Mazur.RelativeAmpleBaseChange
 public import FLT.Mazur.RelativeAmpleFpqcDescent
