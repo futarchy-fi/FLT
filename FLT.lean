@@ -7536,6 +7536,7 @@ public import FLT.Mazur.WeierstrassDividedPositiveEqualityAtlasRecovery
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityAtlasSeparation
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityBranchIndices
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityBranches
+public import FLT.Mazur.WeierstrassDividedPositiveEqualityCartesian
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityCocone
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityComponentHomExt
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityCycle
@@ -7617,6 +7618,7 @@ public import FLT.Mazur.WeierstrassDividedRetentionSuccessor
 public import FLT.Mazur.WeierstrassDividedSkippedAtlasRange
 public import FLT.Mazur.WeierstrassDividedSkippedChartSupport
 public import FLT.Mazur.WeierstrassDividedSkippedTensorIntersection
+public import FLT.Mazur.WeierstrassDividedSmoothCoefficientEmbedding
 public import FLT.Mazur.WeierstrassDividedSuccessiveOriginalY
 public import FLT.Mazur.WeierstrassDividedTensorAtlasComparison
 public import FLT.Mazur.WeierstrassDividedTensorYBoundary
@@ -8008,6 +8010,12 @@ public import FLT.Mazur.WeierstrassIntegralTripleFlat
 public import FLT.Mazur.WeierstrassIntegralTripleProduct
 public import FLT.Mazur.WeierstrassIntegralUnitPoint
 public import FLT.Mazur.WeierstrassIntegralZeroSection
+public import FLT.Mazur.WeierstrassLeftSmoothAffineAddition
+public import FLT.Mazur.WeierstrassLeftSmoothAffineTransport
+public import FLT.Mazur.WeierstrassLeftSmoothMixedAddition
+public import FLT.Mazur.WeierstrassLeftSmoothProductOpen
+public import FLT.Mazur.WeierstrassLeftSmoothTransportedComparison
+public import FLT.Mazur.WeierstrassLeftSmoothTransportedCover
 public import FLT.Mazur.WeierstrassLineCubicFactorization
 public import FLT.Mazur.WeierstrassLocalAdditionCurveComparison
 public import FLT.Mazur.WeierstrassLowPoleCoordinates
@@ -8356,6 +8364,7 @@ public import FLT.Mazur.WeierstrassSmoothAffineTripleDescent
 public import FLT.Mazur.WeierstrassSmoothAllOrdinaryTriple
 public import FLT.Mazur.WeierstrassSmoothAssociativity
 public import FLT.Mazur.WeierstrassSmoothChartCompatibility
+public import FLT.Mazur.WeierstrassSmoothCoefficientCartesian
 public import FLT.Mazur.WeierstrassSmoothCoefficientPreimage
 public import FLT.Mazur.WeierstrassSmoothConnected
 public import FLT.Mazur.WeierstrassSmoothCrossAffine
