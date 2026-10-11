@@ -6961,6 +6961,7 @@ public import FLT.Mazur.SheafPullbackTestReconstruction
 public import FLT.Mazur.ShortComplexSumHomologyInclusion
 public import FLT.Mazur.SmallAffineParameterBases
 public import FLT.Mazur.SmallHilbertPresentation
+public import FLT.Mazur.SmallHilbertPresentationPullback
 public import FLT.Mazur.SmallHilbertTranslationAtlas
 public import FLT.Mazur.SmallRelativeLineParameters
 public import FLT.Mazur.SmallSchemePicard
