@@ -5775,6 +5775,7 @@ public import FLT.Mazur.PolygonOriginalNodeClosed
 public import FLT.Mazur.PolygonOriginalNodePoint
 public import FLT.Mazur.PolygonOriginalStageAdicSquare
 public import FLT.Mazur.PolygonParameterProjectionComposition
+public import FLT.Mazur.PolygonParameterizedHomExt
 public import FLT.Mazur.PolygonPinchingAffineBaseChange
 public import FLT.Mazur.PolygonPinchingDiagram
 public import FLT.Mazur.PolygonPinchingFlatBaseChange
@@ -6232,6 +6233,8 @@ public import FLT.Mazur.ProjectiveLineMarkedTransition
 public import FLT.Mazur.ProjectiveLineOpenChartExclusion
 public import FLT.Mazur.ProjectiveLineProductCharts
 public import FLT.Mazur.ProjectiveLineProductOverlap
+public import FLT.Mazur.ProjectiveLineProductTorusExt
+public import FLT.Mazur.ProjectiveLineProductTorusRestriction
 public import FLT.Mazur.ProjectiveLineRightCanonicalRatios
 public import FLT.Mazur.ProjectiveLineScaledAffineOverlap
 public import FLT.Mazur.ProjectiveLineScaledReciprocalGluing
@@ -7790,6 +7793,7 @@ public import FLT.Mazur.WeierstrassDividedGlobalCoefficientAction
 public import FLT.Mazur.WeierstrassDividedGlobalCoefficientActionLaws
 public import FLT.Mazur.WeierstrassDividedGlobalCoefficientCartesian
 public import FLT.Mazur.WeierstrassDividedGlobalCoefficientFaithful
+public import FLT.Mazur.WeierstrassDividedGlobalCoefficientOverAction
 public import FLT.Mazur.WeierstrassDividedGlobalCoefficientOverPoints
 public import FLT.Mazur.WeierstrassDividedGlobalCoefficientSmooth
 public import FLT.Mazur.WeierstrassDividedGlobalCoefficientSmoothOrbit
@@ -7953,6 +7957,7 @@ public import FLT.Mazur.WeierstrassDividedOrderedAdjacentComponents
 public import FLT.Mazur.WeierstrassDividedOrderedPairCoverage
 public import FLT.Mazur.WeierstrassDividedOrderedRetainedSections
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityAction
+public import FLT.Mazur.WeierstrassDividedPositiveEqualityActionComparison
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityAtlasCompatibility
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityAtlasFamily
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityAtlasFullCompatibility
@@ -7969,6 +7974,9 @@ public import FLT.Mazur.WeierstrassDividedPositiveEqualityCycleCoverage
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityCycleEndCharts
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityCycleIndices
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityCycleRanges
+public import FLT.Mazur.WeierstrassDividedPositiveEqualityCyclicTorusAction
+public import FLT.Mazur.WeierstrassDividedPositiveEqualityExteriorAction
+public import FLT.Mazur.WeierstrassDividedPositiveEqualityExteriorScaling
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityFieldPolygon
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityGeometricFiber
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityGlobalComponentRestrictions
