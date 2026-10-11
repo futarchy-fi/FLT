@@ -2409,6 +2409,18 @@ is negation. This is a conditional local composition theorem, not yet the
 involution relation for the global descended Legendre automorphisms.
 The required root-cover maps and their descent compatibilities remain open.
 
+### Involution on the actual swap root cover (2026-10-11)
+
+`CubicLegendreSwapLift` constructs the lift of λ ↦ 1-λ to the actual
+quadratic étale cover, fixes its distinguished square root of -1, and proves
+the lifted coefficient map squares to identity. Combining it with the
+swap coordinate change gives `legendreSwapCoverCyclicAut`; its square and
+its action on the coefficient base are proved without additional axioms.
+Comparison with `legendreSwapCyclicAut` under the covering projection is
+still needed to transfer this local involution identity to the global map.
+The reciprocal and mixed global relations, modular quotient and arithmetic
+Mazur construction remain unfinished.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
