@@ -7037,6 +7037,7 @@ public import FLT.Mazur.UniversalWeierstrassParameter
 public import FLT.Mazur.UniversallyClosedFiniteCover
 public import FLT.Mazur.UniversallyDistinctSections
 public import FLT.Mazur.UnpointedAcyclicAbelInjectivity
+public import FLT.Mazur.UnpointedAcyclicAbelSheafIso
 public import FLT.Mazur.UnpointedAcyclicFppfDetection
 public import FLT.Mazur.UnpointedAcyclicFppfImageEquivalence
 public import FLT.Mazur.UnpointedAcyclicOpenPointedCompatibility
