@@ -4290,7 +4290,14 @@ public import FLT.Mazur.GlobalGenerationTransport
 public import FLT.Mazur.GlobalIdealPower
 public import FLT.Mazur.GlobalIdealPowerCompatibility
 public import FLT.Mazur.GlueDataQuasiSeparated
+public import FLT.Mazur.GradedDegreeProjInverseCharts
+public import FLT.Mazur.GradedDegreeProjIso
+public import FLT.Mazur.GradedDegreeProjMap
+public import FLT.Mazur.GradedDegreeProjOverlap
+public import FLT.Mazur.GradedDegreeProjStructuralMap
+public import FLT.Mazur.GradedDegreeProjUnitNaturality
 public import FLT.Mazur.GradedLocalizationDegreeMap
+public import FLT.Mazur.GradedLocalizationDegreeRestriction
 public import FLT.Mazur.GradedProjArbitraryBaseChange
 public import FLT.Mazur.GradedProjBaseChangeMap
 public import FLT.Mazur.GradedProjChartArbitraryBaseChange
@@ -5647,7 +5654,10 @@ public import FLT.Mazur.PolygonLineNodeRestriction
 public import FLT.Mazur.PolygonLineNormalization
 public import FLT.Mazur.PolygonMarkedSections
 public import FLT.Mazur.PolygonMarkingAffineNeighborhood
+public import FLT.Mazur.PolygonMultipleVeroneseIso
 public import FLT.Mazur.PolygonMultipleVeroneseProj
+public import FLT.Mazur.PolygonMultipleVeroneseStructuralMap
+public import FLT.Mazur.PolygonMultipleVeroneseUnitEvaluation
 public import FLT.Mazur.PolygonNodalCore
 public import FLT.Mazur.PolygonNodeAffineCharts
 public import FLT.Mazur.PolygonNodeBranchIntersection
