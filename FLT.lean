@@ -8065,6 +8065,7 @@ public import FLT.Mazur.WeierstrassLeftSmoothFactorProduct
 public import FLT.Mazur.WeierstrassLeftSmoothFiveAffineTriple
 public import FLT.Mazur.WeierstrassLeftSmoothFivePoints
 public import FLT.Mazur.WeierstrassLeftSmoothFiveRegularChartDescent
+public import FLT.Mazur.WeierstrassLeftSmoothFiveRegularSectionDescent
 public import FLT.Mazur.WeierstrassLeftSmoothFormulaComparison
 public import FLT.Mazur.WeierstrassLeftSmoothIdentity
 public import FLT.Mazur.WeierstrassLeftSmoothInfinityIdentity
