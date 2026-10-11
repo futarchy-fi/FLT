@@ -5727,6 +5727,7 @@ public import FLT.Mazur.PolygonOriginalAffineNeighborhood
 public import FLT.Mazur.PolygonOriginalAffineQuotient
 public import FLT.Mazur.PolygonOriginalAffineScalars
 public import FLT.Mazur.PolygonOriginalAffineTransition
+public import FLT.Mazur.PolygonOriginalBaseAdicKernel
 public import FLT.Mazur.PolygonOriginalBoundarySectionReconstruction
 public import FLT.Mazur.PolygonOriginalCompletionAlgebra
 public import FLT.Mazur.PolygonOriginalNeighborhoodTransition
