@@ -8835,6 +8835,7 @@ public import FLT.Mazur.WeierstrassSmoothChartCompatibility
 public import FLT.Mazur.WeierstrassSmoothCoefficientAddition
 public import FLT.Mazur.WeierstrassSmoothCoefficientCartesian
 public import FLT.Mazur.WeierstrassSmoothCoefficientOperations
+public import FLT.Mazur.WeierstrassSmoothCoefficientPointAddition
 public import FLT.Mazur.WeierstrassSmoothCoefficientPreimage
 public import FLT.Mazur.WeierstrassSmoothCoefficientProduct
 public import FLT.Mazur.WeierstrassSmoothConnected
