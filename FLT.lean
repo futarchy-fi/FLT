@@ -7900,6 +7900,7 @@ public import FLT.Mazur.WeierstrassDividedSuccessorActionAtlas
 public import FLT.Mazur.WeierstrassDividedSuccessorActionInput
 public import FLT.Mazur.WeierstrassDividedSuccessorAtlasCoordinates
 public import FLT.Mazur.WeierstrassDividedSuccessorExteriorAction
+public import FLT.Mazur.WeierstrassDividedSuccessorExteriorAtlas
 public import FLT.Mazur.WeierstrassDividedSuccessorInfinityAction
 public import FLT.Mazur.WeierstrassDividedSuccessorOutputCover
 public import FLT.Mazur.WeierstrassDividedTensorAtlasComparison
