@@ -7178,6 +7178,7 @@ public import FLT.Mazur.WeierstrassAdditionAffineCoverage
 public import FLT.Mazur.WeierstrassAdditionCenterContainment
 public import FLT.Mazur.WeierstrassAdditionCenterSheaf
 public import FLT.Mazur.WeierstrassAdditionChartCompatibility
+public import FLT.Mazur.WeierstrassAdditionFractionLift
 public import FLT.Mazur.WeierstrassAdditionInfinitySections
 public import FLT.Mazur.WeierstrassAdditionInputCharts
 public import FLT.Mazur.WeierstrassAdditionIntersections
