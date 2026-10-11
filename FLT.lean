@@ -7728,6 +7728,7 @@ public import FLT.Mazur.WeierstrassDividedGlobalCoefficientAction
 public import FLT.Mazur.WeierstrassDividedGlobalCoefficientActionLaws
 public import FLT.Mazur.WeierstrassDividedGlobalCoefficientCartesian
 public import FLT.Mazur.WeierstrassDividedGlobalCoefficientSmooth
+public import FLT.Mazur.WeierstrassDividedGlobalCoefficientStep
 public import FLT.Mazur.WeierstrassDividedGlobalConicCoordinates
 public import FLT.Mazur.WeierstrassDividedGlobalConicIntersection
 public import FLT.Mazur.WeierstrassDividedGlobalFiniteActionProduct
