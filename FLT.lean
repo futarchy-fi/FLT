@@ -4950,6 +4950,8 @@ public import FLT.Mazur.LocallyFramedSplitLineRestriction
 public import FLT.Mazur.LocallyFreeDualProjectiveAtlas
 public import FLT.Mazur.LocallyFreeProjectiveQuotient
 public import FLT.Mazur.LocallyNoetherianUniversalStructureSheaf
+public import FLT.Mazur.LocallyRingedOpenImage
+public import FLT.Mazur.LocallyRingedSchemeChartUnion
 public import FLT.Mazur.LocallySmoothFiniteFlatCartier
 public import FLT.Mazur.LocallySmoothQuasiFiniteCartier
 public import FLT.Mazur.LocallySplitInclusionPullback
@@ -7249,6 +7251,9 @@ public import FLT.Mazur.TildeInvertibleLocal
 public import FLT.Mazur.TildePrincipalOpen
 public import FLT.Mazur.TildeSourceSectionComparison
 public import FLT.Mazur.TorusChartScalars
+public import FLT.Mazur.TranslatedHilbertAffineImmersion
+public import FLT.Mazur.TranslatedHilbertAffineRestriction
+public import FLT.Mazur.TranslatedHilbertCanonicalAffineChart
 public import FLT.Mazur.TranslatedHilbertChartFunctions
 public import FLT.Mazur.TranslatedHilbertChartOverlap
 public import FLT.Mazur.TranslatedHilbertChartSourceSections
@@ -7275,6 +7280,8 @@ public import FLT.Mazur.TranslatedHilbertPicardChart
 public import FLT.Mazur.TranslatedHilbertRelationOpenSections
 public import FLT.Mazur.TranslatedHilbertRestrictedRelation
 public import FLT.Mazur.TranslatedHilbertSchemeCocycle
+public import FLT.Mazur.TranslatedHilbertSchemeLocus
+public import FLT.Mazur.TranslatedHilbertSchemeLocusAffineCover
 public import FLT.Mazur.TranslatedHilbertSchemeTriple
 public import FLT.Mazur.TranslatedHilbertSourceIntersection
 public import FLT.Mazur.TranslatedHilbertTestUnion
