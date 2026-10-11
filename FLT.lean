@@ -4276,6 +4276,7 @@ public import FLT.Mazur.GeometricAcyclicRankOneLocus
 public import FLT.Mazur.GeometricFiberSmoothLineParameters
 public import FLT.Mazur.GeometricFppfCoverSection
 public import FLT.Mazur.GeometricOpenFactorization
+public import FLT.Mazur.GeometricPicardSheafRepresentative
 public import FLT.Mazur.GeometricPointCoverCriterion
 public import FLT.Mazur.GeometricSectionQuasiFinite
 public import FLT.Mazur.GeometricSectionUnits
