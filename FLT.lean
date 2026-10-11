@@ -8090,6 +8090,7 @@ public import FLT.Mazur.WeierstrassLeftSmoothRestrictionCharts
 public import FLT.Mazur.WeierstrassLeftSmoothSectionTranslation
 public import FLT.Mazur.WeierstrassLeftSmoothSevenPoints
 public import FLT.Mazur.WeierstrassLeftSmoothTranslationGraph
+public import FLT.Mazur.WeierstrassLeftSmoothTranslationLocus
 public import FLT.Mazur.WeierstrassLeftSmoothTransportedComparison
 public import FLT.Mazur.WeierstrassLeftSmoothTransportedCover
 public import FLT.Mazur.WeierstrassLeftSmoothTransportedOutputRegular
