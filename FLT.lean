@@ -8832,6 +8832,7 @@ public import FLT.Mazur.WeierstrassSmoothAllOrdinaryTriple
 public import FLT.Mazur.WeierstrassSmoothAssociativity
 public import FLT.Mazur.WeierstrassSmoothChartCompatibility
 public import FLT.Mazur.WeierstrassSmoothCoefficientCartesian
+public import FLT.Mazur.WeierstrassSmoothCoefficientOperations
 public import FLT.Mazur.WeierstrassSmoothCoefficientPreimage
 public import FLT.Mazur.WeierstrassSmoothConnected
 public import FLT.Mazur.WeierstrassSmoothCrossAffine
