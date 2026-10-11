@@ -6388,6 +6388,7 @@ public import FLT.Mazur.ProperLineSectionProjective
 public import FLT.Mazur.ProperLineSectionRankLocus
 public import FLT.Mazur.ProperLineSheafDescent
 public import FLT.Mazur.ProperLineSheafFinitePresentationEnvelope
+public import FLT.Mazur.ProperLocalAdicFiniteIso
 public import FLT.Mazur.ProperLocalAdicIdealSeparation
 public import FLT.Mazur.ProperLocalAmpleFiberGenerators
 public import FLT.Mazur.ProperLocalFiberCover
