@@ -3092,6 +3092,7 @@ public import FLT.Mazur.BaseMarkedHilbertChangePullback
 public import FLT.Mazur.BaseMarkedHilbertChartChange
 public import FLT.Mazur.BaseMarkedHilbertChartPreimage
 public import FLT.Mazur.BaseMarkedHilbertCocycle
+public import FLT.Mazur.BaseMarkedHilbertFullChartPullback
 public import FLT.Mazur.BaseMarkedHilbertFullClass
 public import FLT.Mazur.BaseMarkedHilbertFullGeometry
 public import FLT.Mazur.BaseMarkedHilbertFullIntersection
