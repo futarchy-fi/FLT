@@ -7994,6 +7994,7 @@ public import FLT.Mazur.WeierstrassGlobalModificationActionIdentity
 public import FLT.Mazur.WeierstrassGlobalModificationActionInverse
 public import FLT.Mazur.WeierstrassGlobalModificationActionOverlap
 public import FLT.Mazur.WeierstrassGlobalModificationActionPoints
+public import FLT.Mazur.WeierstrassGlobalModificationActionSmooth
 public import FLT.Mazur.WeierstrassGlobalModificationContractionFlatExt
 public import FLT.Mazur.WeierstrassGlobalModificationFlat
 public import FLT.Mazur.WeierstrassGlobalModificationFractionCover
