@@ -4290,6 +4290,7 @@ public import FLT.Mazur.GlobalGenerationTransport
 public import FLT.Mazur.GlobalIdealPower
 public import FLT.Mazur.GlobalIdealPowerCompatibility
 public import FLT.Mazur.GlueDataQuasiSeparated
+public import FLT.Mazur.GradedDegreeProjCoefficientStructure
 public import FLT.Mazur.GradedDegreeProjInverseCharts
 public import FLT.Mazur.GradedDegreeProjIso
 public import FLT.Mazur.GradedDegreeProjMap
