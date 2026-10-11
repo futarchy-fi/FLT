@@ -2491,9 +2491,14 @@ public import FLT.Mazur.AbsoluteDirectImageCohomology
 public import FLT.Mazur.AcyclicCoefficientCohomology
 public import FLT.Mazur.AcyclicDirectImageResolution
 public import FLT.Mazur.AcyclicLineSectionBaseChange
+public import FLT.Mazur.AcyclicPointedAbelBaseChange
 public import FLT.Mazur.AcyclicPointedAbelEquivalence
+public import FLT.Mazur.AcyclicPointedAbelInverseNaturality
+public import FLT.Mazur.AcyclicPointedAbelPullbackLaws
 public import FLT.Mazur.AcyclicPushforwardCohomology
+public import FLT.Mazur.AcyclicRankOneBaseChange
 public import FLT.Mazur.AcyclicRankOneLineCondition
+public import FLT.Mazur.AcyclicRankOneRelativeClass
 public import FLT.Mazur.AcyclicResolutionComparison
 public import FLT.Mazur.AcyclicTensorExactness
 public import FLT.Mazur.AdditiveComplexDirectSum
@@ -4103,6 +4108,9 @@ public import FLT.Mazur.GenericIdealSupport
 public import FLT.Mazur.GenericLineTrivialization
 public import FLT.Mazur.GenericSectionUniqueness
 public import FLT.Mazur.GenericWitnessIdealVanishing
+public import FLT.Mazur.GeometricAcyclicPicardLocality
+public import FLT.Mazur.GeometricAcyclicPicardSubfunctor
+public import FLT.Mazur.GeometricAcyclicRankOne
 public import FLT.Mazur.GeometricOpenFactorization
 public import FLT.Mazur.GeometricPointCoverCriterion
 public import FLT.Mazur.GeometricSectionQuasiFinite
@@ -5127,6 +5135,7 @@ public import FLT.Mazur.PointedFieldGeometricConnectedness
 public import FLT.Mazur.PointedPicardBaseChange
 public import FLT.Mazur.PointedPicardFppfComparison
 public import FLT.Mazur.PointedPicardKernelPresheaf
+public import FLT.Mazur.PointedPicardKernelPullback
 public import FLT.Mazur.PointedPicardNormalization
 public import FLT.Mazur.PointedStructureModuleComparison
 public import FLT.Mazur.PolygonActionAssociativity
@@ -6081,6 +6090,9 @@ public import FLT.Mazur.ReesRelativeScalarTower
 public import FLT.Mazur.RefinedChartSpectrum
 public import FLT.Mazur.RegularParameterIdeals
 public import FLT.Mazur.RelativeAbelFiberOriginalSquare
+public import FLT.Mazur.RelativeAcyclicClassDivisor
+public import FLT.Mazur.RelativeAcyclicClassDivisorNaturality
+public import FLT.Mazur.RelativeAcyclicPicardOpen
 public import FLT.Mazur.RelativeAmpleAffineBaseChange
 public import FLT.Mazur.RelativeAmpleBaseChange
 public import FLT.Mazur.RelativeAmpleFpqcDescent
