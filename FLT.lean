@@ -8135,6 +8135,7 @@ public import FLT.Mazur.WeierstrassLeftSmoothFiveRegularChartDescent
 public import FLT.Mazur.WeierstrassLeftSmoothFiveRegularSectionDescent
 public import FLT.Mazur.WeierstrassLeftSmoothFormulaComparison
 public import FLT.Mazur.WeierstrassLeftSmoothFractionActionCover
+public import FLT.Mazur.WeierstrassLeftSmoothFractionActionGluing
 public import FLT.Mazur.WeierstrassLeftSmoothGlobalCenter
 public import FLT.Mazur.WeierstrassLeftSmoothIdentity
 public import FLT.Mazur.WeierstrassLeftSmoothInfinityIdentity
