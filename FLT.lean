@@ -8776,6 +8776,7 @@ public import FLT.Mazur.WeierstrassNormalizedProjectivePoint
 public import FLT.Mazur.WeierstrassOrdinaryCenterIdeal
 public import FLT.Mazur.WeierstrassOrdinaryChartSpecialization
 public import FLT.Mazur.WeierstrassOrdinaryConormalError
+public import FLT.Mazur.WeierstrassOrdinaryConormalIdeal
 public import FLT.Mazur.WeierstrassOrdinaryConormalPolynomial
 public import FLT.Mazur.WeierstrassOrdinaryDomainLift
 public import FLT.Mazur.WeierstrassOrdinaryFieldAddition
