@@ -7278,6 +7278,7 @@ public import FLT.Mazur.WeierstrassDividedInitialIndexedNodeCover
 public import FLT.Mazur.WeierstrassDividedInitialInfinityPreimage
 public import FLT.Mazur.WeierstrassDividedInitialLineBoundary
 public import FLT.Mazur.WeierstrassDividedInitialLineIntersection
+public import FLT.Mazur.WeierstrassDividedInitialNodeBranches
 public import FLT.Mazur.WeierstrassDividedInitialParameterIntersection
 public import FLT.Mazur.WeierstrassDividedInitialParameterOverlap
 public import FLT.Mazur.WeierstrassDividedInitialPrecedingExterior
