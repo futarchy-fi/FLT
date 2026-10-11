@@ -3528,6 +3528,8 @@ public import FLT.Mazur.DivisorPowerCanonicalSection
 public import FLT.Mazur.DivisorPowerEulerCharacteristic
 public import FLT.Mazur.DivisorPowerH1Bound
 public import FLT.Mazur.DivisorPowerH1Vanishing
+public import FLT.Mazur.DivisorPowerHZeroTransition
+public import FLT.Mazur.DivisorPowerHigherVanishing
 public import FLT.Mazur.DivisorPowerTwistDegree
 public import FLT.Mazur.DivisorPowerVeryAmple
 public import FLT.Mazur.DivisorRestrictCoherence
@@ -4900,6 +4902,7 @@ public import FLT.Mazur.LineRecoveryPullback
 public import FLT.Mazur.LineRestrictionHZero
 public import FLT.Mazur.LineRestrictionHZeroFrames
 public import FLT.Mazur.LineScalarExtensionNonvanishing
+public import FLT.Mazur.LineScalarMonicity
 public import FLT.Mazur.LineSectionCanonicalRecovery
 public import FLT.Mazur.LineSectionCohomologyAnnihilation
 public import FLT.Mazur.LineSectionCohomologySurjection
@@ -5562,6 +5565,7 @@ public import FLT.Mazur.PolygonCompleteClassifiedFibers
 public import FLT.Mazur.PolygonCompleteClosedFiber
 public import FLT.Mazur.PolygonCompleteClosedGenus
 public import FLT.Mazur.PolygonCompleteClosedH1Scalars
+public import FLT.Mazur.PolygonCompleteClosedPointAcyclic
 public import FLT.Mazur.PolygonCompleteClosedPointCohomology
 public import FLT.Mazur.PolygonCompleteClosedPointLineComparison
 public import FLT.Mazur.PolygonCompleteClosedSingularPoints
@@ -5604,6 +5608,7 @@ public import FLT.Mazur.PolygonCompleteGeometricallyConnected
 public import FLT.Mazur.PolygonCompleteGeometricallyReduced
 public import FLT.Mazur.PolygonCompleteH1Rank
 public import FLT.Mazur.PolygonCompleteH1Reduction
+public import FLT.Mazur.PolygonCompleteLineCohomology
 public import FLT.Mazur.PolygonCompleteLineHomExt
 public import FLT.Mazur.PolygonCompleteLineHomReconstruction
 public import FLT.Mazur.PolygonCompleteLineIsoDetection
@@ -5668,8 +5673,12 @@ public import FLT.Mazur.PolygonCompleteNodeStalkEvaluation
 public import FLT.Mazur.PolygonCompleteNodeStalkH1Equiv
 public import FLT.Mazur.PolygonCompleteNodeStalkMap
 public import FLT.Mazur.PolygonCompleteOriginalSectionReconstruction
+public import FLT.Mazur.PolygonCompletePointAcyclic
+public import FLT.Mazur.PolygonCompletePointDimensions
+public import FLT.Mazur.PolygonCompletePointNewSections
 public import FLT.Mazur.PolygonCompletePointPowerComparison
 public import FLT.Mazur.PolygonCompletePointPowerVanishing
+public import FLT.Mazur.PolygonCompletePointSectionBaseChange
 public import FLT.Mazur.PolygonCompletePrincipalClosedFiber
 public import FLT.Mazur.PolygonCompleteSmoothDimensionOpen
 public import FLT.Mazur.PolygonCompleteStageMarkings
@@ -6051,6 +6060,7 @@ public import FLT.Mazur.PrincipalBipartiteStages
 public import FLT.Mazur.PrincipalChartIntegerDescent
 public import FLT.Mazur.PrincipalChartOpenImmersion
 public import FLT.Mazur.PrincipalClosedCohomology
+public import FLT.Mazur.PrincipalClosedLineCohomology
 public import FLT.Mazur.PrincipalCoefficientTransport
 public import FLT.Mazur.PrincipalComparisonIntegerModel
 public import FLT.Mazur.PrincipalComparisonRecovery
