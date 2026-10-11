@@ -5276,6 +5276,7 @@ public import FLT.Mazur.OneGonQuotient
 public import FLT.Mazur.OneGonScalarExtension
 public import FLT.Mazur.OneGonSeparated
 public import FLT.Mazur.OneGonSmoothingAffinePresentation
+public import FLT.Mazur.OneGonSmoothingAuxiliaryOverlap
 public import FLT.Mazur.OneGonSmoothingChartIntersection
 public import FLT.Mazur.OneGonSmoothingClosedFiber
 public import FLT.Mazur.OneGonSmoothingCoefficientChange
