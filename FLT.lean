@@ -8396,6 +8396,7 @@ public import FLT.Mazur.WeierstrassGlobalModificationZero
 public import FLT.Mazur.WeierstrassGlobalNegation
 public import FLT.Mazur.WeierstrassGlobalNegationInvolution
 public import FLT.Mazur.WeierstrassGlobalPolynomialSwap
+public import FLT.Mazur.WeierstrassHorizontalConicPunctureResidue
 public import FLT.Mazur.WeierstrassInfinitesimalAddition
 public import FLT.Mazur.WeierstrassInfinitesimalChart
 public import FLT.Mazur.WeierstrassInfinitesimalFactorization
@@ -9022,6 +9023,10 @@ public import FLT.Mazur.WeierstrassSmoothGoodReductionGroup
 public import FLT.Mazur.WeierstrassSmoothGoodReductionLocal
 public import FLT.Mazur.WeierstrassSmoothGroup
 public import FLT.Mazur.WeierstrassSmoothGroupOperations
+public import FLT.Mazur.WeierstrassSmoothHorizontalConcreteRefinement
+public import FLT.Mazur.WeierstrassSmoothHorizontalProductResidue
+public import FLT.Mazur.WeierstrassSmoothHorizontalProductSource
+public import FLT.Mazur.WeierstrassSmoothHorizontalResidueCoordinates
 public import FLT.Mazur.WeierstrassSmoothInfinityCommutativity
 public import FLT.Mazur.WeierstrassSmoothInfinityDomain
 public import FLT.Mazur.WeierstrassSmoothInfinityIdentity
@@ -9056,6 +9061,8 @@ public import FLT.Mazur.WeierstrassSmoothTripleInputRegular
 public import FLT.Mazur.WeierstrassSmoothTripleProduct
 public import FLT.Mazur.WeierstrassSmoothTripleProjections
 public import FLT.Mazur.WeierstrassSmoothYAddition
+public import FLT.Mazur.WeierstrassSmoothYAffineResidue
+public import FLT.Mazur.WeierstrassSmoothYAffineSource
 public import FLT.Mazur.WeierstrassSmoothYCompatibility
 public import FLT.Mazur.WeierstrassSmoothYIdentity
 public import FLT.Mazur.WeierstrassSmoothYProductCover
