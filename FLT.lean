@@ -2948,6 +2948,7 @@ public import FLT.Mazur.AmplePrincipalLocality
 public import FLT.Mazur.AmpleRetainedChartGeneration
 public import FLT.Mazur.AmpleRetainedSectionCover
 public import FLT.Mazur.AmpleSectionCoverPullback
+public import FLT.Mazur.AmpleSmoothNonspecialLift
 public import FLT.Mazur.AmpleTwistedSectionLifting
 public import FLT.Mazur.AmpleVeroneseEvaluation
 public import FLT.Mazur.AmpleVeroneseMultiplication
@@ -3871,6 +3872,7 @@ public import FLT.Mazur.FiberCohomologyTensorCriterion
 public import FLT.Mazur.FiberCohomologyTensorExactness
 public import FLT.Mazur.FiberwiseRegularFlatQuotient
 public import FLT.Mazur.FieldCoefficientCohomologyDimension
+public import FLT.Mazur.FieldNonspecialGeometricCriterion
 public import FLT.Mazur.FilteredDiagramSectionDescent
 public import FLT.Mazur.FilteredDiagramUnitDescent
 public import FLT.Mazur.FilteredRingFamilyDescent
@@ -5152,6 +5154,8 @@ public import FLT.Mazur.NoetherianSumCechComplex
 public import FLT.Mazur.NoetherianSumCechInclusion
 public import FLT.Mazur.NoetherianSumCechTerms
 public import FLT.Mazur.NoetherianUniversalStructureSheaf
+public import FLT.Mazur.NonspecialDivisorNeighborhood
+public import FLT.Mazur.NonspecialDivisorTestCover
 public import FLT.Mazur.NonzeroLineSectionExact
 public import FLT.Mazur.NonzeroSectionPointCondition
 public import FLT.Mazur.NormalizedSectionLine
@@ -6323,6 +6327,7 @@ public import FLT.Mazur.RationalCyclicGeneratorChange
 public import FLT.Mazur.RationalCyclicModuliPoint
 public import FLT.Mazur.RationalCyclicSubgroup
 public import FLT.Mazur.RationalFibers
+public import FLT.Mazur.RationalPointConditionRank
 public import FLT.Mazur.RationalPrimeTorsionGeometricModel
 public import FLT.Mazur.RationalPrimeTorsionLocalModel
 public import FLT.Mazur.ReconstructionComposition
@@ -6953,6 +6958,9 @@ public import FLT.Mazur.SmoothFiniteSubgroupAmple
 public import FLT.Mazur.SmoothFiniteSubschemeCartier
 public import FLT.Mazur.SmoothGeometricAcyclicRankOne
 public import FLT.Mazur.SmoothGeometricallyReduced
+public import FLT.Mazur.SmoothNonspecialDivisorCover
+public import FLT.Mazur.SmoothNonspecialDivisorLift
+public import FLT.Mazur.SmoothNonspecialLineLift
 public import FLT.Mazur.SmoothOpenSectionCartier
 public import FLT.Mazur.SmoothQuasiFiniteCartierCriterion
 public import FLT.Mazur.SmoothQuasiFiniteIdealCharts
@@ -7110,6 +7118,9 @@ public import FLT.Mazur.UniversalDivisorCohomologyCharts
 public import FLT.Mazur.UniversalDivisorDirectImageRepresentation
 public import FLT.Mazur.UniversalDivisorGlobalCohomology
 public import FLT.Mazur.UniversalDivisorTwistedLine
+public import FLT.Mazur.UniversalPointCondition
+public import FLT.Mazur.UniversalPointConditionLine
+public import FLT.Mazur.UniversalPointConditionRank
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryActualNormalizationIso
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryAffineSections
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryArithmeticAction
