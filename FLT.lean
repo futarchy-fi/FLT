@@ -9027,6 +9027,7 @@ public import FLT.Mazur.WeierstrassSmoothGroup
 public import FLT.Mazur.WeierstrassSmoothGroupOperations
 public import FLT.Mazur.WeierstrassSmoothHorizontalConcreteAction
 public import FLT.Mazur.WeierstrassSmoothHorizontalConcreteRefinement
+public import FLT.Mazur.WeierstrassSmoothHorizontalLaurentEvaluation
 public import FLT.Mazur.WeierstrassSmoothHorizontalProductResidue
 public import FLT.Mazur.WeierstrassSmoothHorizontalProductSource
 public import FLT.Mazur.WeierstrassSmoothHorizontalResidueCoordinates
