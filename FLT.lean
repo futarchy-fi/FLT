@@ -3083,6 +3083,7 @@ public import FLT.Mazur.BinaryOpenDescent
 public import FLT.Mazur.BlowupFractionChart
 public import FLT.Mazur.BlowupFractionChartExt
 public import FLT.Mazur.BlowupFractionChartLocalization
+public import FLT.Mazur.BlowupFractionChartMap
 public import FLT.Mazur.BlowupFractionChartRatio
 public import FLT.Mazur.BlowupReesContraction
 public import FLT.Mazur.BlowupReesDegreeZeroEquiv
@@ -7194,7 +7195,10 @@ public import FLT.Mazur.ValuationRingModel
 public import FLT.Mazur.VeryAmpleAffineSections
 public import FLT.Mazur.VeryAmplePresentationBaseChange
 public import FLT.Mazur.WeierstrassAdditionAffineCoverage
+public import FLT.Mazur.WeierstrassAdditionCenterContainment
+public import FLT.Mazur.WeierstrassAdditionCenterSheaf
 public import FLT.Mazur.WeierstrassAdditionChartCompatibility
+public import FLT.Mazur.WeierstrassAdditionFractionLift
 public import FLT.Mazur.WeierstrassAdditionInfinitySections
 public import FLT.Mazur.WeierstrassAdditionInputCharts
 public import FLT.Mazur.WeierstrassAdditionIntersections
@@ -8097,6 +8101,7 @@ public import FLT.Mazur.WeierstrassLeftSmoothAdditionGluing
 public import FLT.Mazur.WeierstrassLeftSmoothAdditionOutputRegular
 public import FLT.Mazur.WeierstrassLeftSmoothAdditionStructure
 public import FLT.Mazur.WeierstrassLeftSmoothAffineAddition
+public import FLT.Mazur.WeierstrassLeftSmoothAffineCenter
 public import FLT.Mazur.WeierstrassLeftSmoothAffineIdentity
 public import FLT.Mazur.WeierstrassLeftSmoothAffineInputTriple
 public import FLT.Mazur.WeierstrassLeftSmoothAffineOuterTriple
@@ -8106,6 +8111,8 @@ public import FLT.Mazur.WeierstrassLeftSmoothAffineTransport
 public import FLT.Mazur.WeierstrassLeftSmoothAffineTripleDescent
 public import FLT.Mazur.WeierstrassLeftSmoothAllOrdinaryTriple
 public import FLT.Mazur.WeierstrassLeftSmoothAssociativity
+public import FLT.Mazur.WeierstrassLeftSmoothCenterAction
+public import FLT.Mazur.WeierstrassLeftSmoothCenterInvariant
 public import FLT.Mazur.WeierstrassLeftSmoothCrossInput
 public import FLT.Mazur.WeierstrassLeftSmoothFactorAddition
 public import FLT.Mazur.WeierstrassLeftSmoothFactorProduct
@@ -8114,9 +8121,11 @@ public import FLT.Mazur.WeierstrassLeftSmoothFivePoints
 public import FLT.Mazur.WeierstrassLeftSmoothFiveRegularChartDescent
 public import FLT.Mazur.WeierstrassLeftSmoothFiveRegularSectionDescent
 public import FLT.Mazur.WeierstrassLeftSmoothFormulaComparison
+public import FLT.Mazur.WeierstrassLeftSmoothGlobalCenter
 public import FLT.Mazur.WeierstrassLeftSmoothIdentity
 public import FLT.Mazur.WeierstrassLeftSmoothInfinityIdentity
 public import FLT.Mazur.WeierstrassLeftSmoothInputAddition
+public import FLT.Mazur.WeierstrassLeftSmoothInputCenter
 public import FLT.Mazur.WeierstrassLeftSmoothInputCompatibility
 public import FLT.Mazur.WeierstrassLeftSmoothInputOutputRegular
 public import FLT.Mazur.WeierstrassLeftSmoothInputRestrictions
@@ -8136,6 +8145,7 @@ public import FLT.Mazur.WeierstrassLeftSmoothSectionTranslation
 public import FLT.Mazur.WeierstrassLeftSmoothSevenPoints
 public import FLT.Mazur.WeierstrassLeftSmoothTranslationGraph
 public import FLT.Mazur.WeierstrassLeftSmoothTranslationLocus
+public import FLT.Mazur.WeierstrassLeftSmoothTransportedCenter
 public import FLT.Mazur.WeierstrassLeftSmoothTransportedComparison
 public import FLT.Mazur.WeierstrassLeftSmoothTransportedCover
 public import FLT.Mazur.WeierstrassLeftSmoothTransportedOutputRegular
@@ -8164,6 +8174,8 @@ public import FLT.Mazur.WeierstrassMixedTripleSlopes
 public import FLT.Mazur.WeierstrassModificationAffineContraction
 public import FLT.Mazur.WeierstrassModificationAffineProper
 public import FLT.Mazur.WeierstrassModificationAtlas
+public import FLT.Mazur.WeierstrassModificationCenterCharts
+public import FLT.Mazur.WeierstrassModificationCenterSheaf
 public import FLT.Mazur.WeierstrassModificationCenterSmooth
 public import FLT.Mazur.WeierstrassModificationChartIntersection
 public import FLT.Mazur.WeierstrassModificationFlat
@@ -8424,6 +8436,7 @@ public import FLT.Mazur.WeierstrassProductOverlapFlat
 public import FLT.Mazur.WeierstrassProductOverlapScheme
 public import FLT.Mazur.WeierstrassProjectiveAdditionBoundary
 public import FLT.Mazur.WeierstrassProjectiveAdditionChart
+public import FLT.Mazur.WeierstrassProjectiveCenterIdeal
 public import FLT.Mazur.WeierstrassProjectiveChartAlgebra
 public import FLT.Mazur.WeierstrassProjectiveChartEquation
 public import FLT.Mazur.WeierstrassProjectiveChartProduct
@@ -8433,6 +8446,7 @@ public import FLT.Mazur.WeierstrassProjectivePointNaturality
 public import FLT.Mazur.WeierstrassProjectivePointNegation
 public import FLT.Mazur.WeierstrassProjectivePointSmooth
 public import FLT.Mazur.WeierstrassProjectiveRelativeSmoothCriterion
+public import FLT.Mazur.WeierstrassProjectiveSingularCenter
 public import FLT.Mazur.WeierstrassProjectiveSmoothResidues
 public import FLT.Mazur.WeierstrassRationalCyclicModuli
 public import FLT.Mazur.WeierstrassRationalGroupSection
@@ -8454,6 +8468,7 @@ public import FLT.Mazur.WeierstrassReciprocalSecantTripleAlgebra
 public import FLT.Mazur.WeierstrassReciprocalSecantTripleDomain
 public import FLT.Mazur.WeierstrassReciprocalSecantTripleGlobal
 public import FLT.Mazur.WeierstrassReciprocalSecantTripleSchemes
+public import FLT.Mazur.WeierstrassReciprocalSingularCenter
 public import FLT.Mazur.WeierstrassReciprocalTripleAlgebra
 public import FLT.Mazur.WeierstrassReciprocalTripleCentered
 public import FLT.Mazur.WeierstrassReciprocalTripleCoordinates
