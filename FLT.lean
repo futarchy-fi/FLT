@@ -9213,6 +9213,8 @@ public import FLT.Mazur.WeierstrassSmoothHorizontalCyclicParameter
 public import FLT.Mazur.WeierstrassSmoothHorizontalFactorGeometry
 public import FLT.Mazur.WeierstrassSmoothHorizontalFactorOrder
 public import FLT.Mazur.WeierstrassSmoothHorizontalGlobalAction
+public import FLT.Mazur.WeierstrassSmoothHorizontalIncidenceUnits
+public import FLT.Mazur.WeierstrassSmoothHorizontalIntegralActionSource
 public import FLT.Mazur.WeierstrassSmoothHorizontalLaurentEvaluation
 public import FLT.Mazur.WeierstrassSmoothHorizontalPairDensity
 public import FLT.Mazur.WeierstrassSmoothHorizontalPairExt
@@ -9251,7 +9253,11 @@ public import FLT.Mazur.WeierstrassSmoothProductOpen
 public import FLT.Mazur.WeierstrassSmoothProjectiveGroup
 public import FLT.Mazur.WeierstrassSmoothReciprocalTriple
 public import FLT.Mazur.WeierstrassSmoothSevenPoints
+public import FLT.Mazur.WeierstrassSmoothSuccessiveIntegralTransport
+public import FLT.Mazur.WeierstrassSmoothSuccessiveResidueInputs
+public import FLT.Mazur.WeierstrassSmoothSuccessiveResidueOutputs
 public import FLT.Mazur.WeierstrassSmoothSuccessiveTensorInput
+public import FLT.Mazur.WeierstrassSmoothSuccessiveTransportedTensorInput
 public import FLT.Mazur.WeierstrassSmoothTransportedComparison
 public import FLT.Mazur.WeierstrassSmoothTransportedCover
 public import FLT.Mazur.WeierstrassSmoothTransportedOutputRegular
@@ -9370,6 +9376,8 @@ public import FLT.Mazur.WeierstrassSuccessiveXGluing
 public import FLT.Mazur.WeierstrassSuccessiveXHorizontalLocalization
 public import FLT.Mazur.WeierstrassSuccessiveXHorizontalMaps
 public import FLT.Mazur.WeierstrassSuccessiveXHorizontalScheme
+public import FLT.Mazur.WeierstrassSuccessiveXIncidenceExt
+public import FLT.Mazur.WeierstrassSuccessiveXIncidenceTransport
 public import FLT.Mazur.WeierstrassSuccessiveXLocalization
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleComponents
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleConic
