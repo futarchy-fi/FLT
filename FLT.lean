@@ -6027,6 +6027,7 @@ public import FLT.Mazur.PolygonVeroneseTensorReduction
 public import FLT.Mazur.PolygonVeroneseZeroRing
 public import FLT.Mazur.PolynomialAffineIdealDegree
 public import FLT.Mazur.PolynomialCoefficientArrow
+public import FLT.Mazur.PolynomialCoefficientCartesian
 public import FLT.Mazur.PolynomialEndpointInterpolation
 public import FLT.Mazur.PolynomialFlatQuotientPresentation
 public import FLT.Mazur.PolynomialRelationIntegerModel
