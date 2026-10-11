@@ -3080,6 +3080,7 @@ public import FLT.Mazur.BaseChangeCotangentFieldRank
 public import FLT.Mazur.BaseChangeSectionEquiv
 public import FLT.Mazur.BaseChangedPresentationModel
 public import FLT.Mazur.BinaryOpenDescent
+public import FLT.Mazur.BlowupFractionActionCover
 public import FLT.Mazur.BlowupFractionChart
 public import FLT.Mazur.BlowupFractionChartExt
 public import FLT.Mazur.BlowupFractionChartLocalization
