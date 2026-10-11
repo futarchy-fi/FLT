@@ -5341,6 +5341,7 @@ public import FLT.Mazur.PolygonCompleteLineQuotient
 public import FLT.Mazur.PolygonCompleteMarkingSpecialization
 public import FLT.Mazur.PolygonCompleteNodeAffineIdeal
 public import FLT.Mazur.PolygonCompleteNodeArithmeticAction
+public import FLT.Mazur.PolygonCompleteNodeArithmeticDifferentials
 public import FLT.Mazur.PolygonCompleteNodeArithmeticGerms
 public import FLT.Mazur.PolygonCompleteNodeArithmeticH1Equiv
 public import FLT.Mazur.PolygonCompleteNodeCompletedLift
