@@ -7021,6 +7021,7 @@ public import FLT.Mazur.TranslatedHilbertPicardChart
 public import FLT.Mazur.TranslatedHilbertSchemeCocycle
 public import FLT.Mazur.TranslatedHilbertSchemeTriple
 public import FLT.Mazur.TranslatedHilbertTestUnion
+public import FLT.Mazur.TranslatedHilbertTestUnionBaseChange
 public import FLT.Mazur.TranslatedHilbertTestUnionLift
 public import FLT.Mazur.TranslatedHilbertTripleCocycle
 public import FLT.Mazur.TranslatedHilbertTripleOverlap
