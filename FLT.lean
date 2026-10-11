@@ -3328,6 +3328,7 @@ public import FLT.Mazur.CyclicProductEndpoints
 public import FLT.Mazur.CyclicProductNormalization
 public import FLT.Mazur.DRFiberClassification
 public import FLT.Mazur.DedekindPointExtension
+public import FLT.Mazur.DerivationAlgEquivTransport
 public import FLT.Mazur.DirectImageBaseChangeAdjoints
 public import FLT.Mazur.DirectImageBaseChangeMate
 public import FLT.Mazur.DirectImageBaseChangeNormalizedPasting
