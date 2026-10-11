@@ -4183,6 +4183,7 @@ public import FLT.Mazur.FreeModuleResidueRetraction
 public import FLT.Mazur.FreeSheafPullbackRestriction
 public import FLT.Mazur.FreeSheafRestrictionCoherence
 public import FLT.Mazur.FreeSheafSectionCoordinates
+public import FLT.Mazur.FullDivisorFlatFppfDescent
 public import FLT.Mazur.GeneralizedCurveAmpleBaseChange
 public import FLT.Mazur.GeneralizedCurveAmpleDescent
 public import FLT.Mazur.GeneralizedCurveAmpleSubgroup
