@@ -6238,6 +6238,7 @@ public import FLT.Mazur.ProperUniversalDirectImagePasting
 public import FLT.Mazur.ProperUniversalRetainedSection
 public import FLT.Mazur.ProperUniversalTensorIdentification
 public import FLT.Mazur.PullbackOverlapBaseChange
+public import FLT.Mazur.PullbackRotationTransport
 public import FLT.Mazur.PuncturedNodeRestrictionComparison
 public import FLT.Mazur.PushforwardCech
 public import FLT.Mazur.PushoutModuleScalars
