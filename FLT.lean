@@ -8567,6 +8567,7 @@ public import FLT.Mazur.WeierstrassLeftSmoothFractionActionGluing
 public import FLT.Mazur.WeierstrassLeftSmoothFractionActionRatios
 public import FLT.Mazur.WeierstrassLeftSmoothGlobalCenter
 public import FLT.Mazur.WeierstrassLeftSmoothHorizontalActionPresentation
+public import FLT.Mazur.WeierstrassLeftSmoothHorizontalBranchAction
 public import FLT.Mazur.WeierstrassLeftSmoothHorizontalResidueAction
 public import FLT.Mazur.WeierstrassLeftSmoothHorizontalResidueFactor
 public import FLT.Mazur.WeierstrassLeftSmoothIdentity
