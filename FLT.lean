@@ -8150,6 +8150,7 @@ public import FLT.Mazur.WeierstrassDividedNonadjacentTensorIntersection
 public import FLT.Mazur.WeierstrassDividedOlderAtlasIndex
 public import FLT.Mazur.WeierstrassDividedOlderConicExteriorDisjoint
 public import FLT.Mazur.WeierstrassDividedOlderConicPunctures
+public import FLT.Mazur.WeierstrassDividedOlderCubicAction
 public import FLT.Mazur.WeierstrassDividedOlderExtendedComponentOrigins
 public import FLT.Mazur.WeierstrassDividedOlderExtendedConicOverlap
 public import FLT.Mazur.WeierstrassDividedOlderExtendedDisjoint
