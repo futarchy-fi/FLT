@@ -3104,6 +3104,7 @@ public import FLT.Mazur.CartierFiberNeighborhood
 public import FLT.Mazur.CartierFlatNeighborhoodDescent
 public import FLT.Mazur.CartierFppfDescent
 public import FLT.Mazur.CartierIdealFinitePresentation
+public import FLT.Mazur.CartierIdealOverlap
 public import FLT.Mazur.CartierIdealPullbackComparison
 public import FLT.Mazur.CartierIdealStalkDescent
 public import FLT.Mazur.CartierIdealStalkNeighborhood
