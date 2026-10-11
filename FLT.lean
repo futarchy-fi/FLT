@@ -8048,6 +8048,7 @@ public import FLT.Mazur.WeierstrassLeftSmoothRestriction
 public import FLT.Mazur.WeierstrassLeftSmoothRestrictionCharts
 public import FLT.Mazur.WeierstrassLeftSmoothTransportedComparison
 public import FLT.Mazur.WeierstrassLeftSmoothTransportedCover
+public import FLT.Mazur.WeierstrassLeftSmoothTripleProduct
 public import FLT.Mazur.WeierstrassLeftSmoothYAddition
 public import FLT.Mazur.WeierstrassLeftSmoothYIdentity
 public import FLT.Mazur.WeierstrassLeftSmoothZeroGraph
