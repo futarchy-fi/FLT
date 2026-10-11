@@ -2515,6 +2515,7 @@ public import FLT.Mazur.AdicCompletionPositiveLimit
 public import FLT.Mazur.AdicCompletionPrincipal
 public import FLT.Mazur.AdicCompletionQuotientEquiv
 public import FLT.Mazur.AdicCompletionScalars
+public import FLT.Mazur.AdicConormalTargetCompletion
 public import FLT.Mazur.AdicCotangentHomComparison
 public import FLT.Mazur.AdicCotangentTransportDerivative
 public import FLT.Mazur.AdicCotangentTransportEquiv
