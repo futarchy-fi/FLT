@@ -5418,6 +5418,7 @@ public import FLT.Mazur.PolygonClosedEvaluationLifting
 public import FLT.Mazur.PolygonClosedScalarLifting
 public import FLT.Mazur.PolygonCoconeComparison
 public import FLT.Mazur.PolygonCohomologyIncidence
+public import FLT.Mazur.PolygonCommonVeroneseStep
 public import FLT.Mazur.PolygonCompatibleCoefficientFlatness
 public import FLT.Mazur.PolygonCompatibleCoefficientMap
 public import FLT.Mazur.PolygonCompatibleCoefficientScalars
@@ -5654,8 +5655,15 @@ public import FLT.Mazur.PolygonLineNodeRestriction
 public import FLT.Mazur.PolygonLineNormalization
 public import FLT.Mazur.PolygonMarkedSections
 public import FLT.Mazur.PolygonMarkingAffineNeighborhood
+public import FLT.Mazur.PolygonMultipleCoefficientProjMap
+public import FLT.Mazur.PolygonMultipleCoefficientStageOpens
+public import FLT.Mazur.PolygonMultipleStageGeneratingCover
+public import FLT.Mazur.PolygonMultipleStageOpenDetection
+public import FLT.Mazur.PolygonMultipleStageUnitChart
+public import FLT.Mazur.PolygonMultipleVeroneseGeometry
 public import FLT.Mazur.PolygonMultipleVeroneseIso
 public import FLT.Mazur.PolygonMultipleVeroneseProj
+public import FLT.Mazur.PolygonMultipleVeroneseStageNaturality
 public import FLT.Mazur.PolygonMultipleVeroneseStructuralMap
 public import FLT.Mazur.PolygonMultipleVeroneseUnitEvaluation
 public import FLT.Mazur.PolygonNodalCore
@@ -5839,6 +5847,7 @@ public import FLT.Mazur.PolygonVeroneseMultipleInclusion
 public import FLT.Mazur.PolygonVeroneseParameterIdeal
 public import FLT.Mazur.PolygonVeroneseProductLifting
 public import FLT.Mazur.PolygonVeroneseProperProj
+public import FLT.Mazur.PolygonVeroneseStepTransport
 public import FLT.Mazur.PolygonVeroneseTensorReduction
 public import FLT.Mazur.PolygonVeroneseZeroRing
 public import FLT.Mazur.PolynomialAffineIdealDegree
@@ -7025,9 +7034,11 @@ public import FLT.Mazur.SectionProjectiveFiniteNeighborhood
 public import FLT.Mazur.SectionProjectiveImmersion
 public import FLT.Mazur.SectionRetainedChartComparison
 public import FLT.Mazur.SectionRetainedChartMorphism
+public import FLT.Mazur.SectionRetainedCoefficientOpens
 public import FLT.Mazur.SectionRetainedCoordinateRatios
 public import FLT.Mazur.SectionRetainedFractionEquation
 public import FLT.Mazur.SectionRetainedFractionUniqueness
+public import FLT.Mazur.SectionRetainedHomogeneousChart
 public import FLT.Mazur.SectionRetainedLineEvaluation
 public import FLT.Mazur.SectionRetainedMappedRatios
 public import FLT.Mazur.SectionRetainedProjBaseCoefficients
