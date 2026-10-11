@@ -6959,6 +6959,7 @@ public import FLT.Mazur.TildeInvertibleLocal
 public import FLT.Mazur.TildePrincipalOpen
 public import FLT.Mazur.TildeSourceSectionComparison
 public import FLT.Mazur.TorusChartScalars
+public import FLT.Mazur.TranslatedHilbertPicardChart
 public import FLT.Mazur.TrivialLineTwistLocalization
 public import FLT.Mazur.TrivializedLineSheafLimitDescent
 public import FLT.Mazur.TwistedEvaluationSectionSum
