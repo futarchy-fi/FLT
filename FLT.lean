@@ -6962,6 +6962,7 @@ public import FLT.Mazur.StandardSmoothFieldCotangentRank
 public import FLT.Mazur.StandardSmoothFiniteFlatCartier
 public import FLT.Mazur.StandardSmoothFiniteSupportCartier
 public import FLT.Mazur.StandardSmoothLocalCartier
+public import FLT.Mazur.StructureCoefficientComposition
 public import FLT.Mazur.StructureCohomologyFinite
 public import FLT.Mazur.StructureCohomologyOverIso
 public import FLT.Mazur.StructureDirectImageHZero
