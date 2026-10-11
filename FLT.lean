@@ -5751,6 +5751,7 @@ public import FLT.Mazur.ProjectiveLineMarkedSectionInjective
 public import FLT.Mazur.ProjectiveLineMarkedSectionOverlap
 public import FLT.Mazur.ProjectiveLineMarkedSectionTransition
 public import FLT.Mazur.ProjectiveLineMarkedTransition
+public import FLT.Mazur.ProjectiveLineOpenChartExclusion
 public import FLT.Mazur.ProjectiveLineProductCharts
 public import FLT.Mazur.ProjectiveLineProductOverlap
 public import FLT.Mazur.ProjectiveLineRightCanonicalRatios
