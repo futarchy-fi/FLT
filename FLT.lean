@@ -3089,6 +3089,7 @@ public import FLT.Mazur.BaseMarkedHilbertChartChange
 public import FLT.Mazur.BaseMarkedHilbertCocycle
 public import FLT.Mazur.BaseMarkedHilbertFullIntersection
 public import FLT.Mazur.BaseMarkedHilbertGluedBase
+public import FLT.Mazur.BaseMarkedHilbertGluedChange
 public import FLT.Mazur.BaseMarkedHilbertGluedInjectivity
 public import FLT.Mazur.BaseMarkedHilbertGluedMap
 public import FLT.Mazur.BaseMarkedHilbertGluedPicard
