@@ -3923,6 +3923,7 @@ public import FLT.Mazur.EtalePolynomialPointLift
 public import FLT.Mazur.EtalePolynomialStalkLift
 public import FLT.Mazur.EtalePrimeParameterIdeals
 public import FLT.Mazur.EtaleQuasiFiniteCartierDescent
+public import FLT.Mazur.EtaleSimpleRootCoordinates
 public import FLT.Mazur.EvaluatedPrincipalRefinement
 public import FLT.Mazur.EventualTwistVanishing
 public import FLT.Mazur.ExactFunctorInjectiveExt
