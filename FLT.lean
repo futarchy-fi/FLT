@@ -5095,6 +5095,7 @@ public import FLT.Mazur.PinchingAffineDescent
 public import FLT.Mazur.PinchingChartBaseChange
 public import FLT.Mazur.PinchingNeighborhoods
 public import FLT.Mazur.PinchingPullbackTransport
+public import FLT.Mazur.PointNormalizedDirectImage
 public import FLT.Mazur.PointNormalizedDivisorBaseChange
 public import FLT.Mazur.PointNormalizedDivisorFiber
 public import FLT.Mazur.PointNormalizedDivisorUniqueness
