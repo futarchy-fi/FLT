@@ -3109,6 +3109,7 @@ public import FLT.Mazur.BaseMarkedHilbertGluedPicard
 public import FLT.Mazur.BaseMarkedHilbertGluing
 public import FLT.Mazur.BaseMarkedHilbertIdentities
 public import FLT.Mazur.BaseMarkedHilbertIntersection
+public import FLT.Mazur.BaseMarkedHilbertOriginalRelation
 public import FLT.Mazur.BaseMarkedHilbertOverlap
 public import FLT.Mazur.BaseMarkedHilbertOverlapChange
 public import FLT.Mazur.BaseMarkedHilbertSchemeCocycle
