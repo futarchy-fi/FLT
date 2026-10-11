@@ -5020,6 +5020,7 @@ public import FLT.Mazur.LocalizedStalkSmoothGenerization
 public import FLT.Mazur.LocalizedTensorCancellation
 public import FLT.Mazur.LocalizedTensorExactness
 public import FLT.Mazur.LocallyFiniteFreeOpenCover
+public import FLT.Mazur.LocallyFiniteTypeSeparablePointFactor
 public import FLT.Mazur.LocallyFramedSplitLineCoverIndependence
 public import FLT.Mazur.LocallyFramedSplitLineNaturality
 public import FLT.Mazur.LocallyFramedSplitLineProjective
