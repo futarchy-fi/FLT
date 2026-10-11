@@ -4352,7 +4352,9 @@ public import FLT.Mazur.GradedQuotientTensorComparison
 public import FLT.Mazur.GroupMarkingBaseChange
 public import FLT.Mazur.GroupMarkingBaseChangeInverse
 public import FLT.Mazur.GroupMarkingTransport
+public import FLT.Mazur.GroupMarkingTransportEquations
 public import FLT.Mazur.GroupMarkingTransportNaturality
+public import FLT.Mazur.GroupSchemeBaseChangeComposition
 public import FLT.Mazur.GroupSectionBaseChange
 public import FLT.Mazur.GroupTorsionBaseChange
 public import FLT.Mazur.GroupTorsionCommutativeStructure
@@ -5283,6 +5285,7 @@ public import FLT.Mazur.OneGonSmoothingCoefficientChange
 public import FLT.Mazur.OneGonSmoothingEquation
 public import FLT.Mazur.OneGonSmoothingFamily
 public import FLT.Mazur.OneGonSmoothingFieldFibers
+public import FLT.Mazur.OneGonSmoothingFullAuxiliaryMarking
 public import FLT.Mazur.OneGonSmoothingGenusOneFamily
 public import FLT.Mazur.OneGonSmoothingInfinityChart
 public import FLT.Mazur.OneGonSmoothingInfinityCoordinates
@@ -5296,10 +5299,15 @@ public import FLT.Mazur.OneGonSmoothingNormalizedOverlap
 public import FLT.Mazur.OneGonSmoothingOverlapBaseChange
 public import FLT.Mazur.OneGonSmoothingOverlapCompatibility
 public import FLT.Mazur.OneGonSmoothingOverlapCoordinates
+public import FLT.Mazur.OneGonSmoothingOverlapGroup
+public import FLT.Mazur.OneGonSmoothingOverlapTorsionBasis
 public import FLT.Mazur.OneGonSmoothingPrescribedMarking
 public import FLT.Mazur.OneGonSmoothingPuncturedAtlas
 public import FLT.Mazur.OneGonSmoothingPuncturedFamily
+public import FLT.Mazur.OneGonSmoothingPuncturedGroupAtlas
 public import FLT.Mazur.OneGonSmoothingPuncturedParameter
+public import FLT.Mazur.OneGonSmoothingSchemeNormalizedGroup
+public import FLT.Mazur.OneGonSmoothingSmoothGroup
 public import FLT.Mazur.OneGonSmoothingSmoothParameter
 public import FLT.Mazur.OneGonSmoothingUniversalComparison
 public import FLT.Mazur.OneGonSmoothingZeroCocone
@@ -7450,6 +7458,7 @@ public import FLT.Mazur.UniversalWeierstrassAuxiliaryRelabelNormalization
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryRelativePoint
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryRelativeRigidity
 public import FLT.Mazur.UniversalWeierstrassAuxiliarySchemeAffineAgreement
+public import FLT.Mazur.UniversalWeierstrassAuxiliarySchemeGroupComparison
 public import FLT.Mazur.UniversalWeierstrassAuxiliarySchemeMarkingSections
 public import FLT.Mazur.UniversalWeierstrassAuxiliarySchemeNormalizationNaturality
 public import FLT.Mazur.UniversalWeierstrassAuxiliarySchemeNormalizationRetraction
