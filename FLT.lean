@@ -5193,6 +5193,7 @@ public import FLT.Mazur.PolygonCompleteLineQuotient
 public import FLT.Mazur.PolygonCompleteMarkingSpecialization
 public import FLT.Mazur.PolygonCompleteNodeAffineIdeal
 public import FLT.Mazur.PolygonCompleteNodeNeighborhood
+public import FLT.Mazur.PolygonCompleteNodeStalkMap
 public import FLT.Mazur.PolygonComponentDistinct
 public import FLT.Mazur.PolygonComponentImages
 public import FLT.Mazur.PolygonConnected
