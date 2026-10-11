@@ -5632,6 +5632,8 @@ public import FLT.Mazur.PolygonSmoothingUnitParameter
 public import FLT.Mazur.PolygonSpecialFiberIdeal
 public import FLT.Mazur.PolygonSplitGeneratorIdentities
 public import FLT.Mazur.PolygonSplitGroup
+public import FLT.Mazur.PolygonSplitGroupConnected
+public import FLT.Mazur.PolygonSplitIdentityGroup
 public import FLT.Mazur.PolygonSplitInterpolationEquations
 public import FLT.Mazur.PolygonSplitLaurentNumerators
 public import FLT.Mazur.PolygonSplitLocalizedImages
@@ -7413,6 +7415,7 @@ public import FLT.Mazur.WeierstrassDividedGlobalZeroOverlap
 public import FLT.Mazur.WeierstrassDividedGlobalZeroSuccessive
 public import FLT.Mazur.WeierstrassDividedInfinityLaurentChart
 public import FLT.Mazur.WeierstrassDividedInfinityLaurentGluing
+public import FLT.Mazur.WeierstrassDividedInfinityLaurentZero
 public import FLT.Mazur.WeierstrassDividedInitialAtlasIndex
 public import FLT.Mazur.WeierstrassDividedInitialBoundaryGeometry
 public import FLT.Mazur.WeierstrassDividedInitialBranchCompatibility
@@ -7551,6 +7554,8 @@ public import FLT.Mazur.WeierstrassDividedPositiveEqualityGlobalLineRestrictions
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityGlobalNodeRestrictions
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityGlobalTerminalRestriction
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityHomExt
+public import FLT.Mazur.WeierstrassDividedPositiveEqualityIdentityComponent
+public import FLT.Mazur.WeierstrassDividedPositiveEqualityIdentitySubgroup
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityIndexedDescRecovery
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityIndexedExt
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityInitialCharts
@@ -7573,6 +7578,8 @@ public import FLT.Mazur.WeierstrassDividedPositiveEqualityInteriorIndexedDesc
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityInteriorLocalMaps
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityInteriorTensorCompatibility
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityInteriorTensorDesc
+public import FLT.Mazur.WeierstrassDividedPositiveEqualityOriginalPoints
+public import FLT.Mazur.WeierstrassDividedPositiveEqualityOriginalSmooth
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityPolygonIso
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityPolygonMap
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityPolygonSurjective
@@ -7585,6 +7592,7 @@ public import FLT.Mazur.WeierstrassDividedPositiveEqualityRetainedTerminalAtlasC
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityRetainedTerminalTensorCompatibility
 public import FLT.Mazur.WeierstrassDividedPositiveEqualitySmoothContraction
 public import FLT.Mazur.WeierstrassDividedPositiveEqualitySmoothGroup
+public import FLT.Mazur.WeierstrassDividedPositiveEqualitySmoothSpecialization
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityTerminalAtlasCompatibility
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityTerminalAtlasDesc
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityTerminalBranches
@@ -7594,6 +7602,7 @@ public import FLT.Mazur.WeierstrassDividedPositiveEqualityTerminalFamilyDescent
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityTerminalIndexedDesc
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityTerminalLocalMaps
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityTerminalTensorDesc
+public import FLT.Mazur.WeierstrassDividedPositiveEqualityZero
 public import FLT.Mazur.WeierstrassDividedPrecedingAtlasRange
 public import FLT.Mazur.WeierstrassDividedPreviousBoundaryAlgebra
 public import FLT.Mazur.WeierstrassDividedResidueAtlasExtension
@@ -7902,7 +7911,10 @@ public import FLT.Mazur.WeierstrassInfinityQuadraticWeight
 public import FLT.Mazur.WeierstrassInfinityResidualElimination
 public import FLT.Mazur.WeierstrassInfinityResidueBoundary
 public import FLT.Mazur.WeierstrassInfinityResidueGeometry
+public import FLT.Mazur.WeierstrassInfinityResidueSmooth
+public import FLT.Mazur.WeierstrassInfinityResidueSmoothGroup
 public import FLT.Mazur.WeierstrassInfinityResidueTensor
+public import FLT.Mazur.WeierstrassInfinityResidueZero
 public import FLT.Mazur.WeierstrassInfinityReverseCross
 public import FLT.Mazur.WeierstrassInfinitySlopeMap
 public import FLT.Mazur.WeierstrassInfinitySmoothChart
