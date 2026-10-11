@@ -5475,6 +5475,7 @@ public import FLT.Mazur.PolygonCompleteMarkedLineModel
 public import FLT.Mazur.PolygonCompleteMarkedModelSections
 public import FLT.Mazur.PolygonCompleteMarkedPowerModel
 public import FLT.Mazur.PolygonCompleteMarkedPowerSections
+public import FLT.Mazur.PolygonCompleteMarkedSectionTransport
 public import FLT.Mazur.PolygonCompleteMarkedStageComparison
 public import FLT.Mazur.PolygonCompleteMarkingAmple
 public import FLT.Mazur.PolygonCompleteMarkingCartier
