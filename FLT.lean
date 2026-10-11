@@ -7611,6 +7611,7 @@ public import FLT.Mazur.WeierstrassDividedFirstActionAtlas
 public import FLT.Mazur.WeierstrassDividedFirstActionInput
 public import FLT.Mazur.WeierstrassDividedFirstAtlasCoordinates
 public import FLT.Mazur.WeierstrassDividedFirstAtlasFractionAction
+public import FLT.Mazur.WeierstrassDividedFirstExteriorCenter
 public import FLT.Mazur.WeierstrassDividedFirstExteriorCoordinates
 public import FLT.Mazur.WeierstrassDividedFirstFractionAction
 public import FLT.Mazur.WeierstrassDividedFirstFractionAlgebra
