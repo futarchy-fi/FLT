@@ -2943,6 +2943,7 @@ public import FLT.Mazur.AmpleCoherentVanishing
 public import FLT.Mazur.AmpleCommonDegree
 public import FLT.Mazur.AmpleCyclicClassPresheaf
 public import FLT.Mazur.AmpleCyclicLevel
+public import FLT.Mazur.AmpleDivisorComplementAffine
 public import FLT.Mazur.AmpleFiberAffineNeighborhood
 public import FLT.Mazur.AmpleFiberBaseChange
 public import FLT.Mazur.AmpleFiberBaseIso
@@ -3523,12 +3524,14 @@ public import FLT.Mazur.DivisorCohomologicalDegree
 public import FLT.Mazur.DivisorCokernelProjection
 public import FLT.Mazur.DivisorComplementCanonical
 public import FLT.Mazur.DivisorComplementExactPowers
+public import FLT.Mazur.DivisorComplementExhaustion
 public import FLT.Mazur.DivisorComplementFaithful
 public import FLT.Mazur.DivisorComplementFiltration
 public import FLT.Mazur.DivisorComplementFunctions
 public import FLT.Mazur.DivisorComplementLeadingProduct
 public import FLT.Mazur.DivisorComplementLinear
 public import FLT.Mazur.DivisorComponentDegree
+public import FLT.Mazur.DivisorFunctionalScalar
 public import FLT.Mazur.DivisorIdealEvaluation
 public import FLT.Mazur.DivisorIdealFunctionalSection
 public import FLT.Mazur.DivisorIdealStalkExt
@@ -3562,8 +3565,10 @@ public import FLT.Mazur.DivisorPowerVeryAmple
 public import FLT.Mazur.DivisorRestrictCoherence
 public import FLT.Mazur.DivisorSectionComplement
 public import FLT.Mazur.DivisorSectionExact
+public import FLT.Mazur.DivisorSectionGeneratorOpen
 public import FLT.Mazur.DivisorSectionRigidity
 public import FLT.Mazur.DivisorStalkLength
+public import FLT.Mazur.DivisorTensorNumeratorComparison
 public import FLT.Mazur.DivisorTensorSequence
 public import FLT.Mazur.DivisorTranslationLine
 public import FLT.Mazur.DivisorTwistedDegree
@@ -5734,6 +5739,7 @@ public import FLT.Mazur.PolygonCompleteNodeStalkMap
 public import FLT.Mazur.PolygonCompleteOriginalSectionReconstruction
 public import FLT.Mazur.PolygonCompletePointAcyclic
 public import FLT.Mazur.PolygonCompletePointAffineMorphism
+public import FLT.Mazur.PolygonCompletePointCoordinateEquiv
 public import FLT.Mazur.PolygonCompletePointCoordinateInjective
 public import FLT.Mazur.PolygonCompletePointCoordinateRange
 public import FLT.Mazur.PolygonCompletePointCubicRelation
@@ -5741,6 +5747,7 @@ public import FLT.Mazur.PolygonCompletePointDimensions
 public import FLT.Mazur.PolygonCompletePointExactMonomials
 public import FLT.Mazur.PolygonCompletePointFunctionDimensions
 public import FLT.Mazur.PolygonCompletePointFunctionNumerators
+public import FLT.Mazur.PolygonCompletePointIrreducibleAffine
 public import FLT.Mazur.PolygonCompletePointLeadingClasses
 public import FLT.Mazur.PolygonCompletePointLeadingProducts
 public import FLT.Mazur.PolygonCompletePointMonomialBasis
@@ -6492,6 +6499,7 @@ public import FLT.Mazur.ProperAmpleFiberNeighborhood
 public import FLT.Mazur.ProperAmpleFiberNoetherian
 public import FLT.Mazur.ProperAmpleRetainedChartCover
 public import FLT.Mazur.ProperAmpleRetainedProjIso
+public import FLT.Mazur.ProperAmpleSectionAffine
 public import FLT.Mazur.ProperAtlasAbelEquivalence
 public import FLT.Mazur.ProperAtlasAbelFiber
 public import FLT.Mazur.ProperAtlasAbelNaturality
