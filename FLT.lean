@@ -5452,6 +5452,7 @@ public import FLT.Mazur.PolygonCompleteDivisorLineCoherence
 public import FLT.Mazur.PolygonCompleteDivisorPowerComparison
 public import FLT.Mazur.PolygonCompleteDivisorRestriction
 public import FLT.Mazur.PolygonCompleteFamilyFlatness
+public import FLT.Mazur.PolygonCompleteFamilyHomExt
 public import FLT.Mazur.PolygonCompleteFiberMarkings
 public import FLT.Mazur.PolygonCompleteFieldH1
 public import FLT.Mazur.PolygonCompleteGenericGenus
