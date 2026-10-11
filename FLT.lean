@@ -5255,6 +5255,7 @@ public import FLT.Mazur.OriginalTwistLineOrbits
 public import FLT.Mazur.OriginalTwistOrbitRelation
 public import FLT.Mazur.OriginalTwistSectionCoherence
 public import FLT.Mazur.OverCoproductModuleSections
+public import FLT.Mazur.OverOpenCoverExt
 public import FLT.Mazur.OverPoints
 public import FLT.Mazur.OverPullbackCoherence
 public import FLT.Mazur.OverPullbackCoproduct
