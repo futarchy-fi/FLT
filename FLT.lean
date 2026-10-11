@@ -3223,6 +3223,7 @@ public import FLT.Mazur.CartierAbelSquareComparison
 public import FLT.Mazur.CartierAbelTwistBaseChange
 public import FLT.Mazur.CartierAbelTwistedSections
 public import FLT.Mazur.CartierAffineFppfDescent
+public import FLT.Mazur.CartierBoundarySectionRingIdentity
 public import FLT.Mazur.CartierBoundarySectionRingNaturality
 public import FLT.Mazur.CartierChartFlat
 public import FLT.Mazur.CartierCharts
