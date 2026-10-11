@@ -2506,6 +2506,7 @@ public import FLT.Mazur.AdicCompletionPrincipal
 public import FLT.Mazur.AdicCompletionQuotientEquiv
 public import FLT.Mazur.AdicCompletionScalars
 public import FLT.Mazur.AdicDerivationFiltration
+public import FLT.Mazur.AdicDerivationQuotient
 public import FLT.Mazur.AdicFiniteGenerationLifting
 public import FLT.Mazur.AdicSectionIsoReconstruction
 public import FLT.Mazur.AffineAdicCohomologyImage
