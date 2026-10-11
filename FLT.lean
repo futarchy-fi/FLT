@@ -3114,6 +3114,7 @@ public import FLT.Mazur.CartesianMonoMonoid
 public import FLT.Mazur.CartesianMorphismRecovery
 public import FLT.Mazur.CartesianOpenSectionMap
 public import FLT.Mazur.CartesianSectionRestriction
+public import FLT.Mazur.CartesianStandardSmoothDimension
 public import FLT.Mazur.CartesianStructureComplexExactness
 public import FLT.Mazur.CartesianStructureComplexGluing
 public import FLT.Mazur.CartesianStructurePositiveHomology
