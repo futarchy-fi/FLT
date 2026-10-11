@@ -3186,6 +3186,7 @@ public import FLT.Mazur.CoefficientCartesianHomDescent
 public import FLT.Mazur.CoefficientCartesianProperty
 public import FLT.Mazur.CoefficientConnectedNeighborhood
 public import FLT.Mazur.CoefficientImmersionClosedDescent
+public import FLT.Mazur.CoefficientIndependentLineDescent
 public import FLT.Mazur.CoefficientInverseEquations
 public import FLT.Mazur.CoefficientIsomorphismDescent
 public import FLT.Mazur.CoefficientModelFiniteness
