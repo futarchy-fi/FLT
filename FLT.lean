@@ -9502,6 +9502,7 @@ public import FLT.Mazur.WeierstrassVerticalChartCompatibility
 public import FLT.Mazur.WeierstrassVietaNormalization
 public import FLT.Mazur.WeierstrassYProductAdditionGluing
 public import FLT.Mazur.WeierstrassYProductCover
+public import FLT.Mazur.WeightedPoleCubicNormalization
 public import FLT.Mazur.WeightedPoleMonomials
 public import FLT.MazurChapter.AdmissibleGroupSchemes
 public import FLT.MazurW
