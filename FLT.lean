@@ -8005,6 +8005,8 @@ public import FLT.Mazur.WeierstrassDividedGlobalZeroIntersection
 public import FLT.Mazur.WeierstrassDividedGlobalZeroNodes
 public import FLT.Mazur.WeierstrassDividedGlobalZeroOverlap
 public import FLT.Mazur.WeierstrassDividedGlobalZeroSuccessive
+public import FLT.Mazur.WeierstrassDividedHorizontalCoefficientPointAction
+public import FLT.Mazur.WeierstrassDividedHorizontalFinitePointAction
 public import FLT.Mazur.WeierstrassDividedInfinityLaurentChart
 public import FLT.Mazur.WeierstrassDividedInfinityLaurentGluing
 public import FLT.Mazur.WeierstrassDividedInfinityLaurentZero
@@ -8027,6 +8029,7 @@ public import FLT.Mazur.WeierstrassDividedInitialExteriorOriented
 public import FLT.Mazur.WeierstrassDividedInitialExteriorProjective
 public import FLT.Mazur.WeierstrassDividedInitialGlobalResidueNodes
 public import FLT.Mazur.WeierstrassDividedInitialGlobalSections
+public import FLT.Mazur.WeierstrassDividedInitialGlobalStep
 public import FLT.Mazur.WeierstrassDividedInitialGlobalTensorChart
 public import FLT.Mazur.WeierstrassDividedInitialHorizontalActionBoundary
 public import FLT.Mazur.WeierstrassDividedInitialHorizontalActionGeometry
@@ -8041,6 +8044,7 @@ public import FLT.Mazur.WeierstrassDividedInitialNodeBranches
 public import FLT.Mazur.WeierstrassDividedInitialNodeHomExt
 public import FLT.Mazur.WeierstrassDividedInitialParameterIntersection
 public import FLT.Mazur.WeierstrassDividedInitialParameterOverlap
+public import FLT.Mazur.WeierstrassDividedInitialPointActionPropagation
 public import FLT.Mazur.WeierstrassDividedInitialPrecedingExterior
 public import FLT.Mazur.WeierstrassDividedInitialProjectiveComponents
 public import FLT.Mazur.WeierstrassDividedInitialPunctureCompatibility
@@ -8054,6 +8058,7 @@ public import FLT.Mazur.WeierstrassDividedInitialTensorChart
 public import FLT.Mazur.WeierstrassDividedInitialTensorGlobalComparison
 public import FLT.Mazur.WeierstrassDividedInitialTensorInfinityIntersection
 public import FLT.Mazur.WeierstrassDividedInitialTensorIntersection
+public import FLT.Mazur.WeierstrassDividedInitialTensorPointAction
 public import FLT.Mazur.WeierstrassDividedInitialZeroInfinity
 public import FLT.Mazur.WeierstrassDividedInitialZeroLaurent
 public import FLT.Mazur.WeierstrassDividedInitialZeroSlopeChart
@@ -9136,8 +9141,10 @@ public import FLT.Mazur.WeierstrassSmoothHorizontalProductResidue
 public import FLT.Mazur.WeierstrassSmoothHorizontalProductSource
 public import FLT.Mazur.WeierstrassSmoothHorizontalReciprocalCharacters
 public import FLT.Mazur.WeierstrassSmoothHorizontalResidueCoordinates
+public import FLT.Mazur.WeierstrassSmoothHorizontalResiduePoint
 public import FLT.Mazur.WeierstrassSmoothHorizontalTensorAction
 public import FLT.Mazur.WeierstrassSmoothHorizontalTensorGlobalAction
+public import FLT.Mazur.WeierstrassSmoothHorizontalTensorInput
 public import FLT.Mazur.WeierstrassSmoothInfinityCommutativity
 public import FLT.Mazur.WeierstrassSmoothInfinityDomain
 public import FLT.Mazur.WeierstrassSmoothInfinityIdentity
