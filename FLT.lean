@@ -8385,6 +8385,7 @@ public import FLT.Mazur.WeierstrassModificationYTotalTransform
 public import FLT.Mazur.WeierstrassModificationYTripleOverlap
 public import FLT.Mazur.WeierstrassModifiedSmoothAffineRefinement
 public import FLT.Mazur.WeierstrassModifiedSmoothOutputCoordinates
+public import FLT.Mazur.WeierstrassModifiedSmoothTotalCover
 public import FLT.Mazur.WeierstrassNegationAdditionDescent
 public import FLT.Mazur.WeierstrassNegationAdditionPullback
 public import FLT.Mazur.WeierstrassNegationCover
