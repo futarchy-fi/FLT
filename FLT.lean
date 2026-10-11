@@ -6941,6 +6941,7 @@ public import FLT.Mazur.UniversalWeierstrassParameter
 public import FLT.Mazur.UniversallyClosedFiniteCover
 public import FLT.Mazur.UniversallyDistinctSections
 public import FLT.Mazur.UnpointedAcyclicFppfDetection
+public import FLT.Mazur.UnpointedLocalAcyclicFppfSheaf
 public import FLT.Mazur.UnramifiedSectionImmersion
 public import FLT.Mazur.UnrestrictedSmoothFamilyCartier
 public import FLT.Mazur.ValuationProjectiveNormalization
