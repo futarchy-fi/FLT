@@ -2916,6 +2916,7 @@ public import FLT.Mazur.AmbientHilbertUniversalPullback
 public import FLT.Mazur.AmbientQuotientRelativeBaseChange
 public import FLT.Mazur.AmbientQuotientRelativeSpace
 public import FLT.Mazur.AmbientQuotientSchemeFamilies
+public import FLT.Mazur.AmpleAcyclicNonzeroSection
 public import FLT.Mazur.AmpleAffineBase
 public import FLT.Mazur.AmpleAffinePullback
 public import FLT.Mazur.AmpleAmbientHilbertClassification
@@ -2948,6 +2949,7 @@ public import FLT.Mazur.AmplePrincipalLocality
 public import FLT.Mazur.AmpleRetainedChartGeneration
 public import FLT.Mazur.AmpleRetainedSectionCover
 public import FLT.Mazur.AmpleSectionCoverPullback
+public import FLT.Mazur.AmpleSmoothNonspecialLift
 public import FLT.Mazur.AmpleTwistedSectionLifting
 public import FLT.Mazur.AmpleVeroneseEvaluation
 public import FLT.Mazur.AmpleVeroneseMultiplication
@@ -3083,6 +3085,7 @@ public import FLT.Mazur.BinaryOpenDescent
 public import FLT.Mazur.BlowupFractionChart
 public import FLT.Mazur.BlowupFractionChartExt
 public import FLT.Mazur.BlowupFractionChartLocalization
+public import FLT.Mazur.BlowupFractionChartMap
 public import FLT.Mazur.BlowupFractionChartRatio
 public import FLT.Mazur.BlowupReesContraction
 public import FLT.Mazur.BlowupReesDegreeZeroEquiv
@@ -3398,6 +3401,8 @@ public import FLT.Mazur.CurveNode
 public import FLT.Mazur.CurveNodeAffineCompletion
 public import FLT.Mazur.CurveNodeOpenCover
 public import FLT.Mazur.CurveNodeOpenImmersion
+public import FLT.Mazur.CurveNonspecialDivisor
+public import FLT.Mazur.CurveNonspecialLine
 public import FLT.Mazur.CurvePicardDegree
 public import FLT.Mazur.CurvePositiveDegreeAffineSection
 public import FLT.Mazur.CurvePositiveDegreeAmple
@@ -3862,6 +3867,7 @@ public import FLT.Mazur.FiberCohomologyTensorCriterion
 public import FLT.Mazur.FiberCohomologyTensorExactness
 public import FLT.Mazur.FiberwiseRegularFlatQuotient
 public import FLT.Mazur.FieldCoefficientCohomologyDimension
+public import FLT.Mazur.FieldNonspecialGeometricCriterion
 public import FLT.Mazur.FilteredDiagramSectionDescent
 public import FLT.Mazur.FilteredDiagramUnitDescent
 public import FLT.Mazur.FilteredRingFamilyDescent
@@ -3956,6 +3962,7 @@ public import FLT.Mazur.FiniteGroupQuotientPrincipalChart
 public import FLT.Mazur.FiniteGroupQuotientSchemePoints
 public import FLT.Mazur.FiniteGroupSpectrumAction
 public import FLT.Mazur.FiniteHomologyFiberVanishing
+public import FLT.Mazur.FiniteIdealConditionDimension
 public import FLT.Mazur.FiniteIntegerModelElementRelations
 public import FLT.Mazur.FiniteIntegerModelPullbacks
 public import FLT.Mazur.FiniteIntegerModelRelations
@@ -4622,6 +4629,7 @@ public import FLT.Mazur.IdealAdicUniformQuotientVanishing
 public import FLT.Mazur.IdealCartierNeighborhood
 public import FLT.Mazur.IdealCohomologyAmpleAnyBase
 public import FLT.Mazur.IdealCohomologyAmpleCriterion
+public import FLT.Mazur.IdealConditionAcyclic
 public import FLT.Mazur.IdealFamilyIsomorphism
 public import FLT.Mazur.IdealIsomorphismExtension
 public import FLT.Mazur.IdealModuleAffineTensor
@@ -5141,7 +5149,10 @@ public import FLT.Mazur.NoetherianSumCechComplex
 public import FLT.Mazur.NoetherianSumCechInclusion
 public import FLT.Mazur.NoetherianSumCechTerms
 public import FLT.Mazur.NoetherianUniversalStructureSheaf
+public import FLT.Mazur.NonspecialDivisorNeighborhood
+public import FLT.Mazur.NonspecialDivisorTestCover
 public import FLT.Mazur.NonzeroLineSectionExact
+public import FLT.Mazur.NonzeroSectionPointCondition
 public import FLT.Mazur.NormalizedSectionLine
 public import FLT.Mazur.NormalizedSectionLineBaseChange
 public import FLT.Mazur.NormalizedSectionLineCommonPrincipal
@@ -6318,6 +6329,7 @@ public import FLT.Mazur.RationalCyclicGeneratorChange
 public import FLT.Mazur.RationalCyclicModuliPoint
 public import FLT.Mazur.RationalCyclicSubgroup
 public import FLT.Mazur.RationalFibers
+public import FLT.Mazur.RationalPointConditionRank
 public import FLT.Mazur.RationalPrimeTorsionGeometricModel
 public import FLT.Mazur.RationalPrimeTorsionLocalModel
 public import FLT.Mazur.ReconstructionComposition
@@ -6803,6 +6815,8 @@ public import FLT.Mazur.SectionCartierBaseOpen
 public import FLT.Mazur.SectionCartierOpenDescent
 public import FLT.Mazur.SectionChartGenerators
 public import FLT.Mazur.SectionCharts
+public import FLT.Mazur.SectionConditionAcyclic
+public import FLT.Mazur.SectionConditionDimension
 public import FLT.Mazur.SectionCoverCoordinates
 public import FLT.Mazur.SectionCoverDiscrepancy
 public import FLT.Mazur.SectionDivisors
@@ -6940,6 +6954,9 @@ public import FLT.Mazur.SmoothFiniteSubgroupAmple
 public import FLT.Mazur.SmoothFiniteSubschemeCartier
 public import FLT.Mazur.SmoothGeometricAcyclicRankOne
 public import FLT.Mazur.SmoothGeometricallyReduced
+public import FLT.Mazur.SmoothNonspecialDivisorCover
+public import FLT.Mazur.SmoothNonspecialDivisorLift
+public import FLT.Mazur.SmoothNonspecialLineLift
 public import FLT.Mazur.SmoothOpenSectionCartier
 public import FLT.Mazur.SmoothQuasiFiniteCartierCriterion
 public import FLT.Mazur.SmoothQuasiFiniteIdealCharts
@@ -7097,6 +7114,9 @@ public import FLT.Mazur.UniversalDivisorCohomologyCharts
 public import FLT.Mazur.UniversalDivisorDirectImageRepresentation
 public import FLT.Mazur.UniversalDivisorGlobalCohomology
 public import FLT.Mazur.UniversalDivisorTwistedLine
+public import FLT.Mazur.UniversalPointCondition
+public import FLT.Mazur.UniversalPointConditionLine
+public import FLT.Mazur.UniversalPointConditionRank
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryActualNormalizationIso
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryAffineSections
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryArithmeticAction
@@ -7194,7 +7214,10 @@ public import FLT.Mazur.ValuationRingModel
 public import FLT.Mazur.VeryAmpleAffineSections
 public import FLT.Mazur.VeryAmplePresentationBaseChange
 public import FLT.Mazur.WeierstrassAdditionAffineCoverage
+public import FLT.Mazur.WeierstrassAdditionCenterContainment
+public import FLT.Mazur.WeierstrassAdditionCenterSheaf
 public import FLT.Mazur.WeierstrassAdditionChartCompatibility
+public import FLT.Mazur.WeierstrassAdditionFractionLift
 public import FLT.Mazur.WeierstrassAdditionInfinitySections
 public import FLT.Mazur.WeierstrassAdditionInputCharts
 public import FLT.Mazur.WeierstrassAdditionIntersections
@@ -8097,6 +8120,7 @@ public import FLT.Mazur.WeierstrassLeftSmoothAdditionGluing
 public import FLT.Mazur.WeierstrassLeftSmoothAdditionOutputRegular
 public import FLT.Mazur.WeierstrassLeftSmoothAdditionStructure
 public import FLT.Mazur.WeierstrassLeftSmoothAffineAddition
+public import FLT.Mazur.WeierstrassLeftSmoothAffineCenter
 public import FLT.Mazur.WeierstrassLeftSmoothAffineIdentity
 public import FLT.Mazur.WeierstrassLeftSmoothAffineInputTriple
 public import FLT.Mazur.WeierstrassLeftSmoothAffineOuterTriple
@@ -8106,6 +8130,8 @@ public import FLT.Mazur.WeierstrassLeftSmoothAffineTransport
 public import FLT.Mazur.WeierstrassLeftSmoothAffineTripleDescent
 public import FLT.Mazur.WeierstrassLeftSmoothAllOrdinaryTriple
 public import FLT.Mazur.WeierstrassLeftSmoothAssociativity
+public import FLT.Mazur.WeierstrassLeftSmoothCenterAction
+public import FLT.Mazur.WeierstrassLeftSmoothCenterInvariant
 public import FLT.Mazur.WeierstrassLeftSmoothCrossInput
 public import FLT.Mazur.WeierstrassLeftSmoothFactorAddition
 public import FLT.Mazur.WeierstrassLeftSmoothFactorProduct
@@ -8114,9 +8140,11 @@ public import FLT.Mazur.WeierstrassLeftSmoothFivePoints
 public import FLT.Mazur.WeierstrassLeftSmoothFiveRegularChartDescent
 public import FLT.Mazur.WeierstrassLeftSmoothFiveRegularSectionDescent
 public import FLT.Mazur.WeierstrassLeftSmoothFormulaComparison
+public import FLT.Mazur.WeierstrassLeftSmoothGlobalCenter
 public import FLT.Mazur.WeierstrassLeftSmoothIdentity
 public import FLT.Mazur.WeierstrassLeftSmoothInfinityIdentity
 public import FLT.Mazur.WeierstrassLeftSmoothInputAddition
+public import FLT.Mazur.WeierstrassLeftSmoothInputCenter
 public import FLT.Mazur.WeierstrassLeftSmoothInputCompatibility
 public import FLT.Mazur.WeierstrassLeftSmoothInputOutputRegular
 public import FLT.Mazur.WeierstrassLeftSmoothInputRestrictions
@@ -8136,6 +8164,7 @@ public import FLT.Mazur.WeierstrassLeftSmoothSectionTranslation
 public import FLT.Mazur.WeierstrassLeftSmoothSevenPoints
 public import FLT.Mazur.WeierstrassLeftSmoothTranslationGraph
 public import FLT.Mazur.WeierstrassLeftSmoothTranslationLocus
+public import FLT.Mazur.WeierstrassLeftSmoothTransportedCenter
 public import FLT.Mazur.WeierstrassLeftSmoothTransportedComparison
 public import FLT.Mazur.WeierstrassLeftSmoothTransportedCover
 public import FLT.Mazur.WeierstrassLeftSmoothTransportedOutputRegular
@@ -8164,6 +8193,8 @@ public import FLT.Mazur.WeierstrassMixedTripleSlopes
 public import FLT.Mazur.WeierstrassModificationAffineContraction
 public import FLT.Mazur.WeierstrassModificationAffineProper
 public import FLT.Mazur.WeierstrassModificationAtlas
+public import FLT.Mazur.WeierstrassModificationCenterCharts
+public import FLT.Mazur.WeierstrassModificationCenterSheaf
 public import FLT.Mazur.WeierstrassModificationCenterSmooth
 public import FLT.Mazur.WeierstrassModificationChartIntersection
 public import FLT.Mazur.WeierstrassModificationFlat
@@ -8424,6 +8455,7 @@ public import FLT.Mazur.WeierstrassProductOverlapFlat
 public import FLT.Mazur.WeierstrassProductOverlapScheme
 public import FLT.Mazur.WeierstrassProjectiveAdditionBoundary
 public import FLT.Mazur.WeierstrassProjectiveAdditionChart
+public import FLT.Mazur.WeierstrassProjectiveCenterIdeal
 public import FLT.Mazur.WeierstrassProjectiveChartAlgebra
 public import FLT.Mazur.WeierstrassProjectiveChartEquation
 public import FLT.Mazur.WeierstrassProjectiveChartProduct
@@ -8433,6 +8465,7 @@ public import FLT.Mazur.WeierstrassProjectivePointNaturality
 public import FLT.Mazur.WeierstrassProjectivePointNegation
 public import FLT.Mazur.WeierstrassProjectivePointSmooth
 public import FLT.Mazur.WeierstrassProjectiveRelativeSmoothCriterion
+public import FLT.Mazur.WeierstrassProjectiveSingularCenter
 public import FLT.Mazur.WeierstrassProjectiveSmoothResidues
 public import FLT.Mazur.WeierstrassRationalCyclicModuli
 public import FLT.Mazur.WeierstrassRationalGroupSection
@@ -8454,6 +8487,7 @@ public import FLT.Mazur.WeierstrassReciprocalSecantTripleAlgebra
 public import FLT.Mazur.WeierstrassReciprocalSecantTripleDomain
 public import FLT.Mazur.WeierstrassReciprocalSecantTripleGlobal
 public import FLT.Mazur.WeierstrassReciprocalSecantTripleSchemes
+public import FLT.Mazur.WeierstrassReciprocalSingularCenter
 public import FLT.Mazur.WeierstrassReciprocalTripleAlgebra
 public import FLT.Mazur.WeierstrassReciprocalTripleCentered
 public import FLT.Mazur.WeierstrassReciprocalTripleCoordinates
