@@ -8309,6 +8309,7 @@ public import FLT.Mazur.WeierstrassNormalizedFrameTransport
 public import FLT.Mazur.WeierstrassNormalizedFrameUnique
 public import FLT.Mazur.WeierstrassNormalizedOriginIsomorphism
 public import FLT.Mazur.WeierstrassNormalizedProjectivePoint
+public import FLT.Mazur.WeierstrassOrdinaryCenterIdeal
 public import FLT.Mazur.WeierstrassOrdinaryChartSpecialization
 public import FLT.Mazur.WeierstrassOrdinaryDomainLift
 public import FLT.Mazur.WeierstrassOrdinaryFieldAddition
