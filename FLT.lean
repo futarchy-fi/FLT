@@ -6549,6 +6549,7 @@ public import FLT.Mazur.RelativePinchingNeighborhoods
 public import FLT.Mazur.RelativeRankOneDivisorUniqueness
 public import FLT.Mazur.RelativeRelationInvariantAffineComparison
 public import FLT.Mazur.RelativeRelationInvariantLocallyRinged
+public import FLT.Mazur.RelativeRelationInvariantSectionRings
 public import FLT.Mazur.RelativeRelationInvariantSections
 public import FLT.Mazur.RelativeRelationInvariantSheaf
 public import FLT.Mazur.RelativeRelationOrbit
@@ -6876,6 +6877,7 @@ public import FLT.Mazur.SchemeIndependentNormalizationSquare
 public import FLT.Mazur.SchemeIndependentPairNormalization
 public import FLT.Mazur.SchemeIndependentRecoveryNormalization
 public import FLT.Mazur.SchemeIndependentTripleCocycle
+public import FLT.Mazur.SchemeKernelPairSectionSheaf
 public import FLT.Mazur.SchemeLineBundleCategory
 public import FLT.Mazur.SchemeLineCanonicalFunctor
 public import FLT.Mazur.SchemeLineDescentCategory
@@ -6888,8 +6890,10 @@ public import FLT.Mazur.SchemeNormalizedRecoveryOverlap
 public import FLT.Mazur.SchemeOpenPushoutCharts
 public import FLT.Mazur.SchemeOpenPushoutCoverIso
 public import FLT.Mazur.SchemeOpenPushoutIntersection
+public import FLT.Mazur.SchemeOpenRelationSections
 public import FLT.Mazur.SchemeOpenReplacementPreimage
 public import FLT.Mazur.SchemeOpenReplacementProper
+public import FLT.Mazur.SchemeOpenSectionDescent
 public import FLT.Mazur.SchemeOverlapBaseChange
 public import FLT.Mazur.SchemeOverlapCocycleChart
 public import FLT.Mazur.SchemeOverlapCocycleDetection
@@ -7238,6 +7242,7 @@ public import FLT.Mazur.TildeSourceSectionComparison
 public import FLT.Mazur.TorusChartScalars
 public import FLT.Mazur.TranslatedHilbertChartFunctions
 public import FLT.Mazur.TranslatedHilbertChartOverlap
+public import FLT.Mazur.TranslatedHilbertChartSourceSections
 public import FLT.Mazur.TranslatedHilbertCoverageCriterion
 public import FLT.Mazur.TranslatedHilbertGluedBase
 public import FLT.Mazur.TranslatedHilbertGluedDescent
@@ -7247,14 +7252,18 @@ public import FLT.Mazur.TranslatedHilbertGluedMono
 public import FLT.Mazur.TranslatedHilbertGluedOpen
 public import FLT.Mazur.TranslatedHilbertGluedPicard
 public import FLT.Mazur.TranslatedHilbertGluing
+public import FLT.Mazur.TranslatedHilbertInvariantStructureSheaf
 public import FLT.Mazur.TranslatedHilbertLocalCoverage
+public import FLT.Mazur.TranslatedHilbertLocallyRingedChart
 public import FLT.Mazur.TranslatedHilbertOpenBaseChange
 public import FLT.Mazur.TranslatedHilbertOpenFunctions
 public import FLT.Mazur.TranslatedHilbertOrbitFibers
 public import FLT.Mazur.TranslatedHilbertOrbitHomeomorph
 public import FLT.Mazur.TranslatedHilbertOrbitOpen
+public import FLT.Mazur.TranslatedHilbertOriginalInvariantFunctions
 public import FLT.Mazur.TranslatedHilbertOverlapIdentities
 public import FLT.Mazur.TranslatedHilbertPicardChart
+public import FLT.Mazur.TranslatedHilbertRelationOpenSections
 public import FLT.Mazur.TranslatedHilbertRestrictedRelation
 public import FLT.Mazur.TranslatedHilbertSchemeCocycle
 public import FLT.Mazur.TranslatedHilbertSchemeTriple
