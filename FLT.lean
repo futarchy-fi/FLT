@@ -3205,6 +3205,7 @@ public import FLT.Mazur.CartierAffineFppfDescent
 public import FLT.Mazur.CartierBoundarySectionRingNaturality
 public import FLT.Mazur.CartierChartFlat
 public import FLT.Mazur.CartierCharts
+public import FLT.Mazur.CartierComplementRestriction
 public import FLT.Mazur.CartierDivisorComponentRestriction
 public import FLT.Mazur.CartierDivisorMultiplicity
 public import FLT.Mazur.CartierFiberNeighborhood
