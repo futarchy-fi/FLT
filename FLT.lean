@@ -9011,6 +9011,7 @@ public import FLT.Mazur.WeierstrassSplitNodalSmoothChartCoordinates
 public import FLT.Mazur.WeierstrassSplitNodalSmoothFormulaComparison
 public import FLT.Mazur.WeierstrassSplitNodalSmoothGroup
 public import FLT.Mazur.WeierstrassSplitNodalSmoothGroupComparison
+public import FLT.Mazur.WeierstrassSplitNodalTangentBranches
 public import FLT.Mazur.WeierstrassSplitNodalTangentCharacters
 public import FLT.Mazur.WeierstrassSplitNodalTangentChart
 public import FLT.Mazur.WeierstrassSplitNodalTangentEvaluation
