@@ -5484,6 +5484,7 @@ public import FLT.Mazur.PolygonGeometricGraph
 public import FLT.Mazur.PolygonGeometricTranslations
 public import FLT.Mazur.PolygonGroupPoints
 public import FLT.Mazur.PolygonHZeroIncidence
+public import FLT.Mazur.PolygonHigherStructureCohomology
 public import FLT.Mazur.PolygonHomogeneousBoundaryEvaluation
 public import FLT.Mazur.PolygonIdealModulePullback
 public import FLT.Mazur.PolygonIncidence
