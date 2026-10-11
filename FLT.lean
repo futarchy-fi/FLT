@@ -3836,6 +3836,7 @@ public import FLT.Mazur.ExactSourceDenominatorLift
 public import FLT.Mazur.FCurveContracts
 public import FLT.Mazur.FaithfullyFlatFinitePresentation
 public import FLT.Mazur.FaithfullyFlatInvertible
+public import FLT.Mazur.FaithfullyFlatTowerReflection
 public import FLT.Mazur.FamilyTransport
 public import FLT.Mazur.FiberAffineOpenBaseChange
 public import FLT.Mazur.FiberAffineOpenBaseIso
