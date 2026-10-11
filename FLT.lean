@@ -3931,10 +3931,16 @@ public import FLT.Mazur.EtaleFiniteQuotientBranch
 public import FLT.Mazur.EtaleFiniteSupportCartier
 public import FLT.Mazur.EtaleLocalParameterIdeals
 public import FLT.Mazur.EtaleMarkingScheme
+public import FLT.Mazur.EtalePolynomialGeometricOpenPoints
 public import FLT.Mazur.EtalePolynomialPointLift
+public import FLT.Mazur.EtalePolynomialSeparableLift
+public import FLT.Mazur.EtalePolynomialSeparablePointDescent
 public import FLT.Mazur.EtalePolynomialStalkLift
 public import FLT.Mazur.EtalePrimeParameterIdeals
 public import FLT.Mazur.EtaleQuasiFiniteCartierDescent
+public import FLT.Mazur.EtaleSepClosedPointDescent
+public import FLT.Mazur.EtaleSeparableResidueCoordinates
+public import FLT.Mazur.EtaleSimpleRootCoordinates
 public import FLT.Mazur.EvaluatedPrincipalRefinement
 public import FLT.Mazur.EventualTwistVanishing
 public import FLT.Mazur.ExactFunctorInjectiveExt
@@ -4894,6 +4900,7 @@ public import FLT.Mazur.IteratedQuotientRecovery
 public import FLT.Mazur.IteratedQuotientRepresentatives
 public import FLT.Mazur.IteratedRefinementSquareCriteria
 public import FLT.Mazur.LargeDegreeRelativeLineSections
+public import FLT.Mazur.LaurentCoefficientInjectivity
 public import FLT.Mazur.LaurentRingSurjectivity
 public import FLT.Mazur.LaurentTensor
 public import FLT.Mazur.LaurentUnitMultiplication
@@ -5444,6 +5451,7 @@ public import FLT.Mazur.OrderedDivisorOriginalFiber
 public import FLT.Mazur.OrderedDivisorSectionSpecialization
 public import FLT.Mazur.OrderedDivisorTranslation
 public import FLT.Mazur.OrderedHilbertEtaleResidueLift
+public import FLT.Mazur.OrderedHilbertEtaleSeparableLift
 public import FLT.Mazur.OrderedHilbertEtaleStalkLift
 public import FLT.Mazur.OrderedProjectiveHilbertNaturality
 public import FLT.Mazur.OrderedProjectiveHilbertParameter
@@ -5451,6 +5459,7 @@ public import FLT.Mazur.OrderedRelativeIdealBaseChange
 public import FLT.Mazur.OrderedRelativeIdealFamily
 public import FLT.Mazur.OrderedTranslationAffineParameterCover
 public import FLT.Mazur.OrderedTranslationEtaleResidueLift
+public import FLT.Mazur.OrderedTranslationEtaleSeparableLift
 public import FLT.Mazur.OrderedTranslationLocallyRingedMap
 public import FLT.Mazur.OrderedTranslationOriginalFiber
 public import FLT.Mazur.OrderedTranslationQuotientCover
@@ -6357,6 +6366,7 @@ public import FLT.Mazur.ProjectiveLineMarkedSectionTransition
 public import FLT.Mazur.ProjectiveLineMarkedTransition
 public import FLT.Mazur.ProjectiveLineOpenChartExclusion
 public import FLT.Mazur.ProjectiveLinePointLoopMatching
+public import FLT.Mazur.ProjectiveLineProductChartTorusExt
 public import FLT.Mazur.ProjectiveLineProductCharts
 public import FLT.Mazur.ProjectiveLineProductOverlap
 public import FLT.Mazur.ProjectiveLineProductTorusExt
@@ -6376,6 +6386,7 @@ public import FLT.Mazur.ProjectiveLineTopology
 public import FLT.Mazur.ProjectiveLineTwistCoordinates
 public import FLT.Mazur.ProjectiveLineUniversalAction
 public import FLT.Mazur.ProjectiveLineUniversalLaurentEvaluation
+public import FLT.Mazur.ProjectiveLineUniversalLaurentProjections
 public import FLT.Mazur.ProjectiveLinearCoefficientChange
 public import FLT.Mazur.ProjectiveLinearIsomorphism
 public import FLT.Mazur.ProjectiveLinearOver
@@ -6769,6 +6780,7 @@ public import FLT.Mazur.ResidueCoordinateDenominators
 public import FLT.Mazur.ResidueFiberRegularLocalization
 public import FLT.Mazur.ResidueNonvanishingLocallySplit
 public import FLT.Mazur.ResidueNonvanishingOpenPullback
+public import FLT.Mazur.ResiduePolynomialLift
 public import FLT.Mazur.ResiduePullbackNonvanishingTransport
 public import FLT.Mazur.ResidueVectorRetraction
 public import FLT.Mazur.RetainedLineOriginalTwist
@@ -7264,6 +7276,8 @@ public import FLT.Mazur.SegreChartMaps
 public import FLT.Mazur.SegreChartQuotient
 public import FLT.Mazur.SegreClosedImmersion
 public import FLT.Mazur.SegreSchemeMorphism
+public import FLT.Mazur.SeparableAffineCoordinates
+public import FLT.Mazur.SeparableAffineOpenPoints
 public import FLT.Mazur.SeparatedFinitePresentationModel
 public import FLT.Mazur.SeparatedOpenCover
 public import FLT.Mazur.SeparatedOverlapClosedComparison
@@ -7305,6 +7319,7 @@ public import FLT.Mazur.SmoothCurvePureDimension
 public import FLT.Mazur.SmoothDimension
 public import FLT.Mazur.SmoothDimensionBound
 public import FLT.Mazur.SmoothEtaleResidueLift
+public import FLT.Mazur.SmoothEtaleSeparableLift
 public import FLT.Mazur.SmoothEtaleStalkLift
 public import FLT.Mazur.SmoothFieldCotangentRank
 public import FLT.Mazur.SmoothFiniteCoefficientBranch
@@ -8017,6 +8032,8 @@ public import FLT.Mazur.WeierstrassDividedGlobalZeroNodes
 public import FLT.Mazur.WeierstrassDividedGlobalZeroOverlap
 public import FLT.Mazur.WeierstrassDividedGlobalZeroSuccessive
 public import FLT.Mazur.WeierstrassDividedHorizontalCoefficientPointAction
+public import FLT.Mazur.WeierstrassDividedHorizontalCyclicInput
+public import FLT.Mazur.WeierstrassDividedHorizontalCyclicPair
 public import FLT.Mazur.WeierstrassDividedHorizontalFinitePointAction
 public import FLT.Mazur.WeierstrassDividedInfinityLaurentChart
 public import FLT.Mazur.WeierstrassDividedInfinityLaurentGluing
@@ -8148,6 +8165,7 @@ public import FLT.Mazur.WeierstrassDividedPositiveEqualityAtlasFullCompatibility
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityAtlasInitialReduction
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityAtlasRecovery
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityAtlasSeparation
+public import FLT.Mazur.WeierstrassDividedPositiveEqualityBoundaryComponentAction
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityBranchIndices
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityBranches
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityCartesian
@@ -9126,6 +9144,7 @@ public import FLT.Mazur.WeierstrassSmoothCoefficientProduct
 public import FLT.Mazur.WeierstrassSmoothConnected
 public import FLT.Mazur.WeierstrassSmoothCrossAffine
 public import FLT.Mazur.WeierstrassSmoothCrossPolynomial
+public import FLT.Mazur.WeierstrassSmoothCyclicParameterDensity
 public import FLT.Mazur.WeierstrassSmoothFactorAddition
 public import FLT.Mazur.WeierstrassSmoothFactorProduct
 public import FLT.Mazur.WeierstrassSmoothFaithfulCoefficientDescent
@@ -9148,6 +9167,8 @@ public import FLT.Mazur.WeierstrassSmoothHorizontalFactorGeometry
 public import FLT.Mazur.WeierstrassSmoothHorizontalFactorOrder
 public import FLT.Mazur.WeierstrassSmoothHorizontalGlobalAction
 public import FLT.Mazur.WeierstrassSmoothHorizontalLaurentEvaluation
+public import FLT.Mazur.WeierstrassSmoothHorizontalPairDensity
+public import FLT.Mazur.WeierstrassSmoothHorizontalPairExt
 public import FLT.Mazur.WeierstrassSmoothHorizontalProductResidue
 public import FLT.Mazur.WeierstrassSmoothHorizontalProductSource
 public import FLT.Mazur.WeierstrassSmoothHorizontalReciprocalCharacters
