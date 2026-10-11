@@ -5099,6 +5099,7 @@ public import FLT.Mazur.ModuleSectionCocycleEvaluation
 public import FLT.Mazur.ModuleSectionCocycleIso
 public import FLT.Mazur.ModuleSectionCocyclePullbackNormalization
 public import FLT.Mazur.ModuleSectionExactness
+public import FLT.Mazur.ModuleSectionInverseCoordinate
 public import FLT.Mazur.ModuleSectionIsomorphismTransport
 public import FLT.Mazur.ModuleSectionMap
 public import FLT.Mazur.ModuleSectionProjectiveChart
