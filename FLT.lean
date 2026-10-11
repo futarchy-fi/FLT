@@ -6908,6 +6908,7 @@ public import FLT.Mazur.StalkBaseNumeratorOpen
 public import FLT.Mazur.StalkBaseSectionLifting
 public import FLT.Mazur.StalkBaseSectionNumerator
 public import FLT.Mazur.StandardSmoothCoefficientFiber
+public import FLT.Mazur.StandardSmoothFieldCotangentRank
 public import FLT.Mazur.StandardSmoothFiniteFlatCartier
 public import FLT.Mazur.StandardSmoothFiniteSupportCartier
 public import FLT.Mazur.StandardSmoothLocalCartier
