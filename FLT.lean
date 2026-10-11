@@ -5655,6 +5655,7 @@ public import FLT.Mazur.PolygonMarkedSections
 public import FLT.Mazur.PolygonMarkingAffineNeighborhood
 public import FLT.Mazur.PolygonMultipleVeroneseIso
 public import FLT.Mazur.PolygonMultipleVeroneseProj
+public import FLT.Mazur.PolygonMultipleVeroneseStructuralMap
 public import FLT.Mazur.PolygonNodalCore
 public import FLT.Mazur.PolygonNodeAffineCharts
 public import FLT.Mazur.PolygonNodeBranchIntersection
