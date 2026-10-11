@@ -7920,6 +7920,7 @@ public import FLT.Mazur.WeierstrassDividedSuccessorExteriorAction
 public import FLT.Mazur.WeierstrassDividedSuccessorExteriorAtlas
 public import FLT.Mazur.WeierstrassDividedSuccessorInfinityAction
 public import FLT.Mazur.WeierstrassDividedSuccessorInfinityCenter
+public import FLT.Mazur.WeierstrassDividedSuccessorInfinityInputAction
 public import FLT.Mazur.WeierstrassDividedSuccessorOutputCover
 public import FLT.Mazur.WeierstrassDividedSuccessorRetainedAction
 public import FLT.Mazur.WeierstrassDividedSuccessorRetainedCenter
