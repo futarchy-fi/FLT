@@ -5030,6 +5030,7 @@ public import FLT.Mazur.ModuleSectionProjectiveTransition
 public import FLT.Mazur.ModuleSectionRatioBasicOpen
 public import FLT.Mazur.ModuleSectionRatioCoordinates
 public import FLT.Mazur.ModuleSectionRatioOpen
+public import FLT.Mazur.ModuleSectionRatioOpenIso
 public import FLT.Mazur.ModuleSectionRatioOpenPullback
 public import FLT.Mazur.ModuleSectionRatioPullback
 public import FLT.Mazur.ModuleSectionRatios
