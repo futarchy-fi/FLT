@@ -4870,6 +4870,7 @@ public import FLT.Mazur.LocalizedPointAlgebraKernel
 public import FLT.Mazur.LocalizedPolynomialDiagramCoefficients
 public import FLT.Mazur.LocalizedPolynomialStableRelations
 public import FLT.Mazur.LocalizedPolynomialStableStages
+public import FLT.Mazur.LocalizedPrimeCotangentRank
 public import FLT.Mazur.LocalizedSmoothFiniteFlatCartier
 public import FLT.Mazur.LocalizedSmoothLocalEquation
 public import FLT.Mazur.LocalizedStalkSmoothGenerization
