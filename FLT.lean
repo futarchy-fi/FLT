@@ -7971,6 +7971,7 @@ public import FLT.Mazur.WeierstrassGlobalAffineSwap
 public import FLT.Mazur.WeierstrassGlobalInfinitySwap
 public import FLT.Mazur.WeierstrassGlobalModificationActionCenter
 public import FLT.Mazur.WeierstrassGlobalModificationActionFlatExt
+public import FLT.Mazur.WeierstrassGlobalModificationActionIdentity
 public import FLT.Mazur.WeierstrassGlobalModificationActionOverlap
 public import FLT.Mazur.WeierstrassGlobalModificationActionPoints
 public import FLT.Mazur.WeierstrassGlobalModificationContractionFlatExt
