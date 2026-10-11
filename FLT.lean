@@ -5382,6 +5382,7 @@ public import FLT.Mazur.OrderedRelativeIdealFamily
 public import FLT.Mazur.OrderedTranslationAffineParameterCover
 public import FLT.Mazur.OrderedTranslationLocallyRingedMap
 public import FLT.Mazur.OrderedTranslationOriginalFiber
+public import FLT.Mazur.OrderedTranslationQuotientCover
 public import FLT.Mazur.OriginalFamilyIdentityComparison
 public import FLT.Mazur.OriginalFamilySectionComposition
 public import FLT.Mazur.OriginalFamilySquareComposition
@@ -7030,6 +7031,7 @@ public import FLT.Mazur.SchemeRelativeNilpotentSections
 public import FLT.Mazur.SchemeSectionFamilyProduct
 public import FLT.Mazur.SchemeSectionFrameCompatibility
 public import FLT.Mazur.SchemeSectionFrameNormalization
+public import FLT.Mazur.SchemeSectionTransportNaturality
 public import FLT.Mazur.SchemeSourceTestOverlapRecognition
 public import FLT.Mazur.SchemeTripleOverlap
 public import FLT.Mazur.SchemeUnchangedOpen
@@ -7221,11 +7223,18 @@ public import FLT.Mazur.SmoothTranslationChartOrbitFibers
 public import FLT.Mazur.SmoothTranslationChartOrbitHomeomorph
 public import FLT.Mazur.SmoothTranslationGeometricClass
 public import FLT.Mazur.SmoothTranslationInvariantOpenDomains
+public import FLT.Mazur.SmoothTranslationInvariantOpenFunctor
 public import FLT.Mazur.SmoothTranslationInvariantSectionComparison
+public import FLT.Mazur.SmoothTranslationInvariantSheafComparison
+public import FLT.Mazur.SmoothTranslationLocallyRingedComparison
+public import FLT.Mazur.SmoothTranslationNeighborhoodDomains
 public import FLT.Mazur.SmoothTranslationOrbitCover
 public import FLT.Mazur.SmoothTranslationOrbitOpen
 public import FLT.Mazur.SmoothTranslationOriginalInvariantDescent
+public import FLT.Mazur.SmoothTranslationQuotientOpenImmersion
 public import FLT.Mazur.SmoothTranslationRestrictedRelationCover
+public import FLT.Mazur.SmoothTranslationSectionNaturality
+public import FLT.Mazur.SmoothTranslationSectionRestriction
 public import FLT.Mazur.SpecCartesianAlgebraPushout
 public import FLT.Mazur.SpecChartIdealPreimage
 public import FLT.Mazur.SpectrumFieldCohomologyCoordinates
