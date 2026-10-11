@@ -4845,6 +4845,7 @@ public import FLT.Mazur.LocalizedIntegerComparisonTransport
 public import FLT.Mazur.LocalizedIntegerModelIsomorphism
 public import FLT.Mazur.LocalizedKernelComparison
 public import FLT.Mazur.LocalizedKernelPathCompatibility
+public import FLT.Mazur.LocalizedOriginalSmoothCriterion
 public import FLT.Mazur.LocalizedPointAlgebraKernel
 public import FLT.Mazur.LocalizedPolynomialDiagramCoefficients
 public import FLT.Mazur.LocalizedPolynomialStableRelations
