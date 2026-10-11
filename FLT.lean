@@ -6782,6 +6782,7 @@ public import FLT.Mazur.SchemeDescentPairTransport
 public import FLT.Mazur.SchemeDescentTransportSquares
 public import FLT.Mazur.SchemeDescentTransportTest
 public import FLT.Mazur.SchemeDisjointBaseChange
+public import FLT.Mazur.SchemeEffectiveEpiSections
 public import FLT.Mazur.SchemeFamilyTripleOverlap
 public import FLT.Mazur.SchemeFiniteGroupAffineDescent
 public import FLT.Mazur.SchemeFiniteGroupDescent
@@ -7224,6 +7225,7 @@ public import FLT.Mazur.TildeInvertibleLocal
 public import FLT.Mazur.TildePrincipalOpen
 public import FLT.Mazur.TildeSourceSectionComparison
 public import FLT.Mazur.TorusChartScalars
+public import FLT.Mazur.TranslatedHilbertChartFunctions
 public import FLT.Mazur.TranslatedHilbertChartOverlap
 public import FLT.Mazur.TranslatedHilbertCoverageCriterion
 public import FLT.Mazur.TranslatedHilbertGluedBase
@@ -7235,10 +7237,17 @@ public import FLT.Mazur.TranslatedHilbertGluedOpen
 public import FLT.Mazur.TranslatedHilbertGluedPicard
 public import FLT.Mazur.TranslatedHilbertGluing
 public import FLT.Mazur.TranslatedHilbertLocalCoverage
+public import FLT.Mazur.TranslatedHilbertOpenBaseChange
+public import FLT.Mazur.TranslatedHilbertOpenFunctions
+public import FLT.Mazur.TranslatedHilbertOrbitFibers
+public import FLT.Mazur.TranslatedHilbertOrbitHomeomorph
+public import FLT.Mazur.TranslatedHilbertOrbitOpen
 public import FLT.Mazur.TranslatedHilbertOverlapIdentities
 public import FLT.Mazur.TranslatedHilbertPicardChart
+public import FLT.Mazur.TranslatedHilbertRestrictedRelation
 public import FLT.Mazur.TranslatedHilbertSchemeCocycle
 public import FLT.Mazur.TranslatedHilbertSchemeTriple
+public import FLT.Mazur.TranslatedHilbertSourceIntersection
 public import FLT.Mazur.TranslatedHilbertTestUnion
 public import FLT.Mazur.TranslatedHilbertTestUnionBaseChange
 public import FLT.Mazur.TranslatedHilbertTestUnionLift
