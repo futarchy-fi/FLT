@@ -8016,6 +8016,7 @@ public import FLT.Mazur.WeierstrassLeftSmoothMixedAddition
 public import FLT.Mazur.WeierstrassLeftSmoothProductOpen
 public import FLT.Mazur.WeierstrassLeftSmoothTransportedComparison
 public import FLT.Mazur.WeierstrassLeftSmoothTransportedCover
+public import FLT.Mazur.WeierstrassLeftSmoothYAddition
 public import FLT.Mazur.WeierstrassLineCubicFactorization
 public import FLT.Mazur.WeierstrassLocalAdditionCurveComparison
 public import FLT.Mazur.WeierstrassLowPoleCoordinates
