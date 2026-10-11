@@ -7085,6 +7085,7 @@ public import FLT.Mazur.UniversalDivisorCohomologyCharts
 public import FLT.Mazur.UniversalDivisorDirectImageRepresentation
 public import FLT.Mazur.UniversalDivisorGlobalCohomology
 public import FLT.Mazur.UniversalDivisorTwistedLine
+public import FLT.Mazur.UniversalPointCondition
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryActualNormalizationIso
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryAffineSections
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryArithmeticAction
