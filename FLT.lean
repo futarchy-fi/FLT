@@ -7024,6 +7024,7 @@ public import FLT.Mazur.SmoothNonspecialDivisorCover
 public import FLT.Mazur.SmoothNonspecialDivisorLift
 public import FLT.Mazur.SmoothNonspecialLineLift
 public import FLT.Mazur.SmoothOpenSectionCartier
+public import FLT.Mazur.SmoothOrderedHilbertCharts
 public import FLT.Mazur.SmoothOrderedLineParameters
 public import FLT.Mazur.SmoothOrderedTranslationTests
 public import FLT.Mazur.SmoothOriginalFiberLineParameters
