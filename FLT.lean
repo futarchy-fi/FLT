@@ -8040,6 +8040,7 @@ public import FLT.Mazur.WeierstrassLeftSmoothIdentity
 public import FLT.Mazur.WeierstrassLeftSmoothInfinityIdentity
 public import FLT.Mazur.WeierstrassLeftSmoothInputAddition
 public import FLT.Mazur.WeierstrassLeftSmoothInputCompatibility
+public import FLT.Mazur.WeierstrassLeftSmoothInputOutputRegular
 public import FLT.Mazur.WeierstrassLeftSmoothInputRestrictions
 public import FLT.Mazur.WeierstrassLeftSmoothLocalOutputRegular
 public import FLT.Mazur.WeierstrassLeftSmoothMixedAddition
