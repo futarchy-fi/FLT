@@ -4035,6 +4035,7 @@ public import FLT.Mazur.FiniteTypePrincipalPresentation
 public import FLT.Mazur.FiniteTypePrincipalSurjectiveLifts
 public import FLT.Mazur.FiniteTypeRelationPresentation
 public import FLT.Mazur.FiniteTypeTestAcyclicDirectImage
+public import FLT.Mazur.FiniteTypeTestLineDivisor
 public import FLT.Mazur.FiniteTypeTestSectionCartier
 public import FLT.Mazur.FiniteUnramifiedConstantFiber
 public import FLT.Mazur.FiniteUnramifiedFieldLength
