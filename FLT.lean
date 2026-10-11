@@ -2494,6 +2494,7 @@ public import FLT.Mazur.AcyclicLineSectionBaseChange
 public import FLT.Mazur.AcyclicPointedAbelBaseChange
 public import FLT.Mazur.AcyclicPointedAbelEquivalence
 public import FLT.Mazur.AcyclicPointedAbelInverseNaturality
+public import FLT.Mazur.AcyclicPointedAbelPullbackLaws
 public import FLT.Mazur.AcyclicPushforwardCohomology
 public import FLT.Mazur.AcyclicRankOneBaseChange
 public import FLT.Mazur.AcyclicRankOneLineCondition
