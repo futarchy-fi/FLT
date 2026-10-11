@@ -3194,10 +3194,13 @@ public import FLT.Mazur.CocycleGlobalSectionLimitDescent
 public import FLT.Mazur.CocycleSectionOpenComparison
 public import FLT.Mazur.CocycleSectionOpenRecovery
 public import FLT.Mazur.CocycleSheafLimitDescent
+public import FLT.Mazur.CoefficientAcyclicClassDivisor
+public import FLT.Mazur.CoefficientAcyclicLineDivisor
 public import FLT.Mazur.CoefficientCartesianHomDescent
 public import FLT.Mazur.CoefficientCartesianProperty
 public import FLT.Mazur.CoefficientConnectedNeighborhood
 public import FLT.Mazur.CoefficientImmersionClosedDescent
+public import FLT.Mazur.CoefficientIndependentLineDescent
 public import FLT.Mazur.CoefficientInverseEquations
 public import FLT.Mazur.CoefficientIsomorphismDescent
 public import FLT.Mazur.CoefficientModelFiniteness
@@ -4026,8 +4029,12 @@ public import FLT.Mazur.FiniteSurjectiveAmpleDescent
 public import FLT.Mazur.FiniteSurjectiveCoherentWitness
 public import FLT.Mazur.FiniteTensorIntegerClosedImmersion
 public import FLT.Mazur.FiniteTypeAffineApproximation
+public import FLT.Mazur.FiniteTypeAffineIndependentLineModel
 public import FLT.Mazur.FiniteTypeApproximationDiamonds
 public import FLT.Mazur.FiniteTypeApproximationMaps
+public import FLT.Mazur.FiniteTypeBaseAcyclicClassDivisor
+public import FLT.Mazur.FiniteTypeBaseClassDivisorNaturality
+public import FLT.Mazur.FiniteTypeBaseIndependentLineModel
 public import FLT.Mazur.FiniteTypeDiagramRefinement
 public import FLT.Mazur.FiniteTypeDiagramStages
 public import FLT.Mazur.FiniteTypePolynomialArrows
@@ -4040,6 +4047,12 @@ public import FLT.Mazur.FiniteTypePrincipalMaps
 public import FLT.Mazur.FiniteTypePrincipalPresentation
 public import FLT.Mazur.FiniteTypePrincipalSurjectiveLifts
 public import FLT.Mazur.FiniteTypeRelationPresentation
+public import FLT.Mazur.FiniteTypeTestAbelEquivalence
+public import FLT.Mazur.FiniteTypeTestAcyclicDirectImage
+public import FLT.Mazur.FiniteTypeTestClassDivisor
+public import FLT.Mazur.FiniteTypeTestClassDivisorNaturality
+public import FLT.Mazur.FiniteTypeTestLineDivisor
+public import FLT.Mazur.FiniteTypeTestSectionCartier
 public import FLT.Mazur.FiniteUnramifiedConstantFiber
 public import FLT.Mazur.FiniteUnramifiedFieldLength
 public import FLT.Mazur.FinitelyPresentedImmersedProperCover
@@ -4686,6 +4699,7 @@ public import FLT.Mazur.LineSheafDualTriangle
 public import FLT.Mazur.LineSheafEndomorphismSheaf
 public import FLT.Mazur.LineSheafEvaluationBalance
 public import FLT.Mazur.LineSheafGlobalEndomorphisms
+public import FLT.Mazur.LineSheafLimitDescent
 public import FLT.Mazur.LineSheafLocalEndomorphisms
 public import FLT.Mazur.LineSheafScalarAutomorphisms
 public import FLT.Mazur.LineSheafSectionRigidity
@@ -6050,6 +6064,7 @@ public import FLT.Mazur.ProperSmoothAffineFunctions
 public import FLT.Mazur.ProperSmoothConnectedFiberOpen
 public import FLT.Mazur.ProperSmoothGenericFiberOpen
 public import FLT.Mazur.ProperSmoothLineRigidity
+public import FLT.Mazur.ProperSmoothLineSheafDescent
 public import FLT.Mazur.ProperSmoothPointedLineSheafDescent
 public import FLT.Mazur.ProperSmoothStructureSheaf
 public import FLT.Mazur.ProperSplitDirectImageSections
@@ -6684,6 +6699,7 @@ public import FLT.Mazur.SheafPullbackSectionSquare
 public import FLT.Mazur.SheafPullbackTestReconstruction
 public import FLT.Mazur.ShortComplexSumHomologyInclusion
 public import FLT.Mazur.SmoothAffineCoefficientModels
+public import FLT.Mazur.SmoothAffineLineNoetherianModel
 public import FLT.Mazur.SmoothAlgebraReduced
 public import FLT.Mazur.SmoothCurveDimension
 public import FLT.Mazur.SmoothCurveFiberCartier
@@ -6694,6 +6710,7 @@ public import FLT.Mazur.SmoothFiniteCoefficientBranch
 public import FLT.Mazur.SmoothFiniteFlatIdealCharts
 public import FLT.Mazur.SmoothFiniteSubgroupAmple
 public import FLT.Mazur.SmoothFiniteSubschemeCartier
+public import FLT.Mazur.SmoothGeometricAcyclicRankOne
 public import FLT.Mazur.SmoothGeometricallyReduced
 public import FLT.Mazur.SmoothOpenSectionCartier
 public import FLT.Mazur.SmoothQuasiFiniteCartierCriterion
