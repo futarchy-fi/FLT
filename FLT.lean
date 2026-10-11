@@ -7561,6 +7561,7 @@ public import FLT.Mazur.WeierstrassDividedFiniteTensorIntersection
 public import FLT.Mazur.WeierstrassDividedFiniteTensorOverlap
 public import FLT.Mazur.WeierstrassDividedFiniteYBoundary
 public import FLT.Mazur.WeierstrassDividedFiniteYStep
+public import FLT.Mazur.WeierstrassDividedFirstActionAtlas
 public import FLT.Mazur.WeierstrassDividedFirstActionInput
 public import FLT.Mazur.WeierstrassDividedFirstFractionAction
 public import FLT.Mazur.WeierstrassDividedFirstFractionAlgebra
