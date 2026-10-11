@@ -2598,6 +2598,7 @@ public import FLT.Mazur.AffineAdicCohomologyImage
 public import FLT.Mazur.AffineAdicFormalComparison
 public import FLT.Mazur.AffineAlgebraDescentCoaction
 public import FLT.Mazur.AffineAlgebraDescentInvariantNeighborhoods
+public import FLT.Mazur.AffineAlgebraDescentInvariantOpenQuotient
 public import FLT.Mazur.AffineAlgebraDescentInvariantOpenScheme
 public import FLT.Mazur.AffineAlgebraDescentInvariantQuotient
 public import FLT.Mazur.AffineAlgebraDescentKernelPair
