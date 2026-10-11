@@ -4294,6 +4294,7 @@ public import FLT.Mazur.GradedDegreeProjInverseCharts
 public import FLT.Mazur.GradedDegreeProjIso
 public import FLT.Mazur.GradedDegreeProjMap
 public import FLT.Mazur.GradedDegreeProjOverlap
+public import FLT.Mazur.GradedDegreeProjStructuralMap
 public import FLT.Mazur.GradedLocalizationDegreeMap
 public import FLT.Mazur.GradedLocalizationDegreeRestriction
 public import FLT.Mazur.GradedProjArbitraryBaseChange
