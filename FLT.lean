@@ -6543,6 +6543,7 @@ public import FLT.Mazur.RegularCenterGluedLift
 public import FLT.Mazur.RegularCenterOverlap
 public import FLT.Mazur.RegularCenterOverlapScheme
 public import FLT.Mazur.RegularCenterRatioCover
+public import FLT.Mazur.RegularCenterResidueConormal
 public import FLT.Mazur.RegularCenterRestriction
 public import FLT.Mazur.RegularCenterSeparatedLiftExt
 public import FLT.Mazur.RegularParameterIdeals
