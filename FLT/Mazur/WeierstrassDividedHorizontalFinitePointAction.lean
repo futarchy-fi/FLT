@@ -97,11 +97,11 @@ theorem finiteHorizontalFirstTensorAction_point (j' : ℕ) (hj' : j' ≤ n) :
         (smoothHorizontalFirstTensorAction D d hstart hk hπ).toRingHom) ≫
         globalInitialTensorChart hπ data K j' hj' ≫
           pullback.snd q (finiteGlobalStructure hπ data j' hj') := by
-  rw [globalInitialTensorChart_projection, ← Category.assoc]
+  rw [globalInitialTensorChart_integralProjection, ← Category.assoc]
   apply globalInitialChart_pointAction_propagate hπ data _ _ _
     (initialHorizontalEquationInput_structure hπ data D (e₁).toRingHom)
   have h := initialHorizontalFirstTensorAction_point hπ data D hstart hk
-  rw [globalInitialTensorChart_projection] at h
+  rw [globalInitialTensorChart_integralProjection] at h
   simpa only [initialHorizontalEquationInput_initial, Category.assoc] using h.symm
 
 /-- The second concrete tensor action is the actual action at every finite stage. -/
@@ -116,11 +116,11 @@ theorem finiteHorizontalSecondTensorAction_point (j' : ℕ) (hj' : j' ≤ n) :
         (smoothHorizontalSecondTensorAction D d hstart hk hπ).toRingHom) ≫
         globalInitialTensorChart hπ data K j' hj' ≫
           pullback.snd q (finiteGlobalStructure hπ data j' hj') := by
-  rw [globalInitialTensorChart_projection, ← Category.assoc]
+  rw [globalInitialTensorChart_integralProjection, ← Category.assoc]
   apply globalInitialChart_pointAction_propagate hπ data _ _ _
     (initialHorizontalEquationInput_structure hπ data D (e₂).toRingHom)
   have h := initialHorizontalSecondTensorAction_point hπ data D hstart hk
-  rw [globalInitialTensorChart_projection] at h
+  rw [globalInitialTensorChart_integralProjection] at h
   simpa only [initialHorizontalEquationInput_initial, Category.assoc] using h.symm
 
 end FLT.Mazur.WeierstrassDividedDepth

@@ -66,7 +66,7 @@ theorem globalInitialChart_step_isPullback (j : ℕ) (hj : j + 1 ≤ n) :
   simpa only [Category.id_comp] using (globalInitialChart_step_isPullback hπ data j hj).w.symm
 
 /-- Every coefficient tensor chart projects to exactly this original integral chart. -/
-@[reassoc] theorem globalInitialTensorChart_projection
+@[reassoc] theorem globalInitialTensorChart_integralProjection
     (S : Type u) [CommRing S] [Algebra R S] (j : ℕ) (hj : j ≤ n) :
     globalInitialTensorChart hπ data S j hj ≫
       pullback.snd (Spec.map (CommRingCat.ofHom (algebraMap R S)))
