@@ -6030,6 +6030,7 @@ public import FLT.Mazur.PolynomialCoefficientArrow
 public import FLT.Mazur.PolynomialCoefficientCartesian
 public import FLT.Mazur.PolynomialEndpointInterpolation
 public import FLT.Mazur.PolynomialFlatQuotientPresentation
+public import FLT.Mazur.PolynomialGeometricRationalPoints
 public import FLT.Mazur.PolynomialRelationIntegerModel
 public import FLT.Mazur.PolynomialRelativeAffineChart
 public import FLT.Mazur.PolynomialRelativeAffineCover
