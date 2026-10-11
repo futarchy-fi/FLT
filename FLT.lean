@@ -7961,6 +7961,7 @@ public import FLT.Mazur.WeierstrassDividedInitialGlobalResidueNodes
 public import FLT.Mazur.WeierstrassDividedInitialGlobalSections
 public import FLT.Mazur.WeierstrassDividedInitialGlobalTensorChart
 public import FLT.Mazur.WeierstrassDividedInitialHorizontalActionBoundary
+public import FLT.Mazur.WeierstrassDividedInitialHorizontalActionGeometry
 public import FLT.Mazur.WeierstrassDividedInitialHorizontalLineAction
 public import FLT.Mazur.WeierstrassDividedInitialIncidenceInfinity
 public import FLT.Mazur.WeierstrassDividedInitialIncidenceLine
