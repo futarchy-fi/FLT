@@ -7431,6 +7431,7 @@ public import FLT.Mazur.WeierstrassDividedGlobalConicIntersection
 public import FLT.Mazur.WeierstrassDividedGlobalFiniteFlat
 public import FLT.Mazur.WeierstrassDividedGlobalFiniteGluing
 public import FLT.Mazur.WeierstrassDividedGlobalFiniteProper
+public import FLT.Mazur.WeierstrassDividedGlobalFiniteSmoothAction
 public import FLT.Mazur.WeierstrassDividedGlobalFiniteSmoothEmbedding
 public import FLT.Mazur.WeierstrassDividedGlobalFiniteSmoothOpen
 public import FLT.Mazur.WeierstrassDividedGlobalFiniteStep
