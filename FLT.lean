@@ -8603,7 +8603,9 @@ public import FLT.Mazur.WeierstrassLeftSmoothFractionActionGluing
 public import FLT.Mazur.WeierstrassLeftSmoothFractionActionRatios
 public import FLT.Mazur.WeierstrassLeftSmoothGlobalCenter
 public import FLT.Mazur.WeierstrassLeftSmoothHorizontalActionPresentation
+public import FLT.Mazur.WeierstrassLeftSmoothHorizontalBranchAction
 public import FLT.Mazur.WeierstrassLeftSmoothHorizontalResidueAction
+public import FLT.Mazur.WeierstrassLeftSmoothHorizontalResidueFactor
 public import FLT.Mazur.WeierstrassLeftSmoothIdentity
 public import FLT.Mazur.WeierstrassLeftSmoothInfinityIdentity
 public import FLT.Mazur.WeierstrassLeftSmoothInputAddition
@@ -8857,6 +8859,7 @@ public import FLT.Mazur.WeierstrassOrdinaryDomainLift
 public import FLT.Mazur.WeierstrassOrdinaryFieldAddition
 public import FLT.Mazur.WeierstrassOrdinaryGlobalDomains
 public import FLT.Mazur.WeierstrassOrdinaryNegationEmpty
+public import FLT.Mazur.WeierstrassOrdinaryPairPresentation
 public import FLT.Mazur.WeierstrassOrdinaryPointComparison
 public import FLT.Mazur.WeierstrassOrdinarySchemeLift
 public import FLT.Mazur.WeierstrassOrdinarySingularCenter
@@ -8974,7 +8977,11 @@ public import FLT.Mazur.WeierstrassRelativeSmoothOpen
 public import FLT.Mazur.WeierstrassRetainedRegularCenter
 public import FLT.Mazur.WeierstrassSameOutputIntersections
 public import FLT.Mazur.WeierstrassScaledChartComparison
+public import FLT.Mazur.WeierstrassSecantHorizontalInput
+public import FLT.Mazur.WeierstrassSecantHorizontalResidueFactor
 public import FLT.Mazur.WeierstrassSecantMorphismExt
+public import FLT.Mazur.WeierstrassSecantPairRefinement
+public import FLT.Mazur.WeierstrassSecantSmoothPresentation
 public import FLT.Mazur.WeierstrassSingularJetObstruction
 public import FLT.Mazur.WeierstrassSingularJetTranslation
 public import FLT.Mazur.WeierstrassSlopeLaurentGeometry
@@ -9071,9 +9078,11 @@ public import FLT.Mazur.WeierstrassSplitDepthConormal
 public import FLT.Mazur.WeierstrassSplitDepthExceptionalBranches
 public import FLT.Mazur.WeierstrassSplitDepthExceptionalCharacters
 public import FLT.Mazur.WeierstrassSplitDepthExceptionalScaling
+public import FLT.Mazur.WeierstrassSplitDepthHorizontalOutputUnit
 public import FLT.Mazur.WeierstrassSplitDepthNormalizedFractionAction
 public import FLT.Mazur.WeierstrassSplitDepthOriginalFractionAction
 public import FLT.Mazur.WeierstrassSplitDepthResidueEquation
+public import FLT.Mazur.WeierstrassSplitDepthSecantResidue
 public import FLT.Mazur.WeierstrassSplitNodalAffineParameters
 public import FLT.Mazur.WeierstrassSplitNodalChart
 public import FLT.Mazur.WeierstrassSplitNodalChartGroup
