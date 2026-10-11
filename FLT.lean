@@ -7303,6 +7303,7 @@ public import FLT.Mazur.WeierstrassDividedZeroEqualityCycleIndices
 public import FLT.Mazur.WeierstrassDividedZeroEqualityCycleLineBranches
 public import FLT.Mazur.WeierstrassDividedZeroEqualityCycleRanges
 public import FLT.Mazur.WeierstrassDividedZeroEqualityEarlierExt
+public import FLT.Mazur.WeierstrassDividedZeroEqualityExteriorMaps
 public import FLT.Mazur.WeierstrassDividedZeroEqualityHomExt
 public import FLT.Mazur.WeierstrassDividedZeroEqualityIndexedExt
 public import FLT.Mazur.WeierstrassDividedZeroEqualityInteriorIndexedDesc
