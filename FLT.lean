@@ -4952,6 +4952,8 @@ public import FLT.Mazur.LocallyFramedSplitLineRestriction
 public import FLT.Mazur.LocallyFreeDualProjectiveAtlas
 public import FLT.Mazur.LocallyFreeProjectiveQuotient
 public import FLT.Mazur.LocallyNoetherianUniversalStructureSheaf
+public import FLT.Mazur.LocallyRingedOpenImage
+public import FLT.Mazur.LocallyRingedSchemeChartUnion
 public import FLT.Mazur.LocallySmoothFiniteFlatCartier
 public import FLT.Mazur.LocallySmoothQuasiFiniteCartier
 public import FLT.Mazur.LocallySplitInclusionPullback
@@ -7260,6 +7262,9 @@ public import FLT.Mazur.TildeInvertibleLocal
 public import FLT.Mazur.TildePrincipalOpen
 public import FLT.Mazur.TildeSourceSectionComparison
 public import FLT.Mazur.TorusChartScalars
+public import FLT.Mazur.TranslatedHilbertAffineImmersion
+public import FLT.Mazur.TranslatedHilbertAffineRestriction
+public import FLT.Mazur.TranslatedHilbertCanonicalAffineChart
 public import FLT.Mazur.TranslatedHilbertChartFunctions
 public import FLT.Mazur.TranslatedHilbertChartOverlap
 public import FLT.Mazur.TranslatedHilbertChartSourceSections
@@ -7286,6 +7291,8 @@ public import FLT.Mazur.TranslatedHilbertPicardChart
 public import FLT.Mazur.TranslatedHilbertRelationOpenSections
 public import FLT.Mazur.TranslatedHilbertRestrictedRelation
 public import FLT.Mazur.TranslatedHilbertSchemeCocycle
+public import FLT.Mazur.TranslatedHilbertSchemeLocus
+public import FLT.Mazur.TranslatedHilbertSchemeLocusAffineCover
 public import FLT.Mazur.TranslatedHilbertSchemeTriple
 public import FLT.Mazur.TranslatedHilbertSourceIntersection
 public import FLT.Mazur.TranslatedHilbertTestUnion
@@ -7729,9 +7736,12 @@ public import FLT.Mazur.WeierstrassDividedFirstOutputCover
 public import FLT.Mazur.WeierstrassDividedFirstSuccessorAction
 public import FLT.Mazur.WeierstrassDividedFirstUnitAction
 public import FLT.Mazur.WeierstrassDividedFullResidueAtlas
+public import FLT.Mazur.WeierstrassDividedGlobalActionAssociativity
 public import FLT.Mazur.WeierstrassDividedGlobalActionConstruction
 public import FLT.Mazur.WeierstrassDividedGlobalActionIdentity
 public import FLT.Mazur.WeierstrassDividedGlobalActionInverse
+public import FLT.Mazur.WeierstrassDividedGlobalActionSmooth
+public import FLT.Mazur.WeierstrassDividedGlobalCoefficientAction
 public import FLT.Mazur.WeierstrassDividedGlobalConicCoordinates
 public import FLT.Mazur.WeierstrassDividedGlobalConicIntersection
 public import FLT.Mazur.WeierstrassDividedGlobalFiniteActionProduct
@@ -7749,7 +7759,12 @@ public import FLT.Mazur.WeierstrassDividedGlobalInitialAction
 public import FLT.Mazur.WeierstrassDividedGlobalInitialActionGeometry
 public import FLT.Mazur.WeierstrassDividedGlobalInitialActionLaws
 public import FLT.Mazur.WeierstrassDividedGlobalInitialComparison
+public import FLT.Mazur.WeierstrassDividedGlobalOriginalSmoothPoints
+public import FLT.Mazur.WeierstrassDividedGlobalOverPointAction
 public import FLT.Mazur.WeierstrassDividedGlobalPointAction
+public import FLT.Mazur.WeierstrassDividedGlobalPointActionStep
+public import FLT.Mazur.WeierstrassDividedGlobalPointSubgroups
+public import FLT.Mazur.WeierstrassDividedGlobalProjectivePointAction
 public import FLT.Mazur.WeierstrassDividedGlobalRegularLift
 public import FLT.Mazur.WeierstrassDividedGlobalResidueNodes
 public import FLT.Mazur.WeierstrassDividedGlobalResidueOverlap
@@ -7764,6 +7779,7 @@ public import FLT.Mazur.WeierstrassDividedGlobalTensorEmbedding
 public import FLT.Mazur.WeierstrassDividedGlobalTensorGluing
 public import FLT.Mazur.WeierstrassDividedGlobalTensorInfinity
 public import FLT.Mazur.WeierstrassDividedGlobalTensorIntersection
+public import FLT.Mazur.WeierstrassDividedGlobalTranslationGraph
 public import FLT.Mazur.WeierstrassDividedGlobalZeroComponents
 public import FLT.Mazur.WeierstrassDividedGlobalZeroConicIntersection
 public import FLT.Mazur.WeierstrassDividedGlobalZeroIntersection
