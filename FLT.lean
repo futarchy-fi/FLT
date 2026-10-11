@@ -6641,6 +6641,7 @@ public import FLT.Mazur.SchemeAffineCrossSectionPostcomposition
 public import FLT.Mazur.SchemeAffineCrossSectionReconstruction
 public import FLT.Mazur.SchemeAffineDescentChart
 public import FLT.Mazur.SchemeAffineExplicitCommonSectionMaps
+public import FLT.Mazur.SchemeAffineFlatLiftGluing
 public import FLT.Mazur.SchemeAffineFlatRefinement
 public import FLT.Mazur.SchemeAffineFlatRefinementThrough
 public import FLT.Mazur.SchemeAffineFppfChart
@@ -7608,10 +7609,19 @@ public import FLT.Mazur.WeierstrassDividedFiniteYBoundary
 public import FLT.Mazur.WeierstrassDividedFiniteYStep
 public import FLT.Mazur.WeierstrassDividedFirstActionAtlas
 public import FLT.Mazur.WeierstrassDividedFirstActionInput
+public import FLT.Mazur.WeierstrassDividedFirstAtlasFractionAction
 public import FLT.Mazur.WeierstrassDividedFirstFractionAction
 public import FLT.Mazur.WeierstrassDividedFirstFractionAlgebra
+public import FLT.Mazur.WeierstrassDividedFirstFractionCenter
+public import FLT.Mazur.WeierstrassDividedFirstFractionComparison
 public import FLT.Mazur.WeierstrassDividedFirstFractionCoordinates
 public import FLT.Mazur.WeierstrassDividedFirstFractionDomain
+public import FLT.Mazur.WeierstrassDividedFirstFractionFlatGluing
+public import FLT.Mazur.WeierstrassDividedFirstFractionGluing
+public import FLT.Mazur.WeierstrassDividedFirstFractionOpen
+public import FLT.Mazur.WeierstrassDividedFirstFractionOverlap
+public import FLT.Mazur.WeierstrassDividedFirstFractionUnique
+public import FLT.Mazur.WeierstrassDividedFirstInfinityAction
 public import FLT.Mazur.WeierstrassDividedFullResidueAtlas
 public import FLT.Mazur.WeierstrassDividedGlobalConicCoordinates
 public import FLT.Mazur.WeierstrassDividedGlobalConicIntersection
