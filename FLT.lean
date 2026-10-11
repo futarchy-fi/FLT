@@ -2662,6 +2662,7 @@ public import FLT.Mazur.AffineEffectiveRefinementNaturality
 public import FLT.Mazur.AffineEffectiveSecondReconstruction
 public import FLT.Mazur.AffineEffectiveSuccessiveReconstruction
 public import FLT.Mazur.AffineFaithfullyFlatEpimorphisms
+public import FLT.Mazur.AffineFaithfullyFlatMonomorphisms
 public import FLT.Mazur.AffineFaithfullyFlatPullbackFaithful
 public import FLT.Mazur.AffineFiberProductCocycle
 public import FLT.Mazur.AffineFiberProductCocycleChart
@@ -3129,9 +3130,15 @@ public import FLT.Mazur.CartierDivisorMultiplicity
 public import FLT.Mazur.CartierFiberNeighborhood
 public import FLT.Mazur.CartierFlatNeighborhoodDescent
 public import FLT.Mazur.CartierFppfDescent
+public import FLT.Mazur.CartierIdealCoproduct
 public import FLT.Mazur.CartierIdealDescentDatum
 public import FLT.Mazur.CartierIdealFinitePresentation
+public import FLT.Mazur.CartierIdealFppfEffectiveDescent
+public import FLT.Mazur.CartierIdealFppfFamilyDescent
 public import FLT.Mazur.CartierIdealFppfLineGluing
+public import FLT.Mazur.CartierIdealGluedInclusion
+public import FLT.Mazur.CartierIdealGluedMonicity
+public import FLT.Mazur.CartierIdealInclusionDescentMap
 public import FLT.Mazur.CartierIdealOverlap
 public import FLT.Mazur.CartierIdealPullbackComparison
 public import FLT.Mazur.CartierIdealStalkDescent
