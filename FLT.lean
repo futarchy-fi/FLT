@@ -7163,6 +7163,8 @@ public import FLT.Mazur.WeierstrassDividedDepthYBoundary
 public import FLT.Mazur.WeierstrassDividedEqualityComponentEndpoints
 public import FLT.Mazur.WeierstrassDividedEqualityCycleTerminalDescent
 public import FLT.Mazur.WeierstrassDividedEqualityFullNodeDescent
+public import FLT.Mazur.WeierstrassDividedEqualityInitialEndpoints
+public import FLT.Mazur.WeierstrassDividedEqualityInitialExterior
 public import FLT.Mazur.WeierstrassDividedEqualityNodeFamily
 public import FLT.Mazur.WeierstrassDividedEqualityNodesDistinct
 public import FLT.Mazur.WeierstrassDividedEqualityTerminalNodeDescent
@@ -7190,6 +7192,7 @@ public import FLT.Mazur.WeierstrassDividedFinalChainCoverage
 public import FLT.Mazur.WeierstrassDividedFinalChainPairIntersections
 public import FLT.Mazur.WeierstrassDividedFinalExteriorChartSeparation
 public import FLT.Mazur.WeierstrassDividedFinalInitialComponents
+public import FLT.Mazur.WeierstrassDividedFinalInitialCoverage
 public import FLT.Mazur.WeierstrassDividedFinalInitialNodesDistinct
 public import FLT.Mazur.WeierstrassDividedFinalNodeAdjacent
 public import FLT.Mazur.WeierstrassDividedFinalNodeChart
@@ -7264,6 +7267,8 @@ public import FLT.Mazur.WeierstrassDividedInfinityLaurentChart
 public import FLT.Mazur.WeierstrassDividedInfinityLaurentGluing
 public import FLT.Mazur.WeierstrassDividedInitialAtlasIndex
 public import FLT.Mazur.WeierstrassDividedInitialBoundaryGeometry
+public import FLT.Mazur.WeierstrassDividedInitialChartCoverage
+public import FLT.Mazur.WeierstrassDividedInitialComponentRanges
 public import FLT.Mazur.WeierstrassDividedInitialComponentStructure
 public import FLT.Mazur.WeierstrassDividedInitialConicBoundaryAlgebra
 public import FLT.Mazur.WeierstrassDividedInitialConicParameters
@@ -7365,6 +7370,16 @@ public import FLT.Mazur.WeierstrassDividedOppositeBoundarySupport
 public import FLT.Mazur.WeierstrassDividedOrderedAdjacentComponents
 public import FLT.Mazur.WeierstrassDividedOrderedPairCoverage
 public import FLT.Mazur.WeierstrassDividedOrderedRetainedSections
+public import FLT.Mazur.WeierstrassDividedPositiveEqualityBranchIndices
+public import FLT.Mazur.WeierstrassDividedPositiveEqualityBranches
+public import FLT.Mazur.WeierstrassDividedPositiveEqualityCocone
+public import FLT.Mazur.WeierstrassDividedPositiveEqualityCycle
+public import FLT.Mazur.WeierstrassDividedPositiveEqualityCycleCoverage
+public import FLT.Mazur.WeierstrassDividedPositiveEqualityCycleEndCharts
+public import FLT.Mazur.WeierstrassDividedPositiveEqualityCycleIndices
+public import FLT.Mazur.WeierstrassDividedPositiveEqualityCycleRanges
+public import FLT.Mazur.WeierstrassDividedPositiveEqualityPolygonMap
+public import FLT.Mazur.WeierstrassDividedPositiveEqualityPolygonSurjective
 public import FLT.Mazur.WeierstrassDividedPrecedingAtlasRange
 public import FLT.Mazur.WeierstrassDividedPreviousBoundaryAlgebra
 public import FLT.Mazur.WeierstrassDividedResidueAtlasExtension
