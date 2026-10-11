@@ -5260,6 +5260,7 @@ public import FLT.Mazur.OriginalTwistLineOrbits
 public import FLT.Mazur.OriginalTwistOrbitRelation
 public import FLT.Mazur.OriginalTwistSectionCoherence
 public import FLT.Mazur.OverCoproductModuleSections
+public import FLT.Mazur.OverOpenCoverExt
 public import FLT.Mazur.OverPoints
 public import FLT.Mazur.OverPullbackCoherence
 public import FLT.Mazur.OverPullbackCoproduct
@@ -6263,6 +6264,8 @@ public import FLT.Mazur.ProperUniversalDirectImagePasting
 public import FLT.Mazur.ProperUniversalRetainedSection
 public import FLT.Mazur.ProperUniversalTensorIdentification
 public import FLT.Mazur.PullbackOverlapBaseChange
+public import FLT.Mazur.PullbackRotationCocycle
+public import FLT.Mazur.PullbackRotationCoordinates
 public import FLT.Mazur.PullbackRotationTransport
 public import FLT.Mazur.PuncturedNodeRestrictionComparison
 public import FLT.Mazur.PushforwardCech
@@ -7013,8 +7016,15 @@ public import FLT.Mazur.TildePrincipalOpen
 public import FLT.Mazur.TildeSourceSectionComparison
 public import FLT.Mazur.TorusChartScalars
 public import FLT.Mazur.TranslatedHilbertChartOverlap
+public import FLT.Mazur.TranslatedHilbertGluedBase
+public import FLT.Mazur.TranslatedHilbertGluedDescent
+public import FLT.Mazur.TranslatedHilbertGluedMap
+public import FLT.Mazur.TranslatedHilbertGluedMono
+public import FLT.Mazur.TranslatedHilbertGluedPicard
+public import FLT.Mazur.TranslatedHilbertGluing
 public import FLT.Mazur.TranslatedHilbertOverlapIdentities
 public import FLT.Mazur.TranslatedHilbertPicardChart
+public import FLT.Mazur.TranslatedHilbertSchemeCocycle
 public import FLT.Mazur.TranslatedHilbertSchemeTriple
 public import FLT.Mazur.TranslatedHilbertTripleCocycle
 public import FLT.Mazur.TranslatedHilbertTripleOverlap
