@@ -6772,6 +6772,7 @@ public import FLT.Mazur.SchemeDescentPairTransport
 public import FLT.Mazur.SchemeDescentTransportSquares
 public import FLT.Mazur.SchemeDescentTransportTest
 public import FLT.Mazur.SchemeDisjointBaseChange
+public import FLT.Mazur.SchemeEffectiveEpiSections
 public import FLT.Mazur.SchemeFamilyTripleOverlap
 public import FLT.Mazur.SchemeFiniteGroupAffineDescent
 public import FLT.Mazur.SchemeFiniteGroupDescent
