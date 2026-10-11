@@ -2577,6 +2577,7 @@ public import FLT.Mazur.AdicLocalizedH1Comparison
 public import FLT.Mazur.AdicMaximalCompletion
 public import FLT.Mazur.AdicModuleIdealTransport
 public import FLT.Mazur.AdicModuleScalarChange
+public import FLT.Mazur.AdicOriginalSectionReconstruction
 public import FLT.Mazur.AdicOriginalSpaceProjection
 public import FLT.Mazur.AdicPolynomialPresentationLift
 public import FLT.Mazur.AdicPresentationDerivation
