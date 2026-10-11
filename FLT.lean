@@ -5837,6 +5837,7 @@ public import FLT.Mazur.PolygonSeriesTowerAssembly
 public import FLT.Mazur.PolygonSeriesTowerDivision
 public import FLT.Mazur.PolygonSinglePointLineNormalization
 public import FLT.Mazur.PolygonSinglePointPowerNormalization
+public import FLT.Mazur.PolygonSinglePointPowerSections
 public import FLT.Mazur.PolygonSmoothLocus
 public import FLT.Mazur.PolygonSmoothRelativeDimension
 public import FLT.Mazur.PolygonSmoothingBaseChange
