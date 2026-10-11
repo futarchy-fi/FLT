@@ -7251,6 +7251,7 @@ public import FLT.Mazur.SegreChartMaps
 public import FLT.Mazur.SegreChartQuotient
 public import FLT.Mazur.SegreClosedImmersion
 public import FLT.Mazur.SegreSchemeMorphism
+public import FLT.Mazur.SeparableAffineCoordinates
 public import FLT.Mazur.SeparatedFinitePresentationModel
 public import FLT.Mazur.SeparatedOpenCover
 public import FLT.Mazur.SeparatedOverlapClosedComparison
