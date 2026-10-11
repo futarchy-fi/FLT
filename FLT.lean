@@ -9260,6 +9260,7 @@ public import FLT.Mazur.WeierstrassSmoothReciprocalTriple
 public import FLT.Mazur.WeierstrassSmoothSevenPoints
 public import FLT.Mazur.WeierstrassSmoothSuccessiveIntegralCubicMaps
 public import FLT.Mazur.WeierstrassSmoothSuccessiveIntegralRegular
+public import FLT.Mazur.WeierstrassSmoothSuccessiveIntegralResiduePoint
 public import FLT.Mazur.WeierstrassSmoothSuccessiveIntegralTransport
 public import FLT.Mazur.WeierstrassSmoothSuccessiveOriginalFunctions
 public import FLT.Mazur.WeierstrassSmoothSuccessiveResidueInputs
