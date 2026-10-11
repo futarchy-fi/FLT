@@ -7690,6 +7690,7 @@ public import FLT.Mazur.WeierstrassDividedFirstSuccessorAction
 public import FLT.Mazur.WeierstrassDividedFirstUnitAction
 public import FLT.Mazur.WeierstrassDividedFullResidueAtlas
 public import FLT.Mazur.WeierstrassDividedGlobalActionConstruction
+public import FLT.Mazur.WeierstrassDividedGlobalActionIdentity
 public import FLT.Mazur.WeierstrassDividedGlobalConicCoordinates
 public import FLT.Mazur.WeierstrassDividedGlobalConicIntersection
 public import FLT.Mazur.WeierstrassDividedGlobalFiniteActionProduct
