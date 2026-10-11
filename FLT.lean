@@ -7029,6 +7029,7 @@ public import FLT.Mazur.SmoothQuasiFiniteCartierCriterion
 public import FLT.Mazur.SmoothQuasiFiniteIdealCharts
 public import FLT.Mazur.SmoothRelativeCotangentRank
 public import FLT.Mazur.SmoothSectionCartier
+public import FLT.Mazur.SmoothTranslationGeometricClass
 public import FLT.Mazur.SpecCartesianAlgebraPushout
 public import FLT.Mazur.SpecChartIdealPreimage
 public import FLT.Mazur.SpectrumFieldCohomologyCoordinates
