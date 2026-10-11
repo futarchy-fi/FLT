@@ -4759,6 +4759,7 @@ public import FLT.Mazur.IntegralBase
 public import FLT.Mazur.IntegralClosedSupport
 public import FLT.Mazur.IntegralCurveCartierFinite
 public import FLT.Mazur.IntegralDimension
+public import FLT.Mazur.IntegralImageIdealStalk
 public import FLT.Mazur.IntegralPointExtension
 public import FLT.Mazur.IntegralShortHomologyNaturality
 public import FLT.Mazur.IntersectionCocycleLimitUnits
