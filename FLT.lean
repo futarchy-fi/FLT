@@ -2846,6 +2846,7 @@ public import FLT.Mazur.AffineStalkEssentialFiniteType
 public import FLT.Mazur.AffineStalkExtension
 public import FLT.Mazur.AffineStalkFirstCotangent
 public import FLT.Mazur.AffineStalkMorphism
+public import FLT.Mazur.AffineStructuralSmoothLocus
 public import FLT.Mazur.AffineTensorCoactionRecognition
 public import FLT.Mazur.AffineTensorCoalgebraComparison
 public import FLT.Mazur.AffineTensorCocycle
