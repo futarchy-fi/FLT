@@ -5561,6 +5561,7 @@ public import FLT.Mazur.PolygonSmoothingFirstCotangent
 public import FLT.Mazur.PolygonSmoothingFirstCotangentBaseChange
 public import FLT.Mazur.PolygonSmoothingFlat
 public import FLT.Mazur.PolygonSmoothingGenericFiber
+public import FLT.Mazur.PolygonSmoothingH1FaithfulDescent
 public import FLT.Mazur.PolygonSmoothingLeftPuncture
 public import FLT.Mazur.PolygonSmoothingLocalizedCotangent
 public import FLT.Mazur.PolygonSmoothingMarkedSection
