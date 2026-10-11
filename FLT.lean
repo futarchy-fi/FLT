@@ -6542,6 +6542,7 @@ public import FLT.Mazur.RegularCenterDoubleOverlap
 public import FLT.Mazur.RegularCenterGluedLift
 public import FLT.Mazur.RegularCenterOverlap
 public import FLT.Mazur.RegularCenterOverlapScheme
+public import FLT.Mazur.RegularCenterQuotientOpenRatios
 public import FLT.Mazur.RegularCenterRatioCover
 public import FLT.Mazur.RegularCenterResidueConormal
 public import FLT.Mazur.RegularCenterResidueConormalRatio
