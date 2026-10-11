@@ -5707,6 +5707,7 @@ public import FLT.Mazur.PolygonCompleteNodeStalkMap
 public import FLT.Mazur.PolygonCompleteOriginalSectionReconstruction
 public import FLT.Mazur.PolygonCompletePointAcyclic
 public import FLT.Mazur.PolygonCompletePointDimensions
+public import FLT.Mazur.PolygonCompletePointExactMonomials
 public import FLT.Mazur.PolygonCompletePointFunctionDimensions
 public import FLT.Mazur.PolygonCompletePointLeadingClasses
 public import FLT.Mazur.PolygonCompletePointLeadingProducts
