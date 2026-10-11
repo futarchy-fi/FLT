@@ -5440,6 +5440,7 @@ public import FLT.Mazur.OrderedRelativeIdealBaseChange
 public import FLT.Mazur.OrderedRelativeIdealFamily
 public import FLT.Mazur.OrderedTranslationAffineParameterCover
 public import FLT.Mazur.OrderedTranslationEtaleResidueLift
+public import FLT.Mazur.OrderedTranslationEtaleSeparableLift
 public import FLT.Mazur.OrderedTranslationLocallyRingedMap
 public import FLT.Mazur.OrderedTranslationOriginalFiber
 public import FLT.Mazur.OrderedTranslationQuotientCover
