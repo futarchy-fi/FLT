@@ -5941,6 +5941,7 @@ public import FLT.Mazur.PrincipalRefinementSquareCriteria
 public import FLT.Mazur.PrincipalRelationClosure
 public import FLT.Mazur.PrincipalRestrictionEquivalence
 public import FLT.Mazur.PrincipalScalarCohomology
+public import FLT.Mazur.PrincipalScalarCohomologyReduction
 public import FLT.Mazur.PrincipalScalarCokernel
 public import FLT.Mazur.PrincipalSectionExtension
 public import FLT.Mazur.PrincipalSubmoduleCoordinates
