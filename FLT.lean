@@ -7027,6 +7027,7 @@ public import FLT.Mazur.SectionRetainedChartMorphism
 public import FLT.Mazur.SectionRetainedCoordinateRatios
 public import FLT.Mazur.SectionRetainedFractionEquation
 public import FLT.Mazur.SectionRetainedFractionUniqueness
+public import FLT.Mazur.SectionRetainedHomogeneousChart
 public import FLT.Mazur.SectionRetainedLineEvaluation
 public import FLT.Mazur.SectionRetainedMappedRatios
 public import FLT.Mazur.SectionRetainedProjBaseCoefficients
