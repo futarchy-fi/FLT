@@ -8100,6 +8100,7 @@ public import FLT.Mazur.WeierstrassLeftSmoothFormulaComparison
 public import FLT.Mazur.WeierstrassLeftSmoothIdentity
 public import FLT.Mazur.WeierstrassLeftSmoothInfinityIdentity
 public import FLT.Mazur.WeierstrassLeftSmoothInputAddition
+public import FLT.Mazur.WeierstrassLeftSmoothInputCenter
 public import FLT.Mazur.WeierstrassLeftSmoothInputCompatibility
 public import FLT.Mazur.WeierstrassLeftSmoothInputOutputRegular
 public import FLT.Mazur.WeierstrassLeftSmoothInputRestrictions
