@@ -7,6 +7,7 @@ module
 
 public import FLT.Mazur.DivisorSectionComplement
 public import FLT.Mazur.SectionGradedLocalCoordinates
+public import Mathlib.Tactic.IrreducibleDef
 
 /-!
 # Actual pole sections as functions on the divisor complement
@@ -26,7 +27,7 @@ set_option backward.defeqAttrib.useBackward true
 variable {X : Scheme.{u}} {I : X.IdealSheafData} (hI : EffectiveCartier I)
 
 /-- Trivialize the original divisor line by its canonical section on the complement. -/
-def divisorComplementTrivialization :
+irreducible_def divisorComplementTrivialization :
     (divisorLineBundle I hI).restrict (Scheme.Opens.ι (X := X) I.support.compl) ≅
       structureModule (Scheme.Opens.toScheme (X := X) I.support.compl) := by
   let _ := divisorSection_isIso_complement hI
