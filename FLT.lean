@@ -8017,6 +8017,7 @@ public import FLT.Mazur.WeierstrassDividedFiniteLineContractions
 public import FLT.Mazur.WeierstrassDividedFiniteLineReciprocals
 public import FLT.Mazur.WeierstrassDividedFiniteNodeComponents
 public import FLT.Mazur.WeierstrassDividedFiniteNodeContractions
+public import FLT.Mazur.WeierstrassDividedFiniteOriginalScaleOpen
 public import FLT.Mazur.WeierstrassDividedFiniteOriginalXOpen
 public import FLT.Mazur.WeierstrassDividedFiniteOverlap
 public import FLT.Mazur.WeierstrassDividedFiniteProper
