@@ -4986,6 +4986,7 @@ public import FLT.Mazur.ModulePullbackMapEquality
 public import FLT.Mazur.ModulePullbackRestrictionHorizontal
 public import FLT.Mazur.ModulePullbackRestrictionPasting
 public import FLT.Mazur.ModulePullbackSectionCoherence
+public import FLT.Mazur.ModulePullbackSectionIdentity
 public import FLT.Mazur.ModulePullbackSectionTransport
 public import FLT.Mazur.ModulePullbackStageIso
 public import FLT.Mazur.ModulePullbackTrivializationCoherence
