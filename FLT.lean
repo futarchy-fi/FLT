@@ -2729,6 +2729,7 @@ public import FLT.Mazur.AffineGeometricTensorDatum
 public import FLT.Mazur.AffineHilbertChartRelation
 public import FLT.Mazur.AffineHilbertRelationNeighborhoods
 public import FLT.Mazur.AffineHilbertRelationOperations
+public import FLT.Mazur.AffineHilbertRelationTensorCharts
 public import FLT.Mazur.AffineIdealContainment
 public import FLT.Mazur.AffineIdealCoordinates
 public import FLT.Mazur.AffineIdealPowerExtension
