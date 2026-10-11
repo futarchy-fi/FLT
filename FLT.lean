@@ -5614,6 +5614,7 @@ public import FLT.Mazur.PolygonSpecialFiberIdeal
 public import FLT.Mazur.PolygonSplitGeneratorIdentities
 public import FLT.Mazur.PolygonSplitGroup
 public import FLT.Mazur.PolygonSplitGroupConnected
+public import FLT.Mazur.PolygonSplitIdentityGroup
 public import FLT.Mazur.PolygonSplitInterpolationEquations
 public import FLT.Mazur.PolygonSplitLaurentNumerators
 public import FLT.Mazur.PolygonSplitLocalizedImages
