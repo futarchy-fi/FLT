@@ -3087,6 +3087,7 @@ public import FLT.Mazur.BaseChangeSectionEquiv
 public import FLT.Mazur.BaseChangedPresentationModel
 public import FLT.Mazur.BaseOpenHilbertBaseChange
 public import FLT.Mazur.BaseOpenHilbertOrbitFibers
+public import FLT.Mazur.BaseOpenHilbertOrbitHomeomorph
 public import FLT.Mazur.BaseOpenHilbertOrbitOpen
 public import FLT.Mazur.BaseOpenHilbertRestrictedRelation
 public import FLT.Mazur.BinaryOpenDescent
