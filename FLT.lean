@@ -7476,6 +7476,7 @@ public import FLT.Mazur.WeierstrassDividedDepthBoundaryPullback
 public import FLT.Mazur.WeierstrassDividedDepthCenterNormalization
 public import FLT.Mazur.WeierstrassDividedDepthCenterSmooth
 public import FLT.Mazur.WeierstrassDividedDepthData
+public import FLT.Mazur.WeierstrassDividedDepthLocalAction
 public import FLT.Mazur.WeierstrassDividedDepthMaps
 public import FLT.Mazur.WeierstrassDividedDepthOriginalOpen
 public import FLT.Mazur.WeierstrassDividedDepthStructure
