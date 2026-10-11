@@ -8037,6 +8037,7 @@ public import FLT.Mazur.WeierstrassLeftSmoothAffineTransport
 public import FLT.Mazur.WeierstrassLeftSmoothCrossInput
 public import FLT.Mazur.WeierstrassLeftSmoothFactorAddition
 public import FLT.Mazur.WeierstrassLeftSmoothFactorProduct
+public import FLT.Mazur.WeierstrassLeftSmoothFormulaComparison
 public import FLT.Mazur.WeierstrassLeftSmoothIdentity
 public import FLT.Mazur.WeierstrassLeftSmoothInfinityIdentity
 public import FLT.Mazur.WeierstrassLeftSmoothInputAddition
