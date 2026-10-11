@@ -4030,6 +4030,10 @@ public import FLT.Mazur.FiniteSupportEulerPositive
 public import FLT.Mazur.FiniteSurjectiveAmpleDescent
 public import FLT.Mazur.FiniteSurjectiveCoherentWitness
 public import FLT.Mazur.FiniteTensorIntegerClosedImmersion
+public import FLT.Mazur.FiniteTypeAbelNaturalIso
+public import FLT.Mazur.FiniteTypeAcyclicDivisorFppfDescent
+public import FLT.Mazur.FiniteTypeAcyclicDivisorMap
+public import FLT.Mazur.FiniteTypeAcyclicDivisorPresheaf
 public import FLT.Mazur.FiniteTypeAffineApproximation
 public import FLT.Mazur.FiniteTypeAffineIndependentLineModel
 public import FLT.Mazur.FiniteTypeApproximationDiamonds
@@ -4039,6 +4043,8 @@ public import FLT.Mazur.FiniteTypeBaseClassDivisorNaturality
 public import FLT.Mazur.FiniteTypeBaseIndependentLineModel
 public import FLT.Mazur.FiniteTypeDiagramRefinement
 public import FLT.Mazur.FiniteTypeDiagramStages
+public import FLT.Mazur.FiniteTypePointedAbelFppfIso
+public import FLT.Mazur.FiniteTypePointedFppfAcyclicOpen
 public import FLT.Mazur.FiniteTypePolynomialArrows
 public import FLT.Mazur.FiniteTypePrincipalApproximation
 public import FLT.Mazur.FiniteTypePrincipalComposition
@@ -4051,9 +4057,12 @@ public import FLT.Mazur.FiniteTypePrincipalSurjectiveLifts
 public import FLT.Mazur.FiniteTypeRelationPresentation
 public import FLT.Mazur.FiniteTypeTestAbelEquivalence
 public import FLT.Mazur.FiniteTypeTestAcyclicDirectImage
+public import FLT.Mazur.FiniteTypeTestAcyclicOpen
+public import FLT.Mazur.FiniteTypeTestAcyclicOpenRepresentation
 public import FLT.Mazur.FiniteTypeTestClassDivisor
 public import FLT.Mazur.FiniteTypeTestClassDivisorNaturality
 public import FLT.Mazur.FiniteTypeTestLineDivisor
+public import FLT.Mazur.FiniteTypeTestRelativePicardOpen
 public import FLT.Mazur.FiniteTypeTestSectionCartier
 public import FLT.Mazur.FiniteUnramifiedConstantFiber
 public import FLT.Mazur.FiniteUnramifiedFieldLength
@@ -4136,9 +4145,11 @@ public import FLT.Mazur.GenericIdealSupport
 public import FLT.Mazur.GenericLineTrivialization
 public import FLT.Mazur.GenericSectionUniqueness
 public import FLT.Mazur.GenericWitnessIdealVanishing
+public import FLT.Mazur.GeometricAcyclicFppfLocus
 public import FLT.Mazur.GeometricAcyclicPicardLocality
 public import FLT.Mazur.GeometricAcyclicPicardSubfunctor
 public import FLT.Mazur.GeometricAcyclicRankOne
+public import FLT.Mazur.GeometricAcyclicRankOneLocus
 public import FLT.Mazur.GeometricOpenFactorization
 public import FLT.Mazur.GeometricPointCoverCriterion
 public import FLT.Mazur.GeometricSectionQuasiFinite
@@ -6054,7 +6065,9 @@ public import FLT.Mazur.ProperLocalFiberCover
 public import FLT.Mazur.ProperOnlyAmpleFiberNeighborhood
 public import FLT.Mazur.ProperOnlyRelativeAmpleFibers
 public import FLT.Mazur.ProperPointExtension
+public import FLT.Mazur.ProperPointedAcyclicFppfSheaf
 public import FLT.Mazur.ProperPointedLineSheafDescent
+public import FLT.Mazur.ProperPointedRelativeFppfIso
 public import FLT.Mazur.ProperPushforwardReconstructionUnit
 public import FLT.Mazur.ProperRankOneDivisorNaturality
 public import FLT.Mazur.ProperRankOneNormalizedDivisor
@@ -6158,6 +6171,7 @@ public import FLT.Mazur.RelativeDirectImageForgetting
 public import FLT.Mazur.RelativeDirectImageOpenResolution
 public import FLT.Mazur.RelativeFiberMorphism
 public import FLT.Mazur.RelativeFiberNakayama
+public import FLT.Mazur.RelativeFppfLocalSubfunctor
 public import FLT.Mazur.RelativeIdealAmbientHom
 public import FLT.Mazur.RelativeIdealAmbientIsoSquare
 public import FLT.Mazur.RelativeIdealAmbientPullback
