@@ -8386,6 +8386,7 @@ public import FLT.Mazur.WeierstrassDividedTerminalResidueCharts
 public import FLT.Mazur.WeierstrassDividedTerminalRetainedBranchCompatibility
 public import FLT.Mazur.WeierstrassDividedTerminalRetainedIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalSplitNodeBranches
+public import FLT.Mazur.WeierstrassDividedTerminalTensorPointGeometry
 public import FLT.Mazur.WeierstrassDividedTerminalZeroBoundary
 public import FLT.Mazur.WeierstrassDividedTerminalZeroBranchIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalZeroComponents
