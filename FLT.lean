@@ -5473,6 +5473,7 @@ public import FLT.Mazur.PolygonCompleteMarkedClosedFiber
 public import FLT.Mazur.PolygonCompleteMarkedCoordinateCharts
 public import FLT.Mazur.PolygonCompleteMarkedCoordinateGeneration
 public import FLT.Mazur.PolygonCompleteMarkedCoordinateOpens
+public import FLT.Mazur.PolygonCompleteMarkedCoordinateRatios
 public import FLT.Mazur.PolygonCompleteMarkedCoordinates
 public import FLT.Mazur.PolygonCompleteMarkedLineModel
 public import FLT.Mazur.PolygonCompleteMarkedModelSections
