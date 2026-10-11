@@ -6221,6 +6221,7 @@ public import FLT.Mazur.ProjectiveLineMarkedTransition
 public import FLT.Mazur.ProjectiveLineOpenChartExclusion
 public import FLT.Mazur.ProjectiveLineProductCharts
 public import FLT.Mazur.ProjectiveLineProductOverlap
+public import FLT.Mazur.ProjectiveLineProductTorusExt
 public import FLT.Mazur.ProjectiveLineRightCanonicalRatios
 public import FLT.Mazur.ProjectiveLineScaledAffineOverlap
 public import FLT.Mazur.ProjectiveLineScaledReciprocalGluing
