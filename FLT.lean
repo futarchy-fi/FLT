@@ -2499,6 +2499,7 @@ public import FLT.Mazur.AcyclicPushforwardCohomology
 public import FLT.Mazur.AcyclicRankOneBaseChange
 public import FLT.Mazur.AcyclicRankOneLineCondition
 public import FLT.Mazur.AcyclicRankOneRelativeClass
+public import FLT.Mazur.AcyclicRelativeDivisorFamilyDescent
 public import FLT.Mazur.AcyclicResolutionComparison
 public import FLT.Mazur.AcyclicTensorExactness
 public import FLT.Mazur.AdditiveComplexDirectSum
@@ -3838,6 +3839,7 @@ public import FLT.Mazur.FCurveContracts
 public import FLT.Mazur.FaithfulTensorVanishing
 public import FLT.Mazur.FaithfullyFlatFinitePresentation
 public import FLT.Mazur.FaithfullyFlatInvertible
+public import FLT.Mazur.FaithfullyFlatTowerReflection
 public import FLT.Mazur.FamilyTransport
 public import FLT.Mazur.FiberAffineOpenBaseChange
 public import FLT.Mazur.FiberAffineOpenBaseIso
@@ -4184,6 +4186,7 @@ public import FLT.Mazur.FreeModuleResidueRetraction
 public import FLT.Mazur.FreeSheafPullbackRestriction
 public import FLT.Mazur.FreeSheafRestrictionCoherence
 public import FLT.Mazur.FreeSheafSectionCoordinates
+public import FLT.Mazur.FullDivisorFlatFppfDescent
 public import FLT.Mazur.GeneralizedCurveAmpleBaseChange
 public import FLT.Mazur.GeneralizedCurveAmpleDescent
 public import FLT.Mazur.GeneralizedCurveAmpleSubgroup
@@ -6266,6 +6269,7 @@ public import FLT.Mazur.RelativeAmpleSectionComparison
 public import FLT.Mazur.RelativeCartier
 public import FLT.Mazur.RelativeCartierBaseChange
 public import FLT.Mazur.RelativeCartierDivisorPullback
+public import FLT.Mazur.RelativeCartierIdealFamilyDescent
 public import FLT.Mazur.RelativeCartierIdealPullback
 public import FLT.Mazur.RelativeCartierOriginalSquare
 public import FLT.Mazur.RelativeCyclicSubgroup
@@ -6554,6 +6558,7 @@ public import FLT.Mazur.SchemeFiniteGroupQuotientMaps
 public import FLT.Mazur.SchemeFiniteGroupQuotientOpenEmbedding
 public import FLT.Mazur.SchemeFiniteGroupQuotientOpenImmersion
 public import FLT.Mazur.SchemeFiniteGroupQuotientOrbits
+public import FLT.Mazur.SchemeFlatFamilyReflection
 public import FLT.Mazur.SchemeFlatProductDensity
 public import FLT.Mazur.SchemeFppfCanonicalPairRecovery
 public import FLT.Mazur.SchemeFppfFamilyCocycleAssembly
@@ -7045,11 +7050,15 @@ public import FLT.Mazur.UniversalWeierstrassNormalizedSliceRing
 public import FLT.Mazur.UniversalWeierstrassParameter
 public import FLT.Mazur.UniversallyClosedFiniteCover
 public import FLT.Mazur.UniversallyDistinctSections
+public import FLT.Mazur.UnpointedAbelOpenFiberRepresentation
 public import FLT.Mazur.UnpointedAcyclicAbelInjectivity
+public import FLT.Mazur.UnpointedAcyclicAbelSheafIso
 public import FLT.Mazur.UnpointedAcyclicFppfDetection
 public import FLT.Mazur.UnpointedAcyclicFppfImageEquivalence
+public import FLT.Mazur.UnpointedAcyclicOpenDivisor
 public import FLT.Mazur.UnpointedAcyclicOpenPointedCompatibility
 public import FLT.Mazur.UnpointedLocalAcyclicDivisorCover
+public import FLT.Mazur.UnpointedLocalAcyclicEffectiveDescent
 public import FLT.Mazur.UnpointedLocalAcyclicFppfSheaf
 public import FLT.Mazur.UnramifiedSectionImmersion
 public import FLT.Mazur.UnrestrictedSmoothFamilyCartier
