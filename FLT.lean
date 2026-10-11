@@ -7167,6 +7167,7 @@ public import FLT.Mazur.SmoothQuasiFiniteCartierCriterion
 public import FLT.Mazur.SmoothQuasiFiniteIdealCharts
 public import FLT.Mazur.SmoothRelativeCotangentRank
 public import FLT.Mazur.SmoothSectionCartier
+public import FLT.Mazur.SmoothTranslationChartOrbitFibers
 public import FLT.Mazur.SmoothTranslationGeometricClass
 public import FLT.Mazur.SmoothTranslationOrbitCover
 public import FLT.Mazur.SmoothTranslationOrbitOpen
