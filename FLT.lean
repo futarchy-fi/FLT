@@ -6074,6 +6074,7 @@ public import FLT.Mazur.ReesRelativeScalarTower
 public import FLT.Mazur.RefinedChartSpectrum
 public import FLT.Mazur.RegularParameterIdeals
 public import FLT.Mazur.RelativeAbelFiberOriginalSquare
+public import FLT.Mazur.RelativeAcyclicPicardOpen
 public import FLT.Mazur.RelativeAmpleAffineBaseChange
 public import FLT.Mazur.RelativeAmpleBaseChange
 public import FLT.Mazur.RelativeAmpleFpqcDescent
