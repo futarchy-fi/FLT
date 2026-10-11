@@ -2527,6 +2527,7 @@ public import FLT.Mazur.AdicDerivationQuotient
 public import FLT.Mazur.AdicDerivationUniqueness
 public import FLT.Mazur.AdicExtensionHomotopy
 public import FLT.Mazur.AdicExtensionKernelComparison
+public import FLT.Mazur.AdicExtensionProjection
 public import FLT.Mazur.AdicFiniteGenerationLifting
 public import FLT.Mazur.AdicFiniteKernelEquiv
 public import FLT.Mazur.AdicFiniteModuleExt
