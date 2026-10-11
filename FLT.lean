@@ -7473,6 +7473,7 @@ public import FLT.Mazur.WeierstrassDividedConicParameterTransport
 public import FLT.Mazur.WeierstrassDividedDepthAffine
 public import FLT.Mazur.WeierstrassDividedDepthBoundary
 public import FLT.Mazur.WeierstrassDividedDepthBoundaryPullback
+public import FLT.Mazur.WeierstrassDividedDepthCenterNormalization
 public import FLT.Mazur.WeierstrassDividedDepthCenterSmooth
 public import FLT.Mazur.WeierstrassDividedDepthData
 public import FLT.Mazur.WeierstrassDividedDepthMaps
