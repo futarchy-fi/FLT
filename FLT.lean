@@ -2491,7 +2491,9 @@ public import FLT.Mazur.AbsoluteDirectImageCohomology
 public import FLT.Mazur.AcyclicCoefficientCohomology
 public import FLT.Mazur.AcyclicDirectImageResolution
 public import FLT.Mazur.AcyclicLineSectionBaseChange
+public import FLT.Mazur.AcyclicPointedAbelEquivalence
 public import FLT.Mazur.AcyclicPushforwardCohomology
+public import FLT.Mazur.AcyclicRankOneLineCondition
 public import FLT.Mazur.AcyclicResolutionComparison
 public import FLT.Mazur.AcyclicTensorExactness
 public import FLT.Mazur.AdditiveComplexDirectSum
@@ -5110,10 +5112,12 @@ public import FLT.Mazur.PinchingAffineDescent
 public import FLT.Mazur.PinchingChartBaseChange
 public import FLT.Mazur.PinchingNeighborhoods
 public import FLT.Mazur.PinchingPullbackTransport
+public import FLT.Mazur.PointNormalizedAcyclicTests
 public import FLT.Mazur.PointNormalizedDirectImage
 public import FLT.Mazur.PointNormalizedDivisorBaseChange
 public import FLT.Mazur.PointNormalizedDivisorFiber
 public import FLT.Mazur.PointNormalizedDivisorUniqueness
+public import FLT.Mazur.PointNormalizedFiberCohomology
 public import FLT.Mazur.PointNormalizedLineBaseChange
 public import FLT.Mazur.PointNormalizedLineBundle
 public import FLT.Mazur.PointedCurveLargeDegree
@@ -5864,6 +5868,7 @@ public import FLT.Mazur.ProjectiveUniversalLineTriplePaths
 public import FLT.Mazur.ProjectiveUniversalLineTripleRefinement
 public import FLT.Mazur.ProperAcyclicDirectImageRepresentation
 public import FLT.Mazur.ProperAcyclicRankOneLocus
+public import FLT.Mazur.ProperAcyclicRankOneUniversalDivisor
 public import FLT.Mazur.ProperAffineSectionCartier
 public import FLT.Mazur.ProperAmpleConverse
 public import FLT.Mazur.ProperAmpleFiberApproximation
@@ -5934,6 +5939,8 @@ public import FLT.Mazur.ProperFamilyRigidifiedTransitions
 public import FLT.Mazur.ProperFamilyRigidifiedTripleEdges
 public import FLT.Mazur.ProperFamilyRigidifiedTripleTransitions
 public import FLT.Mazur.ProperFamilyRigidifiedUniqueDescent
+public import FLT.Mazur.ProperFamilySectionCartierChart
+public import FLT.Mazur.ProperFamilySectionCartierDescent
 public import FLT.Mazur.ProperFamilySectionCoherence
 public import FLT.Mazur.ProperFamilySectionOrbits
 public import FLT.Mazur.ProperFamilySectionPullback
@@ -5952,6 +5959,9 @@ public import FLT.Mazur.ProperFinitePresentationEnvelope
 public import FLT.Mazur.ProperGeometricAcyclicDirectImage
 public import FLT.Mazur.ProperGeometricRankOneOpen
 public import FLT.Mazur.ProperGlobalDirectImageCharts
+public import FLT.Mazur.ProperGlobalRankOneDivisor
+public import FLT.Mazur.ProperGlobalRankOneDivisorNaturality
+public import FLT.Mazur.ProperGlobalRankOnePointedDivisor
 public import FLT.Mazur.ProperGlobalSectionCartier
 public import FLT.Mazur.ProperGlobalSectionFinite
 public import FLT.Mazur.ProperGlobalSplitDirectImageSections
@@ -6070,6 +6080,7 @@ public import FLT.Mazur.ReesRelativeNaturality
 public import FLT.Mazur.ReesRelativeScalarTower
 public import FLT.Mazur.RefinedChartSpectrum
 public import FLT.Mazur.RegularParameterIdeals
+public import FLT.Mazur.RelativeAbelFiberOriginalSquare
 public import FLT.Mazur.RelativeAmpleAffineBaseChange
 public import FLT.Mazur.RelativeAmpleBaseChange
 public import FLT.Mazur.RelativeAmpleFpqcDescent
@@ -6758,6 +6769,7 @@ public import FLT.Mazur.TwistedSectionBaseLineNaturality
 public import FLT.Mazur.TwistedSectionBidual
 public import FLT.Mazur.TwistedSectionCartierTransport
 public import FLT.Mazur.TwistedSectionCoefficientNaturality
+public import FLT.Mazur.TwistedSectionCoefficientTransport
 public import FLT.Mazur.TwistedSectionIntegralCriterion
 public import FLT.Mazur.TwistedSectionLocalSplitting
 public import FLT.Mazur.TwistedSectionPullbackMonicity
