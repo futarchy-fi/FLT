@@ -3085,6 +3085,7 @@ public import FLT.Mazur.BlowupFractionChartExt
 public import FLT.Mazur.BlowupFractionChartLocalization
 public import FLT.Mazur.BlowupFractionChartMap
 public import FLT.Mazur.BlowupFractionChartRatio
+public import FLT.Mazur.BlowupFractionRatioCover
 public import FLT.Mazur.BlowupReesContraction
 public import FLT.Mazur.BlowupReesDegreeZeroEquiv
 public import FLT.Mazur.BlowupReesDegreeZeroMap
