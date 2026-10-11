@@ -8103,6 +8103,9 @@ public import FLT.Mazur.WeierstrassDividedInitialTensorPointAction
 public import FLT.Mazur.WeierstrassDividedInitialZeroInfinity
 public import FLT.Mazur.WeierstrassDividedInitialZeroLaurent
 public import FLT.Mazur.WeierstrassDividedInitialZeroSlopeChart
+public import FLT.Mazur.WeierstrassDividedInteriorConicPunctures
+public import FLT.Mazur.WeierstrassDividedInteriorHorizontalCyclicInput
+public import FLT.Mazur.WeierstrassDividedInteriorHorizontalCyclicPair
 public import FLT.Mazur.WeierstrassDividedLaurentRetainedIntersection
 public import FLT.Mazur.WeierstrassDividedLaurentTerminalAttachments
 public import FLT.Mazur.WeierstrassDividedLaurentTerminalEmbedding
@@ -8140,6 +8143,7 @@ public import FLT.Mazur.WeierstrassDividedOlderGlobalParameterSections
 public import FLT.Mazur.WeierstrassDividedOlderGlobalResidueNodes
 public import FLT.Mazur.WeierstrassDividedOlderGlobalSectionExterior
 public import FLT.Mazur.WeierstrassDividedOlderGlobalSections
+public import FLT.Mazur.WeierstrassDividedOlderGlobalStep
 public import FLT.Mazur.WeierstrassDividedOlderGlobalTensorCharts
 public import FLT.Mazur.WeierstrassDividedOlderGlobalZeroBoundaries
 public import FLT.Mazur.WeierstrassDividedOlderGlobalZeroComponents
@@ -8153,6 +8157,7 @@ public import FLT.Mazur.WeierstrassDividedOlderIndexedIntersections
 public import FLT.Mazur.WeierstrassDividedOlderIndexedNodeCover
 public import FLT.Mazur.WeierstrassDividedOlderInfinityPreimage
 public import FLT.Mazur.WeierstrassDividedOlderParameterNodeBranches
+public import FLT.Mazur.WeierstrassDividedOlderPointActionPropagation
 public import FLT.Mazur.WeierstrassDividedOlderResidueInfinity
 public import FLT.Mazur.WeierstrassDividedOlderResidueNodes
 public import FLT.Mazur.WeierstrassDividedOlderSplitNodeBranches
@@ -9217,6 +9222,7 @@ public import FLT.Mazur.WeierstrassSmoothProductOpen
 public import FLT.Mazur.WeierstrassSmoothProjectiveGroup
 public import FLT.Mazur.WeierstrassSmoothReciprocalTriple
 public import FLT.Mazur.WeierstrassSmoothSevenPoints
+public import FLT.Mazur.WeierstrassSmoothSuccessiveTensorInput
 public import FLT.Mazur.WeierstrassSmoothTransportedComparison
 public import FLT.Mazur.WeierstrassSmoothTransportedCover
 public import FLT.Mazur.WeierstrassSmoothTransportedOutputRegular
@@ -9374,6 +9380,9 @@ public import FLT.Mazur.WeierstrassSuccessiveXMiddleSplitOppositeConic
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleTangentSwitch
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleUnion
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleZeroNode
+public import FLT.Mazur.WeierstrassSuccessiveXModificationGeometry
+public import FLT.Mazur.WeierstrassSuccessiveXModificationLocalization
+public import FLT.Mazur.WeierstrassSuccessiveXModificationMap
 public import FLT.Mazur.WeierstrassSuccessiveXMonic
 public import FLT.Mazur.WeierstrassSuccessiveXMonicComparison
 public import FLT.Mazur.WeierstrassSuccessiveXOverlap
