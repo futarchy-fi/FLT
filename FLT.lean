@@ -7856,9 +7856,11 @@ public import FLT.Mazur.WeierstrassDilatationFractionMap
 public import FLT.Mazur.WeierstrassDilatationGenerators
 public import FLT.Mazur.WeierstrassDilatationGenericFiber
 public import FLT.Mazur.WeierstrassDilatationHorizontalCongruence
+public import FLT.Mazur.WeierstrassDilatationLaurentPointCharacters
 public import FLT.Mazur.WeierstrassDilatationLifting
 public import FLT.Mazur.WeierstrassDilatationLocalization
 public import FLT.Mazur.WeierstrassDilatationMorphism
+public import FLT.Mazur.WeierstrassDilatationOriginalQuotients
 public import FLT.Mazur.WeierstrassDilatationParameterCongruence
 public import FLT.Mazur.WeierstrassDilatationReesChart
 public import FLT.Mazur.WeierstrassDilatationRefinement
@@ -7930,6 +7932,7 @@ public import FLT.Mazur.WeierstrassDividedBoundaryNormalization
 public import FLT.Mazur.WeierstrassDividedBranchChainIntersections
 public import FLT.Mazur.WeierstrassDividedBranchPairSeparation
 public import FLT.Mazur.WeierstrassDividedChartRegularCenter
+public import FLT.Mazur.WeierstrassDividedCoefficientActionIndexTransport
 public import FLT.Mazur.WeierstrassDividedComponentPairCoverage
 public import FLT.Mazur.WeierstrassDividedConicBoundaryAllDepths
 public import FLT.Mazur.WeierstrassDividedConicBoundaryGeometryAllDepths
@@ -8171,9 +8174,12 @@ public import FLT.Mazur.WeierstrassDividedInitialTensorPointAction
 public import FLT.Mazur.WeierstrassDividedInitialZeroInfinity
 public import FLT.Mazur.WeierstrassDividedInitialZeroLaurent
 public import FLT.Mazur.WeierstrassDividedInitialZeroSlopeChart
+public import FLT.Mazur.WeierstrassDividedInteriorCoefficientAction
 public import FLT.Mazur.WeierstrassDividedInteriorConicPunctures
+public import FLT.Mazur.WeierstrassDividedInteriorHorizontalCyclicAction
 public import FLT.Mazur.WeierstrassDividedInteriorHorizontalCyclicInput
 public import FLT.Mazur.WeierstrassDividedInteriorHorizontalCyclicPair
+public import FLT.Mazur.WeierstrassDividedInteriorTensorOutputGeometry
 public import FLT.Mazur.WeierstrassDividedLaurentRetainedIntersection
 public import FLT.Mazur.WeierstrassDividedLaurentTerminalAttachments
 public import FLT.Mazur.WeierstrassDividedLaurentTerminalEmbedding
@@ -8298,6 +8304,7 @@ public import FLT.Mazur.WeierstrassDividedPositiveEqualityInitialTerminalCompati
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityIntegralGeometricFiber
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityInteriorAtlasCompatibility
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityInteriorAtlasIso
+public import FLT.Mazur.WeierstrassDividedPositiveEqualityInteriorComponentAction
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityInteriorConicCharts
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityInteriorDescRecovery
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityInteriorIndexedDesc
@@ -8400,6 +8407,7 @@ public import FLT.Mazur.WeierstrassDividedTerminalResidueCharts
 public import FLT.Mazur.WeierstrassDividedTerminalRetainedBranchCompatibility
 public import FLT.Mazur.WeierstrassDividedTerminalRetainedIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalSplitNodeBranches
+public import FLT.Mazur.WeierstrassDividedTerminalTensorPointGeometry
 public import FLT.Mazur.WeierstrassDividedTerminalZeroBoundary
 public import FLT.Mazur.WeierstrassDividedTerminalZeroBranchIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalZeroComponents
@@ -9307,6 +9315,7 @@ public import FLT.Mazur.WeierstrassSmoothSuccessiveOriginalFunctions
 public import FLT.Mazur.WeierstrassSmoothSuccessiveResidueInputs
 public import FLT.Mazur.WeierstrassSmoothSuccessiveResidueOutputs
 public import FLT.Mazur.WeierstrassSmoothSuccessiveTensorInput
+public import FLT.Mazur.WeierstrassSmoothSuccessiveTensorOutput
 public import FLT.Mazur.WeierstrassSmoothSuccessiveTransportedTensorInput
 public import FLT.Mazur.WeierstrassSmoothTransportedComparison
 public import FLT.Mazur.WeierstrassSmoothTransportedCover
@@ -9330,7 +9339,9 @@ public import FLT.Mazur.WeierstrassSplitDepthExceptionalBranches
 public import FLT.Mazur.WeierstrassSplitDepthExceptionalCharacters
 public import FLT.Mazur.WeierstrassSplitDepthExceptionalScaling
 public import FLT.Mazur.WeierstrassSplitDepthHorizontalOutputUnit
+public import FLT.Mazur.WeierstrassSplitDepthNormalizedDividedAction
 public import FLT.Mazur.WeierstrassSplitDepthNormalizedFractionAction
+public import FLT.Mazur.WeierstrassSplitDepthNormalizedQuotientAction
 public import FLT.Mazur.WeierstrassSplitDepthOriginalFractionAction
 public import FLT.Mazur.WeierstrassSplitDepthResidueEquation
 public import FLT.Mazur.WeierstrassSplitDepthSecantResidue
