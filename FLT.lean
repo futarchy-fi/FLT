@@ -3085,6 +3085,17 @@ public import FLT.Mazur.BaseAdicThickening
 public import FLT.Mazur.BaseChangeCotangentFieldRank
 public import FLT.Mazur.BaseChangeSectionEquiv
 public import FLT.Mazur.BaseChangedPresentationModel
+public import FLT.Mazur.BaseOpenHilbertBaseChange
+public import FLT.Mazur.BaseOpenHilbertChartFunctions
+public import FLT.Mazur.BaseOpenHilbertChartSourceSections
+public import FLT.Mazur.BaseOpenHilbertInvariantStructureSheaf
+public import FLT.Mazur.BaseOpenHilbertLocallyRingedChart
+public import FLT.Mazur.BaseOpenHilbertOrbitFibers
+public import FLT.Mazur.BaseOpenHilbertOrbitHomeomorph
+public import FLT.Mazur.BaseOpenHilbertOrbitOpen
+public import FLT.Mazur.BaseOpenHilbertOriginalInvariantFunctions
+public import FLT.Mazur.BaseOpenHilbertRelationOpenSections
+public import FLT.Mazur.BaseOpenHilbertRestrictedRelation
 public import FLT.Mazur.BinaryOpenDescent
 public import FLT.Mazur.BlowupFractionActionCover
 public import FLT.Mazur.BlowupFractionChart
@@ -7445,6 +7456,7 @@ public import FLT.Mazur.ValuationProjectiveNormalization
 public import FLT.Mazur.ValuationRingCompleteModel
 public import FLT.Mazur.ValuationRingHenselianModel
 public import FLT.Mazur.ValuationRingModel
+public import FLT.Mazur.VariableHilbertSourceIntersection
 public import FLT.Mazur.VariableTranslatedHilbertChart
 public import FLT.Mazur.VariableTranslatedHilbertOverlap
 public import FLT.Mazur.VariableTranslatedHilbertRepresentation
@@ -7765,7 +7777,10 @@ public import FLT.Mazur.WeierstrassDividedGlobalActionSmooth
 public import FLT.Mazur.WeierstrassDividedGlobalCoefficientAction
 public import FLT.Mazur.WeierstrassDividedGlobalCoefficientActionLaws
 public import FLT.Mazur.WeierstrassDividedGlobalCoefficientCartesian
+public import FLT.Mazur.WeierstrassDividedGlobalCoefficientFaithful
+public import FLT.Mazur.WeierstrassDividedGlobalCoefficientOverPoints
 public import FLT.Mazur.WeierstrassDividedGlobalCoefficientSmooth
+public import FLT.Mazur.WeierstrassDividedGlobalCoefficientSmoothOrbit
 public import FLT.Mazur.WeierstrassDividedGlobalCoefficientStep
 public import FLT.Mazur.WeierstrassDividedGlobalConicCoordinates
 public import FLT.Mazur.WeierstrassDividedGlobalConicIntersection
@@ -7953,6 +7968,7 @@ public import FLT.Mazur.WeierstrassDividedPositiveEqualityGlobalLineRestrictions
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityGlobalNodeRestrictions
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityGlobalTerminalRestriction
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityHomExt
+public import FLT.Mazur.WeierstrassDividedPositiveEqualityIdentityAction
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityIdentityComponent
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityIdentitySubgroup
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityIndexedDescRecovery
@@ -7977,6 +7993,7 @@ public import FLT.Mazur.WeierstrassDividedPositiveEqualityInteriorIndexedDesc
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityInteriorLocalMaps
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityInteriorTensorCompatibility
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityInteriorTensorDesc
+public import FLT.Mazur.WeierstrassDividedPositiveEqualityLaurentAction
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityOriginalPoints
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityOriginalSmooth
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityPolygonIso
@@ -8875,7 +8892,9 @@ public import FLT.Mazur.WeierstrassSmoothAllOrdinaryTriple
 public import FLT.Mazur.WeierstrassSmoothAssociativity
 public import FLT.Mazur.WeierstrassSmoothChartCompatibility
 public import FLT.Mazur.WeierstrassSmoothCoefficientAddition
+public import FLT.Mazur.WeierstrassSmoothCoefficientBaseGroup
 public import FLT.Mazur.WeierstrassSmoothCoefficientCartesian
+public import FLT.Mazur.WeierstrassSmoothCoefficientGroupIso
 public import FLT.Mazur.WeierstrassSmoothCoefficientOperations
 public import FLT.Mazur.WeierstrassSmoothCoefficientPointAddition
 public import FLT.Mazur.WeierstrassSmoothCoefficientPreimage
@@ -8885,6 +8904,7 @@ public import FLT.Mazur.WeierstrassSmoothCrossAffine
 public import FLT.Mazur.WeierstrassSmoothCrossPolynomial
 public import FLT.Mazur.WeierstrassSmoothFactorAddition
 public import FLT.Mazur.WeierstrassSmoothFactorProduct
+public import FLT.Mazur.WeierstrassSmoothFaithfulCoefficientDescent
 public import FLT.Mazur.WeierstrassSmoothFiberCore
 public import FLT.Mazur.WeierstrassSmoothFiveAffineTriple
 public import FLT.Mazur.WeierstrassSmoothFivePoints
