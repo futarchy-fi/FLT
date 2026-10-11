@@ -2501,6 +2501,7 @@ public import FLT.Mazur.AdditiveComplexSumHomology
 public import FLT.Mazur.AdditiveComplexSumHomologyInclusion
 public import FLT.Mazur.AdditiveSheafModuleTransport
 public import FLT.Mazur.AdditiveSheafMultiplication
+public import FLT.Mazur.AdicCompletedDifferentials
 public import FLT.Mazur.AdicCompletionAlgEquiv
 public import FLT.Mazur.AdicCompletionPositiveEquiv
 public import FLT.Mazur.AdicCompletionPositiveLimit
