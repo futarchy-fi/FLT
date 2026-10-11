@@ -8049,6 +8049,7 @@ public import FLT.Mazur.WeierstrassLeftSmoothOriginalFormulas
 public import FLT.Mazur.WeierstrassLeftSmoothProductOpen
 public import FLT.Mazur.WeierstrassLeftSmoothRestriction
 public import FLT.Mazur.WeierstrassLeftSmoothRestrictionCharts
+public import FLT.Mazur.WeierstrassLeftSmoothSevenPoints
 public import FLT.Mazur.WeierstrassLeftSmoothTransportedComparison
 public import FLT.Mazur.WeierstrassLeftSmoothTransportedCover
 public import FLT.Mazur.WeierstrassLeftSmoothTransportedOutputRegular
