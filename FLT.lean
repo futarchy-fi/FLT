@@ -5807,6 +5807,7 @@ public import FLT.Mazur.PolygonNormalizationExact
 public import FLT.Mazur.PolygonNormalizationFinite
 public import FLT.Mazur.PolygonNormalizationHOne
 public import FLT.Mazur.PolygonNormalizationHZero
+public import FLT.Mazur.PolygonNormalizationLinearSections
 public import FLT.Mazur.PolygonNormalizationSectionFamilies
 public import FLT.Mazur.PolygonNormalizationTorusPullback
 public import FLT.Mazur.PolygonNormalizationTransport
