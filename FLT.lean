@@ -5654,6 +5654,7 @@ public import FLT.Mazur.PolygonLineNodeRestriction
 public import FLT.Mazur.PolygonLineNormalization
 public import FLT.Mazur.PolygonMarkedSections
 public import FLT.Mazur.PolygonMarkingAffineNeighborhood
+public import FLT.Mazur.PolygonMultipleStageUnitChart
 public import FLT.Mazur.PolygonMultipleVeroneseIso
 public import FLT.Mazur.PolygonMultipleVeroneseProj
 public import FLT.Mazur.PolygonMultipleVeroneseStructuralMap
