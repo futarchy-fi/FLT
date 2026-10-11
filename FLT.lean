@@ -3516,6 +3516,7 @@ public import FLT.Mazur.DivisorPowerCanonicalSection
 public import FLT.Mazur.DivisorPowerEulerCharacteristic
 public import FLT.Mazur.DivisorPowerH1Bound
 public import FLT.Mazur.DivisorPowerH1Vanishing
+public import FLT.Mazur.DivisorPowerHZeroTransition
 public import FLT.Mazur.DivisorPowerHigherVanishing
 public import FLT.Mazur.DivisorPowerTwistDegree
 public import FLT.Mazur.DivisorPowerVeryAmple
