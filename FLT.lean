@@ -2598,6 +2598,7 @@ public import FLT.Mazur.AffineAdicCohomologyImage
 public import FLT.Mazur.AffineAdicFormalComparison
 public import FLT.Mazur.AffineAlgebraDescentCoaction
 public import FLT.Mazur.AffineAlgebraDescentMorphisms
+public import FLT.Mazur.AffineAlgebraDescentOverlap
 public import FLT.Mazur.AffineAlgebraDescentReconstruction
 public import FLT.Mazur.AffineAlgebraDescentScheme
 public import FLT.Mazur.AffineAlgebraDescentSplitEqualizer
