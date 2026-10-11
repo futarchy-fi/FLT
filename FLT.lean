@@ -2597,10 +2597,15 @@ public import FLT.Mazur.AdicSquareZeroFormalHomotopy
 public import FLT.Mazur.AffineAdicCohomologyImage
 public import FLT.Mazur.AffineAdicFormalComparison
 public import FLT.Mazur.AffineAlgebraDescentCoaction
+public import FLT.Mazur.AffineAlgebraDescentInvariantNeighborhoods
+public import FLT.Mazur.AffineAlgebraDescentInvariantOpenQuotient
+public import FLT.Mazur.AffineAlgebraDescentInvariantOpenScheme
+public import FLT.Mazur.AffineAlgebraDescentInvariantQuotient
 public import FLT.Mazur.AffineAlgebraDescentKernelPair
 public import FLT.Mazur.AffineAlgebraDescentMorphisms
 public import FLT.Mazur.AffineAlgebraDescentOverlap
 public import FLT.Mazur.AffineAlgebraDescentReconstruction
+public import FLT.Mazur.AffineAlgebraDescentRelativeRelation
 public import FLT.Mazur.AffineAlgebraDescentScheme
 public import FLT.Mazur.AffineAlgebraDescentSplitEqualizer
 public import FLT.Mazur.AffineAnnihilator
@@ -6794,6 +6799,9 @@ public import FLT.Mazur.RelativePinchingDescent
 public import FLT.Mazur.RelativePinchingLocalDescent
 public import FLT.Mazur.RelativePinchingNeighborhoods
 public import FLT.Mazur.RelativeRankOneDivisorUniqueness
+public import FLT.Mazur.RelativeRelationFpqcInvariantQuotient
+public import FLT.Mazur.RelativeRelationFpqcOrbitComparison
+public import FLT.Mazur.RelativeRelationFpqcSectionComparison
 public import FLT.Mazur.RelativeRelationInvariantAffineComparison
 public import FLT.Mazur.RelativeRelationInvariantLocallyRinged
 public import FLT.Mazur.RelativeRelationInvariantSectionRings
@@ -7096,6 +7104,7 @@ public import FLT.Mazur.SchemeFppfSourceLineGluing
 public import FLT.Mazur.SchemeFppfSourceLineMap
 public import FLT.Mazur.SchemeFppfSourceLineMapEquivalence
 public import FLT.Mazur.SchemeFppfSourceLineMapPreimage
+public import FLT.Mazur.SchemeFpqcOpenSectionDescent
 public import FLT.Mazur.SchemeGeometricDescentCocycleTest
 public import FLT.Mazur.SchemeGeometricDescentData
 public import FLT.Mazur.SchemeGeometricFiberH0Comparison
