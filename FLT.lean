@@ -9227,6 +9227,7 @@ public import FLT.Mazur.WeierstrassSmoothSevenPoints
 public import FLT.Mazur.WeierstrassSmoothSuccessiveIntegralTransport
 public import FLT.Mazur.WeierstrassSmoothSuccessiveResidueInputs
 public import FLT.Mazur.WeierstrassSmoothSuccessiveTensorInput
+public import FLT.Mazur.WeierstrassSmoothSuccessiveTransportedTensorInput
 public import FLT.Mazur.WeierstrassSmoothTransportedComparison
 public import FLT.Mazur.WeierstrassSmoothTransportedCover
 public import FLT.Mazur.WeierstrassSmoothTransportedOutputRegular
