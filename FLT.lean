@@ -5585,6 +5585,7 @@ public import FLT.Mazur.PolygonSmoothingConormalMap
 public import FLT.Mazur.PolygonSmoothingCoordinateIdeal
 public import FLT.Mazur.PolygonSmoothingCotangentCokernel
 public import FLT.Mazur.PolygonSmoothingCotangentFaithfulDescent
+public import FLT.Mazur.PolygonSmoothingCotangentFieldRank
 public import FLT.Mazur.PolygonSmoothingCotangentRelationSequence
 public import FLT.Mazur.PolygonSmoothingDerivation
 public import FLT.Mazur.PolygonSmoothingFirstCotangent
