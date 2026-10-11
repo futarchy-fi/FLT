@@ -4290,6 +4290,7 @@ public import FLT.Mazur.GlobalGenerationTransport
 public import FLT.Mazur.GlobalIdealPower
 public import FLT.Mazur.GlobalIdealPowerCompatibility
 public import FLT.Mazur.GlueDataQuasiSeparated
+public import FLT.Mazur.GradedLocalizationDegreeMap
 public import FLT.Mazur.GradedProjArbitraryBaseChange
 public import FLT.Mazur.GradedProjBaseChangeMap
 public import FLT.Mazur.GradedProjChartArbitraryBaseChange
@@ -5646,6 +5647,7 @@ public import FLT.Mazur.PolygonLineNodeRestriction
 public import FLT.Mazur.PolygonLineNormalization
 public import FLT.Mazur.PolygonMarkedSections
 public import FLT.Mazur.PolygonMarkingAffineNeighborhood
+public import FLT.Mazur.PolygonMultipleVeroneseProj
 public import FLT.Mazur.PolygonNodalCore
 public import FLT.Mazur.PolygonNodeAffineCharts
 public import FLT.Mazur.PolygonNodeBranchIntersection
@@ -5708,6 +5710,7 @@ public import FLT.Mazur.PolygonPinchingDiagram
 public import FLT.Mazur.PolygonPinchingFlatBaseChange
 public import FLT.Mazur.PolygonPinchingTensor
 public import FLT.Mazur.PolygonPolynomialMatching
+public import FLT.Mazur.PolygonPositiveRetainedStage
 public import FLT.Mazur.PolygonPowerBranchValues
 public import FLT.Mazur.PolygonPowerCanonicalSection
 public import FLT.Mazur.PolygonPowerNodeEndpoints
@@ -5812,6 +5815,7 @@ public import FLT.Mazur.PolygonVeroneseBoundedGenerators
 public import FLT.Mazur.PolygonVeroneseClosedGeneration
 public import FLT.Mazur.PolygonVeroneseClosedLifts
 public import FLT.Mazur.PolygonVeroneseCoefficientMap
+public import FLT.Mazur.PolygonVeroneseCoefficientReindexing
 public import FLT.Mazur.PolygonVeroneseDegreeComplete
 public import FLT.Mazur.PolygonVeroneseDegreeExactness
 public import FLT.Mazur.PolygonVeroneseDegreeFinite
@@ -5819,6 +5823,9 @@ public import FLT.Mazur.PolygonVeroneseEvaluationKernel
 public import FLT.Mazur.PolygonVeroneseFiniteType
 public import FLT.Mazur.PolygonVeroneseGrading
 public import FLT.Mazur.PolygonVeroneseHomogeneousReduction
+public import FLT.Mazur.PolygonVeroneseMultipleCharts
+public import FLT.Mazur.PolygonVeroneseMultipleExactness
+public import FLT.Mazur.PolygonVeroneseMultipleInclusion
 public import FLT.Mazur.PolygonVeroneseParameterIdeal
 public import FLT.Mazur.PolygonVeroneseProductLifting
 public import FLT.Mazur.PolygonVeroneseProperProj
