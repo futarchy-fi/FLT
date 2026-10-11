@@ -7722,6 +7722,7 @@ public import FLT.Mazur.WeierstrassDividedGlobalInitialAction
 public import FLT.Mazur.WeierstrassDividedGlobalInitialActionGeometry
 public import FLT.Mazur.WeierstrassDividedGlobalInitialActionLaws
 public import FLT.Mazur.WeierstrassDividedGlobalInitialComparison
+public import FLT.Mazur.WeierstrassDividedGlobalOriginalSmoothPoints
 public import FLT.Mazur.WeierstrassDividedGlobalPointAction
 public import FLT.Mazur.WeierstrassDividedGlobalRegularLift
 public import FLT.Mazur.WeierstrassDividedGlobalResidueNodes
