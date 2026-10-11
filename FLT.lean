@@ -8404,6 +8404,7 @@ public import FLT.Mazur.WeierstrassProductOverlapFlat
 public import FLT.Mazur.WeierstrassProductOverlapScheme
 public import FLT.Mazur.WeierstrassProjectiveAdditionBoundary
 public import FLT.Mazur.WeierstrassProjectiveAdditionChart
+public import FLT.Mazur.WeierstrassProjectiveCenterIdeal
 public import FLT.Mazur.WeierstrassProjectiveChartAlgebra
 public import FLT.Mazur.WeierstrassProjectiveChartEquation
 public import FLT.Mazur.WeierstrassProjectiveChartProduct
