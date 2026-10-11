@@ -3533,6 +3533,7 @@ public import FLT.Mazur.DivisorPowerH1Bound
 public import FLT.Mazur.DivisorPowerH1Vanishing
 public import FLT.Mazur.DivisorPowerHZeroTransition
 public import FLT.Mazur.DivisorPowerHigherVanishing
+public import FLT.Mazur.DivisorPowerLeadingClass
 public import FLT.Mazur.DivisorPowerTwistDegree
 public import FLT.Mazur.DivisorPowerVeryAmple
 public import FLT.Mazur.DivisorRestrictCoherence
