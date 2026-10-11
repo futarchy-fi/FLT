@@ -9011,6 +9011,7 @@ public import FLT.Mazur.WeierstrassSpecSectionMorphism
 public import FLT.Mazur.WeierstrassSpecSections
 public import FLT.Mazur.WeierstrassSplitDepthAffineParameters
 public import FLT.Mazur.WeierstrassSplitDepthConormal
+public import FLT.Mazur.WeierstrassSplitDepthExceptionalBranches
 public import FLT.Mazur.WeierstrassSplitDepthExceptionalCharacters
 public import FLT.Mazur.WeierstrassSplitDepthExceptionalScaling
 public import FLT.Mazur.WeierstrassSplitDepthResidueEquation
