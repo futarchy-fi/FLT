@@ -5449,6 +5449,7 @@ public import FLT.Mazur.OrderedHilbertEtaleGeometricLift
 public import FLT.Mazur.OrderedHilbertEtaleResidueLift
 public import FLT.Mazur.OrderedHilbertEtaleSeparableLift
 public import FLT.Mazur.OrderedHilbertEtaleStalkLift
+public import FLT.Mazur.OrderedHilbertEtaleTestCover
 public import FLT.Mazur.OrderedHilbertEtaleTestPoints
 public import FLT.Mazur.OrderedHilbertSeparableGeometricCoverage
 public import FLT.Mazur.OrderedProjectiveHilbertNaturality
