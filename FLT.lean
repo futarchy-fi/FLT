@@ -7581,6 +7581,7 @@ public import FLT.Mazur.WeierstrassDividedGlobalInitialActionLaws
 public import FLT.Mazur.WeierstrassDividedGlobalInitialComparison
 public import FLT.Mazur.WeierstrassDividedGlobalResidueNodes
 public import FLT.Mazur.WeierstrassDividedGlobalResidueOverlap
+public import FLT.Mazur.WeierstrassDividedGlobalSuccessiveCharts
 public import FLT.Mazur.WeierstrassDividedGlobalTensorAtlas
 public import FLT.Mazur.WeierstrassDividedGlobalTensorCharts
 public import FLT.Mazur.WeierstrassDividedGlobalTensorEmbedding
