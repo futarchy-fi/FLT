@@ -2952,6 +2952,7 @@ public import FLT.Mazur.AmpleRetainedChartGeneration
 public import FLT.Mazur.AmpleRetainedSectionCover
 public import FLT.Mazur.AmpleSectionCoverPullback
 public import FLT.Mazur.AmpleSmoothNonspecialLift
+public import FLT.Mazur.AmpleTwistLineDivisor
 public import FLT.Mazur.AmpleTwistedSectionLifting
 public import FLT.Mazur.AmpleVeroneseEvaluation
 public import FLT.Mazur.AmpleVeroneseMultiplication
