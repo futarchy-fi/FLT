@@ -4186,6 +4186,7 @@ public import FLT.Mazur.FlatQuotientLocalCartier
 public import FLT.Mazur.FlatScalarExactness
 public import FLT.Mazur.FlatScalarHomology
 public import FLT.Mazur.FlatSectionEqualizer
+public import FLT.Mazur.FlatSpectrumStructureRank
 public import FLT.Mazur.FlatStructureCohomology
 public import FLT.Mazur.FlatStructureScalarMonicity
 public import FLT.Mazur.FlatStructureSectionComplex
@@ -4924,6 +4925,7 @@ public import FLT.Mazur.ModuleCocycleSectionImage
 public import FLT.Mazur.ModuleCohomology
 public import FLT.Mazur.ModuleCohomologyExact
 public import FLT.Mazur.ModuleCohomologyRing
+public import FLT.Mazur.ModuleCohomologyScalarRestriction
 public import FLT.Mazur.ModuleCohomologyVanishing
 public import FLT.Mazur.ModuleComparedSectionRatio
 public import FLT.Mazur.ModuleDerivedAbelianComparison
@@ -5366,6 +5368,7 @@ public import FLT.Mazur.PolygonCompleteBoundarySectionTransport
 public import FLT.Mazur.PolygonCompleteBoundaryTransitionCoherence
 public import FLT.Mazur.PolygonCompleteClosedFiber
 public import FLT.Mazur.PolygonCompleteClosedGenus
+public import FLT.Mazur.PolygonCompleteClosedH1Scalars
 public import FLT.Mazur.PolygonCompleteClosedSingularPoints
 public import FLT.Mazur.PolygonCompleteClosedSmoothLocus
 public import FLT.Mazur.PolygonCompleteClosedSpecialization
@@ -5378,12 +5381,16 @@ public import FLT.Mazur.PolygonCompleteConstantSections
 public import FLT.Mazur.PolygonCompleteCoordinateEvaluation
 public import FLT.Mazur.PolygonCompleteFamilyFlatness
 public import FLT.Mazur.PolygonCompleteFiberMarkings
+public import FLT.Mazur.PolygonCompleteFieldH1
+public import FLT.Mazur.PolygonCompleteGenericGenus
+public import FLT.Mazur.PolygonCompleteGenericH1
 public import FLT.Mazur.PolygonCompleteGenericPureDimension
 public import FLT.Mazur.PolygonCompleteGenericRelativeDimension
 public import FLT.Mazur.PolygonCompleteGenericSmooth
 public import FLT.Mazur.PolygonCompleteGeometricGenericFiber
 public import FLT.Mazur.PolygonCompleteGeometricallyConnected
 public import FLT.Mazur.PolygonCompleteGeometricallyReduced
+public import FLT.Mazur.PolygonCompleteH1Rank
 public import FLT.Mazur.PolygonCompleteH1Reduction
 public import FLT.Mazur.PolygonCompleteLineOriginalReduction
 public import FLT.Mazur.PolygonCompleteLineQuotient
@@ -5722,6 +5729,7 @@ public import FLT.Mazur.PowerCohomologyReesScalars
 public import FLT.Mazur.PowerCohomologyScalarMaps
 public import FLT.Mazur.PowerCohomologyShift
 public import FLT.Mazur.PowerScalarSectionCoordinates
+public import FLT.Mazur.PowerSeriesCoefficientTransport
 public import FLT.Mazur.PowerSeriesLeadingComposition
 public import FLT.Mazur.PowerSeriesNilpotentHom
 public import FLT.Mazur.PowerSeriesParameterFlatness
@@ -5943,6 +5951,7 @@ public import FLT.Mazur.PrincipalQuotientRepresentatives
 public import FLT.Mazur.PrincipalRefinementOpenImmersion
 public import FLT.Mazur.PrincipalRefinementSquareCriteria
 public import FLT.Mazur.PrincipalRelationClosure
+public import FLT.Mazur.PrincipalResidueTensor
 public import FLT.Mazur.PrincipalRestrictionEquivalence
 public import FLT.Mazur.PrincipalScalarCohomology
 public import FLT.Mazur.PrincipalScalarCohomologyReduction
@@ -6919,6 +6928,7 @@ public import FLT.Mazur.SmoothSectionCartier
 public import FLT.Mazur.SpecCartesianAlgebraPushout
 public import FLT.Mazur.SpecChartIdealPreimage
 public import FLT.Mazur.SpectrumFieldCohomologyCoordinates
+public import FLT.Mazur.SpectrumRingCohomologyCoordinates
 public import FLT.Mazur.SpectrumSmoothFiniteFlatCartier
 public import FLT.Mazur.SplitEvaluationTensorKernel
 public import FLT.Mazur.SplitLineAffineNeighborhood
@@ -6965,6 +6975,7 @@ public import FLT.Mazur.StandardSmoothFieldCotangentRank
 public import FLT.Mazur.StandardSmoothFiniteFlatCartier
 public import FLT.Mazur.StandardSmoothFiniteSupportCartier
 public import FLT.Mazur.StandardSmoothLocalCartier
+public import FLT.Mazur.StructureCoefficientComposition
 public import FLT.Mazur.StructureCohomologyFinite
 public import FLT.Mazur.StructureCohomologyOverIso
 public import FLT.Mazur.StructureDirectImageHZero
@@ -6972,6 +6983,7 @@ public import FLT.Mazur.StructureDirectImageSections
 public import FLT.Mazur.StructureIdealPowerCohomology
 public import FLT.Mazur.StructureIdealPowerQuotient
 public import FLT.Mazur.StructureImageOpenChart
+public import FLT.Mazur.StructureRingCohomologyIso
 public import FLT.Mazur.SubfunctorRepresentedPullback
 public import FLT.Mazur.SuccessiveIncidenceAlgebra
 public import FLT.Mazur.SurjectiveAlgHomKernelEquiv
