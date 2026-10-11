@@ -4019,6 +4019,7 @@ public import FLT.Mazur.FiniteTypeAffineApproximation
 public import FLT.Mazur.FiniteTypeApproximationDiamonds
 public import FLT.Mazur.FiniteTypeApproximationMaps
 public import FLT.Mazur.FiniteTypeBaseAcyclicClassDivisor
+public import FLT.Mazur.FiniteTypeBaseClassDivisorNaturality
 public import FLT.Mazur.FiniteTypeBaseIndependentLineModel
 public import FLT.Mazur.FiniteTypeDiagramRefinement
 public import FLT.Mazur.FiniteTypeDiagramStages
