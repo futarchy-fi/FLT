@@ -5750,6 +5750,7 @@ public import FLT.Mazur.PolygonCompletePointCoordinateInjective
 public import FLT.Mazur.PolygonCompletePointCoordinateRange
 public import FLT.Mazur.PolygonCompletePointCubicRelation
 public import FLT.Mazur.PolygonCompletePointDimensions
+public import FLT.Mazur.PolygonCompletePointDivisorComparison
 public import FLT.Mazur.PolygonCompletePointExactMonomials
 public import FLT.Mazur.PolygonCompletePointFunctionDimensions
 public import FLT.Mazur.PolygonCompletePointFunctionNumerators
