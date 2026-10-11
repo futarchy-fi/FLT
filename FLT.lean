@@ -3085,9 +3085,16 @@ public import FLT.Mazur.BaseAdicThickening
 public import FLT.Mazur.BaseChangeCotangentFieldRank
 public import FLT.Mazur.BaseChangeSectionEquiv
 public import FLT.Mazur.BaseChangedPresentationModel
+public import FLT.Mazur.BaseMarkedHilbertChangeGeometry
+public import FLT.Mazur.BaseMarkedHilbertChangePicard
+public import FLT.Mazur.BaseMarkedHilbertChangePoints
+public import FLT.Mazur.BaseMarkedHilbertChangePullback
+public import FLT.Mazur.BaseMarkedHilbertChartChange
+public import FLT.Mazur.BaseMarkedHilbertChartPreimage
 public import FLT.Mazur.BaseMarkedHilbertCocycle
 public import FLT.Mazur.BaseMarkedHilbertFullIntersection
 public import FLT.Mazur.BaseMarkedHilbertGluedBase
+public import FLT.Mazur.BaseMarkedHilbertGluedChange
 public import FLT.Mazur.BaseMarkedHilbertGluedInjectivity
 public import FLT.Mazur.BaseMarkedHilbertGluedMap
 public import FLT.Mazur.BaseMarkedHilbertGluedPicard
@@ -3095,8 +3102,11 @@ public import FLT.Mazur.BaseMarkedHilbertGluing
 public import FLT.Mazur.BaseMarkedHilbertIdentities
 public import FLT.Mazur.BaseMarkedHilbertIntersection
 public import FLT.Mazur.BaseMarkedHilbertOverlap
+public import FLT.Mazur.BaseMarkedHilbertOverlapChange
 public import FLT.Mazur.BaseMarkedHilbertSchemeCocycle
 public import FLT.Mazur.BaseMarkedHilbertSchemeTriple
+public import FLT.Mazur.BaseMarkedHilbertTranslationCover
+public import FLT.Mazur.BaseMarkedHilbertTranslationDescent
 public import FLT.Mazur.BaseMarkedHilbertTriple
 public import FLT.Mazur.BaseOpenHilbertBaseChange
 public import FLT.Mazur.BaseOpenHilbertChartFunctions
@@ -8409,6 +8419,7 @@ public import FLT.Mazur.WeierstrassGlobalModificationZero
 public import FLT.Mazur.WeierstrassGlobalNegation
 public import FLT.Mazur.WeierstrassGlobalNegationInvolution
 public import FLT.Mazur.WeierstrassGlobalPolynomialSwap
+public import FLT.Mazur.WeierstrassHorizontalConicPunctureResidue
 public import FLT.Mazur.WeierstrassInfinitesimalAddition
 public import FLT.Mazur.WeierstrassInfinitesimalChart
 public import FLT.Mazur.WeierstrassInfinitesimalFactorization
@@ -9035,6 +9046,10 @@ public import FLT.Mazur.WeierstrassSmoothGoodReductionGroup
 public import FLT.Mazur.WeierstrassSmoothGoodReductionLocal
 public import FLT.Mazur.WeierstrassSmoothGroup
 public import FLT.Mazur.WeierstrassSmoothGroupOperations
+public import FLT.Mazur.WeierstrassSmoothHorizontalConcreteRefinement
+public import FLT.Mazur.WeierstrassSmoothHorizontalProductResidue
+public import FLT.Mazur.WeierstrassSmoothHorizontalProductSource
+public import FLT.Mazur.WeierstrassSmoothHorizontalResidueCoordinates
 public import FLT.Mazur.WeierstrassSmoothInfinityCommutativity
 public import FLT.Mazur.WeierstrassSmoothInfinityDomain
 public import FLT.Mazur.WeierstrassSmoothInfinityIdentity
@@ -9069,6 +9084,8 @@ public import FLT.Mazur.WeierstrassSmoothTripleInputRegular
 public import FLT.Mazur.WeierstrassSmoothTripleProduct
 public import FLT.Mazur.WeierstrassSmoothTripleProjections
 public import FLT.Mazur.WeierstrassSmoothYAddition
+public import FLT.Mazur.WeierstrassSmoothYAffineResidue
+public import FLT.Mazur.WeierstrassSmoothYAffineSource
 public import FLT.Mazur.WeierstrassSmoothYCompatibility
 public import FLT.Mazur.WeierstrassSmoothYIdentity
 public import FLT.Mazur.WeierstrassSmoothYProductCover
