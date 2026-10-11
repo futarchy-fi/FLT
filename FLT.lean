@@ -6347,6 +6347,7 @@ public import FLT.Mazur.ReesRelativeModuleMap
 public import FLT.Mazur.ReesRelativeNaturality
 public import FLT.Mazur.ReesRelativeScalarTower
 public import FLT.Mazur.RefinedChartSpectrum
+public import FLT.Mazur.RegularCenterDoubleOverlap
 public import FLT.Mazur.RegularCenterOverlap
 public import FLT.Mazur.RegularCenterOverlapScheme
 public import FLT.Mazur.RegularCenterRatioCover
