@@ -2801,6 +2801,7 @@ public import FLT.Mazur.AffineRefinementPullback
 public import FLT.Mazur.AffineRefinementReconstructionMap
 public import FLT.Mazur.AffineRefinementReconstructionRecognition
 public import FLT.Mazur.AffineRelativeFiberCriterion
+public import FLT.Mazur.AffineRelativeLineModel
 public import FLT.Mazur.AffineResidueEvaluationComparison
 public import FLT.Mazur.AffineResidueLineRetraction
 public import FLT.Mazur.AffineResidueSectionCoefficients
@@ -3117,6 +3118,7 @@ public import FLT.Mazur.BoundedFlatFiberVanishing
 public import FLT.Mazur.BoundedFlatVanishingStalks
 public import FLT.Mazur.CanonicalCechSectionComparison
 public import FLT.Mazur.CanonicalLineSectionBaseChange
+public import FLT.Mazur.CanonicalNonspecialDivisorCover
 public import FLT.Mazur.CanonicalSectionComposition
 public import FLT.Mazur.CanonicalSectionNaturality
 public import FLT.Mazur.CartesianAtlasAffineIntersections
@@ -3476,6 +3478,7 @@ public import FLT.Mazur.DivisorSectionExact
 public import FLT.Mazur.DivisorSectionRigidity
 public import FLT.Mazur.DivisorStalkLength
 public import FLT.Mazur.DivisorTensorSequence
+public import FLT.Mazur.DivisorTranslationLine
 public import FLT.Mazur.DivisorTwistedDegree
 public import FLT.Mazur.DivisorTwistedSequence
 public import FLT.Mazur.DoubleRootComponentBound
@@ -4155,6 +4158,7 @@ public import FLT.Mazur.FiniteTypePrincipalPresentation
 public import FLT.Mazur.FiniteTypePrincipalSurjectiveLifts
 public import FLT.Mazur.FiniteTypeRelationPresentation
 public import FLT.Mazur.FiniteTypeRelativeClassOpenNaturality
+public import FLT.Mazur.FiniteTypeRelativeLineModel
 public import FLT.Mazur.FiniteTypeTestAbelEquivalence
 public import FLT.Mazur.FiniteTypeTestAcyclicDirectImage
 public import FLT.Mazur.FiniteTypeTestAcyclicOpen
@@ -4401,6 +4405,7 @@ public import FLT.Mazur.HilbertChartUniversalClosedFamily
 public import FLT.Mazur.HilbertChartUniversalFamily
 public import FLT.Mazur.HilbertCommonAmbientOverlap
 public import FLT.Mazur.HilbertCommonOpenRestriction
+public import FLT.Mazur.HilbertDivisorDegreePresentation
 public import FLT.Mazur.HilbertFaithfullyFlatTupleBasis
 public import FLT.Mazur.HilbertIntrinsicBasisBaseChange
 public import FLT.Mazur.HilbertIntrinsicBasisEquiv
@@ -4868,6 +4873,7 @@ public import FLT.Mazur.LocalCompletionModelModule
 public import FLT.Mazur.LocalCompletionSmoothCriterion
 public import FLT.Mazur.LocalFiberRegularQuotient
 public import FLT.Mazur.LocalFiberTensorInjectivity
+public import FLT.Mazur.LocalHilbertTranslationCover
 public import FLT.Mazur.LocalLineTwistLocalization
 public import FLT.Mazur.LocalLocalizationCartier
 public import FLT.Mazur.LocalizationCech
@@ -5155,8 +5161,10 @@ public import FLT.Mazur.NoetherianSumCechComplex
 public import FLT.Mazur.NoetherianSumCechInclusion
 public import FLT.Mazur.NoetherianSumCechTerms
 public import FLT.Mazur.NoetherianUniversalStructureSheaf
+public import FLT.Mazur.NonspecialDivisorLineCover
 public import FLT.Mazur.NonspecialDivisorNeighborhood
 public import FLT.Mazur.NonspecialDivisorTestCover
+public import FLT.Mazur.NonspecialDivisorTranslationCover
 public import FLT.Mazur.NonzeroLineSectionExact
 public import FLT.Mazur.NonzeroSectionPointCondition
 public import FLT.Mazur.NormalizedSectionLine
@@ -7223,6 +7231,9 @@ public import FLT.Mazur.ValuationProjectiveNormalization
 public import FLT.Mazur.ValuationRingCompleteModel
 public import FLT.Mazur.ValuationRingHenselianModel
 public import FLT.Mazur.ValuationRingModel
+public import FLT.Mazur.VariableTranslatedHilbertChart
+public import FLT.Mazur.VariableTranslatedHilbertOverlap
+public import FLT.Mazur.VariableTranslatedHilbertRepresentation
 public import FLT.Mazur.VeryAmpleAffineSections
 public import FLT.Mazur.VeryAmplePresentationBaseChange
 public import FLT.Mazur.WeierstrassAdditionAffineCoverage
