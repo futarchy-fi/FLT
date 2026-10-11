@@ -6047,6 +6047,7 @@ public import FLT.Mazur.ProperOnlyAmpleFiberNeighborhood
 public import FLT.Mazur.ProperOnlyRelativeAmpleFibers
 public import FLT.Mazur.ProperPointExtension
 public import FLT.Mazur.ProperPointedLineSheafDescent
+public import FLT.Mazur.ProperPointedRelativeFppfIso
 public import FLT.Mazur.ProperPushforwardReconstructionUnit
 public import FLT.Mazur.ProperRankOneDivisorNaturality
 public import FLT.Mazur.ProperRankOneNormalizedDivisor
