@@ -7315,6 +7315,7 @@ public import FLT.Mazur.SmoothFiniteFlatIdealCharts
 public import FLT.Mazur.SmoothFiniteSubgroupAmple
 public import FLT.Mazur.SmoothFiniteSubschemeCartier
 public import FLT.Mazur.SmoothGeometricAcyclicRankOne
+public import FLT.Mazur.SmoothGeometricSeparablePoints
 public import FLT.Mazur.SmoothGeometricallyReduced
 public import FLT.Mazur.SmoothHilbertGeometricCoverage
 public import FLT.Mazur.SmoothHilbertIntersectionComponents
