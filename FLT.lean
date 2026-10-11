@@ -7243,6 +7243,7 @@ public import FLT.Mazur.TildeSourceSectionComparison
 public import FLT.Mazur.TorusChartScalars
 public import FLT.Mazur.TranslatedHilbertAffineImmersion
 public import FLT.Mazur.TranslatedHilbertAffineRestriction
+public import FLT.Mazur.TranslatedHilbertCanonicalAffineChart
 public import FLT.Mazur.TranslatedHilbertChartFunctions
 public import FLT.Mazur.TranslatedHilbertChartOverlap
 public import FLT.Mazur.TranslatedHilbertChartSourceSections
