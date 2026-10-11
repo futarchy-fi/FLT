@@ -5657,6 +5657,7 @@ public import FLT.Mazur.PolygonMarkedSections
 public import FLT.Mazur.PolygonMarkingAffineNeighborhood
 public import FLT.Mazur.PolygonMultipleStageGeneratingCover
 public import FLT.Mazur.PolygonMultipleStageUnitChart
+public import FLT.Mazur.PolygonMultipleVeroneseGeometry
 public import FLT.Mazur.PolygonMultipleVeroneseIso
 public import FLT.Mazur.PolygonMultipleVeroneseProj
 public import FLT.Mazur.PolygonMultipleVeroneseStageNaturality
