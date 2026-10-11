@@ -4889,6 +4889,7 @@ public import FLT.Mazur.LaurentTensor
 public import FLT.Mazur.LaurentUnitMultiplication
 public import FLT.Mazur.LaurentUnitPoints
 public import FLT.Mazur.LineBundleSectionOpenPullback
+public import FLT.Mazur.LineCartierComplementRestriction
 public import FLT.Mazur.LineDescentDiagonalRigidity
 public import FLT.Mazur.LineDualPullbackSquare
 public import FLT.Mazur.LineEndpointTransport
