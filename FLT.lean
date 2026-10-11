@@ -6929,6 +6929,7 @@ public import FLT.Mazur.SmoothFiniteSubgroupAmple
 public import FLT.Mazur.SmoothFiniteSubschemeCartier
 public import FLT.Mazur.SmoothGeometricAcyclicRankOne
 public import FLT.Mazur.SmoothGeometricallyReduced
+public import FLT.Mazur.SmoothNonspecialLineLift
 public import FLT.Mazur.SmoothOpenSectionCartier
 public import FLT.Mazur.SmoothQuasiFiniteCartierCriterion
 public import FLT.Mazur.SmoothQuasiFiniteIdealCharts
