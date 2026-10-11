@@ -6346,6 +6346,7 @@ public import FLT.Mazur.ReesRelativeModuleMap
 public import FLT.Mazur.ReesRelativeNaturality
 public import FLT.Mazur.ReesRelativeScalarTower
 public import FLT.Mazur.RefinedChartSpectrum
+public import FLT.Mazur.RegularCenterRatioCover
 public import FLT.Mazur.RegularParameterIdeals
 public import FLT.Mazur.RegularPrincipalStructureQuotient
 public import FLT.Mazur.RelativeAbelFiberOriginalSquare
