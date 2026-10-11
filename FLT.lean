@@ -7271,6 +7271,7 @@ public import FLT.Mazur.TranslatedHilbertPicardChart
 public import FLT.Mazur.TranslatedHilbertRelationOpenSections
 public import FLT.Mazur.TranslatedHilbertRestrictedRelation
 public import FLT.Mazur.TranslatedHilbertSchemeCocycle
+public import FLT.Mazur.TranslatedHilbertSchemeLocus
 public import FLT.Mazur.TranslatedHilbertSchemeTriple
 public import FLT.Mazur.TranslatedHilbertSourceIntersection
 public import FLT.Mazur.TranslatedHilbertTestUnion
