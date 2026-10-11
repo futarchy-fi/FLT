@@ -3105,6 +3105,7 @@ public import FLT.Mazur.BaseMarkedHilbertOverlapChange
 public import FLT.Mazur.BaseMarkedHilbertSchemeCocycle
 public import FLT.Mazur.BaseMarkedHilbertSchemeTriple
 public import FLT.Mazur.BaseMarkedHilbertTranslationCover
+public import FLT.Mazur.BaseMarkedHilbertTranslationDescent
 public import FLT.Mazur.BaseMarkedHilbertTriple
 public import FLT.Mazur.BaseOpenHilbertBaseChange
 public import FLT.Mazur.BaseOpenHilbertChartFunctions
