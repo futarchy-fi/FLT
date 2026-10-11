@@ -2683,6 +2683,7 @@ public import FLT.Mazur.AffineEffectiveRefinementIdentity
 public import FLT.Mazur.AffineEffectiveRefinementNaturality
 public import FLT.Mazur.AffineEffectiveSecondReconstruction
 public import FLT.Mazur.AffineEffectiveSuccessiveReconstruction
+public import FLT.Mazur.AffineEnvelopeFiniteNeighborhood
 public import FLT.Mazur.AffineFaithfullyFlatEpimorphisms
 public import FLT.Mazur.AffineFaithfullyFlatMonomorphisms
 public import FLT.Mazur.AffineFaithfullyFlatPullbackFaithful
@@ -2725,6 +2726,11 @@ public import FLT.Mazur.AffineGeometricReconstructionCompatibility
 public import FLT.Mazur.AffineGeometricRefinementData
 public import FLT.Mazur.AffineGeometricTensorCocycle
 public import FLT.Mazur.AffineGeometricTensorDatum
+public import FLT.Mazur.AffineHilbertChartRelation
+public import FLT.Mazur.AffineHilbertPrincipalTensorModel
+public import FLT.Mazur.AffineHilbertRelationNeighborhoods
+public import FLT.Mazur.AffineHilbertRelationOperations
+public import FLT.Mazur.AffineHilbertRelationTensorCharts
 public import FLT.Mazur.AffineIdealContainment
 public import FLT.Mazur.AffineIdealCoordinates
 public import FLT.Mazur.AffineIdealPowerExtension
@@ -2791,6 +2797,7 @@ public import FLT.Mazur.AffinePicardComparison
 public import FLT.Mazur.AffinePicardSections
 public import FLT.Mazur.AffinePieceSectionLocalization
 public import FLT.Mazur.AffineProductMap
+public import FLT.Mazur.AffineProductTensorCoordinates
 public import FLT.Mazur.AffineProjectivePointLineCover
 public import FLT.Mazur.AffinePullbackCoefficientRecognition
 public import FLT.Mazur.AffinePullbackComparisonSections
@@ -3439,6 +3446,7 @@ public import FLT.Mazur.CompatibleSubgroupIsoBaseChange
 public import FLT.Mazur.ConnectedClosedFiberThickening
 public import FLT.Mazur.ConnectedFiberGeneralization
 public import FLT.Mazur.ConnectedFiberPrimeStratum
+public import FLT.Mazur.ConnectedIrreducibleNeighborhoods
 public import FLT.Mazur.ConnectedOfGlobalSections
 public import FLT.Mazur.ConnectedPointedLineSheafDescent
 public import FLT.Mazur.ConstantCyclicAffineGeometry
@@ -3574,6 +3582,7 @@ public import FLT.Mazur.DivisorTranslationLine
 public import FLT.Mazur.DivisorTwistedDegree
 public import FLT.Mazur.DivisorTwistedProjection
 public import FLT.Mazur.DivisorTwistedSequence
+public import FLT.Mazur.DomainLocalizationNeighborhood
 public import FLT.Mazur.DoubleRootComponentBound
 public import FLT.Mazur.DualAtlasAmbientBaseChange
 public import FLT.Mazur.DualAtlasAmbientBaseChangeCharts
@@ -3945,6 +3954,8 @@ public import FLT.Mazur.EquifiberedSchemeGluing
 public import FLT.Mazur.EtaleAlgebraReduced
 public import FLT.Mazur.EtaleCoordinate
 public import FLT.Mazur.EtaleCoordinateSlice
+public import FLT.Mazur.EtaleCurveLocalDomain
+public import FLT.Mazur.EtaleCurveValuation
 public import FLT.Mazur.EtaleDimGe
 public import FLT.Mazur.EtaleDimLe
 public import FLT.Mazur.EtaleFiniteQuotientBranch
@@ -5752,6 +5763,7 @@ public import FLT.Mazur.PolygonCompletePointLeadingClasses
 public import FLT.Mazur.PolygonCompletePointLeadingProducts
 public import FLT.Mazur.PolygonCompletePointMonomialBasis
 public import FLT.Mazur.PolygonCompletePointNewSections
+public import FLT.Mazur.PolygonCompletePointNonsingular
 public import FLT.Mazur.PolygonCompletePointNormalizedPoles
 public import FLT.Mazur.PolygonCompletePointPoleFunctions
 public import FLT.Mazur.PolygonCompletePointPowerComparison
@@ -5760,6 +5772,8 @@ public import FLT.Mazur.PolygonCompletePointSectionBaseChange
 public import FLT.Mazur.PolygonCompletePointWeierstrassEquation
 public import FLT.Mazur.PolygonCompletePrincipalClosedFiber
 public import FLT.Mazur.PolygonCompleteSmoothDimensionOpen
+public import FLT.Mazur.PolygonCompleteSmoothIrreducible
+public import FLT.Mazur.PolygonCompleteSmoothPointAffine
 public import FLT.Mazur.PolygonCompleteStageMarkings
 public import FLT.Mazur.PolygonCompleteStructureCohomology
 public import FLT.Mazur.PolygonCompleteUniversalFunctions
@@ -6727,6 +6741,7 @@ public import FLT.Mazur.RegularCenterResidueConormal
 public import FLT.Mazur.RegularCenterResidueConormalRatio
 public import FLT.Mazur.RegularCenterRestriction
 public import FLT.Mazur.RegularCenterSeparatedLiftExt
+public import FLT.Mazur.RegularParameterDomain
 public import FLT.Mazur.RegularParameterIdeals
 public import FLT.Mazur.RegularPrincipalOpenLiftExt
 public import FLT.Mazur.RegularPrincipalStructureQuotient
@@ -7366,8 +7381,10 @@ public import FLT.Mazur.SmoothBaseChangeDimensionOpen
 public import FLT.Mazur.SmoothCotangentRankGenerization
 public import FLT.Mazur.SmoothCurveDimension
 public import FLT.Mazur.SmoothCurveFiberCartier
+public import FLT.Mazur.SmoothCurveIrreducible
 public import FLT.Mazur.SmoothCurvePicardDegree
 public import FLT.Mazur.SmoothCurvePureDimension
+public import FLT.Mazur.SmoothCurveValuationStalk
 public import FLT.Mazur.SmoothDimension
 public import FLT.Mazur.SmoothDimensionBound
 public import FLT.Mazur.SmoothEtaleResidueLift
@@ -7470,6 +7487,7 @@ public import FLT.Mazur.StalkBaseNumeratorOpen
 public import FLT.Mazur.StalkBaseSectionLifting
 public import FLT.Mazur.StalkBaseSectionNumerator
 public import FLT.Mazur.StandardSmoothCoefficientFiber
+public import FLT.Mazur.StandardSmoothCurveLocalDomain
 public import FLT.Mazur.StandardSmoothFieldCotangentRank
 public import FLT.Mazur.StandardSmoothFiniteFlatCartier
 public import FLT.Mazur.StandardSmoothFiniteSupportCartier
@@ -7697,11 +7715,13 @@ public import FLT.Mazur.ValuationProjectiveNormalization
 public import FLT.Mazur.ValuationRingCompleteModel
 public import FLT.Mazur.ValuationRingHenselianModel
 public import FLT.Mazur.ValuationRingModel
+public import FLT.Mazur.VariableHilbertAffineEnvelope
 public import FLT.Mazur.VariableHilbertAffinePointRefinement
 public import FLT.Mazur.VariableHilbertChartRelation
 public import FLT.Mazur.VariableHilbertChartRelationOperations
 public import FLT.Mazur.VariableHilbertChartRelationPullback
 public import FLT.Mazur.VariableHilbertEtaleRelation
+public import FLT.Mazur.VariableHilbertFiniteRelationFibers
 public import FLT.Mazur.VariableHilbertIntersectionBaseChange
 public import FLT.Mazur.VariableHilbertInvariantFunctionDescent
 public import FLT.Mazur.VariableHilbertInvariantOpenDescent
@@ -7772,6 +7792,7 @@ public import FLT.Mazur.WeierstrassAffineProductDifference
 public import FLT.Mazur.WeierstrassAffineProductSwap
 public import FLT.Mazur.WeierstrassAffineRelativeSmoothCriterion
 public import FLT.Mazur.WeierstrassAffineRelativeTangent
+public import FLT.Mazur.WeierstrassAffineSmoothDiscriminant
 public import FLT.Mazur.WeierstrassAffineTripleDescent
 public import FLT.Mazur.WeierstrassAffineVariableChangeEquiv
 public import FLT.Mazur.WeierstrassAffineVariableChangeMap
