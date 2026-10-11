@@ -7597,6 +7597,12 @@ public import FLT.Mazur.WeierstrassDividedFiniteTensorIntersection
 public import FLT.Mazur.WeierstrassDividedFiniteTensorOverlap
 public import FLT.Mazur.WeierstrassDividedFiniteYBoundary
 public import FLT.Mazur.WeierstrassDividedFiniteYStep
+public import FLT.Mazur.WeierstrassDividedFirstActionAtlas
+public import FLT.Mazur.WeierstrassDividedFirstActionInput
+public import FLT.Mazur.WeierstrassDividedFirstFractionAction
+public import FLT.Mazur.WeierstrassDividedFirstFractionAlgebra
+public import FLT.Mazur.WeierstrassDividedFirstFractionCoordinates
+public import FLT.Mazur.WeierstrassDividedFirstFractionDomain
 public import FLT.Mazur.WeierstrassDividedFullResidueAtlas
 public import FLT.Mazur.WeierstrassDividedGlobalConicCoordinates
 public import FLT.Mazur.WeierstrassDividedGlobalConicIntersection
@@ -7617,6 +7623,9 @@ public import FLT.Mazur.WeierstrassDividedGlobalInitialActionLaws
 public import FLT.Mazur.WeierstrassDividedGlobalInitialComparison
 public import FLT.Mazur.WeierstrassDividedGlobalResidueNodes
 public import FLT.Mazur.WeierstrassDividedGlobalResidueOverlap
+public import FLT.Mazur.WeierstrassDividedGlobalStepOriginal
+public import FLT.Mazur.WeierstrassDividedGlobalSuccessiveCharts
+public import FLT.Mazur.WeierstrassDividedGlobalSuccessiveCover
 public import FLT.Mazur.WeierstrassDividedGlobalTensorAtlas
 public import FLT.Mazur.WeierstrassDividedGlobalTensorCharts
 public import FLT.Mazur.WeierstrassDividedGlobalTensorEmbedding
