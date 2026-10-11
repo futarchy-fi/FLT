@@ -7562,6 +7562,7 @@ public import FLT.Mazur.WeierstrassDividedFiniteTensorOverlap
 public import FLT.Mazur.WeierstrassDividedFiniteYBoundary
 public import FLT.Mazur.WeierstrassDividedFiniteYStep
 public import FLT.Mazur.WeierstrassDividedFirstActionInput
+public import FLT.Mazur.WeierstrassDividedFirstFractionDomain
 public import FLT.Mazur.WeierstrassDividedFullResidueAtlas
 public import FLT.Mazur.WeierstrassDividedGlobalConicCoordinates
 public import FLT.Mazur.WeierstrassDividedGlobalConicIntersection
