@@ -8087,6 +8087,7 @@ public import FLT.Mazur.WeierstrassLeftSmoothProductOpen
 public import FLT.Mazur.WeierstrassLeftSmoothReciprocalTriple
 public import FLT.Mazur.WeierstrassLeftSmoothRestriction
 public import FLT.Mazur.WeierstrassLeftSmoothRestrictionCharts
+public import FLT.Mazur.WeierstrassLeftSmoothSectionTranslation
 public import FLT.Mazur.WeierstrassLeftSmoothSevenPoints
 public import FLT.Mazur.WeierstrassLeftSmoothTranslationGraph
 public import FLT.Mazur.WeierstrassLeftSmoothTransportedComparison
