@@ -2577,6 +2577,7 @@ public import FLT.Mazur.AdicLocalizedH1Comparison
 public import FLT.Mazur.AdicMaximalCompletion
 public import FLT.Mazur.AdicModuleIdealTransport
 public import FLT.Mazur.AdicModuleScalarChange
+public import FLT.Mazur.AdicOriginalSectionReconstruction
 public import FLT.Mazur.AdicOriginalSpaceProjection
 public import FLT.Mazur.AdicPolynomialPresentationLift
 public import FLT.Mazur.AdicPresentationDerivation
@@ -2742,6 +2743,7 @@ public import FLT.Mazur.AffineLineCoalgebraDescent
 public import FLT.Mazur.AffineLineCoefficients
 public import FLT.Mazur.AffineLineTwistLocalization
 public import FLT.Mazur.AffineLocalFiberRegularQuotient
+public import FLT.Mazur.AffineLocalHilbertTranslationCover
 public import FLT.Mazur.AffineModuleCoalgebraDescent
 public import FLT.Mazur.AffineModuleEpimorphisms
 public import FLT.Mazur.AffineModuleExact
@@ -2951,6 +2953,7 @@ public import FLT.Mazur.AmpleRetainedChartGeneration
 public import FLT.Mazur.AmpleRetainedSectionCover
 public import FLT.Mazur.AmpleSectionCoverPullback
 public import FLT.Mazur.AmpleSmoothNonspecialLift
+public import FLT.Mazur.AmpleTwistLineDivisor
 public import FLT.Mazur.AmpleTwistedSectionLifting
 public import FLT.Mazur.AmpleVeroneseEvaluation
 public import FLT.Mazur.AmpleVeroneseMultiplication
@@ -3119,6 +3122,7 @@ public import FLT.Mazur.BoundedFlatVanishingStalks
 public import FLT.Mazur.CanonicalCechSectionComparison
 public import FLT.Mazur.CanonicalLineSectionBaseChange
 public import FLT.Mazur.CanonicalNonspecialDivisorCover
+public import FLT.Mazur.CanonicalRelativeLineModel
 public import FLT.Mazur.CanonicalSectionComposition
 public import FLT.Mazur.CanonicalSectionNaturality
 public import FLT.Mazur.CartesianAtlasAffineIntersections
@@ -3362,6 +3366,7 @@ public import FLT.Mazur.CompactOpenSectionDescent
 public import FLT.Mazur.CompactOpenUnitDescent
 public import FLT.Mazur.CompactSchemeIntegerDescent
 public import FLT.Mazur.CompactSeparatedPushforward
+public import FLT.Mazur.ComparedStageSectionReconstruction
 public import FLT.Mazur.CompatibleSubgroupAmple
 public import FLT.Mazur.CompatibleSubgroupCyclic
 public import FLT.Mazur.CompatibleSubgroupIdealIso
@@ -4021,6 +4026,7 @@ public import FLT.Mazur.FinitePolynomialDiagramRefinement
 public import FLT.Mazur.FinitePolynomialEquationSeeds
 public import FLT.Mazur.FinitePolynomialStableRelations
 public import FLT.Mazur.FinitePolynomialStableStages
+public import FLT.Mazur.FinitePresentationHilbertTranslationCover
 public import FLT.Mazur.FinitePresentationIntegerModel
 public import FLT.Mazur.FinitePresentationSurjectiveScalars
 public import FLT.Mazur.FinitePresentedFlatQuotientIdeal
@@ -4978,6 +4984,7 @@ public import FLT.Mazur.ModulePresheafLinearHom
 public import FLT.Mazur.ModulePresheafPullbackSections
 public import FLT.Mazur.ModulePresheafTensorHom
 public import FLT.Mazur.ModulePresheafTensorPullback
+public import FLT.Mazur.ModulePullbackComparisonTransport
 public import FLT.Mazur.ModulePullbackMapEquality
 public import FLT.Mazur.ModulePullbackRestrictionHorizontal
 public import FLT.Mazur.ModulePullbackRestrictionPasting
@@ -5407,6 +5414,7 @@ public import FLT.Mazur.PolygonCompleteCoefficientHomExt
 public import FLT.Mazur.PolygonCompleteCoefficientLine
 public import FLT.Mazur.PolygonCompleteCoefficientOpens
 public import FLT.Mazur.PolygonCompleteCoefficientReconstruction
+public import FLT.Mazur.PolygonCompleteComparedSectionReconstruction
 public import FLT.Mazur.PolygonCompleteConstantSections
 public import FLT.Mazur.PolygonCompleteCoordinateEvaluation
 public import FLT.Mazur.PolygonCompleteDivisorLine
@@ -5431,6 +5439,9 @@ public import FLT.Mazur.PolygonCompleteLineOriginalReduction
 public import FLT.Mazur.PolygonCompleteLineQuotient
 public import FLT.Mazur.PolygonCompleteLineSectionReconstruction
 public import FLT.Mazur.PolygonCompleteMarkedClosedFiber
+public import FLT.Mazur.PolygonCompleteMarkedLineModel
+public import FLT.Mazur.PolygonCompleteMarkedModelSections
+public import FLT.Mazur.PolygonCompleteMarkedStageComparison
 public import FLT.Mazur.PolygonCompleteMarkingAmple
 public import FLT.Mazur.PolygonCompleteMarkingCartier
 public import FLT.Mazur.PolygonCompleteMarkingDivisor
@@ -5473,6 +5484,7 @@ public import FLT.Mazur.PolygonCompleteNodeStalkCompletion
 public import FLT.Mazur.PolygonCompleteNodeStalkEvaluation
 public import FLT.Mazur.PolygonCompleteNodeStalkH1Equiv
 public import FLT.Mazur.PolygonCompleteNodeStalkMap
+public import FLT.Mazur.PolygonCompleteOriginalSectionReconstruction
 public import FLT.Mazur.PolygonCompletePrincipalClosedFiber
 public import FLT.Mazur.PolygonCompleteSmoothDimensionOpen
 public import FLT.Mazur.PolygonCompleteStageMarkings
@@ -6958,6 +6970,12 @@ public import FLT.Mazur.SheafPullbackSectionReconstruction
 public import FLT.Mazur.SheafPullbackSectionSquare
 public import FLT.Mazur.SheafPullbackTestReconstruction
 public import FLT.Mazur.ShortComplexSumHomologyInclusion
+public import FLT.Mazur.SmallAffineParameterBases
+public import FLT.Mazur.SmallHilbertPresentation
+public import FLT.Mazur.SmallHilbertPresentationPullback
+public import FLT.Mazur.SmallHilbertTranslationAtlas
+public import FLT.Mazur.SmallRelativeLineParameters
+public import FLT.Mazur.SmallSchemePicard
 public import FLT.Mazur.SmoothAffineCoefficientModels
 public import FLT.Mazur.SmoothAffineLineNoetherianModel
 public import FLT.Mazur.SmoothAlgebraReduced
