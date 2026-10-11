@@ -7189,6 +7189,7 @@ public import FLT.Mazur.SmoothTranslationChartOrbitHomeomorph
 public import FLT.Mazur.SmoothTranslationGeometricClass
 public import FLT.Mazur.SmoothTranslationOrbitCover
 public import FLT.Mazur.SmoothTranslationOrbitOpen
+public import FLT.Mazur.SmoothTranslationOriginalInvariantDescent
 public import FLT.Mazur.SmoothTranslationRestrictedRelationCover
 public import FLT.Mazur.SpecCartesianAlgebraPushout
 public import FLT.Mazur.SpecChartIdealPreimage
