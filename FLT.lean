@@ -6512,6 +6512,7 @@ public import FLT.Mazur.RelativeRankOneDivisorUniqueness
 public import FLT.Mazur.RelativeRelationInvariantSections
 public import FLT.Mazur.RelativeRelationInvariantSheaf
 public import FLT.Mazur.RelativeRelationOrbit
+public import FLT.Mazur.RelativeRelationOrbitCoequalizer
 public import FLT.Mazur.RelativeRelationOrbitOpens
 public import FLT.Mazur.RelativeRelationOrbitTopology
 public import FLT.Mazur.RelativeSectionAmpleBaseChange
