@@ -5820,6 +5820,7 @@ public import FLT.Mazur.ProjectiveUniversalLineRefinementWitness
 public import FLT.Mazur.ProjectiveUniversalLineTripleComparison
 public import FLT.Mazur.ProjectiveUniversalLineTriplePaths
 public import FLT.Mazur.ProjectiveUniversalLineTripleRefinement
+public import FLT.Mazur.ProperAcyclicRankOneLocus
 public import FLT.Mazur.ProperAffineSectionCartier
 public import FLT.Mazur.ProperAmpleConverse
 public import FLT.Mazur.ProperAmpleFiberApproximation
@@ -5905,6 +5906,8 @@ public import FLT.Mazur.ProperFiberTensorComplex
 public import FLT.Mazur.ProperFieldCohomologyBaseChange
 public import FLT.Mazur.ProperFiniteFiberNeighborhood
 public import FLT.Mazur.ProperFinitePresentationEnvelope
+public import FLT.Mazur.ProperGeometricAcyclicDirectImage
+public import FLT.Mazur.ProperGeometricRankOneOpen
 public import FLT.Mazur.ProperGlobalDirectImageCharts
 public import FLT.Mazur.ProperGlobalSectionCartier
 public import FLT.Mazur.ProperGlobalSectionFinite
@@ -5913,9 +5916,14 @@ public import FLT.Mazur.ProperImmersedCover
 public import FLT.Mazur.ProperIntegralConstantSections
 public import FLT.Mazur.ProperLineAcyclicLocus
 public import FLT.Mazur.ProperLineAcyclicNeighborhood
+public import FLT.Mazur.ProperLineAcyclicOpenRepresentation
 public import FLT.Mazur.ProperLineArbitraryBaseChange
 public import FLT.Mazur.ProperLineChartFiberVanishing
+public import FLT.Mazur.ProperLineCoefficientFiberComparison
 public import FLT.Mazur.ProperLineFiberVanishing
+public import FLT.Mazur.ProperLineGeometricFiberLocus
+public import FLT.Mazur.ProperLineGeometricSectionRank
+public import FLT.Mazur.ProperLineGlobalAcyclicOpen
 public import FLT.Mazur.ProperLineIsomorphismDescent
 public import FLT.Mazur.ProperLineIteratedArbitraryBaseChange
 public import FLT.Mazur.ProperLineIteratedFiberVanishing
@@ -6712,7 +6720,9 @@ public import FLT.Mazur.TwistedSectionPushforwardNaturality
 public import FLT.Mazur.TwistedSectionRegularity
 public import FLT.Mazur.UniformizerRootExtension
 public import FLT.Mazur.UnitIntegerModel
+public import FLT.Mazur.UniversalDivisorAcyclicRankOne
 public import FLT.Mazur.UniversalDivisorCohomologyCharts
+public import FLT.Mazur.UniversalDivisorGlobalCohomology
 public import FLT.Mazur.UniversalDivisorTwistedLine
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryActualNormalizationIso
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryAffineSections
