@@ -2510,6 +2510,7 @@ public import FLT.Mazur.AdicCommonModelFiltration
 public import FLT.Mazur.AdicCompletedDifferentials
 public import FLT.Mazur.AdicCompletedInfinitesimalChainMap
 public import FLT.Mazur.AdicCompletedInfinitesimalHom
+public import FLT.Mazur.AdicCompletedInfinitesimalKernelMap
 public import FLT.Mazur.AdicCompletedInfinitesimalLift
 public import FLT.Mazur.AdicCompletedInfinitesimalSpaceMap
 public import FLT.Mazur.AdicCompletionAlgEquiv
