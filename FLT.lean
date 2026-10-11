@@ -5523,6 +5523,7 @@ public import FLT.Mazur.PolygonCompleteClassifiedFibers
 public import FLT.Mazur.PolygonCompleteClosedFiber
 public import FLT.Mazur.PolygonCompleteClosedGenus
 public import FLT.Mazur.PolygonCompleteClosedH1Scalars
+public import FLT.Mazur.PolygonCompleteClosedPointLineComparison
 public import FLT.Mazur.PolygonCompleteClosedSingularPoints
 public import FLT.Mazur.PolygonCompleteClosedSmoothLocus
 public import FLT.Mazur.PolygonCompleteClosedSpecialization
