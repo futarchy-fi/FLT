@@ -2532,6 +2532,7 @@ public import FLT.Mazur.AffineChartSectionLocalization
 public import FLT.Mazur.AffineChartSourceScalars
 public import FLT.Mazur.AffineClosedLimitDescent
 public import FLT.Mazur.AffineClosedModuleDescent
+public import FLT.Mazur.AffineClosedPointQuotient
 public import FLT.Mazur.AffineClosureFiniteness
 public import FLT.Mazur.AffineCoalgebraDescentRecognition
 public import FLT.Mazur.AffineCoalgebraSheafNaturality
