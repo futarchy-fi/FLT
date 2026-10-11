@@ -5237,6 +5237,7 @@ public import FLT.Mazur.PolygonCompleteNodeArithmeticGerms
 public import FLT.Mazur.PolygonCompleteNodeCompletion
 public import FLT.Mazur.PolygonCompleteNodeFiltration
 public import FLT.Mazur.PolygonCompleteNodeLocalFiniteness
+public import FLT.Mazur.PolygonCompleteNodeModuleFiltration
 public import FLT.Mazur.PolygonCompleteNodeNeighborhood
 public import FLT.Mazur.PolygonCompleteNodeStalkCompletion
 public import FLT.Mazur.PolygonCompleteNodeStalkEvaluation
