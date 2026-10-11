@@ -6042,6 +6042,7 @@ public import FLT.Mazur.PrincipalBipartiteStages
 public import FLT.Mazur.PrincipalChartIntegerDescent
 public import FLT.Mazur.PrincipalChartOpenImmersion
 public import FLT.Mazur.PrincipalClosedCohomology
+public import FLT.Mazur.PrincipalClosedLineCohomology
 public import FLT.Mazur.PrincipalCoefficientTransport
 public import FLT.Mazur.PrincipalComparisonIntegerModel
 public import FLT.Mazur.PrincipalComparisonRecovery
