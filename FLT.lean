@@ -7644,6 +7644,7 @@ public import FLT.Mazur.WeierstrassDividedGlobalInitialActionLaws
 public import FLT.Mazur.WeierstrassDividedGlobalInitialComparison
 public import FLT.Mazur.WeierstrassDividedGlobalResidueNodes
 public import FLT.Mazur.WeierstrassDividedGlobalResidueOverlap
+public import FLT.Mazur.WeierstrassDividedGlobalStepExterior
 public import FLT.Mazur.WeierstrassDividedGlobalStepOriginal
 public import FLT.Mazur.WeierstrassDividedGlobalSuccessiveCharts
 public import FLT.Mazur.WeierstrassDividedGlobalSuccessiveCover
