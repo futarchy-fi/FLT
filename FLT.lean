@@ -7012,6 +7012,7 @@ public import FLT.Mazur.TranslatedHilbertChartOverlap
 public import FLT.Mazur.TranslatedHilbertCoverageCriterion
 public import FLT.Mazur.TranslatedHilbertGluedBase
 public import FLT.Mazur.TranslatedHilbertGluedDescent
+public import FLT.Mazur.TranslatedHilbertGluedImageDescent
 public import FLT.Mazur.TranslatedHilbertGluedMap
 public import FLT.Mazur.TranslatedHilbertGluedMono
 public import FLT.Mazur.TranslatedHilbertGluedOpen
