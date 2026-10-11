@@ -7230,6 +7230,7 @@ public import FLT.Mazur.WeierstrassDividedInfinityLaurentChart
 public import FLT.Mazur.WeierstrassDividedInfinityLaurentGluing
 public import FLT.Mazur.WeierstrassDividedInitialAtlasIndex
 public import FLT.Mazur.WeierstrassDividedInitialBoundaryGeometry
+public import FLT.Mazur.WeierstrassDividedInitialComponentRanges
 public import FLT.Mazur.WeierstrassDividedInitialComponentStructure
 public import FLT.Mazur.WeierstrassDividedInitialConicBoundaryAlgebra
 public import FLT.Mazur.WeierstrassDividedInitialConicParameters
