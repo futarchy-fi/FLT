@@ -7428,6 +7428,7 @@ public import FLT.Mazur.WeierstrassDividedFiniteYStep
 public import FLT.Mazur.WeierstrassDividedFullResidueAtlas
 public import FLT.Mazur.WeierstrassDividedGlobalConicCoordinates
 public import FLT.Mazur.WeierstrassDividedGlobalConicIntersection
+public import FLT.Mazur.WeierstrassDividedGlobalFiniteActionProduct
 public import FLT.Mazur.WeierstrassDividedGlobalFiniteFlat
 public import FLT.Mazur.WeierstrassDividedGlobalFiniteGluing
 public import FLT.Mazur.WeierstrassDividedGlobalFiniteProper
