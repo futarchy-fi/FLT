@@ -2558,6 +2558,7 @@ public import FLT.Mazur.AdicLocalizedFirstCotangent
 public import FLT.Mazur.AdicMaximalCompletion
 public import FLT.Mazur.AdicModuleIdealTransport
 public import FLT.Mazur.AdicModuleScalarChange
+public import FLT.Mazur.AdicOriginalSpaceProjection
 public import FLT.Mazur.AdicPolynomialPresentationLift
 public import FLT.Mazur.AdicPresentationDerivation
 public import FLT.Mazur.AdicPresentationFirstCotangent
