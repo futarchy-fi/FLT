@@ -2489,7 +2489,10 @@ public import FLT.Mathlib.Topology.Polish
 public import FLT.Mazur.AbelianInjectiveFlasque
 public import FLT.Mazur.AbsoluteDirectImageCohomology
 public import FLT.Mazur.AcyclicCoefficientCohomology
+public import FLT.Mazur.AcyclicDegreePicardRepresentation
 public import FLT.Mazur.AcyclicDirectImageResolution
+public import FLT.Mazur.AcyclicDivisorDegreePresheaf
+public import FLT.Mazur.AcyclicHilbertDivisorRepresentation
 public import FLT.Mazur.AcyclicLineSectionBaseChange
 public import FLT.Mazur.AcyclicPointedAbelBaseChange
 public import FLT.Mazur.AcyclicPointedAbelEquivalence
@@ -2929,6 +2932,7 @@ public import FLT.Mazur.AmpleFiniteAffineNeighborhood
 public import FLT.Mazur.AmpleFiniteGroupQuotient
 public import FLT.Mazur.AmpleGlobalGeneration
 public import FLT.Mazur.AmpleHighDegreeSectionCover
+public import FLT.Mazur.AmpleHilbertFunctorRepresentation
 public import FLT.Mazur.AmpleLineBundle
 public import FLT.Mazur.AmpleLineLimitDescent
 public import FLT.Mazur.AmpleOpenAffineRecovery
@@ -4292,6 +4296,8 @@ public import FLT.Mazur.HenselianSmallCubic
 public import FLT.Mazur.HigherDirectImageOpenSheafification
 public import FLT.Mazur.HigherDirectImagePresheaf
 public import FLT.Mazur.HigherDirectImagePresheafRestriction
+public import FLT.Mazur.HilbertAcyclicParameterOpen
+public import FLT.Mazur.HilbertAcyclicUniversalRecovery
 public import FLT.Mazur.HilbertAmbientChartClassification
 public import FLT.Mazur.HilbertAmbientChartNaturality
 public import FLT.Mazur.HilbertAmbientClosedFamily
@@ -4398,6 +4404,7 @@ public import FLT.Mazur.HilbertOpenInclusionFamilies
 public import FLT.Mazur.HilbertOpenIntrinsicClassification
 public import FLT.Mazur.HilbertOpenOverlapCoherence
 public import FLT.Mazur.HilbertOverlapRestriction
+public import FLT.Mazur.HilbertParameterAbelClass
 public import FLT.Mazur.HilbertPolynomialAffineClassification
 public import FLT.Mazur.HilbertPolynomialAffineNaturality
 public import FLT.Mazur.HilbertPolynomialAmbient
@@ -4817,6 +4824,7 @@ public import FLT.Mazur.LineTrivializationCoordinates
 public import FLT.Mazur.LinearCoordinateRatio
 public import FLT.Mazur.LinearMapKernelTransport
 public import FLT.Mazur.LinearRankOneFrameUnit
+public import FLT.Mazur.LocalAcyclicCartierCriterion
 public import FLT.Mazur.LocalBaseSectionDisjointness
 public import FLT.Mazur.LocalBoundedFlatVanishing
 public import FLT.Mazur.LocalCartierGeneratorDescent
