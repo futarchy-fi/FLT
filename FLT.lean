@@ -5684,6 +5684,7 @@ public import FLT.Mazur.PolygonCompleteLineIsoReconstruction
 public import FLT.Mazur.PolygonCompleteLineOriginalReduction
 public import FLT.Mazur.PolygonCompleteLineQuotient
 public import FLT.Mazur.PolygonCompleteLineSectionReconstruction
+public import FLT.Mazur.PolygonCompleteMarkedAffinePoints
 public import FLT.Mazur.PolygonCompleteMarkedClosedFiber
 public import FLT.Mazur.PolygonCompleteMarkedCoordinateCharts
 public import FLT.Mazur.PolygonCompleteMarkedCoordinateGeneration
