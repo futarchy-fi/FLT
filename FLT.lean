@@ -3121,6 +3121,7 @@ public import FLT.Mazur.CartierFlatNeighborhoodDescent
 public import FLT.Mazur.CartierFppfDescent
 public import FLT.Mazur.CartierIdealDescentDatum
 public import FLT.Mazur.CartierIdealFinitePresentation
+public import FLT.Mazur.CartierIdealFppfEffectiveDescent
 public import FLT.Mazur.CartierIdealFppfLineGluing
 public import FLT.Mazur.CartierIdealGluedInclusion
 public import FLT.Mazur.CartierIdealGluedMonicity
