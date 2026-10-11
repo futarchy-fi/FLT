@@ -5870,6 +5870,7 @@ public import FLT.Mazur.PolygonSinglePointEndpointScalars
 public import FLT.Mazur.PolygonSinglePointHZeroCoordinates
 public import FLT.Mazur.PolygonSinglePointHZeroFrames
 public import FLT.Mazur.PolygonSinglePointLineNormalization
+public import FLT.Mazur.PolygonSinglePointMatchingCoordinates
 public import FLT.Mazur.PolygonSinglePointNodeFrame
 public import FLT.Mazur.PolygonSinglePointPowerNormalization
 public import FLT.Mazur.PolygonSinglePointPowerSections
