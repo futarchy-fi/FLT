@@ -5433,6 +5433,7 @@ public import FLT.Mazur.OrderedDivisorOriginalFiber
 public import FLT.Mazur.OrderedDivisorSectionSpecialization
 public import FLT.Mazur.OrderedDivisorTranslation
 public import FLT.Mazur.OrderedHilbertEtaleResidueLift
+public import FLT.Mazur.OrderedHilbertEtaleSeparableLift
 public import FLT.Mazur.OrderedHilbertEtaleStalkLift
 public import FLT.Mazur.OrderedProjectiveHilbertNaturality
 public import FLT.Mazur.OrderedProjectiveHilbertParameter
