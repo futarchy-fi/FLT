@@ -6627,6 +6627,7 @@ public import FLT.Mazur.SchemeAffineCrossSectionPostcomposition
 public import FLT.Mazur.SchemeAffineCrossSectionReconstruction
 public import FLT.Mazur.SchemeAffineDescentChart
 public import FLT.Mazur.SchemeAffineExplicitCommonSectionMaps
+public import FLT.Mazur.SchemeAffineFlatLiftGluing
 public import FLT.Mazur.SchemeAffineFlatRefinement
 public import FLT.Mazur.SchemeAffineFlatRefinementThrough
 public import FLT.Mazur.SchemeAffineFppfChart
