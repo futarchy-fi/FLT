@@ -7941,6 +7941,7 @@ public import FLT.Mazur.WeierstrassDividedSuccessorFractionAction
 public import FLT.Mazur.WeierstrassDividedSuccessorFractionAlgebra
 public import FLT.Mazur.WeierstrassDividedSuccessorFractionCenter
 public import FLT.Mazur.WeierstrassDividedSuccessorFractionCoordinates
+public import FLT.Mazur.WeierstrassDividedSuccessorFractionGluing
 public import FLT.Mazur.WeierstrassDividedSuccessorInfinityAction
 public import FLT.Mazur.WeierstrassDividedSuccessorInfinityCenter
 public import FLT.Mazur.WeierstrassDividedSuccessorInfinityInputAction
