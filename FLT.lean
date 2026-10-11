@@ -7227,6 +7227,7 @@ public import FLT.Mazur.TranslatedHilbertGluing
 public import FLT.Mazur.TranslatedHilbertLocalCoverage
 public import FLT.Mazur.TranslatedHilbertOpenBaseChange
 public import FLT.Mazur.TranslatedHilbertOrbitFibers
+public import FLT.Mazur.TranslatedHilbertOrbitHomeomorph
 public import FLT.Mazur.TranslatedHilbertOrbitOpen
 public import FLT.Mazur.TranslatedHilbertOverlapIdentities
 public import FLT.Mazur.TranslatedHilbertPicardChart
