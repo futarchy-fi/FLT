@@ -4102,6 +4102,7 @@ public import FLT.Mazur.GenericIdealSupport
 public import FLT.Mazur.GenericLineTrivialization
 public import FLT.Mazur.GenericSectionUniqueness
 public import FLT.Mazur.GenericWitnessIdealVanishing
+public import FLT.Mazur.GeometricAcyclicPicardSubfunctor
 public import FLT.Mazur.GeometricAcyclicRankOne
 public import FLT.Mazur.GeometricOpenFactorization
 public import FLT.Mazur.GeometricPointCoverCriterion
