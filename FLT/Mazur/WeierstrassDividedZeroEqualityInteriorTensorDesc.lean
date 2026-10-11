@@ -44,7 +44,9 @@ variable {Y : Scheme.{u}}
     ProjectiveLine.infinity (ResidueField R) ≫ F (PolygonPinching.next (by omega) i))
 
 /-- Pull the actual equality family back to the complete earlier positive tensor chart. -/
-def zeroEqualityCycleInteriorTensorDesc :=
+def zeroEqualityCycleInteriorTensorDesc :
+    Spec (.of (ScalarExtension W (π ^ (start + (j.val + 1))) π
+      (Data.b3 e) (Data.b4 e) (Data.b6 e) K)) ⟶ Y :=
   (V).hom ≫ zeroEqualityPositiveCycleAtlasFamily
     hπ data D s hs hstart hk hp hpos F w ⟨s - j.val + 1, by omega⟩
 
