@@ -7903,6 +7903,7 @@ public import FLT.Mazur.WeierstrassDividedSuccessorExteriorAction
 public import FLT.Mazur.WeierstrassDividedSuccessorExteriorAtlas
 public import FLT.Mazur.WeierstrassDividedSuccessorInfinityAction
 public import FLT.Mazur.WeierstrassDividedSuccessorOutputCover
+public import FLT.Mazur.WeierstrassDividedSuccessorRetainedCoordinates
 public import FLT.Mazur.WeierstrassDividedTensorAtlasComparison
 public import FLT.Mazur.WeierstrassDividedTensorYBoundary
 public import FLT.Mazur.WeierstrassDividedTerminalAllExteriorNodes
