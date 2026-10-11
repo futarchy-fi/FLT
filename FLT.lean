@@ -4029,6 +4029,7 @@ public import FLT.Mazur.FiniteSurjectiveAmpleDescent
 public import FLT.Mazur.FiniteSurjectiveCoherentWitness
 public import FLT.Mazur.FiniteTensorIntegerClosedImmersion
 public import FLT.Mazur.FiniteTypeAbelNaturalIso
+public import FLT.Mazur.FiniteTypeAcyclicDivisorFppfDescent
 public import FLT.Mazur.FiniteTypeAcyclicDivisorMap
 public import FLT.Mazur.FiniteTypeAcyclicDivisorPresheaf
 public import FLT.Mazur.FiniteTypeAffineApproximation
