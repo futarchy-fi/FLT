@@ -8408,6 +8408,7 @@ public import FLT.Mazur.WeierstrassFourMarkingFrame
 public import FLT.Mazur.WeierstrassFourMarkingRigidity
 public import FLT.Mazur.WeierstrassFourPairAssociativity
 public import FLT.Mazur.WeierstrassFourTorsionFinite
+public import FLT.Mazur.WeierstrassFractionActionGlobalComparison
 public import FLT.Mazur.WeierstrassFractionSmoothGlobalLift
 public import FLT.Mazur.WeierstrassFractionSmoothPresentation
 public import FLT.Mazur.WeierstrassFractionSmoothPresentationLift
