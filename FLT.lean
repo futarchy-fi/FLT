@@ -4354,7 +4354,10 @@ public import FLT.Mazur.GroupMarkingBaseChangeInverse
 public import FLT.Mazur.GroupMarkingTransport
 public import FLT.Mazur.GroupMarkingTransportEquations
 public import FLT.Mazur.GroupMarkingTransportNaturality
+public import FLT.Mazur.GroupSchemeBaseChangeComparison
 public import FLT.Mazur.GroupSchemeBaseChangeComposition
+public import FLT.Mazur.GroupSchemeBaseChangeProjections
+public import FLT.Mazur.GroupSchemeBaseChangeSections
 public import FLT.Mazur.GroupSectionBaseChange
 public import FLT.Mazur.GroupTorsionBaseChange
 public import FLT.Mazur.GroupTorsionCommutativeStructure
@@ -5306,7 +5309,11 @@ public import FLT.Mazur.OneGonSmoothingPuncturedAtlas
 public import FLT.Mazur.OneGonSmoothingPuncturedFamily
 public import FLT.Mazur.OneGonSmoothingPuncturedGroupAtlas
 public import FLT.Mazur.OneGonSmoothingPuncturedParameter
+public import FLT.Mazur.OneGonSmoothingPuncturedSchemeMarking
+public import FLT.Mazur.OneGonSmoothingSchemeAuxiliaryMarking
+public import FLT.Mazur.OneGonSmoothingSchemeMarkingNaturality
 public import FLT.Mazur.OneGonSmoothingSchemeNormalizedGroup
+public import FLT.Mazur.OneGonSmoothingSchemeNormalizedMarking
 public import FLT.Mazur.OneGonSmoothingSmoothGroup
 public import FLT.Mazur.OneGonSmoothingSmoothParameter
 public import FLT.Mazur.OneGonSmoothingUniversalComparison
@@ -5400,6 +5407,8 @@ public import FLT.Mazur.OverPoints
 public import FLT.Mazur.OverPullbackCoherence
 public import FLT.Mazur.OverPullbackCoproduct
 public import FLT.Mazur.OverPullbackLocalPushout
+public import FLT.Mazur.OverPullbackSection
+public import FLT.Mazur.OverPullbackSectionComposition
 public import FLT.Mazur.PadicValuationArithmetic
 public import FLT.Mazur.PadicValuationRing
 public import FLT.Mazur.PicardDegreeFieldBaseChange
@@ -7435,6 +7444,7 @@ public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalEquation
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizationGroup
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizationInvariant
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizationNatural
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizationSealedGroup
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizedAction
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizedCoefficientMaps
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryNormalizedEvaluationNaturality
@@ -7462,7 +7472,10 @@ public import FLT.Mazur.UniversalWeierstrassAuxiliaryRelativePoint
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryRelativeRigidity
 public import FLT.Mazur.UniversalWeierstrassAuxiliarySchemeAffineAgreement
 public import FLT.Mazur.UniversalWeierstrassAuxiliarySchemeGroupComparison
+public import FLT.Mazur.UniversalWeierstrassAuxiliarySchemeMarking
+public import FLT.Mazur.UniversalWeierstrassAuxiliarySchemeMarkingComparison
 public import FLT.Mazur.UniversalWeierstrassAuxiliarySchemeMarkingSections
+public import FLT.Mazur.UniversalWeierstrassAuxiliarySchemeNormalizationMarking
 public import FLT.Mazur.UniversalWeierstrassAuxiliarySchemeNormalizationNaturality
 public import FLT.Mazur.UniversalWeierstrassAuxiliarySchemeNormalizationRetraction
 public import FLT.Mazur.UniversalWeierstrassAuxiliarySchemeNormalizedCoordinates
