@@ -7439,6 +7439,7 @@ public import FLT.Mazur.ValuationRingCompleteModel
 public import FLT.Mazur.ValuationRingHenselianModel
 public import FLT.Mazur.ValuationRingModel
 public import FLT.Mazur.VariableHilbertIntersectionBaseChange
+public import FLT.Mazur.VariableHilbertParameterOrbitDescent
 public import FLT.Mazur.VariableHilbertSourceIntersection
 public import FLT.Mazur.VariableTranslatedHilbertChart
 public import FLT.Mazur.VariableTranslatedHilbertOverlap
