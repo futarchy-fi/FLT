@@ -3513,6 +3513,7 @@ public import FLT.Mazur.DivisorComplementCanonical
 public import FLT.Mazur.DivisorComplementFaithful
 public import FLT.Mazur.DivisorComplementFiltration
 public import FLT.Mazur.DivisorComplementFunctions
+public import FLT.Mazur.DivisorComplementLeadingProduct
 public import FLT.Mazur.DivisorComplementLinear
 public import FLT.Mazur.DivisorComponentDegree
 public import FLT.Mazur.DivisorIdealEvaluation
