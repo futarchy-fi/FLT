@@ -5417,6 +5417,7 @@ public import FLT.Mazur.PolygonCompatibleSectionRing
 public import FLT.Mazur.PolygonCompatibleSectionScalars
 public import FLT.Mazur.PolygonCompatibleVeronese
 public import FLT.Mazur.PolygonCompatibleZeroCoefficients
+public import FLT.Mazur.PolygonCompleteAdicIdealSeparation
 public import FLT.Mazur.PolygonCompleteAffinePresentation
 public import FLT.Mazur.PolygonCompleteBaseMarkings
 public import FLT.Mazur.PolygonCompleteBoundaryCoordinateTransport
