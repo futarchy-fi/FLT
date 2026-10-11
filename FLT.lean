@@ -5244,6 +5244,7 @@ public import FLT.Mazur.PolygonCompleteNodeArithmeticAction
 public import FLT.Mazur.PolygonCompleteNodeArithmeticGerms
 public import FLT.Mazur.PolygonCompleteNodeCompletion
 public import FLT.Mazur.PolygonCompleteNodeCotangentAction
+public import FLT.Mazur.PolygonCompleteNodeCotangentCokernel
 public import FLT.Mazur.PolygonCompleteNodeCotangentComparison
 public import FLT.Mazur.PolygonCompleteNodeCotangentEquiv
 public import FLT.Mazur.PolygonCompleteNodeCotangentFiltration
