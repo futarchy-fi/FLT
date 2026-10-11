@@ -8000,6 +8000,7 @@ public import FLT.Mazur.WeierstrassDividedGlobalZeroOverlap
 public import FLT.Mazur.WeierstrassDividedGlobalZeroSuccessive
 public import FLT.Mazur.WeierstrassDividedHorizontalCoefficientPointAction
 public import FLT.Mazur.WeierstrassDividedHorizontalCyclicInput
+public import FLT.Mazur.WeierstrassDividedHorizontalCyclicPair
 public import FLT.Mazur.WeierstrassDividedHorizontalFinitePointAction
 public import FLT.Mazur.WeierstrassDividedInfinityLaurentChart
 public import FLT.Mazur.WeierstrassDividedInfinityLaurentGluing
