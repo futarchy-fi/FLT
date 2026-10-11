@@ -3559,6 +3559,7 @@ public import FLT.Mazur.DivisorPowerVeryAmple
 public import FLT.Mazur.DivisorRestrictCoherence
 public import FLT.Mazur.DivisorSectionComplement
 public import FLT.Mazur.DivisorSectionExact
+public import FLT.Mazur.DivisorSectionGeneratorOpen
 public import FLT.Mazur.DivisorSectionRigidity
 public import FLT.Mazur.DivisorStalkLength
 public import FLT.Mazur.DivisorTensorNumeratorComparison
