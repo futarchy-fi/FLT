@@ -3518,6 +3518,7 @@ public import FLT.Mazur.DivisorComplementLeadingProduct
 public import FLT.Mazur.DivisorComplementLinear
 public import FLT.Mazur.DivisorComponentDegree
 public import FLT.Mazur.DivisorIdealEvaluation
+public import FLT.Mazur.DivisorIdealFunctionalSection
 public import FLT.Mazur.DivisorIdealStalkExt
 public import FLT.Mazur.DivisorInvertibleSheaf
 public import FLT.Mazur.DivisorLeadingNonzeroProduct
