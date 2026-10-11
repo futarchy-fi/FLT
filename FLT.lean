@@ -7879,6 +7879,7 @@ public import FLT.Mazur.WeierstrassInfinityResidualElimination
 public import FLT.Mazur.WeierstrassInfinityResidueBoundary
 public import FLT.Mazur.WeierstrassInfinityResidueGeometry
 public import FLT.Mazur.WeierstrassInfinityResidueSmooth
+public import FLT.Mazur.WeierstrassInfinityResidueSmoothGroup
 public import FLT.Mazur.WeierstrassInfinityResidueTensor
 public import FLT.Mazur.WeierstrassInfinityResidueZero
 public import FLT.Mazur.WeierstrassInfinityReverseCross
