@@ -5409,6 +5409,7 @@ public import FLT.Mazur.PolygonCompleteMarkedClosedFiber
 public import FLT.Mazur.PolygonCompleteMarkingAmple
 public import FLT.Mazur.PolygonCompleteMarkingCartier
 public import FLT.Mazur.PolygonCompleteMarkingDivisor
+public import FLT.Mazur.PolygonCompleteMarkingLineBaseChange
 public import FLT.Mazur.PolygonCompleteMarkingNaturality
 public import FLT.Mazur.PolygonCompleteMarkingSpecialization
 public import FLT.Mazur.PolygonCompleteMarkingUniqueness
