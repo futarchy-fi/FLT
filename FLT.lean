@@ -6528,6 +6528,12 @@ public import FLT.Mazur.RelativePinchingDescent
 public import FLT.Mazur.RelativePinchingLocalDescent
 public import FLT.Mazur.RelativePinchingNeighborhoods
 public import FLT.Mazur.RelativeRankOneDivisorUniqueness
+public import FLT.Mazur.RelativeRelationInvariantSections
+public import FLT.Mazur.RelativeRelationInvariantSheaf
+public import FLT.Mazur.RelativeRelationOrbit
+public import FLT.Mazur.RelativeRelationOrbitCoequalizer
+public import FLT.Mazur.RelativeRelationOrbitOpens
+public import FLT.Mazur.RelativeRelationOrbitTopology
 public import FLT.Mazur.RelativeSectionAmpleBaseChange
 public import FLT.Mazur.RelativeSectionAmpleLocality
 public import FLT.Mazur.RelativeSerreAffineAcyclic
@@ -7073,6 +7079,7 @@ public import FLT.Mazur.SmoothHilbertGeometricCoverage
 public import FLT.Mazur.SmoothHilbertIntersectionComponents
 public import FLT.Mazur.SmoothHilbertIntersectionLift
 public import FLT.Mazur.SmoothHilbertIntersectionSource
+public import FLT.Mazur.SmoothHilbertLocallyRingedQuotient
 public import FLT.Mazur.SmoothHilbertRelation
 public import FLT.Mazur.SmoothHilbertRelationOperations
 public import FLT.Mazur.SmoothHilbertSheafQuotient
