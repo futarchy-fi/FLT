@@ -2596,6 +2596,13 @@ public import FLT.Mazur.AdicSquareZeroFormalConormal
 public import FLT.Mazur.AdicSquareZeroFormalHomotopy
 public import FLT.Mazur.AffineAdicCohomologyImage
 public import FLT.Mazur.AffineAdicFormalComparison
+public import FLT.Mazur.AffineAlgebraDescentCoaction
+public import FLT.Mazur.AffineAlgebraDescentKernelPair
+public import FLT.Mazur.AffineAlgebraDescentMorphisms
+public import FLT.Mazur.AffineAlgebraDescentOverlap
+public import FLT.Mazur.AffineAlgebraDescentReconstruction
+public import FLT.Mazur.AffineAlgebraDescentScheme
+public import FLT.Mazur.AffineAlgebraDescentSplitEqualizer
 public import FLT.Mazur.AffineAnnihilator
 public import FLT.Mazur.AffineAtlasSeparatedLimit
 public import FLT.Mazur.AffineBaseChangeCoefficients
@@ -5460,6 +5467,8 @@ public import FLT.Mazur.OrderedDivisorLineSpecialization
 public import FLT.Mazur.OrderedDivisorOriginalFiber
 public import FLT.Mazur.OrderedDivisorSectionSpecialization
 public import FLT.Mazur.OrderedDivisorTranslation
+public import FLT.Mazur.OrderedHilbertAffineEtaleCoverage
+public import FLT.Mazur.OrderedHilbertAffineEtaleTestCover
 public import FLT.Mazur.OrderedHilbertEtaleGeometricCoverage
 public import FLT.Mazur.OrderedHilbertEtaleGeometricLift
 public import FLT.Mazur.OrderedHilbertEtaleResidueLift
@@ -7671,6 +7680,7 @@ public import FLT.Mazur.ValuationProjectiveNormalization
 public import FLT.Mazur.ValuationRingCompleteModel
 public import FLT.Mazur.ValuationRingHenselianModel
 public import FLT.Mazur.ValuationRingModel
+public import FLT.Mazur.VariableHilbertAffinePointRefinement
 public import FLT.Mazur.VariableHilbertChartRelation
 public import FLT.Mazur.VariableHilbertChartRelationOperations
 public import FLT.Mazur.VariableHilbertChartRelationPullback
