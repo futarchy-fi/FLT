@@ -8872,6 +8872,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXConicPunctureDescent
 public import FLT.Mazur.WeierstrassSuccessiveXConicPunctureInclusion
 public import FLT.Mazur.WeierstrassSuccessiveXConicPuncturedParameters
 public import FLT.Mazur.WeierstrassSuccessiveXContraction
+public import FLT.Mazur.WeierstrassSuccessiveXDeeperCenter
 public import FLT.Mazur.WeierstrassSuccessiveXDepthComparison
 public import FLT.Mazur.WeierstrassSuccessiveXDepthTensorOverlap
 public import FLT.Mazur.WeierstrassSuccessiveXFlat
