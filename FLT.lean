@@ -2610,6 +2610,7 @@ public import FLT.Mazur.AffineBranchSequence
 public import FLT.Mazur.AffineCanonicalMapCompatibility
 public import FLT.Mazur.AffineCanonicalOverlapChart
 public import FLT.Mazur.AffineCanonicalOverlapRecognition
+public import FLT.Mazur.AffineCartesianSectionPushout
 public import FLT.Mazur.AffineCartesianSectionScalars
 public import FLT.Mazur.AffineChartResidueEquation
 public import FLT.Mazur.AffineChartResidueRetraction
