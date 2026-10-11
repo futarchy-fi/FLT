@@ -3514,6 +3514,8 @@ public import FLT.Mazur.DivisorLinePullbackTransport
 public import FLT.Mazur.DivisorLineSectionModel
 public import FLT.Mazur.DivisorPowerCanonicalSection
 public import FLT.Mazur.DivisorPowerEulerCharacteristic
+public import FLT.Mazur.DivisorPowerH1Bound
+public import FLT.Mazur.DivisorPowerH1Vanishing
 public import FLT.Mazur.DivisorPowerTwistDegree
 public import FLT.Mazur.DivisorPowerVeryAmple
 public import FLT.Mazur.DivisorRestrictCoherence
@@ -5537,10 +5539,15 @@ public import FLT.Mazur.PolygonCompleteBoundarySectionProjection
 public import FLT.Mazur.PolygonCompleteBoundarySectionTransport
 public import FLT.Mazur.PolygonCompleteBoundaryTransitionCoherence
 public import FLT.Mazur.PolygonCompleteCartesianMarkings
+public import FLT.Mazur.PolygonCompleteCartesianPointCohomology
+public import FLT.Mazur.PolygonCompleteCartesianPointDegree
+public import FLT.Mazur.PolygonCompleteCartesianPointDivisor
+public import FLT.Mazur.PolygonCompleteCartesianPointLine
 public import FLT.Mazur.PolygonCompleteClassifiedFibers
 public import FLT.Mazur.PolygonCompleteClosedFiber
 public import FLT.Mazur.PolygonCompleteClosedGenus
 public import FLT.Mazur.PolygonCompleteClosedH1Scalars
+public import FLT.Mazur.PolygonCompleteClosedPointLineComparison
 public import FLT.Mazur.PolygonCompleteClosedSingularPoints
 public import FLT.Mazur.PolygonCompleteClosedSmoothLocus
 public import FLT.Mazur.PolygonCompleteClosedSpecialization
@@ -5645,6 +5652,8 @@ public import FLT.Mazur.PolygonCompleteNodeStalkEvaluation
 public import FLT.Mazur.PolygonCompleteNodeStalkH1Equiv
 public import FLT.Mazur.PolygonCompleteNodeStalkMap
 public import FLT.Mazur.PolygonCompleteOriginalSectionReconstruction
+public import FLT.Mazur.PolygonCompletePointPowerComparison
+public import FLT.Mazur.PolygonCompletePointPowerVanishing
 public import FLT.Mazur.PolygonCompletePrincipalClosedFiber
 public import FLT.Mazur.PolygonCompleteSmoothDimensionOpen
 public import FLT.Mazur.PolygonCompleteStageMarkings
@@ -5850,6 +5859,9 @@ public import FLT.Mazur.PolygonSectionRingFunctor
 public import FLT.Mazur.PolygonSeparated
 public import FLT.Mazur.PolygonSeriesTowerAssembly
 public import FLT.Mazur.PolygonSeriesTowerDivision
+public import FLT.Mazur.PolygonSinglePointLineNormalization
+public import FLT.Mazur.PolygonSinglePointPowerNormalization
+public import FLT.Mazur.PolygonSinglePointPowerSections
 public import FLT.Mazur.PolygonSmoothLocus
 public import FLT.Mazur.PolygonSmoothRelativeDimension
 public import FLT.Mazur.PolygonSmoothingBaseChange
@@ -6281,6 +6293,7 @@ public import FLT.Mazur.ProjectiveLineMarkedSectionOverlap
 public import FLT.Mazur.ProjectiveLineMarkedSectionTransition
 public import FLT.Mazur.ProjectiveLineMarkedTransition
 public import FLT.Mazur.ProjectiveLineOpenChartExclusion
+public import FLT.Mazur.ProjectiveLinePointLoopMatching
 public import FLT.Mazur.ProjectiveLineProductCharts
 public import FLT.Mazur.ProjectiveLineProductOverlap
 public import FLT.Mazur.ProjectiveLineProductTorusExt
