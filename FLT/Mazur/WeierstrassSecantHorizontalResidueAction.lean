@@ -81,6 +81,13 @@ def secantHorizontalActionLift :=
     (secantHorizontalInput_flat W (π ^ k) a c ψ hflat) 1
 
 local notation "M" => secantHorizontalActionLift W π b3 b4 b6 h3 h4 h6 a c p ha hp ψ hc hflat
+omit [IsDomain R] [IsLocalRing R] in
+/-- The constructed lift retains the original affine action coordinates. -/
+theorem secantHorizontalActionLift_base (t : Coordinate W 2) :
+    M (algebraMap (Coordinate W 2) _ t) = algebraMap T O (α t) := by
+  unfold secantHorizontalActionLift
+  exact leftSmoothFractionActionLift_base ..
+
 open WeierstrassModificationReesCoordinates
 
 /-- Both normalized branch characters hold for the actual composite refinement. -/
