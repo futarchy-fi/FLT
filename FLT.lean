@@ -5294,6 +5294,7 @@ public import FLT.Mazur.OneGonSmoothingOverlapCompatibility
 public import FLT.Mazur.OneGonSmoothingOverlapCoordinates
 public import FLT.Mazur.OneGonSmoothingPrescribedMarking
 public import FLT.Mazur.OneGonSmoothingSmoothParameter
+public import FLT.Mazur.OneGonSmoothingUniversalComparison
 public import FLT.Mazur.OneGonSmoothingZeroCocone
 public import FLT.Mazur.OneGonSmoothingZeroFiber
 public import FLT.Mazur.OneGonSmoothingZeroGenus
