@@ -9058,6 +9058,7 @@ public import FLT.Mazur.WeierstrassSmoothHorizontalActionAlgebra
 public import FLT.Mazur.WeierstrassSmoothHorizontalConcreteAction
 public import FLT.Mazur.WeierstrassSmoothHorizontalConcreteRefinement
 public import FLT.Mazur.WeierstrassSmoothHorizontalCyclicParameter
+public import FLT.Mazur.WeierstrassSmoothHorizontalFactorGeometry
 public import FLT.Mazur.WeierstrassSmoothHorizontalFactorOrder
 public import FLT.Mazur.WeierstrassSmoothHorizontalLaurentEvaluation
 public import FLT.Mazur.WeierstrassSmoothHorizontalProductResidue
