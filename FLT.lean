@@ -5270,6 +5270,7 @@ public import FLT.Mazur.OneGonSmoothingFamily
 public import FLT.Mazur.OneGonSmoothingInfinityChart
 public import FLT.Mazur.OneGonSmoothingInfinityCoordinates
 public import FLT.Mazur.OneGonSmoothingNodeChart
+public import FLT.Mazur.OneGonSmoothingOverlapCompatibility
 public import FLT.Mazur.OneGonSmoothingOverlapCoordinates
 public import FLT.Mazur.OneGonTransition
 public import FLT.Mazur.OpenAtlasTripleGluing
