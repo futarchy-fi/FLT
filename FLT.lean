@@ -3127,6 +3127,8 @@ public import FLT.Mazur.CanonicalSectionComposition
 public import FLT.Mazur.CanonicalSectionNaturality
 public import FLT.Mazur.CartesianAtlasAffineIntersections
 public import FLT.Mazur.CartesianCoefficientPositiveHomology
+public import FLT.Mazur.CartesianIdentityFactorization
+public import FLT.Mazur.CartesianIdentityQuasiFinite
 public import FLT.Mazur.CartesianMonoGroup
 public import FLT.Mazur.CartesianMonoMonoid
 public import FLT.Mazur.CartesianMorphismRecovery
@@ -4950,6 +4952,8 @@ public import FLT.Mazur.LocallyFramedSplitLineRestriction
 public import FLT.Mazur.LocallyFreeDualProjectiveAtlas
 public import FLT.Mazur.LocallyFreeProjectiveQuotient
 public import FLT.Mazur.LocallyNoetherianUniversalStructureSheaf
+public import FLT.Mazur.LocallyRingedOpenImage
+public import FLT.Mazur.LocallyRingedSchemeChartUnion
 public import FLT.Mazur.LocallySmoothFiniteFlatCartier
 public import FLT.Mazur.LocallySmoothQuasiFiniteCartier
 public import FLT.Mazur.LocallySplitInclusionPullback
@@ -5260,6 +5264,8 @@ public import FLT.Mazur.OneGonProductTorus
 public import FLT.Mazur.OneGonQuotient
 public import FLT.Mazur.OneGonScalarExtension
 public import FLT.Mazur.OneGonSeparated
+public import FLT.Mazur.OneGonSmoothingEquation
+public import FLT.Mazur.OneGonSmoothingFamily
 public import FLT.Mazur.OneGonTransition
 public import FLT.Mazur.OpenAtlasTripleGluing
 public import FLT.Mazur.OpenChartSectionPullback
@@ -5459,14 +5465,18 @@ public import FLT.Mazur.PolygonCompleteClosedSpecialization
 public import FLT.Mazur.PolygonCompleteCoefficientAdicComparison
 public import FLT.Mazur.PolygonCompleteCoefficientAmple
 public import FLT.Mazur.PolygonCompleteCoefficientCoherence
+public import FLT.Mazur.PolygonCompleteCoefficientFinite
 public import FLT.Mazur.PolygonCompleteCoefficientHomExt
+public import FLT.Mazur.PolygonCompleteCoefficientIsomorphism
 public import FLT.Mazur.PolygonCompleteCoefficientLine
 public import FLT.Mazur.PolygonCompleteCoefficientMarkedComparison
+public import FLT.Mazur.PolygonCompleteCoefficientMarkedIso
 public import FLT.Mazur.PolygonCompleteCoefficientMarkings
 public import FLT.Mazur.PolygonCompleteCoefficientMorphism
 public import FLT.Mazur.PolygonCompleteCoefficientOpens
 public import FLT.Mazur.PolygonCompleteCoefficientPullback
 public import FLT.Mazur.PolygonCompleteCoefficientReconstruction
+public import FLT.Mazur.PolygonCompleteCoefficientStageKernel
 public import FLT.Mazur.PolygonCompleteComparedSectionReconstruction
 public import FLT.Mazur.PolygonCompleteConstantSections
 public import FLT.Mazur.PolygonCompleteCoordinateEvaluation
@@ -5724,6 +5734,7 @@ public import FLT.Mazur.PolygonOriginalAffineNeighborhood
 public import FLT.Mazur.PolygonOriginalAffineQuotient
 public import FLT.Mazur.PolygonOriginalAffineScalars
 public import FLT.Mazur.PolygonOriginalAffineTransition
+public import FLT.Mazur.PolygonOriginalBaseAdicKernel
 public import FLT.Mazur.PolygonOriginalBoundarySectionReconstruction
 public import FLT.Mazur.PolygonOriginalCompletionAlgebra
 public import FLT.Mazur.PolygonOriginalNeighborhoodTransition
@@ -6385,6 +6396,8 @@ public import FLT.Mazur.ProperLineSectionProjective
 public import FLT.Mazur.ProperLineSectionRankLocus
 public import FLT.Mazur.ProperLineSheafDescent
 public import FLT.Mazur.ProperLineSheafFinitePresentationEnvelope
+public import FLT.Mazur.ProperLocalAdicFiniteIso
+public import FLT.Mazur.ProperLocalAdicIdealSeparation
 public import FLT.Mazur.ProperLocalAmpleFiberGenerators
 public import FLT.Mazur.ProperLocalFiberCover
 public import FLT.Mazur.ProperOnlyAmpleFiberNeighborhood
@@ -7249,6 +7262,9 @@ public import FLT.Mazur.TildeInvertibleLocal
 public import FLT.Mazur.TildePrincipalOpen
 public import FLT.Mazur.TildeSourceSectionComparison
 public import FLT.Mazur.TorusChartScalars
+public import FLT.Mazur.TranslatedHilbertAffineImmersion
+public import FLT.Mazur.TranslatedHilbertAffineRestriction
+public import FLT.Mazur.TranslatedHilbertCanonicalAffineChart
 public import FLT.Mazur.TranslatedHilbertChartFunctions
 public import FLT.Mazur.TranslatedHilbertChartOverlap
 public import FLT.Mazur.TranslatedHilbertChartSourceSections
@@ -7275,6 +7291,8 @@ public import FLT.Mazur.TranslatedHilbertPicardChart
 public import FLT.Mazur.TranslatedHilbertRelationOpenSections
 public import FLT.Mazur.TranslatedHilbertRestrictedRelation
 public import FLT.Mazur.TranslatedHilbertSchemeCocycle
+public import FLT.Mazur.TranslatedHilbertSchemeLocus
+public import FLT.Mazur.TranslatedHilbertSchemeLocusAffineCover
 public import FLT.Mazur.TranslatedHilbertSchemeTriple
 public import FLT.Mazur.TranslatedHilbertSourceIntersection
 public import FLT.Mazur.TranslatedHilbertTestUnion
