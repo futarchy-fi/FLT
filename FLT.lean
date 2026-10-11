@@ -3924,10 +3924,16 @@ public import FLT.Mazur.EtaleFiniteQuotientBranch
 public import FLT.Mazur.EtaleFiniteSupportCartier
 public import FLT.Mazur.EtaleLocalParameterIdeals
 public import FLT.Mazur.EtaleMarkingScheme
+public import FLT.Mazur.EtalePolynomialGeometricOpenPoints
 public import FLT.Mazur.EtalePolynomialPointLift
+public import FLT.Mazur.EtalePolynomialSeparableLift
+public import FLT.Mazur.EtalePolynomialSeparablePointDescent
 public import FLT.Mazur.EtalePolynomialStalkLift
 public import FLT.Mazur.EtalePrimeParameterIdeals
 public import FLT.Mazur.EtaleQuasiFiniteCartierDescent
+public import FLT.Mazur.EtaleSepClosedPointDescent
+public import FLT.Mazur.EtaleSeparableResidueCoordinates
+public import FLT.Mazur.EtaleSimpleRootCoordinates
 public import FLT.Mazur.EvaluatedPrincipalRefinement
 public import FLT.Mazur.EventualTwistVanishing
 public import FLT.Mazur.ExactFunctorInjectiveExt
@@ -5437,6 +5443,7 @@ public import FLT.Mazur.OrderedDivisorOriginalFiber
 public import FLT.Mazur.OrderedDivisorSectionSpecialization
 public import FLT.Mazur.OrderedDivisorTranslation
 public import FLT.Mazur.OrderedHilbertEtaleResidueLift
+public import FLT.Mazur.OrderedHilbertEtaleSeparableLift
 public import FLT.Mazur.OrderedHilbertEtaleStalkLift
 public import FLT.Mazur.OrderedProjectiveHilbertNaturality
 public import FLT.Mazur.OrderedProjectiveHilbertParameter
@@ -5444,6 +5451,7 @@ public import FLT.Mazur.OrderedRelativeIdealBaseChange
 public import FLT.Mazur.OrderedRelativeIdealFamily
 public import FLT.Mazur.OrderedTranslationAffineParameterCover
 public import FLT.Mazur.OrderedTranslationEtaleResidueLift
+public import FLT.Mazur.OrderedTranslationEtaleSeparableLift
 public import FLT.Mazur.OrderedTranslationLocallyRingedMap
 public import FLT.Mazur.OrderedTranslationOriginalFiber
 public import FLT.Mazur.OrderedTranslationQuotientCover
@@ -6762,6 +6770,7 @@ public import FLT.Mazur.ResidueCoordinateDenominators
 public import FLT.Mazur.ResidueFiberRegularLocalization
 public import FLT.Mazur.ResidueNonvanishingLocallySplit
 public import FLT.Mazur.ResidueNonvanishingOpenPullback
+public import FLT.Mazur.ResiduePolynomialLift
 public import FLT.Mazur.ResiduePullbackNonvanishingTransport
 public import FLT.Mazur.ResidueVectorRetraction
 public import FLT.Mazur.RetainedLineOriginalTwist
@@ -7256,6 +7265,8 @@ public import FLT.Mazur.SegreChartMaps
 public import FLT.Mazur.SegreChartQuotient
 public import FLT.Mazur.SegreClosedImmersion
 public import FLT.Mazur.SegreSchemeMorphism
+public import FLT.Mazur.SeparableAffineCoordinates
+public import FLT.Mazur.SeparableAffineOpenPoints
 public import FLT.Mazur.SeparatedFinitePresentationModel
 public import FLT.Mazur.SeparatedOpenCover
 public import FLT.Mazur.SeparatedOverlapClosedComparison
@@ -7297,6 +7308,7 @@ public import FLT.Mazur.SmoothCurvePureDimension
 public import FLT.Mazur.SmoothDimension
 public import FLT.Mazur.SmoothDimensionBound
 public import FLT.Mazur.SmoothEtaleResidueLift
+public import FLT.Mazur.SmoothEtaleSeparableLift
 public import FLT.Mazur.SmoothEtaleStalkLift
 public import FLT.Mazur.SmoothFieldCotangentRank
 public import FLT.Mazur.SmoothFiniteCoefficientBranch
