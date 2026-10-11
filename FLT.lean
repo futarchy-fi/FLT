@@ -2567,6 +2567,7 @@ public import FLT.Mazur.AdicInfinitesimalPresentationLift
 public import FLT.Mazur.AdicInfinitesimalSpaceFunctor
 public import FLT.Mazur.AdicInfinitesimalSpaceMap
 public import FLT.Mazur.AdicLocalizedFirstCotangent
+public import FLT.Mazur.AdicLocalizedH1Comparison
 public import FLT.Mazur.AdicMaximalCompletion
 public import FLT.Mazur.AdicModuleIdealTransport
 public import FLT.Mazur.AdicModuleScalarChange
