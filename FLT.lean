@@ -6461,6 +6461,8 @@ public import FLT.Mazur.RelativeCartierDivisorPullback
 public import FLT.Mazur.RelativeCartierIdealFamilyDescent
 public import FLT.Mazur.RelativeCartierIdealPullback
 public import FLT.Mazur.RelativeCartierOriginalSquare
+public import FLT.Mazur.RelativeCoproductComponentPullback
+public import FLT.Mazur.RelativeCoproductPullCover
 public import FLT.Mazur.RelativeCyclicSubgroup
 public import FLT.Mazur.RelativeDimensionBaseChangeOpen
 public import FLT.Mazur.RelativeDirectImageComposition
@@ -7048,8 +7050,15 @@ public import FLT.Mazur.SmoothFiniteSubschemeCartier
 public import FLT.Mazur.SmoothGeometricAcyclicRankOne
 public import FLT.Mazur.SmoothGeometricallyReduced
 public import FLT.Mazur.SmoothHilbertGeometricCoverage
+public import FLT.Mazur.SmoothHilbertIntersectionComponents
+public import FLT.Mazur.SmoothHilbertIntersectionLift
 public import FLT.Mazur.SmoothHilbertIntersectionSource
+public import FLT.Mazur.SmoothHilbertRelation
+public import FLT.Mazur.SmoothHilbertRelationOperations
+public import FLT.Mazur.SmoothHilbertSheafQuotient
 public import FLT.Mazur.SmoothHilbertSingleSource
+public import FLT.Mazur.SmoothHilbertSourcePullback
+public import FLT.Mazur.SmoothHilbertSourceRepresentable
 public import FLT.Mazur.SmoothHilbertTestCover
 public import FLT.Mazur.SmoothNonspecialDivisorCover
 public import FLT.Mazur.SmoothNonspecialDivisorLift
