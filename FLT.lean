@@ -7336,6 +7336,7 @@ public import FLT.Mazur.WeierstrassDividedPositiveEqualityBranches
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityCocone
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityCycle
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityCycleIndices
+public import FLT.Mazur.WeierstrassDividedPositiveEqualityPolygonMap
 public import FLT.Mazur.WeierstrassDividedPrecedingAtlasRange
 public import FLT.Mazur.WeierstrassDividedPreviousBoundaryAlgebra
 public import FLT.Mazur.WeierstrassDividedResidueAtlasExtension
