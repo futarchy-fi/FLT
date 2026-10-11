@@ -2927,6 +2927,7 @@ public import FLT.Mazur.AmpleFiniteAffineNeighborhood
 public import FLT.Mazur.AmpleFiniteGroupQuotient
 public import FLT.Mazur.AmpleGlobalGeneration
 public import FLT.Mazur.AmpleHighDegreeSectionCover
+public import FLT.Mazur.AmpleHilbertFunctorRepresentation
 public import FLT.Mazur.AmpleLineBundle
 public import FLT.Mazur.AmpleLineLimitDescent
 public import FLT.Mazur.AmpleOpenAffineRecovery
