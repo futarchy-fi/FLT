@@ -7089,6 +7089,7 @@ public import FLT.Mazur.TensorOpenChartVanishingSeparation
 public import FLT.Mazur.TensorOpenExteriorIntersection
 public import FLT.Mazur.TensorPowerDistribution
 public import FLT.Mazur.TensorPowerGeneratorOpen
+public import FLT.Mazur.TensorPowerPullbackComparison
 public import FLT.Mazur.TensorPowerReassociation
 public import FLT.Mazur.TensorPullbackComposition
 public import FLT.Mazur.TensorPullbackIdentity
