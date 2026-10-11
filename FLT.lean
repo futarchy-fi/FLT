@@ -5909,6 +5909,7 @@ public import FLT.Mazur.ProperFamilyRigidifiedTransitions
 public import FLT.Mazur.ProperFamilyRigidifiedTripleEdges
 public import FLT.Mazur.ProperFamilyRigidifiedTripleTransitions
 public import FLT.Mazur.ProperFamilyRigidifiedUniqueDescent
+public import FLT.Mazur.ProperFamilySectionCartierChart
 public import FLT.Mazur.ProperFamilySectionCoherence
 public import FLT.Mazur.ProperFamilySectionOrbits
 public import FLT.Mazur.ProperFamilySectionPullback
