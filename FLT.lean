@@ -7229,6 +7229,7 @@ public import FLT.Mazur.TranslatedHilbertOverlapIdentities
 public import FLT.Mazur.TranslatedHilbertPicardChart
 public import FLT.Mazur.TranslatedHilbertSchemeCocycle
 public import FLT.Mazur.TranslatedHilbertSchemeTriple
+public import FLT.Mazur.TranslatedHilbertSourceIntersection
 public import FLT.Mazur.TranslatedHilbertTestUnion
 public import FLT.Mazur.TranslatedHilbertTestUnionBaseChange
 public import FLT.Mazur.TranslatedHilbertTestUnionLift
