@@ -6775,6 +6775,7 @@ public import FLT.Mazur.SectionCartierOpenDescent
 public import FLT.Mazur.SectionChartGenerators
 public import FLT.Mazur.SectionCharts
 public import FLT.Mazur.SectionConditionAcyclic
+public import FLT.Mazur.SectionConditionDimension
 public import FLT.Mazur.SectionCoverCoordinates
 public import FLT.Mazur.SectionCoverDiscrepancy
 public import FLT.Mazur.SectionDivisors
