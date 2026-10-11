@@ -7229,6 +7229,7 @@ public import FLT.Mazur.TranslatedHilbertOpenBaseChange
 public import FLT.Mazur.TranslatedHilbertOrbitOpen
 public import FLT.Mazur.TranslatedHilbertOverlapIdentities
 public import FLT.Mazur.TranslatedHilbertPicardChart
+public import FLT.Mazur.TranslatedHilbertRestrictedRelation
 public import FLT.Mazur.TranslatedHilbertSchemeCocycle
 public import FLT.Mazur.TranslatedHilbertSchemeTriple
 public import FLT.Mazur.TranslatedHilbertSourceIntersection
