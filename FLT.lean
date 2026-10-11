@@ -6995,6 +6995,7 @@ public import FLT.Mazur.TorusChartScalars
 public import FLT.Mazur.TranslatedHilbertChartOverlap
 public import FLT.Mazur.TranslatedHilbertOverlapIdentities
 public import FLT.Mazur.TranslatedHilbertPicardChart
+public import FLT.Mazur.TranslatedHilbertSchemeCocycle
 public import FLT.Mazur.TranslatedHilbertSchemeTriple
 public import FLT.Mazur.TranslatedHilbertTripleCocycle
 public import FLT.Mazur.TranslatedHilbertTripleOverlap
