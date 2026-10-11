@@ -3924,6 +3924,7 @@ public import FLT.Mazur.EtalePolynomialSeparableLift
 public import FLT.Mazur.EtalePolynomialStalkLift
 public import FLT.Mazur.EtalePrimeParameterIdeals
 public import FLT.Mazur.EtaleQuasiFiniteCartierDescent
+public import FLT.Mazur.EtaleSepClosedPointDescent
 public import FLT.Mazur.EtaleSeparableResidueCoordinates
 public import FLT.Mazur.EtaleSimpleRootCoordinates
 public import FLT.Mazur.EvaluatedPrincipalRefinement
