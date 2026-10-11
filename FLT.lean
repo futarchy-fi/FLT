@@ -7725,6 +7725,7 @@ public import FLT.Mazur.WeierstrassDividedGlobalInitialComparison
 public import FLT.Mazur.WeierstrassDividedGlobalOriginalSmoothPoints
 public import FLT.Mazur.WeierstrassDividedGlobalOverPointAction
 public import FLT.Mazur.WeierstrassDividedGlobalPointAction
+public import FLT.Mazur.WeierstrassDividedGlobalPointActionStep
 public import FLT.Mazur.WeierstrassDividedGlobalPointSubgroups
 public import FLT.Mazur.WeierstrassDividedGlobalProjectivePointAction
 public import FLT.Mazur.WeierstrassDividedGlobalRegularLift
