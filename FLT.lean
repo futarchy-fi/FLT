@@ -3118,7 +3118,10 @@ public import FLT.Mazur.CartierDivisorMultiplicity
 public import FLT.Mazur.CartierFiberNeighborhood
 public import FLT.Mazur.CartierFlatNeighborhoodDescent
 public import FLT.Mazur.CartierFppfDescent
+public import FLT.Mazur.CartierIdealDescentDatum
 public import FLT.Mazur.CartierIdealFinitePresentation
+public import FLT.Mazur.CartierIdealFppfLineGluing
+public import FLT.Mazur.CartierIdealOverlap
 public import FLT.Mazur.CartierIdealPullbackComparison
 public import FLT.Mazur.CartierIdealStalkDescent
 public import FLT.Mazur.CartierIdealStalkNeighborhood
@@ -4124,6 +4127,7 @@ public import FLT.Mazur.FixedModelElementLifts
 public import FLT.Mazur.FixedTargetIntegerModel
 public import FLT.Mazur.FlasqueDirectImageAcyclic
 public import FLT.Mazur.FlatCartesianSectionGluing
+public import FLT.Mazur.FlatCartierIdealPullback
 public import FLT.Mazur.FlatCoefficientAllCohomology
 public import FLT.Mazur.FlatCoefficientCohomology
 public import FLT.Mazur.FlatCoefficientSections
@@ -4579,6 +4583,7 @@ public import FLT.Mazur.IdealIsomorphismExtension
 public import FLT.Mazur.IdealModuleAffineTensor
 public import FLT.Mazur.IdealModulePrincipalPullback
 public import FLT.Mazur.IdealModulePullback
+public import FLT.Mazur.IdealModulePullbackCoherence
 public import FLT.Mazur.IdealModulePullbackRestrict
 public import FLT.Mazur.IdealModuleSheaf
 public import FLT.Mazur.IdealPowerChartDescent
@@ -4599,6 +4604,7 @@ public import FLT.Mazur.IdealPowerVanishingTransfer
 public import FLT.Mazur.IdealPresentationQuotient
 public import FLT.Mazur.IdealQuotientExact
 public import FLT.Mazur.IdealQuotientSectionLift
+public import FLT.Mazur.IdealSheafFlatDetection
 public import FLT.Mazur.IdealSheafOpenCoverDetection
 public import FLT.Mazur.IdealTwistCohomologyStabilization
 public import FLT.Mazur.IdealTwistCohomologySystem
@@ -7006,8 +7012,11 @@ public import FLT.Mazur.UniversalWeierstrassNormalizedSliceRing
 public import FLT.Mazur.UniversalWeierstrassParameter
 public import FLT.Mazur.UniversallyClosedFiniteCover
 public import FLT.Mazur.UniversallyDistinctSections
+public import FLT.Mazur.UnpointedAcyclicAbelInjectivity
 public import FLT.Mazur.UnpointedAcyclicFppfDetection
+public import FLT.Mazur.UnpointedAcyclicFppfImageEquivalence
 public import FLT.Mazur.UnpointedAcyclicOpenPointedCompatibility
+public import FLT.Mazur.UnpointedLocalAcyclicDivisorCover
 public import FLT.Mazur.UnpointedLocalAcyclicFppfSheaf
 public import FLT.Mazur.UnramifiedSectionImmersion
 public import FLT.Mazur.UnrestrictedSmoothFamilyCartier
