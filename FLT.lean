@@ -5864,6 +5864,7 @@ public import FLT.Mazur.PolygonSectionRingFunctor
 public import FLT.Mazur.PolygonSeparated
 public import FLT.Mazur.PolygonSeriesTowerAssembly
 public import FLT.Mazur.PolygonSeriesTowerDivision
+public import FLT.Mazur.PolygonSinglePointHZeroCoordinates
 public import FLT.Mazur.PolygonSinglePointLineNormalization
 public import FLT.Mazur.PolygonSinglePointPowerNormalization
 public import FLT.Mazur.PolygonSinglePointPowerSections
