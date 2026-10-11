@@ -5265,6 +5265,7 @@ public import FLT.Mazur.OneGonQuotient
 public import FLT.Mazur.OneGonScalarExtension
 public import FLT.Mazur.OneGonSeparated
 public import FLT.Mazur.OneGonSmoothingAffinePresentation
+public import FLT.Mazur.OneGonSmoothingChartIntersection
 public import FLT.Mazur.OneGonSmoothingEquation
 public import FLT.Mazur.OneGonSmoothingFamily
 public import FLT.Mazur.OneGonSmoothingInfinityChart
