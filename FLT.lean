@@ -7247,6 +7247,7 @@ public import FLT.Mazur.TranslatedHilbertOrbitHomeomorph
 public import FLT.Mazur.TranslatedHilbertOrbitOpen
 public import FLT.Mazur.TranslatedHilbertOverlapIdentities
 public import FLT.Mazur.TranslatedHilbertPicardChart
+public import FLT.Mazur.TranslatedHilbertRelationOpenSections
 public import FLT.Mazur.TranslatedHilbertRestrictedRelation
 public import FLT.Mazur.TranslatedHilbertSchemeCocycle
 public import FLT.Mazur.TranslatedHilbertSchemeTriple
