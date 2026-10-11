@@ -3088,6 +3088,7 @@ public import FLT.Mazur.BaseChangedPresentationModel
 public import FLT.Mazur.BaseOpenHilbertBaseChange
 public import FLT.Mazur.BaseOpenHilbertChartFunctions
 public import FLT.Mazur.BaseOpenHilbertChartSourceSections
+public import FLT.Mazur.BaseOpenHilbertInvariantStructureSheaf
 public import FLT.Mazur.BaseOpenHilbertOrbitFibers
 public import FLT.Mazur.BaseOpenHilbertOrbitHomeomorph
 public import FLT.Mazur.BaseOpenHilbertOrbitOpen
