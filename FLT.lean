@@ -2575,6 +2575,7 @@ public import FLT.Mazur.AdicSquareZeroComplexComparison
 public import FLT.Mazur.AdicSquareZeroConormal
 public import FLT.Mazur.AdicSquareZeroFormalChainMap
 public import FLT.Mazur.AdicSquareZeroFormalConormal
+public import FLT.Mazur.AdicSquareZeroFormalHomotopy
 public import FLT.Mazur.AffineAdicCohomologyImage
 public import FLT.Mazur.AffineAdicFormalComparison
 public import FLT.Mazur.AffineAnnihilator
