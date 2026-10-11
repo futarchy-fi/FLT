@@ -7979,6 +7979,7 @@ public import FLT.Mazur.WeierstrassGlobalModificationLocalAction
 public import FLT.Mazur.WeierstrassGlobalModificationOriginalOpen
 public import FLT.Mazur.WeierstrassGlobalModificationProper
 public import FLT.Mazur.WeierstrassGlobalModificationRegularLiftExt
+public import FLT.Mazur.WeierstrassGlobalModificationSmoothAction
 public import FLT.Mazur.WeierstrassGlobalModificationSmoothCover
 public import FLT.Mazur.WeierstrassGlobalModificationSmoothEmbedding
 public import FLT.Mazur.WeierstrassGlobalModificationSmoothOpen
