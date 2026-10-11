@@ -3154,6 +3154,7 @@ public import FLT.Mazur.CartierAbelSquareComparison
 public import FLT.Mazur.CartierAbelTwistBaseChange
 public import FLT.Mazur.CartierAbelTwistedSections
 public import FLT.Mazur.CartierAffineFppfDescent
+public import FLT.Mazur.CartierBoundarySectionRingNaturality
 public import FLT.Mazur.CartierChartFlat
 public import FLT.Mazur.CartierCharts
 public import FLT.Mazur.CartierDivisorComponentRestriction
@@ -5375,6 +5376,8 @@ public import FLT.Mazur.PolygonAtlasCocone
 public import FLT.Mazur.PolygonAtlasSmoothLocus
 public import FLT.Mazur.PolygonBoundaryClosedLayer
 public import FLT.Mazur.PolygonBoundaryClosedLifting
+public import FLT.Mazur.PolygonBoundaryCoefficientNaturality
+public import FLT.Mazur.PolygonBoundaryCoefficientScalars
 public import FLT.Mazur.PolygonBoundaryDegreeFinite
 public import FLT.Mazur.PolygonBoundaryDivisor
 public import FLT.Mazur.PolygonBoundaryGradedExactness
@@ -5408,10 +5411,13 @@ public import FLT.Mazur.PolygonClosedScalarLifting
 public import FLT.Mazur.PolygonCoconeComparison
 public import FLT.Mazur.PolygonCohomologyIncidence
 public import FLT.Mazur.PolygonCompatibleCoefficientFlatness
+public import FLT.Mazur.PolygonCompatibleCoefficientMap
+public import FLT.Mazur.PolygonCompatibleCoefficientScalars
 public import FLT.Mazur.PolygonCompatibleDegreeExactness
 public import FLT.Mazur.PolygonCompatibleDegreeLifting
 public import FLT.Mazur.PolygonCompatibleDegreeProjection
 public import FLT.Mazur.PolygonCompatibleDegreeZero
+public import FLT.Mazur.PolygonCompatibleGradedCoefficientMap
 public import FLT.Mazur.PolygonCompatibleHomogeneousSections
 public import FLT.Mazur.PolygonCompatibleParameterRegularity
 public import FLT.Mazur.PolygonCompatibleSectionAlgebra
@@ -5696,6 +5702,7 @@ public import FLT.Mazur.PolygonOriginalNeighborhoodTransition
 public import FLT.Mazur.PolygonOriginalNodeClosed
 public import FLT.Mazur.PolygonOriginalNodePoint
 public import FLT.Mazur.PolygonOriginalStageAdicSquare
+public import FLT.Mazur.PolygonParameterProjectionComposition
 public import FLT.Mazur.PolygonPinchingAffineBaseChange
 public import FLT.Mazur.PolygonPinchingDiagram
 public import FLT.Mazur.PolygonPinchingFlatBaseChange
@@ -5750,6 +5757,7 @@ public import FLT.Mazur.PolygonSmoothingPunctureBaseChange
 public import FLT.Mazur.PolygonSmoothingQuadraticModel
 public import FLT.Mazur.PolygonSmoothingRing
 public import FLT.Mazur.PolygonSmoothingRingMap
+public import FLT.Mazur.PolygonSmoothingRingMapComposition
 public import FLT.Mazur.PolygonSmoothingSingularSupport
 public import FLT.Mazur.PolygonSmoothingSpecialBranches
 public import FLT.Mazur.PolygonSmoothingSpecialFiber
@@ -5772,9 +5780,12 @@ public import FLT.Mazur.PolygonSplitRefinementCover
 public import FLT.Mazur.PolygonSplitRefinementValue
 public import FLT.Mazur.PolygonSplitTorusBranches
 public import FLT.Mazur.PolygonStageClosedImmersion
+public import FLT.Mazur.PolygonStageCoefficientBoundary
 public import FLT.Mazur.PolygonStageCoefficientFamilies
 public import FLT.Mazur.PolygonStageCoefficientKernel
 public import FLT.Mazur.PolygonStageCoefficientNaturality
+public import FLT.Mazur.PolygonStageCoefficientSystems
+public import FLT.Mazur.PolygonStageCoefficientTransitions
 public import FLT.Mazur.PolygonStageFlatLayer
 public import FLT.Mazur.PolygonStageLayerSequence
 public import FLT.Mazur.PolygonStageLineLayer
@@ -5800,6 +5811,7 @@ public import FLT.Mazur.PolygonVeroneseAdicReduction
 public import FLT.Mazur.PolygonVeroneseBoundedGenerators
 public import FLT.Mazur.PolygonVeroneseClosedGeneration
 public import FLT.Mazur.PolygonVeroneseClosedLifts
+public import FLT.Mazur.PolygonVeroneseCoefficientMap
 public import FLT.Mazur.PolygonVeroneseDegreeComplete
 public import FLT.Mazur.PolygonVeroneseDegreeExactness
 public import FLT.Mazur.PolygonVeroneseDegreeFinite
