@@ -8872,6 +8872,7 @@ public import FLT.Mazur.WeierstrassSmoothCrossAffine
 public import FLT.Mazur.WeierstrassSmoothCrossPolynomial
 public import FLT.Mazur.WeierstrassSmoothFactorAddition
 public import FLT.Mazur.WeierstrassSmoothFactorProduct
+public import FLT.Mazur.WeierstrassSmoothFaithfulCoefficientDescent
 public import FLT.Mazur.WeierstrassSmoothFiberCore
 public import FLT.Mazur.WeierstrassSmoothFiveAffineTriple
 public import FLT.Mazur.WeierstrassSmoothFivePoints
