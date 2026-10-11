@@ -6449,6 +6449,7 @@ public import FLT.Mazur.RelativeCartierDivisorPullback
 public import FLT.Mazur.RelativeCartierIdealFamilyDescent
 public import FLT.Mazur.RelativeCartierIdealPullback
 public import FLT.Mazur.RelativeCartierOriginalSquare
+public import FLT.Mazur.RelativeCoproductComponentPullback
 public import FLT.Mazur.RelativeCyclicSubgroup
 public import FLT.Mazur.RelativeDimensionBaseChangeOpen
 public import FLT.Mazur.RelativeDirectImageComposition
