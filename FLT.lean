@@ -2516,6 +2516,8 @@ public import FLT.Mazur.AdicCompletionPrincipal
 public import FLT.Mazur.AdicCompletionQuotientEquiv
 public import FLT.Mazur.AdicCompletionScalars
 public import FLT.Mazur.AdicCotangentHomComparison
+public import FLT.Mazur.AdicCotangentTransportDerivative
+public import FLT.Mazur.AdicCotangentTransportEquiv
 public import FLT.Mazur.AdicCotangentTransportMap
 public import FLT.Mazur.AdicDerivationCompletion
 public import FLT.Mazur.AdicDerivationExtension
@@ -5267,10 +5269,13 @@ public import FLT.Mazur.PolygonCompleteNodeArithmeticAction
 public import FLT.Mazur.PolygonCompleteNodeArithmeticGerms
 public import FLT.Mazur.PolygonCompleteNodeCompletion
 public import FLT.Mazur.PolygonCompleteNodeCotangentAction
+public import FLT.Mazur.PolygonCompleteNodeCotangentCokernel
 public import FLT.Mazur.PolygonCompleteNodeCotangentComparison
+public import FLT.Mazur.PolygonCompleteNodeCotangentEquiv
 public import FLT.Mazur.PolygonCompleteNodeCotangentFiltration
 public import FLT.Mazur.PolygonCompleteNodeFiltration
 public import FLT.Mazur.PolygonCompleteNodeLocalFiniteness
+public import FLT.Mazur.PolygonCompleteNodeLocalizedCotangent
 public import FLT.Mazur.PolygonCompleteNodeModuleFiltration
 public import FLT.Mazur.PolygonCompleteNodeNeighborhood
 public import FLT.Mazur.PolygonCompleteNodeStalkCompletion
@@ -5463,10 +5468,13 @@ public import FLT.Mazur.PolygonSmoothingCoefficientBranches
 public import FLT.Mazur.PolygonSmoothingCoefficientSquares
 public import FLT.Mazur.PolygonSmoothingCompletedDifferentials
 public import FLT.Mazur.PolygonSmoothingCoordinateIdeal
+public import FLT.Mazur.PolygonSmoothingCotangentCokernel
+public import FLT.Mazur.PolygonSmoothingCotangentRelationSequence
 public import FLT.Mazur.PolygonSmoothingDerivation
 public import FLT.Mazur.PolygonSmoothingFlat
 public import FLT.Mazur.PolygonSmoothingGenericFiber
 public import FLT.Mazur.PolygonSmoothingLeftPuncture
+public import FLT.Mazur.PolygonSmoothingLocalizedCotangent
 public import FLT.Mazur.PolygonSmoothingMarkedSection
 public import FLT.Mazur.PolygonSmoothingNilpotentBranches
 public import FLT.Mazur.PolygonSmoothingOverlapGraph
@@ -6842,6 +6850,10 @@ public import FLT.Mazur.TwistedSectionPullbackMonicity
 public import FLT.Mazur.TwistedSectionPushforward
 public import FLT.Mazur.TwistedSectionPushforwardNaturality
 public import FLT.Mazur.TwistedSectionRegularity
+public import FLT.Mazur.TwoGeneratorRelationBaseChange
+public import FLT.Mazur.TwoGeneratorRelationQuotient
+public import FLT.Mazur.TwoGeneratorRelationSequence
+public import FLT.Mazur.TwoGeneratorRelationUnit
 public import FLT.Mazur.UniformizerRootExtension
 public import FLT.Mazur.UnitIntegerModel
 public import FLT.Mazur.UniversalDivisorAcyclicRankOne
