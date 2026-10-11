@@ -5387,6 +5387,7 @@ public import FLT.Mazur.PolygonCompleteNodeCotangentCokernel
 public import FLT.Mazur.PolygonCompleteNodeCotangentComparison
 public import FLT.Mazur.PolygonCompleteNodeCotangentEquiv
 public import FLT.Mazur.PolygonCompleteNodeCotangentFiltration
+public import FLT.Mazur.PolygonCompleteNodeDimensionOpen
 public import FLT.Mazur.PolygonCompleteNodeFieldCotangentRank
 public import FLT.Mazur.PolygonCompleteNodeFiltration
 public import FLT.Mazur.PolygonCompleteNodeFirstCotangent
