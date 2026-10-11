@@ -6540,6 +6540,7 @@ public import FLT.Mazur.RelativePinchingNeighborhoods
 public import FLT.Mazur.RelativeRankOneDivisorUniqueness
 public import FLT.Mazur.RelativeRelationInvariantAffineComparison
 public import FLT.Mazur.RelativeRelationInvariantLocallyRinged
+public import FLT.Mazur.RelativeRelationInvariantSectionRings
 public import FLT.Mazur.RelativeRelationInvariantSections
 public import FLT.Mazur.RelativeRelationInvariantSheaf
 public import FLT.Mazur.RelativeRelationOrbit
