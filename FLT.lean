@@ -7547,6 +7547,7 @@ public import FLT.Mazur.WeierstrassDividedGlobalFiniteSmoothOpen
 public import FLT.Mazur.WeierstrassDividedGlobalFiniteStep
 public import FLT.Mazur.WeierstrassDividedGlobalFiniteZero
 public import FLT.Mazur.WeierstrassDividedGlobalInitialAction
+public import FLT.Mazur.WeierstrassDividedGlobalInitialActionLaws
 public import FLT.Mazur.WeierstrassDividedGlobalInitialComparison
 public import FLT.Mazur.WeierstrassDividedGlobalResidueNodes
 public import FLT.Mazur.WeierstrassDividedGlobalResidueOverlap
