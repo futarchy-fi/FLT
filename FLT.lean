@@ -5274,6 +5274,7 @@ public import FLT.Mazur.OneGonSmoothingFieldFibers
 public import FLT.Mazur.OneGonSmoothingGenusOneFamily
 public import FLT.Mazur.OneGonSmoothingInfinityChart
 public import FLT.Mazur.OneGonSmoothingInfinityCoordinates
+public import FLT.Mazur.OneGonSmoothingMarkedFamily
 public import FLT.Mazur.OneGonSmoothingMarking
 public import FLT.Mazur.OneGonSmoothingMarkingAmple
 public import FLT.Mazur.OneGonSmoothingMarkingLine
