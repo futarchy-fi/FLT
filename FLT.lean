@@ -3123,6 +3123,7 @@ public import FLT.Mazur.CartierIdealDescentDatum
 public import FLT.Mazur.CartierIdealFinitePresentation
 public import FLT.Mazur.CartierIdealFppfLineGluing
 public import FLT.Mazur.CartierIdealGluedInclusion
+public import FLT.Mazur.CartierIdealGluedMonicity
 public import FLT.Mazur.CartierIdealInclusionDescentMap
 public import FLT.Mazur.CartierIdealOverlap
 public import FLT.Mazur.CartierIdealPullbackComparison
