@@ -52,7 +52,8 @@ theorem equationGroupIso_hom {W V : WeierstrassCurve R} (h : W = V)
       eqToHom (congrArg integralCurve h) := rfl
 
 /-- The original boundary comparison preserves the constructed group operations. -/
-def smoothUniversalGroupIso : smoothGroup t ht hf ≅ smoothUniversalGroup t h₂ ht hf := by
+irreducible_def smoothUniversalGroupIso :
+    smoothGroup t ht hf ≅ smoothUniversalGroup t h₂ ht hf := by
   letI := (smoothParameter t h₂ ht hf).toAlgebra
   have hd : IsUnit (smoothEquation.map (algebraMap ParameterRing R)).Δ :=
     (smoothParameter_equation t h₂ ht hf).symm ▸ smooth_discriminant t ht hf
@@ -64,6 +65,7 @@ def smoothUniversalGroupIso : smoothGroup t ht hf ≅ smoothUniversalGroup t h�
 @[reassoc] theorem smoothUniversalGroupIso_fst :
     (smoothUniversalGroupIso t h₂ ht hf).hom.hom.hom.hom.left ≫ pullback.fst _ _ =
       smoothUniversalMorphism t h₂ ht hf := by
+  rw [smoothUniversalGroupIso_def]
   let _ := (smoothParameter t h₂ ht hf).toAlgebra
   change ((equationGroupIso (smoothParameter_equation t h₂ ht hf).symm _ _).hom.hom.hom.hom.left
     ≫ (integralCurveCoefficientGroupIso smoothEquation _ _).hom.hom.hom.hom.left) ≫ _ = _
