@@ -5263,6 +5263,7 @@ public import FLT.Mazur.OneGonQuotient
 public import FLT.Mazur.OneGonScalarExtension
 public import FLT.Mazur.OneGonSeparated
 public import FLT.Mazur.OneGonSmoothingEquation
+public import FLT.Mazur.OneGonSmoothingFamily
 public import FLT.Mazur.OneGonTransition
 public import FLT.Mazur.OpenAtlasTripleGluing
 public import FLT.Mazur.OpenChartSectionPullback
