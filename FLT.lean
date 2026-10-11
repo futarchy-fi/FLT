@@ -8069,6 +8069,7 @@ public import FLT.Mazur.WeierstrassLeftSmoothInputRestrictions
 public import FLT.Mazur.WeierstrassLeftSmoothLocalOutputRegular
 public import FLT.Mazur.WeierstrassLeftSmoothMixedAddition
 public import FLT.Mazur.WeierstrassLeftSmoothMixedLeftReciprocalTriple
+public import FLT.Mazur.WeierstrassLeftSmoothMixedRightReciprocalTriple
 public import FLT.Mazur.WeierstrassLeftSmoothOriginalFormulas
 public import FLT.Mazur.WeierstrassLeftSmoothOriginalPartial
 public import FLT.Mazur.WeierstrassLeftSmoothProductOpen
