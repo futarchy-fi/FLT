@@ -8015,6 +8015,7 @@ public import FLT.Mazur.WeierstrassDividedInitialSlopeTransition
 public import FLT.Mazur.WeierstrassDividedInitialTensorActionGeometry
 public import FLT.Mazur.WeierstrassDividedInitialTensorBoundary
 public import FLT.Mazur.WeierstrassDividedInitialTensorChart
+public import FLT.Mazur.WeierstrassDividedInitialTensorGlobalComparison
 public import FLT.Mazur.WeierstrassDividedInitialTensorInfinityIntersection
 public import FLT.Mazur.WeierstrassDividedInitialTensorIntersection
 public import FLT.Mazur.WeierstrassDividedInitialZeroInfinity
