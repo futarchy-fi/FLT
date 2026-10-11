@@ -6751,6 +6751,7 @@ public import FLT.Mazur.ResidueCoordinateDenominators
 public import FLT.Mazur.ResidueFiberRegularLocalization
 public import FLT.Mazur.ResidueNonvanishingLocallySplit
 public import FLT.Mazur.ResidueNonvanishingOpenPullback
+public import FLT.Mazur.ResiduePolynomialLift
 public import FLT.Mazur.ResiduePullbackNonvanishingTransport
 public import FLT.Mazur.ResidueVectorRetraction
 public import FLT.Mazur.RetainedLineOriginalTwist
