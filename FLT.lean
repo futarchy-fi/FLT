@@ -9022,6 +9022,7 @@ public import FLT.Mazur.WeierstrassSmoothGoodReductionGroup
 public import FLT.Mazur.WeierstrassSmoothGoodReductionLocal
 public import FLT.Mazur.WeierstrassSmoothGroup
 public import FLT.Mazur.WeierstrassSmoothGroupOperations
+public import FLT.Mazur.WeierstrassSmoothHorizontalProductSource
 public import FLT.Mazur.WeierstrassSmoothInfinityCommutativity
 public import FLT.Mazur.WeierstrassSmoothInfinityDomain
 public import FLT.Mazur.WeierstrassSmoothInfinityIdentity
