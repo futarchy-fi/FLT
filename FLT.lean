@@ -2729,6 +2729,7 @@ public import FLT.Mazur.AffineGeometricTensorDatum
 public import FLT.Mazur.AffineHilbertChartRelation
 public import FLT.Mazur.AffineHilbertComposableEnvelope
 public import FLT.Mazur.AffineHilbertCompositionCharts
+public import FLT.Mazur.AffineHilbertLocalTensorInvariants
 public import FLT.Mazur.AffineHilbertLocalizedCoefficients
 public import FLT.Mazur.AffineHilbertLocalizedComposition
 public import FLT.Mazur.AffineHilbertLocalizedCounit
