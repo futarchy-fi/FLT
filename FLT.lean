@@ -6358,6 +6358,7 @@ public import FLT.Mazur.RationalCyclicModuliPoint
 public import FLT.Mazur.RationalCyclicSubgroup
 public import FLT.Mazur.RationalFibers
 public import FLT.Mazur.RationalPointConditionRank
+public import FLT.Mazur.RationalPointDivisorStalk
 public import FLT.Mazur.RationalPrimeTorsionGeometricModel
 public import FLT.Mazur.RationalPrimeTorsionLocalModel
 public import FLT.Mazur.ReconstructionComposition
