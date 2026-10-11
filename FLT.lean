@@ -2491,8 +2491,10 @@ public import FLT.Mazur.AbsoluteDirectImageCohomology
 public import FLT.Mazur.AcyclicCoefficientCohomology
 public import FLT.Mazur.AcyclicDegreePicardRepresentation
 public import FLT.Mazur.AcyclicDirectImageResolution
+public import FLT.Mazur.AcyclicDivisorDegreeOpen
 public import FLT.Mazur.AcyclicDivisorDegreePresheaf
 public import FLT.Mazur.AcyclicHilbertDivisorRepresentation
+public import FLT.Mazur.AcyclicHilbertPicardTestOverlap
 public import FLT.Mazur.AcyclicLineSectionBaseChange
 public import FLT.Mazur.AcyclicPointedAbelBaseChange
 public import FLT.Mazur.AcyclicPointedAbelEquivalence
@@ -3892,6 +3894,7 @@ public import FLT.Mazur.FiniteFamilySupportOpen
 public import FLT.Mazur.FiniteFieldRankLength
 public import FLT.Mazur.FiniteFlatAffineLocalFree
 public import FLT.Mazur.FiniteFlatCoefficientIdeal
+public import FLT.Mazur.FiniteFlatDegreeOpen
 public import FLT.Mazur.FiniteFlatLocalIdealPresentation
 public import FLT.Mazur.FiniteFlatQuotientTrivialization
 public import FLT.Mazur.FiniteFlatSubschemeQuotient
@@ -4718,6 +4721,7 @@ public import FLT.Mazur.IntegerModelTransition
 public import FLT.Mazur.IntegralAlgebraicallyClosedLifting
 public import FLT.Mazur.IntegralBase
 public import FLT.Mazur.IntegralClosedSupport
+public import FLT.Mazur.IntegralCurveCartierFinite
 public import FLT.Mazur.IntegralDimension
 public import FLT.Mazur.IntegralPointExtension
 public import FLT.Mazur.IntegralShortHomologyNaturality
@@ -6293,6 +6297,7 @@ public import FLT.Mazur.RelativeAmpleRestriction
 public import FLT.Mazur.RelativeAmpleSectionComparison
 public import FLT.Mazur.RelativeCartier
 public import FLT.Mazur.RelativeCartierBaseChange
+public import FLT.Mazur.RelativeCartierCurveFinite
 public import FLT.Mazur.RelativeCartierDivisorPullback
 public import FLT.Mazur.RelativeCartierIdealFamilyDescent
 public import FLT.Mazur.RelativeCartierIdealPullback
@@ -6972,6 +6977,8 @@ public import FLT.Mazur.TildeInvertibleLocal
 public import FLT.Mazur.TildePrincipalOpen
 public import FLT.Mazur.TildeSourceSectionComparison
 public import FLT.Mazur.TorusChartScalars
+public import FLT.Mazur.TranslatedHilbertChartOverlap
+public import FLT.Mazur.TranslatedHilbertPicardChart
 public import FLT.Mazur.TrivialLineTwistLocalization
 public import FLT.Mazur.TrivializedLineSheafLimitDescent
 public import FLT.Mazur.TwistedEvaluationSectionSum
@@ -7079,6 +7086,8 @@ public import FLT.Mazur.UniversallyDistinctSections
 public import FLT.Mazur.UnpointedAbelOpenFiberRepresentation
 public import FLT.Mazur.UnpointedAcyclicAbelInjectivity
 public import FLT.Mazur.UnpointedAcyclicAbelSheafIso
+public import FLT.Mazur.UnpointedAcyclicDegreeOpen
+public import FLT.Mazur.UnpointedAcyclicDegreeYoneda
 public import FLT.Mazur.UnpointedAcyclicFppfDetection
 public import FLT.Mazur.UnpointedAcyclicFppfImageEquivalence
 public import FLT.Mazur.UnpointedAcyclicOpenDivisor
