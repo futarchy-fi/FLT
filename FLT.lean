@@ -7072,6 +7072,7 @@ public import FLT.Mazur.RelativeFiberMorphism
 public import FLT.Mazur.RelativeFiberNakayama
 public import FLT.Mazur.RelativeFppfComparisonCover
 public import FLT.Mazur.RelativeFppfLocalSubfunctor
+public import FLT.Mazur.RelativeGenusOneAffineLowPoles
 public import FLT.Mazur.RelativeGenusOneCanonicalBasis
 public import FLT.Mazur.RelativeGenusOneCanonicalConstants
 public import FLT.Mazur.RelativeGenusOneCanonicalLine
