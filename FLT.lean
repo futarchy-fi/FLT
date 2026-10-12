@@ -5271,6 +5271,7 @@ public import FLT.Mazur.MultiplicativeGroupDimension
 public import FLT.Mazur.MultiplicativeGroupFieldExtension
 public import FLT.Mazur.MultiplicativeGroupScheme
 public import FLT.Mazur.NeronPolygonPredicate
+public import FLT.Mazur.NeronPolygonReflection
 public import FLT.Mazur.NeronPolygonRotation
 public import FLT.Mazur.NeronPolygonRotationAction
 public import FLT.Mazur.NeronPolygonScaling
