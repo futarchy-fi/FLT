@@ -4623,6 +4623,7 @@ public import FLT.Mazur.GrassmannianTripleOverlapOriginalPullback
 public import FLT.Mazur.GrassmannianTripleOverlapRestriction
 public import FLT.Mazur.GrassmannianTripleOverlapRing
 public import FLT.Mazur.GrassmannianTripleOverlapScheme
+public import FLT.Mazur.GrassmannianTypedOpenChartComparisons
 public import FLT.Mazur.GrassmannianWholeOverlapCocycle
 public import FLT.Mazur.GrassmannianWholeOverlapProjection
 public import FLT.Mazur.GrassmannianWholeOverlapRefinement
