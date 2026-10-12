@@ -5715,6 +5715,7 @@ public import FLT.Mazur.NonspecialDivisorTestCover
 public import FLT.Mazur.NonspecialDivisorTranslationCover
 public import FLT.Mazur.NonzeroLineSectionExact
 public import FLT.Mazur.NonzeroSectionPointCondition
+public import FLT.Mazur.NormalizedModuliInvariantDescent
 public import FLT.Mazur.NormalizedModuliParameterOverlap
 public import FLT.Mazur.NormalizedSectionLine
 public import FLT.Mazur.NormalizedSectionLineBaseChange
