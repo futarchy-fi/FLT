@@ -4620,6 +4620,7 @@ public import FLT.Mazur.GrassmannianQuotientImageProjection
 public import FLT.Mazur.GrassmannianQuotientImageRecovery
 public import FLT.Mazur.GrassmannianQuotientImageTransition
 public import FLT.Mazur.GrassmannianQuotientLocalBasis
+public import FLT.Mazur.GrassmannianQuotientRecoveryStatement
 public import FLT.Mazur.GrassmannianQuotientRefinement
 public import FLT.Mazur.GrassmannianQuotientSheaf
 public import FLT.Mazur.GrassmannianQuotientSheafFaithful
