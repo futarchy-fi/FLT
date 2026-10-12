@@ -3489,6 +3489,7 @@ public import FLT.Mazur.CurveComponentAmpleCriterion
 public import FLT.Mazur.CurveDegreeFieldBaseChange
 public import FLT.Mazur.CurveDivisorAmpleSupport
 public import FLT.Mazur.CurveDivisorLengthSupport
+public import FLT.Mazur.CurveEndomorphismDichotomy
 public import FLT.Mazur.CurveEulerCharacteristic
 public import FLT.Mazur.CurveFiberHypotheses
 public import FLT.Mazur.CurveFinite
@@ -4404,6 +4405,7 @@ public import FLT.Mazur.GeometricAcyclicPicardSubfunctor
 public import FLT.Mazur.GeometricAcyclicRankOne
 public import FLT.Mazur.GeometricAcyclicRankOneLocus
 public import FLT.Mazur.GeometricFiberSmoothLineParameters
+public import FLT.Mazur.GeometricFixedPointTranslation
 public import FLT.Mazur.GeometricFppfCoverSection
 public import FLT.Mazur.GeometricHilbertTranslation
 public import FLT.Mazur.GeometricOpenFactorization
@@ -4471,6 +4473,7 @@ public import FLT.Mazur.GroupMarkingTransport
 public import FLT.Mazur.GroupMarkingTransportEquations
 public import FLT.Mazur.GroupMarkingTransportNaturality
 public import FLT.Mazur.GroupObjectPointTranslation
+public import FLT.Mazur.GroupObjectTranslationNaturality
 public import FLT.Mazur.GroupSchemeBaseChangeComparison
 public import FLT.Mazur.GroupSchemeBaseChangeComposition
 public import FLT.Mazur.GroupSchemeBaseChangeProjections
@@ -5626,6 +5629,7 @@ public import FLT.Mazur.PolygonCanonicalTorusTransition
 public import FLT.Mazur.PolygonCartierGenerator
 public import FLT.Mazur.PolygonChartScaling
 public import FLT.Mazur.PolygonClassifiedFamily
+public import FLT.Mazur.PolygonClosedChartRotation
 public import FLT.Mazur.PolygonClosedEvaluationLifting
 public import FLT.Mazur.PolygonClosedScalarLifting
 public import FLT.Mazur.PolygonCoconeComparison
@@ -5673,6 +5677,7 @@ public import FLT.Mazur.PolygonCompleteClosedH1Scalars
 public import FLT.Mazur.PolygonCompleteClosedPointAcyclic
 public import FLT.Mazur.PolygonCompleteClosedPointCohomology
 public import FLT.Mazur.PolygonCompleteClosedPointLineComparison
+public import FLT.Mazur.PolygonCompleteClosedRotation
 public import FLT.Mazur.PolygonCompleteClosedSingularPoints
 public import FLT.Mazur.PolygonCompleteClosedSmoothLocus
 public import FLT.Mazur.PolygonCompleteClosedSpecialization
@@ -5702,6 +5707,7 @@ public import FLT.Mazur.PolygonCompleteFamilyFlatness
 public import FLT.Mazur.PolygonCompleteFamilyHomExt
 public import FLT.Mazur.PolygonCompleteFiberMarkings
 public import FLT.Mazur.PolygonCompleteFieldH1
+public import FLT.Mazur.PolygonCompleteFixedPointFree
 public import FLT.Mazur.PolygonCompleteGenericGenus
 public import FLT.Mazur.PolygonCompleteGenericH1
 public import FLT.Mazur.PolygonCompleteGenericPureDimension
@@ -6013,7 +6019,11 @@ public import FLT.Mazur.PolygonPowerNodeWeights
 public import FLT.Mazur.PolygonPowerSeriesBase
 public import FLT.Mazur.PolygonPowerSeriesSystem
 public import FLT.Mazur.PolygonProductAtlas
+public import FLT.Mazur.PolygonProjectiveCyclicPoints
+public import FLT.Mazur.PolygonProjectiveExactTorsion
+public import FLT.Mazur.PolygonProjectiveFixedPointFree
 public import FLT.Mazur.PolygonProjectiveRotationNormalization
+public import FLT.Mazur.PolygonProjectiveTranslation
 public import FLT.Mazur.PolygonProper
 public import FLT.Mazur.PolygonPuncturedCanonicalEquations
 public import FLT.Mazur.PolygonPureDimension
@@ -6578,6 +6588,7 @@ public import FLT.Mazur.ProperCohomologyWitnesses
 public import FLT.Mazur.ProperConnectedReducedSections
 public import FLT.Mazur.ProperCoverImmersionCriterion
 public import FLT.Mazur.ProperCoverLimitDescent
+public import FLT.Mazur.ProperCurveFixedPointTranslation
 public import FLT.Mazur.ProperCurveGenus
 public import FLT.Mazur.ProperDenseOpenExtension
 public import FLT.Mazur.ProperDenseOpenIso
@@ -6689,6 +6700,7 @@ public import FLT.Mazur.ProperLocalAdicFiniteIso
 public import FLT.Mazur.ProperLocalAdicIdealSeparation
 public import FLT.Mazur.ProperLocalAmpleFiberGenerators
 public import FLT.Mazur.ProperLocalFiberCover
+public import FLT.Mazur.ProperLocalFixedPoint
 public import FLT.Mazur.ProperOnlyAmpleFiberNeighborhood
 public import FLT.Mazur.ProperOnlyRelativeAmpleFibers
 public import FLT.Mazur.ProperPointExtension
@@ -8646,6 +8658,7 @@ public import FLT.Mazur.WeierstrassFiveAffineTriple
 public import FLT.Mazur.WeierstrassFiveRegularChartDescent
 public import FLT.Mazur.WeierstrassFiveRegularSectionDescent
 public import FLT.Mazur.WeierstrassFiveRegularTriple
+public import FLT.Mazur.WeierstrassFixedPointTranslation
 public import FLT.Mazur.WeierstrassFlatProductSecantDescent
 public import FLT.Mazur.WeierstrassFlatSectionRegular
 public import FLT.Mazur.WeierstrassFourMarkingFrame
