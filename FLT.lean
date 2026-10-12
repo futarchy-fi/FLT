@@ -5167,6 +5167,7 @@ public import FLT.Mazur.IdealPowerReesSingle
 public import FLT.Mazur.IdealPowerScalarLift
 public import FLT.Mazur.IdealPowerVanishingTransfer
 public import FLT.Mazur.IdealPresentationQuotient
+public import FLT.Mazur.IdealPullbackVanishingCriterion
 public import FLT.Mazur.IdealQuotientExact
 public import FLT.Mazur.IdealQuotientSectionLift
 public import FLT.Mazur.IdealSheafAdicStalkSeparation
