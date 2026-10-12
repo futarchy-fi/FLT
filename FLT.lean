@@ -4438,6 +4438,7 @@ public import FLT.Mazur.GenusOneGroupPoleBasis
 public import FLT.Mazur.GenusOneGroupPoleFunctions
 public import FLT.Mazur.GenusOneGroupProjectiveExtension
 public import FLT.Mazur.GenusOneGroupProjectiveIso
+public import FLT.Mazur.GenusOneGroupProjectivePoint
 public import FLT.Mazur.GenusOneGroupWeierstrassEquation
 public import FLT.Mazur.GenusOneNonspecialPoint
 public import FLT.Mazur.GeometricAcyclicFppfLocus
