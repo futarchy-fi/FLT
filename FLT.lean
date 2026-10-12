@@ -4593,6 +4593,7 @@ public import FLT.Mazur.GrassmannianMorphismSheafTransition
 public import FLT.Mazur.GrassmannianMorphismTensorCompatibility
 public import FLT.Mazur.GrassmannianNamedAmbientRefinement
 public import FLT.Mazur.GrassmannianNamedRefinement
+public import FLT.Mazur.GrassmannianNormalizedAmbientCoordinates
 public import FLT.Mazur.GrassmannianNormalizedBaseChange
 public import FLT.Mazur.GrassmannianNumeratorTransport
 public import FLT.Mazur.GrassmannianOpenChartCoherence
@@ -4826,6 +4827,7 @@ public import FLT.Mazur.HilbertMonomialBasisNeighborhood
 public import FLT.Mazur.HilbertMonomialChartCover
 public import FLT.Mazur.HilbertMonomialFiberBasis
 public import FLT.Mazur.HilbertMonomialPrincipalSpecCover
+public import FLT.Mazur.HilbertMonomialReindexedAmbient
 public import FLT.Mazur.HilbertMultiplicationCoordinateRecovery
 public import FLT.Mazur.HilbertOpenAmbientBaseChange
 public import FLT.Mazur.HilbertOpenAmbientCartesian
