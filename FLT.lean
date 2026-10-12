@@ -3468,6 +3468,7 @@ public import FLT.Mazur.CohomologyImageReesModule
 public import FLT.Mazur.ComaximalIdealSequence
 public import FLT.Mazur.CommonAmbientAffineFullRelation
 public import FLT.Mazur.CommonAmbientAffineRelationEtale
+public import FLT.Mazur.CommonAmbientAffineRelationImage
 public import FLT.Mazur.CommonAmbientAffineRelationKernel
 public import FLT.Mazur.CommonAmbientGrassmannianAffineCover
 public import FLT.Mazur.CommonAmbientGrassmannianProduct
