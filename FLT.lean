@@ -5311,6 +5311,7 @@ public import FLT.Mazur.NodePuncturedDenominatorRestriction
 public import FLT.Mazur.NodeQuotient
 public import FLT.Mazur.NodeSmoothLocus
 public import FLT.Mazur.NodeTangentAlgebra
+public import FLT.Mazur.NodeTangentCoefficientCover
 public import FLT.Mazur.NodeTangentDepth
 public import FLT.Mazur.NodeTangentExtension
 public import FLT.Mazur.NodeTangentFieldFixed
