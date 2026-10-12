@@ -1,4 +1,4 @@
-module  -- shake: keep-all --deprecated_module: ignore
+module
 
 public import FLT.AINTLIB.CebotarevDensity.NumberFieldEulerProduct
 public import FLT.AINTLIB.DedekindResidue.AuxiliaryFunction
