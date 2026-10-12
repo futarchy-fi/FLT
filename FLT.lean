@@ -4555,6 +4555,7 @@ public import FLT.Mazur.GrassmannianPrincipalRelationRecovery
 public import FLT.Mazur.GrassmannianPrincipalSeparation
 public import FLT.Mazur.GrassmannianQuotientBaseChange
 public import FLT.Mazur.GrassmannianQuotientLocalBasis
+public import FLT.Mazur.GrassmannianQuotientRefinement
 public import FLT.Mazur.GrassmannianQuotientSheaf
 public import FLT.Mazur.GrassmannianQuotientSheafTransition
 public import FLT.Mazur.GrassmannianScalarExtension
