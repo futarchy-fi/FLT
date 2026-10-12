@@ -5376,6 +5376,7 @@ public import FLT.Mazur.NodeTangentAlgebra
 public import FLT.Mazur.NodeTangentCechCocycle
 public import FLT.Mazur.NodeTangentCoefficientCover
 public import FLT.Mazur.NodeTangentCoefficientNaturality
+public import FLT.Mazur.NodeTangentCompleteNormalization
 public import FLT.Mazur.NodeTangentDepth
 public import FLT.Mazur.NodeTangentExtension
 public import FLT.Mazur.NodeTangentFieldFixed
@@ -6588,6 +6589,7 @@ public import FLT.Mazur.ProjectiveLineTwistCoordinates
 public import FLT.Mazur.ProjectiveLineUniversalAction
 public import FLT.Mazur.ProjectiveLineUniversalLaurentEvaluation
 public import FLT.Mazur.ProjectiveLineUniversalLaurentProjections
+public import FLT.Mazur.ProjectiveLineValuationExtension
 public import FLT.Mazur.ProjectiveLinearCoefficientChange
 public import FLT.Mazur.ProjectiveLinearIsomorphism
 public import FLT.Mazur.ProjectiveLinearOver
@@ -8091,6 +8093,7 @@ public import FLT.Mazur.WeierstrassDividedChartRegularCenter
 public import FLT.Mazur.WeierstrassDividedCoefficientActionIndexTransport
 public import FLT.Mazur.WeierstrassDividedCoefficientInputs
 public import FLT.Mazur.WeierstrassDividedCoefficientSymmetry
+public import FLT.Mazur.WeierstrassDividedCompleteResidueNormalization
 public import FLT.Mazur.WeierstrassDividedComponentPairCoverage
 public import FLT.Mazur.WeierstrassDividedConicBoundaryAllDepths
 public import FLT.Mazur.WeierstrassDividedConicBoundaryGeometryAllDepths
@@ -8503,11 +8506,16 @@ public import FLT.Mazur.WeierstrassDividedPositiveEqualityWholeFiberAction
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityZero
 public import FLT.Mazur.WeierstrassDividedPrecedingAtlasRange
 public import FLT.Mazur.WeierstrassDividedPreviousBoundaryAlgebra
+public import FLT.Mazur.WeierstrassDividedProjectiveLift
 public import FLT.Mazur.WeierstrassDividedResidueAtlasExtension
 public import FLT.Mazur.WeierstrassDividedResidueAtlasFinite
 public import FLT.Mazur.WeierstrassDividedResidueAtlasRefinement
+public import FLT.Mazur.WeierstrassDividedResidueFiniteNormalization
 public import FLT.Mazur.WeierstrassDividedResidueMiddleIntersection
 public import FLT.Mazur.WeierstrassDividedResidueNormalization
+public import FLT.Mazur.WeierstrassDividedResidueNormalizationCompatibility
+public import FLT.Mazur.WeierstrassDividedResidueOrderedNormalization
+public import FLT.Mazur.WeierstrassDividedResidueTangentNormalization
 public import FLT.Mazur.WeierstrassDividedRetainedExteriorIntersection
 public import FLT.Mazur.WeierstrassDividedRetainedLineAt
 public import FLT.Mazur.WeierstrassDividedRetainedLineSeparation
