@@ -7821,6 +7821,7 @@ public import FLT.Mazur.UniversalWeierstrassAuxiliaryTorsionDisjoint
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryTorsionSections
 public import FLT.Mazur.UniversalWeierstrassCyclicAuxiliary
 public import FLT.Mazur.UniversalWeierstrassCyclicLevel
+public import FLT.Mazur.UniversalWeierstrassCyclicNormalizationPoint
 public import FLT.Mazur.UniversalWeierstrassCyclicSubgroup
 public import FLT.Mazur.UniversalWeierstrassFourTorsionEtale
 public import FLT.Mazur.UniversalWeierstrassFourTorsionFinite
