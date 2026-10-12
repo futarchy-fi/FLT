@@ -4483,6 +4483,7 @@ public import FLT.Mazur.GradedQuotientTensorComparison
 public import FLT.Mazur.GrassmannianAmbientBaseChange
 public import FLT.Mazur.GrassmannianAmbientBlocks
 public import FLT.Mazur.GrassmannianAmbientTransition
+public import FLT.Mazur.GrassmannianAmbientTransitionNaturality
 public import FLT.Mazur.GrassmannianBlockTransition
 public import FLT.Mazur.GrassmannianChartChangeDeterminant
 public import FLT.Mazur.GrassmannianChartPolynomialParameters
