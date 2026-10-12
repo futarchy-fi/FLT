@@ -6254,6 +6254,7 @@ public import FLT.Mazur.PolygonProjectiveUniversalParameter
 public import FLT.Mazur.PolygonProper
 public import FLT.Mazur.PolygonPuncturedCanonicalEquations
 public import FLT.Mazur.PolygonPureDimension
+public import FLT.Mazur.PolygonReciprocalEvaluation
 public import FLT.Mazur.PolygonRefinedClosedCharts
 public import FLT.Mazur.PolygonRetainedSectionRotation
 public import FLT.Mazur.PolygonRetainedStageMarkings
