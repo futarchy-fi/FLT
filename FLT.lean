@@ -4534,6 +4534,7 @@ public import FLT.Mazur.GrassmannianOverlapTransitionEquiv
 public import FLT.Mazur.GrassmannianOverlapTransitionScheme
 public import FLT.Mazur.GrassmannianPrincipalOverlap
 public import FLT.Mazur.GrassmannianPrincipalOverlapScheme
+public import FLT.Mazur.GrassmannianPrincipalSeparation
 public import FLT.Mazur.GrassmannianScalarExtension
 public import FLT.Mazur.GrassmannianSelectedAmbientIndex
 public import FLT.Mazur.GrassmannianSelectedColumnsLocalization
