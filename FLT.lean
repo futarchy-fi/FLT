@@ -10373,6 +10373,7 @@ public import FLT.Mazur.WeierstrassSuccessiveShearScaleOneHorizontal
 public import FLT.Mazur.WeierstrassSuccessiveShearScaleOneSignedReciprocal
 public import FLT.Mazur.WeierstrassSuccessiveShearSignedReciprocal
 public import FLT.Mazur.WeierstrassSuccessiveShearTerminalConicCoordinates
+public import FLT.Mazur.WeierstrassSuccessiveShearTerminalNodeConic
 public import FLT.Mazur.WeierstrassSuccessiveShearTerminalZeroConicCoordinates
 public import FLT.Mazur.WeierstrassSuccessiveXAlgebra
 public import FLT.Mazur.WeierstrassSuccessiveXBaseChange
