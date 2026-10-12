@@ -7368,10 +7368,14 @@ public import FLT.Mazur.RelativePointLineAmple
 public import FLT.Mazur.RelativePoleComplementFunctions
 public import FLT.Mazur.RelativePoleComplementLinear
 public import FLT.Mazur.RelativeRankOneDivisorUniqueness
+public import FLT.Mazur.RelativeRelationArrowCalculus
 public import FLT.Mazur.RelativeRelationFpqcInvariantQuotient
 public import FLT.Mazur.RelativeRelationFpqcOrbitComparison
 public import FLT.Mazur.RelativeRelationFpqcSectionComparison
+public import FLT.Mazur.RelativeRelationGeneratorNaturality
+public import FLT.Mazur.RelativeRelationGeneratorSubopens
 public import FLT.Mazur.RelativeRelationInvariantAffineComparison
+public import FLT.Mazur.RelativeRelationInvariantGlobalSections
 public import FLT.Mazur.RelativeRelationInvariantLocallyRinged
 public import FLT.Mazur.RelativeRelationInvariantSectionRings
 public import FLT.Mazur.RelativeRelationInvariantSections
@@ -7387,7 +7391,12 @@ public import FLT.Mazur.RelativeRelationRingedCoequalizer
 public import FLT.Mazur.RelativeRelationRingedCofork
 public import FLT.Mazur.RelativeRelationRingedDescent
 public import FLT.Mazur.RelativeRelationSaturatedSections
+public import FLT.Mazur.RelativeRelationSaturatedSheafImage
+public import FLT.Mazur.RelativeRelationSaturationAction
+public import FLT.Mazur.RelativeRelationSaturationComparison
 public import FLT.Mazur.RelativeRelationSaturationCover
+public import FLT.Mazur.RelativeRelationSaturationFunctionDescent
+public import FLT.Mazur.RelativeRelationSaturationKernel
 public import FLT.Mazur.RelativeRelationSaturationSpan
 public import FLT.Mazur.RelativeRelationSplitQuotient
 public import FLT.Mazur.RelativeSectionAmpleBaseChange
@@ -7777,6 +7786,7 @@ public import FLT.Mazur.SchemeReducedRelativeSections
 public import FLT.Mazur.SchemeReducedSectionDetection
 public import FLT.Mazur.SchemeReducedStructureSheaf
 public import FLT.Mazur.SchemeRefinementReconstruction
+public import FLT.Mazur.SchemeRelationDoubleRestriction
 public import FLT.Mazur.SchemeRelationFunctionDescent
 public import FLT.Mazur.SchemeRelationLocalFunctionDescent
 public import FLT.Mazur.SchemeRelationOpenFunctionDescent
