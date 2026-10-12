@@ -6989,6 +6989,7 @@ public import FLT.Mazur.ProperSmoothAffineFunctions
 public import FLT.Mazur.ProperSmoothBaseLocus
 public import FLT.Mazur.ProperSmoothConnectedFiberOpen
 public import FLT.Mazur.ProperSmoothGenericFiberOpen
+public import FLT.Mazur.ProperSmoothGroupGeometricHom
 public import FLT.Mazur.ProperSmoothLineRigidity
 public import FLT.Mazur.ProperSmoothLineSheafDescent
 public import FLT.Mazur.ProperSmoothPointedLineSheafDescent
