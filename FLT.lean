@@ -3480,6 +3480,7 @@ public import FLT.Mazur.CurveComponentAmpleCriterion
 public import FLT.Mazur.CurveDegreeFieldBaseChange
 public import FLT.Mazur.CurveDivisorAmpleSupport
 public import FLT.Mazur.CurveDivisorLengthSupport
+public import FLT.Mazur.CurveEndomorphismDichotomy
 public import FLT.Mazur.CurveEulerCharacteristic
 public import FLT.Mazur.CurveFiberHypotheses
 public import FLT.Mazur.CurveFinite
