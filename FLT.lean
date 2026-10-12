@@ -4512,6 +4512,7 @@ public import FLT.Mazur.GrassmannianAmbientOverlapRepresentation
 public import FLT.Mazur.GrassmannianAmbientPointCover
 public import FLT.Mazur.GrassmannianAmbientPointTransition
 public import FLT.Mazur.GrassmannianAmbientPointTransport
+public import FLT.Mazur.GrassmannianAmbientPullbackCoherence
 public import FLT.Mazur.GrassmannianAmbientQuotientCover
 public import FLT.Mazur.GrassmannianAmbientSecondChart
 public import FLT.Mazur.GrassmannianAmbientTransition
@@ -4541,6 +4542,7 @@ public import FLT.Mazur.GrassmannianMorphismPrincipalCover
 public import FLT.Mazur.GrassmannianMorphismQuotientLocalization
 public import FLT.Mazur.GrassmannianMorphismRecoveredPoint
 public import FLT.Mazur.GrassmannianMorphismRelation
+public import FLT.Mazur.GrassmannianMorphismSheafTransition
 public import FLT.Mazur.GrassmannianMorphismTensorCompatibility
 public import FLT.Mazur.GrassmannianNormalizedBaseChange
 public import FLT.Mazur.GrassmannianNumeratorTransport
@@ -4552,11 +4554,14 @@ public import FLT.Mazur.GrassmannianPrincipalOverlap
 public import FLT.Mazur.GrassmannianPrincipalOverlapScheme
 public import FLT.Mazur.GrassmannianPrincipalRelationRecovery
 public import FLT.Mazur.GrassmannianPrincipalSeparation
+public import FLT.Mazur.GrassmannianQuotientBaseChange
 public import FLT.Mazur.GrassmannianQuotientLocalBasis
 public import FLT.Mazur.GrassmannianQuotientSheaf
+public import FLT.Mazur.GrassmannianQuotientSheafTransition
 public import FLT.Mazur.GrassmannianScalarExtension
 public import FLT.Mazur.GrassmannianSelectedAmbientIndex
 public import FLT.Mazur.GrassmannianSelectedColumnsLocalization
+public import FLT.Mazur.GrassmannianSheafRefinementComparison
 public import FLT.Mazur.GrassmannianSplitChartCoordinates
 public import FLT.Mazur.GrassmannianSplitChartScheme
 public import FLT.Mazur.GrassmannianSplitQuotientChart
