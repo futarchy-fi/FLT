@@ -8260,6 +8260,8 @@ public import FLT.Mazur.WeierstrassCoefficientShearConicParameters
 public import FLT.Mazur.WeierstrassCoefficientShearCoverage
 public import FLT.Mazur.WeierstrassCoefficientShearFiniteLineContraction
 public import FLT.Mazur.WeierstrassCoefficientShearGluing
+public import FLT.Mazur.WeierstrassCoefficientShearHorizontalAction
+public import FLT.Mazur.WeierstrassCoefficientShearHorizontalTorusAction
 public import FLT.Mazur.WeierstrassCoefficientShearInitialBoundaryParameter
 public import FLT.Mazur.WeierstrassCoefficientShearInitialFiber
 public import FLT.Mazur.WeierstrassCoefficientShearInitialRetainedSmooth
@@ -8278,6 +8280,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearRetainedReconstruction
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOne
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneAdjacentIntersection
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneAdjacentTransition
+public import FLT.Mazur.WeierstrassCoefficientShearScaleOneConicAction
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneGluedConic
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneGluedIntersections
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneParameter
@@ -8285,6 +8288,8 @@ public import FLT.Mazur.WeierstrassCoefficientShearSmoothOrbit
 public import FLT.Mazur.WeierstrassCoefficientShearSmoothUnique
 public import FLT.Mazur.WeierstrassCoefficientShearSpecialization
 public import FLT.Mazur.WeierstrassCoefficientShearSpecializationMono
+public import FLT.Mazur.WeierstrassCoefficientShearSuccessiveAction
+public import FLT.Mazur.WeierstrassCoefficientShearSuccessiveTorusAction
 public import FLT.Mazur.WeierstrassCoefficientShearTangentConjugation
 public import FLT.Mazur.WeierstrassCoefficientShearTangentTransport
 public import FLT.Mazur.WeierstrassCoefficientShearTensorInput
@@ -9759,6 +9764,7 @@ public import FLT.Mazur.WeierstrassRootShearSlopeInput
 public import FLT.Mazur.WeierstrassRootShearSmoothParameter
 public import FLT.Mazur.WeierstrassRootShearUnitAddition
 public import FLT.Mazur.WeierstrassRootShearUnitNaturality
+public import FLT.Mazur.WeierstrassRootShearZeroSmooth
 public import FLT.Mazur.WeierstrassSameOutputIntersections
 public import FLT.Mazur.WeierstrassScaledChartComparison
 public import FLT.Mazur.WeierstrassSecantHorizontalGlobalAction
@@ -9847,6 +9853,7 @@ public import FLT.Mazur.WeierstrassSmoothHorizontalProductSource
 public import FLT.Mazur.WeierstrassSmoothHorizontalReciprocalCharacters
 public import FLT.Mazur.WeierstrassSmoothHorizontalResidueCoordinates
 public import FLT.Mazur.WeierstrassSmoothHorizontalResiduePoint
+public import FLT.Mazur.WeierstrassSmoothHorizontalRootParameter
 public import FLT.Mazur.WeierstrassSmoothHorizontalTensorAction
 public import FLT.Mazur.WeierstrassSmoothHorizontalTensorGlobalAction
 public import FLT.Mazur.WeierstrassSmoothHorizontalTensorInput
@@ -9887,6 +9894,8 @@ public import FLT.Mazur.WeierstrassSmoothSuccessiveResidueOutputs
 public import FLT.Mazur.WeierstrassSmoothSuccessiveTensorInput
 public import FLT.Mazur.WeierstrassSmoothSuccessiveTensorOutput
 public import FLT.Mazur.WeierstrassSmoothSuccessiveTransportedTensorInput
+public import FLT.Mazur.WeierstrassSmoothSuccessiveZeroConicInput
+public import FLT.Mazur.WeierstrassSmoothSuccessiveZeroConicOutput
 public import FLT.Mazur.WeierstrassSmoothTransportedComparison
 public import FLT.Mazur.WeierstrassSmoothTransportedCover
 public import FLT.Mazur.WeierstrassSmoothTransportedOutputRegular
@@ -10147,6 +10156,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXZeroNodeMaps
 public import FLT.Mazur.WeierstrassSuccessiveXZeroNodePunctures
 public import FLT.Mazur.WeierstrassSuccessiveXZeroOverlap
 public import FLT.Mazur.WeierstrassSuccessiveXZeroResidue
+public import FLT.Mazur.WeierstrassSuccessiveZeroConicMap
 public import FLT.Mazur.WeierstrassSwappedAdditionIntersections
 public import FLT.Mazur.WeierstrassSwappedInfinityOutput
 public import FLT.Mazur.WeierstrassSwappedInfinitySchemes
