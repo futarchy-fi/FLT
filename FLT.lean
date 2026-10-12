@@ -5969,6 +5969,7 @@ public import FLT.Mazur.PointedCubicCartierMarking
 public import FLT.Mazur.PointedCubicCoefficientParameter
 public import FLT.Mazur.PointedCubicCyclicAuxiliaryCover
 public import FLT.Mazur.PointedCubicCyclicMarking
+public import FLT.Mazur.PointedCubicHomAuxiliaryParameter
 public import FLT.Mazur.PointedCubicIndependentParameter
 public import FLT.Mazur.PointedCubicIndependentSourceGroup
 public import FLT.Mazur.PointedCubicIndependentSourceSubgroup
