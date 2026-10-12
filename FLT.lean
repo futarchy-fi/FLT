@@ -9514,6 +9514,7 @@ public import FLT.Mazur.WeierstrassNodalResidueTangentDepth
 public import FLT.Mazur.WeierstrassNodalResidueTransition
 public import FLT.Mazur.WeierstrassNodalRetainedComponents
 public import FLT.Mazur.WeierstrassNodalZeroAdjacentIntersections
+public import FLT.Mazur.WeierstrassNodalZeroFirstAdjacentIntersections
 public import FLT.Mazur.WeierstrassNodalZeroInitialChart
 public import FLT.Mazur.WeierstrassNodalZeroInitialIntersection
 public import FLT.Mazur.WeierstrassNodalZeroInitialSlopeIntersection
