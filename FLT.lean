@@ -4551,6 +4551,7 @@ public import FLT.Mazur.GrassmannianPrincipalOverlap
 public import FLT.Mazur.GrassmannianPrincipalOverlapScheme
 public import FLT.Mazur.GrassmannianPrincipalRelationRecovery
 public import FLT.Mazur.GrassmannianPrincipalSeparation
+public import FLT.Mazur.GrassmannianQuotientBaseChange
 public import FLT.Mazur.GrassmannianQuotientLocalBasis
 public import FLT.Mazur.GrassmannianQuotientSheaf
 public import FLT.Mazur.GrassmannianScalarExtension
