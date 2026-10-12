@@ -2489,11 +2489,15 @@ public import FLT.Mathlib.Topology.Polish
 public import FLT.Mazur.AbelianInjectiveFlasque
 public import FLT.Mazur.AbsoluteDirectImageCohomology
 public import FLT.Mazur.AcyclicCoefficientCohomology
+public import FLT.Mazur.AcyclicDegreeFixedBaseChange
 public import FLT.Mazur.AcyclicDegreePicardRepresentation
 public import FLT.Mazur.AcyclicDirectImageResolution
 public import FLT.Mazur.AcyclicDivisorDegreeOpen
 public import FLT.Mazur.AcyclicDivisorDegreePresheaf
+public import FLT.Mazur.AcyclicDivisorFixedBaseChange
 public import FLT.Mazur.AcyclicHilbertDivisorRepresentation
+public import FLT.Mazur.AcyclicHilbertFixedBaseChange
+public import FLT.Mazur.AcyclicHilbertFixedBaseIdeal
 public import FLT.Mazur.AcyclicHilbertPicardTestOverlap
 public import FLT.Mazur.AcyclicLineSectionBaseChange
 public import FLT.Mazur.AcyclicPointedAbelBaseChange
@@ -4095,6 +4099,7 @@ public import FLT.Mazur.ExactFunctorInjectiveExt
 public import FLT.Mazur.ExactOrderCyclicPowers
 public import FLT.Mazur.ExactSourceDenominatorLift
 public import FLT.Mazur.FCurveContracts
+public import FLT.Mazur.FaithfulNeighborhoodCurve
 public import FLT.Mazur.FaithfulTensorVanishing
 public import FLT.Mazur.FaithfullyFlatFinitePresentation
 public import FLT.Mazur.FaithfullyFlatInvertible
@@ -4383,6 +4388,7 @@ public import FLT.Mazur.FiniteSurjectiveAmpleDescent
 public import FLT.Mazur.FiniteSurjectiveCoherentWitness
 public import FLT.Mazur.FiniteTensorIntegerClosedImmersion
 public import FLT.Mazur.FiniteTypeAbelNaturalIso
+public import FLT.Mazur.FiniteTypeAcyclicDivisorCartesianMap
 public import FLT.Mazur.FiniteTypeAcyclicDivisorFppfDescent
 public import FLT.Mazur.FiniteTypeAcyclicDivisorMap
 public import FLT.Mazur.FiniteTypeAcyclicDivisorPresheaf
@@ -5957,8 +5963,11 @@ public import FLT.Mazur.OrderedHilbertEtaleSeparableLift
 public import FLT.Mazur.OrderedHilbertEtaleStalkLift
 public import FLT.Mazur.OrderedHilbertEtaleTestCover
 public import FLT.Mazur.OrderedHilbertEtaleTestPoints
+public import FLT.Mazur.OrderedHilbertFaithfulBaseComparison
 public import FLT.Mazur.OrderedHilbertFaithfulClass
 public import FLT.Mazur.OrderedHilbertFaithfulOrbitCover
+public import FLT.Mazur.OrderedHilbertFaithfulParameter
+public import FLT.Mazur.OrderedHilbertFaithfulPicardComparison
 public import FLT.Mazur.OrderedHilbertFaithfulTestCover
 public import FLT.Mazur.OrderedHilbertSeparableGeometricCoverage
 public import FLT.Mazur.OrderedProjectiveHilbertNaturality
