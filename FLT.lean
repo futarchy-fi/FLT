@@ -4613,6 +4613,7 @@ public import FLT.Mazur.GrassmannianQuotientImageTransition
 public import FLT.Mazur.GrassmannianQuotientLocalBasis
 public import FLT.Mazur.GrassmannianQuotientRefinement
 public import FLT.Mazur.GrassmannianQuotientSheaf
+public import FLT.Mazur.GrassmannianQuotientSheafFaithful
 public import FLT.Mazur.GrassmannianQuotientSheafTransition
 public import FLT.Mazur.GrassmannianScalarExtension
 public import FLT.Mazur.GrassmannianSchemeAmbientQuotient
