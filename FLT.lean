@@ -4150,6 +4150,7 @@ public import FLT.Mazur.FiniteFlatDegreeOpen
 public import FLT.Mazur.FiniteFlatIdealVanishingBaseChange
 public import FLT.Mazur.FiniteFlatIdealVanishingChart
 public import FLT.Mazur.FiniteFlatIdealVanishingGluing
+public import FLT.Mazur.FiniteFlatIdealVanishingNaturality
 public import FLT.Mazur.FiniteFlatIdealVanishingRestriction
 public import FLT.Mazur.FiniteFlatIdealVanishingZero
 public import FLT.Mazur.FiniteFlatLocalIdealPresentation
