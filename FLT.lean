@@ -4611,6 +4611,7 @@ public import FLT.Mazur.GrassmannianPrincipalSeparation
 public import FLT.Mazur.GrassmannianQuotientAtlasClassifying
 public import FLT.Mazur.GrassmannianQuotientAtlasEquivalence
 public import FLT.Mazur.GrassmannianQuotientBaseChange
+public import FLT.Mazur.GrassmannianQuotientCoverIndependence
 public import FLT.Mazur.GrassmannianQuotientImageAmbientEpi
 public import FLT.Mazur.GrassmannianQuotientImageAmbientMap
 public import FLT.Mazur.GrassmannianQuotientImageCocycle
