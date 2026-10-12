@@ -10156,6 +10156,7 @@ public import FLT.Mazur.WeierstrassVariableChangeSecant
 public import FLT.Mazur.WeierstrassVariableChangeSecantAddition
 public import FLT.Mazur.WeierstrassVariableChangeSmoothAddition
 public import FLT.Mazur.WeierstrassVariableChangeSmoothIso
+public import FLT.Mazur.WeierstrassVariableChangeSmoothPointAddition
 public import FLT.Mazur.WeierstrassVariableChangeSmoothProduct
 public import FLT.Mazur.WeierstrassVariableChangeZero
 public import FLT.Mazur.WeierstrassVerticalAdditionCharts
