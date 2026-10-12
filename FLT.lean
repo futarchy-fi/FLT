@@ -8223,6 +8223,7 @@ public import FLT.Mazur.WeierstrassDividedAdjacentFullConicIntersection
 public import FLT.Mazur.WeierstrassDividedAdjacentGlobalPunctures
 public import FLT.Mazur.WeierstrassDividedAdjacentIndexedIntersection
 public import FLT.Mazur.WeierstrassDividedAdjacentIntegralBoundary
+public import FLT.Mazur.WeierstrassDividedAdjacentInverseAttachment
 public import FLT.Mazur.WeierstrassDividedAdjacentNodePunctures
 public import FLT.Mazur.WeierstrassDividedAdjacentNormalizedIntersection
 public import FLT.Mazur.WeierstrassDividedAdjacentOrderedConicIntersection
