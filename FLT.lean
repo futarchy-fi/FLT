@@ -3603,6 +3603,7 @@ public import FLT.Mazur.CyclicHomNormalizationGroup
 public import FLT.Mazur.CyclicHomNormalizationParameter
 public import FLT.Mazur.CyclicHomNormalizationSubgroup
 public import FLT.Mazur.CyclicHomNormalizedFppfCoverage
+public import FLT.Mazur.CyclicHomNormalizedImageSieve
 public import FLT.Mazur.CyclicHomNormalizedLocus
 public import FLT.Mazur.CyclicHomNormalizedModuli
 public import FLT.Mazur.CyclicHomSourceDivisor
