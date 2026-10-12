@@ -4431,6 +4431,7 @@ public import FLT.Mazur.GenericSectionUniqueness
 public import FLT.Mazur.GenericWitnessIdealVanishing
 public import FLT.Mazur.GenusOneGroupAffineChart
 public import FLT.Mazur.GenusOneGroupCoordinateRing
+public import FLT.Mazur.GenusOneGroupNonsingular
 public import FLT.Mazur.GenusOneGroupPointCohomology
 public import FLT.Mazur.GenusOneGroupPointPowers
 public import FLT.Mazur.GenusOneGroupPoleBasis
