@@ -3011,6 +3011,8 @@ public import FLT.Mazur.ArtinianProperRelativeFunctions
 public import FLT.Mazur.ArtinianProperStructureSheaf
 public import FLT.Mazur.ArtinianRelativeSectionCriterion
 public import FLT.Mazur.ArtinianSectionKernel
+public import FLT.Mazur.AuxiliaryCartesianGroupParameter
+public import FLT.Mazur.AuxiliaryCartesianOriginalParameter
 public import FLT.Mazur.AuxiliaryCoprimeFieldMarking
 public import FLT.Mazur.AuxiliaryCoprimeFieldNaturality
 public import FLT.Mazur.AuxiliaryLevelFaithfulOpen
@@ -4509,6 +4511,8 @@ public import FLT.Mazur.GrassmannianTripleOverlapRing
 public import FLT.Mazur.GrassmannianTripleOverlapScheme
 public import FLT.Mazur.GroupMarkingBaseChange
 public import FLT.Mazur.GroupMarkingBaseChangeInverse
+public import FLT.Mazur.GroupMarkingCartesianInverse
+public import FLT.Mazur.GroupMarkingCartesianTransport
 public import FLT.Mazur.GroupMarkingTransport
 public import FLT.Mazur.GroupMarkingTransportEquations
 public import FLT.Mazur.GroupMarkingTransportNaturality
@@ -5384,6 +5388,7 @@ public import FLT.Mazur.NodeTangentAlgebra
 public import FLT.Mazur.NodeTangentCechCocycle
 public import FLT.Mazur.NodeTangentCoefficientCover
 public import FLT.Mazur.NodeTangentCoefficientNaturality
+public import FLT.Mazur.NodeTangentCompleteNormalization
 public import FLT.Mazur.NodeTangentDepth
 public import FLT.Mazur.NodeTangentExtension
 public import FLT.Mazur.NodeTangentFieldFixed
@@ -5700,6 +5705,7 @@ public import FLT.Mazur.PolygonCanonicalDenominatorPolynomial
 public import FLT.Mazur.PolygonCanonicalOverlapRing
 public import FLT.Mazur.PolygonCanonicalSection
 public import FLT.Mazur.PolygonCanonicalTorusTransition
+public import FLT.Mazur.PolygonCartesianBaseMap
 public import FLT.Mazur.PolygonCartierGenerator
 public import FLT.Mazur.PolygonChartScaling
 public import FLT.Mazur.PolygonClassifiedFamily
@@ -6096,13 +6102,18 @@ public import FLT.Mazur.PolygonProductAtlas
 public import FLT.Mazur.PolygonProjectiveAuxiliaryMarking
 public import FLT.Mazur.PolygonProjectiveAuxiliaryParameter
 public import FLT.Mazur.PolygonProjectiveAuxiliaryRotation
+public import FLT.Mazur.PolygonProjectiveCoefficientGroup
+public import FLT.Mazur.PolygonProjectiveCoefficientMap
+public import FLT.Mazur.PolygonProjectiveCoefficientMarking
 public import FLT.Mazur.PolygonProjectiveCyclicPoints
 public import FLT.Mazur.PolygonProjectiveExactTorsion
 public import FLT.Mazur.PolygonProjectiveFixedPointFree
+public import FLT.Mazur.PolygonProjectiveFullCoefficientParameter
 public import FLT.Mazur.PolygonProjectiveRotationNormalization
 public import FLT.Mazur.PolygonProjectiveSquareComparison
 public import FLT.Mazur.PolygonProjectiveSquareMarking
 public import FLT.Mazur.PolygonProjectiveTranslation
+public import FLT.Mazur.PolygonProjectiveUniversalParameter
 public import FLT.Mazur.PolygonProper
 public import FLT.Mazur.PolygonPuncturedCanonicalEquations
 public import FLT.Mazur.PolygonPureDimension
@@ -6590,6 +6601,7 @@ public import FLT.Mazur.ProjectiveLineTwistCoordinates
 public import FLT.Mazur.ProjectiveLineUniversalAction
 public import FLT.Mazur.ProjectiveLineUniversalLaurentEvaluation
 public import FLT.Mazur.ProjectiveLineUniversalLaurentProjections
+public import FLT.Mazur.ProjectiveLineValuationExtension
 public import FLT.Mazur.ProjectiveLinearCoefficientChange
 public import FLT.Mazur.ProjectiveLinearIsomorphism
 public import FLT.Mazur.ProjectiveLinearOver
@@ -7842,6 +7854,7 @@ public import FLT.Mazur.UniversalWeierstrassNormalizedSlice
 public import FLT.Mazur.UniversalWeierstrassNormalizedSliceFixed
 public import FLT.Mazur.UniversalWeierstrassNormalizedSliceFunctor
 public import FLT.Mazur.UniversalWeierstrassNormalizedSliceRing
+public import FLT.Mazur.UniversalWeierstrassOriginalParameter
 public import FLT.Mazur.UniversalWeierstrassParameter
 public import FLT.Mazur.UniversallyClosedFiniteCover
 public import FLT.Mazur.UniversallyDistinctSections
@@ -7957,6 +7970,8 @@ public import FLT.Mazur.WeierstrassAllOrdinaryTripleGlobal
 public import FLT.Mazur.WeierstrassAllOrdinaryTripleSchemes
 public import FLT.Mazur.WeierstrassAutomorphismNormalization
 public import FLT.Mazur.WeierstrassAuxiliaryFieldCover
+public import FLT.Mazur.WeierstrassCartesianOriginComparison
+public import FLT.Mazur.WeierstrassCartesianPullbackGroup
 public import FLT.Mazur.WeierstrassChartBaseChange
 public import FLT.Mazur.WeierstrassChartBaseChangeSquare
 public import FLT.Mazur.WeierstrassChartCoefficientMap
@@ -8090,6 +8105,7 @@ public import FLT.Mazur.WeierstrassDividedChartRegularCenter
 public import FLT.Mazur.WeierstrassDividedCoefficientActionIndexTransport
 public import FLT.Mazur.WeierstrassDividedCoefficientInputs
 public import FLT.Mazur.WeierstrassDividedCoefficientSymmetry
+public import FLT.Mazur.WeierstrassDividedCompleteResidueNormalization
 public import FLT.Mazur.WeierstrassDividedComponentPairCoverage
 public import FLT.Mazur.WeierstrassDividedConicBoundaryAllDepths
 public import FLT.Mazur.WeierstrassDividedConicBoundaryGeometryAllDepths
@@ -8502,11 +8518,16 @@ public import FLT.Mazur.WeierstrassDividedPositiveEqualityWholeFiberAction
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityZero
 public import FLT.Mazur.WeierstrassDividedPrecedingAtlasRange
 public import FLT.Mazur.WeierstrassDividedPreviousBoundaryAlgebra
+public import FLT.Mazur.WeierstrassDividedProjectiveLift
 public import FLT.Mazur.WeierstrassDividedResidueAtlasExtension
 public import FLT.Mazur.WeierstrassDividedResidueAtlasFinite
 public import FLT.Mazur.WeierstrassDividedResidueAtlasRefinement
+public import FLT.Mazur.WeierstrassDividedResidueFiniteNormalization
 public import FLT.Mazur.WeierstrassDividedResidueMiddleIntersection
 public import FLT.Mazur.WeierstrassDividedResidueNormalization
+public import FLT.Mazur.WeierstrassDividedResidueNormalizationCompatibility
+public import FLT.Mazur.WeierstrassDividedResidueOrderedNormalization
+public import FLT.Mazur.WeierstrassDividedResidueTangentNormalization
 public import FLT.Mazur.WeierstrassDividedRetainedExteriorIntersection
 public import FLT.Mazur.WeierstrassDividedRetainedLineAt
 public import FLT.Mazur.WeierstrassDividedRetainedLineSeparation
