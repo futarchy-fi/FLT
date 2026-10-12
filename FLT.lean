@@ -4590,6 +4590,7 @@ public import FLT.Mazur.GrassmannianTripleOverlapOriginalPullback
 public import FLT.Mazur.GrassmannianTripleOverlapRestriction
 public import FLT.Mazur.GrassmannianTripleOverlapRing
 public import FLT.Mazur.GrassmannianTripleOverlapScheme
+public import FLT.Mazur.GrassmannianWholeOverlapTransition
 public import FLT.Mazur.GroupMarkingBaseChange
 public import FLT.Mazur.GroupMarkingBaseChangeInverse
 public import FLT.Mazur.GroupMarkingCartesianInverse
