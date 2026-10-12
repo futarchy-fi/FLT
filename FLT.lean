@@ -6898,6 +6898,7 @@ public import FLT.Mazur.ProjectiveHomogeneousPoint
 public import FLT.Mazur.ProjectiveHomogeneousPointTransport
 public import FLT.Mazur.ProjectiveIdealGeometricVanishing
 public import FLT.Mazur.ProjectiveIdealVanishingBaseChange
+public import FLT.Mazur.ProjectiveIdealVanishingEquiv
 public import FLT.Mazur.ProjectiveIdealVanishingScheme
 public import FLT.Mazur.ProjectiveLineActionAssociativity
 public import FLT.Mazur.ProjectiveLineActionEndpoints
