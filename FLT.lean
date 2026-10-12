@@ -10017,6 +10017,7 @@ public import FLT.Mazur.WeierstrassSmoothZeroGraphs
 public import FLT.Mazur.WeierstrassSmoothZeroSection
 public import FLT.Mazur.WeierstrassSpecSectionMorphism
 public import FLT.Mazur.WeierstrassSpecSections
+public import FLT.Mazur.WeierstrassSpecializationGroup
 public import FLT.Mazur.WeierstrassSplitCompleteNormalization
 public import FLT.Mazur.WeierstrassSplitDepthAffineParameters
 public import FLT.Mazur.WeierstrassSplitDepthConormal
