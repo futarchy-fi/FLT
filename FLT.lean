@@ -7822,6 +7822,7 @@ public import FLT.Mazur.UniversalPointCondition
 public import FLT.Mazur.UniversalPointConditionLine
 public import FLT.Mazur.UniversalPointConditionRank
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryActualNormalizationIso
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryAffineCubicIso
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryAffineCubicProjection
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryAffineSections
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryArithmeticAction
