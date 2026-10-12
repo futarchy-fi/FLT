@@ -7853,6 +7853,7 @@ public import FLT.Mazur.UniversalWeierstrassCyclicAuxiliary
 public import FLT.Mazur.UniversalWeierstrassCyclicLevel
 public import FLT.Mazur.UniversalWeierstrassCyclicNaturalGroup
 public import FLT.Mazur.UniversalWeierstrassCyclicNaturalGroupMarking
+public import FLT.Mazur.UniversalWeierstrassCyclicNormalizationFixed
 public import FLT.Mazur.UniversalWeierstrassCyclicNormalizationMap
 public import FLT.Mazur.UniversalWeierstrassCyclicNormalizationMapLabels
 public import FLT.Mazur.UniversalWeierstrassCyclicNormalizationPoint
