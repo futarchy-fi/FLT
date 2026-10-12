@@ -4529,6 +4529,7 @@ public import FLT.Mazur.GrassmannianLocalizedRelation
 public import FLT.Mazur.GrassmannianLocalizedTransition
 public import FLT.Mazur.GrassmannianLocalizedTransitionScheme
 public import FLT.Mazur.GrassmannianMorphismDenominators
+public import FLT.Mazur.GrassmannianMorphismEffectiveRelation
 public import FLT.Mazur.GrassmannianMorphismFiniteCover
 public import FLT.Mazur.GrassmannianMorphismLocalQuotient
 public import FLT.Mazur.GrassmannianMorphismPrincipalCover
