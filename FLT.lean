@@ -3563,6 +3563,7 @@ public import FLT.Mazur.CurveUniformFieldDegreeBound
 public import FLT.Mazur.CuspCollision
 public import FLT.Mazur.CuspOrderNumerator
 public import FLT.Mazur.CyclicHomAuxiliaryScheme
+public import FLT.Mazur.CyclicMarkingOrbitDivisor
 public import FLT.Mazur.CyclicNodeChart
 public import FLT.Mazur.CyclicNormalizationExact
 public import FLT.Mazur.CyclicOverlapGraph
