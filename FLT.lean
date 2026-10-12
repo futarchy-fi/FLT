@@ -4530,6 +4530,7 @@ public import FLT.Mazur.GrassmannianLocalizedTransition
 public import FLT.Mazur.GrassmannianLocalizedTransitionScheme
 public import FLT.Mazur.GrassmannianMorphismLocalQuotient
 public import FLT.Mazur.GrassmannianMorphismPrincipalCover
+public import FLT.Mazur.GrassmannianMorphismRelation
 public import FLT.Mazur.GrassmannianNormalizedBaseChange
 public import FLT.Mazur.GrassmannianOriginalBaseChartCover
 public import FLT.Mazur.GrassmannianOverlapPolynomial
