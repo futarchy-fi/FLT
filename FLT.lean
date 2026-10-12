@@ -7402,6 +7402,7 @@ public import FLT.Mazur.SchemeSourceTestOverlapRecognition
 public import FLT.Mazur.SchemeTripleOverlap
 public import FLT.Mazur.SchemeUnchangedOpen
 public import FLT.Mazur.SchemeUnchangedOpenComposition
+public import FLT.Mazur.SchemeUnchangedOpenIsoSquare
 public import FLT.Mazur.SchemeUnchangedOpenLift
 public import FLT.Mazur.SchemeUnchangedOpenPullback
 public import FLT.Mazur.SealedLineRestriction
