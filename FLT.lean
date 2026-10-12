@@ -9895,6 +9895,7 @@ public import FLT.Mazur.WeierstrassSuccessiveShearScaleOne
 public import FLT.Mazur.WeierstrassSuccessiveShearScaleOneBoundaryCoordinates
 public import FLT.Mazur.WeierstrassSuccessiveShearScaleOneConicBoundary
 public import FLT.Mazur.WeierstrassSuccessiveShearScaleOneHorizontal
+public import FLT.Mazur.WeierstrassSuccessiveShearScaleOneSignedReciprocal
 public import FLT.Mazur.WeierstrassSuccessiveShearSignedReciprocal
 public import FLT.Mazur.WeierstrassSuccessiveXAlgebra
 public import FLT.Mazur.WeierstrassSuccessiveXBaseChange
