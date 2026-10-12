@@ -7099,6 +7099,7 @@ public import FLT.Mazur.RelativeGenusOnePointGeometric
 public import FLT.Mazur.RelativeGenusOnePointLeading
 public import FLT.Mazur.RelativeGenusOnePointSections
 public import FLT.Mazur.RelativeGenusOnePointSplit
+public import FLT.Mazur.RelativeGenusOnePoleReduction
 public import FLT.Mazur.RelativeIdealAmbientHom
 public import FLT.Mazur.RelativeIdealAmbientIsoSquare
 public import FLT.Mazur.RelativeIdealAmbientPullback
