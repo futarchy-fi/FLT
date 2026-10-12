@@ -4500,6 +4500,7 @@ public import FLT.Mazur.GrassmannianChartPolynomialParameters
 public import FLT.Mazur.GrassmannianChartTransition
 public import FLT.Mazur.GrassmannianChartTransitionCocycle
 public import FLT.Mazur.GrassmannianChartTransitionInverse
+public import FLT.Mazur.GrassmannianFunctorLocalizedChart
 public import FLT.Mazur.GrassmannianIndexedOverlapScheme
 public import FLT.Mazur.GrassmannianIndexedTripleOverlap
 public import FLT.Mazur.GrassmannianLocalBasisSelection
