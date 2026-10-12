@@ -8115,6 +8115,7 @@ public import FLT.Mazur.WeierstrassCoefficientMonoidalComparison
 public import FLT.Mazur.WeierstrassCoefficientNegation
 public import FLT.Mazur.WeierstrassCoefficientProductMorphism
 public import FLT.Mazur.WeierstrassCoefficientSecant
+public import FLT.Mazur.WeierstrassCoefficientShearAdjacentIntersection
 public import FLT.Mazur.WeierstrassCoefficientShearAdjacentLine
 public import FLT.Mazur.WeierstrassCoefficientShearAdjacentOpen
 public import FLT.Mazur.WeierstrassCoefficientShearAdjacentTransition
