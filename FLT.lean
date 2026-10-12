@@ -5685,6 +5685,7 @@ public import FLT.Mazur.OverPullbackCoproduct
 public import FLT.Mazur.OverPullbackLocalPushout
 public import FLT.Mazur.OverPullbackSection
 public import FLT.Mazur.OverPullbackSectionComposition
+public import FLT.Mazur.OverPullbackSectionMonoidal
 public import FLT.Mazur.PadicValuationArithmetic
 public import FLT.Mazur.PadicValuationRing
 public import FLT.Mazur.PicardDegreeFieldBaseChange
