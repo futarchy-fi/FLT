@@ -4489,7 +4489,9 @@ public import FLT.Mazur.GrassmannianAmbientChartIndex
 public import FLT.Mazur.GrassmannianAmbientChartMap
 public import FLT.Mazur.GrassmannianAmbientChartNaturality
 public import FLT.Mazur.GrassmannianAmbientChartPoints
+public import FLT.Mazur.GrassmannianAmbientChartRecovery
 public import FLT.Mazur.GrassmannianAmbientChartRepresentation
+public import FLT.Mazur.GrassmannianAmbientClassifyingInjective
 public import FLT.Mazur.GrassmannianAmbientClassifyingMap
 public import FLT.Mazur.GrassmannianAmbientClassifyingNaturality
 public import FLT.Mazur.GrassmannianAmbientCommonTest
@@ -4523,8 +4525,14 @@ public import FLT.Mazur.GrassmannianIndexedTripleOverlap
 public import FLT.Mazur.GrassmannianLocalBasisSelection
 public import FLT.Mazur.GrassmannianLocalizedAmbientTransition
 public import FLT.Mazur.GrassmannianLocalizedColumnBasis
+public import FLT.Mazur.GrassmannianLocalizedRelation
 public import FLT.Mazur.GrassmannianLocalizedTransition
 public import FLT.Mazur.GrassmannianLocalizedTransitionScheme
+public import FLT.Mazur.GrassmannianMorphismFiniteCover
+public import FLT.Mazur.GrassmannianMorphismLocalQuotient
+public import FLT.Mazur.GrassmannianMorphismPrincipalCover
+public import FLT.Mazur.GrassmannianMorphismRelation
+public import FLT.Mazur.GrassmannianMorphismTensorCompatibility
 public import FLT.Mazur.GrassmannianNormalizedBaseChange
 public import FLT.Mazur.GrassmannianOriginalBaseChartCover
 public import FLT.Mazur.GrassmannianOverlapPolynomial
@@ -4532,6 +4540,8 @@ public import FLT.Mazur.GrassmannianOverlapTransitionEquiv
 public import FLT.Mazur.GrassmannianOverlapTransitionScheme
 public import FLT.Mazur.GrassmannianPrincipalOverlap
 public import FLT.Mazur.GrassmannianPrincipalOverlapScheme
+public import FLT.Mazur.GrassmannianPrincipalRelationRecovery
+public import FLT.Mazur.GrassmannianPrincipalSeparation
 public import FLT.Mazur.GrassmannianScalarExtension
 public import FLT.Mazur.GrassmannianSelectedAmbientIndex
 public import FLT.Mazur.GrassmannianSelectedColumnsLocalization
