@@ -7803,6 +7803,7 @@ public import FLT.Mazur.SmoothCurveFiberCartier
 public import FLT.Mazur.SmoothCurveIrreducible
 public import FLT.Mazur.SmoothCurvePicardDegree
 public import FLT.Mazur.SmoothCurvePureDimension
+public import FLT.Mazur.SmoothCurveSquareGeometricIntegral
 public import FLT.Mazur.SmoothCurveValuationStalk
 public import FLT.Mazur.SmoothDimension
 public import FLT.Mazur.SmoothDimensionBound
