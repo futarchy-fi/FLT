@@ -4408,6 +4408,9 @@ public import FLT.Mazur.GeneralizedCurveFiberAmple
 public import FLT.Mazur.GeneralizedCurveFiniteSubgroup
 public import FLT.Mazur.GeneralizedCurveGeneratorTransport
 public import FLT.Mazur.GeneralizedCurveGeometricAffineChart
+public import FLT.Mazur.GeneralizedCurveGeometricGroupIso
+public import FLT.Mazur.GeneralizedCurveGeometricProjectiveIso
+public import FLT.Mazur.GeneralizedCurveGeometricWeierstrass
 public import FLT.Mazur.GeneralizedCurveGraph
 public import FLT.Mazur.GeneralizedCurveGraphBaseChange
 public import FLT.Mazur.GeneralizedCurveGraphTransport
@@ -4431,10 +4434,15 @@ public import FLT.Mazur.GenericSectionUniqueness
 public import FLT.Mazur.GenericWitnessIdealVanishing
 public import FLT.Mazur.GenusOneGroupAffineChart
 public import FLT.Mazur.GenusOneGroupCoordinateRing
+public import FLT.Mazur.GenusOneGroupNonsingular
 public import FLT.Mazur.GenusOneGroupPointCohomology
 public import FLT.Mazur.GenusOneGroupPointPowers
 public import FLT.Mazur.GenusOneGroupPoleBasis
 public import FLT.Mazur.GenusOneGroupPoleFunctions
+public import FLT.Mazur.GenusOneGroupProjectiveExtension
+public import FLT.Mazur.GenusOneGroupProjectiveGroup
+public import FLT.Mazur.GenusOneGroupProjectiveIso
+public import FLT.Mazur.GenusOneGroupProjectivePoint
 public import FLT.Mazur.GenusOneGroupWeierstrassEquation
 public import FLT.Mazur.GenusOneNonspecialPoint
 public import FLT.Mazur.GeometricAcyclicFppfLocus
@@ -6866,6 +6874,8 @@ public import FLT.Mazur.ProperGlobalRankOnePointedDivisor
 public import FLT.Mazur.ProperGlobalSectionCartier
 public import FLT.Mazur.ProperGlobalSectionFinite
 public import FLT.Mazur.ProperGlobalSplitDirectImageSections
+public import FLT.Mazur.ProperGroupPointedHom
+public import FLT.Mazur.ProperGroupPointedRigidity
 public import FLT.Mazur.ProperImmersedCover
 public import FLT.Mazur.ProperIntegralConstantSections
 public import FLT.Mazur.ProperLineAcyclicLocus
@@ -8199,7 +8209,9 @@ public import FLT.Mazur.WeierstrassCoefficientShearResidueRetained
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedFiber
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedIntersections
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedReconstruction
+public import FLT.Mazur.WeierstrassCoefficientShearScaleOne
 public import FLT.Mazur.WeierstrassCoefficientShearSpecialization
+public import FLT.Mazur.WeierstrassCoefficientShearSpecializationMono
 public import FLT.Mazur.WeierstrassCoefficientShearTangentConjugation
 public import FLT.Mazur.WeierstrassCoefficientShearTangentTransport
 public import FLT.Mazur.WeierstrassCoefficientShearTransport
@@ -9506,6 +9518,7 @@ public import FLT.Mazur.WeierstrassNegationCover
 public import FLT.Mazur.WeierstrassNegationIntersection
 public import FLT.Mazur.WeierstrassNegationOverlap
 public import FLT.Mazur.WeierstrassNegationPairSections
+public import FLT.Mazur.WeierstrassNodalAdjacentIntersections
 public import FLT.Mazur.WeierstrassNodalDividedDepth
 public import FLT.Mazur.WeierstrassNodalDividedFamily
 public import FLT.Mazur.WeierstrassNodalResidueCharts
@@ -9513,6 +9526,12 @@ public import FLT.Mazur.WeierstrassNodalResidueContraction
 public import FLT.Mazur.WeierstrassNodalResidueTangentDepth
 public import FLT.Mazur.WeierstrassNodalResidueTransition
 public import FLT.Mazur.WeierstrassNodalRetainedComponents
+public import FLT.Mazur.WeierstrassNodalZeroAdjacentIntersections
+public import FLT.Mazur.WeierstrassNodalZeroInitialChart
+public import FLT.Mazur.WeierstrassNodalZeroInitialIntersection
+public import FLT.Mazur.WeierstrassNodalZeroLaterComponents
+public import FLT.Mazur.WeierstrassNodalZeroRetainedChart
+public import FLT.Mazur.WeierstrassNodalZeroRetainedComponents
 public import FLT.Mazur.WeierstrassNonoppositeOrdinaryLift
 public import FLT.Mazur.WeierstrassNonzeroPointAffine
 public import FLT.Mazur.WeierstrassNormalFormPoles
@@ -9888,6 +9907,7 @@ public import FLT.Mazur.WeierstrassSuccessiveShearConicBoundary
 public import FLT.Mazur.WeierstrassSuccessiveShearLineBoundary
 public import FLT.Mazur.WeierstrassSuccessiveShearLineOpen
 public import FLT.Mazur.WeierstrassSuccessiveShearNormalForm
+public import FLT.Mazur.WeierstrassSuccessiveShearScaleOne
 public import FLT.Mazur.WeierstrassSuccessiveShearSignedReciprocal
 public import FLT.Mazur.WeierstrassSuccessiveXAlgebra
 public import FLT.Mazur.WeierstrassSuccessiveXBaseChange
