@@ -3210,6 +3210,7 @@ public import FLT.Mazur.CanonicalSectionComposition
 public import FLT.Mazur.CanonicalSectionNaturality
 public import FLT.Mazur.CartesianAtlasAffineIntersections
 public import FLT.Mazur.CartesianCoefficientPositiveHomology
+public import FLT.Mazur.CartesianCoefficientSymmetry
 public import FLT.Mazur.CartesianIdentityFactorization
 public import FLT.Mazur.CartesianIdentityQuasiFinite
 public import FLT.Mazur.CartesianMonoGroup
@@ -5291,6 +5292,7 @@ public import FLT.Mazur.MultiplicativeGroupScheme
 public import FLT.Mazur.NeronPolygonDihedralRelations
 public import FLT.Mazur.NeronPolygonPredicate
 public import FLT.Mazur.NeronPolygonReflection
+public import FLT.Mazur.NeronPolygonReflectionAction
 public import FLT.Mazur.NeronPolygonRotation
 public import FLT.Mazur.NeronPolygonRotationAction
 public import FLT.Mazur.NeronPolygonScaling
@@ -5318,6 +5320,7 @@ public import FLT.Mazur.NodePuncturedDenominatorRestriction
 public import FLT.Mazur.NodeQuotient
 public import FLT.Mazur.NodeSmoothLocus
 public import FLT.Mazur.NodeTangentAlgebra
+public import FLT.Mazur.NodeTangentCoefficientCover
 public import FLT.Mazur.NodeTangentDepth
 public import FLT.Mazur.NodeTangentExtension
 public import FLT.Mazur.NodeTangentFieldFixed
@@ -5327,6 +5330,9 @@ public import FLT.Mazur.NodeTangentShear
 public import FLT.Mazur.NodeTangentShearRealization
 public import FLT.Mazur.NodeTangentSlopeDescent
 public import FLT.Mazur.NodeTangentSplitComponent
+public import FLT.Mazur.NodeTangentTensorLaurentDescent
+public import FLT.Mazur.NodeTangentTensorOpen
+public import FLT.Mazur.NodeTangentTensorOrientation
 public import FLT.Mazur.NodeTangentUnramified
 public import FLT.Mazur.NodeTangentValuationConjugation
 public import FLT.Mazur.NodeTangentValuationModel
@@ -6476,6 +6482,7 @@ public import FLT.Mazur.ProjectiveLineProductCharts
 public import FLT.Mazur.ProjectiveLineProductOverlap
 public import FLT.Mazur.ProjectiveLineProductTorusExt
 public import FLT.Mazur.ProjectiveLineProductTorusRestriction
+public import FLT.Mazur.ProjectiveLineReflectionAction
 public import FLT.Mazur.ProjectiveLineRightCanonicalRatios
 public import FLT.Mazur.ProjectiveLineScaledAffineOverlap
 public import FLT.Mazur.ProjectiveLineScaledReciprocalGluing
@@ -7559,6 +7566,7 @@ public import FLT.Mazur.SurjectiveTowerLifting
 public import FLT.Mazur.SymmetricAffineLineParameters
 public import FLT.Mazur.TensorAdicSeparation
 public import FLT.Mazur.TensorAlgebraSemilinearEquiv
+public import FLT.Mazur.TensorCoefficientSymmetry
 public import FLT.Mazur.TensorEvaluationSemilinear
 public import FLT.Mazur.TensorInjectivityFiniteLength
 public import FLT.Mazur.TensorIntegerModelClosedImmersion
@@ -7981,6 +7989,8 @@ public import FLT.Mazur.WeierstrassDividedBranchPairSeparation
 public import FLT.Mazur.WeierstrassDividedChartCubicAction
 public import FLT.Mazur.WeierstrassDividedChartRegularCenter
 public import FLT.Mazur.WeierstrassDividedCoefficientActionIndexTransport
+public import FLT.Mazur.WeierstrassDividedCoefficientInputs
+public import FLT.Mazur.WeierstrassDividedCoefficientSymmetry
 public import FLT.Mazur.WeierstrassDividedComponentPairCoverage
 public import FLT.Mazur.WeierstrassDividedConicBoundaryAllDepths
 public import FLT.Mazur.WeierstrassDividedConicBoundaryGeometryAllDepths
@@ -8433,8 +8443,10 @@ public import FLT.Mazur.WeierstrassDividedSuccessorRetainedCenter
 public import FLT.Mazur.WeierstrassDividedSuccessorRetainedCoordinates
 public import FLT.Mazur.WeierstrassDividedSuccessorRetainedGluing
 public import FLT.Mazur.WeierstrassDividedSuccessorUnitAction
+public import FLT.Mazur.WeierstrassDividedTangentConjugation
 public import FLT.Mazur.WeierstrassDividedTensorAtlasComparison
 public import FLT.Mazur.WeierstrassDividedTensorPointAction
+public import FLT.Mazur.WeierstrassDividedTensorSymmetry
 public import FLT.Mazur.WeierstrassDividedTensorYBoundary
 public import FLT.Mazur.WeierstrassDividedTerminalAllExteriorNodes
 public import FLT.Mazur.WeierstrassDividedTerminalAtlasPushout
