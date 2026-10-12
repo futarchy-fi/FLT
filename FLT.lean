@@ -2625,6 +2625,7 @@ public import FLT.Mazur.AffineBranchSequence
 public import FLT.Mazur.AffineCanonicalMapCompatibility
 public import FLT.Mazur.AffineCanonicalOverlapChart
 public import FLT.Mazur.AffineCanonicalOverlapRecognition
+public import FLT.Mazur.AffineCartesianPreimageSections
 public import FLT.Mazur.AffineCartesianSectionPushout
 public import FLT.Mazur.AffineCartesianSectionScalars
 public import FLT.Mazur.AffineChartResidueEquation
@@ -2833,6 +2834,7 @@ public import FLT.Mazur.AffinePairUnitTransport
 public import FLT.Mazur.AffinePicardComparison
 public import FLT.Mazur.AffinePicardSections
 public import FLT.Mazur.AffinePieceSectionLocalization
+public import FLT.Mazur.AffinePreimageRestrictionPushout
 public import FLT.Mazur.AffineProductMap
 public import FLT.Mazur.AffineProductTensorCoordinates
 public import FLT.Mazur.AffineProjectivePointLineCover
@@ -2921,6 +2923,7 @@ public import FLT.Mazur.AffineTensorCoalgebraComparison
 public import FLT.Mazur.AffineTensorCocycle
 public import FLT.Mazur.AffineTensorCocycleTransport
 public import FLT.Mazur.AffineTensorDescentMorphisms
+public import FLT.Mazur.AffineTensorIdealPullback
 public import FLT.Mazur.AffineTensorSectionIso
 public import FLT.Mazur.AffineTensorTransportAdditivity
 public import FLT.Mazur.AffineTildeBaseChangeIso
@@ -3583,6 +3586,8 @@ public import FLT.Mazur.CyclicHomAuxiliaryScheme
 public import FLT.Mazur.CyclicHomDivisorFppfCoverage
 public import FLT.Mazur.CyclicHomDivisorProduct
 public import FLT.Mazur.CyclicHomMultiplicationEquation
+public import FLT.Mazur.CyclicHomMultiplicationLocus
+public import FLT.Mazur.CyclicHomMultiplicationLocusUniversal
 public import FLT.Mazur.CyclicHomSourceDivisor
 public import FLT.Mazur.CyclicHomSubgroupVanishingChart
 public import FLT.Mazur.CyclicMarkingDivisorTransport
@@ -4152,7 +4157,13 @@ public import FLT.Mazur.FiniteFlatAffineLocalFree
 public import FLT.Mazur.FiniteFlatCoefficientIdeal
 public import FLT.Mazur.FiniteFlatCoefficientIso
 public import FLT.Mazur.FiniteFlatDegreeOpen
+public import FLT.Mazur.FiniteFlatIdealVanishingBaseChange
 public import FLT.Mazur.FiniteFlatIdealVanishingChart
+public import FLT.Mazur.FiniteFlatIdealVanishingGluing
+public import FLT.Mazur.FiniteFlatIdealVanishingNaturality
+public import FLT.Mazur.FiniteFlatIdealVanishingRestriction
+public import FLT.Mazur.FiniteFlatIdealVanishingUniversal
+public import FLT.Mazur.FiniteFlatIdealVanishingZero
 public import FLT.Mazur.FiniteFlatLocalIdealPresentation
 public import FLT.Mazur.FiniteFlatQuotientTrivialization
 public import FLT.Mazur.FiniteFlatSubschemeQuotient
@@ -6908,7 +6919,13 @@ public import FLT.Mazur.ProjectiveGenerationEventually
 public import FLT.Mazur.ProjectiveHomogeneousEvaluation
 public import FLT.Mazur.ProjectiveHomogeneousPoint
 public import FLT.Mazur.ProjectiveHomogeneousPointTransport
+public import FLT.Mazur.ProjectiveIdealGeometricVanishing
+public import FLT.Mazur.ProjectiveIdealVanishingBaseChange
+public import FLT.Mazur.ProjectiveIdealVanishingEquiv
+public import FLT.Mazur.ProjectiveIdealVanishingPushout
+public import FLT.Mazur.ProjectiveIdealVanishingRingPushout
 public import FLT.Mazur.ProjectiveIdealVanishingScheme
+public import FLT.Mazur.ProjectiveIdealVanishingZero
 public import FLT.Mazur.ProjectiveLineActionAssociativity
 public import FLT.Mazur.ProjectiveLineActionEndpoints
 public import FLT.Mazur.ProjectiveLineActionPoints
@@ -6997,6 +7014,7 @@ public import FLT.Mazur.ProjectiveSpaceCoefficientMap
 public import FLT.Mazur.ProjectiveSpaceProper
 public import FLT.Mazur.ProjectiveSpaceReindex
 public import FLT.Mazur.ProjectiveSpaceUniverseReindex
+public import FLT.Mazur.ProjectiveTargetVanishingBaseChange
 public import FLT.Mazur.ProjectiveTargetVanishingIdeal
 public import FLT.Mazur.ProjectiveTripleModuleLocalization
 public import FLT.Mazur.ProjectiveTwistAffineBaseChange
