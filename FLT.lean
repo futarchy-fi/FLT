@@ -3017,6 +3017,7 @@ public import FLT.Mazur.AuxiliaryBaseProjectionParameter
 public import FLT.Mazur.AuxiliaryCartesianGroupParameter
 public import FLT.Mazur.AuxiliaryCartesianOriginalParameter
 public import FLT.Mazur.AuxiliaryCartesianParameterEquivalence
+public import FLT.Mazur.AuxiliaryCartesianProjectionParameter
 public import FLT.Mazur.AuxiliaryCoprimeFieldMarking
 public import FLT.Mazur.AuxiliaryCoprimeFieldNaturality
 public import FLT.Mazur.AuxiliaryCoprimeMarking
