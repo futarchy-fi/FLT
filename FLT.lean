@@ -10154,6 +10154,7 @@ public import FLT.Mazur.WeierstrassVariableChangeProperCoefficient
 public import FLT.Mazur.WeierstrassVariableChangeScaledCoefficients
 public import FLT.Mazur.WeierstrassVariableChangeSecant
 public import FLT.Mazur.WeierstrassVariableChangeSecantAddition
+public import FLT.Mazur.WeierstrassVariableChangeSmoothAddition
 public import FLT.Mazur.WeierstrassVariableChangeSmoothIso
 public import FLT.Mazur.WeierstrassVariableChangeSmoothProduct
 public import FLT.Mazur.WeierstrassVariableChangeZero
