@@ -5962,6 +5962,7 @@ public import FLT.Mazur.PointNormalizedLineBaseChange
 public import FLT.Mazur.PointNormalizedLineBundle
 public import FLT.Mazur.PointedCubicAuxiliaryCover
 public import FLT.Mazur.PointedCubicBaseGroupIso
+public import FLT.Mazur.PointedCubicCartierMarking
 public import FLT.Mazur.PointedCubicCoefficientParameter
 public import FLT.Mazur.PointedCubicCyclicAuxiliaryCover
 public import FLT.Mazur.PointedCubicCyclicMarking
