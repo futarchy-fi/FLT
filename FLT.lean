@@ -4485,6 +4485,10 @@ public import FLT.Mazur.GradedProjZeroMapNaturality
 public import FLT.Mazur.GradedQuotientTensorComparison
 public import FLT.Mazur.GrassmannianAmbientBaseChange
 public import FLT.Mazur.GrassmannianAmbientBlocks
+public import FLT.Mazur.GrassmannianAmbientChartIndex
+public import FLT.Mazur.GrassmannianAmbientGlueData
+public import FLT.Mazur.GrassmannianAmbientGluedBase
+public import FLT.Mazur.GrassmannianAmbientIdentity
 public import FLT.Mazur.GrassmannianAmbientTransition
 public import FLT.Mazur.GrassmannianAmbientTransitionCocycle
 public import FLT.Mazur.GrassmannianAmbientTransitionNaturality
@@ -4494,6 +4498,8 @@ public import FLT.Mazur.GrassmannianChartPolynomialParameters
 public import FLT.Mazur.GrassmannianChartTransition
 public import FLT.Mazur.GrassmannianChartTransitionCocycle
 public import FLT.Mazur.GrassmannianChartTransitionInverse
+public import FLT.Mazur.GrassmannianIndexedOverlapScheme
+public import FLT.Mazur.GrassmannianIndexedTripleOverlap
 public import FLT.Mazur.GrassmannianLocalizedAmbientTransition
 public import FLT.Mazur.GrassmannianLocalizedTransition
 public import FLT.Mazur.GrassmannianLocalizedTransitionScheme
@@ -4508,6 +4514,9 @@ public import FLT.Mazur.GrassmannianSplitChartScheme
 public import FLT.Mazur.GrassmannianSplitQuotientChart
 public import FLT.Mazur.GrassmannianTransitionSpecialization
 public import FLT.Mazur.GrassmannianTripleOverlapCoordinates
+public import FLT.Mazur.GrassmannianTripleOverlapDeterminant
+public import FLT.Mazur.GrassmannianTripleOverlapOriginalPullback
+public import FLT.Mazur.GrassmannianTripleOverlapRestriction
 public import FLT.Mazur.GrassmannianTripleOverlapRing
 public import FLT.Mazur.GrassmannianTripleOverlapScheme
 public import FLT.Mazur.GroupMarkingBaseChange
