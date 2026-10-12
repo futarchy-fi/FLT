@@ -35,10 +35,10 @@ variable {ι κ : Type u} [Fintype ι] [Fintype κ]
 
 section Tower
 variable [Algebra S T] [IsScalarTower R S T]
-local instance : Module.FinitePresentation T
+local instance hilbertSchemeExtendedFinitePresentation : Module.FinitePresentation T
     (MvPolynomial I T ⧸ J.map (MvPolynomial.map (algebraMap S T))) :=
   polynomialQuotient_finitePresentation_baseChange I S J T
-local instance : Module.Flat T
+local instance hilbertSchemeExtendedFlat : Module.Flat T
     (MvPolynomial I T ⧸ J.map (MvPolynomial.map (algebraMap S T))) :=
   polynomialQuotient_flat_baseChange I S J T
 
