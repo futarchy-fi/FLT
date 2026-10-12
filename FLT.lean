@@ -4463,6 +4463,7 @@ public import FLT.Mazur.GroupMarkingTransport
 public import FLT.Mazur.GroupMarkingTransportEquations
 public import FLT.Mazur.GroupMarkingTransportNaturality
 public import FLT.Mazur.GroupObjectPointTranslation
+public import FLT.Mazur.GroupObjectTranslationNaturality
 public import FLT.Mazur.GroupSchemeBaseChangeComparison
 public import FLT.Mazur.GroupSchemeBaseChangeComposition
 public import FLT.Mazur.GroupSchemeBaseChangeProjections
