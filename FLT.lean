@@ -4615,6 +4615,7 @@ public import FLT.Mazur.GrassmannianQuotientBaseChange
 public import FLT.Mazur.GrassmannianQuotientCoverIndependence
 public import FLT.Mazur.GrassmannianQuotientImageAmbientEpi
 public import FLT.Mazur.GrassmannianQuotientImageAmbientMap
+public import FLT.Mazur.GrassmannianQuotientImageClassification
 public import FLT.Mazur.GrassmannianQuotientImageCocycle
 public import FLT.Mazur.GrassmannianQuotientImageDescent
 public import FLT.Mazur.GrassmannianQuotientImageFaithful
