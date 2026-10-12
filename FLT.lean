@@ -5827,6 +5827,7 @@ public import FLT.Mazur.PointNormalizedFiberCohomology
 public import FLT.Mazur.PointNormalizedLineBaseChange
 public import FLT.Mazur.PointNormalizedLineBundle
 public import FLT.Mazur.PointedCubicBaseGroupIso
+public import FLT.Mazur.PointedCubicCyclicMarking
 public import FLT.Mazur.PointedCubicSubgroupTransport
 public import FLT.Mazur.PointedCurveLargeDegree
 public import FLT.Mazur.PointedCurveUniformAcyclicity
