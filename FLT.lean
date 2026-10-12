@@ -8173,6 +8173,7 @@ public import FLT.Mazur.WeierstrassAffineVariableChangeEquiv
 public import FLT.Mazur.WeierstrassAffineVariableChangeMap
 public import FLT.Mazur.WeierstrassAffineVariableChangeSections
 public import FLT.Mazur.WeierstrassAffineVietaFormula
+public import FLT.Mazur.WeierstrassAlgebraChartCross
 public import FLT.Mazur.WeierstrassAllOrdinaryTripleAlgebra
 public import FLT.Mazur.WeierstrassAllOrdinaryTripleCoordinates
 public import FLT.Mazur.WeierstrassAllOrdinaryTripleDomain
