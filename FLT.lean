@@ -10015,6 +10015,7 @@ public import FLT.Mazur.WeierstrassSplitNodalPartialSmoothMultiplication
 public import FLT.Mazur.WeierstrassSplitNodalPointBaseChange
 public import FLT.Mazur.WeierstrassSplitNodalPointMultiplication
 public import FLT.Mazur.WeierstrassSplitNodalPoints
+public import FLT.Mazur.WeierstrassSplitNodalProjectiveCoefficient
 public import FLT.Mazur.WeierstrassSplitNodalProjectiveReflection
 public import FLT.Mazur.WeierstrassSplitNodalReciprocalMultiplication
 public import FLT.Mazur.WeierstrassSplitNodalReciprocalParameter
