@@ -2741,6 +2741,7 @@ public import FLT.Mazur.AffineHilbertRelationTensorCharts
 public import FLT.Mazur.AffineHilbertSymmetricNeighborhoods
 public import FLT.Mazur.AffineHilbertTensorAtlas
 public import FLT.Mazur.AffineHilbertTensorGluing
+public import FLT.Mazur.AffineHilbertTensorInverse
 public import FLT.Mazur.AffineHilbertTensorMatchingRing
 public import FLT.Mazur.AffineHilbertTensorMixedComposition
 public import FLT.Mazur.AffineHilbertTensorPullback
