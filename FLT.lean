@@ -3570,6 +3570,7 @@ public import FLT.Mazur.CyclicHomDivisorFppfCoverage
 public import FLT.Mazur.CyclicHomDivisorProduct
 public import FLT.Mazur.CyclicHomMultiplicationEquation
 public import FLT.Mazur.CyclicHomSourceDivisor
+public import FLT.Mazur.CyclicHomSubgroupVanishingChart
 public import FLT.Mazur.CyclicMarkingDivisorTransport
 public import FLT.Mazur.CyclicMarkingOrbitDivisor
 public import FLT.Mazur.CyclicNodeChart
