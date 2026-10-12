@@ -2923,6 +2923,7 @@ public import FLT.Mazur.AffineTripleUnitCoefficients
 public import FLT.Mazur.AffineTrivialLineSectionOpen
 public import FLT.Mazur.AllAffineAmbientCharts
 public import FLT.Mazur.AmbientHilbertChartFamilyPullback
+public import FLT.Mazur.AmbientHilbertChartImage
 public import FLT.Mazur.AmbientHilbertChartParameterEquality
 public import FLT.Mazur.AmbientHilbertChartSupport
 public import FLT.Mazur.AmbientHilbertChartSystem
@@ -2979,6 +2980,9 @@ public import FLT.Mazur.AmpleFiniteAffineNeighborhood
 public import FLT.Mazur.AmpleFiniteGroupQuotient
 public import FLT.Mazur.AmpleGlobalGeneration
 public import FLT.Mazur.AmpleHighDegreeSectionCover
+public import FLT.Mazur.AmpleHilbertAmbientRefinement
+public import FLT.Mazur.AmpleHilbertCommonAmbientChart
+public import FLT.Mazur.AmpleHilbertFiniteSupport
 public import FLT.Mazur.AmpleHilbertFunctorRepresentation
 public import FLT.Mazur.AmpleLineBundle
 public import FLT.Mazur.AmpleLineLimitDescent
@@ -7786,6 +7790,10 @@ public import FLT.Mazur.VariableHilbertAffinePointRefinement
 public import FLT.Mazur.VariableHilbertChartRelation
 public import FLT.Mazur.VariableHilbertChartRelationOperations
 public import FLT.Mazur.VariableHilbertChartRelationPullback
+public import FLT.Mazur.VariableHilbertCommonAmbientAtlas
+public import FLT.Mazur.VariableHilbertCommonAmbientEnvelope
+public import FLT.Mazur.VariableHilbertCommonAmbientSource
+public import FLT.Mazur.VariableHilbertCommonAmbientSquare
 public import FLT.Mazur.VariableHilbertEtaleRelation
 public import FLT.Mazur.VariableHilbertFiniteRelationFibers
 public import FLT.Mazur.VariableHilbertIntersectionBaseChange
