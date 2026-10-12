@@ -4429,6 +4429,7 @@ public import FLT.Mazur.GenericLineTrivialization
 public import FLT.Mazur.GenericSectionUniqueness
 public import FLT.Mazur.GenericWitnessIdealVanishing
 public import FLT.Mazur.GenusOneGroupPointCohomology
+public import FLT.Mazur.GenusOneGroupPointPowers
 public import FLT.Mazur.GenusOneNonspecialPoint
 public import FLT.Mazur.GeometricAcyclicFppfLocus
 public import FLT.Mazur.GeometricAcyclicPicardLocality
