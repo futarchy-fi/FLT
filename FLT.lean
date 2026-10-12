@@ -3015,9 +3015,11 @@ public import FLT.Mazur.ArtinianProperRelativeFunctions
 public import FLT.Mazur.ArtinianProperStructureSheaf
 public import FLT.Mazur.ArtinianRelativeSectionCriterion
 public import FLT.Mazur.ArtinianSectionKernel
+public import FLT.Mazur.AuxiliaryBaseProjectionParameter
 public import FLT.Mazur.AuxiliaryCartesianGroupParameter
 public import FLT.Mazur.AuxiliaryCartesianOriginalParameter
 public import FLT.Mazur.AuxiliaryCartesianParameterEquivalence
+public import FLT.Mazur.AuxiliaryCartesianProjectionParameter
 public import FLT.Mazur.AuxiliaryCoprimeFieldMarking
 public import FLT.Mazur.AuxiliaryCoprimeFieldNaturality
 public import FLT.Mazur.AuxiliaryCoprimeMarking
@@ -4021,7 +4023,10 @@ public import FLT.Mazur.EtaleCoordinate
 public import FLT.Mazur.EtaleCoordinateSlice
 public import FLT.Mazur.EtaleCurveLocalDomain
 public import FLT.Mazur.EtaleCurveValuation
+public import FLT.Mazur.EtaleCyclicOriginalLocalCubic
+public import FLT.Mazur.EtaleCyclicOriginalNormalizedCoverage
 public import FLT.Mazur.EtaleCyclicPresentationPullback
+public import FLT.Mazur.EtaleCyclicSmoothLocusNormalizedCoverage
 public import FLT.Mazur.EtaleCyclicSubgroupLocalPresentation
 public import FLT.Mazur.EtaleDimGe
 public import FLT.Mazur.EtaleDimLe
@@ -4427,6 +4432,8 @@ public import FLT.Mazur.GeneralizedCurveCartierDescent
 public import FLT.Mazur.GeneralizedCurveCartierGenerator
 public import FLT.Mazur.GeneralizedCurveCartierStalks
 public import FLT.Mazur.GeneralizedCurveCategory
+public import FLT.Mazur.GeneralizedCurveCyclicMarkingBaseChange
+public import FLT.Mazur.GeneralizedCurveCyclicMarkingTransport
 public import FLT.Mazur.GeneralizedCurveCyclicSubgroup
 public import FLT.Mazur.GeneralizedCurveDirectLocalCubic
 public import FLT.Mazur.GeneralizedCurveDirectLocalFamily
@@ -4443,6 +4450,7 @@ public import FLT.Mazur.GeneralizedCurveGraphBaseChange
 public import FLT.Mazur.GeneralizedCurveGraphTransport
 public import FLT.Mazur.GeneralizedCurveIdentityBaseChange
 public import FLT.Mazur.GeneralizedCurveLocalCubicPresentation
+public import FLT.Mazur.GeneralizedCurveLocalCyclicCubic
 public import FLT.Mazur.GeneralizedCurveLocalPointFrames
 public import FLT.Mazur.GeneralizedCurvePicardClasses
 public import FLT.Mazur.GeneralizedCurvePicardPresheaf
@@ -4713,6 +4721,7 @@ public import FLT.Mazur.GrassmannianWholeOverlapRefinement
 public import FLT.Mazur.GrassmannianWholeOverlapTransition
 public import FLT.Mazur.GroupMarkingBaseChange
 public import FLT.Mazur.GroupMarkingBaseChangeInverse
+public import FLT.Mazur.GroupMarkingBaseProjection
 public import FLT.Mazur.GroupMarkingCartesianInverse
 public import FLT.Mazur.GroupMarkingCartesianTransport
 public import FLT.Mazur.GroupMarkingTransport
@@ -5915,8 +5924,17 @@ public import FLT.Mazur.PointNormalizedDivisorUniqueness
 public import FLT.Mazur.PointNormalizedFiberCohomology
 public import FLT.Mazur.PointNormalizedLineBaseChange
 public import FLT.Mazur.PointNormalizedLineBundle
+public import FLT.Mazur.PointedCubicAuxiliaryCover
 public import FLT.Mazur.PointedCubicBaseGroupIso
+public import FLT.Mazur.PointedCubicCoefficientParameter
+public import FLT.Mazur.PointedCubicCyclicAuxiliaryCover
+public import FLT.Mazur.PointedCubicCyclicMarking
+public import FLT.Mazur.PointedCubicNormalizedOriginalClass
 public import FLT.Mazur.PointedCubicSubgroupTransport
+public import FLT.Mazur.PointedCubicUniversalCyclicParameter
+public import FLT.Mazur.PointedCubicUniversalSourceGroup
+public import FLT.Mazur.PointedCubicUniversalSourceMarking
+public import FLT.Mazur.PointedCubicUniversalSourceSubgroup
 public import FLT.Mazur.PointedCurveLargeDegree
 public import FLT.Mazur.PointedCurveUniformAcyclicity
 public import FLT.Mazur.PointedCurveUniformRiemannRoch
