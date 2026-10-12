@@ -4521,6 +4521,7 @@ public import FLT.Mazur.GradedQuotientTensorComparison
 public import FLT.Mazur.GrassmannianAffinePointFunctor
 public import FLT.Mazur.GrassmannianAmbientBaseChange
 public import FLT.Mazur.GrassmannianAmbientBlocks
+public import FLT.Mazur.GrassmannianAmbientChartConeCompatibility
 public import FLT.Mazur.GrassmannianAmbientChartConeCoordinate
 public import FLT.Mazur.GrassmannianAmbientChartConeMap
 public import FLT.Mazur.GrassmannianAmbientChartIndex
