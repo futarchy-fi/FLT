@@ -4534,6 +4534,7 @@ public import FLT.Mazur.GrassmannianMorphismEffectiveRelation
 public import FLT.Mazur.GrassmannianMorphismFiniteCover
 public import FLT.Mazur.GrassmannianMorphismLocalQuotient
 public import FLT.Mazur.GrassmannianMorphismPrincipalCover
+public import FLT.Mazur.GrassmannianMorphismQuotientLocalization
 public import FLT.Mazur.GrassmannianMorphismRelation
 public import FLT.Mazur.GrassmannianMorphismTensorCompatibility
 public import FLT.Mazur.GrassmannianNormalizedBaseChange
