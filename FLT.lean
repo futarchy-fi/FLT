@@ -8312,6 +8312,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearInitialSlopeProjections
 public import FLT.Mazur.WeierstrassCoefficientShearInitialSmooth
 public import FLT.Mazur.WeierstrassCoefficientShearInitialTorusAction
 public import FLT.Mazur.WeierstrassCoefficientShearLineActionReflection
+public import FLT.Mazur.WeierstrassCoefficientShearLineUnitDomain
 public import FLT.Mazur.WeierstrassCoefficientShearOppositeUnrestrictedAction
 public import FLT.Mazur.WeierstrassCoefficientShearOverlaps
 public import FLT.Mazur.WeierstrassCoefficientShearReciprocalLineAction
