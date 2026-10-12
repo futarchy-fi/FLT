@@ -9,6 +9,7 @@ public import FLT.Mazur.DivisorTwistedProjection
 public import FLT.Mazur.DivisorPowerLeadingClass
 public import FLT.Mazur.IsomorphicClosedPullback
 public import FLT.Mazur.SectionDivisors
+public import Mathlib.Tactic.IrreducibleDef
 
 /-!
 # The actual section-divisor quotient is a line on the base
@@ -65,7 +66,7 @@ theorem sectionTwistedQuotientIso_projection (L : X.Modules) (hL : LocallyFreeRa
   exact IsomorphicClosedPullback.unit_overIso _ _ _ _ _
 
 /-- The actual quotient is the closed pushforward of the base pole line. -/
-def sectionDivisorQuotientIso (m : ℕ) :
+irreducible_def sectionDivisorQuotientIso (m : ℕ) :
     (divisorTwistedComplex hI (tensorPower (divisorLineBundle s.ker hI) m)).X₃ ≅
       (pushforward s).obj (sectionPoleLine s hI (m + 1)) :=
   sectionTwistedQuotientIso f s hs hI _
@@ -76,11 +77,12 @@ theorem sectionDivisorQuotientIso_projection (m : ℕ) :
     (divisorTwistedComplex hI (tensorPower (divisorLineBundle s.ker hI) m)).g ≫
       (sectionDivisorQuotientIso f s hs hI m).hom =
         (pullbackPushforwardAdjunction s).unit.app
-          (tensorPower (divisorLineBundle s.ker hI) (m + 1)) :=
-  sectionTwistedQuotientIso_projection f s hs hI _ _
+          (tensorPower (divisorLineBundle s.ker hI) (m + 1)) := by
+  rw [sectionDivisorQuotientIso_def]
+  exact sectionTwistedQuotientIso_projection f s hs hI _ _
 
 /-- Direct image to the base identifies the original quotient with its base line. -/
-def sectionDivisorQuotientPushforwardIso (m : ℕ) :
+irreducible_def sectionDivisorQuotientPushforwardIso (m : ℕ) :
     (pushforward f).obj
       (divisorTwistedComplex hI (tensorPower (divisorLineBundle s.ker hI) m)).X₃ ≅
         sectionPoleLine s hI (m + 1) :=
