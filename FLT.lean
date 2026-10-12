@@ -10080,6 +10080,7 @@ public import FLT.Mazur.WeierstrassSuccessiveScaleReesScheme
 public import FLT.Mazur.WeierstrassSuccessiveShearBoundaryCoordinates
 public import FLT.Mazur.WeierstrassSuccessiveShearComponents
 public import FLT.Mazur.WeierstrassSuccessiveShearConicBoundary
+public import FLT.Mazur.WeierstrassSuccessiveShearConicCoefficient
 public import FLT.Mazur.WeierstrassSuccessiveShearConicRootChange
 public import FLT.Mazur.WeierstrassSuccessiveShearLineBoundary
 public import FLT.Mazur.WeierstrassSuccessiveShearLineCoefficient
