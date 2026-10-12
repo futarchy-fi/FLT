@@ -5345,6 +5345,7 @@ public import FLT.Mazur.NodeTangentFieldFixed
 public import FLT.Mazur.NodeTangentFractionField
 public import FLT.Mazur.NodeTangentGaloisLabel
 public import FLT.Mazur.NodeTangentNormalizationChart
+public import FLT.Mazur.NodeTangentNormalizationConjugation
 public import FLT.Mazur.NodeTangentOverlap
 public import FLT.Mazur.NodeTangentOverlapEquiv
 public import FLT.Mazur.NodeTangentOverlapLinear
