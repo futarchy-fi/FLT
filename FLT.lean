@@ -7144,6 +7144,7 @@ public import FLT.Mazur.RelativeGenusOnePointSections
 public import FLT.Mazur.RelativeGenusOnePointSplit
 public import FLT.Mazur.RelativeGenusOnePointedCubic
 public import FLT.Mazur.RelativeGenusOnePoleReduction
+public import FLT.Mazur.RelativeGenusOneProjectiveIso
 public import FLT.Mazur.RelativeGenusOneProjectiveSections
 public import FLT.Mazur.RelativeIdealAmbientHom
 public import FLT.Mazur.RelativeIdealAmbientIsoSquare
