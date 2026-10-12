@@ -8582,6 +8582,7 @@ public import FLT.Mazur.WeierstrassDilatationResidueRetained
 public import FLT.Mazur.WeierstrassDilatationSaturation
 public import FLT.Mazur.WeierstrassDilatationShear
 public import FLT.Mazur.WeierstrassDilatationShearHorizontal
+public import FLT.Mazur.WeierstrassDilatationShearNodeNormalForm
 public import FLT.Mazur.WeierstrassDilatationUnitComparison
 public import FLT.Mazur.WeierstrassDilatationZeroResidue
 public import FLT.Mazur.WeierstrassDilatationZeroResidueBoundary
