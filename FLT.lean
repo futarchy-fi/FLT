@@ -4641,6 +4641,7 @@ public import FLT.Mazur.GrassmannianSelectedAmbientIndex
 public import FLT.Mazur.GrassmannianSelectedColumnsLocalization
 public import FLT.Mazur.GrassmannianSheafQuotientClassification
 public import FLT.Mazur.GrassmannianSheafQuotientPoint
+public import FLT.Mazur.GrassmannianSheafQuotientPullback
 public import FLT.Mazur.GrassmannianSheafQuotientTest
 public import FLT.Mazur.GrassmannianSheafRefinementComparison
 public import FLT.Mazur.GrassmannianSplitChartCoordinates
