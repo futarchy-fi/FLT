@@ -7102,6 +7102,7 @@ public import FLT.Mazur.RelativeGenusOneCanonicalConstants
 public import FLT.Mazur.RelativeGenusOneCanonicalLine
 public import FLT.Mazur.RelativeGenusOneChangedBasis
 public import FLT.Mazur.RelativeGenusOneChangedMonomials
+public import FLT.Mazur.RelativeGenusOneChartEquation
 public import FLT.Mazur.RelativeGenusOneComplementCoordinates
 public import FLT.Mazur.RelativeGenusOneComplementEquation
 public import FLT.Mazur.RelativeGenusOneComplementMonomials
