@@ -2937,6 +2937,7 @@ public import FLT.Mazur.AmbientHilbertFiberSupportCover
 public import FLT.Mazur.AmbientHilbertGluedBase
 public import FLT.Mazur.AmbientHilbertGluedCharts
 public import FLT.Mazur.AmbientHilbertGluing
+public import FLT.Mazur.AmbientHilbertGrassmannianImmersion
 public import FLT.Mazur.AmbientHilbertLocalParameters
 public import FLT.Mazur.AmbientHilbertLocallySupported
 public import FLT.Mazur.AmbientHilbertOpenParameterFamily
