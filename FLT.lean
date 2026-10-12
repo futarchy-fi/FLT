@@ -9439,6 +9439,7 @@ public import FLT.Mazur.WeierstrassNegationIntersection
 public import FLT.Mazur.WeierstrassNegationOverlap
 public import FLT.Mazur.WeierstrassNegationPairSections
 public import FLT.Mazur.WeierstrassNodalDividedDepth
+public import FLT.Mazur.WeierstrassNodalDividedFamily
 public import FLT.Mazur.WeierstrassNodalResidueCharts
 public import FLT.Mazur.WeierstrassNodalResidueContraction
 public import FLT.Mazur.WeierstrassNodalResidueTangentDepth
