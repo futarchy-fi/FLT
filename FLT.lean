@@ -8067,6 +8067,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearCoverage
 public import FLT.Mazur.WeierstrassCoefficientShearGluing
 public import FLT.Mazur.WeierstrassCoefficientShearOverlaps
 public import FLT.Mazur.WeierstrassCoefficientShearResidueExterior
+public import FLT.Mazur.WeierstrassCoefficientShearTransport
 public import FLT.Mazur.WeierstrassCoefficientZero
 public import FLT.Mazur.WeierstrassConicZeroAffineParameter
 public import FLT.Mazur.WeierstrassConstantSections
