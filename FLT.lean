@@ -8271,6 +8271,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearSmoothUnique
 public import FLT.Mazur.WeierstrassCoefficientShearSpecialization
 public import FLT.Mazur.WeierstrassCoefficientShearSpecializationMono
 public import FLT.Mazur.WeierstrassCoefficientShearSuccessiveAction
+public import FLT.Mazur.WeierstrassCoefficientShearSuccessiveTorusAction
 public import FLT.Mazur.WeierstrassCoefficientShearTangentConjugation
 public import FLT.Mazur.WeierstrassCoefficientShearTangentTransport
 public import FLT.Mazur.WeierstrassCoefficientShearTensorInput
