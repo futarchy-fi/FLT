@@ -6062,6 +6062,7 @@ public import FLT.Mazur.PolygonProjectiveRotationNormalization
 public import FLT.Mazur.PolygonProjectiveSquareComparison
 public import FLT.Mazur.PolygonProjectiveSquareMarking
 public import FLT.Mazur.PolygonProjectiveTranslation
+public import FLT.Mazur.PolygonProjectiveUniversalParameter
 public import FLT.Mazur.PolygonProper
 public import FLT.Mazur.PolygonPuncturedCanonicalEquations
 public import FLT.Mazur.PolygonPureDimension
