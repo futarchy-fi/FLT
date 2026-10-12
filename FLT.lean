@@ -8155,6 +8155,11 @@ public import FLT.Mazur.WeierstrassCoefficientMonoidalComparison
 public import FLT.Mazur.WeierstrassCoefficientNegation
 public import FLT.Mazur.WeierstrassCoefficientProductMorphism
 public import FLT.Mazur.WeierstrassCoefficientSecant
+public import FLT.Mazur.WeierstrassCoefficientShearAdjacentChartMap
+public import FLT.Mazur.WeierstrassCoefficientShearAdjacentFactor
+public import FLT.Mazur.WeierstrassCoefficientShearAdjacentGluedBoundary
+public import FLT.Mazur.WeierstrassCoefficientShearAdjacentGluedFullConic
+public import FLT.Mazur.WeierstrassCoefficientShearAdjacentGluedIntersections
 public import FLT.Mazur.WeierstrassCoefficientShearAdjacentIntersection
 public import FLT.Mazur.WeierstrassCoefficientShearAdjacentLine
 public import FLT.Mazur.WeierstrassCoefficientShearAdjacentOpen
@@ -8173,6 +8178,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearResidueExterior
 public import FLT.Mazur.WeierstrassCoefficientShearResidueRetained
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedFiber
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedIntersections
+public import FLT.Mazur.WeierstrassCoefficientShearRetainedReconstruction
 public import FLT.Mazur.WeierstrassCoefficientShearSpecialization
 public import FLT.Mazur.WeierstrassCoefficientShearTangentConjugation
 public import FLT.Mazur.WeierstrassCoefficientShearTangentTransport
@@ -8238,6 +8244,7 @@ public import FLT.Mazur.WeierstrassDividedAdjacentComponentInjectivity
 public import FLT.Mazur.WeierstrassDividedAdjacentComponentRanges
 public import FLT.Mazur.WeierstrassDividedAdjacentComponentStructure
 public import FLT.Mazur.WeierstrassDividedAdjacentConicExterior
+public import FLT.Mazur.WeierstrassDividedAdjacentCorrectedBoundary
 public import FLT.Mazur.WeierstrassDividedAdjacentCrossedIntersection
 public import FLT.Mazur.WeierstrassDividedAdjacentEndpointRanges
 public import FLT.Mazur.WeierstrassDividedAdjacentExtendedEmptyIntersections
@@ -8246,6 +8253,7 @@ public import FLT.Mazur.WeierstrassDividedAdjacentFullConicIntersection
 public import FLT.Mazur.WeierstrassDividedAdjacentGlobalPunctures
 public import FLT.Mazur.WeierstrassDividedAdjacentIndexedIntersection
 public import FLT.Mazur.WeierstrassDividedAdjacentIntegralBoundary
+public import FLT.Mazur.WeierstrassDividedAdjacentInverseAttachment
 public import FLT.Mazur.WeierstrassDividedAdjacentNodePunctures
 public import FLT.Mazur.WeierstrassDividedAdjacentNormalizedIntersection
 public import FLT.Mazur.WeierstrassDividedAdjacentOrderedConicIntersection
