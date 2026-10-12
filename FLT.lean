@@ -5839,6 +5839,7 @@ public import FLT.Mazur.PointedCubicCyclicAuxiliaryCover
 public import FLT.Mazur.PointedCubicCyclicMarking
 public import FLT.Mazur.PointedCubicSubgroupTransport
 public import FLT.Mazur.PointedCubicUniversalCyclicParameter
+public import FLT.Mazur.PointedCubicUniversalSourceGroup
 public import FLT.Mazur.PointedCurveLargeDegree
 public import FLT.Mazur.PointedCurveUniformAcyclicity
 public import FLT.Mazur.PointedCurveUniformRiemannRoch
