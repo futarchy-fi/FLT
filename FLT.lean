@@ -4408,6 +4408,7 @@ public import FLT.Mazur.GeneralizedCurveFiberAmple
 public import FLT.Mazur.GeneralizedCurveFiniteSubgroup
 public import FLT.Mazur.GeneralizedCurveGeneratorTransport
 public import FLT.Mazur.GeneralizedCurveGeometricAffineChart
+public import FLT.Mazur.GeneralizedCurveGeometricGroupIso
 public import FLT.Mazur.GeneralizedCurveGeometricProjectiveIso
 public import FLT.Mazur.GeneralizedCurveGraph
 public import FLT.Mazur.GeneralizedCurveGraphBaseChange
