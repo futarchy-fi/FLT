@@ -4058,6 +4058,7 @@ public import FLT.Mazur.FiniteAffineIntersectionDiagram
 public import FLT.Mazur.FiniteAffineLineCover
 public import FLT.Mazur.FiniteAffineOpenClosedDescent
 public import FLT.Mazur.FiniteAffineProperIntegerDescent
+public import FLT.Mazur.FiniteAlgebraFiberSurjective
 public import FLT.Mazur.FiniteArrowIntegerModel
 public import FLT.Mazur.FiniteCartierPointFactorization
 public import FLT.Mazur.FiniteCechCyclesScalars
