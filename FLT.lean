@@ -7069,6 +7069,7 @@ public import FLT.Mazur.RelativeFiberNakayama
 public import FLT.Mazur.RelativeFppfComparisonCover
 public import FLT.Mazur.RelativeFppfLocalSubfunctor
 public import FLT.Mazur.RelativeGenusOneCanonicalBasis
+public import FLT.Mazur.RelativeGenusOneCanonicalConstants
 public import FLT.Mazur.RelativeGenusOneCanonicalLine
 public import FLT.Mazur.RelativeGenusOnePointFibers
 public import FLT.Mazur.RelativeGenusOnePointFrames
