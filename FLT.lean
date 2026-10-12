@@ -7904,6 +7904,7 @@ public import FLT.Mazur.UniversalWeierstrassAuxiliaryTorsionSections
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryValueNaturality
 public import FLT.Mazur.UniversalWeierstrassCyclicAffineFamilyRelation
 public import FLT.Mazur.UniversalWeierstrassCyclicAuxiliary
+public import FLT.Mazur.UniversalWeierstrassCyclicFamilyRelationNaturality
 public import FLT.Mazur.UniversalWeierstrassCyclicFullNaturality
 public import FLT.Mazur.UniversalWeierstrassCyclicGlobalRetraction
 public import FLT.Mazur.UniversalWeierstrassCyclicLevel
