@@ -7953,6 +7953,7 @@ public import FLT.Mazur.UniversalWeierstrassCyclicSliceRetraction
 public import FLT.Mazur.UniversalWeierstrassCyclicSourceCurve
 public import FLT.Mazur.UniversalWeierstrassCyclicSourceGroupIso
 public import FLT.Mazur.UniversalWeierstrassCyclicSourceMarking
+public import FLT.Mazur.UniversalWeierstrassCyclicSourceModuli
 public import FLT.Mazur.UniversalWeierstrassCyclicSubgroup
 public import FLT.Mazur.UniversalWeierstrassEquationCoefficientProjection
 public import FLT.Mazur.UniversalWeierstrassFourTorsionEtale
