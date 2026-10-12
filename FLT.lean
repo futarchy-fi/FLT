@@ -4408,6 +4408,9 @@ public import FLT.Mazur.GeneralizedCurveFiberAmple
 public import FLT.Mazur.GeneralizedCurveFiniteSubgroup
 public import FLT.Mazur.GeneralizedCurveGeneratorTransport
 public import FLT.Mazur.GeneralizedCurveGeometricAffineChart
+public import FLT.Mazur.GeneralizedCurveGeometricGroupIso
+public import FLT.Mazur.GeneralizedCurveGeometricProjectiveIso
+public import FLT.Mazur.GeneralizedCurveGeometricWeierstrass
 public import FLT.Mazur.GeneralizedCurveGraph
 public import FLT.Mazur.GeneralizedCurveGraphBaseChange
 public import FLT.Mazur.GeneralizedCurveGraphTransport
@@ -4431,10 +4434,15 @@ public import FLT.Mazur.GenericSectionUniqueness
 public import FLT.Mazur.GenericWitnessIdealVanishing
 public import FLT.Mazur.GenusOneGroupAffineChart
 public import FLT.Mazur.GenusOneGroupCoordinateRing
+public import FLT.Mazur.GenusOneGroupNonsingular
 public import FLT.Mazur.GenusOneGroupPointCohomology
 public import FLT.Mazur.GenusOneGroupPointPowers
 public import FLT.Mazur.GenusOneGroupPoleBasis
 public import FLT.Mazur.GenusOneGroupPoleFunctions
+public import FLT.Mazur.GenusOneGroupProjectiveExtension
+public import FLT.Mazur.GenusOneGroupProjectiveGroup
+public import FLT.Mazur.GenusOneGroupProjectiveIso
+public import FLT.Mazur.GenusOneGroupProjectivePoint
 public import FLT.Mazur.GenusOneGroupWeierstrassEquation
 public import FLT.Mazur.GenusOneNonspecialPoint
 public import FLT.Mazur.GeometricAcyclicFppfLocus
@@ -4518,6 +4526,7 @@ public import FLT.Mazur.GrassmannianAmbientClassifyingInjective
 public import FLT.Mazur.GrassmannianAmbientClassifyingMap
 public import FLT.Mazur.GrassmannianAmbientClassifyingNaturality
 public import FLT.Mazur.GrassmannianAmbientCommonTest
+public import FLT.Mazur.GrassmannianAmbientCompositionLaw
 public import FLT.Mazur.GrassmannianAmbientCoordinateMap
 public import FLT.Mazur.GrassmannianAmbientGlueData
 public import FLT.Mazur.GrassmannianAmbientGluedBase
@@ -4564,6 +4573,7 @@ public import FLT.Mazur.GrassmannianMorphismRecoveredPoint
 public import FLT.Mazur.GrassmannianMorphismRelation
 public import FLT.Mazur.GrassmannianMorphismSheafTransition
 public import FLT.Mazur.GrassmannianMorphismTensorCompatibility
+public import FLT.Mazur.GrassmannianNamedAmbientRefinement
 public import FLT.Mazur.GrassmannianNamedRefinement
 public import FLT.Mazur.GrassmannianNormalizedBaseChange
 public import FLT.Mazur.GrassmannianNumeratorTransport
@@ -4588,6 +4598,7 @@ public import FLT.Mazur.GrassmannianQuotientSheaf
 public import FLT.Mazur.GrassmannianQuotientSheafTransition
 public import FLT.Mazur.GrassmannianScalarExtension
 public import FLT.Mazur.GrassmannianSchemeAmbientQuotient
+public import FLT.Mazur.GrassmannianSchemeQuotientTest
 public import FLT.Mazur.GrassmannianSelectedAmbientIndex
 public import FLT.Mazur.GrassmannianSelectedColumnsLocalization
 public import FLT.Mazur.GrassmannianSheafRefinementComparison
@@ -4602,6 +4613,8 @@ public import FLT.Mazur.GrassmannianTripleOverlapOriginalPullback
 public import FLT.Mazur.GrassmannianTripleOverlapRestriction
 public import FLT.Mazur.GrassmannianTripleOverlapRing
 public import FLT.Mazur.GrassmannianTripleOverlapScheme
+public import FLT.Mazur.GrassmannianWholeOverlapCocycle
+public import FLT.Mazur.GrassmannianWholeOverlapProjection
 public import FLT.Mazur.GrassmannianWholeOverlapTransition
 public import FLT.Mazur.GroupMarkingBaseChange
 public import FLT.Mazur.GroupMarkingBaseChangeInverse
@@ -6861,6 +6874,8 @@ public import FLT.Mazur.ProperGlobalRankOnePointedDivisor
 public import FLT.Mazur.ProperGlobalSectionCartier
 public import FLT.Mazur.ProperGlobalSectionFinite
 public import FLT.Mazur.ProperGlobalSplitDirectImageSections
+public import FLT.Mazur.ProperGroupPointedHom
+public import FLT.Mazur.ProperGroupPointedRigidity
 public import FLT.Mazur.ProperImmersedCover
 public import FLT.Mazur.ProperIntegralConstantSections
 public import FLT.Mazur.ProperLineAcyclicLocus
@@ -7619,6 +7634,10 @@ public import FLT.Mazur.SeparatedOverlapPullback
 public import FLT.Mazur.SequentialCechLocalization
 public import FLT.Mazur.SequentialCochainBoundary
 public import FLT.Mazur.SequentialFiniteProducts
+public import FLT.Mazur.SheafPullbackAmbientCoherence
+public import FLT.Mazur.SheafPullbackAmbientMatch
+public import FLT.Mazur.SheafPullbackAmbientNormalization
+public import FLT.Mazur.SheafPullbackAmbientSectionMatch
 public import FLT.Mazur.SheafPullbackCanonicalRecovery
 public import FLT.Mazur.SheafPullbackCoordinateRecovery
 public import FLT.Mazur.SheafPullbackCoordinateRecoveryNaturality
