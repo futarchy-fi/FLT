@@ -6818,6 +6818,7 @@ public import FLT.Mazur.ProjectiveLineActionTorus
 public import FLT.Mazur.ProjectiveLineCanonicalRatios
 public import FLT.Mazur.ProjectiveLineChartIntersection
 public import FLT.Mazur.ProjectiveLineCharts
+public import FLT.Mazur.ProjectiveLineCoefficientMap
 public import FLT.Mazur.ProjectiveLineCohomologyVanishing
 public import FLT.Mazur.ProjectiveLineConstantSections
 public import FLT.Mazur.ProjectiveLineEndpointCover
@@ -8441,6 +8442,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearActionDomain
 public import FLT.Mazur.WeierstrassCoefficientShearActionSpecialization
 public import FLT.Mazur.WeierstrassCoefficientShearAdjacentChartMap
 public import FLT.Mazur.WeierstrassCoefficientShearAdjacentComponentRootChange
+public import FLT.Mazur.WeierstrassCoefficientShearAdjacentComponentSpecialization
 public import FLT.Mazur.WeierstrassCoefficientShearAdjacentComponentStructure
 public import FLT.Mazur.WeierstrassCoefficientShearAdjacentComponents
 public import FLT.Mazur.WeierstrassCoefficientShearAdjacentFactor
@@ -8472,7 +8474,11 @@ public import FLT.Mazur.WeierstrassCoefficientShearLineActionReflection
 public import FLT.Mazur.WeierstrassCoefficientShearLineSpecialization
 public import FLT.Mazur.WeierstrassCoefficientShearLineUnitDomain
 public import FLT.Mazur.WeierstrassCoefficientShearOppositeUnrestrictedAction
+public import FLT.Mazur.WeierstrassCoefficientShearOriginalAdjacentComponents
 public import FLT.Mazur.WeierstrassCoefficientShearOriginalConicSpecialization
+public import FLT.Mazur.WeierstrassCoefficientShearOriginalFinalAdjacent
+public import FLT.Mazur.WeierstrassCoefficientShearOriginalRetainedLines
+public import FLT.Mazur.WeierstrassCoefficientShearOriginalScaleOneComponents
 public import FLT.Mazur.WeierstrassCoefficientShearOverlaps
 public import FLT.Mazur.WeierstrassCoefficientShearReciprocalLineAction
 public import FLT.Mazur.WeierstrassCoefficientShearReciprocalLineNaturality
@@ -8498,6 +8504,8 @@ public import FLT.Mazur.WeierstrassCoefficientShearScaleOne
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneAdjacentAction
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneAdjacentIntersection
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneAdjacentTransition
+public import FLT.Mazur.WeierstrassCoefficientShearScaleOneComponentStructure
+public import FLT.Mazur.WeierstrassCoefficientShearScaleOneComponents
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneConicAction
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneConicRootChange
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneConicSpecialization
@@ -10246,6 +10254,7 @@ public import FLT.Mazur.WeierstrassSuccessiveRegularInputCenter
 public import FLT.Mazur.WeierstrassSuccessiveReplacementAtlas
 public import FLT.Mazur.WeierstrassSuccessiveReplacementGluing
 public import FLT.Mazur.WeierstrassSuccessiveReplacementReassociation
+public import FLT.Mazur.WeierstrassSuccessiveResidueLineShearComparison
 public import FLT.Mazur.WeierstrassSuccessiveRetainedCenter
 public import FLT.Mazur.WeierstrassSuccessiveScaleEmbedding
 public import FLT.Mazur.WeierstrassSuccessiveScaleFractions
