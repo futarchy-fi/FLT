@@ -5387,6 +5387,7 @@ public import FLT.Mazur.ModuleSectionProjectiveOOne
 public import FLT.Mazur.ModuleSectionProjectiveOver
 public import FLT.Mazur.ModuleSectionProjectiveOverlap
 public import FLT.Mazur.ModuleSectionProjectiveTransition
+public import FLT.Mazur.ModuleSectionRatioAlongMorphism
 public import FLT.Mazur.ModuleSectionRatioBasicOpen
 public import FLT.Mazur.ModuleSectionRatioCoordinates
 public import FLT.Mazur.ModuleSectionRatioOpen
