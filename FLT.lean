@@ -7939,6 +7939,7 @@ public import FLT.Mazur.WeierstrassDividedAtlasRegularCenter
 public import FLT.Mazur.WeierstrassDividedBoundaryNormalization
 public import FLT.Mazur.WeierstrassDividedBranchChainIntersections
 public import FLT.Mazur.WeierstrassDividedBranchPairSeparation
+public import FLT.Mazur.WeierstrassDividedChartCubicAction
 public import FLT.Mazur.WeierstrassDividedChartRegularCenter
 public import FLT.Mazur.WeierstrassDividedCoefficientActionIndexTransport
 public import FLT.Mazur.WeierstrassDividedComponentPairCoverage
@@ -8025,6 +8026,7 @@ public import FLT.Mazur.WeierstrassDividedFiniteLineContractions
 public import FLT.Mazur.WeierstrassDividedFiniteLineReciprocals
 public import FLT.Mazur.WeierstrassDividedFiniteNodeComponents
 public import FLT.Mazur.WeierstrassDividedFiniteNodeContractions
+public import FLT.Mazur.WeierstrassDividedFiniteOriginalScaleOpen
 public import FLT.Mazur.WeierstrassDividedFiniteOriginalXOpen
 public import FLT.Mazur.WeierstrassDividedFiniteOverlap
 public import FLT.Mazur.WeierstrassDividedFiniteProper
@@ -8259,6 +8261,7 @@ public import FLT.Mazur.WeierstrassDividedOppositeBoundarySupport
 public import FLT.Mazur.WeierstrassDividedOrderedAdjacentComponents
 public import FLT.Mazur.WeierstrassDividedOrderedPairCoverage
 public import FLT.Mazur.WeierstrassDividedOrderedRetainedSections
+public import FLT.Mazur.WeierstrassDividedOriginalScaleOpen
 public import FLT.Mazur.WeierstrassDividedOriginalXOpen
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityAction
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityActionComparison
@@ -8363,6 +8366,7 @@ public import FLT.Mazur.WeierstrassDividedSmoothCoefficientEmbedding
 public import FLT.Mazur.WeierstrassDividedSmoothSuccessiveCoefficientAction
 public import FLT.Mazur.WeierstrassDividedSmoothSuccessiveIntegralAction
 public import FLT.Mazur.WeierstrassDividedSmoothSuccessiveResidueAction
+public import FLT.Mazur.WeierstrassDividedSmoothTerminalIntegralAction
 public import FLT.Mazur.WeierstrassDividedSuccessiveOriginalY
 public import FLT.Mazur.WeierstrassDividedSuccessorActionAtlas
 public import FLT.Mazur.WeierstrassDividedSuccessorActionInput
@@ -8415,6 +8419,7 @@ public import FLT.Mazur.WeierstrassDividedTerminalResidueCharts
 public import FLT.Mazur.WeierstrassDividedTerminalRetainedBranchCompatibility
 public import FLT.Mazur.WeierstrassDividedTerminalRetainedIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalSplitNodeBranches
+public import FLT.Mazur.WeierstrassDividedTerminalTensorActionGeometry
 public import FLT.Mazur.WeierstrassDividedTerminalTensorPointGeometry
 public import FLT.Mazur.WeierstrassDividedTerminalZeroBoundary
 public import FLT.Mazur.WeierstrassDividedTerminalZeroBranchIntersection
@@ -9254,6 +9259,13 @@ public import FLT.Mazur.WeierstrassSmoothConnected
 public import FLT.Mazur.WeierstrassSmoothCrossAffine
 public import FLT.Mazur.WeierstrassSmoothCrossPolynomial
 public import FLT.Mazur.WeierstrassSmoothCyclicParameterDensity
+public import FLT.Mazur.WeierstrassSmoothDividedIntegralOutput
+public import FLT.Mazur.WeierstrassSmoothDividedProductResidue
+public import FLT.Mazur.WeierstrassSmoothDividedProductSource
+public import FLT.Mazur.WeierstrassSmoothDividedSecantResidue
+public import FLT.Mazur.WeierstrassSmoothDividedSecantSource
+public import FLT.Mazur.WeierstrassSmoothDividedTerminalCharacter
+public import FLT.Mazur.WeierstrassSmoothDividedTerminalTensorAction
 public import FLT.Mazur.WeierstrassSmoothFactorAddition
 public import FLT.Mazur.WeierstrassSmoothFactorProduct
 public import FLT.Mazur.WeierstrassSmoothFaithfulCoefficientDescent
