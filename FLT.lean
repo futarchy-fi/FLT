@@ -4635,6 +4635,7 @@ public import FLT.Mazur.GrassmannianQuotientSheaf
 public import FLT.Mazur.GrassmannianQuotientSheafFaithful
 public import FLT.Mazur.GrassmannianQuotientSheafTransition
 public import FLT.Mazur.GrassmannianScalarExtension
+public import FLT.Mazur.GrassmannianScalarExtensionTransport
 public import FLT.Mazur.GrassmannianSchemeAmbientQuotient
 public import FLT.Mazur.GrassmannianSchemeChartPoint
 public import FLT.Mazur.GrassmannianSchemeImageAmbientMap
