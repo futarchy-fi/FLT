@@ -7601,6 +7601,7 @@ public import FLT.Mazur.SectionConditionAcyclic
 public import FLT.Mazur.SectionConditionDimension
 public import FLT.Mazur.SectionCoverCoordinates
 public import FLT.Mazur.SectionCoverDiscrepancy
+public import FLT.Mazur.SectionCubicRatioNormalization
 public import FLT.Mazur.SectionDivisorLeadingSections
 public import FLT.Mazur.SectionDivisorNeutralTwist
 public import FLT.Mazur.SectionDivisorQuotientLine
