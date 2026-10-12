@@ -2740,6 +2740,7 @@ public import FLT.Mazur.AffineHilbertRelationOperations
 public import FLT.Mazur.AffineHilbertRelationTensorCharts
 public import FLT.Mazur.AffineHilbertSymmetricNeighborhoods
 public import FLT.Mazur.AffineHilbertTensorAtlas
+public import FLT.Mazur.AffineHilbertTensorGluing
 public import FLT.Mazur.AffineHilbertTensorRestrictions
 public import FLT.Mazur.AffineIdealContainment
 public import FLT.Mazur.AffineIdealCoordinates
