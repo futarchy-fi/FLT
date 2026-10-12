@@ -7088,6 +7088,7 @@ public import FLT.Mazur.RelativeGenusOneChangedMonomials
 public import FLT.Mazur.RelativeGenusOneComplementCoordinates
 public import FLT.Mazur.RelativeGenusOneComplementEquation
 public import FLT.Mazur.RelativeGenusOneComplementMonomials
+public import FLT.Mazur.RelativeGenusOneCoordinateRing
 public import FLT.Mazur.RelativeGenusOneCoordinateSurjective
 public import FLT.Mazur.RelativeGenusOneCubicRelation
 public import FLT.Mazur.RelativeGenusOneFramedProducts
