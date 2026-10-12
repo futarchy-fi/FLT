@@ -3395,6 +3395,8 @@ public import FLT.Mazur.ClosedDescentOverlapCoherence
 public import FLT.Mazur.ClosedDirectImageAcyclic
 public import FLT.Mazur.ClosedDirectImageComposition
 public import FLT.Mazur.ClosedFiberTensorExactness
+public import FLT.Mazur.ClosedGroupIdealGroup
+public import FLT.Mazur.ClosedGroupIdealOperations
 public import FLT.Mazur.ClosedIdealAffineCoverDescent
 public import FLT.Mazur.ClosedIdealCartesianDegree
 public import FLT.Mazur.ClosedIdealCoverGluing
@@ -3572,9 +3574,13 @@ public import FLT.Mazur.CurveRiemannRochEuler
 public import FLT.Mazur.CurveUniformFieldDegreeBound
 public import FLT.Mazur.CuspCollision
 public import FLT.Mazur.CuspOrderNumerator
+public import FLT.Mazur.CyclicDivisorSubgroupCriterion
 public import FLT.Mazur.CyclicHomAuxiliaryScheme
 public import FLT.Mazur.CyclicHomDivisorFppfCoverage
+public import FLT.Mazur.CyclicHomDivisorProduct
+public import FLT.Mazur.CyclicHomMultiplicationEquation
 public import FLT.Mazur.CyclicHomSourceDivisor
+public import FLT.Mazur.CyclicHomSubgroupVanishingChart
 public import FLT.Mazur.CyclicMarkingDivisorTransport
 public import FLT.Mazur.CyclicMarkingOrbitDivisor
 public import FLT.Mazur.CyclicNodeChart
@@ -4142,6 +4148,7 @@ public import FLT.Mazur.FiniteFlatAffineLocalFree
 public import FLT.Mazur.FiniteFlatCoefficientIdeal
 public import FLT.Mazur.FiniteFlatCoefficientIso
 public import FLT.Mazur.FiniteFlatDegreeOpen
+public import FLT.Mazur.FiniteFlatIdealVanishingChart
 public import FLT.Mazur.FiniteFlatLocalIdealPresentation
 public import FLT.Mazur.FiniteFlatQuotientTrivialization
 public import FLT.Mazur.FiniteFlatSubschemeQuotient
@@ -4450,6 +4457,8 @@ public import FLT.Mazur.FreeModuleResidueRetraction
 public import FLT.Mazur.FreeSheafPullbackRestriction
 public import FLT.Mazur.FreeSheafRestrictionCoherence
 public import FLT.Mazur.FreeSheafSectionCoordinates
+public import FLT.Mazur.FreeTargetVanishingIdeal
+public import FLT.Mazur.FreeTargetVanishingScheme
 public import FLT.Mazur.FullDivisorFlatFppfDescent
 public import FLT.Mazur.FullHilbertIntersectionSeparablePoints
 public import FLT.Mazur.GeneralizedCurveAmpleBaseChange
@@ -5177,6 +5186,7 @@ public import FLT.Mazur.IdealPowerReesSingle
 public import FLT.Mazur.IdealPowerScalarLift
 public import FLT.Mazur.IdealPowerVanishingTransfer
 public import FLT.Mazur.IdealPresentationQuotient
+public import FLT.Mazur.IdealPullbackVanishingCriterion
 public import FLT.Mazur.IdealQuotientExact
 public import FLT.Mazur.IdealQuotientSectionLift
 public import FLT.Mazur.IdealSheafAdicStalkSeparation
@@ -5985,6 +5995,7 @@ public import FLT.Mazur.PointedCubicCoefficientParameter
 public import FLT.Mazur.PointedCubicCyclicAuxiliaryCover
 public import FLT.Mazur.PointedCubicCyclicMarking
 public import FLT.Mazur.PointedCubicHomAuxiliaryParameter
+public import FLT.Mazur.PointedCubicHomMultiplicationVanishing
 public import FLT.Mazur.PointedCubicHomRetainedSubgroup
 public import FLT.Mazur.PointedCubicHomSourceGroup
 public import FLT.Mazur.PointedCubicIndependentParameter
@@ -6889,6 +6900,7 @@ public import FLT.Mazur.ProjectiveGenerationEventually
 public import FLT.Mazur.ProjectiveHomogeneousEvaluation
 public import FLT.Mazur.ProjectiveHomogeneousPoint
 public import FLT.Mazur.ProjectiveHomogeneousPointTransport
+public import FLT.Mazur.ProjectiveIdealVanishingScheme
 public import FLT.Mazur.ProjectiveLineActionAssociativity
 public import FLT.Mazur.ProjectiveLineActionEndpoints
 public import FLT.Mazur.ProjectiveLineActionPoints
@@ -6977,6 +6989,7 @@ public import FLT.Mazur.ProjectiveSpaceCoefficientMap
 public import FLT.Mazur.ProjectiveSpaceProper
 public import FLT.Mazur.ProjectiveSpaceReindex
 public import FLT.Mazur.ProjectiveSpaceUniverseReindex
+public import FLT.Mazur.ProjectiveTargetVanishingIdeal
 public import FLT.Mazur.ProjectiveTripleModuleLocalization
 public import FLT.Mazur.ProjectiveTwistAffineBaseChange
 public import FLT.Mazur.ProjectiveTwistCech
@@ -8023,6 +8036,8 @@ public import FLT.Mazur.SmoothCurvePicardDegree
 public import FLT.Mazur.SmoothCurvePureDimension
 public import FLT.Mazur.SmoothCurveSquareGeometricIntegral
 public import FLT.Mazur.SmoothCurveValuationStalk
+public import FLT.Mazur.SmoothCyclicDivisorEquations
+public import FLT.Mazur.SmoothCyclicDivisorSymmetry
 public import FLT.Mazur.SmoothDimension
 public import FLT.Mazur.SmoothDimensionBound
 public import FLT.Mazur.SmoothEtaleResidueLift
