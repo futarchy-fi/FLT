@@ -2745,6 +2745,7 @@ public import FLT.Mazur.AffineHilbertTensorMatchingRing
 public import FLT.Mazur.AffineHilbertTensorMixedComposition
 public import FLT.Mazur.AffineHilbertTensorPullback
 public import FLT.Mazur.AffineHilbertTensorRestrictions
+public import FLT.Mazur.AffineHilbertTensorScalars
 public import FLT.Mazur.AffineIdealContainment
 public import FLT.Mazur.AffineIdealCoordinates
 public import FLT.Mazur.AffineIdealPowerExtension
