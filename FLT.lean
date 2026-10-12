@@ -6905,6 +6905,7 @@ public import FLT.Mazur.ProjectiveIdealVanishingEquiv
 public import FLT.Mazur.ProjectiveIdealVanishingPushout
 public import FLT.Mazur.ProjectiveIdealVanishingRingPushout
 public import FLT.Mazur.ProjectiveIdealVanishingScheme
+public import FLT.Mazur.ProjectiveIdealVanishingZero
 public import FLT.Mazur.ProjectiveLineActionAssociativity
 public import FLT.Mazur.ProjectiveLineActionEndpoints
 public import FLT.Mazur.ProjectiveLineActionPoints
