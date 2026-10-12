@@ -8081,6 +8081,7 @@ public import FLT.Mazur.WeierstrassCoefficientSecant
 public import FLT.Mazur.WeierstrassCoefficientShearAtlas
 public import FLT.Mazur.WeierstrassCoefficientShearAtlasComparison
 public import FLT.Mazur.WeierstrassCoefficientShearAtlasStructure
+public import FLT.Mazur.WeierstrassCoefficientShearConicParameters
 public import FLT.Mazur.WeierstrassCoefficientShearCoverage
 public import FLT.Mazur.WeierstrassCoefficientShearGluing
 public import FLT.Mazur.WeierstrassCoefficientShearInitialFiber
