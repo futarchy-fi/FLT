@@ -4744,6 +4744,7 @@ public import FLT.Mazur.HilbertBoundedCoordinateRing
 public import FLT.Mazur.HilbertBoundedEvaluationBaseChange
 public import FLT.Mazur.HilbertBoundedMonomialBasis
 public import FLT.Mazur.HilbertBoundedMonomialCover
+public import FLT.Mazur.HilbertBoundedNormalizedCoordinates
 public import FLT.Mazur.HilbertBoundedPolynomialAtlas
 public import FLT.Mazur.HilbertBoundedPolynomialBaseChange
 public import FLT.Mazur.HilbertBoundedPolynomialTower
