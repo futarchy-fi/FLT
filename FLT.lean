@@ -4491,6 +4491,7 @@ public import FLT.Mazur.GrassmannianAmbientChartNaturality
 public import FLT.Mazur.GrassmannianAmbientChartPoints
 public import FLT.Mazur.GrassmannianAmbientChartRecovery
 public import FLT.Mazur.GrassmannianAmbientChartRepresentation
+public import FLT.Mazur.GrassmannianAmbientClassifyingInjective
 public import FLT.Mazur.GrassmannianAmbientClassifyingMap
 public import FLT.Mazur.GrassmannianAmbientClassifyingNaturality
 public import FLT.Mazur.GrassmannianAmbientCommonTest
