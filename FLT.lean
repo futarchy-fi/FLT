@@ -4563,6 +4563,7 @@ public import FLT.Mazur.GrassmannianOverlapAffineTransition
 public import FLT.Mazur.GrassmannianOverlapCoordinateRefinement
 public import FLT.Mazur.GrassmannianOverlapDirectRefinement
 public import FLT.Mazur.GrassmannianOverlapPolynomial
+public import FLT.Mazur.GrassmannianOverlapTestProjection
 public import FLT.Mazur.GrassmannianOverlapTestRefinement
 public import FLT.Mazur.GrassmannianOverlapTransitionEquiv
 public import FLT.Mazur.GrassmannianOverlapTransitionScheme
