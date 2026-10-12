@@ -6746,6 +6746,7 @@ public import FLT.Mazur.ProjectiveLineProductTorusExt
 public import FLT.Mazur.ProjectiveLineProductTorusRestriction
 public import FLT.Mazur.ProjectiveLineReflectionAction
 public import FLT.Mazur.ProjectiveLineRightCanonicalRatios
+public import FLT.Mazur.ProjectiveLineRightChartExt
 public import FLT.Mazur.ProjectiveLineScaledAffineOverlap
 public import FLT.Mazur.ProjectiveLineScaledReciprocalGluing
 public import FLT.Mazur.ProjectiveLineScaling
