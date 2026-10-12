@@ -2611,6 +2611,7 @@ public import FLT.Mazur.AffineAlgebraDescentSplitEqualizer
 public import FLT.Mazur.AffineAnnihilator
 public import FLT.Mazur.AffineAtlasSeparatedLimit
 public import FLT.Mazur.AffineBaseChangeCoefficients
+public import FLT.Mazur.AffineBasePullbackDetection
 public import FLT.Mazur.AffineBaseSectionAlgebra
 public import FLT.Mazur.AffineBaseSectionFunctor
 public import FLT.Mazur.AffineBasisDirectSum
