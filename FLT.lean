@@ -4600,6 +4600,11 @@ public import FLT.Mazur.GrassmannianPrincipalOverlapScheme
 public import FLT.Mazur.GrassmannianPrincipalRelationRecovery
 public import FLT.Mazur.GrassmannianPrincipalSeparation
 public import FLT.Mazur.GrassmannianQuotientBaseChange
+public import FLT.Mazur.GrassmannianQuotientImageCocycle
+public import FLT.Mazur.GrassmannianQuotientImageDescent
+public import FLT.Mazur.GrassmannianQuotientImageLocalFree
+public import FLT.Mazur.GrassmannianQuotientImageProjection
+public import FLT.Mazur.GrassmannianQuotientImageTransition
 public import FLT.Mazur.GrassmannianQuotientLocalBasis
 public import FLT.Mazur.GrassmannianQuotientRefinement
 public import FLT.Mazur.GrassmannianQuotientSheaf
@@ -4607,6 +4612,7 @@ public import FLT.Mazur.GrassmannianQuotientSheafTransition
 public import FLT.Mazur.GrassmannianScalarExtension
 public import FLT.Mazur.GrassmannianSchemeAmbientQuotient
 public import FLT.Mazur.GrassmannianSchemeChartPoint
+public import FLT.Mazur.GrassmannianSchemeImageQuotient
 public import FLT.Mazur.GrassmannianSchemeQuotientRefinement
 public import FLT.Mazur.GrassmannianSchemeQuotientTest
 public import FLT.Mazur.GrassmannianSelectedAmbientIndex
