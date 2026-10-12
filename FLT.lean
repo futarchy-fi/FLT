@@ -8374,6 +8374,7 @@ public import FLT.Mazur.VariableHilbertSplitQuotient
 public import FLT.Mazur.VariableHilbertSplitScheme
 public import FLT.Mazur.VariableHilbertSplitSheafQuotient
 public import FLT.Mazur.VariableHilbertWholeOrbitAffine
+public import FLT.Mazur.VariableHilbertWholeOrbitRefinement
 public import FLT.Mazur.VariableTranslatedHilbertChart
 public import FLT.Mazur.VariableTranslatedHilbertOverlap
 public import FLT.Mazur.VariableTranslatedHilbertRepresentation
