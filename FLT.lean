@@ -4598,6 +4598,7 @@ public import FLT.Mazur.GrassmannianQuotientSheaf
 public import FLT.Mazur.GrassmannianQuotientSheafTransition
 public import FLT.Mazur.GrassmannianScalarExtension
 public import FLT.Mazur.GrassmannianSchemeAmbientQuotient
+public import FLT.Mazur.GrassmannianSchemeQuotientRefinement
 public import FLT.Mazur.GrassmannianSchemeQuotientTest
 public import FLT.Mazur.GrassmannianSelectedAmbientIndex
 public import FLT.Mazur.GrassmannianSelectedColumnsLocalization
