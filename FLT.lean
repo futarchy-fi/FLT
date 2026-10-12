@@ -4510,6 +4510,7 @@ public import FLT.Mazur.GrassmannianSplitChartScheme
 public import FLT.Mazur.GrassmannianSplitQuotientChart
 public import FLT.Mazur.GrassmannianTransitionSpecialization
 public import FLT.Mazur.GrassmannianTripleOverlapCoordinates
+public import FLT.Mazur.GrassmannianTripleOverlapDeterminant
 public import FLT.Mazur.GrassmannianTripleOverlapRing
 public import FLT.Mazur.GrassmannianTripleOverlapScheme
 public import FLT.Mazur.GroupMarkingBaseChange
