@@ -4603,6 +4603,7 @@ public import FLT.Mazur.GrassmannianQuotientSheaf
 public import FLT.Mazur.GrassmannianQuotientSheafTransition
 public import FLT.Mazur.GrassmannianScalarExtension
 public import FLT.Mazur.GrassmannianSchemeAmbientQuotient
+public import FLT.Mazur.GrassmannianSchemeQuotientRefinement
 public import FLT.Mazur.GrassmannianSchemeQuotientTest
 public import FLT.Mazur.GrassmannianSelectedAmbientIndex
 public import FLT.Mazur.GrassmannianSelectedColumnsLocalization
@@ -4620,6 +4621,7 @@ public import FLT.Mazur.GrassmannianTripleOverlapRing
 public import FLT.Mazur.GrassmannianTripleOverlapScheme
 public import FLT.Mazur.GrassmannianWholeOverlapCocycle
 public import FLT.Mazur.GrassmannianWholeOverlapProjection
+public import FLT.Mazur.GrassmannianWholeOverlapRefinement
 public import FLT.Mazur.GrassmannianWholeOverlapTransition
 public import FLT.Mazur.GroupMarkingBaseChange
 public import FLT.Mazur.GroupMarkingBaseChangeInverse
@@ -5398,13 +5400,16 @@ public import FLT.Mazur.ModuleSheafDualPullbackUnit
 public import FLT.Mazur.ModuleSheafDualSheaf
 public import FLT.Mazur.ModuleSheafEmptySlice
 public import FLT.Mazur.ModuleSheafEvaluatedGluing
+public import FLT.Mazur.ModuleSheafGeometricOpenCocycle
 public import FLT.Mazur.ModuleSheafGluing
+public import FLT.Mazur.ModuleSheafGluingLift
 public import FLT.Mazur.ModuleSheafGluingMapRestriction
 public import FLT.Mazur.ModuleSheafGluingTransport
 public import FLT.Mazur.ModuleSheafGluingTransportMap
 public import FLT.Mazur.ModuleSheafGluingTransportProjection
 public import FLT.Mazur.ModuleSheafIdentityCocycle
 public import FLT.Mazur.ModuleSheafIdentityRecovery
+public import FLT.Mazur.ModuleSheafImageChartGluing
 public import FLT.Mazur.ModuleSheafImageIsoProjectionRecovery
 public import FLT.Mazur.ModuleSheafImageOpenSections
 public import FLT.Mazur.ModuleSheafInternalHom
@@ -5431,7 +5436,9 @@ public import FLT.Mazur.ModuleSheafOpenImmersionRefinementSections
 public import FLT.Mazur.ModuleSheafOpenImmersionSections
 public import FLT.Mazur.ModuleSheafOpenImmersionTopSections
 public import FLT.Mazur.ModuleSheafOpenIsoDetection
+public import FLT.Mazur.ModuleSheafOpenOverlapTransition
 public import FLT.Mazur.ModuleSheafOverlapCoordinateRefinement
+public import FLT.Mazur.ModuleSheafOverlapImageCoherence
 public import FLT.Mazur.ModuleSheafOverlapImageTransition
 public import FLT.Mazur.ModuleSheafOverlapProjectionRecovery
 public import FLT.Mazur.ModuleSheafProjectionNormalization
@@ -7656,6 +7663,7 @@ public import FLT.Mazur.SequentialFiniteProducts
 public import FLT.Mazur.SheafPullbackAmbientCoherence
 public import FLT.Mazur.SheafPullbackAmbientMatch
 public import FLT.Mazur.SheafPullbackAmbientNormalization
+public import FLT.Mazur.SheafPullbackAmbientRefinement
 public import FLT.Mazur.SheafPullbackAmbientSectionMatch
 public import FLT.Mazur.SheafPullbackCanonicalRecovery
 public import FLT.Mazur.SheafPullbackCoordinateRecovery
