@@ -8549,6 +8549,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearRetainedScaleOneConic
 public import FLT.Mazur.WeierstrassCoefficientShearRootChange
 public import FLT.Mazur.WeierstrassCoefficientShearRootInitialComponents
 public import FLT.Mazur.WeierstrassCoefficientShearRootInitialOverlap
+public import FLT.Mazur.WeierstrassCoefficientShearRootInitialRootChange
 public import FLT.Mazur.WeierstrassCoefficientShearRootTorusChange
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOne
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneAdjacentAction
