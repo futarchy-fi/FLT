@@ -3466,6 +3466,7 @@ public import FLT.Mazur.CohomologicallyFlatSections
 public import FLT.Mazur.CohomologyImageArtinRees
 public import FLT.Mazur.CohomologyImageReesModule
 public import FLT.Mazur.ComaximalIdealSequence
+public import FLT.Mazur.CommonAmbientGrassmannianAffineCover
 public import FLT.Mazur.CommonAmbientGrassmannianProduct
 public import FLT.Mazur.CommonAmbientOpenIso
 public import FLT.Mazur.CommonAmbientSourceGrassmannianImmersion
