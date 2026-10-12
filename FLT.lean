@@ -8062,6 +8062,7 @@ public import FLT.Mazur.WeierstrassCoefficientProductMorphism
 public import FLT.Mazur.WeierstrassCoefficientSecant
 public import FLT.Mazur.WeierstrassCoefficientShearAtlas
 public import FLT.Mazur.WeierstrassCoefficientShearAtlasComparison
+public import FLT.Mazur.WeierstrassCoefficientShearAtlasStructure
 public import FLT.Mazur.WeierstrassCoefficientShearCoverage
 public import FLT.Mazur.WeierstrassCoefficientShearOverlaps
 public import FLT.Mazur.WeierstrassCoefficientZero
