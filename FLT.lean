@@ -7772,6 +7772,7 @@ public import FLT.Mazur.VariableHilbertChartRelationOperations
 public import FLT.Mazur.VariableHilbertChartRelationPullback
 public import FLT.Mazur.VariableHilbertCommonAmbientEnvelope
 public import FLT.Mazur.VariableHilbertCommonAmbientSource
+public import FLT.Mazur.VariableHilbertCommonAmbientSquare
 public import FLT.Mazur.VariableHilbertEtaleRelation
 public import FLT.Mazur.VariableHilbertFiniteRelationFibers
 public import FLT.Mazur.VariableHilbertIntersectionBaseChange
