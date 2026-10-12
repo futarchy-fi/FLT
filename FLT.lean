@@ -3231,6 +3231,7 @@ public import FLT.Mazur.CartierAbelSquareComparison
 public import FLT.Mazur.CartierAbelTwistBaseChange
 public import FLT.Mazur.CartierAbelTwistedSections
 public import FLT.Mazur.CartierAffineFppfDescent
+public import FLT.Mazur.CartierBoundarySectionRingIdentity
 public import FLT.Mazur.CartierBoundarySectionRingNaturality
 public import FLT.Mazur.CartierChartFlat
 public import FLT.Mazur.CartierCharts
@@ -5587,6 +5588,7 @@ public import FLT.Mazur.PolygonBoundaryParameterAnnihilator
 public import FLT.Mazur.PolygonBoundaryParameterImage
 public import FLT.Mazur.PolygonBoundaryReductionSequence
 public import FLT.Mazur.PolygonBoundaryScalarExactness
+public import FLT.Mazur.PolygonBoundarySectionRotation
 public import FLT.Mazur.PolygonBoundarySeriesDegree
 public import FLT.Mazur.PolygonBoundaryStageVanishing
 public import FLT.Mazur.PolygonBoundaryTensorQuotient
@@ -5624,6 +5626,7 @@ public import FLT.Mazur.PolygonCompatibleParameterRegularity
 public import FLT.Mazur.PolygonCompatibleSectionAlgebra
 public import FLT.Mazur.PolygonCompatibleSectionReduction
 public import FLT.Mazur.PolygonCompatibleSectionRing
+public import FLT.Mazur.PolygonCompatibleSectionRotation
 public import FLT.Mazur.PolygonCompatibleSectionScalars
 public import FLT.Mazur.PolygonCompatibleVeronese
 public import FLT.Mazur.PolygonCompatibleZeroCoefficients
@@ -5785,6 +5788,7 @@ public import FLT.Mazur.PolygonCompletePointProjectiveIso
 public import FLT.Mazur.PolygonCompletePointSectionBaseChange
 public import FLT.Mazur.PolygonCompletePointWeierstrassEquation
 public import FLT.Mazur.PolygonCompletePrincipalClosedFiber
+public import FLT.Mazur.PolygonCompleteRotation
 public import FLT.Mazur.PolygonCompleteSmoothDimensionOpen
 public import FLT.Mazur.PolygonCompleteSmoothIrreducible
 public import FLT.Mazur.PolygonCompleteSmoothPointAffine
@@ -5876,6 +5880,9 @@ public import FLT.Mazur.PolygonInfinitesimalFieldFiber
 public import FLT.Mazur.PolygonInfinitesimalLineCoherence
 public import FLT.Mazur.PolygonInfinitesimalMarkedBaseChange
 public import FLT.Mazur.PolygonInfinitesimalMarkings
+public import FLT.Mazur.PolygonInfinitesimalRotation
+public import FLT.Mazur.PolygonInfinitesimalRotationBaseChange
+public import FLT.Mazur.PolygonInfinitesimalRotationDivisor
 public import FLT.Mazur.PolygonInfinitesimalSectionRings
 public import FLT.Mazur.PolygonInfinitesimalSeparated
 public import FLT.Mazur.PolygonInfinitesimalSpecialDivisor
@@ -5888,6 +5895,7 @@ public import FLT.Mazur.PolygonInfinitesimalStageLine
 public import FLT.Mazur.PolygonInfinitesimalStageProper
 public import FLT.Mazur.PolygonInfinitesimalStageReduction
 public import FLT.Mazur.PolygonInfinitesimalStageRestriction
+public import FLT.Mazur.PolygonInfinitesimalStageRotation
 public import FLT.Mazur.PolygonInfinitesimalStages
 public import FLT.Mazur.PolygonInfinitesimalSystem
 public import FLT.Mazur.PolygonLineHZero
@@ -5988,6 +5996,7 @@ public import FLT.Mazur.PolygonPuncturedCanonicalEquations
 public import FLT.Mazur.PolygonPureDimension
 public import FLT.Mazur.PolygonRefinedClosedCharts
 public import FLT.Mazur.PolygonRetainedStageMarkings
+public import FLT.Mazur.PolygonRotationScalars
 public import FLT.Mazur.PolygonScaledReciprocal
 public import FLT.Mazur.PolygonScalingNaturality
 public import FLT.Mazur.PolygonSectionRingFunctor
@@ -6106,6 +6115,8 @@ public import FLT.Mazur.PolygonVeroneseMultipleInclusion
 public import FLT.Mazur.PolygonVeroneseParameterIdeal
 public import FLT.Mazur.PolygonVeroneseProductLifting
 public import FLT.Mazur.PolygonVeroneseProperProj
+public import FLT.Mazur.PolygonVeroneseRotationEquiv
+public import FLT.Mazur.PolygonVeroneseSectionRotation
 public import FLT.Mazur.PolygonVeroneseStepTransport
 public import FLT.Mazur.PolygonVeroneseTensorReduction
 public import FLT.Mazur.PolygonVeroneseZeroRing
