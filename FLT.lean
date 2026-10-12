@@ -4487,6 +4487,7 @@ public import FLT.Mazur.GrassmannianAmbientBaseChange
 public import FLT.Mazur.GrassmannianAmbientBlocks
 public import FLT.Mazur.GrassmannianAmbientChartIndex
 public import FLT.Mazur.GrassmannianAmbientChartMap
+public import FLT.Mazur.GrassmannianAmbientChartNaturality
 public import FLT.Mazur.GrassmannianAmbientChartPoints
 public import FLT.Mazur.GrassmannianAmbientChartRepresentation
 public import FLT.Mazur.GrassmannianAmbientCoordinateMap
