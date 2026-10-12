@@ -7822,6 +7822,7 @@ public import FLT.Mazur.UniversalWeierstrassAuxiliaryTorsionSections
 public import FLT.Mazur.UniversalWeierstrassCyclicAuxiliary
 public import FLT.Mazur.UniversalWeierstrassCyclicLevel
 public import FLT.Mazur.UniversalWeierstrassCyclicNormalizationMap
+public import FLT.Mazur.UniversalWeierstrassCyclicNormalizationMapLabels
 public import FLT.Mazur.UniversalWeierstrassCyclicNormalizationPoint
 public import FLT.Mazur.UniversalWeierstrassCyclicNormalizedMarking
 public import FLT.Mazur.UniversalWeierstrassCyclicNormalizedSlice
