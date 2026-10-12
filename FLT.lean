@@ -7709,6 +7709,7 @@ public import FLT.Mazur.TensorOpenChartIntersection
 public import FLT.Mazur.TensorOpenChartNodeExclusion
 public import FLT.Mazur.TensorOpenChartOverlap
 public import FLT.Mazur.TensorOpenChartRange
+public import FLT.Mazur.TensorOpenChartReparametrization
 public import FLT.Mazur.TensorOpenChartTargetTransport
 public import FLT.Mazur.TensorOpenChartVanishingSeparation
 public import FLT.Mazur.TensorOpenExteriorIntersection
