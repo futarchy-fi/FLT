@@ -8287,6 +8287,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearTorusSmoothOrbit
 public import FLT.Mazur.WeierstrassCoefficientShearTransport
 public import FLT.Mazur.WeierstrassCoefficientShearUnitSlope
 public import FLT.Mazur.WeierstrassCoefficientZero
+public import FLT.Mazur.WeierstrassConicCoefficientTransport
 public import FLT.Mazur.WeierstrassConicZeroAffineParameter
 public import FLT.Mazur.WeierstrassConstantSections
 public import FLT.Mazur.WeierstrassCrossInputAdditionComparison
