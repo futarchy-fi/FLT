@@ -6023,6 +6023,7 @@ public import FLT.Mazur.PolygonPowerSeriesBase
 public import FLT.Mazur.PolygonPowerSeriesSystem
 public import FLT.Mazur.PolygonProductAtlas
 public import FLT.Mazur.PolygonProjectiveAuxiliaryMarking
+public import FLT.Mazur.PolygonProjectiveAuxiliaryParameter
 public import FLT.Mazur.PolygonProjectiveCyclicPoints
 public import FLT.Mazur.PolygonProjectiveExactTorsion
 public import FLT.Mazur.PolygonProjectiveFixedPointFree
