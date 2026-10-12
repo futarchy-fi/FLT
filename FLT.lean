@@ -7470,6 +7470,7 @@ public import FLT.Mazur.RelativeRelationGeneratorSubopens
 public import FLT.Mazur.RelativeRelationInvariantAffineComparison
 public import FLT.Mazur.RelativeRelationInvariantGlobalSections
 public import FLT.Mazur.RelativeRelationInvariantLocallyRinged
+public import FLT.Mazur.RelativeRelationInvariantMap
 public import FLT.Mazur.RelativeRelationInvariantSectionRings
 public import FLT.Mazur.RelativeRelationInvariantSections
 public import FLT.Mazur.RelativeRelationInvariantSheaf
