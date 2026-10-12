@@ -4604,6 +4604,7 @@ public import FLT.Mazur.GrassmannianPrincipalOverlapScheme
 public import FLT.Mazur.GrassmannianPrincipalRelationRecovery
 public import FLT.Mazur.GrassmannianPrincipalSeparation
 public import FLT.Mazur.GrassmannianQuotientAtlasClassifying
+public import FLT.Mazur.GrassmannianQuotientAtlasEquivalence
 public import FLT.Mazur.GrassmannianQuotientBaseChange
 public import FLT.Mazur.GrassmannianQuotientImageAmbientEpi
 public import FLT.Mazur.GrassmannianQuotientImageAmbientMap
