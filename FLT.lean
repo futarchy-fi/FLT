@@ -5195,6 +5195,7 @@ public import FLT.Mazur.IndependentCyclicAuxiliaryScheme
 public import FLT.Mazur.IndependentCyclicModuliPullback
 public import FLT.Mazur.IndependentCyclicNormalizationGroup
 public import FLT.Mazur.IndependentCyclicNormalizationParameter
+public import FLT.Mazur.IndependentCyclicNormalizedModuli
 public import FLT.Mazur.IndependentCyclicNormalizedSlice
 public import FLT.Mazur.IndependentCyclicSourceGroupPullback
 public import FLT.Mazur.IndependentCyclicSourceMarking
