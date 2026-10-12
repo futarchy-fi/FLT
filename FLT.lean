@@ -7735,6 +7735,7 @@ public import FLT.Mazur.SheafPullbackNormalizedRefinement
 public import FLT.Mazur.SheafPullbackObjectwiseRefinement
 public import FLT.Mazur.SheafPullbackPathComparison
 public import FLT.Mazur.SheafPullbackPathPentagon
+public import FLT.Mazur.SheafPullbackQuotientNormalization
 public import FLT.Mazur.SheafPullbackRefinementLaw
 public import FLT.Mazur.SheafPullbackRetractionSquare
 public import FLT.Mazur.SheafPullbackSectionReconstruction
