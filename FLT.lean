@@ -9263,6 +9263,7 @@ public import FLT.Mazur.WeierstrassSmoothCyclicParameterDensity
 public import FLT.Mazur.WeierstrassSmoothDividedIntegralOutput
 public import FLT.Mazur.WeierstrassSmoothDividedProductResidue
 public import FLT.Mazur.WeierstrassSmoothDividedProductSource
+public import FLT.Mazur.WeierstrassSmoothDividedResiduePoint
 public import FLT.Mazur.WeierstrassSmoothDividedSecantResidue
 public import FLT.Mazur.WeierstrassSmoothDividedSecantSource
 public import FLT.Mazur.WeierstrassSmoothDividedTerminalCharacter
