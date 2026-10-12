@@ -4562,6 +4562,7 @@ public import FLT.Mazur.GrassmannianChartPolynomialParameters
 public import FLT.Mazur.GrassmannianChartTransition
 public import FLT.Mazur.GrassmannianChartTransitionCocycle
 public import FLT.Mazur.GrassmannianChartTransitionInverse
+public import FLT.Mazur.GrassmannianClassifiedImageQuotient
 public import FLT.Mazur.GrassmannianCoordinateRefinementLaw
 public import FLT.Mazur.GrassmannianFramedQuotientAtlas
 public import FLT.Mazur.GrassmannianFramedSheafQuotient
