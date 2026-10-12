@@ -4480,6 +4480,11 @@ public import FLT.Mazur.GradedProjUnitChartMap
 public import FLT.Mazur.GradedProjUnitChartOpens
 public import FLT.Mazur.GradedProjZeroMapNaturality
 public import FLT.Mazur.GradedQuotientTensorComparison
+public import FLT.Mazur.GrassmannianChartPolynomialParameters
+public import FLT.Mazur.GrassmannianScalarExtension
+public import FLT.Mazur.GrassmannianSplitChartCoordinates
+public import FLT.Mazur.GrassmannianSplitChartScheme
+public import FLT.Mazur.GrassmannianSplitQuotientChart
 public import FLT.Mazur.GroupMarkingBaseChange
 public import FLT.Mazur.GroupMarkingBaseChangeInverse
 public import FLT.Mazur.GroupMarkingTransport
@@ -4543,9 +4548,11 @@ public import FLT.Mazur.HilbertBasisTupleAffineComparison
 public import FLT.Mazur.HilbertBasisTupleIntersection
 public import FLT.Mazur.HilbertBasisTupleSchemeComparison
 public import FLT.Mazur.HilbertBoundedAmbientAtlas
+public import FLT.Mazur.HilbertBoundedEvaluationBaseChange
 public import FLT.Mazur.HilbertBoundedMonomialBasis
 public import FLT.Mazur.HilbertBoundedMonomialCover
 public import FLT.Mazur.HilbertBoundedPolynomialAtlas
+public import FLT.Mazur.HilbertBoundedPolynomialBaseChange
 public import FLT.Mazur.HilbertChartAlgebra
 public import FLT.Mazur.HilbertChartAlgebraRealization
 public import FLT.Mazur.HilbertChartAlgebraSpecialization
@@ -4589,7 +4596,9 @@ public import FLT.Mazur.HilbertDivisorDegreePresentation
 public import FLT.Mazur.HilbertFaithfullyFlatTupleBasis
 public import FLT.Mazur.HilbertFamilyBoundedEvaluation
 public import FLT.Mazur.HilbertFamilyFiniteQuotient
+public import FLT.Mazur.HilbertFamilyGrassmannianNaturality
 public import FLT.Mazur.HilbertFamilyGrassmannianParameter
+public import FLT.Mazur.HilbertFamilyRelationBaseChange
 public import FLT.Mazur.HilbertFamilyTruncatedRelations
 public import FLT.Mazur.HilbertFiniteAmbientPresentation
 public import FLT.Mazur.HilbertIntrinsicBasisBaseChange
@@ -7561,6 +7570,7 @@ public import FLT.Mazur.SpecChartIdealPreimage
 public import FLT.Mazur.SpectrumFieldCohomologyCoordinates
 public import FLT.Mazur.SpectrumRingCohomologyCoordinates
 public import FLT.Mazur.SpectrumSmoothFiniteFlatCartier
+public import FLT.Mazur.SplitEvaluationBaseChange
 public import FLT.Mazur.SplitEvaluationTensorKernel
 public import FLT.Mazur.SplitLineAffineNeighborhood
 public import FLT.Mazur.SplitLineAffinePresentation
