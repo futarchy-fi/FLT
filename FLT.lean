@@ -8332,6 +8332,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearScaleOneGluedIntersections
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneGluedPunctures
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneOppositeAction
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneParameter
+public import FLT.Mazur.WeierstrassCoefficientShearSeparated
 public import FLT.Mazur.WeierstrassCoefficientShearSmoothOrbit
 public import FLT.Mazur.WeierstrassCoefficientShearSmoothUnique
 public import FLT.Mazur.WeierstrassCoefficientShearSpecialization
