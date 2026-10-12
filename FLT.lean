@@ -9710,6 +9710,7 @@ public import FLT.Mazur.WeierstrassRetainedCoefficientShearChart
 public import FLT.Mazur.WeierstrassRetainedRegularCenter
 public import FLT.Mazur.WeierstrassRootShearSlopeInput
 public import FLT.Mazur.WeierstrassRootShearSmoothParameter
+public import FLT.Mazur.WeierstrassRootShearUnitAddition
 public import FLT.Mazur.WeierstrassSameOutputIntersections
 public import FLT.Mazur.WeierstrassScaledChartComparison
 public import FLT.Mazur.WeierstrassSecantHorizontalGlobalAction
