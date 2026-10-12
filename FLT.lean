@@ -4221,6 +4221,7 @@ public import FLT.Mazur.FinitePrincipalChartIntegerDescent
 public import FLT.Mazur.FinitePrincipalIdealPatching
 public import FLT.Mazur.FinitePrincipalTargetRefinement
 public import FLT.Mazur.FiniteProductDirectSum
+public import FLT.Mazur.FiniteProjectivePrincipalDescent
 public import FLT.Mazur.FiniteProjectiveRankOneTrivialization
 public import FLT.Mazur.FiniteProjectiveSectionAmple
 public import FLT.Mazur.FiniteProjectiveTildeLocal
@@ -4484,6 +4485,7 @@ public import FLT.Mazur.GradedProjUnitChartMap
 public import FLT.Mazur.GradedProjUnitChartOpens
 public import FLT.Mazur.GradedProjZeroMapNaturality
 public import FLT.Mazur.GradedQuotientTensorComparison
+public import FLT.Mazur.GrassmannianAffinePointFunctor
 public import FLT.Mazur.GrassmannianAmbientBaseChange
 public import FLT.Mazur.GrassmannianAmbientBlocks
 public import FLT.Mazur.GrassmannianAmbientChartIndex
@@ -4529,12 +4531,18 @@ public import FLT.Mazur.GrassmannianLocalizedColumnBasis
 public import FLT.Mazur.GrassmannianLocalizedRelation
 public import FLT.Mazur.GrassmannianLocalizedTransition
 public import FLT.Mazur.GrassmannianLocalizedTransitionScheme
+public import FLT.Mazur.GrassmannianMorphismDenominators
+public import FLT.Mazur.GrassmannianMorphismEffectiveRelation
 public import FLT.Mazur.GrassmannianMorphismFiniteCover
+public import FLT.Mazur.GrassmannianMorphismFiniteProjective
 public import FLT.Mazur.GrassmannianMorphismLocalQuotient
 public import FLT.Mazur.GrassmannianMorphismPrincipalCover
+public import FLT.Mazur.GrassmannianMorphismQuotientLocalization
+public import FLT.Mazur.GrassmannianMorphismRecoveredPoint
 public import FLT.Mazur.GrassmannianMorphismRelation
 public import FLT.Mazur.GrassmannianMorphismTensorCompatibility
 public import FLT.Mazur.GrassmannianNormalizedBaseChange
+public import FLT.Mazur.GrassmannianNumeratorTransport
 public import FLT.Mazur.GrassmannianOriginalBaseChartCover
 public import FLT.Mazur.GrassmannianOverlapPolynomial
 public import FLT.Mazur.GrassmannianOverlapTransitionEquiv
@@ -4543,6 +4551,8 @@ public import FLT.Mazur.GrassmannianPrincipalOverlap
 public import FLT.Mazur.GrassmannianPrincipalOverlapScheme
 public import FLT.Mazur.GrassmannianPrincipalRelationRecovery
 public import FLT.Mazur.GrassmannianPrincipalSeparation
+public import FLT.Mazur.GrassmannianQuotientLocalBasis
+public import FLT.Mazur.GrassmannianQuotientSheaf
 public import FLT.Mazur.GrassmannianScalarExtension
 public import FLT.Mazur.GrassmannianSelectedAmbientIndex
 public import FLT.Mazur.GrassmannianSelectedColumnsLocalization
@@ -6555,6 +6565,7 @@ public import FLT.Mazur.PrincipalScalarCokernel
 public import FLT.Mazur.PrincipalSectionExtension
 public import FLT.Mazur.PrincipalSubmoduleCoordinates
 public import FLT.Mazur.PrincipalSubmoduleOverlap
+public import FLT.Mazur.PrincipalSubmodulePatching
 public import FLT.Mazur.PrincipalSubmoduleSectionLocalization
 public import FLT.Mazur.PrincipalTargetRestrictionIsomorphism
 public import FLT.Mazur.PrincipalTriangleCofinal
