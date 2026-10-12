@@ -3006,6 +3006,7 @@ public import FLT.Mazur.ArtinianProperStructureSheaf
 public import FLT.Mazur.ArtinianRelativeSectionCriterion
 public import FLT.Mazur.ArtinianSectionKernel
 public import FLT.Mazur.AuxiliaryCoprimeFieldMarking
+public import FLT.Mazur.AuxiliaryCoprimeFieldNaturality
 public import FLT.Mazur.AuxiliaryLevelFaithfulOpen
 public import FLT.Mazur.AuxiliaryLevelFaithfulRepresentation
 public import FLT.Mazur.AuxiliaryLevelFieldMarking
