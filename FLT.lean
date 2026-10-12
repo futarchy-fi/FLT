@@ -9823,6 +9823,7 @@ public import FLT.Mazur.WeierstrassRelativeSmoothOpen
 public import FLT.Mazur.WeierstrassResidueTangentEquationData
 public import FLT.Mazur.WeierstrassRetainedCoefficientShearChart
 public import FLT.Mazur.WeierstrassRetainedRegularCenter
+public import FLT.Mazur.WeierstrassRootShearParameterCoefficient
 public import FLT.Mazur.WeierstrassRootShearSlopeInput
 public import FLT.Mazur.WeierstrassRootShearSmoothParameter
 public import FLT.Mazur.WeierstrassRootShearTorusReflection
