@@ -4793,6 +4793,7 @@ public import FLT.Mazur.HilbertCommonAmbientOverlap
 public import FLT.Mazur.HilbertCommonOpenRestriction
 public import FLT.Mazur.HilbertComplementCoordinateRing
 public import FLT.Mazur.HilbertComplementPointCompatibility
+public import FLT.Mazur.HilbertComplementSchemeCompatibility
 public import FLT.Mazur.HilbertDivisorDegreePresentation
 public import FLT.Mazur.HilbertFaithfullyFlatTupleBasis
 public import FLT.Mazur.HilbertFamilyAmbientPointNaturality
