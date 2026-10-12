@@ -5371,6 +5371,7 @@ public import FLT.Mazur.NodeSmoothLocus
 public import FLT.Mazur.NodeTangentAlgebra
 public import FLT.Mazur.NodeTangentCechCocycle
 public import FLT.Mazur.NodeTangentCoefficientCover
+public import FLT.Mazur.NodeTangentCoefficientNaturality
 public import FLT.Mazur.NodeTangentDepth
 public import FLT.Mazur.NodeTangentExtension
 public import FLT.Mazur.NodeTangentFieldFixed
@@ -5384,6 +5385,10 @@ public import FLT.Mazur.NodeTangentOverlap
 public import FLT.Mazur.NodeTangentOverlapEquiv
 public import FLT.Mazur.NodeTangentOverlapLinear
 public import FLT.Mazur.NodeTangentOverlapScheme
+public import FLT.Mazur.NodeTangentProjectiveConjugation
+public import FLT.Mazur.NodeTangentProjectiveLineDescent
+public import FLT.Mazur.NodeTangentProjectiveMarkings
+public import FLT.Mazur.NodeTangentProjectiveReflection
 public import FLT.Mazur.NodeTangentShear
 public import FLT.Mazur.NodeTangentShearRealization
 public import FLT.Mazur.NodeTangentSlopeDescent
@@ -6524,6 +6529,7 @@ public import FLT.Mazur.ProjectiveLineEndpointReversal
 public import FLT.Mazur.ProjectiveLineEndpoints
 public import FLT.Mazur.ProjectiveLineFieldExtension
 public import FLT.Mazur.ProjectiveLineHomogeneousCoordinates
+public import FLT.Mazur.ProjectiveLineHomogeneousReversal
 public import FLT.Mazur.ProjectiveLineInfinityTorusAlgebra
 public import FLT.Mazur.ProjectiveLineInfinityTorusCover
 public import FLT.Mazur.ProjectiveLineInfinityTorusGluing
@@ -6567,6 +6573,7 @@ public import FLT.Mazur.ProjectiveLineStandardCharts
 public import FLT.Mazur.ProjectiveLineStandardComparison
 public import FLT.Mazur.ProjectiveLineStandardOverlap
 public import FLT.Mazur.ProjectiveLineTopology
+public import FLT.Mazur.ProjectiveLineTranslationLinear
 public import FLT.Mazur.ProjectiveLineTwistCoordinates
 public import FLT.Mazur.ProjectiveLineUniversalAction
 public import FLT.Mazur.ProjectiveLineUniversalLaurentEvaluation
@@ -8487,6 +8494,7 @@ public import FLT.Mazur.WeierstrassDividedResidueAtlasExtension
 public import FLT.Mazur.WeierstrassDividedResidueAtlasFinite
 public import FLT.Mazur.WeierstrassDividedResidueAtlasRefinement
 public import FLT.Mazur.WeierstrassDividedResidueMiddleIntersection
+public import FLT.Mazur.WeierstrassDividedResidueNormalization
 public import FLT.Mazur.WeierstrassDividedRetainedExteriorIntersection
 public import FLT.Mazur.WeierstrassDividedRetainedLineAt
 public import FLT.Mazur.WeierstrassDividedRetainedLineSeparation
