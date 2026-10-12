@@ -8235,6 +8235,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearInitialBoundaryParameter
 public import FLT.Mazur.WeierstrassCoefficientShearInitialFiber
 public import FLT.Mazur.WeierstrassCoefficientShearInitialSlopeBoundary
 public import FLT.Mazur.WeierstrassCoefficientShearInitialSlopeProjections
+public import FLT.Mazur.WeierstrassCoefficientShearInitialSmooth
 public import FLT.Mazur.WeierstrassCoefficientShearOverlaps
 public import FLT.Mazur.WeierstrassCoefficientShearResidueConic
 public import FLT.Mazur.WeierstrassCoefficientShearResidueExterior
