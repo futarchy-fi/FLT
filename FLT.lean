@@ -7072,6 +7072,7 @@ public import FLT.Mazur.RelativeGenusOnePointFrames
 public import FLT.Mazur.RelativeGenusOnePointGeometric
 public import FLT.Mazur.RelativeGenusOnePointLeading
 public import FLT.Mazur.RelativeGenusOnePointSections
+public import FLT.Mazur.RelativeGenusOnePointSplit
 public import FLT.Mazur.RelativeIdealAmbientHom
 public import FLT.Mazur.RelativeIdealAmbientIsoSquare
 public import FLT.Mazur.RelativeIdealAmbientPullback
@@ -7545,6 +7546,8 @@ public import FLT.Mazur.SectionConditionAcyclic
 public import FLT.Mazur.SectionConditionDimension
 public import FLT.Mazur.SectionCoverCoordinates
 public import FLT.Mazur.SectionCoverDiscrepancy
+public import FLT.Mazur.SectionDivisorLeadingSections
+public import FLT.Mazur.SectionDivisorQuotientLine
 public import FLT.Mazur.SectionDivisors
 public import FLT.Mazur.SectionGeneratorScalar
 public import FLT.Mazur.SectionGeneratorSpan
@@ -7614,6 +7617,10 @@ public import FLT.Mazur.SectionLinePointBaseChange
 public import FLT.Mazur.SectionLinePointOverlapEquality
 public import FLT.Mazur.SectionLinePullbackFraction
 public import FLT.Mazur.SectionPointPowerBaseChange
+public import FLT.Mazur.SectionPoleAdaptedBasis
+public import FLT.Mazur.SectionPoleLeadingRestriction
+public import FLT.Mazur.SectionPoleLineFrames
+public import FLT.Mazur.SectionPoleSplit
 public import FLT.Mazur.SectionPowerGluing
 public import FLT.Mazur.SectionProjectiveFiniteNeighborhood
 public import FLT.Mazur.SectionProjectiveImmersion
