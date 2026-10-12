@@ -4471,6 +4471,7 @@ public import FLT.Mazur.GeometricHilbertTranslation
 public import FLT.Mazur.GeometricOpenFactorization
 public import FLT.Mazur.GeometricPicardSheafRepresentative
 public import FLT.Mazur.GeometricPointCoverCriterion
+public import FLT.Mazur.GeometricPullbackPointwiseEquality
 public import FLT.Mazur.GeometricSectionQuasiFinite
 public import FLT.Mazur.GeometricSectionUnits
 public import FLT.Mazur.GeometricallyConnectedDescent
