@@ -2730,6 +2730,7 @@ public import FLT.Mazur.AffineGeometricTensorDatum
 public import FLT.Mazur.AffineHilbertChartRelation
 public import FLT.Mazur.AffineHilbertComposableEnvelope
 public import FLT.Mazur.AffineHilbertCompositionCharts
+public import FLT.Mazur.AffineHilbertFullRelationRestriction
 public import FLT.Mazur.AffineHilbertLocalTensorInvariants
 public import FLT.Mazur.AffineHilbertLocalizedCoefficients
 public import FLT.Mazur.AffineHilbertLocalizedComposition
@@ -2739,6 +2740,8 @@ public import FLT.Mazur.AffineHilbertPrincipalTensorModel
 public import FLT.Mazur.AffineHilbertRelationNeighborhoods
 public import FLT.Mazur.AffineHilbertRelationOperations
 public import FLT.Mazur.AffineHilbertRelationTensorCharts
+public import FLT.Mazur.AffineHilbertRestrictedOrbits
+public import FLT.Mazur.AffineHilbertRestrictedQuotient
 public import FLT.Mazur.AffineHilbertSymmetricNeighborhoods
 public import FLT.Mazur.AffineHilbertTensorAtlas
 public import FLT.Mazur.AffineHilbertTensorGluing
@@ -7351,6 +7354,7 @@ public import FLT.Mazur.RelativeRelationInvariantLocallyRinged
 public import FLT.Mazur.RelativeRelationInvariantSectionRings
 public import FLT.Mazur.RelativeRelationInvariantSections
 public import FLT.Mazur.RelativeRelationInvariantSheaf
+public import FLT.Mazur.RelativeRelationOpenSaturation
 public import FLT.Mazur.RelativeRelationOrbit
 public import FLT.Mazur.RelativeRelationOrbitCoequalizer
 public import FLT.Mazur.RelativeRelationOrbitOpens
@@ -7360,6 +7364,9 @@ public import FLT.Mazur.RelativeRelationQuotientSheaf
 public import FLT.Mazur.RelativeRelationRingedCoequalizer
 public import FLT.Mazur.RelativeRelationRingedCofork
 public import FLT.Mazur.RelativeRelationRingedDescent
+public import FLT.Mazur.RelativeRelationSaturatedSections
+public import FLT.Mazur.RelativeRelationSaturationCover
+public import FLT.Mazur.RelativeRelationSaturationSpan
 public import FLT.Mazur.RelativeRelationSplitQuotient
 public import FLT.Mazur.RelativeSectionAmpleBaseChange
 public import FLT.Mazur.RelativeSectionAmpleLocality
@@ -8362,10 +8369,12 @@ public import FLT.Mazur.VariableHilbertFiniteRelationFibers
 public import FLT.Mazur.VariableHilbertIntersectionBaseChange
 public import FLT.Mazur.VariableHilbertInvariantFunctionDescent
 public import FLT.Mazur.VariableHilbertInvariantOpenDescent
+public import FLT.Mazur.VariableHilbertOrbitCompactBasis
 public import FLT.Mazur.VariableHilbertParameterOrbitDescent
 public import FLT.Mazur.VariableHilbertRelationBridge
 public import FLT.Mazur.VariableHilbertRelationBridgeIso
 public import FLT.Mazur.VariableHilbertRelationCover
+public import FLT.Mazur.VariableHilbertSaturatedRefinement
 public import FLT.Mazur.VariableHilbertSourceIntersection
 public import FLT.Mazur.VariableHilbertSplitChange
 public import FLT.Mazur.VariableHilbertSplitFunctions
