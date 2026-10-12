@@ -5193,6 +5193,7 @@ public import FLT.Mazur.IncreasingCechZeroRestriction
 public import FLT.Mazur.IncreasingCechZeroSections
 public import FLT.Mazur.IndependentCyclicAuxiliaryScheme
 public import FLT.Mazur.IndependentCyclicModuliPullback
+public import FLT.Mazur.IndependentCyclicNormalizationParameter
 public import FLT.Mazur.IndependentCyclicSourceGroupPullback
 public import FLT.Mazur.IndependentCyclicSourceMarking
 public import FLT.Mazur.IndependentCyclicSourceModuli
