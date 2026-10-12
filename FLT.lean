@@ -8205,6 +8205,8 @@ public import FLT.Mazur.WeierstrassCoefficientMonoidalComparison
 public import FLT.Mazur.WeierstrassCoefficientNegation
 public import FLT.Mazur.WeierstrassCoefficientProductMorphism
 public import FLT.Mazur.WeierstrassCoefficientSecant
+public import FLT.Mazur.WeierstrassCoefficientShearAction
+public import FLT.Mazur.WeierstrassCoefficientShearActionDomain
 public import FLT.Mazur.WeierstrassCoefficientShearAdjacentChartMap
 public import FLT.Mazur.WeierstrassCoefficientShearAdjacentFactor
 public import FLT.Mazur.WeierstrassCoefficientShearAdjacentGluedBoundary
@@ -8221,6 +8223,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearConicParameters
 public import FLT.Mazur.WeierstrassCoefficientShearCoverage
 public import FLT.Mazur.WeierstrassCoefficientShearFiniteLineContraction
 public import FLT.Mazur.WeierstrassCoefficientShearGluing
+public import FLT.Mazur.WeierstrassCoefficientShearInitialBoundaryParameter
 public import FLT.Mazur.WeierstrassCoefficientShearInitialFiber
 public import FLT.Mazur.WeierstrassCoefficientShearInitialSlopeBoundary
 public import FLT.Mazur.WeierstrassCoefficientShearInitialSlopeProjections
@@ -8236,10 +8239,12 @@ public import FLT.Mazur.WeierstrassCoefficientShearScaleOneAdjacentIntersection
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneAdjacentTransition
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneGluedConic
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneGluedIntersections
+public import FLT.Mazur.WeierstrassCoefficientShearScaleOneParameter
 public import FLT.Mazur.WeierstrassCoefficientShearSpecialization
 public import FLT.Mazur.WeierstrassCoefficientShearSpecializationMono
 public import FLT.Mazur.WeierstrassCoefficientShearTangentConjugation
 public import FLT.Mazur.WeierstrassCoefficientShearTangentTransport
+public import FLT.Mazur.WeierstrassCoefficientShearTorusDomain
 public import FLT.Mazur.WeierstrassCoefficientShearTransport
 public import FLT.Mazur.WeierstrassCoefficientZero
 public import FLT.Mazur.WeierstrassConicZeroAffineParameter
@@ -9699,6 +9704,7 @@ public import FLT.Mazur.WeierstrassRelativeSmoothOpen
 public import FLT.Mazur.WeierstrassResidueTangentEquationData
 public import FLT.Mazur.WeierstrassRetainedCoefficientShearChart
 public import FLT.Mazur.WeierstrassRetainedRegularCenter
+public import FLT.Mazur.WeierstrassRootShearSmoothParameter
 public import FLT.Mazur.WeierstrassSameOutputIntersections
 public import FLT.Mazur.WeierstrassScaledChartComparison
 public import FLT.Mazur.WeierstrassSecantHorizontalGlobalAction
@@ -9895,6 +9901,7 @@ public import FLT.Mazur.WeierstrassSplitNodalTangentLaurent
 public import FLT.Mazur.WeierstrassSplitNodalTangentLift
 public import FLT.Mazur.WeierstrassSplitNodalTangentSlope
 public import FLT.Mazur.WeierstrassSplitNodalTorus
+public import FLT.Mazur.WeierstrassSplitNodalUnitAddition
 public import FLT.Mazur.WeierstrassSplitNodalUnitPoints
 public import FLT.Mazur.WeierstrassSquareZeroTorsionRigidity
 public import FLT.Mazur.WeierstrassSuccessiveCenterAction
@@ -10141,6 +10148,7 @@ public import FLT.Mazur.WeierstrassVariableChangeProperCoefficient
 public import FLT.Mazur.WeierstrassVariableChangeScaledCoefficients
 public import FLT.Mazur.WeierstrassVariableChangeSecant
 public import FLT.Mazur.WeierstrassVariableChangeSecantAddition
+public import FLT.Mazur.WeierstrassVariableChangeSmoothIso
 public import FLT.Mazur.WeierstrassVariableChangeZero
 public import FLT.Mazur.WeierstrassVerticalAdditionCharts
 public import FLT.Mazur.WeierstrassVerticalChartCompatibility
