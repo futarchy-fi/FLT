@@ -4792,6 +4792,7 @@ public import FLT.Mazur.HilbertFamilyFiniteQuotient
 public import FLT.Mazur.HilbertFamilyGrassmannianNaturality
 public import FLT.Mazur.HilbertFamilyGrassmannianParameter
 public import FLT.Mazur.HilbertFamilyGrassmannianSchemeMap
+public import FLT.Mazur.HilbertFamilyGrassmannianSchemeNaturality
 public import FLT.Mazur.HilbertFamilyRelationBaseChange
 public import FLT.Mazur.HilbertFamilyTruncatedRelations
 public import FLT.Mazur.HilbertFiniteAmbientPresentation
