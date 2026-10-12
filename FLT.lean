@@ -2495,9 +2495,12 @@ public import FLT.Mazur.AcyclicDirectImageResolution
 public import FLT.Mazur.AcyclicDivisorDegreeOpen
 public import FLT.Mazur.AcyclicDivisorDegreePresheaf
 public import FLT.Mazur.AcyclicDivisorFixedBaseChange
+public import FLT.Mazur.AcyclicDivisorFixedBaseClass
 public import FLT.Mazur.AcyclicHilbertDivisorRepresentation
 public import FLT.Mazur.AcyclicHilbertFixedBaseChange
 public import FLT.Mazur.AcyclicHilbertFixedBaseIdeal
+public import FLT.Mazur.AcyclicHilbertFixedBasePicard
+public import FLT.Mazur.AcyclicHilbertFixedBaseProjection
 public import FLT.Mazur.AcyclicHilbertPicardTestOverlap
 public import FLT.Mazur.AcyclicLineSectionBaseChange
 public import FLT.Mazur.AcyclicPointedAbelBaseChange
@@ -5979,6 +5982,7 @@ public import FLT.Mazur.OrderedHilbertEtaleStalkLift
 public import FLT.Mazur.OrderedHilbertEtaleTestCover
 public import FLT.Mazur.OrderedHilbertEtaleTestPoints
 public import FLT.Mazur.OrderedHilbertFaithfulBaseComparison
+public import FLT.Mazur.OrderedHilbertFaithfulChartComparison
 public import FLT.Mazur.OrderedHilbertFaithfulClass
 public import FLT.Mazur.OrderedHilbertFaithfulOrbitCover
 public import FLT.Mazur.OrderedHilbertFaithfulParameter
@@ -8499,6 +8503,9 @@ public import FLT.Mazur.VariableHilbertCommonAmbientSource
 public import FLT.Mazur.VariableHilbertCommonAmbientSquare
 public import FLT.Mazur.VariableHilbertEtaleRelation
 public import FLT.Mazur.VariableHilbertFiniteRelationFibers
+public import FLT.Mazur.VariableHilbertFixedBasePicard
+public import FLT.Mazur.VariableHilbertFixedBaseProjection
+public import FLT.Mazur.VariableHilbertFixedBaseRelation
 public import FLT.Mazur.VariableHilbertIntersectionBaseChange
 public import FLT.Mazur.VariableHilbertInvariantFunctionDescent
 public import FLT.Mazur.VariableHilbertInvariantOpenDescent
