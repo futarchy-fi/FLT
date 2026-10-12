@@ -7634,6 +7634,7 @@ public import FLT.Mazur.SectionPoleAdaptedBasis
 public import FLT.Mazur.SectionPoleBaseChangeFrames
 public import FLT.Mazur.SectionPoleLeadingRestriction
 public import FLT.Mazur.SectionPoleLineFrames
+public import FLT.Mazur.SectionPoleMultiplicativeCoordinates
 public import FLT.Mazur.SectionPoleSplit
 public import FLT.Mazur.SectionPowerGluing
 public import FLT.Mazur.SectionProjectiveFiniteNeighborhood
