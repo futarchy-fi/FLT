@@ -8567,6 +8567,7 @@ public import FLT.Mazur.WeierstrassDividedRetentionSuccessor
 public import FLT.Mazur.WeierstrassDividedShearContraction
 public import FLT.Mazur.WeierstrassDividedShearData
 public import FLT.Mazur.WeierstrassDividedShearExterior
+public import FLT.Mazur.WeierstrassDividedShearFiniteAffine
 public import FLT.Mazur.WeierstrassDividedShearFiniteIteration
 public import FLT.Mazur.WeierstrassDividedShearFiniteModification
 public import FLT.Mazur.WeierstrassDividedShearGluing
