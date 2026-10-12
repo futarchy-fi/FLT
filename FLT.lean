@@ -10058,6 +10058,7 @@ public import FLT.Mazur.WeierstrassSuccessiveShearComponents
 public import FLT.Mazur.WeierstrassSuccessiveShearConicBoundary
 public import FLT.Mazur.WeierstrassSuccessiveShearLineBoundary
 public import FLT.Mazur.WeierstrassSuccessiveShearLineOpen
+public import FLT.Mazur.WeierstrassSuccessiveShearLineRootChange
 public import FLT.Mazur.WeierstrassSuccessiveShearNormalForm
 public import FLT.Mazur.WeierstrassSuccessiveShearScaleOne
 public import FLT.Mazur.WeierstrassSuccessiveShearScaleOneBoundaryCoordinates
