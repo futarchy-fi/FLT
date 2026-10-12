@@ -2499,6 +2499,7 @@ public import FLT.Mazur.AcyclicDivisorFixedBaseClass
 public import FLT.Mazur.AcyclicHilbertDivisorRepresentation
 public import FLT.Mazur.AcyclicHilbertFixedBaseChange
 public import FLT.Mazur.AcyclicHilbertFixedBaseIdeal
+public import FLT.Mazur.AcyclicHilbertFixedBasePicard
 public import FLT.Mazur.AcyclicHilbertPicardTestOverlap
 public import FLT.Mazur.AcyclicLineSectionBaseChange
 public import FLT.Mazur.AcyclicPointedAbelBaseChange
