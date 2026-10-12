@@ -8668,6 +8668,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearReciprocalUnrestrictedAction
 public import FLT.Mazur.WeierstrassCoefficientShearResidueAdjacent
 public import FLT.Mazur.WeierstrassCoefficientShearResidueBranches
 public import FLT.Mazur.WeierstrassCoefficientShearResidueConic
+public import FLT.Mazur.WeierstrassCoefficientShearResidueCycleCoproduct
 public import FLT.Mazur.WeierstrassCoefficientShearResidueEquality
 public import FLT.Mazur.WeierstrassCoefficientShearResidueExterior
 public import FLT.Mazur.WeierstrassCoefficientShearResidueExteriorLift
