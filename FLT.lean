@@ -3993,6 +3993,7 @@ public import FLT.Mazur.EnlargedPresentationModel
 public import FLT.Mazur.EquifiberedGluingBaseChange
 public import FLT.Mazur.EquifiberedSchemeGluing
 public import FLT.Mazur.EtaleAlgebraReduced
+public import FLT.Mazur.EtaleCartierGeneratorGeometric
 public import FLT.Mazur.EtaleCoordinate
 public import FLT.Mazur.EtaleCoordinateSlice
 public import FLT.Mazur.EtaleCurveLocalDomain
