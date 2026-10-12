@@ -7255,6 +7255,7 @@ public import FLT.Mazur.SchemeCanonicalOverlapNaturality
 public import FLT.Mazur.SchemeCanonicalOverlapRefinement
 public import FLT.Mazur.SchemeCanonicalRecoveryCompatibility
 public import FLT.Mazur.SchemeChartBaseScalars
+public import FLT.Mazur.SchemeChartOverlapComparison
 public import FLT.Mazur.SchemeClosedBaseChange
 public import FLT.Mazur.SchemeCohomologyIso
 public import FLT.Mazur.SchemeCohomologyIsoCocycles
@@ -8087,6 +8088,16 @@ public import FLT.Mazur.WeierstrassCoefficientMonoidalComparison
 public import FLT.Mazur.WeierstrassCoefficientNegation
 public import FLT.Mazur.WeierstrassCoefficientProductMorphism
 public import FLT.Mazur.WeierstrassCoefficientSecant
+public import FLT.Mazur.WeierstrassCoefficientShearAtlas
+public import FLT.Mazur.WeierstrassCoefficientShearAtlasComparison
+public import FLT.Mazur.WeierstrassCoefficientShearAtlasStructure
+public import FLT.Mazur.WeierstrassCoefficientShearCoverage
+public import FLT.Mazur.WeierstrassCoefficientShearGluing
+public import FLT.Mazur.WeierstrassCoefficientShearOverlaps
+public import FLT.Mazur.WeierstrassCoefficientShearResidueExterior
+public import FLT.Mazur.WeierstrassCoefficientShearTangentConjugation
+public import FLT.Mazur.WeierstrassCoefficientShearTangentTransport
+public import FLT.Mazur.WeierstrassCoefficientShearTransport
 public import FLT.Mazur.WeierstrassCoefficientZero
 public import FLT.Mazur.WeierstrassConicZeroAffineParameter
 public import FLT.Mazur.WeierstrassConstantSections
@@ -9524,6 +9535,7 @@ public import FLT.Mazur.WeierstrassReciprocalZeroPointComparison
 public import FLT.Mazur.WeierstrassRegularChartSectionDescent
 public import FLT.Mazur.WeierstrassRegularInputDescent
 public import FLT.Mazur.WeierstrassRelativeSmoothOpen
+public import FLT.Mazur.WeierstrassRetainedCoefficientShearChart
 public import FLT.Mazur.WeierstrassRetainedRegularCenter
 public import FLT.Mazur.WeierstrassSameOutputIntersections
 public import FLT.Mazur.WeierstrassScaledChartComparison
