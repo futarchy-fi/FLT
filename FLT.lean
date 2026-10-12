@@ -7117,6 +7117,7 @@ public import FLT.Mazur.RelativeGenusOneHigherMonomials
 public import FLT.Mazur.RelativeGenusOneHomogeneousEquation
 public import FLT.Mazur.RelativeGenusOneInitialPoleStep
 public import FLT.Mazur.RelativeGenusOneLowPoleBasis
+public import FLT.Mazur.RelativeGenusOneMarkedCoordinates
 public import FLT.Mazur.RelativeGenusOneMonomialBasis
 public import FLT.Mazur.RelativeGenusOneMonomialIndependence
 public import FLT.Mazur.RelativeGenusOneNonsingular
