@@ -4623,6 +4623,7 @@ public import FLT.Mazur.GrassmannianTripleOverlapOriginalPullback
 public import FLT.Mazur.GrassmannianTripleOverlapRestriction
 public import FLT.Mazur.GrassmannianTripleOverlapRing
 public import FLT.Mazur.GrassmannianTripleOverlapScheme
+public import FLT.Mazur.GrassmannianTypedOpenChartComparisons
 public import FLT.Mazur.GrassmannianWholeOverlapCocycle
 public import FLT.Mazur.GrassmannianWholeOverlapProjection
 public import FLT.Mazur.GrassmannianWholeOverlapRefinement
@@ -5405,10 +5406,14 @@ public import FLT.Mazur.ModuleSheafDualSheaf
 public import FLT.Mazur.ModuleSheafEmptySlice
 public import FLT.Mazur.ModuleSheafEvaluatedGluing
 public import FLT.Mazur.ModuleSheafGeometricOpenCocycle
+public import FLT.Mazur.ModuleSheafGeometricOpenGluing
+public import FLT.Mazur.ModuleSheafGeometricOpenProjection
+public import FLT.Mazur.ModuleSheafGeometricTransitionWitness
 public import FLT.Mazur.ModuleSheafGluing
 public import FLT.Mazur.ModuleSheafGluingLift
 public import FLT.Mazur.ModuleSheafGluingMapRestriction
 public import FLT.Mazur.ModuleSheafGluingTransport
+public import FLT.Mazur.ModuleSheafGluingTransportLift
 public import FLT.Mazur.ModuleSheafGluingTransportMap
 public import FLT.Mazur.ModuleSheafGluingTransportProjection
 public import FLT.Mazur.ModuleSheafIdentityCocycle
