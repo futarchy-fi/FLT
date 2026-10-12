@@ -4481,6 +4481,7 @@ public import FLT.Mazur.GradedProjUnitChartOpens
 public import FLT.Mazur.GradedProjZeroMapNaturality
 public import FLT.Mazur.GradedQuotientTensorComparison
 public import FLT.Mazur.GrassmannianAmbientBaseChange
+public import FLT.Mazur.GrassmannianAmbientBlocks
 public import FLT.Mazur.GrassmannianBlockTransition
 public import FLT.Mazur.GrassmannianChartChangeDeterminant
 public import FLT.Mazur.GrassmannianChartPolynomialParameters
