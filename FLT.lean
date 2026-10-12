@@ -3476,6 +3476,7 @@ public import FLT.Mazur.CommonAmbientAffineRelationEtale
 public import FLT.Mazur.CommonAmbientAffineRelationImage
 public import FLT.Mazur.CommonAmbientAffineRelationKernel
 public import FLT.Mazur.CommonAmbientAmpleFiniteNeighborhood
+public import FLT.Mazur.CommonAmbientDeterminantTarget
 public import FLT.Mazur.CommonAmbientGrassmannianAffineCover
 public import FLT.Mazur.CommonAmbientGrassmannianProduct
 public import FLT.Mazur.CommonAmbientOpenIso
