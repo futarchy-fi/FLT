@@ -48,10 +48,10 @@ variable (J : Ideal (MvPolynomial I S)) (d : ℕ)
     (MvPolynomial I p.asIdeal.ResidueField ⧸
       J.map (MvPolynomial.map (algebraMap S p.asIdeal.ResidueField))) = d)
 
-local instance : Module.FinitePresentation T
+local instance hilbertAmbientExtendedFinitePresentation : Module.FinitePresentation T
     (MvPolynomial I T ⧸ J.map (MvPolynomial.map (algebraMap S T))) :=
   polynomialQuotient_finitePresentation_baseChange I S J T
-local instance : Module.Flat T
+local instance hilbertAmbientExtendedFlat : Module.Flat T
     (MvPolynomial I T ⧸ J.map (MvPolynomial.map (algebraMap S T))) :=
   polynomialQuotient_flat_baseChange I S J T
 
