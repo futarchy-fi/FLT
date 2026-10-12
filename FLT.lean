@@ -9488,6 +9488,7 @@ public import FLT.Mazur.WeierstrassNodalResidueTangentDepth
 public import FLT.Mazur.WeierstrassNodalResidueTransition
 public import FLT.Mazur.WeierstrassNodalRetainedComponents
 public import FLT.Mazur.WeierstrassNodalZeroInitialChart
+public import FLT.Mazur.WeierstrassNodalZeroRetainedChart
 public import FLT.Mazur.WeierstrassNonoppositeOrdinaryLift
 public import FLT.Mazur.WeierstrassNonzeroPointAffine
 public import FLT.Mazur.WeierstrassNormalFormPoles
