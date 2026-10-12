@@ -5455,6 +5455,7 @@ public import FLT.Mazur.ModuleSheafImageOpenSections
 public import FLT.Mazur.ModuleSheafInternalHom
 public import FLT.Mazur.ModuleSheafLocalEquation
 public import FLT.Mazur.ModuleSheafLocalEvaluation
+public import FLT.Mazur.ModuleSheafLocalFrames
 public import FLT.Mazur.ModuleSheafLocalHomComparison
 public import FLT.Mazur.ModuleSheafLocalHomComposition
 public import FLT.Mazur.ModuleSheafLocalHomNormalization
