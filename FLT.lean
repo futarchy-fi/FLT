@@ -3266,6 +3266,10 @@ public import FLT.Mazur.CartierDivisorMultiplicity
 public import FLT.Mazur.CartierFiberNeighborhood
 public import FLT.Mazur.CartierFlatNeighborhoodDescent
 public import FLT.Mazur.CartierFppfDescent
+public import FLT.Mazur.CartierGeneratorCyclicMap
+public import FLT.Mazur.CartierGeneratorMarkedSubgroup
+public import FLT.Mazur.CartierGeneratorOrbitCover
+public import FLT.Mazur.CartierGeneratorSplitPresentation
 public import FLT.Mazur.CartierIdealCoproduct
 public import FLT.Mazur.CartierIdealDescentDatum
 public import FLT.Mazur.CartierIdealFinitePresentation
@@ -3990,10 +3994,15 @@ public import FLT.Mazur.EnlargedPresentationModel
 public import FLT.Mazur.EquifiberedGluingBaseChange
 public import FLT.Mazur.EquifiberedSchemeGluing
 public import FLT.Mazur.EtaleAlgebraReduced
+public import FLT.Mazur.EtaleAmpleCyclicLocalMarking
+public import FLT.Mazur.EtaleCartierGeneratorDistinct
+public import FLT.Mazur.EtaleCartierGeneratorGeometric
 public import FLT.Mazur.EtaleCoordinate
 public import FLT.Mazur.EtaleCoordinateSlice
 public import FLT.Mazur.EtaleCurveLocalDomain
 public import FLT.Mazur.EtaleCurveValuation
+public import FLT.Mazur.EtaleCyclicPresentationPullback
+public import FLT.Mazur.EtaleCyclicSubgroupLocalPresentation
 public import FLT.Mazur.EtaleDimGe
 public import FLT.Mazur.EtaleDimLe
 public import FLT.Mazur.EtaleFiniteQuotientBranch
