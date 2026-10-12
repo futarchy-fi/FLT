@@ -4585,6 +4585,7 @@ public import FLT.Mazur.HilbertDivisorDegreePresentation
 public import FLT.Mazur.HilbertFaithfullyFlatTupleBasis
 public import FLT.Mazur.HilbertFamilyBoundedEvaluation
 public import FLT.Mazur.HilbertFamilyFiniteQuotient
+public import FLT.Mazur.HilbertFamilyGrassmannianNaturality
 public import FLT.Mazur.HilbertFamilyGrassmannianParameter
 public import FLT.Mazur.HilbertFamilyRelationBaseChange
 public import FLT.Mazur.HilbertFamilyTruncatedRelations
