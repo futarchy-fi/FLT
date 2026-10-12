@@ -9878,6 +9878,7 @@ public import FLT.Mazur.WeierstrassSplitNodalTangentLaurent
 public import FLT.Mazur.WeierstrassSplitNodalTangentLift
 public import FLT.Mazur.WeierstrassSplitNodalTangentSlope
 public import FLT.Mazur.WeierstrassSplitNodalTorus
+public import FLT.Mazur.WeierstrassSplitNodalUnitAddition
 public import FLT.Mazur.WeierstrassSplitNodalUnitPoints
 public import FLT.Mazur.WeierstrassSquareZeroTorsionRigidity
 public import FLT.Mazur.WeierstrassSuccessiveCenterAction
