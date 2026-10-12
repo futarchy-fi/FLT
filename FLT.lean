@@ -4484,6 +4484,7 @@ public import FLT.Mazur.GradedProjZeroMapNaturality
 public import FLT.Mazur.GradedQuotientTensorComparison
 public import FLT.Mazur.GrassmannianAmbientBaseChange
 public import FLT.Mazur.GrassmannianAmbientBlocks
+public import FLT.Mazur.GrassmannianAmbientChartIndex
 public import FLT.Mazur.GrassmannianAmbientTransition
 public import FLT.Mazur.GrassmannianAmbientTransitionCocycle
 public import FLT.Mazur.GrassmannianAmbientTransitionNaturality
