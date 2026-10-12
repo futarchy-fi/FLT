@@ -8365,6 +8365,7 @@ public import FLT.Mazur.VariableHilbertFiniteRelationFibers
 public import FLT.Mazur.VariableHilbertIntersectionBaseChange
 public import FLT.Mazur.VariableHilbertInvariantFunctionDescent
 public import FLT.Mazur.VariableHilbertInvariantOpenDescent
+public import FLT.Mazur.VariableHilbertOrbitCompactBasis
 public import FLT.Mazur.VariableHilbertParameterOrbitDescent
 public import FLT.Mazur.VariableHilbertRelationBridge
 public import FLT.Mazur.VariableHilbertRelationBridgeIso
