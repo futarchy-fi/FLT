@@ -6260,6 +6260,7 @@ public import FLT.Mazur.PolygonProjectiveUniversalParameter
 public import FLT.Mazur.PolygonProper
 public import FLT.Mazur.PolygonPuncturedCanonicalEquations
 public import FLT.Mazur.PolygonPureDimension
+public import FLT.Mazur.PolygonReciprocalEvaluation
 public import FLT.Mazur.PolygonRefinedClosedCharts
 public import FLT.Mazur.PolygonRetainedSectionRotation
 public import FLT.Mazur.PolygonRetainedStageMarkings
@@ -8301,6 +8302,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearScaleOneAdjacentTransition
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneConicAction
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneGluedConic
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneGluedIntersections
+public import FLT.Mazur.WeierstrassCoefficientShearScaleOneGluedPunctures
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneParameter
 public import FLT.Mazur.WeierstrassCoefficientShearSmoothOrbit
 public import FLT.Mazur.WeierstrassCoefficientShearSmoothUnique
@@ -8316,7 +8318,9 @@ public import FLT.Mazur.WeierstrassCoefficientShearTorusPair
 public import FLT.Mazur.WeierstrassCoefficientShearTorusSmoothOrbit
 public import FLT.Mazur.WeierstrassCoefficientShearTransport
 public import FLT.Mazur.WeierstrassCoefficientShearUnitSlope
+public import FLT.Mazur.WeierstrassCoefficientShearZeroConicAdjacent
 public import FLT.Mazur.WeierstrassCoefficientZero
+public import FLT.Mazur.WeierstrassConicCoefficientTransport
 public import FLT.Mazur.WeierstrassConicZeroAffineParameter
 public import FLT.Mazur.WeierstrassConstantSections
 public import FLT.Mazur.WeierstrassCrossInputAdditionComparison
@@ -9869,6 +9873,7 @@ public import FLT.Mazur.WeierstrassSmoothHorizontalPairExt
 public import FLT.Mazur.WeierstrassSmoothHorizontalProductResidue
 public import FLT.Mazur.WeierstrassSmoothHorizontalProductSource
 public import FLT.Mazur.WeierstrassSmoothHorizontalReciprocalCharacters
+public import FLT.Mazur.WeierstrassSmoothHorizontalReciprocalEvaluation
 public import FLT.Mazur.WeierstrassSmoothHorizontalResidueCoordinates
 public import FLT.Mazur.WeierstrassSmoothHorizontalResiduePoint
 public import FLT.Mazur.WeierstrassSmoothHorizontalRootParameter
@@ -10175,6 +10180,8 @@ public import FLT.Mazur.WeierstrassSuccessiveXZeroNodePunctures
 public import FLT.Mazur.WeierstrassSuccessiveXZeroOverlap
 public import FLT.Mazur.WeierstrassSuccessiveXZeroResidue
 public import FLT.Mazur.WeierstrassSuccessiveZeroConicMap
+public import FLT.Mazur.WeierstrassSuccessiveZeroConicShearComparison
+public import FLT.Mazur.WeierstrassSuccessiveZeroConicShearPunctures
 public import FLT.Mazur.WeierstrassSwappedAdditionIntersections
 public import FLT.Mazur.WeierstrassSwappedInfinityOutput
 public import FLT.Mazur.WeierstrassSwappedInfinitySchemes
