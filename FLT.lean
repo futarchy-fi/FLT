@@ -5414,6 +5414,7 @@ public import FLT.Mazur.NodeTangentSlopeDescent
 public import FLT.Mazur.NodeTangentSplitChart
 public import FLT.Mazur.NodeTangentSplitComponent
 public import FLT.Mazur.NodeTangentSplitLaurent
+public import FLT.Mazur.NodeTangentSplitNormalizationComparison
 public import FLT.Mazur.NodeTangentTensorLaurentDescent
 public import FLT.Mazur.NodeTangentTensorOpen
 public import FLT.Mazur.NodeTangentTensorOrientation
@@ -8316,6 +8317,7 @@ public import FLT.Mazur.WeierstrassDividedHorizontalCoefficientPointAction
 public import FLT.Mazur.WeierstrassDividedHorizontalCyclicInput
 public import FLT.Mazur.WeierstrassDividedHorizontalCyclicPair
 public import FLT.Mazur.WeierstrassDividedHorizontalFinitePointAction
+public import FLT.Mazur.WeierstrassDividedIncidenceNormalization
 public import FLT.Mazur.WeierstrassDividedInfinityLaurentChart
 public import FLT.Mazur.WeierstrassDividedInfinityLaurentGluing
 public import FLT.Mazur.WeierstrassDividedInfinityLaurentZero
@@ -8328,7 +8330,9 @@ public import FLT.Mazur.WeierstrassDividedInitialCommonBoundaryHomExt
 public import FLT.Mazur.WeierstrassDividedInitialComponentRanges
 public import FLT.Mazur.WeierstrassDividedInitialComponentStructure
 public import FLT.Mazur.WeierstrassDividedInitialConicBoundaryAlgebra
+public import FLT.Mazur.WeierstrassDividedInitialConicContraction
 public import FLT.Mazur.WeierstrassDividedInitialConicParameters
+public import FLT.Mazur.WeierstrassDividedInitialExceptionalContraction
 public import FLT.Mazur.WeierstrassDividedInitialExtendedOrigins
 public import FLT.Mazur.WeierstrassDividedInitialExtendedSections
 public import FLT.Mazur.WeierstrassDividedInitialExterior
@@ -8450,6 +8454,7 @@ public import FLT.Mazur.WeierstrassDividedOrderedPairCoverage
 public import FLT.Mazur.WeierstrassDividedOrderedRetainedSections
 public import FLT.Mazur.WeierstrassDividedOriginalScaleOpen
 public import FLT.Mazur.WeierstrassDividedOriginalXOpen
+public import FLT.Mazur.WeierstrassDividedPolygonExteriorNormalization
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityAction
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityActionComparison
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityAllComponentAction
@@ -8549,6 +8554,7 @@ public import FLT.Mazur.WeierstrassDividedResidueMiddleIntersection
 public import FLT.Mazur.WeierstrassDividedResidueNormalization
 public import FLT.Mazur.WeierstrassDividedResidueNormalizationCompatibility
 public import FLT.Mazur.WeierstrassDividedResidueOrderedNormalization
+public import FLT.Mazur.WeierstrassDividedResidueSplitCubic
 public import FLT.Mazur.WeierstrassDividedResidueTangentNormalization
 public import FLT.Mazur.WeierstrassDividedRetainedExteriorIntersection
 public import FLT.Mazur.WeierstrassDividedRetainedLineAt
@@ -8564,6 +8570,7 @@ public import FLT.Mazur.WeierstrassDividedSmoothSuccessiveIntegralAction
 public import FLT.Mazur.WeierstrassDividedSmoothSuccessiveResidueAction
 public import FLT.Mazur.WeierstrassDividedSmoothTerminalCoefficientAction
 public import FLT.Mazur.WeierstrassDividedSmoothTerminalIntegralAction
+public import FLT.Mazur.WeierstrassDividedSplitNormalizationComparison
 public import FLT.Mazur.WeierstrassDividedSuccessiveOriginalY
 public import FLT.Mazur.WeierstrassDividedSuccessorActionAtlas
 public import FLT.Mazur.WeierstrassDividedSuccessorActionInput
@@ -9565,6 +9572,7 @@ public import FLT.Mazur.WeierstrassSmoothZeroGraphs
 public import FLT.Mazur.WeierstrassSmoothZeroSection
 public import FLT.Mazur.WeierstrassSpecSectionMorphism
 public import FLT.Mazur.WeierstrassSpecSections
+public import FLT.Mazur.WeierstrassSplitCompleteNormalization
 public import FLT.Mazur.WeierstrassSplitDepthAffineParameters
 public import FLT.Mazur.WeierstrassSplitDepthConormal
 public import FLT.Mazur.WeierstrassSplitDepthExceptionalBranches
