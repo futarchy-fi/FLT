@@ -4621,6 +4621,7 @@ public import FLT.Mazur.GrassmannianDeterminantOverlapUnits
 public import FLT.Mazur.GrassmannianDeterminantSchemeSections
 public import FLT.Mazur.GrassmannianDeterminantSectionLoci
 public import FLT.Mazur.GrassmannianFiniteCoordinateCharts
+public import FLT.Mazur.GrassmannianFiniteCoordinateCover
 public import FLT.Mazur.GrassmannianFramedQuotientAtlas
 public import FLT.Mazur.GrassmannianFramedSheafQuotient
 public import FLT.Mazur.GrassmannianFunctorLocalizedChart
