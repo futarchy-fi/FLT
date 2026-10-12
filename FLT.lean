@@ -9819,6 +9819,7 @@ public import FLT.Mazur.WeierstrassVariableChangeAddition
 public import FLT.Mazur.WeierstrassVariableChangeAdditionFormula
 public import FLT.Mazur.WeierstrassVariableChangeAffineProduct
 public import FLT.Mazur.WeierstrassVariableChangeAffineRestriction
+public import FLT.Mazur.WeierstrassVariableChangeCoefficient
 public import FLT.Mazur.WeierstrassVariableChangeCoordinateCover
 public import FLT.Mazur.WeierstrassVariableChangeCubicSubstitution
 public import FLT.Mazur.WeierstrassVariableChangeFrame
