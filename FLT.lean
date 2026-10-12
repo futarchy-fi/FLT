@@ -2730,6 +2730,11 @@ public import FLT.Mazur.AffineGeometricTensorDatum
 public import FLT.Mazur.AffineHilbertChartRelation
 public import FLT.Mazur.AffineHilbertComposableEnvelope
 public import FLT.Mazur.AffineHilbertCompositionCharts
+public import FLT.Mazur.AffineHilbertEnvelopeCoaction
+public import FLT.Mazur.AffineHilbertEnvelopeKernelPair
+public import FLT.Mazur.AffineHilbertEnvelopeOpenChart
+public import FLT.Mazur.AffineHilbertEnvelopeQuotient
+public import FLT.Mazur.AffineHilbertEnvelopeScheme
 public import FLT.Mazur.AffineHilbertFullRelationRestriction
 public import FLT.Mazur.AffineHilbertLocalTensorInvariants
 public import FLT.Mazur.AffineHilbertLocalizedCoefficients
@@ -7828,6 +7833,10 @@ public import FLT.Mazur.SchemeRelationOpenInvariantRings
 public import FLT.Mazur.SchemeRelationOverRestriction
 public import FLT.Mazur.SchemeRelationRestrictionComposition
 public import FLT.Mazur.SchemeRelationRestrictionRechart
+public import FLT.Mazur.SchemeRelationTensorAlgebra
+public import FLT.Mazur.SchemeRelationTensorCocycle
+public import FLT.Mazur.SchemeRelationTensorCoordinates
+public import FLT.Mazur.SchemeRelationTensorCounit
 public import FLT.Mazur.SchemeRelativeNilpotentKernel
 public import FLT.Mazur.SchemeRelativeNilpotentSections
 public import FLT.Mazur.SchemeSectionFamilyProduct
