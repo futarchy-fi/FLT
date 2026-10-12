@@ -4479,6 +4479,7 @@ public import FLT.Mazur.GradedProjZeroMapNaturality
 public import FLT.Mazur.GradedQuotientTensorComparison
 public import FLT.Mazur.GroupMarkingBaseChange
 public import FLT.Mazur.GroupMarkingBaseChangeInverse
+public import FLT.Mazur.GroupMarkingCartesianInverse
 public import FLT.Mazur.GroupMarkingCartesianTransport
 public import FLT.Mazur.GroupMarkingTransport
 public import FLT.Mazur.GroupMarkingTransportEquations
