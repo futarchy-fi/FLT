@@ -8585,6 +8585,7 @@ public import FLT.Mazur.WeierstrassDividedShearGlobalCover
 public import FLT.Mazur.WeierstrassDividedShearGlobalInfinityLift
 public import FLT.Mazur.WeierstrassDividedShearGlobalInfinityOpen
 public import FLT.Mazur.WeierstrassDividedShearGlobalIso
+public import FLT.Mazur.WeierstrassDividedShearGlobalStep
 public import FLT.Mazur.WeierstrassDividedShearGluing
 public import FLT.Mazur.WeierstrassDividedShearInitialExterior
 public import FLT.Mazur.WeierstrassDividedShearNextBoundary
