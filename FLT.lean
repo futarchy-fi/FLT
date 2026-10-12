@@ -8298,6 +8298,7 @@ public import FLT.Mazur.WeierstrassDividedInitialComponentStructure
 public import FLT.Mazur.WeierstrassDividedInitialConicBoundaryAlgebra
 public import FLT.Mazur.WeierstrassDividedInitialConicContraction
 public import FLT.Mazur.WeierstrassDividedInitialConicParameters
+public import FLT.Mazur.WeierstrassDividedInitialExceptionalContraction
 public import FLT.Mazur.WeierstrassDividedInitialExtendedOrigins
 public import FLT.Mazur.WeierstrassDividedInitialExtendedSections
 public import FLT.Mazur.WeierstrassDividedInitialExterior
