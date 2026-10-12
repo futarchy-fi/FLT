@@ -7942,6 +7942,7 @@ public import FLT.Mazur.TwoGeneratorRelationSequence
 public import FLT.Mazur.TwoGeneratorRelationUnit
 public import FLT.Mazur.UniformizerRootExtension
 public import FLT.Mazur.UnitIntegerModel
+public import FLT.Mazur.UnitLeadingBasisExtension
 public import FLT.Mazur.UniversalDivisorAcyclicRankOne
 public import FLT.Mazur.UniversalDivisorCohomologyCharts
 public import FLT.Mazur.UniversalDivisorDirectImageRepresentation
