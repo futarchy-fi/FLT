@@ -3584,6 +3584,7 @@ public import FLT.Mazur.CuspOrderNumerator
 public import FLT.Mazur.CyclicDivisorSubgroupCriterion
 public import FLT.Mazur.CyclicHomAuxiliaryScheme
 public import FLT.Mazur.CyclicHomDivisorFppfCoverage
+public import FLT.Mazur.CyclicHomDivisorInclusionPullback
 public import FLT.Mazur.CyclicHomDivisorProduct
 public import FLT.Mazur.CyclicHomDivisorPullback
 public import FLT.Mazur.CyclicHomMultiplicationEquation
