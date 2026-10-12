@@ -8551,6 +8551,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearSuccessiveTorusAction
 public import FLT.Mazur.WeierstrassCoefficientShearTangentConjugation
 public import FLT.Mazur.WeierstrassCoefficientShearTangentTransport
 public import FLT.Mazur.WeierstrassCoefficientShearTensorInput
+public import FLT.Mazur.WeierstrassCoefficientShearTerminalComponents
 public import FLT.Mazur.WeierstrassCoefficientShearTerminalNode
 public import FLT.Mazur.WeierstrassCoefficientShearTorusDomain
 public import FLT.Mazur.WeierstrassCoefficientShearTorusPair
