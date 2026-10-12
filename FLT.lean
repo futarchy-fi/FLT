@@ -4551,6 +4551,7 @@ public import FLT.Mazur.GrassmannianChartPolynomialParameters
 public import FLT.Mazur.GrassmannianChartTransition
 public import FLT.Mazur.GrassmannianChartTransitionCocycle
 public import FLT.Mazur.GrassmannianChartTransitionInverse
+public import FLT.Mazur.GrassmannianCoordinateRefinementLaw
 public import FLT.Mazur.GrassmannianFunctorLocalizedChart
 public import FLT.Mazur.GrassmannianIndexedOverlapScheme
 public import FLT.Mazur.GrassmannianIndexedTripleOverlap
@@ -4571,12 +4572,17 @@ public import FLT.Mazur.GrassmannianMorphismRecoveredPoint
 public import FLT.Mazur.GrassmannianMorphismRelation
 public import FLT.Mazur.GrassmannianMorphismSheafTransition
 public import FLT.Mazur.GrassmannianMorphismTensorCompatibility
+public import FLT.Mazur.GrassmannianNamedRefinement
 public import FLT.Mazur.GrassmannianNormalizedBaseChange
 public import FLT.Mazur.GrassmannianNumeratorTransport
 public import FLT.Mazur.GrassmannianOriginalBaseChartCover
 public import FLT.Mazur.GrassmannianOverlapAffineCoordinates
 public import FLT.Mazur.GrassmannianOverlapAffineTransition
+public import FLT.Mazur.GrassmannianOverlapCoordinateRefinement
+public import FLT.Mazur.GrassmannianOverlapDirectRefinement
 public import FLT.Mazur.GrassmannianOverlapPolynomial
+public import FLT.Mazur.GrassmannianOverlapTestProjection
+public import FLT.Mazur.GrassmannianOverlapTestRefinement
 public import FLT.Mazur.GrassmannianOverlapTransitionEquiv
 public import FLT.Mazur.GrassmannianOverlapTransitionScheme
 public import FLT.Mazur.GrassmannianPrincipalOverlap
@@ -4589,6 +4595,7 @@ public import FLT.Mazur.GrassmannianQuotientRefinement
 public import FLT.Mazur.GrassmannianQuotientSheaf
 public import FLT.Mazur.GrassmannianQuotientSheafTransition
 public import FLT.Mazur.GrassmannianScalarExtension
+public import FLT.Mazur.GrassmannianSchemeAmbientQuotient
 public import FLT.Mazur.GrassmannianSelectedAmbientIndex
 public import FLT.Mazur.GrassmannianSelectedColumnsLocalization
 public import FLT.Mazur.GrassmannianSheafRefinementComparison
@@ -4603,6 +4610,7 @@ public import FLT.Mazur.GrassmannianTripleOverlapOriginalPullback
 public import FLT.Mazur.GrassmannianTripleOverlapRestriction
 public import FLT.Mazur.GrassmannianTripleOverlapRing
 public import FLT.Mazur.GrassmannianTripleOverlapScheme
+public import FLT.Mazur.GrassmannianWholeOverlapTransition
 public import FLT.Mazur.GroupMarkingBaseChange
 public import FLT.Mazur.GroupMarkingBaseChangeInverse
 public import FLT.Mazur.GroupMarkingCartesianInverse
@@ -7633,6 +7641,7 @@ public import FLT.Mazur.SheafPullbackNormalizedRefinement
 public import FLT.Mazur.SheafPullbackObjectwiseRefinement
 public import FLT.Mazur.SheafPullbackPathComparison
 public import FLT.Mazur.SheafPullbackPathPentagon
+public import FLT.Mazur.SheafPullbackRefinementLaw
 public import FLT.Mazur.SheafPullbackRetractionSquare
 public import FLT.Mazur.SheafPullbackSectionReconstruction
 public import FLT.Mazur.SheafPullbackSectionSquare
@@ -8191,7 +8200,9 @@ public import FLT.Mazur.WeierstrassCoefficientShearResidueRetained
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedFiber
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedIntersections
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedReconstruction
+public import FLT.Mazur.WeierstrassCoefficientShearScaleOne
 public import FLT.Mazur.WeierstrassCoefficientShearSpecialization
+public import FLT.Mazur.WeierstrassCoefficientShearSpecializationMono
 public import FLT.Mazur.WeierstrassCoefficientShearTangentConjugation
 public import FLT.Mazur.WeierstrassCoefficientShearTangentTransport
 public import FLT.Mazur.WeierstrassCoefficientShearTransport
@@ -9498,6 +9509,7 @@ public import FLT.Mazur.WeierstrassNegationCover
 public import FLT.Mazur.WeierstrassNegationIntersection
 public import FLT.Mazur.WeierstrassNegationOverlap
 public import FLT.Mazur.WeierstrassNegationPairSections
+public import FLT.Mazur.WeierstrassNodalAdjacentIntersections
 public import FLT.Mazur.WeierstrassNodalDividedDepth
 public import FLT.Mazur.WeierstrassNodalDividedFamily
 public import FLT.Mazur.WeierstrassNodalResidueCharts
@@ -9505,6 +9517,12 @@ public import FLT.Mazur.WeierstrassNodalResidueContraction
 public import FLT.Mazur.WeierstrassNodalResidueTangentDepth
 public import FLT.Mazur.WeierstrassNodalResidueTransition
 public import FLT.Mazur.WeierstrassNodalRetainedComponents
+public import FLT.Mazur.WeierstrassNodalZeroAdjacentIntersections
+public import FLT.Mazur.WeierstrassNodalZeroInitialChart
+public import FLT.Mazur.WeierstrassNodalZeroInitialIntersection
+public import FLT.Mazur.WeierstrassNodalZeroLaterComponents
+public import FLT.Mazur.WeierstrassNodalZeroRetainedChart
+public import FLT.Mazur.WeierstrassNodalZeroRetainedComponents
 public import FLT.Mazur.WeierstrassNonoppositeOrdinaryLift
 public import FLT.Mazur.WeierstrassNonzeroPointAffine
 public import FLT.Mazur.WeierstrassNormalFormPoles
@@ -9880,6 +9898,7 @@ public import FLT.Mazur.WeierstrassSuccessiveShearConicBoundary
 public import FLT.Mazur.WeierstrassSuccessiveShearLineBoundary
 public import FLT.Mazur.WeierstrassSuccessiveShearLineOpen
 public import FLT.Mazur.WeierstrassSuccessiveShearNormalForm
+public import FLT.Mazur.WeierstrassSuccessiveShearScaleOne
 public import FLT.Mazur.WeierstrassSuccessiveShearSignedReciprocal
 public import FLT.Mazur.WeierstrassSuccessiveXAlgebra
 public import FLT.Mazur.WeierstrassSuccessiveXBaseChange
