@@ -2686,6 +2686,10 @@ public import FLT.Mazur.AffineEffectiveRefinementNaturality
 public import FLT.Mazur.AffineEffectiveSecondReconstruction
 public import FLT.Mazur.AffineEffectiveSuccessiveReconstruction
 public import FLT.Mazur.AffineEnvelopeFiniteNeighborhood
+public import FLT.Mazur.AffineEtaleFaithfulCoefficients
+public import FLT.Mazur.AffineEtaleFaithfulNeighborhood
+public import FLT.Mazur.AffineEtaleFaithfulSource
+public import FLT.Mazur.AffineEtaleFaithfulSpectrum
 public import FLT.Mazur.AffineFaithfullyFlatEpimorphisms
 public import FLT.Mazur.AffineFaithfullyFlatMonomorphisms
 public import FLT.Mazur.AffineFaithfullyFlatPullbackFaithful
@@ -4905,6 +4909,7 @@ public import FLT.Mazur.HilbertComplementCoordinateRing
 public import FLT.Mazur.HilbertComplementPointCompatibility
 public import FLT.Mazur.HilbertComplementSchemeCompatibility
 public import FLT.Mazur.HilbertDivisorDegreePresentation
+public import FLT.Mazur.HilbertFaithfulAffineNeighborhood
 public import FLT.Mazur.HilbertFaithfullyFlatTupleBasis
 public import FLT.Mazur.HilbertFamilyAmbientPointNaturality
 public import FLT.Mazur.HilbertFamilyBoundedEvaluation
@@ -5952,6 +5957,9 @@ public import FLT.Mazur.OrderedHilbertEtaleSeparableLift
 public import FLT.Mazur.OrderedHilbertEtaleStalkLift
 public import FLT.Mazur.OrderedHilbertEtaleTestCover
 public import FLT.Mazur.OrderedHilbertEtaleTestPoints
+public import FLT.Mazur.OrderedHilbertFaithfulClass
+public import FLT.Mazur.OrderedHilbertFaithfulOrbitCover
+public import FLT.Mazur.OrderedHilbertFaithfulTestCover
 public import FLT.Mazur.OrderedHilbertSeparableGeometricCoverage
 public import FLT.Mazur.OrderedProjectiveHilbertNaturality
 public import FLT.Mazur.OrderedProjectiveHilbertParameter
