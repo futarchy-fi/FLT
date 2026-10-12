@@ -7373,6 +7373,7 @@ public import FLT.Mazur.RelativeRelationArrowCalculus
 public import FLT.Mazur.RelativeRelationFpqcInvariantQuotient
 public import FLT.Mazur.RelativeRelationFpqcOrbitComparison
 public import FLT.Mazur.RelativeRelationFpqcSectionComparison
+public import FLT.Mazur.RelativeRelationFullSectionFunctions
 public import FLT.Mazur.RelativeRelationGeneratorNaturality
 public import FLT.Mazur.RelativeRelationGeneratorSubopens
 public import FLT.Mazur.RelativeRelationInvariantAffineComparison
