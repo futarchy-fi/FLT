@@ -8494,6 +8494,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearAtlasStructure
 public import FLT.Mazur.WeierstrassCoefficientShearBoundedConicAction
 public import FLT.Mazur.WeierstrassCoefficientShearConicParameters
 public import FLT.Mazur.WeierstrassCoefficientShearCoverage
+public import FLT.Mazur.WeierstrassCoefficientShearFiniteLineBoundary
 public import FLT.Mazur.WeierstrassCoefficientShearFiniteLineContraction
 public import FLT.Mazur.WeierstrassCoefficientShearGluing
 public import FLT.Mazur.WeierstrassCoefficientShearHorizontalAction
