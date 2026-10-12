@@ -6676,6 +6676,7 @@ public import FLT.Mazur.ProperLocalAdicFiniteIso
 public import FLT.Mazur.ProperLocalAdicIdealSeparation
 public import FLT.Mazur.ProperLocalAmpleFiberGenerators
 public import FLT.Mazur.ProperLocalFiberCover
+public import FLT.Mazur.ProperLocalFixedPoint
 public import FLT.Mazur.ProperOnlyAmpleFiberNeighborhood
 public import FLT.Mazur.ProperOnlyRelativeAmpleFibers
 public import FLT.Mazur.ProperPointExtension
