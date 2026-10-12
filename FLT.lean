@@ -4533,6 +4533,10 @@ public import FLT.Mazur.HilbertBasisSchemeOver
 public import FLT.Mazur.HilbertBasisTupleAffineComparison
 public import FLT.Mazur.HilbertBasisTupleIntersection
 public import FLT.Mazur.HilbertBasisTupleSchemeComparison
+public import FLT.Mazur.HilbertBoundedAmbientAtlas
+public import FLT.Mazur.HilbertBoundedMonomialBasis
+public import FLT.Mazur.HilbertBoundedMonomialCover
+public import FLT.Mazur.HilbertBoundedPolynomialAtlas
 public import FLT.Mazur.HilbertChartAlgebra
 public import FLT.Mazur.HilbertChartAlgebraRealization
 public import FLT.Mazur.HilbertChartAlgebraSpecialization
@@ -4652,8 +4656,12 @@ public import FLT.Mazur.HilbertPrincipalBaseChangeMorphism
 public import FLT.Mazur.HilbertPrincipalBaseChangeScalars
 public import FLT.Mazur.HilbertPrincipalLocalizationScalars
 public import FLT.Mazur.HilbertPrincipalRestriction
+public import FLT.Mazur.HilbertQuotientDegreeBound
+public import FLT.Mazur.HilbertQuotientDegreeFiltration
 public import FLT.Mazur.HilbertSupportOpenLattice
 public import FLT.Mazur.HilbertSupportOpenPullback
+public import FLT.Mazur.HilbertTruncatedIdealDetection
+public import FLT.Mazur.HilbertTruncatedIdealGeneration
 public import FLT.Mazur.HilbertTupleBasisTower
 public import FLT.Mazur.HomIntegerModel
 public import FLT.Mazur.HomogeneousFractionProjection
