@@ -8118,10 +8118,15 @@ public import FLT.Mazur.WeierstrassCoefficientSecant
 public import FLT.Mazur.WeierstrassCoefficientShearAtlas
 public import FLT.Mazur.WeierstrassCoefficientShearAtlasComparison
 public import FLT.Mazur.WeierstrassCoefficientShearAtlasStructure
+public import FLT.Mazur.WeierstrassCoefficientShearConicParameters
 public import FLT.Mazur.WeierstrassCoefficientShearCoverage
 public import FLT.Mazur.WeierstrassCoefficientShearGluing
+public import FLT.Mazur.WeierstrassCoefficientShearInitialFiber
 public import FLT.Mazur.WeierstrassCoefficientShearOverlaps
+public import FLT.Mazur.WeierstrassCoefficientShearResidueConic
 public import FLT.Mazur.WeierstrassCoefficientShearResidueExterior
+public import FLT.Mazur.WeierstrassCoefficientShearRetainedFiber
+public import FLT.Mazur.WeierstrassCoefficientShearSpecialization
 public import FLT.Mazur.WeierstrassCoefficientShearTangentConjugation
 public import FLT.Mazur.WeierstrassCoefficientShearTangentTransport
 public import FLT.Mazur.WeierstrassCoefficientShearTransport
@@ -8986,6 +8991,7 @@ public import FLT.Mazur.WeierstrassGlobalPolynomialSwap
 public import FLT.Mazur.WeierstrassHorizontalConicPunctureResidue
 public import FLT.Mazur.WeierstrassHorizontalFractionHomExt
 public import FLT.Mazur.WeierstrassHorizontalGlobalChartComparison
+public import FLT.Mazur.WeierstrassIncidenceShearNormalForm
 public import FLT.Mazur.WeierstrassInfinitesimalAddition
 public import FLT.Mazur.WeierstrassInfinitesimalChart
 public import FLT.Mazur.WeierstrassInfinitesimalFactorization
@@ -9562,6 +9568,7 @@ public import FLT.Mazur.WeierstrassReciprocalZeroPointComparison
 public import FLT.Mazur.WeierstrassRegularChartSectionDescent
 public import FLT.Mazur.WeierstrassRegularInputDescent
 public import FLT.Mazur.WeierstrassRelativeSmoothOpen
+public import FLT.Mazur.WeierstrassResidueTangentEquationData
 public import FLT.Mazur.WeierstrassRetainedCoefficientShearChart
 public import FLT.Mazur.WeierstrassRetainedRegularCenter
 public import FLT.Mazur.WeierstrassSameOutputIntersections
@@ -9794,6 +9801,8 @@ public import FLT.Mazur.WeierstrassSuccessiveScaleEmbedding
 public import FLT.Mazur.WeierstrassSuccessiveScaleFractions
 public import FLT.Mazur.WeierstrassSuccessiveScaleReesChart
 public import FLT.Mazur.WeierstrassSuccessiveScaleReesScheme
+public import FLT.Mazur.WeierstrassSuccessiveShearComponents
+public import FLT.Mazur.WeierstrassSuccessiveShearNormalForm
 public import FLT.Mazur.WeierstrassSuccessiveXAlgebra
 public import FLT.Mazur.WeierstrassSuccessiveXBaseChange
 public import FLT.Mazur.WeierstrassSuccessiveXBaseChangeCoordinates
