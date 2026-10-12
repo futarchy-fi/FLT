@@ -5618,6 +5618,7 @@ public import FLT.Mazur.PolygonCompatibleParameterRegularity
 public import FLT.Mazur.PolygonCompatibleSectionAlgebra
 public import FLT.Mazur.PolygonCompatibleSectionReduction
 public import FLT.Mazur.PolygonCompatibleSectionRing
+public import FLT.Mazur.PolygonCompatibleSectionRotation
 public import FLT.Mazur.PolygonCompatibleSectionScalars
 public import FLT.Mazur.PolygonCompatibleVeronese
 public import FLT.Mazur.PolygonCompatibleZeroCoefficients
