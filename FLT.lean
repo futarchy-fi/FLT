@@ -4504,6 +4504,7 @@ public import FLT.Mazur.GrassmannianIndexedOverlapScheme
 public import FLT.Mazur.GrassmannianIndexedTripleOverlap
 public import FLT.Mazur.GrassmannianLocalBasisSelection
 public import FLT.Mazur.GrassmannianLocalizedAmbientTransition
+public import FLT.Mazur.GrassmannianLocalizedColumnBasis
 public import FLT.Mazur.GrassmannianLocalizedTransition
 public import FLT.Mazur.GrassmannianLocalizedTransitionScheme
 public import FLT.Mazur.GrassmannianOriginalBaseChartCover
