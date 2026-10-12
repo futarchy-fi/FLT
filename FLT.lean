@@ -3009,6 +3009,7 @@ public import FLT.Mazur.ArtinianProperRelativeFunctions
 public import FLT.Mazur.ArtinianProperStructureSheaf
 public import FLT.Mazur.ArtinianRelativeSectionCriterion
 public import FLT.Mazur.ArtinianSectionKernel
+public import FLT.Mazur.AuxiliaryCartesianGroupParameter
 public import FLT.Mazur.AuxiliaryCoprimeFieldMarking
 public import FLT.Mazur.AuxiliaryCoprimeFieldNaturality
 public import FLT.Mazur.AuxiliaryLevelFaithfulOpen
