@@ -7103,6 +7103,7 @@ public import FLT.Mazur.RelativeFiberNakayama
 public import FLT.Mazur.RelativeFppfComparisonCover
 public import FLT.Mazur.RelativeFppfLocalSubfunctor
 public import FLT.Mazur.RelativeGenusOneAffineCubicMorphism
+public import FLT.Mazur.RelativeGenusOneAffineIso
 public import FLT.Mazur.RelativeGenusOneAffineLowPoles
 public import FLT.Mazur.RelativeGenusOneAllPoleBasis
 public import FLT.Mazur.RelativeGenusOneCanonicalBasis
@@ -7118,10 +7119,12 @@ public import FLT.Mazur.RelativeGenusOneCoordinateSurjective
 public import FLT.Mazur.RelativeGenusOneCubicRelation
 public import FLT.Mazur.RelativeGenusOneFramedProducts
 public import FLT.Mazur.RelativeGenusOneHigherMonomials
+public import FLT.Mazur.RelativeGenusOneHomogeneousEquation
 public import FLT.Mazur.RelativeGenusOneInitialPoleStep
 public import FLT.Mazur.RelativeGenusOneLowPoleBasis
 public import FLT.Mazur.RelativeGenusOneMonomialBasis
 public import FLT.Mazur.RelativeGenusOneMonomialIndependence
+public import FLT.Mazur.RelativeGenusOneNonsingular
 public import FLT.Mazur.RelativeGenusOneNormalMonomials
 public import FLT.Mazur.RelativeGenusOnePointFibers
 public import FLT.Mazur.RelativeGenusOnePointFrames
@@ -7130,6 +7133,7 @@ public import FLT.Mazur.RelativeGenusOnePointLeading
 public import FLT.Mazur.RelativeGenusOnePointSections
 public import FLT.Mazur.RelativeGenusOnePointSplit
 public import FLT.Mazur.RelativeGenusOnePoleReduction
+public import FLT.Mazur.RelativeGenusOneProjectiveSections
 public import FLT.Mazur.RelativeIdealAmbientHom
 public import FLT.Mazur.RelativeIdealAmbientIsoSquare
 public import FLT.Mazur.RelativeIdealAmbientPullback
@@ -7168,6 +7172,7 @@ public import FLT.Mazur.RelativePicardTwistIso
 public import FLT.Mazur.RelativePinchingDescent
 public import FLT.Mazur.RelativePinchingLocalDescent
 public import FLT.Mazur.RelativePinchingNeighborhoods
+public import FLT.Mazur.RelativePointLineAmple
 public import FLT.Mazur.RelativePoleComplementFunctions
 public import FLT.Mazur.RelativePoleComplementLinear
 public import FLT.Mazur.RelativeRankOneDivisorUniqueness
@@ -7680,6 +7685,7 @@ public import FLT.Mazur.SectionPointFrameBaseChange
 public import FLT.Mazur.SectionPointPowerBaseChange
 public import FLT.Mazur.SectionPoleAdaptedBasis
 public import FLT.Mazur.SectionPoleBaseChangeFrames
+public import FLT.Mazur.SectionPoleGeneratorCover
 public import FLT.Mazur.SectionPoleHZeroMultiplication
 public import FLT.Mazur.SectionPoleLeadingRestriction
 public import FLT.Mazur.SectionPoleLineFrames
@@ -9798,6 +9804,7 @@ public import FLT.Mazur.WeierstrassReciprocalTripleSlopes
 public import FLT.Mazur.WeierstrassReciprocalZeroPointComparison
 public import FLT.Mazur.WeierstrassRegularChartSectionDescent
 public import FLT.Mazur.WeierstrassRegularInputDescent
+public import FLT.Mazur.WeierstrassRelativeSmoothDiscriminant
 public import FLT.Mazur.WeierstrassRelativeSmoothOpen
 public import FLT.Mazur.WeierstrassResidueTangentEquationData
 public import FLT.Mazur.WeierstrassRetainedCoefficientShearChart
