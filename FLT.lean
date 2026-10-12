@@ -4535,6 +4535,7 @@ public import FLT.Mazur.GrassmannianAmbientClassifyingInjective
 public import FLT.Mazur.GrassmannianAmbientClassifyingMap
 public import FLT.Mazur.GrassmannianAmbientClassifyingNaturality
 public import FLT.Mazur.GrassmannianAmbientCommonTest
+public import FLT.Mazur.GrassmannianAmbientComplementBaseChange
 public import FLT.Mazur.GrassmannianAmbientCompositionLaw
 public import FLT.Mazur.GrassmannianAmbientCoordinateMap
 public import FLT.Mazur.GrassmannianAmbientGlueData
