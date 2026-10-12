@@ -3229,6 +3229,7 @@ public import FLT.Mazur.CartesianCoefficientTransport
 public import FLT.Mazur.CartesianCoefficientTransportNaturality
 public import FLT.Mazur.CartesianIdentityFactorization
 public import FLT.Mazur.CartesianIdentityQuasiFinite
+public import FLT.Mazur.CartesianLineFieldCohomology
 public import FLT.Mazur.CartesianMonoGroup
 public import FLT.Mazur.CartesianMonoMonoid
 public import FLT.Mazur.CartesianMorphismRecovery
@@ -3610,6 +3611,7 @@ public import FLT.Mazur.DivisorPowerH1Vanishing
 public import FLT.Mazur.DivisorPowerHZeroTransition
 public import FLT.Mazur.DivisorPowerHigherVanishing
 public import FLT.Mazur.DivisorPowerLeadingClass
+public import FLT.Mazur.DivisorPowerRingLeadingClass
 public import FLT.Mazur.DivisorPowerTwistDegree
 public import FLT.Mazur.DivisorPowerVeryAmple
 public import FLT.Mazur.DivisorRestrictCoherence
@@ -4233,6 +4235,7 @@ public import FLT.Mazur.FinitePrincipalIdealPatching
 public import FLT.Mazur.FinitePrincipalTargetRefinement
 public import FLT.Mazur.FiniteProductDirectSum
 public import FLT.Mazur.FiniteProjectivePrincipalDescent
+public import FLT.Mazur.FiniteProjectiveRankFrames
 public import FLT.Mazur.FiniteProjectiveRankOneTrivialization
 public import FLT.Mazur.FiniteProjectiveSectionAmple
 public import FLT.Mazur.FiniteProjectiveTildeLocal
@@ -4418,6 +4421,7 @@ public import FLT.Mazur.GeneralizedCurvePicardClasses
 public import FLT.Mazur.GeneralizedCurvePicardPresheaf
 public import FLT.Mazur.GeneralizedCurvePullback
 public import FLT.Mazur.GeneralizedCurvePullbackCoherence
+public import FLT.Mazur.GeneralizedCurveRelativePointFrames
 public import FLT.Mazur.GeneralizedCurveSmoothBaseChange
 public import FLT.Mazur.GeneralizedCurveSmoothPullback
 public import FLT.Mazur.GeneralizedCurveSubgroupComparison
@@ -4435,6 +4439,7 @@ public import FLT.Mazur.GenericWitnessIdealVanishing
 public import FLT.Mazur.GenusOneGroupAffineChart
 public import FLT.Mazur.GenusOneGroupCoordinateRing
 public import FLT.Mazur.GenusOneGroupNonsingular
+public import FLT.Mazur.GenusOneGroupPointAcyclic
 public import FLT.Mazur.GenusOneGroupPointCohomology
 public import FLT.Mazur.GenusOneGroupPointPowers
 public import FLT.Mazur.GenusOneGroupPoleBasis
@@ -6886,6 +6891,7 @@ public import FLT.Mazur.ProperLineChartFiberVanishing
 public import FLT.Mazur.ProperLineCoefficientFiberComparison
 public import FLT.Mazur.ProperLineFiberVanishing
 public import FLT.Mazur.ProperLineGeometricFiberLocus
+public import FLT.Mazur.ProperLineGeometricFieldTests
 public import FLT.Mazur.ProperLineGeometricSectionRank
 public import FLT.Mazur.ProperLineGlobalAcyclicOpen
 public import FLT.Mazur.ProperLineGlobalRankOneCriterion
@@ -7054,6 +7060,11 @@ public import FLT.Mazur.RelativeFiberMorphism
 public import FLT.Mazur.RelativeFiberNakayama
 public import FLT.Mazur.RelativeFppfComparisonCover
 public import FLT.Mazur.RelativeFppfLocalSubfunctor
+public import FLT.Mazur.RelativeGenusOnePointFibers
+public import FLT.Mazur.RelativeGenusOnePointFrames
+public import FLT.Mazur.RelativeGenusOnePointGeometric
+public import FLT.Mazur.RelativeGenusOnePointLeading
+public import FLT.Mazur.RelativeGenusOnePointSections
 public import FLT.Mazur.RelativeIdealAmbientHom
 public import FLT.Mazur.RelativeIdealAmbientIsoSquare
 public import FLT.Mazur.RelativeIdealAmbientPullback
@@ -7595,6 +7606,7 @@ public import FLT.Mazur.SectionLineChartOverlap
 public import FLT.Mazur.SectionLinePointBaseChange
 public import FLT.Mazur.SectionLinePointOverlapEquality
 public import FLT.Mazur.SectionLinePullbackFraction
+public import FLT.Mazur.SectionPointPowerBaseChange
 public import FLT.Mazur.SectionPowerGluing
 public import FLT.Mazur.SectionProjectiveFiniteNeighborhood
 public import FLT.Mazur.SectionProjectiveImmersion
