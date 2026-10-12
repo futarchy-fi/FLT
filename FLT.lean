@@ -2923,6 +2923,7 @@ public import FLT.Mazur.AffineTripleUnitCoefficients
 public import FLT.Mazur.AffineTrivialLineSectionOpen
 public import FLT.Mazur.AllAffineAmbientCharts
 public import FLT.Mazur.AmbientHilbertChartFamilyPullback
+public import FLT.Mazur.AmbientHilbertChartImage
 public import FLT.Mazur.AmbientHilbertChartParameterEquality
 public import FLT.Mazur.AmbientHilbertChartSupport
 public import FLT.Mazur.AmbientHilbertChartSystem
