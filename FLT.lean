@@ -5486,6 +5486,7 @@ public import FLT.Mazur.NeronPolygonRotation
 public import FLT.Mazur.NeronPolygonRotationAction
 public import FLT.Mazur.NeronPolygonScaling
 public import FLT.Mazur.NestedOpenCohomologyCoherence
+public import FLT.Mazur.NeutralTwistDirectImage
 public import FLT.Mazur.NodalFiberAlgebra
 public import FLT.Mazur.NodalFiberBoundedParameterTransport
 public import FLT.Mazur.NodalFiberNodeComparison
@@ -7071,6 +7072,11 @@ public import FLT.Mazur.RelativeFiberMorphism
 public import FLT.Mazur.RelativeFiberNakayama
 public import FLT.Mazur.RelativeFppfComparisonCover
 public import FLT.Mazur.RelativeFppfLocalSubfunctor
+public import FLT.Mazur.RelativeGenusOneCanonicalBasis
+public import FLT.Mazur.RelativeGenusOneCanonicalConstants
+public import FLT.Mazur.RelativeGenusOneCanonicalLine
+public import FLT.Mazur.RelativeGenusOneInitialPoleStep
+public import FLT.Mazur.RelativeGenusOneLowPoleBasis
 public import FLT.Mazur.RelativeGenusOnePointFibers
 public import FLT.Mazur.RelativeGenusOnePointFrames
 public import FLT.Mazur.RelativeGenusOnePointGeometric
@@ -7551,6 +7557,7 @@ public import FLT.Mazur.SectionConditionDimension
 public import FLT.Mazur.SectionCoverCoordinates
 public import FLT.Mazur.SectionCoverDiscrepancy
 public import FLT.Mazur.SectionDivisorLeadingSections
+public import FLT.Mazur.SectionDivisorNeutralTwist
 public import FLT.Mazur.SectionDivisorQuotientLine
 public import FLT.Mazur.SectionDivisors
 public import FLT.Mazur.SectionGeneratorScalar
@@ -7622,6 +7629,7 @@ public import FLT.Mazur.SectionLinePointOverlapEquality
 public import FLT.Mazur.SectionLinePullbackFraction
 public import FLT.Mazur.SectionPointPowerBaseChange
 public import FLT.Mazur.SectionPoleAdaptedBasis
+public import FLT.Mazur.SectionPoleBaseChangeFrames
 public import FLT.Mazur.SectionPoleLeadingRestriction
 public import FLT.Mazur.SectionPoleLineFrames
 public import FLT.Mazur.SectionPoleSplit
