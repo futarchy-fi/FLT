@@ -7080,6 +7080,7 @@ public import FLT.Mazur.RelativeGenusOneChangedBasis
 public import FLT.Mazur.RelativeGenusOneFramedProducts
 public import FLT.Mazur.RelativeGenusOneInitialPoleStep
 public import FLT.Mazur.RelativeGenusOneLowPoleBasis
+public import FLT.Mazur.RelativeGenusOneMonomialBasis
 public import FLT.Mazur.RelativeGenusOnePointFibers
 public import FLT.Mazur.RelativeGenusOnePointFrames
 public import FLT.Mazur.RelativeGenusOnePointGeometric
