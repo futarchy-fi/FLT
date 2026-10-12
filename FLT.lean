@@ -4486,12 +4486,18 @@ public import FLT.Mazur.GradedQuotientTensorComparison
 public import FLT.Mazur.GrassmannianAmbientBaseChange
 public import FLT.Mazur.GrassmannianAmbientBlocks
 public import FLT.Mazur.GrassmannianAmbientChartIndex
+public import FLT.Mazur.GrassmannianAmbientChartMap
+public import FLT.Mazur.GrassmannianAmbientChartNaturality
 public import FLT.Mazur.GrassmannianAmbientChartPoints
 public import FLT.Mazur.GrassmannianAmbientChartRepresentation
+public import FLT.Mazur.GrassmannianAmbientCoordinateMap
 public import FLT.Mazur.GrassmannianAmbientGlueData
 public import FLT.Mazur.GrassmannianAmbientGluedBase
 public import FLT.Mazur.GrassmannianAmbientIdentity
 public import FLT.Mazur.GrassmannianAmbientIndexBaseChange
+public import FLT.Mazur.GrassmannianAmbientNormalizedQuotient
+public import FLT.Mazur.GrassmannianAmbientOverlapRepresentation
+public import FLT.Mazur.GrassmannianAmbientPointTransition
 public import FLT.Mazur.GrassmannianAmbientPointTransport
 public import FLT.Mazur.GrassmannianAmbientQuotientCover
 public import FLT.Mazur.GrassmannianAmbientTransition
@@ -4511,6 +4517,7 @@ public import FLT.Mazur.GrassmannianLocalizedAmbientTransition
 public import FLT.Mazur.GrassmannianLocalizedColumnBasis
 public import FLT.Mazur.GrassmannianLocalizedTransition
 public import FLT.Mazur.GrassmannianLocalizedTransitionScheme
+public import FLT.Mazur.GrassmannianNormalizedBaseChange
 public import FLT.Mazur.GrassmannianOriginalBaseChartCover
 public import FLT.Mazur.GrassmannianOverlapPolynomial
 public import FLT.Mazur.GrassmannianOverlapTransitionEquiv
