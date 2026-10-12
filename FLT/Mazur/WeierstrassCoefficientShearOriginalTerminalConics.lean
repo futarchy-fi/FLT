@@ -108,7 +108,7 @@ local notation "C" => coefficientShearRetainedScaleOneConic hπ data K 0
           globalSuccessiveTensorChart hπ data K j hj := by
   rw [coefficientShearRetainedScaleOneConic, Category.assoc,
     coefficientShearTerminalRetainedTensor_original]
-  rw [← zeroResidueConicImmersion_eq_shear D hk d hp h3 h4 hr hk0 hs,
+  rw [← zeroResidueConicImmersion_transport_eq_shear D hk d hp h3 h4 hr hk0 hs,
     Category.assoc]
 
 variable (hu : IsUnit (rootShearCurve (W.map (residue R)) 0).a₁)

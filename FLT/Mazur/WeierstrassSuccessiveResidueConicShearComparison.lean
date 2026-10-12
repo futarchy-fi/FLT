@@ -81,7 +81,7 @@ local notation "F" => tensorShearScaleOneConicMap W (π ^ k) π d.b3 d.b4 d.b6
   K 0 hs hp h3 h4 hr
 
 /-- The separate scale-one restriction preserves all three original tensor generators. -/
-theorem zeroResidueConicMap_eq_shear :
+theorem zeroResidueConicMap_transport_eq_shear :
     (H).toAlgHom.comp (zeroResidueConicMap D hk0 hk d) = F := by
   apply Algebra.TensorProduct.ext_ring
   apply hom_ext
@@ -102,7 +102,7 @@ theorem zeroResidueConicMap_eq_shear :
     exact map_zero _
 
 /-- The complete scale-one conic keeps its original geometric immersion. -/
-theorem zeroResidueConicImmersion_eq_shear :
+theorem zeroResidueConicImmersion_transport_eq_shear :
     Spec.map (CommRingCat.ofHom (H).toAlgHom.toRingHom) ≫
         zeroResidueConicImmersion D k hk0 hk d.b3 d.b4 d.b6 d.factor3 d.factor4 =
       tensorShearScaleOneConicImmersion W (π ^ k) π d.b3 d.b4 d.b6
@@ -110,7 +110,7 @@ theorem zeroResidueConicImmersion_eq_shear :
   rw [← zeroResidueConicMap_spec D hk0 hk d, tensorShearScaleOneConicImmersion_eq_spec,
     ← Spec.map_comp]
   exact congrArg (fun f => Spec.map (CommRingCat.ofHom (AlgHom.toRingHom f)))
-    (zeroResidueConicMap_eq_shear D hk d hp h3 h4 hr hk0 hs)
+    (zeroResidueConicMap_transport_eq_shear D hk d hp h3 h4 hr hk0 hs)
 end ScaleOne
 
 end FLT.Mazur.WeierstrassSuccessiveX
