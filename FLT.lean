@@ -6113,6 +6113,7 @@ public import FLT.Mazur.PolygonProjectiveFixedPointFree
 public import FLT.Mazur.PolygonProjectiveFullCoefficientParameter
 public import FLT.Mazur.PolygonProjectiveNormalizedLabels
 public import FLT.Mazur.PolygonProjectiveNormalizedParameter
+public import FLT.Mazur.PolygonProjectiveNormalizedRetraction
 public import FLT.Mazur.PolygonProjectiveRotationNormalization
 public import FLT.Mazur.PolygonProjectiveSquareComparison
 public import FLT.Mazur.PolygonProjectiveSquareMarking
