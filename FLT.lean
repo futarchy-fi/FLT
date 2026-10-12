@@ -4000,6 +4000,7 @@ public import FLT.Mazur.EtaleCoordinate
 public import FLT.Mazur.EtaleCoordinateSlice
 public import FLT.Mazur.EtaleCurveLocalDomain
 public import FLT.Mazur.EtaleCurveValuation
+public import FLT.Mazur.EtaleCyclicSubgroupLocalPresentation
 public import FLT.Mazur.EtaleDimGe
 public import FLT.Mazur.EtaleDimLe
 public import FLT.Mazur.EtaleFiniteQuotientBranch
