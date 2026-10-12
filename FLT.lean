@@ -7058,6 +7058,7 @@ public import FLT.Mazur.RelativeFppfLocalSubfunctor
 public import FLT.Mazur.RelativeGenusOnePointFibers
 public import FLT.Mazur.RelativeGenusOnePointFrames
 public import FLT.Mazur.RelativeGenusOnePointGeometric
+public import FLT.Mazur.RelativeGenusOnePointLeading
 public import FLT.Mazur.RelativeGenusOnePointSections
 public import FLT.Mazur.RelativeIdealAmbientHom
 public import FLT.Mazur.RelativeIdealAmbientIsoSquare
