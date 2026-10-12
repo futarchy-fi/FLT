@@ -8062,6 +8062,7 @@ public import FLT.Mazur.SmoothCurveCommonOpenIso
 public import FLT.Mazur.SmoothCurveDimension
 public import FLT.Mazur.SmoothCurveFiberCartier
 public import FLT.Mazur.SmoothCurveIrreducible
+public import FLT.Mazur.SmoothCurveMultiplicationPullback
 public import FLT.Mazur.SmoothCurvePicardDegree
 public import FLT.Mazur.SmoothCurvePureDimension
 public import FLT.Mazur.SmoothCurveSquareGeometricIntegral
