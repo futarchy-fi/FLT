@@ -4090,6 +4090,7 @@ public import FLT.Mazur.ExactFunctorInjectiveExt
 public import FLT.Mazur.ExactOrderCyclicPowers
 public import FLT.Mazur.ExactSourceDenominatorLift
 public import FLT.Mazur.FCurveContracts
+public import FLT.Mazur.FaithfulNeighborhoodCurve
 public import FLT.Mazur.FaithfulTensorVanishing
 public import FLT.Mazur.FaithfullyFlatFinitePresentation
 public import FLT.Mazur.FaithfullyFlatInvertible
