@@ -4531,6 +4531,7 @@ public import FLT.Mazur.GrassmannianAmbientClassifyingInjective
 public import FLT.Mazur.GrassmannianAmbientClassifyingMap
 public import FLT.Mazur.GrassmannianAmbientClassifyingNaturality
 public import FLT.Mazur.GrassmannianAmbientCommonTest
+public import FLT.Mazur.GrassmannianAmbientCompositionLaw
 public import FLT.Mazur.GrassmannianAmbientCoordinateMap
 public import FLT.Mazur.GrassmannianAmbientGlueData
 public import FLT.Mazur.GrassmannianAmbientGluedBase
@@ -4577,6 +4578,7 @@ public import FLT.Mazur.GrassmannianMorphismRecoveredPoint
 public import FLT.Mazur.GrassmannianMorphismRelation
 public import FLT.Mazur.GrassmannianMorphismSheafTransition
 public import FLT.Mazur.GrassmannianMorphismTensorCompatibility
+public import FLT.Mazur.GrassmannianNamedAmbientRefinement
 public import FLT.Mazur.GrassmannianNamedRefinement
 public import FLT.Mazur.GrassmannianNormalizedBaseChange
 public import FLT.Mazur.GrassmannianNumeratorTransport
@@ -4601,6 +4603,7 @@ public import FLT.Mazur.GrassmannianQuotientSheaf
 public import FLT.Mazur.GrassmannianQuotientSheafTransition
 public import FLT.Mazur.GrassmannianScalarExtension
 public import FLT.Mazur.GrassmannianSchemeAmbientQuotient
+public import FLT.Mazur.GrassmannianSchemeQuotientTest
 public import FLT.Mazur.GrassmannianSelectedAmbientIndex
 public import FLT.Mazur.GrassmannianSelectedColumnsLocalization
 public import FLT.Mazur.GrassmannianSheafRefinementComparison
@@ -4615,6 +4618,8 @@ public import FLT.Mazur.GrassmannianTripleOverlapOriginalPullback
 public import FLT.Mazur.GrassmannianTripleOverlapRestriction
 public import FLT.Mazur.GrassmannianTripleOverlapRing
 public import FLT.Mazur.GrassmannianTripleOverlapScheme
+public import FLT.Mazur.GrassmannianWholeOverlapCocycle
+public import FLT.Mazur.GrassmannianWholeOverlapProjection
 public import FLT.Mazur.GrassmannianWholeOverlapTransition
 public import FLT.Mazur.GroupMarkingBaseChange
 public import FLT.Mazur.GroupMarkingBaseChangeInverse
@@ -7641,6 +7646,10 @@ public import FLT.Mazur.SeparatedOverlapPullback
 public import FLT.Mazur.SequentialCechLocalization
 public import FLT.Mazur.SequentialCochainBoundary
 public import FLT.Mazur.SequentialFiniteProducts
+public import FLT.Mazur.SheafPullbackAmbientCoherence
+public import FLT.Mazur.SheafPullbackAmbientMatch
+public import FLT.Mazur.SheafPullbackAmbientNormalization
+public import FLT.Mazur.SheafPullbackAmbientSectionMatch
 public import FLT.Mazur.SheafPullbackCanonicalRecovery
 public import FLT.Mazur.SheafPullbackCoordinateRecovery
 public import FLT.Mazur.SheafPullbackCoordinateRecoveryNaturality
