@@ -7916,6 +7916,7 @@ public import FLT.Mazur.UniversalWeierstrassCyclicMarkedIsoPullback
 public import FLT.Mazur.UniversalWeierstrassCyclicModularClasses
 public import FLT.Mazur.UniversalWeierstrassCyclicModularDescent
 public import FLT.Mazur.UniversalWeierstrassCyclicModularRelation
+public import FLT.Mazur.UniversalWeierstrassCyclicModularRepresentation
 public import FLT.Mazur.UniversalWeierstrassCyclicNaturalFixedPoint
 public import FLT.Mazur.UniversalWeierstrassCyclicNaturalGroup
 public import FLT.Mazur.UniversalWeierstrassCyclicNaturalGroupMarking
