@@ -5402,6 +5402,7 @@ public import FLT.Mazur.ModuleSheafGluingTransportMap
 public import FLT.Mazur.ModuleSheafGluingTransportProjection
 public import FLT.Mazur.ModuleSheafIdentityCocycle
 public import FLT.Mazur.ModuleSheafIdentityRecovery
+public import FLT.Mazur.ModuleSheafImageChartGluing
 public import FLT.Mazur.ModuleSheafImageIsoProjectionRecovery
 public import FLT.Mazur.ModuleSheafImageOpenSections
 public import FLT.Mazur.ModuleSheafInternalHom
