@@ -2800,6 +2800,8 @@ public import FLT.Mazur.AffineOpenCoverGluingIso
 public import FLT.Mazur.AffineOpenCoverTestRecovery
 public import FLT.Mazur.AffineOpenCoverTestRefinement
 public import FLT.Mazur.AffineOpenDenominators
+public import FLT.Mazur.AffineOpenFinitePolynomialPresentation
+public import FLT.Mazur.AffineOpenFiniteQuotientChart
 public import FLT.Mazur.AffineOpenImmersionLocalizationCriterion
 public import FLT.Mazur.AffineOpenQuotientPresentation
 public import FLT.Mazur.AffineOverlapDiagonal
@@ -4583,6 +4585,11 @@ public import FLT.Mazur.HilbertCommonAmbientOverlap
 public import FLT.Mazur.HilbertCommonOpenRestriction
 public import FLT.Mazur.HilbertDivisorDegreePresentation
 public import FLT.Mazur.HilbertFaithfullyFlatTupleBasis
+public import FLT.Mazur.HilbertFamilyBoundedEvaluation
+public import FLT.Mazur.HilbertFamilyFiniteQuotient
+public import FLT.Mazur.HilbertFamilyGrassmannianParameter
+public import FLT.Mazur.HilbertFamilyTruncatedRelations
+public import FLT.Mazur.HilbertFiniteAmbientPresentation
 public import FLT.Mazur.HilbertIntrinsicBasisBaseChange
 public import FLT.Mazur.HilbertIntrinsicBasisEquiv
 public import FLT.Mazur.HilbertIntrinsicBasisGlobal
@@ -4663,6 +4670,7 @@ public import FLT.Mazur.HilbertPrincipalLocalizationScalars
 public import FLT.Mazur.HilbertPrincipalRestriction
 public import FLT.Mazur.HilbertQuotientDegreeBound
 public import FLT.Mazur.HilbertQuotientDegreeFiltration
+public import FLT.Mazur.HilbertSameAmbientChartIso
 public import FLT.Mazur.HilbertSupportOpenLattice
 public import FLT.Mazur.HilbertSupportOpenPullback
 public import FLT.Mazur.HilbertTruncatedIdealDetection
