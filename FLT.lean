@@ -6005,6 +6005,7 @@ public import FLT.Mazur.PolygonPowerNodeWeights
 public import FLT.Mazur.PolygonPowerSeriesBase
 public import FLT.Mazur.PolygonPowerSeriesSystem
 public import FLT.Mazur.PolygonProductAtlas
+public import FLT.Mazur.PolygonProjectiveCyclicPoints
 public import FLT.Mazur.PolygonProjectiveFixedPointFree
 public import FLT.Mazur.PolygonProjectiveRotationNormalization
 public import FLT.Mazur.PolygonProjectiveTranslation
