@@ -9375,6 +9375,7 @@ public import FLT.Mazur.WeierstrassProjectiveCenterIdeal
 public import FLT.Mazur.WeierstrassProjectiveChartAlgebra
 public import FLT.Mazur.WeierstrassProjectiveChartEquation
 public import FLT.Mazur.WeierstrassProjectiveChartProduct
+public import FLT.Mazur.WeierstrassProjectiveCoefficientSquare
 public import FLT.Mazur.WeierstrassProjectiveGroupComparison
 public import FLT.Mazur.WeierstrassProjectivePointComparison
 public import FLT.Mazur.WeierstrassProjectivePointNaturality
