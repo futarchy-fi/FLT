@@ -7351,6 +7351,7 @@ public import FLT.Mazur.RelativeRelationFpqcInvariantQuotient
 public import FLT.Mazur.RelativeRelationFpqcOrbitComparison
 public import FLT.Mazur.RelativeRelationFpqcSectionComparison
 public import FLT.Mazur.RelativeRelationInvariantAffineComparison
+public import FLT.Mazur.RelativeRelationInvariantGlobalSections
 public import FLT.Mazur.RelativeRelationInvariantLocallyRinged
 public import FLT.Mazur.RelativeRelationInvariantSectionRings
 public import FLT.Mazur.RelativeRelationInvariantSections
