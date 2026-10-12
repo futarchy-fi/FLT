@@ -4396,6 +4396,7 @@ public import FLT.Mazur.GeometricAcyclicPicardSubfunctor
 public import FLT.Mazur.GeometricAcyclicRankOne
 public import FLT.Mazur.GeometricAcyclicRankOneLocus
 public import FLT.Mazur.GeometricFiberSmoothLineParameters
+public import FLT.Mazur.GeometricFixedPointTranslation
 public import FLT.Mazur.GeometricFppfCoverSection
 public import FLT.Mazur.GeometricHilbertTranslation
 public import FLT.Mazur.GeometricOpenFactorization
