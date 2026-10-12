@@ -4436,6 +4436,7 @@ public import FLT.Mazur.GenusOneGroupPointCohomology
 public import FLT.Mazur.GenusOneGroupPointPowers
 public import FLT.Mazur.GenusOneGroupPoleBasis
 public import FLT.Mazur.GenusOneGroupPoleFunctions
+public import FLT.Mazur.GenusOneGroupProjectiveExtension
 public import FLT.Mazur.GenusOneGroupWeierstrassEquation
 public import FLT.Mazur.GenusOneNonspecialPoint
 public import FLT.Mazur.GeometricAcyclicFppfLocus
