@@ -9793,6 +9793,7 @@ public import FLT.Mazur.WeierstrassOriginPunctureGeometry
 public import FLT.Mazur.WeierstrassOriginPunctureIntersection
 public import FLT.Mazur.WeierstrassOriginWeightedPoles
 public import FLT.Mazur.WeierstrassOriginalAuxiliaryCover
+public import FLT.Mazur.WeierstrassOriginalCyclicCover
 public import FLT.Mazur.WeierstrassOverlapDiagonalAlgebra
 public import FLT.Mazur.WeierstrassPartialAdditionSmoothInputs
 public import FLT.Mazur.WeierstrassPartialAdditionSmoothResidues
