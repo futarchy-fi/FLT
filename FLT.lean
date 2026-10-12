@@ -7898,6 +7898,7 @@ public import FLT.Mazur.UniversalWeierstrassFourTorsionUnramified
 public import FLT.Mazur.UniversalWeierstrassFullNormalizationParameter
 public import FLT.Mazur.UniversalWeierstrassGeometricLevelFour
 public import FLT.Mazur.UniversalWeierstrassMarkedCoordinateRigidity
+public import FLT.Mazur.UniversalWeierstrassNormalizedCoefficientTransport
 public import FLT.Mazur.UniversalWeierstrassNormalizedSlice
 public import FLT.Mazur.UniversalWeierstrassNormalizedSliceFixed
 public import FLT.Mazur.UniversalWeierstrassNormalizedSliceFunctor
