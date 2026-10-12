@@ -8059,6 +8059,7 @@ public import FLT.Mazur.WeierstrassCoefficientMonoidalComparison
 public import FLT.Mazur.WeierstrassCoefficientNegation
 public import FLT.Mazur.WeierstrassCoefficientProductMorphism
 public import FLT.Mazur.WeierstrassCoefficientSecant
+public import FLT.Mazur.WeierstrassCoefficientShearAtlas
 public import FLT.Mazur.WeierstrassCoefficientShearCoverage
 public import FLT.Mazur.WeierstrassCoefficientZero
 public import FLT.Mazur.WeierstrassConicZeroAffineParameter
