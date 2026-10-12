@@ -2968,6 +2968,7 @@ public import FLT.Mazur.AmpleChartGeneratorRatios
 public import FLT.Mazur.AmpleChartSectionExtension
 public import FLT.Mazur.AmpleCoherentVanishing
 public import FLT.Mazur.AmpleCommonDegree
+public import FLT.Mazur.AmpleCyclicClassEtale
 public import FLT.Mazur.AmpleCyclicClassPresheaf
 public import FLT.Mazur.AmpleCyclicLevel
 public import FLT.Mazur.AmpleDivisorComplementAffine
@@ -5700,6 +5701,7 @@ public import FLT.Mazur.OverPullbackCoproduct
 public import FLT.Mazur.OverPullbackLocalPushout
 public import FLT.Mazur.OverPullbackSection
 public import FLT.Mazur.OverPullbackSectionComposition
+public import FLT.Mazur.OverPullbackSectionMonoidal
 public import FLT.Mazur.PadicValuationArithmetic
 public import FLT.Mazur.PadicValuationRing
 public import FLT.Mazur.PicardDegreeFieldBaseChange
@@ -6994,6 +6996,8 @@ public import FLT.Mazur.RelativeCartierOriginalSquare
 public import FLT.Mazur.RelativeCoproductComponentPullback
 public import FLT.Mazur.RelativeCoproductPullCover
 public import FLT.Mazur.RelativeCyclicSubgroup
+public import FLT.Mazur.RelativeCyclicSubgroupComparison
+public import FLT.Mazur.RelativeCyclicSubgroupPullbackComparison
 public import FLT.Mazur.RelativeDimensionBaseChangeOpen
 public import FLT.Mazur.RelativeDirectImageComposition
 public import FLT.Mazur.RelativeDirectImageForgetting
@@ -7626,6 +7630,7 @@ public import FLT.Mazur.SmoothFiniteCoefficientBranch
 public import FLT.Mazur.SmoothFiniteFlatIdealCharts
 public import FLT.Mazur.SmoothFiniteSubgroupAmple
 public import FLT.Mazur.SmoothFiniteSubschemeCartier
+public import FLT.Mazur.SmoothGeneralizedCurveGroupIso
 public import FLT.Mazur.SmoothGeometricAcyclicRankOne
 public import FLT.Mazur.SmoothGeometricFiniteSeparablePoints
 public import FLT.Mazur.SmoothGeometricSeparablePoints
@@ -7944,6 +7949,8 @@ public import FLT.Mazur.UniversalWeierstrassCyclicModularClasses
 public import FLT.Mazur.UniversalWeierstrassCyclicModularDescent
 public import FLT.Mazur.UniversalWeierstrassCyclicModularRelation
 public import FLT.Mazur.UniversalWeierstrassCyclicModularRepresentation
+public import FLT.Mazur.UniversalWeierstrassCyclicModuliBridge
+public import FLT.Mazur.UniversalWeierstrassCyclicModuliEtaleImage
 public import FLT.Mazur.UniversalWeierstrassCyclicNaturalFixedPoint
 public import FLT.Mazur.UniversalWeierstrassCyclicNaturalGroup
 public import FLT.Mazur.UniversalWeierstrassCyclicNaturalGroupMarking
@@ -7957,6 +7964,7 @@ public import FLT.Mazur.UniversalWeierstrassCyclicNormalizedMarking
 public import FLT.Mazur.UniversalWeierstrassCyclicNormalizedSlice
 public import FLT.Mazur.UniversalWeierstrassCyclicNormalizedValueCubic
 public import FLT.Mazur.UniversalWeierstrassCyclicOriginalMarking
+public import FLT.Mazur.UniversalWeierstrassCyclicOriginalModuli
 public import FLT.Mazur.UniversalWeierstrassCyclicProperPresentationInvariant
 public import FLT.Mazur.UniversalWeierstrassCyclicRelationFamilyCoherence
 public import FLT.Mazur.UniversalWeierstrassCyclicRelationFamilyIso
@@ -7964,8 +7972,11 @@ public import FLT.Mazur.UniversalWeierstrassCyclicRelationNormalizedMarking
 public import FLT.Mazur.UniversalWeierstrassCyclicRelationOriginalMarking
 public import FLT.Mazur.UniversalWeierstrassCyclicSliceFunctor
 public import FLT.Mazur.UniversalWeierstrassCyclicSliceRetraction
+public import FLT.Mazur.UniversalWeierstrassCyclicSourceCurve
 public import FLT.Mazur.UniversalWeierstrassCyclicSourceGroupIso
 public import FLT.Mazur.UniversalWeierstrassCyclicSourceMarking
+public import FLT.Mazur.UniversalWeierstrassCyclicSourceModuli
+public import FLT.Mazur.UniversalWeierstrassCyclicSourceModuliPullback
 public import FLT.Mazur.UniversalWeierstrassCyclicSubgroup
 public import FLT.Mazur.UniversalWeierstrassEquationCoefficientProjection
 public import FLT.Mazur.UniversalWeierstrassFourTorsionEtale
