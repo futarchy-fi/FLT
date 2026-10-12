@@ -3013,6 +3013,7 @@ public import FLT.Mazur.ArtinianRelativeSectionCriterion
 public import FLT.Mazur.ArtinianSectionKernel
 public import FLT.Mazur.AuxiliaryCartesianGroupParameter
 public import FLT.Mazur.AuxiliaryCartesianOriginalParameter
+public import FLT.Mazur.AuxiliaryCartesianParameterEquivalence
 public import FLT.Mazur.AuxiliaryCoprimeFieldMarking
 public import FLT.Mazur.AuxiliaryCoprimeFieldNaturality
 public import FLT.Mazur.AuxiliaryLevelFaithfulOpen
@@ -6109,6 +6110,8 @@ public import FLT.Mazur.PolygonProjectiveCyclicPoints
 public import FLT.Mazur.PolygonProjectiveExactTorsion
 public import FLT.Mazur.PolygonProjectiveFixedPointFree
 public import FLT.Mazur.PolygonProjectiveFullCoefficientParameter
+public import FLT.Mazur.PolygonProjectiveNormalizedLabels
+public import FLT.Mazur.PolygonProjectiveNormalizedParameter
 public import FLT.Mazur.PolygonProjectiveRotationNormalization
 public import FLT.Mazur.PolygonProjectiveSquareComparison
 public import FLT.Mazur.PolygonProjectiveSquareMarking
@@ -7844,10 +7847,19 @@ public import FLT.Mazur.UniversalWeierstrassAuxiliaryTorsionDisjoint
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryTorsionSections
 public import FLT.Mazur.UniversalWeierstrassCyclicAuxiliary
 public import FLT.Mazur.UniversalWeierstrassCyclicLevel
+public import FLT.Mazur.UniversalWeierstrassCyclicNaturalGroup
+public import FLT.Mazur.UniversalWeierstrassCyclicNaturalGroupMarking
+public import FLT.Mazur.UniversalWeierstrassCyclicNormalizationMap
+public import FLT.Mazur.UniversalWeierstrassCyclicNormalizationMapLabels
+public import FLT.Mazur.UniversalWeierstrassCyclicNormalizationPoint
+public import FLT.Mazur.UniversalWeierstrassCyclicNormalizedMarking
+public import FLT.Mazur.UniversalWeierstrassCyclicNormalizedSlice
+public import FLT.Mazur.UniversalWeierstrassCyclicOriginalMarking
 public import FLT.Mazur.UniversalWeierstrassCyclicSubgroup
 public import FLT.Mazur.UniversalWeierstrassFourTorsionEtale
 public import FLT.Mazur.UniversalWeierstrassFourTorsionFinite
 public import FLT.Mazur.UniversalWeierstrassFourTorsionUnramified
+public import FLT.Mazur.UniversalWeierstrassFullNormalizationParameter
 public import FLT.Mazur.UniversalWeierstrassGeometricLevelFour
 public import FLT.Mazur.UniversalWeierstrassMarkedCoordinateRigidity
 public import FLT.Mazur.UniversalWeierstrassNormalizedSlice
@@ -9806,6 +9818,7 @@ public import FLT.Mazur.WeierstrassVariableChangeCubicSubstitution
 public import FLT.Mazur.WeierstrassVariableChangeFrame
 public import FLT.Mazur.WeierstrassVariableChangeGroup
 public import FLT.Mazur.WeierstrassVariableChangeHomogeneous
+public import FLT.Mazur.WeierstrassVariableChangeIdentity
 public import FLT.Mazur.WeierstrassVariableChangeIntegralEquation
 public import FLT.Mazur.WeierstrassVariableChangeIntegralIso
 public import FLT.Mazur.WeierstrassVariableChangeIntegralMorphism
