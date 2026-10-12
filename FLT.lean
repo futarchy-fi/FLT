@@ -9338,6 +9338,7 @@ public import FLT.Mazur.WeierstrassNormalizedFrameTransport
 public import FLT.Mazur.WeierstrassNormalizedFrameUnique
 public import FLT.Mazur.WeierstrassNormalizedOriginIsomorphism
 public import FLT.Mazur.WeierstrassNormalizedProjectivePoint
+public import FLT.Mazur.WeierstrassOlderCoefficientShearGlobalChart
 public import FLT.Mazur.WeierstrassOrdinaryCenterIdeal
 public import FLT.Mazur.WeierstrassOrdinaryCenterResidueSlope
 public import FLT.Mazur.WeierstrassOrdinaryChartSpecialization
