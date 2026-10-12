@@ -74,7 +74,7 @@ def completeProjectiveSquareIso (i : Fin n) : integralCurve (W i) ≅ integralCu
     (completeCartesianPointToProjective_marking K n h L a ha r s ht i)
 
 /-- The original square comparison itself preserves the two constructed elliptic group laws. -/
-def completeProjectiveSquareGroupIso (i : Fin n) :
+irreducible_def completeProjectiveSquareGroupIso (i : Fin n) :
     completeProjectiveGroup K n h L a ha p q hs i ≅
       completeProjectiveGroup K n h L a ha r s ht i :=
   originIsoGroupIso (W i) (V i) _ _
@@ -85,6 +85,8 @@ def completeProjectiveSquareGroupIso (i : Fin n) :
 /-- The group upgrade retains exactly the original projective comparison morphism. -/
 theorem completeProjectiveSquareGroupIso_hom (i : Fin n) :
     (completeProjectiveSquareGroupIso K n h L a ha p q hs r s ht i).hom.hom.hom.hom.left =
-      (completeProjectiveSquareIso K n h L a ha p q hs r s ht i).hom := rfl
+      (completeProjectiveSquareIso K n h L a ha p q hs r s ht i).hom := by
+  rw [completeProjectiveSquareGroupIso_def]
+  rfl
 
 end FLT.Mazur.PolygonInfinitesimalStages
