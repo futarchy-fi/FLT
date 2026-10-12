@@ -5818,6 +5818,7 @@ public import FLT.Mazur.PointNormalizedDivisorUniqueness
 public import FLT.Mazur.PointNormalizedFiberCohomology
 public import FLT.Mazur.PointNormalizedLineBaseChange
 public import FLT.Mazur.PointNormalizedLineBundle
+public import FLT.Mazur.PointedCubicBaseGroupIso
 public import FLT.Mazur.PointedCurveLargeDegree
 public import FLT.Mazur.PointedCurveUniformAcyclicity
 public import FLT.Mazur.PointedCurveUniformRiemannRoch
