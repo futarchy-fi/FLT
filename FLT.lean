@@ -7739,6 +7739,7 @@ public import FLT.Mazur.SheafPullbackAmbientMatch
 public import FLT.Mazur.SheafPullbackAmbientNormalization
 public import FLT.Mazur.SheafPullbackAmbientRefinement
 public import FLT.Mazur.SheafPullbackAmbientSectionMatch
+public import FLT.Mazur.SheafPullbackAmbientTestRefinement
 public import FLT.Mazur.SheafPullbackCanonicalRecovery
 public import FLT.Mazur.SheafPullbackCoordinateRecovery
 public import FLT.Mazur.SheafPullbackCoordinateRecoveryNaturality
