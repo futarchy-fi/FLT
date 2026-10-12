@@ -8539,6 +8539,7 @@ public import FLT.Mazur.WeierstrassDividedRetainedLineAt
 public import FLT.Mazur.WeierstrassDividedRetainedLineSeparation
 public import FLT.Mazur.WeierstrassDividedRetainedZeroExteriorLine
 public import FLT.Mazur.WeierstrassDividedRetentionSuccessor
+public import FLT.Mazur.WeierstrassDividedShearData
 public import FLT.Mazur.WeierstrassDividedSkippedAtlasRange
 public import FLT.Mazur.WeierstrassDividedSkippedChartSupport
 public import FLT.Mazur.WeierstrassDividedSkippedTensorIntersection
