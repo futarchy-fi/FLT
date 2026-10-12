@@ -6857,6 +6857,7 @@ public import FLT.Mazur.ProperGlobalRankOnePointedDivisor
 public import FLT.Mazur.ProperGlobalSectionCartier
 public import FLT.Mazur.ProperGlobalSectionFinite
 public import FLT.Mazur.ProperGlobalSplitDirectImageSections
+public import FLT.Mazur.ProperGroupPointedRigidity
 public import FLT.Mazur.ProperImmersedCover
 public import FLT.Mazur.ProperIntegralConstantSections
 public import FLT.Mazur.ProperLineAcyclicLocus
