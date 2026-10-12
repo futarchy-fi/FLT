@@ -4075,6 +4075,7 @@ public import FLT.Mazur.FiniteDiagramUnitDescent
 public import FLT.Mazur.FiniteDivisorCohomology
 public import FLT.Mazur.FiniteDivisorComponentAvoidance
 public import FLT.Mazur.FiniteDivisorLengthAdditivity
+public import FLT.Mazur.FiniteDivisorLengthOne
 public import FLT.Mazur.FiniteDivisorRationalSupport
 public import FLT.Mazur.FiniteEvaluationLocus
 public import FLT.Mazur.FiniteFamilySupportBaseChange
@@ -4406,6 +4407,7 @@ public import FLT.Mazur.GeneralizedCurveDivisorPullback
 public import FLT.Mazur.GeneralizedCurveFiberAmple
 public import FLT.Mazur.GeneralizedCurveFiniteSubgroup
 public import FLT.Mazur.GeneralizedCurveGeneratorTransport
+public import FLT.Mazur.GeneralizedCurveGeometricAffineChart
 public import FLT.Mazur.GeneralizedCurveGraph
 public import FLT.Mazur.GeneralizedCurveGraphBaseChange
 public import FLT.Mazur.GeneralizedCurveGraphTransport
@@ -4427,6 +4429,14 @@ public import FLT.Mazur.GenericIdealSupport
 public import FLT.Mazur.GenericLineTrivialization
 public import FLT.Mazur.GenericSectionUniqueness
 public import FLT.Mazur.GenericWitnessIdealVanishing
+public import FLT.Mazur.GenusOneGroupAffineChart
+public import FLT.Mazur.GenusOneGroupCoordinateRing
+public import FLT.Mazur.GenusOneGroupPointCohomology
+public import FLT.Mazur.GenusOneGroupPointPowers
+public import FLT.Mazur.GenusOneGroupPoleBasis
+public import FLT.Mazur.GenusOneGroupPoleFunctions
+public import FLT.Mazur.GenusOneGroupWeierstrassEquation
+public import FLT.Mazur.GenusOneNonspecialPoint
 public import FLT.Mazur.GeometricAcyclicFppfLocus
 public import FLT.Mazur.GeometricAcyclicPicardLocality
 public import FLT.Mazur.GeometricAcyclicPicardSubfunctor
@@ -5722,6 +5732,7 @@ public import FLT.Mazur.PinchingAffineDescent
 public import FLT.Mazur.PinchingChartBaseChange
 public import FLT.Mazur.PinchingNeighborhoods
 public import FLT.Mazur.PinchingPullbackTransport
+public import FLT.Mazur.PointDivisorIsoCohomology
 public import FLT.Mazur.PointNormalizedAcyclicTests
 public import FLT.Mazur.PointNormalizedDirectImage
 public import FLT.Mazur.PointNormalizedDivisorBaseChange
