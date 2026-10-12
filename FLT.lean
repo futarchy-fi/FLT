@@ -5482,6 +5482,7 @@ public import FLT.Mazur.NeronPolygonRotation
 public import FLT.Mazur.NeronPolygonRotationAction
 public import FLT.Mazur.NeronPolygonScaling
 public import FLT.Mazur.NestedOpenCohomologyCoherence
+public import FLT.Mazur.NeutralTwistDirectImage
 public import FLT.Mazur.NodalFiberAlgebra
 public import FLT.Mazur.NodalFiberBoundedParameterTransport
 public import FLT.Mazur.NodalFiberNodeComparison
