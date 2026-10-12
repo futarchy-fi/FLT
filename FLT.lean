@@ -2629,6 +2629,7 @@ public import FLT.Mazur.AffineBranchSequence
 public import FLT.Mazur.AffineCanonicalMapCompatibility
 public import FLT.Mazur.AffineCanonicalOverlapChart
 public import FLT.Mazur.AffineCanonicalOverlapRecognition
+public import FLT.Mazur.AffineCartesianPreimageSections
 public import FLT.Mazur.AffineCartesianSectionPushout
 public import FLT.Mazur.AffineCartesianSectionScalars
 public import FLT.Mazur.AffineChartResidueEquation
@@ -2837,6 +2838,7 @@ public import FLT.Mazur.AffinePairUnitTransport
 public import FLT.Mazur.AffinePicardComparison
 public import FLT.Mazur.AffinePicardSections
 public import FLT.Mazur.AffinePieceSectionLocalization
+public import FLT.Mazur.AffinePreimageRestrictionPushout
 public import FLT.Mazur.AffineProductMap
 public import FLT.Mazur.AffineProductTensorCoordinates
 public import FLT.Mazur.AffineProjectivePointLineCover
@@ -2925,6 +2927,7 @@ public import FLT.Mazur.AffineTensorCoalgebraComparison
 public import FLT.Mazur.AffineTensorCocycle
 public import FLT.Mazur.AffineTensorCocycleTransport
 public import FLT.Mazur.AffineTensorDescentMorphisms
+public import FLT.Mazur.AffineTensorIdealPullback
 public import FLT.Mazur.AffineTensorSectionIso
 public import FLT.Mazur.AffineTensorTransportAdditivity
 public import FLT.Mazur.AffineTildeBaseChangeIso
@@ -3587,6 +3590,8 @@ public import FLT.Mazur.CyclicHomAuxiliaryScheme
 public import FLT.Mazur.CyclicHomDivisorFppfCoverage
 public import FLT.Mazur.CyclicHomDivisorProduct
 public import FLT.Mazur.CyclicHomMultiplicationEquation
+public import FLT.Mazur.CyclicHomMultiplicationLocus
+public import FLT.Mazur.CyclicHomMultiplicationLocusUniversal
 public import FLT.Mazur.CyclicHomSourceDivisor
 public import FLT.Mazur.CyclicHomSubgroupVanishingChart
 public import FLT.Mazur.CyclicMarkingDivisorTransport
@@ -4157,7 +4162,13 @@ public import FLT.Mazur.FiniteFlatAffineLocalFree
 public import FLT.Mazur.FiniteFlatCoefficientIdeal
 public import FLT.Mazur.FiniteFlatCoefficientIso
 public import FLT.Mazur.FiniteFlatDegreeOpen
+public import FLT.Mazur.FiniteFlatIdealVanishingBaseChange
 public import FLT.Mazur.FiniteFlatIdealVanishingChart
+public import FLT.Mazur.FiniteFlatIdealVanishingGluing
+public import FLT.Mazur.FiniteFlatIdealVanishingNaturality
+public import FLT.Mazur.FiniteFlatIdealVanishingRestriction
+public import FLT.Mazur.FiniteFlatIdealVanishingUniversal
+public import FLT.Mazur.FiniteFlatIdealVanishingZero
 public import FLT.Mazur.FiniteFlatLocalIdealPresentation
 public import FLT.Mazur.FiniteFlatQuotientTrivialization
 public import FLT.Mazur.FiniteFlatSubschemeQuotient
@@ -6917,7 +6928,13 @@ public import FLT.Mazur.ProjectiveGenerationEventually
 public import FLT.Mazur.ProjectiveHomogeneousEvaluation
 public import FLT.Mazur.ProjectiveHomogeneousPoint
 public import FLT.Mazur.ProjectiveHomogeneousPointTransport
+public import FLT.Mazur.ProjectiveIdealGeometricVanishing
+public import FLT.Mazur.ProjectiveIdealVanishingBaseChange
+public import FLT.Mazur.ProjectiveIdealVanishingEquiv
+public import FLT.Mazur.ProjectiveIdealVanishingPushout
+public import FLT.Mazur.ProjectiveIdealVanishingRingPushout
 public import FLT.Mazur.ProjectiveIdealVanishingScheme
+public import FLT.Mazur.ProjectiveIdealVanishingZero
 public import FLT.Mazur.ProjectiveLineActionAssociativity
 public import FLT.Mazur.ProjectiveLineActionEndpoints
 public import FLT.Mazur.ProjectiveLineActionPoints
@@ -7006,6 +7023,7 @@ public import FLT.Mazur.ProjectiveSpaceCoefficientMap
 public import FLT.Mazur.ProjectiveSpaceProper
 public import FLT.Mazur.ProjectiveSpaceReindex
 public import FLT.Mazur.ProjectiveSpaceUniverseReindex
+public import FLT.Mazur.ProjectiveTargetVanishingBaseChange
 public import FLT.Mazur.ProjectiveTargetVanishingIdeal
 public import FLT.Mazur.ProjectiveTripleModuleLocalization
 public import FLT.Mazur.ProjectiveTwistAffineBaseChange
@@ -8633,6 +8651,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearOriginalInitialConic
 public import FLT.Mazur.WeierstrassCoefficientShearOriginalRetainedLines
 public import FLT.Mazur.WeierstrassCoefficientShearOriginalScaleOneComponents
 public import FLT.Mazur.WeierstrassCoefficientShearOriginalTerminalConics
+public import FLT.Mazur.WeierstrassCoefficientShearOriginalTerminalLaurent
 public import FLT.Mazur.WeierstrassCoefficientShearOriginalTerminalNode
 public import FLT.Mazur.WeierstrassCoefficientShearOverlaps
 public import FLT.Mazur.WeierstrassCoefficientShearReciprocalLineAction
@@ -8655,6 +8674,8 @@ public import FLT.Mazur.WeierstrassCoefficientShearRetainedLineSpecialization
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedReconstruction
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedScaleOneConic
 public import FLT.Mazur.WeierstrassCoefficientShearRootChange
+public import FLT.Mazur.WeierstrassCoefficientShearRootEqualityComponent
+public import FLT.Mazur.WeierstrassCoefficientShearRootEqualityOriginal
 public import FLT.Mazur.WeierstrassCoefficientShearRootFinalAdjacent
 public import FLT.Mazur.WeierstrassCoefficientShearRootFinalBranches
 public import FLT.Mazur.WeierstrassCoefficientShearRootFinalInitial
@@ -8664,6 +8685,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearRootInitialOriginal
 public import FLT.Mazur.WeierstrassCoefficientShearRootInitialOverlap
 public import FLT.Mazur.WeierstrassCoefficientShearRootInitialRootChange
 public import FLT.Mazur.WeierstrassCoefficientShearRootInitialSpecialization
+public import FLT.Mazur.WeierstrassCoefficientShearRootLaurentOverlap
 public import FLT.Mazur.WeierstrassCoefficientShearRootOrderedAdjacent
 public import FLT.Mazur.WeierstrassCoefficientShearRootPositiveBranches
 public import FLT.Mazur.WeierstrassCoefficientShearRootPositiveCycle
@@ -8716,6 +8738,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearTerminalBranchProjection
 public import FLT.Mazur.WeierstrassCoefficientShearTerminalBranchRootChange
 public import FLT.Mazur.WeierstrassCoefficientShearTerminalBranchSpecialization
 public import FLT.Mazur.WeierstrassCoefficientShearTerminalComponents
+public import FLT.Mazur.WeierstrassCoefficientShearTerminalLaurent
 public import FLT.Mazur.WeierstrassCoefficientShearTerminalNode
 public import FLT.Mazur.WeierstrassCoefficientShearTerminalZeroComponents
 public import FLT.Mazur.WeierstrassCoefficientShearTorusDomain
@@ -8780,6 +8803,7 @@ public import FLT.Mazur.WeierstrassDilatationResidueRetained
 public import FLT.Mazur.WeierstrassDilatationSaturation
 public import FLT.Mazur.WeierstrassDilatationShear
 public import FLT.Mazur.WeierstrassDilatationShearHorizontal
+public import FLT.Mazur.WeierstrassDilatationShearLaurentNormalForm
 public import FLT.Mazur.WeierstrassDilatationShearNodeNormalForm
 public import FLT.Mazur.WeierstrassDilatationUnitComparison
 public import FLT.Mazur.WeierstrassDilatationZeroResidue
@@ -10476,13 +10500,27 @@ public import FLT.Mazur.WeierstrassSuccessiveShearScaleOneConicCoefficient
 public import FLT.Mazur.WeierstrassSuccessiveShearScaleOneHorizontal
 public import FLT.Mazur.WeierstrassSuccessiveShearScaleOneSignedReciprocal
 public import FLT.Mazur.WeierstrassSuccessiveShearSignedReciprocal
+public import FLT.Mazur.WeierstrassSuccessiveShearTerminalAffineCover
+public import FLT.Mazur.WeierstrassSuccessiveShearTerminalAffineIntersection
+public import FLT.Mazur.WeierstrassSuccessiveShearTerminalAffineStructure
 public import FLT.Mazur.WeierstrassSuccessiveShearTerminalBoundaryGeometry
 public import FLT.Mazur.WeierstrassSuccessiveShearTerminalBranchCoefficient
 public import FLT.Mazur.WeierstrassSuccessiveShearTerminalBranchCoordinates
 public import FLT.Mazur.WeierstrassSuccessiveShearTerminalBranchRootChange
 public import FLT.Mazur.WeierstrassSuccessiveShearTerminalConicBranches
 public import FLT.Mazur.WeierstrassSuccessiveShearTerminalConicCoordinates
+public import FLT.Mazur.WeierstrassSuccessiveShearTerminalFirstAffineChart
+public import FLT.Mazur.WeierstrassSuccessiveShearTerminalFirstAffineGluing
+public import FLT.Mazur.WeierstrassSuccessiveShearTerminalLaurentBoundaryGeometry
+public import FLT.Mazur.WeierstrassSuccessiveShearTerminalLaurentComponent
+public import FLT.Mazur.WeierstrassSuccessiveShearTerminalLaurentConic
+public import FLT.Mazur.WeierstrassSuccessiveShearTerminalLaurentMarks
+public import FLT.Mazur.WeierstrassSuccessiveShearTerminalLaurentOpen
 public import FLT.Mazur.WeierstrassSuccessiveShearTerminalNodeConic
+public import FLT.Mazur.WeierstrassSuccessiveShearTerminalProjectiveIso
+public import FLT.Mazur.WeierstrassSuccessiveShearTerminalProjectiveStructure
+public import FLT.Mazur.WeierstrassSuccessiveShearTerminalSecondAffineChart
+public import FLT.Mazur.WeierstrassSuccessiveShearTerminalSecondAffineGluing
 public import FLT.Mazur.WeierstrassSuccessiveShearTerminalZeroBoundaryGeometry
 public import FLT.Mazur.WeierstrassSuccessiveShearTerminalZeroConicBranches
 public import FLT.Mazur.WeierstrassSuccessiveShearTerminalZeroConicCoordinates
