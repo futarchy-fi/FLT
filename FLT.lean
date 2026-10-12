@@ -7886,6 +7886,7 @@ public import FLT.Mazur.UniversalWeierstrassCyclicNormalizationPoint
 public import FLT.Mazur.UniversalWeierstrassCyclicNormalizationRelation
 public import FLT.Mazur.UniversalWeierstrassCyclicNormalizedMarking
 public import FLT.Mazur.UniversalWeierstrassCyclicNormalizedSlice
+public import FLT.Mazur.UniversalWeierstrassCyclicNormalizedValueCubic
 public import FLT.Mazur.UniversalWeierstrassCyclicOriginalMarking
 public import FLT.Mazur.UniversalWeierstrassCyclicRelationFamilyIso
 public import FLT.Mazur.UniversalWeierstrassCyclicSliceFunctor
