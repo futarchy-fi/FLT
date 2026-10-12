@@ -7800,6 +7800,7 @@ public import FLT.Mazur.SmoothAffineLineNoetherianModel
 public import FLT.Mazur.SmoothAlgebraReduced
 public import FLT.Mazur.SmoothBaseChangeDimensionOpen
 public import FLT.Mazur.SmoothConnectedCurveGeometricIntegral
+public import FLT.Mazur.SmoothConnectedFieldCurveDimension
 public import FLT.Mazur.SmoothCotangentRankGenerization
 public import FLT.Mazur.SmoothCurveCommonOpenBaseChange
 public import FLT.Mazur.SmoothCurveCommonOpenIso
