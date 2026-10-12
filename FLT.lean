@@ -7915,6 +7915,7 @@ public import FLT.Mazur.StalkBaseSectionNumerator
 public import FLT.Mazur.StandardSmoothCoefficientFiber
 public import FLT.Mazur.StandardSmoothCurveLocalDomain
 public import FLT.Mazur.StandardSmoothFieldCotangentRank
+public import FLT.Mazur.StandardSmoothFieldDimension
 public import FLT.Mazur.StandardSmoothFiniteFlatCartier
 public import FLT.Mazur.StandardSmoothFiniteSupportCartier
 public import FLT.Mazur.StandardSmoothLocalCartier
