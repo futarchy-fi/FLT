@@ -3220,6 +3220,8 @@ public import FLT.Mazur.CanonicalSectionNaturality
 public import FLT.Mazur.CartesianAtlasAffineIntersections
 public import FLT.Mazur.CartesianCoefficientPositiveHomology
 public import FLT.Mazur.CartesianCoefficientSymmetry
+public import FLT.Mazur.CartesianCoefficientTransport
+public import FLT.Mazur.CartesianCoefficientTransportNaturality
 public import FLT.Mazur.CartesianIdentityFactorization
 public import FLT.Mazur.CartesianIdentityQuasiFinite
 public import FLT.Mazur.CartesianMonoGroup
@@ -5355,6 +5357,10 @@ public import FLT.Mazur.NodeTangentExtension
 public import FLT.Mazur.NodeTangentFieldFixed
 public import FLT.Mazur.NodeTangentFractionField
 public import FLT.Mazur.NodeTangentGaloisLabel
+public import FLT.Mazur.NodeTangentNormalizationChart
+public import FLT.Mazur.NodeTangentNormalizationConjugation
+public import FLT.Mazur.NodeTangentNormalizationDescent
+public import FLT.Mazur.NodeTangentNormalizationOpen
 public import FLT.Mazur.NodeTangentOverlap
 public import FLT.Mazur.NodeTangentOverlapEquiv
 public import FLT.Mazur.NodeTangentOverlapLinear
@@ -8500,6 +8506,9 @@ public import FLT.Mazur.WeierstrassDividedSuccessorUnitAction
 public import FLT.Mazur.WeierstrassDividedTangentCech
 public import FLT.Mazur.WeierstrassDividedTangentCechIso
 public import FLT.Mazur.WeierstrassDividedTangentConjugation
+public import FLT.Mazur.WeierstrassDividedTangentTransport
+public import FLT.Mazur.WeierstrassDividedTangentTransportAction
+public import FLT.Mazur.WeierstrassDividedTangentTriple
 public import FLT.Mazur.WeierstrassDividedTensorAtlasComparison
 public import FLT.Mazur.WeierstrassDividedTensorPointAction
 public import FLT.Mazur.WeierstrassDividedTensorSymmetry
