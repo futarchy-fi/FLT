@@ -4506,6 +4506,7 @@ public import FLT.Mazur.GrassmannianLocalBasisSelection
 public import FLT.Mazur.GrassmannianLocalizedAmbientTransition
 public import FLT.Mazur.GrassmannianLocalizedTransition
 public import FLT.Mazur.GrassmannianLocalizedTransitionScheme
+public import FLT.Mazur.GrassmannianOriginalBaseChartCover
 public import FLT.Mazur.GrassmannianOverlapPolynomial
 public import FLT.Mazur.GrassmannianOverlapTransitionEquiv
 public import FLT.Mazur.GrassmannianOverlapTransitionScheme
