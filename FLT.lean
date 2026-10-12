@@ -8829,6 +8829,7 @@ public import FLT.Mazur.WeierstrassDividedSkippedAtlasRange
 public import FLT.Mazur.WeierstrassDividedSkippedChartSupport
 public import FLT.Mazur.WeierstrassDividedSkippedTensorIntersection
 public import FLT.Mazur.WeierstrassDividedSmoothCoefficientEmbedding
+public import FLT.Mazur.WeierstrassDividedSmoothCoefficientUnique
 public import FLT.Mazur.WeierstrassDividedSmoothSuccessiveCoefficientAction
 public import FLT.Mazur.WeierstrassDividedSmoothSuccessiveIntegralAction
 public import FLT.Mazur.WeierstrassDividedSmoothSuccessiveResidueAction
