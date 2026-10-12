@@ -4432,6 +4432,7 @@ public import FLT.Mazur.GeneralizedCurvePointedCubicPresentation
 public import FLT.Mazur.GeneralizedCurvePullback
 public import FLT.Mazur.GeneralizedCurvePullbackCoherence
 public import FLT.Mazur.GeneralizedCurveRelativePointFrames
+public import FLT.Mazur.GeneralizedCurveSectionComposition
 public import FLT.Mazur.GeneralizedCurveSmoothBaseChange
 public import FLT.Mazur.GeneralizedCurveSmoothBaseCubic
 public import FLT.Mazur.GeneralizedCurveSmoothBaseDimension
