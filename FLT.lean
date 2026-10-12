@@ -4444,6 +4444,7 @@ public import FLT.Mazur.FreeSheafPullbackRestriction
 public import FLT.Mazur.FreeSheafRestrictionCoherence
 public import FLT.Mazur.FreeSheafSectionCoordinates
 public import FLT.Mazur.FreeTargetVanishingIdeal
+public import FLT.Mazur.FreeTargetVanishingScheme
 public import FLT.Mazur.FullDivisorFlatFppfDescent
 public import FLT.Mazur.FullHilbertIntersectionSeparablePoints
 public import FLT.Mazur.GeneralizedCurveAmpleBaseChange
