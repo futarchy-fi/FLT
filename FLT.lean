@@ -5321,6 +5321,7 @@ public import FLT.Mazur.NodeTangentShear
 public import FLT.Mazur.NodeTangentShearRealization
 public import FLT.Mazur.NodeTangentSlopeDescent
 public import FLT.Mazur.NodeTangentSplitComponent
+public import FLT.Mazur.NodeTangentTensorOrientation
 public import FLT.Mazur.NodeTangentUnramified
 public import FLT.Mazur.NodeTangentValuationConjugation
 public import FLT.Mazur.NodeTangentValuationModel
