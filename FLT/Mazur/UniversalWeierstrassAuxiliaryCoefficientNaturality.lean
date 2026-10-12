@@ -38,14 +38,14 @@ def auxiliaryNormalizedCoefficientProjection :
     (auxiliaryNormalizedCoefficientHom_equation g).symm
 
 /-- The original group comparison retains the original proper coefficient projection. -/
-@[reassoc] theorem auxiliaryCoefficientGroupIso_fst :
+@[reassoc] theorem auxiliaryCoefficientGroupIso_proper_fst :
     (auxiliaryCoefficientGroupIso g).hom.hom.hom.hom.left ≫
         pullback.fst universalGroup.hom (auxiliaryCoefficientBase g) =
       auxiliaryOriginalCoefficientProjection g :=
   equationCoefficientGroupIso_fst _ _ _ _
 
 /-- The normalized group comparison retains the normalized proper coefficient projection. -/
-@[reassoc] theorem auxiliaryNormalizedCoefficientGroupIso_fst :
+@[reassoc] theorem auxiliaryNormalizedCoefficientGroupIso_proper_fst :
     (auxiliaryNormalizedCoefficientGroupIso g).hom.hom.hom.hom.left ≫
         pullback.fst universalGroup.hom (auxiliaryNormalizedCoefficientBase g) =
       auxiliaryNormalizedCoefficientProjection g :=
