@@ -9836,6 +9836,7 @@ public import FLT.Mazur.WeierstrassVariableChangeLocalMorphism
 public import FLT.Mazur.WeierstrassVariableChangeProductMorphism
 public import FLT.Mazur.WeierstrassVariableChangeProjectiveInverse
 public import FLT.Mazur.WeierstrassVariableChangeProjectivePoints
+public import FLT.Mazur.WeierstrassVariableChangeProperCoefficient
 public import FLT.Mazur.WeierstrassVariableChangeScaledCoefficients
 public import FLT.Mazur.WeierstrassVariableChangeSecant
 public import FLT.Mazur.WeierstrassVariableChangeSecantAddition
