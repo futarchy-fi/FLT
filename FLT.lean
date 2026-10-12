@@ -5165,6 +5165,7 @@ public import FLT.Mazur.LaurentRingSurjectivity
 public import FLT.Mazur.LaurentTensor
 public import FLT.Mazur.LaurentUnitMultiplication
 public import FLT.Mazur.LaurentUnitPoints
+public import FLT.Mazur.LineBundleAffineFrames
 public import FLT.Mazur.LineBundleSectionOpenPullback
 public import FLT.Mazur.LineCartierComplementRestriction
 public import FLT.Mazur.LineDescentDiagonalRigidity
