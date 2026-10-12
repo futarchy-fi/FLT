@@ -7825,6 +7825,7 @@ public import FLT.Mazur.UniversalWeierstrassCyclicSubgroup
 public import FLT.Mazur.UniversalWeierstrassFourTorsionEtale
 public import FLT.Mazur.UniversalWeierstrassFourTorsionFinite
 public import FLT.Mazur.UniversalWeierstrassFourTorsionUnramified
+public import FLT.Mazur.UniversalWeierstrassFullNormalizationParameter
 public import FLT.Mazur.UniversalWeierstrassGeometricLevelFour
 public import FLT.Mazur.UniversalWeierstrassMarkedCoordinateRigidity
 public import FLT.Mazur.UniversalWeierstrassNormalizedSlice
