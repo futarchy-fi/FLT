@@ -7610,6 +7610,7 @@ public import FLT.Mazur.SmoothFiniteCoefficientBranch
 public import FLT.Mazur.SmoothFiniteFlatIdealCharts
 public import FLT.Mazur.SmoothFiniteSubgroupAmple
 public import FLT.Mazur.SmoothFiniteSubschemeCartier
+public import FLT.Mazur.SmoothGeneralizedCurveGroupIso
 public import FLT.Mazur.SmoothGeometricAcyclicRankOne
 public import FLT.Mazur.SmoothGeometricFiniteSeparablePoints
 public import FLT.Mazur.SmoothGeometricSeparablePoints
