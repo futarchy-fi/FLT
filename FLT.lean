@@ -4433,6 +4433,7 @@ public import FLT.Mazur.GeneralizedCurvePullback
 public import FLT.Mazur.GeneralizedCurvePullbackCoherence
 public import FLT.Mazur.GeneralizedCurveRelativePointFrames
 public import FLT.Mazur.GeneralizedCurveSmoothBaseChange
+public import FLT.Mazur.GeneralizedCurveSmoothBaseCubic
 public import FLT.Mazur.GeneralizedCurveSmoothBaseDimension
 public import FLT.Mazur.GeneralizedCurveSmoothIntegral
 public import FLT.Mazur.GeneralizedCurveSmoothPullback
