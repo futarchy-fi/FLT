@@ -6412,6 +6412,7 @@ public import FLT.Mazur.PolygonVeroneseStepTransport
 public import FLT.Mazur.PolygonVeroneseTensorReduction
 public import FLT.Mazur.PolygonVeroneseZeroRing
 public import FLT.Mazur.PolynomialAffineIdealDegree
+public import FLT.Mazur.PolynomialClosedPointHeight
 public import FLT.Mazur.PolynomialCoefficientArrow
 public import FLT.Mazur.PolynomialCoefficientCartesian
 public import FLT.Mazur.PolynomialEndpointInterpolation
