@@ -7623,6 +7623,7 @@ public import FLT.Mazur.SectionLinePointOverlapEquality
 public import FLT.Mazur.SectionLinePullbackFraction
 public import FLT.Mazur.SectionPointPowerBaseChange
 public import FLT.Mazur.SectionPoleAdaptedBasis
+public import FLT.Mazur.SectionPoleBaseChangeFrames
 public import FLT.Mazur.SectionPoleLeadingRestriction
 public import FLT.Mazur.SectionPoleLineFrames
 public import FLT.Mazur.SectionPoleSplit
