@@ -2925,6 +2925,7 @@ public import FLT.Mazur.AffineTripleOverlapRefinementSquares
 public import FLT.Mazur.AffineTripleUnitCoefficients
 public import FLT.Mazur.AffineTrivialLineSectionOpen
 public import FLT.Mazur.AllAffineAmbientCharts
+public import FLT.Mazur.AllSectionsHilbertGrassmannianImmersion
 public import FLT.Mazur.AmbientHilbertChartFamilyPullback
 public import FLT.Mazur.AmbientHilbertChartImage
 public import FLT.Mazur.AmbientHilbertChartParameterEquality
@@ -3468,7 +3469,15 @@ public import FLT.Mazur.CohomologicallyFlatSections
 public import FLT.Mazur.CohomologyImageArtinRees
 public import FLT.Mazur.CohomologyImageReesModule
 public import FLT.Mazur.ComaximalIdealSequence
+public import FLT.Mazur.CommonAmbientAffineFullRelation
+public import FLT.Mazur.CommonAmbientAffineRelationEtale
+public import FLT.Mazur.CommonAmbientAffineRelationImage
+public import FLT.Mazur.CommonAmbientAffineRelationKernel
+public import FLT.Mazur.CommonAmbientAmpleFiniteNeighborhood
+public import FLT.Mazur.CommonAmbientGrassmannianAffineCover
+public import FLT.Mazur.CommonAmbientGrassmannianProduct
 public import FLT.Mazur.CommonAmbientOpenIso
+public import FLT.Mazur.CommonAmbientSourceGrassmannianImmersion
 public import FLT.Mazur.CommonCoefficientStage
 public import FLT.Mazur.CommonIdealDirectSum
 public import FLT.Mazur.CommonModelEventualEquality
