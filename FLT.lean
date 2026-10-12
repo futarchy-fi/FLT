@@ -2687,6 +2687,7 @@ public import FLT.Mazur.AffineEffectiveSuccessiveReconstruction
 public import FLT.Mazur.AffineEnvelopeFiniteNeighborhood
 public import FLT.Mazur.AffineEtaleFaithfulCoefficients
 public import FLT.Mazur.AffineEtaleFaithfulNeighborhood
+public import FLT.Mazur.AffineEtaleFaithfulSource
 public import FLT.Mazur.AffineEtaleFaithfulSpectrum
 public import FLT.Mazur.AffineFaithfullyFlatEpimorphisms
 public import FLT.Mazur.AffineFaithfullyFlatMonomorphisms
