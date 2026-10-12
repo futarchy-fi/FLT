@@ -5413,6 +5413,7 @@ public import FLT.Mazur.ModuleSheafGluing
 public import FLT.Mazur.ModuleSheafGluingLift
 public import FLT.Mazur.ModuleSheafGluingMapRestriction
 public import FLT.Mazur.ModuleSheafGluingTransport
+public import FLT.Mazur.ModuleSheafGluingTransportLift
 public import FLT.Mazur.ModuleSheafGluingTransportMap
 public import FLT.Mazur.ModuleSheafGluingTransportProjection
 public import FLT.Mazur.ModuleSheafIdentityCocycle
