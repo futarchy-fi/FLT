@@ -7911,6 +7911,7 @@ public import FLT.Mazur.UniversalWeierstrassCyclicFullNaturality
 public import FLT.Mazur.UniversalWeierstrassCyclicGlobalRetraction
 public import FLT.Mazur.UniversalWeierstrassCyclicLevel
 public import FLT.Mazur.UniversalWeierstrassCyclicLocalPresentationInvariant
+public import FLT.Mazur.UniversalWeierstrassCyclicMarkedFamilyRigidity
 public import FLT.Mazur.UniversalWeierstrassCyclicMarkedIsoPullback
 public import FLT.Mazur.UniversalWeierstrassCyclicModularClasses
 public import FLT.Mazur.UniversalWeierstrassCyclicModularDescent
