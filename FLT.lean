@@ -7824,6 +7824,7 @@ public import FLT.Mazur.UniversalPointConditionRank
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryActualNormalizationIso
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryAffineCubicIso
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryAffineCubicProjection
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryAffineMarkedRigidity
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryAffineSections
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryArithmeticAction
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryCoefficientGroup
