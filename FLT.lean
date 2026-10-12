@@ -4496,6 +4496,7 @@ public import FLT.Mazur.GrassmannianChartTransition
 public import FLT.Mazur.GrassmannianChartTransitionCocycle
 public import FLT.Mazur.GrassmannianChartTransitionInverse
 public import FLT.Mazur.GrassmannianIndexedOverlapScheme
+public import FLT.Mazur.GrassmannianIndexedTripleOverlap
 public import FLT.Mazur.GrassmannianLocalizedAmbientTransition
 public import FLT.Mazur.GrassmannianLocalizedTransition
 public import FLT.Mazur.GrassmannianLocalizedTransitionScheme
