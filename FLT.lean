@@ -7116,6 +7116,7 @@ public import FLT.Mazur.RelativeGenusOneCubicFactorization
 public import FLT.Mazur.RelativeGenusOneCubicFinite
 public import FLT.Mazur.RelativeGenusOneCubicPreimages
 public import FLT.Mazur.RelativeGenusOneCubicRelation
+public import FLT.Mazur.RelativeGenusOneCubicTopology
 public import FLT.Mazur.RelativeGenusOneFramedProducts
 public import FLT.Mazur.RelativeGenusOneHigherMonomials
 public import FLT.Mazur.RelativeGenusOneHomogeneousEquation
