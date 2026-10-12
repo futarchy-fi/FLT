@@ -3602,6 +3602,7 @@ public import FLT.Mazur.CyclicMarkingDivisorTransport
 public import FLT.Mazur.CyclicMarkingOrbitDivisor
 public import FLT.Mazur.CyclicNodeChart
 public import FLT.Mazur.CyclicNormalizationExact
+public import FLT.Mazur.CyclicOrbitSubgroupMarking
 public import FLT.Mazur.CyclicOriginalHomDivisorCoverage
 public import FLT.Mazur.CyclicOriginalLocalCartierCubic
 public import FLT.Mazur.CyclicOverlapGraph
