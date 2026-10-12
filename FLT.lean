@@ -4829,6 +4829,7 @@ public import FLT.Mazur.HilbertLocalizationIsomorphismOpen
 public import FLT.Mazur.HilbertLocalizedTupleBasis
 public import FLT.Mazur.HilbertMonomialAmbientDecomposition
 public import FLT.Mazur.HilbertMonomialBasisNeighborhood
+public import FLT.Mazur.HilbertMonomialChartBasisCriterion
 public import FLT.Mazur.HilbertMonomialChartCover
 public import FLT.Mazur.HilbertMonomialFiberBasis
 public import FLT.Mazur.HilbertMonomialPrincipalSpecCover
