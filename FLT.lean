@@ -8316,6 +8316,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearResidueRetained
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedBoundaryAction
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedFiber
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedIntersections
+public import FLT.Mazur.WeierstrassCoefficientShearRetainedLineRootChange
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedReconstruction
 public import FLT.Mazur.WeierstrassCoefficientShearRootChange
 public import FLT.Mazur.WeierstrassCoefficientShearRootTorusChange
