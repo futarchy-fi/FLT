@@ -4605,6 +4605,7 @@ public import FLT.Mazur.GrassmannianClassifiedImageQuotient
 public import FLT.Mazur.GrassmannianCoordinateRefinementLaw
 public import FLT.Mazur.GrassmannianDeterminantChartSections
 public import FLT.Mazur.GrassmannianDeterminantOverlapUnits
+public import FLT.Mazur.GrassmannianDeterminantSchemeSections
 public import FLT.Mazur.GrassmannianFramedQuotientAtlas
 public import FLT.Mazur.GrassmannianFramedSheafQuotient
 public import FLT.Mazur.GrassmannianFunctorLocalizedChart
