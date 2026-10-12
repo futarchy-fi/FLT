@@ -3588,6 +3588,7 @@ public import FLT.Mazur.CyclicHomDivisorInclusionPullback
 public import FLT.Mazur.CyclicHomDivisorProduct
 public import FLT.Mazur.CyclicHomDivisorProductPullback
 public import FLT.Mazur.CyclicHomDivisorPullback
+public import FLT.Mazur.CyclicHomLocusEquationUniversal
 public import FLT.Mazur.CyclicHomMultiplicationEquation
 public import FLT.Mazur.CyclicHomMultiplicationLocus
 public import FLT.Mazur.CyclicHomMultiplicationLocusUniversal
