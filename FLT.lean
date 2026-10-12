@@ -4556,6 +4556,7 @@ public import FLT.Mazur.GrassmannianAmbientTransition
 public import FLT.Mazur.GrassmannianAmbientTransitionCocycle
 public import FLT.Mazur.GrassmannianAmbientTransitionNaturality
 public import FLT.Mazur.GrassmannianBlockTransition
+public import FLT.Mazur.GrassmannianCanonicalImageRepresentative
 public import FLT.Mazur.GrassmannianCanonicalSheafClassification
 public import FLT.Mazur.GrassmannianChartChangeDeterminant
 public import FLT.Mazur.GrassmannianChartPolynomialParameters
