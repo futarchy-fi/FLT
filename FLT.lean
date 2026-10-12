@@ -7619,6 +7619,7 @@ public import FLT.Mazur.SeparatedOverlapPullback
 public import FLT.Mazur.SequentialCechLocalization
 public import FLT.Mazur.SequentialCochainBoundary
 public import FLT.Mazur.SequentialFiniteProducts
+public import FLT.Mazur.SheafPullbackAmbientNormalization
 public import FLT.Mazur.SheafPullbackCanonicalRecovery
 public import FLT.Mazur.SheafPullbackCoordinateRecovery
 public import FLT.Mazur.SheafPullbackCoordinateRecoveryNaturality
