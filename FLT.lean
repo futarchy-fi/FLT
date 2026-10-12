@@ -4641,6 +4641,7 @@ public import FLT.Mazur.GrassmannianSchemeQuotientRefinement
 public import FLT.Mazur.GrassmannianSchemeQuotientTest
 public import FLT.Mazur.GrassmannianSelectedAmbientIndex
 public import FLT.Mazur.GrassmannianSelectedColumnsLocalization
+public import FLT.Mazur.GrassmannianSheafClassificationFaithful
 public import FLT.Mazur.GrassmannianSheafClassificationPullback
 public import FLT.Mazur.GrassmannianSheafQuotientClasses
 public import FLT.Mazur.GrassmannianSheafQuotientClassification
