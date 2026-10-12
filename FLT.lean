@@ -7361,6 +7361,7 @@ public import FLT.Mazur.SchemeModulePullbackUnitSections
 public import FLT.Mazur.SchemeModulePullbackUnits
 public import FLT.Mazur.SchemeNilpotentSectionDetection
 public import FLT.Mazur.SchemeNormalizedRecoveryOverlap
+public import FLT.Mazur.SchemeOpenChartRange
 public import FLT.Mazur.SchemeOpenPushoutCharts
 public import FLT.Mazur.SchemeOpenPushoutCoverIso
 public import FLT.Mazur.SchemeOpenPushoutIntersection
@@ -7735,6 +7736,7 @@ public import FLT.Mazur.TensorOpenChartIntersection
 public import FLT.Mazur.TensorOpenChartNodeExclusion
 public import FLT.Mazur.TensorOpenChartOverlap
 public import FLT.Mazur.TensorOpenChartRange
+public import FLT.Mazur.TensorOpenChartReparametrization
 public import FLT.Mazur.TensorOpenChartTargetTransport
 public import FLT.Mazur.TensorOpenChartVanishingSeparation
 public import FLT.Mazur.TensorOpenExteriorIntersection
@@ -8177,6 +8179,8 @@ public import FLT.Mazur.WeierstrassDividedChartRegularCenter
 public import FLT.Mazur.WeierstrassDividedCoefficientActionIndexTransport
 public import FLT.Mazur.WeierstrassDividedCoefficientInputs
 public import FLT.Mazur.WeierstrassDividedCoefficientShear
+public import FLT.Mazur.WeierstrassDividedCoefficientShearGlobalCharts
+public import FLT.Mazur.WeierstrassDividedCoefficientShearSchemes
 public import FLT.Mazur.WeierstrassDividedCoefficientSymmetry
 public import FLT.Mazur.WeierstrassDividedCompleteResidueNormalization
 public import FLT.Mazur.WeierstrassDividedComponentPairCoverage
@@ -8617,6 +8621,11 @@ public import FLT.Mazur.WeierstrassDividedShearExterior
 public import FLT.Mazur.WeierstrassDividedShearFiniteAffine
 public import FLT.Mazur.WeierstrassDividedShearFiniteIteration
 public import FLT.Mazur.WeierstrassDividedShearFiniteModification
+public import FLT.Mazur.WeierstrassDividedShearGlobalCover
+public import FLT.Mazur.WeierstrassDividedShearGlobalInfinityLift
+public import FLT.Mazur.WeierstrassDividedShearGlobalInfinityOpen
+public import FLT.Mazur.WeierstrassDividedShearGlobalIso
+public import FLT.Mazur.WeierstrassDividedShearGlobalStep
 public import FLT.Mazur.WeierstrassDividedShearGluing
 public import FLT.Mazur.WeierstrassDividedShearInitialExterior
 public import FLT.Mazur.WeierstrassDividedShearNextBoundary
@@ -9366,6 +9375,7 @@ public import FLT.Mazur.WeierstrassNormalizedFrameTransport
 public import FLT.Mazur.WeierstrassNormalizedFrameUnique
 public import FLT.Mazur.WeierstrassNormalizedOriginIsomorphism
 public import FLT.Mazur.WeierstrassNormalizedProjectivePoint
+public import FLT.Mazur.WeierstrassOlderCoefficientShearGlobalChart
 public import FLT.Mazur.WeierstrassOrdinaryCenterIdeal
 public import FLT.Mazur.WeierstrassOrdinaryCenterResidueSlope
 public import FLT.Mazur.WeierstrassOrdinaryChartSpecialization
@@ -9694,6 +9704,8 @@ public import FLT.Mazur.WeierstrassSplitNodalUnitPoints
 public import FLT.Mazur.WeierstrassSquareZeroTorsionRigidity
 public import FLT.Mazur.WeierstrassSuccessiveCenterAction
 public import FLT.Mazur.WeierstrassSuccessiveCenterScaling
+public import FLT.Mazur.WeierstrassSuccessiveCoefficientShear
+public import FLT.Mazur.WeierstrassSuccessiveCoefficientShearGlobalChart
 public import FLT.Mazur.WeierstrassSuccessiveDepthProper
 public import FLT.Mazur.WeierstrassSuccessiveExteriorCenter
 public import FLT.Mazur.WeierstrassSuccessiveFractionAction
