@@ -9666,6 +9666,7 @@ public import FLT.Mazur.WeierstrassSquareZeroTorsionRigidity
 public import FLT.Mazur.WeierstrassSuccessiveCenterAction
 public import FLT.Mazur.WeierstrassSuccessiveCenterScaling
 public import FLT.Mazur.WeierstrassSuccessiveCoefficientShear
+public import FLT.Mazur.WeierstrassSuccessiveCoefficientShearGlobalChart
 public import FLT.Mazur.WeierstrassSuccessiveDepthProper
 public import FLT.Mazur.WeierstrassSuccessiveExteriorCenter
 public import FLT.Mazur.WeierstrassSuccessiveFractionAction
