@@ -8042,6 +8042,7 @@ public import FLT.Mazur.StructureDirectImageSections
 public import FLT.Mazur.StructureIdealPowerCohomology
 public import FLT.Mazur.StructureIdealPowerQuotient
 public import FLT.Mazur.StructureImageOpenChart
+public import FLT.Mazur.StructureModuleScalarTransitions
 public import FLT.Mazur.StructureRingCohomologyIso
 public import FLT.Mazur.SubfunctorRepresentedPullback
 public import FLT.Mazur.SuccessiveIncidenceAlgebra
