@@ -6047,6 +6047,7 @@ public import FLT.Mazur.PolygonProductAtlas
 public import FLT.Mazur.PolygonProjectiveAuxiliaryMarking
 public import FLT.Mazur.PolygonProjectiveAuxiliaryParameter
 public import FLT.Mazur.PolygonProjectiveAuxiliaryRotation
+public import FLT.Mazur.PolygonProjectiveCoefficientGroup
 public import FLT.Mazur.PolygonProjectiveCoefficientMap
 public import FLT.Mazur.PolygonProjectiveCyclicPoints
 public import FLT.Mazur.PolygonProjectiveExactTorsion
