@@ -5368,6 +5368,7 @@ public import FLT.Mazur.NodeTangentOverlapLinear
 public import FLT.Mazur.NodeTangentOverlapScheme
 public import FLT.Mazur.NodeTangentProjectiveConjugation
 public import FLT.Mazur.NodeTangentProjectiveLineDescent
+public import FLT.Mazur.NodeTangentProjectiveMarkings
 public import FLT.Mazur.NodeTangentProjectiveReflection
 public import FLT.Mazur.NodeTangentShear
 public import FLT.Mazur.NodeTangentShearRealization
