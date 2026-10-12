@@ -4709,6 +4709,7 @@ public import FLT.Mazur.HilbertAmbientClosedParameter
 public import FLT.Mazur.HilbertAmbientContainmentTest
 public import FLT.Mazur.HilbertAmbientFactorization
 public import FLT.Mazur.HilbertAmbientFamilySupport
+public import FLT.Mazur.HilbertAmbientFullQuotient
 public import FLT.Mazur.HilbertAmbientParameterChart
 public import FLT.Mazur.HilbertAmbientParameterCover
 public import FLT.Mazur.HilbertAmbientQuotientEvaluation
