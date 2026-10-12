@@ -3480,6 +3480,7 @@ public import FLT.Mazur.ConstantDegree
 public import FLT.Mazur.ConstantGroupTensorEvaluation
 public import FLT.Mazur.ConstantPrimeScalarFiltration
 public import FLT.Mazur.Contracts
+public import FLT.Mazur.CoprimeGroupMarkings
 public import FLT.Mazur.CoproductConstantSections
 public import FLT.Mazur.CubicComponentBound
 public import FLT.Mazur.CubicMobiusClearing
