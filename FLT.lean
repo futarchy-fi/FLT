@@ -10260,6 +10260,7 @@ public import FLT.Mazur.WeierstrassVariableChangeLinear
 public import FLT.Mazur.WeierstrassVariableChangeLocalCoordinates
 public import FLT.Mazur.WeierstrassVariableChangeLocalMorphism
 public import FLT.Mazur.WeierstrassVariableChangeProductMorphism
+public import FLT.Mazur.WeierstrassVariableChangeProjectiveComposition
 public import FLT.Mazur.WeierstrassVariableChangeProjectiveInverse
 public import FLT.Mazur.WeierstrassVariableChangeProjectivePoints
 public import FLT.Mazur.WeierstrassVariableChangeProperCoefficient
