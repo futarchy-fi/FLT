@@ -7084,6 +7084,7 @@ public import FLT.Mazur.RelativeGenusOneCanonicalLine
 public import FLT.Mazur.RelativeGenusOneChangedBasis
 public import FLT.Mazur.RelativeGenusOneChangedMonomials
 public import FLT.Mazur.RelativeGenusOneComplementCoordinates
+public import FLT.Mazur.RelativeGenusOneComplementEquation
 public import FLT.Mazur.RelativeGenusOneComplementMonomials
 public import FLT.Mazur.RelativeGenusOneCubicRelation
 public import FLT.Mazur.RelativeGenusOneFramedProducts
