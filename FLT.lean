@@ -8215,6 +8215,7 @@ public import FLT.Mazur.WeierstrassDividedAdjacentComponentInjectivity
 public import FLT.Mazur.WeierstrassDividedAdjacentComponentRanges
 public import FLT.Mazur.WeierstrassDividedAdjacentComponentStructure
 public import FLT.Mazur.WeierstrassDividedAdjacentConicExterior
+public import FLT.Mazur.WeierstrassDividedAdjacentCorrectedBoundary
 public import FLT.Mazur.WeierstrassDividedAdjacentCrossedIntersection
 public import FLT.Mazur.WeierstrassDividedAdjacentEndpointRanges
 public import FLT.Mazur.WeierstrassDividedAdjacentExtendedEmptyIntersections
