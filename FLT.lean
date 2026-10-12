@@ -8586,6 +8586,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearZeroConicAdjacent
 public import FLT.Mazur.WeierstrassCoefficientZero
 public import FLT.Mazur.WeierstrassConicCoefficientMap
 public import FLT.Mazur.WeierstrassConicCoefficientTransport
+public import FLT.Mazur.WeierstrassConicFullParameterCoefficient
 public import FLT.Mazur.WeierstrassConicParameterCoefficient
 public import FLT.Mazur.WeierstrassConicPunctureCoefficient
 public import FLT.Mazur.WeierstrassConicZeroAffineParameter
