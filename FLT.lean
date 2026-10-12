@@ -4512,6 +4512,7 @@ public import FLT.Mazur.GrassmannianTransitionSpecialization
 public import FLT.Mazur.GrassmannianTripleOverlapCoordinates
 public import FLT.Mazur.GrassmannianTripleOverlapDeterminant
 public import FLT.Mazur.GrassmannianTripleOverlapOriginalPullback
+public import FLT.Mazur.GrassmannianTripleOverlapRestriction
 public import FLT.Mazur.GrassmannianTripleOverlapRing
 public import FLT.Mazur.GrassmannianTripleOverlapScheme
 public import FLT.Mazur.GroupMarkingBaseChange
