@@ -4511,6 +4511,7 @@ public import FLT.Mazur.GrassmannianAmbientOverlapRepresentation
 public import FLT.Mazur.GrassmannianAmbientPointCover
 public import FLT.Mazur.GrassmannianAmbientPointTransition
 public import FLT.Mazur.GrassmannianAmbientPointTransport
+public import FLT.Mazur.GrassmannianAmbientPullbackCoherence
 public import FLT.Mazur.GrassmannianAmbientQuotientCover
 public import FLT.Mazur.GrassmannianAmbientSecondChart
 public import FLT.Mazur.GrassmannianAmbientTransition
