@@ -3615,6 +3615,7 @@ public import FLT.Mazur.CyclicHomSubgroupVanishingChart
 public import FLT.Mazur.CyclicHomUniversalSubgroupComparison
 public import FLT.Mazur.CyclicMarkingDivisorTransport
 public import FLT.Mazur.CyclicMarkingOrbitDivisor
+public import FLT.Mazur.CyclicMarkingRelabelIdeal
 public import FLT.Mazur.CyclicNodeChart
 public import FLT.Mazur.CyclicNormalizationExact
 public import FLT.Mazur.CyclicOrbitCartierGenerator
