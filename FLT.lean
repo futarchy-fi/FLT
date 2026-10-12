@@ -4496,6 +4496,7 @@ public import FLT.Mazur.GrassmannianAmbientGluedBase
 public import FLT.Mazur.GrassmannianAmbientIdentity
 public import FLT.Mazur.GrassmannianAmbientIndexBaseChange
 public import FLT.Mazur.GrassmannianAmbientNormalizedQuotient
+public import FLT.Mazur.GrassmannianAmbientOverlapFactorization
 public import FLT.Mazur.GrassmannianAmbientOverlapPoints
 public import FLT.Mazur.GrassmannianAmbientOverlapRepresentation
 public import FLT.Mazur.GrassmannianAmbientPointTransition
