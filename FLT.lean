@@ -4425,6 +4425,7 @@ public import FLT.Mazur.GeneralizedCurveGeometricWeierstrass
 public import FLT.Mazur.GeneralizedCurveGraph
 public import FLT.Mazur.GeneralizedCurveGraphBaseChange
 public import FLT.Mazur.GeneralizedCurveGraphTransport
+public import FLT.Mazur.GeneralizedCurveIdentityBaseChange
 public import FLT.Mazur.GeneralizedCurveLocalCubicPresentation
 public import FLT.Mazur.GeneralizedCurveLocalPointFrames
 public import FLT.Mazur.GeneralizedCurvePicardClasses
