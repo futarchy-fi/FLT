@@ -3510,6 +3510,7 @@ public import FLT.Mazur.CyclicNodeChart
 public import FLT.Mazur.CyclicNormalizationExact
 public import FLT.Mazur.CyclicOverlapGraph
 public import FLT.Mazur.CyclicPinchingProduct
+public import FLT.Mazur.CyclicPinchingReflection
 public import FLT.Mazur.CyclicPinchingRotation
 public import FLT.Mazur.CyclicProductDescent
 public import FLT.Mazur.CyclicProductEndpoints
@@ -5279,7 +5280,9 @@ public import FLT.Mazur.MonoFamilySchemeGluing
 public import FLT.Mazur.MultiplicativeGroupDimension
 public import FLT.Mazur.MultiplicativeGroupFieldExtension
 public import FLT.Mazur.MultiplicativeGroupScheme
+public import FLT.Mazur.NeronPolygonDihedralRelations
 public import FLT.Mazur.NeronPolygonPredicate
+public import FLT.Mazur.NeronPolygonReflection
 public import FLT.Mazur.NeronPolygonRotation
 public import FLT.Mazur.NeronPolygonRotationAction
 public import FLT.Mazur.NeronPolygonScaling
@@ -8010,6 +8013,7 @@ public import FLT.Mazur.WeierstrassDividedExteriorStep
 public import FLT.Mazur.WeierstrassDividedExteriorTerminalExclusions
 public import FLT.Mazur.WeierstrassDividedExteriorTerminalIntersection
 public import FLT.Mazur.WeierstrassDividedExteriorYBoundary
+public import FLT.Mazur.WeierstrassDividedFaithfulActionDescent
 public import FLT.Mazur.WeierstrassDividedFinalAdjacentComponents
 public import FLT.Mazur.WeierstrassDividedFinalAdjacentConicBranches
 public import FLT.Mazur.WeierstrassDividedFinalAdjacentOverComponents
@@ -8293,6 +8297,7 @@ public import FLT.Mazur.WeierstrassDividedOriginalScaleOpen
 public import FLT.Mazur.WeierstrassDividedOriginalXOpen
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityAction
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityActionComparison
+public import FLT.Mazur.WeierstrassDividedPositiveEqualityAllComponentAction
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityAtlasCompatibility
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityAtlasFamily
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityAtlasFullCompatibility
@@ -8370,11 +8375,13 @@ public import FLT.Mazur.WeierstrassDividedPositiveEqualityTerminalAtlasCompatibi
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityTerminalAtlasDesc
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityTerminalBranches
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityTerminalCompatibility
+public import FLT.Mazur.WeierstrassDividedPositiveEqualityTerminalComponentAction
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityTerminalDescRecovery
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityTerminalFamilyDescent
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityTerminalIndexedDesc
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityTerminalLocalMaps
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityTerminalTensorDesc
+public import FLT.Mazur.WeierstrassDividedPositiveEqualityWholeFiberAction
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityZero
 public import FLT.Mazur.WeierstrassDividedPrecedingAtlasRange
 public import FLT.Mazur.WeierstrassDividedPreviousBoundaryAlgebra
@@ -8394,6 +8401,7 @@ public import FLT.Mazur.WeierstrassDividedSmoothCoefficientEmbedding
 public import FLT.Mazur.WeierstrassDividedSmoothSuccessiveCoefficientAction
 public import FLT.Mazur.WeierstrassDividedSmoothSuccessiveIntegralAction
 public import FLT.Mazur.WeierstrassDividedSmoothSuccessiveResidueAction
+public import FLT.Mazur.WeierstrassDividedSmoothTerminalCoefficientAction
 public import FLT.Mazur.WeierstrassDividedSmoothTerminalIntegralAction
 public import FLT.Mazur.WeierstrassDividedSuccessiveOriginalY
 public import FLT.Mazur.WeierstrassDividedSuccessorActionAtlas
@@ -8418,11 +8426,13 @@ public import FLT.Mazur.WeierstrassDividedSuccessorRetainedCoordinates
 public import FLT.Mazur.WeierstrassDividedSuccessorRetainedGluing
 public import FLT.Mazur.WeierstrassDividedSuccessorUnitAction
 public import FLT.Mazur.WeierstrassDividedTensorAtlasComparison
+public import FLT.Mazur.WeierstrassDividedTensorPointAction
 public import FLT.Mazur.WeierstrassDividedTensorYBoundary
 public import FLT.Mazur.WeierstrassDividedTerminalAllExteriorNodes
 public import FLT.Mazur.WeierstrassDividedTerminalAtlasPushout
 public import FLT.Mazur.WeierstrassDividedTerminalBranchIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalBranchesNodeIntersection
+public import FLT.Mazur.WeierstrassDividedTerminalCoefficientAction
 public import FLT.Mazur.WeierstrassDividedTerminalComponentExclusions
 public import FLT.Mazur.WeierstrassDividedTerminalComponentInjectivity
 public import FLT.Mazur.WeierstrassDividedTerminalComponentIntersection
@@ -8436,6 +8446,8 @@ public import FLT.Mazur.WeierstrassDividedTerminalConicCover
 public import FLT.Mazur.WeierstrassDividedTerminalCrossedIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalExtendedEmptyIntersections
 public import FLT.Mazur.WeierstrassDividedTerminalFullConicIntersection
+public import FLT.Mazur.WeierstrassDividedTerminalHorizontalCyclicAction
+public import FLT.Mazur.WeierstrassDividedTerminalHorizontalCyclicPair
 public import FLT.Mazur.WeierstrassDividedTerminalLineDisjoint
 public import FLT.Mazur.WeierstrassDividedTerminalNodeChartExclusion
 public import FLT.Mazur.WeierstrassDividedTerminalNodeIncidence
@@ -9290,6 +9302,7 @@ public import FLT.Mazur.WeierstrassSmoothCyclicParameterDensity
 public import FLT.Mazur.WeierstrassSmoothDividedIntegralOutput
 public import FLT.Mazur.WeierstrassSmoothDividedProductResidue
 public import FLT.Mazur.WeierstrassSmoothDividedProductSource
+public import FLT.Mazur.WeierstrassSmoothDividedResiduePoint
 public import FLT.Mazur.WeierstrassSmoothDividedSecantResidue
 public import FLT.Mazur.WeierstrassSmoothDividedSecantSource
 public import FLT.Mazur.WeierstrassSmoothDividedTerminalCharacter
