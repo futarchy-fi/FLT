@@ -7714,6 +7714,7 @@ public import FLT.Mazur.SectionPowerGluing
 public import FLT.Mazur.SectionProjectiveFiniteNeighborhood
 public import FLT.Mazur.SectionProjectiveImmersion
 public import FLT.Mazur.SectionResidueFieldIso
+public import FLT.Mazur.SectionRestrictedLineBaseChange
 public import FLT.Mazur.SectionRetainedChartComparison
 public import FLT.Mazur.SectionRetainedChartMorphism
 public import FLT.Mazur.SectionRetainedCoefficientOpens
