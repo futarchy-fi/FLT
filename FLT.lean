@@ -4461,6 +4461,7 @@ public import FLT.Mazur.GroupMarkingBaseChangeInverse
 public import FLT.Mazur.GroupMarkingTransport
 public import FLT.Mazur.GroupMarkingTransportEquations
 public import FLT.Mazur.GroupMarkingTransportNaturality
+public import FLT.Mazur.GroupObjectPointTranslation
 public import FLT.Mazur.GroupSchemeBaseChangeComparison
 public import FLT.Mazur.GroupSchemeBaseChangeComposition
 public import FLT.Mazur.GroupSchemeBaseChangeProjections
@@ -5650,6 +5651,7 @@ public import FLT.Mazur.PolygonCompleteCartesianPointCohomology
 public import FLT.Mazur.PolygonCompleteCartesianPointDegree
 public import FLT.Mazur.PolygonCompleteCartesianPointDivisor
 public import FLT.Mazur.PolygonCompleteCartesianPointLine
+public import FLT.Mazur.PolygonCompleteCartesianRotation
 public import FLT.Mazur.PolygonCompleteClassifiedFibers
 public import FLT.Mazur.PolygonCompleteClosedFiber
 public import FLT.Mazur.PolygonCompleteClosedGenus
@@ -5725,6 +5727,7 @@ public import FLT.Mazur.PolygonCompleteMarkingDivisor
 public import FLT.Mazur.PolygonCompleteMarkingLineBaseChange
 public import FLT.Mazur.PolygonCompleteMarkingNaturality
 public import FLT.Mazur.PolygonCompleteMarkingPowerCoherence
+public import FLT.Mazur.PolygonCompleteMarkingRotation
 public import FLT.Mazur.PolygonCompleteMarkingSectionModel
 public import FLT.Mazur.PolygonCompleteMarkingSpecialization
 public import FLT.Mazur.PolygonCompleteMarkingUniqueness
@@ -5791,11 +5794,13 @@ public import FLT.Mazur.PolygonCompletePointProjectiveIso
 public import FLT.Mazur.PolygonCompletePointSectionBaseChange
 public import FLT.Mazur.PolygonCompletePointWeierstrassEquation
 public import FLT.Mazur.PolygonCompletePrincipalClosedFiber
+public import FLT.Mazur.PolygonCompleteProjectiveRotation
 public import FLT.Mazur.PolygonCompleteRotation
 public import FLT.Mazur.PolygonCompleteSmoothDimensionOpen
 public import FLT.Mazur.PolygonCompleteSmoothIrreducible
 public import FLT.Mazur.PolygonCompleteSmoothPointAffine
 public import FLT.Mazur.PolygonCompleteStageMarkings
+public import FLT.Mazur.PolygonCompleteStageRotation
 public import FLT.Mazur.PolygonCompleteStructureCohomology
 public import FLT.Mazur.PolygonCompleteUniversalFunctions
 public import FLT.Mazur.PolygonCompleteZeroParameterFiber
@@ -5994,11 +5999,14 @@ public import FLT.Mazur.PolygonPowerNodeWeights
 public import FLT.Mazur.PolygonPowerSeriesBase
 public import FLT.Mazur.PolygonPowerSeriesSystem
 public import FLT.Mazur.PolygonProductAtlas
+public import FLT.Mazur.PolygonProjectiveRotationNormalization
 public import FLT.Mazur.PolygonProper
 public import FLT.Mazur.PolygonPuncturedCanonicalEquations
 public import FLT.Mazur.PolygonPureDimension
 public import FLT.Mazur.PolygonRefinedClosedCharts
+public import FLT.Mazur.PolygonRetainedSectionRotation
 public import FLT.Mazur.PolygonRetainedStageMarkings
+public import FLT.Mazur.PolygonRotationNoFixedPoints
 public import FLT.Mazur.PolygonRotationScalars
 public import FLT.Mazur.PolygonScaledReciprocal
 public import FLT.Mazur.PolygonScalingNaturality
@@ -7833,6 +7841,7 @@ public import FLT.Mazur.WeierstrassAllOrdinaryTripleCoordinates
 public import FLT.Mazur.WeierstrassAllOrdinaryTripleDomain
 public import FLT.Mazur.WeierstrassAllOrdinaryTripleGlobal
 public import FLT.Mazur.WeierstrassAllOrdinaryTripleSchemes
+public import FLT.Mazur.WeierstrassAutomorphismNormalization
 public import FLT.Mazur.WeierstrassChartBaseChange
 public import FLT.Mazur.WeierstrassChartBaseChangeSquare
 public import FLT.Mazur.WeierstrassChartCoefficientMap
