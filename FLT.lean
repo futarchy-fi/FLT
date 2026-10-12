@@ -7143,6 +7143,7 @@ public import FLT.Mazur.RelativeGenusOnePointLeading
 public import FLT.Mazur.RelativeGenusOnePointSections
 public import FLT.Mazur.RelativeGenusOnePointSplit
 public import FLT.Mazur.RelativeGenusOnePointedCubic
+public import FLT.Mazur.RelativeGenusOnePointedPresentation
 public import FLT.Mazur.RelativeGenusOnePoleReduction
 public import FLT.Mazur.RelativeGenusOneProjectiveIso
 public import FLT.Mazur.RelativeGenusOneProjectiveSections
