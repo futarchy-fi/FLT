@@ -4560,6 +4560,7 @@ public import FLT.Mazur.GrassmannianQuotientSheafTransition
 public import FLT.Mazur.GrassmannianScalarExtension
 public import FLT.Mazur.GrassmannianSelectedAmbientIndex
 public import FLT.Mazur.GrassmannianSelectedColumnsLocalization
+public import FLT.Mazur.GrassmannianSheafRefinementComparison
 public import FLT.Mazur.GrassmannianSplitChartCoordinates
 public import FLT.Mazur.GrassmannianSplitChartScheme
 public import FLT.Mazur.GrassmannianSplitQuotientChart
