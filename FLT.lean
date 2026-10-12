@@ -4527,6 +4527,7 @@ public import FLT.Mazur.GrassmannianAmbientChartConeMap
 public import FLT.Mazur.GrassmannianAmbientChartIndex
 public import FLT.Mazur.GrassmannianAmbientChartMap
 public import FLT.Mazur.GrassmannianAmbientChartNaturality
+public import FLT.Mazur.GrassmannianAmbientChartNormalization
 public import FLT.Mazur.GrassmannianAmbientChartPoints
 public import FLT.Mazur.GrassmannianAmbientChartRecovery
 public import FLT.Mazur.GrassmannianAmbientChartRepresentation
