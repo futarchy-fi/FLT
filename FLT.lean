@@ -8368,6 +8368,7 @@ public import FLT.Mazur.VariableHilbertParameterOrbitDescent
 public import FLT.Mazur.VariableHilbertRelationBridge
 public import FLT.Mazur.VariableHilbertRelationBridgeIso
 public import FLT.Mazur.VariableHilbertRelationCover
+public import FLT.Mazur.VariableHilbertSaturatedRefinement
 public import FLT.Mazur.VariableHilbertSourceIntersection
 public import FLT.Mazur.VariableHilbertSplitChange
 public import FLT.Mazur.VariableHilbertSplitFunctions
