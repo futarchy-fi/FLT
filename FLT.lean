@@ -2501,6 +2501,7 @@ public import FLT.Mazur.AcyclicHilbertFixedBaseChange
 public import FLT.Mazur.AcyclicHilbertFixedBaseIdeal
 public import FLT.Mazur.AcyclicHilbertFixedBasePicard
 public import FLT.Mazur.AcyclicHilbertFixedBaseProjection
+public import FLT.Mazur.AcyclicHilbertFixedBaseRetraction
 public import FLT.Mazur.AcyclicHilbertPicardTestOverlap
 public import FLT.Mazur.AcyclicLineSectionBaseChange
 public import FLT.Mazur.AcyclicPointedAbelBaseChange
@@ -2747,6 +2748,8 @@ public import FLT.Mazur.AffineHilbertEnvelopeKernelPair
 public import FLT.Mazur.AffineHilbertEnvelopeOpenChart
 public import FLT.Mazur.AffineHilbertEnvelopeQuotient
 public import FLT.Mazur.AffineHilbertEnvelopeScheme
+public import FLT.Mazur.AffineHilbertFixedBaseQuotient
+public import FLT.Mazur.AffineHilbertFixedBaseRelation
 public import FLT.Mazur.AffineHilbertFullRelationRestriction
 public import FLT.Mazur.AffineHilbertLocalTensorInvariants
 public import FLT.Mazur.AffineHilbertLocalizedCoefficients
@@ -5983,10 +5986,12 @@ public import FLT.Mazur.OrderedHilbertEtaleTestCover
 public import FLT.Mazur.OrderedHilbertEtaleTestPoints
 public import FLT.Mazur.OrderedHilbertFaithfulBaseComparison
 public import FLT.Mazur.OrderedHilbertFaithfulChartComparison
+public import FLT.Mazur.OrderedHilbertFaithfulChartProjection
 public import FLT.Mazur.OrderedHilbertFaithfulClass
 public import FLT.Mazur.OrderedHilbertFaithfulOrbitCover
 public import FLT.Mazur.OrderedHilbertFaithfulParameter
 public import FLT.Mazur.OrderedHilbertFaithfulPicardComparison
+public import FLT.Mazur.OrderedHilbertFaithfulRestrictedQuotient
 public import FLT.Mazur.OrderedHilbertFaithfulTestCover
 public import FLT.Mazur.OrderedHilbertSeparableGeometricCoverage
 public import FLT.Mazur.OrderedProjectiveHilbertNaturality
@@ -7469,6 +7474,8 @@ public import FLT.Mazur.RelativeRelationGeneratorSubopens
 public import FLT.Mazur.RelativeRelationInvariantAffineComparison
 public import FLT.Mazur.RelativeRelationInvariantGlobalSections
 public import FLT.Mazur.RelativeRelationInvariantLocallyRinged
+public import FLT.Mazur.RelativeRelationInvariantMap
+public import FLT.Mazur.RelativeRelationInvariantMapSections
 public import FLT.Mazur.RelativeRelationInvariantSectionRings
 public import FLT.Mazur.RelativeRelationInvariantSections
 public import FLT.Mazur.RelativeRelationInvariantSheaf
@@ -8505,6 +8512,7 @@ public import FLT.Mazur.VariableHilbertEtaleRelation
 public import FLT.Mazur.VariableHilbertFiniteRelationFibers
 public import FLT.Mazur.VariableHilbertFixedBasePicard
 public import FLT.Mazur.VariableHilbertFixedBaseProjection
+public import FLT.Mazur.VariableHilbertFixedBaseQuotient
 public import FLT.Mazur.VariableHilbertFixedBaseRelation
 public import FLT.Mazur.VariableHilbertIntersectionBaseChange
 public import FLT.Mazur.VariableHilbertInvariantFunctionDescent
