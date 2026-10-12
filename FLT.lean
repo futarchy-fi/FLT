@@ -7637,6 +7637,7 @@ public import FLT.Mazur.SequentialFiniteProducts
 public import FLT.Mazur.SheafPullbackAmbientCoherence
 public import FLT.Mazur.SheafPullbackAmbientMatch
 public import FLT.Mazur.SheafPullbackAmbientNormalization
+public import FLT.Mazur.SheafPullbackAmbientRefinement
 public import FLT.Mazur.SheafPullbackAmbientSectionMatch
 public import FLT.Mazur.SheafPullbackCanonicalRecovery
 public import FLT.Mazur.SheafPullbackCoordinateRecovery
