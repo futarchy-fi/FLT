@@ -4521,6 +4521,7 @@ public import FLT.Mazur.GroupObjectPointTranslation
 public import FLT.Mazur.GroupObjectTranslationNaturality
 public import FLT.Mazur.GroupSchemeBaseChangeComparison
 public import FLT.Mazur.GroupSchemeBaseChangeComposition
+public import FLT.Mazur.GroupSchemeBaseChangeEqualityComparison
 public import FLT.Mazur.GroupSchemeBaseChangeProjections
 public import FLT.Mazur.GroupSchemeBaseChangeSections
 public import FLT.Mazur.GroupSectionBaseChange
