@@ -4493,6 +4493,7 @@ public import FLT.Mazur.GrassmannianAmbientChartRepresentation
 public import FLT.Mazur.GrassmannianAmbientCoordinateMap
 public import FLT.Mazur.GrassmannianAmbientGlueData
 public import FLT.Mazur.GrassmannianAmbientGluedBase
+public import FLT.Mazur.GrassmannianAmbientGluedChartPoint
 public import FLT.Mazur.GrassmannianAmbientIdentity
 public import FLT.Mazur.GrassmannianAmbientIndexBaseChange
 public import FLT.Mazur.GrassmannianAmbientNormalizedQuotient
