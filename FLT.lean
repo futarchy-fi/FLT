@@ -4657,6 +4657,7 @@ public import FLT.Mazur.HilbertQuotientDegreeBound
 public import FLT.Mazur.HilbertQuotientDegreeFiltration
 public import FLT.Mazur.HilbertSupportOpenLattice
 public import FLT.Mazur.HilbertSupportOpenPullback
+public import FLT.Mazur.HilbertTruncatedIdealGeneration
 public import FLT.Mazur.HilbertTupleBasisTower
 public import FLT.Mazur.HomIntegerModel
 public import FLT.Mazur.HomogeneousFractionProjection
