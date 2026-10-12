@@ -8190,6 +8190,7 @@ public import FLT.Mazur.WeierstrassDilatationZeroResidue
 public import FLT.Mazur.WeierstrassDilatationZeroResidueBoundary
 public import FLT.Mazur.WeierstrassDilatationZeroResidueGeometry
 public import FLT.Mazur.WeierstrassDividedAdjacentBoundaryAlgebra
+public import FLT.Mazur.WeierstrassDividedAdjacentBoundaryGeometry
 public import FLT.Mazur.WeierstrassDividedAdjacentBoundaryReciprocals
 public import FLT.Mazur.WeierstrassDividedAdjacentBranchCompatibility
 public import FLT.Mazur.WeierstrassDividedAdjacentComponentDisjoint
