@@ -8669,6 +8669,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearResidueAdjacent
 public import FLT.Mazur.WeierstrassCoefficientShearResidueConic
 public import FLT.Mazur.WeierstrassCoefficientShearResidueEquality
 public import FLT.Mazur.WeierstrassCoefficientShearResidueExterior
+public import FLT.Mazur.WeierstrassCoefficientShearResidueExteriorLift
 public import FLT.Mazur.WeierstrassCoefficientShearResidueInitial
 public import FLT.Mazur.WeierstrassCoefficientShearResidueOrderedExterior
 public import FLT.Mazur.WeierstrassCoefficientShearResidueRetained
