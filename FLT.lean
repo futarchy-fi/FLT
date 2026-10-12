@@ -8451,6 +8451,7 @@ public import FLT.Mazur.WeierstrassDividedSuccessorRetainedCoordinates
 public import FLT.Mazur.WeierstrassDividedSuccessorRetainedGluing
 public import FLT.Mazur.WeierstrassDividedSuccessorUnitAction
 public import FLT.Mazur.WeierstrassDividedTangentCech
+public import FLT.Mazur.WeierstrassDividedTangentCechIso
 public import FLT.Mazur.WeierstrassDividedTangentConjugation
 public import FLT.Mazur.WeierstrassDividedTensorAtlasComparison
 public import FLT.Mazur.WeierstrassDividedTensorPointAction
