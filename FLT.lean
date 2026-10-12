@@ -7075,6 +7075,7 @@ public import FLT.Mazur.RelativeFppfLocalSubfunctor
 public import FLT.Mazur.RelativeGenusOneCanonicalBasis
 public import FLT.Mazur.RelativeGenusOneCanonicalConstants
 public import FLT.Mazur.RelativeGenusOneCanonicalLine
+public import FLT.Mazur.RelativeGenusOneChangedBasis
 public import FLT.Mazur.RelativeGenusOneInitialPoleStep
 public import FLT.Mazur.RelativeGenusOneLowPoleBasis
 public import FLT.Mazur.RelativeGenusOnePointFibers
