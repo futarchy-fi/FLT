@@ -7367,6 +7367,7 @@ public import FLT.Mazur.RelativeRelationRingedCoequalizer
 public import FLT.Mazur.RelativeRelationRingedCofork
 public import FLT.Mazur.RelativeRelationRingedDescent
 public import FLT.Mazur.RelativeRelationSaturatedSections
+public import FLT.Mazur.RelativeRelationSaturatedSheafImage
 public import FLT.Mazur.RelativeRelationSaturationAction
 public import FLT.Mazur.RelativeRelationSaturationComparison
 public import FLT.Mazur.RelativeRelationSaturationCover
