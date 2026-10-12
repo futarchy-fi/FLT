@@ -4666,6 +4666,7 @@ public import FLT.Mazur.GrassmannianWholeOverlapRefinement
 public import FLT.Mazur.GrassmannianWholeOverlapTransition
 public import FLT.Mazur.GroupMarkingBaseChange
 public import FLT.Mazur.GroupMarkingBaseChangeInverse
+public import FLT.Mazur.GroupMarkingBaseProjection
 public import FLT.Mazur.GroupMarkingCartesianInverse
 public import FLT.Mazur.GroupMarkingCartesianTransport
 public import FLT.Mazur.GroupMarkingTransport
