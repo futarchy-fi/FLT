@@ -2803,6 +2803,7 @@ public import FLT.Mazur.AffineOpenCoverTestRefinement
 public import FLT.Mazur.AffineOpenDenominators
 public import FLT.Mazur.AffineOpenFinitePolynomialPresentation
 public import FLT.Mazur.AffineOpenFiniteQuotientChart
+public import FLT.Mazur.AffineOpenFiniteRefinement
 public import FLT.Mazur.AffineOpenImmersionLocalizationCriterion
 public import FLT.Mazur.AffineOpenQuotientPresentation
 public import FLT.Mazur.AffineOverlapDiagonal
@@ -3476,6 +3477,7 @@ public import FLT.Mazur.CommonAmbientAffineRelationEtale
 public import FLT.Mazur.CommonAmbientAffineRelationImage
 public import FLT.Mazur.CommonAmbientAffineRelationKernel
 public import FLT.Mazur.CommonAmbientAmpleFiniteNeighborhood
+public import FLT.Mazur.CommonAmbientDeterminantTarget
 public import FLT.Mazur.CommonAmbientGrassmannianAffineCover
 public import FLT.Mazur.CommonAmbientGrassmannianProduct
 public import FLT.Mazur.CommonAmbientOpenIso
@@ -4611,12 +4613,18 @@ public import FLT.Mazur.GrassmannianChartTransitionCocycle
 public import FLT.Mazur.GrassmannianChartTransitionInverse
 public import FLT.Mazur.GrassmannianClassifiedImageQuotient
 public import FLT.Mazur.GrassmannianCoordinateRefinementLaw
+public import FLT.Mazur.GrassmannianDeterminantAmple
 public import FLT.Mazur.GrassmannianDeterminantChartSections
+public import FLT.Mazur.GrassmannianDeterminantCocycle
+public import FLT.Mazur.GrassmannianDeterminantGlobalLoci
+public import FLT.Mazur.GrassmannianDeterminantLine
 public import FLT.Mazur.GrassmannianDeterminantLineTransitions
 public import FLT.Mazur.GrassmannianDeterminantOpenUnits
 public import FLT.Mazur.GrassmannianDeterminantOverlapUnits
 public import FLT.Mazur.GrassmannianDeterminantSchemeSections
 public import FLT.Mazur.GrassmannianDeterminantSectionLoci
+public import FLT.Mazur.GrassmannianFiniteCoordinateCharts
+public import FLT.Mazur.GrassmannianFiniteCoordinateCover
 public import FLT.Mazur.GrassmannianFramedQuotientAtlas
 public import FLT.Mazur.GrassmannianFramedSheafQuotient
 public import FLT.Mazur.GrassmannianFunctorLocalizedChart
@@ -8365,6 +8373,8 @@ public import FLT.Mazur.VariableHilbertSplitNeighborhood
 public import FLT.Mazur.VariableHilbertSplitQuotient
 public import FLT.Mazur.VariableHilbertSplitScheme
 public import FLT.Mazur.VariableHilbertSplitSheafQuotient
+public import FLT.Mazur.VariableHilbertWholeOrbitAffine
+public import FLT.Mazur.VariableHilbertWholeOrbitRefinement
 public import FLT.Mazur.VariableTranslatedHilbertChart
 public import FLT.Mazur.VariableTranslatedHilbertOverlap
 public import FLT.Mazur.VariableTranslatedHilbertRepresentation
