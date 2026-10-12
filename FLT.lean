@@ -5966,6 +5966,7 @@ public import FLT.Mazur.OrderedHilbertEtaleStalkLift
 public import FLT.Mazur.OrderedHilbertEtaleTestCover
 public import FLT.Mazur.OrderedHilbertEtaleTestPoints
 public import FLT.Mazur.OrderedHilbertFaithfulBaseComparison
+public import FLT.Mazur.OrderedHilbertFaithfulChartComparison
 public import FLT.Mazur.OrderedHilbertFaithfulClass
 public import FLT.Mazur.OrderedHilbertFaithfulOrbitCover
 public import FLT.Mazur.OrderedHilbertFaithfulParameter
