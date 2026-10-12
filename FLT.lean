@@ -6985,6 +6985,7 @@ public import FLT.Mazur.ProjectiveSpaceCoefficientMap
 public import FLT.Mazur.ProjectiveSpaceProper
 public import FLT.Mazur.ProjectiveSpaceReindex
 public import FLT.Mazur.ProjectiveSpaceUniverseReindex
+public import FLT.Mazur.ProjectiveTargetVanishingBaseChange
 public import FLT.Mazur.ProjectiveTargetVanishingIdeal
 public import FLT.Mazur.ProjectiveTripleModuleLocalization
 public import FLT.Mazur.ProjectiveTwistAffineBaseChange
