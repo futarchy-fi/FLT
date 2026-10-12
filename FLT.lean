@@ -9843,6 +9843,7 @@ public import FLT.Mazur.WeierstrassSmoothHorizontalPairExt
 public import FLT.Mazur.WeierstrassSmoothHorizontalProductResidue
 public import FLT.Mazur.WeierstrassSmoothHorizontalProductSource
 public import FLT.Mazur.WeierstrassSmoothHorizontalReciprocalCharacters
+public import FLT.Mazur.WeierstrassSmoothHorizontalReciprocalEvaluation
 public import FLT.Mazur.WeierstrassSmoothHorizontalResidueCoordinates
 public import FLT.Mazur.WeierstrassSmoothHorizontalResiduePoint
 public import FLT.Mazur.WeierstrassSmoothHorizontalRootParameter
