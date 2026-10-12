@@ -7873,6 +7873,7 @@ public import FLT.Mazur.WeierstrassAllOrdinaryTripleDomain
 public import FLT.Mazur.WeierstrassAllOrdinaryTripleGlobal
 public import FLT.Mazur.WeierstrassAllOrdinaryTripleSchemes
 public import FLT.Mazur.WeierstrassAutomorphismNormalization
+public import FLT.Mazur.WeierstrassAuxiliaryFieldCover
 public import FLT.Mazur.WeierstrassChartBaseChange
 public import FLT.Mazur.WeierstrassChartBaseChangeSquare
 public import FLT.Mazur.WeierstrassChartCoefficientMap
