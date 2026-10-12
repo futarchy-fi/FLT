@@ -4024,6 +4024,7 @@ public import FLT.Mazur.EtaleCoordinateSlice
 public import FLT.Mazur.EtaleCurveLocalDomain
 public import FLT.Mazur.EtaleCurveValuation
 public import FLT.Mazur.EtaleCyclicIndependentFppfImage
+public import FLT.Mazur.EtaleCyclicIndependentNormalizedCoverage
 public import FLT.Mazur.EtaleCyclicNormalizedFppfCover
 public import FLT.Mazur.EtaleCyclicNormalizedImageSieve
 public import FLT.Mazur.EtaleCyclicOriginalIndependentCoverage
