@@ -4799,6 +4799,7 @@ public import FLT.Mazur.HilbertFiniteAmbientPresentation
 public import FLT.Mazur.HilbertGrassmannianAffineMap
 public import FLT.Mazur.HilbertGrassmannianGluing
 public import FLT.Mazur.HilbertGrassmannianOverlap
+public import FLT.Mazur.HilbertGrassmannianSchemeTest
 public import FLT.Mazur.HilbertIntrinsicBasisBaseChange
 public import FLT.Mazur.HilbertIntrinsicBasisEquiv
 public import FLT.Mazur.HilbertIntrinsicBasisGlobal
