@@ -8133,6 +8133,7 @@ public import FLT.Mazur.WeierstrassCoefficientProductMorphism
 public import FLT.Mazur.WeierstrassCoefficientSecant
 public import FLT.Mazur.WeierstrassCoefficientShearAdjacentChartMap
 public import FLT.Mazur.WeierstrassCoefficientShearAdjacentFactor
+public import FLT.Mazur.WeierstrassCoefficientShearAdjacentGluedBoundary
 public import FLT.Mazur.WeierstrassCoefficientShearAdjacentIntersection
 public import FLT.Mazur.WeierstrassCoefficientShearAdjacentLine
 public import FLT.Mazur.WeierstrassCoefficientShearAdjacentOpen
