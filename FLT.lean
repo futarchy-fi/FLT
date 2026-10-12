@@ -8214,6 +8214,8 @@ public import FLT.Mazur.WeierstrassCoefficientShearCoverage
 public import FLT.Mazur.WeierstrassCoefficientShearFiniteLineContraction
 public import FLT.Mazur.WeierstrassCoefficientShearGluing
 public import FLT.Mazur.WeierstrassCoefficientShearInitialFiber
+public import FLT.Mazur.WeierstrassCoefficientShearInitialSlopeBoundary
+public import FLT.Mazur.WeierstrassCoefficientShearInitialSlopeProjections
 public import FLT.Mazur.WeierstrassCoefficientShearOverlaps
 public import FLT.Mazur.WeierstrassCoefficientShearResidueConic
 public import FLT.Mazur.WeierstrassCoefficientShearResidueExterior
@@ -8222,6 +8224,10 @@ public import FLT.Mazur.WeierstrassCoefficientShearRetainedFiber
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedIntersections
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedReconstruction
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOne
+public import FLT.Mazur.WeierstrassCoefficientShearScaleOneAdjacentIntersection
+public import FLT.Mazur.WeierstrassCoefficientShearScaleOneAdjacentTransition
+public import FLT.Mazur.WeierstrassCoefficientShearScaleOneGluedConic
+public import FLT.Mazur.WeierstrassCoefficientShearScaleOneGluedIntersections
 public import FLT.Mazur.WeierstrassCoefficientShearSpecialization
 public import FLT.Mazur.WeierstrassCoefficientShearSpecializationMono
 public import FLT.Mazur.WeierstrassCoefficientShearTangentConjugation
@@ -9539,8 +9545,10 @@ public import FLT.Mazur.WeierstrassNodalResidueTangentDepth
 public import FLT.Mazur.WeierstrassNodalResidueTransition
 public import FLT.Mazur.WeierstrassNodalRetainedComponents
 public import FLT.Mazur.WeierstrassNodalZeroAdjacentIntersections
+public import FLT.Mazur.WeierstrassNodalZeroFirstAdjacentIntersections
 public import FLT.Mazur.WeierstrassNodalZeroInitialChart
 public import FLT.Mazur.WeierstrassNodalZeroInitialIntersection
+public import FLT.Mazur.WeierstrassNodalZeroInitialSlopeIntersection
 public import FLT.Mazur.WeierstrassNodalZeroLaterComponents
 public import FLT.Mazur.WeierstrassNodalZeroRetainedChart
 public import FLT.Mazur.WeierstrassNodalZeroRetainedComponents
@@ -9920,6 +9928,10 @@ public import FLT.Mazur.WeierstrassSuccessiveShearLineBoundary
 public import FLT.Mazur.WeierstrassSuccessiveShearLineOpen
 public import FLT.Mazur.WeierstrassSuccessiveShearNormalForm
 public import FLT.Mazur.WeierstrassSuccessiveShearScaleOne
+public import FLT.Mazur.WeierstrassSuccessiveShearScaleOneBoundaryCoordinates
+public import FLT.Mazur.WeierstrassSuccessiveShearScaleOneConicBoundary
+public import FLT.Mazur.WeierstrassSuccessiveShearScaleOneHorizontal
+public import FLT.Mazur.WeierstrassSuccessiveShearScaleOneSignedReciprocal
 public import FLT.Mazur.WeierstrassSuccessiveShearSignedReciprocal
 public import FLT.Mazur.WeierstrassSuccessiveXAlgebra
 public import FLT.Mazur.WeierstrassSuccessiveXBaseChange
