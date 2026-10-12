@@ -4786,6 +4786,7 @@ public import FLT.Mazur.HilbertCommonAmbientOverlap
 public import FLT.Mazur.HilbertCommonOpenRestriction
 public import FLT.Mazur.HilbertDivisorDegreePresentation
 public import FLT.Mazur.HilbertFaithfullyFlatTupleBasis
+public import FLT.Mazur.HilbertFamilyAmbientPointNaturality
 public import FLT.Mazur.HilbertFamilyBoundedEvaluation
 public import FLT.Mazur.HilbertFamilyFiniteQuotient
 public import FLT.Mazur.HilbertFamilyGrassmannianNaturality
