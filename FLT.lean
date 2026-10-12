@@ -9877,6 +9877,7 @@ public import FLT.Mazur.WeierstrassSmoothSuccessiveTensorInput
 public import FLT.Mazur.WeierstrassSmoothSuccessiveTensorOutput
 public import FLT.Mazur.WeierstrassSmoothSuccessiveTransportedTensorInput
 public import FLT.Mazur.WeierstrassSmoothSuccessiveZeroConicInput
+public import FLT.Mazur.WeierstrassSmoothSuccessiveZeroConicOutput
 public import FLT.Mazur.WeierstrassSmoothTransportedComparison
 public import FLT.Mazur.WeierstrassSmoothTransportedCover
 public import FLT.Mazur.WeierstrassSmoothTransportedOutputRegular
