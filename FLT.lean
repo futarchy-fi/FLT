@@ -4500,6 +4500,7 @@ public import FLT.Mazur.GrassmannianAmbientOverlapRepresentation
 public import FLT.Mazur.GrassmannianAmbientPointTransition
 public import FLT.Mazur.GrassmannianAmbientPointTransport
 public import FLT.Mazur.GrassmannianAmbientQuotientCover
+public import FLT.Mazur.GrassmannianAmbientSecondChart
 public import FLT.Mazur.GrassmannianAmbientTransition
 public import FLT.Mazur.GrassmannianAmbientTransitionCocycle
 public import FLT.Mazur.GrassmannianAmbientTransitionNaturality
