@@ -8580,6 +8580,7 @@ public import FLT.Mazur.WeierstrassDividedShearExterior
 public import FLT.Mazur.WeierstrassDividedShearFiniteAffine
 public import FLT.Mazur.WeierstrassDividedShearFiniteIteration
 public import FLT.Mazur.WeierstrassDividedShearFiniteModification
+public import FLT.Mazur.WeierstrassDividedShearGlobalInfinityLift
 public import FLT.Mazur.WeierstrassDividedShearGlobalInfinityOpen
 public import FLT.Mazur.WeierstrassDividedShearGluing
 public import FLT.Mazur.WeierstrassDividedShearInitialExterior
