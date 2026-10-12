@@ -4489,6 +4489,7 @@ public import FLT.Mazur.GrassmannianAmbientChartIndex
 public import FLT.Mazur.GrassmannianAmbientGlueData
 public import FLT.Mazur.GrassmannianAmbientGluedBase
 public import FLT.Mazur.GrassmannianAmbientIdentity
+public import FLT.Mazur.GrassmannianAmbientIndexBaseChange
 public import FLT.Mazur.GrassmannianAmbientQuotientCover
 public import FLT.Mazur.GrassmannianAmbientTransition
 public import FLT.Mazur.GrassmannianAmbientTransitionCocycle
