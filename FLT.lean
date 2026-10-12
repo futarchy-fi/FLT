@@ -8612,6 +8612,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearAdjacentGluedIntersections
 public import FLT.Mazur.WeierstrassCoefficientShearAdjacentIntersection
 public import FLT.Mazur.WeierstrassCoefficientShearAdjacentLine
 public import FLT.Mazur.WeierstrassCoefficientShearAdjacentOpen
+public import FLT.Mazur.WeierstrassCoefficientShearAdjacentSemilinear
 public import FLT.Mazur.WeierstrassCoefficientShearAdjacentTransition
 public import FLT.Mazur.WeierstrassCoefficientShearAtlas
 public import FLT.Mazur.WeierstrassCoefficientShearAtlasComparison
