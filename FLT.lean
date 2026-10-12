@@ -3591,6 +3591,7 @@ public import FLT.Mazur.CyclicHomDivisorPullback
 public import FLT.Mazur.CyclicHomMultiplicationEquation
 public import FLT.Mazur.CyclicHomMultiplicationLocus
 public import FLT.Mazur.CyclicHomMultiplicationLocusUniversal
+public import FLT.Mazur.CyclicHomMultiplicationPullback
 public import FLT.Mazur.CyclicHomSourceDivisor
 public import FLT.Mazur.CyclicHomSourceIdealPullback
 public import FLT.Mazur.CyclicHomSourcePullback
