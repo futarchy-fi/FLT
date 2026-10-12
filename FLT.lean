@@ -4622,6 +4622,7 @@ public import FLT.Mazur.GrassmannianQuotientImageFixedFrames
 public import FLT.Mazur.GrassmannianQuotientImageLocalFree
 public import FLT.Mazur.GrassmannianQuotientImageProjection
 public import FLT.Mazur.GrassmannianQuotientImageRecovery
+public import FLT.Mazur.GrassmannianQuotientImageTest
 public import FLT.Mazur.GrassmannianQuotientImageTransition
 public import FLT.Mazur.GrassmannianQuotientLocalBasis
 public import FLT.Mazur.GrassmannianQuotientRecoveryStatement
