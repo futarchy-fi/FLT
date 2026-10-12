@@ -4014,6 +4014,7 @@ public import FLT.Mazur.EtaleCurveValuation
 public import FLT.Mazur.EtaleCyclicOriginalLocalCubic
 public import FLT.Mazur.EtaleCyclicOriginalNormalizedCoverage
 public import FLT.Mazur.EtaleCyclicPresentationPullback
+public import FLT.Mazur.EtaleCyclicSmoothLocusNormalizedCoverage
 public import FLT.Mazur.EtaleCyclicSubgroupLocalPresentation
 public import FLT.Mazur.EtaleDimGe
 public import FLT.Mazur.EtaleDimLe
