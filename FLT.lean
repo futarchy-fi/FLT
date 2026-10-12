@@ -4610,6 +4610,7 @@ public import FLT.Mazur.GrassmannianQuotientSheafTransition
 public import FLT.Mazur.GrassmannianScalarExtension
 public import FLT.Mazur.GrassmannianSchemeAmbientQuotient
 public import FLT.Mazur.GrassmannianSchemeChartPoint
+public import FLT.Mazur.GrassmannianSchemeImageQuotient
 public import FLT.Mazur.GrassmannianSchemeQuotientRefinement
 public import FLT.Mazur.GrassmannianSchemeQuotientTest
 public import FLT.Mazur.GrassmannianSelectedAmbientIndex
