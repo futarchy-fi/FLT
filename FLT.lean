@@ -4739,6 +4739,7 @@ public import FLT.Mazur.HilbertBasisTupleAffineComparison
 public import FLT.Mazur.HilbertBasisTupleIntersection
 public import FLT.Mazur.HilbertBasisTupleSchemeComparison
 public import FLT.Mazur.HilbertBoundedAmbientAtlas
+public import FLT.Mazur.HilbertBoundedChartClosedEmbedding
 public import FLT.Mazur.HilbertBoundedCoordinateGeneration
 public import FLT.Mazur.HilbertBoundedCoordinateRing
 public import FLT.Mazur.HilbertBoundedEvaluationBaseChange
