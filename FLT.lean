@@ -2740,6 +2740,7 @@ public import FLT.Mazur.AffineHilbertPrincipalTensorModel
 public import FLT.Mazur.AffineHilbertRelationNeighborhoods
 public import FLT.Mazur.AffineHilbertRelationOperations
 public import FLT.Mazur.AffineHilbertRelationTensorCharts
+public import FLT.Mazur.AffineHilbertRestrictedOpenImmersion
 public import FLT.Mazur.AffineHilbertRestrictedOrbits
 public import FLT.Mazur.AffineHilbertRestrictedQuotient
 public import FLT.Mazur.AffineHilbertRestrictedSectionFunctions
