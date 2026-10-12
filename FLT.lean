@@ -3468,6 +3468,7 @@ public import FLT.Mazur.CohomologyImageReesModule
 public import FLT.Mazur.ComaximalIdealSequence
 public import FLT.Mazur.CommonAmbientGrassmannianProduct
 public import FLT.Mazur.CommonAmbientOpenIso
+public import FLT.Mazur.CommonAmbientSourceGrassmannianImmersion
 public import FLT.Mazur.CommonCoefficientStage
 public import FLT.Mazur.CommonIdealDirectSum
 public import FLT.Mazur.CommonModelEventualEquality
