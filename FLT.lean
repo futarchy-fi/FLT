@@ -7867,6 +7867,7 @@ public import FLT.Mazur.UniversalWeierstrassAuxiliaryTorsionBasisMaps
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryTorsionCover
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryTorsionDisjoint
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryTorsionSections
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryValueNaturality
 public import FLT.Mazur.UniversalWeierstrassCyclicAuxiliary
 public import FLT.Mazur.UniversalWeierstrassCyclicLevel
 public import FLT.Mazur.UniversalWeierstrassCyclicNaturalFixedPoint
