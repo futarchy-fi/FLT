@@ -10079,6 +10079,7 @@ public import FLT.Mazur.WeierstrassSuccessiveShearComponents
 public import FLT.Mazur.WeierstrassSuccessiveShearConicBoundary
 public import FLT.Mazur.WeierstrassSuccessiveShearConicRootChange
 public import FLT.Mazur.WeierstrassSuccessiveShearLineBoundary
+public import FLT.Mazur.WeierstrassSuccessiveShearLineCoefficient
 public import FLT.Mazur.WeierstrassSuccessiveShearLineOpen
 public import FLT.Mazur.WeierstrassSuccessiveShearLineRootChange
 public import FLT.Mazur.WeierstrassSuccessiveShearNormalForm
