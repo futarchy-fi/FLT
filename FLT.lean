@@ -3268,6 +3268,7 @@ public import FLT.Mazur.CartierFlatNeighborhoodDescent
 public import FLT.Mazur.CartierFppfDescent
 public import FLT.Mazur.CartierGeneratorCyclicMap
 public import FLT.Mazur.CartierGeneratorOrbitCover
+public import FLT.Mazur.CartierGeneratorSplitPresentation
 public import FLT.Mazur.CartierIdealCoproduct
 public import FLT.Mazur.CartierIdealDescentDatum
 public import FLT.Mazur.CartierIdealFinitePresentation
