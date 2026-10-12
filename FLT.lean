@@ -8355,6 +8355,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearTorusDomain
 public import FLT.Mazur.WeierstrassCoefficientShearTorusPair
 public import FLT.Mazur.WeierstrassCoefficientShearTorusReflection
 public import FLT.Mazur.WeierstrassCoefficientShearTorusSmoothOrbit
+public import FLT.Mazur.WeierstrassCoefficientShearTorusSpecialization
 public import FLT.Mazur.WeierstrassCoefficientShearTransport
 public import FLT.Mazur.WeierstrassCoefficientShearUnitSlope
 public import FLT.Mazur.WeierstrassCoefficientShearZeroConicAdjacent
