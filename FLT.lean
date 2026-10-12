@@ -6121,6 +6121,7 @@ public import FLT.Mazur.PolygonProjectiveCyclicPoints
 public import FLT.Mazur.PolygonProjectiveExactTorsion
 public import FLT.Mazur.PolygonProjectiveFixedPointFree
 public import FLT.Mazur.PolygonProjectiveFullCoefficientParameter
+public import FLT.Mazur.PolygonProjectiveFullNormalizationCoherence
 public import FLT.Mazur.PolygonProjectiveNormalizedLabels
 public import FLT.Mazur.PolygonProjectiveNormalizedParameter
 public import FLT.Mazur.PolygonProjectiveNormalizedRetraction
