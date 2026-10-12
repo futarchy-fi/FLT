@@ -4566,6 +4566,8 @@ public import FLT.Mazur.GrassmannianMorphismTensorCompatibility
 public import FLT.Mazur.GrassmannianNormalizedBaseChange
 public import FLT.Mazur.GrassmannianNumeratorTransport
 public import FLT.Mazur.GrassmannianOriginalBaseChartCover
+public import FLT.Mazur.GrassmannianOverlapAffineCoordinates
+public import FLT.Mazur.GrassmannianOverlapAffineTransition
 public import FLT.Mazur.GrassmannianOverlapPolynomial
 public import FLT.Mazur.GrassmannianOverlapTransitionEquiv
 public import FLT.Mazur.GrassmannianOverlapTransitionScheme
@@ -4575,6 +4577,7 @@ public import FLT.Mazur.GrassmannianPrincipalRelationRecovery
 public import FLT.Mazur.GrassmannianPrincipalSeparation
 public import FLT.Mazur.GrassmannianQuotientBaseChange
 public import FLT.Mazur.GrassmannianQuotientLocalBasis
+public import FLT.Mazur.GrassmannianQuotientRefinement
 public import FLT.Mazur.GrassmannianQuotientSheaf
 public import FLT.Mazur.GrassmannianQuotientSheafTransition
 public import FLT.Mazur.GrassmannianScalarExtension
@@ -4584,6 +4587,7 @@ public import FLT.Mazur.GrassmannianSheafRefinementComparison
 public import FLT.Mazur.GrassmannianSplitChartCoordinates
 public import FLT.Mazur.GrassmannianSplitChartScheme
 public import FLT.Mazur.GrassmannianSplitQuotientChart
+public import FLT.Mazur.GrassmannianTransitionRefinement
 public import FLT.Mazur.GrassmannianTransitionSpecialization
 public import FLT.Mazur.GrassmannianTripleOverlapCoordinates
 public import FLT.Mazur.GrassmannianTripleOverlapDeterminant
@@ -6940,6 +6944,7 @@ public import FLT.Mazur.QuasiFiniteIdealQuotient
 public import FLT.Mazur.QuasiFiniteSmoothLocalEquation
 public import FLT.Mazur.QuasicoherentImageIdeal
 public import FLT.Mazur.QuasicoherentImageIdealOrbits
+public import FLT.Mazur.QuotientRefinementCoherence
 public import FLT.Mazur.QuotientRelativeDerivation
 public import FLT.Mazur.RankOneAmbientLineClassification
 public import FLT.Mazur.RankOneDirectImageSection
@@ -7609,6 +7614,7 @@ public import FLT.Mazur.SequentialFiniteProducts
 public import FLT.Mazur.SheafPullbackCanonicalRecovery
 public import FLT.Mazur.SheafPullbackCoordinateRecovery
 public import FLT.Mazur.SheafPullbackCoordinateRecoveryNaturality
+public import FLT.Mazur.SheafPullbackCoordinateRefinement
 public import FLT.Mazur.SheafPullbackLocalComparison
 public import FLT.Mazur.SheafPullbackMapNormalization
 public import FLT.Mazur.SheafPullbackMapNormalizationNaturality
