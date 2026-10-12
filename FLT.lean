@@ -4543,6 +4543,7 @@ public import FLT.Mazur.GrassmannianChartPolynomialParameters
 public import FLT.Mazur.GrassmannianChartTransition
 public import FLT.Mazur.GrassmannianChartTransitionCocycle
 public import FLT.Mazur.GrassmannianChartTransitionInverse
+public import FLT.Mazur.GrassmannianCoordinateRefinementLaw
 public import FLT.Mazur.GrassmannianFunctorLocalizedChart
 public import FLT.Mazur.GrassmannianIndexedOverlapScheme
 public import FLT.Mazur.GrassmannianIndexedTripleOverlap
@@ -4563,12 +4564,17 @@ public import FLT.Mazur.GrassmannianMorphismRecoveredPoint
 public import FLT.Mazur.GrassmannianMorphismRelation
 public import FLT.Mazur.GrassmannianMorphismSheafTransition
 public import FLT.Mazur.GrassmannianMorphismTensorCompatibility
+public import FLT.Mazur.GrassmannianNamedRefinement
 public import FLT.Mazur.GrassmannianNormalizedBaseChange
 public import FLT.Mazur.GrassmannianNumeratorTransport
 public import FLT.Mazur.GrassmannianOriginalBaseChartCover
 public import FLT.Mazur.GrassmannianOverlapAffineCoordinates
 public import FLT.Mazur.GrassmannianOverlapAffineTransition
+public import FLT.Mazur.GrassmannianOverlapCoordinateRefinement
+public import FLT.Mazur.GrassmannianOverlapDirectRefinement
 public import FLT.Mazur.GrassmannianOverlapPolynomial
+public import FLT.Mazur.GrassmannianOverlapTestProjection
+public import FLT.Mazur.GrassmannianOverlapTestRefinement
 public import FLT.Mazur.GrassmannianOverlapTransitionEquiv
 public import FLT.Mazur.GrassmannianOverlapTransitionScheme
 public import FLT.Mazur.GrassmannianPrincipalOverlap
@@ -4581,6 +4587,7 @@ public import FLT.Mazur.GrassmannianQuotientRefinement
 public import FLT.Mazur.GrassmannianQuotientSheaf
 public import FLT.Mazur.GrassmannianQuotientSheafTransition
 public import FLT.Mazur.GrassmannianScalarExtension
+public import FLT.Mazur.GrassmannianSchemeAmbientQuotient
 public import FLT.Mazur.GrassmannianSelectedAmbientIndex
 public import FLT.Mazur.GrassmannianSelectedColumnsLocalization
 public import FLT.Mazur.GrassmannianSheafRefinementComparison
@@ -4595,6 +4602,7 @@ public import FLT.Mazur.GrassmannianTripleOverlapOriginalPullback
 public import FLT.Mazur.GrassmannianTripleOverlapRestriction
 public import FLT.Mazur.GrassmannianTripleOverlapRing
 public import FLT.Mazur.GrassmannianTripleOverlapScheme
+public import FLT.Mazur.GrassmannianWholeOverlapTransition
 public import FLT.Mazur.GroupMarkingBaseChange
 public import FLT.Mazur.GroupMarkingBaseChangeInverse
 public import FLT.Mazur.GroupMarkingCartesianInverse
@@ -7623,6 +7631,7 @@ public import FLT.Mazur.SheafPullbackNormalizedRefinement
 public import FLT.Mazur.SheafPullbackObjectwiseRefinement
 public import FLT.Mazur.SheafPullbackPathComparison
 public import FLT.Mazur.SheafPullbackPathPentagon
+public import FLT.Mazur.SheafPullbackRefinementLaw
 public import FLT.Mazur.SheafPullbackRetractionSquare
 public import FLT.Mazur.SheafPullbackSectionReconstruction
 public import FLT.Mazur.SheafPullbackSectionSquare
