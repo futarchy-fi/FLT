@@ -4602,6 +4602,7 @@ public import FLT.Mazur.GrassmannianOverlapTestProjection
 public import FLT.Mazur.GrassmannianOverlapTestRefinement
 public import FLT.Mazur.GrassmannianOverlapTransitionEquiv
 public import FLT.Mazur.GrassmannianOverlapTransitionScheme
+public import FLT.Mazur.GrassmannianPresentedQuotientRecovery
 public import FLT.Mazur.GrassmannianPrincipalOverlap
 public import FLT.Mazur.GrassmannianPrincipalOverlapScheme
 public import FLT.Mazur.GrassmannianPrincipalRelationRecovery
