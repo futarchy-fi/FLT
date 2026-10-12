@@ -7902,6 +7902,7 @@ public import FLT.Mazur.UniversalWeierstrassAuxiliaryTorsionCover
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryTorsionDisjoint
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryTorsionSections
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryValueNaturality
+public import FLT.Mazur.UniversalWeierstrassCyclicAffineFamilyRelation
 public import FLT.Mazur.UniversalWeierstrassCyclicAuxiliary
 public import FLT.Mazur.UniversalWeierstrassCyclicFullNaturality
 public import FLT.Mazur.UniversalWeierstrassCyclicGlobalRetraction
