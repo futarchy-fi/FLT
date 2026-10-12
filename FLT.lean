@@ -8104,6 +8104,7 @@ public import FLT.Mazur.WeierstrassCoefficientMonoidalComparison
 public import FLT.Mazur.WeierstrassCoefficientNegation
 public import FLT.Mazur.WeierstrassCoefficientProductMorphism
 public import FLT.Mazur.WeierstrassCoefficientSecant
+public import FLT.Mazur.WeierstrassCoefficientShearAdjacentLine
 public import FLT.Mazur.WeierstrassCoefficientShearAtlas
 public import FLT.Mazur.WeierstrassCoefficientShearAtlasComparison
 public import FLT.Mazur.WeierstrassCoefficientShearAtlasStructure
