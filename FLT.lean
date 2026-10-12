@@ -3994,6 +3994,7 @@ public import FLT.Mazur.EnlargedPresentationModel
 public import FLT.Mazur.EquifiberedGluingBaseChange
 public import FLT.Mazur.EquifiberedSchemeGluing
 public import FLT.Mazur.EtaleAlgebraReduced
+public import FLT.Mazur.EtaleAmpleCyclicLocalMarking
 public import FLT.Mazur.EtaleCartierGeneratorDistinct
 public import FLT.Mazur.EtaleCartierGeneratorGeometric
 public import FLT.Mazur.EtaleCoordinate
