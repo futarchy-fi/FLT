@@ -3216,6 +3216,7 @@ public import FLT.Mazur.CartesianAtlasAffineIntersections
 public import FLT.Mazur.CartesianCoefficientPositiveHomology
 public import FLT.Mazur.CartesianCoefficientSymmetry
 public import FLT.Mazur.CartesianCoefficientTransport
+public import FLT.Mazur.CartesianCoefficientTransportNaturality
 public import FLT.Mazur.CartesianIdentityFactorization
 public import FLT.Mazur.CartesianIdentityQuasiFinite
 public import FLT.Mazur.CartesianMonoGroup
