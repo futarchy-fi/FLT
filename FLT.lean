@@ -5445,6 +5445,7 @@ public import FLT.Mazur.ModuleSheafLocalNaturality
 public import FLT.Mazur.ModuleSheafMorphismGluing
 public import FLT.Mazur.ModuleSheafMorphismRefinement
 public import FLT.Mazur.ModuleSheafOpenChartAdjoint
+public import FLT.Mazur.ModuleSheafOpenCoverEpi
 public import FLT.Mazur.ModuleSheafOpenImageChart
 public import FLT.Mazur.ModuleSheafOpenImageMap
 public import FLT.Mazur.ModuleSheafOpenImageMapRecovery
