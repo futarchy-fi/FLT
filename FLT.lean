@@ -2495,6 +2495,7 @@ public import FLT.Mazur.AcyclicDirectImageResolution
 public import FLT.Mazur.AcyclicDivisorDegreeOpen
 public import FLT.Mazur.AcyclicDivisorDegreePresheaf
 public import FLT.Mazur.AcyclicDivisorFixedBaseChange
+public import FLT.Mazur.AcyclicDivisorFixedBaseClass
 public import FLT.Mazur.AcyclicHilbertDivisorRepresentation
 public import FLT.Mazur.AcyclicHilbertFixedBaseChange
 public import FLT.Mazur.AcyclicHilbertFixedBaseIdeal
