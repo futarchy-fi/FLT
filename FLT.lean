@@ -6554,6 +6554,7 @@ public import FLT.Mazur.PrincipalScalarCokernel
 public import FLT.Mazur.PrincipalSectionExtension
 public import FLT.Mazur.PrincipalSubmoduleCoordinates
 public import FLT.Mazur.PrincipalSubmoduleOverlap
+public import FLT.Mazur.PrincipalSubmodulePatching
 public import FLT.Mazur.PrincipalSubmoduleSectionLocalization
 public import FLT.Mazur.PrincipalTargetRestrictionIsomorphism
 public import FLT.Mazur.PrincipalTriangleCofinal
