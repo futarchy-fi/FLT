@@ -10282,6 +10282,7 @@ public import FLT.Mazur.WeierstrassSuccessiveRegularInputCenter
 public import FLT.Mazur.WeierstrassSuccessiveReplacementAtlas
 public import FLT.Mazur.WeierstrassSuccessiveReplacementGluing
 public import FLT.Mazur.WeierstrassSuccessiveReplacementReassociation
+public import FLT.Mazur.WeierstrassSuccessiveResidueConicShearComparison
 public import FLT.Mazur.WeierstrassSuccessiveResidueLineShearComparison
 public import FLT.Mazur.WeierstrassSuccessiveRetainedCenter
 public import FLT.Mazur.WeierstrassSuccessiveScaleEmbedding
