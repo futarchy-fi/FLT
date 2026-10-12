@@ -7840,6 +7840,7 @@ public import FLT.Mazur.SmoothHilbertSingleSource
 public import FLT.Mazur.SmoothHilbertSourcePullback
 public import FLT.Mazur.SmoothHilbertSourceRepresentable
 public import FLT.Mazur.SmoothHilbertTestCover
+public import FLT.Mazur.SmoothNodalFamilyDimension
 public import FLT.Mazur.SmoothNonspecialDivisorCover
 public import FLT.Mazur.SmoothNonspecialDivisorLift
 public import FLT.Mazur.SmoothNonspecialLineLift
