@@ -8397,6 +8397,7 @@ public import FLT.Mazur.WeierstrassDividedTerminalAllExteriorNodes
 public import FLT.Mazur.WeierstrassDividedTerminalAtlasPushout
 public import FLT.Mazur.WeierstrassDividedTerminalBranchIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalBranchesNodeIntersection
+public import FLT.Mazur.WeierstrassDividedTerminalCoefficientAction
 public import FLT.Mazur.WeierstrassDividedTerminalComponentExclusions
 public import FLT.Mazur.WeierstrassDividedTerminalComponentInjectivity
 public import FLT.Mazur.WeierstrassDividedTerminalComponentIntersection
