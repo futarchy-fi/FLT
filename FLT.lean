@@ -5650,6 +5650,7 @@ public import FLT.Mazur.PolygonCanonicalDenominatorPolynomial
 public import FLT.Mazur.PolygonCanonicalOverlapRing
 public import FLT.Mazur.PolygonCanonicalSection
 public import FLT.Mazur.PolygonCanonicalTorusTransition
+public import FLT.Mazur.PolygonCartesianBaseMap
 public import FLT.Mazur.PolygonCartierGenerator
 public import FLT.Mazur.PolygonChartScaling
 public import FLT.Mazur.PolygonClassifiedFamily
