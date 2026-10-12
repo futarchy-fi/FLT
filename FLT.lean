@@ -7101,6 +7101,7 @@ public import FLT.Mazur.RelativeGenusOneCoordinateSurjective
 public import FLT.Mazur.RelativeGenusOneCubicRelation
 public import FLT.Mazur.RelativeGenusOneFramedProducts
 public import FLT.Mazur.RelativeGenusOneHigherMonomials
+public import FLT.Mazur.RelativeGenusOneHomogeneousEquation
 public import FLT.Mazur.RelativeGenusOneInitialPoleStep
 public import FLT.Mazur.RelativeGenusOneLowPoleBasis
 public import FLT.Mazur.RelativeGenusOneMonomialBasis
