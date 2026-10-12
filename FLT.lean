@@ -4500,6 +4500,7 @@ public import FLT.Mazur.GrassmannianAmbientNormalizedQuotient
 public import FLT.Mazur.GrassmannianAmbientOverlapFactorization
 public import FLT.Mazur.GrassmannianAmbientOverlapPoints
 public import FLT.Mazur.GrassmannianAmbientOverlapRepresentation
+public import FLT.Mazur.GrassmannianAmbientPointCover
 public import FLT.Mazur.GrassmannianAmbientPointTransition
 public import FLT.Mazur.GrassmannianAmbientPointTransport
 public import FLT.Mazur.GrassmannianAmbientQuotientCover
