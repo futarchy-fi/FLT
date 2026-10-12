@@ -8411,6 +8411,7 @@ public import FLT.Mazur.WeierstrassDividedTerminalConicCover
 public import FLT.Mazur.WeierstrassDividedTerminalCrossedIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalExtendedEmptyIntersections
 public import FLT.Mazur.WeierstrassDividedTerminalFullConicIntersection
+public import FLT.Mazur.WeierstrassDividedTerminalHorizontalCyclicAction
 public import FLT.Mazur.WeierstrassDividedTerminalHorizontalCyclicPair
 public import FLT.Mazur.WeierstrassDividedTerminalLineDisjoint
 public import FLT.Mazur.WeierstrassDividedTerminalNodeChartExclusion
