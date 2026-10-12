@@ -3013,6 +3013,7 @@ public import FLT.Mazur.ArtinianRelativeSectionCriterion
 public import FLT.Mazur.ArtinianSectionKernel
 public import FLT.Mazur.AuxiliaryCartesianGroupParameter
 public import FLT.Mazur.AuxiliaryCartesianOriginalParameter
+public import FLT.Mazur.AuxiliaryCartesianParameterEquivalence
 public import FLT.Mazur.AuxiliaryCoprimeFieldMarking
 public import FLT.Mazur.AuxiliaryCoprimeFieldNaturality
 public import FLT.Mazur.AuxiliaryLevelFaithfulOpen
@@ -5421,6 +5422,7 @@ public import FLT.Mazur.NodeTangentSlopeDescent
 public import FLT.Mazur.NodeTangentSplitChart
 public import FLT.Mazur.NodeTangentSplitComponent
 public import FLT.Mazur.NodeTangentSplitLaurent
+public import FLT.Mazur.NodeTangentSplitNormalizationComparison
 public import FLT.Mazur.NodeTangentTensorLaurentDescent
 public import FLT.Mazur.NodeTangentTensorOpen
 public import FLT.Mazur.NodeTangentTensorOrientation
@@ -6118,6 +6120,8 @@ public import FLT.Mazur.PolygonProjectiveCyclicPoints
 public import FLT.Mazur.PolygonProjectiveExactTorsion
 public import FLT.Mazur.PolygonProjectiveFixedPointFree
 public import FLT.Mazur.PolygonProjectiveFullCoefficientParameter
+public import FLT.Mazur.PolygonProjectiveNormalizedLabels
+public import FLT.Mazur.PolygonProjectiveNormalizedParameter
 public import FLT.Mazur.PolygonProjectiveRotationNormalization
 public import FLT.Mazur.PolygonProjectiveSquareComparison
 public import FLT.Mazur.PolygonProjectiveSquareMarking
@@ -7853,10 +7857,19 @@ public import FLT.Mazur.UniversalWeierstrassAuxiliaryTorsionDisjoint
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryTorsionSections
 public import FLT.Mazur.UniversalWeierstrassCyclicAuxiliary
 public import FLT.Mazur.UniversalWeierstrassCyclicLevel
+public import FLT.Mazur.UniversalWeierstrassCyclicNaturalGroup
+public import FLT.Mazur.UniversalWeierstrassCyclicNaturalGroupMarking
+public import FLT.Mazur.UniversalWeierstrassCyclicNormalizationMap
+public import FLT.Mazur.UniversalWeierstrassCyclicNormalizationMapLabels
+public import FLT.Mazur.UniversalWeierstrassCyclicNormalizationPoint
+public import FLT.Mazur.UniversalWeierstrassCyclicNormalizedMarking
+public import FLT.Mazur.UniversalWeierstrassCyclicNormalizedSlice
+public import FLT.Mazur.UniversalWeierstrassCyclicOriginalMarking
 public import FLT.Mazur.UniversalWeierstrassCyclicSubgroup
 public import FLT.Mazur.UniversalWeierstrassFourTorsionEtale
 public import FLT.Mazur.UniversalWeierstrassFourTorsionFinite
 public import FLT.Mazur.UniversalWeierstrassFourTorsionUnramified
+public import FLT.Mazur.UniversalWeierstrassFullNormalizationParameter
 public import FLT.Mazur.UniversalWeierstrassGeometricLevelFour
 public import FLT.Mazur.UniversalWeierstrassMarkedCoordinateRigidity
 public import FLT.Mazur.UniversalWeierstrassNormalizedSlice
@@ -8303,6 +8316,7 @@ public import FLT.Mazur.WeierstrassDividedHorizontalCoefficientPointAction
 public import FLT.Mazur.WeierstrassDividedHorizontalCyclicInput
 public import FLT.Mazur.WeierstrassDividedHorizontalCyclicPair
 public import FLT.Mazur.WeierstrassDividedHorizontalFinitePointAction
+public import FLT.Mazur.WeierstrassDividedIncidenceNormalization
 public import FLT.Mazur.WeierstrassDividedInfinityLaurentChart
 public import FLT.Mazur.WeierstrassDividedInfinityLaurentGluing
 public import FLT.Mazur.WeierstrassDividedInfinityLaurentZero
@@ -8315,7 +8329,9 @@ public import FLT.Mazur.WeierstrassDividedInitialCommonBoundaryHomExt
 public import FLT.Mazur.WeierstrassDividedInitialComponentRanges
 public import FLT.Mazur.WeierstrassDividedInitialComponentStructure
 public import FLT.Mazur.WeierstrassDividedInitialConicBoundaryAlgebra
+public import FLT.Mazur.WeierstrassDividedInitialConicContraction
 public import FLT.Mazur.WeierstrassDividedInitialConicParameters
+public import FLT.Mazur.WeierstrassDividedInitialExceptionalContraction
 public import FLT.Mazur.WeierstrassDividedInitialExtendedOrigins
 public import FLT.Mazur.WeierstrassDividedInitialExtendedSections
 public import FLT.Mazur.WeierstrassDividedInitialExterior
@@ -8437,6 +8453,7 @@ public import FLT.Mazur.WeierstrassDividedOrderedPairCoverage
 public import FLT.Mazur.WeierstrassDividedOrderedRetainedSections
 public import FLT.Mazur.WeierstrassDividedOriginalScaleOpen
 public import FLT.Mazur.WeierstrassDividedOriginalXOpen
+public import FLT.Mazur.WeierstrassDividedPolygonExteriorNormalization
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityAction
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityActionComparison
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityAllComponentAction
@@ -8536,6 +8553,7 @@ public import FLT.Mazur.WeierstrassDividedResidueMiddleIntersection
 public import FLT.Mazur.WeierstrassDividedResidueNormalization
 public import FLT.Mazur.WeierstrassDividedResidueNormalizationCompatibility
 public import FLT.Mazur.WeierstrassDividedResidueOrderedNormalization
+public import FLT.Mazur.WeierstrassDividedResidueSplitCubic
 public import FLT.Mazur.WeierstrassDividedResidueTangentNormalization
 public import FLT.Mazur.WeierstrassDividedRetainedExteriorIntersection
 public import FLT.Mazur.WeierstrassDividedRetainedLineAt
@@ -8551,6 +8569,7 @@ public import FLT.Mazur.WeierstrassDividedSmoothSuccessiveIntegralAction
 public import FLT.Mazur.WeierstrassDividedSmoothSuccessiveResidueAction
 public import FLT.Mazur.WeierstrassDividedSmoothTerminalCoefficientAction
 public import FLT.Mazur.WeierstrassDividedSmoothTerminalIntegralAction
+public import FLT.Mazur.WeierstrassDividedSplitNormalizationComparison
 public import FLT.Mazur.WeierstrassDividedSuccessiveOriginalY
 public import FLT.Mazur.WeierstrassDividedSuccessorActionAtlas
 public import FLT.Mazur.WeierstrassDividedSuccessorActionInput
@@ -9551,6 +9570,7 @@ public import FLT.Mazur.WeierstrassSmoothZeroGraphs
 public import FLT.Mazur.WeierstrassSmoothZeroSection
 public import FLT.Mazur.WeierstrassSpecSectionMorphism
 public import FLT.Mazur.WeierstrassSpecSections
+public import FLT.Mazur.WeierstrassSplitCompleteNormalization
 public import FLT.Mazur.WeierstrassSplitDepthAffineParameters
 public import FLT.Mazur.WeierstrassSplitDepthConormal
 public import FLT.Mazur.WeierstrassSplitDepthExceptionalBranches
@@ -9815,6 +9835,7 @@ public import FLT.Mazur.WeierstrassVariableChangeCubicSubstitution
 public import FLT.Mazur.WeierstrassVariableChangeFrame
 public import FLT.Mazur.WeierstrassVariableChangeGroup
 public import FLT.Mazur.WeierstrassVariableChangeHomogeneous
+public import FLT.Mazur.WeierstrassVariableChangeIdentity
 public import FLT.Mazur.WeierstrassVariableChangeIntegralEquation
 public import FLT.Mazur.WeierstrassVariableChangeIntegralIso
 public import FLT.Mazur.WeierstrassVariableChangeIntegralMorphism
