@@ -2741,6 +2741,7 @@ public import FLT.Mazur.AffineHilbertRelationNeighborhoods
 public import FLT.Mazur.AffineHilbertRelationOperations
 public import FLT.Mazur.AffineHilbertRelationTensorCharts
 public import FLT.Mazur.AffineHilbertRestrictedOrbits
+public import FLT.Mazur.AffineHilbertRestrictedQuotient
 public import FLT.Mazur.AffineHilbertSymmetricNeighborhoods
 public import FLT.Mazur.AffineHilbertTensorAtlas
 public import FLT.Mazur.AffineHilbertTensorGluing
