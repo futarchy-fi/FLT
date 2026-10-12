@@ -4519,6 +4519,7 @@ public import FLT.Mazur.GradedProjUnitChartOpens
 public import FLT.Mazur.GradedProjZeroMapNaturality
 public import FLT.Mazur.GradedQuotientTensorComparison
 public import FLT.Mazur.GrassmannianAffinePointFunctor
+public import FLT.Mazur.GrassmannianAmbientAffineFactorization
 public import FLT.Mazur.GrassmannianAmbientBaseChange
 public import FLT.Mazur.GrassmannianAmbientBlocks
 public import FLT.Mazur.GrassmannianAmbientChartConeCompatibility
