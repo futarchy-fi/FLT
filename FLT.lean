@@ -4611,6 +4611,7 @@ public import FLT.Mazur.GrassmannianChartTransitionCocycle
 public import FLT.Mazur.GrassmannianChartTransitionInverse
 public import FLT.Mazur.GrassmannianClassifiedImageQuotient
 public import FLT.Mazur.GrassmannianCoordinateRefinementLaw
+public import FLT.Mazur.GrassmannianDeterminantAmple
 public import FLT.Mazur.GrassmannianDeterminantChartSections
 public import FLT.Mazur.GrassmannianDeterminantCocycle
 public import FLT.Mazur.GrassmannianDeterminantGlobalLoci
