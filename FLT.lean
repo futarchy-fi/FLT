@@ -8635,6 +8635,7 @@ public import FLT.Mazur.WeierstrassFiveAffineTriple
 public import FLT.Mazur.WeierstrassFiveRegularChartDescent
 public import FLT.Mazur.WeierstrassFiveRegularSectionDescent
 public import FLT.Mazur.WeierstrassFiveRegularTriple
+public import FLT.Mazur.WeierstrassFixedPointTranslation
 public import FLT.Mazur.WeierstrassFlatProductSecantDescent
 public import FLT.Mazur.WeierstrassFlatSectionRegular
 public import FLT.Mazur.WeierstrassFourMarkingFrame
