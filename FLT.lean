@@ -5407,6 +5407,7 @@ public import FLT.Mazur.ModuleSheafEmptySlice
 public import FLT.Mazur.ModuleSheafEvaluatedGluing
 public import FLT.Mazur.ModuleSheafGeometricOpenCocycle
 public import FLT.Mazur.ModuleSheafGeometricOpenGluing
+public import FLT.Mazur.ModuleSheafGeometricOpenProjection
 public import FLT.Mazur.ModuleSheafGeometricTransitionWitness
 public import FLT.Mazur.ModuleSheafGluing
 public import FLT.Mazur.ModuleSheafGluingLift
