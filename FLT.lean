@@ -8084,6 +8084,7 @@ public import FLT.Mazur.WeierstrassDilatationResidueGeometry
 public import FLT.Mazur.WeierstrassDilatationResidueLaurent
 public import FLT.Mazur.WeierstrassDilatationResidueRetained
 public import FLT.Mazur.WeierstrassDilatationSaturation
+public import FLT.Mazur.WeierstrassDilatationShear
 public import FLT.Mazur.WeierstrassDilatationUnitComparison
 public import FLT.Mazur.WeierstrassDilatationZeroResidue
 public import FLT.Mazur.WeierstrassDilatationZeroResidueBoundary
@@ -8147,6 +8148,7 @@ public import FLT.Mazur.WeierstrassDividedChartCubicAction
 public import FLT.Mazur.WeierstrassDividedChartRegularCenter
 public import FLT.Mazur.WeierstrassDividedCoefficientActionIndexTransport
 public import FLT.Mazur.WeierstrassDividedCoefficientInputs
+public import FLT.Mazur.WeierstrassDividedCoefficientShear
 public import FLT.Mazur.WeierstrassDividedCoefficientSymmetry
 public import FLT.Mazur.WeierstrassDividedCompleteResidueNormalization
 public import FLT.Mazur.WeierstrassDividedComponentPairCoverage
@@ -8581,6 +8583,9 @@ public import FLT.Mazur.WeierstrassDividedRetainedLineAt
 public import FLT.Mazur.WeierstrassDividedRetainedLineSeparation
 public import FLT.Mazur.WeierstrassDividedRetainedZeroExteriorLine
 public import FLT.Mazur.WeierstrassDividedRetentionSuccessor
+public import FLT.Mazur.WeierstrassDividedShearContraction
+public import FLT.Mazur.WeierstrassDividedShearData
+public import FLT.Mazur.WeierstrassDividedShearGluing
 public import FLT.Mazur.WeierstrassDividedSkippedAtlasRange
 public import FLT.Mazur.WeierstrassDividedSkippedChartSupport
 public import FLT.Mazur.WeierstrassDividedSkippedTensorIntersection
@@ -9158,6 +9163,8 @@ public import FLT.Mazur.WeierstrassModificationReesYHorizontalOverlap
 public import FLT.Mazur.WeierstrassModificationReesYHorizontalScheme
 public import FLT.Mazur.WeierstrassModificationReesYScaleOverlap
 public import FLT.Mazur.WeierstrassModificationReesYScaleScheme
+public import FLT.Mazur.WeierstrassModificationShearLocalization
+public import FLT.Mazur.WeierstrassModificationShearOverlap
 public import FLT.Mazur.WeierstrassModificationXAlgebra
 public import FLT.Mazur.WeierstrassModificationXBaseChange
 public import FLT.Mazur.WeierstrassModificationXBaseChangeGenerators
@@ -9269,6 +9276,7 @@ public import FLT.Mazur.WeierstrassModificationXSaturation
 public import FLT.Mazur.WeierstrassModificationXScaleOneEquiv
 public import FLT.Mazur.WeierstrassModificationXScaleOneMaps
 public import FLT.Mazur.WeierstrassModificationXScaleOneTensor
+public import FLT.Mazur.WeierstrassModificationXShear
 public import FLT.Mazur.WeierstrassModificationXSlopeOpen
 public import FLT.Mazur.WeierstrassModificationXTensorOverlapCoordinates
 public import FLT.Mazur.WeierstrassModificationXTotalTransform
@@ -9780,6 +9788,8 @@ public import FLT.Mazur.WeierstrassSuccessiveXResidueZeroNodeDisjoint
 public import FLT.Mazur.WeierstrassSuccessiveXSaturation
 public import FLT.Mazur.WeierstrassSuccessiveXScaleOne
 public import FLT.Mazur.WeierstrassSuccessiveXSchemeOverlap
+public import FLT.Mazur.WeierstrassSuccessiveXShear
+public import FLT.Mazur.WeierstrassSuccessiveXShearContraction
 public import FLT.Mazur.WeierstrassSuccessiveXSplitFiber
 public import FLT.Mazur.WeierstrassSuccessiveXTensorContraction
 public import FLT.Mazur.WeierstrassSuccessiveXTensorOverlap
