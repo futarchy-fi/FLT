@@ -2800,6 +2800,8 @@ public import FLT.Mazur.AffineOpenCoverGluingIso
 public import FLT.Mazur.AffineOpenCoverTestRecovery
 public import FLT.Mazur.AffineOpenCoverTestRefinement
 public import FLT.Mazur.AffineOpenDenominators
+public import FLT.Mazur.AffineOpenFinitePolynomialPresentation
+public import FLT.Mazur.AffineOpenFiniteQuotientChart
 public import FLT.Mazur.AffineOpenImmersionLocalizationCriterion
 public import FLT.Mazur.AffineOpenQuotientPresentation
 public import FLT.Mazur.AffineOverlapDiagonal
@@ -3009,9 +3011,12 @@ public import FLT.Mazur.ArtinianProperRelativeFunctions
 public import FLT.Mazur.ArtinianProperStructureSheaf
 public import FLT.Mazur.ArtinianRelativeSectionCriterion
 public import FLT.Mazur.ArtinianSectionKernel
+public import FLT.Mazur.AuxiliaryCoprimeFieldMarking
+public import FLT.Mazur.AuxiliaryCoprimeFieldNaturality
 public import FLT.Mazur.AuxiliaryLevelFaithfulOpen
 public import FLT.Mazur.AuxiliaryLevelFaithfulRepresentation
 public import FLT.Mazur.AuxiliaryLevelFieldMarking
+public import FLT.Mazur.AuxiliaryLevelGroupTransport
 public import FLT.Mazur.AuxiliaryLevelHomScheme
 public import FLT.Mazur.AuxiliaryLevelKernelLocus
 public import FLT.Mazur.AuxiliaryLevelMappedFaithfulness
@@ -3486,6 +3491,8 @@ public import FLT.Mazur.ConstantDegree
 public import FLT.Mazur.ConstantGroupTensorEvaluation
 public import FLT.Mazur.ConstantPrimeScalarFiltration
 public import FLT.Mazur.Contracts
+public import FLT.Mazur.CoprimeFieldGroupTransport
+public import FLT.Mazur.CoprimeGroupMarkings
 public import FLT.Mazur.CoproductConstantSections
 public import FLT.Mazur.CubicComponentBound
 public import FLT.Mazur.CubicMobiusClearing
@@ -4580,6 +4587,11 @@ public import FLT.Mazur.HilbertCommonAmbientOverlap
 public import FLT.Mazur.HilbertCommonOpenRestriction
 public import FLT.Mazur.HilbertDivisorDegreePresentation
 public import FLT.Mazur.HilbertFaithfullyFlatTupleBasis
+public import FLT.Mazur.HilbertFamilyBoundedEvaluation
+public import FLT.Mazur.HilbertFamilyFiniteQuotient
+public import FLT.Mazur.HilbertFamilyGrassmannianParameter
+public import FLT.Mazur.HilbertFamilyTruncatedRelations
+public import FLT.Mazur.HilbertFiniteAmbientPresentation
 public import FLT.Mazur.HilbertIntrinsicBasisBaseChange
 public import FLT.Mazur.HilbertIntrinsicBasisEquiv
 public import FLT.Mazur.HilbertIntrinsicBasisGlobal
@@ -4660,6 +4672,7 @@ public import FLT.Mazur.HilbertPrincipalLocalizationScalars
 public import FLT.Mazur.HilbertPrincipalRestriction
 public import FLT.Mazur.HilbertQuotientDegreeBound
 public import FLT.Mazur.HilbertQuotientDegreeFiltration
+public import FLT.Mazur.HilbertSameAmbientChartIso
 public import FLT.Mazur.HilbertSupportOpenLattice
 public import FLT.Mazur.HilbertSupportOpenPullback
 public import FLT.Mazur.HilbertTruncatedIdealDetection
@@ -6044,10 +6057,15 @@ public import FLT.Mazur.PolygonPowerNodeWeights
 public import FLT.Mazur.PolygonPowerSeriesBase
 public import FLT.Mazur.PolygonPowerSeriesSystem
 public import FLT.Mazur.PolygonProductAtlas
+public import FLT.Mazur.PolygonProjectiveAuxiliaryMarking
+public import FLT.Mazur.PolygonProjectiveAuxiliaryParameter
+public import FLT.Mazur.PolygonProjectiveAuxiliaryRotation
 public import FLT.Mazur.PolygonProjectiveCyclicPoints
 public import FLT.Mazur.PolygonProjectiveExactTorsion
 public import FLT.Mazur.PolygonProjectiveFixedPointFree
 public import FLT.Mazur.PolygonProjectiveRotationNormalization
+public import FLT.Mazur.PolygonProjectiveSquareComparison
+public import FLT.Mazur.PolygonProjectiveSquareMarking
 public import FLT.Mazur.PolygonProjectiveTranslation
 public import FLT.Mazur.PolygonProper
 public import FLT.Mazur.PolygonPuncturedCanonicalEquations
@@ -7899,6 +7917,7 @@ public import FLT.Mazur.WeierstrassAllOrdinaryTripleDomain
 public import FLT.Mazur.WeierstrassAllOrdinaryTripleGlobal
 public import FLT.Mazur.WeierstrassAllOrdinaryTripleSchemes
 public import FLT.Mazur.WeierstrassAutomorphismNormalization
+public import FLT.Mazur.WeierstrassAuxiliaryFieldCover
 public import FLT.Mazur.WeierstrassChartBaseChange
 public import FLT.Mazur.WeierstrassChartBaseChangeSquare
 public import FLT.Mazur.WeierstrassChartCoefficientMap
