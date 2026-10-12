@@ -7823,6 +7823,7 @@ public import FLT.Mazur.UniversalWeierstrassCyclicAuxiliary
 public import FLT.Mazur.UniversalWeierstrassCyclicLevel
 public import FLT.Mazur.UniversalWeierstrassCyclicNormalizationPoint
 public import FLT.Mazur.UniversalWeierstrassCyclicNormalizedMarking
+public import FLT.Mazur.UniversalWeierstrassCyclicNormalizedSlice
 public import FLT.Mazur.UniversalWeierstrassCyclicOriginalMarking
 public import FLT.Mazur.UniversalWeierstrassCyclicSubgroup
 public import FLT.Mazur.UniversalWeierstrassFourTorsionEtale
