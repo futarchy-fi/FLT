@@ -4413,6 +4413,7 @@ public import FLT.Mazur.GeneralizedCurveCartierGenerator
 public import FLT.Mazur.GeneralizedCurveCartierStalks
 public import FLT.Mazur.GeneralizedCurveCategory
 public import FLT.Mazur.GeneralizedCurveCyclicSubgroup
+public import FLT.Mazur.GeneralizedCurveDirectLocalCubic
 public import FLT.Mazur.GeneralizedCurveDivisorPullback
 public import FLT.Mazur.GeneralizedCurveFiberAmple
 public import FLT.Mazur.GeneralizedCurveFiniteSubgroup
