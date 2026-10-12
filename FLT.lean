@@ -7133,6 +7133,7 @@ public import FLT.Mazur.RelativeGenusOneCubicFactorization
 public import FLT.Mazur.RelativeGenusOneCubicFibers
 public import FLT.Mazur.RelativeGenusOneCubicFieldIso
 public import FLT.Mazur.RelativeGenusOneCubicFinite
+public import FLT.Mazur.RelativeGenusOneCubicGroupPresentation
 public import FLT.Mazur.RelativeGenusOneCubicPreimages
 public import FLT.Mazur.RelativeGenusOneCubicRelation
 public import FLT.Mazur.RelativeGenusOneCubicResidueFields
