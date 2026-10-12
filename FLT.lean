@@ -4485,6 +4485,7 @@ public import FLT.Mazur.GrassmannianChartChangeDeterminant
 public import FLT.Mazur.GrassmannianChartPolynomialParameters
 public import FLT.Mazur.GrassmannianChartTransition
 public import FLT.Mazur.GrassmannianChartTransitionCocycle
+public import FLT.Mazur.GrassmannianLocalizedTransition
 public import FLT.Mazur.GrassmannianOverlapPolynomial
 public import FLT.Mazur.GrassmannianPrincipalOverlap
 public import FLT.Mazur.GrassmannianPrincipalOverlapScheme
