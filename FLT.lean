@@ -7113,6 +7113,7 @@ public import FLT.Mazur.RelativeGenusOneComplementMonomials
 public import FLT.Mazur.RelativeGenusOneCoordinateRing
 public import FLT.Mazur.RelativeGenusOneCoordinateSurjective
 public import FLT.Mazur.RelativeGenusOneCubicFactorization
+public import FLT.Mazur.RelativeGenusOneCubicFinite
 public import FLT.Mazur.RelativeGenusOneCubicPreimages
 public import FLT.Mazur.RelativeGenusOneCubicRelation
 public import FLT.Mazur.RelativeGenusOneFramedProducts
