@@ -8170,6 +8170,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearResidueRetained
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedFiber
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedIntersections
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedReconstruction
+public import FLT.Mazur.WeierstrassCoefficientShearScaleOne
 public import FLT.Mazur.WeierstrassCoefficientShearSpecialization
 public import FLT.Mazur.WeierstrassCoefficientShearSpecializationMono
 public import FLT.Mazur.WeierstrassCoefficientShearTangentConjugation
