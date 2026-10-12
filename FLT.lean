@@ -4147,6 +4147,7 @@ public import FLT.Mazur.FiniteFlatAffineLocalFree
 public import FLT.Mazur.FiniteFlatCoefficientIdeal
 public import FLT.Mazur.FiniteFlatCoefficientIso
 public import FLT.Mazur.FiniteFlatDegreeOpen
+public import FLT.Mazur.FiniteFlatIdealVanishingBaseChange
 public import FLT.Mazur.FiniteFlatIdealVanishingChart
 public import FLT.Mazur.FiniteFlatIdealVanishingGluing
 public import FLT.Mazur.FiniteFlatIdealVanishingRestriction
