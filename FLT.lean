@@ -3238,6 +3238,7 @@ public import FLT.Mazur.CartesianCoefficientPositiveHomology
 public import FLT.Mazur.CartesianCoefficientSymmetry
 public import FLT.Mazur.CartesianCoefficientTransport
 public import FLT.Mazur.CartesianCoefficientTransportNaturality
+public import FLT.Mazur.CartesianHomMarkingParameter
 public import FLT.Mazur.CartesianIdentityFactorization
 public import FLT.Mazur.CartesianIdentityQuasiFinite
 public import FLT.Mazur.CartesianImageChartImmersion
@@ -3561,8 +3562,15 @@ public import FLT.Mazur.CurveRiemannRochEuler
 public import FLT.Mazur.CurveUniformFieldDegreeBound
 public import FLT.Mazur.CuspCollision
 public import FLT.Mazur.CuspOrderNumerator
+public import FLT.Mazur.CyclicHomAuxiliaryScheme
+public import FLT.Mazur.CyclicHomDivisorFppfCoverage
+public import FLT.Mazur.CyclicHomSourceDivisor
+public import FLT.Mazur.CyclicMarkingDivisorTransport
+public import FLT.Mazur.CyclicMarkingOrbitDivisor
 public import FLT.Mazur.CyclicNodeChart
 public import FLT.Mazur.CyclicNormalizationExact
+public import FLT.Mazur.CyclicOriginalHomDivisorCoverage
+public import FLT.Mazur.CyclicOriginalLocalCartierCubic
 public import FLT.Mazur.CyclicOverlapGraph
 public import FLT.Mazur.CyclicPinchingProduct
 public import FLT.Mazur.CyclicPinchingReflection
@@ -5962,9 +5970,13 @@ public import FLT.Mazur.PointNormalizedLineBaseChange
 public import FLT.Mazur.PointNormalizedLineBundle
 public import FLT.Mazur.PointedCubicAuxiliaryCover
 public import FLT.Mazur.PointedCubicBaseGroupIso
+public import FLT.Mazur.PointedCubicCartierMarking
 public import FLT.Mazur.PointedCubicCoefficientParameter
 public import FLT.Mazur.PointedCubicCyclicAuxiliaryCover
 public import FLT.Mazur.PointedCubicCyclicMarking
+public import FLT.Mazur.PointedCubicHomAuxiliaryParameter
+public import FLT.Mazur.PointedCubicHomRetainedSubgroup
+public import FLT.Mazur.PointedCubicHomSourceGroup
 public import FLT.Mazur.PointedCubicIndependentParameter
 public import FLT.Mazur.PointedCubicIndependentSourceGroup
 public import FLT.Mazur.PointedCubicIndependentSourceSubgroup
@@ -7420,6 +7432,7 @@ public import FLT.Mazur.RetainedLineOriginalTwist
 public import FLT.Mazur.RetainedLineSectionPullback
 public import FLT.Mazur.RetainedLineSectionPullbackIso
 public import FLT.Mazur.RetainedLineTwistedSection
+public import FLT.Mazur.RetainedSubgroupCartierMarking
 public import FLT.Mazur.RetainedSubringGradedMap
 public import FLT.Mazur.RetainedSubringGrading
 public import FLT.Mazur.RetainedSubringLocalization
