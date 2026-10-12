@@ -5660,6 +5660,7 @@ public import FLT.Mazur.PolygonCompleteClosedH1Scalars
 public import FLT.Mazur.PolygonCompleteClosedPointAcyclic
 public import FLT.Mazur.PolygonCompleteClosedPointCohomology
 public import FLT.Mazur.PolygonCompleteClosedPointLineComparison
+public import FLT.Mazur.PolygonCompleteClosedRotation
 public import FLT.Mazur.PolygonCompleteClosedSingularPoints
 public import FLT.Mazur.PolygonCompleteClosedSmoothLocus
 public import FLT.Mazur.PolygonCompleteClosedSpecialization
