@@ -5996,6 +5996,7 @@ public import FLT.Mazur.PolygonPowerNodeWeights
 public import FLT.Mazur.PolygonPowerSeriesBase
 public import FLT.Mazur.PolygonPowerSeriesSystem
 public import FLT.Mazur.PolygonProductAtlas
+public import FLT.Mazur.PolygonProjectiveRotationNormalization
 public import FLT.Mazur.PolygonProper
 public import FLT.Mazur.PolygonPuncturedCanonicalEquations
 public import FLT.Mazur.PolygonPureDimension
