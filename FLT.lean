@@ -2800,6 +2800,8 @@ public import FLT.Mazur.AffineOpenCoverGluingIso
 public import FLT.Mazur.AffineOpenCoverTestRecovery
 public import FLT.Mazur.AffineOpenCoverTestRefinement
 public import FLT.Mazur.AffineOpenDenominators
+public import FLT.Mazur.AffineOpenFinitePolynomialPresentation
+public import FLT.Mazur.AffineOpenFiniteQuotientChart
 public import FLT.Mazur.AffineOpenImmersionLocalizationCriterion
 public import FLT.Mazur.AffineOpenQuotientPresentation
 public import FLT.Mazur.AffineOverlapDiagonal
@@ -3220,6 +3222,8 @@ public import FLT.Mazur.CanonicalSectionNaturality
 public import FLT.Mazur.CartesianAtlasAffineIntersections
 public import FLT.Mazur.CartesianCoefficientPositiveHomology
 public import FLT.Mazur.CartesianCoefficientSymmetry
+public import FLT.Mazur.CartesianCoefficientTransport
+public import FLT.Mazur.CartesianCoefficientTransportNaturality
 public import FLT.Mazur.CartesianIdentityFactorization
 public import FLT.Mazur.CartesianIdentityQuasiFinite
 public import FLT.Mazur.CartesianMonoGroup
@@ -4478,6 +4482,11 @@ public import FLT.Mazur.GradedProjUnitChartMap
 public import FLT.Mazur.GradedProjUnitChartOpens
 public import FLT.Mazur.GradedProjZeroMapNaturality
 public import FLT.Mazur.GradedQuotientTensorComparison
+public import FLT.Mazur.GrassmannianChartPolynomialParameters
+public import FLT.Mazur.GrassmannianScalarExtension
+public import FLT.Mazur.GrassmannianSplitChartCoordinates
+public import FLT.Mazur.GrassmannianSplitChartScheme
+public import FLT.Mazur.GrassmannianSplitQuotientChart
 public import FLT.Mazur.GroupMarkingBaseChange
 public import FLT.Mazur.GroupMarkingBaseChangeInverse
 public import FLT.Mazur.GroupMarkingCartesianInverse
@@ -4543,9 +4552,11 @@ public import FLT.Mazur.HilbertBasisTupleAffineComparison
 public import FLT.Mazur.HilbertBasisTupleIntersection
 public import FLT.Mazur.HilbertBasisTupleSchemeComparison
 public import FLT.Mazur.HilbertBoundedAmbientAtlas
+public import FLT.Mazur.HilbertBoundedEvaluationBaseChange
 public import FLT.Mazur.HilbertBoundedMonomialBasis
 public import FLT.Mazur.HilbertBoundedMonomialCover
 public import FLT.Mazur.HilbertBoundedPolynomialAtlas
+public import FLT.Mazur.HilbertBoundedPolynomialBaseChange
 public import FLT.Mazur.HilbertChartAlgebra
 public import FLT.Mazur.HilbertChartAlgebraRealization
 public import FLT.Mazur.HilbertChartAlgebraSpecialization
@@ -4587,6 +4598,13 @@ public import FLT.Mazur.HilbertCommonAmbientOverlap
 public import FLT.Mazur.HilbertCommonOpenRestriction
 public import FLT.Mazur.HilbertDivisorDegreePresentation
 public import FLT.Mazur.HilbertFaithfullyFlatTupleBasis
+public import FLT.Mazur.HilbertFamilyBoundedEvaluation
+public import FLT.Mazur.HilbertFamilyFiniteQuotient
+public import FLT.Mazur.HilbertFamilyGrassmannianNaturality
+public import FLT.Mazur.HilbertFamilyGrassmannianParameter
+public import FLT.Mazur.HilbertFamilyRelationBaseChange
+public import FLT.Mazur.HilbertFamilyTruncatedRelations
+public import FLT.Mazur.HilbertFiniteAmbientPresentation
 public import FLT.Mazur.HilbertIntrinsicBasisBaseChange
 public import FLT.Mazur.HilbertIntrinsicBasisEquiv
 public import FLT.Mazur.HilbertIntrinsicBasisGlobal
@@ -4667,6 +4685,7 @@ public import FLT.Mazur.HilbertPrincipalLocalizationScalars
 public import FLT.Mazur.HilbertPrincipalRestriction
 public import FLT.Mazur.HilbertQuotientDegreeBound
 public import FLT.Mazur.HilbertQuotientDegreeFiltration
+public import FLT.Mazur.HilbertSameAmbientChartIso
 public import FLT.Mazur.HilbertSupportOpenLattice
 public import FLT.Mazur.HilbertSupportOpenPullback
 public import FLT.Mazur.HilbertTruncatedIdealDetection
@@ -5351,6 +5370,10 @@ public import FLT.Mazur.NodeTangentExtension
 public import FLT.Mazur.NodeTangentFieldFixed
 public import FLT.Mazur.NodeTangentFractionField
 public import FLT.Mazur.NodeTangentGaloisLabel
+public import FLT.Mazur.NodeTangentNormalizationChart
+public import FLT.Mazur.NodeTangentNormalizationConjugation
+public import FLT.Mazur.NodeTangentNormalizationDescent
+public import FLT.Mazur.NodeTangentNormalizationOpen
 public import FLT.Mazur.NodeTangentOverlap
 public import FLT.Mazur.NodeTangentOverlapEquiv
 public import FLT.Mazur.NodeTangentOverlapLinear
@@ -7550,6 +7573,7 @@ public import FLT.Mazur.SpecChartIdealPreimage
 public import FLT.Mazur.SpectrumFieldCohomologyCoordinates
 public import FLT.Mazur.SpectrumRingCohomologyCoordinates
 public import FLT.Mazur.SpectrumSmoothFiniteFlatCartier
+public import FLT.Mazur.SplitEvaluationBaseChange
 public import FLT.Mazur.SplitEvaluationTensorKernel
 public import FLT.Mazur.SplitLineAffineNeighborhood
 public import FLT.Mazur.SplitLineAffinePresentation
@@ -8505,6 +8529,9 @@ public import FLT.Mazur.WeierstrassDividedSuccessorUnitAction
 public import FLT.Mazur.WeierstrassDividedTangentCech
 public import FLT.Mazur.WeierstrassDividedTangentCechIso
 public import FLT.Mazur.WeierstrassDividedTangentConjugation
+public import FLT.Mazur.WeierstrassDividedTangentTransport
+public import FLT.Mazur.WeierstrassDividedTangentTransportAction
+public import FLT.Mazur.WeierstrassDividedTangentTriple
 public import FLT.Mazur.WeierstrassDividedTensorAtlasComparison
 public import FLT.Mazur.WeierstrassDividedTensorPointAction
 public import FLT.Mazur.WeierstrassDividedTensorSymmetry
