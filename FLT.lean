@@ -3015,9 +3015,11 @@ public import FLT.Mazur.ArtinianProperRelativeFunctions
 public import FLT.Mazur.ArtinianProperStructureSheaf
 public import FLT.Mazur.ArtinianRelativeSectionCriterion
 public import FLT.Mazur.ArtinianSectionKernel
+public import FLT.Mazur.AuxiliaryBaseProjectionParameter
 public import FLT.Mazur.AuxiliaryCartesianGroupParameter
 public import FLT.Mazur.AuxiliaryCartesianOriginalParameter
 public import FLT.Mazur.AuxiliaryCartesianParameterEquivalence
+public import FLT.Mazur.AuxiliaryCartesianProjectionParameter
 public import FLT.Mazur.AuxiliaryCoprimeFieldMarking
 public import FLT.Mazur.AuxiliaryCoprimeFieldNaturality
 public import FLT.Mazur.AuxiliaryCoprimeMarking
@@ -4021,7 +4023,10 @@ public import FLT.Mazur.EtaleCoordinate
 public import FLT.Mazur.EtaleCoordinateSlice
 public import FLT.Mazur.EtaleCurveLocalDomain
 public import FLT.Mazur.EtaleCurveValuation
+public import FLT.Mazur.EtaleCyclicOriginalLocalCubic
+public import FLT.Mazur.EtaleCyclicOriginalNormalizedCoverage
 public import FLT.Mazur.EtaleCyclicPresentationPullback
+public import FLT.Mazur.EtaleCyclicSmoothLocusNormalizedCoverage
 public import FLT.Mazur.EtaleCyclicSubgroupLocalPresentation
 public import FLT.Mazur.EtaleDimGe
 public import FLT.Mazur.EtaleDimLe
@@ -4427,6 +4432,8 @@ public import FLT.Mazur.GeneralizedCurveCartierDescent
 public import FLT.Mazur.GeneralizedCurveCartierGenerator
 public import FLT.Mazur.GeneralizedCurveCartierStalks
 public import FLT.Mazur.GeneralizedCurveCategory
+public import FLT.Mazur.GeneralizedCurveCyclicMarkingBaseChange
+public import FLT.Mazur.GeneralizedCurveCyclicMarkingTransport
 public import FLT.Mazur.GeneralizedCurveCyclicSubgroup
 public import FLT.Mazur.GeneralizedCurveDirectLocalCubic
 public import FLT.Mazur.GeneralizedCurveDirectLocalFamily
@@ -4443,6 +4450,7 @@ public import FLT.Mazur.GeneralizedCurveGraphBaseChange
 public import FLT.Mazur.GeneralizedCurveGraphTransport
 public import FLT.Mazur.GeneralizedCurveIdentityBaseChange
 public import FLT.Mazur.GeneralizedCurveLocalCubicPresentation
+public import FLT.Mazur.GeneralizedCurveLocalCyclicCubic
 public import FLT.Mazur.GeneralizedCurveLocalPointFrames
 public import FLT.Mazur.GeneralizedCurvePicardClasses
 public import FLT.Mazur.GeneralizedCurvePicardPresheaf
@@ -4719,6 +4727,7 @@ public import FLT.Mazur.GrassmannianWholeOverlapRefinement
 public import FLT.Mazur.GrassmannianWholeOverlapTransition
 public import FLT.Mazur.GroupMarkingBaseChange
 public import FLT.Mazur.GroupMarkingBaseChangeInverse
+public import FLT.Mazur.GroupMarkingBaseProjection
 public import FLT.Mazur.GroupMarkingCartesianInverse
 public import FLT.Mazur.GroupMarkingCartesianTransport
 public import FLT.Mazur.GroupMarkingTransport
@@ -5921,8 +5930,17 @@ public import FLT.Mazur.PointNormalizedDivisorUniqueness
 public import FLT.Mazur.PointNormalizedFiberCohomology
 public import FLT.Mazur.PointNormalizedLineBaseChange
 public import FLT.Mazur.PointNormalizedLineBundle
+public import FLT.Mazur.PointedCubicAuxiliaryCover
 public import FLT.Mazur.PointedCubicBaseGroupIso
+public import FLT.Mazur.PointedCubicCoefficientParameter
+public import FLT.Mazur.PointedCubicCyclicAuxiliaryCover
+public import FLT.Mazur.PointedCubicCyclicMarking
+public import FLT.Mazur.PointedCubicNormalizedOriginalClass
 public import FLT.Mazur.PointedCubicSubgroupTransport
+public import FLT.Mazur.PointedCubicUniversalCyclicParameter
+public import FLT.Mazur.PointedCubicUniversalSourceGroup
+public import FLT.Mazur.PointedCubicUniversalSourceMarking
+public import FLT.Mazur.PointedCubicUniversalSourceSubgroup
 public import FLT.Mazur.PointedCurveLargeDegree
 public import FLT.Mazur.PointedCurveUniformAcyclicity
 public import FLT.Mazur.PointedCurveUniformRiemannRoch
@@ -8471,6 +8489,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearGluing
 public import FLT.Mazur.WeierstrassCoefficientShearHorizontalAction
 public import FLT.Mazur.WeierstrassCoefficientShearHorizontalTorusAction
 public import FLT.Mazur.WeierstrassCoefficientShearInitialBoundaryParameter
+public import FLT.Mazur.WeierstrassCoefficientShearInitialComponents
 public import FLT.Mazur.WeierstrassCoefficientShearInitialFiber
 public import FLT.Mazur.WeierstrassCoefficientShearInitialRetainedSmooth
 public import FLT.Mazur.WeierstrassCoefficientShearInitialSlopeBoundary
@@ -8484,8 +8503,11 @@ public import FLT.Mazur.WeierstrassCoefficientShearOppositeUnrestrictedAction
 public import FLT.Mazur.WeierstrassCoefficientShearOriginalAdjacentComponents
 public import FLT.Mazur.WeierstrassCoefficientShearOriginalConicSpecialization
 public import FLT.Mazur.WeierstrassCoefficientShearOriginalFinalAdjacent
+public import FLT.Mazur.WeierstrassCoefficientShearOriginalInitialComponents
+public import FLT.Mazur.WeierstrassCoefficientShearOriginalInitialConic
 public import FLT.Mazur.WeierstrassCoefficientShearOriginalRetainedLines
 public import FLT.Mazur.WeierstrassCoefficientShearOriginalScaleOneComponents
+public import FLT.Mazur.WeierstrassCoefficientShearOriginalTerminalNode
 public import FLT.Mazur.WeierstrassCoefficientShearOverlaps
 public import FLT.Mazur.WeierstrassCoefficientShearReciprocalLineAction
 public import FLT.Mazur.WeierstrassCoefficientShearReciprocalLineNaturality
@@ -8511,6 +8533,8 @@ public import FLT.Mazur.WeierstrassCoefficientShearScaleOne
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneAdjacentAction
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneAdjacentIntersection
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneAdjacentTransition
+public import FLT.Mazur.WeierstrassCoefficientShearScaleOneComponentRootChange
+public import FLT.Mazur.WeierstrassCoefficientShearScaleOneComponentSpecialization
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneComponentStructure
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneComponents
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneConicAction
@@ -8533,6 +8557,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearSuccessiveTorusAction
 public import FLT.Mazur.WeierstrassCoefficientShearTangentConjugation
 public import FLT.Mazur.WeierstrassCoefficientShearTangentTransport
 public import FLT.Mazur.WeierstrassCoefficientShearTensorInput
+public import FLT.Mazur.WeierstrassCoefficientShearTerminalNode
 public import FLT.Mazur.WeierstrassCoefficientShearTorusDomain
 public import FLT.Mazur.WeierstrassCoefficientShearTorusPair
 public import FLT.Mazur.WeierstrassCoefficientShearTorusReflection
@@ -8593,6 +8618,7 @@ public import FLT.Mazur.WeierstrassDilatationResidueRetained
 public import FLT.Mazur.WeierstrassDilatationSaturation
 public import FLT.Mazur.WeierstrassDilatationShear
 public import FLT.Mazur.WeierstrassDilatationShearHorizontal
+public import FLT.Mazur.WeierstrassDilatationShearNodeNormalForm
 public import FLT.Mazur.WeierstrassDilatationUnitComparison
 public import FLT.Mazur.WeierstrassDilatationZeroResidue
 public import FLT.Mazur.WeierstrassDilatationZeroResidueBoundary
@@ -9415,6 +9441,8 @@ public import FLT.Mazur.WeierstrassGlobalPolynomialSwap
 public import FLT.Mazur.WeierstrassHorizontalConicPunctureResidue
 public import FLT.Mazur.WeierstrassHorizontalFractionHomExt
 public import FLT.Mazur.WeierstrassHorizontalGlobalChartComparison
+public import FLT.Mazur.WeierstrassIncidenceCoefficientTransport
+public import FLT.Mazur.WeierstrassIncidenceResidueShearComparison
 public import FLT.Mazur.WeierstrassIncidenceShearNormalForm
 public import FLT.Mazur.WeierstrassInfinitesimalAddition
 public import FLT.Mazur.WeierstrassInfinitesimalChart
