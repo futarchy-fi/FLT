@@ -7934,6 +7934,7 @@ public import FLT.Mazur.UniversalWeierstrassCyclicModularDescent
 public import FLT.Mazur.UniversalWeierstrassCyclicModularRelation
 public import FLT.Mazur.UniversalWeierstrassCyclicModularRepresentation
 public import FLT.Mazur.UniversalWeierstrassCyclicModuliBridge
+public import FLT.Mazur.UniversalWeierstrassCyclicModuliEtaleImage
 public import FLT.Mazur.UniversalWeierstrassCyclicNaturalFixedPoint
 public import FLT.Mazur.UniversalWeierstrassCyclicNaturalGroup
 public import FLT.Mazur.UniversalWeierstrassCyclicNaturalGroupMarking
