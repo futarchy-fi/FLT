@@ -4562,6 +4562,7 @@ public import FLT.Mazur.GrassmannianChartTransition
 public import FLT.Mazur.GrassmannianChartTransitionCocycle
 public import FLT.Mazur.GrassmannianChartTransitionInverse
 public import FLT.Mazur.GrassmannianCoordinateRefinementLaw
+public import FLT.Mazur.GrassmannianFramedSheafQuotient
 public import FLT.Mazur.GrassmannianFunctorLocalizedChart
 public import FLT.Mazur.GrassmannianIndexedOverlapScheme
 public import FLT.Mazur.GrassmannianIndexedTripleOverlap
