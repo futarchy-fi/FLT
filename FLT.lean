@@ -7816,6 +7816,7 @@ public import FLT.Mazur.SchemeRelationOverRestriction
 public import FLT.Mazur.SchemeRelationRestrictionComposition
 public import FLT.Mazur.SchemeRelationRestrictionRechart
 public import FLT.Mazur.SchemeRelationTensorAlgebra
+public import FLT.Mazur.SchemeRelationTensorCocycle
 public import FLT.Mazur.SchemeRelationTensorCoordinates
 public import FLT.Mazur.SchemeRelationTensorCounit
 public import FLT.Mazur.SchemeRelativeNilpotentKernel
