@@ -8315,6 +8315,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearOverlaps
 public import FLT.Mazur.WeierstrassCoefficientShearReciprocalLineAction
 public import FLT.Mazur.WeierstrassCoefficientShearReciprocalLineNaturality
 public import FLT.Mazur.WeierstrassCoefficientShearReciprocalUnitDomain
+public import FLT.Mazur.WeierstrassCoefficientShearReciprocalUniversalAction
 public import FLT.Mazur.WeierstrassCoefficientShearResidueConic
 public import FLT.Mazur.WeierstrassCoefficientShearResidueExterior
 public import FLT.Mazur.WeierstrassCoefficientShearResidueRetained
