@@ -3011,9 +3011,12 @@ public import FLT.Mazur.ArtinianProperRelativeFunctions
 public import FLT.Mazur.ArtinianProperStructureSheaf
 public import FLT.Mazur.ArtinianRelativeSectionCriterion
 public import FLT.Mazur.ArtinianSectionKernel
+public import FLT.Mazur.AuxiliaryCoprimeFieldMarking
+public import FLT.Mazur.AuxiliaryCoprimeFieldNaturality
 public import FLT.Mazur.AuxiliaryLevelFaithfulOpen
 public import FLT.Mazur.AuxiliaryLevelFaithfulRepresentation
 public import FLT.Mazur.AuxiliaryLevelFieldMarking
+public import FLT.Mazur.AuxiliaryLevelGroupTransport
 public import FLT.Mazur.AuxiliaryLevelHomScheme
 public import FLT.Mazur.AuxiliaryLevelKernelLocus
 public import FLT.Mazur.AuxiliaryLevelMappedFaithfulness
@@ -3217,6 +3220,8 @@ public import FLT.Mazur.CanonicalSectionNaturality
 public import FLT.Mazur.CartesianAtlasAffineIntersections
 public import FLT.Mazur.CartesianCoefficientPositiveHomology
 public import FLT.Mazur.CartesianCoefficientSymmetry
+public import FLT.Mazur.CartesianCoefficientTransport
+public import FLT.Mazur.CartesianCoefficientTransportNaturality
 public import FLT.Mazur.CartesianIdentityFactorization
 public import FLT.Mazur.CartesianIdentityQuasiFinite
 public import FLT.Mazur.CartesianMonoGroup
@@ -3486,6 +3491,8 @@ public import FLT.Mazur.ConstantDegree
 public import FLT.Mazur.ConstantGroupTensorEvaluation
 public import FLT.Mazur.ConstantPrimeScalarFiltration
 public import FLT.Mazur.Contracts
+public import FLT.Mazur.CoprimeFieldGroupTransport
+public import FLT.Mazur.CoprimeGroupMarkings
 public import FLT.Mazur.CoproductConstantSections
 public import FLT.Mazur.CubicComponentBound
 public import FLT.Mazur.CubicMobiusClearing
@@ -5359,6 +5366,10 @@ public import FLT.Mazur.NodeTangentExtension
 public import FLT.Mazur.NodeTangentFieldFixed
 public import FLT.Mazur.NodeTangentFractionField
 public import FLT.Mazur.NodeTangentGaloisLabel
+public import FLT.Mazur.NodeTangentNormalizationChart
+public import FLT.Mazur.NodeTangentNormalizationConjugation
+public import FLT.Mazur.NodeTangentNormalizationDescent
+public import FLT.Mazur.NodeTangentNormalizationOpen
 public import FLT.Mazur.NodeTangentOverlap
 public import FLT.Mazur.NodeTangentOverlapEquiv
 public import FLT.Mazur.NodeTangentOverlapLinear
@@ -6055,10 +6066,15 @@ public import FLT.Mazur.PolygonPowerNodeWeights
 public import FLT.Mazur.PolygonPowerSeriesBase
 public import FLT.Mazur.PolygonPowerSeriesSystem
 public import FLT.Mazur.PolygonProductAtlas
+public import FLT.Mazur.PolygonProjectiveAuxiliaryMarking
+public import FLT.Mazur.PolygonProjectiveAuxiliaryParameter
+public import FLT.Mazur.PolygonProjectiveAuxiliaryRotation
 public import FLT.Mazur.PolygonProjectiveCyclicPoints
 public import FLT.Mazur.PolygonProjectiveExactTorsion
 public import FLT.Mazur.PolygonProjectiveFixedPointFree
 public import FLT.Mazur.PolygonProjectiveRotationNormalization
+public import FLT.Mazur.PolygonProjectiveSquareComparison
+public import FLT.Mazur.PolygonProjectiveSquareMarking
 public import FLT.Mazur.PolygonProjectiveTranslation
 public import FLT.Mazur.PolygonProper
 public import FLT.Mazur.PolygonPuncturedCanonicalEquations
@@ -7911,6 +7927,7 @@ public import FLT.Mazur.WeierstrassAllOrdinaryTripleDomain
 public import FLT.Mazur.WeierstrassAllOrdinaryTripleGlobal
 public import FLT.Mazur.WeierstrassAllOrdinaryTripleSchemes
 public import FLT.Mazur.WeierstrassAutomorphismNormalization
+public import FLT.Mazur.WeierstrassAuxiliaryFieldCover
 public import FLT.Mazur.WeierstrassChartBaseChange
 public import FLT.Mazur.WeierstrassChartBaseChangeSquare
 public import FLT.Mazur.WeierstrassChartCoefficientMap
@@ -8499,6 +8516,9 @@ public import FLT.Mazur.WeierstrassDividedSuccessorUnitAction
 public import FLT.Mazur.WeierstrassDividedTangentCech
 public import FLT.Mazur.WeierstrassDividedTangentCechIso
 public import FLT.Mazur.WeierstrassDividedTangentConjugation
+public import FLT.Mazur.WeierstrassDividedTangentTransport
+public import FLT.Mazur.WeierstrassDividedTangentTransportAction
+public import FLT.Mazur.WeierstrassDividedTangentTriple
 public import FLT.Mazur.WeierstrassDividedTensorAtlasComparison
 public import FLT.Mazur.WeierstrassDividedTensorPointAction
 public import FLT.Mazur.WeierstrassDividedTensorSymmetry
