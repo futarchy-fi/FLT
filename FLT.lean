@@ -9512,6 +9512,7 @@ public import FLT.Mazur.WeierstrassNodalRetainedComponents
 public import FLT.Mazur.WeierstrassNodalZeroAdjacentIntersections
 public import FLT.Mazur.WeierstrassNodalZeroInitialChart
 public import FLT.Mazur.WeierstrassNodalZeroInitialIntersection
+public import FLT.Mazur.WeierstrassNodalZeroInitialSlopeIntersection
 public import FLT.Mazur.WeierstrassNodalZeroLaterComponents
 public import FLT.Mazur.WeierstrassNodalZeroRetainedChart
 public import FLT.Mazur.WeierstrassNodalZeroRetainedComponents
