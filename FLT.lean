@@ -9422,6 +9422,7 @@ public import FLT.Mazur.WeierstrassNegationPairSections
 public import FLT.Mazur.WeierstrassNodalDividedDepth
 public import FLT.Mazur.WeierstrassNodalResidueCharts
 public import FLT.Mazur.WeierstrassNodalResidueContraction
+public import FLT.Mazur.WeierstrassNodalResidueTangentDepth
 public import FLT.Mazur.WeierstrassNodalResidueTransition
 public import FLT.Mazur.WeierstrassNonoppositeOrdinaryLift
 public import FLT.Mazur.WeierstrassNonzeroPointAffine
