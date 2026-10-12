@@ -2800,6 +2800,7 @@ public import FLT.Mazur.AffineOpenCoverGluingIso
 public import FLT.Mazur.AffineOpenCoverTestRecovery
 public import FLT.Mazur.AffineOpenCoverTestRefinement
 public import FLT.Mazur.AffineOpenDenominators
+public import FLT.Mazur.AffineOpenFinitePolynomialPresentation
 public import FLT.Mazur.AffineOpenImmersionLocalizationCriterion
 public import FLT.Mazur.AffineOpenQuotientPresentation
 public import FLT.Mazur.AffineOverlapDiagonal
