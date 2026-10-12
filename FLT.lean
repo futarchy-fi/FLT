@@ -6970,6 +6970,7 @@ public import FLT.Mazur.ProperPointExtension
 public import FLT.Mazur.ProperPointedAcyclicFppfSheaf
 public import FLT.Mazur.ProperPointedLineSheafDescent
 public import FLT.Mazur.ProperPointedRelativeFppfIso
+public import FLT.Mazur.ProperPointwiseSectionRigidity
 public import FLT.Mazur.ProperPushforwardReconstructionUnit
 public import FLT.Mazur.ProperRankOneDivisorNaturality
 public import FLT.Mazur.ProperRankOneNormalizedDivisor
