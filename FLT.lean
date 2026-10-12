@@ -5362,6 +5362,7 @@ public import FLT.Mazur.NodeTangentAlgebra
 public import FLT.Mazur.NodeTangentCechCocycle
 public import FLT.Mazur.NodeTangentCoefficientCover
 public import FLT.Mazur.NodeTangentCoefficientNaturality
+public import FLT.Mazur.NodeTangentCompleteNormalization
 public import FLT.Mazur.NodeTangentDepth
 public import FLT.Mazur.NodeTangentExtension
 public import FLT.Mazur.NodeTangentFieldFixed
