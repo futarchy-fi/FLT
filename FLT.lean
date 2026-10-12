@@ -4630,6 +4630,7 @@ public import FLT.Mazur.GrassmannianSchemeQuotientRefinement
 public import FLT.Mazur.GrassmannianSchemeQuotientTest
 public import FLT.Mazur.GrassmannianSelectedAmbientIndex
 public import FLT.Mazur.GrassmannianSelectedColumnsLocalization
+public import FLT.Mazur.GrassmannianSheafQuotientPoint
 public import FLT.Mazur.GrassmannianSheafRefinementComparison
 public import FLT.Mazur.GrassmannianSplitChartCoordinates
 public import FLT.Mazur.GrassmannianSplitChartScheme
