@@ -9718,6 +9718,7 @@ public import FLT.Mazur.WeierstrassSecantSmoothPresentation
 public import FLT.Mazur.WeierstrassShearInfinityPreimage
 public import FLT.Mazur.WeierstrassSingularJetObstruction
 public import FLT.Mazur.WeierstrassSingularJetTranslation
+public import FLT.Mazur.WeierstrassSlopeLaurentCubic
 public import FLT.Mazur.WeierstrassSlopeLaurentGeometry
 public import FLT.Mazur.WeierstrassSlopeLaurentLocalization
 public import FLT.Mazur.WeierstrassSlopeSwapFormula
