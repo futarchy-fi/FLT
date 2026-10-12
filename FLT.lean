@@ -4611,6 +4611,12 @@ public import FLT.Mazur.GrassmannianChartTransitionCocycle
 public import FLT.Mazur.GrassmannianChartTransitionInverse
 public import FLT.Mazur.GrassmannianClassifiedImageQuotient
 public import FLT.Mazur.GrassmannianCoordinateRefinementLaw
+public import FLT.Mazur.GrassmannianDeterminantChartSections
+public import FLT.Mazur.GrassmannianDeterminantLineTransitions
+public import FLT.Mazur.GrassmannianDeterminantOpenUnits
+public import FLT.Mazur.GrassmannianDeterminantOverlapUnits
+public import FLT.Mazur.GrassmannianDeterminantSchemeSections
+public import FLT.Mazur.GrassmannianDeterminantSectionLoci
 public import FLT.Mazur.GrassmannianFramedQuotientAtlas
 public import FLT.Mazur.GrassmannianFramedSheafQuotient
 public import FLT.Mazur.GrassmannianFunctorLocalizedChart
@@ -8056,6 +8062,7 @@ public import FLT.Mazur.StructureDirectImageSections
 public import FLT.Mazur.StructureIdealPowerCohomology
 public import FLT.Mazur.StructureIdealPowerQuotient
 public import FLT.Mazur.StructureImageOpenChart
+public import FLT.Mazur.StructureModuleScalarTransitions
 public import FLT.Mazur.StructureRingCohomologyIso
 public import FLT.Mazur.SubfunctorRepresentedPullback
 public import FLT.Mazur.SuccessiveIncidenceAlgebra
