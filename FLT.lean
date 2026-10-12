@@ -4536,6 +4536,7 @@ public import FLT.Mazur.GrassmannianMorphismFiniteProjective
 public import FLT.Mazur.GrassmannianMorphismLocalQuotient
 public import FLT.Mazur.GrassmannianMorphismPrincipalCover
 public import FLT.Mazur.GrassmannianMorphismQuotientLocalization
+public import FLT.Mazur.GrassmannianMorphismRecoveredPoint
 public import FLT.Mazur.GrassmannianMorphismRelation
 public import FLT.Mazur.GrassmannianMorphismTensorCompatibility
 public import FLT.Mazur.GrassmannianNormalizedBaseChange
