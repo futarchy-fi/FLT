@@ -7876,6 +7876,7 @@ public import FLT.Mazur.UniversalWeierstrassCyclicOriginalMarking
 public import FLT.Mazur.UniversalWeierstrassCyclicSliceFunctor
 public import FLT.Mazur.UniversalWeierstrassCyclicSliceRetraction
 public import FLT.Mazur.UniversalWeierstrassCyclicSubgroup
+public import FLT.Mazur.UniversalWeierstrassEquationCoefficientProjection
 public import FLT.Mazur.UniversalWeierstrassFourTorsionEtale
 public import FLT.Mazur.UniversalWeierstrassFourTorsionFinite
 public import FLT.Mazur.UniversalWeierstrassFourTorsionUnramified
