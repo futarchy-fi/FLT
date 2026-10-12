@@ -6567,6 +6567,7 @@ public import FLT.Mazur.ProperCohomologyWitnesses
 public import FLT.Mazur.ProperConnectedReducedSections
 public import FLT.Mazur.ProperCoverImmersionCriterion
 public import FLT.Mazur.ProperCoverLimitDescent
+public import FLT.Mazur.ProperCurveFixedPointTranslation
 public import FLT.Mazur.ProperCurveGenus
 public import FLT.Mazur.ProperDenseOpenExtension
 public import FLT.Mazur.ProperDenseOpenIso
