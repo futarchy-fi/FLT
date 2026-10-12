@@ -7982,6 +7982,7 @@ public import FLT.Mazur.WeierstrassDividedExteriorStep
 public import FLT.Mazur.WeierstrassDividedExteriorTerminalExclusions
 public import FLT.Mazur.WeierstrassDividedExteriorTerminalIntersection
 public import FLT.Mazur.WeierstrassDividedExteriorYBoundary
+public import FLT.Mazur.WeierstrassDividedFaithfulActionDescent
 public import FLT.Mazur.WeierstrassDividedFinalAdjacentComponents
 public import FLT.Mazur.WeierstrassDividedFinalAdjacentConicBranches
 public import FLT.Mazur.WeierstrassDividedFinalAdjacentOverComponents
