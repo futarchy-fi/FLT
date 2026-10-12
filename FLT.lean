@@ -9523,6 +9523,7 @@ public import FLT.Mazur.WeierstrassModificationXSlopeOpen
 public import FLT.Mazur.WeierstrassModificationXTensorContraction
 public import FLT.Mazur.WeierstrassModificationXTensorOriginal
 public import FLT.Mazur.WeierstrassModificationXTensorOverlapCoordinates
+public import FLT.Mazur.WeierstrassModificationXTensorSmoothInput
 public import FLT.Mazur.WeierstrassModificationXTotalTransform
 public import FLT.Mazur.WeierstrassModificationXZeroNodeOverlap
 public import FLT.Mazur.WeierstrassModificationXZeroNodeOverlapBranches
