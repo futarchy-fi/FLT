@@ -7875,6 +7875,7 @@ public import FLT.Mazur.UniversalWeierstrassCyclicAuxiliary
 public import FLT.Mazur.UniversalWeierstrassCyclicFullNaturality
 public import FLT.Mazur.UniversalWeierstrassCyclicGlobalRetraction
 public import FLT.Mazur.UniversalWeierstrassCyclicLevel
+public import FLT.Mazur.UniversalWeierstrassCyclicLocalPresentationInvariant
 public import FLT.Mazur.UniversalWeierstrassCyclicNaturalFixedPoint
 public import FLT.Mazur.UniversalWeierstrassCyclicNaturalGroup
 public import FLT.Mazur.UniversalWeierstrassCyclicNaturalGroupMarking
