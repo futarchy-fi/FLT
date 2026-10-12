@@ -5837,6 +5837,7 @@ public import FLT.Mazur.PointedCubicBaseGroupIso
 public import FLT.Mazur.PointedCubicCoefficientParameter
 public import FLT.Mazur.PointedCubicCyclicAuxiliaryCover
 public import FLT.Mazur.PointedCubicCyclicMarking
+public import FLT.Mazur.PointedCubicNormalizedOriginalClass
 public import FLT.Mazur.PointedCubicSubgroupTransport
 public import FLT.Mazur.PointedCubicUniversalCyclicParameter
 public import FLT.Mazur.PointedCubicUniversalSourceGroup
