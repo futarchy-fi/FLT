@@ -5395,6 +5395,7 @@ public import FLT.Mazur.ModuleSheafDualPullbackUnit
 public import FLT.Mazur.ModuleSheafDualSheaf
 public import FLT.Mazur.ModuleSheafEmptySlice
 public import FLT.Mazur.ModuleSheafEvaluatedGluing
+public import FLT.Mazur.ModuleSheafGeometricOpenCocycle
 public import FLT.Mazur.ModuleSheafGluing
 public import FLT.Mazur.ModuleSheafGluingMapRestriction
 public import FLT.Mazur.ModuleSheafGluingTransport
