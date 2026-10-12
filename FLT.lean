@@ -2493,6 +2493,7 @@ public import FLT.Mazur.AcyclicDegreePicardRepresentation
 public import FLT.Mazur.AcyclicDirectImageResolution
 public import FLT.Mazur.AcyclicDivisorDegreeOpen
 public import FLT.Mazur.AcyclicDivisorDegreePresheaf
+public import FLT.Mazur.AcyclicDivisorFixedBaseChange
 public import FLT.Mazur.AcyclicHilbertDivisorRepresentation
 public import FLT.Mazur.AcyclicHilbertPicardTestOverlap
 public import FLT.Mazur.AcyclicLineSectionBaseChange
