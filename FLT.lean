@@ -4497,6 +4497,7 @@ public import FLT.Mazur.GrassmannianScalarExtension
 public import FLT.Mazur.GrassmannianSplitChartCoordinates
 public import FLT.Mazur.GrassmannianSplitChartScheme
 public import FLT.Mazur.GrassmannianSplitQuotientChart
+public import FLT.Mazur.GrassmannianTransitionSpecialization
 public import FLT.Mazur.GroupMarkingBaseChange
 public import FLT.Mazur.GroupMarkingBaseChangeInverse
 public import FLT.Mazur.GroupMarkingTransport
