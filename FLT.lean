@@ -8290,6 +8290,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearRetainedFiber
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedIntersections
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedReconstruction
 public import FLT.Mazur.WeierstrassCoefficientShearRootChange
+public import FLT.Mazur.WeierstrassCoefficientShearRootTorusChange
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOne
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneAdjacentAction
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneAdjacentIntersection
