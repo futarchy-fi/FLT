@@ -4651,6 +4651,7 @@ public import FLT.Mazur.GrassmannianSheafQuotientClassification
 public import FLT.Mazur.GrassmannianSheafQuotientClassifying
 public import FLT.Mazur.GrassmannianSheafQuotientCommonTest
 public import FLT.Mazur.GrassmannianSheafQuotientComparison
+public import FLT.Mazur.GrassmannianSheafQuotientEquivalence
 public import FLT.Mazur.GrassmannianSheafQuotientPoint
 public import FLT.Mazur.GrassmannianSheafQuotientPullback
 public import FLT.Mazur.GrassmannianSheafQuotientTest
