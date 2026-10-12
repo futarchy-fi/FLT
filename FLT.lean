@@ -4582,6 +4582,9 @@ public import FLT.Mazur.GrassmannianNamedAmbientRefinement
 public import FLT.Mazur.GrassmannianNamedRefinement
 public import FLT.Mazur.GrassmannianNormalizedBaseChange
 public import FLT.Mazur.GrassmannianNumeratorTransport
+public import FLT.Mazur.GrassmannianOpenChartCoherence
+public import FLT.Mazur.GrassmannianOpenChartComparisons
+public import FLT.Mazur.GrassmannianOpenChartProjection
 public import FLT.Mazur.GrassmannianOriginalBaseChartCover
 public import FLT.Mazur.GrassmannianOverlapAffineCoordinates
 public import FLT.Mazur.GrassmannianOverlapAffineTransition
@@ -4603,6 +4606,7 @@ public import FLT.Mazur.GrassmannianQuotientSheaf
 public import FLT.Mazur.GrassmannianQuotientSheafTransition
 public import FLT.Mazur.GrassmannianScalarExtension
 public import FLT.Mazur.GrassmannianSchemeAmbientQuotient
+public import FLT.Mazur.GrassmannianSchemeChartPoint
 public import FLT.Mazur.GrassmannianSchemeQuotientRefinement
 public import FLT.Mazur.GrassmannianSchemeQuotientTest
 public import FLT.Mazur.GrassmannianSelectedAmbientIndex
