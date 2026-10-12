@@ -7419,6 +7419,7 @@ public import FLT.Mazur.RetainedLineOriginalTwist
 public import FLT.Mazur.RetainedLineSectionPullback
 public import FLT.Mazur.RetainedLineSectionPullbackIso
 public import FLT.Mazur.RetainedLineTwistedSection
+public import FLT.Mazur.RetainedSubgroupCartierMarking
 public import FLT.Mazur.RetainedSubringGradedMap
 public import FLT.Mazur.RetainedSubringGrading
 public import FLT.Mazur.RetainedSubringLocalization
