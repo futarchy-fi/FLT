@@ -7097,6 +7097,7 @@ public import FLT.Mazur.RelativeFppfLocalSubfunctor
 public import FLT.Mazur.RelativeGenusOneAffineCubicMorphism
 public import FLT.Mazur.RelativeGenusOneAffineIso
 public import FLT.Mazur.RelativeGenusOneAffineLowPoles
+public import FLT.Mazur.RelativeGenusOneAffineRestriction
 public import FLT.Mazur.RelativeGenusOneAllPoleBasis
 public import FLT.Mazur.RelativeGenusOneCanonicalBasis
 public import FLT.Mazur.RelativeGenusOneCanonicalConstants
