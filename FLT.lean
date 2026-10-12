@@ -2740,8 +2740,13 @@ public import FLT.Mazur.AffineHilbertPrincipalTensorModel
 public import FLT.Mazur.AffineHilbertRelationNeighborhoods
 public import FLT.Mazur.AffineHilbertRelationOperations
 public import FLT.Mazur.AffineHilbertRelationTensorCharts
+public import FLT.Mazur.AffineHilbertRestrictedOpenImmersion
 public import FLT.Mazur.AffineHilbertRestrictedOrbits
 public import FLT.Mazur.AffineHilbertRestrictedQuotient
+public import FLT.Mazur.AffineHilbertRestrictedSectionFunctions
+public import FLT.Mazur.AffineHilbertRestrictedSheafEquiv
+public import FLT.Mazur.AffineHilbertRestrictedSheafPullback
+public import FLT.Mazur.AffineHilbertSchemeRestriction
 public import FLT.Mazur.AffineHilbertSymmetricNeighborhoods
 public import FLT.Mazur.AffineHilbertTensorAtlas
 public import FLT.Mazur.AffineHilbertTensorGluing
@@ -7384,6 +7389,7 @@ public import FLT.Mazur.RelativeRelationArrowCalculus
 public import FLT.Mazur.RelativeRelationFpqcInvariantQuotient
 public import FLT.Mazur.RelativeRelationFpqcOrbitComparison
 public import FLT.Mazur.RelativeRelationFpqcSectionComparison
+public import FLT.Mazur.RelativeRelationFullSectionFunctions
 public import FLT.Mazur.RelativeRelationGeneratorNaturality
 public import FLT.Mazur.RelativeRelationGeneratorSubopens
 public import FLT.Mazur.RelativeRelationInvariantAffineComparison
@@ -7393,6 +7399,7 @@ public import FLT.Mazur.RelativeRelationInvariantSectionRings
 public import FLT.Mazur.RelativeRelationInvariantSections
 public import FLT.Mazur.RelativeRelationInvariantSheaf
 public import FLT.Mazur.RelativeRelationOpenSaturation
+public import FLT.Mazur.RelativeRelationOpenSourceFunctions
 public import FLT.Mazur.RelativeRelationOrbit
 public import FLT.Mazur.RelativeRelationOrbitCoequalizer
 public import FLT.Mazur.RelativeRelationOrbitOpens
@@ -7801,9 +7808,13 @@ public import FLT.Mazur.SchemeReducedStructureSheaf
 public import FLT.Mazur.SchemeRefinementReconstruction
 public import FLT.Mazur.SchemeRelationDoubleRestriction
 public import FLT.Mazur.SchemeRelationFunctionDescent
+public import FLT.Mazur.SchemeRelationInvariantRestriction
 public import FLT.Mazur.SchemeRelationLocalFunctionDescent
 public import FLT.Mazur.SchemeRelationOpenFunctionDescent
 public import FLT.Mazur.SchemeRelationOpenInvariantRings
+public import FLT.Mazur.SchemeRelationOverRestriction
+public import FLT.Mazur.SchemeRelationRestrictionComposition
+public import FLT.Mazur.SchemeRelationRestrictionRechart
 public import FLT.Mazur.SchemeRelativeNilpotentKernel
 public import FLT.Mazur.SchemeRelativeNilpotentSections
 public import FLT.Mazur.SchemeSectionFamilyProduct
