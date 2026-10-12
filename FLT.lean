@@ -4554,6 +4554,7 @@ public import FLT.Mazur.GrassmannianPrincipalSeparation
 public import FLT.Mazur.GrassmannianQuotientBaseChange
 public import FLT.Mazur.GrassmannianQuotientLocalBasis
 public import FLT.Mazur.GrassmannianQuotientSheaf
+public import FLT.Mazur.GrassmannianQuotientSheafTransition
 public import FLT.Mazur.GrassmannianScalarExtension
 public import FLT.Mazur.GrassmannianSelectedAmbientIndex
 public import FLT.Mazur.GrassmannianSelectedColumnsLocalization
