@@ -9527,6 +9527,7 @@ public import FLT.Mazur.WeierstrassReciprocalZeroPointComparison
 public import FLT.Mazur.WeierstrassRegularChartSectionDescent
 public import FLT.Mazur.WeierstrassRegularInputDescent
 public import FLT.Mazur.WeierstrassRelativeSmoothOpen
+public import FLT.Mazur.WeierstrassResidueTangentEquationData
 public import FLT.Mazur.WeierstrassRetainedCoefficientShearChart
 public import FLT.Mazur.WeierstrassRetainedRegularCenter
 public import FLT.Mazur.WeierstrassSameOutputIntersections
