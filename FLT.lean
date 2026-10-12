@@ -3544,6 +3544,7 @@ public import FLT.Mazur.CyclicNormalizationExact
 public import FLT.Mazur.CyclicOverlapGraph
 public import FLT.Mazur.CyclicPinchingProduct
 public import FLT.Mazur.CyclicPinchingReflection
+public import FLT.Mazur.CyclicPinchingReflectionIndices
 public import FLT.Mazur.CyclicPinchingRotation
 public import FLT.Mazur.CyclicProductDescent
 public import FLT.Mazur.CyclicProductEndpoints
