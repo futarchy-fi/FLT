@@ -4521,6 +4521,9 @@ public import FLT.Mazur.GradedQuotientTensorComparison
 public import FLT.Mazur.GrassmannianAffinePointFunctor
 public import FLT.Mazur.GrassmannianAmbientBaseChange
 public import FLT.Mazur.GrassmannianAmbientBlocks
+public import FLT.Mazur.GrassmannianAmbientChartConeCompatibility
+public import FLT.Mazur.GrassmannianAmbientChartConeCoordinate
+public import FLT.Mazur.GrassmannianAmbientChartConeMap
 public import FLT.Mazur.GrassmannianAmbientChartIndex
 public import FLT.Mazur.GrassmannianAmbientChartMap
 public import FLT.Mazur.GrassmannianAmbientChartNaturality
@@ -4600,6 +4603,8 @@ public import FLT.Mazur.GrassmannianPrincipalOverlapScheme
 public import FLT.Mazur.GrassmannianPrincipalRelationRecovery
 public import FLT.Mazur.GrassmannianPrincipalSeparation
 public import FLT.Mazur.GrassmannianQuotientBaseChange
+public import FLT.Mazur.GrassmannianQuotientImageAmbientEpi
+public import FLT.Mazur.GrassmannianQuotientImageAmbientMap
 public import FLT.Mazur.GrassmannianQuotientImageCocycle
 public import FLT.Mazur.GrassmannianQuotientImageDescent
 public import FLT.Mazur.GrassmannianQuotientImageLocalFree
@@ -4612,6 +4617,7 @@ public import FLT.Mazur.GrassmannianQuotientSheafTransition
 public import FLT.Mazur.GrassmannianScalarExtension
 public import FLT.Mazur.GrassmannianSchemeAmbientQuotient
 public import FLT.Mazur.GrassmannianSchemeChartPoint
+public import FLT.Mazur.GrassmannianSchemeImageAmbientMap
 public import FLT.Mazur.GrassmannianSchemeImageQuotient
 public import FLT.Mazur.GrassmannianSchemeQuotientRefinement
 public import FLT.Mazur.GrassmannianSchemeQuotientTest
@@ -5440,6 +5446,8 @@ public import FLT.Mazur.ModuleSheafLocalIsoTransport
 public import FLT.Mazur.ModuleSheafLocalNaturality
 public import FLT.Mazur.ModuleSheafMorphismGluing
 public import FLT.Mazur.ModuleSheafMorphismRefinement
+public import FLT.Mazur.ModuleSheafOpenChartAdjoint
+public import FLT.Mazur.ModuleSheafOpenCoverEpi
 public import FLT.Mazur.ModuleSheafOpenImageChart
 public import FLT.Mazur.ModuleSheafOpenImageMap
 public import FLT.Mazur.ModuleSheafOpenImageMapRecovery
@@ -5452,6 +5460,7 @@ public import FLT.Mazur.ModuleSheafOpenImmersionSections
 public import FLT.Mazur.ModuleSheafOpenImmersionTopSections
 public import FLT.Mazur.ModuleSheafOpenIsoDetection
 public import FLT.Mazur.ModuleSheafOpenOverlapTransition
+public import FLT.Mazur.ModuleSheafOpenTransitionProjection
 public import FLT.Mazur.ModuleSheafOverlapCoordinateRefinement
 public import FLT.Mazur.ModuleSheafOverlapImageCoherence
 public import FLT.Mazur.ModuleSheafOverlapImageTransition
@@ -7713,6 +7722,7 @@ public import FLT.Mazur.SeparatedOverlapPullback
 public import FLT.Mazur.SequentialCechLocalization
 public import FLT.Mazur.SequentialCochainBoundary
 public import FLT.Mazur.SequentialFiniteProducts
+public import FLT.Mazur.SheafPullbackAmbientChartMap
 public import FLT.Mazur.SheafPullbackAmbientCoherence
 public import FLT.Mazur.SheafPullbackAmbientMatch
 public import FLT.Mazur.SheafPullbackAmbientNormalization
