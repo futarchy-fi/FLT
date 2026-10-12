@@ -9826,6 +9826,7 @@ public import FLT.Mazur.WeierstrassRetainedRegularCenter
 public import FLT.Mazur.WeierstrassRootShearParameterCoefficient
 public import FLT.Mazur.WeierstrassRootShearSlopeInput
 public import FLT.Mazur.WeierstrassRootShearSmoothParameter
+public import FLT.Mazur.WeierstrassRootShearSmoothSpecialization
 public import FLT.Mazur.WeierstrassRootShearTorusReflection
 public import FLT.Mazur.WeierstrassRootShearUnitAddition
 public import FLT.Mazur.WeierstrassRootShearUnitNaturality
