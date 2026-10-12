@@ -3576,6 +3576,7 @@ public import FLT.Mazur.CyclicHomAuxiliaryScheme
 public import FLT.Mazur.CyclicHomDivisorFppfCoverage
 public import FLT.Mazur.CyclicHomDivisorProduct
 public import FLT.Mazur.CyclicHomMultiplicationEquation
+public import FLT.Mazur.CyclicHomMultiplicationLocus
 public import FLT.Mazur.CyclicHomSourceDivisor
 public import FLT.Mazur.CyclicHomSubgroupVanishingChart
 public import FLT.Mazur.CyclicMarkingDivisorTransport
