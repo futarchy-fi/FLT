@@ -7427,6 +7427,7 @@ public import FLT.Mazur.ProperSectionAffineCoverCartier
 public import FLT.Mazur.ProperSectionGluing
 public import FLT.Mazur.ProperSectionSplittingCriterion
 public import FLT.Mazur.ProperSmoothAffineFunctions
+public import FLT.Mazur.ProperSmoothAffineTargetRigidity
 public import FLT.Mazur.ProperSmoothBaseLocus
 public import FLT.Mazur.ProperSmoothConnectedFiberOpen
 public import FLT.Mazur.ProperSmoothGenericFiberOpen
