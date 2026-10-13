@@ -2740,6 +2740,7 @@ public import FLT.Mazur.AffineGeometricReconstructionCompatibility
 public import FLT.Mazur.AffineGeometricRefinementData
 public import FLT.Mazur.AffineGeometricTensorCocycle
 public import FLT.Mazur.AffineGeometricTensorDatum
+public import FLT.Mazur.AffineHilbertCartesianEnvelope
 public import FLT.Mazur.AffineHilbertChartRelation
 public import FLT.Mazur.AffineHilbertComposableEnvelope
 public import FLT.Mazur.AffineHilbertCompositionCharts
@@ -2754,11 +2755,15 @@ public import FLT.Mazur.AffineHilbertFixedBaseQuotientIso
 public import FLT.Mazur.AffineHilbertFixedBaseRelation
 public import FLT.Mazur.AffineHilbertFixedBaseRelationInverse
 public import FLT.Mazur.AffineHilbertFullRelationRestriction
+public import FLT.Mazur.AffineHilbertInvariantEnvelope
+public import FLT.Mazur.AffineHilbertInvariantPrincipalEffectiveness
+public import FLT.Mazur.AffineHilbertInvariantPrincipalProduct
 public import FLT.Mazur.AffineHilbertLocalTensorInvariants
 public import FLT.Mazur.AffineHilbertLocalizedCoefficients
 public import FLT.Mazur.AffineHilbertLocalizedComposition
 public import FLT.Mazur.AffineHilbertLocalizedCounit
 public import FLT.Mazur.AffineHilbertLocalizedTensorFormula
+public import FLT.Mazur.AffineHilbertNestedRestriction
 public import FLT.Mazur.AffineHilbertPrincipalTensorModel
 public import FLT.Mazur.AffineHilbertRelationNeighborhoods
 public import FLT.Mazur.AffineHilbertRelationOperations
@@ -6008,6 +6013,8 @@ public import FLT.Mazur.OrderedHilbertFaithfulBaseComparison
 public import FLT.Mazur.OrderedHilbertFaithfulChartComparison
 public import FLT.Mazur.OrderedHilbertFaithfulChartProjection
 public import FLT.Mazur.OrderedHilbertFaithfulClass
+public import FLT.Mazur.OrderedHilbertFaithfulEnvelope
+public import FLT.Mazur.OrderedHilbertFaithfulEnvelopeIso
 public import FLT.Mazur.OrderedHilbertFaithfulInvariantCoefficients
 public import FLT.Mazur.OrderedHilbertFaithfulOrbitCover
 public import FLT.Mazur.OrderedHilbertFaithfulParameter
@@ -7858,6 +7865,7 @@ public import FLT.Mazur.SchemeModulePullbackUnits
 public import FLT.Mazur.SchemeNilpotentSectionDetection
 public import FLT.Mazur.SchemeNormalizedRecoveryOverlap
 public import FLT.Mazur.SchemeOpenChartRange
+public import FLT.Mazur.SchemeOpenEnvelopeDenominators
 public import FLT.Mazur.SchemeOpenPushoutCharts
 public import FLT.Mazur.SchemeOpenPushoutCoverIso
 public import FLT.Mazur.SchemeOpenPushoutIntersection
@@ -7916,6 +7924,7 @@ public import FLT.Mazur.SchemeReducedStructureSheaf
 public import FLT.Mazur.SchemeRefinementReconstruction
 public import FLT.Mazur.SchemeRelationDoubleRestriction
 public import FLT.Mazur.SchemeRelationFunctionDescent
+public import FLT.Mazur.SchemeRelationInvariantEnvelope
 public import FLT.Mazur.SchemeRelationInvariantRestriction
 public import FLT.Mazur.SchemeRelationIsoInvariants
 public import FLT.Mazur.SchemeRelationLocalFunctionDescent
