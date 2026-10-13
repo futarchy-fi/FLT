@@ -6514,6 +6514,7 @@ public import FLT.Mazur.PolygonCompleteMarkedProjectivePoints
 public import FLT.Mazur.PolygonCompleteMarkedSectionTransport
 public import FLT.Mazur.PolygonCompleteMarkedStageComparison
 public import FLT.Mazur.PolygonCompleteMarkingAmple
+public import FLT.Mazur.PolygonCompleteMarkingAtlasRecovery
 public import FLT.Mazur.PolygonCompleteMarkingCartier
 public import FLT.Mazur.PolygonCompleteMarkingDescent
 public import FLT.Mazur.PolygonCompleteMarkingDivisor
