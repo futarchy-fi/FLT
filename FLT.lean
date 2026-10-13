@@ -8810,6 +8810,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearRetainedScaleOneConic
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedStage
 public import FLT.Mazur.WeierstrassCoefficientShearRootChange
 public import FLT.Mazur.WeierstrassCoefficientShearRootEqualityComponent
+public import FLT.Mazur.WeierstrassCoefficientShearRootEqualityHomExt
 public import FLT.Mazur.WeierstrassCoefficientShearRootEqualityOriginal
 public import FLT.Mazur.WeierstrassCoefficientShearRootFinalAdjacent
 public import FLT.Mazur.WeierstrassCoefficientShearRootFinalBranches
