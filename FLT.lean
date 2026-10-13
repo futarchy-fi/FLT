@@ -2766,6 +2766,7 @@ public import FLT.Mazur.AffineHilbertFiniteBranchInvariants
 public import FLT.Mazur.AffineHilbertFiniteBranches
 public import FLT.Mazur.AffineHilbertFiniteFiberPrincipal
 public import FLT.Mazur.AffineHilbertFiniteFreeGroundBase
+public import FLT.Mazur.AffineHilbertFiniteFullBranchCover
 public import FLT.Mazur.AffineHilbertFiniteGroundBaseRefinement
 public import FLT.Mazur.AffineHilbertFixedBaseEnvelope
 public import FLT.Mazur.AffineHilbertFixedBaseQuotient
