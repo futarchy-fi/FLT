@@ -6827,6 +6827,7 @@ public import FLT.Mazur.PolygonRotationNoFixedPoints
 public import FLT.Mazur.PolygonRotationScalars
 public import FLT.Mazur.PolygonScalarReflectionRelations
 public import FLT.Mazur.PolygonScaledReciprocal
+public import FLT.Mazur.PolygonScalingMarkingLine
 public import FLT.Mazur.PolygonScalingNaturality
 public import FLT.Mazur.PolygonSectionRingFunctor
 public import FLT.Mazur.PolygonSeparated
