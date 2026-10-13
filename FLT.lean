@@ -6226,6 +6226,7 @@ public import FLT.Mazur.OriginalTwistLineOrbits
 public import FLT.Mazur.OriginalTwistOrbitRelation
 public import FLT.Mazur.OriginalTwistSectionCoherence
 public import FLT.Mazur.OverCoproductModuleSections
+public import FLT.Mazur.OverCoproductSchemeDescent
 public import FLT.Mazur.OverOpenCoverExt
 public import FLT.Mazur.OverOpenCoverImage
 public import FLT.Mazur.OverOpenImageUnion
