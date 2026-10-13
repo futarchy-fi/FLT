@@ -6471,6 +6471,7 @@ public import FLT.Mazur.PolygonCompleteBoundaryMultiplication
 public import FLT.Mazur.PolygonCompleteBoundaryNode
 public import FLT.Mazur.PolygonCompleteBoundaryNormalization
 public import FLT.Mazur.PolygonCompleteBoundaryOriginalFiber
+public import FLT.Mazur.PolygonCompleteBoundaryOriginalRefinement
 public import FLT.Mazur.PolygonCompleteBoundaryParameter
 public import FLT.Mazur.PolygonCompleteBoundaryProduct
 public import FLT.Mazur.PolygonCompleteBoundaryQuotient
