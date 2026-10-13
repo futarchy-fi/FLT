@@ -6685,6 +6685,7 @@ public import FLT.Mazur.PolygonCompleteSmoothDimensionOpen
 public import FLT.Mazur.PolygonCompleteSmoothFieldAction
 public import FLT.Mazur.PolygonCompleteSmoothFieldAtlas
 public import FLT.Mazur.PolygonCompleteSmoothFieldCoefficientCurve
+public import FLT.Mazur.PolygonCompleteSmoothFieldCoefficientGenerator
 public import FLT.Mazur.PolygonCompleteSmoothFieldCoefficientGroup
 public import FLT.Mazur.PolygonCompleteSmoothFieldCoefficientMarking
 public import FLT.Mazur.PolygonCompleteSmoothFieldCoefficientSubgroup
