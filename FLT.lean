@@ -2698,6 +2698,7 @@ public import FLT.Mazur.AffineEtaleFaithfulCoefficients
 public import FLT.Mazur.AffineEtaleFaithfulNeighborhood
 public import FLT.Mazur.AffineEtaleFaithfulSource
 public import FLT.Mazur.AffineEtaleFaithfulSpectrum
+public import FLT.Mazur.AffineEtaleFiniteBranch
 public import FLT.Mazur.AffineEtaleFiniteFaithfulRefinement
 public import FLT.Mazur.AffineEtaleFiniteFaithfulSpectrum
 public import FLT.Mazur.AffineEtaleFiniteFreeSpectrum
@@ -2755,6 +2756,8 @@ public import FLT.Mazur.AffineHilbertEnvelopeKernelPair
 public import FLT.Mazur.AffineHilbertEnvelopeOpenChart
 public import FLT.Mazur.AffineHilbertEnvelopeQuotient
 public import FLT.Mazur.AffineHilbertEnvelopeScheme
+public import FLT.Mazur.AffineHilbertFiniteBranchAtlas
+public import FLT.Mazur.AffineHilbertFiniteBranches
 public import FLT.Mazur.AffineHilbertFiniteFiberPrincipal
 public import FLT.Mazur.AffineHilbertFiniteFreeGroundBase
 public import FLT.Mazur.AffineHilbertFiniteGroundBaseRefinement
@@ -4181,6 +4184,7 @@ public import FLT.Mazur.EnlargedPresentationModel
 public import FLT.Mazur.EquifiberedGluingBaseChange
 public import FLT.Mazur.EquifiberedSchemeGluing
 public import FLT.Mazur.EtaleAffineSpaceDimension
+public import FLT.Mazur.EtaleAlgebraFiniteBranch
 public import FLT.Mazur.EtaleAlgebraReduced
 public import FLT.Mazur.EtaleAmpleCyclicLocalMarking
 public import FLT.Mazur.EtaleCartierGeneratorDistinct
@@ -4208,6 +4212,10 @@ public import FLT.Mazur.EtaleCyclicSmoothLocusNormalizedCoverage
 public import FLT.Mazur.EtaleCyclicSubgroupLocalPresentation
 public import FLT.Mazur.EtaleDimGe
 public import FLT.Mazur.EtaleDimLe
+public import FLT.Mazur.EtaleFiniteBranchAtlas
+public import FLT.Mazur.EtaleFiniteBranchEmbedding
+public import FLT.Mazur.EtaleFiniteBranchNeighborhood
+public import FLT.Mazur.EtaleFiniteBranchScheme
 public import FLT.Mazur.EtaleFiniteQuotientBranch
 public import FLT.Mazur.EtaleFiniteSupportCartier
 public import FLT.Mazur.EtaleLocalParameterIdeals
@@ -4285,6 +4293,7 @@ public import FLT.Mazur.FiniteDivisorComponentAvoidance
 public import FLT.Mazur.FiniteDivisorLengthAdditivity
 public import FLT.Mazur.FiniteDivisorLengthOne
 public import FLT.Mazur.FiniteDivisorRationalSupport
+public import FLT.Mazur.FiniteEtaleImageCover
 public import FLT.Mazur.FiniteEtaleWholeFiberNeighborhood
 public import FLT.Mazur.FiniteEvaluationLocus
 public import FLT.Mazur.FiniteFamilySupportBaseChange
@@ -7696,6 +7705,7 @@ public import FLT.Mazur.RelativeDimensionBaseChangeOpen
 public import FLT.Mazur.RelativeDirectImageComposition
 public import FLT.Mazur.RelativeDirectImageForgetting
 public import FLT.Mazur.RelativeDirectImageOpenResolution
+public import FLT.Mazur.RelativeEtaleFiniteBranchCover
 public import FLT.Mazur.RelativeFiberMorphism
 public import FLT.Mazur.RelativeFiberNakayama
 public import FLT.Mazur.RelativeFppfComparisonCover
