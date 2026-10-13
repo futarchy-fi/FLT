@@ -6690,6 +6690,7 @@ public import FLT.Mazur.PolygonCompleteSmoothFieldCurve
 public import FLT.Mazur.PolygonCompleteSmoothFieldCyclic
 public import FLT.Mazur.PolygonCompleteSmoothFieldGroup
 public import FLT.Mazur.PolygonCompleteSmoothFieldGroupHom
+public import FLT.Mazur.PolygonCompleteSmoothFieldMarkedSubgroup
 public import FLT.Mazur.PolygonCompleteSmoothFieldSubgroup
 public import FLT.Mazur.PolygonCompleteSmoothFieldTranslation
 public import FLT.Mazur.PolygonCompleteSmoothIrreducible
