@@ -2701,6 +2701,7 @@ public import FLT.Mazur.AffineEtaleFaithfulSpectrum
 public import FLT.Mazur.AffineEtaleFiniteFaithfulRefinement
 public import FLT.Mazur.AffineEtaleFiniteFaithfulSpectrum
 public import FLT.Mazur.AffineEtaleTranslationFiniteBranch
+public import FLT.Mazur.AffineEtaleTranslationNormCharts
 public import FLT.Mazur.AffineFaithfullyFlatEpimorphisms
 public import FLT.Mazur.AffineFaithfullyFlatMonomorphisms
 public import FLT.Mazur.AffineFaithfullyFlatPullbackFaithful
@@ -2883,6 +2884,7 @@ public import FLT.Mazur.AffinePieceSectionLocalization
 public import FLT.Mazur.AffinePreimageRestrictionPushout
 public import FLT.Mazur.AffineProductMap
 public import FLT.Mazur.AffineProductTensorCoordinates
+public import FLT.Mazur.AffineProductTranslationNorm
 public import FLT.Mazur.AffineProjectivePointLineCover
 public import FLT.Mazur.AffinePullbackCoefficientRecognition
 public import FLT.Mazur.AffinePullbackComparisonSections
@@ -4274,6 +4276,7 @@ public import FLT.Mazur.FiniteFlatIdealVanishingZero
 public import FLT.Mazur.FiniteFlatLocalIdealPresentation
 public import FLT.Mazur.FiniteFlatQuotientTrivialization
 public import FLT.Mazur.FiniteFlatSubschemeQuotient
+public import FLT.Mazur.FiniteFlatTranslationNormCharts
 public import FLT.Mazur.FiniteFreeAmbientChartRefinement
 public import FLT.Mazur.FiniteFreeChartGeneratorRestriction
 public import FLT.Mazur.FiniteFreeChartPointCompatibility
@@ -4304,6 +4307,10 @@ public import FLT.Mazur.FiniteFreeQuotientIdealPresentation
 public import FLT.Mazur.FiniteFreeRefinementPullback
 public import FLT.Mazur.FiniteFreeSectionLineTransport
 public import FLT.Mazur.FiniteFreeTensorSections
+public import FLT.Mazur.FiniteFreeTranslationNorm
+public import FLT.Mazur.FiniteFreeTranslationNormFiber
+public import FLT.Mazur.FiniteFreeTranslationNormNaturality
+public import FLT.Mazur.FiniteFreeTranslationNormNeighborhood
 public import FLT.Mazur.FiniteGeometricSections
 public import FLT.Mazur.FiniteGroupAffineNeighborhood
 public import FLT.Mazur.FiniteGroupAffineQuotient
@@ -8036,6 +8043,8 @@ public import FLT.Mazur.SchemeSectionFrameCompatibility
 public import FLT.Mazur.SchemeSectionFrameNormalization
 public import FLT.Mazur.SchemeSectionTransportNaturality
 public import FLT.Mazur.SchemeSourceTestOverlapRecognition
+public import FLT.Mazur.SchemeTranslationNormGluing
+public import FLT.Mazur.SchemeTranslationNormLocal
 public import FLT.Mazur.SchemeTripleOverlap
 public import FLT.Mazur.SchemeUnchangedOpen
 public import FLT.Mazur.SchemeUnchangedOpenComposition
