@@ -10493,6 +10493,7 @@ public import FLT.Mazur.WeierstrassNodalAdjacentIntersections
 public import FLT.Mazur.WeierstrassNodalDividedDepth
 public import FLT.Mazur.WeierstrassNodalDividedFamily
 public import FLT.Mazur.WeierstrassNodalInfinityShear
+public import FLT.Mazur.WeierstrassNodalInfinityShearOpen
 public import FLT.Mazur.WeierstrassNodalInfinityTangentUnit
 public import FLT.Mazur.WeierstrassNodalResidueCharts
 public import FLT.Mazur.WeierstrassNodalResidueContraction
