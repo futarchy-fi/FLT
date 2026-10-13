@@ -2754,6 +2754,7 @@ public import FLT.Mazur.AffineHilbertCartesianEnvelope
 public import FLT.Mazur.AffineHilbertChartRelation
 public import FLT.Mazur.AffineHilbertClosedPatchRefinement
 public import FLT.Mazur.AffineHilbertClosedPatchSource
+public import FLT.Mazur.AffineHilbertClosedRefinementRelation
 public import FLT.Mazur.AffineHilbertComposableEnvelope
 public import FLT.Mazur.AffineHilbertCompositionCharts
 public import FLT.Mazur.AffineHilbertCompositionFiniteBranches
