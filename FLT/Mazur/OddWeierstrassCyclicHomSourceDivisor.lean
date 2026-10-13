@@ -7,7 +7,6 @@ module
 
 public import FLT.Mazur.OddWeierstrassCyclicHomAuxiliaryScheme
 public import FLT.Mazur.CyclicMarkingOrbitDivisor
-public import FLT.Mazur.UniversalWeierstrassCyclicSourceModuli
 public import FLT.Mazur.GroupMarkingBaseChange
 
 /-!
