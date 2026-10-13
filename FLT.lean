@@ -7638,6 +7638,7 @@ public import FLT.Mazur.RelativeGenusOnePoleReduction
 public import FLT.Mazur.RelativeGenusOneProjectiveIso
 public import FLT.Mazur.RelativeGenusOneProjectiveSections
 public import FLT.Mazur.RelativeGenusOneUnrestrictedAffineCubicMorphism
+public import FLT.Mazur.RelativeGenusOneUnrestrictedAffineIso
 public import FLT.Mazur.RelativeGenusOneUnrestrictedAffineLowPoles
 public import FLT.Mazur.RelativeGenusOneUnrestrictedAllPoleBasis
 public import FLT.Mazur.RelativeGenusOneUnrestrictedCanonicalBasis
