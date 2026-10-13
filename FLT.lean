@@ -8456,6 +8456,7 @@ public import FLT.Mazur.SchemeRelationInvariantAffineUniversal
 public import FLT.Mazur.SchemeRelationInvariantDomainIso
 public import FLT.Mazur.SchemeRelationInvariantDominant
 public import FLT.Mazur.SchemeRelationInvariantEnvelope
+public import FLT.Mazur.SchemeRelationInvariantFunctorial
 public import FLT.Mazur.SchemeRelationInvariantRestriction
 public import FLT.Mazur.SchemeRelationInvariantSpectrum
 public import FLT.Mazur.SchemeRelationInvariantTestEquality
