@@ -8043,6 +8043,7 @@ public import FLT.Mazur.SchemeSectionFrameCompatibility
 public import FLT.Mazur.SchemeSectionFrameNormalization
 public import FLT.Mazur.SchemeSectionTransportNaturality
 public import FLT.Mazur.SchemeSourceTestOverlapRecognition
+public import FLT.Mazur.SchemeTranslationNormLocal
 public import FLT.Mazur.SchemeTripleOverlap
 public import FLT.Mazur.SchemeUnchangedOpen
 public import FLT.Mazur.SchemeUnchangedOpenComposition
