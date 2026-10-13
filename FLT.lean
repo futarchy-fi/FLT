@@ -5940,6 +5940,7 @@ public import FLT.Mazur.MonicIdealNormalForms
 public import FLT.Mazur.MonoFamilySchemeGluing
 public import FLT.Mazur.MonoidalActionSpecialization
 public import FLT.Mazur.MonomorphismGenericStratum
+public import FLT.Mazur.MonomorphismStratumOverlap
 public import FLT.Mazur.MultiplicativeGroupDimension
 public import FLT.Mazur.MultiplicativeGroupFieldExtension
 public import FLT.Mazur.MultiplicativeGroupScheme
