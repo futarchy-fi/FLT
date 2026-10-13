@@ -6829,6 +6829,7 @@ public import FLT.Mazur.PolygonParameterMarkingBaseChange
 public import FLT.Mazur.PolygonParameterMarkingLine
 public import FLT.Mazur.PolygonParameterMarkingMultiplication
 public import FLT.Mazur.PolygonParameterMarkingOriginal
+public import FLT.Mazur.PolygonParameterNormalizationBranches
 public import FLT.Mazur.PolygonParameterNormalizationLine
 public import FLT.Mazur.PolygonParameterProjectionComposition
 public import FLT.Mazur.PolygonParameterTranslation
