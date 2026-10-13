@@ -7619,6 +7619,7 @@ public import FLT.Mazur.RelativeGenusOneProjectiveIso
 public import FLT.Mazur.RelativeGenusOneProjectiveSections
 public import FLT.Mazur.RelativeGenusOneUnrestrictedCanonicalLine
 public import FLT.Mazur.RelativeGenusOneUnrestrictedPointLine
+public import FLT.Mazur.RelativeGenusOneUnrestrictedPointPowers
 public import FLT.Mazur.RelativeIdealAmbientHom
 public import FLT.Mazur.RelativeIdealAmbientIsoSquare
 public import FLT.Mazur.RelativeIdealAmbientPullback
