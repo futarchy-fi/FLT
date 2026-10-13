@@ -7643,6 +7643,7 @@ public import FLT.Mazur.RelativeGenusOneUnrestrictedCanonicalConstants
 public import FLT.Mazur.RelativeGenusOneUnrestrictedCanonicalLine
 public import FLT.Mazur.RelativeGenusOneUnrestrictedChangedBasis
 public import FLT.Mazur.RelativeGenusOneUnrestrictedComplementCoordinates
+public import FLT.Mazur.RelativeGenusOneUnrestrictedComplementEquation
 public import FLT.Mazur.RelativeGenusOneUnrestrictedComplementMonomials
 public import FLT.Mazur.RelativeGenusOneUnrestrictedCubicRelation
 public import FLT.Mazur.RelativeGenusOneUnrestrictedFramedProducts
