@@ -6178,6 +6178,7 @@ public import FLT.Mazur.OrderedHilbertBaseOpenChart
 public import FLT.Mazur.OrderedHilbertBaseOpenEffectiveQuotient
 public import FLT.Mazur.OrderedHilbertBaseOpenImmersion
 public import FLT.Mazur.OrderedHilbertBaseOpenRelation
+public import FLT.Mazur.OrderedHilbertChartEtalePresentation
 public import FLT.Mazur.OrderedHilbertChartFullEquivalence
 public import FLT.Mazur.OrderedHilbertChartFullRelation
 public import FLT.Mazur.OrderedHilbertChartInvariantComparison
