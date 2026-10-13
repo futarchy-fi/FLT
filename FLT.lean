@@ -2799,6 +2799,7 @@ public import FLT.Mazur.AffineHilbertLocalizedTensorFormula
 public import FLT.Mazur.AffineHilbertMonicTranslation
 public import FLT.Mazur.AffineHilbertNestedRestriction
 public import FLT.Mazur.AffineHilbertNoetherianRelation
+public import FLT.Mazur.AffineHilbertPrincipalInvariants
 public import FLT.Mazur.AffineHilbertPrincipalTensorModel
 public import FLT.Mazur.AffineHilbertRelationNeighborhoods
 public import FLT.Mazur.AffineHilbertRelationOperations
