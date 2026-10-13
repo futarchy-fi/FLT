@@ -8693,6 +8693,7 @@ public import FLT.Mazur.SmoothTranslationSectionNaturality
 public import FLT.Mazur.SmoothTranslationSectionRestriction
 public import FLT.Mazur.SpecCartesianAlgebraPushout
 public import FLT.Mazur.SpecChartIdealPreimage
+public import FLT.Mazur.SpecGenericFlatOpen
 public import FLT.Mazur.SpectrumFieldCohomologyCoordinates
 public import FLT.Mazur.SpectrumRingCohomologyCoordinates
 public import FLT.Mazur.SpectrumSmoothFiniteFlatCartier
