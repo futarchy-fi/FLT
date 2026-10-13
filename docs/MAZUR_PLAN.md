@@ -2445,6 +2445,18 @@ These are proved compatibilities for the forthcoming global reciprocal
 relation; they do not assume or establish that relation, the mixed relation,
 or any of the three remaining arithmetic inputs.
 
+### Global reciprocal involution (2026-10-13)
+
+`CubicLegendreReciprocalInvolution` lifts parameter inversion by sending the
+distinguished root to its inverse. Its return coordinate scaling gives an
+involutive local cyclic map. `legendreReciprocalCoverCyclicMap_comparison`
+identifies it with the actual global reciprocal automorphism after projection;
+`legendreReciprocalCyclicAut_square` cancels that epimorphic projection and
+proves the global square is identity. No new compatibility is assumed.
+Both global involutions are now proved. The mixed global relation, the finite
+group action and its modular quotient still remain, as do the compactification,
+cusps, Jacobian/Eisenstein and arithmetic inputs described above.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:

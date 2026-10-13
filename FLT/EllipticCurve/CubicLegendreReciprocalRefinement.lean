@@ -14,9 +14,9 @@ containing the required root. Applying this to the reciprocal root comparison
 identifies the actual descended return map on the original Legendre root cover.
 Its coordinate scaling uses the inverse of the original distinguished root.
 
-This is the return factorization needed to compare a local semilinear
-reciprocal with the global automorphism. The global reciprocal square
-and mixed relation are not proved in this module.
+CubicLegendreReciprocalInvolution uses this factorization to compare the
+local semilinear reciprocal with the global automorphism and prove its square
+identity. The mixed relation remains separate.
 -/
 
 @[expose] public noncomputable section

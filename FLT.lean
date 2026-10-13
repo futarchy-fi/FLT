@@ -250,6 +250,7 @@ public import FLT.EllipticCurve.CubicLegendreMonic
 public import FLT.EllipticCurve.CubicLegendreParameterSymmetries
 public import FLT.EllipticCurve.CubicLegendreParameters
 public import FLT.EllipticCurve.CubicLegendreReciprocalCover
+public import FLT.EllipticCurve.CubicLegendreReciprocalInvolution
 public import FLT.EllipticCurve.CubicLegendreReciprocalRefinement
 public import FLT.EllipticCurve.CubicLegendreReciprocalReturn
 public import FLT.EllipticCurve.CubicLegendreSign
