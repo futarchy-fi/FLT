@@ -5938,6 +5938,7 @@ public import FLT.Mazur.OddWeierstrassAuxiliaryTorsionSections
 public import FLT.Mazur.OddWeierstrassGeometricLevelThree
 public import FLT.Mazur.OddWeierstrassNormalizationCurve
 public import FLT.Mazur.OddWeierstrassNormalizationGroup
+public import FLT.Mazur.OddWeierstrassNormalizationSubgroup
 public import FLT.Mazur.OddWeierstrassNormalizedCoefficient
 public import FLT.Mazur.OddWeierstrassNormalizedFamilyPoint
 public import FLT.Mazur.OddWeierstrassNormalizedMarking
