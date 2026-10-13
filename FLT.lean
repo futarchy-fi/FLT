@@ -3623,6 +3623,7 @@ public import FLT.Mazur.CyclicHomNormalizedModuli
 public import FLT.Mazur.CyclicHomProperPresentationInvariant
 public import FLT.Mazur.CyclicHomRelabelAuxiliaryMarking
 public import FLT.Mazur.CyclicHomRelabelCurve
+public import FLT.Mazur.CyclicHomRelabelNormalization
 public import FLT.Mazur.CyclicHomRelabelParameter
 public import FLT.Mazur.CyclicHomRelabelSubgroup
 public import FLT.Mazur.CyclicHomRelabeledNormalizationIso
