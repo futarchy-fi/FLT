@@ -5575,6 +5575,7 @@ public import FLT.Mazur.LinePowerSectionLimitDescent
 public import FLT.Mazur.LinePullbackAdjunction
 public import FLT.Mazur.LinePullbackIsomorphisms
 public import FLT.Mazur.LinePullbackRestriction
+public import FLT.Mazur.LinePullbackTriangleSource
 public import FLT.Mazur.LineRecoveryPullback
 public import FLT.Mazur.LineRestrictionHZero
 public import FLT.Mazur.LineRestrictionHZeroFrames
@@ -5899,6 +5900,7 @@ public import FLT.Mazur.ModuleTildeLocalFrames
 public import FLT.Mazur.ModuleUnitCocycleCongr
 public import FLT.Mazur.ModuleUnitCocyclePullback
 public import FLT.Mazur.MonoFamilySchemeGluing
+public import FLT.Mazur.MonoidalActionSpecialization
 public import FLT.Mazur.MultiplicativeGroupDimension
 public import FLT.Mazur.MultiplicativeGroupFieldExtension
 public import FLT.Mazur.MultiplicativeGroupScheme
@@ -6535,6 +6537,8 @@ public import FLT.Mazur.PolygonCompleteMarkedStageComparison
 public import FLT.Mazur.PolygonCompleteMarkingAmple
 public import FLT.Mazur.PolygonCompleteMarkingAtlasRecovery
 public import FLT.Mazur.PolygonCompleteMarkingCartier
+public import FLT.Mazur.PolygonCompleteMarkingCoverCoherence
+public import FLT.Mazur.PolygonCompleteMarkingDescendedTest
 public import FLT.Mazur.PolygonCompleteMarkingDescent
 public import FLT.Mazur.PolygonCompleteMarkingDivisor
 public import FLT.Mazur.PolygonCompleteMarkingEffectiveDescent
@@ -6548,6 +6552,7 @@ public import FLT.Mazur.PolygonCompleteMarkingSectionDescent
 public import FLT.Mazur.PolygonCompleteMarkingSectionModel
 public import FLT.Mazur.PolygonCompleteMarkingSpecialization
 public import FLT.Mazur.PolygonCompleteMarkingTestLine
+public import FLT.Mazur.PolygonCompleteMarkingTripleCoherence
 public import FLT.Mazur.PolygonCompleteMarkingUniqueness
 public import FLT.Mazur.PolygonCompleteNodeAffineCotangentRank
 public import FLT.Mazur.PolygonCompleteNodeAffineIdeal
@@ -6828,10 +6833,15 @@ public import FLT.Mazur.PolygonOriginalNeighborhoodTransition
 public import FLT.Mazur.PolygonOriginalNodeClosed
 public import FLT.Mazur.PolygonOriginalNodePoint
 public import FLT.Mazur.PolygonOriginalStageAdicSquare
+public import FLT.Mazur.PolygonParameterMarkingBaseChange
 public import FLT.Mazur.PolygonParameterMarkingLine
+public import FLT.Mazur.PolygonParameterMarkingMultiplication
 public import FLT.Mazur.PolygonParameterMarkingOriginal
+public import FLT.Mazur.PolygonParameterNormalizationBranches
+public import FLT.Mazur.PolygonParameterNormalizationLine
 public import FLT.Mazur.PolygonParameterProjectionComposition
 public import FLT.Mazur.PolygonParameterTranslation
+public import FLT.Mazur.PolygonParameterTranslationBaseChange
 public import FLT.Mazur.PolygonParameterTranslationOriginal
 public import FLT.Mazur.PolygonParameterizedHomExt
 public import FLT.Mazur.PolygonPinchingAffineBaseChange
@@ -9286,8 +9296,12 @@ public import FLT.Mazur.WeierstrassCoefficientShearResidueTangentConjugation
 public import FLT.Mazur.WeierstrassCoefficientShearResidueTerminal
 public import FLT.Mazur.WeierstrassCoefficientShearResidueTerminalDescent
 public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroAdjacentEndpoints
+public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroAtlasAdjacentBoundary
 public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroAtlasCoconeMaps
+public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroAtlasLines
 public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroAtlasStructure
+public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroAtlasTerminalBoundary
+public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroAtlasTerminalPullback
 public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroCycleEndpoints
 public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroCycleNodes
 public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroEqualityCoproduct
@@ -9296,6 +9310,8 @@ public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroEqualityReflection
 public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroExteriorAffine
 public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroExteriorCoconeMaps
 public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroExteriorEndpoints
+public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroFirstAdjacentBoundary
+public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroFirstAdjacentPullback
 public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroFirstCoconeDescent
 public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroFirstExterior
 public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroInfinityBoundary
@@ -9306,8 +9322,10 @@ public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroInitialProjection
 public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroInitialPullbacks
 public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroInteriorDescent
 public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroLengthTwoCoconeDescent
+public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroPositiveAdjacentPullback
 public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroRetainedCoconeMaps
 public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroRetainedInfinity
+public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroRetainedPullbacks
 public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroSourceReflection
 public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroTerminalDescent
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedAttachments
@@ -9376,6 +9394,8 @@ public import FLT.Mazur.WeierstrassCoefficientShearRootZeroNormalization
 public import FLT.Mazur.WeierstrassCoefficientShearRootZeroPinching
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOne
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneAdjacentAction
+public import FLT.Mazur.WeierstrassCoefficientShearScaleOneAdjacentAtlasPullback
+public import FLT.Mazur.WeierstrassCoefficientShearScaleOneAdjacentBoundaryDescent
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneAdjacentIntersection
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneAdjacentTransition
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneComponentRootChange
