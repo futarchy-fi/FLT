@@ -2698,6 +2698,7 @@ public import FLT.Mazur.AffineEtaleFaithfulCoefficients
 public import FLT.Mazur.AffineEtaleFaithfulNeighborhood
 public import FLT.Mazur.AffineEtaleFaithfulSource
 public import FLT.Mazur.AffineEtaleFaithfulSpectrum
+public import FLT.Mazur.AffineEtaleFiniteBranch
 public import FLT.Mazur.AffineEtaleFiniteFaithfulRefinement
 public import FLT.Mazur.AffineEtaleFiniteFaithfulSpectrum
 public import FLT.Mazur.AffineEtaleFiniteFreeSpectrum
@@ -2755,6 +2756,8 @@ public import FLT.Mazur.AffineHilbertEnvelopeKernelPair
 public import FLT.Mazur.AffineHilbertEnvelopeOpenChart
 public import FLT.Mazur.AffineHilbertEnvelopeQuotient
 public import FLT.Mazur.AffineHilbertEnvelopeScheme
+public import FLT.Mazur.AffineHilbertFiniteBranchAtlas
+public import FLT.Mazur.AffineHilbertFiniteBranches
 public import FLT.Mazur.AffineHilbertFiniteFiberPrincipal
 public import FLT.Mazur.AffineHilbertFiniteFreeGroundBase
 public import FLT.Mazur.AffineHilbertFiniteGroundBaseRefinement
@@ -3760,6 +3763,7 @@ public import FLT.Mazur.DivisorComplementLeadingProduct
 public import FLT.Mazur.DivisorComplementLinear
 public import FLT.Mazur.DivisorComplementSectionRatios
 public import FLT.Mazur.DivisorComponentDegree
+public import FLT.Mazur.DivisorEmptyLinePullback
 public import FLT.Mazur.DivisorFunctionalScalar
 public import FLT.Mazur.DivisorIdealEvaluation
 public import FLT.Mazur.DivisorIdealFunctionalSection
@@ -4181,6 +4185,7 @@ public import FLT.Mazur.EnlargedPresentationModel
 public import FLT.Mazur.EquifiberedGluingBaseChange
 public import FLT.Mazur.EquifiberedSchemeGluing
 public import FLT.Mazur.EtaleAffineSpaceDimension
+public import FLT.Mazur.EtaleAlgebraFiniteBranch
 public import FLT.Mazur.EtaleAlgebraReduced
 public import FLT.Mazur.EtaleAmpleCyclicLocalMarking
 public import FLT.Mazur.EtaleCartierGeneratorDistinct
@@ -4208,6 +4213,10 @@ public import FLT.Mazur.EtaleCyclicSmoothLocusNormalizedCoverage
 public import FLT.Mazur.EtaleCyclicSubgroupLocalPresentation
 public import FLT.Mazur.EtaleDimGe
 public import FLT.Mazur.EtaleDimLe
+public import FLT.Mazur.EtaleFiniteBranchAtlas
+public import FLT.Mazur.EtaleFiniteBranchEmbedding
+public import FLT.Mazur.EtaleFiniteBranchNeighborhood
+public import FLT.Mazur.EtaleFiniteBranchScheme
 public import FLT.Mazur.EtaleFiniteQuotientBranch
 public import FLT.Mazur.EtaleFiniteSupportCartier
 public import FLT.Mazur.EtaleLocalParameterIdeals
@@ -4285,6 +4294,7 @@ public import FLT.Mazur.FiniteDivisorComponentAvoidance
 public import FLT.Mazur.FiniteDivisorLengthAdditivity
 public import FLT.Mazur.FiniteDivisorLengthOne
 public import FLT.Mazur.FiniteDivisorRationalSupport
+public import FLT.Mazur.FiniteEtaleImageCover
 public import FLT.Mazur.FiniteEtaleWholeFiberNeighborhood
 public import FLT.Mazur.FiniteEvaluationLocus
 public import FLT.Mazur.FiniteFamilySupportBaseChange
@@ -6507,11 +6517,14 @@ public import FLT.Mazur.PolygonCompleteMarkingAmple
 public import FLT.Mazur.PolygonCompleteMarkingCartier
 public import FLT.Mazur.PolygonCompleteMarkingDivisor
 public import FLT.Mazur.PolygonCompleteMarkingLineBaseChange
+public import FLT.Mazur.PolygonCompleteMarkingLineCocycle
+public import FLT.Mazur.PolygonCompleteMarkingLineTransition
 public import FLT.Mazur.PolygonCompleteMarkingNaturality
 public import FLT.Mazur.PolygonCompleteMarkingPowerCoherence
 public import FLT.Mazur.PolygonCompleteMarkingRotation
 public import FLT.Mazur.PolygonCompleteMarkingSectionModel
 public import FLT.Mazur.PolygonCompleteMarkingSpecialization
+public import FLT.Mazur.PolygonCompleteMarkingTestLine
 public import FLT.Mazur.PolygonCompleteMarkingUniqueness
 public import FLT.Mazur.PolygonCompleteNodeAffineCotangentRank
 public import FLT.Mazur.PolygonCompleteNodeAffineIdeal
@@ -6694,6 +6707,7 @@ public import FLT.Mazur.PolygonLineNormalization
 public import FLT.Mazur.PolygonMarkedScaling
 public import FLT.Mazur.PolygonMarkedSections
 public import FLT.Mazur.PolygonMarkingAffineNeighborhood
+public import FLT.Mazur.PolygonMarkingBaseChange
 public import FLT.Mazur.PolygonMarkingNodeLine
 public import FLT.Mazur.PolygonMarkingNormalizationLine
 public import FLT.Mazur.PolygonMultipleCoefficientProjMap
@@ -6712,6 +6726,7 @@ public import FLT.Mazur.PolygonMultipleVeroneseStructuralMap
 public import FLT.Mazur.PolygonMultipleVeroneseUnitEvaluation
 public import FLT.Mazur.PolygonNodalCore
 public import FLT.Mazur.PolygonNodeAffineCharts
+public import FLT.Mazur.PolygonNodeBaseChangeLine
 public import FLT.Mazur.PolygonNodeBranchIntersection
 public import FLT.Mazur.PolygonNodeBranches
 public import FLT.Mazur.PolygonNodeChartNeighborhood
@@ -6734,6 +6749,8 @@ public import FLT.Mazur.PolygonNodeScalarExtension
 public import FLT.Mazur.PolygonNodeScaling
 public import FLT.Mazur.PolygonNodesClosed
 public import FLT.Mazur.PolygonNormalizationAlgebra
+public import FLT.Mazur.PolygonNormalizationBaseChangeLine
+public import FLT.Mazur.PolygonNormalizationBranchBaseChange
 public import FLT.Mazur.PolygonNormalizationComplex
 public import FLT.Mazur.PolygonNormalizationDominant
 public import FLT.Mazur.PolygonNormalizationExact
@@ -6741,6 +6758,7 @@ public import FLT.Mazur.PolygonNormalizationFinite
 public import FLT.Mazur.PolygonNormalizationHOne
 public import FLT.Mazur.PolygonNormalizationHZero
 public import FLT.Mazur.PolygonNormalizationLinearSections
+public import FLT.Mazur.PolygonNormalizationNodeBaseChange
 public import FLT.Mazur.PolygonNormalizationNodeLine
 public import FLT.Mazur.PolygonNormalizationSectionCompatibility
 public import FLT.Mazur.PolygonNormalizationSectionFamilies
@@ -6749,6 +6767,9 @@ public import FLT.Mazur.PolygonNormalizationTransport
 public import FLT.Mazur.PolygonOneGonCompletion
 public import FLT.Mazur.PolygonOneGonContraction
 public import FLT.Mazur.PolygonOneGonContractionBaseChange
+public import FLT.Mazur.PolygonOneGonContractionBaseChangeLine
+public import FLT.Mazur.PolygonOneGonContractionBaseChangePower
+public import FLT.Mazur.PolygonOneGonContractionCartierBaseChange
 public import FLT.Mazur.PolygonOneGonContractionDiagram
 public import FLT.Mazur.PolygonOneGonContractionFiber
 public import FLT.Mazur.PolygonOneGonContractionFiberCharts
@@ -6823,6 +6844,7 @@ public import FLT.Mazur.PolygonPuncturedCanonicalEquations
 public import FLT.Mazur.PolygonPureDimension
 public import FLT.Mazur.PolygonReciprocalEvaluation
 public import FLT.Mazur.PolygonRefinedClosedCharts
+public import FLT.Mazur.PolygonReflectionBaseChangeLine
 public import FLT.Mazur.PolygonReflectionFullFamily
 public import FLT.Mazur.PolygonReflectionLineInvolution
 public import FLT.Mazur.PolygonReflectionMarking
@@ -6933,6 +6955,7 @@ public import FLT.Mazur.PolygonStageVeroneseProj
 public import FLT.Mazur.PolygonStageVeroneseProjTransition
 public import FLT.Mazur.PolygonStageVeroneseTransition
 public import FLT.Mazur.PolygonStructureInclusion
+public import FLT.Mazur.PolygonTranslationBaseChangeLine
 public import FLT.Mazur.PolygonTranslationComposition
 public import FLT.Mazur.PolygonTranslationImages
 public import FLT.Mazur.PolygonTranslationLineCocycle
@@ -7681,10 +7704,12 @@ public import FLT.Mazur.RelativeAmpleRestriction
 public import FLT.Mazur.RelativeAmpleSectionComparison
 public import FLT.Mazur.RelativeCartier
 public import FLT.Mazur.RelativeCartierBaseChange
+public import FLT.Mazur.RelativeCartierBaseChangeComposition
 public import FLT.Mazur.RelativeCartierCurveFinite
 public import FLT.Mazur.RelativeCartierDivisorPullback
 public import FLT.Mazur.RelativeCartierIdealFamilyDescent
 public import FLT.Mazur.RelativeCartierIdealPullback
+public import FLT.Mazur.RelativeCartierMorphismBaseChange
 public import FLT.Mazur.RelativeCartierOriginalSquare
 public import FLT.Mazur.RelativeComparisonFiberIso
 public import FLT.Mazur.RelativeCoproductComponentPullback
@@ -7696,6 +7721,7 @@ public import FLT.Mazur.RelativeDimensionBaseChangeOpen
 public import FLT.Mazur.RelativeDirectImageComposition
 public import FLT.Mazur.RelativeDirectImageForgetting
 public import FLT.Mazur.RelativeDirectImageOpenResolution
+public import FLT.Mazur.RelativeEtaleFiniteBranchCover
 public import FLT.Mazur.RelativeFiberMorphism
 public import FLT.Mazur.RelativeFiberNakayama
 public import FLT.Mazur.RelativeFppfComparisonCover
