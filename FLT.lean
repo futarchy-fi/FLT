@@ -6023,6 +6023,7 @@ public import FLT.Mazur.OddWeierstrassCyclicHomNormalizedCoverageUnrestricted
 public import FLT.Mazur.OddWeierstrassCyclicHomRetainedPullback
 public import FLT.Mazur.OddWeierstrassCyclicHomSourceDivisor
 public import FLT.Mazur.OddWeierstrassCyclicHomSourceIdealPullback
+public import FLT.Mazur.OddWeierstrassCyclicHomSourceModuli
 public import FLT.Mazur.OddWeierstrassCyclicHomSourcePullback
 public import FLT.Mazur.OddWeierstrassCyclicHomSubgroupPullback
 public import FLT.Mazur.OddWeierstrassCyclicHomSubgroupVanishingChart
