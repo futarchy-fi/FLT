@@ -3780,6 +3780,7 @@ public import FLT.Mazur.DivisorLinePullback
 public import FLT.Mazur.DivisorLinePullbackComposition
 public import FLT.Mazur.DivisorLinePullbackIdentity
 public import FLT.Mazur.DivisorLinePullbackTransport
+public import FLT.Mazur.DivisorLineSectionCompatibility
 public import FLT.Mazur.DivisorLineSectionModel
 public import FLT.Mazur.DivisorPowerCanonicalSection
 public import FLT.Mazur.DivisorPowerComplementTransition
