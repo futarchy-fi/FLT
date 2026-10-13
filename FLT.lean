@@ -6454,6 +6454,7 @@ public import FLT.Mazur.PolygonCompleteBoundaryFactorization
 public import FLT.Mazur.PolygonCompleteBoundaryFiberLine
 public import FLT.Mazur.PolygonCompleteBoundaryLineComparison
 public import FLT.Mazur.PolygonCompleteBoundaryLocalComparison
+public import FLT.Mazur.PolygonCompleteBoundaryMultiplication
 public import FLT.Mazur.PolygonCompleteBoundaryParameter
 public import FLT.Mazur.PolygonCompleteBoundaryProduct
 public import FLT.Mazur.PolygonCompleteBoundaryQuotient
