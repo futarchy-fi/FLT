@@ -6508,6 +6508,7 @@ public import FLT.Mazur.PolygonCompleteMarkingAmple
 public import FLT.Mazur.PolygonCompleteMarkingCartier
 public import FLT.Mazur.PolygonCompleteMarkingDivisor
 public import FLT.Mazur.PolygonCompleteMarkingLineBaseChange
+public import FLT.Mazur.PolygonCompleteMarkingLineCocycle
 public import FLT.Mazur.PolygonCompleteMarkingLineTransition
 public import FLT.Mazur.PolygonCompleteMarkingNaturality
 public import FLT.Mazur.PolygonCompleteMarkingPowerCoherence
