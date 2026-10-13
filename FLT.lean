@@ -10190,6 +10190,7 @@ public import FLT.Mazur.WeierstrassModificationXFullFiberDescent
 public import FLT.Mazur.WeierstrassModificationXFullFiberDescentCompatibility
 public import FLT.Mazur.WeierstrassModificationXFullFiberHomExt
 public import FLT.Mazur.WeierstrassModificationXFullFiberMarkedDescent
+public import FLT.Mazur.WeierstrassModificationXFullFiberProjectiveDescent
 public import FLT.Mazur.WeierstrassModificationXFullFiberPushout
 public import FLT.Mazur.WeierstrassModificationXFullNodeBranchCoordinates
 public import FLT.Mazur.WeierstrassModificationXFullNodeBranches
