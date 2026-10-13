@@ -6829,6 +6829,7 @@ public import FLT.Mazur.PolygonNodePresentation
 public import FLT.Mazur.PolygonNodeRingComparison
 public import FLT.Mazur.PolygonNodeScalarExtension
 public import FLT.Mazur.PolygonNodeScaling
+public import FLT.Mazur.PolygonNodeWholeBranchCover
 public import FLT.Mazur.PolygonNodesClosed
 public import FLT.Mazur.PolygonNormalizationAlgebra
 public import FLT.Mazur.PolygonNormalizationBaseChangeLine
