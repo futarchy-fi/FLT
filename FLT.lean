@@ -3760,6 +3760,7 @@ public import FLT.Mazur.DivisorComplementLeadingProduct
 public import FLT.Mazur.DivisorComplementLinear
 public import FLT.Mazur.DivisorComplementSectionRatios
 public import FLT.Mazur.DivisorComponentDegree
+public import FLT.Mazur.DivisorEmptyLinePullback
 public import FLT.Mazur.DivisorFunctionalScalar
 public import FLT.Mazur.DivisorIdealEvaluation
 public import FLT.Mazur.DivisorIdealFunctionalSection
