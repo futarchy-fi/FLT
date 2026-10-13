@@ -6203,6 +6203,7 @@ public import FLT.Mazur.OrderedHilbertIdentityRelationLift
 public import FLT.Mazur.OrderedHilbertIdentityRelationOperations
 public import FLT.Mazur.OrderedHilbertIdentitySchemeSource
 public import FLT.Mazur.OrderedHilbertIdentitySheafCoverage
+public import FLT.Mazur.OrderedHilbertOriginalTestCover
 public import FLT.Mazur.OrderedHilbertOriginalTestIntersection
 public import FLT.Mazur.OrderedHilbertOriginalTestLift
 public import FLT.Mazur.OrderedHilbertOriginalTestPullback
