@@ -6673,6 +6673,7 @@ public import FLT.Mazur.PolygonCompletePointNonsingular
 public import FLT.Mazur.PolygonCompletePointNormalizedPoles
 public import FLT.Mazur.PolygonCompletePointPoleFrame
 public import FLT.Mazur.PolygonCompletePointPoleFunctions
+public import FLT.Mazur.PolygonCompletePointPoleProducts
 public import FLT.Mazur.PolygonCompletePointPowerComparison
 public import FLT.Mazur.PolygonCompletePointPowerVanishing
 public import FLT.Mazur.PolygonCompletePointProjectiveExtension
