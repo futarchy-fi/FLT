@@ -5910,6 +5910,7 @@ public import FLT.Mazur.OccurrencePolynomialDataRelations
 public import FLT.Mazur.OccurrencePolynomialDataStages
 public import FLT.Mazur.OccurrenceQuotientInverseStages
 public import FLT.Mazur.OddWeierstrassAuxiliaryLevel
+public import FLT.Mazur.OddWeierstrassGeometricLevelThree
 public import FLT.Mazur.OneGonAffineCover
 public import FLT.Mazur.OneGonAffineNormalization
 public import FLT.Mazur.OneGonAffineNormalizationCoordinates
