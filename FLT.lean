@@ -2798,6 +2798,8 @@ public import FLT.Mazur.AffineHilbertLocalizedCounit
 public import FLT.Mazur.AffineHilbertLocalizedTensorFormula
 public import FLT.Mazur.AffineHilbertMonicTranslation
 public import FLT.Mazur.AffineHilbertNestedRestriction
+public import FLT.Mazur.AffineHilbertNoetherianRelation
+public import FLT.Mazur.AffineHilbertPrincipalInvariants
 public import FLT.Mazur.AffineHilbertPrincipalTensorModel
 public import FLT.Mazur.AffineHilbertRelationNeighborhoods
 public import FLT.Mazur.AffineHilbertRelationOperations
@@ -7145,6 +7147,7 @@ public import FLT.Mazur.PrincipalLocalizationGeneration
 public import FLT.Mazur.PrincipalLocalizationIntersection
 public import FLT.Mazur.PrincipalLocalizationPullback
 public import FLT.Mazur.PrincipalLocalizationSquare
+public import FLT.Mazur.PrincipalLocalizationTensor
 public import FLT.Mazur.PrincipalLocalizedKernelPaths
 public import FLT.Mazur.PrincipalModelBaseChange
 public import FLT.Mazur.PrincipalOccurrenceActualAtlasEquations
@@ -7991,6 +7994,7 @@ public import FLT.Mazur.RingEqualizerLocalDescent
 public import FLT.Mazur.RingEqualizerLocalization
 public import FLT.Mazur.RingEquivGrading
 public import FLT.Mazur.RingPairInvariantFlatScalars
+public import FLT.Mazur.RingPairInvariantLocalization
 public import FLT.Mazur.ScalarCohomology
 public import FLT.Mazur.ScalarCompatibleIntegerModel
 public import FLT.Mazur.ScalarEndomorphismPullback
@@ -8353,6 +8357,10 @@ public import FLT.Mazur.SchemeRelationLocalFunctionDescent
 public import FLT.Mazur.SchemeRelationOpenFunctionDescent
 public import FLT.Mazur.SchemeRelationOpenInvariantRings
 public import FLT.Mazur.SchemeRelationOverRestriction
+public import FLT.Mazur.SchemeRelationPrincipalFullInvariants
+public import FLT.Mazur.SchemeRelationPrincipalLocalization
+public import FLT.Mazur.SchemeRelationPrincipalSpectrum
+public import FLT.Mazur.SchemeRelationPrincipalTensorSections
 public import FLT.Mazur.SchemeRelationRestrictionComposition
 public import FLT.Mazur.SchemeRelationRestrictionRechart
 public import FLT.Mazur.SchemeRelationTensorAlgebra
