@@ -6193,6 +6193,7 @@ public import FLT.Mazur.OrderedHilbertIdentityOriginalRelation
 public import FLT.Mazur.OrderedHilbertIdentityOriginalSection
 public import FLT.Mazur.OrderedHilbertIdentityQuotientCover
 public import FLT.Mazur.OrderedHilbertIdentityRelationLift
+public import FLT.Mazur.OrderedHilbertIdentityRelationOperations
 public import FLT.Mazur.OrderedHilbertIdentitySchemeSource
 public import FLT.Mazur.OrderedHilbertSeparableGeometricCoverage
 public import FLT.Mazur.OrderedProjectiveHilbertNaturality
