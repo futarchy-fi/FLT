@@ -6781,6 +6781,7 @@ public import FLT.Mazur.PolygonSeparated
 public import FLT.Mazur.PolygonSeriesTowerAssembly
 public import FLT.Mazur.PolygonSeriesTowerDivision
 public import FLT.Mazur.PolygonSingleExceptionalMatching
+public import FLT.Mazur.PolygonSingleMarkingNotAmple
 public import FLT.Mazur.PolygonSinglePointEndpointScalars
 public import FLT.Mazur.PolygonSinglePointHZero
 public import FLT.Mazur.PolygonSinglePointHZeroCoordinates
