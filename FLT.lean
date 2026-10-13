@@ -6194,6 +6194,7 @@ public import FLT.Mazur.OrderedHilbertFaithfulRestrictedQuotient
 public import FLT.Mazur.OrderedHilbertFaithfulTestCover
 public import FLT.Mazur.OrderedHilbertIdentityComparisonCover
 public import FLT.Mazur.OrderedHilbertIdentityKernelPair
+public import FLT.Mazur.OrderedHilbertIdentityOriginalBaseSquare
 public import FLT.Mazur.OrderedHilbertIdentityOriginalRelation
 public import FLT.Mazur.OrderedHilbertIdentityOriginalSection
 public import FLT.Mazur.OrderedHilbertIdentityQuotientCover
