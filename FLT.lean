@@ -2763,6 +2763,7 @@ public import FLT.Mazur.AffineHilbertLocalizedCoefficients
 public import FLT.Mazur.AffineHilbertLocalizedComposition
 public import FLT.Mazur.AffineHilbertLocalizedCounit
 public import FLT.Mazur.AffineHilbertLocalizedTensorFormula
+public import FLT.Mazur.AffineHilbertMonicTranslation
 public import FLT.Mazur.AffineHilbertNestedRestriction
 public import FLT.Mazur.AffineHilbertPrincipalTensorModel
 public import FLT.Mazur.AffineHilbertRelationNeighborhoods
@@ -2784,6 +2785,12 @@ public import FLT.Mazur.AffineHilbertTensorMixedComposition
 public import FLT.Mazur.AffineHilbertTensorPullback
 public import FLT.Mazur.AffineHilbertTensorRestrictions
 public import FLT.Mazur.AffineHilbertTensorScalars
+public import FLT.Mazur.AffineHilbertTranslationDenominators
+public import FLT.Mazur.AffineHilbertTranslationEnvelope
+public import FLT.Mazur.AffineHilbertTranslationFullRestriction
+public import FLT.Mazur.AffineHilbertTranslationRelation
+public import FLT.Mazur.AffineHilbertTranslationSource
+public import FLT.Mazur.AffineHilbertTranslationSourceCover
 public import FLT.Mazur.AffineIdealContainment
 public import FLT.Mazur.AffineIdealCoordinates
 public import FLT.Mazur.AffineIdealPowerExtension
