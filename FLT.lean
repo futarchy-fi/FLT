@@ -8888,6 +8888,7 @@ public import FLT.Mazur.VariableHilbertInvariantFunctionDescent
 public import FLT.Mazur.VariableHilbertInvariantOpenDescent
 public import FLT.Mazur.VariableHilbertOrbitCompactBasis
 public import FLT.Mazur.VariableHilbertParameterOrbitDescent
+public import FLT.Mazur.VariableHilbertRefinedProjection
 public import FLT.Mazur.VariableHilbertRefinedRelation
 public import FLT.Mazur.VariableHilbertRefinementQuotient
 public import FLT.Mazur.VariableHilbertRelationBridge
