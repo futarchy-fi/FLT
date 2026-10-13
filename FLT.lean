@@ -9094,6 +9094,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearEqualitySemilinear
 public import FLT.Mazur.WeierstrassCoefficientShearEqualitySpecialization
 public import FLT.Mazur.WeierstrassCoefficientShearFiniteLineBoundary
 public import FLT.Mazur.WeierstrassCoefficientShearFiniteLineContraction
+public import FLT.Mazur.WeierstrassCoefficientShearFirstInfinityPullback
 public import FLT.Mazur.WeierstrassCoefficientShearGluedOverIso
 public import FLT.Mazur.WeierstrassCoefficientShearGluing
 public import FLT.Mazur.WeierstrassCoefficientShearHorizontalAction
