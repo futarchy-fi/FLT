@@ -5920,6 +5920,7 @@ public import FLT.Mazur.OddWeierstrassAuxiliaryFieldCoordinates
 public import FLT.Mazur.OddWeierstrassAuxiliaryFrameUnits
 public import FLT.Mazur.OddWeierstrassAuxiliaryFullBasis
 public import FLT.Mazur.OddWeierstrassAuxiliaryLevel
+public import FLT.Mazur.OddWeierstrassAuxiliaryPullbackSections
 public import FLT.Mazur.OddWeierstrassAuxiliaryTorsionCover
 public import FLT.Mazur.OddWeierstrassAuxiliaryTorsionDisjoint
 public import FLT.Mazur.OddWeierstrassAuxiliaryTorsionSections
