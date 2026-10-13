@@ -7382,6 +7382,7 @@ public import FLT.Mazur.ProperGroupPointedHom
 public import FLT.Mazur.ProperGroupPointedRigidity
 public import FLT.Mazur.ProperImmersedCover
 public import FLT.Mazur.ProperIntegralConstantSections
+public import FLT.Mazur.ProperLineAcyclicExactFrames
 public import FLT.Mazur.ProperLineAcyclicFiniteFree
 public import FLT.Mazur.ProperLineAcyclicHigherImage
 public import FLT.Mazur.ProperLineAcyclicLocus
