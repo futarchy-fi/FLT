@@ -6203,6 +6203,7 @@ public import FLT.Mazur.OrderedHilbertChartInvariantComparison
 public import FLT.Mazur.OrderedHilbertChartQuotientComparison
 public import FLT.Mazur.OrderedHilbertChartRelationBridge
 public import FLT.Mazur.OrderedHilbertChartRelationCover
+public import FLT.Mazur.OrderedHilbertCompatibleTranslationQuotient
 public import FLT.Mazur.OrderedHilbertEtaleGeometricCoverage
 public import FLT.Mazur.OrderedHilbertEtaleGeometricLift
 public import FLT.Mazur.OrderedHilbertEtaleResidueLift
@@ -6224,6 +6225,9 @@ public import FLT.Mazur.OrderedHilbertFaithfulPicardComparison
 public import FLT.Mazur.OrderedHilbertFaithfulRestrictedIso
 public import FLT.Mazur.OrderedHilbertFaithfulRestrictedQuotient
 public import FLT.Mazur.OrderedHilbertFaithfulTestCover
+public import FLT.Mazur.OrderedHilbertFppfChartKernel
+public import FLT.Mazur.OrderedHilbertFppfChartQuotient
+public import FLT.Mazur.OrderedHilbertFppfPicardDescent
 public import FLT.Mazur.OrderedHilbertFullChartCover
 public import FLT.Mazur.OrderedHilbertIdentityComparisonCover
 public import FLT.Mazur.OrderedHilbertIdentityKernelPair
@@ -7781,6 +7785,7 @@ public import FLT.Mazur.RelativePicardFppfCover
 public import FLT.Mazur.RelativePicardFppfPairs
 public import FLT.Mazur.RelativePicardFppfSheaf
 public import FLT.Mazur.RelativePicardFppfSheafCriterion
+public import FLT.Mazur.RelativePicardFppfSingletonDescent
 public import FLT.Mazur.RelativePicardPresheaf
 public import FLT.Mazur.RelativePicardPresheafBaseChange
 public import FLT.Mazur.RelativePicardPullbackSquares
@@ -8860,6 +8865,7 @@ public import FLT.Mazur.ValuationRingHenselianModel
 public import FLT.Mazur.ValuationRingModel
 public import FLT.Mazur.VariableHilbertAffineEnvelope
 public import FLT.Mazur.VariableHilbertAffinePointRefinement
+public import FLT.Mazur.VariableHilbertChangeFppf
 public import FLT.Mazur.VariableHilbertChartRelation
 public import FLT.Mazur.VariableHilbertChartRelationOperations
 public import FLT.Mazur.VariableHilbertChartRelationPullback
@@ -8873,12 +8879,15 @@ public import FLT.Mazur.VariableHilbertFixedBasePicard
 public import FLT.Mazur.VariableHilbertFixedBaseProjection
 public import FLT.Mazur.VariableHilbertFixedBaseQuotient
 public import FLT.Mazur.VariableHilbertFixedBaseRelation
+public import FLT.Mazur.VariableHilbertFppfQuotient
 public import FLT.Mazur.VariableHilbertGroundBaseCartesian
 public import FLT.Mazur.VariableHilbertIntersectionBaseChange
 public import FLT.Mazur.VariableHilbertInvariantFunctionDescent
 public import FLT.Mazur.VariableHilbertInvariantOpenDescent
 public import FLT.Mazur.VariableHilbertOrbitCompactBasis
 public import FLT.Mazur.VariableHilbertParameterOrbitDescent
+public import FLT.Mazur.VariableHilbertRefinedRelation
+public import FLT.Mazur.VariableHilbertRefinementQuotient
 public import FLT.Mazur.VariableHilbertRelationBridge
 public import FLT.Mazur.VariableHilbertRelationBridgeIso
 public import FLT.Mazur.VariableHilbertRelationCover
