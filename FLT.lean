@@ -3596,6 +3596,7 @@ public import FLT.Mazur.CyclicHomLocusEquationUniversal
 public import FLT.Mazur.CyclicHomLocusFppfCoverage
 public import FLT.Mazur.CyclicHomLocusModuli
 public import FLT.Mazur.CyclicHomLocusRelabel
+public import FLT.Mazur.CyclicHomLocusRelabelAction
 public import FLT.Mazur.CyclicHomMultiplicationEquation
 public import FLT.Mazur.CyclicHomMultiplicationLocus
 public import FLT.Mazur.CyclicHomMultiplicationLocusUniversal
