@@ -4636,6 +4636,7 @@ public import FLT.Mazur.GeneralizedCurvePicardPresheaf
 public import FLT.Mazur.GeneralizedCurvePointedCubicFamily
 public import FLT.Mazur.GeneralizedCurvePointedCubicGroup
 public import FLT.Mazur.GeneralizedCurvePointedCubicPresentation
+public import FLT.Mazur.GeneralizedCurvePointedCubicUnrestrictedFamily
 public import FLT.Mazur.GeneralizedCurvePullback
 public import FLT.Mazur.GeneralizedCurvePullbackCoherence
 public import FLT.Mazur.GeneralizedCurveRelativePointFrames
@@ -5974,6 +5975,11 @@ public import FLT.Mazur.OddWeierstrassAuxiliaryPullbackSections
 public import FLT.Mazur.OddWeierstrassAuxiliaryTorsionCover
 public import FLT.Mazur.OddWeierstrassAuxiliaryTorsionDisjoint
 public import FLT.Mazur.OddWeierstrassAuxiliaryTorsionSections
+public import FLT.Mazur.OddWeierstrassCyclicHomAffineMarkings
+public import FLT.Mazur.OddWeierstrassCyclicHomAffineNeighborhood
+public import FLT.Mazur.OddWeierstrassCyclicHomAffineNormalization
+public import FLT.Mazur.OddWeierstrassCyclicHomAffineSource
+public import FLT.Mazur.OddWeierstrassCyclicHomAffineSubgroup
 public import FLT.Mazur.OddWeierstrassCyclicHomAuxiliaryScheme
 public import FLT.Mazur.OddWeierstrassCyclicHomDivisorFppfCoverage
 public import FLT.Mazur.OddWeierstrassCyclicHomDivisorInclusionPullback
@@ -5986,6 +5992,8 @@ public import FLT.Mazur.OddWeierstrassCyclicHomMultiplicationEquation
 public import FLT.Mazur.OddWeierstrassCyclicHomMultiplicationLocus
 public import FLT.Mazur.OddWeierstrassCyclicHomMultiplicationLocusUniversal
 public import FLT.Mazur.OddWeierstrassCyclicHomMultiplicationPullback
+public import FLT.Mazur.OddWeierstrassCyclicHomNormalizedCoverage
+public import FLT.Mazur.OddWeierstrassCyclicHomRetainedPullback
 public import FLT.Mazur.OddWeierstrassCyclicHomSourceDivisor
 public import FLT.Mazur.OddWeierstrassCyclicHomSourceIdealPullback
 public import FLT.Mazur.OddWeierstrassCyclicHomSourcePullback
@@ -6238,6 +6246,7 @@ public import FLT.Mazur.PointedCubicUniversalCyclicParameter
 public import FLT.Mazur.PointedCubicUniversalSourceGroup
 public import FLT.Mazur.PointedCubicUniversalSourceMarking
 public import FLT.Mazur.PointedCubicUniversalSourceSubgroup
+public import FLT.Mazur.PointedCubicUnrestrictedGroup
 public import FLT.Mazur.PointedCurveLargeDegree
 public import FLT.Mazur.PointedCurveUniformAcyclicity
 public import FLT.Mazur.PointedCurveUniformRiemannRoch
@@ -7429,6 +7438,7 @@ public import FLT.Mazur.ProperSectionAffineCoverCartier
 public import FLT.Mazur.ProperSectionGluing
 public import FLT.Mazur.ProperSectionSplittingCriterion
 public import FLT.Mazur.ProperSmoothAffineFunctions
+public import FLT.Mazur.ProperSmoothAffineTargetRigidity
 public import FLT.Mazur.ProperSmoothBaseLocus
 public import FLT.Mazur.ProperSmoothConnectedFiberOpen
 public import FLT.Mazur.ProperSmoothGenericFiberOpen
@@ -7436,6 +7446,8 @@ public import FLT.Mazur.ProperSmoothGroupGeometricHom
 public import FLT.Mazur.ProperSmoothLineRigidity
 public import FLT.Mazur.ProperSmoothLineSheafDescent
 public import FLT.Mazur.ProperSmoothPointedLineSheafDescent
+public import FLT.Mazur.ProperSmoothPointwiseSectionRigidity
+public import FLT.Mazur.ProperSmoothRelativePointedGroupHom
 public import FLT.Mazur.ProperSmoothStructureSheaf
 public import FLT.Mazur.ProperSplitDirectImageSections
 public import FLT.Mazur.ProperSplitSectionFiberRegularity
@@ -7603,6 +7615,8 @@ public import FLT.Mazur.RelativeGenusOnePointedPresentation
 public import FLT.Mazur.RelativeGenusOnePoleReduction
 public import FLT.Mazur.RelativeGenusOneProjectiveIso
 public import FLT.Mazur.RelativeGenusOneProjectiveSections
+public import FLT.Mazur.RelativeGenusOneUnrestrictedCanonicalLine
+public import FLT.Mazur.RelativeGenusOneUnrestrictedPointLine
 public import FLT.Mazur.RelativeIdealAmbientHom
 public import FLT.Mazur.RelativeIdealAmbientIsoSquare
 public import FLT.Mazur.RelativeIdealAmbientPullback
