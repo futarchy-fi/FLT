@@ -8331,6 +8331,7 @@ public import FLT.Mazur.SmoothFiniteFlatIdealCharts
 public import FLT.Mazur.SmoothFiniteSubgroupAmple
 public import FLT.Mazur.SmoothFiniteSubschemeCartier
 public import FLT.Mazur.SmoothGeneralizedCurveGroupIso
+public import FLT.Mazur.SmoothGeometricAcyclicExactFrames
 public import FLT.Mazur.SmoothGeometricAcyclicFiniteFree
 public import FLT.Mazur.SmoothGeometricAcyclicHigherImage
 public import FLT.Mazur.SmoothGeometricAcyclicRankOne
