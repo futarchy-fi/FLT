@@ -2771,6 +2771,7 @@ public import FLT.Mazur.AffineHilbertFiniteGroundBaseRefinement
 public import FLT.Mazur.AffineHilbertFiniteKernelAlgebra
 public import FLT.Mazur.AffineHilbertFiniteKernelEquations
 public import FLT.Mazur.AffineHilbertFiniteKernelModel
+public import FLT.Mazur.AffineHilbertFiniteModelImage
 public import FLT.Mazur.AffineHilbertFiniteTensorCover
 public import FLT.Mazur.AffineHilbertFixedBaseEnvelope
 public import FLT.Mazur.AffineHilbertFixedBaseQuotient
