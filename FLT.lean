@@ -3624,6 +3624,7 @@ public import FLT.Mazur.CyclicHomLocusRelabelAction
 public import FLT.Mazur.CyclicHomLocusRelabelNormalization
 public import FLT.Mazur.CyclicHomLocusRelationRelabel
 public import FLT.Mazur.CyclicHomMarkedFamilyRelation
+public import FLT.Mazur.CyclicHomMarkedIsoPullback
 public import FLT.Mazur.CyclicHomMultiplicationEquation
 public import FLT.Mazur.CyclicHomMultiplicationLocus
 public import FLT.Mazur.CyclicHomMultiplicationLocusUniversal
