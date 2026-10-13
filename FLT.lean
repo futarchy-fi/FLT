@@ -7606,6 +7606,7 @@ public import FLT.Mazur.RelativeGenusOnePointedPresentation
 public import FLT.Mazur.RelativeGenusOnePoleReduction
 public import FLT.Mazur.RelativeGenusOneProjectiveIso
 public import FLT.Mazur.RelativeGenusOneProjectiveSections
+public import FLT.Mazur.RelativeGenusOneUnrestrictedCanonicalLine
 public import FLT.Mazur.RelativeGenusOneUnrestrictedPointLine
 public import FLT.Mazur.RelativeIdealAmbientHom
 public import FLT.Mazur.RelativeIdealAmbientIsoSquare
