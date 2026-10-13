@@ -8818,6 +8818,8 @@ public import FLT.Mazur.WeierstrassCoefficientSecant
 public import FLT.Mazur.WeierstrassCoefficientShearAction
 public import FLT.Mazur.WeierstrassCoefficientShearActionDomain
 public import FLT.Mazur.WeierstrassCoefficientShearActionSpecialization
+public import FLT.Mazur.WeierstrassCoefficientShearAdjacentAtlasPullback
+public import FLT.Mazur.WeierstrassCoefficientShearAdjacentBoundaryDescent
 public import FLT.Mazur.WeierstrassCoefficientShearAdjacentChartMap
 public import FLT.Mazur.WeierstrassCoefficientShearAdjacentComponentRootChange
 public import FLT.Mazur.WeierstrassCoefficientShearAdjacentComponentSpecialization
@@ -8898,6 +8900,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearResidueAdjacentLeftCharts
 public import FLT.Mazur.WeierstrassCoefficientShearResidueAdjacentRightCharts
 public import FLT.Mazur.WeierstrassCoefficientShearResidueAtlasCoconeMaps
 public import FLT.Mazur.WeierstrassCoefficientShearResidueAtlasTerminalBoundary
+public import FLT.Mazur.WeierstrassCoefficientShearResidueAtlasTerminalPullback
 public import FLT.Mazur.WeierstrassCoefficientShearResidueBranchCharts
 public import FLT.Mazur.WeierstrassCoefficientShearResidueBranchEndpoints
 public import FLT.Mazur.WeierstrassCoefficientShearResidueBranches
@@ -9020,6 +9023,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearSuccessiveTorusAction
 public import FLT.Mazur.WeierstrassCoefficientShearTangentConjugation
 public import FLT.Mazur.WeierstrassCoefficientShearTangentTransport
 public import FLT.Mazur.WeierstrassCoefficientShearTensorInput
+public import FLT.Mazur.WeierstrassCoefficientShearTerminalAtlasPullback
 public import FLT.Mazur.WeierstrassCoefficientShearTerminalBranchProjection
 public import FLT.Mazur.WeierstrassCoefficientShearTerminalBranchRootChange
 public import FLT.Mazur.WeierstrassCoefficientShearTerminalBranchSpecialization
@@ -9028,6 +9032,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearTerminalLaurent
 public import FLT.Mazur.WeierstrassCoefficientShearTerminalLaurentProjection
 public import FLT.Mazur.WeierstrassCoefficientShearTerminalLaurentRootChange
 public import FLT.Mazur.WeierstrassCoefficientShearTerminalLaurentSpecialization
+public import FLT.Mazur.WeierstrassCoefficientShearTerminalLaurentTensorPullback
 public import FLT.Mazur.WeierstrassCoefficientShearTerminalNode
 public import FLT.Mazur.WeierstrassCoefficientShearTerminalSemilinear
 public import FLT.Mazur.WeierstrassCoefficientShearTerminalZeroComponents
@@ -9049,6 +9054,7 @@ public import FLT.Mazur.WeierstrassConicPunctureCoefficient
 public import FLT.Mazur.WeierstrassConicZeroAffineParameter
 public import FLT.Mazur.WeierstrassConicZeroDescent
 public import FLT.Mazur.WeierstrassConicZeroProjectiveDescent
+public import FLT.Mazur.WeierstrassConicZeroPunctureCover
 public import FLT.Mazur.WeierstrassConstantSections
 public import FLT.Mazur.WeierstrassCrossInputAdditionComparison
 public import FLT.Mazur.WeierstrassCubicAmbientCohomology
