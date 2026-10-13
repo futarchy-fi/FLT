@@ -69,6 +69,7 @@ theorem coefficientShearResidueZeroEqualityDivided_hom_ext (h : T ≫ u = T ≫ 
   · rw [dite_eq_right hspos] at H
     simpa only [coefficientShearScaleOneEqualityDividedParameter_component_assoc] using H
 
+section ScaleOne
 variable (hszero : s = 0)
 local notation "hone" => show algebraMap R Q (π ^ (0 + s)) = 1 from by
   rw [hszero]; simp
@@ -82,6 +83,8 @@ theorem coefficientShearResidueZeroEqualityScaleOneConic_hom_ext
     data Q r s hs hp (lin).1 (lin).2 cunit hr a ha ≫ f) h
   rw [coefficientShearResidueEqualityComponent, dite_eq_right (by omega)] at H
   simpa only [coefficientShearScaleOneEqualityConicParameter_component_assoc] using H
+
+end ScaleOne
 
 variable (hspos : 0 < s)
 local notation "hscale" => nodalDepth_tangent_scale_zero (W := W) hm
