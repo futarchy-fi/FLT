@@ -5911,6 +5911,7 @@ public import FLT.Mazur.OccurrencePolynomialDataStages
 public import FLT.Mazur.OccurrenceQuotientInverseStages
 public import FLT.Mazur.OddWeierstrassAuxiliaryCoverage
 public import FLT.Mazur.OddWeierstrassAuxiliaryLevel
+public import FLT.Mazur.OddWeierstrassAuxiliaryTorsionCover
 public import FLT.Mazur.OddWeierstrassAuxiliaryTorsionDisjoint
 public import FLT.Mazur.OddWeierstrassAuxiliaryTorsionSections
 public import FLT.Mazur.OddWeierstrassGeometricLevelThree
