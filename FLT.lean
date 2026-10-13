@@ -2885,6 +2885,7 @@ public import FLT.Mazur.AffinePicardSections
 public import FLT.Mazur.AffinePieceSectionLocalization
 public import FLT.Mazur.AffinePreimageRestrictionPushout
 public import FLT.Mazur.AffineProductMap
+public import FLT.Mazur.AffineProductNormFiber
 public import FLT.Mazur.AffineProductTensorCoordinates
 public import FLT.Mazur.AffineProductTranslationNorm
 public import FLT.Mazur.AffineProjectivePointLineCover
@@ -2939,6 +2940,7 @@ public import FLT.Mazur.AffineSectionLineRankOne
 public import FLT.Mazur.AffineSectionLineReversePoint
 public import FLT.Mazur.AffineSectionLineSubobjectEquality
 public import FLT.Mazur.AffineSectionMonicity
+public import FLT.Mazur.AffineSectionNormFiber
 public import FLT.Mazur.AffineSectionResidueEquation
 public import FLT.Mazur.AffineSectionTensorSquare
 public import FLT.Mazur.AffineSectionsReconstruction
@@ -4936,6 +4938,7 @@ public import FLT.Mazur.HigherDirectImagePresheaf
 public import FLT.Mazur.HigherDirectImagePresheafRestriction
 public import FLT.Mazur.HilbertAcyclicParameterOpen
 public import FLT.Mazur.HilbertAcyclicUniversalRecovery
+public import FLT.Mazur.HilbertAdmissiblePrincipalExistence
 public import FLT.Mazur.HilbertAmbientChartClassification
 public import FLT.Mazur.HilbertAmbientChartNaturality
 public import FLT.Mazur.HilbertAmbientClosedFamily
@@ -5045,6 +5048,8 @@ public import FLT.Mazur.HilbertFamilyGrassmannianSchemeNaturality
 public import FLT.Mazur.HilbertFamilyRelationBaseChange
 public import FLT.Mazur.HilbertFamilyTruncatedRelations
 public import FLT.Mazur.HilbertFiniteAmbientPresentation
+public import FLT.Mazur.HilbertFiniteFreeQuotientRefinement
+public import FLT.Mazur.HilbertFullInteriorQuotientChart
 public import FLT.Mazur.HilbertGrassmannianAffineMap
 public import FLT.Mazur.HilbertGrassmannianFamilyCompatibility
 public import FLT.Mazur.HilbertGrassmannianGluing
@@ -5063,6 +5068,7 @@ public import FLT.Mazur.HilbertIntrinsicExtension
 public import FLT.Mazur.HilbertIntrinsicInclusion
 public import FLT.Mazur.HilbertIntrinsicResidueBasis
 public import FLT.Mazur.HilbertIntrinsicUniversalOverlap
+public import FLT.Mazur.HilbertInvariantPrincipalProjection
 public import FLT.Mazur.HilbertInvariantRegularNorm
 public import FLT.Mazur.HilbertLocalResidueBasis
 public import FLT.Mazur.HilbertLocalizationIsomorphismOpen
@@ -5075,6 +5081,8 @@ public import FLT.Mazur.HilbertMonomialFiberBasis
 public import FLT.Mazur.HilbertMonomialPrincipalSpecCover
 public import FLT.Mazur.HilbertMonomialReindexedAmbient
 public import FLT.Mazur.HilbertMultiplicationCoordinateRecovery
+public import FLT.Mazur.HilbertNestedNormSupport
+public import FLT.Mazur.HilbertNormOrbitFiber
 public import FLT.Mazur.HilbertOpenAmbientBaseChange
 public import FLT.Mazur.HilbertOpenAmbientCartesian
 public import FLT.Mazur.HilbertOpenAmbientClassification
@@ -5138,6 +5146,7 @@ public import FLT.Mazur.HilbertPrincipalBaseChangeMorphism
 public import FLT.Mazur.HilbertPrincipalBaseChangeScalars
 public import FLT.Mazur.HilbertPrincipalInvariantNorm
 public import FLT.Mazur.HilbertPrincipalLocalizationScalars
+public import FLT.Mazur.HilbertPrincipalNormAdmissible
 public import FLT.Mazur.HilbertPrincipalRestriction
 public import FLT.Mazur.HilbertQuotientDegreeBound
 public import FLT.Mazur.HilbertQuotientDegreeFiltration
@@ -8086,6 +8095,7 @@ public import FLT.Mazur.SchemeSectionFrameCompatibility
 public import FLT.Mazur.SchemeSectionFrameNormalization
 public import FLT.Mazur.SchemeSectionTransportNaturality
 public import FLT.Mazur.SchemeSourceTestOverlapRecognition
+public import FLT.Mazur.SchemeTranslationNormFiber
 public import FLT.Mazur.SchemeTranslationNormGluing
 public import FLT.Mazur.SchemeTranslationNormLocal
 public import FLT.Mazur.SchemeTranslationNormNaturality
