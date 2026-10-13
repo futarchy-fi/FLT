@@ -8641,6 +8641,7 @@ public import FLT.Mazur.TensorPowerDistribution
 public import FLT.Mazur.TensorPowerGeneratorOpen
 public import FLT.Mazur.TensorPowerNestedSection
 public import FLT.Mazur.TensorPowerPullbackComparison
+public import FLT.Mazur.TensorPowerPullbackSquare
 public import FLT.Mazur.TensorPowerReassociation
 public import FLT.Mazur.TensorPullbackComposition
 public import FLT.Mazur.TensorPullbackIdentity
