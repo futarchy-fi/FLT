@@ -5936,6 +5936,7 @@ public import FLT.Mazur.OddWeierstrassAuxiliaryTorsionCover
 public import FLT.Mazur.OddWeierstrassAuxiliaryTorsionDisjoint
 public import FLT.Mazur.OddWeierstrassAuxiliaryTorsionSections
 public import FLT.Mazur.OddWeierstrassCyclicHomAuxiliaryScheme
+public import FLT.Mazur.OddWeierstrassCyclicHomMultiplicationEquation
 public import FLT.Mazur.OddWeierstrassCyclicHomSourceDivisor
 public import FLT.Mazur.OddWeierstrassGeometricLevelThree
 public import FLT.Mazur.OddWeierstrassNormalizationCurve
