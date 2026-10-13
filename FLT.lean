@@ -6450,6 +6450,7 @@ public import FLT.Mazur.PolygonCompleteAffinePresentation
 public import FLT.Mazur.PolygonCompleteBaseMarkings
 public import FLT.Mazur.PolygonCompleteBoundaryCartesian
 public import FLT.Mazur.PolygonCompleteBoundaryCoordinateTransport
+public import FLT.Mazur.PolygonCompleteBoundaryDescended
 public import FLT.Mazur.PolygonCompleteBoundaryFactorization
 public import FLT.Mazur.PolygonCompleteBoundaryFiberLine
 public import FLT.Mazur.PolygonCompleteBoundaryLineComparison
