@@ -2786,6 +2786,7 @@ public import FLT.Mazur.AffineHilbertGroundBaseFullFiber
 public import FLT.Mazur.AffineHilbertGroundBaseSource
 public import FLT.Mazur.AffineHilbertInvariantAffineModel
 public import FLT.Mazur.AffineHilbertInvariantEnvelope
+public import FLT.Mazur.AffineHilbertInvariantFlatCoefficients
 public import FLT.Mazur.AffineHilbertInvariantPrincipalEffectiveness
 public import FLT.Mazur.AffineHilbertInvariantPrincipalProduct
 public import FLT.Mazur.AffineHilbertInverseFiniteBranches
