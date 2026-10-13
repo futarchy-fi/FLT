@@ -7638,6 +7638,7 @@ public import FLT.Mazur.RelativeGenusOnePoleReduction
 public import FLT.Mazur.RelativeGenusOneProjectiveIso
 public import FLT.Mazur.RelativeGenusOneProjectiveSections
 public import FLT.Mazur.RelativeGenusOneUnrestrictedAffineLowPoles
+public import FLT.Mazur.RelativeGenusOneUnrestrictedAllPoleBasis
 public import FLT.Mazur.RelativeGenusOneUnrestrictedCanonicalBasis
 public import FLT.Mazur.RelativeGenusOneUnrestrictedCanonicalConstants
 public import FLT.Mazur.RelativeGenusOneUnrestrictedCanonicalLine
