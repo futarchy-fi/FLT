@@ -6205,6 +6205,7 @@ public import FLT.Mazur.OrderedHilbertIdentitySchemeSource
 public import FLT.Mazur.OrderedHilbertIdentitySheafCoverage
 public import FLT.Mazur.OrderedHilbertOriginalTestIntersection
 public import FLT.Mazur.OrderedHilbertOriginalTestLift
+public import FLT.Mazur.OrderedHilbertOriginalTestPullback
 public import FLT.Mazur.OrderedHilbertQuotientFullRelation
 public import FLT.Mazur.OrderedHilbertQuotientSchemeCriterion
 public import FLT.Mazur.OrderedHilbertQuotientSchemeDescent
