@@ -3780,7 +3780,12 @@ public import FLT.Mazur.DivisorLinePullback
 public import FLT.Mazur.DivisorLinePullbackComposition
 public import FLT.Mazur.DivisorLinePullbackIdentity
 public import FLT.Mazur.DivisorLinePullbackTransport
+public import FLT.Mazur.DivisorLineSectionCompatibility
+public import FLT.Mazur.DivisorLineSectionComposition
 public import FLT.Mazur.DivisorLineSectionModel
+public import FLT.Mazur.DivisorLineSectionSquare
+public import FLT.Mazur.DivisorLineSectionTriangle
+public import FLT.Mazur.DivisorLineTensorSectionCompatibility
 public import FLT.Mazur.DivisorPowerCanonicalSection
 public import FLT.Mazur.DivisorPowerComplementTransition
 public import FLT.Mazur.DivisorPowerEulerCharacteristic
@@ -6731,6 +6736,7 @@ public import FLT.Mazur.PolygonNormalizationFinite
 public import FLT.Mazur.PolygonNormalizationHOne
 public import FLT.Mazur.PolygonNormalizationHZero
 public import FLT.Mazur.PolygonNormalizationLinearSections
+public import FLT.Mazur.PolygonNormalizationSectionCompatibility
 public import FLT.Mazur.PolygonNormalizationSectionFamilies
 public import FLT.Mazur.PolygonNormalizationTorusPullback
 public import FLT.Mazur.PolygonNormalizationTransport
@@ -6742,6 +6748,11 @@ public import FLT.Mazur.PolygonOneGonContractionFiber
 public import FLT.Mazur.PolygonOneGonContractionFiberCharts
 public import FLT.Mazur.PolygonOneGonContractionMarking
 public import FLT.Mazur.PolygonOneGonContractionMarkingLine
+public import FLT.Mazur.PolygonOneGonContractionMarkingSection
+public import FLT.Mazur.PolygonOneGonContractionNormalizationLine
+public import FLT.Mazur.PolygonOneGonContractionReflectionLine
+public import FLT.Mazur.PolygonOneGonContractionReflectionPower
+public import FLT.Mazur.PolygonOneGonContractionRotationLine
 public import FLT.Mazur.PolygonOneGonContractionSymmetry
 public import FLT.Mazur.PolygonOneGonContractionTorus
 public import FLT.Mazur.PolygonOneGonDenominator
@@ -6808,8 +6819,10 @@ public import FLT.Mazur.PolygonReciprocalEvaluation
 public import FLT.Mazur.PolygonRefinedClosedCharts
 public import FLT.Mazur.PolygonReflectionFullFamily
 public import FLT.Mazur.PolygonReflectionMarking
+public import FLT.Mazur.PolygonReflectionMarkingLine
 public import FLT.Mazur.PolygonRetainedSectionRotation
 public import FLT.Mazur.PolygonRetainedStageMarkings
+public import FLT.Mazur.PolygonRotationMarkingLine
 public import FLT.Mazur.PolygonRotationNoFixedPoints
 public import FLT.Mazur.PolygonRotationScalars
 public import FLT.Mazur.PolygonScalarReflectionRelations
@@ -8638,6 +8651,7 @@ public import FLT.Mazur.TensorPowerDistribution
 public import FLT.Mazur.TensorPowerGeneratorOpen
 public import FLT.Mazur.TensorPowerNestedSection
 public import FLT.Mazur.TensorPowerPullbackComparison
+public import FLT.Mazur.TensorPowerPullbackSquare
 public import FLT.Mazur.TensorPowerReassociation
 public import FLT.Mazur.TensorPullbackComposition
 public import FLT.Mazur.TensorPullbackIdentity
