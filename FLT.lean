@@ -10915,6 +10915,7 @@ public import FLT.Mazur.WeierstrassVariableChangeSmoothAddition
 public import FLT.Mazur.WeierstrassVariableChangeSmoothIso
 public import FLT.Mazur.WeierstrassVariableChangeSmoothPointAddition
 public import FLT.Mazur.WeierstrassVariableChangeSmoothProduct
+public import FLT.Mazur.WeierstrassVariableChangeUnitChart
 public import FLT.Mazur.WeierstrassVariableChangeZero
 public import FLT.Mazur.WeierstrassVerticalAdditionCharts
 public import FLT.Mazur.WeierstrassVerticalChartCompatibility
