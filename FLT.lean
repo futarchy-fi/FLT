@@ -6251,6 +6251,7 @@ public import FLT.Mazur.OrderedHilbertQuotientSchemeCriterion
 public import FLT.Mazur.OrderedHilbertQuotientSchemeDescent
 public import FLT.Mazur.OrderedHilbertQuotientSheafCoequalizer
 public import FLT.Mazur.OrderedHilbertQuotientTestPullback
+public import FLT.Mazur.OrderedHilbertRefinedSchemeNeighborhood
 public import FLT.Mazur.OrderedHilbertSeparableGeometricCoverage
 public import FLT.Mazur.OrderedProjectiveHilbertNaturality
 public import FLT.Mazur.OrderedProjectiveHilbertParameter
@@ -7669,7 +7670,9 @@ public import FLT.Mazur.RelativeFiberNakayama
 public import FLT.Mazur.RelativeFppfComparisonCover
 public import FLT.Mazur.RelativeFppfLocalSubfunctor
 public import FLT.Mazur.RelativeFppfLocallyRingedCover
+public import FLT.Mazur.RelativeFppfPairCover
 public import FLT.Mazur.RelativeFppfRepresentedCover
+public import FLT.Mazur.RelativeFppfSchemeCover
 public import FLT.Mazur.RelativeFppfSurjectivityDetection
 public import FLT.Mazur.RelativeGenusOneAffineCartesian
 public import FLT.Mazur.RelativeGenusOneAffineCubicMorphism
@@ -8883,6 +8886,9 @@ public import FLT.Mazur.VariableHilbertCommonAmbientAtlas
 public import FLT.Mazur.VariableHilbertCommonAmbientEnvelope
 public import FLT.Mazur.VariableHilbertCommonAmbientSource
 public import FLT.Mazur.VariableHilbertCommonAmbientSquare
+public import FLT.Mazur.VariableHilbertDescendedKernel
+public import FLT.Mazur.VariableHilbertEffectivePicardImage
+public import FLT.Mazur.VariableHilbertEffectivePicardSection
 public import FLT.Mazur.VariableHilbertEtaleRelation
 public import FLT.Mazur.VariableHilbertFiniteRelationFibers
 public import FLT.Mazur.VariableHilbertFixedBasePicard
@@ -8896,7 +8902,10 @@ public import FLT.Mazur.VariableHilbertInvariantFunctionDescent
 public import FLT.Mazur.VariableHilbertInvariantOpenDescent
 public import FLT.Mazur.VariableHilbertOrbitCompactBasis
 public import FLT.Mazur.VariableHilbertParameterOrbitDescent
+public import FLT.Mazur.VariableHilbertRefinedPicardImage
+public import FLT.Mazur.VariableHilbertRefinedProjection
 public import FLT.Mazur.VariableHilbertRefinedRelation
+public import FLT.Mazur.VariableHilbertRefinedSchemeModel
 public import FLT.Mazur.VariableHilbertRefinementQuotient
 public import FLT.Mazur.VariableHilbertRelationBridge
 public import FLT.Mazur.VariableHilbertRelationBridgeIso
