@@ -5388,6 +5388,7 @@ public import FLT.Mazur.IntegralDimension
 public import FLT.Mazur.IntegralImageIdealStalk
 public import FLT.Mazur.IntegralPointExtension
 public import FLT.Mazur.IntegralShortHomologyNaturality
+public import FLT.Mazur.IntegralWeierstrassAuxiliaryLevel
 public import FLT.Mazur.IntegralWeierstrassParameter
 public import FLT.Mazur.IntersectionCocycleLimitUnits
 public import FLT.Mazur.IntersectionCocyclePullbackRecovery
