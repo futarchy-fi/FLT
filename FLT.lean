@@ -8462,6 +8462,7 @@ public import FLT.Mazur.SchemeRelationInvariantSpectrum
 public import FLT.Mazur.SchemeRelationInvariantTestEquality
 public import FLT.Mazur.SchemeRelationIsoInvariants
 public import FLT.Mazur.SchemeRelationJointModel
+public import FLT.Mazur.SchemeRelationJointModelGeometry
 public import FLT.Mazur.SchemeRelationLocalFunctionDescent
 public import FLT.Mazur.SchemeRelationMonicBaseChange
 public import FLT.Mazur.SchemeRelationOpenFunctionDescent
