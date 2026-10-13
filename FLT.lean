@@ -8296,6 +8296,7 @@ public import FLT.Mazur.SmallHilbertTranslationAtlas
 public import FLT.Mazur.SmallRelativeLineParameters
 public import FLT.Mazur.SmallSchemePicard
 public import FLT.Mazur.SmoothAffineCoefficientModels
+public import FLT.Mazur.SmoothAffineGeometricVanishing
 public import FLT.Mazur.SmoothAffineLineNoetherianModel
 public import FLT.Mazur.SmoothAlgebraReduced
 public import FLT.Mazur.SmoothBaseChangeDimensionOpen
