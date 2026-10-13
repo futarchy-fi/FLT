@@ -6173,6 +6173,7 @@ public import FLT.Mazur.OrderedHilbertFaithfulEnvelopeIso
 public import FLT.Mazur.OrderedHilbertFaithfulInvariantCoefficients
 public import FLT.Mazur.OrderedHilbertFaithfulOrbitCover
 public import FLT.Mazur.OrderedHilbertFaithfulParameter
+public import FLT.Mazur.OrderedHilbertFaithfulParameterPoint
 public import FLT.Mazur.OrderedHilbertFaithfulPicardComparison
 public import FLT.Mazur.OrderedHilbertFaithfulRestrictedIso
 public import FLT.Mazur.OrderedHilbertFaithfulRestrictedQuotient
