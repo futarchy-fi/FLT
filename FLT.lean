@@ -8506,6 +8506,7 @@ public import FLT.Mazur.SectionCoverCoordinates
 public import FLT.Mazur.SectionCoverDiscrepancy
 public import FLT.Mazur.SectionCubicChartMorphism
 public import FLT.Mazur.SectionCubicRatioNormalization
+public import FLT.Mazur.SectionDirectImageCanonicalBasis
 public import FLT.Mazur.SectionDivisorLeadingSections
 public import FLT.Mazur.SectionDivisorNeutralTwist
 public import FLT.Mazur.SectionDivisorQuotientLine
