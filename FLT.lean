@@ -2731,6 +2731,7 @@ public import FLT.Mazur.AffineFreeSheafSectionCoordinates
 public import FLT.Mazur.AffineGeneratorPointCoefficientTransport
 public import FLT.Mazur.AffineGeneratorPointLinearTransport
 public import FLT.Mazur.AffineGenericClosure
+public import FLT.Mazur.AffineGenericFlatOpen
 public import FLT.Mazur.AffineGeometricChartDatum
 public import FLT.Mazur.AffineGeometricChartRecognition
 public import FLT.Mazur.AffineGeometricCoactionUnits
