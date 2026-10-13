@@ -7640,6 +7640,7 @@ public import FLT.Mazur.RelativeGenusOneProjectiveSections
 public import FLT.Mazur.RelativeGenusOneUnrestrictedAffineCubicMorphism
 public import FLT.Mazur.RelativeGenusOneUnrestrictedAffineIso
 public import FLT.Mazur.RelativeGenusOneUnrestrictedAffineLowPoles
+public import FLT.Mazur.RelativeGenusOneUnrestrictedAffineRestriction
 public import FLT.Mazur.RelativeGenusOneUnrestrictedAllPoleBasis
 public import FLT.Mazur.RelativeGenusOneUnrestrictedCanonicalBasis
 public import FLT.Mazur.RelativeGenusOneUnrestrictedCanonicalConstants
