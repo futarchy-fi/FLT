@@ -5062,6 +5062,7 @@ public import FLT.Mazur.HilbertIntrinsicExtension
 public import FLT.Mazur.HilbertIntrinsicInclusion
 public import FLT.Mazur.HilbertIntrinsicResidueBasis
 public import FLT.Mazur.HilbertIntrinsicUniversalOverlap
+public import FLT.Mazur.HilbertInvariantPrincipalProjection
 public import FLT.Mazur.HilbertInvariantRegularNorm
 public import FLT.Mazur.HilbertLocalResidueBasis
 public import FLT.Mazur.HilbertLocalizationIsomorphismOpen
