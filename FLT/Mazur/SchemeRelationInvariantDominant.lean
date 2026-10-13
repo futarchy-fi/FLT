@@ -5,7 +5,7 @@ Authors: The FLT Project
 -/
 module
 
-public import FLT.Mazur.SchemeRelationInvariantSpectrum
+public import FLT.Mazur.SchemeRelationInvariantAffineUniversal
 public import Mathlib.AlgebraicGeometry.Morphisms.ClosedImmersion
 
 /-!
@@ -22,19 +22,6 @@ universe u
 namespace FLT.Mazur.SchemeRelationInvariantSpectrum
 set_option backward.isDefEq.respectTransparency false
 variable {D A : Scheme.{u}} (p q : D ⟶ A)
-
-/-- The full invariant candidate projection loses no global coefficient. -/
-theorem projection_appTop_injective : Function.Injective (projection p q).appTop := by
-  have h : Function.Injective
-      ((Scheme.ΓSpecIso (.of (SchemeEffectiveEpiSections.compatibleFunctions p q))).inv ≫
-        (projection p q).appTop) := by
-    rw [projection_coefficients]
-    exact Subtype.val_injective
-  change Function.Injective ((projection p q).appTop ∘
-    (Scheme.ΓSpecIso (.of (SchemeEffectiveEpiSections.compatibleFunctions p q))).inv) at h
-  exact h.of_comp_right
-    (ConcreteCategory.bijective_of_isIso
-      (Scheme.ΓSpecIso (.of (SchemeEffectiveEpiSections.compatibleFunctions p q))).inv).2
 
 /-- Quasi-compact original sources have dense image in their full invariant candidate. -/
 instance projection_isDominant [CompactSpace A] : IsDominant (projection p q) := by
