@@ -5028,6 +5028,7 @@ public import FLT.Mazur.HilbertComplementCoordinateRing
 public import FLT.Mazur.HilbertComplementPointCompatibility
 public import FLT.Mazur.HilbertComplementSchemeCompatibility
 public import FLT.Mazur.HilbertDivisorDegreePresentation
+public import FLT.Mazur.HilbertEnvelopeSourceTransport
 public import FLT.Mazur.HilbertFaithfulAffineNeighborhood
 public import FLT.Mazur.HilbertFaithfullyFlatTupleBasis
 public import FLT.Mazur.HilbertFamilyAmbientPointNaturality
