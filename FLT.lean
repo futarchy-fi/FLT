@@ -6250,6 +6250,7 @@ public import FLT.Mazur.OrderedHilbertQuotientSchemeCriterion
 public import FLT.Mazur.OrderedHilbertQuotientSchemeDescent
 public import FLT.Mazur.OrderedHilbertQuotientSheafCoequalizer
 public import FLT.Mazur.OrderedHilbertQuotientTestPullback
+public import FLT.Mazur.OrderedHilbertRefinedSchemeNeighborhood
 public import FLT.Mazur.OrderedHilbertSeparableGeometricCoverage
 public import FLT.Mazur.OrderedProjectiveHilbertNaturality
 public import FLT.Mazur.OrderedProjectiveHilbertParameter
