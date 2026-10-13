@@ -3621,6 +3621,7 @@ public import FLT.Mazur.CyclicHomNormalizedFppfCoverage
 public import FLT.Mazur.CyclicHomNormalizedImageSieve
 public import FLT.Mazur.CyclicHomNormalizedLocus
 public import FLT.Mazur.CyclicHomNormalizedModuli
+public import FLT.Mazur.CyclicHomNormalizedRelabelAction
 public import FLT.Mazur.CyclicHomProperPresentationInvariant
 public import FLT.Mazur.CyclicHomRelabelAuxiliaryMarking
 public import FLT.Mazur.CyclicHomRelabelCurve
