@@ -2701,6 +2701,7 @@ public import FLT.Mazur.AffineEtaleFaithfulSpectrum
 public import FLT.Mazur.AffineEtaleFiniteFaithfulRefinement
 public import FLT.Mazur.AffineEtaleFiniteFaithfulSpectrum
 public import FLT.Mazur.AffineEtaleTranslationFiniteBranch
+public import FLT.Mazur.AffineEtaleTranslationNormCharts
 public import FLT.Mazur.AffineFaithfullyFlatEpimorphisms
 public import FLT.Mazur.AffineFaithfullyFlatMonomorphisms
 public import FLT.Mazur.AffineFaithfullyFlatPullbackFaithful
