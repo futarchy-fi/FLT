@@ -8889,6 +8889,7 @@ public import FLT.Mazur.VariableHilbertCommonAmbientSource
 public import FLT.Mazur.VariableHilbertCommonAmbientSquare
 public import FLT.Mazur.VariableHilbertDescendedGeometry
 public import FLT.Mazur.VariableHilbertDescendedKernel
+public import FLT.Mazur.VariableHilbertEffectiveEtaleImage
 public import FLT.Mazur.VariableHilbertEffectivePicardImage
 public import FLT.Mazur.VariableHilbertEffectivePicardSection
 public import FLT.Mazur.VariableHilbertEtaleRelation
