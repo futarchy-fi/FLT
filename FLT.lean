@@ -2701,6 +2701,7 @@ public import FLT.Mazur.AffineEtaleFaithfulSpectrum
 public import FLT.Mazur.AffineEtaleFiniteFaithfulRefinement
 public import FLT.Mazur.AffineEtaleFiniteFaithfulSpectrum
 public import FLT.Mazur.AffineEtaleFiniteFreeSpectrum
+public import FLT.Mazur.AffineEtaleIdentityGroundBase
 public import FLT.Mazur.AffineEtaleTranslationFiniteBranch
 public import FLT.Mazur.AffineEtaleTranslationNormCharts
 public import FLT.Mazur.AffineFaithfullyFlatEpimorphisms
@@ -5153,6 +5154,7 @@ public import FLT.Mazur.HilbertQuotientDegreeFiltration
 public import FLT.Mazur.HilbertReindexedCoordinateRing
 public import FLT.Mazur.HilbertRepeatedMonomialChart
 public import FLT.Mazur.HilbertSameAmbientChartIso
+public import FLT.Mazur.HilbertSubterminalTranslationEnvelope
 public import FLT.Mazur.HilbertSupportOpenLattice
 public import FLT.Mazur.HilbertSupportOpenPullback
 public import FLT.Mazur.HilbertTruncatedIdealDetection
