@@ -5161,6 +5161,7 @@ public import FLT.Mazur.HilbertOpenOverlapCoherence
 public import FLT.Mazur.HilbertOverlapRestriction
 public import FLT.Mazur.HilbertParameterAbelClass
 public import FLT.Mazur.HilbertParameterChartFactorization
+public import FLT.Mazur.HilbertParameterFiniteType
 public import FLT.Mazur.HilbertPolynomialAffineClassification
 public import FLT.Mazur.HilbertPolynomialAffineNaturality
 public import FLT.Mazur.HilbertPolynomialAmbient
