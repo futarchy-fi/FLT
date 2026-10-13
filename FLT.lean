@@ -6204,6 +6204,7 @@ public import FLT.Mazur.OrderedHilbertChartInvariantComparison
 public import FLT.Mazur.OrderedHilbertChartQuotientComparison
 public import FLT.Mazur.OrderedHilbertChartRelationBridge
 public import FLT.Mazur.OrderedHilbertChartRelationCover
+public import FLT.Mazur.OrderedHilbertCompatibleTranslationQuotient
 public import FLT.Mazur.OrderedHilbertEtaleGeometricCoverage
 public import FLT.Mazur.OrderedHilbertEtaleGeometricLift
 public import FLT.Mazur.OrderedHilbertEtaleResidueLift
@@ -6225,6 +6226,9 @@ public import FLT.Mazur.OrderedHilbertFaithfulPicardComparison
 public import FLT.Mazur.OrderedHilbertFaithfulRestrictedIso
 public import FLT.Mazur.OrderedHilbertFaithfulRestrictedQuotient
 public import FLT.Mazur.OrderedHilbertFaithfulTestCover
+public import FLT.Mazur.OrderedHilbertFppfChartKernel
+public import FLT.Mazur.OrderedHilbertFppfChartQuotient
+public import FLT.Mazur.OrderedHilbertFppfPicardDescent
 public import FLT.Mazur.OrderedHilbertFullChartCover
 public import FLT.Mazur.OrderedHilbertIdentityComparisonCover
 public import FLT.Mazur.OrderedHilbertIdentityKernelPair
@@ -7791,6 +7795,7 @@ public import FLT.Mazur.RelativePicardFppfCover
 public import FLT.Mazur.RelativePicardFppfPairs
 public import FLT.Mazur.RelativePicardFppfSheaf
 public import FLT.Mazur.RelativePicardFppfSheafCriterion
+public import FLT.Mazur.RelativePicardFppfSingletonDescent
 public import FLT.Mazur.RelativePicardPresheaf
 public import FLT.Mazur.RelativePicardPresheafBaseChange
 public import FLT.Mazur.RelativePicardPullbackSquares
@@ -8870,6 +8875,7 @@ public import FLT.Mazur.ValuationRingHenselianModel
 public import FLT.Mazur.ValuationRingModel
 public import FLT.Mazur.VariableHilbertAffineEnvelope
 public import FLT.Mazur.VariableHilbertAffinePointRefinement
+public import FLT.Mazur.VariableHilbertChangeFppf
 public import FLT.Mazur.VariableHilbertChartRelation
 public import FLT.Mazur.VariableHilbertChartRelationOperations
 public import FLT.Mazur.VariableHilbertChartRelationPullback
@@ -8883,12 +8889,15 @@ public import FLT.Mazur.VariableHilbertFixedBasePicard
 public import FLT.Mazur.VariableHilbertFixedBaseProjection
 public import FLT.Mazur.VariableHilbertFixedBaseQuotient
 public import FLT.Mazur.VariableHilbertFixedBaseRelation
+public import FLT.Mazur.VariableHilbertFppfQuotient
 public import FLT.Mazur.VariableHilbertGroundBaseCartesian
 public import FLT.Mazur.VariableHilbertIntersectionBaseChange
 public import FLT.Mazur.VariableHilbertInvariantFunctionDescent
 public import FLT.Mazur.VariableHilbertInvariantOpenDescent
 public import FLT.Mazur.VariableHilbertOrbitCompactBasis
 public import FLT.Mazur.VariableHilbertParameterOrbitDescent
+public import FLT.Mazur.VariableHilbertRefinedRelation
+public import FLT.Mazur.VariableHilbertRefinementQuotient
 public import FLT.Mazur.VariableHilbertRelationBridge
 public import FLT.Mazur.VariableHilbertRelationBridgeIso
 public import FLT.Mazur.VariableHilbertRelationCover
@@ -9163,8 +9172,14 @@ public import FLT.Mazur.WeierstrassCoefficientShearResidueSourceInvolution
 public import FLT.Mazur.WeierstrassCoefficientShearResidueTangentConjugation
 public import FLT.Mazur.WeierstrassCoefficientShearResidueTerminal
 public import FLT.Mazur.WeierstrassCoefficientShearResidueTerminalDescent
+public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroAdjacentEndpoints
+public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroCycleEndpoints
+public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroCycleNodes
 public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroEqualityCoproduct
+public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroEqualityEndpoints
 public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroEqualityReflection
+public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroExteriorAffine
+public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroExteriorEndpoints
 public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroSourceReflection
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedAttachments
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedBoundaryAction
@@ -9185,6 +9200,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearRetainedLineRootChange
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedLineSpecialization
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedReconstruction
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedScaleOneConic
+public import FLT.Mazur.WeierstrassCoefficientShearRetainedScaleOneIncidence
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedStage
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedTensorLineComparison
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedZeroDescent
@@ -9234,6 +9250,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearScaleOneComponents
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneConicAction
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneConicRootChange
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneConicSpecialization
+public import FLT.Mazur.WeierstrassCoefficientShearScaleOneEndpoints
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneEqualityComponent
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneEqualityOriginal
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneGluedConic
@@ -11054,7 +11071,10 @@ public import FLT.Mazur.WeierstrassSuccessiveShearScaleOne
 public import FLT.Mazur.WeierstrassSuccessiveShearScaleOneBoundaryCoordinates
 public import FLT.Mazur.WeierstrassSuccessiveShearScaleOneConicBoundary
 public import FLT.Mazur.WeierstrassSuccessiveShearScaleOneConicCoefficient
+public import FLT.Mazur.WeierstrassSuccessiveShearScaleOneDescent
 public import FLT.Mazur.WeierstrassSuccessiveShearScaleOneHorizontal
+public import FLT.Mazur.WeierstrassSuccessiveShearScaleOneIncidence
+public import FLT.Mazur.WeierstrassSuccessiveShearScaleOneIncidenceContraction
 public import FLT.Mazur.WeierstrassSuccessiveShearScaleOneLaurentBoundary
 public import FLT.Mazur.WeierstrassSuccessiveShearScaleOneLaurentConic
 public import FLT.Mazur.WeierstrassSuccessiveShearScaleOneSignedReciprocal
