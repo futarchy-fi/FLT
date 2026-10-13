@@ -6657,6 +6657,7 @@ public import FLT.Mazur.PolygonCompleteSmoothCyclicMarking
 public import FLT.Mazur.PolygonCompleteSmoothDimensionOpen
 public import FLT.Mazur.PolygonCompleteSmoothIrreducible
 public import FLT.Mazur.PolygonCompleteSmoothPointAffine
+public import FLT.Mazur.PolygonCompleteSmoothRotation
 public import FLT.Mazur.PolygonCompleteStageMarkings
 public import FLT.Mazur.PolygonCompleteStageRotation
 public import FLT.Mazur.PolygonCompleteStructureCohomology
