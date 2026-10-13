@@ -7655,6 +7655,7 @@ public import FLT.Mazur.RelativeGenusOneUnrestrictedHigherMonomials
 public import FLT.Mazur.RelativeGenusOneUnrestrictedHomogeneousEquation
 public import FLT.Mazur.RelativeGenusOneUnrestrictedInitialPoleStep
 public import FLT.Mazur.RelativeGenusOneUnrestrictedLowPoleBasis
+public import FLT.Mazur.RelativeGenusOneUnrestrictedMarkedCoordinates
 public import FLT.Mazur.RelativeGenusOneUnrestrictedMonomialBasis
 public import FLT.Mazur.RelativeGenusOneUnrestrictedMonomialIndependence
 public import FLT.Mazur.RelativeGenusOneUnrestrictedNormalMonomials
