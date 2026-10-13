@@ -7670,6 +7670,7 @@ public import FLT.Mazur.RelativeGenusOneUnrestrictedPointPowers
 public import FLT.Mazur.RelativeGenusOneUnrestrictedPointSplit
 public import FLT.Mazur.RelativeGenusOneUnrestrictedPointVanishing
 public import FLT.Mazur.RelativeGenusOneUnrestrictedPointedCubic
+public import FLT.Mazur.RelativeGenusOneUnrestrictedPointedMorphism
 public import FLT.Mazur.RelativeGenusOneUnrestrictedPoleProjective
 public import FLT.Mazur.RelativeGenusOneUnrestrictedPoleReduction
 public import FLT.Mazur.RelativeGenusOneUnrestrictedProjectiveSections
