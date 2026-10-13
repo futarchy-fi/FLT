@@ -6746,6 +6746,7 @@ public import FLT.Mazur.PolygonNormalizationFinite
 public import FLT.Mazur.PolygonNormalizationHOne
 public import FLT.Mazur.PolygonNormalizationHZero
 public import FLT.Mazur.PolygonNormalizationLinearSections
+public import FLT.Mazur.PolygonNormalizationNodeBaseChange
 public import FLT.Mazur.PolygonNormalizationNodeLine
 public import FLT.Mazur.PolygonNormalizationSectionCompatibility
 public import FLT.Mazur.PolygonNormalizationSectionFamilies
