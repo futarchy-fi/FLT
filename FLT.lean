@@ -2768,6 +2768,9 @@ public import FLT.Mazur.AffineHilbertFiniteFiberPrincipal
 public import FLT.Mazur.AffineHilbertFiniteFreeGroundBase
 public import FLT.Mazur.AffineHilbertFiniteFullBranchCover
 public import FLT.Mazur.AffineHilbertFiniteGroundBaseRefinement
+public import FLT.Mazur.AffineHilbertFiniteKernelAlgebra
+public import FLT.Mazur.AffineHilbertFiniteKernelEquations
+public import FLT.Mazur.AffineHilbertFiniteKernelModel
 public import FLT.Mazur.AffineHilbertFiniteTensorCover
 public import FLT.Mazur.AffineHilbertFixedBaseEnvelope
 public import FLT.Mazur.AffineHilbertFixedBaseQuotient
@@ -2789,7 +2792,9 @@ public import FLT.Mazur.AffineHilbertGroundBaseFullFiber
 public import FLT.Mazur.AffineHilbertGroundBaseSource
 public import FLT.Mazur.AffineHilbertInvariantAffineModel
 public import FLT.Mazur.AffineHilbertInvariantEnvelope
+public import FLT.Mazur.AffineHilbertInvariantFiniteType
 public import FLT.Mazur.AffineHilbertInvariantFlatCoefficients
+public import FLT.Mazur.AffineHilbertInvariantKernelFinitePresentation
 public import FLT.Mazur.AffineHilbertInvariantPrincipalEffectiveness
 public import FLT.Mazur.AffineHilbertInvariantPrincipalProduct
 public import FLT.Mazur.AffineHilbertInvariantRelativeUniversal
@@ -4299,6 +4304,8 @@ public import FLT.Mazur.FiniteCechCyclesScalars
 public import FLT.Mazur.FiniteCechTermScalars
 public import FLT.Mazur.FiniteClosedIdealSection
 public import FLT.Mazur.FiniteClosedImmersionIntegerDescent
+public import FLT.Mazur.FiniteCoefficientDifferenceIdeal
+public import FLT.Mazur.FiniteCoefficientKernelSubalgebra
 public import FLT.Mazur.FiniteCoefficientProperties
 public import FLT.Mazur.FiniteCohomologyFreeNeighborhood
 public import FLT.Mazur.FiniteCommonPrincipalCover
@@ -8378,9 +8385,11 @@ public import FLT.Mazur.SchemeRefinementReconstruction
 public import FLT.Mazur.SchemeRelationDoubleRestriction
 public import FLT.Mazur.SchemeRelationFunctionDescent
 public import FLT.Mazur.SchemeRelationInvariantAffineUniversal
+public import FLT.Mazur.SchemeRelationInvariantDominant
 public import FLT.Mazur.SchemeRelationInvariantEnvelope
 public import FLT.Mazur.SchemeRelationInvariantRestriction
 public import FLT.Mazur.SchemeRelationInvariantSpectrum
+public import FLT.Mazur.SchemeRelationInvariantTestEquality
 public import FLT.Mazur.SchemeRelationIsoInvariants
 public import FLT.Mazur.SchemeRelationLocalFunctionDescent
 public import FLT.Mazur.SchemeRelationOpenFunctionDescent
