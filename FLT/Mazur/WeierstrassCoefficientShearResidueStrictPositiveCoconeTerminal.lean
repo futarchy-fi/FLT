@@ -22,9 +22,9 @@ import all FLT.Mazur.WeierstrassCoefficientShearResidueStrictPositiveRetainedDes
 import all FLT.Mazur.WeierstrassCoefficientShearResidueStrictPositiveCoconeLines
 
 /-!
-# Full projective restrictions on every original adjacent component pair
+# Full projective restrictions on the independent strict terminal pair
 
-Every original adjacent pair retains both full affine charts and its cyclic orientation.
+Both terminal components retain their full affine charts and distinct cyclic positions.
 -/
 
 @[expose] public noncomputable section

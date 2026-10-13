@@ -17,7 +17,7 @@ import all FLT.Mazur.WeierstrassCoefficientShearResidueStrictZeroRetainedDescent
 import all FLT.Mazur.WeierstrassCoefficientShearRetainedEquationDescent
 
 /-!
-# Adjacent boundary compatibility of the strict positive residue cocone
+# Positive adjacent boundary compatibility of the strict start-zero cocone
 
 The full old conic descent and the next whole tensor equation agree on their
 entire original incidence boundary, including when the next chart is final.
