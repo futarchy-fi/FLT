@@ -3618,6 +3618,7 @@ public import FLT.Mazur.CyclicHomDivisorInclusionPullback
 public import FLT.Mazur.CyclicHomDivisorProduct
 public import FLT.Mazur.CyclicHomDivisorProductPullback
 public import FLT.Mazur.CyclicHomDivisorPullback
+public import FLT.Mazur.CyclicHomGlobalMarkedRelation
 public import FLT.Mazur.CyclicHomLocusEquationUniversal
 public import FLT.Mazur.CyclicHomLocusFppfCoverage
 public import FLT.Mazur.CyclicHomLocusModuli
@@ -3626,8 +3627,15 @@ public import FLT.Mazur.CyclicHomLocusNormalizationRetraction
 public import FLT.Mazur.CyclicHomLocusRelabel
 public import FLT.Mazur.CyclicHomLocusRelabelAction
 public import FLT.Mazur.CyclicHomLocusRelabelNormalization
+public import FLT.Mazur.CyclicHomLocusRelationGroupoid
+public import FLT.Mazur.CyclicHomLocusRelationLaws
 public import FLT.Mazur.CyclicHomLocusRelationRelabel
+public import FLT.Mazur.CyclicHomLocusUniversalComparison
 public import FLT.Mazur.CyclicHomMarkedFamilyRelation
+public import FLT.Mazur.CyclicHomMarkedGroupRigidity
+public import FLT.Mazur.CyclicHomMarkedIsoParameterTransport
+public import FLT.Mazur.CyclicHomMarkedIsoPullback
+public import FLT.Mazur.CyclicHomMarkedIsoPullbackCoherence
 public import FLT.Mazur.CyclicHomMultiplicationEquation
 public import FLT.Mazur.CyclicHomMultiplicationLocus
 public import FLT.Mazur.CyclicHomMultiplicationLocusUniversal
@@ -3654,7 +3662,10 @@ public import FLT.Mazur.CyclicHomRelabelNormalization
 public import FLT.Mazur.CyclicHomRelabelParameter
 public import FLT.Mazur.CyclicHomRelabelSubgroup
 public import FLT.Mazur.CyclicHomRelabeledNormalizationIso
+public import FLT.Mazur.CyclicHomRelationIsoCoherence
+public import FLT.Mazur.CyclicHomRelationIsoNaturality
 public import FLT.Mazur.CyclicHomSourceDivisor
+public import FLT.Mazur.CyclicHomSourceGroupComparison
 public import FLT.Mazur.CyclicHomSourceIdealPullback
 public import FLT.Mazur.CyclicHomSourceModuli
 public import FLT.Mazur.CyclicHomSourcePullback
@@ -5381,6 +5392,9 @@ public import FLT.Mazur.IntegralDimension
 public import FLT.Mazur.IntegralImageIdealStalk
 public import FLT.Mazur.IntegralPointExtension
 public import FLT.Mazur.IntegralShortHomologyNaturality
+public import FLT.Mazur.IntegralWeierstrassAuxiliaryLevel
+public import FLT.Mazur.IntegralWeierstrassCharacteristicCover
+public import FLT.Mazur.IntegralWeierstrassParameter
 public import FLT.Mazur.IntersectionCocycleLimitUnits
 public import FLT.Mazur.IntersectionCocyclePullbackRecovery
 public import FLT.Mazur.IntersectionDiagramGluing
