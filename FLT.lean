@@ -2771,6 +2771,10 @@ public import FLT.Mazur.AffineHilbertFiniteGroundBaseRefinement
 public import FLT.Mazur.AffineHilbertFiniteKernelAlgebra
 public import FLT.Mazur.AffineHilbertFiniteKernelEquations
 public import FLT.Mazur.AffineHilbertFiniteKernelModel
+public import FLT.Mazur.AffineHilbertFiniteModelImage
+public import FLT.Mazur.AffineHilbertFiniteModelImageRelation
+public import FLT.Mazur.AffineHilbertFiniteModelImageRestriction
+public import FLT.Mazur.AffineHilbertFiniteModelPrincipalCover
 public import FLT.Mazur.AffineHilbertFiniteTensorCover
 public import FLT.Mazur.AffineHilbertFixedBaseEnvelope
 public import FLT.Mazur.AffineHilbertFixedBaseQuotient
@@ -3621,6 +3625,7 @@ public import FLT.Mazur.ConstantCyclicSectionMap
 public import FLT.Mazur.ConstantDegree
 public import FLT.Mazur.ConstantGroupTensorEvaluation
 public import FLT.Mazur.ConstantPrimeScalarFiltration
+public import FLT.Mazur.ConstructibleDenseInterior
 public import FLT.Mazur.Contracts
 public import FLT.Mazur.CoprimeFieldGroupTransport
 public import FLT.Mazur.CoprimeGroupMarkings
@@ -4494,6 +4499,7 @@ public import FLT.Mazur.FinitePrincipalAtlasTripleRoutes
 public import FLT.Mazur.FinitePrincipalAtlasUpperLimit
 public import FLT.Mazur.FinitePrincipalChartIntegerDescent
 public import FLT.Mazur.FinitePrincipalIdealPatching
+public import FLT.Mazur.FinitePrincipalImageCover
 public import FLT.Mazur.FinitePrincipalTargetRefinement
 public import FLT.Mazur.FiniteProductDirectSum
 public import FLT.Mazur.FiniteProjectivePrincipalDescent
@@ -8394,6 +8400,7 @@ public import FLT.Mazur.SchemeRefinementReconstruction
 public import FLT.Mazur.SchemeRelationDoubleRestriction
 public import FLT.Mazur.SchemeRelationFunctionDescent
 public import FLT.Mazur.SchemeRelationInvariantAffineUniversal
+public import FLT.Mazur.SchemeRelationInvariantDomainIso
 public import FLT.Mazur.SchemeRelationInvariantDominant
 public import FLT.Mazur.SchemeRelationInvariantEnvelope
 public import FLT.Mazur.SchemeRelationInvariantRestriction
