@@ -5964,6 +5964,7 @@ public import FLT.Mazur.OddWeierstrassOriginalAuxiliaryCover
 public import FLT.Mazur.OddWeierstrassPointedCubicAuxiliaryCover
 public import FLT.Mazur.OddWeierstrassPointedCubicCoefficientParameter
 public import FLT.Mazur.OddWeierstrassPointedCubicHomAuxiliaryParameter
+public import FLT.Mazur.OddWeierstrassPointedCubicHomLocusFactorization
 public import FLT.Mazur.OddWeierstrassPointedCubicHomMultiplicationVanishing
 public import FLT.Mazur.OddWeierstrassPointedCubicHomRetainedSubgroup
 public import FLT.Mazur.OddWeierstrassPointedCubicHomSourceGroup
