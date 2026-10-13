@@ -7706,6 +7706,7 @@ public import FLT.Mazur.RelativePoleComplementLinear
 public import FLT.Mazur.RelativeRankOneDivisorUniqueness
 public import FLT.Mazur.RelativeRelationArrowCalculus
 public import FLT.Mazur.RelativeRelationFppfInvariantQuotient
+public import FLT.Mazur.RelativeRelationFppfLocallyRingedDescent
 public import FLT.Mazur.RelativeRelationFppfOrbitComparison
 public import FLT.Mazur.RelativeRelationFppfSectionComparison
 public import FLT.Mazur.RelativeRelationFpqcInvariantQuotient
