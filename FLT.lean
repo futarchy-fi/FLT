@@ -5890,6 +5890,7 @@ public import FLT.Mazur.NodeTangentFieldFixed
 public import FLT.Mazur.NodeTangentFractionField
 public import FLT.Mazur.NodeTangentGaloisLabel
 public import FLT.Mazur.NodeTangentGluedCoefficients
+public import FLT.Mazur.NodeTangentInfinitySlopeCompatibility
 public import FLT.Mazur.NodeTangentNormalizationChart
 public import FLT.Mazur.NodeTangentNormalizationConjugation
 public import FLT.Mazur.NodeTangentNormalizationDescent
@@ -8899,6 +8900,8 @@ public import FLT.Mazur.WeierstrassCoefficientShearConicOrigins
 public import FLT.Mazur.WeierstrassCoefficientShearConicParameters
 public import FLT.Mazur.WeierstrassCoefficientShearCoverage
 public import FLT.Mazur.WeierstrassCoefficientShearEqualityChartParameters
+public import FLT.Mazur.WeierstrassCoefficientShearEqualityDividedExclusions
+public import FLT.Mazur.WeierstrassCoefficientShearEqualityOpenExclusions
 public import FLT.Mazur.WeierstrassCoefficientShearEqualityRootChange
 public import FLT.Mazur.WeierstrassCoefficientShearEqualitySemilinear
 public import FLT.Mazur.WeierstrassCoefficientShearEqualitySpecialization
@@ -8920,6 +8923,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearInitialConicSpecialization
 public import FLT.Mazur.WeierstrassCoefficientShearInitialEquationDescent
 public import FLT.Mazur.WeierstrassCoefficientShearInitialFiber
 public import FLT.Mazur.WeierstrassCoefficientShearInitialHomExt
+public import FLT.Mazur.WeierstrassCoefficientShearInitialInfinityAtlasPullback
 public import FLT.Mazur.WeierstrassCoefficientShearInitialLaterAtlasPullback
 public import FLT.Mazur.WeierstrassCoefficientShearInitialLineBoundary
 public import FLT.Mazur.WeierstrassCoefficientShearInitialLineContraction
@@ -8963,6 +8967,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearResidueAdjacentRightCharts
 public import FLT.Mazur.WeierstrassCoefficientShearResidueAtlasAdjacentBoundary
 public import FLT.Mazur.WeierstrassCoefficientShearResidueAtlasAdjacentPullback
 public import FLT.Mazur.WeierstrassCoefficientShearResidueAtlasCoconeMaps
+public import FLT.Mazur.WeierstrassCoefficientShearResidueAtlasDividedPullbacks
 public import FLT.Mazur.WeierstrassCoefficientShearResidueAtlasInitialBoundary
 public import FLT.Mazur.WeierstrassCoefficientShearResidueAtlasInitialPullbacks
 public import FLT.Mazur.WeierstrassCoefficientShearResidueAtlasLines
@@ -10001,6 +10006,8 @@ public import FLT.Mazur.WeierstrassIncidenceCoefficientTransport
 public import FLT.Mazur.WeierstrassIncidenceResidueShearComparison
 public import FLT.Mazur.WeierstrassIncidenceShearConicBoundary
 public import FLT.Mazur.WeierstrassIncidenceShearConicCoefficient
+public import FLT.Mazur.WeierstrassIncidenceShearInfinityBoundary
+public import FLT.Mazur.WeierstrassIncidenceShearInfinitySlope
 public import FLT.Mazur.WeierstrassIncidenceShearLineContraction
 public import FLT.Mazur.WeierstrassIncidenceShearLineProjection
 public import FLT.Mazur.WeierstrassIncidenceShearNormalForm
@@ -10335,6 +10342,7 @@ public import FLT.Mazur.WeierstrassModificationXFiberNodeMaps
 public import FLT.Mazur.WeierstrassModificationXFiberNormalForm
 public import FLT.Mazur.WeierstrassModificationXFiberQuotients
 public import FLT.Mazur.WeierstrassModificationXFiberSecondNode
+public import FLT.Mazur.WeierstrassModificationXFiberShiftedInfinity
 public import FLT.Mazur.WeierstrassModificationXFiberTangentSwitch
 public import FLT.Mazur.WeierstrassModificationXFlat
 public import FLT.Mazur.WeierstrassModificationXFractionEquation
@@ -10785,6 +10793,7 @@ public import FLT.Mazur.WeierstrassSplitDepthNormalizedQuotientAction
 public import FLT.Mazur.WeierstrassSplitDepthOriginalFractionAction
 public import FLT.Mazur.WeierstrassSplitDepthResidueEquation
 public import FLT.Mazur.WeierstrassSplitDepthSecantResidue
+public import FLT.Mazur.WeierstrassSplitInfinitySlopeCompatibility
 public import FLT.Mazur.WeierstrassSplitNodalAffineParameters
 public import FLT.Mazur.WeierstrassSplitNodalChart
 public import FLT.Mazur.WeierstrassSplitNodalChartGroup
