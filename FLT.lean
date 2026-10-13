@@ -5917,6 +5917,7 @@ public import FLT.Mazur.OddWeierstrassAuxiliaryCoordinateUnits
 public import FLT.Mazur.OddWeierstrassAuxiliaryCoverage
 public import FLT.Mazur.OddWeierstrassAuxiliaryEtale
 public import FLT.Mazur.OddWeierstrassAuxiliaryFieldCoordinates
+public import FLT.Mazur.OddWeierstrassAuxiliaryFrameUnits
 public import FLT.Mazur.OddWeierstrassAuxiliaryFullBasis
 public import FLT.Mazur.OddWeierstrassAuxiliaryLevel
 public import FLT.Mazur.OddWeierstrassAuxiliaryTorsionCover
