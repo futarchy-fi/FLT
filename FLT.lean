@@ -3622,6 +3622,7 @@ public import FLT.Mazur.ConnectedIrreducibleNeighborhoods
 public import FLT.Mazur.ConnectedJacobsonNoDiscreteOpen
 public import FLT.Mazur.ConnectedOfGlobalSections
 public import FLT.Mazur.ConnectedPointedLineSheafDescent
+public import FLT.Mazur.ConstantCyclicActionDescent
 public import FLT.Mazur.ConstantCyclicAffineGeometry
 public import FLT.Mazur.ConstantCyclicFiniteEtale
 public import FLT.Mazur.ConstantCyclicGenerator
@@ -6517,8 +6518,12 @@ public import FLT.Mazur.PolygonCompleteCartesianPointCohomology
 public import FLT.Mazur.PolygonCompleteCartesianPointDegree
 public import FLT.Mazur.PolygonCompleteCartesianPointDivisor
 public import FLT.Mazur.PolygonCompleteCartesianPointLine
+public import FLT.Mazur.PolygonCompleteCartesianRefinement
 public import FLT.Mazur.PolygonCompleteCartesianRotation
 public import FLT.Mazur.PolygonCompleteClassifiedFibers
+public import FLT.Mazur.PolygonCompleteClosedActionRotation
+public import FLT.Mazur.PolygonCompleteClosedCyclicAction
+public import FLT.Mazur.PolygonCompleteClosedCyclicGroup
 public import FLT.Mazur.PolygonCompleteClosedFiber
 public import FLT.Mazur.PolygonCompleteClosedGenus
 public import FLT.Mazur.PolygonCompleteClosedH1Scalars
@@ -6677,11 +6682,14 @@ public import FLT.Mazur.PolygonCompletePointSectionBaseChange
 public import FLT.Mazur.PolygonCompletePointWeierstrassEquation
 public import FLT.Mazur.PolygonCompletePrincipalClosedFiber
 public import FLT.Mazur.PolygonCompleteProjectiveRotation
+public import FLT.Mazur.PolygonCompleteRefinementPointLine
+public import FLT.Mazur.PolygonCompleteRefinementSquares
 public import FLT.Mazur.PolygonCompleteRotation
 public import FLT.Mazur.PolygonCompleteSmoothCyclicMarking
 public import FLT.Mazur.PolygonCompleteSmoothDimensionOpen
 public import FLT.Mazur.PolygonCompleteSmoothIrreducible
 public import FLT.Mazur.PolygonCompleteSmoothPointAffine
+public import FLT.Mazur.PolygonCompleteSmoothRefinement
 public import FLT.Mazur.PolygonCompleteSmoothRotation
 public import FLT.Mazur.PolygonCompleteStageMarkings
 public import FLT.Mazur.PolygonCompleteStageRotation
