@@ -8405,6 +8405,7 @@ public import FLT.Mazur.SmoothTranslationNeighborhoodDomains
 public import FLT.Mazur.SmoothTranslationOrbitCover
 public import FLT.Mazur.SmoothTranslationOrbitOpen
 public import FLT.Mazur.SmoothTranslationOriginalInvariantDescent
+public import FLT.Mazur.SmoothTranslationQuotientCommonSource
 public import FLT.Mazur.SmoothTranslationQuotientOpenImmersion
 public import FLT.Mazur.SmoothTranslationQuotientSectionPullback
 public import FLT.Mazur.SmoothTranslationRestrictedRelationCover
