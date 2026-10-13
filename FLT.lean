@@ -4183,6 +4183,7 @@ public import FLT.Mazur.EtaleSepClosedPointDescent
 public import FLT.Mazur.EtaleSeparableResidueCoordinates
 public import FLT.Mazur.EtaleSimpleRootCoordinates
 public import FLT.Mazur.EtaleTranslationBranchMaps
+public import FLT.Mazur.EtaleTranslationFiniteNeighborhood
 public import FLT.Mazur.EvaluatedPrincipalRefinement
 public import FLT.Mazur.EventualTwistVanishing
 public import FLT.Mazur.ExactFunctorInjectiveExt
