@@ -6274,6 +6274,7 @@ public import FLT.Mazur.PointedCubicIndependentSourceGroup
 public import FLT.Mazur.PointedCubicIndependentSourceSubgroup
 public import FLT.Mazur.PointedCubicNormalizedOriginalClass
 public import FLT.Mazur.PointedCubicSubgroupTransport
+public import FLT.Mazur.PointedCubicSubgroupTransportUnrestricted
 public import FLT.Mazur.PointedCubicUniversalCyclicParameter
 public import FLT.Mazur.PointedCubicUniversalSourceGroup
 public import FLT.Mazur.PointedCubicUniversalSourceMarking
