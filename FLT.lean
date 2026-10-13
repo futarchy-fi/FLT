@@ -2758,6 +2758,7 @@ public import FLT.Mazur.AffineHilbertFullFiberChart
 public import FLT.Mazur.AffineHilbertFullFiberInterior
 public import FLT.Mazur.AffineHilbertFullFiberInvariant
 public import FLT.Mazur.AffineHilbertFullFiberOpen
+public import FLT.Mazur.AffineHilbertFullInteriorChart
 public import FLT.Mazur.AffineHilbertFullRelationRestriction
 public import FLT.Mazur.AffineHilbertInvariantEnvelope
 public import FLT.Mazur.AffineHilbertInvariantPrincipalEffectiveness
