@@ -5918,6 +5918,7 @@ public import FLT.Mazur.OddWeierstrassAuxiliaryTorsionDisjoint
 public import FLT.Mazur.OddWeierstrassAuxiliaryTorsionSections
 public import FLT.Mazur.OddWeierstrassGeometricLevelThree
 public import FLT.Mazur.OddWeierstrassSpecialization
+public import FLT.Mazur.OddWeierstrassSpecializationGroup
 public import FLT.Mazur.OddWeierstrassThreeTorsionEtale
 public import FLT.Mazur.OddWeierstrassThreeTorsionFinite
 public import FLT.Mazur.OddWeierstrassThreeTorsionUnramified
