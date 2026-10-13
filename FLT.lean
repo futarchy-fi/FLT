@@ -7659,6 +7659,7 @@ public import FLT.Mazur.RelativeFiberNakayama
 public import FLT.Mazur.RelativeFppfComparisonCover
 public import FLT.Mazur.RelativeFppfLocalSubfunctor
 public import FLT.Mazur.RelativeFppfLocallyRingedCover
+public import FLT.Mazur.RelativeFppfPairCover
 public import FLT.Mazur.RelativeFppfRepresentedCover
 public import FLT.Mazur.RelativeFppfSchemeCover
 public import FLT.Mazur.RelativeFppfSurjectivityDetection
