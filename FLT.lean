@@ -6741,6 +6741,7 @@ public import FLT.Mazur.PolygonNodeScaling
 public import FLT.Mazur.PolygonNodesClosed
 public import FLT.Mazur.PolygonNormalizationAlgebra
 public import FLT.Mazur.PolygonNormalizationBaseChangeLine
+public import FLT.Mazur.PolygonNormalizationBranchBaseChange
 public import FLT.Mazur.PolygonNormalizationComplex
 public import FLT.Mazur.PolygonNormalizationDominant
 public import FLT.Mazur.PolygonNormalizationExact
