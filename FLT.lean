@@ -5942,6 +5942,7 @@ public import FLT.Mazur.OddWeierstrassCyclicHomDivisorProductPullback
 public import FLT.Mazur.OddWeierstrassCyclicHomDivisorPullback
 public import FLT.Mazur.OddWeierstrassCyclicHomMultiplicationEquation
 public import FLT.Mazur.OddWeierstrassCyclicHomMultiplicationLocus
+public import FLT.Mazur.OddWeierstrassCyclicHomMultiplicationLocusUniversal
 public import FLT.Mazur.OddWeierstrassCyclicHomMultiplicationPullback
 public import FLT.Mazur.OddWeierstrassCyclicHomSourceDivisor
 public import FLT.Mazur.OddWeierstrassCyclicHomSourceIdealPullback
