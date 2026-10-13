@@ -4219,6 +4219,7 @@ public import FLT.Mazur.EtaleDimGe
 public import FLT.Mazur.EtaleDimLe
 public import FLT.Mazur.EtaleFiniteBranchAtlas
 public import FLT.Mazur.EtaleFiniteBranchDiagram
+public import FLT.Mazur.EtaleFiniteBranchDiagramAtlas
 public import FLT.Mazur.EtaleFiniteBranchEmbedding
 public import FLT.Mazur.EtaleFiniteBranchFiniteDiagram
 public import FLT.Mazur.EtaleFiniteBranchLift
