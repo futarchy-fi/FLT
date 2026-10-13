@@ -6508,6 +6508,7 @@ public import FLT.Mazur.PolygonCompleteCartesianRefinement
 public import FLT.Mazur.PolygonCompleteCartesianRotation
 public import FLT.Mazur.PolygonCompleteClassifiedFibers
 public import FLT.Mazur.PolygonCompleteClosedActionRotation
+public import FLT.Mazur.PolygonCompleteClosedCyclicAction
 public import FLT.Mazur.PolygonCompleteClosedCyclicGroup
 public import FLT.Mazur.PolygonCompleteClosedFiber
 public import FLT.Mazur.PolygonCompleteClosedGenus
