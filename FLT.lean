@@ -7642,6 +7642,7 @@ public import FLT.Mazur.RelativeGenusOneUnrestrictedCanonicalBasis
 public import FLT.Mazur.RelativeGenusOneUnrestrictedCanonicalConstants
 public import FLT.Mazur.RelativeGenusOneUnrestrictedCanonicalLine
 public import FLT.Mazur.RelativeGenusOneUnrestrictedChangedBasis
+public import FLT.Mazur.RelativeGenusOneUnrestrictedComplementCoordinates
 public import FLT.Mazur.RelativeGenusOneUnrestrictedCubicRelation
 public import FLT.Mazur.RelativeGenusOneUnrestrictedFramedProducts
 public import FLT.Mazur.RelativeGenusOneUnrestrictedInitialPoleStep
