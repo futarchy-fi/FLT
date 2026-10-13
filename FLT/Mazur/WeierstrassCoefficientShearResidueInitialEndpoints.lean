@@ -72,7 +72,7 @@ local notation "N" => coefficientShearResidueRetainedNode
 @[reassoc] theorem coefficientShearResidueInitialComponent_infinity (i : Fin 2) :
     ProjectiveLine.infinity Q ≫ C i = N i := by
   unfold coefficientShearResidueInitialComponent coefficientShearResidueRetainedNode
-    coefficientShearResidueRetainedLine
+    coefficientShearResidueRetainedPair
   fin_cases i
   · simp only [Fin.ext_iff, Fin.val_zero, ↓reduceIte]
     rw [← Category.assoc, coefficientShearRootInitialFirstComponent_infinity, Category.assoc]
