@@ -4599,6 +4599,7 @@ public import FLT.Mazur.FinitelyPresentedLineSheafDescent
 public import FLT.Mazur.FixedModelElementLifts
 public import FLT.Mazur.FixedTargetIntegerModel
 public import FLT.Mazur.FlasqueDirectImageAcyclic
+public import FLT.Mazur.FlatAlgebraEqualizer
 public import FLT.Mazur.FlatCartesianSectionGluing
 public import FLT.Mazur.FlatCartierIdealPullback
 public import FLT.Mazur.FlatCoefficientAllCohomology
