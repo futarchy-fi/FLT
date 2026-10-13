@@ -3782,6 +3782,8 @@ public import FLT.Mazur.DivisorLinePullbackIdentity
 public import FLT.Mazur.DivisorLinePullbackTransport
 public import FLT.Mazur.DivisorLineSectionCompatibility
 public import FLT.Mazur.DivisorLineSectionComposition
+public import FLT.Mazur.DivisorLineSectionIdealTransport
+public import FLT.Mazur.DivisorLineSectionIdentity
 public import FLT.Mazur.DivisorLineSectionModel
 public import FLT.Mazur.DivisorLineSectionSquare
 public import FLT.Mazur.DivisorLineSectionTriangle
@@ -6692,6 +6694,8 @@ public import FLT.Mazur.PolygonLineNormalization
 public import FLT.Mazur.PolygonMarkedScaling
 public import FLT.Mazur.PolygonMarkedSections
 public import FLT.Mazur.PolygonMarkingAffineNeighborhood
+public import FLT.Mazur.PolygonMarkingNodeLine
+public import FLT.Mazur.PolygonMarkingNormalizationLine
 public import FLT.Mazur.PolygonMultipleCoefficientProjMap
 public import FLT.Mazur.PolygonMultipleCoefficientStageNaturality
 public import FLT.Mazur.PolygonMultipleCoefficientStageOpens
@@ -6737,6 +6741,7 @@ public import FLT.Mazur.PolygonNormalizationFinite
 public import FLT.Mazur.PolygonNormalizationHOne
 public import FLT.Mazur.PolygonNormalizationHZero
 public import FLT.Mazur.PolygonNormalizationLinearSections
+public import FLT.Mazur.PolygonNormalizationNodeLine
 public import FLT.Mazur.PolygonNormalizationSectionCompatibility
 public import FLT.Mazur.PolygonNormalizationSectionFamilies
 public import FLT.Mazur.PolygonNormalizationTorusPullback
@@ -6819,8 +6824,11 @@ public import FLT.Mazur.PolygonPureDimension
 public import FLT.Mazur.PolygonReciprocalEvaluation
 public import FLT.Mazur.PolygonRefinedClosedCharts
 public import FLT.Mazur.PolygonReflectionFullFamily
+public import FLT.Mazur.PolygonReflectionLineInvolution
 public import FLT.Mazur.PolygonReflectionMarking
 public import FLT.Mazur.PolygonReflectionMarkingLine
+public import FLT.Mazur.PolygonReflectionNormalizationLine
+public import FLT.Mazur.PolygonRelabelingNodeLine
 public import FLT.Mazur.PolygonRetainedSectionRotation
 public import FLT.Mazur.PolygonRetainedStageMarkings
 public import FLT.Mazur.PolygonRotationMarkingLine
@@ -6828,7 +6836,9 @@ public import FLT.Mazur.PolygonRotationNoFixedPoints
 public import FLT.Mazur.PolygonRotationScalars
 public import FLT.Mazur.PolygonScalarReflectionRelations
 public import FLT.Mazur.PolygonScaledReciprocal
+public import FLT.Mazur.PolygonScalingMarkingLine
 public import FLT.Mazur.PolygonScalingNaturality
+public import FLT.Mazur.PolygonScalingRotationLine
 public import FLT.Mazur.PolygonSectionRingFunctor
 public import FLT.Mazur.PolygonSeparated
 public import FLT.Mazur.PolygonSeriesTowerAssembly
@@ -6923,7 +6933,14 @@ public import FLT.Mazur.PolygonStageVeroneseProj
 public import FLT.Mazur.PolygonStageVeroneseProjTransition
 public import FLT.Mazur.PolygonStageVeroneseTransition
 public import FLT.Mazur.PolygonStructureInclusion
+public import FLT.Mazur.PolygonTranslationComposition
 public import FLT.Mazur.PolygonTranslationImages
+public import FLT.Mazur.PolygonTranslationLineCocycle
+public import FLT.Mazur.PolygonTranslationLineComposition
+public import FLT.Mazur.PolygonTranslationLineIdentity
+public import FLT.Mazur.PolygonTranslationMarkingLine
+public import FLT.Mazur.PolygonTranslationNormalizationLine
+public import FLT.Mazur.PolygonTranslationReflectionLine
 public import FLT.Mazur.PolygonUniversalAction
 public import FLT.Mazur.PolygonUniversalScaling
 public import FLT.Mazur.PolygonVeroneseAdicProjSquare
