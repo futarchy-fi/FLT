@@ -5993,6 +5993,7 @@ public import FLT.Mazur.OrderedHilbertFaithfulChartComparison
 public import FLT.Mazur.OrderedHilbertFaithfulChartProjection
 public import FLT.Mazur.OrderedHilbertFaithfulClass
 public import FLT.Mazur.OrderedHilbertFaithfulEnvelope
+public import FLT.Mazur.OrderedHilbertFaithfulEnvelopeIso
 public import FLT.Mazur.OrderedHilbertFaithfulInvariantCoefficients
 public import FLT.Mazur.OrderedHilbertFaithfulOrbitCover
 public import FLT.Mazur.OrderedHilbertFaithfulParameter
