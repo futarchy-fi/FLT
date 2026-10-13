@@ -7638,6 +7638,7 @@ public import FLT.Mazur.RelativeGenusOneUnrestrictedAffineLowPoles
 public import FLT.Mazur.RelativeGenusOneUnrestrictedCanonicalBasis
 public import FLT.Mazur.RelativeGenusOneUnrestrictedCanonicalLine
 public import FLT.Mazur.RelativeGenusOneUnrestrictedChangedBasis
+public import FLT.Mazur.RelativeGenusOneUnrestrictedFramedProducts
 public import FLT.Mazur.RelativeGenusOneUnrestrictedLowPoleBasis
 public import FLT.Mazur.RelativeGenusOneUnrestrictedPointFrames
 public import FLT.Mazur.RelativeGenusOneUnrestrictedPointLeading
