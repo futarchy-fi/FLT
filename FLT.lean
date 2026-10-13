@@ -4188,6 +4188,7 @@ public import FLT.Mazur.EtaleCyclicOriginalInvariantDescent
 public import FLT.Mazur.EtaleCyclicOriginalLocalCubic
 public import FLT.Mazur.EtaleCyclicOriginalLocalCubicUnrestricted
 public import FLT.Mazur.EtaleCyclicOriginalNormalizedCoverage
+public import FLT.Mazur.EtaleCyclicOriginalNormalizedCoverageUnrestricted
 public import FLT.Mazur.EtaleCyclicPresentationPullback
 public import FLT.Mazur.EtaleCyclicSmoothLocusIndependentCoverage
 public import FLT.Mazur.EtaleCyclicSmoothLocusNormalizedCoverage
