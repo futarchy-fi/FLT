@@ -2756,6 +2756,7 @@ public import FLT.Mazur.AffineHilbertEnvelopeKernelPair
 public import FLT.Mazur.AffineHilbertEnvelopeOpenChart
 public import FLT.Mazur.AffineHilbertEnvelopeQuotient
 public import FLT.Mazur.AffineHilbertEnvelopeScheme
+public import FLT.Mazur.AffineHilbertEtaleComposition
 public import FLT.Mazur.AffineHilbertFiniteBranchAtlas
 public import FLT.Mazur.AffineHilbertFiniteBranches
 public import FLT.Mazur.AffineHilbertFiniteFiberPrincipal
