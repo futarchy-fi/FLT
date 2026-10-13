@@ -6462,6 +6462,7 @@ public import FLT.Mazur.PolygonCompleteBoundaryCoordinateTransport
 public import FLT.Mazur.PolygonCompleteBoundaryDescended
 public import FLT.Mazur.PolygonCompleteBoundaryFactorization
 public import FLT.Mazur.PolygonCompleteBoundaryFiberLine
+public import FLT.Mazur.PolygonCompleteBoundaryFrameRefinement
 public import FLT.Mazur.PolygonCompleteBoundaryLabels
 public import FLT.Mazur.PolygonCompleteBoundaryLineComparison
 public import FLT.Mazur.PolygonCompleteBoundaryLocalComparison
