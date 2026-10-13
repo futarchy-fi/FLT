@@ -10699,6 +10699,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXMiddleConic
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleConicFactor
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleDisjoint
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleExtension
+public import FLT.Mazur.WeierstrassSuccessiveXMiddleFiberHomExt
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleFirstParameter
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleIncidence
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleIntersection
