@@ -8704,6 +8704,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearResidueBranches
 public import FLT.Mazur.WeierstrassCoefficientShearResidueConic
 public import FLT.Mazur.WeierstrassCoefficientShearResidueCycleCoproduct
 public import FLT.Mazur.WeierstrassCoefficientShearResidueEquality
+public import FLT.Mazur.WeierstrassCoefficientShearResidueEqualityEndpoints
 public import FLT.Mazur.WeierstrassCoefficientShearResidueExterior
 public import FLT.Mazur.WeierstrassCoefficientShearResidueExteriorLift
 public import FLT.Mazur.WeierstrassCoefficientShearResidueInitial
