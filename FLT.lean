@@ -2755,8 +2755,13 @@ public import FLT.Mazur.AffineHilbertFixedBaseQuotientIso
 public import FLT.Mazur.AffineHilbertFixedBaseRelation
 public import FLT.Mazur.AffineHilbertFixedBaseRelationInverse
 public import FLT.Mazur.AffineHilbertFullFiberChart
+public import FLT.Mazur.AffineHilbertFullFiberInterior
 public import FLT.Mazur.AffineHilbertFullFiberInvariant
 public import FLT.Mazur.AffineHilbertFullFiberOpen
+public import FLT.Mazur.AffineHilbertFullFiberPrincipal
+public import FLT.Mazur.AffineHilbertFullFiberRefinement
+public import FLT.Mazur.AffineHilbertFullFiberRestriction
+public import FLT.Mazur.AffineHilbertFullInteriorChart
 public import FLT.Mazur.AffineHilbertFullRelationRestriction
 public import FLT.Mazur.AffineHilbertInvariantEnvelope
 public import FLT.Mazur.AffineHilbertInvariantPrincipalEffectiveness
@@ -7909,6 +7914,7 @@ public import FLT.Mazur.SchemeNilpotentSectionDetection
 public import FLT.Mazur.SchemeNormalizedRecoveryOverlap
 public import FLT.Mazur.SchemeOpenChartRange
 public import FLT.Mazur.SchemeOpenEnvelopeDenominators
+public import FLT.Mazur.SchemeOpenEnvelopeInterior
 public import FLT.Mazur.SchemeOpenEnvelopeLocus
 public import FLT.Mazur.SchemeOpenPushoutCharts
 public import FLT.Mazur.SchemeOpenPushoutCoverIso
