@@ -6684,6 +6684,7 @@ public import FLT.Mazur.PolygonCompleteSmoothCyclicMarking
 public import FLT.Mazur.PolygonCompleteSmoothDimensionOpen
 public import FLT.Mazur.PolygonCompleteSmoothFieldCurve
 public import FLT.Mazur.PolygonCompleteSmoothFieldGroup
+public import FLT.Mazur.PolygonCompleteSmoothFieldGroupHom
 public import FLT.Mazur.PolygonCompleteSmoothIrreducible
 public import FLT.Mazur.PolygonCompleteSmoothPointAffine
 public import FLT.Mazur.PolygonCompleteSmoothRefinement
