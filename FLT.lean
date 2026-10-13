@@ -6811,6 +6811,7 @@ public import FLT.Mazur.PolygonOriginalNodeClosed
 public import FLT.Mazur.PolygonOriginalNodePoint
 public import FLT.Mazur.PolygonOriginalStageAdicSquare
 public import FLT.Mazur.PolygonParameterProjectionComposition
+public import FLT.Mazur.PolygonParameterTranslation
 public import FLT.Mazur.PolygonParameterizedHomExt
 public import FLT.Mazur.PolygonPinchingAffineBaseChange
 public import FLT.Mazur.PolygonPinchingDiagram
