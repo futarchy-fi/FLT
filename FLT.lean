@@ -2747,15 +2747,19 @@ public import FLT.Mazur.AffineGeometricReconstructionCompatibility
 public import FLT.Mazur.AffineGeometricRefinementData
 public import FLT.Mazur.AffineGeometricTensorCocycle
 public import FLT.Mazur.AffineGeometricTensorDatum
+public import FLT.Mazur.AffineHilbertAssociativeFiniteBranches
+public import FLT.Mazur.AffineHilbertBranchCompositionCoefficients
 public import FLT.Mazur.AffineHilbertCartesianEnvelope
 public import FLT.Mazur.AffineHilbertChartRelation
 public import FLT.Mazur.AffineHilbertComposableEnvelope
 public import FLT.Mazur.AffineHilbertCompositionCharts
+public import FLT.Mazur.AffineHilbertCompositionFiniteBranches
 public import FLT.Mazur.AffineHilbertEnvelopeCoaction
 public import FLT.Mazur.AffineHilbertEnvelopeKernelPair
 public import FLT.Mazur.AffineHilbertEnvelopeOpenChart
 public import FLT.Mazur.AffineHilbertEnvelopeQuotient
 public import FLT.Mazur.AffineHilbertEnvelopeScheme
+public import FLT.Mazur.AffineHilbertEtaleComposition
 public import FLT.Mazur.AffineHilbertFiniteBranchAtlas
 public import FLT.Mazur.AffineHilbertFiniteBranches
 public import FLT.Mazur.AffineHilbertFiniteFiberPrincipal
@@ -2782,6 +2786,7 @@ public import FLT.Mazur.AffineHilbertGroundBaseSource
 public import FLT.Mazur.AffineHilbertInvariantEnvelope
 public import FLT.Mazur.AffineHilbertInvariantPrincipalEffectiveness
 public import FLT.Mazur.AffineHilbertInvariantPrincipalProduct
+public import FLT.Mazur.AffineHilbertInverseFiniteBranches
 public import FLT.Mazur.AffineHilbertLocalTensorInvariants
 public import FLT.Mazur.AffineHilbertLocalizedCoefficients
 public import FLT.Mazur.AffineHilbertLocalizedComposition
@@ -2819,6 +2824,7 @@ public import FLT.Mazur.AffineHilbertTranslationSource
 public import FLT.Mazur.AffineHilbertTranslationSourceCartesian
 public import FLT.Mazur.AffineHilbertTranslationSourceCoefficients
 public import FLT.Mazur.AffineHilbertTranslationSourceCover
+public import FLT.Mazur.AffineHilbertTripleComposition
 public import FLT.Mazur.AffineIdealContainment
 public import FLT.Mazur.AffineIdealCoordinates
 public import FLT.Mazur.AffineIdealPowerExtension
@@ -4214,7 +4220,11 @@ public import FLT.Mazur.EtaleCyclicSubgroupLocalPresentation
 public import FLT.Mazur.EtaleDimGe
 public import FLT.Mazur.EtaleDimLe
 public import FLT.Mazur.EtaleFiniteBranchAtlas
+public import FLT.Mazur.EtaleFiniteBranchDiagram
+public import FLT.Mazur.EtaleFiniteBranchDiagramAtlas
 public import FLT.Mazur.EtaleFiniteBranchEmbedding
+public import FLT.Mazur.EtaleFiniteBranchFiniteDiagram
+public import FLT.Mazur.EtaleFiniteBranchLift
 public import FLT.Mazur.EtaleFiniteBranchNeighborhood
 public import FLT.Mazur.EtaleFiniteBranchScheme
 public import FLT.Mazur.EtaleFiniteQuotientBranch
