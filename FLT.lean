@@ -3618,6 +3618,7 @@ public import FLT.Mazur.CyclicHomNormalizationGroup
 public import FLT.Mazur.CyclicHomNormalizationNaturality
 public import FLT.Mazur.CyclicHomNormalizationParameter
 public import FLT.Mazur.CyclicHomNormalizationRelationIso
+public import FLT.Mazur.CyclicHomNormalizationRelationSubgroup
 public import FLT.Mazur.CyclicHomNormalizationSubgroup
 public import FLT.Mazur.CyclicHomNormalizedCubicValue
 public import FLT.Mazur.CyclicHomNormalizedFppfCoverage
