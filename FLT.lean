@@ -7385,6 +7385,7 @@ public import FLT.Mazur.ProperLineAcyclicFiniteFree
 public import FLT.Mazur.ProperLineAcyclicLocus
 public import FLT.Mazur.ProperLineAcyclicNeighborhood
 public import FLT.Mazur.ProperLineAcyclicOpenRepresentation
+public import FLT.Mazur.ProperLineAcyclicTestChart
 public import FLT.Mazur.ProperLineArbitraryBaseChange
 public import FLT.Mazur.ProperLineChartFiberVanishing
 public import FLT.Mazur.ProperLineCoefficientFiberComparison
