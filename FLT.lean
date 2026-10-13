@@ -9618,6 +9618,7 @@ public import FLT.Mazur.WeierstrassDividedFirstFractionOverlap
 public import FLT.Mazur.WeierstrassDividedFirstFractionUnique
 public import FLT.Mazur.WeierstrassDividedFirstInfinityAction
 public import FLT.Mazur.WeierstrassDividedFirstInfinityCenter
+public import FLT.Mazur.WeierstrassDividedFirstInfinityFactorization
 public import FLT.Mazur.WeierstrassDividedFirstOutputCover
 public import FLT.Mazur.WeierstrassDividedFirstSuccessorAction
 public import FLT.Mazur.WeierstrassDividedFirstUnitAction
