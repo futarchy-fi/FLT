@@ -4331,6 +4331,7 @@ public import FLT.Mazur.FiniteCechTermScalars
 public import FLT.Mazur.FiniteClosedIdealSection
 public import FLT.Mazur.FiniteClosedImmersionIntegerDescent
 public import FLT.Mazur.FiniteCoefficientDifferenceIdeal
+public import FLT.Mazur.FiniteCoefficientJoin
 public import FLT.Mazur.FiniteCoefficientKernelSubalgebra
 public import FLT.Mazur.FiniteCoefficientProperties
 public import FLT.Mazur.FiniteCohomologyFreeNeighborhood
