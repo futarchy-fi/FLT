@@ -4634,6 +4634,7 @@ public import FLT.Mazur.GeneralizedCurvePicardPresheaf
 public import FLT.Mazur.GeneralizedCurvePointedCubicFamily
 public import FLT.Mazur.GeneralizedCurvePointedCubicGroup
 public import FLT.Mazur.GeneralizedCurvePointedCubicPresentation
+public import FLT.Mazur.GeneralizedCurvePointedCubicUnrestrictedFamily
 public import FLT.Mazur.GeneralizedCurvePullback
 public import FLT.Mazur.GeneralizedCurvePullbackCoherence
 public import FLT.Mazur.GeneralizedCurveRelativePointFrames
