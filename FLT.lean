@@ -6813,6 +6813,7 @@ public import FLT.Mazur.PolygonOriginalStageAdicSquare
 public import FLT.Mazur.PolygonParameterMarkingLine
 public import FLT.Mazur.PolygonParameterProjectionComposition
 public import FLT.Mazur.PolygonParameterTranslation
+public import FLT.Mazur.PolygonParameterTranslationOriginal
 public import FLT.Mazur.PolygonParameterizedHomExt
 public import FLT.Mazur.PolygonPinchingAffineBaseChange
 public import FLT.Mazur.PolygonPinchingDiagram
