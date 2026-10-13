@@ -9947,6 +9947,7 @@ public import FLT.Mazur.WeierstrassHorizontalFractionHomExt
 public import FLT.Mazur.WeierstrassHorizontalGlobalChartComparison
 public import FLT.Mazur.WeierstrassIncidenceCoefficientTransport
 public import FLT.Mazur.WeierstrassIncidenceResidueShearComparison
+public import FLT.Mazur.WeierstrassIncidenceShearConicBoundary
 public import FLT.Mazur.WeierstrassIncidenceShearConicCoefficient
 public import FLT.Mazur.WeierstrassIncidenceShearLineContraction
 public import FLT.Mazur.WeierstrassIncidenceShearLineProjection
