@@ -4185,6 +4185,7 @@ public import FLT.Mazur.EtaleCyclicNormalizedFppfCover
 public import FLT.Mazur.EtaleCyclicNormalizedImageSieve
 public import FLT.Mazur.EtaleCyclicNormalizedImageSieveUnrestricted
 public import FLT.Mazur.EtaleCyclicOriginalIndependentCoverage
+public import FLT.Mazur.EtaleCyclicOriginalIndependentCoverageUnrestricted
 public import FLT.Mazur.EtaleCyclicOriginalInvariantDescent
 public import FLT.Mazur.EtaleCyclicOriginalLocalCubic
 public import FLT.Mazur.EtaleCyclicOriginalLocalCubicUnrestricted
