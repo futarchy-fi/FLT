@@ -3613,6 +3613,7 @@ public import FLT.Mazur.ConnectedIrreducibleNeighborhoods
 public import FLT.Mazur.ConnectedJacobsonNoDiscreteOpen
 public import FLT.Mazur.ConnectedOfGlobalSections
 public import FLT.Mazur.ConnectedPointedLineSheafDescent
+public import FLT.Mazur.ConstantCyclicActionDescent
 public import FLT.Mazur.ConstantCyclicAffineGeometry
 public import FLT.Mazur.ConstantCyclicFiniteEtale
 public import FLT.Mazur.ConstantCyclicGenerator
