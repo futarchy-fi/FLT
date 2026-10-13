@@ -5964,6 +5964,7 @@ public import FLT.Mazur.OddWeierstrassOriginalAuxiliaryCover
 public import FLT.Mazur.OddWeierstrassPointedCubicAuxiliaryCover
 public import FLT.Mazur.OddWeierstrassPointedCubicCoefficientParameter
 public import FLT.Mazur.OddWeierstrassPointedCubicHomAuxiliaryParameter
+public import FLT.Mazur.OddWeierstrassPointedCubicHomSourceGroup
 public import FLT.Mazur.OddWeierstrassSpecialization
 public import FLT.Mazur.OddWeierstrassSpecializationGroup
 public import FLT.Mazur.OddWeierstrassThreeTorsionEtale
