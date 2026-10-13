@@ -6210,6 +6210,7 @@ public import FLT.Mazur.OrderedHilbertFaithfulRestrictedIso
 public import FLT.Mazur.OrderedHilbertFaithfulRestrictedQuotient
 public import FLT.Mazur.OrderedHilbertFaithfulTestCover
 public import FLT.Mazur.OrderedHilbertFppfChartKernel
+public import FLT.Mazur.OrderedHilbertFppfChartQuotient
 public import FLT.Mazur.OrderedHilbertFullChartCover
 public import FLT.Mazur.OrderedHilbertIdentityComparisonCover
 public import FLT.Mazur.OrderedHilbertIdentityKernelPair
