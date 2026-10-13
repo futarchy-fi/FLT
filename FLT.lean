@@ -6935,6 +6935,7 @@ public import FLT.Mazur.PolygonTranslationComposition
 public import FLT.Mazur.PolygonTranslationImages
 public import FLT.Mazur.PolygonTranslationLineCocycle
 public import FLT.Mazur.PolygonTranslationLineComposition
+public import FLT.Mazur.PolygonTranslationLineIdentity
 public import FLT.Mazur.PolygonTranslationMarkingLine
 public import FLT.Mazur.PolygonTranslationNormalizationLine
 public import FLT.Mazur.PolygonTranslationReflectionLine
