@@ -6714,6 +6714,7 @@ public import FLT.Mazur.PolygonMultipleVeroneseStructuralMap
 public import FLT.Mazur.PolygonMultipleVeroneseUnitEvaluation
 public import FLT.Mazur.PolygonNodalCore
 public import FLT.Mazur.PolygonNodeAffineCharts
+public import FLT.Mazur.PolygonNodeBaseChangeLine
 public import FLT.Mazur.PolygonNodeBranchIntersection
 public import FLT.Mazur.PolygonNodeBranches
 public import FLT.Mazur.PolygonNodeChartNeighborhood
