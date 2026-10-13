@@ -7687,6 +7687,7 @@ public import FLT.Mazur.RelativeAmpleRestriction
 public import FLT.Mazur.RelativeAmpleSectionComparison
 public import FLT.Mazur.RelativeCartier
 public import FLT.Mazur.RelativeCartierBaseChange
+public import FLT.Mazur.RelativeCartierBaseChangeComposition
 public import FLT.Mazur.RelativeCartierCurveFinite
 public import FLT.Mazur.RelativeCartierDivisorPullback
 public import FLT.Mazur.RelativeCartierIdealFamilyDescent
