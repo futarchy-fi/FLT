@@ -7623,6 +7623,7 @@ public import FLT.Mazur.RelativeGenusOnePointedPresentation
 public import FLT.Mazur.RelativeGenusOnePoleReduction
 public import FLT.Mazur.RelativeGenusOneProjectiveIso
 public import FLT.Mazur.RelativeGenusOneProjectiveSections
+public import FLT.Mazur.RelativeGenusOneUnrestrictedCanonicalBasis
 public import FLT.Mazur.RelativeGenusOneUnrestrictedCanonicalLine
 public import FLT.Mazur.RelativeGenusOneUnrestrictedPointFrames
 public import FLT.Mazur.RelativeGenusOneUnrestrictedPointLeading
