@@ -7657,6 +7657,7 @@ public import FLT.Mazur.RelativeGenusOneUnrestrictedPointPowers
 public import FLT.Mazur.RelativeGenusOneUnrestrictedPointSplit
 public import FLT.Mazur.RelativeGenusOneUnrestrictedPointVanishing
 public import FLT.Mazur.RelativeGenusOneUnrestrictedPoleProjective
+public import FLT.Mazur.RelativeGenusOneUnrestrictedProjectiveSections
 public import FLT.Mazur.RelativeIdealAmbientHom
 public import FLT.Mazur.RelativeIdealAmbientIsoSquare
 public import FLT.Mazur.RelativeIdealAmbientPullback
