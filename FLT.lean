@@ -2748,6 +2748,7 @@ public import FLT.Mazur.AffineGeometricRefinementData
 public import FLT.Mazur.AffineGeometricTensorCocycle
 public import FLT.Mazur.AffineGeometricTensorDatum
 public import FLT.Mazur.AffineHilbertAssociativeFiniteBranches
+public import FLT.Mazur.AffineHilbertBranchCompositionCoefficients
 public import FLT.Mazur.AffineHilbertCartesianEnvelope
 public import FLT.Mazur.AffineHilbertChartRelation
 public import FLT.Mazur.AffineHilbertComposableEnvelope
