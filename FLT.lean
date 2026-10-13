@@ -5939,6 +5939,7 @@ public import FLT.Mazur.OddWeierstrassCyclicHomAuxiliaryScheme
 public import FLT.Mazur.OddWeierstrassCyclicHomDivisorProduct
 public import FLT.Mazur.OddWeierstrassCyclicHomMultiplicationEquation
 public import FLT.Mazur.OddWeierstrassCyclicHomSourceDivisor
+public import FLT.Mazur.OddWeierstrassCyclicHomSubgroupVanishingChart
 public import FLT.Mazur.OddWeierstrassGeometricLevelThree
 public import FLT.Mazur.OddWeierstrassNormalizationCurve
 public import FLT.Mazur.OddWeierstrassNormalizationGroup
