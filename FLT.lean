@@ -5059,6 +5059,7 @@ public import FLT.Mazur.HilbertGrassmannianImmersion
 public import FLT.Mazur.HilbertGrassmannianOverlap
 public import FLT.Mazur.HilbertGrassmannianSchemeTest
 public import FLT.Mazur.HilbertIdentityGroundBase
+public import FLT.Mazur.HilbertIdentityGroundQuotientChart
 public import FLT.Mazur.HilbertIdentityQuotientCoordinates
 public import FLT.Mazur.HilbertInjectiveMonomialImageCover
 public import FLT.Mazur.HilbertIntrinsicBasisBaseChange
