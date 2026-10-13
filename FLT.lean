@@ -7628,6 +7628,7 @@ public import FLT.Mazur.RelativeGenusOneUnrestrictedPointFrames
 public import FLT.Mazur.RelativeGenusOneUnrestrictedPointLeading
 public import FLT.Mazur.RelativeGenusOneUnrestrictedPointLine
 public import FLT.Mazur.RelativeGenusOneUnrestrictedPointPowers
+public import FLT.Mazur.RelativeGenusOneUnrestrictedPointSplit
 public import FLT.Mazur.RelativeGenusOneUnrestrictedPointVanishing
 public import FLT.Mazur.RelativeIdealAmbientHom
 public import FLT.Mazur.RelativeIdealAmbientIsoSquare
