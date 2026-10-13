@@ -3714,6 +3714,7 @@ public import FLT.Mazur.CyclicPinchingProduct
 public import FLT.Mazur.CyclicPinchingReflection
 public import FLT.Mazur.CyclicPinchingReflectionIndices
 public import FLT.Mazur.CyclicPinchingRotation
+public import FLT.Mazur.CyclicPinchingSemilinearScaledSources
 public import FLT.Mazur.CyclicProductDescent
 public import FLT.Mazur.CyclicProductEndpoints
 public import FLT.Mazur.CyclicProductNormalization
@@ -5895,6 +5896,7 @@ public import FLT.Mazur.NodeTangentFieldFixed
 public import FLT.Mazur.NodeTangentFractionField
 public import FLT.Mazur.NodeTangentGaloisLabel
 public import FLT.Mazur.NodeTangentGluedCoefficients
+public import FLT.Mazur.NodeTangentInfinityParameterCover
 public import FLT.Mazur.NodeTangentInfinitySlopeCompatibility
 public import FLT.Mazur.NodeTangentNormalizationChart
 public import FLT.Mazur.NodeTangentNormalizationConjugation
@@ -6242,6 +6244,7 @@ public import FLT.Mazur.OriginalTwistLineOrbits
 public import FLT.Mazur.OriginalTwistOrbitRelation
 public import FLT.Mazur.OriginalTwistSectionCoherence
 public import FLT.Mazur.OverCoproductModuleSections
+public import FLT.Mazur.OverCoproductSchemeDescent
 public import FLT.Mazur.OverOpenCoverExt
 public import FLT.Mazur.OverOpenCoverImage
 public import FLT.Mazur.OverOpenImageUnion
@@ -9067,7 +9070,10 @@ public import FLT.Mazur.WeierstrassCoefficientShearResidueBranchCharts
 public import FLT.Mazur.WeierstrassCoefficientShearResidueBranchEndpoints
 public import FLT.Mazur.WeierstrassCoefficientShearResidueBranches
 public import FLT.Mazur.WeierstrassCoefficientShearResidueCoconeAdjacent
+public import FLT.Mazur.WeierstrassCoefficientShearResidueCoconeBranches
+public import FLT.Mazur.WeierstrassCoefficientShearResidueCoconeComponents
 public import FLT.Mazur.WeierstrassCoefficientShearResidueCoconeEquality
+public import FLT.Mazur.WeierstrassCoefficientShearResidueCoconeExterior
 public import FLT.Mazur.WeierstrassCoefficientShearResidueCoconeGluing
 public import FLT.Mazur.WeierstrassCoefficientShearResidueCoconeInitial
 public import FLT.Mazur.WeierstrassCoefficientShearResidueCoconeLines
@@ -9100,6 +9106,10 @@ public import FLT.Mazur.WeierstrassCoefficientShearResidueInitialRightCharts
 public import FLT.Mazur.WeierstrassCoefficientShearResidueInteriorDescent
 public import FLT.Mazur.WeierstrassCoefficientShearResidueInteriorHomExt
 public import FLT.Mazur.WeierstrassCoefficientShearResidueOrderedExterior
+public import FLT.Mazur.WeierstrassCoefficientShearResiduePinchingColimit
+public import FLT.Mazur.WeierstrassCoefficientShearResiduePinchingReflection
+public import FLT.Mazur.WeierstrassCoefficientShearResiduePolygonIso
+public import FLT.Mazur.WeierstrassCoefficientShearResidueReflectionParameters
 public import FLT.Mazur.WeierstrassCoefficientShearResidueRetained
 public import FLT.Mazur.WeierstrassCoefficientShearResidueRetainedNodes
 public import FLT.Mazur.WeierstrassCoefficientShearResidueTangentConjugation
@@ -10558,6 +10568,7 @@ public import FLT.Mazur.WeierstrassNodalAdjacentIntersections
 public import FLT.Mazur.WeierstrassNodalDividedDepth
 public import FLT.Mazur.WeierstrassNodalDividedFamily
 public import FLT.Mazur.WeierstrassNodalInfinityShear
+public import FLT.Mazur.WeierstrassNodalInfinityShearOpen
 public import FLT.Mazur.WeierstrassNodalInfinityTangentUnit
 public import FLT.Mazur.WeierstrassNodalResidueCharts
 public import FLT.Mazur.WeierstrassNodalResidueContraction
@@ -10714,6 +10725,7 @@ public import FLT.Mazur.WeierstrassRelativeSmoothDiscriminant
 public import FLT.Mazur.WeierstrassRelativeSmoothOpen
 public import FLT.Mazur.WeierstrassResidueIncidenceNormalization
 public import FLT.Mazur.WeierstrassResidueInfinitySlopeComparison
+public import FLT.Mazur.WeierstrassResidueInfinityTensorCover
 public import FLT.Mazur.WeierstrassResidueInfinityTensorParameter
 public import FLT.Mazur.WeierstrassResidueTangentComponentData
 public import FLT.Mazur.WeierstrassResidueTangentEquationData
@@ -10892,6 +10904,7 @@ public import FLT.Mazur.WeierstrassSplitDepthNormalizedQuotientAction
 public import FLT.Mazur.WeierstrassSplitDepthOriginalFractionAction
 public import FLT.Mazur.WeierstrassSplitDepthResidueEquation
 public import FLT.Mazur.WeierstrassSplitDepthSecantResidue
+public import FLT.Mazur.WeierstrassSplitInfinityParameterOpen
 public import FLT.Mazur.WeierstrassSplitInfinitySlopeCompatibility
 public import FLT.Mazur.WeierstrassSplitNodalAffineParameters
 public import FLT.Mazur.WeierstrassSplitNodalChart
