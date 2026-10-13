@@ -7653,6 +7653,7 @@ public import FLT.Mazur.RelativeGenusOneUnrestrictedInitialPoleStep
 public import FLT.Mazur.RelativeGenusOneUnrestrictedLowPoleBasis
 public import FLT.Mazur.RelativeGenusOneUnrestrictedMonomialBasis
 public import FLT.Mazur.RelativeGenusOneUnrestrictedMonomialIndependence
+public import FLT.Mazur.RelativeGenusOneUnrestrictedNormalMonomials
 public import FLT.Mazur.RelativeGenusOneUnrestrictedPointFrames
 public import FLT.Mazur.RelativeGenusOneUnrestrictedPointLeading
 public import FLT.Mazur.RelativeGenusOneUnrestrictedPointLine
