@@ -2790,6 +2790,7 @@ public import FLT.Mazur.AffineHilbertFiniteModelImageRestriction
 public import FLT.Mazur.AffineHilbertFiniteModelPrincipalCover
 public import FLT.Mazur.AffineHilbertFiniteTensorCover
 public import FLT.Mazur.AffineHilbertFixedBaseEnvelope
+public import FLT.Mazur.AffineHilbertFixedBaseInvariants
 public import FLT.Mazur.AffineHilbertFixedBaseQuotient
 public import FLT.Mazur.AffineHilbertFixedBaseQuotientIso
 public import FLT.Mazur.AffineHilbertFixedBaseRelation
