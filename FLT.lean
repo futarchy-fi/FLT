@@ -4207,6 +4207,7 @@ public import FLT.Mazur.EtaleCyclicSmoothLocusNormalizedCoverage
 public import FLT.Mazur.EtaleCyclicSubgroupLocalPresentation
 public import FLT.Mazur.EtaleDimGe
 public import FLT.Mazur.EtaleDimLe
+public import FLT.Mazur.EtaleFiniteBranchEmbedding
 public import FLT.Mazur.EtaleFiniteBranchScheme
 public import FLT.Mazur.EtaleFiniteQuotientBranch
 public import FLT.Mazur.EtaleFiniteSupportCartier
