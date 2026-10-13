@@ -2701,6 +2701,7 @@ public import FLT.Mazur.AffineEtaleFaithfulSpectrum
 public import FLT.Mazur.AffineEtaleFiniteFaithfulRefinement
 public import FLT.Mazur.AffineEtaleFiniteFaithfulSpectrum
 public import FLT.Mazur.AffineEtaleFiniteFreeSpectrum
+public import FLT.Mazur.AffineEtaleIdentityGroundBase
 public import FLT.Mazur.AffineEtaleTranslationFiniteBranch
 public import FLT.Mazur.AffineEtaleTranslationNormCharts
 public import FLT.Mazur.AffineFaithfullyFlatEpimorphisms
@@ -4940,6 +4941,7 @@ public import FLT.Mazur.HigherDirectImagePresheafRestriction
 public import FLT.Mazur.HilbertAcyclicParameterOpen
 public import FLT.Mazur.HilbertAcyclicUniversalRecovery
 public import FLT.Mazur.HilbertAdmissiblePrincipalExistence
+public import FLT.Mazur.HilbertAffineParameterNeighborhood
 public import FLT.Mazur.HilbertAmbientChartClassification
 public import FLT.Mazur.HilbertAmbientChartNaturality
 public import FLT.Mazur.HilbertAmbientClosedFamily
@@ -5058,6 +5060,10 @@ public import FLT.Mazur.HilbertGrassmannianIdentityChart
 public import FLT.Mazur.HilbertGrassmannianImmersion
 public import FLT.Mazur.HilbertGrassmannianOverlap
 public import FLT.Mazur.HilbertGrassmannianSchemeTest
+public import FLT.Mazur.HilbertIdentityGroundBase
+public import FLT.Mazur.HilbertIdentityGroundOriginalQuotient
+public import FLT.Mazur.HilbertIdentityGroundQuotientChart
+public import FLT.Mazur.HilbertIdentityGroundSourceIso
 public import FLT.Mazur.HilbertIdentityQuotientCoordinates
 public import FLT.Mazur.HilbertInjectiveMonomialImageCover
 public import FLT.Mazur.HilbertIntrinsicBasisBaseChange
@@ -5154,6 +5160,7 @@ public import FLT.Mazur.HilbertQuotientDegreeFiltration
 public import FLT.Mazur.HilbertReindexedCoordinateRing
 public import FLT.Mazur.HilbertRepeatedMonomialChart
 public import FLT.Mazur.HilbertSameAmbientChartIso
+public import FLT.Mazur.HilbertSubterminalTranslationEnvelope
 public import FLT.Mazur.HilbertSupportOpenLattice
 public import FLT.Mazur.HilbertSupportOpenPullback
 public import FLT.Mazur.HilbertTruncatedIdealDetection
@@ -6175,10 +6182,13 @@ public import FLT.Mazur.OrderedHilbertFaithfulEnvelopeIso
 public import FLT.Mazur.OrderedHilbertFaithfulInvariantCoefficients
 public import FLT.Mazur.OrderedHilbertFaithfulOrbitCover
 public import FLT.Mazur.OrderedHilbertFaithfulParameter
+public import FLT.Mazur.OrderedHilbertFaithfulParameterPoint
 public import FLT.Mazur.OrderedHilbertFaithfulPicardComparison
 public import FLT.Mazur.OrderedHilbertFaithfulRestrictedIso
 public import FLT.Mazur.OrderedHilbertFaithfulRestrictedQuotient
 public import FLT.Mazur.OrderedHilbertFaithfulTestCover
+public import FLT.Mazur.OrderedHilbertIdentityQuotientCover
+public import FLT.Mazur.OrderedHilbertIdentitySchemeSource
 public import FLT.Mazur.OrderedHilbertSeparableGeometricCoverage
 public import FLT.Mazur.OrderedProjectiveHilbertNaturality
 public import FLT.Mazur.OrderedProjectiveHilbertParameter
