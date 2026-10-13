@@ -6830,6 +6830,7 @@ public import FLT.Mazur.PolygonParameterMarkingMultiplication
 public import FLT.Mazur.PolygonParameterMarkingOriginal
 public import FLT.Mazur.PolygonParameterProjectionComposition
 public import FLT.Mazur.PolygonParameterTranslation
+public import FLT.Mazur.PolygonParameterTranslationBaseChange
 public import FLT.Mazur.PolygonParameterTranslationOriginal
 public import FLT.Mazur.PolygonParameterizedHomExt
 public import FLT.Mazur.PolygonPinchingAffineBaseChange
