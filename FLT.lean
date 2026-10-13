@@ -7436,6 +7436,7 @@ public import FLT.Mazur.ProperSmoothLineRigidity
 public import FLT.Mazur.ProperSmoothLineSheafDescent
 public import FLT.Mazur.ProperSmoothPointedLineSheafDescent
 public import FLT.Mazur.ProperSmoothPointwiseSectionRigidity
+public import FLT.Mazur.ProperSmoothRelativePointedGroupHom
 public import FLT.Mazur.ProperSmoothStructureSheaf
 public import FLT.Mazur.ProperSplitDirectImageSections
 public import FLT.Mazur.ProperSplitSectionFiberRegularity
