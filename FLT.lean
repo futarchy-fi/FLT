@@ -3679,6 +3679,7 @@ public import FLT.Mazur.CyclicHomNormalizationRelationSubgroup
 public import FLT.Mazur.CyclicHomNormalizationSubgroup
 public import FLT.Mazur.CyclicHomNormalizedCubicValue
 public import FLT.Mazur.CyclicHomNormalizedFppfCoverage
+public import FLT.Mazur.CyclicHomNormalizedFppfCoverageUnrestricted
 public import FLT.Mazur.CyclicHomNormalizedImageSieve
 public import FLT.Mazur.CyclicHomNormalizedLocus
 public import FLT.Mazur.CyclicHomNormalizedModuli
