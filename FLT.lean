@@ -7250,6 +7250,7 @@ public import FLT.Mazur.ProjectiveLineScaledReciprocalGluing
 public import FLT.Mazur.ProjectiveLineScaledReversalConjugation
 public import FLT.Mazur.ProjectiveLineScaling
 public import FLT.Mazur.ProjectiveLineSealedCanonicalRatios
+public import FLT.Mazur.ProjectiveLineSemilinearInvolution
 public import FLT.Mazur.ProjectiveLineSlopeNormalization
 public import FLT.Mazur.ProjectiveLineSlopeNormalizationCharts
 public import FLT.Mazur.ProjectiveLineSlopeNormalizationLinear
