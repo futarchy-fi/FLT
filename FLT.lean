@@ -3601,6 +3601,7 @@ public import FLT.Mazur.CyclicHomMultiplicationEquation
 public import FLT.Mazur.CyclicHomMultiplicationLocus
 public import FLT.Mazur.CyclicHomMultiplicationLocusUniversal
 public import FLT.Mazur.CyclicHomMultiplicationPullback
+public import FLT.Mazur.CyclicHomNormalizationFixed
 public import FLT.Mazur.CyclicHomNormalizationGroup
 public import FLT.Mazur.CyclicHomNormalizationParameter
 public import FLT.Mazur.CyclicHomNormalizationSubgroup
