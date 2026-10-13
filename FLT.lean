@@ -6188,6 +6188,7 @@ public import FLT.Mazur.OrderedHilbertChartInvariantComparison
 public import FLT.Mazur.OrderedHilbertChartQuotientComparison
 public import FLT.Mazur.OrderedHilbertChartRelationBridge
 public import FLT.Mazur.OrderedHilbertChartRelationCover
+public import FLT.Mazur.OrderedHilbertCompatibleTranslationQuotient
 public import FLT.Mazur.OrderedHilbertEtaleGeometricCoverage
 public import FLT.Mazur.OrderedHilbertEtaleGeometricLift
 public import FLT.Mazur.OrderedHilbertEtaleResidueLift
