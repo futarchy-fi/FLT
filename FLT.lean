@@ -2755,6 +2755,7 @@ public import FLT.Mazur.AffineHilbertFixedBaseQuotientIso
 public import FLT.Mazur.AffineHilbertFixedBaseRelation
 public import FLT.Mazur.AffineHilbertFixedBaseRelationInverse
 public import FLT.Mazur.AffineHilbertFullFiberChart
+public import FLT.Mazur.AffineHilbertFullFiberInterior
 public import FLT.Mazur.AffineHilbertFullFiberInvariant
 public import FLT.Mazur.AffineHilbertFullFiberOpen
 public import FLT.Mazur.AffineHilbertFullRelationRestriction
