@@ -2701,6 +2701,7 @@ public import FLT.Mazur.AffineEtaleFaithfulSpectrum
 public import FLT.Mazur.AffineEtaleFiniteFaithfulRefinement
 public import FLT.Mazur.AffineEtaleFiniteFaithfulSpectrum
 public import FLT.Mazur.AffineEtaleFiniteFreeSpectrum
+public import FLT.Mazur.AffineEtaleIdentityGroundBase
 public import FLT.Mazur.AffineEtaleTranslationFiniteBranch
 public import FLT.Mazur.AffineEtaleTranslationNormCharts
 public import FLT.Mazur.AffineFaithfullyFlatEpimorphisms
@@ -4942,6 +4943,7 @@ public import FLT.Mazur.HigherDirectImagePresheafRestriction
 public import FLT.Mazur.HilbertAcyclicParameterOpen
 public import FLT.Mazur.HilbertAcyclicUniversalRecovery
 public import FLT.Mazur.HilbertAdmissiblePrincipalExistence
+public import FLT.Mazur.HilbertAffineParameterNeighborhood
 public import FLT.Mazur.HilbertAmbientChartClassification
 public import FLT.Mazur.HilbertAmbientChartNaturality
 public import FLT.Mazur.HilbertAmbientClosedFamily
@@ -5060,6 +5062,10 @@ public import FLT.Mazur.HilbertGrassmannianIdentityChart
 public import FLT.Mazur.HilbertGrassmannianImmersion
 public import FLT.Mazur.HilbertGrassmannianOverlap
 public import FLT.Mazur.HilbertGrassmannianSchemeTest
+public import FLT.Mazur.HilbertIdentityGroundBase
+public import FLT.Mazur.HilbertIdentityGroundOriginalQuotient
+public import FLT.Mazur.HilbertIdentityGroundQuotientChart
+public import FLT.Mazur.HilbertIdentityGroundSourceIso
 public import FLT.Mazur.HilbertIdentityQuotientCoordinates
 public import FLT.Mazur.HilbertInjectiveMonomialImageCover
 public import FLT.Mazur.HilbertIntrinsicBasisBaseChange
@@ -5156,6 +5162,7 @@ public import FLT.Mazur.HilbertQuotientDegreeFiltration
 public import FLT.Mazur.HilbertReindexedCoordinateRing
 public import FLT.Mazur.HilbertRepeatedMonomialChart
 public import FLT.Mazur.HilbertSameAmbientChartIso
+public import FLT.Mazur.HilbertSubterminalTranslationEnvelope
 public import FLT.Mazur.HilbertSupportOpenLattice
 public import FLT.Mazur.HilbertSupportOpenPullback
 public import FLT.Mazur.HilbertTruncatedIdealDetection
@@ -6177,10 +6184,13 @@ public import FLT.Mazur.OrderedHilbertFaithfulEnvelopeIso
 public import FLT.Mazur.OrderedHilbertFaithfulInvariantCoefficients
 public import FLT.Mazur.OrderedHilbertFaithfulOrbitCover
 public import FLT.Mazur.OrderedHilbertFaithfulParameter
+public import FLT.Mazur.OrderedHilbertFaithfulParameterPoint
 public import FLT.Mazur.OrderedHilbertFaithfulPicardComparison
 public import FLT.Mazur.OrderedHilbertFaithfulRestrictedIso
 public import FLT.Mazur.OrderedHilbertFaithfulRestrictedQuotient
 public import FLT.Mazur.OrderedHilbertFaithfulTestCover
+public import FLT.Mazur.OrderedHilbertIdentityQuotientCover
+public import FLT.Mazur.OrderedHilbertIdentitySchemeSource
 public import FLT.Mazur.OrderedHilbertSeparableGeometricCoverage
 public import FLT.Mazur.OrderedProjectiveHilbertNaturality
 public import FLT.Mazur.OrderedProjectiveHilbertParameter
@@ -8884,6 +8894,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearAtlas
 public import FLT.Mazur.WeierstrassCoefficientShearAtlasComparison
 public import FLT.Mazur.WeierstrassCoefficientShearAtlasStructure
 public import FLT.Mazur.WeierstrassCoefficientShearBoundedConicAction
+public import FLT.Mazur.WeierstrassCoefficientShearConicExteriorDisjoint
 public import FLT.Mazur.WeierstrassCoefficientShearConicOrigins
 public import FLT.Mazur.WeierstrassCoefficientShearConicParameters
 public import FLT.Mazur.WeierstrassCoefficientShearCoverage
@@ -8897,7 +8908,10 @@ public import FLT.Mazur.WeierstrassCoefficientShearGluedOverIso
 public import FLT.Mazur.WeierstrassCoefficientShearGluing
 public import FLT.Mazur.WeierstrassCoefficientShearHorizontalAction
 public import FLT.Mazur.WeierstrassCoefficientShearHorizontalTorusAction
+public import FLT.Mazur.WeierstrassCoefficientShearInitialAtlasPullback
+public import FLT.Mazur.WeierstrassCoefficientShearInitialBoundaryDescent
 public import FLT.Mazur.WeierstrassCoefficientShearInitialBoundaryGeometry
+public import FLT.Mazur.WeierstrassCoefficientShearInitialBoundaryHomExt
 public import FLT.Mazur.WeierstrassCoefficientShearInitialBoundaryParameter
 public import FLT.Mazur.WeierstrassCoefficientShearInitialComponents
 public import FLT.Mazur.WeierstrassCoefficientShearInitialConicBoundaryAlgebra
@@ -8906,6 +8920,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearInitialConicSpecialization
 public import FLT.Mazur.WeierstrassCoefficientShearInitialEquationDescent
 public import FLT.Mazur.WeierstrassCoefficientShearInitialFiber
 public import FLT.Mazur.WeierstrassCoefficientShearInitialHomExt
+public import FLT.Mazur.WeierstrassCoefficientShearInitialLaterAtlasPullback
 public import FLT.Mazur.WeierstrassCoefficientShearInitialLineBoundary
 public import FLT.Mazur.WeierstrassCoefficientShearInitialLineContraction
 public import FLT.Mazur.WeierstrassCoefficientShearInitialLineOrigins
@@ -8917,10 +8932,12 @@ public import FLT.Mazur.WeierstrassCoefficientShearInitialSemilinear
 public import FLT.Mazur.WeierstrassCoefficientShearInitialSlopeBoundary
 public import FLT.Mazur.WeierstrassCoefficientShearInitialSlopeProjections
 public import FLT.Mazur.WeierstrassCoefficientShearInitialSmooth
+public import FLT.Mazur.WeierstrassCoefficientShearInitialTensorConicComparison
 public import FLT.Mazur.WeierstrassCoefficientShearInitialTorusAction
 public import FLT.Mazur.WeierstrassCoefficientShearLineActionReflection
 public import FLT.Mazur.WeierstrassCoefficientShearLineSpecialization
 public import FLT.Mazur.WeierstrassCoefficientShearLineUnitDomain
+public import FLT.Mazur.WeierstrassCoefficientShearNonadjacentAtlasPullback
 public import FLT.Mazur.WeierstrassCoefficientShearOppositeUnrestrictedAction
 public import FLT.Mazur.WeierstrassCoefficientShearOriginalAdjacentComponents
 public import FLT.Mazur.WeierstrassCoefficientShearOriginalConicSpecialization
@@ -8943,7 +8960,13 @@ public import FLT.Mazur.WeierstrassCoefficientShearResidueAdjacent
 public import FLT.Mazur.WeierstrassCoefficientShearResidueAdjacentEndpoints
 public import FLT.Mazur.WeierstrassCoefficientShearResidueAdjacentLeftCharts
 public import FLT.Mazur.WeierstrassCoefficientShearResidueAdjacentRightCharts
+public import FLT.Mazur.WeierstrassCoefficientShearResidueAtlasAdjacentBoundary
+public import FLT.Mazur.WeierstrassCoefficientShearResidueAtlasAdjacentPullback
 public import FLT.Mazur.WeierstrassCoefficientShearResidueAtlasCoconeMaps
+public import FLT.Mazur.WeierstrassCoefficientShearResidueAtlasInitialBoundary
+public import FLT.Mazur.WeierstrassCoefficientShearResidueAtlasInitialPullbacks
+public import FLT.Mazur.WeierstrassCoefficientShearResidueAtlasLines
+public import FLT.Mazur.WeierstrassCoefficientShearResidueAtlasRetainedPullbacks
 public import FLT.Mazur.WeierstrassCoefficientShearResidueAtlasTerminalBoundary
 public import FLT.Mazur.WeierstrassCoefficientShearResidueAtlasTerminalPullback
 public import FLT.Mazur.WeierstrassCoefficientShearResidueBranchCharts
@@ -8993,6 +9016,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearRetainedEqualityDescent
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedEquationDescent
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedFiber
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedHomExt
+public import FLT.Mazur.WeierstrassCoefficientShearRetainedInfinityAtlasPullback
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedIntersections
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedLineProjection
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedLineRootChange
@@ -9000,6 +9024,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearRetainedLineSpecialization
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedReconstruction
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedScaleOneConic
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedStage
+public import FLT.Mazur.WeierstrassCoefficientShearRetainedTensorLineComparison
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedZeroDescent
 public import FLT.Mazur.WeierstrassCoefficientShearRootChange
 public import FLT.Mazur.WeierstrassCoefficientShearRootEqualityComponent
@@ -9974,6 +9999,7 @@ public import FLT.Mazur.WeierstrassHorizontalFractionHomExt
 public import FLT.Mazur.WeierstrassHorizontalGlobalChartComparison
 public import FLT.Mazur.WeierstrassIncidenceCoefficientTransport
 public import FLT.Mazur.WeierstrassIncidenceResidueShearComparison
+public import FLT.Mazur.WeierstrassIncidenceShearConicBoundary
 public import FLT.Mazur.WeierstrassIncidenceShearConicCoefficient
 public import FLT.Mazur.WeierstrassIncidenceShearLineContraction
 public import FLT.Mazur.WeierstrassIncidenceShearLineProjection
