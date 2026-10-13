@@ -5951,6 +5951,7 @@ public import FLT.Mazur.OddWeierstrassCyclicHomSourcePullback
 public import FLT.Mazur.OddWeierstrassCyclicHomSubgroupPullback
 public import FLT.Mazur.OddWeierstrassCyclicHomSubgroupVanishingChart
 public import FLT.Mazur.OddWeierstrassCyclicHomUniversalSubgroupComparison
+public import FLT.Mazur.OddWeierstrassCyclicOriginalHomDivisorCoverage
 public import FLT.Mazur.OddWeierstrassGeometricLevelThree
 public import FLT.Mazur.OddWeierstrassNormalizationCurve
 public import FLT.Mazur.OddWeierstrassNormalizationGroup
