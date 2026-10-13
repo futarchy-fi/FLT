@@ -2761,6 +2761,7 @@ public import FLT.Mazur.AffineHilbertCompositionCharts
 public import FLT.Mazur.AffineHilbertCompositionFiniteBranches
 public import FLT.Mazur.AffineHilbertDerivedNoetherianRelation
 public import FLT.Mazur.AffineHilbertEffectiveOpenDescent
+public import FLT.Mazur.AffineHilbertEffectiveOpenFlatRefinement
 public import FLT.Mazur.AffineHilbertEffectiveOpenPicard
 public import FLT.Mazur.AffineHilbertEffectiveTargetOpen
 public import FLT.Mazur.AffineHilbertEnvelopeCoaction
