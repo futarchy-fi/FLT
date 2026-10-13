@@ -4958,6 +4958,7 @@ public import FLT.Mazur.GrassmannianWholeOverlapCocycle
 public import FLT.Mazur.GrassmannianWholeOverlapProjection
 public import FLT.Mazur.GrassmannianWholeOverlapRefinement
 public import FLT.Mazur.GrassmannianWholeOverlapTransition
+public import FLT.Mazur.GroupActionPointTranslation
 public import FLT.Mazur.GroupMarkingBaseChange
 public import FLT.Mazur.GroupMarkingBaseChangeInverse
 public import FLT.Mazur.GroupMarkingBaseProjection
@@ -6524,14 +6525,18 @@ public import FLT.Mazur.PolygonCompleteMarkedProjectivePoints
 public import FLT.Mazur.PolygonCompleteMarkedSectionTransport
 public import FLT.Mazur.PolygonCompleteMarkedStageComparison
 public import FLT.Mazur.PolygonCompleteMarkingAmple
+public import FLT.Mazur.PolygonCompleteMarkingAtlasRecovery
 public import FLT.Mazur.PolygonCompleteMarkingCartier
+public import FLT.Mazur.PolygonCompleteMarkingDescent
 public import FLT.Mazur.PolygonCompleteMarkingDivisor
+public import FLT.Mazur.PolygonCompleteMarkingEffectiveDescent
 public import FLT.Mazur.PolygonCompleteMarkingLineBaseChange
 public import FLT.Mazur.PolygonCompleteMarkingLineCocycle
 public import FLT.Mazur.PolygonCompleteMarkingLineTransition
 public import FLT.Mazur.PolygonCompleteMarkingNaturality
 public import FLT.Mazur.PolygonCompleteMarkingPowerCoherence
 public import FLT.Mazur.PolygonCompleteMarkingRotation
+public import FLT.Mazur.PolygonCompleteMarkingSectionDescent
 public import FLT.Mazur.PolygonCompleteMarkingSectionModel
 public import FLT.Mazur.PolygonCompleteMarkingSpecialization
 public import FLT.Mazur.PolygonCompleteMarkingTestLine
@@ -6815,7 +6820,11 @@ public import FLT.Mazur.PolygonOriginalNeighborhoodTransition
 public import FLT.Mazur.PolygonOriginalNodeClosed
 public import FLT.Mazur.PolygonOriginalNodePoint
 public import FLT.Mazur.PolygonOriginalStageAdicSquare
+public import FLT.Mazur.PolygonParameterMarkingLine
+public import FLT.Mazur.PolygonParameterMarkingOriginal
 public import FLT.Mazur.PolygonParameterProjectionComposition
+public import FLT.Mazur.PolygonParameterTranslation
+public import FLT.Mazur.PolygonParameterTranslationOriginal
 public import FLT.Mazur.PolygonParameterizedHomExt
 public import FLT.Mazur.PolygonPinchingAffineBaseChange
 public import FLT.Mazur.PolygonPinchingDiagram
@@ -8155,6 +8164,7 @@ public import FLT.Mazur.SchemeDescentAffineCharts
 public import FLT.Mazur.SchemeDescentCrossCoverCompatibility
 public import FLT.Mazur.SchemeDescentMapLaws
 public import FLT.Mazur.SchemeDescentPairTransport
+public import FLT.Mazur.SchemeDescentSheafIso
 public import FLT.Mazur.SchemeDescentTransportSquares
 public import FLT.Mazur.SchemeDescentTransportTest
 public import FLT.Mazur.SchemeDisjointBaseChange
