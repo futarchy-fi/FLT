@@ -7685,6 +7685,7 @@ public import FLT.Mazur.RelativeCartierCurveFinite
 public import FLT.Mazur.RelativeCartierDivisorPullback
 public import FLT.Mazur.RelativeCartierIdealFamilyDescent
 public import FLT.Mazur.RelativeCartierIdealPullback
+public import FLT.Mazur.RelativeCartierMorphismBaseChange
 public import FLT.Mazur.RelativeCartierOriginalSquare
 public import FLT.Mazur.RelativeComparisonFiberIso
 public import FLT.Mazur.RelativeCoproductComponentPullback
