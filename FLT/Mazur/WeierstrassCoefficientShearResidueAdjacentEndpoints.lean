@@ -69,7 +69,7 @@ local notation "N" => coefficientShearResidueRetainedNode
 @[reassoc] theorem coefficientShearResidueAdjacentComponent_zero (i : Fin 2) :
     ProjectiveLine.zero Q ≫ C i = N j.castSucc i := by
   unfold coefficientShearResidueAdjacentComponent coefficientShearResidueRetainedNode
-    coefficientShearResidueRetainedLine
+    coefficientShearResidueRetainedPair
   rw [dite_eq_left (show 0 < start + j.val from by omega)]
   fin_cases i
   · simp only [Fin.ext_iff, Fin.val_zero, ↓reduceIte]
@@ -87,7 +87,7 @@ local notation "N" => coefficientShearResidueRetainedNode
 @[reassoc] theorem coefficientShearResidueAdjacentComponent_infinity (i : Fin 2) :
     ProjectiveLine.infinity Q ≫ C i = N j.succ i := by
   unfold coefficientShearResidueAdjacentComponent coefficientShearResidueRetainedNode
-    coefficientShearResidueRetainedLine
+    coefficientShearResidueRetainedPair
   rw [dite_eq_left (show 0 < start + j.val from by omega)]
   fin_cases i
   · simp only [Fin.ext_iff, Fin.val_zero, ↓reduceIte]
