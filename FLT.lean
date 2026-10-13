@@ -5947,6 +5947,7 @@ public import FLT.Mazur.OddWeierstrassNormalizedCyclicSource
 public import FLT.Mazur.OddWeierstrassNormalizedCyclicValue
 public import FLT.Mazur.OddWeierstrassNormalizedFamilyPoint
 public import FLT.Mazur.OddWeierstrassNormalizedMarking
+public import FLT.Mazur.OddWeierstrassNormalizedRetainedSubgroup
 public import FLT.Mazur.OddWeierstrassOriginalAuxiliaryCover
 public import FLT.Mazur.OddWeierstrassSpecialization
 public import FLT.Mazur.OddWeierstrassSpecializationGroup
