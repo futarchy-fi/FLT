@@ -2698,6 +2698,8 @@ public import FLT.Mazur.AffineEtaleFaithfulCoefficients
 public import FLT.Mazur.AffineEtaleFaithfulNeighborhood
 public import FLT.Mazur.AffineEtaleFaithfulSource
 public import FLT.Mazur.AffineEtaleFaithfulSpectrum
+public import FLT.Mazur.AffineEtaleFiniteFaithfulRefinement
+public import FLT.Mazur.AffineEtaleTranslationFiniteBranch
 public import FLT.Mazur.AffineFaithfullyFlatEpimorphisms
 public import FLT.Mazur.AffineFaithfullyFlatMonomorphisms
 public import FLT.Mazur.AffineFaithfullyFlatPullbackFaithful
@@ -2749,6 +2751,7 @@ public import FLT.Mazur.AffineHilbertEnvelopeKernelPair
 public import FLT.Mazur.AffineHilbertEnvelopeOpenChart
 public import FLT.Mazur.AffineHilbertEnvelopeQuotient
 public import FLT.Mazur.AffineHilbertEnvelopeScheme
+public import FLT.Mazur.AffineHilbertFiniteFiberPrincipal
 public import FLT.Mazur.AffineHilbertFixedBaseEnvelope
 public import FLT.Mazur.AffineHilbertFixedBaseQuotient
 public import FLT.Mazur.AffineHilbertFixedBaseQuotientIso
@@ -4182,6 +4185,9 @@ public import FLT.Mazur.EtaleQuasiFiniteCartierDescent
 public import FLT.Mazur.EtaleSepClosedPointDescent
 public import FLT.Mazur.EtaleSeparableResidueCoordinates
 public import FLT.Mazur.EtaleSimpleRootCoordinates
+public import FLT.Mazur.EtaleTranslationBranchMaps
+public import FLT.Mazur.EtaleTranslationBranchPullback
+public import FLT.Mazur.EtaleTranslationFiniteNeighborhood
 public import FLT.Mazur.EvaluatedPrincipalRefinement
 public import FLT.Mazur.EventualTwistVanishing
 public import FLT.Mazur.ExactFunctorInjectiveExt
@@ -4242,6 +4248,7 @@ public import FLT.Mazur.FiniteDivisorComponentAvoidance
 public import FLT.Mazur.FiniteDivisorLengthAdditivity
 public import FLT.Mazur.FiniteDivisorLengthOne
 public import FLT.Mazur.FiniteDivisorRationalSupport
+public import FLT.Mazur.FiniteEtaleWholeFiberNeighborhood
 public import FLT.Mazur.FiniteEvaluationLocus
 public import FLT.Mazur.FiniteFamilySupportBaseChange
 public import FLT.Mazur.FiniteFamilySupportOpen
