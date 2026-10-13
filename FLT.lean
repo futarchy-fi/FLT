@@ -3629,6 +3629,7 @@ public import FLT.Mazur.CyclicHomLocusRelationRelabel
 public import FLT.Mazur.CyclicHomLocusUniversalComparison
 public import FLT.Mazur.CyclicHomMarkedFamilyRelation
 public import FLT.Mazur.CyclicHomMarkedGroupRigidity
+public import FLT.Mazur.CyclicHomMarkedIsoParameterTransport
 public import FLT.Mazur.CyclicHomMarkedIsoPullback
 public import FLT.Mazur.CyclicHomMultiplicationEquation
 public import FLT.Mazur.CyclicHomMultiplicationLocus
