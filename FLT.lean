@@ -4215,6 +4215,7 @@ public import FLT.Mazur.EtaleDimGe
 public import FLT.Mazur.EtaleDimLe
 public import FLT.Mazur.EtaleFiniteBranchAtlas
 public import FLT.Mazur.EtaleFiniteBranchEmbedding
+public import FLT.Mazur.EtaleFiniteBranchLift
 public import FLT.Mazur.EtaleFiniteBranchNeighborhood
 public import FLT.Mazur.EtaleFiniteBranchScheme
 public import FLT.Mazur.EtaleFiniteQuotientBranch
