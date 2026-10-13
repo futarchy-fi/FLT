@@ -2785,11 +2785,15 @@ public import FLT.Mazur.AffineHilbertTensorMixedComposition
 public import FLT.Mazur.AffineHilbertTensorPullback
 public import FLT.Mazur.AffineHilbertTensorRestrictions
 public import FLT.Mazur.AffineHilbertTensorScalars
+public import FLT.Mazur.AffineHilbertTranslationAdmissibilityDetection
 public import FLT.Mazur.AffineHilbertTranslationDenominators
 public import FLT.Mazur.AffineHilbertTranslationEnvelope
 public import FLT.Mazur.AffineHilbertTranslationFullRestriction
+public import FLT.Mazur.AffineHilbertTranslationOriginalEnvelope
 public import FLT.Mazur.AffineHilbertTranslationRelation
 public import FLT.Mazur.AffineHilbertTranslationSource
+public import FLT.Mazur.AffineHilbertTranslationSourceCartesian
+public import FLT.Mazur.AffineHilbertTranslationSourceCoefficients
 public import FLT.Mazur.AffineHilbertTranslationSourceCover
 public import FLT.Mazur.AffineIdealContainment
 public import FLT.Mazur.AffineIdealCoordinates
