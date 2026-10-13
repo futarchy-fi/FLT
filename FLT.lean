@@ -6817,6 +6817,7 @@ public import FLT.Mazur.PolygonReflectionMarking
 public import FLT.Mazur.PolygonReflectionMarkingLine
 public import FLT.Mazur.PolygonRetainedSectionRotation
 public import FLT.Mazur.PolygonRetainedStageMarkings
+public import FLT.Mazur.PolygonRotationMarkingLine
 public import FLT.Mazur.PolygonRotationNoFixedPoints
 public import FLT.Mazur.PolygonRotationScalars
 public import FLT.Mazur.PolygonScalarReflectionRelations
