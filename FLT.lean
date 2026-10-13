@@ -3625,6 +3625,7 @@ public import FLT.Mazur.CyclicHomRelabelAuxiliaryMarking
 public import FLT.Mazur.CyclicHomRelabelCurve
 public import FLT.Mazur.CyclicHomRelabelParameter
 public import FLT.Mazur.CyclicHomRelabelSubgroup
+public import FLT.Mazur.CyclicHomRelabeledNormalizationIso
 public import FLT.Mazur.CyclicHomSourceDivisor
 public import FLT.Mazur.CyclicHomSourceIdealPullback
 public import FLT.Mazur.CyclicHomSourceModuli
