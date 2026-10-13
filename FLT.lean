@@ -6181,6 +6181,13 @@ public import FLT.Mazur.OrderedHilbertBaseOpenChart
 public import FLT.Mazur.OrderedHilbertBaseOpenEffectiveQuotient
 public import FLT.Mazur.OrderedHilbertBaseOpenImmersion
 public import FLT.Mazur.OrderedHilbertBaseOpenRelation
+public import FLT.Mazur.OrderedHilbertChartEtalePresentation
+public import FLT.Mazur.OrderedHilbertChartFullEquivalence
+public import FLT.Mazur.OrderedHilbertChartFullRelation
+public import FLT.Mazur.OrderedHilbertChartInvariantComparison
+public import FLT.Mazur.OrderedHilbertChartQuotientComparison
+public import FLT.Mazur.OrderedHilbertChartRelationBridge
+public import FLT.Mazur.OrderedHilbertChartRelationCover
 public import FLT.Mazur.OrderedHilbertEtaleGeometricCoverage
 public import FLT.Mazur.OrderedHilbertEtaleGeometricLift
 public import FLT.Mazur.OrderedHilbertEtaleResidueLift
@@ -6202,6 +6209,7 @@ public import FLT.Mazur.OrderedHilbertFaithfulPicardComparison
 public import FLT.Mazur.OrderedHilbertFaithfulRestrictedIso
 public import FLT.Mazur.OrderedHilbertFaithfulRestrictedQuotient
 public import FLT.Mazur.OrderedHilbertFaithfulTestCover
+public import FLT.Mazur.OrderedHilbertFullChartCover
 public import FLT.Mazur.OrderedHilbertIdentityComparisonCover
 public import FLT.Mazur.OrderedHilbertIdentityKernelPair
 public import FLT.Mazur.OrderedHilbertIdentityOriginalBaseSquare
@@ -7624,6 +7632,7 @@ public import FLT.Mazur.RelativeFiberMorphism
 public import FLT.Mazur.RelativeFiberNakayama
 public import FLT.Mazur.RelativeFppfComparisonCover
 public import FLT.Mazur.RelativeFppfLocalSubfunctor
+public import FLT.Mazur.RelativeFppfLocallyRingedCover
 public import FLT.Mazur.RelativeFppfRepresentedCover
 public import FLT.Mazur.RelativeFppfSurjectivityDetection
 public import FLT.Mazur.RelativeGenusOneAffineCartesian
@@ -7768,6 +7777,7 @@ public import FLT.Mazur.RelativeRelationArrowCalculus
 public import FLT.Mazur.RelativeRelationFppfInvariantQuotient
 public import FLT.Mazur.RelativeRelationFppfLocallyRingedDescent
 public import FLT.Mazur.RelativeRelationFppfOrbitComparison
+public import FLT.Mazur.RelativeRelationFppfRefinement
 public import FLT.Mazur.RelativeRelationFppfSectionComparison
 public import FLT.Mazur.RelativeRelationFpqcInvariantQuotient
 public import FLT.Mazur.RelativeRelationFpqcOrbitComparison
