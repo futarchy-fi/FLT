@@ -6179,6 +6179,7 @@ public import FLT.Mazur.OrderedHilbertBaseOpenEffectiveQuotient
 public import FLT.Mazur.OrderedHilbertBaseOpenImmersion
 public import FLT.Mazur.OrderedHilbertBaseOpenRelation
 public import FLT.Mazur.OrderedHilbertChartFullRelation
+public import FLT.Mazur.OrderedHilbertChartRelationBridge
 public import FLT.Mazur.OrderedHilbertEtaleGeometricCoverage
 public import FLT.Mazur.OrderedHilbertEtaleGeometricLift
 public import FLT.Mazur.OrderedHilbertEtaleResidueLift
