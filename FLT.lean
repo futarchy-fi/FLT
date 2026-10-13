@@ -7291,6 +7291,7 @@ public import FLT.Mazur.ProperAcyclicRankOneUniversalDivisor
 public import FLT.Mazur.ProperAffineSectionCartier
 public import FLT.Mazur.ProperAffineTargetRigidity
 public import FLT.Mazur.ProperAmpleConverse
+public import FLT.Mazur.ProperAmpleDivisorExhaustion
 public import FLT.Mazur.ProperAmpleFiberApproximation
 public import FLT.Mazur.ProperAmpleFiberEnvelope
 public import FLT.Mazur.ProperAmpleFiberModel
