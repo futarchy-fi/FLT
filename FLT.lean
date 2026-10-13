@@ -8368,6 +8368,7 @@ public import FLT.Mazur.SchemeRefinementReconstruction
 public import FLT.Mazur.SchemeRelationDoubleRestriction
 public import FLT.Mazur.SchemeRelationFunctionDescent
 public import FLT.Mazur.SchemeRelationInvariantAffineUniversal
+public import FLT.Mazur.SchemeRelationInvariantDominant
 public import FLT.Mazur.SchemeRelationInvariantEnvelope
 public import FLT.Mazur.SchemeRelationInvariantRestriction
 public import FLT.Mazur.SchemeRelationInvariantSpectrum
