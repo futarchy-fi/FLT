@@ -4649,6 +4649,7 @@ public import FLT.Mazur.GeneralizedCurveSmoothIntegral
 public import FLT.Mazur.GeneralizedCurveSmoothPullback
 public import FLT.Mazur.GeneralizedCurveSubgroupComparison
 public import FLT.Mazur.GeneralizedCurveSubgroupIdeal
+public import FLT.Mazur.GeneralizedCurveUnrestrictedPointFrames
 public import FLT.Mazur.GeneralizedEllipticCurve
 public import FLT.Mazur.GeneratorDenominatorLocalization
 public import FLT.Mazur.GenericConnectedFiberOpen
