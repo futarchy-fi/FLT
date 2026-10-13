@@ -2763,6 +2763,7 @@ public import FLT.Mazur.AffineHilbertDerivedNoetherianRelation
 public import FLT.Mazur.AffineHilbertEffectiveOpenDescent
 public import FLT.Mazur.AffineHilbertEffectiveOpenEtale
 public import FLT.Mazur.AffineHilbertEffectiveOpenFlatRefinement
+public import FLT.Mazur.AffineHilbertEffectiveOpenLocalImage
 public import FLT.Mazur.AffineHilbertEffectiveOpenPicard
 public import FLT.Mazur.AffineHilbertEffectiveTargetOpen
 public import FLT.Mazur.AffineHilbertEnvelopeCoaction
