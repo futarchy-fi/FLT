@@ -2788,6 +2788,7 @@ public import FLT.Mazur.AffineHilbertTensorScalars
 public import FLT.Mazur.AffineHilbertTranslationDenominators
 public import FLT.Mazur.AffineHilbertTranslationEnvelope
 public import FLT.Mazur.AffineHilbertTranslationFullRestriction
+public import FLT.Mazur.AffineHilbertTranslationOriginalEnvelope
 public import FLT.Mazur.AffineHilbertTranslationRelation
 public import FLT.Mazur.AffineHilbertTranslationSource
 public import FLT.Mazur.AffineHilbertTranslationSourceCover
