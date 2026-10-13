@@ -8972,6 +8972,7 @@ public import FLT.Mazur.WeierstrassConicFullParameterCoefficient
 public import FLT.Mazur.WeierstrassConicParameterCoefficient
 public import FLT.Mazur.WeierstrassConicPunctureCoefficient
 public import FLT.Mazur.WeierstrassConicZeroAffineParameter
+public import FLT.Mazur.WeierstrassConicZeroDescent
 public import FLT.Mazur.WeierstrassConstantSections
 public import FLT.Mazur.WeierstrassCrossInputAdditionComparison
 public import FLT.Mazur.WeierstrassCubicAmbientCohomology
