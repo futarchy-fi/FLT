@@ -5912,6 +5912,7 @@ public import FLT.Mazur.OccurrenceQuotientInverseStages
 public import FLT.Mazur.OddWeierstrassAuxiliaryCoverage
 public import FLT.Mazur.OddWeierstrassAuxiliaryLevel
 public import FLT.Mazur.OddWeierstrassGeometricLevelThree
+public import FLT.Mazur.OddWeierstrassThreeTorsionFinite
 public import FLT.Mazur.OneGonAffineCover
 public import FLT.Mazur.OneGonAffineNormalization
 public import FLT.Mazur.OneGonAffineNormalizationCoordinates
