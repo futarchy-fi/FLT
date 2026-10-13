@@ -2754,6 +2754,7 @@ public import FLT.Mazur.AffineHilbertChartRelation
 public import FLT.Mazur.AffineHilbertComposableEnvelope
 public import FLT.Mazur.AffineHilbertCompositionCharts
 public import FLT.Mazur.AffineHilbertCompositionFiniteBranches
+public import FLT.Mazur.AffineHilbertDerivedNoetherianRelation
 public import FLT.Mazur.AffineHilbertEnvelopeCoaction
 public import FLT.Mazur.AffineHilbertEnvelopeKernelPair
 public import FLT.Mazur.AffineHilbertEnvelopeOpenChart
