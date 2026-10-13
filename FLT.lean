@@ -6071,6 +6071,7 @@ public import FLT.Mazur.OneGonGluing
 public import FLT.Mazur.OneGonLocalDescent
 public import FLT.Mazur.OneGonLocalizedEqualizer
 public import FLT.Mazur.OneGonMobiusConductors
+public import FLT.Mazur.OneGonNodeNormalizationIdeal
 public import FLT.Mazur.OneGonNormalization
 public import FLT.Mazur.OneGonNormalizationChart
 public import FLT.Mazur.OneGonNormalizationCoordinates
@@ -6734,7 +6735,14 @@ public import FLT.Mazur.PolygonNormalizationTorusPullback
 public import FLT.Mazur.PolygonNormalizationTransport
 public import FLT.Mazur.PolygonOneGonCompletion
 public import FLT.Mazur.PolygonOneGonContraction
+public import FLT.Mazur.PolygonOneGonContractionBaseChange
 public import FLT.Mazur.PolygonOneGonContractionDiagram
+public import FLT.Mazur.PolygonOneGonContractionFiber
+public import FLT.Mazur.PolygonOneGonContractionFiberCharts
+public import FLT.Mazur.PolygonOneGonContractionMarking
+public import FLT.Mazur.PolygonOneGonContractionMarkingLine
+public import FLT.Mazur.PolygonOneGonContractionSymmetry
+public import FLT.Mazur.PolygonOneGonContractionTorus
 public import FLT.Mazur.PolygonOneGonDenominator
 public import FLT.Mazur.PolygonOneGonGeneratorIdentities
 public import FLT.Mazur.PolygonOneGonInterpolationEquations
@@ -6798,10 +6806,12 @@ public import FLT.Mazur.PolygonPureDimension
 public import FLT.Mazur.PolygonReciprocalEvaluation
 public import FLT.Mazur.PolygonRefinedClosedCharts
 public import FLT.Mazur.PolygonReflectionFullFamily
+public import FLT.Mazur.PolygonReflectionMarking
 public import FLT.Mazur.PolygonRetainedSectionRotation
 public import FLT.Mazur.PolygonRetainedStageMarkings
 public import FLT.Mazur.PolygonRotationNoFixedPoints
 public import FLT.Mazur.PolygonRotationScalars
+public import FLT.Mazur.PolygonScalarReflectionRelations
 public import FLT.Mazur.PolygonScaledReciprocal
 public import FLT.Mazur.PolygonScalingNaturality
 public import FLT.Mazur.PolygonSectionRingFunctor
