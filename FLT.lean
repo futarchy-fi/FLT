@@ -8772,6 +8772,7 @@ public import FLT.Mazur.WeierstrassCoefficientSecant
 public import FLT.Mazur.WeierstrassCoefficientShearAction
 public import FLT.Mazur.WeierstrassCoefficientShearActionDomain
 public import FLT.Mazur.WeierstrassCoefficientShearActionSpecialization
+public import FLT.Mazur.WeierstrassCoefficientShearAdjacentAtlasPullback
 public import FLT.Mazur.WeierstrassCoefficientShearAdjacentChartMap
 public import FLT.Mazur.WeierstrassCoefficientShearAdjacentComponentRootChange
 public import FLT.Mazur.WeierstrassCoefficientShearAdjacentComponentSpecialization
