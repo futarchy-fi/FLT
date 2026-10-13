@@ -6503,6 +6503,7 @@ public import FLT.Mazur.PolygonCompleteCartesianPointCohomology
 public import FLT.Mazur.PolygonCompleteCartesianPointDegree
 public import FLT.Mazur.PolygonCompleteCartesianPointDivisor
 public import FLT.Mazur.PolygonCompleteCartesianPointLine
+public import FLT.Mazur.PolygonCompleteCartesianRefinement
 public import FLT.Mazur.PolygonCompleteCartesianRotation
 public import FLT.Mazur.PolygonCompleteClassifiedFibers
 public import FLT.Mazur.PolygonCompleteClosedFiber
