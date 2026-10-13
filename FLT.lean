@@ -3784,6 +3784,7 @@ public import FLT.Mazur.DivisorLineSectionCompatibility
 public import FLT.Mazur.DivisorLineSectionComposition
 public import FLT.Mazur.DivisorLineSectionModel
 public import FLT.Mazur.DivisorLineSectionSquare
+public import FLT.Mazur.DivisorLineTensorSectionCompatibility
 public import FLT.Mazur.DivisorPowerCanonicalSection
 public import FLT.Mazur.DivisorPowerComplementTransition
 public import FLT.Mazur.DivisorPowerEulerCharacteristic
