@@ -7649,6 +7649,7 @@ public import FLT.Mazur.RelativeGenusOneUnrestrictedComplementCoordinates
 public import FLT.Mazur.RelativeGenusOneUnrestrictedComplementEquation
 public import FLT.Mazur.RelativeGenusOneUnrestrictedComplementMonomials
 public import FLT.Mazur.RelativeGenusOneUnrestrictedCubicFactorization
+public import FLT.Mazur.RelativeGenusOneUnrestrictedCubicPreimages
 public import FLT.Mazur.RelativeGenusOneUnrestrictedCubicRelation
 public import FLT.Mazur.RelativeGenusOneUnrestrictedFramedProducts
 public import FLT.Mazur.RelativeGenusOneUnrestrictedHigherMonomials
