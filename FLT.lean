@@ -3782,6 +3782,7 @@ public import FLT.Mazur.DivisorLinePullbackIdentity
 public import FLT.Mazur.DivisorLinePullbackTransport
 public import FLT.Mazur.DivisorLineSectionCompatibility
 public import FLT.Mazur.DivisorLineSectionComposition
+public import FLT.Mazur.DivisorLineSectionIdealTransport
 public import FLT.Mazur.DivisorLineSectionModel
 public import FLT.Mazur.DivisorLineSectionSquare
 public import FLT.Mazur.DivisorLineSectionTriangle
