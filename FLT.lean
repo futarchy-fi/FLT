@@ -6172,6 +6172,7 @@ public import FLT.Mazur.OrderedDivisorTranslation
 public import FLT.Mazur.OrderedHilbertAffineEtaleCoverage
 public import FLT.Mazur.OrderedHilbertAffineEtaleTestCover
 public import FLT.Mazur.OrderedHilbertBaseOpenChart
+public import FLT.Mazur.OrderedHilbertBaseOpenImmersion
 public import FLT.Mazur.OrderedHilbertEtaleGeometricCoverage
 public import FLT.Mazur.OrderedHilbertEtaleGeometricLift
 public import FLT.Mazur.OrderedHilbertEtaleResidueLift
