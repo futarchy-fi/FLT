@@ -5993,6 +5993,7 @@ public import FLT.Mazur.OrderedHilbertFaithfulClass
 public import FLT.Mazur.OrderedHilbertFaithfulOrbitCover
 public import FLT.Mazur.OrderedHilbertFaithfulParameter
 public import FLT.Mazur.OrderedHilbertFaithfulPicardComparison
+public import FLT.Mazur.OrderedHilbertFaithfulRestrictedIso
 public import FLT.Mazur.OrderedHilbertFaithfulRestrictedQuotient
 public import FLT.Mazur.OrderedHilbertFaithfulTestCover
 public import FLT.Mazur.OrderedHilbertSeparableGeometricCoverage
