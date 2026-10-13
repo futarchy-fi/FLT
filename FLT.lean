@@ -5909,6 +5909,7 @@ public import FLT.Mazur.OccurrenceOldTargetStages
 public import FLT.Mazur.OccurrencePolynomialDataRelations
 public import FLT.Mazur.OccurrencePolynomialDataStages
 public import FLT.Mazur.OccurrenceQuotientInverseStages
+public import FLT.Mazur.OddWeierstrassAffineMarking
 public import FLT.Mazur.OddWeierstrassAuxiliaryCoverage
 public import FLT.Mazur.OddWeierstrassAuxiliaryEtale
 public import FLT.Mazur.OddWeierstrassAuxiliaryFullBasis
