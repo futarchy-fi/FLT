@@ -8048,6 +8048,7 @@ public import FLT.Mazur.SchemeSectionTransportNaturality
 public import FLT.Mazur.SchemeSourceTestOverlapRecognition
 public import FLT.Mazur.SchemeTranslationNormGluing
 public import FLT.Mazur.SchemeTranslationNormLocal
+public import FLT.Mazur.SchemeTranslationNormTests
 public import FLT.Mazur.SchemeTripleOverlap
 public import FLT.Mazur.SchemeUnchangedOpen
 public import FLT.Mazur.SchemeUnchangedOpenComposition
