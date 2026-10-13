@@ -6821,6 +6821,7 @@ public import FLT.Mazur.PolygonRefinedClosedCharts
 public import FLT.Mazur.PolygonReflectionFullFamily
 public import FLT.Mazur.PolygonReflectionMarking
 public import FLT.Mazur.PolygonReflectionMarkingLine
+public import FLT.Mazur.PolygonRelabelingNodeLine
 public import FLT.Mazur.PolygonRetainedSectionRotation
 public import FLT.Mazur.PolygonRetainedStageMarkings
 public import FLT.Mazur.PolygonRotationMarkingLine
