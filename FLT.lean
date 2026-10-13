@@ -6211,6 +6211,7 @@ public import FLT.Mazur.OrderedHilbertOriginalTestCover
 public import FLT.Mazur.OrderedHilbertOriginalTestIntersection
 public import FLT.Mazur.OrderedHilbertOriginalTestLift
 public import FLT.Mazur.OrderedHilbertOriginalTestPullback
+public import FLT.Mazur.OrderedHilbertPresentationComparison
 public import FLT.Mazur.OrderedHilbertQuotientFullRelation
 public import FLT.Mazur.OrderedHilbertQuotientSchemeCriterion
 public import FLT.Mazur.OrderedHilbertQuotientSchemeDescent
