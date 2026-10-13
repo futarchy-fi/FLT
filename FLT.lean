@@ -2698,6 +2698,7 @@ public import FLT.Mazur.AffineEtaleFaithfulCoefficients
 public import FLT.Mazur.AffineEtaleFaithfulNeighborhood
 public import FLT.Mazur.AffineEtaleFaithfulSource
 public import FLT.Mazur.AffineEtaleFaithfulSpectrum
+public import FLT.Mazur.AffineEtaleFiniteBranch
 public import FLT.Mazur.AffineEtaleFiniteFaithfulRefinement
 public import FLT.Mazur.AffineEtaleFiniteFaithfulSpectrum
 public import FLT.Mazur.AffineEtaleFiniteFreeSpectrum
