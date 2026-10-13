@@ -3780,7 +3780,12 @@ public import FLT.Mazur.DivisorLinePullback
 public import FLT.Mazur.DivisorLinePullbackComposition
 public import FLT.Mazur.DivisorLinePullbackIdentity
 public import FLT.Mazur.DivisorLinePullbackTransport
+public import FLT.Mazur.DivisorLineSectionCompatibility
+public import FLT.Mazur.DivisorLineSectionComposition
 public import FLT.Mazur.DivisorLineSectionModel
+public import FLT.Mazur.DivisorLineSectionSquare
+public import FLT.Mazur.DivisorLineSectionTriangle
+public import FLT.Mazur.DivisorLineTensorSectionCompatibility
 public import FLT.Mazur.DivisorPowerCanonicalSection
 public import FLT.Mazur.DivisorPowerComplementTransition
 public import FLT.Mazur.DivisorPowerEulerCharacteristic
@@ -6732,6 +6737,7 @@ public import FLT.Mazur.PolygonNormalizationFinite
 public import FLT.Mazur.PolygonNormalizationHOne
 public import FLT.Mazur.PolygonNormalizationHZero
 public import FLT.Mazur.PolygonNormalizationLinearSections
+public import FLT.Mazur.PolygonNormalizationSectionCompatibility
 public import FLT.Mazur.PolygonNormalizationSectionFamilies
 public import FLT.Mazur.PolygonNormalizationTorusPullback
 public import FLT.Mazur.PolygonNormalizationTransport
@@ -6743,6 +6749,11 @@ public import FLT.Mazur.PolygonOneGonContractionFiber
 public import FLT.Mazur.PolygonOneGonContractionFiberCharts
 public import FLT.Mazur.PolygonOneGonContractionMarking
 public import FLT.Mazur.PolygonOneGonContractionMarkingLine
+public import FLT.Mazur.PolygonOneGonContractionMarkingSection
+public import FLT.Mazur.PolygonOneGonContractionNormalizationLine
+public import FLT.Mazur.PolygonOneGonContractionReflectionLine
+public import FLT.Mazur.PolygonOneGonContractionReflectionPower
+public import FLT.Mazur.PolygonOneGonContractionRotationLine
 public import FLT.Mazur.PolygonOneGonContractionSymmetry
 public import FLT.Mazur.PolygonOneGonContractionTorus
 public import FLT.Mazur.PolygonOneGonDenominator
@@ -6809,8 +6820,10 @@ public import FLT.Mazur.PolygonReciprocalEvaluation
 public import FLT.Mazur.PolygonRefinedClosedCharts
 public import FLT.Mazur.PolygonReflectionFullFamily
 public import FLT.Mazur.PolygonReflectionMarking
+public import FLT.Mazur.PolygonReflectionMarkingLine
 public import FLT.Mazur.PolygonRetainedSectionRotation
 public import FLT.Mazur.PolygonRetainedStageMarkings
+public import FLT.Mazur.PolygonRotationMarkingLine
 public import FLT.Mazur.PolygonRotationNoFixedPoints
 public import FLT.Mazur.PolygonRotationScalars
 public import FLT.Mazur.PolygonScalarReflectionRelations
@@ -8640,6 +8653,7 @@ public import FLT.Mazur.TensorPowerDistribution
 public import FLT.Mazur.TensorPowerGeneratorOpen
 public import FLT.Mazur.TensorPowerNestedSection
 public import FLT.Mazur.TensorPowerPullbackComparison
+public import FLT.Mazur.TensorPowerPullbackSquare
 public import FLT.Mazur.TensorPowerReassociation
 public import FLT.Mazur.TensorPullbackComposition
 public import FLT.Mazur.TensorPullbackIdentity
@@ -9197,7 +9211,12 @@ public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroEqualityEndpoints
 public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroEqualityReflection
 public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroExteriorAffine
 public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroExteriorEndpoints
+public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroFirstCoconeDescent
+public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroInteriorDescent
+public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroLengthTwoCoconeDescent
+public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroRetainedCoconeMaps
 public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroSourceReflection
+public import FLT.Mazur.WeierstrassCoefficientShearResidueZeroTerminalDescent
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedAttachments
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedBoundaryAction
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedConicProjection
@@ -9217,7 +9236,11 @@ public import FLT.Mazur.WeierstrassCoefficientShearRetainedLineRootChange
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedLineSpecialization
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedReconstruction
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedScaleOneConic
+public import FLT.Mazur.WeierstrassCoefficientShearRetainedScaleOneDescent
+public import FLT.Mazur.WeierstrassCoefficientShearRetainedScaleOneEqualityDescent
+public import FLT.Mazur.WeierstrassCoefficientShearRetainedScaleOneHomExt
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedScaleOneIncidence
+public import FLT.Mazur.WeierstrassCoefficientShearRetainedScaleOneZeroDescent
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedStage
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedTensorLineComparison
 public import FLT.Mazur.WeierstrassCoefficientShearRetainedZeroDescent
@@ -9270,6 +9293,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearScaleOneConicSpecialization
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneEndpoints
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneEqualityComponent
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneEqualityOriginal
+public import FLT.Mazur.WeierstrassCoefficientShearScaleOneEqualityParameters
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneGluedConic
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneGluedIntersections
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneGluedPunctures
