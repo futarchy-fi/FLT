@@ -2755,6 +2755,7 @@ public import FLT.Mazur.AffineHilbertFixedBaseQuotientIso
 public import FLT.Mazur.AffineHilbertFixedBaseRelation
 public import FLT.Mazur.AffineHilbertFixedBaseRelationInverse
 public import FLT.Mazur.AffineHilbertFullRelationRestriction
+public import FLT.Mazur.AffineHilbertInvariantEnvelope
 public import FLT.Mazur.AffineHilbertLocalTensorInvariants
 public import FLT.Mazur.AffineHilbertLocalizedCoefficients
 public import FLT.Mazur.AffineHilbertLocalizedComposition
