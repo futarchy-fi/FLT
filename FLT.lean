@@ -5965,6 +5965,7 @@ public import FLT.Mazur.OddWeierstrassAuxiliaryPullbackSections
 public import FLT.Mazur.OddWeierstrassAuxiliaryTorsionCover
 public import FLT.Mazur.OddWeierstrassAuxiliaryTorsionDisjoint
 public import FLT.Mazur.OddWeierstrassAuxiliaryTorsionSections
+public import FLT.Mazur.OddWeierstrassCyclicHomAffineMarkings
 public import FLT.Mazur.OddWeierstrassCyclicHomAffineSource
 public import FLT.Mazur.OddWeierstrassCyclicHomAuxiliaryScheme
 public import FLT.Mazur.OddWeierstrassCyclicHomDivisorFppfCoverage
