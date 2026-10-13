@@ -6174,6 +6174,10 @@ public import FLT.Mazur.OrderedDivisorSectionSpecialization
 public import FLT.Mazur.OrderedDivisorTranslation
 public import FLT.Mazur.OrderedHilbertAffineEtaleCoverage
 public import FLT.Mazur.OrderedHilbertAffineEtaleTestCover
+public import FLT.Mazur.OrderedHilbertBaseOpenChart
+public import FLT.Mazur.OrderedHilbertBaseOpenEffectiveQuotient
+public import FLT.Mazur.OrderedHilbertBaseOpenImmersion
+public import FLT.Mazur.OrderedHilbertBaseOpenRelation
 public import FLT.Mazur.OrderedHilbertEtaleGeometricCoverage
 public import FLT.Mazur.OrderedHilbertEtaleGeometricLift
 public import FLT.Mazur.OrderedHilbertEtaleResidueLift
@@ -6206,10 +6210,16 @@ public import FLT.Mazur.OrderedHilbertIdentityRelationLift
 public import FLT.Mazur.OrderedHilbertIdentityRelationOperations
 public import FLT.Mazur.OrderedHilbertIdentitySchemeSource
 public import FLT.Mazur.OrderedHilbertIdentitySheafCoverage
+public import FLT.Mazur.OrderedHilbertOriginalTestCover
+public import FLT.Mazur.OrderedHilbertOriginalTestIntersection
+public import FLT.Mazur.OrderedHilbertOriginalTestLift
+public import FLT.Mazur.OrderedHilbertOriginalTestPullback
+public import FLT.Mazur.OrderedHilbertPresentationComparison
 public import FLT.Mazur.OrderedHilbertQuotientFullRelation
 public import FLT.Mazur.OrderedHilbertQuotientSchemeCriterion
 public import FLT.Mazur.OrderedHilbertQuotientSchemeDescent
 public import FLT.Mazur.OrderedHilbertQuotientSheafCoequalizer
+public import FLT.Mazur.OrderedHilbertQuotientTestPullback
 public import FLT.Mazur.OrderedHilbertSeparableGeometricCoverage
 public import FLT.Mazur.OrderedProjectiveHilbertNaturality
 public import FLT.Mazur.OrderedProjectiveHilbertParameter
@@ -7610,6 +7620,7 @@ public import FLT.Mazur.RelativeFiberNakayama
 public import FLT.Mazur.RelativeFppfComparisonCover
 public import FLT.Mazur.RelativeFppfLocalSubfunctor
 public import FLT.Mazur.RelativeFppfRepresentedCover
+public import FLT.Mazur.RelativeFppfSurjectivityDetection
 public import FLT.Mazur.RelativeGenusOneAffineCartesian
 public import FLT.Mazur.RelativeGenusOneAffineCubicMorphism
 public import FLT.Mazur.RelativeGenusOneAffineIso
