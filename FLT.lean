@@ -6742,6 +6742,7 @@ public import FLT.Mazur.PolygonOneGonContractionFiber
 public import FLT.Mazur.PolygonOneGonContractionFiberCharts
 public import FLT.Mazur.PolygonOneGonContractionMarking
 public import FLT.Mazur.PolygonOneGonContractionMarkingLine
+public import FLT.Mazur.PolygonOneGonContractionMarkingSection
 public import FLT.Mazur.PolygonOneGonContractionSymmetry
 public import FLT.Mazur.PolygonOneGonContractionTorus
 public import FLT.Mazur.PolygonOneGonDenominator
