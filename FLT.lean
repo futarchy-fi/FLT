@@ -3620,6 +3620,7 @@ public import FLT.Mazur.ConstantCyclicGroup
 public import FLT.Mazur.ConstantCyclicInclusion
 public import FLT.Mazur.ConstantCyclicRelativeClosed
 public import FLT.Mazur.ConstantCyclicRelativeGeometry
+public import FLT.Mazur.ConstantCyclicSchemeAction
 public import FLT.Mazur.ConstantCyclicSectionClosed
 public import FLT.Mazur.ConstantCyclicSectionMap
 public import FLT.Mazur.ConstantDegree
@@ -4316,6 +4317,7 @@ public import FLT.Mazur.FiniteCohomologyFreeNeighborhood
 public import FLT.Mazur.FiniteCommonPrincipalCover
 public import FLT.Mazur.FiniteCompactOpenAffineLimit
 public import FLT.Mazur.FiniteCompactOpenCoverLimit
+public import FLT.Mazur.FiniteCoproductTensorRight
 public import FLT.Mazur.FiniteCoverDirectSumSheaf
 public import FLT.Mazur.FiniteDVRAbsoluteRamification
 public import FLT.Mazur.FiniteDVRComplete
@@ -6531,6 +6533,10 @@ public import FLT.Mazur.PolygonCompleteCoefficientStageKernel
 public import FLT.Mazur.PolygonCompleteComparedSectionReconstruction
 public import FLT.Mazur.PolygonCompleteConstantSections
 public import FLT.Mazur.PolygonCompleteCoordinateEvaluation
+public import FLT.Mazur.PolygonCompleteCyclicDivisor
+public import FLT.Mazur.PolygonCompleteCyclicMarking
+public import FLT.Mazur.PolygonCompleteCyclicOrbit
+public import FLT.Mazur.PolygonCompleteCyclicSchemeAction
 public import FLT.Mazur.PolygonCompleteDivisorLine
 public import FLT.Mazur.PolygonCompleteDivisorLineCoherence
 public import FLT.Mazur.PolygonCompleteDivisorPowerComparison
@@ -6658,9 +6664,11 @@ public import FLT.Mazur.PolygonCompletePointWeierstrassEquation
 public import FLT.Mazur.PolygonCompletePrincipalClosedFiber
 public import FLT.Mazur.PolygonCompleteProjectiveRotation
 public import FLT.Mazur.PolygonCompleteRotation
+public import FLT.Mazur.PolygonCompleteSmoothCyclicMarking
 public import FLT.Mazur.PolygonCompleteSmoothDimensionOpen
 public import FLT.Mazur.PolygonCompleteSmoothIrreducible
 public import FLT.Mazur.PolygonCompleteSmoothPointAffine
+public import FLT.Mazur.PolygonCompleteSmoothRotation
 public import FLT.Mazur.PolygonCompleteStageMarkings
 public import FLT.Mazur.PolygonCompleteStageRotation
 public import FLT.Mazur.PolygonCompleteStructureCohomology
