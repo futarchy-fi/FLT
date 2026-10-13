@@ -6198,6 +6198,7 @@ public import FLT.Mazur.OrderedHilbertIdentityOriginalBaseSquare
 public import FLT.Mazur.OrderedHilbertIdentityOriginalRelation
 public import FLT.Mazur.OrderedHilbertIdentityOriginalSection
 public import FLT.Mazur.OrderedHilbertIdentityQuotientCover
+public import FLT.Mazur.OrderedHilbertIdentityQuotientOriginalSection
 public import FLT.Mazur.OrderedHilbertIdentityRelationLift
 public import FLT.Mazur.OrderedHilbertIdentityRelationOperations
 public import FLT.Mazur.OrderedHilbertIdentitySchemeSource
