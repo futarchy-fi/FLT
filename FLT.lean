@@ -5063,6 +5063,7 @@ public import FLT.Mazur.HilbertGrassmannianImmersion
 public import FLT.Mazur.HilbertGrassmannianOverlap
 public import FLT.Mazur.HilbertGrassmannianSchemeTest
 public import FLT.Mazur.HilbertIdentityGroundBase
+public import FLT.Mazur.HilbertIdentityGroundOriginalBaseSquare
 public import FLT.Mazur.HilbertIdentityGroundOriginalQuotient
 public import FLT.Mazur.HilbertIdentityGroundOriginalSection
 public import FLT.Mazur.HilbertIdentityGroundQuotientChart
@@ -6193,9 +6194,11 @@ public import FLT.Mazur.OrderedHilbertFaithfulRestrictedQuotient
 public import FLT.Mazur.OrderedHilbertFaithfulTestCover
 public import FLT.Mazur.OrderedHilbertIdentityComparisonCover
 public import FLT.Mazur.OrderedHilbertIdentityKernelPair
+public import FLT.Mazur.OrderedHilbertIdentityOriginalBaseSquare
 public import FLT.Mazur.OrderedHilbertIdentityOriginalRelation
 public import FLT.Mazur.OrderedHilbertIdentityOriginalSection
 public import FLT.Mazur.OrderedHilbertIdentityQuotientCover
+public import FLT.Mazur.OrderedHilbertIdentityQuotientOriginalSection
 public import FLT.Mazur.OrderedHilbertIdentityRelationLift
 public import FLT.Mazur.OrderedHilbertIdentityRelationOperations
 public import FLT.Mazur.OrderedHilbertIdentitySchemeSource
@@ -8394,6 +8397,7 @@ public import FLT.Mazur.SmoothRelativeCotangentRank
 public import FLT.Mazur.SmoothSectionCartier
 public import FLT.Mazur.SmoothTranslationChartOrbitFibers
 public import FLT.Mazur.SmoothTranslationChartOrbitHomeomorph
+public import FLT.Mazur.SmoothTranslationCommonSectionSquare
 public import FLT.Mazur.SmoothTranslationGeometricClass
 public import FLT.Mazur.SmoothTranslationInvariantOpenDomains
 public import FLT.Mazur.SmoothTranslationInvariantOpenFunctor
@@ -8404,7 +8408,10 @@ public import FLT.Mazur.SmoothTranslationNeighborhoodDomains
 public import FLT.Mazur.SmoothTranslationOrbitCover
 public import FLT.Mazur.SmoothTranslationOrbitOpen
 public import FLT.Mazur.SmoothTranslationOriginalInvariantDescent
+public import FLT.Mazur.SmoothTranslationQuotientBaseSquare
+public import FLT.Mazur.SmoothTranslationQuotientCommonSource
 public import FLT.Mazur.SmoothTranslationQuotientOpenImmersion
+public import FLT.Mazur.SmoothTranslationQuotientSectionPullback
 public import FLT.Mazur.SmoothTranslationRestrictedRelationCover
 public import FLT.Mazur.SmoothTranslationSectionNaturality
 public import FLT.Mazur.SmoothTranslationSectionRestriction
