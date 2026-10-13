@@ -6975,6 +6975,7 @@ public import FLT.Mazur.ProjectiveLineEndpointCover
 public import FLT.Mazur.ProjectiveLineEndpointReversal
 public import FLT.Mazur.ProjectiveLineEndpoints
 public import FLT.Mazur.ProjectiveLineFieldExtension
+public import FLT.Mazur.ProjectiveLineHomogeneousCoefficient
 public import FLT.Mazur.ProjectiveLineHomogeneousCoordinates
 public import FLT.Mazur.ProjectiveLineHomogeneousReversal
 public import FLT.Mazur.ProjectiveLineInfinityTorusAlgebra
