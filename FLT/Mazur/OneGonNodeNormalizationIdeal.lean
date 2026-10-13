@@ -12,8 +12,8 @@ public import Mathlib.RingTheory.Ideal.Quotient.Operations
 # The scheme-theoretic node fiber in the one-gon normalization chart
 
 Extending the original node ideal to its actual polynomial normalization
-gives the principal ideal X(X-1). Its quotient has precisely the two reduced
-rational branches; the formulas work over every commutative coefficient ring.
+gives the principal ideal X(X-1). Its quotient is the product of the two
+original coefficient rings; the formulas work over every commutative ring.
 -/
 
 @[expose] public noncomputable section
