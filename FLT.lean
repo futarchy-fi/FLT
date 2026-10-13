@@ -6524,6 +6524,7 @@ public import FLT.Mazur.PolygonCompleteMarkingLineTransition
 public import FLT.Mazur.PolygonCompleteMarkingNaturality
 public import FLT.Mazur.PolygonCompleteMarkingPowerCoherence
 public import FLT.Mazur.PolygonCompleteMarkingRotation
+public import FLT.Mazur.PolygonCompleteMarkingSectionDescent
 public import FLT.Mazur.PolygonCompleteMarkingSectionModel
 public import FLT.Mazur.PolygonCompleteMarkingSpecialization
 public import FLT.Mazur.PolygonCompleteMarkingTestLine
