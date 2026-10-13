@@ -6460,6 +6460,7 @@ public import FLT.Mazur.PolygonCompleteBoundaryParameter
 public import FLT.Mazur.PolygonCompleteBoundaryProduct
 public import FLT.Mazur.PolygonCompleteBoundaryQuotient
 public import FLT.Mazur.PolygonCompleteBoundaryQuotientTransition
+public import FLT.Mazur.PolygonCompleteBoundaryRefinement
 public import FLT.Mazur.PolygonCompleteBoundarySectionProjection
 public import FLT.Mazur.PolygonCompleteBoundarySectionTransport
 public import FLT.Mazur.PolygonCompleteBoundaryTransitionCoherence
