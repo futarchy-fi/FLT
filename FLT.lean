@@ -8778,6 +8778,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearBoundedConicAction
 public import FLT.Mazur.WeierstrassCoefficientShearConicOrigins
 public import FLT.Mazur.WeierstrassCoefficientShearConicParameters
 public import FLT.Mazur.WeierstrassCoefficientShearCoverage
+public import FLT.Mazur.WeierstrassCoefficientShearEqualityChartParameters
 public import FLT.Mazur.WeierstrassCoefficientShearEqualityRootChange
 public import FLT.Mazur.WeierstrassCoefficientShearEqualitySemilinear
 public import FLT.Mazur.WeierstrassCoefficientShearEqualitySpecialization
