@@ -4652,6 +4652,7 @@ public import FLT.Mazur.GeneralizedCurveSubgroupComparison
 public import FLT.Mazur.GeneralizedCurveSubgroupIdeal
 public import FLT.Mazur.GeneralizedCurveUnrestrictedCubicCoverage
 public import FLT.Mazur.GeneralizedCurveUnrestrictedCubicPresentation
+public import FLT.Mazur.GeneralizedCurveUnrestrictedLocalFamily
 public import FLT.Mazur.GeneralizedCurveUnrestrictedPointFrames
 public import FLT.Mazur.GeneralizedEllipticCurve
 public import FLT.Mazur.GeneratorDenominatorLocalization
