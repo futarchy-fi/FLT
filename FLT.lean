@@ -6525,6 +6525,7 @@ public import FLT.Mazur.PolygonCompleteCoefficientStageKernel
 public import FLT.Mazur.PolygonCompleteComparedSectionReconstruction
 public import FLT.Mazur.PolygonCompleteConstantSections
 public import FLT.Mazur.PolygonCompleteCoordinateEvaluation
+public import FLT.Mazur.PolygonCompleteCyclicMarking
 public import FLT.Mazur.PolygonCompleteDivisorLine
 public import FLT.Mazur.PolygonCompleteDivisorLineCoherence
 public import FLT.Mazur.PolygonCompleteDivisorPowerComparison
