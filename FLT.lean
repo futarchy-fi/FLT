@@ -6203,6 +6203,10 @@ public import FLT.Mazur.OrderedHilbertIdentityRelationLift
 public import FLT.Mazur.OrderedHilbertIdentityRelationOperations
 public import FLT.Mazur.OrderedHilbertIdentitySchemeSource
 public import FLT.Mazur.OrderedHilbertIdentitySheafCoverage
+public import FLT.Mazur.OrderedHilbertQuotientFullRelation
+public import FLT.Mazur.OrderedHilbertQuotientSchemeCriterion
+public import FLT.Mazur.OrderedHilbertQuotientSchemeDescent
+public import FLT.Mazur.OrderedHilbertQuotientSheafCoequalizer
 public import FLT.Mazur.OrderedHilbertSeparableGeometricCoverage
 public import FLT.Mazur.OrderedProjectiveHilbertNaturality
 public import FLT.Mazur.OrderedProjectiveHilbertParameter
@@ -7599,6 +7603,7 @@ public import FLT.Mazur.RelativeFiberMorphism
 public import FLT.Mazur.RelativeFiberNakayama
 public import FLT.Mazur.RelativeFppfComparisonCover
 public import FLT.Mazur.RelativeFppfLocalSubfunctor
+public import FLT.Mazur.RelativeFppfRepresentedCover
 public import FLT.Mazur.RelativeGenusOneAffineCartesian
 public import FLT.Mazur.RelativeGenusOneAffineCubicMorphism
 public import FLT.Mazur.RelativeGenusOneAffineIso
@@ -7700,6 +7705,10 @@ public import FLT.Mazur.RelativePoleComplementFunctions
 public import FLT.Mazur.RelativePoleComplementLinear
 public import FLT.Mazur.RelativeRankOneDivisorUniqueness
 public import FLT.Mazur.RelativeRelationArrowCalculus
+public import FLT.Mazur.RelativeRelationFppfInvariantQuotient
+public import FLT.Mazur.RelativeRelationFppfLocallyRingedDescent
+public import FLT.Mazur.RelativeRelationFppfOrbitComparison
+public import FLT.Mazur.RelativeRelationFppfSectionComparison
 public import FLT.Mazur.RelativeRelationFpqcInvariantQuotient
 public import FLT.Mazur.RelativeRelationFpqcOrbitComparison
 public import FLT.Mazur.RelativeRelationFpqcSectionComparison
