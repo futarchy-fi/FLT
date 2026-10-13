@@ -7895,6 +7895,7 @@ public import FLT.Mazur.SchemeNilpotentSectionDetection
 public import FLT.Mazur.SchemeNormalizedRecoveryOverlap
 public import FLT.Mazur.SchemeOpenChartRange
 public import FLT.Mazur.SchemeOpenEnvelopeDenominators
+public import FLT.Mazur.SchemeOpenEnvelopeInterior
 public import FLT.Mazur.SchemeOpenEnvelopeLocus
 public import FLT.Mazur.SchemeOpenPushoutCharts
 public import FLT.Mazur.SchemeOpenPushoutCoverIso
