@@ -6927,6 +6927,7 @@ public import FLT.Mazur.PolygonStageVeroneseProjTransition
 public import FLT.Mazur.PolygonStageVeroneseTransition
 public import FLT.Mazur.PolygonStructureInclusion
 public import FLT.Mazur.PolygonTranslationImages
+public import FLT.Mazur.PolygonTranslationLineComposition
 public import FLT.Mazur.PolygonTranslationMarkingLine
 public import FLT.Mazur.PolygonUniversalAction
 public import FLT.Mazur.PolygonUniversalScaling
