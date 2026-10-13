@@ -2760,6 +2760,7 @@ public import FLT.Mazur.AffineHilbertComposableEnvelope
 public import FLT.Mazur.AffineHilbertCompositionCharts
 public import FLT.Mazur.AffineHilbertCompositionFiniteBranches
 public import FLT.Mazur.AffineHilbertDerivedNoetherianRelation
+public import FLT.Mazur.AffineHilbertEffectiveOpenPicard
 public import FLT.Mazur.AffineHilbertEffectiveTargetOpen
 public import FLT.Mazur.AffineHilbertEnvelopeCoaction
 public import FLT.Mazur.AffineHilbertEnvelopeKernelPair
