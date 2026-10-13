@@ -6683,6 +6683,7 @@ public import FLT.Mazur.PolygonCompleteRotation
 public import FLT.Mazur.PolygonCompleteSmoothCyclicMarking
 public import FLT.Mazur.PolygonCompleteSmoothDimensionOpen
 public import FLT.Mazur.PolygonCompleteSmoothFieldAction
+public import FLT.Mazur.PolygonCompleteSmoothFieldCoefficientCurve
 public import FLT.Mazur.PolygonCompleteSmoothFieldCoefficientGroup
 public import FLT.Mazur.PolygonCompleteSmoothFieldCurve
 public import FLT.Mazur.PolygonCompleteSmoothFieldCyclic
