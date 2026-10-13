@@ -3613,6 +3613,7 @@ public import FLT.Mazur.CyclicHomNormalizationGroup
 public import FLT.Mazur.CyclicHomNormalizationNaturality
 public import FLT.Mazur.CyclicHomNormalizationParameter
 public import FLT.Mazur.CyclicHomNormalizationSubgroup
+public import FLT.Mazur.CyclicHomNormalizedCubicValue
 public import FLT.Mazur.CyclicHomNormalizedFppfCoverage
 public import FLT.Mazur.CyclicHomNormalizedImageSieve
 public import FLT.Mazur.CyclicHomNormalizedLocus
