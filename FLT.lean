@@ -7624,6 +7624,7 @@ public import FLT.Mazur.RelativeGenusOnePoleReduction
 public import FLT.Mazur.RelativeGenusOneProjectiveIso
 public import FLT.Mazur.RelativeGenusOneProjectiveSections
 public import FLT.Mazur.RelativeGenusOneUnrestrictedCanonicalLine
+public import FLT.Mazur.RelativeGenusOneUnrestrictedPointFrames
 public import FLT.Mazur.RelativeGenusOneUnrestrictedPointLine
 public import FLT.Mazur.RelativeGenusOneUnrestrictedPointPowers
 public import FLT.Mazur.RelativeGenusOneUnrestrictedPointVanishing
