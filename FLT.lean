@@ -6459,6 +6459,7 @@ public import FLT.Mazur.PolygonCompleteBoundaryQuotientTransition
 public import FLT.Mazur.PolygonCompleteBoundarySectionProjection
 public import FLT.Mazur.PolygonCompleteBoundarySectionTransport
 public import FLT.Mazur.PolygonCompleteBoundaryTransitionCoherence
+public import FLT.Mazur.PolygonCompleteBoundaryTranslation
 public import FLT.Mazur.PolygonCompleteCartesianMarkings
 public import FLT.Mazur.PolygonCompleteCartesianPointCohomology
 public import FLT.Mazur.PolygonCompleteCartesianPointDegree
