@@ -6460,6 +6460,7 @@ public import FLT.Mazur.PolygonCompleteBoundaryBranches
 public import FLT.Mazur.PolygonCompleteBoundaryCartesian
 public import FLT.Mazur.PolygonCompleteBoundaryCoordinateTransport
 public import FLT.Mazur.PolygonCompleteBoundaryDescended
+public import FLT.Mazur.PolygonCompleteBoundaryDescendedFrames
 public import FLT.Mazur.PolygonCompleteBoundaryFactorization
 public import FLT.Mazur.PolygonCompleteBoundaryFiberFrameRefinement
 public import FLT.Mazur.PolygonCompleteBoundaryFiberFrames
