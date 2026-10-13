@@ -6465,6 +6465,7 @@ public import FLT.Mazur.PolygonCompleteBoundaryLabels
 public import FLT.Mazur.PolygonCompleteBoundaryLineComparison
 public import FLT.Mazur.PolygonCompleteBoundaryLocalComparison
 public import FLT.Mazur.PolygonCompleteBoundaryMultiplication
+public import FLT.Mazur.PolygonCompleteBoundaryNode
 public import FLT.Mazur.PolygonCompleteBoundaryNormalization
 public import FLT.Mazur.PolygonCompleteBoundaryParameter
 public import FLT.Mazur.PolygonCompleteBoundaryProduct
