@@ -6188,6 +6188,7 @@ public import FLT.Mazur.OrderedHilbertFaithfulPicardComparison
 public import FLT.Mazur.OrderedHilbertFaithfulRestrictedIso
 public import FLT.Mazur.OrderedHilbertFaithfulRestrictedQuotient
 public import FLT.Mazur.OrderedHilbertFaithfulTestCover
+public import FLT.Mazur.OrderedHilbertIdentityOriginalSection
 public import FLT.Mazur.OrderedHilbertIdentityQuotientCover
 public import FLT.Mazur.OrderedHilbertIdentitySchemeSource
 public import FLT.Mazur.OrderedHilbertSeparableGeometricCoverage
