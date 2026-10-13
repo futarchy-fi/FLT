@@ -6562,6 +6562,7 @@ public import FLT.Mazur.PolygonCompleteFieldH1
 public import FLT.Mazur.PolygonCompleteFixedPointFree
 public import FLT.Mazur.PolygonCompleteGenericGenus
 public import FLT.Mazur.PolygonCompleteGenericH1
+public import FLT.Mazur.PolygonCompleteGenericMorphismExt
 public import FLT.Mazur.PolygonCompleteGenericPureDimension
 public import FLT.Mazur.PolygonCompleteGenericRelativeDimension
 public import FLT.Mazur.PolygonCompleteGenericSmooth
