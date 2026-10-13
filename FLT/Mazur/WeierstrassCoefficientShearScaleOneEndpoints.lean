@@ -104,7 +104,7 @@ omit hj hjNext h3 h4 in
     (t : ℕ) (ht : t ≤ n) (i : Fin t) (k : ℕ) (hk : k ≤ n) (hstage : t = k) :
     coefficientShearRetainedTensorChart hπ data S r t ht i ≫
         (coefficientShearStageIso hπ data S r t k ht hk hstage).hom =
-      coefficientShearRetainedTensorChart hπ data S r k hk ⟨i.val, by omega⟩ := by
+      coefficientShearRetainedTensorChart hπ data S r k hk ⟨i.val, hstage ▸ i.isLt⟩ := by
   subst k
   exact Category.comp_id _
 
