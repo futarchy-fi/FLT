@@ -10246,6 +10246,7 @@ public import FLT.Mazur.WeierstrassNegationPairSections
 public import FLT.Mazur.WeierstrassNodalAdjacentIntersections
 public import FLT.Mazur.WeierstrassNodalDividedDepth
 public import FLT.Mazur.WeierstrassNodalDividedFamily
+public import FLT.Mazur.WeierstrassNodalInfinityTangentUnit
 public import FLT.Mazur.WeierstrassNodalResidueCharts
 public import FLT.Mazur.WeierstrassNodalResidueContraction
 public import FLT.Mazur.WeierstrassNodalResidueTangentDepth
