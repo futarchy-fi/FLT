@@ -4587,6 +4587,7 @@ public import FLT.Mazur.FiniteTypeBaseIndependentLineModel
 public import FLT.Mazur.FiniteTypeDiagramRefinement
 public import FLT.Mazur.FiniteTypeDiagramStages
 public import FLT.Mazur.FiniteTypeFppfRepresentativeOpenOverlap
+public import FLT.Mazur.FiniteTypeGenericFreeness
 public import FLT.Mazur.FiniteTypePointedAbelFppfIso
 public import FLT.Mazur.FiniteTypePointedFppfAcyclicOpen
 public import FLT.Mazur.FiniteTypePolynomialArrows
