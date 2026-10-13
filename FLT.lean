@@ -8876,6 +8876,7 @@ public import FLT.Mazur.VariableHilbertCommonAmbientEnvelope
 public import FLT.Mazur.VariableHilbertCommonAmbientSource
 public import FLT.Mazur.VariableHilbertCommonAmbientSquare
 public import FLT.Mazur.VariableHilbertDescendedKernel
+public import FLT.Mazur.VariableHilbertEffectivePicardSection
 public import FLT.Mazur.VariableHilbertEtaleRelation
 public import FLT.Mazur.VariableHilbertFiniteRelationFibers
 public import FLT.Mazur.VariableHilbertFixedBasePicard
