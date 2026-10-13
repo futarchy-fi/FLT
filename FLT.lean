@@ -7650,6 +7650,7 @@ public import FLT.Mazur.RelativeGenusOneUnrestrictedComplementMonomials
 public import FLT.Mazur.RelativeGenusOneUnrestrictedCubicRelation
 public import FLT.Mazur.RelativeGenusOneUnrestrictedFramedProducts
 public import FLT.Mazur.RelativeGenusOneUnrestrictedHigherMonomials
+public import FLT.Mazur.RelativeGenusOneUnrestrictedHomogeneousEquation
 public import FLT.Mazur.RelativeGenusOneUnrestrictedInitialPoleStep
 public import FLT.Mazur.RelativeGenusOneUnrestrictedLowPoleBasis
 public import FLT.Mazur.RelativeGenusOneUnrestrictedMonomialBasis
