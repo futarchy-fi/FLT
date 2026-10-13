@@ -10141,6 +10141,7 @@ public import FLT.Mazur.WeierstrassModificationXFiberTangentSwitch
 public import FLT.Mazur.WeierstrassModificationXFlat
 public import FLT.Mazur.WeierstrassModificationXFractionEquation
 public import FLT.Mazur.WeierstrassModificationXFractionMap
+public import FLT.Mazur.WeierstrassModificationXFullFiberDescentCompatibility
 public import FLT.Mazur.WeierstrassModificationXFullFiberHomExt
 public import FLT.Mazur.WeierstrassModificationXFullFiberPushout
 public import FLT.Mazur.WeierstrassModificationXFullNodeBranchCoordinates
