@@ -253,6 +253,7 @@ public import FLT.EllipticCurve.CubicLegendreReciprocalCover
 public import FLT.EllipticCurve.CubicLegendreReciprocalReturn
 public import FLT.EllipticCurve.CubicLegendreSign
 public import FLT.EllipticCurve.CubicLegendreSwapCover
+public import FLT.EllipticCurve.CubicLegendreSwapInvolution
 public import FLT.EllipticCurve.CubicLegendreSwapLift
 public import FLT.EllipticCurve.CubicLegendreSymmetries
 public import FLT.EllipticCurve.CubicLevelParameters

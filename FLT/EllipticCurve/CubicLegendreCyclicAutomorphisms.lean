@@ -12,8 +12,8 @@ Coefficient equivalences transport the cyclic scheme. Combining this transport
 with the descended swap and reciprocal isomorphisms gives actual automorphisms
 of the Legendre cyclic scheme, preserving its projection to the j-line.
 
-The involution and braid relations for these parameter-changing automorphisms
-remain to be proved before constructing the group action or its quotient.
+CubicLegendreSwapInvolution proves the swap involution. The reciprocal
+involution and braid relation are still needed for the group action and quotient.
 -/
 
 @[expose] public noncomputable section

@@ -2416,10 +2416,22 @@ quadratic étale cover, fixes its distinguished square root of -1, and proves
 the lifted coefficient map squares to identity. Combining it with the
 swap coordinate change gives `legendreSwapCoverCyclicAut`; its square and
 its action on the coefficient base are proved without additional axioms.
-Comparison with `legendreSwapCyclicAut` under the covering projection is
-still needed to transfer this local involution identity to the global map.
+The comparison with `legendreSwapCyclicAut` and the resulting global
+involution are now proved in the following module.
 The reciprocal and mixed global relations, modular quotient and arithmetic
 Mazur construction remain unfinished.
+
+### Global swap involution (2026-10-12)
+
+In `CubicLegendreSwapInvolution`, `legendreSwapCoverCyclicMap_comparison`
+identifies the actual local semilinear map with the pullback of the global
+swap. `legendreSwapCyclicAut_square` then cancels the epimorphic cover
+and proves that the global automorphism squares to identity.
+The comparison uses the actual descended return map, coefficient composition,
+and equation congruence; it assumes no new descent compatibility.
+The reciprocal and mixed global relations, modular quotient and arithmetic
+Mazur construction remain unfinished. This does not discharge any of the
+three admitted arithmetic inputs of the FLT endpoint.
 
 ## Exact target and the already completed adapters
 

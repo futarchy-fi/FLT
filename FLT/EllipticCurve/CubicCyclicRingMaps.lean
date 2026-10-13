@@ -18,8 +18,8 @@ coefficient composite is identity and the coordinate product is negation,
 the cyclic composite is identity for equations with a₁ = a₃ = 0.
 
 These results supply coefficient compatibilities for parameter-changing
-Legendre maps. Naturality of the quadratic descended coordinate maps and
-the resulting automorphism relations remain to be proved.
+Legendre maps. CubicLegendreSwapInvolution uses them to compare the local
+and global swap and establish its involution relation.
 -/
 
 @[expose] public noncomputable section
@@ -196,5 +196,30 @@ theorem cyclicCoordinateRingMap_return_neg (f : R →+* S) (g : S →+* R)
     simpa only [WeierstrassCurve.map_id, Iso.refl_hom, Over.id_left] using
       congrArg (fun e : scalarQuotientModel W p ≅ scalarQuotientModel W p =>
         e.hom.left) (he.trans hz))
+
+theorem ringHomCyclicMap_algebraMap [Algebra R S] :
+    ringHomCyclicMap W p (algebraMap R S) =
+      coefficientScalarQuotientMorphism W S p := by
+  let F (a : Algebra R S) :
+      Σ X : Scheme.{u}, X ⟶ (scalarQuotientModel W p).left :=
+    letI : Algebra R S := a
+    ⟨_, coefficientScalarQuotientMorphism W S p⟩
+  have h := congrArg F (toAlgebra_algebraMap (R := R) (S := S))
+  exact eq_of_heq (Sigma.mk.inj h).2
+
+
+theorem cyclicModelCongr_inv (V : WeierstrassCurve R) [V.IsElliptic] (h : W = V) :
+    (cyclicModelCongr W p V h).inv =
+      (cyclicModelCongr V p W h.symm).hom := by
+  subst V
+  rfl
+
+theorem ringHomCyclicMap_curve_congr (V : WeierstrassCurve R) [V.IsElliptic]
+    (h : W = V) (f : R →+* S) :
+    ringHomCyclicMap W p f ≫ (cyclicModelCongr W p V h).hom.left =
+      (cyclicModelCongr (W.map f) p (V.map f)
+        (congrArg (fun E => E.map f) h)).hom.left ≫ ringHomCyclicMap V p f := by
+  subst V
+  simp [cyclicModelCongr]
 
 end WeierstrassCurve.CubicCharts

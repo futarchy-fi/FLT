@@ -13,8 +13,8 @@ Its square is identity. Combining this coefficient map with the actual
 swap coordinate change gives an involutive automorphism of the cyclic scheme
 over the cover, with the stated action on its coefficient base.
 
-The comparison with the previously descended global swap automorphism
-remains to be proved; the local square identity alone does not establish it.
+The comparison with the descended global swap and its global square identity
+are proved in CubicLegendreSwapInvolution.
 -/
 
 @[expose] public noncomputable section
