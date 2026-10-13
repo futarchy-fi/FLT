@@ -6845,6 +6845,7 @@ public import FLT.Mazur.PolygonParameterProductLine
 public import FLT.Mazur.PolygonParameterProductMarking
 public import FLT.Mazur.PolygonParameterProductMultiplication
 public import FLT.Mazur.PolygonParameterProductNode
+public import FLT.Mazur.PolygonParameterProductNodeRefinement
 public import FLT.Mazur.PolygonParameterProductNormalization
 public import FLT.Mazur.PolygonParameterProductNormalizationRefinement
 public import FLT.Mazur.PolygonParameterProjectionComposition
