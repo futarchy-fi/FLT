@@ -8145,6 +8145,7 @@ public import FLT.Mazur.SchemeDescentAffineCharts
 public import FLT.Mazur.SchemeDescentCrossCoverCompatibility
 public import FLT.Mazur.SchemeDescentMapLaws
 public import FLT.Mazur.SchemeDescentPairTransport
+public import FLT.Mazur.SchemeDescentSheafIso
 public import FLT.Mazur.SchemeDescentTransportSquares
 public import FLT.Mazur.SchemeDescentTransportTest
 public import FLT.Mazur.SchemeDisjointBaseChange
