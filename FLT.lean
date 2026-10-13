@@ -7381,6 +7381,7 @@ public import FLT.Mazur.ProperGroupPointedHom
 public import FLT.Mazur.ProperGroupPointedRigidity
 public import FLT.Mazur.ProperImmersedCover
 public import FLT.Mazur.ProperIntegralConstantSections
+public import FLT.Mazur.ProperLineAcyclicFiniteFree
 public import FLT.Mazur.ProperLineAcyclicLocus
 public import FLT.Mazur.ProperLineAcyclicNeighborhood
 public import FLT.Mazur.ProperLineAcyclicOpenRepresentation
