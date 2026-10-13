@@ -49,11 +49,11 @@ local notation "line" => coefficientShearRetainedLine hπ data Q r (s + 1) hs j
   hscale hp (lin).1 (lin).2 (residueTangentEquation_root W)
 
 /-- The complete retained pair at the original common stage, with its ordered tangent roots. -/
-def coefficientShearResidueRetainedLine (i : Fin 2) :
+def coefficientShearResidueRetainedPair (i : Fin 2) :
     ProjectiveLine.chart Q ⟶ coefficientShearGlued hπ data Q r (s + 1) hs :=
   if i = 0 then line 0 (middle_first_root U)
   else line (-(U).a₁) (middle_second_root U)
-local notation "L" => coefficientShearResidueRetainedLine
+local notation "L" => coefficientShearResidueRetainedPair
   hπ hm data s hs hk hstart h3 h4 j
 
 /-- The node is the actual retained affine origin, not a separately specified point. -/
@@ -64,16 +64,16 @@ local notation "N" => coefficientShearResidueRetainedNode
   hπ hm data s hs hk hstart h3 h4 j
 
 /-- Each complete retained line has the original residue coefficient structure. -/
-@[reassoc] theorem coefficientShearResidueRetainedLine_structure (i : Fin 2) :
+@[reassoc] theorem coefficientShearResidueRetainedPair_structure (i : Fin 2) :
     L i ≫ coefficientShearGluedStructure hπ data Q r (s + 1) hs =
       ProjectiveLine.chartToBase Q := by
-  unfold coefficientShearResidueRetainedLine
+  unfold coefficientShearResidueRetainedPair
   split_ifs <;> exact coefficientShearRetainedLine_structure ..
 
 /-- Each actual retained node is a section over the original residue tangent field. -/
 @[reassoc] theorem coefficientShearResidueRetainedNode_structure (i : Fin 2) :
     N i ≫ coefficientShearGluedStructure hπ data Q r (s + 1) hs = 𝟙 _ := by
   rw [coefficientShearResidueRetainedNode, Category.assoc,
-    coefficientShearResidueRetainedLine_structure, ProjectiveLine.chartZero_toBase]
+    coefficientShearResidueRetainedPair_structure, ProjectiveLine.chartZero_toBase]
 
 end FLT.Mazur.WeierstrassDividedDepth
