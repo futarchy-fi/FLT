@@ -6456,6 +6456,7 @@ public import FLT.Mazur.PolygonCompleteAdicIdealSeparation
 public import FLT.Mazur.PolygonCompleteAffinePresentation
 public import FLT.Mazur.PolygonCompleteBaseMarkings
 public import FLT.Mazur.PolygonCompleteBoundaryAmple
+public import FLT.Mazur.PolygonCompleteBoundaryBranches
 public import FLT.Mazur.PolygonCompleteBoundaryCartesian
 public import FLT.Mazur.PolygonCompleteBoundaryCoordinateTransport
 public import FLT.Mazur.PolygonCompleteBoundaryDescended
