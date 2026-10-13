@@ -2784,6 +2784,7 @@ public import FLT.Mazur.AffineHilbertTensorMixedComposition
 public import FLT.Mazur.AffineHilbertTensorPullback
 public import FLT.Mazur.AffineHilbertTensorRestrictions
 public import FLT.Mazur.AffineHilbertTensorScalars
+public import FLT.Mazur.AffineHilbertTranslationEnvelope
 public import FLT.Mazur.AffineHilbertTranslationRelation
 public import FLT.Mazur.AffineIdealContainment
 public import FLT.Mazur.AffineIdealCoordinates
