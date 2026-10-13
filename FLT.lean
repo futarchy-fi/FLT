@@ -6731,6 +6731,7 @@ public import FLT.Mazur.PolygonNormalizationTorusPullback
 public import FLT.Mazur.PolygonNormalizationTransport
 public import FLT.Mazur.PolygonOneGonCompletion
 public import FLT.Mazur.PolygonOneGonContraction
+public import FLT.Mazur.PolygonOneGonContractionBaseChange
 public import FLT.Mazur.PolygonOneGonContractionDiagram
 public import FLT.Mazur.PolygonOneGonContractionFiber
 public import FLT.Mazur.PolygonOneGonContractionFiberCharts
