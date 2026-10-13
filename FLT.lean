@@ -7665,6 +7665,7 @@ public import FLT.Mazur.RelativeGenusOneUnrestrictedMarkedCoordinates
 public import FLT.Mazur.RelativeGenusOneUnrestrictedMarkingRatios
 public import FLT.Mazur.RelativeGenusOneUnrestrictedMonomialBasis
 public import FLT.Mazur.RelativeGenusOneUnrestrictedMonomialIndependence
+public import FLT.Mazur.RelativeGenusOneUnrestrictedNonsingular
 public import FLT.Mazur.RelativeGenusOneUnrestrictedNormalMonomials
 public import FLT.Mazur.RelativeGenusOneUnrestrictedPointFrames
 public import FLT.Mazur.RelativeGenusOneUnrestrictedPointLeading
