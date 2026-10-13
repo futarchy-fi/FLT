@@ -46,7 +46,7 @@ local notation "g" => coefficientShearGluedStructure hπ data Q r j hj
 local notation "N" => originalResidueFiniteNormalization hπ data j hj d hk hres
 
 /-- The whole initial incidence line is the affine restriction of the original proper lift. -/
-@[reassoc] theorem coefficientShearResidueInitialLine_projection :
+@[reassoc] theorem coefficientShearResidueIncidenceLine_finiteProjection :
     L ≫ p = left Q ≫ N := by
   apply finiteGlobalContraction_ext_of_regular_x hπ data j hj
     (originalResidueNormalization d hk hres)
@@ -73,6 +73,6 @@ local notation "F" => coefficientShearResidueExteriorLift hπ data j hj d hk hre
   · simp only [Category.assoc]
     rw [coefficientShearResidueExteriorLift_projection,
       coefficientShearResidueOrderedFinite, Iso.hom_inv_id_assoc,
-      coefficientShearResidueInitialLine_projection hπ data j hj hstart hres hs h3 h4]
+      coefficientShearResidueIncidenceLine_finiteProjection hπ data j hj hstart hres hs h3 h4]
 
 end FLT.Mazur.WeierstrassDividedDepth
