@@ -5,6 +5,7 @@ Authors: The FLT Project
 -/
 module
 
+public import FLT.Mazur.AffineHilbertBoundedRelation
 public import FLT.Mazur.AffineHilbertFlatStratumRelation
 public import FLT.Mazur.AffineHilbertMonicKernelGeometry
 
@@ -24,7 +25,7 @@ set_option backward.isDefEq.respectTransparency false
 variable {R : Type} [CommRing R] [Algebra.FiniteType ℤ R] {X : Scheme}
   (f : X ⟶ Spec (.of R)) [IsProper f] [Flat f] [GeometricallyIntegral f]
   [SmoothOfRelativeDimension 1 f] {L : X.Modules} (hL : AmpleLineBundle L)
-  (d : ℕ) (V : Over (Spec (.of R))) [IsAffine V.left] [Etale V.hom]
+  (d : ℕ) (V : Over (Spec (.of R))) [Etale V.hom]
   (c : (relativeFppfSheaf f).obj.obj (op V))
   {A : Over (Spec (.of R))} [IsAffine A.left]
   (k : A ⟶ variableHilbertTest f d V) [IsOpenImmersion k.left]
