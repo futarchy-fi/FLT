@@ -75,6 +75,7 @@ import FLT.EllipticCurve.CubicCyclicCoefficientAction
 import FLT.EllipticCurve.CubicCyclicCoefficientComparison
 import FLT.EllipticCurve.CubicCoefficientNaturality
 import FLT.EllipticCurve.CubicLegendreReciprocalReturn
+import FLT.EllipticCurve.CubicLegendreReciprocalRefinement
 import FLT.EllipticCurve.CubicLegendreCyclicDescent
 import FLT.EllipticCurve.CubicLegendreCyclicIso
 import FLT.EllipticCurve.CubicLegendreCyclicRelations

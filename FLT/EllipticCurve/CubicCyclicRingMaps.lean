@@ -222,4 +222,30 @@ theorem ringHomCyclicMap_curve_congr (V : WeierstrassCurve R) [V.IsElliptic]
   subst V
   simp [cyclicModelCongr]
 
+theorem cyclicCoordinateRingMap_return_one (f : R →+* S) (g : S →+* R)
+    (hgf : g.comp f = RingHom.id R)
+    (V : WeierstrassCurve S) [V.IsElliptic]
+    (C : VariableChange S) (D : VariableChange R)
+    (hC : C • W.map f = V) (hD : D • V.map g = W)
+    (hprod : D * C.map g = 1) :
+    ((groupCyclicParameterIso p (variableChangeCongrOverIso (V.map g) W D hD)).hom.left ≫
+      ringHomCyclicMap V p g) ≫
+      ((groupCyclicParameterIso p (variableChangeCongrOverIso (W.map f) V C hC)).hom.left ≫
+        ringHomCyclicMap W p f) = 𝟙 _ := by
+  have ht := cyclicCoordinateRingMap_comp_eq W p f g (RingHom.id R) hgf V W C D hC hD
+  simp only [ringHomCyclicMap_id, Category.comp_id] at ht
+  rw [variableChangeCyclic_source_congr] at ht
+  have he := variableChangeCyclic_congr W p W (D * C.map g) 1
+    (by
+      have hm : (W.map f).map g = W := by
+        rw [WeierstrassCurve.map_map, hgf]
+        rfl
+      rw [← hm, mul_smul, map_variableChange, hC, hD]
+      exact hm.symm)
+    (one_smul _ _) hprod
+  exact ht.trans (by
+    simpa only [WeierstrassCurve.map_id, Iso.refl_hom, Over.id_left] using
+      congrArg (fun e : scalarQuotientModel W p ≅ scalarQuotientModel W p =>
+        e.hom.left) (he.trans (variableChangeCyclic_one W p)))
+
 end WeierstrassCurve.CubicCharts

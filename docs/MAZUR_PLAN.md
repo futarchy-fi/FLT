@@ -2433,6 +2433,18 @@ The reciprocal and mixed global relations, modular quotient and arithmetic
 Mazur construction remain unfinished. This does not discharge any of the
 three admitted arithmetic inputs of the FLT endpoint.
 
+### Refinement of the reciprocal return (2026-10-13)
+
+`CubicLegendreReciprocalRefinement` proves that quadratic coordinate descent
+recovers the corresponding coordinate transport after refining the root cover.
+The concrete `legendreReciprocalReturn_original_fac` identifies the actual
+reciprocal return map over the original universal root cover, with the inverse
+root as coordinate scaling. The coefficient/coordinate composition API also
+now proves the identity when both combined transports return to identity.
+These are proved compatibilities for the forthcoming global reciprocal
+relation; they do not assume or establish that relation, the mixed relation,
+or any of the three remaining arithmetic inputs.
+
 ## Exact target and the already completed adapters
 
 The target at `FLT/Assembly/Mazur.lean:25` is:
