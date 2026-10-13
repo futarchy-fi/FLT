@@ -7391,6 +7391,7 @@ public import FLT.Mazur.ProperLineAcyclicTestChart
 public import FLT.Mazur.ProperLineArbitraryBaseChange
 public import FLT.Mazur.ProperLineChartFiberVanishing
 public import FLT.Mazur.ProperLineCoefficientFiberComparison
+public import FLT.Mazur.ProperLineExactRankChart
 public import FLT.Mazur.ProperLineExactRankFrame
 public import FLT.Mazur.ProperLineFiberVanishing
 public import FLT.Mazur.ProperLineFiniteFreeChart
