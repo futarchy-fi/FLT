@@ -5839,6 +5839,7 @@ public import FLT.Mazur.NodeTangentGluedCoefficients
 public import FLT.Mazur.NodeTangentNormalizationChart
 public import FLT.Mazur.NodeTangentNormalizationConjugation
 public import FLT.Mazur.NodeTangentNormalizationDescent
+public import FLT.Mazur.NodeTangentNormalizationInfinity
 public import FLT.Mazur.NodeTangentNormalizationOpen
 public import FLT.Mazur.NodeTangentOverlap
 public import FLT.Mazur.NodeTangentOverlapEquiv
