@@ -8994,6 +8994,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearResidueBranchCharts
 public import FLT.Mazur.WeierstrassCoefficientShearResidueBranchEndpoints
 public import FLT.Mazur.WeierstrassCoefficientShearResidueBranches
 public import FLT.Mazur.WeierstrassCoefficientShearResidueCoconeGluing
+public import FLT.Mazur.WeierstrassCoefficientShearResidueCoconeInitial
 public import FLT.Mazur.WeierstrassCoefficientShearResidueCoconeLines
 public import FLT.Mazur.WeierstrassCoefficientShearResidueCoconeOver
 public import FLT.Mazur.WeierstrassCoefficientShearResidueConic
