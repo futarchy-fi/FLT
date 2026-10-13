@@ -7656,6 +7656,7 @@ public import FLT.Mazur.RelativeGenusOneUnrestrictedCoordinateImage
 public import FLT.Mazur.RelativeGenusOneUnrestrictedCoordinateRing
 public import FLT.Mazur.RelativeGenusOneUnrestrictedCoordinateSurjective
 public import FLT.Mazur.RelativeGenusOneUnrestrictedCubicFactorization
+public import FLT.Mazur.RelativeGenusOneUnrestrictedCubicFieldIso
 public import FLT.Mazur.RelativeGenusOneUnrestrictedCubicFinite
 public import FLT.Mazur.RelativeGenusOneUnrestrictedCubicPreimages
 public import FLT.Mazur.RelativeGenusOneUnrestrictedCubicRelation
