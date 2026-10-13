@@ -5857,6 +5857,7 @@ public import FLT.Mazur.NodeTangentGluedCoefficients
 public import FLT.Mazur.NodeTangentNormalizationChart
 public import FLT.Mazur.NodeTangentNormalizationConjugation
 public import FLT.Mazur.NodeTangentNormalizationDescent
+public import FLT.Mazur.NodeTangentNormalizationInfinity
 public import FLT.Mazur.NodeTangentNormalizationOpen
 public import FLT.Mazur.NodeTangentOverlap
 public import FLT.Mazur.NodeTangentOverlapEquiv
@@ -8841,6 +8842,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearResidueBranchCharts
 public import FLT.Mazur.WeierstrassCoefficientShearResidueBranchEndpoints
 public import FLT.Mazur.WeierstrassCoefficientShearResidueBranches
 public import FLT.Mazur.WeierstrassCoefficientShearResidueConic
+public import FLT.Mazur.WeierstrassCoefficientShearResidueCoproductHomExt
 public import FLT.Mazur.WeierstrassCoefficientShearResidueCycleCoproduct
 public import FLT.Mazur.WeierstrassCoefficientShearResidueCycleEndpoints
 public import FLT.Mazur.WeierstrassCoefficientShearResidueCycleNodes
@@ -8851,9 +8853,11 @@ public import FLT.Mazur.WeierstrassCoefficientShearResidueEqualityHomExt
 public import FLT.Mazur.WeierstrassCoefficientShearResidueExterior
 public import FLT.Mazur.WeierstrassCoefficientShearResidueExteriorAffine
 public import FLT.Mazur.WeierstrassCoefficientShearResidueExteriorEndpoints
+public import FLT.Mazur.WeierstrassCoefficientShearResidueExteriorInfinity
 public import FLT.Mazur.WeierstrassCoefficientShearResidueExteriorJunctions
 public import FLT.Mazur.WeierstrassCoefficientShearResidueExteriorLift
 public import FLT.Mazur.WeierstrassCoefficientShearResidueFiniteHomExt
+public import FLT.Mazur.WeierstrassCoefficientShearResidueGlobalHomExt
 public import FLT.Mazur.WeierstrassCoefficientShearResidueInitial
 public import FLT.Mazur.WeierstrassCoefficientShearResidueInitialCharts
 public import FLT.Mazur.WeierstrassCoefficientShearResidueInitialEndpoints
@@ -10187,6 +10191,8 @@ public import FLT.Mazur.WeierstrassModificationXFiberTangentSwitch
 public import FLT.Mazur.WeierstrassModificationXFlat
 public import FLT.Mazur.WeierstrassModificationXFractionEquation
 public import FLT.Mazur.WeierstrassModificationXFractionMap
+public import FLT.Mazur.WeierstrassModificationXFullFiberDescent
+public import FLT.Mazur.WeierstrassModificationXFullFiberDescentCompatibility
 public import FLT.Mazur.WeierstrassModificationXFullFiberHomExt
 public import FLT.Mazur.WeierstrassModificationXFullFiberPushout
 public import FLT.Mazur.WeierstrassModificationXFullNodeBranchCoordinates
@@ -10296,6 +10302,8 @@ public import FLT.Mazur.WeierstrassNegationPairSections
 public import FLT.Mazur.WeierstrassNodalAdjacentIntersections
 public import FLT.Mazur.WeierstrassNodalDividedDepth
 public import FLT.Mazur.WeierstrassNodalDividedFamily
+public import FLT.Mazur.WeierstrassNodalInfinityShear
+public import FLT.Mazur.WeierstrassNodalInfinityTangentUnit
 public import FLT.Mazur.WeierstrassNodalResidueCharts
 public import FLT.Mazur.WeierstrassNodalResidueContraction
 public import FLT.Mazur.WeierstrassNodalResidueTangentDepth
@@ -10449,6 +10457,7 @@ public import FLT.Mazur.WeierstrassRegularInputDescent
 public import FLT.Mazur.WeierstrassRelativeSmoothDiscriminant
 public import FLT.Mazur.WeierstrassRelativeSmoothOpen
 public import FLT.Mazur.WeierstrassResidueIncidenceNormalization
+public import FLT.Mazur.WeierstrassResidueInfinityTensorParameter
 public import FLT.Mazur.WeierstrassResidueTangentComponentData
 public import FLT.Mazur.WeierstrassResidueTangentEquationData
 public import FLT.Mazur.WeierstrassRetainedCoefficientShearChart
@@ -10672,6 +10681,8 @@ public import FLT.Mazur.WeierstrassSplitNodalTangentSlope
 public import FLT.Mazur.WeierstrassSplitNodalTorus
 public import FLT.Mazur.WeierstrassSplitNodalUnitAddition
 public import FLT.Mazur.WeierstrassSplitNodalUnitPoints
+public import FLT.Mazur.WeierstrassSplitNormalizationInfinity
+public import FLT.Mazur.WeierstrassSplitNormalizationInfinityParameter
 public import FLT.Mazur.WeierstrassSquareZeroTorsionRigidity
 public import FLT.Mazur.WeierstrassSuccessiveCenterAction
 public import FLT.Mazur.WeierstrassSuccessiveCenterScaling
@@ -10965,6 +10976,7 @@ public import FLT.Mazur.WeierstrassVariableChangeSmoothAddition
 public import FLT.Mazur.WeierstrassVariableChangeSmoothIso
 public import FLT.Mazur.WeierstrassVariableChangeSmoothPointAddition
 public import FLT.Mazur.WeierstrassVariableChangeSmoothProduct
+public import FLT.Mazur.WeierstrassVariableChangeUnitChart
 public import FLT.Mazur.WeierstrassVariableChangeZero
 public import FLT.Mazur.WeierstrassVerticalAdditionCharts
 public import FLT.Mazur.WeierstrassVerticalChartCompatibility
