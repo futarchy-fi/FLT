@@ -5949,6 +5949,7 @@ public import FLT.Mazur.MonomorphismGenericStratum
 public import FLT.Mazur.MonomorphismOpenImage
 public import FLT.Mazur.MonomorphismOpenImageBaseChange
 public import FLT.Mazur.MonomorphismRelativeOpen
+public import FLT.Mazur.MonomorphismRelativeOpenBaseChange
 public import FLT.Mazur.MonomorphismStratumOverlap
 public import FLT.Mazur.MultiplicativeGroupDimension
 public import FLT.Mazur.MultiplicativeGroupFieldExtension
