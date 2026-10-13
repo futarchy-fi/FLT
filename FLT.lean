@@ -3379,6 +3379,7 @@ public import FLT.Mazur.CechSortingHomotopyEvaluation
 public import FLT.Mazur.CechSortingMaps
 public import FLT.Mazur.CechSortingRecursiveHomotopy
 public import FLT.Mazur.CechSortingTupleChains
+public import FLT.Mazur.CharacteristicTwoThreeOpens
 public import FLT.Mazur.ChowAffineBaseAcyclicPower
 public import FLT.Mazur.ChowAffineBaseChartData
 public import FLT.Mazur.ChowAffineBaseChartImageClosure
