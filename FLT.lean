@@ -2786,6 +2786,7 @@ public import FLT.Mazur.AffineHilbertTensorRestrictions
 public import FLT.Mazur.AffineHilbertTensorScalars
 public import FLT.Mazur.AffineHilbertTranslationEnvelope
 public import FLT.Mazur.AffineHilbertTranslationRelation
+public import FLT.Mazur.AffineHilbertTranslationSource
 public import FLT.Mazur.AffineIdealContainment
 public import FLT.Mazur.AffineIdealCoordinates
 public import FLT.Mazur.AffineIdealPowerExtension
