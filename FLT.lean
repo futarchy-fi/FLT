@@ -2761,6 +2761,7 @@ public import FLT.Mazur.AffineHilbertEnvelopeQuotient
 public import FLT.Mazur.AffineHilbertEnvelopeScheme
 public import FLT.Mazur.AffineHilbertEtaleComposition
 public import FLT.Mazur.AffineHilbertFiniteBranchAtlas
+public import FLT.Mazur.AffineHilbertFiniteBranchInvariants
 public import FLT.Mazur.AffineHilbertFiniteBranches
 public import FLT.Mazur.AffineHilbertFiniteFiberPrincipal
 public import FLT.Mazur.AffineHilbertFiniteFreeGroundBase
@@ -2783,9 +2784,12 @@ public import FLT.Mazur.AffineHilbertGroundBaseEnvelope
 public import FLT.Mazur.AffineHilbertGroundBaseEnvelopeLift
 public import FLT.Mazur.AffineHilbertGroundBaseFullFiber
 public import FLT.Mazur.AffineHilbertGroundBaseSource
+public import FLT.Mazur.AffineHilbertInvariantAffineModel
 public import FLT.Mazur.AffineHilbertInvariantEnvelope
+public import FLT.Mazur.AffineHilbertInvariantFlatCoefficients
 public import FLT.Mazur.AffineHilbertInvariantPrincipalEffectiveness
 public import FLT.Mazur.AffineHilbertInvariantPrincipalProduct
+public import FLT.Mazur.AffineHilbertInvariantRelativeUniversal
 public import FLT.Mazur.AffineHilbertInverseFiniteBranches
 public import FLT.Mazur.AffineHilbertLocalTensorInvariants
 public import FLT.Mazur.AffineHilbertLocalizedCoefficients
@@ -4598,6 +4602,7 @@ public import FLT.Mazur.FinitelyPresentedLineSheafDescent
 public import FLT.Mazur.FixedModelElementLifts
 public import FLT.Mazur.FixedTargetIntegerModel
 public import FLT.Mazur.FlasqueDirectImageAcyclic
+public import FLT.Mazur.FlatAlgebraEqualizer
 public import FLT.Mazur.FlatCartesianSectionGluing
 public import FLT.Mazur.FlatCartierIdealPullback
 public import FLT.Mazur.FlatCoefficientAllCohomology
@@ -4626,6 +4631,7 @@ public import FLT.Mazur.FlatSpectrumStructureRank
 public import FLT.Mazur.FlatStructureCohomology
 public import FLT.Mazur.FlatStructureScalarMonicity
 public import FLT.Mazur.FlatStructureSectionComplex
+public import FLT.Mazur.FlatTensorEqualizer
 public import FLT.Mazur.FlatTensorFixedSubmodule
 public import FLT.Mazur.FormallyUnramifiedQuotientCriterion
 public import FLT.Mazur.FpqcGlobalGenerationDescent
@@ -7974,6 +7980,7 @@ public import FLT.Mazur.RingEqualizerDescent
 public import FLT.Mazur.RingEqualizerLocalDescent
 public import FLT.Mazur.RingEqualizerLocalization
 public import FLT.Mazur.RingEquivGrading
+public import FLT.Mazur.RingPairInvariantFlatScalars
 public import FLT.Mazur.ScalarCohomology
 public import FLT.Mazur.ScalarCompatibleIntegerModel
 public import FLT.Mazur.ScalarEndomorphismPullback
@@ -8185,6 +8192,7 @@ public import FLT.Mazur.SchemeFiniteGroupQuotientOrbits
 public import FLT.Mazur.SchemeFlatFamilyReflection
 public import FLT.Mazur.SchemeFlatProductDensity
 public import FLT.Mazur.SchemeFppfCanonicalPairRecovery
+public import FLT.Mazur.SchemeFppfCoverInvariantFunctions
 public import FLT.Mazur.SchemeFppfFamilyCocycleAssembly
 public import FLT.Mazur.SchemeFppfFamilyCover
 public import FLT.Mazur.SchemeFppfFamilyDiagonalAssembly
@@ -8326,8 +8334,10 @@ public import FLT.Mazur.SchemeReducedStructureSheaf
 public import FLT.Mazur.SchemeRefinementReconstruction
 public import FLT.Mazur.SchemeRelationDoubleRestriction
 public import FLT.Mazur.SchemeRelationFunctionDescent
+public import FLT.Mazur.SchemeRelationInvariantAffineUniversal
 public import FLT.Mazur.SchemeRelationInvariantEnvelope
 public import FLT.Mazur.SchemeRelationInvariantRestriction
+public import FLT.Mazur.SchemeRelationInvariantSpectrum
 public import FLT.Mazur.SchemeRelationIsoInvariants
 public import FLT.Mazur.SchemeRelationLocalFunctionDescent
 public import FLT.Mazur.SchemeRelationOpenFunctionDescent
