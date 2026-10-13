@@ -10849,6 +10849,7 @@ public import FLT.Mazur.WeierstrassSwappedReciprocalOutput
 public import FLT.Mazur.WeierstrassSwappedSameOutputSchemes
 public import FLT.Mazur.WeierstrassSwappedSlopeComparison
 public import FLT.Mazur.WeierstrassSwappedSlopeRelations
+public import FLT.Mazur.WeierstrassThreeTorsionFinite
 public import FLT.Mazur.WeierstrassTorsionFormallyUnramified
 public import FLT.Mazur.WeierstrassTransportedAdditionRing
 public import FLT.Mazur.WeierstrassTransportedComparisonArbitrary
