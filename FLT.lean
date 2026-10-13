@@ -2768,6 +2768,7 @@ public import FLT.Mazur.AffineHilbertFiniteFiberPrincipal
 public import FLT.Mazur.AffineHilbertFiniteFreeGroundBase
 public import FLT.Mazur.AffineHilbertFiniteFullBranchCover
 public import FLT.Mazur.AffineHilbertFiniteGroundBaseRefinement
+public import FLT.Mazur.AffineHilbertFiniteKernelEquations
 public import FLT.Mazur.AffineHilbertFiniteTensorCover
 public import FLT.Mazur.AffineHilbertFixedBaseEnvelope
 public import FLT.Mazur.AffineHilbertFixedBaseQuotient
@@ -4302,6 +4303,7 @@ public import FLT.Mazur.FiniteCechTermScalars
 public import FLT.Mazur.FiniteClosedIdealSection
 public import FLT.Mazur.FiniteClosedImmersionIntegerDescent
 public import FLT.Mazur.FiniteCoefficientDifferenceIdeal
+public import FLT.Mazur.FiniteCoefficientKernelSubalgebra
 public import FLT.Mazur.FiniteCoefficientProperties
 public import FLT.Mazur.FiniteCohomologyFreeNeighborhood
 public import FLT.Mazur.FiniteCommonPrincipalCover
