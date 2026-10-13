@@ -3602,6 +3602,7 @@ public import FLT.Mazur.CyclicHomDivisorPullback
 public import FLT.Mazur.CyclicHomLocusEquationUniversal
 public import FLT.Mazur.CyclicHomLocusFppfCoverage
 public import FLT.Mazur.CyclicHomLocusModuli
+public import FLT.Mazur.CyclicHomLocusNormalizationRelation
 public import FLT.Mazur.CyclicHomLocusNormalizationRetraction
 public import FLT.Mazur.CyclicHomLocusRelabel
 public import FLT.Mazur.CyclicHomLocusRelabelAction
