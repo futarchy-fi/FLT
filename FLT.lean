@@ -6071,6 +6071,7 @@ public import FLT.Mazur.OneGonGluing
 public import FLT.Mazur.OneGonLocalDescent
 public import FLT.Mazur.OneGonLocalizedEqualizer
 public import FLT.Mazur.OneGonMobiusConductors
+public import FLT.Mazur.OneGonNodeNormalizationIdeal
 public import FLT.Mazur.OneGonNormalization
 public import FLT.Mazur.OneGonNormalizationChart
 public import FLT.Mazur.OneGonNormalizationCoordinates
