@@ -6543,6 +6543,7 @@ public import FLT.Mazur.PolygonCompleteMarkingSectionDescent
 public import FLT.Mazur.PolygonCompleteMarkingSectionModel
 public import FLT.Mazur.PolygonCompleteMarkingSpecialization
 public import FLT.Mazur.PolygonCompleteMarkingTestLine
+public import FLT.Mazur.PolygonCompleteMarkingTripleCoherence
 public import FLT.Mazur.PolygonCompleteMarkingUniqueness
 public import FLT.Mazur.PolygonCompleteNodeAffineCotangentRank
 public import FLT.Mazur.PolygonCompleteNodeAffineIdeal
