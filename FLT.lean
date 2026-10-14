@@ -8801,6 +8801,7 @@ public import FLT.Mazur.SectionGradedGeneratorLocalization
 public import FLT.Mazur.SectionGradedIsoMultiplication
 public import FLT.Mazur.SectionGradedIsoRing
 public import FLT.Mazur.SectionGradedLineCoherence
+public import FLT.Mazur.SectionGradedLineGeneratorOpen
 public import FLT.Mazur.SectionGradedLineKernel
 public import FLT.Mazur.SectionGradedLinePullback
 public import FLT.Mazur.SectionGradedLineRingCoherence
