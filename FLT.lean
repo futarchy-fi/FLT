@@ -3676,6 +3676,7 @@ public import FLT.Mazur.CurvePositiveDegreeAmple
 public import FLT.Mazur.CurvePositiveDegreeCohomologyVanishing
 public import FLT.Mazur.CurvePositiveDegreeSections
 public import FLT.Mazur.CurveRiemannRochEuler
+public import FLT.Mazur.CurveStructureEuler
 public import FLT.Mazur.CurveSurjectiveOpenComplement
 public import FLT.Mazur.CurveUniformFieldDegreeBound
 public import FLT.Mazur.CuspCollision
