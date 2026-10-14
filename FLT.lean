@@ -8101,6 +8101,7 @@ public import FLT.Mazur.RelativeRelationInvariantSectionRings
 public import FLT.Mazur.RelativeRelationInvariantSections
 public import FLT.Mazur.RelativeRelationInvariantSheaf
 public import FLT.Mazur.RelativeRelationMonicBaseLift
+public import FLT.Mazur.RelativeRelationMonicSeedQuotient
 public import FLT.Mazur.RelativeRelationOpenSaturation
 public import FLT.Mazur.RelativeRelationOpenSourceFunctions
 public import FLT.Mazur.RelativeRelationOrbit
