@@ -2792,6 +2792,7 @@ public import FLT.Mazur.AffineHilbertFiniteTensorCover
 public import FLT.Mazur.AffineHilbertFixedBaseEnvelope
 public import FLT.Mazur.AffineHilbertFixedBaseInvariants
 public import FLT.Mazur.AffineHilbertFixedBaseJointEffectiveOpen
+public import FLT.Mazur.AffineHilbertFixedBaseJointFppfOpen
 public import FLT.Mazur.AffineHilbertFixedBaseJointKernel
 public import FLT.Mazur.AffineHilbertFixedBaseJointModel
 public import FLT.Mazur.AffineHilbertFixedBaseJointRelative
