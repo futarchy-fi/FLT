@@ -4055,8 +4055,14 @@ public import FLT.Mazur.EllipticFiniteMiddleSpecialization
 public import FLT.Mazur.EllipticFiniteModificationPointExtension
 public import FLT.Mazur.EllipticFiniteModificationSections
 public import FLT.Mazur.EllipticFiniteModificationSpecialization
+public import FLT.Mazur.EllipticFiniteNodeBoundarySection
+public import FLT.Mazur.EllipticFiniteOddSpecialization
 public import FLT.Mazur.EllipticFinitePointBound
 public import FLT.Mazur.EllipticFinitePointSectionAction
+public import FLT.Mazur.EllipticFiniteResolvedSpecialization
+public import FLT.Mazur.EllipticFiniteRetainedNodeSection
+public import FLT.Mazur.EllipticFiniteRetainedSmoothSpecialization
+public import FLT.Mazur.EllipticFiniteRetainedSpecialization
 public import FLT.Mazur.EllipticFormalAddition
 public import FLT.Mazur.EllipticFormalAdditionComparison
 public import FLT.Mazur.EllipticFormalAssociativity
@@ -4220,6 +4226,7 @@ public import FLT.Mazur.EllipticReductionRelation
 public import FLT.Mazur.EllipticReductionTranslation
 public import FLT.Mazur.EllipticRepeatedCubicPoint
 public import FLT.Mazur.EllipticRepeatedCubicTranslation
+public import FLT.Mazur.EllipticResolvedSmoothPoint
 public import FLT.Mazur.EllipticScaledTorsionReduction
 public import FLT.Mazur.EllipticScalingSmoothTorsion
 public import FLT.Mazur.EllipticSectionSpecialFiber
@@ -5150,6 +5157,7 @@ public import FLT.Mazur.GroupSchemeBaseChangeComposition
 public import FLT.Mazur.GroupSchemeBaseChangeEqualityComparison
 public import FLT.Mazur.GroupSchemeBaseChangeProjections
 public import FLT.Mazur.GroupSchemeBaseChangeSections
+public import FLT.Mazur.GroupSchemeBaseIsoTransport
 public import FLT.Mazur.GroupSectionBaseChange
 public import FLT.Mazur.GroupTorsionBaseChange
 public import FLT.Mazur.GroupTorsionCommutativeStructure
@@ -6879,8 +6887,13 @@ public import FLT.Mazur.PolygonCompletePointFirstOrderLine
 public import FLT.Mazur.PolygonCompletePointFirstOrderOpen
 public import FLT.Mazur.PolygonCompletePointFunctionDimensions
 public import FLT.Mazur.PolygonCompletePointFunctionNumerators
+public import FLT.Mazur.PolygonCompletePointGenericComparison
+public import FLT.Mazur.PolygonCompletePointGenericCubicGroup
 public import FLT.Mazur.PolygonCompletePointGenericCubicIso
+public import FLT.Mazur.PolygonCompletePointGenericIdentityGroup
 public import FLT.Mazur.PolygonCompletePointGenericNeighborhood
+public import FLT.Mazur.PolygonCompletePointGenericSmoothGroup
+public import FLT.Mazur.PolygonCompletePointGenericTranslation
 public import FLT.Mazur.PolygonCompletePointGlobalFunctions
 public import FLT.Mazur.PolygonCompletePointHigherMonomials
 public import FLT.Mazur.PolygonCompletePointHomogeneousEquation
@@ -6889,6 +6902,7 @@ public import FLT.Mazur.PolygonCompletePointIdentityAffineMarking
 public import FLT.Mazur.PolygonCompletePointIdentityAffineQuotient
 public import FLT.Mazur.PolygonCompletePointIdentityBaseChange
 public import FLT.Mazur.PolygonCompletePointIdentityClosedTorus
+public import FLT.Mazur.PolygonCompletePointIdentityCubicGroup
 public import FLT.Mazur.PolygonCompletePointIdentityEquation
 public import FLT.Mazur.PolygonCompletePointIdentityFinite
 public import FLT.Mazur.PolygonCompletePointIdentityGeneric
@@ -6930,6 +6944,7 @@ public import FLT.Mazur.PolygonCompletePointOriginPositiveLine
 public import FLT.Mazur.PolygonCompletePointOriginProjIso
 public import FLT.Mazur.PolygonCompletePointOriginReduction
 public import FLT.Mazur.PolygonCompletePointOriginalBaseGroup
+public import FLT.Mazur.PolygonCompletePointOriginalGenericGroup
 public import FLT.Mazur.PolygonCompletePointPointedCubic
 public import FLT.Mazur.PolygonCompletePointPoleFrame
 public import FLT.Mazur.PolygonCompletePointPoleFunctions
@@ -9581,6 +9596,7 @@ public import FLT.Mazur.WeierstrassAutomorphismNormalization
 public import FLT.Mazur.WeierstrassAuxiliaryFieldCover
 public import FLT.Mazur.WeierstrassCartesianOriginComparison
 public import FLT.Mazur.WeierstrassCartesianPullbackGroup
+public import FLT.Mazur.WeierstrassCartesianSmoothPullbackGroup
 public import FLT.Mazur.WeierstrassChartBaseChange
 public import FLT.Mazur.WeierstrassChartBaseChangeSquare
 public import FLT.Mazur.WeierstrassChartCoefficientMap
@@ -10149,6 +10165,7 @@ public import FLT.Mazur.WeierstrassDilatationFractionMap
 public import FLT.Mazur.WeierstrassDilatationGenerators
 public import FLT.Mazur.WeierstrassDilatationGenericFiber
 public import FLT.Mazur.WeierstrassDilatationHorizontalCongruence
+public import FLT.Mazur.WeierstrassDilatationHorizontalSmooth
 public import FLT.Mazur.WeierstrassDilatationLaurentPointCharacters
 public import FLT.Mazur.WeierstrassDilatationLifting
 public import FLT.Mazur.WeierstrassDilatationLocalization
@@ -10169,6 +10186,7 @@ public import FLT.Mazur.WeierstrassDilatationShear
 public import FLT.Mazur.WeierstrassDilatationShearHorizontal
 public import FLT.Mazur.WeierstrassDilatationShearLaurentNormalForm
 public import FLT.Mazur.WeierstrassDilatationShearNodeNormalForm
+public import FLT.Mazur.WeierstrassDilatationTerminalSectionBranches
 public import FLT.Mazur.WeierstrassDilatationTerminalSections
 public import FLT.Mazur.WeierstrassDilatationUnitComparison
 public import FLT.Mazur.WeierstrassDilatationZeroResidue
