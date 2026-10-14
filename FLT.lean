@@ -8375,6 +8375,7 @@ public import FLT.Mazur.SchemeOpenEnvelopeLocus
 public import FLT.Mazur.SchemeOpenPushoutCharts
 public import FLT.Mazur.SchemeOpenPushoutCoverIso
 public import FLT.Mazur.SchemeOpenPushoutIntersection
+public import FLT.Mazur.SchemeOpenRangeRestriction
 public import FLT.Mazur.SchemeOpenRelationSections
 public import FLT.Mazur.SchemeOpenReplacementPreimage
 public import FLT.Mazur.SchemeOpenReplacementProper
