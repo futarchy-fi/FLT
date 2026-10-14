@@ -2919,6 +2919,7 @@ public import FLT.Mazur.AffineHilbertRestrictedSheafPullback
 public import FLT.Mazur.AffineHilbertSchemeRestriction
 public import FLT.Mazur.AffineHilbertSelectorOrbitOpen
 public import FLT.Mazur.AffineHilbertSelectorQuotient
+public import FLT.Mazur.AffineHilbertSelectorUnionQuotient
 public import FLT.Mazur.AffineHilbertSplitChangedFamily
 public import FLT.Mazur.AffineHilbertSplitGroundComparison
 public import FLT.Mazur.AffineHilbertSymmetricNeighborhoods
