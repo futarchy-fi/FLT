@@ -2843,6 +2843,7 @@ public import FLT.Mazur.AffineHilbertInvariantPrincipalProduct
 public import FLT.Mazur.AffineHilbertInvariantRelativeUniversal
 public import FLT.Mazur.AffineHilbertInverseFiniteBranches
 public import FLT.Mazur.AffineHilbertJointEtaleNeighborhoods
+public import FLT.Mazur.AffineHilbertJointOrbitSeed
 public import FLT.Mazur.AffineHilbertJointSourceBranch
 public import FLT.Mazur.AffineHilbertLocalTensorInvariants
 public import FLT.Mazur.AffineHilbertLocalizedCoefficients
