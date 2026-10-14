@@ -7880,6 +7880,7 @@ public import FLT.Mazur.ReducedDenseRestriction
 public import FLT.Mazur.ReducedFiberBasis
 public import FLT.Mazur.ReducedGeometricFiberFlat
 public import FLT.Mazur.ReducedLocalConstantFiberRank
+public import FLT.Mazur.ReducedSurjectiveIsoCancellation
 public import FLT.Mazur.ReesAffineModel
 public import FLT.Mazur.ReesAlgebraBaseChange
 public import FLT.Mazur.ReesAlgebraDirectSum
