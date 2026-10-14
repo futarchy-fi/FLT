@@ -7890,6 +7890,7 @@ public import FLT.Mazur.RelativeFppfPairCover
 public import FLT.Mazur.RelativeFppfRepresentedCover
 public import FLT.Mazur.RelativeFppfSchemeCover
 public import FLT.Mazur.RelativeFppfSurjectivityDetection
+public import FLT.Mazur.RelativeFppfTargetOpen
 public import FLT.Mazur.RelativeGenusOneAffineCartesian
 public import FLT.Mazur.RelativeGenusOneAffineCubicMorphism
 public import FLT.Mazur.RelativeGenusOneAffineIso
