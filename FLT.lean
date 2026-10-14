@@ -5976,6 +5976,7 @@ public import FLT.Mazur.MonicIdealNormalForms
 public import FLT.Mazur.MonoFamilySchemeGluing
 public import FLT.Mazur.MonoidalActionSpecialization
 public import FLT.Mazur.MonomorphismFppfImage
+public import FLT.Mazur.MonomorphismGenericInversePatches
 public import FLT.Mazur.MonomorphismGenericStratum
 public import FLT.Mazur.MonomorphismOpenImage
 public import FLT.Mazur.MonomorphismOpenImageBaseChange
