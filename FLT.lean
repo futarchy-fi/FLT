@@ -10259,6 +10259,7 @@ public import FLT.Mazur.WeierstrassDividedPositiveSplitCycleRanges
 public import FLT.Mazur.WeierstrassDividedPositiveSplitInitialExt
 public import FLT.Mazur.WeierstrassDividedPositiveSplitNormalizationSurjective
 public import FLT.Mazur.WeierstrassDividedPositiveSplitRetainedLineExt
+public import FLT.Mazur.WeierstrassDividedPositiveSplitRetainedNodeExt
 public import FLT.Mazur.WeierstrassDividedPrecedingAtlasRange
 public import FLT.Mazur.WeierstrassDividedPreviousBoundaryAlgebra
 public import FLT.Mazur.WeierstrassDividedProjectiveLift
