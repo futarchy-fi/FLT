@@ -3670,6 +3670,7 @@ public import FLT.Mazur.ConstantDegree
 public import FLT.Mazur.ConstantGroupTensorEvaluation
 public import FLT.Mazur.ConstantPrimeScalarFiltration
 public import FLT.Mazur.ConstructibleDenseInterior
+public import FLT.Mazur.ConstructibleGenericClosure
 public import FLT.Mazur.Contracts
 public import FLT.Mazur.CoprimeFieldGroupTransport
 public import FLT.Mazur.CoprimeGroupMarkings
