@@ -7017,6 +7017,7 @@ public import FLT.Mazur.PolygonCompleteSmoothFieldSubgroup
 public import FLT.Mazur.PolygonCompleteSmoothFieldTranslation
 public import FLT.Mazur.PolygonCompleteSmoothGroup
 public import FLT.Mazur.PolygonCompleteSmoothGroupIdentities
+public import FLT.Mazur.PolygonCompleteSmoothGroupRotations
 public import FLT.Mazur.PolygonCompleteSmoothInversion
 public import FLT.Mazur.PolygonCompleteSmoothIrreducible
 public import FLT.Mazur.PolygonCompleteSmoothMultiplication
