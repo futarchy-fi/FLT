@@ -6481,6 +6481,7 @@ public import FLT.Mazur.PolygonClosedCubicContractionDivisors
 public import FLT.Mazur.PolygonClosedCubicContractionFactorization
 public import FLT.Mazur.PolygonClosedCubicContractionIdentity
 public import FLT.Mazur.PolygonClosedCubicContractionSurjective
+public import FLT.Mazur.PolygonClosedCubicNonconstant
 public import FLT.Mazur.PolygonClosedCubicOmittedChart
 public import FLT.Mazur.PolygonClosedCubicOmittedConstant
 public import FLT.Mazur.PolygonClosedCubicRetainedLine
