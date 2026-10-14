@@ -2901,6 +2901,8 @@ public import FLT.Mazur.AffineHilbertNestedFiniteRelative
 public import FLT.Mazur.AffineHilbertNestedKernel
 public import FLT.Mazur.AffineHilbertNestedRestriction
 public import FLT.Mazur.AffineHilbertNoetherianRelation
+public import FLT.Mazur.AffineHilbertOriginalOrbitAtlas
+public import FLT.Mazur.AffineHilbertOriginalOrbitModel
 public import FLT.Mazur.AffineHilbertOriginalPrincipalInvariants
 public import FLT.Mazur.AffineHilbertPrincipalInvariants
 public import FLT.Mazur.AffineHilbertPrincipalTensorModel
@@ -8781,6 +8783,7 @@ public import FLT.Mazur.SchemeReducedRelativeSections
 public import FLT.Mazur.SchemeReducedSectionDetection
 public import FLT.Mazur.SchemeReducedStructureSheaf
 public import FLT.Mazur.SchemeRefinementReconstruction
+public import FLT.Mazur.SchemeRelationArrowTransport
 public import FLT.Mazur.SchemeRelationDoubleRestriction
 public import FLT.Mazur.SchemeRelationEtaleBranchPropagation
 public import FLT.Mazur.SchemeRelationFunctionDescent
@@ -8811,11 +8814,15 @@ public import FLT.Mazur.SchemeRelationMonicSeedQuotientCoverage
 public import FLT.Mazur.SchemeRelationMonicSeedSelection
 public import FLT.Mazur.SchemeRelationOpenFunctionDescent
 public import FLT.Mazur.SchemeRelationOpenInvariantRings
+public import FLT.Mazur.SchemeRelationOrbitAtlas
+public import FLT.Mazur.SchemeRelationOrbitAtlasDescent
+public import FLT.Mazur.SchemeRelationOrbitAtlasKernel
 public import FLT.Mazur.SchemeRelationOverRestriction
 public import FLT.Mazur.SchemeRelationPrincipalFullInvariants
 public import FLT.Mazur.SchemeRelationPrincipalLocalization
 public import FLT.Mazur.SchemeRelationPrincipalSpectrum
 public import FLT.Mazur.SchemeRelationPrincipalTensorSections
+public import FLT.Mazur.SchemeRelationReanchoring
 public import FLT.Mazur.SchemeRelationRestrictionComposition
 public import FLT.Mazur.SchemeRelationRestrictionRechart
 public import FLT.Mazur.SchemeRelationSeedOrbit
