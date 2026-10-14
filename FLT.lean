@@ -2814,6 +2814,7 @@ public import FLT.Mazur.AffineHilbertFixedBaseKernelTransport
 public import FLT.Mazur.AffineHilbertFixedBaseModelEffectiveOpen
 public import FLT.Mazur.AffineHilbertFixedBaseModelKernels
 public import FLT.Mazur.AffineHilbertFixedBaseModelRelationSquare
+public import FLT.Mazur.AffineHilbertFixedBaseOldCoefficients
 public import FLT.Mazur.AffineHilbertFixedBaseQuotient
 public import FLT.Mazur.AffineHilbertFixedBaseQuotientIso
 public import FLT.Mazur.AffineHilbertFixedBaseRelation
