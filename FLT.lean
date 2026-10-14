@@ -10253,6 +10253,7 @@ public import FLT.Mazur.WeierstrassDividedPositiveSplitBranches
 public import FLT.Mazur.WeierstrassDividedPositiveSplitCocone
 public import FLT.Mazur.WeierstrassDividedPositiveSplitCycle
 public import FLT.Mazur.WeierstrassDividedPositiveSplitCycleIndices
+public import FLT.Mazur.WeierstrassDividedPositiveSplitCycleRanges
 public import FLT.Mazur.WeierstrassDividedPrecedingAtlasRange
 public import FLT.Mazur.WeierstrassDividedPreviousBoundaryAlgebra
 public import FLT.Mazur.WeierstrassDividedProjectiveLift
