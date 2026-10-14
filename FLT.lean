@@ -6666,6 +6666,7 @@ public import FLT.Mazur.PolygonCompletePointExactMonomials
 public import FLT.Mazur.PolygonCompletePointFunctionDimensions
 public import FLT.Mazur.PolygonCompletePointFunctionNumerators
 public import FLT.Mazur.PolygonCompletePointInfinity
+public import FLT.Mazur.PolygonCompletePointIntegralCubic
 public import FLT.Mazur.PolygonCompletePointIntegralMonomials
 public import FLT.Mazur.PolygonCompletePointIntegralPoleBasis
 public import FLT.Mazur.PolygonCompletePointIrreducibleAffine
