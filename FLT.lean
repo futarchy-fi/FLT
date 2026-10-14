@@ -2875,6 +2875,7 @@ public import FLT.Mazur.AffineHilbertModelSourceBranchCoverage
 public import FLT.Mazur.AffineHilbertMonicKernelGeometry
 public import FLT.Mazur.AffineHilbertMonicModelRelation
 public import FLT.Mazur.AffineHilbertMonicRelationGeometry
+public import FLT.Mazur.AffineHilbertMonicSeedArbitraryGround
 public import FLT.Mazur.AffineHilbertMonicSeedCharts
 public import FLT.Mazur.AffineHilbertMonicSeedFiniteEtale
 public import FLT.Mazur.AffineHilbertMonicSeedGroundCoverage
