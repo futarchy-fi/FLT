@@ -2753,6 +2753,7 @@ public import FLT.Mazur.AffineHilbertAssociativeFiniteBranches
 public import FLT.Mazur.AffineHilbertBoundedRelation
 public import FLT.Mazur.AffineHilbertBranchCompositionCoefficients
 public import FLT.Mazur.AffineHilbertCartesianEnvelope
+public import FLT.Mazur.AffineHilbertChangedOrbitOpen
 public import FLT.Mazur.AffineHilbertChartRelation
 public import FLT.Mazur.AffineHilbertClosedPatchRefinement
 public import FLT.Mazur.AffineHilbertClosedPatchSource
@@ -4038,10 +4039,15 @@ public import FLT.Mazur.EllipticExtensionClosureRankBound
 public import FLT.Mazur.EllipticExtensionGoodReductionClosure
 public import FLT.Mazur.EllipticExtensionPrimeSubgroup
 public import FLT.Mazur.EllipticExtensionScalingDescent
+public import FLT.Mazur.EllipticFiniteCoefficientPointSection
+public import FLT.Mazur.EllipticFiniteDividedPointSection
+public import FLT.Mazur.EllipticFiniteDividedSpecialization
+public import FLT.Mazur.EllipticFiniteMiddleSpecialization
 public import FLT.Mazur.EllipticFiniteModificationPointExtension
 public import FLT.Mazur.EllipticFiniteModificationSections
 public import FLT.Mazur.EllipticFiniteModificationSpecialization
 public import FLT.Mazur.EllipticFinitePointBound
+public import FLT.Mazur.EllipticFinitePointSectionAction
 public import FLT.Mazur.EllipticFormalAddition
 public import FLT.Mazur.EllipticFormalAdditionComparison
 public import FLT.Mazur.EllipticFormalAssociativity
@@ -6083,6 +6089,7 @@ public import FLT.Mazur.MonomorphismGenericInversePatches
 public import FLT.Mazur.MonomorphismGenericStratum
 public import FLT.Mazur.MonomorphismOpenImage
 public import FLT.Mazur.MonomorphismOpenImageBaseChange
+public import FLT.Mazur.MonomorphismOpenSource
 public import FLT.Mazur.MonomorphismPrincipalInverseCover
 public import FLT.Mazur.MonomorphismRelativeOpen
 public import FLT.Mazur.MonomorphismRelativeOpenBaseChange
@@ -8707,6 +8714,10 @@ public import FLT.Mazur.SchemeOpenRelationSections
 public import FLT.Mazur.SchemeOpenReplacementPreimage
 public import FLT.Mazur.SchemeOpenReplacementProper
 public import FLT.Mazur.SchemeOpenSectionDescent
+public import FLT.Mazur.SchemeOrbitOpenAffineSelection
+public import FLT.Mazur.SchemeOrbitOpenGroundGeometry
+public import FLT.Mazur.SchemeOrbitOpenSelection
+public import FLT.Mazur.SchemeOrbitOpenSelectionKernel
 public import FLT.Mazur.SchemeOverlapBaseChange
 public import FLT.Mazur.SchemeOverlapCocycleChart
 public import FLT.Mazur.SchemeOverlapCocycleDetection
@@ -10153,6 +10164,7 @@ public import FLT.Mazur.WeierstrassDilatationShear
 public import FLT.Mazur.WeierstrassDilatationShearHorizontal
 public import FLT.Mazur.WeierstrassDilatationShearLaurentNormalForm
 public import FLT.Mazur.WeierstrassDilatationShearNodeNormalForm
+public import FLT.Mazur.WeierstrassDilatationTerminalSections
 public import FLT.Mazur.WeierstrassDilatationUnitComparison
 public import FLT.Mazur.WeierstrassDilatationZeroResidue
 public import FLT.Mazur.WeierstrassDilatationZeroResidueBoundary
