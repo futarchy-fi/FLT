@@ -2805,6 +2805,7 @@ public import FLT.Mazur.AffineHilbertFixedBaseJointEffectiveOpen
 public import FLT.Mazur.AffineHilbertFixedBaseJointEtale
 public import FLT.Mazur.AffineHilbertFixedBaseJointFppfOpen
 public import FLT.Mazur.AffineHilbertFixedBaseJointGenericFppf
+public import FLT.Mazur.AffineHilbertFixedBaseJointGroundTarget
 public import FLT.Mazur.AffineHilbertFixedBaseJointKernel
 public import FLT.Mazur.AffineHilbertFixedBaseJointModel
 public import FLT.Mazur.AffineHilbertFixedBaseJointRelative
