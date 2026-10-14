@@ -8088,6 +8088,7 @@ public import FLT.Mazur.RelativeCartierMorphismBaseChange
 public import FLT.Mazur.RelativeCartierOriginalSquare
 public import FLT.Mazur.RelativeCoefficientBaseChange
 public import FLT.Mazur.RelativeCoefficientBaseChangeEtale
+public import FLT.Mazur.RelativeCoefficientSourceCartesian
 public import FLT.Mazur.RelativeComparisonFiberIso
 public import FLT.Mazur.RelativeCoproductComponentPullback
 public import FLT.Mazur.RelativeCoproductPullCover
