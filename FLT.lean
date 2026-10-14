@@ -7150,6 +7150,7 @@ public import FLT.Mazur.PolygonNodeEqualizer
 public import FLT.Mazur.PolygonNodeEqualizerComparison
 public import FLT.Mazur.PolygonNodeEvaluation
 public import FLT.Mazur.PolygonNodeIncidence
+public import FLT.Mazur.PolygonNodeLaurentPoints
 public import FLT.Mazur.PolygonNodeLocalization
 public import FLT.Mazur.PolygonNodeLocus
 public import FLT.Mazur.PolygonNodeNeighborhoodScalars
