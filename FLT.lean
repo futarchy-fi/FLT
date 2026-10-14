@@ -5135,6 +5135,7 @@ public import FLT.Mazur.GroupSchemeBaseChangeComposition
 public import FLT.Mazur.GroupSchemeBaseChangeEqualityComparison
 public import FLT.Mazur.GroupSchemeBaseChangeProjections
 public import FLT.Mazur.GroupSchemeBaseChangeSections
+public import FLT.Mazur.GroupSchemeBaseIsoTransport
 public import FLT.Mazur.GroupSectionBaseChange
 public import FLT.Mazur.GroupTorsionBaseChange
 public import FLT.Mazur.GroupTorsionCommutativeStructure
