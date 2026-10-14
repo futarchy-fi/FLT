@@ -8823,6 +8823,7 @@ public import FLT.Mazur.SchemeRelationJointModelEtaleImage
 public import FLT.Mazur.SchemeRelationJointModelGenericFppf
 public import FLT.Mazur.SchemeRelationJointModelGeometry
 public import FLT.Mazur.SchemeRelationLocalFunctionDescent
+public import FLT.Mazur.SchemeRelationLocalSelector
 public import FLT.Mazur.SchemeRelationMonicBaseChange
 public import FLT.Mazur.SchemeRelationMonicSeedAffine
 public import FLT.Mazur.SchemeRelationMonicSeedEffective
