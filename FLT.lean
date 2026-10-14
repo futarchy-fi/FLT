@@ -2795,6 +2795,7 @@ public import FLT.Mazur.AffineHilbertFiniteModelImageRestriction
 public import FLT.Mazur.AffineHilbertFiniteModelPrincipalCover
 public import FLT.Mazur.AffineHilbertFiniteModelPrincipalFppf
 public import FLT.Mazur.AffineHilbertFiniteModelPrincipalInverses
+public import FLT.Mazur.AffineHilbertFiniteModelSourceBranch
 public import FLT.Mazur.AffineHilbertFiniteModelUnramifiedInverses
 public import FLT.Mazur.AffineHilbertFiniteTensorCover
 public import FLT.Mazur.AffineHilbertFixedBaseEnvelope
