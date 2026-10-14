@@ -4199,6 +4199,7 @@ public import FLT.Mazur.EllipticNodeSameBranchSlope
 public import FLT.Mazur.EllipticNodeScaledEquation
 public import FLT.Mazur.EllipticNodeSecantReduction
 public import FLT.Mazur.EllipticNodeSecantSlope
+public import FLT.Mazur.EllipticNodeSecondSumLaurentCharacter
 public import FLT.Mazur.EllipticNodeSmallChangeLabel
 public import FLT.Mazur.EllipticNodeSumDepth
 public import FLT.Mazur.EllipticNodeTangent
