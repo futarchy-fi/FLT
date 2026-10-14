@@ -9216,6 +9216,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearAction
 public import FLT.Mazur.WeierstrassCoefficientShearActionDomain
 public import FLT.Mazur.WeierstrassCoefficientShearActionDomainTransport
 public import FLT.Mazur.WeierstrassCoefficientShearActionSpecialization
+public import FLT.Mazur.WeierstrassCoefficientShearActionTransport
 public import FLT.Mazur.WeierstrassCoefficientShearAdjacentAtlasPullback
 public import FLT.Mazur.WeierstrassCoefficientShearAdjacentBoundaryDescent
 public import FLT.Mazur.WeierstrassCoefficientShearAdjacentChartMap
