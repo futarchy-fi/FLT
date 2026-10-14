@@ -4242,6 +4242,7 @@ public import FLT.Mazur.EllipticNodeTripleDepth
 public import FLT.Mazur.EllipticNodeTripleLaurentCharacter
 public import FLT.Mazur.EllipticNodeTrivializedChartGeometry
 public import FLT.Mazur.EllipticNodeTrivializedCharts
+public import FLT.Mazur.EllipticNodeTrivializedImages
 public import FLT.Mazur.EllipticNodeTrivializedMiddleChart
 public import FLT.Mazur.EllipticNodeTrivializedSpecialization
 public import FLT.Mazur.EllipticNodeUnequalDepthAddition
@@ -4291,6 +4292,7 @@ public import FLT.Mazur.EllipticReductionTranslation
 public import FLT.Mazur.EllipticRepeatedCubicPoint
 public import FLT.Mazur.EllipticRepeatedCubicTranslation
 public import FLT.Mazur.EllipticResolvedAdditionCongruence
+public import FLT.Mazur.EllipticResolvedComponentAtlasCoverage
 public import FLT.Mazur.EllipticResolvedComponentCharacterEquality
 public import FLT.Mazur.EllipticResolvedComponentCharts
 public import FLT.Mazur.EllipticResolvedComponentDifference
@@ -4308,13 +4310,18 @@ public import FLT.Mazur.EllipticResolvedOppositeTranslationEquality
 public import FLT.Mazur.EllipticResolvedParameterEquality
 public import FLT.Mazur.EllipticResolvedReflectedMixedTranslationEquality
 public import FLT.Mazur.EllipticResolvedRetainedCharts
+public import FLT.Mazur.EllipticResolvedRetainedCover
+public import FLT.Mazur.EllipticResolvedRetainedIdentitySeparation
 public import FLT.Mazur.EllipticResolvedRetainedSmoothCharts
 public import FLT.Mazur.EllipticResolvedSmoothPoint
 public import FLT.Mazur.EllipticResolvedTerminalCharts
+public import FLT.Mazur.EllipticResolvedTerminalCover
 public import FLT.Mazur.EllipticResolvedTerminalSmoothCharts
 public import FLT.Mazur.EllipticResolvedTorsionInjectivity
+public import FLT.Mazur.EllipticRetainedBoundaryAtlas
 public import FLT.Mazur.EllipticRetainedLaurentCover
 public import FLT.Mazur.EllipticRetainedTrivializedCharts
+public import FLT.Mazur.EllipticRetainedTrivializedCover
 public import FLT.Mazur.EllipticRetainedTrivializedGeometry
 public import FLT.Mazur.EllipticScaledTorsionReduction
 public import FLT.Mazur.EllipticScalingSmoothTorsion
