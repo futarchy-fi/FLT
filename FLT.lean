@@ -6832,6 +6832,10 @@ public import FLT.Mazur.PolygonCompleteGeometricallyConnected
 public import FLT.Mazur.PolygonCompleteGeometricallyReduced
 public import FLT.Mazur.PolygonCompleteH1Rank
 public import FLT.Mazur.PolygonCompleteH1Reduction
+public import FLT.Mazur.PolygonCompleteIdentityActionCartesian
+public import FLT.Mazur.PolygonCompleteIdentityActionSectionProj
+public import FLT.Mazur.PolygonCompleteIdentityActionTarget
+public import FLT.Mazur.PolygonCompleteIdentityActionUnchangedLift
 public import FLT.Mazur.PolygonCompleteIdentityChartAtlas
 public import FLT.Mazur.PolygonCompleteIdentityChartOperations
 public import FLT.Mazur.PolygonCompleteLineCohomology
@@ -8928,6 +8932,7 @@ public import FLT.Mazur.SchemeSectionFamilyProduct
 public import FLT.Mazur.SchemeSectionFrameCompatibility
 public import FLT.Mazur.SchemeSectionFrameNormalization
 public import FLT.Mazur.SchemeSectionTransportNaturality
+public import FLT.Mazur.SchemeSmoothLocusCartesian
 public import FLT.Mazur.SchemeSmoothLocusQuotient
 public import FLT.Mazur.SchemeSourceTestOverlapRecognition
 public import FLT.Mazur.SchemeSplitEtaleSourceSeed
@@ -12317,6 +12322,7 @@ public import FLT.Mazur.WeierstrassTripleInnerAdditionCover
 public import FLT.Mazur.WeierstrassTripleInnerOutputRegular
 public import FLT.Mazur.WeierstrassTripleSlopeAlgebra
 public import FLT.Mazur.WeierstrassTripleTangentSlopeAlgebra
+public import FLT.Mazur.WeierstrassUniversalTranslationSmoothLocus
 public import FLT.Mazur.WeierstrassVariableChangeAddition
 public import FLT.Mazur.WeierstrassVariableChangeAdditionFormula
 public import FLT.Mazur.WeierstrassVariableChangeAffineProduct
