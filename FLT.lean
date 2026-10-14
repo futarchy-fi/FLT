@@ -6695,6 +6695,7 @@ public import FLT.Mazur.PolygonCompletePointIdentityAffineMarking
 public import FLT.Mazur.PolygonCompletePointIdentityAffineQuotient
 public import FLT.Mazur.PolygonCompletePointIdentityEquation
 public import FLT.Mazur.PolygonCompletePointIdentityFinite
+public import FLT.Mazur.PolygonCompletePointIdentityNoetherian
 public import FLT.Mazur.PolygonCompletePointInfinity
 public import FLT.Mazur.PolygonCompletePointIntegralCubic
 public import FLT.Mazur.PolygonCompletePointIntegralMonomials
