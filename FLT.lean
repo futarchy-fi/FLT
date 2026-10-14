@@ -6113,6 +6113,7 @@ public import FLT.Mazur.NodeTangentProjectiveConjugation
 public import FLT.Mazur.NodeTangentProjectiveLineDescent
 public import FLT.Mazur.NodeTangentProjectiveMarkings
 public import FLT.Mazur.NodeTangentProjectiveReflection
+public import FLT.Mazur.NodeTangentRootEvaluation
 public import FLT.Mazur.NodeTangentShear
 public import FLT.Mazur.NodeTangentShearRealization
 public import FLT.Mazur.NodeTangentSlopeDescent
