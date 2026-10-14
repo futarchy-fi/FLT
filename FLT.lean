@@ -7803,6 +7803,7 @@ public import FLT.Mazur.ProperAmpleSectionAffine
 public import FLT.Mazur.ProperAmpleSectionAffineUnrestricted
 public import FLT.Mazur.ProperAmpleSectionChartCover
 public import FLT.Mazur.ProperAmpleSectionExtension
+public import FLT.Mazur.ProperAmpleSectionProjIso
 public import FLT.Mazur.ProperAtlasAbelEquivalence
 public import FLT.Mazur.ProperAtlasAbelFiber
 public import FLT.Mazur.ProperAtlasAbelNaturality
