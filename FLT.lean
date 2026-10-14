@@ -4039,6 +4039,7 @@ public import FLT.Mazur.EllipticExtensionGoodReductionClosure
 public import FLT.Mazur.EllipticExtensionPrimeSubgroup
 public import FLT.Mazur.EllipticExtensionScalingDescent
 public import FLT.Mazur.EllipticFiniteCoefficientPointSection
+public import FLT.Mazur.EllipticFiniteDividedPointSection
 public import FLT.Mazur.EllipticFiniteModificationPointExtension
 public import FLT.Mazur.EllipticFiniteModificationSections
 public import FLT.Mazur.EllipticFiniteModificationSpecialization
