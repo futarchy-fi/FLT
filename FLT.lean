@@ -4168,6 +4168,7 @@ public import FLT.Mazur.EllipticNodeLineProducts
 public import FLT.Mazur.EllipticNodeMiddleAddition
 public import FLT.Mazur.EllipticNodeMiddleLabels
 public import FLT.Mazur.EllipticNodeMixedLabels
+public import FLT.Mazur.EllipticNodeMixedLaurentCharacter
 public import FLT.Mazur.EllipticNodeModelDepth
 public import FLT.Mazur.EllipticNodeOppositeAddition
 public import FLT.Mazur.EllipticNodeOppositeLabels
