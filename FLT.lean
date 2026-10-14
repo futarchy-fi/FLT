@@ -7455,6 +7455,7 @@ public import FLT.Mazur.PolygonSmoothingNilpotentBranches
 public import FLT.Mazur.PolygonSmoothingOverlapGraph
 public import FLT.Mazur.PolygonSmoothingPunctureBaseChange
 public import FLT.Mazur.PolygonSmoothingQuadraticModel
+public import FLT.Mazur.PolygonSmoothingReciprocalScaling
 public import FLT.Mazur.PolygonSmoothingRing
 public import FLT.Mazur.PolygonSmoothingRingMap
 public import FLT.Mazur.PolygonSmoothingRingMapComposition
