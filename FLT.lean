@@ -6884,6 +6884,7 @@ public import FLT.Mazur.PolygonCompletePointRelativeCoordinateRing
 public import FLT.Mazur.PolygonCompletePointRelativeCoordinateSurjective
 public import FLT.Mazur.PolygonCompletePointSectionBaseChange
 public import FLT.Mazur.PolygonCompletePointSectionFree
+public import FLT.Mazur.PolygonCompletePointSectionProjIso
 public import FLT.Mazur.PolygonCompletePointSectionRank
 public import FLT.Mazur.PolygonCompletePointSectionRingIso
 public import FLT.Mazur.PolygonCompletePointSpecifiedBasis
