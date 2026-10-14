@@ -2753,7 +2753,13 @@ public import FLT.Mazur.AffineHilbertAssociativeFiniteBranches
 public import FLT.Mazur.AffineHilbertBoundedRelation
 public import FLT.Mazur.AffineHilbertBranchCompositionCoefficients
 public import FLT.Mazur.AffineHilbertCartesianEnvelope
+public import FLT.Mazur.AffineHilbertChangedAffineFullOrbit
+public import FLT.Mazur.AffineHilbertChangedOpenRelation
+public import FLT.Mazur.AffineHilbertChangedOrbitDescent
+public import FLT.Mazur.AffineHilbertChangedOrbitKernel
 public import FLT.Mazur.AffineHilbertChangedOrbitOpen
+public import FLT.Mazur.AffineHilbertChangedOrbitRelationComparison
+public import FLT.Mazur.AffineHilbertChangedOrbitSource
 public import FLT.Mazur.AffineHilbertChartRelation
 public import FLT.Mazur.AffineHilbertClosedPatchRefinement
 public import FLT.Mazur.AffineHilbertClosedPatchSource
@@ -2840,6 +2846,7 @@ public import FLT.Mazur.AffineHilbertGroundBaseEnvelope
 public import FLT.Mazur.AffineHilbertGroundBaseEnvelopeLift
 public import FLT.Mazur.AffineHilbertGroundBaseFullFiber
 public import FLT.Mazur.AffineHilbertGroundBaseSource
+public import FLT.Mazur.AffineHilbertGroundKernelRestriction
 public import FLT.Mazur.AffineHilbertGroundRelativeCoverage
 public import FLT.Mazur.AffineHilbertGroundRelativeEtale
 public import FLT.Mazur.AffineHilbertInvariantAffineModel
