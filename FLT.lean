@@ -2903,6 +2903,7 @@ public import FLT.Mazur.AffineHilbertNestedRestriction
 public import FLT.Mazur.AffineHilbertNoetherianRelation
 public import FLT.Mazur.AffineHilbertOriginalOrbitAtlas
 public import FLT.Mazur.AffineHilbertOriginalOrbitModel
+public import FLT.Mazur.AffineHilbertOriginalOrbitOpenModel
 public import FLT.Mazur.AffineHilbertOriginalPrincipalInvariants
 public import FLT.Mazur.AffineHilbertPrincipalInvariants
 public import FLT.Mazur.AffineHilbertPrincipalTensorModel
@@ -8801,6 +8802,9 @@ public import FLT.Mazur.SchemeRefinementReconstruction
 public import FLT.Mazur.SchemeRelationArrowTransport
 public import FLT.Mazur.SchemeRelationDoubleRestriction
 public import FLT.Mazur.SchemeRelationEtaleBranchPropagation
+public import FLT.Mazur.SchemeRelationEtaleCoverDescent
+public import FLT.Mazur.SchemeRelationEtaleImageModel
+public import FLT.Mazur.SchemeRelationEtaleKernelDescent
 public import FLT.Mazur.SchemeRelationFunctionDescent
 public import FLT.Mazur.SchemeRelationInvariantAffineUniversal
 public import FLT.Mazur.SchemeRelationInvariantDomainIso
@@ -8827,11 +8831,13 @@ public import FLT.Mazur.SchemeRelationMonicSeedOpenQuotient
 public import FLT.Mazur.SchemeRelationMonicSeedQuotient
 public import FLT.Mazur.SchemeRelationMonicSeedQuotientCoverage
 public import FLT.Mazur.SchemeRelationMonicSeedSelection
+public import FLT.Mazur.SchemeRelationNestedKernel
 public import FLT.Mazur.SchemeRelationOpenFunctionDescent
 public import FLT.Mazur.SchemeRelationOpenInvariantRings
 public import FLT.Mazur.SchemeRelationOrbitAtlas
 public import FLT.Mazur.SchemeRelationOrbitAtlasDescent
 public import FLT.Mazur.SchemeRelationOrbitAtlasKernel
+public import FLT.Mazur.SchemeRelationOrbitOpenModel
 public import FLT.Mazur.SchemeRelationOverRestriction
 public import FLT.Mazur.SchemeRelationPrincipalFullInvariants
 public import FLT.Mazur.SchemeRelationPrincipalLocalization
