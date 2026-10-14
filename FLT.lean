@@ -6805,6 +6805,7 @@ public import FLT.Mazur.PolygonCompletePointCoordinateInjective
 public import FLT.Mazur.PolygonCompletePointCoordinateRange
 public import FLT.Mazur.PolygonCompletePointCubicBaseChange
 public import FLT.Mazur.PolygonCompletePointCubicChartAffinization
+public import FLT.Mazur.PolygonCompletePointCubicChartFunctions
 public import FLT.Mazur.PolygonCompletePointCubicChartSquare
 public import FLT.Mazur.PolygonCompletePointCubicFactorization
 public import FLT.Mazur.PolygonCompletePointCubicPreimages
