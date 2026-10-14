@@ -2906,6 +2906,8 @@ public import FLT.Mazur.AffineHilbertRestrictedSectionFunctions
 public import FLT.Mazur.AffineHilbertRestrictedSheafEquiv
 public import FLT.Mazur.AffineHilbertRestrictedSheafPullback
 public import FLT.Mazur.AffineHilbertSchemeRestriction
+public import FLT.Mazur.AffineHilbertSplitChangedFamily
+public import FLT.Mazur.AffineHilbertSplitGroundComparison
 public import FLT.Mazur.AffineHilbertSymmetricNeighborhoods
 public import FLT.Mazur.AffineHilbertTensorAtlas
 public import FLT.Mazur.AffineHilbertTensorGluing
@@ -8777,6 +8779,7 @@ public import FLT.Mazur.SchemeRelationRestrictionRechart
 public import FLT.Mazur.SchemeRelationSeedOrbit
 public import FLT.Mazur.SchemeRelationSplitOrbit
 public import FLT.Mazur.SchemeRelationSplitOrbitAffineSeed
+public import FLT.Mazur.SchemeRelationSplitOrbitGround
 public import FLT.Mazur.SchemeRelationSplitOrbitKernel
 public import FLT.Mazur.SchemeRelationSplitOrbitOpen
 public import FLT.Mazur.SchemeRelationSplitOrbitQuotient
@@ -8793,6 +8796,9 @@ public import FLT.Mazur.SchemeSectionTransportNaturality
 public import FLT.Mazur.SchemeSmoothLocusQuotient
 public import FLT.Mazur.SchemeSourceTestOverlapRecognition
 public import FLT.Mazur.SchemeSplitEtaleSourceSeed
+public import FLT.Mazur.SchemeSplitSeedGroundChart
+public import FLT.Mazur.SchemeSplitSeedGroundComparison
+public import FLT.Mazur.SchemeSplitSeedGroundFiber
 public import FLT.Mazur.SchemeSplitUnramifiedSourceSeed
 public import FLT.Mazur.SchemeTranslationNormFiber
 public import FLT.Mazur.SchemeTranslationNormGluing
@@ -9418,6 +9424,7 @@ public import FLT.Mazur.ValuationRingHenselianModel
 public import FLT.Mazur.ValuationRingModel
 public import FLT.Mazur.VariableHilbertAffineEnvelope
 public import FLT.Mazur.VariableHilbertAffinePointRefinement
+public import FLT.Mazur.VariableHilbertCanonicalGroundIso
 public import FLT.Mazur.VariableHilbertChangeFppf
 public import FLT.Mazur.VariableHilbertChartRelation
 public import FLT.Mazur.VariableHilbertChartRelationOperations
