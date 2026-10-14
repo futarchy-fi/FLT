@@ -4178,6 +4178,7 @@ public import FLT.Mazur.EllipticNodeLabelDescent
 public import FLT.Mazur.EllipticNodeLabelFibers
 public import FLT.Mazur.EllipticNodeLabelHom
 public import FLT.Mazur.EllipticNodeLabelSeparation
+public import FLT.Mazur.EllipticNodeLaurentScale
 public import FLT.Mazur.EllipticNodeLineProducts
 public import FLT.Mazur.EllipticNodeMiddleAddition
 public import FLT.Mazur.EllipticNodeMiddleCharacterAlgebra
