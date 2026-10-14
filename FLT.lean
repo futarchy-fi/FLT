@@ -6865,6 +6865,7 @@ public import FLT.Mazur.PolygonCompletePointProjectiveSections
 public import FLT.Mazur.PolygonCompletePointPushforwardLine
 public import FLT.Mazur.PolygonCompletePointRatioIdeal
 public import FLT.Mazur.PolygonCompletePointRelativeAffineMorphism
+public import FLT.Mazur.PolygonCompletePointRelativeAffinization
 public import FLT.Mazur.PolygonCompletePointRelativeCoordinateRing
 public import FLT.Mazur.PolygonCompletePointRelativeCoordinateSurjective
 public import FLT.Mazur.PolygonCompletePointSectionBaseChange
