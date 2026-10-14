@@ -10256,6 +10256,7 @@ public import FLT.Mazur.WeierstrassDividedPositiveSplitCycle
 public import FLT.Mazur.WeierstrassDividedPositiveSplitCycleCoverage
 public import FLT.Mazur.WeierstrassDividedPositiveSplitCycleIndices
 public import FLT.Mazur.WeierstrassDividedPositiveSplitCycleRanges
+public import FLT.Mazur.WeierstrassDividedPositiveSplitInitialExt
 public import FLT.Mazur.WeierstrassDividedPositiveSplitNormalizationSurjective
 public import FLT.Mazur.WeierstrassDividedPrecedingAtlasRange
 public import FLT.Mazur.WeierstrassDividedPreviousBoundaryAlgebra
