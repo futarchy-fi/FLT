@@ -6809,6 +6809,7 @@ public import FLT.Mazur.PolygonCompleteGenericChartEvaluation
 public import FLT.Mazur.PolygonCompleteGenericChartOperations
 public import FLT.Mazur.PolygonCompleteGenericGenus
 public import FLT.Mazur.PolygonCompleteGenericH1
+public import FLT.Mazur.PolygonCompleteGenericMapIdentity
 public import FLT.Mazur.PolygonCompleteGenericMorphismExt
 public import FLT.Mazur.PolygonCompleteGenericPureDimension
 public import FLT.Mazur.PolygonCompleteGenericRelativeDimension
