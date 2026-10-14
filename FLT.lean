@@ -2843,6 +2843,7 @@ public import FLT.Mazur.AffineHilbertModelFppfDescent
 public import FLT.Mazur.AffineHilbertModelFppfLocalImage
 public import FLT.Mazur.AffineHilbertModelFppfPicard
 public import FLT.Mazur.AffineHilbertModelFppfRepresentation
+public import FLT.Mazur.AffineHilbertModelGenericFppf
 public import FLT.Mazur.AffineHilbertModelKernelComparison
 public import FLT.Mazur.AffineHilbertMonicKernelGeometry
 public import FLT.Mazur.AffineHilbertMonicModelRelation
