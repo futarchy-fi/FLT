@@ -5643,6 +5643,7 @@ public import FLT.Mazur.KernelPairEtaleUnramified
 public import FLT.Mazur.KernelPairGenericBranchInverses
 public import FLT.Mazur.KernelPairGenericEffectiveOpen
 public import FLT.Mazur.KernelPairGenericEtaleCertificates
+public import FLT.Mazur.KernelPairGenericOrbitSeed
 public import FLT.Mazur.KernelPairSourceBranchCriterion
 public import FLT.Mazur.KernelPairTestIso
 public import FLT.Mazur.KernelPairUnramifiedInverse
