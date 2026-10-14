@@ -3735,6 +3735,8 @@ public import FLT.Mazur.CurvePositiveDegreeAmple
 public import FLT.Mazur.CurvePositiveDegreeCohomologyVanishing
 public import FLT.Mazur.CurvePositiveDegreeSections
 public import FLT.Mazur.CurveRiemannRochEuler
+public import FLT.Mazur.CurveStructureEuler
+public import FLT.Mazur.CurveSurjectiveOpenComplement
 public import FLT.Mazur.CurveUniformFieldDegreeBound
 public import FLT.Mazur.CuspCollision
 public import FLT.Mazur.CuspOrderNumerator
@@ -4402,6 +4404,7 @@ public import FLT.Mazur.FiniteCompactOpenAffineLimit
 public import FLT.Mazur.FiniteCompactOpenCoverLimit
 public import FLT.Mazur.FiniteCoproductTensorRight
 public import FLT.Mazur.FiniteCoverDirectSumSheaf
+public import FLT.Mazur.FiniteCurveEulerIsomorphism
 public import FLT.Mazur.FiniteDVRAbsoluteRamification
 public import FLT.Mazur.FiniteDVRComplete
 public import FLT.Mazur.FiniteDiagramCoverModel
@@ -4653,6 +4656,7 @@ public import FLT.Mazur.FiniteSubgroupPicard
 public import FLT.Mazur.FiniteSubgroupPicardDegree
 public import FLT.Mazur.FiniteSupportClosedDescent
 public import FLT.Mazur.FiniteSupportEulerCharacteristic
+public import FLT.Mazur.FiniteSupportEulerIso
 public import FLT.Mazur.FiniteSupportEulerPositive
 public import FLT.Mazur.FiniteSurjectiveAmpleDescent
 public import FLT.Mazur.FiniteSurjectiveCoherentWitness
@@ -6248,6 +6252,7 @@ public import FLT.Mazur.OneGonDenominatorEqualizer
 public import FLT.Mazur.OneGonFormalCoordinates
 public import FLT.Mazur.OneGonGlobalPushout
 public import FLT.Mazur.OneGonGluing
+public import FLT.Mazur.OneGonIntegral
 public import FLT.Mazur.OneGonLocalDescent
 public import FLT.Mazur.OneGonLocalizedEqualizer
 public import FLT.Mazur.OneGonMobiusConductors
@@ -6567,12 +6572,18 @@ public import FLT.Mazur.PolygonCartierGenerator
 public import FLT.Mazur.PolygonChartScaling
 public import FLT.Mazur.PolygonClassifiedFamily
 public import FLT.Mazur.PolygonClosedChartRotation
+public import FLT.Mazur.PolygonClosedCubicContractionBaseChangeIso
 public import FLT.Mazur.PolygonClosedCubicContractionCharts
 public import FLT.Mazur.PolygonClosedCubicContractionComparison
 public import FLT.Mazur.PolygonClosedCubicContractionDivisors
 public import FLT.Mazur.PolygonClosedCubicContractionFactorization
+public import FLT.Mazur.PolygonClosedCubicContractionFinite
 public import FLT.Mazur.PolygonClosedCubicContractionIdentity
+public import FLT.Mazur.PolygonClosedCubicContractionIso
 public import FLT.Mazur.PolygonClosedCubicContractionSurjective
+public import FLT.Mazur.PolygonClosedCubicEuler
+public import FLT.Mazur.PolygonClosedCubicNodeFiber
+public import FLT.Mazur.PolygonClosedCubicNonconstant
 public import FLT.Mazur.PolygonClosedCubicOmittedChart
 public import FLT.Mazur.PolygonClosedCubicOmittedConstant
 public import FLT.Mazur.PolygonClosedCubicRetainedLine
@@ -6800,6 +6811,7 @@ public import FLT.Mazur.PolygonCompletePointFirstOrderLine
 public import FLT.Mazur.PolygonCompletePointFirstOrderOpen
 public import FLT.Mazur.PolygonCompletePointFunctionDimensions
 public import FLT.Mazur.PolygonCompletePointFunctionNumerators
+public import FLT.Mazur.PolygonCompletePointGenericCubicIso
 public import FLT.Mazur.PolygonCompletePointHomogeneousEquation
 public import FLT.Mazur.PolygonCompletePointIdentityAffine
 public import FLT.Mazur.PolygonCompletePointIdentityAffineMarking
@@ -7768,6 +7780,7 @@ public import FLT.Mazur.ProperCoverImmersionCriterion
 public import FLT.Mazur.ProperCoverLimitDescent
 public import FLT.Mazur.ProperCurveFixedPointTranslation
 public import FLT.Mazur.ProperCurveGenus
+public import FLT.Mazur.ProperCurveOpenComparison
 public import FLT.Mazur.ProperDenseOpenExtension
 public import FLT.Mazur.ProperDenseOpenIso
 public import FLT.Mazur.ProperFamilyAbelRepresentation
@@ -9015,6 +9028,7 @@ public import FLT.Mazur.StandardSmoothLocalCartier
 public import FLT.Mazur.StructureCoefficientComposition
 public import FLT.Mazur.StructureCohomologyFinite
 public import FLT.Mazur.StructureCohomologyOverIso
+public import FLT.Mazur.StructureDirectImageComparison
 public import FLT.Mazur.StructureDirectImageHZero
 public import FLT.Mazur.StructureDirectImageSections
 public import FLT.Mazur.StructureIdealPowerCohomology
