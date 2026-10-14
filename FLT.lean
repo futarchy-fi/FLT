@@ -6934,6 +6934,7 @@ public import FLT.Mazur.PolygonCompleteRefinementSquares
 public import FLT.Mazur.PolygonCompleteRotatedIdentityClosed
 public import FLT.Mazur.PolygonCompleteRotatedIdentityCover
 public import FLT.Mazur.PolygonCompleteRotatedIdentityOpen
+public import FLT.Mazur.PolygonCompleteRotatedIdentityOverlap
 public import FLT.Mazur.PolygonCompleteRotation
 public import FLT.Mazur.PolygonCompleteSmoothCyclicMarking
 public import FLT.Mazur.PolygonCompleteSmoothDimensionOpen
