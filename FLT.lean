@@ -4054,6 +4054,7 @@ public import FLT.Mazur.EllipticFiniteModificationPointExtension
 public import FLT.Mazur.EllipticFiniteModificationSections
 public import FLT.Mazur.EllipticFiniteModificationSpecialization
 public import FLT.Mazur.EllipticFiniteNodeBoundarySection
+public import FLT.Mazur.EllipticFiniteNodeBranchLabels
 public import FLT.Mazur.EllipticFiniteOddSpecialization
 public import FLT.Mazur.EllipticFinitePointBound
 public import FLT.Mazur.EllipticFinitePointSectionAction
