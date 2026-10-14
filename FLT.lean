@@ -5633,6 +5633,7 @@ public import FLT.Mazur.KernelPairEffectiveOpenEtale
 public import FLT.Mazur.KernelPairEffectiveUnramified
 public import FLT.Mazur.KernelPairEtaleUnramified
 public import FLT.Mazur.KernelPairGenericEffectiveOpen
+public import FLT.Mazur.KernelPairGenericEtaleCertificates
 public import FLT.Mazur.KernelPairTestIso
 public import FLT.Mazur.KernelPairUnramifiedInverse
 public import FLT.Mazur.LargeDegreeRelativeLineSections
