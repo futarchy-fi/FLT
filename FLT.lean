@@ -3752,6 +3752,7 @@ public import FLT.Mazur.CyclicMarkingOrbitDivisor
 public import FLT.Mazur.CyclicMarkingRelabelIdeal
 public import FLT.Mazur.CyclicNodeChart
 public import FLT.Mazur.CyclicNormalizationExact
+public import FLT.Mazur.CyclicOmittedEdgeConstancy
 public import FLT.Mazur.CyclicOrbitCartierGenerator
 public import FLT.Mazur.CyclicOrbitSubgroupMarking
 public import FLT.Mazur.CyclicOriginalHomDivisorCoverage
