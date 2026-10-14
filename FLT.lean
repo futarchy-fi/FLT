@@ -6882,6 +6882,7 @@ public import FLT.Mazur.PolygonCompleteIdentityActionUnchangedLift
 public import FLT.Mazur.PolygonCompleteIdentityChartAtlas
 public import FLT.Mazur.PolygonCompleteIdentityChartOperations
 public import FLT.Mazur.PolygonCompleteIdentityFiniteCoherence
+public import FLT.Mazur.PolygonCompleteIdentityFiniteComparison
 public import FLT.Mazur.PolygonCompleteIdentityFiniteScaling
 public import FLT.Mazur.PolygonCompleteIdentityMultiplicationCubic
 public import FLT.Mazur.PolygonCompleteIdentitySmoothAction
