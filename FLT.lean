@@ -2917,6 +2917,8 @@ public import FLT.Mazur.AffineHilbertRestrictedSectionFunctions
 public import FLT.Mazur.AffineHilbertRestrictedSheafEquiv
 public import FLT.Mazur.AffineHilbertRestrictedSheafPullback
 public import FLT.Mazur.AffineHilbertSchemeRestriction
+public import FLT.Mazur.AffineHilbertSelectorOrbitOpen
+public import FLT.Mazur.AffineHilbertSelectorQuotient
 public import FLT.Mazur.AffineHilbertSplitChangedFamily
 public import FLT.Mazur.AffineHilbertSplitGroundComparison
 public import FLT.Mazur.AffineHilbertSymmetricNeighborhoods
@@ -8831,6 +8833,7 @@ public import FLT.Mazur.SchemeRelationJointModelEtaleImage
 public import FLT.Mazur.SchemeRelationJointModelGenericFppf
 public import FLT.Mazur.SchemeRelationJointModelGeometry
 public import FLT.Mazur.SchemeRelationLocalFunctionDescent
+public import FLT.Mazur.SchemeRelationLocalSelector
 public import FLT.Mazur.SchemeRelationMonicBaseChange
 public import FLT.Mazur.SchemeRelationMonicSeedAffine
 public import FLT.Mazur.SchemeRelationMonicSeedEffective
@@ -8857,6 +8860,10 @@ public import FLT.Mazur.SchemeRelationReanchoring
 public import FLT.Mazur.SchemeRelationRestrictionComposition
 public import FLT.Mazur.SchemeRelationRestrictionRechart
 public import FLT.Mazur.SchemeRelationSeedOrbit
+public import FLT.Mazur.SchemeRelationSelectorEtale
+public import FLT.Mazur.SchemeRelationSelectorInvariant
+public import FLT.Mazur.SchemeRelationSelectorKernel
+public import FLT.Mazur.SchemeRelationSelectorQuotient
 public import FLT.Mazur.SchemeRelationSplitOrbit
 public import FLT.Mazur.SchemeRelationSplitOrbitAffineSeed
 public import FLT.Mazur.SchemeRelationSplitOrbitGround
