@@ -10257,6 +10257,7 @@ public import FLT.Mazur.WeierstrassDividedPositiveSplitAtlasInitialReduction
 public import FLT.Mazur.WeierstrassDividedPositiveSplitAtlasSeparation
 public import FLT.Mazur.WeierstrassDividedPositiveSplitBranchIndices
 public import FLT.Mazur.WeierstrassDividedPositiveSplitBranches
+public import FLT.Mazur.WeierstrassDividedPositiveSplitCartesian
 public import FLT.Mazur.WeierstrassDividedPositiveSplitCocone
 public import FLT.Mazur.WeierstrassDividedPositiveSplitComponentHomExt
 public import FLT.Mazur.WeierstrassDividedPositiveSplitCycle
