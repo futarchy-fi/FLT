@@ -2839,6 +2839,7 @@ public import FLT.Mazur.AffineHilbertGroundBaseEnvelope
 public import FLT.Mazur.AffineHilbertGroundBaseEnvelopeLift
 public import FLT.Mazur.AffineHilbertGroundBaseFullFiber
 public import FLT.Mazur.AffineHilbertGroundBaseSource
+public import FLT.Mazur.AffineHilbertGroundRelativeEtale
 public import FLT.Mazur.AffineHilbertInvariantAffineModel
 public import FLT.Mazur.AffineHilbertInvariantEnvelope
 public import FLT.Mazur.AffineHilbertInvariantFiniteType
