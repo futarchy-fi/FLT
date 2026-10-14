@@ -2877,6 +2877,7 @@ public import FLT.Mazur.AffineHilbertMonicSeedCharts
 public import FLT.Mazur.AffineHilbertMonicSeedFiniteEtale
 public import FLT.Mazur.AffineHilbertMonicSeedGroundCoverage
 public import FLT.Mazur.AffineHilbertMonicSeedGroundEtale
+public import FLT.Mazur.AffineHilbertMonicSeedGroundRelative
 public import FLT.Mazur.AffineHilbertMonicSeedGroundSource
 public import FLT.Mazur.AffineHilbertMonicSeedKernel
 public import FLT.Mazur.AffineHilbertMonicTranslation
