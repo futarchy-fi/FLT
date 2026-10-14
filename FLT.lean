@@ -2814,6 +2814,7 @@ public import FLT.Mazur.AffineHilbertFiniteModelSourceBranch
 public import FLT.Mazur.AffineHilbertFiniteModelUnramifiedInverses
 public import FLT.Mazur.AffineHilbertFiniteSelectorFixedSeed
 public import FLT.Mazur.AffineHilbertFiniteSelectorKernel
+public import FLT.Mazur.AffineHilbertFiniteSelectorSeed
 public import FLT.Mazur.AffineHilbertFiniteTensorCover
 public import FLT.Mazur.AffineHilbertFixedBaseEnvelope
 public import FLT.Mazur.AffineHilbertFixedBaseInvariants
