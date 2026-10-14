@@ -3340,6 +3340,7 @@ public import FLT.Mazur.CartesianCoefficientTransport
 public import FLT.Mazur.CartesianCoefficientTransportNaturality
 public import FLT.Mazur.CartesianHomMarkingParameter
 public import FLT.Mazur.CartesianIdentityFactorization
+public import FLT.Mazur.CartesianIdentityFiniteNeighborhood
 public import FLT.Mazur.CartesianIdentityQuasiFinite
 public import FLT.Mazur.CartesianImageChartImmersion
 public import FLT.Mazur.CartesianLineFieldCohomology
