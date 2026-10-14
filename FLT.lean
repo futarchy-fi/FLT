@@ -11022,6 +11022,7 @@ public import FLT.Mazur.WeierstrassOriginAutomorphismFrame
 public import FLT.Mazur.WeierstrassOriginAutomorphismPoles
 public import FLT.Mazur.WeierstrassOriginAutomorphismSections
 public import FLT.Mazur.WeierstrassOriginCartier
+public import FLT.Mazur.WeierstrassOriginComplement
 public import FLT.Mazur.WeierstrassOriginDivisorCoordinates
 public import FLT.Mazur.WeierstrassOriginDivisorPullback
 public import FLT.Mazur.WeierstrassOriginGlobalPoleSections
