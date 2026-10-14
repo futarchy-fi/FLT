@@ -6071,6 +6071,7 @@ public import FLT.Mazur.MonomorphismGenericInversePatches
 public import FLT.Mazur.MonomorphismGenericStratum
 public import FLT.Mazur.MonomorphismOpenImage
 public import FLT.Mazur.MonomorphismOpenImageBaseChange
+public import FLT.Mazur.MonomorphismOpenSource
 public import FLT.Mazur.MonomorphismPrincipalInverseCover
 public import FLT.Mazur.MonomorphismRelativeOpen
 public import FLT.Mazur.MonomorphismRelativeOpenBaseChange
