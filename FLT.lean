@@ -4195,6 +4195,7 @@ public import FLT.Mazur.EllipticNodeTripleLaurentCharacter
 public import FLT.Mazur.EllipticNodeUnequalDepthAddition
 public import FLT.Mazur.EllipticNodeUniformizerLabel
 public import FLT.Mazur.EllipticNodeVariableChangeLabel
+public import FLT.Mazur.EllipticNodeWrappedLaurentCharacter
 public import FLT.Mazur.EllipticNonsplitNodalGroup
 public import FLT.Mazur.EllipticNonsplitNodeBound
 public import FLT.Mazur.EllipticNonsplitNodeChart
