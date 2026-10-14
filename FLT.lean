@@ -8887,6 +8887,7 @@ public import FLT.Mazur.SchemeLineDescentRefinement
 public import FLT.Mazur.SchemeModulePullbackOpenUnits
 public import FLT.Mazur.SchemeModulePullbackUnitSections
 public import FLT.Mazur.SchemeModulePullbackUnits
+public import FLT.Mazur.SchemeMonoidUnitEvaluation
 public import FLT.Mazur.SchemeNilpotentSectionDetection
 public import FLT.Mazur.SchemeNormalizedRecoveryOverlap
 public import FLT.Mazur.SchemeOpenChartRange
