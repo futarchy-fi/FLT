@@ -2846,6 +2846,7 @@ public import FLT.Mazur.AffineHilbertLocalizedCounit
 public import FLT.Mazur.AffineHilbertLocalizedTensorFormula
 public import FLT.Mazur.AffineHilbertModelEffectiveDescent
 public import FLT.Mazur.AffineHilbertModelEffectivePicard
+public import FLT.Mazur.AffineHilbertModelEtale
 public import FLT.Mazur.AffineHilbertModelFlatFppf
 public import FLT.Mazur.AffineHilbertModelFppfDescent
 public import FLT.Mazur.AffineHilbertModelFppfLocalImage
