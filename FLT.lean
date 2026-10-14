@@ -2728,6 +2728,7 @@ public import FLT.Mazur.AffineFreeSheafCoordinateNormalization
 public import FLT.Mazur.AffineFreeSheafCoordinatePullback
 public import FLT.Mazur.AffineFreeSheafCoordinates
 public import FLT.Mazur.AffineFreeSheafSectionCoordinates
+public import FLT.Mazur.AffineFunctionUniversal
 public import FLT.Mazur.AffineGeneratorPointCoefficientTransport
 public import FLT.Mazur.AffineGeneratorPointLinearTransport
 public import FLT.Mazur.AffineGenericClosure
@@ -2988,6 +2989,7 @@ public import FLT.Mazur.AffineProductNormFiber
 public import FLT.Mazur.AffineProductTensorCoordinates
 public import FLT.Mazur.AffineProductTranslationNorm
 public import FLT.Mazur.AffineProjectivePointLineCover
+public import FLT.Mazur.AffineProperFunctionSheaf
 public import FLT.Mazur.AffinePullbackCoefficientRecognition
 public import FLT.Mazur.AffinePullbackComparisonSections
 public import FLT.Mazur.AffinePullbackCompositeTransport
@@ -3416,6 +3418,7 @@ public import FLT.Mazur.CartesianLineFieldCohomology
 public import FLT.Mazur.CartesianMonoGroup
 public import FLT.Mazur.CartesianMonoMonoid
 public import FLT.Mazur.CartesianMorphismRecovery
+public import FLT.Mazur.CartesianOpenFunctionSheaf
 public import FLT.Mazur.CartesianOpenIsoBaseChange
 public import FLT.Mazur.CartesianOpenIsoRestriction
 public import FLT.Mazur.CartesianOpenSectionMap
@@ -4770,6 +4773,8 @@ public import FLT.Mazur.FreeTargetVanishingIdeal
 public import FLT.Mazur.FreeTargetVanishingScheme
 public import FLT.Mazur.FullDivisorFlatFppfDescent
 public import FLT.Mazur.FullHilbertIntersectionSeparablePoints
+public import FLT.Mazur.FunctionSheafGradedBaseAlgebra
+public import FLT.Mazur.FunctionSheafGradedSections
 public import FLT.Mazur.GeneralizedCurveAmpleBaseChange
 public import FLT.Mazur.GeneralizedCurveAmpleDescent
 public import FLT.Mazur.GeneralizedCurveAmpleSubgroup
@@ -6810,6 +6815,7 @@ public import FLT.Mazur.PolygonCompletePointCoordinateInjective
 public import FLT.Mazur.PolygonCompletePointCoordinateRange
 public import FLT.Mazur.PolygonCompletePointCubicBaseChange
 public import FLT.Mazur.PolygonCompletePointCubicChartAffinization
+public import FLT.Mazur.PolygonCompletePointCubicChartFunctions
 public import FLT.Mazur.PolygonCompletePointCubicChartSquare
 public import FLT.Mazur.PolygonCompletePointCubicFactorization
 public import FLT.Mazur.PolygonCompletePointCubicPreimages
@@ -6825,6 +6831,7 @@ public import FLT.Mazur.PolygonCompletePointFirstOrderOpen
 public import FLT.Mazur.PolygonCompletePointFunctionDimensions
 public import FLT.Mazur.PolygonCompletePointFunctionNumerators
 public import FLT.Mazur.PolygonCompletePointGenericCubicIso
+public import FLT.Mazur.PolygonCompletePointGlobalFunctions
 public import FLT.Mazur.PolygonCompletePointHigherMonomials
 public import FLT.Mazur.PolygonCompletePointHomogeneousEquation
 public import FLT.Mazur.PolygonCompletePointIdentityAffine
@@ -6858,6 +6865,7 @@ public import FLT.Mazur.PolygonCompletePointNormalizedPoles
 public import FLT.Mazur.PolygonCompletePointOriginCartesian
 public import FLT.Mazur.PolygonCompletePointOriginCartesianBaseChange
 public import FLT.Mazur.PolygonCompletePointOriginChart
+public import FLT.Mazur.PolygonCompletePointOriginDirectImage
 public import FLT.Mazur.PolygonCompletePointOriginIdeal
 public import FLT.Mazur.PolygonCompletePointOriginIdealEquality
 public import FLT.Mazur.PolygonCompletePointOriginNeighborhood
@@ -6882,9 +6890,13 @@ public import FLT.Mazur.PolygonCompletePointRelativeAffineRestriction
 public import FLT.Mazur.PolygonCompletePointRelativeAffinization
 public import FLT.Mazur.PolygonCompletePointRelativeCoordinateRing
 public import FLT.Mazur.PolygonCompletePointRelativeCoordinateSurjective
+public import FLT.Mazur.PolygonCompletePointRelativeUniversal
+public import FLT.Mazur.PolygonCompletePointSectionBaseAlgebra
 public import FLT.Mazur.PolygonCompletePointSectionBaseChange
 public import FLT.Mazur.PolygonCompletePointSectionFree
+public import FLT.Mazur.PolygonCompletePointSectionProjIso
 public import FLT.Mazur.PolygonCompletePointSectionRank
+public import FLT.Mazur.PolygonCompletePointSectionRingIso
 public import FLT.Mazur.PolygonCompletePointSpecifiedBasis
 public import FLT.Mazur.PolygonCompletePointWeierstrassEquation
 public import FLT.Mazur.PolygonCompletePrincipalClosedFiber
