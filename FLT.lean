@@ -2919,6 +2919,7 @@ public import FLT.Mazur.AffineHilbertRestrictedSheafPullback
 public import FLT.Mazur.AffineHilbertSchemeRestriction
 public import FLT.Mazur.AffineHilbertSelectorOrbitOpen
 public import FLT.Mazur.AffineHilbertSelectorQuotient
+public import FLT.Mazur.AffineHilbertSelectorUnionQuotient
 public import FLT.Mazur.AffineHilbertSplitChangedFamily
 public import FLT.Mazur.AffineHilbertSplitGroundComparison
 public import FLT.Mazur.AffineHilbertSymmetricNeighborhoods
@@ -8889,12 +8890,19 @@ public import FLT.Mazur.SchemeRelationMonicSeedSelection
 public import FLT.Mazur.SchemeRelationNestedKernel
 public import FLT.Mazur.SchemeRelationOpenFunctionDescent
 public import FLT.Mazur.SchemeRelationOpenInvariantRings
+public import FLT.Mazur.SchemeRelationOpenSelectorCoequalization
 public import FLT.Mazur.SchemeRelationOpenSelectorDiagram
+public import FLT.Mazur.SchemeRelationOpenSelectorFibers
 public import FLT.Mazur.SchemeRelationOpenSelectorGluing
 public import FLT.Mazur.SchemeRelationOpenSelectorGround
+public import FLT.Mazur.SchemeRelationOpenSelectorInvariant
+public import FLT.Mazur.SchemeRelationOpenSelectorKernel
+public import FLT.Mazur.SchemeRelationOpenSelectorKernelArrow
 public import FLT.Mazur.SchemeRelationOpenSelectorOverlap
 public import FLT.Mazur.SchemeRelationOpenSelectorProjection
+public import FLT.Mazur.SchemeRelationOpenSelectorRelativeKernel
 public import FLT.Mazur.SchemeRelationOpenSelectorRestriction
+public import FLT.Mazur.SchemeRelationOpenSelectorTestCharts
 public import FLT.Mazur.SchemeRelationOrbitAtlas
 public import FLT.Mazur.SchemeRelationOrbitAtlasDescent
 public import FLT.Mazur.SchemeRelationOrbitAtlasKernel
