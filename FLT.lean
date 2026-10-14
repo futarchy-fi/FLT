@@ -6907,6 +6907,7 @@ public import FLT.Mazur.PolygonCompletePointRelativeAffinization
 public import FLT.Mazur.PolygonCompletePointRelativeCoordinateRing
 public import FLT.Mazur.PolygonCompletePointRelativeCoordinateSurjective
 public import FLT.Mazur.PolygonCompletePointRelativeUniversal
+public import FLT.Mazur.PolygonCompletePointResidueNeighborhood
 public import FLT.Mazur.PolygonCompletePointSectionBaseAlgebra
 public import FLT.Mazur.PolygonCompletePointSectionBaseChange
 public import FLT.Mazur.PolygonCompletePointSectionFree
