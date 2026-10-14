@@ -2802,6 +2802,7 @@ public import FLT.Mazur.AffineHilbertFiniteTensorCover
 public import FLT.Mazur.AffineHilbertFixedBaseEnvelope
 public import FLT.Mazur.AffineHilbertFixedBaseInvariants
 public import FLT.Mazur.AffineHilbertFixedBaseJointEffectiveOpen
+public import FLT.Mazur.AffineHilbertFixedBaseJointEtale
 public import FLT.Mazur.AffineHilbertFixedBaseJointFppfOpen
 public import FLT.Mazur.AffineHilbertFixedBaseJointGenericFppf
 public import FLT.Mazur.AffineHilbertFixedBaseJointKernel
@@ -2869,10 +2870,13 @@ public import FLT.Mazur.AffineHilbertMonicKernelGeometry
 public import FLT.Mazur.AffineHilbertMonicModelRelation
 public import FLT.Mazur.AffineHilbertMonicRelationGeometry
 public import FLT.Mazur.AffineHilbertMonicSeedCharts
+public import FLT.Mazur.AffineHilbertMonicSeedFiniteEtale
 public import FLT.Mazur.AffineHilbertMonicSeedKernel
 public import FLT.Mazur.AffineHilbertMonicTranslation
+public import FLT.Mazur.AffineHilbertNestedFiniteEtale
 public import FLT.Mazur.AffineHilbertNestedFiniteKernel
 public import FLT.Mazur.AffineHilbertNestedFiniteModel
+public import FLT.Mazur.AffineHilbertNestedFiniteRelative
 public import FLT.Mazur.AffineHilbertNestedKernel
 public import FLT.Mazur.AffineHilbertNestedRestriction
 public import FLT.Mazur.AffineHilbertNoetherianRelation
@@ -8498,6 +8502,7 @@ public import FLT.Mazur.SchemeCoproductModuleGluing
 public import FLT.Mazur.SchemeCoproductSections
 public import FLT.Mazur.SchemeCrossCoverCocycle
 public import FLT.Mazur.SchemeCrossCoverOverlap
+public import FLT.Mazur.SchemeDenseOpenComparison
 public import FLT.Mazur.SchemeDescentAffineCharts
 public import FLT.Mazur.SchemeDescentCrossCoverCompatibility
 public import FLT.Mazur.SchemeDescentMapLaws
@@ -8507,6 +8512,9 @@ public import FLT.Mazur.SchemeDescentTransportSquares
 public import FLT.Mazur.SchemeDescentTransportTest
 public import FLT.Mazur.SchemeDisjointBaseChange
 public import FLT.Mazur.SchemeEffectiveEpiSections
+public import FLT.Mazur.SchemeEtaleImageDenseModel
+public import FLT.Mazur.SchemeEtaleImageModelBaseChange
+public import FLT.Mazur.SchemeEtaleImageQuotient
 public import FLT.Mazur.SchemeFamilyTripleOverlap
 public import FLT.Mazur.SchemeFiniteGroupAffineDescent
 public import FLT.Mazur.SchemeFiniteGroupDescent
@@ -8684,6 +8692,7 @@ public import FLT.Mazur.SchemeRelationInvariantTestEquality
 public import FLT.Mazur.SchemeRelationIsoInvariants
 public import FLT.Mazur.SchemeRelationJointModel
 public import FLT.Mazur.SchemeRelationJointModelEffective
+public import FLT.Mazur.SchemeRelationJointModelEtaleImage
 public import FLT.Mazur.SchemeRelationJointModelGenericFppf
 public import FLT.Mazur.SchemeRelationJointModelGeometry
 public import FLT.Mazur.SchemeRelationLocalFunctionDescent
