@@ -4157,6 +4157,7 @@ public import FLT.Mazur.EllipticNodeGaloisLabel
 public import FLT.Mazur.EllipticNodeGenericNonsingular
 public import FLT.Mazur.EllipticNodeHenselCoordinates
 public import FLT.Mazur.EllipticNodeHenselGenerator
+public import FLT.Mazur.EllipticNodeInverseResidues
 public import FLT.Mazur.EllipticNodeLabelAdditivity
 public import FLT.Mazur.EllipticNodeLabelBaseChange
 public import FLT.Mazur.EllipticNodeLabelDecode
