@@ -5164,6 +5164,7 @@ public import FLT.Mazur.GroupSchemeBaseChangeEqualityComparison
 public import FLT.Mazur.GroupSchemeBaseChangeProjections
 public import FLT.Mazur.GroupSchemeBaseChangeSections
 public import FLT.Mazur.GroupSchemeBaseIsoTransport
+public import FLT.Mazur.GroupSchemePointAdjunction
 public import FLT.Mazur.GroupSectionBaseChange
 public import FLT.Mazur.GroupTorsionBaseChange
 public import FLT.Mazur.GroupTorsionCommutativeStructure
@@ -6722,6 +6723,8 @@ public import FLT.Mazur.PolygonCompleteCartesianPointDivisor
 public import FLT.Mazur.PolygonCompleteCartesianPointLine
 public import FLT.Mazur.PolygonCompleteCartesianRefinement
 public import FLT.Mazur.PolygonCompleteCartesianRotation
+public import FLT.Mazur.PolygonCompleteChartOperationCompatibility
+public import FLT.Mazur.PolygonCompleteChartOverlapField
 public import FLT.Mazur.PolygonCompleteClassifiedFibers
 public import FLT.Mazur.PolygonCompleteClosedActionRotation
 public import FLT.Mazur.PolygonCompleteClosedCartierGenerator
@@ -6769,6 +6772,9 @@ public import FLT.Mazur.PolygonCompleteFamilyHomExt
 public import FLT.Mazur.PolygonCompleteFiberMarkings
 public import FLT.Mazur.PolygonCompleteFieldH1
 public import FLT.Mazur.PolygonCompleteFixedPointFree
+public import FLT.Mazur.PolygonCompleteGenericChartCompatibility
+public import FLT.Mazur.PolygonCompleteGenericChartEvaluation
+public import FLT.Mazur.PolygonCompleteGenericChartOperations
 public import FLT.Mazur.PolygonCompleteGenericGenus
 public import FLT.Mazur.PolygonCompleteGenericH1
 public import FLT.Mazur.PolygonCompleteGenericMorphismExt
@@ -7009,6 +7015,7 @@ public import FLT.Mazur.PolygonCompleteSmoothFieldMarkedSubgroup
 public import FLT.Mazur.PolygonCompleteSmoothFieldRefinementCurve
 public import FLT.Mazur.PolygonCompleteSmoothFieldSubgroup
 public import FLT.Mazur.PolygonCompleteSmoothFieldTranslation
+public import FLT.Mazur.PolygonCompleteSmoothInversion
 public import FLT.Mazur.PolygonCompleteSmoothIrreducible
 public import FLT.Mazur.PolygonCompleteSmoothPointAffine
 public import FLT.Mazur.PolygonCompleteSmoothRefinement
@@ -7466,6 +7473,7 @@ public import FLT.Mazur.PowerCohomologyScalarMaps
 public import FLT.Mazur.PowerCohomologyShift
 public import FLT.Mazur.PowerScalarSectionCoordinates
 public import FLT.Mazur.PowerSeriesCoefficientTransport
+public import FLT.Mazur.PowerSeriesLaurentGenericOpen
 public import FLT.Mazur.PowerSeriesLeadingComposition
 public import FLT.Mazur.PowerSeriesNilpotentHom
 public import FLT.Mazur.PowerSeriesParameterFlatness
