@@ -4316,6 +4316,7 @@ public import FLT.Mazur.FiniteAffineOpenClosedDescent
 public import FLT.Mazur.FiniteAffineProperIntegerDescent
 public import FLT.Mazur.FiniteAlgebraFiberSurjective
 public import FLT.Mazur.FiniteArrowIntegerModel
+public import FLT.Mazur.FiniteCartierIsomorphismNeighborhood
 public import FLT.Mazur.FiniteCartierLocalizedComparison
 public import FLT.Mazur.FiniteCartierPointFactorization
 public import FLT.Mazur.FiniteCartierQuotientComparison
