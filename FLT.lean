@@ -6920,6 +6920,7 @@ public import FLT.Mazur.PolygonCompletePointOriginPositiveLine
 public import FLT.Mazur.PolygonCompletePointOriginProjIso
 public import FLT.Mazur.PolygonCompletePointOriginReduction
 public import FLT.Mazur.PolygonCompletePointOriginalBaseGroup
+public import FLT.Mazur.PolygonCompletePointOriginalGenericGroup
 public import FLT.Mazur.PolygonCompletePointPointedCubic
 public import FLT.Mazur.PolygonCompletePointPoleFrame
 public import FLT.Mazur.PolygonCompletePointPoleFunctions
