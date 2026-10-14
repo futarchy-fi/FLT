@@ -4042,6 +4042,7 @@ public import FLT.Mazur.EllipticFiniteModificationPointExtension
 public import FLT.Mazur.EllipticFiniteModificationSections
 public import FLT.Mazur.EllipticFiniteModificationSpecialization
 public import FLT.Mazur.EllipticFinitePointBound
+public import FLT.Mazur.EllipticFinitePointSectionAction
 public import FLT.Mazur.EllipticFormalAddition
 public import FLT.Mazur.EllipticFormalAdditionComparison
 public import FLT.Mazur.EllipticFormalAssociativity
