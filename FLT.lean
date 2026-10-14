@@ -6612,6 +6612,7 @@ public import FLT.Mazur.PolygonClosedCubicNonconstant
 public import FLT.Mazur.PolygonClosedCubicOmittedChart
 public import FLT.Mazur.PolygonClosedCubicOmittedConstant
 public import FLT.Mazur.PolygonClosedCubicRetainedLine
+public import FLT.Mazur.PolygonClosedCubicTorus
 public import FLT.Mazur.PolygonClosedEvaluationLifting
 public import FLT.Mazur.PolygonClosedScalarLifting
 public import FLT.Mazur.PolygonCoconeComparison
