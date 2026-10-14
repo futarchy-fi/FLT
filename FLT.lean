@@ -5628,6 +5628,7 @@ public import FLT.Mazur.IteratedQuotientProjection
 public import FLT.Mazur.IteratedQuotientRecovery
 public import FLT.Mazur.IteratedQuotientRepresentatives
 public import FLT.Mazur.IteratedRefinementSquareCriteria
+public import FLT.Mazur.KernelPairEffectiveEtaleBranch
 public import FLT.Mazur.KernelPairEffectiveOpen
 public import FLT.Mazur.KernelPairEffectiveOpenEtale
 public import FLT.Mazur.KernelPairEffectiveUnramified
