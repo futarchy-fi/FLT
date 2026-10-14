@@ -4152,6 +4152,7 @@ public import FLT.Mazur.EllipticNodeComponentInverse
 public import FLT.Mazur.EllipticNodeComponentLabel
 public import FLT.Mazur.EllipticNodeCoordinateFactor
 public import FLT.Mazur.EllipticNodeCoordinateUnique
+public import FLT.Mazur.EllipticNodeCyclicPeriodRoot
 public import FLT.Mazur.EllipticNodeDepthNormalization
 public import FLT.Mazur.EllipticNodeDepthStep
 public import FLT.Mazur.EllipticNodeDifferenceCoordinates
@@ -4198,6 +4199,15 @@ public import FLT.Mazur.EllipticNodeOppositeLabels
 public import FLT.Mazur.EllipticNodeOppositeReductionCharacter
 public import FLT.Mazur.EllipticNodeOppositeSlope
 public import FLT.Mazur.EllipticNodeOppositeSmoothCharacter
+public import FLT.Mazur.EllipticNodeParameterCarryLaw
+public import FLT.Mazur.EllipticNodeParameterEvaluation
+public import FLT.Mazur.EllipticNodeParameterMixedAddition
+public import FLT.Mazur.EllipticNodeParameterMultiples
+public import FLT.Mazur.EllipticNodeParameterSameBranch
+public import FLT.Mazur.EllipticNodeParameterSmoothAddition
+public import FLT.Mazur.EllipticNodeParameterTrivialization
+public import FLT.Mazur.EllipticNodeParameterUnits
+public import FLT.Mazur.EllipticNodePeriodRoot
 public import FLT.Mazur.EllipticNodePointBranches
 public import FLT.Mazur.EllipticNodePointCoordinates
 public import FLT.Mazur.EllipticNodePointDepth
@@ -4211,6 +4221,7 @@ public import FLT.Mazur.EllipticNodeSecantReduction
 public import FLT.Mazur.EllipticNodeSecantSlope
 public import FLT.Mazur.EllipticNodeSecondSumLaurentCharacter
 public import FLT.Mazur.EllipticNodeSmallChangeLabel
+public import FLT.Mazur.EllipticNodeSpecializationEmbedding
 public import FLT.Mazur.EllipticNodeSumDepth
 public import FLT.Mazur.EllipticNodeTangent
 public import FLT.Mazur.EllipticNodeTangentSwap
@@ -4218,6 +4229,7 @@ public import FLT.Mazur.EllipticNodeTangentSwapLabel
 public import FLT.Mazur.EllipticNodeThirdIntersection
 public import FLT.Mazur.EllipticNodeTripleDepth
 public import FLT.Mazur.EllipticNodeTripleLaurentCharacter
+public import FLT.Mazur.EllipticNodeTrivializedSpecialization
 public import FLT.Mazur.EllipticNodeUnequalDepthAddition
 public import FLT.Mazur.EllipticNodeUniformizerLabel
 public import FLT.Mazur.EllipticNodeVariableChangeLabel
