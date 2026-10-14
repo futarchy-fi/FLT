@@ -2800,6 +2800,7 @@ public import FLT.Mazur.AffineHilbertFiniteModelGenericPicard
 public import FLT.Mazur.AffineHilbertFiniteModelImage
 public import FLT.Mazur.AffineHilbertFiniteModelImageRelation
 public import FLT.Mazur.AffineHilbertFiniteModelImageRestriction
+public import FLT.Mazur.AffineHilbertFiniteModelNonsplitSeed
 public import FLT.Mazur.AffineHilbertFiniteModelOrbitSeed
 public import FLT.Mazur.AffineHilbertFiniteModelPrincipalCover
 public import FLT.Mazur.AffineHilbertFiniteModelPrincipalFppf
@@ -2859,6 +2860,7 @@ public import FLT.Mazur.AffineHilbertInvariantPrincipalProduct
 public import FLT.Mazur.AffineHilbertInvariantRelativeUniversal
 public import FLT.Mazur.AffineHilbertInverseFiniteBranches
 public import FLT.Mazur.AffineHilbertJointEtaleNeighborhoods
+public import FLT.Mazur.AffineHilbertJointNonsplitSeed
 public import FLT.Mazur.AffineHilbertJointOrbitSeed
 public import FLT.Mazur.AffineHilbertJointSourceBranch
 public import FLT.Mazur.AffineHilbertJointSplitSeed
@@ -5801,6 +5803,7 @@ public import FLT.Mazur.KernelPairEtaleUnramified
 public import FLT.Mazur.KernelPairGenericBranchInverses
 public import FLT.Mazur.KernelPairGenericEffectiveOpen
 public import FLT.Mazur.KernelPairGenericEtaleCertificates
+public import FLT.Mazur.KernelPairGenericNonsplitSeed
 public import FLT.Mazur.KernelPairGenericOrbitSeed
 public import FLT.Mazur.KernelPairSourceBranchCriterion
 public import FLT.Mazur.KernelPairTestIso
@@ -6841,6 +6844,7 @@ public import FLT.Mazur.PolygonCompleteGenericChartEvaluation
 public import FLT.Mazur.PolygonCompleteGenericChartOperations
 public import FLT.Mazur.PolygonCompleteGenericGenus
 public import FLT.Mazur.PolygonCompleteGenericH1
+public import FLT.Mazur.PolygonCompleteGenericMapIdentity
 public import FLT.Mazur.PolygonCompleteGenericMorphismExt
 public import FLT.Mazur.PolygonCompleteGenericPureDimension
 public import FLT.Mazur.PolygonCompleteGenericRelativeDimension
@@ -6852,11 +6856,19 @@ public import FLT.Mazur.PolygonCompleteGeometricallyReduced
 public import FLT.Mazur.PolygonCompleteH1Rank
 public import FLT.Mazur.PolygonCompleteH1Reduction
 public import FLT.Mazur.PolygonCompleteIdentityActionCartesian
+public import FLT.Mazur.PolygonCompleteIdentityActionMultiplication
+public import FLT.Mazur.PolygonCompleteIdentityActionNodeCover
 public import FLT.Mazur.PolygonCompleteIdentityActionSectionProj
+public import FLT.Mazur.PolygonCompleteIdentityActionSmoothCompatibility
+public import FLT.Mazur.PolygonCompleteIdentityActionSmoothLift
 public import FLT.Mazur.PolygonCompleteIdentityActionTarget
 public import FLT.Mazur.PolygonCompleteIdentityActionUnchangedLift
 public import FLT.Mazur.PolygonCompleteIdentityChartAtlas
 public import FLT.Mazur.PolygonCompleteIdentityChartOperations
+public import FLT.Mazur.PolygonCompleteIdentityMultiplicationCubic
+public import FLT.Mazur.PolygonCompleteIdentitySmoothAction
+public import FLT.Mazur.PolygonCompleteIdentitySmoothActionCoordinates
+public import FLT.Mazur.PolygonCompleteIdentitySmoothActionEquivariance
 public import FLT.Mazur.PolygonCompleteLineCohomology
 public import FLT.Mazur.PolygonCompleteLineHomExt
 public import FLT.Mazur.PolygonCompleteLineHomReconstruction
@@ -8907,6 +8919,7 @@ public import FLT.Mazur.SchemeRelationMonicSeedQuotient
 public import FLT.Mazur.SchemeRelationMonicSeedQuotientCoverage
 public import FLT.Mazur.SchemeRelationMonicSeedSelection
 public import FLT.Mazur.SchemeRelationNestedKernel
+public import FLT.Mazur.SchemeRelationNonsplitSeedKernel
 public import FLT.Mazur.SchemeRelationOpenFunctionDescent
 public import FLT.Mazur.SchemeRelationOpenInvariantRings
 public import FLT.Mazur.SchemeRelationOpenSelectorCoequalization
@@ -8934,6 +8947,10 @@ public import FLT.Mazur.SchemeRelationPrincipalTensorSections
 public import FLT.Mazur.SchemeRelationReanchoring
 public import FLT.Mazur.SchemeRelationRestrictionComposition
 public import FLT.Mazur.SchemeRelationRestrictionRechart
+public import FLT.Mazur.SchemeRelationSeedComparisonSquare
+public import FLT.Mazur.SchemeRelationSeedGenericCriterion
+public import FLT.Mazur.SchemeRelationSeedGenericImage
+public import FLT.Mazur.SchemeRelationSeedKernelTransport
 public import FLT.Mazur.SchemeRelationSeedOrbit
 public import FLT.Mazur.SchemeRelationSeedSelector
 public import FLT.Mazur.SchemeRelationSeedSelectorGeometry
