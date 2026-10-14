@@ -12291,6 +12291,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodeIntersectionFactors
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodeMaps
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodeOrigin
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodePushout
+public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodeSmooth
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleOverlap
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleParameterBranchCharts
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleParameterDescent
