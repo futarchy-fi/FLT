@@ -8681,6 +8681,7 @@ public import FLT.Mazur.SchemeOpenReplacementPreimage
 public import FLT.Mazur.SchemeOpenReplacementProper
 public import FLT.Mazur.SchemeOpenSectionDescent
 public import FLT.Mazur.SchemeOrbitOpenSelection
+public import FLT.Mazur.SchemeOrbitOpenSelectionKernel
 public import FLT.Mazur.SchemeOverlapBaseChange
 public import FLT.Mazur.SchemeOverlapCocycleChart
 public import FLT.Mazur.SchemeOverlapCocycleDetection
