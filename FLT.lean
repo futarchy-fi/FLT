@@ -2754,6 +2754,7 @@ public import FLT.Mazur.AffineHilbertBoundedRelation
 public import FLT.Mazur.AffineHilbertBranchCompositionCoefficients
 public import FLT.Mazur.AffineHilbertCartesianEnvelope
 public import FLT.Mazur.AffineHilbertChangedOrbitOpen
+public import FLT.Mazur.AffineHilbertChangedOrbitSource
 public import FLT.Mazur.AffineHilbertChartRelation
 public import FLT.Mazur.AffineHilbertClosedPatchRefinement
 public import FLT.Mazur.AffineHilbertClosedPatchSource
