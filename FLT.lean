@@ -7452,6 +7452,7 @@ public import FLT.Mazur.PolygonSmoothingLeftPuncture
 public import FLT.Mazur.PolygonSmoothingLocalizedCotangent
 public import FLT.Mazur.PolygonSmoothingMarkedSection
 public import FLT.Mazur.PolygonSmoothingNilpotentBranches
+public import FLT.Mazur.PolygonSmoothingNodeScaling
 public import FLT.Mazur.PolygonSmoothingOverlapGraph
 public import FLT.Mazur.PolygonSmoothingPunctureBaseChange
 public import FLT.Mazur.PolygonSmoothingQuadraticModel
