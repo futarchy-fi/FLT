@@ -6948,7 +6948,9 @@ public import FLT.Mazur.PolygonCompleteNodeModuleFiltration
 public import FLT.Mazur.PolygonCompleteNodeNeighborhood
 public import FLT.Mazur.PolygonCompleteNodeOriginalH1Equiv
 public import FLT.Mazur.PolygonCompleteNodeOriginalSpaceMap
+public import FLT.Mazur.PolygonCompleteNodeReciprocalScaling
 public import FLT.Mazur.PolygonCompleteNodeRelativeDimension
+public import FLT.Mazur.PolygonCompleteNodeScalingSpectra
 public import FLT.Mazur.PolygonCompleteNodeStalkCompletion
 public import FLT.Mazur.PolygonCompleteNodeStalkEvaluation
 public import FLT.Mazur.PolygonCompleteNodeStalkH1Equiv
@@ -7205,6 +7207,8 @@ public import FLT.Mazur.PolygonInfinitesimalMarkings
 public import FLT.Mazur.PolygonInfinitesimalRotation
 public import FLT.Mazur.PolygonInfinitesimalRotationBaseChange
 public import FLT.Mazur.PolygonInfinitesimalRotationDivisor
+public import FLT.Mazur.PolygonInfinitesimalScaling
+public import FLT.Mazur.PolygonInfinitesimalScalingNaturality
 public import FLT.Mazur.PolygonInfinitesimalSectionRings
 public import FLT.Mazur.PolygonInfinitesimalSeparated
 public import FLT.Mazur.PolygonInfinitesimalSpecialDivisor
@@ -7435,6 +7439,7 @@ public import FLT.Mazur.PolygonSmoothingCoefficientBranches
 public import FLT.Mazur.PolygonSmoothingCoefficientSquares
 public import FLT.Mazur.PolygonSmoothingCompletedDifferentials
 public import FLT.Mazur.PolygonSmoothingCompletedFirstCotangent
+public import FLT.Mazur.PolygonSmoothingCompletedScaling
 public import FLT.Mazur.PolygonSmoothingConormalEquiv
 public import FLT.Mazur.PolygonSmoothingConormalMap
 public import FLT.Mazur.PolygonSmoothingCoordinateIdeal
@@ -7452,12 +7457,16 @@ public import FLT.Mazur.PolygonSmoothingLeftPuncture
 public import FLT.Mazur.PolygonSmoothingLocalizedCotangent
 public import FLT.Mazur.PolygonSmoothingMarkedSection
 public import FLT.Mazur.PolygonSmoothingNilpotentBranches
+public import FLT.Mazur.PolygonSmoothingNodeScaling
 public import FLT.Mazur.PolygonSmoothingOverlapGraph
 public import FLT.Mazur.PolygonSmoothingPunctureBaseChange
 public import FLT.Mazur.PolygonSmoothingQuadraticModel
+public import FLT.Mazur.PolygonSmoothingReciprocalScaling
 public import FLT.Mazur.PolygonSmoothingRing
 public import FLT.Mazur.PolygonSmoothingRingMap
 public import FLT.Mazur.PolygonSmoothingRingMapComposition
+public import FLT.Mazur.PolygonSmoothingScalingBranches
+public import FLT.Mazur.PolygonSmoothingScalingNaturality
 public import FLT.Mazur.PolygonSmoothingSingularSupport
 public import FLT.Mazur.PolygonSmoothingSpecialBranches
 public import FLT.Mazur.PolygonSmoothingSpecialFiber
