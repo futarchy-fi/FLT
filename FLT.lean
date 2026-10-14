@@ -10297,6 +10297,7 @@ public import FLT.Mazur.WeierstrassDividedPositiveSplitLocalDescent
 public import FLT.Mazur.WeierstrassDividedPositiveSplitLocalMaps
 public import FLT.Mazur.WeierstrassDividedPositiveSplitNormalizationSurjective
 public import FLT.Mazur.WeierstrassDividedPositiveSplitOriginalSmooth
+public import FLT.Mazur.WeierstrassDividedPositiveSplitPolygonExterior
 public import FLT.Mazur.WeierstrassDividedPositiveSplitPolygonIso
 public import FLT.Mazur.WeierstrassDividedPositiveSplitPushout
 public import FLT.Mazur.WeierstrassDividedPositiveSplitRetainedAdjacent
