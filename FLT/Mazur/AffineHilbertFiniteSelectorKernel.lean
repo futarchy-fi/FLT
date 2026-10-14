@@ -8,7 +8,8 @@ module
 public import FLT.Mazur.AffineHilbertFiniteEnvelopeKernel
 public import FLT.Mazur.AffineHilbertSelectorQuotient
 
-/-!+# Finite original kernels from invariant representatives
+/-!
+# Finite original kernels from invariant representatives
 
 An invariant family of actual original arrows suffices to recover the entire
 finite coefficient kernel. Equality of finite coefficients identifies their
