@@ -6852,6 +6852,7 @@ public import FLT.Mazur.PolygonCompleteIdentityActionNodeCover
 public import FLT.Mazur.PolygonCompleteIdentityActionSectionProj
 public import FLT.Mazur.PolygonCompleteIdentityActionSmoothCompatibility
 public import FLT.Mazur.PolygonCompleteIdentityActionSmoothLift
+public import FLT.Mazur.PolygonCompleteIdentityActionSource
 public import FLT.Mazur.PolygonCompleteIdentityActionTarget
 public import FLT.Mazur.PolygonCompleteIdentityActionUnchangedLift
 public import FLT.Mazur.PolygonCompleteIdentityChartAtlas
