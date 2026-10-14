@@ -6963,6 +6963,7 @@ public import FLT.Mazur.PolygonOneGonContractionBaseChange
 public import FLT.Mazur.PolygonOneGonContractionBaseChangeLine
 public import FLT.Mazur.PolygonOneGonContractionBaseChangePower
 public import FLT.Mazur.PolygonOneGonContractionCartierBaseChange
+public import FLT.Mazur.PolygonOneGonContractionDescent
 public import FLT.Mazur.PolygonOneGonContractionDiagram
 public import FLT.Mazur.PolygonOneGonContractionFiber
 public import FLT.Mazur.PolygonOneGonContractionFiberCharts
