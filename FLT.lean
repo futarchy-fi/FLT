@@ -2784,6 +2784,7 @@ public import FLT.Mazur.AffineHilbertEtaleComposition
 public import FLT.Mazur.AffineHilbertFiniteBranchAtlas
 public import FLT.Mazur.AffineHilbertFiniteBranchInvariants
 public import FLT.Mazur.AffineHilbertFiniteBranches
+public import FLT.Mazur.AffineHilbertFiniteEnvelopeKernel
 public import FLT.Mazur.AffineHilbertFiniteFiberPrincipal
 public import FLT.Mazur.AffineHilbertFiniteFreeGroundBase
 public import FLT.Mazur.AffineHilbertFiniteFullBranchCover
