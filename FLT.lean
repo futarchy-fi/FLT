@@ -2810,6 +2810,7 @@ public import FLT.Mazur.AffineHilbertFixedBaseJointModel
 public import FLT.Mazur.AffineHilbertFixedBaseJointRelative
 public import FLT.Mazur.AffineHilbertFixedBaseJointRetainedOpen
 public import FLT.Mazur.AffineHilbertFixedBaseJointTests
+public import FLT.Mazur.AffineHilbertFixedBaseKernelTransport
 public import FLT.Mazur.AffineHilbertFixedBaseModelEffectiveOpen
 public import FLT.Mazur.AffineHilbertFixedBaseModelKernels
 public import FLT.Mazur.AffineHilbertFixedBaseModelRelationSquare
