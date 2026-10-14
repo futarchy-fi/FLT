@@ -6948,6 +6948,7 @@ public import FLT.Mazur.PolygonCompleteNodeModuleFiltration
 public import FLT.Mazur.PolygonCompleteNodeNeighborhood
 public import FLT.Mazur.PolygonCompleteNodeOriginalH1Equiv
 public import FLT.Mazur.PolygonCompleteNodeOriginalSpaceMap
+public import FLT.Mazur.PolygonCompleteNodeReciprocalScaling
 public import FLT.Mazur.PolygonCompleteNodeRelativeDimension
 public import FLT.Mazur.PolygonCompleteNodeStalkCompletion
 public import FLT.Mazur.PolygonCompleteNodeStalkEvaluation
