@@ -4004,6 +4004,10 @@ public import FLT.Mazur.EllipticAdditiveScalingDepth
 public import FLT.Mazur.EllipticAdditiveStarTranslation
 public import FLT.Mazur.EllipticAdditiveTorsionExclusion
 public import FLT.Mazur.EllipticAdditiveTranslationDepth
+public import FLT.Mazur.EllipticCoefficientModificationSections
+public import FLT.Mazur.EllipticCoefficientSectionNaturality
+public import FLT.Mazur.EllipticCoefficientSmoothSectionGroup
+public import FLT.Mazur.EllipticCoefficientSmoothSections
 public import FLT.Mazur.EllipticCompleteExtensionComparisons
 public import FLT.Mazur.EllipticCompleteExtensionInjections
 public import FLT.Mazur.EllipticCompleteExtensionSpecialization
@@ -4034,6 +4038,9 @@ public import FLT.Mazur.EllipticExtensionClosureRankBound
 public import FLT.Mazur.EllipticExtensionGoodReductionClosure
 public import FLT.Mazur.EllipticExtensionPrimeSubgroup
 public import FLT.Mazur.EllipticExtensionScalingDescent
+public import FLT.Mazur.EllipticFiniteModificationPointExtension
+public import FLT.Mazur.EllipticFiniteModificationSections
+public import FLT.Mazur.EllipticFiniteModificationSpecialization
 public import FLT.Mazur.EllipticFinitePointBound
 public import FLT.Mazur.EllipticFormalAddition
 public import FLT.Mazur.EllipticFormalAdditionComparison
@@ -4180,6 +4187,8 @@ public import FLT.Mazur.EllipticPadicPrimeComponents
 public import FLT.Mazur.EllipticPadicPrimeSemistability
 public import FLT.Mazur.EllipticPadicSpecialization
 public import FLT.Mazur.EllipticPointMapCoordinates
+public import FLT.Mazur.EllipticPositiveSplitSpecialization
+public import FLT.Mazur.EllipticPositiveSplitTorsionSubgroups
 public import FLT.Mazur.EllipticPrimeSubgroupComponents
 public import FLT.Mazur.EllipticPrimeToResidueSpecialization
 public import FLT.Mazur.EllipticPrimeTorsionComponents
@@ -4220,6 +4229,7 @@ public import FLT.Mazur.EllipticSmoothIntegralSection
 public import FLT.Mazur.EllipticSmoothPointChange
 public import FLT.Mazur.EllipticSmoothReduction
 public import FLT.Mazur.EllipticSmoothReductionAddition
+public import FLT.Mazur.EllipticSmoothSectionSpecialization
 public import FLT.Mazur.EllipticSplitDepthModel
 public import FLT.Mazur.EllipticSplitNodalGroup
 public import FLT.Mazur.EllipticSplitNodeAddition
@@ -4233,6 +4243,7 @@ public import FLT.Mazur.EllipticStarTranslationDepth
 public import FLT.Mazur.EllipticStarZeroCoordinates
 public import FLT.Mazur.EllipticStarZeroResidue
 public import FLT.Mazur.EllipticStarZeroSlope
+public import FLT.Mazur.EllipticStrictPositivePolygonSpecialization
 public import FLT.Mazur.EllipticSubgroupAmbientChartPreimage
 public import FLT.Mazur.EllipticSubgroupAmbientClosedImmersion
 public import FLT.Mazur.EllipticSubgroupAmbientMorphism
