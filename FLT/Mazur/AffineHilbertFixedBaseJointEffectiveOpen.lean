@@ -30,7 +30,7 @@ variable {R R' : Type} [CommRing R] [CommRing R']
 local notation "q" => Limits.pullback.snd f a
 set_option backward.defeqAttrib.useBackward true in
 set_option backward.isDefEq.respectTransparency false in
-local instance : SmoothOfRelativeDimension 1 q :=
+local instance fixedBaseJointEffectiveOpenSmooth : SmoothOfRelativeDimension 1 q :=
   MorphismProperty.pullback_snd _ _ inferInstance
 local notation "h" => fixedBaseAmple f a hL
 local notation "c'" => fixedBaseTranslationClass f a V W t c
