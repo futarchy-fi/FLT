@@ -2753,7 +2753,13 @@ public import FLT.Mazur.AffineHilbertAssociativeFiniteBranches
 public import FLT.Mazur.AffineHilbertBoundedRelation
 public import FLT.Mazur.AffineHilbertBranchCompositionCoefficients
 public import FLT.Mazur.AffineHilbertCartesianEnvelope
+public import FLT.Mazur.AffineHilbertChangedAffineFullOrbit
+public import FLT.Mazur.AffineHilbertChangedOpenRelation
+public import FLT.Mazur.AffineHilbertChangedOrbitDescent
+public import FLT.Mazur.AffineHilbertChangedOrbitKernel
 public import FLT.Mazur.AffineHilbertChangedOrbitOpen
+public import FLT.Mazur.AffineHilbertChangedOrbitRelationComparison
+public import FLT.Mazur.AffineHilbertChangedOrbitSource
 public import FLT.Mazur.AffineHilbertChartRelation
 public import FLT.Mazur.AffineHilbertClosedPatchRefinement
 public import FLT.Mazur.AffineHilbertClosedPatchSource
@@ -2840,6 +2846,7 @@ public import FLT.Mazur.AffineHilbertGroundBaseEnvelope
 public import FLT.Mazur.AffineHilbertGroundBaseEnvelopeLift
 public import FLT.Mazur.AffineHilbertGroundBaseFullFiber
 public import FLT.Mazur.AffineHilbertGroundBaseSource
+public import FLT.Mazur.AffineHilbertGroundKernelRestriction
 public import FLT.Mazur.AffineHilbertGroundRelativeCoverage
 public import FLT.Mazur.AffineHilbertGroundRelativeEtale
 public import FLT.Mazur.AffineHilbertInvariantAffineModel
@@ -2894,6 +2901,8 @@ public import FLT.Mazur.AffineHilbertNestedFiniteRelative
 public import FLT.Mazur.AffineHilbertNestedKernel
 public import FLT.Mazur.AffineHilbertNestedRestriction
 public import FLT.Mazur.AffineHilbertNoetherianRelation
+public import FLT.Mazur.AffineHilbertOriginalOrbitAtlas
+public import FLT.Mazur.AffineHilbertOriginalOrbitModel
 public import FLT.Mazur.AffineHilbertOriginalPrincipalInvariants
 public import FLT.Mazur.AffineHilbertPrincipalInvariants
 public import FLT.Mazur.AffineHilbertPrincipalTensorModel
@@ -4046,8 +4055,14 @@ public import FLT.Mazur.EllipticFiniteMiddleSpecialization
 public import FLT.Mazur.EllipticFiniteModificationPointExtension
 public import FLT.Mazur.EllipticFiniteModificationSections
 public import FLT.Mazur.EllipticFiniteModificationSpecialization
+public import FLT.Mazur.EllipticFiniteNodeBoundarySection
+public import FLT.Mazur.EllipticFiniteOddSpecialization
 public import FLT.Mazur.EllipticFinitePointBound
 public import FLT.Mazur.EllipticFinitePointSectionAction
+public import FLT.Mazur.EllipticFiniteResolvedSpecialization
+public import FLT.Mazur.EllipticFiniteRetainedNodeSection
+public import FLT.Mazur.EllipticFiniteRetainedSmoothSpecialization
+public import FLT.Mazur.EllipticFiniteRetainedSpecialization
 public import FLT.Mazur.EllipticFormalAddition
 public import FLT.Mazur.EllipticFormalAdditionComparison
 public import FLT.Mazur.EllipticFormalAssociativity
@@ -4211,6 +4226,7 @@ public import FLT.Mazur.EllipticReductionRelation
 public import FLT.Mazur.EllipticReductionTranslation
 public import FLT.Mazur.EllipticRepeatedCubicPoint
 public import FLT.Mazur.EllipticRepeatedCubicTranslation
+public import FLT.Mazur.EllipticResolvedSmoothPoint
 public import FLT.Mazur.EllipticScaledTorsionReduction
 public import FLT.Mazur.EllipticScalingSmoothTorsion
 public import FLT.Mazur.EllipticSectionSpecialFiber
@@ -8775,6 +8791,7 @@ public import FLT.Mazur.SchemeReducedRelativeSections
 public import FLT.Mazur.SchemeReducedSectionDetection
 public import FLT.Mazur.SchemeReducedStructureSheaf
 public import FLT.Mazur.SchemeRefinementReconstruction
+public import FLT.Mazur.SchemeRelationArrowTransport
 public import FLT.Mazur.SchemeRelationDoubleRestriction
 public import FLT.Mazur.SchemeRelationEtaleBranchPropagation
 public import FLT.Mazur.SchemeRelationFunctionDescent
@@ -8805,11 +8822,15 @@ public import FLT.Mazur.SchemeRelationMonicSeedQuotientCoverage
 public import FLT.Mazur.SchemeRelationMonicSeedSelection
 public import FLT.Mazur.SchemeRelationOpenFunctionDescent
 public import FLT.Mazur.SchemeRelationOpenInvariantRings
+public import FLT.Mazur.SchemeRelationOrbitAtlas
+public import FLT.Mazur.SchemeRelationOrbitAtlasDescent
+public import FLT.Mazur.SchemeRelationOrbitAtlasKernel
 public import FLT.Mazur.SchemeRelationOverRestriction
 public import FLT.Mazur.SchemeRelationPrincipalFullInvariants
 public import FLT.Mazur.SchemeRelationPrincipalLocalization
 public import FLT.Mazur.SchemeRelationPrincipalSpectrum
 public import FLT.Mazur.SchemeRelationPrincipalTensorSections
+public import FLT.Mazur.SchemeRelationReanchoring
 public import FLT.Mazur.SchemeRelationRestrictionComposition
 public import FLT.Mazur.SchemeRelationRestrictionRechart
 public import FLT.Mazur.SchemeRelationSeedOrbit
@@ -10152,6 +10173,7 @@ public import FLT.Mazur.WeierstrassDilatationFractionMap
 public import FLT.Mazur.WeierstrassDilatationGenerators
 public import FLT.Mazur.WeierstrassDilatationGenericFiber
 public import FLT.Mazur.WeierstrassDilatationHorizontalCongruence
+public import FLT.Mazur.WeierstrassDilatationHorizontalSmooth
 public import FLT.Mazur.WeierstrassDilatationLaurentPointCharacters
 public import FLT.Mazur.WeierstrassDilatationLifting
 public import FLT.Mazur.WeierstrassDilatationLocalization
@@ -10172,6 +10194,7 @@ public import FLT.Mazur.WeierstrassDilatationShear
 public import FLT.Mazur.WeierstrassDilatationShearHorizontal
 public import FLT.Mazur.WeierstrassDilatationShearLaurentNormalForm
 public import FLT.Mazur.WeierstrassDilatationShearNodeNormalForm
+public import FLT.Mazur.WeierstrassDilatationTerminalSectionBranches
 public import FLT.Mazur.WeierstrassDilatationTerminalSections
 public import FLT.Mazur.WeierstrassDilatationUnitComparison
 public import FLT.Mazur.WeierstrassDilatationZeroResidue
