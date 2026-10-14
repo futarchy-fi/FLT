@@ -3424,6 +3424,7 @@ public import FLT.Mazur.CartesianCoefficientSymmetry
 public import FLT.Mazur.CartesianCoefficientTransport
 public import FLT.Mazur.CartesianCoefficientTransportKernelPair
 public import FLT.Mazur.CartesianCoefficientTransportNaturality
+public import FLT.Mazur.CartesianFiniteFibers
 public import FLT.Mazur.CartesianHomMarkingParameter
 public import FLT.Mazur.CartesianIdentityFactorization
 public import FLT.Mazur.CartesianIdentityFiniteNeighborhood
@@ -6618,6 +6619,8 @@ public import FLT.Mazur.PolygonClosedCubicNonconstant
 public import FLT.Mazur.PolygonClosedCubicOmittedChart
 public import FLT.Mazur.PolygonClosedCubicOmittedConstant
 public import FLT.Mazur.PolygonClosedCubicRetainedLine
+public import FLT.Mazur.PolygonClosedCubicSmoothTorus
+public import FLT.Mazur.PolygonClosedCubicTorus
 public import FLT.Mazur.PolygonClosedEvaluationLifting
 public import FLT.Mazur.PolygonClosedScalarLifting
 public import FLT.Mazur.PolygonCoconeComparison
@@ -6848,6 +6851,7 @@ public import FLT.Mazur.PolygonCompletePointFirstOrderOpen
 public import FLT.Mazur.PolygonCompletePointFunctionDimensions
 public import FLT.Mazur.PolygonCompletePointFunctionNumerators
 public import FLT.Mazur.PolygonCompletePointGenericCubicIso
+public import FLT.Mazur.PolygonCompletePointGenericNeighborhood
 public import FLT.Mazur.PolygonCompletePointGlobalFunctions
 public import FLT.Mazur.PolygonCompletePointHigherMonomials
 public import FLT.Mazur.PolygonCompletePointHomogeneousEquation
@@ -6855,8 +6859,10 @@ public import FLT.Mazur.PolygonCompletePointIdentityAffine
 public import FLT.Mazur.PolygonCompletePointIdentityAffineMarking
 public import FLT.Mazur.PolygonCompletePointIdentityAffineQuotient
 public import FLT.Mazur.PolygonCompletePointIdentityBaseChange
+public import FLT.Mazur.PolygonCompletePointIdentityClosedTorus
 public import FLT.Mazur.PolygonCompletePointIdentityEquation
 public import FLT.Mazur.PolygonCompletePointIdentityFinite
+public import FLT.Mazur.PolygonCompletePointIdentityGroup
 public import FLT.Mazur.PolygonCompletePointIdentityLocalIso
 public import FLT.Mazur.PolygonCompletePointIdentityNeighborhoodIso
 public import FLT.Mazur.PolygonCompletePointIdentityNoetherian
@@ -6910,14 +6916,17 @@ public import FLT.Mazur.PolygonCompletePointRelativeAffinization
 public import FLT.Mazur.PolygonCompletePointRelativeCoordinateRing
 public import FLT.Mazur.PolygonCompletePointRelativeCoordinateSurjective
 public import FLT.Mazur.PolygonCompletePointRelativeUniversal
+public import FLT.Mazur.PolygonCompletePointResidueNeighborhood
 public import FLT.Mazur.PolygonCompletePointSectionBaseAlgebra
 public import FLT.Mazur.PolygonCompletePointSectionBaseChange
 public import FLT.Mazur.PolygonCompletePointSectionFree
 public import FLT.Mazur.PolygonCompletePointSectionProjIso
 public import FLT.Mazur.PolygonCompletePointSectionRank
 public import FLT.Mazur.PolygonCompletePointSectionRingIso
+public import FLT.Mazur.PolygonCompletePointSmoothIso
 public import FLT.Mazur.PolygonCompletePointSpecifiedBasis
 public import FLT.Mazur.PolygonCompletePointSurjective
+public import FLT.Mazur.PolygonCompletePointTorusNeighborhood
 public import FLT.Mazur.PolygonCompletePointWeierstrassEquation
 public import FLT.Mazur.PolygonCompletePrincipalClosedFiber
 public import FLT.Mazur.PolygonCompleteProjectiveRotation
@@ -7686,6 +7695,7 @@ public import FLT.Mazur.ProjectiveLineCharts
 public import FLT.Mazur.ProjectiveLineCoefficientEndpoints
 public import FLT.Mazur.ProjectiveLineCoefficientMap
 public import FLT.Mazur.ProjectiveLineCohomologyVanishing
+public import FLT.Mazur.ProjectiveLineCompanionSlopeTranslation
 public import FLT.Mazur.ProjectiveLineConstantSections
 public import FLT.Mazur.ProjectiveLineEndpointCover
 public import FLT.Mazur.ProjectiveLineEndpointReversal
@@ -7903,6 +7913,7 @@ public import FLT.Mazur.ProperFiberTensorComplex
 public import FLT.Mazur.ProperFieldCohomologyBaseChange
 public import FLT.Mazur.ProperFiniteFiberNeighborhood
 public import FLT.Mazur.ProperFinitePresentationEnvelope
+public import FLT.Mazur.ProperFunctionSheafIso
 public import FLT.Mazur.ProperFunctionSheafSurjective
 public import FLT.Mazur.ProperGeometricAcyclicDirectImage
 public import FLT.Mazur.ProperGeometricRankOneOpen
@@ -9601,6 +9612,9 @@ public import FLT.Mazur.WeierstrassCoefficientShearInitialBoundaryDescent
 public import FLT.Mazur.WeierstrassCoefficientShearInitialBoundaryGeometry
 public import FLT.Mazur.WeierstrassCoefficientShearInitialBoundaryHomExt
 public import FLT.Mazur.WeierstrassCoefficientShearInitialBoundaryParameter
+public import FLT.Mazur.WeierstrassCoefficientShearInitialCompleteNormalization
+public import FLT.Mazur.WeierstrassCoefficientShearInitialCompleteOriginal
+public import FLT.Mazur.WeierstrassCoefficientShearInitialCompleteRootChange
 public import FLT.Mazur.WeierstrassCoefficientShearInitialComponents
 public import FLT.Mazur.WeierstrassCoefficientShearInitialConicBoundaryAlgebra
 public import FLT.Mazur.WeierstrassCoefficientShearInitialConicProjection
@@ -9617,6 +9631,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearInitialLineBoundary
 public import FLT.Mazur.WeierstrassCoefficientShearInitialLineContraction
 public import FLT.Mazur.WeierstrassCoefficientShearInitialLineOrigins
 public import FLT.Mazur.WeierstrassCoefficientShearInitialLineProjection
+public import FLT.Mazur.WeierstrassCoefficientShearInitialLineRootChange
 public import FLT.Mazur.WeierstrassCoefficientShearInitialParameterSpecialization
 public import FLT.Mazur.WeierstrassCoefficientShearInitialProjectiveDescent
 public import FLT.Mazur.WeierstrassCoefficientShearInitialRetainedSmooth
@@ -9929,12 +9944,18 @@ public import FLT.Mazur.WeierstrassCoefficientShearRootPositiveNormalization
 public import FLT.Mazur.WeierstrassCoefficientShearRootPositivePinching
 public import FLT.Mazur.WeierstrassCoefficientShearRootPositiveReflection
 public import FLT.Mazur.WeierstrassCoefficientShearRootStrictPositiveBranches
+public import FLT.Mazur.WeierstrassCoefficientShearRootStrictPositiveCechCoordinates
 public import FLT.Mazur.WeierstrassCoefficientShearRootStrictPositiveCoordinateComponents
 public import FLT.Mazur.WeierstrassCoefficientShearRootStrictPositiveCoordinates
 public import FLT.Mazur.WeierstrassCoefficientShearRootStrictPositiveCycle
+public import FLT.Mazur.WeierstrassCoefficientShearRootStrictPositiveExteriorCoordinates
+public import FLT.Mazur.WeierstrassCoefficientShearRootStrictPositiveInitialCoordinates
+public import FLT.Mazur.WeierstrassCoefficientShearRootStrictPositiveInitialRootChange
 public import FLT.Mazur.WeierstrassCoefficientShearRootStrictPositiveNormalization
 public import FLT.Mazur.WeierstrassCoefficientShearRootStrictPositivePinching
 public import FLT.Mazur.WeierstrassCoefficientShearRootStrictPositiveReflection
+public import FLT.Mazur.WeierstrassCoefficientShearRootStrictPositiveRetainedCoordinates
+public import FLT.Mazur.WeierstrassCoefficientShearRootStrictPositiveRetainedRootChange
 public import FLT.Mazur.WeierstrassCoefficientShearRootStrictPositiveTangentCoordinates
 public import FLT.Mazur.WeierstrassCoefficientShearRootStrictPositiveTerminalCoordinates
 public import FLT.Mazur.WeierstrassCoefficientShearRootTerminalComponents
