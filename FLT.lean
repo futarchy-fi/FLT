@@ -6703,6 +6703,7 @@ public import FLT.Mazur.PolygonCompletePointIdentityFinite
 public import FLT.Mazur.PolygonCompletePointIdentityLocalIso
 public import FLT.Mazur.PolygonCompletePointIdentityNeighborhoodIso
 public import FLT.Mazur.PolygonCompletePointIdentityNoetherian
+public import FLT.Mazur.PolygonCompletePointIdentityOpenSquare
 public import FLT.Mazur.PolygonCompletePointIdentityPrincipal
 public import FLT.Mazur.PolygonCompletePointInfinity
 public import FLT.Mazur.PolygonCompletePointIntegralCubic
