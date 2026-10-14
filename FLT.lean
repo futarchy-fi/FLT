@@ -5994,6 +5994,7 @@ public import FLT.Mazur.MonicIdealNormalForms
 public import FLT.Mazur.MonoFamilySchemeGluing
 public import FLT.Mazur.MonoidalActionSpecialization
 public import FLT.Mazur.MonomorphismCoefficientEffectiveOpen
+public import FLT.Mazur.MonomorphismFiniteEtaleInverse
 public import FLT.Mazur.MonomorphismFlatInverseImage
 public import FLT.Mazur.MonomorphismFppfImage
 public import FLT.Mazur.MonomorphismGenericInversePatches
