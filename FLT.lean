@@ -6709,6 +6709,7 @@ public import FLT.Mazur.PolygonCompletePointOriginIdeal
 public import FLT.Mazur.PolygonCompletePointOriginIdealEquality
 public import FLT.Mazur.PolygonCompletePointOriginNeighborhood
 public import FLT.Mazur.PolygonCompletePointOriginParameter
+public import FLT.Mazur.PolygonCompletePointOriginParameterRegular
 public import FLT.Mazur.PolygonCompletePointOriginParameterRestriction
 public import FLT.Mazur.PolygonCompletePointOriginPositiveLine
 public import FLT.Mazur.PolygonCompletePointOriginReduction
