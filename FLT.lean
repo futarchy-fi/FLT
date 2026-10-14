@@ -8869,6 +8869,7 @@ public import FLT.Mazur.SchemeRelationOpenSelectorGround
 public import FLT.Mazur.SchemeRelationOpenSelectorOverlap
 public import FLT.Mazur.SchemeRelationOpenSelectorProjection
 public import FLT.Mazur.SchemeRelationOpenSelectorRestriction
+public import FLT.Mazur.SchemeRelationOpenSelectorTestCharts
 public import FLT.Mazur.SchemeRelationOrbitAtlas
 public import FLT.Mazur.SchemeRelationOrbitAtlasDescent
 public import FLT.Mazur.SchemeRelationOrbitAtlasKernel
