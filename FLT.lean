@@ -2800,6 +2800,7 @@ public import FLT.Mazur.AffineHilbertFiniteModelGenericPicard
 public import FLT.Mazur.AffineHilbertFiniteModelImage
 public import FLT.Mazur.AffineHilbertFiniteModelImageRelation
 public import FLT.Mazur.AffineHilbertFiniteModelImageRestriction
+public import FLT.Mazur.AffineHilbertFiniteModelNonsplitSeed
 public import FLT.Mazur.AffineHilbertFiniteModelOrbitSeed
 public import FLT.Mazur.AffineHilbertFiniteModelPrincipalCover
 public import FLT.Mazur.AffineHilbertFiniteModelPrincipalFppf
@@ -2859,6 +2860,7 @@ public import FLT.Mazur.AffineHilbertInvariantPrincipalProduct
 public import FLT.Mazur.AffineHilbertInvariantRelativeUniversal
 public import FLT.Mazur.AffineHilbertInverseFiniteBranches
 public import FLT.Mazur.AffineHilbertJointEtaleNeighborhoods
+public import FLT.Mazur.AffineHilbertJointNonsplitSeed
 public import FLT.Mazur.AffineHilbertJointOrbitSeed
 public import FLT.Mazur.AffineHilbertJointSourceBranch
 public import FLT.Mazur.AffineHilbertJointSplitSeed
@@ -5797,6 +5799,7 @@ public import FLT.Mazur.KernelPairEtaleUnramified
 public import FLT.Mazur.KernelPairGenericBranchInverses
 public import FLT.Mazur.KernelPairGenericEffectiveOpen
 public import FLT.Mazur.KernelPairGenericEtaleCertificates
+public import FLT.Mazur.KernelPairGenericNonsplitSeed
 public import FLT.Mazur.KernelPairGenericOrbitSeed
 public import FLT.Mazur.KernelPairSourceBranchCriterion
 public import FLT.Mazur.KernelPairTestIso
@@ -8909,6 +8912,7 @@ public import FLT.Mazur.SchemeRelationMonicSeedQuotient
 public import FLT.Mazur.SchemeRelationMonicSeedQuotientCoverage
 public import FLT.Mazur.SchemeRelationMonicSeedSelection
 public import FLT.Mazur.SchemeRelationNestedKernel
+public import FLT.Mazur.SchemeRelationNonsplitSeedKernel
 public import FLT.Mazur.SchemeRelationOpenFunctionDescent
 public import FLT.Mazur.SchemeRelationOpenInvariantRings
 public import FLT.Mazur.SchemeRelationOpenSelectorCoequalization
@@ -8936,6 +8940,10 @@ public import FLT.Mazur.SchemeRelationPrincipalTensorSections
 public import FLT.Mazur.SchemeRelationReanchoring
 public import FLT.Mazur.SchemeRelationRestrictionComposition
 public import FLT.Mazur.SchemeRelationRestrictionRechart
+public import FLT.Mazur.SchemeRelationSeedComparisonSquare
+public import FLT.Mazur.SchemeRelationSeedGenericCriterion
+public import FLT.Mazur.SchemeRelationSeedGenericImage
+public import FLT.Mazur.SchemeRelationSeedKernelTransport
 public import FLT.Mazur.SchemeRelationSeedOrbit
 public import FLT.Mazur.SchemeRelationSeedSelector
 public import FLT.Mazur.SchemeRelationSeedSelectorGeometry
