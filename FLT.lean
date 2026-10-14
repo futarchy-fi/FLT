@@ -4051,16 +4051,21 @@ public import FLT.Mazur.EllipticExtensionScalingDescent
 public import FLT.Mazur.EllipticFiniteCoefficientPointSection
 public import FLT.Mazur.EllipticFiniteDividedPointSection
 public import FLT.Mazur.EllipticFiniteDividedSpecialization
+public import FLT.Mazur.EllipticFiniteMiddleLaurentCharacter
 public import FLT.Mazur.EllipticFiniteMiddleSpecialization
 public import FLT.Mazur.EllipticFiniteModificationPointExtension
 public import FLT.Mazur.EllipticFiniteModificationSections
 public import FLT.Mazur.EllipticFiniteModificationSpecialization
 public import FLT.Mazur.EllipticFiniteNodeBoundarySection
+public import FLT.Mazur.EllipticFiniteNodeBranchLabels
+public import FLT.Mazur.EllipticFiniteNodeLaurentSpecialization
 public import FLT.Mazur.EllipticFiniteOddSpecialization
 public import FLT.Mazur.EllipticFinitePointBound
 public import FLT.Mazur.EllipticFinitePointSectionAction
 public import FLT.Mazur.EllipticFiniteResolvedSpecialization
+public import FLT.Mazur.EllipticFiniteRetainedLaurentEquality
 public import FLT.Mazur.EllipticFiniteRetainedNodeSection
+public import FLT.Mazur.EllipticFiniteRetainedPointEquality
 public import FLT.Mazur.EllipticFiniteRetainedSmoothSpecialization
 public import FLT.Mazur.EllipticFiniteRetainedSpecialization
 public import FLT.Mazur.EllipticFormalAddition
@@ -4226,6 +4231,7 @@ public import FLT.Mazur.EllipticReductionRelation
 public import FLT.Mazur.EllipticReductionTranslation
 public import FLT.Mazur.EllipticRepeatedCubicPoint
 public import FLT.Mazur.EllipticRepeatedCubicTranslation
+public import FLT.Mazur.EllipticResolvedLaurentEquality
 public import FLT.Mazur.EllipticResolvedSmoothPoint
 public import FLT.Mazur.EllipticScaledTorsionReduction
 public import FLT.Mazur.EllipticScalingSmoothTorsion
@@ -7152,6 +7158,7 @@ public import FLT.Mazur.PolygonNodeEqualizer
 public import FLT.Mazur.PolygonNodeEqualizerComparison
 public import FLT.Mazur.PolygonNodeEvaluation
 public import FLT.Mazur.PolygonNodeIncidence
+public import FLT.Mazur.PolygonNodeLaurentPoints
 public import FLT.Mazur.PolygonNodeLocalization
 public import FLT.Mazur.PolygonNodeLocus
 public import FLT.Mazur.PolygonNodeNeighborhoodScalars
@@ -10165,6 +10172,7 @@ public import FLT.Mazur.WeierstrassDilatationFractionMap
 public import FLT.Mazur.WeierstrassDilatationGenerators
 public import FLT.Mazur.WeierstrassDilatationGenericFiber
 public import FLT.Mazur.WeierstrassDilatationHorizontalCongruence
+public import FLT.Mazur.WeierstrassDilatationHorizontalPointExt
 public import FLT.Mazur.WeierstrassDilatationHorizontalSmooth
 public import FLT.Mazur.WeierstrassDilatationLaurentPointCharacters
 public import FLT.Mazur.WeierstrassDilatationLifting
@@ -10182,6 +10190,7 @@ public import FLT.Mazur.WeierstrassDilatationResidueGeometry
 public import FLT.Mazur.WeierstrassDilatationResidueLaurent
 public import FLT.Mazur.WeierstrassDilatationResidueRetained
 public import FLT.Mazur.WeierstrassDilatationSaturation
+public import FLT.Mazur.WeierstrassDilatationSectionNodeCoordinates
 public import FLT.Mazur.WeierstrassDilatationShear
 public import FLT.Mazur.WeierstrassDilatationShearHorizontal
 public import FLT.Mazur.WeierstrassDilatationShearLaurentNormalForm
