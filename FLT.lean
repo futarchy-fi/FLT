@@ -2926,6 +2926,7 @@ public import FLT.Mazur.AffineHilbertTranslationSourceCartesian
 public import FLT.Mazur.AffineHilbertTranslationSourceCoefficients
 public import FLT.Mazur.AffineHilbertTranslationSourceCover
 public import FLT.Mazur.AffineHilbertTripleComposition
+public import FLT.Mazur.AffineHilbertUnramifiedSplitOrbits
 public import FLT.Mazur.AffineIdealContainment
 public import FLT.Mazur.AffineIdealCoordinates
 public import FLT.Mazur.AffineIdealPowerExtension
@@ -8763,6 +8764,11 @@ public import FLT.Mazur.SchemeRelationPrincipalTensorSections
 public import FLT.Mazur.SchemeRelationRestrictionComposition
 public import FLT.Mazur.SchemeRelationRestrictionRechart
 public import FLT.Mazur.SchemeRelationSeedOrbit
+public import FLT.Mazur.SchemeRelationSplitOrbit
+public import FLT.Mazur.SchemeRelationSplitOrbitAffineSeed
+public import FLT.Mazur.SchemeRelationSplitOrbitKernel
+public import FLT.Mazur.SchemeRelationSplitOrbitOpen
+public import FLT.Mazur.SchemeRelationSplitOrbitQuotient
 public import FLT.Mazur.SchemeRelationTensorAlgebra
 public import FLT.Mazur.SchemeRelationTensorCocycle
 public import FLT.Mazur.SchemeRelationTensorCoordinates
@@ -8776,6 +8782,7 @@ public import FLT.Mazur.SchemeSectionTransportNaturality
 public import FLT.Mazur.SchemeSmoothLocusQuotient
 public import FLT.Mazur.SchemeSourceTestOverlapRecognition
 public import FLT.Mazur.SchemeSplitEtaleSourceSeed
+public import FLT.Mazur.SchemeSplitUnramifiedSourceSeed
 public import FLT.Mazur.SchemeTranslationNormFiber
 public import FLT.Mazur.SchemeTranslationNormGluing
 public import FLT.Mazur.SchemeTranslationNormLocal
