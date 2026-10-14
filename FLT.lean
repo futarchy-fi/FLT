@@ -8867,6 +8867,7 @@ public import FLT.Mazur.SchemeRelationOpenSelectorDiagram
 public import FLT.Mazur.SchemeRelationOpenSelectorFibers
 public import FLT.Mazur.SchemeRelationOpenSelectorGluing
 public import FLT.Mazur.SchemeRelationOpenSelectorGround
+public import FLT.Mazur.SchemeRelationOpenSelectorInvariant
 public import FLT.Mazur.SchemeRelationOpenSelectorKernel
 public import FLT.Mazur.SchemeRelationOpenSelectorKernelArrow
 public import FLT.Mazur.SchemeRelationOpenSelectorOverlap
