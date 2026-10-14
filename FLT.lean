@@ -4054,6 +4054,7 @@ public import FLT.Mazur.EllipticExtensionScalingDescent
 public import FLT.Mazur.EllipticFiniteCoefficientPointSection
 public import FLT.Mazur.EllipticFiniteDividedPointSection
 public import FLT.Mazur.EllipticFiniteDividedSpecialization
+public import FLT.Mazur.EllipticFiniteEarlierNodeEquality
 public import FLT.Mazur.EllipticFiniteEarlierNodeSection
 public import FLT.Mazur.EllipticFiniteMiddleLaurentCharacter
 public import FLT.Mazur.EllipticFiniteMiddleSpecialization
