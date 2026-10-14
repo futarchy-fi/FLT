@@ -8332,6 +8332,7 @@ public import FLT.Mazur.SchemeFiniteGroupQuotientOpenImmersion
 public import FLT.Mazur.SchemeFiniteGroupQuotientOrbits
 public import FLT.Mazur.SchemeFlatFamilyReflection
 public import FLT.Mazur.SchemeFlatProductDensity
+public import FLT.Mazur.SchemeFlatTargetNeighborhood
 public import FLT.Mazur.SchemeFlatTargetOpen
 public import FLT.Mazur.SchemeFppfCanonicalPairRecovery
 public import FLT.Mazur.SchemeFppfCoverInvariantFunctions
