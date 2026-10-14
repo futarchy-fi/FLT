@@ -7243,6 +7243,7 @@ public import FLT.Mazur.PolygonInfinitesimalStageRestriction
 public import FLT.Mazur.PolygonInfinitesimalStageRotation
 public import FLT.Mazur.PolygonInfinitesimalStages
 public import FLT.Mazur.PolygonInfinitesimalSystem
+public import FLT.Mazur.PolygonInfinitesimalUniversalEdges
 public import FLT.Mazur.PolygonInfinitesimalUniversalNaturality
 public import FLT.Mazur.PolygonInfinitesimalUniversalScaling
 public import FLT.Mazur.PolygonLineHZero
