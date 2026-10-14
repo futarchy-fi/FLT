@@ -2785,6 +2785,7 @@ public import FLT.Mazur.AffineHilbertFiniteKernelEquations
 public import FLT.Mazur.AffineHilbertFiniteKernelModel
 public import FLT.Mazur.AffineHilbertFiniteModelFlatStratum
 public import FLT.Mazur.AffineHilbertFiniteModelGenericFppf
+public import FLT.Mazur.AffineHilbertFiniteModelGenericPicard
 public import FLT.Mazur.AffineHilbertFiniteModelImage
 public import FLT.Mazur.AffineHilbertFiniteModelImageRelation
 public import FLT.Mazur.AffineHilbertFiniteModelImageRestriction
