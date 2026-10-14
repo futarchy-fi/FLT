@@ -7115,6 +7115,7 @@ public import FLT.Mazur.PolygonCompleteSmoothProductCover
 public import FLT.Mazur.PolygonCompleteSmoothRefinement
 public import FLT.Mazur.PolygonCompleteSmoothRotation
 public import FLT.Mazur.PolygonCompleteSmoothTripleCover
+public import FLT.Mazur.PolygonCompleteStageClosedCompatibility
 public import FLT.Mazur.PolygonCompleteStageMarkings
 public import FLT.Mazur.PolygonCompleteStageRotation
 public import FLT.Mazur.PolygonCompleteStructureCohomology
