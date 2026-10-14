@@ -8821,6 +8821,7 @@ public import FLT.Mazur.SchemeRelationOpenInvariantRings
 public import FLT.Mazur.SchemeRelationOrbitAtlas
 public import FLT.Mazur.SchemeRelationOrbitAtlasDescent
 public import FLT.Mazur.SchemeRelationOrbitAtlasKernel
+public import FLT.Mazur.SchemeRelationOrbitOpenModel
 public import FLT.Mazur.SchemeRelationOverRestriction
 public import FLT.Mazur.SchemeRelationPrincipalFullInvariants
 public import FLT.Mazur.SchemeRelationPrincipalLocalization
