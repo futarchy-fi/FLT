@@ -6687,6 +6687,7 @@ public import FLT.Mazur.PolygonCompletePointPowerComparison
 public import FLT.Mazur.PolygonCompletePointPowerVanishing
 public import FLT.Mazur.PolygonCompletePointProjectiveExtension
 public import FLT.Mazur.PolygonCompletePointProjectiveIso
+public import FLT.Mazur.PolygonCompletePointProjectiveSections
 public import FLT.Mazur.PolygonCompletePointPushforwardLine
 public import FLT.Mazur.PolygonCompletePointSectionBaseChange
 public import FLT.Mazur.PolygonCompletePointSectionFree
