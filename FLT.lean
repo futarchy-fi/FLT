@@ -2876,6 +2876,7 @@ public import FLT.Mazur.AffineHilbertMonicTranslation
 public import FLT.Mazur.AffineHilbertNestedFiniteEtale
 public import FLT.Mazur.AffineHilbertNestedFiniteKernel
 public import FLT.Mazur.AffineHilbertNestedFiniteModel
+public import FLT.Mazur.AffineHilbertNestedFiniteRelative
 public import FLT.Mazur.AffineHilbertNestedKernel
 public import FLT.Mazur.AffineHilbertNestedRestriction
 public import FLT.Mazur.AffineHilbertNoetherianRelation
