@@ -2868,7 +2868,12 @@ public import FLT.Mazur.AffineHilbertModelSourceBranchCoverage
 public import FLT.Mazur.AffineHilbertMonicKernelGeometry
 public import FLT.Mazur.AffineHilbertMonicModelRelation
 public import FLT.Mazur.AffineHilbertMonicRelationGeometry
+public import FLT.Mazur.AffineHilbertMonicSeedCharts
+public import FLT.Mazur.AffineHilbertMonicSeedKernel
 public import FLT.Mazur.AffineHilbertMonicTranslation
+public import FLT.Mazur.AffineHilbertNestedFiniteKernel
+public import FLT.Mazur.AffineHilbertNestedFiniteModel
+public import FLT.Mazur.AffineHilbertNestedKernel
 public import FLT.Mazur.AffineHilbertNestedRestriction
 public import FLT.Mazur.AffineHilbertNoetherianRelation
 public import FLT.Mazur.AffineHilbertOriginalPrincipalInvariants
@@ -6787,6 +6792,7 @@ public import FLT.Mazur.PolygonCompleteNodeStalkMap
 public import FLT.Mazur.PolygonCompleteOriginalSectionReconstruction
 public import FLT.Mazur.PolygonCompletePointAcyclic
 public import FLT.Mazur.PolygonCompletePointAffineMorphism
+public import FLT.Mazur.PolygonCompletePointAllPoleBasis
 public import FLT.Mazur.PolygonCompletePointCanonicalBasis
 public import FLT.Mazur.PolygonCompletePointCanonicalLine
 public import FLT.Mazur.PolygonCompletePointCanonicalPoleBasis
@@ -6798,6 +6804,7 @@ public import FLT.Mazur.PolygonCompletePointCoordinateEquiv
 public import FLT.Mazur.PolygonCompletePointCoordinateInjective
 public import FLT.Mazur.PolygonCompletePointCoordinateRange
 public import FLT.Mazur.PolygonCompletePointCubicBaseChange
+public import FLT.Mazur.PolygonCompletePointCubicChartAffinization
 public import FLT.Mazur.PolygonCompletePointCubicChartSquare
 public import FLT.Mazur.PolygonCompletePointCubicFactorization
 public import FLT.Mazur.PolygonCompletePointCubicPreimages
@@ -6813,6 +6820,7 @@ public import FLT.Mazur.PolygonCompletePointFirstOrderOpen
 public import FLT.Mazur.PolygonCompletePointFunctionDimensions
 public import FLT.Mazur.PolygonCompletePointFunctionNumerators
 public import FLT.Mazur.PolygonCompletePointGenericCubicIso
+public import FLT.Mazur.PolygonCompletePointHigherMonomials
 public import FLT.Mazur.PolygonCompletePointHomogeneousEquation
 public import FLT.Mazur.PolygonCompletePointIdentityAffine
 public import FLT.Mazur.PolygonCompletePointIdentityAffineMarking
@@ -6835,9 +6843,12 @@ public import FLT.Mazur.PolygonCompletePointLeadingClasses
 public import FLT.Mazur.PolygonCompletePointLeadingProducts
 public import FLT.Mazur.PolygonCompletePointMarkedCoordinates
 public import FLT.Mazur.PolygonCompletePointMarkingRatios
+public import FLT.Mazur.PolygonCompletePointMonomialBaseChange
 public import FLT.Mazur.PolygonCompletePointMonomialBasis
+public import FLT.Mazur.PolygonCompletePointMonomialIndependence
 public import FLT.Mazur.PolygonCompletePointNewSections
 public import FLT.Mazur.PolygonCompletePointNonsingular
+public import FLT.Mazur.PolygonCompletePointNormalMonomials
 public import FLT.Mazur.PolygonCompletePointNormalizedPoles
 public import FLT.Mazur.PolygonCompletePointOriginCartesian
 public import FLT.Mazur.PolygonCompletePointOriginCartesianBaseChange
@@ -6861,6 +6872,11 @@ public import FLT.Mazur.PolygonCompletePointProjectiveIso
 public import FLT.Mazur.PolygonCompletePointProjectiveSections
 public import FLT.Mazur.PolygonCompletePointPushforwardLine
 public import FLT.Mazur.PolygonCompletePointRatioIdeal
+public import FLT.Mazur.PolygonCompletePointRelativeAffineMorphism
+public import FLT.Mazur.PolygonCompletePointRelativeAffineRestriction
+public import FLT.Mazur.PolygonCompletePointRelativeAffinization
+public import FLT.Mazur.PolygonCompletePointRelativeCoordinateRing
+public import FLT.Mazur.PolygonCompletePointRelativeCoordinateSurjective
 public import FLT.Mazur.PolygonCompletePointSectionBaseChange
 public import FLT.Mazur.PolygonCompletePointSectionFree
 public import FLT.Mazur.PolygonCompletePointSectionRank
@@ -8228,6 +8244,7 @@ public import FLT.Mazur.RelativeRelationInvariantSectionRings
 public import FLT.Mazur.RelativeRelationInvariantSections
 public import FLT.Mazur.RelativeRelationInvariantSheaf
 public import FLT.Mazur.RelativeRelationMonicBaseLift
+public import FLT.Mazur.RelativeRelationMonicSeedOpenQuotient
 public import FLT.Mazur.RelativeRelationMonicSeedQuotient
 public import FLT.Mazur.RelativeRelationOpenSaturation
 public import FLT.Mazur.RelativeRelationOpenSourceFunctions
@@ -8454,6 +8471,7 @@ public import FLT.Mazur.SchemeAffineTestProjectionComparison
 public import FLT.Mazur.SchemeAffineTestProjectionRefinement
 public import FLT.Mazur.SchemeAffineTripleComparisonCocycle
 public import FLT.Mazur.SchemeAffineTripleRefinementFamily
+public import FLT.Mazur.SchemeAffinizationUniversal
 public import FLT.Mazur.SchemeBaseChangeLimit
 public import FLT.Mazur.SchemeCanonicalChartRecognition
 public import FLT.Mazur.SchemeCanonicalDescentData
@@ -8669,11 +8687,15 @@ public import FLT.Mazur.SchemeRelationJointModelGenericFppf
 public import FLT.Mazur.SchemeRelationJointModelGeometry
 public import FLT.Mazur.SchemeRelationLocalFunctionDescent
 public import FLT.Mazur.SchemeRelationMonicBaseChange
+public import FLT.Mazur.SchemeRelationMonicSeedAffine
 public import FLT.Mazur.SchemeRelationMonicSeedEffective
 public import FLT.Mazur.SchemeRelationMonicSeedImage
 public import FLT.Mazur.SchemeRelationMonicSeedKernel
+public import FLT.Mazur.SchemeRelationMonicSeedOpen
+public import FLT.Mazur.SchemeRelationMonicSeedOpenQuotient
 public import FLT.Mazur.SchemeRelationMonicSeedQuotient
 public import FLT.Mazur.SchemeRelationMonicSeedQuotientCoverage
+public import FLT.Mazur.SchemeRelationMonicSeedSelection
 public import FLT.Mazur.SchemeRelationOpenFunctionDescent
 public import FLT.Mazur.SchemeRelationOpenInvariantRings
 public import FLT.Mazur.SchemeRelationOverRestriction
