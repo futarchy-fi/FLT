@@ -4176,6 +4176,7 @@ public import FLT.Mazur.EllipticNodeMixedLabels
 public import FLT.Mazur.EllipticNodeMixedLaurentCharacter
 public import FLT.Mazur.EllipticNodeModelDepth
 public import FLT.Mazur.EllipticNodeOppositeAddition
+public import FLT.Mazur.EllipticNodeOppositeCharacterAlgebra
 public import FLT.Mazur.EllipticNodeOppositeLabels
 public import FLT.Mazur.EllipticNodeOppositeSlope
 public import FLT.Mazur.EllipticNodePointBranches
