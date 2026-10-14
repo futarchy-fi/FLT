@@ -5623,6 +5623,7 @@ public import FLT.Mazur.IteratedQuotientRepresentatives
 public import FLT.Mazur.IteratedRefinementSquareCriteria
 public import FLT.Mazur.KernelPairEffectiveOpen
 public import FLT.Mazur.KernelPairEffectiveOpenEtale
+public import FLT.Mazur.KernelPairEtaleUnramified
 public import FLT.Mazur.KernelPairGenericEffectiveOpen
 public import FLT.Mazur.KernelPairTestIso
 public import FLT.Mazur.KernelPairUnramifiedInverse
