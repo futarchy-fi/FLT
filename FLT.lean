@@ -8832,6 +8832,7 @@ public import FLT.Mazur.SectionGradedProjGluing
 public import FLT.Mazur.SectionGradedProjGrading
 public import FLT.Mazur.SectionGradedProjIntrinsicSquare
 public import FLT.Mazur.SectionGradedProjLineEvaluation
+public import FLT.Mazur.SectionGradedProjLineNaturality
 public import FLT.Mazur.SectionGradedProjNaturality
 public import FLT.Mazur.SectionGradedProjOfAmple
 public import FLT.Mazur.SectionGradedProjOpens
