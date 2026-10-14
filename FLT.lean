@@ -8847,6 +8847,7 @@ public import FLT.Mazur.SchemeRelationReanchoring
 public import FLT.Mazur.SchemeRelationRestrictionComposition
 public import FLT.Mazur.SchemeRelationRestrictionRechart
 public import FLT.Mazur.SchemeRelationSeedOrbit
+public import FLT.Mazur.SchemeRelationSelectorQuotient
 public import FLT.Mazur.SchemeRelationSplitOrbit
 public import FLT.Mazur.SchemeRelationSplitOrbitAffineSeed
 public import FLT.Mazur.SchemeRelationSplitOrbitGround
