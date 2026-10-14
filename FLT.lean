@@ -8538,6 +8538,7 @@ public import FLT.Mazur.SchemeRelationJointModelGenericFppf
 public import FLT.Mazur.SchemeRelationJointModelGeometry
 public import FLT.Mazur.SchemeRelationLocalFunctionDescent
 public import FLT.Mazur.SchemeRelationMonicBaseChange
+public import FLT.Mazur.SchemeRelationMonicSeedKernel
 public import FLT.Mazur.SchemeRelationOpenFunctionDescent
 public import FLT.Mazur.SchemeRelationOpenInvariantRings
 public import FLT.Mazur.SchemeRelationOverRestriction
