@@ -6825,6 +6825,7 @@ public import FLT.Mazur.PolygonCompleteIdentityActionTarget
 public import FLT.Mazur.PolygonCompleteIdentityActionUnchangedLift
 public import FLT.Mazur.PolygonCompleteIdentityChartAtlas
 public import FLT.Mazur.PolygonCompleteIdentityChartOperations
+public import FLT.Mazur.PolygonCompleteIdentityMultiplicationCubic
 public import FLT.Mazur.PolygonCompleteLineCohomology
 public import FLT.Mazur.PolygonCompleteLineHomExt
 public import FLT.Mazur.PolygonCompleteLineHomReconstruction
