@@ -6892,6 +6892,7 @@ public import FLT.Mazur.PolygonCompleteIdentityActionLocalGluing
 public import FLT.Mazur.PolygonCompleteIdentityActionMultiplication
 public import FLT.Mazur.PolygonCompleteIdentityActionNodeCover
 public import FLT.Mazur.PolygonCompleteIdentityActionNodeGraph
+public import FLT.Mazur.PolygonCompleteIdentityActionRotatedMultiplication
 public import FLT.Mazur.PolygonCompleteIdentityActionSectionProj
 public import FLT.Mazur.PolygonCompleteIdentityActionSmoothCompatibility
 public import FLT.Mazur.PolygonCompleteIdentityActionSmoothLift
@@ -6901,6 +6902,11 @@ public import FLT.Mazur.PolygonCompleteIdentityActionUnchangedLift
 public import FLT.Mazur.PolygonCompleteIdentityChartAtlas
 public import FLT.Mazur.PolygonCompleteIdentityChartOperations
 public import FLT.Mazur.PolygonCompleteIdentityFiniteCoherence
+public import FLT.Mazur.PolygonCompleteIdentityFiniteComparison
+public import FLT.Mazur.PolygonCompleteIdentityFiniteLawComparison
+public import FLT.Mazur.PolygonCompleteIdentityFiniteLawCriterion
+public import FLT.Mazur.PolygonCompleteIdentityFinitePair
+public import FLT.Mazur.PolygonCompleteIdentityFiniteRotatedEdges
 public import FLT.Mazur.PolygonCompleteIdentityFiniteScaling
 public import FLT.Mazur.PolygonCompleteIdentityMultiplicationCubic
 public import FLT.Mazur.PolygonCompleteIdentitySmoothAction
@@ -7232,6 +7238,7 @@ public import FLT.Mazur.PolygonInfinitesimalDiagram
 public import FLT.Mazur.PolygonInfinitesimalDivisor
 public import FLT.Mazur.PolygonInfinitesimalDivisorLine
 public import FLT.Mazur.PolygonInfinitesimalEdgeCoordinates
+public import FLT.Mazur.PolygonInfinitesimalEdgeExt
 public import FLT.Mazur.PolygonInfinitesimalFamily
 public import FLT.Mazur.PolygonInfinitesimalFieldFiber
 public import FLT.Mazur.PolygonInfinitesimalLineCoherence
@@ -7259,6 +7266,7 @@ public import FLT.Mazur.PolygonInfinitesimalStageRestriction
 public import FLT.Mazur.PolygonInfinitesimalStageRotation
 public import FLT.Mazur.PolygonInfinitesimalStages
 public import FLT.Mazur.PolygonInfinitesimalSystem
+public import FLT.Mazur.PolygonInfinitesimalUniversalEdges
 public import FLT.Mazur.PolygonInfinitesimalUniversalNaturality
 public import FLT.Mazur.PolygonInfinitesimalUniversalScaling
 public import FLT.Mazur.PolygonLineHZero
@@ -7470,6 +7478,7 @@ public import FLT.Mazur.PolygonSmoothConnectedComponents
 public import FLT.Mazur.PolygonSmoothLocus
 public import FLT.Mazur.PolygonSmoothRelativeDimension
 public import FLT.Mazur.PolygonSmoothingBaseChange
+public import FLT.Mazur.PolygonSmoothingBranchExt
 public import FLT.Mazur.PolygonSmoothingBranchOpens
 public import FLT.Mazur.PolygonSmoothingBranchSwap
 public import FLT.Mazur.PolygonSmoothingCoefficientBranches
@@ -7507,6 +7516,7 @@ public import FLT.Mazur.PolygonSmoothingScalingNaturality
 public import FLT.Mazur.PolygonSmoothingSingularSupport
 public import FLT.Mazur.PolygonSmoothingSpecialBranches
 public import FLT.Mazur.PolygonSmoothingSpecialFiber
+public import FLT.Mazur.PolygonSmoothingSumRegular
 public import FLT.Mazur.PolygonSmoothingTransition
 public import FLT.Mazur.PolygonSmoothingUnitParameter
 public import FLT.Mazur.PolygonSpecialFiberIdeal
