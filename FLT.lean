@@ -3403,6 +3403,7 @@ public import FLT.Mazur.CartierRetainedLineProjections
 public import FLT.Mazur.CartierSectionPairEquivalence
 public import FLT.Mazur.CartierSupportOpenDescent
 public import FLT.Mazur.CartierTensorRank
+public import FLT.Mazur.CartierTensorRatioIdeal
 public import FLT.Mazur.CechAcyclicCokernel
 public import FLT.Mazur.CechAcyclicComparison
 public import FLT.Mazur.CechAcyclicNaturality
