@@ -12341,6 +12341,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXResidueNodeIdeals
 public import FLT.Mazur.WeierstrassSuccessiveXResidueNodeMaps
 public import FLT.Mazur.WeierstrassSuccessiveXResidueNodePunctures
 public import FLT.Mazur.WeierstrassSuccessiveXResidueParameterBranchCharts
+public import FLT.Mazur.WeierstrassSuccessiveXResidueSmoothCover
 public import FLT.Mazur.WeierstrassSuccessiveXResidueSplitBranchCharts
 public import FLT.Mazur.WeierstrassSuccessiveXResidueTransitionBaseChange
 public import FLT.Mazur.WeierstrassSuccessiveXResidueZeroNodeDisjoint
