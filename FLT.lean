@@ -6931,6 +6931,7 @@ public import FLT.Mazur.PolygonCompletePrincipalClosedFiber
 public import FLT.Mazur.PolygonCompleteProjectiveRotation
 public import FLT.Mazur.PolygonCompleteRefinementPointLine
 public import FLT.Mazur.PolygonCompleteRefinementSquares
+public import FLT.Mazur.PolygonCompleteRotatedIdentityOpen
 public import FLT.Mazur.PolygonCompleteRotation
 public import FLT.Mazur.PolygonCompleteSmoothCyclicMarking
 public import FLT.Mazur.PolygonCompleteSmoothDimensionOpen
