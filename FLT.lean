@@ -9825,6 +9825,7 @@ public import FLT.Mazur.WeierstrassDividedCoefficientInputs
 public import FLT.Mazur.WeierstrassDividedCoefficientShear
 public import FLT.Mazur.WeierstrassDividedCoefficientShearGlobalCharts
 public import FLT.Mazur.WeierstrassDividedCoefficientShearSchemes
+public import FLT.Mazur.WeierstrassDividedCoefficientSmoothRecovery
 public import FLT.Mazur.WeierstrassDividedCoefficientSymmetry
 public import FLT.Mazur.WeierstrassDividedCompleteResidueNormalization
 public import FLT.Mazur.WeierstrassDividedComponentPairCoverage
