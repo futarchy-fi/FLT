@@ -8862,6 +8862,7 @@ public import FLT.Mazur.SchemeRelationMonicSeedSelection
 public import FLT.Mazur.SchemeRelationNestedKernel
 public import FLT.Mazur.SchemeRelationOpenFunctionDescent
 public import FLT.Mazur.SchemeRelationOpenInvariantRings
+public import FLT.Mazur.SchemeRelationOpenSelectorCoequalization
 public import FLT.Mazur.SchemeRelationOpenSelectorDiagram
 public import FLT.Mazur.SchemeRelationOpenSelectorFibers
 public import FLT.Mazur.SchemeRelationOpenSelectorGluing
