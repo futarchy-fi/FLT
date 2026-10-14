@@ -4072,6 +4072,7 @@ public import FLT.Mazur.EllipticFiniteRetainedNodeSection
 public import FLT.Mazur.EllipticFiniteRetainedPointEquality
 public import FLT.Mazur.EllipticFiniteRetainedSmoothSpecialization
 public import FLT.Mazur.EllipticFiniteRetainedSpecialization
+public import FLT.Mazur.EllipticFiniteSpecializationEqualityDescent
 public import FLT.Mazur.EllipticFiniteTerminalLaurentEquality
 public import FLT.Mazur.EllipticFormalAddition
 public import FLT.Mazur.EllipticFormalAdditionComparison
@@ -4163,6 +4164,7 @@ public import FLT.Mazur.EllipticNodeGaloisLabel
 public import FLT.Mazur.EllipticNodeGenericNonsingular
 public import FLT.Mazur.EllipticNodeHenselCoordinates
 public import FLT.Mazur.EllipticNodeHenselGenerator
+public import FLT.Mazur.EllipticNodeIntegralMiddleCharacter
 public import FLT.Mazur.EllipticNodeIntegralOppositeCharacter
 public import FLT.Mazur.EllipticNodeInverseResidues
 public import FLT.Mazur.EllipticNodeLabelAdditivity
@@ -4174,7 +4176,10 @@ public import FLT.Mazur.EllipticNodeLabelHom
 public import FLT.Mazur.EllipticNodeLabelSeparation
 public import FLT.Mazur.EllipticNodeLineProducts
 public import FLT.Mazur.EllipticNodeMiddleAddition
+public import FLT.Mazur.EllipticNodeMiddleCharacterAlgebra
 public import FLT.Mazur.EllipticNodeMiddleLabels
+public import FLT.Mazur.EllipticNodeMiddleReductionCharacter
+public import FLT.Mazur.EllipticNodeMiddleSmoothCharacter
 public import FLT.Mazur.EllipticNodeMiddleSumLaurentCharacter
 public import FLT.Mazur.EllipticNodeMixedLabels
 public import FLT.Mazur.EllipticNodeMixedLaurentCharacter
@@ -4195,6 +4200,7 @@ public import FLT.Mazur.EllipticNodeSameBranchSlope
 public import FLT.Mazur.EllipticNodeScaledEquation
 public import FLT.Mazur.EllipticNodeSecantReduction
 public import FLT.Mazur.EllipticNodeSecantSlope
+public import FLT.Mazur.EllipticNodeSecondSumLaurentCharacter
 public import FLT.Mazur.EllipticNodeSmallChangeLabel
 public import FLT.Mazur.EllipticNodeSumDepth
 public import FLT.Mazur.EllipticNodeTangent
@@ -4250,9 +4256,13 @@ public import FLT.Mazur.EllipticReductionTranslation
 public import FLT.Mazur.EllipticRepeatedCubicPoint
 public import FLT.Mazur.EllipticRepeatedCubicTranslation
 public import FLT.Mazur.EllipticResolvedComponentCharacterEquality
+public import FLT.Mazur.EllipticResolvedComponentDifference
+public import FLT.Mazur.EllipticResolvedLabelDifference
 public import FLT.Mazur.EllipticResolvedLaurentEquality
+public import FLT.Mazur.EllipticResolvedMiddleTranslationEquality
 public import FLT.Mazur.EllipticResolvedMixedTranslationEquality
 public import FLT.Mazur.EllipticResolvedOppositeTranslationEquality
+public import FLT.Mazur.EllipticResolvedReflectedMixedTranslationEquality
 public import FLT.Mazur.EllipticResolvedSmoothPoint
 public import FLT.Mazur.EllipticScaledTorsionReduction
 public import FLT.Mazur.EllipticScalingSmoothTorsion
@@ -6809,6 +6819,10 @@ public import FLT.Mazur.PolygonCompleteGeometricallyConnected
 public import FLT.Mazur.PolygonCompleteGeometricallyReduced
 public import FLT.Mazur.PolygonCompleteH1Rank
 public import FLT.Mazur.PolygonCompleteH1Reduction
+public import FLT.Mazur.PolygonCompleteIdentityActionCartesian
+public import FLT.Mazur.PolygonCompleteIdentityActionSectionProj
+public import FLT.Mazur.PolygonCompleteIdentityActionTarget
+public import FLT.Mazur.PolygonCompleteIdentityActionUnchangedLift
 public import FLT.Mazur.PolygonCompleteIdentityChartAtlas
 public import FLT.Mazur.PolygonCompleteIdentityChartOperations
 public import FLT.Mazur.PolygonCompleteLineCohomology
@@ -8905,6 +8919,7 @@ public import FLT.Mazur.SchemeSectionFamilyProduct
 public import FLT.Mazur.SchemeSectionFrameCompatibility
 public import FLT.Mazur.SchemeSectionFrameNormalization
 public import FLT.Mazur.SchemeSectionTransportNaturality
+public import FLT.Mazur.SchemeSmoothLocusCartesian
 public import FLT.Mazur.SchemeSmoothLocusQuotient
 public import FLT.Mazur.SchemeSourceTestOverlapRecognition
 public import FLT.Mazur.SchemeSplitEtaleSourceSeed
@@ -12294,6 +12309,7 @@ public import FLT.Mazur.WeierstrassTripleInnerAdditionCover
 public import FLT.Mazur.WeierstrassTripleInnerOutputRegular
 public import FLT.Mazur.WeierstrassTripleSlopeAlgebra
 public import FLT.Mazur.WeierstrassTripleTangentSlopeAlgebra
+public import FLT.Mazur.WeierstrassUniversalTranslationSmoothLocus
 public import FLT.Mazur.WeierstrassVariableChangeAddition
 public import FLT.Mazur.WeierstrassVariableChangeAdditionFormula
 public import FLT.Mazur.WeierstrassVariableChangeAffineProduct
