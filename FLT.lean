@@ -4200,6 +4200,7 @@ public import FLT.Mazur.EllipticNodeOppositeSmoothCharacter
 public import FLT.Mazur.EllipticNodeParameterCarryLaw
 public import FLT.Mazur.EllipticNodeParameterEvaluation
 public import FLT.Mazur.EllipticNodeParameterMixedAddition
+public import FLT.Mazur.EllipticNodeParameterMultiples
 public import FLT.Mazur.EllipticNodeParameterSameBranch
 public import FLT.Mazur.EllipticNodeParameterSmoothAddition
 public import FLT.Mazur.EllipticNodeParameterTrivialization
