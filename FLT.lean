@@ -4200,6 +4200,7 @@ public import FLT.Mazur.EllipticNodeOppositeSmoothCharacter
 public import FLT.Mazur.EllipticNodePointBranches
 public import FLT.Mazur.EllipticNodePointCoordinates
 public import FLT.Mazur.EllipticNodePointDepth
+public import FLT.Mazur.EllipticNodePointParameter
 public import FLT.Mazur.EllipticNodeReflectedMixedCharacter
 public import FLT.Mazur.EllipticNodeSameBranchAddition
 public import FLT.Mazur.EllipticNodeSameBranchLabels
