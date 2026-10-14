@@ -6865,6 +6865,7 @@ public import FLT.Mazur.PolygonCompletePointFirstOrderOpen
 public import FLT.Mazur.PolygonCompletePointFunctionDimensions
 public import FLT.Mazur.PolygonCompletePointFunctionNumerators
 public import FLT.Mazur.PolygonCompletePointGenericComparison
+public import FLT.Mazur.PolygonCompletePointGenericCubicGroup
 public import FLT.Mazur.PolygonCompletePointGenericCubicIso
 public import FLT.Mazur.PolygonCompletePointGenericNeighborhood
 public import FLT.Mazur.PolygonCompletePointGlobalFunctions
