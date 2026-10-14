@@ -6851,6 +6851,7 @@ public import FLT.Mazur.PolygonCompleteIdentityActionCartesian
 public import FLT.Mazur.PolygonCompleteIdentityActionGraph
 public import FLT.Mazur.PolygonCompleteIdentityActionGraphCompatibility
 public import FLT.Mazur.PolygonCompleteIdentityActionGraphSmooth
+public import FLT.Mazur.PolygonCompleteIdentityActionLocalGluing
 public import FLT.Mazur.PolygonCompleteIdentityActionMultiplication
 public import FLT.Mazur.PolygonCompleteIdentityActionNodeCover
 public import FLT.Mazur.PolygonCompleteIdentityActionNodeGraph
