@@ -4180,6 +4180,7 @@ public import FLT.Mazur.EllipticNodeLabelDescent
 public import FLT.Mazur.EllipticNodeLabelFibers
 public import FLT.Mazur.EllipticNodeLabelHom
 public import FLT.Mazur.EllipticNodeLabelSeparation
+public import FLT.Mazur.EllipticNodeLaurentScale
 public import FLT.Mazur.EllipticNodeLineProducts
 public import FLT.Mazur.EllipticNodeMiddleAddition
 public import FLT.Mazur.EllipticNodeMiddleCharacterAlgebra
@@ -4231,6 +4232,9 @@ public import FLT.Mazur.EllipticNodeTangentSwapLabel
 public import FLT.Mazur.EllipticNodeThirdIntersection
 public import FLT.Mazur.EllipticNodeTripleDepth
 public import FLT.Mazur.EllipticNodeTripleLaurentCharacter
+public import FLT.Mazur.EllipticNodeTrivializedChartGeometry
+public import FLT.Mazur.EllipticNodeTrivializedCharts
+public import FLT.Mazur.EllipticNodeTrivializedMiddleChart
 public import FLT.Mazur.EllipticNodeTrivializedSpecialization
 public import FLT.Mazur.EllipticNodeUnequalDepthAddition
 public import FLT.Mazur.EllipticNodeUniformizerLabel
@@ -5811,11 +5815,13 @@ public import FLT.Mazur.LaurentLineActionEvaluation
 public import FLT.Mazur.LaurentPairReciprocalUnits
 public import FLT.Mazur.LaurentPairUniversalUnits
 public import FLT.Mazur.LaurentRingSurjectivity
+public import FLT.Mazur.LaurentScaledCoordinateIsomorphisms
 public import FLT.Mazur.LaurentTensor
 public import FLT.Mazur.LaurentUnitCoefficientPoint
 public import FLT.Mazur.LaurentUnitMultiplication
 public import FLT.Mazur.LaurentUnitPointNaturality
 public import FLT.Mazur.LaurentUnitPoints
+public import FLT.Mazur.LaurentUnitScaledCoordinates
 public import FLT.Mazur.LineBundleAffineFrames
 public import FLT.Mazur.LineBundleSectionOpenPullback
 public import FLT.Mazur.LineCartierComplementRestriction
@@ -7239,6 +7245,7 @@ public import FLT.Mazur.PolygonNodeChartNeighborhood
 public import FLT.Mazur.PolygonNodeChartScalars
 public import FLT.Mazur.PolygonNodeCompletionCriterion
 public import FLT.Mazur.PolygonNodeDenominatorCover
+public import FLT.Mazur.PolygonNodeDifferenceBranches
 public import FLT.Mazur.PolygonNodeDifferenceOpen
 public import FLT.Mazur.PolygonNodeDimension
 public import FLT.Mazur.PolygonNodeEqualizer
@@ -11244,6 +11251,7 @@ public import FLT.Mazur.WeierstrassGlobalPolynomialSwap
 public import FLT.Mazur.WeierstrassHorizontalConicPunctureResidue
 public import FLT.Mazur.WeierstrassHorizontalFractionHomExt
 public import FLT.Mazur.WeierstrassHorizontalGlobalChartComparison
+public import FLT.Mazur.WeierstrassHorizontalLaurentBranches
 public import FLT.Mazur.WeierstrassIncidenceCoefficientTransport
 public import FLT.Mazur.WeierstrassIncidenceResidueShearComparison
 public import FLT.Mazur.WeierstrassIncidenceShearConicBoundary
