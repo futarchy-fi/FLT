@@ -8755,6 +8755,7 @@ public import FLT.Mazur.SchemeRelationRestrictionRechart
 public import FLT.Mazur.SchemeRelationSeedOrbit
 public import FLT.Mazur.SchemeRelationSplitOrbit
 public import FLT.Mazur.SchemeRelationSplitOrbitAffineSeed
+public import FLT.Mazur.SchemeRelationSplitOrbitGround
 public import FLT.Mazur.SchemeRelationSplitOrbitKernel
 public import FLT.Mazur.SchemeRelationSplitOrbitOpen
 public import FLT.Mazur.SchemeRelationSplitOrbitQuotient
