@@ -7769,6 +7769,7 @@ public import FLT.Mazur.PrincipalOpenSectionAlgebra
 public import FLT.Mazur.PrincipalOpenTensor
 public import FLT.Mazur.PrincipalOpenTensorGeometry
 public import FLT.Mazur.PrincipalOpenTensorPullback
+public import FLT.Mazur.PrincipalOpenTensorRestriction
 public import FLT.Mazur.PrincipalOpenTensorTransition
 public import FLT.Mazur.PrincipalOpenTensorTransitionBase
 public import FLT.Mazur.PrincipalOpenTransport
