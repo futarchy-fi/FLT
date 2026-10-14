@@ -2859,6 +2859,7 @@ public import FLT.Mazur.AffineHilbertModelFppfPicard
 public import FLT.Mazur.AffineHilbertModelFppfRepresentation
 public import FLT.Mazur.AffineHilbertModelGenericFppf
 public import FLT.Mazur.AffineHilbertModelKernelComparison
+public import FLT.Mazur.AffineHilbertModelSourceBranchCoverage
 public import FLT.Mazur.AffineHilbertMonicKernelGeometry
 public import FLT.Mazur.AffineHilbertMonicModelRelation
 public import FLT.Mazur.AffineHilbertMonicRelationGeometry
