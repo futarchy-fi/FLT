@@ -7218,6 +7218,7 @@ public import FLT.Mazur.PolygonInfinitesimalSpecialDivisor
 public import FLT.Mazur.PolygonInfinitesimalSpecialFiber
 public import FLT.Mazur.PolygonInfinitesimalStageAmple
 public import FLT.Mazur.PolygonInfinitesimalStageDivisor
+public import FLT.Mazur.PolygonInfinitesimalStageEdges
 public import FLT.Mazur.PolygonInfinitesimalStageFiber
 public import FLT.Mazur.PolygonInfinitesimalStageGenus
 public import FLT.Mazur.PolygonInfinitesimalStageLine
