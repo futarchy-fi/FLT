@@ -4301,6 +4301,7 @@ public import FLT.Mazur.EllipticResolvedRetainedCharts
 public import FLT.Mazur.EllipticResolvedRetainedSmoothCharts
 public import FLT.Mazur.EllipticResolvedSmoothPoint
 public import FLT.Mazur.EllipticResolvedTorsionInjectivity
+public import FLT.Mazur.EllipticRetainedLaurentCover
 public import FLT.Mazur.EllipticRetainedTrivializedCharts
 public import FLT.Mazur.EllipticRetainedTrivializedGeometry
 public import FLT.Mazur.EllipticScaledTorsionReduction
