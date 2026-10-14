@@ -4308,6 +4308,7 @@ public import FLT.Mazur.EllipticResolvedRetainedCover
 public import FLT.Mazur.EllipticResolvedRetainedSmoothCharts
 public import FLT.Mazur.EllipticResolvedSmoothPoint
 public import FLT.Mazur.EllipticResolvedTerminalCharts
+public import FLT.Mazur.EllipticResolvedTerminalCover
 public import FLT.Mazur.EllipticResolvedTerminalSmoothCharts
 public import FLT.Mazur.EllipticResolvedTorsionInjectivity
 public import FLT.Mazur.EllipticRetainedLaurentCover
