@@ -8744,6 +8744,7 @@ public import FLT.Mazur.SchemeRelationPrincipalTensorSections
 public import FLT.Mazur.SchemeRelationRestrictionComposition
 public import FLT.Mazur.SchemeRelationRestrictionRechart
 public import FLT.Mazur.SchemeRelationSeedOrbit
+public import FLT.Mazur.SchemeRelationSplitOrbit
 public import FLT.Mazur.SchemeRelationTensorAlgebra
 public import FLT.Mazur.SchemeRelationTensorCocycle
 public import FLT.Mazur.SchemeRelationTensorCoordinates
