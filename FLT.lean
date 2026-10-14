@@ -2906,6 +2906,7 @@ public import FLT.Mazur.AffineHilbertRestrictedSectionFunctions
 public import FLT.Mazur.AffineHilbertRestrictedSheafEquiv
 public import FLT.Mazur.AffineHilbertRestrictedSheafPullback
 public import FLT.Mazur.AffineHilbertSchemeRestriction
+public import FLT.Mazur.AffineHilbertSplitGroundComparison
 public import FLT.Mazur.AffineHilbertSymmetricNeighborhoods
 public import FLT.Mazur.AffineHilbertTensorAtlas
 public import FLT.Mazur.AffineHilbertTensorGluing
