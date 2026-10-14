@@ -3602,6 +3602,7 @@ public import FLT.Mazur.CommonCoefficientStage
 public import FLT.Mazur.CommonIdealDirectSum
 public import FLT.Mazur.CommonModelEventualEquality
 public import FLT.Mazur.CommonRelationIntegerModel
+public import FLT.Mazur.CommonUnchangedOpenComparison
 public import FLT.Mazur.CommutativeIntegerModelPullbackDescent
 public import FLT.Mazur.CompactOpenAffineLimit
 public import FLT.Mazur.CompactOpenAmbientSectionDescent
