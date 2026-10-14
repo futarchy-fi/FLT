@@ -4179,6 +4179,7 @@ public import FLT.Mazur.EllipticNodeModelDepth
 public import FLT.Mazur.EllipticNodeOppositeAddition
 public import FLT.Mazur.EllipticNodeOppositeCharacterAlgebra
 public import FLT.Mazur.EllipticNodeOppositeLabels
+public import FLT.Mazur.EllipticNodeOppositeReductionCharacter
 public import FLT.Mazur.EllipticNodeOppositeSlope
 public import FLT.Mazur.EllipticNodePointBranches
 public import FLT.Mazur.EllipticNodePointCoordinates
