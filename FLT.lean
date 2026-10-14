@@ -6688,6 +6688,7 @@ public import FLT.Mazur.PolygonCompletePointFirstOrderOpen
 public import FLT.Mazur.PolygonCompletePointFunctionDimensions
 public import FLT.Mazur.PolygonCompletePointFunctionNumerators
 public import FLT.Mazur.PolygonCompletePointHomogeneousEquation
+public import FLT.Mazur.PolygonCompletePointIdentityAffine
 public import FLT.Mazur.PolygonCompletePointIdentityEquation
 public import FLT.Mazur.PolygonCompletePointIdentityFinite
 public import FLT.Mazur.PolygonCompletePointInfinity
