@@ -4174,6 +4174,7 @@ public import FLT.Mazur.EllipticNodeLabelHom
 public import FLT.Mazur.EllipticNodeLabelSeparation
 public import FLT.Mazur.EllipticNodeLineProducts
 public import FLT.Mazur.EllipticNodeMiddleAddition
+public import FLT.Mazur.EllipticNodeMiddleCharacterAlgebra
 public import FLT.Mazur.EllipticNodeMiddleLabels
 public import FLT.Mazur.EllipticNodeMiddleSumLaurentCharacter
 public import FLT.Mazur.EllipticNodeMixedLabels
