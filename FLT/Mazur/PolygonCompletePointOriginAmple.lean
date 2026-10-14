@@ -29,7 +29,7 @@ variable (K : Type) [Field K] (n : ℕ) (h : 2 ≤ n) [NeZero n] (i : Fin n)
 local notation "W" => completePointWeierstrassCurve K n h i
 local notation "A" => originDivisorLine (W) 1
 
-local instance originLineFact : Fact (LocallyFreeRankOne (A)) :=
+local instance completePointOriginAmpleLineFact : Fact (LocallyFreeRankOne (A)) :=
   ⟨completePointOriginLine_rankOne K n h i 1⟩
 
 /-- The original cubic-origin line is ample over the full complete base. -/
