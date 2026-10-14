@@ -7037,11 +7037,17 @@ public import FLT.Mazur.PolygonCompleteSmoothFieldMarkedSubgroup
 public import FLT.Mazur.PolygonCompleteSmoothFieldRefinementCurve
 public import FLT.Mazur.PolygonCompleteSmoothFieldSubgroup
 public import FLT.Mazur.PolygonCompleteSmoothFieldTranslation
+public import FLT.Mazur.PolygonCompleteSmoothGroup
+public import FLT.Mazur.PolygonCompleteSmoothGroupIdentities
+public import FLT.Mazur.PolygonCompleteSmoothGroupRotations
 public import FLT.Mazur.PolygonCompleteSmoothInversion
 public import FLT.Mazur.PolygonCompleteSmoothIrreducible
+public import FLT.Mazur.PolygonCompleteSmoothMultiplication
 public import FLT.Mazur.PolygonCompleteSmoothPointAffine
+public import FLT.Mazur.PolygonCompleteSmoothProductCover
 public import FLT.Mazur.PolygonCompleteSmoothRefinement
 public import FLT.Mazur.PolygonCompleteSmoothRotation
+public import FLT.Mazur.PolygonCompleteSmoothTripleCover
 public import FLT.Mazur.PolygonCompleteStageMarkings
 public import FLT.Mazur.PolygonCompleteStageRotation
 public import FLT.Mazur.PolygonCompleteStructureCohomology
