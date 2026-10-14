@@ -5995,6 +5995,7 @@ public import FLT.Mazur.NodeTangentProjectiveReflection
 public import FLT.Mazur.NodeTangentShear
 public import FLT.Mazur.NodeTangentShearRealization
 public import FLT.Mazur.NodeTangentSlopeDescent
+public import FLT.Mazur.NodeTangentSmoothNormalization
 public import FLT.Mazur.NodeTangentSplitChart
 public import FLT.Mazur.NodeTangentSplitComponent
 public import FLT.Mazur.NodeTangentSplitLaurent
