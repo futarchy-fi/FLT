@@ -4000,6 +4000,7 @@ public import FLT.Mazur.EllipticAdditiveScalingDepth
 public import FLT.Mazur.EllipticAdditiveStarTranslation
 public import FLT.Mazur.EllipticAdditiveTorsionExclusion
 public import FLT.Mazur.EllipticAdditiveTranslationDepth
+public import FLT.Mazur.EllipticCoefficientModificationSections
 public import FLT.Mazur.EllipticCompleteExtensionComparisons
 public import FLT.Mazur.EllipticCompleteExtensionInjections
 public import FLT.Mazur.EllipticCompleteExtensionSpecialization
