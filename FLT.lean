@@ -6885,6 +6885,7 @@ public import FLT.Mazur.PolygonCompletePointRelativeCoordinateSurjective
 public import FLT.Mazur.PolygonCompletePointSectionBaseChange
 public import FLT.Mazur.PolygonCompletePointSectionFree
 public import FLT.Mazur.PolygonCompletePointSectionRank
+public import FLT.Mazur.PolygonCompletePointSectionRingIso
 public import FLT.Mazur.PolygonCompletePointSpecifiedBasis
 public import FLT.Mazur.PolygonCompletePointWeierstrassEquation
 public import FLT.Mazur.PolygonCompletePrincipalClosedFiber
