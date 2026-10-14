@@ -4287,9 +4287,14 @@ public import FLT.Mazur.EllipticRepeatedCubicPoint
 public import FLT.Mazur.EllipticRepeatedCubicTranslation
 public import FLT.Mazur.EllipticResolvedAdditionCongruence
 public import FLT.Mazur.EllipticResolvedComponentCharacterEquality
+public import FLT.Mazur.EllipticResolvedComponentCharts
 public import FLT.Mazur.EllipticResolvedComponentDifference
+public import FLT.Mazur.EllipticResolvedComponentLabels
+public import FLT.Mazur.EllipticResolvedComponentPointCover
 public import FLT.Mazur.EllipticResolvedDepthSeparation
 public import FLT.Mazur.EllipticResolvedGeometricLabel
+public import FLT.Mazur.EllipticResolvedIdentityChart
+public import FLT.Mazur.EllipticResolvedIdentityPoints
 public import FLT.Mazur.EllipticResolvedLabelDifference
 public import FLT.Mazur.EllipticResolvedLaurentEquality
 public import FLT.Mazur.EllipticResolvedMiddleTranslationEquality
@@ -4301,6 +4306,7 @@ public import FLT.Mazur.EllipticResolvedRetainedCharts
 public import FLT.Mazur.EllipticResolvedRetainedSmoothCharts
 public import FLT.Mazur.EllipticResolvedSmoothPoint
 public import FLT.Mazur.EllipticResolvedTerminalCharts
+public import FLT.Mazur.EllipticResolvedTerminalSmoothCharts
 public import FLT.Mazur.EllipticResolvedTorsionInjectivity
 public import FLT.Mazur.EllipticRetainedLaurentCover
 public import FLT.Mazur.EllipticRetainedTrivializedCharts
@@ -6881,10 +6887,13 @@ public import FLT.Mazur.PolygonCompleteIdentityActionTarget
 public import FLT.Mazur.PolygonCompleteIdentityActionUnchangedLift
 public import FLT.Mazur.PolygonCompleteIdentityChartAtlas
 public import FLT.Mazur.PolygonCompleteIdentityChartOperations
+public import FLT.Mazur.PolygonCompleteIdentityFiniteCoherence
+public import FLT.Mazur.PolygonCompleteIdentityFiniteScaling
 public import FLT.Mazur.PolygonCompleteIdentityMultiplicationCubic
 public import FLT.Mazur.PolygonCompleteIdentitySmoothAction
 public import FLT.Mazur.PolygonCompleteIdentitySmoothActionCoordinates
 public import FLT.Mazur.PolygonCompleteIdentitySmoothActionEquivariance
+public import FLT.Mazur.PolygonCompleteIdentityStageTorus
 public import FLT.Mazur.PolygonCompleteLineCohomology
 public import FLT.Mazur.PolygonCompleteLineHomExt
 public import FLT.Mazur.PolygonCompleteLineHomReconstruction
@@ -7124,6 +7133,7 @@ public import FLT.Mazur.PolygonCompleteSmoothProductCover
 public import FLT.Mazur.PolygonCompleteSmoothRefinement
 public import FLT.Mazur.PolygonCompleteSmoothRotation
 public import FLT.Mazur.PolygonCompleteSmoothTripleCover
+public import FLT.Mazur.PolygonCompleteStageClosedCompatibility
 public import FLT.Mazur.PolygonCompleteStageMarkings
 public import FLT.Mazur.PolygonCompleteStageRotation
 public import FLT.Mazur.PolygonCompleteStructureCohomology
@@ -7208,6 +7218,7 @@ public import FLT.Mazur.PolygonInfinitesimalCoefficientTransport
 public import FLT.Mazur.PolygonInfinitesimalDiagram
 public import FLT.Mazur.PolygonInfinitesimalDivisor
 public import FLT.Mazur.PolygonInfinitesimalDivisorLine
+public import FLT.Mazur.PolygonInfinitesimalEdgeCoordinates
 public import FLT.Mazur.PolygonInfinitesimalFamily
 public import FLT.Mazur.PolygonInfinitesimalFieldFiber
 public import FLT.Mazur.PolygonInfinitesimalLineCoherence
@@ -7218,12 +7229,14 @@ public import FLT.Mazur.PolygonInfinitesimalRotationBaseChange
 public import FLT.Mazur.PolygonInfinitesimalRotationDivisor
 public import FLT.Mazur.PolygonInfinitesimalScaling
 public import FLT.Mazur.PolygonInfinitesimalScalingNaturality
+public import FLT.Mazur.PolygonInfinitesimalScalingProduct
 public import FLT.Mazur.PolygonInfinitesimalSectionRings
 public import FLT.Mazur.PolygonInfinitesimalSeparated
 public import FLT.Mazur.PolygonInfinitesimalSpecialDivisor
 public import FLT.Mazur.PolygonInfinitesimalSpecialFiber
 public import FLT.Mazur.PolygonInfinitesimalStageAmple
 public import FLT.Mazur.PolygonInfinitesimalStageDivisor
+public import FLT.Mazur.PolygonInfinitesimalStageEdges
 public import FLT.Mazur.PolygonInfinitesimalStageFiber
 public import FLT.Mazur.PolygonInfinitesimalStageGenus
 public import FLT.Mazur.PolygonInfinitesimalStageLine
@@ -7233,6 +7246,8 @@ public import FLT.Mazur.PolygonInfinitesimalStageRestriction
 public import FLT.Mazur.PolygonInfinitesimalStageRotation
 public import FLT.Mazur.PolygonInfinitesimalStages
 public import FLT.Mazur.PolygonInfinitesimalSystem
+public import FLT.Mazur.PolygonInfinitesimalUniversalNaturality
+public import FLT.Mazur.PolygonInfinitesimalUniversalScaling
 public import FLT.Mazur.PolygonLineHZero
 public import FLT.Mazur.PolygonLineNodeRestriction
 public import FLT.Mazur.PolygonLineNormalization
@@ -10619,6 +10634,7 @@ public import FLT.Mazur.WeierstrassDividedIncidenceNormalization
 public import FLT.Mazur.WeierstrassDividedInfinityLaurentChart
 public import FLT.Mazur.WeierstrassDividedInfinityLaurentGluing
 public import FLT.Mazur.WeierstrassDividedInfinityLaurentZero
+public import FLT.Mazur.WeierstrassDividedInfinitySmoothCompatibility
 public import FLT.Mazur.WeierstrassDividedInitialAtlasIndex
 public import FLT.Mazur.WeierstrassDividedInitialBoundaryGeometry
 public import FLT.Mazur.WeierstrassDividedInitialBranchCompatibility
