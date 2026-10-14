@@ -2758,6 +2758,7 @@ public import FLT.Mazur.AffineHilbertChangedOpenRelation
 public import FLT.Mazur.AffineHilbertChangedOrbitDescent
 public import FLT.Mazur.AffineHilbertChangedOrbitKernel
 public import FLT.Mazur.AffineHilbertChangedOrbitOpen
+public import FLT.Mazur.AffineHilbertChangedOrbitRelationComparison
 public import FLT.Mazur.AffineHilbertChangedOrbitSource
 public import FLT.Mazur.AffineHilbertChartRelation
 public import FLT.Mazur.AffineHilbertClosedPatchRefinement
