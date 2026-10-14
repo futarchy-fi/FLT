@@ -10263,6 +10263,7 @@ public import FLT.Mazur.WeierstrassDividedPositiveSplitInitialExt
 public import FLT.Mazur.WeierstrassDividedPositiveSplitLocalDescent
 public import FLT.Mazur.WeierstrassDividedPositiveSplitLocalMaps
 public import FLT.Mazur.WeierstrassDividedPositiveSplitNormalizationSurjective
+public import FLT.Mazur.WeierstrassDividedPositiveSplitRetainedConicCharts
 public import FLT.Mazur.WeierstrassDividedPositiveSplitRetainedLineExt
 public import FLT.Mazur.WeierstrassDividedPositiveSplitRetainedNodeExt
 public import FLT.Mazur.WeierstrassDividedPrecedingAtlasRange
