@@ -9631,6 +9631,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearScaleOneTerminalNodeTensorPul
 public import FLT.Mazur.WeierstrassCoefficientShearScaleOneTerminalTensorPullback
 public import FLT.Mazur.WeierstrassCoefficientShearSeparated
 public import FLT.Mazur.WeierstrassCoefficientShearSmoothOrbit
+public import FLT.Mazur.WeierstrassCoefficientShearSmoothOrbitDescent
 public import FLT.Mazur.WeierstrassCoefficientShearSmoothUnique
 public import FLT.Mazur.WeierstrassCoefficientShearSpecialization
 public import FLT.Mazur.WeierstrassCoefficientShearSpecializationExt
