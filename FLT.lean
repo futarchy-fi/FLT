@@ -2839,6 +2839,8 @@ public import FLT.Mazur.AffineHilbertGroundBaseEnvelope
 public import FLT.Mazur.AffineHilbertGroundBaseEnvelopeLift
 public import FLT.Mazur.AffineHilbertGroundBaseFullFiber
 public import FLT.Mazur.AffineHilbertGroundBaseSource
+public import FLT.Mazur.AffineHilbertGroundRelativeCoverage
+public import FLT.Mazur.AffineHilbertGroundRelativeEtale
 public import FLT.Mazur.AffineHilbertInvariantAffineModel
 public import FLT.Mazur.AffineHilbertInvariantEnvelope
 public import FLT.Mazur.AffineHilbertInvariantFiniteType
@@ -2874,6 +2876,8 @@ public import FLT.Mazur.AffineHilbertModelSourceBranchCoverage
 public import FLT.Mazur.AffineHilbertMonicKernelGeometry
 public import FLT.Mazur.AffineHilbertMonicModelRelation
 public import FLT.Mazur.AffineHilbertMonicRelationGeometry
+public import FLT.Mazur.AffineHilbertMonicSeedArbitraryGround
+public import FLT.Mazur.AffineHilbertMonicSeedCanonicalGround
 public import FLT.Mazur.AffineHilbertMonicSeedCharts
 public import FLT.Mazur.AffineHilbertMonicSeedFiniteEtale
 public import FLT.Mazur.AffineHilbertMonicSeedGroundCoverage
@@ -6812,6 +6816,7 @@ public import FLT.Mazur.PolygonCompletePointAcyclic
 public import FLT.Mazur.PolygonCompletePointAffineMorphism
 public import FLT.Mazur.PolygonCompletePointAllPoleBasis
 public import FLT.Mazur.PolygonCompletePointCanonicalBasis
+public import FLT.Mazur.PolygonCompletePointCanonicalContraction
 public import FLT.Mazur.PolygonCompletePointCanonicalLine
 public import FLT.Mazur.PolygonCompletePointCanonicalPoleBasis
 public import FLT.Mazur.PolygonCompletePointChartEquation
@@ -6828,6 +6833,7 @@ public import FLT.Mazur.PolygonCompletePointCubicChartSquare
 public import FLT.Mazur.PolygonCompletePointCubicFactorization
 public import FLT.Mazur.PolygonCompletePointCubicPreimages
 public import FLT.Mazur.PolygonCompletePointCubicRelation
+public import FLT.Mazur.PolygonCompletePointCubicSections
 public import FLT.Mazur.PolygonCompletePointDimensions
 public import FLT.Mazur.PolygonCompletePointDivisorComparison
 public import FLT.Mazur.PolygonCompletePointExactMonomials
@@ -6870,6 +6876,7 @@ public import FLT.Mazur.PolygonCompletePointNewSections
 public import FLT.Mazur.PolygonCompletePointNonsingular
 public import FLT.Mazur.PolygonCompletePointNormalMonomials
 public import FLT.Mazur.PolygonCompletePointNormalizedPoles
+public import FLT.Mazur.PolygonCompletePointOriginAmple
 public import FLT.Mazur.PolygonCompletePointOriginCartesian
 public import FLT.Mazur.PolygonCompletePointOriginCartesianBaseChange
 public import FLT.Mazur.PolygonCompletePointOriginChart
@@ -6881,6 +6888,7 @@ public import FLT.Mazur.PolygonCompletePointOriginParameter
 public import FLT.Mazur.PolygonCompletePointOriginParameterRegular
 public import FLT.Mazur.PolygonCompletePointOriginParameterRestriction
 public import FLT.Mazur.PolygonCompletePointOriginPositiveLine
+public import FLT.Mazur.PolygonCompletePointOriginProjIso
 public import FLT.Mazur.PolygonCompletePointOriginReduction
 public import FLT.Mazur.PolygonCompletePointPointedCubic
 public import FLT.Mazur.PolygonCompletePointPoleFrame
@@ -6906,6 +6914,7 @@ public import FLT.Mazur.PolygonCompletePointSectionProjIso
 public import FLT.Mazur.PolygonCompletePointSectionRank
 public import FLT.Mazur.PolygonCompletePointSectionRingIso
 public import FLT.Mazur.PolygonCompletePointSpecifiedBasis
+public import FLT.Mazur.PolygonCompletePointSurjective
 public import FLT.Mazur.PolygonCompletePointWeierstrassEquation
 public import FLT.Mazur.PolygonCompletePrincipalClosedFiber
 public import FLT.Mazur.PolygonCompleteProjectiveRotation
@@ -7807,7 +7816,9 @@ public import FLT.Mazur.ProperAmpleRetainedChartCover
 public import FLT.Mazur.ProperAmpleRetainedProjIso
 public import FLT.Mazur.ProperAmpleSectionAffine
 public import FLT.Mazur.ProperAmpleSectionAffineUnrestricted
+public import FLT.Mazur.ProperAmpleSectionChartCover
 public import FLT.Mazur.ProperAmpleSectionExtension
+public import FLT.Mazur.ProperAmpleSectionProjIso
 public import FLT.Mazur.ProperAtlasAbelEquivalence
 public import FLT.Mazur.ProperAtlasAbelFiber
 public import FLT.Mazur.ProperAtlasAbelNaturality
@@ -7890,6 +7901,7 @@ public import FLT.Mazur.ProperFiberTensorComplex
 public import FLT.Mazur.ProperFieldCohomologyBaseChange
 public import FLT.Mazur.ProperFiniteFiberNeighborhood
 public import FLT.Mazur.ProperFinitePresentationEnvelope
+public import FLT.Mazur.ProperFunctionSheafSurjective
 public import FLT.Mazur.ProperGeometricAcyclicDirectImage
 public import FLT.Mazur.ProperGeometricRankOneOpen
 public import FLT.Mazur.ProperGlobalDirectImageCharts
@@ -8088,6 +8100,9 @@ public import FLT.Mazur.RelativeCartierIdealPullback
 public import FLT.Mazur.RelativeCartierMorphismBaseChange
 public import FLT.Mazur.RelativeCartierOriginalSquare
 public import FLT.Mazur.RelativeCoefficientBaseChange
+public import FLT.Mazur.RelativeCoefficientBaseChangeEtale
+public import FLT.Mazur.RelativeCoefficientSourceCartesian
+public import FLT.Mazur.RelativeCoefficientSourceImage
 public import FLT.Mazur.RelativeComparisonFiberIso
 public import FLT.Mazur.RelativeCoproductComponentPullback
 public import FLT.Mazur.RelativeCoproductPullCover
@@ -8810,6 +8825,7 @@ public import FLT.Mazur.SectionGradedGeneratorLocalization
 public import FLT.Mazur.SectionGradedIsoMultiplication
 public import FLT.Mazur.SectionGradedIsoRing
 public import FLT.Mazur.SectionGradedLineCoherence
+public import FLT.Mazur.SectionGradedLineGeneratorOpen
 public import FLT.Mazur.SectionGradedLineKernel
 public import FLT.Mazur.SectionGradedLinePullback
 public import FLT.Mazur.SectionGradedLineRingCoherence
@@ -8833,6 +8849,8 @@ public import FLT.Mazur.SectionGradedProjGeneratorChart
 public import FLT.Mazur.SectionGradedProjGluing
 public import FLT.Mazur.SectionGradedProjGrading
 public import FLT.Mazur.SectionGradedProjIntrinsicSquare
+public import FLT.Mazur.SectionGradedProjLineEvaluation
+public import FLT.Mazur.SectionGradedProjLineNaturality
 public import FLT.Mazur.SectionGradedProjNaturality
 public import FLT.Mazur.SectionGradedProjOfAmple
 public import FLT.Mazur.SectionGradedProjOpens
