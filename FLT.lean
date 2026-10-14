@@ -2793,6 +2793,7 @@ public import FLT.Mazur.AffineHilbertFixedBaseEnvelope
 public import FLT.Mazur.AffineHilbertFixedBaseInvariants
 public import FLT.Mazur.AffineHilbertFixedBaseJointModel
 public import FLT.Mazur.AffineHilbertFixedBaseJointRelative
+public import FLT.Mazur.AffineHilbertFixedBaseJointTests
 public import FLT.Mazur.AffineHilbertFixedBaseQuotient
 public import FLT.Mazur.AffineHilbertFixedBaseQuotientIso
 public import FLT.Mazur.AffineHilbertFixedBaseRelation
