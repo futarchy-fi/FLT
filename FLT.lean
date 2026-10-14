@@ -2792,6 +2792,7 @@ public import FLT.Mazur.AffineHilbertFiniteModelGenericPicard
 public import FLT.Mazur.AffineHilbertFiniteModelImage
 public import FLT.Mazur.AffineHilbertFiniteModelImageRelation
 public import FLT.Mazur.AffineHilbertFiniteModelImageRestriction
+public import FLT.Mazur.AffineHilbertFiniteModelOrbitSeed
 public import FLT.Mazur.AffineHilbertFiniteModelPrincipalCover
 public import FLT.Mazur.AffineHilbertFiniteModelPrincipalFppf
 public import FLT.Mazur.AffineHilbertFiniteModelPrincipalInverses
