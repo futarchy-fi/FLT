@@ -8619,6 +8619,7 @@ public import FLT.Mazur.SectionProjectiveFiniteNeighborhood
 public import FLT.Mazur.SectionProjectiveImmersion
 public import FLT.Mazur.SectionPullbackFrameCoordinates
 public import FLT.Mazur.SectionPullbackLineCoordinate
+public import FLT.Mazur.SectionPullbackRatioCoordinates
 public import FLT.Mazur.SectionResidueFieldIso
 public import FLT.Mazur.SectionRestrictedLineBaseChange
 public import FLT.Mazur.SectionRetainedChartComparison
