@@ -4591,6 +4591,7 @@ public import FLT.Mazur.FiniteSubgroupPicard
 public import FLT.Mazur.FiniteSubgroupPicardDegree
 public import FLT.Mazur.FiniteSupportClosedDescent
 public import FLT.Mazur.FiniteSupportEulerCharacteristic
+public import FLT.Mazur.FiniteSupportEulerIso
 public import FLT.Mazur.FiniteSupportEulerPositive
 public import FLT.Mazur.FiniteSurjectiveAmpleDescent
 public import FLT.Mazur.FiniteSurjectiveCoherentWitness
