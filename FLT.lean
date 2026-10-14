@@ -4302,6 +4302,7 @@ public import FLT.Mazur.EtaleFiniteBranchLift
 public import FLT.Mazur.EtaleFiniteBranchNeighborhood
 public import FLT.Mazur.EtaleFiniteBranchScheme
 public import FLT.Mazur.EtaleFiniteBranchSubcover
+public import FLT.Mazur.EtaleFiniteBranchTargetAtlas
 public import FLT.Mazur.EtaleFiniteBranchTargetNeighborhood
 public import FLT.Mazur.EtaleFiniteQuotientBranch
 public import FLT.Mazur.EtaleFiniteSupportCartier
