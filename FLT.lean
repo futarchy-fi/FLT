@@ -4299,6 +4299,7 @@ public import FLT.Mazur.EllipticResolvedReflectedMixedTranslationEquality
 public import FLT.Mazur.EllipticResolvedSmoothPoint
 public import FLT.Mazur.EllipticResolvedTorsionInjectivity
 public import FLT.Mazur.EllipticRetainedTrivializedCharts
+public import FLT.Mazur.EllipticRetainedTrivializedGeometry
 public import FLT.Mazur.EllipticScaledTorsionReduction
 public import FLT.Mazur.EllipticScalingSmoothTorsion
 public import FLT.Mazur.EllipticSectionSpecialFiber
