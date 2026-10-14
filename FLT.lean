@@ -2799,6 +2799,7 @@ public import FLT.Mazur.AffineHilbertFixedBaseQuotient
 public import FLT.Mazur.AffineHilbertFixedBaseQuotientIso
 public import FLT.Mazur.AffineHilbertFixedBaseRelation
 public import FLT.Mazur.AffineHilbertFixedBaseRelationInverse
+public import FLT.Mazur.AffineHilbertFixedBaseRelationSchemeLift
 public import FLT.Mazur.AffineHilbertFlatKernelGeometry
 public import FLT.Mazur.AffineHilbertFlatStratumRelation
 public import FLT.Mazur.AffineHilbertFlatStratumSource
