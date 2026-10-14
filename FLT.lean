@@ -2903,6 +2903,7 @@ public import FLT.Mazur.AffineHilbertNestedRestriction
 public import FLT.Mazur.AffineHilbertNoetherianRelation
 public import FLT.Mazur.AffineHilbertOriginalOrbitAtlas
 public import FLT.Mazur.AffineHilbertOriginalOrbitModel
+public import FLT.Mazur.AffineHilbertOriginalOrbitOpenModel
 public import FLT.Mazur.AffineHilbertOriginalPrincipalInvariants
 public import FLT.Mazur.AffineHilbertPrincipalInvariants
 public import FLT.Mazur.AffineHilbertPrincipalTensorModel
@@ -2916,6 +2917,8 @@ public import FLT.Mazur.AffineHilbertRestrictedSectionFunctions
 public import FLT.Mazur.AffineHilbertRestrictedSheafEquiv
 public import FLT.Mazur.AffineHilbertRestrictedSheafPullback
 public import FLT.Mazur.AffineHilbertSchemeRestriction
+public import FLT.Mazur.AffineHilbertSelectorOrbitOpen
+public import FLT.Mazur.AffineHilbertSelectorQuotient
 public import FLT.Mazur.AffineHilbertSplitChangedFamily
 public import FLT.Mazur.AffineHilbertSplitGroundComparison
 public import FLT.Mazur.AffineHilbertSymmetricNeighborhoods
@@ -4053,6 +4056,7 @@ public import FLT.Mazur.EllipticFiniteDividedPointSection
 public import FLT.Mazur.EllipticFiniteDividedSpecialization
 public import FLT.Mazur.EllipticFiniteMiddleLaurentCharacter
 public import FLT.Mazur.EllipticFiniteMiddleSpecialization
+public import FLT.Mazur.EllipticFiniteMixedLaurentSpecialization
 public import FLT.Mazur.EllipticFiniteModificationPointExtension
 public import FLT.Mazur.EllipticFiniteModificationSections
 public import FLT.Mazur.EllipticFiniteModificationSpecialization
@@ -4128,6 +4132,7 @@ public import FLT.Mazur.EllipticNodalDeterminantStep
 public import FLT.Mazur.EllipticNodalDiscriminantDepth
 public import FLT.Mazur.EllipticNodalPrimeReductionKernel
 public import FLT.Mazur.EllipticNodalResidueTorsion
+public import FLT.Mazur.EllipticNodeAdditionCoordinateValues
 public import FLT.Mazur.EllipticNodeAdditionCoordinates
 public import FLT.Mazur.EllipticNodeAdditionProduct
 public import FLT.Mazur.EllipticNodeBranchInverse
@@ -4145,16 +4150,19 @@ public import FLT.Mazur.EllipticNodeCoordinateUnique
 public import FLT.Mazur.EllipticNodeDepthNormalization
 public import FLT.Mazur.EllipticNodeDepthStep
 public import FLT.Mazur.EllipticNodeDifferenceCoordinates
+public import FLT.Mazur.EllipticNodeDifferenceFactorResidues
 public import FLT.Mazur.EllipticNodeDifferenceFactors
 public import FLT.Mazur.EllipticNodeDifferenceLabels
 public import FLT.Mazur.EllipticNodeDiscriminantDepth
 public import FLT.Mazur.EllipticNodeEqualDepthSlope
 public import FLT.Mazur.EllipticNodeFirstBranchSlope
+public import FLT.Mazur.EllipticNodeFirstSumLaurentCharacter
 public import FLT.Mazur.EllipticNodeFirstTriple
 public import FLT.Mazur.EllipticNodeGaloisLabel
 public import FLT.Mazur.EllipticNodeGenericNonsingular
 public import FLT.Mazur.EllipticNodeHenselCoordinates
 public import FLT.Mazur.EllipticNodeHenselGenerator
+public import FLT.Mazur.EllipticNodeInverseResidues
 public import FLT.Mazur.EllipticNodeLabelAdditivity
 public import FLT.Mazur.EllipticNodeLabelBaseChange
 public import FLT.Mazur.EllipticNodeLabelDecode
@@ -4165,7 +4173,9 @@ public import FLT.Mazur.EllipticNodeLabelSeparation
 public import FLT.Mazur.EllipticNodeLineProducts
 public import FLT.Mazur.EllipticNodeMiddleAddition
 public import FLT.Mazur.EllipticNodeMiddleLabels
+public import FLT.Mazur.EllipticNodeMiddleSumLaurentCharacter
 public import FLT.Mazur.EllipticNodeMixedLabels
+public import FLT.Mazur.EllipticNodeMixedLaurentCharacter
 public import FLT.Mazur.EllipticNodeModelDepth
 public import FLT.Mazur.EllipticNodeOppositeAddition
 public import FLT.Mazur.EllipticNodeOppositeLabels
@@ -4186,9 +4196,11 @@ public import FLT.Mazur.EllipticNodeTangentSwap
 public import FLT.Mazur.EllipticNodeTangentSwapLabel
 public import FLT.Mazur.EllipticNodeThirdIntersection
 public import FLT.Mazur.EllipticNodeTripleDepth
+public import FLT.Mazur.EllipticNodeTripleLaurentCharacter
 public import FLT.Mazur.EllipticNodeUnequalDepthAddition
 public import FLT.Mazur.EllipticNodeUniformizerLabel
 public import FLT.Mazur.EllipticNodeVariableChangeLabel
+public import FLT.Mazur.EllipticNodeWrappedLaurentCharacter
 public import FLT.Mazur.EllipticNonsplitNodalGroup
 public import FLT.Mazur.EllipticNonsplitNodeBound
 public import FLT.Mazur.EllipticNonsplitNodeChart
@@ -4232,6 +4244,7 @@ public import FLT.Mazur.EllipticReductionTranslation
 public import FLT.Mazur.EllipticRepeatedCubicPoint
 public import FLT.Mazur.EllipticRepeatedCubicTranslation
 public import FLT.Mazur.EllipticResolvedLaurentEquality
+public import FLT.Mazur.EllipticResolvedMixedTranslationEquality
 public import FLT.Mazur.EllipticResolvedSmoothPoint
 public import FLT.Mazur.EllipticScaledTorsionReduction
 public import FLT.Mazur.EllipticScalingSmoothTorsion
@@ -8807,6 +8820,9 @@ public import FLT.Mazur.SchemeRefinementReconstruction
 public import FLT.Mazur.SchemeRelationArrowTransport
 public import FLT.Mazur.SchemeRelationDoubleRestriction
 public import FLT.Mazur.SchemeRelationEtaleBranchPropagation
+public import FLT.Mazur.SchemeRelationEtaleCoverDescent
+public import FLT.Mazur.SchemeRelationEtaleImageModel
+public import FLT.Mazur.SchemeRelationEtaleKernelDescent
 public import FLT.Mazur.SchemeRelationFunctionDescent
 public import FLT.Mazur.SchemeRelationInvariantAffineUniversal
 public import FLT.Mazur.SchemeRelationInvariantDomainIso
@@ -8823,6 +8839,7 @@ public import FLT.Mazur.SchemeRelationJointModelEtaleImage
 public import FLT.Mazur.SchemeRelationJointModelGenericFppf
 public import FLT.Mazur.SchemeRelationJointModelGeometry
 public import FLT.Mazur.SchemeRelationLocalFunctionDescent
+public import FLT.Mazur.SchemeRelationLocalSelector
 public import FLT.Mazur.SchemeRelationMonicBaseChange
 public import FLT.Mazur.SchemeRelationMonicSeedAffine
 public import FLT.Mazur.SchemeRelationMonicSeedEffective
@@ -8833,11 +8850,13 @@ public import FLT.Mazur.SchemeRelationMonicSeedOpenQuotient
 public import FLT.Mazur.SchemeRelationMonicSeedQuotient
 public import FLT.Mazur.SchemeRelationMonicSeedQuotientCoverage
 public import FLT.Mazur.SchemeRelationMonicSeedSelection
+public import FLT.Mazur.SchemeRelationNestedKernel
 public import FLT.Mazur.SchemeRelationOpenFunctionDescent
 public import FLT.Mazur.SchemeRelationOpenInvariantRings
 public import FLT.Mazur.SchemeRelationOrbitAtlas
 public import FLT.Mazur.SchemeRelationOrbitAtlasDescent
 public import FLT.Mazur.SchemeRelationOrbitAtlasKernel
+public import FLT.Mazur.SchemeRelationOrbitOpenModel
 public import FLT.Mazur.SchemeRelationOverRestriction
 public import FLT.Mazur.SchemeRelationPrincipalFullInvariants
 public import FLT.Mazur.SchemeRelationPrincipalLocalization
@@ -8847,6 +8866,10 @@ public import FLT.Mazur.SchemeRelationReanchoring
 public import FLT.Mazur.SchemeRelationRestrictionComposition
 public import FLT.Mazur.SchemeRelationRestrictionRechart
 public import FLT.Mazur.SchemeRelationSeedOrbit
+public import FLT.Mazur.SchemeRelationSelectorEtale
+public import FLT.Mazur.SchemeRelationSelectorInvariant
+public import FLT.Mazur.SchemeRelationSelectorKernel
+public import FLT.Mazur.SchemeRelationSelectorQuotient
 public import FLT.Mazur.SchemeRelationSplitOrbit
 public import FLT.Mazur.SchemeRelationSplitOrbitAffineSeed
 public import FLT.Mazur.SchemeRelationSplitOrbitGround
