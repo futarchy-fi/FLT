@@ -32,7 +32,7 @@ local notation "p" => fst f hL d V c k
 local notation "q" => snd f hL d V c k
 local notation "U" => KernelPairEffectiveOpen.targetOpen
   (Over.Hom.left p) (Over.Hom.left q) w.left hw
-local instance : Mono (pullback.lift (p).left (q).left hw) :=
+local instance modelEffectivePicardKernelMono : Mono (pullback.lift (p).left (q).left hw) :=
   modelRelationKernelMap_mono f hL d V c k w.left hw
 
 /-- The original model projection restricted over its intrinsic effective open. -/
