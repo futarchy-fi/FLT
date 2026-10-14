@@ -4271,6 +4271,7 @@ public import FLT.Mazur.EllipticSmoothReduction
 public import FLT.Mazur.EllipticSmoothReductionAddition
 public import FLT.Mazur.EllipticSmoothSectionSpecialization
 public import FLT.Mazur.EllipticSplitDepthModel
+public import FLT.Mazur.EllipticSplitDepthResidueCharacter
 public import FLT.Mazur.EllipticSplitNodalGroup
 public import FLT.Mazur.EllipticSplitNodeAddition
 public import FLT.Mazur.EllipticSplitNodeComponents
