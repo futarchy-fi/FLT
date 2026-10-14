@@ -3399,6 +3399,7 @@ public import FLT.Mazur.CartierIdealPullbackComparison
 public import FLT.Mazur.CartierIdealStalkDescent
 public import FLT.Mazur.CartierIdealStalkNeighborhood
 public import FLT.Mazur.CartierImmersionFinitePresentation
+public import FLT.Mazur.CartierPullbackParameterRegular
 public import FLT.Mazur.CartierRetainedLineBaseChange
 public import FLT.Mazur.CartierRetainedLineProjections
 public import FLT.Mazur.CartierSectionPairEquivalence
