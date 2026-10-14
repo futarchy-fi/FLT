@@ -8862,6 +8862,12 @@ public import FLT.Mazur.SchemeRelationMonicSeedSelection
 public import FLT.Mazur.SchemeRelationNestedKernel
 public import FLT.Mazur.SchemeRelationOpenFunctionDescent
 public import FLT.Mazur.SchemeRelationOpenInvariantRings
+public import FLT.Mazur.SchemeRelationOpenSelectorDiagram
+public import FLT.Mazur.SchemeRelationOpenSelectorGluing
+public import FLT.Mazur.SchemeRelationOpenSelectorGround
+public import FLT.Mazur.SchemeRelationOpenSelectorOverlap
+public import FLT.Mazur.SchemeRelationOpenSelectorProjection
+public import FLT.Mazur.SchemeRelationOpenSelectorRestriction
 public import FLT.Mazur.SchemeRelationOrbitAtlas
 public import FLT.Mazur.SchemeRelationOrbitAtlasDescent
 public import FLT.Mazur.SchemeRelationOrbitAtlasKernel
@@ -8875,6 +8881,10 @@ public import FLT.Mazur.SchemeRelationReanchoring
 public import FLT.Mazur.SchemeRelationRestrictionComposition
 public import FLT.Mazur.SchemeRelationRestrictionRechart
 public import FLT.Mazur.SchemeRelationSeedOrbit
+public import FLT.Mazur.SchemeRelationSeedSelector
+public import FLT.Mazur.SchemeRelationSeedSelectorGeometry
+public import FLT.Mazur.SchemeRelationSeedSelectorKernel
+public import FLT.Mazur.SchemeRelationSeedSelectorMap
 public import FLT.Mazur.SchemeRelationSelectorEtale
 public import FLT.Mazur.SchemeRelationSelectorInvariant
 public import FLT.Mazur.SchemeRelationSelectorKernel
