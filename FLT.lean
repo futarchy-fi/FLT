@@ -7881,6 +7881,7 @@ public import FLT.Mazur.ProperFiberTensorComplex
 public import FLT.Mazur.ProperFieldCohomologyBaseChange
 public import FLT.Mazur.ProperFiniteFiberNeighborhood
 public import FLT.Mazur.ProperFinitePresentationEnvelope
+public import FLT.Mazur.ProperFunctionSheafSurjective
 public import FLT.Mazur.ProperGeometricAcyclicDirectImage
 public import FLT.Mazur.ProperGeometricRankOneOpen
 public import FLT.Mazur.ProperGlobalDirectImageCharts
