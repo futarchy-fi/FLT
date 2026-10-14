@@ -6868,6 +6868,7 @@ public import FLT.Mazur.PolygonCompletePointGenericComparison
 public import FLT.Mazur.PolygonCompletePointGenericCubicGroup
 public import FLT.Mazur.PolygonCompletePointGenericCubicIso
 public import FLT.Mazur.PolygonCompletePointGenericNeighborhood
+public import FLT.Mazur.PolygonCompletePointGenericSmoothGroup
 public import FLT.Mazur.PolygonCompletePointGlobalFunctions
 public import FLT.Mazur.PolygonCompletePointHigherMonomials
 public import FLT.Mazur.PolygonCompletePointHomogeneousEquation
