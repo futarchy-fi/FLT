@@ -6677,6 +6677,7 @@ public import FLT.Mazur.PolygonCompletePointDivisorComparison
 public import FLT.Mazur.PolygonCompletePointExactMonomials
 public import FLT.Mazur.PolygonCompletePointFirstOrderAffineFrames
 public import FLT.Mazur.PolygonCompletePointFirstOrderFactor
+public import FLT.Mazur.PolygonCompletePointFirstOrderIdeal
 public import FLT.Mazur.PolygonCompletePointFirstOrderLine
 public import FLT.Mazur.PolygonCompletePointFirstOrderOpen
 public import FLT.Mazur.PolygonCompletePointFunctionDimensions
