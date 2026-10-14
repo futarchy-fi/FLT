@@ -6860,6 +6860,7 @@ public import FLT.Mazur.PolygonCompletePointIdentityBaseChange
 public import FLT.Mazur.PolygonCompletePointIdentityClosedTorus
 public import FLT.Mazur.PolygonCompletePointIdentityEquation
 public import FLT.Mazur.PolygonCompletePointIdentityFinite
+public import FLT.Mazur.PolygonCompletePointIdentityGeneric
 public import FLT.Mazur.PolygonCompletePointIdentityGroup
 public import FLT.Mazur.PolygonCompletePointIdentityLocalIso
 public import FLT.Mazur.PolygonCompletePointIdentityNeighborhoodIso
