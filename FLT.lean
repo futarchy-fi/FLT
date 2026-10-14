@@ -6873,6 +6873,7 @@ public import FLT.Mazur.PolygonCompleteIdentityActionLocalGluing
 public import FLT.Mazur.PolygonCompleteIdentityActionMultiplication
 public import FLT.Mazur.PolygonCompleteIdentityActionNodeCover
 public import FLT.Mazur.PolygonCompleteIdentityActionNodeGraph
+public import FLT.Mazur.PolygonCompleteIdentityActionRotatedMultiplication
 public import FLT.Mazur.PolygonCompleteIdentityActionSectionProj
 public import FLT.Mazur.PolygonCompleteIdentityActionSmoothCompatibility
 public import FLT.Mazur.PolygonCompleteIdentityActionSmoothLift
