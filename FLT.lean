@@ -4314,6 +4314,7 @@ public import FLT.Mazur.FiniteAffineProperIntegerDescent
 public import FLT.Mazur.FiniteAlgebraFiberSurjective
 public import FLT.Mazur.FiniteArrowIntegerModel
 public import FLT.Mazur.FiniteCartierPointFactorization
+public import FLT.Mazur.FiniteCartierQuotientComparison
 public import FLT.Mazur.FiniteCechCyclesScalars
 public import FLT.Mazur.FiniteCechTermScalars
 public import FLT.Mazur.FiniteClosedIdealSection
