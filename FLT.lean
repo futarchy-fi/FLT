@@ -4198,6 +4198,7 @@ public import FLT.Mazur.EllipticNodeOppositeReductionCharacter
 public import FLT.Mazur.EllipticNodeOppositeSlope
 public import FLT.Mazur.EllipticNodeOppositeSmoothCharacter
 public import FLT.Mazur.EllipticNodeParameterEvaluation
+public import FLT.Mazur.EllipticNodeParameterMixedAddition
 public import FLT.Mazur.EllipticNodeParameterSameBranch
 public import FLT.Mazur.EllipticNodeParameterSmoothAddition
 public import FLT.Mazur.EllipticNodeParameterUnits
