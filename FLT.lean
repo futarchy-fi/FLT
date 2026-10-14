@@ -4128,6 +4128,7 @@ public import FLT.Mazur.EllipticNodalDeterminantStep
 public import FLT.Mazur.EllipticNodalDiscriminantDepth
 public import FLT.Mazur.EllipticNodalPrimeReductionKernel
 public import FLT.Mazur.EllipticNodalResidueTorsion
+public import FLT.Mazur.EllipticNodeAdditionCoordinateValues
 public import FLT.Mazur.EllipticNodeAdditionCoordinates
 public import FLT.Mazur.EllipticNodeAdditionProduct
 public import FLT.Mazur.EllipticNodeBranchInverse
