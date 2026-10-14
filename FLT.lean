@@ -4310,6 +4310,7 @@ public import FLT.Mazur.EllipticResolvedTerminalSmoothCharts
 public import FLT.Mazur.EllipticResolvedTorsionInjectivity
 public import FLT.Mazur.EllipticRetainedLaurentCover
 public import FLT.Mazur.EllipticRetainedTrivializedCharts
+public import FLT.Mazur.EllipticRetainedTrivializedCover
 public import FLT.Mazur.EllipticRetainedTrivializedGeometry
 public import FLT.Mazur.EllipticScaledTorsionReduction
 public import FLT.Mazur.EllipticScalingSmoothTorsion
