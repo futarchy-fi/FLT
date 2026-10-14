@@ -2749,6 +2749,7 @@ public import FLT.Mazur.AffineGeometricReconstructionCompatibility
 public import FLT.Mazur.AffineGeometricRefinementData
 public import FLT.Mazur.AffineGeometricTensorCocycle
 public import FLT.Mazur.AffineGeometricTensorDatum
+public import FLT.Mazur.AffineHilbertAdmissibleFiniteKernel
 public import FLT.Mazur.AffineHilbertAssociativeFiniteBranches
 public import FLT.Mazur.AffineHilbertBoundedRelation
 public import FLT.Mazur.AffineHilbertBranchCompositionCoefficients
@@ -2784,6 +2785,10 @@ public import FLT.Mazur.AffineHilbertEtaleComposition
 public import FLT.Mazur.AffineHilbertFiniteBranchAtlas
 public import FLT.Mazur.AffineHilbertFiniteBranchInvariants
 public import FLT.Mazur.AffineHilbertFiniteBranches
+public import FLT.Mazur.AffineHilbertFiniteEnvelopeEffective
+public import FLT.Mazur.AffineHilbertFiniteEnvelopeKernel
+public import FLT.Mazur.AffineHilbertFiniteEnvelopePicard
+public import FLT.Mazur.AffineHilbertFiniteEnvelopeSeed
 public import FLT.Mazur.AffineHilbertFiniteFiberPrincipal
 public import FLT.Mazur.AffineHilbertFiniteFreeGroundBase
 public import FLT.Mazur.AffineHilbertFiniteFullBranchCover
@@ -5376,6 +5381,7 @@ public import FLT.Mazur.HilbertFamilyRelationBaseChange
 public import FLT.Mazur.HilbertFamilyTruncatedRelations
 public import FLT.Mazur.HilbertFiniteAmbientPresentation
 public import FLT.Mazur.HilbertFiniteFreeQuotientRefinement
+public import FLT.Mazur.HilbertFullInteriorFiniteKernel
 public import FLT.Mazur.HilbertFullInteriorQuotientChart
 public import FLT.Mazur.HilbertGrassmannianAffineMap
 public import FLT.Mazur.HilbertGrassmannianFamilyCompatibility
