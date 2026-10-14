@@ -6804,6 +6804,7 @@ public import FLT.Mazur.PolygonCompletePointAcyclic
 public import FLT.Mazur.PolygonCompletePointAffineMorphism
 public import FLT.Mazur.PolygonCompletePointAllPoleBasis
 public import FLT.Mazur.PolygonCompletePointCanonicalBasis
+public import FLT.Mazur.PolygonCompletePointCanonicalContraction
 public import FLT.Mazur.PolygonCompletePointCanonicalLine
 public import FLT.Mazur.PolygonCompletePointCanonicalPoleBasis
 public import FLT.Mazur.PolygonCompletePointChartEquation
