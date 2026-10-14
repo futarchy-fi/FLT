@@ -6886,6 +6886,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFiniteCoherence
 public import FLT.Mazur.PolygonCompleteIdentityFiniteComparison
 public import FLT.Mazur.PolygonCompleteIdentityFiniteLawComparison
 public import FLT.Mazur.PolygonCompleteIdentityFinitePair
+public import FLT.Mazur.PolygonCompleteIdentityFiniteRotatedEdges
 public import FLT.Mazur.PolygonCompleteIdentityFiniteScaling
 public import FLT.Mazur.PolygonCompleteIdentityMultiplicationCubic
 public import FLT.Mazur.PolygonCompleteIdentitySmoothAction
