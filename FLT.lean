@@ -2868,7 +2868,12 @@ public import FLT.Mazur.AffineHilbertModelSourceBranchCoverage
 public import FLT.Mazur.AffineHilbertMonicKernelGeometry
 public import FLT.Mazur.AffineHilbertMonicModelRelation
 public import FLT.Mazur.AffineHilbertMonicRelationGeometry
+public import FLT.Mazur.AffineHilbertMonicSeedCharts
+public import FLT.Mazur.AffineHilbertMonicSeedKernel
 public import FLT.Mazur.AffineHilbertMonicTranslation
+public import FLT.Mazur.AffineHilbertNestedFiniteKernel
+public import FLT.Mazur.AffineHilbertNestedFiniteModel
+public import FLT.Mazur.AffineHilbertNestedKernel
 public import FLT.Mazur.AffineHilbertNestedRestriction
 public import FLT.Mazur.AffineHilbertNoetherianRelation
 public import FLT.Mazur.AffineHilbertOriginalPrincipalInvariants
@@ -8227,6 +8232,7 @@ public import FLT.Mazur.RelativeRelationInvariantSectionRings
 public import FLT.Mazur.RelativeRelationInvariantSections
 public import FLT.Mazur.RelativeRelationInvariantSheaf
 public import FLT.Mazur.RelativeRelationMonicBaseLift
+public import FLT.Mazur.RelativeRelationMonicSeedOpenQuotient
 public import FLT.Mazur.RelativeRelationMonicSeedQuotient
 public import FLT.Mazur.RelativeRelationOpenSaturation
 public import FLT.Mazur.RelativeRelationOpenSourceFunctions
@@ -8668,11 +8674,15 @@ public import FLT.Mazur.SchemeRelationJointModelGenericFppf
 public import FLT.Mazur.SchemeRelationJointModelGeometry
 public import FLT.Mazur.SchemeRelationLocalFunctionDescent
 public import FLT.Mazur.SchemeRelationMonicBaseChange
+public import FLT.Mazur.SchemeRelationMonicSeedAffine
 public import FLT.Mazur.SchemeRelationMonicSeedEffective
 public import FLT.Mazur.SchemeRelationMonicSeedImage
 public import FLT.Mazur.SchemeRelationMonicSeedKernel
+public import FLT.Mazur.SchemeRelationMonicSeedOpen
+public import FLT.Mazur.SchemeRelationMonicSeedOpenQuotient
 public import FLT.Mazur.SchemeRelationMonicSeedQuotient
 public import FLT.Mazur.SchemeRelationMonicSeedQuotientCoverage
+public import FLT.Mazur.SchemeRelationMonicSeedSelection
 public import FLT.Mazur.SchemeRelationOpenFunctionDescent
 public import FLT.Mazur.SchemeRelationOpenInvariantRings
 public import FLT.Mazur.SchemeRelationOverRestriction
