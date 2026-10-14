@@ -8546,6 +8546,7 @@ public import FLT.Mazur.SchemeRelationMonicBaseChange
 public import FLT.Mazur.SchemeRelationMonicSeedEffective
 public import FLT.Mazur.SchemeRelationMonicSeedImage
 public import FLT.Mazur.SchemeRelationMonicSeedKernel
+public import FLT.Mazur.SchemeRelationMonicSeedOpen
 public import FLT.Mazur.SchemeRelationMonicSeedQuotient
 public import FLT.Mazur.SchemeRelationMonicSeedQuotientCoverage
 public import FLT.Mazur.SchemeRelationOpenFunctionDescent
