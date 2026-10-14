@@ -6863,6 +6863,7 @@ public import FLT.Mazur.PolygonCompletePointNewSections
 public import FLT.Mazur.PolygonCompletePointNonsingular
 public import FLT.Mazur.PolygonCompletePointNormalMonomials
 public import FLT.Mazur.PolygonCompletePointNormalizedPoles
+public import FLT.Mazur.PolygonCompletePointOriginAmple
 public import FLT.Mazur.PolygonCompletePointOriginCartesian
 public import FLT.Mazur.PolygonCompletePointOriginCartesianBaseChange
 public import FLT.Mazur.PolygonCompletePointOriginChart
