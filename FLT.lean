@@ -6837,6 +6837,7 @@ public import FLT.Mazur.PolygonCompletePointLeadingProducts
 public import FLT.Mazur.PolygonCompletePointMarkedCoordinates
 public import FLT.Mazur.PolygonCompletePointMarkingRatios
 public import FLT.Mazur.PolygonCompletePointMonomialBasis
+public import FLT.Mazur.PolygonCompletePointMonomialIndependence
 public import FLT.Mazur.PolygonCompletePointNewSections
 public import FLT.Mazur.PolygonCompletePointNonsingular
 public import FLT.Mazur.PolygonCompletePointNormalizedPoles
