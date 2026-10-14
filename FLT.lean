@@ -6701,6 +6701,7 @@ public import FLT.Mazur.PolygonCompleteCartesianPointDivisor
 public import FLT.Mazur.PolygonCompleteCartesianPointLine
 public import FLT.Mazur.PolygonCompleteCartesianRefinement
 public import FLT.Mazur.PolygonCompleteCartesianRotation
+public import FLT.Mazur.PolygonCompleteChartOverlapField
 public import FLT.Mazur.PolygonCompleteClassifiedFibers
 public import FLT.Mazur.PolygonCompleteClosedActionRotation
 public import FLT.Mazur.PolygonCompleteClosedCartierGenerator
