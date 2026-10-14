@@ -10254,6 +10254,7 @@ public import FLT.Mazur.WeierstrassDividedPositiveSplitCocone
 public import FLT.Mazur.WeierstrassDividedPositiveSplitComponentHomExt
 public import FLT.Mazur.WeierstrassDividedPositiveSplitCycle
 public import FLT.Mazur.WeierstrassDividedPositiveSplitCycleCoverage
+public import FLT.Mazur.WeierstrassDividedPositiveSplitCycleEndCharts
 public import FLT.Mazur.WeierstrassDividedPositiveSplitCycleIndices
 public import FLT.Mazur.WeierstrassDividedPositiveSplitCycleRanges
 public import FLT.Mazur.WeierstrassDividedPositiveSplitIndexedExt
