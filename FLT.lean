@@ -8757,6 +8757,7 @@ public import FLT.Mazur.SchemeSectionTransportNaturality
 public import FLT.Mazur.SchemeSmoothLocusQuotient
 public import FLT.Mazur.SchemeSourceTestOverlapRecognition
 public import FLT.Mazur.SchemeSplitEtaleSourceSeed
+public import FLT.Mazur.SchemeSplitUnramifiedSourceSeed
 public import FLT.Mazur.SchemeTranslationNormFiber
 public import FLT.Mazur.SchemeTranslationNormGluing
 public import FLT.Mazur.SchemeTranslationNormLocal
