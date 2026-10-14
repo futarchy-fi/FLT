@@ -6479,6 +6479,7 @@ public import FLT.Mazur.PolygonCartierGenerator
 public import FLT.Mazur.PolygonChartScaling
 public import FLT.Mazur.PolygonClassifiedFamily
 public import FLT.Mazur.PolygonClosedChartRotation
+public import FLT.Mazur.PolygonClosedCubicContractionBaseChangeIso
 public import FLT.Mazur.PolygonClosedCubicContractionCharts
 public import FLT.Mazur.PolygonClosedCubicContractionComparison
 public import FLT.Mazur.PolygonClosedCubicContractionDivisors
