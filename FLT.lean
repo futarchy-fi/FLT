@@ -8366,6 +8366,7 @@ public import FLT.Mazur.SchemeFppfSourceLineGluing
 public import FLT.Mazur.SchemeFppfSourceLineMap
 public import FLT.Mazur.SchemeFppfSourceLineMapEquivalence
 public import FLT.Mazur.SchemeFppfSourceLineMapPreimage
+public import FLT.Mazur.SchemeFppfTargetOpen
 public import FLT.Mazur.SchemeFpqcOpenSectionDescent
 public import FLT.Mazur.SchemeGeometricDescentCocycleTest
 public import FLT.Mazur.SchemeGeometricDescentData
