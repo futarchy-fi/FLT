@@ -6809,6 +6809,7 @@ public import FLT.Mazur.PolygonCompleteGeometricallyConnected
 public import FLT.Mazur.PolygonCompleteGeometricallyReduced
 public import FLT.Mazur.PolygonCompleteH1Rank
 public import FLT.Mazur.PolygonCompleteH1Reduction
+public import FLT.Mazur.PolygonCompleteIdentityActionCartesian
 public import FLT.Mazur.PolygonCompleteIdentityActionTarget
 public import FLT.Mazur.PolygonCompleteIdentityActionUnchangedLift
 public import FLT.Mazur.PolygonCompleteIdentityChartAtlas
