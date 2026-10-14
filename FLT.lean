@@ -4191,6 +4191,7 @@ public import FLT.Mazur.EllipticNodeTangentSwap
 public import FLT.Mazur.EllipticNodeTangentSwapLabel
 public import FLT.Mazur.EllipticNodeThirdIntersection
 public import FLT.Mazur.EllipticNodeTripleDepth
+public import FLT.Mazur.EllipticNodeTripleLaurentCharacter
 public import FLT.Mazur.EllipticNodeUnequalDepthAddition
 public import FLT.Mazur.EllipticNodeUniformizerLabel
 public import FLT.Mazur.EllipticNodeVariableChangeLabel
