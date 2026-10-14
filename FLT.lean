@@ -6700,6 +6700,7 @@ public import FLT.Mazur.PolygonCompletePointOriginChart
 public import FLT.Mazur.PolygonCompletePointOriginIdeal
 public import FLT.Mazur.PolygonCompletePointOriginNeighborhood
 public import FLT.Mazur.PolygonCompletePointOriginParameter
+public import FLT.Mazur.PolygonCompletePointOriginParameterRestriction
 public import FLT.Mazur.PolygonCompletePointOriginReduction
 public import FLT.Mazur.PolygonCompletePointPointedCubic
 public import FLT.Mazur.PolygonCompletePointPoleFrame
