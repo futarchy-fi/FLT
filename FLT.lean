@@ -4152,6 +4152,7 @@ public import FLT.Mazur.EllipticNodeDifferenceLabels
 public import FLT.Mazur.EllipticNodeDiscriminantDepth
 public import FLT.Mazur.EllipticNodeEqualDepthSlope
 public import FLT.Mazur.EllipticNodeFirstBranchSlope
+public import FLT.Mazur.EllipticNodeFirstSumLaurentCharacter
 public import FLT.Mazur.EllipticNodeFirstTriple
 public import FLT.Mazur.EllipticNodeGaloisLabel
 public import FLT.Mazur.EllipticNodeGenericNonsingular
