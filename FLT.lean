@@ -7209,6 +7209,7 @@ public import FLT.Mazur.PolygonInfinitesimalRotationBaseChange
 public import FLT.Mazur.PolygonInfinitesimalRotationDivisor
 public import FLT.Mazur.PolygonInfinitesimalScaling
 public import FLT.Mazur.PolygonInfinitesimalScalingNaturality
+public import FLT.Mazur.PolygonInfinitesimalScalingProduct
 public import FLT.Mazur.PolygonInfinitesimalSectionRings
 public import FLT.Mazur.PolygonInfinitesimalSeparated
 public import FLT.Mazur.PolygonInfinitesimalSpecialDivisor
