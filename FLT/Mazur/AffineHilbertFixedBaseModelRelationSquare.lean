@@ -29,7 +29,7 @@ variable {R R' : Type} [CommRing R] [CommRing R']
   (V : Over (Spec (.of R))) (W : Over (Spec (.of R')))
   (t : (Over.map a).obj W ⟶ V) (c : (relativeFppfSheaf f).obj.obj (op V))
 local notation "q" => Limits.pullback.snd f a
-local instance : SmoothOfRelativeDimension 1 q :=
+local instance fixedBaseModelRelationSquareSmooth : SmoothOfRelativeDimension 1 q :=
   MorphismProperty.pullback_snd _ _ inferInstance
 local notation "h" => fixedBaseAmple f a hL
 local notation "c'" => fixedBaseTranslationClass f a V W t c
