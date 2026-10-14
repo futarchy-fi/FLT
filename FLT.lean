@@ -10275,6 +10275,7 @@ public import FLT.Mazur.WeierstrassDividedPositiveSplitRetainedConicCharts
 public import FLT.Mazur.WeierstrassDividedPositiveSplitRetainedLineCharts
 public import FLT.Mazur.WeierstrassDividedPositiveSplitRetainedLineExt
 public import FLT.Mazur.WeierstrassDividedPositiveSplitRetainedNodeExt
+public import FLT.Mazur.WeierstrassDividedPositiveSplitTerminalMap
 public import FLT.Mazur.WeierstrassDividedPrecedingAtlasRange
 public import FLT.Mazur.WeierstrassDividedPreviousBoundaryAlgebra
 public import FLT.Mazur.WeierstrassDividedProjectiveLift
