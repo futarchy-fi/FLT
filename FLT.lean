@@ -10265,6 +10265,7 @@ public import FLT.Mazur.WeierstrassDividedPositiveSplitCycleIndices
 public import FLT.Mazur.WeierstrassDividedPositiveSplitCycleRanges
 public import FLT.Mazur.WeierstrassDividedPositiveSplitEndDescRecovery
 public import FLT.Mazur.WeierstrassDividedPositiveSplitGlobalDesc
+public import FLT.Mazur.WeierstrassDividedPositiveSplitGlobalDescRecovery
 public import FLT.Mazur.WeierstrassDividedPositiveSplitHomExt
 public import FLT.Mazur.WeierstrassDividedPositiveSplitIndexedDescRecovery
 public import FLT.Mazur.WeierstrassDividedPositiveSplitIndexedExt
