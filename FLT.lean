@@ -12285,6 +12285,7 @@ public import FLT.Mazur.WeierstrassTripleInnerAdditionCover
 public import FLT.Mazur.WeierstrassTripleInnerOutputRegular
 public import FLT.Mazur.WeierstrassTripleSlopeAlgebra
 public import FLT.Mazur.WeierstrassTripleTangentSlopeAlgebra
+public import FLT.Mazur.WeierstrassUniversalTranslationSmoothLocus
 public import FLT.Mazur.WeierstrassVariableChangeAddition
 public import FLT.Mazur.WeierstrassVariableChangeAdditionFormula
 public import FLT.Mazur.WeierstrassVariableChangeAffineProduct
