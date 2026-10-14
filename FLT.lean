@@ -3349,6 +3349,7 @@ public import FLT.Mazur.CartesianLineFieldCohomology
 public import FLT.Mazur.CartesianMonoGroup
 public import FLT.Mazur.CartesianMonoMonoid
 public import FLT.Mazur.CartesianMorphismRecovery
+public import FLT.Mazur.CartesianOpenIsoBaseChange
 public import FLT.Mazur.CartesianOpenIsoRestriction
 public import FLT.Mazur.CartesianOpenSectionMap
 public import FLT.Mazur.CartesianSectionRestriction
