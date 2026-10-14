@@ -4190,6 +4190,7 @@ public import FLT.Mazur.EllipticNodeNormalizedBranchAddition
 public import FLT.Mazur.EllipticNodeNormalizedMiddleAddition
 public import FLT.Mazur.EllipticNodeNormalizedMixedAddition
 public import FLT.Mazur.EllipticNodeNormalizedParameters
+public import FLT.Mazur.EllipticNodeNormalizedSmoothTranslation
 public import FLT.Mazur.EllipticNodeOppositeAddition
 public import FLT.Mazur.EllipticNodeOppositeCharacterAlgebra
 public import FLT.Mazur.EllipticNodeOppositeLabels
