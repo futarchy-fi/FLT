@@ -10260,6 +10260,7 @@ public import FLT.Mazur.WeierstrassDividedPositiveSplitCycleRanges
 public import FLT.Mazur.WeierstrassDividedPositiveSplitHomExt
 public import FLT.Mazur.WeierstrassDividedPositiveSplitIndexedExt
 public import FLT.Mazur.WeierstrassDividedPositiveSplitInitialExt
+public import FLT.Mazur.WeierstrassDividedPositiveSplitInitialNodeCompatibility
 public import FLT.Mazur.WeierstrassDividedPositiveSplitInitialNodeDesc
 public import FLT.Mazur.WeierstrassDividedPositiveSplitLocalDescRecovery
 public import FLT.Mazur.WeierstrassDividedPositiveSplitLocalDescent
