@@ -2812,6 +2812,7 @@ public import FLT.Mazur.AffineHilbertFiniteModelPrincipalFppf
 public import FLT.Mazur.AffineHilbertFiniteModelPrincipalInverses
 public import FLT.Mazur.AffineHilbertFiniteModelSourceBranch
 public import FLT.Mazur.AffineHilbertFiniteModelUnramifiedInverses
+public import FLT.Mazur.AffineHilbertFiniteSelectorKernel
 public import FLT.Mazur.AffineHilbertFiniteTensorCover
 public import FLT.Mazur.AffineHilbertFixedBaseEnvelope
 public import FLT.Mazur.AffineHilbertFixedBaseInvariants
