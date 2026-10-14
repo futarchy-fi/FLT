@@ -6993,6 +6993,7 @@ public import FLT.Mazur.PolygonSinglePointNodeFrame
 public import FLT.Mazur.PolygonSinglePointPowerNormalization
 public import FLT.Mazur.PolygonSinglePointPowerSections
 public import FLT.Mazur.PolygonSinglePointScalarMatching
+public import FLT.Mazur.PolygonSmoothComponentMembership
 public import FLT.Mazur.PolygonSmoothConnectedComponents
 public import FLT.Mazur.PolygonSmoothLocus
 public import FLT.Mazur.PolygonSmoothRelativeDimension
