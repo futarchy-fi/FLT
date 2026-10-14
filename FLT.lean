@@ -7767,6 +7767,7 @@ public import FLT.Mazur.PrincipalOpenIntersectionModels
 public import FLT.Mazur.PrincipalOpenNormalization
 public import FLT.Mazur.PrincipalOpenSectionAlgebra
 public import FLT.Mazur.PrincipalOpenTensor
+public import FLT.Mazur.PrincipalOpenTensorEvaluation
 public import FLT.Mazur.PrincipalOpenTensorGeometry
 public import FLT.Mazur.PrincipalOpenTensorPullback
 public import FLT.Mazur.PrincipalOpenTensorRestriction
