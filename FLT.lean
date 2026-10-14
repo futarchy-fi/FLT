@@ -2849,6 +2849,7 @@ public import FLT.Mazur.AffineHilbertLocalizedTensorFormula
 public import FLT.Mazur.AffineHilbertModelEffectiveDescent
 public import FLT.Mazur.AffineHilbertModelEffectivePicard
 public import FLT.Mazur.AffineHilbertModelEtale
+public import FLT.Mazur.AffineHilbertModelEtaleBranchCoverage
 public import FLT.Mazur.AffineHilbertModelEtaleLocalImage
 public import FLT.Mazur.AffineHilbertModelEtaleNeighborhoods
 public import FLT.Mazur.AffineHilbertModelFlatFppf
