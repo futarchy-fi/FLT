@@ -5,7 +5,7 @@ Authors: The FLT Project
 -/
 module
 
-public import FLT.Mazur.SchemeRelationReanchoring
+public import FLT.Mazur.SchemeRelationOrbitAtlasKernel
 public import FLT.Mazur.SchemeRelationEtaleBranchPropagation
 
 /-!
@@ -28,78 +28,61 @@ variable {S T Z : Scheme.{u}} {D A : Over S} {p q : D ⟶ A}
   (h : p.left ≫ w = q.left ≫ w) (a : Z ⟶ A.left)
   (ha : IsPullback (fst p.left q.left a) (snd p.left q.left a) (a ≫ w) (a ≫ w))
 local notation "b" => SchemeRelationEtaleBranchPropagation.branch p.left q.left a
-local notation "r" => pullback.fst q.left a
-local notation "s" => pullback.snd q.left a
-variable {Y : Scheme.{u}} (x y : Y ⟶ pullback q.left a)
-  (hxy : x ≫ (SchemeRelationEtaleBranchPropagation.branch p.left q.left a ≫ w) =
-    y ≫ (SchemeRelationEtaleBranchPropagation.branch p.left q.left a ≫ w))
-
-include h hxy in
-/-- Coefficient equality retains two independent seed coordinates. -/
-theorem seed_condition : (x ≫ s) ≫ (a ≫ w) = (y ≫ s) ≫ (a ≫ w) := by
-  simpa only [Category.assoc,
-    ← SchemeRelationEtaleBranchPropagation.branch_comp p.left q.left w h a] using hxy
-
-/-- The seed kernel constructs an actual original arrow between the seed coordinates. -/
-def seedArrow : Y ⟶ D.left :=
-  ha.lift (x ≫ s) (y ≫ s) (seed_condition w h a x y hxy) ≫ arrow p.left q.left a
-
-@[reassoc]
-theorem seedArrow_fst : seedArrow w h a ha x y hxy ≫ p.left = (x ≫ r) ≫ q.left := by
-  rw [seedArrow, Category.assoc, arrow_fst, ← Category.assoc, ha.lift_fst]
-  simp only [Category.assoc, pullback.condition]
-
-@[reassoc]
-theorem seedArrow_snd : seedArrow w h a ha x y hxy ≫ q.left = (y ≫ r) ≫ q.left := by
-  rw [seedArrow, Category.assoc, arrow_snd, ← Category.assoc, ha.lift_snd]
-  simp only [Category.assoc, pullback.condition]
-
-/-- Transport the seed arrow back along the original arrows, without identifying seeds. -/
-def kernelArrow : Y ⟶ D.left :=
-  untransportOriginal e (x ≫ r) (y ≫ r) (seedArrow w h a ha x y hxy)
-    (seedArrow_fst w h a ha x y hxy) (seedArrow_snd w h a ha x y hxy)
-
-@[reassoc]
-theorem kernelArrow_fst : kernelArrow e w h a ha x y hxy ≫ p.left = x ≫ b := by
-  rw [kernelArrow, untransportOriginal_fst]
-  rfl
-
-@[reassoc]
-theorem kernelArrow_snd : kernelArrow e w h a ha x y hxy ≫ q.left = y ≫ b := by
-  rw [kernelArrow, untransportOriginal_snd]
-  rfl
-
-/-- The full two-coordinate restricted relation receives every coefficient kernel test. -/
-def kernelLift : Y ⟶ doubleDomain p.left q.left b :=
-  lift p.left q.left b (kernelArrow e w h a ha x y hxy) x y
-    (kernelArrow_fst e w h a ha x y hxy) (kernelArrow_snd e w h a ha x y hxy)
-
-@[reassoc]
-theorem kernelLift_fst : kernelLift e w h a ha x y hxy ≫ fst p.left q.left b = x :=
-  lift_fst ..
-
-@[reassoc]
-theorem kernelLift_snd : kernelLift e w h a ha x y hxy ≫ snd p.left q.left b = y :=
-  lift_snd ..
-
-include h in
-/-- The original coefficient equation holds on the entire propagated relation. -/
-theorem branch_condition : fst p.left q.left b ≫ (b ≫ w) =
-    snd p.left q.left b ≫ (b ≫ w) := by
-  rw [← Category.assoc, ← Category.assoc, ← arrow_fst, ← arrow_snd]
-  rw [Category.assoc, Category.assoc, h]
 
 include e h ha in
-/-- A full nonsplit seed kernel constructs the full kernel on the propagated source. -/
+/-- The existing full orbit kernel retains the original coefficient morphism. -/
 theorem branch_isPullback : IsPullback (fst p.left q.left b) (snd p.left q.left b)
     (b ≫ w) (b ≫ w) := by
-  refine IsPullback.of_isLimit (PullbackCone.IsLimit.mk (branch_condition w h a)
-    (fun c ↦ kernelLift e w h a ha c.fst c.snd c.condition)
-    (fun c ↦ kernelLift_fst e w h a ha c.fst c.snd c.condition)
-    (fun c ↦ kernelLift_snd e w h a ha c.fst c.snd c.condition) ?_)
-  intro c z hz₁ hz₂
-  apply SchemeRelationReanchoring.endpoint_ext e b
-  · exact hz₁.trans (kernelLift_fst e w h a ha c.fst c.snd c.condition).symm
-  · exact hz₂.trans (kernelLift_snd e w h a ha c.fst c.snd c.condition).symm
+  rw [SchemeRelationEtaleBranchPropagation.branch_comp p.left q.left w h a]
+  exact SchemeRelationOrbitAtlas.model_isPullback e a (a ≫ w) ha
+
+/-- The propagated coefficient kernel has an actual original arrow on the entire scheme. -/
+def branchKernelLift : pullback (b ≫ w) (b ≫ w) ⟶ D.left :=
+  (branch_isPullback e w h a ha).lift (pullback.fst _ _) (pullback.snd _ _)
+    pullback.condition ≫ arrow p.left q.left b
+
+@[reassoc]
+theorem branchKernelLift_fst : branchKernelLift e w h a ha ≫ p.left =
+    pullback.fst (b ≫ w) (b ≫ w) ≫ b := by
+  rw [branchKernelLift, Category.assoc, arrow_fst, IsPullback.lift_fst_assoc]
+
+@[reassoc]
+theorem branchKernelLift_snd : branchKernelLift e w h a ha ≫ q.left =
+    pullback.snd (b ≫ w) (b ≫ w) ≫ b := by
+  rw [branchKernelLift, Category.assoc, arrow_snd, IsPullback.lift_snd_assoc]
+
+/-- The lift preserves the canonical map of full scheme kernels. -/
+theorem branchKernelLift_comp : branchKernelLift e w h a ha ≫ pullback.lift p.left q.left h =
+    pullback.map (b ≫ w) (b ≫ w) w w b b (𝟙 T)
+      (Category.comp_id _) (Category.comp_id _) := by
+  apply pullback.hom_ext
+  · simp only [Category.assoc, pullback.lift_fst, branchKernelLift_fst, pullback.map]
+  · simp only [Category.assoc, pullback.lift_snd, branchKernelLift_snd, pullback.map]
+
+include e ha in
+/-- All residue-field branches above two propagated endpoints lie in the original kernel image. -/
+theorem mem_image_of_endpoints (x : (pullback w w : Scheme))
+    (hx : pullback.fst w w x ∈ Set.range b)
+    (hy : pullback.snd w w x ∈ Set.range b) :
+    x ∈ Set.range (pullback.lift p.left q.left h) := by
+  have hr : x ∈ Set.range (pullback.map (b ≫ w) (b ≫ w) w w b b (𝟙 T)
+      (Category.comp_id _) (Category.comp_id _)) := by
+    rw [Scheme.Pullback.range_map]
+    exact ⟨hx, hy⟩
+  obtain ⟨z, hz⟩ := hr
+  exact ⟨branchKernelLift e w h a ha z,
+    (congrArg (fun t ↦ t z) (branchKernelLift_comp e w h a ha)).trans hz⟩
+
+include e ha in
+/-- Source orbit coverage yields the whole coefficient kernel fiber, without a monic seed. -/
+theorem fiber_subset_image (t : T)
+    (hc : ∀ x : A.left, w x = t → x ∈ Set.range b) :
+    ∀ x : (pullback w w : Scheme), (pullback.fst w w ≫ w) x = t →
+      x ∈ Set.range (pullback.lift p.left q.left h) := by
+  intro x hx
+  apply mem_image_of_endpoints e w h a ha x (hc _ hx)
+  apply hc
+  have he := congrArg (fun g ↦ g x) (pullback.condition (f := w) (g := w))
+  exact he.symm.trans hx
 
 end FLT.Mazur.SchemeRelationNonsplitSeed
