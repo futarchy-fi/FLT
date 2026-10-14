@@ -2926,6 +2926,7 @@ public import FLT.Mazur.AffineHilbertTranslationSourceCartesian
 public import FLT.Mazur.AffineHilbertTranslationSourceCoefficients
 public import FLT.Mazur.AffineHilbertTranslationSourceCover
 public import FLT.Mazur.AffineHilbertTripleComposition
+public import FLT.Mazur.AffineHilbertUnramifiedSplitOrbits
 public import FLT.Mazur.AffineIdealContainment
 public import FLT.Mazur.AffineIdealCoordinates
 public import FLT.Mazur.AffineIdealPowerExtension
@@ -3421,6 +3422,7 @@ public import FLT.Mazur.CartesianCoefficientSymmetry
 public import FLT.Mazur.CartesianCoefficientTransport
 public import FLT.Mazur.CartesianCoefficientTransportKernelPair
 public import FLT.Mazur.CartesianCoefficientTransportNaturality
+public import FLT.Mazur.CartesianFiniteFibers
 public import FLT.Mazur.CartesianHomMarkingParameter
 public import FLT.Mazur.CartesianIdentityFactorization
 public import FLT.Mazur.CartesianIdentityFiniteNeighborhood
@@ -6626,6 +6628,8 @@ public import FLT.Mazur.PolygonClosedCubicNonconstant
 public import FLT.Mazur.PolygonClosedCubicOmittedChart
 public import FLT.Mazur.PolygonClosedCubicOmittedConstant
 public import FLT.Mazur.PolygonClosedCubicRetainedLine
+public import FLT.Mazur.PolygonClosedCubicSmoothTorus
+public import FLT.Mazur.PolygonClosedCubicTorus
 public import FLT.Mazur.PolygonClosedEvaluationLifting
 public import FLT.Mazur.PolygonClosedScalarLifting
 public import FLT.Mazur.PolygonCoconeComparison
@@ -6856,6 +6860,7 @@ public import FLT.Mazur.PolygonCompletePointFirstOrderOpen
 public import FLT.Mazur.PolygonCompletePointFunctionDimensions
 public import FLT.Mazur.PolygonCompletePointFunctionNumerators
 public import FLT.Mazur.PolygonCompletePointGenericCubicIso
+public import FLT.Mazur.PolygonCompletePointGenericNeighborhood
 public import FLT.Mazur.PolygonCompletePointGlobalFunctions
 public import FLT.Mazur.PolygonCompletePointHigherMonomials
 public import FLT.Mazur.PolygonCompletePointHomogeneousEquation
@@ -6863,8 +6868,10 @@ public import FLT.Mazur.PolygonCompletePointIdentityAffine
 public import FLT.Mazur.PolygonCompletePointIdentityAffineMarking
 public import FLT.Mazur.PolygonCompletePointIdentityAffineQuotient
 public import FLT.Mazur.PolygonCompletePointIdentityBaseChange
+public import FLT.Mazur.PolygonCompletePointIdentityClosedTorus
 public import FLT.Mazur.PolygonCompletePointIdentityEquation
 public import FLT.Mazur.PolygonCompletePointIdentityFinite
+public import FLT.Mazur.PolygonCompletePointIdentityGroup
 public import FLT.Mazur.PolygonCompletePointIdentityLocalIso
 public import FLT.Mazur.PolygonCompletePointIdentityNeighborhoodIso
 public import FLT.Mazur.PolygonCompletePointIdentityNoetherian
@@ -6918,14 +6925,17 @@ public import FLT.Mazur.PolygonCompletePointRelativeAffinization
 public import FLT.Mazur.PolygonCompletePointRelativeCoordinateRing
 public import FLT.Mazur.PolygonCompletePointRelativeCoordinateSurjective
 public import FLT.Mazur.PolygonCompletePointRelativeUniversal
+public import FLT.Mazur.PolygonCompletePointResidueNeighborhood
 public import FLT.Mazur.PolygonCompletePointSectionBaseAlgebra
 public import FLT.Mazur.PolygonCompletePointSectionBaseChange
 public import FLT.Mazur.PolygonCompletePointSectionFree
 public import FLT.Mazur.PolygonCompletePointSectionProjIso
 public import FLT.Mazur.PolygonCompletePointSectionRank
 public import FLT.Mazur.PolygonCompletePointSectionRingIso
+public import FLT.Mazur.PolygonCompletePointSmoothIso
 public import FLT.Mazur.PolygonCompletePointSpecifiedBasis
 public import FLT.Mazur.PolygonCompletePointSurjective
+public import FLT.Mazur.PolygonCompletePointTorusNeighborhood
 public import FLT.Mazur.PolygonCompletePointWeierstrassEquation
 public import FLT.Mazur.PolygonCompletePrincipalClosedFiber
 public import FLT.Mazur.PolygonCompleteProjectiveRotation
@@ -7912,6 +7922,7 @@ public import FLT.Mazur.ProperFiberTensorComplex
 public import FLT.Mazur.ProperFieldCohomologyBaseChange
 public import FLT.Mazur.ProperFiniteFiberNeighborhood
 public import FLT.Mazur.ProperFinitePresentationEnvelope
+public import FLT.Mazur.ProperFunctionSheafIso
 public import FLT.Mazur.ProperFunctionSheafSurjective
 public import FLT.Mazur.ProperGeometricAcyclicDirectImage
 public import FLT.Mazur.ProperGeometricRankOneOpen
@@ -8764,6 +8775,11 @@ public import FLT.Mazur.SchemeRelationPrincipalTensorSections
 public import FLT.Mazur.SchemeRelationRestrictionComposition
 public import FLT.Mazur.SchemeRelationRestrictionRechart
 public import FLT.Mazur.SchemeRelationSeedOrbit
+public import FLT.Mazur.SchemeRelationSplitOrbit
+public import FLT.Mazur.SchemeRelationSplitOrbitAffineSeed
+public import FLT.Mazur.SchemeRelationSplitOrbitKernel
+public import FLT.Mazur.SchemeRelationSplitOrbitOpen
+public import FLT.Mazur.SchemeRelationSplitOrbitQuotient
 public import FLT.Mazur.SchemeRelationTensorAlgebra
 public import FLT.Mazur.SchemeRelationTensorCocycle
 public import FLT.Mazur.SchemeRelationTensorCoordinates
@@ -8777,6 +8793,7 @@ public import FLT.Mazur.SchemeSectionTransportNaturality
 public import FLT.Mazur.SchemeSmoothLocusQuotient
 public import FLT.Mazur.SchemeSourceTestOverlapRecognition
 public import FLT.Mazur.SchemeSplitEtaleSourceSeed
+public import FLT.Mazur.SchemeSplitUnramifiedSourceSeed
 public import FLT.Mazur.SchemeTranslationNormFiber
 public import FLT.Mazur.SchemeTranslationNormGluing
 public import FLT.Mazur.SchemeTranslationNormLocal
