@@ -8849,6 +8849,7 @@ public import FLT.Mazur.SchemeRelationOpenFunctionDescent
 public import FLT.Mazur.SchemeRelationOpenInvariantRings
 public import FLT.Mazur.SchemeRelationOpenSelectorDiagram
 public import FLT.Mazur.SchemeRelationOpenSelectorGluing
+public import FLT.Mazur.SchemeRelationOpenSelectorGround
 public import FLT.Mazur.SchemeRelationOpenSelectorOverlap
 public import FLT.Mazur.SchemeRelationOpenSelectorProjection
 public import FLT.Mazur.SchemeRelationOpenSelectorRestriction
