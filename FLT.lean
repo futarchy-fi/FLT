@@ -8916,6 +8916,7 @@ public import FLT.Mazur.SchemeRelationPrincipalTensorSections
 public import FLT.Mazur.SchemeRelationReanchoring
 public import FLT.Mazur.SchemeRelationRestrictionComposition
 public import FLT.Mazur.SchemeRelationRestrictionRechart
+public import FLT.Mazur.SchemeRelationSeedKernelTransport
 public import FLT.Mazur.SchemeRelationSeedOrbit
 public import FLT.Mazur.SchemeRelationSeedSelector
 public import FLT.Mazur.SchemeRelationSeedSelectorGeometry
