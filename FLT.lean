@@ -2845,6 +2845,7 @@ public import FLT.Mazur.AffineHilbertInverseFiniteBranches
 public import FLT.Mazur.AffineHilbertJointEtaleNeighborhoods
 public import FLT.Mazur.AffineHilbertJointOrbitSeed
 public import FLT.Mazur.AffineHilbertJointSourceBranch
+public import FLT.Mazur.AffineHilbertJointSplitSeed
 public import FLT.Mazur.AffineHilbertLocalTensorInvariants
 public import FLT.Mazur.AffineHilbertLocalizedCoefficients
 public import FLT.Mazur.AffineHilbertLocalizedComposition
