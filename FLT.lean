@@ -4181,6 +4181,7 @@ public import FLT.Mazur.EllipticNodeOppositeSlope
 public import FLT.Mazur.EllipticNodePointBranches
 public import FLT.Mazur.EllipticNodePointCoordinates
 public import FLT.Mazur.EllipticNodePointDepth
+public import FLT.Mazur.EllipticNodeReflectedMixedCharacter
 public import FLT.Mazur.EllipticNodeSameBranchAddition
 public import FLT.Mazur.EllipticNodeSameBranchLabels
 public import FLT.Mazur.EllipticNodeSameBranchSlope
