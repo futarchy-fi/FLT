@@ -2787,6 +2787,7 @@ public import FLT.Mazur.AffineHilbertFiniteBranchInvariants
 public import FLT.Mazur.AffineHilbertFiniteBranches
 public import FLT.Mazur.AffineHilbertFiniteEnvelopeEffective
 public import FLT.Mazur.AffineHilbertFiniteEnvelopeKernel
+public import FLT.Mazur.AffineHilbertFiniteEnvelopePicard
 public import FLT.Mazur.AffineHilbertFiniteEnvelopeSeed
 public import FLT.Mazur.AffineHilbertFiniteFiberPrincipal
 public import FLT.Mazur.AffineHilbertFiniteFreeGroundBase
