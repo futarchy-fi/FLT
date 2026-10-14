@@ -6690,6 +6690,7 @@ public import FLT.Mazur.PolygonCompletePointFunctionNumerators
 public import FLT.Mazur.PolygonCompletePointHomogeneousEquation
 public import FLT.Mazur.PolygonCompletePointIdentityAffine
 public import FLT.Mazur.PolygonCompletePointIdentityAffineMarking
+public import FLT.Mazur.PolygonCompletePointIdentityAffineQuotient
 public import FLT.Mazur.PolygonCompletePointIdentityEquation
 public import FLT.Mazur.PolygonCompletePointIdentityFinite
 public import FLT.Mazur.PolygonCompletePointInfinity
