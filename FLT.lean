@@ -6155,6 +6155,7 @@ public import FLT.Mazur.OneGonDenominatorEqualizer
 public import FLT.Mazur.OneGonFormalCoordinates
 public import FLT.Mazur.OneGonGlobalPushout
 public import FLT.Mazur.OneGonGluing
+public import FLT.Mazur.OneGonIntegral
 public import FLT.Mazur.OneGonLocalDescent
 public import FLT.Mazur.OneGonLocalizedEqualizer
 public import FLT.Mazur.OneGonMobiusConductors
