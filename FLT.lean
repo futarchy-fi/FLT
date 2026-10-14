@@ -6756,6 +6756,8 @@ public import FLT.Mazur.PolygonCompleteGeometricallyConnected
 public import FLT.Mazur.PolygonCompleteGeometricallyReduced
 public import FLT.Mazur.PolygonCompleteH1Rank
 public import FLT.Mazur.PolygonCompleteH1Reduction
+public import FLT.Mazur.PolygonCompleteIdentityChartAtlas
+public import FLT.Mazur.PolygonCompleteIdentityChartOperations
 public import FLT.Mazur.PolygonCompleteLineCohomology
 public import FLT.Mazur.PolygonCompleteLineHomExt
 public import FLT.Mazur.PolygonCompleteLineHomReconstruction
@@ -6878,6 +6880,7 @@ public import FLT.Mazur.PolygonCompletePointIdentityBaseChange
 public import FLT.Mazur.PolygonCompletePointIdentityClosedTorus
 public import FLT.Mazur.PolygonCompletePointIdentityEquation
 public import FLT.Mazur.PolygonCompletePointIdentityFinite
+public import FLT.Mazur.PolygonCompletePointIdentityGeneric
 public import FLT.Mazur.PolygonCompletePointIdentityGroup
 public import FLT.Mazur.PolygonCompletePointIdentityLocalIso
 public import FLT.Mazur.PolygonCompletePointIdentityNeighborhoodIso
@@ -6915,6 +6918,7 @@ public import FLT.Mazur.PolygonCompletePointOriginParameterRestriction
 public import FLT.Mazur.PolygonCompletePointOriginPositiveLine
 public import FLT.Mazur.PolygonCompletePointOriginProjIso
 public import FLT.Mazur.PolygonCompletePointOriginReduction
+public import FLT.Mazur.PolygonCompletePointOriginalBaseGroup
 public import FLT.Mazur.PolygonCompletePointPointedCubic
 public import FLT.Mazur.PolygonCompletePointPoleFrame
 public import FLT.Mazur.PolygonCompletePointPoleFunctions
@@ -6948,6 +6952,11 @@ public import FLT.Mazur.PolygonCompletePrincipalClosedFiber
 public import FLT.Mazur.PolygonCompleteProjectiveRotation
 public import FLT.Mazur.PolygonCompleteRefinementPointLine
 public import FLT.Mazur.PolygonCompleteRefinementSquares
+public import FLT.Mazur.PolygonCompleteRotatedIdentityClosed
+public import FLT.Mazur.PolygonCompleteRotatedIdentityCover
+public import FLT.Mazur.PolygonCompleteRotatedIdentityMarking
+public import FLT.Mazur.PolygonCompleteRotatedIdentityOpen
+public import FLT.Mazur.PolygonCompleteRotatedIdentityOverlap
 public import FLT.Mazur.PolygonCompleteRotation
 public import FLT.Mazur.PolygonCompleteSmoothCyclicMarking
 public import FLT.Mazur.PolygonCompleteSmoothDimensionOpen
