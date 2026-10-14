@@ -8860,6 +8860,7 @@ public import FLT.Mazur.SchemeRelationReanchoring
 public import FLT.Mazur.SchemeRelationRestrictionComposition
 public import FLT.Mazur.SchemeRelationRestrictionRechart
 public import FLT.Mazur.SchemeRelationSeedOrbit
+public import FLT.Mazur.SchemeRelationSeedSelector
 public import FLT.Mazur.SchemeRelationSelectorEtale
 public import FLT.Mazur.SchemeRelationSelectorInvariant
 public import FLT.Mazur.SchemeRelationSelectorKernel
