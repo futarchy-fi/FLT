@@ -4146,6 +4146,7 @@ public import FLT.Mazur.EllipticNodeCoordinateUnique
 public import FLT.Mazur.EllipticNodeDepthNormalization
 public import FLT.Mazur.EllipticNodeDepthStep
 public import FLT.Mazur.EllipticNodeDifferenceCoordinates
+public import FLT.Mazur.EllipticNodeDifferenceFactorResidues
 public import FLT.Mazur.EllipticNodeDifferenceFactors
 public import FLT.Mazur.EllipticNodeDifferenceLabels
 public import FLT.Mazur.EllipticNodeDiscriminantDepth
