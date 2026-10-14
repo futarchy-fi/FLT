@@ -8895,6 +8895,7 @@ public import FLT.Mazur.StandardSmoothLocalCartier
 public import FLT.Mazur.StructureCoefficientComposition
 public import FLT.Mazur.StructureCohomologyFinite
 public import FLT.Mazur.StructureCohomologyOverIso
+public import FLT.Mazur.StructureDirectImageComparison
 public import FLT.Mazur.StructureDirectImageHZero
 public import FLT.Mazur.StructureDirectImageSections
 public import FLT.Mazur.StructureIdealPowerCohomology
