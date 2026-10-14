@@ -8871,6 +8871,7 @@ public import FLT.Mazur.SchemeRelationOpenSelectorKernel
 public import FLT.Mazur.SchemeRelationOpenSelectorKernelArrow
 public import FLT.Mazur.SchemeRelationOpenSelectorOverlap
 public import FLT.Mazur.SchemeRelationOpenSelectorProjection
+public import FLT.Mazur.SchemeRelationOpenSelectorRelativeKernel
 public import FLT.Mazur.SchemeRelationOpenSelectorRestriction
 public import FLT.Mazur.SchemeRelationOpenSelectorTestCharts
 public import FLT.Mazur.SchemeRelationOrbitAtlas
