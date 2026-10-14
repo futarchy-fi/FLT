@@ -4151,6 +4151,7 @@ public import FLT.Mazur.EllipticNodeComponentInverse
 public import FLT.Mazur.EllipticNodeComponentLabel
 public import FLT.Mazur.EllipticNodeCoordinateFactor
 public import FLT.Mazur.EllipticNodeCoordinateUnique
+public import FLT.Mazur.EllipticNodeCyclicPeriodRoot
 public import FLT.Mazur.EllipticNodeDepthNormalization
 public import FLT.Mazur.EllipticNodeDepthStep
 public import FLT.Mazur.EllipticNodeDifferenceCoordinates
