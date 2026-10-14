@@ -6681,6 +6681,7 @@ public import FLT.Mazur.PolygonCompletePointIrreducibleAffine
 public import FLT.Mazur.PolygonCompletePointLeadingClasses
 public import FLT.Mazur.PolygonCompletePointLeadingProducts
 public import FLT.Mazur.PolygonCompletePointMarkedCoordinates
+public import FLT.Mazur.PolygonCompletePointMarkingRatios
 public import FLT.Mazur.PolygonCompletePointMonomialBasis
 public import FLT.Mazur.PolygonCompletePointNewSections
 public import FLT.Mazur.PolygonCompletePointNonsingular
