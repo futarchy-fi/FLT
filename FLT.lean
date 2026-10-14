@@ -2783,6 +2783,7 @@ public import FLT.Mazur.AffineHilbertFiniteGroundBaseRefinement
 public import FLT.Mazur.AffineHilbertFiniteKernelAlgebra
 public import FLT.Mazur.AffineHilbertFiniteKernelEquations
 public import FLT.Mazur.AffineHilbertFiniteKernelModel
+public import FLT.Mazur.AffineHilbertFiniteModelFlatPicard
 public import FLT.Mazur.AffineHilbertFiniteModelFlatStratum
 public import FLT.Mazur.AffineHilbertFiniteModelGenericEffectivity
 public import FLT.Mazur.AffineHilbertFiniteModelGenericFppf
