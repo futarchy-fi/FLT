@@ -4311,6 +4311,7 @@ public import FLT.Mazur.EllipticResolvedTerminalCharts
 public import FLT.Mazur.EllipticResolvedTerminalCover
 public import FLT.Mazur.EllipticResolvedTerminalSmoothCharts
 public import FLT.Mazur.EllipticResolvedTorsionInjectivity
+public import FLT.Mazur.EllipticRetainedBoundaryAtlas
 public import FLT.Mazur.EllipticRetainedLaurentCover
 public import FLT.Mazur.EllipticRetainedTrivializedCharts
 public import FLT.Mazur.EllipticRetainedTrivializedCover
