@@ -2848,6 +2848,7 @@ public import FLT.Mazur.AffineHilbertModelEffectiveDescent
 public import FLT.Mazur.AffineHilbertModelEffectivePicard
 public import FLT.Mazur.AffineHilbertModelEtale
 public import FLT.Mazur.AffineHilbertModelEtaleLocalImage
+public import FLT.Mazur.AffineHilbertModelEtaleNeighborhoods
 public import FLT.Mazur.AffineHilbertModelFlatFppf
 public import FLT.Mazur.AffineHilbertModelFppfDescent
 public import FLT.Mazur.AffineHilbertModelFppfLocalImage
