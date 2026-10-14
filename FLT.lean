@@ -8888,6 +8888,7 @@ public import FLT.Mazur.SchemeRelationMonicSeedQuotient
 public import FLT.Mazur.SchemeRelationMonicSeedQuotientCoverage
 public import FLT.Mazur.SchemeRelationMonicSeedSelection
 public import FLT.Mazur.SchemeRelationNestedKernel
+public import FLT.Mazur.SchemeRelationNonsplitSeedKernel
 public import FLT.Mazur.SchemeRelationOpenFunctionDescent
 public import FLT.Mazur.SchemeRelationOpenInvariantRings
 public import FLT.Mazur.SchemeRelationOpenSelectorCoequalization
