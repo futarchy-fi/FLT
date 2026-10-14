@@ -2839,6 +2839,8 @@ public import FLT.Mazur.AffineHilbertGroundBaseEnvelope
 public import FLT.Mazur.AffineHilbertGroundBaseEnvelopeLift
 public import FLT.Mazur.AffineHilbertGroundBaseFullFiber
 public import FLT.Mazur.AffineHilbertGroundBaseSource
+public import FLT.Mazur.AffineHilbertGroundRelativeCoverage
+public import FLT.Mazur.AffineHilbertGroundRelativeEtale
 public import FLT.Mazur.AffineHilbertInvariantAffineModel
 public import FLT.Mazur.AffineHilbertInvariantEnvelope
 public import FLT.Mazur.AffineHilbertInvariantFiniteType
@@ -2874,6 +2876,8 @@ public import FLT.Mazur.AffineHilbertModelSourceBranchCoverage
 public import FLT.Mazur.AffineHilbertMonicKernelGeometry
 public import FLT.Mazur.AffineHilbertMonicModelRelation
 public import FLT.Mazur.AffineHilbertMonicRelationGeometry
+public import FLT.Mazur.AffineHilbertMonicSeedArbitraryGround
+public import FLT.Mazur.AffineHilbertMonicSeedCanonicalGround
 public import FLT.Mazur.AffineHilbertMonicSeedCharts
 public import FLT.Mazur.AffineHilbertMonicSeedFiniteEtale
 public import FLT.Mazur.AffineHilbertMonicSeedGroundCoverage
@@ -8095,6 +8099,9 @@ public import FLT.Mazur.RelativeCartierIdealPullback
 public import FLT.Mazur.RelativeCartierMorphismBaseChange
 public import FLT.Mazur.RelativeCartierOriginalSquare
 public import FLT.Mazur.RelativeCoefficientBaseChange
+public import FLT.Mazur.RelativeCoefficientBaseChangeEtale
+public import FLT.Mazur.RelativeCoefficientSourceCartesian
+public import FLT.Mazur.RelativeCoefficientSourceImage
 public import FLT.Mazur.RelativeComparisonFiberIso
 public import FLT.Mazur.RelativeCoproductComponentPullback
 public import FLT.Mazur.RelativeCoproductPullCover
