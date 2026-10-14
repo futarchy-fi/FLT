@@ -6823,6 +6823,7 @@ public import FLT.Mazur.PolygonCompleteH1Reduction
 public import FLT.Mazur.PolygonCompleteIdentityActionCartesian
 public import FLT.Mazur.PolygonCompleteIdentityActionMultiplication
 public import FLT.Mazur.PolygonCompleteIdentityActionSectionProj
+public import FLT.Mazur.PolygonCompleteIdentityActionSmoothLift
 public import FLT.Mazur.PolygonCompleteIdentityActionTarget
 public import FLT.Mazur.PolygonCompleteIdentityActionUnchangedLift
 public import FLT.Mazur.PolygonCompleteIdentityChartAtlas
