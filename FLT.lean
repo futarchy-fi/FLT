@@ -4256,6 +4256,7 @@ public import FLT.Mazur.EllipticRepeatedCubicPoint
 public import FLT.Mazur.EllipticRepeatedCubicTranslation
 public import FLT.Mazur.EllipticResolvedComponentCharacterEquality
 public import FLT.Mazur.EllipticResolvedComponentDifference
+public import FLT.Mazur.EllipticResolvedLabelDifference
 public import FLT.Mazur.EllipticResolvedLaurentEquality
 public import FLT.Mazur.EllipticResolvedMiddleTranslationEquality
 public import FLT.Mazur.EllipticResolvedMixedTranslationEquality
