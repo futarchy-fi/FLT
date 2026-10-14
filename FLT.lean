@@ -4202,6 +4202,7 @@ public import FLT.Mazur.EllipticNodeParameterEvaluation
 public import FLT.Mazur.EllipticNodeParameterMixedAddition
 public import FLT.Mazur.EllipticNodeParameterSameBranch
 public import FLT.Mazur.EllipticNodeParameterSmoothAddition
+public import FLT.Mazur.EllipticNodeParameterTrivialization
 public import FLT.Mazur.EllipticNodeParameterUnits
 public import FLT.Mazur.EllipticNodePointBranches
 public import FLT.Mazur.EllipticNodePointCoordinates
