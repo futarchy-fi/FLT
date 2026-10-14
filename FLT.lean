@@ -8484,6 +8484,7 @@ public import FLT.Mazur.SchemeCoproductModuleGluing
 public import FLT.Mazur.SchemeCoproductSections
 public import FLT.Mazur.SchemeCrossCoverCocycle
 public import FLT.Mazur.SchemeCrossCoverOverlap
+public import FLT.Mazur.SchemeDenseOpenComparison
 public import FLT.Mazur.SchemeDescentAffineCharts
 public import FLT.Mazur.SchemeDescentCrossCoverCompatibility
 public import FLT.Mazur.SchemeDescentMapLaws
