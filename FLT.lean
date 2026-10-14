@@ -4220,6 +4220,7 @@ public import FLT.Mazur.EllipticNodeSecantReduction
 public import FLT.Mazur.EllipticNodeSecantSlope
 public import FLT.Mazur.EllipticNodeSecondSumLaurentCharacter
 public import FLT.Mazur.EllipticNodeSmallChangeLabel
+public import FLT.Mazur.EllipticNodeSpecializationEmbedding
 public import FLT.Mazur.EllipticNodeSumDepth
 public import FLT.Mazur.EllipticNodeTangent
 public import FLT.Mazur.EllipticNodeTangentSwap
