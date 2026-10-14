@@ -3784,6 +3784,7 @@ public import FLT.Mazur.DivisorClosedCokernel
 public import FLT.Mazur.DivisorCohomologicalDegree
 public import FLT.Mazur.DivisorCokernelProjection
 public import FLT.Mazur.DivisorComplementCanonical
+public import FLT.Mazur.DivisorComplementCanonicalUnitor
 public import FLT.Mazur.DivisorComplementExactPowers
 public import FLT.Mazur.DivisorComplementExhaustion
 public import FLT.Mazur.DivisorComplementFaithful
