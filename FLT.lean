@@ -6477,6 +6477,7 @@ public import FLT.Mazur.PolygonClosedCubicContractionCharts
 public import FLT.Mazur.PolygonClosedCubicContractionComparison
 public import FLT.Mazur.PolygonClosedCubicContractionDivisors
 public import FLT.Mazur.PolygonClosedCubicOmittedChart
+public import FLT.Mazur.PolygonClosedCubicOmittedConstant
 public import FLT.Mazur.PolygonClosedEvaluationLifting
 public import FLT.Mazur.PolygonClosedScalarLifting
 public import FLT.Mazur.PolygonCoconeComparison
