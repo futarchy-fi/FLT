@@ -10248,6 +10248,7 @@ public import FLT.Mazur.WeierstrassDividedPositiveEqualityTerminalLocalMaps
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityTerminalTensorDesc
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityWholeFiberAction
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityZero
+public import FLT.Mazur.WeierstrassDividedPositiveSplitBranchIndices
 public import FLT.Mazur.WeierstrassDividedPrecedingAtlasRange
 public import FLT.Mazur.WeierstrassDividedPreviousBoundaryAlgebra
 public import FLT.Mazur.WeierstrassDividedProjectiveLift
