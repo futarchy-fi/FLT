@@ -2753,6 +2753,7 @@ public import FLT.Mazur.AffineHilbertAssociativeFiniteBranches
 public import FLT.Mazur.AffineHilbertBoundedRelation
 public import FLT.Mazur.AffineHilbertBranchCompositionCoefficients
 public import FLT.Mazur.AffineHilbertCartesianEnvelope
+public import FLT.Mazur.AffineHilbertChangedOrbitDescent
 public import FLT.Mazur.AffineHilbertChangedOrbitKernel
 public import FLT.Mazur.AffineHilbertChangedOrbitOpen
 public import FLT.Mazur.AffineHilbertChangedOrbitSource
