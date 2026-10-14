@@ -8673,6 +8673,7 @@ public import FLT.Mazur.SchemeRelationInvariantTestEquality
 public import FLT.Mazur.SchemeRelationIsoInvariants
 public import FLT.Mazur.SchemeRelationJointModel
 public import FLT.Mazur.SchemeRelationJointModelEffective
+public import FLT.Mazur.SchemeRelationJointModelEtaleImage
 public import FLT.Mazur.SchemeRelationJointModelGenericFppf
 public import FLT.Mazur.SchemeRelationJointModelGeometry
 public import FLT.Mazur.SchemeRelationLocalFunctionDescent
