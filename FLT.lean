@@ -10175,6 +10175,7 @@ public import FLT.Mazur.WeierstrassDilatationResidueGeometry
 public import FLT.Mazur.WeierstrassDilatationResidueLaurent
 public import FLT.Mazur.WeierstrassDilatationResidueRetained
 public import FLT.Mazur.WeierstrassDilatationSaturation
+public import FLT.Mazur.WeierstrassDilatationSectionNodeCoordinates
 public import FLT.Mazur.WeierstrassDilatationShear
 public import FLT.Mazur.WeierstrassDilatationShearHorizontal
 public import FLT.Mazur.WeierstrassDilatationShearLaurentNormalForm
