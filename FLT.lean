@@ -6658,6 +6658,7 @@ public import FLT.Mazur.PolygonCompletePointCanonicalBasis
 public import FLT.Mazur.PolygonCompletePointCanonicalLine
 public import FLT.Mazur.PolygonCompletePointCanonicalPoleBasis
 public import FLT.Mazur.PolygonCompletePointComplementCoordinates
+public import FLT.Mazur.PolygonCompletePointComplementMonomials
 public import FLT.Mazur.PolygonCompletePointCoordinateEquiv
 public import FLT.Mazur.PolygonCompletePointCoordinateInjective
 public import FLT.Mazur.PolygonCompletePointCoordinateRange
