@@ -6898,6 +6898,7 @@ public import FLT.Mazur.PolygonCompletePointSectionProjIso
 public import FLT.Mazur.PolygonCompletePointSectionRank
 public import FLT.Mazur.PolygonCompletePointSectionRingIso
 public import FLT.Mazur.PolygonCompletePointSpecifiedBasis
+public import FLT.Mazur.PolygonCompletePointSurjective
 public import FLT.Mazur.PolygonCompletePointWeierstrassEquation
 public import FLT.Mazur.PolygonCompletePrincipalClosedFiber
 public import FLT.Mazur.PolygonCompleteProjectiveRotation
