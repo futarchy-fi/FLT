@@ -8540,6 +8540,7 @@ public import FLT.Mazur.SchemeRelationJointModelGenericFppf
 public import FLT.Mazur.SchemeRelationJointModelGeometry
 public import FLT.Mazur.SchemeRelationLocalFunctionDescent
 public import FLT.Mazur.SchemeRelationMonicBaseChange
+public import FLT.Mazur.SchemeRelationMonicSeedEffective
 public import FLT.Mazur.SchemeRelationMonicSeedImage
 public import FLT.Mazur.SchemeRelationMonicSeedKernel
 public import FLT.Mazur.SchemeRelationOpenFunctionDescent
