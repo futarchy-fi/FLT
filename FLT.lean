@@ -4072,6 +4072,7 @@ public import FLT.Mazur.EllipticFiniteRetainedNodeSection
 public import FLT.Mazur.EllipticFiniteRetainedPointEquality
 public import FLT.Mazur.EllipticFiniteRetainedSmoothSpecialization
 public import FLT.Mazur.EllipticFiniteRetainedSpecialization
+public import FLT.Mazur.EllipticFiniteTerminalLaurentEquality
 public import FLT.Mazur.EllipticFormalAddition
 public import FLT.Mazur.EllipticFormalAdditionComparison
 public import FLT.Mazur.EllipticFormalAssociativity
@@ -4162,6 +4163,7 @@ public import FLT.Mazur.EllipticNodeGaloisLabel
 public import FLT.Mazur.EllipticNodeGenericNonsingular
 public import FLT.Mazur.EllipticNodeHenselCoordinates
 public import FLT.Mazur.EllipticNodeHenselGenerator
+public import FLT.Mazur.EllipticNodeIntegralOppositeCharacter
 public import FLT.Mazur.EllipticNodeInverseResidues
 public import FLT.Mazur.EllipticNodeLabelAdditivity
 public import FLT.Mazur.EllipticNodeLabelBaseChange
@@ -4178,11 +4180,15 @@ public import FLT.Mazur.EllipticNodeMixedLabels
 public import FLT.Mazur.EllipticNodeMixedLaurentCharacter
 public import FLT.Mazur.EllipticNodeModelDepth
 public import FLT.Mazur.EllipticNodeOppositeAddition
+public import FLT.Mazur.EllipticNodeOppositeCharacterAlgebra
 public import FLT.Mazur.EllipticNodeOppositeLabels
+public import FLT.Mazur.EllipticNodeOppositeReductionCharacter
 public import FLT.Mazur.EllipticNodeOppositeSlope
+public import FLT.Mazur.EllipticNodeOppositeSmoothCharacter
 public import FLT.Mazur.EllipticNodePointBranches
 public import FLT.Mazur.EllipticNodePointCoordinates
 public import FLT.Mazur.EllipticNodePointDepth
+public import FLT.Mazur.EllipticNodeReflectedMixedCharacter
 public import FLT.Mazur.EllipticNodeSameBranchAddition
 public import FLT.Mazur.EllipticNodeSameBranchLabels
 public import FLT.Mazur.EllipticNodeSameBranchSlope
@@ -4243,8 +4249,10 @@ public import FLT.Mazur.EllipticReductionRelation
 public import FLT.Mazur.EllipticReductionTranslation
 public import FLT.Mazur.EllipticRepeatedCubicPoint
 public import FLT.Mazur.EllipticRepeatedCubicTranslation
+public import FLT.Mazur.EllipticResolvedComponentCharacterEquality
 public import FLT.Mazur.EllipticResolvedLaurentEquality
 public import FLT.Mazur.EllipticResolvedMixedTranslationEquality
+public import FLT.Mazur.EllipticResolvedOppositeTranslationEquality
 public import FLT.Mazur.EllipticResolvedSmoothPoint
 public import FLT.Mazur.EllipticScaledTorsionReduction
 public import FLT.Mazur.EllipticScalingSmoothTorsion
@@ -4272,6 +4280,7 @@ public import FLT.Mazur.EllipticSmoothReduction
 public import FLT.Mazur.EllipticSmoothReductionAddition
 public import FLT.Mazur.EllipticSmoothSectionSpecialization
 public import FLT.Mazur.EllipticSplitDepthModel
+public import FLT.Mazur.EllipticSplitDepthResidueCharacter
 public import FLT.Mazur.EllipticSplitNodalGroup
 public import FLT.Mazur.EllipticSplitNodeAddition
 public import FLT.Mazur.EllipticSplitNodeComponents
