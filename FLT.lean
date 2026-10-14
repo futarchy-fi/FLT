@@ -6697,6 +6697,7 @@ public import FLT.Mazur.PolygonCompletePointMonomialBasis
 public import FLT.Mazur.PolygonCompletePointNewSections
 public import FLT.Mazur.PolygonCompletePointNonsingular
 public import FLT.Mazur.PolygonCompletePointNormalizedPoles
+public import FLT.Mazur.PolygonCompletePointOriginCartesian
 public import FLT.Mazur.PolygonCompletePointOriginChart
 public import FLT.Mazur.PolygonCompletePointOriginIdeal
 public import FLT.Mazur.PolygonCompletePointOriginIdealEquality
