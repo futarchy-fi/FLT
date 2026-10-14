@@ -4300,6 +4300,7 @@ public import FLT.Mazur.EllipticResolvedReflectedMixedTranslationEquality
 public import FLT.Mazur.EllipticResolvedRetainedCharts
 public import FLT.Mazur.EllipticResolvedRetainedSmoothCharts
 public import FLT.Mazur.EllipticResolvedSmoothPoint
+public import FLT.Mazur.EllipticResolvedTerminalCharts
 public import FLT.Mazur.EllipticResolvedTorsionInjectivity
 public import FLT.Mazur.EllipticRetainedLaurentCover
 public import FLT.Mazur.EllipticRetainedTrivializedCharts
