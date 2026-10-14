@@ -2806,14 +2806,18 @@ public import FLT.Mazur.AffineHilbertFixedBaseJointEffectiveOpen
 public import FLT.Mazur.AffineHilbertFixedBaseJointEtale
 public import FLT.Mazur.AffineHilbertFixedBaseJointFppfOpen
 public import FLT.Mazur.AffineHilbertFixedBaseJointGenericFppf
+public import FLT.Mazur.AffineHilbertFixedBaseJointGroundEtale
+public import FLT.Mazur.AffineHilbertFixedBaseJointGroundTarget
 public import FLT.Mazur.AffineHilbertFixedBaseJointKernel
 public import FLT.Mazur.AffineHilbertFixedBaseJointModel
 public import FLT.Mazur.AffineHilbertFixedBaseJointRelative
 public import FLT.Mazur.AffineHilbertFixedBaseJointRetainedOpen
 public import FLT.Mazur.AffineHilbertFixedBaseJointTests
+public import FLT.Mazur.AffineHilbertFixedBaseKernelTransport
 public import FLT.Mazur.AffineHilbertFixedBaseModelEffectiveOpen
 public import FLT.Mazur.AffineHilbertFixedBaseModelKernels
 public import FLT.Mazur.AffineHilbertFixedBaseModelRelationSquare
+public import FLT.Mazur.AffineHilbertFixedBaseOldCoefficients
 public import FLT.Mazur.AffineHilbertFixedBaseQuotient
 public import FLT.Mazur.AffineHilbertFixedBaseQuotientIso
 public import FLT.Mazur.AffineHilbertFixedBaseRelation
@@ -2872,6 +2876,10 @@ public import FLT.Mazur.AffineHilbertMonicModelRelation
 public import FLT.Mazur.AffineHilbertMonicRelationGeometry
 public import FLT.Mazur.AffineHilbertMonicSeedCharts
 public import FLT.Mazur.AffineHilbertMonicSeedFiniteEtale
+public import FLT.Mazur.AffineHilbertMonicSeedGroundCoverage
+public import FLT.Mazur.AffineHilbertMonicSeedGroundEtale
+public import FLT.Mazur.AffineHilbertMonicSeedGroundRelative
+public import FLT.Mazur.AffineHilbertMonicSeedGroundSource
 public import FLT.Mazur.AffineHilbertMonicSeedKernel
 public import FLT.Mazur.AffineHilbertMonicTranslation
 public import FLT.Mazur.AffineHilbertNestedFiniteEtale
@@ -8086,6 +8094,7 @@ public import FLT.Mazur.RelativeCartierIdealFamilyDescent
 public import FLT.Mazur.RelativeCartierIdealPullback
 public import FLT.Mazur.RelativeCartierMorphismBaseChange
 public import FLT.Mazur.RelativeCartierOriginalSquare
+public import FLT.Mazur.RelativeCoefficientBaseChange
 public import FLT.Mazur.RelativeComparisonFiberIso
 public import FLT.Mazur.RelativeCoproductComponentPullback
 public import FLT.Mazur.RelativeCoproductPullCover
