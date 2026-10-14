@@ -8848,6 +8848,7 @@ public import FLT.Mazur.SchemeRelationNestedKernel
 public import FLT.Mazur.SchemeRelationOpenFunctionDescent
 public import FLT.Mazur.SchemeRelationOpenInvariantRings
 public import FLT.Mazur.SchemeRelationOpenSelectorDiagram
+public import FLT.Mazur.SchemeRelationOpenSelectorGluing
 public import FLT.Mazur.SchemeRelationOpenSelectorOverlap
 public import FLT.Mazur.SchemeRelationOpenSelectorRestriction
 public import FLT.Mazur.SchemeRelationOrbitAtlas
