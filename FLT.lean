@@ -6665,6 +6665,7 @@ public import FLT.Mazur.PolygonCompletePointCoordinateEquiv
 public import FLT.Mazur.PolygonCompletePointCoordinateInjective
 public import FLT.Mazur.PolygonCompletePointCoordinateRange
 public import FLT.Mazur.PolygonCompletePointCubicFactorization
+public import FLT.Mazur.PolygonCompletePointCubicPreimages
 public import FLT.Mazur.PolygonCompletePointCubicRelation
 public import FLT.Mazur.PolygonCompletePointDimensions
 public import FLT.Mazur.PolygonCompletePointDivisorComparison
