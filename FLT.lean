@@ -4060,6 +4060,7 @@ public import FLT.Mazur.EllipticFiniteOddSpecialization
 public import FLT.Mazur.EllipticFinitePointBound
 public import FLT.Mazur.EllipticFinitePointSectionAction
 public import FLT.Mazur.EllipticFiniteResolvedSpecialization
+public import FLT.Mazur.EllipticFiniteRetainedLaurentEquality
 public import FLT.Mazur.EllipticFiniteRetainedNodeSection
 public import FLT.Mazur.EllipticFiniteRetainedPointEquality
 public import FLT.Mazur.EllipticFiniteRetainedSmoothSpecialization
