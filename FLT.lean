@@ -11716,6 +11716,7 @@ public import FLT.Mazur.WeierstrassModificationXFullNodeOverlapRanges
 public import FLT.Mazur.WeierstrassModificationXFullNodeParameterDescent
 public import FLT.Mazur.WeierstrassModificationXFullNodeProjectiveDescent
 public import FLT.Mazur.WeierstrassModificationXFullNodePushout
+public import FLT.Mazur.WeierstrassModificationXFullNodeSmooth
 public import FLT.Mazur.WeierstrassModificationXFullNodeZeroDescent
 public import FLT.Mazur.WeierstrassModificationXFullSecondNode
 public import FLT.Mazur.WeierstrassModificationXFullSecondNodeBranches
