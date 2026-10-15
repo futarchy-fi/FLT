@@ -7275,6 +7275,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstGraphAlgebra
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphBranchExt
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphBranchMaps
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphChartBranch
+public import FLT.Mazur.PolygonCompleteIdentityFirstGraphClosedLift
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphConductor
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphCrossRelations
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphErrors
