@@ -3181,6 +3181,7 @@ public import FLT.Mazur.AffineTripleOverlapRefinement
 public import FLT.Mazur.AffineTripleOverlapRefinementSquares
 public import FLT.Mazur.AffineTripleUnitCoefficients
 public import FLT.Mazur.AffineTrivialLineSectionOpen
+public import FLT.Mazur.AlgebraicClosureEmbeddingConjugacy
 public import FLT.Mazur.AllAffineAmbientCharts
 public import FLT.Mazur.AllSectionsHilbertGrassmannianImmersion
 public import FLT.Mazur.AmbientHilbertChartFamilyPullback
@@ -3494,6 +3495,7 @@ public import FLT.Mazur.CartesianCoefficientSymmetry
 public import FLT.Mazur.CartesianCoefficientTransport
 public import FLT.Mazur.CartesianCoefficientTransportKernelPair
 public import FLT.Mazur.CartesianCoefficientTransportNaturality
+public import FLT.Mazur.CartesianFiberAutomorphismAction
 public import FLT.Mazur.CartesianFiniteFibers
 public import FLT.Mazur.CartesianHomMarkingParameter
 public import FLT.Mazur.CartesianIdentityFactorization
@@ -4817,6 +4819,7 @@ public import FLT.Mazur.FiniteNeighborhoodAffineOpens
 public import FLT.Mazur.FiniteOccurrenceIteratedCoefficients
 public import FLT.Mazur.FiniteOccurrenceLocalizedCoefficients
 public import FLT.Mazur.FiniteOpenImmersionIntegerDescent
+public import FLT.Mazur.FiniteOrbitOpenCore
 public import FLT.Mazur.FinitePointAlgebraInterpolation
 public import FLT.Mazur.FinitePointKernelCover
 public import FLT.Mazur.FinitePolynomialCoefficientRing
@@ -5124,10 +5127,12 @@ public import FLT.Mazur.GenusOneGroupWeierstrassEquation
 public import FLT.Mazur.GenusOneNonspecialPoint
 public import FLT.Mazur.GeometricAcyclicEtaleTranslation
 public import FLT.Mazur.GeometricAcyclicFppfLocus
+public import FLT.Mazur.GeometricAcyclicOrbitTranslation
 public import FLT.Mazur.GeometricAcyclicPicardLocality
 public import FLT.Mazur.GeometricAcyclicPicardSubfunctor
 public import FLT.Mazur.GeometricAcyclicRankOne
 public import FLT.Mazur.GeometricAcyclicRankOneLocus
+public import FLT.Mazur.GeometricCoefficientAutomorphisms
 public import FLT.Mazur.GeometricFiberSmoothLineParameters
 public import FLT.Mazur.GeometricFixedPointTranslation
 public import FLT.Mazur.GeometricFppfCoverSection
@@ -5136,6 +5141,7 @@ public import FLT.Mazur.GeometricOpenFactorization
 public import FLT.Mazur.GeometricPicardSheafRepresentative
 public import FLT.Mazur.GeometricPointCoverCriterion
 public import FLT.Mazur.GeometricPullbackPointwiseEquality
+public import FLT.Mazur.GeometricResidueMorphismConjugacy
 public import FLT.Mazur.GeometricSectionQuasiFinite
 public import FLT.Mazur.GeometricSectionUnits
 public import FLT.Mazur.GeometricSimultaneousHilbertTranslation
@@ -6784,6 +6790,7 @@ public import FLT.Mazur.OriginalFamilySquareComposition
 public import FLT.Mazur.OriginalFamilyTwistComparison
 public import FLT.Mazur.OriginalFamilyTwistComposition
 public import FLT.Mazur.OriginalHilbertFiniteType
+public import FLT.Mazur.OriginalInvariantOpenAllEtaleLifts
 public import FLT.Mazur.OriginalRestrictedHilbertIntersection
 public import FLT.Mazur.OriginalTwistIsoRigidity
 public import FLT.Mazur.OriginalTwistLineOrbits
@@ -7597,6 +7604,7 @@ public import FLT.Mazur.PolygonOneGonContractionMarking
 public import FLT.Mazur.PolygonOneGonContractionMarkingLine
 public import FLT.Mazur.PolygonOneGonContractionMarkingSection
 public import FLT.Mazur.PolygonOneGonContractionNormalizationLine
+public import FLT.Mazur.PolygonOneGonContractionOriginalCoordinates
 public import FLT.Mazur.PolygonOneGonContractionReflectionLine
 public import FLT.Mazur.PolygonOneGonContractionReflectionPower
 public import FLT.Mazur.PolygonOneGonContractionRotationLine
@@ -7650,6 +7658,7 @@ public import FLT.Mazur.PolygonParameterTranslationOriginal
 public import FLT.Mazur.PolygonParameterizedHomExt
 public import FLT.Mazur.PolygonPinchingAdjustedClosedComparison
 public import FLT.Mazur.PolygonPinchingAffineBaseChange
+public import FLT.Mazur.PolygonPinchingClosedCubicMap
 public import FLT.Mazur.PolygonPinchingCompleteClosedComparison
 public import FLT.Mazur.PolygonPinchingCompleteCubicContraction
 public import FLT.Mazur.PolygonPinchingCompleteIdentityCharts
@@ -8142,6 +8151,7 @@ public import FLT.Mazur.ProjectiveCoherentCharts
 public import FLT.Mazur.ProjectiveCoherentCohomology
 public import FLT.Mazur.ProjectiveCoordinateGeneratorOpen
 public import FLT.Mazur.ProjectiveCoordinateSections
+public import FLT.Mazur.ProjectiveCycleConstantPropagation
 public import FLT.Mazur.ProjectiveFiniteAffineNeighborhood
 public import FLT.Mazur.ProjectiveFiniteAvoidance
 public import FLT.Mazur.ProjectiveFiniteSeparation
@@ -8503,6 +8513,7 @@ public import FLT.Mazur.QuasiCoherentAffineBasePullback
 public import FLT.Mazur.QuasiCoherentSchemePullback
 public import FLT.Mazur.QuasiCompactGenericFlatOpen
 public import FLT.Mazur.QuasiFiniteCoefficientQuotient
+public import FLT.Mazur.QuasiFiniteGeometricPointIsolation
 public import FLT.Mazur.QuasiFiniteIdealQuotient
 public import FLT.Mazur.QuasiFiniteSmoothLocalEquation
 public import FLT.Mazur.QuasicoherentImageIdeal
@@ -8807,6 +8818,7 @@ public import FLT.Mazur.RelativeVeryAmpleLineBundle
 public import FLT.Mazur.RepeatedCubicRoots
 public import FLT.Mazur.ResidueCoordinateDenominators
 public import FLT.Mazur.ResidueFiberRegularLocalization
+public import FLT.Mazur.ResidueGeometricConjugacy
 public import FLT.Mazur.ResidueNonvanishingLocallySplit
 public import FLT.Mazur.ResidueNonvanishingOpenPullback
 public import FLT.Mazur.ResiduePolynomialLift
@@ -9054,6 +9066,7 @@ public import FLT.Mazur.SchemeFiniteGroupQuotientMaps
 public import FLT.Mazur.SchemeFiniteGroupQuotientOpenEmbedding
 public import FLT.Mazur.SchemeFiniteGroupQuotientOpenImmersion
 public import FLT.Mazur.SchemeFiniteGroupQuotientOrbits
+public import FLT.Mazur.SchemeFiniteOrbitOpenCore
 public import FLT.Mazur.SchemeFlatFamilyReflection
 public import FLT.Mazur.SchemeFlatFppfTargetDensity
 public import FLT.Mazur.SchemeFlatProductDensity
@@ -9568,6 +9581,7 @@ public import FLT.Mazur.SmoothHilbertSingleSource
 public import FLT.Mazur.SmoothHilbertSourcePullback
 public import FLT.Mazur.SmoothHilbertSourceRepresentable
 public import FLT.Mazur.SmoothHilbertTestCover
+public import FLT.Mazur.SmoothInvariantOpenAllEtaleLifts
 public import FLT.Mazur.SmoothNodalFamilyDimension
 public import FLT.Mazur.SmoothNonspecialDivisorCover
 public import FLT.Mazur.SmoothNonspecialDivisorLift
@@ -10745,6 +10759,7 @@ public import FLT.Mazur.WeierstrassDividedCoefficientShearSchemes
 public import FLT.Mazur.WeierstrassDividedCoefficientSmoothLocus
 public import FLT.Mazur.WeierstrassDividedCoefficientSmoothRecovery
 public import FLT.Mazur.WeierstrassDividedCoefficientSymmetry
+public import FLT.Mazur.WeierstrassDividedCompleteClosedCubicCompatibility
 public import FLT.Mazur.WeierstrassDividedCompleteResidueNormalization
 public import FLT.Mazur.WeierstrassDividedComponentPairCoverage
 public import FLT.Mazur.WeierstrassDividedConicBoundaryAllDepths
@@ -10766,8 +10781,11 @@ public import FLT.Mazur.WeierstrassDividedDepthYBoundary
 public import FLT.Mazur.WeierstrassDividedEarlierTerminalSeparation
 public import FLT.Mazur.WeierstrassDividedEqualityComponentContraction
 public import FLT.Mazur.WeierstrassDividedEqualityComponentEndpoints
+public import FLT.Mazur.WeierstrassDividedEqualityCycleCommonNode
+public import FLT.Mazur.WeierstrassDividedEqualityCycleConstancy
 public import FLT.Mazur.WeierstrassDividedEqualityCycleTerminalDescent
 public import FLT.Mazur.WeierstrassDividedEqualityFullNodeDescent
+public import FLT.Mazur.WeierstrassDividedEqualityGeometricContraction
 public import FLT.Mazur.WeierstrassDividedEqualityInitialEndpoints
 public import FLT.Mazur.WeierstrassDividedEqualityInitialExterior
 public import FLT.Mazur.WeierstrassDividedEqualityNodeFamily
@@ -11313,6 +11331,9 @@ public import FLT.Mazur.WeierstrassDividedSmoothSuccessiveIntegralAction
 public import FLT.Mazur.WeierstrassDividedSmoothSuccessiveResidueAction
 public import FLT.Mazur.WeierstrassDividedSmoothTerminalCoefficientAction
 public import FLT.Mazur.WeierstrassDividedSmoothTerminalIntegralAction
+public import FLT.Mazur.WeierstrassDividedSplitCycleCommonNode
+public import FLT.Mazur.WeierstrassDividedSplitCycleConstancy
+public import FLT.Mazur.WeierstrassDividedSplitGeometricContraction
 public import FLT.Mazur.WeierstrassDividedSplitNormalizationComparison
 public import FLT.Mazur.WeierstrassDividedSuccessiveOriginalY
 public import FLT.Mazur.WeierstrassDividedSuccessorActionAtlas
