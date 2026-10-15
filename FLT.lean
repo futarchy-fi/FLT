@@ -6901,6 +6901,7 @@ public import FLT.Mazur.PolygonArithmeticStageLineQuotient
 public import FLT.Mazur.PolygonArithmeticStageProper
 public import FLT.Mazur.PolygonArithmeticStageRestriction
 public import FLT.Mazur.PolygonArithmeticSystem
+public import FLT.Mazur.PolygonArithmeticTensorQuotient
 public import FLT.Mazur.PolygonAtlas
 public import FLT.Mazur.PolygonAtlasCocone
 public import FLT.Mazur.PolygonAtlasSmoothLocus
