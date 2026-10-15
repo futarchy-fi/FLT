@@ -2749,6 +2749,7 @@ public import FLT.Mazur.AffineGeometricReconstructionCompatibility
 public import FLT.Mazur.AffineGeometricRefinementData
 public import FLT.Mazur.AffineGeometricTensorCocycle
 public import FLT.Mazur.AffineGeometricTensorDatum
+public import FLT.Mazur.AffineHilbertAcyclicBranchLift
 public import FLT.Mazur.AffineHilbertAdmissibleFiniteKernel
 public import FLT.Mazur.AffineHilbertAdmissibleFlatImage
 public import FLT.Mazur.AffineHilbertAdmissibleGenericCoefficients
