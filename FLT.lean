@@ -7297,6 +7297,7 @@ public import FLT.Mazur.PolygonInfinitesimalSystem
 public import FLT.Mazur.PolygonInfinitesimalUniversalEdges
 public import FLT.Mazur.PolygonInfinitesimalUniversalNaturality
 public import FLT.Mazur.PolygonInfinitesimalUniversalScaling
+public import FLT.Mazur.PolygonLaurentRestrictionKernel
 public import FLT.Mazur.PolygonLineHZero
 public import FLT.Mazur.PolygonLineNodeRestriction
 public import FLT.Mazur.PolygonLineNormalization
