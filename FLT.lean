@@ -9243,6 +9243,7 @@ public import FLT.Mazur.RelativeRelationFpqcSectionComparison
 public import FLT.Mazur.RelativeRelationFullSectionFunctions
 public import FLT.Mazur.RelativeRelationGeneratorNaturality
 public import FLT.Mazur.RelativeRelationGeneratorSubopens
+public import FLT.Mazur.RelativeRelationIdealCertificate
 public import FLT.Mazur.RelativeRelationIdealSourceCover
 public import FLT.Mazur.RelativeRelationInvariantAffineComparison
 public import FLT.Mazur.RelativeRelationInvariantGlobalSections
