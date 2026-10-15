@@ -4335,6 +4335,7 @@ public import FLT.Mazur.EllipticResolvedRetainedCover
 public import FLT.Mazur.EllipticResolvedRetainedDepthSeparation
 public import FLT.Mazur.EllipticResolvedRetainedIdentitySeparation
 public import FLT.Mazur.EllipticResolvedRetainedSmoothCharts
+public import FLT.Mazur.EllipticResolvedRetainedTerminalSeparation
 public import FLT.Mazur.EllipticResolvedSmoothPoint
 public import FLT.Mazur.EllipticResolvedTerminalCharts
 public import FLT.Mazur.EllipticResolvedTerminalCover
