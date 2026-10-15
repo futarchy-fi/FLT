@@ -4815,6 +4815,7 @@ public import FLT.Mazur.FiniteNeighborhoodAffineOpens
 public import FLT.Mazur.FiniteOccurrenceIteratedCoefficients
 public import FLT.Mazur.FiniteOccurrenceLocalizedCoefficients
 public import FLT.Mazur.FiniteOpenImmersionIntegerDescent
+public import FLT.Mazur.FiniteOrbitOpenCore
 public import FLT.Mazur.FinitePointAlgebraInterpolation
 public import FLT.Mazur.FinitePointKernelCover
 public import FLT.Mazur.FinitePolynomialCoefficientRing
