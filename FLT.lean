@@ -3059,6 +3059,7 @@ public import FLT.Mazur.AffineOpenFinitePolynomialPresentation
 public import FLT.Mazur.AffineOpenFiniteQuotientChart
 public import FLT.Mazur.AffineOpenFiniteRefinement
 public import FLT.Mazur.AffineOpenImmersionLocalizationCriterion
+public import FLT.Mazur.AffineOpenKernelPower
 public import FLT.Mazur.AffineOpenQuotientPresentation
 public import FLT.Mazur.AffineOverlapDiagonal
 public import FLT.Mazur.AffineOverlapMapSections
@@ -6035,6 +6036,7 @@ public import FLT.Mazur.LaurentFirstOrderAutomorphism
 public import FLT.Mazur.LaurentFirstParameterSubstitution
 public import FLT.Mazur.LaurentFirstStageParameter
 public import FLT.Mazur.LaurentFirstStageParameterEquiv
+public import FLT.Mazur.LaurentFirstStageParameterTorus
 public import FLT.Mazur.LaurentIdentityIdeal
 public import FLT.Mazur.LaurentLineActionDensity
 public import FLT.Mazur.LaurentLineActionEvaluation
@@ -7317,6 +7319,10 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstBoundary
 public import FLT.Mazur.PolygonCompleteIdentityFirstBranchOriginal
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartBranchImage
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartBranchQuotient
+public import FLT.Mazur.PolygonCompleteIdentityFirstChartKernelPowers
+public import FLT.Mazur.PolygonCompleteIdentityFirstChartNodeSocle
+public import FLT.Mazur.PolygonCompleteIdentityFirstChartPunctureOpens
+public import FLT.Mazur.PolygonCompleteIdentityFirstChartPunctures
 public import FLT.Mazur.PolygonCompleteIdentityFirstCoordinateDescent
 public import FLT.Mazur.PolygonCompleteIdentityFirstCorrection
 public import FLT.Mazur.PolygonCompleteIdentityFirstDefectDerivation
@@ -7384,8 +7390,10 @@ public import FLT.Mazur.PolygonCompleteIdentityGraphEdgeCartesian
 public import FLT.Mazur.PolygonCompleteIdentityGraphFiniteEdge
 public import FLT.Mazur.PolygonCompleteIdentityGraphFlat
 public import FLT.Mazur.PolygonCompleteIdentityGraphFlatExt
+public import FLT.Mazur.PolygonCompleteIdentityGraphIncomingCartesian
 public import FLT.Mazur.PolygonCompleteIdentityGraphIncomingChart
 public import FLT.Mazur.PolygonCompleteIdentityGraphRotatedEdge
+public import FLT.Mazur.PolygonCompleteIdentityGraphRotatedEdgeCartesian
 public import FLT.Mazur.PolygonCompleteIdentityLiftLocus
 public import FLT.Mazur.PolygonCompleteIdentityMixedObstruction
 public import FLT.Mazur.PolygonCompleteIdentityMulCoherence
@@ -10092,6 +10100,7 @@ public import FLT.Mazur.TwistedSectionPullbackMonicity
 public import FLT.Mazur.TwistedSectionPushforward
 public import FLT.Mazur.TwistedSectionPushforwardNaturality
 public import FLT.Mazur.TwistedSectionRegularity
+public import FLT.Mazur.TwoCoordinateTorsionSocle
 public import FLT.Mazur.TwoGeneratorRelationBaseChange
 public import FLT.Mazur.TwoGeneratorRelationKernelBaseChange
 public import FLT.Mazur.TwoGeneratorRelationQuotient
