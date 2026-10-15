@@ -10618,6 +10618,7 @@ public import FLT.Mazur.WeierstrassDividedEqualityTerminalNodeDescent
 public import FLT.Mazur.WeierstrassDividedEqualityTerminalNodeParameters
 public import FLT.Mazur.WeierstrassDividedEqualityTerminalParametersHomExt
 public import FLT.Mazur.WeierstrassDividedEqualityTerminalZeroParameters
+public import FLT.Mazur.WeierstrassDividedEvenCompleteClosedComparison
 public import FLT.Mazur.WeierstrassDividedExterior
 public import FLT.Mazur.WeierstrassDividedExteriorBranchIntersections
 public import FLT.Mazur.WeierstrassDividedExteriorIntersections
