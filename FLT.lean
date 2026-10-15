@@ -7271,6 +7271,7 @@ public import FLT.Mazur.PolygonInfinitesimalFieldFiber
 public import FLT.Mazur.PolygonInfinitesimalLineCoherence
 public import FLT.Mazur.PolygonInfinitesimalMarkedBaseChange
 public import FLT.Mazur.PolygonInfinitesimalMarkings
+public import FLT.Mazur.PolygonInfinitesimalRestrictionKernel
 public import FLT.Mazur.PolygonInfinitesimalRotation
 public import FLT.Mazur.PolygonInfinitesimalRotationBaseChange
 public import FLT.Mazur.PolygonInfinitesimalRotationDivisor
