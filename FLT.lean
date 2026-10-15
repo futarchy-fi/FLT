@@ -2749,6 +2749,7 @@ public import FLT.Mazur.AffineGeometricReconstructionCompatibility
 public import FLT.Mazur.AffineGeometricRefinementData
 public import FLT.Mazur.AffineGeometricTensorCocycle
 public import FLT.Mazur.AffineGeometricTensorDatum
+public import FLT.Mazur.AffineHilbertAcyclicBranchLift
 public import FLT.Mazur.AffineHilbertAdmissibleFiniteKernel
 public import FLT.Mazur.AffineHilbertAdmissibleFlatImage
 public import FLT.Mazur.AffineHilbertAdmissibleGenericCoefficients
@@ -2869,6 +2870,10 @@ public import FLT.Mazur.AffineHilbertFullFiberRestriction
 public import FLT.Mazur.AffineHilbertFullInteriorChart
 public import FLT.Mazur.AffineHilbertFullRelationRestriction
 public import FLT.Mazur.AffineHilbertGenericEnvelopeCriterion
+public import FLT.Mazur.AffineHilbertGeometricAcyclicFiber
+public import FLT.Mazur.AffineHilbertGeometricFiberNecessity
+public import FLT.Mazur.AffineHilbertGeometricFiberSections
+public import FLT.Mazur.AffineHilbertGeometricPointTest
 public import FLT.Mazur.AffineHilbertGroundBaseEnvelope
 public import FLT.Mazur.AffineHilbertGroundBaseEnvelopeLift
 public import FLT.Mazur.AffineHilbertGroundBaseFullFiber
@@ -4553,6 +4558,7 @@ public import FLT.Mazur.EtaleFiniteBranchScheme
 public import FLT.Mazur.EtaleFiniteBranchSubcover
 public import FLT.Mazur.EtaleFiniteBranchTargetAtlas
 public import FLT.Mazur.EtaleFiniteBranchTargetNeighborhood
+public import FLT.Mazur.EtaleFiniteFiberGeometricSections
 public import FLT.Mazur.EtaleFiniteQuotientBranch
 public import FLT.Mazur.EtaleFiniteSupportCartier
 public import FLT.Mazur.EtaleLocalParameterIdeals
@@ -9832,6 +9838,8 @@ public import FLT.Mazur.ValuationProjectiveNormalization
 public import FLT.Mazur.ValuationRingCompleteModel
 public import FLT.Mazur.ValuationRingHenselianModel
 public import FLT.Mazur.ValuationRingModel
+public import FLT.Mazur.VariableHilbertAcyclicLift
+public import FLT.Mazur.VariableHilbertAcyclicLiftCriterion
 public import FLT.Mazur.VariableHilbertAffineEnvelope
 public import FLT.Mazur.VariableHilbertAffinePointRefinement
 public import FLT.Mazur.VariableHilbertCanonicalGroundIso
