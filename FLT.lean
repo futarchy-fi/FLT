@@ -6982,6 +6982,7 @@ public import FLT.Mazur.PolygonCompleteIdentityNilpotentDefect
 public import FLT.Mazur.PolygonCompleteIdentityObstructionNormalization
 public import FLT.Mazur.PolygonCompleteIdentityObstructionSymmetry
 public import FLT.Mazur.PolygonCompleteIdentityOrderZeroLaw
+public import FLT.Mazur.PolygonCompleteIdentityPointCocycle
 public import FLT.Mazur.PolygonCompleteIdentityPointDefect
 public import FLT.Mazur.PolygonCompleteIdentitySmoothAction
 public import FLT.Mazur.PolygonCompleteIdentitySmoothActionCoordinates
