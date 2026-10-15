@@ -7634,6 +7634,7 @@ public import FLT.Mazur.PolygonParameterTranslationOriginal
 public import FLT.Mazur.PolygonParameterizedHomExt
 public import FLT.Mazur.PolygonPinchingAdjustedClosedComparison
 public import FLT.Mazur.PolygonPinchingAffineBaseChange
+public import FLT.Mazur.PolygonPinchingClosedCubicMap
 public import FLT.Mazur.PolygonPinchingCompleteClosedComparison
 public import FLT.Mazur.PolygonPinchingCompleteCubicContraction
 public import FLT.Mazur.PolygonPinchingCompleteIdentityCharts
