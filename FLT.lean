@@ -7329,6 +7329,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstChartPunctureOpens
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartPunctures
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartScalars
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartSocleKernel
+public import FLT.Mazur.PolygonCompleteIdentityFirstChartSourceFunctions
 public import FLT.Mazur.PolygonCompleteIdentityFirstCoordinateDescent
 public import FLT.Mazur.PolygonCompleteIdentityFirstCorrection
 public import FLT.Mazur.PolygonCompleteIdentityFirstDefectDerivation
