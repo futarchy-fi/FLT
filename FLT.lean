@@ -5613,6 +5613,8 @@ public import FLT.Mazur.HilbertOverlapRestriction
 public import FLT.Mazur.HilbertParameterAbelClass
 public import FLT.Mazur.HilbertParameterChartFactorization
 public import FLT.Mazur.HilbertParameterFiniteType
+public import FLT.Mazur.HilbertPartialGroundFullInterior
+public import FLT.Mazur.HilbertPartialGroundLocalChart
 public import FLT.Mazur.HilbertPolynomialAffineClassification
 public import FLT.Mazur.HilbertPolynomialAffineNaturality
 public import FLT.Mazur.HilbertPolynomialAmbient
@@ -6891,6 +6893,13 @@ public import FLT.Mazur.OverPullbackSectionComposition
 public import FLT.Mazur.OverPullbackSectionMonoidal
 public import FLT.Mazur.PadicValuationArithmetic
 public import FLT.Mazur.PadicValuationRing
+public import FLT.Mazur.PartialCompactTranslationInterior
+public import FLT.Mazur.PartialEnvelopeFullFiber
+public import FLT.Mazur.PartialFiniteTranslationInterior
+public import FLT.Mazur.PartialGroundEnvelopeInterior
+public import FLT.Mazur.PartialGroundLocalInterior
+public import FLT.Mazur.PartialProperEnvelopeInterior
+public import FLT.Mazur.PartialTranslationNormSupport
 public import FLT.Mazur.PicardDegreeFieldBaseChange
 public import FLT.Mazur.PinchingAffineDescent
 public import FLT.Mazur.PinchingChartBaseChange
