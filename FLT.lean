@@ -4322,6 +4322,7 @@ public import FLT.Mazur.EllipticRepeatedCubicTranslation
 public import FLT.Mazur.EllipticResolvedAdditionCongruence
 public import FLT.Mazur.EllipticResolvedAdjacentBoundaryCover
 public import FLT.Mazur.EllipticResolvedCompleteFiberComparison
+public import FLT.Mazur.EllipticResolvedCompleteMarkings
 public import FLT.Mazur.EllipticResolvedComponentAtlas
 public import FLT.Mazur.EllipticResolvedComponentAtlasCoverage
 public import FLT.Mazur.EllipticResolvedComponentCharacterEquality
