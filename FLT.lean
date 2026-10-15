@@ -3181,6 +3181,7 @@ public import FLT.Mazur.AffineTripleOverlapRefinement
 public import FLT.Mazur.AffineTripleOverlapRefinementSquares
 public import FLT.Mazur.AffineTripleUnitCoefficients
 public import FLT.Mazur.AffineTrivialLineSectionOpen
+public import FLT.Mazur.AlgebraicClosureEmbeddingConjugacy
 public import FLT.Mazur.AllAffineAmbientCharts
 public import FLT.Mazur.AllSectionsHilbertGrassmannianImmersion
 public import FLT.Mazur.AmbientHilbertChartFamilyPullback
