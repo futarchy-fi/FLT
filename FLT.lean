@@ -7314,6 +7314,7 @@ public import FLT.Mazur.PolygonDivisorPowerPullback
 public import FLT.Mazur.PolygonFieldExtension
 public import FLT.Mazur.PolygonFiniteSubgroup
 public import FLT.Mazur.PolygonFirstOrderBoundaryRigidity
+public import FLT.Mazur.PolygonFirstOrderCoordinateCharts
 public import FLT.Mazur.PolygonGeneralizedCurve
 public import FLT.Mazur.PolygonGenusOne
 public import FLT.Mazur.PolygonGeometricGenus
