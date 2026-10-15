@@ -7287,6 +7287,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFlatOpenLift
 public import FLT.Mazur.PolygonCompleteIdentityGraphAdicAlgebra
 public import FLT.Mazur.PolygonCompleteIdentityGraphAdicChart
 public import FLT.Mazur.PolygonCompleteIdentityGraphAdicChartCoordinates
+public import FLT.Mazur.PolygonCompleteIdentityGraphAdicChartEdge
 public import FLT.Mazur.PolygonCompleteIdentityGraphAdicChartSpace
 public import FLT.Mazur.PolygonCompleteIdentityGraphAdicClosed
 public import FLT.Mazur.PolygonCompleteIdentityGraphAdicCover
