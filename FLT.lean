@@ -5583,6 +5583,8 @@ public import FLT.Mazur.HilbertIntrinsicResidueBasis
 public import FLT.Mazur.HilbertIntrinsicUniversalOverlap
 public import FLT.Mazur.HilbertInvariantPrincipalProjection
 public import FLT.Mazur.HilbertInvariantRegularNorm
+public import FLT.Mazur.HilbertJointGroundFullInterior
+public import FLT.Mazur.HilbertJointGroundInvariantOpen
 public import FLT.Mazur.HilbertLocalResidueBasis
 public import FLT.Mazur.HilbertLocalizationIsomorphismOpen
 public import FLT.Mazur.HilbertLocalizedTupleBasis
@@ -5996,6 +5998,11 @@ public import FLT.Mazur.IteratedQuotientProjection
 public import FLT.Mazur.IteratedQuotientRecovery
 public import FLT.Mazur.IteratedQuotientRepresentatives
 public import FLT.Mazur.IteratedRefinementSquareCriteria
+public import FLT.Mazur.JointEnvelopeFullFiber
+public import FLT.Mazur.JointGroundEnvelopeNeighborhood
+public import FLT.Mazur.JointGroundNormInterior
+public import FLT.Mazur.JointGroundNormInvariantOpen
+public import FLT.Mazur.JointTranslationNormSupport
 public import FLT.Mazur.KernelPairEffectiveEtaleBranch
 public import FLT.Mazur.KernelPairEffectiveOpen
 public import FLT.Mazur.KernelPairEffectiveOpenEtale
