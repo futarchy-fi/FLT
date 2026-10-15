@@ -7097,6 +7097,12 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstCorrection
 public import FLT.Mazur.PolygonCompleteIdentityFirstDefectDerivation
 public import FLT.Mazur.PolygonCompleteIdentityFirstDefectFormula
 public import FLT.Mazur.PolygonCompleteIdentityFirstDefectProduct
+public import FLT.Mazur.PolygonCompleteIdentityFirstGraphAlgebra
+public import FLT.Mazur.PolygonCompleteIdentityFirstGraphConductor
+public import FLT.Mazur.PolygonCompleteIdentityFirstGraphFlat
+public import FLT.Mazur.PolygonCompleteIdentityFirstGraphLocalization
+public import FLT.Mazur.PolygonCompleteIdentityFirstGraphScheme
+public import FLT.Mazur.PolygonCompleteIdentityFirstGraphSupport
 public import FLT.Mazur.PolygonCompleteIdentityFirstLinearization
 public import FLT.Mazur.PolygonCompleteIdentityFirstNodeBoundary
 public import FLT.Mazur.PolygonCompleteIdentityFirstNodeObstruction
@@ -7454,6 +7460,7 @@ public import FLT.Mazur.PolygonFirstNodeSubalgebraPreservation
 public import FLT.Mazur.PolygonFirstNodeTangentBoundary
 public import FLT.Mazur.PolygonFirstNodeTangentEquiv
 public import FLT.Mazur.PolygonFirstNodeTangentLift
+public import FLT.Mazur.PolygonFirstNodeWeightedConductor
 public import FLT.Mazur.PolygonFirstOrderBoundaryRigidity
 public import FLT.Mazur.PolygonFirstOrderCoordinateCharts
 public import FLT.Mazur.PolygonGeneralizedCurve
@@ -7761,6 +7768,7 @@ public import FLT.Mazur.PolygonSmoothingNodeScaling
 public import FLT.Mazur.PolygonSmoothingOverlapGraph
 public import FLT.Mazur.PolygonSmoothingPunctureBaseChange
 public import FLT.Mazur.PolygonSmoothingQuadraticModel
+public import FLT.Mazur.PolygonSmoothingRangeGenerators
 public import FLT.Mazur.PolygonSmoothingReciprocalScaling
 public import FLT.Mazur.PolygonSmoothingRing
 public import FLT.Mazur.PolygonSmoothingRingMap
@@ -9635,6 +9643,7 @@ public import FLT.Mazur.SplitPairLocalDescent
 public import FLT.Mazur.SplitPairPushout
 public import FLT.Mazur.SplitSheafLinePullback
 public import FLT.Mazur.SplitSheafLinePullbackComposition
+public import FLT.Mazur.SquareZeroPairAdjoin
 public import FLT.Mazur.SquareZeroScalarGeneration
 public import FLT.Mazur.StableAffineQuotientAffineDescent
 public import FLT.Mazur.StableAffineQuotientBaseCharts
