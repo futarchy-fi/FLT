@@ -4374,6 +4374,7 @@ public import FLT.Mazur.EllipticResolvedTerminalCharts
 public import FLT.Mazur.EllipticResolvedTerminalCover
 public import FLT.Mazur.EllipticResolvedTerminalSmoothCharts
 public import FLT.Mazur.EllipticResolvedTorsionInjectivity
+public import FLT.Mazur.EllipticResolvedWholeClosedFiber
 public import FLT.Mazur.EllipticResolvedZeroBoundaryCoverage
 public import FLT.Mazur.EllipticResolvedZeroExteriorCover
 public import FLT.Mazur.EllipticResolvedZeroStageCoverage
@@ -6328,6 +6329,7 @@ public import FLT.Mazur.NodeBranchPushout
 public import FLT.Mazur.NodeDenominatorEqualizer
 public import FLT.Mazur.NodeDenominatorGeneration
 public import FLT.Mazur.NodeDenominatorRestriction
+public import FLT.Mazur.NodeDerivationBoundary
 public import FLT.Mazur.NodeInfinitesimalObstruction
 public import FLT.Mazur.NodeLocalDescent
 public import FLT.Mazur.NodeLocalizedEqualizer
@@ -7011,6 +7013,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFiniteUnits
 public import FLT.Mazur.PolygonCompleteIdentityFirstBoundary
 public import FLT.Mazur.PolygonCompleteIdentityFirstCorrection
 public import FLT.Mazur.PolygonCompleteIdentityFirstLinearization
+public import FLT.Mazur.PolygonCompleteIdentityFirstNodeBoundary
 public import FLT.Mazur.PolygonCompleteIdentityFlatOpenLift
 public import FLT.Mazur.PolygonCompleteIdentityGraphFlat
 public import FLT.Mazur.PolygonCompleteIdentityGraphFlatExt
@@ -7334,6 +7337,10 @@ public import FLT.Mazur.PolygonDivisorPolynomialHZero
 public import FLT.Mazur.PolygonDivisorPowerPullback
 public import FLT.Mazur.PolygonFieldExtension
 public import FLT.Mazur.PolygonFiniteSubgroup
+public import FLT.Mazur.PolygonFirstNodeBoundary
+public import FLT.Mazur.PolygonFirstNodeEndomorphism
+public import FLT.Mazur.PolygonFirstNodeLaurent
+public import FLT.Mazur.PolygonFirstNodeReduction
 public import FLT.Mazur.PolygonFirstOrderBoundaryRigidity
 public import FLT.Mazur.PolygonFirstOrderCoordinateCharts
 public import FLT.Mazur.PolygonGeneralizedCurve
@@ -7529,6 +7536,9 @@ public import FLT.Mazur.PolygonParameterTranslationBaseChange
 public import FLT.Mazur.PolygonParameterTranslationOriginal
 public import FLT.Mazur.PolygonParameterizedHomExt
 public import FLT.Mazur.PolygonPinchingAffineBaseChange
+public import FLT.Mazur.PolygonPinchingCompleteClosedComparison
+public import FLT.Mazur.PolygonPinchingCompleteCubicContraction
+public import FLT.Mazur.PolygonPinchingCompleteIdentityCharts
 public import FLT.Mazur.PolygonPinchingDiagram
 public import FLT.Mazur.PolygonPinchingFlatBaseChange
 public import FLT.Mazur.PolygonPinchingTensor
@@ -7757,6 +7767,7 @@ public import FLT.Mazur.PowerSeriesLeadingComposition
 public import FLT.Mazur.PowerSeriesNilpotentHom
 public import FLT.Mazur.PowerSeriesParameterFlatness
 public import FLT.Mazur.PowerSeriesQuotientCompletion
+public import FLT.Mazur.PowerSeriesResidueBaseObstruction
 public import FLT.Mazur.PowerSeriesSchemePointExt
 public import FLT.Mazur.PowerSeriesStageReconstruction
 public import FLT.Mazur.PowerSeriesStageRingLift
@@ -10634,6 +10645,7 @@ public import FLT.Mazur.WeierstrassDividedEqualityTerminalNodeDescent
 public import FLT.Mazur.WeierstrassDividedEqualityTerminalNodeParameters
 public import FLT.Mazur.WeierstrassDividedEqualityTerminalParametersHomExt
 public import FLT.Mazur.WeierstrassDividedEqualityTerminalZeroParameters
+public import FLT.Mazur.WeierstrassDividedEvenCompleteClosedComparison
 public import FLT.Mazur.WeierstrassDividedExterior
 public import FLT.Mazur.WeierstrassDividedExteriorBranchIntersections
 public import FLT.Mazur.WeierstrassDividedExteriorIntersections
@@ -10873,6 +10885,7 @@ public import FLT.Mazur.WeierstrassDividedLinearResidueBounds
 public import FLT.Mazur.WeierstrassDividedLocalizedIntersection
 public import FLT.Mazur.WeierstrassDividedNonadjacentGlobalIntersection
 public import FLT.Mazur.WeierstrassDividedNonadjacentTensorIntersection
+public import FLT.Mazur.WeierstrassDividedOddCompleteClosedComparison
 public import FLT.Mazur.WeierstrassDividedOlderAtlasIndex
 public import FLT.Mazur.WeierstrassDividedOlderConicExteriorDisjoint
 public import FLT.Mazur.WeierstrassDividedOlderConicPunctures
