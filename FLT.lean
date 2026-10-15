@@ -6887,6 +6887,7 @@ public import FLT.Mazur.PolygonArithmeticCompatibleRing
 public import FLT.Mazur.PolygonArithmeticCompatibleScalars
 public import FLT.Mazur.PolygonArithmeticCompleteBase
 public import FLT.Mazur.PolygonArithmeticCompleteBaseSquare
+public import FLT.Mazur.PolygonArithmeticDegreeProjection
 public import FLT.Mazur.PolygonArithmeticFlatLayer
 public import FLT.Mazur.PolygonArithmeticHomogeneousSections
 public import FLT.Mazur.PolygonArithmeticLayerQuotient
