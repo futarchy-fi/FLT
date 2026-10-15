@@ -6978,6 +6978,7 @@ public import FLT.Mazur.PolygonArithmeticVeroneseExactness
 public import FLT.Mazur.PolygonArithmeticVeroneseGrading
 public import FLT.Mazur.PolygonArithmeticVeroneseIdeal
 public import FLT.Mazur.PolygonArithmeticVeroneseKernel
+public import FLT.Mazur.PolygonArithmeticVeroneseZeroRing
 public import FLT.Mazur.PolygonArithmeticZeroCoefficients
 public import FLT.Mazur.PolygonArithmeticZeroExactness
 public import FLT.Mazur.PolygonArithmeticZeroTower
