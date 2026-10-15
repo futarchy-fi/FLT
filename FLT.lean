@@ -6913,6 +6913,7 @@ public import FLT.Mazur.PolygonArithmeticAdicReduction
 public import FLT.Mazur.PolygonArithmeticBoundaryAmple
 public import FLT.Mazur.PolygonArithmeticBoundaryDivisor
 public import FLT.Mazur.PolygonArithmeticBoundaryLine
+public import FLT.Mazur.PolygonArithmeticBoundedGenerators
 public import FLT.Mazur.PolygonArithmeticClosedLayer
 public import FLT.Mazur.PolygonArithmeticCompatibleAlgebra
 public import FLT.Mazur.PolygonArithmeticCompatibleReduction
