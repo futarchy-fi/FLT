@@ -2490,6 +2490,7 @@ public import FLT.Mazur.AbelianInjectiveFlasque
 public import FLT.Mazur.AbsoluteDirectImageCohomology
 public import FLT.Mazur.AcyclicCoefficientCohomology
 public import FLT.Mazur.AcyclicDegreeFixedBaseChange
+public import FLT.Mazur.AcyclicDegreeGeometricSpread
 public import FLT.Mazur.AcyclicDegreePicardRepresentation
 public import FLT.Mazur.AcyclicDirectImageResolution
 public import FLT.Mazur.AcyclicDivisorDegreeOpen
@@ -2871,9 +2872,12 @@ public import FLT.Mazur.AffineHilbertFullInteriorChart
 public import FLT.Mazur.AffineHilbertFullRelationRestriction
 public import FLT.Mazur.AffineHilbertGenericEnvelopeCriterion
 public import FLT.Mazur.AffineHilbertGeometricAcyclicFiber
+public import FLT.Mazur.AffineHilbertGeometricEtaleSpread
 public import FLT.Mazur.AffineHilbertGeometricFiberNecessity
 public import FLT.Mazur.AffineHilbertGeometricFiberSections
 public import FLT.Mazur.AffineHilbertGeometricPointTest
+public import FLT.Mazur.AffineHilbertGeometricRelationSpread
+public import FLT.Mazur.AffineHilbertGeometricRetainedNeighborhood
 public import FLT.Mazur.AffineHilbertGroundBaseEnvelope
 public import FLT.Mazur.AffineHilbertGroundBaseEnvelopeLift
 public import FLT.Mazur.AffineHilbertGroundBaseFullFiber
@@ -4564,6 +4568,9 @@ public import FLT.Mazur.EtaleFiniteBranchSubcover
 public import FLT.Mazur.EtaleFiniteBranchTargetAtlas
 public import FLT.Mazur.EtaleFiniteBranchTargetNeighborhood
 public import FLT.Mazur.EtaleFiniteFiberGeometricSections
+public import FLT.Mazur.EtaleFiniteGeometricAffine
+public import FLT.Mazur.EtaleFiniteGeometricDiagram
+public import FLT.Mazur.EtaleFiniteGeometricFiberSpread
 public import FLT.Mazur.EtaleFiniteQuotientBranch
 public import FLT.Mazur.EtaleFiniteSupportCartier
 public import FLT.Mazur.EtaleLocalParameterIdeals
@@ -4652,7 +4659,9 @@ public import FLT.Mazur.FiniteDivisorComponentAvoidance
 public import FLT.Mazur.FiniteDivisorLengthAdditivity
 public import FLT.Mazur.FiniteDivisorLengthOne
 public import FLT.Mazur.FiniteDivisorRationalSupport
+public import FLT.Mazur.FiniteEtaleGeometricSectionCover
 public import FLT.Mazur.FiniteEtaleImageCover
+public import FLT.Mazur.FiniteEtaleSectionCoverNeighborhood
 public import FLT.Mazur.FiniteEtaleWholeFiberNeighborhood
 public import FLT.Mazur.FiniteEvaluationLocus
 public import FLT.Mazur.FiniteFamilySupportBaseChange
@@ -8948,6 +8957,7 @@ public import FLT.Mazur.SchemeEtaleImageDenseModel
 public import FLT.Mazur.SchemeEtaleImageModelBaseChange
 public import FLT.Mazur.SchemeEtaleImageQuotient
 public import FLT.Mazur.SchemeFamilyTripleOverlap
+public import FLT.Mazur.SchemeFiniteGeometricOpenSpread
 public import FLT.Mazur.SchemeFiniteGroupAffineDescent
 public import FLT.Mazur.SchemeFiniteGroupDescent
 public import FLT.Mazur.SchemeFiniteGroupInvariantPrincipal
