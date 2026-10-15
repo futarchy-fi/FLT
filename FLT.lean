@@ -6801,6 +6801,7 @@ public import FLT.Mazur.OrderedTranslationOriginalFiber
 public import FLT.Mazur.OrderedTranslationQuotientCover
 public import FLT.Mazur.OriginalAffineChartOrbit
 public import FLT.Mazur.OriginalAffineFiberCoordinates
+public import FLT.Mazur.OriginalAffineFiberDetectingOpen
 public import FLT.Mazur.OriginalAffineFiberOrbit
 public import FLT.Mazur.OriginalAffineSchemeOrbit
 public import FLT.Mazur.OriginalAlgebraicDetectingSchemeOpen
