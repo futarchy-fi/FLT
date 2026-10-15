@@ -4386,6 +4386,7 @@ public import FLT.Mazur.EllipticResolvedWholeClosedFiber
 public import FLT.Mazur.EllipticResolvedZeroBoundaryCoverage
 public import FLT.Mazur.EllipticResolvedZeroExteriorCover
 public import FLT.Mazur.EllipticResolvedZeroStageCoverage
+public import FLT.Mazur.EllipticRetainedAdjacentCyclicCoordinates
 public import FLT.Mazur.EllipticRetainedBoundaryAtlas
 public import FLT.Mazur.EllipticRetainedBoundaryRange
 public import FLT.Mazur.EllipticRetainedBoundaryTransition
