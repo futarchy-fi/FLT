@@ -11136,6 +11136,7 @@ public import FLT.Mazur.WeierstrassDilatationTerminalRestriction
 public import FLT.Mazur.WeierstrassDilatationTerminalSectionBranches
 public import FLT.Mazur.WeierstrassDilatationTerminalSections
 public import FLT.Mazur.WeierstrassDilatationTerminalTensorNode
+public import FLT.Mazur.WeierstrassDilatationTerminalTensorRestriction
 public import FLT.Mazur.WeierstrassDilatationUnitComparison
 public import FLT.Mazur.WeierstrassDilatationZeroResidue
 public import FLT.Mazur.WeierstrassDilatationZeroResidueBoundary
