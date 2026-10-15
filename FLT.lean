@@ -3264,6 +3264,8 @@ public import FLT.Mazur.AmpleVeroneseMultiplication
 public import FLT.Mazur.AnnihilatorCoherence
 public import FLT.Mazur.AnnihilatorStalk
 public import FLT.Mazur.AnnihilatorSubsheaf
+public import FLT.Mazur.ArbitraryPicardAffineEtaleChart
+public import FLT.Mazur.ArbitraryPicardEtaleTranslation
 public import FLT.Mazur.ArtinianClosedFiberFunctions
 public import FLT.Mazur.ArtinianCoefficientFiberCartier
 public import FLT.Mazur.ArtinianLocalizedCoefficientQuotient
@@ -3793,6 +3795,7 @@ public import FLT.Mazur.ConstantCyclicSectionMap
 public import FLT.Mazur.ConstantDegree
 public import FLT.Mazur.ConstantGroupTensorEvaluation
 public import FLT.Mazur.ConstantPrimeScalarFiltration
+public import FLT.Mazur.ConstructedDisjointGeometricTranslation
 public import FLT.Mazur.ConstructibleDenseInterior
 public import FLT.Mazur.ConstructibleGenericClosure
 public import FLT.Mazur.Contracts
@@ -3945,6 +3948,7 @@ public import FLT.Mazur.DisjointRestrictionIso
 public import FLT.Mazur.DisjointSectionAcyclicTranslation
 public import FLT.Mazur.DisjointSectionCoverCartesian
 public import FLT.Mazur.DisjointSectionCoverSplitting
+public import FLT.Mazur.DisjointSectionGeometricTranslation
 public import FLT.Mazur.DisjointSectionPicardGluing
 public import FLT.Mazur.DisjointStructureCohomology
 public import FLT.Mazur.DivisorBaseChangeRank
@@ -4684,6 +4688,7 @@ public import FLT.Mazur.FiniteEtaleGeometricDisjointCover
 public import FLT.Mazur.FiniteEtaleGeometricSectionCover
 public import FLT.Mazur.FiniteEtaleGeometricSplitting
 public import FLT.Mazur.FiniteEtaleImageCover
+public import FLT.Mazur.FiniteEtaleIndependentGeometricTranslation
 public import FLT.Mazur.FiniteEtaleSectionCoverNeighborhood
 public import FLT.Mazur.FiniteEtaleSectionEqualityNeighborhood
 public import FLT.Mazur.FiniteEtaleWholeFiberNeighborhood
@@ -4746,6 +4751,7 @@ public import FLT.Mazur.FiniteFreeTranslationNormFiber
 public import FLT.Mazur.FiniteFreeTranslationNormNaturality
 public import FLT.Mazur.FiniteFreeTranslationNormNeighborhood
 public import FLT.Mazur.FiniteFreeTranslationRefinement
+public import FLT.Mazur.FiniteGeometricEtaleTranslations
 public import FLT.Mazur.FiniteGeometricSections
 public import FLT.Mazur.FiniteGroupAffineNeighborhood
 public import FLT.Mazur.FiniteGroupAffineQuotient
@@ -5114,6 +5120,7 @@ public import FLT.Mazur.GenusOneGroupProjectiveIso
 public import FLT.Mazur.GenusOneGroupProjectivePoint
 public import FLT.Mazur.GenusOneGroupWeierstrassEquation
 public import FLT.Mazur.GenusOneNonspecialPoint
+public import FLT.Mazur.GeometricAcyclicEtaleTranslation
 public import FLT.Mazur.GeometricAcyclicFppfLocus
 public import FLT.Mazur.GeometricAcyclicPicardLocality
 public import FLT.Mazur.GeometricAcyclicPicardSubfunctor
@@ -9315,6 +9322,7 @@ public import FLT.Mazur.SectionConditionAcyclic
 public import FLT.Mazur.SectionConditionDimension
 public import FLT.Mazur.SectionCoverCoordinates
 public import FLT.Mazur.SectionCoverDiscrepancy
+public import FLT.Mazur.SectionCoverGeometricMorphisms
 public import FLT.Mazur.SectionCubicChartMorphism
 public import FLT.Mazur.SectionCubicRatioNormalization
 public import FLT.Mazur.SectionDirectImageCanonicalBasis
@@ -9524,6 +9532,7 @@ public import FLT.Mazur.SmoothGeometricAcyclicFiniteFree
 public import FLT.Mazur.SmoothGeometricAcyclicHigherImage
 public import FLT.Mazur.SmoothGeometricAcyclicRankOne
 public import FLT.Mazur.SmoothGeometricFiniteSeparablePoints
+public import FLT.Mazur.SmoothGeometricOpenEtaleLift
 public import FLT.Mazur.SmoothGeometricSeparablePoints
 public import FLT.Mazur.SmoothGeometricallyReduced
 public import FLT.Mazur.SmoothHilbertGeometricCoverage
