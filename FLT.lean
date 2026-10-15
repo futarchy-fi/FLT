@@ -6402,6 +6402,7 @@ public import FLT.Mazur.NeronPolygonRotationAction
 public import FLT.Mazur.NeronPolygonScaling
 public import FLT.Mazur.NestedOpenCohomologyCoherence
 public import FLT.Mazur.NeutralTwistDirectImage
+public import FLT.Mazur.NilpotentIdealSocle
 public import FLT.Mazur.NodalFamilyGeometricConnected
 public import FLT.Mazur.NodalFiberAlgebra
 public import FLT.Mazur.NodalFiberBoundedParameterTransport
