@@ -7421,6 +7421,7 @@ public import FLT.Mazur.PolygonFirstNodeParameterScaling
 public import FLT.Mazur.PolygonFirstNodePolynomialDescent
 public import FLT.Mazur.PolygonFirstNodePolynomialExtension
 public import FLT.Mazur.PolygonFirstNodePositiveExtension
+public import FLT.Mazur.PolygonFirstNodePrincipalParts
 public import FLT.Mazur.PolygonFirstNodeReduction
 public import FLT.Mazur.PolygonFirstNodeScaledBoundary
 public import FLT.Mazur.PolygonFirstNodeScaledExtension
