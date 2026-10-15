@@ -6274,6 +6274,7 @@ public import FLT.Mazur.ModulePullbackSectionIdentity
 public import FLT.Mazur.ModulePullbackSectionIsoTransport
 public import FLT.Mazur.ModulePullbackSectionTransport
 public import FLT.Mazur.ModulePullbackStageDual
+public import FLT.Mazur.ModulePullbackStageGlobalSections
 public import FLT.Mazur.ModulePullbackStageIso
 public import FLT.Mazur.ModulePullbackStageTensor
 public import FLT.Mazur.ModulePullbackTrivializationCoherence
@@ -8418,6 +8419,7 @@ public import FLT.Mazur.ProjectiveCoefficientFunctor
 public import FLT.Mazur.ProjectiveCoherentCharts
 public import FLT.Mazur.ProjectiveCoherentCohomology
 public import FLT.Mazur.ProjectiveCoordinateGeneratorOpen
+public import FLT.Mazur.ProjectiveCoordinateSectionRatios
 public import FLT.Mazur.ProjectiveCoordinateSections
 public import FLT.Mazur.ProjectiveCycleConstantPropagation
 public import FLT.Mazur.ProjectiveFiniteAffineNeighborhood
@@ -11034,6 +11036,8 @@ public import FLT.Mazur.WeierstrassDividedAdjacentZeroOrderedConicIntersection
 public import FLT.Mazur.WeierstrassDividedAdjacentZeroParameterBranchCompatibility
 public import FLT.Mazur.WeierstrassDividedAdjacentZeroParameterIntersection
 public import FLT.Mazur.WeierstrassDividedAdjacentZeroSectionSeparation
+public import FLT.Mazur.WeierstrassDividedArithmeticCoordinateTransition
+public import FLT.Mazur.WeierstrassDividedArithmeticCoordinates
 public import FLT.Mazur.WeierstrassDividedAtlasRegularCenter
 public import FLT.Mazur.WeierstrassDividedBoundaryNormalization
 public import FLT.Mazur.WeierstrassDividedBranchChainIntersections
@@ -11202,6 +11206,7 @@ public import FLT.Mazur.WeierstrassDividedGlobalCoefficientSmoothOrbit
 public import FLT.Mazur.WeierstrassDividedGlobalCoefficientStep
 public import FLT.Mazur.WeierstrassDividedGlobalConicCoordinates
 public import FLT.Mazur.WeierstrassDividedGlobalConicIntersection
+public import FLT.Mazur.WeierstrassDividedGlobalCoordinateSections
 public import FLT.Mazur.WeierstrassDividedGlobalFiniteActionProduct
 public import FLT.Mazur.WeierstrassDividedGlobalFiniteFlat
 public import FLT.Mazur.WeierstrassDividedGlobalFiniteGluing
@@ -12078,6 +12083,9 @@ public import FLT.Mazur.WeierstrassIntegralChart
 public import FLT.Mazur.WeierstrassIntegralChartIntersection
 public import FLT.Mazur.WeierstrassIntegralChartProjectivePoint
 public import FLT.Mazur.WeierstrassIntegralCoefficientMap
+public import FLT.Mazur.WeierstrassIntegralCoordinateEquations
+public import FLT.Mazur.WeierstrassIntegralCoordinateEvaluation
+public import FLT.Mazur.WeierstrassIntegralCoordinateSections
 public import FLT.Mazur.WeierstrassIntegralCurveGluing
 public import FLT.Mazur.WeierstrassIntegralCurveMorphisms
 public import FLT.Mazur.WeierstrassIntegralCurveProduct
