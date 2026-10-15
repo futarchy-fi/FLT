@@ -10220,6 +10220,7 @@ public import FLT.Mazur.TensorOpenChart
 public import FLT.Mazur.TensorOpenChartCommonBoundary
 public import FLT.Mazur.TensorOpenChartCommonIntersection
 public import FLT.Mazur.TensorOpenChartIntersection
+public import FLT.Mazur.TensorOpenChartNilpotentSeparation
 public import FLT.Mazur.TensorOpenChartNodeExclusion
 public import FLT.Mazur.TensorOpenChartOverlap
 public import FLT.Mazur.TensorOpenChartRange
@@ -11307,6 +11308,7 @@ public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentAtlas
 public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentBranch
 public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentFactorization
 public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentIntersection
+public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentSeparation
 public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentSlope
 public import FLT.Mazur.WeierstrassDividedArithmeticBoundaryCharts
 public import FLT.Mazur.WeierstrassDividedArithmeticBranchRestriction
@@ -11317,10 +11319,13 @@ public import FLT.Mazur.WeierstrassDividedArithmeticInitialComparison
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialIntersection
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialLaurent
+public import FLT.Mazur.WeierstrassDividedArithmeticInitialNodeIntersection
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialNodes
+public import FLT.Mazur.WeierstrassDividedArithmeticInitialSeparation
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialSlope
 public import FLT.Mazur.WeierstrassDividedArithmeticNodeCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticNodeOpen
+public import FLT.Mazur.WeierstrassDividedArithmeticNonadjacentIntersection
 public import FLT.Mazur.WeierstrassDividedArithmeticOppositeNodeOpen
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalBranch
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalCoverage
@@ -11332,6 +11337,7 @@ public import FLT.Mazur.WeierstrassDividedArithmeticTerminalNodeOpen
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalNodeReduction
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalPunctureCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalPunctureImages
+public import FLT.Mazur.WeierstrassDividedArithmeticTerminalPunctureIntersection
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalPunctureIso
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalPunctureParameter
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalPunctureRestriction
@@ -11632,6 +11638,7 @@ public import FLT.Mazur.WeierstrassDividedLaurentZeroRetainedIntersection
 public import FLT.Mazur.WeierstrassDividedLinearResidueBounds
 public import FLT.Mazur.WeierstrassDividedLocalComponentContraction
 public import FLT.Mazur.WeierstrassDividedLocalizedIntersection
+public import FLT.Mazur.WeierstrassDividedNilpotentNonadjacentIntersection
 public import FLT.Mazur.WeierstrassDividedNonadjacentGlobalIntersection
 public import FLT.Mazur.WeierstrassDividedNonadjacentTensorIntersection
 public import FLT.Mazur.WeierstrassDividedOddCompleteClosedComparison
@@ -12530,6 +12537,8 @@ public import FLT.Mazur.WeierstrassModificationXAlgebra
 public import FLT.Mazur.WeierstrassModificationXArithmeticInitialCover
 public import FLT.Mazur.WeierstrassModificationXArithmeticInitialNode
 public import FLT.Mazur.WeierstrassModificationXArithmeticNodeBoundary
+public import FLT.Mazur.WeierstrassModificationXArithmeticNodeSeparation
+public import FLT.Mazur.WeierstrassModificationXArithmeticPuncture
 public import FLT.Mazur.WeierstrassModificationXArithmeticTensorNodes
 public import FLT.Mazur.WeierstrassModificationXBaseChange
 public import FLT.Mazur.WeierstrassModificationXBaseChangeGenerators
@@ -12626,6 +12635,7 @@ public import FLT.Mazur.WeierstrassModificationXLaurentEvaluation
 public import FLT.Mazur.WeierstrassModificationXLaurentNodeDenominator
 public import FLT.Mazur.WeierstrassModificationXLaurentNodeParameter
 public import FLT.Mazur.WeierstrassModificationXLaurentNodeRestriction
+public import FLT.Mazur.WeierstrassModificationXLaurentNodeSeparation
 public import FLT.Mazur.WeierstrassModificationXLaurentRoot
 public import FLT.Mazur.WeierstrassModificationXLaurentStandardPuncture
 public import FLT.Mazur.WeierstrassModificationXLocalization
@@ -13131,6 +13141,7 @@ public import FLT.Mazur.WeierstrassSuccessiveAdjacentSlopeOverlap
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticBoundaryCoverage
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticBranchBoundary
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticBranchRestriction
+public import FLT.Mazur.WeierstrassSuccessiveArithmeticBranchSeparation
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticLaurentReduction
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticNodeChart
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticNodeCoverage
@@ -13164,6 +13175,7 @@ public import FLT.Mazur.WeierstrassSuccessiveNilpotentBranch
 public import FLT.Mazur.WeierstrassSuccessiveNilpotentNodeChart
 public import FLT.Mazur.WeierstrassSuccessiveNilpotentSlopeMap
 public import FLT.Mazur.WeierstrassSuccessiveNodeChartCoverage
+public import FLT.Mazur.WeierstrassSuccessiveNodeChartDisjoint
 public import FLT.Mazur.WeierstrassSuccessiveNodeRestrictionSquare
 public import FLT.Mazur.WeierstrassSuccessiveOppositeNodeChart
 public import FLT.Mazur.WeierstrassSuccessiveOppositeRestrictionSquare
