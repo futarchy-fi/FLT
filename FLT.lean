@@ -6888,6 +6888,7 @@ public import FLT.Mazur.PolygonArithmeticCompatibleScalars
 public import FLT.Mazur.PolygonArithmeticCompleteBase
 public import FLT.Mazur.PolygonArithmeticCompleteBaseSquare
 public import FLT.Mazur.PolygonArithmeticFlatLayer
+public import FLT.Mazur.PolygonArithmeticHomogeneousSections
 public import FLT.Mazur.PolygonArithmeticLayerQuotient
 public import FLT.Mazur.PolygonArithmeticLineCoherence
 public import FLT.Mazur.PolygonArithmeticLineLayers
