@@ -7032,6 +7032,7 @@ public import FLT.Mazur.PolygonCompleteIdentityMixedObstruction
 public import FLT.Mazur.PolygonCompleteIdentityMulCoherence
 public import FLT.Mazur.PolygonCompleteIdentityMultiplicationCubic
 public import FLT.Mazur.PolygonCompleteIdentityNilpotentDefect
+public import FLT.Mazur.PolygonCompleteIdentityObstructionBoundary
 public import FLT.Mazur.PolygonCompleteIdentityObstructionCocycle
 public import FLT.Mazur.PolygonCompleteIdentityObstructionNormalization
 public import FLT.Mazur.PolygonCompleteIdentityObstructionSymmetry
