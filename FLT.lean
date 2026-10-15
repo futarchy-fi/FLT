@@ -4597,6 +4597,7 @@ public import FLT.Mazur.EllipticZeroExteriorSmoothCover
 public import FLT.Mazur.EnlargedPresentationModel
 public import FLT.Mazur.EnvelopeBoundaryIdealSheaf
 public import FLT.Mazur.EnvelopeBoundaryIdealTransport
+public import FLT.Mazur.EnvelopeBoundaryRelation
 public import FLT.Mazur.EnvelopeBoundaryTestLift
 public import FLT.Mazur.EnvelopeInteriorFiniteAffineCover
 public import FLT.Mazur.EnvelopeInteriorUnitIdealLift
