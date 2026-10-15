@@ -4359,6 +4359,7 @@ public import FLT.Mazur.EllipticResolvedComponentSeparation
 public import FLT.Mazur.EllipticResolvedComponentSupports
 public import FLT.Mazur.EllipticResolvedDepthSeparation
 public import FLT.Mazur.EllipticResolvedExteriorBoundaryCover
+public import FLT.Mazur.EllipticResolvedExteriorCyclicCoordinates
 public import FLT.Mazur.EllipticResolvedGeometricLabel
 public import FLT.Mazur.EllipticResolvedIdentityCharacter
 public import FLT.Mazur.EllipticResolvedIdentityChart
