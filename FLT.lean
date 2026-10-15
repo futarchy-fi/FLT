@@ -7409,6 +7409,7 @@ public import FLT.Mazur.PolygonDivisorPowerPullback
 public import FLT.Mazur.PolygonFieldExtension
 public import FLT.Mazur.PolygonFiniteSubgroup
 public import FLT.Mazur.PolygonFirstLaurentCoefficient
+public import FLT.Mazur.PolygonFirstLaurentPairProduct
 public import FLT.Mazur.PolygonFirstNodeAutomorphism
 public import FLT.Mazur.PolygonFirstNodeBoundary
 public import FLT.Mazur.PolygonFirstNodeBranchAutomorphism
