@@ -6943,6 +6943,7 @@ public import FLT.Mazur.PolygonArithmeticCompleteClosedFiber
 public import FLT.Mazur.PolygonArithmeticCompleteDivisor
 public import FLT.Mazur.PolygonArithmeticCompleteDivisorLine
 public import FLT.Mazur.PolygonArithmeticCompleteDivisorRestriction
+public import FLT.Mazur.PolygonArithmeticCompleteLineCoherence
 public import FLT.Mazur.PolygonArithmeticCompleteLineQuotient
 public import FLT.Mazur.PolygonArithmeticCompleteMarkingAmple
 public import FLT.Mazur.PolygonArithmeticCompleteMarkings
