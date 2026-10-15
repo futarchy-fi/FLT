@@ -3704,6 +3704,7 @@ public import FLT.Mazur.ClosedImmersionLimitDescent
 public import FLT.Mazur.ClosedImmersionModulePushforward
 public import FLT.Mazur.ClosedImmersionOpenKernel
 public import FLT.Mazur.ClosedImmersionOpenNeighborhood
+public import FLT.Mazur.ClosedImmersionRefinedOpenPatches
 public import FLT.Mazur.ClosedLineProjectionFormula
 public import FLT.Mazur.ClosedLineQuotientPresentation
 public import FLT.Mazur.ClosedModuleDescent
@@ -7405,12 +7406,18 @@ public import FLT.Mazur.PolygonCompleteIdentityAdicAmbientImmersion
 public import FLT.Mazur.PolygonCompleteIdentityAdicAmbientKernel
 public import FLT.Mazur.PolygonCompleteIdentityAdicAmbientLifts
 public import FLT.Mazur.PolygonCompleteIdentityAdicAmbientStructure
+public import FLT.Mazur.PolygonCompleteIdentityAdicCubicChartMap
+public import FLT.Mazur.PolygonCompleteIdentityAdicCubicCoordinates
+public import FLT.Mazur.PolygonCompleteIdentityAdicCubicPatches
 public import FLT.Mazur.PolygonCompleteIdentityAdicRefinedKernel
 public import FLT.Mazur.PolygonCompleteIdentityAdicRefinedPatches
 public import FLT.Mazur.PolygonCompleteIdentityAmbientErrorRelation
 public import FLT.Mazur.PolygonCompleteIdentityAmbientParameterComparison
 public import FLT.Mazur.PolygonCompleteIdentityChartAtlas
 public import FLT.Mazur.PolygonCompleteIdentityChartOperations
+public import FLT.Mazur.PolygonCompleteIdentityCubicChartMaps
+public import FLT.Mazur.PolygonCompleteIdentityCubicCoordinates
+public import FLT.Mazur.PolygonCompleteIdentityCubicDenominators
 public import FLT.Mazur.PolygonCompleteIdentityFiniteAlgebra
 public import FLT.Mazur.PolygonCompleteIdentityFiniteCoherence
 public import FLT.Mazur.PolygonCompleteIdentityFiniteComparison
@@ -7464,6 +7471,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstCompleteErrors
 public import FLT.Mazur.PolygonCompleteIdentityFirstCompleteSmoothing
 public import FLT.Mazur.PolygonCompleteIdentityFirstCoordinateDescent
 public import FLT.Mazur.PolygonCompleteIdentityFirstCorrection
+public import FLT.Mazur.PolygonCompleteIdentityFirstCubicErrorCriterion
 public import FLT.Mazur.PolygonCompleteIdentityFirstDefectDerivation
 public import FLT.Mazur.PolygonCompleteIdentityFirstDefectFormula
 public import FLT.Mazur.PolygonCompleteIdentityFirstDefectProduct
@@ -7661,6 +7669,7 @@ public import FLT.Mazur.PolygonCompletePointCoordinateRange
 public import FLT.Mazur.PolygonCompletePointCubicBaseChange
 public import FLT.Mazur.PolygonCompletePointCubicChartAffinization
 public import FLT.Mazur.PolygonCompletePointCubicChartFunctions
+public import FLT.Mazur.PolygonCompletePointCubicChartRatios
 public import FLT.Mazur.PolygonCompletePointCubicChartSquare
 public import FLT.Mazur.PolygonCompletePointCubicFactorization
 public import FLT.Mazur.PolygonCompletePointCubicPreimages
