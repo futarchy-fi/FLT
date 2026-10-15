@@ -3282,6 +3282,7 @@ public import FLT.Mazur.AnnihilatorStalk
 public import FLT.Mazur.AnnihilatorSubsheaf
 public import FLT.Mazur.ArbitraryGeometricAffineFullFiber
 public import FLT.Mazur.ArbitraryGeometricAllLiftTranslations
+public import FLT.Mazur.ArbitraryGeometricEnvelopeCore
 public import FLT.Mazur.ArbitraryGeometricFiniteGroundInterior
 public import FLT.Mazur.ArbitraryGeometricFiniteKernel
 public import FLT.Mazur.ArbitraryGeometricGroundQuotient
@@ -3782,6 +3783,9 @@ public import FLT.Mazur.CommonAmbientGrassmannianProduct
 public import FLT.Mazur.CommonAmbientOpenIso
 public import FLT.Mazur.CommonAmbientSourceGrassmannianImmersion
 public import FLT.Mazur.CommonCoefficientStage
+public import FLT.Mazur.CommonGroundEnvelopeCore
+public import FLT.Mazur.CommonGroundEnvelopeSquare
+public import FLT.Mazur.CommonGroundResidualGenerizations
 public import FLT.Mazur.CommonIdealDirectSum
 public import FLT.Mazur.CommonModelEventualEquality
 public import FLT.Mazur.CommonRelationIntegerModel
@@ -6522,6 +6526,7 @@ public import FLT.Mazur.NodeTangentTensorOrientation
 public import FLT.Mazur.NodeTangentUnramified
 public import FLT.Mazur.NodeTangentValuationConjugation
 public import FLT.Mazur.NodeTangentValuationModel
+public import FLT.Mazur.NoetherianClosedImageGenerizations
 public import FLT.Mazur.NoetherianConstructibleCriterion
 public import FLT.Mazur.NoetherianDirectSumSheaf
 public import FLT.Mazur.NoetherianInfinitesimalFiberFunctions
@@ -6862,6 +6867,7 @@ public import FLT.Mazur.OriginalAffineSchemeDetectingOpen
 public import FLT.Mazur.OriginalAffineSchemeOrbit
 public import FLT.Mazur.OriginalAlgebraicDetectingSchemeOpen
 public import FLT.Mazur.OriginalAlgebraicPointDescent
+public import FLT.Mazur.OriginalEnvelopeAcyclicCriterion
 public import FLT.Mazur.OriginalFamilyIdentityComparison
 public import FLT.Mazur.OriginalFamilySectionComposition
 public import FLT.Mazur.OriginalFamilySquareComposition
@@ -8630,6 +8636,7 @@ public import FLT.Mazur.ProperCohomologyFieldVanishing
 public import FLT.Mazur.ProperCohomologyWitnesses
 public import FLT.Mazur.ProperConnectedReducedSections
 public import FLT.Mazur.ProperCoreGroundInterior
+public import FLT.Mazur.ProperCoreResidualGenerizations
 public import FLT.Mazur.ProperCoreResidualInterior
 public import FLT.Mazur.ProperCoverImmersionCriterion
 public import FLT.Mazur.ProperCoverLimitDescent
