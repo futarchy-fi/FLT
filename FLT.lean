@@ -6881,6 +6881,7 @@ public import FLT.Mazur.PolygonArithmeticAdicImmersion
 public import FLT.Mazur.PolygonArithmeticBoundaryAmple
 public import FLT.Mazur.PolygonArithmeticBoundaryDivisor
 public import FLT.Mazur.PolygonArithmeticBoundaryLine
+public import FLT.Mazur.PolygonArithmeticClosedLayer
 public import FLT.Mazur.PolygonArithmeticCompleteBase
 public import FLT.Mazur.PolygonArithmeticCompleteBaseSquare
 public import FLT.Mazur.PolygonArithmeticFlatLayer
