@@ -12859,6 +12859,7 @@ public import FLT.Mazur.WeierstrassSplitNodalUnitPoints
 public import FLT.Mazur.WeierstrassSplitNormalizationInfinity
 public import FLT.Mazur.WeierstrassSplitNormalizationInfinityParameter
 public import FLT.Mazur.WeierstrassSquareZeroTorsionRigidity
+public import FLT.Mazur.WeierstrassSuccessiveAdjacentBranchGeometry
 public import FLT.Mazur.WeierstrassSuccessiveAdjacentLaurentSlope
 public import FLT.Mazur.WeierstrassSuccessiveAdjacentSlopeOverlap
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticBranchBoundary
