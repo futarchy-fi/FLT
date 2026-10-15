@@ -6267,6 +6267,7 @@ public import FLT.Mazur.ModulePullbackSectionIdentity
 public import FLT.Mazur.ModulePullbackSectionIsoTransport
 public import FLT.Mazur.ModulePullbackSectionTransport
 public import FLT.Mazur.ModulePullbackStageDual
+public import FLT.Mazur.ModulePullbackStageGlobalSections
 public import FLT.Mazur.ModulePullbackStageIso
 public import FLT.Mazur.ModulePullbackStageTensor
 public import FLT.Mazur.ModulePullbackTrivializationCoherence
