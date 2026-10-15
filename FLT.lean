@@ -6865,6 +6865,7 @@ public import FLT.Mazur.PolygonArithmeticNodeTransition
 public import FLT.Mazur.PolygonArithmeticStageCoefficients
 public import FLT.Mazur.PolygonArithmeticStageFamilies
 public import FLT.Mazur.PolygonArithmeticStageRestriction
+public import FLT.Mazur.PolygonArithmeticSystem
 public import FLT.Mazur.PolygonAtlas
 public import FLT.Mazur.PolygonAtlasCocone
 public import FLT.Mazur.PolygonAtlasSmoothLocus
