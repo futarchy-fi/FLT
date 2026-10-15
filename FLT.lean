@@ -6941,6 +6941,7 @@ public import FLT.Mazur.PolygonArithmeticTowerAssembly
 public import FLT.Mazur.PolygonArithmeticTowerDivision
 public import FLT.Mazur.PolygonArithmeticUniformLifting
 public import FLT.Mazur.PolygonArithmeticVeronese
+public import FLT.Mazur.PolygonArithmeticVeroneseExactness
 public import FLT.Mazur.PolygonArithmeticVeroneseIdeal
 public import FLT.Mazur.PolygonArithmeticZeroExactness
 public import FLT.Mazur.PolygonArithmeticZeroTower
