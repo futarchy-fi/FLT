@@ -5043,6 +5043,7 @@ public import FLT.Mazur.FiniteTypeUnpointedFppfOpenRepresentation
 public import FLT.Mazur.FiniteTypeUnpointedFppfOpenYoneda
 public import FLT.Mazur.FiniteUnramifiedConstantFiber
 public import FLT.Mazur.FiniteUnramifiedFieldLength
+public import FLT.Mazur.FiniteValuativeEnvelopeEquations
 public import FLT.Mazur.FiniteValuativeEnvelopeTest
 public import FLT.Mazur.FiniteValuativeHilbertParameters
 public import FLT.Mazur.FinitelyPresentedImmersedProperCover
