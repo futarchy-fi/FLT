@@ -3275,6 +3275,7 @@ public import FLT.Mazur.AmpleVeroneseMultiplication
 public import FLT.Mazur.AnnihilatorCoherence
 public import FLT.Mazur.AnnihilatorStalk
 public import FLT.Mazur.AnnihilatorSubsheaf
+public import FLT.Mazur.ArbitraryGeometricAllLiftTranslations
 public import FLT.Mazur.ArbitraryPicardAffineEtaleChart
 public import FLT.Mazur.ArbitraryPicardEtaleTranslation
 public import FLT.Mazur.ArtinianClosedFiberFunctions
