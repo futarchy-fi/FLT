@@ -4609,6 +4609,7 @@ public import FLT.Mazur.EllipticVariableChangeReduction
 public import FLT.Mazur.EllipticVariableChangeSmoothness
 public import FLT.Mazur.EllipticWeightedScaling
 public import FLT.Mazur.EllipticZeroExteriorSmoothCover
+public import FLT.Mazur.EmbeddedStalkNilpotence
 public import FLT.Mazur.EnlargedPresentationModel
 public import FLT.Mazur.EnvelopeBoundaryIdealSheaf
 public import FLT.Mazur.EnvelopeBoundaryIdealTransport
@@ -5544,6 +5545,9 @@ public import FLT.Mazur.HilbertBoundaryInfinitesimalArrows
 public import FLT.Mazur.HilbertBoundaryKernelPair
 public import FLT.Mazur.HilbertBoundaryOrbit
 public import FLT.Mazur.HilbertBoundaryQuotient
+public import FLT.Mazur.HilbertBoundaryQuotientGerms
+public import FLT.Mazur.HilbertBoundaryQuotientNilpotence
+public import FLT.Mazur.HilbertBoundaryQuotientSections
 public import FLT.Mazur.HilbertBoundaryRelationNilpotence
 public import FLT.Mazur.HilbertBoundaryRelationTests
 public import FLT.Mazur.HilbertBoundarySchemeTests
@@ -6055,6 +6059,7 @@ public import FLT.Mazur.InvariantLocalizationAction
 public import FLT.Mazur.InvariantLocalizationComparison
 public import FLT.Mazur.InvariantLocalizationCoordinates
 public import FLT.Mazur.InvariantLocalizationNumerator
+public import FLT.Mazur.InvariantSectionObstruction
 public import FLT.Mazur.IrreducibleComponentAmple
 public import FLT.Mazur.IsomorphicClosedPullback
 public import FLT.Mazur.IteratedOldArrowRepresentatives
@@ -6540,6 +6545,7 @@ public import FLT.Mazur.NilpotentQuadraticDifferenceReduction
 public import FLT.Mazur.NilpotentQuadraticDifferenceTowerNaturality
 public import FLT.Mazur.NilpotentQuadraticRoot
 public import FLT.Mazur.NilpotentQuadraticRootNaturality
+public import FLT.Mazur.NilpotentSectionRestriction
 public import FLT.Mazur.NodalFamilyGeometricConnected
 public import FLT.Mazur.NodalFiberAlgebra
 public import FLT.Mazur.NodalFiberBoundedParameterTransport
@@ -9215,6 +9221,8 @@ public import FLT.Mazur.RelativePoleComplementFunctions
 public import FLT.Mazur.RelativePoleComplementLinear
 public import FLT.Mazur.RelativeRankOneDivisorUniqueness
 public import FLT.Mazur.RelativeRelationArrowCalculus
+public import FLT.Mazur.RelativeRelationClosedObstruction
+public import FLT.Mazur.RelativeRelationClosedSections
 public import FLT.Mazur.RelativeRelationEtaleSourceFunctions
 public import FLT.Mazur.RelativeRelationFppfInvariantQuotient
 public import FLT.Mazur.RelativeRelationFppfLocallyRingedDescent
@@ -9240,6 +9248,8 @@ public import FLT.Mazur.RelativeRelationInvariantSheaf
 public import FLT.Mazur.RelativeRelationMonicBaseLift
 public import FLT.Mazur.RelativeRelationMonicSeedOpenQuotient
 public import FLT.Mazur.RelativeRelationMonicSeedQuotient
+public import FLT.Mazur.RelativeRelationNilpotentGerms
+public import FLT.Mazur.RelativeRelationNilpotentSections
 public import FLT.Mazur.RelativeRelationOpenSaturation
 public import FLT.Mazur.RelativeRelationOpenSourceFunctions
 public import FLT.Mazur.RelativeRelationOrbit
