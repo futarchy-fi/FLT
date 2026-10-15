@@ -5912,6 +5912,7 @@ public import FLT.Mazur.LaurentScaledCoordinateIsomorphisms
 public import FLT.Mazur.LaurentScaledEvaluationCoefficients
 public import FLT.Mazur.LaurentSchemeCoordinates
 public import FLT.Mazur.LaurentSquareZeroCocycle
+public import FLT.Mazur.LaurentSquareZeroCoordinate
 public import FLT.Mazur.LaurentTensor
 public import FLT.Mazur.LaurentUnitCoefficientPoint
 public import FLT.Mazur.LaurentUnitMultiplication
