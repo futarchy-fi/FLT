@@ -7580,6 +7580,7 @@ public import FLT.Mazur.PolygonOneGonContractionMarking
 public import FLT.Mazur.PolygonOneGonContractionMarkingLine
 public import FLT.Mazur.PolygonOneGonContractionMarkingSection
 public import FLT.Mazur.PolygonOneGonContractionNormalizationLine
+public import FLT.Mazur.PolygonOneGonContractionOriginalCoordinates
 public import FLT.Mazur.PolygonOneGonContractionReflectionLine
 public import FLT.Mazur.PolygonOneGonContractionReflectionPower
 public import FLT.Mazur.PolygonOneGonContractionRotationLine
