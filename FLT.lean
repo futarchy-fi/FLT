@@ -7037,6 +7037,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFiniteSymmetry
 public import FLT.Mazur.PolygonCompleteIdentityFiniteUnitEvaluation
 public import FLT.Mazur.PolygonCompleteIdentityFiniteUnits
 public import FLT.Mazur.PolygonCompleteIdentityFirstActionBoundary
+public import FLT.Mazur.PolygonCompleteIdentityFirstActionBranchEquiv
 public import FLT.Mazur.PolygonCompleteIdentityFirstActionCoordinate
 public import FLT.Mazur.PolygonCompleteIdentityFirstActionNodeSpectra
 public import FLT.Mazur.PolygonCompleteIdentityFirstActionNodes
