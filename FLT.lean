@@ -7041,6 +7041,7 @@ public import FLT.Mazur.PolygonArithmeticStageLineQuotient
 public import FLT.Mazur.PolygonArithmeticStageNaturality
 public import FLT.Mazur.PolygonArithmeticStageProj
 public import FLT.Mazur.PolygonArithmeticStageProjTransition
+public import FLT.Mazur.PolygonArithmeticStageProjectiveCoordinates
 public import FLT.Mazur.PolygonArithmeticStageProper
 public import FLT.Mazur.PolygonArithmeticStageRecovery
 public import FLT.Mazur.PolygonArithmeticStageRestriction
