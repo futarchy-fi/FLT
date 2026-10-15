@@ -2921,6 +2921,7 @@ public import FLT.Mazur.AffineHilbertNestedKernel
 public import FLT.Mazur.AffineHilbertNestedRestriction
 public import FLT.Mazur.AffineHilbertNoetherianRelation
 public import FLT.Mazur.AffineHilbertOldEnvelopeEffective
+public import FLT.Mazur.AffineHilbertOldEnvelopeFlatCover
 public import FLT.Mazur.AffineHilbertOldEnvelopeGeneric
 public import FLT.Mazur.AffineHilbertOldEnvelopeTarget
 public import FLT.Mazur.AffineHilbertOriginalOrbitAtlas
