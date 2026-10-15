@@ -5873,6 +5873,7 @@ public import FLT.Mazur.LaurentCoefficientEvaluation
 public import FLT.Mazur.LaurentCoefficientInjectivity
 public import FLT.Mazur.LaurentDomainPairUnits
 public import FLT.Mazur.LaurentDomainUnits
+public import FLT.Mazur.LaurentIdentityIdeal
 public import FLT.Mazur.LaurentLineActionDensity
 public import FLT.Mazur.LaurentLineActionEvaluation
 public import FLT.Mazur.LaurentNormalizedReduction
