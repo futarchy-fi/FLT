@@ -4663,6 +4663,7 @@ public import FLT.Mazur.EtaleFiniteSupportCartier
 public import FLT.Mazur.EtaleLocalParameterIdeals
 public import FLT.Mazur.EtaleMarkingScheme
 public import FLT.Mazur.EtaleNilpotentGlue
+public import FLT.Mazur.EtaleNilpotentLocalLift
 public import FLT.Mazur.EtalePolynomialGeometricOpenPoints
 public import FLT.Mazur.EtalePolynomialPointLift
 public import FLT.Mazur.EtalePolynomialSeparableLift
