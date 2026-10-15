@@ -7272,6 +7272,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstDefectDerivation
 public import FLT.Mazur.PolygonCompleteIdentityFirstDefectFormula
 public import FLT.Mazur.PolygonCompleteIdentityFirstDefectProduct
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphAlgebra
+public import FLT.Mazur.PolygonCompleteIdentityFirstGraphBranchExt
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphBranchMaps
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphChartBranch
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphConductor
