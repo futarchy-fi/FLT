@@ -11106,6 +11106,7 @@ public import FLT.Mazur.WeierstrassDilatationShear
 public import FLT.Mazur.WeierstrassDilatationShearHorizontal
 public import FLT.Mazur.WeierstrassDilatationShearLaurentNormalForm
 public import FLT.Mazur.WeierstrassDilatationShearNodeNormalForm
+public import FLT.Mazur.WeierstrassDilatationSmoothingCongruence
 public import FLT.Mazur.WeierstrassDilatationTangentCorrection
 public import FLT.Mazur.WeierstrassDilatationTangentEquiv
 public import FLT.Mazur.WeierstrassDilatationTangentEvaluation
