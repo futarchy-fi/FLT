@@ -7104,6 +7104,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstGraphLocalization
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphNilradical
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphReduction
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphScheme
+public import FLT.Mazur.PolygonCompleteIdentityFirstGraphSpecialFiber
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphSupport
 public import FLT.Mazur.PolygonCompleteIdentityFirstLinearization
 public import FLT.Mazur.PolygonCompleteIdentityFirstNodeBoundary
