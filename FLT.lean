@@ -9301,6 +9301,7 @@ public import FLT.Mazur.SectionConditionAcyclic
 public import FLT.Mazur.SectionConditionDimension
 public import FLT.Mazur.SectionCoverCoordinates
 public import FLT.Mazur.SectionCoverDiscrepancy
+public import FLT.Mazur.SectionCoverGeometricMorphisms
 public import FLT.Mazur.SectionCubicChartMorphism
 public import FLT.Mazur.SectionCubicRatioNormalization
 public import FLT.Mazur.SectionDirectImageCanonicalBasis
