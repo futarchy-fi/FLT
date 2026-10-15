@@ -4326,6 +4326,9 @@ public import FLT.Mazur.EllipticRepeatedCubicPoint
 public import FLT.Mazur.EllipticRepeatedCubicTranslation
 public import FLT.Mazur.EllipticResolvedAdditionCongruence
 public import FLT.Mazur.EllipticResolvedAdjacentBoundaryCover
+public import FLT.Mazur.EllipticResolvedCompleteCubicComparison
+public import FLT.Mazur.EllipticResolvedCompleteFiberComparison
+public import FLT.Mazur.EllipticResolvedCompleteMarkings
 public import FLT.Mazur.EllipticResolvedComponentAtlas
 public import FLT.Mazur.EllipticResolvedComponentAtlasCoverage
 public import FLT.Mazur.EllipticResolvedComponentCharacterEquality
@@ -4350,6 +4353,7 @@ public import FLT.Mazur.EllipticResolvedMixedTranslationEquality
 public import FLT.Mazur.EllipticResolvedOppositeTranslationEquality
 public import FLT.Mazur.EllipticResolvedOrientedAtlas
 public import FLT.Mazur.EllipticResolvedParameterEquality
+public import FLT.Mazur.EllipticResolvedPolygonComparison
 public import FLT.Mazur.EllipticResolvedPositiveExteriorCoverage
 public import FLT.Mazur.EllipticResolvedPositiveStageCoverage
 public import FLT.Mazur.EllipticResolvedReciprocalIdentity
@@ -6831,6 +6835,7 @@ public import FLT.Mazur.PolygonClosedCubicOmittedConstant
 public import FLT.Mazur.PolygonClosedCubicRetainedLine
 public import FLT.Mazur.PolygonClosedCubicSmoothTorus
 public import FLT.Mazur.PolygonClosedCubicTorus
+public import FLT.Mazur.PolygonClosedCubicTorusSmoothIso
 public import FLT.Mazur.PolygonClosedEvaluationLifting
 public import FLT.Mazur.PolygonClosedScalarLifting
 public import FLT.Mazur.PolygonCoconeComparison
@@ -6896,6 +6901,7 @@ public import FLT.Mazur.PolygonCompleteChartOverlapField
 public import FLT.Mazur.PolygonCompleteClassifiedFibers
 public import FLT.Mazur.PolygonCompleteClosedActionRotation
 public import FLT.Mazur.PolygonCompleteClosedCartierGenerator
+public import FLT.Mazur.PolygonCompleteClosedChartComparison
 public import FLT.Mazur.PolygonCompleteClosedCyclicAction
 public import FLT.Mazur.PolygonCompleteClosedCyclicGroup
 public import FLT.Mazur.PolygonCompleteClosedFiber
@@ -6908,6 +6914,7 @@ public import FLT.Mazur.PolygonCompleteClosedPointLineComparison
 public import FLT.Mazur.PolygonCompleteClosedRotation
 public import FLT.Mazur.PolygonCompleteClosedSingularPoints
 public import FLT.Mazur.PolygonCompleteClosedSmoothLocus
+public import FLT.Mazur.PolygonCompleteClosedSmoothSquare
 public import FLT.Mazur.PolygonCompleteClosedSpecialization
 public import FLT.Mazur.PolygonCompleteCoefficientAdicComparison
 public import FLT.Mazur.PolygonCompleteCoefficientAmple
@@ -7577,6 +7584,7 @@ public import FLT.Mazur.PolygonSinglePointPowerSections
 public import FLT.Mazur.PolygonSinglePointScalarMatching
 public import FLT.Mazur.PolygonSmoothComponentMembership
 public import FLT.Mazur.PolygonSmoothConnectedComponents
+public import FLT.Mazur.PolygonSmoothFiniteAtlas
 public import FLT.Mazur.PolygonSmoothLocus
 public import FLT.Mazur.PolygonSmoothRelativeDimension
 public import FLT.Mazur.PolygonSmoothingBaseChange
