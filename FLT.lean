@@ -4565,6 +4565,7 @@ public import FLT.Mazur.EtaleFiniteBranchTargetNeighborhood
 public import FLT.Mazur.EtaleFiniteFiberGeometricSections
 public import FLT.Mazur.EtaleFiniteGeometricAffine
 public import FLT.Mazur.EtaleFiniteGeometricDiagram
+public import FLT.Mazur.EtaleFiniteGeometricFiberSpread
 public import FLT.Mazur.EtaleFiniteQuotientBranch
 public import FLT.Mazur.EtaleFiniteSupportCartier
 public import FLT.Mazur.EtaleLocalParameterIdeals
