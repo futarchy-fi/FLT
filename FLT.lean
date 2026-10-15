@@ -2877,6 +2877,7 @@ public import FLT.Mazur.AffineHilbertGeometricFiberNecessity
 public import FLT.Mazur.AffineHilbertGeometricFiberSections
 public import FLT.Mazur.AffineHilbertGeometricPointTest
 public import FLT.Mazur.AffineHilbertGeometricRelationSpread
+public import FLT.Mazur.AffineHilbertGeometricRetainedNeighborhood
 public import FLT.Mazur.AffineHilbertGroundBaseEnvelope
 public import FLT.Mazur.AffineHilbertGroundBaseEnvelopeLift
 public import FLT.Mazur.AffineHilbertGroundBaseFullFiber
