@@ -7449,6 +7449,7 @@ public import FLT.Mazur.PolygonFirstNodeSubalgebraPreservation
 public import FLT.Mazur.PolygonFirstNodeTangentBoundary
 public import FLT.Mazur.PolygonFirstNodeTangentEquiv
 public import FLT.Mazur.PolygonFirstNodeTangentLift
+public import FLT.Mazur.PolygonFirstNodeWeightedConductor
 public import FLT.Mazur.PolygonFirstOrderBoundaryRigidity
 public import FLT.Mazur.PolygonFirstOrderCoordinateCharts
 public import FLT.Mazur.PolygonGeneralizedCurve
