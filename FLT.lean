@@ -4559,6 +4559,7 @@ public import FLT.Mazur.EtaleFiniteBranchSubcover
 public import FLT.Mazur.EtaleFiniteBranchTargetAtlas
 public import FLT.Mazur.EtaleFiniteBranchTargetNeighborhood
 public import FLT.Mazur.EtaleFiniteFiberGeometricSections
+public import FLT.Mazur.EtaleFiniteGeometricAffine
 public import FLT.Mazur.EtaleFiniteGeometricDiagram
 public import FLT.Mazur.EtaleFiniteQuotientBranch
 public import FLT.Mazur.EtaleFiniteSupportCartier
