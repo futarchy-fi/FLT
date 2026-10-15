@@ -3282,6 +3282,7 @@ public import FLT.Mazur.AnnihilatorStalk
 public import FLT.Mazur.AnnihilatorSubsheaf
 public import FLT.Mazur.ArbitraryGeometricAffineFullFiber
 public import FLT.Mazur.ArbitraryGeometricAllLiftTranslations
+public import FLT.Mazur.ArbitraryGeometricArtinianGround
 public import FLT.Mazur.ArbitraryGeometricArtinianInterior
 public import FLT.Mazur.ArbitraryGeometricEnvelopeCore
 public import FLT.Mazur.ArbitraryGeometricFiniteGroundInterior
