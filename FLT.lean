@@ -9253,6 +9253,7 @@ public import FLT.Mazur.RelativeRelationInvariantPrincipal
 public import FLT.Mazur.RelativeRelationInvariantSectionRings
 public import FLT.Mazur.RelativeRelationInvariantSections
 public import FLT.Mazur.RelativeRelationInvariantSheaf
+public import FLT.Mazur.RelativeRelationLiftLocus
 public import FLT.Mazur.RelativeRelationMonicBaseLift
 public import FLT.Mazur.RelativeRelationMonicSeedOpenQuotient
 public import FLT.Mazur.RelativeRelationMonicSeedQuotient
