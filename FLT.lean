@@ -2768,12 +2768,17 @@ public import FLT.Mazur.AffineHilbertChangedOrbitOpen
 public import FLT.Mazur.AffineHilbertChangedOrbitRelationComparison
 public import FLT.Mazur.AffineHilbertChangedOrbitSource
 public import FLT.Mazur.AffineHilbertChartRelation
+public import FLT.Mazur.AffineHilbertClopenAdmissible
+public import FLT.Mazur.AffineHilbertClosedConnectedCertificate
+public import FLT.Mazur.AffineHilbertClosedConnectedKernel
+public import FLT.Mazur.AffineHilbertClosedEnvelopeInterior
 public import FLT.Mazur.AffineHilbertClosedPatchRefinement
 public import FLT.Mazur.AffineHilbertClosedPatchSource
 public import FLT.Mazur.AffineHilbertClosedRefinementRelation
 public import FLT.Mazur.AffineHilbertComposableEnvelope
 public import FLT.Mazur.AffineHilbertCompositionCharts
 public import FLT.Mazur.AffineHilbertCompositionFiniteBranches
+public import FLT.Mazur.AffineHilbertConnectedEnvelopeFiber
 public import FLT.Mazur.AffineHilbertDerivedNoetherianRelation
 public import FLT.Mazur.AffineHilbertEffectiveOpenDescent
 public import FLT.Mazur.AffineHilbertEffectiveOpenEtale
@@ -8951,6 +8956,7 @@ public import FLT.Mazur.SchemeGeometricDescentData
 public import FLT.Mazur.SchemeGeometricFiberH0Comparison
 public import FLT.Mazur.SchemeGlueDataMap
 public import FLT.Mazur.SchemeGlueDataMapCartesian
+public import FLT.Mazur.SchemeIdempotentSupport
 public import FLT.Mazur.SchemeIndependentCanonicalCocycle
 public import FLT.Mazur.SchemeIndependentCanonicalCompatibility
 public import FLT.Mazur.SchemeIndependentCanonicalCoordinate
