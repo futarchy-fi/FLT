@@ -5911,6 +5911,7 @@ public import FLT.Mazur.LaurentCocycleCoefficientRecovery
 public import FLT.Mazur.LaurentCoefficientDivisibility
 public import FLT.Mazur.LaurentCoefficientEvaluation
 public import FLT.Mazur.LaurentCoefficientInjectivity
+public import FLT.Mazur.LaurentCyclicCoordinateChange
 public import FLT.Mazur.LaurentDomainPairUnits
 public import FLT.Mazur.LaurentDomainUnits
 public import FLT.Mazur.LaurentIdentityIdeal
