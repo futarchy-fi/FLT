@@ -9242,6 +9242,7 @@ public import FLT.Mazur.RelativeRelationInvariantLocallyRinged
 public import FLT.Mazur.RelativeRelationInvariantMap
 public import FLT.Mazur.RelativeRelationInvariantMapOpen
 public import FLT.Mazur.RelativeRelationInvariantMapSections
+public import FLT.Mazur.RelativeRelationInvariantPrincipal
 public import FLT.Mazur.RelativeRelationInvariantSectionRings
 public import FLT.Mazur.RelativeRelationInvariantSections
 public import FLT.Mazur.RelativeRelationInvariantSheaf
