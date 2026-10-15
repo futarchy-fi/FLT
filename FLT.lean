@@ -12820,6 +12820,7 @@ public import FLT.Mazur.WeierstrassSuccessiveInfinityCenter
 public import FLT.Mazur.WeierstrassSuccessiveLocalAction
 public import FLT.Mazur.WeierstrassSuccessiveNilpotentBranch
 public import FLT.Mazur.WeierstrassSuccessiveNilpotentNodeChart
+public import FLT.Mazur.WeierstrassSuccessiveNodeChartCoverage
 public import FLT.Mazur.WeierstrassSuccessiveOppositeNodeChart
 public import FLT.Mazur.WeierstrassSuccessiveOriginalOpen
 public import FLT.Mazur.WeierstrassSuccessiveReesCoordinates
