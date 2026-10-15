@@ -2750,6 +2750,9 @@ public import FLT.Mazur.AffineGeometricRefinementData
 public import FLT.Mazur.AffineGeometricTensorCocycle
 public import FLT.Mazur.AffineGeometricTensorDatum
 public import FLT.Mazur.AffineHilbertAdmissibleFiniteKernel
+public import FLT.Mazur.AffineHilbertAdmissibleGenericCoefficients
+public import FLT.Mazur.AffineHilbertAdmissibleKernelOpen
+public import FLT.Mazur.AffineHilbertAdmissibleOldKernel
 public import FLT.Mazur.AffineHilbertAssociativeFiniteBranches
 public import FLT.Mazur.AffineHilbertBoundedRelation
 public import FLT.Mazur.AffineHilbertBranchCompositionCoefficients
@@ -2793,6 +2796,7 @@ public import FLT.Mazur.AffineHilbertFiniteFiberPrincipal
 public import FLT.Mazur.AffineHilbertFiniteFreeGroundBase
 public import FLT.Mazur.AffineHilbertFiniteFullBranchCover
 public import FLT.Mazur.AffineHilbertFiniteGroundBaseRefinement
+public import FLT.Mazur.AffineHilbertFiniteInvariantOpens
 public import FLT.Mazur.AffineHilbertFiniteKernelAlgebra
 public import FLT.Mazur.AffineHilbertFiniteKernelEquations
 public import FLT.Mazur.AffineHilbertFiniteKernelModel
@@ -2915,6 +2919,8 @@ public import FLT.Mazur.AffineHilbertOriginalOrbitAtlas
 public import FLT.Mazur.AffineHilbertOriginalOrbitModel
 public import FLT.Mazur.AffineHilbertOriginalOrbitOpenModel
 public import FLT.Mazur.AffineHilbertOriginalPrincipalInvariants
+public import FLT.Mazur.AffineHilbertPrincipalFiniteKernel
+public import FLT.Mazur.AffineHilbertPrincipalFiniteTests
 public import FLT.Mazur.AffineHilbertPrincipalInvariants
 public import FLT.Mazur.AffineHilbertPrincipalTensorModel
 public import FLT.Mazur.AffineHilbertRelationNeighborhoods
@@ -4092,6 +4098,7 @@ public import FLT.Mazur.EllipticFiniteRetainedPointEquality
 public import FLT.Mazur.EllipticFiniteRetainedSmoothSpecialization
 public import FLT.Mazur.EllipticFiniteRetainedSpecialization
 public import FLT.Mazur.EllipticFiniteSpecializationEqualityDescent
+public import FLT.Mazur.EllipticFiniteTensorAtlasTransport
 public import FLT.Mazur.EllipticFiniteTensorIndex
 public import FLT.Mazur.EllipticFiniteTerminalLaurentEquality
 public import FLT.Mazur.EllipticFormalAddition
@@ -4299,6 +4306,7 @@ public import FLT.Mazur.EllipticReductionTranslation
 public import FLT.Mazur.EllipticRepeatedCubicPoint
 public import FLT.Mazur.EllipticRepeatedCubicTranslation
 public import FLT.Mazur.EllipticResolvedAdditionCongruence
+public import FLT.Mazur.EllipticResolvedAdjacentBoundaryCover
 public import FLT.Mazur.EllipticResolvedComponentAtlasCoverage
 public import FLT.Mazur.EllipticResolvedComponentCharacterEquality
 public import FLT.Mazur.EllipticResolvedComponentCharts
@@ -4306,15 +4314,19 @@ public import FLT.Mazur.EllipticResolvedComponentDifference
 public import FLT.Mazur.EllipticResolvedComponentLabels
 public import FLT.Mazur.EllipticResolvedComponentPointCover
 public import FLT.Mazur.EllipticResolvedDepthSeparation
+public import FLT.Mazur.EllipticResolvedExteriorBoundaryCover
 public import FLT.Mazur.EllipticResolvedGeometricLabel
 public import FLT.Mazur.EllipticResolvedIdentityChart
 public import FLT.Mazur.EllipticResolvedIdentityPoints
+public import FLT.Mazur.EllipticResolvedInitialCoverage
 public import FLT.Mazur.EllipticResolvedLabelDifference
+public import FLT.Mazur.EllipticResolvedLastExteriorCover
 public import FLT.Mazur.EllipticResolvedLaurentEquality
 public import FLT.Mazur.EllipticResolvedMiddleTranslationEquality
 public import FLT.Mazur.EllipticResolvedMixedTranslationEquality
 public import FLT.Mazur.EllipticResolvedOppositeTranslationEquality
 public import FLT.Mazur.EllipticResolvedParameterEquality
+public import FLT.Mazur.EllipticResolvedPositiveExteriorCoverage
 public import FLT.Mazur.EllipticResolvedReflectedMixedTranslationEquality
 public import FLT.Mazur.EllipticResolvedRetainedCharts
 public import FLT.Mazur.EllipticResolvedRetainedCover
@@ -8911,6 +8923,7 @@ public import FLT.Mazur.SchemeIndependentNormalizationSquare
 public import FLT.Mazur.SchemeIndependentPairNormalization
 public import FLT.Mazur.SchemeIndependentRecoveryNormalization
 public import FLT.Mazur.SchemeIndependentTripleCocycle
+public import FLT.Mazur.SchemeKernelInvariantOpenLift
 public import FLT.Mazur.SchemeKernelPairSectionSheaf
 public import FLT.Mazur.SchemeLineBundleCategory
 public import FLT.Mazur.SchemeLineCanonicalFunctor
@@ -9043,6 +9056,7 @@ public import FLT.Mazur.SchemeRelationOrbitAtlasKernel
 public import FLT.Mazur.SchemeRelationOrbitOpenModel
 public import FLT.Mazur.SchemeRelationOverRestriction
 public import FLT.Mazur.SchemeRelationPrincipalFullInvariants
+public import FLT.Mazur.SchemeRelationPrincipalKernelTests
 public import FLT.Mazur.SchemeRelationPrincipalLocalization
 public import FLT.Mazur.SchemeRelationPrincipalSpectrum
 public import FLT.Mazur.SchemeRelationPrincipalTensorSections
@@ -9078,6 +9092,7 @@ public import FLT.Mazur.SchemeSectionFamilyProduct
 public import FLT.Mazur.SchemeSectionFrameCompatibility
 public import FLT.Mazur.SchemeSectionFrameNormalization
 public import FLT.Mazur.SchemeSectionTransportNaturality
+public import FLT.Mazur.SchemeSmoothChartTransport
 public import FLT.Mazur.SchemeSmoothLocusCartesian
 public import FLT.Mazur.SchemeSmoothLocusQuotient
 public import FLT.Mazur.SchemeSourceTestOverlapRecognition
@@ -11727,6 +11742,7 @@ public import FLT.Mazur.WeierstrassModificationXFullNodeOverlapRanges
 public import FLT.Mazur.WeierstrassModificationXFullNodeParameterDescent
 public import FLT.Mazur.WeierstrassModificationXFullNodeProjectiveDescent
 public import FLT.Mazur.WeierstrassModificationXFullNodePushout
+public import FLT.Mazur.WeierstrassModificationXFullNodeSmooth
 public import FLT.Mazur.WeierstrassModificationXFullNodeZeroDescent
 public import FLT.Mazur.WeierstrassModificationXFullSecondNode
 public import FLT.Mazur.WeierstrassModificationXFullSecondNodeBranches
