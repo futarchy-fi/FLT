@@ -6968,6 +6968,7 @@ public import FLT.Mazur.PolygonArithmeticStageConstants
 public import FLT.Mazur.PolygonArithmeticStageFamilies
 public import FLT.Mazur.PolygonArithmeticStageGrading
 public import FLT.Mazur.PolygonArithmeticStageLineQuotient
+public import FLT.Mazur.PolygonArithmeticStageProj
 public import FLT.Mazur.PolygonArithmeticStageProper
 public import FLT.Mazur.PolygonArithmeticStageRestriction
 public import FLT.Mazur.PolygonArithmeticStageVanishing
