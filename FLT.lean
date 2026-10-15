@@ -4735,6 +4735,7 @@ public import FLT.Mazur.FiniteDivisorLengthAdditivity
 public import FLT.Mazur.FiniteDivisorLengthOne
 public import FLT.Mazur.FiniteDivisorRationalSupport
 public import FLT.Mazur.FiniteEnvelopeDenominatorPrimes
+public import FLT.Mazur.FiniteEnvelopeInteriorEquations
 public import FLT.Mazur.FiniteEtaleDisjointSectionNeighborhood
 public import FLT.Mazur.FiniteEtaleGeometricDisjointCover
 public import FLT.Mazur.FiniteEtaleGeometricSectionCover
