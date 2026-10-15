@@ -5908,6 +5908,7 @@ public import FLT.Mazur.IndependentCyclicNormalizedSlice
 public import FLT.Mazur.IndependentCyclicSourceGroupPullback
 public import FLT.Mazur.IndependentCyclicSourceMarking
 public import FLT.Mazur.IndependentCyclicSourceModuli
+public import FLT.Mazur.IndependentGroundCartesianTransport
 public import FLT.Mazur.InfinitesimalClosedFiberFunctions
 public import FLT.Mazur.InfinitesimalCoefficientLength
 public import FLT.Mazur.InfinitesimalConormalEquiv
