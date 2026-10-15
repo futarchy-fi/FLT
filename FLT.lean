@@ -9751,6 +9751,7 @@ public import FLT.Mazur.SectionPoleSplit
 public import FLT.Mazur.SectionPowerGluing
 public import FLT.Mazur.SectionProjectiveFiniteNeighborhood
 public import FLT.Mazur.SectionProjectiveImmersion
+public import FLT.Mazur.SectionProperNeighborhood
 public import FLT.Mazur.SectionPullbackFrameCoordinates
 public import FLT.Mazur.SectionPullbackLineCoordinate
 public import FLT.Mazur.SectionPullbackRatioCoordinates
