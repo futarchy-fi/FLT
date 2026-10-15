@@ -7184,6 +7184,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstGraphErrors
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphFiberClosure
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphFiberCoordinates
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphFiberDensity
+public import FLT.Mazur.PolygonCompleteIdentityFirstGraphFiberGenerators
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphFiberPuncture
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphFiberSocle
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphFiberSplit
