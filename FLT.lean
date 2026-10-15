@@ -12439,6 +12439,7 @@ public import FLT.Mazur.WeierstrassModificationXLocalization
 public import FLT.Mazur.WeierstrassModificationXMorphism
 public import FLT.Mazur.WeierstrassModificationXOriginalLocalization
 public import FLT.Mazur.WeierstrassModificationXOverlap
+public import FLT.Mazur.WeierstrassModificationXPolynomialRoot
 public import FLT.Mazur.WeierstrassModificationXPresentation
 public import FLT.Mazur.WeierstrassModificationXReesChart
 public import FLT.Mazur.WeierstrassModificationXResidueCastFactorization
