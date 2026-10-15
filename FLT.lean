@@ -4372,6 +4372,7 @@ public import FLT.Mazur.EllipticResolvedReciprocalIdentity
 public import FLT.Mazur.EllipticResolvedReflectedMixedTranslationEquality
 public import FLT.Mazur.EllipticResolvedRetainedCharts
 public import FLT.Mazur.EllipticResolvedRetainedCover
+public import FLT.Mazur.EllipticResolvedRetainedCyclicCharts
 public import FLT.Mazur.EllipticResolvedRetainedDepthSeparation
 public import FLT.Mazur.EllipticResolvedRetainedIdentitySeparation
 public import FLT.Mazur.EllipticResolvedRetainedIndexComparison
