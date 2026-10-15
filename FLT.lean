@@ -3980,6 +3980,7 @@ public import FLT.Mazur.DenseGroundHilbertPrincipal
 public import FLT.Mazur.DenseGroundResidualSupport
 public import FLT.Mazur.DerivationAlgEquivTransport
 public import FLT.Mazur.DifferenceNodeAlgebra
+public import FLT.Mazur.DifferenceNodeCriticalNaturality
 public import FLT.Mazur.DifferenceNodeCriticalPoint
 public import FLT.Mazur.DifferenceNodeCriticalTranslation
 public import FLT.Mazur.DifferenceNodeNormalEquiv
