@@ -3980,6 +3980,7 @@ public import FLT.Mazur.DerivationAlgEquivTransport
 public import FLT.Mazur.DifferenceNodeAlgebra
 public import FLT.Mazur.DifferenceNodeCriticalPoint
 public import FLT.Mazur.DifferenceNodeCriticalTranslation
+public import FLT.Mazur.DifferenceNodeNormalEquiv
 public import FLT.Mazur.DifferenceNodeNormalEvaluation
 public import FLT.Mazur.DifferenceNodeNormalFactors
 public import FLT.Mazur.DirectImageBaseChangeAdjoints
