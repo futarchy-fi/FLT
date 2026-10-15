@@ -5,7 +5,7 @@ Authors: The FLT Project
 -/
 module
 
-public import FLT.Mazur.PolygonInfinitesimalStages
+public import FLT.Mazur.PolygonStageCoefficientKernel
 
 /-!
 # The top-order kernel of successive smoothing coefficients
@@ -19,48 +19,20 @@ open Polynomial
 namespace FLT.Mazur.PolygonInfinitesimalStages
 variable (R : Type*) [CommRing R] (m : ℕ)
 
-/-- Adjacent restriction retains the original polynomial representative. -/
-@[simp] theorem restriction_mk (p : R[X]) :
-    restriction R m (AdjoinRoot.mk _ p) = AdjoinRoot.mk _ p := by
-  rw [restriction, AdjoinRoot.liftAlgHom_mk]
-  exact AdjoinRoot.aeval_eq p
-
-/-- The actual adjacent coefficient restriction is surjective. -/
-theorem restriction_surjective : Function.Surjective (restriction R m) := by
-  intro a
-  obtain ⟨p, rfl⟩ := AdjoinRoot.mk_surjective a
-  exact ⟨AdjoinRoot.mk _ p, restriction_mk R m p⟩
-
-/-- The top parameter power generates the kernel of adjacent restriction. -/
-theorem restriction_eq_zero_iff (a : Ring R (m + 1)) :
-    restriction R m a = 0 ↔ parameter R (m + 1) ^ (m + 1) ∣ a := by
-  constructor
-  · obtain ⟨p, rfl⟩ := AdjoinRoot.mk_surjective a
-    rw [restriction_mk, AdjoinRoot.mk_eq_zero]
-    rintro ⟨q, rfl⟩
-    refine ⟨AdjoinRoot.mk _ q, ?_⟩
-    rw [map_mul, map_pow]
-    rfl
-  · rintro ⟨b, rfl⟩
-    rw [map_mul, map_pow, restriction_parameter, parameter_pow, zero_mul]
-
-/-- The kernel is the principal ideal of the top parameter power. -/
-theorem restriction_ker :
-    RingHom.ker (restriction R m).toRingHom =
-      Ideal.span {parameter R (m + 1) ^ (m + 1)} := by
-  ext a
-  exact (restriction_eq_zero_iff R m a).trans Ideal.mem_span_singleton.symm
+/-- Divisibility form of the existing adjacent coefficient kernel theorem. -/
+theorem restriction_eq_zero_iff_dvd (a : Ring R (m + 1)) :
+    restriction R m a = 0 ↔ parameter R (m + 1) ^ (m + 1) ∣ a :=
+  (restriction_eq_zero_iff R m a).trans (exists_congr fun _ ↦ eq_comm)
 
 /-- The smoothing parameter annihilates the entire adjacent kernel. -/
 theorem parameter_mul_eq_zero_of_restriction (a : Ring R (m + 1))
     (ha : restriction R m a = 0) : parameter R (m + 1) * a = 0 := by
-  obtain ⟨b, rfl⟩ := (restriction_eq_zero_iff R m a).mp ha
-  rw [← mul_assoc, ← pow_succ', parameter_pow, zero_mul]
+  exact (parameter_mul_eq_zero_iff R m a).mpr ha
 
 /-- Any two elements killed by adjacent restriction have zero product. -/
 theorem restriction_kernel_mul (a b : Ring R (m + 1))
     (ha : restriction R m a = 0) (hb : restriction R m b = 0) : a * b = 0 := by
-  obtain ⟨c, rfl⟩ := (restriction_eq_zero_iff R m a).mp ha
+  obtain ⟨c, rfl⟩ := (restriction_eq_zero_iff_dvd R m a).mp ha
   have hq := parameter_mul_eq_zero_of_restriction R m b hb
   calc
     (parameter R (m + 1) ^ (m + 1) * c) * b =

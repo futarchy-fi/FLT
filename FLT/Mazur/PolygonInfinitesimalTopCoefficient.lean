@@ -60,7 +60,7 @@ theorem parameter_top_mul_reduction (a : Ring R m) :
 theorem restriction_kernel_top (a : Ring R (m + 1)) (ha : restriction R m a = 0) :
     a = parameter R (m + 1) ^ (m + 1) *
       algebraMap R (Ring R (m + 1)) (stageCoeff R (m + 1) (m + 1) a) := by
-  obtain ⟨b, rfl⟩ := (restriction_eq_zero_iff R m a).mp ha
+  obtain ⟨b, rfl⟩ := (restriction_eq_zero_iff_dvd R m a).mp ha
   rw [stageCoeff_top_mul, parameter_top_mul_reduction]
 
 /-- Vanishing of the top coefficient detects zero inside the actual adjacent kernel. -/

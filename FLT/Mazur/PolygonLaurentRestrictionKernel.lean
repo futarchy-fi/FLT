@@ -32,7 +32,7 @@ theorem doubleLaurent_restriction_eq_zero_iff (p : (A)[T;T⁻¹][T;T⁻¹]) :
   · intro hp
     have hd := LaurentCoefficientDivisibility.doubleCoeffMap_kernel_dvd
       (restriction R m).toRingHom (parameter R (m + 1) ^ (m + 1))
-      (fun a ha ↦ (restriction_eq_zero_iff R m a).mp ha) p hp
+      (fun a ha ↦ (restriction_eq_zero_iff_dvd R m a).mp ha) p hp
     simpa only [map_pow] using hd
   · rintro ⟨b, rfl⟩
     rw [map_mul, map_pow, coeffMap_C, coeffMap_C]
