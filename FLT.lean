@@ -5895,6 +5895,7 @@ public import FLT.Mazur.LaurentPairUnitSections
 public import FLT.Mazur.LaurentPairUniversalUnits
 public import FLT.Mazur.LaurentRingSurjectivity
 public import FLT.Mazur.LaurentScaledCoordinateIsomorphisms
+public import FLT.Mazur.LaurentScaledEvaluationCoefficients
 public import FLT.Mazur.LaurentSchemeCoordinates
 public import FLT.Mazur.LaurentSquareZeroCocycle
 public import FLT.Mazur.LaurentTensor
