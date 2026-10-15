@@ -6820,6 +6820,7 @@ public import FLT.Mazur.OriginalTensorOrbitEvaluation
 public import FLT.Mazur.OriginalTensorOrbitMorphisms
 public import FLT.Mazur.OriginalTranscendentalAffineOpenOrbit
 public import FLT.Mazur.OriginalTranscendentalDetectingOpen
+public import FLT.Mazur.OriginalTranscendentalResidueConjugacy
 public import FLT.Mazur.OriginalTwistIsoRigidity
 public import FLT.Mazur.OriginalTwistLineOrbits
 public import FLT.Mazur.OriginalTwistOrbitRelation
