@@ -5537,6 +5537,7 @@ public import FLT.Mazur.HilbertBoundaryRelationTests
 public import FLT.Mazur.HilbertBoundarySchemeTests
 public import FLT.Mazur.HilbertBoundaryThickeningGeometry
 public import FLT.Mazur.HilbertBoundaryThickeningKernelPair
+public import FLT.Mazur.HilbertBoundaryThickeningNilpotence
 public import FLT.Mazur.HilbertBoundaryThickeningQuotients
 public import FLT.Mazur.HilbertBoundaryThickeningRelation
 public import FLT.Mazur.HilbertBoundaryThickeningTests
