@@ -6899,6 +6899,7 @@ public import FLT.Mazur.PolygonArithmeticCompleteBaseSquare
 public import FLT.Mazur.PolygonArithmeticDegreeLifting
 public import FLT.Mazur.PolygonArithmeticDegreeProjection
 public import FLT.Mazur.PolygonArithmeticFlatLayer
+public import FLT.Mazur.PolygonArithmeticGradedParameter
 public import FLT.Mazur.PolygonArithmeticHomogeneousSections
 public import FLT.Mazur.PolygonArithmeticLayerQuotient
 public import FLT.Mazur.PolygonArithmeticLineCoherence
