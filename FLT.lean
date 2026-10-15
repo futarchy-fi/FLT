@@ -5152,6 +5152,7 @@ public import FLT.Mazur.GeometricFixedPointTranslation
 public import FLT.Mazur.GeometricFppfCoverSection
 public import FLT.Mazur.GeometricHilbertTranslation
 public import FLT.Mazur.GeometricOpenFactorization
+public import FLT.Mazur.GeometricOrderedAllLiftTranslation
 public import FLT.Mazur.GeometricPicardSheafRepresentative
 public import FLT.Mazur.GeometricPointCoverCriterion
 public import FLT.Mazur.GeometricPullbackPointwiseEquality
