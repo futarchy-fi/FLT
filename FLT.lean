@@ -2803,6 +2803,8 @@ public import FLT.Mazur.AffineHilbertEnvelopeOpenChart
 public import FLT.Mazur.AffineHilbertEnvelopeQuotient
 public import FLT.Mazur.AffineHilbertEnvelopeScheme
 public import FLT.Mazur.AffineHilbertEtaleComposition
+public import FLT.Mazur.AffineHilbertEtaleRestrictedOpenImmersion
+public import FLT.Mazur.AffineHilbertEtaleRestrictedSheaf
 public import FLT.Mazur.AffineHilbertFiniteBranchAtlas
 public import FLT.Mazur.AffineHilbertFiniteBranchInvariants
 public import FLT.Mazur.AffineHilbertFiniteBranches
@@ -5400,7 +5402,9 @@ public import FLT.Mazur.GrassmannianWholeOverlapProjection
 public import FLT.Mazur.GrassmannianWholeOverlapRefinement
 public import FLT.Mazur.GrassmannianWholeOverlapTransition
 public import FLT.Mazur.GroundChartOriginalFullRelation
+public import FLT.Mazur.GroundChartOriginalQuotientOpenImmersion
 public import FLT.Mazur.GroundChartOriginalQuotientTopology
+public import FLT.Mazur.GroundChartOriginalResidualDescent
 public import FLT.Mazur.GroundChartRelationDiagonal
 public import FLT.Mazur.GroupActionPointTranslation
 public import FLT.Mazur.GroupMarkingBaseChange
@@ -8965,6 +8969,7 @@ public import FLT.Mazur.RelativePoleComplementFunctions
 public import FLT.Mazur.RelativePoleComplementLinear
 public import FLT.Mazur.RelativeRankOneDivisorUniqueness
 public import FLT.Mazur.RelativeRelationArrowCalculus
+public import FLT.Mazur.RelativeRelationEtaleSourceFunctions
 public import FLT.Mazur.RelativeRelationFppfInvariantQuotient
 public import FLT.Mazur.RelativeRelationFppfLocallyRingedDescent
 public import FLT.Mazur.RelativeRelationFppfOrbitComparison
@@ -9430,6 +9435,7 @@ public import FLT.Mazur.SchemeReducedSectionDetection
 public import FLT.Mazur.SchemeReducedStructureSheaf
 public import FLT.Mazur.SchemeRefinementReconstruction
 public import FLT.Mazur.SchemeRelationArrowTransport
+public import FLT.Mazur.SchemeRelationCoverSourceFunctions
 public import FLT.Mazur.SchemeRelationDoubleRestriction
 public import FLT.Mazur.SchemeRelationEtaleBranchPropagation
 public import FLT.Mazur.SchemeRelationEtaleCoverDescent
