@@ -2698,6 +2698,7 @@ public import FLT.Mazur.AffineEffectiveRefinementNaturality
 public import FLT.Mazur.AffineEffectiveSecondReconstruction
 public import FLT.Mazur.AffineEffectiveSuccessiveReconstruction
 public import FLT.Mazur.AffineEnvelopeFiniteNeighborhood
+public import FLT.Mazur.AffineEnvelopeNormTransport
 public import FLT.Mazur.AffineEtaleFaithfulCoefficients
 public import FLT.Mazur.AffineEtaleFaithfulNeighborhood
 public import FLT.Mazur.AffineEtaleFaithfulSource
@@ -5402,6 +5403,7 @@ public import FLT.Mazur.GrassmannianWholeOverlapProjection
 public import FLT.Mazur.GrassmannianWholeOverlapRefinement
 public import FLT.Mazur.GrassmannianWholeOverlapTransition
 public import FLT.Mazur.GroundChartOriginalFullRelation
+public import FLT.Mazur.GroundChartOriginalNormTransport
 public import FLT.Mazur.GroundChartOriginalQuotientOpenImmersion
 public import FLT.Mazur.GroundChartOriginalQuotientTopology
 public import FLT.Mazur.GroundChartOriginalResidualDescent
@@ -6929,6 +6931,7 @@ public import FLT.Mazur.PolygonActionSmooth
 public import FLT.Mazur.PolygonActionTranslation
 public import FLT.Mazur.PolygonActionUnit
 public import FLT.Mazur.PolygonAdicQuotientGrading
+public import FLT.Mazur.PolygonArithmeticAdicIdealSeparation
 public import FLT.Mazur.PolygonArithmeticAdicImmersion
 public import FLT.Mazur.PolygonArithmeticAdicRealization
 public import FLT.Mazur.PolygonArithmeticAdicReduction
@@ -6941,7 +6944,10 @@ public import FLT.Mazur.PolygonArithmeticClosedGeneration
 public import FLT.Mazur.PolygonArithmeticClosedLayer
 public import FLT.Mazur.PolygonArithmeticClosedLifts
 public import FLT.Mazur.PolygonArithmeticClosedSmoothLocus
+public import FLT.Mazur.PolygonArithmeticClosedSpecialization
+public import FLT.Mazur.PolygonArithmeticClosedTargetReconstruction
 public import FLT.Mazur.PolygonArithmeticCoefficientFlatness
+public import FLT.Mazur.PolygonArithmeticComparedSectionReconstruction
 public import FLT.Mazur.PolygonArithmeticCompatibleAlgebra
 public import FLT.Mazur.PolygonArithmeticCompatibleReduction
 public import FLT.Mazur.PolygonArithmeticCompatibleRing
@@ -6965,6 +6971,7 @@ public import FLT.Mazur.PolygonArithmeticDegreeFiniteStage
 public import FLT.Mazur.PolygonArithmeticDegreeLifting
 public import FLT.Mazur.PolygonArithmeticDegreeProjection
 public import FLT.Mazur.PolygonArithmeticFamilyFlatness
+public import FLT.Mazur.PolygonArithmeticFamilyHomExt
 public import FLT.Mazur.PolygonArithmeticFiberMarkings
 public import FLT.Mazur.PolygonArithmeticFiniteType
 public import FLT.Mazur.PolygonArithmeticFlatLayer
@@ -6975,16 +6982,25 @@ public import FLT.Mazur.PolygonArithmeticHomogeneousSections
 public import FLT.Mazur.PolygonArithmeticIntegralDegree
 public import FLT.Mazur.PolygonArithmeticLayerQuotient
 public import FLT.Mazur.PolygonArithmeticLineCoherence
+public import FLT.Mazur.PolygonArithmeticLineHomExt
+public import FLT.Mazur.PolygonArithmeticLineHomReconstruction
+public import FLT.Mazur.PolygonArithmeticLineIsoDetection
+public import FLT.Mazur.PolygonArithmeticLineIsoReconstruction
 public import FLT.Mazur.PolygonArithmeticLineLayers
+public import FLT.Mazur.PolygonArithmeticLineOriginalReduction
+public import FLT.Mazur.PolygonArithmeticLineSectionReconstruction
 public import FLT.Mazur.PolygonArithmeticMarkedClosedFiber
+public import FLT.Mazur.PolygonArithmeticMarkedLineModel
 public import FLT.Mazur.PolygonArithmeticMarkingCartier
 public import FLT.Mazur.PolygonArithmeticMarkingNeighborhood
+public import FLT.Mazur.PolygonArithmeticMarkingSectionReconstruction
 public import FLT.Mazur.PolygonArithmeticMarkingSpecialization
 public import FLT.Mazur.PolygonArithmeticMarkingUniqueness
 public import FLT.Mazur.PolygonArithmeticNodeNeighborhood
 public import FLT.Mazur.PolygonArithmeticNodePoint
 public import FLT.Mazur.PolygonArithmeticNodeTransition
 public import FLT.Mazur.PolygonArithmeticOriginalAdicSquare
+public import FLT.Mazur.PolygonArithmeticOriginalSectionReconstruction
 public import FLT.Mazur.PolygonArithmeticParameterAnnihilator
 public import FLT.Mazur.PolygonArithmeticParameterImage
 public import FLT.Mazur.PolygonArithmeticParameterRegularity
@@ -6992,6 +7008,7 @@ public import FLT.Mazur.PolygonArithmeticParameterSections
 public import FLT.Mazur.PolygonArithmeticPointReconstruction
 public import FLT.Mazur.PolygonArithmeticProductLifting
 public import FLT.Mazur.PolygonArithmeticProjSquare
+public import FLT.Mazur.PolygonArithmeticProjectiveReconstruction
 public import FLT.Mazur.PolygonArithmeticProperProj
 public import FLT.Mazur.PolygonArithmeticQuotientGrading
 public import FLT.Mazur.PolygonArithmeticReductionSequence
@@ -7009,6 +7026,7 @@ public import FLT.Mazur.PolygonArithmeticScalarExactness
 public import FLT.Mazur.PolygonArithmeticSchemePointExt
 public import FLT.Mazur.PolygonArithmeticSectionAnnihilator
 public import FLT.Mazur.PolygonArithmeticSectionFunctor
+public import FLT.Mazur.PolygonArithmeticSectionLift
 public import FLT.Mazur.PolygonArithmeticSectionRings
 public import FLT.Mazur.PolygonArithmeticSmoothDimensionOpen
 public import FLT.Mazur.PolygonArithmeticStageBaseComparison
@@ -7039,6 +7057,7 @@ public import FLT.Mazur.PolygonArithmeticVeroneseGrading
 public import FLT.Mazur.PolygonArithmeticVeroneseIdeal
 public import FLT.Mazur.PolygonArithmeticVeroneseKernel
 public import FLT.Mazur.PolygonArithmeticVeroneseZeroRing
+public import FLT.Mazur.PolygonArithmeticWeierstrassReconstruction
 public import FLT.Mazur.PolygonArithmeticZeroCoefficients
 public import FLT.Mazur.PolygonArithmeticZeroExactness
 public import FLT.Mazur.PolygonArithmeticZeroTower
@@ -9388,6 +9407,7 @@ public import FLT.Mazur.SchemeModulePullbackUnitSections
 public import FLT.Mazur.SchemeModulePullbackUnits
 public import FLT.Mazur.SchemeMonoidUnitEvaluation
 public import FLT.Mazur.SchemeNilpotentSectionDetection
+public import FLT.Mazur.SchemeNormIndependentGroundTests
 public import FLT.Mazur.SchemeNormalizedRecoveryOverlap
 public import FLT.Mazur.SchemeOpenChartRange
 public import FLT.Mazur.SchemeOpenEnvelopeDenominators
@@ -9454,6 +9474,7 @@ public import FLT.Mazur.SchemeReducedRelativeSections
 public import FLT.Mazur.SchemeReducedSectionDetection
 public import FLT.Mazur.SchemeReducedStructureSheaf
 public import FLT.Mazur.SchemeRefinementReconstruction
+public import FLT.Mazur.SchemeRegularNormProducts
 public import FLT.Mazur.SchemeRelationArrowTransport
 public import FLT.Mazur.SchemeRelationCoverSourceFunctions
 public import FLT.Mazur.SchemeRelationDoubleRestriction
@@ -9490,6 +9511,7 @@ public import FLT.Mazur.SchemeRelationMonicSeedQuotientCoverage
 public import FLT.Mazur.SchemeRelationMonicSeedSelection
 public import FLT.Mazur.SchemeRelationNestedKernel
 public import FLT.Mazur.SchemeRelationNonsplitSeedKernel
+public import FLT.Mazur.SchemeRelationNormTransport
 public import FLT.Mazur.SchemeRelationOpenFunctionDescent
 public import FLT.Mazur.SchemeRelationOpenInvariantRings
 public import FLT.Mazur.SchemeRelationOpenSelectorCoequalization
