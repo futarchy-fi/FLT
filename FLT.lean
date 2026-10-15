@@ -3088,6 +3088,7 @@ public import FLT.Mazur.AffinePushforwardCohomology
 public import FLT.Mazur.AffinePushforwardQuasicoherent
 public import FLT.Mazur.AffineQuasiCoherentBaseChange
 public import FLT.Mazur.AffineQuasicoherentPullbackFaithful
+public import FLT.Mazur.AffineRationalNonvanishing
 public import FLT.Mazur.AffineReconstructionCoefficientChart
 public import FLT.Mazur.AffineRefinedCompositionCompatibility
 public import FLT.Mazur.AffineRefinementCoactionCompatibility
@@ -3187,6 +3188,9 @@ public import FLT.Mazur.AlgebraicClosureEmbeddingConjugacy
 public import FLT.Mazur.AlgebraicOrderedAllLiftTranslation
 public import FLT.Mazur.AlgebraicPicardFiniteDescent
 public import FLT.Mazur.AlgebraicPointFiniteDescent
+public import FLT.Mazur.AlgebraicTensorCoefficientOrbit
+public import FLT.Mazur.AlgebraicTensorOrbitProduct
+public import FLT.Mazur.AlgebraicTensorRationalConjugacy
 public import FLT.Mazur.AllAffineAmbientCharts
 public import FLT.Mazur.AllSectionsHilbertGrassmannianImmersion
 public import FLT.Mazur.AmbientHilbertChartFamilyPullback
@@ -4626,6 +4630,7 @@ public import FLT.Mazur.EventualTwistVanishing
 public import FLT.Mazur.ExactFunctorInjectiveExt
 public import FLT.Mazur.ExactOrderCyclicPowers
 public import FLT.Mazur.ExactSourceDenominatorLift
+public import FLT.Mazur.ExtendedAffineRationalDensity
 public import FLT.Mazur.FCurveContracts
 public import FLT.Mazur.FaithfulNeighborhoodCurve
 public import FLT.Mazur.FaithfulTensorVanishing
@@ -4951,6 +4956,7 @@ public import FLT.Mazur.FiniteSupportEulerIso
 public import FLT.Mazur.FiniteSupportEulerPositive
 public import FLT.Mazur.FiniteSurjectiveAmpleDescent
 public import FLT.Mazur.FiniteSurjectiveCoherentWitness
+public import FLT.Mazur.FiniteTensorCoefficientConditions
 public import FLT.Mazur.FiniteTensorIntegerClosedImmersion
 public import FLT.Mazur.FiniteTypeAbelNaturalIso
 public import FLT.Mazur.FiniteTypeAcyclicDivisorCartesianMap
@@ -6803,6 +6809,8 @@ public import FLT.Mazur.OriginalFiniteCoefficientOrbit
 public import FLT.Mazur.OriginalHilbertFiniteType
 public import FLT.Mazur.OriginalInvariantOpenAllEtaleLifts
 public import FLT.Mazur.OriginalRestrictedHilbertIntersection
+public import FLT.Mazur.OriginalTensorOrbitEvaluation
+public import FLT.Mazur.OriginalTranscendentalAffineOpenOrbit
 public import FLT.Mazur.OriginalTwistIsoRigidity
 public import FLT.Mazur.OriginalTwistLineOrbits
 public import FLT.Mazur.OriginalTwistOrbitRelation
@@ -9727,6 +9735,7 @@ public import FLT.Mazur.SurjectiveTowerLifting
 public import FLT.Mazur.SymmetricAffineLineParameters
 public import FLT.Mazur.TensorAdicSeparation
 public import FLT.Mazur.TensorAlgebraSemilinearEquiv
+public import FLT.Mazur.TensorCoefficientDetection
 public import FLT.Mazur.TensorCoefficientSymmetry
 public import FLT.Mazur.TensorEvaluationSemilinear
 public import FLT.Mazur.TensorInjectivityFiniteLength
@@ -9765,6 +9774,8 @@ public import FLT.Mazur.TildeInvertibleLocal
 public import FLT.Mazur.TildePrincipalOpen
 public import FLT.Mazur.TildeSourceSectionComparison
 public import FLT.Mazur.TorusChartScalars
+public import FLT.Mazur.TranscendentalAffineOpenOrbit
+public import FLT.Mazur.TranscendentalCoefficientOrbitAvoidance
 public import FLT.Mazur.TranslatedHilbertAffineImmersion
 public import FLT.Mazur.TranslatedHilbertAffineRestriction
 public import FLT.Mazur.TranslatedHilbertCanonicalAffineChart
