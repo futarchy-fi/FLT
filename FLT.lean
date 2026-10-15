@@ -7318,6 +7318,7 @@ public import FLT.Mazur.PolygonCompleteIdentityGraphAdicInput
 public import FLT.Mazur.PolygonCompleteIdentityGraphAdicLift
 public import FLT.Mazur.PolygonCompleteIdentityGraphAdicNode
 public import FLT.Mazur.PolygonCompleteIdentityGraphAdicParameter
+public import FLT.Mazur.PolygonCompleteIdentityGraphAdicRotatedEdge
 public import FLT.Mazur.PolygonCompleteIdentityGraphAdicStage
 public import FLT.Mazur.PolygonCompleteIdentityGraphFiniteEdge
 public import FLT.Mazur.PolygonCompleteIdentityGraphFlat
