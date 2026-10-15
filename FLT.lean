@@ -6973,6 +6973,7 @@ public import FLT.Mazur.PolygonArithmeticLayerQuotient
 public import FLT.Mazur.PolygonArithmeticLineCoherence
 public import FLT.Mazur.PolygonArithmeticLineHomExt
 public import FLT.Mazur.PolygonArithmeticLineHomReconstruction
+public import FLT.Mazur.PolygonArithmeticLineIsoDetection
 public import FLT.Mazur.PolygonArithmeticLineLayers
 public import FLT.Mazur.PolygonArithmeticLineOriginalReduction
 public import FLT.Mazur.PolygonArithmeticLineSectionReconstruction
