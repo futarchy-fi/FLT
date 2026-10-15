@@ -2782,6 +2782,7 @@ public import FLT.Mazur.AffineHilbertComposableEnvelope
 public import FLT.Mazur.AffineHilbertCompositionCharts
 public import FLT.Mazur.AffineHilbertCompositionFiniteBranches
 public import FLT.Mazur.AffineHilbertConnectedEnvelopeFiber
+public import FLT.Mazur.AffineHilbertConstructedGeometricRetention
 public import FLT.Mazur.AffineHilbertCountedFiberNeighborhood
 public import FLT.Mazur.AffineHilbertDegreeFiberCertificate
 public import FLT.Mazur.AffineHilbertDerivedNoetherianRelation
