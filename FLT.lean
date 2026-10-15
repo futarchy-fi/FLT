@@ -2492,6 +2492,7 @@ public import FLT.Mazur.AcyclicCoefficientCohomology
 public import FLT.Mazur.AcyclicDegreeFiniteFiberSpread
 public import FLT.Mazur.AcyclicDegreeFixedBaseChange
 public import FLT.Mazur.AcyclicDegreeGeometricSpread
+public import FLT.Mazur.AcyclicDegreeOpenAutomorphism
 public import FLT.Mazur.AcyclicDegreePicardRepresentation
 public import FLT.Mazur.AcyclicDegreeSectionCoverDetection
 public import FLT.Mazur.AcyclicDirectImageResolution
@@ -4670,6 +4671,7 @@ public import FLT.Mazur.FiniteCoefficientDifferenceIdeal
 public import FLT.Mazur.FiniteCoefficientJoin
 public import FLT.Mazur.FiniteCoefficientKernelSubalgebra
 public import FLT.Mazur.FiniteCoefficientProperties
+public import FLT.Mazur.FiniteCoefficientRestriction
 public import FLT.Mazur.FiniteCohomologyFreeNeighborhood
 public import FLT.Mazur.FiniteCommonPrincipalCover
 public import FLT.Mazur.FiniteCompactOpenAffineLimit
