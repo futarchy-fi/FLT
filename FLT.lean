@@ -12958,6 +12958,7 @@ public import FLT.Mazur.WeierstrassSplitDepthNormalizedQuotientAction
 public import FLT.Mazur.WeierstrassSplitDepthOriginalFractionAction
 public import FLT.Mazur.WeierstrassSplitDepthResidueEquation
 public import FLT.Mazur.WeierstrassSplitDepthSecantResidue
+public import FLT.Mazur.WeierstrassSplitDepthTerminalSmoothing
 public import FLT.Mazur.WeierstrassSplitInfinityParameterOpen
 public import FLT.Mazur.WeierstrassSplitInfinitySlopeCompatibility
 public import FLT.Mazur.WeierstrassSplitNodalAffineParameters
