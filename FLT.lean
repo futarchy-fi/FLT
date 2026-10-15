@@ -6948,6 +6948,7 @@ public import FLT.Mazur.PolygonArithmeticParameterImage
 public import FLT.Mazur.PolygonArithmeticParameterSections
 public import FLT.Mazur.PolygonArithmeticProductLifting
 public import FLT.Mazur.PolygonArithmeticProperProj
+public import FLT.Mazur.PolygonArithmeticQuotientGrading
 public import FLT.Mazur.PolygonArithmeticReductionSequence
 public import FLT.Mazur.PolygonArithmeticResidueCoefficients
 public import FLT.Mazur.PolygonArithmeticResidueConstants
