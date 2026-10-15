@@ -7035,6 +7035,7 @@ public import FLT.Mazur.PolygonArithmeticStageBaseComparison
 public import FLT.Mazur.PolygonArithmeticStageCanonicalMap
 public import FLT.Mazur.PolygonArithmeticStageCoefficients
 public import FLT.Mazur.PolygonArithmeticStageConstants
+public import FLT.Mazur.PolygonArithmeticStageCubicCoordinates
 public import FLT.Mazur.PolygonArithmeticStageFamilies
 public import FLT.Mazur.PolygonArithmeticStageGrading
 public import FLT.Mazur.PolygonArithmeticStageLineQuotient
