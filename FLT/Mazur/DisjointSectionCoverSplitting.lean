@@ -18,8 +18,8 @@ all original sections are recovered by exact morphism identities.
 @[expose] public noncomputable section
 open CategoryTheory CategoryTheory.Limits AlgebraicGeometry
 namespace FLT.Mazur.DisjointSectionCoverSplitting
-universe u
-variable {X Y : Scheme.{u}} (p : X ⟶ Y) {ι : Type u}
+universe u v
+variable {X Y : Scheme.{u}} (p : X ⟶ Y) {ι : Type v} [Small.{u} ι]
   (s : ι → (Y ⟶ X)) [∀ i, IsOpenImmersion (s i)]
   (hc : ∀ x : X, ∃ i, s i (p x) = x)
   (hd : Pairwise (fun i j ↦ Disjoint (Set.range (s i)) (Set.range (s j))))
