@@ -4618,6 +4618,7 @@ public import FLT.Mazur.EnvelopeBoundaryTestLift
 public import FLT.Mazur.EnvelopeInteriorFiniteAffineCover
 public import FLT.Mazur.EnvelopeInteriorUnitIdealLift
 public import FLT.Mazur.EnvelopeVerticalGenerizations
+public import FLT.Mazur.EqualizerDenominatorClearing
 public import FLT.Mazur.EquifiberedGluingBaseChange
 public import FLT.Mazur.EquifiberedSchemeGluing
 public import FLT.Mazur.EtaleAffineSpaceDimension
@@ -5544,6 +5545,8 @@ public import FLT.Mazur.HilbertBoundaryEtaleLift
 public import FLT.Mazur.HilbertBoundaryInfinitesimalArrows
 public import FLT.Mazur.HilbertBoundaryKernelPair
 public import FLT.Mazur.HilbertBoundaryOrbit
+public import FLT.Mazur.HilbertBoundaryPrincipalLifting
+public import FLT.Mazur.HilbertBoundaryPrincipalLocalization
 public import FLT.Mazur.HilbertBoundaryQuotient
 public import FLT.Mazur.HilbertBoundaryQuotientGerms
 public import FLT.Mazur.HilbertBoundaryQuotientNilpotence
@@ -6059,6 +6062,7 @@ public import FLT.Mazur.InvariantLocalizationAction
 public import FLT.Mazur.InvariantLocalizationComparison
 public import FLT.Mazur.InvariantLocalizationCoordinates
 public import FLT.Mazur.InvariantLocalizationNumerator
+public import FLT.Mazur.InvariantObstructionNaturality
 public import FLT.Mazur.InvariantSectionObstruction
 public import FLT.Mazur.IrreducibleComponentAmple
 public import FLT.Mazur.IsomorphicClosedPullback
@@ -8402,6 +8406,7 @@ public import FLT.Mazur.PrincipalFanStages
 public import FLT.Mazur.PrincipalFiniteRestrictionPaths
 public import FLT.Mazur.PrincipalGeneratorExtension
 public import FLT.Mazur.PrincipalIdealScalarImage
+public import FLT.Mazur.PrincipalImageCriterion
 public import FLT.Mazur.PrincipalIntegerModelIsomorphism
 public import FLT.Mazur.PrincipalIntegerRestriction
 public import FLT.Mazur.PrincipalIsomorphismSourceExtension
@@ -9238,10 +9243,12 @@ public import FLT.Mazur.RelativeRelationGeneratorSubopens
 public import FLT.Mazur.RelativeRelationInvariantAffineComparison
 public import FLT.Mazur.RelativeRelationInvariantGlobalSections
 public import FLT.Mazur.RelativeRelationInvariantIso
+public import FLT.Mazur.RelativeRelationInvariantLocalization
 public import FLT.Mazur.RelativeRelationInvariantLocallyRinged
 public import FLT.Mazur.RelativeRelationInvariantMap
 public import FLT.Mazur.RelativeRelationInvariantMapOpen
 public import FLT.Mazur.RelativeRelationInvariantMapSections
+public import FLT.Mazur.RelativeRelationInvariantPrincipal
 public import FLT.Mazur.RelativeRelationInvariantSectionRings
 public import FLT.Mazur.RelativeRelationInvariantSections
 public import FLT.Mazur.RelativeRelationInvariantSheaf
@@ -9256,6 +9263,9 @@ public import FLT.Mazur.RelativeRelationOrbit
 public import FLT.Mazur.RelativeRelationOrbitCoequalizer
 public import FLT.Mazur.RelativeRelationOrbitOpens
 public import FLT.Mazur.RelativeRelationOrbitTopology
+public import FLT.Mazur.RelativeRelationPrincipalLifting
+public import FLT.Mazur.RelativeRelationPrincipalRestriction
+public import FLT.Mazur.RelativeRelationPrincipalTorsion
 public import FLT.Mazur.RelativeRelationQuotientSections
 public import FLT.Mazur.RelativeRelationQuotientSheaf
 public import FLT.Mazur.RelativeRelationRingedCoequalizer
