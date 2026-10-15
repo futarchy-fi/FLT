@@ -2812,6 +2812,9 @@ public import FLT.Mazur.AffineHilbertFiniteModelPrincipalFppf
 public import FLT.Mazur.AffineHilbertFiniteModelPrincipalInverses
 public import FLT.Mazur.AffineHilbertFiniteModelSourceBranch
 public import FLT.Mazur.AffineHilbertFiniteModelUnramifiedInverses
+public import FLT.Mazur.AffineHilbertFiniteSelectorFixedSeed
+public import FLT.Mazur.AffineHilbertFiniteSelectorKernel
+public import FLT.Mazur.AffineHilbertFiniteSelectorSeed
 public import FLT.Mazur.AffineHilbertFiniteTensorCover
 public import FLT.Mazur.AffineHilbertFixedBaseEnvelope
 public import FLT.Mazur.AffineHilbertFixedBaseInvariants
@@ -2929,6 +2932,8 @@ public import FLT.Mazur.AffineHilbertSelectorQuotient
 public import FLT.Mazur.AffineHilbertSelectorUnionQuotient
 public import FLT.Mazur.AffineHilbertSplitChangedFamily
 public import FLT.Mazur.AffineHilbertSplitGroundComparison
+public import FLT.Mazur.AffineHilbertSplitTranslationOrbit
+public import FLT.Mazur.AffineHilbertSplitTranslationSource
 public import FLT.Mazur.AffineHilbertSymmetricNeighborhoods
 public import FLT.Mazur.AffineHilbertTensorAtlas
 public import FLT.Mazur.AffineHilbertTensorGluing
@@ -2941,6 +2946,7 @@ public import FLT.Mazur.AffineHilbertTensorScalars
 public import FLT.Mazur.AffineHilbertTranslationAdmissibilityDetection
 public import FLT.Mazur.AffineHilbertTranslationDenominators
 public import FLT.Mazur.AffineHilbertTranslationEnvelope
+public import FLT.Mazur.AffineHilbertTranslationFiberRelation
 public import FLT.Mazur.AffineHilbertTranslationFullRestriction
 public import FLT.Mazur.AffineHilbertTranslationOriginalEnvelope
 public import FLT.Mazur.AffineHilbertTranslationRelation
