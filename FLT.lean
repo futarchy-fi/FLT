@@ -6930,6 +6930,7 @@ public import FLT.Mazur.PolygonArithmeticBoundedGenerators
 public import FLT.Mazur.PolygonArithmeticClosedGeneration
 public import FLT.Mazur.PolygonArithmeticClosedLayer
 public import FLT.Mazur.PolygonArithmeticClosedLifts
+public import FLT.Mazur.PolygonArithmeticClosedSmoothLocus
 public import FLT.Mazur.PolygonArithmeticCoefficientFlatness
 public import FLT.Mazur.PolygonArithmeticCompatibleAlgebra
 public import FLT.Mazur.PolygonArithmeticCompatibleReduction
