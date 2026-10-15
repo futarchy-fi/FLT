@@ -3059,6 +3059,7 @@ public import FLT.Mazur.AffineOpenFinitePolynomialPresentation
 public import FLT.Mazur.AffineOpenFiniteQuotientChart
 public import FLT.Mazur.AffineOpenFiniteRefinement
 public import FLT.Mazur.AffineOpenImmersionLocalizationCriterion
+public import FLT.Mazur.AffineOpenKernelPower
 public import FLT.Mazur.AffineOpenQuotientPresentation
 public import FLT.Mazur.AffineOverlapDiagonal
 public import FLT.Mazur.AffineOverlapMapSections
@@ -4702,6 +4703,7 @@ public import FLT.Mazur.FiniteCompactOpenAffineLimit
 public import FLT.Mazur.FiniteCompactOpenCoverLimit
 public import FLT.Mazur.FiniteCoproductTensorRight
 public import FLT.Mazur.FiniteCoverDirectSumSheaf
+public import FLT.Mazur.FiniteCoverUniversallyClosed
 public import FLT.Mazur.FiniteCurveEulerIsomorphism
 public import FLT.Mazur.FiniteDVRAbsoluteRamification
 public import FLT.Mazur.FiniteDVRComplete
@@ -5666,6 +5668,7 @@ public import FLT.Mazur.HilbertPrincipalInvariantNorm
 public import FLT.Mazur.HilbertPrincipalLocalizationScalars
 public import FLT.Mazur.HilbertPrincipalNormAdmissible
 public import FLT.Mazur.HilbertPrincipalRestriction
+public import FLT.Mazur.HilbertProperNeighborhoodChart
 public import FLT.Mazur.HilbertQuotientDegreeBound
 public import FLT.Mazur.HilbertQuotientDegreeFiltration
 public import FLT.Mazur.HilbertReindexedCoordinateRing
@@ -6035,6 +6038,7 @@ public import FLT.Mazur.LaurentFirstOrderAutomorphism
 public import FLT.Mazur.LaurentFirstParameterSubstitution
 public import FLT.Mazur.LaurentFirstStageParameter
 public import FLT.Mazur.LaurentFirstStageParameterEquiv
+public import FLT.Mazur.LaurentFirstStageParameterTorus
 public import FLT.Mazur.LaurentIdentityIdeal
 public import FLT.Mazur.LaurentLineActionDensity
 public import FLT.Mazur.LaurentLineActionEvaluation
@@ -7317,6 +7321,10 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstBoundary
 public import FLT.Mazur.PolygonCompleteIdentityFirstBranchOriginal
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartBranchImage
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartBranchQuotient
+public import FLT.Mazur.PolygonCompleteIdentityFirstChartKernelPowers
+public import FLT.Mazur.PolygonCompleteIdentityFirstChartNodeSocle
+public import FLT.Mazur.PolygonCompleteIdentityFirstChartPunctureOpens
+public import FLT.Mazur.PolygonCompleteIdentityFirstChartPunctures
 public import FLT.Mazur.PolygonCompleteIdentityFirstCoordinateDescent
 public import FLT.Mazur.PolygonCompleteIdentityFirstCorrection
 public import FLT.Mazur.PolygonCompleteIdentityFirstDefectDerivation
@@ -7384,8 +7392,10 @@ public import FLT.Mazur.PolygonCompleteIdentityGraphEdgeCartesian
 public import FLT.Mazur.PolygonCompleteIdentityGraphFiniteEdge
 public import FLT.Mazur.PolygonCompleteIdentityGraphFlat
 public import FLT.Mazur.PolygonCompleteIdentityGraphFlatExt
+public import FLT.Mazur.PolygonCompleteIdentityGraphIncomingCartesian
 public import FLT.Mazur.PolygonCompleteIdentityGraphIncomingChart
 public import FLT.Mazur.PolygonCompleteIdentityGraphRotatedEdge
+public import FLT.Mazur.PolygonCompleteIdentityGraphRotatedEdgeCartesian
 public import FLT.Mazur.PolygonCompleteIdentityLiftLocus
 public import FLT.Mazur.PolygonCompleteIdentityMixedObstruction
 public import FLT.Mazur.PolygonCompleteIdentityMulCoherence
@@ -8614,6 +8624,7 @@ public import FLT.Mazur.ProperCurveGenus
 public import FLT.Mazur.ProperCurveOpenComparison
 public import FLT.Mazur.ProperDenseOpenExtension
 public import FLT.Mazur.ProperDenseOpenIso
+public import FLT.Mazur.ProperEtaleNeighborhoodBases
 public import FLT.Mazur.ProperFamilyAbelRepresentation
 public import FLT.Mazur.ProperFamilyAtlasCartesian
 public import FLT.Mazur.ProperFamilyAtlasRecovery
@@ -8735,6 +8746,10 @@ public import FLT.Mazur.ProperLocalAdicIdealSeparation
 public import FLT.Mazur.ProperLocalAmpleFiberGenerators
 public import FLT.Mazur.ProperLocalFiberCover
 public import FLT.Mazur.ProperLocalFixedPoint
+public import FLT.Mazur.ProperNeighborhoodAtlas
+public import FLT.Mazur.ProperNeighborhoodEnvelopeInterior
+public import FLT.Mazur.ProperNeighborhoodFiniteUnion
+public import FLT.Mazur.ProperNeighborhoodGroundInterior
 public import FLT.Mazur.ProperOnlyAmpleFiberNeighborhood
 public import FLT.Mazur.ProperOnlyRelativeAmpleFibers
 public import FLT.Mazur.ProperPointExtension
@@ -8776,6 +8791,7 @@ public import FLT.Mazur.ProperStageBaseChangeLimit
 public import FLT.Mazur.ProperStageFiberProjection
 public import FLT.Mazur.ProperStageResidueFiberLimit
 public import FLT.Mazur.ProperStalkExtension
+public import FLT.Mazur.ProperTranslationNeighborhoodInterior
 public import FLT.Mazur.ProperTwistedLineDescent
 public import FLT.Mazur.ProperUniversalCartierDivisor
 public import FLT.Mazur.ProperUniversalDirectImageLine
@@ -9813,6 +9829,7 @@ public import FLT.Mazur.ShortComplexSumHomologyInclusion
 public import FLT.Mazur.SimultaneousEtaleAcyclicNeighborhood
 public import FLT.Mazur.SimultaneousSmoothAcyclicNeighborhood
 public import FLT.Mazur.SimultaneousSmoothHilbertParameters
+public import FLT.Mazur.SingleProperTranslationChart
 public import FLT.Mazur.SmallAffineParameterBases
 public import FLT.Mazur.SmallHilbertPresentation
 public import FLT.Mazur.SmallHilbertPresentationPullback
@@ -10094,6 +10111,7 @@ public import FLT.Mazur.TwistedSectionPullbackMonicity
 public import FLT.Mazur.TwistedSectionPushforward
 public import FLT.Mazur.TwistedSectionPushforwardNaturality
 public import FLT.Mazur.TwistedSectionRegularity
+public import FLT.Mazur.TwoCoordinateTorsionSocle
 public import FLT.Mazur.TwoGeneratorRelationBaseChange
 public import FLT.Mazur.TwoGeneratorRelationKernelBaseChange
 public import FLT.Mazur.TwoGeneratorRelationQuotient
