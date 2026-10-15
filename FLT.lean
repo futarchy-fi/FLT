@@ -7324,6 +7324,7 @@ public import FLT.Mazur.PolygonCompleteStageRotation
 public import FLT.Mazur.PolygonCompleteStructureCohomology
 public import FLT.Mazur.PolygonCompleteUniversalFunctions
 public import FLT.Mazur.PolygonCompleteZeroParameterFiber
+public import FLT.Mazur.PolygonComponentCoordinateScaling
 public import FLT.Mazur.PolygonComponentDistinct
 public import FLT.Mazur.PolygonComponentHZeroEndpoints
 public import FLT.Mazur.PolygonComponentHZeroMatching
