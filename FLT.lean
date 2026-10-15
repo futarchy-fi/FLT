@@ -11112,6 +11112,7 @@ public import FLT.Mazur.WeierstrassDilatationHorizontalPointExt
 public import FLT.Mazur.WeierstrassDilatationHorizontalSmooth
 public import FLT.Mazur.WeierstrassDilatationInverseArbitraryIdeal
 public import FLT.Mazur.WeierstrassDilatationInverseIdeal
+public import FLT.Mazur.WeierstrassDilatationInverseNaturality
 public import FLT.Mazur.WeierstrassDilatationInversePolynomial
 public import FLT.Mazur.WeierstrassDilatationLaurentPointCharacters
 public import FLT.Mazur.WeierstrassDilatationLifting
