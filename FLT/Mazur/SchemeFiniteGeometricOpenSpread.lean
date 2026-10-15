@@ -46,7 +46,7 @@ theorem exists_lifts {ι : Type u} [Finite ι] (X Z : ι → Scheme.{u})
   exact ⟨U, q, z, fun i ↦ IsOpenImmersion.lift (k i) (q ≫ r i) (hi i),
     hU, hq, hz, fun i ↦ IsOpenImmersion.lift_fac _ _ _⟩
 
-/-- These neighborhood lifts recover any given whole geometric lifts, including nilpotent data. -/
+/-- These neighborhood lifts recover any given geometric lifts as whole scheme morphisms. -/
 theorem recover {U X Z : Scheme.{u}} (k : Z ⟶ X) [IsOpenImmersion k]
     (q : U ⟶ Y) (z : Spec (.of K) ⟶ U) (b : Spec (.of K) ⟶ Y)
     (r : Y ⟶ X) (a : U ⟶ Z) (g : Spec (.of K) ⟶ Z)
