@@ -8791,6 +8791,7 @@ public import FLT.Mazur.PushforwardCech
 public import FLT.Mazur.PushoutModuleScalars
 public import FLT.Mazur.QuadraticComponentBound
 public import FLT.Mazur.QuadraticRootBranchChart
+public import FLT.Mazur.QuadraticRootBranchCoverage
 public import FLT.Mazur.QuadraticRootBranchLocalization
 public import FLT.Mazur.QuadraticRootOppositeBranch
 public import FLT.Mazur.QuasiCoherentAffineBasePullback
