@@ -10857,6 +10857,7 @@ public import FLT.Mazur.WeierstrassDividedLinearResidueBounds
 public import FLT.Mazur.WeierstrassDividedLocalizedIntersection
 public import FLT.Mazur.WeierstrassDividedNonadjacentGlobalIntersection
 public import FLT.Mazur.WeierstrassDividedNonadjacentTensorIntersection
+public import FLT.Mazur.WeierstrassDividedOddCompleteClosedComparison
 public import FLT.Mazur.WeierstrassDividedOlderAtlasIndex
 public import FLT.Mazur.WeierstrassDividedOlderConicExteriorDisjoint
 public import FLT.Mazur.WeierstrassDividedOlderConicPunctures
