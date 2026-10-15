@@ -12442,6 +12442,7 @@ public import FLT.Mazur.WeierstrassModificationXLaurentRoot
 public import FLT.Mazur.WeierstrassModificationXLocalization
 public import FLT.Mazur.WeierstrassModificationXMorphism
 public import FLT.Mazur.WeierstrassModificationXNodeInverseEvaluation
+public import FLT.Mazur.WeierstrassModificationXNodeInverseFunctions
 public import FLT.Mazur.WeierstrassModificationXNodeInverseParameter
 public import FLT.Mazur.WeierstrassModificationXOriginalLocalization
 public import FLT.Mazur.WeierstrassModificationXOverlap
