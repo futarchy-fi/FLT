@@ -6946,11 +6946,14 @@ public import FLT.Mazur.PolygonCompleteIdentityFiniteUnits
 public import FLT.Mazur.PolygonCompleteIdentityMulCoherence
 public import FLT.Mazur.PolygonCompleteIdentityMultiplicationCubic
 public import FLT.Mazur.PolygonCompleteIdentityNilpotentDefect
+public import FLT.Mazur.PolygonCompleteIdentityObstructionNormalization
 public import FLT.Mazur.PolygonCompleteIdentityOrderZeroLaw
 public import FLT.Mazur.PolygonCompleteIdentitySmoothAction
 public import FLT.Mazur.PolygonCompleteIdentitySmoothActionCoordinates
 public import FLT.Mazur.PolygonCompleteIdentitySmoothActionEquivariance
 public import FLT.Mazur.PolygonCompleteIdentityStageTorus
+public import FLT.Mazur.PolygonCompleteIdentityTopDefect
+public import FLT.Mazur.PolygonCompleteIdentityTopObstruction
 public import FLT.Mazur.PolygonCompleteIdentityUnitCoherence
 public import FLT.Mazur.PolygonCompleteLineCohomology
 public import FLT.Mazur.PolygonCompleteLineHomExt
@@ -7283,6 +7286,7 @@ public import FLT.Mazur.PolygonInfinitesimalFieldFiber
 public import FLT.Mazur.PolygonInfinitesimalLineCoherence
 public import FLT.Mazur.PolygonInfinitesimalMarkedBaseChange
 public import FLT.Mazur.PolygonInfinitesimalMarkings
+public import FLT.Mazur.PolygonInfinitesimalRestrictionKernel
 public import FLT.Mazur.PolygonInfinitesimalRotation
 public import FLT.Mazur.PolygonInfinitesimalRotationBaseChange
 public import FLT.Mazur.PolygonInfinitesimalRotationDivisor
@@ -7305,9 +7309,12 @@ public import FLT.Mazur.PolygonInfinitesimalStageRestriction
 public import FLT.Mazur.PolygonInfinitesimalStageRotation
 public import FLT.Mazur.PolygonInfinitesimalStages
 public import FLT.Mazur.PolygonInfinitesimalSystem
+public import FLT.Mazur.PolygonInfinitesimalTopCoefficient
 public import FLT.Mazur.PolygonInfinitesimalUniversalEdges
 public import FLT.Mazur.PolygonInfinitesimalUniversalNaturality
 public import FLT.Mazur.PolygonInfinitesimalUniversalScaling
+public import FLT.Mazur.PolygonLaurentRestrictionKernel
+public import FLT.Mazur.PolygonLaurentTopCoefficient
 public import FLT.Mazur.PolygonLineHZero
 public import FLT.Mazur.PolygonLineNodeRestriction
 public import FLT.Mazur.PolygonLineNormalization
