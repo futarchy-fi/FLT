@@ -13176,3 +13176,4 @@ public import FLT.TateCurve.TateCurve
 public import FLT.TateCurve.Uniformization
 public import FLT.TateCurve.ValuativeContinuity
 import FLT.Mazur.PolygonCompleteIdentityFirstGraphFiberCoordinates
+import FLT.Mazur.SquareZeroReductionSocle
