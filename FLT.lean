@@ -6882,6 +6882,7 @@ public import FLT.Mazur.PolygonArithmeticBoundaryAmple
 public import FLT.Mazur.PolygonArithmeticBoundaryDivisor
 public import FLT.Mazur.PolygonArithmeticBoundaryLine
 public import FLT.Mazur.PolygonArithmeticClosedLayer
+public import FLT.Mazur.PolygonArithmeticCompatibleAlgebra
 public import FLT.Mazur.PolygonArithmeticCompatibleRing
 public import FLT.Mazur.PolygonArithmeticCompatibleScalars
 public import FLT.Mazur.PolygonArithmeticCompleteBase
