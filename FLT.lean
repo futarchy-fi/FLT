@@ -9621,6 +9621,7 @@ public import FLT.Mazur.SplitPairLocalDescent
 public import FLT.Mazur.SplitPairPushout
 public import FLT.Mazur.SplitSheafLinePullback
 public import FLT.Mazur.SplitSheafLinePullbackComposition
+public import FLT.Mazur.SquareZeroPairAdjoin
 public import FLT.Mazur.SquareZeroScalarGeneration
 public import FLT.Mazur.StableAffineQuotientAffineDescent
 public import FLT.Mazur.StableAffineQuotientBaseCharts
