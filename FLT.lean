@@ -6320,6 +6320,7 @@ public import FLT.Mazur.NodeBranchPushout
 public import FLT.Mazur.NodeDenominatorEqualizer
 public import FLT.Mazur.NodeDenominatorGeneration
 public import FLT.Mazur.NodeDenominatorRestriction
+public import FLT.Mazur.NodeDerivationBoundary
 public import FLT.Mazur.NodeInfinitesimalObstruction
 public import FLT.Mazur.NodeLocalDescent
 public import FLT.Mazur.NodeLocalizedEqualizer
