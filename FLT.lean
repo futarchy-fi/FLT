@@ -5897,6 +5897,7 @@ public import FLT.Mazur.IdealTwistSectionOpen
 public import FLT.Mazur.IdealTwistTransitionExact
 public import FLT.Mazur.IdealWitnessSupportInduction
 public import FLT.Mazur.ImmersedProperCoverBaseChange
+public import FLT.Mazur.ImmersionAffineLifts
 public import FLT.Mazur.IncreasingCechAffineGeneric
 public import FLT.Mazur.IncreasingCechBaseComplex
 public import FLT.Mazur.IncreasingCechBaseCycles
