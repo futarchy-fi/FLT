@@ -5148,6 +5148,7 @@ public import FLT.Mazur.GeometricAcyclicRankOne
 public import FLT.Mazur.GeometricAcyclicRankOneLocus
 public import FLT.Mazur.GeometricCoefficientAutomorphisms
 public import FLT.Mazur.GeometricFiberSmoothLineParameters
+public import FLT.Mazur.GeometricFiniteAllLiftTranslations
 public import FLT.Mazur.GeometricFixedPointTranslation
 public import FLT.Mazur.GeometricFppfCoverSection
 public import FLT.Mazur.GeometricHilbertTranslation
