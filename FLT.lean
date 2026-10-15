@@ -9760,6 +9760,7 @@ public import FLT.Mazur.TildeInvertibleLocal
 public import FLT.Mazur.TildePrincipalOpen
 public import FLT.Mazur.TildeSourceSectionComparison
 public import FLT.Mazur.TorusChartScalars
+public import FLT.Mazur.TranscendentalCoefficientOrbitAvoidance
 public import FLT.Mazur.TranslatedHilbertAffineImmersion
 public import FLT.Mazur.TranslatedHilbertAffineRestriction
 public import FLT.Mazur.TranslatedHilbertCanonicalAffineChart
