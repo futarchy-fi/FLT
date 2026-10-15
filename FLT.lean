@@ -5847,9 +5847,11 @@ public import FLT.Mazur.LaurentCoefficientInjectivity
 public import FLT.Mazur.LaurentLineActionDensity
 public import FLT.Mazur.LaurentLineActionEvaluation
 public import FLT.Mazur.LaurentPairReciprocalUnits
+public import FLT.Mazur.LaurentPairUnitSections
 public import FLT.Mazur.LaurentPairUniversalUnits
 public import FLT.Mazur.LaurentRingSurjectivity
 public import FLT.Mazur.LaurentScaledCoordinateIsomorphisms
+public import FLT.Mazur.LaurentSchemeCoordinates
 public import FLT.Mazur.LaurentTensor
 public import FLT.Mazur.LaurentUnitCoefficientPoint
 public import FLT.Mazur.LaurentUnitMultiplication
@@ -6907,13 +6909,17 @@ public import FLT.Mazur.PolygonCompleteIdentityActionTarget
 public import FLT.Mazur.PolygonCompleteIdentityActionUnchangedLift
 public import FLT.Mazur.PolygonCompleteIdentityChartAtlas
 public import FLT.Mazur.PolygonCompleteIdentityChartOperations
+public import FLT.Mazur.PolygonCompleteIdentityFiniteAlgebra
 public import FLT.Mazur.PolygonCompleteIdentityFiniteCoherence
 public import FLT.Mazur.PolygonCompleteIdentityFiniteComparison
+public import FLT.Mazur.PolygonCompleteIdentityFiniteCoordinates
 public import FLT.Mazur.PolygonCompleteIdentityFiniteLawComparison
 public import FLT.Mazur.PolygonCompleteIdentityFiniteLawCriterion
 public import FLT.Mazur.PolygonCompleteIdentityFinitePair
 public import FLT.Mazur.PolygonCompleteIdentityFiniteRotatedEdges
 public import FLT.Mazur.PolygonCompleteIdentityFiniteScaling
+public import FLT.Mazur.PolygonCompleteIdentityFiniteUnitEvaluation
+public import FLT.Mazur.PolygonCompleteIdentityFiniteUnits
 public import FLT.Mazur.PolygonCompleteIdentityMultiplicationCubic
 public import FLT.Mazur.PolygonCompleteIdentitySmoothAction
 public import FLT.Mazur.PolygonCompleteIdentitySmoothActionCoordinates
@@ -7575,6 +7581,7 @@ public import FLT.Mazur.PolygonTranslationMarkingLine
 public import FLT.Mazur.PolygonTranslationNormalizationLine
 public import FLT.Mazur.PolygonTranslationReflectionLine
 public import FLT.Mazur.PolygonUniversalAction
+public import FLT.Mazur.PolygonUniversalEdgeAlgebra
 public import FLT.Mazur.PolygonUniversalScaling
 public import FLT.Mazur.PolygonVeroneseAdicProjSquare
 public import FLT.Mazur.PolygonVeroneseAdicReduction
@@ -8889,6 +8896,7 @@ public import FLT.Mazur.SchemeLineDescentRefinement
 public import FLT.Mazur.SchemeModulePullbackOpenUnits
 public import FLT.Mazur.SchemeModulePullbackUnitSections
 public import FLT.Mazur.SchemeModulePullbackUnits
+public import FLT.Mazur.SchemeMonoidUnitEvaluation
 public import FLT.Mazur.SchemeNilpotentSectionDetection
 public import FLT.Mazur.SchemeNormalizedRecoveryOverlap
 public import FLT.Mazur.SchemeOpenChartRange
