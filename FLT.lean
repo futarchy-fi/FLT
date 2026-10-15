@@ -3285,6 +3285,7 @@ public import FLT.Mazur.ArbitraryGeometricFiniteGroundInterior
 public import FLT.Mazur.ArbitraryGeometricFiniteKernel
 public import FLT.Mazur.ArbitraryGeometricGroundQuotient
 public import FLT.Mazur.ArbitraryGeometricOriginalOpenImage
+public import FLT.Mazur.ArbitraryGeometricProperCore
 public import FLT.Mazur.ArbitraryPicardAffineEtaleChart
 public import FLT.Mazur.ArbitraryPicardEtaleTranslation
 public import FLT.Mazur.ArtinianClosedFiberFunctions
