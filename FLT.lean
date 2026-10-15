@@ -8914,6 +8914,7 @@ public import FLT.Mazur.SchemeIndependentNormalizationSquare
 public import FLT.Mazur.SchemeIndependentPairNormalization
 public import FLT.Mazur.SchemeIndependentRecoveryNormalization
 public import FLT.Mazur.SchemeIndependentTripleCocycle
+public import FLT.Mazur.SchemeKernelFlatSourceImage
 public import FLT.Mazur.SchemeKernelInvariantOpenLift
 public import FLT.Mazur.SchemeKernelPairSectionSheaf
 public import FLT.Mazur.SchemeLineBundleCategory
