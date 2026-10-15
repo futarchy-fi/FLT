@@ -2769,6 +2769,7 @@ public import FLT.Mazur.AffineHilbertChangedOrbitRelationComparison
 public import FLT.Mazur.AffineHilbertChangedOrbitSource
 public import FLT.Mazur.AffineHilbertChartRelation
 public import FLT.Mazur.AffineHilbertClopenAdmissible
+public import FLT.Mazur.AffineHilbertClosedConnectedCertificate
 public import FLT.Mazur.AffineHilbertClosedEnvelopeInterior
 public import FLT.Mazur.AffineHilbertClosedPatchRefinement
 public import FLT.Mazur.AffineHilbertClosedPatchSource
