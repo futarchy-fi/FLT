@@ -3515,8 +3515,10 @@ public import FLT.Mazur.CartesianCoefficientSymmetry
 public import FLT.Mazur.CartesianCoefficientTransport
 public import FLT.Mazur.CartesianCoefficientTransportKernelPair
 public import FLT.Mazur.CartesianCoefficientTransportNaturality
+public import FLT.Mazur.CartesianEnvelopeSectionTransport
 public import FLT.Mazur.CartesianFiberAutomorphismAction
 public import FLT.Mazur.CartesianFiniteFibers
+public import FLT.Mazur.CartesianGroundInvariantNorm
 public import FLT.Mazur.CartesianHomMarkingParameter
 public import FLT.Mazur.CartesianIdentityFactorization
 public import FLT.Mazur.CartesianIdentityFiniteNeighborhood
@@ -3526,6 +3528,7 @@ public import FLT.Mazur.CartesianLineFieldCohomology
 public import FLT.Mazur.CartesianMonoGroup
 public import FLT.Mazur.CartesianMonoMonoid
 public import FLT.Mazur.CartesianMorphismRecovery
+public import FLT.Mazur.CartesianNormFullFiber
 public import FLT.Mazur.CartesianOpenFunctionSheaf
 public import FLT.Mazur.CartesianOpenIsoBaseChange
 public import FLT.Mazur.CartesianOpenIsoRestriction
@@ -5492,6 +5495,7 @@ public import FLT.Mazur.HilbertBoundedPolynomialAtlas
 public import FLT.Mazur.HilbertBoundedPolynomialBaseChange
 public import FLT.Mazur.HilbertBoundedPolynomialTower
 public import FLT.Mazur.HilbertBoundedQuotientCoordinates
+public import FLT.Mazur.HilbertCartesianGroundNorm
 public import FLT.Mazur.HilbertChartAlgebra
 public import FLT.Mazur.HilbertChartAlgebraRealization
 public import FLT.Mazur.HilbertChartAlgebraSpecialization
@@ -5908,6 +5912,7 @@ public import FLT.Mazur.IndependentCyclicNormalizedSlice
 public import FLT.Mazur.IndependentCyclicSourceGroupPullback
 public import FLT.Mazur.IndependentCyclicSourceMarking
 public import FLT.Mazur.IndependentCyclicSourceModuli
+public import FLT.Mazur.IndependentGroundCartesianTransport
 public import FLT.Mazur.InfinitesimalClosedFiberFunctions
 public import FLT.Mazur.InfinitesimalCoefficientLength
 public import FLT.Mazur.InfinitesimalConormalEquiv
