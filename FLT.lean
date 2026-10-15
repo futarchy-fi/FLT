@@ -10023,6 +10023,7 @@ public import FLT.Mazur.SurjectiveAlgHomKernelEquiv
 public import FLT.Mazur.SurjectiveDominantEpi
 public import FLT.Mazur.SurjectiveIdealPowerQuotient
 public import FLT.Mazur.SurjectiveKernelPushout
+public import FLT.Mazur.SurjectiveParameterQuotient
 public import FLT.Mazur.SurjectivePolynomialArrowRepresentatives
 public import FLT.Mazur.SurjectiveStructureSupport
 public import FLT.Mazur.SurjectiveTowerLifting
