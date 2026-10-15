@@ -3275,6 +3275,7 @@ public import FLT.Mazur.AmpleVeroneseMultiplication
 public import FLT.Mazur.AnnihilatorCoherence
 public import FLT.Mazur.AnnihilatorStalk
 public import FLT.Mazur.AnnihilatorSubsheaf
+public import FLT.Mazur.ArbitraryGeometricAllLiftTranslations
 public import FLT.Mazur.ArbitraryPicardAffineEtaleChart
 public import FLT.Mazur.ArbitraryPicardEtaleTranslation
 public import FLT.Mazur.ArtinianClosedFiberFunctions
@@ -3807,6 +3808,7 @@ public import FLT.Mazur.ConstantCyclicSectionMap
 public import FLT.Mazur.ConstantDegree
 public import FLT.Mazur.ConstantGroupTensorEvaluation
 public import FLT.Mazur.ConstantPrimeScalarFiltration
+public import FLT.Mazur.ConstructedDisjointAllLiftTranslation
 public import FLT.Mazur.ConstructedDisjointGeometricTranslation
 public import FLT.Mazur.ConstructibleDenseInterior
 public import FLT.Mazur.ConstructibleGenericClosure
@@ -5148,10 +5150,12 @@ public import FLT.Mazur.GeometricAcyclicRankOne
 public import FLT.Mazur.GeometricAcyclicRankOneLocus
 public import FLT.Mazur.GeometricCoefficientAutomorphisms
 public import FLT.Mazur.GeometricFiberSmoothLineParameters
+public import FLT.Mazur.GeometricFiniteAllLiftTranslations
 public import FLT.Mazur.GeometricFixedPointTranslation
 public import FLT.Mazur.GeometricFppfCoverSection
 public import FLT.Mazur.GeometricHilbertTranslation
 public import FLT.Mazur.GeometricOpenFactorization
+public import FLT.Mazur.GeometricOrderedAllLiftTranslation
 public import FLT.Mazur.GeometricPicardSheafRepresentative
 public import FLT.Mazur.GeometricPointCoverCriterion
 public import FLT.Mazur.GeometricPullbackPointwiseEquality
@@ -5159,6 +5163,7 @@ public import FLT.Mazur.GeometricResidueMorphismConjugacy
 public import FLT.Mazur.GeometricSectionQuasiFinite
 public import FLT.Mazur.GeometricSectionUnits
 public import FLT.Mazur.GeometricSimultaneousHilbertTranslation
+public import FLT.Mazur.GeometricTestResidueFactor
 public import FLT.Mazur.GeometricallyConnectedDescent
 public import FLT.Mazur.GeometricallyConnectedLocus
 public import FLT.Mazur.GlobalClosedModuleDescent
@@ -6720,6 +6725,7 @@ public import FLT.Mazur.OrderedCurveDivisorPullback
 public import FLT.Mazur.OrderedCurveDivisorRank
 public import FLT.Mazur.OrderedCurvePermutation
 public import FLT.Mazur.OrderedCurvePower
+public import FLT.Mazur.OrderedCurvePowerIntegral
 public import FLT.Mazur.OrderedCurvePowerIrreducible
 public import FLT.Mazur.OrderedCurvePowerSmooth
 public import FLT.Mazur.OrderedCurvePowerSuccessor
@@ -6802,7 +6808,9 @@ public import FLT.Mazur.OrderedTranslationOriginalFiber
 public import FLT.Mazur.OrderedTranslationQuotientCover
 public import FLT.Mazur.OriginalAffineChartOrbit
 public import FLT.Mazur.OriginalAffineFiberCoordinates
+public import FLT.Mazur.OriginalAffineFiberDetectingOpen
 public import FLT.Mazur.OriginalAffineFiberOrbit
+public import FLT.Mazur.OriginalAffineSchemeDetectingOpen
 public import FLT.Mazur.OriginalAffineSchemeOrbit
 public import FLT.Mazur.OriginalAlgebraicDetectingSchemeOpen
 public import FLT.Mazur.OriginalAlgebraicPointDescent
@@ -6817,10 +6825,14 @@ public import FLT.Mazur.OriginalGeometricallyIntegralOpen
 public import FLT.Mazur.OriginalHilbertFiniteType
 public import FLT.Mazur.OriginalInvariantOpenAllEtaleLifts
 public import FLT.Mazur.OriginalRestrictedHilbertIntersection
+public import FLT.Mazur.OriginalSchemeDetectingOpen
+public import FLT.Mazur.OriginalSmoothDetectingEtaleLift
+public import FLT.Mazur.OriginalSmoothFiberAllLifts
 public import FLT.Mazur.OriginalTensorOrbitEvaluation
 public import FLT.Mazur.OriginalTensorOrbitMorphisms
 public import FLT.Mazur.OriginalTranscendentalAffineOpenOrbit
 public import FLT.Mazur.OriginalTranscendentalDetectingOpen
+public import FLT.Mazur.OriginalTranscendentalOpenAllLifts
 public import FLT.Mazur.OriginalTranscendentalResidueConjugacy
 public import FLT.Mazur.OriginalTwistIsoRigidity
 public import FLT.Mazur.OriginalTwistLineOrbits
@@ -8622,6 +8634,7 @@ public import FLT.Mazur.QuasiFiniteCoefficientQuotient
 public import FLT.Mazur.QuasiFiniteGeometricPointIsolation
 public import FLT.Mazur.QuasiFiniteIdealQuotient
 public import FLT.Mazur.QuasiFiniteSmoothLocalEquation
+public import FLT.Mazur.QuasiFiniteUniversalPointIsolation
 public import FLT.Mazur.QuasicoherentImageIdeal
 public import FLT.Mazur.QuasicoherentImageIdealOrbits
 public import FLT.Mazur.QuotientChartComparison
@@ -9843,8 +9856,10 @@ public import FLT.Mazur.TildeInvertibleLocal
 public import FLT.Mazur.TildePrincipalOpen
 public import FLT.Mazur.TildeSourceSectionComparison
 public import FLT.Mazur.TorusChartScalars
+public import FLT.Mazur.TranscendentalAcyclicTranslation
 public import FLT.Mazur.TranscendentalAffineOpenOrbit
 public import FLT.Mazur.TranscendentalCoefficientOrbitAvoidance
+public import FLT.Mazur.TranscendentalOrderedAllLiftTranslation
 public import FLT.Mazur.TranscendentalResidueMorphismConjugacy
 public import FLT.Mazur.TranslatedHilbertAffineImmersion
 public import FLT.Mazur.TranslatedHilbertAffineRestriction
