@@ -4339,6 +4339,7 @@ public import FLT.Mazur.EllipticResolvedLaurentEquality
 public import FLT.Mazur.EllipticResolvedMiddleTranslationEquality
 public import FLT.Mazur.EllipticResolvedMixedTranslationEquality
 public import FLT.Mazur.EllipticResolvedOppositeTranslationEquality
+public import FLT.Mazur.EllipticResolvedOrientedAtlas
 public import FLT.Mazur.EllipticResolvedParameterEquality
 public import FLT.Mazur.EllipticResolvedPositiveExteriorCoverage
 public import FLT.Mazur.EllipticResolvedPositiveStageCoverage
