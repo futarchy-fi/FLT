@@ -9507,6 +9507,7 @@ public import FLT.Mazur.SmoothGeometricAcyclicFiniteFree
 public import FLT.Mazur.SmoothGeometricAcyclicHigherImage
 public import FLT.Mazur.SmoothGeometricAcyclicRankOne
 public import FLT.Mazur.SmoothGeometricFiniteSeparablePoints
+public import FLT.Mazur.SmoothGeometricOpenEtaleLift
 public import FLT.Mazur.SmoothGeometricSeparablePoints
 public import FLT.Mazur.SmoothGeometricallyReduced
 public import FLT.Mazur.SmoothHilbertGeometricCoverage
