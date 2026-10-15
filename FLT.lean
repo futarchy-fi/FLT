@@ -5935,6 +5935,7 @@ public import FLT.Mazur.LaurentCoefficientInjectivity
 public import FLT.Mazur.LaurentCyclicCoordinateChange
 public import FLT.Mazur.LaurentDomainPairUnits
 public import FLT.Mazur.LaurentDomainUnits
+public import FLT.Mazur.LaurentFirstOrderAutomorphism
 public import FLT.Mazur.LaurentFirstStageParameter
 public import FLT.Mazur.LaurentIdentityIdeal
 public import FLT.Mazur.LaurentLineActionDensity
