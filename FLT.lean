@@ -12449,6 +12449,7 @@ public import FLT.Mazur.WeierstrassModificationXOverlap
 public import FLT.Mazur.WeierstrassModificationXPolynomialFactors
 public import FLT.Mazur.WeierstrassModificationXPolynomialNodeBackward
 public import FLT.Mazur.WeierstrassModificationXPolynomialNodeEquiv
+public import FLT.Mazur.WeierstrassModificationXPolynomialNodeGeometry
 public import FLT.Mazur.WeierstrassModificationXPolynomialNodeMaps
 public import FLT.Mazur.WeierstrassModificationXPolynomialRoot
 public import FLT.Mazur.WeierstrassModificationXPolynomialSplit
