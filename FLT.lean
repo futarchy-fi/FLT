@@ -12440,6 +12440,7 @@ public import FLT.Mazur.WeierstrassModificationXScaleOneTensor
 public import FLT.Mazur.WeierstrassModificationXShear
 public import FLT.Mazur.WeierstrassModificationXSlopeOpen
 public import FLT.Mazur.WeierstrassModificationXTensorContraction
+public import FLT.Mazur.WeierstrassModificationXTensorLaurentEvaluation
 public import FLT.Mazur.WeierstrassModificationXTensorOriginal
 public import FLT.Mazur.WeierstrassModificationXTensorOverlapCoordinates
 public import FLT.Mazur.WeierstrassModificationXTensorSmoothInput
