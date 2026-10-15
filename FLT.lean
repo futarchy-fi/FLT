@@ -3282,9 +3282,12 @@ public import FLT.Mazur.AnnihilatorStalk
 public import FLT.Mazur.AnnihilatorSubsheaf
 public import FLT.Mazur.ArbitraryGeometricAffineFullFiber
 public import FLT.Mazur.ArbitraryGeometricAllLiftTranslations
+public import FLT.Mazur.ArbitraryGeometricArtinianGround
+public import FLT.Mazur.ArbitraryGeometricArtinianInterior
 public import FLT.Mazur.ArbitraryGeometricEnvelopeCore
 public import FLT.Mazur.ArbitraryGeometricFiniteGroundInterior
 public import FLT.Mazur.ArbitraryGeometricFiniteKernel
+public import FLT.Mazur.ArbitraryGeometricGenericInterior
 public import FLT.Mazur.ArbitraryGeometricGroundQuotient
 public import FLT.Mazur.ArbitraryGeometricOriginalOpenImage
 public import FLT.Mazur.ArbitraryGeometricProperCore
@@ -3292,11 +3295,14 @@ public import FLT.Mazur.ArbitraryPicardAffineEtaleChart
 public import FLT.Mazur.ArbitraryPicardEtaleTranslation
 public import FLT.Mazur.ArtinianClosedFiberFunctions
 public import FLT.Mazur.ArtinianCoefficientFiberCartier
+public import FLT.Mazur.ArtinianGroundEnvelopeInterior
+public import FLT.Mazur.ArtinianHilbertFullInterior
 public import FLT.Mazur.ArtinianLocalizedCoefficientQuotient
 public import FLT.Mazur.ArtinianProperAffineBaseChange
 public import FLT.Mazur.ArtinianProperRelativeFunctions
 public import FLT.Mazur.ArtinianProperStructureSheaf
 public import FLT.Mazur.ArtinianRelativeSectionCriterion
+public import FLT.Mazur.ArtinianResidualNonaccumulation
 public import FLT.Mazur.ArtinianSectionKernel
 public import FLT.Mazur.AuxiliaryBaseProjectionParameter
 public import FLT.Mazur.AuxiliaryCartesianGroupParameter
@@ -4583,6 +4589,7 @@ public import FLT.Mazur.EllipticVariableChangeSmoothness
 public import FLT.Mazur.EllipticWeightedScaling
 public import FLT.Mazur.EllipticZeroExteriorSmoothCover
 public import FLT.Mazur.EnlargedPresentationModel
+public import FLT.Mazur.EnvelopeVerticalGenerizations
 public import FLT.Mazur.EquifiberedGluingBaseChange
 public import FLT.Mazur.EquifiberedSchemeGluing
 public import FLT.Mazur.EtaleAffineSpaceDimension
@@ -6529,6 +6536,7 @@ public import FLT.Mazur.NodeTangentValuationModel
 public import FLT.Mazur.NoetherianClosedImageGenerizations
 public import FLT.Mazur.NoetherianConstructibleCriterion
 public import FLT.Mazur.NoetherianDirectSumSheaf
+public import FLT.Mazur.NoetherianEnvelopeGenericInterior
 public import FLT.Mazur.NoetherianInfinitesimalFiberFunctions
 public import FLT.Mazur.NoetherianLocalClosedFiberFunctions
 public import FLT.Mazur.NoetherianModuleSum
@@ -9142,6 +9150,7 @@ public import FLT.Mazur.RelativeSerreVanishing
 public import FLT.Mazur.RelativeSums
 public import FLT.Mazur.RelativeVeryAmpleLineBundle
 public import FLT.Mazur.RepeatedCubicRoots
+public import FLT.Mazur.ResidualStrictCoefficientGenerizations
 public import FLT.Mazur.ResidueCoordinateDenominators
 public import FLT.Mazur.ResidueFiberRegularLocalization
 public import FLT.Mazur.ResidueGeometricConjugacy
