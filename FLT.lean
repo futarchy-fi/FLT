@@ -6945,6 +6945,7 @@ public import FLT.Mazur.PolygonArithmeticDegreeFinite
 public import FLT.Mazur.PolygonArithmeticDegreeFiniteStage
 public import FLT.Mazur.PolygonArithmeticDegreeLifting
 public import FLT.Mazur.PolygonArithmeticDegreeProjection
+public import FLT.Mazur.PolygonArithmeticFamilyFlatness
 public import FLT.Mazur.PolygonArithmeticFiberMarkings
 public import FLT.Mazur.PolygonArithmeticFiniteType
 public import FLT.Mazur.PolygonArithmeticFlatLayer
