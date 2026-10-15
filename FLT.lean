@@ -6952,6 +6952,10 @@ public import FLT.Mazur.PolygonCompleteIdentityFiniteRotatedEdges
 public import FLT.Mazur.PolygonCompleteIdentityFiniteScaling
 public import FLT.Mazur.PolygonCompleteIdentityFiniteUnitEvaluation
 public import FLT.Mazur.PolygonCompleteIdentityFiniteUnits
+public import FLT.Mazur.PolygonCompleteIdentityFlatOpenLift
+public import FLT.Mazur.PolygonCompleteIdentityGraphFlat
+public import FLT.Mazur.PolygonCompleteIdentityGraphFlatExt
+public import FLT.Mazur.PolygonCompleteIdentityLiftLocus
 public import FLT.Mazur.PolygonCompleteIdentityMulCoherence
 public import FLT.Mazur.PolygonCompleteIdentityMultiplicationCubic
 public import FLT.Mazur.PolygonCompleteIdentityNilpotentDefect
@@ -8647,6 +8651,7 @@ public import FLT.Mazur.ScalarExtensionDirectSum
 public import FLT.Mazur.ScalarExtensionIsomorphismDescent
 public import FLT.Mazur.ScalarExtensionPullbackDescent
 public import FLT.Mazur.ScalarTowerDivision
+public import FLT.Mazur.SchematicDenseDedekindFlat
 public import FLT.Mazur.SchematicDescentGluing
 public import FLT.Mazur.SchemeAffineAmbientTestCocycle
 public import FLT.Mazur.SchemeAffineAmbientTestNaturality
