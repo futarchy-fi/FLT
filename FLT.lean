@@ -7004,6 +7004,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFiniteUnits
 public import FLT.Mazur.PolygonCompleteIdentityFirstBoundary
 public import FLT.Mazur.PolygonCompleteIdentityFirstCorrection
 public import FLT.Mazur.PolygonCompleteIdentityFirstLinearization
+public import FLT.Mazur.PolygonCompleteIdentityFirstNodeBoundary
 public import FLT.Mazur.PolygonCompleteIdentityFlatOpenLift
 public import FLT.Mazur.PolygonCompleteIdentityGraphFlat
 public import FLT.Mazur.PolygonCompleteIdentityGraphFlatExt
