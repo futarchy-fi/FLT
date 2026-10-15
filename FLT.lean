@@ -7287,6 +7287,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstGraphFiberSplit
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphFiberSupport
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphFlat
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphImage
+public import FLT.Mazur.PolygonCompleteIdentityFirstGraphIncomingBranch
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphLocalization
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphNilradical
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphOriginalFlat
