@@ -9118,6 +9118,7 @@ public import FLT.Mazur.SchemeUnchangedOpenComposition
 public import FLT.Mazur.SchemeUnchangedOpenIsoSquare
 public import FLT.Mazur.SchemeUnchangedOpenLift
 public import FLT.Mazur.SchemeUnchangedOpenPullback
+public import FLT.Mazur.SchemeWholeFiberCoefficients
 public import FLT.Mazur.SchemeWholeFiberGenericOpen
 public import FLT.Mazur.SchemeWholeFiberOpen
 public import FLT.Mazur.SchemeWholeFiberOpenBaseChange
