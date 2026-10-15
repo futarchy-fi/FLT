@@ -12636,6 +12636,7 @@ public import FLT.Mazur.WeierstrassModificationXScaleOneMaps
 public import FLT.Mazur.WeierstrassModificationXScaleOneTensor
 public import FLT.Mazur.WeierstrassModificationXShear
 public import FLT.Mazur.WeierstrassModificationXSlopeOpen
+public import FLT.Mazur.WeierstrassModificationXSmallIncidenceUniqueness
 public import FLT.Mazur.WeierstrassModificationXStandardLaurentInverse
 public import FLT.Mazur.WeierstrassModificationXStandardPuncture
 public import FLT.Mazur.WeierstrassModificationXStandardPunctureComparison
