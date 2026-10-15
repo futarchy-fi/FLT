@@ -9272,6 +9272,7 @@ public import FLT.Mazur.RelativeRelationOrbitTopology
 public import FLT.Mazur.RelativeRelationPrincipalLifting
 public import FLT.Mazur.RelativeRelationPrincipalRestriction
 public import FLT.Mazur.RelativeRelationPrincipalTorsion
+public import FLT.Mazur.RelativeRelationPulledIdealCover
 public import FLT.Mazur.RelativeRelationQuotientSections
 public import FLT.Mazur.RelativeRelationQuotientSheaf
 public import FLT.Mazur.RelativeRelationRingedCoequalizer
