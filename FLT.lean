@@ -10748,6 +10748,7 @@ public import FLT.Mazur.WeierstrassDividedDepthYBoundary
 public import FLT.Mazur.WeierstrassDividedEarlierTerminalSeparation
 public import FLT.Mazur.WeierstrassDividedEqualityComponentContraction
 public import FLT.Mazur.WeierstrassDividedEqualityComponentEndpoints
+public import FLT.Mazur.WeierstrassDividedEqualityCycleCommonNode
 public import FLT.Mazur.WeierstrassDividedEqualityCycleConstancy
 public import FLT.Mazur.WeierstrassDividedEqualityCycleTerminalDescent
 public import FLT.Mazur.WeierstrassDividedEqualityFullNodeDescent
