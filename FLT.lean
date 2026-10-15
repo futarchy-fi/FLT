@@ -11087,6 +11087,7 @@ public import FLT.Mazur.WeierstrassCubicQuotient
 public import FLT.Mazur.WeierstrassCubicQuotientChart
 public import FLT.Mazur.WeierstrassCubicSection
 public import FLT.Mazur.WeierstrassDilatationAlgebra
+public import FLT.Mazur.WeierstrassDilatationArithmeticTerminalNode
 public import FLT.Mazur.WeierstrassDilatationBaseChange
 public import FLT.Mazur.WeierstrassDilatationCoefficients
 public import FLT.Mazur.WeierstrassDilatationDepthComposition
