@@ -5845,6 +5845,7 @@ public import FLT.Mazur.LaurentDomainUnits
 public import FLT.Mazur.LaurentLineActionDensity
 public import FLT.Mazur.LaurentLineActionEvaluation
 public import FLT.Mazur.LaurentNormalizedReduction
+public import FLT.Mazur.LaurentPairCoefficientNaturality
 public import FLT.Mazur.LaurentPairReciprocalUnits
 public import FLT.Mazur.LaurentPairUnitSections
 public import FLT.Mazur.LaurentPairUniversalUnits
