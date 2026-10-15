@@ -5887,6 +5887,7 @@ public import FLT.Mazur.LaurentLineActionEvaluation
 public import FLT.Mazur.LaurentNormalizedReduction
 public import FLT.Mazur.LaurentPairCoefficientNaturality
 public import FLT.Mazur.LaurentPairEvaluation
+public import FLT.Mazur.LaurentPairNaturality
 public import FLT.Mazur.LaurentPairReciprocalUnits
 public import FLT.Mazur.LaurentPairSwap
 public import FLT.Mazur.LaurentPairUnitSections
