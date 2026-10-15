@@ -4323,6 +4323,7 @@ public import FLT.Mazur.EllipticResolvedComponentCharts
 public import FLT.Mazur.EllipticResolvedComponentDifference
 public import FLT.Mazur.EllipticResolvedComponentLabels
 public import FLT.Mazur.EllipticResolvedComponentPointCover
+public import FLT.Mazur.EllipticResolvedComponentSeparation
 public import FLT.Mazur.EllipticResolvedComponentSupports
 public import FLT.Mazur.EllipticResolvedDepthSeparation
 public import FLT.Mazur.EllipticResolvedExteriorBoundaryCover
