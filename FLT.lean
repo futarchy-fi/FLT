@@ -9805,6 +9805,7 @@ public import FLT.Mazur.TorusChartScalars
 public import FLT.Mazur.TranscendentalAcyclicTranslation
 public import FLT.Mazur.TranscendentalAffineOpenOrbit
 public import FLT.Mazur.TranscendentalCoefficientOrbitAvoidance
+public import FLT.Mazur.TranscendentalOrderedAllLiftTranslation
 public import FLT.Mazur.TranscendentalResidueMorphismConjugacy
 public import FLT.Mazur.TranslatedHilbertAffineImmersion
 public import FLT.Mazur.TranslatedHilbertAffineRestriction
