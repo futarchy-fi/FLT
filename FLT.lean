@@ -6915,6 +6915,7 @@ public import FLT.Mazur.PolygonArithmeticParameterImage
 public import FLT.Mazur.PolygonArithmeticParameterSections
 public import FLT.Mazur.PolygonArithmeticReductionSequence
 public import FLT.Mazur.PolygonArithmeticResidueCoefficients
+public import FLT.Mazur.PolygonArithmeticResidueConstants
 public import FLT.Mazur.PolygonArithmeticResidueFiber
 public import FLT.Mazur.PolygonArithmeticResidueIdeal
 public import FLT.Mazur.PolygonArithmeticResidueKernel
