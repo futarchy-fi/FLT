@@ -4177,6 +4177,7 @@ public import FLT.Mazur.EllipticLocalEvaluation
 public import FLT.Mazur.EllipticLocalIntegerMultiplication
 public import FLT.Mazur.EllipticLocalMultiplication
 public import FLT.Mazur.EllipticLocalValuation
+public import FLT.Mazur.EllipticMiddleCyclicCoordinates
 public import FLT.Mazur.EllipticMinimalAdditiveComponents
 public import FLT.Mazur.EllipticMinimalDiscriminant
 public import FLT.Mazur.EllipticMultiplicativeValuationEquation
