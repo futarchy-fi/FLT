@@ -7020,6 +7020,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFiniteScaling
 public import FLT.Mazur.PolygonCompleteIdentityFiniteSymmetry
 public import FLT.Mazur.PolygonCompleteIdentityFiniteUnitEvaluation
 public import FLT.Mazur.PolygonCompleteIdentityFiniteUnits
+public import FLT.Mazur.PolygonCompleteIdentityFirstActionCoordinate
 public import FLT.Mazur.PolygonCompleteIdentityFirstBoundary
 public import FLT.Mazur.PolygonCompleteIdentityFirstCorrection
 public import FLT.Mazur.PolygonCompleteIdentityFirstLinearization
