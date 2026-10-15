@@ -6279,6 +6279,7 @@ public import FLT.Mazur.ModuleSectionInverseCoordinate
 public import FLT.Mazur.ModuleSectionIsomorphismTransport
 public import FLT.Mazur.ModuleSectionMap
 public import FLT.Mazur.ModuleSectionProjectiveChart
+public import FLT.Mazur.ModuleSectionProjectiveChartNaturality
 public import FLT.Mazur.ModuleSectionProjectiveGluing
 public import FLT.Mazur.ModuleSectionProjectiveOOne
 public import FLT.Mazur.ModuleSectionProjectiveOver
