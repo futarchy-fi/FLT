@@ -6947,6 +6947,7 @@ public import FLT.Mazur.PolygonArithmeticParameterAnnihilator
 public import FLT.Mazur.PolygonArithmeticParameterImage
 public import FLT.Mazur.PolygonArithmeticParameterSections
 public import FLT.Mazur.PolygonArithmeticProductLifting
+public import FLT.Mazur.PolygonArithmeticProjSquare
 public import FLT.Mazur.PolygonArithmeticProperProj
 public import FLT.Mazur.PolygonArithmeticQuotientGrading
 public import FLT.Mazur.PolygonArithmeticReductionSequence
