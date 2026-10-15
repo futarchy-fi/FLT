@@ -2859,6 +2859,7 @@ public import FLT.Mazur.AffineHilbertFullFiberRefinement
 public import FLT.Mazur.AffineHilbertFullFiberRestriction
 public import FLT.Mazur.AffineHilbertFullInteriorChart
 public import FLT.Mazur.AffineHilbertFullRelationRestriction
+public import FLT.Mazur.AffineHilbertGenericEnvelopeCriterion
 public import FLT.Mazur.AffineHilbertGroundBaseEnvelope
 public import FLT.Mazur.AffineHilbertGroundBaseEnvelopeLift
 public import FLT.Mazur.AffineHilbertGroundBaseFullFiber
