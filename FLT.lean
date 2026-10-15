@@ -6753,6 +6753,7 @@ public import FLT.Mazur.OpenIrreducibleComponent
 public import FLT.Mazur.OpenModuleDirectImageCohomology
 public import FLT.Mazur.OpenModuleRestrictionCoherence
 public import FLT.Mazur.OpenModuleSectionScalars
+public import FLT.Mazur.OpenRangeCoordinateUnit
 public import FLT.Mazur.OpenRestrictedScalarPullback
 public import FLT.Mazur.OpenRestrictionClosed
 public import FLT.Mazur.OpenRestrictionInclusion
@@ -7329,10 +7330,17 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstBoundary
 public import FLT.Mazur.PolygonCompleteIdentityFirstBranchOriginal
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartBranchImage
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartBranchQuotient
+public import FLT.Mazur.PolygonCompleteIdentityFirstChartClosedLayer
+public import FLT.Mazur.PolygonCompleteIdentityFirstChartClosedSplit
+public import FLT.Mazur.PolygonCompleteIdentityFirstChartFiberSocle
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartKernelPowers
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartNodeSocle
+public import FLT.Mazur.PolygonCompleteIdentityFirstChartParameterLayer
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartPunctureOpens
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartPunctures
+public import FLT.Mazur.PolygonCompleteIdentityFirstChartScalars
+public import FLT.Mazur.PolygonCompleteIdentityFirstChartSocleKernel
+public import FLT.Mazur.PolygonCompleteIdentityFirstChartSourceFunctions
 public import FLT.Mazur.PolygonCompleteIdentityFirstCoordinateDescent
 public import FLT.Mazur.PolygonCompleteIdentityFirstCorrection
 public import FLT.Mazur.PolygonCompleteIdentityFirstDefectDerivation
@@ -7742,6 +7750,7 @@ public import FLT.Mazur.PolygonFirstNodeLaurent
 public import FLT.Mazur.PolygonFirstNodeParameterDescent
 public import FLT.Mazur.PolygonFirstNodeParameterEquiv
 public import FLT.Mazur.PolygonFirstNodeParameterScaling
+public import FLT.Mazur.PolygonFirstNodeParameterStructure
 public import FLT.Mazur.PolygonFirstNodePolynomialDescent
 public import FLT.Mazur.PolygonFirstNodePolynomialExtension
 public import FLT.Mazur.PolygonFirstNodePositiveExtension
@@ -9968,6 +9977,7 @@ public import FLT.Mazur.SplitPairPushout
 public import FLT.Mazur.SplitSheafLinePullback
 public import FLT.Mazur.SplitSheafLinePullbackComposition
 public import FLT.Mazur.SquareZeroPairAdjoin
+public import FLT.Mazur.SquareZeroParameterLayer
 public import FLT.Mazur.SquareZeroReductionKernel
 public import FLT.Mazur.SquareZeroReductionSocle
 public import FLT.Mazur.SquareZeroReductionSpectrum
