@@ -7139,6 +7139,8 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstDefectFormula
 public import FLT.Mazur.PolygonCompleteIdentityFirstDefectProduct
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphAlgebra
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphConductor
+public import FLT.Mazur.PolygonCompleteIdentityFirstGraphFiberCoordinates
+public import FLT.Mazur.PolygonCompleteIdentityFirstGraphFiberSocle
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphFiberSplit
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphFiberSupport
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphFlat
@@ -9694,6 +9696,7 @@ public import FLT.Mazur.SplitSheafLinePullback
 public import FLT.Mazur.SplitSheafLinePullbackComposition
 public import FLT.Mazur.SquareZeroPairAdjoin
 public import FLT.Mazur.SquareZeroReductionKernel
+public import FLT.Mazur.SquareZeroReductionSocle
 public import FLT.Mazur.SquareZeroReductionSpectrum
 public import FLT.Mazur.SquareZeroScalarGeneration
 public import FLT.Mazur.StableAffineQuotientAffineDescent
@@ -13175,5 +13178,3 @@ public import FLT.TateCurve.SymmetricInverse
 public import FLT.TateCurve.TateCurve
 public import FLT.TateCurve.Uniformization
 public import FLT.TateCurve.ValuativeContinuity
-import FLT.Mazur.PolygonCompleteIdentityFirstGraphFiberCoordinates
-import FLT.Mazur.SquareZeroReductionSocle
