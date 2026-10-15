@@ -3286,6 +3286,7 @@ public import FLT.Mazur.ArbitraryGeometricFiniteGroundInterior
 public import FLT.Mazur.ArbitraryGeometricFiniteKernel
 public import FLT.Mazur.ArbitraryGeometricGroundQuotient
 public import FLT.Mazur.ArbitraryGeometricOriginalOpenImage
+public import FLT.Mazur.ArbitraryGeometricProperCore
 public import FLT.Mazur.ArbitraryPicardAffineEtaleChart
 public import FLT.Mazur.ArbitraryPicardEtaleTranslation
 public import FLT.Mazur.ArtinianClosedFiberFunctions
@@ -4641,6 +4642,7 @@ public import FLT.Mazur.EtaleSimpleRootCoordinates
 public import FLT.Mazur.EtaleTranslationBranchMaps
 public import FLT.Mazur.EtaleTranslationBranchPullback
 public import FLT.Mazur.EtaleTranslationFiniteNeighborhood
+public import FLT.Mazur.EtaleWholeFiberProperNeighborhood
 public import FLT.Mazur.EvaluatedPrincipalRefinement
 public import FLT.Mazur.EventualTwistVanishing
 public import FLT.Mazur.ExactFunctorInjectiveExt
@@ -4703,6 +4705,7 @@ public import FLT.Mazur.FiniteCompactOpenAffineLimit
 public import FLT.Mazur.FiniteCompactOpenCoverLimit
 public import FLT.Mazur.FiniteCoproductTensorRight
 public import FLT.Mazur.FiniteCoverDirectSumSheaf
+public import FLT.Mazur.FiniteCoverUniversallyClosed
 public import FLT.Mazur.FiniteCurveEulerIsomorphism
 public import FLT.Mazur.FiniteDVRAbsoluteRamification
 public import FLT.Mazur.FiniteDVRComplete
@@ -5667,6 +5670,7 @@ public import FLT.Mazur.HilbertPrincipalInvariantNorm
 public import FLT.Mazur.HilbertPrincipalLocalizationScalars
 public import FLT.Mazur.HilbertPrincipalNormAdmissible
 public import FLT.Mazur.HilbertPrincipalRestriction
+public import FLT.Mazur.HilbertProperNeighborhoodChart
 public import FLT.Mazur.HilbertQuotientDegreeBound
 public import FLT.Mazur.HilbertQuotientDegreeFiltration
 public import FLT.Mazur.HilbertReindexedCoordinateRing
@@ -8624,6 +8628,8 @@ public import FLT.Mazur.ProperCoherentCohomology
 public import FLT.Mazur.ProperCohomologyFieldVanishing
 public import FLT.Mazur.ProperCohomologyWitnesses
 public import FLT.Mazur.ProperConnectedReducedSections
+public import FLT.Mazur.ProperCoreGroundInterior
+public import FLT.Mazur.ProperCoreResidualInterior
 public import FLT.Mazur.ProperCoverImmersionCriterion
 public import FLT.Mazur.ProperCoverLimitDescent
 public import FLT.Mazur.ProperCurveFixedPointTranslation
@@ -8631,6 +8637,7 @@ public import FLT.Mazur.ProperCurveGenus
 public import FLT.Mazur.ProperCurveOpenComparison
 public import FLT.Mazur.ProperDenseOpenExtension
 public import FLT.Mazur.ProperDenseOpenIso
+public import FLT.Mazur.ProperEtaleNeighborhoodBases
 public import FLT.Mazur.ProperFamilyAbelRepresentation
 public import FLT.Mazur.ProperFamilyAtlasCartesian
 public import FLT.Mazur.ProperFamilyAtlasRecovery
@@ -8752,6 +8759,10 @@ public import FLT.Mazur.ProperLocalAdicIdealSeparation
 public import FLT.Mazur.ProperLocalAmpleFiberGenerators
 public import FLT.Mazur.ProperLocalFiberCover
 public import FLT.Mazur.ProperLocalFixedPoint
+public import FLT.Mazur.ProperNeighborhoodAtlas
+public import FLT.Mazur.ProperNeighborhoodEnvelopeInterior
+public import FLT.Mazur.ProperNeighborhoodFiniteUnion
+public import FLT.Mazur.ProperNeighborhoodGroundInterior
 public import FLT.Mazur.ProperOnlyAmpleFiberNeighborhood
 public import FLT.Mazur.ProperOnlyRelativeAmpleFibers
 public import FLT.Mazur.ProperPointExtension
@@ -8793,6 +8804,7 @@ public import FLT.Mazur.ProperStageBaseChangeLimit
 public import FLT.Mazur.ProperStageFiberProjection
 public import FLT.Mazur.ProperStageResidueFiberLimit
 public import FLT.Mazur.ProperStalkExtension
+public import FLT.Mazur.ProperTranslationNeighborhoodInterior
 public import FLT.Mazur.ProperTwistedLineDescent
 public import FLT.Mazur.ProperUniversalCartierDivisor
 public import FLT.Mazur.ProperUniversalDirectImageLine
@@ -8813,6 +8825,7 @@ public import FLT.Mazur.QuadraticRootBranchLocalization
 public import FLT.Mazur.QuadraticRootOppositeBranch
 public import FLT.Mazur.QuasiCoherentAffineBasePullback
 public import FLT.Mazur.QuasiCoherentSchemePullback
+public import FLT.Mazur.QuasiCompactEtaleGeometricSections
 public import FLT.Mazur.QuasiCompactGenericFlatOpen
 public import FLT.Mazur.QuasiFiniteCoefficientQuotient
 public import FLT.Mazur.QuasiFiniteGeometricPointIsolation
@@ -9759,6 +9772,7 @@ public import FLT.Mazur.SectionPoleSplit
 public import FLT.Mazur.SectionPowerGluing
 public import FLT.Mazur.SectionProjectiveFiniteNeighborhood
 public import FLT.Mazur.SectionProjectiveImmersion
+public import FLT.Mazur.SectionProperNeighborhood
 public import FLT.Mazur.SectionPullbackFrameCoordinates
 public import FLT.Mazur.SectionPullbackLineCoordinate
 public import FLT.Mazur.SectionPullbackRatioCoordinates
@@ -9830,6 +9844,7 @@ public import FLT.Mazur.ShortComplexSumHomologyInclusion
 public import FLT.Mazur.SimultaneousEtaleAcyclicNeighborhood
 public import FLT.Mazur.SimultaneousSmoothAcyclicNeighborhood
 public import FLT.Mazur.SimultaneousSmoothHilbertParameters
+public import FLT.Mazur.SingleProperTranslationChart
 public import FLT.Mazur.SmallAffineParameterBases
 public import FLT.Mazur.SmallHilbertPresentation
 public import FLT.Mazur.SmallHilbertPresentationPullback
@@ -10000,7 +10015,9 @@ public import FLT.Mazur.StructureModuleScalarTransitions
 public import FLT.Mazur.StructureRingCohomologyIso
 public import FLT.Mazur.SubfunctorRepresentedPullback
 public import FLT.Mazur.SuccessiveIncidenceAlgebra
+public import FLT.Mazur.SuccessiveIncidenceCoefficientMap
 public import FLT.Mazur.SuccessiveIncidencePolygonChart
+public import FLT.Mazur.SuccessiveIncidencePolygonRestriction
 public import FLT.Mazur.SupportedReductionLocalization
 public import FLT.Mazur.SurjectiveAlgHomKernelEquiv
 public import FLT.Mazur.SurjectiveDominantEpi
@@ -10094,6 +10111,7 @@ public import FLT.Mazur.TranslatedHilbertTestUnionBaseChange
 public import FLT.Mazur.TranslatedHilbertTestUnionLift
 public import FLT.Mazur.TranslatedHilbertTripleCocycle
 public import FLT.Mazur.TranslatedHilbertTripleOverlap
+public import FLT.Mazur.TranslationProperCore
 public import FLT.Mazur.TrivialLineTwistLocalization
 public import FLT.Mazur.TrivializedLineSheafLimitDescent
 public import FLT.Mazur.TwistedEvaluationSectionSum
@@ -11073,6 +11091,7 @@ public import FLT.Mazur.WeierstrassDividedAdjacentZeroParameterIntersection
 public import FLT.Mazur.WeierstrassDividedAdjacentZeroSectionSeparation
 public import FLT.Mazur.WeierstrassDividedArithmeticCoordinateTransition
 public import FLT.Mazur.WeierstrassDividedArithmeticCoordinates
+public import FLT.Mazur.WeierstrassDividedArithmeticNodeCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticNodeOpen
 public import FLT.Mazur.WeierstrassDividedArithmeticOppositeNodeOpen
 public import FLT.Mazur.WeierstrassDividedAtlasRegularCenter
@@ -12825,7 +12844,9 @@ public import FLT.Mazur.WeierstrassSplitNormalizationInfinity
 public import FLT.Mazur.WeierstrassSplitNormalizationInfinityParameter
 public import FLT.Mazur.WeierstrassSquareZeroTorsionRigidity
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticNodeChart
+public import FLT.Mazur.WeierstrassSuccessiveArithmeticNodeCoverage
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticOppositeNodeChart
+public import FLT.Mazur.WeierstrassSuccessiveArithmeticRestrictionMaps
 public import FLT.Mazur.WeierstrassSuccessiveCenterAction
 public import FLT.Mazur.WeierstrassSuccessiveCenterScaling
 public import FLT.Mazur.WeierstrassSuccessiveCoefficientShear
@@ -12839,9 +12860,13 @@ public import FLT.Mazur.WeierstrassSuccessiveInfinityCenter
 public import FLT.Mazur.WeierstrassSuccessiveLocalAction
 public import FLT.Mazur.WeierstrassSuccessiveNilpotentBranch
 public import FLT.Mazur.WeierstrassSuccessiveNilpotentNodeChart
+public import FLT.Mazur.WeierstrassSuccessiveNilpotentSlopeMap
 public import FLT.Mazur.WeierstrassSuccessiveNodeChartCoverage
+public import FLT.Mazur.WeierstrassSuccessiveNodeRestrictionSquare
 public import FLT.Mazur.WeierstrassSuccessiveOppositeNodeChart
+public import FLT.Mazur.WeierstrassSuccessiveOppositeRestrictionSquare
 public import FLT.Mazur.WeierstrassSuccessiveOriginalOpen
+public import FLT.Mazur.WeierstrassSuccessivePolygonRestrictionSquare
 public import FLT.Mazur.WeierstrassSuccessiveReesCoordinates
 public import FLT.Mazur.WeierstrassSuccessiveReesCover
 public import FLT.Mazur.WeierstrassSuccessiveReesEquation
