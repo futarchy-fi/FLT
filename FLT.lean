@@ -9602,6 +9602,7 @@ public import FLT.Mazur.SectionCoverCoordinates
 public import FLT.Mazur.SectionCoverDiscrepancy
 public import FLT.Mazur.SectionCoverGeometricMorphisms
 public import FLT.Mazur.SectionCubicChartMorphism
+public import FLT.Mazur.SectionCubicEquationPullback
 public import FLT.Mazur.SectionCubicMorphism
 public import FLT.Mazur.SectionCubicRatioNormalization
 public import FLT.Mazur.SectionDirectImageCanonicalBasis
