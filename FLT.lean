@@ -6803,6 +6803,7 @@ public import FLT.Mazur.OriginalAffineChartOrbit
 public import FLT.Mazur.OriginalAffineFiberCoordinates
 public import FLT.Mazur.OriginalAffineFiberOrbit
 public import FLT.Mazur.OriginalAffineSchemeOrbit
+public import FLT.Mazur.OriginalAlgebraicDetectingSchemeOpen
 public import FLT.Mazur.OriginalAlgebraicPointDescent
 public import FLT.Mazur.OriginalFamilyIdentityComparison
 public import FLT.Mazur.OriginalFamilySectionComposition
