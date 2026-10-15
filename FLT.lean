@@ -3982,6 +3982,8 @@ public import FLT.Mazur.DenseGroundHilbertPrincipal
 public import FLT.Mazur.DenseGroundResidualSupport
 public import FLT.Mazur.DerivationAlgEquivTransport
 public import FLT.Mazur.DifferenceNodeAlgebra
+public import FLT.Mazur.DifferenceNodeCorrectionNaturality
+public import FLT.Mazur.DifferenceNodeCriticalNaturality
 public import FLT.Mazur.DifferenceNodeCriticalPoint
 public import FLT.Mazur.DifferenceNodeCriticalTranslation
 public import FLT.Mazur.DifferenceNodeNormalEquiv
@@ -6530,6 +6532,7 @@ public import FLT.Mazur.NilpotentPolynomialInverseBaseChange
 public import FLT.Mazur.NilpotentPolynomialTaylor
 public import FLT.Mazur.NilpotentQuadraticDifferenceFactors
 public import FLT.Mazur.NilpotentQuadraticDifferenceInverse
+public import FLT.Mazur.NilpotentQuadraticDifferenceNaturality
 public import FLT.Mazur.NilpotentQuadraticDifferenceReduction
 public import FLT.Mazur.NilpotentQuadraticRoot
 public import FLT.Mazur.NilpotentQuadraticRootNaturality
@@ -11122,6 +11125,7 @@ public import FLT.Mazur.WeierstrassCubicQuotient
 public import FLT.Mazur.WeierstrassCubicQuotientChart
 public import FLT.Mazur.WeierstrassCubicSection
 public import FLT.Mazur.WeierstrassDilatationAlgebra
+public import FLT.Mazur.WeierstrassDilatationArithmeticSmoothingRestriction
 public import FLT.Mazur.WeierstrassDilatationArithmeticTerminalNode
 public import FLT.Mazur.WeierstrassDilatationBaseChange
 public import FLT.Mazur.WeierstrassDilatationCoefficients
@@ -11138,6 +11142,7 @@ public import FLT.Mazur.WeierstrassDilatationHorizontalPointExt
 public import FLT.Mazur.WeierstrassDilatationHorizontalSmooth
 public import FLT.Mazur.WeierstrassDilatationInverseArbitraryIdeal
 public import FLT.Mazur.WeierstrassDilatationInverseIdeal
+public import FLT.Mazur.WeierstrassDilatationInverseNaturality
 public import FLT.Mazur.WeierstrassDilatationInversePolynomial
 public import FLT.Mazur.WeierstrassDilatationLaurentPointCharacters
 public import FLT.Mazur.WeierstrassDilatationLifting
@@ -11164,12 +11169,15 @@ public import FLT.Mazur.WeierstrassDilatationShearNodeNormalForm
 public import FLT.Mazur.WeierstrassDilatationSmoothingCongruence
 public import FLT.Mazur.WeierstrassDilatationSmoothingDeepCongruence
 public import FLT.Mazur.WeierstrassDilatationSmoothingDepth
+public import FLT.Mazur.WeierstrassDilatationSmoothingNaturality
 public import FLT.Mazur.WeierstrassDilatationTangentCorrection
 public import FLT.Mazur.WeierstrassDilatationTangentEquiv
 public import FLT.Mazur.WeierstrassDilatationTangentEvaluation
 public import FLT.Mazur.WeierstrassDilatationTangentInverse
+public import FLT.Mazur.WeierstrassDilatationTangentRootNaturality
 public import FLT.Mazur.WeierstrassDilatationTerminalFactorEvaluation
 public import FLT.Mazur.WeierstrassDilatationTerminalFactorReduction
+public import FLT.Mazur.WeierstrassDilatationTerminalHorizontalLocus
 public import FLT.Mazur.WeierstrassDilatationTerminalNode
 public import FLT.Mazur.WeierstrassDilatationTerminalNodeCoordinates
 public import FLT.Mazur.WeierstrassDilatationTerminalRestriction
@@ -11265,6 +11273,13 @@ public import FLT.Mazur.WeierstrassDividedArithmeticTerminalCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalIntersection
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalNodeBoundary
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalNodeGeometry
+public import FLT.Mazur.WeierstrassDividedArithmeticTerminalNodeOpen
+public import FLT.Mazur.WeierstrassDividedArithmeticTerminalNodeReduction
+public import FLT.Mazur.WeierstrassDividedArithmeticTerminalPunctureCoverage
+public import FLT.Mazur.WeierstrassDividedArithmeticTerminalPunctureImages
+public import FLT.Mazur.WeierstrassDividedArithmeticTerminalPunctureIso
+public import FLT.Mazur.WeierstrassDividedArithmeticTerminalPunctureParameter
+public import FLT.Mazur.WeierstrassDividedArithmeticTerminalPunctureUnits
 public import FLT.Mazur.WeierstrassDividedAtlasRegularCenter
 public import FLT.Mazur.WeierstrassDividedBoundaryNormalization
 public import FLT.Mazur.WeierstrassDividedBranchChainIntersections
@@ -13051,6 +13066,7 @@ public import FLT.Mazur.WeierstrassSuccessiveAdjacentLaurentSlope
 public import FLT.Mazur.WeierstrassSuccessiveAdjacentSlopeOverlap
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticBoundaryCoverage
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticBranchBoundary
+public import FLT.Mazur.WeierstrassSuccessiveArithmeticLaurentReduction
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticNodeChart
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticNodeCoverage
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticOppositeNodeChart
@@ -13076,6 +13092,7 @@ public import FLT.Mazur.WeierstrassSuccessiveInitialLaurentSlope
 public import FLT.Mazur.WeierstrassSuccessiveLaurentBoundary
 public import FLT.Mazur.WeierstrassSuccessiveLaurentSlopeGeometry
 public import FLT.Mazur.WeierstrassSuccessiveLaurentSlopeLocalization
+public import FLT.Mazur.WeierstrassSuccessiveLaurentSlopeReduction
 public import FLT.Mazur.WeierstrassSuccessiveLocalAction
 public import FLT.Mazur.WeierstrassSuccessiveNilpotentBranch
 public import FLT.Mazur.WeierstrassSuccessiveNilpotentNodeChart
