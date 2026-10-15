@@ -9935,6 +9935,7 @@ public import FLT.Mazur.SmoothCyclicDivisorEquations
 public import FLT.Mazur.SmoothCyclicDivisorSymmetry
 public import FLT.Mazur.SmoothDimension
 public import FLT.Mazur.SmoothDimensionBound
+public import FLT.Mazur.SmoothEnvelopeBoundaryTransport
 public import FLT.Mazur.SmoothEtaleResidueLift
 public import FLT.Mazur.SmoothEtaleSeparableLift
 public import FLT.Mazur.SmoothEtaleStalkLift
