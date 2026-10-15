@@ -12830,6 +12830,7 @@ public import FLT.Mazur.WeierstrassSuccessiveArithmeticNodeChart
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticNodeCoverage
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticOppositeNodeChart
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticRestrictionMaps
+public import FLT.Mazur.WeierstrassSuccessiveArithmeticRestrictionSquare
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticRetractionRestriction
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticSlopeRestriction
 public import FLT.Mazur.WeierstrassSuccessiveCenterAction
