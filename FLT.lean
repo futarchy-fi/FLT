@@ -5129,6 +5129,7 @@ public import FLT.Mazur.GeometricAcyclicPicardLocality
 public import FLT.Mazur.GeometricAcyclicPicardSubfunctor
 public import FLT.Mazur.GeometricAcyclicRankOne
 public import FLT.Mazur.GeometricAcyclicRankOneLocus
+public import FLT.Mazur.GeometricCoefficientAutomorphisms
 public import FLT.Mazur.GeometricFiberSmoothLineParameters
 public import FLT.Mazur.GeometricFixedPointTranslation
 public import FLT.Mazur.GeometricFppfCoverSection
