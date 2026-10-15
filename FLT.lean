@@ -6860,6 +6860,7 @@ public import FLT.Mazur.PolygonActionTranslation
 public import FLT.Mazur.PolygonActionUnit
 public import FLT.Mazur.PolygonAdicQuotientGrading
 public import FLT.Mazur.PolygonArithmeticCompleteBase
+public import FLT.Mazur.PolygonArithmeticCompleteBaseSquare
 public import FLT.Mazur.PolygonArithmeticNodeNeighborhood
 public import FLT.Mazur.PolygonArithmeticNodePoint
 public import FLT.Mazur.PolygonArithmeticNodeTransition
