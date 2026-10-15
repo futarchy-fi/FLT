@@ -11189,6 +11189,7 @@ public import FLT.Mazur.WeierstrassDilatationTangentEquiv
 public import FLT.Mazur.WeierstrassDilatationTangentEvaluation
 public import FLT.Mazur.WeierstrassDilatationTangentInverse
 public import FLT.Mazur.WeierstrassDilatationTangentRootNaturality
+public import FLT.Mazur.WeierstrassDilatationTensorRingHomExt
 public import FLT.Mazur.WeierstrassDilatationTerminalCoordinateNaturality
 public import FLT.Mazur.WeierstrassDilatationTerminalFactorEvaluation
 public import FLT.Mazur.WeierstrassDilatationTerminalFactorReduction
