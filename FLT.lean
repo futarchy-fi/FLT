@@ -4092,6 +4092,7 @@ public import FLT.Mazur.EllipticFiniteRetainedPointEquality
 public import FLT.Mazur.EllipticFiniteRetainedSmoothSpecialization
 public import FLT.Mazur.EllipticFiniteRetainedSpecialization
 public import FLT.Mazur.EllipticFiniteSpecializationEqualityDescent
+public import FLT.Mazur.EllipticFiniteTensorAtlasTransport
 public import FLT.Mazur.EllipticFiniteTensorIndex
 public import FLT.Mazur.EllipticFiniteTerminalLaurentEquality
 public import FLT.Mazur.EllipticFormalAddition
