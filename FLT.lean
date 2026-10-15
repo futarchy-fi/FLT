@@ -7562,6 +7562,7 @@ public import FLT.Mazur.PolygonSinglePointPowerSections
 public import FLT.Mazur.PolygonSinglePointScalarMatching
 public import FLT.Mazur.PolygonSmoothComponentMembership
 public import FLT.Mazur.PolygonSmoothConnectedComponents
+public import FLT.Mazur.PolygonSmoothFiniteAtlas
 public import FLT.Mazur.PolygonSmoothLocus
 public import FLT.Mazur.PolygonSmoothRelativeDimension
 public import FLT.Mazur.PolygonSmoothingBaseChange
