@@ -9801,6 +9801,7 @@ public import FLT.Mazur.TildeInvertibleLocal
 public import FLT.Mazur.TildePrincipalOpen
 public import FLT.Mazur.TildeSourceSectionComparison
 public import FLT.Mazur.TorusChartScalars
+public import FLT.Mazur.TranscendentalAcyclicTranslation
 public import FLT.Mazur.TranscendentalAffineOpenOrbit
 public import FLT.Mazur.TranscendentalCoefficientOrbitAvoidance
 public import FLT.Mazur.TranscendentalResidueMorphismConjugacy
