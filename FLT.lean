@@ -6943,6 +6943,7 @@ public import FLT.Mazur.PolygonArithmeticLayerQuotient
 public import FLT.Mazur.PolygonArithmeticLineCoherence
 public import FLT.Mazur.PolygonArithmeticLineLayers
 public import FLT.Mazur.PolygonArithmeticMarkingNeighborhood
+public import FLT.Mazur.PolygonArithmeticMarkingSpecialization
 public import FLT.Mazur.PolygonArithmeticNodeNeighborhood
 public import FLT.Mazur.PolygonArithmeticNodePoint
 public import FLT.Mazur.PolygonArithmeticNodeTransition
