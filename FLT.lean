@@ -8738,6 +8738,7 @@ public import FLT.Mazur.ProperLocalFiberCover
 public import FLT.Mazur.ProperLocalFixedPoint
 public import FLT.Mazur.ProperNeighborhoodAtlas
 public import FLT.Mazur.ProperNeighborhoodEnvelopeInterior
+public import FLT.Mazur.ProperNeighborhoodFiniteUnion
 public import FLT.Mazur.ProperNeighborhoodGroundInterior
 public import FLT.Mazur.ProperOnlyAmpleFiberNeighborhood
 public import FLT.Mazur.ProperOnlyRelativeAmpleFibers
