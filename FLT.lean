@@ -6894,6 +6894,7 @@ public import FLT.Mazur.PolygonArithmeticCompatibleAlgebra
 public import FLT.Mazur.PolygonArithmeticCompatibleReduction
 public import FLT.Mazur.PolygonArithmeticCompatibleRing
 public import FLT.Mazur.PolygonArithmeticCompatibleScalars
+public import FLT.Mazur.PolygonArithmeticCompatibleZero
 public import FLT.Mazur.PolygonArithmeticCompleteBase
 public import FLT.Mazur.PolygonArithmeticCompleteBaseSquare
 public import FLT.Mazur.PolygonArithmeticDegreeExactness
