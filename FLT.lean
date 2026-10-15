@@ -12447,6 +12447,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXZeroNodeMaps
 public import FLT.Mazur.WeierstrassSuccessiveXZeroNodePunctures
 public import FLT.Mazur.WeierstrassSuccessiveXZeroOverlap
 public import FLT.Mazur.WeierstrassSuccessiveXZeroResidue
+public import FLT.Mazur.WeierstrassSuccessiveXZeroSmoothCover
 public import FLT.Mazur.WeierstrassSuccessiveZeroConicMap
 public import FLT.Mazur.WeierstrassSuccessiveZeroConicShearComparison
 public import FLT.Mazur.WeierstrassSuccessiveZeroConicShearPunctures
