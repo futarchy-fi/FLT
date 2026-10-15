@@ -6447,6 +6447,7 @@ public import FLT.Mazur.NestedOpenCohomologyCoherence
 public import FLT.Mazur.NeutralTwistDirectImage
 public import FLT.Mazur.NilpotentIdealSocle
 public import FLT.Mazur.NilpotentQuadraticRoot
+public import FLT.Mazur.NilpotentQuadraticRootNaturality
 public import FLT.Mazur.NodalFamilyGeometricConnected
 public import FLT.Mazur.NodalFiberAlgebra
 public import FLT.Mazur.NodalFiberBoundedParameterTransport
