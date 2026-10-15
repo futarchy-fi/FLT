@@ -6904,6 +6904,7 @@ public import FLT.Mazur.PolygonArithmeticDegreeProjection
 public import FLT.Mazur.PolygonArithmeticFlatLayer
 public import FLT.Mazur.PolygonArithmeticGradedExactness
 public import FLT.Mazur.PolygonArithmeticGradedParameter
+public import FLT.Mazur.PolygonArithmeticHomogeneousReduction
 public import FLT.Mazur.PolygonArithmeticHomogeneousSections
 public import FLT.Mazur.PolygonArithmeticIntegralDegree
 public import FLT.Mazur.PolygonArithmeticLayerQuotient
