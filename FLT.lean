@@ -2917,6 +2917,7 @@ public import FLT.Mazur.AffineHilbertNestedFiniteEtale
 public import FLT.Mazur.AffineHilbertNestedFiniteKernel
 public import FLT.Mazur.AffineHilbertNestedFiniteModel
 public import FLT.Mazur.AffineHilbertNestedFiniteRelative
+public import FLT.Mazur.AffineHilbertNestedInteriorImage
 public import FLT.Mazur.AffineHilbertNestedKernel
 public import FLT.Mazur.AffineHilbertNestedRestriction
 public import FLT.Mazur.AffineHilbertNoetherianRelation
@@ -2928,8 +2929,11 @@ public import FLT.Mazur.AffineHilbertOriginalOrbitAtlas
 public import FLT.Mazur.AffineHilbertOriginalOrbitModel
 public import FLT.Mazur.AffineHilbertOriginalOrbitOpenModel
 public import FLT.Mazur.AffineHilbertOriginalPrincipalInvariants
+public import FLT.Mazur.AffineHilbertPrincipalAdmissibleTransport
 public import FLT.Mazur.AffineHilbertPrincipalFiniteKernel
 public import FLT.Mazur.AffineHilbertPrincipalFiniteTests
+public import FLT.Mazur.AffineHilbertPrincipalGenericTransport
+public import FLT.Mazur.AffineHilbertPrincipalInvariantSupports
 public import FLT.Mazur.AffineHilbertPrincipalInvariants
 public import FLT.Mazur.AffineHilbertPrincipalTensorModel
 public import FLT.Mazur.AffineHilbertRelationNeighborhoods
@@ -9090,6 +9094,7 @@ public import FLT.Mazur.SchemeRelationOverRestriction
 public import FLT.Mazur.SchemeRelationPrincipalFullInvariants
 public import FLT.Mazur.SchemeRelationPrincipalKernelTests
 public import FLT.Mazur.SchemeRelationPrincipalLocalization
+public import FLT.Mazur.SchemeRelationPrincipalNumerator
 public import FLT.Mazur.SchemeRelationPrincipalSpectrum
 public import FLT.Mazur.SchemeRelationPrincipalTensorSections
 public import FLT.Mazur.SchemeRelationReanchoring
