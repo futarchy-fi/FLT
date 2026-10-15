@@ -5137,6 +5137,7 @@ public import FLT.Mazur.GeneralizedCurveUnrestrictedCubicPresentation
 public import FLT.Mazur.GeneralizedCurveUnrestrictedLocalFamily
 public import FLT.Mazur.GeneralizedCurveUnrestrictedPointFrames
 public import FLT.Mazur.GeneralizedEllipticCurve
+public import FLT.Mazur.GeneratedRelationReductionKernel
 public import FLT.Mazur.GeneratorDenominatorLocalization
 public import FLT.Mazur.GenericConnectedFiberOpen
 public import FLT.Mazur.GenericFibers
