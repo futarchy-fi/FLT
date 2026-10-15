@@ -9715,6 +9715,7 @@ public import FLT.Mazur.SurjectiveTowerLifting
 public import FLT.Mazur.SymmetricAffineLineParameters
 public import FLT.Mazur.TensorAdicSeparation
 public import FLT.Mazur.TensorAlgebraSemilinearEquiv
+public import FLT.Mazur.TensorCoefficientDetection
 public import FLT.Mazur.TensorCoefficientSymmetry
 public import FLT.Mazur.TensorEvaluationSemilinear
 public import FLT.Mazur.TensorInjectivityFiniteLength
