@@ -9240,6 +9240,7 @@ public import FLT.Mazur.RelativeRelationGeneratorSubopens
 public import FLT.Mazur.RelativeRelationInvariantAffineComparison
 public import FLT.Mazur.RelativeRelationInvariantGlobalSections
 public import FLT.Mazur.RelativeRelationInvariantIso
+public import FLT.Mazur.RelativeRelationInvariantLocalization
 public import FLT.Mazur.RelativeRelationInvariantLocallyRinged
 public import FLT.Mazur.RelativeRelationInvariantMap
 public import FLT.Mazur.RelativeRelationInvariantMapOpen
