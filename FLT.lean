@@ -3942,6 +3942,7 @@ public import FLT.Mazur.DirectSumLocalization
 public import FLT.Mazur.DisjointClosedCoproduct
 public import FLT.Mazur.DisjointGenericNeighborhoods
 public import FLT.Mazur.DisjointRestrictionIso
+public import FLT.Mazur.DisjointSectionCoverSplitting
 public import FLT.Mazur.DisjointStructureCohomology
 public import FLT.Mazur.DivisorBaseChangeRank
 public import FLT.Mazur.DivisorCanonicalComposition
