@@ -6871,6 +6871,7 @@ public import FLT.Mazur.PolygonArithmeticBoundaryDivisor
 public import FLT.Mazur.PolygonArithmeticBoundaryLine
 public import FLT.Mazur.PolygonArithmeticCompleteBase
 public import FLT.Mazur.PolygonArithmeticCompleteBaseSquare
+public import FLT.Mazur.PolygonArithmeticLineCoherence
 public import FLT.Mazur.PolygonArithmeticNodeNeighborhood
 public import FLT.Mazur.PolygonArithmeticNodePoint
 public import FLT.Mazur.PolygonArithmeticNodeTransition
