@@ -2932,6 +2932,7 @@ public import FLT.Mazur.AffineHilbertOriginalPrincipalInvariants
 public import FLT.Mazur.AffineHilbertPrincipalAdmissibleTransport
 public import FLT.Mazur.AffineHilbertPrincipalFiniteKernel
 public import FLT.Mazur.AffineHilbertPrincipalFiniteTests
+public import FLT.Mazur.AffineHilbertPrincipalGenericTransport
 public import FLT.Mazur.AffineHilbertPrincipalInvariantSupports
 public import FLT.Mazur.AffineHilbertPrincipalInvariants
 public import FLT.Mazur.AffineHilbertPrincipalTensorModel
