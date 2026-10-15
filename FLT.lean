@@ -8069,6 +8069,7 @@ public import FLT.Mazur.PolygonSmoothingCotangentFaithfulDescent
 public import FLT.Mazur.PolygonSmoothingCotangentFieldRank
 public import FLT.Mazur.PolygonSmoothingCotangentRelationSequence
 public import FLT.Mazur.PolygonSmoothingDerivation
+public import FLT.Mazur.PolygonSmoothingDifferenceIdeal
 public import FLT.Mazur.PolygonSmoothingFirstCotangent
 public import FLT.Mazur.PolygonSmoothingFirstCotangentBaseChange
 public import FLT.Mazur.PolygonSmoothingFlat
