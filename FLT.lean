@@ -6891,6 +6891,7 @@ public import FLT.Mazur.OverPullbackSectionMonoidal
 public import FLT.Mazur.PadicValuationArithmetic
 public import FLT.Mazur.PadicValuationRing
 public import FLT.Mazur.PartialEnvelopeFullFiber
+public import FLT.Mazur.PartialFiniteTranslationInterior
 public import FLT.Mazur.PartialProperEnvelopeInterior
 public import FLT.Mazur.PartialTranslationNormSupport
 public import FLT.Mazur.PicardDegreeFieldBaseChange
