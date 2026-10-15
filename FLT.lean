@@ -7598,6 +7598,7 @@ public import FLT.Mazur.PolygonOneGonContractionMarking
 public import FLT.Mazur.PolygonOneGonContractionMarkingLine
 public import FLT.Mazur.PolygonOneGonContractionMarkingSection
 public import FLT.Mazur.PolygonOneGonContractionNormalizationLine
+public import FLT.Mazur.PolygonOneGonContractionOriginalCoordinates
 public import FLT.Mazur.PolygonOneGonContractionReflectionLine
 public import FLT.Mazur.PolygonOneGonContractionReflectionPower
 public import FLT.Mazur.PolygonOneGonContractionRotationLine
@@ -7651,6 +7652,7 @@ public import FLT.Mazur.PolygonParameterTranslationOriginal
 public import FLT.Mazur.PolygonParameterizedHomExt
 public import FLT.Mazur.PolygonPinchingAdjustedClosedComparison
 public import FLT.Mazur.PolygonPinchingAffineBaseChange
+public import FLT.Mazur.PolygonPinchingClosedCubicMap
 public import FLT.Mazur.PolygonPinchingCompleteClosedComparison
 public import FLT.Mazur.PolygonPinchingCompleteCubicContraction
 public import FLT.Mazur.PolygonPinchingCompleteIdentityCharts
@@ -8142,6 +8144,7 @@ public import FLT.Mazur.ProjectiveCoherentCharts
 public import FLT.Mazur.ProjectiveCoherentCohomology
 public import FLT.Mazur.ProjectiveCoordinateGeneratorOpen
 public import FLT.Mazur.ProjectiveCoordinateSections
+public import FLT.Mazur.ProjectiveCycleConstantPropagation
 public import FLT.Mazur.ProjectiveFiniteAffineNeighborhood
 public import FLT.Mazur.ProjectiveFiniteAvoidance
 public import FLT.Mazur.ProjectiveFiniteSeparation
@@ -10748,6 +10751,7 @@ public import FLT.Mazur.WeierstrassDividedCoefficientShearSchemes
 public import FLT.Mazur.WeierstrassDividedCoefficientSmoothLocus
 public import FLT.Mazur.WeierstrassDividedCoefficientSmoothRecovery
 public import FLT.Mazur.WeierstrassDividedCoefficientSymmetry
+public import FLT.Mazur.WeierstrassDividedCompleteClosedCubicCompatibility
 public import FLT.Mazur.WeierstrassDividedCompleteResidueNormalization
 public import FLT.Mazur.WeierstrassDividedComponentPairCoverage
 public import FLT.Mazur.WeierstrassDividedConicBoundaryAllDepths
@@ -10769,8 +10773,11 @@ public import FLT.Mazur.WeierstrassDividedDepthYBoundary
 public import FLT.Mazur.WeierstrassDividedEarlierTerminalSeparation
 public import FLT.Mazur.WeierstrassDividedEqualityComponentContraction
 public import FLT.Mazur.WeierstrassDividedEqualityComponentEndpoints
+public import FLT.Mazur.WeierstrassDividedEqualityCycleCommonNode
+public import FLT.Mazur.WeierstrassDividedEqualityCycleConstancy
 public import FLT.Mazur.WeierstrassDividedEqualityCycleTerminalDescent
 public import FLT.Mazur.WeierstrassDividedEqualityFullNodeDescent
+public import FLT.Mazur.WeierstrassDividedEqualityGeometricContraction
 public import FLT.Mazur.WeierstrassDividedEqualityInitialEndpoints
 public import FLT.Mazur.WeierstrassDividedEqualityInitialExterior
 public import FLT.Mazur.WeierstrassDividedEqualityNodeFamily
@@ -11316,6 +11323,9 @@ public import FLT.Mazur.WeierstrassDividedSmoothSuccessiveIntegralAction
 public import FLT.Mazur.WeierstrassDividedSmoothSuccessiveResidueAction
 public import FLT.Mazur.WeierstrassDividedSmoothTerminalCoefficientAction
 public import FLT.Mazur.WeierstrassDividedSmoothTerminalIntegralAction
+public import FLT.Mazur.WeierstrassDividedSplitCycleCommonNode
+public import FLT.Mazur.WeierstrassDividedSplitCycleConstancy
+public import FLT.Mazur.WeierstrassDividedSplitGeometricContraction
 public import FLT.Mazur.WeierstrassDividedSplitNormalizationComparison
 public import FLT.Mazur.WeierstrassDividedSuccessiveOriginalY
 public import FLT.Mazur.WeierstrassDividedSuccessorActionAtlas
