@@ -6918,6 +6918,7 @@ public import FLT.Mazur.PolygonArithmeticResidueLifting
 public import FLT.Mazur.PolygonArithmeticResidueLine
 public import FLT.Mazur.PolygonArithmeticResidueNilpotence
 public import FLT.Mazur.PolygonArithmeticRestrictionKernel
+public import FLT.Mazur.PolygonArithmeticScalarExactness
 public import FLT.Mazur.PolygonArithmeticSectionFunctor
 public import FLT.Mazur.PolygonArithmeticSectionRings
 public import FLT.Mazur.PolygonArithmeticStageCoefficients
