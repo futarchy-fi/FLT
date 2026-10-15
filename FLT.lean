@@ -13082,6 +13082,7 @@ public import FLT.Mazur.WeierstrassSuccessiveAdjacentLaurentSlope
 public import FLT.Mazur.WeierstrassSuccessiveAdjacentSlopeOverlap
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticBoundaryCoverage
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticBranchBoundary
+public import FLT.Mazur.WeierstrassSuccessiveArithmeticBranchRestriction
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticLaurentReduction
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticNodeChart
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticNodeCoverage
