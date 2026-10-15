@@ -3183,6 +3183,7 @@ public import FLT.Mazur.AffineTripleOverlapRefinementSquares
 public import FLT.Mazur.AffineTripleUnitCoefficients
 public import FLT.Mazur.AffineTrivialLineSectionOpen
 public import FLT.Mazur.AlgebraicClosureEmbeddingConjugacy
+public import FLT.Mazur.AlgebraicPicardFiniteDescent
 public import FLT.Mazur.AlgebraicPointFiniteDescent
 public import FLT.Mazur.AllAffineAmbientCharts
 public import FLT.Mazur.AllSectionsHilbertGrassmannianImmersion
