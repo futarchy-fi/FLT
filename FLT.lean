@@ -7077,6 +7077,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstActionSubalgebra
 public import FLT.Mazur.PolygonCompleteIdentityFirstBoundary
 public import FLT.Mazur.PolygonCompleteIdentityFirstCoordinateDescent
 public import FLT.Mazur.PolygonCompleteIdentityFirstCorrection
+public import FLT.Mazur.PolygonCompleteIdentityFirstDefectProduct
 public import FLT.Mazur.PolygonCompleteIdentityFirstLinearization
 public import FLT.Mazur.PolygonCompleteIdentityFirstNodeBoundary
 public import FLT.Mazur.PolygonCompleteIdentityFirstNodeObstruction
