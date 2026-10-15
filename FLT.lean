@@ -6914,6 +6914,7 @@ public import FLT.Mazur.PolygonArithmeticResidueCoefficients
 public import FLT.Mazur.PolygonArithmeticResidueFiber
 public import FLT.Mazur.PolygonArithmeticResidueIdeal
 public import FLT.Mazur.PolygonArithmeticResidueKernel
+public import FLT.Mazur.PolygonArithmeticResidueLifting
 public import FLT.Mazur.PolygonArithmeticResidueLine
 public import FLT.Mazur.PolygonArithmeticResidueNilpotence
 public import FLT.Mazur.PolygonArithmeticRestrictionKernel
