@@ -7515,6 +7515,7 @@ public import FLT.Mazur.PolygonParameterizedHomExt
 public import FLT.Mazur.PolygonPinchingAffineBaseChange
 public import FLT.Mazur.PolygonPinchingCompleteClosedComparison
 public import FLT.Mazur.PolygonPinchingCompleteCubicContraction
+public import FLT.Mazur.PolygonPinchingCompleteIdentityCharts
 public import FLT.Mazur.PolygonPinchingDiagram
 public import FLT.Mazur.PolygonPinchingFlatBaseChange
 public import FLT.Mazur.PolygonPinchingTensor
