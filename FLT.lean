@@ -6705,6 +6705,7 @@ public import FLT.Mazur.OrderedCurveDivisorPullback
 public import FLT.Mazur.OrderedCurveDivisorRank
 public import FLT.Mazur.OrderedCurvePermutation
 public import FLT.Mazur.OrderedCurvePower
+public import FLT.Mazur.OrderedCurvePowerIrreducible
 public import FLT.Mazur.OrderedCurvePowerSmooth
 public import FLT.Mazur.OrderedCurvePowerSuccessor
 public import FLT.Mazur.OrderedDivisorLineSpecialization
