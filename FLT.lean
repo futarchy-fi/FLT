@@ -2492,6 +2492,7 @@ public import FLT.Mazur.AcyclicCoefficientCohomology
 public import FLT.Mazur.AcyclicDegreeFiniteFiberSpread
 public import FLT.Mazur.AcyclicDegreeFixedBaseChange
 public import FLT.Mazur.AcyclicDegreeGeometricSpread
+public import FLT.Mazur.AcyclicDegreeOpenAutomorphism
 public import FLT.Mazur.AcyclicDegreePicardRepresentation
 public import FLT.Mazur.AcyclicDegreeSectionCoverDetection
 public import FLT.Mazur.AcyclicDirectImageResolution
@@ -3181,7 +3182,11 @@ public import FLT.Mazur.AffineTripleOverlapRefinement
 public import FLT.Mazur.AffineTripleOverlapRefinementSquares
 public import FLT.Mazur.AffineTripleUnitCoefficients
 public import FLT.Mazur.AffineTrivialLineSectionOpen
+public import FLT.Mazur.AlgebraicAcyclicOrbitTranslation
 public import FLT.Mazur.AlgebraicClosureEmbeddingConjugacy
+public import FLT.Mazur.AlgebraicOrderedAllLiftTranslation
+public import FLT.Mazur.AlgebraicPicardFiniteDescent
+public import FLT.Mazur.AlgebraicPointFiniteDescent
 public import FLT.Mazur.AllAffineAmbientCharts
 public import FLT.Mazur.AllSectionsHilbertGrassmannianImmersion
 public import FLT.Mazur.AmbientHilbertChartFamilyPullback
@@ -4670,6 +4675,7 @@ public import FLT.Mazur.FiniteCoefficientDifferenceIdeal
 public import FLT.Mazur.FiniteCoefficientJoin
 public import FLT.Mazur.FiniteCoefficientKernelSubalgebra
 public import FLT.Mazur.FiniteCoefficientProperties
+public import FLT.Mazur.FiniteCoefficientRestriction
 public import FLT.Mazur.FiniteCohomologyFreeNeighborhood
 public import FLT.Mazur.FiniteCommonPrincipalCover
 public import FLT.Mazur.FiniteCompactOpenAffineLimit
@@ -5126,6 +5132,7 @@ public import FLT.Mazur.GenusOneGroupProjectivePoint
 public import FLT.Mazur.GenusOneGroupWeierstrassEquation
 public import FLT.Mazur.GenusOneNonspecialPoint
 public import FLT.Mazur.GeometricAcyclicEtaleTranslation
+public import FLT.Mazur.GeometricAcyclicFiniteDescent
 public import FLT.Mazur.GeometricAcyclicFppfLocus
 public import FLT.Mazur.GeometricAcyclicOrbitTranslation
 public import FLT.Mazur.GeometricAcyclicPicardLocality
@@ -6705,6 +6712,7 @@ public import FLT.Mazur.OrderedCurveDivisorPullback
 public import FLT.Mazur.OrderedCurveDivisorRank
 public import FLT.Mazur.OrderedCurvePermutation
 public import FLT.Mazur.OrderedCurvePower
+public import FLT.Mazur.OrderedCurvePowerIrreducible
 public import FLT.Mazur.OrderedCurvePowerSmooth
 public import FLT.Mazur.OrderedCurvePowerSuccessor
 public import FLT.Mazur.OrderedDivisorLineSpecialization
@@ -6784,11 +6792,14 @@ public import FLT.Mazur.OrderedTranslationEtaleSeparableLift
 public import FLT.Mazur.OrderedTranslationLocallyRingedMap
 public import FLT.Mazur.OrderedTranslationOriginalFiber
 public import FLT.Mazur.OrderedTranslationQuotientCover
+public import FLT.Mazur.OriginalAlgebraicPointDescent
 public import FLT.Mazur.OriginalFamilyIdentityComparison
 public import FLT.Mazur.OriginalFamilySectionComposition
 public import FLT.Mazur.OriginalFamilySquareComposition
 public import FLT.Mazur.OriginalFamilyTwistComparison
 public import FLT.Mazur.OriginalFamilyTwistComposition
+public import FLT.Mazur.OriginalFiberFiniteSectionOrbit
+public import FLT.Mazur.OriginalFiniteCoefficientOrbit
 public import FLT.Mazur.OriginalHilbertFiniteType
 public import FLT.Mazur.OriginalInvariantOpenAllEtaleLifts
 public import FLT.Mazur.OriginalRestrictedHilbertIntersection
