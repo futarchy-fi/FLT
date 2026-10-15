@@ -6970,6 +6970,7 @@ public import FLT.Mazur.PolygonArithmeticHomogeneousSections
 public import FLT.Mazur.PolygonArithmeticIntegralDegree
 public import FLT.Mazur.PolygonArithmeticLayerQuotient
 public import FLT.Mazur.PolygonArithmeticLineCoherence
+public import FLT.Mazur.PolygonArithmeticLineHomExt
 public import FLT.Mazur.PolygonArithmeticLineLayers
 public import FLT.Mazur.PolygonArithmeticLineOriginalReduction
 public import FLT.Mazur.PolygonArithmeticLineSectionReconstruction
