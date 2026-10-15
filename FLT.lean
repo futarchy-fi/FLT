@@ -4618,6 +4618,7 @@ public import FLT.Mazur.EnvelopeBoundaryTestLift
 public import FLT.Mazur.EnvelopeInteriorFiniteAffineCover
 public import FLT.Mazur.EnvelopeInteriorUnitIdealLift
 public import FLT.Mazur.EnvelopeVerticalGenerizations
+public import FLT.Mazur.EqualizerDenominatorClearing
 public import FLT.Mazur.EquifiberedGluingBaseChange
 public import FLT.Mazur.EquifiberedSchemeGluing
 public import FLT.Mazur.EtaleAffineSpaceDimension
