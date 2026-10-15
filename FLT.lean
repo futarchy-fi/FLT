@@ -10347,6 +10347,7 @@ public import FLT.Mazur.ValuationRingCompleteModel
 public import FLT.Mazur.ValuationRingHenselianModel
 public import FLT.Mazur.ValuationRingModel
 public import FLT.Mazur.ValuativeEnvelopeInterior
+public import FLT.Mazur.ValuativePullbackSquare
 public import FLT.Mazur.VariableHilbertAcyclicLift
 public import FLT.Mazur.VariableHilbertAcyclicLiftCriterion
 public import FLT.Mazur.VariableHilbertAffineEnvelope
