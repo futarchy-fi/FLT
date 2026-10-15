@@ -7331,6 +7331,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstActionSubalgebra
 public import FLT.Mazur.PolygonCompleteIdentityFirstBoundary
 public import FLT.Mazur.PolygonCompleteIdentityFirstBranchOriginal
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartAmbientErrors
+public import FLT.Mazur.PolygonCompleteIdentityFirstChartAmbientGenerators
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartAmbientSocle
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartAmbientSource
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartAmbientTarget
