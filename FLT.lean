@@ -3298,6 +3298,7 @@ public import FLT.Mazur.ArtinianProperAffineBaseChange
 public import FLT.Mazur.ArtinianProperRelativeFunctions
 public import FLT.Mazur.ArtinianProperStructureSheaf
 public import FLT.Mazur.ArtinianRelativeSectionCriterion
+public import FLT.Mazur.ArtinianResidualNonaccumulation
 public import FLT.Mazur.ArtinianSectionKernel
 public import FLT.Mazur.AuxiliaryBaseProjectionParameter
 public import FLT.Mazur.AuxiliaryCartesianGroupParameter
