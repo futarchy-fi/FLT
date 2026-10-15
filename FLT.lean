@@ -6964,6 +6964,7 @@ public import FLT.Mazur.PolygonArithmeticScalarExactness
 public import FLT.Mazur.PolygonArithmeticSectionAnnihilator
 public import FLT.Mazur.PolygonArithmeticSectionFunctor
 public import FLT.Mazur.PolygonArithmeticSectionRings
+public import FLT.Mazur.PolygonArithmeticStageCanonicalMap
 public import FLT.Mazur.PolygonArithmeticStageCoefficients
 public import FLT.Mazur.PolygonArithmeticStageConstants
 public import FLT.Mazur.PolygonArithmeticStageFamilies
