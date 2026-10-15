@@ -7475,6 +7475,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstPowerDescent
 public import FLT.Mazur.PolygonCompleteIdentityFirstPrincipalCoordinates
 public import FLT.Mazur.PolygonCompleteIdentityFirstPrincipalObstruction
 public import FLT.Mazur.PolygonCompleteIdentityFirstRefinedEquations
+public import FLT.Mazur.PolygonCompleteIdentityFirstRefinedErrorCriterion
 public import FLT.Mazur.PolygonCompleteIdentityFirstRefinedSmoothing
 public import FLT.Mazur.PolygonCompleteIdentityFlatOpenLift
 public import FLT.Mazur.PolygonCompleteIdentityGenericAmbient
