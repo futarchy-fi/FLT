@@ -8791,7 +8791,9 @@ public import FLT.Mazur.PushforwardCech
 public import FLT.Mazur.PushoutModuleScalars
 public import FLT.Mazur.QuadraticComponentBound
 public import FLT.Mazur.QuadraticRootBranchChart
+public import FLT.Mazur.QuadraticRootBranchCoverage
 public import FLT.Mazur.QuadraticRootBranchLocalization
+public import FLT.Mazur.QuadraticRootOppositeBranch
 public import FLT.Mazur.QuasiCoherentAffineBasePullback
 public import FLT.Mazur.QuasiCoherentSchemePullback
 public import FLT.Mazur.QuasiCompactGenericFlatOpen
@@ -11053,6 +11055,7 @@ public import FLT.Mazur.WeierstrassDividedAdjacentZeroSectionSeparation
 public import FLT.Mazur.WeierstrassDividedArithmeticCoordinateTransition
 public import FLT.Mazur.WeierstrassDividedArithmeticCoordinates
 public import FLT.Mazur.WeierstrassDividedArithmeticNodeOpen
+public import FLT.Mazur.WeierstrassDividedArithmeticOppositeNodeOpen
 public import FLT.Mazur.WeierstrassDividedAtlasRegularCenter
 public import FLT.Mazur.WeierstrassDividedBoundaryNormalization
 public import FLT.Mazur.WeierstrassDividedBranchChainIntersections
@@ -12736,6 +12739,7 @@ public import FLT.Mazur.WeierstrassSpecSections
 public import FLT.Mazur.WeierstrassSpecializationGroup
 public import FLT.Mazur.WeierstrassSplitCompleteNormalization
 public import FLT.Mazur.WeierstrassSplitDepthAffineParameters
+public import FLT.Mazur.WeierstrassSplitDepthArithmeticNodeOpen
 public import FLT.Mazur.WeierstrassSplitDepthConormal
 public import FLT.Mazur.WeierstrassSplitDepthExceptionalBranches
 public import FLT.Mazur.WeierstrassSplitDepthExceptionalCharacters
@@ -12802,6 +12806,7 @@ public import FLT.Mazur.WeierstrassSplitNormalizationInfinity
 public import FLT.Mazur.WeierstrassSplitNormalizationInfinityParameter
 public import FLT.Mazur.WeierstrassSquareZeroTorsionRigidity
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticNodeChart
+public import FLT.Mazur.WeierstrassSuccessiveArithmeticOppositeNodeChart
 public import FLT.Mazur.WeierstrassSuccessiveCenterAction
 public import FLT.Mazur.WeierstrassSuccessiveCenterScaling
 public import FLT.Mazur.WeierstrassSuccessiveCoefficientShear
@@ -12815,6 +12820,8 @@ public import FLT.Mazur.WeierstrassSuccessiveInfinityCenter
 public import FLT.Mazur.WeierstrassSuccessiveLocalAction
 public import FLT.Mazur.WeierstrassSuccessiveNilpotentBranch
 public import FLT.Mazur.WeierstrassSuccessiveNilpotentNodeChart
+public import FLT.Mazur.WeierstrassSuccessiveNodeChartCoverage
+public import FLT.Mazur.WeierstrassSuccessiveOppositeNodeChart
 public import FLT.Mazur.WeierstrassSuccessiveOriginalOpen
 public import FLT.Mazur.WeierstrassSuccessiveReesCoordinates
 public import FLT.Mazur.WeierstrassSuccessiveReesCover
@@ -12887,6 +12894,7 @@ public import FLT.Mazur.WeierstrassSuccessiveShearTerminalZeroBoundaryGeometry
 public import FLT.Mazur.WeierstrassSuccessiveShearTerminalZeroConicBranches
 public import FLT.Mazur.WeierstrassSuccessiveShearTerminalZeroConicCoordinates
 public import FLT.Mazur.WeierstrassSuccessiveShearTerminalZeroNodeConic
+public import FLT.Mazur.WeierstrassSuccessiveSimpleSlopeChart
 public import FLT.Mazur.WeierstrassSuccessiveXAlgebra
 public import FLT.Mazur.WeierstrassSuccessiveXBaseChange
 public import FLT.Mazur.WeierstrassSuccessiveXBaseChangeCoordinates
