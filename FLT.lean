@@ -6973,6 +6973,7 @@ public import FLT.Mazur.PolygonArithmeticStageRestriction
 public import FLT.Mazur.PolygonArithmeticStageVanishing
 public import FLT.Mazur.PolygonArithmeticSystem
 public import FLT.Mazur.PolygonArithmeticTensorQuotient
+public import FLT.Mazur.PolygonArithmeticTensorReduction
 public import FLT.Mazur.PolygonArithmeticTowerAssembly
 public import FLT.Mazur.PolygonArithmeticTowerDivision
 public import FLT.Mazur.PolygonArithmeticUniformLifting
