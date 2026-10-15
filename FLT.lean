@@ -10140,6 +10140,7 @@ public import FLT.Mazur.VariableHilbertFixedBaseRelation
 public import FLT.Mazur.VariableHilbertFppfQuotient
 public import FLT.Mazur.VariableHilbertGeometricOrbitRetention
 public import FLT.Mazur.VariableHilbertGroundBaseCartesian
+public import FLT.Mazur.VariableHilbertGroundQuotientOpen
 public import FLT.Mazur.VariableHilbertIntersectionBaseChange
 public import FLT.Mazur.VariableHilbertInvariantFunctionDescent
 public import FLT.Mazur.VariableHilbertInvariantOpenDescent
