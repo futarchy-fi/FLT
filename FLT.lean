@@ -5888,6 +5888,7 @@ public import FLT.Mazur.KernelPairSourceBranchCriterion
 public import FLT.Mazur.KernelPairTestIso
 public import FLT.Mazur.KernelPairUnramifiedInverse
 public import FLT.Mazur.LargeDegreeRelativeLineSections
+public import FLT.Mazur.LaurentBoundaryVectorField
 public import FLT.Mazur.LaurentCocycleCoefficientRecovery
 public import FLT.Mazur.LaurentCoefficientDivisibility
 public import FLT.Mazur.LaurentCoefficientEvaluation
