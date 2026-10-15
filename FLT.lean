@@ -12590,6 +12590,7 @@ public import FLT.Mazur.WeierstrassModificationXLaurentNodeDenominator
 public import FLT.Mazur.WeierstrassModificationXLaurentNodeParameter
 public import FLT.Mazur.WeierstrassModificationXLaurentNodeRestriction
 public import FLT.Mazur.WeierstrassModificationXLaurentRoot
+public import FLT.Mazur.WeierstrassModificationXLaurentStandardPuncture
 public import FLT.Mazur.WeierstrassModificationXLocalization
 public import FLT.Mazur.WeierstrassModificationXMorphism
 public import FLT.Mazur.WeierstrassModificationXNodeDenominators
