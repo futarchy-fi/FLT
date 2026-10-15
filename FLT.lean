@@ -6014,6 +6014,7 @@ public import FLT.Mazur.LaurentDomainUnits
 public import FLT.Mazur.LaurentFirstOrderAutomorphism
 public import FLT.Mazur.LaurentFirstParameterSubstitution
 public import FLT.Mazur.LaurentFirstStageParameter
+public import FLT.Mazur.LaurentFirstStageParameterEquiv
 public import FLT.Mazur.LaurentIdentityIdeal
 public import FLT.Mazur.LaurentLineActionDensity
 public import FLT.Mazur.LaurentLineActionEvaluation
