@@ -6914,6 +6914,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFiniteCoordinates
 public import FLT.Mazur.PolygonCompleteIdentityFiniteLawComparison
 public import FLT.Mazur.PolygonCompleteIdentityFiniteLawCriterion
 public import FLT.Mazur.PolygonCompleteIdentityFinitePair
+public import FLT.Mazur.PolygonCompleteIdentityFiniteReduction
 public import FLT.Mazur.PolygonCompleteIdentityFiniteRotatedEdges
 public import FLT.Mazur.PolygonCompleteIdentityFiniteScaling
 public import FLT.Mazur.PolygonCompleteIdentityFiniteUnitEvaluation
