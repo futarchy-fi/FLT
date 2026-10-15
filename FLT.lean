@@ -3006,6 +3006,7 @@ public import FLT.Mazur.AffineHilbertUnramifiedSplitOrbits
 public import FLT.Mazur.AffineIdealContainment
 public import FLT.Mazur.AffineIdealCoordinates
 public import FLT.Mazur.AffineIdealPowerExtension
+public import FLT.Mazur.AffineIdealPowerPullback
 public import FLT.Mazur.AffineIdealSheafComparison
 public import FLT.Mazur.AffineIdealSheafCoverComparison
 public import FLT.Mazur.AffineImageSectionTransport
