@@ -3074,6 +3074,7 @@ public import FLT.Mazur.AffinePicardSections
 public import FLT.Mazur.AffinePieceSectionLocalization
 public import FLT.Mazur.AffinePreimageRestrictionPushout
 public import FLT.Mazur.AffinePrincipalComparisonIso
+public import FLT.Mazur.AffinePrincipalKernel
 public import FLT.Mazur.AffineProductMap
 public import FLT.Mazur.AffineProductNormFiber
 public import FLT.Mazur.AffineProductTensorCoordinates
@@ -5909,6 +5910,7 @@ public import FLT.Mazur.IdealTwistSectionOpen
 public import FLT.Mazur.IdealTwistTransitionExact
 public import FLT.Mazur.IdealWitnessSupportInduction
 public import FLT.Mazur.ImmersedProperCoverBaseChange
+public import FLT.Mazur.ImmersionAffineLifts
 public import FLT.Mazur.IncreasingCechAffineGeneric
 public import FLT.Mazur.IncreasingCechBaseComplex
 public import FLT.Mazur.IncreasingCechBaseCycles
@@ -7312,6 +7314,7 @@ public import FLT.Mazur.PolygonCompleteFlatContractionExt
 public import FLT.Mazur.PolygonCompleteGenericChartCompatibility
 public import FLT.Mazur.PolygonCompleteGenericChartEvaluation
 public import FLT.Mazur.PolygonCompleteGenericChartOperations
+public import FLT.Mazur.PolygonCompleteGenericContractionExt
 public import FLT.Mazur.PolygonCompleteGenericGenus
 public import FLT.Mazur.PolygonCompleteGenericH1
 public import FLT.Mazur.PolygonCompleteGenericMapIdentity
@@ -7341,6 +7344,7 @@ public import FLT.Mazur.PolygonCompleteIdentityActionSource
 public import FLT.Mazur.PolygonCompleteIdentityActionTarget
 public import FLT.Mazur.PolygonCompleteIdentityActionUnchangedLift
 public import FLT.Mazur.PolygonCompleteIdentityAdicAmbientImmersion
+public import FLT.Mazur.PolygonCompleteIdentityAdicAmbientLifts
 public import FLT.Mazur.PolygonCompleteIdentityChartAtlas
 public import FLT.Mazur.PolygonCompleteIdentityChartOperations
 public import FLT.Mazur.PolygonCompleteIdentityFiniteAlgebra
@@ -7391,6 +7395,8 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstChartScalars
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartSocleKernel
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartSourceFunctions
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartTargetScalars
+public import FLT.Mazur.PolygonCompleteIdentityFirstCompleteEquations
+public import FLT.Mazur.PolygonCompleteIdentityFirstCompleteErrors
 public import FLT.Mazur.PolygonCompleteIdentityFirstCoordinateDescent
 public import FLT.Mazur.PolygonCompleteIdentityFirstCorrection
 public import FLT.Mazur.PolygonCompleteIdentityFirstDefectDerivation
@@ -7438,6 +7444,9 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstPowerDescent
 public import FLT.Mazur.PolygonCompleteIdentityFirstPrincipalCoordinates
 public import FLT.Mazur.PolygonCompleteIdentityFirstPrincipalObstruction
 public import FLT.Mazur.PolygonCompleteIdentityFlatOpenLift
+public import FLT.Mazur.PolygonCompleteIdentityGenericAmbient
+public import FLT.Mazur.PolygonCompleteIdentityGenericAmbientIso
+public import FLT.Mazur.PolygonCompleteIdentityGenericAmbientKernel
 public import FLT.Mazur.PolygonCompleteIdentityGraphAdicAlgebra
 public import FLT.Mazur.PolygonCompleteIdentityGraphAdicChart
 public import FLT.Mazur.PolygonCompleteIdentityGraphAdicChartCoordinates
@@ -7461,6 +7470,7 @@ public import FLT.Mazur.PolygonCompleteIdentityGraphFlatExt
 public import FLT.Mazur.PolygonCompleteIdentityGraphGenericEquations
 public import FLT.Mazur.PolygonCompleteIdentityGraphIncomingCartesian
 public import FLT.Mazur.PolygonCompleteIdentityGraphIncomingChart
+public import FLT.Mazur.PolygonCompleteIdentityGraphParameterTorsion
 public import FLT.Mazur.PolygonCompleteIdentityGraphRotatedEdge
 public import FLT.Mazur.PolygonCompleteIdentityGraphRotatedEdgeCartesian
 public import FLT.Mazur.PolygonCompleteIdentityGraphScalarEquations
@@ -8246,6 +8256,7 @@ public import FLT.Mazur.PowerCohomologyShift
 public import FLT.Mazur.PowerScalarSectionCoordinates
 public import FLT.Mazur.PowerSeriesArithmeticCompletion
 public import FLT.Mazur.PowerSeriesCoefficientTransport
+public import FLT.Mazur.PowerSeriesFractionGenericOpen
 public import FLT.Mazur.PowerSeriesLaurentGenericOpen
 public import FLT.Mazur.PowerSeriesLeadingComposition
 public import FLT.Mazur.PowerSeriesNilpotentHom
