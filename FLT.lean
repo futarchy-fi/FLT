@@ -3977,6 +3977,7 @@ public import FLT.Mazur.DenseGroundHilbertFullInterior
 public import FLT.Mazur.DenseGroundHilbertPrincipal
 public import FLT.Mazur.DenseGroundResidualSupport
 public import FLT.Mazur.DerivationAlgEquivTransport
+public import FLT.Mazur.DifferenceNodeAlgebra
 public import FLT.Mazur.DirectImageBaseChangeAdjoints
 public import FLT.Mazur.DirectImageBaseChangeMate
 public import FLT.Mazur.DirectImageBaseChangeNormalizedPasting
