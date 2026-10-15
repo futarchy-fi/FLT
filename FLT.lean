@@ -6886,6 +6886,7 @@ public import FLT.Mazur.PolygonCompleteChartOverlapField
 public import FLT.Mazur.PolygonCompleteClassifiedFibers
 public import FLT.Mazur.PolygonCompleteClosedActionRotation
 public import FLT.Mazur.PolygonCompleteClosedCartierGenerator
+public import FLT.Mazur.PolygonCompleteClosedChartComparison
 public import FLT.Mazur.PolygonCompleteClosedCyclicAction
 public import FLT.Mazur.PolygonCompleteClosedCyclicGroup
 public import FLT.Mazur.PolygonCompleteClosedFiber
