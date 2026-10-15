@@ -3135,6 +3135,7 @@ public import FLT.Mazur.AffineSectionNormFiber
 public import FLT.Mazur.AffineSectionResidueEquation
 public import FLT.Mazur.AffineSectionTensorSquare
 public import FLT.Mazur.AffineSectionsReconstruction
+public import FLT.Mazur.AffineSeparatedPullbackGenerators
 public import FLT.Mazur.AffineSmoothEtaleCoordinates
 public import FLT.Mazur.AffineSmoothFiniteFlatCartier
 public import FLT.Mazur.AffineSourcePullbackSections
@@ -5143,6 +5144,7 @@ public import FLT.Mazur.GeneralizedCurveUnrestrictedCubicPresentation
 public import FLT.Mazur.GeneralizedCurveUnrestrictedLocalFamily
 public import FLT.Mazur.GeneralizedCurveUnrestrictedPointFrames
 public import FLT.Mazur.GeneralizedEllipticCurve
+public import FLT.Mazur.GeneratedRelationReductionKernel
 public import FLT.Mazur.GeneratorDenominatorLocalization
 public import FLT.Mazur.GenericConnectedFiberOpen
 public import FLT.Mazur.GenericFibers
@@ -7336,9 +7338,15 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstActionParameter
 public import FLT.Mazur.PolygonCompleteIdentityFirstActionSubalgebra
 public import FLT.Mazur.PolygonCompleteIdentityFirstBoundary
 public import FLT.Mazur.PolygonCompleteIdentityFirstBranchOriginal
+public import FLT.Mazur.PolygonCompleteIdentityFirstChartAmbientErrors
+public import FLT.Mazur.PolygonCompleteIdentityFirstChartAmbientGenerators
+public import FLT.Mazur.PolygonCompleteIdentityFirstChartAmbientSocle
+public import FLT.Mazur.PolygonCompleteIdentityFirstChartAmbientSource
+public import FLT.Mazur.PolygonCompleteIdentityFirstChartAmbientTarget
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartBranchImage
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartBranchQuotient
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartClosedLayer
+public import FLT.Mazur.PolygonCompleteIdentityFirstChartClosedPresentation
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartClosedSplit
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartFiberSocle
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartKernelPowers
@@ -7346,9 +7354,14 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstChartNodeSocle
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartParameterLayer
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartPunctureOpens
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartPunctures
+public import FLT.Mazur.PolygonCompleteIdentityFirstChartResidualCoordinates
+public import FLT.Mazur.PolygonCompleteIdentityFirstChartResidualGenerators
+public import FLT.Mazur.PolygonCompleteIdentityFirstChartResidualNormalForm
+public import FLT.Mazur.PolygonCompleteIdentityFirstChartResidualPresentation
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartScalars
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartSocleKernel
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartSourceFunctions
+public import FLT.Mazur.PolygonCompleteIdentityFirstChartTargetScalars
 public import FLT.Mazur.PolygonCompleteIdentityFirstCoordinateDescent
 public import FLT.Mazur.PolygonCompleteIdentityFirstCorrection
 public import FLT.Mazur.PolygonCompleteIdentityFirstDefectDerivation
@@ -8066,6 +8079,7 @@ public import FLT.Mazur.PolygonSmoothingCotangentFaithfulDescent
 public import FLT.Mazur.PolygonSmoothingCotangentFieldRank
 public import FLT.Mazur.PolygonSmoothingCotangentRelationSequence
 public import FLT.Mazur.PolygonSmoothingDerivation
+public import FLT.Mazur.PolygonSmoothingDifferenceIdeal
 public import FLT.Mazur.PolygonSmoothingFirstCotangent
 public import FLT.Mazur.PolygonSmoothingFirstCotangentBaseChange
 public import FLT.Mazur.PolygonSmoothingFlat
@@ -10041,6 +10055,7 @@ public import FLT.Mazur.SurjectiveAlgHomKernelEquiv
 public import FLT.Mazur.SurjectiveDominantEpi
 public import FLT.Mazur.SurjectiveIdealPowerQuotient
 public import FLT.Mazur.SurjectiveKernelPushout
+public import FLT.Mazur.SurjectiveParameterQuotient
 public import FLT.Mazur.SurjectivePolynomialArrowRepresentatives
 public import FLT.Mazur.SurjectiveStructureSupport
 public import FLT.Mazur.SurjectiveTowerLifting
