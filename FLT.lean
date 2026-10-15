@@ -6018,6 +6018,7 @@ public import FLT.Mazur.LaurentDomainUnits
 public import FLT.Mazur.LaurentFirstOrderAutomorphism
 public import FLT.Mazur.LaurentFirstParameterSubstitution
 public import FLT.Mazur.LaurentFirstStageParameter
+public import FLT.Mazur.LaurentFirstStageParameterEquiv
 public import FLT.Mazur.LaurentIdentityIdeal
 public import FLT.Mazur.LaurentLineActionDensity
 public import FLT.Mazur.LaurentLineActionEvaluation
@@ -7263,12 +7264,15 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstActionNodes
 public import FLT.Mazur.PolygonCompleteIdentityFirstActionParameter
 public import FLT.Mazur.PolygonCompleteIdentityFirstActionSubalgebra
 public import FLT.Mazur.PolygonCompleteIdentityFirstBoundary
+public import FLT.Mazur.PolygonCompleteIdentityFirstBranchOriginal
 public import FLT.Mazur.PolygonCompleteIdentityFirstCoordinateDescent
 public import FLT.Mazur.PolygonCompleteIdentityFirstCorrection
 public import FLT.Mazur.PolygonCompleteIdentityFirstDefectDerivation
 public import FLT.Mazur.PolygonCompleteIdentityFirstDefectFormula
 public import FLT.Mazur.PolygonCompleteIdentityFirstDefectProduct
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphAlgebra
+public import FLT.Mazur.PolygonCompleteIdentityFirstGraphBranchMaps
+public import FLT.Mazur.PolygonCompleteIdentityFirstGraphChartBranch
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphConductor
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphCrossRelations
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphErrors
@@ -7285,6 +7289,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstGraphImage
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphLocalization
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphNilradical
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphOriginalFlat
+public import FLT.Mazur.PolygonCompleteIdentityFirstGraphOriginalNodes
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphReducedLaw
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphReduction
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphScheme
@@ -7303,15 +7308,18 @@ public import FLT.Mazur.PolygonCompleteIdentityFlatOpenLift
 public import FLT.Mazur.PolygonCompleteIdentityGraphAdicAlgebra
 public import FLT.Mazur.PolygonCompleteIdentityGraphAdicChart
 public import FLT.Mazur.PolygonCompleteIdentityGraphAdicChartCoordinates
+public import FLT.Mazur.PolygonCompleteIdentityGraphAdicChartEdge
 public import FLT.Mazur.PolygonCompleteIdentityGraphAdicChartSpace
 public import FLT.Mazur.PolygonCompleteIdentityGraphAdicClosed
 public import FLT.Mazur.PolygonCompleteIdentityGraphAdicCover
+public import FLT.Mazur.PolygonCompleteIdentityGraphAdicEdge
 public import FLT.Mazur.PolygonCompleteIdentityGraphAdicIdeal
 public import FLT.Mazur.PolygonCompleteIdentityGraphAdicInput
 public import FLT.Mazur.PolygonCompleteIdentityGraphAdicLift
 public import FLT.Mazur.PolygonCompleteIdentityGraphAdicNode
 public import FLT.Mazur.PolygonCompleteIdentityGraphAdicParameter
 public import FLT.Mazur.PolygonCompleteIdentityGraphAdicStage
+public import FLT.Mazur.PolygonCompleteIdentityGraphFiniteEdge
 public import FLT.Mazur.PolygonCompleteIdentityGraphFlat
 public import FLT.Mazur.PolygonCompleteIdentityGraphFlatExt
 public import FLT.Mazur.PolygonCompleteIdentityLiftLocus
@@ -7649,6 +7657,7 @@ public import FLT.Mazur.PolygonFirstNodeEndomorphism
 public import FLT.Mazur.PolygonFirstNodeExtensionObstruction
 public import FLT.Mazur.PolygonFirstNodeLaurent
 public import FLT.Mazur.PolygonFirstNodeParameterDescent
+public import FLT.Mazur.PolygonFirstNodeParameterEquiv
 public import FLT.Mazur.PolygonFirstNodeParameterScaling
 public import FLT.Mazur.PolygonFirstNodePolynomialDescent
 public import FLT.Mazur.PolygonFirstNodePolynomialExtension
@@ -7974,6 +7983,7 @@ public import FLT.Mazur.PolygonSmoothingRangeGenerators
 public import FLT.Mazur.PolygonSmoothingReciprocalScaling
 public import FLT.Mazur.PolygonSmoothingRing
 public import FLT.Mazur.PolygonSmoothingRingMap
+public import FLT.Mazur.PolygonSmoothingRingMapBranch
 public import FLT.Mazur.PolygonSmoothingRingMapComposition
 public import FLT.Mazur.PolygonSmoothingScalingBranches
 public import FLT.Mazur.PolygonSmoothingScalingNaturality
