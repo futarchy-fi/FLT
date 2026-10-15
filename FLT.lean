@@ -8856,6 +8856,7 @@ public import FLT.Mazur.PuncturedNodeRestrictionComparison
 public import FLT.Mazur.PushforwardCech
 public import FLT.Mazur.PushoutModuleScalars
 public import FLT.Mazur.QuadraticComponentBound
+public import FLT.Mazur.QuadraticIncidenceTranslation
 public import FLT.Mazur.QuadraticRootBranchChart
 public import FLT.Mazur.QuadraticRootBranchCoverage
 public import FLT.Mazur.QuadraticRootBranchLocalization
