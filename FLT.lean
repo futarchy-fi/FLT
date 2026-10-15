@@ -7872,6 +7872,7 @@ public import FLT.Mazur.PowerCohomologyReesScalars
 public import FLT.Mazur.PowerCohomologyScalarMaps
 public import FLT.Mazur.PowerCohomologyShift
 public import FLT.Mazur.PowerScalarSectionCoordinates
+public import FLT.Mazur.PowerSeriesArithmeticCompletion
 public import FLT.Mazur.PowerSeriesCoefficientTransport
 public import FLT.Mazur.PowerSeriesLaurentGenericOpen
 public import FLT.Mazur.PowerSeriesLeadingComposition
