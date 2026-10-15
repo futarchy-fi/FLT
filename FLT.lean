@@ -6329,6 +6329,7 @@ public import FLT.Mazur.NodeBranchPushout
 public import FLT.Mazur.NodeDenominatorEqualizer
 public import FLT.Mazur.NodeDenominatorGeneration
 public import FLT.Mazur.NodeDenominatorRestriction
+public import FLT.Mazur.NodeDerivationBoundary
 public import FLT.Mazur.NodeInfinitesimalObstruction
 public import FLT.Mazur.NodeLocalDescent
 public import FLT.Mazur.NodeLocalizedEqualizer
@@ -7012,6 +7013,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFiniteUnits
 public import FLT.Mazur.PolygonCompleteIdentityFirstBoundary
 public import FLT.Mazur.PolygonCompleteIdentityFirstCorrection
 public import FLT.Mazur.PolygonCompleteIdentityFirstLinearization
+public import FLT.Mazur.PolygonCompleteIdentityFirstNodeBoundary
 public import FLT.Mazur.PolygonCompleteIdentityFlatOpenLift
 public import FLT.Mazur.PolygonCompleteIdentityGraphFlat
 public import FLT.Mazur.PolygonCompleteIdentityGraphFlatExt
@@ -7335,6 +7337,10 @@ public import FLT.Mazur.PolygonDivisorPolynomialHZero
 public import FLT.Mazur.PolygonDivisorPowerPullback
 public import FLT.Mazur.PolygonFieldExtension
 public import FLT.Mazur.PolygonFiniteSubgroup
+public import FLT.Mazur.PolygonFirstNodeBoundary
+public import FLT.Mazur.PolygonFirstNodeEndomorphism
+public import FLT.Mazur.PolygonFirstNodeLaurent
+public import FLT.Mazur.PolygonFirstNodeReduction
 public import FLT.Mazur.PolygonFirstOrderBoundaryRigidity
 public import FLT.Mazur.PolygonFirstOrderCoordinateCharts
 public import FLT.Mazur.PolygonGeneralizedCurve
