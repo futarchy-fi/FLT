@@ -4353,6 +4353,7 @@ public import FLT.Mazur.EllipticRepeatedCubicPoint
 public import FLT.Mazur.EllipticRepeatedCubicTranslation
 public import FLT.Mazur.EllipticResolvedAdditionCongruence
 public import FLT.Mazur.EllipticResolvedAdjacentBoundaryCover
+public import FLT.Mazur.EllipticResolvedAdjustedSmoothSquare
 public import FLT.Mazur.EllipticResolvedCompleteCubicComparison
 public import FLT.Mazur.EllipticResolvedCompleteFiberComparison
 public import FLT.Mazur.EllipticResolvedCompleteMarkings
@@ -4365,8 +4366,12 @@ public import FLT.Mazur.EllipticResolvedComponentLabels
 public import FLT.Mazur.EllipticResolvedComponentPointCover
 public import FLT.Mazur.EllipticResolvedComponentSeparation
 public import FLT.Mazur.EllipticResolvedComponentSupports
+public import FLT.Mazur.EllipticResolvedCyclicCoordinateScale
 public import FLT.Mazur.EllipticResolvedDepthSeparation
+public import FLT.Mazur.EllipticResolvedEvenAdjustedComparison
+public import FLT.Mazur.EllipticResolvedEvenCyclicCoordinates
 public import FLT.Mazur.EllipticResolvedExteriorBoundaryCover
+public import FLT.Mazur.EllipticResolvedExteriorCyclicCoordinates
 public import FLT.Mazur.EllipticResolvedGeometricLabel
 public import FLT.Mazur.EllipticResolvedIdentityCharacter
 public import FLT.Mazur.EllipticResolvedIdentityChart
@@ -4377,6 +4382,8 @@ public import FLT.Mazur.EllipticResolvedLastExteriorCover
 public import FLT.Mazur.EllipticResolvedLaurentEquality
 public import FLT.Mazur.EllipticResolvedMiddleTranslationEquality
 public import FLT.Mazur.EllipticResolvedMixedTranslationEquality
+public import FLT.Mazur.EllipticResolvedOddAdjustedComparison
+public import FLT.Mazur.EllipticResolvedOddCyclicCoordinates
 public import FLT.Mazur.EllipticResolvedOppositeTranslationEquality
 public import FLT.Mazur.EllipticResolvedOrientedAtlas
 public import FLT.Mazur.EllipticResolvedParameterEquality
@@ -7343,6 +7350,7 @@ public import FLT.Mazur.PolygonCompleteStageRotation
 public import FLT.Mazur.PolygonCompleteStructureCohomology
 public import FLT.Mazur.PolygonCompleteUniversalFunctions
 public import FLT.Mazur.PolygonCompleteZeroParameterFiber
+public import FLT.Mazur.PolygonComponentCoordinateScaling
 public import FLT.Mazur.PolygonComponentDistinct
 public import FLT.Mazur.PolygonComponentHZeroEndpoints
 public import FLT.Mazur.PolygonComponentHZeroMatching
@@ -7613,6 +7621,7 @@ public import FLT.Mazur.PolygonParameterTranslation
 public import FLT.Mazur.PolygonParameterTranslationBaseChange
 public import FLT.Mazur.PolygonParameterTranslationOriginal
 public import FLT.Mazur.PolygonParameterizedHomExt
+public import FLT.Mazur.PolygonPinchingAdjustedClosedComparison
 public import FLT.Mazur.PolygonPinchingAffineBaseChange
 public import FLT.Mazur.PolygonPinchingCompleteClosedComparison
 public import FLT.Mazur.PolygonPinchingCompleteCubicContraction
@@ -11483,6 +11492,7 @@ public import FLT.Mazur.WeierstrassDividedZeroExteriorNodeBranches
 public import FLT.Mazur.WeierstrassDividedZeroExteriorOriented
 public import FLT.Mazur.WeierstrassDividedZeroExteriorParameterIntersection
 public import FLT.Mazur.WeierstrassDividedZeroExteriorProjective
+public import FLT.Mazur.WeierstrassDividedZeroExteriorSmoothCoordinates
 public import FLT.Mazur.WeierstrassDividedZeroExteriorSmoothOrbit
 public import FLT.Mazur.WeierstrassDividedZeroIncidenceInfinity
 public import FLT.Mazur.WeierstrassDividedZeroNodalGeometry
