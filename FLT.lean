@@ -2859,6 +2859,7 @@ public import FLT.Mazur.AffineHilbertFullFiberRefinement
 public import FLT.Mazur.AffineHilbertFullFiberRestriction
 public import FLT.Mazur.AffineHilbertFullInteriorChart
 public import FLT.Mazur.AffineHilbertFullRelationRestriction
+public import FLT.Mazur.AffineHilbertGenericEnvelopeCriterion
 public import FLT.Mazur.AffineHilbertGroundBaseEnvelope
 public import FLT.Mazur.AffineHilbertGroundBaseEnvelopeLift
 public import FLT.Mazur.AffineHilbertGroundBaseFullFiber
@@ -2919,6 +2920,10 @@ public import FLT.Mazur.AffineHilbertNestedFiniteRelative
 public import FLT.Mazur.AffineHilbertNestedKernel
 public import FLT.Mazur.AffineHilbertNestedRestriction
 public import FLT.Mazur.AffineHilbertNoetherianRelation
+public import FLT.Mazur.AffineHilbertOldEnvelopeEffective
+public import FLT.Mazur.AffineHilbertOldEnvelopeFlatCover
+public import FLT.Mazur.AffineHilbertOldEnvelopeGeneric
+public import FLT.Mazur.AffineHilbertOldEnvelopeTarget
 public import FLT.Mazur.AffineHilbertOriginalOrbitAtlas
 public import FLT.Mazur.AffineHilbertOriginalOrbitModel
 public import FLT.Mazur.AffineHilbertOriginalOrbitOpenModel
@@ -9128,6 +9133,7 @@ public import FLT.Mazur.SchemeUnchangedOpenComposition
 public import FLT.Mazur.SchemeUnchangedOpenIsoSquare
 public import FLT.Mazur.SchemeUnchangedOpenLift
 public import FLT.Mazur.SchemeUnchangedOpenPullback
+public import FLT.Mazur.SchemeWholeFiberCoefficients
 public import FLT.Mazur.SchemeWholeFiberGenericOpen
 public import FLT.Mazur.SchemeWholeFiberOpen
 public import FLT.Mazur.SchemeWholeFiberOpenBaseChange
