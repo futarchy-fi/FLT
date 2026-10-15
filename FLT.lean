@@ -5964,6 +5964,7 @@ public import FLT.Mazur.KernelPairSourceBranchCriterion
 public import FLT.Mazur.KernelPairTestIso
 public import FLT.Mazur.KernelPairUnramifiedInverse
 public import FLT.Mazur.LargeDegreeRelativeLineSections
+public import FLT.Mazur.LaurentBoundaryTailShift
 public import FLT.Mazur.LaurentBoundaryVectorField
 public import FLT.Mazur.LaurentCoboundaryBoundary
 public import FLT.Mazur.LaurentCocycleCoefficientRecovery
@@ -5979,6 +5980,7 @@ public import FLT.Mazur.LaurentFirstStageParameter
 public import FLT.Mazur.LaurentIdentityIdeal
 public import FLT.Mazur.LaurentLineActionDensity
 public import FLT.Mazur.LaurentLineActionEvaluation
+public import FLT.Mazur.LaurentNodePrincipalParts
 public import FLT.Mazur.LaurentNormalizedReduction
 public import FLT.Mazur.LaurentPairCoefficientNaturality
 public import FLT.Mazur.LaurentPairEvaluation
@@ -7085,10 +7087,16 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstActionSubalgebra
 public import FLT.Mazur.PolygonCompleteIdentityFirstBoundary
 public import FLT.Mazur.PolygonCompleteIdentityFirstCoordinateDescent
 public import FLT.Mazur.PolygonCompleteIdentityFirstCorrection
+public import FLT.Mazur.PolygonCompleteIdentityFirstDefectDerivation
+public import FLT.Mazur.PolygonCompleteIdentityFirstDefectFormula
+public import FLT.Mazur.PolygonCompleteIdentityFirstDefectProduct
 public import FLT.Mazur.PolygonCompleteIdentityFirstLinearization
 public import FLT.Mazur.PolygonCompleteIdentityFirstNodeBoundary
 public import FLT.Mazur.PolygonCompleteIdentityFirstNodeObstruction
 public import FLT.Mazur.PolygonCompleteIdentityFirstPositiveNodes
+public import FLT.Mazur.PolygonCompleteIdentityFirstPowerDescent
+public import FLT.Mazur.PolygonCompleteIdentityFirstPrincipalCoordinates
+public import FLT.Mazur.PolygonCompleteIdentityFirstPrincipalObstruction
 public import FLT.Mazur.PolygonCompleteIdentityFlatOpenLift
 public import FLT.Mazur.PolygonCompleteIdentityGraphFlat
 public import FLT.Mazur.PolygonCompleteIdentityGraphFlatExt
@@ -7414,6 +7422,8 @@ public import FLT.Mazur.PolygonDivisorPolynomialHZero
 public import FLT.Mazur.PolygonDivisorPowerPullback
 public import FLT.Mazur.PolygonFieldExtension
 public import FLT.Mazur.PolygonFiniteSubgroup
+public import FLT.Mazur.PolygonFirstLaurentCoefficient
+public import FLT.Mazur.PolygonFirstLaurentPairProduct
 public import FLT.Mazur.PolygonFirstNodeAutomorphism
 public import FLT.Mazur.PolygonFirstNodeBoundary
 public import FLT.Mazur.PolygonFirstNodeBranchAutomorphism
@@ -7429,6 +7439,7 @@ public import FLT.Mazur.PolygonFirstNodeParameterScaling
 public import FLT.Mazur.PolygonFirstNodePolynomialDescent
 public import FLT.Mazur.PolygonFirstNodePolynomialExtension
 public import FLT.Mazur.PolygonFirstNodePositiveExtension
+public import FLT.Mazur.PolygonFirstNodePrincipalParts
 public import FLT.Mazur.PolygonFirstNodeReduction
 public import FLT.Mazur.PolygonFirstNodeScaledBoundary
 public import FLT.Mazur.PolygonFirstNodeScaledExtension
