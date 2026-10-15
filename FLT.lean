@@ -6834,6 +6834,7 @@ public import FLT.Mazur.OriginalSmoothDetectingEtaleLift
 public import FLT.Mazur.OriginalSmoothFiberAllLifts
 public import FLT.Mazur.OriginalTensorOrbitEvaluation
 public import FLT.Mazur.OriginalTensorOrbitMorphisms
+public import FLT.Mazur.OriginalTestAffineFullFiber
 public import FLT.Mazur.OriginalTranscendentalAffineOpenOrbit
 public import FLT.Mazur.OriginalTranscendentalDetectingOpen
 public import FLT.Mazur.OriginalTranscendentalOpenAllLifts
