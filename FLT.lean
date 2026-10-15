@@ -6475,7 +6475,10 @@ public import FLT.Mazur.NeronPolygonRotationAction
 public import FLT.Mazur.NeronPolygonScaling
 public import FLT.Mazur.NestedOpenCohomologyCoherence
 public import FLT.Mazur.NeutralTwistDirectImage
+public import FLT.Mazur.NilpotentIdealContraction
 public import FLT.Mazur.NilpotentIdealSocle
+public import FLT.Mazur.NilpotentPolynomialInverse
+public import FLT.Mazur.NilpotentPolynomialInverseBaseChange
 public import FLT.Mazur.NilpotentQuadraticRoot
 public import FLT.Mazur.NilpotentQuadraticRootNaturality
 public import FLT.Mazur.NodalFamilyGeometricConnected
@@ -8865,6 +8868,7 @@ public import FLT.Mazur.PuncturedNodeRestrictionComparison
 public import FLT.Mazur.PushforwardCech
 public import FLT.Mazur.PushoutModuleScalars
 public import FLT.Mazur.QuadraticComponentBound
+public import FLT.Mazur.QuadraticIncidenceTranslation
 public import FLT.Mazur.QuadraticRootBranchChart
 public import FLT.Mazur.QuadraticRootBranchCoverage
 public import FLT.Mazur.QuadraticRootBranchLocalization
@@ -12357,6 +12361,7 @@ public import FLT.Mazur.WeierstrassModificationReesYScaleScheme
 public import FLT.Mazur.WeierstrassModificationShearLocalization
 public import FLT.Mazur.WeierstrassModificationShearOverlap
 public import FLT.Mazur.WeierstrassModificationXAlgebra
+public import FLT.Mazur.WeierstrassModificationXArithmeticInitialNode
 public import FLT.Mazur.WeierstrassModificationXBaseChange
 public import FLT.Mazur.WeierstrassModificationXBaseChangeGenerators
 public import FLT.Mazur.WeierstrassModificationXCoefficients
@@ -12451,8 +12456,18 @@ public import FLT.Mazur.WeierstrassModificationXLaurentEvaluation
 public import FLT.Mazur.WeierstrassModificationXLaurentRoot
 public import FLT.Mazur.WeierstrassModificationXLocalization
 public import FLT.Mazur.WeierstrassModificationXMorphism
+public import FLT.Mazur.WeierstrassModificationXNodeInverseEvaluation
+public import FLT.Mazur.WeierstrassModificationXNodeInverseFunctions
+public import FLT.Mazur.WeierstrassModificationXNodeInverseParameter
 public import FLT.Mazur.WeierstrassModificationXOriginalLocalization
 public import FLT.Mazur.WeierstrassModificationXOverlap
+public import FLT.Mazur.WeierstrassModificationXPolynomialFactors
+public import FLT.Mazur.WeierstrassModificationXPolynomialNodeBackward
+public import FLT.Mazur.WeierstrassModificationXPolynomialNodeEquiv
+public import FLT.Mazur.WeierstrassModificationXPolynomialNodeGeometry
+public import FLT.Mazur.WeierstrassModificationXPolynomialNodeMaps
+public import FLT.Mazur.WeierstrassModificationXPolynomialRoot
+public import FLT.Mazur.WeierstrassModificationXPolynomialSplit
 public import FLT.Mazur.WeierstrassModificationXPresentation
 public import FLT.Mazur.WeierstrassModificationXReesChart
 public import FLT.Mazur.WeierstrassModificationXResidueCastFactorization
