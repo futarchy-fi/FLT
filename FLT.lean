@@ -6789,6 +6789,7 @@ public import FLT.Mazur.OrderedTranslationEtaleSeparableLift
 public import FLT.Mazur.OrderedTranslationLocallyRingedMap
 public import FLT.Mazur.OrderedTranslationOriginalFiber
 public import FLT.Mazur.OrderedTranslationQuotientCover
+public import FLT.Mazur.OriginalAlgebraicPointDescent
 public import FLT.Mazur.OriginalFamilyIdentityComparison
 public import FLT.Mazur.OriginalFamilySectionComposition
 public import FLT.Mazur.OriginalFamilySquareComposition
