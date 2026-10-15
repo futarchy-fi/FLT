@@ -11084,6 +11084,7 @@ public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentIntersection
 public import FLT.Mazur.WeierstrassDividedArithmeticBoundaryCharts
 public import FLT.Mazur.WeierstrassDividedArithmeticCoordinateTransition
 public import FLT.Mazur.WeierstrassDividedArithmeticCoordinates
+public import FLT.Mazur.WeierstrassDividedArithmeticInitialBranch
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialIntersection
 public import FLT.Mazur.WeierstrassDividedArithmeticNodeCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticNodeOpen
