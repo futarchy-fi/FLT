@@ -2879,6 +2879,7 @@ public import FLT.Mazur.AffineHilbertGeometricAcyclicFiber
 public import FLT.Mazur.AffineHilbertGeometricEtaleSpread
 public import FLT.Mazur.AffineHilbertGeometricFiberNecessity
 public import FLT.Mazur.AffineHilbertGeometricFiberSections
+public import FLT.Mazur.AffineHilbertGeometricFiniteGround
 public import FLT.Mazur.AffineHilbertGeometricPointTest
 public import FLT.Mazur.AffineHilbertGeometricRelationSpread
 public import FLT.Mazur.AffineHilbertGeometricRetainedNeighborhood
@@ -3275,7 +3276,11 @@ public import FLT.Mazur.AmpleVeroneseMultiplication
 public import FLT.Mazur.AnnihilatorCoherence
 public import FLT.Mazur.AnnihilatorStalk
 public import FLT.Mazur.AnnihilatorSubsheaf
+public import FLT.Mazur.ArbitraryGeometricAffineFullFiber
 public import FLT.Mazur.ArbitraryGeometricAllLiftTranslations
+public import FLT.Mazur.ArbitraryGeometricFiniteGroundInterior
+public import FLT.Mazur.ArbitraryGeometricFiniteKernel
+public import FLT.Mazur.ArbitraryGeometricGroundQuotient
 public import FLT.Mazur.ArbitraryPicardAffineEtaleChart
 public import FLT.Mazur.ArbitraryPicardEtaleTranslation
 public import FLT.Mazur.ArtinianClosedFiberFunctions
@@ -5153,6 +5158,9 @@ public import FLT.Mazur.GeometricFiberSmoothLineParameters
 public import FLT.Mazur.GeometricFiniteAllLiftTranslations
 public import FLT.Mazur.GeometricFixedPointTranslation
 public import FLT.Mazur.GeometricFppfCoverSection
+public import FLT.Mazur.GeometricFullInteriorFiniteKernel
+public import FLT.Mazur.GeometricFullInteriorQuotient
+public import FLT.Mazur.GeometricGroundQuotientOriginalComparison
 public import FLT.Mazur.GeometricHilbertTranslation
 public import FLT.Mazur.GeometricOpenFactorization
 public import FLT.Mazur.GeometricOrderedAllLiftTranslation
@@ -6830,6 +6838,8 @@ public import FLT.Mazur.OriginalSmoothDetectingEtaleLift
 public import FLT.Mazur.OriginalSmoothFiberAllLifts
 public import FLT.Mazur.OriginalTensorOrbitEvaluation
 public import FLT.Mazur.OriginalTensorOrbitMorphisms
+public import FLT.Mazur.OriginalTestAffineFullFiber
+public import FLT.Mazur.OriginalTestFullFiberCoverage
 public import FLT.Mazur.OriginalTranscendentalAffineOpenOrbit
 public import FLT.Mazur.OriginalTranscendentalDetectingOpen
 public import FLT.Mazur.OriginalTranscendentalOpenAllLifts
