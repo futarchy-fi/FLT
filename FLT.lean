@@ -2698,6 +2698,7 @@ public import FLT.Mazur.AffineEffectiveRefinementNaturality
 public import FLT.Mazur.AffineEffectiveSecondReconstruction
 public import FLT.Mazur.AffineEffectiveSuccessiveReconstruction
 public import FLT.Mazur.AffineEnvelopeFiniteNeighborhood
+public import FLT.Mazur.AffineEnvelopeNormTransport
 public import FLT.Mazur.AffineEtaleFaithfulCoefficients
 public import FLT.Mazur.AffineEtaleFaithfulNeighborhood
 public import FLT.Mazur.AffineEtaleFaithfulSource
