@@ -7403,6 +7403,7 @@ public import FLT.Mazur.PolygonCompleteIdentityChartAtlas
 public import FLT.Mazur.PolygonCompleteIdentityChartOperations
 public import FLT.Mazur.PolygonCompleteIdentityCubicChartMaps
 public import FLT.Mazur.PolygonCompleteIdentityCubicCoordinates
+public import FLT.Mazur.PolygonCompleteIdentityCubicDenominators
 public import FLT.Mazur.PolygonCompleteIdentityFiniteAlgebra
 public import FLT.Mazur.PolygonCompleteIdentityFiniteCoherence
 public import FLT.Mazur.PolygonCompleteIdentityFiniteComparison
