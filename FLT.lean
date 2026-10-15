@@ -6533,6 +6533,7 @@ public import FLT.Mazur.NodalFamilyGeometricConnected
 public import FLT.Mazur.NodalFiberAlgebra
 public import FLT.Mazur.NodalFiberBoundedParameterTransport
 public import FLT.Mazur.NodalFiberCoefficientMap
+public import FLT.Mazur.NodalFiberCoefficientRingMap
 public import FLT.Mazur.NodalFiberNodeComparison
 public import FLT.Mazur.NodalFiberParameterTransport
 public import FLT.Mazur.NodalFiberUnitComparison
