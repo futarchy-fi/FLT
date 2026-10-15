@@ -2492,6 +2492,7 @@ public import FLT.Mazur.AcyclicCoefficientCohomology
 public import FLT.Mazur.AcyclicDegreeFixedBaseChange
 public import FLT.Mazur.AcyclicDegreeGeometricSpread
 public import FLT.Mazur.AcyclicDegreePicardRepresentation
+public import FLT.Mazur.AcyclicDegreeSectionCoverDetection
 public import FLT.Mazur.AcyclicDirectImageResolution
 public import FLT.Mazur.AcyclicDivisorDegreeOpen
 public import FLT.Mazur.AcyclicDivisorDegreePresheaf
