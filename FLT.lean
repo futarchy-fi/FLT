@@ -5838,6 +5838,7 @@ public import FLT.Mazur.KernelPairTestIso
 public import FLT.Mazur.KernelPairUnramifiedInverse
 public import FLT.Mazur.LargeDegreeRelativeLineSections
 public import FLT.Mazur.LaurentCoefficientInjectivity
+public import FLT.Mazur.LaurentDomainUnits
 public import FLT.Mazur.LaurentLineActionDensity
 public import FLT.Mazur.LaurentLineActionEvaluation
 public import FLT.Mazur.LaurentPairReciprocalUnits
