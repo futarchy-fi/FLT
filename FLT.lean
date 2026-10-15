@@ -5998,6 +5998,7 @@ public import FLT.Mazur.IteratedQuotientRepresentatives
 public import FLT.Mazur.IteratedRefinementSquareCriteria
 public import FLT.Mazur.JointEnvelopeFullFiber
 public import FLT.Mazur.JointGroundNormInterior
+public import FLT.Mazur.JointGroundNormInvariantOpen
 public import FLT.Mazur.JointTranslationNormSupport
 public import FLT.Mazur.KernelPairEffectiveEtaleBranch
 public import FLT.Mazur.KernelPairEffectiveOpen
