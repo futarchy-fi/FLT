@@ -7169,6 +7169,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstDefectProduct
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphAlgebra
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphConductor
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphFiberCoordinates
+public import FLT.Mazur.PolygonCompleteIdentityFirstGraphFiberDensity
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphFiberPuncture
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphFiberSocle
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphFiberSplit
