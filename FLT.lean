@@ -3946,6 +3946,7 @@ public import FLT.Mazur.DisjointRestrictionIso
 public import FLT.Mazur.DisjointSectionAcyclicTranslation
 public import FLT.Mazur.DisjointSectionCoverCartesian
 public import FLT.Mazur.DisjointSectionCoverSplitting
+public import FLT.Mazur.DisjointSectionGeometricTranslation
 public import FLT.Mazur.DisjointSectionPicardGluing
 public import FLT.Mazur.DisjointStructureCohomology
 public import FLT.Mazur.DivisorBaseChangeRank
