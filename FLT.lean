@@ -6930,6 +6930,7 @@ public import FLT.Mazur.PolygonArithmeticDegreeFinite
 public import FLT.Mazur.PolygonArithmeticDegreeFiniteStage
 public import FLT.Mazur.PolygonArithmeticDegreeLifting
 public import FLT.Mazur.PolygonArithmeticDegreeProjection
+public import FLT.Mazur.PolygonArithmeticFiniteType
 public import FLT.Mazur.PolygonArithmeticFlatLayer
 public import FLT.Mazur.PolygonArithmeticGradedExactness
 public import FLT.Mazur.PolygonArithmeticGradedParameter
