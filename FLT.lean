@@ -6893,6 +6893,7 @@ public import FLT.Mazur.PadicValuationRing
 public import FLT.Mazur.PartialCompactTranslationInterior
 public import FLT.Mazur.PartialEnvelopeFullFiber
 public import FLT.Mazur.PartialFiniteTranslationInterior
+public import FLT.Mazur.PartialGroundEnvelopeInterior
 public import FLT.Mazur.PartialProperEnvelopeInterior
 public import FLT.Mazur.PartialTranslationNormSupport
 public import FLT.Mazur.PicardDegreeFieldBaseChange
