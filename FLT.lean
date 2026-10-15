@@ -9424,6 +9424,7 @@ public import FLT.Mazur.SheafPullbackSectionReconstruction
 public import FLT.Mazur.SheafPullbackSectionSquare
 public import FLT.Mazur.SheafPullbackTestReconstruction
 public import FLT.Mazur.ShortComplexSumHomologyInclusion
+public import FLT.Mazur.SimultaneousSmoothAcyclicNeighborhood
 public import FLT.Mazur.SimultaneousSmoothHilbertParameters
 public import FLT.Mazur.SmallAffineParameterBases
 public import FLT.Mazur.SmallHilbertPresentation
