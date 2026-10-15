@@ -5947,6 +5947,7 @@ public import FLT.Mazur.LaurentCoefficientInjectivity
 public import FLT.Mazur.LaurentCyclicCoordinateChange
 public import FLT.Mazur.LaurentDomainPairUnits
 public import FLT.Mazur.LaurentDomainUnits
+public import FLT.Mazur.LaurentFirstOrderAutomorphism
 public import FLT.Mazur.LaurentFirstStageParameter
 public import FLT.Mazur.LaurentIdentityIdeal
 public import FLT.Mazur.LaurentLineActionDensity
@@ -7048,9 +7049,11 @@ public import FLT.Mazur.PolygonCompleteIdentityFiniteSymmetry
 public import FLT.Mazur.PolygonCompleteIdentityFiniteUnitEvaluation
 public import FLT.Mazur.PolygonCompleteIdentityFiniteUnits
 public import FLT.Mazur.PolygonCompleteIdentityFirstActionBoundary
+public import FLT.Mazur.PolygonCompleteIdentityFirstActionBranchEquiv
 public import FLT.Mazur.PolygonCompleteIdentityFirstActionCoordinate
 public import FLT.Mazur.PolygonCompleteIdentityFirstActionNodeSpectra
 public import FLT.Mazur.PolygonCompleteIdentityFirstActionNodes
+public import FLT.Mazur.PolygonCompleteIdentityFirstActionSubalgebra
 public import FLT.Mazur.PolygonCompleteIdentityFirstBoundary
 public import FLT.Mazur.PolygonCompleteIdentityFirstCorrection
 public import FLT.Mazur.PolygonCompleteIdentityFirstLinearization
@@ -7382,6 +7385,10 @@ public import FLT.Mazur.PolygonFieldExtension
 public import FLT.Mazur.PolygonFiniteSubgroup
 public import FLT.Mazur.PolygonFirstNodeAutomorphism
 public import FLT.Mazur.PolygonFirstNodeBoundary
+public import FLT.Mazur.PolygonFirstNodeBranchAutomorphism
+public import FLT.Mazur.PolygonFirstNodeBranchPair
+public import FLT.Mazur.PolygonFirstNodeBranchReconstruction
+public import FLT.Mazur.PolygonFirstNodeBranchReduction
 public import FLT.Mazur.PolygonFirstNodeEndomorphism
 public import FLT.Mazur.PolygonFirstNodeExtensionObstruction
 public import FLT.Mazur.PolygonFirstNodeLaurent
@@ -7390,6 +7397,7 @@ public import FLT.Mazur.PolygonFirstNodePositiveExtension
 public import FLT.Mazur.PolygonFirstNodeReduction
 public import FLT.Mazur.PolygonFirstNodeScaledBoundary
 public import FLT.Mazur.PolygonFirstNodeScaledExtension
+public import FLT.Mazur.PolygonFirstNodeSubalgebraPreservation
 public import FLT.Mazur.PolygonFirstNodeTangentBoundary
 public import FLT.Mazur.PolygonFirstNodeTangentEquiv
 public import FLT.Mazur.PolygonFirstNodeTangentLift
