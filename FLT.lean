@@ -2771,6 +2771,7 @@ public import FLT.Mazur.AffineHilbertChartRelation
 public import FLT.Mazur.AffineHilbertClopenAdmissible
 public import FLT.Mazur.AffineHilbertClosedConnectedCertificate
 public import FLT.Mazur.AffineHilbertClosedConnectedKernel
+public import FLT.Mazur.AffineHilbertClosedDegreePicardCertificate
 public import FLT.Mazur.AffineHilbertClosedEnvelopeInterior
 public import FLT.Mazur.AffineHilbertClosedPatchRefinement
 public import FLT.Mazur.AffineHilbertClosedPatchSource
@@ -2779,6 +2780,8 @@ public import FLT.Mazur.AffineHilbertComposableEnvelope
 public import FLT.Mazur.AffineHilbertCompositionCharts
 public import FLT.Mazur.AffineHilbertCompositionFiniteBranches
 public import FLT.Mazur.AffineHilbertConnectedEnvelopeFiber
+public import FLT.Mazur.AffineHilbertCountedFiberNeighborhood
+public import FLT.Mazur.AffineHilbertDegreeFiberCertificate
 public import FLT.Mazur.AffineHilbertDerivedNoetherianRelation
 public import FLT.Mazur.AffineHilbertEffectiveOpenDescent
 public import FLT.Mazur.AffineHilbertEffectiveOpenEtale
@@ -2788,6 +2791,7 @@ public import FLT.Mazur.AffineHilbertEffectiveOpenPicard
 public import FLT.Mazur.AffineHilbertEffectiveOpenRepresentation
 public import FLT.Mazur.AffineHilbertEffectiveTargetOpen
 public import FLT.Mazur.AffineHilbertEnvelopeCoaction
+public import FLT.Mazur.AffineHilbertEnvelopeFiberCount
 public import FLT.Mazur.AffineHilbertEnvelopeKernelPair
 public import FLT.Mazur.AffineHilbertEnvelopeOpenChart
 public import FLT.Mazur.AffineHilbertEnvelopeQuotient
@@ -2934,6 +2938,7 @@ public import FLT.Mazur.AffineHilbertOriginalOrbitAtlas
 public import FLT.Mazur.AffineHilbertOriginalOrbitModel
 public import FLT.Mazur.AffineHilbertOriginalOrbitOpenModel
 public import FLT.Mazur.AffineHilbertOriginalPrincipalInvariants
+public import FLT.Mazur.AffineHilbertPicardFiberWitnesses
 public import FLT.Mazur.AffineHilbertPrincipalAdmissibleTransport
 public import FLT.Mazur.AffineHilbertPrincipalFiniteKernel
 public import FLT.Mazur.AffineHilbertPrincipalFiniteTests
@@ -4603,6 +4608,7 @@ public import FLT.Mazur.FiniteAffineLineCover
 public import FLT.Mazur.FiniteAffineOpenClosedDescent
 public import FLT.Mazur.FiniteAffineProperIntegerDescent
 public import FLT.Mazur.FiniteAlgebraFiberSurjective
+public import FLT.Mazur.FiniteAlgebraSpectrumCard
 public import FLT.Mazur.FiniteArrowIntegerModel
 public import FLT.Mazur.FiniteCartierIsomorphismNeighborhood
 public import FLT.Mazur.FiniteCartierLocalizedComparison
@@ -4640,11 +4646,13 @@ public import FLT.Mazur.FiniteEvaluationLocus
 public import FLT.Mazur.FiniteFamilySupportBaseChange
 public import FLT.Mazur.FiniteFamilySupportOpen
 public import FLT.Mazur.FiniteFiberClosedImmersion
+public import FLT.Mazur.FiniteFiberImageCard
 public import FLT.Mazur.FiniteFieldRankLength
 public import FLT.Mazur.FiniteFlatAffineLocalFree
 public import FLT.Mazur.FiniteFlatCoefficientIdeal
 public import FLT.Mazur.FiniteFlatCoefficientIso
 public import FLT.Mazur.FiniteFlatDegreeOpen
+public import FLT.Mazur.FiniteFlatFiberCard
 public import FLT.Mazur.FiniteFlatIdealVanishingBaseChange
 public import FLT.Mazur.FiniteFlatIdealVanishingChart
 public import FLT.Mazur.FiniteFlatIdealVanishingGluing
