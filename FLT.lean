@@ -11123,6 +11123,7 @@ public import FLT.Mazur.WeierstrassDilatationAlgebra
 public import FLT.Mazur.WeierstrassDilatationArithmeticSmoothingRestriction
 public import FLT.Mazur.WeierstrassDilatationArithmeticTerminalNode
 public import FLT.Mazur.WeierstrassDilatationBaseChange
+public import FLT.Mazur.WeierstrassDilatationCanonicalNormalizationNaturality
 public import FLT.Mazur.WeierstrassDilatationCoefficientRingMap
 public import FLT.Mazur.WeierstrassDilatationCoefficients
 public import FLT.Mazur.WeierstrassDilatationDepthComposition
