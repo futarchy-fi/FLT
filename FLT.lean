@@ -10729,6 +10729,7 @@ public import FLT.Mazur.WeierstrassDividedCoefficientShearSchemes
 public import FLT.Mazur.WeierstrassDividedCoefficientSmoothLocus
 public import FLT.Mazur.WeierstrassDividedCoefficientSmoothRecovery
 public import FLT.Mazur.WeierstrassDividedCoefficientSymmetry
+public import FLT.Mazur.WeierstrassDividedCompleteClosedCubicCompatibility
 public import FLT.Mazur.WeierstrassDividedCompleteResidueNormalization
 public import FLT.Mazur.WeierstrassDividedComponentPairCoverage
 public import FLT.Mazur.WeierstrassDividedConicBoundaryAllDepths
