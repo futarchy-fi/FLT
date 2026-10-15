@@ -12828,6 +12828,7 @@ public import FLT.Mazur.WeierstrassSuccessiveNilpotentSlopeMap
 public import FLT.Mazur.WeierstrassSuccessiveNodeChartCoverage
 public import FLT.Mazur.WeierstrassSuccessiveNodeRestrictionSquare
 public import FLT.Mazur.WeierstrassSuccessiveOppositeNodeChart
+public import FLT.Mazur.WeierstrassSuccessiveOppositeRestrictionSquare
 public import FLT.Mazur.WeierstrassSuccessiveOriginalOpen
 public import FLT.Mazur.WeierstrassSuccessivePolygonRestrictionSquare
 public import FLT.Mazur.WeierstrassSuccessiveReesCoordinates
