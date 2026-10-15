@@ -2750,7 +2750,10 @@ public import FLT.Mazur.AffineGeometricRefinementData
 public import FLT.Mazur.AffineGeometricTensorCocycle
 public import FLT.Mazur.AffineGeometricTensorDatum
 public import FLT.Mazur.AffineHilbertAdmissibleFiniteKernel
+public import FLT.Mazur.AffineHilbertAdmissibleFlatImage
 public import FLT.Mazur.AffineHilbertAdmissibleGenericCoefficients
+public import FLT.Mazur.AffineHilbertAdmissibleGenericPoint
+public import FLT.Mazur.AffineHilbertAdmissibleIntegralSource
 public import FLT.Mazur.AffineHilbertAdmissibleKernelOpen
 public import FLT.Mazur.AffineHilbertAdmissibleOldKernel
 public import FLT.Mazur.AffineHilbertAssociativeFiniteBranches
@@ -2792,6 +2795,7 @@ public import FLT.Mazur.AffineHilbertFiniteEnvelopeEffective
 public import FLT.Mazur.AffineHilbertFiniteEnvelopeKernel
 public import FLT.Mazur.AffineHilbertFiniteEnvelopePicard
 public import FLT.Mazur.AffineHilbertFiniteEnvelopeSeed
+public import FLT.Mazur.AffineHilbertFiniteFiberInvariants
 public import FLT.Mazur.AffineHilbertFiniteFiberPrincipal
 public import FLT.Mazur.AffineHilbertFiniteFreeGroundBase
 public import FLT.Mazur.AffineHilbertFiniteFullBranchCover
@@ -8852,6 +8856,7 @@ public import FLT.Mazur.SchemeFiniteGroupQuotientOrbits
 public import FLT.Mazur.SchemeFlatFamilyReflection
 public import FLT.Mazur.SchemeFlatFppfTargetDensity
 public import FLT.Mazur.SchemeFlatProductDensity
+public import FLT.Mazur.SchemeFlatSourceImage
 public import FLT.Mazur.SchemeFlatTargetNeighborhood
 public import FLT.Mazur.SchemeFlatTargetOpen
 public import FLT.Mazur.SchemeFppfCanonicalPairRecovery
@@ -8928,6 +8933,7 @@ public import FLT.Mazur.SchemeIndependentNormalizationSquare
 public import FLT.Mazur.SchemeIndependentPairNormalization
 public import FLT.Mazur.SchemeIndependentRecoveryNormalization
 public import FLT.Mazur.SchemeIndependentTripleCocycle
+public import FLT.Mazur.SchemeKernelFlatSourceImage
 public import FLT.Mazur.SchemeKernelInvariantOpenLift
 public import FLT.Mazur.SchemeKernelPairSectionSheaf
 public import FLT.Mazur.SchemeLineBundleCategory
