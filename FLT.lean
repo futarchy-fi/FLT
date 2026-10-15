@@ -3942,6 +3942,10 @@ public import FLT.Mazur.DirectSumLocalization
 public import FLT.Mazur.DisjointClosedCoproduct
 public import FLT.Mazur.DisjointGenericNeighborhoods
 public import FLT.Mazur.DisjointRestrictionIso
+public import FLT.Mazur.DisjointSectionAcyclicTranslation
+public import FLT.Mazur.DisjointSectionCoverCartesian
+public import FLT.Mazur.DisjointSectionCoverSplitting
+public import FLT.Mazur.DisjointSectionPicardGluing
 public import FLT.Mazur.DisjointStructureCohomology
 public import FLT.Mazur.DivisorBaseChangeRank
 public import FLT.Mazur.DivisorCanonicalComposition
@@ -4668,9 +4672,13 @@ public import FLT.Mazur.FiniteDivisorComponentAvoidance
 public import FLT.Mazur.FiniteDivisorLengthAdditivity
 public import FLT.Mazur.FiniteDivisorLengthOne
 public import FLT.Mazur.FiniteDivisorRationalSupport
+public import FLT.Mazur.FiniteEtaleDisjointSectionNeighborhood
+public import FLT.Mazur.FiniteEtaleGeometricDisjointCover
 public import FLT.Mazur.FiniteEtaleGeometricSectionCover
+public import FLT.Mazur.FiniteEtaleGeometricSplitting
 public import FLT.Mazur.FiniteEtaleImageCover
 public import FLT.Mazur.FiniteEtaleSectionCoverNeighborhood
+public import FLT.Mazur.FiniteEtaleSectionEqualityNeighborhood
 public import FLT.Mazur.FiniteEtaleWholeFiberNeighborhood
 public import FLT.Mazur.FiniteEvaluationLocus
 public import FLT.Mazur.FiniteFamilySupportBaseChange
@@ -5122,6 +5130,8 @@ public import FLT.Mazur.GlobalEvaluationSpan
 public import FLT.Mazur.GlobalGenerationTransport
 public import FLT.Mazur.GlobalIdealPower
 public import FLT.Mazur.GlobalIdealPowerCompatibility
+public import FLT.Mazur.GlobalPicardConstructedFullFiber
+public import FLT.Mazur.GlobalPicardEtaleAcyclicTranslation
 public import FLT.Mazur.GlueDataQuasiSeparated
 public import FLT.Mazur.GradedDegreeProjCoefficientStructure
 public import FLT.Mazur.GradedDegreeProjInverseCharts
@@ -9448,6 +9458,7 @@ public import FLT.Mazur.SheafPullbackSectionReconstruction
 public import FLT.Mazur.SheafPullbackSectionSquare
 public import FLT.Mazur.SheafPullbackTestReconstruction
 public import FLT.Mazur.ShortComplexSumHomologyInclusion
+public import FLT.Mazur.SimultaneousEtaleAcyclicNeighborhood
 public import FLT.Mazur.SimultaneousSmoothAcyclicNeighborhood
 public import FLT.Mazur.SimultaneousSmoothHilbertParameters
 public import FLT.Mazur.SmallAffineParameterBases
@@ -9457,6 +9468,7 @@ public import FLT.Mazur.SmallHilbertTranslationAtlas
 public import FLT.Mazur.SmallRelativeLineParameters
 public import FLT.Mazur.SmallSchemePicard
 public import FLT.Mazur.SmoothAffineCoefficientModels
+public import FLT.Mazur.SmoothAffineEtaleRefinement
 public import FLT.Mazur.SmoothAffineGeometricVanishing
 public import FLT.Mazur.SmoothAffineLineNoetherianModel
 public import FLT.Mazur.SmoothAlgebraReduced
@@ -9481,6 +9493,7 @@ public import FLT.Mazur.SmoothDimensionBound
 public import FLT.Mazur.SmoothEtaleResidueLift
 public import FLT.Mazur.SmoothEtaleSeparableLift
 public import FLT.Mazur.SmoothEtaleStalkLift
+public import FLT.Mazur.SmoothFiberEtaleOpenPoint
 public import FLT.Mazur.SmoothFiberSeparablePoints
 public import FLT.Mazur.SmoothFieldCotangentRank
 public import FLT.Mazur.SmoothFiniteCoefficientBranch
