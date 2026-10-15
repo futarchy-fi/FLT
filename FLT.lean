@@ -2699,6 +2699,7 @@ public import FLT.Mazur.AffineEffectiveSecondReconstruction
 public import FLT.Mazur.AffineEffectiveSuccessiveReconstruction
 public import FLT.Mazur.AffineEnvelopeFiniteNeighborhood
 public import FLT.Mazur.AffineEnvelopeNormTransport
+public import FLT.Mazur.AffineEtaleDenseFiniteGround
 public import FLT.Mazur.AffineEtaleFaithfulCoefficients
 public import FLT.Mazur.AffineEtaleFaithfulNeighborhood
 public import FLT.Mazur.AffineEtaleFaithfulSource
@@ -3971,6 +3972,10 @@ public import FLT.Mazur.CyclicProductEndpoints
 public import FLT.Mazur.CyclicProductNormalization
 public import FLT.Mazur.DRFiberClassification
 public import FLT.Mazur.DedekindPointExtension
+public import FLT.Mazur.DenseGroundEnvelopeInterior
+public import FLT.Mazur.DenseGroundHilbertFullInterior
+public import FLT.Mazur.DenseGroundHilbertPrincipal
+public import FLT.Mazur.DenseGroundResidualSupport
 public import FLT.Mazur.DerivationAlgEquivTransport
 public import FLT.Mazur.DirectImageBaseChangeAdjoints
 public import FLT.Mazur.DirectImageBaseChangeMate
@@ -4798,6 +4803,7 @@ public import FLT.Mazur.FiniteFreeTranslationNormNaturality
 public import FLT.Mazur.FiniteFreeTranslationNormNeighborhood
 public import FLT.Mazur.FiniteFreeTranslationRefinement
 public import FLT.Mazur.FiniteGeometricEtaleTranslations
+public import FLT.Mazur.FiniteGeometricGenericPrincipalInteriors
 public import FLT.Mazur.FiniteGeometricSections
 public import FLT.Mazur.FiniteGroupAffineNeighborhood
 public import FLT.Mazur.FiniteGroupAffineQuotient
@@ -8859,6 +8865,7 @@ public import FLT.Mazur.QuasiCoherentSchemePullback
 public import FLT.Mazur.QuasiCompactEtaleGeometricSections
 public import FLT.Mazur.QuasiCompactGenericFlatOpen
 public import FLT.Mazur.QuasiFiniteCoefficientQuotient
+public import FLT.Mazur.QuasiFiniteGenericFiniteFree
 public import FLT.Mazur.QuasiFiniteGeometricPointIsolation
 public import FLT.Mazur.QuasiFiniteIdealQuotient
 public import FLT.Mazur.QuasiFiniteSmoothLocalEquation
@@ -9975,6 +9982,7 @@ public import FLT.Mazur.SmoothTranslationSectionNaturality
 public import FLT.Mazur.SmoothTranslationSectionRestriction
 public import FLT.Mazur.SpecCartesianAlgebraPushout
 public import FLT.Mazur.SpecChartIdealPreimage
+public import FLT.Mazur.SpecGenericFiniteOpen
 public import FLT.Mazur.SpecGenericFlatOpen
 public import FLT.Mazur.SpectrumFieldCohomologyCoordinates
 public import FLT.Mazur.SpectrumGlobalRange
