@@ -4390,6 +4390,7 @@ public import FLT.Mazur.EllipticRetainedAdjacentCyclicCoordinates
 public import FLT.Mazur.EllipticRetainedBoundaryAtlas
 public import FLT.Mazur.EllipticRetainedBoundaryRange
 public import FLT.Mazur.EllipticRetainedBoundaryTransition
+public import FLT.Mazur.EllipticRetainedFinalCyclicCoordinates
 public import FLT.Mazur.EllipticRetainedHorizontalLineCoordinates
 public import FLT.Mazur.EllipticRetainedLaurentCover
 public import FLT.Mazur.EllipticRetainedSmoothBoundaryCover
