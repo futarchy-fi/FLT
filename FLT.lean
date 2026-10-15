@@ -6984,6 +6984,7 @@ public import FLT.Mazur.PolygonArithmeticMarkedClosedFiber
 public import FLT.Mazur.PolygonArithmeticMarkedLineModel
 public import FLT.Mazur.PolygonArithmeticMarkingCartier
 public import FLT.Mazur.PolygonArithmeticMarkingNeighborhood
+public import FLT.Mazur.PolygonArithmeticMarkingSectionReconstruction
 public import FLT.Mazur.PolygonArithmeticMarkingSpecialization
 public import FLT.Mazur.PolygonArithmeticMarkingUniqueness
 public import FLT.Mazur.PolygonArithmeticNodeNeighborhood
