@@ -7958,6 +7958,7 @@ public import FLT.Mazur.PolygonSmoothingRangeGenerators
 public import FLT.Mazur.PolygonSmoothingReciprocalScaling
 public import FLT.Mazur.PolygonSmoothingRing
 public import FLT.Mazur.PolygonSmoothingRingMap
+public import FLT.Mazur.PolygonSmoothingRingMapBranch
 public import FLT.Mazur.PolygonSmoothingRingMapComposition
 public import FLT.Mazur.PolygonSmoothingScalingBranches
 public import FLT.Mazur.PolygonSmoothingScalingNaturality
