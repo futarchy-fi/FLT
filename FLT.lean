@@ -3185,6 +3185,7 @@ public import FLT.Mazur.AffineTripleUnitCoefficients
 public import FLT.Mazur.AffineTrivialLineSectionOpen
 public import FLT.Mazur.AlgebraicAcyclicOrbitTranslation
 public import FLT.Mazur.AlgebraicClosureEmbeddingConjugacy
+public import FLT.Mazur.AlgebraicEmbeddingTranscendentalFactor
 public import FLT.Mazur.AlgebraicOrderedAllLiftTranslation
 public import FLT.Mazur.AlgebraicPicardFiniteDescent
 public import FLT.Mazur.AlgebraicPointFiniteDescent
