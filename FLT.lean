@@ -6866,9 +6866,17 @@ public import FLT.Mazur.PolygonActionSmooth
 public import FLT.Mazur.PolygonActionTranslation
 public import FLT.Mazur.PolygonActionUnit
 public import FLT.Mazur.PolygonAdicQuotientGrading
+public import FLT.Mazur.PolygonArithmeticCompleteBase
+public import FLT.Mazur.PolygonArithmeticCompleteBaseSquare
 public import FLT.Mazur.PolygonArithmeticNodeNeighborhood
 public import FLT.Mazur.PolygonArithmeticNodePoint
 public import FLT.Mazur.PolygonArithmeticNodeTransition
+public import FLT.Mazur.PolygonArithmeticResidueCoefficients
+public import FLT.Mazur.PolygonArithmeticResidueFiber
+public import FLT.Mazur.PolygonArithmeticStageCoefficients
+public import FLT.Mazur.PolygonArithmeticStageFamilies
+public import FLT.Mazur.PolygonArithmeticStageRestriction
+public import FLT.Mazur.PolygonArithmeticSystem
 public import FLT.Mazur.PolygonAtlas
 public import FLT.Mazur.PolygonAtlasCocone
 public import FLT.Mazur.PolygonAtlasSmoothLocus
@@ -7886,6 +7894,7 @@ public import FLT.Mazur.PowerCohomologyReesScalars
 public import FLT.Mazur.PowerCohomologyScalarMaps
 public import FLT.Mazur.PowerCohomologyShift
 public import FLT.Mazur.PowerScalarSectionCoordinates
+public import FLT.Mazur.PowerSeriesArithmeticCompletion
 public import FLT.Mazur.PowerSeriesCoefficientTransport
 public import FLT.Mazur.PowerSeriesLaurentGenericOpen
 public import FLT.Mazur.PowerSeriesLeadingComposition
