@@ -6970,6 +6970,7 @@ public import FLT.Mazur.PolygonArithmeticIntegralDegree
 public import FLT.Mazur.PolygonArithmeticLayerQuotient
 public import FLT.Mazur.PolygonArithmeticLineCoherence
 public import FLT.Mazur.PolygonArithmeticLineLayers
+public import FLT.Mazur.PolygonArithmeticLineOriginalReduction
 public import FLT.Mazur.PolygonArithmeticLineSectionReconstruction
 public import FLT.Mazur.PolygonArithmeticMarkedClosedFiber
 public import FLT.Mazur.PolygonArithmeticMarkingCartier
