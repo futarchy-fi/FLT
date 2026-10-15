@@ -6281,6 +6281,7 @@ public import FLT.Mazur.ModuleSectionMap
 public import FLT.Mazur.ModuleSectionProjectiveChart
 public import FLT.Mazur.ModuleSectionProjectiveChartNaturality
 public import FLT.Mazur.ModuleSectionProjectiveGluing
+public import FLT.Mazur.ModuleSectionProjectiveNaturality
 public import FLT.Mazur.ModuleSectionProjectiveOOne
 public import FLT.Mazur.ModuleSectionProjectiveOver
 public import FLT.Mazur.ModuleSectionProjectiveOverlap
