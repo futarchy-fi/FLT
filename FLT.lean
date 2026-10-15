@@ -4383,8 +4383,10 @@ public import FLT.Mazur.EllipticResolvedReciprocalIdentity
 public import FLT.Mazur.EllipticResolvedReflectedMixedTranslationEquality
 public import FLT.Mazur.EllipticResolvedRetainedCharts
 public import FLT.Mazur.EllipticResolvedRetainedCover
+public import FLT.Mazur.EllipticResolvedRetainedCyclicCharts
 public import FLT.Mazur.EllipticResolvedRetainedDepthSeparation
 public import FLT.Mazur.EllipticResolvedRetainedIdentitySeparation
+public import FLT.Mazur.EllipticResolvedRetainedIndexComparison
 public import FLT.Mazur.EllipticResolvedRetainedSmoothCharts
 public import FLT.Mazur.EllipticResolvedRetainedTerminalSeparation
 public import FLT.Mazur.EllipticResolvedSmoothPoint
@@ -4397,8 +4399,12 @@ public import FLT.Mazur.EllipticResolvedWholeClosedFiber
 public import FLT.Mazur.EllipticResolvedZeroBoundaryCoverage
 public import FLT.Mazur.EllipticResolvedZeroExteriorCover
 public import FLT.Mazur.EllipticResolvedZeroStageCoverage
+public import FLT.Mazur.EllipticRetainedAdjacentCyclicCoordinates
 public import FLT.Mazur.EllipticRetainedBoundaryAtlas
 public import FLT.Mazur.EllipticRetainedBoundaryRange
+public import FLT.Mazur.EllipticRetainedBoundaryTransition
+public import FLT.Mazur.EllipticRetainedFinalCyclicCoordinates
+public import FLT.Mazur.EllipticRetainedHorizontalLineCoordinates
 public import FLT.Mazur.EllipticRetainedLaurentCover
 public import FLT.Mazur.EllipticRetainedSmoothBoundaryCover
 public import FLT.Mazur.EllipticRetainedTerminalBoundaryCover
@@ -5943,6 +5949,7 @@ public import FLT.Mazur.KernelPairTestIso
 public import FLT.Mazur.KernelPairUnramifiedInverse
 public import FLT.Mazur.LargeDegreeRelativeLineSections
 public import FLT.Mazur.LaurentBoundaryVectorField
+public import FLT.Mazur.LaurentCoboundaryBoundary
 public import FLT.Mazur.LaurentCocycleCoefficientRecovery
 public import FLT.Mazur.LaurentCoefficientDivisibility
 public import FLT.Mazur.LaurentCoefficientEvaluation
@@ -5950,6 +5957,7 @@ public import FLT.Mazur.LaurentCoefficientInjectivity
 public import FLT.Mazur.LaurentCyclicCoordinateChange
 public import FLT.Mazur.LaurentDomainPairUnits
 public import FLT.Mazur.LaurentDomainUnits
+public import FLT.Mazur.LaurentFirstStageParameter
 public import FLT.Mazur.LaurentIdentityIdeal
 public import FLT.Mazur.LaurentLineActionDensity
 public import FLT.Mazur.LaurentLineActionEvaluation
@@ -7049,6 +7057,10 @@ public import FLT.Mazur.PolygonCompleteIdentityFiniteScaling
 public import FLT.Mazur.PolygonCompleteIdentityFiniteSymmetry
 public import FLT.Mazur.PolygonCompleteIdentityFiniteUnitEvaluation
 public import FLT.Mazur.PolygonCompleteIdentityFiniteUnits
+public import FLT.Mazur.PolygonCompleteIdentityFirstActionBoundary
+public import FLT.Mazur.PolygonCompleteIdentityFirstActionCoordinate
+public import FLT.Mazur.PolygonCompleteIdentityFirstActionNodeSpectra
+public import FLT.Mazur.PolygonCompleteIdentityFirstActionNodes
 public import FLT.Mazur.PolygonCompleteIdentityFirstBoundary
 public import FLT.Mazur.PolygonCompleteIdentityFirstCorrection
 public import FLT.Mazur.PolygonCompleteIdentityFirstLinearization
@@ -7062,6 +7074,7 @@ public import FLT.Mazur.PolygonCompleteIdentityMixedObstruction
 public import FLT.Mazur.PolygonCompleteIdentityMulCoherence
 public import FLT.Mazur.PolygonCompleteIdentityMultiplicationCubic
 public import FLT.Mazur.PolygonCompleteIdentityNilpotentDefect
+public import FLT.Mazur.PolygonCompleteIdentityObstructionBoundary
 public import FLT.Mazur.PolygonCompleteIdentityObstructionCocycle
 public import FLT.Mazur.PolygonCompleteIdentityObstructionNormalization
 public import FLT.Mazur.PolygonCompleteIdentityObstructionSymmetry
@@ -7385,6 +7398,8 @@ public import FLT.Mazur.PolygonFirstNodeLaurent
 public import FLT.Mazur.PolygonFirstNodePolynomialExtension
 public import FLT.Mazur.PolygonFirstNodePositiveExtension
 public import FLT.Mazur.PolygonFirstNodeReduction
+public import FLT.Mazur.PolygonFirstNodeScaledBoundary
+public import FLT.Mazur.PolygonFirstNodeScaledExtension
 public import FLT.Mazur.PolygonFirstNodeTangentBoundary
 public import FLT.Mazur.PolygonFirstNodeTangentEquiv
 public import FLT.Mazur.PolygonFirstNodeTangentLift
@@ -7497,6 +7512,7 @@ public import FLT.Mazur.PolygonNodePresentation
 public import FLT.Mazur.PolygonNodeRingComparison
 public import FLT.Mazur.PolygonNodeScalarExtension
 public import FLT.Mazur.PolygonNodeScaling
+public import FLT.Mazur.PolygonNodeUnitBoundary
 public import FLT.Mazur.PolygonNodeWholeBranchCover
 public import FLT.Mazur.PolygonNodesClosed
 public import FLT.Mazur.PolygonNormalizationAlgebra
@@ -10760,6 +10776,7 @@ public import FLT.Mazur.WeierstrassDividedFiniteLineBoundaryGeometry
 public import FLT.Mazur.WeierstrassDividedFiniteLineBranches
 public import FLT.Mazur.WeierstrassDividedFiniteLineContractions
 public import FLT.Mazur.WeierstrassDividedFiniteLineReciprocals
+public import FLT.Mazur.WeierstrassDividedFiniteLineScaling
 public import FLT.Mazur.WeierstrassDividedFiniteNodeComponents
 public import FLT.Mazur.WeierstrassDividedFiniteNodeContractions
 public import FLT.Mazur.WeierstrassDividedFiniteOriginalScaleOpen
@@ -11536,6 +11553,7 @@ public import FLT.Mazur.WeierstrassHorizontalConicPunctureResidue
 public import FLT.Mazur.WeierstrassHorizontalFractionHomExt
 public import FLT.Mazur.WeierstrassHorizontalGlobalChartComparison
 public import FLT.Mazur.WeierstrassHorizontalLaurentBranches
+public import FLT.Mazur.WeierstrassHorizontalLineLaurentComparison
 public import FLT.Mazur.WeierstrassIncidenceCoefficientTransport
 public import FLT.Mazur.WeierstrassIncidenceResidueShearComparison
 public import FLT.Mazur.WeierstrassIncidenceShearConicBoundary
