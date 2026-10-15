@@ -6963,6 +6963,7 @@ public import FLT.Mazur.PolygonArithmeticNodeTransition
 public import FLT.Mazur.PolygonArithmeticOriginalAdicSquare
 public import FLT.Mazur.PolygonArithmeticParameterAnnihilator
 public import FLT.Mazur.PolygonArithmeticParameterImage
+public import FLT.Mazur.PolygonArithmeticParameterRegularity
 public import FLT.Mazur.PolygonArithmeticParameterSections
 public import FLT.Mazur.PolygonArithmeticPointReconstruction
 public import FLT.Mazur.PolygonArithmeticProductLifting
