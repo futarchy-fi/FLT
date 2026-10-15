@@ -4143,6 +4143,7 @@ public import FLT.Mazur.EllipticGoodComponent
 public import FLT.Mazur.EllipticGoodReductionDiscriminant
 public import FLT.Mazur.EllipticGoodReductionModelSections
 public import FLT.Mazur.EllipticGoodReductionOriginalPoints
+public import FLT.Mazur.EllipticIncidenceBoundaryTransport
 public import FLT.Mazur.EllipticInfinityEvaluation
 public import FLT.Mazur.EllipticInfinityParameter
 public import FLT.Mazur.EllipticInfinityPowerSeries
@@ -4336,6 +4337,7 @@ public import FLT.Mazur.EllipticResolvedMixedTranslationEquality
 public import FLT.Mazur.EllipticResolvedOppositeTranslationEquality
 public import FLT.Mazur.EllipticResolvedParameterEquality
 public import FLT.Mazur.EllipticResolvedPositiveExteriorCoverage
+public import FLT.Mazur.EllipticResolvedPositiveStageCoverage
 public import FLT.Mazur.EllipticResolvedReflectedMixedTranslationEquality
 public import FLT.Mazur.EllipticResolvedRetainedCharts
 public import FLT.Mazur.EllipticResolvedRetainedCover
@@ -4346,6 +4348,8 @@ public import FLT.Mazur.EllipticResolvedTerminalCharts
 public import FLT.Mazur.EllipticResolvedTerminalCover
 public import FLT.Mazur.EllipticResolvedTerminalSmoothCharts
 public import FLT.Mazur.EllipticResolvedTorsionInjectivity
+public import FLT.Mazur.EllipticResolvedZeroBoundaryCoverage
+public import FLT.Mazur.EllipticResolvedZeroExteriorCover
 public import FLT.Mazur.EllipticRetainedBoundaryAtlas
 public import FLT.Mazur.EllipticRetainedBoundaryRange
 public import FLT.Mazur.EllipticRetainedLaurentCover
@@ -4475,6 +4479,7 @@ public import FLT.Mazur.EllipticVariableChangeIntegrality
 public import FLT.Mazur.EllipticVariableChangeReduction
 public import FLT.Mazur.EllipticVariableChangeSmoothness
 public import FLT.Mazur.EllipticWeightedScaling
+public import FLT.Mazur.EllipticZeroExteriorSmoothCover
 public import FLT.Mazur.EnlargedPresentationModel
 public import FLT.Mazur.EquifiberedGluingBaseChange
 public import FLT.Mazur.EquifiberedSchemeGluing
@@ -6952,6 +6957,10 @@ public import FLT.Mazur.PolygonCompleteIdentityFiniteRotatedEdges
 public import FLT.Mazur.PolygonCompleteIdentityFiniteScaling
 public import FLT.Mazur.PolygonCompleteIdentityFiniteUnitEvaluation
 public import FLT.Mazur.PolygonCompleteIdentityFiniteUnits
+public import FLT.Mazur.PolygonCompleteIdentityFlatOpenLift
+public import FLT.Mazur.PolygonCompleteIdentityGraphFlat
+public import FLT.Mazur.PolygonCompleteIdentityGraphFlatExt
+public import FLT.Mazur.PolygonCompleteIdentityLiftLocus
 public import FLT.Mazur.PolygonCompleteIdentityMulCoherence
 public import FLT.Mazur.PolygonCompleteIdentityMultiplicationCubic
 public import FLT.Mazur.PolygonCompleteIdentityNilpotentDefect
@@ -8647,6 +8656,7 @@ public import FLT.Mazur.ScalarExtensionDirectSum
 public import FLT.Mazur.ScalarExtensionIsomorphismDescent
 public import FLT.Mazur.ScalarExtensionPullbackDescent
 public import FLT.Mazur.ScalarTowerDivision
+public import FLT.Mazur.SchematicDenseDedekindFlat
 public import FLT.Mazur.SchematicDescentGluing
 public import FLT.Mazur.SchemeAffineAmbientTestCocycle
 public import FLT.Mazur.SchemeAffineAmbientTestNaturality
@@ -10458,6 +10468,7 @@ public import FLT.Mazur.WeierstrassDilatationUnitComparison
 public import FLT.Mazur.WeierstrassDilatationZeroResidue
 public import FLT.Mazur.WeierstrassDilatationZeroResidueBoundary
 public import FLT.Mazur.WeierstrassDilatationZeroResidueGeometry
+public import FLT.Mazur.WeierstrassDilatationZeroResidueSmoothY
 public import FLT.Mazur.WeierstrassDividedAdjacentBoundaryAlgebra
 public import FLT.Mazur.WeierstrassDividedAdjacentBoundaryGeometry
 public import FLT.Mazur.WeierstrassDividedAdjacentBoundaryReciprocals
@@ -12460,11 +12471,13 @@ public import FLT.Mazur.WeierstrassSuccessiveXZeroConicIntegralNormalization
 public import FLT.Mazur.WeierstrassSuccessiveXZeroContraction
 public import FLT.Mazur.WeierstrassSuccessiveXZeroExteriorBoundary
 public import FLT.Mazur.WeierstrassSuccessiveXZeroIncidenceBoundary
+public import FLT.Mazur.WeierstrassSuccessiveXZeroNodeGeometry
 public import FLT.Mazur.WeierstrassSuccessiveXZeroNodeIdeals
 public import FLT.Mazur.WeierstrassSuccessiveXZeroNodeMaps
 public import FLT.Mazur.WeierstrassSuccessiveXZeroNodePunctures
 public import FLT.Mazur.WeierstrassSuccessiveXZeroOverlap
 public import FLT.Mazur.WeierstrassSuccessiveXZeroResidue
+public import FLT.Mazur.WeierstrassSuccessiveXZeroSmoothCover
 public import FLT.Mazur.WeierstrassSuccessiveZeroConicMap
 public import FLT.Mazur.WeierstrassSuccessiveZeroConicShearComparison
 public import FLT.Mazur.WeierstrassSuccessiveZeroConicShearPunctures
