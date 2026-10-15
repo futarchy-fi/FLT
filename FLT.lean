@@ -5124,6 +5124,7 @@ public import FLT.Mazur.GlobalEvaluationSpan
 public import FLT.Mazur.GlobalGenerationTransport
 public import FLT.Mazur.GlobalIdealPower
 public import FLT.Mazur.GlobalIdealPowerCompatibility
+public import FLT.Mazur.GlobalPicardConstructedFullFiber
 public import FLT.Mazur.GlobalPicardEtaleAcyclicTranslation
 public import FLT.Mazur.GlueDataQuasiSeparated
 public import FLT.Mazur.GradedDegreeProjCoefficientStructure
