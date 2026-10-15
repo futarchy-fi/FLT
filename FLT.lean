@@ -4489,6 +4489,7 @@ public import FLT.Mazur.EllipticSubgroupSectionGenericCompatibility
 public import FLT.Mazur.EllipticSubgroupSpecialFiber
 public import FLT.Mazur.EllipticSubgroupTensorEvaluation
 public import FLT.Mazur.EllipticTangentParameterHom
+public import FLT.Mazur.EllipticTerminalCyclicCoordinates
 public import FLT.Mazur.EllipticTripleRootBranches
 public import FLT.Mazur.EllipticTypeIIIDepth
 public import FLT.Mazur.EllipticTypeIIISlope
