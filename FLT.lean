@@ -6485,6 +6485,7 @@ public import FLT.Mazur.NestedOpenCohomologyCoherence
 public import FLT.Mazur.NeutralTwistDirectImage
 public import FLT.Mazur.NilpotentIdealContraction
 public import FLT.Mazur.NilpotentIdealSocle
+public import FLT.Mazur.NilpotentPolynomialEvaluation
 public import FLT.Mazur.NilpotentPolynomialInverse
 public import FLT.Mazur.NilpotentPolynomialInverseBaseChange
 public import FLT.Mazur.NilpotentQuadraticRoot
@@ -8876,6 +8877,7 @@ public import FLT.Mazur.PuncturedNodeRestrictionComparison
 public import FLT.Mazur.PushforwardCech
 public import FLT.Mazur.PushoutModuleScalars
 public import FLT.Mazur.QuadraticComponentBound
+public import FLT.Mazur.QuadraticIncidenceInvolution
 public import FLT.Mazur.QuadraticIncidenceTranslation
 public import FLT.Mazur.QuadraticRootBranchChart
 public import FLT.Mazur.QuadraticRootBranchCoverage
@@ -11077,6 +11079,7 @@ public import FLT.Mazur.WeierstrassDilatationLocalization
 public import FLT.Mazur.WeierstrassDilatationMorphism
 public import FLT.Mazur.WeierstrassDilatationOriginalQuotients
 public import FLT.Mazur.WeierstrassDilatationParameterCongruence
+public import FLT.Mazur.WeierstrassDilatationPolynomialTangents
 public import FLT.Mazur.WeierstrassDilatationReesChart
 public import FLT.Mazur.WeierstrassDilatationRefinement
 public import FLT.Mazur.WeierstrassDilatationResidueBoundaryFunctions
@@ -11092,6 +11095,7 @@ public import FLT.Mazur.WeierstrassDilatationShear
 public import FLT.Mazur.WeierstrassDilatationShearHorizontal
 public import FLT.Mazur.WeierstrassDilatationShearLaurentNormalForm
 public import FLT.Mazur.WeierstrassDilatationShearNodeNormalForm
+public import FLT.Mazur.WeierstrassDilatationTangentInverse
 public import FLT.Mazur.WeierstrassDilatationTerminalSectionBranches
 public import FLT.Mazur.WeierstrassDilatationTerminalSections
 public import FLT.Mazur.WeierstrassDilatationUnitComparison
@@ -11172,6 +11176,7 @@ public import FLT.Mazur.WeierstrassDividedArithmeticInitialComparison
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialIntersection
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialLaurent
+public import FLT.Mazur.WeierstrassDividedArithmeticInitialNodes
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialSlope
 public import FLT.Mazur.WeierstrassDividedArithmeticNodeCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticNodeOpen
@@ -12369,7 +12374,10 @@ public import FLT.Mazur.WeierstrassModificationReesYScaleScheme
 public import FLT.Mazur.WeierstrassModificationShearLocalization
 public import FLT.Mazur.WeierstrassModificationShearOverlap
 public import FLT.Mazur.WeierstrassModificationXAlgebra
+public import FLT.Mazur.WeierstrassModificationXArithmeticInitialCover
 public import FLT.Mazur.WeierstrassModificationXArithmeticInitialNode
+public import FLT.Mazur.WeierstrassModificationXArithmeticNodeBoundary
+public import FLT.Mazur.WeierstrassModificationXArithmeticTensorNodes
 public import FLT.Mazur.WeierstrassModificationXBaseChange
 public import FLT.Mazur.WeierstrassModificationXBaseChangeGenerators
 public import FLT.Mazur.WeierstrassModificationXCoefficients
@@ -12459,14 +12467,22 @@ public import FLT.Mazur.WeierstrassModificationXIncidenceBranchCover
 public import FLT.Mazur.WeierstrassModificationXIncidenceLineSections
 public import FLT.Mazur.WeierstrassModificationXIncidenceRegular
 public import FLT.Mazur.WeierstrassModificationXIncidenceSectionMaps
+public import FLT.Mazur.WeierstrassModificationXInvolution
 public import FLT.Mazur.WeierstrassModificationXLaurentBranches
 public import FLT.Mazur.WeierstrassModificationXLaurentEvaluation
+public import FLT.Mazur.WeierstrassModificationXLaurentNodeDenominator
+public import FLT.Mazur.WeierstrassModificationXLaurentNodeParameter
+public import FLT.Mazur.WeierstrassModificationXLaurentNodeRestriction
 public import FLT.Mazur.WeierstrassModificationXLaurentRoot
 public import FLT.Mazur.WeierstrassModificationXLocalization
 public import FLT.Mazur.WeierstrassModificationXMorphism
+public import FLT.Mazur.WeierstrassModificationXNodeDenominators
 public import FLT.Mazur.WeierstrassModificationXNodeInverseEvaluation
 public import FLT.Mazur.WeierstrassModificationXNodeInverseFunctions
 public import FLT.Mazur.WeierstrassModificationXNodeInverseParameter
+public import FLT.Mazur.WeierstrassModificationXNodeRestriction
+public import FLT.Mazur.WeierstrassModificationXOppositeNodeEquiv
+public import FLT.Mazur.WeierstrassModificationXOppositeNodeGeometry
 public import FLT.Mazur.WeierstrassModificationXOriginalLocalization
 public import FLT.Mazur.WeierstrassModificationXOverlap
 public import FLT.Mazur.WeierstrassModificationXPolynomialFactors
