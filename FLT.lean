@@ -6919,7 +6919,9 @@ public import FLT.Mazur.PolygonActionTranslation
 public import FLT.Mazur.PolygonActionUnit
 public import FLT.Mazur.PolygonAdicQuotientGrading
 public import FLT.Mazur.PolygonArithmeticAdicImmersion
+public import FLT.Mazur.PolygonArithmeticAdicRealization
 public import FLT.Mazur.PolygonArithmeticAdicReduction
+public import FLT.Mazur.PolygonArithmeticAffinePoints
 public import FLT.Mazur.PolygonArithmeticBoundaryAmple
 public import FLT.Mazur.PolygonArithmeticBoundaryDivisor
 public import FLT.Mazur.PolygonArithmeticBoundaryLine
@@ -6934,12 +6936,14 @@ public import FLT.Mazur.PolygonArithmeticCompatibleScalars
 public import FLT.Mazur.PolygonArithmeticCompatibleZero
 public import FLT.Mazur.PolygonArithmeticCompleteBase
 public import FLT.Mazur.PolygonArithmeticCompleteBaseSquare
+public import FLT.Mazur.PolygonArithmeticCompleteMarkings
 public import FLT.Mazur.PolygonArithmeticDegreeComplete
 public import FLT.Mazur.PolygonArithmeticDegreeExactness
 public import FLT.Mazur.PolygonArithmeticDegreeFinite
 public import FLT.Mazur.PolygonArithmeticDegreeFiniteStage
 public import FLT.Mazur.PolygonArithmeticDegreeLifting
 public import FLT.Mazur.PolygonArithmeticDegreeProjection
+public import FLT.Mazur.PolygonArithmeticFiberMarkings
 public import FLT.Mazur.PolygonArithmeticFiniteType
 public import FLT.Mazur.PolygonArithmeticFlatLayer
 public import FLT.Mazur.PolygonArithmeticGradedExactness
@@ -6950,6 +6954,9 @@ public import FLT.Mazur.PolygonArithmeticIntegralDegree
 public import FLT.Mazur.PolygonArithmeticLayerQuotient
 public import FLT.Mazur.PolygonArithmeticLineCoherence
 public import FLT.Mazur.PolygonArithmeticLineLayers
+public import FLT.Mazur.PolygonArithmeticMarkingNeighborhood
+public import FLT.Mazur.PolygonArithmeticMarkingSpecialization
+public import FLT.Mazur.PolygonArithmeticMarkingUniqueness
 public import FLT.Mazur.PolygonArithmeticNodeNeighborhood
 public import FLT.Mazur.PolygonArithmeticNodePoint
 public import FLT.Mazur.PolygonArithmeticNodeTransition
@@ -6957,6 +6964,7 @@ public import FLT.Mazur.PolygonArithmeticOriginalAdicSquare
 public import FLT.Mazur.PolygonArithmeticParameterAnnihilator
 public import FLT.Mazur.PolygonArithmeticParameterImage
 public import FLT.Mazur.PolygonArithmeticParameterSections
+public import FLT.Mazur.PolygonArithmeticPointReconstruction
 public import FLT.Mazur.PolygonArithmeticProductLifting
 public import FLT.Mazur.PolygonArithmeticProjSquare
 public import FLT.Mazur.PolygonArithmeticProperProj
@@ -6971,7 +6979,9 @@ public import FLT.Mazur.PolygonArithmeticResidueLifting
 public import FLT.Mazur.PolygonArithmeticResidueLine
 public import FLT.Mazur.PolygonArithmeticResidueNilpotence
 public import FLT.Mazur.PolygonArithmeticRestrictionKernel
+public import FLT.Mazur.PolygonArithmeticRetainedMarkings
 public import FLT.Mazur.PolygonArithmeticScalarExactness
+public import FLT.Mazur.PolygonArithmeticSchemePointExt
 public import FLT.Mazur.PolygonArithmeticSectionAnnihilator
 public import FLT.Mazur.PolygonArithmeticSectionFunctor
 public import FLT.Mazur.PolygonArithmeticSectionRings
@@ -6982,10 +6992,14 @@ public import FLT.Mazur.PolygonArithmeticStageConstants
 public import FLT.Mazur.PolygonArithmeticStageFamilies
 public import FLT.Mazur.PolygonArithmeticStageGrading
 public import FLT.Mazur.PolygonArithmeticStageLineQuotient
+public import FLT.Mazur.PolygonArithmeticStageNaturality
 public import FLT.Mazur.PolygonArithmeticStageProj
+public import FLT.Mazur.PolygonArithmeticStageProjTransition
 public import FLT.Mazur.PolygonArithmeticStageProper
 public import FLT.Mazur.PolygonArithmeticStageRecovery
 public import FLT.Mazur.PolygonArithmeticStageRestriction
+public import FLT.Mazur.PolygonArithmeticStageRingLift
+public import FLT.Mazur.PolygonArithmeticStageTransition
 public import FLT.Mazur.PolygonArithmeticStageVanishing
 public import FLT.Mazur.PolygonArithmeticSystem
 public import FLT.Mazur.PolygonArithmeticTensorQuotient
