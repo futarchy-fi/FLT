@@ -11109,6 +11109,7 @@ public import FLT.Mazur.WeierstrassDilatationTangentCorrection
 public import FLT.Mazur.WeierstrassDilatationTangentEquiv
 public import FLT.Mazur.WeierstrassDilatationTangentEvaluation
 public import FLT.Mazur.WeierstrassDilatationTangentInverse
+public import FLT.Mazur.WeierstrassDilatationTerminalNode
 public import FLT.Mazur.WeierstrassDilatationTerminalSectionBranches
 public import FLT.Mazur.WeierstrassDilatationTerminalSections
 public import FLT.Mazur.WeierstrassDilatationUnitComparison
