@@ -3185,6 +3185,7 @@ public import FLT.Mazur.AffineTripleUnitCoefficients
 public import FLT.Mazur.AffineTrivialLineSectionOpen
 public import FLT.Mazur.AlgebraicAcyclicOrbitTranslation
 public import FLT.Mazur.AlgebraicClosureEmbeddingConjugacy
+public import FLT.Mazur.AlgebraicEmbeddingTranscendentalFactor
 public import FLT.Mazur.AlgebraicOrderedAllLiftTranslation
 public import FLT.Mazur.AlgebraicPicardFiniteDescent
 public import FLT.Mazur.AlgebraicPointFiniteDescent
@@ -6402,6 +6403,7 @@ public import FLT.Mazur.NeronPolygonRotationAction
 public import FLT.Mazur.NeronPolygonScaling
 public import FLT.Mazur.NestedOpenCohomologyCoherence
 public import FLT.Mazur.NeutralTwistDirectImage
+public import FLT.Mazur.NilpotentIdealSocle
 public import FLT.Mazur.NodalFamilyGeometricConnected
 public import FLT.Mazur.NodalFiberAlgebra
 public import FLT.Mazur.NodalFiberBoundedParameterTransport
@@ -6798,6 +6800,11 @@ public import FLT.Mazur.OrderedTranslationEtaleSeparableLift
 public import FLT.Mazur.OrderedTranslationLocallyRingedMap
 public import FLT.Mazur.OrderedTranslationOriginalFiber
 public import FLT.Mazur.OrderedTranslationQuotientCover
+public import FLT.Mazur.OriginalAffineChartOrbit
+public import FLT.Mazur.OriginalAffineFiberCoordinates
+public import FLT.Mazur.OriginalAffineFiberOrbit
+public import FLT.Mazur.OriginalAffineSchemeOrbit
+public import FLT.Mazur.OriginalAlgebraicDetectingSchemeOpen
 public import FLT.Mazur.OriginalAlgebraicPointDescent
 public import FLT.Mazur.OriginalFamilyIdentityComparison
 public import FLT.Mazur.OriginalFamilySectionComposition
@@ -6806,11 +6813,15 @@ public import FLT.Mazur.OriginalFamilyTwistComparison
 public import FLT.Mazur.OriginalFamilyTwistComposition
 public import FLT.Mazur.OriginalFiberFiniteSectionOrbit
 public import FLT.Mazur.OriginalFiniteCoefficientOrbit
+public import FLT.Mazur.OriginalGeometricallyIntegralOpen
 public import FLT.Mazur.OriginalHilbertFiniteType
 public import FLT.Mazur.OriginalInvariantOpenAllEtaleLifts
 public import FLT.Mazur.OriginalRestrictedHilbertIntersection
 public import FLT.Mazur.OriginalTensorOrbitEvaluation
+public import FLT.Mazur.OriginalTensorOrbitMorphisms
 public import FLT.Mazur.OriginalTranscendentalAffineOpenOrbit
+public import FLT.Mazur.OriginalTranscendentalDetectingOpen
+public import FLT.Mazur.OriginalTranscendentalResidueConjugacy
 public import FLT.Mazur.OriginalTwistIsoRigidity
 public import FLT.Mazur.OriginalTwistLineOrbits
 public import FLT.Mazur.OriginalTwistOrbitRelation
@@ -7178,6 +7189,11 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstDefectFormula
 public import FLT.Mazur.PolygonCompleteIdentityFirstDefectProduct
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphAlgebra
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphConductor
+public import FLT.Mazur.PolygonCompleteIdentityFirstGraphFiberClosure
+public import FLT.Mazur.PolygonCompleteIdentityFirstGraphFiberCoordinates
+public import FLT.Mazur.PolygonCompleteIdentityFirstGraphFiberDensity
+public import FLT.Mazur.PolygonCompleteIdentityFirstGraphFiberPuncture
+public import FLT.Mazur.PolygonCompleteIdentityFirstGraphFiberSocle
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphFiberSplit
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphFiberSupport
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphFlat
@@ -8181,6 +8197,7 @@ public import FLT.Mazur.PrincipalOldArrowRepresentatives
 public import FLT.Mazur.PrincipalOpenIntegerModel
 public import FLT.Mazur.PrincipalOpenIntersectionModels
 public import FLT.Mazur.PrincipalOpenNormalization
+public import FLT.Mazur.PrincipalOpenSchematicDensityCriterion
 public import FLT.Mazur.PrincipalOpenSectionAlgebra
 public import FLT.Mazur.PrincipalOpenTensor
 public import FLT.Mazur.PrincipalOpenTensorEvaluation
@@ -9733,6 +9750,7 @@ public import FLT.Mazur.SplitSheafLinePullback
 public import FLT.Mazur.SplitSheafLinePullbackComposition
 public import FLT.Mazur.SquareZeroPairAdjoin
 public import FLT.Mazur.SquareZeroReductionKernel
+public import FLT.Mazur.SquareZeroReductionSocle
 public import FLT.Mazur.SquareZeroReductionSpectrum
 public import FLT.Mazur.SquareZeroScalarGeneration
 public import FLT.Mazur.StableAffineQuotientAffineDescent
@@ -9775,6 +9793,7 @@ public import FLT.Mazur.StructureModuleScalarTransitions
 public import FLT.Mazur.StructureRingCohomologyIso
 public import FLT.Mazur.SubfunctorRepresentedPullback
 public import FLT.Mazur.SuccessiveIncidenceAlgebra
+public import FLT.Mazur.SupportedReductionLocalization
 public import FLT.Mazur.SurjectiveAlgHomKernelEquiv
 public import FLT.Mazur.SurjectiveDominantEpi
 public import FLT.Mazur.SurjectiveIdealPowerQuotient
@@ -9826,6 +9845,7 @@ public import FLT.Mazur.TildeSourceSectionComparison
 public import FLT.Mazur.TorusChartScalars
 public import FLT.Mazur.TranscendentalAffineOpenOrbit
 public import FLT.Mazur.TranscendentalCoefficientOrbitAvoidance
+public import FLT.Mazur.TranscendentalResidueMorphismConjugacy
 public import FLT.Mazur.TranslatedHilbertAffineImmersion
 public import FLT.Mazur.TranslatedHilbertAffineRestriction
 public import FLT.Mazur.TranslatedHilbertCanonicalAffineChart
