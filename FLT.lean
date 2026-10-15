@@ -3713,6 +3713,7 @@ public import FLT.Mazur.ClosedProjectiveSerreVanishing
 public import FLT.Mazur.ClosedPushforwardCohomology
 public import FLT.Mazur.ClosedPushforwardFull
 public import FLT.Mazur.ClosedPushforwardRestriction
+public import FLT.Mazur.ClosedRelationOrbitEmbedding
 public import FLT.Mazur.ClosedSubschemeCohomology
 public import FLT.Mazur.ClosedSubsets
 public import FLT.Mazur.CocycleGlobalCoordinates
@@ -4604,6 +4605,7 @@ public import FLT.Mazur.EllipticZeroExteriorSmoothCover
 public import FLT.Mazur.EnlargedPresentationModel
 public import FLT.Mazur.EnvelopeBoundaryIdealSheaf
 public import FLT.Mazur.EnvelopeBoundaryIdealTransport
+public import FLT.Mazur.EnvelopeBoundaryRelation
 public import FLT.Mazur.EnvelopeBoundaryTestLift
 public import FLT.Mazur.EnvelopeInteriorFiniteAffineCover
 public import FLT.Mazur.EnvelopeInteriorUnitIdealLift
@@ -5524,7 +5526,12 @@ public import FLT.Mazur.HilbertBasisSchemeOver
 public import FLT.Mazur.HilbertBasisTupleAffineComparison
 public import FLT.Mazur.HilbertBasisTupleIntersection
 public import FLT.Mazur.HilbertBasisTupleSchemeComparison
+public import FLT.Mazur.HilbertBoundaryClosedRelation
 public import FLT.Mazur.HilbertBoundaryEtaleIdeals
+public import FLT.Mazur.HilbertBoundaryKernelPair
+public import FLT.Mazur.HilbertBoundaryOrbit
+public import FLT.Mazur.HilbertBoundaryQuotient
+public import FLT.Mazur.HilbertBoundaryRelationTests
 public import FLT.Mazur.HilbertBoundarySchemeTests
 public import FLT.Mazur.HilbertBoundedAmbientAtlas
 public import FLT.Mazur.HilbertBoundedChartClosedEmbedding
