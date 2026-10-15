@@ -6921,6 +6921,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFiniteRotatedEdges
 public import FLT.Mazur.PolygonCompleteIdentityFiniteScaling
 public import FLT.Mazur.PolygonCompleteIdentityFiniteUnitEvaluation
 public import FLT.Mazur.PolygonCompleteIdentityFiniteUnits
+public import FLT.Mazur.PolygonCompleteIdentityMulCoherence
 public import FLT.Mazur.PolygonCompleteIdentityMultiplicationCubic
 public import FLT.Mazur.PolygonCompleteIdentityNilpotentDefect
 public import FLT.Mazur.PolygonCompleteIdentityOrderZeroLaw
