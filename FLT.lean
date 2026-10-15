@@ -6929,6 +6929,7 @@ public import FLT.Mazur.PolygonCompleteIdentitySmoothAction
 public import FLT.Mazur.PolygonCompleteIdentitySmoothActionCoordinates
 public import FLT.Mazur.PolygonCompleteIdentitySmoothActionEquivariance
 public import FLT.Mazur.PolygonCompleteIdentityStageTorus
+public import FLT.Mazur.PolygonCompleteIdentityUnitCoherence
 public import FLT.Mazur.PolygonCompleteLineCohomology
 public import FLT.Mazur.PolygonCompleteLineHomExt
 public import FLT.Mazur.PolygonCompleteLineHomReconstruction
