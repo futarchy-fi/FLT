@@ -7590,6 +7590,7 @@ public import FLT.Mazur.PolygonParameterTranslation
 public import FLT.Mazur.PolygonParameterTranslationBaseChange
 public import FLT.Mazur.PolygonParameterTranslationOriginal
 public import FLT.Mazur.PolygonParameterizedHomExt
+public import FLT.Mazur.PolygonPinchingAdjustedClosedComparison
 public import FLT.Mazur.PolygonPinchingAffineBaseChange
 public import FLT.Mazur.PolygonPinchingCompleteClosedComparison
 public import FLT.Mazur.PolygonPinchingCompleteCubicContraction
