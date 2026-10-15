@@ -5158,6 +5158,7 @@ public import FLT.Mazur.GeometricFiniteAllLiftTranslations
 public import FLT.Mazur.GeometricFixedPointTranslation
 public import FLT.Mazur.GeometricFppfCoverSection
 public import FLT.Mazur.GeometricFullInteriorFiniteKernel
+public import FLT.Mazur.GeometricFullInteriorQuotient
 public import FLT.Mazur.GeometricHilbertTranslation
 public import FLT.Mazur.GeometricOpenFactorization
 public import FLT.Mazur.GeometricOrderedAllLiftTranslation
