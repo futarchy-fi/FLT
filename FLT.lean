@@ -8417,6 +8417,7 @@ public import FLT.Mazur.PrincipalOpenSchematicDensityCriterion
 public import FLT.Mazur.PrincipalOpenSectionAlgebra
 public import FLT.Mazur.PrincipalOpenTensor
 public import FLT.Mazur.PrincipalOpenTensorEvaluation
+public import FLT.Mazur.PrincipalOpenTensorEvaluationExt
 public import FLT.Mazur.PrincipalOpenTensorGeometry
 public import FLT.Mazur.PrincipalOpenTensorPullback
 public import FLT.Mazur.PrincipalOpenTensorRange
@@ -11099,6 +11100,8 @@ public import FLT.Mazur.WeierstrassDividedAdjacentRetainedTensorIntersection
 public import FLT.Mazur.WeierstrassDividedAdjacentSectionSeparation
 public import FLT.Mazur.WeierstrassDividedAdjacentSplitNodeBranches
 public import FLT.Mazur.WeierstrassDividedAdjacentTensorBoundary
+public import FLT.Mazur.WeierstrassDividedAdjacentTensorSlope
+public import FLT.Mazur.WeierstrassDividedAdjacentTensorSlopeGeometry
 public import FLT.Mazur.WeierstrassDividedAdjacentTerminalIntersection
 public import FLT.Mazur.WeierstrassDividedAdjacentZeroBranchCompatibility
 public import FLT.Mazur.WeierstrassDividedAdjacentZeroComponents
@@ -11114,8 +11117,11 @@ public import FLT.Mazur.WeierstrassDividedAdjacentZeroOrderedConicIntersection
 public import FLT.Mazur.WeierstrassDividedAdjacentZeroParameterBranchCompatibility
 public import FLT.Mazur.WeierstrassDividedAdjacentZeroParameterIntersection
 public import FLT.Mazur.WeierstrassDividedAdjacentZeroSectionSeparation
+public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentAtlas
 public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentBranch
+public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentFactorization
 public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentIntersection
+public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentSlope
 public import FLT.Mazur.WeierstrassDividedArithmeticBoundaryCharts
 public import FLT.Mazur.WeierstrassDividedArithmeticBranchRestriction
 public import FLT.Mazur.WeierstrassDividedArithmeticCoordinateTransition
@@ -12876,6 +12882,9 @@ public import FLT.Mazur.WeierstrassSplitNodalUnitPoints
 public import FLT.Mazur.WeierstrassSplitNormalizationInfinity
 public import FLT.Mazur.WeierstrassSplitNormalizationInfinityParameter
 public import FLT.Mazur.WeierstrassSquareZeroTorsionRigidity
+public import FLT.Mazur.WeierstrassSuccessiveAdjacentBranchGeometry
+public import FLT.Mazur.WeierstrassSuccessiveAdjacentLaurentSlope
+public import FLT.Mazur.WeierstrassSuccessiveAdjacentSlopeOverlap
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticBranchBoundary
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticNodeChart
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticNodeCoverage
@@ -12898,6 +12907,9 @@ public import FLT.Mazur.WeierstrassSuccessiveFractionAction
 public import FLT.Mazur.WeierstrassSuccessiveFractionRegular
 public import FLT.Mazur.WeierstrassSuccessiveHorizontalPreimage
 public import FLT.Mazur.WeierstrassSuccessiveInfinityCenter
+public import FLT.Mazur.WeierstrassSuccessiveLaurentBoundary
+public import FLT.Mazur.WeierstrassSuccessiveLaurentSlopeGeometry
+public import FLT.Mazur.WeierstrassSuccessiveLaurentSlopeLocalization
 public import FLT.Mazur.WeierstrassSuccessiveLocalAction
 public import FLT.Mazur.WeierstrassSuccessiveNilpotentBranch
 public import FLT.Mazur.WeierstrassSuccessiveNilpotentNodeChart
@@ -12980,6 +12992,8 @@ public import FLT.Mazur.WeierstrassSuccessiveShearTerminalZeroConicBranches
 public import FLT.Mazur.WeierstrassSuccessiveShearTerminalZeroConicCoordinates
 public import FLT.Mazur.WeierstrassSuccessiveShearTerminalZeroNodeConic
 public import FLT.Mazur.WeierstrassSuccessiveSimpleSlopeChart
+public import FLT.Mazur.WeierstrassSuccessiveTensorLaurentCoordinates
+public import FLT.Mazur.WeierstrassSuccessiveTensorLaurentEvaluation
 public import FLT.Mazur.WeierstrassSuccessiveTensorSlopeBoundary
 public import FLT.Mazur.WeierstrassSuccessiveTensorSlopeCoordinates
 public import FLT.Mazur.WeierstrassSuccessiveXAlgebra
