@@ -6921,6 +6921,7 @@ public import FLT.Mazur.PolygonArithmeticCompatibleScalars
 public import FLT.Mazur.PolygonArithmeticCompatibleZero
 public import FLT.Mazur.PolygonArithmeticCompleteBase
 public import FLT.Mazur.PolygonArithmeticCompleteBaseSquare
+public import FLT.Mazur.PolygonArithmeticDegreeComplete
 public import FLT.Mazur.PolygonArithmeticDegreeExactness
 public import FLT.Mazur.PolygonArithmeticDegreeLifting
 public import FLT.Mazur.PolygonArithmeticDegreeProjection
