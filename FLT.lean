@@ -2871,6 +2871,7 @@ public import FLT.Mazur.AffineHilbertFullInteriorChart
 public import FLT.Mazur.AffineHilbertFullRelationRestriction
 public import FLT.Mazur.AffineHilbertGenericEnvelopeCriterion
 public import FLT.Mazur.AffineHilbertGeometricAcyclicFiber
+public import FLT.Mazur.AffineHilbertGeometricEtaleSpread
 public import FLT.Mazur.AffineHilbertGeometricFiberNecessity
 public import FLT.Mazur.AffineHilbertGeometricFiberSections
 public import FLT.Mazur.AffineHilbertGeometricPointTest
