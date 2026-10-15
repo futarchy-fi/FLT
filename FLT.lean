@@ -5542,6 +5542,7 @@ public import FLT.Mazur.HilbertBoundaryInfinitesimalArrows
 public import FLT.Mazur.HilbertBoundaryKernelPair
 public import FLT.Mazur.HilbertBoundaryOrbit
 public import FLT.Mazur.HilbertBoundaryQuotient
+public import FLT.Mazur.HilbertBoundaryQuotientGerms
 public import FLT.Mazur.HilbertBoundaryQuotientNilpotence
 public import FLT.Mazur.HilbertBoundaryQuotientSections
 public import FLT.Mazur.HilbertBoundaryRelationNilpotence
