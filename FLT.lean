@@ -8269,6 +8269,7 @@ public import FLT.Mazur.PrincipalLayeredPaths
 public import FLT.Mazur.PrincipalLayeredStages
 public import FLT.Mazur.PrincipalLocalizationGeneration
 public import FLT.Mazur.PrincipalLocalizationIntersection
+public import FLT.Mazur.PrincipalLocalizationNamedSquare
 public import FLT.Mazur.PrincipalLocalizationPullback
 public import FLT.Mazur.PrincipalLocalizationSquare
 public import FLT.Mazur.PrincipalLocalizationTensor
