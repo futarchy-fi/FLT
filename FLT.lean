@@ -5970,6 +5970,7 @@ public import FLT.Mazur.LaurentFirstStageParameter
 public import FLT.Mazur.LaurentIdentityIdeal
 public import FLT.Mazur.LaurentLineActionDensity
 public import FLT.Mazur.LaurentLineActionEvaluation
+public import FLT.Mazur.LaurentNodePrincipalParts
 public import FLT.Mazur.LaurentNormalizedReduction
 public import FLT.Mazur.LaurentPairCoefficientNaturality
 public import FLT.Mazur.LaurentPairEvaluation
