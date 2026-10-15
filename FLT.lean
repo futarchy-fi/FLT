@@ -6938,6 +6938,7 @@ public import FLT.Mazur.PolygonArithmeticTensorQuotient
 public import FLT.Mazur.PolygonArithmeticTowerAssembly
 public import FLT.Mazur.PolygonArithmeticTowerDivision
 public import FLT.Mazur.PolygonArithmeticUniformLifting
+public import FLT.Mazur.PolygonArithmeticZeroExactness
 public import FLT.Mazur.PolygonAtlas
 public import FLT.Mazur.PolygonAtlasCocone
 public import FLT.Mazur.PolygonAtlasSmoothLocus
