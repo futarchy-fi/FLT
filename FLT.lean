@@ -4025,6 +4025,7 @@ public import FLT.Mazur.EllipticAdditiveScalingDepth
 public import FLT.Mazur.EllipticAdditiveStarTranslation
 public import FLT.Mazur.EllipticAdditiveTorsionExclusion
 public import FLT.Mazur.EllipticAdditiveTranslationDepth
+public import FLT.Mazur.EllipticAdjacentRetainedBoundaryCover
 public import FLT.Mazur.EllipticCoefficientModificationSections
 public import FLT.Mazur.EllipticCoefficientSectionNaturality
 public import FLT.Mazur.EllipticCoefficientSmoothSectionGroup
