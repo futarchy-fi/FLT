@@ -8403,6 +8403,7 @@ public import FLT.Mazur.PrincipalOpenSchematicDensityCriterion
 public import FLT.Mazur.PrincipalOpenSectionAlgebra
 public import FLT.Mazur.PrincipalOpenTensor
 public import FLT.Mazur.PrincipalOpenTensorEvaluation
+public import FLT.Mazur.PrincipalOpenTensorEvaluationExt
 public import FLT.Mazur.PrincipalOpenTensorGeometry
 public import FLT.Mazur.PrincipalOpenTensorPullback
 public import FLT.Mazur.PrincipalOpenTensorRange
