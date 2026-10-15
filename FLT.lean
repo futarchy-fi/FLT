@@ -7069,6 +7069,7 @@ public import FLT.Mazur.PolygonArithmeticGradedExactness
 public import FLT.Mazur.PolygonArithmeticGradedParameter
 public import FLT.Mazur.PolygonArithmeticHomogeneousReduction
 public import FLT.Mazur.PolygonArithmeticHomogeneousSections
+public import FLT.Mazur.PolygonArithmeticIdealPowers
 public import FLT.Mazur.PolygonArithmeticIntegralDegree
 public import FLT.Mazur.PolygonArithmeticLayerQuotient
 public import FLT.Mazur.PolygonArithmeticLineCoherence
