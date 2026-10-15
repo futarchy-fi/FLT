@@ -10444,6 +10444,7 @@ public import FLT.Mazur.WeierstrassDilatationUnitComparison
 public import FLT.Mazur.WeierstrassDilatationZeroResidue
 public import FLT.Mazur.WeierstrassDilatationZeroResidueBoundary
 public import FLT.Mazur.WeierstrassDilatationZeroResidueGeometry
+public import FLT.Mazur.WeierstrassDilatationZeroResidueSmoothY
 public import FLT.Mazur.WeierstrassDividedAdjacentBoundaryAlgebra
 public import FLT.Mazur.WeierstrassDividedAdjacentBoundaryGeometry
 public import FLT.Mazur.WeierstrassDividedAdjacentBoundaryReciprocals
