@@ -11300,6 +11300,7 @@ public import FLT.Mazur.WeierstrassDividedSmoothTerminalCoefficientAction
 public import FLT.Mazur.WeierstrassDividedSmoothTerminalIntegralAction
 public import FLT.Mazur.WeierstrassDividedSplitCycleCommonNode
 public import FLT.Mazur.WeierstrassDividedSplitCycleConstancy
+public import FLT.Mazur.WeierstrassDividedSplitGeometricContraction
 public import FLT.Mazur.WeierstrassDividedSplitNormalizationComparison
 public import FLT.Mazur.WeierstrassDividedSuccessiveOriginalY
 public import FLT.Mazur.WeierstrassDividedSuccessorActionAtlas
