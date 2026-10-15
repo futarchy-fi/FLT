@@ -6952,6 +6952,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFinitePair
 public import FLT.Mazur.PolygonCompleteIdentityFiniteReduction
 public import FLT.Mazur.PolygonCompleteIdentityFiniteRotatedEdges
 public import FLT.Mazur.PolygonCompleteIdentityFiniteScaling
+public import FLT.Mazur.PolygonCompleteIdentityFiniteSymmetry
 public import FLT.Mazur.PolygonCompleteIdentityFiniteUnitEvaluation
 public import FLT.Mazur.PolygonCompleteIdentityFiniteUnits
 public import FLT.Mazur.PolygonCompleteIdentityFlatOpenLift
