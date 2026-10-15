@@ -4627,6 +4627,7 @@ public import FLT.Mazur.EventualTwistVanishing
 public import FLT.Mazur.ExactFunctorInjectiveExt
 public import FLT.Mazur.ExactOrderCyclicPowers
 public import FLT.Mazur.ExactSourceDenominatorLift
+public import FLT.Mazur.ExtendedAffineRationalDensity
 public import FLT.Mazur.FCurveContracts
 public import FLT.Mazur.FaithfulNeighborhoodCurve
 public import FLT.Mazur.FaithfulTensorVanishing
