@@ -6867,6 +6867,7 @@ public import FLT.Mazur.PolygonActionTranslation
 public import FLT.Mazur.PolygonActionUnit
 public import FLT.Mazur.PolygonAdicQuotientGrading
 public import FLT.Mazur.PolygonArithmeticBoundaryDivisor
+public import FLT.Mazur.PolygonArithmeticBoundaryLine
 public import FLT.Mazur.PolygonArithmeticCompleteBase
 public import FLT.Mazur.PolygonArithmeticCompleteBaseSquare
 public import FLT.Mazur.PolygonArithmeticNodeNeighborhood
