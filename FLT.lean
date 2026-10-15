@@ -7344,6 +7344,7 @@ public import FLT.Mazur.PolygonFirstNodeBoundary
 public import FLT.Mazur.PolygonFirstNodeEndomorphism
 public import FLT.Mazur.PolygonFirstNodeLaurent
 public import FLT.Mazur.PolygonFirstNodePolynomialExtension
+public import FLT.Mazur.PolygonFirstNodePositiveExtension
 public import FLT.Mazur.PolygonFirstNodeReduction
 public import FLT.Mazur.PolygonFirstNodeTangentBoundary
 public import FLT.Mazur.PolygonFirstNodeTangentEquiv
