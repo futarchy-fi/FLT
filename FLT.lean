@@ -9879,6 +9879,7 @@ public import FLT.Mazur.VariableHilbertFixedBaseProjection
 public import FLT.Mazur.VariableHilbertFixedBaseQuotient
 public import FLT.Mazur.VariableHilbertFixedBaseRelation
 public import FLT.Mazur.VariableHilbertFppfQuotient
+public import FLT.Mazur.VariableHilbertGeometricOrbitRetention
 public import FLT.Mazur.VariableHilbertGroundBaseCartesian
 public import FLT.Mazur.VariableHilbertIntersectionBaseChange
 public import FLT.Mazur.VariableHilbertInvariantFunctionDescent
