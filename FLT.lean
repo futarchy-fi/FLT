@@ -2812,6 +2812,9 @@ public import FLT.Mazur.AffineHilbertFiniteModelPrincipalFppf
 public import FLT.Mazur.AffineHilbertFiniteModelPrincipalInverses
 public import FLT.Mazur.AffineHilbertFiniteModelSourceBranch
 public import FLT.Mazur.AffineHilbertFiniteModelUnramifiedInverses
+public import FLT.Mazur.AffineHilbertFiniteSelectorFixedSeed
+public import FLT.Mazur.AffineHilbertFiniteSelectorKernel
+public import FLT.Mazur.AffineHilbertFiniteSelectorSeed
 public import FLT.Mazur.AffineHilbertFiniteTensorCover
 public import FLT.Mazur.AffineHilbertFixedBaseEnvelope
 public import FLT.Mazur.AffineHilbertFixedBaseInvariants
@@ -2929,6 +2932,8 @@ public import FLT.Mazur.AffineHilbertSelectorQuotient
 public import FLT.Mazur.AffineHilbertSelectorUnionQuotient
 public import FLT.Mazur.AffineHilbertSplitChangedFamily
 public import FLT.Mazur.AffineHilbertSplitGroundComparison
+public import FLT.Mazur.AffineHilbertSplitTranslationOrbit
+public import FLT.Mazur.AffineHilbertSplitTranslationSource
 public import FLT.Mazur.AffineHilbertSymmetricNeighborhoods
 public import FLT.Mazur.AffineHilbertTensorAtlas
 public import FLT.Mazur.AffineHilbertTensorGluing
@@ -2941,6 +2946,7 @@ public import FLT.Mazur.AffineHilbertTensorScalars
 public import FLT.Mazur.AffineHilbertTranslationAdmissibilityDetection
 public import FLT.Mazur.AffineHilbertTranslationDenominators
 public import FLT.Mazur.AffineHilbertTranslationEnvelope
+public import FLT.Mazur.AffineHilbertTranslationFiberRelation
 public import FLT.Mazur.AffineHilbertTranslationFullRestriction
 public import FLT.Mazur.AffineHilbertTranslationOriginalEnvelope
 public import FLT.Mazur.AffineHilbertTranslationRelation
@@ -4025,6 +4031,7 @@ public import FLT.Mazur.EllipticAdditiveScalingDepth
 public import FLT.Mazur.EllipticAdditiveStarTranslation
 public import FLT.Mazur.EllipticAdditiveTorsionExclusion
 public import FLT.Mazur.EllipticAdditiveTranslationDepth
+public import FLT.Mazur.EllipticAdjacentRetainedBoundaryCover
 public import FLT.Mazur.EllipticCoefficientModificationSections
 public import FLT.Mazur.EllipticCoefficientSectionNaturality
 public import FLT.Mazur.EllipticCoefficientSmoothSectionGroup
@@ -4319,7 +4326,10 @@ public import FLT.Mazur.EllipticResolvedTerminalCover
 public import FLT.Mazur.EllipticResolvedTerminalSmoothCharts
 public import FLT.Mazur.EllipticResolvedTorsionInjectivity
 public import FLT.Mazur.EllipticRetainedBoundaryAtlas
+public import FLT.Mazur.EllipticRetainedBoundaryRange
 public import FLT.Mazur.EllipticRetainedLaurentCover
+public import FLT.Mazur.EllipticRetainedSmoothBoundaryCover
+public import FLT.Mazur.EllipticRetainedTerminalBoundaryCover
 public import FLT.Mazur.EllipticRetainedTrivializedCharts
 public import FLT.Mazur.EllipticRetainedTrivializedCover
 public import FLT.Mazur.EllipticRetainedTrivializedGeometry
@@ -7851,6 +7861,7 @@ public import FLT.Mazur.PrincipalOpenTensor
 public import FLT.Mazur.PrincipalOpenTensorEvaluation
 public import FLT.Mazur.PrincipalOpenTensorGeometry
 public import FLT.Mazur.PrincipalOpenTensorPullback
+public import FLT.Mazur.PrincipalOpenTensorRange
 public import FLT.Mazur.PrincipalOpenTensorRestriction
 public import FLT.Mazur.PrincipalOpenTensorTransition
 public import FLT.Mazur.PrincipalOpenTensorTransitionBase
@@ -12320,6 +12331,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodeIntersectionFactors
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodeMaps
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodeOrigin
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodePushout
+public import FLT.Mazur.WeierstrassSuccessiveXMiddleNodeSmooth
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleOverlap
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleParameterBranchCharts
 public import FLT.Mazur.WeierstrassSuccessiveXMiddleParameterDescent
@@ -12369,6 +12381,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXResidueNodeIdeals
 public import FLT.Mazur.WeierstrassSuccessiveXResidueNodeMaps
 public import FLT.Mazur.WeierstrassSuccessiveXResidueNodePunctures
 public import FLT.Mazur.WeierstrassSuccessiveXResidueParameterBranchCharts
+public import FLT.Mazur.WeierstrassSuccessiveXResidueSmoothCover
 public import FLT.Mazur.WeierstrassSuccessiveXResidueSplitBranchCharts
 public import FLT.Mazur.WeierstrassSuccessiveXResidueTransitionBaseChange
 public import FLT.Mazur.WeierstrassSuccessiveXResidueZeroNodeDisjoint
