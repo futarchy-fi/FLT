@@ -7264,6 +7264,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstGraphFlat
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphImage
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphLocalization
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphNilradical
+public import FLT.Mazur.PolygonCompleteIdentityFirstGraphOriginalFlat
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphReducedLaw
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphReduction
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphScheme
@@ -7279,6 +7280,13 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstPowerDescent
 public import FLT.Mazur.PolygonCompleteIdentityFirstPrincipalCoordinates
 public import FLT.Mazur.PolygonCompleteIdentityFirstPrincipalObstruction
 public import FLT.Mazur.PolygonCompleteIdentityFlatOpenLift
+public import FLT.Mazur.PolygonCompleteIdentityGraphAdicAlgebra
+public import FLT.Mazur.PolygonCompleteIdentityGraphAdicChart
+public import FLT.Mazur.PolygonCompleteIdentityGraphAdicChartCoordinates
+public import FLT.Mazur.PolygonCompleteIdentityGraphAdicChartSpace
+public import FLT.Mazur.PolygonCompleteIdentityGraphAdicClosed
+public import FLT.Mazur.PolygonCompleteIdentityGraphAdicCover
+public import FLT.Mazur.PolygonCompleteIdentityGraphAdicIdeal
 public import FLT.Mazur.PolygonCompleteIdentityGraphAdicInput
 public import FLT.Mazur.PolygonCompleteIdentityGraphAdicLift
 public import FLT.Mazur.PolygonCompleteIdentityGraphAdicNode
