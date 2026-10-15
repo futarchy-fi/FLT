@@ -3188,6 +3188,7 @@ public import FLT.Mazur.AlgebraicClosureEmbeddingConjugacy
 public import FLT.Mazur.AlgebraicOrderedAllLiftTranslation
 public import FLT.Mazur.AlgebraicPicardFiniteDescent
 public import FLT.Mazur.AlgebraicPointFiniteDescent
+public import FLT.Mazur.AlgebraicTensorCoefficientOrbit
 public import FLT.Mazur.AllAffineAmbientCharts
 public import FLT.Mazur.AllSectionsHilbertGrassmannianImmersion
 public import FLT.Mazur.AmbientHilbertChartFamilyPullback
