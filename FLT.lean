@@ -7371,6 +7371,7 @@ public import FLT.Mazur.PolygonFiniteSubgroup
 public import FLT.Mazur.PolygonFirstNodeAutomorphism
 public import FLT.Mazur.PolygonFirstNodeBoundary
 public import FLT.Mazur.PolygonFirstNodeBranchPair
+public import FLT.Mazur.PolygonFirstNodeBranchReconstruction
 public import FLT.Mazur.PolygonFirstNodeEndomorphism
 public import FLT.Mazur.PolygonFirstNodeExtensionObstruction
 public import FLT.Mazur.PolygonFirstNodeLaurent
