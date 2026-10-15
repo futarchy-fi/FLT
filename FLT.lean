@@ -2489,6 +2489,7 @@ public import FLT.Mathlib.Topology.Polish
 public import FLT.Mazur.AbelianInjectiveFlasque
 public import FLT.Mazur.AbsoluteDirectImageCohomology
 public import FLT.Mazur.AcyclicCoefficientCohomology
+public import FLT.Mazur.AcyclicDegreeFiniteFiberSpread
 public import FLT.Mazur.AcyclicDegreeFixedBaseChange
 public import FLT.Mazur.AcyclicDegreeGeometricSpread
 public import FLT.Mazur.AcyclicDegreePicardRepresentation
