@@ -3704,6 +3704,7 @@ public import FLT.Mazur.ClosedImmersionLimitDescent
 public import FLT.Mazur.ClosedImmersionModulePushforward
 public import FLT.Mazur.ClosedImmersionOpenKernel
 public import FLT.Mazur.ClosedImmersionOpenNeighborhood
+public import FLT.Mazur.ClosedImmersionRefinedOpenPatches
 public import FLT.Mazur.ClosedLineProjectionFormula
 public import FLT.Mazur.ClosedLineQuotientPresentation
 public import FLT.Mazur.ClosedModuleDescent
