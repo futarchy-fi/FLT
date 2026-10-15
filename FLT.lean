@@ -4374,6 +4374,7 @@ public import FLT.Mazur.EllipticResolvedRetainedTerminalSeparation
 public import FLT.Mazur.EllipticResolvedSmoothPoint
 public import FLT.Mazur.EllipticResolvedTerminalCharts
 public import FLT.Mazur.EllipticResolvedTerminalCover
+public import FLT.Mazur.EllipticResolvedTerminalCyclicCharts
 public import FLT.Mazur.EllipticResolvedTerminalSmoothCharts
 public import FLT.Mazur.EllipticResolvedTorsionInjectivity
 public import FLT.Mazur.EllipticResolvedWholeClosedFiber
