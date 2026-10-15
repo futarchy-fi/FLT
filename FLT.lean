@@ -12389,6 +12389,7 @@ public import FLT.Mazur.WeierstrassSplitNodalNegationComparison
 public import FLT.Mazur.WeierstrassSplitNodalObstruction
 public import FLT.Mazur.WeierstrassSplitNodalOneGonCoordinates
 public import FLT.Mazur.WeierstrassSplitNodalOneGonIso
+public import FLT.Mazur.WeierstrassSplitNodalOneGonNode
 public import FLT.Mazur.WeierstrassSplitNodalOrdinaryAlgebraMultiplication
 public import FLT.Mazur.WeierstrassSplitNodalOrdinaryMultiplication
 public import FLT.Mazur.WeierstrassSplitNodalOrdinaryParameter
