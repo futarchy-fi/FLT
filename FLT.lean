@@ -5041,6 +5041,8 @@ public import FLT.Mazur.FiniteTypeUnpointedFppfOpenRepresentation
 public import FLT.Mazur.FiniteTypeUnpointedFppfOpenYoneda
 public import FLT.Mazur.FiniteUnramifiedConstantFiber
 public import FLT.Mazur.FiniteUnramifiedFieldLength
+public import FLT.Mazur.FiniteValuativeEnvelopeTest
+public import FLT.Mazur.FiniteValuativeHilbertParameters
 public import FLT.Mazur.FinitelyPresentedImmersedProperCover
 public import FLT.Mazur.FinitelyPresentedIntersectionCocycleModel
 public import FLT.Mazur.FinitelyPresentedLineSheafDescent
@@ -6909,6 +6911,7 @@ public import FLT.Mazur.OriginalTranscendentalAffineOpenOrbit
 public import FLT.Mazur.OriginalTranscendentalDetectingOpen
 public import FLT.Mazur.OriginalTranscendentalOpenAllLifts
 public import FLT.Mazur.OriginalTranscendentalResidueConjugacy
+public import FLT.Mazur.OriginalTranslationValuationObstruction
 public import FLT.Mazur.OriginalTwistIsoRigidity
 public import FLT.Mazur.OriginalTwistLineOrbits
 public import FLT.Mazur.OriginalTwistOrbitRelation
@@ -9988,6 +9991,7 @@ public import FLT.Mazur.SpecCartesianAlgebraPushout
 public import FLT.Mazur.SpecChartIdealPreimage
 public import FLT.Mazur.SpecGenericFiniteOpen
 public import FLT.Mazur.SpecGenericFlatOpen
+public import FLT.Mazur.SpecializationValuationSquare
 public import FLT.Mazur.SpectrumFieldCohomologyCoordinates
 public import FLT.Mazur.SpectrumGlobalRange
 public import FLT.Mazur.SpectrumRingCohomologyCoordinates
@@ -10349,6 +10353,9 @@ public import FLT.Mazur.ValuationProjectiveNormalization
 public import FLT.Mazur.ValuationRingCompleteModel
 public import FLT.Mazur.ValuationRingHenselianModel
 public import FLT.Mazur.ValuationRingModel
+public import FLT.Mazur.ValuativeEnvelopeInterior
+public import FLT.Mazur.ValuativeHilbertParameterCriterion
+public import FLT.Mazur.ValuativePullbackSquare
 public import FLT.Mazur.VariableHilbertAcyclicLift
 public import FLT.Mazur.VariableHilbertAcyclicLiftCriterion
 public import FLT.Mazur.VariableHilbertAffineEnvelope
