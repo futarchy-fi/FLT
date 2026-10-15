@@ -8918,6 +8918,7 @@ public import FLT.Mazur.RelativeRelationInvariantGlobalSections
 public import FLT.Mazur.RelativeRelationInvariantIso
 public import FLT.Mazur.RelativeRelationInvariantLocallyRinged
 public import FLT.Mazur.RelativeRelationInvariantMap
+public import FLT.Mazur.RelativeRelationInvariantMapOpen
 public import FLT.Mazur.RelativeRelationInvariantMapSections
 public import FLT.Mazur.RelativeRelationInvariantSectionRings
 public import FLT.Mazur.RelativeRelationInvariantSections
