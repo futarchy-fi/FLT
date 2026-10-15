@@ -3282,6 +3282,7 @@ public import FLT.Mazur.AnnihilatorStalk
 public import FLT.Mazur.AnnihilatorSubsheaf
 public import FLT.Mazur.ArbitraryGeometricAffineFullFiber
 public import FLT.Mazur.ArbitraryGeometricAllLiftTranslations
+public import FLT.Mazur.ArbitraryGeometricEnvelopeCore
 public import FLT.Mazur.ArbitraryGeometricFiniteGroundInterior
 public import FLT.Mazur.ArbitraryGeometricFiniteKernel
 public import FLT.Mazur.ArbitraryGeometricGroundQuotient
@@ -3782,6 +3783,9 @@ public import FLT.Mazur.CommonAmbientGrassmannianProduct
 public import FLT.Mazur.CommonAmbientOpenIso
 public import FLT.Mazur.CommonAmbientSourceGrassmannianImmersion
 public import FLT.Mazur.CommonCoefficientStage
+public import FLT.Mazur.CommonGroundEnvelopeCore
+public import FLT.Mazur.CommonGroundEnvelopeSquare
+public import FLT.Mazur.CommonGroundResidualGenerizations
 public import FLT.Mazur.CommonIdealDirectSum
 public import FLT.Mazur.CommonModelEventualEquality
 public import FLT.Mazur.CommonRelationIntegerModel
@@ -6522,6 +6526,7 @@ public import FLT.Mazur.NodeTangentTensorOrientation
 public import FLT.Mazur.NodeTangentUnramified
 public import FLT.Mazur.NodeTangentValuationConjugation
 public import FLT.Mazur.NodeTangentValuationModel
+public import FLT.Mazur.NoetherianClosedImageGenerizations
 public import FLT.Mazur.NoetherianConstructibleCriterion
 public import FLT.Mazur.NoetherianDirectSumSheaf
 public import FLT.Mazur.NoetherianInfinitesimalFiberFunctions
@@ -6862,6 +6867,7 @@ public import FLT.Mazur.OriginalAffineSchemeDetectingOpen
 public import FLT.Mazur.OriginalAffineSchemeOrbit
 public import FLT.Mazur.OriginalAlgebraicDetectingSchemeOpen
 public import FLT.Mazur.OriginalAlgebraicPointDescent
+public import FLT.Mazur.OriginalEnvelopeAcyclicCriterion
 public import FLT.Mazur.OriginalFamilyIdentityComparison
 public import FLT.Mazur.OriginalFamilySectionComposition
 public import FLT.Mazur.OriginalFamilySquareComposition
@@ -8281,6 +8287,7 @@ public import FLT.Mazur.PrincipalLayeredPaths
 public import FLT.Mazur.PrincipalLayeredStages
 public import FLT.Mazur.PrincipalLocalizationGeneration
 public import FLT.Mazur.PrincipalLocalizationIntersection
+public import FLT.Mazur.PrincipalLocalizationNamedSquare
 public import FLT.Mazur.PrincipalLocalizationPullback
 public import FLT.Mazur.PrincipalLocalizationSquare
 public import FLT.Mazur.PrincipalLocalizationTensor
@@ -8632,6 +8639,7 @@ public import FLT.Mazur.ProperCohomologyFieldVanishing
 public import FLT.Mazur.ProperCohomologyWitnesses
 public import FLT.Mazur.ProperConnectedReducedSections
 public import FLT.Mazur.ProperCoreGroundInterior
+public import FLT.Mazur.ProperCoreResidualGenerizations
 public import FLT.Mazur.ProperCoreResidualInterior
 public import FLT.Mazur.ProperCoverImmersionCriterion
 public import FLT.Mazur.ProperCoverLimitDescent
@@ -11093,14 +11101,18 @@ public import FLT.Mazur.WeierstrassDividedAdjacentZeroOrderedConicIntersection
 public import FLT.Mazur.WeierstrassDividedAdjacentZeroParameterBranchCompatibility
 public import FLT.Mazur.WeierstrassDividedAdjacentZeroParameterIntersection
 public import FLT.Mazur.WeierstrassDividedAdjacentZeroSectionSeparation
+public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentBranch
 public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentIntersection
 public import FLT.Mazur.WeierstrassDividedArithmeticBoundaryCharts
+public import FLT.Mazur.WeierstrassDividedArithmeticBranchRestriction
 public import FLT.Mazur.WeierstrassDividedArithmeticCoordinateTransition
 public import FLT.Mazur.WeierstrassDividedArithmeticCoordinates
+public import FLT.Mazur.WeierstrassDividedArithmeticInitialBranch
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialIntersection
 public import FLT.Mazur.WeierstrassDividedArithmeticNodeCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticNodeOpen
 public import FLT.Mazur.WeierstrassDividedArithmeticOppositeNodeOpen
+public import FLT.Mazur.WeierstrassDividedArithmeticTerminalBranch
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalIntersection
 public import FLT.Mazur.WeierstrassDividedAtlasRegularCenter
 public import FLT.Mazur.WeierstrassDividedBoundaryNormalization
@@ -12851,15 +12863,18 @@ public import FLT.Mazur.WeierstrassSplitNodalUnitPoints
 public import FLT.Mazur.WeierstrassSplitNormalizationInfinity
 public import FLT.Mazur.WeierstrassSplitNormalizationInfinityParameter
 public import FLT.Mazur.WeierstrassSquareZeroTorsionRigidity
+public import FLT.Mazur.WeierstrassSuccessiveArithmeticBranchBoundary
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticNodeChart
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticNodeCoverage
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticOppositeNodeChart
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticOppositeRestrictionSquare
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticOppositeRetraction
+public import FLT.Mazur.WeierstrassSuccessiveArithmeticProjection
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticRestrictionMaps
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticRestrictionSquare
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticRetractionRestriction
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticSlopeRestriction
+public import FLT.Mazur.WeierstrassSuccessiveArithmeticTensorBranches
 public import FLT.Mazur.WeierstrassSuccessiveCenterAction
 public import FLT.Mazur.WeierstrassSuccessiveCenterScaling
 public import FLT.Mazur.WeierstrassSuccessiveCoefficientShear
@@ -12952,6 +12967,8 @@ public import FLT.Mazur.WeierstrassSuccessiveShearTerminalZeroConicBranches
 public import FLT.Mazur.WeierstrassSuccessiveShearTerminalZeroConicCoordinates
 public import FLT.Mazur.WeierstrassSuccessiveShearTerminalZeroNodeConic
 public import FLT.Mazur.WeierstrassSuccessiveSimpleSlopeChart
+public import FLT.Mazur.WeierstrassSuccessiveTensorSlopeBoundary
+public import FLT.Mazur.WeierstrassSuccessiveTensorSlopeCoordinates
 public import FLT.Mazur.WeierstrassSuccessiveXAlgebra
 public import FLT.Mazur.WeierstrassSuccessiveXBaseChange
 public import FLT.Mazur.WeierstrassSuccessiveXBaseChangeCoordinates
