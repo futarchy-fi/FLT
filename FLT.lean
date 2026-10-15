@@ -2709,6 +2709,7 @@ public import FLT.Mazur.AffineEtaleFiniteFaithfulRefinement
 public import FLT.Mazur.AffineEtaleFiniteFaithfulSpectrum
 public import FLT.Mazur.AffineEtaleFiniteFreeSpectrum
 public import FLT.Mazur.AffineEtaleIdentityGroundBase
+public import FLT.Mazur.AffineEtaleNilpotentLift
 public import FLT.Mazur.AffineEtaleTranslationFiniteBranch
 public import FLT.Mazur.AffineEtaleTranslationNormCharts
 public import FLT.Mazur.AffineFaithfullyFlatEpimorphisms
@@ -3006,6 +3007,7 @@ public import FLT.Mazur.AffineHilbertUnramifiedSplitOrbits
 public import FLT.Mazur.AffineIdealContainment
 public import FLT.Mazur.AffineIdealCoordinates
 public import FLT.Mazur.AffineIdealPowerExtension
+public import FLT.Mazur.AffineIdealPowerPullback
 public import FLT.Mazur.AffineIdealSheafComparison
 public import FLT.Mazur.AffineIdealSheafCoverComparison
 public import FLT.Mazur.AffineImageSectionTransport
@@ -5535,6 +5537,13 @@ public import FLT.Mazur.HilbertBoundaryOrbit
 public import FLT.Mazur.HilbertBoundaryQuotient
 public import FLT.Mazur.HilbertBoundaryRelationTests
 public import FLT.Mazur.HilbertBoundarySchemeTests
+public import FLT.Mazur.HilbertBoundaryThickeningGeometry
+public import FLT.Mazur.HilbertBoundaryThickeningKernelPair
+public import FLT.Mazur.HilbertBoundaryThickeningNilpotence
+public import FLT.Mazur.HilbertBoundaryThickeningQuotients
+public import FLT.Mazur.HilbertBoundaryThickeningRelation
+public import FLT.Mazur.HilbertBoundaryThickeningTests
+public import FLT.Mazur.HilbertBoundaryThickeningTower
 public import FLT.Mazur.HilbertBoundedAmbientAtlas
 public import FLT.Mazur.HilbertBoundedChartClosedEmbedding
 public import FLT.Mazur.HilbertBoundedCoordinateGeneration
@@ -6031,6 +6040,7 @@ public import FLT.Mazur.IntersectionUnitCocycleRecovery
 public import FLT.Mazur.InvariantBoundaryPullback
 public import FLT.Mazur.InvariantFlatTensorAction
 public import FLT.Mazur.InvariantFlatTensorComparison
+public import FLT.Mazur.InvariantIdealRelation
 public import FLT.Mazur.InvariantLocalizationAction
 public import FLT.Mazur.InvariantLocalizationComparison
 public import FLT.Mazur.InvariantLocalizationCoordinates
@@ -6475,6 +6485,7 @@ public import FLT.Mazur.ModuleTildeLocalFrames
 public import FLT.Mazur.ModuleUnitCocycleCongr
 public import FLT.Mazur.ModuleUnitCocyclePullback
 public import FLT.Mazur.MonicIdealNormalForms
+public import FLT.Mazur.MonoBaseChangeRelation
 public import FLT.Mazur.MonoFamilySchemeGluing
 public import FLT.Mazur.MonoidalActionSpecialization
 public import FLT.Mazur.MonomorphismCoefficientEffectiveOpen
@@ -7364,8 +7375,13 @@ public import FLT.Mazur.PolygonCompleteIdentityActionSmoothLift
 public import FLT.Mazur.PolygonCompleteIdentityActionSource
 public import FLT.Mazur.PolygonCompleteIdentityActionTarget
 public import FLT.Mazur.PolygonCompleteIdentityActionUnchangedLift
+public import FLT.Mazur.PolygonCompleteIdentityAdicAmbientBaseChange
 public import FLT.Mazur.PolygonCompleteIdentityAdicAmbientImmersion
+public import FLT.Mazur.PolygonCompleteIdentityAdicAmbientKernel
 public import FLT.Mazur.PolygonCompleteIdentityAdicAmbientLifts
+public import FLT.Mazur.PolygonCompleteIdentityAdicAmbientStructure
+public import FLT.Mazur.PolygonCompleteIdentityAmbientErrorRelation
+public import FLT.Mazur.PolygonCompleteIdentityAmbientParameterComparison
 public import FLT.Mazur.PolygonCompleteIdentityChartAtlas
 public import FLT.Mazur.PolygonCompleteIdentityChartOperations
 public import FLT.Mazur.PolygonCompleteIdentityFiniteAlgebra
@@ -7418,6 +7434,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstChartSourceFunctions
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartTargetScalars
 public import FLT.Mazur.PolygonCompleteIdentityFirstCompleteEquations
 public import FLT.Mazur.PolygonCompleteIdentityFirstCompleteErrors
+public import FLT.Mazur.PolygonCompleteIdentityFirstCompleteSmoothing
 public import FLT.Mazur.PolygonCompleteIdentityFirstCoordinateDescent
 public import FLT.Mazur.PolygonCompleteIdentityFirstCorrection
 public import FLT.Mazur.PolygonCompleteIdentityFirstDefectDerivation
@@ -7460,6 +7477,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstGraphTopology
 public import FLT.Mazur.PolygonCompleteIdentityFirstLinearization
 public import FLT.Mazur.PolygonCompleteIdentityFirstNodeBoundary
 public import FLT.Mazur.PolygonCompleteIdentityFirstNodeObstruction
+public import FLT.Mazur.PolygonCompleteIdentityFirstParameterEquations
 public import FLT.Mazur.PolygonCompleteIdentityFirstPositiveNodes
 public import FLT.Mazur.PolygonCompleteIdentityFirstPowerDescent
 public import FLT.Mazur.PolygonCompleteIdentityFirstPrincipalCoordinates
