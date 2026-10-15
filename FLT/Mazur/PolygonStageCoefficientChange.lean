@@ -6,6 +6,7 @@ Authors: The FLT Project
 module
 
 public import FLT.Mazur.PolygonInfinitesimalTopCoefficient
+public import FLT.Mazur.PolygonStageCoefficientNaturality
 
 /-!
 # Scalar change for the concrete infinitesimal coefficient stages
@@ -19,27 +20,11 @@ coefficient, even over a nonreduced target ring.
 namespace FLT.Mazur.PolygonInfinitesimalStages
 variable {R S : Type*} [CommRing R] [CommRing S]
 
-/-- Extend a coefficient homomorphism to the actual truncated polynomial stage. -/
-def stageCoefficientMap (f : R →+* S) (m : ℕ) : Ring R m →+* Ring S m :=
-  AdjoinRoot.lift ((algebraMap S (Ring S m)).comp f) (parameter S m) (by
-    rw [Polynomial.eval₂_pow, Polynomial.eval₂_X, parameter_pow])
-
-/-- Scalar extension retains the original smoothing parameter. -/
-@[simp] theorem stageCoefficientMap_parameter (f : R →+* S) (m : ℕ) :
-    stageCoefficientMap f m (parameter R m) = parameter S m :=
-  AdjoinRoot.lift_root _
-
-/-- Constant scalar coefficients change by the original ring homomorphism. -/
-theorem stageCoefficientMap_scalar (f : R →+* S) (m : ℕ) (r : R) :
-    stageCoefficientMap f m (algebraMap R (Ring R m) r) =
-      algebraMap S (Ring S m) (f r) :=
-  AdjoinRoot.lift_of _
-
 /-- The square of coefficient inclusions and stage change commutes as ring homomorphisms. -/
 theorem stageCoefficientMap_comp_scalar (f : R →+* S) (m : ℕ) :
     (stageCoefficientMap f m).comp (algebraMap R (Ring R m)) =
       (algebraMap S (Ring S m)).comp f :=
-  RingHom.ext (stageCoefficientMap_scalar f m)
+  RingHom.ext (stageCoefficientMap_constant f m)
 
 /-- Extracting the first smoothing coefficient recovers an arbitrary scalar exactly. -/
 theorem stageCoeff_one_parameter_scalar (s : S) :
