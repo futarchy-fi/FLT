@@ -3713,6 +3713,7 @@ public import FLT.Mazur.ClosedProjectiveSerreVanishing
 public import FLT.Mazur.ClosedPushforwardCohomology
 public import FLT.Mazur.ClosedPushforwardFull
 public import FLT.Mazur.ClosedPushforwardRestriction
+public import FLT.Mazur.ClosedRelationOrbitEmbedding
 public import FLT.Mazur.ClosedSubschemeCohomology
 public import FLT.Mazur.ClosedSubsets
 public import FLT.Mazur.CocycleGlobalCoordinates
@@ -3978,6 +3979,12 @@ public import FLT.Mazur.DenseGroundHilbertFullInterior
 public import FLT.Mazur.DenseGroundHilbertPrincipal
 public import FLT.Mazur.DenseGroundResidualSupport
 public import FLT.Mazur.DerivationAlgEquivTransport
+public import FLT.Mazur.DifferenceNodeAlgebra
+public import FLT.Mazur.DifferenceNodeCriticalPoint
+public import FLT.Mazur.DifferenceNodeCriticalTranslation
+public import FLT.Mazur.DifferenceNodeNormalEquiv
+public import FLT.Mazur.DifferenceNodeNormalEvaluation
+public import FLT.Mazur.DifferenceNodeNormalFactors
 public import FLT.Mazur.DirectImageBaseChangeAdjoints
 public import FLT.Mazur.DirectImageBaseChangeMate
 public import FLT.Mazur.DirectImageBaseChangeNormalizedPasting
@@ -4598,6 +4605,7 @@ public import FLT.Mazur.EllipticZeroExteriorSmoothCover
 public import FLT.Mazur.EnlargedPresentationModel
 public import FLT.Mazur.EnvelopeBoundaryIdealSheaf
 public import FLT.Mazur.EnvelopeBoundaryIdealTransport
+public import FLT.Mazur.EnvelopeBoundaryRelation
 public import FLT.Mazur.EnvelopeBoundaryTestLift
 public import FLT.Mazur.EnvelopeInteriorFiniteAffineCover
 public import FLT.Mazur.EnvelopeInteriorUnitIdealLift
@@ -5518,7 +5526,12 @@ public import FLT.Mazur.HilbertBasisSchemeOver
 public import FLT.Mazur.HilbertBasisTupleAffineComparison
 public import FLT.Mazur.HilbertBasisTupleIntersection
 public import FLT.Mazur.HilbertBasisTupleSchemeComparison
+public import FLT.Mazur.HilbertBoundaryClosedRelation
 public import FLT.Mazur.HilbertBoundaryEtaleIdeals
+public import FLT.Mazur.HilbertBoundaryKernelPair
+public import FLT.Mazur.HilbertBoundaryOrbit
+public import FLT.Mazur.HilbertBoundaryQuotient
+public import FLT.Mazur.HilbertBoundaryRelationTests
 public import FLT.Mazur.HilbertBoundarySchemeTests
 public import FLT.Mazur.HilbertBoundedAmbientAtlas
 public import FLT.Mazur.HilbertBoundedChartClosedEmbedding
@@ -6496,6 +6509,9 @@ public import FLT.Mazur.NilpotentIdealSocle
 public import FLT.Mazur.NilpotentPolynomialEvaluation
 public import FLT.Mazur.NilpotentPolynomialInverse
 public import FLT.Mazur.NilpotentPolynomialInverseBaseChange
+public import FLT.Mazur.NilpotentPolynomialTaylor
+public import FLT.Mazur.NilpotentQuadraticDifferenceFactors
+public import FLT.Mazur.NilpotentQuadraticDifferenceInverse
 public import FLT.Mazur.NilpotentQuadraticRoot
 public import FLT.Mazur.NilpotentQuadraticRootNaturality
 public import FLT.Mazur.NodalFamilyGeometricConnected
@@ -11099,6 +11115,8 @@ public import FLT.Mazur.WeierstrassDilatationGenericFiber
 public import FLT.Mazur.WeierstrassDilatationHorizontalCongruence
 public import FLT.Mazur.WeierstrassDilatationHorizontalPointExt
 public import FLT.Mazur.WeierstrassDilatationHorizontalSmooth
+public import FLT.Mazur.WeierstrassDilatationInverseIdeal
+public import FLT.Mazur.WeierstrassDilatationInversePolynomial
 public import FLT.Mazur.WeierstrassDilatationLaurentPointCharacters
 public import FLT.Mazur.WeierstrassDilatationLifting
 public import FLT.Mazur.WeierstrassDilatationLocalization
@@ -11121,9 +11139,16 @@ public import FLT.Mazur.WeierstrassDilatationShear
 public import FLT.Mazur.WeierstrassDilatationShearHorizontal
 public import FLT.Mazur.WeierstrassDilatationShearLaurentNormalForm
 public import FLT.Mazur.WeierstrassDilatationShearNodeNormalForm
+public import FLT.Mazur.WeierstrassDilatationSmoothingCongruence
+public import FLT.Mazur.WeierstrassDilatationTangentCorrection
+public import FLT.Mazur.WeierstrassDilatationTangentEquiv
+public import FLT.Mazur.WeierstrassDilatationTangentEvaluation
 public import FLT.Mazur.WeierstrassDilatationTangentInverse
+public import FLT.Mazur.WeierstrassDilatationTerminalNode
+public import FLT.Mazur.WeierstrassDilatationTerminalNodeCoordinates
 public import FLT.Mazur.WeierstrassDilatationTerminalSectionBranches
 public import FLT.Mazur.WeierstrassDilatationTerminalSections
+public import FLT.Mazur.WeierstrassDilatationTerminalTensorNode
 public import FLT.Mazur.WeierstrassDilatationUnitComparison
 public import FLT.Mazur.WeierstrassDilatationZeroResidue
 public import FLT.Mazur.WeierstrassDilatationZeroResidueBoundary
