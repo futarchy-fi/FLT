@@ -2489,9 +2489,11 @@ public import FLT.Mathlib.Topology.Polish
 public import FLT.Mazur.AbelianInjectiveFlasque
 public import FLT.Mazur.AbsoluteDirectImageCohomology
 public import FLT.Mazur.AcyclicCoefficientCohomology
+public import FLT.Mazur.AcyclicDegreeFiniteFiberSpread
 public import FLT.Mazur.AcyclicDegreeFixedBaseChange
 public import FLT.Mazur.AcyclicDegreeGeometricSpread
 public import FLT.Mazur.AcyclicDegreePicardRepresentation
+public import FLT.Mazur.AcyclicDegreeSectionCoverDetection
 public import FLT.Mazur.AcyclicDirectImageResolution
 public import FLT.Mazur.AcyclicDivisorDegreeOpen
 public import FLT.Mazur.AcyclicDivisorDegreePresheaf
@@ -2782,6 +2784,7 @@ public import FLT.Mazur.AffineHilbertComposableEnvelope
 public import FLT.Mazur.AffineHilbertCompositionCharts
 public import FLT.Mazur.AffineHilbertCompositionFiniteBranches
 public import FLT.Mazur.AffineHilbertConnectedEnvelopeFiber
+public import FLT.Mazur.AffineHilbertConstructedGeometricRetention
 public import FLT.Mazur.AffineHilbertCountedFiberNeighborhood
 public import FLT.Mazur.AffineHilbertDegreeFiberCertificate
 public import FLT.Mazur.AffineHilbertDerivedNoetherianRelation
@@ -4668,6 +4671,7 @@ public import FLT.Mazur.FiniteFamilySupportBaseChange
 public import FLT.Mazur.FiniteFamilySupportOpen
 public import FLT.Mazur.FiniteFiberClosedImmersion
 public import FLT.Mazur.FiniteFiberImageCard
+public import FLT.Mazur.FiniteFiberOriginalOpenSpread
 public import FLT.Mazur.FiniteFieldRankLength
 public import FLT.Mazur.FiniteFlatAffineLocalFree
 public import FLT.Mazur.FiniteFlatCoefficientIdeal
@@ -4895,6 +4899,7 @@ public import FLT.Mazur.FiniteSchemeInvertibleSections
 public import FLT.Mazur.FiniteSchemeLength
 public import FLT.Mazur.FiniteSchemeLineCohomology
 public import FLT.Mazur.FiniteSchemeLineTwist
+public import FLT.Mazur.FiniteSectionCoverOpenLifting
 public import FLT.Mazur.FiniteSectionCoverReindex
 public import FLT.Mazur.FiniteSectionProjectivePresentation
 public import FLT.Mazur.FiniteSeparablePointFactor
@@ -5103,6 +5108,7 @@ public import FLT.Mazur.GeometricPointCoverCriterion
 public import FLT.Mazur.GeometricPullbackPointwiseEquality
 public import FLT.Mazur.GeometricSectionQuasiFinite
 public import FLT.Mazur.GeometricSectionUnits
+public import FLT.Mazur.GeometricSimultaneousHilbertTranslation
 public import FLT.Mazur.GeometricallyConnectedDescent
 public import FLT.Mazur.GeometricallyConnectedLocus
 public import FLT.Mazur.GlobalClosedModuleDescent
@@ -9428,6 +9434,8 @@ public import FLT.Mazur.SheafPullbackSectionReconstruction
 public import FLT.Mazur.SheafPullbackSectionSquare
 public import FLT.Mazur.SheafPullbackTestReconstruction
 public import FLT.Mazur.ShortComplexSumHomologyInclusion
+public import FLT.Mazur.SimultaneousSmoothAcyclicNeighborhood
+public import FLT.Mazur.SimultaneousSmoothHilbertParameters
 public import FLT.Mazur.SmallAffineParameterBases
 public import FLT.Mazur.SmallHilbertPresentation
 public import FLT.Mazur.SmallHilbertPresentationPullback
@@ -9463,6 +9471,7 @@ public import FLT.Mazur.SmoothFiberSeparablePoints
 public import FLT.Mazur.SmoothFieldCotangentRank
 public import FLT.Mazur.SmoothFiniteCoefficientBranch
 public import FLT.Mazur.SmoothFiniteFlatIdealCharts
+public import FLT.Mazur.SmoothFiniteGeometricDiagram
 public import FLT.Mazur.SmoothFiniteSubgroupAmple
 public import FLT.Mazur.SmoothFiniteSubschemeCartier
 public import FLT.Mazur.SmoothGeneralizedCurveGroupIso
@@ -9889,6 +9898,7 @@ public import FLT.Mazur.VariableHilbertFixedBaseProjection
 public import FLT.Mazur.VariableHilbertFixedBaseQuotient
 public import FLT.Mazur.VariableHilbertFixedBaseRelation
 public import FLT.Mazur.VariableHilbertFppfQuotient
+public import FLT.Mazur.VariableHilbertGeometricOrbitRetention
 public import FLT.Mazur.VariableHilbertGroundBaseCartesian
 public import FLT.Mazur.VariableHilbertIntersectionBaseChange
 public import FLT.Mazur.VariableHilbertInvariantFunctionDescent
