@@ -7347,6 +7347,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstChartResidualPresentation
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartScalars
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartSocleKernel
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartSourceFunctions
+public import FLT.Mazur.PolygonCompleteIdentityFirstChartTargetScalars
 public import FLT.Mazur.PolygonCompleteIdentityFirstCoordinateDescent
 public import FLT.Mazur.PolygonCompleteIdentityFirstCorrection
 public import FLT.Mazur.PolygonCompleteIdentityFirstDefectDerivation
