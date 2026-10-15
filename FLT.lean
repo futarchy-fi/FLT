@@ -6898,6 +6898,7 @@ public import FLT.Mazur.PolygonCompleteClosedPointLineComparison
 public import FLT.Mazur.PolygonCompleteClosedRotation
 public import FLT.Mazur.PolygonCompleteClosedSingularPoints
 public import FLT.Mazur.PolygonCompleteClosedSmoothLocus
+public import FLT.Mazur.PolygonCompleteClosedSmoothSquare
 public import FLT.Mazur.PolygonCompleteClosedSpecialization
 public import FLT.Mazur.PolygonCompleteCoefficientAdicComparison
 public import FLT.Mazur.PolygonCompleteCoefficientAmple
