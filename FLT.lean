@@ -11176,6 +11176,7 @@ public import FLT.Mazur.WeierstrassDilatationTerminalFactorReduction
 public import FLT.Mazur.WeierstrassDilatationTerminalHorizontalLocus
 public import FLT.Mazur.WeierstrassDilatationTerminalNode
 public import FLT.Mazur.WeierstrassDilatationTerminalNodeCoordinates
+public import FLT.Mazur.WeierstrassDilatationTerminalNormalizationNaturality
 public import FLT.Mazur.WeierstrassDilatationTerminalRestriction
 public import FLT.Mazur.WeierstrassDilatationTerminalSectionBranches
 public import FLT.Mazur.WeierstrassDilatationTerminalSections
