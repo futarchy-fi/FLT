@@ -4323,6 +4323,7 @@ public import FLT.Mazur.EllipticRetainedBoundaryAtlas
 public import FLT.Mazur.EllipticRetainedBoundaryRange
 public import FLT.Mazur.EllipticRetainedLaurentCover
 public import FLT.Mazur.EllipticRetainedSmoothBoundaryCover
+public import FLT.Mazur.EllipticRetainedTerminalBoundaryCover
 public import FLT.Mazur.EllipticRetainedTrivializedCharts
 public import FLT.Mazur.EllipticRetainedTrivializedCover
 public import FLT.Mazur.EllipticRetainedTrivializedGeometry
