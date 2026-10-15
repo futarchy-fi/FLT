@@ -9812,6 +9812,7 @@ public import FLT.Mazur.ValuationProjectiveNormalization
 public import FLT.Mazur.ValuationRingCompleteModel
 public import FLT.Mazur.ValuationRingHenselianModel
 public import FLT.Mazur.ValuationRingModel
+public import FLT.Mazur.VariableHilbertAcyclicLift
 public import FLT.Mazur.VariableHilbertAffineEnvelope
 public import FLT.Mazur.VariableHilbertAffinePointRefinement
 public import FLT.Mazur.VariableHilbertCanonicalGroundIso
