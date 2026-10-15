@@ -6979,6 +6979,7 @@ public import FLT.Mazur.PolygonArithmeticStageProjTransition
 public import FLT.Mazur.PolygonArithmeticStageProper
 public import FLT.Mazur.PolygonArithmeticStageRecovery
 public import FLT.Mazur.PolygonArithmeticStageRestriction
+public import FLT.Mazur.PolygonArithmeticStageRingLift
 public import FLT.Mazur.PolygonArithmeticStageTransition
 public import FLT.Mazur.PolygonArithmeticStageVanishing
 public import FLT.Mazur.PolygonArithmeticSystem
