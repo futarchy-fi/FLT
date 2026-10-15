@@ -4182,6 +4182,7 @@ public import FLT.Mazur.EllipticLocalEvaluation
 public import FLT.Mazur.EllipticLocalIntegerMultiplication
 public import FLT.Mazur.EllipticLocalMultiplication
 public import FLT.Mazur.EllipticLocalValuation
+public import FLT.Mazur.EllipticMiddleCyclicCoordinates
 public import FLT.Mazur.EllipticMinimalAdditiveComponents
 public import FLT.Mazur.EllipticMinimalDiscriminant
 public import FLT.Mazur.EllipticMultiplicativeValuationEquation
@@ -4286,6 +4287,7 @@ public import FLT.Mazur.EllipticNodeTripleLaurentCharacter
 public import FLT.Mazur.EllipticNodeTrivializedChartGeometry
 public import FLT.Mazur.EllipticNodeTrivializedCharts
 public import FLT.Mazur.EllipticNodeTrivializedImages
+public import FLT.Mazur.EllipticNodeTrivializedIndexTransport
 public import FLT.Mazur.EllipticNodeTrivializedMiddleChart
 public import FLT.Mazur.EllipticNodeTrivializedSpecialization
 public import FLT.Mazur.EllipticNodeUnequalDepthAddition
@@ -4377,6 +4379,7 @@ public import FLT.Mazur.EllipticResolvedRetainedTerminalSeparation
 public import FLT.Mazur.EllipticResolvedSmoothPoint
 public import FLT.Mazur.EllipticResolvedTerminalCharts
 public import FLT.Mazur.EllipticResolvedTerminalCover
+public import FLT.Mazur.EllipticResolvedTerminalCyclicCharts
 public import FLT.Mazur.EllipticResolvedTerminalSmoothCharts
 public import FLT.Mazur.EllipticResolvedTorsionInjectivity
 public import FLT.Mazur.EllipticResolvedWholeClosedFiber
@@ -4494,6 +4497,8 @@ public import FLT.Mazur.EllipticSubgroupSectionGenericCompatibility
 public import FLT.Mazur.EllipticSubgroupSpecialFiber
 public import FLT.Mazur.EllipticSubgroupTensorEvaluation
 public import FLT.Mazur.EllipticTangentParameterHom
+public import FLT.Mazur.EllipticTerminalCompleteClosedCoordinates
+public import FLT.Mazur.EllipticTerminalCyclicCoordinates
 public import FLT.Mazur.EllipticTripleRootBranches
 public import FLT.Mazur.EllipticTypeIIIDepth
 public import FLT.Mazur.EllipticTypeIIISlope
@@ -5917,6 +5922,7 @@ public import FLT.Mazur.LaurentCocycleCoefficientRecovery
 public import FLT.Mazur.LaurentCoefficientDivisibility
 public import FLT.Mazur.LaurentCoefficientEvaluation
 public import FLT.Mazur.LaurentCoefficientInjectivity
+public import FLT.Mazur.LaurentCyclicCoordinateChange
 public import FLT.Mazur.LaurentDomainPairUnits
 public import FLT.Mazur.LaurentDomainUnits
 public import FLT.Mazur.LaurentIdentityIdeal
@@ -10575,6 +10581,7 @@ public import FLT.Mazur.WeierstrassDividedAdjacentComponentStructure
 public import FLT.Mazur.WeierstrassDividedAdjacentConicExterior
 public import FLT.Mazur.WeierstrassDividedAdjacentCorrectedBoundary
 public import FLT.Mazur.WeierstrassDividedAdjacentCrossedIntersection
+public import FLT.Mazur.WeierstrassDividedAdjacentCyclicTori
 public import FLT.Mazur.WeierstrassDividedAdjacentEndpointRanges
 public import FLT.Mazur.WeierstrassDividedAdjacentExtendedEmptyIntersections
 public import FLT.Mazur.WeierstrassDividedAdjacentExtendedParameterIntersection
@@ -11248,6 +11255,7 @@ public import FLT.Mazur.WeierstrassDividedTerminalConicBranches
 public import FLT.Mazur.WeierstrassDividedTerminalConicCoordinates
 public import FLT.Mazur.WeierstrassDividedTerminalConicCover
 public import FLT.Mazur.WeierstrassDividedTerminalCrossedIntersection
+public import FLT.Mazur.WeierstrassDividedTerminalCyclicTori
 public import FLT.Mazur.WeierstrassDividedTerminalExtendedEmptyIntersections
 public import FLT.Mazur.WeierstrassDividedTerminalFullConicIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalHorizontalCyclicAction
