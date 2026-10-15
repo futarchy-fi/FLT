@@ -7383,6 +7383,7 @@ public import FLT.Mazur.PolygonFirstNodePositiveExtension
 public import FLT.Mazur.PolygonFirstNodeReduction
 public import FLT.Mazur.PolygonFirstNodeScaledBoundary
 public import FLT.Mazur.PolygonFirstNodeScaledExtension
+public import FLT.Mazur.PolygonFirstNodeSubalgebraPreservation
 public import FLT.Mazur.PolygonFirstNodeTangentBoundary
 public import FLT.Mazur.PolygonFirstNodeTangentEquiv
 public import FLT.Mazur.PolygonFirstNodeTangentLift
