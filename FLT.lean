@@ -4341,8 +4341,10 @@ public import FLT.Mazur.EllipticResolvedPositiveStageCoverage
 public import FLT.Mazur.EllipticResolvedReflectedMixedTranslationEquality
 public import FLT.Mazur.EllipticResolvedRetainedCharts
 public import FLT.Mazur.EllipticResolvedRetainedCover
+public import FLT.Mazur.EllipticResolvedRetainedDepthSeparation
 public import FLT.Mazur.EllipticResolvedRetainedIdentitySeparation
 public import FLT.Mazur.EllipticResolvedRetainedSmoothCharts
+public import FLT.Mazur.EllipticResolvedRetainedTerminalSeparation
 public import FLT.Mazur.EllipticResolvedSmoothPoint
 public import FLT.Mazur.EllipticResolvedTerminalCharts
 public import FLT.Mazur.EllipticResolvedTerminalCover
@@ -4350,6 +4352,7 @@ public import FLT.Mazur.EllipticResolvedTerminalSmoothCharts
 public import FLT.Mazur.EllipticResolvedTorsionInjectivity
 public import FLT.Mazur.EllipticResolvedZeroBoundaryCoverage
 public import FLT.Mazur.EllipticResolvedZeroExteriorCover
+public import FLT.Mazur.EllipticResolvedZeroStageCoverage
 public import FLT.Mazur.EllipticRetainedBoundaryAtlas
 public import FLT.Mazur.EllipticRetainedBoundaryRange
 public import FLT.Mazur.EllipticRetainedLaurentCover
@@ -10564,6 +10567,7 @@ public import FLT.Mazur.WeierstrassDividedDepthMaps
 public import FLT.Mazur.WeierstrassDividedDepthOriginalOpen
 public import FLT.Mazur.WeierstrassDividedDepthStructure
 public import FLT.Mazur.WeierstrassDividedDepthYBoundary
+public import FLT.Mazur.WeierstrassDividedEarlierTerminalSeparation
 public import FLT.Mazur.WeierstrassDividedEqualityComponentEndpoints
 public import FLT.Mazur.WeierstrassDividedEqualityCycleTerminalDescent
 public import FLT.Mazur.WeierstrassDividedEqualityFullNodeDescent
@@ -10586,6 +10590,7 @@ public import FLT.Mazur.WeierstrassDividedExteriorSmoothOpen
 public import FLT.Mazur.WeierstrassDividedExteriorStep
 public import FLT.Mazur.WeierstrassDividedExteriorTerminalExclusions
 public import FLT.Mazur.WeierstrassDividedExteriorTerminalIntersection
+public import FLT.Mazur.WeierstrassDividedExteriorTerminalSupport
 public import FLT.Mazur.WeierstrassDividedExteriorYBoundary
 public import FLT.Mazur.WeierstrassDividedFaithfulActionDescent
 public import FLT.Mazur.WeierstrassDividedFinalAdjacentComponents
@@ -11136,7 +11141,9 @@ public import FLT.Mazur.WeierstrassDividedTangentTransport
 public import FLT.Mazur.WeierstrassDividedTangentTransportAction
 public import FLT.Mazur.WeierstrassDividedTangentTriple
 public import FLT.Mazur.WeierstrassDividedTensorAtlasComparison
+public import FLT.Mazur.WeierstrassDividedTensorInfinityPreimage
 public import FLT.Mazur.WeierstrassDividedTensorPointAction
+public import FLT.Mazur.WeierstrassDividedTensorResidueInfinity
 public import FLT.Mazur.WeierstrassDividedTensorSymmetry
 public import FLT.Mazur.WeierstrassDividedTensorYBoundary
 public import FLT.Mazur.WeierstrassDividedTerminalAllExteriorNodes
@@ -12448,6 +12455,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXShearGluing
 public import FLT.Mazur.WeierstrassSuccessiveXShearHorizontal
 public import FLT.Mazur.WeierstrassSuccessiveXShearLocalization
 public import FLT.Mazur.WeierstrassSuccessiveXSplitFiber
+public import FLT.Mazur.WeierstrassSuccessiveXTensorBoundarySeparation
 public import FLT.Mazur.WeierstrassSuccessiveXTensorContraction
 public import FLT.Mazur.WeierstrassSuccessiveXTensorOverlap
 public import FLT.Mazur.WeierstrassSuccessiveXTensorOverlapGeometry
