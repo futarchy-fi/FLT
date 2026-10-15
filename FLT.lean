@@ -12457,6 +12457,7 @@ public import FLT.Mazur.WeierstrassModificationXInvolution
 public import FLT.Mazur.WeierstrassModificationXLaurentBranches
 public import FLT.Mazur.WeierstrassModificationXLaurentEvaluation
 public import FLT.Mazur.WeierstrassModificationXLaurentNodeDenominator
+public import FLT.Mazur.WeierstrassModificationXLaurentNodeRestriction
 public import FLT.Mazur.WeierstrassModificationXLaurentRoot
 public import FLT.Mazur.WeierstrassModificationXLocalization
 public import FLT.Mazur.WeierstrassModificationXMorphism
