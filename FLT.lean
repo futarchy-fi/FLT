@@ -2750,6 +2750,7 @@ public import FLT.Mazur.AffineGeometricRefinementData
 public import FLT.Mazur.AffineGeometricTensorCocycle
 public import FLT.Mazur.AffineGeometricTensorDatum
 public import FLT.Mazur.AffineHilbertAdmissibleFiniteKernel
+public import FLT.Mazur.AffineHilbertAdmissibleKernelOpen
 public import FLT.Mazur.AffineHilbertAdmissibleOldKernel
 public import FLT.Mazur.AffineHilbertAssociativeFiniteBranches
 public import FLT.Mazur.AffineHilbertBoundedRelation
