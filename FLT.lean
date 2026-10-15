@@ -2750,7 +2750,10 @@ public import FLT.Mazur.AffineGeometricRefinementData
 public import FLT.Mazur.AffineGeometricTensorCocycle
 public import FLT.Mazur.AffineGeometricTensorDatum
 public import FLT.Mazur.AffineHilbertAdmissibleFiniteKernel
+public import FLT.Mazur.AffineHilbertAdmissibleFlatImage
 public import FLT.Mazur.AffineHilbertAdmissibleGenericCoefficients
+public import FLT.Mazur.AffineHilbertAdmissibleGenericPoint
+public import FLT.Mazur.AffineHilbertAdmissibleIntegralSource
 public import FLT.Mazur.AffineHilbertAdmissibleKernelOpen
 public import FLT.Mazur.AffineHilbertAdmissibleOldKernel
 public import FLT.Mazur.AffineHilbertAssociativeFiniteBranches
@@ -2792,6 +2795,7 @@ public import FLT.Mazur.AffineHilbertFiniteEnvelopeEffective
 public import FLT.Mazur.AffineHilbertFiniteEnvelopeKernel
 public import FLT.Mazur.AffineHilbertFiniteEnvelopePicard
 public import FLT.Mazur.AffineHilbertFiniteEnvelopeSeed
+public import FLT.Mazur.AffineHilbertFiniteFiberInvariants
 public import FLT.Mazur.AffineHilbertFiniteFiberPrincipal
 public import FLT.Mazur.AffineHilbertFiniteFreeGroundBase
 public import FLT.Mazur.AffineHilbertFiniteFullBranchCover
@@ -2855,6 +2859,7 @@ public import FLT.Mazur.AffineHilbertFullFiberRefinement
 public import FLT.Mazur.AffineHilbertFullFiberRestriction
 public import FLT.Mazur.AffineHilbertFullInteriorChart
 public import FLT.Mazur.AffineHilbertFullRelationRestriction
+public import FLT.Mazur.AffineHilbertGenericEnvelopeCriterion
 public import FLT.Mazur.AffineHilbertGroundBaseEnvelope
 public import FLT.Mazur.AffineHilbertGroundBaseEnvelopeLift
 public import FLT.Mazur.AffineHilbertGroundBaseFullFiber
@@ -2915,6 +2920,10 @@ public import FLT.Mazur.AffineHilbertNestedFiniteRelative
 public import FLT.Mazur.AffineHilbertNestedKernel
 public import FLT.Mazur.AffineHilbertNestedRestriction
 public import FLT.Mazur.AffineHilbertNoetherianRelation
+public import FLT.Mazur.AffineHilbertOldEnvelopeEffective
+public import FLT.Mazur.AffineHilbertOldEnvelopeFlatCover
+public import FLT.Mazur.AffineHilbertOldEnvelopeGeneric
+public import FLT.Mazur.AffineHilbertOldEnvelopeTarget
 public import FLT.Mazur.AffineHilbertOriginalOrbitAtlas
 public import FLT.Mazur.AffineHilbertOriginalOrbitModel
 public import FLT.Mazur.AffineHilbertOriginalOrbitOpenModel
@@ -6951,6 +6960,10 @@ public import FLT.Mazur.PolygonCompleteIdentityFiniteRotatedEdges
 public import FLT.Mazur.PolygonCompleteIdentityFiniteScaling
 public import FLT.Mazur.PolygonCompleteIdentityFiniteUnitEvaluation
 public import FLT.Mazur.PolygonCompleteIdentityFiniteUnits
+public import FLT.Mazur.PolygonCompleteIdentityFlatOpenLift
+public import FLT.Mazur.PolygonCompleteIdentityGraphFlat
+public import FLT.Mazur.PolygonCompleteIdentityGraphFlatExt
+public import FLT.Mazur.PolygonCompleteIdentityLiftLocus
 public import FLT.Mazur.PolygonCompleteIdentityMulCoherence
 public import FLT.Mazur.PolygonCompleteIdentityMultiplicationCubic
 public import FLT.Mazur.PolygonCompleteIdentityNilpotentDefect
@@ -8646,6 +8659,7 @@ public import FLT.Mazur.ScalarExtensionDirectSum
 public import FLT.Mazur.ScalarExtensionIsomorphismDescent
 public import FLT.Mazur.ScalarExtensionPullbackDescent
 public import FLT.Mazur.ScalarTowerDivision
+public import FLT.Mazur.SchematicDenseDedekindFlat
 public import FLT.Mazur.SchematicDescentGluing
 public import FLT.Mazur.SchemeAffineAmbientTestCocycle
 public import FLT.Mazur.SchemeAffineAmbientTestNaturality
@@ -8855,6 +8869,7 @@ public import FLT.Mazur.SchemeFiniteGroupQuotientOrbits
 public import FLT.Mazur.SchemeFlatFamilyReflection
 public import FLT.Mazur.SchemeFlatFppfTargetDensity
 public import FLT.Mazur.SchemeFlatProductDensity
+public import FLT.Mazur.SchemeFlatSourceImage
 public import FLT.Mazur.SchemeFlatTargetNeighborhood
 public import FLT.Mazur.SchemeFlatTargetOpen
 public import FLT.Mazur.SchemeFppfCanonicalPairRecovery
@@ -8931,6 +8946,7 @@ public import FLT.Mazur.SchemeIndependentNormalizationSquare
 public import FLT.Mazur.SchemeIndependentPairNormalization
 public import FLT.Mazur.SchemeIndependentRecoveryNormalization
 public import FLT.Mazur.SchemeIndependentTripleCocycle
+public import FLT.Mazur.SchemeKernelFlatSourceImage
 public import FLT.Mazur.SchemeKernelInvariantOpenLift
 public import FLT.Mazur.SchemeKernelPairSectionSheaf
 public import FLT.Mazur.SchemeLineBundleCategory
@@ -9120,6 +9136,7 @@ public import FLT.Mazur.SchemeUnchangedOpenComposition
 public import FLT.Mazur.SchemeUnchangedOpenIsoSquare
 public import FLT.Mazur.SchemeUnchangedOpenLift
 public import FLT.Mazur.SchemeUnchangedOpenPullback
+public import FLT.Mazur.SchemeWholeFiberCoefficients
 public import FLT.Mazur.SchemeWholeFiberGenericOpen
 public import FLT.Mazur.SchemeWholeFiberOpen
 public import FLT.Mazur.SchemeWholeFiberOpenBaseChange
