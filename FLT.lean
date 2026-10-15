@@ -12736,6 +12736,7 @@ public import FLT.Mazur.WeierstrassSpecSections
 public import FLT.Mazur.WeierstrassSpecializationGroup
 public import FLT.Mazur.WeierstrassSplitCompleteNormalization
 public import FLT.Mazur.WeierstrassSplitDepthAffineParameters
+public import FLT.Mazur.WeierstrassSplitDepthArithmeticNodeOpen
 public import FLT.Mazur.WeierstrassSplitDepthConormal
 public import FLT.Mazur.WeierstrassSplitDepthExceptionalBranches
 public import FLT.Mazur.WeierstrassSplitDepthExceptionalCharacters
