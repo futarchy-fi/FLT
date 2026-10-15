@@ -3074,6 +3074,7 @@ public import FLT.Mazur.AffinePicardSections
 public import FLT.Mazur.AffinePieceSectionLocalization
 public import FLT.Mazur.AffinePreimageRestrictionPushout
 public import FLT.Mazur.AffinePrincipalComparisonIso
+public import FLT.Mazur.AffinePrincipalKernel
 public import FLT.Mazur.AffineProductMap
 public import FLT.Mazur.AffineProductNormFiber
 public import FLT.Mazur.AffineProductTensorCoordinates
