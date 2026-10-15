@@ -6875,6 +6875,7 @@ public import FLT.Mazur.PolygonArithmeticNodePoint
 public import FLT.Mazur.PolygonArithmeticNodeTransition
 public import FLT.Mazur.PolygonArithmeticResidueCoefficients
 public import FLT.Mazur.PolygonArithmeticResidueFiber
+public import FLT.Mazur.PolygonArithmeticResidueLine
 public import FLT.Mazur.PolygonArithmeticResidueNilpotence
 public import FLT.Mazur.PolygonArithmeticStageCoefficients
 public import FLT.Mazur.PolygonArithmeticStageFamilies
