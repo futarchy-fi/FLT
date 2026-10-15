@@ -6936,6 +6936,7 @@ public import FLT.Mazur.PolygonArithmeticClosedLayer
 public import FLT.Mazur.PolygonArithmeticClosedLifts
 public import FLT.Mazur.PolygonArithmeticClosedSmoothLocus
 public import FLT.Mazur.PolygonArithmeticCoefficientFlatness
+public import FLT.Mazur.PolygonArithmeticComparedSectionReconstruction
 public import FLT.Mazur.PolygonArithmeticCompatibleAlgebra
 public import FLT.Mazur.PolygonArithmeticCompatibleReduction
 public import FLT.Mazur.PolygonArithmeticCompatibleRing
