@@ -3006,6 +3006,7 @@ public import FLT.Mazur.AffineHilbertTripleComposition
 public import FLT.Mazur.AffineHilbertUnramifiedSplitOrbits
 public import FLT.Mazur.AffineIdealContainment
 public import FLT.Mazur.AffineIdealCoordinates
+public import FLT.Mazur.AffineIdealNeighborhoodMembership
 public import FLT.Mazur.AffineIdealPowerExtension
 public import FLT.Mazur.AffineIdealPowerPullback
 public import FLT.Mazur.AffineIdealSheafComparison
@@ -3701,6 +3702,8 @@ public import FLT.Mazur.ClosedImmersionIdealCorrespondence
 public import FLT.Mazur.ClosedImmersionIdealDegree
 public import FLT.Mazur.ClosedImmersionLimitDescent
 public import FLT.Mazur.ClosedImmersionModulePushforward
+public import FLT.Mazur.ClosedImmersionOpenKernel
+public import FLT.Mazur.ClosedImmersionOpenNeighborhood
 public import FLT.Mazur.ClosedLineProjectionFormula
 public import FLT.Mazur.ClosedLineQuotientPresentation
 public import FLT.Mazur.ClosedModuleDescent
@@ -4606,6 +4609,7 @@ public import FLT.Mazur.EllipticVariableChangeReduction
 public import FLT.Mazur.EllipticVariableChangeSmoothness
 public import FLT.Mazur.EllipticWeightedScaling
 public import FLT.Mazur.EllipticZeroExteriorSmoothCover
+public import FLT.Mazur.EmbeddedStalkNilpotence
 public import FLT.Mazur.EnlargedPresentationModel
 public import FLT.Mazur.EnvelopeBoundaryIdealSheaf
 public import FLT.Mazur.EnvelopeBoundaryIdealTransport
@@ -5541,6 +5545,9 @@ public import FLT.Mazur.HilbertBoundaryInfinitesimalArrows
 public import FLT.Mazur.HilbertBoundaryKernelPair
 public import FLT.Mazur.HilbertBoundaryOrbit
 public import FLT.Mazur.HilbertBoundaryQuotient
+public import FLT.Mazur.HilbertBoundaryQuotientGerms
+public import FLT.Mazur.HilbertBoundaryQuotientNilpotence
+public import FLT.Mazur.HilbertBoundaryQuotientSections
 public import FLT.Mazur.HilbertBoundaryRelationNilpotence
 public import FLT.Mazur.HilbertBoundaryRelationTests
 public import FLT.Mazur.HilbertBoundarySchemeTests
@@ -6052,6 +6059,7 @@ public import FLT.Mazur.InvariantLocalizationAction
 public import FLT.Mazur.InvariantLocalizationComparison
 public import FLT.Mazur.InvariantLocalizationCoordinates
 public import FLT.Mazur.InvariantLocalizationNumerator
+public import FLT.Mazur.InvariantSectionObstruction
 public import FLT.Mazur.IrreducibleComponentAmple
 public import FLT.Mazur.IsomorphicClosedPullback
 public import FLT.Mazur.IteratedOldArrowRepresentatives
@@ -6537,6 +6545,7 @@ public import FLT.Mazur.NilpotentQuadraticDifferenceReduction
 public import FLT.Mazur.NilpotentQuadraticDifferenceTowerNaturality
 public import FLT.Mazur.NilpotentQuadraticRoot
 public import FLT.Mazur.NilpotentQuadraticRootNaturality
+public import FLT.Mazur.NilpotentSectionRestriction
 public import FLT.Mazur.NodalFamilyGeometricConnected
 public import FLT.Mazur.NodalFiberAlgebra
 public import FLT.Mazur.NodalFiberBoundedParameterTransport
@@ -7392,6 +7401,8 @@ public import FLT.Mazur.PolygonCompleteIdentityAdicAmbientImmersion
 public import FLT.Mazur.PolygonCompleteIdentityAdicAmbientKernel
 public import FLT.Mazur.PolygonCompleteIdentityAdicAmbientLifts
 public import FLT.Mazur.PolygonCompleteIdentityAdicAmbientStructure
+public import FLT.Mazur.PolygonCompleteIdentityAdicRefinedKernel
+public import FLT.Mazur.PolygonCompleteIdentityAdicRefinedPatches
 public import FLT.Mazur.PolygonCompleteIdentityAmbientErrorRelation
 public import FLT.Mazur.PolygonCompleteIdentityAmbientParameterComparison
 public import FLT.Mazur.PolygonCompleteIdentityChartAtlas
@@ -7494,6 +7505,9 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstPositiveNodes
 public import FLT.Mazur.PolygonCompleteIdentityFirstPowerDescent
 public import FLT.Mazur.PolygonCompleteIdentityFirstPrincipalCoordinates
 public import FLT.Mazur.PolygonCompleteIdentityFirstPrincipalObstruction
+public import FLT.Mazur.PolygonCompleteIdentityFirstRefinedEquations
+public import FLT.Mazur.PolygonCompleteIdentityFirstRefinedErrorCriterion
+public import FLT.Mazur.PolygonCompleteIdentityFirstRefinedSmoothing
 public import FLT.Mazur.PolygonCompleteIdentityFlatOpenLift
 public import FLT.Mazur.PolygonCompleteIdentityGenericAmbient
 public import FLT.Mazur.PolygonCompleteIdentityGenericAmbientIso
@@ -9207,6 +9221,8 @@ public import FLT.Mazur.RelativePoleComplementFunctions
 public import FLT.Mazur.RelativePoleComplementLinear
 public import FLT.Mazur.RelativeRankOneDivisorUniqueness
 public import FLT.Mazur.RelativeRelationArrowCalculus
+public import FLT.Mazur.RelativeRelationClosedObstruction
+public import FLT.Mazur.RelativeRelationClosedSections
 public import FLT.Mazur.RelativeRelationEtaleSourceFunctions
 public import FLT.Mazur.RelativeRelationFppfInvariantQuotient
 public import FLT.Mazur.RelativeRelationFppfLocallyRingedDescent
@@ -9232,6 +9248,8 @@ public import FLT.Mazur.RelativeRelationInvariantSheaf
 public import FLT.Mazur.RelativeRelationMonicBaseLift
 public import FLT.Mazur.RelativeRelationMonicSeedOpenQuotient
 public import FLT.Mazur.RelativeRelationMonicSeedQuotient
+public import FLT.Mazur.RelativeRelationNilpotentGerms
+public import FLT.Mazur.RelativeRelationNilpotentSections
 public import FLT.Mazur.RelativeRelationOpenSaturation
 public import FLT.Mazur.RelativeRelationOpenSourceFunctions
 public import FLT.Mazur.RelativeRelationOrbit
