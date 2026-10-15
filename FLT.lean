@@ -12847,6 +12847,7 @@ public import FLT.Mazur.WeierstrassSuccessiveArithmeticRestrictionMaps
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticRestrictionSquare
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticRetractionRestriction
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticSlopeRestriction
+public import FLT.Mazur.WeierstrassSuccessiveArithmeticTensorBranches
 public import FLT.Mazur.WeierstrassSuccessiveCenterAction
 public import FLT.Mazur.WeierstrassSuccessiveCenterScaling
 public import FLT.Mazur.WeierstrassSuccessiveCoefficientShear
