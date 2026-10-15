@@ -7306,6 +7306,8 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstActionParameter
 public import FLT.Mazur.PolygonCompleteIdentityFirstActionSubalgebra
 public import FLT.Mazur.PolygonCompleteIdentityFirstBoundary
 public import FLT.Mazur.PolygonCompleteIdentityFirstBranchOriginal
+public import FLT.Mazur.PolygonCompleteIdentityFirstChartBranchImage
+public import FLT.Mazur.PolygonCompleteIdentityFirstChartBranchQuotient
 public import FLT.Mazur.PolygonCompleteIdentityFirstCoordinateDescent
 public import FLT.Mazur.PolygonCompleteIdentityFirstCorrection
 public import FLT.Mazur.PolygonCompleteIdentityFirstDefectDerivation
@@ -7315,6 +7317,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstGraphAlgebra
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphBranchExt
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphBranchMaps
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphChartBranch
+public import FLT.Mazur.PolygonCompleteIdentityFirstGraphClosedComparison
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphClosedLift
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphConductor
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphCrossRelations
@@ -7337,6 +7340,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstGraphOriginalFlat
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphOriginalNodes
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphReducedLaw
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphReduction
+public import FLT.Mazur.PolygonCompleteIdentityFirstGraphRingGenerators
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphScheme
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphSpecialFiber
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphSupport
@@ -7366,6 +7370,8 @@ public import FLT.Mazur.PolygonCompleteIdentityGraphAdicNode
 public import FLT.Mazur.PolygonCompleteIdentityGraphAdicParameter
 public import FLT.Mazur.PolygonCompleteIdentityGraphAdicRotatedEdge
 public import FLT.Mazur.PolygonCompleteIdentityGraphAdicStage
+public import FLT.Mazur.PolygonCompleteIdentityGraphChartEdgeCartesian
+public import FLT.Mazur.PolygonCompleteIdentityGraphEdgeCartesian
 public import FLT.Mazur.PolygonCompleteIdentityGraphFiniteEdge
 public import FLT.Mazur.PolygonCompleteIdentityGraphFlat
 public import FLT.Mazur.PolygonCompleteIdentityGraphFlatExt
@@ -9896,6 +9902,7 @@ public import FLT.Mazur.SpecCartesianAlgebraPushout
 public import FLT.Mazur.SpecChartIdealPreimage
 public import FLT.Mazur.SpecGenericFlatOpen
 public import FLT.Mazur.SpectrumFieldCohomologyCoordinates
+public import FLT.Mazur.SpectrumGlobalRange
 public import FLT.Mazur.SpectrumRingCohomologyCoordinates
 public import FLT.Mazur.SpectrumSmoothFiniteFlatCartier
 public import FLT.Mazur.SpectrumTranslationNormBasis
