@@ -4595,7 +4595,9 @@ public import FLT.Mazur.EllipticVariableChangeSmoothness
 public import FLT.Mazur.EllipticWeightedScaling
 public import FLT.Mazur.EllipticZeroExteriorSmoothCover
 public import FLT.Mazur.EnlargedPresentationModel
+public import FLT.Mazur.EnvelopeBoundaryIdealSheaf
 public import FLT.Mazur.EnvelopeBoundaryIdealTransport
+public import FLT.Mazur.EnvelopeBoundaryTestLift
 public import FLT.Mazur.EnvelopeInteriorFiniteAffineCover
 public import FLT.Mazur.EnvelopeInteriorUnitIdealLift
 public import FLT.Mazur.EnvelopeVerticalGenerizations
@@ -5515,6 +5517,8 @@ public import FLT.Mazur.HilbertBasisSchemeOver
 public import FLT.Mazur.HilbertBasisTupleAffineComparison
 public import FLT.Mazur.HilbertBasisTupleIntersection
 public import FLT.Mazur.HilbertBasisTupleSchemeComparison
+public import FLT.Mazur.HilbertBoundaryEtaleIdeals
+public import FLT.Mazur.HilbertBoundarySchemeTests
 public import FLT.Mazur.HilbertBoundedAmbientAtlas
 public import FLT.Mazur.HilbertBoundedChartClosedEmbedding
 public import FLT.Mazur.HilbertBoundedCoordinateGeneration
@@ -6007,6 +6011,7 @@ public import FLT.Mazur.IntersectionSectionGluing
 public import FLT.Mazur.IntersectionSectionLimitCoordinates
 public import FLT.Mazur.IntersectionUnitCocycle
 public import FLT.Mazur.IntersectionUnitCocycleRecovery
+public import FLT.Mazur.InvariantBoundaryPullback
 public import FLT.Mazur.InvariantFlatTensorAction
 public import FLT.Mazur.InvariantFlatTensorComparison
 public import FLT.Mazur.InvariantLocalizationAction
@@ -9937,6 +9942,7 @@ public import FLT.Mazur.SmoothCyclicDivisorEquations
 public import FLT.Mazur.SmoothCyclicDivisorSymmetry
 public import FLT.Mazur.SmoothDimension
 public import FLT.Mazur.SmoothDimensionBound
+public import FLT.Mazur.SmoothEnvelopeBoundaryTransport
 public import FLT.Mazur.SmoothEtaleResidueLift
 public import FLT.Mazur.SmoothEtaleSeparableLift
 public import FLT.Mazur.SmoothEtaleStalkLift
@@ -9982,6 +9988,7 @@ public import FLT.Mazur.SmoothOrderedTranslationTests
 public import FLT.Mazur.SmoothOriginalFiberLineParameters
 public import FLT.Mazur.SmoothQuasiFiniteCartierCriterion
 public import FLT.Mazur.SmoothQuasiFiniteIdealCharts
+public import FLT.Mazur.SmoothRadicalBaseChange
 public import FLT.Mazur.SmoothRelativeCotangentRank
 public import FLT.Mazur.SmoothSectionCartier
 public import FLT.Mazur.SmoothTranslationChartOrbitFibers
