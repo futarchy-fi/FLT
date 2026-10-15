@@ -4595,6 +4595,9 @@ public import FLT.Mazur.EllipticVariableChangeSmoothness
 public import FLT.Mazur.EllipticWeightedScaling
 public import FLT.Mazur.EllipticZeroExteriorSmoothCover
 public import FLT.Mazur.EnlargedPresentationModel
+public import FLT.Mazur.EnvelopeBoundaryIdealTransport
+public import FLT.Mazur.EnvelopeInteriorFiniteAffineCover
+public import FLT.Mazur.EnvelopeInteriorUnitIdealLift
 public import FLT.Mazur.EnvelopeVerticalGenerizations
 public import FLT.Mazur.EquifiberedGluingBaseChange
 public import FLT.Mazur.EquifiberedSchemeGluing
@@ -4734,6 +4737,8 @@ public import FLT.Mazur.FiniteDivisorComponentAvoidance
 public import FLT.Mazur.FiniteDivisorLengthAdditivity
 public import FLT.Mazur.FiniteDivisorLengthOne
 public import FLT.Mazur.FiniteDivisorRationalSupport
+public import FLT.Mazur.FiniteEnvelopeDenominatorPrimes
+public import FLT.Mazur.FiniteEnvelopeInteriorEquations
 public import FLT.Mazur.FiniteEtaleDisjointSectionNeighborhood
 public import FLT.Mazur.FiniteEtaleGeometricDisjointCover
 public import FLT.Mazur.FiniteEtaleGeometricSectionCover
@@ -5041,6 +5046,7 @@ public import FLT.Mazur.FiniteTypeUnpointedFppfOpenRepresentation
 public import FLT.Mazur.FiniteTypeUnpointedFppfOpenYoneda
 public import FLT.Mazur.FiniteUnramifiedConstantFiber
 public import FLT.Mazur.FiniteUnramifiedFieldLength
+public import FLT.Mazur.FiniteValuativeEnvelopeEquations
 public import FLT.Mazur.FiniteValuativeEnvelopeTest
 public import FLT.Mazur.FiniteValuativeHilbertParameters
 public import FLT.Mazur.FinitelyPresentedImmersedProperCover
@@ -5598,6 +5604,8 @@ public import FLT.Mazur.HilbertIdentityGroundQuotientChart
 public import FLT.Mazur.HilbertIdentityGroundSourceIso
 public import FLT.Mazur.HilbertIdentityQuotientCoordinates
 public import FLT.Mazur.HilbertInjectiveMonomialImageCover
+public import FLT.Mazur.HilbertInteriorEquationTestLift
+public import FLT.Mazur.HilbertInteriorFiniteEquations
 public import FLT.Mazur.HilbertIntrinsicBasisBaseChange
 public import FLT.Mazur.HilbertIntrinsicBasisEquiv
 public import FLT.Mazur.HilbertIntrinsicBasisGlobal
