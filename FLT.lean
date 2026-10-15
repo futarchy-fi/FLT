@@ -12384,6 +12384,7 @@ public import FLT.Mazur.WeierstrassSplitNodalLaurentCoefficient
 public import FLT.Mazur.WeierstrassSplitNodalLaurentReflection
 public import FLT.Mazur.WeierstrassSplitNodalNegationComparison
 public import FLT.Mazur.WeierstrassSplitNodalObstruction
+public import FLT.Mazur.WeierstrassSplitNodalOneGonIso
 public import FLT.Mazur.WeierstrassSplitNodalOrdinaryAlgebraMultiplication
 public import FLT.Mazur.WeierstrassSplitNodalOrdinaryMultiplication
 public import FLT.Mazur.WeierstrassSplitNodalOrdinaryParameter
