@@ -11304,6 +11304,7 @@ public import FLT.Mazur.WeierstrassDividedArithmeticInitialNodes
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialSlope
 public import FLT.Mazur.WeierstrassDividedArithmeticNodeCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticNodeOpen
+public import FLT.Mazur.WeierstrassDividedArithmeticNonadjacentIntersection
 public import FLT.Mazur.WeierstrassDividedArithmeticOppositeNodeOpen
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalBranch
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalCoverage
