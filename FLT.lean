@@ -11453,6 +11453,7 @@ public import FLT.Mazur.WeierstrassDividedZeroExteriorNodeBranches
 public import FLT.Mazur.WeierstrassDividedZeroExteriorOriented
 public import FLT.Mazur.WeierstrassDividedZeroExteriorParameterIntersection
 public import FLT.Mazur.WeierstrassDividedZeroExteriorProjective
+public import FLT.Mazur.WeierstrassDividedZeroExteriorSmoothCoordinates
 public import FLT.Mazur.WeierstrassDividedZeroExteriorSmoothOrbit
 public import FLT.Mazur.WeierstrassDividedZeroIncidenceInfinity
 public import FLT.Mazur.WeierstrassDividedZeroNodalGeometry
