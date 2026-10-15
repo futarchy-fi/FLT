@@ -12883,6 +12883,7 @@ public import FLT.Mazur.WeierstrassSuccessiveFractionRegular
 public import FLT.Mazur.WeierstrassSuccessiveHorizontalPreimage
 public import FLT.Mazur.WeierstrassSuccessiveInfinityCenter
 public import FLT.Mazur.WeierstrassSuccessiveLaurentBoundary
+public import FLT.Mazur.WeierstrassSuccessiveLaurentSlopeLocalization
 public import FLT.Mazur.WeierstrassSuccessiveLocalAction
 public import FLT.Mazur.WeierstrassSuccessiveNilpotentBranch
 public import FLT.Mazur.WeierstrassSuccessiveNilpotentNodeChart
