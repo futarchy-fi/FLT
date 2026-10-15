@@ -2709,6 +2709,7 @@ public import FLT.Mazur.AffineEtaleFiniteFaithfulRefinement
 public import FLT.Mazur.AffineEtaleFiniteFaithfulSpectrum
 public import FLT.Mazur.AffineEtaleFiniteFreeSpectrum
 public import FLT.Mazur.AffineEtaleIdentityGroundBase
+public import FLT.Mazur.AffineEtaleNilpotentLift
 public import FLT.Mazur.AffineEtaleTranslationFiniteBranch
 public import FLT.Mazur.AffineEtaleTranslationNormCharts
 public import FLT.Mazur.AffineFaithfullyFlatEpimorphisms
@@ -3006,6 +3007,7 @@ public import FLT.Mazur.AffineHilbertUnramifiedSplitOrbits
 public import FLT.Mazur.AffineIdealContainment
 public import FLT.Mazur.AffineIdealCoordinates
 public import FLT.Mazur.AffineIdealPowerExtension
+public import FLT.Mazur.AffineIdealPowerPullback
 public import FLT.Mazur.AffineIdealSheafComparison
 public import FLT.Mazur.AffineIdealSheafCoverComparison
 public import FLT.Mazur.AffineImageSectionTransport
@@ -5533,6 +5535,13 @@ public import FLT.Mazur.HilbertBoundaryOrbit
 public import FLT.Mazur.HilbertBoundaryQuotient
 public import FLT.Mazur.HilbertBoundaryRelationTests
 public import FLT.Mazur.HilbertBoundarySchemeTests
+public import FLT.Mazur.HilbertBoundaryThickeningGeometry
+public import FLT.Mazur.HilbertBoundaryThickeningKernelPair
+public import FLT.Mazur.HilbertBoundaryThickeningNilpotence
+public import FLT.Mazur.HilbertBoundaryThickeningQuotients
+public import FLT.Mazur.HilbertBoundaryThickeningRelation
+public import FLT.Mazur.HilbertBoundaryThickeningTests
+public import FLT.Mazur.HilbertBoundaryThickeningTower
 public import FLT.Mazur.HilbertBoundedAmbientAtlas
 public import FLT.Mazur.HilbertBoundedChartClosedEmbedding
 public import FLT.Mazur.HilbertBoundedCoordinateGeneration
@@ -6029,6 +6038,7 @@ public import FLT.Mazur.IntersectionUnitCocycleRecovery
 public import FLT.Mazur.InvariantBoundaryPullback
 public import FLT.Mazur.InvariantFlatTensorAction
 public import FLT.Mazur.InvariantFlatTensorComparison
+public import FLT.Mazur.InvariantIdealRelation
 public import FLT.Mazur.InvariantLocalizationAction
 public import FLT.Mazur.InvariantLocalizationComparison
 public import FLT.Mazur.InvariantLocalizationCoordinates
