@@ -12365,6 +12365,7 @@ public import FLT.Mazur.WeierstrassModificationShearOverlap
 public import FLT.Mazur.WeierstrassModificationXAlgebra
 public import FLT.Mazur.WeierstrassModificationXArithmeticInitialCover
 public import FLT.Mazur.WeierstrassModificationXArithmeticInitialNode
+public import FLT.Mazur.WeierstrassModificationXArithmeticNodeBoundary
 public import FLT.Mazur.WeierstrassModificationXArithmeticTensorNodes
 public import FLT.Mazur.WeierstrassModificationXBaseChange
 public import FLT.Mazur.WeierstrassModificationXBaseChangeGenerators
