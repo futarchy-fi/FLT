@@ -6504,6 +6504,7 @@ public import FLT.Mazur.NilpotentPolynomialInverseBaseChange
 public import FLT.Mazur.NilpotentPolynomialTaylor
 public import FLT.Mazur.NilpotentQuadraticDifferenceFactors
 public import FLT.Mazur.NilpotentQuadraticDifferenceInverse
+public import FLT.Mazur.NilpotentQuadraticDifferenceReduction
 public import FLT.Mazur.NilpotentQuadraticRoot
 public import FLT.Mazur.NilpotentQuadraticRootNaturality
 public import FLT.Mazur.NodalFamilyGeometricConnected
