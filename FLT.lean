@@ -12970,6 +12970,7 @@ public import FLT.Mazur.WeierstrassSuccessiveShearTerminalZeroConicBranches
 public import FLT.Mazur.WeierstrassSuccessiveShearTerminalZeroConicCoordinates
 public import FLT.Mazur.WeierstrassSuccessiveShearTerminalZeroNodeConic
 public import FLT.Mazur.WeierstrassSuccessiveSimpleSlopeChart
+public import FLT.Mazur.WeierstrassSuccessiveTensorLaurentEvaluation
 public import FLT.Mazur.WeierstrassSuccessiveTensorSlopeBoundary
 public import FLT.Mazur.WeierstrassSuccessiveTensorSlopeCoordinates
 public import FLT.Mazur.WeierstrassSuccessiveXAlgebra
