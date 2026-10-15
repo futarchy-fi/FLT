@@ -3973,6 +3973,7 @@ public import FLT.Mazur.DRFiberClassification
 public import FLT.Mazur.DedekindPointExtension
 public import FLT.Mazur.DenseGroundEnvelopeInterior
 public import FLT.Mazur.DenseGroundHilbertFullInterior
+public import FLT.Mazur.DenseGroundHilbertPrincipal
 public import FLT.Mazur.DenseGroundResidualSupport
 public import FLT.Mazur.DerivationAlgEquivTransport
 public import FLT.Mazur.DirectImageBaseChangeAdjoints
