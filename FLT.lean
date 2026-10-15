@@ -3279,6 +3279,7 @@ public import FLT.Mazur.AnnihilatorSubsheaf
 public import FLT.Mazur.ArbitraryGeometricAffineFullFiber
 public import FLT.Mazur.ArbitraryGeometricAllLiftTranslations
 public import FLT.Mazur.ArbitraryGeometricFiniteGroundInterior
+public import FLT.Mazur.ArbitraryGeometricFiniteKernel
 public import FLT.Mazur.ArbitraryPicardAffineEtaleChart
 public import FLT.Mazur.ArbitraryPicardEtaleTranslation
 public import FLT.Mazur.ArtinianClosedFiberFunctions
