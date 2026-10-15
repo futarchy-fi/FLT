@@ -3281,6 +3281,7 @@ public import FLT.Mazur.ArbitraryGeometricAllLiftTranslations
 public import FLT.Mazur.ArbitraryGeometricFiniteGroundInterior
 public import FLT.Mazur.ArbitraryGeometricFiniteKernel
 public import FLT.Mazur.ArbitraryGeometricGroundQuotient
+public import FLT.Mazur.ArbitraryGeometricOriginalOpenImage
 public import FLT.Mazur.ArbitraryPicardAffineEtaleChart
 public import FLT.Mazur.ArbitraryPicardEtaleTranslation
 public import FLT.Mazur.ArtinianClosedFiberFunctions
@@ -5398,6 +5399,9 @@ public import FLT.Mazur.GrassmannianWholeOverlapCocycle
 public import FLT.Mazur.GrassmannianWholeOverlapProjection
 public import FLT.Mazur.GrassmannianWholeOverlapRefinement
 public import FLT.Mazur.GrassmannianWholeOverlapTransition
+public import FLT.Mazur.GroundChartOriginalFullRelation
+public import FLT.Mazur.GroundChartOriginalQuotientTopology
+public import FLT.Mazur.GroundChartRelationDiagonal
 public import FLT.Mazur.GroupActionPointTranslation
 public import FLT.Mazur.GroupMarkingBaseChange
 public import FLT.Mazur.GroupMarkingBaseChangeInverse
@@ -7276,6 +7280,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstGraphFlat
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphImage
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphLocalization
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphNilradical
+public import FLT.Mazur.PolygonCompleteIdentityFirstGraphOriginalFlat
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphReducedLaw
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphReduction
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphScheme
@@ -7291,6 +7296,13 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstPowerDescent
 public import FLT.Mazur.PolygonCompleteIdentityFirstPrincipalCoordinates
 public import FLT.Mazur.PolygonCompleteIdentityFirstPrincipalObstruction
 public import FLT.Mazur.PolygonCompleteIdentityFlatOpenLift
+public import FLT.Mazur.PolygonCompleteIdentityGraphAdicAlgebra
+public import FLT.Mazur.PolygonCompleteIdentityGraphAdicChart
+public import FLT.Mazur.PolygonCompleteIdentityGraphAdicChartCoordinates
+public import FLT.Mazur.PolygonCompleteIdentityGraphAdicChartSpace
+public import FLT.Mazur.PolygonCompleteIdentityGraphAdicClosed
+public import FLT.Mazur.PolygonCompleteIdentityGraphAdicCover
+public import FLT.Mazur.PolygonCompleteIdentityGraphAdicIdeal
 public import FLT.Mazur.PolygonCompleteIdentityGraphAdicInput
 public import FLT.Mazur.PolygonCompleteIdentityGraphAdicLift
 public import FLT.Mazur.PolygonCompleteIdentityGraphAdicNode
@@ -8969,6 +8981,7 @@ public import FLT.Mazur.RelativeRelationInvariantGlobalSections
 public import FLT.Mazur.RelativeRelationInvariantIso
 public import FLT.Mazur.RelativeRelationInvariantLocallyRinged
 public import FLT.Mazur.RelativeRelationInvariantMap
+public import FLT.Mazur.RelativeRelationInvariantMapOpen
 public import FLT.Mazur.RelativeRelationInvariantMapSections
 public import FLT.Mazur.RelativeRelationInvariantSectionRings
 public import FLT.Mazur.RelativeRelationInvariantSections
@@ -10188,6 +10201,7 @@ public import FLT.Mazur.VariableHilbertFixedBaseRelation
 public import FLT.Mazur.VariableHilbertFppfQuotient
 public import FLT.Mazur.VariableHilbertGeometricOrbitRetention
 public import FLT.Mazur.VariableHilbertGroundBaseCartesian
+public import FLT.Mazur.VariableHilbertGroundQuotientOpen
 public import FLT.Mazur.VariableHilbertIntersectionBaseChange
 public import FLT.Mazur.VariableHilbertInvariantFunctionDescent
 public import FLT.Mazur.VariableHilbertInvariantOpenDescent
