@@ -10201,6 +10201,7 @@ public import FLT.Mazur.TensorOpenChart
 public import FLT.Mazur.TensorOpenChartCommonBoundary
 public import FLT.Mazur.TensorOpenChartCommonIntersection
 public import FLT.Mazur.TensorOpenChartIntersection
+public import FLT.Mazur.TensorOpenChartNilpotentSeparation
 public import FLT.Mazur.TensorOpenChartNodeExclusion
 public import FLT.Mazur.TensorOpenChartOverlap
 public import FLT.Mazur.TensorOpenChartRange
