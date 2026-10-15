@@ -4702,6 +4702,7 @@ public import FLT.Mazur.FiniteCompactOpenAffineLimit
 public import FLT.Mazur.FiniteCompactOpenCoverLimit
 public import FLT.Mazur.FiniteCoproductTensorRight
 public import FLT.Mazur.FiniteCoverDirectSumSheaf
+public import FLT.Mazur.FiniteCoverUniversallyClosed
 public import FLT.Mazur.FiniteCurveEulerIsomorphism
 public import FLT.Mazur.FiniteDVRAbsoluteRamification
 public import FLT.Mazur.FiniteDVRComplete
@@ -8613,6 +8614,7 @@ public import FLT.Mazur.ProperCurveGenus
 public import FLT.Mazur.ProperCurveOpenComparison
 public import FLT.Mazur.ProperDenseOpenExtension
 public import FLT.Mazur.ProperDenseOpenIso
+public import FLT.Mazur.ProperEtaleNeighborhoodBases
 public import FLT.Mazur.ProperFamilyAbelRepresentation
 public import FLT.Mazur.ProperFamilyAtlasCartesian
 public import FLT.Mazur.ProperFamilyAtlasRecovery
