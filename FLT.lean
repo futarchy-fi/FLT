@@ -2776,6 +2776,7 @@ public import FLT.Mazur.AffineHilbertClosedRefinementRelation
 public import FLT.Mazur.AffineHilbertComposableEnvelope
 public import FLT.Mazur.AffineHilbertCompositionCharts
 public import FLT.Mazur.AffineHilbertCompositionFiniteBranches
+public import FLT.Mazur.AffineHilbertConnectedEnvelopeFiber
 public import FLT.Mazur.AffineHilbertDerivedNoetherianRelation
 public import FLT.Mazur.AffineHilbertEffectiveOpenDescent
 public import FLT.Mazur.AffineHilbertEffectiveOpenEtale
