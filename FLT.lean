@@ -7376,6 +7376,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstChartScalars
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartSocleKernel
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartSourceFunctions
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartTargetScalars
+public import FLT.Mazur.PolygonCompleteIdentityFirstCompleteEquations
 public import FLT.Mazur.PolygonCompleteIdentityFirstCompleteErrors
 public import FLT.Mazur.PolygonCompleteIdentityFirstCoordinateDescent
 public import FLT.Mazur.PolygonCompleteIdentityFirstCorrection
