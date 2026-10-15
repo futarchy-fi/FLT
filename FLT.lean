@@ -6809,6 +6809,7 @@ public import FLT.Mazur.OriginalFamilyTwistComparison
 public import FLT.Mazur.OriginalFamilyTwistComposition
 public import FLT.Mazur.OriginalFiberFiniteSectionOrbit
 public import FLT.Mazur.OriginalFiniteCoefficientOrbit
+public import FLT.Mazur.OriginalGeometricallyIntegralOpen
 public import FLT.Mazur.OriginalHilbertFiniteType
 public import FLT.Mazur.OriginalInvariantOpenAllEtaleLifts
 public import FLT.Mazur.OriginalRestrictedHilbertIntersection
