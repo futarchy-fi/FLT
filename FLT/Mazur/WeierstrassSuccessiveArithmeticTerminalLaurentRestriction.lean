@@ -1,0 +1,71 @@
+/-
+Copyright (c) 2026 krandder. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: krandder
+-/
+module
+
+public import FLT.Mazur.WeierstrassDilatationTensorRingHomExt
+public import FLT.Mazur.WeierstrassSuccessiveArithmeticBranchRestriction
+public import FLT.Mazur.WeierstrassSuccessiveTerminalLaurentCoordinates
+
+/-!
+# Original terminal Laurent boundaries commute with arithmetic restriction
+
+Both Boolean labels preserve the full cubic evaluation. The horizontal
+coordinate is the reciprocal original Laurent parameter at every order.
+-/
+
+@[expose] public noncomputable section
+open scoped LaurentPolynomial TensorProduct
+namespace FLT.Mazur.WeierstrassSuccessiveX
+open PolygonArithmeticStages
+universe u
+set_option backward.defeqAttrib.useBackward true
+set_option backward.isDefEq.respectTransparency false
+variable (R : Type u) [CommRing R] (π : R) (m : ℕ)
+  (W : WeierstrassCurve R) (k : ℕ) (b3 b4 b6 : R)
+  (ha : IsUnit W.a₁) (hs : π ∣ π ^ k) (h2 : π ∣ W.a₂)
+  (h3 : π ∣ b3) (h4 : π ∣ b4) (h6 : π ∣ b6) (opposite : Bool)
+local notation "Q₀" => Quotient R π m
+local notation "Q₁" => Quotient R π (m + 1)
+local notation "f" => (AlgHom.toRingHom (restriction R π m))
+local notation "v₁" => arithmeticBranchSlope π (m + 1) W (π ^ k) b3 b4 b6
+  ha hs h2 h3 h4 h6 opposite
+local notation "v₀" => arithmeticBranchSlope π m W (π ^ k) b3 b4 b6
+  ha hs h2 h3 h4 h6 opposite
+local notation "hv₁" => arithmeticBranchSlope_equation π (m + 1) W (π ^ k) b3 b4 b6
+  ha hs h2 h3 h4 h6 opposite
+local notation "hv₀" => arithmeticBranchSlope_equation π m W (π ^ k) b3 b4 b6
+  ha hs h2 h3 h4 h6 opposite
+local notation "G₁" => tensorTerminalLaurent W π k b3 b4 b6 Q₁ v₁ hv₁
+local notation "G₀" => tensorTerminalLaurent W π k b3 b4 b6 Q₀ v₀ hv₀
+local notation "T" => WeierstrassDilatation.arithmeticTerminalTensorMap
+  R π m W (π ^ (k + 1)) b3 b4 b6
+
+/-- The full original terminal boundary retains coefficients, cubic and Boolean label. -/
+theorem arithmeticTerminalLaurent_restriction :
+    (PolygonScalingNaturality.coeffMap f).comp (G₁).toRingHom =
+      (G₀).toRingHom.comp (T).toRingHom := by
+  apply WeierstrassDilatation.tensor_coefficient_ringHom_ext
+  · intro a
+    change PolygonScalingNaturality.coeffMap f (G₁ (algebraMap Q₁ _ a)) =
+      G₀ (T (algebraMap Q₁ _ a))
+    exact (congrArg (PolygonScalingNaturality.coeffMap f) ((G₁).commutes a)).trans
+      ((PolygonScalingNaturality.coeffMap_C f a).trans
+        ((congrArg G₀ (WeierstrassDilatation.arithmeticTerminalTensorMap_scalar
+          R π m W (π ^ (k + 1)) b3 b4 b6 a)).trans ((G₀).commutes (f a))).symm)
+  · change PolygonScalingNaturality.coeffMap f
+      (G₁ ((1 : Q₁) ⊗ₜ[R] WeierstrassDilatation.x W (π ^ (k + 1)) b3 b4 b6)) =
+        G₀ (T ((1 : Q₁) ⊗ₜ[R] WeierstrassDilatation.x W (π ^ (k + 1)) b3 b4 b6))
+    rw [WeierstrassDilatation.arithmeticTerminalTensorMap_tmul, map_one,
+      tensorTerminalLaurent_x, tensorTerminalLaurent_x,
+      PolygonScalingNaturality.coeffMap_T_neg_one]
+  · change PolygonScalingNaturality.coeffMap f
+      (G₁ ((1 : Q₁) ⊗ₜ[R] WeierstrassDilatation.y W (π ^ (k + 1)) b3 b4 b6)) =
+        G₀ (T ((1 : Q₁) ⊗ₜ[R] WeierstrassDilatation.y W (π ^ (k + 1)) b3 b4 b6))
+    rw [WeierstrassDilatation.arithmeticTerminalTensorMap_tmul, map_one,
+      tensorTerminalLaurent_y, tensorTerminalLaurent_y, map_mul,
+      PolygonScalingNaturality.coeffMap_T_neg_one, arithmeticBranchSlope_laurent_restriction]
+
+end FLT.Mazur.WeierstrassSuccessiveX
