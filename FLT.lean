@@ -4379,8 +4379,10 @@ public import FLT.Mazur.EllipticResolvedReciprocalIdentity
 public import FLT.Mazur.EllipticResolvedReflectedMixedTranslationEquality
 public import FLT.Mazur.EllipticResolvedRetainedCharts
 public import FLT.Mazur.EllipticResolvedRetainedCover
+public import FLT.Mazur.EllipticResolvedRetainedCyclicCharts
 public import FLT.Mazur.EllipticResolvedRetainedDepthSeparation
 public import FLT.Mazur.EllipticResolvedRetainedIdentitySeparation
+public import FLT.Mazur.EllipticResolvedRetainedIndexComparison
 public import FLT.Mazur.EllipticResolvedRetainedSmoothCharts
 public import FLT.Mazur.EllipticResolvedRetainedTerminalSeparation
 public import FLT.Mazur.EllipticResolvedSmoothPoint
@@ -4393,8 +4395,12 @@ public import FLT.Mazur.EllipticResolvedWholeClosedFiber
 public import FLT.Mazur.EllipticResolvedZeroBoundaryCoverage
 public import FLT.Mazur.EllipticResolvedZeroExteriorCover
 public import FLT.Mazur.EllipticResolvedZeroStageCoverage
+public import FLT.Mazur.EllipticRetainedAdjacentCyclicCoordinates
 public import FLT.Mazur.EllipticRetainedBoundaryAtlas
 public import FLT.Mazur.EllipticRetainedBoundaryRange
+public import FLT.Mazur.EllipticRetainedBoundaryTransition
+public import FLT.Mazur.EllipticRetainedFinalCyclicCoordinates
+public import FLT.Mazur.EllipticRetainedHorizontalLineCoordinates
 public import FLT.Mazur.EllipticRetainedLaurentCover
 public import FLT.Mazur.EllipticRetainedSmoothBoundaryCover
 public import FLT.Mazur.EllipticRetainedTerminalBoundaryCover
@@ -10757,6 +10763,7 @@ public import FLT.Mazur.WeierstrassDividedFiniteLineBoundaryGeometry
 public import FLT.Mazur.WeierstrassDividedFiniteLineBranches
 public import FLT.Mazur.WeierstrassDividedFiniteLineContractions
 public import FLT.Mazur.WeierstrassDividedFiniteLineReciprocals
+public import FLT.Mazur.WeierstrassDividedFiniteLineScaling
 public import FLT.Mazur.WeierstrassDividedFiniteNodeComponents
 public import FLT.Mazur.WeierstrassDividedFiniteNodeContractions
 public import FLT.Mazur.WeierstrassDividedFiniteOriginalScaleOpen
@@ -11533,6 +11540,7 @@ public import FLT.Mazur.WeierstrassHorizontalConicPunctureResidue
 public import FLT.Mazur.WeierstrassHorizontalFractionHomExt
 public import FLT.Mazur.WeierstrassHorizontalGlobalChartComparison
 public import FLT.Mazur.WeierstrassHorizontalLaurentBranches
+public import FLT.Mazur.WeierstrassHorizontalLineLaurentComparison
 public import FLT.Mazur.WeierstrassIncidenceCoefficientTransport
 public import FLT.Mazur.WeierstrassIncidenceResidueShearComparison
 public import FLT.Mazur.WeierstrassIncidenceShearConicBoundary
