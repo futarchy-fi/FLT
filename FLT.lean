@@ -4404,6 +4404,7 @@ public import FLT.Mazur.EllipticResolvedTerminalSmoothCharts
 public import FLT.Mazur.EllipticResolvedTorsionInjectivity
 public import FLT.Mazur.EllipticResolvedWholeClosedFiber
 public import FLT.Mazur.EllipticResolvedWholeCubicComparison
+public import FLT.Mazur.EllipticResolvedWholeCubicNode
 public import FLT.Mazur.EllipticResolvedZeroBoundaryCoverage
 public import FLT.Mazur.EllipticResolvedZeroExteriorCover
 public import FLT.Mazur.EllipticResolvedZeroStageCoverage
