@@ -6893,6 +6893,7 @@ public import FLT.Mazur.PolygonArithmeticParameterAnnihilator
 public import FLT.Mazur.PolygonArithmeticReductionSequence
 public import FLT.Mazur.PolygonArithmeticResidueCoefficients
 public import FLT.Mazur.PolygonArithmeticResidueFiber
+public import FLT.Mazur.PolygonArithmeticResidueKernel
 public import FLT.Mazur.PolygonArithmeticResidueLine
 public import FLT.Mazur.PolygonArithmeticResidueNilpotence
 public import FLT.Mazur.PolygonArithmeticRestrictionKernel
