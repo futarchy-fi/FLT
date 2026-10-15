@@ -2788,6 +2788,7 @@ public import FLT.Mazur.AffineHilbertEffectiveOpenPicard
 public import FLT.Mazur.AffineHilbertEffectiveOpenRepresentation
 public import FLT.Mazur.AffineHilbertEffectiveTargetOpen
 public import FLT.Mazur.AffineHilbertEnvelopeCoaction
+public import FLT.Mazur.AffineHilbertEnvelopeFiberCount
 public import FLT.Mazur.AffineHilbertEnvelopeKernelPair
 public import FLT.Mazur.AffineHilbertEnvelopeOpenChart
 public import FLT.Mazur.AffineHilbertEnvelopeQuotient
