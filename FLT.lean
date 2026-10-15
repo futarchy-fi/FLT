@@ -6819,6 +6819,7 @@ public import FLT.Mazur.OriginalHilbertFiniteType
 public import FLT.Mazur.OriginalInvariantOpenAllEtaleLifts
 public import FLT.Mazur.OriginalRestrictedHilbertIntersection
 public import FLT.Mazur.OriginalSchemeDetectingOpen
+public import FLT.Mazur.OriginalSmoothDetectingEtaleLift
 public import FLT.Mazur.OriginalTensorOrbitEvaluation
 public import FLT.Mazur.OriginalTensorOrbitMorphisms
 public import FLT.Mazur.OriginalTranscendentalAffineOpenOrbit
