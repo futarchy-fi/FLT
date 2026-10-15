@@ -3059,6 +3059,7 @@ public import FLT.Mazur.AffineOpenFinitePolynomialPresentation
 public import FLT.Mazur.AffineOpenFiniteQuotientChart
 public import FLT.Mazur.AffineOpenFiniteRefinement
 public import FLT.Mazur.AffineOpenImmersionLocalizationCriterion
+public import FLT.Mazur.AffineOpenKernelPower
 public import FLT.Mazur.AffineOpenQuotientPresentation
 public import FLT.Mazur.AffineOverlapDiagonal
 public import FLT.Mazur.AffineOverlapMapSections
@@ -6039,6 +6040,7 @@ public import FLT.Mazur.LaurentFirstOrderAutomorphism
 public import FLT.Mazur.LaurentFirstParameterSubstitution
 public import FLT.Mazur.LaurentFirstStageParameter
 public import FLT.Mazur.LaurentFirstStageParameterEquiv
+public import FLT.Mazur.LaurentFirstStageParameterTorus
 public import FLT.Mazur.LaurentIdentityIdeal
 public import FLT.Mazur.LaurentLineActionDensity
 public import FLT.Mazur.LaurentLineActionEvaluation
@@ -7321,6 +7323,10 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstBoundary
 public import FLT.Mazur.PolygonCompleteIdentityFirstBranchOriginal
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartBranchImage
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartBranchQuotient
+public import FLT.Mazur.PolygonCompleteIdentityFirstChartKernelPowers
+public import FLT.Mazur.PolygonCompleteIdentityFirstChartNodeSocle
+public import FLT.Mazur.PolygonCompleteIdentityFirstChartPunctureOpens
+public import FLT.Mazur.PolygonCompleteIdentityFirstChartPunctures
 public import FLT.Mazur.PolygonCompleteIdentityFirstCoordinateDescent
 public import FLT.Mazur.PolygonCompleteIdentityFirstCorrection
 public import FLT.Mazur.PolygonCompleteIdentityFirstDefectDerivation
@@ -7388,8 +7394,10 @@ public import FLT.Mazur.PolygonCompleteIdentityGraphEdgeCartesian
 public import FLT.Mazur.PolygonCompleteIdentityGraphFiniteEdge
 public import FLT.Mazur.PolygonCompleteIdentityGraphFlat
 public import FLT.Mazur.PolygonCompleteIdentityGraphFlatExt
+public import FLT.Mazur.PolygonCompleteIdentityGraphIncomingCartesian
 public import FLT.Mazur.PolygonCompleteIdentityGraphIncomingChart
 public import FLT.Mazur.PolygonCompleteIdentityGraphRotatedEdge
+public import FLT.Mazur.PolygonCompleteIdentityGraphRotatedEdgeCartesian
 public import FLT.Mazur.PolygonCompleteIdentityLiftLocus
 public import FLT.Mazur.PolygonCompleteIdentityMixedObstruction
 public import FLT.Mazur.PolygonCompleteIdentityMulCoherence
@@ -9997,7 +10005,9 @@ public import FLT.Mazur.StructureModuleScalarTransitions
 public import FLT.Mazur.StructureRingCohomologyIso
 public import FLT.Mazur.SubfunctorRepresentedPullback
 public import FLT.Mazur.SuccessiveIncidenceAlgebra
+public import FLT.Mazur.SuccessiveIncidenceCoefficientMap
 public import FLT.Mazur.SuccessiveIncidencePolygonChart
+public import FLT.Mazur.SuccessiveIncidencePolygonRestriction
 public import FLT.Mazur.SupportedReductionLocalization
 public import FLT.Mazur.SurjectiveAlgHomKernelEquiv
 public import FLT.Mazur.SurjectiveDominantEpi
@@ -10108,6 +10118,7 @@ public import FLT.Mazur.TwistedSectionPullbackMonicity
 public import FLT.Mazur.TwistedSectionPushforward
 public import FLT.Mazur.TwistedSectionPushforwardNaturality
 public import FLT.Mazur.TwistedSectionRegularity
+public import FLT.Mazur.TwoCoordinateTorsionSocle
 public import FLT.Mazur.TwoGeneratorRelationBaseChange
 public import FLT.Mazur.TwoGeneratorRelationKernelBaseChange
 public import FLT.Mazur.TwoGeneratorRelationQuotient
@@ -11070,6 +11081,7 @@ public import FLT.Mazur.WeierstrassDividedAdjacentZeroParameterIntersection
 public import FLT.Mazur.WeierstrassDividedAdjacentZeroSectionSeparation
 public import FLT.Mazur.WeierstrassDividedArithmeticCoordinateTransition
 public import FLT.Mazur.WeierstrassDividedArithmeticCoordinates
+public import FLT.Mazur.WeierstrassDividedArithmeticNodeCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticNodeOpen
 public import FLT.Mazur.WeierstrassDividedArithmeticOppositeNodeOpen
 public import FLT.Mazur.WeierstrassDividedAtlasRegularCenter
@@ -12822,7 +12834,9 @@ public import FLT.Mazur.WeierstrassSplitNormalizationInfinity
 public import FLT.Mazur.WeierstrassSplitNormalizationInfinityParameter
 public import FLT.Mazur.WeierstrassSquareZeroTorsionRigidity
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticNodeChart
+public import FLT.Mazur.WeierstrassSuccessiveArithmeticNodeCoverage
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticOppositeNodeChart
+public import FLT.Mazur.WeierstrassSuccessiveArithmeticRestrictionMaps
 public import FLT.Mazur.WeierstrassSuccessiveCenterAction
 public import FLT.Mazur.WeierstrassSuccessiveCenterScaling
 public import FLT.Mazur.WeierstrassSuccessiveCoefficientShear
@@ -12836,9 +12850,13 @@ public import FLT.Mazur.WeierstrassSuccessiveInfinityCenter
 public import FLT.Mazur.WeierstrassSuccessiveLocalAction
 public import FLT.Mazur.WeierstrassSuccessiveNilpotentBranch
 public import FLT.Mazur.WeierstrassSuccessiveNilpotentNodeChart
+public import FLT.Mazur.WeierstrassSuccessiveNilpotentSlopeMap
 public import FLT.Mazur.WeierstrassSuccessiveNodeChartCoverage
+public import FLT.Mazur.WeierstrassSuccessiveNodeRestrictionSquare
 public import FLT.Mazur.WeierstrassSuccessiveOppositeNodeChart
+public import FLT.Mazur.WeierstrassSuccessiveOppositeRestrictionSquare
 public import FLT.Mazur.WeierstrassSuccessiveOriginalOpen
+public import FLT.Mazur.WeierstrassSuccessivePolygonRestrictionSquare
 public import FLT.Mazur.WeierstrassSuccessiveReesCoordinates
 public import FLT.Mazur.WeierstrassSuccessiveReesCover
 public import FLT.Mazur.WeierstrassSuccessiveReesEquation
