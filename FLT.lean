@@ -12462,6 +12462,7 @@ public import FLT.Mazur.WeierstrassModificationXNodeDenominators
 public import FLT.Mazur.WeierstrassModificationXNodeInverseEvaluation
 public import FLT.Mazur.WeierstrassModificationXNodeInverseFunctions
 public import FLT.Mazur.WeierstrassModificationXNodeInverseParameter
+public import FLT.Mazur.WeierstrassModificationXOppositeNodeEquiv
 public import FLT.Mazur.WeierstrassModificationXOriginalLocalization
 public import FLT.Mazur.WeierstrassModificationXOverlap
 public import FLT.Mazur.WeierstrassModificationXPolynomialFactors
