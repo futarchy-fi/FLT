@@ -2698,6 +2698,7 @@ public import FLT.Mazur.AffineEffectiveRefinementNaturality
 public import FLT.Mazur.AffineEffectiveSecondReconstruction
 public import FLT.Mazur.AffineEffectiveSuccessiveReconstruction
 public import FLT.Mazur.AffineEnvelopeFiniteNeighborhood
+public import FLT.Mazur.AffineEnvelopeNormTransport
 public import FLT.Mazur.AffineEtaleFaithfulCoefficients
 public import FLT.Mazur.AffineEtaleFaithfulNeighborhood
 public import FLT.Mazur.AffineEtaleFaithfulSource
@@ -5402,6 +5403,7 @@ public import FLT.Mazur.GrassmannianWholeOverlapProjection
 public import FLT.Mazur.GrassmannianWholeOverlapRefinement
 public import FLT.Mazur.GrassmannianWholeOverlapTransition
 public import FLT.Mazur.GroundChartOriginalFullRelation
+public import FLT.Mazur.GroundChartOriginalNormTransport
 public import FLT.Mazur.GroundChartOriginalQuotientOpenImmersion
 public import FLT.Mazur.GroundChartOriginalQuotientTopology
 public import FLT.Mazur.GroundChartOriginalResidualDescent
@@ -9378,6 +9380,7 @@ public import FLT.Mazur.SchemeModulePullbackUnitSections
 public import FLT.Mazur.SchemeModulePullbackUnits
 public import FLT.Mazur.SchemeMonoidUnitEvaluation
 public import FLT.Mazur.SchemeNilpotentSectionDetection
+public import FLT.Mazur.SchemeNormIndependentGroundTests
 public import FLT.Mazur.SchemeNormalizedRecoveryOverlap
 public import FLT.Mazur.SchemeOpenChartRange
 public import FLT.Mazur.SchemeOpenEnvelopeDenominators
@@ -9444,6 +9447,7 @@ public import FLT.Mazur.SchemeReducedRelativeSections
 public import FLT.Mazur.SchemeReducedSectionDetection
 public import FLT.Mazur.SchemeReducedStructureSheaf
 public import FLT.Mazur.SchemeRefinementReconstruction
+public import FLT.Mazur.SchemeRegularNormProducts
 public import FLT.Mazur.SchemeRelationArrowTransport
 public import FLT.Mazur.SchemeRelationCoverSourceFunctions
 public import FLT.Mazur.SchemeRelationDoubleRestriction
@@ -9480,6 +9484,7 @@ public import FLT.Mazur.SchemeRelationMonicSeedQuotientCoverage
 public import FLT.Mazur.SchemeRelationMonicSeedSelection
 public import FLT.Mazur.SchemeRelationNestedKernel
 public import FLT.Mazur.SchemeRelationNonsplitSeedKernel
+public import FLT.Mazur.SchemeRelationNormTransport
 public import FLT.Mazur.SchemeRelationOpenFunctionDescent
 public import FLT.Mazur.SchemeRelationOpenInvariantRings
 public import FLT.Mazur.SchemeRelationOpenSelectorCoequalization
