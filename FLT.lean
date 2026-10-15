@@ -4588,6 +4588,7 @@ public import FLT.Mazur.EllipticVariableChangeSmoothness
 public import FLT.Mazur.EllipticWeightedScaling
 public import FLT.Mazur.EllipticZeroExteriorSmoothCover
 public import FLT.Mazur.EnlargedPresentationModel
+public import FLT.Mazur.EnvelopeVerticalGenerizations
 public import FLT.Mazur.EquifiberedGluingBaseChange
 public import FLT.Mazur.EquifiberedSchemeGluing
 public import FLT.Mazur.EtaleAffineSpaceDimension
