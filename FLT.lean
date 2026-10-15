@@ -9947,6 +9947,7 @@ public import FLT.Mazur.SplitPairPushout
 public import FLT.Mazur.SplitSheafLinePullback
 public import FLT.Mazur.SplitSheafLinePullbackComposition
 public import FLT.Mazur.SquareZeroPairAdjoin
+public import FLT.Mazur.SquareZeroParameterLayer
 public import FLT.Mazur.SquareZeroReductionKernel
 public import FLT.Mazur.SquareZeroReductionSocle
 public import FLT.Mazur.SquareZeroReductionSpectrum
