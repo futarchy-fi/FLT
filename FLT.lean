@@ -7081,6 +7081,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstLinearization
 public import FLT.Mazur.PolygonCompleteIdentityFirstNodeBoundary
 public import FLT.Mazur.PolygonCompleteIdentityFirstNodeObstruction
 public import FLT.Mazur.PolygonCompleteIdentityFirstPositiveNodes
+public import FLT.Mazur.PolygonCompleteIdentityFirstPrincipalObstruction
 public import FLT.Mazur.PolygonCompleteIdentityFlatOpenLift
 public import FLT.Mazur.PolygonCompleteIdentityGraphFlat
 public import FLT.Mazur.PolygonCompleteIdentityGraphFlatExt
