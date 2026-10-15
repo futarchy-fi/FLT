@@ -4389,6 +4389,7 @@ public import FLT.Mazur.EllipticSmoothPointChange
 public import FLT.Mazur.EllipticSmoothReduction
 public import FLT.Mazur.EllipticSmoothReductionAddition
 public import FLT.Mazur.EllipticSmoothSectionSpecialization
+public import FLT.Mazur.EllipticSplitDepthLaurentContraction
 public import FLT.Mazur.EllipticSplitDepthLaurentPoints
 public import FLT.Mazur.EllipticSplitDepthModel
 public import FLT.Mazur.EllipticSplitDepthResidueCharacter
