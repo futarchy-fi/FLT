@@ -8405,6 +8405,7 @@ public import FLT.Mazur.ProjectiveCoefficientFunctor
 public import FLT.Mazur.ProjectiveCoherentCharts
 public import FLT.Mazur.ProjectiveCoherentCohomology
 public import FLT.Mazur.ProjectiveCoordinateGeneratorOpen
+public import FLT.Mazur.ProjectiveCoordinateSectionRatios
 public import FLT.Mazur.ProjectiveCoordinateSections
 public import FLT.Mazur.ProjectiveCycleConstantPropagation
 public import FLT.Mazur.ProjectiveFiniteAffineNeighborhood
