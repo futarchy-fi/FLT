@@ -3005,6 +3005,7 @@ public import FLT.Mazur.AffineHilbertTripleComposition
 public import FLT.Mazur.AffineHilbertUnramifiedSplitOrbits
 public import FLT.Mazur.AffineIdealContainment
 public import FLT.Mazur.AffineIdealCoordinates
+public import FLT.Mazur.AffineIdealNeighborhoodMembership
 public import FLT.Mazur.AffineIdealPowerExtension
 public import FLT.Mazur.AffineIdealSheafComparison
 public import FLT.Mazur.AffineIdealSheafCoverComparison
