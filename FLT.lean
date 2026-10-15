@@ -5128,6 +5128,7 @@ public import FLT.Mazur.GenusOneGroupProjectivePoint
 public import FLT.Mazur.GenusOneGroupWeierstrassEquation
 public import FLT.Mazur.GenusOneNonspecialPoint
 public import FLT.Mazur.GeometricAcyclicEtaleTranslation
+public import FLT.Mazur.GeometricAcyclicFiniteDescent
 public import FLT.Mazur.GeometricAcyclicFppfLocus
 public import FLT.Mazur.GeometricAcyclicOrbitTranslation
 public import FLT.Mazur.GeometricAcyclicPicardLocality
