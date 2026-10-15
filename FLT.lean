@@ -6489,6 +6489,7 @@ public import FLT.Mazur.NilpotentIdealSocle
 public import FLT.Mazur.NilpotentPolynomialEvaluation
 public import FLT.Mazur.NilpotentPolynomialInverse
 public import FLT.Mazur.NilpotentPolynomialInverseBaseChange
+public import FLT.Mazur.NilpotentPolynomialTaylor
 public import FLT.Mazur.NilpotentQuadraticRoot
 public import FLT.Mazur.NilpotentQuadraticRootNaturality
 public import FLT.Mazur.NodalFamilyGeometricConnected
