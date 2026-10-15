@@ -9459,6 +9459,7 @@ public import FLT.Mazur.SmoothFiberSeparablePoints
 public import FLT.Mazur.SmoothFieldCotangentRank
 public import FLT.Mazur.SmoothFiniteCoefficientBranch
 public import FLT.Mazur.SmoothFiniteFlatIdealCharts
+public import FLT.Mazur.SmoothFiniteGeometricDiagram
 public import FLT.Mazur.SmoothFiniteSubgroupAmple
 public import FLT.Mazur.SmoothFiniteSubschemeCartier
 public import FLT.Mazur.SmoothGeneralizedCurveGroupIso
