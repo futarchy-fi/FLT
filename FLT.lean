@@ -5537,6 +5537,7 @@ public import FLT.Mazur.HilbertBoundarySchemeTests
 public import FLT.Mazur.HilbertBoundaryThickeningKernelPair
 public import FLT.Mazur.HilbertBoundaryThickeningRelation
 public import FLT.Mazur.HilbertBoundaryThickeningTests
+public import FLT.Mazur.HilbertBoundaryThickeningTower
 public import FLT.Mazur.HilbertBoundedAmbientAtlas
 public import FLT.Mazur.HilbertBoundedChartClosedEmbedding
 public import FLT.Mazur.HilbertBoundedCoordinateGeneration
