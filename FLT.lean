@@ -6909,6 +6909,7 @@ public import FLT.Mazur.PolygonActionTranslation
 public import FLT.Mazur.PolygonActionUnit
 public import FLT.Mazur.PolygonAdicQuotientGrading
 public import FLT.Mazur.PolygonArithmeticAdicImmersion
+public import FLT.Mazur.PolygonArithmeticAdicRealization
 public import FLT.Mazur.PolygonArithmeticAdicReduction
 public import FLT.Mazur.PolygonArithmeticAffinePoints
 public import FLT.Mazur.PolygonArithmeticBoundaryAmple
