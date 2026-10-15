@@ -10753,6 +10753,7 @@ public import FLT.Mazur.WeierstrassDividedEqualityCycleCommonNode
 public import FLT.Mazur.WeierstrassDividedEqualityCycleConstancy
 public import FLT.Mazur.WeierstrassDividedEqualityCycleTerminalDescent
 public import FLT.Mazur.WeierstrassDividedEqualityFullNodeDescent
+public import FLT.Mazur.WeierstrassDividedEqualityGeometricContraction
 public import FLT.Mazur.WeierstrassDividedEqualityInitialEndpoints
 public import FLT.Mazur.WeierstrassDividedEqualityInitialExterior
 public import FLT.Mazur.WeierstrassDividedEqualityNodeFamily
