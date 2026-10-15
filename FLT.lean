@@ -7320,6 +7320,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstBoundary
 public import FLT.Mazur.PolygonCompleteIdentityFirstBranchOriginal
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartBranchImage
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartBranchQuotient
+public import FLT.Mazur.PolygonCompleteIdentityFirstChartClosedLayer
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartKernelPowers
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartNodeSocle
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartParameterLayer
