@@ -11080,6 +11080,7 @@ public import FLT.Mazur.WeierstrassDividedArithmeticInitialIntersection
 public import FLT.Mazur.WeierstrassDividedArithmeticNodeCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticNodeOpen
 public import FLT.Mazur.WeierstrassDividedArithmeticOppositeNodeOpen
+public import FLT.Mazur.WeierstrassDividedArithmeticTerminalIntersection
 public import FLT.Mazur.WeierstrassDividedAtlasRegularCenter
 public import FLT.Mazur.WeierstrassDividedBoundaryNormalization
 public import FLT.Mazur.WeierstrassDividedBranchChainIntersections
