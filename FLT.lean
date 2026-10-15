@@ -4403,6 +4403,7 @@ public import FLT.Mazur.EllipticResolvedTerminalCyclicCharts
 public import FLT.Mazur.EllipticResolvedTerminalSmoothCharts
 public import FLT.Mazur.EllipticResolvedTorsionInjectivity
 public import FLT.Mazur.EllipticResolvedWholeClosedFiber
+public import FLT.Mazur.EllipticResolvedWholeCubicComparison
 public import FLT.Mazur.EllipticResolvedZeroBoundaryCoverage
 public import FLT.Mazur.EllipticResolvedZeroExteriorCover
 public import FLT.Mazur.EllipticResolvedZeroStageCoverage
@@ -12192,6 +12193,7 @@ public import FLT.Mazur.WeierstrassResidueIncidenceNormalization
 public import FLT.Mazur.WeierstrassResidueInfinitySlopeComparison
 public import FLT.Mazur.WeierstrassResidueInfinityTensorCover
 public import FLT.Mazur.WeierstrassResidueInfinityTensorParameter
+public import FLT.Mazur.WeierstrassResidueOneGonIso
 public import FLT.Mazur.WeierstrassResidueTangentCoefficientTower
 public import FLT.Mazur.WeierstrassResidueTangentComponentData
 public import FLT.Mazur.WeierstrassResidueTangentEquationData
