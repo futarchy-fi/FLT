@@ -5534,6 +5534,7 @@ public import FLT.Mazur.HilbertBasisTupleIntersection
 public import FLT.Mazur.HilbertBasisTupleSchemeComparison
 public import FLT.Mazur.HilbertBoundaryClosedRelation
 public import FLT.Mazur.HilbertBoundaryEtaleIdeals
+public import FLT.Mazur.HilbertBoundaryEtaleLift
 public import FLT.Mazur.HilbertBoundaryKernelPair
 public import FLT.Mazur.HilbertBoundaryOrbit
 public import FLT.Mazur.HilbertBoundaryQuotient
