@@ -7346,6 +7346,7 @@ public import FLT.Mazur.PolygonCompleteIdentityActionTarget
 public import FLT.Mazur.PolygonCompleteIdentityActionUnchangedLift
 public import FLT.Mazur.PolygonCompleteIdentityAdicAmbientBaseChange
 public import FLT.Mazur.PolygonCompleteIdentityAdicAmbientImmersion
+public import FLT.Mazur.PolygonCompleteIdentityAdicAmbientKernel
 public import FLT.Mazur.PolygonCompleteIdentityAdicAmbientLifts
 public import FLT.Mazur.PolygonCompleteIdentityAdicAmbientStructure
 public import FLT.Mazur.PolygonCompleteIdentityAmbientParameterComparison
