@@ -5614,6 +5614,7 @@ public import FLT.Mazur.HilbertParameterAbelClass
 public import FLT.Mazur.HilbertParameterChartFactorization
 public import FLT.Mazur.HilbertParameterFiniteType
 public import FLT.Mazur.HilbertPartialGroundFullInterior
+public import FLT.Mazur.HilbertPartialGroundLocalChart
 public import FLT.Mazur.HilbertPolynomialAffineClassification
 public import FLT.Mazur.HilbertPolynomialAffineNaturality
 public import FLT.Mazur.HilbertPolynomialAmbient
