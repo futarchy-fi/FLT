@@ -3518,6 +3518,7 @@ public import FLT.Mazur.CartesianCoefficientTransportNaturality
 public import FLT.Mazur.CartesianEnvelopeSectionTransport
 public import FLT.Mazur.CartesianFiberAutomorphismAction
 public import FLT.Mazur.CartesianFiniteFibers
+public import FLT.Mazur.CartesianGroundInvariantNorm
 public import FLT.Mazur.CartesianHomMarkingParameter
 public import FLT.Mazur.CartesianIdentityFactorization
 public import FLT.Mazur.CartesianIdentityFiniteNeighborhood
