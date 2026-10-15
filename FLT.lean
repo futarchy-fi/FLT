@@ -9204,6 +9204,7 @@ public import FLT.Mazur.RelativePoleComplementFunctions
 public import FLT.Mazur.RelativePoleComplementLinear
 public import FLT.Mazur.RelativeRankOneDivisorUniqueness
 public import FLT.Mazur.RelativeRelationArrowCalculus
+public import FLT.Mazur.RelativeRelationClosedSections
 public import FLT.Mazur.RelativeRelationEtaleSourceFunctions
 public import FLT.Mazur.RelativeRelationFppfInvariantQuotient
 public import FLT.Mazur.RelativeRelationFppfLocallyRingedDescent
