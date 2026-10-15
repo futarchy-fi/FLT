@@ -3286,6 +3286,7 @@ public import FLT.Mazur.ArbitraryGeometricFiniteGroundInterior
 public import FLT.Mazur.ArbitraryGeometricFiniteKernel
 public import FLT.Mazur.ArbitraryGeometricGroundQuotient
 public import FLT.Mazur.ArbitraryGeometricOriginalOpenImage
+public import FLT.Mazur.ArbitraryGeometricProperCore
 public import FLT.Mazur.ArbitraryPicardAffineEtaleChart
 public import FLT.Mazur.ArbitraryPicardEtaleTranslation
 public import FLT.Mazur.ArtinianClosedFiberFunctions
@@ -4641,6 +4642,7 @@ public import FLT.Mazur.EtaleSimpleRootCoordinates
 public import FLT.Mazur.EtaleTranslationBranchMaps
 public import FLT.Mazur.EtaleTranslationBranchPullback
 public import FLT.Mazur.EtaleTranslationFiniteNeighborhood
+public import FLT.Mazur.EtaleWholeFiberProperNeighborhood
 public import FLT.Mazur.EvaluatedPrincipalRefinement
 public import FLT.Mazur.EventualTwistVanishing
 public import FLT.Mazur.ExactFunctorInjectiveExt
@@ -8617,6 +8619,8 @@ public import FLT.Mazur.ProperCoherentCohomology
 public import FLT.Mazur.ProperCohomologyFieldVanishing
 public import FLT.Mazur.ProperCohomologyWitnesses
 public import FLT.Mazur.ProperConnectedReducedSections
+public import FLT.Mazur.ProperCoreGroundInterior
+public import FLT.Mazur.ProperCoreResidualInterior
 public import FLT.Mazur.ProperCoverImmersionCriterion
 public import FLT.Mazur.ProperCoverLimitDescent
 public import FLT.Mazur.ProperCurveFixedPointTranslation
@@ -8812,6 +8816,7 @@ public import FLT.Mazur.QuadraticRootBranchLocalization
 public import FLT.Mazur.QuadraticRootOppositeBranch
 public import FLT.Mazur.QuasiCoherentAffineBasePullback
 public import FLT.Mazur.QuasiCoherentSchemePullback
+public import FLT.Mazur.QuasiCompactEtaleGeometricSections
 public import FLT.Mazur.QuasiCompactGenericFlatOpen
 public import FLT.Mazur.QuasiFiniteCoefficientQuotient
 public import FLT.Mazur.QuasiFiniteGeometricPointIsolation
@@ -9758,6 +9763,7 @@ public import FLT.Mazur.SectionPoleSplit
 public import FLT.Mazur.SectionPowerGluing
 public import FLT.Mazur.SectionProjectiveFiniteNeighborhood
 public import FLT.Mazur.SectionProjectiveImmersion
+public import FLT.Mazur.SectionProperNeighborhood
 public import FLT.Mazur.SectionPullbackFrameCoordinates
 public import FLT.Mazur.SectionPullbackLineCoordinate
 public import FLT.Mazur.SectionPullbackRatioCoordinates
@@ -10095,6 +10101,7 @@ public import FLT.Mazur.TranslatedHilbertTestUnionBaseChange
 public import FLT.Mazur.TranslatedHilbertTestUnionLift
 public import FLT.Mazur.TranslatedHilbertTripleCocycle
 public import FLT.Mazur.TranslatedHilbertTripleOverlap
+public import FLT.Mazur.TranslationProperCore
 public import FLT.Mazur.TrivialLineTwistLocalization
 public import FLT.Mazur.TrivializedLineSheafLimitDescent
 public import FLT.Mazur.TwistedEvaluationSectionSum
