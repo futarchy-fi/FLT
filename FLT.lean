@@ -4664,6 +4664,10 @@ public import FLT.Mazur.EtaleFiniteQuotientBranch
 public import FLT.Mazur.EtaleFiniteSupportCartier
 public import FLT.Mazur.EtaleLocalParameterIdeals
 public import FLT.Mazur.EtaleMarkingScheme
+public import FLT.Mazur.EtaleNilpotentGlue
+public import FLT.Mazur.EtaleNilpotentLift
+public import FLT.Mazur.EtaleNilpotentLocalLift
+public import FLT.Mazur.EtaleNilpotentOverLift
 public import FLT.Mazur.EtalePolynomialGeometricOpenPoints
 public import FLT.Mazur.EtalePolynomialPointLift
 public import FLT.Mazur.EtalePolynomialSeparableLift
@@ -5532,9 +5536,12 @@ public import FLT.Mazur.HilbertBasisTupleIntersection
 public import FLT.Mazur.HilbertBasisTupleSchemeComparison
 public import FLT.Mazur.HilbertBoundaryClosedRelation
 public import FLT.Mazur.HilbertBoundaryEtaleIdeals
+public import FLT.Mazur.HilbertBoundaryEtaleLift
+public import FLT.Mazur.HilbertBoundaryInfinitesimalArrows
 public import FLT.Mazur.HilbertBoundaryKernelPair
 public import FLT.Mazur.HilbertBoundaryOrbit
 public import FLT.Mazur.HilbertBoundaryQuotient
+public import FLT.Mazur.HilbertBoundaryRelationNilpotence
 public import FLT.Mazur.HilbertBoundaryRelationTests
 public import FLT.Mazur.HilbertBoundarySchemeTests
 public import FLT.Mazur.HilbertBoundaryThickeningGeometry
@@ -6516,6 +6523,7 @@ public import FLT.Mazur.NeronPolygonRotationAction
 public import FLT.Mazur.NeronPolygonScaling
 public import FLT.Mazur.NestedOpenCohomologyCoherence
 public import FLT.Mazur.NeutralTwistDirectImage
+public import FLT.Mazur.NilpotentClosedRestriction
 public import FLT.Mazur.NilpotentIdealContraction
 public import FLT.Mazur.NilpotentIdealSocle
 public import FLT.Mazur.NilpotentPolynomialEvaluation
