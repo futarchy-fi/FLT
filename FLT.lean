@@ -4388,6 +4388,7 @@ public import FLT.Mazur.EllipticResolvedZeroExteriorCover
 public import FLT.Mazur.EllipticResolvedZeroStageCoverage
 public import FLT.Mazur.EllipticRetainedBoundaryAtlas
 public import FLT.Mazur.EllipticRetainedBoundaryRange
+public import FLT.Mazur.EllipticRetainedBoundaryTransition
 public import FLT.Mazur.EllipticRetainedLaurentCover
 public import FLT.Mazur.EllipticRetainedSmoothBoundaryCover
 public import FLT.Mazur.EllipticRetainedTerminalBoundaryCover
