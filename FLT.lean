@@ -3515,6 +3515,7 @@ public import FLT.Mazur.CartesianCoefficientSymmetry
 public import FLT.Mazur.CartesianCoefficientTransport
 public import FLT.Mazur.CartesianCoefficientTransportKernelPair
 public import FLT.Mazur.CartesianCoefficientTransportNaturality
+public import FLT.Mazur.CartesianEnvelopeSectionTransport
 public import FLT.Mazur.CartesianFiberAutomorphismAction
 public import FLT.Mazur.CartesianFiniteFibers
 public import FLT.Mazur.CartesianHomMarkingParameter
