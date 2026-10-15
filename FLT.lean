@@ -4665,6 +4665,7 @@ public import FLT.Mazur.FiniteDivisorRationalSupport
 public import FLT.Mazur.FiniteEtaleGeometricSectionCover
 public import FLT.Mazur.FiniteEtaleImageCover
 public import FLT.Mazur.FiniteEtaleSectionCoverNeighborhood
+public import FLT.Mazur.FiniteEtaleSectionEqualityNeighborhood
 public import FLT.Mazur.FiniteEtaleWholeFiberNeighborhood
 public import FLT.Mazur.FiniteEvaluationLocus
 public import FLT.Mazur.FiniteFamilySupportBaseChange
