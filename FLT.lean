@@ -9457,6 +9457,7 @@ public import FLT.Mazur.SmoothDimensionBound
 public import FLT.Mazur.SmoothEtaleResidueLift
 public import FLT.Mazur.SmoothEtaleSeparableLift
 public import FLT.Mazur.SmoothEtaleStalkLift
+public import FLT.Mazur.SmoothFiberEtaleOpenPoint
 public import FLT.Mazur.SmoothFiberSeparablePoints
 public import FLT.Mazur.SmoothFieldCotangentRank
 public import FLT.Mazur.SmoothFiniteCoefficientBranch
