@@ -3006,6 +3006,7 @@ public import FLT.Mazur.AffineHilbertTripleComposition
 public import FLT.Mazur.AffineHilbertUnramifiedSplitOrbits
 public import FLT.Mazur.AffineIdealContainment
 public import FLT.Mazur.AffineIdealCoordinates
+public import FLT.Mazur.AffineIdealNeighborhoodMembership
 public import FLT.Mazur.AffineIdealPowerExtension
 public import FLT.Mazur.AffineIdealPowerPullback
 public import FLT.Mazur.AffineIdealSheafComparison
@@ -3701,6 +3702,8 @@ public import FLT.Mazur.ClosedImmersionIdealCorrespondence
 public import FLT.Mazur.ClosedImmersionIdealDegree
 public import FLT.Mazur.ClosedImmersionLimitDescent
 public import FLT.Mazur.ClosedImmersionModulePushforward
+public import FLT.Mazur.ClosedImmersionOpenKernel
+public import FLT.Mazur.ClosedImmersionOpenNeighborhood
 public import FLT.Mazur.ClosedLineProjectionFormula
 public import FLT.Mazur.ClosedLineQuotientPresentation
 public import FLT.Mazur.ClosedModuleDescent
@@ -7392,6 +7395,8 @@ public import FLT.Mazur.PolygonCompleteIdentityAdicAmbientImmersion
 public import FLT.Mazur.PolygonCompleteIdentityAdicAmbientKernel
 public import FLT.Mazur.PolygonCompleteIdentityAdicAmbientLifts
 public import FLT.Mazur.PolygonCompleteIdentityAdicAmbientStructure
+public import FLT.Mazur.PolygonCompleteIdentityAdicRefinedKernel
+public import FLT.Mazur.PolygonCompleteIdentityAdicRefinedPatches
 public import FLT.Mazur.PolygonCompleteIdentityAmbientErrorRelation
 public import FLT.Mazur.PolygonCompleteIdentityAmbientParameterComparison
 public import FLT.Mazur.PolygonCompleteIdentityChartAtlas
@@ -7494,6 +7499,9 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstPositiveNodes
 public import FLT.Mazur.PolygonCompleteIdentityFirstPowerDescent
 public import FLT.Mazur.PolygonCompleteIdentityFirstPrincipalCoordinates
 public import FLT.Mazur.PolygonCompleteIdentityFirstPrincipalObstruction
+public import FLT.Mazur.PolygonCompleteIdentityFirstRefinedEquations
+public import FLT.Mazur.PolygonCompleteIdentityFirstRefinedErrorCriterion
+public import FLT.Mazur.PolygonCompleteIdentityFirstRefinedSmoothing
 public import FLT.Mazur.PolygonCompleteIdentityFlatOpenLift
 public import FLT.Mazur.PolygonCompleteIdentityGenericAmbient
 public import FLT.Mazur.PolygonCompleteIdentityGenericAmbientIso
