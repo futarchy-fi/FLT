@@ -5161,6 +5161,7 @@ public import FLT.Mazur.GeometricResidueMorphismConjugacy
 public import FLT.Mazur.GeometricSectionQuasiFinite
 public import FLT.Mazur.GeometricSectionUnits
 public import FLT.Mazur.GeometricSimultaneousHilbertTranslation
+public import FLT.Mazur.GeometricTestResidueFactor
 public import FLT.Mazur.GeometricallyConnectedDescent
 public import FLT.Mazur.GeometricallyConnectedLocus
 public import FLT.Mazur.GlobalClosedModuleDescent
