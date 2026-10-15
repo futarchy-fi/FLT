@@ -8610,6 +8610,7 @@ public import FLT.Mazur.ProperCoherentCohomology
 public import FLT.Mazur.ProperCohomologyFieldVanishing
 public import FLT.Mazur.ProperCohomologyWitnesses
 public import FLT.Mazur.ProperConnectedReducedSections
+public import FLT.Mazur.ProperCoreGroundInterior
 public import FLT.Mazur.ProperCoreResidualInterior
 public import FLT.Mazur.ProperCoverImmersionCriterion
 public import FLT.Mazur.ProperCoverLimitDescent
