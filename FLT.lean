@@ -12929,6 +12929,7 @@ public import FLT.Mazur.WeierstrassModificationShearLocalization
 public import FLT.Mazur.WeierstrassModificationShearOverlap
 public import FLT.Mazur.WeierstrassModificationXAlgebra
 public import FLT.Mazur.WeierstrassModificationXArithmeticFactorRatioLaurent
+public import FLT.Mazur.WeierstrassModificationXArithmeticFactorRatioPuncture
 public import FLT.Mazur.WeierstrassModificationXArithmeticIncidenceOpen
 public import FLT.Mazur.WeierstrassModificationXArithmeticIncidencePullback
 public import FLT.Mazur.WeierstrassModificationXArithmeticInitialCover
