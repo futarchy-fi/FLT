@@ -6394,6 +6394,7 @@ public import FLT.Mazur.ModuleCohomologyScalarRestriction
 public import FLT.Mazur.ModuleCohomologyVanishing
 public import FLT.Mazur.ModuleComparedMarkingFrame
 public import FLT.Mazur.ModuleComparedSectionRatio
+public import FLT.Mazur.ModuleComparedTensorSectionProduct
 public import FLT.Mazur.ModuleDerivedAbelianComparison
 public import FLT.Mazur.ModuleDirectImageHZero
 public import FLT.Mazur.ModuleDisjointSectionGluing
