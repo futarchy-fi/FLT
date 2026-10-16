@@ -3196,6 +3196,7 @@ public import FLT.Mazur.AffineTripleOverlapRefinement
 public import FLT.Mazur.AffineTripleOverlapRefinementSquares
 public import FLT.Mazur.AffineTripleUnitCoefficients
 public import FLT.Mazur.AffineTrivialLineSectionOpen
+public import FLT.Mazur.AlgebraEqualizerCoordinates
 public import FLT.Mazur.AlgebraicAcyclicOrbitTranslation
 public import FLT.Mazur.AlgebraicClosureEmbeddingConjugacy
 public import FLT.Mazur.AlgebraicEmbeddingTranscendentalFactor
@@ -3526,6 +3527,7 @@ public import FLT.Mazur.CanonicalCechSectionComparison
 public import FLT.Mazur.CanonicalLineSectionBaseChange
 public import FLT.Mazur.CanonicalNonspecialDivisorCover
 public import FLT.Mazur.CanonicalRelativeLineModel
+public import FLT.Mazur.CanonicalSchemeRelationGround
 public import FLT.Mazur.CanonicalSectionComposition
 public import FLT.Mazur.CanonicalSectionNaturality
 public import FLT.Mazur.CartesianAtlasAffineIntersections
@@ -5097,6 +5099,7 @@ public import FLT.Mazur.FlatCokernelResidueIdeals
 public import FLT.Mazur.FlatCokernelStep
 public import FLT.Mazur.FlatDominantPrincipalNeighborhood
 public import FLT.Mazur.FlatFiniteEqualizer
+public import FLT.Mazur.FlatGlobalFunctionBaseChange
 public import FLT.Mazur.FlatGlobalFunctionsPushout
 public import FLT.Mazur.FlatGlobalGenerationDescent
 public import FLT.Mazur.FlatGlobalSectionBaseChange
@@ -5559,6 +5562,7 @@ public import FLT.Mazur.HilbertBoundaryEtaleLift
 public import FLT.Mazur.HilbertBoundaryFiniteLiftCover
 public import FLT.Mazur.HilbertBoundaryFlatCertificate
 public import FLT.Mazur.HilbertBoundaryFlatCommonCover
+public import FLT.Mazur.HilbertBoundaryGeometricGround
 public import FLT.Mazur.HilbertBoundaryGroundCertificate
 public import FLT.Mazur.HilbertBoundaryInfinitesimalArrows
 public import FLT.Mazur.HilbertBoundaryKernelPair
@@ -9293,6 +9297,7 @@ public import FLT.Mazur.RelativeRelationFpqcSectionComparison
 public import FLT.Mazur.RelativeRelationFullSectionFunctions
 public import FLT.Mazur.RelativeRelationGeneratorNaturality
 public import FLT.Mazur.RelativeRelationGeneratorSubopens
+public import FLT.Mazur.RelativeRelationGeometricGroundSections
 public import FLT.Mazur.RelativeRelationIdealCertificate
 public import FLT.Mazur.RelativeRelationIdealSourceCover
 public import FLT.Mazur.RelativeRelationInvariantAffineComparison
@@ -9650,6 +9655,7 @@ public import FLT.Mazur.SchemeFppfSourceLineMapEquivalence
 public import FLT.Mazur.SchemeFppfSourceLineMapPreimage
 public import FLT.Mazur.SchemeFppfTargetOpen
 public import FLT.Mazur.SchemeFpqcOpenSectionDescent
+public import FLT.Mazur.SchemeFunctionGroundChange
 public import FLT.Mazur.SchemeGenericFlatTargetOpen
 public import FLT.Mazur.SchemeGenericFppfTargetOpen
 public import FLT.Mazur.SchemeGeometricDescentCocycleTest
@@ -9773,6 +9779,9 @@ public import FLT.Mazur.SchemeRelationEtaleCoverDescent
 public import FLT.Mazur.SchemeRelationEtaleImageModel
 public import FLT.Mazur.SchemeRelationEtaleKernelDescent
 public import FLT.Mazur.SchemeRelationFunctionDescent
+public import FLT.Mazur.SchemeRelationFunctionDiagram
+public import FLT.Mazur.SchemeRelationGeometricCertificate
+public import FLT.Mazur.SchemeRelationGeometricGround
 public import FLT.Mazur.SchemeRelationInvariantAffineUniversal
 public import FLT.Mazur.SchemeRelationInvariantDomainIso
 public import FLT.Mazur.SchemeRelationInvariantDominant
