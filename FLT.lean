@@ -7488,6 +7488,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstDefectFormula
 public import FLT.Mazur.PolygonCompleteIdentityFirstDefectProduct
 public import FLT.Mazur.PolygonCompleteIdentityFirstFourCoordinates
 public import FLT.Mazur.PolygonCompleteIdentityFirstFourPolynomialErrors
+public import FLT.Mazur.PolygonCompleteIdentityFirstFractionLifts
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphAlgebra
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphBranchExt
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphBranchMaps
