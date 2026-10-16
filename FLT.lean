@@ -11843,6 +11843,7 @@ public import FLT.Mazur.WeierstrassDividedInitialPointActionPropagation
 public import FLT.Mazur.WeierstrassDividedInitialPolygonBoundary
 public import FLT.Mazur.WeierstrassDividedInitialPolygonLabels
 public import FLT.Mazur.WeierstrassDividedInitialPolygonMaps
+public import FLT.Mazur.WeierstrassDividedInitialPolygonTransport
 public import FLT.Mazur.WeierstrassDividedInitialPrecedingExterior
 public import FLT.Mazur.WeierstrassDividedInitialProjectiveComponents
 public import FLT.Mazur.WeierstrassDividedInitialPunctureCompatibility
