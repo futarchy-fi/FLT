@@ -12976,6 +12976,7 @@ public import FLT.Mazur.WeierstrassModificationXIncidenceNodeMap
 public import FLT.Mazur.WeierstrassModificationXIncidenceNodeRestriction
 public import FLT.Mazur.WeierstrassModificationXIncidenceRegular
 public import FLT.Mazur.WeierstrassModificationXIncidenceSectionMaps
+public import FLT.Mazur.WeierstrassModificationXInitialInfinityTensor
 public import FLT.Mazur.WeierstrassModificationXInitialInfinityTransition
 public import FLT.Mazur.WeierstrassModificationXInitialPolygonBoundary
 public import FLT.Mazur.WeierstrassModificationXInitialPolygonChart
