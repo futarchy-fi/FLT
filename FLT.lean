@@ -13057,6 +13057,7 @@ public import FLT.Mazur.WeierstrassModificationXTensorTerminalCoordinates
 public import FLT.Mazur.WeierstrassModificationXTensorTerminalLaurent
 public import FLT.Mazur.WeierstrassModificationXTotalTransform
 public import FLT.Mazur.WeierstrassModificationXZeroIdealBoundary
+public import FLT.Mazur.WeierstrassModificationXZeroInfinityTangent
 public import FLT.Mazur.WeierstrassModificationXZeroInitialPolygon
 public import FLT.Mazur.WeierstrassModificationXZeroMobiusChart
 public import FLT.Mazur.WeierstrassModificationXZeroMobiusOverlapBoundary
