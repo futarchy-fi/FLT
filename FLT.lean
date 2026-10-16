@@ -12975,6 +12975,7 @@ public import FLT.Mazur.WeierstrassModificationXExtendedCastEvaluation
 public import FLT.Mazur.WeierstrassModificationXExtendedNormalEvaluation
 public import FLT.Mazur.WeierstrassModificationXFactorGapUnits
 public import FLT.Mazur.WeierstrassModificationXFactorRatioBoundary
+public import FLT.Mazur.WeierstrassModificationXFactorRatioLaurentEquiv
 public import FLT.Mazur.WeierstrassModificationXFactorRatioLaurentUnit
 public import FLT.Mazur.WeierstrassModificationXFactorRatioMap
 public import FLT.Mazur.WeierstrassModificationXFiberBranches
