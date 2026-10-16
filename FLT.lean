@@ -5474,6 +5474,7 @@ public import FLT.Mazur.GroundChartOriginalQuotientOpenImmersion
 public import FLT.Mazur.GroundChartOriginalQuotientTopology
 public import FLT.Mazur.GroundChartOriginalResidualDescent
 public import FLT.Mazur.GroundChartRelationDiagonal
+public import FLT.Mazur.GroundFlatEqualizerCertificate
 public import FLT.Mazur.GroundFlatSectionLiftCertificate
 public import FLT.Mazur.GroundFlatSectionLiftIdeal
 public import FLT.Mazur.GroupActionPointTranslation
