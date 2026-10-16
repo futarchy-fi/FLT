@@ -8618,6 +8618,7 @@ public import FLT.Mazur.PolygonSmoothingBranchSwapNaturality
 public import FLT.Mazur.PolygonSmoothingClosingPair
 public import FLT.Mazur.PolygonSmoothingCoefficientBranches
 public import FLT.Mazur.PolygonSmoothingCoefficientSquares
+public import FLT.Mazur.PolygonSmoothingCompatibleLaurentLift
 public import FLT.Mazur.PolygonSmoothingComplementaryCoefficients
 public import FLT.Mazur.PolygonSmoothingCompletedDifferentials
 public import FLT.Mazur.PolygonSmoothingCompletedFirstCotangent
