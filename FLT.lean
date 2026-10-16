@@ -9610,6 +9610,7 @@ public import FLT.Mazur.SchemeFiniteGeometricOpenSpread
 public import FLT.Mazur.SchemeFiniteGroupAffineDescent
 public import FLT.Mazur.SchemeFiniteGroupDescent
 public import FLT.Mazur.SchemeFiniteGroupFreeBoundary
+public import FLT.Mazur.SchemeFiniteGroupFreeBoundaryIdeal
 public import FLT.Mazur.SchemeFiniteGroupInvariantPrincipal
 public import FLT.Mazur.SchemeFiniteGroupPrincipalComparison
 public import FLT.Mazur.SchemeFiniteGroupPrincipalQuotient
