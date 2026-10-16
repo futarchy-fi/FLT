@@ -5776,6 +5776,7 @@ public import FLT.Mazur.HilbertCompleteFrameCardinality
 public import FLT.Mazur.HilbertCompleteGeometricTuple
 public import FLT.Mazur.HilbertCompleteInteriorBoundaryLifts
 public import FLT.Mazur.HilbertCompleteInteriorCharts
+public import FLT.Mazur.HilbertCompleteInteriorOriginalNeighborhoods
 public import FLT.Mazur.HilbertDivisorDegreePresentation
 public import FLT.Mazur.HilbertEnvelopeSourceTransport
 public import FLT.Mazur.HilbertFaithfulAffineNeighborhood
