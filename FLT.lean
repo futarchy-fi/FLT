@@ -6661,6 +6661,7 @@ public import FLT.Mazur.NeronPolygonScaling
 public import FLT.Mazur.NestedOpenCohomologyCoherence
 public import FLT.Mazur.NeutralTwistDirectImage
 public import FLT.Mazur.NilpotentAlgebraAutomorphism
+public import FLT.Mazur.NilpotentAlgebraEquivalence
 public import FLT.Mazur.NilpotentClosedRestriction
 public import FLT.Mazur.NilpotentIdealContraction
 public import FLT.Mazur.NilpotentIdealSocle
