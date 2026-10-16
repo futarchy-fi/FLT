@@ -10964,6 +10964,7 @@ public import FLT.Mazur.WeierstrassCartesianSmoothPullbackGroup
 public import FLT.Mazur.WeierstrassChartBaseChange
 public import FLT.Mazur.WeierstrassChartBaseChangeSquare
 public import FLT.Mazur.WeierstrassChartCoefficientMap
+public import FLT.Mazur.WeierstrassChartCoefficientRingMap
 public import FLT.Mazur.WeierstrassChartCrossComparison
 public import FLT.Mazur.WeierstrassChartEvaluationComparison
 public import FLT.Mazur.WeierstrassChartFactorUnit
@@ -11674,7 +11675,13 @@ public import FLT.Mazur.WeierstrassDividedArithmeticCoordinateTransition
 public import FLT.Mazur.WeierstrassDividedArithmeticCoordinates
 public import FLT.Mazur.WeierstrassDividedArithmeticEarlierTerminal
 public import FLT.Mazur.WeierstrassDividedArithmeticFactorRatioAffine
+public import FLT.Mazur.WeierstrassDividedArithmeticFactorRatioAtlasOverlap
 public import FLT.Mazur.WeierstrassDividedArithmeticFactorRatioInfinity
+public import FLT.Mazur.WeierstrassDividedArithmeticFactorRatioLabeledMaps
+public import FLT.Mazur.WeierstrassDividedArithmeticFactorRatioOverlap
+public import FLT.Mazur.WeierstrassDividedArithmeticFactorRatioTensorAffine
+public import FLT.Mazur.WeierstrassDividedArithmeticFactorRatioTensorInfinity
+public import FLT.Mazur.WeierstrassDividedArithmeticFactorRatioTriangle
 public import FLT.Mazur.WeierstrassDividedArithmeticInfinitySeparation
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialBranch
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialComparison
@@ -12712,7 +12719,9 @@ public import FLT.Mazur.WeierstrassInfinityDenominatorShift
 public import FLT.Mazur.WeierstrassInfinityDividedLine
 public import FLT.Mazur.WeierstrassInfinityDividedQuadraticCoefficients
 public import FLT.Mazur.WeierstrassInfinityFactorCancellation
+public import FLT.Mazur.WeierstrassInfinityFactorRatioCoefficient
 public import FLT.Mazur.WeierstrassInfinityFactorRatioParameter
+public import FLT.Mazur.WeierstrassInfinityFactorRatioParameterNaturality
 public import FLT.Mazur.WeierstrassInfinityFieldSmooth
 public import FLT.Mazur.WeierstrassInfinityFourLawAffine
 public import FLT.Mazur.WeierstrassInfinityGlobalDomain
@@ -12722,6 +12731,7 @@ public import FLT.Mazur.WeierstrassInfinityIdentityChart
 public import FLT.Mazur.WeierstrassInfinityIdentityCover
 public import FLT.Mazur.WeierstrassInfinityIdentityFormula
 public import FLT.Mazur.WeierstrassInfinityIdentityNeighborhood
+public import FLT.Mazur.WeierstrassInfinityIncidenceCoefficient
 public import FLT.Mazur.WeierstrassInfinityInnerCross
 public import FLT.Mazur.WeierstrassInfinityInnerPencil
 public import FLT.Mazur.WeierstrassInfinityInputMinorRegular
@@ -13011,6 +13021,7 @@ public import FLT.Mazur.WeierstrassModificationXCanonicalFactorRatioChart
 public import FLT.Mazur.WeierstrassModificationXCanonicalFactorRatioTransport
 public import FLT.Mazur.WeierstrassModificationXCanonicalNodeCoefficientNaturality
 public import FLT.Mazur.WeierstrassModificationXCanonicalNodeCoefficientTransport
+public import FLT.Mazur.WeierstrassModificationXCoefficientContraction
 public import FLT.Mazur.WeierstrassModificationXCoefficientRingMap
 public import FLT.Mazur.WeierstrassModificationXCoefficientTransport
 public import FLT.Mazur.WeierstrassModificationXCoefficients
@@ -13168,6 +13179,7 @@ public import FLT.Mazur.WeierstrassModificationXNodeOverlapFactorRatioBoundary
 public import FLT.Mazur.WeierstrassModificationXNodeOverlapFactorRatioCoordinates
 public import FLT.Mazur.WeierstrassModificationXNodeOverlapInfinityEvaluation
 public import FLT.Mazur.WeierstrassModificationXNodeOverlapInfinityIso
+public import FLT.Mazur.WeierstrassModificationXNodeOverlapInfinityStructure
 public import FLT.Mazur.WeierstrassModificationXNodeOverlapMobiusBoundary
 public import FLT.Mazur.WeierstrassModificationXNodeOverlapMobiusCorrection
 public import FLT.Mazur.WeierstrassModificationXNodeOverlapMobiusUnits
