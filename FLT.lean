@@ -7706,6 +7706,8 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstNodePolynomials
 public import FLT.Mazur.PolygonCompleteIdentityFirstOriginalPolynomialErrors
 public import FLT.Mazur.PolygonCompleteIdentityFirstParameterEquations
 public import FLT.Mazur.PolygonCompleteIdentityFirstPoleCubicRefinement
+public import FLT.Mazur.PolygonCompleteIdentityFirstPoleGlobalIdeals
+public import FLT.Mazur.PolygonCompleteIdentityFirstPoleGlobalReduction
 public import FLT.Mazur.PolygonCompleteIdentityFirstPoleInputFunctions
 public import FLT.Mazur.PolygonCompleteIdentityFirstPoleNodeIdeals
 public import FLT.Mazur.PolygonCompleteIdentityFirstPoleNumeratorRemainders
@@ -7730,6 +7732,10 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstRefinedEquations
 public import FLT.Mazur.PolygonCompleteIdentityFirstRefinedErrorCriterion
 public import FLT.Mazur.PolygonCompleteIdentityFirstRefinedSmoothing
 public import FLT.Mazur.PolygonCompleteIdentityFirstSourceNodeCoverage
+public import FLT.Mazur.PolygonCompleteIdentityFirstSourceNodeCubicCoverage
+public import FLT.Mazur.PolygonCompleteIdentityFirstSourcePoleCubic
+public import FLT.Mazur.PolygonCompleteIdentityFirstSourcePoleGeometry
+public import FLT.Mazur.PolygonCompleteIdentityFirstSourcePoleMaps
 public import FLT.Mazur.PolygonCompleteIdentityFirstSourceSocleLocalization
 public import FLT.Mazur.PolygonCompleteIdentityFirstSourceZeroCubic
 public import FLT.Mazur.PolygonCompleteIdentityFlatOpenLift
@@ -7895,6 +7901,7 @@ public import FLT.Mazur.PolygonCompletePointEquationCoefficientProduct
 public import FLT.Mazur.PolygonCompletePointExactMonomials
 public import FLT.Mazur.PolygonCompletePointFirstAdjacentCoefficients
 public import FLT.Mazur.PolygonCompletePointFirstCentralCoefficients
+public import FLT.Mazur.PolygonCompletePointFirstComplementExtraction
 public import FLT.Mazur.PolygonCompletePointFirstConstantEdges
 public import FLT.Mazur.PolygonCompletePointFirstEndpointCoefficients
 public import FLT.Mazur.PolygonCompletePointFirstFiniteNumerators
@@ -7965,6 +7972,7 @@ public import FLT.Mazur.PolygonCompletePointMonomialBasis
 public import FLT.Mazur.PolygonCompletePointMonomialIndependence
 public import FLT.Mazur.PolygonCompletePointNewSections
 public import FLT.Mazur.PolygonCompletePointNodeBoundedNumerators
+public import FLT.Mazur.PolygonCompletePointNodeComplementNumerators
 public import FLT.Mazur.PolygonCompletePointNodeCubicChart
 public import FLT.Mazur.PolygonCompletePointNodeLaurentReconstruction
 public import FLT.Mazur.PolygonCompletePointNodeLocalization
@@ -11665,6 +11673,8 @@ public import FLT.Mazur.WeierstrassDividedArithmeticCoefficientInfinity
 public import FLT.Mazur.WeierstrassDividedArithmeticCoordinateTransition
 public import FLT.Mazur.WeierstrassDividedArithmeticCoordinates
 public import FLT.Mazur.WeierstrassDividedArithmeticEarlierTerminal
+public import FLT.Mazur.WeierstrassDividedArithmeticFactorRatioAffine
+public import FLT.Mazur.WeierstrassDividedArithmeticFactorRatioInfinity
 public import FLT.Mazur.WeierstrassDividedArithmeticInfinitySeparation
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialBranch
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialComparison
@@ -11742,6 +11752,9 @@ public import FLT.Mazur.WeierstrassDividedAtlasRegularCenter
 public import FLT.Mazur.WeierstrassDividedBoundaryNormalization
 public import FLT.Mazur.WeierstrassDividedBranchChainIntersections
 public import FLT.Mazur.WeierstrassDividedBranchPairSeparation
+public import FLT.Mazur.WeierstrassDividedCanonicalFactorRatioAffine
+public import FLT.Mazur.WeierstrassDividedCanonicalFactorRatioNaturality
+public import FLT.Mazur.WeierstrassDividedCanonicalFactorRatioTransport
 public import FLT.Mazur.WeierstrassDividedChartCubicAction
 public import FLT.Mazur.WeierstrassDividedChartRegularCenter
 public import FLT.Mazur.WeierstrassDividedCoefficientActionIndexTransport
@@ -11897,6 +11910,7 @@ public import FLT.Mazur.WeierstrassDividedFirstInfinityFactorization
 public import FLT.Mazur.WeierstrassDividedFirstOutputCover
 public import FLT.Mazur.WeierstrassDividedFirstSuccessorAction
 public import FLT.Mazur.WeierstrassDividedFirstUnitAction
+public import FLT.Mazur.WeierstrassDividedFullInfinityFactorRatioMap
 public import FLT.Mazur.WeierstrassDividedFullResidueAtlas
 public import FLT.Mazur.WeierstrassDividedGlobalActionAssociativity
 public import FLT.Mazur.WeierstrassDividedGlobalActionConstruction
@@ -12698,6 +12712,7 @@ public import FLT.Mazur.WeierstrassInfinityDenominatorShift
 public import FLT.Mazur.WeierstrassInfinityDividedLine
 public import FLT.Mazur.WeierstrassInfinityDividedQuadraticCoefficients
 public import FLT.Mazur.WeierstrassInfinityFactorCancellation
+public import FLT.Mazur.WeierstrassInfinityFactorRatioParameter
 public import FLT.Mazur.WeierstrassInfinityFieldSmooth
 public import FLT.Mazur.WeierstrassInfinityFourLawAffine
 public import FLT.Mazur.WeierstrassInfinityGlobalDomain
@@ -12726,6 +12741,8 @@ public import FLT.Mazur.WeierstrassInfinityNegationAddition
 public import FLT.Mazur.WeierstrassInfinityNegationChart
 public import FLT.Mazur.WeierstrassInfinityNegationFormula
 public import FLT.Mazur.WeierstrassInfinityNegationInvolution
+public import FLT.Mazur.WeierstrassInfinityNilpotentDenominator
+public import FLT.Mazur.WeierstrassInfinityNilpotentIncidence
 public import FLT.Mazur.WeierstrassInfinityNormalizedLine
 public import FLT.Mazur.WeierstrassInfinityOutputComparison
 public import FLT.Mazur.WeierstrassInfinityOutputParameter
@@ -12965,6 +12982,7 @@ public import FLT.Mazur.WeierstrassModificationShearLocalization
 public import FLT.Mazur.WeierstrassModificationShearOverlap
 public import FLT.Mazur.WeierstrassModificationXAlgebra
 public import FLT.Mazur.WeierstrassModificationXArithmeticFactorRatioLaurent
+public import FLT.Mazur.WeierstrassModificationXArithmeticFactorRatioNilpotence
 public import FLT.Mazur.WeierstrassModificationXArithmeticFactorRatioPuncture
 public import FLT.Mazur.WeierstrassModificationXArithmeticIncidenceOpen
 public import FLT.Mazur.WeierstrassModificationXArithmeticIncidencePullback
@@ -13062,6 +13080,7 @@ public import FLT.Mazur.WeierstrassModificationXFullFiberHomExt
 public import FLT.Mazur.WeierstrassModificationXFullFiberMarkedDescent
 public import FLT.Mazur.WeierstrassModificationXFullFiberProjectiveDescent
 public import FLT.Mazur.WeierstrassModificationXFullFiberPushout
+public import FLT.Mazur.WeierstrassModificationXFullInfinityFactorRatioBoundary
 public import FLT.Mazur.WeierstrassModificationXFullNodeBranchCoordinates
 public import FLT.Mazur.WeierstrassModificationXFullNodeBranches
 public import FLT.Mazur.WeierstrassModificationXFullNodeConicBranch
@@ -13095,6 +13114,8 @@ public import FLT.Mazur.WeierstrassModificationXIncidenceNodeMap
 public import FLT.Mazur.WeierstrassModificationXIncidenceNodeRestriction
 public import FLT.Mazur.WeierstrassModificationXIncidenceRegular
 public import FLT.Mazur.WeierstrassModificationXIncidenceSectionMaps
+public import FLT.Mazur.WeierstrassModificationXInfinityFactorRatioTransition
+public import FLT.Mazur.WeierstrassModificationXInfinityIncidenceTransition
 public import FLT.Mazur.WeierstrassModificationXInitialInfinityTensor
 public import FLT.Mazur.WeierstrassModificationXInitialInfinityTransition
 public import FLT.Mazur.WeierstrassModificationXInitialMobiusEquiv
@@ -13145,6 +13166,7 @@ public import FLT.Mazur.WeierstrassModificationXNodeOverlap
 public import FLT.Mazur.WeierstrassModificationXNodeOverlapDenominator
 public import FLT.Mazur.WeierstrassModificationXNodeOverlapFactorRatioBoundary
 public import FLT.Mazur.WeierstrassModificationXNodeOverlapFactorRatioCoordinates
+public import FLT.Mazur.WeierstrassModificationXNodeOverlapInfinityEvaluation
 public import FLT.Mazur.WeierstrassModificationXNodeOverlapInfinityIso
 public import FLT.Mazur.WeierstrassModificationXNodeOverlapMobiusBoundary
 public import FLT.Mazur.WeierstrassModificationXNodeOverlapMobiusCorrection
