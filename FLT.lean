@@ -8121,6 +8121,7 @@ public import FLT.Mazur.PolygonOriginalBaseAdicKernel
 public import FLT.Mazur.PolygonOriginalBoundarySectionReconstruction
 public import FLT.Mazur.PolygonOriginalCompletionAlgebra
 public import FLT.Mazur.PolygonOriginalNeighborhoodTransition
+public import FLT.Mazur.PolygonOriginalNodeBasicOpen
 public import FLT.Mazur.PolygonOriginalNodeClosed
 public import FLT.Mazur.PolygonOriginalNodeMarkingComplement
 public import FLT.Mazur.PolygonOriginalNodePoint
