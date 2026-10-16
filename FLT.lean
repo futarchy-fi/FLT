@@ -4662,6 +4662,7 @@ public import FLT.Mazur.EquivalenceRelationCompleteTestPartition
 public import FLT.Mazur.EquivalenceRelationConnectedCompleteTests
 public import FLT.Mazur.EquivalenceRelationFiberPermutationSections
 public import FLT.Mazur.EquivalenceRelationFiberRebase
+public import FLT.Mazur.EquivalenceRelationFrameNormalization
 public import FLT.Mazur.EquivalenceRelationFrameRebaseGeometric
 public import FLT.Mazur.EquivalenceRelationFrameRebaseLaws
 public import FLT.Mazur.EquivalenceRelationInvariantBoundaryAction
