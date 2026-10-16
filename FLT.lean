@@ -4640,6 +4640,7 @@ public import FLT.Mazur.EqualizerDenominatorClearing
 public import FLT.Mazur.EquifiberedGluingBaseChange
 public import FLT.Mazur.EquifiberedSchemeGluing
 public import FLT.Mazur.EquivalenceRelationCompleteFiberComparison
+public import FLT.Mazur.EquivalenceRelationFiberPermutationSections
 public import FLT.Mazur.EquivalenceRelationFiberRebase
 public import FLT.Mazur.EquivalenceRelationFrameRebaseGeometric
 public import FLT.Mazur.EquivalenceRelationFrameRebaseLaws
