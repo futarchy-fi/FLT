@@ -4845,13 +4845,20 @@ public import FLT.Mazur.FiniteGeometricGenericPrincipalInteriors
 public import FLT.Mazur.FiniteGeometricSections
 public import FLT.Mazur.FiniteGroupAffineNeighborhood
 public import FLT.Mazur.FiniteGroupAffineQuotient
+public import FLT.Mazur.FiniteGroupBoundaryTrace
 public import FLT.Mazur.FiniteGroupFieldPointOrbits
+public import FLT.Mazur.FiniteGroupFreeBoundaryLift
+public import FLT.Mazur.FiniteGroupFreeFieldTest
+public import FLT.Mazur.FiniteGroupFreeIdealDescent
+public import FLT.Mazur.FiniteGroupFreeOrbitSeparation
+public import FLT.Mazur.FiniteGroupFreeTraceIdeal
 public import FLT.Mazur.FiniteGroupInvariantAffineCover
 public import FLT.Mazur.FiniteGroupInvariantOpens
 public import FLT.Mazur.FiniteGroupInvariantPolynomial
 public import FLT.Mazur.FiniteGroupInvariantRing
 public import FLT.Mazur.FiniteGroupInvariantSpectrum
 public import FLT.Mazur.FiniteGroupOpenRestriction
+public import FLT.Mazur.FiniteGroupOrbitSpan
 public import FLT.Mazur.FiniteGroupPullbackAction
 public import FLT.Mazur.FiniteGroupPullbackComparison
 public import FLT.Mazur.FiniteGroupQuotientDescent
@@ -7550,6 +7557,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstLinearization
 public import FLT.Mazur.PolygonCompleteIdentityFirstNodeBoundary
 public import FLT.Mazur.PolygonCompleteIdentityFirstNodeObstruction
 public import FLT.Mazur.PolygonCompleteIdentityFirstNodePolynomials
+public import FLT.Mazur.PolygonCompleteIdentityFirstOriginalPolynomialErrors
 public import FLT.Mazur.PolygonCompleteIdentityFirstParameterEquations
 public import FLT.Mazur.PolygonCompleteIdentityFirstPoleNumeratorRemainders
 public import FLT.Mazur.PolygonCompleteIdentityFirstPolynomialConversion
@@ -7720,6 +7728,7 @@ public import FLT.Mazur.PolygonCompletePointCubicSections
 public import FLT.Mazur.PolygonCompletePointDimensions
 public import FLT.Mazur.PolygonCompletePointDivisorComparison
 public import FLT.Mazur.PolygonCompletePointExactMonomials
+public import FLT.Mazur.PolygonCompletePointFirstNodeSubstitution
 public import FLT.Mazur.PolygonCompletePointFirstOrderAffineFrames
 public import FLT.Mazur.PolygonCompletePointFirstOrderFactor
 public import FLT.Mazur.PolygonCompletePointFirstOrderIdeal
@@ -7766,6 +7775,8 @@ public import FLT.Mazur.PolygonCompletePointMonomialBaseChange
 public import FLT.Mazur.PolygonCompletePointMonomialBasis
 public import FLT.Mazur.PolygonCompletePointMonomialIndependence
 public import FLT.Mazur.PolygonCompletePointNewSections
+public import FLT.Mazur.PolygonCompletePointNodeLocalization
+public import FLT.Mazur.PolygonCompletePointNodeNumerators
 public import FLT.Mazur.PolygonCompletePointNonsingular
 public import FLT.Mazur.PolygonCompletePointNormalMonomials
 public import FLT.Mazur.PolygonCompletePointNormalizedPoles
@@ -8125,6 +8136,7 @@ public import FLT.Mazur.PolygonOriginalBaseAdicKernel
 public import FLT.Mazur.PolygonOriginalBoundarySectionReconstruction
 public import FLT.Mazur.PolygonOriginalCompletionAlgebra
 public import FLT.Mazur.PolygonOriginalNeighborhoodTransition
+public import FLT.Mazur.PolygonOriginalNodeBasicOpen
 public import FLT.Mazur.PolygonOriginalNodeClosed
 public import FLT.Mazur.PolygonOriginalNodeMarkingComplement
 public import FLT.Mazur.PolygonOriginalNodePoint
@@ -8258,8 +8270,11 @@ public import FLT.Mazur.PolygonSmoothingGenericFiber
 public import FLT.Mazur.PolygonSmoothingH1FaithfulDescent
 public import FLT.Mazur.PolygonSmoothingLeftPuncture
 public import FLT.Mazur.PolygonSmoothingLocalizedCotangent
+public import FLT.Mazur.PolygonSmoothingLocalizedPolynomials
+public import FLT.Mazur.PolygonSmoothingMarkedIdeal
 public import FLT.Mazur.PolygonSmoothingMarkedSection
 public import FLT.Mazur.PolygonSmoothingNilpotentBranches
+public import FLT.Mazur.PolygonSmoothingNodeBasicOpen
 public import FLT.Mazur.PolygonSmoothingNodeScaling
 public import FLT.Mazur.PolygonSmoothingOverlapGraph
 public import FLT.Mazur.PolygonSmoothingPunctureBaseChange
@@ -8270,6 +8285,8 @@ public import FLT.Mazur.PolygonSmoothingRing
 public import FLT.Mazur.PolygonSmoothingRingMap
 public import FLT.Mazur.PolygonSmoothingRingMapBranch
 public import FLT.Mazur.PolygonSmoothingRingMapComposition
+public import FLT.Mazur.PolygonSmoothingScaledNodeFractions
+public import FLT.Mazur.PolygonSmoothingScaledNodePolynomials
 public import FLT.Mazur.PolygonSmoothingScalingBranches
 public import FLT.Mazur.PolygonSmoothingScalingNaturality
 public import FLT.Mazur.PolygonSmoothingSingularSupport
@@ -9602,6 +9619,8 @@ public import FLT.Mazur.SchemeFamilyTripleOverlap
 public import FLT.Mazur.SchemeFiniteGeometricOpenSpread
 public import FLT.Mazur.SchemeFiniteGroupAffineDescent
 public import FLT.Mazur.SchemeFiniteGroupDescent
+public import FLT.Mazur.SchemeFiniteGroupFreeBoundary
+public import FLT.Mazur.SchemeFiniteGroupFreeBoundaryIdeal
 public import FLT.Mazur.SchemeFiniteGroupInvariantPrincipal
 public import FLT.Mazur.SchemeFiniteGroupPrincipalComparison
 public import FLT.Mazur.SchemeFiniteGroupPrincipalQuotient
