@@ -6305,6 +6305,7 @@ public import FLT.Mazur.LaurentReciprocalSubstitution
 public import FLT.Mazur.LaurentRingSurjectivity
 public import FLT.Mazur.LaurentScaledCoordinateIsomorphisms
 public import FLT.Mazur.LaurentScaledEvaluationCoefficients
+public import FLT.Mazur.LaurentScaledNilpotentReparametrization
 public import FLT.Mazur.LaurentSchemeCoordinates
 public import FLT.Mazur.LaurentSquareZeroCocycle
 public import FLT.Mazur.LaurentSquareZeroCoordinate
