@@ -7697,6 +7697,8 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstNodePolynomials
 public import FLT.Mazur.PolygonCompleteIdentityFirstOriginalPolynomialErrors
 public import FLT.Mazur.PolygonCompleteIdentityFirstParameterEquations
 public import FLT.Mazur.PolygonCompleteIdentityFirstPoleCubicRefinement
+public import FLT.Mazur.PolygonCompleteIdentityFirstPoleGlobalIdeals
+public import FLT.Mazur.PolygonCompleteIdentityFirstPoleGlobalReduction
 public import FLT.Mazur.PolygonCompleteIdentityFirstPoleInputFunctions
 public import FLT.Mazur.PolygonCompleteIdentityFirstPoleNodeIdeals
 public import FLT.Mazur.PolygonCompleteIdentityFirstPoleNumeratorRemainders
@@ -7721,6 +7723,10 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstRefinedEquations
 public import FLT.Mazur.PolygonCompleteIdentityFirstRefinedErrorCriterion
 public import FLT.Mazur.PolygonCompleteIdentityFirstRefinedSmoothing
 public import FLT.Mazur.PolygonCompleteIdentityFirstSourceNodeCoverage
+public import FLT.Mazur.PolygonCompleteIdentityFirstSourceNodeCubicCoverage
+public import FLT.Mazur.PolygonCompleteIdentityFirstSourcePoleCubic
+public import FLT.Mazur.PolygonCompleteIdentityFirstSourcePoleGeometry
+public import FLT.Mazur.PolygonCompleteIdentityFirstSourcePoleMaps
 public import FLT.Mazur.PolygonCompleteIdentityFirstSourceSocleLocalization
 public import FLT.Mazur.PolygonCompleteIdentityFirstSourceZeroCubic
 public import FLT.Mazur.PolygonCompleteIdentityFlatOpenLift
@@ -7886,6 +7892,7 @@ public import FLT.Mazur.PolygonCompletePointEquationCoefficientProduct
 public import FLT.Mazur.PolygonCompletePointExactMonomials
 public import FLT.Mazur.PolygonCompletePointFirstAdjacentCoefficients
 public import FLT.Mazur.PolygonCompletePointFirstCentralCoefficients
+public import FLT.Mazur.PolygonCompletePointFirstComplementExtraction
 public import FLT.Mazur.PolygonCompletePointFirstConstantEdges
 public import FLT.Mazur.PolygonCompletePointFirstEndpointCoefficients
 public import FLT.Mazur.PolygonCompletePointFirstFiniteNumerators
@@ -7956,6 +7963,7 @@ public import FLT.Mazur.PolygonCompletePointMonomialBasis
 public import FLT.Mazur.PolygonCompletePointMonomialIndependence
 public import FLT.Mazur.PolygonCompletePointNewSections
 public import FLT.Mazur.PolygonCompletePointNodeBoundedNumerators
+public import FLT.Mazur.PolygonCompletePointNodeComplementNumerators
 public import FLT.Mazur.PolygonCompletePointNodeCubicChart
 public import FLT.Mazur.PolygonCompletePointNodeLaurentReconstruction
 public import FLT.Mazur.PolygonCompletePointNodeLocalization
