@@ -4892,6 +4892,7 @@ public import FLT.Mazur.FiniteGroupAffineNeighborhood
 public import FLT.Mazur.FiniteGroupAffineQuotient
 public import FLT.Mazur.FiniteGroupBoundaryTrace
 public import FLT.Mazur.FiniteGroupEnvelopeNeighborhood
+public import FLT.Mazur.FiniteGroupEquivariantOpenBoundary
 public import FLT.Mazur.FiniteGroupFieldPointOrbits
 public import FLT.Mazur.FiniteGroupFreeBoundaryLift
 public import FLT.Mazur.FiniteGroupFreeFieldTest
