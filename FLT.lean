@@ -8662,6 +8662,7 @@ public import FLT.Mazur.PolygonTopNodeAutomorphism
 public import FLT.Mazur.PolygonTopNodeBoundary
 public import FLT.Mazur.PolygonTopNodeEndomorphism
 public import FLT.Mazur.PolygonTopNodeGraphAlgebra
+public import FLT.Mazur.PolygonTopNodeGraphBranchExt
 public import FLT.Mazur.PolygonTopNodeGraphBranchMaps
 public import FLT.Mazur.PolygonTopNodeGraphFlat
 public import FLT.Mazur.PolygonTopNodeGraphOriginalFlat
