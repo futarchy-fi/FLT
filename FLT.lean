@@ -12649,6 +12649,7 @@ public import FLT.Mazur.WeierstrassModificationXArithmeticNodeSeparation
 public import FLT.Mazur.WeierstrassModificationXArithmeticPuncture
 public import FLT.Mazur.WeierstrassModificationXArithmeticPunctureCover
 public import FLT.Mazur.WeierstrassModificationXArithmeticTensorNodes
+public import FLT.Mazur.WeierstrassModificationXArithmeticTerminalLaurentRestriction
 public import FLT.Mazur.WeierstrassModificationXBaseChange
 public import FLT.Mazur.WeierstrassModificationXBaseChangeGenerators
 public import FLT.Mazur.WeierstrassModificationXCoefficients
