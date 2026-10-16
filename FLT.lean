@@ -13528,6 +13528,7 @@ public import FLT.Mazur.WeierstrassRetainedAdjacentRoots
 public import FLT.Mazur.WeierstrassRetainedArithmeticFactorRatio
 public import FLT.Mazur.WeierstrassRetainedArithmeticFactorRatioRestriction
 public import FLT.Mazur.WeierstrassRetainedCoefficientShearChart
+public import FLT.Mazur.WeierstrassRetainedCorrectionTransport
 public import FLT.Mazur.WeierstrassRetainedDepthScale
 public import FLT.Mazur.WeierstrassRetainedFixedBoundary
 public import FLT.Mazur.WeierstrassRetainedFixedEdgeUnit
