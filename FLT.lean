@@ -3069,6 +3069,7 @@ public import FLT.Mazur.AffineOpenFiniteRefinement
 public import FLT.Mazur.AffineOpenImmersionLocalizationCriterion
 public import FLT.Mazur.AffineOpenKernelPower
 public import FLT.Mazur.AffineOpenQuotientPresentation
+public import FLT.Mazur.AffineOpenSpectrumFunctions
 public import FLT.Mazur.AffineOverlapDiagonal
 public import FLT.Mazur.AffineOverlapMapSections
 public import FLT.Mazur.AffineOverlapPullback
@@ -7673,11 +7674,17 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstNodeObstruction
 public import FLT.Mazur.PolygonCompleteIdentityFirstNodePolynomials
 public import FLT.Mazur.PolygonCompleteIdentityFirstOriginalPolynomialErrors
 public import FLT.Mazur.PolygonCompleteIdentityFirstParameterEquations
+public import FLT.Mazur.PolygonCompleteIdentityFirstPoleInputFunctions
 public import FLT.Mazur.PolygonCompleteIdentityFirstPoleNumeratorRemainders
+public import FLT.Mazur.PolygonCompleteIdentityFirstPoleParameterIdeals
 public import FLT.Mazur.PolygonCompleteIdentityFirstPolePatchCancellation
 public import FLT.Mazur.PolygonCompleteIdentityFirstPolePatchExtraction
+public import FLT.Mazur.PolygonCompleteIdentityFirstPolePatchGeometry
 public import FLT.Mazur.PolygonCompleteIdentityFirstPolePatchMaps
 public import FLT.Mazur.PolygonCompleteIdentityFirstPolePatchNode
+public import FLT.Mazur.PolygonCompleteIdentityFirstPoleSourceGeometry
+public import FLT.Mazur.PolygonCompleteIdentityFirstPoleSourceReduction
+public import FLT.Mazur.PolygonCompleteIdentityFirstPoleTargetCubic
 public import FLT.Mazur.PolygonCompleteIdentityFirstPolynomialConversion
 public import FLT.Mazur.PolygonCompleteIdentityFirstPolynomialErrors
 public import FLT.Mazur.PolygonCompleteIdentityFirstPolynomialRemainders
@@ -7688,6 +7695,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstPrincipalObstruction
 public import FLT.Mazur.PolygonCompleteIdentityFirstRefinedEquations
 public import FLT.Mazur.PolygonCompleteIdentityFirstRefinedErrorCriterion
 public import FLT.Mazur.PolygonCompleteIdentityFirstRefinedSmoothing
+public import FLT.Mazur.PolygonCompleteIdentityFirstSourceZeroCubic
 public import FLT.Mazur.PolygonCompleteIdentityFlatOpenLift
 public import FLT.Mazur.PolygonCompleteIdentityGenericAmbient
 public import FLT.Mazur.PolygonCompleteIdentityGenericAmbientIso
@@ -8111,6 +8119,7 @@ public import FLT.Mazur.PolygonFirstNodeParameterDescent
 public import FLT.Mazur.PolygonFirstNodeParameterEquiv
 public import FLT.Mazur.PolygonFirstNodeParameterScaling
 public import FLT.Mazur.PolygonFirstNodeParameterStructure
+public import FLT.Mazur.PolygonFirstNodeParameterUniversalScaling
 public import FLT.Mazur.PolygonFirstNodePolynomialDescent
 public import FLT.Mazur.PolygonFirstNodePolynomialExtension
 public import FLT.Mazur.PolygonFirstNodePositiveExtension
@@ -8126,6 +8135,7 @@ public import FLT.Mazur.PolygonFirstNodeWeightedConductor
 public import FLT.Mazur.PolygonFirstOrderBoundaryRigidity
 public import FLT.Mazur.PolygonFirstOrderCoordinateCharts
 public import FLT.Mazur.PolygonFirstPairReduction
+public import FLT.Mazur.PolygonFirstUniversalNodeReduction
 public import FLT.Mazur.PolygonGeneralizedCurve
 public import FLT.Mazur.PolygonGenusOne
 public import FLT.Mazur.PolygonGeometricGenus
