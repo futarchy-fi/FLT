@@ -7791,6 +7791,7 @@ public import FLT.Mazur.PolygonCompletePointNodePoleEquations
 public import FLT.Mazur.PolygonCompletePointNonsingular
 public import FLT.Mazur.PolygonCompletePointNormalMonomials
 public import FLT.Mazur.PolygonCompletePointNormalizedPoles
+public import FLT.Mazur.PolygonCompletePointNumeratorLaurentOverlap
 public import FLT.Mazur.PolygonCompletePointOriginAmple
 public import FLT.Mazur.PolygonCompletePointOriginCartesian
 public import FLT.Mazur.PolygonCompletePointOriginCartesianBaseChange
