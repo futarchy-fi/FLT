@@ -5002,6 +5002,7 @@ public import FLT.Mazur.FiniteLineSheafDescent
 public import FLT.Mazur.FiniteLineSheafModel
 public import FLT.Mazur.FiniteLocalizationDenominators
 public import FLT.Mazur.FiniteLocalizedBoundaryLifts
+public import FLT.Mazur.FiniteLocalizedBoundaryMapLifts
 public import FLT.Mazur.FiniteLocalizedIdealQuotient
 public import FLT.Mazur.FiniteLocalizedIntegerComparisons
 public import FLT.Mazur.FiniteLocalizedPolynomialCoefficients
@@ -5858,6 +5859,8 @@ public import FLT.Mazur.HilbertOrbitBoundaryFiniteOriginalLift
 public import FLT.Mazur.HilbertOrbitBoundaryFiniteProducts
 public import FLT.Mazur.HilbertOrbitBoundaryFiniteScalars
 public import FLT.Mazur.HilbertOrbitBoundaryLocalizedMaps
+public import FLT.Mazur.HilbertOrbitBoundaryLocalizedNaturality
+public import FLT.Mazur.HilbertOrbitBoundaryLocalizedNumerators
 public import FLT.Mazur.HilbertOrbitBoundaryScaledMultipliers
 public import FLT.Mazur.HilbertOrderedAffineEnvelope
 public import FLT.Mazur.HilbertOrderedOriginalBoundary
