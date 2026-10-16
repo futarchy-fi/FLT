@@ -6389,6 +6389,7 @@ public import FLT.Mazur.ModuleDirectImageHZero
 public import FLT.Mazur.ModuleDisjointSectionGluing
 public import FLT.Mazur.ModuleDualSectionCancellation
 public import FLT.Mazur.ModuleExactOpenCover
+public import FLT.Mazur.ModuleFrameComparisonUnit
 public import FLT.Mazur.ModuleFreeOpen
 public import FLT.Mazur.ModuleGlobalEvaluationPullback
 public import FLT.Mazur.ModuleGlobalGeneration
