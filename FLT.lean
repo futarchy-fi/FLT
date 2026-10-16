@@ -5731,6 +5731,7 @@ public import FLT.Mazur.HilbertMonomialReindexedAmbient
 public import FLT.Mazur.HilbertMultiplicationCoordinateRecovery
 public import FLT.Mazur.HilbertNestedNormSupport
 public import FLT.Mazur.HilbertNormOrbitFiber
+public import FLT.Mazur.HilbertNormalizedFrameAction
 public import FLT.Mazur.HilbertOpenAmbientBaseChange
 public import FLT.Mazur.HilbertOpenAmbientCartesian
 public import FLT.Mazur.HilbertOpenAmbientClassification
