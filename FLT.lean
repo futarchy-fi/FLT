@@ -7653,6 +7653,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstPolePatchGeometry
 public import FLT.Mazur.PolygonCompleteIdentityFirstPolePatchMaps
 public import FLT.Mazur.PolygonCompleteIdentityFirstPolePatchNode
 public import FLT.Mazur.PolygonCompleteIdentityFirstPoleSourceGeometry
+public import FLT.Mazur.PolygonCompleteIdentityFirstPoleSourceReduction
 public import FLT.Mazur.PolygonCompleteIdentityFirstPoleTargetCubic
 public import FLT.Mazur.PolygonCompleteIdentityFirstPolynomialConversion
 public import FLT.Mazur.PolygonCompleteIdentityFirstPolynomialErrors
