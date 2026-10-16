@@ -5674,6 +5674,7 @@ public import FLT.Mazur.HilbertFiniteAmbientPresentation
 public import FLT.Mazur.HilbertFiniteFreeQuotientRefinement
 public import FLT.Mazur.HilbertFullInteriorFiniteKernel
 public import FLT.Mazur.HilbertFullInteriorQuotientChart
+public import FLT.Mazur.HilbertFullRelationFiberRebase
 public import FLT.Mazur.HilbertFullRelationOrderedPoints
 public import FLT.Mazur.HilbertGrassmannianAffineMap
 public import FLT.Mazur.HilbertGrassmannianFamilyCompatibility
