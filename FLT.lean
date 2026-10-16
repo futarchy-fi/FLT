@@ -13502,6 +13502,7 @@ public import FLT.Mazur.WeierstrassRetainedCoefficientShearChart
 public import FLT.Mazur.WeierstrassRetainedNodeFactor
 public import FLT.Mazur.WeierstrassRetainedNodeFactorRatioBoundary
 public import FLT.Mazur.WeierstrassRetainedNodeFactorRatioMap
+public import FLT.Mazur.WeierstrassRetainedNodeFactorRatioPuncture
 public import FLT.Mazur.WeierstrassRetainedNodeRootBoundary
 public import FLT.Mazur.WeierstrassRetainedNodeRoots
 public import FLT.Mazur.WeierstrassRetainedRegularCenter
