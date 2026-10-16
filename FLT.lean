@@ -12996,6 +12996,7 @@ public import FLT.Mazur.WeierstrassModificationXFactorRatioLaurentEquiv
 public import FLT.Mazur.WeierstrassModificationXFactorRatioLaurentNaturality
 public import FLT.Mazur.WeierstrassModificationXFactorRatioLaurentUnit
 public import FLT.Mazur.WeierstrassModificationXFactorRatioMap
+public import FLT.Mazur.WeierstrassModificationXFactorRatioTerminalComparison
 public import FLT.Mazur.WeierstrassModificationXFiberBranches
 public import FLT.Mazur.WeierstrassModificationXFiberConic
 public import FLT.Mazur.WeierstrassModificationXFiberConicGeometry
