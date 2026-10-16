@@ -7896,6 +7896,7 @@ public import FLT.Mazur.PolygonCompletePointExactMonomials
 public import FLT.Mazur.PolygonCompletePointFirstAdjacentCoefficients
 public import FLT.Mazur.PolygonCompletePointFirstCentralCoefficients
 public import FLT.Mazur.PolygonCompletePointFirstComplementExtraction
+public import FLT.Mazur.PolygonCompletePointFirstComplementNodeExtraction
 public import FLT.Mazur.PolygonCompletePointFirstConstantEdges
 public import FLT.Mazur.PolygonCompletePointFirstEndpointCoefficients
 public import FLT.Mazur.PolygonCompletePointFirstFiniteNumerators
