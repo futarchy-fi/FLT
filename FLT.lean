@@ -12666,6 +12666,7 @@ public import FLT.Mazur.WeierstrassDividedTensorYBoundary
 public import FLT.Mazur.WeierstrassDividedTerminalAllExteriorNodes
 public import FLT.Mazur.WeierstrassDividedTerminalAtlasPushout
 public import FLT.Mazur.WeierstrassDividedTerminalBoundaryAlgebra
+public import FLT.Mazur.WeierstrassDividedTerminalBoundaryExtension
 public import FLT.Mazur.WeierstrassDividedTerminalBranchIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalBranchesNodeIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalCoefficientAction
