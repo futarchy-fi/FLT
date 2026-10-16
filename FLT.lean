@@ -8579,6 +8579,7 @@ public import FLT.Mazur.PolygonSmoothingFlat
 public import FLT.Mazur.PolygonSmoothingGenericFiber
 public import FLT.Mazur.PolygonSmoothingH1FaithfulDescent
 public import FLT.Mazur.PolygonSmoothingIncomingMarking
+public import FLT.Mazur.PolygonSmoothingIndependentScaling
 public import FLT.Mazur.PolygonSmoothingLaurentMonomials
 public import FLT.Mazur.PolygonSmoothingLaurentReconstruction
 public import FLT.Mazur.PolygonSmoothingLeftPuncture
