@@ -11921,6 +11921,7 @@ public import FLT.Mazur.WeierstrassDividedClosedClosingAttachment
 public import FLT.Mazur.WeierstrassDividedClosedClosingPolygonUnion
 public import FLT.Mazur.WeierstrassDividedClosedInfinityPolygonImage
 public import FLT.Mazur.WeierstrassDividedClosedPolygonCompatibility
+public import FLT.Mazur.WeierstrassDividedClosedPolygonCoverage
 public import FLT.Mazur.WeierstrassDividedClosedPolygonDescent
 public import FLT.Mazur.WeierstrassDividedClosedTerminalNormalization
 public import FLT.Mazur.WeierstrassDividedClosingAttachmentRestriction
