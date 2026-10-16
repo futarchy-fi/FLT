@@ -9156,6 +9156,7 @@ public import FLT.Mazur.RelativeDimensionBaseChangeOpen
 public import FLT.Mazur.RelativeDirectImageComposition
 public import FLT.Mazur.RelativeDirectImageForgetting
 public import FLT.Mazur.RelativeDirectImageOpenResolution
+public import FLT.Mazur.RelativeDistinctAffineEnvelope
 public import FLT.Mazur.RelativeDistinctEtale
 public import FLT.Mazur.RelativeDistinctFreeAction
 public import FLT.Mazur.RelativeDistinctTupleLift
