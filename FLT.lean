@@ -6376,6 +6376,7 @@ public import FLT.Mazur.LaurentUnitPointNaturality
 public import FLT.Mazur.LaurentUnitPoints
 public import FLT.Mazur.LaurentUnitScaledCoordinates
 public import FLT.Mazur.LaurentWeightedEvaluation
+public import FLT.Mazur.LaurentWeightedInverse
 public import FLT.Mazur.LineBundleAffineFrames
 public import FLT.Mazur.LineBundleSectionOpenPullback
 public import FLT.Mazur.LineCartierComplementRestriction
