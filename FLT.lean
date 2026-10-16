@@ -13097,6 +13097,7 @@ public import FLT.Mazur.WeierstrassModificationXZeroResidueGeometry
 public import FLT.Mazur.WeierstrassModificationXZeroResidueInfinity
 public import FLT.Mazur.WeierstrassModificationXZeroResidueLaurent
 public import FLT.Mazur.WeierstrassModificationXZeroResidueSmooth
+public import FLT.Mazur.WeierstrassModificationXZeroScaleBaseChange
 public import FLT.Mazur.WeierstrassModificationYAlgebra
 public import FLT.Mazur.WeierstrassModificationYCompatibility
 public import FLT.Mazur.WeierstrassModificationYContractionOverlap
