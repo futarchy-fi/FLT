@@ -7872,6 +7872,7 @@ public import FLT.Mazur.PolygonCompleteIdentitySmoothActionCoordinates
 public import FLT.Mazur.PolygonCompleteIdentitySmoothActionEquivariance
 public import FLT.Mazur.PolygonCompleteIdentitySmoothActionRotation
 public import FLT.Mazur.PolygonCompleteIdentitySmoothInputGraph
+public import FLT.Mazur.PolygonCompleteIdentityStageSourceZeroCubic
 public import FLT.Mazur.PolygonCompleteIdentityStageTorus
 public import FLT.Mazur.PolygonCompleteIdentityTopActionCoordinate
 public import FLT.Mazur.PolygonCompleteIdentityTopActionRestriction
