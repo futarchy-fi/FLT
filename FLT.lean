@@ -2640,6 +2640,7 @@ public import FLT.Mazur.AffineCanonicalOverlapRecognition
 public import FLT.Mazur.AffineCartesianPreimageSections
 public import FLT.Mazur.AffineCartesianSectionPushout
 public import FLT.Mazur.AffineCartesianSectionScalars
+public import FLT.Mazur.AffineChartOpenSectionTransport
 public import FLT.Mazur.AffineChartResidueEquation
 public import FLT.Mazur.AffineChartResidueRetraction
 public import FLT.Mazur.AffineChartSectionLineRecovery
@@ -4017,6 +4018,8 @@ public import FLT.Mazur.DisjointSectionCoverSplitting
 public import FLT.Mazur.DisjointSectionGeometricTranslation
 public import FLT.Mazur.DisjointSectionPicardGluing
 public import FLT.Mazur.DisjointStructureCohomology
+public import FLT.Mazur.DivisorAffineLocalizedNumerator
+public import FLT.Mazur.DivisorAffineNumeratorOverlap
 public import FLT.Mazur.DivisorBaseChangeRank
 public import FLT.Mazur.DivisorCanonicalComposition
 public import FLT.Mazur.DivisorCanonicalOperations
@@ -4088,6 +4091,7 @@ public import FLT.Mazur.DivisorSectionGeneratorOpen
 public import FLT.Mazur.DivisorSectionRigidity
 public import FLT.Mazur.DivisorStalkLength
 public import FLT.Mazur.DivisorTensorNumeratorComparison
+public import FLT.Mazur.DivisorTensorNumeratorOverlap
 public import FLT.Mazur.DivisorTensorSequence
 public import FLT.Mazur.DivisorTranslationLine
 public import FLT.Mazur.DivisorTwistedDegree
@@ -6193,6 +6197,7 @@ public import FLT.Mazur.LaurentSquareZeroNaturality
 public import FLT.Mazur.LaurentSquareZeroReciprocal
 public import FLT.Mazur.LaurentTensor
 public import FLT.Mazur.LaurentUnitCoefficientPoint
+public import FLT.Mazur.LaurentUnitMarkingCancellation
 public import FLT.Mazur.LaurentUnitMultiplication
 public import FLT.Mazur.LaurentUnitPointNaturality
 public import FLT.Mazur.LaurentUnitPoints
@@ -7737,6 +7742,7 @@ public import FLT.Mazur.PolygonCompletePointCubicSections
 public import FLT.Mazur.PolygonCompletePointDimensions
 public import FLT.Mazur.PolygonCompletePointDivisorComparison
 public import FLT.Mazur.PolygonCompletePointExactMonomials
+public import FLT.Mazur.PolygonCompletePointFirstFiniteNumerators
 public import FLT.Mazur.PolygonCompletePointFirstNodeSubstitution
 public import FLT.Mazur.PolygonCompletePointFirstOrderAffineFrames
 public import FLT.Mazur.PolygonCompletePointFirstOrderFactor
@@ -7779,16 +7785,21 @@ public import FLT.Mazur.PolygonCompletePointIrreducibleAffine
 public import FLT.Mazur.PolygonCompletePointLeadingClasses
 public import FLT.Mazur.PolygonCompletePointLeadingProducts
 public import FLT.Mazur.PolygonCompletePointMarkedCoordinates
+public import FLT.Mazur.PolygonCompletePointMarkedLaurentNumerators
 public import FLT.Mazur.PolygonCompletePointMarkingRatios
 public import FLT.Mazur.PolygonCompletePointMonomialBaseChange
 public import FLT.Mazur.PolygonCompletePointMonomialBasis
 public import FLT.Mazur.PolygonCompletePointMonomialIndependence
 public import FLT.Mazur.PolygonCompletePointNewSections
+public import FLT.Mazur.PolygonCompletePointNodeBoundedNumerators
 public import FLT.Mazur.PolygonCompletePointNodeLocalization
 public import FLT.Mazur.PolygonCompletePointNodeNumerators
+public import FLT.Mazur.PolygonCompletePointNodePoleEquations
 public import FLT.Mazur.PolygonCompletePointNonsingular
 public import FLT.Mazur.PolygonCompletePointNormalMonomials
 public import FLT.Mazur.PolygonCompletePointNormalizedPoles
+public import FLT.Mazur.PolygonCompletePointNumeratorLaurentBounds
+public import FLT.Mazur.PolygonCompletePointNumeratorLaurentOverlap
 public import FLT.Mazur.PolygonCompletePointOriginAmple
 public import FLT.Mazur.PolygonCompletePointOriginCartesian
 public import FLT.Mazur.PolygonCompletePointOriginCartesianBaseChange
@@ -8284,6 +8295,7 @@ public import FLT.Mazur.PolygonSmoothingFlat
 public import FLT.Mazur.PolygonSmoothingGenericFiber
 public import FLT.Mazur.PolygonSmoothingH1FaithfulDescent
 public import FLT.Mazur.PolygonSmoothingIncomingMarking
+public import FLT.Mazur.PolygonSmoothingLaurentMonomials
 public import FLT.Mazur.PolygonSmoothingLeftPuncture
 public import FLT.Mazur.PolygonSmoothingLocalizedCotangent
 public import FLT.Mazur.PolygonSmoothingLocalizedPolynomials
