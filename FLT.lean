@@ -9593,6 +9593,7 @@ public import FLT.Mazur.RelativeFrameRankOpen
 public import FLT.Mazur.RelativeFrameRelabelCompleteness
 public import FLT.Mazur.RelativeFrameScalarCompleteness
 public import FLT.Mazur.RelativeFrameScalarExtension
+public import FLT.Mazur.RelativeFrameUniformRank
 public import FLT.Mazur.RelativeGenusOneAffineCartesian
 public import FLT.Mazur.RelativeGenusOneAffineCubicMorphism
 public import FLT.Mazur.RelativeGenusOneAffineIso
