@@ -4642,9 +4642,15 @@ public import FLT.Mazur.EquifiberedSchemeGluing
 public import FLT.Mazur.EquivalenceRelationFiberRebase
 public import FLT.Mazur.EquivalenceRelationFrameRebaseGeometric
 public import FLT.Mazur.EquivalenceRelationFrameRebaseLaws
+public import FLT.Mazur.EquivalenceRelationNormalizedActionGraphs
+public import FLT.Mazur.EquivalenceRelationNormalizedActionRelation
 public import FLT.Mazur.EquivalenceRelationNormalizedFrameAction
 public import FLT.Mazur.EquivalenceRelationNormalizedFrameComparison
+public import FLT.Mazur.EquivalenceRelationNormalizedFrameCover
+public import FLT.Mazur.EquivalenceRelationNormalizedFrameEtale
 public import FLT.Mazur.EquivalenceRelationNormalizedFrameFree
+public import FLT.Mazur.EquivalenceRelationNormalizedFrameLifts
+public import FLT.Mazur.EquivalenceRelationNormalizedFrameRelation
 public import FLT.Mazur.EquivalenceRelationNormalizedFrames
 public import FLT.Mazur.EquivalenceRelationSectionRebase
 public import FLT.Mazur.EtaleAffineSpaceDimension
@@ -5736,6 +5742,7 @@ public import FLT.Mazur.HilbertMultiplicationCoordinateRecovery
 public import FLT.Mazur.HilbertNestedNormSupport
 public import FLT.Mazur.HilbertNormOrbitFiber
 public import FLT.Mazur.HilbertNormalizedFrameAction
+public import FLT.Mazur.HilbertNormalizedRelationComparison
 public import FLT.Mazur.HilbertOpenAmbientBaseChange
 public import FLT.Mazur.HilbertOpenAmbientCartesian
 public import FLT.Mazur.HilbertOpenAmbientClassification
@@ -6636,6 +6643,10 @@ public import FLT.Mazur.NodalFiberPunctureCoefficientMap
 public import FLT.Mazur.NodalFiberSmoothingComparison
 public import FLT.Mazur.NodalFiberUnitComparison
 public import FLT.Mazur.NodalFiberUnitScaling
+public import FLT.Mazur.NodalFiberUnitScalingBoundary
+public import FLT.Mazur.NodalFiberUnitScalingGeometry
+public import FLT.Mazur.NodalFiberUnitScalingNaturality
+public import FLT.Mazur.NodalFiberUnitScalingParameters
 public import FLT.Mazur.NodalGenusOneBaseChange
 public import FLT.Mazur.NodalGeometricFiberGenus
 public import FLT.Mazur.NodeBranchPushout
@@ -7160,6 +7171,7 @@ public import FLT.Mazur.PolygonArithmeticClosedSmoothLocus
 public import FLT.Mazur.PolygonArithmeticClosedSpecialization
 public import FLT.Mazur.PolygonArithmeticClosedTargetReconstruction
 public import FLT.Mazur.PolygonArithmeticCoefficientFlatness
+public import FLT.Mazur.PolygonArithmeticCoherentUnits
 public import FLT.Mazur.PolygonArithmeticComparedSectionReconstruction
 public import FLT.Mazur.PolygonArithmeticCompatibleAlgebra
 public import FLT.Mazur.PolygonArithmeticCompatibleReduction
@@ -7217,6 +7229,7 @@ public import FLT.Mazur.PolygonArithmeticNodeTransition
 public import FLT.Mazur.PolygonArithmeticOriginalAdicSquare
 public import FLT.Mazur.PolygonArithmeticOriginalSectionReconstruction
 public import FLT.Mazur.PolygonArithmeticParameterAnnihilator
+public import FLT.Mazur.PolygonArithmeticParameterCancellation
 public import FLT.Mazur.PolygonArithmeticParameterImage
 public import FLT.Mazur.PolygonArithmeticParameterRegularity
 public import FLT.Mazur.PolygonArithmeticParameterSections
@@ -8372,6 +8385,7 @@ public import FLT.Mazur.PolygonSmoothingSpecialBranches
 public import FLT.Mazur.PolygonSmoothingSpecialFiber
 public import FLT.Mazur.PolygonSmoothingSumRegular
 public import FLT.Mazur.PolygonSmoothingTransition
+public import FLT.Mazur.PolygonSmoothingUnitBoundary
 public import FLT.Mazur.PolygonSmoothingUnitParameter
 public import FLT.Mazur.PolygonSpecialFiberIdeal
 public import FLT.Mazur.PolygonSplitGeneratorIdentities
@@ -11370,6 +11384,8 @@ public import FLT.Mazur.WeierstrassDilatationCanonicalNormalizationNaturality
 public import FLT.Mazur.WeierstrassDilatationCoefficientRingMap
 public import FLT.Mazur.WeierstrassDilatationCoefficientTransport
 public import FLT.Mazur.WeierstrassDilatationCoefficients
+public import FLT.Mazur.WeierstrassDilatationCoherentTerminalPolygon
+public import FLT.Mazur.WeierstrassDilatationCoherentTerminalUnit
 public import FLT.Mazur.WeierstrassDilatationDepthComposition
 public import FLT.Mazur.WeierstrassDilatationDepthTransition
 public import FLT.Mazur.WeierstrassDilatationExtendedCast
@@ -11564,6 +11580,7 @@ public import FLT.Mazur.WeierstrassDividedArithmeticTerminalNodeBoundary
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalNodeGeometry
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalNodeOpen
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalNodeReduction
+public import FLT.Mazur.WeierstrassDividedArithmeticTerminalPolygonSystem
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalPunctureCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalPunctureImages
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalPunctureIntersection
@@ -12244,6 +12261,8 @@ public import FLT.Mazur.WeierstrassDividedTerminalNodeChartExclusion
 public import FLT.Mazur.WeierstrassDividedTerminalNodeIncidence
 public import FLT.Mazur.WeierstrassDividedTerminalParameterOrigins
 public import FLT.Mazur.WeierstrassDividedTerminalParameterStructure
+public import FLT.Mazur.WeierstrassDividedTerminalPolygonBoundary
+public import FLT.Mazur.WeierstrassDividedTerminalPolygonBoundaryRestriction
 public import FLT.Mazur.WeierstrassDividedTerminalResidueAtlas
 public import FLT.Mazur.WeierstrassDividedTerminalResidueBoundary
 public import FLT.Mazur.WeierstrassDividedTerminalResidueCharts
