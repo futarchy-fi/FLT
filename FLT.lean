@@ -9298,6 +9298,7 @@ public import FLT.Mazur.RelativeRelationSaturationCover
 public import FLT.Mazur.RelativeRelationSaturationFunctionDescent
 public import FLT.Mazur.RelativeRelationSaturationKernel
 public import FLT.Mazur.RelativeRelationSaturationSpan
+public import FLT.Mazur.RelativeRelationSimultaneousLiftCover
 public import FLT.Mazur.RelativeRelationSplitQuotient
 public import FLT.Mazur.RelativeSectionAmpleBaseChange
 public import FLT.Mazur.RelativeSectionAmpleLocality
