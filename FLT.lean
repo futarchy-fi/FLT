@@ -4023,6 +4023,8 @@ public import FLT.Mazur.DivisorCanonicalOperations
 public import FLT.Mazur.DivisorCanonicalSection
 public import FLT.Mazur.DivisorChartCokernel
 public import FLT.Mazur.DivisorChartNumerator
+public import FLT.Mazur.DivisorChartPoleRatio
+public import FLT.Mazur.DivisorChartTensorNumerator
 public import FLT.Mazur.DivisorClosedCokernel
 public import FLT.Mazur.DivisorCohomologicalDegree
 public import FLT.Mazur.DivisorCokernelProjection
@@ -7825,6 +7827,8 @@ public import FLT.Mazur.PolygonCompletePointSectionRank
 public import FLT.Mazur.PolygonCompletePointSectionRingIso
 public import FLT.Mazur.PolygonCompletePointSmoothIso
 public import FLT.Mazur.PolygonCompletePointSpecifiedBasis
+public import FLT.Mazur.PolygonCompletePointStageBoundedNumerators
+public import FLT.Mazur.PolygonCompletePointStageBoundedRatios
 public import FLT.Mazur.PolygonCompletePointStageCanonicalStep
 public import FLT.Mazur.PolygonCompletePointStageCubicRatios
 public import FLT.Mazur.PolygonCompletePointStageLineComparison
@@ -7987,6 +7991,7 @@ public import FLT.Mazur.PolygonInfinitesimalAtlas
 public import FLT.Mazur.PolygonInfinitesimalBaseChange
 public import FLT.Mazur.PolygonInfinitesimalBoundaryComparison
 public import FLT.Mazur.PolygonInfinitesimalCartier
+public import FLT.Mazur.PolygonInfinitesimalChartMarkingIdeals
 public import FLT.Mazur.PolygonInfinitesimalChartRestriction
 public import FLT.Mazur.PolygonInfinitesimalCoefficientDiagram
 public import FLT.Mazur.PolygonInfinitesimalCoefficientTransport
@@ -7999,6 +8004,9 @@ public import FLT.Mazur.PolygonInfinitesimalFamily
 public import FLT.Mazur.PolygonInfinitesimalFieldFiber
 public import FLT.Mazur.PolygonInfinitesimalLineCoherence
 public import FLT.Mazur.PolygonInfinitesimalMarkedBaseChange
+public import FLT.Mazur.PolygonInfinitesimalMarkingEquations
+public import FLT.Mazur.PolygonInfinitesimalMarkingImageEquation
+public import FLT.Mazur.PolygonInfinitesimalMarkingRegular
 public import FLT.Mazur.PolygonInfinitesimalMarkings
 public import FLT.Mazur.PolygonInfinitesimalRestrictionKernel
 public import FLT.Mazur.PolygonInfinitesimalRotation
@@ -8271,11 +8279,13 @@ public import FLT.Mazur.PolygonSmoothingFirstCotangentBaseChange
 public import FLT.Mazur.PolygonSmoothingFlat
 public import FLT.Mazur.PolygonSmoothingGenericFiber
 public import FLT.Mazur.PolygonSmoothingH1FaithfulDescent
+public import FLT.Mazur.PolygonSmoothingIncomingMarking
 public import FLT.Mazur.PolygonSmoothingLeftPuncture
 public import FLT.Mazur.PolygonSmoothingLocalizedCotangent
 public import FLT.Mazur.PolygonSmoothingLocalizedPolynomials
 public import FLT.Mazur.PolygonSmoothingMarkedIdeal
 public import FLT.Mazur.PolygonSmoothingMarkedSection
+public import FLT.Mazur.PolygonSmoothingMarkingIdealSheaf
 public import FLT.Mazur.PolygonSmoothingNilpotentBranches
 public import FLT.Mazur.PolygonSmoothingNodeBasicOpen
 public import FLT.Mazur.PolygonSmoothingNodeScaling
