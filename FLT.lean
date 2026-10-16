@@ -12313,6 +12313,7 @@ public import FLT.Mazur.WeierstrassDividedPolygonComparisonRestriction
 public import FLT.Mazur.WeierstrassDividedPolygonExteriorComparison
 public import FLT.Mazur.WeierstrassDividedPolygonExteriorNormalization
 public import FLT.Mazur.WeierstrassDividedPolygonExteriorRestriction
+public import FLT.Mazur.WeierstrassDividedPolygonLabelCover
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityAction
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityActionComparison
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityAllComponentAction
