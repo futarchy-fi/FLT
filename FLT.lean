@@ -13869,6 +13869,7 @@ public import FLT.Mazur.WeierstrassSplitNodalChartGroup
 public import FLT.Mazur.WeierstrassSplitNodalChartParameters
 public import FLT.Mazur.WeierstrassSplitNodalFieldSmooth
 public import FLT.Mazur.WeierstrassSplitNodalGroupCoordinates
+public import FLT.Mazur.WeierstrassSplitNodalInfinityFactorRatio
 public import FLT.Mazur.WeierstrassSplitNodalInversion
 public import FLT.Mazur.WeierstrassSplitNodalLaurent
 public import FLT.Mazur.WeierstrassSplitNodalLaurentCoefficient
