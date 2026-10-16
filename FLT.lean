@@ -8584,6 +8584,7 @@ public import FLT.Mazur.PolygonSmoothingFlat
 public import FLT.Mazur.PolygonSmoothingGenericFiber
 public import FLT.Mazur.PolygonSmoothingH1FaithfulDescent
 public import FLT.Mazur.PolygonSmoothingIncomingMarking
+public import FLT.Mazur.PolygonSmoothingIndependentScaling
 public import FLT.Mazur.PolygonSmoothingLaurentMonomials
 public import FLT.Mazur.PolygonSmoothingLaurentReconstruction
 public import FLT.Mazur.PolygonSmoothingLeftPuncture
@@ -8614,6 +8615,7 @@ public import FLT.Mazur.PolygonSmoothingSpecialBranches
 public import FLT.Mazur.PolygonSmoothingSpecialFiber
 public import FLT.Mazur.PolygonSmoothingSumRegular
 public import FLT.Mazur.PolygonSmoothingTransition
+public import FLT.Mazur.PolygonSmoothingTwoCoefficientScaling
 public import FLT.Mazur.PolygonSmoothingUnitBoundary
 public import FLT.Mazur.PolygonSmoothingUnitParameter
 public import FLT.Mazur.PolygonSpecialFiberIdeal
@@ -11893,6 +11895,11 @@ public import FLT.Mazur.WeierstrassDividedCanonicalInfinityFactorRatio
 public import FLT.Mazur.WeierstrassDividedCanonicalInfinityFactorRatioTransport
 public import FLT.Mazur.WeierstrassDividedChartCubicAction
 public import FLT.Mazur.WeierstrassDividedChartRegularCenter
+public import FLT.Mazur.WeierstrassDividedClosedBoundaryUnits
+public import FLT.Mazur.WeierstrassDividedClosedClosingAttachment
+public import FLT.Mazur.WeierstrassDividedClosedPolygonCompatibility
+public import FLT.Mazur.WeierstrassDividedClosedPolygonDescent
+public import FLT.Mazur.WeierstrassDividedClosedTerminalNormalization
 public import FLT.Mazur.WeierstrassDividedClosingAttachmentRestriction
 public import FLT.Mazur.WeierstrassDividedClosingAttachmentSystem
 public import FLT.Mazur.WeierstrassDividedClosingAttachmentUnion
