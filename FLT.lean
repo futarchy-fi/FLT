@@ -9267,6 +9267,7 @@ public import FLT.Mazur.RelativeKernelPairPropertyDescent
 public import FLT.Mazur.RelativeMarkingSections
 public import FLT.Mazur.RelativeOpenUnion
 public import FLT.Mazur.RelativeOpenUnionGluing
+public import FLT.Mazur.RelativeOrderedTuples
 public import FLT.Mazur.RelativePicardBaseChangeGeometry
 public import FLT.Mazur.RelativePicardCoproductSection
 public import FLT.Mazur.RelativePicardCoverDiagonal
