@@ -8643,6 +8643,7 @@ public import FLT.Mazur.PolygonStageLineQuotient
 public import FLT.Mazur.PolygonStageLineSectionFlat
 public import FLT.Mazur.PolygonStageNodeBranchReconstruction
 public import FLT.Mazur.PolygonStageNodeBranchSubstitution
+public import FLT.Mazur.PolygonStageNodeParameterEquiv
 public import FLT.Mazur.PolygonStageParameterSections
 public import FLT.Mazur.PolygonStageRestrictionIdeal
 public import FLT.Mazur.PolygonStageRetainedBaseComparison
