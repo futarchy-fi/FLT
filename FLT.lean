@@ -5778,6 +5778,7 @@ public import FLT.Mazur.HilbertCompleteChartOriginalCertificates
 public import FLT.Mazur.HilbertCompleteChartOriginalSections
 public import FLT.Mazur.HilbertCompleteFrameCardinality
 public import FLT.Mazur.HilbertCompleteGeometricTuple
+public import FLT.Mazur.HilbertCompleteInfinitesimalSources
 public import FLT.Mazur.HilbertCompleteInteriorBoundaryLifts
 public import FLT.Mazur.HilbertCompleteInteriorCharts
 public import FLT.Mazur.HilbertCompleteInteriorOriginalNeighborhoods
