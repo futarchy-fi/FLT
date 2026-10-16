@@ -4639,6 +4639,7 @@ public import FLT.Mazur.EnvelopeVerticalGenerizations
 public import FLT.Mazur.EqualizerDenominatorClearing
 public import FLT.Mazur.EquifiberedGluingBaseChange
 public import FLT.Mazur.EquifiberedSchemeGluing
+public import FLT.Mazur.EquivalenceRelationCompleteClosedLocus
 public import FLT.Mazur.EquivalenceRelationCompleteFiberComparison
 public import FLT.Mazur.EquivalenceRelationCompleteFiberSplit
 public import FLT.Mazur.EquivalenceRelationCompletePointLocus
