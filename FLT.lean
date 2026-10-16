@@ -5743,6 +5743,7 @@ public import FLT.Mazur.HilbertMultiplicationCoordinateRecovery
 public import FLT.Mazur.HilbertNestedNormSupport
 public import FLT.Mazur.HilbertNormOrbitFiber
 public import FLT.Mazur.HilbertNormalizedAffineNeighborhood
+public import FLT.Mazur.HilbertNormalizedCompleteOrbits
 public import FLT.Mazur.HilbertNormalizedFrameAction
 public import FLT.Mazur.HilbertNormalizedRelationComparison
 public import FLT.Mazur.HilbertOpenAmbientBaseChange
