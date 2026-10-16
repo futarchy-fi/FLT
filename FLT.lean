@@ -6222,6 +6222,7 @@ public import FLT.Mazur.LaurentScaledEvaluationCoefficients
 public import FLT.Mazur.LaurentSchemeCoordinates
 public import FLT.Mazur.LaurentSquareZeroCocycle
 public import FLT.Mazur.LaurentSquareZeroCoordinate
+public import FLT.Mazur.LaurentSquareZeroCrossCoefficients
 public import FLT.Mazur.LaurentSquareZeroLinearization
 public import FLT.Mazur.LaurentSquareZeroMarking
 public import FLT.Mazur.LaurentSquareZeroNaturality
@@ -7798,8 +7799,13 @@ public import FLT.Mazur.PolygonCompletePointFirstCentralCoefficients
 public import FLT.Mazur.PolygonCompletePointFirstConstantEdges
 public import FLT.Mazur.PolygonCompletePointFirstEndpointCoefficients
 public import FLT.Mazur.PolygonCompletePointFirstFiniteNumerators
+public import FLT.Mazur.PolygonCompletePointFirstIncomingTail
+public import FLT.Mazur.PolygonCompletePointFirstIncomingValues
+public import FLT.Mazur.PolygonCompletePointFirstLocalizedMarkingForms
 public import FLT.Mazur.PolygonCompletePointFirstMarkingForms
 public import FLT.Mazur.PolygonCompletePointFirstNegativeVanishing
+public import FLT.Mazur.PolygonCompletePointFirstNodeMarkingForms
+public import FLT.Mazur.PolygonCompletePointFirstNodePolynomial
 public import FLT.Mazur.PolygonCompletePointFirstNodeSubstitution
 public import FLT.Mazur.PolygonCompletePointFirstNumeratorTails
 public import FLT.Mazur.PolygonCompletePointFirstOrderAffineFrames
@@ -7808,6 +7814,8 @@ public import FLT.Mazur.PolygonCompletePointFirstOrderIdeal
 public import FLT.Mazur.PolygonCompletePointFirstOrderLine
 public import FLT.Mazur.PolygonCompletePointFirstOrderOpen
 public import FLT.Mazur.PolygonCompletePointFirstPolynomialNumerator
+public import FLT.Mazur.PolygonCompletePointFirstPrecedingCoefficients
+public import FLT.Mazur.PolygonCompletePointFirstUnmarkedIncoming
 public import FLT.Mazur.PolygonCompletePointFunctionDimensions
 public import FLT.Mazur.PolygonCompletePointFunctionNumerators
 public import FLT.Mazur.PolygonCompletePointGenericComparison
@@ -8362,6 +8370,8 @@ public import FLT.Mazur.PolygonSmoothingDifferenceIdeal
 public import FLT.Mazur.PolygonSmoothingFirstConstantCoefficients
 public import FLT.Mazur.PolygonSmoothingFirstCotangent
 public import FLT.Mazur.PolygonSmoothingFirstCotangentBaseChange
+public import FLT.Mazur.PolygonSmoothingFirstIncomingCoefficients
+public import FLT.Mazur.PolygonSmoothingFirstLaurentLifts
 public import FLT.Mazur.PolygonSmoothingFlat
 public import FLT.Mazur.PolygonSmoothingGenericFiber
 public import FLT.Mazur.PolygonSmoothingH1FaithfulDescent
