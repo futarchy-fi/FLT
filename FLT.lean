@@ -3076,6 +3076,7 @@ public import FLT.Mazur.AffinePicardComparison
 public import FLT.Mazur.AffinePicardSections
 public import FLT.Mazur.AffinePieceSectionLocalization
 public import FLT.Mazur.AffinePreimageRestrictionPushout
+public import FLT.Mazur.AffinePresentedSectionFractions
 public import FLT.Mazur.AffinePrincipalComparisonIso
 public import FLT.Mazur.AffinePrincipalKernel
 public import FLT.Mazur.AffineProductMap
@@ -3485,6 +3486,7 @@ public import FLT.Mazur.BaseOpenHilbertOriginalInvariantFunctions
 public import FLT.Mazur.BaseOpenHilbertRelationOpenSections
 public import FLT.Mazur.BaseOpenHilbertRestrictedRelation
 public import FLT.Mazur.BinaryOpenDescent
+public import FLT.Mazur.BivariateCoordinateDifference
 public import FLT.Mazur.BlowupFractionActionCover
 public import FLT.Mazur.BlowupFractionChart
 public import FLT.Mazur.BlowupFractionChartExt
@@ -5540,6 +5542,7 @@ public import FLT.Mazur.HilbertBasisSchemeOver
 public import FLT.Mazur.HilbertBasisTupleAffineComparison
 public import FLT.Mazur.HilbertBasisTupleIntersection
 public import FLT.Mazur.HilbertBasisTupleSchemeComparison
+public import FLT.Mazur.HilbertBoundaryCertifiedAlgebra
 public import FLT.Mazur.HilbertBoundaryClosedRelation
 public import FLT.Mazur.HilbertBoundaryEtaleIdeals
 public import FLT.Mazur.HilbertBoundaryEtaleLift
@@ -5558,6 +5561,7 @@ public import FLT.Mazur.HilbertBoundaryQuotientSections
 public import FLT.Mazur.HilbertBoundaryRelationNilpotence
 public import FLT.Mazur.HilbertBoundaryRelationTests
 public import FLT.Mazur.HilbertBoundarySchemeTests
+public import FLT.Mazur.HilbertBoundarySimultaneousLiftCover
 public import FLT.Mazur.HilbertBoundaryThickeningGeometry
 public import FLT.Mazur.HilbertBoundaryThickeningKernelPair
 public import FLT.Mazur.HilbertBoundaryThickeningNilpotence
@@ -6582,6 +6586,7 @@ public import FLT.Mazur.NodePinchingExistence
 public import FLT.Mazur.NodePolynomialVectorField
 public import FLT.Mazur.NodePuncturedDenominatorRestriction
 public import FLT.Mazur.NodeQuotient
+public import FLT.Mazur.NodeRelationPolynomialPresentation
 public import FLT.Mazur.NodeSmoothLocus
 public import FLT.Mazur.NodeTangentAlgebra
 public import FLT.Mazur.NodeTangentCechCocycle
@@ -7476,9 +7481,11 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstCompleteSmoothing
 public import FLT.Mazur.PolygonCompleteIdentityFirstCoordinateDescent
 public import FLT.Mazur.PolygonCompleteIdentityFirstCorrection
 public import FLT.Mazur.PolygonCompleteIdentityFirstCubicErrorCriterion
+public import FLT.Mazur.PolygonCompleteIdentityFirstCubicFractions
 public import FLT.Mazur.PolygonCompleteIdentityFirstDefectDerivation
 public import FLT.Mazur.PolygonCompleteIdentityFirstDefectFormula
 public import FLT.Mazur.PolygonCompleteIdentityFirstDefectProduct
+public import FLT.Mazur.PolygonCompleteIdentityFirstFourCoordinates
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphAlgebra
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphBranchExt
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphBranchMaps
@@ -7516,7 +7523,10 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstGraphTopology
 public import FLT.Mazur.PolygonCompleteIdentityFirstLinearization
 public import FLT.Mazur.PolygonCompleteIdentityFirstNodeBoundary
 public import FLT.Mazur.PolygonCompleteIdentityFirstNodeObstruction
+public import FLT.Mazur.PolygonCompleteIdentityFirstNodePolynomials
 public import FLT.Mazur.PolygonCompleteIdentityFirstParameterEquations
+public import FLT.Mazur.PolygonCompleteIdentityFirstPolynomialErrors
+public import FLT.Mazur.PolygonCompleteIdentityFirstPolynomialRemainders
 public import FLT.Mazur.PolygonCompleteIdentityFirstPositiveNodes
 public import FLT.Mazur.PolygonCompleteIdentityFirstPowerDescent
 public import FLT.Mazur.PolygonCompleteIdentityFirstPrincipalCoordinates
@@ -9297,6 +9307,7 @@ public import FLT.Mazur.RelativeRelationSaturationCover
 public import FLT.Mazur.RelativeRelationSaturationFunctionDescent
 public import FLT.Mazur.RelativeRelationSaturationKernel
 public import FLT.Mazur.RelativeRelationSaturationSpan
+public import FLT.Mazur.RelativeRelationSimultaneousLiftCover
 public import FLT.Mazur.RelativeRelationSplitQuotient
 public import FLT.Mazur.RelativeSectionAmpleBaseChange
 public import FLT.Mazur.RelativeSectionAmpleLocality
@@ -9930,7 +9941,11 @@ public import FLT.Mazur.SectionGradedStructuralAlgebra
 public import FLT.Mazur.SectionGradedSum
 public import FLT.Mazur.SectionGradedUnit
 public import FLT.Mazur.SectionKernelLocal
+public import FLT.Mazur.SectionLiftCertificatePolynomial
 public import FLT.Mazur.SectionLiftIdeal
+public import FLT.Mazur.SectionLiftIdealAlgebra
+public import FLT.Mazur.SectionLiftSimultaneousCertificate
+public import FLT.Mazur.SectionLiftSourceCertificate
 public import FLT.Mazur.SectionLineChartOverlap
 public import FLT.Mazur.SectionLinePointBaseChange
 public import FLT.Mazur.SectionLinePointOverlapEquality
