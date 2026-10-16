@@ -6344,6 +6344,7 @@ public import FLT.Mazur.LaurentSquareZeroMarking
 public import FLT.Mazur.LaurentSquareZeroNaturality
 public import FLT.Mazur.LaurentSquareZeroReciprocal
 public import FLT.Mazur.LaurentStageParameter
+public import FLT.Mazur.LaurentStageParameterEquiv
 public import FLT.Mazur.LaurentTensor
 public import FLT.Mazur.LaurentTopParameterSubstitution
 public import FLT.Mazur.LaurentUnitCoefficientPoint
@@ -7872,10 +7873,21 @@ public import FLT.Mazur.PolygonCompleteIdentityStageTorus
 public import FLT.Mazur.PolygonCompleteIdentityTopActionCoordinate
 public import FLT.Mazur.PolygonCompleteIdentityTopActionRestriction
 public import FLT.Mazur.PolygonCompleteIdentityTopBoundary
+public import FLT.Mazur.PolygonCompleteIdentityTopBranchOriginal
+public import FLT.Mazur.PolygonCompleteIdentityTopChartBranchImage
+public import FLT.Mazur.PolygonCompleteIdentityTopChartBranchQuotient
 public import FLT.Mazur.PolygonCompleteIdentityTopCorrection
 public import FLT.Mazur.PolygonCompleteIdentityTopDefect
 public import FLT.Mazur.PolygonCompleteIdentityTopGraphAlgebra
+public import FLT.Mazur.PolygonCompleteIdentityTopGraphChartBranch
+public import FLT.Mazur.PolygonCompleteIdentityTopGraphChartFlat
+public import FLT.Mazur.PolygonCompleteIdentityTopGraphClosedComparison
+public import FLT.Mazur.PolygonCompleteIdentityTopGraphCubic
+public import FLT.Mazur.PolygonCompleteIdentityTopGraphIncomingBranch
 public import FLT.Mazur.PolygonCompleteIdentityTopGraphOriginalFlat
+public import FLT.Mazur.PolygonCompleteIdentityTopGraphOriginalNodes
+public import FLT.Mazur.PolygonCompleteIdentityTopGraphScheme
+public import FLT.Mazur.PolygonCompleteIdentityTopGraphToChart
 public import FLT.Mazur.PolygonCompleteIdentityTopLinearization
 public import FLT.Mazur.PolygonCompleteIdentityTopNodeBoundary
 public import FLT.Mazur.PolygonCompleteIdentityTopObstruction
@@ -8291,6 +8303,7 @@ public import FLT.Mazur.PolygonHomogeneousBoundaryEvaluation
 public import FLT.Mazur.PolygonIdealModulePullback
 public import FLT.Mazur.PolygonIncidence
 public import FLT.Mazur.PolygonIncidenceQuotient
+public import FLT.Mazur.PolygonInfinitesimalAdjacentUnion
 public import FLT.Mazur.PolygonInfinitesimalAtlas
 public import FLT.Mazur.PolygonInfinitesimalBaseChange
 public import FLT.Mazur.PolygonInfinitesimalBoundaryComparison
@@ -8568,6 +8581,7 @@ public import FLT.Mazur.PolygonSmoothingBranchSeparation
 public import FLT.Mazur.PolygonSmoothingBranchSwap
 public import FLT.Mazur.PolygonSmoothingBranchSwapGeometry
 public import FLT.Mazur.PolygonSmoothingBranchSwapNaturality
+public import FLT.Mazur.PolygonSmoothingClosingPair
 public import FLT.Mazur.PolygonSmoothingCoefficientBranches
 public import FLT.Mazur.PolygonSmoothingCoefficientSquares
 public import FLT.Mazur.PolygonSmoothingCompletedDifferentials
@@ -8657,6 +8671,8 @@ public import FLT.Mazur.PolygonStageLineQuotient
 public import FLT.Mazur.PolygonStageLineSectionFlat
 public import FLT.Mazur.PolygonStageNodeBranchReconstruction
 public import FLT.Mazur.PolygonStageNodeBranchSubstitution
+public import FLT.Mazur.PolygonStageNodeParameterEquiv
+public import FLT.Mazur.PolygonStageNodeParameterStructure
 public import FLT.Mazur.PolygonStageParameterSections
 public import FLT.Mazur.PolygonStageRestrictionIdeal
 public import FLT.Mazur.PolygonStageRetainedBaseComparison
@@ -8675,9 +8691,13 @@ public import FLT.Mazur.PolygonTopNodeAutomorphism
 public import FLT.Mazur.PolygonTopNodeBoundary
 public import FLT.Mazur.PolygonTopNodeEndomorphism
 public import FLT.Mazur.PolygonTopNodeGraphAlgebra
+public import FLT.Mazur.PolygonTopNodeGraphBranchExt
+public import FLT.Mazur.PolygonTopNodeGraphBranchMaps
+public import FLT.Mazur.PolygonTopNodeGraphClosedLift
 public import FLT.Mazur.PolygonTopNodeGraphFlat
 public import FLT.Mazur.PolygonTopNodeGraphOriginalFlat
 public import FLT.Mazur.PolygonTopNodeGraphPresentation
+public import FLT.Mazur.PolygonTopNodeGraphRingGenerators
 public import FLT.Mazur.PolygonTopNodeGraphScheme
 public import FLT.Mazur.PolygonTopNodeLaurent
 public import FLT.Mazur.PolygonTopNodeNeighborhood
@@ -11830,6 +11850,7 @@ public import FLT.Mazur.WeierstrassDividedArithmeticInitialNodeIntersection
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialNodeOverlap
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialNodes
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialPolygon
+public import FLT.Mazur.WeierstrassDividedArithmeticInitialPolygonImage
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialSeparation
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialSlope
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialTriangleCompatibility
@@ -11907,6 +11928,8 @@ public import FLT.Mazur.WeierstrassDividedChartCubicAction
 public import FLT.Mazur.WeierstrassDividedChartRegularCenter
 public import FLT.Mazur.WeierstrassDividedClosedBoundaryUnits
 public import FLT.Mazur.WeierstrassDividedClosedClosingAttachment
+public import FLT.Mazur.WeierstrassDividedClosedClosingPolygonUnion
+public import FLT.Mazur.WeierstrassDividedClosedInfinityPolygonImage
 public import FLT.Mazur.WeierstrassDividedClosedPolygonCompatibility
 public import FLT.Mazur.WeierstrassDividedClosedPolygonDescent
 public import FLT.Mazur.WeierstrassDividedClosedTerminalNormalization
@@ -13235,6 +13258,7 @@ public import FLT.Mazur.WeierstrassModificationXExtendedCastEvaluation
 public import FLT.Mazur.WeierstrassModificationXExtendedNormalEvaluation
 public import FLT.Mazur.WeierstrassModificationXFactorGapUnits
 public import FLT.Mazur.WeierstrassModificationXFactorRatioBoundary
+public import FLT.Mazur.WeierstrassModificationXFactorRatioChartImage
 public import FLT.Mazur.WeierstrassModificationXFactorRatioInfinityBoundary
 public import FLT.Mazur.WeierstrassModificationXFactorRatioLaurentCoefficient
 public import FLT.Mazur.WeierstrassModificationXFactorRatioLaurentEquiv
@@ -13876,6 +13900,7 @@ public import FLT.Mazur.WeierstrassSplitNodalChartGroup
 public import FLT.Mazur.WeierstrassSplitNodalChartParameters
 public import FLT.Mazur.WeierstrassSplitNodalFieldSmooth
 public import FLT.Mazur.WeierstrassSplitNodalGroupCoordinates
+public import FLT.Mazur.WeierstrassSplitNodalInfinityFactorRatio
 public import FLT.Mazur.WeierstrassSplitNodalInversion
 public import FLT.Mazur.WeierstrassSplitNodalLaurent
 public import FLT.Mazur.WeierstrassSplitNodalLaurentCoefficient
