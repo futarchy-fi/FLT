@@ -13585,6 +13585,7 @@ public import FLT.Mazur.WeierstrassRetainedFixedEdgeUnit
 public import FLT.Mazur.WeierstrassRetainedFixedNaturality
 public import FLT.Mazur.WeierstrassRetainedFixedPolygon
 public import FLT.Mazur.WeierstrassRetainedFixedSmoothing
+public import FLT.Mazur.WeierstrassRetainedFixedSmoothingIso
 public import FLT.Mazur.WeierstrassRetainedFixedTerminalEdges
 public import FLT.Mazur.WeierstrassRetainedNodeFactor
 public import FLT.Mazur.WeierstrassRetainedNodeFactorNaturality
