@@ -11774,6 +11774,7 @@ public import FLT.Mazur.WeierstrassDividedExteriorTerminalExclusions
 public import FLT.Mazur.WeierstrassDividedExteriorTerminalIntersection
 public import FLT.Mazur.WeierstrassDividedExteriorTerminalSupport
 public import FLT.Mazur.WeierstrassDividedExteriorYBoundary
+public import FLT.Mazur.WeierstrassDividedFactorRatioInitialOverlap
 public import FLT.Mazur.WeierstrassDividedFactorRatioPolygonMaps
 public import FLT.Mazur.WeierstrassDividedFaithfulActionDescent
 public import FLT.Mazur.WeierstrassDividedFinalAdjacentComponents
