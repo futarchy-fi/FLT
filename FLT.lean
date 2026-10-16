@@ -13061,6 +13061,7 @@ public import FLT.Mazur.WeierstrassModificationXSaturation
 public import FLT.Mazur.WeierstrassModificationXScaleOneEquiv
 public import FLT.Mazur.WeierstrassModificationXScaleOneMaps
 public import FLT.Mazur.WeierstrassModificationXScaleOneTensor
+public import FLT.Mazur.WeierstrassModificationXScaleTransport
 public import FLT.Mazur.WeierstrassModificationXShear
 public import FLT.Mazur.WeierstrassModificationXSlopeOpen
 public import FLT.Mazur.WeierstrassModificationXSmallIncidenceUniqueness
