@@ -3486,6 +3486,7 @@ public import FLT.Mazur.BaseOpenHilbertOriginalInvariantFunctions
 public import FLT.Mazur.BaseOpenHilbertRelationOpenSections
 public import FLT.Mazur.BaseOpenHilbertRestrictedRelation
 public import FLT.Mazur.BinaryOpenDescent
+public import FLT.Mazur.BivariateCoordinateDifference
 public import FLT.Mazur.BlowupFractionActionCover
 public import FLT.Mazur.BlowupFractionChart
 public import FLT.Mazur.BlowupFractionChartExt
