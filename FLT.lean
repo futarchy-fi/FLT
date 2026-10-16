@@ -6644,6 +6644,7 @@ public import FLT.Mazur.NodalFiberUnitScalingNaturality
 public import FLT.Mazur.NodalFiberUnitScalingParameters
 public import FLT.Mazur.NodalFiberUnitScalingPunctureRange
 public import FLT.Mazur.NodalFiberZeroTangentFraction
+public import FLT.Mazur.NodalFiberZeroTangentMobiusMaps
 public import FLT.Mazur.NodalGenusOneBaseChange
 public import FLT.Mazur.NodalGeometricFiberGenus
 public import FLT.Mazur.NodeBranchPushout
