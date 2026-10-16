@@ -3074,6 +3074,7 @@ public import FLT.Mazur.AffineOverlapUnitDetection
 public import FLT.Mazur.AffinePairPullbackSections
 public import FLT.Mazur.AffinePairUnitTransport
 public import FLT.Mazur.AffinePicardComparison
+public import FLT.Mazur.AffinePicardSectionCoordinates
 public import FLT.Mazur.AffinePicardSections
 public import FLT.Mazur.AffinePieceSectionLocalization
 public import FLT.Mazur.AffinePreimageRestrictionPushout
