@@ -5789,6 +5789,7 @@ public import FLT.Mazur.HilbertInvariantPrincipalProjection
 public import FLT.Mazur.HilbertInvariantRegularNorm
 public import FLT.Mazur.HilbertJointGroundFullInterior
 public import FLT.Mazur.HilbertJointGroundInvariantOpen
+public import FLT.Mazur.HilbertJointOrbitBoundaryLifts
 public import FLT.Mazur.HilbertJointStableSourceNeighborhoods
 public import FLT.Mazur.HilbertLocalResidueBasis
 public import FLT.Mazur.HilbertLocalizationIsomorphismOpen
