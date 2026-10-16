@@ -6669,6 +6669,7 @@ public import FLT.Mazur.NodalFiberTangentFraction
 public import FLT.Mazur.NodalFiberTangentMobiusEquiv
 public import FLT.Mazur.NodalFiberTangentMobiusGeometry
 public import FLT.Mazur.NodalFiberTangentMobiusMaps
+public import FLT.Mazur.NodalFiberTangentMobiusNaturality
 public import FLT.Mazur.NodalFiberUnitComparison
 public import FLT.Mazur.NodalFiberUnitScaling
 public import FLT.Mazur.NodalFiberUnitScalingBoundary
