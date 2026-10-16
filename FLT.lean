@@ -10696,6 +10696,7 @@ public import FLT.Mazur.TwistedSectionPullbackMonicity
 public import FLT.Mazur.TwistedSectionPushforward
 public import FLT.Mazur.TwistedSectionPushforwardNaturality
 public import FLT.Mazur.TwistedSectionRegularity
+public import FLT.Mazur.TwoCoordinateLocalSocle
 public import FLT.Mazur.TwoCoordinateTorsionSocle
 public import FLT.Mazur.TwoGeneratorRelationBaseChange
 public import FLT.Mazur.TwoGeneratorRelationKernelBaseChange
