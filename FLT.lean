@@ -7915,6 +7915,7 @@ public import FLT.Mazur.PolygonCompleteIdentityTopNodeBoundary
 public import FLT.Mazur.PolygonCompleteIdentityTopObstruction
 public import FLT.Mazur.PolygonCompleteIdentityTopObstructionCocycle
 public import FLT.Mazur.PolygonCompleteIdentityTopPointCocycle
+public import FLT.Mazur.PolygonCompleteIdentityTopResidualTarget
 public import FLT.Mazur.PolygonCompleteIdentityUnitCoherence
 public import FLT.Mazur.PolygonCompleteLineCohomology
 public import FLT.Mazur.PolygonCompleteLineHomExt
