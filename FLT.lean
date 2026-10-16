@@ -4685,6 +4685,7 @@ public import FLT.Mazur.EquivalenceRelationLabelOpenCharts
 public import FLT.Mazur.EquivalenceRelationMixedChartDescent
 public import FLT.Mazur.EquivalenceRelationMixedChartLiftDifference
 public import FLT.Mazur.EquivalenceRelationMixedChartProjections
+public import FLT.Mazur.EquivalenceRelationMixedChartRestriction
 public import FLT.Mazur.EquivalenceRelationMixedFrameCardinality
 public import FLT.Mazur.EquivalenceRelationMixedFrameComparison
 public import FLT.Mazur.EquivalenceRelationMixedFrameLabelChange
