@@ -4643,6 +4643,7 @@ public import FLT.Mazur.EquivalenceRelationFrameRebaseLaws
 public import FLT.Mazur.EquivalenceRelationNormalizedActionComplete
 public import FLT.Mazur.EquivalenceRelationNormalizedActionGraphs
 public import FLT.Mazur.EquivalenceRelationNormalizedActionRelation
+public import FLT.Mazur.EquivalenceRelationNormalizedCompleteRelation
 public import FLT.Mazur.EquivalenceRelationNormalizedFrameAction
 public import FLT.Mazur.EquivalenceRelationNormalizedFrameComparison
 public import FLT.Mazur.EquivalenceRelationNormalizedFrameCover
