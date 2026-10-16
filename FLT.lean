@@ -6727,6 +6727,7 @@ public import FLT.Mazur.NodePuncturedDenominatorRestriction
 public import FLT.Mazur.NodeQuotient
 public import FLT.Mazur.NodeRelationPolynomialPresentation
 public import FLT.Mazur.NodeSmoothLocus
+public import FLT.Mazur.NodeSocleLocalization
 public import FLT.Mazur.NodeTangentAlgebra
 public import FLT.Mazur.NodeTangentCechCocycle
 public import FLT.Mazur.NodeTangentCoefficientCover
