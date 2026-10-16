@@ -7903,6 +7903,7 @@ public import FLT.Mazur.PolygonCompletePointCubicChartAffinization
 public import FLT.Mazur.PolygonCompletePointCubicChartFunctions
 public import FLT.Mazur.PolygonCompletePointCubicChartRatios
 public import FLT.Mazur.PolygonCompletePointCubicChartSquare
+public import FLT.Mazur.PolygonCompletePointCubicComplementComparison
 public import FLT.Mazur.PolygonCompletePointCubicFactorization
 public import FLT.Mazur.PolygonCompletePointCubicPreimages
 public import FLT.Mazur.PolygonCompletePointCubicRelation
