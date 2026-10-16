@@ -12422,6 +12422,7 @@ public import FLT.Mazur.WeierstrassDividedResidueOrderedNormalization
 public import FLT.Mazur.WeierstrassDividedResidueSplitCubic
 public import FLT.Mazur.WeierstrassDividedResidueTangentNormalization
 public import FLT.Mazur.WeierstrassDividedRetainedChartIso
+public import FLT.Mazur.WeierstrassDividedRetainedChartOpen
 public import FLT.Mazur.WeierstrassDividedRetainedChartRestriction
 public import FLT.Mazur.WeierstrassDividedRetainedClosingIso
 public import FLT.Mazur.WeierstrassDividedRetainedClosingRestriction
