@@ -7877,6 +7877,7 @@ public import FLT.Mazur.PolygonCompleteIdentityTopActionRestriction
 public import FLT.Mazur.PolygonCompleteIdentityTopBoundary
 public import FLT.Mazur.PolygonCompleteIdentityTopBranchOriginal
 public import FLT.Mazur.PolygonCompleteIdentityTopChartAmbientErrors
+public import FLT.Mazur.PolygonCompleteIdentityTopChartAmbientGenerators
 public import FLT.Mazur.PolygonCompleteIdentityTopChartAmbientSocle
 public import FLT.Mazur.PolygonCompleteIdentityTopChartAmbientSource
 public import FLT.Mazur.PolygonCompleteIdentityTopChartAmbientTarget
