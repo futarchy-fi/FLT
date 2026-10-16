@@ -8785,6 +8785,7 @@ public import FLT.Mazur.PrincipalBipartiteEquationStages
 public import FLT.Mazur.PrincipalBipartiteLimits
 public import FLT.Mazur.PrincipalBipartiteRelations
 public import FLT.Mazur.PrincipalBipartiteStages
+public import FLT.Mazur.PrincipalBoundaryNumeratorSolutions
 public import FLT.Mazur.PrincipalChartIntegerDescent
 public import FLT.Mazur.PrincipalChartOpenImmersion
 public import FLT.Mazur.PrincipalClosedCohomology
