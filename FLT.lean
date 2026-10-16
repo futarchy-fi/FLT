@@ -7728,6 +7728,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstSourcePoleCubic
 public import FLT.Mazur.PolygonCompleteIdentityFirstSourcePoleGeometry
 public import FLT.Mazur.PolygonCompleteIdentityFirstSourcePoleMaps
 public import FLT.Mazur.PolygonCompleteIdentityFirstSourceSocleLocalization
+public import FLT.Mazur.PolygonCompleteIdentityFirstSourceTargetComplement
 public import FLT.Mazur.PolygonCompleteIdentityFirstSourceZeroCubic
 public import FLT.Mazur.PolygonCompleteIdentityFlatOpenLift
 public import FLT.Mazur.PolygonCompleteIdentityGenericAmbient
