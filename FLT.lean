@@ -7799,6 +7799,7 @@ public import FLT.Mazur.PolygonCompletePointSmoothIso
 public import FLT.Mazur.PolygonCompletePointSpecifiedBasis
 public import FLT.Mazur.PolygonCompletePointStageCubicRatios
 public import FLT.Mazur.PolygonCompletePointStageLineComparison
+public import FLT.Mazur.PolygonCompletePointStagePoleCoefficients
 public import FLT.Mazur.PolygonCompletePointStagePoleSections
 public import FLT.Mazur.PolygonCompletePointStagePowerComparison
 public import FLT.Mazur.PolygonCompletePointSurjective
