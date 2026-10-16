@@ -11928,6 +11928,7 @@ public import FLT.Mazur.WeierstrassDividedInitialIncidenceInfinity
 public import FLT.Mazur.WeierstrassDividedInitialIncidenceLine
 public import FLT.Mazur.WeierstrassDividedInitialIndexedNodeCover
 public import FLT.Mazur.WeierstrassDividedInitialInfinityPreimage
+public import FLT.Mazur.WeierstrassDividedInitialInfinityTransition
 public import FLT.Mazur.WeierstrassDividedInitialLaurentParameter
 public import FLT.Mazur.WeierstrassDividedInitialLineBoundary
 public import FLT.Mazur.WeierstrassDividedInitialLineIntersection
@@ -12513,6 +12514,7 @@ public import FLT.Mazur.WeierstrassDividedZeroMobiusPolygonBoundary
 public import FLT.Mazur.WeierstrassDividedZeroNodalGeometry
 public import FLT.Mazur.WeierstrassDividedZeroNodalGluing
 public import FLT.Mazur.WeierstrassDividedZeroNodalProjective
+public import FLT.Mazur.WeierstrassDividedZeroOriginalInfinityNormalization
 public import FLT.Mazur.WeierstrassDividedZeroResidueAtlas
 public import FLT.Mazur.WeierstrassDividedZeroRetentionIntersection
 public import FLT.Mazur.WeierstrassDividedZeroSlopeContraction
@@ -13010,6 +13012,8 @@ public import FLT.Mazur.WeierstrassModificationXIncidenceNodeMap
 public import FLT.Mazur.WeierstrassModificationXIncidenceNodeRestriction
 public import FLT.Mazur.WeierstrassModificationXIncidenceRegular
 public import FLT.Mazur.WeierstrassModificationXIncidenceSectionMaps
+public import FLT.Mazur.WeierstrassModificationXInitialInfinityTensor
+public import FLT.Mazur.WeierstrassModificationXInitialInfinityTransition
 public import FLT.Mazur.WeierstrassModificationXInitialPolygonBoundary
 public import FLT.Mazur.WeierstrassModificationXInitialPolygonChart
 public import FLT.Mazur.WeierstrassModificationXInitialTerminalComparison
@@ -13092,6 +13096,7 @@ public import FLT.Mazur.WeierstrassModificationXSaturation
 public import FLT.Mazur.WeierstrassModificationXScaleOneEquiv
 public import FLT.Mazur.WeierstrassModificationXScaleOneMaps
 public import FLT.Mazur.WeierstrassModificationXScaleOneTensor
+public import FLT.Mazur.WeierstrassModificationXScaleTransport
 public import FLT.Mazur.WeierstrassModificationXShear
 public import FLT.Mazur.WeierstrassModificationXSlopeOpen
 public import FLT.Mazur.WeierstrassModificationXSmallIncidenceUniqueness
@@ -13111,6 +13116,7 @@ public import FLT.Mazur.WeierstrassModificationXTensorTerminalCoordinates
 public import FLT.Mazur.WeierstrassModificationXTensorTerminalLaurent
 public import FLT.Mazur.WeierstrassModificationXTotalTransform
 public import FLT.Mazur.WeierstrassModificationXZeroIdealBoundary
+public import FLT.Mazur.WeierstrassModificationXZeroInfinityPullback
 public import FLT.Mazur.WeierstrassModificationXZeroInfinityTangent
 public import FLT.Mazur.WeierstrassModificationXZeroInitialPolygon
 public import FLT.Mazur.WeierstrassModificationXZeroMobiusChart
@@ -13126,6 +13132,10 @@ public import FLT.Mazur.WeierstrassModificationXZeroResidueGeometry
 public import FLT.Mazur.WeierstrassModificationXZeroResidueInfinity
 public import FLT.Mazur.WeierstrassModificationXZeroResidueLaurent
 public import FLT.Mazur.WeierstrassModificationXZeroResidueSmooth
+public import FLT.Mazur.WeierstrassModificationXZeroScaleBaseChange
+public import FLT.Mazur.WeierstrassModificationXZeroScaleInfinityEvaluation
+public import FLT.Mazur.WeierstrassModificationXZeroScaleInfinityGeometry
+public import FLT.Mazur.WeierstrassModificationXZeroScaleLaurentNormalization
 public import FLT.Mazur.WeierstrassModificationYAlgebra
 public import FLT.Mazur.WeierstrassModificationYCompatibility
 public import FLT.Mazur.WeierstrassModificationYContractionOverlap
