@@ -8642,6 +8642,7 @@ public import FLT.Mazur.PolygonTopNodeBoundary
 public import FLT.Mazur.PolygonTopNodeEndomorphism
 public import FLT.Mazur.PolygonTopNodeLaurent
 public import FLT.Mazur.PolygonTopNodeReduction
+public import FLT.Mazur.PolygonTopNodeTangentBoundary
 public import FLT.Mazur.PolygonTopNodeTangentEquiv
 public import FLT.Mazur.PolygonTopNodeTangentLift
 public import FLT.Mazur.PolygonTopOrderBoundaryRigidity
