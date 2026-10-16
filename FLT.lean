@@ -9932,6 +9932,7 @@ public import FLT.Mazur.SectionGradedUnit
 public import FLT.Mazur.SectionKernelLocal
 public import FLT.Mazur.SectionLiftIdeal
 public import FLT.Mazur.SectionLiftIdealAlgebra
+public import FLT.Mazur.SectionLiftSourceCertificate
 public import FLT.Mazur.SectionLineChartOverlap
 public import FLT.Mazur.SectionLinePointBaseChange
 public import FLT.Mazur.SectionLinePointOverlapEquality
