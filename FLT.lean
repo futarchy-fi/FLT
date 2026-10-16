@@ -9743,6 +9743,7 @@ public import FLT.Mazur.SchemeReducedStructureSheaf
 public import FLT.Mazur.SchemeRefinementReconstruction
 public import FLT.Mazur.SchemeRegularNormProducts
 public import FLT.Mazur.SchemeRelationArrowTransport
+public import FLT.Mazur.SchemeRelationCoefficientDiagram
 public import FLT.Mazur.SchemeRelationCoverSourceFunctions
 public import FLT.Mazur.SchemeRelationDoubleRestriction
 public import FLT.Mazur.SchemeRelationEtaleBranchPropagation
