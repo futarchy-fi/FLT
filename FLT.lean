@@ -7681,6 +7681,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstPolePatchExtraction
 public import FLT.Mazur.PolygonCompleteIdentityFirstPolePatchGeometry
 public import FLT.Mazur.PolygonCompleteIdentityFirstPolePatchMaps
 public import FLT.Mazur.PolygonCompleteIdentityFirstPolePatchNode
+public import FLT.Mazur.PolygonCompleteIdentityFirstPoleSecantCoverage
 public import FLT.Mazur.PolygonCompleteIdentityFirstPoleSourceGeometry
 public import FLT.Mazur.PolygonCompleteIdentityFirstPoleSourceReduction
 public import FLT.Mazur.PolygonCompleteIdentityFirstPoleTargetCubic
