@@ -4646,6 +4646,9 @@ public import FLT.Mazur.EquivalenceRelationBoundaryCoefficients
 public import FLT.Mazur.EquivalenceRelationBoundaryLabelChange
 public import FLT.Mazur.EquivalenceRelationBoundaryLabelCoefficients
 public import FLT.Mazur.EquivalenceRelationBoundaryOpenCoefficients
+public import FLT.Mazur.EquivalenceRelationBoundarySubframe
+public import FLT.Mazur.EquivalenceRelationBoundarySubframeCoefficients
+public import FLT.Mazur.EquivalenceRelationBoundarySubframeGeometry
 public import FLT.Mazur.EquivalenceRelationCompleteClosedLocus
 public import FLT.Mazur.EquivalenceRelationCompleteFiberComparison
 public import FLT.Mazur.EquivalenceRelationCompleteFiberSplit
@@ -4653,6 +4656,7 @@ public import FLT.Mazur.EquivalenceRelationCompletePointLocus
 public import FLT.Mazur.EquivalenceRelationCompleteRestrictionNaturality
 public import FLT.Mazur.EquivalenceRelationCompleteSourceComparison
 public import FLT.Mazur.EquivalenceRelationCompleteSourceRestriction
+public import FLT.Mazur.EquivalenceRelationCompleteSubframe
 public import FLT.Mazur.EquivalenceRelationCompleteTestCoefficients
 public import FLT.Mazur.EquivalenceRelationCompleteTestPartition
 public import FLT.Mazur.EquivalenceRelationConnectedCompleteTests
@@ -4683,9 +4687,13 @@ public import FLT.Mazur.EquivalenceRelationNormalizedLabelChange
 public import FLT.Mazur.EquivalenceRelationNormalizedLabelTransport
 public import FLT.Mazur.EquivalenceRelationNormalizedOrbitNeighborhood
 public import FLT.Mazur.EquivalenceRelationNormalizedScalarComplete
+public import FLT.Mazur.EquivalenceRelationNormalizedSubframe
 public import FLT.Mazur.EquivalenceRelationSectionRebase
 public import FLT.Mazur.EquivalenceRelationSourceRefinement
 public import FLT.Mazur.EquivalenceRelationSourceRestriction
+public import FLT.Mazur.EquivalenceRelationSubframeComparison
+public import FLT.Mazur.EquivalenceRelationSubframeGraphs
+public import FLT.Mazur.EquivalenceRelationSubframeSourceComparison
 public import FLT.Mazur.EtaleAffineSpaceDimension
 public import FLT.Mazur.EtaleAlgebraFiniteBranch
 public import FLT.Mazur.EtaleAlgebraReduced
@@ -9358,6 +9366,7 @@ public import FLT.Mazur.RelativeComparisonFiberIso
 public import FLT.Mazur.RelativeCompleteFrameComparison
 public import FLT.Mazur.RelativeCompleteFrameFiberIso
 public import FLT.Mazur.RelativeCompleteGeometricTuple
+public import FLT.Mazur.RelativeCompleteSubframe
 public import FLT.Mazur.RelativeCoproductComponentPullback
 public import FLT.Mazur.RelativeCoproductPullCover
 public import FLT.Mazur.RelativeCyclicSubgroup
@@ -9370,6 +9379,7 @@ public import FLT.Mazur.RelativeDirectImageOpenResolution
 public import FLT.Mazur.RelativeDistinctAffineEnvelope
 public import FLT.Mazur.RelativeDistinctEtale
 public import FLT.Mazur.RelativeDistinctFreeAction
+public import FLT.Mazur.RelativeDistinctSubframe
 public import FLT.Mazur.RelativeDistinctTupleLift
 public import FLT.Mazur.RelativeDistinctTuples
 public import FLT.Mazur.RelativeEtaleFiniteBranchCover
@@ -11791,6 +11801,13 @@ public import FLT.Mazur.WeierstrassDividedExteriorTerminalExclusions
 public import FLT.Mazur.WeierstrassDividedExteriorTerminalIntersection
 public import FLT.Mazur.WeierstrassDividedExteriorTerminalSupport
 public import FLT.Mazur.WeierstrassDividedExteriorYBoundary
+public import FLT.Mazur.WeierstrassDividedFactorRatioAffineInfinity
+public import FLT.Mazur.WeierstrassDividedFactorRatioAffineNaturality
+public import FLT.Mazur.WeierstrassDividedFactorRatioInitialAffine
+public import FLT.Mazur.WeierstrassDividedFactorRatioInitialOverlap
+public import FLT.Mazur.WeierstrassDividedFactorRatioPolygonMaps
+public import FLT.Mazur.WeierstrassDividedFactorRatioPolygonNaturality
+public import FLT.Mazur.WeierstrassDividedFactorRatioRetainedBoundary
 public import FLT.Mazur.WeierstrassDividedFaithfulActionDescent
 public import FLT.Mazur.WeierstrassDividedFinalAdjacentComponents
 public import FLT.Mazur.WeierstrassDividedFinalAdjacentConicBranches
@@ -12945,9 +12962,12 @@ public import FLT.Mazur.WeierstrassModificationReesYScaleScheme
 public import FLT.Mazur.WeierstrassModificationShearLocalization
 public import FLT.Mazur.WeierstrassModificationShearOverlap
 public import FLT.Mazur.WeierstrassModificationXAlgebra
+public import FLT.Mazur.WeierstrassModificationXArithmeticFactorRatioLaurent
+public import FLT.Mazur.WeierstrassModificationXArithmeticFactorRatioPuncture
 public import FLT.Mazur.WeierstrassModificationXArithmeticIncidenceOpen
 public import FLT.Mazur.WeierstrassModificationXArithmeticIncidencePullback
 public import FLT.Mazur.WeierstrassModificationXArithmeticInitialCover
+public import FLT.Mazur.WeierstrassModificationXArithmeticInitialFactorRatio
 public import FLT.Mazur.WeierstrassModificationXArithmeticInitialMobius
 public import FLT.Mazur.WeierstrassModificationXArithmeticInitialNode
 public import FLT.Mazur.WeierstrassModificationXArithmeticInitialNodeRestriction
@@ -12967,6 +12987,8 @@ public import FLT.Mazur.WeierstrassModificationXArithmeticTensorRestrictionSquar
 public import FLT.Mazur.WeierstrassModificationXArithmeticTerminalLaurentRestriction
 public import FLT.Mazur.WeierstrassModificationXBaseChange
 public import FLT.Mazur.WeierstrassModificationXBaseChangeGenerators
+public import FLT.Mazur.WeierstrassModificationXCanonicalFactorRatioChart
+public import FLT.Mazur.WeierstrassModificationXCanonicalFactorRatioTransport
 public import FLT.Mazur.WeierstrassModificationXCanonicalNodeCoefficientNaturality
 public import FLT.Mazur.WeierstrassModificationXCanonicalNodeCoefficientTransport
 public import FLT.Mazur.WeierstrassModificationXCoefficientRingMap
@@ -13005,8 +13027,10 @@ public import FLT.Mazur.WeierstrassModificationXFactorRatioBoundary
 public import FLT.Mazur.WeierstrassModificationXFactorRatioInfinityBoundary
 public import FLT.Mazur.WeierstrassModificationXFactorRatioLaurentCoefficient
 public import FLT.Mazur.WeierstrassModificationXFactorRatioLaurentEquiv
+public import FLT.Mazur.WeierstrassModificationXFactorRatioLaurentNaturality
 public import FLT.Mazur.WeierstrassModificationXFactorRatioLaurentUnit
 public import FLT.Mazur.WeierstrassModificationXFactorRatioMap
+public import FLT.Mazur.WeierstrassModificationXFactorRatioTerminalComparison
 public import FLT.Mazur.WeierstrassModificationXFiberBranches
 public import FLT.Mazur.WeierstrassModificationXFiberConic
 public import FLT.Mazur.WeierstrassModificationXFiberConicGeometry
@@ -13135,6 +13159,7 @@ public import FLT.Mazur.WeierstrassModificationXOverlap
 public import FLT.Mazur.WeierstrassModificationXOverlapRatioReflection
 public import FLT.Mazur.WeierstrassModificationXPolynomialCoefficientNaturality
 public import FLT.Mazur.WeierstrassModificationXPolynomialFactorRatioBoundary
+public import FLT.Mazur.WeierstrassModificationXPolynomialFactorRatioChartNaturality
 public import FLT.Mazur.WeierstrassModificationXPolynomialFactorRatioCoefficient
 public import FLT.Mazur.WeierstrassModificationXPolynomialFactorRatioEquiv
 public import FLT.Mazur.WeierstrassModificationXPolynomialFactorRatioGeometry
