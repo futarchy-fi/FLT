@@ -9933,6 +9933,7 @@ public import FLT.Mazur.SectionKernelLocal
 public import FLT.Mazur.SectionLiftCertificatePolynomial
 public import FLT.Mazur.SectionLiftIdeal
 public import FLT.Mazur.SectionLiftIdealAlgebra
+public import FLT.Mazur.SectionLiftSimultaneousCertificate
 public import FLT.Mazur.SectionLiftSourceCertificate
 public import FLT.Mazur.SectionLineChartOverlap
 public import FLT.Mazur.SectionLinePointBaseChange
