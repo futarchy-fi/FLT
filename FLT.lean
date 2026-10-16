@@ -7884,6 +7884,7 @@ public import FLT.Mazur.PolygonCompleteIdentityTopChartBranchImage
 public import FLT.Mazur.PolygonCompleteIdentityTopChartBranchQuotient
 public import FLT.Mazur.PolygonCompleteIdentityTopChartClosedLayer
 public import FLT.Mazur.PolygonCompleteIdentityTopChartClosedPresentation
+public import FLT.Mazur.PolygonCompleteIdentityTopChartClosedSplit
 public import FLT.Mazur.PolygonCompleteIdentityTopChartFiberSocle
 public import FLT.Mazur.PolygonCompleteIdentityTopChartKernelPowers
 public import FLT.Mazur.PolygonCompleteIdentityTopChartLocalEquations
