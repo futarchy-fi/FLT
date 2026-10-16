@@ -12952,6 +12952,7 @@ public import FLT.Mazur.WeierstrassModificationXContractionOverlap
 public import FLT.Mazur.WeierstrassModificationXCoordinateCasts
 public import FLT.Mazur.WeierstrassModificationXExtendedCastEvaluation
 public import FLT.Mazur.WeierstrassModificationXExtendedNormalEvaluation
+public import FLT.Mazur.WeierstrassModificationXFactorGapUnits
 public import FLT.Mazur.WeierstrassModificationXFiberBranches
 public import FLT.Mazur.WeierstrassModificationXFiberConic
 public import FLT.Mazur.WeierstrassModificationXFiberConicGeometry
