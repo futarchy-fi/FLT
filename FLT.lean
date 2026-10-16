@@ -2640,6 +2640,7 @@ public import FLT.Mazur.AffineCanonicalOverlapRecognition
 public import FLT.Mazur.AffineCartesianPreimageSections
 public import FLT.Mazur.AffineCartesianSectionPushout
 public import FLT.Mazur.AffineCartesianSectionScalars
+public import FLT.Mazur.AffineChartOpenSectionTransport
 public import FLT.Mazur.AffineChartResidueEquation
 public import FLT.Mazur.AffineChartResidueRetraction
 public import FLT.Mazur.AffineChartSectionLineRecovery
@@ -4017,6 +4018,8 @@ public import FLT.Mazur.DisjointSectionCoverSplitting
 public import FLT.Mazur.DisjointSectionGeometricTranslation
 public import FLT.Mazur.DisjointSectionPicardGluing
 public import FLT.Mazur.DisjointStructureCohomology
+public import FLT.Mazur.DivisorAffineLocalizedNumerator
+public import FLT.Mazur.DivisorAffineNumeratorOverlap
 public import FLT.Mazur.DivisorBaseChangeRank
 public import FLT.Mazur.DivisorCanonicalComposition
 public import FLT.Mazur.DivisorCanonicalOperations
@@ -4088,6 +4091,7 @@ public import FLT.Mazur.DivisorSectionGeneratorOpen
 public import FLT.Mazur.DivisorSectionRigidity
 public import FLT.Mazur.DivisorStalkLength
 public import FLT.Mazur.DivisorTensorNumeratorComparison
+public import FLT.Mazur.DivisorTensorNumeratorOverlap
 public import FLT.Mazur.DivisorTensorSequence
 public import FLT.Mazur.DivisorTranslationLine
 public import FLT.Mazur.DivisorTwistedDegree
@@ -6200,6 +6204,7 @@ public import FLT.Mazur.LaurentSquareZeroNaturality
 public import FLT.Mazur.LaurentSquareZeroReciprocal
 public import FLT.Mazur.LaurentTensor
 public import FLT.Mazur.LaurentUnitCoefficientPoint
+public import FLT.Mazur.LaurentUnitMarkingCancellation
 public import FLT.Mazur.LaurentUnitMultiplication
 public import FLT.Mazur.LaurentUnitPointNaturality
 public import FLT.Mazur.LaurentUnitPoints
@@ -7744,6 +7749,7 @@ public import FLT.Mazur.PolygonCompletePointCubicSections
 public import FLT.Mazur.PolygonCompletePointDimensions
 public import FLT.Mazur.PolygonCompletePointDivisorComparison
 public import FLT.Mazur.PolygonCompletePointExactMonomials
+public import FLT.Mazur.PolygonCompletePointFirstFiniteNumerators
 public import FLT.Mazur.PolygonCompletePointFirstNodeSubstitution
 public import FLT.Mazur.PolygonCompletePointFirstOrderAffineFrames
 public import FLT.Mazur.PolygonCompletePointFirstOrderFactor
@@ -7786,16 +7792,21 @@ public import FLT.Mazur.PolygonCompletePointIrreducibleAffine
 public import FLT.Mazur.PolygonCompletePointLeadingClasses
 public import FLT.Mazur.PolygonCompletePointLeadingProducts
 public import FLT.Mazur.PolygonCompletePointMarkedCoordinates
+public import FLT.Mazur.PolygonCompletePointMarkedLaurentNumerators
 public import FLT.Mazur.PolygonCompletePointMarkingRatios
 public import FLT.Mazur.PolygonCompletePointMonomialBaseChange
 public import FLT.Mazur.PolygonCompletePointMonomialBasis
 public import FLT.Mazur.PolygonCompletePointMonomialIndependence
 public import FLT.Mazur.PolygonCompletePointNewSections
+public import FLT.Mazur.PolygonCompletePointNodeBoundedNumerators
 public import FLT.Mazur.PolygonCompletePointNodeLocalization
 public import FLT.Mazur.PolygonCompletePointNodeNumerators
+public import FLT.Mazur.PolygonCompletePointNodePoleEquations
 public import FLT.Mazur.PolygonCompletePointNonsingular
 public import FLT.Mazur.PolygonCompletePointNormalMonomials
 public import FLT.Mazur.PolygonCompletePointNormalizedPoles
+public import FLT.Mazur.PolygonCompletePointNumeratorLaurentBounds
+public import FLT.Mazur.PolygonCompletePointNumeratorLaurentOverlap
 public import FLT.Mazur.PolygonCompletePointOriginAmple
 public import FLT.Mazur.PolygonCompletePointOriginCartesian
 public import FLT.Mazur.PolygonCompletePointOriginCartesianBaseChange
@@ -8291,6 +8302,7 @@ public import FLT.Mazur.PolygonSmoothingFlat
 public import FLT.Mazur.PolygonSmoothingGenericFiber
 public import FLT.Mazur.PolygonSmoothingH1FaithfulDescent
 public import FLT.Mazur.PolygonSmoothingIncomingMarking
+public import FLT.Mazur.PolygonSmoothingLaurentMonomials
 public import FLT.Mazur.PolygonSmoothingLeftPuncture
 public import FLT.Mazur.PolygonSmoothingLocalizedCotangent
 public import FLT.Mazur.PolygonSmoothingLocalizedPolynomials
@@ -10334,6 +10346,7 @@ public import FLT.Mazur.SymmetricAffineLineParameters
 public import FLT.Mazur.TensorAdicSeparation
 public import FLT.Mazur.TensorAlgebraSemilinearEquiv
 public import FLT.Mazur.TensorCoefficientDetection
+public import FLT.Mazur.TensorCoefficientMap
 public import FLT.Mazur.TensorCoefficientSymmetry
 public import FLT.Mazur.TensorEvaluationSemilinear
 public import FLT.Mazur.TensorInjectivityFiniteLength
@@ -10369,6 +10382,7 @@ public import FLT.Mazur.TensorPowerPullbackSquare
 public import FLT.Mazur.TensorPowerReassociation
 public import FLT.Mazur.TensorPullbackComposition
 public import FLT.Mazur.TensorPullbackIdentity
+public import FLT.Mazur.TensorSpectrumExt
 public import FLT.Mazur.TernaryOpenDescent
 public import FLT.Mazur.TildeFiniteFreeLocalization
 public import FLT.Mazur.TildeInvertibleLocal
@@ -11472,6 +11486,7 @@ public import FLT.Mazur.WeierstrassDividedArithmeticLabeledCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticLabeledEarlierTerminal
 public import FLT.Mazur.WeierstrassDividedArithmeticLabeledInitialEdge
 public import FLT.Mazur.WeierstrassDividedArithmeticLabeledInitialOverlap
+public import FLT.Mazur.WeierstrassDividedArithmeticLabeledNodeRestriction
 public import FLT.Mazur.WeierstrassDividedArithmeticLabeledNonadjacent
 public import FLT.Mazur.WeierstrassDividedArithmeticLabeledSeparation
 public import FLT.Mazur.WeierstrassDividedArithmeticLabeledTerminalEdge
@@ -11486,6 +11501,8 @@ public import FLT.Mazur.WeierstrassDividedArithmeticPositiveLabeledCompatibility
 public import FLT.Mazur.WeierstrassDividedArithmeticPositiveLabeledDescent
 public import FLT.Mazur.WeierstrassDividedArithmeticPositiveRetainedCompatibility
 public import FLT.Mazur.WeierstrassDividedArithmeticPositiveUniversal
+public import FLT.Mazur.WeierstrassDividedArithmeticTensorProjection
+public import FLT.Mazur.WeierstrassDividedArithmeticTensorRestriction
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalBranch
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalEvaluationRestriction
@@ -12722,6 +12739,8 @@ public import FLT.Mazur.WeierstrassModificationXArithmeticTensorNodes
 public import FLT.Mazur.WeierstrassModificationXArithmeticTerminalLaurentRestriction
 public import FLT.Mazur.WeierstrassModificationXBaseChange
 public import FLT.Mazur.WeierstrassModificationXBaseChangeGenerators
+public import FLT.Mazur.WeierstrassModificationXCanonicalNodeCoefficientNaturality
+public import FLT.Mazur.WeierstrassModificationXCoefficientRingMap
 public import FLT.Mazur.WeierstrassModificationXCoefficients
 public import FLT.Mazur.WeierstrassModificationXConicBoundaryCharts
 public import FLT.Mazur.WeierstrassModificationXConicBoundaryIntersection
@@ -12833,14 +12852,18 @@ public import FLT.Mazur.WeierstrassModificationXLocalization
 public import FLT.Mazur.WeierstrassModificationXMorphism
 public import FLT.Mazur.WeierstrassModificationXNodeDenominators
 public import FLT.Mazur.WeierstrassModificationXNodeEvaluationNaturality
+public import FLT.Mazur.WeierstrassModificationXNodeForwardCoefficientNaturality
 public import FLT.Mazur.WeierstrassModificationXNodeIncidenceOpen
 public import FLT.Mazur.WeierstrassModificationXNodeInfinityDenominators
+public import FLT.Mazur.WeierstrassModificationXNodeInverseCoefficientNaturality
 public import FLT.Mazur.WeierstrassModificationXNodeInverseEvaluation
 public import FLT.Mazur.WeierstrassModificationXNodeInverseFunctions
 public import FLT.Mazur.WeierstrassModificationXNodeInverseParameter
+public import FLT.Mazur.WeierstrassModificationXNodeOpenCoefficientMap
 public import FLT.Mazur.WeierstrassModificationXNodeOverlap
 public import FLT.Mazur.WeierstrassModificationXNodeOverlapDenominator
 public import FLT.Mazur.WeierstrassModificationXNodeRestriction
+public import FLT.Mazur.WeierstrassModificationXOppositeNodeCoefficientNaturality
 public import FLT.Mazur.WeierstrassModificationXOppositeNodeEquiv
 public import FLT.Mazur.WeierstrassModificationXOppositeNodeGeometry
 public import FLT.Mazur.WeierstrassModificationXOriginalLocalization
@@ -12855,6 +12878,7 @@ public import FLT.Mazur.WeierstrassModificationXPolynomialRoot
 public import FLT.Mazur.WeierstrassModificationXPolynomialSplit
 public import FLT.Mazur.WeierstrassModificationXPresentation
 public import FLT.Mazur.WeierstrassModificationXReesChart
+public import FLT.Mazur.WeierstrassModificationXReflectionCoefficientNaturality
 public import FLT.Mazur.WeierstrassModificationXResidueCastFactorization
 public import FLT.Mazur.WeierstrassModificationXResidueConicContraction
 public import FLT.Mazur.WeierstrassModificationXResidueContraction
@@ -13355,6 +13379,7 @@ public import FLT.Mazur.WeierstrassSuccessiveArithmeticRetractionRestriction
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticSlopeRestriction
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticTensorBranches
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticTensorCoverage
+public import FLT.Mazur.WeierstrassSuccessiveArithmeticTensorRestrictionSquare
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticTerminalLaurentRestriction
 public import FLT.Mazur.WeierstrassSuccessiveCenterAction
 public import FLT.Mazur.WeierstrassSuccessiveCenterScaling
