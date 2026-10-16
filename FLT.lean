@@ -6767,6 +6767,7 @@ public import FLT.Mazur.NodeNormalizationBaseChange
 public import FLT.Mazur.NodePinchingDescent
 public import FLT.Mazur.NodePinchingExistence
 public import FLT.Mazur.NodePoleCoordinateExtraction
+public import FLT.Mazur.NodePoleLocalSecant
 public import FLT.Mazur.NodePoleSecant
 public import FLT.Mazur.NodePolynomialVectorField
 public import FLT.Mazur.NodePuncturedDenominatorRestriction
