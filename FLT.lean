@@ -7782,6 +7782,7 @@ public import FLT.Mazur.PolygonCompletePointMonomialBaseChange
 public import FLT.Mazur.PolygonCompletePointMonomialBasis
 public import FLT.Mazur.PolygonCompletePointMonomialIndependence
 public import FLT.Mazur.PolygonCompletePointNewSections
+public import FLT.Mazur.PolygonCompletePointNodeBoundedNumerators
 public import FLT.Mazur.PolygonCompletePointNodeLocalization
 public import FLT.Mazur.PolygonCompletePointNodeNumerators
 public import FLT.Mazur.PolygonCompletePointNonsingular
