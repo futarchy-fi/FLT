@@ -12777,6 +12777,7 @@ public import FLT.Mazur.WeierstrassModificationXTensorLaurentEvaluation
 public import FLT.Mazur.WeierstrassModificationXTensorOriginal
 public import FLT.Mazur.WeierstrassModificationXTensorOverlapCoordinates
 public import FLT.Mazur.WeierstrassModificationXTensorSmoothInput
+public import FLT.Mazur.WeierstrassModificationXTensorTerminalCoordinates
 public import FLT.Mazur.WeierstrassModificationXTensorTerminalLaurent
 public import FLT.Mazur.WeierstrassModificationXTotalTransform
 public import FLT.Mazur.WeierstrassModificationXZeroNodeOverlap
