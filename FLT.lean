@@ -7789,6 +7789,7 @@ public import FLT.Mazur.PolygonCompletePointFirstCentralCoefficients
 public import FLT.Mazur.PolygonCompletePointFirstConstantEdges
 public import FLT.Mazur.PolygonCompletePointFirstEndpointCoefficients
 public import FLT.Mazur.PolygonCompletePointFirstFiniteNumerators
+public import FLT.Mazur.PolygonCompletePointFirstIncomingTail
 public import FLT.Mazur.PolygonCompletePointFirstMarkingForms
 public import FLT.Mazur.PolygonCompletePointFirstNegativeVanishing
 public import FLT.Mazur.PolygonCompletePointFirstNodeSubstitution
