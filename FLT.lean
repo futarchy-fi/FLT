@@ -12812,6 +12812,7 @@ public import FLT.Mazur.WeierstrassModificationXNodeOpenCoefficientMap
 public import FLT.Mazur.WeierstrassModificationXNodeOverlap
 public import FLT.Mazur.WeierstrassModificationXNodeOverlapDenominator
 public import FLT.Mazur.WeierstrassModificationXNodeRestriction
+public import FLT.Mazur.WeierstrassModificationXOppositeNodeCoefficientNaturality
 public import FLT.Mazur.WeierstrassModificationXOppositeNodeEquiv
 public import FLT.Mazur.WeierstrassModificationXOppositeNodeGeometry
 public import FLT.Mazur.WeierstrassModificationXOriginalLocalization
