@@ -5019,6 +5019,7 @@ public import FLT.Mazur.FinitePolynomialDiagramRefinement
 public import FLT.Mazur.FinitePolynomialEquationSeeds
 public import FLT.Mazur.FinitePolynomialStableRelations
 public import FLT.Mazur.FinitePolynomialStableStages
+public import FLT.Mazur.FinitePowerEqualizer
 public import FLT.Mazur.FinitePresentationHilbertTranslationCover
 public import FLT.Mazur.FinitePresentationIntegerModel
 public import FLT.Mazur.FinitePresentationSurjectiveScalars
