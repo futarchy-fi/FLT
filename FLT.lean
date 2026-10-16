@@ -11722,6 +11722,8 @@ public import FLT.Mazur.WeierstrassDividedArithmeticFactorRatioTriangle
 public import FLT.Mazur.WeierstrassDividedArithmeticFirstRetainedBoundary
 public import FLT.Mazur.WeierstrassDividedArithmeticFirstRetainedFactorRatio
 public import FLT.Mazur.WeierstrassDividedArithmeticFirstRetainedRestriction
+public import FLT.Mazur.WeierstrassDividedArithmeticFixedRetained
+public import FLT.Mazur.WeierstrassDividedArithmeticFixedRetainedRestriction
 public import FLT.Mazur.WeierstrassDividedArithmeticInfinityFactorRatioRestriction
 public import FLT.Mazur.WeierstrassDividedArithmeticInfinityFactorRatioTensorRestriction
 public import FLT.Mazur.WeierstrassDividedArithmeticInfinitySeparation
@@ -11766,8 +11768,10 @@ public import FLT.Mazur.WeierstrassDividedArithmeticPositiveLabeledCompatibility
 public import FLT.Mazur.WeierstrassDividedArithmeticPositiveLabeledDescent
 public import FLT.Mazur.WeierstrassDividedArithmeticPositiveRetainedCompatibility
 public import FLT.Mazur.WeierstrassDividedArithmeticPositiveUniversal
+public import FLT.Mazur.WeierstrassDividedArithmeticRetainedCorrectionFamily
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedPolygon
 public import FLT.Mazur.WeierstrassDividedArithmeticRetainedPolygonSystem
+public import FLT.Mazur.WeierstrassDividedArithmeticStartOneRetained
 public import FLT.Mazur.WeierstrassDividedArithmeticSystemCartesian
 public import FLT.Mazur.WeierstrassDividedArithmeticTensorProjection
 public import FLT.Mazur.WeierstrassDividedArithmeticTensorRestriction
@@ -13528,6 +13532,12 @@ public import FLT.Mazur.WeierstrassRetainedAdjacentRoots
 public import FLT.Mazur.WeierstrassRetainedArithmeticFactorRatio
 public import FLT.Mazur.WeierstrassRetainedArithmeticFactorRatioRestriction
 public import FLT.Mazur.WeierstrassRetainedCoefficientShearChart
+public import FLT.Mazur.WeierstrassRetainedCorrectionTransport
+public import FLT.Mazur.WeierstrassRetainedDepthScale
+public import FLT.Mazur.WeierstrassRetainedFixedBoundary
+public import FLT.Mazur.WeierstrassRetainedFixedEdgeUnit
+public import FLT.Mazur.WeierstrassRetainedFixedNaturality
+public import FLT.Mazur.WeierstrassRetainedFixedPolygon
 public import FLT.Mazur.WeierstrassRetainedFixedSmoothing
 public import FLT.Mazur.WeierstrassRetainedNodeFactor
 public import FLT.Mazur.WeierstrassRetainedNodeFactorNaturality
@@ -13541,6 +13551,7 @@ public import FLT.Mazur.WeierstrassRetainedNodeRootBoundary
 public import FLT.Mazur.WeierstrassRetainedNodeRoots
 public import FLT.Mazur.WeierstrassRetainedNodeRootsNaturality
 public import FLT.Mazur.WeierstrassRetainedRegularCenter
+public import FLT.Mazur.WeierstrassRetainedStartOneQuotient
 public import FLT.Mazur.WeierstrassRootShearCoefficientConditions
 public import FLT.Mazur.WeierstrassRootShearParameterCoefficient
 public import FLT.Mazur.WeierstrassRootShearSlopeInput
