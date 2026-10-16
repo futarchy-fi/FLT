@@ -4024,6 +4024,7 @@ public import FLT.Mazur.DivisorChartNumerator
 public import FLT.Mazur.DivisorClosedCokernel
 public import FLT.Mazur.DivisorCohomologicalDegree
 public import FLT.Mazur.DivisorCokernelProjection
+public import FLT.Mazur.DivisorComparedSectionStep
 public import FLT.Mazur.DivisorComplementCanonical
 public import FLT.Mazur.DivisorComplementCanonicalUnitor
 public import FLT.Mazur.DivisorComplementExactPowers
