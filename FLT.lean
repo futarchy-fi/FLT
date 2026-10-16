@@ -9586,6 +9586,7 @@ public import FLT.Mazur.RelativeFppfSchemeCover
 public import FLT.Mazur.RelativeFppfSurjectivityDetection
 public import FLT.Mazur.RelativeFppfTargetOpen
 public import FLT.Mazur.RelativeFrameCompletenessTransfer
+public import FLT.Mazur.RelativeFrameRankBound
 public import FLT.Mazur.RelativeFrameRelabelCompleteness
 public import FLT.Mazur.RelativeFrameScalarCompleteness
 public import FLT.Mazur.RelativeFrameScalarExtension
