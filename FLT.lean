@@ -6659,6 +6659,7 @@ public import FLT.Mazur.NodalFiberZeroTangentMobiusBoundary
 public import FLT.Mazur.NodalFiberZeroTangentMobiusEquiv
 public import FLT.Mazur.NodalFiberZeroTangentMobiusGeometry
 public import FLT.Mazur.NodalFiberZeroTangentMobiusMaps
+public import FLT.Mazur.NodalFiberZeroTangentMobiusPuncture
 public import FLT.Mazur.NodalGenusOneBaseChange
 public import FLT.Mazur.NodalGeometricFiberGenus
 public import FLT.Mazur.NodeBranchPushout
