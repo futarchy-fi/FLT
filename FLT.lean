@@ -11309,6 +11309,7 @@ public import FLT.Mazur.WeierstrassDividedArithmeticEarlierTerminal
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialBranch
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialComparison
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialCoverage
+public import FLT.Mazur.WeierstrassDividedArithmeticInitialInfinity
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialIntersection
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialLaurent
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialNodeIntersection
