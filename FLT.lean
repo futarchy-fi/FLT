@@ -6207,6 +6207,7 @@ public import FLT.Mazur.LaurentSchemeCoordinates
 public import FLT.Mazur.LaurentSquareZeroCocycle
 public import FLT.Mazur.LaurentSquareZeroCoordinate
 public import FLT.Mazur.LaurentSquareZeroLinearization
+public import FLT.Mazur.LaurentSquareZeroMarking
 public import FLT.Mazur.LaurentSquareZeroNaturality
 public import FLT.Mazur.LaurentSquareZeroReciprocal
 public import FLT.Mazur.LaurentTensor
@@ -6624,7 +6625,9 @@ public import FLT.Mazur.NodalFiberCoefficientRingMap
 public import FLT.Mazur.NodalFiberNodeComparison
 public import FLT.Mazur.NodalFiberParameterTransport
 public import FLT.Mazur.NodalFiberPunctureCoefficientMap
+public import FLT.Mazur.NodalFiberSmoothingComparison
 public import FLT.Mazur.NodalFiberUnitComparison
+public import FLT.Mazur.NodalFiberUnitScaling
 public import FLT.Mazur.NodalGenusOneBaseChange
 public import FLT.Mazur.NodalGeometricFiberGenus
 public import FLT.Mazur.NodeBranchPushout
@@ -7756,13 +7759,17 @@ public import FLT.Mazur.PolygonCompletePointCubicSections
 public import FLT.Mazur.PolygonCompletePointDimensions
 public import FLT.Mazur.PolygonCompletePointDivisorComparison
 public import FLT.Mazur.PolygonCompletePointExactMonomials
+public import FLT.Mazur.PolygonCompletePointFirstAdjacentCoefficients
 public import FLT.Mazur.PolygonCompletePointFirstFiniteNumerators
+public import FLT.Mazur.PolygonCompletePointFirstNegativeVanishing
 public import FLT.Mazur.PolygonCompletePointFirstNodeSubstitution
+public import FLT.Mazur.PolygonCompletePointFirstNumeratorTails
 public import FLT.Mazur.PolygonCompletePointFirstOrderAffineFrames
 public import FLT.Mazur.PolygonCompletePointFirstOrderFactor
 public import FLT.Mazur.PolygonCompletePointFirstOrderIdeal
 public import FLT.Mazur.PolygonCompletePointFirstOrderLine
 public import FLT.Mazur.PolygonCompletePointFirstOrderOpen
+public import FLT.Mazur.PolygonCompletePointFirstPolynomialNumerator
 public import FLT.Mazur.PolygonCompletePointFunctionDimensions
 public import FLT.Mazur.PolygonCompletePointFunctionNumerators
 public import FLT.Mazur.PolygonCompletePointGenericComparison
@@ -7806,6 +7813,7 @@ public import FLT.Mazur.PolygonCompletePointMonomialBasis
 public import FLT.Mazur.PolygonCompletePointMonomialIndependence
 public import FLT.Mazur.PolygonCompletePointNewSections
 public import FLT.Mazur.PolygonCompletePointNodeBoundedNumerators
+public import FLT.Mazur.PolygonCompletePointNodeLaurentReconstruction
 public import FLT.Mazur.PolygonCompletePointNodeLocalization
 public import FLT.Mazur.PolygonCompletePointNodeNumerators
 public import FLT.Mazur.PolygonCompletePointNodePoleEquations
@@ -7814,6 +7822,7 @@ public import FLT.Mazur.PolygonCompletePointNormalMonomials
 public import FLT.Mazur.PolygonCompletePointNormalizedPoles
 public import FLT.Mazur.PolygonCompletePointNumeratorLaurentBounds
 public import FLT.Mazur.PolygonCompletePointNumeratorLaurentOverlap
+public import FLT.Mazur.PolygonCompletePointNumeratorParameterTails
 public import FLT.Mazur.PolygonCompletePointOriginAmple
 public import FLT.Mazur.PolygonCompletePointOriginCartesian
 public import FLT.Mazur.PolygonCompletePointOriginCartesianBaseChange
@@ -8286,9 +8295,13 @@ public import FLT.Mazur.PolygonSmoothFiniteAtlas
 public import FLT.Mazur.PolygonSmoothLocus
 public import FLT.Mazur.PolygonSmoothRelativeDimension
 public import FLT.Mazur.PolygonSmoothingBaseChange
+public import FLT.Mazur.PolygonSmoothingBranchCoefficients
 public import FLT.Mazur.PolygonSmoothingBranchExt
 public import FLT.Mazur.PolygonSmoothingBranchOpens
+public import FLT.Mazur.PolygonSmoothingBranchSeparation
 public import FLT.Mazur.PolygonSmoothingBranchSwap
+public import FLT.Mazur.PolygonSmoothingBranchSwapGeometry
+public import FLT.Mazur.PolygonSmoothingBranchSwapNaturality
 public import FLT.Mazur.PolygonSmoothingCoefficientBranches
 public import FLT.Mazur.PolygonSmoothingCoefficientSquares
 public import FLT.Mazur.PolygonSmoothingCompletedDifferentials
@@ -8310,6 +8323,7 @@ public import FLT.Mazur.PolygonSmoothingGenericFiber
 public import FLT.Mazur.PolygonSmoothingH1FaithfulDescent
 public import FLT.Mazur.PolygonSmoothingIncomingMarking
 public import FLT.Mazur.PolygonSmoothingLaurentMonomials
+public import FLT.Mazur.PolygonSmoothingLaurentReconstruction
 public import FLT.Mazur.PolygonSmoothingLeftPuncture
 public import FLT.Mazur.PolygonSmoothingLocalizedCotangent
 public import FLT.Mazur.PolygonSmoothingLocalizedPolynomials
@@ -11328,6 +11342,8 @@ public import FLT.Mazur.WeierstrassDilatationArithmeticSmoothingRestriction
 public import FLT.Mazur.WeierstrassDilatationArithmeticTensorNormalization
 public import FLT.Mazur.WeierstrassDilatationArithmeticTensorRestriction
 public import FLT.Mazur.WeierstrassDilatationArithmeticTerminalNode
+public import FLT.Mazur.WeierstrassDilatationArithmeticTerminalPolygon
+public import FLT.Mazur.WeierstrassDilatationArithmeticTerminalUnit
 public import FLT.Mazur.WeierstrassDilatationBaseChange
 public import FLT.Mazur.WeierstrassDilatationCanonicalNormalizationNaturality
 public import FLT.Mazur.WeierstrassDilatationCoefficientRingMap
@@ -11514,6 +11530,8 @@ public import FLT.Mazur.WeierstrassDividedArithmeticPositiveLabeledCompatibility
 public import FLT.Mazur.WeierstrassDividedArithmeticPositiveLabeledDescent
 public import FLT.Mazur.WeierstrassDividedArithmeticPositiveRetainedCompatibility
 public import FLT.Mazur.WeierstrassDividedArithmeticPositiveUniversal
+public import FLT.Mazur.WeierstrassDividedArithmeticRetainedPolygon
+public import FLT.Mazur.WeierstrassDividedArithmeticRetainedPolygonSystem
 public import FLT.Mazur.WeierstrassDividedArithmeticSystemCartesian
 public import FLT.Mazur.WeierstrassDividedArithmeticTensorProjection
 public import FLT.Mazur.WeierstrassDividedArithmeticTensorRestriction
@@ -12110,6 +12128,9 @@ public import FLT.Mazur.WeierstrassDividedResidueTangentNormalization
 public import FLT.Mazur.WeierstrassDividedRetainedExteriorIntersection
 public import FLT.Mazur.WeierstrassDividedRetainedLineAt
 public import FLT.Mazur.WeierstrassDividedRetainedLineSeparation
+public import FLT.Mazur.WeierstrassDividedRetainedPolygonLabels
+public import FLT.Mazur.WeierstrassDividedRetainedPolygonMaps
+public import FLT.Mazur.WeierstrassDividedRetainedPolygonNaturality
 public import FLT.Mazur.WeierstrassDividedRetainedZeroExteriorLine
 public import FLT.Mazur.WeierstrassDividedRetentionSuccessor
 public import FLT.Mazur.WeierstrassDividedShearContraction
