@@ -4848,6 +4848,7 @@ public import FLT.Mazur.FiniteGeometricSections
 public import FLT.Mazur.FiniteGroupAffineNeighborhood
 public import FLT.Mazur.FiniteGroupAffineQuotient
 public import FLT.Mazur.FiniteGroupBoundaryTrace
+public import FLT.Mazur.FiniteGroupEnvelopeNeighborhood
 public import FLT.Mazur.FiniteGroupFieldPointOrbits
 public import FLT.Mazur.FiniteGroupFreeBoundaryLift
 public import FLT.Mazur.FiniteGroupFreeFieldTest
@@ -5726,7 +5727,9 @@ public import FLT.Mazur.HilbertOpenInclusionExtension
 public import FLT.Mazur.HilbertOpenInclusionFamilies
 public import FLT.Mazur.HilbertOpenIntrinsicClassification
 public import FLT.Mazur.HilbertOpenOverlapCoherence
+public import FLT.Mazur.HilbertOrderedAffineEnvelope
 public import FLT.Mazur.HilbertOrderedOriginalBoundary
+public import FLT.Mazur.HilbertOrderedStableNeighborhood
 public import FLT.Mazur.HilbertOverlapRestriction
 public import FLT.Mazur.HilbertParameterAbelClass
 public import FLT.Mazur.HilbertParameterChartFactorization
@@ -5790,6 +5793,7 @@ public import FLT.Mazur.HilbertQuotientDegreeFiltration
 public import FLT.Mazur.HilbertReindexedCoordinateRing
 public import FLT.Mazur.HilbertRepeatedMonomialChart
 public import FLT.Mazur.HilbertSameAmbientChartIso
+public import FLT.Mazur.HilbertStableFrameBoundary
 public import FLT.Mazur.HilbertSubterminalTranslationEnvelope
 public import FLT.Mazur.HilbertSupportOpenLattice
 public import FLT.Mazur.HilbertSupportOpenPullback
@@ -9165,6 +9169,7 @@ public import FLT.Mazur.RelativeDimensionBaseChangeOpen
 public import FLT.Mazur.RelativeDirectImageComposition
 public import FLT.Mazur.RelativeDirectImageForgetting
 public import FLT.Mazur.RelativeDirectImageOpenResolution
+public import FLT.Mazur.RelativeDistinctAffineEnvelope
 public import FLT.Mazur.RelativeDistinctEtale
 public import FLT.Mazur.RelativeDistinctFreeAction
 public import FLT.Mazur.RelativeDistinctTupleLift
@@ -9172,6 +9177,7 @@ public import FLT.Mazur.RelativeDistinctTuples
 public import FLT.Mazur.RelativeEtaleFiniteBranchCover
 public import FLT.Mazur.RelativeFiberMorphism
 public import FLT.Mazur.RelativeFiberNakayama
+public import FLT.Mazur.RelativeFiniteTupleAffine
 public import FLT.Mazur.RelativeFppfComparisonCover
 public import FLT.Mazur.RelativeFppfLocalSubfunctor
 public import FLT.Mazur.RelativeFppfLocallyRingedCover
@@ -9394,6 +9400,9 @@ public import FLT.Mazur.RelativeSerreSectionModules
 public import FLT.Mazur.RelativeSerreVanishing
 public import FLT.Mazur.RelativeSums
 public import FLT.Mazur.RelativeTupleCollision
+public import FLT.Mazur.RelativeTupleCompletenessLocus
+public import FLT.Mazur.RelativeTupleOpenEmbedding
+public import FLT.Mazur.RelativeTupleSections
 public import FLT.Mazur.RelativeVeryAmpleLineBundle
 public import FLT.Mazur.RepeatedCubicRoots
 public import FLT.Mazur.ResidualStrictCoefficientGenerizations
