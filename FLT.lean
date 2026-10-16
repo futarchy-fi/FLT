@@ -8644,6 +8644,7 @@ public import FLT.Mazur.PolygonStageVeroneseProj
 public import FLT.Mazur.PolygonStageVeroneseProjTransition
 public import FLT.Mazur.PolygonStageVeroneseTransition
 public import FLT.Mazur.PolygonStructureInclusion
+public import FLT.Mazur.PolygonTopNodeActionDefect
 public import FLT.Mazur.PolygonTopNodeAutomorphism
 public import FLT.Mazur.PolygonTopNodeBoundary
 public import FLT.Mazur.PolygonTopNodeEndomorphism
