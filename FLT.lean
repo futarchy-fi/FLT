@@ -4654,6 +4654,7 @@ public import FLT.Mazur.EquivalenceRelationFiberPermutationSections
 public import FLT.Mazur.EquivalenceRelationFiberRebase
 public import FLT.Mazur.EquivalenceRelationFrameRebaseGeometric
 public import FLT.Mazur.EquivalenceRelationFrameRebaseLaws
+public import FLT.Mazur.EquivalenceRelationInvariantBoundaryAction
 public import FLT.Mazur.EquivalenceRelationNormalizedActionComplete
 public import FLT.Mazur.EquivalenceRelationNormalizedActionGraphs
 public import FLT.Mazur.EquivalenceRelationNormalizedActionRelation
