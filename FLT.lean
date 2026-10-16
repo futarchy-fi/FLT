@@ -7695,6 +7695,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstGraphOriginalNodes
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphReducedLaw
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphReduction
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphRingGenerators
+public import FLT.Mazur.PolygonCompleteIdentityFirstGraphRotatedCubic
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphScheme
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphSpecialFiber
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphSupport
