@@ -3078,6 +3078,7 @@ public import FLT.Mazur.AffinePieceSectionLocalization
 public import FLT.Mazur.AffinePreimageRestrictionPushout
 public import FLT.Mazur.AffinePresentedSectionFractions
 public import FLT.Mazur.AffinePrincipalComparisonIso
+public import FLT.Mazur.AffinePrincipalEquationLift
 public import FLT.Mazur.AffinePrincipalKernel
 public import FLT.Mazur.AffineProductMap
 public import FLT.Mazur.AffineProductNormFiber
@@ -3487,6 +3488,7 @@ public import FLT.Mazur.BaseOpenHilbertRelationOpenSections
 public import FLT.Mazur.BaseOpenHilbertRestrictedRelation
 public import FLT.Mazur.BinaryOpenDescent
 public import FLT.Mazur.BivariateCoordinateDifference
+public import FLT.Mazur.BivariateFractionDifference
 public import FLT.Mazur.BlowupFractionActionCover
 public import FLT.Mazur.BlowupFractionChart
 public import FLT.Mazur.BlowupFractionChartExt
@@ -7491,11 +7493,15 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstCompleteSmoothing
 public import FLT.Mazur.PolygonCompleteIdentityFirstCoordinateDescent
 public import FLT.Mazur.PolygonCompleteIdentityFirstCorrection
 public import FLT.Mazur.PolygonCompleteIdentityFirstCubicErrorCriterion
+public import FLT.Mazur.PolygonCompleteIdentityFirstCubicFractionErrors
 public import FLT.Mazur.PolygonCompleteIdentityFirstCubicFractions
+public import FLT.Mazur.PolygonCompleteIdentityFirstCubicSourceRemainders
 public import FLT.Mazur.PolygonCompleteIdentityFirstDefectDerivation
 public import FLT.Mazur.PolygonCompleteIdentityFirstDefectFormula
 public import FLT.Mazur.PolygonCompleteIdentityFirstDefectProduct
 public import FLT.Mazur.PolygonCompleteIdentityFirstFourCoordinates
+public import FLT.Mazur.PolygonCompleteIdentityFirstFourPolynomialErrors
+public import FLT.Mazur.PolygonCompleteIdentityFirstFractionLifts
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphAlgebra
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphBranchExt
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphBranchMaps
@@ -7535,6 +7541,8 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstNodeBoundary
 public import FLT.Mazur.PolygonCompleteIdentityFirstNodeObstruction
 public import FLT.Mazur.PolygonCompleteIdentityFirstNodePolynomials
 public import FLT.Mazur.PolygonCompleteIdentityFirstParameterEquations
+public import FLT.Mazur.PolygonCompleteIdentityFirstPoleNumeratorRemainders
+public import FLT.Mazur.PolygonCompleteIdentityFirstPolynomialConversion
 public import FLT.Mazur.PolygonCompleteIdentityFirstPolynomialErrors
 public import FLT.Mazur.PolygonCompleteIdentityFirstPolynomialRemainders
 public import FLT.Mazur.PolygonCompleteIdentityFirstPositiveNodes
@@ -7793,6 +7801,7 @@ public import FLT.Mazur.PolygonCompletePointSectionRank
 public import FLT.Mazur.PolygonCompletePointSectionRingIso
 public import FLT.Mazur.PolygonCompletePointSmoothIso
 public import FLT.Mazur.PolygonCompletePointSpecifiedBasis
+public import FLT.Mazur.PolygonCompletePointStageLineComparison
 public import FLT.Mazur.PolygonCompletePointSurjective
 public import FLT.Mazur.PolygonCompletePointTorusNeighborhood
 public import FLT.Mazur.PolygonCompletePointWeierstrassEquation
