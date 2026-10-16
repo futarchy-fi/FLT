@@ -4679,6 +4679,7 @@ public import FLT.Mazur.EtaleFiniteGeometricDiagram
 public import FLT.Mazur.EtaleFiniteGeometricFiberSpread
 public import FLT.Mazur.EtaleFiniteQuotientBranch
 public import FLT.Mazur.EtaleFiniteSupportCartier
+public import FLT.Mazur.EtaleGeometricSectionPoints
 public import FLT.Mazur.EtaleLocalParameterIdeals
 public import FLT.Mazur.EtaleMarkingScheme
 public import FLT.Mazur.EtaleNilpotentGlue
