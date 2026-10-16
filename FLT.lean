@@ -13550,6 +13550,7 @@ public import FLT.Mazur.WeierstrassRetainedNodeRootBoundary
 public import FLT.Mazur.WeierstrassRetainedNodeRoots
 public import FLT.Mazur.WeierstrassRetainedNodeRootsNaturality
 public import FLT.Mazur.WeierstrassRetainedRegularCenter
+public import FLT.Mazur.WeierstrassRetainedStartOneQuotient
 public import FLT.Mazur.WeierstrassRootShearCoefficientConditions
 public import FLT.Mazur.WeierstrassRootShearParameterCoefficient
 public import FLT.Mazur.WeierstrassRootShearSlopeInput
