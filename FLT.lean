@@ -7904,6 +7904,7 @@ public import FLT.Mazur.PolygonCompleteIdentityTopGraphCubic
 public import FLT.Mazur.PolygonCompleteIdentityTopGraphIncomingBranch
 public import FLT.Mazur.PolygonCompleteIdentityTopGraphOriginalFlat
 public import FLT.Mazur.PolygonCompleteIdentityTopGraphOriginalNodes
+public import FLT.Mazur.PolygonCompleteIdentityTopGraphReduction
 public import FLT.Mazur.PolygonCompleteIdentityTopGraphScheme
 public import FLT.Mazur.PolygonCompleteIdentityTopGraphToChart
 public import FLT.Mazur.PolygonCompleteIdentityTopLinearization
