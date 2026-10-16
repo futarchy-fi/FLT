@@ -7696,6 +7696,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstPrincipalObstruction
 public import FLT.Mazur.PolygonCompleteIdentityFirstRefinedEquations
 public import FLT.Mazur.PolygonCompleteIdentityFirstRefinedErrorCriterion
 public import FLT.Mazur.PolygonCompleteIdentityFirstRefinedSmoothing
+public import FLT.Mazur.PolygonCompleteIdentityFirstSourceNodeCoverage
 public import FLT.Mazur.PolygonCompleteIdentityFirstSourceZeroCubic
 public import FLT.Mazur.PolygonCompleteIdentityFlatOpenLift
 public import FLT.Mazur.PolygonCompleteIdentityGenericAmbient
