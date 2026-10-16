@@ -7520,6 +7520,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstNodeObstruction
 public import FLT.Mazur.PolygonCompleteIdentityFirstNodePolynomials
 public import FLT.Mazur.PolygonCompleteIdentityFirstParameterEquations
 public import FLT.Mazur.PolygonCompleteIdentityFirstPolynomialErrors
+public import FLT.Mazur.PolygonCompleteIdentityFirstPolynomialRemainders
 public import FLT.Mazur.PolygonCompleteIdentityFirstPositiveNodes
 public import FLT.Mazur.PolygonCompleteIdentityFirstPowerDescent
 public import FLT.Mazur.PolygonCompleteIdentityFirstPrincipalCoordinates
