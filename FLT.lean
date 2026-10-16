@@ -5568,6 +5568,7 @@ public import FLT.Mazur.HilbertBoundaryInfinitesimalArrows
 public import FLT.Mazur.HilbertBoundaryKernelPair
 public import FLT.Mazur.HilbertBoundaryLiftLocus
 public import FLT.Mazur.HilbertBoundaryLocalCoverCriterion
+public import FLT.Mazur.HilbertBoundaryOpenGeometricGround
 public import FLT.Mazur.HilbertBoundaryOrbit
 public import FLT.Mazur.HilbertBoundaryPrincipalLifting
 public import FLT.Mazur.HilbertBoundaryPrincipalLocalization
@@ -6088,6 +6089,9 @@ public import FLT.Mazur.InvariantLocalizationComparison
 public import FLT.Mazur.InvariantLocalizationCoordinates
 public import FLT.Mazur.InvariantLocalizationNumerator
 public import FLT.Mazur.InvariantObstructionNaturality
+public import FLT.Mazur.InvariantOpenRelationDiagram
+public import FLT.Mazur.InvariantOpenRelationFunctions
+public import FLT.Mazur.InvariantOpenRelationMap
 public import FLT.Mazur.InvariantSectionObstruction
 public import FLT.Mazur.IrreducibleComponentAmple
 public import FLT.Mazur.IsomorphicClosedPullback
@@ -9328,6 +9332,7 @@ public import FLT.Mazur.RelativeRelationMonicSeedOpenQuotient
 public import FLT.Mazur.RelativeRelationMonicSeedQuotient
 public import FLT.Mazur.RelativeRelationNilpotentGerms
 public import FLT.Mazur.RelativeRelationNilpotentSections
+public import FLT.Mazur.RelativeRelationOpenFunctionMap
 public import FLT.Mazur.RelativeRelationOpenSaturation
 public import FLT.Mazur.RelativeRelationOpenSourceFunctions
 public import FLT.Mazur.RelativeRelationOrbit
