@@ -4642,6 +4642,7 @@ public import FLT.Mazur.EquifiberedGluingBaseChange
 public import FLT.Mazur.EquifiberedSchemeGluing
 public import FLT.Mazur.EquivalenceRelationActionInfinitesimalRigidity
 public import FLT.Mazur.EquivalenceRelationBoundaryActionGeometry
+public import FLT.Mazur.EquivalenceRelationBoundaryChartTests
 public import FLT.Mazur.EquivalenceRelationBoundaryChartTransport
 public import FLT.Mazur.EquivalenceRelationBoundaryCoefficients
 public import FLT.Mazur.EquivalenceRelationBoundaryLabelChange
@@ -4687,6 +4688,7 @@ public import FLT.Mazur.EquivalenceRelationMixedChartDescent
 public import FLT.Mazur.EquivalenceRelationMixedChartLiftDifference
 public import FLT.Mazur.EquivalenceRelationMixedChartProjections
 public import FLT.Mazur.EquivalenceRelationMixedChartRestriction
+public import FLT.Mazur.EquivalenceRelationMixedChartTests
 public import FLT.Mazur.EquivalenceRelationMixedFrameCardinality
 public import FLT.Mazur.EquivalenceRelationMixedFrameComparison
 public import FLT.Mazur.EquivalenceRelationMixedFrameLabelChange
@@ -5836,6 +5838,10 @@ public import FLT.Mazur.HilbertOpenInclusionExtension
 public import FLT.Mazur.HilbertOpenInclusionFamilies
 public import FLT.Mazur.HilbertOpenIntrinsicClassification
 public import FLT.Mazur.HilbertOpenOverlapCoherence
+public import FLT.Mazur.HilbertOrbitBoundaryAtlas
+public import FLT.Mazur.HilbertOrbitBoundaryAtlasDescent
+public import FLT.Mazur.HilbertOrbitBoundaryAtlasLifts
+public import FLT.Mazur.HilbertOrbitBoundaryAtlasOriginalLift
 public import FLT.Mazur.HilbertOrbitBoundaryFamilyLifts
 public import FLT.Mazur.HilbertOrderedAffineEnvelope
 public import FLT.Mazur.HilbertOrderedOriginalBoundary
@@ -9942,6 +9948,7 @@ public import FLT.Mazur.SchemeFppfCoverInvariantFunctions
 public import FLT.Mazur.SchemeFppfFamilyCocycleAssembly
 public import FLT.Mazur.SchemeFppfFamilyCover
 public import FLT.Mazur.SchemeFppfFamilyDiagonalAssembly
+public import FLT.Mazur.SchemeFppfFamilyFunctionDescent
 public import FLT.Mazur.SchemeFppfFamilyLineDescent
 public import FLT.Mazur.SchemeFppfFamilyMemberOverlap
 public import FLT.Mazur.SchemeFppfFamilyOverlapAssembly
