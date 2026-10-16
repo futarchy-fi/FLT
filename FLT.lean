@@ -4672,6 +4672,7 @@ public import FLT.Mazur.EquivalenceRelationNormalizedFrameRelation
 public import FLT.Mazur.EquivalenceRelationNormalizedFrames
 public import FLT.Mazur.EquivalenceRelationNormalizedInvariantOpen
 public import FLT.Mazur.EquivalenceRelationNormalizedLabelChange
+public import FLT.Mazur.EquivalenceRelationNormalizedLabelTransport
 public import FLT.Mazur.EquivalenceRelationNormalizedOrbitNeighborhood
 public import FLT.Mazur.EquivalenceRelationNormalizedScalarComplete
 public import FLT.Mazur.EquivalenceRelationSectionRebase
