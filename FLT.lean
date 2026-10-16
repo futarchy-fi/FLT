@@ -5544,6 +5544,7 @@ public import FLT.Mazur.HilbertBasisSchemeOver
 public import FLT.Mazur.HilbertBasisTupleAffineComparison
 public import FLT.Mazur.HilbertBasisTupleIntersection
 public import FLT.Mazur.HilbertBasisTupleSchemeComparison
+public import FLT.Mazur.HilbertBoundaryCertifiedAlgebra
 public import FLT.Mazur.HilbertBoundaryClosedRelation
 public import FLT.Mazur.HilbertBoundaryEtaleIdeals
 public import FLT.Mazur.HilbertBoundaryEtaleLift
@@ -5562,6 +5563,7 @@ public import FLT.Mazur.HilbertBoundaryQuotientSections
 public import FLT.Mazur.HilbertBoundaryRelationNilpotence
 public import FLT.Mazur.HilbertBoundaryRelationTests
 public import FLT.Mazur.HilbertBoundarySchemeTests
+public import FLT.Mazur.HilbertBoundarySimultaneousLiftCover
 public import FLT.Mazur.HilbertBoundaryThickeningGeometry
 public import FLT.Mazur.HilbertBoundaryThickeningKernelPair
 public import FLT.Mazur.HilbertBoundaryThickeningNilpotence
@@ -9314,6 +9316,7 @@ public import FLT.Mazur.RelativeRelationSaturationCover
 public import FLT.Mazur.RelativeRelationSaturationFunctionDescent
 public import FLT.Mazur.RelativeRelationSaturationKernel
 public import FLT.Mazur.RelativeRelationSaturationSpan
+public import FLT.Mazur.RelativeRelationSimultaneousLiftCover
 public import FLT.Mazur.RelativeRelationSplitQuotient
 public import FLT.Mazur.RelativeSectionAmpleBaseChange
 public import FLT.Mazur.RelativeSectionAmpleLocality
@@ -9947,7 +9950,11 @@ public import FLT.Mazur.SectionGradedStructuralAlgebra
 public import FLT.Mazur.SectionGradedSum
 public import FLT.Mazur.SectionGradedUnit
 public import FLT.Mazur.SectionKernelLocal
+public import FLT.Mazur.SectionLiftCertificatePolynomial
 public import FLT.Mazur.SectionLiftIdeal
+public import FLT.Mazur.SectionLiftIdealAlgebra
+public import FLT.Mazur.SectionLiftSimultaneousCertificate
+public import FLT.Mazur.SectionLiftSourceCertificate
 public import FLT.Mazur.SectionLineChartOverlap
 public import FLT.Mazur.SectionLinePointBaseChange
 public import FLT.Mazur.SectionLinePointOverlapEquality
@@ -11335,9 +11342,12 @@ public import FLT.Mazur.WeierstrassDividedAdjacentZeroSectionSeparation
 public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentAtlas
 public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentBranch
 public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentFactorization
+public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentIndex
 public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentIntersection
 public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentSeparation
 public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentSlope
+public import FLT.Mazur.WeierstrassDividedArithmeticAtlasCoverage
+public import FLT.Mazur.WeierstrassDividedArithmeticAtlasIndex
 public import FLT.Mazur.WeierstrassDividedArithmeticBoundaryCharts
 public import FLT.Mazur.WeierstrassDividedArithmeticBranchRestriction
 public import FLT.Mazur.WeierstrassDividedArithmeticCoordinateTransition
@@ -11355,6 +11365,13 @@ public import FLT.Mazur.WeierstrassDividedArithmeticInitialNodeOverlap
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialNodes
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialSeparation
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialSlope
+public import FLT.Mazur.WeierstrassDividedArithmeticLabeledAdjacent
+public import FLT.Mazur.WeierstrassDividedArithmeticLabeledAtlas
+public import FLT.Mazur.WeierstrassDividedArithmeticLabeledCharts
+public import FLT.Mazur.WeierstrassDividedArithmeticLabeledCoverage
+public import FLT.Mazur.WeierstrassDividedArithmeticLabeledInitialEdge
+public import FLT.Mazur.WeierstrassDividedArithmeticLabeledInitialOverlap
+public import FLT.Mazur.WeierstrassDividedArithmeticLabeledSeparation
 public import FLT.Mazur.WeierstrassDividedArithmeticNodeCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticNodeOpen
 public import FLT.Mazur.WeierstrassDividedArithmeticNonadjacentIntersection
@@ -13193,6 +13210,7 @@ public import FLT.Mazur.WeierstrassSuccessiveArithmeticRestrictionSquare
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticRetractionRestriction
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticSlopeRestriction
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticTensorBranches
+public import FLT.Mazur.WeierstrassSuccessiveArithmeticTensorCoverage
 public import FLT.Mazur.WeierstrassSuccessiveArithmeticTerminalLaurentRestriction
 public import FLT.Mazur.WeierstrassSuccessiveCenterAction
 public import FLT.Mazur.WeierstrassSuccessiveCenterScaling
