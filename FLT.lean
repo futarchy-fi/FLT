@@ -4642,6 +4642,7 @@ public import FLT.Mazur.EquifiberedGluingBaseChange
 public import FLT.Mazur.EquifiberedSchemeGluing
 public import FLT.Mazur.EquivalenceRelationActionInfinitesimalRigidity
 public import FLT.Mazur.EquivalenceRelationBoundaryActionGeometry
+public import FLT.Mazur.EquivalenceRelationBoundaryChartTransport
 public import FLT.Mazur.EquivalenceRelationBoundaryCoefficients
 public import FLT.Mazur.EquivalenceRelationBoundaryLabelChange
 public import FLT.Mazur.EquivalenceRelationBoundaryLabelCoefficients
@@ -4668,9 +4669,15 @@ public import FLT.Mazur.EquivalenceRelationFrameRebaseLaws
 public import FLT.Mazur.EquivalenceRelationInvariantBoundaryAction
 public import FLT.Mazur.EquivalenceRelationJointAffineCover
 public import FLT.Mazur.EquivalenceRelationJointBoundaryCover
+public import FLT.Mazur.EquivalenceRelationJointChartBoundaryCover
+public import FLT.Mazur.EquivalenceRelationJointChartCoefficients
+public import FLT.Mazur.EquivalenceRelationJointChartCover
+public import FLT.Mazur.EquivalenceRelationJointChartDomains
+public import FLT.Mazur.EquivalenceRelationJointChartLiftDifference
 public import FLT.Mazur.EquivalenceRelationJointFrameCover
 public import FLT.Mazur.EquivalenceRelationJointFrameGraph
 public import FLT.Mazur.EquivalenceRelationJointGeometricComparison
+public import FLT.Mazur.EquivalenceRelationJointInvariantLifts
 public import FLT.Mazur.EquivalenceRelationJointSourceRefinement
 public import FLT.Mazur.EquivalenceRelationLabelOpenCharts
 public import FLT.Mazur.EquivalenceRelationMixedFrameCardinality
@@ -5783,6 +5790,7 @@ public import FLT.Mazur.HilbertInvariantPrincipalProjection
 public import FLT.Mazur.HilbertInvariantRegularNorm
 public import FLT.Mazur.HilbertJointGroundFullInterior
 public import FLT.Mazur.HilbertJointGroundInvariantOpen
+public import FLT.Mazur.HilbertJointOrbitBoundaryLifts
 public import FLT.Mazur.HilbertJointStableSourceNeighborhoods
 public import FLT.Mazur.HilbertLocalResidueBasis
 public import FLT.Mazur.HilbertLocalizationIsomorphismOpen
