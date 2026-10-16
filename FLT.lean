@@ -7885,6 +7885,7 @@ public import FLT.Mazur.PolygonCompletePointStageBoundedRatios
 public import FLT.Mazur.PolygonCompletePointStageCanonicalStep
 public import FLT.Mazur.PolygonCompletePointStageCubicRatios
 public import FLT.Mazur.PolygonCompletePointStageEquationFrames
+public import FLT.Mazur.PolygonCompletePointStageFrameUnitProducts
 public import FLT.Mazur.PolygonCompletePointStageFrameUnits
 public import FLT.Mazur.PolygonCompletePointStageLineComparison
 public import FLT.Mazur.PolygonCompletePointStageNodeFunctions
