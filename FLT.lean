@@ -11994,6 +11994,7 @@ public import FLT.Mazur.WeierstrassDividedExteriorYBoundary
 public import FLT.Mazur.WeierstrassDividedFactorRatioAffineInfinity
 public import FLT.Mazur.WeierstrassDividedFactorRatioAffineNaturality
 public import FLT.Mazur.WeierstrassDividedFactorRatioInitialAffine
+public import FLT.Mazur.WeierstrassDividedFactorRatioInitialEmbedding
 public import FLT.Mazur.WeierstrassDividedFactorRatioInitialOverlap
 public import FLT.Mazur.WeierstrassDividedFactorRatioPolygonMaps
 public import FLT.Mazur.WeierstrassDividedFactorRatioPolygonNaturality
