@@ -4688,6 +4688,7 @@ public import FLT.Mazur.EquivalenceRelationNormalizedSubframe
 public import FLT.Mazur.EquivalenceRelationSectionRebase
 public import FLT.Mazur.EquivalenceRelationSourceRefinement
 public import FLT.Mazur.EquivalenceRelationSourceRestriction
+public import FLT.Mazur.EquivalenceRelationSubframeComparison
 public import FLT.Mazur.EquivalenceRelationSubframeGraphs
 public import FLT.Mazur.EtaleAffineSpaceDimension
 public import FLT.Mazur.EtaleAlgebraFiniteBranch
