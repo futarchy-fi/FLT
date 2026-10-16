@@ -7871,6 +7871,7 @@ public import FLT.Mazur.PolygonCompleteIdentityTopChartKernelPowers
 public import FLT.Mazur.PolygonCompleteIdentityTopChartNodeSocle
 public import FLT.Mazur.PolygonCompleteIdentityTopChartPunctureOpens
 public import FLT.Mazur.PolygonCompleteIdentityTopChartPunctures
+public import FLT.Mazur.PolygonCompleteIdentityTopChartScalars
 public import FLT.Mazur.PolygonCompleteIdentityTopCorrection
 public import FLT.Mazur.PolygonCompleteIdentityTopDefect
 public import FLT.Mazur.PolygonCompleteIdentityTopGraphAlgebra
