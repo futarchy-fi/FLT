@@ -11376,9 +11376,13 @@ public import FLT.Mazur.WeierstrassDividedArithmeticLabeledAdjacent
 public import FLT.Mazur.WeierstrassDividedArithmeticLabeledAtlas
 public import FLT.Mazur.WeierstrassDividedArithmeticLabeledCharts
 public import FLT.Mazur.WeierstrassDividedArithmeticLabeledCoverage
+public import FLT.Mazur.WeierstrassDividedArithmeticLabeledEarlierTerminal
 public import FLT.Mazur.WeierstrassDividedArithmeticLabeledInitialEdge
 public import FLT.Mazur.WeierstrassDividedArithmeticLabeledInitialOverlap
+public import FLT.Mazur.WeierstrassDividedArithmeticLabeledNonadjacent
 public import FLT.Mazur.WeierstrassDividedArithmeticLabeledSeparation
+public import FLT.Mazur.WeierstrassDividedArithmeticLabeledTerminalEdge
+public import FLT.Mazur.WeierstrassDividedArithmeticNewestIndex
 public import FLT.Mazur.WeierstrassDividedArithmeticNodeCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticNodeOpen
 public import FLT.Mazur.WeierstrassDividedArithmeticNonadjacentIntersection
@@ -11398,6 +11402,7 @@ public import FLT.Mazur.WeierstrassDividedArithmeticTerminalPunctureIso
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalPunctureParameter
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalPunctureRestriction
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalPunctureUnits
+public import FLT.Mazur.WeierstrassDividedArithmeticZeroRetentionIntersection
 public import FLT.Mazur.WeierstrassDividedAtlasRegularCenter
 public import FLT.Mazur.WeierstrassDividedBoundaryNormalization
 public import FLT.Mazur.WeierstrassDividedBranchChainIntersections
@@ -12216,6 +12221,7 @@ public import FLT.Mazur.WeierstrassDividedZeroNodalGeometry
 public import FLT.Mazur.WeierstrassDividedZeroNodalGluing
 public import FLT.Mazur.WeierstrassDividedZeroNodalProjective
 public import FLT.Mazur.WeierstrassDividedZeroResidueAtlas
+public import FLT.Mazur.WeierstrassDividedZeroRetentionIntersection
 public import FLT.Mazur.WeierstrassDividedZeroSlopeContraction
 public import FLT.Mazur.WeierstrassDividedZeroSlopeLaurent
 public import FLT.Mazur.WeierstrassDividedZeroSplitCocone
