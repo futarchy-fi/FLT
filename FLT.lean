@@ -13529,6 +13529,7 @@ public import FLT.Mazur.WeierstrassRetainedArithmeticFactorRatio
 public import FLT.Mazur.WeierstrassRetainedArithmeticFactorRatioRestriction
 public import FLT.Mazur.WeierstrassRetainedCoefficientShearChart
 public import FLT.Mazur.WeierstrassRetainedDepthScale
+public import FLT.Mazur.WeierstrassRetainedFixedBoundary
 public import FLT.Mazur.WeierstrassRetainedFixedEdgeUnit
 public import FLT.Mazur.WeierstrassRetainedFixedSmoothing
 public import FLT.Mazur.WeierstrassRetainedNodeFactor
