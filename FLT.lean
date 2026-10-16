@@ -7573,6 +7573,7 @@ public import FLT.Mazur.PolygonCompleteIdentityActionCartesian
 public import FLT.Mazur.PolygonCompleteIdentityActionGraph
 public import FLT.Mazur.PolygonCompleteIdentityActionGraphCompatibility
 public import FLT.Mazur.PolygonCompleteIdentityActionGraphSmooth
+public import FLT.Mazur.PolygonCompleteIdentityActionInputRotation
 public import FLT.Mazur.PolygonCompleteIdentityActionLocalGluing
 public import FLT.Mazur.PolygonCompleteIdentityActionMultiplication
 public import FLT.Mazur.PolygonCompleteIdentityActionNodeCover
@@ -14070,6 +14071,7 @@ public import FLT.Mazur.WeierstrassYProductAdditionGluing
 public import FLT.Mazur.WeierstrassYProductCover
 public import FLT.Mazur.WeightedPoleCubicNormalization
 public import FLT.Mazur.WeightedPoleMonomials
+public import FLT.Mazur.WeightedPoleNormalForms
 public import FLT.MazurChapter.AdmissibleGroupSchemes
 public import FLT.MazurW
 public import FLT.MazurWOfPrimeTorsion
@@ -14389,4 +14391,3 @@ public import FLT.TateCurve.SymmetricInverse
 public import FLT.TateCurve.TateCurve
 public import FLT.TateCurve.Uniformization
 public import FLT.TateCurve.ValuativeContinuity
-public import FLT.Mazur.WeightedPoleNormalForms
