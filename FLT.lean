@@ -7838,6 +7838,7 @@ public import FLT.Mazur.PolygonCompleteIdentitySmoothInputGraph
 public import FLT.Mazur.PolygonCompleteIdentityStageTorus
 public import FLT.Mazur.PolygonCompleteIdentityTopDefect
 public import FLT.Mazur.PolygonCompleteIdentityTopObstruction
+public import FLT.Mazur.PolygonCompleteIdentityTopPointCocycle
 public import FLT.Mazur.PolygonCompleteIdentityUnitCoherence
 public import FLT.Mazur.PolygonCompleteLineCohomology
 public import FLT.Mazur.PolygonCompleteLineHomExt
