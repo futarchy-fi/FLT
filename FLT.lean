@@ -11363,6 +11363,7 @@ public import FLT.Mazur.WeierstrassDividedArithmeticLabeledCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticLabeledInitialEdge
 public import FLT.Mazur.WeierstrassDividedArithmeticLabeledInitialOverlap
 public import FLT.Mazur.WeierstrassDividedArithmeticLabeledSeparation
+public import FLT.Mazur.WeierstrassDividedArithmeticNewestIndex
 public import FLT.Mazur.WeierstrassDividedArithmeticNodeCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticNodeOpen
 public import FLT.Mazur.WeierstrassDividedArithmeticNonadjacentIntersection
