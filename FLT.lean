@@ -12746,6 +12746,7 @@ public import FLT.Mazur.WeierstrassModificationXInitialTerminalUnits
 public import FLT.Mazur.WeierstrassModificationXInvolution
 public import FLT.Mazur.WeierstrassModificationXLaurentBranchReduction
 public import FLT.Mazur.WeierstrassModificationXLaurentBranches
+public import FLT.Mazur.WeierstrassModificationXLaurentCoefficientNaturality
 public import FLT.Mazur.WeierstrassModificationXLaurentEvaluation
 public import FLT.Mazur.WeierstrassModificationXLaurentNodeDenominator
 public import FLT.Mazur.WeierstrassModificationXLaurentNodeParameter
