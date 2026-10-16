@@ -3078,6 +3078,7 @@ public import FLT.Mazur.AffinePieceSectionLocalization
 public import FLT.Mazur.AffinePreimageRestrictionPushout
 public import FLT.Mazur.AffinePresentedSectionFractions
 public import FLT.Mazur.AffinePrincipalComparisonIso
+public import FLT.Mazur.AffinePrincipalEquationLift
 public import FLT.Mazur.AffinePrincipalKernel
 public import FLT.Mazur.AffineProductMap
 public import FLT.Mazur.AffineProductNormFiber
