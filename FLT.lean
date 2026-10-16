@@ -4640,6 +4640,7 @@ public import FLT.Mazur.EquivalenceRelationFrameRebaseGeometric
 public import FLT.Mazur.EquivalenceRelationFrameRebaseLaws
 public import FLT.Mazur.EquivalenceRelationNormalizedFrameAction
 public import FLT.Mazur.EquivalenceRelationNormalizedFrameComparison
+public import FLT.Mazur.EquivalenceRelationNormalizedFrameCover
 public import FLT.Mazur.EquivalenceRelationNormalizedFrameEtale
 public import FLT.Mazur.EquivalenceRelationNormalizedFrameFree
 public import FLT.Mazur.EquivalenceRelationNormalizedFrameLifts
