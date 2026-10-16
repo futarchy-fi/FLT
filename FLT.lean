@@ -8616,6 +8616,7 @@ public import FLT.Mazur.PolygonSmoothingBaseChange
 public import FLT.Mazur.PolygonSmoothingBoundaryEquiv
 public import FLT.Mazur.PolygonSmoothingBoundaryLift
 public import FLT.Mazur.PolygonSmoothingBoundaryLiftGeometry
+public import FLT.Mazur.PolygonSmoothingBoundaryWeightConstraint
 public import FLT.Mazur.PolygonSmoothingBranchCoefficients
 public import FLT.Mazur.PolygonSmoothingBranchExt
 public import FLT.Mazur.PolygonSmoothingBranchOpens
