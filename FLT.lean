@@ -12805,6 +12805,7 @@ public import FLT.Mazur.WeierstrassModificationXNodeInfinityDenominators
 public import FLT.Mazur.WeierstrassModificationXNodeInverseEvaluation
 public import FLT.Mazur.WeierstrassModificationXNodeInverseFunctions
 public import FLT.Mazur.WeierstrassModificationXNodeInverseParameter
+public import FLT.Mazur.WeierstrassModificationXNodeOpenCoefficientMap
 public import FLT.Mazur.WeierstrassModificationXNodeOverlap
 public import FLT.Mazur.WeierstrassModificationXNodeOverlapDenominator
 public import FLT.Mazur.WeierstrassModificationXNodeRestriction
