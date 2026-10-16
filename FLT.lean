@@ -8636,6 +8636,7 @@ public import FLT.Mazur.PolygonStageVeroneseProj
 public import FLT.Mazur.PolygonStageVeroneseProjTransition
 public import FLT.Mazur.PolygonStageVeroneseTransition
 public import FLT.Mazur.PolygonStructureInclusion
+public import FLT.Mazur.PolygonTopNodeReduction
 public import FLT.Mazur.PolygonTopOrderBoundaryRigidity
 public import FLT.Mazur.PolygonTopOrderCoordinateCharts
 public import FLT.Mazur.PolygonTranslationBaseChangeLine
