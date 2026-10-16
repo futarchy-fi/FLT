@@ -4667,6 +4667,7 @@ public import FLT.Mazur.EquivalenceRelationCompleteTestPartition
 public import FLT.Mazur.EquivalenceRelationConnectedCompleteTests
 public import FLT.Mazur.EquivalenceRelationFiberPermutationSections
 public import FLT.Mazur.EquivalenceRelationFiberRebase
+public import FLT.Mazur.EquivalenceRelationFiniteChartMultipliers
 public import FLT.Mazur.EquivalenceRelationFrameNormalization
 public import FLT.Mazur.EquivalenceRelationFrameRebaseGeometric
 public import FLT.Mazur.EquivalenceRelationFrameRebaseLaws
@@ -5019,6 +5020,7 @@ public import FLT.Mazur.FinitePolynomialDiagramRefinement
 public import FLT.Mazur.FinitePolynomialEquationSeeds
 public import FLT.Mazur.FinitePolynomialStableRelations
 public import FLT.Mazur.FinitePolynomialStableStages
+public import FLT.Mazur.FinitePowerEqualizer
 public import FLT.Mazur.FinitePresentationHilbertTranslationCover
 public import FLT.Mazur.FinitePresentationIntegerModel
 public import FLT.Mazur.FinitePresentationSurjectiveScalars
@@ -5843,6 +5845,12 @@ public import FLT.Mazur.HilbertOrbitBoundaryAtlasDescent
 public import FLT.Mazur.HilbertOrbitBoundaryAtlasLifts
 public import FLT.Mazur.HilbertOrbitBoundaryAtlasOriginalLift
 public import FLT.Mazur.HilbertOrbitBoundaryFamilyLifts
+public import FLT.Mazur.HilbertOrbitBoundaryFiniteAtlas
+public import FLT.Mazur.HilbertOrbitBoundaryFiniteDescent
+public import FLT.Mazur.HilbertOrbitBoundaryFiniteLifts
+public import FLT.Mazur.HilbertOrbitBoundaryFiniteMultipliers
+public import FLT.Mazur.HilbertOrbitBoundaryFiniteOriginalLift
+public import FLT.Mazur.HilbertOrbitBoundaryFiniteProducts
 public import FLT.Mazur.HilbertOrderedAffineEnvelope
 public import FLT.Mazur.HilbertOrderedOriginalBoundary
 public import FLT.Mazur.HilbertOrderedStableNeighborhood
