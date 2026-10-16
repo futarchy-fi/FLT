@@ -12689,6 +12689,7 @@ public import FLT.Mazur.WeierstrassModificationXArithmeticTensorNodes
 public import FLT.Mazur.WeierstrassModificationXArithmeticTerminalLaurentRestriction
 public import FLT.Mazur.WeierstrassModificationXBaseChange
 public import FLT.Mazur.WeierstrassModificationXBaseChangeGenerators
+public import FLT.Mazur.WeierstrassModificationXCoefficientRingMap
 public import FLT.Mazur.WeierstrassModificationXCoefficients
 public import FLT.Mazur.WeierstrassModificationXConicBoundaryCharts
 public import FLT.Mazur.WeierstrassModificationXConicBoundaryIntersection
