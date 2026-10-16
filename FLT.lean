@@ -5096,6 +5096,7 @@ public import FLT.Mazur.FlatCokernelResidueIdeals
 public import FLT.Mazur.FlatCokernelStep
 public import FLT.Mazur.FlatDominantPrincipalNeighborhood
 public import FLT.Mazur.FlatFiniteEqualizer
+public import FLT.Mazur.FlatGlobalFunctionBaseChange
 public import FLT.Mazur.FlatGlobalFunctionsPushout
 public import FLT.Mazur.FlatGlobalGenerationDescent
 public import FLT.Mazur.FlatGlobalSectionBaseChange
