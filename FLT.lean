@@ -7561,6 +7561,7 @@ public import FLT.Mazur.PolygonCompleteIdentityAdicAmbientStructure
 public import FLT.Mazur.PolygonCompleteIdentityAdicCubicChartMap
 public import FLT.Mazur.PolygonCompleteIdentityAdicCubicCoordinates
 public import FLT.Mazur.PolygonCompleteIdentityAdicCubicPatches
+public import FLT.Mazur.PolygonCompleteIdentityAdicCubicZNeighborhood
 public import FLT.Mazur.PolygonCompleteIdentityAdicRefinedKernel
 public import FLT.Mazur.PolygonCompleteIdentityAdicRefinedPatches
 public import FLT.Mazur.PolygonCompleteIdentityAmbientErrorRelation
