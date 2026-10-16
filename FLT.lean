@@ -7145,6 +7145,7 @@ public import FLT.Mazur.PolygonArithmeticClosedSmoothLocus
 public import FLT.Mazur.PolygonArithmeticClosedSpecialization
 public import FLT.Mazur.PolygonArithmeticClosedTargetReconstruction
 public import FLT.Mazur.PolygonArithmeticCoefficientFlatness
+public import FLT.Mazur.PolygonArithmeticCoherentUnits
 public import FLT.Mazur.PolygonArithmeticComparedSectionReconstruction
 public import FLT.Mazur.PolygonArithmeticCompatibleAlgebra
 public import FLT.Mazur.PolygonArithmeticCompatibleReduction
