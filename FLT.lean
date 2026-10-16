@@ -3444,10 +3444,12 @@ public import FLT.Mazur.BaseAdicSectionReconstruction
 public import FLT.Mazur.BaseAdicSectionSuccessorReconstruction
 public import FLT.Mazur.BaseAdicStructureVanishing
 public import FLT.Mazur.BaseAdicThickening
+public import FLT.Mazur.BaseBoundaryNumeratorSolutions
 public import FLT.Mazur.BaseChangeCotangentFieldRank
 public import FLT.Mazur.BaseChangeSectionEquiv
 public import FLT.Mazur.BaseChangedPresentationModel
 public import FLT.Mazur.BaseLocalizationMap
+public import FLT.Mazur.BaseLocalizedBoundaryCorrections
 public import FLT.Mazur.BaseMarkedHilbertChangeGeometry
 public import FLT.Mazur.BaseMarkedHilbertChangePicard
 public import FLT.Mazur.BaseMarkedHilbertChangePoints
@@ -3526,6 +3528,7 @@ public import FLT.Mazur.BlowupReesRatioRight
 public import FLT.Mazur.BlowupReesRatioScheme
 public import FLT.Mazur.BlowupReesRatioTransition
 public import FLT.Mazur.BlowupReesZeroComponent
+public import FLT.Mazur.BoundaryCorrectionIdeal
 public import FLT.Mazur.BoundedFlatAcyclicNeighborhood
 public import FLT.Mazur.BoundedFlatAcyclicOpen
 public import FLT.Mazur.BoundedFlatFiberVanishing
@@ -4834,6 +4837,7 @@ public import FLT.Mazur.FiniteAlgebraSpectrumCard
 public import FLT.Mazur.FiniteArrowIntegerModel
 public import FLT.Mazur.FiniteBaseLocalizationDenominators
 public import FLT.Mazur.FiniteBaseLocalizedBoundaryLifts
+public import FLT.Mazur.FiniteBaseLocalizedKernels
 public import FLT.Mazur.FiniteBoundaryEqualizerClearing
 public import FLT.Mazur.FiniteCartierIsomorphismNeighborhood
 public import FLT.Mazur.FiniteCartierLocalizedComparison
@@ -5854,8 +5858,11 @@ public import FLT.Mazur.HilbertOrbitBoundaryAtlas
 public import FLT.Mazur.HilbertOrbitBoundaryAtlasDescent
 public import FLT.Mazur.HilbertOrbitBoundaryAtlasLifts
 public import FLT.Mazur.HilbertOrbitBoundaryAtlasOriginalLift
+public import FLT.Mazur.HilbertOrbitBoundaryBaseCorrectionCriterion
 public import FLT.Mazur.HilbertOrbitBoundaryBaseLocalizationMaps
+public import FLT.Mazur.HilbertOrbitBoundaryBaseLocalizedKernels
 public import FLT.Mazur.HilbertOrbitBoundaryBaseLocalizedMultipliers
+public import FLT.Mazur.HilbertOrbitBoundaryCorrectionIdeal
 public import FLT.Mazur.HilbertOrbitBoundaryFamilyLifts
 public import FLT.Mazur.HilbertOrbitBoundaryFiniteAtlas
 public import FLT.Mazur.HilbertOrbitBoundaryFiniteDescent
@@ -5870,6 +5877,7 @@ public import FLT.Mazur.HilbertOrbitBoundaryLocalizedMultipliers
 public import FLT.Mazur.HilbertOrbitBoundaryLocalizedNaturality
 public import FLT.Mazur.HilbertOrbitBoundaryLocalizedNumerators
 public import FLT.Mazur.HilbertOrbitBoundaryPointLocalizedLifts
+public import FLT.Mazur.HilbertOrbitBoundaryPointSolvabilityLocus
 public import FLT.Mazur.HilbertOrbitBoundaryPointSpreading
 public import FLT.Mazur.HilbertOrbitBoundaryPrincipalNumerators
 public import FLT.Mazur.HilbertOrbitBoundaryScaledMultipliers
