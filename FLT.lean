@@ -8359,6 +8359,7 @@ public import FLT.Mazur.PolygonSmoothingDifferenceIdeal
 public import FLT.Mazur.PolygonSmoothingFirstConstantCoefficients
 public import FLT.Mazur.PolygonSmoothingFirstCotangent
 public import FLT.Mazur.PolygonSmoothingFirstCotangentBaseChange
+public import FLT.Mazur.PolygonSmoothingFirstIncomingCoefficients
 public import FLT.Mazur.PolygonSmoothingFirstLaurentLifts
 public import FLT.Mazur.PolygonSmoothingFlat
 public import FLT.Mazur.PolygonSmoothingGenericFiber
