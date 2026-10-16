@@ -4701,6 +4701,7 @@ public import FLT.Mazur.FaithfulNeighborhoodCurve
 public import FLT.Mazur.FaithfulTensorVanishing
 public import FLT.Mazur.FaithfullyFlatFinitePresentation
 public import FLT.Mazur.FaithfullyFlatInvertible
+public import FLT.Mazur.FaithfullyFlatSectionLift
 public import FLT.Mazur.FaithfullyFlatTowerReflection
 public import FLT.Mazur.FamilyTransport
 public import FLT.Mazur.FiberAffineOpenBaseChange
@@ -5108,6 +5109,8 @@ public import FLT.Mazur.FlatQuotientLocalCartier
 public import FLT.Mazur.FlatScalarExactness
 public import FLT.Mazur.FlatScalarHomology
 public import FLT.Mazur.FlatSectionEqualizer
+public import FLT.Mazur.FlatSectionLiftCertificate
+public import FLT.Mazur.FlatSectionLiftIdeal
 public import FLT.Mazur.FlatSourceSectionKernel
 public import FLT.Mazur.FlatSpectrumStructureRank
 public import FLT.Mazur.FlatStructureCohomology
@@ -5547,6 +5550,8 @@ public import FLT.Mazur.HilbertBoundaryClosedRelation
 public import FLT.Mazur.HilbertBoundaryEtaleIdeals
 public import FLT.Mazur.HilbertBoundaryEtaleLift
 public import FLT.Mazur.HilbertBoundaryFiniteLiftCover
+public import FLT.Mazur.HilbertBoundaryFlatCertificate
+public import FLT.Mazur.HilbertBoundaryFlatCommonCover
 public import FLT.Mazur.HilbertBoundaryInfinitesimalArrows
 public import FLT.Mazur.HilbertBoundaryKernelPair
 public import FLT.Mazur.HilbertBoundaryLiftLocus
@@ -9941,7 +9946,9 @@ public import FLT.Mazur.SectionGradedStructuralAlgebra
 public import FLT.Mazur.SectionGradedSum
 public import FLT.Mazur.SectionGradedUnit
 public import FLT.Mazur.SectionKernelLocal
+public import FLT.Mazur.SectionLiftBaseChange
 public import FLT.Mazur.SectionLiftCertificatePolynomial
+public import FLT.Mazur.SectionLiftCertificateSourceChange
 public import FLT.Mazur.SectionLiftIdeal
 public import FLT.Mazur.SectionLiftIdealAlgebra
 public import FLT.Mazur.SectionLiftSimultaneousCertificate
