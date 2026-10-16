@@ -12710,6 +12710,7 @@ public import FLT.Mazur.WeierstrassInfinityNegationAddition
 public import FLT.Mazur.WeierstrassInfinityNegationChart
 public import FLT.Mazur.WeierstrassInfinityNegationFormula
 public import FLT.Mazur.WeierstrassInfinityNegationInvolution
+public import FLT.Mazur.WeierstrassInfinityNilpotentDenominator
 public import FLT.Mazur.WeierstrassInfinityNormalizedLine
 public import FLT.Mazur.WeierstrassInfinityOutputComparison
 public import FLT.Mazur.WeierstrassInfinityOutputParameter
