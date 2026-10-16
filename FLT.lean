@@ -6621,6 +6621,7 @@ public import FLT.Mazur.NodalFiberPunctureCoefficientMap
 public import FLT.Mazur.NodalFiberSmoothingComparison
 public import FLT.Mazur.NodalFiberUnitComparison
 public import FLT.Mazur.NodalFiberUnitScaling
+public import FLT.Mazur.NodalFiberUnitScalingBoundary
 public import FLT.Mazur.NodalFiberUnitScalingGeometry
 public import FLT.Mazur.NodalFiberUnitScalingNaturality
 public import FLT.Mazur.NodalFiberUnitScalingParameters
