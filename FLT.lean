@@ -7849,6 +7849,7 @@ public import FLT.Mazur.PolygonCompleteIdentityTopBoundary
 public import FLT.Mazur.PolygonCompleteIdentityTopCorrection
 public import FLT.Mazur.PolygonCompleteIdentityTopDefect
 public import FLT.Mazur.PolygonCompleteIdentityTopLinearization
+public import FLT.Mazur.PolygonCompleteIdentityTopNodeBoundary
 public import FLT.Mazur.PolygonCompleteIdentityTopObstruction
 public import FLT.Mazur.PolygonCompleteIdentityTopObstructionCocycle
 public import FLT.Mazur.PolygonCompleteIdentityTopPointCocycle
