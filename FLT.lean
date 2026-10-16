@@ -11343,6 +11343,7 @@ public import FLT.Mazur.WeierstrassDividedArithmeticInitialSlope
 public import FLT.Mazur.WeierstrassDividedArithmeticLabeledAtlas
 public import FLT.Mazur.WeierstrassDividedArithmeticLabeledCharts
 public import FLT.Mazur.WeierstrassDividedArithmeticLabeledCoverage
+public import FLT.Mazur.WeierstrassDividedArithmeticLabeledInitialOverlap
 public import FLT.Mazur.WeierstrassDividedArithmeticNodeCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticNodeOpen
 public import FLT.Mazur.WeierstrassDividedArithmeticNonadjacentIntersection
