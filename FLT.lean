@@ -9930,6 +9930,7 @@ public import FLT.Mazur.SectionGradedStructuralAlgebra
 public import FLT.Mazur.SectionGradedSum
 public import FLT.Mazur.SectionGradedUnit
 public import FLT.Mazur.SectionKernelLocal
+public import FLT.Mazur.SectionLiftCertificatePolynomial
 public import FLT.Mazur.SectionLiftIdeal
 public import FLT.Mazur.SectionLiftIdealAlgebra
 public import FLT.Mazur.SectionLiftSourceCertificate
