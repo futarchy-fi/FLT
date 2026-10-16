@@ -7868,6 +7868,7 @@ public import FLT.Mazur.PolygonCompleteIdentityTopBoundary
 public import FLT.Mazur.PolygonCompleteIdentityTopBranchOriginal
 public import FLT.Mazur.PolygonCompleteIdentityTopChartAmbientSocle
 public import FLT.Mazur.PolygonCompleteIdentityTopChartAmbientSource
+public import FLT.Mazur.PolygonCompleteIdentityTopChartAmbientTarget
 public import FLT.Mazur.PolygonCompleteIdentityTopChartBranchImage
 public import FLT.Mazur.PolygonCompleteIdentityTopChartBranchQuotient
 public import FLT.Mazur.PolygonCompleteIdentityTopChartClosedLayer
