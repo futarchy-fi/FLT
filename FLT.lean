@@ -10332,6 +10332,7 @@ public import FLT.Mazur.TensorPowerPullbackSquare
 public import FLT.Mazur.TensorPowerReassociation
 public import FLT.Mazur.TensorPullbackComposition
 public import FLT.Mazur.TensorPullbackIdentity
+public import FLT.Mazur.TensorSpectrumExt
 public import FLT.Mazur.TernaryOpenDescent
 public import FLT.Mazur.TildeFiniteFreeLocalization
 public import FLT.Mazur.TildeInvertibleLocal
