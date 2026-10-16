@@ -11594,6 +11594,8 @@ public import FLT.Mazur.WeierstrassDilatationDepthTransition
 public import FLT.Mazur.WeierstrassDilatationExtendedCast
 public import FLT.Mazur.WeierstrassDilatationExtendedTangent
 public import FLT.Mazur.WeierstrassDilatationFiberNormalForm
+public import FLT.Mazur.WeierstrassDilatationFixedTerminalPolygon
+public import FLT.Mazur.WeierstrassDilatationFixedTerminalUnit
 public import FLT.Mazur.WeierstrassDilatationFractionMap
 public import FLT.Mazur.WeierstrassDilatationGenerators
 public import FLT.Mazur.WeierstrassDilatationGenericFiber
@@ -11984,6 +11986,7 @@ public import FLT.Mazur.WeierstrassDividedFirstInfinityFactorization
 public import FLT.Mazur.WeierstrassDividedFirstOutputCover
 public import FLT.Mazur.WeierstrassDividedFirstSuccessorAction
 public import FLT.Mazur.WeierstrassDividedFirstUnitAction
+public import FLT.Mazur.WeierstrassDividedFixedTerminalBoundary
 public import FLT.Mazur.WeierstrassDividedFullInfinityFactorRatioMap
 public import FLT.Mazur.WeierstrassDividedFullInfinityFactorRatioNaturality
 public import FLT.Mazur.WeierstrassDividedFullResidueAtlas
@@ -12135,6 +12138,7 @@ public import FLT.Mazur.WeierstrassDividedLaurentZeroRetainedIntersection
 public import FLT.Mazur.WeierstrassDividedLinearResidueBounds
 public import FLT.Mazur.WeierstrassDividedLocalComponentContraction
 public import FLT.Mazur.WeierstrassDividedLocalizedIntersection
+public import FLT.Mazur.WeierstrassDividedLowerData
 public import FLT.Mazur.WeierstrassDividedNilpotentEarlierTerminal
 public import FLT.Mazur.WeierstrassDividedNilpotentInfinity
 public import FLT.Mazur.WeierstrassDividedNilpotentNonadjacentIntersection
@@ -12442,6 +12446,8 @@ public import FLT.Mazur.WeierstrassDividedSplitCycleCommonNode
 public import FLT.Mazur.WeierstrassDividedSplitCycleConstancy
 public import FLT.Mazur.WeierstrassDividedSplitGeometricContraction
 public import FLT.Mazur.WeierstrassDividedSplitNormalizationComparison
+public import FLT.Mazur.WeierstrassDividedStartOneAtlas
+public import FLT.Mazur.WeierstrassDividedStartOneData
 public import FLT.Mazur.WeierstrassDividedSuccessiveOriginalY
 public import FLT.Mazur.WeierstrassDividedSuccessorActionAtlas
 public import FLT.Mazur.WeierstrassDividedSuccessorActionInput
@@ -13738,13 +13744,17 @@ public import FLT.Mazur.WeierstrassSplitDepthConormal
 public import FLT.Mazur.WeierstrassSplitDepthExceptionalBranches
 public import FLT.Mazur.WeierstrassSplitDepthExceptionalCharacters
 public import FLT.Mazur.WeierstrassSplitDepthExceptionalScaling
+public import FLT.Mazur.WeierstrassSplitDepthFixedTerminal
 public import FLT.Mazur.WeierstrassSplitDepthHorizontalOutputUnit
 public import FLT.Mazur.WeierstrassSplitDepthNormalizedDividedAction
 public import FLT.Mazur.WeierstrassSplitDepthNormalizedFractionAction
 public import FLT.Mazur.WeierstrassSplitDepthNormalizedQuotientAction
 public import FLT.Mazur.WeierstrassSplitDepthOriginalFractionAction
+public import FLT.Mazur.WeierstrassSplitDepthPrimitiveTerminal
 public import FLT.Mazur.WeierstrassSplitDepthResidueEquation
+public import FLT.Mazur.WeierstrassSplitDepthRetainedComparison
 public import FLT.Mazur.WeierstrassSplitDepthSecantResidue
+public import FLT.Mazur.WeierstrassSplitDepthStartOneAtlas
 public import FLT.Mazur.WeierstrassSplitDepthTerminalSmoothing
 public import FLT.Mazur.WeierstrassSplitInfinityParameterOpen
 public import FLT.Mazur.WeierstrassSplitInfinitySlopeCompatibility
