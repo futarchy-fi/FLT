@@ -6313,6 +6313,7 @@ public import FLT.Mazur.LaurentReciprocalSubstitution
 public import FLT.Mazur.LaurentRingSurjectivity
 public import FLT.Mazur.LaurentScaledCoordinateIsomorphisms
 public import FLT.Mazur.LaurentScaledEvaluationCoefficients
+public import FLT.Mazur.LaurentScaledNilpotentReparametrization
 public import FLT.Mazur.LaurentSchemeCoordinates
 public import FLT.Mazur.LaurentSquareZeroCocycle
 public import FLT.Mazur.LaurentSquareZeroCoordinate
@@ -11851,6 +11852,7 @@ public import FLT.Mazur.WeierstrassDividedCanonicalInfinityFactorRatio
 public import FLT.Mazur.WeierstrassDividedCanonicalInfinityFactorRatioTransport
 public import FLT.Mazur.WeierstrassDividedChartCubicAction
 public import FLT.Mazur.WeierstrassDividedChartRegularCenter
+public import FLT.Mazur.WeierstrassDividedClosingTangentConstraint
 public import FLT.Mazur.WeierstrassDividedCoefficientActionIndexTransport
 public import FLT.Mazur.WeierstrassDividedCoefficientInputs
 public import FLT.Mazur.WeierstrassDividedCoefficientShear
@@ -12005,6 +12007,8 @@ public import FLT.Mazur.WeierstrassDividedFirstOutputCover
 public import FLT.Mazur.WeierstrassDividedFirstSuccessorAction
 public import FLT.Mazur.WeierstrassDividedFirstUnitAction
 public import FLT.Mazur.WeierstrassDividedFixedTerminalBoundary
+public import FLT.Mazur.WeierstrassDividedFixedTerminalParameterIso
+public import FLT.Mazur.WeierstrassDividedFixedTerminalReduction
 public import FLT.Mazur.WeierstrassDividedFullInfinityFactorRatioMap
 public import FLT.Mazur.WeierstrassDividedFullInfinityFactorRatioNaturality
 public import FLT.Mazur.WeierstrassDividedFullResidueAtlas
@@ -12426,6 +12430,8 @@ public import FLT.Mazur.WeierstrassDividedResidueNormalizationCompatibility
 public import FLT.Mazur.WeierstrassDividedResidueOrderedNormalization
 public import FLT.Mazur.WeierstrassDividedResidueSplitCubic
 public import FLT.Mazur.WeierstrassDividedResidueTangentNormalization
+public import FLT.Mazur.WeierstrassDividedRetainedClosingIso
+public import FLT.Mazur.WeierstrassDividedRetainedClosingUnit
 public import FLT.Mazur.WeierstrassDividedRetainedExteriorIntersection
 public import FLT.Mazur.WeierstrassDividedRetainedFactorRatioPolygon
 public import FLT.Mazur.WeierstrassDividedRetainedLineAt
@@ -12518,6 +12524,7 @@ public import FLT.Mazur.WeierstrassDividedTerminalConicCoordinates
 public import FLT.Mazur.WeierstrassDividedTerminalConicCover
 public import FLT.Mazur.WeierstrassDividedTerminalCrossedIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalCyclicTori
+public import FLT.Mazur.WeierstrassDividedTerminalEdgeCorrection
 public import FLT.Mazur.WeierstrassDividedTerminalExtendedEmptyIntersections
 public import FLT.Mazur.WeierstrassDividedTerminalFullConicIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalHorizontalCyclicAction
@@ -13576,12 +13583,15 @@ public import FLT.Mazur.WeierstrassRetainedArithmeticFactorRatio
 public import FLT.Mazur.WeierstrassRetainedArithmeticFactorRatioRestriction
 public import FLT.Mazur.WeierstrassRetainedCoefficientShearChart
 public import FLT.Mazur.WeierstrassRetainedCorrectionTransport
+public import FLT.Mazur.WeierstrassRetainedDepthEdgeUnit
 public import FLT.Mazur.WeierstrassRetainedDepthScale
+public import FLT.Mazur.WeierstrassRetainedFactorReduction
 public import FLT.Mazur.WeierstrassRetainedFixedBoundary
 public import FLT.Mazur.WeierstrassRetainedFixedEdgeUnit
 public import FLT.Mazur.WeierstrassRetainedFixedNaturality
 public import FLT.Mazur.WeierstrassRetainedFixedPolygon
 public import FLT.Mazur.WeierstrassRetainedFixedSmoothing
+public import FLT.Mazur.WeierstrassRetainedFixedTerminalEdges
 public import FLT.Mazur.WeierstrassRetainedNodeFactor
 public import FLT.Mazur.WeierstrassRetainedNodeFactorNaturality
 public import FLT.Mazur.WeierstrassRetainedNodeFactorRatioBoundary
@@ -13758,6 +13768,7 @@ public import FLT.Mazur.WeierstrassSpecializationGroup
 public import FLT.Mazur.WeierstrassSplitCompleteNormalization
 public import FLT.Mazur.WeierstrassSplitDepthAffineParameters
 public import FLT.Mazur.WeierstrassSplitDepthArithmeticNodeOpen
+public import FLT.Mazur.WeierstrassSplitDepthClosingEdges
 public import FLT.Mazur.WeierstrassSplitDepthConormal
 public import FLT.Mazur.WeierstrassSplitDepthExceptionalBranches
 public import FLT.Mazur.WeierstrassSplitDepthExceptionalCharacters
