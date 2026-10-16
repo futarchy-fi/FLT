@@ -9410,6 +9410,7 @@ public import FLT.Mazur.RelativeTupleCollision
 public import FLT.Mazur.RelativeTupleCompletenessLocus
 public import FLT.Mazur.RelativeTupleOpenEmbedding
 public import FLT.Mazur.RelativeTupleSections
+public import FLT.Mazur.RelativeUniversalDistinctLift
 public import FLT.Mazur.RelativeVeryAmpleLineBundle
 public import FLT.Mazur.RepeatedCubicRoots
 public import FLT.Mazur.ResidualStrictCoefficientGenerizations
