@@ -13576,6 +13576,7 @@ public import FLT.Mazur.WeierstrassRetainedCoefficientShearChart
 public import FLT.Mazur.WeierstrassRetainedCorrectionTransport
 public import FLT.Mazur.WeierstrassRetainedDepthEdgeUnit
 public import FLT.Mazur.WeierstrassRetainedDepthScale
+public import FLT.Mazur.WeierstrassRetainedEdgeUnitNaturality
 public import FLT.Mazur.WeierstrassRetainedFactorReduction
 public import FLT.Mazur.WeierstrassRetainedFixedBoundary
 public import FLT.Mazur.WeierstrassRetainedFixedEdgeUnit
