@@ -12906,6 +12906,7 @@ public import FLT.Mazur.WeierstrassModificationXFullSecondNode
 public import FLT.Mazur.WeierstrassModificationXFullSecondNodeBranches
 public import FLT.Mazur.WeierstrassModificationXGenerators
 public import FLT.Mazur.WeierstrassModificationXIncidenceBranchCover
+public import FLT.Mazur.WeierstrassModificationXIncidenceInitialBoundary
 public import FLT.Mazur.WeierstrassModificationXIncidenceLaurentBoundary
 public import FLT.Mazur.WeierstrassModificationXIncidenceLineSections
 public import FLT.Mazur.WeierstrassModificationXIncidenceNodeMap
