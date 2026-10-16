@@ -6239,6 +6239,7 @@ public import FLT.Mazur.LaurentFirstStageParameterTorus
 public import FLT.Mazur.LaurentIdentityIdeal
 public import FLT.Mazur.LaurentLineActionDensity
 public import FLT.Mazur.LaurentLineActionEvaluation
+public import FLT.Mazur.LaurentNilpotentReparametrization
 public import FLT.Mazur.LaurentNodePrincipalParts
 public import FLT.Mazur.LaurentNormalizedReduction
 public import FLT.Mazur.LaurentPairCoefficientNaturality
@@ -6659,6 +6660,7 @@ public import FLT.Mazur.NeronPolygonRotationAction
 public import FLT.Mazur.NeronPolygonScaling
 public import FLT.Mazur.NestedOpenCohomologyCoherence
 public import FLT.Mazur.NeutralTwistDirectImage
+public import FLT.Mazur.NilpotentAlgebraAutomorphism
 public import FLT.Mazur.NilpotentClosedRestriction
 public import FLT.Mazur.NilpotentIdealContraction
 public import FLT.Mazur.NilpotentIdealSocle
@@ -12970,6 +12972,9 @@ public import FLT.Mazur.WeierstrassModificationXContractionOverlap
 public import FLT.Mazur.WeierstrassModificationXCoordinateCasts
 public import FLT.Mazur.WeierstrassModificationXExtendedCastEvaluation
 public import FLT.Mazur.WeierstrassModificationXExtendedNormalEvaluation
+public import FLT.Mazur.WeierstrassModificationXFactorGapUnits
+public import FLT.Mazur.WeierstrassModificationXFactorRatioBoundary
+public import FLT.Mazur.WeierstrassModificationXFactorRatioMap
 public import FLT.Mazur.WeierstrassModificationXFiberBranches
 public import FLT.Mazur.WeierstrassModificationXFiberConic
 public import FLT.Mazur.WeierstrassModificationXFiberConicGeometry
@@ -13035,7 +13040,12 @@ public import FLT.Mazur.WeierstrassModificationXIncidenceSectionMaps
 public import FLT.Mazur.WeierstrassModificationXInitialInfinityTensor
 public import FLT.Mazur.WeierstrassModificationXInitialInfinityTransition
 public import FLT.Mazur.WeierstrassModificationXInitialMobiusEquiv
+public import FLT.Mazur.WeierstrassModificationXInitialMobiusInfinityBoundary
 public import FLT.Mazur.WeierstrassModificationXInitialMobiusLaurentBoundary
+public import FLT.Mazur.WeierstrassModificationXInitialMobiusLaurentCoefficient
+public import FLT.Mazur.WeierstrassModificationXInitialMobiusLaurentEquiv
+public import FLT.Mazur.WeierstrassModificationXInitialMobiusLaurentNaturality
+public import FLT.Mazur.WeierstrassModificationXInitialMobiusLaurentReduction
 public import FLT.Mazur.WeierstrassModificationXInitialMobiusNormalization
 public import FLT.Mazur.WeierstrassModificationXInitialPolygonBoundary
 public import FLT.Mazur.WeierstrassModificationXInitialPolygonChart
@@ -13075,6 +13085,9 @@ public import FLT.Mazur.WeierstrassModificationXNodeOpenCoefficientTransport
 public import FLT.Mazur.WeierstrassModificationXNodeOverlap
 public import FLT.Mazur.WeierstrassModificationXNodeOverlapDenominator
 public import FLT.Mazur.WeierstrassModificationXNodeOverlapInfinityIso
+public import FLT.Mazur.WeierstrassModificationXNodeOverlapMobiusBoundary
+public import FLT.Mazur.WeierstrassModificationXNodeOverlapMobiusCorrection
+public import FLT.Mazur.WeierstrassModificationXNodeOverlapMobiusUnits
 public import FLT.Mazur.WeierstrassModificationXNodeOverlapOppositeCoordinates
 public import FLT.Mazur.WeierstrassModificationXNodeOverlapOppositeEvaluation
 public import FLT.Mazur.WeierstrassModificationXNodeOverlapRatio
@@ -13086,6 +13099,7 @@ public import FLT.Mazur.WeierstrassModificationXOriginalLocalization
 public import FLT.Mazur.WeierstrassModificationXOverlap
 public import FLT.Mazur.WeierstrassModificationXOverlapRatioReflection
 public import FLT.Mazur.WeierstrassModificationXPolynomialCoefficientNaturality
+public import FLT.Mazur.WeierstrassModificationXPolynomialFactorRatioMap
 public import FLT.Mazur.WeierstrassModificationXPolynomialFactors
 public import FLT.Mazur.WeierstrassModificationXPolynomialNodeBackward
 public import FLT.Mazur.WeierstrassModificationXPolynomialNodeCover
