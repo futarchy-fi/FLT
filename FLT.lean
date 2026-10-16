@@ -13054,6 +13054,7 @@ public import FLT.Mazur.WeierstrassModificationXZeroMobiusChart
 public import FLT.Mazur.WeierstrassModificationXZeroNodeOverlap
 public import FLT.Mazur.WeierstrassModificationXZeroNodeOverlapBranches
 public import FLT.Mazur.WeierstrassModificationXZeroNodeOverlapFactors
+public import FLT.Mazur.WeierstrassModificationXZeroNodeOverlapFractions
 public import FLT.Mazur.WeierstrassModificationXZeroResidue
 public import FLT.Mazur.WeierstrassModificationXZeroResidueBoundary
 public import FLT.Mazur.WeierstrassModificationXZeroResidueGeometry
