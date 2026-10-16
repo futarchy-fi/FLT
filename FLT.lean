@@ -3528,6 +3528,7 @@ public import FLT.Mazur.BlowupReesRatioRight
 public import FLT.Mazur.BlowupReesRatioScheme
 public import FLT.Mazur.BlowupReesRatioTransition
 public import FLT.Mazur.BlowupReesZeroComponent
+public import FLT.Mazur.BoundaryCorrectionIdeal
 public import FLT.Mazur.BoundedFlatAcyclicNeighborhood
 public import FLT.Mazur.BoundedFlatAcyclicOpen
 public import FLT.Mazur.BoundedFlatFiberVanishing
