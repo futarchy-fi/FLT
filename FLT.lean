@@ -9950,6 +9950,7 @@ public import FLT.Mazur.SectionGradedSum
 public import FLT.Mazur.SectionGradedUnit
 public import FLT.Mazur.SectionKernelLocal
 public import FLT.Mazur.SectionLiftBaseChange
+public import FLT.Mazur.SectionLiftCertificateEquiv
 public import FLT.Mazur.SectionLiftCertificatePolynomial
 public import FLT.Mazur.SectionLiftCertificateSourceChange
 public import FLT.Mazur.SectionLiftIdeal
