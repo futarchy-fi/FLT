@@ -11967,6 +11967,7 @@ public import FLT.Mazur.WeierstrassDividedClosedPolygonDescent
 public import FLT.Mazur.WeierstrassDividedClosedPolygonLocalIso
 public import FLT.Mazur.WeierstrassDividedClosedPolygonSeparation
 public import FLT.Mazur.WeierstrassDividedClosedRetainedIntersection
+public import FLT.Mazur.WeierstrassDividedClosedRetainedTerminalIntersection
 public import FLT.Mazur.WeierstrassDividedClosedTerminalNormalization
 public import FLT.Mazur.WeierstrassDividedClosingAttachmentRestriction
 public import FLT.Mazur.WeierstrassDividedClosingAttachmentSystem
