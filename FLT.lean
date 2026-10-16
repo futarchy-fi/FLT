@@ -11865,6 +11865,7 @@ public import FLT.Mazur.WeierstrassDividedCanonicalInfinityFactorRatio
 public import FLT.Mazur.WeierstrassDividedCanonicalInfinityFactorRatioTransport
 public import FLT.Mazur.WeierstrassDividedChartCubicAction
 public import FLT.Mazur.WeierstrassDividedChartRegularCenter
+public import FLT.Mazur.WeierstrassDividedClosingAttachmentRestriction
 public import FLT.Mazur.WeierstrassDividedClosingTangentConstraint
 public import FLT.Mazur.WeierstrassDividedClosingTransportGluing
 public import FLT.Mazur.WeierstrassDividedClosingTransportRestriction
