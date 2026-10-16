@@ -4635,6 +4635,8 @@ public import FLT.Mazur.EnvelopeVerticalGenerizations
 public import FLT.Mazur.EqualizerDenominatorClearing
 public import FLT.Mazur.EquifiberedGluingBaseChange
 public import FLT.Mazur.EquifiberedSchemeGluing
+public import FLT.Mazur.EquivalenceRelationFiberRebase
+public import FLT.Mazur.EquivalenceRelationSectionRebase
 public import FLT.Mazur.EtaleAffineSpaceDimension
 public import FLT.Mazur.EtaleAlgebraFiniteBranch
 public import FLT.Mazur.EtaleAlgebraReduced
@@ -4681,6 +4683,7 @@ public import FLT.Mazur.EtaleFiniteGeometricDiagram
 public import FLT.Mazur.EtaleFiniteGeometricFiberSpread
 public import FLT.Mazur.EtaleFiniteQuotientBranch
 public import FLT.Mazur.EtaleFiniteSupportCartier
+public import FLT.Mazur.EtaleGeometricSectionPoints
 public import FLT.Mazur.EtaleLocalParameterIdeals
 public import FLT.Mazur.EtaleMarkingScheme
 public import FLT.Mazur.EtaleNilpotentGlue
@@ -5658,6 +5661,7 @@ public import FLT.Mazur.HilbertComplementCartesian
 public import FLT.Mazur.HilbertComplementCoordinateRing
 public import FLT.Mazur.HilbertComplementPointCompatibility
 public import FLT.Mazur.HilbertComplementSchemeCompatibility
+public import FLT.Mazur.HilbertCompleteFrameCardinality
 public import FLT.Mazur.HilbertCompleteGeometricTuple
 public import FLT.Mazur.HilbertDivisorDegreePresentation
 public import FLT.Mazur.HilbertEnvelopeSourceTransport
@@ -5676,6 +5680,7 @@ public import FLT.Mazur.HilbertFiniteAmbientPresentation
 public import FLT.Mazur.HilbertFiniteFreeQuotientRefinement
 public import FLT.Mazur.HilbertFullInteriorFiniteKernel
 public import FLT.Mazur.HilbertFullInteriorQuotientChart
+public import FLT.Mazur.HilbertFullRelationFiberRebase
 public import FLT.Mazur.HilbertFullRelationOrderedPoints
 public import FLT.Mazur.HilbertGrassmannianAffineMap
 public import FLT.Mazur.HilbertGrassmannianFamilyCompatibility
@@ -5794,6 +5799,7 @@ public import FLT.Mazur.HilbertPrincipalRestriction
 public import FLT.Mazur.HilbertProperNeighborhoodChart
 public import FLT.Mazur.HilbertQuotientDegreeBound
 public import FLT.Mazur.HilbertQuotientDegreeFiltration
+public import FLT.Mazur.HilbertRebasedCompleteFrame
 public import FLT.Mazur.HilbertReindexedCoordinateRing
 public import FLT.Mazur.HilbertRepeatedMonomialChart
 public import FLT.Mazur.HilbertSameAmbientChartIso
@@ -5805,6 +5811,7 @@ public import FLT.Mazur.HilbertTruncatedIdealDetection
 public import FLT.Mazur.HilbertTruncatedIdealGeneration
 public import FLT.Mazur.HilbertTupleBasisTower
 public import FLT.Mazur.HilbertUniversalComplementMatrix
+public import FLT.Mazur.HilbertUniversalFrameRebase
 public import FLT.Mazur.HomIntegerModel
 public import FLT.Mazur.HomogeneousFractionProjection
 public import FLT.Mazur.HomogeneousIdealWitness
@@ -9171,6 +9178,7 @@ public import FLT.Mazur.RelativeCoefficientBaseChangeEtale
 public import FLT.Mazur.RelativeCoefficientSourceCartesian
 public import FLT.Mazur.RelativeCoefficientSourceImage
 public import FLT.Mazur.RelativeComparisonFiberIso
+public import FLT.Mazur.RelativeCompleteFrameComparison
 public import FLT.Mazur.RelativeCompleteGeometricTuple
 public import FLT.Mazur.RelativeCoproductComponentPullback
 public import FLT.Mazur.RelativeCoproductPullCover
@@ -9415,6 +9423,7 @@ public import FLT.Mazur.RelativeTupleCollision
 public import FLT.Mazur.RelativeTupleCompletenessLocus
 public import FLT.Mazur.RelativeTupleOpenEmbedding
 public import FLT.Mazur.RelativeTupleSections
+public import FLT.Mazur.RelativeUniversalDistinctLift
 public import FLT.Mazur.RelativeVeryAmpleLineBundle
 public import FLT.Mazur.RepeatedCubicRoots
 public import FLT.Mazur.ResidualStrictCoefficientGenerizations
