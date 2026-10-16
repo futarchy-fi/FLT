@@ -7751,6 +7751,7 @@ public import FLT.Mazur.PolygonCompletePointDimensions
 public import FLT.Mazur.PolygonCompletePointDivisorComparison
 public import FLT.Mazur.PolygonCompletePointExactMonomials
 public import FLT.Mazur.PolygonCompletePointFirstAdjacentCoefficients
+public import FLT.Mazur.PolygonCompletePointFirstConstantEdges
 public import FLT.Mazur.PolygonCompletePointFirstFiniteNumerators
 public import FLT.Mazur.PolygonCompletePointFirstNegativeVanishing
 public import FLT.Mazur.PolygonCompletePointFirstNodeSubstitution
