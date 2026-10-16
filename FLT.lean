@@ -6231,6 +6231,7 @@ public import FLT.Mazur.LaurentPairSwap
 public import FLT.Mazur.LaurentPairUnitSections
 public import FLT.Mazur.LaurentPairUniversalUnits
 public import FLT.Mazur.LaurentPositivePart
+public import FLT.Mazur.LaurentReciprocalFiniteLifts
 public import FLT.Mazur.LaurentReciprocalSubstitution
 public import FLT.Mazur.LaurentRingSurjectivity
 public import FLT.Mazur.LaurentScaledCoordinateIsomorphisms
@@ -6689,6 +6690,7 @@ public import FLT.Mazur.NodeNonsplitTangent
 public import FLT.Mazur.NodeNormalizationBaseChange
 public import FLT.Mazur.NodePinchingDescent
 public import FLT.Mazur.NodePinchingExistence
+public import FLT.Mazur.NodePoleCoordinateExtraction
 public import FLT.Mazur.NodePolynomialVectorField
 public import FLT.Mazur.NodePuncturedDenominatorRestriction
 public import FLT.Mazur.NodeQuotient
@@ -7817,9 +7819,11 @@ public import FLT.Mazur.PolygonCompletePointFirstEndpointCoefficients
 public import FLT.Mazur.PolygonCompletePointFirstFiniteNumerators
 public import FLT.Mazur.PolygonCompletePointFirstIncomingTail
 public import FLT.Mazur.PolygonCompletePointFirstIncomingValues
+public import FLT.Mazur.PolygonCompletePointFirstLocalizedCoordinateExtraction
 public import FLT.Mazur.PolygonCompletePointFirstLocalizedMarkingForms
 public import FLT.Mazur.PolygonCompletePointFirstMarkingForms
 public import FLT.Mazur.PolygonCompletePointFirstNegativeVanishing
+public import FLT.Mazur.PolygonCompletePointFirstNodeCoordinateNumerators
 public import FLT.Mazur.PolygonCompletePointFirstNodeMarkingForms
 public import FLT.Mazur.PolygonCompletePointFirstNodePolynomial
 public import FLT.Mazur.PolygonCompletePointFirstNodeSubstitution
@@ -7831,6 +7835,10 @@ public import FLT.Mazur.PolygonCompletePointFirstOrderLine
 public import FLT.Mazur.PolygonCompletePointFirstOrderOpen
 public import FLT.Mazur.PolygonCompletePointFirstPolynomialNumerator
 public import FLT.Mazur.PolygonCompletePointFirstPrecedingCoefficients
+public import FLT.Mazur.PolygonCompletePointFirstPrecedingLifts
+public import FLT.Mazur.PolygonCompletePointFirstPrecedingLocalized
+public import FLT.Mazur.PolygonCompletePointFirstPrecedingMarkingForms
+public import FLT.Mazur.PolygonCompletePointFirstPrecedingPolynomial
 public import FLT.Mazur.PolygonCompletePointFirstUnmarkedIncoming
 public import FLT.Mazur.PolygonCompletePointFunctionDimensions
 public import FLT.Mazur.PolygonCompletePointFunctionNumerators
@@ -8383,6 +8391,7 @@ public import FLT.Mazur.PolygonSmoothingCotangentFieldRank
 public import FLT.Mazur.PolygonSmoothingCotangentRelationSequence
 public import FLT.Mazur.PolygonSmoothingDerivation
 public import FLT.Mazur.PolygonSmoothingDifferenceIdeal
+public import FLT.Mazur.PolygonSmoothingFiniteLaurentLifts
 public import FLT.Mazur.PolygonSmoothingFirstConstantCoefficients
 public import FLT.Mazur.PolygonSmoothingFirstCotangent
 public import FLT.Mazur.PolygonSmoothingFirstCotangentBaseChange
