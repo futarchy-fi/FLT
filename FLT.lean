@@ -7895,6 +7895,7 @@ public import FLT.Mazur.PolygonCompleteIdentityTopChartNodeSocle
 public import FLT.Mazur.PolygonCompleteIdentityTopChartParameterLayer
 public import FLT.Mazur.PolygonCompleteIdentityTopChartPunctureOpens
 public import FLT.Mazur.PolygonCompleteIdentityTopChartPunctures
+public import FLT.Mazur.PolygonCompleteIdentityTopChartResidualGenerators
 public import FLT.Mazur.PolygonCompleteIdentityTopChartResidualPresentation
 public import FLT.Mazur.PolygonCompleteIdentityTopChartScalars
 public import FLT.Mazur.PolygonCompleteIdentityTopChartSocleKernel
