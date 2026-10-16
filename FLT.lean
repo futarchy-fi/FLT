@@ -7924,6 +7924,7 @@ public import FLT.Mazur.PolygonCompleteIdentityTopPointCocycle
 public import FLT.Mazur.PolygonCompleteIdentityTopPolePatchGeometry
 public import FLT.Mazur.PolygonCompleteIdentityTopPolePatchMaps
 public import FLT.Mazur.PolygonCompleteIdentityTopResidualTarget
+public import FLT.Mazur.PolygonCompleteIdentityTopSourcePoleGeometry
 public import FLT.Mazur.PolygonCompleteIdentityTopSourcePoleMaps
 public import FLT.Mazur.PolygonCompleteIdentityUnitCoherence
 public import FLT.Mazur.PolygonCompleteLineCohomology
