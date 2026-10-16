@@ -6664,6 +6664,7 @@ public import FLT.Mazur.NodalFiberNodeComparison
 public import FLT.Mazur.NodalFiberParameterTransport
 public import FLT.Mazur.NodalFiberPunctureCoefficientMap
 public import FLT.Mazur.NodalFiberSmoothingComparison
+public import FLT.Mazur.NodalFiberTangentCoefficientMap
 public import FLT.Mazur.NodalFiberTangentFraction
 public import FLT.Mazur.NodalFiberTangentMobiusEquiv
 public import FLT.Mazur.NodalFiberTangentMobiusGeometry
