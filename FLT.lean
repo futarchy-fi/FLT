@@ -3449,6 +3449,7 @@ public import FLT.Mazur.BaseChangeCotangentFieldRank
 public import FLT.Mazur.BaseChangeSectionEquiv
 public import FLT.Mazur.BaseChangedPresentationModel
 public import FLT.Mazur.BaseLocalizationMap
+public import FLT.Mazur.BaseLocalizedBoundaryCorrections
 public import FLT.Mazur.BaseMarkedHilbertChangeGeometry
 public import FLT.Mazur.BaseMarkedHilbertChangePicard
 public import FLT.Mazur.BaseMarkedHilbertChangePoints
