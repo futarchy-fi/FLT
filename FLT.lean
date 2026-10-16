@@ -3447,6 +3447,7 @@ public import FLT.Mazur.BaseAdicThickening
 public import FLT.Mazur.BaseChangeCotangentFieldRank
 public import FLT.Mazur.BaseChangeSectionEquiv
 public import FLT.Mazur.BaseChangedPresentationModel
+public import FLT.Mazur.BaseLocalizationMap
 public import FLT.Mazur.BaseMarkedHilbertChangeGeometry
 public import FLT.Mazur.BaseMarkedHilbertChangePicard
 public import FLT.Mazur.BaseMarkedHilbertChangePoints
@@ -4830,6 +4831,8 @@ public import FLT.Mazur.FiniteAffineProperIntegerDescent
 public import FLT.Mazur.FiniteAlgebraFiberSurjective
 public import FLT.Mazur.FiniteAlgebraSpectrumCard
 public import FLT.Mazur.FiniteArrowIntegerModel
+public import FLT.Mazur.FiniteBaseLocalizationDenominators
+public import FLT.Mazur.FiniteBaseLocalizedBoundaryLifts
 public import FLT.Mazur.FiniteBoundaryEqualizerClearing
 public import FLT.Mazur.FiniteCartierIsomorphismNeighborhood
 public import FLT.Mazur.FiniteCartierLocalizedComparison
@@ -5850,6 +5853,8 @@ public import FLT.Mazur.HilbertOrbitBoundaryAtlas
 public import FLT.Mazur.HilbertOrbitBoundaryAtlasDescent
 public import FLT.Mazur.HilbertOrbitBoundaryAtlasLifts
 public import FLT.Mazur.HilbertOrbitBoundaryAtlasOriginalLift
+public import FLT.Mazur.HilbertOrbitBoundaryBaseLocalizationMaps
+public import FLT.Mazur.HilbertOrbitBoundaryBaseLocalizedMultipliers
 public import FLT.Mazur.HilbertOrbitBoundaryFamilyLifts
 public import FLT.Mazur.HilbertOrbitBoundaryFiniteAtlas
 public import FLT.Mazur.HilbertOrbitBoundaryFiniteDescent
@@ -5863,6 +5868,9 @@ public import FLT.Mazur.HilbertOrbitBoundaryLocalizedMaps
 public import FLT.Mazur.HilbertOrbitBoundaryLocalizedMultipliers
 public import FLT.Mazur.HilbertOrbitBoundaryLocalizedNaturality
 public import FLT.Mazur.HilbertOrbitBoundaryLocalizedNumerators
+public import FLT.Mazur.HilbertOrbitBoundaryPointLocalizedLifts
+public import FLT.Mazur.HilbertOrbitBoundaryPointSpreading
+public import FLT.Mazur.HilbertOrbitBoundaryPrincipalNumerators
 public import FLT.Mazur.HilbertOrbitBoundaryScaledMultipliers
 public import FLT.Mazur.HilbertOrderedAffineEnvelope
 public import FLT.Mazur.HilbertOrderedOriginalBoundary
@@ -8800,6 +8808,7 @@ public import FLT.Mazur.PrincipalBipartiteEquationStages
 public import FLT.Mazur.PrincipalBipartiteLimits
 public import FLT.Mazur.PrincipalBipartiteRelations
 public import FLT.Mazur.PrincipalBipartiteStages
+public import FLT.Mazur.PrincipalBoundaryNumeratorSolutions
 public import FLT.Mazur.PrincipalChartIntegerDescent
 public import FLT.Mazur.PrincipalChartOpenImmersion
 public import FLT.Mazur.PrincipalClosedCohomology
@@ -9728,6 +9737,7 @@ public import FLT.Mazur.RelativeRelationOrbit
 public import FLT.Mazur.RelativeRelationOrbitCoequalizer
 public import FLT.Mazur.RelativeRelationOrbitOpens
 public import FLT.Mazur.RelativeRelationOrbitTopology
+public import FLT.Mazur.RelativeRelationPointDenominators
 public import FLT.Mazur.RelativeRelationPrincipalLifting
 public import FLT.Mazur.RelativeRelationPrincipalRestriction
 public import FLT.Mazur.RelativeRelationPrincipalTorsion
