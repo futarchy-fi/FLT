@@ -3078,6 +3078,7 @@ public import FLT.Mazur.AffinePieceSectionLocalization
 public import FLT.Mazur.AffinePreimageRestrictionPushout
 public import FLT.Mazur.AffinePresentedSectionFractions
 public import FLT.Mazur.AffinePrincipalComparisonIso
+public import FLT.Mazur.AffinePrincipalEquationLift
 public import FLT.Mazur.AffinePrincipalKernel
 public import FLT.Mazur.AffineProductMap
 public import FLT.Mazur.AffineProductNormFiber
@@ -3487,6 +3488,7 @@ public import FLT.Mazur.BaseOpenHilbertRelationOpenSections
 public import FLT.Mazur.BaseOpenHilbertRestrictedRelation
 public import FLT.Mazur.BinaryOpenDescent
 public import FLT.Mazur.BivariateCoordinateDifference
+public import FLT.Mazur.BivariateFractionDifference
 public import FLT.Mazur.BlowupFractionActionCover
 public import FLT.Mazur.BlowupFractionChart
 public import FLT.Mazur.BlowupFractionChartExt
@@ -5084,6 +5086,7 @@ public import FLT.Mazur.FixedModelElementLifts
 public import FLT.Mazur.FixedTargetIntegerModel
 public import FLT.Mazur.FlasqueDirectImageAcyclic
 public import FLT.Mazur.FlatAlgebraEqualizer
+public import FLT.Mazur.FlatAlgebraEqualizerNaturality
 public import FLT.Mazur.FlatCartesianSectionGluing
 public import FLT.Mazur.FlatCartierIdealPullback
 public import FLT.Mazur.FlatCoefficientAllCohomology
@@ -5473,6 +5476,9 @@ public import FLT.Mazur.GroundChartOriginalQuotientOpenImmersion
 public import FLT.Mazur.GroundChartOriginalQuotientTopology
 public import FLT.Mazur.GroundChartOriginalResidualDescent
 public import FLT.Mazur.GroundChartRelationDiagonal
+public import FLT.Mazur.GroundFlatEqualizerCertificate
+public import FLT.Mazur.GroundFlatSectionLiftCertificate
+public import FLT.Mazur.GroundFlatSectionLiftIdeal
 public import FLT.Mazur.GroupActionPointTranslation
 public import FLT.Mazur.GroupMarkingBaseChange
 public import FLT.Mazur.GroupMarkingBaseChangeInverse
@@ -5552,6 +5558,7 @@ public import FLT.Mazur.HilbertBoundaryEtaleLift
 public import FLT.Mazur.HilbertBoundaryFiniteLiftCover
 public import FLT.Mazur.HilbertBoundaryFlatCertificate
 public import FLT.Mazur.HilbertBoundaryFlatCommonCover
+public import FLT.Mazur.HilbertBoundaryGroundCertificate
 public import FLT.Mazur.HilbertBoundaryInfinitesimalArrows
 public import FLT.Mazur.HilbertBoundaryKernelPair
 public import FLT.Mazur.HilbertBoundaryLiftLocus
@@ -7486,11 +7493,15 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstCompleteSmoothing
 public import FLT.Mazur.PolygonCompleteIdentityFirstCoordinateDescent
 public import FLT.Mazur.PolygonCompleteIdentityFirstCorrection
 public import FLT.Mazur.PolygonCompleteIdentityFirstCubicErrorCriterion
+public import FLT.Mazur.PolygonCompleteIdentityFirstCubicFractionErrors
 public import FLT.Mazur.PolygonCompleteIdentityFirstCubicFractions
+public import FLT.Mazur.PolygonCompleteIdentityFirstCubicSourceRemainders
 public import FLT.Mazur.PolygonCompleteIdentityFirstDefectDerivation
 public import FLT.Mazur.PolygonCompleteIdentityFirstDefectFormula
 public import FLT.Mazur.PolygonCompleteIdentityFirstDefectProduct
 public import FLT.Mazur.PolygonCompleteIdentityFirstFourCoordinates
+public import FLT.Mazur.PolygonCompleteIdentityFirstFourPolynomialErrors
+public import FLT.Mazur.PolygonCompleteIdentityFirstFractionLifts
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphAlgebra
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphBranchExt
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphBranchMaps
@@ -7530,6 +7541,8 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstNodeBoundary
 public import FLT.Mazur.PolygonCompleteIdentityFirstNodeObstruction
 public import FLT.Mazur.PolygonCompleteIdentityFirstNodePolynomials
 public import FLT.Mazur.PolygonCompleteIdentityFirstParameterEquations
+public import FLT.Mazur.PolygonCompleteIdentityFirstPoleNumeratorRemainders
+public import FLT.Mazur.PolygonCompleteIdentityFirstPolynomialConversion
 public import FLT.Mazur.PolygonCompleteIdentityFirstPolynomialErrors
 public import FLT.Mazur.PolygonCompleteIdentityFirstPolynomialRemainders
 public import FLT.Mazur.PolygonCompleteIdentityFirstPositiveNodes
@@ -7788,6 +7801,7 @@ public import FLT.Mazur.PolygonCompletePointSectionRank
 public import FLT.Mazur.PolygonCompletePointSectionRingIso
 public import FLT.Mazur.PolygonCompletePointSmoothIso
 public import FLT.Mazur.PolygonCompletePointSpecifiedBasis
+public import FLT.Mazur.PolygonCompletePointStageLineComparison
 public import FLT.Mazur.PolygonCompletePointSurjective
 public import FLT.Mazur.PolygonCompletePointTorusNeighborhood
 public import FLT.Mazur.PolygonCompletePointWeierstrassEquation
@@ -9314,6 +9328,7 @@ public import FLT.Mazur.RelativeRelationSaturationKernel
 public import FLT.Mazur.RelativeRelationSaturationSpan
 public import FLT.Mazur.RelativeRelationSimultaneousLiftCover
 public import FLT.Mazur.RelativeRelationSplitQuotient
+public import FLT.Mazur.RelativeRelationTopCoefficientCoordinates
 public import FLT.Mazur.RelativeSectionAmpleBaseChange
 public import FLT.Mazur.RelativeSectionAmpleLocality
 public import FLT.Mazur.RelativeSerreAffineAcyclic
@@ -9740,6 +9755,7 @@ public import FLT.Mazur.SchemeReducedStructureSheaf
 public import FLT.Mazur.SchemeRefinementReconstruction
 public import FLT.Mazur.SchemeRegularNormProducts
 public import FLT.Mazur.SchemeRelationArrowTransport
+public import FLT.Mazur.SchemeRelationCoefficientDiagram
 public import FLT.Mazur.SchemeRelationCoverSourceFunctions
 public import FLT.Mazur.SchemeRelationDoubleRestriction
 public import FLT.Mazur.SchemeRelationEtaleBranchPropagation
@@ -9947,6 +9963,7 @@ public import FLT.Mazur.SectionGradedSum
 public import FLT.Mazur.SectionGradedUnit
 public import FLT.Mazur.SectionKernelLocal
 public import FLT.Mazur.SectionLiftBaseChange
+public import FLT.Mazur.SectionLiftCertificateEquiv
 public import FLT.Mazur.SectionLiftCertificatePolynomial
 public import FLT.Mazur.SectionLiftCertificateSourceChange
 public import FLT.Mazur.SectionLiftIdeal
