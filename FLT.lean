@@ -5002,6 +5002,7 @@ public import FLT.Mazur.FiniteLineSheafDescent
 public import FLT.Mazur.FiniteLineSheafModel
 public import FLT.Mazur.FiniteLocalizationDenominators
 public import FLT.Mazur.FiniteLocalizedBoundaryLifts
+public import FLT.Mazur.FiniteLocalizedBoundaryMapLifts
 public import FLT.Mazur.FiniteLocalizedIdealQuotient
 public import FLT.Mazur.FiniteLocalizedIntegerComparisons
 public import FLT.Mazur.FiniteLocalizedPolynomialCoefficients
@@ -5858,6 +5859,8 @@ public import FLT.Mazur.HilbertOrbitBoundaryFiniteOriginalLift
 public import FLT.Mazur.HilbertOrbitBoundaryFiniteProducts
 public import FLT.Mazur.HilbertOrbitBoundaryFiniteScalars
 public import FLT.Mazur.HilbertOrbitBoundaryLocalizedMaps
+public import FLT.Mazur.HilbertOrbitBoundaryLocalizedNaturality
+public import FLT.Mazur.HilbertOrbitBoundaryLocalizedNumerators
 public import FLT.Mazur.HilbertOrbitBoundaryScaledMultipliers
 public import FLT.Mazur.HilbertOrderedAffineEnvelope
 public import FLT.Mazur.HilbertOrderedOriginalBoundary
@@ -12290,7 +12293,12 @@ public import FLT.Mazur.WeierstrassDividedOrderedPairCoverage
 public import FLT.Mazur.WeierstrassDividedOrderedRetainedSections
 public import FLT.Mazur.WeierstrassDividedOriginalScaleOpen
 public import FLT.Mazur.WeierstrassDividedOriginalXOpen
+public import FLT.Mazur.WeierstrassDividedPolygonClosingCriterion
+public import FLT.Mazur.WeierstrassDividedPolygonComparisonCharts
+public import FLT.Mazur.WeierstrassDividedPolygonComparisonRestriction
+public import FLT.Mazur.WeierstrassDividedPolygonExteriorComparison
 public import FLT.Mazur.WeierstrassDividedPolygonExteriorNormalization
+public import FLT.Mazur.WeierstrassDividedPolygonExteriorRestriction
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityAction
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityActionComparison
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityAllComponentAction
@@ -12621,7 +12629,9 @@ public import FLT.Mazur.WeierstrassDividedTerminalZeroCrossedIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalZeroNodalChart
 public import FLT.Mazur.WeierstrassDividedTwistedAtlas
 public import FLT.Mazur.WeierstrassDividedTwistedAtlasGluing
+public import FLT.Mazur.WeierstrassDividedTwistedAtlasRestriction
 public import FLT.Mazur.WeierstrassDividedTwistedClosingInclusion
+public import FLT.Mazur.WeierstrassDividedTwistedExteriorComparison
 public import FLT.Mazur.WeierstrassDividedZeroBoundaryFunctions
 public import FLT.Mazur.WeierstrassDividedZeroCycleAtlasAdjacentReduction
 public import FLT.Mazur.WeierstrassDividedZeroCycleAtlasCompatibility
