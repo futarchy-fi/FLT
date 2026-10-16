@@ -11762,6 +11762,7 @@ public import FLT.Mazur.WeierstrassDividedBranchPairSeparation
 public import FLT.Mazur.WeierstrassDividedCanonicalFactorRatioAffine
 public import FLT.Mazur.WeierstrassDividedCanonicalFactorRatioNaturality
 public import FLT.Mazur.WeierstrassDividedCanonicalFactorRatioTransport
+public import FLT.Mazur.WeierstrassDividedCanonicalInfinityFactorRatio
 public import FLT.Mazur.WeierstrassDividedChartCubicAction
 public import FLT.Mazur.WeierstrassDividedChartRegularCenter
 public import FLT.Mazur.WeierstrassDividedCoefficientActionIndexTransport
