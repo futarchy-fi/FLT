@@ -13504,6 +13504,7 @@ public import FLT.Mazur.WeierstrassResidueTangentEquationData
 public import FLT.Mazur.WeierstrassRetainedArithmeticFactorRatio
 public import FLT.Mazur.WeierstrassRetainedCoefficientShearChart
 public import FLT.Mazur.WeierstrassRetainedNodeFactor
+public import FLT.Mazur.WeierstrassRetainedNodeFactorNaturality
 public import FLT.Mazur.WeierstrassRetainedNodeFactorRatioBoundary
 public import FLT.Mazur.WeierstrassRetainedNodeFactorRatioLeftBoundary
 public import FLT.Mazur.WeierstrassRetainedNodeFactorRatioMap
