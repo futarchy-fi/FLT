@@ -7813,6 +7813,7 @@ public import FLT.Mazur.PolygonCompletePointFirstOrderOpen
 public import FLT.Mazur.PolygonCompletePointFirstPolynomialNumerator
 public import FLT.Mazur.PolygonCompletePointFirstPrecedingCoefficients
 public import FLT.Mazur.PolygonCompletePointFirstPrecedingLifts
+public import FLT.Mazur.PolygonCompletePointFirstPrecedingMarkingForms
 public import FLT.Mazur.PolygonCompletePointFirstPrecedingPolynomial
 public import FLT.Mazur.PolygonCompletePointFirstUnmarkedIncoming
 public import FLT.Mazur.PolygonCompletePointFunctionDimensions
