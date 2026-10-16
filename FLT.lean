@@ -11311,6 +11311,7 @@ public import FLT.Mazur.WeierstrassDividedArithmeticInitialCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialIntersection
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialLaurent
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialNodeIntersection
+public import FLT.Mazur.WeierstrassDividedArithmeticInitialNodeOverlap
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialNodes
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialSeparation
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialSlope
