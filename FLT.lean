@@ -11920,6 +11920,7 @@ public import FLT.Mazur.WeierstrassDividedChartRegularCenter
 public import FLT.Mazur.WeierstrassDividedClosedBoundaryUnits
 public import FLT.Mazur.WeierstrassDividedClosedClosingAttachment
 public import FLT.Mazur.WeierstrassDividedClosedClosingPolygonUnion
+public import FLT.Mazur.WeierstrassDividedClosedFirstInfinityIntersection
 public import FLT.Mazur.WeierstrassDividedClosedInfinityPolygonImage
 public import FLT.Mazur.WeierstrassDividedClosedPolygonCompatibility
 public import FLT.Mazur.WeierstrassDividedClosedPolygonCoverage
