@@ -8281,6 +8281,7 @@ public import FLT.Mazur.PolygonHomogeneousBoundaryEvaluation
 public import FLT.Mazur.PolygonIdealModulePullback
 public import FLT.Mazur.PolygonIncidence
 public import FLT.Mazur.PolygonIncidenceQuotient
+public import FLT.Mazur.PolygonInfinitesimalAdjacentUnion
 public import FLT.Mazur.PolygonInfinitesimalAtlas
 public import FLT.Mazur.PolygonInfinitesimalBaseChange
 public import FLT.Mazur.PolygonInfinitesimalBoundaryComparison
