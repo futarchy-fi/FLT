@@ -4642,6 +4642,7 @@ public import FLT.Mazur.EquifiberedGluingBaseChange
 public import FLT.Mazur.EquifiberedSchemeGluing
 public import FLT.Mazur.EquivalenceRelationActionInfinitesimalRigidity
 public import FLT.Mazur.EquivalenceRelationBoundaryActionGeometry
+public import FLT.Mazur.EquivalenceRelationBoundaryChartTests
 public import FLT.Mazur.EquivalenceRelationBoundaryChartTransport
 public import FLT.Mazur.EquivalenceRelationBoundaryCoefficients
 public import FLT.Mazur.EquivalenceRelationBoundaryLabelChange
