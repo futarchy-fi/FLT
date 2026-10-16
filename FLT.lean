@@ -4646,6 +4646,7 @@ public import FLT.Mazur.EquivalenceRelationNormalizedFrameCover
 public import FLT.Mazur.EquivalenceRelationNormalizedFrameEtale
 public import FLT.Mazur.EquivalenceRelationNormalizedFrameFree
 public import FLT.Mazur.EquivalenceRelationNormalizedFrameLifts
+public import FLT.Mazur.EquivalenceRelationNormalizedFrameRelation
 public import FLT.Mazur.EquivalenceRelationNormalizedFrames
 public import FLT.Mazur.EquivalenceRelationSectionRebase
 public import FLT.Mazur.EtaleAffineSpaceDimension
