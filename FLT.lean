@@ -5769,6 +5769,7 @@ public import FLT.Mazur.HilbertComplementCartesian
 public import FLT.Mazur.HilbertComplementCoordinateRing
 public import FLT.Mazur.HilbertComplementPointCompatibility
 public import FLT.Mazur.HilbertComplementSchemeCompatibility
+public import FLT.Mazur.HilbertCompleteChartBoundaryTests
 public import FLT.Mazur.HilbertCompleteChartOriginalSections
 public import FLT.Mazur.HilbertCompleteFrameCardinality
 public import FLT.Mazur.HilbertCompleteGeometricTuple
