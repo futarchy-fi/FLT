@@ -12715,6 +12715,7 @@ public import FLT.Mazur.WeierstrassDividedTerminalRetainedIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalSplitNodeBranches
 public import FLT.Mazur.WeierstrassDividedTerminalTensorActionGeometry
 public import FLT.Mazur.WeierstrassDividedTerminalTensorPointGeometry
+public import FLT.Mazur.WeierstrassDividedTerminalWeightedReduction
 public import FLT.Mazur.WeierstrassDividedTerminalZeroBoundary
 public import FLT.Mazur.WeierstrassDividedTerminalZeroBranchIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalZeroComponents
