@@ -11806,6 +11806,7 @@ public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentIndex
 public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentIntersection
 public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentSeparation
 public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentSlope
+public import FLT.Mazur.WeierstrassDividedArithmeticAffinePolygonEmbedding
 public import FLT.Mazur.WeierstrassDividedArithmeticAtlasCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticAtlasIndex
 public import FLT.Mazur.WeierstrassDividedArithmeticBoundaryCharts
