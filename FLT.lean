@@ -4830,6 +4830,7 @@ public import FLT.Mazur.FiniteAffineProperIntegerDescent
 public import FLT.Mazur.FiniteAlgebraFiberSurjective
 public import FLT.Mazur.FiniteAlgebraSpectrumCard
 public import FLT.Mazur.FiniteArrowIntegerModel
+public import FLT.Mazur.FiniteBaseLocalizationDenominators
 public import FLT.Mazur.FiniteBoundaryEqualizerClearing
 public import FLT.Mazur.FiniteCartierIsomorphismNeighborhood
 public import FLT.Mazur.FiniteCartierLocalizedComparison
