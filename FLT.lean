@@ -5556,6 +5556,7 @@ public import FLT.Mazur.HilbertBoundaryEtaleLift
 public import FLT.Mazur.HilbertBoundaryFiniteLiftCover
 public import FLT.Mazur.HilbertBoundaryFlatCertificate
 public import FLT.Mazur.HilbertBoundaryFlatCommonCover
+public import FLT.Mazur.HilbertBoundaryGroundCertificate
 public import FLT.Mazur.HilbertBoundaryInfinitesimalArrows
 public import FLT.Mazur.HilbertBoundaryKernelPair
 public import FLT.Mazur.HilbertBoundaryLiftLocus
