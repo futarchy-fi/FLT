@@ -6338,6 +6338,7 @@ public import FLT.Mazur.ModuleCohomologyExact
 public import FLT.Mazur.ModuleCohomologyRing
 public import FLT.Mazur.ModuleCohomologyScalarRestriction
 public import FLT.Mazur.ModuleCohomologyVanishing
+public import FLT.Mazur.ModuleComparedMarkingFrame
 public import FLT.Mazur.ModuleComparedSectionRatio
 public import FLT.Mazur.ModuleDerivedAbelianComparison
 public import FLT.Mazur.ModuleDirectImageHZero
