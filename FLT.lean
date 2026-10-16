@@ -6621,7 +6621,9 @@ public import FLT.Mazur.NodalFiberCoefficientRingMap
 public import FLT.Mazur.NodalFiberNodeComparison
 public import FLT.Mazur.NodalFiberParameterTransport
 public import FLT.Mazur.NodalFiberPunctureCoefficientMap
+public import FLT.Mazur.NodalFiberSmoothingComparison
 public import FLT.Mazur.NodalFiberUnitComparison
+public import FLT.Mazur.NodalFiberUnitScaling
 public import FLT.Mazur.NodalGenusOneBaseChange
 public import FLT.Mazur.NodalGeometricFiberGenus
 public import FLT.Mazur.NodeBranchPushout
@@ -8300,6 +8302,8 @@ public import FLT.Mazur.PolygonSmoothingBranchExt
 public import FLT.Mazur.PolygonSmoothingBranchOpens
 public import FLT.Mazur.PolygonSmoothingBranchSeparation
 public import FLT.Mazur.PolygonSmoothingBranchSwap
+public import FLT.Mazur.PolygonSmoothingBranchSwapGeometry
+public import FLT.Mazur.PolygonSmoothingBranchSwapNaturality
 public import FLT.Mazur.PolygonSmoothingCoefficientBranches
 public import FLT.Mazur.PolygonSmoothingCoefficientSquares
 public import FLT.Mazur.PolygonSmoothingCompletedDifferentials
@@ -11341,6 +11345,8 @@ public import FLT.Mazur.WeierstrassDilatationArithmeticSmoothingRestriction
 public import FLT.Mazur.WeierstrassDilatationArithmeticTensorNormalization
 public import FLT.Mazur.WeierstrassDilatationArithmeticTensorRestriction
 public import FLT.Mazur.WeierstrassDilatationArithmeticTerminalNode
+public import FLT.Mazur.WeierstrassDilatationArithmeticTerminalPolygon
+public import FLT.Mazur.WeierstrassDilatationArithmeticTerminalUnit
 public import FLT.Mazur.WeierstrassDilatationBaseChange
 public import FLT.Mazur.WeierstrassDilatationCanonicalNormalizationNaturality
 public import FLT.Mazur.WeierstrassDilatationCoefficientRingMap
@@ -11527,6 +11533,8 @@ public import FLT.Mazur.WeierstrassDividedArithmeticPositiveLabeledCompatibility
 public import FLT.Mazur.WeierstrassDividedArithmeticPositiveLabeledDescent
 public import FLT.Mazur.WeierstrassDividedArithmeticPositiveRetainedCompatibility
 public import FLT.Mazur.WeierstrassDividedArithmeticPositiveUniversal
+public import FLT.Mazur.WeierstrassDividedArithmeticRetainedPolygon
+public import FLT.Mazur.WeierstrassDividedArithmeticRetainedPolygonSystem
 public import FLT.Mazur.WeierstrassDividedArithmeticSystemCartesian
 public import FLT.Mazur.WeierstrassDividedArithmeticTensorProjection
 public import FLT.Mazur.WeierstrassDividedArithmeticTensorRestriction
@@ -12123,6 +12131,9 @@ public import FLT.Mazur.WeierstrassDividedResidueTangentNormalization
 public import FLT.Mazur.WeierstrassDividedRetainedExteriorIntersection
 public import FLT.Mazur.WeierstrassDividedRetainedLineAt
 public import FLT.Mazur.WeierstrassDividedRetainedLineSeparation
+public import FLT.Mazur.WeierstrassDividedRetainedPolygonLabels
+public import FLT.Mazur.WeierstrassDividedRetainedPolygonMaps
+public import FLT.Mazur.WeierstrassDividedRetainedPolygonNaturality
 public import FLT.Mazur.WeierstrassDividedRetainedZeroExteriorLine
 public import FLT.Mazur.WeierstrassDividedRetentionSuccessor
 public import FLT.Mazur.WeierstrassDividedShearContraction
