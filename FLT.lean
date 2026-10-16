@@ -2691,6 +2691,7 @@ public import FLT.Mazur.AffineDirectTriplePureTransport
 public import FLT.Mazur.AffineDirectTripleSections
 public import FLT.Mazur.AffineDirectTripleTransport
 public import FLT.Mazur.AffineDivisorEquationFrame
+public import FLT.Mazur.AffineDivisorEquationFrameTransport
 public import FLT.Mazur.AffineEffectiveCompositeReconstruction
 public import FLT.Mazur.AffineEffectiveCompositionChart
 public import FLT.Mazur.AffineEffectiveRefinementComparison
