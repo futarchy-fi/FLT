@@ -7887,6 +7887,7 @@ public import FLT.Mazur.PolygonCompleteIdentityTopChartClosedPresentation
 public import FLT.Mazur.PolygonCompleteIdentityTopChartFiberSocle
 public import FLT.Mazur.PolygonCompleteIdentityTopChartKernelPowers
 public import FLT.Mazur.PolygonCompleteIdentityTopChartLocalEquations
+public import FLT.Mazur.PolygonCompleteIdentityTopChartNodeReduction
 public import FLT.Mazur.PolygonCompleteIdentityTopChartNodeSocle
 public import FLT.Mazur.PolygonCompleteIdentityTopChartParameterLayer
 public import FLT.Mazur.PolygonCompleteIdentityTopChartPunctureOpens
