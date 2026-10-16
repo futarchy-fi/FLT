@@ -6228,6 +6228,7 @@ public import FLT.Mazur.LaurentFirstStageParameterTorus
 public import FLT.Mazur.LaurentIdentityIdeal
 public import FLT.Mazur.LaurentLineActionDensity
 public import FLT.Mazur.LaurentLineActionEvaluation
+public import FLT.Mazur.LaurentNilpotentReparametrization
 public import FLT.Mazur.LaurentNodePrincipalParts
 public import FLT.Mazur.LaurentNormalizedReduction
 public import FLT.Mazur.LaurentPairCoefficientNaturality
@@ -13017,6 +13018,7 @@ public import FLT.Mazur.WeierstrassModificationXInitialInfinityTensor
 public import FLT.Mazur.WeierstrassModificationXInitialInfinityTransition
 public import FLT.Mazur.WeierstrassModificationXInitialMobiusEquiv
 public import FLT.Mazur.WeierstrassModificationXInitialMobiusLaurentBoundary
+public import FLT.Mazur.WeierstrassModificationXInitialMobiusLaurentReduction
 public import FLT.Mazur.WeierstrassModificationXInitialMobiusNormalization
 public import FLT.Mazur.WeierstrassModificationXInitialPolygonBoundary
 public import FLT.Mazur.WeierstrassModificationXInitialPolygonChart
