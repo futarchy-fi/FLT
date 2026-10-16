@@ -8616,6 +8616,9 @@ public import FLT.Mazur.PolygonSmoothFiniteAtlas
 public import FLT.Mazur.PolygonSmoothLocus
 public import FLT.Mazur.PolygonSmoothRelativeDimension
 public import FLT.Mazur.PolygonSmoothingBaseChange
+public import FLT.Mazur.PolygonSmoothingBoundaryEquiv
+public import FLT.Mazur.PolygonSmoothingBoundaryLift
+public import FLT.Mazur.PolygonSmoothingBoundaryLiftGeometry
 public import FLT.Mazur.PolygonSmoothingBranchCoefficients
 public import FLT.Mazur.PolygonSmoothingBranchExt
 public import FLT.Mazur.PolygonSmoothingBranchOpens
@@ -8626,6 +8629,8 @@ public import FLT.Mazur.PolygonSmoothingBranchSwapNaturality
 public import FLT.Mazur.PolygonSmoothingClosingPair
 public import FLT.Mazur.PolygonSmoothingCoefficientBranches
 public import FLT.Mazur.PolygonSmoothingCoefficientSquares
+public import FLT.Mazur.PolygonSmoothingCompatibleLaurentLift
+public import FLT.Mazur.PolygonSmoothingComplementaryCoefficients
 public import FLT.Mazur.PolygonSmoothingCompletedDifferentials
 public import FLT.Mazur.PolygonSmoothingCompletedFirstCotangent
 public import FLT.Mazur.PolygonSmoothingCompletedScaling
@@ -8677,6 +8682,7 @@ public import FLT.Mazur.PolygonSmoothingScalingNaturality
 public import FLT.Mazur.PolygonSmoothingSingularSupport
 public import FLT.Mazur.PolygonSmoothingSpecialBranches
 public import FLT.Mazur.PolygonSmoothingSpecialFiber
+public import FLT.Mazur.PolygonSmoothingSquareZeroLiftConstraint
 public import FLT.Mazur.PolygonSmoothingSumRegular
 public import FLT.Mazur.PolygonSmoothingTransition
 public import FLT.Mazur.PolygonSmoothingTwoCoefficientBranches
@@ -12675,6 +12681,8 @@ public import FLT.Mazur.WeierstrassDividedTensorSymmetry
 public import FLT.Mazur.WeierstrassDividedTensorYBoundary
 public import FLT.Mazur.WeierstrassDividedTerminalAllExteriorNodes
 public import FLT.Mazur.WeierstrassDividedTerminalAtlasPushout
+public import FLT.Mazur.WeierstrassDividedTerminalBoundaryAlgebra
+public import FLT.Mazur.WeierstrassDividedTerminalBoundaryExtension
 public import FLT.Mazur.WeierstrassDividedTerminalBranchIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalBranchesNodeIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalCoefficientAction
@@ -12694,6 +12702,7 @@ public import FLT.Mazur.WeierstrassDividedTerminalCrossedIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalCyclicTori
 public import FLT.Mazur.WeierstrassDividedTerminalEdgeCorrection
 public import FLT.Mazur.WeierstrassDividedTerminalExtendedEmptyIntersections
+public import FLT.Mazur.WeierstrassDividedTerminalExtensionClosed
 public import FLT.Mazur.WeierstrassDividedTerminalFullConicIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalHorizontalCyclicAction
 public import FLT.Mazur.WeierstrassDividedTerminalHorizontalCyclicPair
