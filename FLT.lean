@@ -8273,6 +8273,7 @@ public import FLT.Mazur.PolygonSmoothLocus
 public import FLT.Mazur.PolygonSmoothRelativeDimension
 public import FLT.Mazur.PolygonSmoothingBaseChange
 public import FLT.Mazur.PolygonSmoothingBranchExt
+public import FLT.Mazur.PolygonSmoothingBranchCoefficients
 public import FLT.Mazur.PolygonSmoothingBranchOpens
 public import FLT.Mazur.PolygonSmoothingBranchSwap
 public import FLT.Mazur.PolygonSmoothingCoefficientBranches
