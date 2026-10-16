@@ -3069,6 +3069,7 @@ public import FLT.Mazur.AffineOpenFiniteRefinement
 public import FLT.Mazur.AffineOpenImmersionLocalizationCriterion
 public import FLT.Mazur.AffineOpenKernelPower
 public import FLT.Mazur.AffineOpenQuotientPresentation
+public import FLT.Mazur.AffineOpenSpectrumFunctions
 public import FLT.Mazur.AffineOverlapDiagonal
 public import FLT.Mazur.AffineOverlapMapSections
 public import FLT.Mazur.AffineOverlapPullback
@@ -4642,6 +4643,7 @@ public import FLT.Mazur.EquifiberedSchemeGluing
 public import FLT.Mazur.EquivalenceRelationActionInfinitesimalRigidity
 public import FLT.Mazur.EquivalenceRelationBoundaryActionGeometry
 public import FLT.Mazur.EquivalenceRelationBoundaryCoefficients
+public import FLT.Mazur.EquivalenceRelationBoundaryOpenCoefficients
 public import FLT.Mazur.EquivalenceRelationCompleteClosedLocus
 public import FLT.Mazur.EquivalenceRelationCompleteFiberComparison
 public import FLT.Mazur.EquivalenceRelationCompleteFiberSplit
@@ -4669,6 +4671,7 @@ public import FLT.Mazur.EquivalenceRelationNormalizedFrameFree
 public import FLT.Mazur.EquivalenceRelationNormalizedFrameLifts
 public import FLT.Mazur.EquivalenceRelationNormalizedFrameRelation
 public import FLT.Mazur.EquivalenceRelationNormalizedFrames
+public import FLT.Mazur.EquivalenceRelationNormalizedInvariantOpen
 public import FLT.Mazur.EquivalenceRelationNormalizedOrbitNeighborhood
 public import FLT.Mazur.EquivalenceRelationNormalizedScalarComplete
 public import FLT.Mazur.EquivalenceRelationSectionRebase
@@ -4891,8 +4894,10 @@ public import FLT.Mazur.FiniteGeometricGenericPrincipalInteriors
 public import FLT.Mazur.FiniteGeometricSections
 public import FLT.Mazur.FiniteGroupAffineNeighborhood
 public import FLT.Mazur.FiniteGroupAffineQuotient
+public import FLT.Mazur.FiniteGroupBoundaryChartRestriction
 public import FLT.Mazur.FiniteGroupBoundaryTrace
 public import FLT.Mazur.FiniteGroupClosedEnvelopeNeighborhood
+public import FLT.Mazur.FiniteGroupClosedEnvelopeRefinement
 public import FLT.Mazur.FiniteGroupEnvelopeNeighborhood
 public import FLT.Mazur.FiniteGroupEquivariantOpenBoundary
 public import FLT.Mazur.FiniteGroupFieldPointOrbits
@@ -4906,6 +4911,8 @@ public import FLT.Mazur.FiniteGroupInvariantOpens
 public import FLT.Mazur.FiniteGroupInvariantPolynomial
 public import FLT.Mazur.FiniteGroupInvariantRing
 public import FLT.Mazur.FiniteGroupInvariantSpectrum
+public import FLT.Mazur.FiniteGroupOpenCoefficientRefinement
+public import FLT.Mazur.FiniteGroupOpenRelationCoefficients
 public import FLT.Mazur.FiniteGroupOpenRestriction
 public import FLT.Mazur.FiniteGroupOrbitSpan
 public import FLT.Mazur.FiniteGroupPullbackAction
@@ -5765,11 +5772,15 @@ public import FLT.Mazur.HilbertMultiplicationCoordinateRecovery
 public import FLT.Mazur.HilbertNestedNormSupport
 public import FLT.Mazur.HilbertNormOrbitFiber
 public import FLT.Mazur.HilbertNormalizedAffineNeighborhood
+public import FLT.Mazur.HilbertNormalizedAffineRefinement
 public import FLT.Mazur.HilbertNormalizedBoundaryAction
 public import FLT.Mazur.HilbertNormalizedBoundaryChartLifts
 public import FLT.Mazur.HilbertNormalizedCompleteFiberSplit
 public import FLT.Mazur.HilbertNormalizedCompleteOrbits
 public import FLT.Mazur.HilbertNormalizedFrameAction
+public import FLT.Mazur.HilbertNormalizedOrbitBoundaryCharts
+public import FLT.Mazur.HilbertNormalizedOrbitBoundaryCoefficients
+public import FLT.Mazur.HilbertNormalizedOrbitBoundaryRefinement
 public import FLT.Mazur.HilbertNormalizedRelationComparison
 public import FLT.Mazur.HilbertNormalizedStableAffine
 public import FLT.Mazur.HilbertOpenAmbientBaseChange
@@ -7661,11 +7672,17 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstNodeObstruction
 public import FLT.Mazur.PolygonCompleteIdentityFirstNodePolynomials
 public import FLT.Mazur.PolygonCompleteIdentityFirstOriginalPolynomialErrors
 public import FLT.Mazur.PolygonCompleteIdentityFirstParameterEquations
+public import FLT.Mazur.PolygonCompleteIdentityFirstPoleInputFunctions
 public import FLT.Mazur.PolygonCompleteIdentityFirstPoleNumeratorRemainders
+public import FLT.Mazur.PolygonCompleteIdentityFirstPoleParameterIdeals
 public import FLT.Mazur.PolygonCompleteIdentityFirstPolePatchCancellation
 public import FLT.Mazur.PolygonCompleteIdentityFirstPolePatchExtraction
+public import FLT.Mazur.PolygonCompleteIdentityFirstPolePatchGeometry
 public import FLT.Mazur.PolygonCompleteIdentityFirstPolePatchMaps
 public import FLT.Mazur.PolygonCompleteIdentityFirstPolePatchNode
+public import FLT.Mazur.PolygonCompleteIdentityFirstPoleSourceGeometry
+public import FLT.Mazur.PolygonCompleteIdentityFirstPoleSourceReduction
+public import FLT.Mazur.PolygonCompleteIdentityFirstPoleTargetCubic
 public import FLT.Mazur.PolygonCompleteIdentityFirstPolynomialConversion
 public import FLT.Mazur.PolygonCompleteIdentityFirstPolynomialErrors
 public import FLT.Mazur.PolygonCompleteIdentityFirstPolynomialRemainders
@@ -7676,6 +7693,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstPrincipalObstruction
 public import FLT.Mazur.PolygonCompleteIdentityFirstRefinedEquations
 public import FLT.Mazur.PolygonCompleteIdentityFirstRefinedErrorCriterion
 public import FLT.Mazur.PolygonCompleteIdentityFirstRefinedSmoothing
+public import FLT.Mazur.PolygonCompleteIdentityFirstSourceZeroCubic
 public import FLT.Mazur.PolygonCompleteIdentityFlatOpenLift
 public import FLT.Mazur.PolygonCompleteIdentityGenericAmbient
 public import FLT.Mazur.PolygonCompleteIdentityGenericAmbientIso
@@ -8099,6 +8117,7 @@ public import FLT.Mazur.PolygonFirstNodeParameterDescent
 public import FLT.Mazur.PolygonFirstNodeParameterEquiv
 public import FLT.Mazur.PolygonFirstNodeParameterScaling
 public import FLT.Mazur.PolygonFirstNodeParameterStructure
+public import FLT.Mazur.PolygonFirstNodeParameterUniversalScaling
 public import FLT.Mazur.PolygonFirstNodePolynomialDescent
 public import FLT.Mazur.PolygonFirstNodePolynomialExtension
 public import FLT.Mazur.PolygonFirstNodePositiveExtension
@@ -8114,6 +8133,7 @@ public import FLT.Mazur.PolygonFirstNodeWeightedConductor
 public import FLT.Mazur.PolygonFirstOrderBoundaryRigidity
 public import FLT.Mazur.PolygonFirstOrderCoordinateCharts
 public import FLT.Mazur.PolygonFirstPairReduction
+public import FLT.Mazur.PolygonFirstUniversalNodeReduction
 public import FLT.Mazur.PolygonGeneralizedCurve
 public import FLT.Mazur.PolygonGenusOne
 public import FLT.Mazur.PolygonGeometricGenus
