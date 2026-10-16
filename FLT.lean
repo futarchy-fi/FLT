@@ -4672,6 +4672,7 @@ public import FLT.Mazur.EquivalenceRelationJointBoundaryCover
 public import FLT.Mazur.EquivalenceRelationJointChartCoefficients
 public import FLT.Mazur.EquivalenceRelationJointChartCover
 public import FLT.Mazur.EquivalenceRelationJointChartDomains
+public import FLT.Mazur.EquivalenceRelationJointChartLiftDifference
 public import FLT.Mazur.EquivalenceRelationJointFrameCover
 public import FLT.Mazur.EquivalenceRelationJointFrameGraph
 public import FLT.Mazur.EquivalenceRelationJointGeometricComparison
