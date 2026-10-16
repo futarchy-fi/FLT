@@ -8271,6 +8271,7 @@ public import FLT.Mazur.PolygonSmoothingRing
 public import FLT.Mazur.PolygonSmoothingRingMap
 public import FLT.Mazur.PolygonSmoothingRingMapBranch
 public import FLT.Mazur.PolygonSmoothingRingMapComposition
+public import FLT.Mazur.PolygonSmoothingScaledNodeFractions
 public import FLT.Mazur.PolygonSmoothingScaledNodePolynomials
 public import FLT.Mazur.PolygonSmoothingScalingBranches
 public import FLT.Mazur.PolygonSmoothingScalingNaturality
