@@ -11346,6 +11346,7 @@ public import FLT.Mazur.WeierstrassDilatationCanonicalNormalizationNaturality
 public import FLT.Mazur.WeierstrassDilatationCoefficientRingMap
 public import FLT.Mazur.WeierstrassDilatationCoefficientTransport
 public import FLT.Mazur.WeierstrassDilatationCoefficients
+public import FLT.Mazur.WeierstrassDilatationCoherentTerminalPolygon
 public import FLT.Mazur.WeierstrassDilatationCoherentTerminalUnit
 public import FLT.Mazur.WeierstrassDilatationDepthComposition
 public import FLT.Mazur.WeierstrassDilatationDepthTransition
