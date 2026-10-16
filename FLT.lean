@@ -7791,6 +7791,7 @@ public import FLT.Mazur.PolygonCompletePointFirstEndpointCoefficients
 public import FLT.Mazur.PolygonCompletePointFirstFiniteNumerators
 public import FLT.Mazur.PolygonCompletePointFirstIncomingTail
 public import FLT.Mazur.PolygonCompletePointFirstIncomingValues
+public import FLT.Mazur.PolygonCompletePointFirstLocalizedMarkingForms
 public import FLT.Mazur.PolygonCompletePointFirstMarkingForms
 public import FLT.Mazur.PolygonCompletePointFirstNegativeVanishing
 public import FLT.Mazur.PolygonCompletePointFirstNodeMarkingForms
