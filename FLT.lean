@@ -4650,6 +4650,9 @@ public import FLT.Mazur.EquivalenceRelationBoundaryOpenCoefficients
 public import FLT.Mazur.EquivalenceRelationBoundarySubframe
 public import FLT.Mazur.EquivalenceRelationBoundarySubframeCoefficients
 public import FLT.Mazur.EquivalenceRelationBoundarySubframeGeometry
+public import FLT.Mazur.EquivalenceRelationChartFamilyCorrections
+public import FLT.Mazur.EquivalenceRelationChartFamilyLifts
+public import FLT.Mazur.EquivalenceRelationChartFamilyRestriction
 public import FLT.Mazur.EquivalenceRelationCompleteClosedLocus
 public import FLT.Mazur.EquivalenceRelationCompleteFiberComparison
 public import FLT.Mazur.EquivalenceRelationCompleteFiberSplit
@@ -4680,6 +4683,10 @@ public import FLT.Mazur.EquivalenceRelationJointGeometricComparison
 public import FLT.Mazur.EquivalenceRelationJointInvariantLifts
 public import FLT.Mazur.EquivalenceRelationJointSourceRefinement
 public import FLT.Mazur.EquivalenceRelationLabelOpenCharts
+public import FLT.Mazur.EquivalenceRelationMixedChartDescent
+public import FLT.Mazur.EquivalenceRelationMixedChartLiftDifference
+public import FLT.Mazur.EquivalenceRelationMixedChartProjections
+public import FLT.Mazur.EquivalenceRelationMixedChartRestriction
 public import FLT.Mazur.EquivalenceRelationMixedFrameCardinality
 public import FLT.Mazur.EquivalenceRelationMixedFrameComparison
 public import FLT.Mazur.EquivalenceRelationMixedFrameLabelChange
@@ -5829,6 +5836,7 @@ public import FLT.Mazur.HilbertOpenInclusionExtension
 public import FLT.Mazur.HilbertOpenInclusionFamilies
 public import FLT.Mazur.HilbertOpenIntrinsicClassification
 public import FLT.Mazur.HilbertOpenOverlapCoherence
+public import FLT.Mazur.HilbertOrbitBoundaryFamilyLifts
 public import FLT.Mazur.HilbertOrderedAffineEnvelope
 public import FLT.Mazur.HilbertOrderedOriginalBoundary
 public import FLT.Mazur.HilbertOrderedStableNeighborhood
@@ -7581,6 +7589,7 @@ public import FLT.Mazur.PolygonCompleteIdentityActionCartesian
 public import FLT.Mazur.PolygonCompleteIdentityActionGraph
 public import FLT.Mazur.PolygonCompleteIdentityActionGraphCompatibility
 public import FLT.Mazur.PolygonCompleteIdentityActionGraphSmooth
+public import FLT.Mazur.PolygonCompleteIdentityActionInputRotation
 public import FLT.Mazur.PolygonCompleteIdentityActionLocalGluing
 public import FLT.Mazur.PolygonCompleteIdentityActionMultiplication
 public import FLT.Mazur.PolygonCompleteIdentityActionNodeCover
@@ -7614,6 +7623,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFiniteAlgebra
 public import FLT.Mazur.PolygonCompleteIdentityFiniteCoherence
 public import FLT.Mazur.PolygonCompleteIdentityFiniteComparison
 public import FLT.Mazur.PolygonCompleteIdentityFiniteCoordinates
+public import FLT.Mazur.PolygonCompleteIdentityFiniteInputRotation
 public import FLT.Mazur.PolygonCompleteIdentityFiniteLawComparison
 public import FLT.Mazur.PolygonCompleteIdentityFiniteLawCriterion
 public import FLT.Mazur.PolygonCompleteIdentityFinitePair
@@ -7701,6 +7711,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstGraphOriginalNodes
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphReducedLaw
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphReduction
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphRingGenerators
+public import FLT.Mazur.PolygonCompleteIdentityFirstGraphRotatedCubic
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphScheme
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphSpecialFiber
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphSupport
@@ -7739,8 +7750,11 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstPrincipalObstruction
 public import FLT.Mazur.PolygonCompleteIdentityFirstRefinedEquations
 public import FLT.Mazur.PolygonCompleteIdentityFirstRefinedErrorCriterion
 public import FLT.Mazur.PolygonCompleteIdentityFirstRefinedSmoothing
+public import FLT.Mazur.PolygonCompleteIdentityFirstSourceIncomingComparison
 public import FLT.Mazur.PolygonCompleteIdentityFirstSourceNodeCoverage
 public import FLT.Mazur.PolygonCompleteIdentityFirstSourceNodeCubicCoverage
+public import FLT.Mazur.PolygonCompleteIdentityFirstSourceNodeGraphQuotient
+public import FLT.Mazur.PolygonCompleteIdentityFirstSourceNodeIncomingIdeals
 public import FLT.Mazur.PolygonCompleteIdentityFirstSourceNodeOutgoingIdeals
 public import FLT.Mazur.PolygonCompleteIdentityFirstSourceOutgoingVanishing
 public import FLT.Mazur.PolygonCompleteIdentityFirstSourcePoleCubic
@@ -7767,9 +7781,11 @@ public import FLT.Mazur.PolygonCompleteIdentityGraphAdicInput
 public import FLT.Mazur.PolygonCompleteIdentityGraphAdicLift
 public import FLT.Mazur.PolygonCompleteIdentityGraphAdicNode
 public import FLT.Mazur.PolygonCompleteIdentityGraphAdicParameter
+public import FLT.Mazur.PolygonCompleteIdentityGraphAdicRotatedContraction
 public import FLT.Mazur.PolygonCompleteIdentityGraphAdicRotatedEdge
 public import FLT.Mazur.PolygonCompleteIdentityGraphAdicStage
 public import FLT.Mazur.PolygonCompleteIdentityGraphChartEdgeCartesian
+public import FLT.Mazur.PolygonCompleteIdentityGraphChartRotatedContraction
 public import FLT.Mazur.PolygonCompleteIdentityGraphEdgeCartesian
 public import FLT.Mazur.PolygonCompleteIdentityGraphFiniteEdge
 public import FLT.Mazur.PolygonCompleteIdentityGraphFlat
@@ -7778,6 +7794,7 @@ public import FLT.Mazur.PolygonCompleteIdentityGraphGenericEquations
 public import FLT.Mazur.PolygonCompleteIdentityGraphIncomingCartesian
 public import FLT.Mazur.PolygonCompleteIdentityGraphIncomingChart
 public import FLT.Mazur.PolygonCompleteIdentityGraphParameterTorsion
+public import FLT.Mazur.PolygonCompleteIdentityGraphRotatedContraction
 public import FLT.Mazur.PolygonCompleteIdentityGraphRotatedEdge
 public import FLT.Mazur.PolygonCompleteIdentityGraphRotatedEdgeCartesian
 public import FLT.Mazur.PolygonCompleteIdentityGraphScalarEquations
@@ -7797,6 +7814,7 @@ public import FLT.Mazur.PolygonCompleteIdentityPointDefect
 public import FLT.Mazur.PolygonCompleteIdentitySmoothAction
 public import FLT.Mazur.PolygonCompleteIdentitySmoothActionCoordinates
 public import FLT.Mazur.PolygonCompleteIdentitySmoothActionEquivariance
+public import FLT.Mazur.PolygonCompleteIdentitySmoothActionRotation
 public import FLT.Mazur.PolygonCompleteIdentitySmoothInputGraph
 public import FLT.Mazur.PolygonCompleteIdentityStageTorus
 public import FLT.Mazur.PolygonCompleteIdentityTopDefect
@@ -7904,6 +7922,7 @@ public import FLT.Mazur.PolygonCompletePointCubicChartAffinization
 public import FLT.Mazur.PolygonCompletePointCubicChartFunctions
 public import FLT.Mazur.PolygonCompletePointCubicChartRatios
 public import FLT.Mazur.PolygonCompletePointCubicChartSquare
+public import FLT.Mazur.PolygonCompletePointCubicComplementComparison
 public import FLT.Mazur.PolygonCompletePointCubicFactorization
 public import FLT.Mazur.PolygonCompletePointCubicPreimages
 public import FLT.Mazur.PolygonCompletePointCubicRelation
