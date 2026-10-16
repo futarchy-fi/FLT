@@ -12480,6 +12480,7 @@ public import FLT.Mazur.WeierstrassDividedZeroMobiusPolygonBoundary
 public import FLT.Mazur.WeierstrassDividedZeroNodalGeometry
 public import FLT.Mazur.WeierstrassDividedZeroNodalGluing
 public import FLT.Mazur.WeierstrassDividedZeroNodalProjective
+public import FLT.Mazur.WeierstrassDividedZeroOriginalInfinityNormalization
 public import FLT.Mazur.WeierstrassDividedZeroResidueAtlas
 public import FLT.Mazur.WeierstrassDividedZeroRetentionIntersection
 public import FLT.Mazur.WeierstrassDividedZeroSlopeContraction
