@@ -5546,6 +5546,7 @@ public import FLT.Mazur.HilbertBoundaryFiniteLiftCover
 public import FLT.Mazur.HilbertBoundaryInfinitesimalArrows
 public import FLT.Mazur.HilbertBoundaryKernelPair
 public import FLT.Mazur.HilbertBoundaryLiftLocus
+public import FLT.Mazur.HilbertBoundaryLocalCoverCriterion
 public import FLT.Mazur.HilbertBoundaryOrbit
 public import FLT.Mazur.HilbertBoundaryPrincipalLifting
 public import FLT.Mazur.HilbertBoundaryPrincipalLocalization
