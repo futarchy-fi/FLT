@@ -4659,9 +4659,14 @@ public import FLT.Mazur.EquivalenceRelationChartFamilyCorrections
 public import FLT.Mazur.EquivalenceRelationChartFamilyLifts
 public import FLT.Mazur.EquivalenceRelationChartFamilyLocalization
 public import FLT.Mazur.EquivalenceRelationChartFamilyRestriction
+public import FLT.Mazur.EquivalenceRelationCompleteChartImage
 public import FLT.Mazur.EquivalenceRelationCompleteClosedLocus
+public import FLT.Mazur.EquivalenceRelationCompleteEndpointOrbit
 public import FLT.Mazur.EquivalenceRelationCompleteFiberComparison
 public import FLT.Mazur.EquivalenceRelationCompleteFiberSplit
+public import FLT.Mazur.EquivalenceRelationCompleteInterior
+public import FLT.Mazur.EquivalenceRelationCompleteMixedCoefficients
+public import FLT.Mazur.EquivalenceRelationCompleteOpenCoefficients
 public import FLT.Mazur.EquivalenceRelationCompletePointLocus
 public import FLT.Mazur.EquivalenceRelationCompleteRestrictionNaturality
 public import FLT.Mazur.EquivalenceRelationCompleteSourceComparison
@@ -5764,8 +5769,11 @@ public import FLT.Mazur.HilbertComplementCartesian
 public import FLT.Mazur.HilbertComplementCoordinateRing
 public import FLT.Mazur.HilbertComplementPointCompatibility
 public import FLT.Mazur.HilbertComplementSchemeCompatibility
+public import FLT.Mazur.HilbertCompleteChartOriginalSections
 public import FLT.Mazur.HilbertCompleteFrameCardinality
 public import FLT.Mazur.HilbertCompleteGeometricTuple
+public import FLT.Mazur.HilbertCompleteInteriorBoundaryLifts
+public import FLT.Mazur.HilbertCompleteInteriorCharts
 public import FLT.Mazur.HilbertDivisorDegreePresentation
 public import FLT.Mazur.HilbertEnvelopeSourceTransport
 public import FLT.Mazur.HilbertFaithfulAffineNeighborhood
