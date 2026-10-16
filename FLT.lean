@@ -10946,6 +10946,7 @@ public import FLT.Mazur.WeierstrassCartesianSmoothPullbackGroup
 public import FLT.Mazur.WeierstrassChartBaseChange
 public import FLT.Mazur.WeierstrassChartBaseChangeSquare
 public import FLT.Mazur.WeierstrassChartCoefficientMap
+public import FLT.Mazur.WeierstrassChartCoefficientRingMap
 public import FLT.Mazur.WeierstrassChartCrossComparison
 public import FLT.Mazur.WeierstrassChartEvaluationComparison
 public import FLT.Mazur.WeierstrassChartFactorUnit
