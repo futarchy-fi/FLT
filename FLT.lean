@@ -5086,6 +5086,7 @@ public import FLT.Mazur.FixedModelElementLifts
 public import FLT.Mazur.FixedTargetIntegerModel
 public import FLT.Mazur.FlasqueDirectImageAcyclic
 public import FLT.Mazur.FlatAlgebraEqualizer
+public import FLT.Mazur.FlatAlgebraEqualizerNaturality
 public import FLT.Mazur.FlatCartesianSectionGluing
 public import FLT.Mazur.FlatCartierIdealPullback
 public import FLT.Mazur.FlatCoefficientAllCohomology
@@ -5475,6 +5476,9 @@ public import FLT.Mazur.GroundChartOriginalQuotientOpenImmersion
 public import FLT.Mazur.GroundChartOriginalQuotientTopology
 public import FLT.Mazur.GroundChartOriginalResidualDescent
 public import FLT.Mazur.GroundChartRelationDiagonal
+public import FLT.Mazur.GroundFlatEqualizerCertificate
+public import FLT.Mazur.GroundFlatSectionLiftCertificate
+public import FLT.Mazur.GroundFlatSectionLiftIdeal
 public import FLT.Mazur.GroupActionPointTranslation
 public import FLT.Mazur.GroupMarkingBaseChange
 public import FLT.Mazur.GroupMarkingBaseChangeInverse
@@ -5554,6 +5558,7 @@ public import FLT.Mazur.HilbertBoundaryEtaleLift
 public import FLT.Mazur.HilbertBoundaryFiniteLiftCover
 public import FLT.Mazur.HilbertBoundaryFlatCertificate
 public import FLT.Mazur.HilbertBoundaryFlatCommonCover
+public import FLT.Mazur.HilbertBoundaryGroundCertificate
 public import FLT.Mazur.HilbertBoundaryInfinitesimalArrows
 public import FLT.Mazur.HilbertBoundaryKernelPair
 public import FLT.Mazur.HilbertBoundaryLiftLocus
@@ -9323,6 +9328,7 @@ public import FLT.Mazur.RelativeRelationSaturationKernel
 public import FLT.Mazur.RelativeRelationSaturationSpan
 public import FLT.Mazur.RelativeRelationSimultaneousLiftCover
 public import FLT.Mazur.RelativeRelationSplitQuotient
+public import FLT.Mazur.RelativeRelationTopCoefficientCoordinates
 public import FLT.Mazur.RelativeSectionAmpleBaseChange
 public import FLT.Mazur.RelativeSectionAmpleLocality
 public import FLT.Mazur.RelativeSerreAffineAcyclic
@@ -9749,6 +9755,7 @@ public import FLT.Mazur.SchemeReducedStructureSheaf
 public import FLT.Mazur.SchemeRefinementReconstruction
 public import FLT.Mazur.SchemeRegularNormProducts
 public import FLT.Mazur.SchemeRelationArrowTransport
+public import FLT.Mazur.SchemeRelationCoefficientDiagram
 public import FLT.Mazur.SchemeRelationCoverSourceFunctions
 public import FLT.Mazur.SchemeRelationDoubleRestriction
 public import FLT.Mazur.SchemeRelationEtaleBranchPropagation
@@ -9956,6 +9963,7 @@ public import FLT.Mazur.SectionGradedSum
 public import FLT.Mazur.SectionGradedUnit
 public import FLT.Mazur.SectionKernelLocal
 public import FLT.Mazur.SectionLiftBaseChange
+public import FLT.Mazur.SectionLiftCertificateEquiv
 public import FLT.Mazur.SectionLiftCertificatePolynomial
 public import FLT.Mazur.SectionLiftCertificateSourceChange
 public import FLT.Mazur.SectionLiftIdeal
