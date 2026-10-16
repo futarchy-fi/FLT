@@ -6193,6 +6193,7 @@ public import FLT.Mazur.LaurentSquareZeroNaturality
 public import FLT.Mazur.LaurentSquareZeroReciprocal
 public import FLT.Mazur.LaurentTensor
 public import FLT.Mazur.LaurentUnitCoefficientPoint
+public import FLT.Mazur.LaurentUnitMarkingCancellation
 public import FLT.Mazur.LaurentUnitMultiplication
 public import FLT.Mazur.LaurentUnitPointNaturality
 public import FLT.Mazur.LaurentUnitPoints
