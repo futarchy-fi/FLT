@@ -6679,6 +6679,7 @@ public import FLT.Mazur.NeronPolygonScaling
 public import FLT.Mazur.NestedOpenCohomologyCoherence
 public import FLT.Mazur.NeutralTwistDirectImage
 public import FLT.Mazur.NilpotentAlgebraAutomorphism
+public import FLT.Mazur.NilpotentAlgebraEquivalence
 public import FLT.Mazur.NilpotentClosedRestriction
 public import FLT.Mazur.NilpotentIdealContraction
 public import FLT.Mazur.NilpotentIdealSocle
@@ -6747,6 +6748,7 @@ public import FLT.Mazur.NodePuncturedDenominatorRestriction
 public import FLT.Mazur.NodeQuotient
 public import FLT.Mazur.NodeRelationPolynomialPresentation
 public import FLT.Mazur.NodeSmoothLocus
+public import FLT.Mazur.NodeSocleLocalization
 public import FLT.Mazur.NodeTangentAlgebra
 public import FLT.Mazur.NodeTangentCechCocycle
 public import FLT.Mazur.NodeTangentCoefficientCover
@@ -7173,6 +7175,7 @@ public import FLT.Mazur.OverPullbackSectionMonoidal
 public import FLT.Mazur.PadicValuationArithmetic
 public import FLT.Mazur.PadicValuationRing
 public import FLT.Mazur.PairedAwayLocalization
+public import FLT.Mazur.PairedAwayLocalizationSpectrum
 public import FLT.Mazur.PartialCompactTranslationInterior
 public import FLT.Mazur.PartialEnvelopeFullFiber
 public import FLT.Mazur.PartialFiniteTranslationInterior
@@ -7580,6 +7583,7 @@ public import FLT.Mazur.PolygonCompleteIdentityAdicAmbientStructure
 public import FLT.Mazur.PolygonCompleteIdentityAdicCubicChartMap
 public import FLT.Mazur.PolygonCompleteIdentityAdicCubicCoordinates
 public import FLT.Mazur.PolygonCompleteIdentityAdicCubicPatches
+public import FLT.Mazur.PolygonCompleteIdentityAdicCubicZNeighborhood
 public import FLT.Mazur.PolygonCompleteIdentityAdicRefinedKernel
 public import FLT.Mazur.PolygonCompleteIdentityAdicRefinedPatches
 public import FLT.Mazur.PolygonCompleteIdentityAmbientErrorRelation
@@ -7692,7 +7696,9 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstNodeObstruction
 public import FLT.Mazur.PolygonCompleteIdentityFirstNodePolynomials
 public import FLT.Mazur.PolygonCompleteIdentityFirstOriginalPolynomialErrors
 public import FLT.Mazur.PolygonCompleteIdentityFirstParameterEquations
+public import FLT.Mazur.PolygonCompleteIdentityFirstPoleCubicRefinement
 public import FLT.Mazur.PolygonCompleteIdentityFirstPoleInputFunctions
+public import FLT.Mazur.PolygonCompleteIdentityFirstPoleNodeIdeals
 public import FLT.Mazur.PolygonCompleteIdentityFirstPoleNumeratorRemainders
 public import FLT.Mazur.PolygonCompleteIdentityFirstPoleParameterIdeals
 public import FLT.Mazur.PolygonCompleteIdentityFirstPolePatchCancellation
@@ -7700,6 +7706,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstPolePatchExtraction
 public import FLT.Mazur.PolygonCompleteIdentityFirstPolePatchGeometry
 public import FLT.Mazur.PolygonCompleteIdentityFirstPolePatchMaps
 public import FLT.Mazur.PolygonCompleteIdentityFirstPolePatchNode
+public import FLT.Mazur.PolygonCompleteIdentityFirstPoleSecantCoverage
 public import FLT.Mazur.PolygonCompleteIdentityFirstPoleSourceGeometry
 public import FLT.Mazur.PolygonCompleteIdentityFirstPoleSourceReduction
 public import FLT.Mazur.PolygonCompleteIdentityFirstPoleTargetCubic
@@ -7713,6 +7720,8 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstPrincipalObstruction
 public import FLT.Mazur.PolygonCompleteIdentityFirstRefinedEquations
 public import FLT.Mazur.PolygonCompleteIdentityFirstRefinedErrorCriterion
 public import FLT.Mazur.PolygonCompleteIdentityFirstRefinedSmoothing
+public import FLT.Mazur.PolygonCompleteIdentityFirstSourceNodeCoverage
+public import FLT.Mazur.PolygonCompleteIdentityFirstSourceSocleLocalization
 public import FLT.Mazur.PolygonCompleteIdentityFirstSourceZeroCubic
 public import FLT.Mazur.PolygonCompleteIdentityFlatOpenLift
 public import FLT.Mazur.PolygonCompleteIdentityGenericAmbient
@@ -8477,6 +8486,7 @@ public import FLT.Mazur.PolygonSmoothingMarkedSection
 public import FLT.Mazur.PolygonSmoothingMarkingIdealSheaf
 public import FLT.Mazur.PolygonSmoothingNilpotentBranches
 public import FLT.Mazur.PolygonSmoothingNodeBasicOpen
+public import FLT.Mazur.PolygonSmoothingNodeDenominatorCoverage
 public import FLT.Mazur.PolygonSmoothingNodeScaling
 public import FLT.Mazur.PolygonSmoothingOverlapGraph
 public import FLT.Mazur.PolygonSmoothingPunctureBaseChange
@@ -12994,6 +13004,10 @@ public import FLT.Mazur.WeierstrassModificationXExtendedCastEvaluation
 public import FLT.Mazur.WeierstrassModificationXExtendedNormalEvaluation
 public import FLT.Mazur.WeierstrassModificationXFactorGapUnits
 public import FLT.Mazur.WeierstrassModificationXFactorRatioBoundary
+public import FLT.Mazur.WeierstrassModificationXFactorRatioInfinityBoundary
+public import FLT.Mazur.WeierstrassModificationXFactorRatioLaurentCoefficient
+public import FLT.Mazur.WeierstrassModificationXFactorRatioLaurentEquiv
+public import FLT.Mazur.WeierstrassModificationXFactorRatioLaurentUnit
 public import FLT.Mazur.WeierstrassModificationXFactorRatioMap
 public import FLT.Mazur.WeierstrassModificationXFiberBranches
 public import FLT.Mazur.WeierstrassModificationXFiberConic
@@ -13093,6 +13107,7 @@ public import FLT.Mazur.WeierstrassModificationXLocalization
 public import FLT.Mazur.WeierstrassModificationXMorphism
 public import FLT.Mazur.WeierstrassModificationXNodeDenominators
 public import FLT.Mazur.WeierstrassModificationXNodeEvaluationNaturality
+public import FLT.Mazur.WeierstrassModificationXNodeFactorCoefficient
 public import FLT.Mazur.WeierstrassModificationXNodeForwardCoefficientNaturality
 public import FLT.Mazur.WeierstrassModificationXNodeIncidenceOpen
 public import FLT.Mazur.WeierstrassModificationXNodeInfinityDenominators
@@ -13104,6 +13119,8 @@ public import FLT.Mazur.WeierstrassModificationXNodeOpenCoefficientMap
 public import FLT.Mazur.WeierstrassModificationXNodeOpenCoefficientTransport
 public import FLT.Mazur.WeierstrassModificationXNodeOverlap
 public import FLT.Mazur.WeierstrassModificationXNodeOverlapDenominator
+public import FLT.Mazur.WeierstrassModificationXNodeOverlapFactorRatioBoundary
+public import FLT.Mazur.WeierstrassModificationXNodeOverlapFactorRatioCoordinates
 public import FLT.Mazur.WeierstrassModificationXNodeOverlapInfinityIso
 public import FLT.Mazur.WeierstrassModificationXNodeOverlapMobiusBoundary
 public import FLT.Mazur.WeierstrassModificationXNodeOverlapMobiusCorrection
@@ -13119,7 +13136,13 @@ public import FLT.Mazur.WeierstrassModificationXOriginalLocalization
 public import FLT.Mazur.WeierstrassModificationXOverlap
 public import FLT.Mazur.WeierstrassModificationXOverlapRatioReflection
 public import FLT.Mazur.WeierstrassModificationXPolynomialCoefficientNaturality
+public import FLT.Mazur.WeierstrassModificationXPolynomialFactorRatioBoundary
+public import FLT.Mazur.WeierstrassModificationXPolynomialFactorRatioCoefficient
+public import FLT.Mazur.WeierstrassModificationXPolynomialFactorRatioEquiv
+public import FLT.Mazur.WeierstrassModificationXPolynomialFactorRatioGeometry
 public import FLT.Mazur.WeierstrassModificationXPolynomialFactorRatioMap
+public import FLT.Mazur.WeierstrassModificationXPolynomialFactorRatioNaturality
+public import FLT.Mazur.WeierstrassModificationXPolynomialFactorRatioReduction
 public import FLT.Mazur.WeierstrassModificationXPolynomialFactors
 public import FLT.Mazur.WeierstrassModificationXPolynomialNodeBackward
 public import FLT.Mazur.WeierstrassModificationXPolynomialNodeCover
