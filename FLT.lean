@@ -5768,6 +5768,7 @@ public import FLT.Mazur.HilbertComplementPointCompatibility
 public import FLT.Mazur.HilbertComplementSchemeCompatibility
 public import FLT.Mazur.HilbertCompleteFrameCardinality
 public import FLT.Mazur.HilbertCompleteGeometricTuple
+public import FLT.Mazur.HilbertCompleteInteriorCharts
 public import FLT.Mazur.HilbertDivisorDegreePresentation
 public import FLT.Mazur.HilbertEnvelopeSourceTransport
 public import FLT.Mazur.HilbertFaithfulAffineNeighborhood
