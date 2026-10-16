@@ -7868,6 +7868,7 @@ public import FLT.Mazur.PolygonCompleteIdentityTopBranchOriginal
 public import FLT.Mazur.PolygonCompleteIdentityTopChartBranchImage
 public import FLT.Mazur.PolygonCompleteIdentityTopChartBranchQuotient
 public import FLT.Mazur.PolygonCompleteIdentityTopChartKernelPowers
+public import FLT.Mazur.PolygonCompleteIdentityTopChartNodeSocle
 public import FLT.Mazur.PolygonCompleteIdentityTopChartPunctureOpens
 public import FLT.Mazur.PolygonCompleteIdentityTopChartPunctures
 public import FLT.Mazur.PolygonCompleteIdentityTopCorrection
