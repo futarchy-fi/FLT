@@ -7902,6 +7902,7 @@ public import FLT.Mazur.PolygonCompletePointFirstComplementNodeExtraction
 public import FLT.Mazur.PolygonCompletePointFirstConstantEdges
 public import FLT.Mazur.PolygonCompletePointFirstEndpointCoefficients
 public import FLT.Mazur.PolygonCompletePointFirstFiniteNumerators
+public import FLT.Mazur.PolygonCompletePointFirstIncomingComplementExtraction
 public import FLT.Mazur.PolygonCompletePointFirstIncomingTail
 public import FLT.Mazur.PolygonCompletePointFirstIncomingValues
 public import FLT.Mazur.PolygonCompletePointFirstLocalizedCoordinateExtraction
