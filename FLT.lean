@@ -8102,6 +8102,7 @@ public import FLT.Mazur.PolygonFirstNodeWeightedConductor
 public import FLT.Mazur.PolygonFirstOrderBoundaryRigidity
 public import FLT.Mazur.PolygonFirstOrderCoordinateCharts
 public import FLT.Mazur.PolygonFirstPairReduction
+public import FLT.Mazur.PolygonFirstUniversalNodeReduction
 public import FLT.Mazur.PolygonGeneralizedCurve
 public import FLT.Mazur.PolygonGenusOne
 public import FLT.Mazur.PolygonGeometricGenus
