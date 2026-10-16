@@ -5853,6 +5853,7 @@ public import FLT.Mazur.HilbertOrbitBoundaryAtlas
 public import FLT.Mazur.HilbertOrbitBoundaryAtlasDescent
 public import FLT.Mazur.HilbertOrbitBoundaryAtlasLifts
 public import FLT.Mazur.HilbertOrbitBoundaryAtlasOriginalLift
+public import FLT.Mazur.HilbertOrbitBoundaryBaseLocalizationMaps
 public import FLT.Mazur.HilbertOrbitBoundaryFamilyLifts
 public import FLT.Mazur.HilbertOrbitBoundaryFiniteAtlas
 public import FLT.Mazur.HilbertOrbitBoundaryFiniteDescent
