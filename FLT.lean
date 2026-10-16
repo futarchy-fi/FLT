@@ -4658,6 +4658,7 @@ public import FLT.Mazur.EquivalenceRelationFiberRebase
 public import FLT.Mazur.EquivalenceRelationFrameRebaseGeometric
 public import FLT.Mazur.EquivalenceRelationFrameRebaseLaws
 public import FLT.Mazur.EquivalenceRelationInvariantBoundaryAction
+public import FLT.Mazur.EquivalenceRelationMixedFrameComparison
 public import FLT.Mazur.EquivalenceRelationMixedFrameLabelChange
 public import FLT.Mazur.EquivalenceRelationMixedFrameRelation
 public import FLT.Mazur.EquivalenceRelationNormalizedActionComplete
