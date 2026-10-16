@@ -11410,6 +11410,7 @@ public import FLT.Mazur.WeierstrassDividedArithmeticTerminalPunctureIso
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalPunctureParameter
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalPunctureRestriction
 public import FLT.Mazur.WeierstrassDividedArithmeticTerminalPunctureUnits
+public import FLT.Mazur.WeierstrassDividedArithmeticZeroInitialEndpoints
 public import FLT.Mazur.WeierstrassDividedArithmeticZeroRetentionIntersection
 public import FLT.Mazur.WeierstrassDividedAtlasRegularCenter
 public import FLT.Mazur.WeierstrassDividedBoundaryNormalization
@@ -12606,6 +12607,8 @@ public import FLT.Mazur.WeierstrassModificationReesYScaleScheme
 public import FLT.Mazur.WeierstrassModificationShearLocalization
 public import FLT.Mazur.WeierstrassModificationShearOverlap
 public import FLT.Mazur.WeierstrassModificationXAlgebra
+public import FLT.Mazur.WeierstrassModificationXArithmeticIncidenceOpen
+public import FLT.Mazur.WeierstrassModificationXArithmeticIncidencePullback
 public import FLT.Mazur.WeierstrassModificationXArithmeticInitialCover
 public import FLT.Mazur.WeierstrassModificationXArithmeticInitialNode
 public import FLT.Mazur.WeierstrassModificationXArithmeticNodeBoundary
@@ -12613,6 +12616,7 @@ public import FLT.Mazur.WeierstrassModificationXArithmeticNodeInfinity
 public import FLT.Mazur.WeierstrassModificationXArithmeticNodeOverlap
 public import FLT.Mazur.WeierstrassModificationXArithmeticNodeSeparation
 public import FLT.Mazur.WeierstrassModificationXArithmeticPuncture
+public import FLT.Mazur.WeierstrassModificationXArithmeticPunctureCover
 public import FLT.Mazur.WeierstrassModificationXArithmeticTensorNodes
 public import FLT.Mazur.WeierstrassModificationXBaseChange
 public import FLT.Mazur.WeierstrassModificationXBaseChangeGenerators
@@ -12716,6 +12720,7 @@ public import FLT.Mazur.WeierstrassModificationXLocalization
 public import FLT.Mazur.WeierstrassModificationXMorphism
 public import FLT.Mazur.WeierstrassModificationXNodeDenominators
 public import FLT.Mazur.WeierstrassModificationXNodeEvaluationNaturality
+public import FLT.Mazur.WeierstrassModificationXNodeIncidenceOpen
 public import FLT.Mazur.WeierstrassModificationXNodeInfinityDenominators
 public import FLT.Mazur.WeierstrassModificationXNodeInverseEvaluation
 public import FLT.Mazur.WeierstrassModificationXNodeInverseFunctions
@@ -12766,6 +12771,7 @@ public import FLT.Mazur.WeierstrassModificationXStandardPuncture
 public import FLT.Mazur.WeierstrassModificationXStandardPunctureComparison
 public import FLT.Mazur.WeierstrassModificationXStandardPunctureCoordinates
 public import FLT.Mazur.WeierstrassModificationXStandardPunctureEquiv
+public import FLT.Mazur.WeierstrassModificationXStandardPunctureRange
 public import FLT.Mazur.WeierstrassModificationXTensorContraction
 public import FLT.Mazur.WeierstrassModificationXTensorLaurentEvaluation
 public import FLT.Mazur.WeierstrassModificationXTensorOriginal
