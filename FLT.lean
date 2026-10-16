@@ -4644,6 +4644,7 @@ public import FLT.Mazur.EquivalenceRelationCompleteFiberComparison
 public import FLT.Mazur.EquivalenceRelationCompleteFiberSplit
 public import FLT.Mazur.EquivalenceRelationCompletePointLocus
 public import FLT.Mazur.EquivalenceRelationCompleteSourceComparison
+public import FLT.Mazur.EquivalenceRelationCompleteSourceRestriction
 public import FLT.Mazur.EquivalenceRelationFiberPermutationSections
 public import FLT.Mazur.EquivalenceRelationFiberRebase
 public import FLT.Mazur.EquivalenceRelationFrameRebaseGeometric
