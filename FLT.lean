@@ -7480,6 +7480,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstCompleteSmoothing
 public import FLT.Mazur.PolygonCompleteIdentityFirstCoordinateDescent
 public import FLT.Mazur.PolygonCompleteIdentityFirstCorrection
 public import FLT.Mazur.PolygonCompleteIdentityFirstCubicErrorCriterion
+public import FLT.Mazur.PolygonCompleteIdentityFirstCubicFractionErrors
 public import FLT.Mazur.PolygonCompleteIdentityFirstCubicFractions
 public import FLT.Mazur.PolygonCompleteIdentityFirstDefectDerivation
 public import FLT.Mazur.PolygonCompleteIdentityFirstDefectFormula
