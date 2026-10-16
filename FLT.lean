@@ -9713,6 +9713,7 @@ public import FLT.Mazur.RelativeRelationOrbit
 public import FLT.Mazur.RelativeRelationOrbitCoequalizer
 public import FLT.Mazur.RelativeRelationOrbitOpens
 public import FLT.Mazur.RelativeRelationOrbitTopology
+public import FLT.Mazur.RelativeRelationPointDenominators
 public import FLT.Mazur.RelativeRelationPrincipalLifting
 public import FLT.Mazur.RelativeRelationPrincipalRestriction
 public import FLT.Mazur.RelativeRelationPrincipalTorsion
