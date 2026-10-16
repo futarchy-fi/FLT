@@ -5785,6 +5785,7 @@ public import FLT.Mazur.HilbertNormalizedBoundaryChartLifts
 public import FLT.Mazur.HilbertNormalizedCompleteFiberSplit
 public import FLT.Mazur.HilbertNormalizedCompleteOrbits
 public import FLT.Mazur.HilbertNormalizedFrameAction
+public import FLT.Mazur.HilbertNormalizedLabelCharts
 public import FLT.Mazur.HilbertNormalizedOrbitBoundaryCharts
 public import FLT.Mazur.HilbertNormalizedOrbitBoundaryCoefficients
 public import FLT.Mazur.HilbertNormalizedOrbitBoundaryRefinement
