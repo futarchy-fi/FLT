@@ -9766,6 +9766,7 @@ public import FLT.Mazur.SchemeRelationEtaleCoverDescent
 public import FLT.Mazur.SchemeRelationEtaleImageModel
 public import FLT.Mazur.SchemeRelationEtaleKernelDescent
 public import FLT.Mazur.SchemeRelationFunctionDescent
+public import FLT.Mazur.SchemeRelationGeometricGround
 public import FLT.Mazur.SchemeRelationInvariantAffineUniversal
 public import FLT.Mazur.SchemeRelationInvariantDomainIso
 public import FLT.Mazur.SchemeRelationInvariantDominant
