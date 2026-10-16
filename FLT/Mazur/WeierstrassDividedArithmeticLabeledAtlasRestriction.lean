@@ -34,7 +34,7 @@ def arithmeticLabeledAtlasRestriction (i : ArithmeticChartLabel k) :
   match i with
   | .infinity => TensorCoefficientMap.spectrum (restriction R π m)
   | .terminal => arithmeticLabeledTerminalRestriction hπ data H m k hk
-  | .initial _ => arithmeticInitialNodeRestriction R π m W (π ^ start)
+  | .initial _ => arithmeticFullInitialNodeQuotient R π m W (π ^ start)
   | .retained _ _ => arithmeticPolygonNodeRestriction R π m
 
 /-- The entire labeled atlas commutes with the actual global arithmetic quotient. -/

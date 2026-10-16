@@ -61,7 +61,7 @@ variable (ha : IsUnit W.a₁) (h2 : π ∣ W.a₂)
 
 /-- The full first initial node commutes with the original tensor coefficient restriction. -/
 @[reassoc] theorem arithmeticInitialTensorNodeChart_restriction :
-    arithmeticInitialNodeRestriction R π m W s ≫
+    arithmeticFullInitialNodeQuotient R π m W s ≫
       arithmeticInitialTensorNodeChart π (m + 1) W s b3 b4 b6 ha h2 h3 h4 h6 =
         arithmeticInitialTensorNodeChart π m W s b3 b4 b6 ha h2 h3 h4 h6 ≫
           TensorCoefficientMap.spectrum (restriction R π m) := by
@@ -71,7 +71,7 @@ variable (ha : IsUnit W.a₁) (h2 : π ∣ W.a₂)
 
 /-- The full opposite initial node follows the same original tensor restriction. -/
 @[reassoc] theorem arithmeticOppositeInitialTensorNodeChart_restriction :
-    arithmeticInitialNodeRestriction R π m W s ≫
+    arithmeticFullInitialNodeQuotient R π m W s ≫
       arithmeticOppositeInitialTensorNodeChart π (m + 1) W s b3 b4 b6 ha h2 h3 h4 h6 =
         arithmeticOppositeInitialTensorNodeChart π m W s b3 b4 b6 ha h2 h3 h4 h6 ≫
           TensorCoefficientMap.spectrum (restriction R π m) := by

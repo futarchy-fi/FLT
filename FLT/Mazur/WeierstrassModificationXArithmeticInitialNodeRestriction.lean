@@ -30,22 +30,22 @@ attribute [local irreducible] polynomialSlopeRoot polynomialNodeChart polynomial
 
 /-- The complete first initial node chart follows the actual quotient restriction. -/
 @[reassoc] theorem arithmeticInitialNodeChart_restriction :
-    arithmeticInitialNodeRestriction R π m W s ≫
+    arithmeticFullInitialNodeQuotient R π m W s ≫
       arithmeticInitialNodeChart π (m + 1) W s b3 b4 b6 ha h2 h3 h4 h6 =
         arithmeticInitialNodeChart π m W s b3 b4 b6 ha h2 h3 h4 h6 ≫
           arithmeticInitialRestriction R π m W s b3 b4 b6 := by
-  unfold arithmeticInitialNodeRestriction arithmeticInitialNodeChart
+  unfold arithmeticFullInitialNodeQuotient arithmeticInitialNodeChart
     arithmeticInitialRestriction arithmeticInitialCoefficientRingMap
   apply canonicalPolynomialNodeChart_coefficient_of_eq
   exact arithmeticParameterIdeal_restriction R π m
 
 /-- The complete opposite initial chart follows the same actual quotient restriction. -/
 @[reassoc] theorem arithmeticOppositeInitialNodeChart_restriction :
-    arithmeticInitialNodeRestriction R π m W s ≫
+    arithmeticFullInitialNodeQuotient R π m W s ≫
       arithmeticOppositeInitialNodeChart π (m + 1) W s b3 b4 b6 ha h2 h3 h4 h6 =
         arithmeticOppositeInitialNodeChart π m W s b3 b4 b6 ha h2 h3 h4 h6 ≫
           arithmeticInitialRestriction R π m W s b3 b4 b6 := by
-  unfold arithmeticInitialNodeRestriction arithmeticOppositeInitialNodeChart
+  unfold arithmeticFullInitialNodeQuotient arithmeticOppositeInitialNodeChart
     arithmeticInitialRestriction arithmeticInitialCoefficientRingMap
   apply canonicalPolynomialOppositeNodeChart_coefficient_of_eq
   exact arithmeticParameterIdeal_restriction R π m

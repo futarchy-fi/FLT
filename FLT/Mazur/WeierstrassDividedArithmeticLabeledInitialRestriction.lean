@@ -29,7 +29,7 @@ variable {R : Type} [CommRing R] [IsDomain R] [IsBezout R]
 
 /-- Both full initial labels retain the actual global quotient at their fixed stage. -/
 @[reassoc] theorem arithmeticLabeledInitialChart_restriction (opposite : Bool) :
-    arithmeticInitialNodeRestriction R π m W (π ^ start) ≫
+    arithmeticFullInitialNodeQuotient R π m W (π ^ start) ≫
       arithmeticLabeledInitialChart hπ data H (m + 1) k hk opposite =
         arithmeticLabeledInitialChart hπ data H m k hk opposite ≫
           finiteGlobalArithmeticRestriction hπ data k hk m := by

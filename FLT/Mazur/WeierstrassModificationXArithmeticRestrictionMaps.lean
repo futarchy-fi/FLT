@@ -50,7 +50,7 @@ def arithmeticInitialRestriction :
   Spec.map (CommRingCat.ofHom (arithmeticInitialCoefficientRingMap R π m W s b3 b4 b6))
 
 /-- The original quotient restriction on the entire initial node neighborhood. -/
-def arithmeticInitialNodeRestriction :
+def arithmeticFullInitialNodeQuotient :
     Spec (.of (PolynomialNodeOpen (W.map q₀) (q₀ s))) ⟶
       Spec (.of (PolynomialNodeOpen (W.map q₁) (q₁ s))) :=
   Spec.map (CommRingCat.ofHom (nodeOpenCoefficientRingMapTo f (W.map q₁) (q₁ s)
