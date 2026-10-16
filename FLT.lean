@@ -9374,6 +9374,7 @@ public import FLT.Mazur.RelativeGenusOneUnrestrictedPoleProjective
 public import FLT.Mazur.RelativeGenusOneUnrestrictedPoleReduction
 public import FLT.Mazur.RelativeGenusOneUnrestrictedProjectiveIso
 public import FLT.Mazur.RelativeGenusOneUnrestrictedProjectiveSections
+public import FLT.Mazur.RelativeGeometricFrameLocus
 public import FLT.Mazur.RelativeIdealAmbientHom
 public import FLT.Mazur.RelativeIdealAmbientIsoSquare
 public import FLT.Mazur.RelativeIdealAmbientPullback
