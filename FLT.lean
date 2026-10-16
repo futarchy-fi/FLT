@@ -4642,8 +4642,10 @@ public import FLT.Mazur.EquifiberedSchemeGluing
 public import FLT.Mazur.EquivalenceRelationFiberRebase
 public import FLT.Mazur.EquivalenceRelationFrameRebaseGeometric
 public import FLT.Mazur.EquivalenceRelationFrameRebaseLaws
+public import FLT.Mazur.EquivalenceRelationNormalizedActionComplete
 public import FLT.Mazur.EquivalenceRelationNormalizedActionGraphs
 public import FLT.Mazur.EquivalenceRelationNormalizedActionRelation
+public import FLT.Mazur.EquivalenceRelationNormalizedCompleteRelation
 public import FLT.Mazur.EquivalenceRelationNormalizedFrameAction
 public import FLT.Mazur.EquivalenceRelationNormalizedFrameComparison
 public import FLT.Mazur.EquivalenceRelationNormalizedFrameCover
@@ -4652,6 +4654,7 @@ public import FLT.Mazur.EquivalenceRelationNormalizedFrameFree
 public import FLT.Mazur.EquivalenceRelationNormalizedFrameLifts
 public import FLT.Mazur.EquivalenceRelationNormalizedFrameRelation
 public import FLT.Mazur.EquivalenceRelationNormalizedFrames
+public import FLT.Mazur.EquivalenceRelationNormalizedOrbitNeighborhood
 public import FLT.Mazur.EquivalenceRelationSectionRebase
 public import FLT.Mazur.EtaleAffineSpaceDimension
 public import FLT.Mazur.EtaleAlgebraFiniteBranch
@@ -5741,6 +5744,8 @@ public import FLT.Mazur.HilbertMonomialReindexedAmbient
 public import FLT.Mazur.HilbertMultiplicationCoordinateRecovery
 public import FLT.Mazur.HilbertNestedNormSupport
 public import FLT.Mazur.HilbertNormOrbitFiber
+public import FLT.Mazur.HilbertNormalizedAffineNeighborhood
+public import FLT.Mazur.HilbertNormalizedCompleteOrbits
 public import FLT.Mazur.HilbertNormalizedFrameAction
 public import FLT.Mazur.HilbertNormalizedRelationComparison
 public import FLT.Mazur.HilbertOpenAmbientBaseChange
@@ -9236,6 +9241,7 @@ public import FLT.Mazur.RelativeCoefficientSourceCartesian
 public import FLT.Mazur.RelativeCoefficientSourceImage
 public import FLT.Mazur.RelativeComparisonFiberIso
 public import FLT.Mazur.RelativeCompleteFrameComparison
+public import FLT.Mazur.RelativeCompleteFrameFiberIso
 public import FLT.Mazur.RelativeCompleteGeometricTuple
 public import FLT.Mazur.RelativeCoproductComponentPullback
 public import FLT.Mazur.RelativeCoproductPullCover
@@ -9263,6 +9269,8 @@ public import FLT.Mazur.RelativeFppfRepresentedCover
 public import FLT.Mazur.RelativeFppfSchemeCover
 public import FLT.Mazur.RelativeFppfSurjectivityDetection
 public import FLT.Mazur.RelativeFppfTargetOpen
+public import FLT.Mazur.RelativeFrameCompletenessTransfer
+public import FLT.Mazur.RelativeFrameRelabelCompleteness
 public import FLT.Mazur.RelativeGenusOneAffineCartesian
 public import FLT.Mazur.RelativeGenusOneAffineCubicMorphism
 public import FLT.Mazur.RelativeGenusOneAffineIso
