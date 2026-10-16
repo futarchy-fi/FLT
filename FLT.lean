@@ -11965,6 +11965,7 @@ public import FLT.Mazur.WeierstrassDividedClosedPolygonCompatibility
 public import FLT.Mazur.WeierstrassDividedClosedPolygonCoverage
 public import FLT.Mazur.WeierstrassDividedClosedPolygonDescent
 public import FLT.Mazur.WeierstrassDividedClosedPolygonInjectivity
+public import FLT.Mazur.WeierstrassDividedClosedPolygonIso
 public import FLT.Mazur.WeierstrassDividedClosedPolygonLocalIso
 public import FLT.Mazur.WeierstrassDividedClosedPolygonSeparation
 public import FLT.Mazur.WeierstrassDividedClosedRetainedIntersection
