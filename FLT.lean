@@ -9921,6 +9921,7 @@ public import FLT.Mazur.SchemeFppfCoverInvariantFunctions
 public import FLT.Mazur.SchemeFppfFamilyCocycleAssembly
 public import FLT.Mazur.SchemeFppfFamilyCover
 public import FLT.Mazur.SchemeFppfFamilyDiagonalAssembly
+public import FLT.Mazur.SchemeFppfFamilyFunctionDescent
 public import FLT.Mazur.SchemeFppfFamilyLineDescent
 public import FLT.Mazur.SchemeFppfFamilyMemberOverlap
 public import FLT.Mazur.SchemeFppfFamilyOverlapAssembly
