@@ -12710,6 +12710,7 @@ public import FLT.Mazur.WeierstrassModificationXIncidenceSectionMaps
 public import FLT.Mazur.WeierstrassModificationXInitialTerminalNodeBoundary
 public import FLT.Mazur.WeierstrassModificationXInitialTerminalReduction
 public import FLT.Mazur.WeierstrassModificationXInvolution
+public import FLT.Mazur.WeierstrassModificationXLaurentBranchReduction
 public import FLT.Mazur.WeierstrassModificationXLaurentBranches
 public import FLT.Mazur.WeierstrassModificationXLaurentEvaluation
 public import FLT.Mazur.WeierstrassModificationXLaurentNodeDenominator
