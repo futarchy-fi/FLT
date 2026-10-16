@@ -4847,6 +4847,7 @@ public import FLT.Mazur.FiniteGroupAffineNeighborhood
 public import FLT.Mazur.FiniteGroupAffineQuotient
 public import FLT.Mazur.FiniteGroupBoundaryTrace
 public import FLT.Mazur.FiniteGroupFieldPointOrbits
+public import FLT.Mazur.FiniteGroupFreeBoundaryLift
 public import FLT.Mazur.FiniteGroupFreeOrbitSeparation
 public import FLT.Mazur.FiniteGroupFreeTraceIdeal
 public import FLT.Mazur.FiniteGroupInvariantAffineCover
