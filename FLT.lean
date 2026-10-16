@@ -11646,6 +11646,7 @@ public import FLT.Mazur.WeierstrassDividedArithmeticCoordinateTransition
 public import FLT.Mazur.WeierstrassDividedArithmeticCoordinates
 public import FLT.Mazur.WeierstrassDividedArithmeticEarlierTerminal
 public import FLT.Mazur.WeierstrassDividedArithmeticFactorRatioAffine
+public import FLT.Mazur.WeierstrassDividedArithmeticFactorRatioInfinity
 public import FLT.Mazur.WeierstrassDividedArithmeticInfinitySeparation
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialBranch
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialComparison
