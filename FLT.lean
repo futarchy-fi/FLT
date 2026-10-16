@@ -4650,6 +4650,9 @@ public import FLT.Mazur.EquivalenceRelationBoundaryOpenCoefficients
 public import FLT.Mazur.EquivalenceRelationBoundarySubframe
 public import FLT.Mazur.EquivalenceRelationBoundarySubframeCoefficients
 public import FLT.Mazur.EquivalenceRelationBoundarySubframeGeometry
+public import FLT.Mazur.EquivalenceRelationChartFamilyCorrections
+public import FLT.Mazur.EquivalenceRelationChartFamilyLifts
+public import FLT.Mazur.EquivalenceRelationChartFamilyRestriction
 public import FLT.Mazur.EquivalenceRelationCompleteClosedLocus
 public import FLT.Mazur.EquivalenceRelationCompleteFiberComparison
 public import FLT.Mazur.EquivalenceRelationCompleteFiberSplit
@@ -4680,6 +4683,10 @@ public import FLT.Mazur.EquivalenceRelationJointGeometricComparison
 public import FLT.Mazur.EquivalenceRelationJointInvariantLifts
 public import FLT.Mazur.EquivalenceRelationJointSourceRefinement
 public import FLT.Mazur.EquivalenceRelationLabelOpenCharts
+public import FLT.Mazur.EquivalenceRelationMixedChartDescent
+public import FLT.Mazur.EquivalenceRelationMixedChartLiftDifference
+public import FLT.Mazur.EquivalenceRelationMixedChartProjections
+public import FLT.Mazur.EquivalenceRelationMixedChartRestriction
 public import FLT.Mazur.EquivalenceRelationMixedFrameCardinality
 public import FLT.Mazur.EquivalenceRelationMixedFrameComparison
 public import FLT.Mazur.EquivalenceRelationMixedFrameLabelChange
@@ -5829,6 +5836,7 @@ public import FLT.Mazur.HilbertOpenInclusionExtension
 public import FLT.Mazur.HilbertOpenInclusionFamilies
 public import FLT.Mazur.HilbertOpenIntrinsicClassification
 public import FLT.Mazur.HilbertOpenOverlapCoherence
+public import FLT.Mazur.HilbertOrbitBoundaryFamilyLifts
 public import FLT.Mazur.HilbertOrderedAffineEnvelope
 public import FLT.Mazur.HilbertOrderedOriginalBoundary
 public import FLT.Mazur.HilbertOrderedStableNeighborhood
