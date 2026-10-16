@@ -8295,6 +8295,7 @@ public import FLT.Mazur.PolygonHomogeneousBoundaryEvaluation
 public import FLT.Mazur.PolygonIdealModulePullback
 public import FLT.Mazur.PolygonIncidence
 public import FLT.Mazur.PolygonIncidenceQuotient
+public import FLT.Mazur.PolygonInfinitesimalAdjacentUnion
 public import FLT.Mazur.PolygonInfinitesimalAtlas
 public import FLT.Mazur.PolygonInfinitesimalBaseChange
 public import FLT.Mazur.PolygonInfinitesimalBoundaryComparison
@@ -8572,6 +8573,7 @@ public import FLT.Mazur.PolygonSmoothingBranchSeparation
 public import FLT.Mazur.PolygonSmoothingBranchSwap
 public import FLT.Mazur.PolygonSmoothingBranchSwapGeometry
 public import FLT.Mazur.PolygonSmoothingBranchSwapNaturality
+public import FLT.Mazur.PolygonSmoothingClosingPair
 public import FLT.Mazur.PolygonSmoothingCoefficientBranches
 public import FLT.Mazur.PolygonSmoothingCoefficientSquares
 public import FLT.Mazur.PolygonSmoothingCompletedDifferentials
@@ -11838,6 +11840,7 @@ public import FLT.Mazur.WeierstrassDividedArithmeticInitialNodeIntersection
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialNodeOverlap
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialNodes
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialPolygon
+public import FLT.Mazur.WeierstrassDividedArithmeticInitialPolygonImage
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialSeparation
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialSlope
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialTriangleCompatibility
@@ -11915,6 +11918,8 @@ public import FLT.Mazur.WeierstrassDividedChartCubicAction
 public import FLT.Mazur.WeierstrassDividedChartRegularCenter
 public import FLT.Mazur.WeierstrassDividedClosedBoundaryUnits
 public import FLT.Mazur.WeierstrassDividedClosedClosingAttachment
+public import FLT.Mazur.WeierstrassDividedClosedClosingPolygonUnion
+public import FLT.Mazur.WeierstrassDividedClosedInfinityPolygonImage
 public import FLT.Mazur.WeierstrassDividedClosedPolygonCompatibility
 public import FLT.Mazur.WeierstrassDividedClosedPolygonDescent
 public import FLT.Mazur.WeierstrassDividedClosedTerminalNormalization
@@ -13243,6 +13248,7 @@ public import FLT.Mazur.WeierstrassModificationXExtendedCastEvaluation
 public import FLT.Mazur.WeierstrassModificationXExtendedNormalEvaluation
 public import FLT.Mazur.WeierstrassModificationXFactorGapUnits
 public import FLT.Mazur.WeierstrassModificationXFactorRatioBoundary
+public import FLT.Mazur.WeierstrassModificationXFactorRatioChartImage
 public import FLT.Mazur.WeierstrassModificationXFactorRatioInfinityBoundary
 public import FLT.Mazur.WeierstrassModificationXFactorRatioLaurentCoefficient
 public import FLT.Mazur.WeierstrassModificationXFactorRatioLaurentEquiv
@@ -13884,6 +13890,7 @@ public import FLT.Mazur.WeierstrassSplitNodalChartGroup
 public import FLT.Mazur.WeierstrassSplitNodalChartParameters
 public import FLT.Mazur.WeierstrassSplitNodalFieldSmooth
 public import FLT.Mazur.WeierstrassSplitNodalGroupCoordinates
+public import FLT.Mazur.WeierstrassSplitNodalInfinityFactorRatio
 public import FLT.Mazur.WeierstrassSplitNodalInversion
 public import FLT.Mazur.WeierstrassSplitNodalLaurent
 public import FLT.Mazur.WeierstrassSplitNodalLaurentCoefficient
