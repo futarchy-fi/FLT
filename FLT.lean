@@ -12227,6 +12227,7 @@ public import FLT.Mazur.WeierstrassDividedTerminalNodeIncidence
 public import FLT.Mazur.WeierstrassDividedTerminalParameterOrigins
 public import FLT.Mazur.WeierstrassDividedTerminalParameterStructure
 public import FLT.Mazur.WeierstrassDividedTerminalPolygonBoundary
+public import FLT.Mazur.WeierstrassDividedTerminalPolygonBoundaryRestriction
 public import FLT.Mazur.WeierstrassDividedTerminalResidueAtlas
 public import FLT.Mazur.WeierstrassDividedTerminalResidueBoundary
 public import FLT.Mazur.WeierstrassDividedTerminalResidueCharts
