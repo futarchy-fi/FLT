@@ -4023,6 +4023,7 @@ public import FLT.Mazur.DivisorCanonicalOperations
 public import FLT.Mazur.DivisorCanonicalSection
 public import FLT.Mazur.DivisorChartCokernel
 public import FLT.Mazur.DivisorChartNumerator
+public import FLT.Mazur.DivisorChartPoleRatio
 public import FLT.Mazur.DivisorChartTensorNumerator
 public import FLT.Mazur.DivisorClosedCokernel
 public import FLT.Mazur.DivisorCohomologicalDegree
