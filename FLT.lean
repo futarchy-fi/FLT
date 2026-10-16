@@ -11989,6 +11989,7 @@ public import FLT.Mazur.WeierstrassDividedFirstOutputCover
 public import FLT.Mazur.WeierstrassDividedFirstSuccessorAction
 public import FLT.Mazur.WeierstrassDividedFirstUnitAction
 public import FLT.Mazur.WeierstrassDividedFixedTerminalBoundary
+public import FLT.Mazur.WeierstrassDividedFixedTerminalParameterIso
 public import FLT.Mazur.WeierstrassDividedFixedTerminalReduction
 public import FLT.Mazur.WeierstrassDividedFullInfinityFactorRatioMap
 public import FLT.Mazur.WeierstrassDividedFullInfinityFactorRatioNaturality
