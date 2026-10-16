@@ -11630,6 +11630,7 @@ public import FLT.Mazur.WeierstrassDividedLaurentZeroRetainedIntersection
 public import FLT.Mazur.WeierstrassDividedLinearResidueBounds
 public import FLT.Mazur.WeierstrassDividedLocalComponentContraction
 public import FLT.Mazur.WeierstrassDividedLocalizedIntersection
+public import FLT.Mazur.WeierstrassDividedNilpotentEarlierTerminal
 public import FLT.Mazur.WeierstrassDividedNilpotentNonadjacentIntersection
 public import FLT.Mazur.WeierstrassDividedNonadjacentGlobalIntersection
 public import FLT.Mazur.WeierstrassDividedNonadjacentTensorIntersection
