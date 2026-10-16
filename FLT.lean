@@ -7860,6 +7860,7 @@ public import FLT.Mazur.PolygonCompleteIdentityStageTorus
 public import FLT.Mazur.PolygonCompleteIdentityTopActionCoordinate
 public import FLT.Mazur.PolygonCompleteIdentityTopActionRestriction
 public import FLT.Mazur.PolygonCompleteIdentityTopBoundary
+public import FLT.Mazur.PolygonCompleteIdentityTopBranchOriginal
 public import FLT.Mazur.PolygonCompleteIdentityTopCorrection
 public import FLT.Mazur.PolygonCompleteIdentityTopDefect
 public import FLT.Mazur.PolygonCompleteIdentityTopGraphAlgebra
