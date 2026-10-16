@@ -12414,6 +12414,7 @@ public import FLT.Mazur.WeierstrassDividedZeroExteriorProjective
 public import FLT.Mazur.WeierstrassDividedZeroExteriorSmoothCoordinates
 public import FLT.Mazur.WeierstrassDividedZeroExteriorSmoothOrbit
 public import FLT.Mazur.WeierstrassDividedZeroIncidenceInfinity
+public import FLT.Mazur.WeierstrassDividedZeroInitialPolygonBoundary
 public import FLT.Mazur.WeierstrassDividedZeroNodalGeometry
 public import FLT.Mazur.WeierstrassDividedZeroNodalGluing
 public import FLT.Mazur.WeierstrassDividedZeroNodalProjective
