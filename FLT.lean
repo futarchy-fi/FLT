@@ -13058,6 +13058,7 @@ public import FLT.Mazur.WeierstrassModificationXZeroIdealBoundary
 public import FLT.Mazur.WeierstrassModificationXZeroInitialPolygon
 public import FLT.Mazur.WeierstrassModificationXZeroMobiusChart
 public import FLT.Mazur.WeierstrassModificationXZeroMobiusOverlapBoundary
+public import FLT.Mazur.WeierstrassModificationXZeroMobiusPuncturePreimage
 public import FLT.Mazur.WeierstrassModificationXZeroNodeOverlap
 public import FLT.Mazur.WeierstrassModificationXZeroNodeOverlapBranches
 public import FLT.Mazur.WeierstrassModificationXZeroNodeOverlapFactors
