@@ -10985,6 +10985,7 @@ public import FLT.Mazur.WeierstrassAuxiliaryFieldCover
 public import FLT.Mazur.WeierstrassCartesianOriginComparison
 public import FLT.Mazur.WeierstrassCartesianPullbackGroup
 public import FLT.Mazur.WeierstrassCartesianSmoothPullbackGroup
+public import FLT.Mazur.WeierstrassChartArithmeticRestriction
 public import FLT.Mazur.WeierstrassChartBaseChange
 public import FLT.Mazur.WeierstrassChartBaseChangeSquare
 public import FLT.Mazur.WeierstrassChartCoefficientMap
@@ -11706,6 +11707,8 @@ public import FLT.Mazur.WeierstrassDividedArithmeticFactorRatioOverlap
 public import FLT.Mazur.WeierstrassDividedArithmeticFactorRatioTensorAffine
 public import FLT.Mazur.WeierstrassDividedArithmeticFactorRatioTensorInfinity
 public import FLT.Mazur.WeierstrassDividedArithmeticFactorRatioTriangle
+public import FLT.Mazur.WeierstrassDividedArithmeticInfinityFactorRatioRestriction
+public import FLT.Mazur.WeierstrassDividedArithmeticInfinityFactorRatioTensorRestriction
 public import FLT.Mazur.WeierstrassDividedArithmeticInfinitySeparation
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialBranch
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialComparison
@@ -11786,6 +11789,8 @@ public import FLT.Mazur.WeierstrassDividedBranchPairSeparation
 public import FLT.Mazur.WeierstrassDividedCanonicalFactorRatioAffine
 public import FLT.Mazur.WeierstrassDividedCanonicalFactorRatioNaturality
 public import FLT.Mazur.WeierstrassDividedCanonicalFactorRatioTransport
+public import FLT.Mazur.WeierstrassDividedCanonicalInfinityFactorRatio
+public import FLT.Mazur.WeierstrassDividedCanonicalInfinityFactorRatioTransport
 public import FLT.Mazur.WeierstrassDividedChartCubicAction
 public import FLT.Mazur.WeierstrassDividedChartRegularCenter
 public import FLT.Mazur.WeierstrassDividedCoefficientActionIndexTransport
@@ -11942,6 +11947,7 @@ public import FLT.Mazur.WeierstrassDividedFirstOutputCover
 public import FLT.Mazur.WeierstrassDividedFirstSuccessorAction
 public import FLT.Mazur.WeierstrassDividedFirstUnitAction
 public import FLT.Mazur.WeierstrassDividedFullInfinityFactorRatioMap
+public import FLT.Mazur.WeierstrassDividedFullInfinityFactorRatioNaturality
 public import FLT.Mazur.WeierstrassDividedFullResidueAtlas
 public import FLT.Mazur.WeierstrassDividedGlobalActionAssociativity
 public import FLT.Mazur.WeierstrassDividedGlobalActionConstruction
@@ -13501,6 +13507,10 @@ public import FLT.Mazur.WeierstrassResidueTangentCoefficientTower
 public import FLT.Mazur.WeierstrassResidueTangentComponentData
 public import FLT.Mazur.WeierstrassResidueTangentEquationData
 public import FLT.Mazur.WeierstrassRetainedCoefficientShearChart
+public import FLT.Mazur.WeierstrassRetainedNodeFactor
+public import FLT.Mazur.WeierstrassRetainedNodeFactorRatioMap
+public import FLT.Mazur.WeierstrassRetainedNodeRootBoundary
+public import FLT.Mazur.WeierstrassRetainedNodeRoots
 public import FLT.Mazur.WeierstrassRetainedRegularCenter
 public import FLT.Mazur.WeierstrassRootShearCoefficientConditions
 public import FLT.Mazur.WeierstrassRootShearParameterCoefficient
