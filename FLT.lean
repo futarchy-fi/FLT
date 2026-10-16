@@ -4653,6 +4653,7 @@ public import FLT.Mazur.EquivalenceRelationBoundarySubframeCoefficients
 public import FLT.Mazur.EquivalenceRelationBoundarySubframeGeometry
 public import FLT.Mazur.EquivalenceRelationChartFamilyCorrections
 public import FLT.Mazur.EquivalenceRelationChartFamilyLifts
+public import FLT.Mazur.EquivalenceRelationChartFamilyLocalization
 public import FLT.Mazur.EquivalenceRelationChartFamilyRestriction
 public import FLT.Mazur.EquivalenceRelationCompleteClosedLocus
 public import FLT.Mazur.EquivalenceRelationCompleteFiberComparison
@@ -4712,6 +4713,7 @@ public import FLT.Mazur.EquivalenceRelationNormalizedLabelTransport
 public import FLT.Mazur.EquivalenceRelationNormalizedOrbitNeighborhood
 public import FLT.Mazur.EquivalenceRelationNormalizedScalarComplete
 public import FLT.Mazur.EquivalenceRelationNormalizedSubframe
+public import FLT.Mazur.EquivalenceRelationOpenChartScalars
 public import FLT.Mazur.EquivalenceRelationSectionRebase
 public import FLT.Mazur.EquivalenceRelationSourceRefinement
 public import FLT.Mazur.EquivalenceRelationSourceRestriction
@@ -4828,6 +4830,7 @@ public import FLT.Mazur.FiniteAffineProperIntegerDescent
 public import FLT.Mazur.FiniteAlgebraFiberSurjective
 public import FLT.Mazur.FiniteAlgebraSpectrumCard
 public import FLT.Mazur.FiniteArrowIntegerModel
+public import FLT.Mazur.FiniteBoundaryEqualizerClearing
 public import FLT.Mazur.FiniteCartierIsomorphismNeighborhood
 public import FLT.Mazur.FiniteCartierLocalizedComparison
 public import FLT.Mazur.FiniteCartierPointFactorization
@@ -4997,6 +5000,8 @@ public import FLT.Mazur.FiniteLeadingIdealFamily
 public import FLT.Mazur.FiniteLineCocycleModel
 public import FLT.Mazur.FiniteLineSheafDescent
 public import FLT.Mazur.FiniteLineSheafModel
+public import FLT.Mazur.FiniteLocalizationDenominators
+public import FLT.Mazur.FiniteLocalizedBoundaryLifts
 public import FLT.Mazur.FiniteLocalizedIdealQuotient
 public import FLT.Mazur.FiniteLocalizedIntegerComparisons
 public import FLT.Mazur.FiniteLocalizedPolynomialCoefficients
@@ -5851,6 +5856,9 @@ public import FLT.Mazur.HilbertOrbitBoundaryFiniteLifts
 public import FLT.Mazur.HilbertOrbitBoundaryFiniteMultipliers
 public import FLT.Mazur.HilbertOrbitBoundaryFiniteOriginalLift
 public import FLT.Mazur.HilbertOrbitBoundaryFiniteProducts
+public import FLT.Mazur.HilbertOrbitBoundaryFiniteScalars
+public import FLT.Mazur.HilbertOrbitBoundaryLocalizedMaps
+public import FLT.Mazur.HilbertOrbitBoundaryScaledMultipliers
 public import FLT.Mazur.HilbertOrderedAffineEnvelope
 public import FLT.Mazur.HilbertOrderedOriginalBoundary
 public import FLT.Mazur.HilbertOrderedStableNeighborhood
