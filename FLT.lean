@@ -5542,6 +5542,7 @@ public import FLT.Mazur.HilbertBasisSchemeOver
 public import FLT.Mazur.HilbertBasisTupleAffineComparison
 public import FLT.Mazur.HilbertBasisTupleIntersection
 public import FLT.Mazur.HilbertBasisTupleSchemeComparison
+public import FLT.Mazur.HilbertBoundaryCertifiedAlgebra
 public import FLT.Mazur.HilbertBoundaryClosedRelation
 public import FLT.Mazur.HilbertBoundaryEtaleIdeals
 public import FLT.Mazur.HilbertBoundaryEtaleLift
@@ -5560,6 +5561,7 @@ public import FLT.Mazur.HilbertBoundaryQuotientSections
 public import FLT.Mazur.HilbertBoundaryRelationNilpotence
 public import FLT.Mazur.HilbertBoundaryRelationTests
 public import FLT.Mazur.HilbertBoundarySchemeTests
+public import FLT.Mazur.HilbertBoundarySimultaneousLiftCover
 public import FLT.Mazur.HilbertBoundaryThickeningGeometry
 public import FLT.Mazur.HilbertBoundaryThickeningKernelPair
 public import FLT.Mazur.HilbertBoundaryThickeningNilpotence
@@ -9305,6 +9307,7 @@ public import FLT.Mazur.RelativeRelationSaturationCover
 public import FLT.Mazur.RelativeRelationSaturationFunctionDescent
 public import FLT.Mazur.RelativeRelationSaturationKernel
 public import FLT.Mazur.RelativeRelationSaturationSpan
+public import FLT.Mazur.RelativeRelationSimultaneousLiftCover
 public import FLT.Mazur.RelativeRelationSplitQuotient
 public import FLT.Mazur.RelativeSectionAmpleBaseChange
 public import FLT.Mazur.RelativeSectionAmpleLocality
@@ -9938,7 +9941,11 @@ public import FLT.Mazur.SectionGradedStructuralAlgebra
 public import FLT.Mazur.SectionGradedSum
 public import FLT.Mazur.SectionGradedUnit
 public import FLT.Mazur.SectionKernelLocal
+public import FLT.Mazur.SectionLiftCertificatePolynomial
 public import FLT.Mazur.SectionLiftIdeal
+public import FLT.Mazur.SectionLiftIdealAlgebra
+public import FLT.Mazur.SectionLiftSimultaneousCertificate
+public import FLT.Mazur.SectionLiftSourceCertificate
 public import FLT.Mazur.SectionLineChartOverlap
 public import FLT.Mazur.SectionLinePointBaseChange
 public import FLT.Mazur.SectionLinePointOverlapEquality
