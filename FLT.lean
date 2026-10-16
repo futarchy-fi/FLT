@@ -4639,6 +4639,7 @@ public import FLT.Mazur.EquivalenceRelationFiberRebase
 public import FLT.Mazur.EquivalenceRelationFrameRebaseGeometric
 public import FLT.Mazur.EquivalenceRelationFrameRebaseLaws
 public import FLT.Mazur.EquivalenceRelationNormalizedFrameAction
+public import FLT.Mazur.EquivalenceRelationNormalizedFrameComparison
 public import FLT.Mazur.EquivalenceRelationNormalizedFrameFree
 public import FLT.Mazur.EquivalenceRelationNormalizedFrames
 public import FLT.Mazur.EquivalenceRelationSectionRebase
