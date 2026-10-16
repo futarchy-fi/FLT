@@ -7872,6 +7872,7 @@ public import FLT.Mazur.PolygonCompletePointChartEquation
 public import FLT.Mazur.PolygonCompletePointChartFrameNumerator
 public import FLT.Mazur.PolygonCompletePointCommonMarkingUnit
 public import FLT.Mazur.PolygonCompletePointComplementCoordinates
+public import FLT.Mazur.PolygonCompletePointComplementCubicChart
 public import FLT.Mazur.PolygonCompletePointComplementEquation
 public import FLT.Mazur.PolygonCompletePointComplementMonomials
 public import FLT.Mazur.PolygonCompletePointCoordinateEquiv
