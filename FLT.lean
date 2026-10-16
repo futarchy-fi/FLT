@@ -13391,6 +13391,7 @@ public import FLT.Mazur.WeierstrassModificationXNodeRestriction
 public import FLT.Mazur.WeierstrassModificationXOppositeNodeCoefficientNaturality
 public import FLT.Mazur.WeierstrassModificationXOppositeNodeEquiv
 public import FLT.Mazur.WeierstrassModificationXOppositeNodeGeometry
+public import FLT.Mazur.WeierstrassModificationXOppositeOverlapRange
 public import FLT.Mazur.WeierstrassModificationXOriginalLocalization
 public import FLT.Mazur.WeierstrassModificationXOverlap
 public import FLT.Mazur.WeierstrassModificationXOverlapRatioReflection
