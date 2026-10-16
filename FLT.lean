@@ -7867,6 +7867,7 @@ public import FLT.Mazur.PolygonCompleteIdentityTopBoundary
 public import FLT.Mazur.PolygonCompleteIdentityTopBranchOriginal
 public import FLT.Mazur.PolygonCompleteIdentityTopChartBranchImage
 public import FLT.Mazur.PolygonCompleteIdentityTopChartBranchQuotient
+public import FLT.Mazur.PolygonCompleteIdentityTopChartPunctures
 public import FLT.Mazur.PolygonCompleteIdentityTopCorrection
 public import FLT.Mazur.PolygonCompleteIdentityTopDefect
 public import FLT.Mazur.PolygonCompleteIdentityTopGraphAlgebra
