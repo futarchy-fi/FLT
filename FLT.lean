@@ -13510,6 +13510,7 @@ public import FLT.Mazur.WeierstrassRetainedNodeFactorRatioLeftBoundary
 public import FLT.Mazur.WeierstrassRetainedNodeFactorRatioMap
 public import FLT.Mazur.WeierstrassRetainedNodeFactorRatioNaturality
 public import FLT.Mazur.WeierstrassRetainedNodeFactorRatioPuncture
+public import FLT.Mazur.WeierstrassRetainedNodeFactorRatioTransport
 public import FLT.Mazur.WeierstrassRetainedNodeRootBoundary
 public import FLT.Mazur.WeierstrassRetainedNodeRoots
 public import FLT.Mazur.WeierstrassRetainedNodeRootsNaturality
