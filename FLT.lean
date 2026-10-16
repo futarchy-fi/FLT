@@ -4642,6 +4642,7 @@ public import FLT.Mazur.EquifiberedSchemeGluing
 public import FLT.Mazur.EquivalenceRelationActionInfinitesimalRigidity
 public import FLT.Mazur.EquivalenceRelationBoundaryActionGeometry
 public import FLT.Mazur.EquivalenceRelationBoundaryCoefficients
+public import FLT.Mazur.EquivalenceRelationBoundaryOpenCoefficients
 public import FLT.Mazur.EquivalenceRelationCompleteClosedLocus
 public import FLT.Mazur.EquivalenceRelationCompleteFiberComparison
 public import FLT.Mazur.EquivalenceRelationCompleteFiberSplit
@@ -4669,6 +4670,7 @@ public import FLT.Mazur.EquivalenceRelationNormalizedFrameFree
 public import FLT.Mazur.EquivalenceRelationNormalizedFrameLifts
 public import FLT.Mazur.EquivalenceRelationNormalizedFrameRelation
 public import FLT.Mazur.EquivalenceRelationNormalizedFrames
+public import FLT.Mazur.EquivalenceRelationNormalizedInvariantOpen
 public import FLT.Mazur.EquivalenceRelationNormalizedOrbitNeighborhood
 public import FLT.Mazur.EquivalenceRelationNormalizedScalarComplete
 public import FLT.Mazur.EquivalenceRelationSectionRebase
@@ -4891,8 +4893,10 @@ public import FLT.Mazur.FiniteGeometricGenericPrincipalInteriors
 public import FLT.Mazur.FiniteGeometricSections
 public import FLT.Mazur.FiniteGroupAffineNeighborhood
 public import FLT.Mazur.FiniteGroupAffineQuotient
+public import FLT.Mazur.FiniteGroupBoundaryChartRestriction
 public import FLT.Mazur.FiniteGroupBoundaryTrace
 public import FLT.Mazur.FiniteGroupClosedEnvelopeNeighborhood
+public import FLT.Mazur.FiniteGroupClosedEnvelopeRefinement
 public import FLT.Mazur.FiniteGroupEnvelopeNeighborhood
 public import FLT.Mazur.FiniteGroupEquivariantOpenBoundary
 public import FLT.Mazur.FiniteGroupFieldPointOrbits
@@ -4906,6 +4910,8 @@ public import FLT.Mazur.FiniteGroupInvariantOpens
 public import FLT.Mazur.FiniteGroupInvariantPolynomial
 public import FLT.Mazur.FiniteGroupInvariantRing
 public import FLT.Mazur.FiniteGroupInvariantSpectrum
+public import FLT.Mazur.FiniteGroupOpenCoefficientRefinement
+public import FLT.Mazur.FiniteGroupOpenRelationCoefficients
 public import FLT.Mazur.FiniteGroupOpenRestriction
 public import FLT.Mazur.FiniteGroupOrbitSpan
 public import FLT.Mazur.FiniteGroupPullbackAction
@@ -5765,11 +5771,15 @@ public import FLT.Mazur.HilbertMultiplicationCoordinateRecovery
 public import FLT.Mazur.HilbertNestedNormSupport
 public import FLT.Mazur.HilbertNormOrbitFiber
 public import FLT.Mazur.HilbertNormalizedAffineNeighborhood
+public import FLT.Mazur.HilbertNormalizedAffineRefinement
 public import FLT.Mazur.HilbertNormalizedBoundaryAction
 public import FLT.Mazur.HilbertNormalizedBoundaryChartLifts
 public import FLT.Mazur.HilbertNormalizedCompleteFiberSplit
 public import FLT.Mazur.HilbertNormalizedCompleteOrbits
 public import FLT.Mazur.HilbertNormalizedFrameAction
+public import FLT.Mazur.HilbertNormalizedOrbitBoundaryCharts
+public import FLT.Mazur.HilbertNormalizedOrbitBoundaryCoefficients
+public import FLT.Mazur.HilbertNormalizedOrbitBoundaryRefinement
 public import FLT.Mazur.HilbertNormalizedRelationComparison
 public import FLT.Mazur.HilbertNormalizedStableAffine
 public import FLT.Mazur.HilbertOpenAmbientBaseChange
