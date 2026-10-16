@@ -4680,6 +4680,7 @@ public import FLT.Mazur.EquivalenceRelationJointGeometricComparison
 public import FLT.Mazur.EquivalenceRelationJointInvariantLifts
 public import FLT.Mazur.EquivalenceRelationJointSourceRefinement
 public import FLT.Mazur.EquivalenceRelationLabelOpenCharts
+public import FLT.Mazur.EquivalenceRelationMixedChartDescent
 public import FLT.Mazur.EquivalenceRelationMixedChartProjections
 public import FLT.Mazur.EquivalenceRelationMixedFrameCardinality
 public import FLT.Mazur.EquivalenceRelationMixedFrameComparison
