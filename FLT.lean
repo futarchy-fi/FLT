@@ -9607,6 +9607,7 @@ public import FLT.Mazur.RelativeFrameScalarCompleteness
 public import FLT.Mazur.RelativeFrameScalarExtension
 public import FLT.Mazur.RelativeFrameTestCartesian
 public import FLT.Mazur.RelativeFrameTestSections
+public import FLT.Mazur.RelativeFrameTestSplitting
 public import FLT.Mazur.RelativeFrameUniformRank
 public import FLT.Mazur.RelativeGenusOneAffineCartesian
 public import FLT.Mazur.RelativeGenusOneAffineCubicMorphism
