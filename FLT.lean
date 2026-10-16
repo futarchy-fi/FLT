@@ -11816,6 +11816,7 @@ public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentIndex
 public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentIntersection
 public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentSeparation
 public import FLT.Mazur.WeierstrassDividedArithmeticAdjacentSlope
+public import FLT.Mazur.WeierstrassDividedArithmeticAffinePolygonEmbedding
 public import FLT.Mazur.WeierstrassDividedArithmeticAtlasCoverage
 public import FLT.Mazur.WeierstrassDividedArithmeticAtlasIndex
 public import FLT.Mazur.WeierstrassDividedArithmeticBoundaryCharts
@@ -11929,9 +11930,12 @@ public import FLT.Mazur.WeierstrassDividedChartRegularCenter
 public import FLT.Mazur.WeierstrassDividedClosedBoundaryUnits
 public import FLT.Mazur.WeierstrassDividedClosedClosingAttachment
 public import FLT.Mazur.WeierstrassDividedClosedClosingPolygonUnion
+public import FLT.Mazur.WeierstrassDividedClosedFirstInfinityIntersection
 public import FLT.Mazur.WeierstrassDividedClosedInfinityPolygonImage
 public import FLT.Mazur.WeierstrassDividedClosedPolygonCompatibility
+public import FLT.Mazur.WeierstrassDividedClosedPolygonCoverage
 public import FLT.Mazur.WeierstrassDividedClosedPolygonDescent
+public import FLT.Mazur.WeierstrassDividedClosedPolygonLocalIso
 public import FLT.Mazur.WeierstrassDividedClosedTerminalNormalization
 public import FLT.Mazur.WeierstrassDividedClosingAttachmentRestriction
 public import FLT.Mazur.WeierstrassDividedClosingAttachmentSystem
@@ -12002,6 +12006,7 @@ public import FLT.Mazur.WeierstrassDividedExteriorYBoundary
 public import FLT.Mazur.WeierstrassDividedFactorRatioAffineInfinity
 public import FLT.Mazur.WeierstrassDividedFactorRatioAffineNaturality
 public import FLT.Mazur.WeierstrassDividedFactorRatioInitialAffine
+public import FLT.Mazur.WeierstrassDividedFactorRatioInitialEmbedding
 public import FLT.Mazur.WeierstrassDividedFactorRatioInitialOverlap
 public import FLT.Mazur.WeierstrassDividedFactorRatioPolygonMaps
 public import FLT.Mazur.WeierstrassDividedFactorRatioPolygonNaturality
@@ -12323,6 +12328,7 @@ public import FLT.Mazur.WeierstrassDividedPolygonComparisonRestriction
 public import FLT.Mazur.WeierstrassDividedPolygonExteriorComparison
 public import FLT.Mazur.WeierstrassDividedPolygonExteriorNormalization
 public import FLT.Mazur.WeierstrassDividedPolygonExteriorRestriction
+public import FLT.Mazur.WeierstrassDividedPolygonLabelCover
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityAction
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityActionComparison
 public import FLT.Mazur.WeierstrassDividedPositiveEqualityAllComponentAction
@@ -13265,6 +13271,7 @@ public import FLT.Mazur.WeierstrassModificationXFactorRatioLaurentEquiv
 public import FLT.Mazur.WeierstrassModificationXFactorRatioLaurentNaturality
 public import FLT.Mazur.WeierstrassModificationXFactorRatioLaurentUnit
 public import FLT.Mazur.WeierstrassModificationXFactorRatioMap
+public import FLT.Mazur.WeierstrassModificationXFactorRatioPuncturePreimage
 public import FLT.Mazur.WeierstrassModificationXFactorRatioTerminalComparison
 public import FLT.Mazur.WeierstrassModificationXFiberBranches
 public import FLT.Mazur.WeierstrassModificationXFiberConic
