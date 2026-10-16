@@ -7724,6 +7724,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstGraphToChart
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphTopology
 public import FLT.Mazur.PolygonCompleteIdentityFirstLinearization
 public import FLT.Mazur.PolygonCompleteIdentityFirstLocalAffineErrors
+public import FLT.Mazur.PolygonCompleteIdentityFirstLocalSocleMembership
 public import FLT.Mazur.PolygonCompleteIdentityFirstNodeBoundary
 public import FLT.Mazur.PolygonCompleteIdentityFirstNodeObstruction
 public import FLT.Mazur.PolygonCompleteIdentityFirstNodePolynomials
