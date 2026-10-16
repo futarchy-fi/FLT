@@ -11843,6 +11843,7 @@ public import FLT.Mazur.WeierstrassDividedCanonicalInfinityFactorRatioTransport
 public import FLT.Mazur.WeierstrassDividedChartCubicAction
 public import FLT.Mazur.WeierstrassDividedChartRegularCenter
 public import FLT.Mazur.WeierstrassDividedClosingTangentConstraint
+public import FLT.Mazur.WeierstrassDividedClosingTransportGluing
 public import FLT.Mazur.WeierstrassDividedClosingTransportSpan
 public import FLT.Mazur.WeierstrassDividedCoefficientActionIndexTransport
 public import FLT.Mazur.WeierstrassDividedCoefficientInputs
