@@ -6217,6 +6217,7 @@ public import FLT.Mazur.LaurentScaledEvaluationCoefficients
 public import FLT.Mazur.LaurentSchemeCoordinates
 public import FLT.Mazur.LaurentSquareZeroCocycle
 public import FLT.Mazur.LaurentSquareZeroCoordinate
+public import FLT.Mazur.LaurentSquareZeroCrossCoefficients
 public import FLT.Mazur.LaurentSquareZeroLinearization
 public import FLT.Mazur.LaurentSquareZeroMarking
 public import FLT.Mazur.LaurentSquareZeroNaturality
