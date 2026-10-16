@@ -4643,6 +4643,8 @@ public import FLT.Mazur.EquifiberedSchemeGluing
 public import FLT.Mazur.EquivalenceRelationActionInfinitesimalRigidity
 public import FLT.Mazur.EquivalenceRelationBoundaryActionGeometry
 public import FLT.Mazur.EquivalenceRelationBoundaryCoefficients
+public import FLT.Mazur.EquivalenceRelationBoundaryLabelChange
+public import FLT.Mazur.EquivalenceRelationBoundaryLabelCoefficients
 public import FLT.Mazur.EquivalenceRelationBoundaryOpenCoefficients
 public import FLT.Mazur.EquivalenceRelationCompleteClosedLocus
 public import FLT.Mazur.EquivalenceRelationCompleteFiberComparison
@@ -4659,6 +4661,11 @@ public import FLT.Mazur.EquivalenceRelationFiberRebase
 public import FLT.Mazur.EquivalenceRelationFrameRebaseGeometric
 public import FLT.Mazur.EquivalenceRelationFrameRebaseLaws
 public import FLT.Mazur.EquivalenceRelationInvariantBoundaryAction
+public import FLT.Mazur.EquivalenceRelationLabelOpenCharts
+public import FLT.Mazur.EquivalenceRelationMixedFrameCardinality
+public import FLT.Mazur.EquivalenceRelationMixedFrameComparison
+public import FLT.Mazur.EquivalenceRelationMixedFrameLabelChange
+public import FLT.Mazur.EquivalenceRelationMixedFrameRelation
 public import FLT.Mazur.EquivalenceRelationNormalizedActionComplete
 public import FLT.Mazur.EquivalenceRelationNormalizedActionGraphs
 public import FLT.Mazur.EquivalenceRelationNormalizedActionRelation
@@ -4672,6 +4679,8 @@ public import FLT.Mazur.EquivalenceRelationNormalizedFrameLifts
 public import FLT.Mazur.EquivalenceRelationNormalizedFrameRelation
 public import FLT.Mazur.EquivalenceRelationNormalizedFrames
 public import FLT.Mazur.EquivalenceRelationNormalizedInvariantOpen
+public import FLT.Mazur.EquivalenceRelationNormalizedLabelChange
+public import FLT.Mazur.EquivalenceRelationNormalizedLabelTransport
 public import FLT.Mazur.EquivalenceRelationNormalizedOrbitNeighborhood
 public import FLT.Mazur.EquivalenceRelationNormalizedScalarComplete
 public import FLT.Mazur.EquivalenceRelationSectionRebase
@@ -5778,6 +5787,7 @@ public import FLT.Mazur.HilbertNormalizedBoundaryChartLifts
 public import FLT.Mazur.HilbertNormalizedCompleteFiberSplit
 public import FLT.Mazur.HilbertNormalizedCompleteOrbits
 public import FLT.Mazur.HilbertNormalizedFrameAction
+public import FLT.Mazur.HilbertNormalizedLabelCharts
 public import FLT.Mazur.HilbertNormalizedOrbitBoundaryCharts
 public import FLT.Mazur.HilbertNormalizedOrbitBoundaryCoefficients
 public import FLT.Mazur.HilbertNormalizedOrbitBoundaryRefinement
@@ -6239,6 +6249,7 @@ public import FLT.Mazur.LaurentFirstStageParameterTorus
 public import FLT.Mazur.LaurentIdentityIdeal
 public import FLT.Mazur.LaurentLineActionDensity
 public import FLT.Mazur.LaurentLineActionEvaluation
+public import FLT.Mazur.LaurentNilpotentReparametrization
 public import FLT.Mazur.LaurentNodePrincipalParts
 public import FLT.Mazur.LaurentNormalizedReduction
 public import FLT.Mazur.LaurentPairCoefficientNaturality
@@ -6659,6 +6670,7 @@ public import FLT.Mazur.NeronPolygonRotationAction
 public import FLT.Mazur.NeronPolygonScaling
 public import FLT.Mazur.NestedOpenCohomologyCoherence
 public import FLT.Mazur.NeutralTwistDirectImage
+public import FLT.Mazur.NilpotentAlgebraAutomorphism
 public import FLT.Mazur.NilpotentClosedRestriction
 public import FLT.Mazur.NilpotentIdealContraction
 public import FLT.Mazur.NilpotentIdealSocle
@@ -12979,6 +12991,9 @@ public import FLT.Mazur.WeierstrassModificationXContractionOverlap
 public import FLT.Mazur.WeierstrassModificationXCoordinateCasts
 public import FLT.Mazur.WeierstrassModificationXExtendedCastEvaluation
 public import FLT.Mazur.WeierstrassModificationXExtendedNormalEvaluation
+public import FLT.Mazur.WeierstrassModificationXFactorGapUnits
+public import FLT.Mazur.WeierstrassModificationXFactorRatioBoundary
+public import FLT.Mazur.WeierstrassModificationXFactorRatioMap
 public import FLT.Mazur.WeierstrassModificationXFiberBranches
 public import FLT.Mazur.WeierstrassModificationXFiberConic
 public import FLT.Mazur.WeierstrassModificationXFiberConicGeometry
@@ -13044,7 +13059,12 @@ public import FLT.Mazur.WeierstrassModificationXIncidenceSectionMaps
 public import FLT.Mazur.WeierstrassModificationXInitialInfinityTensor
 public import FLT.Mazur.WeierstrassModificationXInitialInfinityTransition
 public import FLT.Mazur.WeierstrassModificationXInitialMobiusEquiv
+public import FLT.Mazur.WeierstrassModificationXInitialMobiusInfinityBoundary
 public import FLT.Mazur.WeierstrassModificationXInitialMobiusLaurentBoundary
+public import FLT.Mazur.WeierstrassModificationXInitialMobiusLaurentCoefficient
+public import FLT.Mazur.WeierstrassModificationXInitialMobiusLaurentEquiv
+public import FLT.Mazur.WeierstrassModificationXInitialMobiusLaurentNaturality
+public import FLT.Mazur.WeierstrassModificationXInitialMobiusLaurentReduction
 public import FLT.Mazur.WeierstrassModificationXInitialMobiusNormalization
 public import FLT.Mazur.WeierstrassModificationXInitialPolygonBoundary
 public import FLT.Mazur.WeierstrassModificationXInitialPolygonChart
@@ -13084,6 +13104,9 @@ public import FLT.Mazur.WeierstrassModificationXNodeOpenCoefficientTransport
 public import FLT.Mazur.WeierstrassModificationXNodeOverlap
 public import FLT.Mazur.WeierstrassModificationXNodeOverlapDenominator
 public import FLT.Mazur.WeierstrassModificationXNodeOverlapInfinityIso
+public import FLT.Mazur.WeierstrassModificationXNodeOverlapMobiusBoundary
+public import FLT.Mazur.WeierstrassModificationXNodeOverlapMobiusCorrection
+public import FLT.Mazur.WeierstrassModificationXNodeOverlapMobiusUnits
 public import FLT.Mazur.WeierstrassModificationXNodeOverlapOppositeCoordinates
 public import FLT.Mazur.WeierstrassModificationXNodeOverlapOppositeEvaluation
 public import FLT.Mazur.WeierstrassModificationXNodeOverlapRatio
@@ -13095,6 +13118,7 @@ public import FLT.Mazur.WeierstrassModificationXOriginalLocalization
 public import FLT.Mazur.WeierstrassModificationXOverlap
 public import FLT.Mazur.WeierstrassModificationXOverlapRatioReflection
 public import FLT.Mazur.WeierstrassModificationXPolynomialCoefficientNaturality
+public import FLT.Mazur.WeierstrassModificationXPolynomialFactorRatioMap
 public import FLT.Mazur.WeierstrassModificationXPolynomialFactors
 public import FLT.Mazur.WeierstrassModificationXPolynomialNodeBackward
 public import FLT.Mazur.WeierstrassModificationXPolynomialNodeCover
