@@ -7793,6 +7793,7 @@ public import FLT.Mazur.PolygonCompletePointFirstIncomingTail
 public import FLT.Mazur.PolygonCompletePointFirstIncomingValues
 public import FLT.Mazur.PolygonCompletePointFirstMarkingForms
 public import FLT.Mazur.PolygonCompletePointFirstNegativeVanishing
+public import FLT.Mazur.PolygonCompletePointFirstNodePolynomial
 public import FLT.Mazur.PolygonCompletePointFirstNodeSubstitution
 public import FLT.Mazur.PolygonCompletePointFirstNumeratorTails
 public import FLT.Mazur.PolygonCompletePointFirstOrderAffineFrames
