@@ -5844,6 +5844,7 @@ public import FLT.Mazur.HilbertOrbitBoundaryAtlasLifts
 public import FLT.Mazur.HilbertOrbitBoundaryAtlasOriginalLift
 public import FLT.Mazur.HilbertOrbitBoundaryFamilyLifts
 public import FLT.Mazur.HilbertOrbitBoundaryFiniteAtlas
+public import FLT.Mazur.HilbertOrbitBoundaryFiniteDescent
 public import FLT.Mazur.HilbertOrbitBoundaryFiniteLifts
 public import FLT.Mazur.HilbertOrderedAffineEnvelope
 public import FLT.Mazur.HilbertOrderedOriginalBoundary
