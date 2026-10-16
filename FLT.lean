@@ -5769,6 +5769,7 @@ public import FLT.Mazur.HilbertNormalizedCompleteFiberSplit
 public import FLT.Mazur.HilbertNormalizedCompleteOrbits
 public import FLT.Mazur.HilbertNormalizedFrameAction
 public import FLT.Mazur.HilbertNormalizedRelationComparison
+public import FLT.Mazur.HilbertNormalizedStableAffine
 public import FLT.Mazur.HilbertOpenAmbientBaseChange
 public import FLT.Mazur.HilbertOpenAmbientCartesian
 public import FLT.Mazur.HilbertOpenAmbientClassification
