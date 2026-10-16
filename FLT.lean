@@ -6672,6 +6672,15 @@ public import FLT.Mazur.NodalFiberNodeComparison
 public import FLT.Mazur.NodalFiberParameterTransport
 public import FLT.Mazur.NodalFiberPunctureCoefficientMap
 public import FLT.Mazur.NodalFiberSmoothingComparison
+public import FLT.Mazur.NodalFiberTangentCoefficientMap
+public import FLT.Mazur.NodalFiberTangentFraction
+public import FLT.Mazur.NodalFiberTangentMobiusBoundary
+public import FLT.Mazur.NodalFiberTangentMobiusCoefficientGeometry
+public import FLT.Mazur.NodalFiberTangentMobiusEquiv
+public import FLT.Mazur.NodalFiberTangentMobiusGeometry
+public import FLT.Mazur.NodalFiberTangentMobiusMaps
+public import FLT.Mazur.NodalFiberTangentMobiusNaturality
+public import FLT.Mazur.NodalFiberTangentMobiusZeroSpecialization
 public import FLT.Mazur.NodalFiberUnitComparison
 public import FLT.Mazur.NodalFiberUnitScaling
 public import FLT.Mazur.NodalFiberUnitScalingBoundary
@@ -12889,6 +12898,7 @@ public import FLT.Mazur.WeierstrassModificationXAlgebra
 public import FLT.Mazur.WeierstrassModificationXArithmeticIncidenceOpen
 public import FLT.Mazur.WeierstrassModificationXArithmeticIncidencePullback
 public import FLT.Mazur.WeierstrassModificationXArithmeticInitialCover
+public import FLT.Mazur.WeierstrassModificationXArithmeticInitialMobius
 public import FLT.Mazur.WeierstrassModificationXArithmeticInitialNode
 public import FLT.Mazur.WeierstrassModificationXArithmeticInitialNodeRestriction
 public import FLT.Mazur.WeierstrassModificationXArithmeticInitialPolygon
@@ -13004,6 +13014,9 @@ public import FLT.Mazur.WeierstrassModificationXIncidenceRegular
 public import FLT.Mazur.WeierstrassModificationXIncidenceSectionMaps
 public import FLT.Mazur.WeierstrassModificationXInitialInfinityTensor
 public import FLT.Mazur.WeierstrassModificationXInitialInfinityTransition
+public import FLT.Mazur.WeierstrassModificationXInitialMobiusEquiv
+public import FLT.Mazur.WeierstrassModificationXInitialMobiusLaurentBoundary
+public import FLT.Mazur.WeierstrassModificationXInitialMobiusNormalization
 public import FLT.Mazur.WeierstrassModificationXInitialPolygonBoundary
 public import FLT.Mazur.WeierstrassModificationXInitialPolygonChart
 public import FLT.Mazur.WeierstrassModificationXInitialTerminalComparison
