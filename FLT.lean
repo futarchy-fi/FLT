@@ -9730,6 +9730,7 @@ public import FLT.Mazur.RelativeRankOneDivisorUniqueness
 public import FLT.Mazur.RelativeRelationArrowCalculus
 public import FLT.Mazur.RelativeRelationClosedObstruction
 public import FLT.Mazur.RelativeRelationClosedSections
+public import FLT.Mazur.RelativeRelationEtaleOrbitImageMap
 public import FLT.Mazur.RelativeRelationEtaleSourceFunctions
 public import FLT.Mazur.RelativeRelationFiniteLiftCover
 public import FLT.Mazur.RelativeRelationFppfInvariantQuotient
