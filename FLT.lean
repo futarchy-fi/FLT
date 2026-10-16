@@ -7818,6 +7818,7 @@ public import FLT.Mazur.PolygonCompletePointSectionRingIso
 public import FLT.Mazur.PolygonCompletePointSmoothIso
 public import FLT.Mazur.PolygonCompletePointSpecifiedBasis
 public import FLT.Mazur.PolygonCompletePointStageBoundedNumerators
+public import FLT.Mazur.PolygonCompletePointStageBoundedRatios
 public import FLT.Mazur.PolygonCompletePointStageCanonicalStep
 public import FLT.Mazur.PolygonCompletePointStageCubicRatios
 public import FLT.Mazur.PolygonCompletePointStageLineComparison
