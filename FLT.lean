@@ -4018,6 +4018,7 @@ public import FLT.Mazur.DisjointSectionCoverSplitting
 public import FLT.Mazur.DisjointSectionGeometricTranslation
 public import FLT.Mazur.DisjointSectionPicardGluing
 public import FLT.Mazur.DisjointStructureCohomology
+public import FLT.Mazur.DivisorAffineLocalizedNumerator
 public import FLT.Mazur.DivisorBaseChangeRank
 public import FLT.Mazur.DivisorCanonicalComposition
 public import FLT.Mazur.DivisorCanonicalOperations
