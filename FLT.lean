@@ -6781,6 +6781,7 @@ public import FLT.Mazur.NodeNormalizationBaseChange
 public import FLT.Mazur.NodePinchingDescent
 public import FLT.Mazur.NodePinchingExistence
 public import FLT.Mazur.NodePoleCoordinateExtraction
+public import FLT.Mazur.NodePoleLocalSecant
 public import FLT.Mazur.NodePoleSecant
 public import FLT.Mazur.NodePolynomialVectorField
 public import FLT.Mazur.NodePuncturedDenominatorRestriction
@@ -7655,6 +7656,8 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstActionNodeSpectra
 public import FLT.Mazur.PolygonCompleteIdentityFirstActionNodes
 public import FLT.Mazur.PolygonCompleteIdentityFirstActionParameter
 public import FLT.Mazur.PolygonCompleteIdentityFirstActionSubalgebra
+public import FLT.Mazur.PolygonCompleteIdentityFirstAffineGraphTests
+public import FLT.Mazur.PolygonCompleteIdentityFirstAmbientNodeGenerators
 public import FLT.Mazur.PolygonCompleteIdentityFirstBoundary
 public import FLT.Mazur.PolygonCompleteIdentityFirstBranchOriginal
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartAmbientErrors
@@ -7680,6 +7683,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstChartResidualNormalForm
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartResidualPresentation
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartScalars
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartSocleKernel
+public import FLT.Mazur.PolygonCompleteIdentityFirstChartSocleVanishing
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartSourceFunctions
 public import FLT.Mazur.PolygonCompleteIdentityFirstChartTargetScalars
 public import FLT.Mazur.PolygonCompleteIdentityFirstCompleteEquations
@@ -7697,6 +7701,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstDefectProduct
 public import FLT.Mazur.PolygonCompleteIdentityFirstFourCoordinates
 public import FLT.Mazur.PolygonCompleteIdentityFirstFourPolynomialErrors
 public import FLT.Mazur.PolygonCompleteIdentityFirstFractionLifts
+public import FLT.Mazur.PolygonCompleteIdentityFirstFullSourceNodeCoverage
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphAlgebra
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphBranchExt
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphBranchMaps
@@ -7733,6 +7738,8 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstGraphTensor
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphToChart
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphTopology
 public import FLT.Mazur.PolygonCompleteIdentityFirstLinearization
+public import FLT.Mazur.PolygonCompleteIdentityFirstLocalAffineErrors
+public import FLT.Mazur.PolygonCompleteIdentityFirstLocalSocleMembership
 public import FLT.Mazur.PolygonCompleteIdentityFirstNodeBoundary
 public import FLT.Mazur.PolygonCompleteIdentityFirstNodeObstruction
 public import FLT.Mazur.PolygonCompleteIdentityFirstNodePolynomials
@@ -7761,10 +7768,12 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstPositiveNodes
 public import FLT.Mazur.PolygonCompleteIdentityFirstPowerDescent
 public import FLT.Mazur.PolygonCompleteIdentityFirstPrincipalCoordinates
 public import FLT.Mazur.PolygonCompleteIdentityFirstPrincipalObstruction
+public import FLT.Mazur.PolygonCompleteIdentityFirstQuotientLocalErrors
 public import FLT.Mazur.PolygonCompleteIdentityFirstRefinedEquations
 public import FLT.Mazur.PolygonCompleteIdentityFirstRefinedErrorCriterion
 public import FLT.Mazur.PolygonCompleteIdentityFirstRefinedSmoothing
 public import FLT.Mazur.PolygonCompleteIdentityFirstSourceIncomingComparison
+public import FLT.Mazur.PolygonCompleteIdentityFirstSourceLocalComparison
 public import FLT.Mazur.PolygonCompleteIdentityFirstSourceNodeCoverage
 public import FLT.Mazur.PolygonCompleteIdentityFirstSourceNodeCubicCoverage
 public import FLT.Mazur.PolygonCompleteIdentityFirstSourceNodeGraphQuotient
@@ -7953,6 +7962,7 @@ public import FLT.Mazur.PolygonCompletePointFirstConstantEdges
 public import FLT.Mazur.PolygonCompletePointFirstEndpointCoefficients
 public import FLT.Mazur.PolygonCompletePointFirstFiniteNumerators
 public import FLT.Mazur.PolygonCompletePointFirstIncomingComplementExtraction
+public import FLT.Mazur.PolygonCompletePointFirstIncomingLocalEquality
 public import FLT.Mazur.PolygonCompletePointFirstIncomingNodeExtraction
 public import FLT.Mazur.PolygonCompletePointFirstIncomingTail
 public import FLT.Mazur.PolygonCompletePointFirstIncomingValues
@@ -7970,6 +7980,7 @@ public import FLT.Mazur.PolygonCompletePointFirstOrderFactor
 public import FLT.Mazur.PolygonCompletePointFirstOrderIdeal
 public import FLT.Mazur.PolygonCompletePointFirstOrderLine
 public import FLT.Mazur.PolygonCompletePointFirstOrderOpen
+public import FLT.Mazur.PolygonCompletePointFirstOutgoingLocalEquality
 public import FLT.Mazur.PolygonCompletePointFirstPolynomialNumerator
 public import FLT.Mazur.PolygonCompletePointFirstPrecedingCoefficients
 public import FLT.Mazur.PolygonCompletePointFirstPrecedingLifts
@@ -10702,6 +10713,7 @@ public import FLT.Mazur.TwistedSectionPullbackMonicity
 public import FLT.Mazur.TwistedSectionPushforward
 public import FLT.Mazur.TwistedSectionPushforwardNaturality
 public import FLT.Mazur.TwistedSectionRegularity
+public import FLT.Mazur.TwoCoordinateLocalSocle
 public import FLT.Mazur.TwoCoordinateTorsionSocle
 public import FLT.Mazur.TwoGeneratorRelationBaseChange
 public import FLT.Mazur.TwoGeneratorRelationKernelBaseChange
@@ -11590,6 +11602,8 @@ public import FLT.Mazur.WeierstrassDilatationDepthTransition
 public import FLT.Mazur.WeierstrassDilatationExtendedCast
 public import FLT.Mazur.WeierstrassDilatationExtendedTangent
 public import FLT.Mazur.WeierstrassDilatationFiberNormalForm
+public import FLT.Mazur.WeierstrassDilatationFixedTerminalPolygon
+public import FLT.Mazur.WeierstrassDilatationFixedTerminalUnit
 public import FLT.Mazur.WeierstrassDilatationFractionMap
 public import FLT.Mazur.WeierstrassDilatationGenerators
 public import FLT.Mazur.WeierstrassDilatationGenericFiber
@@ -11980,6 +11994,7 @@ public import FLT.Mazur.WeierstrassDividedFirstInfinityFactorization
 public import FLT.Mazur.WeierstrassDividedFirstOutputCover
 public import FLT.Mazur.WeierstrassDividedFirstSuccessorAction
 public import FLT.Mazur.WeierstrassDividedFirstUnitAction
+public import FLT.Mazur.WeierstrassDividedFixedTerminalBoundary
 public import FLT.Mazur.WeierstrassDividedFullInfinityFactorRatioMap
 public import FLT.Mazur.WeierstrassDividedFullInfinityFactorRatioNaturality
 public import FLT.Mazur.WeierstrassDividedFullResidueAtlas
@@ -12131,6 +12146,7 @@ public import FLT.Mazur.WeierstrassDividedLaurentZeroRetainedIntersection
 public import FLT.Mazur.WeierstrassDividedLinearResidueBounds
 public import FLT.Mazur.WeierstrassDividedLocalComponentContraction
 public import FLT.Mazur.WeierstrassDividedLocalizedIntersection
+public import FLT.Mazur.WeierstrassDividedLowerData
 public import FLT.Mazur.WeierstrassDividedNilpotentEarlierTerminal
 public import FLT.Mazur.WeierstrassDividedNilpotentInfinity
 public import FLT.Mazur.WeierstrassDividedNilpotentNonadjacentIntersection
@@ -12438,6 +12454,8 @@ public import FLT.Mazur.WeierstrassDividedSplitCycleCommonNode
 public import FLT.Mazur.WeierstrassDividedSplitCycleConstancy
 public import FLT.Mazur.WeierstrassDividedSplitGeometricContraction
 public import FLT.Mazur.WeierstrassDividedSplitNormalizationComparison
+public import FLT.Mazur.WeierstrassDividedStartOneAtlas
+public import FLT.Mazur.WeierstrassDividedStartOneData
 public import FLT.Mazur.WeierstrassDividedSuccessiveOriginalY
 public import FLT.Mazur.WeierstrassDividedSuccessorActionAtlas
 public import FLT.Mazur.WeierstrassDividedSuccessorActionInput
@@ -13734,13 +13752,17 @@ public import FLT.Mazur.WeierstrassSplitDepthConormal
 public import FLT.Mazur.WeierstrassSplitDepthExceptionalBranches
 public import FLT.Mazur.WeierstrassSplitDepthExceptionalCharacters
 public import FLT.Mazur.WeierstrassSplitDepthExceptionalScaling
+public import FLT.Mazur.WeierstrassSplitDepthFixedTerminal
 public import FLT.Mazur.WeierstrassSplitDepthHorizontalOutputUnit
 public import FLT.Mazur.WeierstrassSplitDepthNormalizedDividedAction
 public import FLT.Mazur.WeierstrassSplitDepthNormalizedFractionAction
 public import FLT.Mazur.WeierstrassSplitDepthNormalizedQuotientAction
 public import FLT.Mazur.WeierstrassSplitDepthOriginalFractionAction
+public import FLT.Mazur.WeierstrassSplitDepthPrimitiveTerminal
 public import FLT.Mazur.WeierstrassSplitDepthResidueEquation
+public import FLT.Mazur.WeierstrassSplitDepthRetainedComparison
 public import FLT.Mazur.WeierstrassSplitDepthSecantResidue
+public import FLT.Mazur.WeierstrassSplitDepthStartOneAtlas
 public import FLT.Mazur.WeierstrassSplitDepthTerminalSmoothing
 public import FLT.Mazur.WeierstrassSplitInfinityParameterOpen
 public import FLT.Mazur.WeierstrassSplitInfinitySlopeCompatibility
