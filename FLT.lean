@@ -13079,6 +13079,7 @@ public import FLT.Mazur.WeierstrassModificationXOriginalLocalization
 public import FLT.Mazur.WeierstrassModificationXOverlap
 public import FLT.Mazur.WeierstrassModificationXOverlapRatioReflection
 public import FLT.Mazur.WeierstrassModificationXPolynomialCoefficientNaturality
+public import FLT.Mazur.WeierstrassModificationXPolynomialFactorRatioMap
 public import FLT.Mazur.WeierstrassModificationXPolynomialFactors
 public import FLT.Mazur.WeierstrassModificationXPolynomialNodeBackward
 public import FLT.Mazur.WeierstrassModificationXPolynomialNodeCover
