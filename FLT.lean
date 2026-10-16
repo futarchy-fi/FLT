@@ -8617,6 +8617,7 @@ public import FLT.Mazur.PolygonStageRetainedCanonicalMap
 public import FLT.Mazur.PolygonStageRetainedNaturality
 public import FLT.Mazur.PolygonStageRetainedRecovery
 public import FLT.Mazur.PolygonStageScalarComparison
+public import FLT.Mazur.PolygonStageTopScalar
 public import FLT.Mazur.PolygonStageVeroneseGrading
 public import FLT.Mazur.PolygonStageVeroneseProj
 public import FLT.Mazur.PolygonStageVeroneseProjTransition
