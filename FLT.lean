@@ -8267,6 +8267,7 @@ public import FLT.Mazur.PolygonSmoothingLocalizedCotangent
 public import FLT.Mazur.PolygonSmoothingLocalizedPolynomials
 public import FLT.Mazur.PolygonSmoothingMarkedIdeal
 public import FLT.Mazur.PolygonSmoothingMarkedSection
+public import FLT.Mazur.PolygonSmoothingMarkingIdealSheaf
 public import FLT.Mazur.PolygonSmoothingNilpotentBranches
 public import FLT.Mazur.PolygonSmoothingNodeBasicOpen
 public import FLT.Mazur.PolygonSmoothingNodeScaling
