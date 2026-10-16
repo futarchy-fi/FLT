@@ -4026,6 +4026,7 @@ public import FLT.Mazur.DivisorChartNumerator
 public import FLT.Mazur.DivisorClosedCokernel
 public import FLT.Mazur.DivisorCohomologicalDegree
 public import FLT.Mazur.DivisorCokernelProjection
+public import FLT.Mazur.DivisorComparedSectionStep
 public import FLT.Mazur.DivisorComplementCanonical
 public import FLT.Mazur.DivisorComplementCanonicalUnitor
 public import FLT.Mazur.DivisorComplementExactPowers
@@ -6351,6 +6352,7 @@ public import FLT.Mazur.ModuleCohomologyExact
 public import FLT.Mazur.ModuleCohomologyRing
 public import FLT.Mazur.ModuleCohomologyScalarRestriction
 public import FLT.Mazur.ModuleCohomologyVanishing
+public import FLT.Mazur.ModuleComparedMarkingFrame
 public import FLT.Mazur.ModuleComparedSectionRatio
 public import FLT.Mazur.ModuleDerivedAbelianComparison
 public import FLT.Mazur.ModuleDirectImageHZero
@@ -7809,7 +7811,14 @@ public import FLT.Mazur.PolygonCompletePointSectionRank
 public import FLT.Mazur.PolygonCompletePointSectionRingIso
 public import FLT.Mazur.PolygonCompletePointSmoothIso
 public import FLT.Mazur.PolygonCompletePointSpecifiedBasis
+public import FLT.Mazur.PolygonCompletePointStageCanonicalStep
+public import FLT.Mazur.PolygonCompletePointStageCubicRatios
 public import FLT.Mazur.PolygonCompletePointStageLineComparison
+public import FLT.Mazur.PolygonCompletePointStageNodeFunctions
+public import FLT.Mazur.PolygonCompletePointStageNodeRatios
+public import FLT.Mazur.PolygonCompletePointStagePoleCoefficients
+public import FLT.Mazur.PolygonCompletePointStagePoleSections
+public import FLT.Mazur.PolygonCompletePointStagePowerComparison
 public import FLT.Mazur.PolygonCompletePointSurjective
 public import FLT.Mazur.PolygonCompletePointTorusNeighborhood
 public import FLT.Mazur.PolygonCompletePointWeierstrassEquation
@@ -8117,6 +8126,7 @@ public import FLT.Mazur.PolygonOriginalBoundarySectionReconstruction
 public import FLT.Mazur.PolygonOriginalCompletionAlgebra
 public import FLT.Mazur.PolygonOriginalNeighborhoodTransition
 public import FLT.Mazur.PolygonOriginalNodeClosed
+public import FLT.Mazur.PolygonOriginalNodeMarkingComplement
 public import FLT.Mazur.PolygonOriginalNodePoint
 public import FLT.Mazur.PolygonOriginalStageAdicSquare
 public import FLT.Mazur.PolygonParameterMarkingBaseChange
@@ -10292,6 +10302,8 @@ public import FLT.Mazur.TensorOpenChartReparametrization
 public import FLT.Mazur.TensorOpenChartTargetTransport
 public import FLT.Mazur.TensorOpenChartVanishingSeparation
 public import FLT.Mazur.TensorOpenExteriorIntersection
+public import FLT.Mazur.TensorPowerComparedSectionCons
+public import FLT.Mazur.TensorPowerComparedSections
 public import FLT.Mazur.TensorPowerDistribution
 public import FLT.Mazur.TensorPowerGeneratorOpen
 public import FLT.Mazur.TensorPowerNestedSection
