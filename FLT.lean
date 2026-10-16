@@ -7957,6 +7957,7 @@ public import FLT.Mazur.PolygonCompletePointFirstOrderFactor
 public import FLT.Mazur.PolygonCompletePointFirstOrderIdeal
 public import FLT.Mazur.PolygonCompletePointFirstOrderLine
 public import FLT.Mazur.PolygonCompletePointFirstOrderOpen
+public import FLT.Mazur.PolygonCompletePointFirstOutgoingLocalEquality
 public import FLT.Mazur.PolygonCompletePointFirstPolynomialNumerator
 public import FLT.Mazur.PolygonCompletePointFirstPrecedingCoefficients
 public import FLT.Mazur.PolygonCompletePointFirstPrecedingLifts
