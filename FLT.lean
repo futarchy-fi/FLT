@@ -4642,6 +4642,7 @@ public import FLT.Mazur.EquifiberedSchemeGluing
 public import FLT.Mazur.EquivalenceRelationActionInfinitesimalRigidity
 public import FLT.Mazur.EquivalenceRelationBoundaryActionGeometry
 public import FLT.Mazur.EquivalenceRelationBoundaryCoefficients
+public import FLT.Mazur.EquivalenceRelationBoundaryOpenCoefficients
 public import FLT.Mazur.EquivalenceRelationCompleteClosedLocus
 public import FLT.Mazur.EquivalenceRelationCompleteFiberComparison
 public import FLT.Mazur.EquivalenceRelationCompleteFiberSplit
