@@ -4699,6 +4699,7 @@ public import FLT.Mazur.FaithfulNeighborhoodCurve
 public import FLT.Mazur.FaithfulTensorVanishing
 public import FLT.Mazur.FaithfullyFlatFinitePresentation
 public import FLT.Mazur.FaithfullyFlatInvertible
+public import FLT.Mazur.FaithfullyFlatSectionLift
 public import FLT.Mazur.FaithfullyFlatTowerReflection
 public import FLT.Mazur.FamilyTransport
 public import FLT.Mazur.FiberAffineOpenBaseChange
