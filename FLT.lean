@@ -4893,6 +4893,7 @@ public import FLT.Mazur.FiniteGeometricGenericPrincipalInteriors
 public import FLT.Mazur.FiniteGeometricSections
 public import FLT.Mazur.FiniteGroupAffineNeighborhood
 public import FLT.Mazur.FiniteGroupAffineQuotient
+public import FLT.Mazur.FiniteGroupBoundaryChartRestriction
 public import FLT.Mazur.FiniteGroupBoundaryTrace
 public import FLT.Mazur.FiniteGroupClosedEnvelopeNeighborhood
 public import FLT.Mazur.FiniteGroupClosedEnvelopeRefinement
