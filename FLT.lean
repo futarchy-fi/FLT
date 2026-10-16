@@ -12826,6 +12826,7 @@ public import FLT.Mazur.WeierstrassModificationXPolynomialRoot
 public import FLT.Mazur.WeierstrassModificationXPolynomialSplit
 public import FLT.Mazur.WeierstrassModificationXPresentation
 public import FLT.Mazur.WeierstrassModificationXReesChart
+public import FLT.Mazur.WeierstrassModificationXReflectionCoefficientNaturality
 public import FLT.Mazur.WeierstrassModificationXResidueCastFactorization
 public import FLT.Mazur.WeierstrassModificationXResidueConicContraction
 public import FLT.Mazur.WeierstrassModificationXResidueContraction
