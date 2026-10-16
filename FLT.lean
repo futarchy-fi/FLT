@@ -7746,6 +7746,7 @@ public import FLT.Mazur.PolygonCompletePointCanonicalContraction
 public import FLT.Mazur.PolygonCompletePointCanonicalLine
 public import FLT.Mazur.PolygonCompletePointCanonicalPoleBasis
 public import FLT.Mazur.PolygonCompletePointChartEquation
+public import FLT.Mazur.PolygonCompletePointChartFrameNumerator
 public import FLT.Mazur.PolygonCompletePointComplementCoordinates
 public import FLT.Mazur.PolygonCompletePointComplementEquation
 public import FLT.Mazur.PolygonCompletePointComplementMonomials
