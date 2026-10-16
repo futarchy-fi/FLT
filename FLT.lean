@@ -6647,6 +6647,7 @@ public import FLT.Mazur.NodalFiberUnitScalingBoundary
 public import FLT.Mazur.NodalFiberUnitScalingGeometry
 public import FLT.Mazur.NodalFiberUnitScalingNaturality
 public import FLT.Mazur.NodalFiberUnitScalingParameters
+public import FLT.Mazur.NodalFiberUnitScalingPunctureRange
 public import FLT.Mazur.NodalGenusOneBaseChange
 public import FLT.Mazur.NodalGeometricFiberGenus
 public import FLT.Mazur.NodeBranchPushout
@@ -11536,6 +11537,7 @@ public import FLT.Mazur.WeierstrassDividedArithmeticInitialLaurent
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialNodeIntersection
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialNodeOverlap
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialNodes
+public import FLT.Mazur.WeierstrassDividedArithmeticInitialPolygon
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialSeparation
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialSlope
 public import FLT.Mazur.WeierstrassDividedArithmeticInitialTriangleCompatibility
@@ -11857,6 +11859,10 @@ public import FLT.Mazur.WeierstrassDividedInitialNodeHomExt
 public import FLT.Mazur.WeierstrassDividedInitialParameterIntersection
 public import FLT.Mazur.WeierstrassDividedInitialParameterOverlap
 public import FLT.Mazur.WeierstrassDividedInitialPointActionPropagation
+public import FLT.Mazur.WeierstrassDividedInitialPolygonBoundary
+public import FLT.Mazur.WeierstrassDividedInitialPolygonLabels
+public import FLT.Mazur.WeierstrassDividedInitialPolygonMaps
+public import FLT.Mazur.WeierstrassDividedInitialPolygonTransport
 public import FLT.Mazur.WeierstrassDividedInitialPrecedingExterior
 public import FLT.Mazur.WeierstrassDividedInitialProjectiveComponents
 public import FLT.Mazur.WeierstrassDividedInitialPunctureCompatibility
@@ -12262,7 +12268,9 @@ public import FLT.Mazur.WeierstrassDividedTerminalNodeIncidence
 public import FLT.Mazur.WeierstrassDividedTerminalParameterOrigins
 public import FLT.Mazur.WeierstrassDividedTerminalParameterStructure
 public import FLT.Mazur.WeierstrassDividedTerminalPolygonBoundary
+public import FLT.Mazur.WeierstrassDividedTerminalPolygonBoundaryIso
 public import FLT.Mazur.WeierstrassDividedTerminalPolygonBoundaryRestriction
+public import FLT.Mazur.WeierstrassDividedTerminalPolygonInverseRestriction
 public import FLT.Mazur.WeierstrassDividedTerminalResidueAtlas
 public import FLT.Mazur.WeierstrassDividedTerminalResidueBoundary
 public import FLT.Mazur.WeierstrassDividedTerminalResidueCharts
@@ -12803,6 +12811,7 @@ public import FLT.Mazur.WeierstrassModificationXArithmeticIncidencePullback
 public import FLT.Mazur.WeierstrassModificationXArithmeticInitialCover
 public import FLT.Mazur.WeierstrassModificationXArithmeticInitialNode
 public import FLT.Mazur.WeierstrassModificationXArithmeticInitialNodeRestriction
+public import FLT.Mazur.WeierstrassModificationXArithmeticInitialPolygon
 public import FLT.Mazur.WeierstrassModificationXArithmeticLaurentRestriction
 public import FLT.Mazur.WeierstrassModificationXArithmeticNodeBoundary
 public import FLT.Mazur.WeierstrassModificationXArithmeticNodeInfinity
@@ -12909,6 +12918,8 @@ public import FLT.Mazur.WeierstrassModificationXIncidenceBranchCover
 public import FLT.Mazur.WeierstrassModificationXIncidenceLineSections
 public import FLT.Mazur.WeierstrassModificationXIncidenceRegular
 public import FLT.Mazur.WeierstrassModificationXIncidenceSectionMaps
+public import FLT.Mazur.WeierstrassModificationXInitialPolygonBoundary
+public import FLT.Mazur.WeierstrassModificationXInitialPolygonChart
 public import FLT.Mazur.WeierstrassModificationXInitialTerminalComparison
 public import FLT.Mazur.WeierstrassModificationXInitialTerminalEvaluationRestriction
 public import FLT.Mazur.WeierstrassModificationXInitialTerminalImages
