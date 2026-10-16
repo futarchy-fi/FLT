@@ -12750,6 +12750,7 @@ public import FLT.Mazur.WeierstrassModificationXStandardPuncture
 public import FLT.Mazur.WeierstrassModificationXStandardPunctureComparison
 public import FLT.Mazur.WeierstrassModificationXStandardPunctureCoordinates
 public import FLT.Mazur.WeierstrassModificationXStandardPunctureEquiv
+public import FLT.Mazur.WeierstrassModificationXStandardPunctureRange
 public import FLT.Mazur.WeierstrassModificationXTensorContraction
 public import FLT.Mazur.WeierstrassModificationXTensorLaurentEvaluation
 public import FLT.Mazur.WeierstrassModificationXTensorOriginal
