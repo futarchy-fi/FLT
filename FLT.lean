@@ -4639,10 +4639,17 @@ public import FLT.Mazur.EnvelopeVerticalGenerizations
 public import FLT.Mazur.EqualizerDenominatorClearing
 public import FLT.Mazur.EquifiberedGluingBaseChange
 public import FLT.Mazur.EquifiberedSchemeGluing
+public import FLT.Mazur.EquivalenceRelationActionInfinitesimalRigidity
 public import FLT.Mazur.EquivalenceRelationCompleteClosedLocus
 public import FLT.Mazur.EquivalenceRelationCompleteFiberComparison
 public import FLT.Mazur.EquivalenceRelationCompleteFiberSplit
 public import FLT.Mazur.EquivalenceRelationCompletePointLocus
+public import FLT.Mazur.EquivalenceRelationCompleteRestrictionNaturality
+public import FLT.Mazur.EquivalenceRelationCompleteSourceComparison
+public import FLT.Mazur.EquivalenceRelationCompleteSourceRestriction
+public import FLT.Mazur.EquivalenceRelationCompleteTestCoefficients
+public import FLT.Mazur.EquivalenceRelationCompleteTestPartition
+public import FLT.Mazur.EquivalenceRelationConnectedCompleteTests
 public import FLT.Mazur.EquivalenceRelationFiberPermutationSections
 public import FLT.Mazur.EquivalenceRelationFiberRebase
 public import FLT.Mazur.EquivalenceRelationFrameRebaseGeometric
@@ -4662,6 +4669,8 @@ public import FLT.Mazur.EquivalenceRelationNormalizedFrames
 public import FLT.Mazur.EquivalenceRelationNormalizedOrbitNeighborhood
 public import FLT.Mazur.EquivalenceRelationNormalizedScalarComplete
 public import FLT.Mazur.EquivalenceRelationSectionRebase
+public import FLT.Mazur.EquivalenceRelationSourceRefinement
+public import FLT.Mazur.EquivalenceRelationSourceRestriction
 public import FLT.Mazur.EtaleAffineSpaceDimension
 public import FLT.Mazur.EtaleAlgebraFiniteBranch
 public import FLT.Mazur.EtaleAlgebraReduced
@@ -6684,6 +6693,7 @@ public import FLT.Mazur.NodeNormalizationBaseChange
 public import FLT.Mazur.NodePinchingDescent
 public import FLT.Mazur.NodePinchingExistence
 public import FLT.Mazur.NodePoleCoordinateExtraction
+public import FLT.Mazur.NodePoleSecant
 public import FLT.Mazur.NodePolynomialVectorField
 public import FLT.Mazur.NodePuncturedDenominatorRestriction
 public import FLT.Mazur.NodeQuotient
@@ -7114,6 +7124,7 @@ public import FLT.Mazur.OverPullbackSectionComposition
 public import FLT.Mazur.OverPullbackSectionMonoidal
 public import FLT.Mazur.PadicValuationArithmetic
 public import FLT.Mazur.PadicValuationRing
+public import FLT.Mazur.PairedAwayLocalization
 public import FLT.Mazur.PartialCompactTranslationInterior
 public import FLT.Mazur.PartialEnvelopeFullFiber
 public import FLT.Mazur.PartialFiniteTranslationInterior
@@ -7634,6 +7645,10 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstNodePolynomials
 public import FLT.Mazur.PolygonCompleteIdentityFirstOriginalPolynomialErrors
 public import FLT.Mazur.PolygonCompleteIdentityFirstParameterEquations
 public import FLT.Mazur.PolygonCompleteIdentityFirstPoleNumeratorRemainders
+public import FLT.Mazur.PolygonCompleteIdentityFirstPolePatchCancellation
+public import FLT.Mazur.PolygonCompleteIdentityFirstPolePatchExtraction
+public import FLT.Mazur.PolygonCompleteIdentityFirstPolePatchMaps
+public import FLT.Mazur.PolygonCompleteIdentityFirstPolePatchNode
 public import FLT.Mazur.PolygonCompleteIdentityFirstPolynomialConversion
 public import FLT.Mazur.PolygonCompleteIdentityFirstPolynomialErrors
 public import FLT.Mazur.PolygonCompleteIdentityFirstPolynomialRemainders
@@ -7877,6 +7892,7 @@ public import FLT.Mazur.PolygonCompletePointMonomialBasis
 public import FLT.Mazur.PolygonCompletePointMonomialIndependence
 public import FLT.Mazur.PolygonCompletePointNewSections
 public import FLT.Mazur.PolygonCompletePointNodeBoundedNumerators
+public import FLT.Mazur.PolygonCompletePointNodeCubicChart
 public import FLT.Mazur.PolygonCompletePointNodeLaurentReconstruction
 public import FLT.Mazur.PolygonCompletePointNodeLocalization
 public import FLT.Mazur.PolygonCompletePointNodeNumerators
