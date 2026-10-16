@@ -7977,6 +7977,7 @@ public import FLT.Mazur.PolygonInfinitesimalAtlas
 public import FLT.Mazur.PolygonInfinitesimalBaseChange
 public import FLT.Mazur.PolygonInfinitesimalBoundaryComparison
 public import FLT.Mazur.PolygonInfinitesimalCartier
+public import FLT.Mazur.PolygonInfinitesimalChartMarkingIdeals
 public import FLT.Mazur.PolygonInfinitesimalChartRestriction
 public import FLT.Mazur.PolygonInfinitesimalCoefficientDiagram
 public import FLT.Mazur.PolygonInfinitesimalCoefficientTransport
