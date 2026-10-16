@@ -8636,6 +8636,7 @@ public import FLT.Mazur.PolygonStageVeroneseProj
 public import FLT.Mazur.PolygonStageVeroneseProjTransition
 public import FLT.Mazur.PolygonStageVeroneseTransition
 public import FLT.Mazur.PolygonStructureInclusion
+public import FLT.Mazur.PolygonTopOrderBoundaryRigidity
 public import FLT.Mazur.PolygonTranslationBaseChangeLine
 public import FLT.Mazur.PolygonTranslationComposition
 public import FLT.Mazur.PolygonTranslationImages
@@ -14182,7 +14183,6 @@ public import FLT.Mazur.WeierstrassYProductAdditionGluing
 public import FLT.Mazur.WeierstrassYProductCover
 public import FLT.Mazur.WeightedPoleCubicNormalization
 public import FLT.Mazur.WeightedPoleMonomials
-public import FLT.Mazur.WeightedPoleNormalForms
 public import FLT.MazurChapter.AdmissibleGroupSchemes
 public import FLT.MazurW
 public import FLT.MazurWOfPrimeTorsion
@@ -14502,3 +14502,4 @@ public import FLT.TateCurve.SymmetricInverse
 public import FLT.TateCurve.TateCurve
 public import FLT.TateCurve.Uniformization
 public import FLT.TateCurve.ValuativeContinuity
+public import FLT.Mazur.WeightedPoleNormalForms
