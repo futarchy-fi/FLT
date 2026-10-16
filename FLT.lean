@@ -12641,6 +12641,7 @@ public import FLT.Mazur.WeierstrassInfinityTripleScalarMaps
 public import FLT.Mazur.WeierstrassInfinityTripleSections
 public import FLT.Mazur.WeierstrassInfinityVietaComparison
 public import FLT.Mazur.WeierstrassInitialIncidenceCollisionPoints
+public import FLT.Mazur.WeierstrassInitialIncidenceNodeNonImmersion
 public import FLT.Mazur.WeierstrassInitialIncidenceNonImmersion
 public import FLT.Mazur.WeierstrassInputAdditionCovers
 public import FLT.Mazur.WeierstrassInputAdditionRestrictions
