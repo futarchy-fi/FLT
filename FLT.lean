@@ -4968,6 +4968,7 @@ public import FLT.Mazur.FiniteIntersectionSchemeDescent
 public import FLT.Mazur.FiniteIntersectionSectionComparison
 public import FLT.Mazur.FiniteIntersectionSectionDiagram
 public import FLT.Mazur.FiniteIteratedPolynomialCoefficients
+public import FLT.Mazur.FiniteJointFrameEnumeration
 public import FLT.Mazur.FiniteLeadingIdealFamily
 public import FLT.Mazur.FiniteLineCocycleModel
 public import FLT.Mazur.FiniteLineSheafDescent
