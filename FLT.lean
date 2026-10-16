@@ -9143,6 +9143,7 @@ public import FLT.Mazur.RelativeDirectImageForgetting
 public import FLT.Mazur.RelativeDirectImageOpenResolution
 public import FLT.Mazur.RelativeDistinctEtale
 public import FLT.Mazur.RelativeDistinctFreeAction
+public import FLT.Mazur.RelativeDistinctTupleLift
 public import FLT.Mazur.RelativeDistinctTuples
 public import FLT.Mazur.RelativeEtaleFiniteBranchCover
 public import FLT.Mazur.RelativeFiberMorphism
