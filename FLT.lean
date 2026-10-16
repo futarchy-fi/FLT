@@ -13483,6 +13483,7 @@ public import FLT.Mazur.WeierstrassResidueTangentCoefficientTower
 public import FLT.Mazur.WeierstrassResidueTangentComponentData
 public import FLT.Mazur.WeierstrassResidueTangentEquationData
 public import FLT.Mazur.WeierstrassRetainedCoefficientShearChart
+public import FLT.Mazur.WeierstrassRetainedNodeFactor
 public import FLT.Mazur.WeierstrassRetainedNodeRootBoundary
 public import FLT.Mazur.WeierstrassRetainedNodeRoots
 public import FLT.Mazur.WeierstrassRetainedRegularCenter
