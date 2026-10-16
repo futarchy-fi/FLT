@@ -11867,6 +11867,7 @@ public import FLT.Mazur.WeierstrassDividedChartCubicAction
 public import FLT.Mazur.WeierstrassDividedChartRegularCenter
 public import FLT.Mazur.WeierstrassDividedClosingAttachmentRestriction
 public import FLT.Mazur.WeierstrassDividedClosingAttachmentSystem
+public import FLT.Mazur.WeierstrassDividedClosingAttachmentUnion
 public import FLT.Mazur.WeierstrassDividedClosingTangentConstraint
 public import FLT.Mazur.WeierstrassDividedClosingTransportGluing
 public import FLT.Mazur.WeierstrassDividedClosingTransportRestriction
