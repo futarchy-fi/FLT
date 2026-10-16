@@ -7698,6 +7698,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstCubicSourceRemainders
 public import FLT.Mazur.PolygonCompleteIdentityFirstDefectDerivation
 public import FLT.Mazur.PolygonCompleteIdentityFirstDefectFormula
 public import FLT.Mazur.PolygonCompleteIdentityFirstDefectProduct
+public import FLT.Mazur.PolygonCompleteIdentityFirstErrorOriginalFlat
 public import FLT.Mazur.PolygonCompleteIdentityFirstFourCoordinates
 public import FLT.Mazur.PolygonCompleteIdentityFirstFourPolynomialErrors
 public import FLT.Mazur.PolygonCompleteIdentityFirstFractionLifts
@@ -7721,6 +7722,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstGraphFiberSocle
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphFiberSplit
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphFiberSupport
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphFlat
+public import FLT.Mazur.PolygonCompleteIdentityFirstGraphFlatTransfer
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphImage
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphIncomingBranch
 public import FLT.Mazur.PolygonCompleteIdentityFirstGraphLocalization
@@ -7764,6 +7766,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstPoleTargetCubic
 public import FLT.Mazur.PolygonCompleteIdentityFirstPolynomialConversion
 public import FLT.Mazur.PolygonCompleteIdentityFirstPolynomialErrors
 public import FLT.Mazur.PolygonCompleteIdentityFirstPolynomialRemainders
+public import FLT.Mazur.PolygonCompleteIdentityFirstPositiveLaw
 public import FLT.Mazur.PolygonCompleteIdentityFirstPositiveNodes
 public import FLT.Mazur.PolygonCompleteIdentityFirstPowerDescent
 public import FLT.Mazur.PolygonCompleteIdentityFirstPrincipalCoordinates
@@ -7816,6 +7819,7 @@ public import FLT.Mazur.PolygonCompleteIdentityGraphFlatExt
 public import FLT.Mazur.PolygonCompleteIdentityGraphGenericEquations
 public import FLT.Mazur.PolygonCompleteIdentityGraphIncomingCartesian
 public import FLT.Mazur.PolygonCompleteIdentityGraphIncomingChart
+public import FLT.Mazur.PolygonCompleteIdentityGraphParameterCancellation
 public import FLT.Mazur.PolygonCompleteIdentityGraphParameterTorsion
 public import FLT.Mazur.PolygonCompleteIdentityGraphRotatedContraction
 public import FLT.Mazur.PolygonCompleteIdentityGraphRotatedEdge
@@ -7834,14 +7838,19 @@ public import FLT.Mazur.PolygonCompleteIdentityObstructionSymmetry
 public import FLT.Mazur.PolygonCompleteIdentityOrderZeroLaw
 public import FLT.Mazur.PolygonCompleteIdentityPointCocycle
 public import FLT.Mazur.PolygonCompleteIdentityPointDefect
+public import FLT.Mazur.PolygonCompleteIdentitySecondCorrection
 public import FLT.Mazur.PolygonCompleteIdentitySmoothAction
 public import FLT.Mazur.PolygonCompleteIdentitySmoothActionCoordinates
 public import FLT.Mazur.PolygonCompleteIdentitySmoothActionEquivariance
 public import FLT.Mazur.PolygonCompleteIdentitySmoothActionRotation
 public import FLT.Mazur.PolygonCompleteIdentitySmoothInputGraph
 public import FLT.Mazur.PolygonCompleteIdentityStageTorus
+public import FLT.Mazur.PolygonCompleteIdentityTopCorrection
 public import FLT.Mazur.PolygonCompleteIdentityTopDefect
+public import FLT.Mazur.PolygonCompleteIdentityTopLinearization
 public import FLT.Mazur.PolygonCompleteIdentityTopObstruction
+public import FLT.Mazur.PolygonCompleteIdentityTopObstructionCocycle
+public import FLT.Mazur.PolygonCompleteIdentityTopPointCocycle
 public import FLT.Mazur.PolygonCompleteIdentityUnitCoherence
 public import FLT.Mazur.PolygonCompleteLineCohomology
 public import FLT.Mazur.PolygonCompleteLineHomExt
@@ -8621,6 +8630,7 @@ public import FLT.Mazur.PolygonStageRetainedCanonicalMap
 public import FLT.Mazur.PolygonStageRetainedNaturality
 public import FLT.Mazur.PolygonStageRetainedRecovery
 public import FLT.Mazur.PolygonStageScalarComparison
+public import FLT.Mazur.PolygonStageTopScalar
 public import FLT.Mazur.PolygonStageVeroneseGrading
 public import FLT.Mazur.PolygonStageVeroneseProj
 public import FLT.Mazur.PolygonStageVeroneseProjTransition
