@@ -13074,6 +13074,7 @@ public import FLT.Mazur.WeierstrassModificationXLocalization
 public import FLT.Mazur.WeierstrassModificationXMorphism
 public import FLT.Mazur.WeierstrassModificationXNodeDenominators
 public import FLT.Mazur.WeierstrassModificationXNodeEvaluationNaturality
+public import FLT.Mazur.WeierstrassModificationXNodeFactorCoefficient
 public import FLT.Mazur.WeierstrassModificationXNodeForwardCoefficientNaturality
 public import FLT.Mazur.WeierstrassModificationXNodeIncidenceOpen
 public import FLT.Mazur.WeierstrassModificationXNodeInfinityDenominators
