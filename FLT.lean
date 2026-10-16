@@ -8559,6 +8559,7 @@ public import FLT.Mazur.PolygonSmoothingBranchSeparation
 public import FLT.Mazur.PolygonSmoothingBranchSwap
 public import FLT.Mazur.PolygonSmoothingBranchSwapGeometry
 public import FLT.Mazur.PolygonSmoothingBranchSwapNaturality
+public import FLT.Mazur.PolygonSmoothingClosingPair
 public import FLT.Mazur.PolygonSmoothingCoefficientBranches
 public import FLT.Mazur.PolygonSmoothingCoefficientSquares
 public import FLT.Mazur.PolygonSmoothingCompletedDifferentials
