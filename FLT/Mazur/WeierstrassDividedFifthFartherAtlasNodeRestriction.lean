@@ -55,7 +55,7 @@ omit [IsBezout R] in
   exact hh
 
 /-- The concrete paired coefficient maps commute with the full global arithmetic quotient. -/
-@[reassoc] theorem arithmeticFifthFartherNodeChart_restriction (b : Bool) :
+@[reassoc] theorem arithmeticFifthFartherInstalledNodeChart_restriction (b : Bool) :
     arithmeticFifthDeepNodeRestriction hπ data H j hj u hu m v b ≫
         (N (m + 1) b).hom ≫ arithmeticFifthFartherAtlasChart hπ data H (m + 1) j hj u hu ha₃
           (.retained ⟨a, by have := fifthDeepOffset_pos v; omega⟩ b) =
