@@ -3539,6 +3539,9 @@ public import FLT.Mazur.BlowupReesZeroComponent
 public import FLT.Mazur.BoundaryCorrectionAdicAmbient
 public import FLT.Mazur.BoundaryCorrectionAdicCertificate
 public import FLT.Mazur.BoundaryCorrectionAmbientEquations
+public import FLT.Mazur.BoundaryCorrectionBoundaryImage
+public import FLT.Mazur.BoundaryCorrectionBoundaryKernel
+public import FLT.Mazur.BoundaryCorrectionCokernelClass
 public import FLT.Mazur.BoundaryCorrectionCompatibleBaseChange
 public import FLT.Mazur.BoundaryCorrectionCompatibleErrors
 public import FLT.Mazur.BoundaryCorrectionFaithfulCoefficients
@@ -5944,6 +5947,7 @@ public import FLT.Mazur.HilbertOrbitBoundaryBaseCorrectionCriterion
 public import FLT.Mazur.HilbertOrbitBoundaryBaseLocalizationMaps
 public import FLT.Mazur.HilbertOrbitBoundaryBaseLocalizedKernels
 public import FLT.Mazur.HilbertOrbitBoundaryBaseLocalizedMultipliers
+public import FLT.Mazur.HilbertOrbitBoundaryCoefficientHom
 public import FLT.Mazur.HilbertOrbitBoundaryCompatibleErrors
 public import FLT.Mazur.HilbertOrbitBoundaryCorrectionIdeal
 public import FLT.Mazur.HilbertOrbitBoundaryFamilyLifts
@@ -5964,6 +5968,7 @@ public import FLT.Mazur.HilbertOrbitBoundaryLocalizedMultipliers
 public import FLT.Mazur.HilbertOrbitBoundaryLocalizedNaturality
 public import FLT.Mazur.HilbertOrbitBoundaryLocalizedNumerators
 public import FLT.Mazur.HilbertOrbitBoundaryMixedBranchIdeal
+public import FLT.Mazur.HilbertOrbitBoundaryObstructionKernel
 public import FLT.Mazur.HilbertOrbitBoundaryPointLocalizedLifts
 public import FLT.Mazur.HilbertOrbitBoundaryPointSolvabilityLocus
 public import FLT.Mazur.HilbertOrbitBoundaryPointSpreading
@@ -8821,6 +8826,7 @@ public import FLT.Mazur.PolygonSmoothingCotangentFieldRank
 public import FLT.Mazur.PolygonSmoothingCotangentRelationSequence
 public import FLT.Mazur.PolygonSmoothingDerivation
 public import FLT.Mazur.PolygonSmoothingDifferenceIdeal
+public import FLT.Mazur.PolygonSmoothingFactorRestriction
 public import FLT.Mazur.PolygonSmoothingFiniteLaurentLifts
 public import FLT.Mazur.PolygonSmoothingFirstConstantCoefficients
 public import FLT.Mazur.PolygonSmoothingFirstCotangent
@@ -12829,6 +12835,7 @@ public import FLT.Mazur.WeierstrassDividedResidualLiftRestriction
 public import FLT.Mazur.WeierstrassDividedResidualLiftSecondOrder
 public import FLT.Mazur.WeierstrassDividedResidualLiftTransitions
 public import FLT.Mazur.WeierstrassDividedResidualLiftTransitionsFirst
+public import FLT.Mazur.WeierstrassDividedResidualNodeRestriction
 public import FLT.Mazur.WeierstrassDividedResidualRetainedLift
 public import FLT.Mazur.WeierstrassDividedResidualTerminalIdentification
 public import FLT.Mazur.WeierstrassDividedResidualTerminalLift
@@ -12861,6 +12868,7 @@ public import FLT.Mazur.WeierstrassDividedRetainedPolygonNaturality
 public import FLT.Mazur.WeierstrassDividedRetainedPuncturePreimage
 public import FLT.Mazur.WeierstrassDividedRetainedZeroExteriorLine
 public import FLT.Mazur.WeierstrassDividedRetentionSuccessor
+public import FLT.Mazur.WeierstrassDividedSecondAtlasNodeRestriction
 public import FLT.Mazur.WeierstrassDividedSecondJointAtlas
 public import FLT.Mazur.WeierstrassDividedSecondJointAtlasClosing
 public import FLT.Mazur.WeierstrassDividedSecondJointAtlasEdges
@@ -12873,6 +12881,7 @@ public import FLT.Mazur.WeierstrassDividedSecondJointResiduals
 public import FLT.Mazur.WeierstrassDividedSecondJointRestriction
 public import FLT.Mazur.WeierstrassDividedSecondJointThirdOrder
 public import FLT.Mazur.WeierstrassDividedSecondJointTransitions
+public import FLT.Mazur.WeierstrassDividedSecondNodeRestriction
 public import FLT.Mazur.WeierstrassDividedSecondPrecedingAdjacent
 public import FLT.Mazur.WeierstrassDividedSecondPrecedingIncoming
 public import FLT.Mazur.WeierstrassDividedSecondPrecedingInitial
@@ -13019,10 +13028,17 @@ public import FLT.Mazur.WeierstrassDividedTerminalZeroConicBranches
 public import FLT.Mazur.WeierstrassDividedTerminalZeroConicIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalZeroCrossedIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalZeroNodalChart
+public import FLT.Mazur.WeierstrassDividedThirdIncomingCancellation
 public import FLT.Mazur.WeierstrassDividedThirdJointFields
+public import FLT.Mazur.WeierstrassDividedThirdJointIdentification
 public import FLT.Mazur.WeierstrassDividedThirdJointNodes
 public import FLT.Mazur.WeierstrassDividedThirdJointRestriction
+public import FLT.Mazur.WeierstrassDividedThirdLayerFieldIdentification
+public import FLT.Mazur.WeierstrassDividedThirdOuterIdentification
+public import FLT.Mazur.WeierstrassDividedThirdPunctureIdentification
+public import FLT.Mazur.WeierstrassDividedThirdResidualAlgebra
 public import FLT.Mazur.WeierstrassDividedThirdResidualFields
+public import FLT.Mazur.WeierstrassDividedThirdSmoothingAnnihilation
 public import FLT.Mazur.WeierstrassDividedTwistedAtlas
 public import FLT.Mazur.WeierstrassDividedTwistedAtlasGluing
 public import FLT.Mazur.WeierstrassDividedTwistedAtlasRestriction
