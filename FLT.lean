@@ -3577,6 +3577,7 @@ public import FLT.Mazur.CanonicalRelativeLineModel
 public import FLT.Mazur.CanonicalSchemeRelationGround
 public import FLT.Mazur.CanonicalSectionComposition
 public import FLT.Mazur.CanonicalSectionNaturality
+public import FLT.Mazur.CartesianActionPullback
 public import FLT.Mazur.CartesianAtlasAffineIntersections
 public import FLT.Mazur.CartesianCoefficientPositiveHomology
 public import FLT.Mazur.CartesianCoefficientSymmetry
@@ -5387,6 +5388,7 @@ public import FLT.Mazur.GeneralizedCurveGeometricProjectiveIso
 public import FLT.Mazur.GeneralizedCurveGeometricWeierstrass
 public import FLT.Mazur.GeneralizedCurveGraph
 public import FLT.Mazur.GeneralizedCurveGraphBaseChange
+public import FLT.Mazur.GeneralizedCurveGraphCartesian
 public import FLT.Mazur.GeneralizedCurveGraphTransport
 public import FLT.Mazur.GeneralizedCurveIdentityBaseChange
 public import FLT.Mazur.GeneralizedCurveLocalCubicPresentation
@@ -7892,6 +7894,7 @@ public import FLT.Mazur.PolygonCompleteCartesianRotation
 public import FLT.Mazur.PolygonCompleteChartOperationCompatibility
 public import FLT.Mazur.PolygonCompleteChartOverlapField
 public import FLT.Mazur.PolygonCompleteClassifiedFibers
+public import FLT.Mazur.PolygonCompleteClosedActionComparison
 public import FLT.Mazur.PolygonCompleteClosedActionProduct
 public import FLT.Mazur.PolygonCompleteClosedActionRotation
 public import FLT.Mazur.PolygonCompleteClosedCartierGenerator
@@ -7961,6 +7964,7 @@ public import FLT.Mazur.PolygonCompleteFiniteParameterTranslation
 public import FLT.Mazur.PolygonCompleteFixedPointFree
 public import FLT.Mazur.PolygonCompleteFlatContractionExt
 public import FLT.Mazur.PolygonCompleteFlatSmoothPreimage
+public import FLT.Mazur.PolygonCompleteGeneralizedCurve
 public import FLT.Mazur.PolygonCompleteGenericChartCompatibility
 public import FLT.Mazur.PolygonCompleteGenericChartEvaluation
 public import FLT.Mazur.PolygonCompleteGenericChartOperations
@@ -7974,6 +7978,7 @@ public import FLT.Mazur.PolygonCompleteGenericRelativeDimension
 public import FLT.Mazur.PolygonCompleteGenericSmooth
 public import FLT.Mazur.PolygonCompleteGenusOneFamily
 public import FLT.Mazur.PolygonCompleteGeometricGenericFiber
+public import FLT.Mazur.PolygonCompleteGeometricRotations
 public import FLT.Mazur.PolygonCompleteGeometricallyConnected
 public import FLT.Mazur.PolygonCompleteGeometricallyReduced
 public import FLT.Mazur.PolygonCompleteH1Rank
@@ -8415,6 +8420,9 @@ public import FLT.Mazur.PolygonCompleteNodeStalkCompletion
 public import FLT.Mazur.PolygonCompleteNodeStalkEvaluation
 public import FLT.Mazur.PolygonCompleteNodeStalkH1Equiv
 public import FLT.Mazur.PolygonCompleteNodeStalkMap
+public import FLT.Mazur.PolygonCompleteOriginalCyclicHom
+public import FLT.Mazur.PolygonCompleteOriginalCyclicSubgroup
+public import FLT.Mazur.PolygonCompleteOriginalModuli
 public import FLT.Mazur.PolygonCompleteOriginalSectionReconstruction
 public import FLT.Mazur.PolygonCompleteParameterBaseChange
 public import FLT.Mazur.PolygonCompleteParameterLineBaseChange
