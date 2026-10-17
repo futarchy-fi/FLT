@@ -12821,6 +12821,7 @@ public import FLT.Mazur.WeierstrassDividedRetentionSuccessor
 public import FLT.Mazur.WeierstrassDividedSecondJointAtlas
 public import FLT.Mazur.WeierstrassDividedSecondJointAtlasClosing
 public import FLT.Mazur.WeierstrassDividedSecondJointAtlasEdges
+public import FLT.Mazur.WeierstrassDividedSecondJointAtlasIncoming
 public import FLT.Mazur.WeierstrassDividedSecondJointAtlasSystem
 public import FLT.Mazur.WeierstrassDividedSecondJointFields
 public import FLT.Mazur.WeierstrassDividedSecondJointGeometry
