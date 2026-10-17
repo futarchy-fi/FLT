@@ -4942,6 +4942,7 @@ public import FLT.Mazur.FiniteEnvelopeDenominatorPrimes
 public import FLT.Mazur.FiniteEnvelopeInteriorEquations
 public import FLT.Mazur.FiniteErrorKernelPairs
 public import FLT.Mazur.FiniteErrorLinearLifting
+public import FLT.Mazur.FiniteErrorReducedInclusion
 public import FLT.Mazur.FiniteErrorReduction
 public import FLT.Mazur.FiniteErrorReductionFrame
 public import FLT.Mazur.FiniteErrorReductionIteration
@@ -5982,6 +5983,7 @@ public import FLT.Mazur.HilbertOrbitBoundaryPointLocalizedLifts
 public import FLT.Mazur.HilbertOrbitBoundaryPointSolvabilityLocus
 public import FLT.Mazur.HilbertOrbitBoundaryPointSpreading
 public import FLT.Mazur.HilbertOrbitBoundaryPrincipalNumerators
+public import FLT.Mazur.HilbertOrbitBoundaryReducedImage
 public import FLT.Mazur.HilbertOrbitBoundaryReductionCertificate
 public import FLT.Mazur.HilbertOrbitBoundaryScalarImage
 public import FLT.Mazur.HilbertOrbitBoundaryScaledMultipliers
@@ -10989,6 +10991,8 @@ public import FLT.Mazur.StructureImageOpenChart
 public import FLT.Mazur.StructureModuleScalarTransitions
 public import FLT.Mazur.StructureRingCohomologyIso
 public import FLT.Mazur.SubfunctorRepresentedPullback
+public import FLT.Mazur.SubmoduleReductionFlat
+public import FLT.Mazur.SubmoduleReductionKernel
 public import FLT.Mazur.SuccessiveIncidenceAlgebra
 public import FLT.Mazur.SuccessiveIncidenceCoefficientMap
 public import FLT.Mazur.SuccessiveIncidenceLaurentRestriction
