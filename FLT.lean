@@ -7909,6 +7909,7 @@ public import FLT.Mazur.PolygonCompleteIdentitySmoothActionCoordinates
 public import FLT.Mazur.PolygonCompleteIdentitySmoothActionEquivariance
 public import FLT.Mazur.PolygonCompleteIdentitySmoothActionRotation
 public import FLT.Mazur.PolygonCompleteIdentitySmoothInputGraph
+public import FLT.Mazur.PolygonCompleteIdentityStageGraphRotatedCubic
 public import FLT.Mazur.PolygonCompleteIdentityStageSourceZeroCubic
 public import FLT.Mazur.PolygonCompleteIdentityStageTorus
 public import FLT.Mazur.PolygonCompleteIdentityTopActionCoordinate
@@ -7962,9 +7963,13 @@ public import FLT.Mazur.PolygonCompleteIdentityTopPointCocycle
 public import FLT.Mazur.PolygonCompleteIdentityTopPolePatchGeometry
 public import FLT.Mazur.PolygonCompleteIdentityTopPolePatchMaps
 public import FLT.Mazur.PolygonCompleteIdentityTopResidualTarget
+public import FLT.Mazur.PolygonCompleteIdentityTopSourceIncomingCubic
+public import FLT.Mazur.PolygonCompleteIdentityTopSourceLocalComparison
 public import FLT.Mazur.PolygonCompleteIdentityTopSourcePoleCubic
 public import FLT.Mazur.PolygonCompleteIdentityTopSourcePoleGeometry
 public import FLT.Mazur.PolygonCompleteIdentityTopSourcePoleMaps
+public import FLT.Mazur.PolygonCompleteIdentityTopSourceTargetComplement
+public import FLT.Mazur.PolygonCompleteIdentityTopSourceTargetFunctions
 public import FLT.Mazur.PolygonCompleteIdentityUnitCoherence
 public import FLT.Mazur.PolygonCompleteLineCohomology
 public import FLT.Mazur.PolygonCompleteLineHomExt
@@ -8089,6 +8094,7 @@ public import FLT.Mazur.PolygonCompletePointFirstIncomingLocalEquality
 public import FLT.Mazur.PolygonCompletePointFirstIncomingNodeExtraction
 public import FLT.Mazur.PolygonCompletePointFirstIncomingTail
 public import FLT.Mazur.PolygonCompletePointFirstIncomingValues
+public import FLT.Mazur.PolygonCompletePointFirstLocalCubicComparison
 public import FLT.Mazur.PolygonCompletePointFirstLocalizedCoordinateExtraction
 public import FLT.Mazur.PolygonCompletePointFirstLocalizedMarkingForms
 public import FLT.Mazur.PolygonCompletePointFirstMarkingForms
@@ -8224,6 +8230,7 @@ public import FLT.Mazur.PolygonCompletePointStagePoleSections
 public import FLT.Mazur.PolygonCompletePointStagePowerComparison
 public import FLT.Mazur.PolygonCompletePointStageSectionProducts
 public import FLT.Mazur.PolygonCompletePointSurjective
+public import FLT.Mazur.PolygonCompletePointTopLocalCubicComparison
 public import FLT.Mazur.PolygonCompletePointTorusNeighborhood
 public import FLT.Mazur.PolygonCompletePointWeierstrassEquation
 public import FLT.Mazur.PolygonCompletePrincipalClosedFiber
@@ -8467,6 +8474,7 @@ public import FLT.Mazur.PolygonNodeEqualizerComparison
 public import FLT.Mazur.PolygonNodeEvaluation
 public import FLT.Mazur.PolygonNodeIncidence
 public import FLT.Mazur.PolygonNodeLaurentPoints
+public import FLT.Mazur.PolygonNodeLocalSourceLift
 public import FLT.Mazur.PolygonNodeLocalization
 public import FLT.Mazur.PolygonNodeLocus
 public import FLT.Mazur.PolygonNodeNeighborhoodScalars
@@ -8753,6 +8761,8 @@ public import FLT.Mazur.PolygonStageLineQuotient
 public import FLT.Mazur.PolygonStageLineSectionFlat
 public import FLT.Mazur.PolygonStageNodeBranchReconstruction
 public import FLT.Mazur.PolygonStageNodeBranchSubstitution
+public import FLT.Mazur.PolygonStageNodeDescentGeometry
+public import FLT.Mazur.PolygonStageNodeParameterDescent
 public import FLT.Mazur.PolygonStageNodeParameterEquiv
 public import FLT.Mazur.PolygonStageNodeParameterStructure
 public import FLT.Mazur.PolygonStageNodeParameterUniversalScaling
