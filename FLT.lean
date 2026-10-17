@@ -5788,6 +5788,7 @@ public import FLT.Mazur.HilbertBoundaryRelationNilpotence
 public import FLT.Mazur.HilbertBoundaryRelationOpenCorrections
 public import FLT.Mazur.HilbertBoundaryRelationTests
 public import FLT.Mazur.HilbertBoundaryRelationVanishingNeighborhood
+public import FLT.Mazur.HilbertBoundaryScaledKernelCorrection
 public import FLT.Mazur.HilbertBoundarySchemeTests
 public import FLT.Mazur.HilbertBoundarySimultaneousLiftCover
 public import FLT.Mazur.HilbertBoundaryThickeningGeometry
