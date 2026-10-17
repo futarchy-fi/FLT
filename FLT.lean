@@ -8106,6 +8106,7 @@ public import FLT.Mazur.PolygonCompleteIdentityTopSourcePoleMaps
 public import FLT.Mazur.PolygonCompleteIdentityTopSourceTargetComplement
 public import FLT.Mazur.PolygonCompleteIdentityTopSourceTargetFunctions
 public import FLT.Mazur.PolygonCompleteIdentityUnitCoherence
+public import FLT.Mazur.PolygonCompleteIdentityWholeAction
 public import FLT.Mazur.PolygonCompleteLineCohomology
 public import FLT.Mazur.PolygonCompleteLineHomExt
 public import FLT.Mazur.PolygonCompleteLineHomReconstruction
