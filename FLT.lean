@@ -6336,6 +6336,7 @@ public import FLT.Mazur.KernelPairSourceBranchCriterion
 public import FLT.Mazur.KernelPairTestIso
 public import FLT.Mazur.KernelPairUnramifiedInverse
 public import FLT.Mazur.LargeDegreeRelativeLineSections
+public import FLT.Mazur.LaurentBoundaryCorrectionSplit
 public import FLT.Mazur.LaurentBoundaryTailShift
 public import FLT.Mazur.LaurentBoundaryVectorField
 public import FLT.Mazur.LaurentCoboundaryBoundary
@@ -6373,6 +6374,8 @@ public import FLT.Mazur.LaurentScaledCoordinateIsomorphisms
 public import FLT.Mazur.LaurentScaledEvaluationCoefficients
 public import FLT.Mazur.LaurentScaledNilpotentReparametrization
 public import FLT.Mazur.LaurentSchemeCoordinates
+public import FLT.Mazur.LaurentSquareZeroAutomorphism
+public import FLT.Mazur.LaurentSquareZeroBoundaryFactorization
 public import FLT.Mazur.LaurentSquareZeroCocycle
 public import FLT.Mazur.LaurentSquareZeroCoordinate
 public import FLT.Mazur.LaurentSquareZeroCrossCoefficients
@@ -8723,7 +8726,11 @@ public import FLT.Mazur.PolygonSmoothingScalingNaturality
 public import FLT.Mazur.PolygonSmoothingSingularSupport
 public import FLT.Mazur.PolygonSmoothingSpecialBranches
 public import FLT.Mazur.PolygonSmoothingSpecialFiber
+public import FLT.Mazur.PolygonSmoothingSquareZeroEdgeFactors
 public import FLT.Mazur.PolygonSmoothingSquareZeroLiftConstraint
+public import FLT.Mazur.PolygonSmoothingSquareZeroShear
+public import FLT.Mazur.PolygonSmoothingSquareZeroShearBoundary
+public import FLT.Mazur.PolygonSmoothingSquareZeroTwoBranches
 public import FLT.Mazur.PolygonSmoothingSumRegular
 public import FLT.Mazur.PolygonSmoothingTransition
 public import FLT.Mazur.PolygonSmoothingTwoCoefficientBranches
@@ -12764,6 +12771,8 @@ public import FLT.Mazur.WeierstrassDividedTerminalEdgeCorrection
 public import FLT.Mazur.WeierstrassDividedTerminalExtendedEmptyIntersections
 public import FLT.Mazur.WeierstrassDividedTerminalExtensionClosed
 public import FLT.Mazur.WeierstrassDividedTerminalFirstOrderConstraint
+public import FLT.Mazur.WeierstrassDividedTerminalFirstResidualFactors
+public import FLT.Mazur.WeierstrassDividedTerminalFirstResidualGluing
 public import FLT.Mazur.WeierstrassDividedTerminalFullConicIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalHorizontalCyclicAction
 public import FLT.Mazur.WeierstrassDividedTerminalHorizontalCyclicPair
@@ -12779,6 +12788,7 @@ public import FLT.Mazur.WeierstrassDividedTerminalPolygonBoundaryRestriction
 public import FLT.Mazur.WeierstrassDividedTerminalPolygonInverseRestriction
 public import FLT.Mazur.WeierstrassDividedTerminalPrimitiveConstraint
 public import FLT.Mazur.WeierstrassDividedTerminalResidualAlgebra
+public import FLT.Mazur.WeierstrassDividedTerminalResidualFiltration
 public import FLT.Mazur.WeierstrassDividedTerminalResidueAtlas
 public import FLT.Mazur.WeierstrassDividedTerminalResidueBoundary
 public import FLT.Mazur.WeierstrassDividedTerminalResidueCharts
