@@ -5774,6 +5774,7 @@ public import FLT.Mazur.HilbertBoundaryFlatCommonCover
 public import FLT.Mazur.HilbertBoundaryGeometricGround
 public import FLT.Mazur.HilbertBoundaryGroundCertificate
 public import FLT.Mazur.HilbertBoundaryInfinitesimalArrows
+public import FLT.Mazur.HilbertBoundaryKernelLinearOperator
 public import FLT.Mazur.HilbertBoundaryKernelPair
 public import FLT.Mazur.HilbertBoundaryLiftLocus
 public import FLT.Mazur.HilbertBoundaryLocalCoverCriterion
