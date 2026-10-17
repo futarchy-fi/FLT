@@ -1,0 +1,83 @@
+/-
+Copyright (c) 2026 krandder. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: krandder
+-/
+module
+
+public import FLT.Mazur.WeierstrassDividedFifthShallowAtlasIdentification
+public import FLT.Mazur.WeierstrassDividedFifthShallowTransitions
+public import FLT.Mazur.WeierstrassDividedFourthShallowAtlasIncoming
+public import FLT.Mazur.WeierstrassDividedFifthShallowIncomingCancellation
+
+/-!
+# The actual incoming overlap of the fifth depth-two atlas
+
+The last factor is shared with the closing edge. The full predecessor factor
+retains the exact fourth and fifth smoothing in the global comparison.
+-/
+
+@[expose] public noncomputable section
+open AlgebraicGeometry CategoryTheory
+namespace FLT.Mazur.WeierstrassDividedDepth
+open PolygonArithmeticStages PolygonSmoothing WeierstrassModificationX
+set_option backward.isDefEq.respectTransparency false
+attribute [local irreducible] finiteGlobalModel finiteGlobalContraction
+  arithmeticFifthShallowPrecedingIso arithmeticFifthShallowAtlasChart
+variable {R : Type} [CommRing R] [IsDomain R] [IsBezout R]
+  {W : WeierstrassCurve R} {π : R} (hπ : π ≠ 0) {n : ℕ}
+  (data : (i : Fin (n + 1)) → Data W π (1 + i.val))
+  (H : ArithmeticAtlasCoefficients data) (m : ℕ) (hj : 3 ≤ n)
+  (u : Rˣ) (hu : (data ⟨3, Nat.lt_succ_of_le hj⟩).b6 = π * ↑u)
+local notation "Q" => Quotient R π m
+local notation "ι" => arithmeticFifthShallowAtlasChart hπ data H m hj u hu
+local notation "κ" => arithmeticFourthShallowAtlasChart hπ data H m 2 hj u hu
+local notation "O" => twistedRetainedOrientation data H m
+local notation "L" => arithmeticClosingRetainedBoundary data H m
+local notation "τ" => arithmeticInitialMobiusSmoothing W H.a1_unit (π ^ 1) π m
+local notation "s" => arithmeticFifthShallowPrecedingSmoothing hπ data H 2 hj u hu m
+local notation "s₄" => arithmeticFourthPrecedingSmoothing hπ data H 2 hj u hu m
+local notation "P" => arithmeticFifthShallowPrecedingIntegralField hπ data H 2 hj u hu
+local notation "M" => arithmeticFourthShallowPrecedingIdentification
+  hπ data H m 2 hj u hu 1 rfl (by omega)
+local notation "N" => arithmeticFourthShallowLastIdentification hπ data H m 2 hj u hu
+
+/-- The installed incoming overlap is precisely the complete fifth residual. -/
+@[reassoc] theorem arithmeticFifthShallowAtlas_residual_incoming (b : Bool) :
+    leftBranchOpen Q (s b) ≫ ι (.retained ⟨1, by omega⟩ b) =
+      (punctureSpecIso (arithmeticFifthShallowIncomingEquiv hπ data H 2 hj u hu m b)).hom ≫
+        precedingBranch Q τ ≫ (O b).hom ≫ ι (.retained ⟨2, by omega⟩ b) := by
+  have hP := arithmeticFifthShallowPrecedingIso_puncture hπ data H m 2 hj u hu b true
+  simp only [punctureOpen_true] at hP
+  apply (cancel_epi
+    (punctureSpecIso (twoBranchCorrectionPunctureFactor R π m (s₄ b) (P b) true)).hom).mp
+  calc
+    _ = leftBranchOpen Q (s₄ b) ≫ (M b).hom ≫ κ (.retained ⟨1, by omega⟩ b) := by
+      rw [← Category.assoc _ (leftBranchOpen Q (s b)), ← hP, Category.assoc,
+        arithmeticFifthShallowPreceding_chart]
+    _ = (arithmeticFourthIncomingResidual hπ data H m 2 hj u hu b).hom ≫
+        precedingBranch Q τ ≫ (O b).hom ≫ (N b).hom ≫ κ (.retained ⟨2, by omega⟩ b) :=
+      arithmeticFourthShallowAtlas_residual_incoming hπ data H m 2 hj u hu 1 rfl (by omega) b
+    _ = _ := by
+      simp only [arithmeticFifthShallowIncomingEquiv, punctureSpecIso_trans,
+        punctureSpecIso_symm, arithmeticFifthShallowLastEdgeEquiv_spec,
+        arithmeticFourthIncomingEquiv_spec, Iso.trans_hom, Iso.symm_hom,
+        Category.assoc, Iso.hom_inv_id_assoc]
+      rw [← arithmeticFifthShallowLastOrientedIso_incoming_assoc,
+        arithmeticFifthShallowLast_chart]
+
+omit m in
+/-- Both actual incoming residuals vanish on the fifth layer. -/
+@[reassoc] theorem arithmeticFifthShallowAtlas_incoming_fifth (b : Bool) :
+    leftBranchOpen (Quotient R π 5)
+        (arithmeticFifthShallowPrecedingSmoothing hπ data H 2 hj u hu 5 b) ≫
+      arithmeticFifthShallowAtlasChart hπ data H 5 hj u hu (.retained ⟨1, by omega⟩ b) =
+      precedingBranch (Quotient R π 5)
+          (arithmeticInitialMobiusSmoothing W H.a1_unit (π ^ 1) π 5) ≫
+        (twistedRetainedOrientation data H 5 b).hom ≫
+          arithmeticFifthShallowAtlasChart hπ data H 5 hj u hu (.retained ⟨2, by omega⟩ b) := by
+  rw [arithmeticFifthShallowAtlas_residual_incoming, arithmeticFifthShallowIncomingEquiv_fifth,
+    punctureSpecIso_refl, Iso.refl_hom]
+  exact Category.id_comp _
+
+end FLT.Mazur.WeierstrassDividedDepth
