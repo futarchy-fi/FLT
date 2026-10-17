@@ -7680,6 +7680,7 @@ public import FLT.Mazur.PolygonCollapsedBoundarySupport
 public import FLT.Mazur.PolygonCollapsedChainBoundaryCharts
 public import FLT.Mazur.PolygonCollapsedChainInteriorCharts
 public import FLT.Mazur.PolygonCollapsedChainModel
+public import FLT.Mazur.PolygonCollapsedChainOpenCover
 public import FLT.Mazur.PolygonCollapsedFiberIdeal
 public import FLT.Mazur.PolygonCollapsedFiberReduced
 public import FLT.Mazur.PolygonCollapsedIdealDetection
