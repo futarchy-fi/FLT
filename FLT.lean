@@ -2555,6 +2555,7 @@ public import FLT.Mazur.AdicDerivationFiltration
 public import FLT.Mazur.AdicDerivationNaturality
 public import FLT.Mazur.AdicDerivationQuotient
 public import FLT.Mazur.AdicDerivationUniqueness
+public import FLT.Mazur.AdicDiscrepancySeparation
 public import FLT.Mazur.AdicEvaluationKernel
 public import FLT.Mazur.AdicExtensionHomotopy
 public import FLT.Mazur.AdicExtensionKernelComparison
@@ -4659,11 +4660,17 @@ public import FLT.Mazur.EquivalenceRelationChartFamilyCorrections
 public import FLT.Mazur.EquivalenceRelationChartFamilyLifts
 public import FLT.Mazur.EquivalenceRelationChartFamilyLocalization
 public import FLT.Mazur.EquivalenceRelationChartFamilyRestriction
+public import FLT.Mazur.EquivalenceRelationCompleteAdicDiscrepancy
+public import FLT.Mazur.EquivalenceRelationCompleteAdicSeparation
+public import FLT.Mazur.EquivalenceRelationCompleteAffineStages
+public import FLT.Mazur.EquivalenceRelationCompleteBoundaryCorrections
 public import FLT.Mazur.EquivalenceRelationCompleteChartImage
 public import FLT.Mazur.EquivalenceRelationCompleteClosedLocus
 public import FLT.Mazur.EquivalenceRelationCompleteEndpointOrbit
+public import FLT.Mazur.EquivalenceRelationCompleteEquivariantCoefficients
 public import FLT.Mazur.EquivalenceRelationCompleteFiberComparison
 public import FLT.Mazur.EquivalenceRelationCompleteFiberSplit
+public import FLT.Mazur.EquivalenceRelationCompleteIdealInvariant
 public import FLT.Mazur.EquivalenceRelationCompleteInterior
 public import FLT.Mazur.EquivalenceRelationCompleteMixedCoefficients
 public import FLT.Mazur.EquivalenceRelationCompleteOpenCoefficients
@@ -4671,10 +4678,14 @@ public import FLT.Mazur.EquivalenceRelationCompletePointLocus
 public import FLT.Mazur.EquivalenceRelationCompleteRestrictionNaturality
 public import FLT.Mazur.EquivalenceRelationCompleteSourceComparison
 public import FLT.Mazur.EquivalenceRelationCompleteSourceRestriction
+public import FLT.Mazur.EquivalenceRelationCompleteStageCoefficients
 public import FLT.Mazur.EquivalenceRelationCompleteSubframe
 public import FLT.Mazur.EquivalenceRelationCompleteTestCoefficients
 public import FLT.Mazur.EquivalenceRelationCompleteTestPartition
+public import FLT.Mazur.EquivalenceRelationCompleteThickeningAction
+public import FLT.Mazur.EquivalenceRelationCompleteThickeningTower
 public import FLT.Mazur.EquivalenceRelationCompleteThickenings
+public import FLT.Mazur.EquivalenceRelationCompleteVanishingOpen
 public import FLT.Mazur.EquivalenceRelationConnectedCompleteTests
 public import FLT.Mazur.EquivalenceRelationFiberPermutationSections
 public import FLT.Mazur.EquivalenceRelationFiberRebase
@@ -4960,6 +4971,7 @@ public import FLT.Mazur.FiniteGroupClosedEnvelopeNeighborhood
 public import FLT.Mazur.FiniteGroupClosedEnvelopeRefinement
 public import FLT.Mazur.FiniteGroupEnvelopeNeighborhood
 public import FLT.Mazur.FiniteGroupEquivariantOpenBoundary
+public import FLT.Mazur.FiniteGroupEquivariantPullback
 public import FLT.Mazur.FiniteGroupFieldPointOrbits
 public import FLT.Mazur.FiniteGroupFreeBoundaryLift
 public import FLT.Mazur.FiniteGroupFreeFieldTest
@@ -5685,6 +5697,7 @@ public import FLT.Mazur.HilbertBasisTupleIntersection
 public import FLT.Mazur.HilbertBasisTupleSchemeComparison
 public import FLT.Mazur.HilbertBoundaryCertifiedAlgebra
 public import FLT.Mazur.HilbertBoundaryClosedRelation
+public import FLT.Mazur.HilbertBoundaryCompleteAdicLift
 public import FLT.Mazur.HilbertBoundaryEtaleIdeals
 public import FLT.Mazur.HilbertBoundaryEtaleLift
 public import FLT.Mazur.HilbertBoundaryFiniteLiftCover
@@ -5705,7 +5718,9 @@ public import FLT.Mazur.HilbertBoundaryQuotientGerms
 public import FLT.Mazur.HilbertBoundaryQuotientNilpotence
 public import FLT.Mazur.HilbertBoundaryQuotientSections
 public import FLT.Mazur.HilbertBoundaryRelationNilpotence
+public import FLT.Mazur.HilbertBoundaryRelationOpenCorrections
 public import FLT.Mazur.HilbertBoundaryRelationTests
+public import FLT.Mazur.HilbertBoundaryRelationVanishingNeighborhood
 public import FLT.Mazur.HilbertBoundarySchemeTests
 public import FLT.Mazur.HilbertBoundarySimultaneousLiftCover
 public import FLT.Mazur.HilbertBoundaryThickeningGeometry
@@ -6326,6 +6341,8 @@ public import FLT.Mazur.KernelPairSourceBranchCriterion
 public import FLT.Mazur.KernelPairTestIso
 public import FLT.Mazur.KernelPairUnramifiedInverse
 public import FLT.Mazur.LargeDegreeRelativeLineSections
+public import FLT.Mazur.LaurentBoundaryCorrectionScalar
+public import FLT.Mazur.LaurentBoundaryCorrectionSplit
 public import FLT.Mazur.LaurentBoundaryTailShift
 public import FLT.Mazur.LaurentBoundaryVectorField
 public import FLT.Mazur.LaurentCoboundaryBoundary
@@ -6363,6 +6380,8 @@ public import FLT.Mazur.LaurentScaledCoordinateIsomorphisms
 public import FLT.Mazur.LaurentScaledEvaluationCoefficients
 public import FLT.Mazur.LaurentScaledNilpotentReparametrization
 public import FLT.Mazur.LaurentSchemeCoordinates
+public import FLT.Mazur.LaurentSquareZeroAutomorphism
+public import FLT.Mazur.LaurentSquareZeroBoundaryFactorization
 public import FLT.Mazur.LaurentSquareZeroCocycle
 public import FLT.Mazur.LaurentSquareZeroCoordinate
 public import FLT.Mazur.LaurentSquareZeroCrossCoefficients
@@ -8726,7 +8745,12 @@ public import FLT.Mazur.PolygonSmoothingScalingNaturality
 public import FLT.Mazur.PolygonSmoothingSingularSupport
 public import FLT.Mazur.PolygonSmoothingSpecialBranches
 public import FLT.Mazur.PolygonSmoothingSpecialFiber
+public import FLT.Mazur.PolygonSmoothingSquareZeroEdgeFactors
+public import FLT.Mazur.PolygonSmoothingSquareZeroFactorIndependence
 public import FLT.Mazur.PolygonSmoothingSquareZeroLiftConstraint
+public import FLT.Mazur.PolygonSmoothingSquareZeroShear
+public import FLT.Mazur.PolygonSmoothingSquareZeroShearBoundary
+public import FLT.Mazur.PolygonSmoothingSquareZeroTwoBranches
 public import FLT.Mazur.PolygonSmoothingSumRegular
 public import FLT.Mazur.PolygonSmoothingTransition
 public import FLT.Mazur.PolygonSmoothingTwoCoefficientBranches
@@ -9933,6 +9957,8 @@ public import FLT.Mazur.ScalarTowerDivision
 public import FLT.Mazur.SchematicDenseDedekindFlat
 public import FLT.Mazur.SchematicDescentGluing
 public import FLT.Mazur.SchematicImageAffineEquations
+public import FLT.Mazur.SchemeAdicVanishingNeighborhood
+public import FLT.Mazur.SchemeAdicVanishingOpen
 public import FLT.Mazur.SchemeAffineAmbientTestCocycle
 public import FLT.Mazur.SchemeAffineAmbientTestNaturality
 public import FLT.Mazur.SchemeAffineAmbientTestRefinement
@@ -12219,6 +12245,12 @@ public import FLT.Mazur.WeierstrassDividedFirstInfinityAction
 public import FLT.Mazur.WeierstrassDividedFirstInfinityCenter
 public import FLT.Mazur.WeierstrassDividedFirstInfinityFactorization
 public import FLT.Mazur.WeierstrassDividedFirstOutputCover
+public import FLT.Mazur.WeierstrassDividedFirstResidualAtlas
+public import FLT.Mazur.WeierstrassDividedFirstResidualAtlasEdges
+public import FLT.Mazur.WeierstrassDividedFirstResidualAtlasGluing
+public import FLT.Mazur.WeierstrassDividedFirstResidualChoiceIndependence
+public import FLT.Mazur.WeierstrassDividedFirstResidualIncoming
+public import FLT.Mazur.WeierstrassDividedFirstResidualOrientation
 public import FLT.Mazur.WeierstrassDividedFirstSuccessorAction
 public import FLT.Mazur.WeierstrassDividedFirstUnitAction
 public import FLT.Mazur.WeierstrassDividedFixedTerminalBoundary
@@ -12769,6 +12801,8 @@ public import FLT.Mazur.WeierstrassDividedTerminalEdgeCorrection
 public import FLT.Mazur.WeierstrassDividedTerminalExtendedEmptyIntersections
 public import FLT.Mazur.WeierstrassDividedTerminalExtensionClosed
 public import FLT.Mazur.WeierstrassDividedTerminalFirstOrderConstraint
+public import FLT.Mazur.WeierstrassDividedTerminalFirstResidualFactors
+public import FLT.Mazur.WeierstrassDividedTerminalFirstResidualGluing
 public import FLT.Mazur.WeierstrassDividedTerminalFullConicIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalHorizontalCyclicAction
 public import FLT.Mazur.WeierstrassDividedTerminalHorizontalCyclicPair
@@ -12784,6 +12818,7 @@ public import FLT.Mazur.WeierstrassDividedTerminalPolygonBoundaryRestriction
 public import FLT.Mazur.WeierstrassDividedTerminalPolygonInverseRestriction
 public import FLT.Mazur.WeierstrassDividedTerminalPrimitiveConstraint
 public import FLT.Mazur.WeierstrassDividedTerminalResidualAlgebra
+public import FLT.Mazur.WeierstrassDividedTerminalResidualFiltration
 public import FLT.Mazur.WeierstrassDividedTerminalResidueAtlas
 public import FLT.Mazur.WeierstrassDividedTerminalResidueBoundary
 public import FLT.Mazur.WeierstrassDividedTerminalResidueCharts
