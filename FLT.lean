@@ -7760,12 +7760,18 @@ public import FLT.Mazur.PolygonCompleteIdentityAdicGraphCoherence
 public import FLT.Mazur.PolygonCompleteIdentityAdicGraphRotation
 public import FLT.Mazur.PolygonCompleteIdentityAdicGraphRotationLaws
 public import FLT.Mazur.PolygonCompleteIdentityAdicGraphSections
+public import FLT.Mazur.PolygonCompleteIdentityAdicGraphTopology
 public import FLT.Mazur.PolygonCompleteIdentityAdicNodeSections
 public import FLT.Mazur.PolygonCompleteIdentityAdicNodeSourceIso
 public import FLT.Mazur.PolygonCompleteIdentityAdicRefinedKernel
 public import FLT.Mazur.PolygonCompleteIdentityAdicRefinedPatches
+public import FLT.Mazur.PolygonCompleteIdentityAdicResidualLabels
+public import FLT.Mazur.PolygonCompleteIdentityAdicResidualSource
+public import FLT.Mazur.PolygonCompleteIdentityAdicSectionCartesian
 public import FLT.Mazur.PolygonCompleteIdentityAdicSectionChartCoverage
+public import FLT.Mazur.PolygonCompleteIdentityAdicSectionEdges
 public import FLT.Mazur.PolygonCompleteIdentityAdicSectionOpen
+public import FLT.Mazur.PolygonCompleteIdentityAdicSectionReduction
 public import FLT.Mazur.PolygonCompleteIdentityAllPositiveLaws
 public import FLT.Mazur.PolygonCompleteIdentityAmbientErrorRelation
 public import FLT.Mazur.PolygonCompleteIdentityAmbientParameterComparison
@@ -7962,6 +7968,8 @@ public import FLT.Mazur.PolygonCompleteIdentityGraphEdgeCartesian
 public import FLT.Mazur.PolygonCompleteIdentityGraphFiniteEdge
 public import FLT.Mazur.PolygonCompleteIdentityGraphFlat
 public import FLT.Mazur.PolygonCompleteIdentityGraphFlatExt
+public import FLT.Mazur.PolygonCompleteIdentityGraphFlatSource
+public import FLT.Mazur.PolygonCompleteIdentityGraphFlatSourceImage
 public import FLT.Mazur.PolygonCompleteIdentityGraphGenericEquations
 public import FLT.Mazur.PolygonCompleteIdentityGraphIncomingCartesian
 public import FLT.Mazur.PolygonCompleteIdentityGraphIncomingChart
@@ -8500,6 +8508,7 @@ public import FLT.Mazur.PolygonInfinitesimalMarkingEquations
 public import FLT.Mazur.PolygonInfinitesimalMarkingImageEquation
 public import FLT.Mazur.PolygonInfinitesimalMarkingRegular
 public import FLT.Mazur.PolygonInfinitesimalMarkings
+public import FLT.Mazur.PolygonInfinitesimalNodeChartUnique
 public import FLT.Mazur.PolygonInfinitesimalRestrictionKernel
 public import FLT.Mazur.PolygonInfinitesimalRotation
 public import FLT.Mazur.PolygonInfinitesimalRotationBaseChange
