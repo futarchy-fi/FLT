@@ -6004,6 +6004,7 @@ public import FLT.Mazur.HilbertOrbitRelativeImagePreimage
 public import FLT.Mazur.HilbertOrbitRelativeMixedConnecting
 public import FLT.Mazur.HilbertOrbitRelativeMixedError
 public import FLT.Mazur.HilbertOrbitRelativePrimeFiniteLifts
+public import FLT.Mazur.HilbertOrbitRelativePrimeResidueLifts
 public import FLT.Mazur.HilbertOrbitRelativeReducedCorrections
 public import FLT.Mazur.HilbertOrbitRelativeReductionKernel
 public import FLT.Mazur.HilbertOrbitRelativeResidueGenerators
