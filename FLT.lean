@@ -11118,6 +11118,7 @@ public import FLT.Mazur.SmoothFiniteGeometricDiagram
 public import FLT.Mazur.SmoothFiniteSubgroupAmple
 public import FLT.Mazur.SmoothFiniteSubschemeCartier
 public import FLT.Mazur.SmoothGeneralizedCurveGroupIso
+public import FLT.Mazur.SmoothGeneralizedCurvePointedIso
 public import FLT.Mazur.SmoothGeometricAcyclicExactFrames
 public import FLT.Mazur.SmoothGeometricAcyclicFiniteFree
 public import FLT.Mazur.SmoothGeometricAcyclicHigherImage
