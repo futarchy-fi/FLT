@@ -6000,6 +6000,8 @@ public import FLT.Mazur.HilbertOrbitMixedBoundaryKernel
 public import FLT.Mazur.HilbertOrbitMixedBoundaryProjection
 public import FLT.Mazur.HilbertOrbitRelativeMixedConnecting
 public import FLT.Mazur.HilbertOrbitRelativeMixedError
+public import FLT.Mazur.HilbertOrbitRelativeReducedCorrections
+public import FLT.Mazur.HilbertOrbitRelativeReductionKernel
 public import FLT.Mazur.HilbertOrderedAffineEnvelope
 public import FLT.Mazur.HilbertOrderedOriginalBoundary
 public import FLT.Mazur.HilbertOrderedStableNeighborhood
@@ -9842,6 +9844,8 @@ public import FLT.Mazur.RelativeAmpleProper
 public import FLT.Mazur.RelativeAmpleRestriction
 public import FLT.Mazur.RelativeAmpleSectionComparison
 public import FLT.Mazur.RelativeBoundaryConnectingMap
+public import FLT.Mazur.RelativeBoundaryReducedCorrections
+public import FLT.Mazur.RelativeBoundaryReductionAbsorption
 public import FLT.Mazur.RelativeCartier
 public import FLT.Mazur.RelativeCartierBaseChange
 public import FLT.Mazur.RelativeCartierBaseChangeComposition
@@ -10046,6 +10050,7 @@ public import FLT.Mazur.RelativePoleComplementFunctions
 public import FLT.Mazur.RelativePoleComplementLinear
 public import FLT.Mazur.RelativeRankOneDivisorUniqueness
 public import FLT.Mazur.RelativeRankStratumThickenings
+public import FLT.Mazur.RelativeReductionKernelAbsorption
 public import FLT.Mazur.RelativeRelationArrowCalculus
 public import FLT.Mazur.RelativeRelationClosedObstruction
 public import FLT.Mazur.RelativeRelationClosedSections
@@ -11037,6 +11042,7 @@ public import FLT.Mazur.StructureImageOpenChart
 public import FLT.Mazur.StructureModuleScalarTransitions
 public import FLT.Mazur.StructureRingCohomologyIso
 public import FLT.Mazur.SubfunctorRepresentedPullback
+public import FLT.Mazur.SubmoduleQuotientScalarReduction
 public import FLT.Mazur.SubmoduleReductionFlat
 public import FLT.Mazur.SubmoduleReductionKernel
 public import FLT.Mazur.SuccessiveIncidenceAlgebra
