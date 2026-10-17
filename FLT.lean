@@ -12553,6 +12553,7 @@ public import FLT.Mazur.WeierstrassDividedFifthDeepAtlasOuterIncoming
 public import FLT.Mazur.WeierstrassDividedFifthDeepAtlasPreceding
 public import FLT.Mazur.WeierstrassDividedFifthDeepAtlasSystem
 public import FLT.Mazur.WeierstrassDividedFifthDeepCancellation
+public import FLT.Mazur.WeierstrassDividedFifthDeepEarlierIncoming
 public import FLT.Mazur.WeierstrassDividedFifthDeepEarlierNodes
 public import FLT.Mazur.WeierstrassDividedFifthDeepEndCancellation
 public import FLT.Mazur.WeierstrassDividedFifthDeepEndIdentification
