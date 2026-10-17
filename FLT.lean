@@ -9976,6 +9976,7 @@ public import FLT.Mazur.QuasiCompactEtaleGeometricSections
 public import FLT.Mazur.QuasiCompactGenericFlatOpen
 public import FLT.Mazur.QuasiFiniteCoefficientQuotient
 public import FLT.Mazur.QuasiFiniteFlatDescent
+public import FLT.Mazur.QuasiFiniteFppfDescent
 public import FLT.Mazur.QuasiFiniteGenericFiniteFree
 public import FLT.Mazur.QuasiFiniteGeometricPointIsolation
 public import FLT.Mazur.QuasiFiniteIdealQuotient
