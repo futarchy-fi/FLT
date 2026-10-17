@@ -12470,6 +12470,7 @@ public import FLT.Mazur.WeierstrassDividedFourthResidualFifthOrder
 public import FLT.Mazur.WeierstrassDividedFourthResidualRestriction
 public import FLT.Mazur.WeierstrassDividedFourthSmoothingAnnihilation
 public import FLT.Mazur.WeierstrassDividedFourthTerminalGeometry
+public import FLT.Mazur.WeierstrassDividedFourthTransitions
 public import FLT.Mazur.WeierstrassDividedFullInfinityFactorRatioMap
 public import FLT.Mazur.WeierstrassDividedFullInfinityFactorRatioNaturality
 public import FLT.Mazur.WeierstrassDividedFullResidueAtlas
