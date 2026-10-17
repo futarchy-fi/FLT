@@ -7915,6 +7915,7 @@ public import FLT.Mazur.PolygonCompleteIdentityGraphChartEdgeCartesian
 public import FLT.Mazur.PolygonCompleteIdentityGraphChartLift
 public import FLT.Mazur.PolygonCompleteIdentityGraphChartRotatedContraction
 public import FLT.Mazur.PolygonCompleteIdentityGraphChartRotation
+public import FLT.Mazur.PolygonCompleteIdentityGraphChartRotationIso
 public import FLT.Mazur.PolygonCompleteIdentityGraphEdgeCartesian
 public import FLT.Mazur.PolygonCompleteIdentityGraphFiniteEdge
 public import FLT.Mazur.PolygonCompleteIdentityGraphFlat
