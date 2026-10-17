@@ -4735,6 +4735,7 @@ public import FLT.Mazur.EquivalenceRelationConnectedCompleteTests
 public import FLT.Mazur.EquivalenceRelationFiberPermutationSections
 public import FLT.Mazur.EquivalenceRelationFiberRebase
 public import FLT.Mazur.EquivalenceRelationFiniteChartMultipliers
+public import FLT.Mazur.EquivalenceRelationFiniteCompleteInterior
 public import FLT.Mazur.EquivalenceRelationFrameNormalization
 public import FLT.Mazur.EquivalenceRelationFrameRebaseGeometric
 public import FLT.Mazur.EquivalenceRelationFrameRebaseLaws
@@ -5901,6 +5902,7 @@ public import FLT.Mazur.HilbertFamilyRelationBaseChange
 public import FLT.Mazur.HilbertFamilyTruncatedRelations
 public import FLT.Mazur.HilbertFiniteAmbientPresentation
 public import FLT.Mazur.HilbertFiniteFreeQuotientRefinement
+public import FLT.Mazur.HilbertFiniteRelationUniformCoverage
 public import FLT.Mazur.HilbertFullInteriorFiniteKernel
 public import FLT.Mazur.HilbertFullInteriorQuotientChart
 public import FLT.Mazur.HilbertFullRelationFiberRebase
@@ -10315,6 +10317,7 @@ public import FLT.Mazur.RelativeSubmoduleQuotientExact
 public import FLT.Mazur.RelativeSums
 public import FLT.Mazur.RelativeTupleCollision
 public import FLT.Mazur.RelativeTupleCompletenessLocus
+public import FLT.Mazur.RelativeTupleFiniteCompleteness
 public import FLT.Mazur.RelativeTupleOpenEmbedding
 public import FLT.Mazur.RelativeTupleSections
 public import FLT.Mazur.RelativeUniversalDistinctLift
@@ -10574,6 +10577,7 @@ public import FLT.Mazur.SchemeEtaleImageDenseModel
 public import FLT.Mazur.SchemeEtaleImageModelBaseChange
 public import FLT.Mazur.SchemeEtaleImageQuotient
 public import FLT.Mazur.SchemeFamilyTripleOverlap
+public import FLT.Mazur.SchemeFiniteFiberInterior
 public import FLT.Mazur.SchemeFiniteGeometricOpenSpread
 public import FLT.Mazur.SchemeFiniteGroupAffineDescent
 public import FLT.Mazur.SchemeFiniteGroupDescent
@@ -10590,6 +10594,7 @@ public import FLT.Mazur.SchemeFiniteGroupQuotientOpenEmbedding
 public import FLT.Mazur.SchemeFiniteGroupQuotientOpenImmersion
 public import FLT.Mazur.SchemeFiniteGroupQuotientOrbits
 public import FLT.Mazur.SchemeFiniteOrbitOpenCore
+public import FLT.Mazur.SchemeFiniteTargetBaseChange
 public import FLT.Mazur.SchemeFlatFamilyReflection
 public import FLT.Mazur.SchemeFlatFppfTargetDensity
 public import FLT.Mazur.SchemeFlatProductDensity
