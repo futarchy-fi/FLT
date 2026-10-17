@@ -3529,8 +3529,13 @@ public import FLT.Mazur.BlowupReesRatioRight
 public import FLT.Mazur.BlowupReesRatioScheme
 public import FLT.Mazur.BlowupReesRatioTransition
 public import FLT.Mazur.BlowupReesZeroComponent
+public import FLT.Mazur.BoundaryCorrectionAmbientEquations
 public import FLT.Mazur.BoundaryCorrectionFaithfulCoefficients
+public import FLT.Mazur.BoundaryCorrectionFlatDescent
+public import FLT.Mazur.BoundaryCorrectionFlatReconstruction
 public import FLT.Mazur.BoundaryCorrectionIdeal
+public import FLT.Mazur.BoundaryCorrectionLinearSystem
+public import FLT.Mazur.BoundaryCorrectionTensorCoordinates
 public import FLT.Mazur.BoundedFlatAcyclicNeighborhood
 public import FLT.Mazur.BoundedFlatAcyclicOpen
 public import FLT.Mazur.BoundedFlatFiberVanishing
@@ -5899,6 +5904,7 @@ public import FLT.Mazur.HilbertOpenInclusionExtension
 public import FLT.Mazur.HilbertOpenInclusionFamilies
 public import FLT.Mazur.HilbertOpenIntrinsicClassification
 public import FLT.Mazur.HilbertOpenOverlapCoherence
+public import FLT.Mazur.HilbertOrbitBoundaryAmbientCorrections
 public import FLT.Mazur.HilbertOrbitBoundaryAtlas
 public import FLT.Mazur.HilbertOrbitBoundaryAtlasDescent
 public import FLT.Mazur.HilbertOrbitBoundaryAtlasLifts
@@ -5916,6 +5922,7 @@ public import FLT.Mazur.HilbertOrbitBoundaryFiniteMultipliers
 public import FLT.Mazur.HilbertOrbitBoundaryFiniteOriginalLift
 public import FLT.Mazur.HilbertOrbitBoundaryFiniteProducts
 public import FLT.Mazur.HilbertOrbitBoundaryFiniteScalars
+public import FLT.Mazur.HilbertOrbitBoundaryLinearSystem
 public import FLT.Mazur.HilbertOrbitBoundaryLocalizedCorrections
 public import FLT.Mazur.HilbertOrbitBoundaryLocalizedMaps
 public import FLT.Mazur.HilbertOrbitBoundaryLocalizedMultipliers
