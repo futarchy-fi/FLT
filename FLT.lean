@@ -4714,6 +4714,7 @@ public import FLT.Mazur.EquivalenceRelationMixedChartLiftDifference
 public import FLT.Mazur.EquivalenceRelationMixedChartProjections
 public import FLT.Mazur.EquivalenceRelationMixedChartRestriction
 public import FLT.Mazur.EquivalenceRelationMixedChartTests
+public import FLT.Mazur.EquivalenceRelationMixedEmbeddingDomains
 public import FLT.Mazur.EquivalenceRelationMixedFrameCardinality
 public import FLT.Mazur.EquivalenceRelationMixedFrameComparison
 public import FLT.Mazur.EquivalenceRelationMixedFrameLabelChange
