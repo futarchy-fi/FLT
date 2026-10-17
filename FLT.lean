@@ -10196,6 +10196,7 @@ public import FLT.Mazur.RelativeRankOneDivisorUniqueness
 public import FLT.Mazur.RelativeRankStratumThickenings
 public import FLT.Mazur.RelativeReductionKernelAbsorption
 public import FLT.Mazur.RelativeRelationArrowCalculus
+public import FLT.Mazur.RelativeRelationBaseFiberPrincipal
 public import FLT.Mazur.RelativeRelationBasePrincipal
 public import FLT.Mazur.RelativeRelationClosedObstruction
 public import FLT.Mazur.RelativeRelationClosedSections
