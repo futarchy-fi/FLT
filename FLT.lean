@@ -10287,6 +10287,7 @@ public import FLT.Mazur.SchemeFlatFamilyReflection
 public import FLT.Mazur.SchemeFlatFppfTargetDensity
 public import FLT.Mazur.SchemeFlatProductDensity
 public import FLT.Mazur.SchemeFlatSourceImage
+public import FLT.Mazur.SchemeFlatTargetFamilyReflection
 public import FLT.Mazur.SchemeFlatTargetNeighborhood
 public import FLT.Mazur.SchemeFlatTargetOpen
 public import FLT.Mazur.SchemeFppfCanonicalPairRecovery
