@@ -5983,6 +5983,7 @@ public import FLT.Mazur.HilbertOrbitBoundaryPointLocalizedLifts
 public import FLT.Mazur.HilbertOrbitBoundaryPointSolvabilityLocus
 public import FLT.Mazur.HilbertOrbitBoundaryPointSpreading
 public import FLT.Mazur.HilbertOrbitBoundaryPrincipalNumerators
+public import FLT.Mazur.HilbertOrbitBoundaryReducedImage
 public import FLT.Mazur.HilbertOrbitBoundaryReductionCertificate
 public import FLT.Mazur.HilbertOrbitBoundaryScalarImage
 public import FLT.Mazur.HilbertOrbitBoundaryScaledMultipliers
