@@ -67,7 +67,7 @@ local notation "σ" => arithmeticThirdTerminalSmoothing hπ data H j hj u hu m
       rw [← arithmeticFourthTerminalIso_puncture_assoc, ht]
 
 omit m in
-/-- At stage three both closing overlaps are the standard complete punctures in this atlas. -/
+/-- At stage four both closing overlaps are the standard complete punctures in this atlas. -/
 @[reassoc] theorem arithmeticFourthAtlas_closing_fourth (b : Bool) :
     (arithmeticClosingRetainedBoundary data H 4 ≫
         (twistedRetainedOrientation data H 4 b).hom) ≫
