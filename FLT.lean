@@ -3541,6 +3541,7 @@ public import FLT.Mazur.BoundaryCorrectionAdicCertificate
 public import FLT.Mazur.BoundaryCorrectionAmbientEquations
 public import FLT.Mazur.BoundaryCorrectionBoundaryImage
 public import FLT.Mazur.BoundaryCorrectionBoundaryKernel
+public import FLT.Mazur.BoundaryCorrectionCokernelBaseChange
 public import FLT.Mazur.BoundaryCorrectionCokernelClass
 public import FLT.Mazur.BoundaryCorrectionCompatibleBaseChange
 public import FLT.Mazur.BoundaryCorrectionCompatibleErrors
@@ -3548,6 +3549,8 @@ public import FLT.Mazur.BoundaryCorrectionFaithfulCoefficients
 public import FLT.Mazur.BoundaryCorrectionFiniteCokernel
 public import FLT.Mazur.BoundaryCorrectionFiniteReduction
 public import FLT.Mazur.BoundaryCorrectionFlatDescent
+public import FLT.Mazur.BoundaryCorrectionFlatImage
+public import FLT.Mazur.BoundaryCorrectionFlatKernel
 public import FLT.Mazur.BoundaryCorrectionFlatReconstruction
 public import FLT.Mazur.BoundaryCorrectionIdeal
 public import FLT.Mazur.BoundaryCorrectionLinearSystem
@@ -3895,6 +3898,7 @@ public import FLT.Mazur.Contracts
 public import FLT.Mazur.CoprimeFieldGroupTransport
 public import FLT.Mazur.CoprimeGroupMarkings
 public import FLT.Mazur.CoproductConstantSections
+public import FLT.Mazur.CorrectionCokernelBaseChange
 public import FLT.Mazur.CubicComponentBound
 public import FLT.Mazur.CubicMobiusClearing
 public import FLT.Mazur.CurveAmpleDegree
@@ -5948,6 +5952,7 @@ public import FLT.Mazur.HilbertOrbitBoundaryBaseLocalizationMaps
 public import FLT.Mazur.HilbertOrbitBoundaryBaseLocalizedKernels
 public import FLT.Mazur.HilbertOrbitBoundaryBaseLocalizedMultipliers
 public import FLT.Mazur.HilbertOrbitBoundaryCoefficientHom
+public import FLT.Mazur.HilbertOrbitBoundaryCokernelClasses
 public import FLT.Mazur.HilbertOrbitBoundaryCompatibleErrors
 public import FLT.Mazur.HilbertOrbitBoundaryCorrectionIdeal
 public import FLT.Mazur.HilbertOrbitBoundaryFamilyLifts
@@ -5960,6 +5965,7 @@ public import FLT.Mazur.HilbertOrbitBoundaryFiniteOriginalLift
 public import FLT.Mazur.HilbertOrbitBoundaryFiniteProducts
 public import FLT.Mazur.HilbertOrbitBoundaryFiniteReduction
 public import FLT.Mazur.HilbertOrbitBoundaryFiniteScalars
+public import FLT.Mazur.HilbertOrbitBoundaryFlatObstruction
 public import FLT.Mazur.HilbertOrbitBoundaryLinearSystem
 public import FLT.Mazur.HilbertOrbitBoundaryLocalCokernel
 public import FLT.Mazur.HilbertOrbitBoundaryLocalizedCorrections
@@ -5974,6 +5980,7 @@ public import FLT.Mazur.HilbertOrbitBoundaryPointSolvabilityLocus
 public import FLT.Mazur.HilbertOrbitBoundaryPointSpreading
 public import FLT.Mazur.HilbertOrbitBoundaryPrincipalNumerators
 public import FLT.Mazur.HilbertOrbitBoundaryReductionCertificate
+public import FLT.Mazur.HilbertOrbitBoundaryScalarImage
 public import FLT.Mazur.HilbertOrbitBoundaryScaledMultipliers
 public import FLT.Mazur.HilbertOrderedAffineEnvelope
 public import FLT.Mazur.HilbertOrderedOriginalBoundary
