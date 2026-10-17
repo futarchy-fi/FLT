@@ -12792,6 +12792,7 @@ public import FLT.Mazur.WeierstrassDividedSecondResidualFields
 public import FLT.Mazur.WeierstrassDividedSecondResidualGeometry
 public import FLT.Mazur.WeierstrassDividedSecondResidualIdentification
 public import FLT.Mazur.WeierstrassDividedSecondResidualLifts
+public import FLT.Mazur.WeierstrassDividedSecondResidualPunctures
 public import FLT.Mazur.WeierstrassDividedShearContraction
 public import FLT.Mazur.WeierstrassDividedShearData
 public import FLT.Mazur.WeierstrassDividedShearExterior
