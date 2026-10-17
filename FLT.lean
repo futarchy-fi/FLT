@@ -13045,6 +13045,7 @@ public import FLT.Mazur.WeierstrassDividedThirdAtlasSystem
 public import FLT.Mazur.WeierstrassDividedThirdEarlierAdjacent
 public import FLT.Mazur.WeierstrassDividedThirdEarlierGeometry
 public import FLT.Mazur.WeierstrassDividedThirdEarlierIncoming
+public import FLT.Mazur.WeierstrassDividedThirdEarlierInitial
 public import FLT.Mazur.WeierstrassDividedThirdEarlierRestriction
 public import FLT.Mazur.WeierstrassDividedThirdGeometry
 public import FLT.Mazur.WeierstrassDividedThirdIncomingCancellation
