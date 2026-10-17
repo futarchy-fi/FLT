@@ -3539,6 +3539,9 @@ public import FLT.Mazur.BlowupReesZeroComponent
 public import FLT.Mazur.BoundaryCorrectionAdicAmbient
 public import FLT.Mazur.BoundaryCorrectionAdicCertificate
 public import FLT.Mazur.BoundaryCorrectionAmbientEquations
+public import FLT.Mazur.BoundaryCorrectionBoundaryImage
+public import FLT.Mazur.BoundaryCorrectionBoundaryKernel
+public import FLT.Mazur.BoundaryCorrectionCokernelClass
 public import FLT.Mazur.BoundaryCorrectionCompatibleBaseChange
 public import FLT.Mazur.BoundaryCorrectionCompatibleErrors
 public import FLT.Mazur.BoundaryCorrectionFaithfulCoefficients
@@ -5944,6 +5947,7 @@ public import FLT.Mazur.HilbertOrbitBoundaryBaseCorrectionCriterion
 public import FLT.Mazur.HilbertOrbitBoundaryBaseLocalizationMaps
 public import FLT.Mazur.HilbertOrbitBoundaryBaseLocalizedKernels
 public import FLT.Mazur.HilbertOrbitBoundaryBaseLocalizedMultipliers
+public import FLT.Mazur.HilbertOrbitBoundaryCoefficientHom
 public import FLT.Mazur.HilbertOrbitBoundaryCompatibleErrors
 public import FLT.Mazur.HilbertOrbitBoundaryCorrectionIdeal
 public import FLT.Mazur.HilbertOrbitBoundaryFamilyLifts
@@ -5964,6 +5968,7 @@ public import FLT.Mazur.HilbertOrbitBoundaryLocalizedMultipliers
 public import FLT.Mazur.HilbertOrbitBoundaryLocalizedNaturality
 public import FLT.Mazur.HilbertOrbitBoundaryLocalizedNumerators
 public import FLT.Mazur.HilbertOrbitBoundaryMixedBranchIdeal
+public import FLT.Mazur.HilbertOrbitBoundaryObstructionKernel
 public import FLT.Mazur.HilbertOrbitBoundaryPointLocalizedLifts
 public import FLT.Mazur.HilbertOrbitBoundaryPointSolvabilityLocus
 public import FLT.Mazur.HilbertOrbitBoundaryPointSpreading
