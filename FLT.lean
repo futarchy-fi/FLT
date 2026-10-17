@@ -12451,6 +12451,7 @@ public import FLT.Mazur.WeierstrassDividedFactorRatioRetainedBoundary
 public import FLT.Mazur.WeierstrassDividedFaithfulActionDescent
 public import FLT.Mazur.WeierstrassDividedFifthResidualFields
 public import FLT.Mazur.WeierstrassDividedFifthShallowAtlas
+public import FLT.Mazur.WeierstrassDividedFifthShallowAtlasSystem
 public import FLT.Mazur.WeierstrassDividedFifthShallowCancellation
 public import FLT.Mazur.WeierstrassDividedFifthShallowFields
 public import FLT.Mazur.WeierstrassDividedFifthShallowGeometry
