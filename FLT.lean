@@ -2535,6 +2535,7 @@ public import FLT.Mazur.AdicCompletedInfinitesimalLift
 public import FLT.Mazur.AdicCompletedInfinitesimalSpaceMap
 public import FLT.Mazur.AdicCompletionAlgEquiv
 public import FLT.Mazur.AdicCompletionFiltrationTransport
+public import FLT.Mazur.AdicCompletionFlatDescent
 public import FLT.Mazur.AdicCompletionPositiveEquiv
 public import FLT.Mazur.AdicCompletionPositiveLimit
 public import FLT.Mazur.AdicCompletionPrincipal
