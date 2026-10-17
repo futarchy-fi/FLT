@@ -6114,6 +6114,9 @@ public import FLT.Mazur.HilbertSupportOpenPullback
 public import FLT.Mazur.HilbertTruncatedIdealDetection
 public import FLT.Mazur.HilbertTruncatedIdealGeneration
 public import FLT.Mazur.HilbertTupleBasisTower
+public import FLT.Mazur.HilbertUniformBaseErrorSupport
+public import FLT.Mazur.HilbertUniformBaseFiniteCover
+public import FLT.Mazur.HilbertUniformBaseScalarCore
 public import FLT.Mazur.HilbertUniformOriginalFiniteLifts
 public import FLT.Mazur.HilbertUniformOriginalLiftingOpen
 public import FLT.Mazur.HilbertUniformPrincipalCore
@@ -10224,6 +10227,8 @@ public import FLT.Mazur.RelativeRankOneDivisorUniqueness
 public import FLT.Mazur.RelativeRankStratumThickenings
 public import FLT.Mazur.RelativeReductionKernelAbsorption
 public import FLT.Mazur.RelativeRelationArrowCalculus
+public import FLT.Mazur.RelativeRelationBaseFiberPrincipal
+public import FLT.Mazur.RelativeRelationBasePrincipal
 public import FLT.Mazur.RelativeRelationClosedObstruction
 public import FLT.Mazur.RelativeRelationClosedSections
 public import FLT.Mazur.RelativeRelationEtaleOrbitImageMap
