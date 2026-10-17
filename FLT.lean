@@ -8423,6 +8423,7 @@ public import FLT.Mazur.PolygonCompleteStageMarkings
 public import FLT.Mazur.PolygonCompleteStageRotation
 public import FLT.Mazur.PolygonCompleteStructureCohomology
 public import FLT.Mazur.PolygonCompleteUniversalFunctions
+public import FLT.Mazur.PolygonCompleteWholeAction
 public import FLT.Mazur.PolygonCompleteWholeActionChartCompatibility
 public import FLT.Mazur.PolygonCompleteWholeActionParameterCover
 public import FLT.Mazur.PolygonCompleteWholeActionRotatedCharts
