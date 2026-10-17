@@ -17,6 +17,36 @@ of actual compatible families. This is distinct from the N-to-ambient test.
 -/
 
 @[expose] public noncomputable section
+namespace FLT.Mazur.QuotientImageReduction
+variable {R M : Type*} [CommRing R] [AddCommGroup M] [Module R M]
+  (J : Ideal R) (N K H : Submodule R M) (hKN : K ≤ N) (hHN : H ≤ N)
+  (Q : Submodule R (N ⧸ K.comap N.subtype))
+  (hQ : Q.comap (K.comap N.subtype).mkQ = H.comap N.subtype)
+
+include hKN hHN hQ in
+/-- The image reduction test transports through a proved preimage identity without unfolding Q. -/
+theorem inclusion_injective_iff_relative_preimage :
+    Function.Injective (SubmoduleReduction.inclusion J Q) ↔
+      H ⊓ (K ⊔ J • N) = K ⊔ J • H := by
+  rw [inclusion_injective_iff_preimage, hQ]
+  have hmapH : (H.comap N.subtype).map N.subtype = H := by
+    rw [Submodule.map_comap_subtype, inf_eq_right.mpr hHN]
+  have hmapK : (K.comap N.subtype).map N.subtype = K := by
+    rw [Submodule.map_comap_subtype, inf_eq_right.mpr hKN]
+  have hmapTop : (⊤ : Submodule R N).map N.subtype = N := by
+    rw [Submodule.map_top, Submodule.range_subtype]
+  constructor
+  · intro h
+    have he := congrArg (Submodule.map N.subtype) h
+    simpa only [Submodule.map_inf N.subtype N.subtype_injective, Submodule.map_sup,
+      Submodule.map_smul'', hmapH, hmapK, hmapTop] using he
+  · intro h
+    apply Submodule.map_injective_of_injective N.subtype_injective
+    simpa only [Submodule.map_inf N.subtype N.subtype_injective, Submodule.map_sup,
+      Submodule.map_smul'', hmapH, hmapK, hmapTop] using h
+
+end FLT.Mazur.QuotientImageReduction
+
 namespace FLT.Mazur.RelativeBoundaryConnectingMap
 variable {R A B C D : Type*} [CommRing R]
   [AddCommGroup A] [Module R A] [AddCommGroup B] [Module R B]
@@ -41,20 +71,8 @@ include hKN in
 theorem connecting_image_reduction_injective_iff :
     Function.Injective (SubmoduleReduction.inclusion J Q) ↔
       H ⊓ (K ⊔ J • N) = K ⊔ J • H := by
-  rw [QuotientImageReduction.inclusion_injective_iff_preimage, connecting_range_comap]
-  have hmapH := map_compatibleDiscrepancies_comap b δ N β u hb hN hKN
-  have hmapK : ((K).comap N.subtype).map N.subtype = K := by
-    rw [Submodule.map_comap_subtype, inf_eq_right.mpr hKN]
-  have hmapTop : (⊤ : Submodule R N).map N.subtype = N := by
-    rw [Submodule.map_top, Submodule.range_subtype]
-  constructor
-  · intro h
-    have he := congrArg (Submodule.map N.subtype) h
-    simpa only [Submodule.map_inf N.subtype N.subtype_injective, Submodule.map_sup,
-      Submodule.map_smul'', hmapH, hmapK, hmapTop] using he
-  · intro h
-    apply Submodule.map_injective_of_injective N.subtype_injective
-    simpa only [Submodule.map_inf N.subtype N.subtype_injective, Submodule.map_sup,
-      Submodule.map_smul'', hmapH, hmapK, hmapTop] using h
+  exact QuotientImageReduction.inclusion_injective_iff_relative_preimage J N K H hKN
+    (compatibleDiscrepancies_le b δ N β u hb hN hKN) Q
+    (connecting_range_comap b δ N β u hb hN)
 
 end FLT.Mazur.RelativeBoundaryConnectingMap
