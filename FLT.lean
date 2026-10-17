@@ -7746,6 +7746,7 @@ public import FLT.Mazur.PolygonCompleteFiberMarkings
 public import FLT.Mazur.PolygonCompleteFieldH1
 public import FLT.Mazur.PolygonCompleteFixedPointFree
 public import FLT.Mazur.PolygonCompleteFlatContractionExt
+public import FLT.Mazur.PolygonCompleteFlatSmoothPreimage
 public import FLT.Mazur.PolygonCompleteGenericChartCompatibility
 public import FLT.Mazur.PolygonCompleteGenericChartEvaluation
 public import FLT.Mazur.PolygonCompleteGenericChartOperations
@@ -8035,6 +8036,7 @@ public import FLT.Mazur.PolygonCompleteIdentityObstructionCocycle
 public import FLT.Mazur.PolygonCompleteIdentityObstructionNormalization
 public import FLT.Mazur.PolygonCompleteIdentityObstructionSymmetry
 public import FLT.Mazur.PolygonCompleteIdentityOrderZeroLaw
+public import FLT.Mazur.PolygonCompleteIdentityOriginalInputCover
 public import FLT.Mazur.PolygonCompleteIdentityPointCocycle
 public import FLT.Mazur.PolygonCompleteIdentityPointDefect
 public import FLT.Mazur.PolygonCompleteIdentitySecondCorrection
@@ -8117,6 +8119,9 @@ public import FLT.Mazur.PolygonCompleteIdentityTopSourcePoleMaps
 public import FLT.Mazur.PolygonCompleteIdentityTopSourceTargetComplement
 public import FLT.Mazur.PolygonCompleteIdentityTopSourceTargetFunctions
 public import FLT.Mazur.PolygonCompleteIdentityUnitCoherence
+public import FLT.Mazur.PolygonCompleteIdentityWholeAction
+public import FLT.Mazur.PolygonCompleteIdentityWholeActionFinite
+public import FLT.Mazur.PolygonCompleteIdentityWholeActionRotation
 public import FLT.Mazur.PolygonCompleteLineCohomology
 public import FLT.Mazur.PolygonCompleteLineHomExt
 public import FLT.Mazur.PolygonCompleteLineHomReconstruction
@@ -8424,6 +8429,8 @@ public import FLT.Mazur.PolygonCompleteStageMarkings
 public import FLT.Mazur.PolygonCompleteStageRotation
 public import FLT.Mazur.PolygonCompleteStructureCohomology
 public import FLT.Mazur.PolygonCompleteUniversalFunctions
+public import FLT.Mazur.PolygonCompleteWholeActionParameterCover
+public import FLT.Mazur.PolygonCompleteWholeActionRotatedCharts
 public import FLT.Mazur.PolygonCompleteZeroParameterFiber
 public import FLT.Mazur.PolygonComponentCoordinateScaling
 public import FLT.Mazur.PolygonComponentDistinct
