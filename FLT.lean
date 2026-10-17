@@ -5951,6 +5951,7 @@ public import FLT.Mazur.HilbertNormalizedAffineRefinement
 public import FLT.Mazur.HilbertNormalizedBoundaryAction
 public import FLT.Mazur.HilbertNormalizedBoundaryChartLifts
 public import FLT.Mazur.HilbertNormalizedBoundarySurjectivity
+public import FLT.Mazur.HilbertNormalizedChartBoundaryTests
 public import FLT.Mazur.HilbertNormalizedCompleteFiberSplit
 public import FLT.Mazur.HilbertNormalizedCompleteOrbits
 public import FLT.Mazur.HilbertNormalizedFrameAction
