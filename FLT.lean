@@ -7741,6 +7741,7 @@ public import FLT.Mazur.PolygonCompleteIdentityAdicNodeSections
 public import FLT.Mazur.PolygonCompleteIdentityAdicNodeSourceIso
 public import FLT.Mazur.PolygonCompleteIdentityAdicRefinedKernel
 public import FLT.Mazur.PolygonCompleteIdentityAdicRefinedPatches
+public import FLT.Mazur.PolygonCompleteIdentityAdicResidualLabels
 public import FLT.Mazur.PolygonCompleteIdentityAdicResidualSource
 public import FLT.Mazur.PolygonCompleteIdentityAdicSectionChartCoverage
 public import FLT.Mazur.PolygonCompleteIdentityAdicSectionEdges
