@@ -7947,6 +7947,7 @@ public import FLT.Mazur.PolygonCompleteIdentityTopGraphReduction
 public import FLT.Mazur.PolygonCompleteIdentityTopGraphScheme
 public import FLT.Mazur.PolygonCompleteIdentityTopGraphToChart
 public import FLT.Mazur.PolygonCompleteIdentityTopLinearization
+public import FLT.Mazur.PolygonCompleteIdentityTopLocalAffineErrors
 public import FLT.Mazur.PolygonCompleteIdentityTopNodeBoundary
 public import FLT.Mazur.PolygonCompleteIdentityTopNodePolynomials
 public import FLT.Mazur.PolygonCompleteIdentityTopObstruction
