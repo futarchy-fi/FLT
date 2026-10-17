@@ -5971,6 +5971,7 @@ public import FLT.Mazur.HilbertOrbitBoundaryFlatObstruction
 public import FLT.Mazur.HilbertOrbitBoundaryLinearSystem
 public import FLT.Mazur.HilbertOrbitBoundaryLocalCokernel
 public import FLT.Mazur.HilbertOrbitBoundaryLocalizedCorrections
+public import FLT.Mazur.HilbertOrbitBoundaryLocalizedErrors
 public import FLT.Mazur.HilbertOrbitBoundaryLocalizedMaps
 public import FLT.Mazur.HilbertOrbitBoundaryLocalizedMultipliers
 public import FLT.Mazur.HilbertOrbitBoundaryLocalizedNaturality
