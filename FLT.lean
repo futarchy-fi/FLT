@@ -8479,6 +8479,7 @@ public import FLT.Mazur.PolygonInfinitesimalMarkingEquations
 public import FLT.Mazur.PolygonInfinitesimalMarkingImageEquation
 public import FLT.Mazur.PolygonInfinitesimalMarkingRegular
 public import FLT.Mazur.PolygonInfinitesimalMarkings
+public import FLT.Mazur.PolygonInfinitesimalNodeChartUnique
 public import FLT.Mazur.PolygonInfinitesimalRestrictionKernel
 public import FLT.Mazur.PolygonInfinitesimalRotation
 public import FLT.Mazur.PolygonInfinitesimalRotationBaseChange
