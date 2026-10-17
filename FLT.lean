@@ -7092,6 +7092,7 @@ public import FLT.Mazur.OddWeierstrassAuxiliaryCubicProjection
 public import FLT.Mazur.OddWeierstrassAuxiliaryEtale
 public import FLT.Mazur.OddWeierstrassAuxiliaryFieldCoordinates
 public import FLT.Mazur.OddWeierstrassAuxiliaryFixedCoefficient
+public import FLT.Mazur.OddWeierstrassAuxiliaryFixedCoefficientComparison
 public import FLT.Mazur.OddWeierstrassAuxiliaryFrameUnits
 public import FLT.Mazur.OddWeierstrassAuxiliaryFullBasis
 public import FLT.Mazur.OddWeierstrassAuxiliaryGroupSourceNaturality
