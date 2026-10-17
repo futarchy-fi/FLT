@@ -3883,6 +3883,7 @@ public import FLT.Mazur.CompactSeparatedPushforward
 public import FLT.Mazur.ComparedStageSectionReconstruction
 public import FLT.Mazur.CompatibleErrorBaseChange
 public import FLT.Mazur.CompatibleSubgroupAmple
+public import FLT.Mazur.CompatibleSubgroupBaseChangeCoherence
 public import FLT.Mazur.CompatibleSubgroupBaseChangeCompEq
 public import FLT.Mazur.CompatibleSubgroupCyclic
 public import FLT.Mazur.CompatibleSubgroupGeneratorMarking
