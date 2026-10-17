@@ -12786,6 +12786,7 @@ public import FLT.Mazur.WeierstrassDividedRetainedZeroExteriorLine
 public import FLT.Mazur.WeierstrassDividedRetentionSuccessor
 public import FLT.Mazur.WeierstrassDividedSecondResidualFactors
 public import FLT.Mazur.WeierstrassDividedSecondResidualFields
+public import FLT.Mazur.WeierstrassDividedSecondResidualLifts
 public import FLT.Mazur.WeierstrassDividedShearContraction
 public import FLT.Mazur.WeierstrassDividedShearData
 public import FLT.Mazur.WeierstrassDividedShearExterior
