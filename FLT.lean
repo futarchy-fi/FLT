@@ -6118,6 +6118,7 @@ public import FLT.Mazur.HilbertPrincipalInvariantNorm
 public import FLT.Mazur.HilbertPrincipalLocalizationScalars
 public import FLT.Mazur.HilbertPrincipalNormAdmissible
 public import FLT.Mazur.HilbertPrincipalRestriction
+public import FLT.Mazur.HilbertProjectiveRelationPrincipalCoverage
 public import FLT.Mazur.HilbertProperNeighborhoodChart
 public import FLT.Mazur.HilbertQuotientDegreeBound
 public import FLT.Mazur.HilbertQuotientDegreeFiltration
