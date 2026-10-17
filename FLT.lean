@@ -6000,6 +6000,8 @@ public import FLT.Mazur.HilbertOrbitMixedBoundaryKernel
 public import FLT.Mazur.HilbertOrbitMixedBoundaryProjection
 public import FLT.Mazur.HilbertOrbitRelativeMixedConnecting
 public import FLT.Mazur.HilbertOrbitRelativeMixedError
+public import FLT.Mazur.HilbertOrbitRelativeReducedCorrections
+public import FLT.Mazur.HilbertOrbitRelativeReductionKernel
 public import FLT.Mazur.HilbertOrderedAffineEnvelope
 public import FLT.Mazur.HilbertOrderedOriginalBoundary
 public import FLT.Mazur.HilbertOrderedStableNeighborhood
@@ -7727,6 +7729,7 @@ public import FLT.Mazur.PolygonCompleteCartesianRotation
 public import FLT.Mazur.PolygonCompleteChartOperationCompatibility
 public import FLT.Mazur.PolygonCompleteChartOverlapField
 public import FLT.Mazur.PolygonCompleteClassifiedFibers
+public import FLT.Mazur.PolygonCompleteClosedActionProduct
 public import FLT.Mazur.PolygonCompleteClosedActionRotation
 public import FLT.Mazur.PolygonCompleteClosedCartierGenerator
 public import FLT.Mazur.PolygonCompleteClosedChartComparison
@@ -7736,6 +7739,9 @@ public import FLT.Mazur.PolygonCompleteClosedFiber
 public import FLT.Mazur.PolygonCompleteClosedFiniteSubgroup
 public import FLT.Mazur.PolygonCompleteClosedGenus
 public import FLT.Mazur.PolygonCompleteClosedH1Scalars
+public import FLT.Mazur.PolygonCompleteClosedLaurentAction
+public import FLT.Mazur.PolygonCompleteClosedLaurentProduct
+public import FLT.Mazur.PolygonCompleteClosedParameterReduction
 public import FLT.Mazur.PolygonCompleteClosedPointAcyclic
 public import FLT.Mazur.PolygonCompleteClosedPointCohomology
 public import FLT.Mazur.PolygonCompleteClosedPointLineComparison
@@ -7744,6 +7750,7 @@ public import FLT.Mazur.PolygonCompleteClosedSingularPoints
 public import FLT.Mazur.PolygonCompleteClosedSmoothLocus
 public import FLT.Mazur.PolygonCompleteClosedSmoothSquare
 public import FLT.Mazur.PolygonCompleteClosedSpecialization
+public import FLT.Mazur.PolygonCompleteClosedSplitParameter
 public import FLT.Mazur.PolygonCompleteCoefficientAdicComparison
 public import FLT.Mazur.PolygonCompleteCoefficientAmple
 public import FLT.Mazur.PolygonCompleteCoefficientCoherence
@@ -9051,6 +9058,7 @@ public import FLT.Mazur.PolygonTranslationNormalizationLine
 public import FLT.Mazur.PolygonTranslationReflectionLine
 public import FLT.Mazur.PolygonUniversalAction
 public import FLT.Mazur.PolygonUniversalEdgeAlgebra
+public import FLT.Mazur.PolygonUniversalEdgeGroupLaw
 public import FLT.Mazur.PolygonUniversalNodeRestriction
 public import FLT.Mazur.PolygonUniversalScaling
 public import FLT.Mazur.PolygonVeroneseAdicProjSquare
@@ -9836,6 +9844,8 @@ public import FLT.Mazur.RelativeAmpleProper
 public import FLT.Mazur.RelativeAmpleRestriction
 public import FLT.Mazur.RelativeAmpleSectionComparison
 public import FLT.Mazur.RelativeBoundaryConnectingMap
+public import FLT.Mazur.RelativeBoundaryReducedCorrections
+public import FLT.Mazur.RelativeBoundaryReductionAbsorption
 public import FLT.Mazur.RelativeCartier
 public import FLT.Mazur.RelativeCartierBaseChange
 public import FLT.Mazur.RelativeCartierBaseChangeComposition
@@ -10040,6 +10050,7 @@ public import FLT.Mazur.RelativePoleComplementFunctions
 public import FLT.Mazur.RelativePoleComplementLinear
 public import FLT.Mazur.RelativeRankOneDivisorUniqueness
 public import FLT.Mazur.RelativeRankStratumThickenings
+public import FLT.Mazur.RelativeReductionKernelAbsorption
 public import FLT.Mazur.RelativeRelationArrowCalculus
 public import FLT.Mazur.RelativeRelationClosedObstruction
 public import FLT.Mazur.RelativeRelationClosedSections
@@ -11031,6 +11042,7 @@ public import FLT.Mazur.StructureImageOpenChart
 public import FLT.Mazur.StructureModuleScalarTransitions
 public import FLT.Mazur.StructureRingCohomologyIso
 public import FLT.Mazur.SubfunctorRepresentedPullback
+public import FLT.Mazur.SubmoduleQuotientScalarReduction
 public import FLT.Mazur.SubmoduleReductionFlat
 public import FLT.Mazur.SubmoduleReductionKernel
 public import FLT.Mazur.SuccessiveIncidenceAlgebra
