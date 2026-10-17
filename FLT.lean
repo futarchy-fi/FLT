@@ -10979,6 +10979,7 @@ public import FLT.Mazur.StructureImageOpenChart
 public import FLT.Mazur.StructureModuleScalarTransitions
 public import FLT.Mazur.StructureRingCohomologyIso
 public import FLT.Mazur.SubfunctorRepresentedPullback
+public import FLT.Mazur.SubmoduleReductionKernel
 public import FLT.Mazur.SuccessiveIncidenceAlgebra
 public import FLT.Mazur.SuccessiveIncidenceCoefficientMap
 public import FLT.Mazur.SuccessiveIncidenceLaurentRestriction
