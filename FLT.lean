@@ -12532,6 +12532,7 @@ public import FLT.Mazur.WeierstrassDividedFourthOuterNodes
 public import FLT.Mazur.WeierstrassDividedFourthOuterPreceding
 public import FLT.Mazur.WeierstrassDividedFourthOuterRestriction
 public import FLT.Mazur.WeierstrassDividedFourthOuterTransitions
+public import FLT.Mazur.WeierstrassDividedFourthOuterUnchanged
 public import FLT.Mazur.WeierstrassDividedFourthPunctureIdentification
 public import FLT.Mazur.WeierstrassDividedFourthResidualAlgebra
 public import FLT.Mazur.WeierstrassDividedFourthResidualFields
