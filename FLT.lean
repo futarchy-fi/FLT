@@ -8425,6 +8425,7 @@ public import FLT.Mazur.PolygonCompleteStructureCohomology
 public import FLT.Mazur.PolygonCompleteUniversalFunctions
 public import FLT.Mazur.PolygonCompleteWholeAction
 public import FLT.Mazur.PolygonCompleteWholeActionChartCompatibility
+public import FLT.Mazur.PolygonCompleteWholeActionCyclic
 public import FLT.Mazur.PolygonCompleteWholeActionEvaluation
 public import FLT.Mazur.PolygonCompleteWholeActionLaws
 public import FLT.Mazur.PolygonCompleteWholeActionParameterCover
