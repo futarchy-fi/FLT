@@ -8697,6 +8697,7 @@ public import FLT.Mazur.PolygonNodeDimension
 public import FLT.Mazur.PolygonNodeEqualizer
 public import FLT.Mazur.PolygonNodeEqualizerComparison
 public import FLT.Mazur.PolygonNodeEvaluation
+public import FLT.Mazur.PolygonNodeIdealSheafDetection
 public import FLT.Mazur.PolygonNodeIncidence
 public import FLT.Mazur.PolygonNodeLaurentPoints
 public import FLT.Mazur.PolygonNodeLocalSourceLift
