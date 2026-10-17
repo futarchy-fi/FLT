@@ -7893,6 +7893,7 @@ public import FLT.Mazur.PolygonCompleteIdentityOrderZeroLaw
 public import FLT.Mazur.PolygonCompleteIdentityPointCocycle
 public import FLT.Mazur.PolygonCompleteIdentityPointDefect
 public import FLT.Mazur.PolygonCompleteIdentitySecondCorrection
+public import FLT.Mazur.PolygonCompleteIdentitySecondGraphFlat
 public import FLT.Mazur.PolygonCompleteIdentitySecondResidualSocle
 public import FLT.Mazur.PolygonCompleteIdentitySmoothAction
 public import FLT.Mazur.PolygonCompleteIdentitySmoothActionCoordinates
