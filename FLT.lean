@@ -7932,6 +7932,7 @@ public import FLT.Mazur.PolygonCompleteIdentityTopChartResidualGenerators
 public import FLT.Mazur.PolygonCompleteIdentityTopChartResidualPresentation
 public import FLT.Mazur.PolygonCompleteIdentityTopChartScalars
 public import FLT.Mazur.PolygonCompleteIdentityTopChartSocleKernel
+public import FLT.Mazur.PolygonCompleteIdentityTopChartSocleVanishing
 public import FLT.Mazur.PolygonCompleteIdentityTopChartSourceFunctions
 public import FLT.Mazur.PolygonCompleteIdentityTopCorrection
 public import FLT.Mazur.PolygonCompleteIdentityTopDefect
