@@ -3534,6 +3534,7 @@ public import FLT.Mazur.BoundaryCorrectionFlatDescent
 public import FLT.Mazur.BoundaryCorrectionFlatReconstruction
 public import FLT.Mazur.BoundaryCorrectionIdeal
 public import FLT.Mazur.BoundaryCorrectionLinearSystem
+public import FLT.Mazur.BoundaryCorrectionTensorCoordinates
 public import FLT.Mazur.BoundedFlatAcyclicNeighborhood
 public import FLT.Mazur.BoundedFlatAcyclicOpen
 public import FLT.Mazur.BoundedFlatFiberVanishing
