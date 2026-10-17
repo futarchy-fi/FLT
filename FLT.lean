@@ -7116,6 +7116,7 @@ public import FLT.Mazur.OddWeierstrassAuxiliaryNormalizationFixedGroup
 public import FLT.Mazur.OddWeierstrassAuxiliaryNormalizationInvariant
 public import FLT.Mazur.OddWeierstrassAuxiliaryNormalizationNatural
 public import FLT.Mazur.OddWeierstrassAuxiliaryNormalizationRigidity
+public import FLT.Mazur.OddWeierstrassAuxiliaryNormalizedAction
 public import FLT.Mazur.OddWeierstrassAuxiliaryNormalizedFrame
 public import FLT.Mazur.OddWeierstrassAuxiliaryNormalizedIsomorphism
 public import FLT.Mazur.OddWeierstrassAuxiliaryNormalizedSections
