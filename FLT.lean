@@ -5934,6 +5934,7 @@ public import FLT.Mazur.HilbertOrbitBoundaryFiniteLifts
 public import FLT.Mazur.HilbertOrbitBoundaryFiniteMultipliers
 public import FLT.Mazur.HilbertOrbitBoundaryFiniteOriginalLift
 public import FLT.Mazur.HilbertOrbitBoundaryFiniteProducts
+public import FLT.Mazur.HilbertOrbitBoundaryFiniteReduction
 public import FLT.Mazur.HilbertOrbitBoundaryFiniteScalars
 public import FLT.Mazur.HilbertOrbitBoundaryLinearSystem
 public import FLT.Mazur.HilbertOrbitBoundaryLocalizedCorrections
