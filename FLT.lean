@@ -10408,6 +10408,7 @@ public import FLT.Mazur.RelativeUniversalDistinctLift
 public import FLT.Mazur.RelativeVeryAmpleLineBundle
 public import FLT.Mazur.RepeatedCubicRoots
 public import FLT.Mazur.ResidualProductExtension
+public import FLT.Mazur.ResidualProductLinearExtension
 public import FLT.Mazur.ResidualStrictCoefficientGenerizations
 public import FLT.Mazur.ResidueCoordinateDenominators
 public import FLT.Mazur.ResidueFiberRegularLocalization
