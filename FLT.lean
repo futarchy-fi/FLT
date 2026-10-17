@@ -12471,6 +12471,7 @@ public import FLT.Mazur.WeierstrassDividedFourthGeometry
 public import FLT.Mazur.WeierstrassDividedFourthIncomingCancellation
 public import FLT.Mazur.WeierstrassDividedFourthInitialCancellation
 public import FLT.Mazur.WeierstrassDividedFourthInitialFields
+public import FLT.Mazur.WeierstrassDividedFourthInitialFifthOrder
 public import FLT.Mazur.WeierstrassDividedFourthInitialNodes
 public import FLT.Mazur.WeierstrassDividedFourthInitialRestriction
 public import FLT.Mazur.WeierstrassDividedFourthJointFields
