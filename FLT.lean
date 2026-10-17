@@ -7954,6 +7954,7 @@ public import FLT.Mazur.PolygonCompleteIdentityTopLocalSocleMembership
 public import FLT.Mazur.PolygonCompleteIdentityTopNodeBoundary
 public import FLT.Mazur.PolygonCompleteIdentityTopNodePolynomials
 public import FLT.Mazur.PolygonCompleteIdentityTopObstruction
+public import FLT.Mazur.PolygonCompleteIdentityTopObstructionBoundary
 public import FLT.Mazur.PolygonCompleteIdentityTopObstructionCocycle
 public import FLT.Mazur.PolygonCompleteIdentityTopPointCocycle
 public import FLT.Mazur.PolygonCompleteIdentityTopPolePatchGeometry
