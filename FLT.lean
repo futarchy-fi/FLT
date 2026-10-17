@@ -3770,6 +3770,9 @@ public import FLT.Mazur.ClosedProjectiveSerreVanishing
 public import FLT.Mazur.ClosedPushforwardCohomology
 public import FLT.Mazur.ClosedPushforwardFull
 public import FLT.Mazur.ClosedPushforwardRestriction
+public import FLT.Mazur.ClosedRelationGeneratorBoundaryEquality
+public import FLT.Mazur.ClosedRelationGeneratorImages
+public import FLT.Mazur.ClosedRelationGeneratorSections
 public import FLT.Mazur.ClosedRelationOrbitEmbedding
 public import FLT.Mazur.ClosedSubschemeCohomology
 public import FLT.Mazur.ClosedSubsets
@@ -5949,6 +5952,7 @@ public import FLT.Mazur.HilbertNormalizedAffineRefinement
 public import FLT.Mazur.HilbertNormalizedBoundaryAction
 public import FLT.Mazur.HilbertNormalizedBoundaryChartLifts
 public import FLT.Mazur.HilbertNormalizedBoundarySurjectivity
+public import FLT.Mazur.HilbertNormalizedChartBoundaryTests
 public import FLT.Mazur.HilbertNormalizedCompleteFiberSplit
 public import FLT.Mazur.HilbertNormalizedCompleteOrbits
 public import FLT.Mazur.HilbertNormalizedFrameAction
@@ -6108,7 +6112,11 @@ public import FLT.Mazur.HilbertSupportOpenPullback
 public import FLT.Mazur.HilbertTruncatedIdealDetection
 public import FLT.Mazur.HilbertTruncatedIdealGeneration
 public import FLT.Mazur.HilbertTupleBasisTower
+public import FLT.Mazur.HilbertUniformOriginalFiniteLifts
+public import FLT.Mazur.HilbertUniformOriginalLiftingOpen
+public import FLT.Mazur.HilbertUniformSourceBoundaryDescent
 public import FLT.Mazur.HilbertUniformSourceOriginalSections
+public import FLT.Mazur.HilbertUniformSourcePrincipalMultipliers
 public import FLT.Mazur.HilbertUniversalComplementMatrix
 public import FLT.Mazur.HilbertUniversalFrameRebase
 public import FLT.Mazur.HomIntegerModel
@@ -10223,6 +10231,7 @@ public import FLT.Mazur.RelativeRelationOpenSaturation
 public import FLT.Mazur.RelativeRelationOpenSourceFunctions
 public import FLT.Mazur.RelativeRelationOrbit
 public import FLT.Mazur.RelativeRelationOrbitCoequalizer
+public import FLT.Mazur.RelativeRelationOrbitFunctionRestriction
 public import FLT.Mazur.RelativeRelationOrbitOpens
 public import FLT.Mazur.RelativeRelationOrbitTopology
 public import FLT.Mazur.RelativeRelationPointDenominators
