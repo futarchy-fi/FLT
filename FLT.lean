@@ -7073,6 +7073,7 @@ public import FLT.Mazur.OccurrenceQuotientInverseStages
 public import FLT.Mazur.OddWeierstrassAffineMarking
 public import FLT.Mazur.OddWeierstrassAuxiliaryAffineSections
 public import FLT.Mazur.OddWeierstrassAuxiliaryCoefficientNaturality
+public import FLT.Mazur.OddWeierstrassAuxiliaryCoordinateExt
 public import FLT.Mazur.OddWeierstrassAuxiliaryCoordinateInverse
 public import FLT.Mazur.OddWeierstrassAuxiliaryCoordinateSections
 public import FLT.Mazur.OddWeierstrassAuxiliaryCoordinateUnits
