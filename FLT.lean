@@ -12486,6 +12486,7 @@ public import FLT.Mazur.WeierstrassDividedFifthShallowJointGeometry
 public import FLT.Mazur.WeierstrassDividedFifthShallowJointNodes
 public import FLT.Mazur.WeierstrassDividedFifthShallowJointRestriction
 public import FLT.Mazur.WeierstrassDividedFifthShallowLayerFields
+public import FLT.Mazur.WeierstrassDividedFifthShallowNodeRestriction
 public import FLT.Mazur.WeierstrassDividedFifthShallowNodes
 public import FLT.Mazur.WeierstrassDividedFifthShallowPunctureIdentification
 public import FLT.Mazur.WeierstrassDividedFifthShallowRelativeSixthOrder
