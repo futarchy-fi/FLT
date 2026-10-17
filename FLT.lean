@@ -3944,6 +3944,7 @@ public import FLT.Mazur.CyclicCharacteristicAtlas
 public import FLT.Mazur.CyclicCharacteristicAtlasCoverage
 public import FLT.Mazur.CyclicCharacteristicAtlasCoverageUnrestricted
 public import FLT.Mazur.CyclicCharacteristicAtlasModuli
+public import FLT.Mazur.CyclicCharacteristicAtlasRelabel
 public import FLT.Mazur.CyclicDivisorSubgroupCriterion
 public import FLT.Mazur.CyclicHomAffinePresentationInvariant
 public import FLT.Mazur.CyclicHomAuxiliaryScheme
@@ -3994,6 +3995,7 @@ public import FLT.Mazur.CyclicHomNormalizedRelabelModuli
 public import FLT.Mazur.CyclicHomProperPresentationInvariant
 public import FLT.Mazur.CyclicHomRelabelAuxiliaryMarking
 public import FLT.Mazur.CyclicHomRelabelCurve
+public import FLT.Mazur.CyclicHomRelabelLine
 public import FLT.Mazur.CyclicHomRelabelNormalization
 public import FLT.Mazur.CyclicHomRelabelParameter
 public import FLT.Mazur.CyclicHomRelabelSubgroup
@@ -7078,6 +7080,8 @@ public import FLT.Mazur.OddWeierstrassAuxiliaryLevel
 public import FLT.Mazur.OddWeierstrassAuxiliaryNormalEquation
 public import FLT.Mazur.OddWeierstrassAuxiliaryNormalizationNatural
 public import FLT.Mazur.OddWeierstrassAuxiliaryPullbackSections
+public import FLT.Mazur.OddWeierstrassAuxiliarySchemeGroupComparison
+public import FLT.Mazur.OddWeierstrassAuxiliarySchemeRelativePoint
 public import FLT.Mazur.OddWeierstrassAuxiliaryTorsionCover
 public import FLT.Mazur.OddWeierstrassAuxiliaryTorsionDisjoint
 public import FLT.Mazur.OddWeierstrassAuxiliaryTorsionSections
@@ -7094,12 +7098,19 @@ public import FLT.Mazur.OddWeierstrassCyclicHomDivisorProductPullback
 public import FLT.Mazur.OddWeierstrassCyclicHomDivisorPullback
 public import FLT.Mazur.OddWeierstrassCyclicHomLocusEquationUniversal
 public import FLT.Mazur.OddWeierstrassCyclicHomLocusFppfCoverage
+public import FLT.Mazur.OddWeierstrassCyclicHomLocusRelabel
+public import FLT.Mazur.OddWeierstrassCyclicHomLocusRelabelAction
 public import FLT.Mazur.OddWeierstrassCyclicHomMultiplicationEquation
 public import FLT.Mazur.OddWeierstrassCyclicHomMultiplicationLocus
 public import FLT.Mazur.OddWeierstrassCyclicHomMultiplicationLocusUniversal
 public import FLT.Mazur.OddWeierstrassCyclicHomMultiplicationPullback
 public import FLT.Mazur.OddWeierstrassCyclicHomNormalizedCoverage
 public import FLT.Mazur.OddWeierstrassCyclicHomNormalizedCoverageUnrestricted
+public import FLT.Mazur.OddWeierstrassCyclicHomRelabelAuxiliary
+public import FLT.Mazur.OddWeierstrassCyclicHomRelabelCurve
+public import FLT.Mazur.OddWeierstrassCyclicHomRelabelLine
+public import FLT.Mazur.OddWeierstrassCyclicHomRelabelParameter
+public import FLT.Mazur.OddWeierstrassCyclicHomRelabelSubgroup
 public import FLT.Mazur.OddWeierstrassCyclicHomRetainedPullback
 public import FLT.Mazur.OddWeierstrassCyclicHomSourceDivisor
 public import FLT.Mazur.OddWeierstrassCyclicHomSourceIdealPullback
