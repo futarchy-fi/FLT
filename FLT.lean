@@ -7967,6 +7967,7 @@ public import FLT.Mazur.PolygonCompleteGenericRelativeDimension
 public import FLT.Mazur.PolygonCompleteGenericSmooth
 public import FLT.Mazur.PolygonCompleteGenusOneFamily
 public import FLT.Mazur.PolygonCompleteGeometricGenericFiber
+public import FLT.Mazur.PolygonCompleteGeometricRotations
 public import FLT.Mazur.PolygonCompleteGeometricallyConnected
 public import FLT.Mazur.PolygonCompleteGeometricallyReduced
 public import FLT.Mazur.PolygonCompleteH1Rank
