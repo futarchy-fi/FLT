@@ -7171,6 +7171,7 @@ public import FLT.Mazur.OddWeierstrassCyclicHomNormalizedCoverage
 public import FLT.Mazur.OddWeierstrassCyclicHomNormalizedCoverageUnrestricted
 public import FLT.Mazur.OddWeierstrassCyclicHomNormalizedCubicValue
 public import FLT.Mazur.OddWeierstrassCyclicHomNormalizedLocus
+public import FLT.Mazur.OddWeierstrassCyclicHomNormalizedLocusSlice
 public import FLT.Mazur.OddWeierstrassCyclicHomNormalizedModuli
 public import FLT.Mazur.OddWeierstrassCyclicHomNormalizedRelabelAction
 public import FLT.Mazur.OddWeierstrassCyclicHomNormalizedRelabelModuli
