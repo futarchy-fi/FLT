@@ -12636,6 +12636,7 @@ public import FLT.Mazur.WeierstrassDividedFifthFartherAtlasIncoming
 public import FLT.Mazur.WeierstrassDividedFifthFartherAtlasRestriction
 public import FLT.Mazur.WeierstrassDividedFifthFartherAtlasSystem
 public import FLT.Mazur.WeierstrassDividedFifthFartherCancellation
+public import FLT.Mazur.WeierstrassDividedFifthFartherEndIdentification
 public import FLT.Mazur.WeierstrassDividedFifthFartherFields
 public import FLT.Mazur.WeierstrassDividedFifthFartherGeometry
 public import FLT.Mazur.WeierstrassDividedFifthFartherIdentification
