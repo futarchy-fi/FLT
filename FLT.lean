@@ -8728,6 +8728,7 @@ public import FLT.Mazur.PolygonSmoothingSingularSupport
 public import FLT.Mazur.PolygonSmoothingSpecialBranches
 public import FLT.Mazur.PolygonSmoothingSpecialFiber
 public import FLT.Mazur.PolygonSmoothingSquareZeroEdgeFactors
+public import FLT.Mazur.PolygonSmoothingSquareZeroFactorIndependence
 public import FLT.Mazur.PolygonSmoothingSquareZeroLiftConstraint
 public import FLT.Mazur.PolygonSmoothingSquareZeroShear
 public import FLT.Mazur.PolygonSmoothingSquareZeroShearBoundary
