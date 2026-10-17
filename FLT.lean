@@ -3770,6 +3770,7 @@ public import FLT.Mazur.ClosedProjectiveSerreVanishing
 public import FLT.Mazur.ClosedPushforwardCohomology
 public import FLT.Mazur.ClosedPushforwardFull
 public import FLT.Mazur.ClosedPushforwardRestriction
+public import FLT.Mazur.ClosedRelationGeneratorImages
 public import FLT.Mazur.ClosedRelationOrbitEmbedding
 public import FLT.Mazur.ClosedSubschemeCohomology
 public import FLT.Mazur.ClosedSubsets
