@@ -7101,6 +7101,7 @@ public import FLT.Mazur.OddWeierstrassAuxiliaryNormalEquation
 public import FLT.Mazur.OddWeierstrassAuxiliaryNormalizationCubic
 public import FLT.Mazur.OddWeierstrassAuxiliaryNormalizationFixedGroup
 public import FLT.Mazur.OddWeierstrassAuxiliaryNormalizationNatural
+public import FLT.Mazur.OddWeierstrassAuxiliaryNormalizedSections
 public import FLT.Mazur.OddWeierstrassAuxiliaryProperNaturality
 public import FLT.Mazur.OddWeierstrassAuxiliaryPullbackSections
 public import FLT.Mazur.OddWeierstrassAuxiliarySchemeBaseNaturality
