@@ -12482,6 +12482,7 @@ public import FLT.Mazur.WeierstrassDividedFifthShallowCancellation
 public import FLT.Mazur.WeierstrassDividedFifthShallowFields
 public import FLT.Mazur.WeierstrassDividedFifthShallowGeometry
 public import FLT.Mazur.WeierstrassDividedFifthShallowIncomingCancellation
+public import FLT.Mazur.WeierstrassDividedFifthShallowJointAtlasRestriction
 public import FLT.Mazur.WeierstrassDividedFifthShallowJointFields
 public import FLT.Mazur.WeierstrassDividedFifthShallowJointGeometry
 public import FLT.Mazur.WeierstrassDividedFifthShallowJointNodeRestriction
