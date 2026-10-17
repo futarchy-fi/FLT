@@ -12690,6 +12690,7 @@ public import FLT.Mazur.WeierstrassDividedTerminalBoundaryAlgebra
 public import FLT.Mazur.WeierstrassDividedTerminalBoundaryExtension
 public import FLT.Mazur.WeierstrassDividedTerminalBranchIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalBranchesNodeIntersection
+public import FLT.Mazur.WeierstrassDividedTerminalChangedAttachment
 public import FLT.Mazur.WeierstrassDividedTerminalChangedCoefficientTests
 public import FLT.Mazur.WeierstrassDividedTerminalChangedRestriction
 public import FLT.Mazur.WeierstrassDividedTerminalChangedSmoothing
