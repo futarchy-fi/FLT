@@ -12815,6 +12815,7 @@ public import FLT.Mazur.WeierstrassDividedRetainedPuncturePreimage
 public import FLT.Mazur.WeierstrassDividedRetainedZeroExteriorLine
 public import FLT.Mazur.WeierstrassDividedRetentionSuccessor
 public import FLT.Mazur.WeierstrassDividedSecondJointFields
+public import FLT.Mazur.WeierstrassDividedSecondJointGeometry
 public import FLT.Mazur.WeierstrassDividedSecondJointIdentification
 public import FLT.Mazur.WeierstrassDividedSecondJointResiduals
 public import FLT.Mazur.WeierstrassDividedSecondJointRestriction
