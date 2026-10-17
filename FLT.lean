@@ -8410,6 +8410,7 @@ public import FLT.Mazur.PolygonCompleteNodeStalkCompletion
 public import FLT.Mazur.PolygonCompleteNodeStalkEvaluation
 public import FLT.Mazur.PolygonCompleteNodeStalkH1Equiv
 public import FLT.Mazur.PolygonCompleteNodeStalkMap
+public import FLT.Mazur.PolygonCompleteOriginalCyclicHom
 public import FLT.Mazur.PolygonCompleteOriginalSectionReconstruction
 public import FLT.Mazur.PolygonCompleteParameterBaseChange
 public import FLT.Mazur.PolygonCompleteParameterLineBaseChange
