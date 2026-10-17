@@ -4738,6 +4738,7 @@ public import FLT.Mazur.EquivalenceRelationOpenChartScalars
 public import FLT.Mazur.EquivalenceRelationRankInterior
 public import FLT.Mazur.EquivalenceRelationRankStratumCover
 public import FLT.Mazur.EquivalenceRelationResidualAdicIdeal
+public import FLT.Mazur.EquivalenceRelationResidualBranchDecomposition
 public import FLT.Mazur.EquivalenceRelationResidualCoefficientEquations
 public import FLT.Mazur.EquivalenceRelationResidualPermutationOpen
 public import FLT.Mazur.EquivalenceRelationRestrictedActionGraphs
