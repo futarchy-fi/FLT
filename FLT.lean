@@ -13070,6 +13070,7 @@ public import FLT.Mazur.WeierstrassDividedThirdInitialAtlas
 public import FLT.Mazur.WeierstrassDividedThirdInitialAtlasEdge
 public import FLT.Mazur.WeierstrassDividedThirdInitialAtlasRestriction
 public import FLT.Mazur.WeierstrassDividedThirdInitialAtlasSystem
+public import FLT.Mazur.WeierstrassDividedThirdInitialCancellation
 public import FLT.Mazur.WeierstrassDividedThirdInitialGeometry
 public import FLT.Mazur.WeierstrassDividedThirdInitialResidualAlgebra
 public import FLT.Mazur.WeierstrassDividedThirdInitialRestriction
