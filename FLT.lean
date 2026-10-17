@@ -8755,6 +8755,7 @@ public import FLT.Mazur.PolygonSmoothingMarkingIdealSheaf
 public import FLT.Mazur.PolygonSmoothingNilpotentBoundaryFactor
 public import FLT.Mazur.PolygonSmoothingNilpotentBranches
 public import FLT.Mazur.PolygonSmoothingNilpotentPunctureEquiv
+public import FLT.Mazur.PolygonSmoothingNilpotentPunctureNaturality
 public import FLT.Mazur.PolygonSmoothingNilpotentShear
 public import FLT.Mazur.PolygonSmoothingNilpotentShearNaturality
 public import FLT.Mazur.PolygonSmoothingNilpotentShearPunctures
