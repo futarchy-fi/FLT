@@ -9879,6 +9879,7 @@ public import FLT.Mazur.RelativeCompleteFrameComparison
 public import FLT.Mazur.RelativeCompleteFrameFiberIso
 public import FLT.Mazur.RelativeCompleteGeometricTuple
 public import FLT.Mazur.RelativeCompleteSubframe
+public import FLT.Mazur.RelativeConnectingFiniteLocalWitness
 public import FLT.Mazur.RelativeConnectingImagePreimage
 public import FLT.Mazur.RelativeConnectingImageReduction
 public import FLT.Mazur.RelativeCoproductComponentPullback
