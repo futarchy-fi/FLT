@@ -9680,6 +9680,7 @@ public import FLT.Mazur.QuotientChartComparison
 public import FLT.Mazur.QuotientConnectedComponentDescent
 public import FLT.Mazur.QuotientRefinementCoherence
 public import FLT.Mazur.QuotientRelativeDerivation
+public import FLT.Mazur.QuotientSpectrumBaseChange
 public import FLT.Mazur.RankOneAmbientLineClassification
 public import FLT.Mazur.RankOneDirectImageSection
 public import FLT.Mazur.RankOneSectionDivisorUniqueness
