@@ -7116,6 +7116,7 @@ public import FLT.Mazur.OddWeierstrassAuxiliarySchemeMarkingSections
 public import FLT.Mazur.OddWeierstrassAuxiliarySchemeNormalizationFixed
 public import FLT.Mazur.OddWeierstrassAuxiliarySchemeNormalizationMarking
 public import FLT.Mazur.OddWeierstrassAuxiliarySchemeNormalizationNaturality
+public import FLT.Mazur.OddWeierstrassAuxiliarySchemeNormalizedCoordinates
 public import FLT.Mazur.OddWeierstrassAuxiliarySchemeRelativePoint
 public import FLT.Mazur.OddWeierstrassAuxiliarySourceMap
 public import FLT.Mazur.OddWeierstrassAuxiliaryTorsionCover
