@@ -9053,6 +9053,7 @@ public import FLT.Mazur.PolygonTranslationNormalizationLine
 public import FLT.Mazur.PolygonTranslationReflectionLine
 public import FLT.Mazur.PolygonUniversalAction
 public import FLT.Mazur.PolygonUniversalEdgeAlgebra
+public import FLT.Mazur.PolygonUniversalEdgeGroupLaw
 public import FLT.Mazur.PolygonUniversalNodeRestriction
 public import FLT.Mazur.PolygonUniversalScaling
 public import FLT.Mazur.PolygonVeroneseAdicProjSquare
