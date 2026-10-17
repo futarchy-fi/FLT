@@ -3726,6 +3726,7 @@ public import FLT.Mazur.ClosedDescentGluingMaps
 public import FLT.Mazur.ClosedDescentOverlapCoherence
 public import FLT.Mazur.ClosedDirectImageAcyclic
 public import FLT.Mazur.ClosedDirectImageComposition
+public import FLT.Mazur.ClosedFiberAffineNeighborhood
 public import FLT.Mazur.ClosedFiberTensorExactness
 public import FLT.Mazur.ClosedGroupIdealGroup
 public import FLT.Mazur.ClosedGroupIdealOperations
