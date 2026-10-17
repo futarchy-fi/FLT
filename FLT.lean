@@ -7900,6 +7900,7 @@ public import FLT.Mazur.PolygonCompleteClosedCyclicAction
 public import FLT.Mazur.PolygonCompleteClosedCyclicGroup
 public import FLT.Mazur.PolygonCompleteClosedFiber
 public import FLT.Mazur.PolygonCompleteClosedFiniteSubgroup
+public import FLT.Mazur.PolygonCompleteClosedGeneratorIso
 public import FLT.Mazur.PolygonCompleteClosedGenus
 public import FLT.Mazur.PolygonCompleteClosedH1Scalars
 public import FLT.Mazur.PolygonCompleteClosedLaurentAction
