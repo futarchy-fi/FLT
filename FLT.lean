@@ -6457,6 +6457,7 @@ public import FLT.Mazur.LaurentPairUniversalUnits
 public import FLT.Mazur.LaurentPositivePart
 public import FLT.Mazur.LaurentReciprocalErrorConjugation
 public import FLT.Mazur.LaurentReciprocalFiniteLifts
+public import FLT.Mazur.LaurentReciprocalRelativeCorrection
 public import FLT.Mazur.LaurentReciprocalSubstitution
 public import FLT.Mazur.LaurentRingSurjectivity
 public import FLT.Mazur.LaurentScaledCoordinateIsomorphisms
