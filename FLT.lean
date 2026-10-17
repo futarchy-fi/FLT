@@ -13771,6 +13771,7 @@ public import FLT.Mazur.WeierstrassDividedZeroFirstAtlas
 public import FLT.Mazur.WeierstrassDividedZeroFirstAtlasClosing
 public import FLT.Mazur.WeierstrassDividedZeroFirstAtlasIdentification
 public import FLT.Mazur.WeierstrassDividedZeroFirstAtlasInitial
+public import FLT.Mazur.WeierstrassDividedZeroFirstAtlasRestriction
 public import FLT.Mazur.WeierstrassDividedZeroFirstAtlasSystem
 public import FLT.Mazur.WeierstrassDividedZeroFirstCancellation
 public import FLT.Mazur.WeierstrassDividedZeroFirstFields
