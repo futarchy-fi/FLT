@@ -6610,6 +6610,7 @@ public import FLT.Mazur.LocalizedCotangentFieldRank
 public import FLT.Mazur.LocalizedFiniteObstruction
 public import FLT.Mazur.LocalizedHomologyComparison
 public import FLT.Mazur.LocalizedIdealOverlapMembership
+public import FLT.Mazur.LocalizedImageFiniteWitness
 public import FLT.Mazur.LocalizedIntegerChartComparison
 public import FLT.Mazur.LocalizedIntegerComparisonTransport
 public import FLT.Mazur.LocalizedIntegerModelIsomorphism
