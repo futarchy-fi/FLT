@@ -3533,6 +3533,7 @@ public import FLT.Mazur.BoundaryCorrectionAdicAmbient
 public import FLT.Mazur.BoundaryCorrectionAdicCertificate
 public import FLT.Mazur.BoundaryCorrectionAmbientEquations
 public import FLT.Mazur.BoundaryCorrectionFaithfulCoefficients
+public import FLT.Mazur.BoundaryCorrectionFiniteReduction
 public import FLT.Mazur.BoundaryCorrectionFlatDescent
 public import FLT.Mazur.BoundaryCorrectionFlatReconstruction
 public import FLT.Mazur.BoundaryCorrectionIdeal
