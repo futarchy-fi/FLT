@@ -5997,6 +5997,7 @@ public import FLT.Mazur.HilbertOrbitBoundaryScaledMultipliers
 public import FLT.Mazur.HilbertOrbitBoundarySectionErrorSpan
 public import FLT.Mazur.HilbertOrbitBoundarySourceErrorCriterion
 public import FLT.Mazur.HilbertOrbitMixedBoundaryKernel
+public import FLT.Mazur.HilbertOrbitMixedBoundaryProjection
 public import FLT.Mazur.HilbertOrbitRelativeMixedConnecting
 public import FLT.Mazur.HilbertOrbitRelativeMixedError
 public import FLT.Mazur.HilbertOrderedAffineEnvelope
