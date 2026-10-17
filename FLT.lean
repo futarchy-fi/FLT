@@ -3559,6 +3559,7 @@ public import FLT.Mazur.BoundaryCorrectionLocalReduction
 public import FLT.Mazur.BoundaryCorrectionLocalizedVanishing
 public import FLT.Mazur.BoundaryCorrectionMixedBaseChange
 public import FLT.Mazur.BoundaryCorrectionMixedCokernel
+public import FLT.Mazur.BoundaryCorrectionMixedNumerators
 public import FLT.Mazur.BoundaryCorrectionOperatorIndependence
 public import FLT.Mazur.BoundaryCorrectionReductionCertificate
 public import FLT.Mazur.BoundaryCorrectionTensorCoordinates
@@ -4695,6 +4696,7 @@ public import FLT.Mazur.EquivalenceRelationChartFamilyCorrections
 public import FLT.Mazur.EquivalenceRelationChartFamilyLifts
 public import FLT.Mazur.EquivalenceRelationChartFamilyLocalization
 public import FLT.Mazur.EquivalenceRelationChartFamilyRestriction
+public import FLT.Mazur.EquivalenceRelationChartKernelDiscrepancy
 public import FLT.Mazur.EquivalenceRelationCompleteAdicDiscrepancy
 public import FLT.Mazur.EquivalenceRelationCompleteAdicSeparation
 public import FLT.Mazur.EquivalenceRelationCompleteAffineStages
@@ -5848,6 +5850,7 @@ public import FLT.Mazur.HilbertComplementPointCompatibility
 public import FLT.Mazur.HilbertComplementSchemeCompatibility
 public import FLT.Mazur.HilbertCompleteChartBoundaryDescent
 public import FLT.Mazur.HilbertCompleteChartBoundaryTests
+public import FLT.Mazur.HilbertCompleteChartMixedVanishing
 public import FLT.Mazur.HilbertCompleteChartOriginalCertificates
 public import FLT.Mazur.HilbertCompleteChartOriginalSections
 public import FLT.Mazur.HilbertCompleteFrameCardinality
@@ -5993,6 +5996,10 @@ public import FLT.Mazur.HilbertOrbitBoundaryScalarImage
 public import FLT.Mazur.HilbertOrbitBoundaryScaledMultipliers
 public import FLT.Mazur.HilbertOrbitBoundarySectionErrorSpan
 public import FLT.Mazur.HilbertOrbitBoundarySourceErrorCriterion
+public import FLT.Mazur.HilbertOrbitMixedBoundaryKernel
+public import FLT.Mazur.HilbertOrbitMixedBoundaryProjection
+public import FLT.Mazur.HilbertOrbitRelativeMixedConnecting
+public import FLT.Mazur.HilbertOrbitRelativeMixedError
 public import FLT.Mazur.HilbertOrderedAffineEnvelope
 public import FLT.Mazur.HilbertOrderedOriginalBoundary
 public import FLT.Mazur.HilbertOrderedStableNeighborhood
@@ -7769,6 +7776,11 @@ public import FLT.Mazur.PolygonCompleteFamilyFlatness
 public import FLT.Mazur.PolygonCompleteFamilyHomExt
 public import FLT.Mazur.PolygonCompleteFiberMarkings
 public import FLT.Mazur.PolygonCompleteFieldH1
+public import FLT.Mazur.PolygonCompleteFiniteBoundaryLine
+public import FLT.Mazur.PolygonCompleteFiniteParameterLines
+public import FLT.Mazur.PolygonCompleteFiniteParameterMarkings
+public import FLT.Mazur.PolygonCompleteFiniteParameterProduct
+public import FLT.Mazur.PolygonCompleteFiniteParameterTranslation
 public import FLT.Mazur.PolygonCompleteFixedPointFree
 public import FLT.Mazur.PolygonCompleteFlatContractionExt
 public import FLT.Mazur.PolygonCompleteFlatSmoothPreimage
@@ -8589,6 +8601,7 @@ public import FLT.Mazur.PolygonInfinitesimalCoefficientTransport
 public import FLT.Mazur.PolygonInfinitesimalDiagram
 public import FLT.Mazur.PolygonInfinitesimalDivisor
 public import FLT.Mazur.PolygonInfinitesimalDivisorLine
+public import FLT.Mazur.PolygonInfinitesimalDivisorLineSection
 public import FLT.Mazur.PolygonInfinitesimalEdgeCoordinates
 public import FLT.Mazur.PolygonInfinitesimalEdgeExt
 public import FLT.Mazur.PolygonInfinitesimalEdgeKernel
@@ -9822,6 +9835,7 @@ public import FLT.Mazur.RelativeAmplePresentationTransport
 public import FLT.Mazur.RelativeAmpleProper
 public import FLT.Mazur.RelativeAmpleRestriction
 public import FLT.Mazur.RelativeAmpleSectionComparison
+public import FLT.Mazur.RelativeBoundaryConnectingMap
 public import FLT.Mazur.RelativeCartier
 public import FLT.Mazur.RelativeCartierBaseChange
 public import FLT.Mazur.RelativeCartierBaseChangeComposition
@@ -10099,6 +10113,8 @@ public import FLT.Mazur.RelativeSerreAffineVanishing
 public import FLT.Mazur.RelativeSerreLocalizedTower
 public import FLT.Mazur.RelativeSerreSectionModules
 public import FLT.Mazur.RelativeSerreVanishing
+public import FLT.Mazur.RelativeSubmoduleQuotient
+public import FLT.Mazur.RelativeSubmoduleQuotientExact
 public import FLT.Mazur.RelativeSums
 public import FLT.Mazur.RelativeTupleCollision
 public import FLT.Mazur.RelativeTupleCompletenessLocus
