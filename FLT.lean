@@ -5984,6 +5984,7 @@ public import FLT.Mazur.HilbertOrbitBoundaryPrincipalNumerators
 public import FLT.Mazur.HilbertOrbitBoundaryReductionCertificate
 public import FLT.Mazur.HilbertOrbitBoundaryScalarImage
 public import FLT.Mazur.HilbertOrbitBoundaryScaledMultipliers
+public import FLT.Mazur.HilbertOrbitBoundarySectionErrorSpan
 public import FLT.Mazur.HilbertOrderedAffineEnvelope
 public import FLT.Mazur.HilbertOrderedOriginalBoundary
 public import FLT.Mazur.HilbertOrderedStableNeighborhood
