@@ -7717,6 +7717,7 @@ public import FLT.Mazur.PolygonCompleteIdentityAdicCubicCoordinates
 public import FLT.Mazur.PolygonCompleteIdentityAdicCubicPatches
 public import FLT.Mazur.PolygonCompleteIdentityAdicCubicZNeighborhood
 public import FLT.Mazur.PolygonCompleteIdentityAdicGraphCoherence
+public import FLT.Mazur.PolygonCompleteIdentityAdicGraphRotation
 public import FLT.Mazur.PolygonCompleteIdentityAdicGraphSections
 public import FLT.Mazur.PolygonCompleteIdentityAdicNodeSections
 public import FLT.Mazur.PolygonCompleteIdentityAdicNodeSourceIso
