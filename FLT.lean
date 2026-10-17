@@ -5903,6 +5903,7 @@ public import FLT.Mazur.HilbertFamilyRelationBaseChange
 public import FLT.Mazur.HilbertFamilyTruncatedRelations
 public import FLT.Mazur.HilbertFiniteAmbientPresentation
 public import FLT.Mazur.HilbertFiniteFreeQuotientRefinement
+public import FLT.Mazur.HilbertFiniteFreeRelationErrorVanishing
 public import FLT.Mazur.HilbertFiniteFreeRelationPrincipalCoverage
 public import FLT.Mazur.HilbertFiniteRelationUniformCoverage
 public import FLT.Mazur.HilbertFullInteriorFiniteKernel
