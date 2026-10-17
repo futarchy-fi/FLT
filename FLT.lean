@@ -12508,6 +12508,7 @@ public import FLT.Mazur.WeierstrassDividedFifthInitialAtlasClosing
 public import FLT.Mazur.WeierstrassDividedFifthInitialAtlasEdge
 public import FLT.Mazur.WeierstrassDividedFifthInitialAtlasIdentification
 public import FLT.Mazur.WeierstrassDividedFifthInitialAtlasIncoming
+public import FLT.Mazur.WeierstrassDividedFifthInitialAtlasRestriction
 public import FLT.Mazur.WeierstrassDividedFifthInitialAtlasSystem
 public import FLT.Mazur.WeierstrassDividedFifthInitialCancellation
 public import FLT.Mazur.WeierstrassDividedFifthInitialFields
