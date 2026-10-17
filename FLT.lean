@@ -7422,6 +7422,7 @@ public import FLT.Mazur.PolygonArithmeticMarkingNeighborhood
 public import FLT.Mazur.PolygonArithmeticMarkingSectionReconstruction
 public import FLT.Mazur.PolygonArithmeticMarkingSpecialization
 public import FLT.Mazur.PolygonArithmeticMarkingUniqueness
+public import FLT.Mazur.PolygonArithmeticNodeCorrectionLift
 public import FLT.Mazur.PolygonArithmeticNodeNeighborhood
 public import FLT.Mazur.PolygonArithmeticNodePoint
 public import FLT.Mazur.PolygonArithmeticNodeTransition
