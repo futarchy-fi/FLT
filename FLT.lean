@@ -7737,6 +7737,7 @@ public import FLT.Mazur.PolygonCompleteIdentityAdicGraphCoherence
 public import FLT.Mazur.PolygonCompleteIdentityAdicGraphRotation
 public import FLT.Mazur.PolygonCompleteIdentityAdicGraphRotationLaws
 public import FLT.Mazur.PolygonCompleteIdentityAdicGraphSections
+public import FLT.Mazur.PolygonCompleteIdentityAdicGraphTopology
 public import FLT.Mazur.PolygonCompleteIdentityAdicNodeSections
 public import FLT.Mazur.PolygonCompleteIdentityAdicNodeSourceIso
 public import FLT.Mazur.PolygonCompleteIdentityAdicRefinedKernel
