@@ -10,7 +10,7 @@ public import FLT.Mazur.WeierstrassDividedFourthGeometry
 /-!
 # Full terminal punctures and quotient square for the fourth correction
 
-The inverse geometric factor retains both earlier scalar drifts, the new
+The inverse geometric factor retains all earlier scalar drifts, the new
 rebasing, and the original arithmetic coefficient restriction.
 -/
 
