@@ -7108,6 +7108,7 @@ public import FLT.Mazur.OddWeierstrassAuxiliarySchemeFixedGroup
 public import FLT.Mazur.OddWeierstrassAuxiliarySchemeGroupComparison
 public import FLT.Mazur.OddWeierstrassAuxiliarySchemeMarking
 public import FLT.Mazur.OddWeierstrassAuxiliarySchemeMarkingComparison
+public import FLT.Mazur.OddWeierstrassAuxiliarySchemeNormalizationFixed
 public import FLT.Mazur.OddWeierstrassAuxiliarySchemeNormalizationMarking
 public import FLT.Mazur.OddWeierstrassAuxiliarySchemeNormalizationNaturality
 public import FLT.Mazur.OddWeierstrassAuxiliarySchemeRelativePoint
