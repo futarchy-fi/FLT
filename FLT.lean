@@ -7079,6 +7079,7 @@ public import FLT.Mazur.OddWeierstrassAuxiliaryFrameUnits
 public import FLT.Mazur.OddWeierstrassAuxiliaryFullBasis
 public import FLT.Mazur.OddWeierstrassAuxiliaryLevel
 public import FLT.Mazur.OddWeierstrassAuxiliaryNormalEquation
+public import FLT.Mazur.OddWeierstrassAuxiliaryNormalizationCubic
 public import FLT.Mazur.OddWeierstrassAuxiliaryNormalizationNatural
 public import FLT.Mazur.OddWeierstrassAuxiliaryProperNaturality
 public import FLT.Mazur.OddWeierstrassAuxiliaryPullbackSections
