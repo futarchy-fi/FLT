@@ -10644,6 +10644,7 @@ public import FLT.Mazur.SchemeFiniteGroupQuotientOrbits
 public import FLT.Mazur.SchemeFiniteOrbitOpenCore
 public import FLT.Mazur.SchemeFiniteTargetAffineNeighborhood
 public import FLT.Mazur.SchemeFiniteTargetBaseChange
+public import FLT.Mazur.SchemeFiniteTargetFiber
 public import FLT.Mazur.SchemeFiniteTargetFppfBaseChange
 public import FLT.Mazur.SchemeFiniteTargetFppfImage
 public import FLT.Mazur.SchemeFiniteTargetOpenRestriction
