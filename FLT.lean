@@ -7429,6 +7429,7 @@ public import FLT.Mazur.PolygonArithmeticGradedExactness
 public import FLT.Mazur.PolygonArithmeticGradedParameter
 public import FLT.Mazur.PolygonArithmeticHigherCorrectionField
 public import FLT.Mazur.PolygonArithmeticHigherNodeIdentification
+public import FLT.Mazur.PolygonArithmeticHigherRebaseIdentification
 public import FLT.Mazur.PolygonArithmeticHigherTwoBranchIdentification
 public import FLT.Mazur.PolygonArithmeticHomogeneousReduction
 public import FLT.Mazur.PolygonArithmeticHomogeneousSections
