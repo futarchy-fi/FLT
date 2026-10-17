@@ -5270,6 +5270,7 @@ public import FLT.Mazur.FiniteTargetAffineNorm
 public import FLT.Mazur.FiniteTargetInvariantAffineNeighborhood
 public import FLT.Mazur.FiniteTargetInvariantPrincipalCore
 public import FLT.Mazur.FiniteTargetNormCore
+public import FLT.Mazur.FiniteTargetOrbitAffineBasis
 public import FLT.Mazur.FiniteTensorCoefficientConditions
 public import FLT.Mazur.FiniteTensorIntegerClosedImmersion
 public import FLT.Mazur.FiniteTypeAbelNaturalIso
