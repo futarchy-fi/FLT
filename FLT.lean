@@ -7918,6 +7918,7 @@ public import FLT.Mazur.PolygonCompleteClosedSmoothLocus
 public import FLT.Mazur.PolygonCompleteClosedSmoothSquare
 public import FLT.Mazur.PolygonCompleteClosedSpecialization
 public import FLT.Mazur.PolygonCompleteClosedSplitParameter
+public import FLT.Mazur.PolygonCompleteClosedSubgroupIso
 public import FLT.Mazur.PolygonCompleteClosedTranslation
 public import FLT.Mazur.PolygonCompleteClosedTranslationLine
 public import FLT.Mazur.PolygonCompleteClosedWholeAction
