@@ -12223,6 +12223,7 @@ public import FLT.Mazur.WeierstrassDividedFirstInfinityFactorization
 public import FLT.Mazur.WeierstrassDividedFirstOutputCover
 public import FLT.Mazur.WeierstrassDividedFirstResidualAtlas
 public import FLT.Mazur.WeierstrassDividedFirstResidualAtlasEdges
+public import FLT.Mazur.WeierstrassDividedFirstResidualAtlasGluing
 public import FLT.Mazur.WeierstrassDividedFirstResidualIncoming
 public import FLT.Mazur.WeierstrassDividedFirstResidualOrientation
 public import FLT.Mazur.WeierstrassDividedFirstSuccessorAction
