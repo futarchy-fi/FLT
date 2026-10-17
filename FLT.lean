@@ -4942,6 +4942,7 @@ public import FLT.Mazur.FiniteEnvelopeDenominatorPrimes
 public import FLT.Mazur.FiniteEnvelopeInteriorEquations
 public import FLT.Mazur.FiniteErrorKernelPairs
 public import FLT.Mazur.FiniteErrorLinearLifting
+public import FLT.Mazur.FiniteErrorReducedInclusion
 public import FLT.Mazur.FiniteErrorReduction
 public import FLT.Mazur.FiniteErrorReductionFrame
 public import FLT.Mazur.FiniteErrorReductionIteration
@@ -5982,6 +5983,7 @@ public import FLT.Mazur.HilbertOrbitBoundaryPointLocalizedLifts
 public import FLT.Mazur.HilbertOrbitBoundaryPointSolvabilityLocus
 public import FLT.Mazur.HilbertOrbitBoundaryPointSpreading
 public import FLT.Mazur.HilbertOrbitBoundaryPrincipalNumerators
+public import FLT.Mazur.HilbertOrbitBoundaryReducedImage
 public import FLT.Mazur.HilbertOrbitBoundaryReductionCertificate
 public import FLT.Mazur.HilbertOrbitBoundaryScalarImage
 public import FLT.Mazur.HilbertOrbitBoundaryScaledMultipliers
@@ -7741,6 +7743,8 @@ public import FLT.Mazur.PolygonCompleteCoefficientStageKernel
 public import FLT.Mazur.PolygonCompleteComparedSectionReconstruction
 public import FLT.Mazur.PolygonCompleteConstantSections
 public import FLT.Mazur.PolygonCompleteCoordinateEvaluation
+public import FLT.Mazur.PolygonCompleteCyclicActionDivisor
+public import FLT.Mazur.PolygonCompleteCyclicActionMarkingLine
 public import FLT.Mazur.PolygonCompleteCyclicDivisor
 public import FLT.Mazur.PolygonCompleteCyclicMarking
 public import FLT.Mazur.PolygonCompleteCyclicOrbit
@@ -8397,6 +8401,7 @@ public import FLT.Mazur.PolygonCompletePrincipalClosedFiber
 public import FLT.Mazur.PolygonCompleteProjectiveRotation
 public import FLT.Mazur.PolygonCompleteRefinementPointLine
 public import FLT.Mazur.PolygonCompleteRefinementSquares
+public import FLT.Mazur.PolygonCompleteRelativeSmoothDetection
 public import FLT.Mazur.PolygonCompleteRotatedIdentityClosed
 public import FLT.Mazur.PolygonCompleteRotatedIdentityCover
 public import FLT.Mazur.PolygonCompleteRotatedIdentityMarking
@@ -8438,8 +8443,15 @@ public import FLT.Mazur.PolygonCompleteStageMarkings
 public import FLT.Mazur.PolygonCompleteStageRotation
 public import FLT.Mazur.PolygonCompleteStructureCohomology
 public import FLT.Mazur.PolygonCompleteUniversalFunctions
+public import FLT.Mazur.PolygonCompleteWholeAction
+public import FLT.Mazur.PolygonCompleteWholeActionChartCompatibility
+public import FLT.Mazur.PolygonCompleteWholeActionCyclic
+public import FLT.Mazur.PolygonCompleteWholeActionEvaluation
+public import FLT.Mazur.PolygonCompleteWholeActionFinite
+public import FLT.Mazur.PolygonCompleteWholeActionLaws
 public import FLT.Mazur.PolygonCompleteWholeActionParameterCover
 public import FLT.Mazur.PolygonCompleteWholeActionRotatedCharts
+public import FLT.Mazur.PolygonCompleteWholeActionSmooth
 public import FLT.Mazur.PolygonCompleteZeroParameterFiber
 public import FLT.Mazur.PolygonComponentCoordinateScaling
 public import FLT.Mazur.PolygonComponentDistinct
@@ -10982,6 +10994,8 @@ public import FLT.Mazur.StructureImageOpenChart
 public import FLT.Mazur.StructureModuleScalarTransitions
 public import FLT.Mazur.StructureRingCohomologyIso
 public import FLT.Mazur.SubfunctorRepresentedPullback
+public import FLT.Mazur.SubmoduleReductionFlat
+public import FLT.Mazur.SubmoduleReductionKernel
 public import FLT.Mazur.SuccessiveIncidenceAlgebra
 public import FLT.Mazur.SuccessiveIncidenceCoefficientMap
 public import FLT.Mazur.SuccessiveIncidenceLaurentRestriction
