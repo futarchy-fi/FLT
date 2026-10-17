@@ -7903,6 +7903,7 @@ public import FLT.Mazur.PolygonCompleteIdentitySmoothInputGraph
 public import FLT.Mazur.PolygonCompleteIdentityStageGraphRotatedCubic
 public import FLT.Mazur.PolygonCompleteIdentityStageSourceZeroCubic
 public import FLT.Mazur.PolygonCompleteIdentityStageTorus
+public import FLT.Mazur.PolygonCompleteIdentityTopActionBoundary
 public import FLT.Mazur.PolygonCompleteIdentityTopActionCoordinate
 public import FLT.Mazur.PolygonCompleteIdentityTopActionRestriction
 public import FLT.Mazur.PolygonCompleteIdentityTopAffineGraphQuotient
