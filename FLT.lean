@@ -3892,6 +3892,7 @@ public import FLT.Mazur.CompatibleSubgroupIso
 public import FLT.Mazur.CompatibleSubgroupIsoBaseChange
 public import FLT.Mazur.CompatibleSubgroupIsoFaithful
 public import FLT.Mazur.CompatibleSubgroupIsoSectionSquare
+public import FLT.Mazur.CompatibleSubgroupOrbitMarking
 public import FLT.Mazur.ConnectedClosedFiberThickening
 public import FLT.Mazur.ConnectedFiberGeneralization
 public import FLT.Mazur.ConnectedFiberPrimeStratum
