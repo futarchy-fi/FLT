@@ -12820,6 +12820,7 @@ public import FLT.Mazur.WeierstrassDividedResidualLiftRestriction
 public import FLT.Mazur.WeierstrassDividedResidualLiftSecondOrder
 public import FLT.Mazur.WeierstrassDividedResidualLiftTransitions
 public import FLT.Mazur.WeierstrassDividedResidualLiftTransitionsFirst
+public import FLT.Mazur.WeierstrassDividedResidualNodeRestriction
 public import FLT.Mazur.WeierstrassDividedResidualRetainedLift
 public import FLT.Mazur.WeierstrassDividedResidualTerminalIdentification
 public import FLT.Mazur.WeierstrassDividedResidualTerminalLift
