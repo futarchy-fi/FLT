@@ -12551,6 +12551,7 @@ public import FLT.Mazur.WeierstrassDividedFifthDeepAtlasSystem
 public import FLT.Mazur.WeierstrassDividedFifthDeepCancellation
 public import FLT.Mazur.WeierstrassDividedFifthDeepEarlierNodes
 public import FLT.Mazur.WeierstrassDividedFifthDeepEndCancellation
+public import FLT.Mazur.WeierstrassDividedFifthDeepEndIdentification
 public import FLT.Mazur.WeierstrassDividedFifthDeepEndRestriction
 public import FLT.Mazur.WeierstrassDividedFifthDeepGeometry
 public import FLT.Mazur.WeierstrassDividedFifthDeepInputIdentification
