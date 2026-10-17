@@ -13027,6 +13027,7 @@ public import FLT.Mazur.WeierstrassDividedThirdAtlas
 public import FLT.Mazur.WeierstrassDividedThirdAtlasClosing
 public import FLT.Mazur.WeierstrassDividedThirdAtlasIdentification
 public import FLT.Mazur.WeierstrassDividedThirdAtlasIncoming
+public import FLT.Mazur.WeierstrassDividedThirdAtlasNodeRestriction
 public import FLT.Mazur.WeierstrassDividedThirdAtlasPreceding
 public import FLT.Mazur.WeierstrassDividedThirdAtlasSystem
 public import FLT.Mazur.WeierstrassDividedThirdEarlierGeometry
