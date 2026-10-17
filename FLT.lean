@@ -6003,6 +6003,7 @@ public import FLT.Mazur.HilbertOrbitRelativeMixedConnecting
 public import FLT.Mazur.HilbertOrbitRelativeMixedError
 public import FLT.Mazur.HilbertOrbitRelativeReducedCorrections
 public import FLT.Mazur.HilbertOrbitRelativeReductionKernel
+public import FLT.Mazur.HilbertOrbitRelativeScalarImage
 public import FLT.Mazur.HilbertOrbitRelativeScalarResidue
 public import FLT.Mazur.HilbertOrderedAffineEnvelope
 public import FLT.Mazur.HilbertOrderedOriginalBoundary
@@ -6610,6 +6611,7 @@ public import FLT.Mazur.LocalizedCotangentFieldRank
 public import FLT.Mazur.LocalizedFiniteObstruction
 public import FLT.Mazur.LocalizedHomologyComparison
 public import FLT.Mazur.LocalizedIdealOverlapMembership
+public import FLT.Mazur.LocalizedImageFiniteWitness
 public import FLT.Mazur.LocalizedIntegerChartComparison
 public import FLT.Mazur.LocalizedIntegerComparisonTransport
 public import FLT.Mazur.LocalizedIntegerModelIsomorphism
@@ -9795,6 +9797,7 @@ public import FLT.Mazur.QuasicoherentImageIdeal
 public import FLT.Mazur.QuasicoherentImageIdealOrbits
 public import FLT.Mazur.QuotientChartComparison
 public import FLT.Mazur.QuotientConnectedComponentDescent
+public import FLT.Mazur.QuotientImageFiniteGenerators
 public import FLT.Mazur.QuotientImageReduction
 public import FLT.Mazur.QuotientRefinementCoherence
 public import FLT.Mazur.QuotientRelativeDerivation
@@ -9886,6 +9889,7 @@ public import FLT.Mazur.RelativeCompleteFrameComparison
 public import FLT.Mazur.RelativeCompleteFrameFiberIso
 public import FLT.Mazur.RelativeCompleteGeometricTuple
 public import FLT.Mazur.RelativeCompleteSubframe
+public import FLT.Mazur.RelativeConnectingFiniteLocalWitness
 public import FLT.Mazur.RelativeConnectingImagePreimage
 public import FLT.Mazur.RelativeConnectingImageReduction
 public import FLT.Mazur.RelativeCoproductComponentPullback
@@ -10202,6 +10206,9 @@ public import FLT.Mazur.ScalarExtensionDirectSum
 public import FLT.Mazur.ScalarExtensionImageReduction
 public import FLT.Mazur.ScalarExtensionIsomorphismDescent
 public import FLT.Mazur.ScalarExtensionPullbackDescent
+public import FLT.Mazur.ScalarImageOriginalGenerators
+public import FLT.Mazur.ScalarQuotientImagePresentation
+public import FLT.Mazur.ScalarQuotientImageReduction
 public import FLT.Mazur.ScalarQuotientResiduePresentation
 public import FLT.Mazur.ScalarTowerDivision
 public import FLT.Mazur.SchematicDenseDedekindFlat
@@ -12521,6 +12528,9 @@ public import FLT.Mazur.WeierstrassDividedFourthAtlasPreceding
 public import FLT.Mazur.WeierstrassDividedFourthAtlasSystem
 public import FLT.Mazur.WeierstrassDividedFourthEarlierGeometry
 public import FLT.Mazur.WeierstrassDividedFourthEarlierRestriction
+public import FLT.Mazur.WeierstrassDividedFourthFartherAdjacent
+public import FLT.Mazur.WeierstrassDividedFourthFartherFifthOrder
+public import FLT.Mazur.WeierstrassDividedFourthFartherIncoming
 public import FLT.Mazur.WeierstrassDividedFourthGeometry
 public import FLT.Mazur.WeierstrassDividedFourthIncomingCancellation
 public import FLT.Mazur.WeierstrassDividedFourthInitialAtlas
@@ -12544,12 +12554,23 @@ public import FLT.Mazur.WeierstrassDividedFourthJointNodes
 public import FLT.Mazur.WeierstrassDividedFourthJointRestriction
 public import FLT.Mazur.WeierstrassDividedFourthLayerFieldIdentification
 public import FLT.Mazur.WeierstrassDividedFourthNodeRestriction
+public import FLT.Mazur.WeierstrassDividedFourthOuterAtlas
+public import FLT.Mazur.WeierstrassDividedFourthOuterAtlasClosing
+public import FLT.Mazur.WeierstrassDividedFourthOuterAtlasIncoming
+public import FLT.Mazur.WeierstrassDividedFourthOuterAtlasPreceding
+public import FLT.Mazur.WeierstrassDividedFourthOuterAtlasRestriction
+public import FLT.Mazur.WeierstrassDividedFourthOuterAtlasSystem
 public import FLT.Mazur.WeierstrassDividedFourthOuterCancellation
 public import FLT.Mazur.WeierstrassDividedFourthOuterFields
 public import FLT.Mazur.WeierstrassDividedFourthOuterFifthOrder
 public import FLT.Mazur.WeierstrassDividedFourthOuterGeometry
+public import FLT.Mazur.WeierstrassDividedFourthOuterIdentification
+public import FLT.Mazur.WeierstrassDividedFourthOuterInitial
 public import FLT.Mazur.WeierstrassDividedFourthOuterNodes
+public import FLT.Mazur.WeierstrassDividedFourthOuterPreceding
 public import FLT.Mazur.WeierstrassDividedFourthOuterRestriction
+public import FLT.Mazur.WeierstrassDividedFourthOuterTransitions
+public import FLT.Mazur.WeierstrassDividedFourthOuterUnchanged
 public import FLT.Mazur.WeierstrassDividedFourthPunctureIdentification
 public import FLT.Mazur.WeierstrassDividedFourthResidualAlgebra
 public import FLT.Mazur.WeierstrassDividedFourthResidualFields
@@ -13229,6 +13250,7 @@ public import FLT.Mazur.WeierstrassDividedThirdResidualRestriction
 public import FLT.Mazur.WeierstrassDividedThirdSmoothingAnnihilation
 public import FLT.Mazur.WeierstrassDividedThirdTerminalGeometry
 public import FLT.Mazur.WeierstrassDividedThirdTransitions
+public import FLT.Mazur.WeierstrassDividedThirdUnchangedRestriction
 public import FLT.Mazur.WeierstrassDividedTwistedAtlas
 public import FLT.Mazur.WeierstrassDividedTwistedAtlasGluing
 public import FLT.Mazur.WeierstrassDividedTwistedAtlasRestriction
