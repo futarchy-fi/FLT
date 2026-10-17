@@ -13744,6 +13744,7 @@ public import FLT.Mazur.WeierstrassDividedZeroExteriorSmoothCoordinates
 public import FLT.Mazur.WeierstrassDividedZeroExteriorSmoothOrbit
 public import FLT.Mazur.WeierstrassDividedZeroFirstAtlas
 public import FLT.Mazur.WeierstrassDividedZeroFirstAtlasIdentification
+public import FLT.Mazur.WeierstrassDividedZeroFirstAtlasInitial
 public import FLT.Mazur.WeierstrassDividedZeroFirstCancellation
 public import FLT.Mazur.WeierstrassDividedZeroFirstFields
 public import FLT.Mazur.WeierstrassDividedZeroFirstGeometry
