@@ -7074,6 +7074,7 @@ public import FLT.Mazur.OddWeierstrassAuxiliaryLevel
 public import FLT.Mazur.OddWeierstrassAuxiliaryNormalEquation
 public import FLT.Mazur.OddWeierstrassAuxiliaryNormalizationNatural
 public import FLT.Mazur.OddWeierstrassAuxiliaryPullbackSections
+public import FLT.Mazur.OddWeierstrassAuxiliarySchemeGroupComparison
 public import FLT.Mazur.OddWeierstrassAuxiliarySchemeRelativePoint
 public import FLT.Mazur.OddWeierstrassAuxiliaryTorsionCover
 public import FLT.Mazur.OddWeierstrassAuxiliaryTorsionDisjoint
