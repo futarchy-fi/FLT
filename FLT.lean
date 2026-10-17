@@ -5858,6 +5858,7 @@ public import FLT.Mazur.HilbertJointStableSourceNeighborhoods
 public import FLT.Mazur.HilbertLocalResidueBasis
 public import FLT.Mazur.HilbertLocalizationIsomorphismOpen
 public import FLT.Mazur.HilbertLocalizedTupleBasis
+public import FLT.Mazur.HilbertMixedResidualBranches
 public import FLT.Mazur.HilbertMonomialAmbientDecomposition
 public import FLT.Mazur.HilbertMonomialBasisNeighborhood
 public import FLT.Mazur.HilbertMonomialChartBasisCriterion
