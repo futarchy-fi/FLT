@@ -55,10 +55,11 @@ def arithmeticSecondJointAtlasCorrection (i : ArithmeticChartLabel (j + 1)) : B 
   match i with
   | .terminal => F
   | .retained a b => by
-      dsimp only [arithmeticSecondJointAtlasObject]
-      split_ifs with hp
-      · exact arithmeticSecondPrecedingOrientedIso hπ data H m j hj u hu b
-      · exact if a.val = j then C b else Iso.refl _
+      by_cases hp : a.val + 1 = j
+      · exact (arithmeticSecondPrecedingOrientedIso hπ data H m j hj u hu b) ≪≫
+          eqToIso (by simp only [arithmeticSecondJointAtlasObject, hp, ↓reduceIte])
+      · exact (if a.val = j then C b else Iso.refl _) ≪≫
+          eqToIso (by simp only [arithmeticSecondJointAtlasObject, hp, ↓reduceIte]; rfl)
   | .initial _ => Iso.refl _
   | .infinity => Iso.refl _
 
