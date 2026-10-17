@@ -13801,6 +13801,7 @@ public import FLT.Mazur.WeierstrassDividedZeroRetentionIntersection
 public import FLT.Mazur.WeierstrassDividedZeroSecondAnnihilation
 public import FLT.Mazur.WeierstrassDividedZeroSecondCancellation
 public import FLT.Mazur.WeierstrassDividedZeroSecondFields
+public import FLT.Mazur.WeierstrassDividedZeroSecondGeometry
 public import FLT.Mazur.WeierstrassDividedZeroSecondNodes
 public import FLT.Mazur.WeierstrassDividedZeroSecondPunctures
 public import FLT.Mazur.WeierstrassDividedZeroSecondResidualRestriction
