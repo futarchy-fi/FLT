@@ -7489,6 +7489,7 @@ public import FLT.Mazur.PolygonArithmeticTowerAssembly
 public import FLT.Mazur.PolygonArithmeticTowerDivision
 public import FLT.Mazur.PolygonArithmeticTwoBranchCorrectionLift
 public import FLT.Mazur.PolygonArithmeticTwoBranchFirstIdentification
+public import FLT.Mazur.PolygonArithmeticTwoBranchRebase
 public import FLT.Mazur.PolygonArithmeticUniformLifting
 public import FLT.Mazur.PolygonArithmeticVeronese
 public import FLT.Mazur.PolygonArithmeticVeroneseExactness
