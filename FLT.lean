@@ -4053,6 +4053,7 @@ public import FLT.Mazur.CyclicOriginalHomDivisorCoverage
 public import FLT.Mazur.CyclicOriginalHomDivisorCoverageUnrestricted
 public import FLT.Mazur.CyclicOriginalLocalCartierCubic
 public import FLT.Mazur.CyclicOriginalLocalCartierCubicUnrestricted
+public import FLT.Mazur.CyclicOriginalPrescribedLocalCubic
 public import FLT.Mazur.CyclicOverlapGraph
 public import FLT.Mazur.CyclicPinchingOddReflectionIndices
 public import FLT.Mazur.CyclicPinchingProduct
