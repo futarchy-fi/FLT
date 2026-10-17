@@ -7741,6 +7741,7 @@ public import FLT.Mazur.PolygonCompleteClosedLaurentAction
 public import FLT.Mazur.PolygonCompleteClosedLaurentComparison
 public import FLT.Mazur.PolygonCompleteClosedLaurentEdges
 public import FLT.Mazur.PolygonCompleteClosedLaurentProduct
+public import FLT.Mazur.PolygonCompleteClosedMovedTranslation
 public import FLT.Mazur.PolygonCompleteClosedParameterReduction
 public import FLT.Mazur.PolygonCompleteClosedParameterSection
 public import FLT.Mazur.PolygonCompleteClosedPointAcyclic
