@@ -7723,6 +7723,7 @@ public import FLT.Mazur.PolygonCompleteIdentityActionSmoothLift
 public import FLT.Mazur.PolygonCompleteIdentityActionSource
 public import FLT.Mazur.PolygonCompleteIdentityActionTarget
 public import FLT.Mazur.PolygonCompleteIdentityActionUnchangedLift
+public import FLT.Mazur.PolygonCompleteIdentityAdicAllNodeSourceIso
 public import FLT.Mazur.PolygonCompleteIdentityAdicAmbientBaseChange
 public import FLT.Mazur.PolygonCompleteIdentityAdicAmbientImmersion
 public import FLT.Mazur.PolygonCompleteIdentityAdicAmbientKernel
@@ -7733,11 +7734,15 @@ public import FLT.Mazur.PolygonCompleteIdentityAdicCubicCoordinates
 public import FLT.Mazur.PolygonCompleteIdentityAdicCubicPatches
 public import FLT.Mazur.PolygonCompleteIdentityAdicCubicZNeighborhood
 public import FLT.Mazur.PolygonCompleteIdentityAdicGraphCoherence
+public import FLT.Mazur.PolygonCompleteIdentityAdicGraphRotation
+public import FLT.Mazur.PolygonCompleteIdentityAdicGraphRotationLaws
 public import FLT.Mazur.PolygonCompleteIdentityAdicGraphSections
 public import FLT.Mazur.PolygonCompleteIdentityAdicNodeSections
 public import FLT.Mazur.PolygonCompleteIdentityAdicNodeSourceIso
 public import FLT.Mazur.PolygonCompleteIdentityAdicRefinedKernel
 public import FLT.Mazur.PolygonCompleteIdentityAdicRefinedPatches
+public import FLT.Mazur.PolygonCompleteIdentityAdicSectionChartCoverage
+public import FLT.Mazur.PolygonCompleteIdentityAdicSectionOpen
 public import FLT.Mazur.PolygonCompleteIdentityAllPositiveLaws
 public import FLT.Mazur.PolygonCompleteIdentityAmbientErrorRelation
 public import FLT.Mazur.PolygonCompleteIdentityAmbientParameterComparison
@@ -7926,7 +7931,10 @@ public import FLT.Mazur.PolygonCompleteIdentityGraphAdicRotatedContraction
 public import FLT.Mazur.PolygonCompleteIdentityGraphAdicRotatedEdge
 public import FLT.Mazur.PolygonCompleteIdentityGraphAdicStage
 public import FLT.Mazur.PolygonCompleteIdentityGraphChartEdgeCartesian
+public import FLT.Mazur.PolygonCompleteIdentityGraphChartLift
 public import FLT.Mazur.PolygonCompleteIdentityGraphChartRotatedContraction
+public import FLT.Mazur.PolygonCompleteIdentityGraphChartRotation
+public import FLT.Mazur.PolygonCompleteIdentityGraphChartRotationIso
 public import FLT.Mazur.PolygonCompleteIdentityGraphEdgeCartesian
 public import FLT.Mazur.PolygonCompleteIdentityGraphFiniteEdge
 public import FLT.Mazur.PolygonCompleteIdentityGraphFlat
@@ -7939,6 +7947,8 @@ public import FLT.Mazur.PolygonCompleteIdentityGraphParameterTorsion
 public import FLT.Mazur.PolygonCompleteIdentityGraphRotatedContraction
 public import FLT.Mazur.PolygonCompleteIdentityGraphRotatedEdge
 public import FLT.Mazur.PolygonCompleteIdentityGraphRotatedEdgeCartesian
+public import FLT.Mazur.PolygonCompleteIdentityGraphRotation
+public import FLT.Mazur.PolygonCompleteIdentityGraphRotationLaws
 public import FLT.Mazur.PolygonCompleteIdentityGraphScalarEquations
 public import FLT.Mazur.PolygonCompleteIdentityGraphSmoothEquations
 public import FLT.Mazur.PolygonCompleteIdentityLiftLocus
