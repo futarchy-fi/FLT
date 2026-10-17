@@ -12504,6 +12504,7 @@ public import FLT.Mazur.WeierstrassDividedFactorRatioPolygonNaturality
 public import FLT.Mazur.WeierstrassDividedFactorRatioRetainedBoundary
 public import FLT.Mazur.WeierstrassDividedFaithfulActionDescent
 public import FLT.Mazur.WeierstrassDividedFifthInitialAtlas
+public import FLT.Mazur.WeierstrassDividedFifthInitialAtlasSystem
 public import FLT.Mazur.WeierstrassDividedFifthInitialCancellation
 public import FLT.Mazur.WeierstrassDividedFifthInitialFields
 public import FLT.Mazur.WeierstrassDividedFifthInitialGeometry
