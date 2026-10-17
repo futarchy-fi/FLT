@@ -13803,6 +13803,7 @@ public import FLT.Mazur.WeierstrassDividedZeroSecondCancellation
 public import FLT.Mazur.WeierstrassDividedZeroSecondFields
 public import FLT.Mazur.WeierstrassDividedZeroSecondNodes
 public import FLT.Mazur.WeierstrassDividedZeroSecondPunctures
+public import FLT.Mazur.WeierstrassDividedZeroSecondResidualRestriction
 public import FLT.Mazur.WeierstrassDividedZeroSecondRestriction
 public import FLT.Mazur.WeierstrassDividedZeroSecondSplit
 public import FLT.Mazur.WeierstrassDividedZeroSlopeContraction
