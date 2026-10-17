@@ -5924,6 +5924,7 @@ public import FLT.Mazur.HilbertFamilyGrassmannianSchemeMap
 public import FLT.Mazur.HilbertFamilyGrassmannianSchemeNaturality
 public import FLT.Mazur.HilbertFamilyRelationBaseChange
 public import FLT.Mazur.HilbertFamilyTruncatedRelations
+public import FLT.Mazur.HilbertFiniteAffineNeighborhood
 public import FLT.Mazur.HilbertFiniteAmbientPresentation
 public import FLT.Mazur.HilbertFiniteBoundaryDomain
 public import FLT.Mazur.HilbertFiniteDomainErrorVanishing
@@ -5935,6 +5936,7 @@ public import FLT.Mazur.HilbertFiniteInvariantAffineBasis
 public import FLT.Mazur.HilbertFiniteRelationErrorVanishing
 public import FLT.Mazur.HilbertFiniteRelationPrincipalCoverage
 public import FLT.Mazur.HilbertFiniteRelationUniformCoverage
+public import FLT.Mazur.HilbertFiniteTargetLocalLifts
 public import FLT.Mazur.HilbertFiniteTargetSaturation
 public import FLT.Mazur.HilbertFullInteriorFiniteKernel
 public import FLT.Mazur.HilbertFullInteriorQuotientChart
