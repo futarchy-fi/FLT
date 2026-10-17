@@ -3539,6 +3539,7 @@ public import FLT.Mazur.BoundaryCorrectionAdicAmbient
 public import FLT.Mazur.BoundaryCorrectionAdicCertificate
 public import FLT.Mazur.BoundaryCorrectionAmbientEquations
 public import FLT.Mazur.BoundaryCorrectionBoundaryImage
+public import FLT.Mazur.BoundaryCorrectionBoundaryKernel
 public import FLT.Mazur.BoundaryCorrectionCokernelClass
 public import FLT.Mazur.BoundaryCorrectionCompatibleBaseChange
 public import FLT.Mazur.BoundaryCorrectionCompatibleErrors
