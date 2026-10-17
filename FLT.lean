@@ -7764,6 +7764,7 @@ public import FLT.Mazur.PolygonCompleteFamilyHomExt
 public import FLT.Mazur.PolygonCompleteFiberMarkings
 public import FLT.Mazur.PolygonCompleteFieldH1
 public import FLT.Mazur.PolygonCompleteFiniteParameterProduct
+public import FLT.Mazur.PolygonCompleteFiniteParameterTranslation
 public import FLT.Mazur.PolygonCompleteFixedPointFree
 public import FLT.Mazur.PolygonCompleteFlatContractionExt
 public import FLT.Mazur.PolygonCompleteFlatSmoothPreimage
