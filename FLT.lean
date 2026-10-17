@@ -8023,6 +8023,7 @@ public import FLT.Mazur.PolygonCompleteIdentityObstructionCocycle
 public import FLT.Mazur.PolygonCompleteIdentityObstructionNormalization
 public import FLT.Mazur.PolygonCompleteIdentityObstructionSymmetry
 public import FLT.Mazur.PolygonCompleteIdentityOrderZeroLaw
+public import FLT.Mazur.PolygonCompleteIdentityOriginalInputCover
 public import FLT.Mazur.PolygonCompleteIdentityPointCocycle
 public import FLT.Mazur.PolygonCompleteIdentityPointDefect
 public import FLT.Mazur.PolygonCompleteIdentitySecondCorrection
