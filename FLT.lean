@@ -7451,6 +7451,9 @@ public import FLT.Mazur.PolygonArithmeticFlatLayer
 public import FLT.Mazur.PolygonArithmeticGradedExactness
 public import FLT.Mazur.PolygonArithmeticGradedParameter
 public import FLT.Mazur.PolygonArithmeticHigherCorrectionField
+public import FLT.Mazur.PolygonArithmeticHigherNodeIdentification
+public import FLT.Mazur.PolygonArithmeticHigherRebaseIdentification
+public import FLT.Mazur.PolygonArithmeticHigherTwoBranchIdentification
 public import FLT.Mazur.PolygonArithmeticHomogeneousReduction
 public import FLT.Mazur.PolygonArithmeticHomogeneousSections
 public import FLT.Mazur.PolygonArithmeticIdealPowers
@@ -8824,6 +8827,7 @@ public import FLT.Mazur.PolygonSmoothingPolynomialShearReduction
 public import FLT.Mazur.PolygonSmoothingPunctureBaseChange
 public import FLT.Mazur.PolygonSmoothingPunctureCalculus
 public import FLT.Mazur.PolygonSmoothingPunctureGeometry
+public import FLT.Mazur.PolygonSmoothingPunctureIdentification
 public import FLT.Mazur.PolygonSmoothingPunctureNaturality
 public import FLT.Mazur.PolygonSmoothingPunctureSpecCalculus
 public import FLT.Mazur.PolygonSmoothingPunctureSpecNaturality
@@ -12817,9 +12821,19 @@ public import FLT.Mazur.WeierstrassDividedRetainedPolygonNaturality
 public import FLT.Mazur.WeierstrassDividedRetainedPuncturePreimage
 public import FLT.Mazur.WeierstrassDividedRetainedZeroExteriorLine
 public import FLT.Mazur.WeierstrassDividedRetentionSuccessor
+public import FLT.Mazur.WeierstrassDividedSecondJointFields
+public import FLT.Mazur.WeierstrassDividedSecondJointIdentification
+public import FLT.Mazur.WeierstrassDividedSecondJointResiduals
+public import FLT.Mazur.WeierstrassDividedSecondJointRestriction
+public import FLT.Mazur.WeierstrassDividedSecondPunctureIdentification
+public import FLT.Mazur.WeierstrassDividedSecondResidualAlgebra
 public import FLT.Mazur.WeierstrassDividedSecondResidualFactors
 public import FLT.Mazur.WeierstrassDividedSecondResidualFields
+public import FLT.Mazur.WeierstrassDividedSecondResidualGeometry
+public import FLT.Mazur.WeierstrassDividedSecondResidualIdentification
 public import FLT.Mazur.WeierstrassDividedSecondResidualLifts
+public import FLT.Mazur.WeierstrassDividedSecondResidualPunctures
+public import FLT.Mazur.WeierstrassDividedSecondResidualRestriction
 public import FLT.Mazur.WeierstrassDividedShearContraction
 public import FLT.Mazur.WeierstrassDividedShearData
 public import FLT.Mazur.WeierstrassDividedShearExterior
