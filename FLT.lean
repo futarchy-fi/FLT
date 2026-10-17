@@ -7923,6 +7923,7 @@ public import FLT.Mazur.PolygonCompleteIdentityGraphParameterTorsion
 public import FLT.Mazur.PolygonCompleteIdentityGraphRotatedContraction
 public import FLT.Mazur.PolygonCompleteIdentityGraphRotatedEdge
 public import FLT.Mazur.PolygonCompleteIdentityGraphRotatedEdgeCartesian
+public import FLT.Mazur.PolygonCompleteIdentityGraphRotation
 public import FLT.Mazur.PolygonCompleteIdentityGraphScalarEquations
 public import FLT.Mazur.PolygonCompleteIdentityGraphSmoothEquations
 public import FLT.Mazur.PolygonCompleteIdentityLiftLocus
