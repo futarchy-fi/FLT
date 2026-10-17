@@ -3076,6 +3076,7 @@ public import FLT.Mazur.AffineOpenFiniteQuotientChart
 public import FLT.Mazur.AffineOpenFiniteRefinement
 public import FLT.Mazur.AffineOpenImmersionLocalizationCriterion
 public import FLT.Mazur.AffineOpenKernelPower
+public import FLT.Mazur.AffineOpenNorm
 public import FLT.Mazur.AffineOpenQuotientPresentation
 public import FLT.Mazur.AffineOpenSpectrumFunctions
 public import FLT.Mazur.AffineOverlapDiagonal
