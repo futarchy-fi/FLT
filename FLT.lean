@@ -12556,6 +12556,7 @@ public import FLT.Mazur.WeierstrassDividedFifthInitialOpenRestriction
 public import FLT.Mazur.WeierstrassDividedFifthInitialResidualAlgebra
 public import FLT.Mazur.WeierstrassDividedFifthInitialRestriction
 public import FLT.Mazur.WeierstrassDividedFifthInitialTransitions
+public import FLT.Mazur.WeierstrassDividedFifthPairedCancellation
 public import FLT.Mazur.WeierstrassDividedFifthPairedFields
 public import FLT.Mazur.WeierstrassDividedFifthPairedNodes
 public import FLT.Mazur.WeierstrassDividedFifthResidualFields
