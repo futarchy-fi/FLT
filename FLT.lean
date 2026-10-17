@@ -12887,6 +12887,7 @@ public import FLT.Mazur.WeierstrassDividedFourthShallowUnchanged
 public import FLT.Mazur.WeierstrassDividedFourthSmoothingAnnihilation
 public import FLT.Mazur.WeierstrassDividedFourthTerminalGeometry
 public import FLT.Mazur.WeierstrassDividedFourthTransitions
+public import FLT.Mazur.WeierstrassDividedFourthZeroFirstField
 public import FLT.Mazur.WeierstrassDividedFourthZeroInitial
 public import FLT.Mazur.WeierstrassDividedFourthZeroLast
 public import FLT.Mazur.WeierstrassDividedFourthZeroOrder
