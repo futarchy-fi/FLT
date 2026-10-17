@@ -8720,6 +8720,7 @@ public import FLT.Mazur.PolygonSmoothingNodeBasicOpen
 public import FLT.Mazur.PolygonSmoothingNodeDenominatorCoverage
 public import FLT.Mazur.PolygonSmoothingNodeScaling
 public import FLT.Mazur.PolygonSmoothingOverlapGraph
+public import FLT.Mazur.PolygonSmoothingPolynomialShearReduction
 public import FLT.Mazur.PolygonSmoothingPunctureBaseChange
 public import FLT.Mazur.PolygonSmoothingQuadraticModel
 public import FLT.Mazur.PolygonSmoothingRangeGenerators
