@@ -7946,6 +7946,7 @@ public import FLT.Mazur.PolygonCompleteIdentityGraphFiniteEdge
 public import FLT.Mazur.PolygonCompleteIdentityGraphFlat
 public import FLT.Mazur.PolygonCompleteIdentityGraphFlatExt
 public import FLT.Mazur.PolygonCompleteIdentityGraphFlatSource
+public import FLT.Mazur.PolygonCompleteIdentityGraphFlatSourceImage
 public import FLT.Mazur.PolygonCompleteIdentityGraphGenericEquations
 public import FLT.Mazur.PolygonCompleteIdentityGraphIncomingCartesian
 public import FLT.Mazur.PolygonCompleteIdentityGraphIncomingChart
