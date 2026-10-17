@@ -5758,6 +5758,7 @@ public import FLT.Mazur.HilbertBasisSchemeOver
 public import FLT.Mazur.HilbertBasisTupleAffineComparison
 public import FLT.Mazur.HilbertBasisTupleIntersection
 public import FLT.Mazur.HilbertBasisTupleSchemeComparison
+public import FLT.Mazur.HilbertBoundaryAmbientPresentation
 public import FLT.Mazur.HilbertBoundaryCertifiedAlgebra
 public import FLT.Mazur.HilbertBoundaryClosedRelation
 public import FLT.Mazur.HilbertBoundaryCompleteAdicLift
