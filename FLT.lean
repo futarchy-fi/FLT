@@ -7691,6 +7691,7 @@ public import FLT.Mazur.PolygonCollapsedChainModel
 public import FLT.Mazur.PolygonCollapsedChainOpenCover
 public import FLT.Mazur.PolygonCollapsedChainOverlapCover
 public import FLT.Mazur.PolygonCollapsedChainOverlapEdges
+public import FLT.Mazur.PolygonCollapsedChainPinchingColimit
 public import FLT.Mazur.PolygonCollapsedChainPinchingDiagram
 public import FLT.Mazur.PolygonCollapsedChainRetainedComplement
 public import FLT.Mazur.PolygonCollapsedFiberIdeal
