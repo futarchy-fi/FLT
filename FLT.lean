@@ -3063,6 +3063,7 @@ public import FLT.Mazur.AffineNamedRefinementSection
 public import FLT.Mazur.AffineNeighborhoodStageReconstruction
 public import FLT.Mazur.AffineNodeNormalizationExact
 public import FLT.Mazur.AffineNormCartesianCharts
+public import FLT.Mazur.AffineNormCartesianGluing
 public import FLT.Mazur.AffineNormChartIndependence
 public import FLT.Mazur.AffineNormGluing
 public import FLT.Mazur.AffineNormGluingFiber
