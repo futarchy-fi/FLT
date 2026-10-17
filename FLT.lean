@@ -12673,6 +12673,7 @@ public import FLT.Mazur.WeierstrassDividedPrecedingAtlasRange
 public import FLT.Mazur.WeierstrassDividedPreviousBoundaryAlgebra
 public import FLT.Mazur.WeierstrassDividedProjectiveLift
 public import FLT.Mazur.WeierstrassDividedResidualIntegralLift
+public import FLT.Mazur.WeierstrassDividedResidualRetainedLift
 public import FLT.Mazur.WeierstrassDividedResidueAtlasExtension
 public import FLT.Mazur.WeierstrassDividedResidueAtlasFinite
 public import FLT.Mazur.WeierstrassDividedResidueAtlasRefinement
