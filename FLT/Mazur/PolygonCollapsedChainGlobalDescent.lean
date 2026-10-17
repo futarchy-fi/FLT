@@ -49,12 +49,13 @@ theorem compatible (a b : ChartIndex n i) :
       rw [reverse_fst_assoc, reverse_snd_assoc, secondEdge_localMap, firstEdge_localMap]
 
 /-- The global descent constructed from the actual full boundary and interior atlas. -/
-def desc : PolygonCollapsedChainModel.chain K n h i ⟶ Y :=
+irreducible_def desc : PolygonCollapsedChainModel.chain K n h i ⟶ Y :=
   (cover K n h i).glueMorphisms (localMap K n i f w h) (compatible K n h i f w)
 
 @[reassoc] theorem chartMap_desc (a : ChartIndex n i) :
-    chartMap K n h i a ≫ desc K n h i f w = localMap K n i f w h a :=
-  (cover K n h i).ι_glueMorphisms _ _ a
+    chartMap K n h i a ≫ desc K n h i f w = localMap K n i f w h a := by
+  rw [desc_def]
+  exact (cover K n h i).ι_glueMorphisms _ _ a
 
 /-- The glued map is the only global map with these full-chart restrictions. -/
 theorem desc_unique (d : PolygonCollapsedChainModel.chain K n h i ⟶ Y)
