@@ -8734,6 +8734,7 @@ public import FLT.Mazur.PolygonNormalizationSectionFamilies
 public import FLT.Mazur.PolygonNormalizationTorusPullback
 public import FLT.Mazur.PolygonNormalizationTransport
 public import FLT.Mazur.PolygonOddChainEndpoints
+public import FLT.Mazur.PolygonOmittedComponentCover
 public import FLT.Mazur.PolygonOmittedComponentNodes
 public import FLT.Mazur.PolygonOneGonCompletion
 public import FLT.Mazur.PolygonOneGonContraction
