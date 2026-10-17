@@ -3557,6 +3557,8 @@ public import FLT.Mazur.BoundaryCorrectionLinearSystem
 public import FLT.Mazur.BoundaryCorrectionLocalCokernel
 public import FLT.Mazur.BoundaryCorrectionLocalReduction
 public import FLT.Mazur.BoundaryCorrectionLocalizedVanishing
+public import FLT.Mazur.BoundaryCorrectionMixedBaseChange
+public import FLT.Mazur.BoundaryCorrectionMixedCokernel
 public import FLT.Mazur.BoundaryCorrectionOperatorIndependence
 public import FLT.Mazur.BoundaryCorrectionReductionCertificate
 public import FLT.Mazur.BoundaryCorrectionTensorCoordinates
@@ -5924,6 +5926,7 @@ public import FLT.Mazur.HilbertNormalizedAffineNeighborhood
 public import FLT.Mazur.HilbertNormalizedAffineRefinement
 public import FLT.Mazur.HilbertNormalizedBoundaryAction
 public import FLT.Mazur.HilbertNormalizedBoundaryChartLifts
+public import FLT.Mazur.HilbertNormalizedBoundarySurjectivity
 public import FLT.Mazur.HilbertNormalizedCompleteFiberSplit
 public import FLT.Mazur.HilbertNormalizedCompleteOrbits
 public import FLT.Mazur.HilbertNormalizedFrameAction
@@ -5978,6 +5981,7 @@ public import FLT.Mazur.HilbertOrbitBoundaryLocalizedMultipliers
 public import FLT.Mazur.HilbertOrbitBoundaryLocalizedNaturality
 public import FLT.Mazur.HilbertOrbitBoundaryLocalizedNumerators
 public import FLT.Mazur.HilbertOrbitBoundaryMixedBranchIdeal
+public import FLT.Mazur.HilbertOrbitBoundaryMixedCokernel
 public import FLT.Mazur.HilbertOrbitBoundaryObstructionKernel
 public import FLT.Mazur.HilbertOrbitBoundaryPointLocalizedLifts
 public import FLT.Mazur.HilbertOrbitBoundaryPointSolvabilityLocus
@@ -7372,6 +7376,8 @@ public import FLT.Mazur.PadicValuationArithmetic
 public import FLT.Mazur.PadicValuationRing
 public import FLT.Mazur.PairedAwayLocalization
 public import FLT.Mazur.PairedAwayLocalizationSpectrum
+public import FLT.Mazur.PairedCokernelElimination
+public import FLT.Mazur.PairedCokernelReduction
 public import FLT.Mazur.PartialCompactTranslationInterior
 public import FLT.Mazur.PartialEnvelopeFullFiber
 public import FLT.Mazur.PartialFiniteTranslationInterior
@@ -8215,6 +8221,13 @@ public import FLT.Mazur.PolygonCompleteNodeStalkEvaluation
 public import FLT.Mazur.PolygonCompleteNodeStalkH1Equiv
 public import FLT.Mazur.PolygonCompleteNodeStalkMap
 public import FLT.Mazur.PolygonCompleteOriginalSectionReconstruction
+public import FLT.Mazur.PolygonCompleteParameterBaseChange
+public import FLT.Mazur.PolygonCompleteParameterLineBaseChange
+public import FLT.Mazur.PolygonCompleteParameterLineCocycle
+public import FLT.Mazur.PolygonCompleteParameterMarking
+public import FLT.Mazur.PolygonCompleteParameterMarkingLine
+public import FLT.Mazur.PolygonCompleteParameterOriginalLine
+public import FLT.Mazur.PolygonCompleteParameterTranslation
 public import FLT.Mazur.PolygonCompletePointAcyclic
 public import FLT.Mazur.PolygonCompletePointAffineMorphism
 public import FLT.Mazur.PolygonCompletePointAllPoleBasis
@@ -8444,6 +8457,7 @@ public import FLT.Mazur.PolygonCompleteStageRotation
 public import FLT.Mazur.PolygonCompleteStructureCohomology
 public import FLT.Mazur.PolygonCompleteUniversalFunctions
 public import FLT.Mazur.PolygonCompleteWholeAction
+public import FLT.Mazur.PolygonCompleteWholeActionCartesian
 public import FLT.Mazur.PolygonCompleteWholeActionChartCompatibility
 public import FLT.Mazur.PolygonCompleteWholeActionCyclic
 public import FLT.Mazur.PolygonCompleteWholeActionEvaluation
@@ -8452,6 +8466,7 @@ public import FLT.Mazur.PolygonCompleteWholeActionLaws
 public import FLT.Mazur.PolygonCompleteWholeActionParameterCover
 public import FLT.Mazur.PolygonCompleteWholeActionRotatedCharts
 public import FLT.Mazur.PolygonCompleteWholeActionSmooth
+public import FLT.Mazur.PolygonCompleteWholeShear
 public import FLT.Mazur.PolygonCompleteZeroParameterFiber
 public import FLT.Mazur.PolygonComponentCoordinateScaling
 public import FLT.Mazur.PolygonComponentDistinct
