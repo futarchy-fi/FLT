@@ -3049,6 +3049,7 @@ public import FLT.Mazur.AffineLineCoefficients
 public import FLT.Mazur.AffineLineTwistLocalization
 public import FLT.Mazur.AffineLocalFiberRegularQuotient
 public import FLT.Mazur.AffineLocalHilbertTranslationCover
+public import FLT.Mazur.AffineLocallyFreeRelationNorm
 public import FLT.Mazur.AffineModuleCoalgebraDescent
 public import FLT.Mazur.AffineModuleEpimorphisms
 public import FLT.Mazur.AffineModuleExact
@@ -3062,6 +3063,11 @@ public import FLT.Mazur.AffineNamedRefinementReconstruction
 public import FLT.Mazur.AffineNamedRefinementSection
 public import FLT.Mazur.AffineNeighborhoodStageReconstruction
 public import FLT.Mazur.AffineNodeNormalizationExact
+public import FLT.Mazur.AffineNormCartesianCharts
+public import FLT.Mazur.AffineNormCartesianGluing
+public import FLT.Mazur.AffineNormChartIndependence
+public import FLT.Mazur.AffineNormGluing
+public import FLT.Mazur.AffineNormGluingFiber
 public import FLT.Mazur.AffineOpenCartesianSections
 public import FLT.Mazur.AffineOpenCechBoundary
 public import FLT.Mazur.AffineOpenClosedLimitDescent
@@ -3076,6 +3082,7 @@ public import FLT.Mazur.AffineOpenFiniteQuotientChart
 public import FLT.Mazur.AffineOpenFiniteRefinement
 public import FLT.Mazur.AffineOpenImmersionLocalizationCriterion
 public import FLT.Mazur.AffineOpenKernelPower
+public import FLT.Mazur.AffineOpenNorm
 public import FLT.Mazur.AffineOpenQuotientPresentation
 public import FLT.Mazur.AffineOpenSpectrumFunctions
 public import FLT.Mazur.AffineOverlapDiagonal
@@ -3099,6 +3106,7 @@ public import FLT.Mazur.AffineProductNormFiber
 public import FLT.Mazur.AffineProductTensorCoordinates
 public import FLT.Mazur.AffineProductTranslationNorm
 public import FLT.Mazur.AffineProjectivePointLineCover
+public import FLT.Mazur.AffineProjectiveRelationNormNeighborhood
 public import FLT.Mazur.AffineProperFunctionSheaf
 public import FLT.Mazur.AffinePullbackCoefficientRecognition
 public import FLT.Mazur.AffinePullbackComparisonSections
@@ -5180,6 +5188,8 @@ public import FLT.Mazur.FinitePrincipalIdealPatching
 public import FLT.Mazur.FinitePrincipalImageCover
 public import FLT.Mazur.FinitePrincipalTargetRefinement
 public import FLT.Mazur.FiniteProductDirectSum
+public import FLT.Mazur.FiniteProjectiveAffineNorm
+public import FLT.Mazur.FiniteProjectiveAffineNormCharts
 public import FLT.Mazur.FiniteProjectivePrincipalDescent
 public import FLT.Mazur.FiniteProjectiveRankFrames
 public import FLT.Mazur.FiniteProjectiveRankOneTrivialization
