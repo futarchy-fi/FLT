@@ -4752,10 +4752,13 @@ public import FLT.Mazur.EquivalenceRelationFiberPermutationSections
 public import FLT.Mazur.EquivalenceRelationFiberRebase
 public import FLT.Mazur.EquivalenceRelationFiniteChartMultipliers
 public import FLT.Mazur.EquivalenceRelationFiniteCompleteInterior
+public import FLT.Mazur.EquivalenceRelationFiniteFiberLocus
+public import FLT.Mazur.EquivalenceRelationFiniteTargetSaturation
 public import FLT.Mazur.EquivalenceRelationFrameNormalization
 public import FLT.Mazur.EquivalenceRelationFrameRebaseGeometric
 public import FLT.Mazur.EquivalenceRelationFrameRebaseLaws
 public import FLT.Mazur.EquivalenceRelationInvariantBoundaryAction
+public import FLT.Mazur.EquivalenceRelationInvariantRestriction
 public import FLT.Mazur.EquivalenceRelationJointAffineCover
 public import FLT.Mazur.EquivalenceRelationJointBoundaryCover
 public import FLT.Mazur.EquivalenceRelationJointChartBoundaryCover
@@ -5923,12 +5926,16 @@ public import FLT.Mazur.HilbertFamilyGrassmannianSchemeNaturality
 public import FLT.Mazur.HilbertFamilyRelationBaseChange
 public import FLT.Mazur.HilbertFamilyTruncatedRelations
 public import FLT.Mazur.HilbertFiniteAmbientPresentation
+public import FLT.Mazur.HilbertFiniteBoundaryDomain
+public import FLT.Mazur.HilbertFiniteDomainErrorVanishing
+public import FLT.Mazur.HilbertFiniteDomainPrincipalCoverage
 public import FLT.Mazur.HilbertFiniteFreeQuotientRefinement
 public import FLT.Mazur.HilbertFiniteFreeRelationErrorVanishing
 public import FLT.Mazur.HilbertFiniteFreeRelationPrincipalCoverage
 public import FLT.Mazur.HilbertFiniteRelationErrorVanishing
 public import FLT.Mazur.HilbertFiniteRelationPrincipalCoverage
 public import FLT.Mazur.HilbertFiniteRelationUniformCoverage
+public import FLT.Mazur.HilbertFiniteTargetSaturation
 public import FLT.Mazur.HilbertFullInteriorFiniteKernel
 public import FLT.Mazur.HilbertFullInteriorQuotientChart
 public import FLT.Mazur.HilbertFullRelationFiberRebase
@@ -6459,6 +6466,7 @@ public import FLT.Mazur.IntersectionSectionLimitCoordinates
 public import FLT.Mazur.IntersectionUnitCocycle
 public import FLT.Mazur.IntersectionUnitCocycleRecovery
 public import FLT.Mazur.InvariantBoundaryPullback
+public import FLT.Mazur.InvariantFiniteRelationPrincipal
 public import FLT.Mazur.InvariantFlatTensorAction
 public import FLT.Mazur.InvariantFlatTensorComparison
 public import FLT.Mazur.InvariantIdealRelation
@@ -6467,7 +6475,9 @@ public import FLT.Mazur.InvariantLocalizationComparison
 public import FLT.Mazur.InvariantLocalizationCoordinates
 public import FLT.Mazur.InvariantLocalizationNumerator
 public import FLT.Mazur.InvariantObstructionNaturality
+public import FLT.Mazur.InvariantOpenFiniteRelation
 public import FLT.Mazur.InvariantOpenRelationDiagram
+public import FLT.Mazur.InvariantOpenRelationEquivalence
 public import FLT.Mazur.InvariantOpenRelationFunctions
 public import FLT.Mazur.InvariantOpenRelationMap
 public import FLT.Mazur.InvariantSectionObstruction
@@ -9988,6 +9998,7 @@ public import FLT.Mazur.QuasiCompactEtaleGeometricSections
 public import FLT.Mazur.QuasiCompactGenericFlatOpen
 public import FLT.Mazur.QuasiFiniteCoefficientQuotient
 public import FLT.Mazur.QuasiFiniteFlatDescent
+public import FLT.Mazur.QuasiFiniteFppfDescent
 public import FLT.Mazur.QuasiFiniteGenericFiniteFree
 public import FLT.Mazur.QuasiFiniteGeometricPointIsolation
 public import FLT.Mazur.QuasiFiniteIdealQuotient
@@ -10111,6 +10122,7 @@ public import FLT.Mazur.RelativeEtaleFiniteBranchCover
 public import FLT.Mazur.RelativeExactRankFrameCover
 public import FLT.Mazur.RelativeFiberMorphism
 public import FLT.Mazur.RelativeFiberNakayama
+public import FLT.Mazur.RelativeFiniteDomainPrincipal
 public import FLT.Mazur.RelativeFiniteTupleAffine
 public import FLT.Mazur.RelativeFppfComparisonCover
 public import FLT.Mazur.RelativeFppfLocalSubfunctor
@@ -10641,6 +10653,8 @@ public import FLT.Mazur.SchemeFiniteGroupQuotientOrbits
 public import FLT.Mazur.SchemeFiniteOrbitOpenCore
 public import FLT.Mazur.SchemeFiniteTargetAffineNeighborhood
 public import FLT.Mazur.SchemeFiniteTargetBaseChange
+public import FLT.Mazur.SchemeFiniteTargetFppfBaseChange
+public import FLT.Mazur.SchemeFiniteTargetFppfImage
 public import FLT.Mazur.SchemeFiniteTargetOpenRestriction
 public import FLT.Mazur.SchemeFiniteTargetRestriction
 public import FLT.Mazur.SchemeFlatFamilyReflection
