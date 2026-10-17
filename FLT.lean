@@ -5392,6 +5392,7 @@ public import FLT.Mazur.GeneralizedCurveCyclicSubgroup
 public import FLT.Mazur.GeneralizedCurveDirectLocalCubic
 public import FLT.Mazur.GeneralizedCurveDirectLocalFamily
 public import FLT.Mazur.GeneralizedCurveDivisorPullback
+public import FLT.Mazur.GeneralizedCurveEquivariantIso
 public import FLT.Mazur.GeneralizedCurveFiberAmple
 public import FLT.Mazur.GeneralizedCurveFiniteSubgroup
 public import FLT.Mazur.GeneralizedCurveGeneratorTransport
@@ -7916,10 +7917,12 @@ public import FLT.Mazur.PolygonCompleteClosedActionProduct
 public import FLT.Mazur.PolygonCompleteClosedActionRotation
 public import FLT.Mazur.PolygonCompleteClosedCartierGenerator
 public import FLT.Mazur.PolygonCompleteClosedChartComparison
+public import FLT.Mazur.PolygonCompleteClosedCurveIso
 public import FLT.Mazur.PolygonCompleteClosedCyclicAction
 public import FLT.Mazur.PolygonCompleteClosedCyclicGroup
 public import FLT.Mazur.PolygonCompleteClosedFiber
 public import FLT.Mazur.PolygonCompleteClosedFiniteSubgroup
+public import FLT.Mazur.PolygonCompleteClosedGeneratorIso
 public import FLT.Mazur.PolygonCompleteClosedGenus
 public import FLT.Mazur.PolygonCompleteClosedH1Scalars
 public import FLT.Mazur.PolygonCompleteClosedLaurentAction
@@ -7938,6 +7941,7 @@ public import FLT.Mazur.PolygonCompleteClosedSmoothLocus
 public import FLT.Mazur.PolygonCompleteClosedSmoothSquare
 public import FLT.Mazur.PolygonCompleteClosedSpecialization
 public import FLT.Mazur.PolygonCompleteClosedSplitParameter
+public import FLT.Mazur.PolygonCompleteClosedSubgroupIso
 public import FLT.Mazur.PolygonCompleteClosedTranslation
 public import FLT.Mazur.PolygonCompleteClosedTranslationLine
 public import FLT.Mazur.PolygonCompleteClosedWholeAction
@@ -8666,6 +8670,10 @@ public import FLT.Mazur.PolygonCompleteSmoothGroupRotations
 public import FLT.Mazur.PolygonCompleteSmoothInversion
 public import FLT.Mazur.PolygonCompleteSmoothIrreducible
 public import FLT.Mazur.PolygonCompleteSmoothMultiplication
+public import FLT.Mazur.PolygonCompleteSmoothOriginalCoefficient
+public import FLT.Mazur.PolygonCompleteSmoothOriginalCurveIso
+public import FLT.Mazur.PolygonCompleteSmoothOriginalGeneratorIso
+public import FLT.Mazur.PolygonCompleteSmoothOriginalSubgroupIso
 public import FLT.Mazur.PolygonCompleteSmoothPointAffine
 public import FLT.Mazur.PolygonCompleteSmoothProductCover
 public import FLT.Mazur.PolygonCompleteSmoothRefinement
@@ -11142,6 +11150,7 @@ public import FLT.Mazur.SmoothFiniteGeometricDiagram
 public import FLT.Mazur.SmoothFiniteSubgroupAmple
 public import FLT.Mazur.SmoothFiniteSubschemeCartier
 public import FLT.Mazur.SmoothGeneralizedCurveGroupIso
+public import FLT.Mazur.SmoothGeneralizedCurvePointedIso
 public import FLT.Mazur.SmoothGeometricAcyclicExactFrames
 public import FLT.Mazur.SmoothGeometricAcyclicFiniteFree
 public import FLT.Mazur.SmoothGeometricAcyclicHigherImage
