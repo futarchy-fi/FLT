@@ -7174,6 +7174,7 @@ public import FLT.Mazur.OddWeierstrassCyclicHomProperPresentationInvariant
 public import FLT.Mazur.OddWeierstrassCyclicHomRelabelAuxiliary
 public import FLT.Mazur.OddWeierstrassCyclicHomRelabelCurve
 public import FLT.Mazur.OddWeierstrassCyclicHomRelabelLine
+public import FLT.Mazur.OddWeierstrassCyclicHomRelabelNormalization
 public import FLT.Mazur.OddWeierstrassCyclicHomRelabelParameter
 public import FLT.Mazur.OddWeierstrassCyclicHomRelabelSubgroup
 public import FLT.Mazur.OddWeierstrassCyclicHomRelabeledNormalizationIso
