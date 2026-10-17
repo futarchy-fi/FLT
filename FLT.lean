@@ -7795,6 +7795,7 @@ public import FLT.Mazur.PolygonCompleteIdentityCompletionDescent
 public import FLT.Mazur.PolygonCompleteIdentityCubicChartMaps
 public import FLT.Mazur.PolygonCompleteIdentityCubicCoordinates
 public import FLT.Mazur.PolygonCompleteIdentityCubicDenominators
+public import FLT.Mazur.PolygonCompleteIdentityFiniteAffineMaps
 public import FLT.Mazur.PolygonCompleteIdentityFiniteAffineNeighborhood
 public import FLT.Mazur.PolygonCompleteIdentityFiniteAlgebra
 public import FLT.Mazur.PolygonCompleteIdentityFiniteCoherence
