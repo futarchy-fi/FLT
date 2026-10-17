@@ -13807,6 +13807,7 @@ public import FLT.Mazur.WeierstrassDividedZeroSecondFields
 public import FLT.Mazur.WeierstrassDividedZeroSecondGeometry
 public import FLT.Mazur.WeierstrassDividedZeroSecondNodeRestriction
 public import FLT.Mazur.WeierstrassDividedZeroSecondNodes
+public import FLT.Mazur.WeierstrassDividedZeroSecondOpenRestriction
 public import FLT.Mazur.WeierstrassDividedZeroSecondPunctures
 public import FLT.Mazur.WeierstrassDividedZeroSecondResidualRestriction
 public import FLT.Mazur.WeierstrassDividedZeroSecondRestriction
