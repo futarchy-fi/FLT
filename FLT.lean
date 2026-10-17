@@ -8113,6 +8113,7 @@ public import FLT.Mazur.PolygonCompleteIdentityTopSourceTargetComplement
 public import FLT.Mazur.PolygonCompleteIdentityTopSourceTargetFunctions
 public import FLT.Mazur.PolygonCompleteIdentityUnitCoherence
 public import FLT.Mazur.PolygonCompleteIdentityWholeAction
+public import FLT.Mazur.PolygonCompleteIdentityWholeActionFinite
 public import FLT.Mazur.PolygonCompleteIdentityWholeActionRotation
 public import FLT.Mazur.PolygonCompleteLineCohomology
 public import FLT.Mazur.PolygonCompleteLineHomExt
