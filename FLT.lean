@@ -7950,6 +7950,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstSourceTargetComplement
 public import FLT.Mazur.PolygonCompleteIdentityFirstSourceTargetFunctions
 public import FLT.Mazur.PolygonCompleteIdentityFirstSourceZeroCubic
 public import FLT.Mazur.PolygonCompleteIdentityFlatOpenLift
+public import FLT.Mazur.PolygonCompleteIdentityFlatTestLift
 public import FLT.Mazur.PolygonCompleteIdentityGenericAmbient
 public import FLT.Mazur.PolygonCompleteIdentityGenericAmbientIso
 public import FLT.Mazur.PolygonCompleteIdentityGenericAmbientKernel
