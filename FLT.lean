@@ -13805,6 +13805,7 @@ public import FLT.Mazur.WeierstrassDividedZeroSecondAtlasInitial
 public import FLT.Mazur.WeierstrassDividedZeroSecondCancellation
 public import FLT.Mazur.WeierstrassDividedZeroSecondFields
 public import FLT.Mazur.WeierstrassDividedZeroSecondGeometry
+public import FLT.Mazur.WeierstrassDividedZeroSecondNodeRestriction
 public import FLT.Mazur.WeierstrassDividedZeroSecondNodes
 public import FLT.Mazur.WeierstrassDividedZeroSecondPunctures
 public import FLT.Mazur.WeierstrassDividedZeroSecondResidualRestriction
