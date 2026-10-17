@@ -6365,6 +6365,7 @@ public import FLT.Mazur.LaurentScaledEvaluationCoefficients
 public import FLT.Mazur.LaurentScaledNilpotentReparametrization
 public import FLT.Mazur.LaurentSchemeCoordinates
 public import FLT.Mazur.LaurentSquareZeroAutomorphism
+public import FLT.Mazur.LaurentSquareZeroBoundaryFactorization
 public import FLT.Mazur.LaurentSquareZeroCocycle
 public import FLT.Mazur.LaurentSquareZeroCoordinate
 public import FLT.Mazur.LaurentSquareZeroCrossCoefficients
