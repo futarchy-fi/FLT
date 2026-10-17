@@ -4942,6 +4942,7 @@ public import FLT.Mazur.FiniteEnvelopeDenominatorPrimes
 public import FLT.Mazur.FiniteEnvelopeInteriorEquations
 public import FLT.Mazur.FiniteErrorKernelPairs
 public import FLT.Mazur.FiniteErrorLinearLifting
+public import FLT.Mazur.FiniteErrorReducedInclusion
 public import FLT.Mazur.FiniteErrorReduction
 public import FLT.Mazur.FiniteErrorReductionFrame
 public import FLT.Mazur.FiniteErrorReductionIteration
