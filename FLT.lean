@@ -13210,6 +13210,7 @@ public import FLT.Mazur.WeierstrassDividedThirdResidualRestriction
 public import FLT.Mazur.WeierstrassDividedThirdSmoothingAnnihilation
 public import FLT.Mazur.WeierstrassDividedThirdTerminalGeometry
 public import FLT.Mazur.WeierstrassDividedThirdTransitions
+public import FLT.Mazur.WeierstrassDividedThirdUnchangedRestriction
 public import FLT.Mazur.WeierstrassDividedTwistedAtlas
 public import FLT.Mazur.WeierstrassDividedTwistedAtlasGluing
 public import FLT.Mazur.WeierstrassDividedTwistedAtlasRestriction
