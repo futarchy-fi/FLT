@@ -6681,6 +6681,7 @@ public import FLT.Mazur.LocallyFramedSplitLineRestriction
 public import FLT.Mazur.LocallyFreeDualProjectiveAtlas
 public import FLT.Mazur.LocallyFreeProjectiveQuotient
 public import FLT.Mazur.LocallyNoetherianUniversalStructureSheaf
+public import FLT.Mazur.LocallyRingedIdealGenerators
 public import FLT.Mazur.LocallyRingedOpenImage
 public import FLT.Mazur.LocallyRingedSchemeChartUnion
 public import FLT.Mazur.LocallyRingedSectionPointIdeal
