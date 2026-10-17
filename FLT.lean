@@ -12455,6 +12455,7 @@ public import FLT.Mazur.WeierstrassDividedFifthShallowFields
 public import FLT.Mazur.WeierstrassDividedFifthShallowIncomingCancellation
 public import FLT.Mazur.WeierstrassDividedFifthShallowJointFields
 public import FLT.Mazur.WeierstrassDividedFifthShallowJointNodes
+public import FLT.Mazur.WeierstrassDividedFifthShallowJointRestriction
 public import FLT.Mazur.WeierstrassDividedFifthShallowLayerFields
 public import FLT.Mazur.WeierstrassDividedFifthShallowNodes
 public import FLT.Mazur.WeierstrassDividedFifthShallowPunctureIdentification
