@@ -5272,6 +5272,10 @@ public import FLT.Mazur.FiniteSupportEulerPositive
 public import FLT.Mazur.FiniteSurjectiveAmpleDescent
 public import FLT.Mazur.FiniteSurjectiveCoherentWitness
 public import FLT.Mazur.FiniteTargetAffineNorm
+public import FLT.Mazur.FiniteTargetInvariantAffineNeighborhood
+public import FLT.Mazur.FiniteTargetInvariantPrincipalCore
+public import FLT.Mazur.FiniteTargetNormCore
+public import FLT.Mazur.FiniteTargetOrbitAffineBasis
 public import FLT.Mazur.FiniteTensorCoefficientConditions
 public import FLT.Mazur.FiniteTensorIntegerClosedImmersion
 public import FLT.Mazur.FiniteTypeAbelNaturalIso
@@ -5925,6 +5929,7 @@ public import FLT.Mazur.HilbertFamilyGrassmannianSchemeMap
 public import FLT.Mazur.HilbertFamilyGrassmannianSchemeNaturality
 public import FLT.Mazur.HilbertFamilyRelationBaseChange
 public import FLT.Mazur.HilbertFamilyTruncatedRelations
+public import FLT.Mazur.HilbertFiniteAffineNeighborhood
 public import FLT.Mazur.HilbertFiniteAmbientPresentation
 public import FLT.Mazur.HilbertFiniteBoundaryDomain
 public import FLT.Mazur.HilbertFiniteDomainErrorVanishing
@@ -5932,9 +5937,12 @@ public import FLT.Mazur.HilbertFiniteDomainPrincipalCoverage
 public import FLT.Mazur.HilbertFiniteFreeQuotientRefinement
 public import FLT.Mazur.HilbertFiniteFreeRelationErrorVanishing
 public import FLT.Mazur.HilbertFiniteFreeRelationPrincipalCoverage
+public import FLT.Mazur.HilbertFiniteInvariantAffineBasis
+public import FLT.Mazur.HilbertFiniteNeighborhoodError
 public import FLT.Mazur.HilbertFiniteRelationErrorVanishing
 public import FLT.Mazur.HilbertFiniteRelationPrincipalCoverage
 public import FLT.Mazur.HilbertFiniteRelationUniformCoverage
+public import FLT.Mazur.HilbertFiniteTargetLocalLifts
 public import FLT.Mazur.HilbertFiniteTargetSaturation
 public import FLT.Mazur.HilbertFullInteriorFiniteKernel
 public import FLT.Mazur.HilbertFullInteriorQuotientChart
@@ -10654,6 +10662,7 @@ public import FLT.Mazur.SchemeFiniteGroupQuotientOrbits
 public import FLT.Mazur.SchemeFiniteOrbitOpenCore
 public import FLT.Mazur.SchemeFiniteTargetAffineNeighborhood
 public import FLT.Mazur.SchemeFiniteTargetBaseChange
+public import FLT.Mazur.SchemeFiniteTargetFiber
 public import FLT.Mazur.SchemeFiniteTargetFppfBaseChange
 public import FLT.Mazur.SchemeFiniteTargetFppfImage
 public import FLT.Mazur.SchemeFiniteTargetOpenRestriction
