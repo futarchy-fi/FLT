@@ -12457,6 +12457,7 @@ public import FLT.Mazur.WeierstrassDividedFixedTerminalBoundary
 public import FLT.Mazur.WeierstrassDividedFixedTerminalParameterIso
 public import FLT.Mazur.WeierstrassDividedFixedTerminalReduction
 public import FLT.Mazur.WeierstrassDividedFixedTerminalRestriction
+public import FLT.Mazur.WeierstrassDividedFourthGeometry
 public import FLT.Mazur.WeierstrassDividedFourthIncomingCancellation
 public import FLT.Mazur.WeierstrassDividedFourthJointFields
 public import FLT.Mazur.WeierstrassDividedFourthJointNodes
