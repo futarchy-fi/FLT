@@ -10071,6 +10071,7 @@ public import FLT.Mazur.ScalarTowerDivision
 public import FLT.Mazur.SchematicDenseDedekindFlat
 public import FLT.Mazur.SchematicDescentGluing
 public import FLT.Mazur.SchematicImageAffineEquations
+public import FLT.Mazur.SchemeAdicCompletionFlatDescent
 public import FLT.Mazur.SchemeAdicVanishingNeighborhood
 public import FLT.Mazur.SchemeAdicVanishingOpen
 public import FLT.Mazur.SchemeAffineAmbientTestCocycle
