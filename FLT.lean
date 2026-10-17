@@ -8215,6 +8215,7 @@ public import FLT.Mazur.PolygonCompleteParameterLineBaseChange
 public import FLT.Mazur.PolygonCompleteParameterLineCocycle
 public import FLT.Mazur.PolygonCompleteParameterMarking
 public import FLT.Mazur.PolygonCompleteParameterMarkingLine
+public import FLT.Mazur.PolygonCompleteParameterOriginalLine
 public import FLT.Mazur.PolygonCompleteParameterTranslation
 public import FLT.Mazur.PolygonCompletePointAcyclic
 public import FLT.Mazur.PolygonCompletePointAffineMorphism
