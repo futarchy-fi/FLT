@@ -12506,6 +12506,7 @@ public import FLT.Mazur.WeierstrassDividedFourthJointNodes
 public import FLT.Mazur.WeierstrassDividedFourthJointRestriction
 public import FLT.Mazur.WeierstrassDividedFourthLayerFieldIdentification
 public import FLT.Mazur.WeierstrassDividedFourthNodeRestriction
+public import FLT.Mazur.WeierstrassDividedFourthOuterCancellation
 public import FLT.Mazur.WeierstrassDividedFourthOuterFields
 public import FLT.Mazur.WeierstrassDividedFourthOuterNodes
 public import FLT.Mazur.WeierstrassDividedFourthPunctureIdentification
