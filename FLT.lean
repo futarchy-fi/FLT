@@ -4659,6 +4659,7 @@ public import FLT.Mazur.EquivalenceRelationChartFamilyCorrections
 public import FLT.Mazur.EquivalenceRelationChartFamilyLifts
 public import FLT.Mazur.EquivalenceRelationChartFamilyLocalization
 public import FLT.Mazur.EquivalenceRelationChartFamilyRestriction
+public import FLT.Mazur.EquivalenceRelationCompleteBoundaryCorrections
 public import FLT.Mazur.EquivalenceRelationCompleteChartImage
 public import FLT.Mazur.EquivalenceRelationCompleteClosedLocus
 public import FLT.Mazur.EquivalenceRelationCompleteEndpointOrbit
