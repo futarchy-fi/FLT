@@ -5085,6 +5085,9 @@ public import FLT.Mazur.FiniteIntersectionSectionComparison
 public import FLT.Mazur.FiniteIntersectionSectionDiagram
 public import FLT.Mazur.FiniteIteratedPolynomialCoefficients
 public import FLT.Mazur.FiniteJointFrameEnumeration
+public import FLT.Mazur.FiniteKernelCorrectionCommonDenominator
+public import FLT.Mazur.FiniteKernelCorrectionLocalization
+public import FLT.Mazur.FiniteKernelCorrectionLocalizedKernel
 public import FLT.Mazur.FiniteKernelCorrectionOperator
 public import FLT.Mazur.FiniteKernelCorrections
 public import FLT.Mazur.FiniteLeadingIdealFamily
@@ -5774,13 +5777,16 @@ public import FLT.Mazur.HilbertBoundaryFlatCommonCover
 public import FLT.Mazur.HilbertBoundaryGeometricGround
 public import FLT.Mazur.HilbertBoundaryGroundCertificate
 public import FLT.Mazur.HilbertBoundaryInfinitesimalArrows
+public import FLT.Mazur.HilbertBoundaryKernelCorrectionNumerator
 public import FLT.Mazur.HilbertBoundaryKernelLinearOperator
 public import FLT.Mazur.HilbertBoundaryKernelPair
 public import FLT.Mazur.HilbertBoundaryLiftLocus
 public import FLT.Mazur.HilbertBoundaryLocalCoverCriterion
+public import FLT.Mazur.HilbertBoundaryLocalizedKernelOperator
 public import FLT.Mazur.HilbertBoundaryOpenGeometricGround
 public import FLT.Mazur.HilbertBoundaryOrbit
 public import FLT.Mazur.HilbertBoundaryPrimeKernelCorrection
+public import FLT.Mazur.HilbertBoundaryPrimeLocalizedCorrection
 public import FLT.Mazur.HilbertBoundaryPrincipalLifting
 public import FLT.Mazur.HilbertBoundaryPrincipalLocalization
 public import FLT.Mazur.HilbertBoundaryQuotient
