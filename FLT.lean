@@ -12472,6 +12472,7 @@ public import FLT.Mazur.WeierstrassDividedFaithfulActionDescent
 public import FLT.Mazur.WeierstrassDividedFifthInitialFields
 public import FLT.Mazur.WeierstrassDividedFifthInitialLastNodes
 public import FLT.Mazur.WeierstrassDividedFifthInitialNodes
+public import FLT.Mazur.WeierstrassDividedFifthInitialRestriction
 public import FLT.Mazur.WeierstrassDividedFifthResidualFields
 public import FLT.Mazur.WeierstrassDividedFifthShallowAtlas
 public import FLT.Mazur.WeierstrassDividedFifthShallowAtlasClosing
