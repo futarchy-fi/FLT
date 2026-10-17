@@ -3124,6 +3124,7 @@ public import FLT.Mazur.AffineRefinementPullback
 public import FLT.Mazur.AffineRefinementReconstructionMap
 public import FLT.Mazur.AffineRefinementReconstructionRecognition
 public import FLT.Mazur.AffineRelationNorm
+public import FLT.Mazur.AffineRelationNormNeighborhood
 public import FLT.Mazur.AffineRelativeFiberCriterion
 public import FLT.Mazur.AffineRelativeLineModel
 public import FLT.Mazur.AffineResidueEvaluationComparison
