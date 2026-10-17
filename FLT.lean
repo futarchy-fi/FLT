@@ -7787,6 +7787,7 @@ public import FLT.Mazur.PolygonCompleteIdentityAdicSectionChartCoverage
 public import FLT.Mazur.PolygonCompleteIdentityAdicSectionEdges
 public import FLT.Mazur.PolygonCompleteIdentityAdicSectionOpen
 public import FLT.Mazur.PolygonCompleteIdentityAdicSectionReduction
+public import FLT.Mazur.PolygonCompleteIdentityAffineQuotientStage
 public import FLT.Mazur.PolygonCompleteIdentityAllPositiveLaws
 public import FLT.Mazur.PolygonCompleteIdentityAmbientErrorRelation
 public import FLT.Mazur.PolygonCompleteIdentityAmbientParameterComparison
