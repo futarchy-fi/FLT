@@ -7080,6 +7080,7 @@ public import FLT.Mazur.OccurrencePolynomialDataStages
 public import FLT.Mazur.OccurrenceQuotientInverseStages
 public import FLT.Mazur.OddWeierstrassAffineMarking
 public import FLT.Mazur.OddWeierstrassAuxiliaryAffineSections
+public import FLT.Mazur.OddWeierstrassAuxiliaryCoefficientCharts
 public import FLT.Mazur.OddWeierstrassAuxiliaryCoefficientNaturality
 public import FLT.Mazur.OddWeierstrassAuxiliaryCoordinateExt
 public import FLT.Mazur.OddWeierstrassAuxiliaryCoordinateInverse
