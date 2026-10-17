@@ -4895,6 +4895,7 @@ public import FLT.Mazur.FiniteCoefficientKernelSubalgebra
 public import FLT.Mazur.FiniteCoefficientProperties
 public import FLT.Mazur.FiniteCoefficientRestriction
 public import FLT.Mazur.FiniteCohomologyFreeNeighborhood
+public import FLT.Mazur.FiniteCokernelReductionMatrix
 public import FLT.Mazur.FiniteCommonPrincipalCover
 public import FLT.Mazur.FiniteCompactOpenAffineLimit
 public import FLT.Mazur.FiniteCompactOpenCoverLimit
