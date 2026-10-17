@@ -8447,6 +8447,7 @@ public import FLT.Mazur.PolygonCompleteWholeActionLaws
 public import FLT.Mazur.PolygonCompleteWholeActionParameterCover
 public import FLT.Mazur.PolygonCompleteWholeActionRotatedCharts
 public import FLT.Mazur.PolygonCompleteWholeActionSmooth
+public import FLT.Mazur.PolygonCompleteWholeShear
 public import FLT.Mazur.PolygonCompleteZeroParameterFiber
 public import FLT.Mazur.PolygonComponentCoordinateScaling
 public import FLT.Mazur.PolygonComponentDistinct
