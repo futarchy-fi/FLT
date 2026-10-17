@@ -2535,11 +2535,14 @@ public import FLT.Mazur.AdicCompletedInfinitesimalLift
 public import FLT.Mazur.AdicCompletedInfinitesimalSpaceMap
 public import FLT.Mazur.AdicCompletionAlgEquiv
 public import FLT.Mazur.AdicCompletionFiltrationTransport
+public import FLT.Mazur.AdicCompletionFlatDescent
 public import FLT.Mazur.AdicCompletionPositiveEquiv
 public import FLT.Mazur.AdicCompletionPositiveLimit
 public import FLT.Mazur.AdicCompletionPrincipal
 public import FLT.Mazur.AdicCompletionQuotientEquiv
 public import FLT.Mazur.AdicCompletionScalars
+public import FLT.Mazur.AdicCompletionSeparatedExt
+public import FLT.Mazur.AdicCompletionSpectrumCover
 public import FLT.Mazur.AdicConormalTargetCompletion
 public import FLT.Mazur.AdicCotangentHomComparison
 public import FLT.Mazur.AdicCotangentHomDerivative
@@ -2593,9 +2596,11 @@ public import FLT.Mazur.AdicModuleScalarChange
 public import FLT.Mazur.AdicOriginalSectionReconstruction
 public import FLT.Mazur.AdicOriginalSpaceProjection
 public import FLT.Mazur.AdicPolynomialPresentationLift
+public import FLT.Mazur.AdicPositiveAffineLift
 public import FLT.Mazur.AdicPresentationDerivation
 public import FLT.Mazur.AdicPresentationFirstCotangent
 public import FLT.Mazur.AdicPresentationScalarTowers
+public import FLT.Mazur.AdicQuotientFlatCriterion
 public import FLT.Mazur.AdicSectionIsoReconstruction
 public import FLT.Mazur.AdicSectionProjectionExt
 public import FLT.Mazur.AdicSeparatedDerivation
@@ -3149,6 +3154,7 @@ public import FLT.Mazur.AffineSectionNormFiber
 public import FLT.Mazur.AffineSectionResidueEquation
 public import FLT.Mazur.AffineSectionTensorSquare
 public import FLT.Mazur.AffineSectionsReconstruction
+public import FLT.Mazur.AffineSeparatedFamilyExt
 public import FLT.Mazur.AffineSeparatedPullbackGenerators
 public import FLT.Mazur.AffineSmoothEtaleCoordinates
 public import FLT.Mazur.AffineSmoothFiniteFlatCartier
@@ -3532,6 +3538,8 @@ public import FLT.Mazur.BlowupReesZeroComponent
 public import FLT.Mazur.BoundaryCorrectionAdicAmbient
 public import FLT.Mazur.BoundaryCorrectionAdicCertificate
 public import FLT.Mazur.BoundaryCorrectionAmbientEquations
+public import FLT.Mazur.BoundaryCorrectionCompatibleBaseChange
+public import FLT.Mazur.BoundaryCorrectionCompatibleErrors
 public import FLT.Mazur.BoundaryCorrectionFaithfulCoefficients
 public import FLT.Mazur.BoundaryCorrectionFiniteCokernel
 public import FLT.Mazur.BoundaryCorrectionFiniteReduction
@@ -3541,6 +3549,7 @@ public import FLT.Mazur.BoundaryCorrectionIdeal
 public import FLT.Mazur.BoundaryCorrectionLinearSystem
 public import FLT.Mazur.BoundaryCorrectionLocalCokernel
 public import FLT.Mazur.BoundaryCorrectionLocalReduction
+public import FLT.Mazur.BoundaryCorrectionOperatorIndependence
 public import FLT.Mazur.BoundaryCorrectionReductionCertificate
 public import FLT.Mazur.BoundaryCorrectionTensorCoordinates
 public import FLT.Mazur.BoundedFlatAcyclicNeighborhood
@@ -3845,6 +3854,7 @@ public import FLT.Mazur.CompactOpenUnitDescent
 public import FLT.Mazur.CompactSchemeIntegerDescent
 public import FLT.Mazur.CompactSeparatedPushforward
 public import FLT.Mazur.ComparedStageSectionReconstruction
+public import FLT.Mazur.CompatibleErrorBaseChange
 public import FLT.Mazur.CompatibleSubgroupAmple
 public import FLT.Mazur.CompatibleSubgroupCyclic
 public import FLT.Mazur.CompatibleSubgroupGeneratorMarking
@@ -5932,6 +5942,7 @@ public import FLT.Mazur.HilbertOrbitBoundaryBaseCorrectionCriterion
 public import FLT.Mazur.HilbertOrbitBoundaryBaseLocalizationMaps
 public import FLT.Mazur.HilbertOrbitBoundaryBaseLocalizedKernels
 public import FLT.Mazur.HilbertOrbitBoundaryBaseLocalizedMultipliers
+public import FLT.Mazur.HilbertOrbitBoundaryCompatibleErrors
 public import FLT.Mazur.HilbertOrbitBoundaryCorrectionIdeal
 public import FLT.Mazur.HilbertOrbitBoundaryFamilyLifts
 public import FLT.Mazur.HilbertOrbitBoundaryFiniteAtlas
@@ -7785,6 +7796,7 @@ public import FLT.Mazur.PolygonCompleteIdentityAmbientErrorRelation
 public import FLT.Mazur.PolygonCompleteIdentityAmbientParameterComparison
 public import FLT.Mazur.PolygonCompleteIdentityChartAtlas
 public import FLT.Mazur.PolygonCompleteIdentityChartOperations
+public import FLT.Mazur.PolygonCompleteIdentityCompletionDescent
 public import FLT.Mazur.PolygonCompleteIdentityCubicChartMaps
 public import FLT.Mazur.PolygonCompleteIdentityCubicCoordinates
 public import FLT.Mazur.PolygonCompleteIdentityCubicDenominators
@@ -7948,6 +7960,8 @@ public import FLT.Mazur.PolygonCompleteIdentityFirstSourceTargetComplement
 public import FLT.Mazur.PolygonCompleteIdentityFirstSourceTargetFunctions
 public import FLT.Mazur.PolygonCompleteIdentityFirstSourceZeroCubic
 public import FLT.Mazur.PolygonCompleteIdentityFlatOpenLift
+public import FLT.Mazur.PolygonCompleteIdentityFlatTestDescent
+public import FLT.Mazur.PolygonCompleteIdentityFlatTestLift
 public import FLT.Mazur.PolygonCompleteIdentityGenericAmbient
 public import FLT.Mazur.PolygonCompleteIdentityGenericAmbientIso
 public import FLT.Mazur.PolygonCompleteIdentityGenericAmbientKernel
@@ -10068,6 +10082,7 @@ public import FLT.Mazur.ScalarTowerDivision
 public import FLT.Mazur.SchematicDenseDedekindFlat
 public import FLT.Mazur.SchematicDescentGluing
 public import FLT.Mazur.SchematicImageAffineEquations
+public import FLT.Mazur.SchemeAdicCompletionFlatDescent
 public import FLT.Mazur.SchemeAdicVanishingNeighborhood
 public import FLT.Mazur.SchemeAdicVanishingOpen
 public import FLT.Mazur.SchemeAffineAmbientTestCocycle
@@ -10284,6 +10299,7 @@ public import FLT.Mazur.SchemeFlatFamilyReflection
 public import FLT.Mazur.SchemeFlatFppfTargetDensity
 public import FLT.Mazur.SchemeFlatProductDensity
 public import FLT.Mazur.SchemeFlatSourceImage
+public import FLT.Mazur.SchemeFlatTargetFamilyReflection
 public import FLT.Mazur.SchemeFlatTargetNeighborhood
 public import FLT.Mazur.SchemeFlatTargetOpen
 public import FLT.Mazur.SchemeFppfCanonicalPairRecovery
