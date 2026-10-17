@@ -5718,6 +5718,7 @@ public import FLT.Mazur.HilbertBoundaryQuotientGerms
 public import FLT.Mazur.HilbertBoundaryQuotientNilpotence
 public import FLT.Mazur.HilbertBoundaryQuotientSections
 public import FLT.Mazur.HilbertBoundaryRelationNilpotence
+public import FLT.Mazur.HilbertBoundaryRelationOpenCorrections
 public import FLT.Mazur.HilbertBoundaryRelationTests
 public import FLT.Mazur.HilbertBoundaryRelationVanishingNeighborhood
 public import FLT.Mazur.HilbertBoundarySchemeTests
