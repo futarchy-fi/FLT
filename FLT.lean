@@ -7773,6 +7773,11 @@ public import FLT.Mazur.PolygonCompleteFamilyFlatness
 public import FLT.Mazur.PolygonCompleteFamilyHomExt
 public import FLT.Mazur.PolygonCompleteFiberMarkings
 public import FLT.Mazur.PolygonCompleteFieldH1
+public import FLT.Mazur.PolygonCompleteFiniteBoundaryLine
+public import FLT.Mazur.PolygonCompleteFiniteParameterLines
+public import FLT.Mazur.PolygonCompleteFiniteParameterMarkings
+public import FLT.Mazur.PolygonCompleteFiniteParameterProduct
+public import FLT.Mazur.PolygonCompleteFiniteParameterTranslation
 public import FLT.Mazur.PolygonCompleteFixedPointFree
 public import FLT.Mazur.PolygonCompleteFlatContractionExt
 public import FLT.Mazur.PolygonCompleteFlatSmoothPreimage
@@ -8593,6 +8598,7 @@ public import FLT.Mazur.PolygonInfinitesimalCoefficientTransport
 public import FLT.Mazur.PolygonInfinitesimalDiagram
 public import FLT.Mazur.PolygonInfinitesimalDivisor
 public import FLT.Mazur.PolygonInfinitesimalDivisorLine
+public import FLT.Mazur.PolygonInfinitesimalDivisorLineSection
 public import FLT.Mazur.PolygonInfinitesimalEdgeCoordinates
 public import FLT.Mazur.PolygonInfinitesimalEdgeExt
 public import FLT.Mazur.PolygonInfinitesimalEdgeKernel
