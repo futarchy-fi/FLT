@@ -7688,6 +7688,7 @@ public import FLT.Mazur.PolygonCollapsedChainLocalDescent
 public import FLT.Mazur.PolygonCollapsedChainModel
 public import FLT.Mazur.PolygonCollapsedChainOpenCover
 public import FLT.Mazur.PolygonCollapsedChainOverlapEdges
+public import FLT.Mazur.PolygonCollapsedChainRetainedComplement
 public import FLT.Mazur.PolygonCollapsedFiberIdeal
 public import FLT.Mazur.PolygonCollapsedFiberReduced
 public import FLT.Mazur.PolygonCollapsedIdealDetection
