@@ -8534,6 +8534,7 @@ public import FLT.Mazur.PolygonComponentHZeroMatching
 public import FLT.Mazur.PolygonComponentImages
 public import FLT.Mazur.PolygonConnected
 public import FLT.Mazur.PolygonConstantSections
+public import FLT.Mazur.PolygonContractionFieldExtension
 public import FLT.Mazur.PolygonCubicChartGeneration
 public import FLT.Mazur.PolygonCubicClosedImmersionCriterion
 public import FLT.Mazur.PolygonCubicComponentSection
