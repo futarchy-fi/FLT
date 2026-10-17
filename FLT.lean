@@ -8747,6 +8747,7 @@ public import FLT.Mazur.PolygonSmoothingNilpotentBoundaryFactor
 public import FLT.Mazur.PolygonSmoothingNilpotentBranches
 public import FLT.Mazur.PolygonSmoothingNilpotentShear
 public import FLT.Mazur.PolygonSmoothingNilpotentShearNaturality
+public import FLT.Mazur.PolygonSmoothingNilpotentShearPunctures
 public import FLT.Mazur.PolygonSmoothingNilpotentUnit
 public import FLT.Mazur.PolygonSmoothingNodeBasicOpen
 public import FLT.Mazur.PolygonSmoothingNodeDenominatorCoverage
