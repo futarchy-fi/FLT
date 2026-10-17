@@ -12849,6 +12849,7 @@ public import FLT.Mazur.WeierstrassDividedSecondJointThirdOrder
 public import FLT.Mazur.WeierstrassDividedSecondJointTransitions
 public import FLT.Mazur.WeierstrassDividedSecondPrecedingAdjacent
 public import FLT.Mazur.WeierstrassDividedSecondPrecedingIncoming
+public import FLT.Mazur.WeierstrassDividedSecondPrecedingInitial
 public import FLT.Mazur.WeierstrassDividedSecondPrecedingResidual
 public import FLT.Mazur.WeierstrassDividedSecondPunctureIdentification
 public import FLT.Mazur.WeierstrassDividedSecondResidualAlgebra
