@@ -5808,6 +5808,7 @@ public import FLT.Mazur.HilbertBoundaryThickeningQuotients
 public import FLT.Mazur.HilbertBoundaryThickeningRelation
 public import FLT.Mazur.HilbertBoundaryThickeningTests
 public import FLT.Mazur.HilbertBoundaryThickeningTower
+public import FLT.Mazur.HilbertBoundaryUniformRelationCorrections
 public import FLT.Mazur.HilbertBoundedAmbientAtlas
 public import FLT.Mazur.HilbertBoundedChartClosedEmbedding
 public import FLT.Mazur.HilbertBoundedCoordinateGeneration
