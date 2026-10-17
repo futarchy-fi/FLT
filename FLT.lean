@@ -7731,6 +7731,7 @@ public import FLT.Mazur.PolygonCompleteCartesianRotation
 public import FLT.Mazur.PolygonCompleteChartOperationCompatibility
 public import FLT.Mazur.PolygonCompleteChartOverlapField
 public import FLT.Mazur.PolygonCompleteClassifiedFibers
+public import FLT.Mazur.PolygonCompleteClosedActionProduct
 public import FLT.Mazur.PolygonCompleteClosedActionRotation
 public import FLT.Mazur.PolygonCompleteClosedCartierGenerator
 public import FLT.Mazur.PolygonCompleteClosedChartComparison
@@ -7740,6 +7741,9 @@ public import FLT.Mazur.PolygonCompleteClosedFiber
 public import FLT.Mazur.PolygonCompleteClosedFiniteSubgroup
 public import FLT.Mazur.PolygonCompleteClosedGenus
 public import FLT.Mazur.PolygonCompleteClosedH1Scalars
+public import FLT.Mazur.PolygonCompleteClosedLaurentAction
+public import FLT.Mazur.PolygonCompleteClosedLaurentProduct
+public import FLT.Mazur.PolygonCompleteClosedParameterReduction
 public import FLT.Mazur.PolygonCompleteClosedPointAcyclic
 public import FLT.Mazur.PolygonCompleteClosedPointCohomology
 public import FLT.Mazur.PolygonCompleteClosedPointLineComparison
@@ -7748,6 +7752,7 @@ public import FLT.Mazur.PolygonCompleteClosedSingularPoints
 public import FLT.Mazur.PolygonCompleteClosedSmoothLocus
 public import FLT.Mazur.PolygonCompleteClosedSmoothSquare
 public import FLT.Mazur.PolygonCompleteClosedSpecialization
+public import FLT.Mazur.PolygonCompleteClosedSplitParameter
 public import FLT.Mazur.PolygonCompleteCoefficientAdicComparison
 public import FLT.Mazur.PolygonCompleteCoefficientAmple
 public import FLT.Mazur.PolygonCompleteCoefficientCoherence
@@ -9055,6 +9060,7 @@ public import FLT.Mazur.PolygonTranslationNormalizationLine
 public import FLT.Mazur.PolygonTranslationReflectionLine
 public import FLT.Mazur.PolygonUniversalAction
 public import FLT.Mazur.PolygonUniversalEdgeAlgebra
+public import FLT.Mazur.PolygonUniversalEdgeGroupLaw
 public import FLT.Mazur.PolygonUniversalNodeRestriction
 public import FLT.Mazur.PolygonUniversalScaling
 public import FLT.Mazur.PolygonVeroneseAdicProjSquare
