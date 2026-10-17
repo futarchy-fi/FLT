@@ -7681,6 +7681,7 @@ public import FLT.Mazur.PolygonCollapsedBoundaryIdeal
 public import FLT.Mazur.PolygonCollapsedBoundarySupport
 public import FLT.Mazur.PolygonCollapsedChainBoundaryCharts
 public import FLT.Mazur.PolygonCollapsedChainCartesianAtlas
+public import FLT.Mazur.PolygonCollapsedChainComponentDescent
 public import FLT.Mazur.PolygonCollapsedChainEdgeDescent
 public import FLT.Mazur.PolygonCollapsedChainGlobalDescent
 public import FLT.Mazur.PolygonCollapsedChainInteriorCharts
