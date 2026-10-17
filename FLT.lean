@@ -12759,6 +12759,7 @@ public import FLT.Mazur.WeierstrassDividedTerminalPolygonBoundaryRestriction
 public import FLT.Mazur.WeierstrassDividedTerminalPolygonInverseRestriction
 public import FLT.Mazur.WeierstrassDividedTerminalPrimitiveConstraint
 public import FLT.Mazur.WeierstrassDividedTerminalResidualAlgebra
+public import FLT.Mazur.WeierstrassDividedTerminalResidualFiltration
 public import FLT.Mazur.WeierstrassDividedTerminalResidueAtlas
 public import FLT.Mazur.WeierstrassDividedTerminalResidueBoundary
 public import FLT.Mazur.WeierstrassDividedTerminalResidueCharts
