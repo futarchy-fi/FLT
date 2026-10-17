@@ -7078,6 +7078,7 @@ public import FLT.Mazur.OddWeierstrassAuxiliaryCoordinateSections
 public import FLT.Mazur.OddWeierstrassAuxiliaryCoordinateUnits
 public import FLT.Mazur.OddWeierstrassAuxiliaryCoverage
 public import FLT.Mazur.OddWeierstrassAuxiliaryCubicCoefficient
+public import FLT.Mazur.OddWeierstrassAuxiliaryCubicNaturality
 public import FLT.Mazur.OddWeierstrassAuxiliaryCubicProjection
 public import FLT.Mazur.OddWeierstrassAuxiliaryEtale
 public import FLT.Mazur.OddWeierstrassAuxiliaryFieldCoordinates
