@@ -74,7 +74,7 @@ local notation "P" => fun k ↦ arithmeticSecondPrecedingOrientedIso hπ data H 
   exact h.trans hp
 
 /-- An unaffected retained label keeps the full original normalized node. -/
-def arithmeticSecondJointEarlierIdentification
+def arithmeticSecondJointUnchangedIdentification
     (i : Fin (j + 1)) (hi : i.val + 1 ≠ j) (b : Bool) :
     PolygonSmoothing.chart (Quotient R π m)
         (arithmeticInitialMobiusSmoothing W H.a1_unit (π ^ 1) π m) ≅
@@ -87,17 +87,17 @@ def arithmeticSecondJointEarlierIdentification
 theorem arithmeticSecondJointAtlasCorrection_earlier
     (i : Fin (j + 1)) (hi : i.val + 1 ≠ j) (hl : i.val ≠ j) (b : Bool) :
     arithmeticSecondJointAtlasCorrection hπ data H m j hj u hu (.retained i b) =
-      arithmeticSecondJointEarlierIdentification hπ data H j hj u hu m i hi b := by
+      arithmeticSecondJointUnchangedIdentification hπ data H j hj u hu m i hi b := by
   rw [arithmeticSecondJointAtlasCorrection]
   simp only [hi, hl, ↓reduceDIte, ↓reduceIte, Iso.refl_trans]
   rfl
 
 /-- Every unaffected retained chart uses its original full coefficient restriction. -/
-@[reassoc] theorem arithmeticSecondJointEarlierIdentification_restriction
+@[reassoc] theorem arithmeticSecondJointUnchangedIdentification_restriction
     (i : Fin (j + 1)) (hi : i.val + 1 ≠ j) (hl : i.val ≠ j) (b : Bool) :
-    (arithmeticSecondJointEarlierIdentification hπ data H j hj u hu m i hi b).hom ≫
+    (arithmeticSecondJointUnchangedIdentification hπ data H j hj u hu m i hi b).hom ≫
         S m (.retained i b) =
-      ρ ≫ (arithmeticSecondJointEarlierIdentification
+      ρ ≫ (arithmeticSecondJointUnchangedIdentification
         hπ data H j hj u hu (m + 1) i hi b).hom := by
   have h := arithmeticSecondJointAtlasCorrection_restriction hπ data H j hj u hu m
     (.retained i b)
