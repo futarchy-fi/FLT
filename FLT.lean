@@ -12506,6 +12506,7 @@ public import FLT.Mazur.WeierstrassDividedFaithfulActionDescent
 public import FLT.Mazur.WeierstrassDividedFifthInitialCancellation
 public import FLT.Mazur.WeierstrassDividedFifthInitialFields
 public import FLT.Mazur.WeierstrassDividedFifthInitialGeometry
+public import FLT.Mazur.WeierstrassDividedFifthInitialIncomingCancellation
 public import FLT.Mazur.WeierstrassDividedFifthInitialLastNodes
 public import FLT.Mazur.WeierstrassDividedFifthInitialLayerFields
 public import FLT.Mazur.WeierstrassDividedFifthInitialNodes
