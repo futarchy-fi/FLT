@@ -12460,6 +12460,7 @@ public import FLT.Mazur.WeierstrassDividedFixedTerminalRestriction
 public import FLT.Mazur.WeierstrassDividedFourthAtlas
 public import FLT.Mazur.WeierstrassDividedFourthAtlasClosing
 public import FLT.Mazur.WeierstrassDividedFourthAtlasIdentification
+public import FLT.Mazur.WeierstrassDividedFourthAtlasIncoming
 public import FLT.Mazur.WeierstrassDividedFourthGeometry
 public import FLT.Mazur.WeierstrassDividedFourthIncomingCancellation
 public import FLT.Mazur.WeierstrassDividedFourthJointFields
