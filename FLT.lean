@@ -6336,6 +6336,7 @@ public import FLT.Mazur.KernelPairSourceBranchCriterion
 public import FLT.Mazur.KernelPairTestIso
 public import FLT.Mazur.KernelPairUnramifiedInverse
 public import FLT.Mazur.LargeDegreeRelativeLineSections
+public import FLT.Mazur.LaurentBoundaryCorrectionScalar
 public import FLT.Mazur.LaurentBoundaryCorrectionSplit
 public import FLT.Mazur.LaurentBoundaryTailShift
 public import FLT.Mazur.LaurentBoundaryVectorField
