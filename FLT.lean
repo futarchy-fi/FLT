@@ -12462,6 +12462,7 @@ public import FLT.Mazur.WeierstrassDividedFourthAtlasClosing
 public import FLT.Mazur.WeierstrassDividedFourthAtlasIdentification
 public import FLT.Mazur.WeierstrassDividedFourthAtlasIncoming
 public import FLT.Mazur.WeierstrassDividedFourthAtlasPreceding
+public import FLT.Mazur.WeierstrassDividedFourthAtlasSystem
 public import FLT.Mazur.WeierstrassDividedFourthEarlierGeometry
 public import FLT.Mazur.WeierstrassDividedFourthGeometry
 public import FLT.Mazur.WeierstrassDividedFourthIncomingCancellation
