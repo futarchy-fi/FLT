@@ -4793,6 +4793,8 @@ public import FLT.Mazur.EquivalenceRelationSourceRestriction
 public import FLT.Mazur.EquivalenceRelationSubframeComparison
 public import FLT.Mazur.EquivalenceRelationSubframeGraphs
 public import FLT.Mazur.EquivalenceRelationSubframeSourceComparison
+public import FLT.Mazur.EquivalenceRelationUniformSourceOpen
+public import FLT.Mazur.EquivalenceRelationUniformVanishingOpen
 public import FLT.Mazur.EtaleAffineSpaceDimension
 public import FLT.Mazur.EtaleAlgebraFiniteBranch
 public import FLT.Mazur.EtaleAlgebraReduced
@@ -5807,6 +5809,7 @@ public import FLT.Mazur.HilbertBoundaryThickeningQuotients
 public import FLT.Mazur.HilbertBoundaryThickeningRelation
 public import FLT.Mazur.HilbertBoundaryThickeningTests
 public import FLT.Mazur.HilbertBoundaryThickeningTower
+public import FLT.Mazur.HilbertBoundaryUniformRelationCorrections
 public import FLT.Mazur.HilbertBoundedAmbientAtlas
 public import FLT.Mazur.HilbertBoundedChartClosedEmbedding
 public import FLT.Mazur.HilbertBoundedCoordinateGeneration
@@ -6105,6 +6108,7 @@ public import FLT.Mazur.HilbertSupportOpenPullback
 public import FLT.Mazur.HilbertTruncatedIdealDetection
 public import FLT.Mazur.HilbertTruncatedIdealGeneration
 public import FLT.Mazur.HilbertTupleBasisTower
+public import FLT.Mazur.HilbertUniformSourceOriginalSections
 public import FLT.Mazur.HilbertUniversalComplementMatrix
 public import FLT.Mazur.HilbertUniversalFrameRebase
 public import FLT.Mazur.HomIntegerModel
@@ -10630,6 +10634,7 @@ public import FLT.Mazur.SchemeNormalizedRecoveryOverlap
 public import FLT.Mazur.SchemeOpenChartRange
 public import FLT.Mazur.SchemeOpenEnvelopeDenominators
 public import FLT.Mazur.SchemeOpenEnvelopeInterior
+public import FLT.Mazur.SchemeOpenEnvelopeInteriorTests
 public import FLT.Mazur.SchemeOpenEnvelopeLocus
 public import FLT.Mazur.SchemeOpenPushoutCharts
 public import FLT.Mazur.SchemeOpenPushoutCoverIso
@@ -10812,6 +10817,7 @@ public import FLT.Mazur.SchemeUnchangedOpenComposition
 public import FLT.Mazur.SchemeUnchangedOpenIsoSquare
 public import FLT.Mazur.SchemeUnchangedOpenLift
 public import FLT.Mazur.SchemeUnchangedOpenPullback
+public import FLT.Mazur.SchemeUniformAdicVanishing
 public import FLT.Mazur.SchemeWholeFiberCoefficients
 public import FLT.Mazur.SchemeWholeFiberGenericOpen
 public import FLT.Mazur.SchemeWholeFiberOpen
@@ -11310,6 +11316,7 @@ public import FLT.Mazur.TwoGeneratorRelationKernelBaseChange
 public import FLT.Mazur.TwoGeneratorRelationQuotient
 public import FLT.Mazur.TwoGeneratorRelationSequence
 public import FLT.Mazur.TwoGeneratorRelationUnit
+public import FLT.Mazur.UniformAdicDiscrepancySeparation
 public import FLT.Mazur.UniformizerRootExtension
 public import FLT.Mazur.UnitIntegerModel
 public import FLT.Mazur.UnitLeadingBasisExtension
