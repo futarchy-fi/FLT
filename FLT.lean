@@ -12572,6 +12572,7 @@ public import FLT.Mazur.WeierstrassDividedFourthResidualRestriction
 public import FLT.Mazur.WeierstrassDividedFourthShallowCancellation
 public import FLT.Mazur.WeierstrassDividedFourthShallowFields
 public import FLT.Mazur.WeierstrassDividedFourthShallowNodes
+public import FLT.Mazur.WeierstrassDividedFourthShallowRestriction
 public import FLT.Mazur.WeierstrassDividedFourthSmoothingAnnihilation
 public import FLT.Mazur.WeierstrassDividedFourthTerminalGeometry
 public import FLT.Mazur.WeierstrassDividedFourthTransitions
