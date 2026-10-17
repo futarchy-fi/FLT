@@ -4722,6 +4722,7 @@ public import FLT.Mazur.EquivalenceRelationMixedFrameRelation
 public import FLT.Mazur.EquivalenceRelationMixedResidualDecomposition
 public import FLT.Mazur.EquivalenceRelationMixedResidualOpen
 public import FLT.Mazur.EquivalenceRelationMixedResidualPieces
+public import FLT.Mazur.EquivalenceRelationMixedSourceEquations
 public import FLT.Mazur.EquivalenceRelationNormalizedActionComplete
 public import FLT.Mazur.EquivalenceRelationNormalizedActionGraphs
 public import FLT.Mazur.EquivalenceRelationNormalizedActionRelation
