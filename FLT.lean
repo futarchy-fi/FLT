@@ -2644,6 +2644,7 @@ public import FLT.Mazur.AffineBranchSequence
 public import FLT.Mazur.AffineCanonicalMapCompatibility
 public import FLT.Mazur.AffineCanonicalOverlapChart
 public import FLT.Mazur.AffineCanonicalOverlapRecognition
+public import FLT.Mazur.AffineCartesianNorm
 public import FLT.Mazur.AffineCartesianPreimageSections
 public import FLT.Mazur.AffineCartesianSectionPushout
 public import FLT.Mazur.AffineCartesianSectionScalars
@@ -3122,6 +3123,8 @@ public import FLT.Mazur.AffineRefinementIdentity
 public import FLT.Mazur.AffineRefinementPullback
 public import FLT.Mazur.AffineRefinementReconstructionMap
 public import FLT.Mazur.AffineRefinementReconstructionRecognition
+public import FLT.Mazur.AffineRelationNorm
+public import FLT.Mazur.AffineRelationNormNeighborhood
 public import FLT.Mazur.AffineRelativeFiberCriterion
 public import FLT.Mazur.AffineRelativeLineModel
 public import FLT.Mazur.AffineResidueEvaluationComparison
@@ -5903,6 +5906,8 @@ public import FLT.Mazur.HilbertFamilyRelationBaseChange
 public import FLT.Mazur.HilbertFamilyTruncatedRelations
 public import FLT.Mazur.HilbertFiniteAmbientPresentation
 public import FLT.Mazur.HilbertFiniteFreeQuotientRefinement
+public import FLT.Mazur.HilbertFiniteFreeRelationErrorVanishing
+public import FLT.Mazur.HilbertFiniteFreeRelationPrincipalCoverage
 public import FLT.Mazur.HilbertFiniteRelationUniformCoverage
 public import FLT.Mazur.HilbertFullInteriorFiniteKernel
 public import FLT.Mazur.HilbertFullInteriorQuotientChart
@@ -10284,6 +10289,7 @@ public import FLT.Mazur.RelativeRelationMonicSeedOpenQuotient
 public import FLT.Mazur.RelativeRelationMonicSeedQuotient
 public import FLT.Mazur.RelativeRelationNilpotentGerms
 public import FLT.Mazur.RelativeRelationNilpotentSections
+public import FLT.Mazur.RelativeRelationNormPrincipal
 public import FLT.Mazur.RelativeRelationOpenFunctionMap
 public import FLT.Mazur.RelativeRelationOpenSaturation
 public import FLT.Mazur.RelativeRelationOpenSourceFunctions
@@ -12633,6 +12639,23 @@ public import FLT.Mazur.WeierstrassDividedFifthDeepRestriction
 public import FLT.Mazur.WeierstrassDividedFifthDeepSixthOrder
 public import FLT.Mazur.WeierstrassDividedFifthDeepUnchanged
 public import FLT.Mazur.WeierstrassDividedFifthDeepUnchangedEdges
+public import FLT.Mazur.WeierstrassDividedFifthFartherAtlas
+public import FLT.Mazur.WeierstrassDividedFifthFartherAtlasEdge
+public import FLT.Mazur.WeierstrassDividedFifthFartherAtlasIncoming
+public import FLT.Mazur.WeierstrassDividedFifthFartherAtlasRestriction
+public import FLT.Mazur.WeierstrassDividedFifthFartherAtlasSystem
+public import FLT.Mazur.WeierstrassDividedFifthFartherCancellation
+public import FLT.Mazur.WeierstrassDividedFifthFartherFields
+public import FLT.Mazur.WeierstrassDividedFifthFartherGeometry
+public import FLT.Mazur.WeierstrassDividedFifthFartherIdentification
+public import FLT.Mazur.WeierstrassDividedFifthFartherIncomingCancellation
+public import FLT.Mazur.WeierstrassDividedFifthFartherInputIdentification
+public import FLT.Mazur.WeierstrassDividedFifthFartherInputRestriction
+public import FLT.Mazur.WeierstrassDividedFifthFartherNodeIdentification
+public import FLT.Mazur.WeierstrassDividedFifthFartherNodeRestriction
+public import FLT.Mazur.WeierstrassDividedFifthFartherNodes
+public import FLT.Mazur.WeierstrassDividedFifthFartherOpenRestriction
+public import FLT.Mazur.WeierstrassDividedFifthFartherRestriction
 public import FLT.Mazur.WeierstrassDividedFifthInitialAtlas
 public import FLT.Mazur.WeierstrassDividedFifthInitialAtlasClosing
 public import FLT.Mazur.WeierstrassDividedFifthInitialAtlasEdge
