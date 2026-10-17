@@ -10084,6 +10084,7 @@ public import FLT.Mazur.RelativeSerreAffineVanishing
 public import FLT.Mazur.RelativeSerreLocalizedTower
 public import FLT.Mazur.RelativeSerreSectionModules
 public import FLT.Mazur.RelativeSerreVanishing
+public import FLT.Mazur.RelativeSubmoduleQuotient
 public import FLT.Mazur.RelativeSums
 public import FLT.Mazur.RelativeTupleCollision
 public import FLT.Mazur.RelativeTupleCompletenessLocus
