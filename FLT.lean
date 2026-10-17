@@ -12450,6 +12450,7 @@ public import FLT.Mazur.WeierstrassDividedFactorRatioPolygonNaturality
 public import FLT.Mazur.WeierstrassDividedFactorRatioRetainedBoundary
 public import FLT.Mazur.WeierstrassDividedFaithfulActionDescent
 public import FLT.Mazur.WeierstrassDividedFifthResidualFields
+public import FLT.Mazur.WeierstrassDividedFifthShallowJointFields
 public import FLT.Mazur.WeierstrassDividedFinalAdjacentComponents
 public import FLT.Mazur.WeierstrassDividedFinalAdjacentConicBranches
 public import FLT.Mazur.WeierstrassDividedFinalAdjacentOverComponents
