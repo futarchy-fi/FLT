@@ -8668,6 +8668,7 @@ public import FLT.Mazur.PolygonCompleteSmoothMultiplication
 public import FLT.Mazur.PolygonCompleteSmoothOriginalCoefficient
 public import FLT.Mazur.PolygonCompleteSmoothOriginalCurveIso
 public import FLT.Mazur.PolygonCompleteSmoothOriginalGeneratorIso
+public import FLT.Mazur.PolygonCompleteSmoothOriginalSubgroupCoefficient
 public import FLT.Mazur.PolygonCompleteSmoothOriginalSubgroupIso
 public import FLT.Mazur.PolygonCompleteSmoothPointAffine
 public import FLT.Mazur.PolygonCompleteSmoothProductCover
