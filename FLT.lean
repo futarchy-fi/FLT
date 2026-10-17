@@ -12750,6 +12750,7 @@ public import FLT.Mazur.WeierstrassDividedResidualLiftFirst
 public import FLT.Mazur.WeierstrassDividedResidualLiftGeometry
 public import FLT.Mazur.WeierstrassDividedResidualLiftPunctures
 public import FLT.Mazur.WeierstrassDividedResidualLiftRestriction
+public import FLT.Mazur.WeierstrassDividedResidualLiftSecondOrder
 public import FLT.Mazur.WeierstrassDividedResidualLiftTransitions
 public import FLT.Mazur.WeierstrassDividedResidualLiftTransitionsFirst
 public import FLT.Mazur.WeierstrassDividedResidualRetainedLift
