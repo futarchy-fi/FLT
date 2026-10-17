@@ -6112,6 +6112,7 @@ public import FLT.Mazur.HilbertSupportOpenPullback
 public import FLT.Mazur.HilbertTruncatedIdealDetection
 public import FLT.Mazur.HilbertTruncatedIdealGeneration
 public import FLT.Mazur.HilbertTupleBasisTower
+public import FLT.Mazur.HilbertUniformSourceBoundaryDescent
 public import FLT.Mazur.HilbertUniformSourceOriginalSections
 public import FLT.Mazur.HilbertUniversalComplementMatrix
 public import FLT.Mazur.HilbertUniversalFrameRebase
