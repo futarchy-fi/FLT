@@ -7498,6 +7498,7 @@ public import FLT.Mazur.PolygonArithmeticStageProjectiveCoordinates
 public import FLT.Mazur.PolygonArithmeticStageProper
 public import FLT.Mazur.PolygonArithmeticStageRecovery
 public import FLT.Mazur.PolygonArithmeticStageRestriction
+public import FLT.Mazur.PolygonArithmeticStageRestrictionLE
 public import FLT.Mazur.PolygonArithmeticStageRingLift
 public import FLT.Mazur.PolygonArithmeticStageTransition
 public import FLT.Mazur.PolygonArithmeticStageVanishing
