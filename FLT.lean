@@ -5998,13 +5998,18 @@ public import FLT.Mazur.HilbertOrbitBoundarySectionErrorSpan
 public import FLT.Mazur.HilbertOrbitBoundarySourceErrorCriterion
 public import FLT.Mazur.HilbertOrbitMixedBoundaryKernel
 public import FLT.Mazur.HilbertOrbitMixedBoundaryProjection
+public import FLT.Mazur.HilbertOrbitRelativeFiniteLifts
+public import FLT.Mazur.HilbertOrbitRelativeFiniteTests
 public import FLT.Mazur.HilbertOrbitRelativeImagePreimage
 public import FLT.Mazur.HilbertOrbitRelativeMixedConnecting
 public import FLT.Mazur.HilbertOrbitRelativeMixedError
+public import FLT.Mazur.HilbertOrbitRelativePrimeFiniteLifts
 public import FLT.Mazur.HilbertOrbitRelativeReducedCorrections
 public import FLT.Mazur.HilbertOrbitRelativeReductionKernel
 public import FLT.Mazur.HilbertOrbitRelativeScalarImage
 public import FLT.Mazur.HilbertOrbitRelativeScalarResidue
+public import FLT.Mazur.HilbertOrbitRelativeScalarVanishing
+public import FLT.Mazur.HilbertOrbitRelativeSourceGenerators
 public import FLT.Mazur.HilbertOrderedAffineEnvelope
 public import FLT.Mazur.HilbertOrderedOriginalBoundary
 public import FLT.Mazur.HilbertOrderedStableNeighborhood
@@ -6611,6 +6616,7 @@ public import FLT.Mazur.LocalizedCotangentFieldRank
 public import FLT.Mazur.LocalizedFiniteObstruction
 public import FLT.Mazur.LocalizedHomologyComparison
 public import FLT.Mazur.LocalizedIdealOverlapMembership
+public import FLT.Mazur.LocalizedImageFiniteLifts
 public import FLT.Mazur.LocalizedImageFiniteWitness
 public import FLT.Mazur.LocalizedIntegerChartComparison
 public import FLT.Mazur.LocalizedIntegerComparisonTransport
@@ -10224,7 +10230,9 @@ public import FLT.Mazur.ScalarExtensionDirectSum
 public import FLT.Mazur.ScalarExtensionImageReduction
 public import FLT.Mazur.ScalarExtensionIsomorphismDescent
 public import FLT.Mazur.ScalarExtensionPullbackDescent
+public import FLT.Mazur.ScalarImageFiniteVanishing
 public import FLT.Mazur.ScalarImageOriginalGenerators
+public import FLT.Mazur.ScalarImageSourceGenerators
 public import FLT.Mazur.ScalarQuotientImagePresentation
 public import FLT.Mazur.ScalarQuotientImageReduction
 public import FLT.Mazur.ScalarQuotientResiduePresentation
