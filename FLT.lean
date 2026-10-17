@@ -14037,6 +14037,7 @@ public import FLT.Mazur.WeierstrassRetainedFixedEdgeUnit
 public import FLT.Mazur.WeierstrassRetainedFixedNaturality
 public import FLT.Mazur.WeierstrassRetainedFixedPolygon
 public import FLT.Mazur.WeierstrassRetainedFixedPuncturePreimage
+public import FLT.Mazur.WeierstrassRetainedFixedRightBoundary
 public import FLT.Mazur.WeierstrassRetainedFixedSmoothing
 public import FLT.Mazur.WeierstrassRetainedFixedSmoothingIso
 public import FLT.Mazur.WeierstrassRetainedFixedTerminalEdges
