@@ -5998,10 +5998,12 @@ public import FLT.Mazur.HilbertOrbitBoundarySectionErrorSpan
 public import FLT.Mazur.HilbertOrbitBoundarySourceErrorCriterion
 public import FLT.Mazur.HilbertOrbitMixedBoundaryKernel
 public import FLT.Mazur.HilbertOrbitMixedBoundaryProjection
+public import FLT.Mazur.HilbertOrbitRelativeImagePreimage
 public import FLT.Mazur.HilbertOrbitRelativeMixedConnecting
 public import FLT.Mazur.HilbertOrbitRelativeMixedError
 public import FLT.Mazur.HilbertOrbitRelativeReducedCorrections
 public import FLT.Mazur.HilbertOrbitRelativeReductionKernel
+public import FLT.Mazur.HilbertOrbitRelativeScalarResidue
 public import FLT.Mazur.HilbertOrderedAffineEnvelope
 public import FLT.Mazur.HilbertOrderedOriginalBoundary
 public import FLT.Mazur.HilbertOrderedStableNeighborhood
@@ -9783,6 +9785,7 @@ public import FLT.Mazur.QuasicoherentImageIdeal
 public import FLT.Mazur.QuasicoherentImageIdealOrbits
 public import FLT.Mazur.QuotientChartComparison
 public import FLT.Mazur.QuotientConnectedComponentDescent
+public import FLT.Mazur.QuotientImageReduction
 public import FLT.Mazur.QuotientRefinementCoherence
 public import FLT.Mazur.QuotientRelativeDerivation
 public import FLT.Mazur.QuotientSpectrumBaseChange
@@ -9873,6 +9876,8 @@ public import FLT.Mazur.RelativeCompleteFrameComparison
 public import FLT.Mazur.RelativeCompleteFrameFiberIso
 public import FLT.Mazur.RelativeCompleteGeometricTuple
 public import FLT.Mazur.RelativeCompleteSubframe
+public import FLT.Mazur.RelativeConnectingImagePreimage
+public import FLT.Mazur.RelativeConnectingImageReduction
 public import FLT.Mazur.RelativeCoproductComponentPullback
 public import FLT.Mazur.RelativeCoproductPullCover
 public import FLT.Mazur.RelativeCyclicSubgroup
@@ -10184,8 +10189,10 @@ public import FLT.Mazur.ScalarCohomology
 public import FLT.Mazur.ScalarCompatibleIntegerModel
 public import FLT.Mazur.ScalarEndomorphismPullback
 public import FLT.Mazur.ScalarExtensionDirectSum
+public import FLT.Mazur.ScalarExtensionImageReduction
 public import FLT.Mazur.ScalarExtensionIsomorphismDescent
 public import FLT.Mazur.ScalarExtensionPullbackDescent
+public import FLT.Mazur.ScalarQuotientResiduePresentation
 public import FLT.Mazur.ScalarTowerDivision
 public import FLT.Mazur.SchematicDenseDedekindFlat
 public import FLT.Mazur.SchematicDescentGluing
