@@ -8080,6 +8080,7 @@ public import FLT.Mazur.PolygonCompletePointFirstIncomingLocalEquality
 public import FLT.Mazur.PolygonCompletePointFirstIncomingNodeExtraction
 public import FLT.Mazur.PolygonCompletePointFirstIncomingTail
 public import FLT.Mazur.PolygonCompletePointFirstIncomingValues
+public import FLT.Mazur.PolygonCompletePointFirstLocalCubicComparison
 public import FLT.Mazur.PolygonCompletePointFirstLocalizedCoordinateExtraction
 public import FLT.Mazur.PolygonCompletePointFirstLocalizedMarkingForms
 public import FLT.Mazur.PolygonCompletePointFirstMarkingForms
