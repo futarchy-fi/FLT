@@ -7129,6 +7129,7 @@ public import FLT.Mazur.OddWeierstrassCyclicHomNormalizationParameter
 public import FLT.Mazur.OddWeierstrassCyclicHomNormalizationSubgroup
 public import FLT.Mazur.OddWeierstrassCyclicHomNormalizedCoverage
 public import FLT.Mazur.OddWeierstrassCyclicHomNormalizedCoverageUnrestricted
+public import FLT.Mazur.OddWeierstrassCyclicHomPointExt
 public import FLT.Mazur.OddWeierstrassCyclicHomRelabelAuxiliary
 public import FLT.Mazur.OddWeierstrassCyclicHomRelabelCurve
 public import FLT.Mazur.OddWeierstrassCyclicHomRelabelLine
