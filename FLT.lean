@@ -12788,6 +12788,7 @@ public import FLT.Mazur.WeierstrassDividedRetainedPolygonNaturality
 public import FLT.Mazur.WeierstrassDividedRetainedPuncturePreimage
 public import FLT.Mazur.WeierstrassDividedRetainedZeroExteriorLine
 public import FLT.Mazur.WeierstrassDividedRetentionSuccessor
+public import FLT.Mazur.WeierstrassDividedSecondPunctureIdentification
 public import FLT.Mazur.WeierstrassDividedSecondResidualFactors
 public import FLT.Mazur.WeierstrassDividedSecondResidualFields
 public import FLT.Mazur.WeierstrassDividedSecondResidualGeometry
