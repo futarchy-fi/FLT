@@ -5267,6 +5267,7 @@ public import FLT.Mazur.FiniteSupportEulerPositive
 public import FLT.Mazur.FiniteSurjectiveAmpleDescent
 public import FLT.Mazur.FiniteSurjectiveCoherentWitness
 public import FLT.Mazur.FiniteTargetAffineNorm
+public import FLT.Mazur.FiniteTargetInvariantAffineNeighborhood
 public import FLT.Mazur.FiniteTargetInvariantPrincipalCore
 public import FLT.Mazur.FiniteTargetNormCore
 public import FLT.Mazur.FiniteTensorCoefficientConditions
