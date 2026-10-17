@@ -12221,6 +12221,7 @@ public import FLT.Mazur.WeierstrassDividedFirstInfinityAction
 public import FLT.Mazur.WeierstrassDividedFirstInfinityCenter
 public import FLT.Mazur.WeierstrassDividedFirstInfinityFactorization
 public import FLT.Mazur.WeierstrassDividedFirstOutputCover
+public import FLT.Mazur.WeierstrassDividedFirstResidualOrientation
 public import FLT.Mazur.WeierstrassDividedFirstSuccessorAction
 public import FLT.Mazur.WeierstrassDividedFirstUnitAction
 public import FLT.Mazur.WeierstrassDividedFixedTerminalBoundary
