@@ -3532,6 +3532,7 @@ public import FLT.Mazur.BlowupReesZeroComponent
 public import FLT.Mazur.BoundaryCorrectionAdicAmbient
 public import FLT.Mazur.BoundaryCorrectionAdicCertificate
 public import FLT.Mazur.BoundaryCorrectionAmbientEquations
+public import FLT.Mazur.BoundaryCorrectionCompatibleErrors
 public import FLT.Mazur.BoundaryCorrectionFaithfulCoefficients
 public import FLT.Mazur.BoundaryCorrectionFiniteCokernel
 public import FLT.Mazur.BoundaryCorrectionFiniteReduction
