@@ -5780,6 +5780,7 @@ public import FLT.Mazur.HilbertBoundaryKernelLinearOperator
 public import FLT.Mazur.HilbertBoundaryKernelPair
 public import FLT.Mazur.HilbertBoundaryLiftLocus
 public import FLT.Mazur.HilbertBoundaryLocalCoverCriterion
+public import FLT.Mazur.HilbertBoundaryLocalizedKernelOperator
 public import FLT.Mazur.HilbertBoundaryOpenGeometricGround
 public import FLT.Mazur.HilbertBoundaryOrbit
 public import FLT.Mazur.HilbertBoundaryPrimeKernelCorrection
