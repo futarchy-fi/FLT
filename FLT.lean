@@ -13026,6 +13026,7 @@ public import FLT.Mazur.WeierstrassDividedTerminalZeroNodalChart
 public import FLT.Mazur.WeierstrassDividedThirdAtlas
 public import FLT.Mazur.WeierstrassDividedThirdAtlasClosing
 public import FLT.Mazur.WeierstrassDividedThirdAtlasIdentification
+public import FLT.Mazur.WeierstrassDividedThirdAtlasIncoming
 public import FLT.Mazur.WeierstrassDividedThirdAtlasSystem
 public import FLT.Mazur.WeierstrassDividedThirdGeometry
 public import FLT.Mazur.WeierstrassDividedThirdIncomingCancellation
