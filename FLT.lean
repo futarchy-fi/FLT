@@ -11292,6 +11292,7 @@ public import FLT.Mazur.TwoGeneratorRelationKernelBaseChange
 public import FLT.Mazur.TwoGeneratorRelationQuotient
 public import FLT.Mazur.TwoGeneratorRelationSequence
 public import FLT.Mazur.TwoGeneratorRelationUnit
+public import FLT.Mazur.UniformAdicDiscrepancySeparation
 public import FLT.Mazur.UniformizerRootExtension
 public import FLT.Mazur.UnitIntegerModel
 public import FLT.Mazur.UnitLeadingBasisExtension
