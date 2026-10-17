@@ -12461,6 +12461,7 @@ public import FLT.Mazur.WeierstrassDividedFifthShallowNodes
 public import FLT.Mazur.WeierstrassDividedFifthShallowPunctureIdentification
 public import FLT.Mazur.WeierstrassDividedFifthShallowResidualAlgebra
 public import FLT.Mazur.WeierstrassDividedFifthShallowResidualRestriction
+public import FLT.Mazur.WeierstrassDividedFifthShallowRestriction
 public import FLT.Mazur.WeierstrassDividedFinalAdjacentComponents
 public import FLT.Mazur.WeierstrassDividedFinalAdjacentConicBranches
 public import FLT.Mazur.WeierstrassDividedFinalAdjacentOverComponents
