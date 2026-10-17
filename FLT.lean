@@ -5184,6 +5184,7 @@ public import FLT.Mazur.FinitePrincipalIdealPatching
 public import FLT.Mazur.FinitePrincipalImageCover
 public import FLT.Mazur.FinitePrincipalTargetRefinement
 public import FLT.Mazur.FiniteProductDirectSum
+public import FLT.Mazur.FiniteProjectiveAffineNorm
 public import FLT.Mazur.FiniteProjectiveAffineNormCharts
 public import FLT.Mazur.FiniteProjectivePrincipalDescent
 public import FLT.Mazur.FiniteProjectiveRankFrames
