@@ -12450,6 +12450,7 @@ public import FLT.Mazur.WeierstrassDividedFourthLayerFieldIdentification
 public import FLT.Mazur.WeierstrassDividedFourthPunctureIdentification
 public import FLT.Mazur.WeierstrassDividedFourthResidualAlgebra
 public import FLT.Mazur.WeierstrassDividedFourthResidualFields
+public import FLT.Mazur.WeierstrassDividedFourthResidualRestriction
 public import FLT.Mazur.WeierstrassDividedFourthSmoothingAnnihilation
 public import FLT.Mazur.WeierstrassDividedFullInfinityFactorRatioMap
 public import FLT.Mazur.WeierstrassDividedFullInfinityFactorRatioNaturality
