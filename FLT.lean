@@ -7370,6 +7370,7 @@ public import FLT.Mazur.PadicValuationArithmetic
 public import FLT.Mazur.PadicValuationRing
 public import FLT.Mazur.PairedAwayLocalization
 public import FLT.Mazur.PairedAwayLocalizationSpectrum
+public import FLT.Mazur.PairedCokernelElimination
 public import FLT.Mazur.PartialCompactTranslationInterior
 public import FLT.Mazur.PartialEnvelopeFullFiber
 public import FLT.Mazur.PartialFiniteTranslationInterior
