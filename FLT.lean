@@ -3646,6 +3646,7 @@ public import FLT.Mazur.CartierFppfDescent
 public import FLT.Mazur.CartierGeneratorCyclicMap
 public import FLT.Mazur.CartierGeneratorMarkedSubgroup
 public import FLT.Mazur.CartierGeneratorOrbitCover
+public import FLT.Mazur.CartierGeneratorOrbitRecovery
 public import FLT.Mazur.CartierGeneratorSplitPresentation
 public import FLT.Mazur.CartierIdealCoproduct
 public import FLT.Mazur.CartierIdealDescentDatum
@@ -3892,6 +3893,8 @@ public import FLT.Mazur.CompatibleSubgroupIso
 public import FLT.Mazur.CompatibleSubgroupIsoBaseChange
 public import FLT.Mazur.CompatibleSubgroupIsoFaithful
 public import FLT.Mazur.CompatibleSubgroupIsoSectionSquare
+public import FLT.Mazur.CompatibleSubgroupMarkedConjugation
+public import FLT.Mazur.CompatibleSubgroupOrbitMarking
 public import FLT.Mazur.ConnectedClosedFiberThickening
 public import FLT.Mazur.ConnectedFiberGeneralization
 public import FLT.Mazur.ConnectedFiberPrimeStratum
@@ -4004,8 +4007,10 @@ public import FLT.Mazur.CyclicHomNormalizationGroup
 public import FLT.Mazur.CyclicHomNormalizationNaturality
 public import FLT.Mazur.CyclicHomNormalizationParameter
 public import FLT.Mazur.CyclicHomNormalizationRelationIso
+public import FLT.Mazur.CyclicHomNormalizationRelationOrbit
 public import FLT.Mazur.CyclicHomNormalizationRelationSubgroup
 public import FLT.Mazur.CyclicHomNormalizationSubgroup
+public import FLT.Mazur.CyclicHomNormalizationSubgroupMarking
 public import FLT.Mazur.CyclicHomNormalizedCubicValue
 public import FLT.Mazur.CyclicHomNormalizedFppfCoverage
 public import FLT.Mazur.CyclicHomNormalizedFppfCoverageUnrestricted
@@ -4014,6 +4019,7 @@ public import FLT.Mazur.CyclicHomNormalizedLocus
 public import FLT.Mazur.CyclicHomNormalizedModuli
 public import FLT.Mazur.CyclicHomNormalizedRelabelAction
 public import FLT.Mazur.CyclicHomNormalizedRelabelModuli
+public import FLT.Mazur.CyclicHomPrescribedGeneratorComparison
 public import FLT.Mazur.CyclicHomProperPresentationInvariant
 public import FLT.Mazur.CyclicHomRelabelAuxiliaryMarking
 public import FLT.Mazur.CyclicHomRelabelCurve
@@ -4021,6 +4027,7 @@ public import FLT.Mazur.CyclicHomRelabelLine
 public import FLT.Mazur.CyclicHomRelabelNormalization
 public import FLT.Mazur.CyclicHomRelabelParameter
 public import FLT.Mazur.CyclicHomRelabelSubgroup
+public import FLT.Mazur.CyclicHomRelabelSubgroupMarking
 public import FLT.Mazur.CyclicHomRelabeledNormalizationIso
 public import FLT.Mazur.CyclicHomRelationIsoCoherence
 public import FLT.Mazur.CyclicHomRelationIsoNaturality
@@ -7244,6 +7251,7 @@ public import FLT.Mazur.OddWeierstrassCyclicHomNormalizationIdempotence
 public import FLT.Mazur.OddWeierstrassCyclicHomNormalizationNaturality
 public import FLT.Mazur.OddWeierstrassCyclicHomNormalizationParameter
 public import FLT.Mazur.OddWeierstrassCyclicHomNormalizationSubgroup
+public import FLT.Mazur.OddWeierstrassCyclicHomNormalizationSubgroupMarking
 public import FLT.Mazur.OddWeierstrassCyclicHomNormalizedCoverage
 public import FLT.Mazur.OddWeierstrassCyclicHomNormalizedCoverageUnrestricted
 public import FLT.Mazur.OddWeierstrassCyclicHomNormalizedCubicValue
@@ -7262,6 +7270,7 @@ public import FLT.Mazur.OddWeierstrassCyclicHomRelabelLine
 public import FLT.Mazur.OddWeierstrassCyclicHomRelabelNormalization
 public import FLT.Mazur.OddWeierstrassCyclicHomRelabelParameter
 public import FLT.Mazur.OddWeierstrassCyclicHomRelabelSubgroup
+public import FLT.Mazur.OddWeierstrassCyclicHomRelabelSubgroupMarking
 public import FLT.Mazur.OddWeierstrassCyclicHomRelabeledNormalizationIso
 public import FLT.Mazur.OddWeierstrassCyclicHomRetainedPullback
 public import FLT.Mazur.OddWeierstrassCyclicHomSliceFunctor
@@ -7605,6 +7614,8 @@ public import FLT.Mazur.PointedCubicCyclicMarkingUnrestricted
 public import FLT.Mazur.PointedCubicHomAuxiliaryParameter
 public import FLT.Mazur.PointedCubicHomLocusFactorization
 public import FLT.Mazur.PointedCubicHomMultiplicationVanishing
+public import FLT.Mazur.PointedCubicHomNormalizedOriginalGenerator
+public import FLT.Mazur.PointedCubicHomRetainedOrbit
 public import FLT.Mazur.PointedCubicHomRetainedSubgroup
 public import FLT.Mazur.PointedCubicHomSourceGroup
 public import FLT.Mazur.PointedCubicIndependentParameter
