@@ -2555,6 +2555,7 @@ public import FLT.Mazur.AdicDerivationFiltration
 public import FLT.Mazur.AdicDerivationNaturality
 public import FLT.Mazur.AdicDerivationQuotient
 public import FLT.Mazur.AdicDerivationUniqueness
+public import FLT.Mazur.AdicDiscrepancySeparation
 public import FLT.Mazur.AdicEvaluationKernel
 public import FLT.Mazur.AdicExtensionHomotopy
 public import FLT.Mazur.AdicExtensionKernelComparison
@@ -4660,6 +4661,7 @@ public import FLT.Mazur.EquivalenceRelationChartFamilyLifts
 public import FLT.Mazur.EquivalenceRelationChartFamilyLocalization
 public import FLT.Mazur.EquivalenceRelationChartFamilyRestriction
 public import FLT.Mazur.EquivalenceRelationCompleteAdicDiscrepancy
+public import FLT.Mazur.EquivalenceRelationCompleteAdicSeparation
 public import FLT.Mazur.EquivalenceRelationCompleteAffineStages
 public import FLT.Mazur.EquivalenceRelationCompleteBoundaryCorrections
 public import FLT.Mazur.EquivalenceRelationCompleteChartImage
@@ -4683,6 +4685,7 @@ public import FLT.Mazur.EquivalenceRelationCompleteTestPartition
 public import FLT.Mazur.EquivalenceRelationCompleteThickeningAction
 public import FLT.Mazur.EquivalenceRelationCompleteThickeningTower
 public import FLT.Mazur.EquivalenceRelationCompleteThickenings
+public import FLT.Mazur.EquivalenceRelationCompleteVanishingOpen
 public import FLT.Mazur.EquivalenceRelationConnectedCompleteTests
 public import FLT.Mazur.EquivalenceRelationFiberPermutationSections
 public import FLT.Mazur.EquivalenceRelationFiberRebase
@@ -5715,7 +5718,9 @@ public import FLT.Mazur.HilbertBoundaryQuotientGerms
 public import FLT.Mazur.HilbertBoundaryQuotientNilpotence
 public import FLT.Mazur.HilbertBoundaryQuotientSections
 public import FLT.Mazur.HilbertBoundaryRelationNilpotence
+public import FLT.Mazur.HilbertBoundaryRelationOpenCorrections
 public import FLT.Mazur.HilbertBoundaryRelationTests
+public import FLT.Mazur.HilbertBoundaryRelationVanishingNeighborhood
 public import FLT.Mazur.HilbertBoundarySchemeTests
 public import FLT.Mazur.HilbertBoundarySimultaneousLiftCover
 public import FLT.Mazur.HilbertBoundaryThickeningGeometry
@@ -9937,6 +9942,8 @@ public import FLT.Mazur.ScalarTowerDivision
 public import FLT.Mazur.SchematicDenseDedekindFlat
 public import FLT.Mazur.SchematicDescentGluing
 public import FLT.Mazur.SchematicImageAffineEquations
+public import FLT.Mazur.SchemeAdicVanishingNeighborhood
+public import FLT.Mazur.SchemeAdicVanishingOpen
 public import FLT.Mazur.SchemeAffineAmbientTestCocycle
 public import FLT.Mazur.SchemeAffineAmbientTestNaturality
 public import FLT.Mazur.SchemeAffineAmbientTestRefinement
