@@ -8648,6 +8648,7 @@ public import FLT.Mazur.PolygonCompleteSmoothGroupRotations
 public import FLT.Mazur.PolygonCompleteSmoothInversion
 public import FLT.Mazur.PolygonCompleteSmoothIrreducible
 public import FLT.Mazur.PolygonCompleteSmoothMultiplication
+public import FLT.Mazur.PolygonCompleteSmoothOriginalCoefficient
 public import FLT.Mazur.PolygonCompleteSmoothOriginalCurveIso
 public import FLT.Mazur.PolygonCompleteSmoothOriginalGeneratorIso
 public import FLT.Mazur.PolygonCompleteSmoothOriginalSubgroupIso
