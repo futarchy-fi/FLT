@@ -8826,6 +8826,7 @@ public import FLT.Mazur.PolygonTopNodeGraphOriginalFlat
 public import FLT.Mazur.PolygonTopNodeGraphPresentation
 public import FLT.Mazur.PolygonTopNodeGraphRingGenerators
 public import FLT.Mazur.PolygonTopNodeGraphScheme
+public import FLT.Mazur.PolygonTopNodeGraphSourceIso
 public import FLT.Mazur.PolygonTopNodeLaurent
 public import FLT.Mazur.PolygonTopNodeNeighborhood
 public import FLT.Mazur.PolygonTopNodeParameterScaling
