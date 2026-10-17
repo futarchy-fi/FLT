@@ -6584,6 +6584,7 @@ public import FLT.Mazur.LocalizedBaseSectionNumerator
 public import FLT.Mazur.LocalizedCoefficientFiberCartier
 public import FLT.Mazur.LocalizedComparisonTransport
 public import FLT.Mazur.LocalizedCotangentFieldRank
+public import FLT.Mazur.LocalizedFiniteObstruction
 public import FLT.Mazur.LocalizedHomologyComparison
 public import FLT.Mazur.LocalizedIdealOverlapMembership
 public import FLT.Mazur.LocalizedIntegerChartComparison
