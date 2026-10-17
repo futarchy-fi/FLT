@@ -12558,6 +12558,7 @@ public import FLT.Mazur.WeierstrassDividedFifthDeepEarlierIncoming
 public import FLT.Mazur.WeierstrassDividedFifthDeepEarlierNodes
 public import FLT.Mazur.WeierstrassDividedFifthDeepEndCancellation
 public import FLT.Mazur.WeierstrassDividedFifthDeepEndIdentification
+public import FLT.Mazur.WeierstrassDividedFifthDeepEndInputRestriction
 public import FLT.Mazur.WeierstrassDividedFifthDeepEndRestriction
 public import FLT.Mazur.WeierstrassDividedFifthDeepGeometry
 public import FLT.Mazur.WeierstrassDividedFifthDeepInitial
