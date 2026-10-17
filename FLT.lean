@@ -5943,6 +5943,7 @@ public import FLT.Mazur.HilbertOrbitBoundaryFiniteProducts
 public import FLT.Mazur.HilbertOrbitBoundaryFiniteReduction
 public import FLT.Mazur.HilbertOrbitBoundaryFiniteScalars
 public import FLT.Mazur.HilbertOrbitBoundaryLinearSystem
+public import FLT.Mazur.HilbertOrbitBoundaryLocalCokernel
 public import FLT.Mazur.HilbertOrbitBoundaryLocalizedCorrections
 public import FLT.Mazur.HilbertOrbitBoundaryLocalizedMaps
 public import FLT.Mazur.HilbertOrbitBoundaryLocalizedMultipliers
