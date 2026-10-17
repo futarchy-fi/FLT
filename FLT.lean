@@ -12489,6 +12489,7 @@ public import FLT.Mazur.WeierstrassDividedFourthInitialAtlas
 public import FLT.Mazur.WeierstrassDividedFourthInitialAtlasClosing
 public import FLT.Mazur.WeierstrassDividedFourthInitialAtlasEdge
 public import FLT.Mazur.WeierstrassDividedFourthInitialAtlasIncoming
+public import FLT.Mazur.WeierstrassDividedFourthInitialAtlasRestriction
 public import FLT.Mazur.WeierstrassDividedFourthInitialAtlasSystem
 public import FLT.Mazur.WeierstrassDividedFourthInitialCancellation
 public import FLT.Mazur.WeierstrassDividedFourthInitialFields
