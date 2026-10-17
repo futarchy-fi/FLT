@@ -3887,6 +3887,7 @@ public import FLT.Mazur.CompatibleSubgroupAmple
 public import FLT.Mazur.CompatibleSubgroupBaseChangeCoherence
 public import FLT.Mazur.CompatibleSubgroupBaseChangeCompEq
 public import FLT.Mazur.CompatibleSubgroupCyclic
+public import FLT.Mazur.CompatibleSubgroupGeneratorBaseChange
 public import FLT.Mazur.CompatibleSubgroupGeneratorMarking
 public import FLT.Mazur.CompatibleSubgroupIdealIso
 public import FLT.Mazur.CompatibleSubgroupIso
