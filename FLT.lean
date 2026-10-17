@@ -7094,6 +7094,7 @@ public import FLT.Mazur.OddWeierstrassCyclicHomMultiplicationLocusUniversal
 public import FLT.Mazur.OddWeierstrassCyclicHomMultiplicationPullback
 public import FLT.Mazur.OddWeierstrassCyclicHomNormalizedCoverage
 public import FLT.Mazur.OddWeierstrassCyclicHomNormalizedCoverageUnrestricted
+public import FLT.Mazur.OddWeierstrassCyclicHomRelabelCurve
 public import FLT.Mazur.OddWeierstrassCyclicHomRelabelParameter
 public import FLT.Mazur.OddWeierstrassCyclicHomRetainedPullback
 public import FLT.Mazur.OddWeierstrassCyclicHomSourceDivisor
