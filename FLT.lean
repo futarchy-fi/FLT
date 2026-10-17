@@ -4742,6 +4742,7 @@ public import FLT.Mazur.EquivalenceRelationCompleteSourceRestriction
 public import FLT.Mazur.EquivalenceRelationCompleteStageCoefficients
 public import FLT.Mazur.EquivalenceRelationCompleteSubframe
 public import FLT.Mazur.EquivalenceRelationCompleteTestCoefficients
+public import FLT.Mazur.EquivalenceRelationCompleteTestFinite
 public import FLT.Mazur.EquivalenceRelationCompleteTestPartition
 public import FLT.Mazur.EquivalenceRelationCompleteThickeningAction
 public import FLT.Mazur.EquivalenceRelationCompleteThickeningTower
