@@ -4040,6 +4040,7 @@ public import FLT.Mazur.CyclicHomSourcePullback
 public import FLT.Mazur.CyclicHomSubgroupPullback
 public import FLT.Mazur.CyclicHomSubgroupPullbackMarking
 public import FLT.Mazur.CyclicHomSubgroupVanishingChart
+public import FLT.Mazur.CyclicHomUniversalPrescribedGenerator
 public import FLT.Mazur.CyclicHomUniversalSubgroupComparison
 public import FLT.Mazur.CyclicMarkingDivisorTransport
 public import FLT.Mazur.CyclicMarkingOrbitDivisor
