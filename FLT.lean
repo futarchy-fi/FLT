@@ -3529,6 +3529,7 @@ public import FLT.Mazur.BlowupReesRatioRight
 public import FLT.Mazur.BlowupReesRatioScheme
 public import FLT.Mazur.BlowupReesRatioTransition
 public import FLT.Mazur.BlowupReesZeroComponent
+public import FLT.Mazur.BoundaryCorrectionFaithfulCoefficients
 public import FLT.Mazur.BoundaryCorrectionIdeal
 public import FLT.Mazur.BoundedFlatAcyclicNeighborhood
 public import FLT.Mazur.BoundedFlatAcyclicOpen
@@ -4707,16 +4708,21 @@ public import FLT.Mazur.EquivalenceRelationJointGeometricComparison
 public import FLT.Mazur.EquivalenceRelationJointInvariantLifts
 public import FLT.Mazur.EquivalenceRelationJointSourceRefinement
 public import FLT.Mazur.EquivalenceRelationLabelOpenCharts
+public import FLT.Mazur.EquivalenceRelationMixedBranchCoefficients
 public import FLT.Mazur.EquivalenceRelationMixedChartDescent
 public import FLT.Mazur.EquivalenceRelationMixedChartLiftDifference
 public import FLT.Mazur.EquivalenceRelationMixedChartProjections
 public import FLT.Mazur.EquivalenceRelationMixedChartRestriction
 public import FLT.Mazur.EquivalenceRelationMixedChartTests
+public import FLT.Mazur.EquivalenceRelationMixedEmbeddingDomains
 public import FLT.Mazur.EquivalenceRelationMixedFrameCardinality
 public import FLT.Mazur.EquivalenceRelationMixedFrameComparison
 public import FLT.Mazur.EquivalenceRelationMixedFrameLabelChange
 public import FLT.Mazur.EquivalenceRelationMixedFrameRelation
+public import FLT.Mazur.EquivalenceRelationMixedResidualDecomposition
 public import FLT.Mazur.EquivalenceRelationMixedResidualOpen
+public import FLT.Mazur.EquivalenceRelationMixedResidualPieces
+public import FLT.Mazur.EquivalenceRelationMixedSourceEquations
 public import FLT.Mazur.EquivalenceRelationNormalizedActionComplete
 public import FLT.Mazur.EquivalenceRelationNormalizedActionGraphs
 public import FLT.Mazur.EquivalenceRelationNormalizedActionRelation
@@ -5915,6 +5921,7 @@ public import FLT.Mazur.HilbertOrbitBoundaryLocalizedMaps
 public import FLT.Mazur.HilbertOrbitBoundaryLocalizedMultipliers
 public import FLT.Mazur.HilbertOrbitBoundaryLocalizedNaturality
 public import FLT.Mazur.HilbertOrbitBoundaryLocalizedNumerators
+public import FLT.Mazur.HilbertOrbitBoundaryMixedBranchIdeal
 public import FLT.Mazur.HilbertOrbitBoundaryPointLocalizedLifts
 public import FLT.Mazur.HilbertOrbitBoundaryPointSolvabilityLocus
 public import FLT.Mazur.HilbertOrbitBoundaryPointSpreading
