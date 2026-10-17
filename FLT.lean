@@ -3556,6 +3556,7 @@ public import FLT.Mazur.BoundaryCorrectionIdeal
 public import FLT.Mazur.BoundaryCorrectionLinearSystem
 public import FLT.Mazur.BoundaryCorrectionLocalCokernel
 public import FLT.Mazur.BoundaryCorrectionLocalReduction
+public import FLT.Mazur.BoundaryCorrectionLocalizedVanishing
 public import FLT.Mazur.BoundaryCorrectionOperatorIndependence
 public import FLT.Mazur.BoundaryCorrectionReductionCertificate
 public import FLT.Mazur.BoundaryCorrectionTensorCoordinates
@@ -5081,6 +5082,7 @@ public import FLT.Mazur.FiniteLeadingIdealFamily
 public import FLT.Mazur.FiniteLineCocycleModel
 public import FLT.Mazur.FiniteLineSheafDescent
 public import FLT.Mazur.FiniteLineSheafModel
+public import FLT.Mazur.FiniteLocalSpanVanishing
 public import FLT.Mazur.FiniteLocalizationDenominators
 public import FLT.Mazur.FiniteLocalizedBoundaryLifts
 public import FLT.Mazur.FiniteLocalizedBoundaryMapLifts
@@ -5969,6 +5971,7 @@ public import FLT.Mazur.HilbertOrbitBoundaryFlatObstruction
 public import FLT.Mazur.HilbertOrbitBoundaryLinearSystem
 public import FLT.Mazur.HilbertOrbitBoundaryLocalCokernel
 public import FLT.Mazur.HilbertOrbitBoundaryLocalizedCorrections
+public import FLT.Mazur.HilbertOrbitBoundaryLocalizedErrors
 public import FLT.Mazur.HilbertOrbitBoundaryLocalizedMaps
 public import FLT.Mazur.HilbertOrbitBoundaryLocalizedMultipliers
 public import FLT.Mazur.HilbertOrbitBoundaryLocalizedNaturality
@@ -5982,6 +5985,8 @@ public import FLT.Mazur.HilbertOrbitBoundaryPrincipalNumerators
 public import FLT.Mazur.HilbertOrbitBoundaryReductionCertificate
 public import FLT.Mazur.HilbertOrbitBoundaryScalarImage
 public import FLT.Mazur.HilbertOrbitBoundaryScaledMultipliers
+public import FLT.Mazur.HilbertOrbitBoundarySectionErrorSpan
+public import FLT.Mazur.HilbertOrbitBoundarySourceErrorCriterion
 public import FLT.Mazur.HilbertOrderedAffineEnvelope
 public import FLT.Mazur.HilbertOrderedOriginalBoundary
 public import FLT.Mazur.HilbertOrderedStableNeighborhood
@@ -6582,6 +6587,7 @@ public import FLT.Mazur.LocalizedBaseSectionNumerator
 public import FLT.Mazur.LocalizedCoefficientFiberCartier
 public import FLT.Mazur.LocalizedComparisonTransport
 public import FLT.Mazur.LocalizedCotangentFieldRank
+public import FLT.Mazur.LocalizedFiniteObstruction
 public import FLT.Mazur.LocalizedHomologyComparison
 public import FLT.Mazur.LocalizedIdealOverlapMembership
 public import FLT.Mazur.LocalizedIntegerChartComparison
