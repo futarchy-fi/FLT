@@ -13245,6 +13245,7 @@ public import FLT.Mazur.WeierstrassDividedThirdResidualAlgebra
 public import FLT.Mazur.WeierstrassDividedThirdResidualFields
 public import FLT.Mazur.WeierstrassDividedThirdResidualFourthOrder
 public import FLT.Mazur.WeierstrassDividedThirdResidualRestriction
+public import FLT.Mazur.WeierstrassDividedThirdShallowSource
 public import FLT.Mazur.WeierstrassDividedThirdSmoothingAnnihilation
 public import FLT.Mazur.WeierstrassDividedThirdTerminalGeometry
 public import FLT.Mazur.WeierstrassDividedThirdTransitions
