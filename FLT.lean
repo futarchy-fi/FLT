@@ -7104,6 +7104,7 @@ public import FLT.Mazur.OddWeierstrassAuxiliaryNormalizationNatural
 public import FLT.Mazur.OddWeierstrassAuxiliaryProperNaturality
 public import FLT.Mazur.OddWeierstrassAuxiliaryPullbackSections
 public import FLT.Mazur.OddWeierstrassAuxiliarySchemeBaseNaturality
+public import FLT.Mazur.OddWeierstrassAuxiliarySchemeFixedGroup
 public import FLT.Mazur.OddWeierstrassAuxiliarySchemeGroupComparison
 public import FLT.Mazur.OddWeierstrassAuxiliarySchemeMarking
 public import FLT.Mazur.OddWeierstrassAuxiliarySchemeMarkingComparison
