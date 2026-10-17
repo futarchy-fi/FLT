@@ -11026,6 +11026,7 @@ public import FLT.Mazur.SmoothTranslationQuotientSectionPullback
 public import FLT.Mazur.SmoothTranslationRestrictedRelationCover
 public import FLT.Mazur.SmoothTranslationSectionNaturality
 public import FLT.Mazur.SmoothTranslationSectionRestriction
+public import FLT.Mazur.SourceImageNakayama
 public import FLT.Mazur.SpecCartesianAlgebraPushout
 public import FLT.Mazur.SpecChartIdealPreimage
 public import FLT.Mazur.SpecGenericFiniteOpen
