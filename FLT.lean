@@ -12705,6 +12705,7 @@ public import FLT.Mazur.WeierstrassDividedProjectiveLift
 public import FLT.Mazur.WeierstrassDividedResidualIntegralLift
 public import FLT.Mazur.WeierstrassDividedResidualLiftAtlas
 public import FLT.Mazur.WeierstrassDividedResidualLiftAtlasEdges
+public import FLT.Mazur.WeierstrassDividedResidualLiftAtlasSystem
 public import FLT.Mazur.WeierstrassDividedResidualLiftFirst
 public import FLT.Mazur.WeierstrassDividedResidualLiftGeometry
 public import FLT.Mazur.WeierstrassDividedResidualRetainedLift
