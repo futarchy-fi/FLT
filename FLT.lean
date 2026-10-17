@@ -8788,6 +8788,7 @@ public import FLT.Mazur.PolygonParameterProductNormalizationRefinement
 public import FLT.Mazur.PolygonParameterProjectionComposition
 public import FLT.Mazur.PolygonParameterTranslation
 public import FLT.Mazur.PolygonParameterTranslationBaseChange
+public import FLT.Mazur.PolygonParameterTranslationInput
 public import FLT.Mazur.PolygonParameterTranslationOriginal
 public import FLT.Mazur.PolygonParameterizedHomExt
 public import FLT.Mazur.PolygonPinchingAdjustedClosedComparison
