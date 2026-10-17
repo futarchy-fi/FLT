@@ -7609,6 +7609,7 @@ public import FLT.Mazur.PointNormalizedDivisorUniqueness
 public import FLT.Mazur.PointNormalizedFiberCohomology
 public import FLT.Mazur.PointNormalizedLineBaseChange
 public import FLT.Mazur.PointNormalizedLineBundle
+public import FLT.Mazur.PointedCubicActualNormalizedGenerator
 public import FLT.Mazur.PointedCubicAuxiliaryCover
 public import FLT.Mazur.PointedCubicBaseGroupIso
 public import FLT.Mazur.PointedCubicCartierMarking
