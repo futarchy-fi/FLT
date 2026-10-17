@@ -12536,6 +12536,7 @@ public import FLT.Mazur.WeierstrassDividedFactorRatioRetainedBoundary
 public import FLT.Mazur.WeierstrassDividedFaithfulActionDescent
 public import FLT.Mazur.WeierstrassDividedFifthDeepCancellation
 public import FLT.Mazur.WeierstrassDividedFifthDeepEarlierNodes
+public import FLT.Mazur.WeierstrassDividedFifthDeepEndCancellation
 public import FLT.Mazur.WeierstrassDividedFifthDeepNodes
 public import FLT.Mazur.WeierstrassDividedFifthDeepRestriction
 public import FLT.Mazur.WeierstrassDividedFifthInitialAtlas
