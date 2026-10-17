@@ -12865,6 +12865,7 @@ public import FLT.Mazur.WeierstrassDividedSecondJointResiduals
 public import FLT.Mazur.WeierstrassDividedSecondJointRestriction
 public import FLT.Mazur.WeierstrassDividedSecondJointThirdOrder
 public import FLT.Mazur.WeierstrassDividedSecondJointTransitions
+public import FLT.Mazur.WeierstrassDividedSecondNodeRestriction
 public import FLT.Mazur.WeierstrassDividedSecondPrecedingAdjacent
 public import FLT.Mazur.WeierstrassDividedSecondPrecedingIncoming
 public import FLT.Mazur.WeierstrassDividedSecondPrecedingInitial
