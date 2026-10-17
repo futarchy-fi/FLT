@@ -7495,6 +7495,7 @@ public import FLT.Mazur.PolygonArithmeticHomogeneousSections
 public import FLT.Mazur.PolygonArithmeticIdealPowers
 public import FLT.Mazur.PolygonArithmeticIntegralDegree
 public import FLT.Mazur.PolygonArithmeticIteratedNodeCorrection
+public import FLT.Mazur.PolygonArithmeticIteratedNodePuncture
 public import FLT.Mazur.PolygonArithmeticIteratedNodeRestriction
 public import FLT.Mazur.PolygonArithmeticLaurentCorrectionLift
 public import FLT.Mazur.PolygonArithmeticLaurentSystemCorrectionField
