@@ -13751,6 +13751,7 @@ public import FLT.Mazur.WeierstrassDividedZeroFirstGeometry
 public import FLT.Mazur.WeierstrassDividedZeroFirstNodes
 public import FLT.Mazur.WeierstrassDividedZeroFirstPunctures
 public import FLT.Mazur.WeierstrassDividedZeroFirstRestriction
+public import FLT.Mazur.WeierstrassDividedZeroFirstTransitions
 public import FLT.Mazur.WeierstrassDividedZeroIncidenceInfinity
 public import FLT.Mazur.WeierstrassDividedZeroInfinityPolygon
 public import FLT.Mazur.WeierstrassDividedZeroInitialAffineOpen
