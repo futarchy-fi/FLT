@@ -4994,6 +4994,7 @@ public import FLT.Mazur.FiniteFlatCoefficientIdeal
 public import FLT.Mazur.FiniteFlatCoefficientIso
 public import FLT.Mazur.FiniteFlatDegreeOpen
 public import FLT.Mazur.FiniteFlatFiberCard
+public import FLT.Mazur.FiniteFlatGlobalSections
 public import FLT.Mazur.FiniteFlatIdealVanishingBaseChange
 public import FLT.Mazur.FiniteFlatIdealVanishingChart
 public import FLT.Mazur.FiniteFlatIdealVanishingGluing
@@ -5002,6 +5003,7 @@ public import FLT.Mazur.FiniteFlatIdealVanishingRestriction
 public import FLT.Mazur.FiniteFlatIdealVanishingUniversal
 public import FLT.Mazur.FiniteFlatIdealVanishingZero
 public import FLT.Mazur.FiniteFlatLocalIdealPresentation
+public import FLT.Mazur.FiniteFlatProjectiveTargetLocus
 public import FLT.Mazur.FiniteFlatQuotientTrivialization
 public import FLT.Mazur.FiniteFlatSubschemeQuotient
 public import FLT.Mazur.FiniteFlatTranslationNormCharts
@@ -5261,6 +5263,7 @@ public import FLT.Mazur.FiniteSupportEulerIso
 public import FLT.Mazur.FiniteSupportEulerPositive
 public import FLT.Mazur.FiniteSurjectiveAmpleDescent
 public import FLT.Mazur.FiniteSurjectiveCoherentWitness
+public import FLT.Mazur.FiniteTargetAffineNorm
 public import FLT.Mazur.FiniteTensorCoefficientConditions
 public import FLT.Mazur.FiniteTensorIntegerClosedImmersion
 public import FLT.Mazur.FiniteTypeAbelNaturalIso
@@ -5918,6 +5921,8 @@ public import FLT.Mazur.HilbertFiniteAmbientPresentation
 public import FLT.Mazur.HilbertFiniteFreeQuotientRefinement
 public import FLT.Mazur.HilbertFiniteFreeRelationErrorVanishing
 public import FLT.Mazur.HilbertFiniteFreeRelationPrincipalCoverage
+public import FLT.Mazur.HilbertFiniteRelationErrorVanishing
+public import FLT.Mazur.HilbertFiniteRelationPrincipalCoverage
 public import FLT.Mazur.HilbertFiniteRelationUniformCoverage
 public import FLT.Mazur.HilbertFullInteriorFiniteKernel
 public import FLT.Mazur.HilbertFullInteriorQuotientChart
@@ -6119,6 +6124,8 @@ public import FLT.Mazur.HilbertPrincipalInvariantNorm
 public import FLT.Mazur.HilbertPrincipalLocalizationScalars
 public import FLT.Mazur.HilbertPrincipalNormAdmissible
 public import FLT.Mazur.HilbertPrincipalRestriction
+public import FLT.Mazur.HilbertProjectiveRelationErrorVanishing
+public import FLT.Mazur.HilbertProjectiveRelationPrincipalCoverage
 public import FLT.Mazur.HilbertProperNeighborhoodChart
 public import FLT.Mazur.HilbertQuotientDegreeBound
 public import FLT.Mazur.HilbertQuotientDegreeFiltration
@@ -9968,6 +9975,7 @@ public import FLT.Mazur.QuasiCoherentSchemePullback
 public import FLT.Mazur.QuasiCompactEtaleGeometricSections
 public import FLT.Mazur.QuasiCompactGenericFlatOpen
 public import FLT.Mazur.QuasiFiniteCoefficientQuotient
+public import FLT.Mazur.QuasiFiniteFlatDescent
 public import FLT.Mazur.QuasiFiniteGenericFiniteFree
 public import FLT.Mazur.QuasiFiniteGeometricPointIsolation
 public import FLT.Mazur.QuasiFiniteIdealQuotient
@@ -10312,6 +10320,7 @@ public import FLT.Mazur.RelativeRelationPointDenominators
 public import FLT.Mazur.RelativeRelationPrincipalLifting
 public import FLT.Mazur.RelativeRelationPrincipalRestriction
 public import FLT.Mazur.RelativeRelationPrincipalTorsion
+public import FLT.Mazur.RelativeRelationProjectiveNormPrincipal
 public import FLT.Mazur.RelativeRelationPulledIdealCover
 public import FLT.Mazur.RelativeRelationQuotientSections
 public import FLT.Mazur.RelativeRelationQuotientSheaf
@@ -10618,7 +10627,10 @@ public import FLT.Mazur.SchemeFiniteGroupQuotientOpenEmbedding
 public import FLT.Mazur.SchemeFiniteGroupQuotientOpenImmersion
 public import FLT.Mazur.SchemeFiniteGroupQuotientOrbits
 public import FLT.Mazur.SchemeFiniteOrbitOpenCore
+public import FLT.Mazur.SchemeFiniteTargetAffineNeighborhood
 public import FLT.Mazur.SchemeFiniteTargetBaseChange
+public import FLT.Mazur.SchemeFiniteTargetOpenRestriction
+public import FLT.Mazur.SchemeFiniteTargetRestriction
 public import FLT.Mazur.SchemeFlatFamilyReflection
 public import FLT.Mazur.SchemeFlatFppfTargetDensity
 public import FLT.Mazur.SchemeFlatProductDensity
