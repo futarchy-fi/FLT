@@ -3557,6 +3557,7 @@ public import FLT.Mazur.BoundaryCorrectionLinearSystem
 public import FLT.Mazur.BoundaryCorrectionLocalCokernel
 public import FLT.Mazur.BoundaryCorrectionLocalReduction
 public import FLT.Mazur.BoundaryCorrectionLocalizedVanishing
+public import FLT.Mazur.BoundaryCorrectionMixedCokernel
 public import FLT.Mazur.BoundaryCorrectionOperatorIndependence
 public import FLT.Mazur.BoundaryCorrectionReductionCertificate
 public import FLT.Mazur.BoundaryCorrectionTensorCoordinates
