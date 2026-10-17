@@ -5997,6 +5997,8 @@ public import FLT.Mazur.HilbertOrbitBoundaryScaledMultipliers
 public import FLT.Mazur.HilbertOrbitBoundarySectionErrorSpan
 public import FLT.Mazur.HilbertOrbitBoundarySourceErrorCriterion
 public import FLT.Mazur.HilbertOrbitMixedBoundaryKernel
+public import FLT.Mazur.HilbertOrbitMixedBoundaryProjection
+public import FLT.Mazur.HilbertOrbitRelativeMixedConnecting
 public import FLT.Mazur.HilbertOrbitRelativeMixedError
 public import FLT.Mazur.HilbertOrderedAffineEnvelope
 public import FLT.Mazur.HilbertOrderedOriginalBoundary
@@ -9838,6 +9840,7 @@ public import FLT.Mazur.RelativeAmplePresentationTransport
 public import FLT.Mazur.RelativeAmpleProper
 public import FLT.Mazur.RelativeAmpleRestriction
 public import FLT.Mazur.RelativeAmpleSectionComparison
+public import FLT.Mazur.RelativeBoundaryConnectingMap
 public import FLT.Mazur.RelativeCartier
 public import FLT.Mazur.RelativeCartierBaseChange
 public import FLT.Mazur.RelativeCartierBaseChangeComposition
@@ -10116,6 +10119,7 @@ public import FLT.Mazur.RelativeSerreLocalizedTower
 public import FLT.Mazur.RelativeSerreSectionModules
 public import FLT.Mazur.RelativeSerreVanishing
 public import FLT.Mazur.RelativeSubmoduleQuotient
+public import FLT.Mazur.RelativeSubmoduleQuotientExact
 public import FLT.Mazur.RelativeSums
 public import FLT.Mazur.RelativeTupleCollision
 public import FLT.Mazur.RelativeTupleCompletenessLocus
