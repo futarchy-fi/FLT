@@ -12489,6 +12489,7 @@ public import FLT.Mazur.WeierstrassDividedFifthShallowResidualAlgebra
 public import FLT.Mazur.WeierstrassDividedFifthShallowResidualRestriction
 public import FLT.Mazur.WeierstrassDividedFifthShallowRestriction
 public import FLT.Mazur.WeierstrassDividedFifthShallowSixthOrder
+public import FLT.Mazur.WeierstrassDividedFifthShallowTerminalGeometry
 public import FLT.Mazur.WeierstrassDividedFifthShallowTransitions
 public import FLT.Mazur.WeierstrassDividedFinalAdjacentComponents
 public import FLT.Mazur.WeierstrassDividedFinalAdjacentConicBranches
