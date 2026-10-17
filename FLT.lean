@@ -13802,6 +13802,7 @@ public import FLT.Mazur.WeierstrassDividedZeroSecondAnnihilation
 public import FLT.Mazur.WeierstrassDividedZeroSecondAtlas
 public import FLT.Mazur.WeierstrassDividedZeroSecondAtlasClosing
 public import FLT.Mazur.WeierstrassDividedZeroSecondAtlasInitial
+public import FLT.Mazur.WeierstrassDividedZeroSecondAtlasSystem
 public import FLT.Mazur.WeierstrassDividedZeroSecondCancellation
 public import FLT.Mazur.WeierstrassDividedZeroSecondFields
 public import FLT.Mazur.WeierstrassDividedZeroSecondGeometry
