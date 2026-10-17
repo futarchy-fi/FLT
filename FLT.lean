@@ -7707,6 +7707,7 @@ public import FLT.Mazur.PolygonCompleteIdentityAdicCubicPatches
 public import FLT.Mazur.PolygonCompleteIdentityAdicCubicZNeighborhood
 public import FLT.Mazur.PolygonCompleteIdentityAdicRefinedKernel
 public import FLT.Mazur.PolygonCompleteIdentityAdicRefinedPatches
+public import FLT.Mazur.PolygonCompleteIdentityAllPositiveLaws
 public import FLT.Mazur.PolygonCompleteIdentityAmbientErrorRelation
 public import FLT.Mazur.PolygonCompleteIdentityAmbientParameterComparison
 public import FLT.Mazur.PolygonCompleteIdentityChartAtlas
@@ -7726,6 +7727,7 @@ public import FLT.Mazur.PolygonCompleteIdentityFinitePointLaw
 public import FLT.Mazur.PolygonCompleteIdentityFiniteReduction
 public import FLT.Mazur.PolygonCompleteIdentityFiniteRotatedEdges
 public import FLT.Mazur.PolygonCompleteIdentityFiniteScaling
+public import FLT.Mazur.PolygonCompleteIdentityFiniteSectionProjLaw
 public import FLT.Mazur.PolygonCompleteIdentityFiniteSymmetry
 public import FLT.Mazur.PolygonCompleteIdentityFiniteUnitEvaluation
 public import FLT.Mazur.PolygonCompleteIdentityFiniteUnits
@@ -7919,6 +7921,7 @@ public import FLT.Mazur.PolygonCompleteIdentityOrderZeroLaw
 public import FLT.Mazur.PolygonCompleteIdentityPointCocycle
 public import FLT.Mazur.PolygonCompleteIdentityPointDefect
 public import FLT.Mazur.PolygonCompleteIdentitySecondCorrection
+public import FLT.Mazur.PolygonCompleteIdentitySecondGraphFlat
 public import FLT.Mazur.PolygonCompleteIdentitySecondResidualSocle
 public import FLT.Mazur.PolygonCompleteIdentitySmoothAction
 public import FLT.Mazur.PolygonCompleteIdentitySmoothActionCoordinates
@@ -7928,8 +7931,11 @@ public import FLT.Mazur.PolygonCompleteIdentitySmoothInputGraph
 public import FLT.Mazur.PolygonCompleteIdentityStageGraphRotatedCubic
 public import FLT.Mazur.PolygonCompleteIdentityStageSourceZeroCubic
 public import FLT.Mazur.PolygonCompleteIdentityStageTorus
+public import FLT.Mazur.PolygonCompleteIdentityTopActionBoundary
 public import FLT.Mazur.PolygonCompleteIdentityTopActionCoordinate
 public import FLT.Mazur.PolygonCompleteIdentityTopActionRestriction
+public import FLT.Mazur.PolygonCompleteIdentityTopAffineGraphQuotient
+public import FLT.Mazur.PolygonCompleteIdentityTopAffineGraphTests
 public import FLT.Mazur.PolygonCompleteIdentityTopAmbientNodeGenerators
 public import FLT.Mazur.PolygonCompleteIdentityTopAmbientScalars
 public import FLT.Mazur.PolygonCompleteIdentityTopBoundary
@@ -7956,10 +7962,12 @@ public import FLT.Mazur.PolygonCompleteIdentityTopChartResidualGenerators
 public import FLT.Mazur.PolygonCompleteIdentityTopChartResidualPresentation
 public import FLT.Mazur.PolygonCompleteIdentityTopChartScalars
 public import FLT.Mazur.PolygonCompleteIdentityTopChartSocleKernel
+public import FLT.Mazur.PolygonCompleteIdentityTopChartSocleVanishing
 public import FLT.Mazur.PolygonCompleteIdentityTopChartSourceFunctions
 public import FLT.Mazur.PolygonCompleteIdentityTopCorrection
 public import FLT.Mazur.PolygonCompleteIdentityTopDefect
 public import FLT.Mazur.PolygonCompleteIdentityTopGraphAlgebra
+public import FLT.Mazur.PolygonCompleteIdentityTopGraphBoundary
 public import FLT.Mazur.PolygonCompleteIdentityTopGraphChartBranch
 public import FLT.Mazur.PolygonCompleteIdentityTopGraphChartFlat
 public import FLT.Mazur.PolygonCompleteIdentityTopGraphClosedComparison
@@ -7971,16 +7979,21 @@ public import FLT.Mazur.PolygonCompleteIdentityTopGraphReduction
 public import FLT.Mazur.PolygonCompleteIdentityTopGraphScheme
 public import FLT.Mazur.PolygonCompleteIdentityTopGraphToChart
 public import FLT.Mazur.PolygonCompleteIdentityTopLinearization
+public import FLT.Mazur.PolygonCompleteIdentityTopLocalAffineErrors
+public import FLT.Mazur.PolygonCompleteIdentityTopLocalSocleMembership
 public import FLT.Mazur.PolygonCompleteIdentityTopNodeBoundary
 public import FLT.Mazur.PolygonCompleteIdentityTopNodePolynomials
 public import FLT.Mazur.PolygonCompleteIdentityTopObstruction
+public import FLT.Mazur.PolygonCompleteIdentityTopObstructionBoundary
 public import FLT.Mazur.PolygonCompleteIdentityTopObstructionCocycle
 public import FLT.Mazur.PolygonCompleteIdentityTopPointCocycle
 public import FLT.Mazur.PolygonCompleteIdentityTopPolePatchGeometry
 public import FLT.Mazur.PolygonCompleteIdentityTopPolePatchMaps
+public import FLT.Mazur.PolygonCompleteIdentityTopQuotientLocalErrors
 public import FLT.Mazur.PolygonCompleteIdentityTopResidualTarget
 public import FLT.Mazur.PolygonCompleteIdentityTopSourceIncomingCubic
 public import FLT.Mazur.PolygonCompleteIdentityTopSourceLocalComparison
+public import FLT.Mazur.PolygonCompleteIdentityTopSourceNodeCoverage
 public import FLT.Mazur.PolygonCompleteIdentityTopSourcePoleCubic
 public import FLT.Mazur.PolygonCompleteIdentityTopSourcePoleGeometry
 public import FLT.Mazur.PolygonCompleteIdentityTopSourcePoleMaps
@@ -8803,6 +8816,7 @@ public import FLT.Mazur.PolygonStructureInclusion
 public import FLT.Mazur.PolygonTopNodeActionDefect
 public import FLT.Mazur.PolygonTopNodeAutomorphism
 public import FLT.Mazur.PolygonTopNodeBoundary
+public import FLT.Mazur.PolygonTopNodeBranchRestriction
 public import FLT.Mazur.PolygonTopNodeEndomorphism
 public import FLT.Mazur.PolygonTopNodeGraphAlgebra
 public import FLT.Mazur.PolygonTopNodeGraphBranchExt
@@ -8817,6 +8831,7 @@ public import FLT.Mazur.PolygonTopNodeLaurent
 public import FLT.Mazur.PolygonTopNodeNeighborhood
 public import FLT.Mazur.PolygonTopNodeParameterScaling
 public import FLT.Mazur.PolygonTopNodeReduction
+public import FLT.Mazur.PolygonTopNodeScaledBoundary
 public import FLT.Mazur.PolygonTopNodeTangentBoundary
 public import FLT.Mazur.PolygonTopNodeTangentEquiv
 public import FLT.Mazur.PolygonTopNodeTangentLift
