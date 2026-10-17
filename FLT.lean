@@ -8713,6 +8713,7 @@ public import FLT.Mazur.PolygonSmoothingLocalizedPolynomials
 public import FLT.Mazur.PolygonSmoothingMarkedIdeal
 public import FLT.Mazur.PolygonSmoothingMarkedSection
 public import FLT.Mazur.PolygonSmoothingMarkingIdealSheaf
+public import FLT.Mazur.PolygonSmoothingNilpotentBoundaryFactor
 public import FLT.Mazur.PolygonSmoothingNilpotentBranches
 public import FLT.Mazur.PolygonSmoothingNilpotentShear
 public import FLT.Mazur.PolygonSmoothingNilpotentShearNaturality
