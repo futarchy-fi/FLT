@@ -13744,6 +13744,7 @@ public import FLT.Mazur.WeierstrassDividedZeroExteriorSmoothCoordinates
 public import FLT.Mazur.WeierstrassDividedZeroExteriorSmoothOrbit
 public import FLT.Mazur.WeierstrassDividedZeroFirstFields
 public import FLT.Mazur.WeierstrassDividedZeroFirstNodes
+public import FLT.Mazur.WeierstrassDividedZeroFirstPunctures
 public import FLT.Mazur.WeierstrassDividedZeroIncidenceInfinity
 public import FLT.Mazur.WeierstrassDividedZeroInfinityPolygon
 public import FLT.Mazur.WeierstrassDividedZeroInitialAffineOpen
