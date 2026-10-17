@@ -7678,6 +7678,7 @@ public import FLT.Mazur.PolygonCohomologyIncidence
 public import FLT.Mazur.PolygonCollapsedBoundaryIdeal
 public import FLT.Mazur.PolygonCollapsedBoundarySupport
 public import FLT.Mazur.PolygonCollapsedChainBoundaryCharts
+public import FLT.Mazur.PolygonCollapsedChainCartesianAtlas
 public import FLT.Mazur.PolygonCollapsedChainInteriorCharts
 public import FLT.Mazur.PolygonCollapsedChainLaurentEdges
 public import FLT.Mazur.PolygonCollapsedChainLocalDescent
