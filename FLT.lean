@@ -4740,6 +4740,7 @@ public import FLT.Mazur.EquivalenceRelationCompleteFiberComparison
 public import FLT.Mazur.EquivalenceRelationCompleteFiberSplit
 public import FLT.Mazur.EquivalenceRelationCompleteIdealInvariant
 public import FLT.Mazur.EquivalenceRelationCompleteInterior
+public import FLT.Mazur.EquivalenceRelationCompleteInteriorFinite
 public import FLT.Mazur.EquivalenceRelationCompleteMixedCoefficients
 public import FLT.Mazur.EquivalenceRelationCompleteOpenCoefficients
 public import FLT.Mazur.EquivalenceRelationCompletePointLocus
@@ -4749,8 +4750,10 @@ public import FLT.Mazur.EquivalenceRelationCompleteSourceRestriction
 public import FLT.Mazur.EquivalenceRelationCompleteStageCoefficients
 public import FLT.Mazur.EquivalenceRelationCompleteSubframe
 public import FLT.Mazur.EquivalenceRelationCompleteTestCoefficients
+public import FLT.Mazur.EquivalenceRelationCompleteTestFinite
 public import FLT.Mazur.EquivalenceRelationCompleteTestPartition
 public import FLT.Mazur.EquivalenceRelationCompleteThickeningAction
+public import FLT.Mazur.EquivalenceRelationCompleteThickeningFinite
 public import FLT.Mazur.EquivalenceRelationCompleteThickeningTower
 public import FLT.Mazur.EquivalenceRelationCompleteThickenings
 public import FLT.Mazur.EquivalenceRelationCompleteVanishingOpen
@@ -4794,6 +4797,7 @@ public import FLT.Mazur.EquivalenceRelationMixedResidualDecomposition
 public import FLT.Mazur.EquivalenceRelationMixedResidualOpen
 public import FLT.Mazur.EquivalenceRelationMixedResidualPieces
 public import FLT.Mazur.EquivalenceRelationMixedSourceEquations
+public import FLT.Mazur.EquivalenceRelationNonfiniteResidual
 public import FLT.Mazur.EquivalenceRelationNormalizedActionComplete
 public import FLT.Mazur.EquivalenceRelationNormalizedActionGraphs
 public import FLT.Mazur.EquivalenceRelationNormalizedActionRelation
@@ -5921,6 +5925,7 @@ public import FLT.Mazur.HilbertCompleteGeometricTuple
 public import FLT.Mazur.HilbertCompleteInfinitesimalSources
 public import FLT.Mazur.HilbertCompleteInteriorBoundaryLifts
 public import FLT.Mazur.HilbertCompleteInteriorCharts
+public import FLT.Mazur.HilbertCompleteInteriorFiniteCriterion
 public import FLT.Mazur.HilbertCompleteInteriorOriginalNeighborhoods
 public import FLT.Mazur.HilbertDenseRankOriginalLifts
 public import FLT.Mazur.HilbertDivisorDegreePresentation
@@ -10153,6 +10158,7 @@ public import FLT.Mazur.RelativeFppfSchemeCover
 public import FLT.Mazur.RelativeFppfSurjectivityDetection
 public import FLT.Mazur.RelativeFppfTargetOpen
 public import FLT.Mazur.RelativeFrameClosedRankCompleteness
+public import FLT.Mazur.RelativeFrameCompleteFinite
 public import FLT.Mazur.RelativeFrameCompletenessTransfer
 public import FLT.Mazur.RelativeFrameDenseRankStrata
 public import FLT.Mazur.RelativeFrameExactRank
