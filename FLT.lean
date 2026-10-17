@@ -3531,6 +3531,7 @@ public import FLT.Mazur.BlowupReesRatioTransition
 public import FLT.Mazur.BlowupReesZeroComponent
 public import FLT.Mazur.BoundaryCorrectionFaithfulCoefficients
 public import FLT.Mazur.BoundaryCorrectionIdeal
+public import FLT.Mazur.BoundaryCorrectionLinearSystem
 public import FLT.Mazur.BoundedFlatAcyclicNeighborhood
 public import FLT.Mazur.BoundedFlatAcyclicOpen
 public import FLT.Mazur.BoundedFlatFiberVanishing
