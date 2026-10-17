@@ -6112,6 +6112,7 @@ public import FLT.Mazur.HilbertSupportOpenPullback
 public import FLT.Mazur.HilbertTruncatedIdealDetection
 public import FLT.Mazur.HilbertTruncatedIdealGeneration
 public import FLT.Mazur.HilbertTupleBasisTower
+public import FLT.Mazur.HilbertUniformBaseFiniteCover
 public import FLT.Mazur.HilbertUniformBaseScalarCore
 public import FLT.Mazur.HilbertUniformOriginalFiniteLifts
 public import FLT.Mazur.HilbertUniformOriginalLiftingOpen
