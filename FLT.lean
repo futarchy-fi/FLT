@@ -12620,6 +12620,7 @@ public import FLT.Mazur.WeierstrassDividedFifthFartherGeometry
 public import FLT.Mazur.WeierstrassDividedFifthFartherIdentification
 public import FLT.Mazur.WeierstrassDividedFifthFartherIncomingCancellation
 public import FLT.Mazur.WeierstrassDividedFifthFartherInputIdentification
+public import FLT.Mazur.WeierstrassDividedFifthFartherInputRestriction
 public import FLT.Mazur.WeierstrassDividedFifthFartherNodeRestriction
 public import FLT.Mazur.WeierstrassDividedFifthFartherNodes
 public import FLT.Mazur.WeierstrassDividedFifthFartherOpenRestriction
