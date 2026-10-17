@@ -13017,6 +13017,7 @@ public import FLT.Mazur.WeierstrassDividedThirdJointFields
 public import FLT.Mazur.WeierstrassDividedThirdJointIdentification
 public import FLT.Mazur.WeierstrassDividedThirdJointNodes
 public import FLT.Mazur.WeierstrassDividedThirdJointRestriction
+public import FLT.Mazur.WeierstrassDividedThirdLayerFieldIdentification
 public import FLT.Mazur.WeierstrassDividedThirdOuterIdentification
 public import FLT.Mazur.WeierstrassDividedThirdPunctureIdentification
 public import FLT.Mazur.WeierstrassDividedThirdResidualFields
