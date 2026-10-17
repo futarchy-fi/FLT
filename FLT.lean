@@ -7679,6 +7679,7 @@ public import FLT.Mazur.PolygonArithmeticIteratedNodePuncture
 public import FLT.Mazur.PolygonArithmeticIteratedNodeRestriction
 public import FLT.Mazur.PolygonArithmeticIteratedSmoothingAnnihilator
 public import FLT.Mazur.PolygonArithmeticLaurentCorrectionLift
+public import FLT.Mazur.PolygonArithmeticLaurentIdentityRestriction
 public import FLT.Mazur.PolygonArithmeticLaurentSystemCorrectionField
 public import FLT.Mazur.PolygonArithmeticLaurentSystemRestriction
 public import FLT.Mazur.PolygonArithmeticLayerQuotient
