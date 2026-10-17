@@ -3559,6 +3559,7 @@ public import FLT.Mazur.BoundaryCorrectionLocalReduction
 public import FLT.Mazur.BoundaryCorrectionLocalizedVanishing
 public import FLT.Mazur.BoundaryCorrectionMixedBaseChange
 public import FLT.Mazur.BoundaryCorrectionMixedCokernel
+public import FLT.Mazur.BoundaryCorrectionMixedNumerators
 public import FLT.Mazur.BoundaryCorrectionOperatorIndependence
 public import FLT.Mazur.BoundaryCorrectionReductionCertificate
 public import FLT.Mazur.BoundaryCorrectionTensorCoordinates
@@ -4695,6 +4696,7 @@ public import FLT.Mazur.EquivalenceRelationChartFamilyCorrections
 public import FLT.Mazur.EquivalenceRelationChartFamilyLifts
 public import FLT.Mazur.EquivalenceRelationChartFamilyLocalization
 public import FLT.Mazur.EquivalenceRelationChartFamilyRestriction
+public import FLT.Mazur.EquivalenceRelationChartKernelDiscrepancy
 public import FLT.Mazur.EquivalenceRelationCompleteAdicDiscrepancy
 public import FLT.Mazur.EquivalenceRelationCompleteAdicSeparation
 public import FLT.Mazur.EquivalenceRelationCompleteAffineStages
@@ -5848,6 +5850,7 @@ public import FLT.Mazur.HilbertComplementPointCompatibility
 public import FLT.Mazur.HilbertComplementSchemeCompatibility
 public import FLT.Mazur.HilbertCompleteChartBoundaryDescent
 public import FLT.Mazur.HilbertCompleteChartBoundaryTests
+public import FLT.Mazur.HilbertCompleteChartMixedVanishing
 public import FLT.Mazur.HilbertCompleteChartOriginalCertificates
 public import FLT.Mazur.HilbertCompleteChartOriginalSections
 public import FLT.Mazur.HilbertCompleteFrameCardinality
@@ -5993,6 +5996,8 @@ public import FLT.Mazur.HilbertOrbitBoundaryScalarImage
 public import FLT.Mazur.HilbertOrbitBoundaryScaledMultipliers
 public import FLT.Mazur.HilbertOrbitBoundarySectionErrorSpan
 public import FLT.Mazur.HilbertOrbitBoundarySourceErrorCriterion
+public import FLT.Mazur.HilbertOrbitMixedBoundaryKernel
+public import FLT.Mazur.HilbertOrbitRelativeMixedError
 public import FLT.Mazur.HilbertOrderedAffineEnvelope
 public import FLT.Mazur.HilbertOrderedOriginalBoundary
 public import FLT.Mazur.HilbertOrderedStableNeighborhood
@@ -10098,6 +10103,7 @@ public import FLT.Mazur.RelativeSerreAffineVanishing
 public import FLT.Mazur.RelativeSerreLocalizedTower
 public import FLT.Mazur.RelativeSerreSectionModules
 public import FLT.Mazur.RelativeSerreVanishing
+public import FLT.Mazur.RelativeSubmoduleQuotient
 public import FLT.Mazur.RelativeSums
 public import FLT.Mazur.RelativeTupleCollision
 public import FLT.Mazur.RelativeTupleCompletenessLocus
