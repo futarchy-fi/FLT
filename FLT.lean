@@ -3153,6 +3153,7 @@ public import FLT.Mazur.AffineSectionNormFiber
 public import FLT.Mazur.AffineSectionResidueEquation
 public import FLT.Mazur.AffineSectionTensorSquare
 public import FLT.Mazur.AffineSectionsReconstruction
+public import FLT.Mazur.AffineSeparatedFamilyExt
 public import FLT.Mazur.AffineSeparatedPullbackGenerators
 public import FLT.Mazur.AffineSmoothEtaleCoordinates
 public import FLT.Mazur.AffineSmoothFiniteFlatCartier
