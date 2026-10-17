@@ -3574,6 +3574,7 @@ public import FLT.Mazur.CanonicalRelativeLineModel
 public import FLT.Mazur.CanonicalSchemeRelationGround
 public import FLT.Mazur.CanonicalSectionComposition
 public import FLT.Mazur.CanonicalSectionNaturality
+public import FLT.Mazur.CartesianActionPullback
 public import FLT.Mazur.CartesianAtlasAffineIntersections
 public import FLT.Mazur.CartesianCoefficientPositiveHomology
 public import FLT.Mazur.CartesianCoefficientSymmetry
@@ -4734,6 +4735,7 @@ public import FLT.Mazur.EquivalenceRelationConnectedCompleteTests
 public import FLT.Mazur.EquivalenceRelationFiberPermutationSections
 public import FLT.Mazur.EquivalenceRelationFiberRebase
 public import FLT.Mazur.EquivalenceRelationFiniteChartMultipliers
+public import FLT.Mazur.EquivalenceRelationFiniteCompleteInterior
 public import FLT.Mazur.EquivalenceRelationFrameNormalization
 public import FLT.Mazur.EquivalenceRelationFrameRebaseGeometric
 public import FLT.Mazur.EquivalenceRelationFrameRebaseLaws
@@ -5383,6 +5385,7 @@ public import FLT.Mazur.GeneralizedCurveGeometricProjectiveIso
 public import FLT.Mazur.GeneralizedCurveGeometricWeierstrass
 public import FLT.Mazur.GeneralizedCurveGraph
 public import FLT.Mazur.GeneralizedCurveGraphBaseChange
+public import FLT.Mazur.GeneralizedCurveGraphCartesian
 public import FLT.Mazur.GeneralizedCurveGraphTransport
 public import FLT.Mazur.GeneralizedCurveIdentityBaseChange
 public import FLT.Mazur.GeneralizedCurveLocalCubicPresentation
@@ -5899,6 +5902,7 @@ public import FLT.Mazur.HilbertFamilyRelationBaseChange
 public import FLT.Mazur.HilbertFamilyTruncatedRelations
 public import FLT.Mazur.HilbertFiniteAmbientPresentation
 public import FLT.Mazur.HilbertFiniteFreeQuotientRefinement
+public import FLT.Mazur.HilbertFiniteRelationUniformCoverage
 public import FLT.Mazur.HilbertFullInteriorFiniteKernel
 public import FLT.Mazur.HilbertFullInteriorQuotientChart
 public import FLT.Mazur.HilbertFullRelationFiberRebase
@@ -7885,6 +7889,7 @@ public import FLT.Mazur.PolygonCompleteCartesianRotation
 public import FLT.Mazur.PolygonCompleteChartOperationCompatibility
 public import FLT.Mazur.PolygonCompleteChartOverlapField
 public import FLT.Mazur.PolygonCompleteClassifiedFibers
+public import FLT.Mazur.PolygonCompleteClosedActionComparison
 public import FLT.Mazur.PolygonCompleteClosedActionProduct
 public import FLT.Mazur.PolygonCompleteClosedActionRotation
 public import FLT.Mazur.PolygonCompleteClosedCartierGenerator
@@ -7954,6 +7959,7 @@ public import FLT.Mazur.PolygonCompleteFiniteParameterTranslation
 public import FLT.Mazur.PolygonCompleteFixedPointFree
 public import FLT.Mazur.PolygonCompleteFlatContractionExt
 public import FLT.Mazur.PolygonCompleteFlatSmoothPreimage
+public import FLT.Mazur.PolygonCompleteGeneralizedCurve
 public import FLT.Mazur.PolygonCompleteGenericChartCompatibility
 public import FLT.Mazur.PolygonCompleteGenericChartEvaluation
 public import FLT.Mazur.PolygonCompleteGenericChartOperations
@@ -7967,6 +7973,7 @@ public import FLT.Mazur.PolygonCompleteGenericRelativeDimension
 public import FLT.Mazur.PolygonCompleteGenericSmooth
 public import FLT.Mazur.PolygonCompleteGenusOneFamily
 public import FLT.Mazur.PolygonCompleteGeometricGenericFiber
+public import FLT.Mazur.PolygonCompleteGeometricRotations
 public import FLT.Mazur.PolygonCompleteGeometricallyConnected
 public import FLT.Mazur.PolygonCompleteGeometricallyReduced
 public import FLT.Mazur.PolygonCompleteH1Rank
@@ -8408,6 +8415,9 @@ public import FLT.Mazur.PolygonCompleteNodeStalkCompletion
 public import FLT.Mazur.PolygonCompleteNodeStalkEvaluation
 public import FLT.Mazur.PolygonCompleteNodeStalkH1Equiv
 public import FLT.Mazur.PolygonCompleteNodeStalkMap
+public import FLT.Mazur.PolygonCompleteOriginalCyclicHom
+public import FLT.Mazur.PolygonCompleteOriginalCyclicSubgroup
+public import FLT.Mazur.PolygonCompleteOriginalModuli
 public import FLT.Mazur.PolygonCompleteOriginalSectionReconstruction
 public import FLT.Mazur.PolygonCompleteParameterBaseChange
 public import FLT.Mazur.PolygonCompleteParameterLineBaseChange
@@ -10307,6 +10317,7 @@ public import FLT.Mazur.RelativeSubmoduleQuotientExact
 public import FLT.Mazur.RelativeSums
 public import FLT.Mazur.RelativeTupleCollision
 public import FLT.Mazur.RelativeTupleCompletenessLocus
+public import FLT.Mazur.RelativeTupleFiniteCompleteness
 public import FLT.Mazur.RelativeTupleOpenEmbedding
 public import FLT.Mazur.RelativeTupleSections
 public import FLT.Mazur.RelativeUniversalDistinctLift
@@ -10566,6 +10577,7 @@ public import FLT.Mazur.SchemeEtaleImageDenseModel
 public import FLT.Mazur.SchemeEtaleImageModelBaseChange
 public import FLT.Mazur.SchemeEtaleImageQuotient
 public import FLT.Mazur.SchemeFamilyTripleOverlap
+public import FLT.Mazur.SchemeFiniteFiberInterior
 public import FLT.Mazur.SchemeFiniteGeometricOpenSpread
 public import FLT.Mazur.SchemeFiniteGroupAffineDescent
 public import FLT.Mazur.SchemeFiniteGroupDescent
@@ -10582,6 +10594,7 @@ public import FLT.Mazur.SchemeFiniteGroupQuotientOpenEmbedding
 public import FLT.Mazur.SchemeFiniteGroupQuotientOpenImmersion
 public import FLT.Mazur.SchemeFiniteGroupQuotientOrbits
 public import FLT.Mazur.SchemeFiniteOrbitOpenCore
+public import FLT.Mazur.SchemeFiniteTargetBaseChange
 public import FLT.Mazur.SchemeFlatFamilyReflection
 public import FLT.Mazur.SchemeFlatFppfTargetDensity
 public import FLT.Mazur.SchemeFlatProductDensity
