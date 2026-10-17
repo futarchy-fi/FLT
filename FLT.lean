@@ -8216,6 +8216,7 @@ public import FLT.Mazur.PolygonCompletePointStagePoleSections
 public import FLT.Mazur.PolygonCompletePointStagePowerComparison
 public import FLT.Mazur.PolygonCompletePointStageSectionProducts
 public import FLT.Mazur.PolygonCompletePointSurjective
+public import FLT.Mazur.PolygonCompletePointTopLocalCubicComparison
 public import FLT.Mazur.PolygonCompletePointTorusNeighborhood
 public import FLT.Mazur.PolygonCompletePointWeierstrassEquation
 public import FLT.Mazur.PolygonCompletePrincipalClosedFiber
