@@ -12476,6 +12476,7 @@ public import FLT.Mazur.WeierstrassDividedFifthShallowAtlasEdge
 public import FLT.Mazur.WeierstrassDividedFifthShallowAtlasIdentification
 public import FLT.Mazur.WeierstrassDividedFifthShallowAtlasIncoming
 public import FLT.Mazur.WeierstrassDividedFifthShallowAtlasPreceding
+public import FLT.Mazur.WeierstrassDividedFifthShallowAtlasRestriction
 public import FLT.Mazur.WeierstrassDividedFifthShallowAtlasSystem
 public import FLT.Mazur.WeierstrassDividedFifthShallowCancellation
 public import FLT.Mazur.WeierstrassDividedFifthShallowFields
