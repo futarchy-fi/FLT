@@ -6341,6 +6341,7 @@ public import FLT.Mazur.KernelPairSourceBranchCriterion
 public import FLT.Mazur.KernelPairTestIso
 public import FLT.Mazur.KernelPairUnramifiedInverse
 public import FLT.Mazur.LargeDegreeRelativeLineSections
+public import FLT.Mazur.LaurentBoundaryCorrectionScalar
 public import FLT.Mazur.LaurentBoundaryCorrectionSplit
 public import FLT.Mazur.LaurentBoundaryTailShift
 public import FLT.Mazur.LaurentBoundaryVectorField
@@ -8732,6 +8733,7 @@ public import FLT.Mazur.PolygonSmoothingSingularSupport
 public import FLT.Mazur.PolygonSmoothingSpecialBranches
 public import FLT.Mazur.PolygonSmoothingSpecialFiber
 public import FLT.Mazur.PolygonSmoothingSquareZeroEdgeFactors
+public import FLT.Mazur.PolygonSmoothingSquareZeroFactorIndependence
 public import FLT.Mazur.PolygonSmoothingSquareZeroLiftConstraint
 public import FLT.Mazur.PolygonSmoothingSquareZeroShear
 public import FLT.Mazur.PolygonSmoothingSquareZeroShearBoundary
@@ -12228,6 +12230,12 @@ public import FLT.Mazur.WeierstrassDividedFirstInfinityAction
 public import FLT.Mazur.WeierstrassDividedFirstInfinityCenter
 public import FLT.Mazur.WeierstrassDividedFirstInfinityFactorization
 public import FLT.Mazur.WeierstrassDividedFirstOutputCover
+public import FLT.Mazur.WeierstrassDividedFirstResidualAtlas
+public import FLT.Mazur.WeierstrassDividedFirstResidualAtlasEdges
+public import FLT.Mazur.WeierstrassDividedFirstResidualAtlasGluing
+public import FLT.Mazur.WeierstrassDividedFirstResidualChoiceIndependence
+public import FLT.Mazur.WeierstrassDividedFirstResidualIncoming
+public import FLT.Mazur.WeierstrassDividedFirstResidualOrientation
 public import FLT.Mazur.WeierstrassDividedFirstSuccessorAction
 public import FLT.Mazur.WeierstrassDividedFirstUnitAction
 public import FLT.Mazur.WeierstrassDividedFixedTerminalBoundary
