@@ -12495,6 +12495,7 @@ public import FLT.Mazur.WeierstrassDividedFourthAtlasPreceding
 public import FLT.Mazur.WeierstrassDividedFourthAtlasSystem
 public import FLT.Mazur.WeierstrassDividedFourthEarlierGeometry
 public import FLT.Mazur.WeierstrassDividedFourthEarlierRestriction
+public import FLT.Mazur.WeierstrassDividedFourthFartherAdjacent
 public import FLT.Mazur.WeierstrassDividedFourthFartherFifthOrder
 public import FLT.Mazur.WeierstrassDividedFourthFartherIncoming
 public import FLT.Mazur.WeierstrassDividedFourthGeometry
