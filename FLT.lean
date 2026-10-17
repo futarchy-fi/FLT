@@ -6114,6 +6114,7 @@ public import FLT.Mazur.HilbertTruncatedIdealGeneration
 public import FLT.Mazur.HilbertTupleBasisTower
 public import FLT.Mazur.HilbertUniformSourceBoundaryDescent
 public import FLT.Mazur.HilbertUniformSourceOriginalSections
+public import FLT.Mazur.HilbertUniformSourcePrincipalMultipliers
 public import FLT.Mazur.HilbertUniversalComplementMatrix
 public import FLT.Mazur.HilbertUniversalFrameRebase
 public import FLT.Mazur.HomIntegerModel
