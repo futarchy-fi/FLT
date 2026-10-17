@@ -10304,6 +10304,7 @@ public import FLT.Mazur.RelativeRelationPointDenominators
 public import FLT.Mazur.RelativeRelationPrincipalLifting
 public import FLT.Mazur.RelativeRelationPrincipalRestriction
 public import FLT.Mazur.RelativeRelationPrincipalTorsion
+public import FLT.Mazur.RelativeRelationProjectiveNormPrincipal
 public import FLT.Mazur.RelativeRelationPulledIdealCover
 public import FLT.Mazur.RelativeRelationQuotientSections
 public import FLT.Mazur.RelativeRelationQuotientSheaf
