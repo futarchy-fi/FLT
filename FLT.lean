@@ -12544,6 +12544,7 @@ public import FLT.Mazur.WeierstrassDividedFactorRatioPolygonNaturality
 public import FLT.Mazur.WeierstrassDividedFactorRatioRetainedBoundary
 public import FLT.Mazur.WeierstrassDividedFaithfulActionDescent
 public import FLT.Mazur.WeierstrassDividedFifthDeepAtlas
+public import FLT.Mazur.WeierstrassDividedFifthDeepAtlasClosing
 public import FLT.Mazur.WeierstrassDividedFifthDeepAtlasIdentification
 public import FLT.Mazur.WeierstrassDividedFifthDeepAtlasOuterIncoming
 public import FLT.Mazur.WeierstrassDividedFifthDeepAtlasPreceding
