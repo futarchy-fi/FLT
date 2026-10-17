@@ -4717,6 +4717,7 @@ public import FLT.Mazur.EquivalenceRelationMixedFrameComparison
 public import FLT.Mazur.EquivalenceRelationMixedFrameLabelChange
 public import FLT.Mazur.EquivalenceRelationMixedFrameRelation
 public import FLT.Mazur.EquivalenceRelationMixedResidualOpen
+public import FLT.Mazur.EquivalenceRelationMixedResidualPieces
 public import FLT.Mazur.EquivalenceRelationNormalizedActionComplete
 public import FLT.Mazur.EquivalenceRelationNormalizedActionGraphs
 public import FLT.Mazur.EquivalenceRelationNormalizedActionRelation
