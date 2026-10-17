@@ -8728,6 +8728,7 @@ public import FLT.Mazur.PolygonSmoothingFlat
 public import FLT.Mazur.PolygonSmoothingGenericFiber
 public import FLT.Mazur.PolygonSmoothingH1FaithfulDescent
 public import FLT.Mazur.PolygonSmoothingIdentificationCalculus
+public import FLT.Mazur.PolygonSmoothingIdentificationGeometry
 public import FLT.Mazur.PolygonSmoothingIncomingMarking
 public import FLT.Mazur.PolygonSmoothingIndependentScaling
 public import FLT.Mazur.PolygonSmoothingLaurentMonomials
