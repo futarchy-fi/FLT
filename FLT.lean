@@ -12574,6 +12574,7 @@ public import FLT.Mazur.WeierstrassDividedFourthShallowAtlasClosing
 public import FLT.Mazur.WeierstrassDividedFourthShallowAtlasEdge
 public import FLT.Mazur.WeierstrassDividedFourthShallowAtlasIncoming
 public import FLT.Mazur.WeierstrassDividedFourthShallowAtlasPreceding
+public import FLT.Mazur.WeierstrassDividedFourthShallowAtlasRestriction
 public import FLT.Mazur.WeierstrassDividedFourthShallowAtlasSystem
 public import FLT.Mazur.WeierstrassDividedFourthShallowCancellation
 public import FLT.Mazur.WeierstrassDividedFourthShallowFields
