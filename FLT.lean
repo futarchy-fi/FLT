@@ -7664,6 +7664,7 @@ public import FLT.Mazur.PolygonClosedCubicNodeFiber
 public import FLT.Mazur.PolygonClosedCubicNonconstant
 public import FLT.Mazur.PolygonClosedCubicOmittedChart
 public import FLT.Mazur.PolygonClosedCubicOmittedConstant
+public import FLT.Mazur.PolygonClosedCubicReducedChain
 public import FLT.Mazur.PolygonClosedCubicRetainedLine
 public import FLT.Mazur.PolygonClosedCubicSmoothTorus
 public import FLT.Mazur.PolygonClosedCubicTorus
