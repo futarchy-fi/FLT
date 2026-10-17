@@ -7427,11 +7427,14 @@ public import FLT.Mazur.PolygonArithmeticFiniteType
 public import FLT.Mazur.PolygonArithmeticFlatLayer
 public import FLT.Mazur.PolygonArithmeticGradedExactness
 public import FLT.Mazur.PolygonArithmeticGradedParameter
+public import FLT.Mazur.PolygonArithmeticHigherCorrectionField
 public import FLT.Mazur.PolygonArithmeticHomogeneousReduction
 public import FLT.Mazur.PolygonArithmeticHomogeneousSections
 public import FLT.Mazur.PolygonArithmeticIdealPowers
 public import FLT.Mazur.PolygonArithmeticIntegralDegree
 public import FLT.Mazur.PolygonArithmeticLaurentCorrectionLift
+public import FLT.Mazur.PolygonArithmeticLaurentSystemCorrectionField
+public import FLT.Mazur.PolygonArithmeticLaurentSystemRestriction
 public import FLT.Mazur.PolygonArithmeticLayerQuotient
 public import FLT.Mazur.PolygonArithmeticLineCoherence
 public import FLT.Mazur.PolygonArithmeticLineHomExt
@@ -7498,6 +7501,7 @@ public import FLT.Mazur.PolygonArithmeticStageProjectiveCoordinates
 public import FLT.Mazur.PolygonArithmeticStageProper
 public import FLT.Mazur.PolygonArithmeticStageRecovery
 public import FLT.Mazur.PolygonArithmeticStageRestriction
+public import FLT.Mazur.PolygonArithmeticStageRestrictionLE
 public import FLT.Mazur.PolygonArithmeticStageRingLift
 public import FLT.Mazur.PolygonArithmeticStageTransition
 public import FLT.Mazur.PolygonArithmeticStageVanishing
@@ -8798,6 +8802,8 @@ public import FLT.Mazur.PolygonSmoothingPunctureBaseChange
 public import FLT.Mazur.PolygonSmoothingPunctureCalculus
 public import FLT.Mazur.PolygonSmoothingPunctureGeometry
 public import FLT.Mazur.PolygonSmoothingPunctureNaturality
+public import FLT.Mazur.PolygonSmoothingPunctureSpecCalculus
+public import FLT.Mazur.PolygonSmoothingPunctureSpecNaturality
 public import FLT.Mazur.PolygonSmoothingQuadraticModel
 public import FLT.Mazur.PolygonSmoothingRangeGenerators
 public import FLT.Mazur.PolygonSmoothingReciprocalScaling
@@ -12748,12 +12754,15 @@ public import FLT.Mazur.WeierstrassDividedPrecedingAtlasRange
 public import FLT.Mazur.WeierstrassDividedPreviousBoundaryAlgebra
 public import FLT.Mazur.WeierstrassDividedProjectiveLift
 public import FLT.Mazur.WeierstrassDividedResidualIntegralLift
+public import FLT.Mazur.WeierstrassDividedResidualLiftAlgebra
 public import FLT.Mazur.WeierstrassDividedResidualLiftAtlas
 public import FLT.Mazur.WeierstrassDividedResidualLiftAtlasEdges
 public import FLT.Mazur.WeierstrassDividedResidualLiftAtlasSystem
 public import FLT.Mazur.WeierstrassDividedResidualLiftFirst
 public import FLT.Mazur.WeierstrassDividedResidualLiftGeometry
 public import FLT.Mazur.WeierstrassDividedResidualLiftPunctures
+public import FLT.Mazur.WeierstrassDividedResidualLiftRestriction
+public import FLT.Mazur.WeierstrassDividedResidualLiftSecondOrder
 public import FLT.Mazur.WeierstrassDividedResidualLiftTransitions
 public import FLT.Mazur.WeierstrassDividedResidualLiftTransitionsFirst
 public import FLT.Mazur.WeierstrassDividedResidualRetainedLift
@@ -12785,6 +12794,9 @@ public import FLT.Mazur.WeierstrassDividedRetainedPolygonNaturality
 public import FLT.Mazur.WeierstrassDividedRetainedPuncturePreimage
 public import FLT.Mazur.WeierstrassDividedRetainedZeroExteriorLine
 public import FLT.Mazur.WeierstrassDividedRetentionSuccessor
+public import FLT.Mazur.WeierstrassDividedSecondResidualFactors
+public import FLT.Mazur.WeierstrassDividedSecondResidualFields
+public import FLT.Mazur.WeierstrassDividedSecondResidualLifts
 public import FLT.Mazur.WeierstrassDividedShearContraction
 public import FLT.Mazur.WeierstrassDividedShearData
 public import FLT.Mazur.WeierstrassDividedShearExterior
@@ -12899,6 +12911,7 @@ public import FLT.Mazur.WeierstrassDividedTerminalPolygonInverseRestriction
 public import FLT.Mazur.WeierstrassDividedTerminalPrimitiveConstraint
 public import FLT.Mazur.WeierstrassDividedTerminalResidualAlgebra
 public import FLT.Mazur.WeierstrassDividedTerminalResidualFiltration
+public import FLT.Mazur.WeierstrassDividedTerminalResidualRestriction
 public import FLT.Mazur.WeierstrassDividedTerminalResidueAtlas
 public import FLT.Mazur.WeierstrassDividedTerminalResidueBoundary
 public import FLT.Mazur.WeierstrassDividedTerminalResidueCharts
