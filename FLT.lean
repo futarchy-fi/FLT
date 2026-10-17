@@ -7707,6 +7707,7 @@ public import FLT.Mazur.PolygonCompleteIdentityActionSmoothLift
 public import FLT.Mazur.PolygonCompleteIdentityActionSource
 public import FLT.Mazur.PolygonCompleteIdentityActionTarget
 public import FLT.Mazur.PolygonCompleteIdentityActionUnchangedLift
+public import FLT.Mazur.PolygonCompleteIdentityAdicAllNodeSourceIso
 public import FLT.Mazur.PolygonCompleteIdentityAdicAmbientBaseChange
 public import FLT.Mazur.PolygonCompleteIdentityAdicAmbientImmersion
 public import FLT.Mazur.PolygonCompleteIdentityAdicAmbientKernel
