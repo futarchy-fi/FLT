@@ -6003,6 +6003,7 @@ public import FLT.Mazur.HilbertOrbitRelativeMixedConnecting
 public import FLT.Mazur.HilbertOrbitRelativeMixedError
 public import FLT.Mazur.HilbertOrbitRelativeReducedCorrections
 public import FLT.Mazur.HilbertOrbitRelativeReductionKernel
+public import FLT.Mazur.HilbertOrbitRelativeScalarImage
 public import FLT.Mazur.HilbertOrbitRelativeScalarResidue
 public import FLT.Mazur.HilbertOrderedAffineEnvelope
 public import FLT.Mazur.HilbertOrderedOriginalBoundary
@@ -6610,6 +6611,7 @@ public import FLT.Mazur.LocalizedCotangentFieldRank
 public import FLT.Mazur.LocalizedFiniteObstruction
 public import FLT.Mazur.LocalizedHomologyComparison
 public import FLT.Mazur.LocalizedIdealOverlapMembership
+public import FLT.Mazur.LocalizedImageFiniteWitness
 public import FLT.Mazur.LocalizedIntegerChartComparison
 public import FLT.Mazur.LocalizedIntegerComparisonTransport
 public import FLT.Mazur.LocalizedIntegerModelIsomorphism
@@ -7675,7 +7677,23 @@ public import FLT.Mazur.PolygonClosedEvaluationLifting
 public import FLT.Mazur.PolygonClosedScalarLifting
 public import FLT.Mazur.PolygonCoconeComparison
 public import FLT.Mazur.PolygonCohomologyIncidence
+public import FLT.Mazur.PolygonCollapsedBoundaryIdeal
+public import FLT.Mazur.PolygonCollapsedBoundarySupport
+public import FLT.Mazur.PolygonCollapsedChainBoundaryCharts
+public import FLT.Mazur.PolygonCollapsedChainCartesianAtlas
+public import FLT.Mazur.PolygonCollapsedChainComponentDescent
+public import FLT.Mazur.PolygonCollapsedChainEdgeDescent
+public import FLT.Mazur.PolygonCollapsedChainGlobalDescent
+public import FLT.Mazur.PolygonCollapsedChainInteriorCharts
+public import FLT.Mazur.PolygonCollapsedChainLaurentEdges
+public import FLT.Mazur.PolygonCollapsedChainLocalDescent
 public import FLT.Mazur.PolygonCollapsedChainModel
+public import FLT.Mazur.PolygonCollapsedChainOpenCover
+public import FLT.Mazur.PolygonCollapsedChainOverlapCover
+public import FLT.Mazur.PolygonCollapsedChainOverlapEdges
+public import FLT.Mazur.PolygonCollapsedChainPinchingColimit
+public import FLT.Mazur.PolygonCollapsedChainPinchingDiagram
+public import FLT.Mazur.PolygonCollapsedChainRetainedComplement
 public import FLT.Mazur.PolygonCollapsedFiberIdeal
 public import FLT.Mazur.PolygonCollapsedFiberReduced
 public import FLT.Mazur.PolygonCollapsedIdealDetection
@@ -8516,6 +8534,7 @@ public import FLT.Mazur.PolygonComponentHZeroMatching
 public import FLT.Mazur.PolygonComponentImages
 public import FLT.Mazur.PolygonConnected
 public import FLT.Mazur.PolygonConstantSections
+public import FLT.Mazur.PolygonContractionFieldExtension
 public import FLT.Mazur.PolygonCubicChartGeneration
 public import FLT.Mazur.PolygonCubicClosedImmersionCriterion
 public import FLT.Mazur.PolygonCubicComponentSection
@@ -9040,6 +9059,7 @@ public import FLT.Mazur.PolygonStageVeroneseGrading
 public import FLT.Mazur.PolygonStageVeroneseProj
 public import FLT.Mazur.PolygonStageVeroneseProjTransition
 public import FLT.Mazur.PolygonStageVeroneseTransition
+public import FLT.Mazur.PolygonStandardFieldExtension
 public import FLT.Mazur.PolygonStructureInclusion
 public import FLT.Mazur.PolygonTopNodeActionDefect
 public import FLT.Mazur.PolygonTopNodeAutomorphism
@@ -9795,6 +9815,7 @@ public import FLT.Mazur.QuasicoherentImageIdeal
 public import FLT.Mazur.QuasicoherentImageIdealOrbits
 public import FLT.Mazur.QuotientChartComparison
 public import FLT.Mazur.QuotientConnectedComponentDescent
+public import FLT.Mazur.QuotientImageFiniteGenerators
 public import FLT.Mazur.QuotientImageReduction
 public import FLT.Mazur.QuotientRefinementCoherence
 public import FLT.Mazur.QuotientRelativeDerivation
@@ -9886,6 +9907,7 @@ public import FLT.Mazur.RelativeCompleteFrameComparison
 public import FLT.Mazur.RelativeCompleteFrameFiberIso
 public import FLT.Mazur.RelativeCompleteGeometricTuple
 public import FLT.Mazur.RelativeCompleteSubframe
+public import FLT.Mazur.RelativeConnectingFiniteLocalWitness
 public import FLT.Mazur.RelativeConnectingImagePreimage
 public import FLT.Mazur.RelativeConnectingImageReduction
 public import FLT.Mazur.RelativeCoproductComponentPullback
@@ -10202,6 +10224,9 @@ public import FLT.Mazur.ScalarExtensionDirectSum
 public import FLT.Mazur.ScalarExtensionImageReduction
 public import FLT.Mazur.ScalarExtensionIsomorphismDescent
 public import FLT.Mazur.ScalarExtensionPullbackDescent
+public import FLT.Mazur.ScalarImageOriginalGenerators
+public import FLT.Mazur.ScalarQuotientImagePresentation
+public import FLT.Mazur.ScalarQuotientImageReduction
 public import FLT.Mazur.ScalarQuotientResiduePresentation
 public import FLT.Mazur.ScalarTowerDivision
 public import FLT.Mazur.SchematicDenseDedekindFlat
