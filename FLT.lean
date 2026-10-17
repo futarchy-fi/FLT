@@ -12889,6 +12889,7 @@ public import FLT.Mazur.WeierstrassDividedFourthTerminalGeometry
 public import FLT.Mazur.WeierstrassDividedFourthTransitions
 public import FLT.Mazur.WeierstrassDividedFourthZeroInitial
 public import FLT.Mazur.WeierstrassDividedFourthZeroLast
+public import FLT.Mazur.WeierstrassDividedFourthZeroOrder
 public import FLT.Mazur.WeierstrassDividedFourthZeroPunctures
 public import FLT.Mazur.WeierstrassDividedFourthZeroResidual
 public import FLT.Mazur.WeierstrassDividedFourthZeroRestriction
