@@ -13039,6 +13039,7 @@ public import FLT.Mazur.WeierstrassDividedThirdResidualAlgebra
 public import FLT.Mazur.WeierstrassDividedThirdResidualFields
 public import FLT.Mazur.WeierstrassDividedThirdSmoothingAnnihilation
 public import FLT.Mazur.WeierstrassDividedThirdTerminalGeometry
+public import FLT.Mazur.WeierstrassDividedThirdTransitions
 public import FLT.Mazur.WeierstrassDividedTwistedAtlas
 public import FLT.Mazur.WeierstrassDividedTwistedAtlasGluing
 public import FLT.Mazur.WeierstrassDividedTwistedAtlasRestriction
