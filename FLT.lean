@@ -12453,6 +12453,7 @@ public import FLT.Mazur.WeierstrassDividedFifthResidualFields
 public import FLT.Mazur.WeierstrassDividedFifthShallowFields
 public import FLT.Mazur.WeierstrassDividedFifthShallowJointFields
 public import FLT.Mazur.WeierstrassDividedFifthShallowJointNodes
+public import FLT.Mazur.WeierstrassDividedFifthShallowLayerFields
 public import FLT.Mazur.WeierstrassDividedFifthShallowNodes
 public import FLT.Mazur.WeierstrassDividedFifthShallowPunctureIdentification
 public import FLT.Mazur.WeierstrassDividedFinalAdjacentComponents
