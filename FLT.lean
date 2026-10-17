@@ -5082,6 +5082,7 @@ public import FLT.Mazur.FiniteLeadingIdealFamily
 public import FLT.Mazur.FiniteLineCocycleModel
 public import FLT.Mazur.FiniteLineSheafDescent
 public import FLT.Mazur.FiniteLineSheafModel
+public import FLT.Mazur.FiniteLocalSpanVanishing
 public import FLT.Mazur.FiniteLocalizationDenominators
 public import FLT.Mazur.FiniteLocalizedBoundaryLifts
 public import FLT.Mazur.FiniteLocalizedBoundaryMapLifts
