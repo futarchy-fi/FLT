@@ -6114,6 +6114,7 @@ public import FLT.Mazur.HilbertTruncatedIdealGeneration
 public import FLT.Mazur.HilbertTupleBasisTower
 public import FLT.Mazur.HilbertUniformOriginalFiniteLifts
 public import FLT.Mazur.HilbertUniformOriginalLiftingOpen
+public import FLT.Mazur.HilbertUniformPrincipalCore
 public import FLT.Mazur.HilbertUniformPrincipalErrorSupport
 public import FLT.Mazur.HilbertUniformPrincipalFiniteSource
 public import FLT.Mazur.HilbertUniformPrincipalPrimeCorrection
