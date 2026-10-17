@@ -12515,6 +12515,7 @@ public import FLT.Mazur.WeierstrassDividedFifthInitialGeometry
 public import FLT.Mazur.WeierstrassDividedFifthInitialIncomingCancellation
 public import FLT.Mazur.WeierstrassDividedFifthInitialLastGeometry
 public import FLT.Mazur.WeierstrassDividedFifthInitialLastNodes
+public import FLT.Mazur.WeierstrassDividedFifthInitialLastRestriction
 public import FLT.Mazur.WeierstrassDividedFifthInitialLayerFields
 public import FLT.Mazur.WeierstrassDividedFifthInitialNodeRestriction
 public import FLT.Mazur.WeierstrassDividedFifthInitialNodes
