@@ -4023,6 +4023,7 @@ public import FLT.Mazur.CyclicHomRelabelLine
 public import FLT.Mazur.CyclicHomRelabelNormalization
 public import FLT.Mazur.CyclicHomRelabelParameter
 public import FLT.Mazur.CyclicHomRelabelSubgroup
+public import FLT.Mazur.CyclicHomRelabelSubgroupMarking
 public import FLT.Mazur.CyclicHomRelabeledNormalizationIso
 public import FLT.Mazur.CyclicHomRelationIsoCoherence
 public import FLT.Mazur.CyclicHomRelationIsoNaturality
