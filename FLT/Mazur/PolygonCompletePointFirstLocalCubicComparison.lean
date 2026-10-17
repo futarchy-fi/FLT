@@ -74,12 +74,12 @@ theorem completePointFirstLocalCubic_left
 
 /-- The actual predecessor contraction identifies incoming coordinates in full local node rings. -/
 theorem completePointFirstLocalCubic_right
-    (he : Spec.map (CommRingCat.ofHom g) ≫ (a (p)) ≫ (r) ≫ (c) =
-      Spec.map (CommRingCat.ofHom f) ≫ (a (p)) ≫ (r) ≫ (c)) :
+    (he : Spec.map (CommRingCat.ofHom g) ≫ (a p) ≫ (r) ≫ (c) =
+      Spec.map (CommRingCat.ofHom f) ≫ (a p) ≫ (r) ≫ (c)) :
     f (rightCoordinate (t)) = g (rightCoordinate (t)) := by
   have he' : Spec.map (CommRingCat.ofHom (β)) ≫
       completePointNodeToCubicChart K n h 1 i (p) ≫ integralCurveChart (E) 2 =
-        Spec.map (CommRingCat.ofHom f) ≫ (a (p)) ≫ (r) ≫ (c) := by
+        Spec.map (CommRingCat.ofHom f) ≫ (a p) ≫ (r) ≫ (c) := by
     rw [completePointNodeToCubicChart_inclusion]
     simp only [← Spec.map_comp_assoc, ← CommRingCat.ofHom_comp,
       stageNodeLocalSourceLift_comp]
