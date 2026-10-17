@@ -7681,12 +7681,19 @@ public import FLT.Mazur.PolygonCollapsedBoundaryIdeal
 public import FLT.Mazur.PolygonCollapsedBoundarySupport
 public import FLT.Mazur.PolygonCollapsedChainBoundaryCharts
 public import FLT.Mazur.PolygonCollapsedChainCartesianAtlas
+public import FLT.Mazur.PolygonCollapsedChainComponentDescent
 public import FLT.Mazur.PolygonCollapsedChainEdgeDescent
+public import FLT.Mazur.PolygonCollapsedChainGlobalDescent
 public import FLT.Mazur.PolygonCollapsedChainInteriorCharts
 public import FLT.Mazur.PolygonCollapsedChainLaurentEdges
 public import FLT.Mazur.PolygonCollapsedChainLocalDescent
 public import FLT.Mazur.PolygonCollapsedChainModel
 public import FLT.Mazur.PolygonCollapsedChainOpenCover
+public import FLT.Mazur.PolygonCollapsedChainOverlapCover
+public import FLT.Mazur.PolygonCollapsedChainOverlapEdges
+public import FLT.Mazur.PolygonCollapsedChainPinchingColimit
+public import FLT.Mazur.PolygonCollapsedChainPinchingDiagram
+public import FLT.Mazur.PolygonCollapsedChainRetainedComplement
 public import FLT.Mazur.PolygonCollapsedFiberIdeal
 public import FLT.Mazur.PolygonCollapsedFiberReduced
 public import FLT.Mazur.PolygonCollapsedIdealDetection
@@ -8527,6 +8534,7 @@ public import FLT.Mazur.PolygonComponentHZeroMatching
 public import FLT.Mazur.PolygonComponentImages
 public import FLT.Mazur.PolygonConnected
 public import FLT.Mazur.PolygonConstantSections
+public import FLT.Mazur.PolygonContractionFieldExtension
 public import FLT.Mazur.PolygonCubicChartGeneration
 public import FLT.Mazur.PolygonCubicClosedImmersionCriterion
 public import FLT.Mazur.PolygonCubicComponentSection
@@ -9051,6 +9059,7 @@ public import FLT.Mazur.PolygonStageVeroneseGrading
 public import FLT.Mazur.PolygonStageVeroneseProj
 public import FLT.Mazur.PolygonStageVeroneseProjTransition
 public import FLT.Mazur.PolygonStageVeroneseTransition
+public import FLT.Mazur.PolygonStandardFieldExtension
 public import FLT.Mazur.PolygonStructureInclusion
 public import FLT.Mazur.PolygonTopNodeActionDefect
 public import FLT.Mazur.PolygonTopNodeAutomorphism
