@@ -7677,7 +7677,16 @@ public import FLT.Mazur.PolygonClosedEvaluationLifting
 public import FLT.Mazur.PolygonClosedScalarLifting
 public import FLT.Mazur.PolygonCoconeComparison
 public import FLT.Mazur.PolygonCohomologyIncidence
+public import FLT.Mazur.PolygonCollapsedBoundaryIdeal
+public import FLT.Mazur.PolygonCollapsedBoundarySupport
+public import FLT.Mazur.PolygonCollapsedChainBoundaryCharts
+public import FLT.Mazur.PolygonCollapsedChainCartesianAtlas
+public import FLT.Mazur.PolygonCollapsedChainEdgeDescent
+public import FLT.Mazur.PolygonCollapsedChainInteriorCharts
+public import FLT.Mazur.PolygonCollapsedChainLaurentEdges
+public import FLT.Mazur.PolygonCollapsedChainLocalDescent
 public import FLT.Mazur.PolygonCollapsedChainModel
+public import FLT.Mazur.PolygonCollapsedChainOpenCover
 public import FLT.Mazur.PolygonCollapsedFiberIdeal
 public import FLT.Mazur.PolygonCollapsedFiberReduced
 public import FLT.Mazur.PolygonCollapsedIdealDetection
