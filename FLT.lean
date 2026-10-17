@@ -7176,6 +7176,7 @@ public import FLT.Mazur.OddWeierstrassCyclicHomRelabelCurve
 public import FLT.Mazur.OddWeierstrassCyclicHomRelabelLine
 public import FLT.Mazur.OddWeierstrassCyclicHomRelabelParameter
 public import FLT.Mazur.OddWeierstrassCyclicHomRelabelSubgroup
+public import FLT.Mazur.OddWeierstrassCyclicHomRelabeledNormalizationIso
 public import FLT.Mazur.OddWeierstrassCyclicHomRetainedPullback
 public import FLT.Mazur.OddWeierstrassCyclicHomSliceFunctor
 public import FLT.Mazur.OddWeierstrassCyclicHomSliceRetraction
