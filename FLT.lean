@@ -6266,6 +6266,7 @@ public import FLT.Mazur.IdealSheafAdicStalkSeparation
 public import FLT.Mazur.IdealSheafFactorizationSupport
 public import FLT.Mazur.IdealSheafFlatDetection
 public import FLT.Mazur.IdealSheafOpenCoverDetection
+public import FLT.Mazur.IdealSheafRadicalOpen
 public import FLT.Mazur.IdealTwistCohomologyStabilization
 public import FLT.Mazur.IdealTwistCohomologySystem
 public import FLT.Mazur.IdealTwistCohomologyVanishing
@@ -7155,6 +7156,7 @@ public import FLT.Mazur.OneGonProductEndpoints
 public import FLT.Mazur.OneGonProductNormalization
 public import FLT.Mazur.OneGonProductTorus
 public import FLT.Mazur.OneGonQuotient
+public import FLT.Mazur.OneGonRetainedFiberReduced
 public import FLT.Mazur.OneGonScalarExtension
 public import FLT.Mazur.OneGonSeparated
 public import FLT.Mazur.OneGonSmoothingAffinePresentation
@@ -7664,6 +7666,7 @@ public import FLT.Mazur.PolygonClosedCubicNodeFiber
 public import FLT.Mazur.PolygonClosedCubicNonconstant
 public import FLT.Mazur.PolygonClosedCubicOmittedChart
 public import FLT.Mazur.PolygonClosedCubicOmittedConstant
+public import FLT.Mazur.PolygonClosedCubicReducedChain
 public import FLT.Mazur.PolygonClosedCubicRetainedLine
 public import FLT.Mazur.PolygonClosedCubicSmoothTorus
 public import FLT.Mazur.PolygonClosedCubicTorus
@@ -7672,6 +7675,10 @@ public import FLT.Mazur.PolygonClosedEvaluationLifting
 public import FLT.Mazur.PolygonClosedScalarLifting
 public import FLT.Mazur.PolygonCoconeComparison
 public import FLT.Mazur.PolygonCohomologyIncidence
+public import FLT.Mazur.PolygonCollapsedChainModel
+public import FLT.Mazur.PolygonCollapsedFiberIdeal
+public import FLT.Mazur.PolygonCollapsedFiberReduced
+public import FLT.Mazur.PolygonCollapsedIdealDetection
 public import FLT.Mazur.PolygonCommonVeroneseStep
 public import FLT.Mazur.PolygonCompatibleCoefficientFlatness
 public import FLT.Mazur.PolygonCompatibleCoefficientMap
@@ -8686,6 +8693,7 @@ public import FLT.Mazur.PolygonMultipleVeroneseUnitEvaluation
 public import FLT.Mazur.PolygonNodalCore
 public import FLT.Mazur.PolygonNodeAffineCharts
 public import FLT.Mazur.PolygonNodeBaseChangeLine
+public import FLT.Mazur.PolygonNodeBranchIdealDetection
 public import FLT.Mazur.PolygonNodeBranchIntersection
 public import FLT.Mazur.PolygonNodeBranches
 public import FLT.Mazur.PolygonNodeChartNeighborhood
@@ -8698,6 +8706,7 @@ public import FLT.Mazur.PolygonNodeDimension
 public import FLT.Mazur.PolygonNodeEqualizer
 public import FLT.Mazur.PolygonNodeEqualizerComparison
 public import FLT.Mazur.PolygonNodeEvaluation
+public import FLT.Mazur.PolygonNodeIdealSheafDetection
 public import FLT.Mazur.PolygonNodeIncidence
 public import FLT.Mazur.PolygonNodeLaurentPoints
 public import FLT.Mazur.PolygonNodeLocalSourceLift
@@ -8729,6 +8738,7 @@ public import FLT.Mazur.PolygonNormalizationSectionFamilies
 public import FLT.Mazur.PolygonNormalizationTorusPullback
 public import FLT.Mazur.PolygonNormalizationTransport
 public import FLT.Mazur.PolygonOddChainEndpoints
+public import FLT.Mazur.PolygonOmittedComponentCover
 public import FLT.Mazur.PolygonOmittedComponentNodes
 public import FLT.Mazur.PolygonOneGonCompletion
 public import FLT.Mazur.PolygonOneGonContraction
