@@ -7694,6 +7694,7 @@ public import FLT.Mazur.PolygonArithmeticIteratedNodePuncture
 public import FLT.Mazur.PolygonArithmeticIteratedNodeRestriction
 public import FLT.Mazur.PolygonArithmeticIteratedSmoothingAnnihilator
 public import FLT.Mazur.PolygonArithmeticLaurentCorrectionLift
+public import FLT.Mazur.PolygonArithmeticLaurentIdentityRestriction
 public import FLT.Mazur.PolygonArithmeticLaurentSystemCorrectionField
 public import FLT.Mazur.PolygonArithmeticLaurentSystemRestriction
 public import FLT.Mazur.PolygonArithmeticLayerQuotient
@@ -13766,6 +13767,19 @@ public import FLT.Mazur.WeierstrassDividedZeroExteriorParameterIntersection
 public import FLT.Mazur.WeierstrassDividedZeroExteriorProjective
 public import FLT.Mazur.WeierstrassDividedZeroExteriorSmoothCoordinates
 public import FLT.Mazur.WeierstrassDividedZeroExteriorSmoothOrbit
+public import FLT.Mazur.WeierstrassDividedZeroFirstAtlas
+public import FLT.Mazur.WeierstrassDividedZeroFirstAtlasClosing
+public import FLT.Mazur.WeierstrassDividedZeroFirstAtlasIdentification
+public import FLT.Mazur.WeierstrassDividedZeroFirstAtlasInitial
+public import FLT.Mazur.WeierstrassDividedZeroFirstAtlasSystem
+public import FLT.Mazur.WeierstrassDividedZeroFirstCancellation
+public import FLT.Mazur.WeierstrassDividedZeroFirstFields
+public import FLT.Mazur.WeierstrassDividedZeroFirstGeometry
+public import FLT.Mazur.WeierstrassDividedZeroFirstNodes
+public import FLT.Mazur.WeierstrassDividedZeroFirstPunctures
+public import FLT.Mazur.WeierstrassDividedZeroFirstResidualRestriction
+public import FLT.Mazur.WeierstrassDividedZeroFirstRestriction
+public import FLT.Mazur.WeierstrassDividedZeroFirstTransitions
 public import FLT.Mazur.WeierstrassDividedZeroIncidenceInfinity
 public import FLT.Mazur.WeierstrassDividedZeroInfinityPolygon
 public import FLT.Mazur.WeierstrassDividedZeroInitialAffineOpen
@@ -13781,6 +13795,7 @@ public import FLT.Mazur.WeierstrassDividedZeroNodalProjective
 public import FLT.Mazur.WeierstrassDividedZeroOriginalInfinityNormalization
 public import FLT.Mazur.WeierstrassDividedZeroResidueAtlas
 public import FLT.Mazur.WeierstrassDividedZeroRetentionIntersection
+public import FLT.Mazur.WeierstrassDividedZeroSecondFields
 public import FLT.Mazur.WeierstrassDividedZeroSlopeContraction
 public import FLT.Mazur.WeierstrassDividedZeroSlopeLaurent
 public import FLT.Mazur.WeierstrassDividedZeroSplitCocone
