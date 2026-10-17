@@ -39,22 +39,31 @@ theorem iteratedCorrectionSmoothing_succ (k : ℕ) :
   rfl
 
 /-- Compose all whole-node equivalences, retaining their changing source rings. -/
-def iteratedCorrectionNodeFactor : (k : ℕ) →
+def iteratedCorrectionNodeFactorAux : (k : ℕ) →
     ChartRing (iteratedCorrectionSmoothing R π m t q k) ≃ₐ[Quotient R π m] ChartRing t
   | 0 => AlgEquiv.refl
   | k + 1 => (twoBranchCorrectionNodeFactor R π m
       (iteratedCorrectionSmoothing R π m t q k) (q k)).trans
-        (iteratedCorrectionNodeFactor k)
+        (iteratedCorrectionNodeFactorAux k)
+
+/-- Seal the recursive whole-node factor so later proofs do not expand its implementation. -/
+irreducible_def iteratedCorrectionNodeFactor (k : ℕ) :
+    ChartRing (iteratedCorrectionSmoothing R π m t q k) ≃ₐ[Quotient R π m] ChartRing t :=
+  iteratedCorrectionNodeFactorAux R π m t q k
 
 /-- The empty composite is the identity on the original full node. -/
 theorem iteratedCorrectionNodeFactor_zero :
-    iteratedCorrectionNodeFactor R π m t q 0 = AlgEquiv.refl := rfl
+    iteratedCorrectionNodeFactor R π m t q 0 = AlgEquiv.refl := by
+  rw [iteratedCorrectionNodeFactor_def]
+  rfl
 
 /-- The whole successor factor uses the actual intermediate node. -/
 theorem iteratedCorrectionNodeFactor_succ (k : ℕ) :
     iteratedCorrectionNodeFactor R π m t q (k + 1) =
       (twoBranchCorrectionNodeFactor R π m
         (iteratedCorrectionSmoothing R π m t q k) (q k)).trans
-          (iteratedCorrectionNodeFactor R π m t q k) := rfl
+          (iteratedCorrectionNodeFactor R π m t q k) := by
+  rw [iteratedCorrectionNodeFactor_def, iteratedCorrectionNodeFactor_def]
+  rfl
 
 end FLT.Mazur.PolygonArithmeticStages
