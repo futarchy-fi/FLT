@@ -8812,6 +8812,7 @@ public import FLT.Mazur.PolygonSmoothingCotangentFieldRank
 public import FLT.Mazur.PolygonSmoothingCotangentRelationSequence
 public import FLT.Mazur.PolygonSmoothingDerivation
 public import FLT.Mazur.PolygonSmoothingDifferenceIdeal
+public import FLT.Mazur.PolygonSmoothingFactorRestriction
 public import FLT.Mazur.PolygonSmoothingFiniteLaurentLifts
 public import FLT.Mazur.PolygonSmoothingFirstConstantCoefficients
 public import FLT.Mazur.PolygonSmoothingFirstCotangent
