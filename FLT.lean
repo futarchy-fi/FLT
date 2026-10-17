@@ -4676,6 +4676,7 @@ public import FLT.Mazur.EquivalenceRelationCompleteSubframe
 public import FLT.Mazur.EquivalenceRelationCompleteTestCoefficients
 public import FLT.Mazur.EquivalenceRelationCompleteTestPartition
 public import FLT.Mazur.EquivalenceRelationCompleteThickeningAction
+public import FLT.Mazur.EquivalenceRelationCompleteThickeningTower
 public import FLT.Mazur.EquivalenceRelationCompleteThickenings
 public import FLT.Mazur.EquivalenceRelationConnectedCompleteTests
 public import FLT.Mazur.EquivalenceRelationFiberPermutationSections
