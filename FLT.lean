@@ -13043,6 +13043,7 @@ public import FLT.Mazur.WeierstrassDividedThirdAtlasNodeRestriction
 public import FLT.Mazur.WeierstrassDividedThirdAtlasPreceding
 public import FLT.Mazur.WeierstrassDividedThirdAtlasSystem
 public import FLT.Mazur.WeierstrassDividedThirdEarlierGeometry
+public import FLT.Mazur.WeierstrassDividedThirdEarlierIncoming
 public import FLT.Mazur.WeierstrassDividedThirdEarlierRestriction
 public import FLT.Mazur.WeierstrassDividedThirdGeometry
 public import FLT.Mazur.WeierstrassDividedThirdIncomingCancellation
