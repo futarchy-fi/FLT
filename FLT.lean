@@ -13541,6 +13541,7 @@ public import FLT.Mazur.WeierstrassDividedZeroSplitCycleSeparation
 public import FLT.Mazur.WeierstrassDividedZeroSplitNormalizationSurjective
 public import FLT.Mazur.WeierstrassDividedZeroSplitOriginalIdentity
 public import FLT.Mazur.WeierstrassDividedZeroSplitPointClassification
+public import FLT.Mazur.WeierstrassEquationCoefficientCongruence
 public import FLT.Mazur.WeierstrassEquationCoefficientProjection
 public import FLT.Mazur.WeierstrassEquationTransport
 public import FLT.Mazur.WeierstrassFieldChartPresentation
