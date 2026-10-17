@@ -5850,6 +5850,7 @@ public import FLT.Mazur.HilbertComplementPointCompatibility
 public import FLT.Mazur.HilbertComplementSchemeCompatibility
 public import FLT.Mazur.HilbertCompleteChartBoundaryDescent
 public import FLT.Mazur.HilbertCompleteChartBoundaryTests
+public import FLT.Mazur.HilbertCompleteChartMixedVanishing
 public import FLT.Mazur.HilbertCompleteChartOriginalCertificates
 public import FLT.Mazur.HilbertCompleteChartOriginalSections
 public import FLT.Mazur.HilbertCompleteFrameCardinality
