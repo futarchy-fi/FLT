@@ -12691,6 +12691,7 @@ public import FLT.Mazur.WeierstrassDividedTerminalBoundaryExtension
 public import FLT.Mazur.WeierstrassDividedTerminalBranchIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalBranchesNodeIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalChangedAtlas
+public import FLT.Mazur.WeierstrassDividedTerminalChangedAtlasSystem
 public import FLT.Mazur.WeierstrassDividedTerminalChangedAttachment
 public import FLT.Mazur.WeierstrassDividedTerminalChangedCoefficientTests
 public import FLT.Mazur.WeierstrassDividedTerminalChangedRestriction
