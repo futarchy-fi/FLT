@@ -3574,6 +3574,7 @@ public import FLT.Mazur.CanonicalRelativeLineModel
 public import FLT.Mazur.CanonicalSchemeRelationGround
 public import FLT.Mazur.CanonicalSectionComposition
 public import FLT.Mazur.CanonicalSectionNaturality
+public import FLT.Mazur.CartesianActionPullback
 public import FLT.Mazur.CartesianAtlasAffineIntersections
 public import FLT.Mazur.CartesianCoefficientPositiveHomology
 public import FLT.Mazur.CartesianCoefficientSymmetry
