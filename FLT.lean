@@ -5376,6 +5376,7 @@ public import FLT.Mazur.GeneralizedCurveCyclicSubgroup
 public import FLT.Mazur.GeneralizedCurveDirectLocalCubic
 public import FLT.Mazur.GeneralizedCurveDirectLocalFamily
 public import FLT.Mazur.GeneralizedCurveDivisorPullback
+public import FLT.Mazur.GeneralizedCurveEquivariantIso
 public import FLT.Mazur.GeneralizedCurveFiberAmple
 public import FLT.Mazur.GeneralizedCurveFiniteSubgroup
 public import FLT.Mazur.GeneralizedCurveGeneratorTransport
