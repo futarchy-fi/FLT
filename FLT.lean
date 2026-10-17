@@ -8769,6 +8769,7 @@ public import FLT.Mazur.PolygonSmoothingParameterEquiv
 public import FLT.Mazur.PolygonSmoothingPolynomialShearReduction
 public import FLT.Mazur.PolygonSmoothingPunctureBaseChange
 public import FLT.Mazur.PolygonSmoothingPunctureCalculus
+public import FLT.Mazur.PolygonSmoothingPunctureGeometry
 public import FLT.Mazur.PolygonSmoothingQuadraticModel
 public import FLT.Mazur.PolygonSmoothingRangeGenerators
 public import FLT.Mazur.PolygonSmoothingReciprocalScaling
