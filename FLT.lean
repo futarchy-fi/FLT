@@ -13777,6 +13777,7 @@ public import FLT.Mazur.WeierstrassDividedZeroFirstFields
 public import FLT.Mazur.WeierstrassDividedZeroFirstGeometry
 public import FLT.Mazur.WeierstrassDividedZeroFirstNodeRestriction
 public import FLT.Mazur.WeierstrassDividedZeroFirstNodes
+public import FLT.Mazur.WeierstrassDividedZeroFirstOpenRestriction
 public import FLT.Mazur.WeierstrassDividedZeroFirstPunctures
 public import FLT.Mazur.WeierstrassDividedZeroFirstResidualRestriction
 public import FLT.Mazur.WeierstrassDividedZeroFirstRestriction
