@@ -12465,6 +12465,7 @@ public import FLT.Mazur.WeierstrassDividedFourthAtlasNodeRestriction
 public import FLT.Mazur.WeierstrassDividedFourthAtlasPreceding
 public import FLT.Mazur.WeierstrassDividedFourthAtlasSystem
 public import FLT.Mazur.WeierstrassDividedFourthEarlierGeometry
+public import FLT.Mazur.WeierstrassDividedFourthEarlierRestriction
 public import FLT.Mazur.WeierstrassDividedFourthGeometry
 public import FLT.Mazur.WeierstrassDividedFourthIncomingCancellation
 public import FLT.Mazur.WeierstrassDividedFourthJointFields
