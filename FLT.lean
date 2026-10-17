@@ -7725,6 +7725,7 @@ public import FLT.Mazur.PolygonCompleteIdentityAdicNodeSections
 public import FLT.Mazur.PolygonCompleteIdentityAdicNodeSourceIso
 public import FLT.Mazur.PolygonCompleteIdentityAdicRefinedKernel
 public import FLT.Mazur.PolygonCompleteIdentityAdicRefinedPatches
+public import FLT.Mazur.PolygonCompleteIdentityAdicSectionChartCoverage
 public import FLT.Mazur.PolygonCompleteIdentityAdicSectionOpen
 public import FLT.Mazur.PolygonCompleteIdentityAllPositiveLaws
 public import FLT.Mazur.PolygonCompleteIdentityAmbientErrorRelation
