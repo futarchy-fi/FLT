@@ -7742,8 +7742,12 @@ public import FLT.Mazur.PolygonCompleteClosedFiniteSubgroup
 public import FLT.Mazur.PolygonCompleteClosedGenus
 public import FLT.Mazur.PolygonCompleteClosedH1Scalars
 public import FLT.Mazur.PolygonCompleteClosedLaurentAction
+public import FLT.Mazur.PolygonCompleteClosedLaurentComparison
+public import FLT.Mazur.PolygonCompleteClosedLaurentEdges
 public import FLT.Mazur.PolygonCompleteClosedLaurentProduct
+public import FLT.Mazur.PolygonCompleteClosedMovedTranslation
 public import FLT.Mazur.PolygonCompleteClosedParameterReduction
+public import FLT.Mazur.PolygonCompleteClosedParameterSection
 public import FLT.Mazur.PolygonCompleteClosedPointAcyclic
 public import FLT.Mazur.PolygonCompleteClosedPointCohomology
 public import FLT.Mazur.PolygonCompleteClosedPointLineComparison
@@ -7753,6 +7757,9 @@ public import FLT.Mazur.PolygonCompleteClosedSmoothLocus
 public import FLT.Mazur.PolygonCompleteClosedSmoothSquare
 public import FLT.Mazur.PolygonCompleteClosedSpecialization
 public import FLT.Mazur.PolygonCompleteClosedSplitParameter
+public import FLT.Mazur.PolygonCompleteClosedTranslation
+public import FLT.Mazur.PolygonCompleteClosedTranslationLine
+public import FLT.Mazur.PolygonCompleteClosedWholeAction
 public import FLT.Mazur.PolygonCompleteCoefficientAdicComparison
 public import FLT.Mazur.PolygonCompleteCoefficientAmple
 public import FLT.Mazur.PolygonCompleteCoefficientCoherence
@@ -8789,6 +8796,7 @@ public import FLT.Mazur.PolygonParameterProductNormalizationRefinement
 public import FLT.Mazur.PolygonParameterProjectionComposition
 public import FLT.Mazur.PolygonParameterTranslation
 public import FLT.Mazur.PolygonParameterTranslationBaseChange
+public import FLT.Mazur.PolygonParameterTranslationInput
 public import FLT.Mazur.PolygonParameterTranslationOriginal
 public import FLT.Mazur.PolygonParameterizedHomExt
 public import FLT.Mazur.PolygonPinchingAdjustedClosedComparison
@@ -9059,6 +9067,7 @@ public import FLT.Mazur.PolygonTranslationMarkingLine
 public import FLT.Mazur.PolygonTranslationNormalizationLine
 public import FLT.Mazur.PolygonTranslationReflectionLine
 public import FLT.Mazur.PolygonUniversalAction
+public import FLT.Mazur.PolygonUniversalActionTorus
 public import FLT.Mazur.PolygonUniversalEdgeAlgebra
 public import FLT.Mazur.PolygonUniversalEdgeGroupLaw
 public import FLT.Mazur.PolygonUniversalNodeRestriction
