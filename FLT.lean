@@ -12452,6 +12452,7 @@ public import FLT.Mazur.WeierstrassDividedFaithfulActionDescent
 public import FLT.Mazur.WeierstrassDividedFifthResidualFields
 public import FLT.Mazur.WeierstrassDividedFifthShallowFields
 public import FLT.Mazur.WeierstrassDividedFifthShallowJointFields
+public import FLT.Mazur.WeierstrassDividedFifthShallowJointNodes
 public import FLT.Mazur.WeierstrassDividedFinalAdjacentComponents
 public import FLT.Mazur.WeierstrassDividedFinalAdjacentConicBranches
 public import FLT.Mazur.WeierstrassDividedFinalAdjacentOverComponents
