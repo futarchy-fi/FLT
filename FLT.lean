@@ -2598,6 +2598,7 @@ public import FLT.Mazur.AdicPolynomialPresentationLift
 public import FLT.Mazur.AdicPresentationDerivation
 public import FLT.Mazur.AdicPresentationFirstCotangent
 public import FLT.Mazur.AdicPresentationScalarTowers
+public import FLT.Mazur.AdicQuotientFlatCriterion
 public import FLT.Mazur.AdicSectionIsoReconstruction
 public import FLT.Mazur.AdicSectionProjectionExt
 public import FLT.Mazur.AdicSeparatedDerivation
