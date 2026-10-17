@@ -4900,6 +4900,7 @@ public import FLT.Mazur.FiniteCohomologyFreeNeighborhood
 public import FLT.Mazur.FiniteCokernelKernelPairs
 public import FLT.Mazur.FiniteCokernelReductionFrame
 public import FLT.Mazur.FiniteCokernelReductionMatrix
+public import FLT.Mazur.FiniteCokernelResidualLifting
 public import FLT.Mazur.FiniteCommonPrincipalCover
 public import FLT.Mazur.FiniteCompactOpenAffineLimit
 public import FLT.Mazur.FiniteCompactOpenCoverLimit
