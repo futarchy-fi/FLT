@@ -8714,6 +8714,7 @@ public import FLT.Mazur.PolygonSmoothingMarkedSection
 public import FLT.Mazur.PolygonSmoothingMarkingIdealSheaf
 public import FLT.Mazur.PolygonSmoothingNilpotentBranches
 public import FLT.Mazur.PolygonSmoothingNilpotentShear
+public import FLT.Mazur.PolygonSmoothingNilpotentShearNaturality
 public import FLT.Mazur.PolygonSmoothingNilpotentUnit
 public import FLT.Mazur.PolygonSmoothingNodeBasicOpen
 public import FLT.Mazur.PolygonSmoothingNodeDenominatorCoverage
