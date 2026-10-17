@@ -12525,6 +12525,7 @@ public import FLT.Mazur.WeierstrassDividedFourthOuterFifthOrder
 public import FLT.Mazur.WeierstrassDividedFourthOuterGeometry
 public import FLT.Mazur.WeierstrassDividedFourthOuterIdentification
 public import FLT.Mazur.WeierstrassDividedFourthOuterNodes
+public import FLT.Mazur.WeierstrassDividedFourthOuterPreceding
 public import FLT.Mazur.WeierstrassDividedFourthOuterRestriction
 public import FLT.Mazur.WeierstrassDividedFourthOuterTransitions
 public import FLT.Mazur.WeierstrassDividedFourthPunctureIdentification
