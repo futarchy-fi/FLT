@@ -12537,6 +12537,7 @@ public import FLT.Mazur.WeierstrassDividedFaithfulActionDescent
 public import FLT.Mazur.WeierstrassDividedFifthDeepCancellation
 public import FLT.Mazur.WeierstrassDividedFifthDeepEarlierNodes
 public import FLT.Mazur.WeierstrassDividedFifthDeepEndCancellation
+public import FLT.Mazur.WeierstrassDividedFifthDeepEndRestriction
 public import FLT.Mazur.WeierstrassDividedFifthDeepGeometry
 public import FLT.Mazur.WeierstrassDividedFifthDeepNodes
 public import FLT.Mazur.WeierstrassDividedFifthDeepRestriction
