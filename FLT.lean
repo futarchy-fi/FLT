@@ -8226,6 +8226,13 @@ public import FLT.Mazur.PolygonCompleteNodeStalkEvaluation
 public import FLT.Mazur.PolygonCompleteNodeStalkH1Equiv
 public import FLT.Mazur.PolygonCompleteNodeStalkMap
 public import FLT.Mazur.PolygonCompleteOriginalSectionReconstruction
+public import FLT.Mazur.PolygonCompleteParameterBaseChange
+public import FLT.Mazur.PolygonCompleteParameterLineBaseChange
+public import FLT.Mazur.PolygonCompleteParameterLineCocycle
+public import FLT.Mazur.PolygonCompleteParameterMarking
+public import FLT.Mazur.PolygonCompleteParameterMarkingLine
+public import FLT.Mazur.PolygonCompleteParameterOriginalLine
+public import FLT.Mazur.PolygonCompleteParameterTranslation
 public import FLT.Mazur.PolygonCompletePointAcyclic
 public import FLT.Mazur.PolygonCompletePointAffineMorphism
 public import FLT.Mazur.PolygonCompletePointAllPoleBasis
@@ -8455,6 +8462,7 @@ public import FLT.Mazur.PolygonCompleteStageRotation
 public import FLT.Mazur.PolygonCompleteStructureCohomology
 public import FLT.Mazur.PolygonCompleteUniversalFunctions
 public import FLT.Mazur.PolygonCompleteWholeAction
+public import FLT.Mazur.PolygonCompleteWholeActionCartesian
 public import FLT.Mazur.PolygonCompleteWholeActionChartCompatibility
 public import FLT.Mazur.PolygonCompleteWholeActionCyclic
 public import FLT.Mazur.PolygonCompleteWholeActionEvaluation
@@ -8463,6 +8471,7 @@ public import FLT.Mazur.PolygonCompleteWholeActionLaws
 public import FLT.Mazur.PolygonCompleteWholeActionParameterCover
 public import FLT.Mazur.PolygonCompleteWholeActionRotatedCharts
 public import FLT.Mazur.PolygonCompleteWholeActionSmooth
+public import FLT.Mazur.PolygonCompleteWholeShear
 public import FLT.Mazur.PolygonCompleteZeroParameterFiber
 public import FLT.Mazur.PolygonComponentCoordinateScaling
 public import FLT.Mazur.PolygonComponentDistinct
