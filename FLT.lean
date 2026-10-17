@@ -7790,6 +7790,7 @@ public import FLT.Mazur.PolygonCompleteIdentityAmbientErrorRelation
 public import FLT.Mazur.PolygonCompleteIdentityAmbientParameterComparison
 public import FLT.Mazur.PolygonCompleteIdentityChartAtlas
 public import FLT.Mazur.PolygonCompleteIdentityChartOperations
+public import FLT.Mazur.PolygonCompleteIdentityCompletionDescent
 public import FLT.Mazur.PolygonCompleteIdentityCubicChartMaps
 public import FLT.Mazur.PolygonCompleteIdentityCubicCoordinates
 public import FLT.Mazur.PolygonCompleteIdentityCubicDenominators
