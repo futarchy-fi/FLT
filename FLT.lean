@@ -7939,6 +7939,7 @@ public import FLT.Mazur.PolygonCompleteIdentityTopChartSourceFunctions
 public import FLT.Mazur.PolygonCompleteIdentityTopCorrection
 public import FLT.Mazur.PolygonCompleteIdentityTopDefect
 public import FLT.Mazur.PolygonCompleteIdentityTopGraphAlgebra
+public import FLT.Mazur.PolygonCompleteIdentityTopGraphBoundary
 public import FLT.Mazur.PolygonCompleteIdentityTopGraphChartBranch
 public import FLT.Mazur.PolygonCompleteIdentityTopGraphChartFlat
 public import FLT.Mazur.PolygonCompleteIdentityTopGraphClosedComparison
