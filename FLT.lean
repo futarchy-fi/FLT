@@ -5085,6 +5085,7 @@ public import FLT.Mazur.FiniteIntersectionSectionComparison
 public import FLT.Mazur.FiniteIntersectionSectionDiagram
 public import FLT.Mazur.FiniteIteratedPolynomialCoefficients
 public import FLT.Mazur.FiniteJointFrameEnumeration
+public import FLT.Mazur.FiniteKernelCorrectionCommonDenominator
 public import FLT.Mazur.FiniteKernelCorrectionLocalization
 public import FLT.Mazur.FiniteKernelCorrectionLocalizedKernel
 public import FLT.Mazur.FiniteKernelCorrectionOperator
