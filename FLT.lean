@@ -6383,6 +6383,7 @@ public import FLT.Mazur.LaurentFirstStageParameterTorus
 public import FLT.Mazur.LaurentIdentityIdeal
 public import FLT.Mazur.LaurentLineActionDensity
 public import FLT.Mazur.LaurentLineActionEvaluation
+public import FLT.Mazur.LaurentNearIdentityAutomorphism
 public import FLT.Mazur.LaurentNilpotentReparametrization
 public import FLT.Mazur.LaurentNodePrincipalParts
 public import FLT.Mazur.LaurentNormalizedReduction
@@ -6422,6 +6423,7 @@ public import FLT.Mazur.LaurentUnitMultiplication
 public import FLT.Mazur.LaurentUnitPointNaturality
 public import FLT.Mazur.LaurentUnitPoints
 public import FLT.Mazur.LaurentUnitScaledCoordinates
+public import FLT.Mazur.LaurentUnitSubstitutionNaturality
 public import FLT.Mazur.LaurentWeightedEvaluation
 public import FLT.Mazur.LaurentWeightedInverse
 public import FLT.Mazur.LineBundleAffineFrames
@@ -6814,6 +6816,7 @@ public import FLT.Mazur.NestedOpenCohomologyCoherence
 public import FLT.Mazur.NeutralTwistDirectImage
 public import FLT.Mazur.NilpotentAlgebraAutomorphism
 public import FLT.Mazur.NilpotentAlgebraEquivalence
+public import FLT.Mazur.NilpotentAlgebraHigherOrderError
 public import FLT.Mazur.NilpotentClosedRestriction
 public import FLT.Mazur.NilpotentIdealContraction
 public import FLT.Mazur.NilpotentIdealSocle
@@ -7408,6 +7411,8 @@ public import FLT.Mazur.PolygonArithmeticCompleteLineQuotient
 public import FLT.Mazur.PolygonArithmeticCompleteMarkingAmple
 public import FLT.Mazur.PolygonArithmeticCompleteMarkings
 public import FLT.Mazur.PolygonArithmeticCompleteStageIdeals
+public import FLT.Mazur.PolygonArithmeticCorrectionPunctureRestriction
+public import FLT.Mazur.PolygonArithmeticCorrectionPunctures
 public import FLT.Mazur.PolygonArithmeticCubicEquationReconstruction
 public import FLT.Mazur.PolygonArithmeticDegreeComplete
 public import FLT.Mazur.PolygonArithmeticDegreeExactness
@@ -8767,6 +8772,8 @@ public import FLT.Mazur.PolygonSmoothingMarkedSection
 public import FLT.Mazur.PolygonSmoothingMarkingIdealSheaf
 public import FLT.Mazur.PolygonSmoothingNilpotentBoundaryFactor
 public import FLT.Mazur.PolygonSmoothingNilpotentBranches
+public import FLT.Mazur.PolygonSmoothingNilpotentPunctureEquiv
+public import FLT.Mazur.PolygonSmoothingNilpotentPunctureNaturality
 public import FLT.Mazur.PolygonSmoothingNilpotentShear
 public import FLT.Mazur.PolygonSmoothingNilpotentShearNaturality
 public import FLT.Mazur.PolygonSmoothingNilpotentShearPunctures
@@ -8778,6 +8785,9 @@ public import FLT.Mazur.PolygonSmoothingOverlapGraph
 public import FLT.Mazur.PolygonSmoothingParameterEquiv
 public import FLT.Mazur.PolygonSmoothingPolynomialShearReduction
 public import FLT.Mazur.PolygonSmoothingPunctureBaseChange
+public import FLT.Mazur.PolygonSmoothingPunctureCalculus
+public import FLT.Mazur.PolygonSmoothingPunctureGeometry
+public import FLT.Mazur.PolygonSmoothingPunctureNaturality
 public import FLT.Mazur.PolygonSmoothingQuadraticModel
 public import FLT.Mazur.PolygonSmoothingRangeGenerators
 public import FLT.Mazur.PolygonSmoothingReciprocalScaling
@@ -12733,6 +12743,9 @@ public import FLT.Mazur.WeierstrassDividedResidualLiftAtlasEdges
 public import FLT.Mazur.WeierstrassDividedResidualLiftAtlasSystem
 public import FLT.Mazur.WeierstrassDividedResidualLiftFirst
 public import FLT.Mazur.WeierstrassDividedResidualLiftGeometry
+public import FLT.Mazur.WeierstrassDividedResidualLiftPunctures
+public import FLT.Mazur.WeierstrassDividedResidualLiftTransitions
+public import FLT.Mazur.WeierstrassDividedResidualLiftTransitionsFirst
 public import FLT.Mazur.WeierstrassDividedResidualRetainedLift
 public import FLT.Mazur.WeierstrassDividedResidualTerminalIdentification
 public import FLT.Mazur.WeierstrassDividedResidualTerminalLift
