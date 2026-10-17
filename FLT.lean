@@ -13020,6 +13020,7 @@ public import FLT.Mazur.WeierstrassDividedThirdJointRestriction
 public import FLT.Mazur.WeierstrassDividedThirdLayerFieldIdentification
 public import FLT.Mazur.WeierstrassDividedThirdOuterIdentification
 public import FLT.Mazur.WeierstrassDividedThirdPunctureIdentification
+public import FLT.Mazur.WeierstrassDividedThirdResidualAlgebra
 public import FLT.Mazur.WeierstrassDividedThirdResidualFields
 public import FLT.Mazur.WeierstrassDividedThirdSmoothingAnnihilation
 public import FLT.Mazur.WeierstrassDividedTwistedAtlas
