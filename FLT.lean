@@ -7491,6 +7491,7 @@ public import FLT.Mazur.PolygonArithmeticTwoBranchCorrectionLift
 public import FLT.Mazur.PolygonArithmeticTwoBranchFirstIdentification
 public import FLT.Mazur.PolygonArithmeticTwoBranchRebase
 public import FLT.Mazur.PolygonArithmeticTwoBranchRebaseIdentification
+public import FLT.Mazur.PolygonArithmeticTwoBranchRebaseNaturality
 public import FLT.Mazur.PolygonArithmeticUniformLifting
 public import FLT.Mazur.PolygonArithmeticVeronese
 public import FLT.Mazur.PolygonArithmeticVeroneseExactness
