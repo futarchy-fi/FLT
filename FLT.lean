@@ -5003,6 +5003,7 @@ public import FLT.Mazur.FiniteFlatIdealVanishingRestriction
 public import FLT.Mazur.FiniteFlatIdealVanishingUniversal
 public import FLT.Mazur.FiniteFlatIdealVanishingZero
 public import FLT.Mazur.FiniteFlatLocalIdealPresentation
+public import FLT.Mazur.FiniteFlatProjectiveTargetLocus
 public import FLT.Mazur.FiniteFlatQuotientTrivialization
 public import FLT.Mazur.FiniteFlatSubschemeQuotient
 public import FLT.Mazur.FiniteFlatTranslationNormCharts
