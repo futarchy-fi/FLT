@@ -12498,6 +12498,7 @@ public import FLT.Mazur.WeierstrassDividedFourthInitialIdentification
 public import FLT.Mazur.WeierstrassDividedFourthInitialLast
 public import FLT.Mazur.WeierstrassDividedFourthInitialNodeRestriction
 public import FLT.Mazur.WeierstrassDividedFourthInitialNodes
+public import FLT.Mazur.WeierstrassDividedFourthInitialOpenRestriction
 public import FLT.Mazur.WeierstrassDividedFourthInitialRestriction
 public import FLT.Mazur.WeierstrassDividedFourthJointFields
 public import FLT.Mazur.WeierstrassDividedFourthJointNodes
