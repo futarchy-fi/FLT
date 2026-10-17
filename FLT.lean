@@ -13050,6 +13050,7 @@ public import FLT.Mazur.WeierstrassDividedThirdEarlierRestriction
 public import FLT.Mazur.WeierstrassDividedThirdGeometry
 public import FLT.Mazur.WeierstrassDividedThirdIncomingCancellation
 public import FLT.Mazur.WeierstrassDividedThirdInitialGeometry
+public import FLT.Mazur.WeierstrassDividedThirdInitialRestriction
 public import FLT.Mazur.WeierstrassDividedThirdJointFields
 public import FLT.Mazur.WeierstrassDividedThirdJointIdentification
 public import FLT.Mazur.WeierstrassDividedThirdJointNodes
