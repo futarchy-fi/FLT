@@ -7905,6 +7905,7 @@ public import FLT.Mazur.PolygonCompleteIdentityStageTorus
 public import FLT.Mazur.PolygonCompleteIdentityTopActionCoordinate
 public import FLT.Mazur.PolygonCompleteIdentityTopActionRestriction
 public import FLT.Mazur.PolygonCompleteIdentityTopAffineGraphQuotient
+public import FLT.Mazur.PolygonCompleteIdentityTopAffineGraphTests
 public import FLT.Mazur.PolygonCompleteIdentityTopAmbientNodeGenerators
 public import FLT.Mazur.PolygonCompleteIdentityTopAmbientScalars
 public import FLT.Mazur.PolygonCompleteIdentityTopBoundary
