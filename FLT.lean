@@ -7912,6 +7912,7 @@ public import FLT.Mazur.PolygonCompleteIdentityGraphAdicRotatedContraction
 public import FLT.Mazur.PolygonCompleteIdentityGraphAdicRotatedEdge
 public import FLT.Mazur.PolygonCompleteIdentityGraphAdicStage
 public import FLT.Mazur.PolygonCompleteIdentityGraphChartEdgeCartesian
+public import FLT.Mazur.PolygonCompleteIdentityGraphChartLift
 public import FLT.Mazur.PolygonCompleteIdentityGraphChartRotatedContraction
 public import FLT.Mazur.PolygonCompleteIdentityGraphEdgeCartesian
 public import FLT.Mazur.PolygonCompleteIdentityGraphFiniteEdge
