@@ -7109,6 +7109,7 @@ public import FLT.Mazur.OddWeierstrassAuxiliaryNormalizationCubic
 public import FLT.Mazur.OddWeierstrassAuxiliaryNormalizationFixedGroup
 public import FLT.Mazur.OddWeierstrassAuxiliaryNormalizationNatural
 public import FLT.Mazur.OddWeierstrassAuxiliaryNormalizedFrame
+public import FLT.Mazur.OddWeierstrassAuxiliaryNormalizedIsomorphism
 public import FLT.Mazur.OddWeierstrassAuxiliaryNormalizedSections
 public import FLT.Mazur.OddWeierstrassAuxiliaryProperNaturality
 public import FLT.Mazur.OddWeierstrassAuxiliaryProperNormalization
