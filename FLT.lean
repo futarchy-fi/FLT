@@ -10619,6 +10619,7 @@ public import FLT.Mazur.SchemeFiniteGroupQuotientOrbits
 public import FLT.Mazur.SchemeFiniteOrbitOpenCore
 public import FLT.Mazur.SchemeFiniteTargetAffineNeighborhood
 public import FLT.Mazur.SchemeFiniteTargetBaseChange
+public import FLT.Mazur.SchemeFiniteTargetRestriction
 public import FLT.Mazur.SchemeFlatFamilyReflection
 public import FLT.Mazur.SchemeFlatFppfTargetDensity
 public import FLT.Mazur.SchemeFlatProductDensity
