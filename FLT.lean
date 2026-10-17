@@ -7975,6 +7975,7 @@ public import FLT.Mazur.PolygonCompleteDivisorRestriction
 public import FLT.Mazur.PolygonCompleteFamilyFlatness
 public import FLT.Mazur.PolygonCompleteFamilyHomExt
 public import FLT.Mazur.PolygonCompleteFiberMarkings
+public import FLT.Mazur.PolygonCompleteFiberModuliComparison
 public import FLT.Mazur.PolygonCompleteFieldH1
 public import FLT.Mazur.PolygonCompleteFiniteBoundaryLine
 public import FLT.Mazur.PolygonCompleteFiniteParameterLines
