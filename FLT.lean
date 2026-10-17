@@ -4716,6 +4716,7 @@ public import FLT.Mazur.EquivalenceRelationMixedFrameCardinality
 public import FLT.Mazur.EquivalenceRelationMixedFrameComparison
 public import FLT.Mazur.EquivalenceRelationMixedFrameLabelChange
 public import FLT.Mazur.EquivalenceRelationMixedFrameRelation
+public import FLT.Mazur.EquivalenceRelationMixedResidualOpen
 public import FLT.Mazur.EquivalenceRelationNormalizedActionComplete
 public import FLT.Mazur.EquivalenceRelationNormalizedActionGraphs
 public import FLT.Mazur.EquivalenceRelationNormalizedActionRelation
@@ -4737,6 +4738,11 @@ public import FLT.Mazur.EquivalenceRelationNormalizedSubframe
 public import FLT.Mazur.EquivalenceRelationOpenChartScalars
 public import FLT.Mazur.EquivalenceRelationRankInterior
 public import FLT.Mazur.EquivalenceRelationRankStratumCover
+public import FLT.Mazur.EquivalenceRelationResidualAdicIdeal
+public import FLT.Mazur.EquivalenceRelationResidualBranchDecomposition
+public import FLT.Mazur.EquivalenceRelationResidualCoefficientEquations
+public import FLT.Mazur.EquivalenceRelationResidualPermutationOpen
+public import FLT.Mazur.EquivalenceRelationRestrictedActionGraphs
 public import FLT.Mazur.EquivalenceRelationSectionRebase
 public import FLT.Mazur.EquivalenceRelationSourceRefinement
 public import FLT.Mazur.EquivalenceRelationSourceRestriction
@@ -5852,6 +5858,7 @@ public import FLT.Mazur.HilbertJointStableSourceNeighborhoods
 public import FLT.Mazur.HilbertLocalResidueBasis
 public import FLT.Mazur.HilbertLocalizationIsomorphismOpen
 public import FLT.Mazur.HilbertLocalizedTupleBasis
+public import FLT.Mazur.HilbertMixedResidualBranches
 public import FLT.Mazur.HilbertMonomialAmbientDecomposition
 public import FLT.Mazur.HilbertMonomialBasisNeighborhood
 public import FLT.Mazur.HilbertMonomialChartBasisCriterion
