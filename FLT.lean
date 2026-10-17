@@ -6003,6 +6003,7 @@ public import FLT.Mazur.HilbertOrbitRelativeMixedConnecting
 public import FLT.Mazur.HilbertOrbitRelativeMixedError
 public import FLT.Mazur.HilbertOrbitRelativeReducedCorrections
 public import FLT.Mazur.HilbertOrbitRelativeReductionKernel
+public import FLT.Mazur.HilbertOrbitRelativeScalarImage
 public import FLT.Mazur.HilbertOrbitRelativeScalarResidue
 public import FLT.Mazur.HilbertOrderedAffineEnvelope
 public import FLT.Mazur.HilbertOrderedOriginalBoundary
