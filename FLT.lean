@@ -12564,6 +12564,7 @@ public import FLT.Mazur.WeierstrassDividedFifthDeepNodeRestriction
 public import FLT.Mazur.WeierstrassDividedFifthDeepNodes
 public import FLT.Mazur.WeierstrassDividedFifthDeepRestriction
 public import FLT.Mazur.WeierstrassDividedFifthDeepSixthOrder
+public import FLT.Mazur.WeierstrassDividedFifthDeepUnchanged
 public import FLT.Mazur.WeierstrassDividedFifthInitialAtlas
 public import FLT.Mazur.WeierstrassDividedFifthInitialAtlasClosing
 public import FLT.Mazur.WeierstrassDividedFifthInitialAtlasEdge
