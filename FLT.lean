@@ -10040,6 +10040,7 @@ public import FLT.Mazur.RelativePoleComplementFunctions
 public import FLT.Mazur.RelativePoleComplementLinear
 public import FLT.Mazur.RelativeRankOneDivisorUniqueness
 public import FLT.Mazur.RelativeRankStratumThickenings
+public import FLT.Mazur.RelativeReductionKernelAbsorption
 public import FLT.Mazur.RelativeRelationArrowCalculus
 public import FLT.Mazur.RelativeRelationClosedObstruction
 public import FLT.Mazur.RelativeRelationClosedSections
