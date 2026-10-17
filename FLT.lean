@@ -2595,6 +2595,7 @@ public import FLT.Mazur.AdicModuleScalarChange
 public import FLT.Mazur.AdicOriginalSectionReconstruction
 public import FLT.Mazur.AdicOriginalSpaceProjection
 public import FLT.Mazur.AdicPolynomialPresentationLift
+public import FLT.Mazur.AdicPositiveAffineLift
 public import FLT.Mazur.AdicPresentationDerivation
 public import FLT.Mazur.AdicPresentationFirstCotangent
 public import FLT.Mazur.AdicPresentationScalarTowers
