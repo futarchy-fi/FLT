@@ -7180,6 +7180,7 @@ public import FLT.Mazur.OddWeierstrassNormalizedParameterMarking
 public import FLT.Mazur.OddWeierstrassNormalizedRetainedSubgroup
 public import FLT.Mazur.OddWeierstrassNormalizedSlice
 public import FLT.Mazur.OddWeierstrassNormalizedSliceFixed
+public import FLT.Mazur.OddWeierstrassNormalizedSliceFunctor
 public import FLT.Mazur.OddWeierstrassNormalizedSliceRing
 public import FLT.Mazur.OddWeierstrassNormalizedSubgroupLocus
 public import FLT.Mazur.OddWeierstrassOriginalAuxiliaryCover
