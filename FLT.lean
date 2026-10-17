@@ -8794,6 +8794,7 @@ public import FLT.Mazur.PolygonTopNodeLaurent
 public import FLT.Mazur.PolygonTopNodeNeighborhood
 public import FLT.Mazur.PolygonTopNodeParameterScaling
 public import FLT.Mazur.PolygonTopNodeReduction
+public import FLT.Mazur.PolygonTopNodeScaledBoundary
 public import FLT.Mazur.PolygonTopNodeTangentBoundary
 public import FLT.Mazur.PolygonTopNodeTangentEquiv
 public import FLT.Mazur.PolygonTopNodeTangentLift
