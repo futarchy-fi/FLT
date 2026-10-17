@@ -9836,6 +9836,7 @@ public import FLT.Mazur.RelativeAmpleRestriction
 public import FLT.Mazur.RelativeAmpleSectionComparison
 public import FLT.Mazur.RelativeBoundaryConnectingMap
 public import FLT.Mazur.RelativeBoundaryReducedCorrections
+public import FLT.Mazur.RelativeBoundaryReductionAbsorption
 public import FLT.Mazur.RelativeCartier
 public import FLT.Mazur.RelativeCartierBaseChange
 public import FLT.Mazur.RelativeCartierBaseChangeComposition
