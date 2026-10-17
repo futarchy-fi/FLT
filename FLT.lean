@@ -12841,6 +12841,7 @@ public import FLT.Mazur.WeierstrassDividedRetainedClosingRestriction
 public import FLT.Mazur.WeierstrassDividedRetainedClosingUnit
 public import FLT.Mazur.WeierstrassDividedRetainedExteriorIntersection
 public import FLT.Mazur.WeierstrassDividedRetainedFactorRatioPolygon
+public import FLT.Mazur.WeierstrassDividedRetainedInitialBoundary
 public import FLT.Mazur.WeierstrassDividedRetainedLineAt
 public import FLT.Mazur.WeierstrassDividedRetainedLineSeparation
 public import FLT.Mazur.WeierstrassDividedRetainedNormalizedAdjacent
@@ -12862,7 +12863,11 @@ public import FLT.Mazur.WeierstrassDividedSecondJointResiduals
 public import FLT.Mazur.WeierstrassDividedSecondJointRestriction
 public import FLT.Mazur.WeierstrassDividedSecondJointThirdOrder
 public import FLT.Mazur.WeierstrassDividedSecondJointTransitions
+public import FLT.Mazur.WeierstrassDividedSecondPrecedingAdjacent
+public import FLT.Mazur.WeierstrassDividedSecondPrecedingIncoming
+public import FLT.Mazur.WeierstrassDividedSecondPrecedingInitial
 public import FLT.Mazur.WeierstrassDividedSecondPrecedingResidual
+public import FLT.Mazur.WeierstrassDividedSecondPrecedingTransition
 public import FLT.Mazur.WeierstrassDividedSecondPunctureIdentification
 public import FLT.Mazur.WeierstrassDividedSecondResidualAlgebra
 public import FLT.Mazur.WeierstrassDividedSecondResidualFactors
@@ -13004,6 +13009,10 @@ public import FLT.Mazur.WeierstrassDividedTerminalZeroConicBranches
 public import FLT.Mazur.WeierstrassDividedTerminalZeroConicIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalZeroCrossedIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalZeroNodalChart
+public import FLT.Mazur.WeierstrassDividedThirdJointFields
+public import FLT.Mazur.WeierstrassDividedThirdJointNodes
+public import FLT.Mazur.WeierstrassDividedThirdJointRestriction
+public import FLT.Mazur.WeierstrassDividedThirdResidualFields
 public import FLT.Mazur.WeierstrassDividedTwistedAtlas
 public import FLT.Mazur.WeierstrassDividedTwistedAtlasGluing
 public import FLT.Mazur.WeierstrassDividedTwistedAtlasRestriction
@@ -14051,6 +14060,7 @@ public import FLT.Mazur.WeierstrassRetainedFixedEdgeUnit
 public import FLT.Mazur.WeierstrassRetainedFixedNaturality
 public import FLT.Mazur.WeierstrassRetainedFixedPolygon
 public import FLT.Mazur.WeierstrassRetainedFixedPuncturePreimage
+public import FLT.Mazur.WeierstrassRetainedFixedRightBoundary
 public import FLT.Mazur.WeierstrassRetainedFixedSmoothing
 public import FLT.Mazur.WeierstrassRetainedFixedSmoothingIso
 public import FLT.Mazur.WeierstrassRetainedFixedTerminalEdges
