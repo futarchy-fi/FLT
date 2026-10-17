@@ -8429,6 +8429,7 @@ public import FLT.Mazur.PolygonCompleteWholeAction
 public import FLT.Mazur.PolygonCompleteWholeActionChartCompatibility
 public import FLT.Mazur.PolygonCompleteWholeActionCyclic
 public import FLT.Mazur.PolygonCompleteWholeActionEvaluation
+public import FLT.Mazur.PolygonCompleteWholeActionFinite
 public import FLT.Mazur.PolygonCompleteWholeActionLaws
 public import FLT.Mazur.PolygonCompleteWholeActionParameterCover
 public import FLT.Mazur.PolygonCompleteWholeActionRotatedCharts
