@@ -5921,6 +5921,7 @@ public import FLT.Mazur.HilbertOrbitBoundaryCorrectionIdeal
 public import FLT.Mazur.HilbertOrbitBoundaryFamilyLifts
 public import FLT.Mazur.HilbertOrbitBoundaryFiniteAtlas
 public import FLT.Mazur.HilbertOrbitBoundaryFiniteDescent
+public import FLT.Mazur.HilbertOrbitBoundaryFiniteErrors
 public import FLT.Mazur.HilbertOrbitBoundaryFiniteLifts
 public import FLT.Mazur.HilbertOrbitBoundaryFiniteMultipliers
 public import FLT.Mazur.HilbertOrbitBoundaryFiniteOriginalLift
