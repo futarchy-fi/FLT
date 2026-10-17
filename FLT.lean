@@ -6114,6 +6114,12 @@ public import FLT.Mazur.HilbertTruncatedIdealGeneration
 public import FLT.Mazur.HilbertTupleBasisTower
 public import FLT.Mazur.HilbertUniformOriginalFiniteLifts
 public import FLT.Mazur.HilbertUniformOriginalLiftingOpen
+public import FLT.Mazur.HilbertUniformPrincipalCore
+public import FLT.Mazur.HilbertUniformPrincipalCoreCoverage
+public import FLT.Mazur.HilbertUniformPrincipalErrorSupport
+public import FLT.Mazur.HilbertUniformPrincipalFiniteSource
+public import FLT.Mazur.HilbertUniformPrincipalPrimeCorrection
+public import FLT.Mazur.HilbertUniformPrincipalScalarIdeal
 public import FLT.Mazur.HilbertUniformSourceBoundaryDescent
 public import FLT.Mazur.HilbertUniformSourceOriginalSections
 public import FLT.Mazur.HilbertUniformSourcePrincipalMultipliers
@@ -6676,6 +6682,7 @@ public import FLT.Mazur.LocallyFramedSplitLineRestriction
 public import FLT.Mazur.LocallyFreeDualProjectiveAtlas
 public import FLT.Mazur.LocallyFreeProjectiveQuotient
 public import FLT.Mazur.LocallyNoetherianUniversalStructureSheaf
+public import FLT.Mazur.LocallyRingedIdealGenerators
 public import FLT.Mazur.LocallyRingedOpenImage
 public import FLT.Mazur.LocallyRingedSchemeChartUnion
 public import FLT.Mazur.LocallyRingedSectionPointIdeal
