@@ -8657,6 +8657,8 @@ public import FLT.Mazur.PolygonSmoothingBranchSeparation
 public import FLT.Mazur.PolygonSmoothingBranchSwap
 public import FLT.Mazur.PolygonSmoothingBranchSwapGeometry
 public import FLT.Mazur.PolygonSmoothingBranchSwapNaturality
+public import FLT.Mazur.PolygonSmoothingChangeParameter
+public import FLT.Mazur.PolygonSmoothingChangeParameterNaturality
 public import FLT.Mazur.PolygonSmoothingClosingPair
 public import FLT.Mazur.PolygonSmoothingCoefficientBranches
 public import FLT.Mazur.PolygonSmoothingCoefficientSquares
@@ -12727,6 +12729,12 @@ public import FLT.Mazur.WeierstrassDividedTerminalBoundaryAlgebra
 public import FLT.Mazur.WeierstrassDividedTerminalBoundaryExtension
 public import FLT.Mazur.WeierstrassDividedTerminalBranchIntersection
 public import FLT.Mazur.WeierstrassDividedTerminalBranchesNodeIntersection
+public import FLT.Mazur.WeierstrassDividedTerminalChangedAtlas
+public import FLT.Mazur.WeierstrassDividedTerminalChangedAtlasSystem
+public import FLT.Mazur.WeierstrassDividedTerminalChangedAttachment
+public import FLT.Mazur.WeierstrassDividedTerminalChangedCoefficientTests
+public import FLT.Mazur.WeierstrassDividedTerminalChangedRestriction
+public import FLT.Mazur.WeierstrassDividedTerminalChangedSmoothing
 public import FLT.Mazur.WeierstrassDividedTerminalCoefficientAction
 public import FLT.Mazur.WeierstrassDividedTerminalComponentContraction
 public import FLT.Mazur.WeierstrassDividedTerminalComponentExclusions
@@ -12760,6 +12768,7 @@ public import FLT.Mazur.WeierstrassDividedTerminalPolygonBoundaryIso
 public import FLT.Mazur.WeierstrassDividedTerminalPolygonBoundaryRestriction
 public import FLT.Mazur.WeierstrassDividedTerminalPolygonInverseRestriction
 public import FLT.Mazur.WeierstrassDividedTerminalPrimitiveConstraint
+public import FLT.Mazur.WeierstrassDividedTerminalResidualAlgebra
 public import FLT.Mazur.WeierstrassDividedTerminalResidueAtlas
 public import FLT.Mazur.WeierstrassDividedTerminalResidueBoundary
 public import FLT.Mazur.WeierstrassDividedTerminalResidueCharts
