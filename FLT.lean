@@ -6416,6 +6416,7 @@ public import FLT.Mazur.LaurentUnitMultiplication
 public import FLT.Mazur.LaurentUnitPointNaturality
 public import FLT.Mazur.LaurentUnitPoints
 public import FLT.Mazur.LaurentUnitScaledCoordinates
+public import FLT.Mazur.LaurentUnitSubstitutionNaturality
 public import FLT.Mazur.LaurentWeightedEvaluation
 public import FLT.Mazur.LaurentWeightedInverse
 public import FLT.Mazur.LineBundleAffineFrames
