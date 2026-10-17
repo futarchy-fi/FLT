@@ -7743,6 +7743,7 @@ public import FLT.Mazur.PolygonCompleteClosedSingularPoints
 public import FLT.Mazur.PolygonCompleteClosedSmoothLocus
 public import FLT.Mazur.PolygonCompleteClosedSmoothSquare
 public import FLT.Mazur.PolygonCompleteClosedSpecialization
+public import FLT.Mazur.PolygonCompleteClosedSplitParameter
 public import FLT.Mazur.PolygonCompleteCoefficientAdicComparison
 public import FLT.Mazur.PolygonCompleteCoefficientAmple
 public import FLT.Mazur.PolygonCompleteCoefficientCoherence
