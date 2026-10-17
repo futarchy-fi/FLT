@@ -7141,6 +7141,7 @@ public import FLT.Mazur.OddWeierstrassAuxiliaryValueNaturality
 public import FLT.Mazur.OddWeierstrassCyclicHomAffineMarkings
 public import FLT.Mazur.OddWeierstrassCyclicHomAffineNeighborhood
 public import FLT.Mazur.OddWeierstrassCyclicHomAffineNormalization
+public import FLT.Mazur.OddWeierstrassCyclicHomAffinePresentationInvariant
 public import FLT.Mazur.OddWeierstrassCyclicHomAffineSource
 public import FLT.Mazur.OddWeierstrassCyclicHomAffineSubgroup
 public import FLT.Mazur.OddWeierstrassCyclicHomAuxiliaryScheme
