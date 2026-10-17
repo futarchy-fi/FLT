@@ -7403,6 +7403,7 @@ public import FLT.Mazur.PolygonArithmeticCompleteLineQuotient
 public import FLT.Mazur.PolygonArithmeticCompleteMarkingAmple
 public import FLT.Mazur.PolygonArithmeticCompleteMarkings
 public import FLT.Mazur.PolygonArithmeticCompleteStageIdeals
+public import FLT.Mazur.PolygonArithmeticCorrectionPunctureRestriction
 public import FLT.Mazur.PolygonArithmeticCorrectionPunctures
 public import FLT.Mazur.PolygonArithmeticCubicEquationReconstruction
 public import FLT.Mazur.PolygonArithmeticDegreeComplete
