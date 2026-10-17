@@ -12889,6 +12889,7 @@ public import FLT.Mazur.WeierstrassDividedFourthTransitions
 public import FLT.Mazur.WeierstrassDividedFourthZeroInitial
 public import FLT.Mazur.WeierstrassDividedFourthZeroLast
 public import FLT.Mazur.WeierstrassDividedFourthZeroPunctures
+public import FLT.Mazur.WeierstrassDividedFourthZeroResidual
 public import FLT.Mazur.WeierstrassDividedFullInfinityFactorRatioMap
 public import FLT.Mazur.WeierstrassDividedFullInfinityFactorRatioNaturality
 public import FLT.Mazur.WeierstrassDividedFullResidueAtlas
