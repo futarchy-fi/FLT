@@ -12791,6 +12791,7 @@ public import FLT.Mazur.WeierstrassDividedRetentionSuccessor
 public import FLT.Mazur.WeierstrassDividedSecondJointFields
 public import FLT.Mazur.WeierstrassDividedSecondJointIdentification
 public import FLT.Mazur.WeierstrassDividedSecondJointResiduals
+public import FLT.Mazur.WeierstrassDividedSecondJointRestriction
 public import FLT.Mazur.WeierstrassDividedSecondPunctureIdentification
 public import FLT.Mazur.WeierstrassDividedSecondResidualAlgebra
 public import FLT.Mazur.WeierstrassDividedSecondResidualFactors
