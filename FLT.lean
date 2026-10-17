@@ -12493,6 +12493,7 @@ public import FLT.Mazur.WeierstrassDividedInfinityLaurentGluing
 public import FLT.Mazur.WeierstrassDividedInfinityLaurentZero
 public import FLT.Mazur.WeierstrassDividedInfinitySmoothCompatibility
 public import FLT.Mazur.WeierstrassDividedInitialAtlasIndex
+public import FLT.Mazur.WeierstrassDividedInitialBaseParameter
 public import FLT.Mazur.WeierstrassDividedInitialBoundaryGeometry
 public import FLT.Mazur.WeierstrassDividedInitialBranchCompatibility
 public import FLT.Mazur.WeierstrassDividedInitialChartCoverage
