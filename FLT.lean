@@ -13868,6 +13868,7 @@ public import FLT.Mazur.WeierstrassDividedRevisedRetainedMaps
 public import FLT.Mazur.WeierstrassDividedRevisedRetainedNodeMap
 public import FLT.Mazur.WeierstrassDividedRevisedRetainedReflection
 public import FLT.Mazur.WeierstrassDividedRevisedRetainedTargetIntersection
+public import FLT.Mazur.WeierstrassDividedRevisedSeparation
 public import FLT.Mazur.WeierstrassDividedRevisedTargetLabels
 public import FLT.Mazur.WeierstrassDividedRevisedTensorMaps
 public import FLT.Mazur.WeierstrassDividedRevisedTerminalReflection
