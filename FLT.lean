@@ -6294,6 +6294,7 @@ public import FLT.Mazur.HilbertSubframeLocalizedEmbeddingLifts
 public import FLT.Mazur.HilbertSubframeNormalizedTransfer
 public import FLT.Mazur.HilbertSubframeOriginalLocalization
 public import FLT.Mazur.HilbertSubframeOriginalScalars
+public import FLT.Mazur.HilbertSubframePrincipalExchangeExtension
 public import FLT.Mazur.HilbertSubframeScalarLinearMaps
 public import FLT.Mazur.HilbertSubframeScalarObstruction
 public import FLT.Mazur.HilbertSubframeStrictUnitCover
