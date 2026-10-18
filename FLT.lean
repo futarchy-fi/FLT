@@ -4018,6 +4018,7 @@ public import FLT.Mazur.CyclicCharacteristicRelabelSections
 public import FLT.Mazur.CyclicCharacteristicRelabeledPrescribedCover
 public import FLT.Mazur.CyclicCharacteristicRelabeledPrescribedSections
 public import FLT.Mazur.CyclicCharacteristicRetainedFaithfulness
+public import FLT.Mazur.CyclicCharacteristicRetainedParameter
 public import FLT.Mazur.CyclicDivisorSubgroupCriterion
 public import FLT.Mazur.CyclicHomAffinePresentationInvariant
 public import FLT.Mazur.CyclicHomAuxiliaryScheme
