@@ -7389,6 +7389,7 @@ public import FLT.Mazur.OddWeierstrassNormalizedSliceFunctor
 public import FLT.Mazur.OddWeierstrassNormalizedSliceRing
 public import FLT.Mazur.OddWeierstrassNormalizedSubgroupLocus
 public import FLT.Mazur.OddWeierstrassOriginalAuxiliaryCover
+public import FLT.Mazur.OddWeierstrassPointedCubicActualNormalizedAuxiliary
 public import FLT.Mazur.OddWeierstrassPointedCubicActualNormalizedGenerator
 public import FLT.Mazur.OddWeierstrassPointedCubicAuxiliaryCover
 public import FLT.Mazur.OddWeierstrassPointedCubicCoefficientParameter
