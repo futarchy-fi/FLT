@@ -3993,14 +3993,19 @@ public import FLT.Mazur.CyclicCharacteristicAtlasCoverage
 public import FLT.Mazur.CyclicCharacteristicAtlasCoverageUnrestricted
 public import FLT.Mazur.CyclicCharacteristicAtlasModuli
 public import FLT.Mazur.CyclicCharacteristicAtlasRelabel
+public import FLT.Mazur.CyclicCharacteristicAuxiliaryFaithfulness
 public import FLT.Mazur.CyclicCharacteristicAuxiliaryPrescribedCover
 public import FLT.Mazur.CyclicCharacteristicAuxiliaryPrescribedNeighborhood
+public import FLT.Mazur.CyclicCharacteristicCoefficientFiniteType
 public import FLT.Mazur.CyclicCharacteristicEvenNormalizedAuxiliary
 public import FLT.Mazur.CyclicCharacteristicEvenNormalizedGenerator
 public import FLT.Mazur.CyclicCharacteristicEvenParameterSource
 public import FLT.Mazur.CyclicCharacteristicEvenRelabelSections
 public import FLT.Mazur.CyclicCharacteristicEvenRelabeledAuxiliary
 public import FLT.Mazur.CyclicCharacteristicEvenRelabeledGenerator
+public import FLT.Mazur.CyclicCharacteristicFaithfulFullCover
+public import FLT.Mazur.CyclicCharacteristicFaithfulPrescribedCover
+public import FLT.Mazur.CyclicCharacteristicFaithfulRelabeledCover
 public import FLT.Mazur.CyclicCharacteristicMarkedRelation
 public import FLT.Mazur.CyclicCharacteristicMarkedRelationAction
 public import FLT.Mazur.CyclicCharacteristicNormalizedAtlas
@@ -4019,6 +4024,9 @@ public import FLT.Mazur.CyclicCharacteristicPrescribedNeighborhood
 public import FLT.Mazur.CyclicCharacteristicRelabelSections
 public import FLT.Mazur.CyclicCharacteristicRelabeledPrescribedCover
 public import FLT.Mazur.CyclicCharacteristicRelabeledPrescribedSections
+public import FLT.Mazur.CyclicCharacteristicRetainedFaithfulness
+public import FLT.Mazur.CyclicCharacteristicRetainedFullParameter
+public import FLT.Mazur.CyclicCharacteristicRetainedParameter
 public import FLT.Mazur.CyclicDivisorSubgroupCriterion
 public import FLT.Mazur.CyclicHomAffinePresentationInvariant
 public import FLT.Mazur.CyclicHomAuxiliaryScheme
@@ -10408,6 +10416,7 @@ public import FLT.Mazur.PullbackOverlapBaseChange
 public import FLT.Mazur.PullbackRotationCocycle
 public import FLT.Mazur.PullbackRotationCoordinates
 public import FLT.Mazur.PullbackRotationTransport
+public import FLT.Mazur.PulledSectionDistinctness
 public import FLT.Mazur.PuncturedNodeRestrictionComparison
 public import FLT.Mazur.PushforwardCech
 public import FLT.Mazur.PushoutModuleScalars
