@@ -14568,6 +14568,7 @@ public import FLT.Mazur.WeierstrassDividedZeroEqualityUniversalHomExt
 public import FLT.Mazur.WeierstrassDividedZeroEqualityZeroInteriorAtlasCompatibility
 public import FLT.Mazur.WeierstrassDividedZeroEqualityZeroInteriorTensorCompatibility
 public import FLT.Mazur.WeierstrassDividedZeroEqualityZeroTensorDesc
+public import FLT.Mazur.WeierstrassDividedZeroExactTargetDesc
 public import FLT.Mazur.WeierstrassDividedZeroExteriorCoverage
 public import FLT.Mazur.WeierstrassDividedZeroExteriorCurve
 public import FLT.Mazur.WeierstrassDividedZeroExteriorLaurent
