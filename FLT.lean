@@ -8097,6 +8097,7 @@ public import FLT.Mazur.PolygonArithmeticCyclicFactorRestriction
 public import FLT.Mazur.PolygonArithmeticCyclicFactors
 public import FLT.Mazur.PolygonArithmeticCyclicGeometry
 public import FLT.Mazur.PolygonArithmeticCyclicIteration
+public import FLT.Mazur.PolygonArithmeticCyclicNilpotence
 public import FLT.Mazur.PolygonArithmeticCyclicRestriction
 public import FLT.Mazur.PolygonArithmeticCyclicStability
 public import FLT.Mazur.PolygonArithmeticCyclicState
@@ -14441,6 +14442,11 @@ public import FLT.Mazur.WeierstrassDividedZeroCycleZeroAtlasConics
 public import FLT.Mazur.WeierstrassDividedZeroCycleZeroIndexedMap
 public import FLT.Mazur.WeierstrassDividedZeroCycleZeroPositiveTensorCompatibility
 public import FLT.Mazur.WeierstrassDividedZeroCycleZeroTensorDesc
+public import FLT.Mazur.WeierstrassDividedZeroCyclicDiagonal
+public import FLT.Mazur.WeierstrassDividedZeroCyclicIndex
+public import FLT.Mazur.WeierstrassDividedZeroCyclicSeed
+public import FLT.Mazur.WeierstrassDividedZeroCyclicStandard
+public import FLT.Mazur.WeierstrassDividedZeroCyclicStandardMaps
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalAtlas
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalAtlasOverlaps
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalAtlasRestriction
@@ -14676,6 +14682,7 @@ public import FLT.Mazur.WeierstrassDividedZeroInitialAffinePolygon
 public import FLT.Mazur.WeierstrassDividedZeroInitialInfinityParameter
 public import FLT.Mazur.WeierstrassDividedZeroInitialNodeTransport
 public import FLT.Mazur.WeierstrassDividedZeroInitialPolygonBoundary
+public import FLT.Mazur.WeierstrassDividedZeroInitialPunctureAlgebra
 public import FLT.Mazur.WeierstrassDividedZeroInitialPunctureTransport
 public import FLT.Mazur.WeierstrassDividedZeroInitialTotalBase
 public import FLT.Mazur.WeierstrassDividedZeroInitialTotalRestriction
@@ -14688,6 +14695,8 @@ public import FLT.Mazur.WeierstrassDividedZeroNodalGluing
 public import FLT.Mazur.WeierstrassDividedZeroNodalProjective
 public import FLT.Mazur.WeierstrassDividedZeroOriginalInfinityNormalization
 public import FLT.Mazur.WeierstrassDividedZeroResidueAtlas
+public import FLT.Mazur.WeierstrassDividedZeroRetainedEdgeAlgebra
+public import FLT.Mazur.WeierstrassDividedZeroRetainedEdgeRestriction
 public import FLT.Mazur.WeierstrassDividedZeroRetentionIntersection
 public import FLT.Mazur.WeierstrassDividedZeroSecondAnnihilation
 public import FLT.Mazur.WeierstrassDividedZeroSecondAtlas
@@ -15121,6 +15130,7 @@ public import FLT.Mazur.WeierstrassModificationReesYScaleScheme
 public import FLT.Mazur.WeierstrassModificationShearLocalization
 public import FLT.Mazur.WeierstrassModificationShearOverlap
 public import FLT.Mazur.WeierstrassModificationXAlgebra
+public import FLT.Mazur.WeierstrassModificationXArithmeticFactorRatioAlgebra
 public import FLT.Mazur.WeierstrassModificationXArithmeticFactorRatioLaurent
 public import FLT.Mazur.WeierstrassModificationXArithmeticFactorRatioNilpotence
 public import FLT.Mazur.WeierstrassModificationXArithmeticFactorRatioOverlapParameter
