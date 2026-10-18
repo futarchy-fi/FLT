@@ -7868,6 +7868,7 @@ public import FLT.Mazur.PolygonArithmeticSimultaneousRestriction
 public import FLT.Mazur.PolygonArithmeticSimultaneousSplit
 public import FLT.Mazur.PolygonArithmeticSimultaneousState
 public import FLT.Mazur.PolygonArithmeticSimultaneousStep
+public import FLT.Mazur.PolygonArithmeticSimultaneousStepStability
 public import FLT.Mazur.PolygonArithmeticSmoothDimensionOpen
 public import FLT.Mazur.PolygonArithmeticStageBaseComparison
 public import FLT.Mazur.PolygonArithmeticStageCanonicalMap
