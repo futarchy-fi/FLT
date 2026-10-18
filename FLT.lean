@@ -6292,6 +6292,7 @@ public import FLT.Mazur.HilbertSubframeExchangeLifts
 public import FLT.Mazur.HilbertSubframeExchangeObstruction
 public import FLT.Mazur.HilbertSubframeLocalizedEmbeddingLifts
 public import FLT.Mazur.HilbertSubframeNormalizedTransfer
+public import FLT.Mazur.HilbertSubframeOpenImagePrimeCorrections
 public import FLT.Mazur.HilbertSubframeOriginalLocalization
 public import FLT.Mazur.HilbertSubframeOriginalScalars
 public import FLT.Mazur.HilbertSubframePrincipalExchangeExtension
@@ -11020,9 +11021,11 @@ public import FLT.Mazur.SchemeIndependentPairNormalization
 public import FLT.Mazur.SchemeIndependentRecoveryNormalization
 public import FLT.Mazur.SchemeIndependentTripleCocycle
 public import FLT.Mazur.SchemeInvariantOpenPrincipalExtension
+public import FLT.Mazur.SchemeInvariantOpenRelationExtension
 public import FLT.Mazur.SchemeInvariantPrincipalBoundaryNumerator
 public import FLT.Mazur.SchemeInvariantPrincipalNumerator
 public import FLT.Mazur.SchemeInvariantPrincipalRelationLifts
+public import FLT.Mazur.SchemeInvariantScalarFiberNeighborhood
 public import FLT.Mazur.SchemeKernelFlatSourceImage
 public import FLT.Mazur.SchemeKernelInvariantOpenLift
 public import FLT.Mazur.SchemeKernelPairSectionSheaf
@@ -11055,6 +11058,8 @@ public import FLT.Mazur.SchemeOrbitOpenAffineSelection
 public import FLT.Mazur.SchemeOrbitOpenGroundGeometry
 public import FLT.Mazur.SchemeOrbitOpenSelection
 public import FLT.Mazur.SchemeOrbitOpenSelectionKernel
+public import FLT.Mazur.SchemeOriginalScalarCorrectionFamily
+public import FLT.Mazur.SchemeOriginalScalarOpenCorrections
 public import FLT.Mazur.SchemeOverlapBaseChange
 public import FLT.Mazur.SchemeOverlapCocycleChart
 public import FLT.Mazur.SchemeOverlapCocycleDetection
@@ -11201,6 +11206,9 @@ public import FLT.Mazur.SchemeRelationTensorCoordinates
 public import FLT.Mazur.SchemeRelationTensorCounit
 public import FLT.Mazur.SchemeRelativeNilpotentKernel
 public import FLT.Mazur.SchemeRelativeNilpotentSections
+public import FLT.Mazur.SchemeScalarAvoidanceIdeal
+public import FLT.Mazur.SchemeScalarPrincipalNeighborhood
+public import FLT.Mazur.SchemeScalarPrincipalNeighborhoodFamily
 public import FLT.Mazur.SchemeSectionFamilyProduct
 public import FLT.Mazur.SchemeSectionFrameCompatibility
 public import FLT.Mazur.SchemeSectionFrameNormalization
