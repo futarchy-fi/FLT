@@ -7804,6 +7804,7 @@ public import FLT.Mazur.PointedPicardNormalization
 public import FLT.Mazur.PointedStructureModuleComparison
 public import FLT.Mazur.PolygonActionAssociativity
 public import FLT.Mazur.PolygonActionBaseChange
+public import FLT.Mazur.PolygonActionCoconeNaturality
 public import FLT.Mazur.PolygonActionFieldExtension
 public import FLT.Mazur.PolygonActionGraph
 public import FLT.Mazur.PolygonActionSmooth
