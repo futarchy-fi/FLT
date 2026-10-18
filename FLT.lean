@@ -13864,6 +13864,7 @@ public import FLT.Mazur.WeierstrassDividedZeroThirdPunctures
 public import FLT.Mazur.WeierstrassDividedZeroThirdResidualRestriction
 public import FLT.Mazur.WeierstrassDividedZeroThirdRestriction
 public import FLT.Mazur.WeierstrassDividedZeroThirdSplit
+public import FLT.Mazur.WeierstrassDividedZeroThirdTransitions
 public import FLT.Mazur.WeierstrassEquationCoefficientChart
 public import FLT.Mazur.WeierstrassEquationCoefficientCongruence
 public import FLT.Mazur.WeierstrassEquationCoefficientProjection
