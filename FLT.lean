@@ -5449,6 +5449,7 @@ public import FLT.Mazur.FiniteSeparatedLineSheafDescent
 public import FLT.Mazur.FiniteSubframeSelections
 public import FLT.Mazur.FiniteSubgroupClassPresheaf
 public import FLT.Mazur.FiniteSubgroupContainmentLocus
+public import FLT.Mazur.FiniteSubgroupEqualityLocus
 public import FLT.Mazur.FiniteSubgroupPicard
 public import FLT.Mazur.FiniteSubgroupPicardDegree
 public import FLT.Mazur.FiniteSupportClosedDescent
