@@ -4062,6 +4062,7 @@ public import FLT.Mazur.CyclicHomSubgroupVanishingChart
 public import FLT.Mazur.CyclicHomUniversalAuxiliaryMarking
 public import FLT.Mazur.CyclicHomUniversalPrescribedGenerator
 public import FLT.Mazur.CyclicHomUniversalSubgroupComparison
+public import FLT.Mazur.CyclicLocalOriginalAuxiliary
 public import FLT.Mazur.CyclicMarkingDivisorTransport
 public import FLT.Mazur.CyclicMarkingOrbitDivisor
 public import FLT.Mazur.CyclicMarkingRelabelIdeal
