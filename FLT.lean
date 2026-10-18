@@ -7788,6 +7788,7 @@ public import FLT.Mazur.PolygonArithmeticHigherCorrectionField
 public import FLT.Mazur.PolygonArithmeticHigherCorrectionStability
 public import FLT.Mazur.PolygonArithmeticHigherNodeIdentification
 public import FLT.Mazur.PolygonArithmeticHigherOppositePuncture
+public import FLT.Mazur.PolygonArithmeticHigherPairedStability
 public import FLT.Mazur.PolygonArithmeticHigherPunctureIdentification
 public import FLT.Mazur.PolygonArithmeticHigherRebaseIdentification
 public import FLT.Mazur.PolygonArithmeticHigherTwoBranchIdentification
