@@ -3973,6 +3973,7 @@ public import FLT.Mazur.CyclicCharacteristicAtlasRelabel
 public import FLT.Mazur.CyclicCharacteristicEvenNormalizedGenerator
 public import FLT.Mazur.CyclicCharacteristicEvenRelabeledGenerator
 public import FLT.Mazur.CyclicCharacteristicMarkedRelation
+public import FLT.Mazur.CyclicCharacteristicMarkedRelationAction
 public import FLT.Mazur.CyclicCharacteristicNormalizedAtlas
 public import FLT.Mazur.CyclicCharacteristicNormalizedGenerator
 public import FLT.Mazur.CyclicCharacteristicNormalizedModuli
