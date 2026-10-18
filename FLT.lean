@@ -5009,6 +5009,7 @@ public import FLT.Mazur.FaithfulMarkingPullbackSections
 public import FLT.Mazur.FaithfulMarkingSectionRelabeling
 public import FLT.Mazur.FaithfulNeighborhoodCurve
 public import FLT.Mazur.FaithfulTensorVanishing
+public import FLT.Mazur.FaithfulTorusCyclicIndex
 public import FLT.Mazur.FaithfullyFlatFinitePresentation
 public import FLT.Mazur.FaithfullyFlatInvertible
 public import FLT.Mazur.FaithfullyFlatSectionLift
