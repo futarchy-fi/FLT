@@ -7811,6 +7811,7 @@ public import FLT.Mazur.PointedPicardNormalization
 public import FLT.Mazur.PointedStructureModuleComparison
 public import FLT.Mazur.PolygonActionAssociativity
 public import FLT.Mazur.PolygonActionBaseChange
+public import FLT.Mazur.PolygonActionCoconeNaturality
 public import FLT.Mazur.PolygonActionFieldExtension
 public import FLT.Mazur.PolygonActionGraph
 public import FLT.Mazur.PolygonActionSmooth
@@ -8998,9 +8999,18 @@ public import FLT.Mazur.PolygonCubicVeryAmple
 public import FLT.Mazur.PolygonCyclicAtlas
 public import FLT.Mazur.PolygonCyclicBoundaryContraction
 public import FLT.Mazur.PolygonCyclicBoundaryDivisor
+public import FLT.Mazur.PolygonCyclicBoundaryFieldContraction
+public import FLT.Mazur.PolygonCyclicBoundaryFieldIncidence
+public import FLT.Mazur.PolygonCyclicBoundaryFieldNode
+public import FLT.Mazur.PolygonCyclicBoundaryFieldNormalization
 public import FLT.Mazur.PolygonCyclicBoundaryFieldTranslation
 public import FLT.Mazur.PolygonCyclicBoundaryNodeFrame
 public import FLT.Mazur.PolygonCyclicBoundaryRefinement
+public import FLT.Mazur.PolygonCyclicBoundaryStandardContraction
+public import FLT.Mazur.PolygonCyclicBoundaryStandardContractionLine
+public import FLT.Mazur.PolygonCyclicBoundaryStandardDivisor
+public import FLT.Mazur.PolygonCyclicBoundaryStandardNormalization
+public import FLT.Mazur.PolygonCyclicBoundaryStandardTranslation
 public import FLT.Mazur.PolygonCyclicCocone
 public import FLT.Mazur.PolygonCyclicDescent
 public import FLT.Mazur.PolygonCyclicDivisor
