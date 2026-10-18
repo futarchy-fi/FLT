@@ -2646,6 +2646,8 @@ public import FLT.Mazur.AffineBasisModuleMorphism
 public import FLT.Mazur.AffineBasisSheafExtension
 public import FLT.Mazur.AffineBasisSumCoproduct
 public import FLT.Mazur.AffineBasisSumMaps
+public import FLT.Mazur.AffineBoundaryComponentEquations
+public import FLT.Mazur.AffineBoundaryTestIdeal
 public import FLT.Mazur.AffineBranchSequence
 public import FLT.Mazur.AffineCanonicalMapCompatibility
 public import FLT.Mazur.AffineCanonicalOverlapChart
@@ -4827,6 +4829,7 @@ public import FLT.Mazur.EquivalenceRelationBoundaryActionGeometry
 public import FLT.Mazur.EquivalenceRelationBoundaryChartTests
 public import FLT.Mazur.EquivalenceRelationBoundaryChartTransport
 public import FLT.Mazur.EquivalenceRelationBoundaryCoefficients
+public import FLT.Mazur.EquivalenceRelationBoundaryComponentRank
 public import FLT.Mazur.EquivalenceRelationBoundaryExcess
 public import FLT.Mazur.EquivalenceRelationBoundaryFaithfulDifferences
 public import FLT.Mazur.EquivalenceRelationBoundaryLabelChange
@@ -6370,6 +6373,7 @@ public import FLT.Mazur.HilbertSourceBadAffineChartEquations
 public import FLT.Mazur.HilbertSourceBadAffineChartLifts
 public import FLT.Mazur.HilbertSourceBadQuotientLifts
 public import FLT.Mazur.HilbertSourceBoundaryCompletenessNilpotence
+public import FLT.Mazur.HilbertSourceBoundaryComponentEquations
 public import FLT.Mazur.HilbertSourceBoundaryRankNilpotence
 public import FLT.Mazur.HilbertSourceClosedBoundaryObstructions
 public import FLT.Mazur.HilbertSourceCoefficientwiseSurjectivity
@@ -11166,6 +11170,7 @@ public import FLT.Mazur.SchemeFiniteFiberInterior
 public import FLT.Mazur.SchemeFiniteGeometricOpenSpread
 public import FLT.Mazur.SchemeFiniteGroupAffineDescent
 public import FLT.Mazur.SchemeFiniteGroupBoundaryCompleteness
+public import FLT.Mazur.SchemeFiniteGroupBoundaryComponents
 public import FLT.Mazur.SchemeFiniteGroupClosedScalarFiber
 public import FLT.Mazur.SchemeFiniteGroupDescent
 public import FLT.Mazur.SchemeFiniteGroupFiniteFiberTests
