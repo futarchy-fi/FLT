@@ -6307,6 +6307,7 @@ public import FLT.Mazur.HilbertSubframeRelationImageLifts
 public import FLT.Mazur.HilbertSubframeRelationMixedCorrections
 public import FLT.Mazur.HilbertSubframeScalarLinearMaps
 public import FLT.Mazur.HilbertSubframeScalarObstruction
+public import FLT.Mazur.HilbertSubframeScaledMixedCorrections
 public import FLT.Mazur.HilbertSubframeScaledRelationImage
 public import FLT.Mazur.HilbertSubframeStrictUnitCover
 public import FLT.Mazur.HilbertSubframeTransferCorrections
