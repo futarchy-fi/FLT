@@ -6283,7 +6283,10 @@ public import FLT.Mazur.HilbertReindexedCoordinateRing
 public import FLT.Mazur.HilbertRepeatedMonomialChart
 public import FLT.Mazur.HilbertSameAmbientChartIso
 public import FLT.Mazur.HilbertSourceCompactRelation
+public import FLT.Mazur.HilbertSourceCompatibleModule
+public import FLT.Mazur.HilbertSourceFiniteLinearOpenLifts
 public import FLT.Mazur.HilbertSourceFiniteOpenNumerators
+public import FLT.Mazur.HilbertSourceGeneratedLocalizedSurjectivity
 public import FLT.Mazur.HilbertSourceLocalizedOpenLift
 public import FLT.Mazur.HilbertSourceOpenRelationLifts
 public import FLT.Mazur.HilbertStableFrameBoundary
@@ -7752,7 +7755,12 @@ public import FLT.Mazur.OriginalGeometricallyIntegralOpen
 public import FLT.Mazur.OriginalHilbertFiniteType
 public import FLT.Mazur.OriginalInvariantOpenAllEtaleLifts
 public import FLT.Mazur.OriginalRestrictedHilbertIntersection
+public import FLT.Mazur.OriginalScalarFiniteLinearLifts
+public import FLT.Mazur.OriginalScalarFiniteRelationDescent
 public import FLT.Mazur.OriginalScalarFiniteRelationNumerators
+public import FLT.Mazur.OriginalScalarGeneratedLocalizedLifts
+public import FLT.Mazur.OriginalScalarRelationLiftIdeal
+public import FLT.Mazur.OriginalScalarRelationModule
 public import FLT.Mazur.OriginalSchemeDetectingOpen
 public import FLT.Mazur.OriginalSmoothDetectingEtaleLift
 public import FLT.Mazur.OriginalSmoothFiberAllLifts
