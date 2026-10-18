@@ -13872,6 +13872,7 @@ public import FLT.Mazur.WeierstrassDividedRevisedGlobalMap
 public import FLT.Mazur.WeierstrassDividedRevisedInfinityImage
 public import FLT.Mazur.WeierstrassDividedRevisedInfinityIntersection
 public import FLT.Mazur.WeierstrassDividedRevisedInfinityMap
+public import FLT.Mazur.WeierstrassDividedRevisedInitialBase
 public import FLT.Mazur.WeierstrassDividedRevisedInitialBoundary
 public import FLT.Mazur.WeierstrassDividedRevisedInitialIntersection
 public import FLT.Mazur.WeierstrassDividedRevisedInitialMaps
