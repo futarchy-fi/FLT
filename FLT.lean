@@ -7398,6 +7398,7 @@ public import FLT.Mazur.OddWeierstrassPointedCubicHomLocusFactorization
 public import FLT.Mazur.OddWeierstrassPointedCubicHomMultiplicationVanishing
 public import FLT.Mazur.OddWeierstrassPointedCubicHomNormalizedOriginalGenerator
 public import FLT.Mazur.OddWeierstrassPointedCubicHomOriginalAuxiliary
+public import FLT.Mazur.OddWeierstrassPointedCubicHomOriginalSections
 public import FLT.Mazur.OddWeierstrassPointedCubicHomRetainedSubgroup
 public import FLT.Mazur.OddWeierstrassPointedCubicHomSourceGroup
 public import FLT.Mazur.OddWeierstrassSpecialization
