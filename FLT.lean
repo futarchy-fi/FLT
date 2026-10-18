@@ -13856,6 +13856,7 @@ public import FLT.Mazur.WeierstrassDividedZeroSplitPointClassification
 public import FLT.Mazur.WeierstrassDividedZeroThirdAnnihilation
 public import FLT.Mazur.WeierstrassDividedZeroThirdCancellation
 public import FLT.Mazur.WeierstrassDividedZeroThirdFields
+public import FLT.Mazur.WeierstrassDividedZeroThirdGeometry
 public import FLT.Mazur.WeierstrassDividedZeroThirdNodes
 public import FLT.Mazur.WeierstrassDividedZeroThirdPunctures
 public import FLT.Mazur.WeierstrassDividedZeroThirdResidualRestriction
