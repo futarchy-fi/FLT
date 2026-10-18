@@ -7090,6 +7090,7 @@ public import FLT.Mazur.LocallySplitSheafPullback
 public import FLT.Mazur.LocallySplitSheafTransport
 public import FLT.Mazur.MarkedIntegerModel
 public import FLT.Mazur.MaximalAdicDetection
+public import FLT.Mazur.MinimalPrimeLocalizedIdeal
 public import FLT.Mazur.ModuleBinarySectionGluing
 public import FLT.Mazur.ModuleCechScalar
 public import FLT.Mazur.ModuleCocycleChartSections
