@@ -11132,6 +11132,7 @@ public import FLT.Mazur.SchemeOpenEnvelopeLocus
 public import FLT.Mazur.SchemeOpenPairBaseRestriction
 public import FLT.Mazur.SchemeOpenPairPrincipalRestriction
 public import FLT.Mazur.SchemeOpenPairRelationLifts
+public import FLT.Mazur.SchemeOpenPairSectionRestriction
 public import FLT.Mazur.SchemeOpenPushoutCharts
 public import FLT.Mazur.SchemeOpenPushoutCoverIso
 public import FLT.Mazur.SchemeOpenPushoutIntersection
