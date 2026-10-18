@@ -10987,6 +10987,7 @@ public import FLT.Mazur.SchemeAffineTripleRefinementFamily
 public import FLT.Mazur.SchemeAffinizationUniversal
 public import FLT.Mazur.SchemeBadAffineCover
 public import FLT.Mazur.SchemeBadAffineCoverDenominators
+public import FLT.Mazur.SchemeBadAffineCoverEquations
 public import FLT.Mazur.SchemeBadAffineCoverFiniteType
 public import FLT.Mazur.SchemeBadAffineCoverLocalIntegral
 public import FLT.Mazur.SchemeBaseChangeLimit
