@@ -3974,6 +3974,7 @@ public import FLT.Mazur.CyclicCharacteristicNormalizedGenerator
 public import FLT.Mazur.CyclicCharacteristicNormalizedModuli
 public import FLT.Mazur.CyclicCharacteristicNormalizedSubgroup
 public import FLT.Mazur.CyclicCharacteristicOddNormalizedGenerator
+public import FLT.Mazur.CyclicCharacteristicPrescribedNeighborhood
 public import FLT.Mazur.CyclicDivisorSubgroupCriterion
 public import FLT.Mazur.CyclicHomAffinePresentationInvariant
 public import FLT.Mazur.CyclicHomAuxiliaryScheme
