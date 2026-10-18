@@ -7313,6 +7313,7 @@ public import FLT.Mazur.OddWeierstrassCyclicHomSliceRelabelAction
 public import FLT.Mazur.OddWeierstrassCyclicHomSliceRelabelNormalization
 public import FLT.Mazur.OddWeierstrassCyclicHomSliceRetraction
 public import FLT.Mazur.OddWeierstrassCyclicHomSourceDivisor
+public import FLT.Mazur.OddWeierstrassCyclicHomSourceGroupComparison
 public import FLT.Mazur.OddWeierstrassCyclicHomSourceIdealPullback
 public import FLT.Mazur.OddWeierstrassCyclicHomSourceModuli
 public import FLT.Mazur.OddWeierstrassCyclicHomSourcePullback
