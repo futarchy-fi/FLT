@@ -7551,6 +7551,7 @@ public import FLT.Mazur.OneGonCompleteGeneralizedCurve
 public import FLT.Mazur.OneGonCompleteGeometricRotations
 public import FLT.Mazur.OneGonCompleteKernelPowers
 public import FLT.Mazur.OneGonCompleteLabelLifts
+public import FLT.Mazur.OneGonCompleteSubgroupBaseChange
 public import FLT.Mazur.OneGonCompleteUniversalCyclicFamily
 public import FLT.Mazur.OneGonCubicElimination
 public import FLT.Mazur.OneGonCyclicParameterSections
