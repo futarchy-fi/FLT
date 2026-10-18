@@ -7551,12 +7551,16 @@ public import FLT.Mazur.OneGonAffineCover
 public import FLT.Mazur.OneGonAffineNormalization
 public import FLT.Mazur.OneGonAffineNormalizationCoordinates
 public import FLT.Mazur.OneGonClosedCyclicParameter
+public import FLT.Mazur.OneGonClosedGroupInclusion
 public import FLT.Mazur.OneGonCocone
 public import FLT.Mazur.OneGonCoefficientTransport
 public import FLT.Mazur.OneGonCompleteAmpleCyclicSubgroup
 public import FLT.Mazur.OneGonCompleteBoundaryCartesian
 public import FLT.Mazur.OneGonCompleteBoundaryMarking
 public import FLT.Mazur.OneGonCompleteBoundarySubgroup
+public import FLT.Mazur.OneGonCompleteBoundaryTestMarking
+public import FLT.Mazur.OneGonCompleteBoundaryTestSubgroup
+public import FLT.Mazur.OneGonCompleteClosedCurveIso
 public import FLT.Mazur.OneGonCompleteClosedSubgroupIso
 public import FLT.Mazur.OneGonCompleteCyclicBoundaryParameters
 public import FLT.Mazur.OneGonCompleteCyclicCorrection
@@ -7568,6 +7572,8 @@ public import FLT.Mazur.OneGonCompleteGeometricRotations
 public import FLT.Mazur.OneGonCompleteKernelPowers
 public import FLT.Mazur.OneGonCompleteLabelLifts
 public import FLT.Mazur.OneGonCompleteParameterSubgroup
+public import FLT.Mazur.OneGonCompletePinchedMarking
+public import FLT.Mazur.OneGonCompletePinchedSubgroup
 public import FLT.Mazur.OneGonCompleteSubgroupBaseChange
 public import FLT.Mazur.OneGonCompleteUniversalCyclicFamily
 public import FLT.Mazur.OneGonCubicElimination
@@ -7586,6 +7592,8 @@ public import FLT.Mazur.OneGonIntegral
 public import FLT.Mazur.OneGonLocalDescent
 public import FLT.Mazur.OneGonLocalizedEqualizer
 public import FLT.Mazur.OneGonMobiusConductors
+public import FLT.Mazur.OneGonNodalCoefficientGroupMap
+public import FLT.Mazur.OneGonNodalCoefficientGroupProjection
 public import FLT.Mazur.OneGonNodeNormalizationIdeal
 public import FLT.Mazur.OneGonNormalization
 public import FLT.Mazur.OneGonNormalizationChart
