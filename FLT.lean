@@ -6285,6 +6285,8 @@ public import FLT.Mazur.HilbertRebasedCompleteFrame
 public import FLT.Mazur.HilbertReindexedCoordinateRing
 public import FLT.Mazur.HilbertRepeatedMonomialChart
 public import FLT.Mazur.HilbertSameAmbientChartIso
+public import FLT.Mazur.HilbertSourceBadQuotientLifts
+public import FLT.Mazur.HilbertSourceCoefficientwiseSurjectivity
 public import FLT.Mazur.HilbertSourceCompactRelation
 public import FLT.Mazur.HilbertSourceCompatibleModule
 public import FLT.Mazur.HilbertSourceFiniteLinearOpenLifts
@@ -7765,11 +7767,15 @@ public import FLT.Mazur.OriginalFiniteCoefficientOrbit
 public import FLT.Mazur.OriginalGeometricallyIntegralOpen
 public import FLT.Mazur.OriginalHilbertFiniteType
 public import FLT.Mazur.OriginalInvariantOpenAllEtaleLifts
+public import FLT.Mazur.OriginalPrimeIntegralFiber
+public import FLT.Mazur.OriginalPrimeIntegralGenerators
+public import FLT.Mazur.OriginalPrimeQuotientEquations
 public import FLT.Mazur.OriginalRestrictedHilbertIntersection
 public import FLT.Mazur.OriginalScalarFiniteLinearLifts
 public import FLT.Mazur.OriginalScalarFiniteRelationDescent
 public import FLT.Mazur.OriginalScalarFiniteRelationNumerators
 public import FLT.Mazur.OriginalScalarGeneratedLocalizedLifts
+public import FLT.Mazur.OriginalScalarLocalizedSurjectivity
 public import FLT.Mazur.OriginalScalarRelationLiftIdeal
 public import FLT.Mazur.OriginalScalarRelationModule
 public import FLT.Mazur.OriginalSchemeDetectingOpen
@@ -10796,7 +10802,9 @@ public import FLT.Mazur.SchemeAffineAmbientTestNaturality
 public import FLT.Mazur.SchemeAffineAmbientTestRefinement
 public import FLT.Mazur.SchemeAffineBadComplement
 public import FLT.Mazur.SchemeAffineBadComplementCoordinates
+public import FLT.Mazur.SchemeAffineBadComplementEquations
 public import FLT.Mazur.SchemeAffineBadComplementIntegral
+public import FLT.Mazur.SchemeAffineBadComplementLocalIntegral
 public import FLT.Mazur.SchemeAffineBaseCoverRecovery
 public import FLT.Mazur.SchemeAffineBaseRecovery
 public import FLT.Mazur.SchemeAffineBaseRecoveryCharts
