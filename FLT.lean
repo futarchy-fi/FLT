@@ -4894,6 +4894,7 @@ public import FLT.Mazur.EquivalenceRelationSubframeEqualSizeCompatibility
 public import FLT.Mazur.EquivalenceRelationSubframeEtale
 public import FLT.Mazur.EquivalenceRelationSubframeExchangeCriterion
 public import FLT.Mazur.EquivalenceRelationSubframeExchangeMap
+public import FLT.Mazur.EquivalenceRelationSubframeFaithfulLifts
 public import FLT.Mazur.EquivalenceRelationSubframeFullDomain
 public import FLT.Mazur.EquivalenceRelationSubframeGraphCorrections
 public import FLT.Mazur.EquivalenceRelationSubframeGraphs
@@ -4909,6 +4910,8 @@ public import FLT.Mazur.EquivalenceRelationSubframeNormalizedTransfer
 public import FLT.Mazur.EquivalenceRelationSubframeNormalizedTransitions
 public import FLT.Mazur.EquivalenceRelationSubframeOpenCharts
 public import FLT.Mazur.EquivalenceRelationSubframeRefinement
+public import FLT.Mazur.EquivalenceRelationSubframeRelationLifts
+public import FLT.Mazur.EquivalenceRelationSubframeRelationMixed
 public import FLT.Mazur.EquivalenceRelationSubframeScalars
 public import FLT.Mazur.EquivalenceRelationSubframeSelectedPoints
 public import FLT.Mazur.EquivalenceRelationSubframeSingleExchange
@@ -6296,6 +6299,8 @@ public import FLT.Mazur.HilbertSubframeOpenImagePrimeCorrections
 public import FLT.Mazur.HilbertSubframeOriginalLocalization
 public import FLT.Mazur.HilbertSubframeOriginalScalars
 public import FLT.Mazur.HilbertSubframePrincipalExchangeExtension
+public import FLT.Mazur.HilbertSubframeRelationImageLifts
+public import FLT.Mazur.HilbertSubframeRelationMixedCorrections
 public import FLT.Mazur.HilbertSubframeScalarLinearMaps
 public import FLT.Mazur.HilbertSubframeScalarObstruction
 public import FLT.Mazur.HilbertSubframeStrictUnitCover
@@ -9580,6 +9585,13 @@ public import FLT.Mazur.PolygonUniversalEdgeAlgebra
 public import FLT.Mazur.PolygonUniversalEdgeGroupLaw
 public import FLT.Mazur.PolygonUniversalNodeRestriction
 public import FLT.Mazur.PolygonUniversalScaling
+public import FLT.Mazur.PolygonVariableSmoothingAtlas
+public import FLT.Mazur.PolygonVariableSmoothingChartIdentification
+public import FLT.Mazur.PolygonVariableSmoothingDiagram
+public import FLT.Mazur.PolygonVariableSmoothingEdgeIntersection
+public import FLT.Mazur.PolygonVariableSmoothingFamily
+public import FLT.Mazur.PolygonVariableSmoothingIntersections
+public import FLT.Mazur.PolygonVariableSmoothingRestriction
 public import FLT.Mazur.PolygonVeroneseAdicProjSquare
 public import FLT.Mazur.PolygonVeroneseAdicReduction
 public import FLT.Mazur.PolygonVeroneseBoundedGenerators
@@ -11218,7 +11230,10 @@ public import FLT.Mazur.SchemeRelationTensorCoordinates
 public import FLT.Mazur.SchemeRelationTensorCounit
 public import FLT.Mazur.SchemeRelativeNilpotentKernel
 public import FLT.Mazur.SchemeRelativeNilpotentSections
+public import FLT.Mazur.SchemeScalarAvoidanceCover
 public import FLT.Mazur.SchemeScalarAvoidanceIdeal
+public import FLT.Mazur.SchemeScalarIntegralBadCover
+public import FLT.Mazur.SchemeScalarIntegralCover
 public import FLT.Mazur.SchemeScalarPrincipalNeighborhood
 public import FLT.Mazur.SchemeScalarPrincipalNeighborhoodFamily
 public import FLT.Mazur.SchemeSectionFamilyProduct
@@ -13756,6 +13771,15 @@ public import FLT.Mazur.WeierstrassDividedRetainedPolygonNaturality
 public import FLT.Mazur.WeierstrassDividedRetainedPuncturePreimage
 public import FLT.Mazur.WeierstrassDividedRetainedZeroExteriorLine
 public import FLT.Mazur.WeierstrassDividedRetentionSuccessor
+public import FLT.Mazur.WeierstrassDividedRevisedClosingAtlasIdentification
+public import FLT.Mazur.WeierstrassDividedRevisedClosingIntersection
+public import FLT.Mazur.WeierstrassDividedRevisedClosingMap
+public import FLT.Mazur.WeierstrassDividedRevisedClosingOriginal
+public import FLT.Mazur.WeierstrassDividedRevisedClosingUnion
+public import FLT.Mazur.WeierstrassDividedRevisedPolygon
+public import FLT.Mazur.WeierstrassDividedRevisedPolygonEdges
+public import FLT.Mazur.WeierstrassDividedRevisedPolygonParameters
+public import FLT.Mazur.WeierstrassDividedRevisedPolygonRestriction
 public import FLT.Mazur.WeierstrassDividedSecondAtlasNodeRestriction
 public import FLT.Mazur.WeierstrassDividedSecondJointAtlas
 public import FLT.Mazur.WeierstrassDividedSecondJointAtlasClosing
