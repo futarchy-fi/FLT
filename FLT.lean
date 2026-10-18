@@ -11340,6 +11340,7 @@ public import FLT.Mazur.SchemeWholeFiberCoefficients
 public import FLT.Mazur.SchemeWholeFiberGenericOpen
 public import FLT.Mazur.SchemeWholeFiberOpen
 public import FLT.Mazur.SchemeWholeFiberOpenBaseChange
+public import FLT.Mazur.SchemeWholeFiberOpenComposition
 public import FLT.Mazur.SealedLineRestriction
 public import FLT.Mazur.SealedLineRestrictionSections
 public import FLT.Mazur.SectionBaseLocalization
