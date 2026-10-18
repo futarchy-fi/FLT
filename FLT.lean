@@ -13373,6 +13373,7 @@ public import FLT.Mazur.WeierstrassDividedOlderZeroExtendedOrigins
 public import FLT.Mazur.WeierstrassDividedOlderZeroExtendedSections
 public import FLT.Mazur.WeierstrassDividedOlderZeroIndexedNodeCover
 public import FLT.Mazur.WeierstrassDividedOlderZeroNodeBranches
+public import FLT.Mazur.WeierstrassDividedOneFiniteGeometry
 public import FLT.Mazur.WeierstrassDividedOneFiniteNodes
 public import FLT.Mazur.WeierstrassDividedOneFiniteState
 public import FLT.Mazur.WeierstrassDividedOneSeedOrientation
