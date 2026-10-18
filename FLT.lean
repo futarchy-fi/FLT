@@ -7703,6 +7703,7 @@ public import FLT.Mazur.PointedCubicHomAuxiliaryParameter
 public import FLT.Mazur.PointedCubicHomLocusFactorization
 public import FLT.Mazur.PointedCubicHomMultiplicationVanishing
 public import FLT.Mazur.PointedCubicHomNormalizedOriginalGenerator
+public import FLT.Mazur.PointedCubicHomOriginalAuxiliary
 public import FLT.Mazur.PointedCubicHomRetainedOrbit
 public import FLT.Mazur.PointedCubicHomRetainedSubgroup
 public import FLT.Mazur.PointedCubicHomSourceGroup
