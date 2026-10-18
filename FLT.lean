@@ -11019,6 +11019,7 @@ public import FLT.Mazur.SchemeBadAffineCoverDenominators
 public import FLT.Mazur.SchemeBadAffineCoverEquations
 public import FLT.Mazur.SchemeBadAffineCoverFiniteType
 public import FLT.Mazur.SchemeBadAffineCoverGeometricBoundaryTests
+public import FLT.Mazur.SchemeBadAffineCoverIntegralLocus
 public import FLT.Mazur.SchemeBadAffineCoverLocalIntegral
 public import FLT.Mazur.SchemeBadAffineCoverReduced
 public import FLT.Mazur.SchemeBadAffineCoverValuation
