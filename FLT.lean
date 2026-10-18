@@ -6282,6 +6282,7 @@ public import FLT.Mazur.HilbertSubframeBezoutNeighborhood
 public import FLT.Mazur.HilbertSubframeBoundaryExchangeMap
 public import FLT.Mazur.HilbertSubframeBoundaryLifts
 public import FLT.Mazur.HilbertSubframeConstructedUnitLift
+public import FLT.Mazur.HilbertSubframeCoverBoundary
 public import FLT.Mazur.HilbertSubframeEqualSizeLift
 public import FLT.Mazur.HilbertSubframeExchangeKernel
 public import FLT.Mazur.HilbertSubframeExchangeLifts
