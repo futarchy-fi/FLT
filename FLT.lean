@@ -4769,6 +4769,7 @@ public import FLT.Mazur.EquivalenceRelationBoundaryLabelRefinement
 public import FLT.Mazur.EquivalenceRelationBoundaryOpenCoefficients
 public import FLT.Mazur.EquivalenceRelationBoundarySubframe
 public import FLT.Mazur.EquivalenceRelationBoundarySubframeCoefficients
+public import FLT.Mazur.EquivalenceRelationBoundarySubframeCover
 public import FLT.Mazur.EquivalenceRelationBoundarySubframeGeometry
 public import FLT.Mazur.EquivalenceRelationBoundarySubframeKernel
 public import FLT.Mazur.EquivalenceRelationBoundarySubframeRefinement
@@ -4798,6 +4799,7 @@ public import FLT.Mazur.EquivalenceRelationCompleteSourceComparison
 public import FLT.Mazur.EquivalenceRelationCompleteSourceRestriction
 public import FLT.Mazur.EquivalenceRelationCompleteStageCoefficients
 public import FLT.Mazur.EquivalenceRelationCompleteSubframe
+public import FLT.Mazur.EquivalenceRelationCompleteSubframeCompatibility
 public import FLT.Mazur.EquivalenceRelationCompleteTestCoefficients
 public import FLT.Mazur.EquivalenceRelationCompleteTestFinite
 public import FLT.Mazur.EquivalenceRelationCompleteTestPartition
@@ -4889,13 +4891,18 @@ public import FLT.Mazur.EquivalenceRelationSubframeComparison
 public import FLT.Mazur.EquivalenceRelationSubframeDiscrepancy
 public import FLT.Mazur.EquivalenceRelationSubframeEqualSize
 public import FLT.Mazur.EquivalenceRelationSubframeEqualSizeCompatibility
+public import FLT.Mazur.EquivalenceRelationSubframeEtale
 public import FLT.Mazur.EquivalenceRelationSubframeExchangeCriterion
 public import FLT.Mazur.EquivalenceRelationSubframeExchangeMap
 public import FLT.Mazur.EquivalenceRelationSubframeFullDomain
 public import FLT.Mazur.EquivalenceRelationSubframeGraphCorrections
 public import FLT.Mazur.EquivalenceRelationSubframeGraphs
+public import FLT.Mazur.EquivalenceRelationSubframeImage
+public import FLT.Mazur.EquivalenceRelationSubframeImageCover
+public import FLT.Mazur.EquivalenceRelationSubframeImageDescent
 public import FLT.Mazur.EquivalenceRelationSubframeImagePullback
 public import FLT.Mazur.EquivalenceRelationSubframeInvariantCriterion
+public import FLT.Mazur.EquivalenceRelationSubframeKernelPair
 public import FLT.Mazur.EquivalenceRelationSubframeNormalizedCorrection
 public import FLT.Mazur.EquivalenceRelationSubframeNormalizedRestriction
 public import FLT.Mazur.EquivalenceRelationSubframeNormalizedTransfer
@@ -6275,7 +6282,10 @@ public import FLT.Mazur.HilbertSubframeBezoutLift
 public import FLT.Mazur.HilbertSubframeBezoutNeighborhood
 public import FLT.Mazur.HilbertSubframeBoundaryExchangeMap
 public import FLT.Mazur.HilbertSubframeBoundaryLifts
+public import FLT.Mazur.HilbertSubframeCompleteImageLifts
+public import FLT.Mazur.HilbertSubframeCompleteMixedCorrections
 public import FLT.Mazur.HilbertSubframeConstructedUnitLift
+public import FLT.Mazur.HilbertSubframeCoverBoundary
 public import FLT.Mazur.HilbertSubframeEqualSizeLift
 public import FLT.Mazur.HilbertSubframeExchangeKernel
 public import FLT.Mazur.HilbertSubframeExchangeLifts
