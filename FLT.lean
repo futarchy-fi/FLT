@@ -3991,14 +3991,19 @@ public import FLT.Mazur.CyclicCharacteristicAtlasCoverage
 public import FLT.Mazur.CyclicCharacteristicAtlasCoverageUnrestricted
 public import FLT.Mazur.CyclicCharacteristicAtlasModuli
 public import FLT.Mazur.CyclicCharacteristicAtlasRelabel
+public import FLT.Mazur.CyclicCharacteristicAuxiliaryFaithfulness
 public import FLT.Mazur.CyclicCharacteristicAuxiliaryPrescribedCover
 public import FLT.Mazur.CyclicCharacteristicAuxiliaryPrescribedNeighborhood
+public import FLT.Mazur.CyclicCharacteristicCoefficientFiniteType
 public import FLT.Mazur.CyclicCharacteristicEvenNormalizedAuxiliary
 public import FLT.Mazur.CyclicCharacteristicEvenNormalizedGenerator
 public import FLT.Mazur.CyclicCharacteristicEvenParameterSource
 public import FLT.Mazur.CyclicCharacteristicEvenRelabelSections
 public import FLT.Mazur.CyclicCharacteristicEvenRelabeledAuxiliary
 public import FLT.Mazur.CyclicCharacteristicEvenRelabeledGenerator
+public import FLT.Mazur.CyclicCharacteristicFaithfulFullCover
+public import FLT.Mazur.CyclicCharacteristicFaithfulPrescribedCover
+public import FLT.Mazur.CyclicCharacteristicFaithfulRelabeledCover
 public import FLT.Mazur.CyclicCharacteristicMarkedRelation
 public import FLT.Mazur.CyclicCharacteristicMarkedRelationAction
 public import FLT.Mazur.CyclicCharacteristicNormalizedAtlas
@@ -4017,6 +4022,9 @@ public import FLT.Mazur.CyclicCharacteristicPrescribedNeighborhood
 public import FLT.Mazur.CyclicCharacteristicRelabelSections
 public import FLT.Mazur.CyclicCharacteristicRelabeledPrescribedCover
 public import FLT.Mazur.CyclicCharacteristicRelabeledPrescribedSections
+public import FLT.Mazur.CyclicCharacteristicRetainedFaithfulness
+public import FLT.Mazur.CyclicCharacteristicRetainedFullParameter
+public import FLT.Mazur.CyclicCharacteristicRetainedParameter
 public import FLT.Mazur.CyclicDivisorSubgroupCriterion
 public import FLT.Mazur.CyclicHomAffinePresentationInvariant
 public import FLT.Mazur.CyclicHomAuxiliaryScheme
@@ -6318,6 +6326,7 @@ public import FLT.Mazur.HilbertSourceGeneratedLocalizedSurjectivity
 public import FLT.Mazur.HilbertSourceLocalizedOpenLift
 public import FLT.Mazur.HilbertSourceNonstableOpenLifts
 public import FLT.Mazur.HilbertSourceOpenRelationLifts
+public import FLT.Mazur.HilbertSourceOriginalDomainComponents
 public import FLT.Mazur.HilbertSourceOriginalEquationNeighborhoods
 public import FLT.Mazur.HilbertSourceValuativeBoundaryObstructions
 public import FLT.Mazur.HilbertStableFrameBoundary
@@ -7823,10 +7832,15 @@ public import FLT.Mazur.OriginalFiniteCoefficientOrbit
 public import FLT.Mazur.OriginalGeometricallyIntegralOpen
 public import FLT.Mazur.OriginalHilbertFiniteType
 public import FLT.Mazur.OriginalInvariantOpenAllEtaleLifts
+public import FLT.Mazur.OriginalPrimeDomainValuationObstruction
+public import FLT.Mazur.OriginalPrimeIntegralComponents
 public import FLT.Mazur.OriginalPrimeIntegralEquations
 public import FLT.Mazur.OriginalPrimeIntegralFiber
 public import FLT.Mazur.OriginalPrimeIntegralGenerators
 public import FLT.Mazur.OriginalPrimeIntegralLocus
+public import FLT.Mazur.OriginalPrimeIntegralMinimalPrimes
+public import FLT.Mazur.OriginalPrimeIntegralNilpotents
+public import FLT.Mazur.OriginalPrimeIntegralValuationTests
 public import FLT.Mazur.OriginalPrimeQuotientEquations
 public import FLT.Mazur.OriginalRestrictedHilbertIntersection
 public import FLT.Mazur.OriginalScalarFiniteLinearLifts
@@ -10398,6 +10412,7 @@ public import FLT.Mazur.PullbackOverlapBaseChange
 public import FLT.Mazur.PullbackRotationCocycle
 public import FLT.Mazur.PullbackRotationCoordinates
 public import FLT.Mazur.PullbackRotationTransport
+public import FLT.Mazur.PulledSectionDistinctness
 public import FLT.Mazur.PuncturedNodeRestrictionComparison
 public import FLT.Mazur.PushforwardCech
 public import FLT.Mazur.PushoutModuleScalars
@@ -11024,6 +11039,7 @@ public import FLT.Mazur.SchemeBadAffineCoverBoundaryBaseChange
 public import FLT.Mazur.SchemeBadAffineCoverBoundaryObstruction
 public import FLT.Mazur.SchemeBadAffineCoverBoundaryUnits
 public import FLT.Mazur.SchemeBadAffineCoverBoundaryWitness
+public import FLT.Mazur.SchemeBadAffineCoverComponents
 public import FLT.Mazur.SchemeBadAffineCoverDenominators
 public import FLT.Mazur.SchemeBadAffineCoverEquations
 public import FLT.Mazur.SchemeBadAffineCoverFiniteType
@@ -12097,6 +12113,7 @@ public import FLT.Mazur.ValuationProjectiveNormalization
 public import FLT.Mazur.ValuationRingCompleteModel
 public import FLT.Mazur.ValuationRingHenselianModel
 public import FLT.Mazur.ValuationRingModel
+public import FLT.Mazur.ValuationSubringIntegralTests
 public import FLT.Mazur.ValuativeEnvelopeInterior
 public import FLT.Mazur.ValuativeHilbertParameterCriterion
 public import FLT.Mazur.ValuativePullbackSquare
