@@ -6108,6 +6108,12 @@ public import FLT.Mazur.HilbertOrbitRelativeScalarImage
 public import FLT.Mazur.HilbertOrbitRelativeScalarResidue
 public import FLT.Mazur.HilbertOrbitRelativeScalarVanishing
 public import FLT.Mazur.HilbertOrbitRelativeSourceGenerators
+public import FLT.Mazur.HilbertOrbitResidualBoundaryProjection
+public import FLT.Mazur.HilbertOrbitResidualBoundarySplitting
+public import FLT.Mazur.HilbertOrbitResidualCorrectionAssembly
+public import FLT.Mazur.HilbertOrbitResidualCorrectionCoordinates
+public import FLT.Mazur.HilbertOrbitResidualCorrectionQuotient
+public import FLT.Mazur.HilbertOrbitResidualEmbeddingEquations
 public import FLT.Mazur.HilbertOrderedAffineEnvelope
 public import FLT.Mazur.HilbertOrderedOriginalBoundary
 public import FLT.Mazur.HilbertOrderedStableNeighborhood
@@ -11312,6 +11318,7 @@ public import FLT.Mazur.SplitPairLocalDescent
 public import FLT.Mazur.SplitPairPushout
 public import FLT.Mazur.SplitSheafLinePullback
 public import FLT.Mazur.SplitSheafLinePullbackComposition
+public import FLT.Mazur.SplitSubmoduleInternalReduction
 public import FLT.Mazur.SplitSubmoduleReduction
 public import FLT.Mazur.SquareZeroPairAdjoin
 public import FLT.Mazur.SquareZeroParameterLayer
