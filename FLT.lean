@@ -13825,6 +13825,7 @@ public import FLT.Mazur.WeierstrassDividedZeroFifthAnnihilation
 public import FLT.Mazur.WeierstrassDividedZeroFifthAtlas
 public import FLT.Mazur.WeierstrassDividedZeroFifthAtlasClosing
 public import FLT.Mazur.WeierstrassDividedZeroFifthAtlasInitial
+public import FLT.Mazur.WeierstrassDividedZeroFifthAtlasRestriction
 public import FLT.Mazur.WeierstrassDividedZeroFifthAtlasSystem
 public import FLT.Mazur.WeierstrassDividedZeroFifthCancellation
 public import FLT.Mazur.WeierstrassDividedZeroFifthFields
