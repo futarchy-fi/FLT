@@ -6697,6 +6697,7 @@ public import FLT.Mazur.KernelPairGenericOrbitSeed
 public import FLT.Mazur.KernelPairSourceBranchCriterion
 public import FLT.Mazur.KernelPairTestIso
 public import FLT.Mazur.KernelPairUnramifiedInverse
+public import FLT.Mazur.KernelPowerMarkingLift
 public import FLT.Mazur.KernelPowerTorsionLifting
 public import FLT.Mazur.LargeDegreeRelativeLineSections
 public import FLT.Mazur.LaurentBoundaryCorrectionNaturality
