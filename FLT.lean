@@ -9257,6 +9257,7 @@ public import FLT.Mazur.PolygonSmoothingNodeDenominatorCoverage
 public import FLT.Mazur.PolygonSmoothingNodeScaling
 public import FLT.Mazur.PolygonSmoothingOverlapGraph
 public import FLT.Mazur.PolygonSmoothingParameterEquiv
+public import FLT.Mazur.PolygonSmoothingParameterRestriction
 public import FLT.Mazur.PolygonSmoothingPolynomialShearReduction
 public import FLT.Mazur.PolygonSmoothingPunctureBaseChange
 public import FLT.Mazur.PolygonSmoothingPunctureCalculus
