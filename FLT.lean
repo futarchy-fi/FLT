@@ -6294,6 +6294,7 @@ public import FLT.Mazur.HilbertSubframeLocalizedEmbeddingLifts
 public import FLT.Mazur.HilbertSubframeNormalizedTransfer
 public import FLT.Mazur.HilbertSubframeOriginalLocalization
 public import FLT.Mazur.HilbertSubframeOriginalScalars
+public import FLT.Mazur.HilbertSubframePrincipalExchangeExtension
 public import FLT.Mazur.HilbertSubframeScalarLinearMaps
 public import FLT.Mazur.HilbertSubframeScalarObstruction
 public import FLT.Mazur.HilbertSubframeStrictUnitCover
@@ -11018,6 +11019,10 @@ public import FLT.Mazur.SchemeIndependentNormalizationSquare
 public import FLT.Mazur.SchemeIndependentPairNormalization
 public import FLT.Mazur.SchemeIndependentRecoveryNormalization
 public import FLT.Mazur.SchemeIndependentTripleCocycle
+public import FLT.Mazur.SchemeInvariantOpenPrincipalExtension
+public import FLT.Mazur.SchemeInvariantPrincipalBoundaryNumerator
+public import FLT.Mazur.SchemeInvariantPrincipalNumerator
+public import FLT.Mazur.SchemeInvariantPrincipalRelationLifts
 public import FLT.Mazur.SchemeKernelFlatSourceImage
 public import FLT.Mazur.SchemeKernelInvariantOpenLift
 public import FLT.Mazur.SchemeKernelPairSectionSheaf
@@ -11074,6 +11079,7 @@ public import FLT.Mazur.SchemePicardClasses
 public import FLT.Mazur.SchemePicardGroup
 public import FLT.Mazur.SchemePicardPullback
 public import FLT.Mazur.SchemePointedFiberSections
+public import FLT.Mazur.SchemePrincipalPairRestriction
 public import FLT.Mazur.SchemeProperGeometricFiberSections
 public import FLT.Mazur.SchemePullbackCompositeCharts
 public import FLT.Mazur.SchemePullbackCompositeRecognition
