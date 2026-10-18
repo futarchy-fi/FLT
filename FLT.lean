@@ -6838,6 +6838,7 @@ public import FLT.Mazur.LinearCoordinateRatio
 public import FLT.Mazur.LinearMapKernelTransport
 public import FLT.Mazur.LinearRankOneFrameUnit
 public import FLT.Mazur.LocalAcyclicCartierCriterion
+public import FLT.Mazur.LocalBaseFaithfulMarkingLift
 public import FLT.Mazur.LocalBaseSectionDisjointness
 public import FLT.Mazur.LocalBoundedFlatVanishing
 public import FLT.Mazur.LocalCartierGeneratorDescent
