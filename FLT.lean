@@ -9686,6 +9686,7 @@ public import FLT.Mazur.PowerSeriesParameterFlatness
 public import FLT.Mazur.PowerSeriesQuotientCompletion
 public import FLT.Mazur.PowerSeriesResidueBaseObstruction
 public import FLT.Mazur.PowerSeriesSchemePointExt
+public import FLT.Mazur.PowerSeriesSmoothPointLift
 public import FLT.Mazur.PowerSeriesStageReconstruction
 public import FLT.Mazur.PowerSeriesStageRingLift
 public import FLT.Mazur.PowerSeriesSubstitutionEquiv
