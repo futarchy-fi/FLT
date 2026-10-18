@@ -11378,6 +11378,7 @@ public import FLT.Mazur.SchemeSmoothChartTransport
 public import FLT.Mazur.SchemeSmoothLocusCartesian
 public import FLT.Mazur.SchemeSmoothLocusQuotient
 public import FLT.Mazur.SchemeSourceTestOverlapRecognition
+public import FLT.Mazur.SchemeSpecializationValuation
 public import FLT.Mazur.SchemeSplitEtaleSourceSeed
 public import FLT.Mazur.SchemeSplitSeedGroundChart
 public import FLT.Mazur.SchemeSplitSeedGroundComparison
