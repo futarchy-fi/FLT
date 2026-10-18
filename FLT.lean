@@ -5040,6 +5040,7 @@ public import FLT.Mazur.FiniteDivisorLengthAdditivity
 public import FLT.Mazur.FiniteDivisorLengthOne
 public import FLT.Mazur.FiniteDivisorRationalSupport
 public import FLT.Mazur.FiniteEmbeddingExchangeInvariance
+public import FLT.Mazur.FiniteEmbeddingSingleExchange
 public import FLT.Mazur.FiniteEnvelopeDenominatorPrimes
 public import FLT.Mazur.FiniteEnvelopeInteriorEquations
 public import FLT.Mazur.FiniteErrorKernelPairs
