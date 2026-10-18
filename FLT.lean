@@ -13746,6 +13746,7 @@ public import FLT.Mazur.WeierstrassDividedRetentionSuccessor
 public import FLT.Mazur.WeierstrassDividedRevisedPolygon
 public import FLT.Mazur.WeierstrassDividedRevisedPolygonEdges
 public import FLT.Mazur.WeierstrassDividedRevisedPolygonParameters
+public import FLT.Mazur.WeierstrassDividedRevisedPolygonRestriction
 public import FLT.Mazur.WeierstrassDividedSecondAtlasNodeRestriction
 public import FLT.Mazur.WeierstrassDividedSecondJointAtlas
 public import FLT.Mazur.WeierstrassDividedSecondJointAtlasClosing
