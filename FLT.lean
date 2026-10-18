@@ -6292,6 +6292,7 @@ public import FLT.Mazur.HilbertReindexedCoordinateRing
 public import FLT.Mazur.HilbertRepeatedMonomialChart
 public import FLT.Mazur.HilbertSameAmbientChartIso
 public import FLT.Mazur.HilbertSourceActionRelationGraph
+public import FLT.Mazur.HilbertSourceBadAffineChartLifts
 public import FLT.Mazur.HilbertSourceBadQuotientLifts
 public import FLT.Mazur.HilbertSourceCoefficientwiseSurjectivity
 public import FLT.Mazur.HilbertSourceCompactRelation
