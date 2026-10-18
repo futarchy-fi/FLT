@@ -11300,6 +11300,7 @@ public import FLT.Mazur.SchemeRelationTensorAlgebra
 public import FLT.Mazur.SchemeRelationTensorCocycle
 public import FLT.Mazur.SchemeRelationTensorCoordinates
 public import FLT.Mazur.SchemeRelationTensorCounit
+public import FLT.Mazur.SchemeRelationWholeFiberSections
 public import FLT.Mazur.SchemeRelativeNilpotentKernel
 public import FLT.Mazur.SchemeRelativeNilpotentSections
 public import FLT.Mazur.SchemeScalarAvoidanceCover
