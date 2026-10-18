@@ -13374,6 +13374,7 @@ public import FLT.Mazur.WeierstrassDividedOlderZeroExtendedSections
 public import FLT.Mazur.WeierstrassDividedOlderZeroIndexedNodeCover
 public import FLT.Mazur.WeierstrassDividedOlderZeroNodeBranches
 public import FLT.Mazur.WeierstrassDividedOneFiniteAtlas
+public import FLT.Mazur.WeierstrassDividedOneFiniteAtlasIdentification
 public import FLT.Mazur.WeierstrassDividedOneFiniteGeometry
 public import FLT.Mazur.WeierstrassDividedOneFiniteNodes
 public import FLT.Mazur.WeierstrassDividedOneFiniteResiduals
