@@ -3227,6 +3227,7 @@ public import FLT.Mazur.AffineTripleOverlapRefinement
 public import FLT.Mazur.AffineTripleOverlapRefinementSquares
 public import FLT.Mazur.AffineTripleUnitCoefficients
 public import FLT.Mazur.AffineTrivialLineSectionOpen
+public import FLT.Mazur.AffineValuationGeneratorLift
 public import FLT.Mazur.AlgebraEqualizerCoordinates
 public import FLT.Mazur.AlgebraicAcyclicOrbitTranslation
 public import FLT.Mazur.AlgebraicClosureEmbeddingConjugacy
@@ -5167,6 +5168,7 @@ public import FLT.Mazur.FiniteFreeTranslationNormFiber
 public import FLT.Mazur.FiniteFreeTranslationNormNaturality
 public import FLT.Mazur.FiniteFreeTranslationNormNeighborhood
 public import FLT.Mazur.FiniteFreeTranslationRefinement
+public import FLT.Mazur.FiniteGeneratorRingLift
 public import FLT.Mazur.FiniteGeometricEtaleTranslations
 public import FLT.Mazur.FiniteGeometricGenericPrincipalInteriors
 public import FLT.Mazur.FiniteGeometricSections
@@ -6315,6 +6317,7 @@ public import FLT.Mazur.HilbertSourceGeneratedLocalizedSurjectivity
 public import FLT.Mazur.HilbertSourceLocalizedOpenLift
 public import FLT.Mazur.HilbertSourceNonstableOpenLifts
 public import FLT.Mazur.HilbertSourceOpenRelationLifts
+public import FLT.Mazur.HilbertSourceValuativeBoundaryObstructions
 public import FLT.Mazur.HilbertStableFrameBoundary
 public import FLT.Mazur.HilbertSubframeAffineOverlap
 public import FLT.Mazur.HilbertSubframeAffineTargets
@@ -11023,6 +11026,7 @@ public import FLT.Mazur.SchemeBadAffineCoverFiniteType
 public import FLT.Mazur.SchemeBadAffineCoverGeometricBoundaryTests
 public import FLT.Mazur.SchemeBadAffineCoverLocalIntegral
 public import FLT.Mazur.SchemeBadAffineCoverReduced
+public import FLT.Mazur.SchemeBadAffineCoverValuation
 public import FLT.Mazur.SchemeBaseChangeLimit
 public import FLT.Mazur.SchemeCanonicalChartRecognition
 public import FLT.Mazur.SchemeCanonicalDescentData
@@ -11386,6 +11390,7 @@ public import FLT.Mazur.SchemeSmoothChartTransport
 public import FLT.Mazur.SchemeSmoothLocusCartesian
 public import FLT.Mazur.SchemeSmoothLocusQuotient
 public import FLT.Mazur.SchemeSourceTestOverlapRecognition
+public import FLT.Mazur.SchemeSpecializationValuation
 public import FLT.Mazur.SchemeSplitEtaleSourceSeed
 public import FLT.Mazur.SchemeSplitSeedGroundChart
 public import FLT.Mazur.SchemeSplitSeedGroundComparison
@@ -11406,6 +11411,7 @@ public import FLT.Mazur.SchemeUnchangedOpenIsoSquare
 public import FLT.Mazur.SchemeUnchangedOpenLift
 public import FLT.Mazur.SchemeUnchangedOpenPullback
 public import FLT.Mazur.SchemeUniformAdicVanishing
+public import FLT.Mazur.SchemeValuationImageClosure
 public import FLT.Mazur.SchemeWholeFiberCoefficients
 public import FLT.Mazur.SchemeWholeFiberGenericOpen
 public import FLT.Mazur.SchemeWholeFiberOpen
@@ -12080,6 +12086,8 @@ public import FLT.Mazur.UnpointedLocalAcyclicEffectiveDescent
 public import FLT.Mazur.UnpointedLocalAcyclicFppfSheaf
 public import FLT.Mazur.UnramifiedSectionImmersion
 public import FLT.Mazur.UnrestrictedSmoothFamilyCartier
+public import FLT.Mazur.ValuationPoleEquations
+public import FLT.Mazur.ValuationPoleReciprocal
 public import FLT.Mazur.ValuationProjectiveNormalization
 public import FLT.Mazur.ValuationRingCompleteModel
 public import FLT.Mazur.ValuationRingHenselianModel
@@ -14272,13 +14280,20 @@ public import FLT.Mazur.WeierstrassDividedZeroDiagonalClosingComparison
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalClosingIntersection
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalClosingUnion
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalFactorRatio
+public import FLT.Mazur.WeierstrassDividedZeroDiagonalFactorRatioBoundary
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalFactorRatioCover
+public import FLT.Mazur.WeierstrassDividedZeroDiagonalFactorRatioCoverage
+public import FLT.Mazur.WeierstrassDividedZeroDiagonalFactorRatioInfinity
+public import FLT.Mazur.WeierstrassDividedZeroDiagonalFactorRatioResidual
+public import FLT.Mazur.WeierstrassDividedZeroDiagonalFactorRatioRestriction
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalInfinityIntersection
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalInitialIntersection
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalNodeRestriction
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalOpenRestriction
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalPolygon
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalPolygonClosing
+public import FLT.Mazur.WeierstrassDividedZeroDiagonalPolygonComparisonRestriction
+public import FLT.Mazur.WeierstrassDividedZeroDiagonalPolygonExterior
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalPolygonIntersection
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalPolygonParameters
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalPolygonUnion
@@ -14441,6 +14456,8 @@ public import FLT.Mazur.WeierstrassDividedZeroInitialAffinePolygon
 public import FLT.Mazur.WeierstrassDividedZeroInitialInfinityParameter
 public import FLT.Mazur.WeierstrassDividedZeroInitialNodeTransport
 public import FLT.Mazur.WeierstrassDividedZeroInitialPolygonBoundary
+public import FLT.Mazur.WeierstrassDividedZeroInitialPunctureTransport
+public import FLT.Mazur.WeierstrassDividedZeroInitialTotalRestriction
 public import FLT.Mazur.WeierstrassDividedZeroInitialTransport
 public import FLT.Mazur.WeierstrassDividedZeroMobiusInitialIntersection
 public import FLT.Mazur.WeierstrassDividedZeroMobiusInitialOverlap
