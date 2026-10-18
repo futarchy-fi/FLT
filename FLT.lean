@@ -12340,6 +12340,7 @@ public import FLT.Mazur.WeierstrassAuxiliaryFieldCover
 public import FLT.Mazur.WeierstrassCartesianOriginComparison
 public import FLT.Mazur.WeierstrassCartesianPullbackGroup
 public import FLT.Mazur.WeierstrassCartesianSmoothPullbackGroup
+public import FLT.Mazur.WeierstrassChangeParameter
 public import FLT.Mazur.WeierstrassChartArithmeticRestriction
 public import FLT.Mazur.WeierstrassChartBaseChange
 public import FLT.Mazur.WeierstrassChartBaseChangeSquare
