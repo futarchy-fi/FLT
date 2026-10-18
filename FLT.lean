@@ -4867,6 +4867,7 @@ public import FLT.Mazur.EquivalenceRelationSubframeInvariantCriterion
 public import FLT.Mazur.EquivalenceRelationSubframeNormalizedCorrection
 public import FLT.Mazur.EquivalenceRelationSubframeNormalizedRestriction
 public import FLT.Mazur.EquivalenceRelationSubframeNormalizedTransfer
+public import FLT.Mazur.EquivalenceRelationSubframeNormalizedTransitions
 public import FLT.Mazur.EquivalenceRelationSubframeOpenCharts
 public import FLT.Mazur.EquivalenceRelationSubframeRefinement
 public import FLT.Mazur.EquivalenceRelationSubframeSelectedPoints
