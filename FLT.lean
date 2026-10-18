@@ -7572,6 +7572,7 @@ public import FLT.Mazur.OneGonSmoothingPuncturedGroupAtlas
 public import FLT.Mazur.OneGonSmoothingPuncturedParameter
 public import FLT.Mazur.OneGonSmoothingPuncturedSchemeMarking
 public import FLT.Mazur.OneGonSmoothingRelativeGroup
+public import FLT.Mazur.OneGonSmoothingRelativeGroupSpecialization
 public import FLT.Mazur.OneGonSmoothingSchemeAuxiliaryMarking
 public import FLT.Mazur.OneGonSmoothingSchemeMarkingNaturality
 public import FLT.Mazur.OneGonSmoothingSchemeNormalizedGroup
