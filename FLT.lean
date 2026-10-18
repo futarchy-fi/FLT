@@ -7865,6 +7865,7 @@ public import FLT.Mazur.PolygonArithmeticSimultaneousIteration
 public import FLT.Mazur.PolygonArithmeticSimultaneousIterationStability
 public import FLT.Mazur.PolygonArithmeticSimultaneousPunctureIteration
 public import FLT.Mazur.PolygonArithmeticSimultaneousPunctureRestriction
+public import FLT.Mazur.PolygonArithmeticSimultaneousPunctureStability
 public import FLT.Mazur.PolygonArithmeticSimultaneousPunctures
 public import FLT.Mazur.PolygonArithmeticSimultaneousRestriction
 public import FLT.Mazur.PolygonArithmeticSimultaneousSplit
