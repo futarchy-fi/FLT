@@ -4020,6 +4020,7 @@ public import FLT.Mazur.CyclicCharacteristicInvariantAffineCover
 public import FLT.Mazur.CyclicCharacteristicInvariantAffineCoverage
 public import FLT.Mazur.CyclicCharacteristicLocusFiniteType
 public import FLT.Mazur.CyclicCharacteristicLocusSeparated
+public import FLT.Mazur.CyclicCharacteristicMarkedQuotient
 public import FLT.Mazur.CyclicCharacteristicMarkedRelation
 public import FLT.Mazur.CyclicCharacteristicMarkedRelationAction
 public import FLT.Mazur.CyclicCharacteristicNormalizedAtlas
