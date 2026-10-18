@@ -13407,6 +13407,7 @@ public import FLT.Mazur.WeierstrassDividedFourthAtlasIncoming
 public import FLT.Mazur.WeierstrassDividedFourthAtlasNodeRestriction
 public import FLT.Mazur.WeierstrassDividedFourthAtlasPreceding
 public import FLT.Mazur.WeierstrassDividedFourthAtlasSystem
+public import FLT.Mazur.WeierstrassDividedFourthClosingFactorBase
 public import FLT.Mazur.WeierstrassDividedFourthEarlierGeometry
 public import FLT.Mazur.WeierstrassDividedFourthEarlierRestriction
 public import FLT.Mazur.WeierstrassDividedFourthFartherAdjacent
@@ -13482,6 +13483,7 @@ public import FLT.Mazur.WeierstrassDividedFourthSmoothingAnnihilation
 public import FLT.Mazur.WeierstrassDividedFourthTerminalGeometry
 public import FLT.Mazur.WeierstrassDividedFourthTerminalTransport
 public import FLT.Mazur.WeierstrassDividedFourthTransitions
+public import FLT.Mazur.WeierstrassDividedFourthZeroClosingBase
 public import FLT.Mazur.WeierstrassDividedFourthZeroFirstField
 public import FLT.Mazur.WeierstrassDividedFourthZeroInitial
 public import FLT.Mazur.WeierstrassDividedFourthZeroLast
@@ -14278,6 +14280,8 @@ public import FLT.Mazur.WeierstrassDividedVariableInitialIntersection
 public import FLT.Mazur.WeierstrassDividedVariableLabelIntersections
 public import FLT.Mazur.WeierstrassDividedVariableRetainedIntersection
 public import FLT.Mazur.WeierstrassDividedZeroBoundaryFunctions
+public import FLT.Mazur.WeierstrassDividedZeroClosingAtlasBase
+public import FLT.Mazur.WeierstrassDividedZeroClosingFactorBase
 public import FLT.Mazur.WeierstrassDividedZeroCycleAtlasAdjacentReduction
 public import FLT.Mazur.WeierstrassDividedZeroCycleAtlasCompatibility
 public import FLT.Mazur.WeierstrassDividedZeroCycleAtlasDisjoint
@@ -14332,6 +14336,8 @@ public import FLT.Mazur.WeierstrassDividedZeroDiagonalAtlas
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalAtlasOverlaps
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalAtlasRestriction
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalAtlasSystem
+public import FLT.Mazur.WeierstrassDividedZeroDiagonalClosingBase
+public import FLT.Mazur.WeierstrassDividedZeroDiagonalClosingBaseSystem
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalClosingComparison
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalClosingIntersection
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalClosingRestriction
