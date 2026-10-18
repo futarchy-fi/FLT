@@ -10786,6 +10786,7 @@ public import FLT.Mazur.SchemeAffineAmbientTestRefinement
 public import FLT.Mazur.SchemeAffineBadComplement
 public import FLT.Mazur.SchemeAffineBadComplementCoordinates
 public import FLT.Mazur.SchemeAffineBadComplementIntegral
+public import FLT.Mazur.SchemeAffineBadComplementLocalIntegral
 public import FLT.Mazur.SchemeAffineBaseCoverRecovery
 public import FLT.Mazur.SchemeAffineBaseRecovery
 public import FLT.Mazur.SchemeAffineBaseRecoveryCharts
