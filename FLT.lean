@@ -8057,6 +8057,7 @@ public import FLT.Mazur.PolygonCompatibleVeronese
 public import FLT.Mazur.PolygonCompatibleZeroCoefficients
 public import FLT.Mazur.PolygonCompleteAdicIdealSeparation
 public import FLT.Mazur.PolygonCompleteAffinePresentation
+public import FLT.Mazur.PolygonCompleteAuxiliaryPrescribedCharacteristicCover
 public import FLT.Mazur.PolygonCompleteBaseMarkings
 public import FLT.Mazur.PolygonCompleteBoundaryAmple
 public import FLT.Mazur.PolygonCompleteBoundaryBranches
