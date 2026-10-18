@@ -5167,6 +5167,7 @@ public import FLT.Mazur.FiniteFreeTranslationNormFiber
 public import FLT.Mazur.FiniteFreeTranslationNormNaturality
 public import FLT.Mazur.FiniteFreeTranslationNormNeighborhood
 public import FLT.Mazur.FiniteFreeTranslationRefinement
+public import FLT.Mazur.FiniteGeneratorRingLift
 public import FLT.Mazur.FiniteGeometricEtaleTranslations
 public import FLT.Mazur.FiniteGeometricGenericPrincipalInteriors
 public import FLT.Mazur.FiniteGeometricSections
