@@ -9571,6 +9571,7 @@ public import FLT.Mazur.PolygonVariableSmoothingAtlas
 public import FLT.Mazur.PolygonVariableSmoothingDiagram
 public import FLT.Mazur.PolygonVariableSmoothingFamily
 public import FLT.Mazur.PolygonVariableSmoothingIntersections
+public import FLT.Mazur.PolygonVariableSmoothingRestriction
 public import FLT.Mazur.PolygonVeroneseAdicProjSquare
 public import FLT.Mazur.PolygonVeroneseAdicReduction
 public import FLT.Mazur.PolygonVeroneseBoundedGenerators
