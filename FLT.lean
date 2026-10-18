@@ -7533,6 +7533,7 @@ public import FLT.Mazur.OddWeierstrassSpecializationGroup
 public import FLT.Mazur.OddWeierstrassThreeTorsionEtale
 public import FLT.Mazur.OddWeierstrassThreeTorsionFinite
 public import FLT.Mazur.OddWeierstrassThreeTorsionUnramified
+public import FLT.Mazur.OneGonActionRotations
 public import FLT.Mazur.OneGonAffineCover
 public import FLT.Mazur.OneGonAffineNormalization
 public import FLT.Mazur.OneGonAffineNormalizationCoordinates
