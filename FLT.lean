@@ -11067,6 +11067,7 @@ public import FLT.Mazur.SchemeOpenEnvelopeDenominators
 public import FLT.Mazur.SchemeOpenEnvelopeInterior
 public import FLT.Mazur.SchemeOpenEnvelopeInteriorTests
 public import FLT.Mazur.SchemeOpenEnvelopeLocus
+public import FLT.Mazur.SchemeOpenPairBaseRestriction
 public import FLT.Mazur.SchemeOpenPairPrincipalRestriction
 public import FLT.Mazur.SchemeOpenPairRelationLifts
 public import FLT.Mazur.SchemeOpenPushoutCharts
