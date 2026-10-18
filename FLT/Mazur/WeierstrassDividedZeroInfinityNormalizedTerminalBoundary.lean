@@ -56,7 +56,7 @@ def arithmeticZeroInfinityNormalizedTerminalSource : O ⟶ pushout (v false) (v 
   coprod.desc (l false ≫ f false) (l true ≫ f true)
 
 /-- Both original closing edges enter the independently constructed full target. -/
-def arithmeticZeroInfinityNormalizedTerminalTarget : O ⟶ 
+def arithmeticZeroInfinityNormalizedTerminalTarget : O ⟶
     arithmeticZeroInfinityNormalizedRetainedPairTarget hπ data H m hj u hu :=
   coprod.desc (l false ≫ g false) (l true ≫ g true)
 
