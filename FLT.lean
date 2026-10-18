@@ -7270,6 +7270,7 @@ public import FLT.Mazur.OddWeierstrassCyclicHomNormalizedRelabelAction
 public import FLT.Mazur.OddWeierstrassCyclicHomNormalizedRelabelModuli
 public import FLT.Mazur.OddWeierstrassCyclicHomNormalizedSlice
 public import FLT.Mazur.OddWeierstrassCyclicHomPointExt
+public import FLT.Mazur.OddWeierstrassCyclicHomPrescribedGeneratorComparison
 public import FLT.Mazur.OddWeierstrassCyclicHomProperPresentationInvariant
 public import FLT.Mazur.OddWeierstrassCyclicHomRelabelAuxiliary
 public import FLT.Mazur.OddWeierstrassCyclicHomRelabelCurve
