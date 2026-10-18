@@ -11143,6 +11143,7 @@ public import FLT.Mazur.SchemeFiniteFiberInterior
 public import FLT.Mazur.SchemeFiniteGeometricOpenSpread
 public import FLT.Mazur.SchemeFiniteGroupAffineDescent
 public import FLT.Mazur.SchemeFiniteGroupBoundaryCompleteness
+public import FLT.Mazur.SchemeFiniteGroupBoundaryComponents
 public import FLT.Mazur.SchemeFiniteGroupClosedScalarFiber
 public import FLT.Mazur.SchemeFiniteGroupDescent
 public import FLT.Mazur.SchemeFiniteGroupFiniteFiberTests
