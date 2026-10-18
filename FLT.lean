@@ -3516,6 +3516,7 @@ public import FLT.Mazur.BaseOpenHilbertOriginalInvariantFunctions
 public import FLT.Mazur.BaseOpenHilbertRelationOpenSections
 public import FLT.Mazur.BaseOpenHilbertRestrictedRelation
 public import FLT.Mazur.BinaryOpenDescent
+public import FLT.Mazur.BinomialBezoutCombination
 public import FLT.Mazur.BivariateCoordinateDifference
 public import FLT.Mazur.BivariateFractionDifference
 public import FLT.Mazur.BlowupFractionActionCover
@@ -4870,6 +4871,9 @@ public import FLT.Mazur.EquivalenceRelationSubframeGraphCorrections
 public import FLT.Mazur.EquivalenceRelationSubframeGraphs
 public import FLT.Mazur.EquivalenceRelationSubframeImagePullback
 public import FLT.Mazur.EquivalenceRelationSubframeInvariantCriterion
+public import FLT.Mazur.EquivalenceRelationSubframeNormalizedCorrection
+public import FLT.Mazur.EquivalenceRelationSubframeNormalizedRestriction
+public import FLT.Mazur.EquivalenceRelationSubframeNormalizedTransfer
 public import FLT.Mazur.EquivalenceRelationSubframeOpenCharts
 public import FLT.Mazur.EquivalenceRelationSubframeRefinement
 public import FLT.Mazur.EquivalenceRelationSubframeSourceComparison
@@ -6234,8 +6238,11 @@ public import FLT.Mazur.HilbertReindexedCoordinateRing
 public import FLT.Mazur.HilbertRepeatedMonomialChart
 public import FLT.Mazur.HilbertSameAmbientChartIso
 public import FLT.Mazur.HilbertStableFrameBoundary
+public import FLT.Mazur.HilbertSubframeBezoutLift
 public import FLT.Mazur.HilbertSubframeBoundaryLifts
+public import FLT.Mazur.HilbertSubframeNormalizedTransfer
 public import FLT.Mazur.HilbertSubframeTransferCorrections
+public import FLT.Mazur.HilbertSubframeUnitNeighborhood
 public import FLT.Mazur.HilbertSubterminalTranslationEnvelope
 public import FLT.Mazur.HilbertSupportOpenLattice
 public import FLT.Mazur.HilbertSupportOpenPullback
@@ -10923,6 +10930,7 @@ public import FLT.Mazur.SchemeModulePullbackOpenUnits
 public import FLT.Mazur.SchemeModulePullbackUnitSections
 public import FLT.Mazur.SchemeModulePullbackUnits
 public import FLT.Mazur.SchemeMonoidUnitEvaluation
+public import FLT.Mazur.SchemeNaturalUnitLocus
 public import FLT.Mazur.SchemeNilpotentSectionDetection
 public import FLT.Mazur.SchemeNormIndependentGroundTests
 public import FLT.Mazur.SchemeNormalizedRecoveryOverlap
@@ -11482,6 +11490,7 @@ public import FLT.Mazur.StructureIdealPowerQuotient
 public import FLT.Mazur.StructureImageOpenChart
 public import FLT.Mazur.StructureModuleScalarTransitions
 public import FLT.Mazur.StructureRingCohomologyIso
+public import FLT.Mazur.SubframeDegreeUnitCover
 public import FLT.Mazur.SubfunctorRepresentedPullback
 public import FLT.Mazur.SubmoduleQuotientScalarReduction
 public import FLT.Mazur.SubmoduleReductionFlat
@@ -11618,6 +11627,7 @@ public import FLT.Mazur.UniformAdicDiscrepancySeparation
 public import FLT.Mazur.UniformizerRootExtension
 public import FLT.Mazur.UnitIntegerModel
 public import FLT.Mazur.UnitLeadingBasisExtension
+public import FLT.Mazur.UnitNaturalDivision
 public import FLT.Mazur.UniversalDivisorAcyclicRankOne
 public import FLT.Mazur.UniversalDivisorCohomologyCharts
 public import FLT.Mazur.UniversalDivisorDirectImageRepresentation
