@@ -13894,6 +13894,7 @@ public import FLT.Mazur.WeierstrassDividedTwistedExteriorComparison
 public import FLT.Mazur.WeierstrassDividedTwoFiniteAtlas
 public import FLT.Mazur.WeierstrassDividedTwoFiniteAtlasClosing
 public import FLT.Mazur.WeierstrassDividedTwoFiniteAtlasIdentification
+public import FLT.Mazur.WeierstrassDividedTwoFiniteAtlasIncoming
 public import FLT.Mazur.WeierstrassDividedTwoFiniteAtlasInitial
 public import FLT.Mazur.WeierstrassDividedTwoFiniteGeometry
 public import FLT.Mazur.WeierstrassDividedTwoFiniteNodes
