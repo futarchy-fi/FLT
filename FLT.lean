@@ -3516,6 +3516,7 @@ public import FLT.Mazur.BaseOpenHilbertOriginalInvariantFunctions
 public import FLT.Mazur.BaseOpenHilbertRelationOpenSections
 public import FLT.Mazur.BaseOpenHilbertRestrictedRelation
 public import FLT.Mazur.BinaryOpenDescent
+public import FLT.Mazur.BinomialBezoutCombination
 public import FLT.Mazur.BivariateCoordinateDifference
 public import FLT.Mazur.BivariateFractionDifference
 public import FLT.Mazur.BlowupFractionActionCover
