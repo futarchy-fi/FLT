@@ -7855,8 +7855,11 @@ public import FLT.Mazur.PolygonArithmeticSectionRings
 public import FLT.Mazur.PolygonArithmeticSimultaneousCancellation
 public import FLT.Mazur.PolygonArithmeticSimultaneousFactors
 public import FLT.Mazur.PolygonArithmeticSimultaneousFinitePunctures
+public import FLT.Mazur.PolygonArithmeticSimultaneousFiniteResiduals
+public import FLT.Mazur.PolygonArithmeticSimultaneousFiniteRestriction
 public import FLT.Mazur.PolygonArithmeticSimultaneousIteration
 public import FLT.Mazur.PolygonArithmeticSimultaneousPunctureIteration
+public import FLT.Mazur.PolygonArithmeticSimultaneousPunctureRestriction
 public import FLT.Mazur.PolygonArithmeticSimultaneousPunctures
 public import FLT.Mazur.PolygonArithmeticSimultaneousRestriction
 public import FLT.Mazur.PolygonArithmeticSimultaneousSplit
@@ -9287,6 +9290,7 @@ public import FLT.Mazur.PolygonSmoothingNodeDenominatorCoverage
 public import FLT.Mazur.PolygonSmoothingNodeScaling
 public import FLT.Mazur.PolygonSmoothingOverlapGraph
 public import FLT.Mazur.PolygonSmoothingParameterEquiv
+public import FLT.Mazur.PolygonSmoothingParameterRestriction
 public import FLT.Mazur.PolygonSmoothingPolynomialShearReduction
 public import FLT.Mazur.PolygonSmoothingPunctureBaseChange
 public import FLT.Mazur.PolygonSmoothingPunctureCalculus
@@ -9295,6 +9299,7 @@ public import FLT.Mazur.PolygonSmoothingPunctureIdentification
 public import FLT.Mazur.PolygonSmoothingPunctureNaturality
 public import FLT.Mazur.PolygonSmoothingPunctureSpecCalculus
 public import FLT.Mazur.PolygonSmoothingPunctureSpecNaturality
+public import FLT.Mazur.PolygonSmoothingPunctureSquare
 public import FLT.Mazur.PolygonSmoothingQuadraticModel
 public import FLT.Mazur.PolygonSmoothingRangeGenerators
 public import FLT.Mazur.PolygonSmoothingReciprocalScaling
@@ -13908,7 +13913,19 @@ public import FLT.Mazur.WeierstrassDividedZeroFifthResidualRestriction
 public import FLT.Mazur.WeierstrassDividedZeroFifthRestriction
 public import FLT.Mazur.WeierstrassDividedZeroFifthSplit
 public import FLT.Mazur.WeierstrassDividedZeroFifthTransitions
+public import FLT.Mazur.WeierstrassDividedZeroFiniteAtlas
+public import FLT.Mazur.WeierstrassDividedZeroFiniteAtlasClosing
+public import FLT.Mazur.WeierstrassDividedZeroFiniteAtlasInitial
+public import FLT.Mazur.WeierstrassDividedZeroFiniteAtlasRestriction
+public import FLT.Mazur.WeierstrassDividedZeroFiniteAtlasSystem
+public import FLT.Mazur.WeierstrassDividedZeroFiniteGeometry
+public import FLT.Mazur.WeierstrassDividedZeroFiniteNodeRestriction
+public import FLT.Mazur.WeierstrassDividedZeroFiniteNodes
+public import FLT.Mazur.WeierstrassDividedZeroFiniteOpenRestriction
+public import FLT.Mazur.WeierstrassDividedZeroFiniteResiduals
+public import FLT.Mazur.WeierstrassDividedZeroFiniteRestriction
 public import FLT.Mazur.WeierstrassDividedZeroFiniteState
+public import FLT.Mazur.WeierstrassDividedZeroFiniteTransitions
 public import FLT.Mazur.WeierstrassDividedZeroFirstAtlas
 public import FLT.Mazur.WeierstrassDividedZeroFirstAtlasClosing
 public import FLT.Mazur.WeierstrassDividedZeroFirstAtlasIdentification
