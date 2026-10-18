@@ -5273,6 +5273,7 @@ public import FLT.Mazur.FiniteGroupFreeBoundaryLift
 public import FLT.Mazur.FiniteGroupFreeFieldTest
 public import FLT.Mazur.FiniteGroupFreeIdealDescent
 public import FLT.Mazur.FiniteGroupFreeOrbitSeparation
+public import FLT.Mazur.FiniteGroupFreeProjective
 public import FLT.Mazur.FiniteGroupFreeTraceIdeal
 public import FLT.Mazur.FiniteGroupInvariantAffineCover
 public import FLT.Mazur.FiniteGroupInvariantOpens
