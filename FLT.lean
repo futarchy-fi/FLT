@@ -3971,6 +3971,7 @@ public import FLT.Mazur.CuspCollision
 public import FLT.Mazur.CuspOrderNumerator
 public import FLT.Mazur.CyclicAuxiliaryPrescribedNormalizedNeighborhood
 public import FLT.Mazur.CyclicBoundaryParameterAction
+public import FLT.Mazur.CyclicBoundaryParameterSections
 public import FLT.Mazur.CyclicCharacteristicAtlas
 public import FLT.Mazur.CyclicCharacteristicAtlasCoverage
 public import FLT.Mazur.CyclicCharacteristicAtlasCoverageUnrestricted
