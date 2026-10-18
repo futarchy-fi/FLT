@@ -11036,6 +11036,7 @@ public import FLT.Mazur.SchemeBadAffineCoverBoundaryWitness
 public import FLT.Mazur.SchemeBadAffineCoverComponents
 public import FLT.Mazur.SchemeBadAffineCoverDenominators
 public import FLT.Mazur.SchemeBadAffineCoverEquations
+public import FLT.Mazur.SchemeBadAffineCoverExactValuations
 public import FLT.Mazur.SchemeBadAffineCoverFiniteType
 public import FLT.Mazur.SchemeBadAffineCoverGeometricBoundaryTests
 public import FLT.Mazur.SchemeBadAffineCoverIntegralLocus
