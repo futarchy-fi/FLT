@@ -13866,6 +13866,7 @@ public import FLT.Mazur.WeierstrassDividedRevisedPolygonParameters
 public import FLT.Mazur.WeierstrassDividedRevisedPolygonRestriction
 public import FLT.Mazur.WeierstrassDividedRevisedRetainedMaps
 public import FLT.Mazur.WeierstrassDividedRevisedRetainedNodeMap
+public import FLT.Mazur.WeierstrassDividedRevisedRetainedReflection
 public import FLT.Mazur.WeierstrassDividedRevisedRetainedTargetIntersection
 public import FLT.Mazur.WeierstrassDividedRevisedTensorMaps
 public import FLT.Mazur.WeierstrassDividedSecondAtlasNodeRestriction
