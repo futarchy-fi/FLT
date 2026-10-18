@@ -8080,6 +8080,7 @@ public import FLT.Mazur.PolygonArithmeticCubicEquationReconstruction
 public import FLT.Mazur.PolygonArithmeticCyclicCancellation
 public import FLT.Mazur.PolygonArithmeticCyclicDiagonal
 public import FLT.Mazur.PolygonArithmeticCyclicFactorPunctures
+public import FLT.Mazur.PolygonArithmeticCyclicFactorRestriction
 public import FLT.Mazur.PolygonArithmeticCyclicFactors
 public import FLT.Mazur.PolygonArithmeticCyclicIteration
 public import FLT.Mazur.PolygonArithmeticCyclicRestriction
