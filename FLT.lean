@@ -7847,6 +7847,7 @@ public import FLT.Mazur.OriginalPrimeIntegralNilpotents
 public import FLT.Mazur.OriginalPrimeIntegralValuationTests
 public import FLT.Mazur.OriginalPrimeQuotientEquations
 public import FLT.Mazur.OriginalRestrictedHilbertIntersection
+public import FLT.Mazur.OriginalScalarFiberFiniteEquations
 public import FLT.Mazur.OriginalScalarFiberRadical
 public import FLT.Mazur.OriginalScalarFiniteLinearLifts
 public import FLT.Mazur.OriginalScalarFiniteRelationDescent
