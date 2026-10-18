@@ -14254,6 +14254,7 @@ public import FLT.Mazur.WeierstrassDividedVariableInitialIntersection
 public import FLT.Mazur.WeierstrassDividedVariableLabelIntersections
 public import FLT.Mazur.WeierstrassDividedVariableRetainedIntersection
 public import FLT.Mazur.WeierstrassDividedZeroBoundaryFunctions
+public import FLT.Mazur.WeierstrassDividedZeroClosingFactorBase
 public import FLT.Mazur.WeierstrassDividedZeroCycleAtlasAdjacentReduction
 public import FLT.Mazur.WeierstrassDividedZeroCycleAtlasCompatibility
 public import FLT.Mazur.WeierstrassDividedZeroCycleAtlasDisjoint
