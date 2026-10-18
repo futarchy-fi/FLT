@@ -4816,6 +4816,7 @@ public import FLT.Mazur.EquivalenceRelationCompleteMixedCoefficients
 public import FLT.Mazur.EquivalenceRelationCompleteOpenCoefficients
 public import FLT.Mazur.EquivalenceRelationCompletePointLocus
 public import FLT.Mazur.EquivalenceRelationCompleteRestrictionNaturality
+public import FLT.Mazur.EquivalenceRelationCompleteScalarFiber
 public import FLT.Mazur.EquivalenceRelationCompleteSourceComparison
 public import FLT.Mazur.EquivalenceRelationCompleteSourceRestriction
 public import FLT.Mazur.EquivalenceRelationCompleteStageCoefficients
