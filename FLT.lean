@@ -4058,6 +4058,7 @@ public import FLT.Mazur.CyclicCharacteristicRetainedParameter
 public import FLT.Mazur.CyclicCharacteristicTransitionCover
 public import FLT.Mazur.CyclicCharacteristicTransitionSpan
 public import FLT.Mazur.CyclicCharacteristicUnmarkedDescent
+public import FLT.Mazur.CyclicCharacteristicUnmarkedLocalRelation
 public import FLT.Mazur.CyclicCharacteristicUnmarkedQuotientPresheaf
 public import FLT.Mazur.CyclicCharacteristicUnmarkedQuotientUniversal
 public import FLT.Mazur.CyclicCharacteristicUnmarkedRelation
