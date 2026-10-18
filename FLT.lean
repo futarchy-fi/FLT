@@ -7746,6 +7746,7 @@ public import FLT.Mazur.OriginalRestrictedHilbertIntersection
 public import FLT.Mazur.OriginalScalarFiniteLinearLifts
 public import FLT.Mazur.OriginalScalarFiniteRelationNumerators
 public import FLT.Mazur.OriginalScalarRelationLiftIdeal
+public import FLT.Mazur.OriginalScalarRelationModule
 public import FLT.Mazur.OriginalSchemeDetectingOpen
 public import FLT.Mazur.OriginalSmoothDetectingEtaleLift
 public import FLT.Mazur.OriginalSmoothFiberAllLifts
