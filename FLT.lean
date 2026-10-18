@@ -4998,6 +4998,7 @@ public import FLT.Mazur.ExactParameterLayer
 public import FLT.Mazur.ExactSourceDenominatorLift
 public import FLT.Mazur.ExtendedAffineRationalDensity
 public import FLT.Mazur.FCurveContracts
+public import FLT.Mazur.FaithfulMarkingPullbackSections
 public import FLT.Mazur.FaithfulNeighborhoodCurve
 public import FLT.Mazur.FaithfulTensorVanishing
 public import FLT.Mazur.FaithfullyFlatFinitePresentation
