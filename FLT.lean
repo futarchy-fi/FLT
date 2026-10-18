@@ -12357,6 +12357,15 @@ public import FLT.Mazur.WeierstrassAuxiliaryFieldCover
 public import FLT.Mazur.WeierstrassCartesianOriginComparison
 public import FLT.Mazur.WeierstrassCartesianPullbackGroup
 public import FLT.Mazur.WeierstrassCartesianSmoothPullbackGroup
+public import FLT.Mazur.WeierstrassChangeComparisonReverse
+public import FLT.Mazur.WeierstrassChangeComparisonScheme
+public import FLT.Mazur.WeierstrassChangeEquationLocus
+public import FLT.Mazur.WeierstrassChangeEquationUniversal
+public import FLT.Mazur.WeierstrassChangeFinitePresentation
+public import FLT.Mazur.WeierstrassChangeFullComparison
+public import FLT.Mazur.WeierstrassChangeGeneralizedComparison
+public import FLT.Mazur.WeierstrassChangeParameter
+public import FLT.Mazur.WeierstrassChangeSubgroupScheme
 public import FLT.Mazur.WeierstrassChartArithmeticRestriction
 public import FLT.Mazur.WeierstrassChartBaseChange
 public import FLT.Mazur.WeierstrassChartBaseChangeSquare
@@ -16186,6 +16195,7 @@ public import FLT.Mazur.WeierstrassVariableChangeAffineRestriction
 public import FLT.Mazur.WeierstrassVariableChangeCoefficient
 public import FLT.Mazur.WeierstrassVariableChangeCoordinateCover
 public import FLT.Mazur.WeierstrassVariableChangeCubicSubstitution
+public import FLT.Mazur.WeierstrassVariableChangeFaithful
 public import FLT.Mazur.WeierstrassVariableChangeFrame
 public import FLT.Mazur.WeierstrassVariableChangeGroup
 public import FLT.Mazur.WeierstrassVariableChangeHomogeneous
