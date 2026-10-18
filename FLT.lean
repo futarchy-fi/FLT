@@ -4801,8 +4801,10 @@ public import FLT.Mazur.EquivalenceRelationMixedFrameComparison
 public import FLT.Mazur.EquivalenceRelationMixedFrameLabelChange
 public import FLT.Mazur.EquivalenceRelationMixedFrameRelation
 public import FLT.Mazur.EquivalenceRelationMixedResidualDecomposition
+public import FLT.Mazur.EquivalenceRelationMixedResidualExtension
 public import FLT.Mazur.EquivalenceRelationMixedResidualOpen
 public import FLT.Mazur.EquivalenceRelationMixedResidualPieces
+public import FLT.Mazur.EquivalenceRelationMixedResidualScalars
 public import FLT.Mazur.EquivalenceRelationMixedSourceEquations
 public import FLT.Mazur.EquivalenceRelationNonfiniteResidual
 public import FLT.Mazur.EquivalenceRelationNormalizedActionComplete
@@ -4830,6 +4832,8 @@ public import FLT.Mazur.EquivalenceRelationResidualAdicIdeal
 public import FLT.Mazur.EquivalenceRelationResidualBranchDecomposition
 public import FLT.Mazur.EquivalenceRelationResidualCoefficientEquations
 public import FLT.Mazur.EquivalenceRelationResidualPermutationOpen
+public import FLT.Mazur.EquivalenceRelationResidualScalarExtension
+public import FLT.Mazur.EquivalenceRelationResidualSectionExtension
 public import FLT.Mazur.EquivalenceRelationRestrictedActionGraphs
 public import FLT.Mazur.EquivalenceRelationSectionRebase
 public import FLT.Mazur.EquivalenceRelationSourceRefinement
@@ -6087,6 +6091,7 @@ public import FLT.Mazur.HilbertOrbitBoundarySectionErrorSpan
 public import FLT.Mazur.HilbertOrbitBoundarySourceErrorCriterion
 public import FLT.Mazur.HilbertOrbitMixedBoundaryKernel
 public import FLT.Mazur.HilbertOrbitMixedBoundaryProjection
+public import FLT.Mazur.HilbertOrbitMixedResidualSplitting
 public import FLT.Mazur.HilbertOrbitRelativeBoundaryFiniteness
 public import FLT.Mazur.HilbertOrbitRelativeFiniteLifts
 public import FLT.Mazur.HilbertOrbitRelativeFiniteTests
@@ -10419,6 +10424,8 @@ public import FLT.Mazur.RelativeTupleSections
 public import FLT.Mazur.RelativeUniversalDistinctLift
 public import FLT.Mazur.RelativeVeryAmpleLineBundle
 public import FLT.Mazur.RepeatedCubicRoots
+public import FLT.Mazur.ResidualProductExtension
+public import FLT.Mazur.ResidualProductLinearExtension
 public import FLT.Mazur.ResidualStrictCoefficientGenerizations
 public import FLT.Mazur.ResidueCoordinateDenominators
 public import FLT.Mazur.ResidueFiberRegularLocalization
@@ -11305,6 +11312,7 @@ public import FLT.Mazur.SplitPairLocalDescent
 public import FLT.Mazur.SplitPairPushout
 public import FLT.Mazur.SplitSheafLinePullback
 public import FLT.Mazur.SplitSheafLinePullbackComposition
+public import FLT.Mazur.SplitSubmoduleReduction
 public import FLT.Mazur.SquareZeroPairAdjoin
 public import FLT.Mazur.SquareZeroParameterLayer
 public import FLT.Mazur.SquareZeroReductionKernel
