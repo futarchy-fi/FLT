@@ -13629,6 +13629,7 @@ public import FLT.Mazur.WeierstrassDividedOppositeBoundarySupport
 public import FLT.Mazur.WeierstrassDividedOrderedAdjacentComponents
 public import FLT.Mazur.WeierstrassDividedOrderedPairCoverage
 public import FLT.Mazur.WeierstrassDividedOrderedRetainedSections
+public import FLT.Mazur.WeierstrassDividedOriginalNodeBase
 public import FLT.Mazur.WeierstrassDividedOriginalScaleOpen
 public import FLT.Mazur.WeierstrassDividedOriginalXOpen
 public import FLT.Mazur.WeierstrassDividedPolygonAdjacencyClassification
@@ -13887,14 +13888,18 @@ public import FLT.Mazur.WeierstrassDividedRevisedClosingIntersection
 public import FLT.Mazur.WeierstrassDividedRevisedClosingMap
 public import FLT.Mazur.WeierstrassDividedRevisedClosingOriginal
 public import FLT.Mazur.WeierstrassDividedRevisedClosingUnion
+public import FLT.Mazur.WeierstrassDividedRevisedCorrectionBase
 public import FLT.Mazur.WeierstrassDividedRevisedExteriorEdges
 public import FLT.Mazur.WeierstrassDividedRevisedFirstRetained
+public import FLT.Mazur.WeierstrassDividedRevisedGlobalBase
 public import FLT.Mazur.WeierstrassDividedRevisedGlobalCoverage
 public import FLT.Mazur.WeierstrassDividedRevisedGlobalIso
 public import FLT.Mazur.WeierstrassDividedRevisedGlobalMap
+public import FLT.Mazur.WeierstrassDividedRevisedInfinityBase
 public import FLT.Mazur.WeierstrassDividedRevisedInfinityImage
 public import FLT.Mazur.WeierstrassDividedRevisedInfinityIntersection
 public import FLT.Mazur.WeierstrassDividedRevisedInfinityMap
+public import FLT.Mazur.WeierstrassDividedRevisedInitialBase
 public import FLT.Mazur.WeierstrassDividedRevisedInitialBoundary
 public import FLT.Mazur.WeierstrassDividedRevisedInitialIntersection
 public import FLT.Mazur.WeierstrassDividedRevisedInitialMaps
@@ -13915,7 +13920,9 @@ public import FLT.Mazur.WeierstrassDividedRevisedSeparation
 public import FLT.Mazur.WeierstrassDividedRevisedTargetBase
 public import FLT.Mazur.WeierstrassDividedRevisedTargetLabels
 public import FLT.Mazur.WeierstrassDividedRevisedTensorMaps
+public import FLT.Mazur.WeierstrassDividedRevisedTerminalBase
 public import FLT.Mazur.WeierstrassDividedRevisedTerminalReflection
+public import FLT.Mazur.WeierstrassDividedRevisedTwistedIso
 public import FLT.Mazur.WeierstrassDividedSecondAtlasNodeRestriction
 public import FLT.Mazur.WeierstrassDividedSecondJointAtlas
 public import FLT.Mazur.WeierstrassDividedSecondJointAtlasClosing
@@ -14222,6 +14229,9 @@ public import FLT.Mazur.WeierstrassDividedZeroDiagonalAtlasRestriction
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalAtlasSystem
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalNodeRestriction
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalOpenRestriction
+public import FLT.Mazur.WeierstrassDividedZeroDiagonalPolygon
+public import FLT.Mazur.WeierstrassDividedZeroDiagonalPolygonClosing
+public import FLT.Mazur.WeierstrassDividedZeroDiagonalPolygonParameters
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalRestriction
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalState
 public import FLT.Mazur.WeierstrassDividedZeroEqualityAtlasAdjacentReduction
