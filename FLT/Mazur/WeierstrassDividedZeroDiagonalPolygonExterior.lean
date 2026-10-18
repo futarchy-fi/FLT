@@ -73,7 +73,7 @@ local notation "F" => arithmeticZeroDiagonalPolygonRetainedMap hπ data H m hj u
     Category.id_comp, rightBranchOpen_branchSwapIso_assoc]
   exact arithmeticZeroDiagonalPolygon_initial_initial hπ data H m hj u hu
 
-instance arithmeticZeroDiagonalPolygonRetainedMap_isOpenImmersion (b : Bool) :
+instance arithmeticZeroDiagonalExteriorRetainedMap_isOpenImmersion (b : Bool) :
     IsOpenImmersion (F b) := by
   unfold arithmeticZeroDiagonalPolygonRetainedMap
   cases b <;> simp only [Bool.false_eq_true, ↓reduceIte, Category.id_comp] <;> infer_instance
