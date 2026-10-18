@@ -6011,6 +6011,7 @@ public import FLT.Mazur.HilbertJointGroundFullInterior
 public import FLT.Mazur.HilbertJointGroundInvariantOpen
 public import FLT.Mazur.HilbertJointOrbitBoundaryLifts
 public import FLT.Mazur.HilbertJointStableSourceNeighborhoods
+public import FLT.Mazur.HilbertLabelBoundaryCorrections
 public import FLT.Mazur.HilbertLabelBoundaryRefinement
 public import FLT.Mazur.HilbertLabelResidualLifts
 public import FLT.Mazur.HilbertLocalResidueBasis
