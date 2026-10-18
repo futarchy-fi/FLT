@@ -4837,6 +4837,7 @@ public import FLT.Mazur.EquivalenceRelationBoundarySubframeCover
 public import FLT.Mazur.EquivalenceRelationBoundarySubframeGeometry
 public import FLT.Mazur.EquivalenceRelationBoundarySubframeKernel
 public import FLT.Mazur.EquivalenceRelationBoundarySubframeRefinement
+public import FLT.Mazur.EquivalenceRelationBoundaryTestCharts
 public import FLT.Mazur.EquivalenceRelationChartFamilyCorrections
 public import FLT.Mazur.EquivalenceRelationChartFamilyLifts
 public import FLT.Mazur.EquivalenceRelationChartFamilyLocalization
