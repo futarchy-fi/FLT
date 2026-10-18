@@ -13377,6 +13377,7 @@ public import FLT.Mazur.WeierstrassDividedOneFiniteGeometry
 public import FLT.Mazur.WeierstrassDividedOneFiniteNodes
 public import FLT.Mazur.WeierstrassDividedOneFiniteResiduals
 public import FLT.Mazur.WeierstrassDividedOneFiniteState
+public import FLT.Mazur.WeierstrassDividedOneFiniteTransitions
 public import FLT.Mazur.WeierstrassDividedOneSeedOrientation
 public import FLT.Mazur.WeierstrassDividedOneSeedState
 public import FLT.Mazur.WeierstrassDividedOppositeBoundarySupport
