@@ -13857,6 +13857,7 @@ public import FLT.Mazur.WeierstrassDividedZeroThirdAnnihilation
 public import FLT.Mazur.WeierstrassDividedZeroThirdAtlas
 public import FLT.Mazur.WeierstrassDividedZeroThirdAtlasClosing
 public import FLT.Mazur.WeierstrassDividedZeroThirdAtlasInitial
+public import FLT.Mazur.WeierstrassDividedZeroThirdAtlasSystem
 public import FLT.Mazur.WeierstrassDividedZeroThirdCancellation
 public import FLT.Mazur.WeierstrassDividedZeroThirdFields
 public import FLT.Mazur.WeierstrassDividedZeroThirdGeometry
