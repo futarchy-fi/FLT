@@ -3149,6 +3149,7 @@ public import FLT.Mazur.AffineRestrictionImmersion
 public import FLT.Mazur.AffineReverseGeometricOverlap
 public import FLT.Mazur.AffineReverseOverlapCocycle
 public import FLT.Mazur.AffineReverseOverlapDiagonal
+public import FLT.Mazur.AffineScalarBoundaryNilpotence
 public import FLT.Mazur.AffineScalarFiberComparison
 public import FLT.Mazur.AffineScalarMap
 public import FLT.Mazur.AffineScalarMapComposition
@@ -4827,6 +4828,7 @@ public import FLT.Mazur.EquivalenceRelationCompleteMixedCoefficients
 public import FLT.Mazur.EquivalenceRelationCompleteOpenCoefficients
 public import FLT.Mazur.EquivalenceRelationCompletePointLocus
 public import FLT.Mazur.EquivalenceRelationCompleteRestrictionNaturality
+public import FLT.Mazur.EquivalenceRelationCompleteScalarFiber
 public import FLT.Mazur.EquivalenceRelationCompleteSourceComparison
 public import FLT.Mazur.EquivalenceRelationCompleteSourceRestriction
 public import FLT.Mazur.EquivalenceRelationCompleteStageCoefficients
@@ -6322,6 +6324,7 @@ public import FLT.Mazur.HilbertSourceActionRelationGraph
 public import FLT.Mazur.HilbertSourceBadAffineChartEquations
 public import FLT.Mazur.HilbertSourceBadAffineChartLifts
 public import FLT.Mazur.HilbertSourceBadQuotientLifts
+public import FLT.Mazur.HilbertSourceBoundaryCompletenessNilpotence
 public import FLT.Mazur.HilbertSourceClosedBoundaryObstructions
 public import FLT.Mazur.HilbertSourceCoefficientwiseSurjectivity
 public import FLT.Mazur.HilbertSourceCompactRelation
@@ -6336,6 +6339,7 @@ public import FLT.Mazur.HilbertSourceConstructedOpenPrimeTests
 public import FLT.Mazur.HilbertSourceConstructedOpenSections
 public import FLT.Mazur.HilbertSourceConstructedRelationNoetherian
 public import FLT.Mazur.HilbertSourceExactCenterValuations
+public import FLT.Mazur.HilbertSourceFiniteCompletenessTests
 public import FLT.Mazur.HilbertSourceFiniteLinearOpenLifts
 public import FLT.Mazur.HilbertSourceFiniteOpenNumerators
 public import FLT.Mazur.HilbertSourceGeneratedLocalizedSurjectivity
@@ -7860,6 +7864,8 @@ public import FLT.Mazur.OriginalPrimeIntegralNilpotents
 public import FLT.Mazur.OriginalPrimeIntegralValuationTests
 public import FLT.Mazur.OriginalPrimeQuotientEquations
 public import FLT.Mazur.OriginalRestrictedHilbertIntersection
+public import FLT.Mazur.OriginalScalarFiberFiniteEquations
+public import FLT.Mazur.OriginalScalarFiberRadical
 public import FLT.Mazur.OriginalScalarFiniteLinearLifts
 public import FLT.Mazur.OriginalScalarFiniteRelationDescent
 public import FLT.Mazur.OriginalScalarFiniteRelationNumerators
@@ -11109,7 +11115,10 @@ public import FLT.Mazur.SchemeFamilyTripleOverlap
 public import FLT.Mazur.SchemeFiniteFiberInterior
 public import FLT.Mazur.SchemeFiniteGeometricOpenSpread
 public import FLT.Mazur.SchemeFiniteGroupAffineDescent
+public import FLT.Mazur.SchemeFiniteGroupBoundaryCompleteness
+public import FLT.Mazur.SchemeFiniteGroupClosedScalarFiber
 public import FLT.Mazur.SchemeFiniteGroupDescent
+public import FLT.Mazur.SchemeFiniteGroupFiniteFiberTests
 public import FLT.Mazur.SchemeFiniteGroupFreeBoundary
 public import FLT.Mazur.SchemeFiniteGroupFreeBoundaryIdeal
 public import FLT.Mazur.SchemeFiniteGroupInvariantPrincipal
@@ -11122,6 +11131,7 @@ public import FLT.Mazur.SchemeFiniteGroupQuotientMaps
 public import FLT.Mazur.SchemeFiniteGroupQuotientOpenEmbedding
 public import FLT.Mazur.SchemeFiniteGroupQuotientOpenImmersion
 public import FLT.Mazur.SchemeFiniteGroupQuotientOrbits
+public import FLT.Mazur.SchemeFiniteGroupScalarFiberEquations
 public import FLT.Mazur.SchemeFiniteOrbitOpenCore
 public import FLT.Mazur.SchemeFiniteTargetAffineNeighborhood
 public import FLT.Mazur.SchemeFiniteTargetBaseChange
