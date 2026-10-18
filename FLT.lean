@@ -15413,6 +15413,7 @@ public import FLT.Mazur.WeierstrassSmoothProductOpen
 public import FLT.Mazur.WeierstrassSmoothProjectiveGroup
 public import FLT.Mazur.WeierstrassSmoothReciprocalTriple
 public import FLT.Mazur.WeierstrassSmoothSevenPoints
+public import FLT.Mazur.WeierstrassSmoothSquareZeroKernel
 public import FLT.Mazur.WeierstrassSmoothSuccessiveIntegralCubicMaps
 public import FLT.Mazur.WeierstrassSmoothSuccessiveIntegralRegular
 public import FLT.Mazur.WeierstrassSmoothSuccessiveIntegralResiduePoint
