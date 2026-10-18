@@ -6292,6 +6292,7 @@ public import FLT.Mazur.HilbertSubframeExchangeLifts
 public import FLT.Mazur.HilbertSubframeExchangeObstruction
 public import FLT.Mazur.HilbertSubframeLocalizedEmbeddingLifts
 public import FLT.Mazur.HilbertSubframeNormalizedTransfer
+public import FLT.Mazur.HilbertSubframeOpenImagePrimeCorrections
 public import FLT.Mazur.HilbertSubframeOriginalLocalization
 public import FLT.Mazur.HilbertSubframeOriginalScalars
 public import FLT.Mazur.HilbertSubframePrincipalExchangeExtension
