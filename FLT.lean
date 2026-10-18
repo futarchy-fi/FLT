@@ -13814,6 +13814,7 @@ public import FLT.Mazur.WeierstrassDividedZeroFourthCancellation
 public import FLT.Mazur.WeierstrassDividedZeroFourthFields
 public import FLT.Mazur.WeierstrassDividedZeroFourthNodes
 public import FLT.Mazur.WeierstrassDividedZeroFourthPunctures
+public import FLT.Mazur.WeierstrassDividedZeroFourthResidualRestriction
 public import FLT.Mazur.WeierstrassDividedZeroFourthRestriction
 public import FLT.Mazur.WeierstrassDividedZeroFourthSplit
 public import FLT.Mazur.WeierstrassDividedZeroIncidenceInfinity
