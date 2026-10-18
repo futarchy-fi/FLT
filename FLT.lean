@@ -13821,6 +13821,7 @@ public import FLT.Mazur.WeierstrassDividedZeroCycleZeroAtlasConics
 public import FLT.Mazur.WeierstrassDividedZeroCycleZeroIndexedMap
 public import FLT.Mazur.WeierstrassDividedZeroCycleZeroPositiveTensorCompatibility
 public import FLT.Mazur.WeierstrassDividedZeroCycleZeroTensorDesc
+public import FLT.Mazur.WeierstrassDividedZeroDiagonalNodeRestriction
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalRestriction
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalState
 public import FLT.Mazur.WeierstrassDividedZeroEqualityAtlasAdjacentReduction
