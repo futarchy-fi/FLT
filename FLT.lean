@@ -4005,6 +4005,7 @@ public import FLT.Mazur.CyclicCharacteristicAuxiliaryFaithfulness
 public import FLT.Mazur.CyclicCharacteristicAuxiliaryFiniteType
 public import FLT.Mazur.CyclicCharacteristicAuxiliaryPrescribedCover
 public import FLT.Mazur.CyclicCharacteristicAuxiliaryPrescribedNeighborhood
+public import FLT.Mazur.CyclicCharacteristicCoefficientBase
 public import FLT.Mazur.CyclicCharacteristicCoefficientFiniteType
 public import FLT.Mazur.CyclicCharacteristicDisjointAction
 public import FLT.Mazur.CyclicCharacteristicDisjointCartesian
