@@ -2578,6 +2578,9 @@ public import FLT.Mazur.AdicFormalLiftProjection
 public import FLT.Mazur.AdicFormalPresentationHom
 public import FLT.Mazur.AdicFormalSpaceDerivative
 public import FLT.Mazur.AdicFormalSpaceFunctor
+public import FLT.Mazur.AdicFormallySmoothLift
+public import FLT.Mazur.AdicFormallySmoothResidueLift
+public import FLT.Mazur.AdicFormallySmoothStages
 public import FLT.Mazur.AdicIdealCompletionRange
 public import FLT.Mazur.AdicIdealFilteredMap
 public import FLT.Mazur.AdicInfinitesimalConormal
@@ -6697,6 +6700,8 @@ public import FLT.Mazur.KernelPairGenericOrbitSeed
 public import FLT.Mazur.KernelPairSourceBranchCriterion
 public import FLT.Mazur.KernelPairTestIso
 public import FLT.Mazur.KernelPairUnramifiedInverse
+public import FLT.Mazur.KernelPowerMarkingLift
+public import FLT.Mazur.KernelPowerTorsionLifting
 public import FLT.Mazur.LargeDegreeRelativeLineSections
 public import FLT.Mazur.LaurentBoundaryCorrectionNaturality
 public import FLT.Mazur.LaurentBoundaryCorrectionScalar
@@ -6836,6 +6841,7 @@ public import FLT.Mazur.LinearCoordinateRatio
 public import FLT.Mazur.LinearMapKernelTransport
 public import FLT.Mazur.LinearRankOneFrameUnit
 public import FLT.Mazur.LocalAcyclicCartierCriterion
+public import FLT.Mazur.LocalBaseFaithfulMarkingLift
 public import FLT.Mazur.LocalBaseSectionDisjointness
 public import FLT.Mazur.LocalBoundedFlatVanishing
 public import FLT.Mazur.LocalCartierGeneratorDescent
@@ -7516,10 +7522,14 @@ public import FLT.Mazur.OddWeierstrassThreeTorsionUnramified
 public import FLT.Mazur.OneGonAffineCover
 public import FLT.Mazur.OneGonAffineNormalization
 public import FLT.Mazur.OneGonAffineNormalizationCoordinates
+public import FLT.Mazur.OneGonClosedCyclicParameter
 public import FLT.Mazur.OneGonCocone
 public import FLT.Mazur.OneGonCompleteBoundaryCartesian
 public import FLT.Mazur.OneGonCompleteBoundaryMarking
 public import FLT.Mazur.OneGonCompleteCyclicBoundaryParameters
+public import FLT.Mazur.OneGonCompleteCyclicCorrection
+public import FLT.Mazur.OneGonCompleteCyclicLiftCriterion
+public import FLT.Mazur.OneGonCompleteLabelLifts
 public import FLT.Mazur.OneGonCompleteUniversalCyclicFamily
 public import FLT.Mazur.OneGonCubicElimination
 public import FLT.Mazur.OneGonDenominatorEqualizer
@@ -9690,6 +9700,7 @@ public import FLT.Mazur.PowerSeriesParameterFlatness
 public import FLT.Mazur.PowerSeriesQuotientCompletion
 public import FLT.Mazur.PowerSeriesResidueBaseObstruction
 public import FLT.Mazur.PowerSeriesSchemePointExt
+public import FLT.Mazur.PowerSeriesSmoothPointLift
 public import FLT.Mazur.PowerSeriesStageReconstruction
 public import FLT.Mazur.PowerSeriesStageRingLift
 public import FLT.Mazur.PowerSeriesSubstitutionEquiv
@@ -11511,6 +11522,7 @@ public import FLT.Mazur.SmoothAffineGeometricVanishing
 public import FLT.Mazur.SmoothAffineLineNoetherianModel
 public import FLT.Mazur.SmoothAlgebraReduced
 public import FLT.Mazur.SmoothBaseChangeDimensionOpen
+public import FLT.Mazur.SmoothCompleteResidueLift
 public import FLT.Mazur.SmoothConnectedCurveGeometricIntegral
 public import FLT.Mazur.SmoothConnectedFieldCurveDimension
 public import FLT.Mazur.SmoothCotangentRankGenerization
