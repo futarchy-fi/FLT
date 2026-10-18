@@ -13384,6 +13384,7 @@ public import FLT.Mazur.WeierstrassDividedOneFiniteAtlasClosing
 public import FLT.Mazur.WeierstrassDividedOneFiniteAtlasIdentification
 public import FLT.Mazur.WeierstrassDividedOneFiniteAtlasIncoming
 public import FLT.Mazur.WeierstrassDividedOneFiniteAtlasInitial
+public import FLT.Mazur.WeierstrassDividedOneFiniteAtlasRestriction
 public import FLT.Mazur.WeierstrassDividedOneFiniteAtlasSystem
 public import FLT.Mazur.WeierstrassDividedOneFiniteGeometry
 public import FLT.Mazur.WeierstrassDividedOneFiniteNodeRestriction
