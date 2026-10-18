@@ -4063,6 +4063,7 @@ public import FLT.Mazur.CyclicCharacteristicUnmarkedLocalRelation
 public import FLT.Mazur.CyclicCharacteristicUnmarkedQuotientPresheaf
 public import FLT.Mazur.CyclicCharacteristicUnmarkedQuotientUniversal
 public import FLT.Mazur.CyclicCharacteristicUnmarkedRelation
+public import FLT.Mazur.CyclicCharacteristicUnmarkedSchemeDescent
 public import FLT.Mazur.CyclicCharacteristicUnmarkedSheaf
 public import FLT.Mazur.CyclicCharacteristicUnmarkedSourceSheaf
 public import FLT.Mazur.CyclicDivisorSubgroupCriterion
