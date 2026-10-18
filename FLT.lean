@@ -3978,6 +3978,7 @@ public import FLT.Mazur.CyclicCharacteristicAuxiliaryPrescribedCover
 public import FLT.Mazur.CyclicCharacteristicAuxiliaryPrescribedNeighborhood
 public import FLT.Mazur.CyclicCharacteristicEvenNormalizedAuxiliary
 public import FLT.Mazur.CyclicCharacteristicEvenNormalizedGenerator
+public import FLT.Mazur.CyclicCharacteristicEvenParameterSource
 public import FLT.Mazur.CyclicCharacteristicEvenRelabeledAuxiliary
 public import FLT.Mazur.CyclicCharacteristicEvenRelabeledGenerator
 public import FLT.Mazur.CyclicCharacteristicMarkedRelation
