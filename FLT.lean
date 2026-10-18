@@ -4910,6 +4910,7 @@ public import FLT.Mazur.EquivalenceRelationSubframeNormalizedTransfer
 public import FLT.Mazur.EquivalenceRelationSubframeNormalizedTransitions
 public import FLT.Mazur.EquivalenceRelationSubframeOpenCharts
 public import FLT.Mazur.EquivalenceRelationSubframeRefinement
+public import FLT.Mazur.EquivalenceRelationSubframeRelationLifts
 public import FLT.Mazur.EquivalenceRelationSubframeScalars
 public import FLT.Mazur.EquivalenceRelationSubframeSelectedPoints
 public import FLT.Mazur.EquivalenceRelationSubframeSingleExchange
