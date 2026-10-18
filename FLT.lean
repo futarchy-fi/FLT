@@ -12386,6 +12386,7 @@ public import FLT.Mazur.WeierstrassChangeFinitePresentation
 public import FLT.Mazur.WeierstrassChangeFullComparison
 public import FLT.Mazur.WeierstrassChangeGeneralizedComparison
 public import FLT.Mazur.WeierstrassChangeParameter
+public import FLT.Mazur.WeierstrassChangePointedGeneralizedIso
 public import FLT.Mazur.WeierstrassChangeSubgroupScheme
 public import FLT.Mazur.WeierstrassChartArithmeticRestriction
 public import FLT.Mazur.WeierstrassChartBaseChange
