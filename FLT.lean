@@ -13822,6 +13822,7 @@ public import FLT.Mazur.WeierstrassDividedZeroExteriorProjective
 public import FLT.Mazur.WeierstrassDividedZeroExteriorSmoothCoordinates
 public import FLT.Mazur.WeierstrassDividedZeroExteriorSmoothOrbit
 public import FLT.Mazur.WeierstrassDividedZeroFifthAnnihilation
+public import FLT.Mazur.WeierstrassDividedZeroFifthCancellation
 public import FLT.Mazur.WeierstrassDividedZeroFifthFields
 public import FLT.Mazur.WeierstrassDividedZeroFifthNodes
 public import FLT.Mazur.WeierstrassDividedZeroFifthPunctures
