@@ -7823,6 +7823,7 @@ public import FLT.Mazur.OriginalFiniteCoefficientOrbit
 public import FLT.Mazur.OriginalGeometricallyIntegralOpen
 public import FLT.Mazur.OriginalHilbertFiniteType
 public import FLT.Mazur.OriginalInvariantOpenAllEtaleLifts
+public import FLT.Mazur.OriginalPrimeIntegralComponents
 public import FLT.Mazur.OriginalPrimeIntegralEquations
 public import FLT.Mazur.OriginalPrimeIntegralFiber
 public import FLT.Mazur.OriginalPrimeIntegralGenerators
