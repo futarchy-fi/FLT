@@ -7566,6 +7566,7 @@ public import FLT.Mazur.OneGonCompleteGeometricRotations
 public import FLT.Mazur.OneGonCompleteKernelPowers
 public import FLT.Mazur.OneGonCompleteLabelLifts
 public import FLT.Mazur.OneGonCompleteParameterSubgroup
+public import FLT.Mazur.OneGonCompletePinchedMarking
 public import FLT.Mazur.OneGonCompletePinchedSubgroup
 public import FLT.Mazur.OneGonCompleteSubgroupBaseChange
 public import FLT.Mazur.OneGonCompleteUniversalCyclicFamily
