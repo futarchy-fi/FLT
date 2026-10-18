@@ -9567,6 +9567,7 @@ public import FLT.Mazur.PolygonUniversalEdgeAlgebra
 public import FLT.Mazur.PolygonUniversalEdgeGroupLaw
 public import FLT.Mazur.PolygonUniversalNodeRestriction
 public import FLT.Mazur.PolygonUniversalScaling
+public import FLT.Mazur.PolygonVariableSmoothingDiagram
 public import FLT.Mazur.PolygonVeroneseAdicProjSquare
 public import FLT.Mazur.PolygonVeroneseAdicReduction
 public import FLT.Mazur.PolygonVeroneseBoundedGenerators
