@@ -11425,6 +11425,7 @@ public import FLT.Mazur.SchemePullbackSquarePasting
 public import FLT.Mazur.SchemeQuotientAffineBaseCoordinates
 public import FLT.Mazur.SchemeQuotientAffineFlatComparison
 public import FLT.Mazur.SchemeQuotientAffineFlatDescent
+public import FLT.Mazur.SchemeQuotientAffineFreeComparison
 public import FLT.Mazur.SchemeQuotientTensorModel
 public import FLT.Mazur.SchemeRecognitionTransport
 public import FLT.Mazur.SchemeReconstructionOverlapSquare
