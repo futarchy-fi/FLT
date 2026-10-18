@@ -13891,6 +13891,7 @@ public import FLT.Mazur.WeierstrassDividedTwistedAtlasGluing
 public import FLT.Mazur.WeierstrassDividedTwistedAtlasRestriction
 public import FLT.Mazur.WeierstrassDividedTwistedClosingInclusion
 public import FLT.Mazur.WeierstrassDividedTwistedExteriorComparison
+public import FLT.Mazur.WeierstrassDividedTwoFiniteState
 public import FLT.Mazur.WeierstrassDividedTwoSeedOrientation
 public import FLT.Mazur.WeierstrassDividedTwoSeedState
 public import FLT.Mazur.WeierstrassDividedZeroBoundaryFunctions
