@@ -2730,6 +2730,7 @@ public import FLT.Mazur.AffineEtaleIdentityGroundBase
 public import FLT.Mazur.AffineEtaleNilpotentLift
 public import FLT.Mazur.AffineEtaleTranslationFiniteBranch
 public import FLT.Mazur.AffineEtaleTranslationNormCharts
+public import FLT.Mazur.AffineExactCenterValuationObstruction
 public import FLT.Mazur.AffineFaithfullyFlatEpimorphisms
 public import FLT.Mazur.AffineFaithfullyFlatMonomorphisms
 public import FLT.Mazur.AffineFaithfullyFlatPullbackFaithful
@@ -3227,6 +3228,7 @@ public import FLT.Mazur.AffineTripleOverlapRefinement
 public import FLT.Mazur.AffineTripleOverlapRefinementSquares
 public import FLT.Mazur.AffineTripleUnitCoefficients
 public import FLT.Mazur.AffineTrivialLineSectionOpen
+public import FLT.Mazur.AffineValuationCoordinateSquare
 public import FLT.Mazur.AffineValuationGeneratorLift
 public import FLT.Mazur.AffineValuationIntegralLift
 public import FLT.Mazur.AlgebraEqualizerCoordinates
@@ -6320,6 +6322,7 @@ public import FLT.Mazur.HilbertSourceConstructedOpenLifts
 public import FLT.Mazur.HilbertSourceConstructedOpenPrimeTests
 public import FLT.Mazur.HilbertSourceConstructedOpenSections
 public import FLT.Mazur.HilbertSourceConstructedRelationNoetherian
+public import FLT.Mazur.HilbertSourceExactCenterValuations
 public import FLT.Mazur.HilbertSourceFiniteLinearOpenLifts
 public import FLT.Mazur.HilbertSourceFiniteOpenNumerators
 public import FLT.Mazur.HilbertSourceGeneratedLocalizedSurjectivity
@@ -7833,6 +7836,7 @@ public import FLT.Mazur.OriginalGeometricallyIntegralOpen
 public import FLT.Mazur.OriginalHilbertFiniteType
 public import FLT.Mazur.OriginalInvariantOpenAllEtaleLifts
 public import FLT.Mazur.OriginalPrimeDomainValuationObstruction
+public import FLT.Mazur.OriginalPrimeExactCenterValuations
 public import FLT.Mazur.OriginalPrimeIntegralComponents
 public import FLT.Mazur.OriginalPrimeIntegralEquations
 public import FLT.Mazur.OriginalPrimeIntegralFiber
@@ -11042,6 +11046,7 @@ public import FLT.Mazur.SchemeBadAffineCoverBoundaryWitness
 public import FLT.Mazur.SchemeBadAffineCoverComponents
 public import FLT.Mazur.SchemeBadAffineCoverDenominators
 public import FLT.Mazur.SchemeBadAffineCoverEquations
+public import FLT.Mazur.SchemeBadAffineCoverExactValuations
 public import FLT.Mazur.SchemeBadAffineCoverFiniteType
 public import FLT.Mazur.SchemeBadAffineCoverGeometricBoundaryTests
 public import FLT.Mazur.SchemeBadAffineCoverIntegralLocus
@@ -12107,9 +12112,12 @@ public import FLT.Mazur.UnpointedLocalAcyclicEffectiveDescent
 public import FLT.Mazur.UnpointedLocalAcyclicFppfSheaf
 public import FLT.Mazur.UnramifiedSectionImmersion
 public import FLT.Mazur.UnrestrictedSmoothFamilyCartier
+public import FLT.Mazur.ValuationExactCenterIntegralTests
+public import FLT.Mazur.ValuationLocalRefinement
 public import FLT.Mazur.ValuationPoleEquations
 public import FLT.Mazur.ValuationPoleReciprocal
 public import FLT.Mazur.ValuationProjectiveNormalization
+public import FLT.Mazur.ValuationResidueRefinement
 public import FLT.Mazur.ValuationRingCompleteModel
 public import FLT.Mazur.ValuationRingHenselianModel
 public import FLT.Mazur.ValuationRingModel
