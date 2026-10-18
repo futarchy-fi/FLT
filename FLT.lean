@@ -7315,6 +7315,7 @@ public import FLT.Mazur.OddWeierstrassCyclicHomRelabelParameter
 public import FLT.Mazur.OddWeierstrassCyclicHomRelabelSubgroup
 public import FLT.Mazur.OddWeierstrassCyclicHomRelabelSubgroupMarking
 public import FLT.Mazur.OddWeierstrassCyclicHomRelabeledNormalizationIso
+public import FLT.Mazur.OddWeierstrassCyclicHomRelationIsoCoherence
 public import FLT.Mazur.OddWeierstrassCyclicHomRetainedPullback
 public import FLT.Mazur.OddWeierstrassCyclicHomSliceFunctor
 public import FLT.Mazur.OddWeierstrassCyclicHomSliceRelabelAction
