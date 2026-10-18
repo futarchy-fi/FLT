@@ -14443,6 +14443,7 @@ public import FLT.Mazur.WeierstrassDividedZeroCycleZeroIndexedMap
 public import FLT.Mazur.WeierstrassDividedZeroCycleZeroPositiveTensorCompatibility
 public import FLT.Mazur.WeierstrassDividedZeroCycleZeroTensorDesc
 public import FLT.Mazur.WeierstrassDividedZeroCyclicDiagonal
+public import FLT.Mazur.WeierstrassDividedZeroCyclicGlobalIso
 public import FLT.Mazur.WeierstrassDividedZeroCyclicGlobalMap
 public import FLT.Mazur.WeierstrassDividedZeroCyclicIndex
 public import FLT.Mazur.WeierstrassDividedZeroCyclicInverseMap
