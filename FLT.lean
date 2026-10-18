@@ -4874,8 +4874,10 @@ public import FLT.Mazur.EquivalenceRelationSubframeInvariantCriterion
 public import FLT.Mazur.EquivalenceRelationSubframeNormalizedCorrection
 public import FLT.Mazur.EquivalenceRelationSubframeNormalizedRestriction
 public import FLT.Mazur.EquivalenceRelationSubframeNormalizedTransfer
+public import FLT.Mazur.EquivalenceRelationSubframeNormalizedTransitions
 public import FLT.Mazur.EquivalenceRelationSubframeOpenCharts
 public import FLT.Mazur.EquivalenceRelationSubframeRefinement
+public import FLT.Mazur.EquivalenceRelationSubframeSelectedPoints
 public import FLT.Mazur.EquivalenceRelationSubframeSourceComparison
 public import FLT.Mazur.EquivalenceRelationSubframeTransfer
 public import FLT.Mazur.EquivalenceRelationSubframeTransferBoundary
@@ -6238,9 +6240,14 @@ public import FLT.Mazur.HilbertReindexedCoordinateRing
 public import FLT.Mazur.HilbertRepeatedMonomialChart
 public import FLT.Mazur.HilbertSameAmbientChartIso
 public import FLT.Mazur.HilbertStableFrameBoundary
+public import FLT.Mazur.HilbertSubframeAffineOverlap
+public import FLT.Mazur.HilbertSubframeAffineTargets
 public import FLT.Mazur.HilbertSubframeBezoutLift
+public import FLT.Mazur.HilbertSubframeBezoutNeighborhood
 public import FLT.Mazur.HilbertSubframeBoundaryLifts
+public import FLT.Mazur.HilbertSubframeConstructedUnitLift
 public import FLT.Mazur.HilbertSubframeNormalizedTransfer
+public import FLT.Mazur.HilbertSubframeStrictUnitCover
 public import FLT.Mazur.HilbertSubframeTransferCorrections
 public import FLT.Mazur.HilbertSubframeUnitNeighborhood
 public import FLT.Mazur.HilbertSubterminalTranslationEnvelope
