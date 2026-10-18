@@ -6296,9 +6296,14 @@ public import FLT.Mazur.HilbertSourceBadQuotientLifts
 public import FLT.Mazur.HilbertSourceCoefficientwiseSurjectivity
 public import FLT.Mazur.HilbertSourceCompactRelation
 public import FLT.Mazur.HilbertSourceCompatibleModule
+public import FLT.Mazur.HilbertSourceConstructedBadPrimeLifts
+public import FLT.Mazur.HilbertSourceConstructedBoundaryUnitCover
+public import FLT.Mazur.HilbertSourceConstructedDenominatorPrimes
+public import FLT.Mazur.HilbertSourceConstructedFiniteBadPrimes
 public import FLT.Mazur.HilbertSourceConstructedOpenLifts
 public import FLT.Mazur.HilbertSourceConstructedOpenPrimeTests
 public import FLT.Mazur.HilbertSourceConstructedOpenSections
+public import FLT.Mazur.HilbertSourceConstructedRelationNoetherian
 public import FLT.Mazur.HilbertSourceFiniteLinearOpenLifts
 public import FLT.Mazur.HilbertSourceFiniteOpenNumerators
 public import FLT.Mazur.HilbertSourceGeneratedLocalizedSurjectivity
@@ -11265,6 +11270,7 @@ public import FLT.Mazur.SchemeRelationMonicSeedQuotient
 public import FLT.Mazur.SchemeRelationMonicSeedQuotientCoverage
 public import FLT.Mazur.SchemeRelationMonicSeedSelection
 public import FLT.Mazur.SchemeRelationNestedKernel
+public import FLT.Mazur.SchemeRelationNoetherianRestriction
 public import FLT.Mazur.SchemeRelationNonsplitSeedKernel
 public import FLT.Mazur.SchemeRelationNormTransport
 public import FLT.Mazur.SchemeRelationOpenFunctionDescent
@@ -11325,6 +11331,9 @@ public import FLT.Mazur.SchemeRelativeNilpotentKernel
 public import FLT.Mazur.SchemeRelativeNilpotentSections
 public import FLT.Mazur.SchemeScalarAvoidanceCover
 public import FLT.Mazur.SchemeScalarAvoidanceIdeal
+public import FLT.Mazur.SchemeScalarBadPrimeDenominators
+public import FLT.Mazur.SchemeScalarBoundaryUnitCover
+public import FLT.Mazur.SchemeScalarFiniteBadPrimes
 public import FLT.Mazur.SchemeScalarIntegralBadCover
 public import FLT.Mazur.SchemeScalarIntegralCover
 public import FLT.Mazur.SchemeScalarPrincipalNeighborhood
