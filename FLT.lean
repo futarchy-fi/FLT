@@ -11214,6 +11214,7 @@ public import FLT.Mazur.SchemeRelationFunctionDescent
 public import FLT.Mazur.SchemeRelationFunctionDiagram
 public import FLT.Mazur.SchemeRelationGeometricCertificate
 public import FLT.Mazur.SchemeRelationGeometricGround
+public import FLT.Mazur.SchemeRelationGraphOpenEquations
 public import FLT.Mazur.SchemeRelationInvariantAffineUniversal
 public import FLT.Mazur.SchemeRelationInvariantDomainIso
 public import FLT.Mazur.SchemeRelationInvariantDominant
