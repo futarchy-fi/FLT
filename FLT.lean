@@ -13817,6 +13817,7 @@ public import FLT.Mazur.WeierstrassDividedZeroFourthAtlasInitial
 public import FLT.Mazur.WeierstrassDividedZeroFourthCancellation
 public import FLT.Mazur.WeierstrassDividedZeroFourthFields
 public import FLT.Mazur.WeierstrassDividedZeroFourthGeometry
+public import FLT.Mazur.WeierstrassDividedZeroFourthNodeRestriction
 public import FLT.Mazur.WeierstrassDividedZeroFourthNodes
 public import FLT.Mazur.WeierstrassDividedZeroFourthPunctures
 public import FLT.Mazur.WeierstrassDividedZeroFourthResidualRestriction
