@@ -4751,6 +4751,7 @@ public import FLT.Mazur.EquivalenceRelationBoundaryOpenCoefficients
 public import FLT.Mazur.EquivalenceRelationBoundarySubframe
 public import FLT.Mazur.EquivalenceRelationBoundarySubframeCoefficients
 public import FLT.Mazur.EquivalenceRelationBoundarySubframeGeometry
+public import FLT.Mazur.EquivalenceRelationBoundarySubframeKernel
 public import FLT.Mazur.EquivalenceRelationBoundarySubframeRefinement
 public import FLT.Mazur.EquivalenceRelationChartFamilyCorrections
 public import FLT.Mazur.EquivalenceRelationChartFamilyLifts
