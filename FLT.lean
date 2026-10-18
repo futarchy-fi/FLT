@@ -4824,6 +4824,7 @@ public import FLT.Mazur.EquivalenceRelationResidualAdicIdeal
 public import FLT.Mazur.EquivalenceRelationResidualBranchDecomposition
 public import FLT.Mazur.EquivalenceRelationResidualCoefficientEquations
 public import FLT.Mazur.EquivalenceRelationResidualPermutationOpen
+public import FLT.Mazur.EquivalenceRelationResidualScalarExtension
 public import FLT.Mazur.EquivalenceRelationResidualSectionExtension
 public import FLT.Mazur.EquivalenceRelationRestrictedActionGraphs
 public import FLT.Mazur.EquivalenceRelationSectionRebase
