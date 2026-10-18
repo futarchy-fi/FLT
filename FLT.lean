@@ -4034,6 +4034,7 @@ public import FLT.Mazur.CyclicHomNormalizedRelabelAction
 public import FLT.Mazur.CyclicHomNormalizedRelabelModuli
 public import FLT.Mazur.CyclicHomPrescribedGeneratorComparison
 public import FLT.Mazur.CyclicHomProperPresentationInvariant
+public import FLT.Mazur.CyclicHomPullbackAuxiliaryMarking
 public import FLT.Mazur.CyclicHomRelabelAuxiliaryMarking
 public import FLT.Mazur.CyclicHomRelabelCurve
 public import FLT.Mazur.CyclicHomRelabelLine
