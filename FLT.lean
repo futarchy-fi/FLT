@@ -4733,6 +4733,7 @@ public import FLT.Mazur.EquivalenceRelationBoundaryChartTransport
 public import FLT.Mazur.EquivalenceRelationBoundaryCoefficients
 public import FLT.Mazur.EquivalenceRelationBoundaryLabelChange
 public import FLT.Mazur.EquivalenceRelationBoundaryLabelCoefficients
+public import FLT.Mazur.EquivalenceRelationBoundaryLabelRefinement
 public import FLT.Mazur.EquivalenceRelationBoundaryOpenCoefficients
 public import FLT.Mazur.EquivalenceRelationBoundarySubframe
 public import FLT.Mazur.EquivalenceRelationBoundarySubframeCoefficients
@@ -4798,6 +4799,8 @@ public import FLT.Mazur.EquivalenceRelationJointGeometricComparison
 public import FLT.Mazur.EquivalenceRelationJointInvariantLifts
 public import FLT.Mazur.EquivalenceRelationJointSourceRefinement
 public import FLT.Mazur.EquivalenceRelationLabelOpenCharts
+public import FLT.Mazur.EquivalenceRelationLabelOverlap
+public import FLT.Mazur.EquivalenceRelationLabelRefinement
 public import FLT.Mazur.EquivalenceRelationMixedBranchCoefficients
 public import FLT.Mazur.EquivalenceRelationMixedChartDescent
 public import FLT.Mazur.EquivalenceRelationMixedChartLiftDifference
@@ -5973,6 +5976,8 @@ public import FLT.Mazur.HilbertFiniteFreeQuotientRefinement
 public import FLT.Mazur.HilbertFiniteFreeRelationErrorVanishing
 public import FLT.Mazur.HilbertFiniteFreeRelationPrincipalCoverage
 public import FLT.Mazur.HilbertFiniteInvariantAffineBasis
+public import FLT.Mazur.HilbertFiniteLabelBoundaryLifts
+public import FLT.Mazur.HilbertFiniteLabelRefinement
 public import FLT.Mazur.HilbertFiniteNeighborhoodError
 public import FLT.Mazur.HilbertFiniteRelationErrorVanishing
 public import FLT.Mazur.HilbertFiniteRelationPrincipalCoverage
@@ -6015,6 +6020,9 @@ public import FLT.Mazur.HilbertJointGroundFullInterior
 public import FLT.Mazur.HilbertJointGroundInvariantOpen
 public import FLT.Mazur.HilbertJointOrbitBoundaryLifts
 public import FLT.Mazur.HilbertJointStableSourceNeighborhoods
+public import FLT.Mazur.HilbertLabelBoundaryCorrections
+public import FLT.Mazur.HilbertLabelBoundaryRefinement
+public import FLT.Mazur.HilbertLabelResidualLifts
 public import FLT.Mazur.HilbertLocalResidueBasis
 public import FLT.Mazur.HilbertLocalizationIsomorphismOpen
 public import FLT.Mazur.HilbertLocalizedTupleBasis
