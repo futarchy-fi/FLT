@@ -7861,6 +7861,7 @@ public import FLT.Mazur.PolygonArithmeticRetainedChainFields
 public import FLT.Mazur.PolygonArithmeticRetainedChainPositions
 public import FLT.Mazur.PolygonArithmeticRetainedChainSplit
 public import FLT.Mazur.PolygonArithmeticRetainedChainState
+public import FLT.Mazur.PolygonArithmeticRetainedChainStep
 public import FLT.Mazur.PolygonArithmeticRetainedChainZero
 public import FLT.Mazur.PolygonArithmeticRetainedMarkings
 public import FLT.Mazur.PolygonArithmeticScalarExactness
