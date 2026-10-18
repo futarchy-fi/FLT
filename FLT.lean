@@ -4842,6 +4842,7 @@ public import FLT.Mazur.EquivalenceRelationBoundaryRankDescent
 public import FLT.Mazur.EquivalenceRelationBoundaryRankEquations
 public import FLT.Mazur.EquivalenceRelationBoundaryRankSeparation
 public import FLT.Mazur.EquivalenceRelationBoundaryRankThickenings
+public import FLT.Mazur.EquivalenceRelationBoundaryStageDescent
 public import FLT.Mazur.EquivalenceRelationBoundarySubframe
 public import FLT.Mazur.EquivalenceRelationBoundarySubframeCoefficients
 public import FLT.Mazur.EquivalenceRelationBoundarySubframeCover
