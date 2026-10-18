@@ -8050,6 +8050,7 @@ public import FLT.Mazur.PolygonBoundaryClosedLayer
 public import FLT.Mazur.PolygonBoundaryClosedLifting
 public import FLT.Mazur.PolygonBoundaryCoefficientNaturality
 public import FLT.Mazur.PolygonBoundaryCoefficientScalars
+public import FLT.Mazur.PolygonBoundaryCyclicSubgroup
 public import FLT.Mazur.PolygonBoundaryDegreeFinite
 public import FLT.Mazur.PolygonBoundaryDivisor
 public import FLT.Mazur.PolygonBoundaryGradedExactness
