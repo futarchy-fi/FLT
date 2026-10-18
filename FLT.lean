@@ -8078,6 +8078,7 @@ public import FLT.Mazur.PolygonArithmeticCorrectionPunctureRestriction
 public import FLT.Mazur.PolygonArithmeticCorrectionPunctures
 public import FLT.Mazur.PolygonArithmeticCubicEquationReconstruction
 public import FLT.Mazur.PolygonArithmeticCyclicState
+public import FLT.Mazur.PolygonArithmeticCyclicStep
 public import FLT.Mazur.PolygonArithmeticDegreeComplete
 public import FLT.Mazur.PolygonArithmeticDegreeExactness
 public import FLT.Mazur.PolygonArithmeticDegreeFinite
