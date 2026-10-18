@@ -13809,6 +13809,7 @@ public import FLT.Mazur.WeierstrassDividedZeroFirstPunctures
 public import FLT.Mazur.WeierstrassDividedZeroFirstResidualRestriction
 public import FLT.Mazur.WeierstrassDividedZeroFirstRestriction
 public import FLT.Mazur.WeierstrassDividedZeroFirstTransitions
+public import FLT.Mazur.WeierstrassDividedZeroFourthAnnihilation
 public import FLT.Mazur.WeierstrassDividedZeroFourthFields
 public import FLT.Mazur.WeierstrassDividedZeroFourthNodes
 public import FLT.Mazur.WeierstrassDividedZeroFourthSplit
