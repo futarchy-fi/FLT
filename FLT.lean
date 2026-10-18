@@ -7544,6 +7544,7 @@ public import FLT.Mazur.OneGonSmoothingAuxiliaryOverlap
 public import FLT.Mazur.OneGonSmoothingChartIntersection
 public import FLT.Mazur.OneGonSmoothingClosedFiber
 public import FLT.Mazur.OneGonSmoothingCoefficientChange
+public import FLT.Mazur.OneGonSmoothingCyclicCartier
 public import FLT.Mazur.OneGonSmoothingCyclicIdeal
 public import FLT.Mazur.OneGonSmoothingCyclicRelabeling
 public import FLT.Mazur.OneGonSmoothingEquation
