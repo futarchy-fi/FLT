@@ -7272,6 +7272,7 @@ public import FLT.Mazur.OddWeierstrassCyclicHomLocusNormalizationRetraction
 public import FLT.Mazur.OddWeierstrassCyclicHomLocusRelabel
 public import FLT.Mazur.OddWeierstrassCyclicHomLocusRelabelAction
 public import FLT.Mazur.OddWeierstrassCyclicHomLocusRelabelNormalization
+public import FLT.Mazur.OddWeierstrassCyclicHomLocusRelationGroupoid
 public import FLT.Mazur.OddWeierstrassCyclicHomMarkedFamilyRelation
 public import FLT.Mazur.OddWeierstrassCyclicHomMarkedIsoPullback
 public import FLT.Mazur.OddWeierstrassCyclicHomMultiplicationEquation
