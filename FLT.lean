@@ -7545,6 +7545,7 @@ public import FLT.Mazur.OneGonCompleteCyclicBoundaryParameters
 public import FLT.Mazur.OneGonCompleteCyclicCorrection
 public import FLT.Mazur.OneGonCompleteCyclicLiftCriterion
 public import FLT.Mazur.OneGonCompleteCyclicParameterComparison
+public import FLT.Mazur.OneGonCompleteGeneralizedCurve
 public import FLT.Mazur.OneGonCompleteGeometricRotations
 public import FLT.Mazur.OneGonCompleteKernelPowers
 public import FLT.Mazur.OneGonCompleteLabelLifts
