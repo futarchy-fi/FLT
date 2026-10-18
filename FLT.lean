@@ -6283,6 +6283,7 @@ public import FLT.Mazur.HilbertSubframeBezoutNeighborhood
 public import FLT.Mazur.HilbertSubframeBoundaryExchangeMap
 public import FLT.Mazur.HilbertSubframeBoundaryLifts
 public import FLT.Mazur.HilbertSubframeCompleteImageLifts
+public import FLT.Mazur.HilbertSubframeCompleteMixedCorrections
 public import FLT.Mazur.HilbertSubframeConstructedUnitLift
 public import FLT.Mazur.HilbertSubframeCoverBoundary
 public import FLT.Mazur.HilbertSubframeEqualSizeLift
