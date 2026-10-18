@@ -7542,6 +7542,7 @@ public import FLT.Mazur.OneGonCocone
 public import FLT.Mazur.OneGonCompleteAmpleCyclicSubgroup
 public import FLT.Mazur.OneGonCompleteBoundaryCartesian
 public import FLT.Mazur.OneGonCompleteBoundaryMarking
+public import FLT.Mazur.OneGonCompleteBoundarySubgroup
 public import FLT.Mazur.OneGonCompleteClosedSubgroupIso
 public import FLT.Mazur.OneGonCompleteCyclicBoundaryParameters
 public import FLT.Mazur.OneGonCompleteCyclicCorrection
