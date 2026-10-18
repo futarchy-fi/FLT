@@ -4806,6 +4806,7 @@ public import FLT.Mazur.EquivalenceRelationBoundaryActionGeometry
 public import FLT.Mazur.EquivalenceRelationBoundaryChartTests
 public import FLT.Mazur.EquivalenceRelationBoundaryChartTransport
 public import FLT.Mazur.EquivalenceRelationBoundaryCoefficients
+public import FLT.Mazur.EquivalenceRelationBoundaryExcess
 public import FLT.Mazur.EquivalenceRelationBoundaryFaithfulDifferences
 public import FLT.Mazur.EquivalenceRelationBoundaryLabelChange
 public import FLT.Mazur.EquivalenceRelationBoundaryLabelCoefficients
@@ -4830,6 +4831,7 @@ public import FLT.Mazur.EquivalenceRelationCompleteChartImage
 public import FLT.Mazur.EquivalenceRelationCompleteClosedLocus
 public import FLT.Mazur.EquivalenceRelationCompleteEndpointOrbit
 public import FLT.Mazur.EquivalenceRelationCompleteEquivariantCoefficients
+public import FLT.Mazur.EquivalenceRelationCompleteExactRank
 public import FLT.Mazur.EquivalenceRelationCompleteFiberComparison
 public import FLT.Mazur.EquivalenceRelationCompleteFiberSplit
 public import FLT.Mazur.EquivalenceRelationCompleteIdealInvariant
@@ -4857,6 +4859,7 @@ public import FLT.Mazur.EquivalenceRelationConnectedCompleteTests
 public import FLT.Mazur.EquivalenceRelationDoubleVanishingOpen
 public import FLT.Mazur.EquivalenceRelationEqualFrameCorrections
 public import FLT.Mazur.EquivalenceRelationEqualFrameOverlap
+public import FLT.Mazur.EquivalenceRelationExcessFrames
 public import FLT.Mazur.EquivalenceRelationFiberPermutationSections
 public import FLT.Mazur.EquivalenceRelationFiberRebase
 public import FLT.Mazur.EquivalenceRelationFiniteChartMultipliers
@@ -4933,6 +4936,7 @@ public import FLT.Mazur.EquivalenceRelationSectionRebase
 public import FLT.Mazur.EquivalenceRelationSelfEmbeddingAction
 public import FLT.Mazur.EquivalenceRelationSourceRefinement
 public import FLT.Mazur.EquivalenceRelationSourceRestriction
+public import FLT.Mazur.EquivalenceRelationStrictSubframeIncomplete
 public import FLT.Mazur.EquivalenceRelationSubframeComparison
 public import FLT.Mazur.EquivalenceRelationSubframeDiscrepancy
 public import FLT.Mazur.EquivalenceRelationSubframeEqualSize
@@ -6179,6 +6183,7 @@ public import FLT.Mazur.HilbertNormalizedOrbitBoundaryCoefficients
 public import FLT.Mazur.HilbertNormalizedOrbitBoundaryRefinement
 public import FLT.Mazur.HilbertNormalizedRelationComparison
 public import FLT.Mazur.HilbertNormalizedStableAffine
+public import FLT.Mazur.HilbertNormalizedUniformRank
 public import FLT.Mazur.HilbertOpenAmbientBaseChange
 public import FLT.Mazur.HilbertOpenAmbientCartesian
 public import FLT.Mazur.HilbertOpenAmbientClassification
@@ -6338,6 +6343,7 @@ public import FLT.Mazur.HilbertSourceBadAffineChartEquations
 public import FLT.Mazur.HilbertSourceBadAffineChartLifts
 public import FLT.Mazur.HilbertSourceBadQuotientLifts
 public import FLT.Mazur.HilbertSourceBoundaryCompletenessNilpotence
+public import FLT.Mazur.HilbertSourceBoundaryRankNilpotence
 public import FLT.Mazur.HilbertSourceClosedBoundaryObstructions
 public import FLT.Mazur.HilbertSourceCoefficientwiseSurjectivity
 public import FLT.Mazur.HilbertSourceCompactRelation
@@ -6361,6 +6367,7 @@ public import FLT.Mazur.HilbertSourceNonstableOpenLifts
 public import FLT.Mazur.HilbertSourceOpenRelationLifts
 public import FLT.Mazur.HilbertSourceOriginalDomainComponents
 public import FLT.Mazur.HilbertSourceOriginalEquationNeighborhoods
+public import FLT.Mazur.HilbertSourceRankCutoffLifts
 public import FLT.Mazur.HilbertSourceValuativeBoundaryObstructions
 public import FLT.Mazur.HilbertStableFrameBoundary
 public import FLT.Mazur.HilbertSubframeAffineOverlap
