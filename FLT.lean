@@ -14418,6 +14418,7 @@ public import FLT.Mazur.WeierstrassInfinityChartCompatibility
 public import FLT.Mazur.WeierstrassInfinityChartSpecialization
 public import FLT.Mazur.WeierstrassInfinityCoordinateRegular
 public import FLT.Mazur.WeierstrassInfinityCubicDifference
+public import FLT.Mazur.WeierstrassInfinityCubicInverse
 public import FLT.Mazur.WeierstrassInfinityCubicResidualCoefficients
 public import FLT.Mazur.WeierstrassInfinityDenominatorShift
 public import FLT.Mazur.WeierstrassInfinityDividedLine
