@@ -4052,6 +4052,7 @@ public import FLT.Mazur.CyclicCharacteristicRetainedFaithfulness
 public import FLT.Mazur.CyclicCharacteristicRetainedFullParameter
 public import FLT.Mazur.CyclicCharacteristicRetainedParameter
 public import FLT.Mazur.CyclicCharacteristicTransitionCover
+public import FLT.Mazur.CyclicCharacteristicUnmarkedRelation
 public import FLT.Mazur.CyclicDivisorSubgroupCriterion
 public import FLT.Mazur.CyclicHomAffinePresentationInvariant
 public import FLT.Mazur.CyclicHomAuxiliaryScheme
