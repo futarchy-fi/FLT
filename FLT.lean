@@ -9010,6 +9010,7 @@ public import FLT.Mazur.PolygonCyclicBoundaryRefinement
 public import FLT.Mazur.PolygonCyclicBoundaryStandardContraction
 public import FLT.Mazur.PolygonCyclicBoundaryStandardContractionLine
 public import FLT.Mazur.PolygonCyclicBoundaryStandardDivisor
+public import FLT.Mazur.PolygonCyclicBoundaryStandardLabelLine
 public import FLT.Mazur.PolygonCyclicBoundaryStandardNormalization
 public import FLT.Mazur.PolygonCyclicBoundaryStandardTranslation
 public import FLT.Mazur.PolygonCyclicCocone
