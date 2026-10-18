@@ -12102,6 +12102,7 @@ public import FLT.Mazur.ValuationProjectiveNormalization
 public import FLT.Mazur.ValuationRingCompleteModel
 public import FLT.Mazur.ValuationRingHenselianModel
 public import FLT.Mazur.ValuationRingModel
+public import FLT.Mazur.ValuationSubringIntegralTests
 public import FLT.Mazur.ValuativeEnvelopeInterior
 public import FLT.Mazur.ValuativeHilbertParameterCriterion
 public import FLT.Mazur.ValuativePullbackSquare
