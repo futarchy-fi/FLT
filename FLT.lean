@@ -8086,6 +8086,7 @@ public import FLT.Mazur.PolygonArithmeticCyclicFactorRestriction
 public import FLT.Mazur.PolygonArithmeticCyclicFactors
 public import FLT.Mazur.PolygonArithmeticCyclicGeometry
 public import FLT.Mazur.PolygonArithmeticCyclicIteration
+public import FLT.Mazur.PolygonArithmeticCyclicNilpotence
 public import FLT.Mazur.PolygonArithmeticCyclicRestriction
 public import FLT.Mazur.PolygonArithmeticCyclicStability
 public import FLT.Mazur.PolygonArithmeticCyclicState
