@@ -4038,6 +4038,7 @@ public import FLT.Mazur.CyclicCharacteristicPrescribedCover
 public import FLT.Mazur.CyclicCharacteristicPrescribedNeighborhood
 public import FLT.Mazur.CyclicCharacteristicQuotient
 public import FLT.Mazur.CyclicCharacteristicQuotientCover
+public import FLT.Mazur.CyclicCharacteristicQuotientCoverage
 public import FLT.Mazur.CyclicCharacteristicQuotientFiniteType
 public import FLT.Mazur.CyclicCharacteristicQuotientGluing
 public import FLT.Mazur.CyclicCharacteristicRelabelSections
