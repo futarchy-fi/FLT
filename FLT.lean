@@ -11208,6 +11208,7 @@ public import FLT.Mazur.SchemeRelativeNilpotentKernel
 public import FLT.Mazur.SchemeRelativeNilpotentSections
 public import FLT.Mazur.SchemeScalarAvoidanceCover
 public import FLT.Mazur.SchemeScalarAvoidanceIdeal
+public import FLT.Mazur.SchemeScalarIntegralCover
 public import FLT.Mazur.SchemeScalarPrincipalNeighborhood
 public import FLT.Mazur.SchemeScalarPrincipalNeighborhoodFamily
 public import FLT.Mazur.SchemeSectionFamilyProduct
