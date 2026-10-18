@@ -8080,6 +8080,7 @@ public import FLT.Mazur.PolygonArithmeticCubicEquationReconstruction
 public import FLT.Mazur.PolygonArithmeticCyclicCancellation
 public import FLT.Mazur.PolygonArithmeticCyclicIteration
 public import FLT.Mazur.PolygonArithmeticCyclicRestriction
+public import FLT.Mazur.PolygonArithmeticCyclicStability
 public import FLT.Mazur.PolygonArithmeticCyclicState
 public import FLT.Mazur.PolygonArithmeticCyclicStep
 public import FLT.Mazur.PolygonArithmeticDegreeComplete
