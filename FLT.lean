@@ -6285,6 +6285,7 @@ public import FLT.Mazur.HilbertRebasedCompleteFrame
 public import FLT.Mazur.HilbertReindexedCoordinateRing
 public import FLT.Mazur.HilbertRepeatedMonomialChart
 public import FLT.Mazur.HilbertSameAmbientChartIso
+public import FLT.Mazur.HilbertSourceActionRelationGraph
 public import FLT.Mazur.HilbertSourceBadQuotientLifts
 public import FLT.Mazur.HilbertSourceCoefficientwiseSurjectivity
 public import FLT.Mazur.HilbertSourceCompactRelation
@@ -6293,6 +6294,7 @@ public import FLT.Mazur.HilbertSourceFiniteLinearOpenLifts
 public import FLT.Mazur.HilbertSourceFiniteOpenNumerators
 public import FLT.Mazur.HilbertSourceGeneratedLocalizedSurjectivity
 public import FLT.Mazur.HilbertSourceLocalizedOpenLift
+public import FLT.Mazur.HilbertSourceNonstableOpenLifts
 public import FLT.Mazur.HilbertSourceOpenRelationLifts
 public import FLT.Mazur.HilbertStableFrameBoundary
 public import FLT.Mazur.HilbertSubframeAffineOverlap
@@ -11134,6 +11136,7 @@ public import FLT.Mazur.SchemeOpenEnvelopeLocus
 public import FLT.Mazur.SchemeOpenPairBaseRestriction
 public import FLT.Mazur.SchemeOpenPairPrincipalRestriction
 public import FLT.Mazur.SchemeOpenPairRelationLifts
+public import FLT.Mazur.SchemeOpenPairSectionRestriction
 public import FLT.Mazur.SchemeOpenPushoutCharts
 public import FLT.Mazur.SchemeOpenPushoutCoverIso
 public import FLT.Mazur.SchemeOpenPushoutIntersection
@@ -11150,6 +11153,7 @@ public import FLT.Mazur.SchemeOriginalScalarCompactRelationLifts
 public import FLT.Mazur.SchemeOriginalScalarCorrectionFamily
 public import FLT.Mazur.SchemeOriginalScalarOpenCorrections
 public import FLT.Mazur.SchemeOriginalScalarPairOpenLifts
+public import FLT.Mazur.SchemeOriginalScalarUnstableOpenLifts
 public import FLT.Mazur.SchemeOverlapBaseChange
 public import FLT.Mazur.SchemeOverlapCocycleChart
 public import FLT.Mazur.SchemeOverlapCocycleDetection
@@ -11214,6 +11218,7 @@ public import FLT.Mazur.SchemeRelationFunctionDescent
 public import FLT.Mazur.SchemeRelationFunctionDiagram
 public import FLT.Mazur.SchemeRelationGeometricCertificate
 public import FLT.Mazur.SchemeRelationGeometricGround
+public import FLT.Mazur.SchemeRelationGraphOpenEquations
 public import FLT.Mazur.SchemeRelationInvariantAffineUniversal
 public import FLT.Mazur.SchemeRelationInvariantDomainIso
 public import FLT.Mazur.SchemeRelationInvariantDominant
@@ -11316,6 +11321,9 @@ public import FLT.Mazur.SchemeSplitSeedGroundChart
 public import FLT.Mazur.SchemeSplitSeedGroundComparison
 public import FLT.Mazur.SchemeSplitSeedGroundFiber
 public import FLT.Mazur.SchemeSplitUnramifiedSourceSeed
+public import FLT.Mazur.SchemeStableCoreInvariantSection
+public import FLT.Mazur.SchemeStableCoreScalarNeighborhood
+public import FLT.Mazur.SchemeStableOpenCore
 public import FLT.Mazur.SchemeTranslationNormFiber
 public import FLT.Mazur.SchemeTranslationNormGluing
 public import FLT.Mazur.SchemeTranslationNormLocal
