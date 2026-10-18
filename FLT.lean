@@ -3992,6 +3992,7 @@ public import FLT.Mazur.CyclicCharacteristicNormalizedSubgroup
 public import FLT.Mazur.CyclicCharacteristicOddNormalizedAuxiliary
 public import FLT.Mazur.CyclicCharacteristicOddNormalizedGenerator
 public import FLT.Mazur.CyclicCharacteristicOddParameterSource
+public import FLT.Mazur.CyclicCharacteristicOddRelabelSections
 public import FLT.Mazur.CyclicCharacteristicOddRelabeledAuxiliary
 public import FLT.Mazur.CyclicCharacteristicOddRelabeledGenerator
 public import FLT.Mazur.CyclicCharacteristicPrescribedCover
