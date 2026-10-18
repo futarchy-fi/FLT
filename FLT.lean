@@ -7510,6 +7510,7 @@ public import FLT.Mazur.OneGonCocone
 public import FLT.Mazur.OneGonCompleteBoundaryCartesian
 public import FLT.Mazur.OneGonCompleteBoundaryMarking
 public import FLT.Mazur.OneGonCompleteCyclicBoundaryParameters
+public import FLT.Mazur.OneGonCompleteUniversalCyclicFamily
 public import FLT.Mazur.OneGonCubicElimination
 public import FLT.Mazur.OneGonDenominatorEqualizer
 public import FLT.Mazur.OneGonFormalCoordinates
