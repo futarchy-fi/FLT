@@ -7585,6 +7585,7 @@ public import FLT.Mazur.OneGonNormalizationCoordinates
 public import FLT.Mazur.OneGonNormalizationFinite
 public import FLT.Mazur.OneGonNormalizationPullback
 public import FLT.Mazur.OneGonNormalizationTorus
+public import FLT.Mazur.OneGonOriginalGroupComparison
 public import FLT.Mazur.OneGonOverlap
 public import FLT.Mazur.OneGonOverlapGraph
 public import FLT.Mazur.OneGonPinchingDescent
