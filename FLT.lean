@@ -4046,6 +4046,7 @@ public import FLT.Mazur.CyclicCharacteristicQuotientCoverage
 public import FLT.Mazur.CyclicCharacteristicQuotientFiniteType
 public import FLT.Mazur.CyclicCharacteristicQuotientFlatDescent
 public import FLT.Mazur.CyclicCharacteristicQuotientGluing
+public import FLT.Mazur.CyclicCharacteristicQuotientOpens
 public import FLT.Mazur.CyclicCharacteristicQuotientUnmarkedDescent
 public import FLT.Mazur.CyclicCharacteristicRelabelSections
 public import FLT.Mazur.CyclicCharacteristicRelabeledPrescribedCover
