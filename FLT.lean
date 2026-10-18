@@ -13790,6 +13790,7 @@ public import FLT.Mazur.WeierstrassDividedRevisedClosingUnion
 public import FLT.Mazur.WeierstrassDividedRevisedExteriorEdges
 public import FLT.Mazur.WeierstrassDividedRevisedFirstRetained
 public import FLT.Mazur.WeierstrassDividedRevisedGlobalMap
+public import FLT.Mazur.WeierstrassDividedRevisedInfinityImage
 public import FLT.Mazur.WeierstrassDividedRevisedInfinityMap
 public import FLT.Mazur.WeierstrassDividedRevisedInitialBoundary
 public import FLT.Mazur.WeierstrassDividedRevisedInitialMaps
