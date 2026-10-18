@@ -11002,6 +11002,7 @@ public import FLT.Mazur.SchemeBadAffineCoverDenominators
 public import FLT.Mazur.SchemeBadAffineCoverEquations
 public import FLT.Mazur.SchemeBadAffineCoverFiniteType
 public import FLT.Mazur.SchemeBadAffineCoverLocalIntegral
+public import FLT.Mazur.SchemeBadAffineCoverReduced
 public import FLT.Mazur.SchemeBaseChangeLimit
 public import FLT.Mazur.SchemeCanonicalChartRecognition
 public import FLT.Mazur.SchemeCanonicalDescentData
