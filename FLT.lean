@@ -14090,6 +14090,7 @@ public import FLT.Mazur.WeierstrassDividedTwoNodeRestriction
 public import FLT.Mazur.WeierstrassDividedTwoOpenRestriction
 public import FLT.Mazur.WeierstrassDividedTwoSeedOrientation
 public import FLT.Mazur.WeierstrassDividedTwoSeedState
+public import FLT.Mazur.WeierstrassDividedVariableInitialIntersection
 public import FLT.Mazur.WeierstrassDividedZeroBoundaryFunctions
 public import FLT.Mazur.WeierstrassDividedZeroCycleAtlasAdjacentReduction
 public import FLT.Mazur.WeierstrassDividedZeroCycleAtlasCompatibility
