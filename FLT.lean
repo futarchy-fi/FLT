@@ -3981,6 +3981,7 @@ public import FLT.Mazur.CyclicCharacteristicEvenRelabeledGenerator
 public import FLT.Mazur.CyclicCharacteristicMarkedRelation
 public import FLT.Mazur.CyclicCharacteristicMarkedRelationAction
 public import FLT.Mazur.CyclicCharacteristicNormalizedAtlas
+public import FLT.Mazur.CyclicCharacteristicNormalizedAuxiliary
 public import FLT.Mazur.CyclicCharacteristicNormalizedGenerator
 public import FLT.Mazur.CyclicCharacteristicNormalizedModuli
 public import FLT.Mazur.CyclicCharacteristicNormalizedSubgroup
