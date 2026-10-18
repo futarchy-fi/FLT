@@ -7870,6 +7870,7 @@ public import FLT.Mazur.PolygonArithmeticRetainedChainNormalizedPunctures
 public import FLT.Mazur.PolygonArithmeticRetainedChainPositions
 public import FLT.Mazur.PolygonArithmeticRetainedChainPunctureIteration
 public import FLT.Mazur.PolygonArithmeticRetainedChainPunctureRestriction
+public import FLT.Mazur.PolygonArithmeticRetainedChainPunctureStability
 public import FLT.Mazur.PolygonArithmeticRetainedChainPunctures
 public import FLT.Mazur.PolygonArithmeticRetainedChainRestriction
 public import FLT.Mazur.PolygonArithmeticRetainedChainSplit
