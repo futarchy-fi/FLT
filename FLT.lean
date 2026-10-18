@@ -6293,10 +6293,13 @@ public import FLT.Mazur.HilbertReindexedCoordinateRing
 public import FLT.Mazur.HilbertRepeatedMonomialChart
 public import FLT.Mazur.HilbertSameAmbientChartIso
 public import FLT.Mazur.HilbertSourceActionRelationGraph
+public import FLT.Mazur.HilbertSourceBadAffineChartEquations
+public import FLT.Mazur.HilbertSourceBadAffineChartLifts
 public import FLT.Mazur.HilbertSourceBadQuotientLifts
 public import FLT.Mazur.HilbertSourceCoefficientwiseSurjectivity
 public import FLT.Mazur.HilbertSourceCompactRelation
 public import FLT.Mazur.HilbertSourceCompatibleModule
+public import FLT.Mazur.HilbertSourceConstructedBadAffineCover
 public import FLT.Mazur.HilbertSourceConstructedBadPrimeLifts
 public import FLT.Mazur.HilbertSourceConstructedBoundaryUnitCover
 public import FLT.Mazur.HilbertSourceConstructedDenominatorPrimes
@@ -10994,6 +10997,11 @@ public import FLT.Mazur.SchemeAffineTestProjectionRefinement
 public import FLT.Mazur.SchemeAffineTripleComparisonCocycle
 public import FLT.Mazur.SchemeAffineTripleRefinementFamily
 public import FLT.Mazur.SchemeAffinizationUniversal
+public import FLT.Mazur.SchemeBadAffineCover
+public import FLT.Mazur.SchemeBadAffineCoverDenominators
+public import FLT.Mazur.SchemeBadAffineCoverEquations
+public import FLT.Mazur.SchemeBadAffineCoverFiniteType
+public import FLT.Mazur.SchemeBadAffineCoverLocalIntegral
 public import FLT.Mazur.SchemeBaseChangeLimit
 public import FLT.Mazur.SchemeCanonicalChartRecognition
 public import FLT.Mazur.SchemeCanonicalDescentData
