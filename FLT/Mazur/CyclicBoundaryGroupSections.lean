@@ -26,32 +26,32 @@ variable {S : Scheme} (E : Over S) [GrpObj E] (n : ℕ) [NeZero n]
   {T : Scheme} (g : T ⟶ S) (f : Over.mk g ⟶ parameter E n)
 
 /-- All actual label sections, with their group law from the original parameter. -/
-def sectionMarking : Label n →* (𝟙_ (Over T) ⟶ (Over.pullback g).obj E) :=
+def boundaryGroupSectionMarking : Label n →* (𝟙_ (Over T) ⟶ (Over.pullback g).obj E) :=
   GroupMarkingBaseChange.marking g E (𝟙_ (Over T))
     (AuxiliaryLevel.markingOf E (Label n)
       ((Over.homMk (𝟙 T) (by simp) : (Over.map g).obj (𝟙_ (Over T)) ⟶ Over.mk g) ≫ f))
 
 /-- The group-valued marking retains exactly the existing actual section of each label. -/
-theorem sectionMarking_apply (j : Label n) :
-    sectionMarking E n g f j = markedSection E n g f j := by
+theorem boundaryGroupSectionMarking_apply (j : Label n) :
+    boundaryGroupSectionMarking E n g f j = markedSection E n g f j := by
   apply OverPullbackSection.hom_ext
-  rw [sectionMarking, GroupMarkingBaseChange.marking_fst, section_fst]
+  rw [boundaryGroupSectionMarking, GroupMarkingBaseChange.marking_fst, section_fst]
   change (𝟙 T ≫ f.left) ≫ (AuxiliaryLevel.value E (Label n) j).left = _
   rw [Category.id_comp]
 
 /-- The cyclic factor is a homomorphism in the actual pulled-back smooth group. -/
 def cyclicSectionMarking : Multiplicative (ZMod n) →*
     (𝟙_ (Over T) ⟶ (Over.pullback g).obj E) where
-  toFun j := sectionMarking E n g f (1, 1, j)
-  map_one' := (sectionMarking E n g f).map_one
+  toFun j := boundaryGroupSectionMarking E n g f (1, 1, j)
+  map_one' := (boundaryGroupSectionMarking E n g f).map_one
   map_mul' i j := by
     simpa only [Prod.mk_mul_mk, _root_.one_mul] using
-      (sectionMarking E n g f).map_mul (1, 1, i) (1, 1, j)
+      (boundaryGroupSectionMarking E n g f).map_mul (1, 1, i) (1, 1, j)
 
 /-- No section is changed by bundling its original cyclic group structure. -/
 theorem cyclicSectionMarking_apply (j : Multiplicative (ZMod n)) :
     cyclicSectionMarking E n g f j = markedSection E n g f (1, 1, j) :=
-  sectionMarking_apply E n g f (1, 1, j)
+  boundaryGroupSectionMarking_apply E n g f (1, 1, j)
 
 /-- The common finite action preserves the actual cyclic homomorphism by reindexing. -/
 theorem cyclicSectionMarking_action (e : CyclicCharacteristicAtlas.RelabelGroup n) :
