@@ -8839,6 +8839,7 @@ public import FLT.Mazur.PolygonCompletePrincipalClosedFiber
 public import FLT.Mazur.PolygonCompleteProjectiveRotation
 public import FLT.Mazur.PolygonCompleteRefinementPointLine
 public import FLT.Mazur.PolygonCompleteRefinementSquares
+public import FLT.Mazur.PolygonCompleteRelabeledPrescribedCharacteristicCover
 public import FLT.Mazur.PolygonCompleteRelativeSmoothDetection
 public import FLT.Mazur.PolygonCompleteRotatedIdentityClosed
 public import FLT.Mazur.PolygonCompleteRotatedIdentityCover
