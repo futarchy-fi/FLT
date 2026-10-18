@@ -4020,6 +4020,7 @@ public import FLT.Mazur.CyclicCharacteristicOddParameterSource
 public import FLT.Mazur.CyclicCharacteristicOddRelabelSections
 public import FLT.Mazur.CyclicCharacteristicOddRelabeledAuxiliary
 public import FLT.Mazur.CyclicCharacteristicOddRelabeledGenerator
+public import FLT.Mazur.CyclicCharacteristicParameterFiniteType
 public import FLT.Mazur.CyclicCharacteristicPrescribedCover
 public import FLT.Mazur.CyclicCharacteristicPrescribedNeighborhood
 public import FLT.Mazur.CyclicCharacteristicRelabelSections
