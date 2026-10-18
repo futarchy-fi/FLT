@@ -6238,6 +6238,7 @@ public import FLT.Mazur.HilbertSubframeBezoutNeighborhood
 public import FLT.Mazur.HilbertSubframeBoundaryLifts
 public import FLT.Mazur.HilbertSubframeConstructedUnitLift
 public import FLT.Mazur.HilbertSubframeNormalizedTransfer
+public import FLT.Mazur.HilbertSubframeStrictUnitCover
 public import FLT.Mazur.HilbertSubframeTransferCorrections
 public import FLT.Mazur.HilbertSubframeUnitNeighborhood
 public import FLT.Mazur.HilbertSubterminalTranslationEnvelope
