@@ -14424,6 +14424,7 @@ public import FLT.Mazur.WeierstrassDividedZeroSplitCycleSeparation
 public import FLT.Mazur.WeierstrassDividedZeroSplitNormalizationSurjective
 public import FLT.Mazur.WeierstrassDividedZeroSplitOriginalIdentity
 public import FLT.Mazur.WeierstrassDividedZeroSplitPointClassification
+public import FLT.Mazur.WeierstrassDividedZeroTerminalTransport
 public import FLT.Mazur.WeierstrassDividedZeroThirdAnnihilation
 public import FLT.Mazur.WeierstrassDividedZeroThirdAtlas
 public import FLT.Mazur.WeierstrassDividedZeroThirdAtlasClosing
