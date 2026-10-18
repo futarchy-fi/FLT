@@ -4999,6 +4999,8 @@ public import FLT.Mazur.ExactParameterLayer
 public import FLT.Mazur.ExactSourceDenominatorLift
 public import FLT.Mazur.ExtendedAffineRationalDensity
 public import FLT.Mazur.FCurveContracts
+public import FLT.Mazur.FaithfulMarkingPullbackSections
+public import FLT.Mazur.FaithfulMarkingSectionRelabeling
 public import FLT.Mazur.FaithfulNeighborhoodCurve
 public import FLT.Mazur.FaithfulTensorVanishing
 public import FLT.Mazur.FaithfullyFlatFinitePresentation
@@ -7515,6 +7517,7 @@ public import FLT.Mazur.OneGonCocone
 public import FLT.Mazur.OneGonCompleteBoundaryCartesian
 public import FLT.Mazur.OneGonCompleteBoundaryMarking
 public import FLT.Mazur.OneGonCompleteCyclicBoundaryParameters
+public import FLT.Mazur.OneGonCompleteUniversalCyclicFamily
 public import FLT.Mazur.OneGonCubicElimination
 public import FLT.Mazur.OneGonDenominatorEqualizer
 public import FLT.Mazur.OneGonFormalCoordinates
@@ -7548,7 +7551,11 @@ public import FLT.Mazur.OneGonSmoothingAuxiliaryOverlap
 public import FLT.Mazur.OneGonSmoothingChartIntersection
 public import FLT.Mazur.OneGonSmoothingClosedFiber
 public import FLT.Mazur.OneGonSmoothingCoefficientChange
+public import FLT.Mazur.OneGonSmoothingCyclicCartier
+public import FLT.Mazur.OneGonSmoothingCyclicIdeal
+public import FLT.Mazur.OneGonSmoothingCyclicRelabeling
 public import FLT.Mazur.OneGonSmoothingEquation
+public import FLT.Mazur.OneGonSmoothingFaithfulCyclicSubgroup
 public import FLT.Mazur.OneGonSmoothingFamily
 public import FLT.Mazur.OneGonSmoothingFieldFibers
 public import FLT.Mazur.OneGonSmoothingFullAuxiliaryMarking
@@ -7573,6 +7580,8 @@ public import FLT.Mazur.OneGonSmoothingPuncturedFamily
 public import FLT.Mazur.OneGonSmoothingPuncturedGroupAtlas
 public import FLT.Mazur.OneGonSmoothingPuncturedParameter
 public import FLT.Mazur.OneGonSmoothingPuncturedSchemeMarking
+public import FLT.Mazur.OneGonSmoothingRelativeGroup
+public import FLT.Mazur.OneGonSmoothingRelativeGroupSpecialization
 public import FLT.Mazur.OneGonSmoothingSchemeAuxiliaryMarking
 public import FLT.Mazur.OneGonSmoothingSchemeMarkingNaturality
 public import FLT.Mazur.OneGonSmoothingSchemeNormalizedGroup
@@ -15360,6 +15369,7 @@ public import FLT.Mazur.WeierstrassSmoothMixedRightReciprocalTriple
 public import FLT.Mazur.WeierstrassSmoothNegation
 public import FLT.Mazur.WeierstrassSmoothNegationGraphs
 public import FLT.Mazur.WeierstrassSmoothNonoppositePoints
+public import FLT.Mazur.WeierstrassSmoothOpenRelativeDimension
 public import FLT.Mazur.WeierstrassSmoothOrdinaryPointComparison
 public import FLT.Mazur.WeierstrassSmoothOriginalAffine
 public import FLT.Mazur.WeierstrassSmoothPairAffineDescent
