@@ -9013,6 +9013,7 @@ public import FLT.Mazur.PolygonCyclicBoundaryStandardComponentLine
 public import FLT.Mazur.PolygonCyclicBoundaryStandardContraction
 public import FLT.Mazur.PolygonCyclicBoundaryStandardContractionLine
 public import FLT.Mazur.PolygonCyclicBoundaryStandardDivisor
+public import FLT.Mazur.PolygonCyclicBoundaryStandardIncidence
 public import FLT.Mazur.PolygonCyclicBoundaryStandardLabelLine
 public import FLT.Mazur.PolygonCyclicBoundaryStandardNodeLine
 public import FLT.Mazur.PolygonCyclicBoundaryStandardNormalization
