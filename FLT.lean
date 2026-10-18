@@ -13896,6 +13896,7 @@ public import FLT.Mazur.WeierstrassDividedRevisedSeparation
 public import FLT.Mazur.WeierstrassDividedRevisedTargetBase
 public import FLT.Mazur.WeierstrassDividedRevisedTargetLabels
 public import FLT.Mazur.WeierstrassDividedRevisedTensorMaps
+public import FLT.Mazur.WeierstrassDividedRevisedTerminalBase
 public import FLT.Mazur.WeierstrassDividedRevisedTerminalReflection
 public import FLT.Mazur.WeierstrassDividedSecondAtlasNodeRestriction
 public import FLT.Mazur.WeierstrassDividedSecondJointAtlas
