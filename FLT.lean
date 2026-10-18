@@ -7543,6 +7543,7 @@ public import FLT.Mazur.OneGonSmoothingChartIntersection
 public import FLT.Mazur.OneGonSmoothingClosedFiber
 public import FLT.Mazur.OneGonSmoothingCoefficientChange
 public import FLT.Mazur.OneGonSmoothingEquation
+public import FLT.Mazur.OneGonSmoothingFaithfulCyclicSubgroup
 public import FLT.Mazur.OneGonSmoothingFamily
 public import FLT.Mazur.OneGonSmoothingFieldFibers
 public import FLT.Mazur.OneGonSmoothingFullAuxiliaryMarking
