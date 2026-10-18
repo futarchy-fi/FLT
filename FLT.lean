@@ -13376,6 +13376,7 @@ public import FLT.Mazur.WeierstrassDividedOlderZeroNodeBranches
 public import FLT.Mazur.WeierstrassDividedOneDiagonalAtlas
 public import FLT.Mazur.WeierstrassDividedOneDiagonalAtlasOverlaps
 public import FLT.Mazur.WeierstrassDividedOneDiagonalAtlasSystem
+public import FLT.Mazur.WeierstrassDividedOneDiagonalNodeRestriction
 public import FLT.Mazur.WeierstrassDividedOneDiagonalRestriction
 public import FLT.Mazur.WeierstrassDividedOneFiniteAtlas
 public import FLT.Mazur.WeierstrassDividedOneFiniteAtlasClosing
