@@ -12943,6 +12943,7 @@ public import FLT.Mazur.WeierstrassCoefficientShearTransport
 public import FLT.Mazur.WeierstrassCoefficientShearUnitSlope
 public import FLT.Mazur.WeierstrassCoefficientShearZeroConicAdjacent
 public import FLT.Mazur.WeierstrassCoefficientZero
+public import FLT.Mazur.WeierstrassComparisonCoefficientHom
 public import FLT.Mazur.WeierstrassComparisonPresentationBaseChange
 public import FLT.Mazur.WeierstrassConicCoefficientMap
 public import FLT.Mazur.WeierstrassConicCoefficientTransport
