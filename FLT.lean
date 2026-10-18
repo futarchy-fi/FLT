@@ -14475,6 +14475,7 @@ public import FLT.Mazur.WeierstrassDividedZeroCyclicGlobalMap
 public import FLT.Mazur.WeierstrassDividedZeroCyclicIndex
 public import FLT.Mazur.WeierstrassDividedZeroCyclicInverseMap
 public import FLT.Mazur.WeierstrassDividedZeroCyclicSeed
+public import FLT.Mazur.WeierstrassDividedZeroCyclicSourceBase
 public import FLT.Mazur.WeierstrassDividedZeroCyclicSourceCharts
 public import FLT.Mazur.WeierstrassDividedZeroCyclicSourceCover
 public import FLT.Mazur.WeierstrassDividedZeroCyclicSourceDesc
