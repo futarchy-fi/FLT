@@ -6705,6 +6705,7 @@ public import FLT.Mazur.KernelPairSourceBranchCriterion
 public import FLT.Mazur.KernelPairTestIso
 public import FLT.Mazur.KernelPairUnramifiedInverse
 public import FLT.Mazur.KernelPowerMarkingLift
+public import FLT.Mazur.KernelPowerRootLifting
 public import FLT.Mazur.KernelPowerTorsionLifting
 public import FLT.Mazur.LargeDegreeRelativeLineSections
 public import FLT.Mazur.LaurentBoundaryCorrectionNaturality
@@ -9644,6 +9645,7 @@ public import FLT.Mazur.PolygonVariableSmoothingChartIdentification
 public import FLT.Mazur.PolygonVariableSmoothingDiagram
 public import FLT.Mazur.PolygonVariableSmoothingEdgeIntersection
 public import FLT.Mazur.PolygonVariableSmoothingFamily
+public import FLT.Mazur.PolygonVariableSmoothingIdentifiedIntersections
 public import FLT.Mazur.PolygonVariableSmoothingIntersections
 public import FLT.Mazur.PolygonVariableSmoothingRestriction
 public import FLT.Mazur.PolygonVeroneseAdicProjSquare
@@ -11592,6 +11594,7 @@ public import FLT.Mazur.SmoothHilbertSourcePullback
 public import FLT.Mazur.SmoothHilbertSourceRepresentable
 public import FLT.Mazur.SmoothHilbertTestCover
 public import FLT.Mazur.SmoothInvariantOpenAllEtaleLifts
+public import FLT.Mazur.SmoothLocalNilpotentLift
 public import FLT.Mazur.SmoothNodalFamilyDimension
 public import FLT.Mazur.SmoothNonspecialDivisorCover
 public import FLT.Mazur.SmoothNonspecialDivisorLift
@@ -13861,6 +13864,8 @@ public import FLT.Mazur.WeierstrassDividedRevisedInfinityMap
 public import FLT.Mazur.WeierstrassDividedRevisedInitialBoundary
 public import FLT.Mazur.WeierstrassDividedRevisedInitialIntersection
 public import FLT.Mazur.WeierstrassDividedRevisedInitialMaps
+public import FLT.Mazur.WeierstrassDividedRevisedInitialReflection
+public import FLT.Mazur.WeierstrassDividedRevisedInitialRetainedReflection
 public import FLT.Mazur.WeierstrassDividedRevisedLabeledMaps
 public import FLT.Mazur.WeierstrassDividedRevisedLocalIso
 public import FLT.Mazur.WeierstrassDividedRevisedNodeCoverage
@@ -13869,6 +13874,7 @@ public import FLT.Mazur.WeierstrassDividedRevisedPolygonEdges
 public import FLT.Mazur.WeierstrassDividedRevisedPolygonParameters
 public import FLT.Mazur.WeierstrassDividedRevisedPolygonRestriction
 public import FLT.Mazur.WeierstrassDividedRevisedRetainedMaps
+public import FLT.Mazur.WeierstrassDividedRevisedRetainedTargetIntersection
 public import FLT.Mazur.WeierstrassDividedRevisedTensorMaps
 public import FLT.Mazur.WeierstrassDividedSecondAtlasNodeRestriction
 public import FLT.Mazur.WeierstrassDividedSecondJointAtlas
@@ -14116,6 +14122,8 @@ public import FLT.Mazur.WeierstrassDividedTwoNodeRestriction
 public import FLT.Mazur.WeierstrassDividedTwoOpenRestriction
 public import FLT.Mazur.WeierstrassDividedTwoSeedOrientation
 public import FLT.Mazur.WeierstrassDividedTwoSeedState
+public import FLT.Mazur.WeierstrassDividedVariableInitialIntersection
+public import FLT.Mazur.WeierstrassDividedVariableRetainedIntersection
 public import FLT.Mazur.WeierstrassDividedZeroBoundaryFunctions
 public import FLT.Mazur.WeierstrassDividedZeroCycleAtlasAdjacentReduction
 public import FLT.Mazur.WeierstrassDividedZeroCycleAtlasCompatibility
@@ -15326,6 +15334,8 @@ public import FLT.Mazur.WeierstrassSmoothAdditionIdentity
 public import FLT.Mazur.WeierstrassSmoothAdditionInverse
 public import FLT.Mazur.WeierstrassSmoothAdditionOriginalFormulas
 public import FLT.Mazur.WeierstrassSmoothAdditionOutputRegular
+public import FLT.Mazur.WeierstrassSmoothAdicReduction
+public import FLT.Mazur.WeierstrassSmoothAdicRoots
 public import FLT.Mazur.WeierstrassSmoothAffineAddition
 public import FLT.Mazur.WeierstrassSmoothAffineCommutativity
 public import FLT.Mazur.WeierstrassSmoothAffineCover
@@ -15399,6 +15409,8 @@ public import FLT.Mazur.WeierstrassSmoothHorizontalTensorAction
 public import FLT.Mazur.WeierstrassSmoothHorizontalTensorGlobalAction
 public import FLT.Mazur.WeierstrassSmoothHorizontalTensorInput
 public import FLT.Mazur.WeierstrassSmoothHorizontalUnitEvaluation
+public import FLT.Mazur.WeierstrassSmoothInfinitesimalAddition
+public import FLT.Mazur.WeierstrassSmoothInfinitesimalPoints
 public import FLT.Mazur.WeierstrassSmoothInfinityCommutativity
 public import FLT.Mazur.WeierstrassSmoothInfinityDomain
 public import FLT.Mazur.WeierstrassSmoothInfinityIdentity
@@ -15408,6 +15420,7 @@ public import FLT.Mazur.WeierstrassSmoothInputOutputRegular
 public import FLT.Mazur.WeierstrassSmoothInputSwap
 public import FLT.Mazur.WeierstrassSmoothLocalInverse
 public import FLT.Mazur.WeierstrassSmoothLocalOutputRegular
+public import FLT.Mazur.WeierstrassSmoothLocalRootLift
 public import FLT.Mazur.WeierstrassSmoothMixedAddition
 public import FLT.Mazur.WeierstrassSmoothMixedCommutativity
 public import FLT.Mazur.WeierstrassSmoothMixedCover
@@ -15427,6 +15440,8 @@ public import FLT.Mazur.WeierstrassSmoothProductOpen
 public import FLT.Mazur.WeierstrassSmoothProjectiveGroup
 public import FLT.Mazur.WeierstrassSmoothReciprocalTriple
 public import FLT.Mazur.WeierstrassSmoothSevenPoints
+public import FLT.Mazur.WeierstrassSmoothSquareZeroKernel
+public import FLT.Mazur.WeierstrassSmoothSquareZeroPowers
 public import FLT.Mazur.WeierstrassSmoothSuccessiveIntegralCubicMaps
 public import FLT.Mazur.WeierstrassSmoothSuccessiveIntegralRegular
 public import FLT.Mazur.WeierstrassSmoothSuccessiveIntegralResiduePoint
@@ -15439,6 +15454,7 @@ public import FLT.Mazur.WeierstrassSmoothSuccessiveTensorOutput
 public import FLT.Mazur.WeierstrassSmoothSuccessiveTransportedTensorInput
 public import FLT.Mazur.WeierstrassSmoothSuccessiveZeroConicInput
 public import FLT.Mazur.WeierstrassSmoothSuccessiveZeroConicOutput
+public import FLT.Mazur.WeierstrassSmoothSurjectiveKernel
 public import FLT.Mazur.WeierstrassSmoothTransportedComparison
 public import FLT.Mazur.WeierstrassSmoothTransportedCover
 public import FLT.Mazur.WeierstrassSmoothTransportedOutputRegular
