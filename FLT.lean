@@ -14447,6 +14447,7 @@ public import FLT.Mazur.WeierstrassDividedZeroCyclicIndex
 public import FLT.Mazur.WeierstrassDividedZeroCyclicSeed
 public import FLT.Mazur.WeierstrassDividedZeroCyclicSourceCharts
 public import FLT.Mazur.WeierstrassDividedZeroCyclicSourceCover
+public import FLT.Mazur.WeierstrassDividedZeroCyclicSourceDesc
 public import FLT.Mazur.WeierstrassDividedZeroCyclicSourceEdges
 public import FLT.Mazur.WeierstrassDividedZeroCyclicStandard
 public import FLT.Mazur.WeierstrassDividedZeroCyclicStandardMaps
