@@ -7831,6 +7831,7 @@ public import FLT.Mazur.OriginalPrimeIntegralGenerators
 public import FLT.Mazur.OriginalPrimeIntegralLocus
 public import FLT.Mazur.OriginalPrimeIntegralMinimalPrimes
 public import FLT.Mazur.OriginalPrimeIntegralNilpotents
+public import FLT.Mazur.OriginalPrimeIntegralValuationTests
 public import FLT.Mazur.OriginalPrimeQuotientEquations
 public import FLT.Mazur.OriginalRestrictedHilbertIntersection
 public import FLT.Mazur.OriginalScalarFiniteLinearLifts
