@@ -7306,6 +7306,7 @@ public import FLT.Mazur.OddWeierstrassCyclicHomLocusRelationLaws
 public import FLT.Mazur.OddWeierstrassCyclicHomLocusRelationRelabel
 public import FLT.Mazur.OddWeierstrassCyclicHomMarkedFamilyRelation
 public import FLT.Mazur.OddWeierstrassCyclicHomMarkedGroupRigidity
+public import FLT.Mazur.OddWeierstrassCyclicHomMarkedIsoParameterTransport
 public import FLT.Mazur.OddWeierstrassCyclicHomMarkedIsoPullback
 public import FLT.Mazur.OddWeierstrassCyclicHomMarkedSubgroupRelation
 public import FLT.Mazur.OddWeierstrassCyclicHomMarkedSubgroupRigidity
