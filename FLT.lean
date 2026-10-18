@@ -13895,6 +13895,7 @@ public import FLT.Mazur.WeierstrassDividedTwoFiniteGeometry
 public import FLT.Mazur.WeierstrassDividedTwoFiniteNodes
 public import FLT.Mazur.WeierstrassDividedTwoFiniteResiduals
 public import FLT.Mazur.WeierstrassDividedTwoFiniteState
+public import FLT.Mazur.WeierstrassDividedTwoFiniteTransitions
 public import FLT.Mazur.WeierstrassDividedTwoSeedOrientation
 public import FLT.Mazur.WeierstrassDividedTwoSeedState
 public import FLT.Mazur.WeierstrassDividedZeroBoundaryFunctions
