@@ -5595,6 +5595,7 @@ public import FLT.Mazur.FullDivisorFlatFppfDescent
 public import FLT.Mazur.FullHilbertIntersectionSeparablePoints
 public import FLT.Mazur.FunctionSheafGradedBaseAlgebra
 public import FLT.Mazur.FunctionSheafGradedSections
+public import FLT.Mazur.GeneralizedComparisonPullbackCoherence
 public import FLT.Mazur.GeneralizedCurveAmpleBaseChange
 public import FLT.Mazur.GeneralizedCurveAmpleDescent
 public import FLT.Mazur.GeneralizedCurveAmpleSubgroup
