@@ -6290,6 +6290,7 @@ public import FLT.Mazur.HilbertRebasedCompleteFrame
 public import FLT.Mazur.HilbertReindexedCoordinateRing
 public import FLT.Mazur.HilbertRepeatedMonomialChart
 public import FLT.Mazur.HilbertSameAmbientChartIso
+public import FLT.Mazur.HilbertSourceActionRelationGraph
 public import FLT.Mazur.HilbertSourceBadQuotientLifts
 public import FLT.Mazur.HilbertSourceCoefficientwiseSurjectivity
 public import FLT.Mazur.HilbertSourceCompactRelation
@@ -6298,6 +6299,7 @@ public import FLT.Mazur.HilbertSourceFiniteLinearOpenLifts
 public import FLT.Mazur.HilbertSourceFiniteOpenNumerators
 public import FLT.Mazur.HilbertSourceGeneratedLocalizedSurjectivity
 public import FLT.Mazur.HilbertSourceLocalizedOpenLift
+public import FLT.Mazur.HilbertSourceNonstableOpenLifts
 public import FLT.Mazur.HilbertSourceOpenRelationLifts
 public import FLT.Mazur.HilbertStableFrameBoundary
 public import FLT.Mazur.HilbertSubframeAffineOverlap
@@ -9650,6 +9652,7 @@ public import FLT.Mazur.PolygonVariableSmoothingChartIdentification
 public import FLT.Mazur.PolygonVariableSmoothingDiagram
 public import FLT.Mazur.PolygonVariableSmoothingEdgeIntersection
 public import FLT.Mazur.PolygonVariableSmoothingFamily
+public import FLT.Mazur.PolygonVariableSmoothingIdentifiedIntersections
 public import FLT.Mazur.PolygonVariableSmoothingIntersections
 public import FLT.Mazur.PolygonVariableSmoothingRestriction
 public import FLT.Mazur.PolygonVeroneseAdicProjSquare
@@ -11140,6 +11143,7 @@ public import FLT.Mazur.SchemeOpenEnvelopeLocus
 public import FLT.Mazur.SchemeOpenPairBaseRestriction
 public import FLT.Mazur.SchemeOpenPairPrincipalRestriction
 public import FLT.Mazur.SchemeOpenPairRelationLifts
+public import FLT.Mazur.SchemeOpenPairSectionRestriction
 public import FLT.Mazur.SchemeOpenPushoutCharts
 public import FLT.Mazur.SchemeOpenPushoutCoverIso
 public import FLT.Mazur.SchemeOpenPushoutIntersection
@@ -11156,6 +11160,7 @@ public import FLT.Mazur.SchemeOriginalScalarCompactRelationLifts
 public import FLT.Mazur.SchemeOriginalScalarCorrectionFamily
 public import FLT.Mazur.SchemeOriginalScalarOpenCorrections
 public import FLT.Mazur.SchemeOriginalScalarPairOpenLifts
+public import FLT.Mazur.SchemeOriginalScalarUnstableOpenLifts
 public import FLT.Mazur.SchemeOverlapBaseChange
 public import FLT.Mazur.SchemeOverlapCocycleChart
 public import FLT.Mazur.SchemeOverlapCocycleDetection
@@ -11220,6 +11225,7 @@ public import FLT.Mazur.SchemeRelationFunctionDescent
 public import FLT.Mazur.SchemeRelationFunctionDiagram
 public import FLT.Mazur.SchemeRelationGeometricCertificate
 public import FLT.Mazur.SchemeRelationGeometricGround
+public import FLT.Mazur.SchemeRelationGraphOpenEquations
 public import FLT.Mazur.SchemeRelationInvariantAffineUniversal
 public import FLT.Mazur.SchemeRelationInvariantDomainIso
 public import FLT.Mazur.SchemeRelationInvariantDominant
@@ -11322,6 +11328,9 @@ public import FLT.Mazur.SchemeSplitSeedGroundChart
 public import FLT.Mazur.SchemeSplitSeedGroundComparison
 public import FLT.Mazur.SchemeSplitSeedGroundFiber
 public import FLT.Mazur.SchemeSplitUnramifiedSourceSeed
+public import FLT.Mazur.SchemeStableCoreInvariantSection
+public import FLT.Mazur.SchemeStableCoreScalarNeighborhood
+public import FLT.Mazur.SchemeStableOpenCore
 public import FLT.Mazur.SchemeTranslationNormFiber
 public import FLT.Mazur.SchemeTranslationNormGluing
 public import FLT.Mazur.SchemeTranslationNormLocal
@@ -13863,6 +13872,8 @@ public import FLT.Mazur.WeierstrassDividedRevisedInfinityMap
 public import FLT.Mazur.WeierstrassDividedRevisedInitialBoundary
 public import FLT.Mazur.WeierstrassDividedRevisedInitialIntersection
 public import FLT.Mazur.WeierstrassDividedRevisedInitialMaps
+public import FLT.Mazur.WeierstrassDividedRevisedInitialReflection
+public import FLT.Mazur.WeierstrassDividedRevisedInitialRetainedReflection
 public import FLT.Mazur.WeierstrassDividedRevisedLabeledMaps
 public import FLT.Mazur.WeierstrassDividedRevisedLocalIso
 public import FLT.Mazur.WeierstrassDividedRevisedNodeCoverage
@@ -13871,6 +13882,7 @@ public import FLT.Mazur.WeierstrassDividedRevisedPolygonEdges
 public import FLT.Mazur.WeierstrassDividedRevisedPolygonParameters
 public import FLT.Mazur.WeierstrassDividedRevisedPolygonRestriction
 public import FLT.Mazur.WeierstrassDividedRevisedRetainedMaps
+public import FLT.Mazur.WeierstrassDividedRevisedRetainedTargetIntersection
 public import FLT.Mazur.WeierstrassDividedRevisedTensorMaps
 public import FLT.Mazur.WeierstrassDividedSecondAtlasNodeRestriction
 public import FLT.Mazur.WeierstrassDividedSecondJointAtlas
@@ -14118,6 +14130,8 @@ public import FLT.Mazur.WeierstrassDividedTwoNodeRestriction
 public import FLT.Mazur.WeierstrassDividedTwoOpenRestriction
 public import FLT.Mazur.WeierstrassDividedTwoSeedOrientation
 public import FLT.Mazur.WeierstrassDividedTwoSeedState
+public import FLT.Mazur.WeierstrassDividedVariableInitialIntersection
+public import FLT.Mazur.WeierstrassDividedVariableRetainedIntersection
 public import FLT.Mazur.WeierstrassDividedZeroBoundaryFunctions
 public import FLT.Mazur.WeierstrassDividedZeroCycleAtlasAdjacentReduction
 public import FLT.Mazur.WeierstrassDividedZeroCycleAtlasCompatibility
