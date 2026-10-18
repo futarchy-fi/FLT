@@ -7644,6 +7644,7 @@ public import FLT.Mazur.OneGonSmoothingZeroCocone
 public import FLT.Mazur.OneGonSmoothingZeroFiber
 public import FLT.Mazur.OneGonSmoothingZeroGenus
 public import FLT.Mazur.OneGonTransition
+public import FLT.Mazur.OneGonZeroTorusComparison
 public import FLT.Mazur.OpenAtlasTripleGluing
 public import FLT.Mazur.OpenChartSectionPullback
 public import FLT.Mazur.OpenCoverDimension
