@@ -14444,6 +14444,7 @@ public import FLT.Mazur.WeierstrassInfinityInputTriple
 public import FLT.Mazur.WeierstrassInfinityInverseCover
 public import FLT.Mazur.WeierstrassInfinityInverseNeighborhood
 public import FLT.Mazur.WeierstrassInfinityInverseScheme
+public import FLT.Mazur.WeierstrassInfinityLaurentEquiv
 public import FLT.Mazur.WeierstrassInfinityLaurentMaps
 public import FLT.Mazur.WeierstrassInfinityLaurentPuncture
 public import FLT.Mazur.WeierstrassInfinityLineCoordinates
