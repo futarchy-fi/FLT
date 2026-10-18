@@ -3972,6 +3972,7 @@ public import FLT.Mazur.CurveUniformFieldDegreeBound
 public import FLT.Mazur.CuspCollision
 public import FLT.Mazur.CuspOrderNumerator
 public import FLT.Mazur.CyclicAuxiliaryPrescribedNormalizedNeighborhood
+public import FLT.Mazur.CyclicBoundaryGroupSections
 public import FLT.Mazur.CyclicBoundaryOriginalMarkings
 public import FLT.Mazur.CyclicBoundaryParameterAction
 public import FLT.Mazur.CyclicBoundaryParameterSections
@@ -4763,6 +4764,7 @@ public import FLT.Mazur.EquivalenceRelationBoundaryActionGeometry
 public import FLT.Mazur.EquivalenceRelationBoundaryChartTests
 public import FLT.Mazur.EquivalenceRelationBoundaryChartTransport
 public import FLT.Mazur.EquivalenceRelationBoundaryCoefficients
+public import FLT.Mazur.EquivalenceRelationBoundaryFaithfulDifferences
 public import FLT.Mazur.EquivalenceRelationBoundaryLabelChange
 public import FLT.Mazur.EquivalenceRelationBoundaryLabelCoefficients
 public import FLT.Mazur.EquivalenceRelationBoundaryLabelRefinement
@@ -4997,6 +4999,8 @@ public import FLT.Mazur.ExactParameterLayer
 public import FLT.Mazur.ExactSourceDenominatorLift
 public import FLT.Mazur.ExtendedAffineRationalDensity
 public import FLT.Mazur.FCurveContracts
+public import FLT.Mazur.FaithfulMarkingPullbackSections
+public import FLT.Mazur.FaithfulMarkingSectionRelabeling
 public import FLT.Mazur.FaithfulNeighborhoodCurve
 public import FLT.Mazur.FaithfulTensorVanishing
 public import FLT.Mazur.FaithfullyFlatFinitePresentation
@@ -6278,6 +6282,9 @@ public import FLT.Mazur.HilbertRebasedCompleteFrame
 public import FLT.Mazur.HilbertReindexedCoordinateRing
 public import FLT.Mazur.HilbertRepeatedMonomialChart
 public import FLT.Mazur.HilbertSameAmbientChartIso
+public import FLT.Mazur.HilbertSourceCompactRelation
+public import FLT.Mazur.HilbertSourceFiniteOpenNumerators
+public import FLT.Mazur.HilbertSourceLocalizedOpenLift
 public import FLT.Mazur.HilbertSourceOpenRelationLifts
 public import FLT.Mazur.HilbertStableFrameBoundary
 public import FLT.Mazur.HilbertSubframeAffineOverlap
@@ -6298,6 +6305,7 @@ public import FLT.Mazur.HilbertSubframeExchangeObstruction
 public import FLT.Mazur.HilbertSubframeLocalizedEmbeddingLifts
 public import FLT.Mazur.HilbertSubframeNormalizedTransfer
 public import FLT.Mazur.HilbertSubframeOpenImagePrimeCorrections
+public import FLT.Mazur.HilbertSubframeOpenSourcePrimeVanishing
 public import FLT.Mazur.HilbertSubframeOriginalLocalization
 public import FLT.Mazur.HilbertSubframeOriginalScalars
 public import FLT.Mazur.HilbertSubframePrincipalExchangeExtension
@@ -6305,6 +6313,8 @@ public import FLT.Mazur.HilbertSubframeRelationImageLifts
 public import FLT.Mazur.HilbertSubframeRelationMixedCorrections
 public import FLT.Mazur.HilbertSubframeScalarLinearMaps
 public import FLT.Mazur.HilbertSubframeScalarObstruction
+public import FLT.Mazur.HilbertSubframeScaledMixedCorrections
+public import FLT.Mazur.HilbertSubframeScaledRelationImage
 public import FLT.Mazur.HilbertSubframeStrictUnitCover
 public import FLT.Mazur.HilbertSubframeTransferCorrections
 public import FLT.Mazur.HilbertSubframeUnitNeighborhood
@@ -7507,6 +7517,7 @@ public import FLT.Mazur.OneGonCocone
 public import FLT.Mazur.OneGonCompleteBoundaryCartesian
 public import FLT.Mazur.OneGonCompleteBoundaryMarking
 public import FLT.Mazur.OneGonCompleteCyclicBoundaryParameters
+public import FLT.Mazur.OneGonCompleteUniversalCyclicFamily
 public import FLT.Mazur.OneGonCubicElimination
 public import FLT.Mazur.OneGonDenominatorEqualizer
 public import FLT.Mazur.OneGonFormalCoordinates
@@ -7540,7 +7551,11 @@ public import FLT.Mazur.OneGonSmoothingAuxiliaryOverlap
 public import FLT.Mazur.OneGonSmoothingChartIntersection
 public import FLT.Mazur.OneGonSmoothingClosedFiber
 public import FLT.Mazur.OneGonSmoothingCoefficientChange
+public import FLT.Mazur.OneGonSmoothingCyclicCartier
+public import FLT.Mazur.OneGonSmoothingCyclicIdeal
+public import FLT.Mazur.OneGonSmoothingCyclicRelabeling
 public import FLT.Mazur.OneGonSmoothingEquation
+public import FLT.Mazur.OneGonSmoothingFaithfulCyclicSubgroup
 public import FLT.Mazur.OneGonSmoothingFamily
 public import FLT.Mazur.OneGonSmoothingFieldFibers
 public import FLT.Mazur.OneGonSmoothingFullAuxiliaryMarking
@@ -7565,6 +7580,8 @@ public import FLT.Mazur.OneGonSmoothingPuncturedFamily
 public import FLT.Mazur.OneGonSmoothingPuncturedGroupAtlas
 public import FLT.Mazur.OneGonSmoothingPuncturedParameter
 public import FLT.Mazur.OneGonSmoothingPuncturedSchemeMarking
+public import FLT.Mazur.OneGonSmoothingRelativeGroup
+public import FLT.Mazur.OneGonSmoothingRelativeGroupSpecialization
 public import FLT.Mazur.OneGonSmoothingSchemeAuxiliaryMarking
 public import FLT.Mazur.OneGonSmoothingSchemeMarkingNaturality
 public import FLT.Mazur.OneGonSmoothingSchemeNormalizedGroup
@@ -7735,6 +7752,7 @@ public import FLT.Mazur.OriginalGeometricallyIntegralOpen
 public import FLT.Mazur.OriginalHilbertFiniteType
 public import FLT.Mazur.OriginalInvariantOpenAllEtaleLifts
 public import FLT.Mazur.OriginalRestrictedHilbertIntersection
+public import FLT.Mazur.OriginalScalarFiniteRelationNumerators
 public import FLT.Mazur.OriginalSchemeDetectingOpen
 public import FLT.Mazur.OriginalSmoothDetectingEtaleLift
 public import FLT.Mazur.OriginalSmoothFiberAllLifts
@@ -8056,6 +8074,7 @@ public import FLT.Mazur.PolygonBoundaryClosedLayer
 public import FLT.Mazur.PolygonBoundaryClosedLifting
 public import FLT.Mazur.PolygonBoundaryCoefficientNaturality
 public import FLT.Mazur.PolygonBoundaryCoefficientScalars
+public import FLT.Mazur.PolygonBoundaryCyclicSubgroup
 public import FLT.Mazur.PolygonBoundaryDegreeFinite
 public import FLT.Mazur.PolygonBoundaryDivisor
 public import FLT.Mazur.PolygonBoundaryGradedExactness
@@ -8178,6 +8197,13 @@ public import FLT.Mazur.PolygonCompleteBoundaryQuotientTransition
 public import FLT.Mazur.PolygonCompleteBoundaryRefinement
 public import FLT.Mazur.PolygonCompleteBoundarySectionProjection
 public import FLT.Mazur.PolygonCompleteBoundarySectionTransport
+public import FLT.Mazur.PolygonCompleteBoundarySubgroupCurve
+public import FLT.Mazur.PolygonCompleteBoundarySubgroupIso
+public import FLT.Mazur.PolygonCompleteBoundaryTestDivisor
+public import FLT.Mazur.PolygonCompleteBoundaryTestFaithful
+public import FLT.Mazur.PolygonCompleteBoundaryTestMarking
+public import FLT.Mazur.PolygonCompleteBoundaryTestRotation
+public import FLT.Mazur.PolygonCompleteBoundaryTestSubgroup
 public import FLT.Mazur.PolygonCompleteBoundaryTransitionCoherence
 public import FLT.Mazur.PolygonCompleteBoundaryTranslation
 public import FLT.Mazur.PolygonCompleteCartesianMarkings
@@ -10409,6 +10435,7 @@ public import FLT.Mazur.RelativeCoproductPullCover
 public import FLT.Mazur.RelativeCyclicSubgroup
 public import FLT.Mazur.RelativeCyclicSubgroupComparison
 public import FLT.Mazur.RelativeCyclicSubgroupPullbackComparison
+public import FLT.Mazur.RelativeCyclicSubgroupSmoothOpen
 public import FLT.Mazur.RelativeDimensionBaseChangeOpen
 public import FLT.Mazur.RelativeDirectImageComposition
 public import FLT.Mazur.RelativeDirectImageForgetting
@@ -11148,6 +11175,7 @@ public import FLT.Mazur.SchemeRegularNormProducts
 public import FLT.Mazur.SchemeRelationArrowTransport
 public import FLT.Mazur.SchemeRelationCoefficientDiagram
 public import FLT.Mazur.SchemeRelationCoverSourceFunctions
+public import FLT.Mazur.SchemeRelationDoubleCompact
 public import FLT.Mazur.SchemeRelationDoubleRestriction
 public import FLT.Mazur.SchemeRelationEtaleBranchPropagation
 public import FLT.Mazur.SchemeRelationEtaleCoverDescent
@@ -15352,6 +15380,7 @@ public import FLT.Mazur.WeierstrassSmoothMixedRightReciprocalTriple
 public import FLT.Mazur.WeierstrassSmoothNegation
 public import FLT.Mazur.WeierstrassSmoothNegationGraphs
 public import FLT.Mazur.WeierstrassSmoothNonoppositePoints
+public import FLT.Mazur.WeierstrassSmoothOpenRelativeDimension
 public import FLT.Mazur.WeierstrassSmoothOrdinaryPointComparison
 public import FLT.Mazur.WeierstrassSmoothOriginalAffine
 public import FLT.Mazur.WeierstrassSmoothPairAffineDescent
