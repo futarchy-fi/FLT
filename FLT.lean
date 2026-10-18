@@ -6097,6 +6097,7 @@ public import FLT.Mazur.HilbertOrbitBoundarySourceErrorCriterion
 public import FLT.Mazur.HilbertOrbitMixedBoundaryKernel
 public import FLT.Mazur.HilbertOrbitMixedBoundaryProjection
 public import FLT.Mazur.HilbertOrbitMixedResidualSplitting
+public import FLT.Mazur.HilbertOrbitOffDiagonalCorrectionEquations
 public import FLT.Mazur.HilbertOrbitRelativeBoundaryFiniteness
 public import FLT.Mazur.HilbertOrbitRelativeFiniteLifts
 public import FLT.Mazur.HilbertOrbitRelativeFiniteTests
