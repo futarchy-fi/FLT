@@ -7826,6 +7826,7 @@ public import FLT.Mazur.PolygonArithmeticSimultaneousCancellation
 public import FLT.Mazur.PolygonArithmeticSimultaneousFactors
 public import FLT.Mazur.PolygonArithmeticSimultaneousFinitePunctures
 public import FLT.Mazur.PolygonArithmeticSimultaneousFiniteResiduals
+public import FLT.Mazur.PolygonArithmeticSimultaneousFiniteRestriction
 public import FLT.Mazur.PolygonArithmeticSimultaneousIteration
 public import FLT.Mazur.PolygonArithmeticSimultaneousPunctureIteration
 public import FLT.Mazur.PolygonArithmeticSimultaneousPunctureRestriction
