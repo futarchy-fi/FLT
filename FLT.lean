@@ -4772,6 +4772,8 @@ public import FLT.Mazur.EquivalenceRelationCompleteThickeningTower
 public import FLT.Mazur.EquivalenceRelationCompleteThickenings
 public import FLT.Mazur.EquivalenceRelationCompleteVanishingOpen
 public import FLT.Mazur.EquivalenceRelationConnectedCompleteTests
+public import FLT.Mazur.EquivalenceRelationEqualFrameCorrections
+public import FLT.Mazur.EquivalenceRelationEqualFrameOverlap
 public import FLT.Mazur.EquivalenceRelationFiberPermutationSections
 public import FLT.Mazur.EquivalenceRelationFiberRebase
 public import FLT.Mazur.EquivalenceRelationFiniteChartMultipliers
@@ -4843,6 +4845,7 @@ public import FLT.Mazur.EquivalenceRelationResidualScalarExtension
 public import FLT.Mazur.EquivalenceRelationResidualSectionExtension
 public import FLT.Mazur.EquivalenceRelationRestrictedActionGraphs
 public import FLT.Mazur.EquivalenceRelationSectionRebase
+public import FLT.Mazur.EquivalenceRelationSelfEmbeddingAction
 public import FLT.Mazur.EquivalenceRelationSourceRefinement
 public import FLT.Mazur.EquivalenceRelationSourceRestriction
 public import FLT.Mazur.EquivalenceRelationSubframeComparison
@@ -5948,6 +5951,8 @@ public import FLT.Mazur.HilbertCompleteInteriorOriginalNeighborhoods
 public import FLT.Mazur.HilbertDenseRankOriginalLifts
 public import FLT.Mazur.HilbertDivisorDegreePresentation
 public import FLT.Mazur.HilbertEnvelopeSourceTransport
+public import FLT.Mazur.HilbertEqualFrameBoundaryCorrections
+public import FLT.Mazur.HilbertEqualFrameResidualLifts
 public import FLT.Mazur.HilbertFaithfulAffineNeighborhood
 public import FLT.Mazur.HilbertFaithfullyFlatTupleBasis
 public import FLT.Mazur.HilbertFamilyAmbientPointNaturality
@@ -6099,6 +6104,7 @@ public import FLT.Mazur.HilbertOrbitBoundarySourceErrorCriterion
 public import FLT.Mazur.HilbertOrbitMixedBoundaryKernel
 public import FLT.Mazur.HilbertOrbitMixedBoundaryProjection
 public import FLT.Mazur.HilbertOrbitMixedResidualSplitting
+public import FLT.Mazur.HilbertOrbitOffDiagonalCorrectionEquations
 public import FLT.Mazur.HilbertOrbitRelativeBoundaryFiniteness
 public import FLT.Mazur.HilbertOrbitRelativeFiniteLifts
 public import FLT.Mazur.HilbertOrbitRelativeFiniteTests
@@ -6121,6 +6127,7 @@ public import FLT.Mazur.HilbertOrbitResidualCorrectionAssembly
 public import FLT.Mazur.HilbertOrbitResidualCorrectionCoordinates
 public import FLT.Mazur.HilbertOrbitResidualCorrectionQuotient
 public import FLT.Mazur.HilbertOrbitResidualEmbeddingEquations
+public import FLT.Mazur.HilbertOrbitSelfEmbeddingDiscrepancy
 public import FLT.Mazur.HilbertOrderedAffineEnvelope
 public import FLT.Mazur.HilbertOrderedOriginalBoundary
 public import FLT.Mazur.HilbertOrderedStableNeighborhood
