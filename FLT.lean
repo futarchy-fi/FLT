@@ -11315,6 +11315,7 @@ public import FLT.Mazur.SchemeSplitSeedGroundChart
 public import FLT.Mazur.SchemeSplitSeedGroundComparison
 public import FLT.Mazur.SchemeSplitSeedGroundFiber
 public import FLT.Mazur.SchemeSplitUnramifiedSourceSeed
+public import FLT.Mazur.SchemeStableCoreInvariantSection
 public import FLT.Mazur.SchemeStableCoreScalarNeighborhood
 public import FLT.Mazur.SchemeStableOpenCore
 public import FLT.Mazur.SchemeTranslationNormFiber
