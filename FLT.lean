@@ -4858,12 +4858,18 @@ public import FLT.Mazur.EquivalenceRelationSourceRefinement
 public import FLT.Mazur.EquivalenceRelationSourceRestriction
 public import FLT.Mazur.EquivalenceRelationSubframeComparison
 public import FLT.Mazur.EquivalenceRelationSubframeDiscrepancy
+public import FLT.Mazur.EquivalenceRelationSubframeFullDomain
 public import FLT.Mazur.EquivalenceRelationSubframeGraphCorrections
 public import FLT.Mazur.EquivalenceRelationSubframeGraphs
+public import FLT.Mazur.EquivalenceRelationSubframeImagePullback
 public import FLT.Mazur.EquivalenceRelationSubframeInvariantCriterion
 public import FLT.Mazur.EquivalenceRelationSubframeOpenCharts
 public import FLT.Mazur.EquivalenceRelationSubframeRefinement
 public import FLT.Mazur.EquivalenceRelationSubframeSourceComparison
+public import FLT.Mazur.EquivalenceRelationSubframeTransfer
+public import FLT.Mazur.EquivalenceRelationSubframeTransferBoundary
+public import FLT.Mazur.EquivalenceRelationSubframeTransferGraphErrors
+public import FLT.Mazur.EquivalenceRelationSubframeTransferRestriction
 public import FLT.Mazur.EquivalenceRelationUniformSourceOpen
 public import FLT.Mazur.EquivalenceRelationUniformVanishingOpen
 public import FLT.Mazur.EtaleAffineSpaceDimension
@@ -5307,6 +5313,7 @@ public import FLT.Mazur.FiniteSectionCoverReindex
 public import FLT.Mazur.FiniteSectionProjectivePresentation
 public import FLT.Mazur.FiniteSeparablePointFactor
 public import FLT.Mazur.FiniteSeparatedLineSheafDescent
+public import FLT.Mazur.FiniteSubframeSelections
 public import FLT.Mazur.FiniteSubgroupClassPresheaf
 public import FLT.Mazur.FiniteSubgroupPicard
 public import FLT.Mazur.FiniteSubgroupPicardDegree
@@ -5993,6 +6000,7 @@ public import FLT.Mazur.HilbertFiniteRelationErrorVanishing
 public import FLT.Mazur.HilbertFiniteRelationPrincipalCoverage
 public import FLT.Mazur.HilbertFiniteRelationUniformCoverage
 public import FLT.Mazur.HilbertFiniteSubframeCorrections
+public import FLT.Mazur.HilbertFiniteSubframeInvariantCorrections
 public import FLT.Mazur.HilbertFiniteSubframeRefinement
 public import FLT.Mazur.HilbertFiniteTargetLocalLifts
 public import FLT.Mazur.HilbertFiniteTargetSaturation
@@ -6220,6 +6228,7 @@ public import FLT.Mazur.HilbertRepeatedMonomialChart
 public import FLT.Mazur.HilbertSameAmbientChartIso
 public import FLT.Mazur.HilbertStableFrameBoundary
 public import FLT.Mazur.HilbertSubframeBoundaryLifts
+public import FLT.Mazur.HilbertSubframeTransferCorrections
 public import FLT.Mazur.HilbertSubterminalTranslationEnvelope
 public import FLT.Mazur.HilbertSupportOpenLattice
 public import FLT.Mazur.HilbertSupportOpenPullback
