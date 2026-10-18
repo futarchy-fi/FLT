@@ -4742,6 +4742,7 @@ public import FLT.Mazur.EquivalenceRelationBoundaryOpenCoefficients
 public import FLT.Mazur.EquivalenceRelationBoundarySubframe
 public import FLT.Mazur.EquivalenceRelationBoundarySubframeCoefficients
 public import FLT.Mazur.EquivalenceRelationBoundarySubframeGeometry
+public import FLT.Mazur.EquivalenceRelationBoundarySubframeRefinement
 public import FLT.Mazur.EquivalenceRelationChartFamilyCorrections
 public import FLT.Mazur.EquivalenceRelationChartFamilyLifts
 public import FLT.Mazur.EquivalenceRelationChartFamilyLocalization
@@ -4856,7 +4857,12 @@ public import FLT.Mazur.EquivalenceRelationSelfEmbeddingAction
 public import FLT.Mazur.EquivalenceRelationSourceRefinement
 public import FLT.Mazur.EquivalenceRelationSourceRestriction
 public import FLT.Mazur.EquivalenceRelationSubframeComparison
+public import FLT.Mazur.EquivalenceRelationSubframeDiscrepancy
+public import FLT.Mazur.EquivalenceRelationSubframeGraphCorrections
 public import FLT.Mazur.EquivalenceRelationSubframeGraphs
+public import FLT.Mazur.EquivalenceRelationSubframeInvariantCriterion
+public import FLT.Mazur.EquivalenceRelationSubframeOpenCharts
+public import FLT.Mazur.EquivalenceRelationSubframeRefinement
 public import FLT.Mazur.EquivalenceRelationSubframeSourceComparison
 public import FLT.Mazur.EquivalenceRelationUniformSourceOpen
 public import FLT.Mazur.EquivalenceRelationUniformVanishingOpen
@@ -5986,6 +5992,8 @@ public import FLT.Mazur.HilbertFiniteNeighborhoodError
 public import FLT.Mazur.HilbertFiniteRelationErrorVanishing
 public import FLT.Mazur.HilbertFiniteRelationPrincipalCoverage
 public import FLT.Mazur.HilbertFiniteRelationUniformCoverage
+public import FLT.Mazur.HilbertFiniteSubframeCorrections
+public import FLT.Mazur.HilbertFiniteSubframeRefinement
 public import FLT.Mazur.HilbertFiniteTargetLocalLifts
 public import FLT.Mazur.HilbertFiniteTargetSaturation
 public import FLT.Mazur.HilbertFullInteriorFiniteKernel
@@ -6211,6 +6219,7 @@ public import FLT.Mazur.HilbertReindexedCoordinateRing
 public import FLT.Mazur.HilbertRepeatedMonomialChart
 public import FLT.Mazur.HilbertSameAmbientChartIso
 public import FLT.Mazur.HilbertStableFrameBoundary
+public import FLT.Mazur.HilbertSubframeBoundaryLifts
 public import FLT.Mazur.HilbertSubterminalTranslationEnvelope
 public import FLT.Mazur.HilbertSupportOpenLattice
 public import FLT.Mazur.HilbertSupportOpenPullback
