@@ -7266,6 +7266,7 @@ public import FLT.Mazur.OddWeierstrassCyclicHomDivisorProductPullback
 public import FLT.Mazur.OddWeierstrassCyclicHomDivisorPullback
 public import FLT.Mazur.OddWeierstrassCyclicHomLocusEquationUniversal
 public import FLT.Mazur.OddWeierstrassCyclicHomLocusFppfCoverage
+public import FLT.Mazur.OddWeierstrassCyclicHomLocusNormalizationRelation
 public import FLT.Mazur.OddWeierstrassCyclicHomLocusNormalizationRetraction
 public import FLT.Mazur.OddWeierstrassCyclicHomLocusRelabel
 public import FLT.Mazur.OddWeierstrassCyclicHomLocusRelabelAction
