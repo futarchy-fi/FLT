@@ -4895,6 +4895,7 @@ public import FLT.Mazur.EquivalenceRelationSubframeExchangeMap
 public import FLT.Mazur.EquivalenceRelationSubframeFullDomain
 public import FLT.Mazur.EquivalenceRelationSubframeGraphCorrections
 public import FLT.Mazur.EquivalenceRelationSubframeGraphs
+public import FLT.Mazur.EquivalenceRelationSubframeImage
 public import FLT.Mazur.EquivalenceRelationSubframeImagePullback
 public import FLT.Mazur.EquivalenceRelationSubframeInvariantCriterion
 public import FLT.Mazur.EquivalenceRelationSubframeNormalizedCorrection
