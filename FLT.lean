@@ -7547,6 +7547,7 @@ public import FLT.Mazur.OneGonAffineCover
 public import FLT.Mazur.OneGonAffineNormalization
 public import FLT.Mazur.OneGonAffineNormalizationCoordinates
 public import FLT.Mazur.OneGonClosedCyclicParameter
+public import FLT.Mazur.OneGonClosedGroupInclusion
 public import FLT.Mazur.OneGonCocone
 public import FLT.Mazur.OneGonCoefficientTransport
 public import FLT.Mazur.OneGonCompleteAmpleCyclicSubgroup
