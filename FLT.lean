@@ -13890,6 +13890,7 @@ public import FLT.Mazur.WeierstrassDividedZeroFiniteAtlasSystem
 public import FLT.Mazur.WeierstrassDividedZeroFiniteGeometry
 public import FLT.Mazur.WeierstrassDividedZeroFiniteNodeRestriction
 public import FLT.Mazur.WeierstrassDividedZeroFiniteNodes
+public import FLT.Mazur.WeierstrassDividedZeroFiniteOpenRestriction
 public import FLT.Mazur.WeierstrassDividedZeroFiniteResiduals
 public import FLT.Mazur.WeierstrassDividedZeroFiniteRestriction
 public import FLT.Mazur.WeierstrassDividedZeroFiniteState
