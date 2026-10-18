@@ -13862,6 +13862,7 @@ public import FLT.Mazur.WeierstrassDividedZeroThirdFields
 public import FLT.Mazur.WeierstrassDividedZeroThirdGeometry
 public import FLT.Mazur.WeierstrassDividedZeroThirdNodeRestriction
 public import FLT.Mazur.WeierstrassDividedZeroThirdNodes
+public import FLT.Mazur.WeierstrassDividedZeroThirdOpenRestriction
 public import FLT.Mazur.WeierstrassDividedZeroThirdPunctures
 public import FLT.Mazur.WeierstrassDividedZeroThirdResidualRestriction
 public import FLT.Mazur.WeierstrassDividedZeroThirdRestriction
