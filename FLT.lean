@@ -6291,6 +6291,7 @@ public import FLT.Mazur.HilbertSourceBadQuotientLifts
 public import FLT.Mazur.HilbertSourceCoefficientwiseSurjectivity
 public import FLT.Mazur.HilbertSourceCompactRelation
 public import FLT.Mazur.HilbertSourceCompatibleModule
+public import FLT.Mazur.HilbertSourceConstructedOpenSections
 public import FLT.Mazur.HilbertSourceFiniteLinearOpenLifts
 public import FLT.Mazur.HilbertSourceFiniteOpenNumerators
 public import FLT.Mazur.HilbertSourceGeneratedLocalizedSurjectivity
