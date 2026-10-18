@@ -6119,6 +6119,7 @@ public import FLT.Mazur.HilbertOrbitResidualCorrectionAssembly
 public import FLT.Mazur.HilbertOrbitResidualCorrectionCoordinates
 public import FLT.Mazur.HilbertOrbitResidualCorrectionQuotient
 public import FLT.Mazur.HilbertOrbitResidualEmbeddingEquations
+public import FLT.Mazur.HilbertOrbitSelfEmbeddingDiscrepancy
 public import FLT.Mazur.HilbertOrderedAffineEnvelope
 public import FLT.Mazur.HilbertOrderedOriginalBoundary
 public import FLT.Mazur.HilbertOrderedStableNeighborhood
