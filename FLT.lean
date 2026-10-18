@@ -3228,6 +3228,7 @@ public import FLT.Mazur.AffineTripleOverlapRefinementSquares
 public import FLT.Mazur.AffineTripleUnitCoefficients
 public import FLT.Mazur.AffineTrivialLineSectionOpen
 public import FLT.Mazur.AffineValuationGeneratorLift
+public import FLT.Mazur.AffineValuationIntegralLift
 public import FLT.Mazur.AlgebraEqualizerCoordinates
 public import FLT.Mazur.AlgebraicAcyclicOrbitTranslation
 public import FLT.Mazur.AlgebraicClosureEmbeddingConjugacy
@@ -6317,6 +6318,7 @@ public import FLT.Mazur.HilbertSourceGeneratedLocalizedSurjectivity
 public import FLT.Mazur.HilbertSourceLocalizedOpenLift
 public import FLT.Mazur.HilbertSourceNonstableOpenLifts
 public import FLT.Mazur.HilbertSourceOpenRelationLifts
+public import FLT.Mazur.HilbertSourceOriginalEquationNeighborhoods
 public import FLT.Mazur.HilbertSourceValuativeBoundaryObstructions
 public import FLT.Mazur.HilbertStableFrameBoundary
 public import FLT.Mazur.HilbertSubframeAffineOverlap
@@ -7821,8 +7823,10 @@ public import FLT.Mazur.OriginalFiniteCoefficientOrbit
 public import FLT.Mazur.OriginalGeometricallyIntegralOpen
 public import FLT.Mazur.OriginalHilbertFiniteType
 public import FLT.Mazur.OriginalInvariantOpenAllEtaleLifts
+public import FLT.Mazur.OriginalPrimeIntegralEquations
 public import FLT.Mazur.OriginalPrimeIntegralFiber
 public import FLT.Mazur.OriginalPrimeIntegralGenerators
+public import FLT.Mazur.OriginalPrimeIntegralLocus
 public import FLT.Mazur.OriginalPrimeQuotientEquations
 public import FLT.Mazur.OriginalRestrictedHilbertIntersection
 public import FLT.Mazur.OriginalScalarFiniteLinearLifts
@@ -11024,6 +11028,7 @@ public import FLT.Mazur.SchemeBadAffineCoverDenominators
 public import FLT.Mazur.SchemeBadAffineCoverEquations
 public import FLT.Mazur.SchemeBadAffineCoverFiniteType
 public import FLT.Mazur.SchemeBadAffineCoverGeometricBoundaryTests
+public import FLT.Mazur.SchemeBadAffineCoverIntegralLocus
 public import FLT.Mazur.SchemeBadAffineCoverLocalIntegral
 public import FLT.Mazur.SchemeBadAffineCoverReduced
 public import FLT.Mazur.SchemeBadAffineCoverValuation
