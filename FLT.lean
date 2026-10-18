@@ -4008,6 +4008,7 @@ public import FLT.Mazur.CyclicCharacteristicFaithfulFullCover
 public import FLT.Mazur.CyclicCharacteristicFaithfulPrescribedCover
 public import FLT.Mazur.CyclicCharacteristicFaithfulRelabeledCover
 public import FLT.Mazur.CyclicCharacteristicLocusFiniteType
+public import FLT.Mazur.CyclicCharacteristicLocusSeparated
 public import FLT.Mazur.CyclicCharacteristicMarkedRelation
 public import FLT.Mazur.CyclicCharacteristicMarkedRelationAction
 public import FLT.Mazur.CyclicCharacteristicNormalizedAtlas
