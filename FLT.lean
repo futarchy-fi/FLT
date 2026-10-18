@@ -7862,6 +7862,7 @@ public import FLT.Mazur.PolygonArithmeticRetainedChainDiagonal
 public import FLT.Mazur.PolygonArithmeticRetainedChainFactors
 public import FLT.Mazur.PolygonArithmeticRetainedChainFields
 public import FLT.Mazur.PolygonArithmeticRetainedChainFinitePunctures
+public import FLT.Mazur.PolygonArithmeticRetainedChainFiniteResiduals
 public import FLT.Mazur.PolygonArithmeticRetainedChainFiniteRestriction
 public import FLT.Mazur.PolygonArithmeticRetainedChainIteration
 public import FLT.Mazur.PolygonArithmeticRetainedChainIterationStability
