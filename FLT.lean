@@ -13824,6 +13824,7 @@ public import FLT.Mazur.WeierstrassDividedZeroExteriorSmoothOrbit
 public import FLT.Mazur.WeierstrassDividedZeroFifthAnnihilation
 public import FLT.Mazur.WeierstrassDividedZeroFifthCancellation
 public import FLT.Mazur.WeierstrassDividedZeroFifthFields
+public import FLT.Mazur.WeierstrassDividedZeroFifthGeometry
 public import FLT.Mazur.WeierstrassDividedZeroFifthNodes
 public import FLT.Mazur.WeierstrassDividedZeroFifthPunctures
 public import FLT.Mazur.WeierstrassDividedZeroFifthResidualRestriction
