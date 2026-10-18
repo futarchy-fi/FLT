@@ -4066,6 +4066,7 @@ public import FLT.Mazur.CyclicCharacteristicUnmarkedQuotientUniversal
 public import FLT.Mazur.CyclicCharacteristicUnmarkedRelation
 public import FLT.Mazur.CyclicCharacteristicUnmarkedSchemeDescent
 public import FLT.Mazur.CyclicCharacteristicUnmarkedSheaf
+public import FLT.Mazur.CyclicCharacteristicUnmarkedSheafRelation
 public import FLT.Mazur.CyclicCharacteristicUnmarkedSourceSheaf
 public import FLT.Mazur.CyclicDivisorSubgroupCriterion
 public import FLT.Mazur.CyclicHomAffinePresentationInvariant
