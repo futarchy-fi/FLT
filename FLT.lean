@@ -12385,6 +12385,7 @@ public import FLT.Mazur.WeierstrassChangeEquationUniversal
 public import FLT.Mazur.WeierstrassChangeFinitePresentation
 public import FLT.Mazur.WeierstrassChangeFullComparison
 public import FLT.Mazur.WeierstrassChangeGeneralizedComparison
+public import FLT.Mazur.WeierstrassChangeGeneralizedNaturality
 public import FLT.Mazur.WeierstrassChangeParameter
 public import FLT.Mazur.WeierstrassChangePointedGeneralizedIso
 public import FLT.Mazur.WeierstrassChangeSubgroupScheme
