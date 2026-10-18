@@ -15359,6 +15359,7 @@ public import FLT.Mazur.WeierstrassSmoothMixedRightReciprocalTriple
 public import FLT.Mazur.WeierstrassSmoothNegation
 public import FLT.Mazur.WeierstrassSmoothNegationGraphs
 public import FLT.Mazur.WeierstrassSmoothNonoppositePoints
+public import FLT.Mazur.WeierstrassSmoothOpenRelativeDimension
 public import FLT.Mazur.WeierstrassSmoothOrdinaryPointComparison
 public import FLT.Mazur.WeierstrassSmoothOriginalAffine
 public import FLT.Mazur.WeierstrassSmoothPairAffineDescent
