@@ -6234,6 +6234,7 @@ public import FLT.Mazur.HilbertSameAmbientChartIso
 public import FLT.Mazur.HilbertStableFrameBoundary
 public import FLT.Mazur.HilbertSubframeAffineTargets
 public import FLT.Mazur.HilbertSubframeBezoutLift
+public import FLT.Mazur.HilbertSubframeBezoutNeighborhood
 public import FLT.Mazur.HilbertSubframeBoundaryLifts
 public import FLT.Mazur.HilbertSubframeNormalizedTransfer
 public import FLT.Mazur.HilbertSubframeTransferCorrections
