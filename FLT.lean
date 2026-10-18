@@ -3971,6 +3971,10 @@ public import FLT.Mazur.CurveUniformFieldDegreeBound
 public import FLT.Mazur.CuspCollision
 public import FLT.Mazur.CuspOrderNumerator
 public import FLT.Mazur.CyclicAuxiliaryPrescribedNormalizedNeighborhood
+public import FLT.Mazur.CyclicBoundaryOriginalMarkings
+public import FLT.Mazur.CyclicBoundaryParameterAction
+public import FLT.Mazur.CyclicBoundaryParameterSections
+public import FLT.Mazur.CyclicBoundarySectionMarking
 public import FLT.Mazur.CyclicCharacteristicAtlas
 public import FLT.Mazur.CyclicCharacteristicAtlasCoverage
 public import FLT.Mazur.CyclicCharacteristicAtlasCoverageUnrestricted
@@ -8211,6 +8215,7 @@ public import FLT.Mazur.PolygonCompleteConstantSections
 public import FLT.Mazur.PolygonCompleteCoordinateEvaluation
 public import FLT.Mazur.PolygonCompleteCyclicActionDivisor
 public import FLT.Mazur.PolygonCompleteCyclicActionMarkingLine
+public import FLT.Mazur.PolygonCompleteCyclicBoundaryParameters
 public import FLT.Mazur.PolygonCompleteCyclicDivisor
 public import FLT.Mazur.PolygonCompleteCyclicMarking
 public import FLT.Mazur.PolygonCompleteCyclicOrbit
@@ -8984,6 +8989,11 @@ public import FLT.Mazur.PolygonCubicTorusRatios
 public import FLT.Mazur.PolygonCubicTorusSurjectivity
 public import FLT.Mazur.PolygonCubicVeryAmple
 public import FLT.Mazur.PolygonCyclicAtlas
+public import FLT.Mazur.PolygonCyclicBoundaryContraction
+public import FLT.Mazur.PolygonCyclicBoundaryDivisor
+public import FLT.Mazur.PolygonCyclicBoundaryFieldTranslation
+public import FLT.Mazur.PolygonCyclicBoundaryNodeFrame
+public import FLT.Mazur.PolygonCyclicBoundaryRefinement
 public import FLT.Mazur.PolygonCyclicCocone
 public import FLT.Mazur.PolygonCyclicDescent
 public import FLT.Mazur.PolygonCyclicDivisor
