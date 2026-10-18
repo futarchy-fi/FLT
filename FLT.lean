@@ -9267,6 +9267,7 @@ public import FLT.Mazur.PolygonSmoothingPunctureIdentification
 public import FLT.Mazur.PolygonSmoothingPunctureNaturality
 public import FLT.Mazur.PolygonSmoothingPunctureSpecCalculus
 public import FLT.Mazur.PolygonSmoothingPunctureSpecNaturality
+public import FLT.Mazur.PolygonSmoothingPunctureSquare
 public import FLT.Mazur.PolygonSmoothingQuadraticModel
 public import FLT.Mazur.PolygonSmoothingRangeGenerators
 public import FLT.Mazur.PolygonSmoothingReciprocalScaling
