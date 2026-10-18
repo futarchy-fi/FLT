@@ -14469,8 +14469,15 @@ public import FLT.Mazur.WeierstrassDividedZeroCycleZeroIndexedMap
 public import FLT.Mazur.WeierstrassDividedZeroCycleZeroPositiveTensorCompatibility
 public import FLT.Mazur.WeierstrassDividedZeroCycleZeroTensorDesc
 public import FLT.Mazur.WeierstrassDividedZeroCyclicDiagonal
+public import FLT.Mazur.WeierstrassDividedZeroCyclicGlobalIso
+public import FLT.Mazur.WeierstrassDividedZeroCyclicGlobalMap
 public import FLT.Mazur.WeierstrassDividedZeroCyclicIndex
+public import FLT.Mazur.WeierstrassDividedZeroCyclicInverseMap
 public import FLT.Mazur.WeierstrassDividedZeroCyclicSeed
+public import FLT.Mazur.WeierstrassDividedZeroCyclicSourceCharts
+public import FLT.Mazur.WeierstrassDividedZeroCyclicSourceCover
+public import FLT.Mazur.WeierstrassDividedZeroCyclicSourceDesc
+public import FLT.Mazur.WeierstrassDividedZeroCyclicSourceEdges
 public import FLT.Mazur.WeierstrassDividedZeroCyclicStandard
 public import FLT.Mazur.WeierstrassDividedZeroCyclicStandardMaps
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalAtlas
@@ -14591,6 +14598,7 @@ public import FLT.Mazur.WeierstrassDividedZeroEqualityUniversalHomExt
 public import FLT.Mazur.WeierstrassDividedZeroEqualityZeroInteriorAtlasCompatibility
 public import FLT.Mazur.WeierstrassDividedZeroEqualityZeroInteriorTensorCompatibility
 public import FLT.Mazur.WeierstrassDividedZeroEqualityZeroTensorDesc
+public import FLT.Mazur.WeierstrassDividedZeroExactTargetDesc
 public import FLT.Mazur.WeierstrassDividedZeroExteriorCoverage
 public import FLT.Mazur.WeierstrassDividedZeroExteriorCurve
 public import FLT.Mazur.WeierstrassDividedZeroExteriorLaurent
@@ -14744,6 +14752,7 @@ public import FLT.Mazur.WeierstrassDividedZeroSecondTransitions
 public import FLT.Mazur.WeierstrassDividedZeroSixthFields
 public import FLT.Mazur.WeierstrassDividedZeroSlopeContraction
 public import FLT.Mazur.WeierstrassDividedZeroSlopeLaurent
+public import FLT.Mazur.WeierstrassDividedZeroSourceDesc
 public import FLT.Mazur.WeierstrassDividedZeroSplitCocone
 public import FLT.Mazur.WeierstrassDividedZeroSplitComponentInjectivity
 public import FLT.Mazur.WeierstrassDividedZeroSplitCycle
