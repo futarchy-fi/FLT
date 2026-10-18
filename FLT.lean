@@ -3972,6 +3972,7 @@ public import FLT.Mazur.CurveUniformFieldDegreeBound
 public import FLT.Mazur.CuspCollision
 public import FLT.Mazur.CuspOrderNumerator
 public import FLT.Mazur.CyclicAuxiliaryPrescribedNormalizedNeighborhood
+public import FLT.Mazur.CyclicBoundaryGroupSections
 public import FLT.Mazur.CyclicBoundaryOriginalMarkings
 public import FLT.Mazur.CyclicBoundaryParameterAction
 public import FLT.Mazur.CyclicBoundaryParameterSections
@@ -8056,6 +8057,7 @@ public import FLT.Mazur.PolygonBoundaryClosedLayer
 public import FLT.Mazur.PolygonBoundaryClosedLifting
 public import FLT.Mazur.PolygonBoundaryCoefficientNaturality
 public import FLT.Mazur.PolygonBoundaryCoefficientScalars
+public import FLT.Mazur.PolygonBoundaryCyclicSubgroup
 public import FLT.Mazur.PolygonBoundaryDegreeFinite
 public import FLT.Mazur.PolygonBoundaryDivisor
 public import FLT.Mazur.PolygonBoundaryGradedExactness
@@ -8178,6 +8180,13 @@ public import FLT.Mazur.PolygonCompleteBoundaryQuotientTransition
 public import FLT.Mazur.PolygonCompleteBoundaryRefinement
 public import FLT.Mazur.PolygonCompleteBoundarySectionProjection
 public import FLT.Mazur.PolygonCompleteBoundarySectionTransport
+public import FLT.Mazur.PolygonCompleteBoundarySubgroupCurve
+public import FLT.Mazur.PolygonCompleteBoundarySubgroupIso
+public import FLT.Mazur.PolygonCompleteBoundaryTestDivisor
+public import FLT.Mazur.PolygonCompleteBoundaryTestFaithful
+public import FLT.Mazur.PolygonCompleteBoundaryTestMarking
+public import FLT.Mazur.PolygonCompleteBoundaryTestRotation
+public import FLT.Mazur.PolygonCompleteBoundaryTestSubgroup
 public import FLT.Mazur.PolygonCompleteBoundaryTransitionCoherence
 public import FLT.Mazur.PolygonCompleteBoundaryTranslation
 public import FLT.Mazur.PolygonCompleteCartesianMarkings
@@ -10409,6 +10418,7 @@ public import FLT.Mazur.RelativeCoproductPullCover
 public import FLT.Mazur.RelativeCyclicSubgroup
 public import FLT.Mazur.RelativeCyclicSubgroupComparison
 public import FLT.Mazur.RelativeCyclicSubgroupPullbackComparison
+public import FLT.Mazur.RelativeCyclicSubgroupSmoothOpen
 public import FLT.Mazur.RelativeDimensionBaseChangeOpen
 public import FLT.Mazur.RelativeDirectImageComposition
 public import FLT.Mazur.RelativeDirectImageForgetting
