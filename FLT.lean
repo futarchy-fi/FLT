@@ -6296,6 +6296,7 @@ public import FLT.Mazur.HilbertSourceActionRelationGraph
 public import FLT.Mazur.HilbertSourceBadAffineChartEquations
 public import FLT.Mazur.HilbertSourceBadAffineChartLifts
 public import FLT.Mazur.HilbertSourceBadQuotientLifts
+public import FLT.Mazur.HilbertSourceClosedBoundaryObstructions
 public import FLT.Mazur.HilbertSourceCoefficientwiseSurjectivity
 public import FLT.Mazur.HilbertSourceCompactRelation
 public import FLT.Mazur.HilbertSourceCompatibleModule
@@ -7548,6 +7549,7 @@ public import FLT.Mazur.OneGonAffineNormalization
 public import FLT.Mazur.OneGonAffineNormalizationCoordinates
 public import FLT.Mazur.OneGonClosedCyclicParameter
 public import FLT.Mazur.OneGonCocone
+public import FLT.Mazur.OneGonCoefficientTransport
 public import FLT.Mazur.OneGonCompleteAmpleCyclicSubgroup
 public import FLT.Mazur.OneGonCompleteBoundaryCartesian
 public import FLT.Mazur.OneGonCompleteBoundaryMarking
@@ -7588,6 +7590,7 @@ public import FLT.Mazur.OneGonNormalizationCoordinates
 public import FLT.Mazur.OneGonNormalizationFinite
 public import FLT.Mazur.OneGonNormalizationPullback
 public import FLT.Mazur.OneGonNormalizationTorus
+public import FLT.Mazur.OneGonOriginalGroupComparison
 public import FLT.Mazur.OneGonOverlap
 public import FLT.Mazur.OneGonOverlapGraph
 public import FLT.Mazur.OneGonPinchingDescent
@@ -7600,6 +7603,7 @@ public import FLT.Mazur.OneGonQuotient
 public import FLT.Mazur.OneGonRetainedFiberReduced
 public import FLT.Mazur.OneGonScalarExtension
 public import FLT.Mazur.OneGonSeparated
+public import FLT.Mazur.OneGonSmoothEquationProjection
 public import FLT.Mazur.OneGonSmoothingAffinePresentation
 public import FLT.Mazur.OneGonSmoothingAuxiliaryOverlap
 public import FLT.Mazur.OneGonSmoothingChartIntersection
@@ -7647,6 +7651,7 @@ public import FLT.Mazur.OneGonSmoothingZeroCocone
 public import FLT.Mazur.OneGonSmoothingZeroFiber
 public import FLT.Mazur.OneGonSmoothingZeroGenus
 public import FLT.Mazur.OneGonTransition
+public import FLT.Mazur.OneGonZeroTorusComparison
 public import FLT.Mazur.OpenAtlasTripleGluing
 public import FLT.Mazur.OpenChartSectionPullback
 public import FLT.Mazur.OpenCoverDimension
@@ -9190,6 +9195,7 @@ public import FLT.Mazur.PolygonFirstOrderCoordinateCharts
 public import FLT.Mazur.PolygonFirstPairReduction
 public import FLT.Mazur.PolygonFirstUniversalNodeReduction
 public import FLT.Mazur.PolygonGeneralizedCurve
+public import FLT.Mazur.PolygonGeneralizedCurveActionExt
 public import FLT.Mazur.PolygonGenusOne
 public import FLT.Mazur.PolygonGeometricGenus
 public import FLT.Mazur.PolygonGeometricGraph
@@ -10999,10 +11005,16 @@ public import FLT.Mazur.SchemeAffineTripleComparisonCocycle
 public import FLT.Mazur.SchemeAffineTripleRefinementFamily
 public import FLT.Mazur.SchemeAffinizationUniversal
 public import FLT.Mazur.SchemeBadAffineCover
+public import FLT.Mazur.SchemeBadAffineCoverBoundaryBaseChange
+public import FLT.Mazur.SchemeBadAffineCoverBoundaryObstruction
+public import FLT.Mazur.SchemeBadAffineCoverBoundaryUnits
+public import FLT.Mazur.SchemeBadAffineCoverBoundaryWitness
 public import FLT.Mazur.SchemeBadAffineCoverDenominators
 public import FLT.Mazur.SchemeBadAffineCoverEquations
 public import FLT.Mazur.SchemeBadAffineCoverFiniteType
+public import FLT.Mazur.SchemeBadAffineCoverGeometricBoundaryTests
 public import FLT.Mazur.SchemeBadAffineCoverLocalIntegral
+public import FLT.Mazur.SchemeBadAffineCoverReduced
 public import FLT.Mazur.SchemeBaseChangeLimit
 public import FLT.Mazur.SchemeCanonicalChartRecognition
 public import FLT.Mazur.SchemeCanonicalDescentData
