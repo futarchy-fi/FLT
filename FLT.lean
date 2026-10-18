@@ -3997,6 +3997,7 @@ public import FLT.Mazur.CyclicCharacteristicOddRelabeledAuxiliary
 public import FLT.Mazur.CyclicCharacteristicOddRelabeledGenerator
 public import FLT.Mazur.CyclicCharacteristicPrescribedCover
 public import FLT.Mazur.CyclicCharacteristicPrescribedNeighborhood
+public import FLT.Mazur.CyclicCharacteristicRelabelSections
 public import FLT.Mazur.CyclicDivisorSubgroupCriterion
 public import FLT.Mazur.CyclicHomAffinePresentationInvariant
 public import FLT.Mazur.CyclicHomAuxiliaryScheme
