@@ -7290,6 +7290,7 @@ public import FLT.Mazur.OddWeierstrassCyclicHomSourceIdealPullback
 public import FLT.Mazur.OddWeierstrassCyclicHomSourceModuli
 public import FLT.Mazur.OddWeierstrassCyclicHomSourcePullback
 public import FLT.Mazur.OddWeierstrassCyclicHomSubgroupPullback
+public import FLT.Mazur.OddWeierstrassCyclicHomSubgroupPullbackMarking
 public import FLT.Mazur.OddWeierstrassCyclicHomSubgroupVanishingChart
 public import FLT.Mazur.OddWeierstrassCyclicHomUniversalSubgroupComparison
 public import FLT.Mazur.OddWeierstrassCyclicOriginalHomDivisorCoverage
