@@ -4024,6 +4024,7 @@ public import FLT.Mazur.CyclicCharacteristicFiniteTypeAtlas
 public import FLT.Mazur.CyclicCharacteristicFixedCover
 public import FLT.Mazur.CyclicCharacteristicInvariantAffineCover
 public import FLT.Mazur.CyclicCharacteristicInvariantAffineCoverage
+public import FLT.Mazur.CyclicCharacteristicLocallyNormalizedModuli
 public import FLT.Mazur.CyclicCharacteristicLocusFiniteType
 public import FLT.Mazur.CyclicCharacteristicLocusSeparated
 public import FLT.Mazur.CyclicCharacteristicMarkedQuotient
@@ -4042,6 +4043,7 @@ public import FLT.Mazur.CyclicCharacteristicOddRelabeledAuxiliary
 public import FLT.Mazur.CyclicCharacteristicOddRelabeledGenerator
 public import FLT.Mazur.CyclicCharacteristicParameterFiniteType
 public import FLT.Mazur.CyclicCharacteristicParameterPresheaf
+public import FLT.Mazur.CyclicCharacteristicParameterSource
 public import FLT.Mazur.CyclicCharacteristicPrescribedCover
 public import FLT.Mazur.CyclicCharacteristicPrescribedNeighborhood
 public import FLT.Mazur.CyclicCharacteristicQuotient
@@ -4059,11 +4061,20 @@ public import FLT.Mazur.CyclicCharacteristicRelabeledPrescribedSections
 public import FLT.Mazur.CyclicCharacteristicRetainedFaithfulness
 public import FLT.Mazur.CyclicCharacteristicRetainedFullParameter
 public import FLT.Mazur.CyclicCharacteristicRetainedParameter
+public import FLT.Mazur.CyclicCharacteristicSmoothUnmarkedClass
+public import FLT.Mazur.CyclicCharacteristicSmoothUnmarkedMorphism
 public import FLT.Mazur.CyclicCharacteristicTransitionCover
 public import FLT.Mazur.CyclicCharacteristicTransitionSpan
 public import FLT.Mazur.CyclicCharacteristicUnmarkedDescent
+public import FLT.Mazur.CyclicCharacteristicUnmarkedLocalRelation
 public import FLT.Mazur.CyclicCharacteristicUnmarkedQuotientPresheaf
+public import FLT.Mazur.CyclicCharacteristicUnmarkedQuotientUniversal
 public import FLT.Mazur.CyclicCharacteristicUnmarkedRelation
+public import FLT.Mazur.CyclicCharacteristicUnmarkedRelationTests
+public import FLT.Mazur.CyclicCharacteristicUnmarkedSchemeDescent
+public import FLT.Mazur.CyclicCharacteristicUnmarkedSheaf
+public import FLT.Mazur.CyclicCharacteristicUnmarkedSheafRelation
+public import FLT.Mazur.CyclicCharacteristicUnmarkedSourceSheaf
 public import FLT.Mazur.CyclicDivisorSubgroupCriterion
 public import FLT.Mazur.CyclicHomAffinePresentationInvariant
 public import FLT.Mazur.CyclicHomAuxiliaryScheme
@@ -5447,6 +5458,9 @@ public import FLT.Mazur.FiniteSeparablePointFactor
 public import FLT.Mazur.FiniteSeparatedLineSheafDescent
 public import FLT.Mazur.FiniteSubframeSelections
 public import FLT.Mazur.FiniteSubgroupClassPresheaf
+public import FLT.Mazur.FiniteSubgroupComparisonLocus
+public import FLT.Mazur.FiniteSubgroupContainmentLocus
+public import FLT.Mazur.FiniteSubgroupEqualityLocus
 public import FLT.Mazur.FiniteSubgroupPicard
 public import FLT.Mazur.FiniteSubgroupPicardDegree
 public import FLT.Mazur.FiniteSupportClosedDescent
