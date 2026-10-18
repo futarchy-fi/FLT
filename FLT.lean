@@ -10395,6 +10395,7 @@ public import FLT.Mazur.PullbackOverlapBaseChange
 public import FLT.Mazur.PullbackRotationCocycle
 public import FLT.Mazur.PullbackRotationCoordinates
 public import FLT.Mazur.PullbackRotationTransport
+public import FLT.Mazur.PulledSectionDistinctness
 public import FLT.Mazur.PuncturedNodeRestrictionComparison
 public import FLT.Mazur.PushforwardCech
 public import FLT.Mazur.PushoutModuleScalars
