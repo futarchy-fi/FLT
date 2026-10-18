@@ -12101,6 +12101,7 @@ public import FLT.Mazur.UnrestrictedSmoothFamilyCartier
 public import FLT.Mazur.ValuationPoleEquations
 public import FLT.Mazur.ValuationPoleReciprocal
 public import FLT.Mazur.ValuationProjectiveNormalization
+public import FLT.Mazur.ValuationResidueRefinement
 public import FLT.Mazur.ValuationRingCompleteModel
 public import FLT.Mazur.ValuationRingHenselianModel
 public import FLT.Mazur.ValuationRingModel
