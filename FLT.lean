@@ -13870,6 +13870,7 @@ public import FLT.Mazur.WeierstrassDividedRevisedRetainedReflection
 public import FLT.Mazur.WeierstrassDividedRevisedRetainedTargetIntersection
 public import FLT.Mazur.WeierstrassDividedRevisedTargetLabels
 public import FLT.Mazur.WeierstrassDividedRevisedTensorMaps
+public import FLT.Mazur.WeierstrassDividedRevisedTerminalReflection
 public import FLT.Mazur.WeierstrassDividedSecondAtlasNodeRestriction
 public import FLT.Mazur.WeierstrassDividedSecondJointAtlas
 public import FLT.Mazur.WeierstrassDividedSecondJointAtlasClosing
