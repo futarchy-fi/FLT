@@ -11027,6 +11027,7 @@ public import FLT.Mazur.SchemeBadAffineCoverBoundaryBaseChange
 public import FLT.Mazur.SchemeBadAffineCoverBoundaryObstruction
 public import FLT.Mazur.SchemeBadAffineCoverBoundaryUnits
 public import FLT.Mazur.SchemeBadAffineCoverBoundaryWitness
+public import FLT.Mazur.SchemeBadAffineCoverComponents
 public import FLT.Mazur.SchemeBadAffineCoverDenominators
 public import FLT.Mazur.SchemeBadAffineCoverEquations
 public import FLT.Mazur.SchemeBadAffineCoverFiniteType
