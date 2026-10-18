@@ -13832,6 +13832,7 @@ public import FLT.Mazur.WeierstrassDividedZeroFifthPunctures
 public import FLT.Mazur.WeierstrassDividedZeroFifthResidualRestriction
 public import FLT.Mazur.WeierstrassDividedZeroFifthRestriction
 public import FLT.Mazur.WeierstrassDividedZeroFifthSplit
+public import FLT.Mazur.WeierstrassDividedZeroFifthTransitions
 public import FLT.Mazur.WeierstrassDividedZeroFirstAtlas
 public import FLT.Mazur.WeierstrassDividedZeroFirstAtlasClosing
 public import FLT.Mazur.WeierstrassDividedZeroFirstAtlasIdentification
