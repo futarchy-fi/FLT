@@ -7280,6 +7280,7 @@ public import FLT.Mazur.OddWeierstrassCyclicHomLocusRelationRelabel
 public import FLT.Mazur.OddWeierstrassCyclicHomMarkedFamilyRelation
 public import FLT.Mazur.OddWeierstrassCyclicHomMarkedGroupRigidity
 public import FLT.Mazur.OddWeierstrassCyclicHomMarkedIsoPullback
+public import FLT.Mazur.OddWeierstrassCyclicHomMarkedSubgroupRelation
 public import FLT.Mazur.OddWeierstrassCyclicHomMultiplicationEquation
 public import FLT.Mazur.OddWeierstrassCyclicHomMultiplicationLocus
 public import FLT.Mazur.OddWeierstrassCyclicHomMultiplicationLocusUniversal
