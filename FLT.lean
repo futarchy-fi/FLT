@@ -12430,6 +12430,7 @@ public import FLT.Mazur.WeierstrassCoefficientModelComposition
 public import FLT.Mazur.WeierstrassCoefficientModelProjection
 public import FLT.Mazur.WeierstrassCoefficientMonoidalComparison
 public import FLT.Mazur.WeierstrassCoefficientNegation
+public import FLT.Mazur.WeierstrassCoefficientPresentationRefinement
 public import FLT.Mazur.WeierstrassCoefficientProductMorphism
 public import FLT.Mazur.WeierstrassCoefficientSecant
 public import FLT.Mazur.WeierstrassCoefficientShearAction
