@@ -10985,6 +10985,7 @@ public import FLT.Mazur.SchemeAffineTripleRefinementFamily
 public import FLT.Mazur.SchemeAffinizationUniversal
 public import FLT.Mazur.SchemeBadAffineCover
 public import FLT.Mazur.SchemeBadAffineCoverDenominators
+public import FLT.Mazur.SchemeBadAffineCoverLocalIntegral
 public import FLT.Mazur.SchemeBaseChangeLimit
 public import FLT.Mazur.SchemeCanonicalChartRecognition
 public import FLT.Mazur.SchemeCanonicalDescentData
