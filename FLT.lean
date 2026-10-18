@@ -9320,6 +9320,7 @@ public import FLT.Mazur.PolygonSmoothingSquareZeroLiftConstraint
 public import FLT.Mazur.PolygonSmoothingSquareZeroShear
 public import FLT.Mazur.PolygonSmoothingSquareZeroShearBoundary
 public import FLT.Mazur.PolygonSmoothingSquareZeroTwoBranches
+public import FLT.Mazur.PolygonSmoothingStationaryPunctures
 public import FLT.Mazur.PolygonSmoothingSumRegular
 public import FLT.Mazur.PolygonSmoothingTransition
 public import FLT.Mazur.PolygonSmoothingTwoCoefficientBranches
