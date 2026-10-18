@@ -7549,6 +7549,7 @@ public import FLT.Mazur.OneGonFaithfulClosedSubgroup
 public import FLT.Mazur.OneGonFaithfulCompleteCyclicLift
 public import FLT.Mazur.OneGonFaithfulCompleteDivisor
 public import FLT.Mazur.OneGonFaithfulCompleteSubgroup
+public import FLT.Mazur.OneGonFaithfulCyclicAmple
 public import FLT.Mazur.OneGonFaithfulCyclicLine
 public import FLT.Mazur.OneGonFormalCoordinates
 public import FLT.Mazur.OneGonGlobalPushout
