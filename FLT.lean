@@ -6103,6 +6103,7 @@ public import FLT.Mazur.HilbertOrbitRelativeScalarVanishing
 public import FLT.Mazur.HilbertOrbitRelativeSourceGenerators
 public import FLT.Mazur.HilbertOrbitResidualBoundaryProjection
 public import FLT.Mazur.HilbertOrbitResidualBoundarySplitting
+public import FLT.Mazur.HilbertOrbitResidualCorrectionAssembly
 public import FLT.Mazur.HilbertOrbitResidualCorrectionCoordinates
 public import FLT.Mazur.HilbertOrbitResidualCorrectionQuotient
 public import FLT.Mazur.HilbertOrbitResidualEmbeddingEquations
