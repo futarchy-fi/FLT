@@ -13796,6 +13796,7 @@ public import FLT.Mazur.WeierstrassDividedRevisedInfinityMap
 public import FLT.Mazur.WeierstrassDividedRevisedInitialBoundary
 public import FLT.Mazur.WeierstrassDividedRevisedInitialMaps
 public import FLT.Mazur.WeierstrassDividedRevisedLabeledMaps
+public import FLT.Mazur.WeierstrassDividedRevisedLocalIso
 public import FLT.Mazur.WeierstrassDividedRevisedNodeCoverage
 public import FLT.Mazur.WeierstrassDividedRevisedPolygon
 public import FLT.Mazur.WeierstrassDividedRevisedPolygonEdges
