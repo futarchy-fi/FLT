@@ -7543,12 +7543,19 @@ public import FLT.Mazur.OneGonCompleteBoundaryMarking
 public import FLT.Mazur.OneGonCompleteCyclicBoundaryParameters
 public import FLT.Mazur.OneGonCompleteCyclicCorrection
 public import FLT.Mazur.OneGonCompleteCyclicLiftCriterion
+public import FLT.Mazur.OneGonCompleteCyclicParameterComparison
 public import FLT.Mazur.OneGonCompleteKernelPowers
 public import FLT.Mazur.OneGonCompleteLabelLifts
 public import FLT.Mazur.OneGonCompleteUniversalCyclicFamily
 public import FLT.Mazur.OneGonCubicElimination
+public import FLT.Mazur.OneGonCyclicParameterSections
 public import FLT.Mazur.OneGonDenominatorEqualizer
+public import FLT.Mazur.OneGonFaithfulClosedSubgroup
 public import FLT.Mazur.OneGonFaithfulCompleteCyclicLift
+public import FLT.Mazur.OneGonFaithfulCompleteDivisor
+public import FLT.Mazur.OneGonFaithfulCompleteSubgroup
+public import FLT.Mazur.OneGonFaithfulCyclicAmple
+public import FLT.Mazur.OneGonFaithfulCyclicLine
 public import FLT.Mazur.OneGonFormalCoordinates
 public import FLT.Mazur.OneGonGlobalPushout
 public import FLT.Mazur.OneGonGluing
@@ -15489,6 +15496,7 @@ public import FLT.Mazur.WeierstrassSmoothTransportedOutputRegular
 public import FLT.Mazur.WeierstrassSmoothTripleInputRegular
 public import FLT.Mazur.WeierstrassSmoothTripleProduct
 public import FLT.Mazur.WeierstrassSmoothTripleProjections
+public import FLT.Mazur.WeierstrassSmoothWholeAction
 public import FLT.Mazur.WeierstrassSmoothYAddition
 public import FLT.Mazur.WeierstrassSmoothYAffineResidue
 public import FLT.Mazur.WeierstrassSmoothYAffineSource
