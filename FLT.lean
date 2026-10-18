@@ -11082,6 +11082,7 @@ public import FLT.Mazur.SchemeOrbitOpenAffineSelection
 public import FLT.Mazur.SchemeOrbitOpenGroundGeometry
 public import FLT.Mazur.SchemeOrbitOpenSelection
 public import FLT.Mazur.SchemeOrbitOpenSelectionKernel
+public import FLT.Mazur.SchemeOriginalScalarCompactRelationLifts
 public import FLT.Mazur.SchemeOriginalScalarCorrectionFamily
 public import FLT.Mazur.SchemeOriginalScalarOpenCorrections
 public import FLT.Mazur.SchemeOriginalScalarPairOpenLifts
