@@ -10353,6 +10353,7 @@ public import FLT.Mazur.ProperUniversalDirectImageLine
 public import FLT.Mazur.ProperUniversalDirectImagePasting
 public import FLT.Mazur.ProperUniversalRetainedSection
 public import FLT.Mazur.ProperUniversalTensorIdentification
+public import FLT.Mazur.PullbackOneLegTransport
 public import FLT.Mazur.PullbackOverlapBaseChange
 public import FLT.Mazur.PullbackRotationCocycle
 public import FLT.Mazur.PullbackRotationCoordinates
