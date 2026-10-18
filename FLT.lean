@@ -13814,6 +13814,7 @@ public import FLT.Mazur.WeierstrassDividedZeroFourthAnnihilation
 public import FLT.Mazur.WeierstrassDividedZeroFourthAtlas
 public import FLT.Mazur.WeierstrassDividedZeroFourthAtlasClosing
 public import FLT.Mazur.WeierstrassDividedZeroFourthAtlasInitial
+public import FLT.Mazur.WeierstrassDividedZeroFourthAtlasSystem
 public import FLT.Mazur.WeierstrassDividedZeroFourthCancellation
 public import FLT.Mazur.WeierstrassDividedZeroFourthFields
 public import FLT.Mazur.WeierstrassDividedZeroFourthGeometry
