@@ -12343,6 +12343,7 @@ public import FLT.Mazur.WeierstrassCartesianSmoothPullbackGroup
 public import FLT.Mazur.WeierstrassChangeComparisonScheme
 public import FLT.Mazur.WeierstrassChangeEquationLocus
 public import FLT.Mazur.WeierstrassChangeEquationUniversal
+public import FLT.Mazur.WeierstrassChangeFinitePresentation
 public import FLT.Mazur.WeierstrassChangeFullComparison
 public import FLT.Mazur.WeierstrassChangeGeneralizedComparison
 public import FLT.Mazur.WeierstrassChangeParameter
