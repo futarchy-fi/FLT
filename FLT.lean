@@ -10983,6 +10983,7 @@ public import FLT.Mazur.SchemeAffineTestProjectionRefinement
 public import FLT.Mazur.SchemeAffineTripleComparisonCocycle
 public import FLT.Mazur.SchemeAffineTripleRefinementFamily
 public import FLT.Mazur.SchemeAffinizationUniversal
+public import FLT.Mazur.SchemeBadAffineCover
 public import FLT.Mazur.SchemeBaseChangeLimit
 public import FLT.Mazur.SchemeCanonicalChartRecognition
 public import FLT.Mazur.SchemeCanonicalDescentData
