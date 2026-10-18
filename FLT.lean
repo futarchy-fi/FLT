@@ -6104,6 +6104,7 @@ public import FLT.Mazur.HilbertOrbitRelativeSourceGenerators
 public import FLT.Mazur.HilbertOrbitResidualBoundaryProjection
 public import FLT.Mazur.HilbertOrbitResidualBoundarySplitting
 public import FLT.Mazur.HilbertOrbitResidualCorrectionCoordinates
+public import FLT.Mazur.HilbertOrbitResidualCorrectionQuotient
 public import FLT.Mazur.HilbertOrbitResidualEmbeddingEquations
 public import FLT.Mazur.HilbertOrderedAffineEnvelope
 public import FLT.Mazur.HilbertOrderedOriginalBoundary
