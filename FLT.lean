@@ -14312,6 +14312,7 @@ public import FLT.Mazur.WeierstrassDividedZeroDiagonalAtlas
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalAtlasOverlaps
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalAtlasRestriction
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalAtlasSystem
+public import FLT.Mazur.WeierstrassDividedZeroDiagonalClosingBase
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalClosingComparison
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalClosingIntersection
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalClosingRestriction
