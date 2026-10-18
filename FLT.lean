@@ -14206,6 +14206,7 @@ public import FLT.Mazur.WeierstrassDividedZeroDiagonalAtlasRestriction
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalAtlasSystem
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalNodeRestriction
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalOpenRestriction
+public import FLT.Mazur.WeierstrassDividedZeroDiagonalPolygonParameters
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalRestriction
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalState
 public import FLT.Mazur.WeierstrassDividedZeroEqualityAtlasAdjacentReduction
