@@ -3974,6 +3974,7 @@ public import FLT.Mazur.CyclicCharacteristicAtlasCoverage
 public import FLT.Mazur.CyclicCharacteristicAtlasCoverageUnrestricted
 public import FLT.Mazur.CyclicCharacteristicAtlasModuli
 public import FLT.Mazur.CyclicCharacteristicAtlasRelabel
+public import FLT.Mazur.CyclicCharacteristicAuxiliaryPrescribedCover
 public import FLT.Mazur.CyclicCharacteristicAuxiliaryPrescribedNeighborhood
 public import FLT.Mazur.CyclicCharacteristicEvenNormalizedAuxiliary
 public import FLT.Mazur.CyclicCharacteristicEvenNormalizedGenerator
