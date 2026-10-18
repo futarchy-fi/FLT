@@ -8979,6 +8979,7 @@ public import FLT.Mazur.PolygonCubicTorusRatios
 public import FLT.Mazur.PolygonCubicTorusSurjectivity
 public import FLT.Mazur.PolygonCubicVeryAmple
 public import FLT.Mazur.PolygonCyclicAtlas
+public import FLT.Mazur.PolygonCyclicBoundaryDivisor
 public import FLT.Mazur.PolygonCyclicCocone
 public import FLT.Mazur.PolygonCyclicDescent
 public import FLT.Mazur.PolygonCyclicDivisor
