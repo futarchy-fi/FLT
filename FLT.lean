@@ -9570,6 +9570,7 @@ public import FLT.Mazur.PolygonUniversalScaling
 public import FLT.Mazur.PolygonVariableSmoothingAtlas
 public import FLT.Mazur.PolygonVariableSmoothingChartIdentification
 public import FLT.Mazur.PolygonVariableSmoothingDiagram
+public import FLT.Mazur.PolygonVariableSmoothingEdgeIntersection
 public import FLT.Mazur.PolygonVariableSmoothingFamily
 public import FLT.Mazur.PolygonVariableSmoothingIntersections
 public import FLT.Mazur.PolygonVariableSmoothingRestriction
