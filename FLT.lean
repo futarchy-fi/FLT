@@ -7850,6 +7850,7 @@ public import FLT.Mazur.PolygonArithmeticResidueNilpotence
 public import FLT.Mazur.PolygonArithmeticRestrictionKernel
 public import FLT.Mazur.PolygonArithmeticRetainedChainFields
 public import FLT.Mazur.PolygonArithmeticRetainedChainState
+public import FLT.Mazur.PolygonArithmeticRetainedChainZero
 public import FLT.Mazur.PolygonArithmeticRetainedMarkings
 public import FLT.Mazur.PolygonArithmeticScalarExactness
 public import FLT.Mazur.PolygonArithmeticSchemePointExt
