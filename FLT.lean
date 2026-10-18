@@ -4859,6 +4859,7 @@ public import FLT.Mazur.EquivalenceRelationConnectedCompleteTests
 public import FLT.Mazur.EquivalenceRelationDoubleVanishingOpen
 public import FLT.Mazur.EquivalenceRelationEqualFrameCorrections
 public import FLT.Mazur.EquivalenceRelationEqualFrameOverlap
+public import FLT.Mazur.EquivalenceRelationExactRankInterior
 public import FLT.Mazur.EquivalenceRelationExcessFrames
 public import FLT.Mazur.EquivalenceRelationFiberPermutationSections
 public import FLT.Mazur.EquivalenceRelationFiberRebase
@@ -4924,6 +4925,7 @@ public import FLT.Mazur.EquivalenceRelationNormalizedScalarComplete
 public import FLT.Mazur.EquivalenceRelationNormalizedSubframe
 public import FLT.Mazur.EquivalenceRelationOpenChartScalars
 public import FLT.Mazur.EquivalenceRelationRankInterior
+public import FLT.Mazur.EquivalenceRelationRankSaturation
 public import FLT.Mazur.EquivalenceRelationRankStratumCover
 public import FLT.Mazur.EquivalenceRelationResidualAdicIdeal
 public import FLT.Mazur.EquivalenceRelationResidualBranchDecomposition
@@ -6337,6 +6339,7 @@ public import FLT.Mazur.HilbertRankStratumOriginalNeighborhoods
 public import FLT.Mazur.HilbertRebasedCompleteFrame
 public import FLT.Mazur.HilbertReindexedCoordinateRing
 public import FLT.Mazur.HilbertRepeatedMonomialChart
+public import FLT.Mazur.HilbertResidualRankCeiling
 public import FLT.Mazur.HilbertSameAmbientChartIso
 public import FLT.Mazur.HilbertSourceActionRelationGraph
 public import FLT.Mazur.HilbertSourceBadAffineChartEquations
@@ -6362,6 +6365,7 @@ public import FLT.Mazur.HilbertSourceFiniteCompletenessTests
 public import FLT.Mazur.HilbertSourceFiniteLinearOpenLifts
 public import FLT.Mazur.HilbertSourceFiniteOpenNumerators
 public import FLT.Mazur.HilbertSourceGeneratedLocalizedSurjectivity
+public import FLT.Mazur.HilbertSourceLocalRankCeilingLifts
 public import FLT.Mazur.HilbertSourceLocalizedOpenLift
 public import FLT.Mazur.HilbertSourceNonstableOpenLifts
 public import FLT.Mazur.HilbertSourceOpenRelationLifts
@@ -10614,10 +10618,12 @@ public import FLT.Mazur.RelativeFrameDenseRankStrata
 public import FLT.Mazur.RelativeFrameExactRank
 public import FLT.Mazur.RelativeFrameRankBound
 public import FLT.Mazur.RelativeFrameRankImage
+public import FLT.Mazur.RelativeFrameRankJumpValuations
 public import FLT.Mazur.RelativeFrameRankOpen
 public import FLT.Mazur.RelativeFrameRelabelCompleteness
 public import FLT.Mazur.RelativeFrameScalarCompleteness
 public import FLT.Mazur.RelativeFrameScalarExtension
+public import FLT.Mazur.RelativeFrameSpecializationCeiling
 public import FLT.Mazur.RelativeFrameTestCartesian
 public import FLT.Mazur.RelativeFrameTestSections
 public import FLT.Mazur.RelativeFrameTestSplitting
