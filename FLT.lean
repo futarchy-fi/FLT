@@ -9000,6 +9000,7 @@ public import FLT.Mazur.PolygonCyclicAtlas
 public import FLT.Mazur.PolygonCyclicBoundaryContraction
 public import FLT.Mazur.PolygonCyclicBoundaryDivisor
 public import FLT.Mazur.PolygonCyclicBoundaryFieldContraction
+public import FLT.Mazur.PolygonCyclicBoundaryFieldIdeals
 public import FLT.Mazur.PolygonCyclicBoundaryFieldIncidence
 public import FLT.Mazur.PolygonCyclicBoundaryFieldNode
 public import FLT.Mazur.PolygonCyclicBoundaryFieldNormalization
