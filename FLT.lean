@@ -13912,6 +13912,7 @@ public import FLT.Mazur.WeierstrassDividedThirdTerminalGeometry
 public import FLT.Mazur.WeierstrassDividedThirdTransitions
 public import FLT.Mazur.WeierstrassDividedThirdUnchangedRestriction
 public import FLT.Mazur.WeierstrassDividedThreeFiniteNodes
+public import FLT.Mazur.WeierstrassDividedThreeFiniteResiduals
 public import FLT.Mazur.WeierstrassDividedThreeFiniteState
 public import FLT.Mazur.WeierstrassDividedThreeSeedState
 public import FLT.Mazur.WeierstrassDividedTwistedAtlas
