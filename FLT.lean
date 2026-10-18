@@ -6278,9 +6278,11 @@ public import FLT.Mazur.HilbertRebasedCompleteFrame
 public import FLT.Mazur.HilbertReindexedCoordinateRing
 public import FLT.Mazur.HilbertRepeatedMonomialChart
 public import FLT.Mazur.HilbertSameAmbientChartIso
+public import FLT.Mazur.HilbertSourceOpenRelationLifts
 public import FLT.Mazur.HilbertStableFrameBoundary
 public import FLT.Mazur.HilbertSubframeAffineOverlap
 public import FLT.Mazur.HilbertSubframeAffineTargets
+public import FLT.Mazur.HilbertSubframeBadQuotientPrimeCorrections
 public import FLT.Mazur.HilbertSubframeBezoutLift
 public import FLT.Mazur.HilbertSubframeBezoutNeighborhood
 public import FLT.Mazur.HilbertSubframeBoundaryExchangeMap
@@ -10745,6 +10747,9 @@ public import FLT.Mazur.SchemeAdicVanishingOpen
 public import FLT.Mazur.SchemeAffineAmbientTestCocycle
 public import FLT.Mazur.SchemeAffineAmbientTestNaturality
 public import FLT.Mazur.SchemeAffineAmbientTestRefinement
+public import FLT.Mazur.SchemeAffineBadComplement
+public import FLT.Mazur.SchemeAffineBadComplementCoordinates
+public import FLT.Mazur.SchemeAffineBadComplementIntegral
 public import FLT.Mazur.SchemeAffineBaseCoverRecovery
 public import FLT.Mazur.SchemeAffineBaseRecovery
 public import FLT.Mazur.SchemeAffineBaseRecoveryCharts
@@ -11070,6 +11075,9 @@ public import FLT.Mazur.SchemeOpenEnvelopeDenominators
 public import FLT.Mazur.SchemeOpenEnvelopeInterior
 public import FLT.Mazur.SchemeOpenEnvelopeInteriorTests
 public import FLT.Mazur.SchemeOpenEnvelopeLocus
+public import FLT.Mazur.SchemeOpenPairBaseRestriction
+public import FLT.Mazur.SchemeOpenPairPrincipalRestriction
+public import FLT.Mazur.SchemeOpenPairRelationLifts
 public import FLT.Mazur.SchemeOpenPushoutCharts
 public import FLT.Mazur.SchemeOpenPushoutCoverIso
 public import FLT.Mazur.SchemeOpenPushoutIntersection
@@ -11082,8 +11090,10 @@ public import FLT.Mazur.SchemeOrbitOpenAffineSelection
 public import FLT.Mazur.SchemeOrbitOpenGroundGeometry
 public import FLT.Mazur.SchemeOrbitOpenSelection
 public import FLT.Mazur.SchemeOrbitOpenSelectionKernel
+public import FLT.Mazur.SchemeOriginalScalarCompactRelationLifts
 public import FLT.Mazur.SchemeOriginalScalarCorrectionFamily
 public import FLT.Mazur.SchemeOriginalScalarOpenCorrections
+public import FLT.Mazur.SchemeOriginalScalarPairOpenLifts
 public import FLT.Mazur.SchemeOverlapBaseChange
 public import FLT.Mazur.SchemeOverlapCocycleChart
 public import FLT.Mazur.SchemeOverlapCocycleDetection
