@@ -13868,6 +13868,7 @@ public import FLT.Mazur.WeierstrassDividedRevisedClosingUnion
 public import FLT.Mazur.WeierstrassDividedRevisedCorrectionBase
 public import FLT.Mazur.WeierstrassDividedRevisedExteriorEdges
 public import FLT.Mazur.WeierstrassDividedRevisedFirstRetained
+public import FLT.Mazur.WeierstrassDividedRevisedGlobalBase
 public import FLT.Mazur.WeierstrassDividedRevisedGlobalCoverage
 public import FLT.Mazur.WeierstrassDividedRevisedGlobalIso
 public import FLT.Mazur.WeierstrassDividedRevisedGlobalMap
