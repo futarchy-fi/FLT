@@ -15396,6 +15396,7 @@ public import FLT.Mazur.WeierstrassSmoothInputOutputRegular
 public import FLT.Mazur.WeierstrassSmoothInputSwap
 public import FLT.Mazur.WeierstrassSmoothLocalInverse
 public import FLT.Mazur.WeierstrassSmoothLocalOutputRegular
+public import FLT.Mazur.WeierstrassSmoothLocalRootLift
 public import FLT.Mazur.WeierstrassSmoothMixedAddition
 public import FLT.Mazur.WeierstrassSmoothMixedCommutativity
 public import FLT.Mazur.WeierstrassSmoothMixedCover
