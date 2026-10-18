@@ -3227,6 +3227,7 @@ public import FLT.Mazur.AffineTripleOverlapRefinement
 public import FLT.Mazur.AffineTripleOverlapRefinementSquares
 public import FLT.Mazur.AffineTripleUnitCoefficients
 public import FLT.Mazur.AffineTrivialLineSectionOpen
+public import FLT.Mazur.AffineValuationGeneratorLift
 public import FLT.Mazur.AlgebraEqualizerCoordinates
 public import FLT.Mazur.AlgebraicAcyclicOrbitTranslation
 public import FLT.Mazur.AlgebraicClosureEmbeddingConjugacy
@@ -5167,6 +5168,7 @@ public import FLT.Mazur.FiniteFreeTranslationNormFiber
 public import FLT.Mazur.FiniteFreeTranslationNormNaturality
 public import FLT.Mazur.FiniteFreeTranslationNormNeighborhood
 public import FLT.Mazur.FiniteFreeTranslationRefinement
+public import FLT.Mazur.FiniteGeneratorRingLift
 public import FLT.Mazur.FiniteGeometricEtaleTranslations
 public import FLT.Mazur.FiniteGeometricGenericPrincipalInteriors
 public import FLT.Mazur.FiniteGeometricSections
@@ -6315,6 +6317,7 @@ public import FLT.Mazur.HilbertSourceGeneratedLocalizedSurjectivity
 public import FLT.Mazur.HilbertSourceLocalizedOpenLift
 public import FLT.Mazur.HilbertSourceNonstableOpenLifts
 public import FLT.Mazur.HilbertSourceOpenRelationLifts
+public import FLT.Mazur.HilbertSourceValuativeBoundaryObstructions
 public import FLT.Mazur.HilbertStableFrameBoundary
 public import FLT.Mazur.HilbertSubframeAffineOverlap
 public import FLT.Mazur.HilbertSubframeAffineTargets
@@ -11015,6 +11018,7 @@ public import FLT.Mazur.SchemeBadAffineCoverFiniteType
 public import FLT.Mazur.SchemeBadAffineCoverGeometricBoundaryTests
 public import FLT.Mazur.SchemeBadAffineCoverLocalIntegral
 public import FLT.Mazur.SchemeBadAffineCoverReduced
+public import FLT.Mazur.SchemeBadAffineCoverValuation
 public import FLT.Mazur.SchemeBaseChangeLimit
 public import FLT.Mazur.SchemeCanonicalChartRecognition
 public import FLT.Mazur.SchemeCanonicalDescentData
@@ -11378,6 +11382,7 @@ public import FLT.Mazur.SchemeSmoothChartTransport
 public import FLT.Mazur.SchemeSmoothLocusCartesian
 public import FLT.Mazur.SchemeSmoothLocusQuotient
 public import FLT.Mazur.SchemeSourceTestOverlapRecognition
+public import FLT.Mazur.SchemeSpecializationValuation
 public import FLT.Mazur.SchemeSplitEtaleSourceSeed
 public import FLT.Mazur.SchemeSplitSeedGroundChart
 public import FLT.Mazur.SchemeSplitSeedGroundComparison
@@ -11398,6 +11403,7 @@ public import FLT.Mazur.SchemeUnchangedOpenIsoSquare
 public import FLT.Mazur.SchemeUnchangedOpenLift
 public import FLT.Mazur.SchemeUnchangedOpenPullback
 public import FLT.Mazur.SchemeUniformAdicVanishing
+public import FLT.Mazur.SchemeValuationImageClosure
 public import FLT.Mazur.SchemeWholeFiberCoefficients
 public import FLT.Mazur.SchemeWholeFiberGenericOpen
 public import FLT.Mazur.SchemeWholeFiberOpen
@@ -12072,6 +12078,8 @@ public import FLT.Mazur.UnpointedLocalAcyclicEffectiveDescent
 public import FLT.Mazur.UnpointedLocalAcyclicFppfSheaf
 public import FLT.Mazur.UnramifiedSectionImmersion
 public import FLT.Mazur.UnrestrictedSmoothFamilyCartier
+public import FLT.Mazur.ValuationPoleEquations
+public import FLT.Mazur.ValuationPoleReciprocal
 public import FLT.Mazur.ValuationProjectiveNormalization
 public import FLT.Mazur.ValuationRingCompleteModel
 public import FLT.Mazur.ValuationRingHenselianModel
