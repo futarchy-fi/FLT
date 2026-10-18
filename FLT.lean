@@ -7860,6 +7860,7 @@ public import FLT.Mazur.PolygonArithmeticRestrictionKernel
 public import FLT.Mazur.PolygonArithmeticRetainedChainCancellation
 public import FLT.Mazur.PolygonArithmeticRetainedChainFields
 public import FLT.Mazur.PolygonArithmeticRetainedChainIteration
+public import FLT.Mazur.PolygonArithmeticRetainedChainIterationStability
 public import FLT.Mazur.PolygonArithmeticRetainedChainPositions
 public import FLT.Mazur.PolygonArithmeticRetainedChainPunctures
 public import FLT.Mazur.PolygonArithmeticRetainedChainRestriction
