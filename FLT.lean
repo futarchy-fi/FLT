@@ -8179,6 +8179,7 @@ public import FLT.Mazur.PolygonCompleteBoundaryTestDivisor
 public import FLT.Mazur.PolygonCompleteBoundaryTestFaithful
 public import FLT.Mazur.PolygonCompleteBoundaryTestMarking
 public import FLT.Mazur.PolygonCompleteBoundaryTestRotation
+public import FLT.Mazur.PolygonCompleteBoundaryTestSubgroup
 public import FLT.Mazur.PolygonCompleteBoundaryTransitionCoherence
 public import FLT.Mazur.PolygonCompleteBoundaryTranslation
 public import FLT.Mazur.PolygonCompleteCartesianMarkings
