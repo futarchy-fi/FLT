@@ -5944,6 +5944,7 @@ public import FLT.Mazur.HilbertCompleteInteriorOriginalNeighborhoods
 public import FLT.Mazur.HilbertDenseRankOriginalLifts
 public import FLT.Mazur.HilbertDivisorDegreePresentation
 public import FLT.Mazur.HilbertEnvelopeSourceTransport
+public import FLT.Mazur.HilbertEqualFrameBoundaryCorrections
 public import FLT.Mazur.HilbertFaithfulAffineNeighborhood
 public import FLT.Mazur.HilbertFaithfullyFlatTupleBasis
 public import FLT.Mazur.HilbertFamilyAmbientPointNaturality
