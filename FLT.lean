@@ -6252,6 +6252,7 @@ public import FLT.Mazur.HilbertSubframeAffineOverlap
 public import FLT.Mazur.HilbertSubframeAffineTargets
 public import FLT.Mazur.HilbertSubframeBezoutLift
 public import FLT.Mazur.HilbertSubframeBezoutNeighborhood
+public import FLT.Mazur.HilbertSubframeBoundaryExchangeMap
 public import FLT.Mazur.HilbertSubframeBoundaryLifts
 public import FLT.Mazur.HilbertSubframeConstructedUnitLift
 public import FLT.Mazur.HilbertSubframeEqualSizeLift
