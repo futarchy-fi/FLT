@@ -34,9 +34,16 @@ local notation "d" => data (Fin.mk 0 (Nat.zero_lt_succ n))
 local notation "N" => arithmeticInitialFactorRatioChart π m W (π ^ 1)
   (Data.b3 d) (Data.b4 d) (Data.b6 d) H.a1_unit H.a2_div
     (H.b3_div _) (H.b4_div _) (H.b6_div _)
-local notation "E" => arithmeticZeroFiniteAtlasIso hπ data H m m hj u hu
 local notation "D" => arithmeticZeroDiagonalState hπ data H 0 hj u hu
 local notation "s" => PolygonArithmeticSimultaneous.State.initial D m
+
+/-- The original polynomial open is identified with the actual corrected initial open. -/
+def arithmeticZeroDiagonalInitialOpenIso (b : Bool) :
+    Spec (.of (PolynomialNodeOpen (W.map (algebraMap R Q)) (algebraMap R Q (π ^ 1)))) ≅
+      arithmeticZeroFiniteInitialObject hπ data H m m 0 hj u hu b :=
+  arithmeticZeroFiniteAtlasIso hπ data H m m hj u hu (.initial b)
+
+local notation "E" => arithmeticZeroDiagonalInitialOpenIso hπ data H m hj u hu
 
 /-- The full finite node comparison identifies its parameter with the diagonal smoothing. -/
 def arithmeticZeroDiagonalInitialTotalNodeIso (b : Bool) :
@@ -50,7 +57,7 @@ local notation "T" => arithmeticZeroDiagonalInitialTotalNodeIso hπ data H m hj 
 def arithmeticZeroDiagonalInitialFactorRatio (b : Bool) :
     arithmeticZeroFiniteInitialObject hπ data H m m 0 hj u hu b ⟶
       PolygonSmoothing.chart Q (s b) :=
-  (E (.initial b)).inv ≫ N ≫ (T b).hom
+  (E b).inv ≫ N ≫ (T b).hom
 
 local notation "F" => arithmeticZeroDiagonalInitialFactorRatio hπ data H m hj u hu
 
@@ -61,7 +68,7 @@ instance arithmeticZeroDiagonalInitialFactorRatio_isOpenImmersion (b : Bool) :
 
 /-- The whole original initial open recovers its full factor-ratio map. -/
 @[reassoc] theorem arithmeticZeroDiagonalInitialFactorRatio_transport (b : Bool) :
-    (E (.initial b)).hom ≫ F b = N ≫ (T b).hom := by
+    (E b).hom ≫ F b = N ≫ (T b).hom := by
   rw [arithmeticZeroDiagonalInitialFactorRatio, Iso.hom_inv_id_assoc]
 
 /-- The entire corrected initial node has its original cyclic orientation. -/
@@ -92,7 +99,7 @@ instance arithmeticZeroDiagonalFactorRatioInitialMap_isOpenImmersion (b : Bool) 
 
 /-- Transport preserves the complete original polynomial factor ratio at its actual label. -/
 @[reassoc] theorem arithmeticZeroDiagonalFactorRatioInitialMap_transport (b : Bool) :
-    (E (.initial b)).hom ≫ f b = N ≫ (T b).hom ≫ C b := by
+    (E b).hom ≫ f b = N ≫ (T b).hom ≫ C b := by
   rw [arithmeticZeroDiagonalFactorRatioInitialMap, ← Category.assoc,
     arithmeticZeroDiagonalInitialFactorRatio_transport, Category.assoc]
 
