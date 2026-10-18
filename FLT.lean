@@ -8207,6 +8207,7 @@ public import FLT.Mazur.PolygonCompleteConstantSections
 public import FLT.Mazur.PolygonCompleteCoordinateEvaluation
 public import FLT.Mazur.PolygonCompleteCyclicActionDivisor
 public import FLT.Mazur.PolygonCompleteCyclicActionMarkingLine
+public import FLT.Mazur.PolygonCompleteCyclicBoundaryParameters
 public import FLT.Mazur.PolygonCompleteCyclicDivisor
 public import FLT.Mazur.PolygonCompleteCyclicMarking
 public import FLT.Mazur.PolygonCompleteCyclicOrbit
