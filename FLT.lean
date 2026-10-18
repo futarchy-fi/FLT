@@ -8704,6 +8704,7 @@ public import FLT.Mazur.PolygonCompletePointSurjective
 public import FLT.Mazur.PolygonCompletePointTopLocalCubicComparison
 public import FLT.Mazur.PolygonCompletePointTorusNeighborhood
 public import FLT.Mazur.PolygonCompletePointWeierstrassEquation
+public import FLT.Mazur.PolygonCompletePrescribedCharacteristicCover
 public import FLT.Mazur.PolygonCompletePrescribedNormalizedCover
 public import FLT.Mazur.PolygonCompletePrescribedOddNormalizedCover
 public import FLT.Mazur.PolygonCompletePrincipalClosedFiber
