@@ -2526,6 +2526,8 @@ public import FLT.Mazur.AdditiveSheafModuleTransport
 public import FLT.Mazur.AdditiveSheafMultiplication
 public import FLT.Mazur.AdicAffineMorphismLift
 public import FLT.Mazur.AdicCommonModelFiltration
+public import FLT.Mazur.AdicCompleteAffinePoints
+public import FLT.Mazur.AdicCompleteLocalPoints
 public import FLT.Mazur.AdicCompletedDifferentials
 public import FLT.Mazur.AdicCompletedFirstCotangentEquiv
 public import FLT.Mazur.AdicCompletedInfinitesimalChainMap
@@ -2592,6 +2594,7 @@ public import FLT.Mazur.AdicInfinitesimalOriginalHomotopy
 public import FLT.Mazur.AdicInfinitesimalPresentationLift
 public import FLT.Mazur.AdicInfinitesimalSpaceFunctor
 public import FLT.Mazur.AdicInfinitesimalSpaceMap
+public import FLT.Mazur.AdicLocalPointTopology
 public import FLT.Mazur.AdicLocalizedFirstCotangent
 public import FLT.Mazur.AdicLocalizedH1Comparison
 public import FLT.Mazur.AdicMaximalCompletion
@@ -5007,6 +5010,7 @@ public import FLT.Mazur.FaithfulMarkingPullbackSections
 public import FLT.Mazur.FaithfulMarkingSectionRelabeling
 public import FLT.Mazur.FaithfulNeighborhoodCurve
 public import FLT.Mazur.FaithfulTensorVanishing
+public import FLT.Mazur.FaithfulTorusCyclicIndex
 public import FLT.Mazur.FaithfullyFlatFinitePresentation
 public import FLT.Mazur.FaithfullyFlatInvertible
 public import FLT.Mazur.FaithfullyFlatSectionLift
@@ -5853,6 +5857,7 @@ public import FLT.Mazur.GroupMarkingTransportEquations
 public import FLT.Mazur.GroupMarkingTransportNaturality
 public import FLT.Mazur.GroupObjectPointTranslation
 public import FLT.Mazur.GroupObjectTranslationNaturality
+public import FLT.Mazur.GroupPointKernelTransport
 public import FLT.Mazur.GroupSchemeBaseChangeComparison
 public import FLT.Mazur.GroupSchemeBaseChangeComposition
 public import FLT.Mazur.GroupSchemeBaseChangeEqualityComparison
@@ -7538,10 +7543,12 @@ public import FLT.Mazur.OneGonCompleteBoundaryMarking
 public import FLT.Mazur.OneGonCompleteCyclicBoundaryParameters
 public import FLT.Mazur.OneGonCompleteCyclicCorrection
 public import FLT.Mazur.OneGonCompleteCyclicLiftCriterion
+public import FLT.Mazur.OneGonCompleteKernelPowers
 public import FLT.Mazur.OneGonCompleteLabelLifts
 public import FLT.Mazur.OneGonCompleteUniversalCyclicFamily
 public import FLT.Mazur.OneGonCubicElimination
 public import FLT.Mazur.OneGonDenominatorEqualizer
+public import FLT.Mazur.OneGonFaithfulCompleteCyclicLift
 public import FLT.Mazur.OneGonFormalCoordinates
 public import FLT.Mazur.OneGonGlobalPushout
 public import FLT.Mazur.OneGonGluing
@@ -11780,6 +11787,7 @@ public import FLT.Mazur.TildeInvertibleLocal
 public import FLT.Mazur.TildePrincipalOpen
 public import FLT.Mazur.TildeSourceSectionComparison
 public import FLT.Mazur.TorusChartScalars
+public import FLT.Mazur.TorusPointUnitEquiv
 public import FLT.Mazur.TranscendentalAcyclicTranslation
 public import FLT.Mazur.TranscendentalAffineOpenOrbit
 public import FLT.Mazur.TranscendentalCoefficientOrbitAvoidance
@@ -15366,6 +15374,9 @@ public import FLT.Mazur.WeierstrassSmoothCoefficientPointAddition
 public import FLT.Mazur.WeierstrassSmoothCoefficientPreimage
 public import FLT.Mazur.WeierstrassSmoothCoefficientProduct
 public import FLT.Mazur.WeierstrassSmoothCoefficientSpecialization
+public import FLT.Mazur.WeierstrassSmoothCompleteKernel
+public import FLT.Mazur.WeierstrassSmoothCompleteRoots
+public import FLT.Mazur.WeierstrassSmoothCompleteSections
 public import FLT.Mazur.WeierstrassSmoothConnected
 public import FLT.Mazur.WeierstrassSmoothCrossAffine
 public import FLT.Mazur.WeierstrassSmoothCrossPolynomial
