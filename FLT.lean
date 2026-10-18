@@ -8983,6 +8983,7 @@ public import FLT.Mazur.PolygonCyclicAtlas
 public import FLT.Mazur.PolygonCyclicBoundaryContraction
 public import FLT.Mazur.PolygonCyclicBoundaryDivisor
 public import FLT.Mazur.PolygonCyclicBoundaryNodeFrame
+public import FLT.Mazur.PolygonCyclicBoundaryRefinement
 public import FLT.Mazur.PolygonCyclicCocone
 public import FLT.Mazur.PolygonCyclicDescent
 public import FLT.Mazur.PolygonCyclicDivisor
