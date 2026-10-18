@@ -4881,6 +4881,7 @@ public import FLT.Mazur.EquivalenceRelationSubframeNormalizedTransitions
 public import FLT.Mazur.EquivalenceRelationSubframeOpenCharts
 public import FLT.Mazur.EquivalenceRelationSubframeRefinement
 public import FLT.Mazur.EquivalenceRelationSubframeSelectedPoints
+public import FLT.Mazur.EquivalenceRelationSubframeSingleExchange
 public import FLT.Mazur.EquivalenceRelationSubframeSourceComparison
 public import FLT.Mazur.EquivalenceRelationSubframeTransfer
 public import FLT.Mazur.EquivalenceRelationSubframeTransferBoundary
