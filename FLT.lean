@@ -3361,11 +3361,14 @@ public import FLT.Mazur.AuxiliaryDistinctSectionParameter
 public import FLT.Mazur.AuxiliaryLevelFaithfulOpen
 public import FLT.Mazur.AuxiliaryLevelFaithfulRepresentation
 public import FLT.Mazur.AuxiliaryLevelFieldMarking
+public import FLT.Mazur.AuxiliaryLevelFiniteNeighborhood
+public import FLT.Mazur.AuxiliaryLevelFiniteType
 public import FLT.Mazur.AuxiliaryLevelGroupTransport
 public import FLT.Mazur.AuxiliaryLevelHomScheme
 public import FLT.Mazur.AuxiliaryLevelKernelLocus
 public import FLT.Mazur.AuxiliaryLevelMappedFaithfulness
 public import FLT.Mazur.AuxiliaryLevelRelabeling
+public import FLT.Mazur.AuxiliaryMarkingPowerProper
 public import FLT.Mazur.AuxiliaryTorsionMarkingComparison
 public import FLT.Mazur.BaseAdicClosedAmpleSections
 public import FLT.Mazur.BaseAdicCohomologyFiltration
@@ -3994,6 +3997,7 @@ public import FLT.Mazur.CyclicCharacteristicAtlasCoverageUnrestricted
 public import FLT.Mazur.CyclicCharacteristicAtlasModuli
 public import FLT.Mazur.CyclicCharacteristicAtlasRelabel
 public import FLT.Mazur.CyclicCharacteristicAuxiliaryFaithfulness
+public import FLT.Mazur.CyclicCharacteristicAuxiliaryFiniteType
 public import FLT.Mazur.CyclicCharacteristicAuxiliaryPrescribedCover
 public import FLT.Mazur.CyclicCharacteristicAuxiliaryPrescribedNeighborhood
 public import FLT.Mazur.CyclicCharacteristicCoefficientFiniteType
@@ -4006,6 +4010,12 @@ public import FLT.Mazur.CyclicCharacteristicEvenRelabeledGenerator
 public import FLT.Mazur.CyclicCharacteristicFaithfulFullCover
 public import FLT.Mazur.CyclicCharacteristicFaithfulPrescribedCover
 public import FLT.Mazur.CyclicCharacteristicFaithfulRelabeledCover
+public import FLT.Mazur.CyclicCharacteristicFiniteNeighborhood
+public import FLT.Mazur.CyclicCharacteristicFiniteTypeAtlas
+public import FLT.Mazur.CyclicCharacteristicInvariantAffineCover
+public import FLT.Mazur.CyclicCharacteristicInvariantAffineCoverage
+public import FLT.Mazur.CyclicCharacteristicLocusFiniteType
+public import FLT.Mazur.CyclicCharacteristicLocusSeparated
 public import FLT.Mazur.CyclicCharacteristicMarkedRelation
 public import FLT.Mazur.CyclicCharacteristicMarkedRelationAction
 public import FLT.Mazur.CyclicCharacteristicNormalizedAtlas
@@ -4019,6 +4029,7 @@ public import FLT.Mazur.CyclicCharacteristicOddParameterSource
 public import FLT.Mazur.CyclicCharacteristicOddRelabelSections
 public import FLT.Mazur.CyclicCharacteristicOddRelabeledAuxiliary
 public import FLT.Mazur.CyclicCharacteristicOddRelabeledGenerator
+public import FLT.Mazur.CyclicCharacteristicParameterFiniteType
 public import FLT.Mazur.CyclicCharacteristicPrescribedCover
 public import FLT.Mazur.CyclicCharacteristicPrescribedNeighborhood
 public import FLT.Mazur.CyclicCharacteristicRelabelSections
@@ -5053,6 +5064,7 @@ public import FLT.Mazur.FiniteAffineCoverDimension
 public import FLT.Mazur.FiniteAffineCoverFiniteness
 public import FLT.Mazur.FiniteAffineIntersectionDiagram
 public import FLT.Mazur.FiniteAffineLineCover
+public import FLT.Mazur.FiniteAffineNeighborhoodStability
 public import FLT.Mazur.FiniteAffineOpenClosedDescent
 public import FLT.Mazur.FiniteAffineProperIntegerDescent
 public import FLT.Mazur.FiniteAlgebraFiberSurjective
@@ -5203,6 +5215,7 @@ public import FLT.Mazur.FiniteGroupInvariantOpens
 public import FLT.Mazur.FiniteGroupInvariantPolynomial
 public import FLT.Mazur.FiniteGroupInvariantRing
 public import FLT.Mazur.FiniteGroupInvariantSpectrum
+public import FLT.Mazur.FiniteGroupNeighborhoodAffineCover
 public import FLT.Mazur.FiniteGroupOpenCoefficientRefinement
 public import FLT.Mazur.FiniteGroupOpenRelationCoefficients
 public import FLT.Mazur.FiniteGroupOpenRestriction
@@ -11248,6 +11261,7 @@ public import FLT.Mazur.SchemeOriginalScalarCorrectionFamily
 public import FLT.Mazur.SchemeOriginalScalarOpenCorrections
 public import FLT.Mazur.SchemeOriginalScalarPairOpenLifts
 public import FLT.Mazur.SchemeOriginalScalarUnstableOpenLifts
+public import FLT.Mazur.SchemeOverProductProperties
 public import FLT.Mazur.SchemeOverlapBaseChange
 public import FLT.Mazur.SchemeOverlapCocycleChart
 public import FLT.Mazur.SchemeOverlapCocycleDetection
