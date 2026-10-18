@@ -14722,6 +14722,7 @@ public import FLT.Mazur.WeierstrassDividedZeroSecondTransitions
 public import FLT.Mazur.WeierstrassDividedZeroSixthFields
 public import FLT.Mazur.WeierstrassDividedZeroSlopeContraction
 public import FLT.Mazur.WeierstrassDividedZeroSlopeLaurent
+public import FLT.Mazur.WeierstrassDividedZeroSourceDesc
 public import FLT.Mazur.WeierstrassDividedZeroSplitCocone
 public import FLT.Mazur.WeierstrassDividedZeroSplitComponentInjectivity
 public import FLT.Mazur.WeierstrassDividedZeroSplitCycle
