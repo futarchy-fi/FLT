@@ -9008,6 +9008,7 @@ public import FLT.Mazur.PolygonCyclicBoundaryFieldTranslation
 public import FLT.Mazur.PolygonCyclicBoundaryNodeFrame
 public import FLT.Mazur.PolygonCyclicBoundaryRefinement
 public import FLT.Mazur.PolygonCyclicBoundaryStandardComponentIdeal
+public import FLT.Mazur.PolygonCyclicBoundaryStandardComponentLine
 public import FLT.Mazur.PolygonCyclicBoundaryStandardContraction
 public import FLT.Mazur.PolygonCyclicBoundaryStandardContractionLine
 public import FLT.Mazur.PolygonCyclicBoundaryStandardDivisor
