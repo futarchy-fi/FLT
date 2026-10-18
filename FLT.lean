@@ -14426,6 +14426,7 @@ public import FLT.Mazur.WeierstrassInfinityDividedQuadraticCoefficients
 public import FLT.Mazur.WeierstrassInfinityFactorCancellation
 public import FLT.Mazur.WeierstrassInfinityFactorRatioCoefficient
 public import FLT.Mazur.WeierstrassInfinityFactorRatioCongruence
+public import FLT.Mazur.WeierstrassInfinityFactorRatioIso
 public import FLT.Mazur.WeierstrassInfinityFactorRatioParameter
 public import FLT.Mazur.WeierstrassInfinityFactorRatioParameterNaturality
 public import FLT.Mazur.WeierstrassInfinityFieldSmooth
