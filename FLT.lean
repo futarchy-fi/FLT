@@ -7816,6 +7816,7 @@ public import FLT.Mazur.OriginalInvariantOpenAllEtaleLifts
 public import FLT.Mazur.OriginalPrimeIntegralEquations
 public import FLT.Mazur.OriginalPrimeIntegralFiber
 public import FLT.Mazur.OriginalPrimeIntegralGenerators
+public import FLT.Mazur.OriginalPrimeIntegralLocus
 public import FLT.Mazur.OriginalPrimeQuotientEquations
 public import FLT.Mazur.OriginalRestrictedHilbertIntersection
 public import FLT.Mazur.OriginalScalarFiniteLinearLifts
