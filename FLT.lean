@@ -4842,6 +4842,7 @@ public import FLT.Mazur.EquivalenceRelationBoundaryActionGeometry
 public import FLT.Mazur.EquivalenceRelationBoundaryChartTests
 public import FLT.Mazur.EquivalenceRelationBoundaryChartTransport
 public import FLT.Mazur.EquivalenceRelationBoundaryCoefficients
+public import FLT.Mazur.EquivalenceRelationBoundaryComponentBounds
 public import FLT.Mazur.EquivalenceRelationBoundaryComponentRank
 public import FLT.Mazur.EquivalenceRelationBoundaryExcess
 public import FLT.Mazur.EquivalenceRelationBoundaryFaithful
