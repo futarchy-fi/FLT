@@ -7545,6 +7545,7 @@ public import FLT.Mazur.OneGonCompleteUniversalCyclicFamily
 public import FLT.Mazur.OneGonCubicElimination
 public import FLT.Mazur.OneGonCyclicParameterSections
 public import FLT.Mazur.OneGonDenominatorEqualizer
+public import FLT.Mazur.OneGonFaithfulClosedSubgroup
 public import FLT.Mazur.OneGonFaithfulCompleteCyclicLift
 public import FLT.Mazur.OneGonFaithfulCompleteDivisor
 public import FLT.Mazur.OneGonFaithfulCompleteSubgroup
