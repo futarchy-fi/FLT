@@ -10638,6 +10638,7 @@ public import FLT.Mazur.RelativeDistinctSubframe
 public import FLT.Mazur.RelativeDistinctTupleLift
 public import FLT.Mazur.RelativeDistinctTuples
 public import FLT.Mazur.RelativeEtaleFiniteBranchCover
+public import FLT.Mazur.RelativeExactRankFactorization
 public import FLT.Mazur.RelativeExactRankFaithful
 public import FLT.Mazur.RelativeExactRankFinite
 public import FLT.Mazur.RelativeExactRankFrameCover
