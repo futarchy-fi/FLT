@@ -4858,6 +4858,7 @@ public import FLT.Mazur.EquivalenceRelationChartFamilyLifts
 public import FLT.Mazur.EquivalenceRelationChartFamilyLocalization
 public import FLT.Mazur.EquivalenceRelationChartFamilyRestriction
 public import FLT.Mazur.EquivalenceRelationChartKernelDiscrepancy
+public import FLT.Mazur.EquivalenceRelationChartRankIdeal
 public import FLT.Mazur.EquivalenceRelationCompleteAdicDiscrepancy
 public import FLT.Mazur.EquivalenceRelationCompleteAdicSeparation
 public import FLT.Mazur.EquivalenceRelationCompleteAffineStages
