@@ -13793,6 +13793,7 @@ public import FLT.Mazur.WeierstrassDividedZeroExteriorParameterIntersection
 public import FLT.Mazur.WeierstrassDividedZeroExteriorProjective
 public import FLT.Mazur.WeierstrassDividedZeroExteriorSmoothCoordinates
 public import FLT.Mazur.WeierstrassDividedZeroExteriorSmoothOrbit
+public import FLT.Mazur.WeierstrassDividedZeroFifthFields
 public import FLT.Mazur.WeierstrassDividedZeroFirstAtlas
 public import FLT.Mazur.WeierstrassDividedZeroFirstAtlasClosing
 public import FLT.Mazur.WeierstrassDividedZeroFirstAtlasIdentification
