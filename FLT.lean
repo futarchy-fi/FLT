@@ -3575,6 +3575,7 @@ public import FLT.Mazur.BoundaryCorrectionMixedNumerators
 public import FLT.Mazur.BoundaryCorrectionOperatorIndependence
 public import FLT.Mazur.BoundaryCorrectionReductionCertificate
 public import FLT.Mazur.BoundaryCorrectionTensorCoordinates
+public import FLT.Mazur.BoundaryExchangeObstruction
 public import FLT.Mazur.BoundedFlatAcyclicNeighborhood
 public import FLT.Mazur.BoundedFlatAcyclicOpen
 public import FLT.Mazur.BoundedFlatFiberVanishing
@@ -4764,6 +4765,7 @@ public import FLT.Mazur.EquivalenceRelationBoundaryOpenCoefficients
 public import FLT.Mazur.EquivalenceRelationBoundarySubframe
 public import FLT.Mazur.EquivalenceRelationBoundarySubframeCoefficients
 public import FLT.Mazur.EquivalenceRelationBoundarySubframeGeometry
+public import FLT.Mazur.EquivalenceRelationBoundarySubframeKernel
 public import FLT.Mazur.EquivalenceRelationBoundarySubframeRefinement
 public import FLT.Mazur.EquivalenceRelationChartFamilyCorrections
 public import FLT.Mazur.EquivalenceRelationChartFamilyLifts
@@ -4883,6 +4885,7 @@ public import FLT.Mazur.EquivalenceRelationSubframeDiscrepancy
 public import FLT.Mazur.EquivalenceRelationSubframeEqualSize
 public import FLT.Mazur.EquivalenceRelationSubframeEqualSizeCompatibility
 public import FLT.Mazur.EquivalenceRelationSubframeExchangeCriterion
+public import FLT.Mazur.EquivalenceRelationSubframeExchangeMap
 public import FLT.Mazur.EquivalenceRelationSubframeFullDomain
 public import FLT.Mazur.EquivalenceRelationSubframeGraphCorrections
 public import FLT.Mazur.EquivalenceRelationSubframeGraphs
@@ -6264,9 +6267,13 @@ public import FLT.Mazur.HilbertSubframeAffineOverlap
 public import FLT.Mazur.HilbertSubframeAffineTargets
 public import FLT.Mazur.HilbertSubframeBezoutLift
 public import FLT.Mazur.HilbertSubframeBezoutNeighborhood
+public import FLT.Mazur.HilbertSubframeBoundaryExchangeMap
 public import FLT.Mazur.HilbertSubframeBoundaryLifts
 public import FLT.Mazur.HilbertSubframeConstructedUnitLift
 public import FLT.Mazur.HilbertSubframeEqualSizeLift
+public import FLT.Mazur.HilbertSubframeExchangeKernel
+public import FLT.Mazur.HilbertSubframeExchangeLifts
+public import FLT.Mazur.HilbertSubframeExchangeObstruction
 public import FLT.Mazur.HilbertSubframeNormalizedTransfer
 public import FLT.Mazur.HilbertSubframeStrictUnitCover
 public import FLT.Mazur.HilbertSubframeTransferCorrections
