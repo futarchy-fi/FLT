@@ -3575,6 +3575,7 @@ public import FLT.Mazur.BoundaryCorrectionMixedNumerators
 public import FLT.Mazur.BoundaryCorrectionOperatorIndependence
 public import FLT.Mazur.BoundaryCorrectionReductionCertificate
 public import FLT.Mazur.BoundaryCorrectionTensorCoordinates
+public import FLT.Mazur.BoundaryExchangeObstruction
 public import FLT.Mazur.BoundedFlatAcyclicNeighborhood
 public import FLT.Mazur.BoundedFlatAcyclicOpen
 public import FLT.Mazur.BoundedFlatFiberVanishing
@@ -3970,6 +3971,10 @@ public import FLT.Mazur.CurveUniformFieldDegreeBound
 public import FLT.Mazur.CuspCollision
 public import FLT.Mazur.CuspOrderNumerator
 public import FLT.Mazur.CyclicAuxiliaryPrescribedNormalizedNeighborhood
+public import FLT.Mazur.CyclicBoundaryOriginalMarkings
+public import FLT.Mazur.CyclicBoundaryParameterAction
+public import FLT.Mazur.CyclicBoundaryParameterSections
+public import FLT.Mazur.CyclicBoundarySectionMarking
 public import FLT.Mazur.CyclicCharacteristicAtlas
 public import FLT.Mazur.CyclicCharacteristicAtlasCoverage
 public import FLT.Mazur.CyclicCharacteristicAtlasCoverageUnrestricted
@@ -4764,6 +4769,7 @@ public import FLT.Mazur.EquivalenceRelationBoundaryOpenCoefficients
 public import FLT.Mazur.EquivalenceRelationBoundarySubframe
 public import FLT.Mazur.EquivalenceRelationBoundarySubframeCoefficients
 public import FLT.Mazur.EquivalenceRelationBoundarySubframeGeometry
+public import FLT.Mazur.EquivalenceRelationBoundarySubframeKernel
 public import FLT.Mazur.EquivalenceRelationBoundarySubframeRefinement
 public import FLT.Mazur.EquivalenceRelationChartFamilyCorrections
 public import FLT.Mazur.EquivalenceRelationChartFamilyLifts
@@ -4883,6 +4889,7 @@ public import FLT.Mazur.EquivalenceRelationSubframeDiscrepancy
 public import FLT.Mazur.EquivalenceRelationSubframeEqualSize
 public import FLT.Mazur.EquivalenceRelationSubframeEqualSizeCompatibility
 public import FLT.Mazur.EquivalenceRelationSubframeExchangeCriterion
+public import FLT.Mazur.EquivalenceRelationSubframeExchangeMap
 public import FLT.Mazur.EquivalenceRelationSubframeFullDomain
 public import FLT.Mazur.EquivalenceRelationSubframeGraphCorrections
 public import FLT.Mazur.EquivalenceRelationSubframeGraphs
@@ -6264,9 +6271,13 @@ public import FLT.Mazur.HilbertSubframeAffineOverlap
 public import FLT.Mazur.HilbertSubframeAffineTargets
 public import FLT.Mazur.HilbertSubframeBezoutLift
 public import FLT.Mazur.HilbertSubframeBezoutNeighborhood
+public import FLT.Mazur.HilbertSubframeBoundaryExchangeMap
 public import FLT.Mazur.HilbertSubframeBoundaryLifts
 public import FLT.Mazur.HilbertSubframeConstructedUnitLift
 public import FLT.Mazur.HilbertSubframeEqualSizeLift
+public import FLT.Mazur.HilbertSubframeExchangeKernel
+public import FLT.Mazur.HilbertSubframeExchangeLifts
+public import FLT.Mazur.HilbertSubframeExchangeObstruction
 public import FLT.Mazur.HilbertSubframeNormalizedTransfer
 public import FLT.Mazur.HilbertSubframeStrictUnitCover
 public import FLT.Mazur.HilbertSubframeTransferCorrections
@@ -8204,6 +8215,7 @@ public import FLT.Mazur.PolygonCompleteConstantSections
 public import FLT.Mazur.PolygonCompleteCoordinateEvaluation
 public import FLT.Mazur.PolygonCompleteCyclicActionDivisor
 public import FLT.Mazur.PolygonCompleteCyclicActionMarkingLine
+public import FLT.Mazur.PolygonCompleteCyclicBoundaryParameters
 public import FLT.Mazur.PolygonCompleteCyclicDivisor
 public import FLT.Mazur.PolygonCompleteCyclicMarking
 public import FLT.Mazur.PolygonCompleteCyclicOrbit
@@ -8977,6 +8989,11 @@ public import FLT.Mazur.PolygonCubicTorusRatios
 public import FLT.Mazur.PolygonCubicTorusSurjectivity
 public import FLT.Mazur.PolygonCubicVeryAmple
 public import FLT.Mazur.PolygonCyclicAtlas
+public import FLT.Mazur.PolygonCyclicBoundaryContraction
+public import FLT.Mazur.PolygonCyclicBoundaryDivisor
+public import FLT.Mazur.PolygonCyclicBoundaryFieldTranslation
+public import FLT.Mazur.PolygonCyclicBoundaryNodeFrame
+public import FLT.Mazur.PolygonCyclicBoundaryRefinement
 public import FLT.Mazur.PolygonCyclicCocone
 public import FLT.Mazur.PolygonCyclicDescent
 public import FLT.Mazur.PolygonCyclicDivisor
