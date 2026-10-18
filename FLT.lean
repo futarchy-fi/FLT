@@ -7695,6 +7695,7 @@ public import FLT.Mazur.PointNormalizedLineBaseChange
 public import FLT.Mazur.PointNormalizedLineBundle
 public import FLT.Mazur.PointedCubicActualNormalizedAuxiliary
 public import FLT.Mazur.PointedCubicActualNormalizedGenerator
+public import FLT.Mazur.PointedCubicActualRelabeledSections
 public import FLT.Mazur.PointedCubicAuxiliaryCover
 public import FLT.Mazur.PointedCubicBaseGroupIso
 public import FLT.Mazur.PointedCubicCartierMarking
