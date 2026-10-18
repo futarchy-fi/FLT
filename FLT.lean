@@ -11020,6 +11020,7 @@ public import FLT.Mazur.SchemeIndependentRecoveryNormalization
 public import FLT.Mazur.SchemeIndependentTripleCocycle
 public import FLT.Mazur.SchemeInvariantPrincipalBoundaryNumerator
 public import FLT.Mazur.SchemeInvariantPrincipalNumerator
+public import FLT.Mazur.SchemeInvariantPrincipalRelationLifts
 public import FLT.Mazur.SchemeKernelFlatSourceImage
 public import FLT.Mazur.SchemeKernelInvariantOpenLift
 public import FLT.Mazur.SchemeKernelPairSectionSheaf
