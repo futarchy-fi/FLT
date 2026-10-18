@@ -13835,6 +13835,7 @@ public import FLT.Mazur.WeierstrassDividedRevisedInitialBoundary
 public import FLT.Mazur.WeierstrassDividedRevisedInitialIntersection
 public import FLT.Mazur.WeierstrassDividedRevisedInitialMaps
 public import FLT.Mazur.WeierstrassDividedRevisedInitialReflection
+public import FLT.Mazur.WeierstrassDividedRevisedInitialRetainedReflection
 public import FLT.Mazur.WeierstrassDividedRevisedLabeledMaps
 public import FLT.Mazur.WeierstrassDividedRevisedLocalIso
 public import FLT.Mazur.WeierstrassDividedRevisedNodeCoverage
