@@ -6325,6 +6325,7 @@ public import FLT.Mazur.HilbertSourceConstructedOpenPrimeTests
 public import FLT.Mazur.HilbertSourceConstructedOpenSections
 public import FLT.Mazur.HilbertSourceConstructedRelationNoetherian
 public import FLT.Mazur.HilbertSourceExactCenterValuations
+public import FLT.Mazur.HilbertSourceFiniteCompletenessTests
 public import FLT.Mazur.HilbertSourceFiniteLinearOpenLifts
 public import FLT.Mazur.HilbertSourceFiniteOpenNumerators
 public import FLT.Mazur.HilbertSourceGeneratedLocalizedSurjectivity
