@@ -10376,6 +10376,7 @@ public import FLT.Mazur.ProperUniversalDirectImageLine
 public import FLT.Mazur.ProperUniversalDirectImagePasting
 public import FLT.Mazur.ProperUniversalRetainedSection
 public import FLT.Mazur.ProperUniversalTensorIdentification
+public import FLT.Mazur.PullbackLeftLegTransport
 public import FLT.Mazur.PullbackOneLegTransport
 public import FLT.Mazur.PullbackOverlapBaseChange
 public import FLT.Mazur.PullbackRotationCocycle
@@ -14255,6 +14256,10 @@ public import FLT.Mazur.WeierstrassDividedZeroDiagonalAtlasSystem
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalClosingComparison
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalClosingIntersection
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalClosingUnion
+public import FLT.Mazur.WeierstrassDividedZeroDiagonalFactorRatio
+public import FLT.Mazur.WeierstrassDividedZeroDiagonalFactorRatioCover
+public import FLT.Mazur.WeierstrassDividedZeroDiagonalInfinityIntersection
+public import FLT.Mazur.WeierstrassDividedZeroDiagonalInitialIntersection
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalNodeRestriction
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalOpenRestriction
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalPolygon
@@ -14419,7 +14424,9 @@ public import FLT.Mazur.WeierstrassDividedZeroInfinityPolygon
 public import FLT.Mazur.WeierstrassDividedZeroInitialAffineOpen
 public import FLT.Mazur.WeierstrassDividedZeroInitialAffinePolygon
 public import FLT.Mazur.WeierstrassDividedZeroInitialInfinityParameter
+public import FLT.Mazur.WeierstrassDividedZeroInitialNodeTransport
 public import FLT.Mazur.WeierstrassDividedZeroInitialPolygonBoundary
+public import FLT.Mazur.WeierstrassDividedZeroInitialTransport
 public import FLT.Mazur.WeierstrassDividedZeroMobiusInitialIntersection
 public import FLT.Mazur.WeierstrassDividedZeroMobiusInitialOverlap
 public import FLT.Mazur.WeierstrassDividedZeroMobiusPolygonBoundary
