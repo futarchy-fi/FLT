@@ -4864,6 +4864,7 @@ public import FLT.Mazur.EquivalenceRelationSubframeRefinement
 public import FLT.Mazur.EquivalenceRelationSubframeSourceComparison
 public import FLT.Mazur.EquivalenceRelationSubframeTransfer
 public import FLT.Mazur.EquivalenceRelationSubframeTransferBoundary
+public import FLT.Mazur.EquivalenceRelationSubframeTransferGraphErrors
 public import FLT.Mazur.EquivalenceRelationSubframeTransferRestriction
 public import FLT.Mazur.EquivalenceRelationUniformSourceOpen
 public import FLT.Mazur.EquivalenceRelationUniformVanishingOpen
