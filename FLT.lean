@@ -2646,6 +2646,8 @@ public import FLT.Mazur.AffineBasisModuleMorphism
 public import FLT.Mazur.AffineBasisSheafExtension
 public import FLT.Mazur.AffineBasisSumCoproduct
 public import FLT.Mazur.AffineBasisSumMaps
+public import FLT.Mazur.AffineBoundaryComponentEquations
+public import FLT.Mazur.AffineBoundaryTestIdeal
 public import FLT.Mazur.AffineBranchSequence
 public import FLT.Mazur.AffineCanonicalMapCompatibility
 public import FLT.Mazur.AffineCanonicalOverlapChart
@@ -4017,6 +4019,7 @@ public import FLT.Mazur.CyclicCharacteristicFaithfulPrescribedCover
 public import FLT.Mazur.CyclicCharacteristicFaithfulRelabeledCover
 public import FLT.Mazur.CyclicCharacteristicFiniteNeighborhood
 public import FLT.Mazur.CyclicCharacteristicFiniteTypeAtlas
+public import FLT.Mazur.CyclicCharacteristicFixedCover
 public import FLT.Mazur.CyclicCharacteristicInvariantAffineCover
 public import FLT.Mazur.CyclicCharacteristicInvariantAffineCoverage
 public import FLT.Mazur.CyclicCharacteristicLocusFiniteType
@@ -4036,6 +4039,7 @@ public import FLT.Mazur.CyclicCharacteristicOddRelabelSections
 public import FLT.Mazur.CyclicCharacteristicOddRelabeledAuxiliary
 public import FLT.Mazur.CyclicCharacteristicOddRelabeledGenerator
 public import FLT.Mazur.CyclicCharacteristicParameterFiniteType
+public import FLT.Mazur.CyclicCharacteristicParameterPresheaf
 public import FLT.Mazur.CyclicCharacteristicPrescribedCover
 public import FLT.Mazur.CyclicCharacteristicPrescribedNeighborhood
 public import FLT.Mazur.CyclicCharacteristicQuotient
@@ -4044,12 +4048,20 @@ public import FLT.Mazur.CyclicCharacteristicQuotientCoverage
 public import FLT.Mazur.CyclicCharacteristicQuotientFiniteType
 public import FLT.Mazur.CyclicCharacteristicQuotientFlatDescent
 public import FLT.Mazur.CyclicCharacteristicQuotientGluing
+public import FLT.Mazur.CyclicCharacteristicQuotientOpens
+public import FLT.Mazur.CyclicCharacteristicQuotientTransitionSpan
+public import FLT.Mazur.CyclicCharacteristicQuotientUnmarkedDescent
 public import FLT.Mazur.CyclicCharacteristicRelabelSections
 public import FLT.Mazur.CyclicCharacteristicRelabeledPrescribedCover
 public import FLT.Mazur.CyclicCharacteristicRelabeledPrescribedSections
 public import FLT.Mazur.CyclicCharacteristicRetainedFaithfulness
 public import FLT.Mazur.CyclicCharacteristicRetainedFullParameter
 public import FLT.Mazur.CyclicCharacteristicRetainedParameter
+public import FLT.Mazur.CyclicCharacteristicTransitionCover
+public import FLT.Mazur.CyclicCharacteristicTransitionSpan
+public import FLT.Mazur.CyclicCharacteristicUnmarkedDescent
+public import FLT.Mazur.CyclicCharacteristicUnmarkedQuotientPresheaf
+public import FLT.Mazur.CyclicCharacteristicUnmarkedRelation
 public import FLT.Mazur.CyclicDivisorSubgroupCriterion
 public import FLT.Mazur.CyclicHomAffinePresentationInvariant
 public import FLT.Mazur.CyclicHomAuxiliaryScheme
@@ -4806,6 +4818,7 @@ public import FLT.Mazur.EquivalenceRelationBoundaryActionGeometry
 public import FLT.Mazur.EquivalenceRelationBoundaryChartTests
 public import FLT.Mazur.EquivalenceRelationBoundaryChartTransport
 public import FLT.Mazur.EquivalenceRelationBoundaryCoefficients
+public import FLT.Mazur.EquivalenceRelationBoundaryComponentRank
 public import FLT.Mazur.EquivalenceRelationBoundaryExcess
 public import FLT.Mazur.EquivalenceRelationBoundaryFaithfulDifferences
 public import FLT.Mazur.EquivalenceRelationBoundaryLabelChange
@@ -6346,6 +6359,7 @@ public import FLT.Mazur.HilbertSourceBadAffineChartEquations
 public import FLT.Mazur.HilbertSourceBadAffineChartLifts
 public import FLT.Mazur.HilbertSourceBadQuotientLifts
 public import FLT.Mazur.HilbertSourceBoundaryCompletenessNilpotence
+public import FLT.Mazur.HilbertSourceBoundaryComponentEquations
 public import FLT.Mazur.HilbertSourceBoundaryRankNilpotence
 public import FLT.Mazur.HilbertSourceClosedBoundaryObstructions
 public import FLT.Mazur.HilbertSourceCoefficientwiseSurjectivity
@@ -11142,6 +11156,7 @@ public import FLT.Mazur.SchemeFiniteFiberInterior
 public import FLT.Mazur.SchemeFiniteGeometricOpenSpread
 public import FLT.Mazur.SchemeFiniteGroupAffineDescent
 public import FLT.Mazur.SchemeFiniteGroupBoundaryCompleteness
+public import FLT.Mazur.SchemeFiniteGroupBoundaryComponents
 public import FLT.Mazur.SchemeFiniteGroupClosedScalarFiber
 public import FLT.Mazur.SchemeFiniteGroupDescent
 public import FLT.Mazur.SchemeFiniteGroupFiniteFiberTests
