@@ -13743,6 +13743,7 @@ public import FLT.Mazur.WeierstrassDividedRetainedPolygonNaturality
 public import FLT.Mazur.WeierstrassDividedRetainedPuncturePreimage
 public import FLT.Mazur.WeierstrassDividedRetainedZeroExteriorLine
 public import FLT.Mazur.WeierstrassDividedRetentionSuccessor
+public import FLT.Mazur.WeierstrassDividedRevisedClosingIntersection
 public import FLT.Mazur.WeierstrassDividedRevisedClosingMap
 public import FLT.Mazur.WeierstrassDividedRevisedPolygon
 public import FLT.Mazur.WeierstrassDividedRevisedPolygonEdges
