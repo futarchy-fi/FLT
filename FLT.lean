@@ -14722,6 +14722,7 @@ public import FLT.Mazur.WeierstrassFractionSmoothPresentationLift
 public import FLT.Mazur.WeierstrassFrameNormalEquation
 public import FLT.Mazur.WeierstrassFrameNormalization
 public import FLT.Mazur.WeierstrassGeneralizedEllipticModel
+public import FLT.Mazur.WeierstrassGeneralizedPointedComparison
 public import FLT.Mazur.WeierstrassGeneralizedSmoothComparison
 public import FLT.Mazur.WeierstrassGenusOneFamily
 public import FLT.Mazur.WeierstrassGeometricConnected
