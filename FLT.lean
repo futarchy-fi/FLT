@@ -11056,6 +11056,7 @@ public import FLT.Mazur.SchemeOrbitOpenAffineSelection
 public import FLT.Mazur.SchemeOrbitOpenGroundGeometry
 public import FLT.Mazur.SchemeOrbitOpenSelection
 public import FLT.Mazur.SchemeOrbitOpenSelectionKernel
+public import FLT.Mazur.SchemeOriginalScalarOpenCorrections
 public import FLT.Mazur.SchemeOverlapBaseChange
 public import FLT.Mazur.SchemeOverlapCocycleChart
 public import FLT.Mazur.SchemeOverlapCocycleDetection
