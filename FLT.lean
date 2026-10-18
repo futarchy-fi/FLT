@@ -10998,6 +10998,7 @@ public import FLT.Mazur.SchemeAffineTripleComparisonCocycle
 public import FLT.Mazur.SchemeAffineTripleRefinementFamily
 public import FLT.Mazur.SchemeAffinizationUniversal
 public import FLT.Mazur.SchemeBadAffineCover
+public import FLT.Mazur.SchemeBadAffineCoverBoundaryBaseChange
 public import FLT.Mazur.SchemeBadAffineCoverBoundaryObstruction
 public import FLT.Mazur.SchemeBadAffineCoverBoundaryUnits
 public import FLT.Mazur.SchemeBadAffineCoverBoundaryWitness
