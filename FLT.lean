@@ -2647,7 +2647,9 @@ public import FLT.Mazur.AffineBasisSheafExtension
 public import FLT.Mazur.AffineBasisSumCoproduct
 public import FLT.Mazur.AffineBasisSumMaps
 public import FLT.Mazur.AffineBoundaryComponentEquations
+public import FLT.Mazur.AffineBoundaryTestFactorization
 public import FLT.Mazur.AffineBoundaryTestIdeal
+public import FLT.Mazur.AffineBoundaryTestThickenings
 public import FLT.Mazur.AffineBranchSequence
 public import FLT.Mazur.AffineCanonicalMapCompatibility
 public import FLT.Mazur.AffineCanonicalOverlapChart
@@ -4836,6 +4838,7 @@ public import FLT.Mazur.EquivalenceRelationBoundaryLabelChange
 public import FLT.Mazur.EquivalenceRelationBoundaryLabelCoefficients
 public import FLT.Mazur.EquivalenceRelationBoundaryLabelRefinement
 public import FLT.Mazur.EquivalenceRelationBoundaryOpenCoefficients
+public import FLT.Mazur.EquivalenceRelationBoundaryRankDescent
 public import FLT.Mazur.EquivalenceRelationBoundaryRankEquations
 public import FLT.Mazur.EquivalenceRelationBoundaryRankSeparation
 public import FLT.Mazur.EquivalenceRelationBoundaryRankThickenings
@@ -4845,6 +4848,7 @@ public import FLT.Mazur.EquivalenceRelationBoundarySubframeCover
 public import FLT.Mazur.EquivalenceRelationBoundarySubframeGeometry
 public import FLT.Mazur.EquivalenceRelationBoundarySubframeKernel
 public import FLT.Mazur.EquivalenceRelationBoundarySubframeRefinement
+public import FLT.Mazur.EquivalenceRelationBoundaryTestCharts
 public import FLT.Mazur.EquivalenceRelationChartFamilyCorrections
 public import FLT.Mazur.EquivalenceRelationChartFamilyLifts
 public import FLT.Mazur.EquivalenceRelationChartFamilyLocalization
@@ -6379,6 +6383,7 @@ public import FLT.Mazur.HilbertSourceBoundaryCompletenessNilpotence
 public import FLT.Mazur.HilbertSourceBoundaryComponentEquations
 public import FLT.Mazur.HilbertSourceBoundaryRankNilpotence
 public import FLT.Mazur.HilbertSourceBoundaryRankStages
+public import FLT.Mazur.HilbertSourceBoundaryTestNeighborhoods
 public import FLT.Mazur.HilbertSourceClosedBoundaryObstructions
 public import FLT.Mazur.HilbertSourceCoefficientwiseSurjectivity
 public import FLT.Mazur.HilbertSourceCompactRelation
