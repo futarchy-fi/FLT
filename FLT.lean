@@ -11000,6 +11000,7 @@ public import FLT.Mazur.SchemeAffinizationUniversal
 public import FLT.Mazur.SchemeBadAffineCover
 public import FLT.Mazur.SchemeBadAffineCoverBoundaryObstruction
 public import FLT.Mazur.SchemeBadAffineCoverBoundaryUnits
+public import FLT.Mazur.SchemeBadAffineCoverBoundaryWitness
 public import FLT.Mazur.SchemeBadAffineCoverDenominators
 public import FLT.Mazur.SchemeBadAffineCoverEquations
 public import FLT.Mazur.SchemeBadAffineCoverFiniteType
