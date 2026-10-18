@@ -5995,6 +5995,7 @@ public import FLT.Mazur.HilbertFiniteRelationErrorVanishing
 public import FLT.Mazur.HilbertFiniteRelationPrincipalCoverage
 public import FLT.Mazur.HilbertFiniteRelationUniformCoverage
 public import FLT.Mazur.HilbertFiniteSubframeCorrections
+public import FLT.Mazur.HilbertFiniteSubframeInvariantCorrections
 public import FLT.Mazur.HilbertFiniteSubframeRefinement
 public import FLT.Mazur.HilbertFiniteTargetLocalLifts
 public import FLT.Mazur.HilbertFiniteTargetSaturation
