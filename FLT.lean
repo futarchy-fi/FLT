@@ -7794,6 +7794,7 @@ public import FLT.Mazur.PolygonArithmeticSectionAnnihilator
 public import FLT.Mazur.PolygonArithmeticSectionFunctor
 public import FLT.Mazur.PolygonArithmeticSectionLift
 public import FLT.Mazur.PolygonArithmeticSectionRings
+public import FLT.Mazur.PolygonArithmeticSimultaneousState
 public import FLT.Mazur.PolygonArithmeticSmoothDimensionOpen
 public import FLT.Mazur.PolygonArithmeticStageBaseComparison
 public import FLT.Mazur.PolygonArithmeticStageCanonicalMap
