@@ -14429,6 +14429,7 @@ public import FLT.Mazur.WeierstrassDividedZeroCyclicDiagonal
 public import FLT.Mazur.WeierstrassDividedZeroCyclicIndex
 public import FLT.Mazur.WeierstrassDividedZeroCyclicSeed
 public import FLT.Mazur.WeierstrassDividedZeroCyclicStandard
+public import FLT.Mazur.WeierstrassDividedZeroCyclicStandardMaps
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalAtlas
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalAtlasOverlaps
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalAtlasRestriction
