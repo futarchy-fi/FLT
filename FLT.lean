@@ -4765,6 +4765,7 @@ public import FLT.Mazur.EquivalenceRelationCompleteThickeningTower
 public import FLT.Mazur.EquivalenceRelationCompleteThickenings
 public import FLT.Mazur.EquivalenceRelationCompleteVanishingOpen
 public import FLT.Mazur.EquivalenceRelationConnectedCompleteTests
+public import FLT.Mazur.EquivalenceRelationEqualFrameOverlap
 public import FLT.Mazur.EquivalenceRelationFiberPermutationSections
 public import FLT.Mazur.EquivalenceRelationFiberRebase
 public import FLT.Mazur.EquivalenceRelationFiniteChartMultipliers
