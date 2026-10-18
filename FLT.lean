@@ -4899,6 +4899,7 @@ public import FLT.Mazur.EquivalenceRelationSubframeImage
 public import FLT.Mazur.EquivalenceRelationSubframeImageCover
 public import FLT.Mazur.EquivalenceRelationSubframeImagePullback
 public import FLT.Mazur.EquivalenceRelationSubframeInvariantCriterion
+public import FLT.Mazur.EquivalenceRelationSubframeKernelPair
 public import FLT.Mazur.EquivalenceRelationSubframeNormalizedCorrection
 public import FLT.Mazur.EquivalenceRelationSubframeNormalizedRestriction
 public import FLT.Mazur.EquivalenceRelationSubframeNormalizedTransfer
