@@ -14516,6 +14516,7 @@ public import FLT.Mazur.WeierstrassDividedZeroInfinityNodeNormalization
 public import FLT.Mazur.WeierstrassDividedZeroInfinityNormalizedCover
 public import FLT.Mazur.WeierstrassDividedZeroInfinityNormalizedIntersection
 public import FLT.Mazur.WeierstrassDividedZeroInfinityNormalizedNodeIso
+public import FLT.Mazur.WeierstrassDividedZeroInfinityNormalizedPair
 public import FLT.Mazur.WeierstrassDividedZeroInfinityPolygon
 public import FLT.Mazur.WeierstrassDividedZeroInitialAffineOpen
 public import FLT.Mazur.WeierstrassDividedZeroInitialAffinePolygon
