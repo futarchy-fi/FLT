@@ -14362,6 +14362,7 @@ public import FLT.Mazur.WeierstrassDividedZeroCycleZeroTensorDesc
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalAtlas
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalAtlasOverlaps
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalAtlasRestriction
+public import FLT.Mazur.WeierstrassDividedZeroDiagonalAtlasSeparation
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalAtlasSystem
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalClosingBase
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalClosingBaseSystem
