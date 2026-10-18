@@ -9643,6 +9643,7 @@ public import FLT.Mazur.PolygonVariableSmoothingChartIdentification
 public import FLT.Mazur.PolygonVariableSmoothingDiagram
 public import FLT.Mazur.PolygonVariableSmoothingEdgeIntersection
 public import FLT.Mazur.PolygonVariableSmoothingFamily
+public import FLT.Mazur.PolygonVariableSmoothingIdentifiedIntersections
 public import FLT.Mazur.PolygonVariableSmoothingIntersections
 public import FLT.Mazur.PolygonVariableSmoothingRestriction
 public import FLT.Mazur.PolygonVeroneseAdicProjSquare
@@ -13855,6 +13856,8 @@ public import FLT.Mazur.WeierstrassDividedRevisedInfinityMap
 public import FLT.Mazur.WeierstrassDividedRevisedInitialBoundary
 public import FLT.Mazur.WeierstrassDividedRevisedInitialIntersection
 public import FLT.Mazur.WeierstrassDividedRevisedInitialMaps
+public import FLT.Mazur.WeierstrassDividedRevisedInitialReflection
+public import FLT.Mazur.WeierstrassDividedRevisedInitialRetainedReflection
 public import FLT.Mazur.WeierstrassDividedRevisedLabeledMaps
 public import FLT.Mazur.WeierstrassDividedRevisedLocalIso
 public import FLT.Mazur.WeierstrassDividedRevisedNodeCoverage
@@ -13863,6 +13866,7 @@ public import FLT.Mazur.WeierstrassDividedRevisedPolygonEdges
 public import FLT.Mazur.WeierstrassDividedRevisedPolygonParameters
 public import FLT.Mazur.WeierstrassDividedRevisedPolygonRestriction
 public import FLT.Mazur.WeierstrassDividedRevisedRetainedMaps
+public import FLT.Mazur.WeierstrassDividedRevisedRetainedTargetIntersection
 public import FLT.Mazur.WeierstrassDividedRevisedTensorMaps
 public import FLT.Mazur.WeierstrassDividedSecondAtlasNodeRestriction
 public import FLT.Mazur.WeierstrassDividedSecondJointAtlas
@@ -14110,6 +14114,8 @@ public import FLT.Mazur.WeierstrassDividedTwoNodeRestriction
 public import FLT.Mazur.WeierstrassDividedTwoOpenRestriction
 public import FLT.Mazur.WeierstrassDividedTwoSeedOrientation
 public import FLT.Mazur.WeierstrassDividedTwoSeedState
+public import FLT.Mazur.WeierstrassDividedVariableInitialIntersection
+public import FLT.Mazur.WeierstrassDividedVariableRetainedIntersection
 public import FLT.Mazur.WeierstrassDividedZeroBoundaryFunctions
 public import FLT.Mazur.WeierstrassDividedZeroCycleAtlasAdjacentReduction
 public import FLT.Mazur.WeierstrassDividedZeroCycleAtlasCompatibility
