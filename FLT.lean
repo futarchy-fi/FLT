@@ -14222,6 +14222,7 @@ public import FLT.Mazur.WeierstrassDividedZeroDiagonalNodeRestriction
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalOpenRestriction
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalPolygon
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalPolygonClosing
+public import FLT.Mazur.WeierstrassDividedZeroDiagonalPolygonIntersection
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalPolygonParameters
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalRestriction
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalState
