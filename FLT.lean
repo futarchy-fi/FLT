@@ -14298,6 +14298,7 @@ public import FLT.Mazur.WeierstrassEquationCoefficientChart
 public import FLT.Mazur.WeierstrassEquationCoefficientCongruence
 public import FLT.Mazur.WeierstrassEquationCoefficientProjection
 public import FLT.Mazur.WeierstrassEquationTransport
+public import FLT.Mazur.WeierstrassFactorRatioNodeTarget
 public import FLT.Mazur.WeierstrassFieldChartPresentation
 public import FLT.Mazur.WeierstrassFiniteChartDescent
 public import FLT.Mazur.WeierstrassFiveAffineTriple
