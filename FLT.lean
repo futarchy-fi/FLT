@@ -3896,6 +3896,7 @@ public import FLT.Mazur.CompatibleSubgroupIsoFaithful
 public import FLT.Mazur.CompatibleSubgroupIsoSectionSquare
 public import FLT.Mazur.CompatibleSubgroupMarkedConjugation
 public import FLT.Mazur.CompatibleSubgroupOrbitMarking
+public import FLT.Mazur.CompatibleSubgroupSectionComposition
 public import FLT.Mazur.ConnectedClosedFiberThickening
 public import FLT.Mazur.ConnectedFiberGeneralization
 public import FLT.Mazur.ConnectedFiberPrimeStratum
@@ -3969,9 +3970,15 @@ public import FLT.Mazur.CyclicCharacteristicAtlasCoverageUnrestricted
 public import FLT.Mazur.CyclicCharacteristicAtlasModuli
 public import FLT.Mazur.CyclicCharacteristicAtlasRelabel
 public import FLT.Mazur.CyclicCharacteristicEvenNormalizedGenerator
+public import FLT.Mazur.CyclicCharacteristicEvenRelabeledGenerator
 public import FLT.Mazur.CyclicCharacteristicNormalizedAtlas
+public import FLT.Mazur.CyclicCharacteristicNormalizedGenerator
 public import FLT.Mazur.CyclicCharacteristicNormalizedModuli
 public import FLT.Mazur.CyclicCharacteristicNormalizedSubgroup
+public import FLT.Mazur.CyclicCharacteristicOddNormalizedGenerator
+public import FLT.Mazur.CyclicCharacteristicOddRelabeledGenerator
+public import FLT.Mazur.CyclicCharacteristicPrescribedCover
+public import FLT.Mazur.CyclicCharacteristicPrescribedNeighborhood
 public import FLT.Mazur.CyclicDivisorSubgroupCriterion
 public import FLT.Mazur.CyclicHomAffinePresentationInvariant
 public import FLT.Mazur.CyclicHomAuxiliaryScheme
@@ -7273,6 +7280,8 @@ public import FLT.Mazur.OddWeierstrassCyclicHomNormalizationGroup
 public import FLT.Mazur.OddWeierstrassCyclicHomNormalizationIdempotence
 public import FLT.Mazur.OddWeierstrassCyclicHomNormalizationNaturality
 public import FLT.Mazur.OddWeierstrassCyclicHomNormalizationParameter
+public import FLT.Mazur.OddWeierstrassCyclicHomNormalizationRelationOrbit
+public import FLT.Mazur.OddWeierstrassCyclicHomNormalizationRelationSubgroup
 public import FLT.Mazur.OddWeierstrassCyclicHomNormalizationSubgroup
 public import FLT.Mazur.OddWeierstrassCyclicHomNormalizationSubgroupMarking
 public import FLT.Mazur.OddWeierstrassCyclicHomNormalizedCoverage
@@ -7308,9 +7317,12 @@ public import FLT.Mazur.OddWeierstrassCyclicHomSourcePullback
 public import FLT.Mazur.OddWeierstrassCyclicHomSubgroupPullback
 public import FLT.Mazur.OddWeierstrassCyclicHomSubgroupPullbackMarking
 public import FLT.Mazur.OddWeierstrassCyclicHomSubgroupVanishingChart
+public import FLT.Mazur.OddWeierstrassCyclicHomUniversalPrescribedGenerator
 public import FLT.Mazur.OddWeierstrassCyclicHomUniversalSubgroupComparison
 public import FLT.Mazur.OddWeierstrassCyclicOriginalHomDivisorCoverage
 public import FLT.Mazur.OddWeierstrassCyclicOriginalHomDivisorCoverageUnrestricted
+public import FLT.Mazur.OddWeierstrassCyclicOriginalPrescribedNormalizedCover
+public import FLT.Mazur.OddWeierstrassCyclicOriginalPrescribedNormalizedNeighborhood
 public import FLT.Mazur.OddWeierstrassGeometricLevelThree
 public import FLT.Mazur.OddWeierstrassNormalizationCurve
 public import FLT.Mazur.OddWeierstrassNormalizationGroup
@@ -7330,6 +7342,7 @@ public import FLT.Mazur.OddWeierstrassNormalizedSliceFunctor
 public import FLT.Mazur.OddWeierstrassNormalizedSliceRing
 public import FLT.Mazur.OddWeierstrassNormalizedSubgroupLocus
 public import FLT.Mazur.OddWeierstrassOriginalAuxiliaryCover
+public import FLT.Mazur.OddWeierstrassPointedCubicActualNormalizedGenerator
 public import FLT.Mazur.OddWeierstrassPointedCubicAuxiliaryCover
 public import FLT.Mazur.OddWeierstrassPointedCubicCoefficientParameter
 public import FLT.Mazur.OddWeierstrassPointedCubicHomAuxiliaryParameter
@@ -8702,7 +8715,9 @@ public import FLT.Mazur.PolygonCompletePointSurjective
 public import FLT.Mazur.PolygonCompletePointTopLocalCubicComparison
 public import FLT.Mazur.PolygonCompletePointTorusNeighborhood
 public import FLT.Mazur.PolygonCompletePointWeierstrassEquation
+public import FLT.Mazur.PolygonCompletePrescribedCharacteristicCover
 public import FLT.Mazur.PolygonCompletePrescribedNormalizedCover
+public import FLT.Mazur.PolygonCompletePrescribedOddNormalizedCover
 public import FLT.Mazur.PolygonCompletePrincipalClosedFiber
 public import FLT.Mazur.PolygonCompleteProjectiveRotation
 public import FLT.Mazur.PolygonCompleteRefinementPointLine
