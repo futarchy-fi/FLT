@@ -3997,6 +3997,11 @@ public import FLT.Mazur.CyclicBoundaryOriginalMarkings
 public import FLT.Mazur.CyclicBoundaryParameterAction
 public import FLT.Mazur.CyclicBoundaryParameterSections
 public import FLT.Mazur.CyclicBoundarySectionMarking
+public import FLT.Mazur.CyclicCharacteristicAffineComparisonScheme
+public import FLT.Mazur.CyclicCharacteristicAffineEquation
+public import FLT.Mazur.CyclicCharacteristicAffineEquationPullback
+public import FLT.Mazur.CyclicCharacteristicAffineSubgroup
+public import FLT.Mazur.CyclicCharacteristicAffineSubgroupScheme
 public import FLT.Mazur.CyclicCharacteristicAtlas
 public import FLT.Mazur.CyclicCharacteristicAtlasCoverage
 public import FLT.Mazur.CyclicCharacteristicAtlasCoverageUnrestricted
@@ -4006,6 +4011,7 @@ public import FLT.Mazur.CyclicCharacteristicAuxiliaryFaithfulness
 public import FLT.Mazur.CyclicCharacteristicAuxiliaryFiniteType
 public import FLT.Mazur.CyclicCharacteristicAuxiliaryPrescribedCover
 public import FLT.Mazur.CyclicCharacteristicAuxiliaryPrescribedNeighborhood
+public import FLT.Mazur.CyclicCharacteristicCoefficientBase
 public import FLT.Mazur.CyclicCharacteristicCoefficientFiniteType
 public import FLT.Mazur.CyclicCharacteristicDisjointAction
 public import FLT.Mazur.CyclicCharacteristicDisjointCartesian
@@ -4047,6 +4053,7 @@ public import FLT.Mazur.CyclicCharacteristicParameterPresheaf
 public import FLT.Mazur.CyclicCharacteristicParameterSource
 public import FLT.Mazur.CyclicCharacteristicPrescribedCover
 public import FLT.Mazur.CyclicCharacteristicPrescribedNeighborhood
+public import FLT.Mazur.CyclicCharacteristicProductComparisonCharts
 public import FLT.Mazur.CyclicCharacteristicQuotient
 public import FLT.Mazur.CyclicCharacteristicQuotientCover
 public import FLT.Mazur.CyclicCharacteristicQuotientCoverage
@@ -12377,6 +12384,9 @@ public import FLT.Mazur.WeierstrassAuxiliaryFieldCover
 public import FLT.Mazur.WeierstrassCartesianOriginComparison
 public import FLT.Mazur.WeierstrassCartesianPullbackGroup
 public import FLT.Mazur.WeierstrassCartesianSmoothPullbackGroup
+public import FLT.Mazur.WeierstrassChangeCoefficientBaseChange
+public import FLT.Mazur.WeierstrassChangeCoefficientScheme
+public import FLT.Mazur.WeierstrassChangeCoefficientTensor
 public import FLT.Mazur.WeierstrassChangeComparisonReverse
 public import FLT.Mazur.WeierstrassChangeComparisonScheme
 public import FLT.Mazur.WeierstrassChangeEquationLocus
@@ -12406,6 +12416,7 @@ public import FLT.Mazur.WeierstrassClosedImmersionIso
 public import FLT.Mazur.WeierstrassCoefficientAddition
 public import FLT.Mazur.WeierstrassCoefficientAffineProduct
 public import FLT.Mazur.WeierstrassCoefficientChartPreimage
+public import FLT.Mazur.WeierstrassCoefficientGeneralizedIso
 public import FLT.Mazur.WeierstrassCoefficientGroup
 public import FLT.Mazur.WeierstrassCoefficientMarking
 public import FLT.Mazur.WeierstrassCoefficientMonoidalComparison
@@ -14761,6 +14772,7 @@ public import FLT.Mazur.WeierstrassFractionSmoothPresentationLift
 public import FLT.Mazur.WeierstrassFrameNormalEquation
 public import FLT.Mazur.WeierstrassFrameNormalization
 public import FLT.Mazur.WeierstrassGeneralizedEllipticModel
+public import FLT.Mazur.WeierstrassGeneralizedPointedComparison
 public import FLT.Mazur.WeierstrassGeneralizedSmoothComparison
 public import FLT.Mazur.WeierstrassGenusOneFamily
 public import FLT.Mazur.WeierstrassGeometricConnected
