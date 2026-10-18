@@ -7555,6 +7555,7 @@ public import FLT.Mazur.OneGonCompleteBoundaryCartesian
 public import FLT.Mazur.OneGonCompleteBoundaryMarking
 public import FLT.Mazur.OneGonCompleteBoundarySubgroup
 public import FLT.Mazur.OneGonCompleteBoundaryTestMarking
+public import FLT.Mazur.OneGonCompleteBoundaryTestSubgroup
 public import FLT.Mazur.OneGonCompleteClosedCurveIso
 public import FLT.Mazur.OneGonCompleteClosedSubgroupIso
 public import FLT.Mazur.OneGonCompleteCyclicBoundaryParameters
