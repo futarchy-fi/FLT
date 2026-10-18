@@ -7539,6 +7539,7 @@ public import FLT.Mazur.OneGonAffineNormalization
 public import FLT.Mazur.OneGonAffineNormalizationCoordinates
 public import FLT.Mazur.OneGonClosedCyclicParameter
 public import FLT.Mazur.OneGonCocone
+public import FLT.Mazur.OneGonCompleteAmpleCyclicSubgroup
 public import FLT.Mazur.OneGonCompleteBoundaryCartesian
 public import FLT.Mazur.OneGonCompleteBoundaryMarking
 public import FLT.Mazur.OneGonCompleteCyclicBoundaryParameters
