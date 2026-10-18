@@ -11083,6 +11083,7 @@ public import FLT.Mazur.SchemeOrbitOpenSelection
 public import FLT.Mazur.SchemeOrbitOpenSelectionKernel
 public import FLT.Mazur.SchemeOriginalScalarCorrectionFamily
 public import FLT.Mazur.SchemeOriginalScalarOpenCorrections
+public import FLT.Mazur.SchemeOriginalScalarPairOpenLifts
 public import FLT.Mazur.SchemeOverlapBaseChange
 public import FLT.Mazur.SchemeOverlapCocycleChart
 public import FLT.Mazur.SchemeOverlapCocycleDetection
