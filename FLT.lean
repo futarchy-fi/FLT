@@ -14659,6 +14659,7 @@ public import FLT.Mazur.WeierstrassDividedZeroInitialAffinePolygon
 public import FLT.Mazur.WeierstrassDividedZeroInitialInfinityParameter
 public import FLT.Mazur.WeierstrassDividedZeroInitialNodeTransport
 public import FLT.Mazur.WeierstrassDividedZeroInitialPolygonBoundary
+public import FLT.Mazur.WeierstrassDividedZeroInitialPunctureAlgebra
 public import FLT.Mazur.WeierstrassDividedZeroInitialPunctureTransport
 public import FLT.Mazur.WeierstrassDividedZeroInitialTotalBase
 public import FLT.Mazur.WeierstrassDividedZeroInitialTotalRestriction
