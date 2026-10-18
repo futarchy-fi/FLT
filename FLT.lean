@@ -9000,6 +9000,7 @@ public import FLT.Mazur.PolygonCyclicBoundaryFieldTranslation
 public import FLT.Mazur.PolygonCyclicBoundaryNodeFrame
 public import FLT.Mazur.PolygonCyclicBoundaryRefinement
 public import FLT.Mazur.PolygonCyclicBoundaryStandardContraction
+public import FLT.Mazur.PolygonCyclicBoundaryStandardDivisor
 public import FLT.Mazur.PolygonCyclicBoundaryStandardTranslation
 public import FLT.Mazur.PolygonCyclicCocone
 public import FLT.Mazur.PolygonCyclicDescent
