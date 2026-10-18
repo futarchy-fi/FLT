@@ -4840,6 +4840,7 @@ public import FLT.Mazur.EquivalenceRelationBoundaryLabelRefinement
 public import FLT.Mazur.EquivalenceRelationBoundaryOpenCoefficients
 public import FLT.Mazur.EquivalenceRelationBoundaryRankDescent
 public import FLT.Mazur.EquivalenceRelationBoundaryRankEquations
+public import FLT.Mazur.EquivalenceRelationBoundaryRankRecovery
 public import FLT.Mazur.EquivalenceRelationBoundaryRankSeparation
 public import FLT.Mazur.EquivalenceRelationBoundaryRankThickenings
 public import FLT.Mazur.EquivalenceRelationBoundaryStageDescent
@@ -4850,6 +4851,7 @@ public import FLT.Mazur.EquivalenceRelationBoundarySubframeGeometry
 public import FLT.Mazur.EquivalenceRelationBoundarySubframeKernel
 public import FLT.Mazur.EquivalenceRelationBoundarySubframeRefinement
 public import FLT.Mazur.EquivalenceRelationBoundaryTestCharts
+public import FLT.Mazur.EquivalenceRelationBoundaryTestFactorization
 public import FLT.Mazur.EquivalenceRelationChartFamilyCorrections
 public import FLT.Mazur.EquivalenceRelationChartFamilyLifts
 public import FLT.Mazur.EquivalenceRelationChartFamilyLocalization
@@ -6385,6 +6387,7 @@ public import FLT.Mazur.HilbertSourceBoundaryComponentEquations
 public import FLT.Mazur.HilbertSourceBoundaryRankFinite
 public import FLT.Mazur.HilbertSourceBoundaryRankNilpotence
 public import FLT.Mazur.HilbertSourceBoundaryRankStages
+public import FLT.Mazur.HilbertSourceBoundaryStageRecovery
 public import FLT.Mazur.HilbertSourceBoundaryTestNeighborhoods
 public import FLT.Mazur.HilbertSourceClosedBoundaryObstructions
 public import FLT.Mazur.HilbertSourceCoefficientwiseSurjectivity
@@ -6652,6 +6655,7 @@ public import FLT.Mazur.IdealSheafFactorizationSupport
 public import FLT.Mazur.IdealSheafFlatDetection
 public import FLT.Mazur.IdealSheafOpenCoverDetection
 public import FLT.Mazur.IdealSheafRadicalOpen
+public import FLT.Mazur.IdealSheafSupportPower
 public import FLT.Mazur.IdealTwistCohomologyStabilization
 public import FLT.Mazur.IdealTwistCohomologySystem
 public import FLT.Mazur.IdealTwistCohomologyVanishing
@@ -10648,6 +10652,7 @@ public import FLT.Mazur.RelativeDistinctSubframe
 public import FLT.Mazur.RelativeDistinctTupleLift
 public import FLT.Mazur.RelativeDistinctTuples
 public import FLT.Mazur.RelativeEtaleFiniteBranchCover
+public import FLT.Mazur.RelativeExactRankFactorization
 public import FLT.Mazur.RelativeExactRankFaithful
 public import FLT.Mazur.RelativeExactRankFinite
 public import FLT.Mazur.RelativeExactRankFrameCover
@@ -10824,6 +10829,7 @@ public import FLT.Mazur.RelativePoleComplementFunctions
 public import FLT.Mazur.RelativePoleComplementLinear
 public import FLT.Mazur.RelativeRankOneDivisorUniqueness
 public import FLT.Mazur.RelativeRankPullbackThickenings
+public import FLT.Mazur.RelativeRankStageRecovery
 public import FLT.Mazur.RelativeRankStratumThickenings
 public import FLT.Mazur.RelativeRankThickeningFinite
 public import FLT.Mazur.RelativeReductionKernelAbsorption
