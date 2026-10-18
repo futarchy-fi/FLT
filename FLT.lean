@@ -7485,6 +7485,7 @@ public import FLT.Mazur.OneGonAffineCover
 public import FLT.Mazur.OneGonAffineNormalization
 public import FLT.Mazur.OneGonAffineNormalizationCoordinates
 public import FLT.Mazur.OneGonCocone
+public import FLT.Mazur.OneGonCompleteBoundaryCartesian
 public import FLT.Mazur.OneGonCubicElimination
 public import FLT.Mazur.OneGonDenominatorEqualizer
 public import FLT.Mazur.OneGonFormalCoordinates
