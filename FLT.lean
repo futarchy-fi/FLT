@@ -4007,6 +4007,7 @@ public import FLT.Mazur.CyclicCharacteristicAffineEquationCoherence
 public import FLT.Mazur.CyclicCharacteristicAffineEquationPullback
 public import FLT.Mazur.CyclicCharacteristicAffineSubgroup
 public import FLT.Mazur.CyclicCharacteristicAffineSubgroupScheme
+public import FLT.Mazur.CyclicCharacteristicAffineSubgroupUniversalCurve
 public import FLT.Mazur.CyclicCharacteristicAffineUniversalComparison
 public import FLT.Mazur.CyclicCharacteristicAtlas
 public import FLT.Mazur.CyclicCharacteristicAtlasCoverage
