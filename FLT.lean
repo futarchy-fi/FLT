@@ -14512,6 +14512,7 @@ public import FLT.Mazur.WeierstrassDividedZeroFourthRestriction
 public import FLT.Mazur.WeierstrassDividedZeroFourthSplit
 public import FLT.Mazur.WeierstrassDividedZeroFourthTransitions
 public import FLT.Mazur.WeierstrassDividedZeroIncidenceInfinity
+public import FLT.Mazur.WeierstrassDividedZeroInfinityNodeNormalization
 public import FLT.Mazur.WeierstrassDividedZeroInfinityPolygon
 public import FLT.Mazur.WeierstrassDividedZeroInitialAffineOpen
 public import FLT.Mazur.WeierstrassDividedZeroInitialAffinePolygon
