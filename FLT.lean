@@ -10368,6 +10368,7 @@ public import FLT.Mazur.ProperUniversalDirectImageLine
 public import FLT.Mazur.ProperUniversalDirectImagePasting
 public import FLT.Mazur.ProperUniversalRetainedSection
 public import FLT.Mazur.ProperUniversalTensorIdentification
+public import FLT.Mazur.PullbackOneLegTransport
 public import FLT.Mazur.PullbackOverlapBaseChange
 public import FLT.Mazur.PullbackRotationCocycle
 public import FLT.Mazur.PullbackRotationCoordinates
@@ -13386,6 +13387,7 @@ public import FLT.Mazur.WeierstrassDividedFourthShallowRestriction
 public import FLT.Mazur.WeierstrassDividedFourthShallowUnchanged
 public import FLT.Mazur.WeierstrassDividedFourthSmoothingAnnihilation
 public import FLT.Mazur.WeierstrassDividedFourthTerminalGeometry
+public import FLT.Mazur.WeierstrassDividedFourthTerminalTransport
 public import FLT.Mazur.WeierstrassDividedFourthTransitions
 public import FLT.Mazur.WeierstrassDividedFourthZeroFirstField
 public import FLT.Mazur.WeierstrassDividedFourthZeroInitial
@@ -14237,11 +14239,16 @@ public import FLT.Mazur.WeierstrassDividedZeroDiagonalAtlas
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalAtlasOverlaps
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalAtlasRestriction
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalAtlasSystem
+public import FLT.Mazur.WeierstrassDividedZeroDiagonalClosingComparison
+public import FLT.Mazur.WeierstrassDividedZeroDiagonalClosingIntersection
+public import FLT.Mazur.WeierstrassDividedZeroDiagonalClosingUnion
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalNodeRestriction
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalOpenRestriction
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalPolygon
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalPolygonClosing
+public import FLT.Mazur.WeierstrassDividedZeroDiagonalPolygonIntersection
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalPolygonParameters
+public import FLT.Mazur.WeierstrassDividedZeroDiagonalPolygonUnion
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalRestriction
 public import FLT.Mazur.WeierstrassDividedZeroDiagonalState
 public import FLT.Mazur.WeierstrassDividedZeroEqualityAtlasAdjacentReduction
@@ -14439,6 +14446,7 @@ public import FLT.Mazur.WeierstrassDividedZeroSplitCycleSeparation
 public import FLT.Mazur.WeierstrassDividedZeroSplitNormalizationSurjective
 public import FLT.Mazur.WeierstrassDividedZeroSplitOriginalIdentity
 public import FLT.Mazur.WeierstrassDividedZeroSplitPointClassification
+public import FLT.Mazur.WeierstrassDividedZeroTerminalTransport
 public import FLT.Mazur.WeierstrassDividedZeroThirdAnnihilation
 public import FLT.Mazur.WeierstrassDividedZeroThirdAtlas
 public import FLT.Mazur.WeierstrassDividedZeroThirdAtlasClosing
