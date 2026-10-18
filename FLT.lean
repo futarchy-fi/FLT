@@ -3575,6 +3575,7 @@ public import FLT.Mazur.BoundaryCorrectionMixedNumerators
 public import FLT.Mazur.BoundaryCorrectionOperatorIndependence
 public import FLT.Mazur.BoundaryCorrectionReductionCertificate
 public import FLT.Mazur.BoundaryCorrectionTensorCoordinates
+public import FLT.Mazur.BoundaryExchangeLocalization
 public import FLT.Mazur.BoundaryExchangeObstruction
 public import FLT.Mazur.BoundedFlatAcyclicNeighborhood
 public import FLT.Mazur.BoundedFlatAcyclicOpen
@@ -4901,6 +4902,7 @@ public import FLT.Mazur.EquivalenceRelationSubframeNormalizedTransfer
 public import FLT.Mazur.EquivalenceRelationSubframeNormalizedTransitions
 public import FLT.Mazur.EquivalenceRelationSubframeOpenCharts
 public import FLT.Mazur.EquivalenceRelationSubframeRefinement
+public import FLT.Mazur.EquivalenceRelationSubframeScalars
 public import FLT.Mazur.EquivalenceRelationSubframeSelectedPoints
 public import FLT.Mazur.EquivalenceRelationSubframeSingleExchange
 public import FLT.Mazur.EquivalenceRelationSubframeSourceComparison
@@ -6278,7 +6280,12 @@ public import FLT.Mazur.HilbertSubframeEqualSizeLift
 public import FLT.Mazur.HilbertSubframeExchangeKernel
 public import FLT.Mazur.HilbertSubframeExchangeLifts
 public import FLT.Mazur.HilbertSubframeExchangeObstruction
+public import FLT.Mazur.HilbertSubframeLocalizedEmbeddingLifts
 public import FLT.Mazur.HilbertSubframeNormalizedTransfer
+public import FLT.Mazur.HilbertSubframeOriginalLocalization
+public import FLT.Mazur.HilbertSubframeOriginalScalars
+public import FLT.Mazur.HilbertSubframeScalarLinearMaps
+public import FLT.Mazur.HilbertSubframeScalarObstruction
 public import FLT.Mazur.HilbertSubframeStrictUnitCover
 public import FLT.Mazur.HilbertSubframeTransferCorrections
 public import FLT.Mazur.HilbertSubframeUnitNeighborhood
