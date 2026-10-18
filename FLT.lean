@@ -4889,6 +4889,7 @@ public import FLT.Mazur.EquivalenceRelationSubframeComparison
 public import FLT.Mazur.EquivalenceRelationSubframeDiscrepancy
 public import FLT.Mazur.EquivalenceRelationSubframeEqualSize
 public import FLT.Mazur.EquivalenceRelationSubframeEqualSizeCompatibility
+public import FLT.Mazur.EquivalenceRelationSubframeEtale
 public import FLT.Mazur.EquivalenceRelationSubframeExchangeCriterion
 public import FLT.Mazur.EquivalenceRelationSubframeExchangeMap
 public import FLT.Mazur.EquivalenceRelationSubframeFullDomain
