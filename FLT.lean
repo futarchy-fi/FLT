@@ -13885,6 +13885,7 @@ public import FLT.Mazur.WeierstrassDividedZeroFiniteGeometry
 public import FLT.Mazur.WeierstrassDividedZeroFiniteNodes
 public import FLT.Mazur.WeierstrassDividedZeroFiniteResiduals
 public import FLT.Mazur.WeierstrassDividedZeroFiniteState
+public import FLT.Mazur.WeierstrassDividedZeroFiniteTransitions
 public import FLT.Mazur.WeierstrassDividedZeroFirstAtlas
 public import FLT.Mazur.WeierstrassDividedZeroFirstAtlasClosing
 public import FLT.Mazur.WeierstrassDividedZeroFirstAtlasIdentification
