@@ -2579,6 +2579,7 @@ public import FLT.Mazur.AdicFormalPresentationHom
 public import FLT.Mazur.AdicFormalSpaceDerivative
 public import FLT.Mazur.AdicFormalSpaceFunctor
 public import FLT.Mazur.AdicFormallySmoothLift
+public import FLT.Mazur.AdicFormallySmoothResidueLift
 public import FLT.Mazur.AdicFormallySmoothStages
 public import FLT.Mazur.AdicIdealCompletionRange
 public import FLT.Mazur.AdicIdealFilteredMap
