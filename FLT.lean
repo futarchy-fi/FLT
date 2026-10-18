@@ -5293,6 +5293,7 @@ public import FLT.Mazur.FiniteGroupQuotientGeometricPoints
 public import FLT.Mazur.FiniteGroupQuotientPrincipalChart
 public import FLT.Mazur.FiniteGroupQuotientSchemePoints
 public import FLT.Mazur.FiniteGroupSpectrumAction
+public import FLT.Mazur.FiniteGroupTraceRetraction
 public import FLT.Mazur.FiniteHomologyFiberVanishing
 public import FLT.Mazur.FiniteIdealConditionDimension
 public import FLT.Mazur.FiniteIntegerModelElementRelations
