@@ -7795,6 +7795,7 @@ public import FLT.Mazur.PolygonArithmeticSectionFunctor
 public import FLT.Mazur.PolygonArithmeticSectionLift
 public import FLT.Mazur.PolygonArithmeticSectionRings
 public import FLT.Mazur.PolygonArithmeticSimultaneousCancellation
+public import FLT.Mazur.PolygonArithmeticSimultaneousFactors
 public import FLT.Mazur.PolygonArithmeticSimultaneousIteration
 public import FLT.Mazur.PolygonArithmeticSimultaneousPunctures
 public import FLT.Mazur.PolygonArithmeticSimultaneousRestriction
