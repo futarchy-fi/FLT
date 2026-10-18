@@ -2649,6 +2649,7 @@ public import FLT.Mazur.AffineBasisSumMaps
 public import FLT.Mazur.AffineBoundaryComponentEquations
 public import FLT.Mazur.AffineBoundaryTestFactorization
 public import FLT.Mazur.AffineBoundaryTestIdeal
+public import FLT.Mazur.AffineBoundaryTestPowerEquations
 public import FLT.Mazur.AffineBoundaryTestThickenings
 public import FLT.Mazur.AffineBranchSequence
 public import FLT.Mazur.AffineCanonicalMapCompatibility
@@ -3233,6 +3234,7 @@ public import FLT.Mazur.AffineTripleOverlapRefinement
 public import FLT.Mazur.AffineTripleOverlapRefinementSquares
 public import FLT.Mazur.AffineTripleUnitCoefficients
 public import FLT.Mazur.AffineTrivialLineSectionOpen
+public import FLT.Mazur.AffineUniformIdealPowers
 public import FLT.Mazur.AffineValuationCoordinateSquare
 public import FLT.Mazur.AffineValuationGeneratorLift
 public import FLT.Mazur.AffineValuationIntegralLift
@@ -4001,6 +4003,7 @@ public import FLT.Mazur.CyclicCharacteristicAffineEquation
 public import FLT.Mazur.CyclicCharacteristicAffineEquationPullback
 public import FLT.Mazur.CyclicCharacteristicAffineSubgroup
 public import FLT.Mazur.CyclicCharacteristicAffineSubgroupScheme
+public import FLT.Mazur.CyclicCharacteristicAffineUniversalComparison
 public import FLT.Mazur.CyclicCharacteristicAtlas
 public import FLT.Mazur.CyclicCharacteristicAtlasCoverage
 public import FLT.Mazur.CyclicCharacteristicAtlasCoverageUnrestricted
@@ -4840,11 +4843,13 @@ public import FLT.Mazur.EquivalenceRelationBoundaryChartTransport
 public import FLT.Mazur.EquivalenceRelationBoundaryCoefficients
 public import FLT.Mazur.EquivalenceRelationBoundaryComponentRank
 public import FLT.Mazur.EquivalenceRelationBoundaryExcess
+public import FLT.Mazur.EquivalenceRelationBoundaryFaithful
 public import FLT.Mazur.EquivalenceRelationBoundaryFaithfulDifferences
 public import FLT.Mazur.EquivalenceRelationBoundaryLabelChange
 public import FLT.Mazur.EquivalenceRelationBoundaryLabelCoefficients
 public import FLT.Mazur.EquivalenceRelationBoundaryLabelRefinement
 public import FLT.Mazur.EquivalenceRelationBoundaryOpenCoefficients
+public import FLT.Mazur.EquivalenceRelationBoundaryPowerDescent
 public import FLT.Mazur.EquivalenceRelationBoundaryRankDescent
 public import FLT.Mazur.EquivalenceRelationBoundaryRankEquations
 public import FLT.Mazur.EquivalenceRelationBoundaryRankRecovery
@@ -4858,12 +4863,16 @@ public import FLT.Mazur.EquivalenceRelationBoundarySubframeGeometry
 public import FLT.Mazur.EquivalenceRelationBoundarySubframeKernel
 public import FLT.Mazur.EquivalenceRelationBoundarySubframeRefinement
 public import FLT.Mazur.EquivalenceRelationBoundaryTestCharts
+public import FLT.Mazur.EquivalenceRelationBoundaryTestDescent
 public import FLT.Mazur.EquivalenceRelationBoundaryTestFactorization
+public import FLT.Mazur.EquivalenceRelationBoundaryUniformOrders
 public import FLT.Mazur.EquivalenceRelationChartFamilyCorrections
 public import FLT.Mazur.EquivalenceRelationChartFamilyLifts
 public import FLT.Mazur.EquivalenceRelationChartFamilyLocalization
 public import FLT.Mazur.EquivalenceRelationChartFamilyRestriction
 public import FLT.Mazur.EquivalenceRelationChartKernelDiscrepancy
+public import FLT.Mazur.EquivalenceRelationChartRankIdeal
+public import FLT.Mazur.EquivalenceRelationChartRankStageIdeal
 public import FLT.Mazur.EquivalenceRelationCompleteAdicDiscrepancy
 public import FLT.Mazur.EquivalenceRelationCompleteAdicSeparation
 public import FLT.Mazur.EquivalenceRelationCompleteAffineStages
@@ -5269,6 +5278,8 @@ public import FLT.Mazur.FiniteGroupFreeBoundaryLift
 public import FLT.Mazur.FiniteGroupFreeFieldTest
 public import FLT.Mazur.FiniteGroupFreeIdealDescent
 public import FLT.Mazur.FiniteGroupFreeOrbitSeparation
+public import FLT.Mazur.FiniteGroupFreeProjective
+public import FLT.Mazur.FiniteGroupFreeTensorInvariants
 public import FLT.Mazur.FiniteGroupFreeTraceIdeal
 public import FLT.Mazur.FiniteGroupInvariantAffineCover
 public import FLT.Mazur.FiniteGroupInvariantOpens
@@ -5289,6 +5300,7 @@ public import FLT.Mazur.FiniteGroupQuotientGeometricPoints
 public import FLT.Mazur.FiniteGroupQuotientPrincipalChart
 public import FLT.Mazur.FiniteGroupQuotientSchemePoints
 public import FLT.Mazur.FiniteGroupSpectrumAction
+public import FLT.Mazur.FiniteGroupTraceRetraction
 public import FLT.Mazur.FiniteHomologyFiberVanishing
 public import FLT.Mazur.FiniteIdealConditionDimension
 public import FLT.Mazur.FiniteIntegerModelElementRelations
@@ -5595,6 +5607,8 @@ public import FLT.Mazur.FullDivisorFlatFppfDescent
 public import FLT.Mazur.FullHilbertIntersectionSeparablePoints
 public import FLT.Mazur.FunctionSheafGradedBaseAlgebra
 public import FLT.Mazur.FunctionSheafGradedSections
+public import FLT.Mazur.GeneralizedComparisonPullbackCoherence
+public import FLT.Mazur.GeneralizedComparisonPullbackNaturality
 public import FLT.Mazur.GeneralizedCurveAmpleBaseChange
 public import FLT.Mazur.GeneralizedCurveAmpleDescent
 public import FLT.Mazur.GeneralizedCurveAmpleSubgroup
@@ -6391,11 +6405,13 @@ public import FLT.Mazur.HilbertSourceBadAffineChartLifts
 public import FLT.Mazur.HilbertSourceBadQuotientLifts
 public import FLT.Mazur.HilbertSourceBoundaryCompletenessNilpotence
 public import FLT.Mazur.HilbertSourceBoundaryComponentEquations
+public import FLT.Mazur.HilbertSourceBoundaryFaithfulDescent
 public import FLT.Mazur.HilbertSourceBoundaryRankFinite
 public import FLT.Mazur.HilbertSourceBoundaryRankNilpotence
 public import FLT.Mazur.HilbertSourceBoundaryRankStages
 public import FLT.Mazur.HilbertSourceBoundaryStageRecovery
 public import FLT.Mazur.HilbertSourceBoundaryTestNeighborhoods
+public import FLT.Mazur.HilbertSourceBoundaryUniformOrders
 public import FLT.Mazur.HilbertSourceClosedBoundaryObstructions
 public import FLT.Mazur.HilbertSourceCoefficientwiseSurjectivity
 public import FLT.Mazur.HilbertSourceCompactRelation
@@ -6661,6 +6677,7 @@ public import FLT.Mazur.IdealSheafAdicStalkSeparation
 public import FLT.Mazur.IdealSheafFactorizationSupport
 public import FLT.Mazur.IdealSheafFlatDetection
 public import FLT.Mazur.IdealSheafOpenCoverDetection
+public import FLT.Mazur.IdealSheafPowerPullback
 public import FLT.Mazur.IdealSheafRadicalOpen
 public import FLT.Mazur.IdealSheafSupportPower
 public import FLT.Mazur.IdealTwistCohomologyStabilization
@@ -11212,11 +11229,13 @@ public import FLT.Mazur.SchemeFiniteGeometricOpenSpread
 public import FLT.Mazur.SchemeFiniteGroupAffineDescent
 public import FLT.Mazur.SchemeFiniteGroupBoundaryCompleteness
 public import FLT.Mazur.SchemeFiniteGroupBoundaryComponents
+public import FLT.Mazur.SchemeFiniteGroupBoundaryTestIdeal
 public import FLT.Mazur.SchemeFiniteGroupClosedScalarFiber
 public import FLT.Mazur.SchemeFiniteGroupDescent
 public import FLT.Mazur.SchemeFiniteGroupFiniteFiberTests
 public import FLT.Mazur.SchemeFiniteGroupFreeBoundary
 public import FLT.Mazur.SchemeFiniteGroupFreeBoundaryIdeal
+public import FLT.Mazur.SchemeFiniteGroupFreeFlat
 public import FLT.Mazur.SchemeFiniteGroupInvariantPrincipal
 public import FLT.Mazur.SchemeFiniteGroupPrincipalComparison
 public import FLT.Mazur.SchemeFiniteGroupPrincipalQuotient
@@ -11229,6 +11248,7 @@ public import FLT.Mazur.SchemeFiniteGroupQuotientOpenEmbedding
 public import FLT.Mazur.SchemeFiniteGroupQuotientOpenImmersion
 public import FLT.Mazur.SchemeFiniteGroupQuotientOrbits
 public import FLT.Mazur.SchemeFiniteGroupScalarFiberEquations
+public import FLT.Mazur.SchemeFiniteGroupTestAdicComparison
 public import FLT.Mazur.SchemeFiniteOrbitOpenCore
 public import FLT.Mazur.SchemeFiniteTargetAffineNeighborhood
 public import FLT.Mazur.SchemeFiniteTargetBaseChange
@@ -11337,6 +11357,7 @@ public import FLT.Mazur.SchemeLineDescentRefinement
 public import FLT.Mazur.SchemeModulePullbackOpenUnits
 public import FLT.Mazur.SchemeModulePullbackUnitSections
 public import FLT.Mazur.SchemeModulePullbackUnits
+public import FLT.Mazur.SchemeMonoIdealPullback
 public import FLT.Mazur.SchemeMonoidUnitEvaluation
 public import FLT.Mazur.SchemeNaturalUnitLocus
 public import FLT.Mazur.SchemeNilpotentSectionDetection
@@ -11409,6 +11430,7 @@ public import FLT.Mazur.SchemePullbackSquarePasting
 public import FLT.Mazur.SchemeQuotientAffineBaseCoordinates
 public import FLT.Mazur.SchemeQuotientAffineFlatComparison
 public import FLT.Mazur.SchemeQuotientAffineFlatDescent
+public import FLT.Mazur.SchemeQuotientAffineFreeComparison
 public import FLT.Mazur.SchemeQuotientTensorModel
 public import FLT.Mazur.SchemeRecognitionTransport
 public import FLT.Mazur.SchemeReconstructionOverlapSquare
@@ -12386,7 +12408,9 @@ public import FLT.Mazur.WeierstrassChangeEquationUniversal
 public import FLT.Mazur.WeierstrassChangeFinitePresentation
 public import FLT.Mazur.WeierstrassChangeFullComparison
 public import FLT.Mazur.WeierstrassChangeGeneralizedComparison
+public import FLT.Mazur.WeierstrassChangeGeneralizedNaturality
 public import FLT.Mazur.WeierstrassChangeParameter
+public import FLT.Mazur.WeierstrassChangePointedGeneralizedIso
 public import FLT.Mazur.WeierstrassChangeSubgroupScheme
 public import FLT.Mazur.WeierstrassChartArithmeticRestriction
 public import FLT.Mazur.WeierstrassChartBaseChange
@@ -12411,6 +12435,8 @@ public import FLT.Mazur.WeierstrassCoefficientChartPreimage
 public import FLT.Mazur.WeierstrassCoefficientGeneralizedIso
 public import FLT.Mazur.WeierstrassCoefficientGroup
 public import FLT.Mazur.WeierstrassCoefficientMarking
+public import FLT.Mazur.WeierstrassCoefficientModelComposition
+public import FLT.Mazur.WeierstrassCoefficientModelProjection
 public import FLT.Mazur.WeierstrassCoefficientMonoidalComparison
 public import FLT.Mazur.WeierstrassCoefficientNegation
 public import FLT.Mazur.WeierstrassCoefficientProductMorphism
@@ -16229,6 +16255,8 @@ public import FLT.Mazur.WeierstrassTripleInnerAdditionCover
 public import FLT.Mazur.WeierstrassTripleInnerOutputRegular
 public import FLT.Mazur.WeierstrassTripleSlopeAlgebra
 public import FLT.Mazur.WeierstrassTripleTangentSlopeAlgebra
+public import FLT.Mazur.WeierstrassUniversalComparisonClassification
+public import FLT.Mazur.WeierstrassUniversalComparisonSpecialization
 public import FLT.Mazur.WeierstrassUniversalTranslationSmoothLocus
 public import FLT.Mazur.WeierstrassVariableChangeAddition
 public import FLT.Mazur.WeierstrassVariableChangeAdditionFormula
