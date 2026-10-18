@@ -4001,6 +4001,7 @@ public import FLT.Mazur.CyclicCharacteristicAuxiliaryFiniteType
 public import FLT.Mazur.CyclicCharacteristicAuxiliaryPrescribedCover
 public import FLT.Mazur.CyclicCharacteristicAuxiliaryPrescribedNeighborhood
 public import FLT.Mazur.CyclicCharacteristicCoefficientFiniteType
+public import FLT.Mazur.CyclicCharacteristicDisjointAction
 public import FLT.Mazur.CyclicCharacteristicEvenNormalizedAuxiliary
 public import FLT.Mazur.CyclicCharacteristicEvenNormalizedGenerator
 public import FLT.Mazur.CyclicCharacteristicEvenParameterSource
