@@ -6297,6 +6297,7 @@ public import FLT.Mazur.HilbertSourceCoefficientwiseSurjectivity
 public import FLT.Mazur.HilbertSourceCompactRelation
 public import FLT.Mazur.HilbertSourceCompatibleModule
 public import FLT.Mazur.HilbertSourceConstructedBadPrimeLifts
+public import FLT.Mazur.HilbertSourceConstructedBoundaryUnitCover
 public import FLT.Mazur.HilbertSourceConstructedDenominatorPrimes
 public import FLT.Mazur.HilbertSourceConstructedFiniteBadPrimes
 public import FLT.Mazur.HilbertSourceConstructedOpenLifts
