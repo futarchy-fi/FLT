@@ -2729,6 +2729,7 @@ public import FLT.Mazur.AffineBasisSumCoproduct
 public import FLT.Mazur.AffineBasisSumMaps
 public import FLT.Mazur.AffineBoundaryComponentEquations
 public import FLT.Mazur.AffineBoundaryComponentSpecialization
+public import FLT.Mazur.AffineBoundaryFlatIntegralTests
 public import FLT.Mazur.AffineBoundaryFlatScalarEquations
 public import FLT.Mazur.AffineBoundaryFlatTensorEquations
 public import FLT.Mazur.AffineBoundaryFppfScalarTests
