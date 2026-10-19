@@ -11771,6 +11771,7 @@ public import FLT.Mazur.SchemeAffineRecognitionTest
 public import FLT.Mazur.SchemeAffineReconstructionRecognition
 public import FLT.Mazur.SchemeAffineRefinementCompatibility
 public import FLT.Mazur.SchemeAffineRefinementSectionRecovery
+public import FLT.Mazur.SchemeAffineRelationRestriction
 public import FLT.Mazur.SchemeAffineSchemeTestCocycle
 public import FLT.Mazur.SchemeAffineSchemeTestComparison
 public import FLT.Mazur.SchemeAffineSchemeTestNaturality
