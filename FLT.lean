@@ -5295,6 +5295,7 @@ public import FLT.Mazur.EquivalenceRelationScalarLocalDetection
 public import FLT.Mazur.EquivalenceRelationScalarLocalRanks
 public import FLT.Mazur.EquivalenceRelationScalarLocalRecovery
 public import FLT.Mazur.EquivalenceRelationScalarLocalStages
+public import FLT.Mazur.EquivalenceRelationScalarSupportedBaseChange
 public import FLT.Mazur.EquivalenceRelationSectionRebase
 public import FLT.Mazur.EquivalenceRelationSelfEmbeddingAction
 public import FLT.Mazur.EquivalenceRelationSourceRefinement
