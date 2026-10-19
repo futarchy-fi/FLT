@@ -2826,6 +2826,7 @@ public import FLT.Mazur.AffineBoundaryGeometricFiberTests
 public import FLT.Mazur.AffineBoundaryIndependentFlatTests
 public import FLT.Mazur.AffineBoundaryIndependentIntegralTests
 public import FLT.Mazur.AffineBoundaryIntegralFlatCriterion
+public import FLT.Mazur.AffineBoundaryMinimalScalarGeometry
 public import FLT.Mazur.AffineBoundaryNilpotenceOpen
 public import FLT.Mazur.AffineBoundaryPrincipalTestCharts
 public import FLT.Mazur.AffineBoundaryScalarFiberEquations
@@ -5270,6 +5271,7 @@ public import FLT.Mazur.EquivalenceRelationJointSourceRefinement
 public import FLT.Mazur.EquivalenceRelationLabelOpenCharts
 public import FLT.Mazur.EquivalenceRelationLabelOverlap
 public import FLT.Mazur.EquivalenceRelationLabelRefinement
+public import FLT.Mazur.EquivalenceRelationMinimalScalarGeometry
 public import FLT.Mazur.EquivalenceRelationMixedBranchCoefficients
 public import FLT.Mazur.EquivalenceRelationMixedChartDescent
 public import FLT.Mazur.EquivalenceRelationMixedChartLiftDifference
@@ -6833,6 +6835,7 @@ public import FLT.Mazur.HilbertSourceIntegralFlatTests
 public import FLT.Mazur.HilbertSourceInvariantCharacterOrbits
 public import FLT.Mazur.HilbertSourceLocalRankCeilingLifts
 public import FLT.Mazur.HilbertSourceLocalizedOpenLift
+public import FLT.Mazur.HilbertSourceMinimalScalarGeometry
 public import FLT.Mazur.HilbertSourceMultiplierSupport
 public import FLT.Mazur.HilbertSourceNonstableOpenLifts
 public import FLT.Mazur.HilbertSourceOpenRelationLifts
@@ -7224,6 +7227,7 @@ public import FLT.Mazur.InvariantOpenRelationDiagram
 public import FLT.Mazur.InvariantOpenRelationEquivalence
 public import FLT.Mazur.InvariantOpenRelationFunctions
 public import FLT.Mazur.InvariantOpenRelationMap
+public import FLT.Mazur.InvariantScalarGoingDown
 public import FLT.Mazur.InvariantSectionObstruction
 public import FLT.Mazur.IrreducibleComponentAmple
 public import FLT.Mazur.IsomorphicClosedPullback
@@ -11450,6 +11454,8 @@ public import FLT.Mazur.ScalarImageOriginalGenerators
 public import FLT.Mazur.ScalarImageResidueGenerators
 public import FLT.Mazur.ScalarImageSourceGenerators
 public import FLT.Mazur.ScalarLocalizedIdealNilpotence
+public import FLT.Mazur.ScalarMinimalCharacterNeighborhood
+public import FLT.Mazur.ScalarMinimalCharacterPropagation
 public import FLT.Mazur.ScalarNilpotenceFlatBaseChange
 public import FLT.Mazur.ScalarNilpotenceMinimalFiber
 public import FLT.Mazur.ScalarQuotientImagePresentation
