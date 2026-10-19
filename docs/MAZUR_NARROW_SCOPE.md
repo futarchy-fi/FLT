@@ -164,3 +164,30 @@ No general torsion-classification endpoint, composite-level moduli theory,
 or universal local-arithmetic list is required by the narrowed statement.
 Construction gaps remain work; this document does not assert that the global
 Eisenstein argument is complete or that it follows from the new adapters.
+
+## Rational scheme morphism checkpoint (W451, 2026-10-19)
+
+`FreyCurve/VeluTargetSchemeMorphism` proves that every nonidentity target in
+the existing `FreyPackage.IsVeluTarget` witness receives an actual rational
+scheme morphism from the original Frey cubic. It preserves the base and zero,
+has finite locally free degree p, and has the original rational closed kernel
+as its full Cartesian identity fiber. The theorem retains the original
+surjective invariant torsion quotient and the exact target equation.
+
+The construction in `Serre/VeluCoefficientOverlapCover` transfers the original
+Galois evaluations to graphs covering every point of the actual source overlap.
+Reducedness of that overlap makes these graphs detect morphisms to separated
+targets. `VeluCoefficientInvariantDescent` then proves full kernel-pair
+compatibility and constructs the descended map by effective-epimorphism descent.
+`VeluPrimeRationalDegree` and `VeluPrimeRationalKernel` prove its degree and kernel;
+the geometric map is recovered in the original Cartesian coefficient square.
+
+Read-only checks for this checkpoint: build
+`FLT.FreyCurve.VeluTargetSchemeMorphism` with `LEAN_NUM_THREADS=2 lake build`,
+and print axioms of `FreyPackage.IsVeluTarget.exists_prime_scheme_morphism`
+after importing that module. Its allowed axioms are `propext`,
+`Classical.choice`, and `Quot.sound`.
+The local integral-model comparison, rational scheme group-hom compatibility,
+modular point, cusp specialization, and `FreyVeluTorsionExclusion` remain open.
+The active endpoint still uses `Mazur_statement`; this checkpoint does not
+replace the arithmetic exclusion or the G1/G2 constructions.
