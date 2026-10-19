@@ -11226,6 +11226,7 @@ public import FLT.Mazur.ScalarQuotientResiduePresentation
 public import FLT.Mazur.ScalarRestrictionFiniteness
 public import FLT.Mazur.ScalarRestrictionImage
 public import FLT.Mazur.ScalarTestKernelDescent
+public import FLT.Mazur.ScalarTestKernelFlatBaseChange
 public import FLT.Mazur.ScalarTestKernelProducts
 public import FLT.Mazur.ScalarTestLocalizationKernels
 public import FLT.Mazur.ScalarTestResidualSeparation
