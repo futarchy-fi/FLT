@@ -558,6 +558,7 @@ public import FLT.FreyCurve.Serre.VeluLocalIntegralModel
 public import FLT.FreyCurve.Serre.VeluMap
 public import FLT.FreyCurve.Serre.VeluOrdinary
 public import FLT.FreyCurve.Serre.VeluPointCofinite
+public import FLT.FreyCurve.Serre.VeluPrimeExactTarget
 public import FLT.FreyCurve.Serre.VeluPrimeGlobalKernelRank
 public import FLT.FreyCurve.Serre.VeluPrimeKernel
 public import FLT.FreyCurve.Serre.VeluPrimeKernelFiberComparison
