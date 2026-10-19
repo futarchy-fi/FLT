@@ -12951,6 +12951,7 @@ public import FLT.Mazur.WeierstrassChartSchemeGluingData
 public import FLT.Mazur.WeierstrassChartStandardSmooth
 public import FLT.Mazur.WeierstrassChartUnitLift
 public import FLT.Mazur.WeierstrassClosedImmersionIso
+public import FLT.Mazur.WeierstrassClosureSmoothAmbientProduct
 public import FLT.Mazur.WeierstrassCoefficientAddition
 public import FLT.Mazur.WeierstrassCoefficientAffineProduct
 public import FLT.Mazur.WeierstrassCoefficientChartPreimage
