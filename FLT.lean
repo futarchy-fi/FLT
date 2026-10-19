@@ -11190,6 +11190,7 @@ public import FLT.Mazur.ScalarImageOriginalGenerators
 public import FLT.Mazur.ScalarImageResidueGenerators
 public import FLT.Mazur.ScalarImageSourceGenerators
 public import FLT.Mazur.ScalarLocalizedIdealNilpotence
+public import FLT.Mazur.ScalarNilpotenceMinimalFiber
 public import FLT.Mazur.ScalarQuotientImagePresentation
 public import FLT.Mazur.ScalarQuotientImageReduction
 public import FLT.Mazur.ScalarQuotientResiduePresentation
