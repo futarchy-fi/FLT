@@ -187,7 +187,58 @@ Read-only checks for this checkpoint: build
 and print axioms of `FreyPackage.IsVeluTarget.exists_prime_scheme_morphism`
 after importing that module. Its allowed axioms are `propext`,
 `Classical.choice`, and `Quot.sound`.
-The local integral-model comparison, rational scheme group-hom compatibility,
-modular point, cusp specialization, and `FreyVeluTorsionExclusion` remain open.
-The active endpoint still uses `Mazur_statement`; this checkpoint does not
+At the W451 checkpoint, rational group compatibility and the local-model
+comparison were still open. W452 below closes the group and point compatibility
+and constructs the local generic maps. Integral extension, the modular point,
+cusp specialization, and `FreyVeluTorsionExclusion` remain open.
+The active endpoint still uses `Mazur_statement`; these constructions do not
 replace the arithmetic exclusion or the G1/G2 constructions.
+
+
+## Rational group quotient and local generic models (W452, 2026-10-19)
+
+`Serre/VeluDescendedGroupMorphism` proves multiplication compatibility for the
+actual descended morphism on the existing source and target group schemes.
+`Serre/VeluPrimeRationalPointComparison` identifies its geometric values with
+`torsionQuotientPointHom` and its rational values with every original quotient
+map retaining that base-change square. The original quotient-line embedding
+is also identified with the image of geometric torsion.
+
+`FreyCurve/VeluTargetGroupMorphism` assembles a rational group homomorphism for
+each retained nonidentity target. Its carrier is the original degree-p scheme
+map, with the original rational closed kernel as its full Cartesian identity
+fiber. The theorem retains the exact target equation and both original
+point-descent squares, together with an injective rational p-torsion map.
+
+`Mazur/WeierstrassGroupHomCoefficient` and
+`Mazur/WeierstrassGroupHomVariableChange` construct actual Cartesian transports
+of group morphisms and preserve their finite locally free degree.
+`Serre/VeluLocalGenericMorphism` applies them to the original rational quotient
+on any specified local source and target equations with their actual generic
+variable changes. Both Cartesian squares and the composite rational comparison
+are proved, so the chosen equations do not replace the original quotient.
+
+`Mazur/RationalPadicMinimalGroupMorphism` constructs minimal equations for both
+ends, with a generic group morphism of the original degree.
+`FreyCurve/VeluTargetLocalGenericMorphism` applies this construction at every
+rational prime, including p. For p >= 17, the same original rational p-subgroup
+transports injectively to the target minimal equation, with exact order p and
+proved good or multiplicative reduction. Its rational group map still agrees
+with the original point quotient.
+
+These maps are on the generic fibers of integral minimal equations. Extension
+to the appropriate smooth or generalized integral models, the original kernel
+closure and its modular interpretation still require construction. Regularity
+on an entire singular Weierstrass model is not asserted. The explicit point
+comparison through the local variable changes, an actual prime-level modular
+point, cusp orientation and specialization remain work. Negative j valuation
+alone does not select a cusp. G1's moduli and G2's Picard/Jacobian lanes remain
+separate from this construction.
+
+Read-only checks: build `FLT.FreyCurve.VeluTargetLocalGenericMorphism` with
+`LEAN_NUM_THREADS=2 lake build` and print axioms of
+`FreyPackage.IsVeluTarget.exists_prime_group_morphism` and
+`FreyPackage.IsVeluTarget.exists_padic_minimal_generic_quotient` after importing
+that module. Each theorem must use only `propext`, `Classical.choice` and
+`Quot.sound`. The local receipt checker is `python3 Scratch/MazurDW452/check.py`;
+its checked-at timestamp, source hashes and logs are retained in the W452 handoff.
