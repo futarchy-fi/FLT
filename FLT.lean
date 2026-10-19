@@ -4150,6 +4150,7 @@ public import FLT.Mazur.CyclicCharacteristicProductSubgroupDiagram
 public import FLT.Mazur.CyclicCharacteristicProductSubgroupGluing
 public import FLT.Mazur.CyclicCharacteristicProductSubgroupIdentification
 public import FLT.Mazur.CyclicCharacteristicProductSubgroupInclusion
+public import FLT.Mazur.CyclicCharacteristicProductTestRestriction
 public import FLT.Mazur.CyclicCharacteristicProductUniversalCharts
 public import FLT.Mazur.CyclicCharacteristicProductUniversalComparison
 public import FLT.Mazur.CyclicCharacteristicProductUniversalRefinement
