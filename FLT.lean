@@ -5588,6 +5588,7 @@ public import FLT.Mazur.FiniteErrorReductionFrame
 public import FLT.Mazur.FiniteErrorReductionIteration
 public import FLT.Mazur.FiniteErrorTensorPairs
 public import FLT.Mazur.FiniteEtaleDisjointSectionNeighborhood
+public import FLT.Mazur.FiniteEtaleFiniteFieldCover
 public import FLT.Mazur.FiniteEtaleGeometricDisjointCover
 public import FLT.Mazur.FiniteEtaleGeometricSectionCover
 public import FLT.Mazur.FiniteEtaleGeometricSplitting
