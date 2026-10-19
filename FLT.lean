@@ -472,6 +472,7 @@ public import FLT.FreyCurve.Serre.VeluIdentity
 public import FLT.FreyCurve.Serre.VeluInfinity
 public import FLT.FreyCurve.Serre.VeluIntegralModel
 public import FLT.FreyCurve.Serre.VeluIntegralSums
+public import FLT.FreyCurve.Serre.VeluKernelAffineChart
 public import FLT.FreyCurve.Serre.VeluKernelBaseChangeScheme
 public import FLT.FreyCurve.Serre.VeluKernelDescentAlgebra
 public import FLT.FreyCurve.Serre.VeluKernelGaloisLabels
