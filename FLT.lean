@@ -7945,6 +7945,7 @@ public import FLT.Mazur.NodeTangentSplitChart
 public import FLT.Mazur.NodeTangentSplitComponent
 public import FLT.Mazur.NodeTangentSplitLaurent
 public import FLT.Mazur.NodeTangentSplitNormalizationComparison
+public import FLT.Mazur.NodeTangentSplittingAlternative
 public import FLT.Mazur.NodeTangentTensorLaurentDescent
 public import FLT.Mazur.NodeTangentTensorOpen
 public import FLT.Mazur.NodeTangentTensorOrientation
