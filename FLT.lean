@@ -3843,6 +3843,7 @@ public import FLT.Mazur.CartesianOpenFunctionSheaf
 public import FLT.Mazur.CartesianOpenIsoBaseChange
 public import FLT.Mazur.CartesianOpenIsoRestriction
 public import FLT.Mazur.CartesianOpenSectionMap
+public import FLT.Mazur.CartesianSectionCoverTower
 public import FLT.Mazur.CartesianSectionRestriction
 public import FLT.Mazur.CartesianStandardSmoothDimension
 public import FLT.Mazur.CartesianStructureComplexExactness
