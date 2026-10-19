@@ -12398,6 +12398,7 @@ public import FLT.Mazur.SpecCartesianAlgebraPushout
 public import FLT.Mazur.SpecChartIdealPreimage
 public import FLT.Mazur.SpecGenericFiniteOpen
 public import FLT.Mazur.SpecGenericFlatOpen
+public import FLT.Mazur.SpecMinimalPrimeFiniteOpen
 public import FLT.Mazur.SpecializationValuationSquare
 public import FLT.Mazur.SpectrumFieldCohomologyCoordinates
 public import FLT.Mazur.SpectrumGlobalRange
