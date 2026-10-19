@@ -15816,6 +15816,7 @@ public import FLT.Mazur.WeierstrassLocalGenericKernel
 public import FLT.Mazur.WeierstrassLocalGenericProjection
 public import FLT.Mazur.WeierstrassLocalGenericTower
 public import FLT.Mazur.WeierstrassLocalKernelCoefficientSquare
+public import FLT.Mazur.WeierstrassLocalKernelCoverExtension
 public import FLT.Mazur.WeierstrassLocalKernelTower
 public import FLT.Mazur.WeierstrassLocalNodalTransport
 public import FLT.Mazur.WeierstrassLowPoleCoordinates
