@@ -11256,6 +11256,7 @@ public import FLT.Mazur.ScalarExtensionDirectSum
 public import FLT.Mazur.ScalarExtensionImageReduction
 public import FLT.Mazur.ScalarExtensionIsomorphismDescent
 public import FLT.Mazur.ScalarExtensionPullbackDescent
+public import FLT.Mazur.ScalarGeometricFiberTests
 public import FLT.Mazur.ScalarIdealNilpotenceOpen
 public import FLT.Mazur.ScalarIdealNilpotenceResidual
 public import FLT.Mazur.ScalarImageFiniteVanishing
