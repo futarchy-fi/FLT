@@ -458,6 +458,7 @@ public import FLT.FreyCurve.Serre.UnramifiedCharacter
 public import FLT.FreyCurve.Serre.Velu
 public import FLT.FreyCurve.Serre.VeluAdditivity
 public import FLT.FreyCurve.Serre.VeluAffineDenominator
+public import FLT.FreyCurve.Serre.VeluAffineGenericRestriction
 public import FLT.FreyCurve.Serre.VeluAffineRegularCoordinates
 public import FLT.FreyCurve.Serre.VeluAffineRegularMorphism
 public import FLT.FreyCurve.Serre.VeluAffineSectionChart
