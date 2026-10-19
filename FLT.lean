@@ -4232,6 +4232,7 @@ public import FLT.Mazur.CyclicCharacteristicFaithfulRelabeledCover
 public import FLT.Mazur.CyclicCharacteristicFiniteNeighborhood
 public import FLT.Mazur.CyclicCharacteristicFiniteTypeAtlas
 public import FLT.Mazur.CyclicCharacteristicFixedCover
+public import FLT.Mazur.CyclicCharacteristicInvariantAffineComparison
 public import FLT.Mazur.CyclicCharacteristicInvariantAffineCover
 public import FLT.Mazur.CyclicCharacteristicInvariantAffineCoverage
 public import FLT.Mazur.CyclicCharacteristicInvariantLocallyRinged
