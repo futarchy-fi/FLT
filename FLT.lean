@@ -545,6 +545,7 @@ public import FLT.FreyCurve.Serre.VeluSourceLocalization
 public import FLT.FreyCurve.Serre.VeluSourceSchemeFunctionField
 public import FLT.FreyCurve.Serre.VeluSpecialization
 public import FLT.FreyCurve.Serre.VeluTranslation
+public import FLT.FreyCurve.Serre.VeluTranslationFieldCoordinates
 public import FLT.FreyCurve.Serre.VeluTranslationFieldHom
 public import FLT.FreyCurve.Serre.VeluTranslationGenericCoordinates
 public import FLT.FreyCurve.TorsionQuotientWitness
