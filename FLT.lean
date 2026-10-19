@@ -16795,6 +16795,7 @@ public import FLT.Mazur.WeierstrassUniversalComparisonRefinement
 public import FLT.Mazur.WeierstrassUniversalComparisonRingHom
 public import FLT.Mazur.WeierstrassUniversalComparisonSpecialization
 public import FLT.Mazur.WeierstrassUniversalTranslationSmoothLocus
+public import FLT.Mazur.WeierstrassValuationKernelClosureFlat
 public import FLT.Mazur.WeierstrassVariableChangeAddition
 public import FLT.Mazur.WeierstrassVariableChangeAdditionFormula
 public import FLT.Mazur.WeierstrassVariableChangeAffineProduct
