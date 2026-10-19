@@ -3919,6 +3919,7 @@ public import FLT.Mazur.CompatibleSubgroupGroupSectionComposition
 public import FLT.Mazur.CompatibleSubgroupIdealIso
 public import FLT.Mazur.CompatibleSubgroupIso
 public import FLT.Mazur.CompatibleSubgroupIsoBaseChange
+public import FLT.Mazur.CompatibleSubgroupIsoConjugation
 public import FLT.Mazur.CompatibleSubgroupIsoFaithful
 public import FLT.Mazur.CompatibleSubgroupIsoSectionSquare
 public import FLT.Mazur.CompatibleSubgroupMarkedConjugation
