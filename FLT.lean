@@ -8401,6 +8401,7 @@ public import FLT.Mazur.OriginalFiniteCoefficientOrbit
 public import FLT.Mazur.OriginalGeometricallyIntegralOpen
 public import FLT.Mazur.OriginalHilbertFiniteType
 public import FLT.Mazur.OriginalInvariantOpenAllEtaleLifts
+public import FLT.Mazur.OriginalLocalizationIntegralEquations
 public import FLT.Mazur.OriginalPrimeDomainValuationObstruction
 public import FLT.Mazur.OriginalPrimeExactCenterValuations
 public import FLT.Mazur.OriginalPrimeIntegralComponents
