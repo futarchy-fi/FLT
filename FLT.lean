@@ -5291,6 +5291,7 @@ public import FLT.Mazur.EquivalenceRelationResidualPermutationOpen
 public import FLT.Mazur.EquivalenceRelationResidualScalarExtension
 public import FLT.Mazur.EquivalenceRelationResidualSectionExtension
 public import FLT.Mazur.EquivalenceRelationRestrictedActionGraphs
+public import FLT.Mazur.EquivalenceRelationScalarFiberCorrections
 public import FLT.Mazur.EquivalenceRelationScalarLocalDetection
 public import FLT.Mazur.EquivalenceRelationScalarLocalEquations
 public import FLT.Mazur.EquivalenceRelationScalarLocalRanks
