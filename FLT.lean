@@ -11619,6 +11619,7 @@ public import FLT.Mazur.ScalarTestKernelProducts
 public import FLT.Mazur.ScalarTestLocalizationKernels
 public import FLT.Mazur.ScalarTestResidualSeparation
 public import FLT.Mazur.ScalarTowerDivision
+public import FLT.Mazur.ScalarWholeFiberStrata
 public import FLT.Mazur.SchematicClosureFiniteSections
 public import FLT.Mazur.SchematicDenseBezoutFlat
 public import FLT.Mazur.SchematicDenseDedekindFlat
