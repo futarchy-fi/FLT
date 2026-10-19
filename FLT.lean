@@ -15387,6 +15387,7 @@ public import FLT.Mazur.WeierstrassGeneralizedSmoothComparison
 public import FLT.Mazur.WeierstrassGenericClosureNegation
 public import FLT.Mazur.WeierstrassGenericClosurePairComparison
 public import FLT.Mazur.WeierstrassGenericClosureSmoothDensity
+public import FLT.Mazur.WeierstrassGenericClosureSmoothMultiplication
 public import FLT.Mazur.WeierstrassGenericClosureSmoothOperations
 public import FLT.Mazur.WeierstrassGenericClosureSmoothPart
 public import FLT.Mazur.WeierstrassGenericClosureSmoothRecovery
