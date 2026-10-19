@@ -4240,6 +4240,7 @@ public import FLT.Mazur.CyclicCharacteristicInvariantAffineCoverage
 public import FLT.Mazur.CyclicCharacteristicInvariantLocalization
 public import FLT.Mazur.CyclicCharacteristicInvariantLocallyRinged
 public import FLT.Mazur.CyclicCharacteristicInvariantPrincipal
+public import FLT.Mazur.CyclicCharacteristicInvariantPrincipalSpectrum
 public import FLT.Mazur.CyclicCharacteristicInvariantSectionRings
 public import FLT.Mazur.CyclicCharacteristicInvariantSections
 public import FLT.Mazur.CyclicCharacteristicInvariantSheaf
