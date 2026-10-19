@@ -11510,6 +11510,7 @@ public import FLT.Mazur.SchemeGeometricFiberH0Comparison
 public import FLT.Mazur.SchemeGlueDataMap
 public import FLT.Mazur.SchemeGlueDataMapCartesian
 public import FLT.Mazur.SchemeIdempotentSupport
+public import FLT.Mazur.SchemeImageClosureFlatBaseChange
 public import FLT.Mazur.SchemeIndependentCanonicalCocycle
 public import FLT.Mazur.SchemeIndependentCanonicalCompatibility
 public import FLT.Mazur.SchemeIndependentCanonicalCoordinate
