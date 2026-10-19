@@ -10785,6 +10785,7 @@ public import FLT.Mazur.ProperCoverLimitDescent
 public import FLT.Mazur.ProperCurveFixedPointTranslation
 public import FLT.Mazur.ProperCurveGenus
 public import FLT.Mazur.ProperCurveOpenComparison
+public import FLT.Mazur.ProperDenseFiniteSections
 public import FLT.Mazur.ProperDenseOpenExtension
 public import FLT.Mazur.ProperDenseOpenIso
 public import FLT.Mazur.ProperEtaleNeighborhoodBases
