@@ -466,6 +466,7 @@ public import FLT.FreyCurve.Serre.VeluInfinity
 public import FLT.FreyCurve.Serre.VeluMap
 public import FLT.FreyCurve.Serre.VeluOrdinary
 public import FLT.FreyCurve.Serre.VeluPointCofinite
+public import FLT.FreyCurve.Serre.VeluPrimeKernel
 public import FLT.FreyCurve.Serre.VeluQuotient
 public import FLT.FreyCurve.Serre.VeluRational
 public import FLT.FreyCurve.Serre.VeluSpecialization
