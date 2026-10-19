@@ -468,6 +468,7 @@ public import FLT.FreyCurve.Serre.VeluAffineRegularMorphism
 public import FLT.FreyCurve.Serre.VeluAffineSectionChart
 public import FLT.FreyCurve.Serre.VeluAffineSmoothCoordinates
 public import FLT.FreyCurve.Serre.VeluAffineTranslation
+public import FLT.FreyCurve.Serre.VeluCofiniteFunctionEquality
 public import FLT.FreyCurve.Serre.VeluCoordinates
 public import FLT.FreyCurve.Serre.VeluDifferential
 public import FLT.FreyCurve.Serre.VeluDivisionIntegrality
