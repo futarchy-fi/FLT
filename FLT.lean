@@ -11529,6 +11529,7 @@ public import FLT.Mazur.SchemePullbackSquareComposition
 public import FLT.Mazur.SchemePullbackSquareIdentity
 public import FLT.Mazur.SchemePullbackSquareInversePasting
 public import FLT.Mazur.SchemePullbackSquarePasting
+public import FLT.Mazur.SchemeQuasiCompactOpenKernelPower
 public import FLT.Mazur.SchemeQuotientAffineBaseCoordinates
 public import FLT.Mazur.SchemeQuotientAffineFlatComparison
 public import FLT.Mazur.SchemeQuotientAffineFlatDescent
