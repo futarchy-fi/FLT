@@ -5423,6 +5423,7 @@ public import FLT.Mazur.EquivalenceRelationResidualSectionExtension
 public import FLT.Mazur.EquivalenceRelationRestrictedActionGraphs
 public import FLT.Mazur.EquivalenceRelationScalarDefectCharacters
 public import FLT.Mazur.EquivalenceRelationScalarFiberCorrections
+public import FLT.Mazur.EquivalenceRelationScalarFrameRanks
 public import FLT.Mazur.EquivalenceRelationScalarLocalDetection
 public import FLT.Mazur.EquivalenceRelationScalarLocalEquations
 public import FLT.Mazur.EquivalenceRelationScalarLocalRanks
