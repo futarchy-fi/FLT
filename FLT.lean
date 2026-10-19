@@ -4381,6 +4381,7 @@ public import FLT.Mazur.CyclicCharacteristicRelabelSections
 public import FLT.Mazur.CyclicCharacteristicRelabeledPrescribedCover
 public import FLT.Mazur.CyclicCharacteristicRelabeledPrescribedSections
 public import FLT.Mazur.CyclicCharacteristicResidualChartQuotient
+public import FLT.Mazur.CyclicCharacteristicResidualPrincipalOpens
 public import FLT.Mazur.CyclicCharacteristicResidualProjection
 public import FLT.Mazur.CyclicCharacteristicResidualRelation
 public import FLT.Mazur.CyclicCharacteristicResidualSectionComparison
