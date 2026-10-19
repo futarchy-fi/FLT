@@ -5297,6 +5297,7 @@ public import FLT.Mazur.EquivalenceRelationCompleteThickeningTower
 public import FLT.Mazur.EquivalenceRelationCompleteThickenings
 public import FLT.Mazur.EquivalenceRelationCompleteVanishingOpen
 public import FLT.Mazur.EquivalenceRelationComponentCharacters
+public import FLT.Mazur.EquivalenceRelationComponentPrincipalBranches
 public import FLT.Mazur.EquivalenceRelationConnectedCompleteTests
 public import FLT.Mazur.EquivalenceRelationDoubleVanishingOpen
 public import FLT.Mazur.EquivalenceRelationEqualFrameCorrections
