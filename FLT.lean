@@ -4131,6 +4131,7 @@ public import FLT.Mazur.CyclicCharacteristicProductDiagramTopology
 public import FLT.Mazur.CyclicCharacteristicProductOpenCoordinates
 public import FLT.Mazur.CyclicCharacteristicProductRefinementAlgebra
 public import FLT.Mazur.CyclicCharacteristicProductRefinementTransport
+public import FLT.Mazur.CyclicCharacteristicProductSubgroupCharts
 public import FLT.Mazur.CyclicCharacteristicProductSubgroupDiagram
 public import FLT.Mazur.CyclicCharacteristicProductSubgroupGluing
 public import FLT.Mazur.CyclicCharacteristicProductSubgroupInclusion
