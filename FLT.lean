@@ -4227,6 +4227,7 @@ public import FLT.Mazur.CyclicCharacteristicAffineComparisonScheme
 public import FLT.Mazur.CyclicCharacteristicAffineEquation
 public import FLT.Mazur.CyclicCharacteristicAffineEquationCoherence
 public import FLT.Mazur.CyclicCharacteristicAffineEquationPullback
+public import FLT.Mazur.CyclicCharacteristicAffineOppositeCover
 public import FLT.Mazur.CyclicCharacteristicAffineOrbitCover
 public import FLT.Mazur.CyclicCharacteristicAffineOrbitLocallyRinged
 public import FLT.Mazur.CyclicCharacteristicAffineOrbitProjection
