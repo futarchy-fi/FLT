@@ -6377,6 +6377,7 @@ public import FLT.Mazur.GroupMarkingBaseChangeInverse
 public import FLT.Mazur.GroupMarkingBaseProjection
 public import FLT.Mazur.GroupMarkingCartesianInverse
 public import FLT.Mazur.GroupMarkingCartesianTransport
+public import FLT.Mazur.GroupMarkingFullTorsionRelabel
 public import FLT.Mazur.GroupMarkingTransport
 public import FLT.Mazur.GroupMarkingTransportEquations
 public import FLT.Mazur.GroupMarkingTransportNaturality
