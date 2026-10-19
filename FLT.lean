@@ -2647,6 +2647,8 @@ public import FLT.Mazur.AffineBasisSheafExtension
 public import FLT.Mazur.AffineBasisSumCoproduct
 public import FLT.Mazur.AffineBasisSumMaps
 public import FLT.Mazur.AffineBoundaryComponentEquations
+public import FLT.Mazur.AffineBoundaryComponentSpecialization
+public import FLT.Mazur.AffineBoundaryGenericLocalTests
 public import FLT.Mazur.AffineBoundaryTestFactorization
 public import FLT.Mazur.AffineBoundaryTestIdeal
 public import FLT.Mazur.AffineBoundaryTestPowerEquations
@@ -4847,10 +4849,12 @@ public import FLT.Mazur.EquivalenceRelationBoundaryActionGeometry
 public import FLT.Mazur.EquivalenceRelationBoundaryChartTests
 public import FLT.Mazur.EquivalenceRelationBoundaryChartTransport
 public import FLT.Mazur.EquivalenceRelationBoundaryCoefficients
+public import FLT.Mazur.EquivalenceRelationBoundaryComponentBounds
 public import FLT.Mazur.EquivalenceRelationBoundaryComponentRank
 public import FLT.Mazur.EquivalenceRelationBoundaryExcess
 public import FLT.Mazur.EquivalenceRelationBoundaryFaithful
 public import FLT.Mazur.EquivalenceRelationBoundaryFaithfulDifferences
+public import FLT.Mazur.EquivalenceRelationBoundaryGenericCharts
 public import FLT.Mazur.EquivalenceRelationBoundaryLabelChange
 public import FLT.Mazur.EquivalenceRelationBoundaryLabelCoefficients
 public import FLT.Mazur.EquivalenceRelationBoundaryLabelRefinement
@@ -4858,6 +4862,7 @@ public import FLT.Mazur.EquivalenceRelationBoundaryOpenCoefficients
 public import FLT.Mazur.EquivalenceRelationBoundaryPowerDescent
 public import FLT.Mazur.EquivalenceRelationBoundaryRankDescent
 public import FLT.Mazur.EquivalenceRelationBoundaryRankEquations
+public import FLT.Mazur.EquivalenceRelationBoundaryRankFiltration
 public import FLT.Mazur.EquivalenceRelationBoundaryRankRecovery
 public import FLT.Mazur.EquivalenceRelationBoundaryRankSeparation
 public import FLT.Mazur.EquivalenceRelationBoundaryRankThickenings
@@ -4980,6 +4985,7 @@ public import FLT.Mazur.EquivalenceRelationNormalizedOrbitNeighborhood
 public import FLT.Mazur.EquivalenceRelationNormalizedScalarComplete
 public import FLT.Mazur.EquivalenceRelationNormalizedSubframe
 public import FLT.Mazur.EquivalenceRelationOpenChartScalars
+public import FLT.Mazur.EquivalenceRelationQuotientRankOpens
 public import FLT.Mazur.EquivalenceRelationRankInterior
 public import FLT.Mazur.EquivalenceRelationRankSaturation
 public import FLT.Mazur.EquivalenceRelationRankStratumCover
@@ -6413,6 +6419,7 @@ public import FLT.Mazur.HilbertSourceBadQuotientLifts
 public import FLT.Mazur.HilbertSourceBoundaryCompletenessNilpotence
 public import FLT.Mazur.HilbertSourceBoundaryComponentEquations
 public import FLT.Mazur.HilbertSourceBoundaryFaithfulDescent
+public import FLT.Mazur.HilbertSourceBoundaryGenericCharts
 public import FLT.Mazur.HilbertSourceBoundaryRankFinite
 public import FLT.Mazur.HilbertSourceBoundaryRankNilpotence
 public import FLT.Mazur.HilbertSourceBoundaryRankStages
@@ -7091,6 +7098,7 @@ public import FLT.Mazur.LocallySplitSheafPullback
 public import FLT.Mazur.LocallySplitSheafTransport
 public import FLT.Mazur.MarkedIntegerModel
 public import FLT.Mazur.MaximalAdicDetection
+public import FLT.Mazur.MinimalPrimeLocalizedIdeal
 public import FLT.Mazur.ModuleBinarySectionGluing
 public import FLT.Mazur.ModuleCechScalar
 public import FLT.Mazur.ModuleCocycleChartSections
