@@ -870,6 +870,7 @@ public import FLT.GroupScheme.DivisionResidueFibreComparison
 public import FLT.GroupScheme.DivisionResidueFiniteCharts
 public import FLT.GroupScheme.DivisionResidueLocalCI
 public import FLT.GroupScheme.DivisionResidueRegularPresentation
+public import FLT.GroupScheme.EquivariantScalarExtension
 public import FLT.GroupScheme.EtaleBaseChangeTower
 public import FLT.GroupScheme.EtaleClosedImmersion
 public import FLT.GroupScheme.EtaleGenericMorphismExtension
