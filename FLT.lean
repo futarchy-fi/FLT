@@ -2720,6 +2720,8 @@ public import FLT.Mazur.AffineBoundaryScalarNilpotence
 public import FLT.Mazur.AffineBoundaryTestFactorization
 public import FLT.Mazur.AffineBoundaryTestGeneratorPoles
 public import FLT.Mazur.AffineBoundaryTestIdeal
+public import FLT.Mazur.AffineBoundaryTestKernelDescent
+public import FLT.Mazur.AffineBoundaryTestKernels
 public import FLT.Mazur.AffineBoundaryTestPowerEquations
 public import FLT.Mazur.AffineBoundaryTestThickenings
 public import FLT.Mazur.AffineBoundaryTestValuations
@@ -6608,10 +6610,12 @@ public import FLT.Mazur.HilbertSourceResidualRankCompatibility
 public import FLT.Mazur.HilbertSourceResidualRankCorrections
 public import FLT.Mazur.HilbertSourceResidualRankLifts
 public import FLT.Mazur.HilbertSourceResidualRankObstructions
+public import FLT.Mazur.HilbertSourceResidualTestDescent
 public import FLT.Mazur.HilbertSourceScalarLocalDetection
 public import FLT.Mazur.HilbertSourceScalarNilpotenceLifts
 public import FLT.Mazur.HilbertSourceScalarResidualStages
 public import FLT.Mazur.HilbertSourceTestChartGenerators
+public import FLT.Mazur.HilbertSourceTestKernelObstruction
 public import FLT.Mazur.HilbertSourceUniformRelationMultiplier
 public import FLT.Mazur.HilbertSourceUniformScalarDenominators
 public import FLT.Mazur.HilbertSourceValuativeBoundaryObstructions
@@ -11197,6 +11201,10 @@ public import FLT.Mazur.ScalarQuotientImageReduction
 public import FLT.Mazur.ScalarQuotientResiduePresentation
 public import FLT.Mazur.ScalarRestrictionFiniteness
 public import FLT.Mazur.ScalarRestrictionImage
+public import FLT.Mazur.ScalarTestKernelDescent
+public import FLT.Mazur.ScalarTestKernelProducts
+public import FLT.Mazur.ScalarTestLocalizationKernels
+public import FLT.Mazur.ScalarTestResidualSeparation
 public import FLT.Mazur.ScalarTowerDivision
 public import FLT.Mazur.SchematicDenseDedekindFlat
 public import FLT.Mazur.SchematicDescentGluing
