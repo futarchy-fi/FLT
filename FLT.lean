@@ -10990,6 +10990,7 @@ public import FLT.Mazur.RationalPadicIntegerSubring
 public import FLT.Mazur.RationalPadicIntegralDepth
 public import FLT.Mazur.RationalPadicMinimalGroupMorphism
 public import FLT.Mazur.RationalPadicMinimalTransport
+public import FLT.Mazur.RationalPadicProjectiveSchemeTransport
 public import FLT.Mazur.RationalPointConditionRank
 public import FLT.Mazur.RationalPointDivisorStalk
 public import FLT.Mazur.RationalPointProductStalk
