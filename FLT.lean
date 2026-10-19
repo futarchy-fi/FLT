@@ -2955,6 +2955,7 @@ public import FLT.Mazur.AffineFunctionUniversal
 public import FLT.Mazur.AffineGeneratorPointCoefficientTransport
 public import FLT.Mazur.AffineGeneratorPointLinearTransport
 public import FLT.Mazur.AffineGenericClosure
+public import FLT.Mazur.AffineGenericFiniteOpen
 public import FLT.Mazur.AffineGenericFlatOpen
 public import FLT.Mazur.AffineGeometricChartDatum
 public import FLT.Mazur.AffineGeometricChartRecognition
@@ -5221,6 +5222,7 @@ public import FLT.Mazur.EquivalenceRelationCompleteIdealInvariant
 public import FLT.Mazur.EquivalenceRelationCompleteInterior
 public import FLT.Mazur.EquivalenceRelationCompleteInteriorFinite
 public import FLT.Mazur.EquivalenceRelationCompleteMixedCoefficients
+public import FLT.Mazur.EquivalenceRelationCompleteNeighborhoodCharacters
 public import FLT.Mazur.EquivalenceRelationCompleteOpenCoefficients
 public import FLT.Mazur.EquivalenceRelationCompletePointLocus
 public import FLT.Mazur.EquivalenceRelationCompleteQuotientCorrections
@@ -5259,6 +5261,7 @@ public import FLT.Mazur.EquivalenceRelationFiniteTargetSaturation
 public import FLT.Mazur.EquivalenceRelationFrameNormalization
 public import FLT.Mazur.EquivalenceRelationFrameRebaseGeometric
 public import FLT.Mazur.EquivalenceRelationFrameRebaseLaws
+public import FLT.Mazur.EquivalenceRelationGenericCompleteNeighborhood
 public import FLT.Mazur.EquivalenceRelationGeometricTestExtensions
 public import FLT.Mazur.EquivalenceRelationHigherScalarValuations
 public import FLT.Mazur.EquivalenceRelationHigherTestAtlas
@@ -6526,6 +6529,7 @@ public import FLT.Mazur.HilbertCompleteChartBoundaryTests
 public import FLT.Mazur.HilbertCompleteChartMixedVanishing
 public import FLT.Mazur.HilbertCompleteChartOriginalCertificates
 public import FLT.Mazur.HilbertCompleteChartOriginalSections
+public import FLT.Mazur.HilbertCompleteChartScalarIso
 public import FLT.Mazur.HilbertCompleteFrameCardinality
 public import FLT.Mazur.HilbertCompleteGeometricTuple
 public import FLT.Mazur.HilbertCompleteInfinitesimalSources
@@ -6573,6 +6577,8 @@ public import FLT.Mazur.HilbertFullInteriorFiniteKernel
 public import FLT.Mazur.HilbertFullInteriorQuotientChart
 public import FLT.Mazur.HilbertFullRelationFiberRebase
 public import FLT.Mazur.HilbertFullRelationOrderedPoints
+public import FLT.Mazur.HilbertGenericCompleteNeighborhood
+public import FLT.Mazur.HilbertGenericOriginalLifting
 public import FLT.Mazur.HilbertGrassmannianAffineMap
 public import FLT.Mazur.HilbertGrassmannianFamilyCompatibility
 public import FLT.Mazur.HilbertGrassmannianGluing
@@ -11000,6 +11006,7 @@ public import FLT.Mazur.QuadraticRootOppositeBranch
 public import FLT.Mazur.QuasiCoherentAffineBasePullback
 public import FLT.Mazur.QuasiCoherentSchemePullback
 public import FLT.Mazur.QuasiCompactEtaleGeometricSections
+public import FLT.Mazur.QuasiCompactGenericFiniteOpen
 public import FLT.Mazur.QuasiCompactGenericFlatOpen
 public import FLT.Mazur.QuasiFiniteCoefficientQuotient
 public import FLT.Mazur.QuasiFiniteFlatDescent
@@ -11793,6 +11800,7 @@ public import FLT.Mazur.SchemeFppfSourceLineMapPreimage
 public import FLT.Mazur.SchemeFppfTargetOpen
 public import FLT.Mazur.SchemeFpqcOpenSectionDescent
 public import FLT.Mazur.SchemeFunctionGroundChange
+public import FLT.Mazur.SchemeGenericFiniteTargetOpen
 public import FLT.Mazur.SchemeGenericFlatTargetOpen
 public import FLT.Mazur.SchemeGenericFppfTargetOpen
 public import FLT.Mazur.SchemeGeometricDescentCocycleTest
