@@ -4020,6 +4020,7 @@ public import FLT.Mazur.CyclicCharacteristicAffineOriginalSubgroupLocus
 public import FLT.Mazur.CyclicCharacteristicAffineOriginalSubgroupOverlap
 public import FLT.Mazur.CyclicCharacteristicAffineSubgroup
 public import FLT.Mazur.CyclicCharacteristicAffineSubgroupClassification
+public import FLT.Mazur.CyclicCharacteristicAffineSubgroupCocycle
 public import FLT.Mazur.CyclicCharacteristicAffineSubgroupFactorization
 public import FLT.Mazur.CyclicCharacteristicAffineSubgroupOverlap
 public import FLT.Mazur.CyclicCharacteristicAffineSubgroupRefinement
