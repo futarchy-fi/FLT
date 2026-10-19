@@ -6511,6 +6511,7 @@ public import FLT.Mazur.HilbertRepeatedMonomialChart
 public import FLT.Mazur.HilbertResidualRankCeiling
 public import FLT.Mazur.HilbertSameAmbientChartIso
 public import FLT.Mazur.HilbertSourceActionRelationGraph
+public import FLT.Mazur.HilbertSourceActualMultiplierIdeal
 public import FLT.Mazur.HilbertSourceBadAffineChartEquations
 public import FLT.Mazur.HilbertSourceBadAffineChartLifts
 public import FLT.Mazur.HilbertSourceBadQuotientLifts
@@ -6542,10 +6543,12 @@ public import FLT.Mazur.HilbertSourceConstructedRelationNoetherian
 public import FLT.Mazur.HilbertSourceExactCenterValuations
 public import FLT.Mazur.HilbertSourceFiniteCompletenessTests
 public import FLT.Mazur.HilbertSourceFiniteLinearOpenLifts
+public import FLT.Mazur.HilbertSourceFiniteMultiplierTests
 public import FLT.Mazur.HilbertSourceFiniteOpenNumerators
 public import FLT.Mazur.HilbertSourceGeneratedLocalizedSurjectivity
 public import FLT.Mazur.HilbertSourceLocalRankCeilingLifts
 public import FLT.Mazur.HilbertSourceLocalizedOpenLift
+public import FLT.Mazur.HilbertSourceMultiplierSupport
 public import FLT.Mazur.HilbertSourceNonstableOpenLifts
 public import FLT.Mazur.HilbertSourceOpenRelationLifts
 public import FLT.Mazur.HilbertSourceOriginalDomainComponents
@@ -6561,6 +6564,7 @@ public import FLT.Mazur.HilbertSourceScalarLocalDetection
 public import FLT.Mazur.HilbertSourceScalarNilpotenceLifts
 public import FLT.Mazur.HilbertSourceScalarResidualStages
 public import FLT.Mazur.HilbertSourceUniformRelationMultiplier
+public import FLT.Mazur.HilbertSourceUniformScalarDenominators
 public import FLT.Mazur.HilbertSourceValuativeBoundaryObstructions
 public import FLT.Mazur.HilbertStableFrameBoundary
 public import FLT.Mazur.HilbertSubframeAffineOverlap
@@ -7555,6 +7559,7 @@ public import FLT.Mazur.NoetherianClosedImageGenerizations
 public import FLT.Mazur.NoetherianConstructibleCriterion
 public import FLT.Mazur.NoetherianDirectSumSheaf
 public import FLT.Mazur.NoetherianEnvelopeGenericInterior
+public import FLT.Mazur.NoetherianFiniteFamilyAnnihilator
 public import FLT.Mazur.NoetherianInfinitesimalFiberFunctions
 public import FLT.Mazur.NoetherianLocalClosedFiberFunctions
 public import FLT.Mazur.NoetherianModuleSum
@@ -11390,6 +11395,7 @@ public import FLT.Mazur.SchemeFiniteGroupQuotientOrbits
 public import FLT.Mazur.SchemeFiniteGroupScalarFiberEquations
 public import FLT.Mazur.SchemeFiniteGroupTestAdicComparison
 public import FLT.Mazur.SchemeFiniteOrbitOpenCore
+public import FLT.Mazur.SchemeFiniteSectionAnnihilator
 public import FLT.Mazur.SchemeFiniteTargetAffineNeighborhood
 public import FLT.Mazur.SchemeFiniteTargetBaseChange
 public import FLT.Mazur.SchemeFiniteTargetFiber
