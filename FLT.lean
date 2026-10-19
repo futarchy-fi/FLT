@@ -10991,6 +10991,7 @@ public import FLT.Mazur.RelativeFrameRelabelCompleteness
 public import FLT.Mazur.RelativeFrameScalarCompleteness
 public import FLT.Mazur.RelativeFrameScalarExtension
 public import FLT.Mazur.RelativeFrameSpecializationCeiling
+public import FLT.Mazur.RelativeFrameStrictExtension
 public import FLT.Mazur.RelativeFrameTestCartesian
 public import FLT.Mazur.RelativeFrameTestSections
 public import FLT.Mazur.RelativeFrameTestSplitting
