@@ -5152,6 +5152,7 @@ public import FLT.Mazur.EquivalenceRelationFiniteTargetSaturation
 public import FLT.Mazur.EquivalenceRelationFrameNormalization
 public import FLT.Mazur.EquivalenceRelationFrameRebaseGeometric
 public import FLT.Mazur.EquivalenceRelationFrameRebaseLaws
+public import FLT.Mazur.EquivalenceRelationGeometricTestExtensions
 public import FLT.Mazur.EquivalenceRelationHigherScalarValuations
 public import FLT.Mazur.EquivalenceRelationHigherTestAtlas
 public import FLT.Mazur.EquivalenceRelationInvariantBoundaryAction
@@ -5206,6 +5207,7 @@ public import FLT.Mazur.EquivalenceRelationNormalizedLabelChange
 public import FLT.Mazur.EquivalenceRelationNormalizedLabelTransport
 public import FLT.Mazur.EquivalenceRelationNormalizedOrbitNeighborhood
 public import FLT.Mazur.EquivalenceRelationNormalizedScalarComplete
+public import FLT.Mazur.EquivalenceRelationNormalizedStrictExtension
 public import FLT.Mazur.EquivalenceRelationNormalizedSubframe
 public import FLT.Mazur.EquivalenceRelationOpenChartScalars
 public import FLT.Mazur.EquivalenceRelationQuotientRankOpens
@@ -6709,6 +6711,7 @@ public import FLT.Mazur.HilbertSourceFlatScalarEquations
 public import FLT.Mazur.HilbertSourceFlatTensorEquations
 public import FLT.Mazur.HilbertSourceGeneratedLocalizedSurjectivity
 public import FLT.Mazur.HilbertSourceGeometricFiberTests
+public import FLT.Mazur.HilbertSourceGeometricFrameExtensions
 public import FLT.Mazur.HilbertSourceHigherScalarValuations
 public import FLT.Mazur.HilbertSourceIntegralFlatTests
 public import FLT.Mazur.HilbertSourceLocalRankCeilingLifts
@@ -11004,6 +11007,7 @@ public import FLT.Mazur.RelativeFrameCompleteFinite
 public import FLT.Mazur.RelativeFrameCompletenessTransfer
 public import FLT.Mazur.RelativeFrameDenseRankStrata
 public import FLT.Mazur.RelativeFrameExactRank
+public import FLT.Mazur.RelativeFrameMissingSection
 public import FLT.Mazur.RelativeFrameRankBound
 public import FLT.Mazur.RelativeFrameRankImage
 public import FLT.Mazur.RelativeFrameRankJumpValuations
@@ -11012,6 +11016,7 @@ public import FLT.Mazur.RelativeFrameRelabelCompleteness
 public import FLT.Mazur.RelativeFrameScalarCompleteness
 public import FLT.Mazur.RelativeFrameScalarExtension
 public import FLT.Mazur.RelativeFrameSpecializationCeiling
+public import FLT.Mazur.RelativeFrameStrictExtension
 public import FLT.Mazur.RelativeFrameTestCartesian
 public import FLT.Mazur.RelativeFrameTestSections
 public import FLT.Mazur.RelativeFrameTestSplitting
@@ -11564,6 +11569,7 @@ public import FLT.Mazur.SchemeFiniteGroupFiniteFiberTests
 public import FLT.Mazur.SchemeFiniteGroupFreeBoundary
 public import FLT.Mazur.SchemeFiniteGroupFreeBoundaryIdeal
 public import FLT.Mazur.SchemeFiniteGroupFreeFlat
+public import FLT.Mazur.SchemeFiniteGroupGeometricTests
 public import FLT.Mazur.SchemeFiniteGroupInvariantPrincipal
 public import FLT.Mazur.SchemeFiniteGroupPrincipalComparison
 public import FLT.Mazur.SchemeFiniteGroupPrincipalQuotient
