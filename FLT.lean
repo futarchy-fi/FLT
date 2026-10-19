@@ -463,12 +463,14 @@ public import FLT.FreyCurve.Serre.VeluAffineNonkernelOpen
 public import FLT.FreyCurve.Serre.VeluAffinePointCoordinates
 public import FLT.FreyCurve.Serre.VeluAffinePointInjective
 public import FLT.FreyCurve.Serre.VeluAffinePointMorphism
+public import FLT.FreyCurve.Serre.VeluAffinePointNaturality
 public import FLT.FreyCurve.Serre.VeluAffineRationalRepresentative
 public import FLT.FreyCurve.Serre.VeluAffineRegularCoordinates
 public import FLT.FreyCurve.Serre.VeluAffineRegularMorphism
 public import FLT.FreyCurve.Serre.VeluAffineSectionChart
 public import FLT.FreyCurve.Serre.VeluAffineSmoothCoordinates
 public import FLT.FreyCurve.Serre.VeluAffineTranslation
+public import FLT.FreyCurve.Serre.VeluCoefficientGaloisAction
 public import FLT.FreyCurve.Serre.VeluCofiniteFunctionEquality
 public import FLT.FreyCurve.Serre.VeluCoordinates
 public import FLT.FreyCurve.Serre.VeluDifferential
@@ -485,9 +487,11 @@ public import FLT.FreyCurve.Serre.VeluGenericFunctionFieldHom
 public import FLT.FreyCurve.Serre.VeluGenericQuadraticRelation
 public import FLT.FreyCurve.Serre.VeluGenericXField
 public import FLT.FreyCurve.Serre.VeluGeometricKernelScheme
+public import FLT.FreyCurve.Serre.VeluGlobalBaseTarget
 public import FLT.FreyCurve.Serre.VeluGlobalClassicalComparison
 public import FLT.FreyCurve.Serre.VeluGlobalDegree
 public import FLT.FreyCurve.Serre.VeluGlobalFinite
+public import FLT.FreyCurve.Serre.VeluGlobalGaloisInvariant
 public import FLT.FreyCurve.Serre.VeluGlobalGroupMorphism
 public import FLT.FreyCurve.Serre.VeluGlobalKernelCardinality
 public import FLT.FreyCurve.Serre.VeluGlobalKernelClosedComparison
@@ -500,6 +504,7 @@ public import FLT.FreyCurve.Serre.VeluGlobalPointKernel
 public import FLT.FreyCurve.Serre.VeluGlobalPointValues
 public import FLT.FreyCurve.Serre.VeluGlobalProperSurjective
 public import FLT.FreyCurve.Serre.VeluGlobalRestrictions
+public import FLT.FreyCurve.Serre.VeluGlobalTargetTransport
 public import FLT.FreyCurve.Serre.VeluHom
 public import FLT.FreyCurve.Serre.VeluIdentity
 public import FLT.FreyCurve.Serre.VeluInfinity
@@ -553,6 +558,7 @@ public import FLT.FreyCurve.Serre.VeluLocalIntegralModel
 public import FLT.FreyCurve.Serre.VeluMap
 public import FLT.FreyCurve.Serre.VeluOrdinary
 public import FLT.FreyCurve.Serre.VeluPointCofinite
+public import FLT.FreyCurve.Serre.VeluPrimeExactTarget
 public import FLT.FreyCurve.Serre.VeluPrimeGlobalKernelRank
 public import FLT.FreyCurve.Serre.VeluPrimeKernel
 public import FLT.FreyCurve.Serre.VeluPrimeKernelFiberComparison
@@ -3400,6 +3406,7 @@ public import FLT.Mazur.AffineValuationCoordinateSquare
 public import FLT.Mazur.AffineValuationGeneratorLift
 public import FLT.Mazur.AffineValuationIntegralLift
 public import FLT.Mazur.AlgClosedOpenCover
+public import FLT.Mazur.AlgClosedSectionHomExt
 public import FLT.Mazur.AlgebraEqualizerCoordinates
 public import FLT.Mazur.AlgebraicAcyclicOrbitTranslation
 public import FLT.Mazur.AlgebraicClosureEmbeddingConjugacy
@@ -5907,6 +5914,9 @@ public import FLT.Mazur.FullHilbertIntersectionSeparablePoints
 public import FLT.Mazur.FullTwoPrimeTorsionEquiv
 public import FLT.Mazur.FunctionSheafGradedBaseAlgebra
 public import FLT.Mazur.FunctionSheafGradedSections
+public import FLT.Mazur.GaloisTensorPrime
+public import FLT.Mazur.GaloisTensorReduced
+public import FLT.Mazur.GaloisTensorSchemeCover
 public import FLT.Mazur.GeneralizedComparisonBetweenRestriction
 public import FLT.Mazur.GeneralizedComparisonPullbackCoherence
 public import FLT.Mazur.GeneralizedComparisonPullbackNaturality
@@ -12827,6 +12837,7 @@ public import FLT.Mazur.WeierstrassClosedImmersionIso
 public import FLT.Mazur.WeierstrassCoefficientAddition
 public import FLT.Mazur.WeierstrassCoefficientAffineProduct
 public import FLT.Mazur.WeierstrassCoefficientChartPreimage
+public import FLT.Mazur.WeierstrassCoefficientFieldCover
 public import FLT.Mazur.WeierstrassCoefficientGeneralizedIso
 public import FLT.Mazur.WeierstrassCoefficientGroup
 public import FLT.Mazur.WeierstrassCoefficientMarking
