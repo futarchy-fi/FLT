@@ -457,6 +457,7 @@ public import FLT.FreyCurve.Serre.Unramified
 public import FLT.FreyCurve.Serre.UnramifiedCharacter
 public import FLT.FreyCurve.Serre.Velu
 public import FLT.FreyCurve.Serre.VeluAdditivity
+public import FLT.FreyCurve.Serre.VeluAffineSectionChart
 public import FLT.FreyCurve.Serre.VeluCoordinates
 public import FLT.FreyCurve.Serre.VeluDifferential
 public import FLT.FreyCurve.Serre.VeluDivisionIntegrality
@@ -474,14 +475,20 @@ public import FLT.FreyCurve.Serre.VeluIntegralModel
 public import FLT.FreyCurve.Serre.VeluIntegralSums
 public import FLT.FreyCurve.Serre.VeluKernelAffineChart
 public import FLT.FreyCurve.Serre.VeluKernelBaseChangeScheme
+public import FLT.FreyCurve.Serre.VeluKernelClosedDescent
 public import FLT.FreyCurve.Serre.VeluKernelDescentAlgebra
 public import FLT.FreyCurve.Serre.VeluKernelGaloisLabels
 public import FLT.FreyCurve.Serre.VeluKernelGeometricComparison
+public import FLT.FreyCurve.Serre.VeluKernelMorphismComparison
 public import FLT.FreyCurve.Serre.VeluKernelParametrization
 public import FLT.FreyCurve.Serre.VeluKernelRationalCoordinates
+public import FLT.FreyCurve.Serre.VeluKernelRationalDegree
 public import FLT.FreyCurve.Serre.VeluKernelRationalEvaluation
+public import FLT.FreyCurve.Serre.VeluKernelRationalGroup
 public import FLT.FreyCurve.Serre.VeluKernelRationalMap
+public import FLT.FreyCurve.Serre.VeluKernelRationalMultiplication
 public import FLT.FreyCurve.Serre.VeluKernelScalarExtension
+public import FLT.FreyCurve.Serre.VeluKernelSectionComparison
 public import FLT.FreyCurve.Serre.VeluLocalIntegralModel
 public import FLT.FreyCurve.Serre.VeluMap
 public import FLT.FreyCurve.Serre.VeluOrdinary
@@ -877,6 +884,7 @@ public import FLT.GroupScheme.DivisionResidueFibreComparison
 public import FLT.GroupScheme.DivisionResidueFiniteCharts
 public import FLT.GroupScheme.DivisionResidueLocalCI
 public import FLT.GroupScheme.DivisionResidueRegularPresentation
+public import FLT.GroupScheme.EquivariantHopfCocommutative
 public import FLT.GroupScheme.EquivariantScalarExtension
 public import FLT.GroupScheme.EtaleBaseChangeTower
 public import FLT.GroupScheme.EtaleClosedImmersion
@@ -889,6 +897,7 @@ public import FLT.GroupScheme.EtaleOrder
 public import FLT.GroupScheme.EtalePointCocommutativity
 public import FLT.GroupScheme.EtalePointHopf
 public import FLT.GroupScheme.EtaleSplitting
+public import FLT.GroupScheme.FaithfullyFlatMonoDescent
 public import FLT.GroupScheme.FaithfullyFlatPointDescent
 public import FLT.GroupScheme.FaithfullyFlatQuotient
 public import FLT.GroupScheme.FaithfullyFlatRetraction
@@ -2695,13 +2704,16 @@ public import FLT.Mazur.AffineBoundaryComponentEquations
 public import FLT.Mazur.AffineBoundaryComponentSpecialization
 public import FLT.Mazur.AffineBoundaryGenericLocalTests
 public import FLT.Mazur.AffineBoundaryNilpotenceOpen
+public import FLT.Mazur.AffineBoundaryPrincipalTestCharts
 public import FLT.Mazur.AffineBoundaryScalarFiberEquations
 public import FLT.Mazur.AffineBoundaryScalarLocalProduct
 public import FLT.Mazur.AffineBoundaryScalarNilpotence
 public import FLT.Mazur.AffineBoundaryTestFactorization
+public import FLT.Mazur.AffineBoundaryTestGeneratorPoles
 public import FLT.Mazur.AffineBoundaryTestIdeal
 public import FLT.Mazur.AffineBoundaryTestPowerEquations
 public import FLT.Mazur.AffineBoundaryTestThickenings
+public import FLT.Mazur.AffineBoundaryTestValuations
 public import FLT.Mazur.AffineBranchSequence
 public import FLT.Mazur.AffineCanonicalMapCompatibility
 public import FLT.Mazur.AffineCanonicalOverlapChart
@@ -5031,6 +5043,8 @@ public import FLT.Mazur.EquivalenceRelationFiniteTargetSaturation
 public import FLT.Mazur.EquivalenceRelationFrameNormalization
 public import FLT.Mazur.EquivalenceRelationFrameRebaseGeometric
 public import FLT.Mazur.EquivalenceRelationFrameRebaseLaws
+public import FLT.Mazur.EquivalenceRelationHigherScalarValuations
+public import FLT.Mazur.EquivalenceRelationHigherTestAtlas
 public import FLT.Mazur.EquivalenceRelationInvariantBoundaryAction
 public import FLT.Mazur.EquivalenceRelationInvariantRestriction
 public import FLT.Mazur.EquivalenceRelationJointAffineCover
@@ -6578,6 +6592,7 @@ public import FLT.Mazur.HilbertSourceFiniteLinearOpenLifts
 public import FLT.Mazur.HilbertSourceFiniteMultiplierTests
 public import FLT.Mazur.HilbertSourceFiniteOpenNumerators
 public import FLT.Mazur.HilbertSourceGeneratedLocalizedSurjectivity
+public import FLT.Mazur.HilbertSourceHigherScalarValuations
 public import FLT.Mazur.HilbertSourceLocalRankCeilingLifts
 public import FLT.Mazur.HilbertSourceLocalizedOpenLift
 public import FLT.Mazur.HilbertSourceMultiplierSupport
@@ -6595,6 +6610,7 @@ public import FLT.Mazur.HilbertSourceResidualRankObstructions
 public import FLT.Mazur.HilbertSourceScalarLocalDetection
 public import FLT.Mazur.HilbertSourceScalarNilpotenceLifts
 public import FLT.Mazur.HilbertSourceScalarResidualStages
+public import FLT.Mazur.HilbertSourceTestChartGenerators
 public import FLT.Mazur.HilbertSourceUniformRelationMultiplier
 public import FLT.Mazur.HilbertSourceUniformScalarDenominators
 public import FLT.Mazur.HilbertSourceValuativeBoundaryObstructions
