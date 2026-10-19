@@ -5262,6 +5262,7 @@ public import FLT.Mazur.EquivalenceRelationCompleteBoundaryCorrections
 public import FLT.Mazur.EquivalenceRelationCompleteCharacterLifts
 public import FLT.Mazur.EquivalenceRelationCompleteChartImage
 public import FLT.Mazur.EquivalenceRelationCompleteClosedLocus
+public import FLT.Mazur.EquivalenceRelationCompleteComponents
 public import FLT.Mazur.EquivalenceRelationCompleteEndpointOrbit
 public import FLT.Mazur.EquivalenceRelationCompleteEquivariantCoefficients
 public import FLT.Mazur.EquivalenceRelationCompleteExactRank
