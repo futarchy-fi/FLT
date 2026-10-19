@@ -2695,6 +2695,7 @@ public import FLT.Mazur.AffineBoundaryTestFactorization
 public import FLT.Mazur.AffineBoundaryTestIdeal
 public import FLT.Mazur.AffineBoundaryTestPowerEquations
 public import FLT.Mazur.AffineBoundaryTestThickenings
+public import FLT.Mazur.AffineBoundaryTestValuations
 public import FLT.Mazur.AffineBranchSequence
 public import FLT.Mazur.AffineCanonicalMapCompatibility
 public import FLT.Mazur.AffineCanonicalOverlapChart
