@@ -5325,6 +5325,7 @@ public import FLT.Mazur.EtaleTranslationBranchPullback
 public import FLT.Mazur.EtaleTranslationFiniteNeighborhood
 public import FLT.Mazur.EtaleWholeFiberProperNeighborhood
 public import FLT.Mazur.EvaluatedPrincipalRefinement
+public import FLT.Mazur.EvaluationKernelPullback
 public import FLT.Mazur.EventualTwistVanishing
 public import FLT.Mazur.ExactFunctorInjectiveExt
 public import FLT.Mazur.ExactOrderCyclicPowers
