@@ -487,6 +487,7 @@ public import FLT.FreyCurve.Serre.VeluGeometricKernelScheme
 public import FLT.FreyCurve.Serre.VeluGlobalClassicalComparison
 public import FLT.FreyCurve.Serre.VeluGlobalFinite
 public import FLT.FreyCurve.Serre.VeluGlobalGroupMorphism
+public import FLT.FreyCurve.Serre.VeluGlobalKernelIdentityOpen
 public import FLT.FreyCurve.Serre.VeluGlobalMorphism
 public import FLT.FreyCurve.Serre.VeluGlobalPointKernel
 public import FLT.FreyCurve.Serre.VeluGlobalPointValues
@@ -495,9 +496,12 @@ public import FLT.FreyCurve.Serre.VeluGlobalRestrictions
 public import FLT.FreyCurve.Serre.VeluHom
 public import FLT.FreyCurve.Serre.VeluIdentity
 public import FLT.FreyCurve.Serre.VeluInfinity
+public import FLT.FreyCurve.Serre.VeluInfinityEvaluationIdeal
 public import FLT.FreyCurve.Serre.VeluInfinityGenericMorphism
 public import FLT.FreyCurve.Serre.VeluInfinityGenericRestriction
 public import FLT.FreyCurve.Serre.VeluInfinityKernelOpen
+public import FLT.FreyCurve.Serre.VeluInfinityLinearFactor
+public import FLT.FreyCurve.Serre.VeluInfinityNeighborhoodIdeal
 public import FLT.FreyCurve.Serre.VeluInfinityParameter
 public import FLT.FreyCurve.Serre.VeluInfinityParameterGeneric
 public import FLT.FreyCurve.Serre.VeluInfinityPoleReciprocal
@@ -507,6 +511,10 @@ public import FLT.FreyCurve.Serre.VeluInfinityScaledCoordinates
 public import FLT.FreyCurve.Serre.VeluInfinityScaledEquation
 public import FLT.FreyCurve.Serre.VeluInfinityScaledGeneric
 public import FLT.FreyCurve.Serre.VeluInfinityScaledY
+public import FLT.FreyCurve.Serre.VeluInfinitySimpleFiber
+public import FLT.FreyCurve.Serre.VeluInfinitySimpleFiberIdeal
+public import FLT.FreyCurve.Serre.VeluInfinitySimpleNeighborhood
+public import FLT.FreyCurve.Serre.VeluInfinitySimpleRing
 public import FLT.FreyCurve.Serre.VeluInfinityTargetGeneric
 public import FLT.FreyCurve.Serre.VeluInfinityTargetOpen
 public import FLT.FreyCurve.Serre.VeluIntegralModel
@@ -5335,6 +5343,7 @@ public import FLT.Mazur.EtaleTranslationBranchPullback
 public import FLT.Mazur.EtaleTranslationFiniteNeighborhood
 public import FLT.Mazur.EtaleWholeFiberProperNeighborhood
 public import FLT.Mazur.EvaluatedPrincipalRefinement
+public import FLT.Mazur.EvaluationKernelPullback
 public import FLT.Mazur.EventualTwistVanishing
 public import FLT.Mazur.ExactFunctorInjectiveExt
 public import FLT.Mazur.ExactOrderCyclicPowers
@@ -7323,6 +7332,7 @@ public import FLT.Mazur.LocalizationDegreeFace
 public import FLT.Mazur.LocalizationDegreeMonomial
 public import FLT.Mazur.LocalizationDegreePiece
 public import FLT.Mazur.LocalizationDegreeShift
+public import FLT.Mazur.LocalizationEvaluationKernel
 public import FLT.Mazur.LocalizationJointRestriction
 public import FLT.Mazur.LocalizationRelationClosure
 public import FLT.Mazur.LocalizedAdicCompletion
@@ -8096,6 +8106,7 @@ public import FLT.Mazur.OpenCoverDimension
 public import FLT.Mazur.OpenDirectImageCohomology
 public import FLT.Mazur.OpenDirectImageNaturality
 public import FLT.Mazur.OpenDirectImageRestriction
+public import FLT.Mazur.OpenFiberSection
 public import FLT.Mazur.OpenFiberSectionRegularity
 public import FLT.Mazur.OpenFrameSectionCoordinates
 public import FLT.Mazur.OpenIdealExtensionBaseChange
@@ -11932,6 +11943,7 @@ public import FLT.Mazur.SchemeWholeFiberOpenBaseChange
 public import FLT.Mazur.SchemeWholeFiberOpenComposition
 public import FLT.Mazur.SealedLineRestriction
 public import FLT.Mazur.SealedLineRestrictionSections
+public import FLT.Mazur.SealedPrincipalLocalization
 public import FLT.Mazur.SectionBaseLocalization
 public import FLT.Mazur.SectionCartesianKernel
 public import FLT.Mazur.SectionCartierBaseOpen
