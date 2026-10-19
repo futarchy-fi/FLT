@@ -10911,6 +10911,7 @@ public import FLT.Mazur.RelativePoleComplementFunctions
 public import FLT.Mazur.RelativePoleComplementLinear
 public import FLT.Mazur.RelativeRankOneDivisorUniqueness
 public import FLT.Mazur.RelativeRankPullbackThickenings
+public import FLT.Mazur.RelativeRankResidualSectionDetection
 public import FLT.Mazur.RelativeRankStageFaithfulDetection
 public import FLT.Mazur.RelativeRankStageRecovery
 public import FLT.Mazur.RelativeRankStageSectionDetection
