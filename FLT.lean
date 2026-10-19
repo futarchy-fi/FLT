@@ -4202,6 +4202,7 @@ public import FLT.Mazur.CyclicCharacteristicProductParameterGroupoid
 public import FLT.Mazur.CyclicCharacteristicProductRefinementAlgebra
 public import FLT.Mazur.CyclicCharacteristicProductRefinementTransport
 public import FLT.Mazur.CyclicCharacteristicProductSchemeClassification
+public import FLT.Mazur.CyclicCharacteristicProductSchemeLaws
 public import FLT.Mazur.CyclicCharacteristicProductSpectrumTests
 public import FLT.Mazur.CyclicCharacteristicProductSubgroupAffineCurve
 public import FLT.Mazur.CyclicCharacteristicProductSubgroupCharts
