@@ -479,6 +479,7 @@ public import FLT.FreyCurve.Serre.VeluCoordinates
 public import FLT.FreyCurve.Serre.VeluDescendedDegree
 public import FLT.FreyCurve.Serre.VeluDescendedGroupMorphism
 public import FLT.FreyCurve.Serre.VeluDescendedMorphism
+public import FLT.FreyCurve.Serre.VeluDescendedPointValues
 public import FLT.FreyCurve.Serre.VeluDifferential
 public import FLT.FreyCurve.Serre.VeluDivisionIntegrality
 public import FLT.FreyCurve.Serre.VeluElliptic
