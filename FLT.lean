@@ -484,6 +484,13 @@ public import FLT.FreyCurve.Serre.VeluTranslation
 public import FLT.FreyCurve.TorsionQuotientWitness
 public import FLT.FreyCurve.VeluIntegralAway
 public import FLT.FreyCurve.VeluLocalIntegralTarget
+public import FLT.FreyCurve.VeluPadicIntegralAway
+public import FLT.FreyCurve.VeluPadicMinimalModel
+public import FLT.FreyCurve.VeluPadicPrimeComponents
+public import FLT.FreyCurve.VeluPadicSmallComponents
+public import FLT.FreyCurve.VeluPadicTwoComponents
+public import FLT.FreyCurve.VeluPadicTwoMinimal
+public import FLT.FreyCurve.VeluPadicTwoValuation
 public import FLT.FreyCurve.VeluTargetGeometry
 public import FLT.FreyCurve.VeluTargetTwoTorsion
 public import FLT.FreyCurve.VeluTargetWitness
@@ -4437,6 +4444,7 @@ public import FLT.Mazur.EllipticCuspAddition
 public import FLT.Mazur.EllipticCuspParametrization
 public import FLT.Mazur.EllipticCuspTangent
 public import FLT.Mazur.EllipticCuspidalGroup
+public import FLT.Mazur.EllipticCyclicComponentTransport
 public import FLT.Mazur.EllipticDilatationPointSection
 public import FLT.Mazur.EllipticDoubleRootCoordinates
 public import FLT.Mazur.EllipticDoubleRootEvenBound
@@ -6541,6 +6549,7 @@ public import FLT.Mazur.HilbertSourceOpenRelationLifts
 public import FLT.Mazur.HilbertSourceOriginalDomainComponents
 public import FLT.Mazur.HilbertSourceOriginalEquationNeighborhoods
 public import FLT.Mazur.HilbertSourceRankCutoffLifts
+public import FLT.Mazur.HilbertSourceRelationPowerClearing
 public import FLT.Mazur.HilbertSourceRelationRankStages
 public import FLT.Mazur.HilbertSourceResidualRankCompatibility
 public import FLT.Mazur.HilbertSourceResidualRankCorrections
@@ -6549,6 +6558,7 @@ public import FLT.Mazur.HilbertSourceResidualRankObstructions
 public import FLT.Mazur.HilbertSourceScalarLocalDetection
 public import FLT.Mazur.HilbertSourceScalarNilpotenceLifts
 public import FLT.Mazur.HilbertSourceScalarResidualStages
+public import FLT.Mazur.HilbertSourceUniformRelationMultiplier
 public import FLT.Mazur.HilbertSourceValuativeBoundaryObstructions
 public import FLT.Mazur.HilbertStableFrameBoundary
 public import FLT.Mazur.HilbertSubframeAffineOverlap
@@ -10694,6 +10704,9 @@ public import FLT.Mazur.RationalCyclicGeneratorChange
 public import FLT.Mazur.RationalCyclicModuliPoint
 public import FLT.Mazur.RationalCyclicSubgroup
 public import FLT.Mazur.RationalFibers
+public import FLT.Mazur.RationalPadicIntegerSubring
+public import FLT.Mazur.RationalPadicIntegralDepth
+public import FLT.Mazur.RationalPadicMinimalTransport
 public import FLT.Mazur.RationalPointConditionRank
 public import FLT.Mazur.RationalPointDivisorStalk
 public import FLT.Mazur.RationalPointProductStalk
@@ -11487,6 +11500,7 @@ public import FLT.Mazur.SchemeMonoIdealPullback
 public import FLT.Mazur.SchemeMonoidUnitEvaluation
 public import FLT.Mazur.SchemeNaturalUnitLocus
 public import FLT.Mazur.SchemeNilpotentSectionDetection
+public import FLT.Mazur.SchemeNoetherianUniformKernelPower
 public import FLT.Mazur.SchemeNormIndependentGroundTests
 public import FLT.Mazur.SchemeNormalizedRecoveryOverlap
 public import FLT.Mazur.SchemeOpenChartRange
@@ -11553,6 +11567,7 @@ public import FLT.Mazur.SchemePullbackSquareComposition
 public import FLT.Mazur.SchemePullbackSquareIdentity
 public import FLT.Mazur.SchemePullbackSquareInversePasting
 public import FLT.Mazur.SchemePullbackSquarePasting
+public import FLT.Mazur.SchemeQuasiCompactOpenKernelPower
 public import FLT.Mazur.SchemeQuotientAffineBaseCoordinates
 public import FLT.Mazur.SchemeQuotientAffineFlatComparison
 public import FLT.Mazur.SchemeQuotientAffineFlatDescent
