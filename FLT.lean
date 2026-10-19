@@ -468,6 +468,7 @@ public import FLT.FreyCurve.Serre.VeluExactKernel
 public import FLT.FreyCurve.Serre.VeluFunctionField
 public import FLT.FreyCurve.Serre.VeluGenericAdditivity
 public import FLT.FreyCurve.Serre.VeluGenericChartMorphism
+public import FLT.FreyCurve.Serre.VeluGenericFieldChartComparison
 public import FLT.FreyCurve.Serre.VeluGenericFunctionFieldHom
 public import FLT.FreyCurve.Serre.VeluGenericQuadraticRelation
 public import FLT.FreyCurve.Serre.VeluGenericXField
@@ -504,7 +505,15 @@ public import FLT.FreyCurve.Serre.VeluPointCofinite
 public import FLT.FreyCurve.Serre.VeluPrimeKernel
 public import FLT.FreyCurve.Serre.VeluQuotient
 public import FLT.FreyCurve.Serre.VeluRational
+public import FLT.FreyCurve.Serre.VeluSchemeFunctionFieldHom
+public import FLT.FreyCurve.Serre.VeluSchemeRationalMap
 public import FLT.FreyCurve.Serre.VeluSmallRamification
+public import FLT.FreyCurve.Serre.VeluSourceChart
+public import FLT.FreyCurve.Serre.VeluSourceChartFractions
+public import FLT.FreyCurve.Serre.VeluSourceChartInjective
+public import FLT.FreyCurve.Serre.VeluSourceFractionField
+public import FLT.FreyCurve.Serre.VeluSourceGenericPoint
+public import FLT.FreyCurve.Serre.VeluSourceSchemeFunctionField
 public import FLT.FreyCurve.Serre.VeluSpecialization
 public import FLT.FreyCurve.Serre.VeluTranslation
 public import FLT.FreyCurve.TorsionQuotientWitness
