@@ -11870,6 +11870,7 @@ public import FLT.Mazur.SchemeLineCanonicalFunctor
 public import FLT.Mazur.SchemeLineDescentCategory
 public import FLT.Mazur.SchemeLineDescentRefinement
 public import FLT.Mazur.SchemeMinimalPrimeFinitePullback
+public import FLT.Mazur.SchemeMinimalPrimeFiniteTargetOpen
 public import FLT.Mazur.SchemeModulePullbackOpenUnits
 public import FLT.Mazur.SchemeModulePullbackUnitSections
 public import FLT.Mazur.SchemeModulePullbackUnits
