@@ -4018,6 +4018,7 @@ public import FLT.Mazur.CyclicCharacteristicAffineOriginalSubgroupOverlap
 public import FLT.Mazur.CyclicCharacteristicAffineSubgroup
 public import FLT.Mazur.CyclicCharacteristicAffineSubgroupClassification
 public import FLT.Mazur.CyclicCharacteristicAffineSubgroupFactorization
+public import FLT.Mazur.CyclicCharacteristicAffineSubgroupOverlap
 public import FLT.Mazur.CyclicCharacteristicAffineSubgroupRefinement
 public import FLT.Mazur.CyclicCharacteristicAffineSubgroupScheme
 public import FLT.Mazur.CyclicCharacteristicAffineSubgroupUniversalCurve
