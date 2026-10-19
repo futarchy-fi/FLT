@@ -2702,6 +2702,7 @@ public import FLT.Mazur.AffineBoundaryScalarNilpotence
 public import FLT.Mazur.AffineBoundaryTestFactorization
 public import FLT.Mazur.AffineBoundaryTestGeneratorPoles
 public import FLT.Mazur.AffineBoundaryTestIdeal
+public import FLT.Mazur.AffineBoundaryTestKernels
 public import FLT.Mazur.AffineBoundaryTestPowerEquations
 public import FLT.Mazur.AffineBoundaryTestThickenings
 public import FLT.Mazur.AffineBoundaryTestValuations
