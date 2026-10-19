@@ -465,6 +465,7 @@ public import FLT.FreyCurve.Serre.VeluQuotient
 public import FLT.FreyCurve.Serre.VeluRational
 public import FLT.FreyCurve.Serre.VeluSpecialization
 public import FLT.FreyCurve.Serre.VeluTranslation
+public import FLT.FreyCurve.TorsionQuotientWitness
 public import FLT.GaloisRepresentation.Attachment
 public import FLT.GaloisRepresentation.Automorphic
 public import FLT.GaloisRepresentation.Cyclotomic
