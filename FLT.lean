@@ -6744,6 +6744,7 @@ public import FLT.Mazur.HilbertMonomialPrincipalSpecCover
 public import FLT.Mazur.HilbertMonomialReindexedAmbient
 public import FLT.Mazur.HilbertMultiplicationCoordinateRecovery
 public import FLT.Mazur.HilbertNestedNormSupport
+public import FLT.Mazur.HilbertNonaffineScalarFiniteCover
 public import FLT.Mazur.HilbertNormOrbitFiber
 public import FLT.Mazur.HilbertNormalizedAffineNeighborhood
 public import FLT.Mazur.HilbertNormalizedAffineRefinement
