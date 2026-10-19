@@ -4124,6 +4124,7 @@ public import FLT.Mazur.CyclicCharacteristicProductOpenCoordinates
 public import FLT.Mazur.CyclicCharacteristicProductSubgroupDiagram
 public import FLT.Mazur.CyclicCharacteristicProductSubgroupGluing
 public import FLT.Mazur.CyclicCharacteristicProductSubgroupInclusion
+public import FLT.Mazur.CyclicCharacteristicProductUniversalCharts
 public import FLT.Mazur.CyclicCharacteristicQuotient
 public import FLT.Mazur.CyclicCharacteristicQuotientCover
 public import FLT.Mazur.CyclicCharacteristicQuotientCoverage
@@ -5715,11 +5716,16 @@ public import FLT.Mazur.GeneralizedCurveCartierDescent
 public import FLT.Mazur.GeneralizedCurveCartierGenerator
 public import FLT.Mazur.GeneralizedCurveCartierStalks
 public import FLT.Mazur.GeneralizedCurveCategory
+public import FLT.Mazur.GeneralizedCurveCoverMorphism
+public import FLT.Mazur.GeneralizedCurveCoverRefinement
 public import FLT.Mazur.GeneralizedCurveCyclicMarkingBaseChange
 public import FLT.Mazur.GeneralizedCurveCyclicMarkingTransport
 public import FLT.Mazur.GeneralizedCurveCyclicSubgroup
 public import FLT.Mazur.GeneralizedCurveDirectLocalCubic
 public import FLT.Mazur.GeneralizedCurveDirectLocalFamily
+public import FLT.Mazur.GeneralizedCurveDirectedGluing
+public import FLT.Mazur.GeneralizedCurveDirectedIsoGluing
+public import FLT.Mazur.GeneralizedCurveDirectedNaturality
 public import FLT.Mazur.GeneralizedCurveDivisorPullback
 public import FLT.Mazur.GeneralizedCurveEquivariantIso
 public import FLT.Mazur.GeneralizedCurveFiberAmple
@@ -5738,6 +5744,7 @@ public import FLT.Mazur.GeneralizedCurveLocalCubicPresentation
 public import FLT.Mazur.GeneralizedCurveLocalCyclicCubic
 public import FLT.Mazur.GeneralizedCurveLocalCyclicCubicUnrestricted
 public import FLT.Mazur.GeneralizedCurveLocalPointFrames
+public import FLT.Mazur.GeneralizedCurveNaturalIsoGluing
 public import FLT.Mazur.GeneralizedCurvePicardClasses
 public import FLT.Mazur.GeneralizedCurvePicardPresheaf
 public import FLT.Mazur.GeneralizedCurvePointedCubicFamily
@@ -6537,6 +6544,7 @@ public import FLT.Mazur.HilbertSourceOpenRelationLifts
 public import FLT.Mazur.HilbertSourceOriginalDomainComponents
 public import FLT.Mazur.HilbertSourceOriginalEquationNeighborhoods
 public import FLT.Mazur.HilbertSourceRankCutoffLifts
+public import FLT.Mazur.HilbertSourceRelationPowerClearing
 public import FLT.Mazur.HilbertSourceRelationRankStages
 public import FLT.Mazur.HilbertSourceResidualRankCompatibility
 public import FLT.Mazur.HilbertSourceResidualRankCorrections
@@ -6545,6 +6553,7 @@ public import FLT.Mazur.HilbertSourceResidualRankObstructions
 public import FLT.Mazur.HilbertSourceScalarLocalDetection
 public import FLT.Mazur.HilbertSourceScalarNilpotenceLifts
 public import FLT.Mazur.HilbertSourceScalarResidualStages
+public import FLT.Mazur.HilbertSourceUniformRelationMultiplier
 public import FLT.Mazur.HilbertSourceValuativeBoundaryObstructions
 public import FLT.Mazur.HilbertStableFrameBoundary
 public import FLT.Mazur.HilbertSubframeAffineOverlap
@@ -8091,6 +8100,8 @@ public import FLT.Mazur.OriginalTwistOrbitRelation
 public import FLT.Mazur.OriginalTwistSectionCoherence
 public import FLT.Mazur.OverCoproductModuleSections
 public import FLT.Mazur.OverCoproductSchemeDescent
+public import FLT.Mazur.OverCoverMonoidReflection
+public import FLT.Mazur.OverDirectedCoverGluing
 public import FLT.Mazur.OverOpenCoverExt
 public import FLT.Mazur.OverOpenCoverImage
 public import FLT.Mazur.OverOpenImageUnion
@@ -11484,6 +11495,7 @@ public import FLT.Mazur.SchemeMonoIdealPullback
 public import FLT.Mazur.SchemeMonoidUnitEvaluation
 public import FLT.Mazur.SchemeNaturalUnitLocus
 public import FLT.Mazur.SchemeNilpotentSectionDetection
+public import FLT.Mazur.SchemeNoetherianUniformKernelPower
 public import FLT.Mazur.SchemeNormIndependentGroundTests
 public import FLT.Mazur.SchemeNormalizedRecoveryOverlap
 public import FLT.Mazur.SchemeOpenChartRange
@@ -11550,6 +11562,7 @@ public import FLT.Mazur.SchemePullbackSquareComposition
 public import FLT.Mazur.SchemePullbackSquareIdentity
 public import FLT.Mazur.SchemePullbackSquareInversePasting
 public import FLT.Mazur.SchemePullbackSquarePasting
+public import FLT.Mazur.SchemeQuasiCompactOpenKernelPower
 public import FLT.Mazur.SchemeQuotientAffineBaseCoordinates
 public import FLT.Mazur.SchemeQuotientAffineFlatComparison
 public import FLT.Mazur.SchemeQuotientAffineFlatDescent
