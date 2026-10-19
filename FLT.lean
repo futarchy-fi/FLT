@@ -500,6 +500,7 @@ public import FLT.FreyCurve.Serre.VeluGlobalPointKernel
 public import FLT.FreyCurve.Serre.VeluGlobalPointValues
 public import FLT.FreyCurve.Serre.VeluGlobalProperSurjective
 public import FLT.FreyCurve.Serre.VeluGlobalRestrictions
+public import FLT.FreyCurve.Serre.VeluGlobalTargetTransport
 public import FLT.FreyCurve.Serre.VeluHom
 public import FLT.FreyCurve.Serre.VeluIdentity
 public import FLT.FreyCurve.Serre.VeluInfinity
