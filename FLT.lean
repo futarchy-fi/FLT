@@ -4463,6 +4463,7 @@ public import FLT.Mazur.CyclicCharacteristicSmoothUnmarkedClass
 public import FLT.Mazur.CyclicCharacteristicSmoothUnmarkedMorphism
 public import FLT.Mazur.CyclicCharacteristicTransitionCover
 public import FLT.Mazur.CyclicCharacteristicTransitionSpan
+public import FLT.Mazur.CyclicCharacteristicUniformResidualDiscrepancy
 public import FLT.Mazur.CyclicCharacteristicUnmarkedDescent
 public import FLT.Mazur.CyclicCharacteristicUnmarkedLocalRelation
 public import FLT.Mazur.CyclicCharacteristicUnmarkedQuotientPresheaf
