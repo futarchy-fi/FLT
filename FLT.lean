@@ -13689,6 +13689,7 @@ public import FLT.Mazur.WeierstrassDilatationLifting
 public import FLT.Mazur.WeierstrassDilatationLocalization
 public import FLT.Mazur.WeierstrassDilatationMorphism
 public import FLT.Mazur.WeierstrassDilatationNegation
+public import FLT.Mazur.WeierstrassDilatationNegationBoundary
 public import FLT.Mazur.WeierstrassDilatationNegationContraction
 public import FLT.Mazur.WeierstrassDilatationNegationDepth
 public import FLT.Mazur.WeierstrassDilatationNormalizationTransport
