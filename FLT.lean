@@ -486,6 +486,7 @@ public import FLT.FreyCurve.Serre.VeluGenericQuadraticRelation
 public import FLT.FreyCurve.Serre.VeluGenericXField
 public import FLT.FreyCurve.Serre.VeluGeometricKernelScheme
 public import FLT.FreyCurve.Serre.VeluGlobalClassicalComparison
+public import FLT.FreyCurve.Serre.VeluGlobalDegree
 public import FLT.FreyCurve.Serre.VeluGlobalFinite
 public import FLT.FreyCurve.Serre.VeluGlobalGroupMorphism
 public import FLT.FreyCurve.Serre.VeluGlobalKernelCardinality
