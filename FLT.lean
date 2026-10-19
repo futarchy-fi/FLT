@@ -4148,12 +4148,18 @@ public import FLT.Mazur.CyclicCharacteristicProductComparisonDiagram
 public import FLT.Mazur.CyclicCharacteristicProductComparisonGluing
 public import FLT.Mazur.CyclicCharacteristicProductDiagramTopology
 public import FLT.Mazur.CyclicCharacteristicProductOpenCoordinates
+public import FLT.Mazur.CyclicCharacteristicProductOriginalSubgroupLocus
 public import FLT.Mazur.CyclicCharacteristicProductRefinementAlgebra
 public import FLT.Mazur.CyclicCharacteristicProductRefinementTransport
+public import FLT.Mazur.CyclicCharacteristicProductSubgroupCharts
 public import FLT.Mazur.CyclicCharacteristicProductSubgroupDiagram
 public import FLT.Mazur.CyclicCharacteristicProductSubgroupGluing
+public import FLT.Mazur.CyclicCharacteristicProductSubgroupIdentification
 public import FLT.Mazur.CyclicCharacteristicProductSubgroupInclusion
 public import FLT.Mazur.CyclicCharacteristicProductUniversalCharts
+public import FLT.Mazur.CyclicCharacteristicProductUniversalComparison
+public import FLT.Mazur.CyclicCharacteristicProductUniversalRefinement
+public import FLT.Mazur.CyclicCharacteristicProductUniversalSubgroup
 public import FLT.Mazur.CyclicCharacteristicQuotient
 public import FLT.Mazur.CyclicCharacteristicQuotientCover
 public import FLT.Mazur.CyclicCharacteristicQuotientCoverage
@@ -8141,6 +8147,7 @@ public import FLT.Mazur.OverCoproductModuleSections
 public import FLT.Mazur.OverCoproductSchemeDescent
 public import FLT.Mazur.OverCoverMonoidReflection
 public import FLT.Mazur.OverDirectedCoverGluing
+public import FLT.Mazur.OverDirectedMonoGluing
 public import FLT.Mazur.OverOpenCoverExt
 public import FLT.Mazur.OverOpenCoverImage
 public import FLT.Mazur.OverOpenImageUnion
