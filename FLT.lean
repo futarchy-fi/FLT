@@ -7445,6 +7445,7 @@ public import FLT.Mazur.LocallyFreeProjectiveQuotient
 public import FLT.Mazur.LocallyNoetherianUniversalStructureSheaf
 public import FLT.Mazur.LocallyRingedIdealGenerators
 public import FLT.Mazur.LocallyRingedOpenImage
+public import FLT.Mazur.LocallyRingedOpenInclusion
 public import FLT.Mazur.LocallyRingedSchemeChartUnion
 public import FLT.Mazur.LocallyRingedSectionPointIdeal
 public import FLT.Mazur.LocallySmoothFiniteFlatCartier
