@@ -6586,6 +6586,7 @@ public import FLT.Mazur.HilbertSourceResidualRankCompatibility
 public import FLT.Mazur.HilbertSourceResidualRankCorrections
 public import FLT.Mazur.HilbertSourceResidualRankLifts
 public import FLT.Mazur.HilbertSourceResidualRankObstructions
+public import FLT.Mazur.HilbertSourceResidualTestDescent
 public import FLT.Mazur.HilbertSourceScalarLocalDetection
 public import FLT.Mazur.HilbertSourceScalarNilpotenceLifts
 public import FLT.Mazur.HilbertSourceScalarResidualStages
