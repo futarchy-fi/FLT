@@ -14183,6 +14183,7 @@ public import FLT.Mazur.WeierstrassDividedFourthZeroRestriction
 public import FLT.Mazur.WeierstrassDividedFullInfinityFactorRatioMap
 public import FLT.Mazur.WeierstrassDividedFullInfinityFactorRatioNaturality
 public import FLT.Mazur.WeierstrassDividedFullResidueAtlas
+public import FLT.Mazur.WeierstrassDividedGenericCurve
 public import FLT.Mazur.WeierstrassDividedGlobalActionAssociativity
 public import FLT.Mazur.WeierstrassDividedGlobalActionConstruction
 public import FLT.Mazur.WeierstrassDividedGlobalActionIdentity
