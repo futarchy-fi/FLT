@@ -10680,6 +10680,7 @@ public import FLT.Mazur.RationalCyclicGeneratorChange
 public import FLT.Mazur.RationalCyclicModuliPoint
 public import FLT.Mazur.RationalCyclicSubgroup
 public import FLT.Mazur.RationalFibers
+public import FLT.Mazur.RationalPadicIntegerSubring
 public import FLT.Mazur.RationalPointConditionRank
 public import FLT.Mazur.RationalPointDivisorStalk
 public import FLT.Mazur.RationalPointProductStalk
