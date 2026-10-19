@@ -4243,6 +4243,7 @@ public import FLT.Mazur.CyclicCharacteristicAffineResidualFibers
 public import FLT.Mazur.CyclicCharacteristicAffineResidualSections
 public import FLT.Mazur.CyclicCharacteristicAffineResidualTests
 public import FLT.Mazur.CyclicCharacteristicAffineResidualTopology
+public import FLT.Mazur.CyclicCharacteristicAffineSourceCover
 public import FLT.Mazur.CyclicCharacteristicAffineSubgroup
 public import FLT.Mazur.CyclicCharacteristicAffineSubgroupBaseSquare
 public import FLT.Mazur.CyclicCharacteristicAffineSubgroupClassification
