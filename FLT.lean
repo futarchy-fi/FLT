@@ -613,6 +613,7 @@ public import FLT.FreyCurve.VeluPadicTwoValuation
 public import FLT.FreyCurve.VeluSourceKernelModels
 public import FLT.FreyCurve.VeluTargetGeometry
 public import FLT.FreyCurve.VeluTargetGroupMorphism
+public import FLT.FreyCurve.VeluTargetLocalGenericMorphism
 public import FLT.FreyCurve.VeluTargetSchemeMorphism
 public import FLT.FreyCurve.VeluTargetTwoTorsion
 public import FLT.FreyCurve.VeluTargetWitness
