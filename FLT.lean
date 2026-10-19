@@ -850,6 +850,7 @@ public import FLT.GroupScheme.ConstantMuThreeTorsion
 public import FLT.GroupScheme.ConstantPowerCharacters
 public import FLT.GroupScheme.ConstantPowerCoherence
 public import FLT.GroupScheme.ConstantPowerResidues
+public import FLT.GroupScheme.ConstantProductSections
 public import FLT.GroupScheme.ConstantRationalCartierPeriod
 public import FLT.GroupScheme.ConstantRationalHodgeTateDlog
 public import FLT.GroupScheme.ConstantRationalPowerLevels
