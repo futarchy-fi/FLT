@@ -6993,7 +6993,6 @@ public import FLT.Mazur.IntegralCurveCartierFinite
 public import FLT.Mazur.IntegralDimension
 public import FLT.Mazur.IntegralImageIdealStalk
 public import FLT.Mazur.IntegralPointExtension
-public import FLT.Mazur.IntegralPolynomialRootRegularity
 public import FLT.Mazur.IntegralShortHomologyNaturality
 public import FLT.Mazur.IntegralWeierstrassAuxiliaryLevel
 public import FLT.Mazur.IntegralWeierstrassCharacteristicCover
