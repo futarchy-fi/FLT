@@ -7042,6 +7042,7 @@ public import FLT.Mazur.InvariantBoundaryPullback
 public import FLT.Mazur.InvariantFiniteRelationPrincipal
 public import FLT.Mazur.InvariantFlatTensorAction
 public import FLT.Mazur.InvariantFlatTensorComparison
+public import FLT.Mazur.InvariantGeometricFiberTests
 public import FLT.Mazur.InvariantIdealRelation
 public import FLT.Mazur.InvariantLocalizationAction
 public import FLT.Mazur.InvariantLocalizationComparison
