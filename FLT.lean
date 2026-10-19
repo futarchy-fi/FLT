@@ -6716,6 +6716,7 @@ public import FLT.Mazur.HilbertSourceGeometricFiberTests
 public import FLT.Mazur.HilbertSourceGeometricFrameExtensions
 public import FLT.Mazur.HilbertSourceHigherScalarValuations
 public import FLT.Mazur.HilbertSourceIntegralFlatTests
+public import FLT.Mazur.HilbertSourceInvariantCharacterOrbits
 public import FLT.Mazur.HilbertSourceLocalRankCeilingLifts
 public import FLT.Mazur.HilbertSourceLocalizedOpenLift
 public import FLT.Mazur.HilbertSourceMultiplierSupport
