@@ -13913,6 +13913,7 @@ public import FLT.Mazur.WeierstrassDividedOneFiniteState
 public import FLT.Mazur.WeierstrassDividedOneFiniteTransitions
 public import FLT.Mazur.WeierstrassDividedOneInfinityNodeNormalization
 public import FLT.Mazur.WeierstrassDividedOneInfinityNormalizedBase
+public import FLT.Mazur.WeierstrassDividedOneInfinityNormalizedChartRestriction
 public import FLT.Mazur.WeierstrassDividedOneInfinityNormalizedCover
 public import FLT.Mazur.WeierstrassDividedOneInfinityNormalizedFullUnion
 public import FLT.Mazur.WeierstrassDividedOneInfinityNormalizedIntersection
