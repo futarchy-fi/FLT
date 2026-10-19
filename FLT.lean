@@ -4298,6 +4298,7 @@ public import FLT.Mazur.CyclicCharacteristicParameterPresheaf
 public import FLT.Mazur.CyclicCharacteristicParameterSource
 public import FLT.Mazur.CyclicCharacteristicPrescribedCover
 public import FLT.Mazur.CyclicCharacteristicPrescribedNeighborhood
+public import FLT.Mazur.CyclicCharacteristicPrincipalCartesian
 public import FLT.Mazur.CyclicCharacteristicPrincipalComparison
 public import FLT.Mazur.CyclicCharacteristicPrincipalRestriction
 public import FLT.Mazur.CyclicCharacteristicPrincipalTorsion
