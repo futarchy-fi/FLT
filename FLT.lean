@@ -468,6 +468,7 @@ public import FLT.FreyCurve.Serre.VeluIdentity
 public import FLT.FreyCurve.Serre.VeluInfinity
 public import FLT.FreyCurve.Serre.VeluIntegralModel
 public import FLT.FreyCurve.Serre.VeluIntegralSums
+public import FLT.FreyCurve.Serre.VeluLocalIntegralModel
 public import FLT.FreyCurve.Serre.VeluMap
 public import FLT.FreyCurve.Serre.VeluOrdinary
 public import FLT.FreyCurve.Serre.VeluPointCofinite
