@@ -4000,11 +4000,17 @@ public import FLT.Mazur.CyclicBoundaryOriginalMarkings
 public import FLT.Mazur.CyclicBoundaryParameterAction
 public import FLT.Mazur.CyclicBoundaryParameterSections
 public import FLT.Mazur.CyclicBoundarySectionMarking
+public import FLT.Mazur.CyclicCharacteristicAffineCoefficientCoherence
+public import FLT.Mazur.CyclicCharacteristicAffineComparisonCocycle
+public import FLT.Mazur.CyclicCharacteristicAffineComparisonOverlap
+public import FLT.Mazur.CyclicCharacteristicAffineComparisonPullback
 public import FLT.Mazur.CyclicCharacteristicAffineComparisonScheme
 public import FLT.Mazur.CyclicCharacteristicAffineEquation
+public import FLT.Mazur.CyclicCharacteristicAffineEquationCoherence
 public import FLT.Mazur.CyclicCharacteristicAffineEquationPullback
 public import FLT.Mazur.CyclicCharacteristicAffineSubgroup
 public import FLT.Mazur.CyclicCharacteristicAffineSubgroupScheme
+public import FLT.Mazur.CyclicCharacteristicAffineSubgroupUniversalCurve
 public import FLT.Mazur.CyclicCharacteristicAffineUniversalComparison
 public import FLT.Mazur.CyclicCharacteristicAtlas
 public import FLT.Mazur.CyclicCharacteristicAtlasCoverage
@@ -5671,6 +5677,7 @@ public import FLT.Mazur.GeneralizedCurveUnrestrictedCubicPresentation
 public import FLT.Mazur.GeneralizedCurveUnrestrictedLocalFamily
 public import FLT.Mazur.GeneralizedCurveUnrestrictedPointFrames
 public import FLT.Mazur.GeneralizedEllipticCurve
+public import FLT.Mazur.GeneralizedPresentationRefinement
 public import FLT.Mazur.GeneratedRelationReductionKernel
 public import FLT.Mazur.GeneratorDenominatorLocalization
 public import FLT.Mazur.GenericConnectedFiberOpen
@@ -12447,6 +12454,7 @@ public import FLT.Mazur.WeierstrassCoefficientModelComposition
 public import FLT.Mazur.WeierstrassCoefficientModelProjection
 public import FLT.Mazur.WeierstrassCoefficientMonoidalComparison
 public import FLT.Mazur.WeierstrassCoefficientNegation
+public import FLT.Mazur.WeierstrassCoefficientPresentationRefinement
 public import FLT.Mazur.WeierstrassCoefficientProductMorphism
 public import FLT.Mazur.WeierstrassCoefficientSecant
 public import FLT.Mazur.WeierstrassCoefficientShearAction
@@ -12956,6 +12964,10 @@ public import FLT.Mazur.WeierstrassCoefficientShearTransport
 public import FLT.Mazur.WeierstrassCoefficientShearUnitSlope
 public import FLT.Mazur.WeierstrassCoefficientShearZeroConicAdjacent
 public import FLT.Mazur.WeierstrassCoefficientZero
+public import FLT.Mazur.WeierstrassComparisonCoefficientComposition
+public import FLT.Mazur.WeierstrassComparisonCoefficientHom
+public import FLT.Mazur.WeierstrassComparisonCoefficientProjection
+public import FLT.Mazur.WeierstrassComparisonPresentationBaseChange
 public import FLT.Mazur.WeierstrassConicCoefficientMap
 public import FLT.Mazur.WeierstrassConicCoefficientTransport
 public import FLT.Mazur.WeierstrassConicFullParameterCoefficient
@@ -15948,6 +15960,7 @@ public import FLT.Mazur.WeierstrassSplitNodalUnitPoints
 public import FLT.Mazur.WeierstrassSplitNormalizationInfinity
 public import FLT.Mazur.WeierstrassSplitNormalizationInfinityParameter
 public import FLT.Mazur.WeierstrassSquareZeroTorsionRigidity
+public import FLT.Mazur.WeierstrassSubgroupUniversalCurve
 public import FLT.Mazur.WeierstrassSuccessiveAdjacentBranchGeometry
 public import FLT.Mazur.WeierstrassSuccessiveAdjacentLaurentSlope
 public import FLT.Mazur.WeierstrassSuccessiveAdjacentSlopeOverlap
