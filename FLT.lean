@@ -8029,6 +8029,7 @@ public import FLT.Mazur.OddWeierstrassCyclicHomDivisorProductPullback
 public import FLT.Mazur.OddWeierstrassCyclicHomDivisorPullback
 public import FLT.Mazur.OddWeierstrassCyclicHomGeneratorRelation
 public import FLT.Mazur.OddWeierstrassCyclicHomGeometricMarkedComparison
+public import FLT.Mazur.OddWeierstrassCyclicHomGeometricNormalizationOrbit
 public import FLT.Mazur.OddWeierstrassCyclicHomGlobalMarkedRelation
 public import FLT.Mazur.OddWeierstrassCyclicHomLocusEquationUniversal
 public import FLT.Mazur.OddWeierstrassCyclicHomLocusFppfCoverage
