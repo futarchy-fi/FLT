@@ -475,6 +475,7 @@ public import FLT.FreyCurve.Serre.VeluIntegralModel
 public import FLT.FreyCurve.Serre.VeluIntegralSums
 public import FLT.FreyCurve.Serre.VeluKernelAffineChart
 public import FLT.FreyCurve.Serre.VeluKernelBaseChangeScheme
+public import FLT.FreyCurve.Serre.VeluKernelClosedDescent
 public import FLT.FreyCurve.Serre.VeluKernelDescentAlgebra
 public import FLT.FreyCurve.Serre.VeluKernelGaloisLabels
 public import FLT.FreyCurve.Serre.VeluKernelGeometricComparison
