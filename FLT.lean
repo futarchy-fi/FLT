@@ -15955,6 +15955,7 @@ public import FLT.Mazur.WeierstrassSplitNormalizationInfinity
 public import FLT.Mazur.WeierstrassSplitNormalizationInfinityParameter
 public import FLT.Mazur.WeierstrassSquareZeroTorsionRigidity
 public import FLT.Mazur.WeierstrassSubgroupFactorization
+public import FLT.Mazur.WeierstrassSubgroupPointClassification
 public import FLT.Mazur.WeierstrassSubgroupUniversalCurve
 public import FLT.Mazur.WeierstrassSuccessiveAdjacentBranchGeometry
 public import FLT.Mazur.WeierstrassSuccessiveAdjacentLaurentSlope
