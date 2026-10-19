@@ -3930,6 +3930,7 @@ public import FLT.Mazur.CompatibleSubgroupIsoFaithful
 public import FLT.Mazur.CompatibleSubgroupIsoSectionSquare
 public import FLT.Mazur.CompatibleSubgroupMarkedConjugation
 public import FLT.Mazur.CompatibleSubgroupOrbitMarking
+public import FLT.Mazur.CompatibleSubgroupParameterRefinement
 public import FLT.Mazur.CompatibleSubgroupPointClassification
 public import FLT.Mazur.CompatibleSubgroupSectionComposition
 public import FLT.Mazur.CompleteBoundaryAmpleCyclicLevels
@@ -4015,12 +4016,17 @@ public import FLT.Mazur.CyclicCharacteristicAffineComparisonScheme
 public import FLT.Mazur.CyclicCharacteristicAffineEquation
 public import FLT.Mazur.CyclicCharacteristicAffineEquationCoherence
 public import FLT.Mazur.CyclicCharacteristicAffineEquationPullback
+public import FLT.Mazur.CyclicCharacteristicAffineOriginalSubgroupLocus
+public import FLT.Mazur.CyclicCharacteristicAffineOriginalSubgroupOverlap
 public import FLT.Mazur.CyclicCharacteristicAffineSubgroup
 public import FLT.Mazur.CyclicCharacteristicAffineSubgroupClassification
 public import FLT.Mazur.CyclicCharacteristicAffineSubgroupFactorization
+public import FLT.Mazur.CyclicCharacteristicAffineSubgroupOverlap
+public import FLT.Mazur.CyclicCharacteristicAffineSubgroupRefinement
 public import FLT.Mazur.CyclicCharacteristicAffineSubgroupScheme
 public import FLT.Mazur.CyclicCharacteristicAffineSubgroupUniversalCurve
 public import FLT.Mazur.CyclicCharacteristicAffineUniversalComparison
+public import FLT.Mazur.CyclicCharacteristicAffineUniversalOverlap
 public import FLT.Mazur.CyclicCharacteristicAtlas
 public import FLT.Mazur.CyclicCharacteristicAtlasCoverage
 public import FLT.Mazur.CyclicCharacteristicAtlasCoverageUnrestricted
@@ -5512,6 +5518,7 @@ public import FLT.Mazur.FiniteSubgroupComparisonBaseChangeCriterion
 public import FLT.Mazur.FiniteSubgroupComparisonLocus
 public import FLT.Mazur.FiniteSubgroupComparisonLocusBaseChange
 public import FLT.Mazur.FiniteSubgroupComparisonLocusPresentation
+public import FLT.Mazur.FiniteSubgroupComparisonRefinement
 public import FLT.Mazur.FiniteSubgroupContainmentLocus
 public import FLT.Mazur.FiniteSubgroupEqualityLocus
 public import FLT.Mazur.FiniteSubgroupPicard
@@ -5641,6 +5648,7 @@ public import FLT.Mazur.FunctionSheafGradedSections
 public import FLT.Mazur.GeneralizedComparisonPullbackCoherence
 public import FLT.Mazur.GeneralizedComparisonPullbackNaturality
 public import FLT.Mazur.GeneralizedComparisonPullbackTower
+public import FLT.Mazur.GeneralizedComparisonRefinementTransport
 public import FLT.Mazur.GeneralizedCurveAmpleBaseChange
 public import FLT.Mazur.GeneralizedCurveAmpleDescent
 public import FLT.Mazur.GeneralizedCurveAmpleSubgroup
@@ -5648,6 +5656,7 @@ public import FLT.Mazur.GeneralizedCurveBaseChange
 public import FLT.Mazur.GeneralizedCurveBaseChangeCoherence
 public import FLT.Mazur.GeneralizedCurveBaseChangeCompEq
 public import FLT.Mazur.GeneralizedCurveBaseChangeIso
+public import FLT.Mazur.GeneralizedCurveBaseChangeSquare
 public import FLT.Mazur.GeneralizedCurveCartierDescent
 public import FLT.Mazur.GeneralizedCurveCartierGenerator
 public import FLT.Mazur.GeneralizedCurveCartierStalks
@@ -5697,6 +5706,7 @@ public import FLT.Mazur.GeneralizedCurveUnrestrictedCubicPresentation
 public import FLT.Mazur.GeneralizedCurveUnrestrictedLocalFamily
 public import FLT.Mazur.GeneralizedCurveUnrestrictedPointFrames
 public import FLT.Mazur.GeneralizedEllipticCurve
+public import FLT.Mazur.GeneralizedPresentationBaseChangeRefinement
 public import FLT.Mazur.GeneralizedPresentationRefinement
 public import FLT.Mazur.GeneratedRelationReductionKernel
 public import FLT.Mazur.GeneratorDenominatorLocalization
@@ -16334,6 +16344,8 @@ public import FLT.Mazur.WeierstrassTripleInnerOutputRegular
 public import FLT.Mazur.WeierstrassTripleSlopeAlgebra
 public import FLT.Mazur.WeierstrassTripleTangentSlopeAlgebra
 public import FLT.Mazur.WeierstrassUniversalComparisonClassification
+public import FLT.Mazur.WeierstrassUniversalComparisonRefinement
+public import FLT.Mazur.WeierstrassUniversalComparisonRingHom
 public import FLT.Mazur.WeierstrassUniversalComparisonSpecialization
 public import FLT.Mazur.WeierstrassUniversalTranslationSmoothLocus
 public import FLT.Mazur.WeierstrassVariableChangeAddition
