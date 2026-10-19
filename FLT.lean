@@ -2649,6 +2649,7 @@ public import FLT.Mazur.AffineBasisSumMaps
 public import FLT.Mazur.AffineBoundaryComponentEquations
 public import FLT.Mazur.AffineBoundaryComponentSpecialization
 public import FLT.Mazur.AffineBoundaryGenericLocalTests
+public import FLT.Mazur.AffineBoundaryNilpotenceOpen
 public import FLT.Mazur.AffineBoundaryTestFactorization
 public import FLT.Mazur.AffineBoundaryTestIdeal
 public import FLT.Mazur.AffineBoundaryTestPowerEquations
@@ -3912,6 +3913,7 @@ public import FLT.Mazur.CompatibleSubgroupAmple
 public import FLT.Mazur.CompatibleSubgroupAuxiliaryTransport
 public import FLT.Mazur.CompatibleSubgroupBaseChangeCoherence
 public import FLT.Mazur.CompatibleSubgroupBaseChangeCompEq
+public import FLT.Mazur.CompatibleSubgroupCartierGeneratorEquiv
 public import FLT.Mazur.CompatibleSubgroupCyclic
 public import FLT.Mazur.CompatibleSubgroupGeneratorBaseChange
 public import FLT.Mazur.CompatibleSubgroupGeneratorMarking
@@ -3921,10 +3923,12 @@ public import FLT.Mazur.CompatibleSubgroupGroupSectionComposition
 public import FLT.Mazur.CompatibleSubgroupIdealIso
 public import FLT.Mazur.CompatibleSubgroupIso
 public import FLT.Mazur.CompatibleSubgroupIsoBaseChange
+public import FLT.Mazur.CompatibleSubgroupIsoConjugation
 public import FLT.Mazur.CompatibleSubgroupIsoFaithful
 public import FLT.Mazur.CompatibleSubgroupIsoSectionSquare
 public import FLT.Mazur.CompatibleSubgroupMarkedConjugation
 public import FLT.Mazur.CompatibleSubgroupOrbitMarking
+public import FLT.Mazur.CompatibleSubgroupPointClassification
 public import FLT.Mazur.CompatibleSubgroupSectionComposition
 public import FLT.Mazur.CompleteBoundaryAmpleCyclicLevels
 public import FLT.Mazur.ConnectedClosedFiberThickening
@@ -4000,6 +4004,7 @@ public import FLT.Mazur.CyclicBoundaryOriginalMarkings
 public import FLT.Mazur.CyclicBoundaryParameterAction
 public import FLT.Mazur.CyclicBoundaryParameterSections
 public import FLT.Mazur.CyclicBoundarySectionMarking
+public import FLT.Mazur.CyclicCharacteristicAffineCartierClassification
 public import FLT.Mazur.CyclicCharacteristicAffineCoefficientCoherence
 public import FLT.Mazur.CyclicCharacteristicAffineComparisonCocycle
 public import FLT.Mazur.CyclicCharacteristicAffineComparisonOverlap
@@ -4009,6 +4014,8 @@ public import FLT.Mazur.CyclicCharacteristicAffineEquation
 public import FLT.Mazur.CyclicCharacteristicAffineEquationCoherence
 public import FLT.Mazur.CyclicCharacteristicAffineEquationPullback
 public import FLT.Mazur.CyclicCharacteristicAffineSubgroup
+public import FLT.Mazur.CyclicCharacteristicAffineSubgroupClassification
+public import FLT.Mazur.CyclicCharacteristicAffineSubgroupFactorization
 public import FLT.Mazur.CyclicCharacteristicAffineSubgroupScheme
 public import FLT.Mazur.CyclicCharacteristicAffineSubgroupUniversalCurve
 public import FLT.Mazur.CyclicCharacteristicAffineUniversalComparison
@@ -4858,8 +4865,10 @@ public import FLT.Mazur.EquivalenceRelationBoundaryGenericCharts
 public import FLT.Mazur.EquivalenceRelationBoundaryLabelChange
 public import FLT.Mazur.EquivalenceRelationBoundaryLabelCoefficients
 public import FLT.Mazur.EquivalenceRelationBoundaryLabelRefinement
+public import FLT.Mazur.EquivalenceRelationBoundaryMatchingInterior
 public import FLT.Mazur.EquivalenceRelationBoundaryOpenCoefficients
 public import FLT.Mazur.EquivalenceRelationBoundaryPowerDescent
+public import FLT.Mazur.EquivalenceRelationBoundaryPrincipalCharts
 public import FLT.Mazur.EquivalenceRelationBoundaryRankDescent
 public import FLT.Mazur.EquivalenceRelationBoundaryRankEquations
 public import FLT.Mazur.EquivalenceRelationBoundaryRankFiltration
@@ -5315,6 +5324,9 @@ public import FLT.Mazur.FiniteGroupSpectrumAction
 public import FLT.Mazur.FiniteGroupTraceRetraction
 public import FLT.Mazur.FiniteHomologyFiberVanishing
 public import FLT.Mazur.FiniteIdealConditionDimension
+public import FLT.Mazur.FiniteIdealLocalizationDenominators
+public import FLT.Mazur.FiniteIdealNilpotenceInterior
+public import FLT.Mazur.FiniteIdealNilpotenceOpen
 public import FLT.Mazur.FiniteIntegerModelElementRelations
 public import FLT.Mazur.FiniteIntegerModelPullbacks
 public import FLT.Mazur.FiniteIntegerModelRelations
@@ -5492,7 +5504,10 @@ public import FLT.Mazur.FiniteSeparablePointFactor
 public import FLT.Mazur.FiniteSeparatedLineSheafDescent
 public import FLT.Mazur.FiniteSubframeSelections
 public import FLT.Mazur.FiniteSubgroupClassPresheaf
+public import FLT.Mazur.FiniteSubgroupComparisonBaseChangeCriterion
 public import FLT.Mazur.FiniteSubgroupComparisonLocus
+public import FLT.Mazur.FiniteSubgroupComparisonLocusBaseChange
+public import FLT.Mazur.FiniteSubgroupComparisonLocusPresentation
 public import FLT.Mazur.FiniteSubgroupContainmentLocus
 public import FLT.Mazur.FiniteSubgroupEqualityLocus
 public import FLT.Mazur.FiniteSubgroupPicard
@@ -5621,6 +5636,7 @@ public import FLT.Mazur.FunctionSheafGradedBaseAlgebra
 public import FLT.Mazur.FunctionSheafGradedSections
 public import FLT.Mazur.GeneralizedComparisonPullbackCoherence
 public import FLT.Mazur.GeneralizedComparisonPullbackNaturality
+public import FLT.Mazur.GeneralizedComparisonPullbackTower
 public import FLT.Mazur.GeneralizedCurveAmpleBaseChange
 public import FLT.Mazur.GeneralizedCurveAmpleDescent
 public import FLT.Mazur.GeneralizedCurveAmpleSubgroup
@@ -6420,6 +6436,7 @@ public import FLT.Mazur.HilbertSourceBoundaryCompletenessNilpotence
 public import FLT.Mazur.HilbertSourceBoundaryComponentEquations
 public import FLT.Mazur.HilbertSourceBoundaryFaithfulDescent
 public import FLT.Mazur.HilbertSourceBoundaryGenericCharts
+public import FLT.Mazur.HilbertSourceBoundaryPrincipalCharts
 public import FLT.Mazur.HilbertSourceBoundaryRankFinite
 public import FLT.Mazur.HilbertSourceBoundaryRankNilpotence
 public import FLT.Mazur.HilbertSourceBoundaryRankStages
@@ -15988,7 +16005,10 @@ public import FLT.Mazur.WeierstrassSplitNodalUnitPoints
 public import FLT.Mazur.WeierstrassSplitNormalizationInfinity
 public import FLT.Mazur.WeierstrassSplitNormalizationInfinityParameter
 public import FLT.Mazur.WeierstrassSquareZeroTorsionRigidity
+public import FLT.Mazur.WeierstrassSubgroupFactorization
+public import FLT.Mazur.WeierstrassSubgroupPointClassification
 public import FLT.Mazur.WeierstrassSubgroupUniversalCurve
+public import FLT.Mazur.WeierstrassSubgroupUniversalTest
 public import FLT.Mazur.WeierstrassSuccessiveAdjacentBranchGeometry
 public import FLT.Mazur.WeierstrassSuccessiveAdjacentLaurentSlope
 public import FLT.Mazur.WeierstrassSuccessiveAdjacentSlopeOverlap
