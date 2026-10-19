@@ -457,6 +457,14 @@ public import FLT.FreyCurve.Serre.Unramified
 public import FLT.FreyCurve.Serre.UnramifiedCharacter
 public import FLT.FreyCurve.Serre.Velu
 public import FLT.FreyCurve.Serre.VeluAdditivity
+public import FLT.FreyCurve.Serre.VeluAffineDenominator
+public import FLT.FreyCurve.Serre.VeluAffineGenericRestriction
+public import FLT.FreyCurve.Serre.VeluAffineNonkernelOpen
+public import FLT.FreyCurve.Serre.VeluAffinePointCoordinates
+public import FLT.FreyCurve.Serre.VeluAffinePointMorphism
+public import FLT.FreyCurve.Serre.VeluAffineRationalRepresentative
+public import FLT.FreyCurve.Serre.VeluAffineRegularCoordinates
+public import FLT.FreyCurve.Serre.VeluAffineRegularMorphism
 public import FLT.FreyCurve.Serre.VeluAffineSectionChart
 public import FLT.FreyCurve.Serre.VeluCoordinates
 public import FLT.FreyCurve.Serre.VeluDifferential
@@ -513,6 +521,7 @@ public import FLT.FreyCurve.Serre.VeluSourceChartFractions
 public import FLT.FreyCurve.Serre.VeluSourceChartInjective
 public import FLT.FreyCurve.Serre.VeluSourceFractionField
 public import FLT.FreyCurve.Serre.VeluSourceGenericPoint
+public import FLT.FreyCurve.Serre.VeluSourceLocalization
 public import FLT.FreyCurve.Serre.VeluSourceSchemeFunctionField
 public import FLT.FreyCurve.Serre.VeluSpecialization
 public import FLT.FreyCurve.Serre.VeluTranslation
