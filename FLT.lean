@@ -2953,6 +2953,7 @@ public import FLT.Mazur.AffineFunctionUniversal
 public import FLT.Mazur.AffineGeneratorPointCoefficientTransport
 public import FLT.Mazur.AffineGeneratorPointLinearTransport
 public import FLT.Mazur.AffineGenericClosure
+public import FLT.Mazur.AffineGenericFiniteOpen
 public import FLT.Mazur.AffineGenericFlatOpen
 public import FLT.Mazur.AffineGeometricChartDatum
 public import FLT.Mazur.AffineGeometricChartRecognition
