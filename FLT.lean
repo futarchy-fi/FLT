@@ -13897,6 +13897,7 @@ public import FLT.Mazur.WeierstrassDividedClosingTransportGluing
 public import FLT.Mazur.WeierstrassDividedClosingTransportRestriction
 public import FLT.Mazur.WeierstrassDividedClosingTransportSpan
 public import FLT.Mazur.WeierstrassDividedCoefficientActionIndexTransport
+public import FLT.Mazur.WeierstrassDividedCoefficientActionSmoothLocus
 public import FLT.Mazur.WeierstrassDividedCoefficientInputs
 public import FLT.Mazur.WeierstrassDividedCoefficientShear
 public import FLT.Mazur.WeierstrassDividedCoefficientShearGlobalCharts
