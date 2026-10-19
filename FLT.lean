@@ -4129,6 +4129,7 @@ public import FLT.Mazur.CyclicCharacteristicProductComparisonDiagram
 public import FLT.Mazur.CyclicCharacteristicProductComparisonGluing
 public import FLT.Mazur.CyclicCharacteristicProductDiagramTopology
 public import FLT.Mazur.CyclicCharacteristicProductOpenCoordinates
+public import FLT.Mazur.CyclicCharacteristicProductOriginalSubgroupLocus
 public import FLT.Mazur.CyclicCharacteristicProductRefinementAlgebra
 public import FLT.Mazur.CyclicCharacteristicProductRefinementTransport
 public import FLT.Mazur.CyclicCharacteristicProductSubgroupCharts
