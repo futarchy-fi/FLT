@@ -577,6 +577,8 @@ public import FLT.FreyCurve.Serre.VeluLocalIntegralSmoothKernelGroup
 public import FLT.FreyCurve.Serre.VeluLocalIntegralSmoothKernelRetention
 public import FLT.FreyCurve.Serre.VeluLocalKernelFiniteSplitting
 public import FLT.FreyCurve.Serre.VeluLocalKernelPerfectSplitModel
+public import FLT.FreyCurve.Serre.VeluLocalKernelResolvedModel
+public import FLT.FreyCurve.Serre.VeluLocalKernelSplitDepthModel
 public import FLT.FreyCurve.Serre.VeluLocalKernelSplitModel
 public import FLT.FreyCurve.Serre.VeluLocalPointMorphism
 public import FLT.FreyCurve.Serre.VeluLocalPointTransport
@@ -584,6 +586,7 @@ public import FLT.FreyCurve.Serre.VeluLocalResolvedKernelSmooth
 public import FLT.FreyCurve.Serre.VeluMap
 public import FLT.FreyCurve.Serre.VeluOrdinary
 public import FLT.FreyCurve.Serre.VeluPadicGenericPointComparison
+public import FLT.FreyCurve.Serre.VeluPadicKernelResolvedModel
 public import FLT.FreyCurve.Serre.VeluPointCofinite
 public import FLT.FreyCurve.Serre.VeluPrimeExactTarget
 public import FLT.FreyCurve.Serre.VeluPrimeGlobalKernelRank
@@ -4846,6 +4849,7 @@ public import FLT.Mazur.EllipticMiddleCyclicCoordinates
 public import FLT.Mazur.EllipticMinimalAdditiveComponents
 public import FLT.Mazur.EllipticMinimalDiscriminant
 public import FLT.Mazur.EllipticMultiplicativeValuationEquation
+public import FLT.Mazur.EllipticNodalDepthModel
 public import FLT.Mazur.EllipticNodalDepthNormalization
 public import FLT.Mazur.EllipticNodalDeterminantStep
 public import FLT.Mazur.EllipticNodalDiscriminantDepth
@@ -5095,6 +5099,7 @@ public import FLT.Mazur.EllipticSmoothPointChange
 public import FLT.Mazur.EllipticSmoothReduction
 public import FLT.Mazur.EllipticSmoothReductionAddition
 public import FLT.Mazur.EllipticSmoothSectionSpecialization
+public import FLT.Mazur.EllipticSplitDepthExtension
 public import FLT.Mazur.EllipticSplitDepthLaurentContraction
 public import FLT.Mazur.EllipticSplitDepthLaurentPoints
 public import FLT.Mazur.EllipticSplitDepthModel
@@ -7952,8 +7957,10 @@ public import FLT.Mazur.NodeTangentSlopeDescent
 public import FLT.Mazur.NodeTangentSmoothNormalization
 public import FLT.Mazur.NodeTangentSplitChart
 public import FLT.Mazur.NodeTangentSplitComponent
+public import FLT.Mazur.NodeTangentSplitDepthExtension
 public import FLT.Mazur.NodeTangentSplitLaurent
 public import FLT.Mazur.NodeTangentSplitNormalizationComparison
+public import FLT.Mazur.NodeTangentSplittingAlternative
 public import FLT.Mazur.NodeTangentTensorLaurentDescent
 public import FLT.Mazur.NodeTangentTensorOpen
 public import FLT.Mazur.NodeTangentTensorOrientation
@@ -15827,7 +15834,10 @@ public import FLT.Mazur.WeierstrassLocalGenericKernel
 public import FLT.Mazur.WeierstrassLocalGenericProjection
 public import FLT.Mazur.WeierstrassLocalGenericTower
 public import FLT.Mazur.WeierstrassLocalKernelCoefficientSquare
+public import FLT.Mazur.WeierstrassLocalKernelCoverExtension
+public import FLT.Mazur.WeierstrassLocalKernelSplitDepthModel
 public import FLT.Mazur.WeierstrassLocalKernelTower
+public import FLT.Mazur.WeierstrassLocalNodalTransport
 public import FLT.Mazur.WeierstrassLowPoleCoordinates
 public import FLT.Mazur.WeierstrassMixedIntersectionScheme
 public import FLT.Mazur.WeierstrassMixedLeftReciprocalDomain
@@ -16290,6 +16300,7 @@ public import FLT.Mazur.WeierstrassOriginPunctureIntersection
 public import FLT.Mazur.WeierstrassOriginWeightedPoles
 public import FLT.Mazur.WeierstrassOriginalAuxiliaryCover
 public import FLT.Mazur.WeierstrassOriginalCyclicCover
+public import FLT.Mazur.WeierstrassOriginalResolvedKernel
 public import FLT.Mazur.WeierstrassOverlapDiagonalAlgebra
 public import FLT.Mazur.WeierstrassPartialAdditionSmoothInputs
 public import FLT.Mazur.WeierstrassPartialAdditionSmoothResidues
