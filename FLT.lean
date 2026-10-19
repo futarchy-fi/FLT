@@ -13970,6 +13970,7 @@ public import FLT.Mazur.WeierstrassDividedDepthCenterSmooth
 public import FLT.Mazur.WeierstrassDividedDepthData
 public import FLT.Mazur.WeierstrassDividedDepthLocalAction
 public import FLT.Mazur.WeierstrassDividedDepthMaps
+public import FLT.Mazur.WeierstrassDividedDepthNegation
 public import FLT.Mazur.WeierstrassDividedDepthOriginalOpen
 public import FLT.Mazur.WeierstrassDividedDepthStructure
 public import FLT.Mazur.WeierstrassDividedDepthYBoundary
