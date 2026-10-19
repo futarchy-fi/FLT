@@ -6533,6 +6533,7 @@ public import FLT.Mazur.HilbertSourceFiniteOpenNumerators
 public import FLT.Mazur.HilbertSourceGeneratedLocalizedSurjectivity
 public import FLT.Mazur.HilbertSourceLocalRankCeilingLifts
 public import FLT.Mazur.HilbertSourceLocalizedOpenLift
+public import FLT.Mazur.HilbertSourceMultiplierSupport
 public import FLT.Mazur.HilbertSourceNonstableOpenLifts
 public import FLT.Mazur.HilbertSourceOpenRelationLifts
 public import FLT.Mazur.HilbertSourceOriginalDomainComponents
