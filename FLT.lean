@@ -482,6 +482,7 @@ public import FLT.FreyCurve.Serre.VeluKernelGeometricComparison
 public import FLT.FreyCurve.Serre.VeluKernelMorphismComparison
 public import FLT.FreyCurve.Serre.VeluKernelParametrization
 public import FLT.FreyCurve.Serre.VeluKernelRationalCoordinates
+public import FLT.FreyCurve.Serre.VeluKernelRationalDegree
 public import FLT.FreyCurve.Serre.VeluKernelRationalEvaluation
 public import FLT.FreyCurve.Serre.VeluKernelRationalMap
 public import FLT.FreyCurve.Serre.VeluKernelScalarExtension
