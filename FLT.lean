@@ -508,6 +508,7 @@ public import FLT.FreyCurve.Serre.VeluKernelBaseChangeScheme
 public import FLT.FreyCurve.Serre.VeluKernelClosedDescent
 public import FLT.FreyCurve.Serre.VeluKernelDescentAlgebra
 public import FLT.FreyCurve.Serre.VeluKernelGaloisLabels
+public import FLT.FreyCurve.Serre.VeluKernelGenericMorphismInvariant
 public import FLT.FreyCurve.Serre.VeluKernelGeometricComparison
 public import FLT.FreyCurve.Serre.VeluKernelInclusionMultiplication
 public import FLT.FreyCurve.Serre.VeluKernelMorphismComparison
