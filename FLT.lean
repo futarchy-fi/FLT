@@ -5016,6 +5016,7 @@ public import FLT.Mazur.EquivalenceRelationFrameNormalization
 public import FLT.Mazur.EquivalenceRelationFrameRebaseGeometric
 public import FLT.Mazur.EquivalenceRelationFrameRebaseLaws
 public import FLT.Mazur.EquivalenceRelationHigherScalarValuations
+public import FLT.Mazur.EquivalenceRelationHigherTestAtlas
 public import FLT.Mazur.EquivalenceRelationInvariantBoundaryAction
 public import FLT.Mazur.EquivalenceRelationInvariantRestriction
 public import FLT.Mazur.EquivalenceRelationJointAffineCover
