@@ -4250,6 +4250,7 @@ public import FLT.Mazur.CyclicCharacteristicAffineOverlapCoverage
 public import FLT.Mazur.CyclicCharacteristicAffineResidualArrows
 public import FLT.Mazur.CyclicCharacteristicAffineResidualComparison
 public import FLT.Mazur.CyclicCharacteristicAffineResidualFibers
+public import FLT.Mazur.CyclicCharacteristicAffineResidualLocalization
 public import FLT.Mazur.CyclicCharacteristicAffineResidualPrincipal
 public import FLT.Mazur.CyclicCharacteristicAffineResidualRelabel
 public import FLT.Mazur.CyclicCharacteristicAffineResidualRingedComparison
