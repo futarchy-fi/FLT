@@ -13888,6 +13888,7 @@ public import FLT.Mazur.WeierstrassDividedOneFiniteRestriction
 public import FLT.Mazur.WeierstrassDividedOneFiniteState
 public import FLT.Mazur.WeierstrassDividedOneFiniteTransitions
 public import FLT.Mazur.WeierstrassDividedOneInitialAtlasTransport
+public import FLT.Mazur.WeierstrassDividedOneInitialPunctureTransport
 public import FLT.Mazur.WeierstrassDividedOneInitialTotalTransport
 public import FLT.Mazur.WeierstrassDividedOneSeedOrientation
 public import FLT.Mazur.WeierstrassDividedOneSeedState
