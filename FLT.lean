@@ -477,7 +477,9 @@ public import FLT.FreyCurve.Serre.VeluCoefficientOverlapCover
 public import FLT.FreyCurve.Serre.VeluCofiniteFunctionEquality
 public import FLT.FreyCurve.Serre.VeluCoordinates
 public import FLT.FreyCurve.Serre.VeluDescendedDegree
+public import FLT.FreyCurve.Serre.VeluDescendedGroupMorphism
 public import FLT.FreyCurve.Serre.VeluDescendedMorphism
+public import FLT.FreyCurve.Serre.VeluDescendedPointValues
 public import FLT.FreyCurve.Serre.VeluDifferential
 public import FLT.FreyCurve.Serre.VeluDivisionIntegrality
 public import FLT.FreyCurve.Serre.VeluElliptic
@@ -559,6 +561,7 @@ public import FLT.FreyCurve.Serre.VeluKernelRationalSubgroup
 public import FLT.FreyCurve.Serre.VeluKernelScalarExtension
 public import FLT.FreyCurve.Serre.VeluKernelSectionComparison
 public import FLT.FreyCurve.Serre.VeluKernelTranslationInvariant
+public import FLT.FreyCurve.Serre.VeluLocalGenericMorphism
 public import FLT.FreyCurve.Serre.VeluLocalIntegralModel
 public import FLT.FreyCurve.Serre.VeluMap
 public import FLT.FreyCurve.Serre.VeluOrdinary
@@ -568,8 +571,10 @@ public import FLT.FreyCurve.Serre.VeluPrimeGlobalKernelRank
 public import FLT.FreyCurve.Serre.VeluPrimeKernel
 public import FLT.FreyCurve.Serre.VeluPrimeKernelFiberComparison
 public import FLT.FreyCurve.Serre.VeluPrimeRationalDegree
+public import FLT.FreyCurve.Serre.VeluPrimeRationalGroup
 public import FLT.FreyCurve.Serre.VeluPrimeRationalKernel
 public import FLT.FreyCurve.Serre.VeluPrimeRationalMorphism
+public import FLT.FreyCurve.Serre.VeluPrimeRationalPointComparison
 public import FLT.FreyCurve.Serre.VeluQuotient
 public import FLT.FreyCurve.Serre.VeluRational
 public import FLT.FreyCurve.Serre.VeluRationalDomainCover
@@ -607,6 +612,8 @@ public import FLT.FreyCurve.VeluPadicTwoMinimal
 public import FLT.FreyCurve.VeluPadicTwoValuation
 public import FLT.FreyCurve.VeluSourceKernelModels
 public import FLT.FreyCurve.VeluTargetGeometry
+public import FLT.FreyCurve.VeluTargetGroupMorphism
+public import FLT.FreyCurve.VeluTargetLocalGenericMorphism
 public import FLT.FreyCurve.VeluTargetSchemeMorphism
 public import FLT.FreyCurve.VeluTargetTwoTorsion
 public import FLT.FreyCurve.VeluTargetWitness
@@ -5218,6 +5225,8 @@ public import FLT.Mazur.EquivalenceRelationConnectedCompleteTests
 public import FLT.Mazur.EquivalenceRelationDoubleVanishingOpen
 public import FLT.Mazur.EquivalenceRelationEqualFrameCorrections
 public import FLT.Mazur.EquivalenceRelationEqualFrameOverlap
+public import FLT.Mazur.EquivalenceRelationEqualizedInvariants
+public import FLT.Mazur.EquivalenceRelationExactQuotientCorrectionExtension
 public import FLT.Mazur.EquivalenceRelationExactRankInterior
 public import FLT.Mazur.EquivalenceRelationExcessFrames
 public import FLT.Mazur.EquivalenceRelationFiberPermutationSections
@@ -5289,6 +5298,7 @@ public import FLT.Mazur.EquivalenceRelationNormalizedScalarComplete
 public import FLT.Mazur.EquivalenceRelationNormalizedStrictExtension
 public import FLT.Mazur.EquivalenceRelationNormalizedSubframe
 public import FLT.Mazur.EquivalenceRelationOpenChartScalars
+public import FLT.Mazur.EquivalenceRelationPrescribedQuotientCorrection
 public import FLT.Mazur.EquivalenceRelationQuotientBoundaryExtensions
 public import FLT.Mazur.EquivalenceRelationQuotientInvariantExtensions
 public import FLT.Mazur.EquivalenceRelationQuotientRankOpens
@@ -6812,6 +6822,7 @@ public import FLT.Mazur.HilbertSourceNonstableOpenLifts
 public import FLT.Mazur.HilbertSourceOpenRelationLifts
 public import FLT.Mazur.HilbertSourceOriginalDomainComponents
 public import FLT.Mazur.HilbertSourceOriginalEquationNeighborhoods
+public import FLT.Mazur.HilbertSourcePrescribedQuotientCorrection
 public import FLT.Mazur.HilbertSourceRankCutoffLifts
 public import FLT.Mazur.HilbertSourceRelationPowerClearing
 public import FLT.Mazur.HilbertSourceRelationRankStages
@@ -10982,6 +10993,7 @@ public import FLT.Mazur.RationalCyclicSubgroup
 public import FLT.Mazur.RationalFibers
 public import FLT.Mazur.RationalPadicIntegerSubring
 public import FLT.Mazur.RationalPadicIntegralDepth
+public import FLT.Mazur.RationalPadicMinimalGroupMorphism
 public import FLT.Mazur.RationalPadicMinimalTransport
 public import FLT.Mazur.RationalPointConditionRank
 public import FLT.Mazur.RationalPointDivisorStalk
@@ -11669,6 +11681,7 @@ public import FLT.Mazur.SchemeFiniteGroupFreeBoundaryIdeal
 public import FLT.Mazur.SchemeFiniteGroupFreeFlat
 public import FLT.Mazur.SchemeFiniteGroupGeometricTests
 public import FLT.Mazur.SchemeFiniteGroupInvariantPrincipal
+public import FLT.Mazur.SchemeFiniteGroupPrescribedBoundaryCorrection
 public import FLT.Mazur.SchemeFiniteGroupPrincipalComparison
 public import FLT.Mazur.SchemeFiniteGroupPrincipalQuotient
 public import FLT.Mazur.SchemeFiniteGroupQuotient
@@ -11680,6 +11693,7 @@ public import FLT.Mazur.SchemeFiniteGroupQuotientOpenEmbedding
 public import FLT.Mazur.SchemeFiniteGroupQuotientOpenImmersion
 public import FLT.Mazur.SchemeFiniteGroupQuotientOrbits
 public import FLT.Mazur.SchemeFiniteGroupScalarFiberEquations
+public import FLT.Mazur.SchemeFiniteGroupSimultaneousInvariants
 public import FLT.Mazur.SchemeFiniteGroupTestAdicComparison
 public import FLT.Mazur.SchemeFiniteOrbitOpenCore
 public import FLT.Mazur.SchemeFiniteSectionAnnihilator
@@ -15341,6 +15355,8 @@ public import FLT.Mazur.WeierstrassGlobalModificationZero
 public import FLT.Mazur.WeierstrassGlobalNegation
 public import FLT.Mazur.WeierstrassGlobalNegationInvolution
 public import FLT.Mazur.WeierstrassGlobalPolynomialSwap
+public import FLT.Mazur.WeierstrassGroupHomCoefficient
+public import FLT.Mazur.WeierstrassGroupHomVariableChange
 public import FLT.Mazur.WeierstrassHorizontalBranchRestriction
 public import FLT.Mazur.WeierstrassHorizontalConicPunctureResidue
 public import FLT.Mazur.WeierstrassHorizontalFractionHomExt
