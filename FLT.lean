@@ -466,11 +466,15 @@ public import FLT.FreyCurve.Serre.VeluEvaluation
 public import FLT.FreyCurve.Serre.VeluExactKernel
 public import FLT.FreyCurve.Serre.VeluFunctionField
 public import FLT.FreyCurve.Serre.VeluGenericAdditivity
+public import FLT.FreyCurve.Serre.VeluGeometricKernelScheme
 public import FLT.FreyCurve.Serre.VeluHom
 public import FLT.FreyCurve.Serre.VeluIdentity
 public import FLT.FreyCurve.Serre.VeluInfinity
 public import FLT.FreyCurve.Serre.VeluIntegralModel
 public import FLT.FreyCurve.Serre.VeluIntegralSums
+public import FLT.FreyCurve.Serre.VeluKernelDescentAlgebra
+public import FLT.FreyCurve.Serre.VeluKernelGaloisLabels
+public import FLT.FreyCurve.Serre.VeluKernelParametrization
 public import FLT.FreyCurve.Serre.VeluLocalIntegralModel
 public import FLT.FreyCurve.Serre.VeluMap
 public import FLT.FreyCurve.Serre.VeluOrdinary
@@ -491,6 +495,7 @@ public import FLT.FreyCurve.VeluPadicSmallComponents
 public import FLT.FreyCurve.VeluPadicTwoComponents
 public import FLT.FreyCurve.VeluPadicTwoMinimal
 public import FLT.FreyCurve.VeluPadicTwoValuation
+public import FLT.FreyCurve.VeluSourceKernelModels
 public import FLT.FreyCurve.VeluTargetGeometry
 public import FLT.FreyCurve.VeluTargetTwoTorsion
 public import FLT.FreyCurve.VeluTargetWitness
@@ -2735,6 +2740,7 @@ public import FLT.Mazur.AffineComparisonSquare
 public import FLT.Mazur.AffineCoverClosedLimit
 public import FLT.Mazur.AffineCoverCohomology
 public import FLT.Mazur.AffineCoverIntersections
+public import FLT.Mazur.AffineCyclicClosedSubgroup
 public import FLT.Mazur.AffineDescentReconstructionComposition
 public import FLT.Mazur.AffineDescentRefinementComparison
 public import FLT.Mazur.AffineDescentRefinementReconstruction
@@ -3172,6 +3178,7 @@ public import FLT.Mazur.AffinePushforwardCohomology
 public import FLT.Mazur.AffinePushforwardQuasicoherent
 public import FLT.Mazur.AffineQuasiCoherentBaseChange
 public import FLT.Mazur.AffineQuasicoherentPullbackFaithful
+public import FLT.Mazur.AffineRationalGroupSection
 public import FLT.Mazur.AffineRationalNonvanishing
 public import FLT.Mazur.AffineReconstructionCoefficientChart
 public import FLT.Mazur.AffineRefinedCompositionCompatibility
