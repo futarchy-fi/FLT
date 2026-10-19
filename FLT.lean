@@ -434,6 +434,7 @@ public import FLT.FreyCurve.Serre.MultiplicativeQuotient
 public import FLT.FreyCurve.Serre.MultiplicativeReduction
 public import FLT.FreyCurve.Serre.NonsplitFlat
 public import FLT.FreyCurve.Serre.QuadraticTwistPoints
+public import FLT.FreyCurve.Serre.QuotientCoefficientSums
 public import FLT.FreyCurve.Serre.QuotientCoordinateHom
 public import FLT.FreyCurve.Serre.QuotientCurve
 public import FLT.FreyCurve.Serre.QuotientCurveEquation
