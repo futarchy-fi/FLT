@@ -5213,6 +5213,7 @@ public import FLT.Mazur.EquivalenceRelationCompleteSourceRestriction
 public import FLT.Mazur.EquivalenceRelationCompleteStageCoefficients
 public import FLT.Mazur.EquivalenceRelationCompleteSubframe
 public import FLT.Mazur.EquivalenceRelationCompleteSubframeCompatibility
+public import FLT.Mazur.EquivalenceRelationCompleteSupportedTests
 public import FLT.Mazur.EquivalenceRelationCompleteTestCoefficients
 public import FLT.Mazur.EquivalenceRelationCompleteTestFinite
 public import FLT.Mazur.EquivalenceRelationCompleteTestPartition
@@ -5298,6 +5299,7 @@ public import FLT.Mazur.EquivalenceRelationNormalizedScalarComplete
 public import FLT.Mazur.EquivalenceRelationNormalizedStrictExtension
 public import FLT.Mazur.EquivalenceRelationNormalizedSubframe
 public import FLT.Mazur.EquivalenceRelationOpenChartScalars
+public import FLT.Mazur.EquivalenceRelationOriginalScalarFiber
 public import FLT.Mazur.EquivalenceRelationPrescribedQuotientCorrection
 public import FLT.Mazur.EquivalenceRelationQuotientBoundaryExtensions
 public import FLT.Mazur.EquivalenceRelationQuotientInvariantExtensions
@@ -5312,10 +5314,13 @@ public import FLT.Mazur.EquivalenceRelationResidualPermutationOpen
 public import FLT.Mazur.EquivalenceRelationResidualScalarExtension
 public import FLT.Mazur.EquivalenceRelationResidualSectionExtension
 public import FLT.Mazur.EquivalenceRelationRestrictedActionGraphs
+public import FLT.Mazur.EquivalenceRelationScalarFiberCorrections
 public import FLT.Mazur.EquivalenceRelationScalarLocalDetection
+public import FLT.Mazur.EquivalenceRelationScalarLocalEquations
 public import FLT.Mazur.EquivalenceRelationScalarLocalRanks
 public import FLT.Mazur.EquivalenceRelationScalarLocalRecovery
 public import FLT.Mazur.EquivalenceRelationScalarLocalStages
+public import FLT.Mazur.EquivalenceRelationScalarSupportedBaseChange
 public import FLT.Mazur.EquivalenceRelationSectionRebase
 public import FLT.Mazur.EquivalenceRelationSelfEmbeddingAction
 public import FLT.Mazur.EquivalenceRelationSourceRefinement
@@ -6809,6 +6814,7 @@ public import FLT.Mazur.HilbertSourceFiniteMultiplierTests
 public import FLT.Mazur.HilbertSourceFiniteOpenNumerators
 public import FLT.Mazur.HilbertSourceFlatScalarEquations
 public import FLT.Mazur.HilbertSourceFlatTensorEquations
+public import FLT.Mazur.HilbertSourceFullScalarFiberCorrections
 public import FLT.Mazur.HilbertSourceGeneratedLocalizedSurjectivity
 public import FLT.Mazur.HilbertSourceGeometricFiberTests
 public import FLT.Mazur.HilbertSourceGeometricFrameExtensions
@@ -6822,6 +6828,7 @@ public import FLT.Mazur.HilbertSourceNonstableOpenLifts
 public import FLT.Mazur.HilbertSourceOpenRelationLifts
 public import FLT.Mazur.HilbertSourceOriginalDomainComponents
 public import FLT.Mazur.HilbertSourceOriginalEquationNeighborhoods
+public import FLT.Mazur.HilbertSourcePrescribedInvariantLift
 public import FLT.Mazur.HilbertSourcePrescribedQuotientCorrection
 public import FLT.Mazur.HilbertSourceRankCutoffLifts
 public import FLT.Mazur.HilbertSourceRelationPowerClearing
