@@ -5190,6 +5190,7 @@ public import FLT.Mazur.EquivalenceRelationConnectedCompleteTests
 public import FLT.Mazur.EquivalenceRelationDoubleVanishingOpen
 public import FLT.Mazur.EquivalenceRelationEqualFrameCorrections
 public import FLT.Mazur.EquivalenceRelationEqualFrameOverlap
+public import FLT.Mazur.EquivalenceRelationEqualizedInvariants
 public import FLT.Mazur.EquivalenceRelationExactRankInterior
 public import FLT.Mazur.EquivalenceRelationExcessFrames
 public import FLT.Mazur.EquivalenceRelationFiberPermutationSections
@@ -5261,6 +5262,7 @@ public import FLT.Mazur.EquivalenceRelationNormalizedScalarComplete
 public import FLT.Mazur.EquivalenceRelationNormalizedStrictExtension
 public import FLT.Mazur.EquivalenceRelationNormalizedSubframe
 public import FLT.Mazur.EquivalenceRelationOpenChartScalars
+public import FLT.Mazur.EquivalenceRelationPrescribedQuotientCorrection
 public import FLT.Mazur.EquivalenceRelationQuotientBoundaryExtensions
 public import FLT.Mazur.EquivalenceRelationQuotientInvariantExtensions
 public import FLT.Mazur.EquivalenceRelationQuotientRankOpens
