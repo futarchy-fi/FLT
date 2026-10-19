@@ -6589,6 +6589,7 @@ public import FLT.Mazur.HilbertSourceScalarLocalDetection
 public import FLT.Mazur.HilbertSourceScalarNilpotenceLifts
 public import FLT.Mazur.HilbertSourceScalarResidualStages
 public import FLT.Mazur.HilbertSourceTestChartGenerators
+public import FLT.Mazur.HilbertSourceTestKernelObstruction
 public import FLT.Mazur.HilbertSourceUniformRelationMultiplier
 public import FLT.Mazur.HilbertSourceUniformScalarDenominators
 public import FLT.Mazur.HilbertSourceValuativeBoundaryObstructions
