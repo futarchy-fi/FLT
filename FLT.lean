@@ -4236,6 +4236,7 @@ public import FLT.Mazur.CyclicCharacteristicAffineEquation
 public import FLT.Mazur.CyclicCharacteristicAffineEquationCoherence
 public import FLT.Mazur.CyclicCharacteristicAffineEquationPullback
 public import FLT.Mazur.CyclicCharacteristicAffineFunctionRelation
+public import FLT.Mazur.CyclicCharacteristicAffineGeometricResidual
 public import FLT.Mazur.CyclicCharacteristicAffineInvariantReconstruction
 public import FLT.Mazur.CyclicCharacteristicAffineOppositeCover
 public import FLT.Mazur.CyclicCharacteristicAffineOppositeDescent
@@ -4247,11 +4248,18 @@ public import FLT.Mazur.CyclicCharacteristicAffineOriginalSubgroupLocus
 public import FLT.Mazur.CyclicCharacteristicAffineOriginalSubgroupOverlap
 public import FLT.Mazur.CyclicCharacteristicAffineOverlapArrows
 public import FLT.Mazur.CyclicCharacteristicAffineOverlapCoverage
+public import FLT.Mazur.CyclicCharacteristicAffinePrincipalComparisonSquare
 public import FLT.Mazur.CyclicCharacteristicAffineResidualArrows
 public import FLT.Mazur.CyclicCharacteristicAffineResidualComparison
 public import FLT.Mazur.CyclicCharacteristicAffineResidualFibers
+public import FLT.Mazur.CyclicCharacteristicAffineResidualLocalization
+public import FLT.Mazur.CyclicCharacteristicAffineResidualPrincipal
+public import FLT.Mazur.CyclicCharacteristicAffineResidualPrincipalAmbient
+public import FLT.Mazur.CyclicCharacteristicAffineResidualPrincipalSpectrum
+public import FLT.Mazur.CyclicCharacteristicAffineResidualRelabel
 public import FLT.Mazur.CyclicCharacteristicAffineResidualRingedComparison
 public import FLT.Mazur.CyclicCharacteristicAffineResidualSections
+public import FLT.Mazur.CyclicCharacteristicAffineResidualSpectrumTests
 public import FLT.Mazur.CyclicCharacteristicAffineResidualTests
 public import FLT.Mazur.CyclicCharacteristicAffineResidualTopology
 public import FLT.Mazur.CyclicCharacteristicAffineSectionEquivalence
@@ -5301,6 +5309,7 @@ public import FLT.Mazur.EquivalenceRelationCompleteQuotientStages
 public import FLT.Mazur.EquivalenceRelationCompleteQuotientTower
 public import FLT.Mazur.EquivalenceRelationCompleteRestrictionNaturality
 public import FLT.Mazur.EquivalenceRelationCompleteScalarFiber
+public import FLT.Mazur.EquivalenceRelationCompleteScalarStrata
 public import FLT.Mazur.EquivalenceRelationCompleteSourceComparison
 public import FLT.Mazur.EquivalenceRelationCompleteSourceRestriction
 public import FLT.Mazur.EquivalenceRelationCompleteSpecializations
@@ -5341,6 +5350,7 @@ public import FLT.Mazur.EquivalenceRelationGenericCompleteNeighborhood
 public import FLT.Mazur.EquivalenceRelationGeometricTestExtensions
 public import FLT.Mazur.EquivalenceRelationHigherScalarValuations
 public import FLT.Mazur.EquivalenceRelationHigherTestAtlas
+public import FLT.Mazur.EquivalenceRelationIncompleteFrameGrowth
 public import FLT.Mazur.EquivalenceRelationInvariantBoundaryAction
 public import FLT.Mazur.EquivalenceRelationInvariantCharacterArrows
 public import FLT.Mazur.EquivalenceRelationInvariantCharacterFibers
@@ -5419,12 +5429,14 @@ public import FLT.Mazur.EquivalenceRelationResidualPermutationOpen
 public import FLT.Mazur.EquivalenceRelationResidualScalarExtension
 public import FLT.Mazur.EquivalenceRelationResidualSectionExtension
 public import FLT.Mazur.EquivalenceRelationRestrictedActionGraphs
+public import FLT.Mazur.EquivalenceRelationScalarDefectCharacters
 public import FLT.Mazur.EquivalenceRelationScalarFiberCorrections
 public import FLT.Mazur.EquivalenceRelationScalarLocalDetection
 public import FLT.Mazur.EquivalenceRelationScalarLocalEquations
 public import FLT.Mazur.EquivalenceRelationScalarLocalRanks
 public import FLT.Mazur.EquivalenceRelationScalarLocalRecovery
 public import FLT.Mazur.EquivalenceRelationScalarLocalStages
+public import FLT.Mazur.EquivalenceRelationScalarStratumThickenings
 public import FLT.Mazur.EquivalenceRelationScalarSupportedBaseChange
 public import FLT.Mazur.EquivalenceRelationSectionRebase
 public import FLT.Mazur.EquivalenceRelationSelfEmbeddingAction
@@ -5467,6 +5479,8 @@ public import FLT.Mazur.EquivalenceRelationSubframeTransferGraphErrors
 public import FLT.Mazur.EquivalenceRelationSubframeTransferRestriction
 public import FLT.Mazur.EquivalenceRelationUniformSourceOpen
 public import FLT.Mazur.EquivalenceRelationUniformVanishingOpen
+public import FLT.Mazur.EquivalenceRelationWholeScalarGeometry
+public import FLT.Mazur.EquivalenceRelationWholeScalarStrata
 public import FLT.Mazur.EtaleAffineSpaceDimension
 public import FLT.Mazur.EtaleAlgebraFiniteBranch
 public import FLT.Mazur.EtaleAlgebraReduced
@@ -6832,6 +6846,7 @@ public import FLT.Mazur.HilbertOrbitSelfEmbeddingDiscrepancy
 public import FLT.Mazur.HilbertOrderedAffineEnvelope
 public import FLT.Mazur.HilbertOrderedOriginalBoundary
 public import FLT.Mazur.HilbertOrderedStableNeighborhood
+public import FLT.Mazur.HilbertOriginalScalarStrata
 public import FLT.Mazur.HilbertOverlapRestriction
 public import FLT.Mazur.HilbertParameterAbelClass
 public import FLT.Mazur.HilbertParameterChartFactorization
@@ -11582,10 +11597,12 @@ public import FLT.Mazur.RingedSpaceIdealLocus
 public import FLT.Mazur.ScalarAlgebraicClosureTests
 public import FLT.Mazur.ScalarClosedGeometricLifts
 public import FLT.Mazur.ScalarClosedImageCoverage
+public import FLT.Mazur.ScalarClosedImageStrata
 public import FLT.Mazur.ScalarClosedPrincipalBranches
 public import FLT.Mazur.ScalarCohomology
 public import FLT.Mazur.ScalarCompatibleIntegerModel
 public import FLT.Mazur.ScalarComponentRankCeiling
+public import FLT.Mazur.ScalarConstructibleStrata
 public import FLT.Mazur.ScalarEndomorphismPullback
 public import FLT.Mazur.ScalarExtensionDirectSum
 public import FLT.Mazur.ScalarExtensionImageReduction
@@ -11610,6 +11627,8 @@ public import FLT.Mazur.ScalarQuotientResiduePresentation
 public import FLT.Mazur.ScalarResidueClosureGeometry
 public import FLT.Mazur.ScalarRestrictionFiniteness
 public import FLT.Mazur.ScalarRestrictionImage
+public import FLT.Mazur.ScalarStrataBoundaryRefinement
+public import FLT.Mazur.ScalarStratumThickenings
 public import FLT.Mazur.ScalarTensorExactFibers
 public import FLT.Mazur.ScalarTestIntegralFibers
 public import FLT.Mazur.ScalarTestKernelDescent
@@ -11618,6 +11637,7 @@ public import FLT.Mazur.ScalarTestKernelProducts
 public import FLT.Mazur.ScalarTestLocalizationKernels
 public import FLT.Mazur.ScalarTestResidualSeparation
 public import FLT.Mazur.ScalarTowerDivision
+public import FLT.Mazur.ScalarWholeFiberStrata
 public import FLT.Mazur.SchematicClosureFiniteSections
 public import FLT.Mazur.SchematicDenseBezoutFlat
 public import FLT.Mazur.SchematicDenseDedekindFlat
@@ -11938,6 +11958,7 @@ public import FLT.Mazur.SchemeGenericFppfTargetOpen
 public import FLT.Mazur.SchemeGeometricDescentCocycleTest
 public import FLT.Mazur.SchemeGeometricDescentData
 public import FLT.Mazur.SchemeGeometricFiberH0Comparison
+public import FLT.Mazur.SchemeGeometricNilpotentSections
 public import FLT.Mazur.SchemeGlueDataMap
 public import FLT.Mazur.SchemeGlueDataMapCartesian
 public import FLT.Mazur.SchemeIdempotentSupport
