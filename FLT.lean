@@ -13999,6 +13999,7 @@ public import FLT.Mazur.WeierstrassDividedExteriorCubicContraction
 public import FLT.Mazur.WeierstrassDividedExteriorIntersections
 public import FLT.Mazur.WeierstrassDividedExteriorLocalContraction
 public import FLT.Mazur.WeierstrassDividedExteriorNegation
+public import FLT.Mazur.WeierstrassDividedExteriorNegationStep
 public import FLT.Mazur.WeierstrassDividedExteriorOriginalOpen
 public import FLT.Mazur.WeierstrassDividedExteriorProper
 public import FLT.Mazur.WeierstrassDividedExteriorReassociation
