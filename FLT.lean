@@ -114,6 +114,7 @@ public import FLT.Assembly.FreyIrreducibility
 public import FLT.Assembly.FreyTraceInput
 public import FLT.Assembly.Inputs
 public import FLT.Assembly.Mazur
+public import FLT.Assembly.NarrowFreyFinal
 public import FLT.Assembly.NormalizedReducibility
 public import FLT.Assembly.PrimeField
 public import FLT.Assembly.PrimePowerFinal
