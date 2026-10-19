@@ -492,6 +492,7 @@ public import FLT.FreyCurve.Serre.VeluInfinityScaledCoordinates
 public import FLT.FreyCurve.Serre.VeluInfinityScaledEquation
 public import FLT.FreyCurve.Serre.VeluInfinityScaledGeneric
 public import FLT.FreyCurve.Serre.VeluInfinityScaledY
+public import FLT.FreyCurve.Serre.VeluInfinityTargetGeneric
 public import FLT.FreyCurve.Serre.VeluInfinityTargetOpen
 public import FLT.FreyCurve.Serre.VeluIntegralModel
 public import FLT.FreyCurve.Serre.VeluIntegralSums
