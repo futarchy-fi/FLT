@@ -15358,6 +15358,7 @@ public import FLT.Mazur.WeierstrassGenericClosureNegation
 public import FLT.Mazur.WeierstrassGenericClosureSmoothDensity
 public import FLT.Mazur.WeierstrassGenericClosureSmoothOperations
 public import FLT.Mazur.WeierstrassGenericClosureSmoothPart
+public import FLT.Mazur.WeierstrassGenericClosureSmoothRecovery
 public import FLT.Mazur.WeierstrassGenericClosureZero
 public import FLT.Mazur.WeierstrassGenericKernelClosure
 public import FLT.Mazur.WeierstrassGenericKernelRecovery
