@@ -4241,6 +4241,7 @@ public import FLT.Mazur.CyclicCharacteristicComparisonGeometry
 public import FLT.Mazur.CyclicCharacteristicComparisonNaturality
 public import FLT.Mazur.CyclicCharacteristicComparisonNoetherian
 public import FLT.Mazur.CyclicCharacteristicDisjointAction
+public import FLT.Mazur.CyclicCharacteristicDisjointArrowRecovery
 public import FLT.Mazur.CyclicCharacteristicDisjointAssociativity
 public import FLT.Mazur.CyclicCharacteristicDisjointCartesian
 public import FLT.Mazur.CyclicCharacteristicDisjointComparisonArrows
