@@ -484,6 +484,7 @@ public import FLT.FreyCurve.Serre.VeluTranslation
 public import FLT.FreyCurve.TorsionQuotientWitness
 public import FLT.FreyCurve.VeluIntegralAway
 public import FLT.FreyCurve.VeluLocalIntegralTarget
+public import FLT.FreyCurve.VeluPadicIntegralAway
 public import FLT.FreyCurve.VeluTargetGeometry
 public import FLT.FreyCurve.VeluTargetTwoTorsion
 public import FLT.FreyCurve.VeluTargetWitness
