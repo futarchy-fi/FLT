@@ -15328,6 +15328,7 @@ public import FLT.Mazur.WeierstrassGlobalNegation
 public import FLT.Mazur.WeierstrassGlobalNegationInvolution
 public import FLT.Mazur.WeierstrassGlobalPolynomialSwap
 public import FLT.Mazur.WeierstrassGroupHomCoefficient
+public import FLT.Mazur.WeierstrassGroupHomVariableChange
 public import FLT.Mazur.WeierstrassHorizontalBranchRestriction
 public import FLT.Mazur.WeierstrassHorizontalConicPunctureResidue
 public import FLT.Mazur.WeierstrassHorizontalFractionHomExt
