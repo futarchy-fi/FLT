@@ -6704,6 +6704,7 @@ public import FLT.Mazur.HilbertSourceClosedBoundaryObstructions
 public import FLT.Mazur.HilbertSourceCoefficientwiseSurjectivity
 public import FLT.Mazur.HilbertSourceCompactRelation
 public import FLT.Mazur.HilbertSourceCompatibleModule
+public import FLT.Mazur.HilbertSourceCompleteQuotientCorrections
 public import FLT.Mazur.HilbertSourceConstructedBadAffineCover
 public import FLT.Mazur.HilbertSourceConstructedBadPrimeLifts
 public import FLT.Mazur.HilbertSourceConstructedBoundaryUnitCover
