@@ -8087,6 +8087,7 @@ public import FLT.Mazur.OpenCoverDimension
 public import FLT.Mazur.OpenDirectImageCohomology
 public import FLT.Mazur.OpenDirectImageNaturality
 public import FLT.Mazur.OpenDirectImageRestriction
+public import FLT.Mazur.OpenFiberSection
 public import FLT.Mazur.OpenFiberSectionRegularity
 public import FLT.Mazur.OpenFrameSectionCoordinates
 public import FLT.Mazur.OpenIdealExtensionBaseChange
