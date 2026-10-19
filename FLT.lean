@@ -11464,6 +11464,7 @@ public import FLT.Mazur.SchemeMonoIdealPullback
 public import FLT.Mazur.SchemeMonoidUnitEvaluation
 public import FLT.Mazur.SchemeNaturalUnitLocus
 public import FLT.Mazur.SchemeNilpotentSectionDetection
+public import FLT.Mazur.SchemeNoetherianUniformKernelPower
 public import FLT.Mazur.SchemeNormIndependentGroundTests
 public import FLT.Mazur.SchemeNormalizedRecoveryOverlap
 public import FLT.Mazur.SchemeOpenChartRange
