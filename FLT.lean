@@ -2772,6 +2772,7 @@ public import FLT.Mazur.AffineBoundaryFlatTensorEquations
 public import FLT.Mazur.AffineBoundaryFlatTestGenerators
 public import FLT.Mazur.AffineBoundaryFppfScalarTests
 public import FLT.Mazur.AffineBoundaryGenericLocalTests
+public import FLT.Mazur.AffineBoundaryGeometricFiberTests
 public import FLT.Mazur.AffineBoundaryIndependentFlatTests
 public import FLT.Mazur.AffineBoundaryIndependentIntegralTests
 public import FLT.Mazur.AffineBoundaryIntegralFlatCriterion
@@ -6695,6 +6696,7 @@ public import FLT.Mazur.HilbertSourceFiniteOpenNumerators
 public import FLT.Mazur.HilbertSourceFlatScalarEquations
 public import FLT.Mazur.HilbertSourceFlatTensorEquations
 public import FLT.Mazur.HilbertSourceGeneratedLocalizedSurjectivity
+public import FLT.Mazur.HilbertSourceGeometricFiberTests
 public import FLT.Mazur.HilbertSourceHigherScalarValuations
 public import FLT.Mazur.HilbertSourceIntegralFlatTests
 public import FLT.Mazur.HilbertSourceLocalRankCeilingLifts
@@ -7076,6 +7078,7 @@ public import FLT.Mazur.InvariantBoundaryPullback
 public import FLT.Mazur.InvariantFiniteRelationPrincipal
 public import FLT.Mazur.InvariantFlatTensorAction
 public import FLT.Mazur.InvariantFlatTensorComparison
+public import FLT.Mazur.InvariantGeometricFiberTests
 public import FLT.Mazur.InvariantIdealRelation
 public import FLT.Mazur.InvariantLocalizationAction
 public import FLT.Mazur.InvariantLocalizationComparison
@@ -11282,6 +11285,7 @@ public import FLT.Mazur.RingEquivGrading
 public import FLT.Mazur.RingPairInvariantFlatScalars
 public import FLT.Mazur.RingPairInvariantLocalization
 public import FLT.Mazur.RingedSpaceIdealLocus
+public import FLT.Mazur.ScalarAlgebraicClosureTests
 public import FLT.Mazur.ScalarCohomology
 public import FLT.Mazur.ScalarCompatibleIntegerModel
 public import FLT.Mazur.ScalarComponentRankCeiling
@@ -11290,6 +11294,8 @@ public import FLT.Mazur.ScalarExtensionDirectSum
 public import FLT.Mazur.ScalarExtensionImageReduction
 public import FLT.Mazur.ScalarExtensionIsomorphismDescent
 public import FLT.Mazur.ScalarExtensionPullbackDescent
+public import FLT.Mazur.ScalarGeometricFiberTests
+public import FLT.Mazur.ScalarGeometricPointTests
 public import FLT.Mazur.ScalarIdealNilpotenceOpen
 public import FLT.Mazur.ScalarIdealNilpotenceResidual
 public import FLT.Mazur.ScalarImageFiniteVanishing
@@ -11304,6 +11310,7 @@ public import FLT.Mazur.ScalarQuotientImageReduction
 public import FLT.Mazur.ScalarQuotientResiduePresentation
 public import FLT.Mazur.ScalarRestrictionFiniteness
 public import FLT.Mazur.ScalarRestrictionImage
+public import FLT.Mazur.ScalarTensorExactFibers
 public import FLT.Mazur.ScalarTestIntegralFibers
 public import FLT.Mazur.ScalarTestKernelDescent
 public import FLT.Mazur.ScalarTestKernelFlatBaseChange
