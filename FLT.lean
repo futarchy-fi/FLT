@@ -4161,6 +4161,7 @@ public import FLT.Mazur.CyclicCharacteristicDisjointComposableCharts
 public import FLT.Mazur.CyclicCharacteristicDisjointComposition
 public import FLT.Mazur.CyclicCharacteristicDisjointCompositionComponents
 public import FLT.Mazur.CyclicCharacteristicDisjointCompositionTests
+public import FLT.Mazur.CyclicCharacteristicDisjointInverseDiagrams
 public import FLT.Mazur.CyclicCharacteristicDisjointQuotient
 public import FLT.Mazur.CyclicCharacteristicDisjointQuotientCover
 public import FLT.Mazur.CyclicCharacteristicDisjointUnitDiagrams
