@@ -16767,6 +16767,7 @@ public import FLT.Mazur.WeierstrassSuccessiveLaurentSlopeReduction
 public import FLT.Mazur.WeierstrassSuccessiveLocalAction
 public import FLT.Mazur.WeierstrassSuccessiveNegation
 public import FLT.Mazur.WeierstrassSuccessiveNegationCenter
+public import FLT.Mazur.WeierstrassSuccessiveNegationHorizontal
 public import FLT.Mazur.WeierstrassSuccessiveNegationOverlap
 public import FLT.Mazur.WeierstrassSuccessiveNilpotentBranch
 public import FLT.Mazur.WeierstrassSuccessiveNilpotentNodeChart
