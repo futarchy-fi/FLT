@@ -4239,6 +4239,7 @@ public import FLT.Mazur.CyclicCharacteristicOddRelabeledAuxiliary
 public import FLT.Mazur.CyclicCharacteristicOddRelabeledGenerator
 public import FLT.Mazur.CyclicCharacteristicOrbit
 public import FLT.Mazur.CyclicCharacteristicOrbitCoequalizer
+public import FLT.Mazur.CyclicCharacteristicOrbitComparisons
 public import FLT.Mazur.CyclicCharacteristicOrbitOpens
 public import FLT.Mazur.CyclicCharacteristicOrbitTopology
 public import FLT.Mazur.CyclicCharacteristicParameterFiniteType
