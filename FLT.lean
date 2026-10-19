@@ -505,6 +505,7 @@ public import FLT.FreyCurve.Serre.VeluPrimeKernel
 public import FLT.FreyCurve.Serre.VeluQuotient
 public import FLT.FreyCurve.Serre.VeluRational
 public import FLT.FreyCurve.Serre.VeluSmallRamification
+public import FLT.FreyCurve.Serre.VeluSourceChart
 public import FLT.FreyCurve.Serre.VeluSpecialization
 public import FLT.FreyCurve.Serre.VeluTranslation
 public import FLT.FreyCurve.TorsionQuotientWitness
