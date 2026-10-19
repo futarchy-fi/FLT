@@ -474,6 +474,7 @@ public import FLT.FreyCurve.Serre.VeluIntegralModel
 public import FLT.FreyCurve.Serre.VeluIntegralSums
 public import FLT.FreyCurve.Serre.VeluKernelDescentAlgebra
 public import FLT.FreyCurve.Serre.VeluKernelGaloisLabels
+public import FLT.FreyCurve.Serre.VeluKernelGeometricComparison
 public import FLT.FreyCurve.Serre.VeluKernelParametrization
 public import FLT.FreyCurve.Serre.VeluKernelScalarExtension
 public import FLT.FreyCurve.Serre.VeluLocalIntegralModel
