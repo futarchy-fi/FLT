@@ -2745,6 +2745,7 @@ public import FLT.Mazur.AffineBasisSumMaps
 public import FLT.Mazur.AffineBoundaryComponentEquations
 public import FLT.Mazur.AffineBoundaryComponentSpecialization
 public import FLT.Mazur.AffineBoundaryFlatScalarEquations
+public import FLT.Mazur.AffineBoundaryFlatTensorEquations
 public import FLT.Mazur.AffineBoundaryFppfScalarTests
 public import FLT.Mazur.AffineBoundaryGenericLocalTests
 public import FLT.Mazur.AffineBoundaryIndependentFlatTests
@@ -3181,6 +3182,7 @@ public import FLT.Mazur.AffineModuleGlobalSections
 public import FLT.Mazur.AffineModulePullbackSections
 public import FLT.Mazur.AffineModuleSupport
 public import FLT.Mazur.AffineMorphismAlgebraMap
+public import FLT.Mazur.AffineMorphismTestCover
 public import FLT.Mazur.AffineNamedRefinementCompositionRecognition
 public import FLT.Mazur.AffineNamedRefinementNaturality
 public import FLT.Mazur.AffineNamedRefinementReconstruction
@@ -4193,17 +4195,24 @@ public import FLT.Mazur.CyclicCharacteristicParameterSource
 public import FLT.Mazur.CyclicCharacteristicPrescribedCover
 public import FLT.Mazur.CyclicCharacteristicPrescribedNeighborhood
 public import FLT.Mazur.CyclicCharacteristicProductAffineClassification
+public import FLT.Mazur.CyclicCharacteristicProductAffineSchemeTests
 public import FLT.Mazur.CyclicCharacteristicProductChartTests
 public import FLT.Mazur.CyclicCharacteristicProductComparisonCharts
 public import FLT.Mazur.CyclicCharacteristicProductComparisonDiagram
 public import FLT.Mazur.CyclicCharacteristicProductComparisonGluing
+public import FLT.Mazur.CyclicCharacteristicProductCompatibleClassification
+public import FLT.Mazur.CyclicCharacteristicProductCompatibleFactorization
 public import FLT.Mazur.CyclicCharacteristicProductCompatibleTests
 public import FLT.Mazur.CyclicCharacteristicProductDiagramTopology
 public import FLT.Mazur.CyclicCharacteristicProductFullAffineClassification
+public import FLT.Mazur.CyclicCharacteristicProductLocalParameters
+public import FLT.Mazur.CyclicCharacteristicProductLocalRestriction
 public import FLT.Mazur.CyclicCharacteristicProductOpenCoordinates
 public import FLT.Mazur.CyclicCharacteristicProductOriginalSubgroupLocus
 public import FLT.Mazur.CyclicCharacteristicProductRefinementAlgebra
 public import FLT.Mazur.CyclicCharacteristicProductRefinementTransport
+public import FLT.Mazur.CyclicCharacteristicProductSchemeClassification
+public import FLT.Mazur.CyclicCharacteristicProductSpectrumTests
 public import FLT.Mazur.CyclicCharacteristicProductSubgroupAffineCurve
 public import FLT.Mazur.CyclicCharacteristicProductSubgroupCharts
 public import FLT.Mazur.CyclicCharacteristicProductSubgroupDiagram
@@ -4211,6 +4220,7 @@ public import FLT.Mazur.CyclicCharacteristicProductSubgroupGluing
 public import FLT.Mazur.CyclicCharacteristicProductSubgroupIdentification
 public import FLT.Mazur.CyclicCharacteristicProductSubgroupInclusion
 public import FLT.Mazur.CyclicCharacteristicProductTestRestriction
+public import FLT.Mazur.CyclicCharacteristicProductTestUniqueness
 public import FLT.Mazur.CyclicCharacteristicProductUniversalCharts
 public import FLT.Mazur.CyclicCharacteristicProductUniversalComparison
 public import FLT.Mazur.CyclicCharacteristicProductUniversalRefinement
@@ -5765,6 +5775,9 @@ public import FLT.Mazur.FlatQuotientIdealFiber
 public import FLT.Mazur.FlatQuotientLocalCartier
 public import FLT.Mazur.FlatScalarExactness
 public import FLT.Mazur.FlatScalarHomology
+public import FLT.Mazur.FlatScalarKernelExtension
+public import FLT.Mazur.FlatScalarPowerKernel
+public import FLT.Mazur.FlatScalarTestDenominators
 public import FLT.Mazur.FlatSectionEqualizer
 public import FLT.Mazur.FlatSectionLiftCertificate
 public import FLT.Mazur.FlatSectionLiftIdeal
@@ -5807,6 +5820,7 @@ public import FLT.Mazur.GeneralizedCurveBaseChangeCoherence
 public import FLT.Mazur.GeneralizedCurveBaseChangeCompEq
 public import FLT.Mazur.GeneralizedCurveBaseChangeIso
 public import FLT.Mazur.GeneralizedCurveBaseChangeSquare
+public import FLT.Mazur.GeneralizedCurveBaseIsoEquivalence
 public import FLT.Mazur.GeneralizedCurveCartierDescent
 public import FLT.Mazur.GeneralizedCurveCartierGenerator
 public import FLT.Mazur.GeneralizedCurveCartierStalks
@@ -6640,6 +6654,7 @@ public import FLT.Mazur.HilbertSourceFiniteLinearOpenLifts
 public import FLT.Mazur.HilbertSourceFiniteMultiplierTests
 public import FLT.Mazur.HilbertSourceFiniteOpenNumerators
 public import FLT.Mazur.HilbertSourceFlatScalarEquations
+public import FLT.Mazur.HilbertSourceFlatTensorEquations
 public import FLT.Mazur.HilbertSourceGeneratedLocalizedSurjectivity
 public import FLT.Mazur.HilbertSourceHigherScalarValuations
 public import FLT.Mazur.HilbertSourceLocalRankCeilingLifts
@@ -11242,6 +11257,7 @@ public import FLT.Mazur.ScalarImageOriginalGenerators
 public import FLT.Mazur.ScalarImageResidueGenerators
 public import FLT.Mazur.ScalarImageSourceGenerators
 public import FLT.Mazur.ScalarLocalizedIdealNilpotence
+public import FLT.Mazur.ScalarNilpotenceFlatBaseChange
 public import FLT.Mazur.ScalarNilpotenceMinimalFiber
 public import FLT.Mazur.ScalarQuotientImagePresentation
 public import FLT.Mazur.ScalarQuotientImageReduction
@@ -11249,6 +11265,7 @@ public import FLT.Mazur.ScalarQuotientResiduePresentation
 public import FLT.Mazur.ScalarRestrictionFiniteness
 public import FLT.Mazur.ScalarRestrictionImage
 public import FLT.Mazur.ScalarTestKernelDescent
+public import FLT.Mazur.ScalarTestKernelFlatBaseChange
 public import FLT.Mazur.ScalarTestKernelProducts
 public import FLT.Mazur.ScalarTestLocalizationKernels
 public import FLT.Mazur.ScalarTestResidualSeparation
