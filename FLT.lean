@@ -510,6 +510,7 @@ public import FLT.FreyCurve.Serre.VeluInfinityScaledCoordinates
 public import FLT.FreyCurve.Serre.VeluInfinityScaledEquation
 public import FLT.FreyCurve.Serre.VeluInfinityScaledGeneric
 public import FLT.FreyCurve.Serre.VeluInfinityScaledY
+public import FLT.FreyCurve.Serre.VeluInfinitySimpleFiber
 public import FLT.FreyCurve.Serre.VeluInfinitySimpleFiberIdeal
 public import FLT.FreyCurve.Serre.VeluInfinitySimpleNeighborhood
 public import FLT.FreyCurve.Serre.VeluInfinitySimpleRing
