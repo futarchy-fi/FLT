@@ -11395,6 +11395,7 @@ public import FLT.Mazur.RelativeRelationInvariantSectionRings
 public import FLT.Mazur.RelativeRelationInvariantSections
 public import FLT.Mazur.RelativeRelationInvariantSheaf
 public import FLT.Mazur.RelativeRelationLiftLocus
+public import FLT.Mazur.RelativeRelationMinimalScalarCharacters
 public import FLT.Mazur.RelativeRelationMinimalScalarEndpoints
 public import FLT.Mazur.RelativeRelationMonicBaseLift
 public import FLT.Mazur.RelativeRelationMonicSeedOpenQuotient
