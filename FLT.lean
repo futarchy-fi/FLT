@@ -577,6 +577,7 @@ public import FLT.FreyCurve.Serre.VeluLocalIntegralSmoothKernelGroup
 public import FLT.FreyCurve.Serre.VeluLocalIntegralSmoothKernelRetention
 public import FLT.FreyCurve.Serre.VeluLocalPointMorphism
 public import FLT.FreyCurve.Serre.VeluLocalPointTransport
+public import FLT.FreyCurve.Serre.VeluLocalResolvedKernelSmooth
 public import FLT.FreyCurve.Serre.VeluMap
 public import FLT.FreyCurve.Serre.VeluOrdinary
 public import FLT.FreyCurve.Serre.VeluPadicGenericPointComparison
@@ -5006,6 +5007,7 @@ public import FLT.Mazur.EllipticResolvedIdentityCharacter
 public import FLT.Mazur.EllipticResolvedIdentityChart
 public import FLT.Mazur.EllipticResolvedIdentityPoints
 public import FLT.Mazur.EllipticResolvedInitialCoverage
+public import FLT.Mazur.EllipticResolvedIntegralSmoothSection
 public import FLT.Mazur.EllipticResolvedLabelDifference
 public import FLT.Mazur.EllipticResolvedLastExteriorCover
 public import FLT.Mazur.EllipticResolvedLaurentEquality
@@ -11551,6 +11553,7 @@ public import FLT.Mazur.ScalarTestKernelProducts
 public import FLT.Mazur.ScalarTestLocalizationKernels
 public import FLT.Mazur.ScalarTestResidualSeparation
 public import FLT.Mazur.ScalarTowerDivision
+public import FLT.Mazur.SchematicClosureFiniteSections
 public import FLT.Mazur.SchematicDenseBezoutFlat
 public import FLT.Mazur.SchematicDenseDedekindFlat
 public import FLT.Mazur.SchematicDescentGluing
@@ -15453,6 +15456,7 @@ public import FLT.Mazur.WeierstrassGenericClosureSmoothPart
 public import FLT.Mazur.WeierstrassGenericClosureSmoothRecovery
 public import FLT.Mazur.WeierstrassGenericClosureZero
 public import FLT.Mazur.WeierstrassGenericKernelClosure
+public import FLT.Mazur.WeierstrassGenericKernelRationalPoint
 public import FLT.Mazur.WeierstrassGenericKernelRecovery
 public import FLT.Mazur.WeierstrassGenericKernelSmoothMultiplication
 public import FLT.Mazur.WeierstrassGenericSmoothGroupComparison
@@ -16312,6 +16316,9 @@ public import FLT.Mazur.WeierstrassResidueOneGonIso
 public import FLT.Mazur.WeierstrassResidueTangentCoefficientTower
 public import FLT.Mazur.WeierstrassResidueTangentComponentData
 public import FLT.Mazur.WeierstrassResidueTangentEquationData
+public import FLT.Mazur.WeierstrassResolvedKernelSections
+public import FLT.Mazur.WeierstrassResolvedKernelSmoothCoverage
+public import FLT.Mazur.WeierstrassResolvedKernelSmoothEmbedding
 public import FLT.Mazur.WeierstrassRetainedAdjacentEvaluation
 public import FLT.Mazur.WeierstrassRetainedAdjacentFactors
 public import FLT.Mazur.WeierstrassRetainedAdjacentRoots
