@@ -2958,6 +2958,7 @@ public import FLT.Mazur.AffineFunctionUniversal
 public import FLT.Mazur.AffineGeneratorPointCoefficientTransport
 public import FLT.Mazur.AffineGeneratorPointLinearTransport
 public import FLT.Mazur.AffineGenericClosure
+public import FLT.Mazur.AffineGenericFiniteOpen
 public import FLT.Mazur.AffineGenericFlatOpen
 public import FLT.Mazur.AffineGeometricChartDatum
 public import FLT.Mazur.AffineGeometricChartRecognition
@@ -4247,6 +4248,7 @@ public import FLT.Mazur.CyclicCharacteristicComparisonGeometry
 public import FLT.Mazur.CyclicCharacteristicComparisonNaturality
 public import FLT.Mazur.CyclicCharacteristicComparisonNoetherian
 public import FLT.Mazur.CyclicCharacteristicDisjointAction
+public import FLT.Mazur.CyclicCharacteristicDisjointArrowRecovery
 public import FLT.Mazur.CyclicCharacteristicDisjointAssociativity
 public import FLT.Mazur.CyclicCharacteristicDisjointCartesian
 public import FLT.Mazur.CyclicCharacteristicDisjointComparisonArrows
@@ -4279,8 +4281,13 @@ public import FLT.Mazur.CyclicCharacteristicFiniteNeighborhood
 public import FLT.Mazur.CyclicCharacteristicFiniteResidualSections
 public import FLT.Mazur.CyclicCharacteristicFiniteTypeAtlas
 public import FLT.Mazur.CyclicCharacteristicFixedCover
+public import FLT.Mazur.CyclicCharacteristicIntegerFunctionRelation
+public import FLT.Mazur.CyclicCharacteristicIntegerInvariantReconstruction
+public import FLT.Mazur.CyclicCharacteristicIntegerSectionTransport
 public import FLT.Mazur.CyclicCharacteristicIntegerSourceAssembly
 public import FLT.Mazur.CyclicCharacteristicIntegerSourceCover
+public import FLT.Mazur.CyclicCharacteristicIntegerSourceFunctions
+public import FLT.Mazur.CyclicCharacteristicIntegerSourceLocallyRinged
 public import FLT.Mazur.CyclicCharacteristicInvariantAffineComparison
 public import FLT.Mazur.CyclicCharacteristicInvariantAffineCover
 public import FLT.Mazur.CyclicCharacteristicInvariantAffineCoverage
@@ -4380,10 +4387,13 @@ public import FLT.Mazur.CyclicCharacteristicQuotientUnmarkedDescent
 public import FLT.Mazur.CyclicCharacteristicRelabelSections
 public import FLT.Mazur.CyclicCharacteristicRelabeledPrescribedCover
 public import FLT.Mazur.CyclicCharacteristicRelabeledPrescribedSections
+public import FLT.Mazur.CyclicCharacteristicResidualAffineComparison
 public import FLT.Mazur.CyclicCharacteristicResidualChartQuotient
+public import FLT.Mazur.CyclicCharacteristicResidualPrincipalOpens
 public import FLT.Mazur.CyclicCharacteristicResidualProjection
 public import FLT.Mazur.CyclicCharacteristicResidualRelation
 public import FLT.Mazur.CyclicCharacteristicResidualSectionComparison
+public import FLT.Mazur.CyclicCharacteristicResidualSectionEquivalence
 public import FLT.Mazur.CyclicCharacteristicResidualSectionReconstruction
 public import FLT.Mazur.CyclicCharacteristicResidualTransitionDescent
 public import FLT.Mazur.CyclicCharacteristicResidualTransitionTests
@@ -5226,6 +5236,7 @@ public import FLT.Mazur.EquivalenceRelationCompleteIdealInvariant
 public import FLT.Mazur.EquivalenceRelationCompleteInterior
 public import FLT.Mazur.EquivalenceRelationCompleteInteriorFinite
 public import FLT.Mazur.EquivalenceRelationCompleteMixedCoefficients
+public import FLT.Mazur.EquivalenceRelationCompleteNeighborhoodCharacters
 public import FLT.Mazur.EquivalenceRelationCompleteOpenCoefficients
 public import FLT.Mazur.EquivalenceRelationCompletePointLocus
 public import FLT.Mazur.EquivalenceRelationCompleteQuotientCorrections
@@ -5264,6 +5275,7 @@ public import FLT.Mazur.EquivalenceRelationFiniteTargetSaturation
 public import FLT.Mazur.EquivalenceRelationFrameNormalization
 public import FLT.Mazur.EquivalenceRelationFrameRebaseGeometric
 public import FLT.Mazur.EquivalenceRelationFrameRebaseLaws
+public import FLT.Mazur.EquivalenceRelationGenericCompleteNeighborhood
 public import FLT.Mazur.EquivalenceRelationGeometricTestExtensions
 public import FLT.Mazur.EquivalenceRelationHigherScalarValuations
 public import FLT.Mazur.EquivalenceRelationHigherTestAtlas
@@ -6531,6 +6543,7 @@ public import FLT.Mazur.HilbertCompleteChartBoundaryTests
 public import FLT.Mazur.HilbertCompleteChartMixedVanishing
 public import FLT.Mazur.HilbertCompleteChartOriginalCertificates
 public import FLT.Mazur.HilbertCompleteChartOriginalSections
+public import FLT.Mazur.HilbertCompleteChartScalarIso
 public import FLT.Mazur.HilbertCompleteFrameCardinality
 public import FLT.Mazur.HilbertCompleteGeometricTuple
 public import FLT.Mazur.HilbertCompleteInfinitesimalSources
@@ -6578,6 +6591,8 @@ public import FLT.Mazur.HilbertFullInteriorFiniteKernel
 public import FLT.Mazur.HilbertFullInteriorQuotientChart
 public import FLT.Mazur.HilbertFullRelationFiberRebase
 public import FLT.Mazur.HilbertFullRelationOrderedPoints
+public import FLT.Mazur.HilbertGenericCompleteNeighborhood
+public import FLT.Mazur.HilbertGenericOriginalLifting
 public import FLT.Mazur.HilbertGrassmannianAffineMap
 public import FLT.Mazur.HilbertGrassmannianFamilyCompatibility
 public import FLT.Mazur.HilbertGrassmannianGluing
@@ -10363,6 +10378,7 @@ public import FLT.Mazur.PowerSeriesStageRingLift
 public import FLT.Mazur.PowerSeriesSubstitutionEquiv
 public import FLT.Mazur.PowerSeriesTruncatedPolynomial
 public import FLT.Mazur.PresentedFiniteCoefficientBranch
+public import FLT.Mazur.PresheafedOpenFactorSections
 public import FLT.Mazur.PrimeCharacteristicScalar
 public import FLT.Mazur.PrimeCoefficientLocalization
 public import FLT.Mazur.PrimeCotangentSmoothDimension
@@ -11005,6 +11021,7 @@ public import FLT.Mazur.QuadraticRootOppositeBranch
 public import FLT.Mazur.QuasiCoherentAffineBasePullback
 public import FLT.Mazur.QuasiCoherentSchemePullback
 public import FLT.Mazur.QuasiCompactEtaleGeometricSections
+public import FLT.Mazur.QuasiCompactGenericFiniteOpen
 public import FLT.Mazur.QuasiCompactGenericFlatOpen
 public import FLT.Mazur.QuasiFiniteCoefficientQuotient
 public import FLT.Mazur.QuasiFiniteFlatDescent
@@ -11798,6 +11815,7 @@ public import FLT.Mazur.SchemeFppfSourceLineMapPreimage
 public import FLT.Mazur.SchemeFppfTargetOpen
 public import FLT.Mazur.SchemeFpqcOpenSectionDescent
 public import FLT.Mazur.SchemeFunctionGroundChange
+public import FLT.Mazur.SchemeGenericFiniteTargetOpen
 public import FLT.Mazur.SchemeGenericFlatTargetOpen
 public import FLT.Mazur.SchemeGenericFppfTargetOpen
 public import FLT.Mazur.SchemeGeometricDescentCocycleTest
