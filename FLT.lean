@@ -472,9 +472,16 @@ public import FLT.FreyCurve.Serre.VeluIdentity
 public import FLT.FreyCurve.Serre.VeluInfinity
 public import FLT.FreyCurve.Serre.VeluIntegralModel
 public import FLT.FreyCurve.Serre.VeluIntegralSums
+public import FLT.FreyCurve.Serre.VeluKernelAffineChart
+public import FLT.FreyCurve.Serre.VeluKernelBaseChangeScheme
 public import FLT.FreyCurve.Serre.VeluKernelDescentAlgebra
 public import FLT.FreyCurve.Serre.VeluKernelGaloisLabels
+public import FLT.FreyCurve.Serre.VeluKernelGeometricComparison
 public import FLT.FreyCurve.Serre.VeluKernelParametrization
+public import FLT.FreyCurve.Serre.VeluKernelRationalCoordinates
+public import FLT.FreyCurve.Serre.VeluKernelRationalEvaluation
+public import FLT.FreyCurve.Serre.VeluKernelRationalMap
+public import FLT.FreyCurve.Serre.VeluKernelScalarExtension
 public import FLT.FreyCurve.Serre.VeluLocalIntegralModel
 public import FLT.FreyCurve.Serre.VeluMap
 public import FLT.FreyCurve.Serre.VeluOrdinary
@@ -870,6 +877,7 @@ public import FLT.GroupScheme.DivisionResidueFibreComparison
 public import FLT.GroupScheme.DivisionResidueFiniteCharts
 public import FLT.GroupScheme.DivisionResidueLocalCI
 public import FLT.GroupScheme.DivisionResidueRegularPresentation
+public import FLT.GroupScheme.EquivariantScalarExtension
 public import FLT.GroupScheme.EtaleBaseChangeTower
 public import FLT.GroupScheme.EtaleClosedImmersion
 public import FLT.GroupScheme.EtaleGenericMorphismExtension
@@ -3622,6 +3630,7 @@ public import FLT.Mazur.BoundaryCorrectionCokernelBaseChange
 public import FLT.Mazur.BoundaryCorrectionCokernelClass
 public import FLT.Mazur.BoundaryCorrectionCompatibleBaseChange
 public import FLT.Mazur.BoundaryCorrectionCompatibleErrors
+public import FLT.Mazur.BoundaryCorrectionDenominators
 public import FLT.Mazur.BoundaryCorrectionFaithfulCoefficients
 public import FLT.Mazur.BoundaryCorrectionFiniteCokernel
 public import FLT.Mazur.BoundaryCorrectionFiniteReduction
@@ -3638,6 +3647,7 @@ public import FLT.Mazur.BoundaryCorrectionMixedBaseChange
 public import FLT.Mazur.BoundaryCorrectionMixedCokernel
 public import FLT.Mazur.BoundaryCorrectionMixedNumerators
 public import FLT.Mazur.BoundaryCorrectionOperatorIndependence
+public import FLT.Mazur.BoundaryCorrectionQuotient
 public import FLT.Mazur.BoundaryCorrectionReductionCertificate
 public import FLT.Mazur.BoundaryCorrectionTensorCoordinates
 public import FLT.Mazur.BoundaryExchangeLocalization
@@ -6551,6 +6561,9 @@ public import FLT.Mazur.HilbertSourceConstructedOpenLifts
 public import FLT.Mazur.HilbertSourceConstructedOpenPrimeTests
 public import FLT.Mazur.HilbertSourceConstructedOpenSections
 public import FLT.Mazur.HilbertSourceConstructedRelationNoetherian
+public import FLT.Mazur.HilbertSourceCorrectedQuotient
+public import FLT.Mazur.HilbertSourceCorrectionDenominators
+public import FLT.Mazur.HilbertSourceCorrectionPatching
 public import FLT.Mazur.HilbertSourceExactCenterValuations
 public import FLT.Mazur.HilbertSourceFiniteCompletenessTests
 public import FLT.Mazur.HilbertSourceFiniteLinearOpenLifts
