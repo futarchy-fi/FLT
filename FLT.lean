@@ -566,6 +566,7 @@ public import FLT.FreyCurve.Serre.VeluPrimeExactTarget
 public import FLT.FreyCurve.Serre.VeluPrimeGlobalKernelRank
 public import FLT.FreyCurve.Serre.VeluPrimeKernel
 public import FLT.FreyCurve.Serre.VeluPrimeKernelFiberComparison
+public import FLT.FreyCurve.Serre.VeluPrimeRationalMorphism
 public import FLT.FreyCurve.Serre.VeluQuotient
 public import FLT.FreyCurve.Serre.VeluRational
 public import FLT.FreyCurve.Serre.VeluRationalDomainCover
