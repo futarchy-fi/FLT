@@ -4275,6 +4275,7 @@ public import FLT.Mazur.CyclicCharacteristicFiniteTypeAtlas
 public import FLT.Mazur.CyclicCharacteristicFixedCover
 public import FLT.Mazur.CyclicCharacteristicIntegerSourceAssembly
 public import FLT.Mazur.CyclicCharacteristicIntegerSourceCover
+public import FLT.Mazur.CyclicCharacteristicIntegerSourceFunctions
 public import FLT.Mazur.CyclicCharacteristicInvariantAffineComparison
 public import FLT.Mazur.CyclicCharacteristicInvariantAffineCover
 public import FLT.Mazur.CyclicCharacteristicInvariantAffineCoverage
