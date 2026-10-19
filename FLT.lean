@@ -467,6 +467,10 @@ public import FLT.FreyCurve.Serre.VeluEvaluation
 public import FLT.FreyCurve.Serre.VeluExactKernel
 public import FLT.FreyCurve.Serre.VeluFunctionField
 public import FLT.FreyCurve.Serre.VeluGenericAdditivity
+public import FLT.FreyCurve.Serre.VeluGenericChartMorphism
+public import FLT.FreyCurve.Serre.VeluGenericFunctionFieldHom
+public import FLT.FreyCurve.Serre.VeluGenericQuadraticRelation
+public import FLT.FreyCurve.Serre.VeluGenericXField
 public import FLT.FreyCurve.Serre.VeluGeometricKernelScheme
 public import FLT.FreyCurve.Serre.VeluHom
 public import FLT.FreyCurve.Serre.VeluIdentity
@@ -479,14 +483,18 @@ public import FLT.FreyCurve.Serre.VeluKernelClosedDescent
 public import FLT.FreyCurve.Serre.VeluKernelDescentAlgebra
 public import FLT.FreyCurve.Serre.VeluKernelGaloisLabels
 public import FLT.FreyCurve.Serre.VeluKernelGeometricComparison
+public import FLT.FreyCurve.Serre.VeluKernelInclusionMultiplication
 public import FLT.FreyCurve.Serre.VeluKernelMorphismComparison
+public import FLT.FreyCurve.Serre.VeluKernelPairDetection
 public import FLT.FreyCurve.Serre.VeluKernelParametrization
+public import FLT.FreyCurve.Serre.VeluKernelProductCover
 public import FLT.FreyCurve.Serre.VeluKernelRationalCoordinates
 public import FLT.FreyCurve.Serre.VeluKernelRationalDegree
 public import FLT.FreyCurve.Serre.VeluKernelRationalEvaluation
 public import FLT.FreyCurve.Serre.VeluKernelRationalGroup
 public import FLT.FreyCurve.Serre.VeluKernelRationalMap
 public import FLT.FreyCurve.Serre.VeluKernelRationalMultiplication
+public import FLT.FreyCurve.Serre.VeluKernelRationalSubgroup
 public import FLT.FreyCurve.Serre.VeluKernelScalarExtension
 public import FLT.FreyCurve.Serre.VeluKernelSectionComparison
 public import FLT.FreyCurve.Serre.VeluLocalIntegralModel
@@ -849,6 +857,7 @@ public import FLT.GroupScheme.ConstantMuThreeTorsion
 public import FLT.GroupScheme.ConstantPowerCharacters
 public import FLT.GroupScheme.ConstantPowerCoherence
 public import FLT.GroupScheme.ConstantPowerResidues
+public import FLT.GroupScheme.ConstantProductSections
 public import FLT.GroupScheme.ConstantRationalCartierPeriod
 public import FLT.GroupScheme.ConstantRationalHodgeTateDlog
 public import FLT.GroupScheme.ConstantRationalPowerLevels
