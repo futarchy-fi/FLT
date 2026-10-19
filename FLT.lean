@@ -11615,6 +11615,7 @@ public import FLT.Mazur.ScalarResidueClosureGeometry
 public import FLT.Mazur.ScalarRestrictionFiniteness
 public import FLT.Mazur.ScalarRestrictionImage
 public import FLT.Mazur.ScalarStrataBoundaryRefinement
+public import FLT.Mazur.ScalarStratumThickenings
 public import FLT.Mazur.ScalarTensorExactFibers
 public import FLT.Mazur.ScalarTestIntegralFibers
 public import FLT.Mazur.ScalarTestKernelDescent
