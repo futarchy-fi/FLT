@@ -7973,6 +7973,7 @@ public import FLT.Mazur.OddWeierstrassAuxiliaryFixedCoefficientComparison
 public import FLT.Mazur.OddWeierstrassAuxiliaryFrameUnits
 public import FLT.Mazur.OddWeierstrassAuxiliaryFullBasis
 public import FLT.Mazur.OddWeierstrassAuxiliaryGeometricFull
+public import FLT.Mazur.OddWeierstrassAuxiliaryGeometricRelabel
 public import FLT.Mazur.OddWeierstrassAuxiliaryGroupSourceNaturality
 public import FLT.Mazur.OddWeierstrassAuxiliaryLevel
 public import FLT.Mazur.OddWeierstrassAuxiliaryMarkedRigidity
