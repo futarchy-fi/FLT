@@ -14269,6 +14269,7 @@ public import FLT.Mazur.WeierstrassDividedGlobalActionConstruction
 public import FLT.Mazur.WeierstrassDividedGlobalActionIdentity
 public import FLT.Mazur.WeierstrassDividedGlobalActionInverse
 public import FLT.Mazur.WeierstrassDividedGlobalActionSmooth
+public import FLT.Mazur.WeierstrassDividedGlobalActionSmoothLocus
 public import FLT.Mazur.WeierstrassDividedGlobalCoefficientAction
 public import FLT.Mazur.WeierstrassDividedGlobalCoefficientActionLaws
 public import FLT.Mazur.WeierstrassDividedGlobalCoefficientCartesian
