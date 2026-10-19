@@ -5017,6 +5017,7 @@ public import FLT.Mazur.EquivalenceRelationResidualPermutationOpen
 public import FLT.Mazur.EquivalenceRelationResidualScalarExtension
 public import FLT.Mazur.EquivalenceRelationResidualSectionExtension
 public import FLT.Mazur.EquivalenceRelationRestrictedActionGraphs
+public import FLT.Mazur.EquivalenceRelationScalarLocalDetection
 public import FLT.Mazur.EquivalenceRelationScalarLocalRanks
 public import FLT.Mazur.EquivalenceRelationScalarLocalRecovery
 public import FLT.Mazur.EquivalenceRelationScalarLocalStages
@@ -6488,6 +6489,7 @@ public import FLT.Mazur.HilbertSourceOpenRelationLifts
 public import FLT.Mazur.HilbertSourceOriginalDomainComponents
 public import FLT.Mazur.HilbertSourceOriginalEquationNeighborhoods
 public import FLT.Mazur.HilbertSourceRankCutoffLifts
+public import FLT.Mazur.HilbertSourceScalarLocalDetection
 public import FLT.Mazur.HilbertSourceScalarNilpotenceLifts
 public import FLT.Mazur.HilbertSourceScalarResidualStages
 public import FLT.Mazur.HilbertSourceValuativeBoundaryObstructions
@@ -10909,7 +10911,10 @@ public import FLT.Mazur.RelativePoleComplementFunctions
 public import FLT.Mazur.RelativePoleComplementLinear
 public import FLT.Mazur.RelativeRankOneDivisorUniqueness
 public import FLT.Mazur.RelativeRankPullbackThickenings
+public import FLT.Mazur.RelativeRankStageFaithfulDetection
 public import FLT.Mazur.RelativeRankStageRecovery
+public import FLT.Mazur.RelativeRankStageSectionDetection
+public import FLT.Mazur.RelativeRankStageTestDetection
 public import FLT.Mazur.RelativeRankStratumThickenings
 public import FLT.Mazur.RelativeRankThickeningFinite
 public import FLT.Mazur.RelativeReductionKernelAbsorption
@@ -11400,6 +11405,7 @@ public import FLT.Mazur.SchemeIndependentNormalizationSquare
 public import FLT.Mazur.SchemeIndependentPairNormalization
 public import FLT.Mazur.SchemeIndependentRecoveryNormalization
 public import FLT.Mazur.SchemeIndependentTripleCocycle
+public import FLT.Mazur.SchemeInfinitesimalPointDetection
 public import FLT.Mazur.SchemeInvariantOpenPrincipalExtension
 public import FLT.Mazur.SchemeInvariantOpenRelationExtension
 public import FLT.Mazur.SchemeInvariantPrincipalBoundaryNumerator
