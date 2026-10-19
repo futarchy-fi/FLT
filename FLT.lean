@@ -8123,6 +8123,7 @@ public import FLT.Mazur.OverCoproductModuleSections
 public import FLT.Mazur.OverCoproductSchemeDescent
 public import FLT.Mazur.OverCoverMonoidReflection
 public import FLT.Mazur.OverDirectedCoverGluing
+public import FLT.Mazur.OverDirectedMonoGluing
 public import FLT.Mazur.OverOpenCoverExt
 public import FLT.Mazur.OverOpenCoverImage
 public import FLT.Mazur.OverOpenImageUnion
