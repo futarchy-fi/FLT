@@ -14327,6 +14327,7 @@ public import FLT.Mazur.WeierstrassDividedInteriorTensorOutputGeometry
 public import FLT.Mazur.WeierstrassDividedKernelClosure
 public import FLT.Mazur.WeierstrassDividedKernelContraction
 public import FLT.Mazur.WeierstrassDividedKernelFinite
+public import FLT.Mazur.WeierstrassDividedKernelSmoothEmbedding
 public import FLT.Mazur.WeierstrassDividedLaurentRetainedIntersection
 public import FLT.Mazur.WeierstrassDividedLaurentTerminalAttachments
 public import FLT.Mazur.WeierstrassDividedLaurentTerminalEmbedding
