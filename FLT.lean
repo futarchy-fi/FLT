@@ -7533,6 +7533,7 @@ public import FLT.Mazur.NoetherianClosedImageGenerizations
 public import FLT.Mazur.NoetherianConstructibleCriterion
 public import FLT.Mazur.NoetherianDirectSumSheaf
 public import FLT.Mazur.NoetherianEnvelopeGenericInterior
+public import FLT.Mazur.NoetherianFiniteFamilyAnnihilator
 public import FLT.Mazur.NoetherianInfinitesimalFiberFunctions
 public import FLT.Mazur.NoetherianLocalClosedFiberFunctions
 public import FLT.Mazur.NoetherianModuleSum
