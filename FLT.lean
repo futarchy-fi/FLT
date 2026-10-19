@@ -6689,6 +6689,7 @@ public import FLT.Mazur.HilbertSourceFlatScalarEquations
 public import FLT.Mazur.HilbertSourceFlatTensorEquations
 public import FLT.Mazur.HilbertSourceGeneratedLocalizedSurjectivity
 public import FLT.Mazur.HilbertSourceGeometricFiberTests
+public import FLT.Mazur.HilbertSourceGeometricFrameExtensions
 public import FLT.Mazur.HilbertSourceHigherScalarValuations
 public import FLT.Mazur.HilbertSourceIntegralFlatTests
 public import FLT.Mazur.HilbertSourceLocalRankCeilingLifts
