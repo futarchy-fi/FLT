@@ -4082,6 +4082,7 @@ public import FLT.Mazur.CyclicCharacteristicPrescribedCover
 public import FLT.Mazur.CyclicCharacteristicPrescribedNeighborhood
 public import FLT.Mazur.CyclicCharacteristicProductComparisonCharts
 public import FLT.Mazur.CyclicCharacteristicProductComparisonDiagram
+public import FLT.Mazur.CyclicCharacteristicProductComparisonGluing
 public import FLT.Mazur.CyclicCharacteristicProductOpenCoordinates
 public import FLT.Mazur.CyclicCharacteristicProductSubgroupDiagram
 public import FLT.Mazur.CyclicCharacteristicQuotient
