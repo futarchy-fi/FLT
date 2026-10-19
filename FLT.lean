@@ -4268,6 +4268,7 @@ public import FLT.Mazur.CyclicCharacteristicOrbitComparisons
 public import FLT.Mazur.CyclicCharacteristicOrbitFiniteQuotient
 public import FLT.Mazur.CyclicCharacteristicOrbitOpens
 public import FLT.Mazur.CyclicCharacteristicOrbitTopology
+public import FLT.Mazur.CyclicCharacteristicOriginalAffineComparison
 public import FLT.Mazur.CyclicCharacteristicParameterFiniteType
 public import FLT.Mazur.CyclicCharacteristicParameterPresheaf
 public import FLT.Mazur.CyclicCharacteristicParameterSource
