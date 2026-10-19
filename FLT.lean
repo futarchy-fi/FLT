@@ -14330,6 +14330,7 @@ public import FLT.Mazur.WeierstrassDividedKernelContraction
 public import FLT.Mazur.WeierstrassDividedKernelFinite
 public import FLT.Mazur.WeierstrassDividedKernelSmoothEmbedding
 public import FLT.Mazur.WeierstrassDividedKernelSmoothRecovery
+public import FLT.Mazur.WeierstrassDividedKernelSmoothStep
 public import FLT.Mazur.WeierstrassDividedKernelStep
 public import FLT.Mazur.WeierstrassDividedLaurentRetainedIntersection
 public import FLT.Mazur.WeierstrassDividedLaurentTerminalAttachments
