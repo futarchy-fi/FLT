@@ -500,6 +500,7 @@ public import FLT.FreyCurve.Serre.VeluInfinityGenericMorphism
 public import FLT.FreyCurve.Serre.VeluInfinityGenericRestriction
 public import FLT.FreyCurve.Serre.VeluInfinityKernelOpen
 public import FLT.FreyCurve.Serre.VeluInfinityLinearFactor
+public import FLT.FreyCurve.Serre.VeluInfinityNeighborhoodIdeal
 public import FLT.FreyCurve.Serre.VeluInfinityParameter
 public import FLT.FreyCurve.Serre.VeluInfinityParameterGeneric
 public import FLT.FreyCurve.Serre.VeluInfinityPoleReciprocal
