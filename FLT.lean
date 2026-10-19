@@ -2704,6 +2704,7 @@ public import FLT.Mazur.AffineBoundaryComponentEquations
 public import FLT.Mazur.AffineBoundaryComponentSpecialization
 public import FLT.Mazur.AffineBoundaryFlatScalarEquations
 public import FLT.Mazur.AffineBoundaryGenericLocalTests
+public import FLT.Mazur.AffineBoundaryIndependentFlatTests
 public import FLT.Mazur.AffineBoundaryNilpotenceOpen
 public import FLT.Mazur.AffineBoundaryPrincipalTestCharts
 public import FLT.Mazur.AffineBoundaryScalarFiberEquations
