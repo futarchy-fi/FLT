@@ -530,6 +530,7 @@ public import FLT.FreyCurve.Serre.VeluRational
 public import FLT.FreyCurve.Serre.VeluSchemeFunctionFieldHom
 public import FLT.FreyCurve.Serre.VeluSchemeRationalMap
 public import FLT.FreyCurve.Serre.VeluSmallRamification
+public import FLT.FreyCurve.Serre.VeluSmoothPointComparison
 public import FLT.FreyCurve.Serre.VeluSourceChart
 public import FLT.FreyCurve.Serre.VeluSourceChartFractions
 public import FLT.FreyCurve.Serre.VeluSourceChartInjective
