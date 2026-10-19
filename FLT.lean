@@ -4862,6 +4862,7 @@ public import FLT.Mazur.EquivalenceRelationBoundaryLabelRefinement
 public import FLT.Mazur.EquivalenceRelationBoundaryMatchingInterior
 public import FLT.Mazur.EquivalenceRelationBoundaryOpenCoefficients
 public import FLT.Mazur.EquivalenceRelationBoundaryPowerDescent
+public import FLT.Mazur.EquivalenceRelationBoundaryPrincipalCharts
 public import FLT.Mazur.EquivalenceRelationBoundaryRankDescent
 public import FLT.Mazur.EquivalenceRelationBoundaryRankEquations
 public import FLT.Mazur.EquivalenceRelationBoundaryRankFiltration
