@@ -10948,6 +10948,7 @@ public import FLT.Mazur.ProperSmoothPointwiseSectionRigidity
 public import FLT.Mazur.ProperSmoothRelativePointedGroupHom
 public import FLT.Mazur.ProperSmoothStructureSheaf
 public import FLT.Mazur.ProperSplitDirectImageSections
+public import FLT.Mazur.ProperSplitGenericFiniteness
 public import FLT.Mazur.ProperSplitSectionFiberRegularity
 public import FLT.Mazur.ProperSplitSectionRelativeCartier
 public import FLT.Mazur.ProperStageAmpleFiberDescent
