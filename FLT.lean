@@ -15384,6 +15384,7 @@ public import FLT.Mazur.WeierstrassGeneralizedEllipticModel
 public import FLT.Mazur.WeierstrassGeneralizedPointedComparison
 public import FLT.Mazur.WeierstrassGeneralizedSmoothComparison
 public import FLT.Mazur.WeierstrassGenericClosureNegation
+public import FLT.Mazur.WeierstrassGenericClosurePairComparison
 public import FLT.Mazur.WeierstrassGenericClosureSmoothDensity
 public import FLT.Mazur.WeierstrassGenericClosureSmoothOperations
 public import FLT.Mazur.WeierstrassGenericClosureSmoothPart
