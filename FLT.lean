@@ -573,6 +573,7 @@ public import FLT.FreyCurve.Serre.VeluPrimeRationalDegree
 public import FLT.FreyCurve.Serre.VeluPrimeRationalGroup
 public import FLT.FreyCurve.Serre.VeluPrimeRationalKernel
 public import FLT.FreyCurve.Serre.VeluPrimeRationalMorphism
+public import FLT.FreyCurve.Serre.VeluPrimeRationalPointComparison
 public import FLT.FreyCurve.Serre.VeluQuotient
 public import FLT.FreyCurve.Serre.VeluRational
 public import FLT.FreyCurve.Serre.VeluRationalDomainCover
