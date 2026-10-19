@@ -5751,6 +5751,7 @@ public import FLT.Mazur.FlatQuotientIdealFiber
 public import FLT.Mazur.FlatQuotientLocalCartier
 public import FLT.Mazur.FlatScalarExactness
 public import FLT.Mazur.FlatScalarHomology
+public import FLT.Mazur.FlatScalarIntegralTests
 public import FLT.Mazur.FlatScalarKernelExtension
 public import FLT.Mazur.FlatScalarPowerKernel
 public import FLT.Mazur.FlatScalarTestDenominators
