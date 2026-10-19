@@ -562,6 +562,7 @@ public import FLT.FreyCurve.Serre.VeluKernelRationalSubgroup
 public import FLT.FreyCurve.Serre.VeluKernelScalarExtension
 public import FLT.FreyCurve.Serre.VeluKernelSectionComparison
 public import FLT.FreyCurve.Serre.VeluKernelTranslationInvariant
+public import FLT.FreyCurve.Serre.VeluLocalGenericKernel
 public import FLT.FreyCurve.Serre.VeluLocalGenericMorphism
 public import FLT.FreyCurve.Serre.VeluLocalGenericPointComparison
 public import FLT.FreyCurve.Serre.VeluLocalIntegralModel
