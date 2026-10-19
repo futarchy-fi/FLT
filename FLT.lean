@@ -463,14 +463,21 @@ public import FLT.FreyCurve.Serre.VeluAffineNonkernelOpen
 public import FLT.FreyCurve.Serre.VeluAffinePointCoordinates
 public import FLT.FreyCurve.Serre.VeluAffinePointInjective
 public import FLT.FreyCurve.Serre.VeluAffinePointMorphism
+public import FLT.FreyCurve.Serre.VeluAffinePointNaturality
 public import FLT.FreyCurve.Serre.VeluAffineRationalRepresentative
 public import FLT.FreyCurve.Serre.VeluAffineRegularCoordinates
 public import FLT.FreyCurve.Serre.VeluAffineRegularMorphism
 public import FLT.FreyCurve.Serre.VeluAffineSectionChart
 public import FLT.FreyCurve.Serre.VeluAffineSmoothCoordinates
 public import FLT.FreyCurve.Serre.VeluAffineTranslation
+public import FLT.FreyCurve.Serre.VeluCoefficientGaloisAction
+public import FLT.FreyCurve.Serre.VeluCoefficientInvariantDescent
+public import FLT.FreyCurve.Serre.VeluCoefficientOverlap
+public import FLT.FreyCurve.Serre.VeluCoefficientOverlapCover
 public import FLT.FreyCurve.Serre.VeluCofiniteFunctionEquality
 public import FLT.FreyCurve.Serre.VeluCoordinates
+public import FLT.FreyCurve.Serre.VeluDescendedDegree
+public import FLT.FreyCurve.Serre.VeluDescendedMorphism
 public import FLT.FreyCurve.Serre.VeluDifferential
 public import FLT.FreyCurve.Serre.VeluDivisionIntegrality
 public import FLT.FreyCurve.Serre.VeluElliptic
@@ -485,9 +492,11 @@ public import FLT.FreyCurve.Serre.VeluGenericFunctionFieldHom
 public import FLT.FreyCurve.Serre.VeluGenericQuadraticRelation
 public import FLT.FreyCurve.Serre.VeluGenericXField
 public import FLT.FreyCurve.Serre.VeluGeometricKernelScheme
+public import FLT.FreyCurve.Serre.VeluGlobalBaseTarget
 public import FLT.FreyCurve.Serre.VeluGlobalClassicalComparison
 public import FLT.FreyCurve.Serre.VeluGlobalDegree
 public import FLT.FreyCurve.Serre.VeluGlobalFinite
+public import FLT.FreyCurve.Serre.VeluGlobalGaloisInvariant
 public import FLT.FreyCurve.Serre.VeluGlobalGroupMorphism
 public import FLT.FreyCurve.Serre.VeluGlobalKernelCardinality
 public import FLT.FreyCurve.Serre.VeluGlobalKernelClosedComparison
@@ -500,6 +509,7 @@ public import FLT.FreyCurve.Serre.VeluGlobalPointKernel
 public import FLT.FreyCurve.Serre.VeluGlobalPointValues
 public import FLT.FreyCurve.Serre.VeluGlobalProperSurjective
 public import FLT.FreyCurve.Serre.VeluGlobalRestrictions
+public import FLT.FreyCurve.Serre.VeluGlobalTargetTransport
 public import FLT.FreyCurve.Serre.VeluHom
 public import FLT.FreyCurve.Serre.VeluIdentity
 public import FLT.FreyCurve.Serre.VeluInfinity
@@ -553,12 +563,17 @@ public import FLT.FreyCurve.Serre.VeluLocalIntegralModel
 public import FLT.FreyCurve.Serre.VeluMap
 public import FLT.FreyCurve.Serre.VeluOrdinary
 public import FLT.FreyCurve.Serre.VeluPointCofinite
+public import FLT.FreyCurve.Serre.VeluPrimeExactTarget
 public import FLT.FreyCurve.Serre.VeluPrimeGlobalKernelRank
 public import FLT.FreyCurve.Serre.VeluPrimeKernel
 public import FLT.FreyCurve.Serre.VeluPrimeKernelFiberComparison
+public import FLT.FreyCurve.Serre.VeluPrimeRationalDegree
+public import FLT.FreyCurve.Serre.VeluPrimeRationalKernel
+public import FLT.FreyCurve.Serre.VeluPrimeRationalMorphism
 public import FLT.FreyCurve.Serre.VeluQuotient
 public import FLT.FreyCurve.Serre.VeluRational
 public import FLT.FreyCurve.Serre.VeluRationalDomainCover
+public import FLT.FreyCurve.Serre.VeluRationalKernelCover
 public import FLT.FreyCurve.Serre.VeluSchemeFunctionFieldHom
 public import FLT.FreyCurve.Serre.VeluSchemeRationalMap
 public import FLT.FreyCurve.Serre.VeluSmallRamification
@@ -592,6 +607,7 @@ public import FLT.FreyCurve.VeluPadicTwoMinimal
 public import FLT.FreyCurve.VeluPadicTwoValuation
 public import FLT.FreyCurve.VeluSourceKernelModels
 public import FLT.FreyCurve.VeluTargetGeometry
+public import FLT.FreyCurve.VeluTargetSchemeMorphism
 public import FLT.FreyCurve.VeluTargetTwoTorsion
 public import FLT.FreyCurve.VeluTargetWitness
 public import FLT.GaloisRepresentation.Attachment
@@ -2823,6 +2839,7 @@ public import FLT.Mazur.AffineChartSectionLineRecovery
 public import FLT.Mazur.AffineChartSectionLocalization
 public import FLT.Mazur.AffineChartSourceScalars
 public import FLT.Mazur.AffineChartStalkScalars
+public import FLT.Mazur.AffineClosedBoundaryKernelLifting
 public import FLT.Mazur.AffineClosedLimitDescent
 public import FLT.Mazur.AffineClosedModuleDescent
 public import FLT.Mazur.AffineClosedPointAlgebra
@@ -3399,10 +3416,12 @@ public import FLT.Mazur.AffineValuationCoordinateSquare
 public import FLT.Mazur.AffineValuationGeneratorLift
 public import FLT.Mazur.AffineValuationIntegralLift
 public import FLT.Mazur.AlgClosedOpenCover
+public import FLT.Mazur.AlgClosedSectionHomExt
 public import FLT.Mazur.AlgebraEqualizerCoordinates
 public import FLT.Mazur.AlgebraicAcyclicOrbitTranslation
 public import FLT.Mazur.AlgebraicClosureEmbeddingConjugacy
 public import FLT.Mazur.AlgebraicEmbeddingTranscendentalFactor
+public import FLT.Mazur.AlgebraicFieldExtensionReduced
 public import FLT.Mazur.AlgebraicOrderedAllLiftTranslation
 public import FLT.Mazur.AlgebraicPicardFiniteDescent
 public import FLT.Mazur.AlgebraicPointFiniteDescent
@@ -4052,6 +4071,7 @@ public import FLT.Mazur.CommonAmbientGrassmannianAffineCover
 public import FLT.Mazur.CommonAmbientGrassmannianProduct
 public import FLT.Mazur.CommonAmbientOpenIso
 public import FLT.Mazur.CommonAmbientSourceGrassmannianImmersion
+public import FLT.Mazur.CommonCartesianCoverIso
 public import FLT.Mazur.CommonCoefficientStage
 public import FLT.Mazur.CommonGroundEnvelopeCore
 public import FLT.Mazur.CommonGroundEnvelopeSquare
@@ -5105,6 +5125,7 @@ public import FLT.Mazur.EqualizerDenominatorClearing
 public import FLT.Mazur.EquifiberedGluingBaseChange
 public import FLT.Mazur.EquifiberedSchemeGluing
 public import FLT.Mazur.EquivalenceRelationActionInfinitesimalRigidity
+public import FLT.Mazur.EquivalenceRelationAmbientBoundaryCorrection
 public import FLT.Mazur.EquivalenceRelationBoundaryActionGeometry
 public import FLT.Mazur.EquivalenceRelationBoundaryChartTests
 public import FLT.Mazur.EquivalenceRelationBoundaryChartTransport
@@ -5149,6 +5170,7 @@ public import FLT.Mazur.EquivalenceRelationChartFamilyRestriction
 public import FLT.Mazur.EquivalenceRelationChartKernelDiscrepancy
 public import FLT.Mazur.EquivalenceRelationChartRankIdeal
 public import FLT.Mazur.EquivalenceRelationChartRankStageIdeal
+public import FLT.Mazur.EquivalenceRelationCompatibleQuotientCorrections
 public import FLT.Mazur.EquivalenceRelationCompleteAdicDiscrepancy
 public import FLT.Mazur.EquivalenceRelationCompleteAdicSeparation
 public import FLT.Mazur.EquivalenceRelationCompleteAffineStages
@@ -5169,6 +5191,7 @@ public import FLT.Mazur.EquivalenceRelationCompleteOpenCoefficients
 public import FLT.Mazur.EquivalenceRelationCompletePointLocus
 public import FLT.Mazur.EquivalenceRelationCompleteQuotientCorrections
 public import FLT.Mazur.EquivalenceRelationCompleteQuotientStages
+public import FLT.Mazur.EquivalenceRelationCompleteQuotientTower
 public import FLT.Mazur.EquivalenceRelationCompleteRestrictionNaturality
 public import FLT.Mazur.EquivalenceRelationCompleteScalarFiber
 public import FLT.Mazur.EquivalenceRelationCompleteSourceComparison
@@ -5259,6 +5282,8 @@ public import FLT.Mazur.EquivalenceRelationNormalizedScalarComplete
 public import FLT.Mazur.EquivalenceRelationNormalizedStrictExtension
 public import FLT.Mazur.EquivalenceRelationNormalizedSubframe
 public import FLT.Mazur.EquivalenceRelationOpenChartScalars
+public import FLT.Mazur.EquivalenceRelationQuotientBoundaryExtensions
+public import FLT.Mazur.EquivalenceRelationQuotientInvariantExtensions
 public import FLT.Mazur.EquivalenceRelationQuotientRankOpens
 public import FLT.Mazur.EquivalenceRelationRankInterior
 public import FLT.Mazur.EquivalenceRelationRankSaturation
@@ -5496,6 +5521,7 @@ public import FLT.Mazur.FiniteFamilySupportOpen
 public import FLT.Mazur.FiniteFiberClosedImmersion
 public import FLT.Mazur.FiniteFiberImageCard
 public import FLT.Mazur.FiniteFiberOriginalOpenSpread
+public import FLT.Mazur.FiniteFiberSurjectiveDescent
 public import FLT.Mazur.FiniteFieldRankLength
 public import FLT.Mazur.FiniteFlatAffineLocalFree
 public import FLT.Mazur.FiniteFlatCoefficientIdeal
@@ -5910,6 +5936,10 @@ public import FLT.Mazur.FullHilbertIntersectionSeparablePoints
 public import FLT.Mazur.FullTwoPrimeTorsionEquiv
 public import FLT.Mazur.FunctionSheafGradedBaseAlgebra
 public import FLT.Mazur.FunctionSheafGradedSections
+public import FLT.Mazur.GaloisTensorCartesian
+public import FLT.Mazur.GaloisTensorPrime
+public import FLT.Mazur.GaloisTensorReduced
+public import FLT.Mazur.GaloisTensorSchemeCover
 public import FLT.Mazur.GeneralizedComparisonBetweenRestriction
 public import FLT.Mazur.GeneralizedComparisonPullbackCoherence
 public import FLT.Mazur.GeneralizedComparisonPullbackNaturality
@@ -6740,6 +6770,7 @@ public import FLT.Mazur.HilbertSourceClosedBoundaryObstructions
 public import FLT.Mazur.HilbertSourceCoefficientwiseSurjectivity
 public import FLT.Mazur.HilbertSourceCompactRelation
 public import FLT.Mazur.HilbertSourceCompatibleModule
+public import FLT.Mazur.HilbertSourceCompatibleQuotientCorrections
 public import FLT.Mazur.HilbertSourceCompleteCharacterLifts
 public import FLT.Mazur.HilbertSourceCompleteQuotientCorrections
 public import FLT.Mazur.HilbertSourceConstructedBadAffineCover
@@ -12829,6 +12860,7 @@ public import FLT.Mazur.WeierstrassClosedImmersionIso
 public import FLT.Mazur.WeierstrassCoefficientAddition
 public import FLT.Mazur.WeierstrassCoefficientAffineProduct
 public import FLT.Mazur.WeierstrassCoefficientChartPreimage
+public import FLT.Mazur.WeierstrassCoefficientFieldCover
 public import FLT.Mazur.WeierstrassCoefficientGeneralizedIso
 public import FLT.Mazur.WeierstrassCoefficientGroup
 public import FLT.Mazur.WeierstrassCoefficientMarking
@@ -12836,6 +12868,7 @@ public import FLT.Mazur.WeierstrassCoefficientModelComposition
 public import FLT.Mazur.WeierstrassCoefficientModelProjection
 public import FLT.Mazur.WeierstrassCoefficientMonoidalComparison
 public import FLT.Mazur.WeierstrassCoefficientNegation
+public import FLT.Mazur.WeierstrassCoefficientOverlapReduced
 public import FLT.Mazur.WeierstrassCoefficientPresentationRefinement
 public import FLT.Mazur.WeierstrassCoefficientProductMorphism
 public import FLT.Mazur.WeierstrassCoefficientSecant
