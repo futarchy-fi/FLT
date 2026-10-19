@@ -4507,6 +4507,7 @@ public import FLT.Mazur.CyclicProductNormalization
 public import FLT.Mazur.CyclicTorsionPoint
 public import FLT.Mazur.DRFiberClassification
 public import FLT.Mazur.DedekindPointExtension
+public import FLT.Mazur.DenseClosedRestriction
 public import FLT.Mazur.DenseGroundEnvelopeInterior
 public import FLT.Mazur.DenseGroundHilbertFullInterior
 public import FLT.Mazur.DenseGroundHilbertPrincipal
