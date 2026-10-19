@@ -14789,6 +14789,7 @@ public import FLT.Mazur.WeierstrassDividedResidueTangentNormalization
 public import FLT.Mazur.WeierstrassDividedResolvedSmoothAction
 public import FLT.Mazur.WeierstrassDividedResolvedSmoothActionLaws
 public import FLT.Mazur.WeierstrassDividedResolvedSmoothActionSquare
+public import FLT.Mazur.WeierstrassDividedResolvedSmoothTranslation
 public import FLT.Mazur.WeierstrassDividedRetainedAdjacentParameters
 public import FLT.Mazur.WeierstrassDividedRetainedChartIso
 public import FLT.Mazur.WeierstrassDividedRetainedChartOpen
