@@ -577,6 +577,7 @@ public import FLT.FreyCurve.Serre.VeluLocalIntegralSmoothKernelGroup
 public import FLT.FreyCurve.Serre.VeluLocalIntegralSmoothKernelRetention
 public import FLT.FreyCurve.Serre.VeluLocalPointMorphism
 public import FLT.FreyCurve.Serre.VeluLocalPointTransport
+public import FLT.FreyCurve.Serre.VeluLocalResolvedKernelSmooth
 public import FLT.FreyCurve.Serre.VeluMap
 public import FLT.FreyCurve.Serre.VeluOrdinary
 public import FLT.FreyCurve.Serre.VeluPadicGenericPointComparison
