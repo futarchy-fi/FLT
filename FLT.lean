@@ -487,6 +487,7 @@ public import FLT.FreyCurve.Serre.VeluInfinity
 public import FLT.FreyCurve.Serre.VeluInfinityKernelOpen
 public import FLT.FreyCurve.Serre.VeluInfinityParameter
 public import FLT.FreyCurve.Serre.VeluInfinityParameterGeneric
+public import FLT.FreyCurve.Serre.VeluInfinityPoleReciprocal
 public import FLT.FreyCurve.Serre.VeluIntegralModel
 public import FLT.FreyCurve.Serre.VeluIntegralSums
 public import FLT.FreyCurve.Serre.VeluKernelAffineChart
