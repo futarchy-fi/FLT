@@ -6529,6 +6529,11 @@ public import FLT.Mazur.HilbertSourceOpenRelationLifts
 public import FLT.Mazur.HilbertSourceOriginalDomainComponents
 public import FLT.Mazur.HilbertSourceOriginalEquationNeighborhoods
 public import FLT.Mazur.HilbertSourceRankCutoffLifts
+public import FLT.Mazur.HilbertSourceRelationRankStages
+public import FLT.Mazur.HilbertSourceResidualRankCompatibility
+public import FLT.Mazur.HilbertSourceResidualRankCorrections
+public import FLT.Mazur.HilbertSourceResidualRankLifts
+public import FLT.Mazur.HilbertSourceResidualRankObstructions
 public import FLT.Mazur.HilbertSourceScalarLocalDetection
 public import FLT.Mazur.HilbertSourceScalarNilpotenceLifts
 public import FLT.Mazur.HilbertSourceScalarResidualStages
@@ -10952,6 +10957,7 @@ public import FLT.Mazur.RelativePoleComplementFunctions
 public import FLT.Mazur.RelativePoleComplementLinear
 public import FLT.Mazur.RelativeRankOneDivisorUniqueness
 public import FLT.Mazur.RelativeRankPullbackThickenings
+public import FLT.Mazur.RelativeRankResidualSectionDetection
 public import FLT.Mazur.RelativeRankStageFaithfulDetection
 public import FLT.Mazur.RelativeRankStageRecovery
 public import FLT.Mazur.RelativeRankStageSectionDetection
