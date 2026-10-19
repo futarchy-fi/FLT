@@ -572,6 +572,8 @@ public import FLT.FreyCurve.Serre.VeluLocalIntegralKernelOperations
 public import FLT.FreyCurve.Serre.VeluLocalIntegralKernelRecovery
 public import FLT.FreyCurve.Serre.VeluLocalIntegralModel
 public import FLT.FreyCurve.Serre.VeluLocalIntegralSmoothKernel
+public import FLT.FreyCurve.Serre.VeluLocalIntegralSmoothKernelGroup
+public import FLT.FreyCurve.Serre.VeluLocalIntegralSmoothKernelRetention
 public import FLT.FreyCurve.Serre.VeluLocalPointMorphism
 public import FLT.FreyCurve.Serre.VeluLocalPointTransport
 public import FLT.FreyCurve.Serre.VeluMap
@@ -7755,6 +7757,7 @@ public import FLT.Mazur.ModuleUnitCocycleCongr
 public import FLT.Mazur.ModuleUnitCocyclePullback
 public import FLT.Mazur.MonicIdealNormalForms
 public import FLT.Mazur.MonoBaseChangeRelation
+public import FLT.Mazur.MonoBaseProductComparison
 public import FLT.Mazur.MonoFamilySchemeGluing
 public import FLT.Mazur.MonoidalActionSpecialization
 public import FLT.Mazur.MonomorphismCoefficientEffectiveOpen
@@ -12976,6 +12979,10 @@ public import FLT.Mazur.WeierstrassChartSchemeGluingData
 public import FLT.Mazur.WeierstrassChartStandardSmooth
 public import FLT.Mazur.WeierstrassChartUnitLift
 public import FLT.Mazur.WeierstrassClosedImmersionIso
+public import FLT.Mazur.WeierstrassClosureSmoothAmbientProduct
+public import FLT.Mazur.WeierstrassClosureSmoothGoodReduction
+public import FLT.Mazur.WeierstrassClosureSmoothGroup
+public import FLT.Mazur.WeierstrassClosureSmoothGroupOperations
 public import FLT.Mazur.WeierstrassCoefficientAddition
 public import FLT.Mazur.WeierstrassCoefficientAffineProduct
 public import FLT.Mazur.WeierstrassCoefficientChartPreimage
@@ -15409,13 +15416,17 @@ public import FLT.Mazur.WeierstrassGeneralizedEllipticModel
 public import FLT.Mazur.WeierstrassGeneralizedPointedComparison
 public import FLT.Mazur.WeierstrassGeneralizedSmoothComparison
 public import FLT.Mazur.WeierstrassGenericClosureNegation
+public import FLT.Mazur.WeierstrassGenericClosurePairComparison
 public import FLT.Mazur.WeierstrassGenericClosureSmoothDensity
+public import FLT.Mazur.WeierstrassGenericClosureSmoothMultiplication
 public import FLT.Mazur.WeierstrassGenericClosureSmoothOperations
 public import FLT.Mazur.WeierstrassGenericClosureSmoothPart
 public import FLT.Mazur.WeierstrassGenericClosureSmoothRecovery
 public import FLT.Mazur.WeierstrassGenericClosureZero
 public import FLT.Mazur.WeierstrassGenericKernelClosure
 public import FLT.Mazur.WeierstrassGenericKernelRecovery
+public import FLT.Mazur.WeierstrassGenericKernelSmoothMultiplication
+public import FLT.Mazur.WeierstrassGenericSmoothGroupComparison
 public import FLT.Mazur.WeierstrassGenusOneFamily
 public import FLT.Mazur.WeierstrassGeometricConnected
 public import FLT.Mazur.WeierstrassGeometricFourBasis
@@ -16352,6 +16363,7 @@ public import FLT.Mazur.WeierstrassSmoothAffineTransport
 public import FLT.Mazur.WeierstrassSmoothAffineTripleDescent
 public import FLT.Mazur.WeierstrassSmoothAllOrdinaryTriple
 public import FLT.Mazur.WeierstrassSmoothAssociativity
+public import FLT.Mazur.WeierstrassSmoothBaseGroupHom
 public import FLT.Mazur.WeierstrassSmoothChartCompatibility
 public import FLT.Mazur.WeierstrassSmoothCoefficientAddition
 public import FLT.Mazur.WeierstrassSmoothCoefficientBaseGroup
