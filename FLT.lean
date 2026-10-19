@@ -4165,6 +4165,7 @@ public import FLT.Mazur.CyclicCharacteristicDisjointInverseDiagrams
 public import FLT.Mazur.CyclicCharacteristicDisjointQuotient
 public import FLT.Mazur.CyclicCharacteristicDisjointQuotientCover
 public import FLT.Mazur.CyclicCharacteristicDisjointTripleCharts
+public import FLT.Mazur.CyclicCharacteristicDisjointTripleParameterTests
 public import FLT.Mazur.CyclicCharacteristicDisjointTripleScheme
 public import FLT.Mazur.CyclicCharacteristicDisjointUnitDiagrams
 public import FLT.Mazur.CyclicCharacteristicEvenNormalizedAuxiliary
