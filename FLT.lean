@@ -14324,6 +14324,7 @@ public import FLT.Mazur.WeierstrassDividedGlobalInitialAction
 public import FLT.Mazur.WeierstrassDividedGlobalInitialActionGeometry
 public import FLT.Mazur.WeierstrassDividedGlobalInitialActionLaws
 public import FLT.Mazur.WeierstrassDividedGlobalInitialComparison
+public import FLT.Mazur.WeierstrassDividedGlobalInitialNegation
 public import FLT.Mazur.WeierstrassDividedGlobalOriginalSmoothPoints
 public import FLT.Mazur.WeierstrassDividedGlobalOverPointAction
 public import FLT.Mazur.WeierstrassDividedGlobalPointAction
