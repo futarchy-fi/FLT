@@ -4235,6 +4235,11 @@ public import FLT.Mazur.CyclicCharacteristicAffineComparisonScheme
 public import FLT.Mazur.CyclicCharacteristicAffineEquation
 public import FLT.Mazur.CyclicCharacteristicAffineEquationCoherence
 public import FLT.Mazur.CyclicCharacteristicAffineEquationPullback
+public import FLT.Mazur.CyclicCharacteristicAffineFunctionRelation
+public import FLT.Mazur.CyclicCharacteristicAffineInvariantReconstruction
+public import FLT.Mazur.CyclicCharacteristicAffineOppositeCover
+public import FLT.Mazur.CyclicCharacteristicAffineOppositeDescent
+public import FLT.Mazur.CyclicCharacteristicAffineOppositeTests
 public import FLT.Mazur.CyclicCharacteristicAffineOrbitCover
 public import FLT.Mazur.CyclicCharacteristicAffineOrbitLocallyRinged
 public import FLT.Mazur.CyclicCharacteristicAffineOrbitProjection
@@ -4245,8 +4250,17 @@ public import FLT.Mazur.CyclicCharacteristicAffineOverlapCoverage
 public import FLT.Mazur.CyclicCharacteristicAffineResidualArrows
 public import FLT.Mazur.CyclicCharacteristicAffineResidualComparison
 public import FLT.Mazur.CyclicCharacteristicAffineResidualFibers
+public import FLT.Mazur.CyclicCharacteristicAffineResidualRingedComparison
 public import FLT.Mazur.CyclicCharacteristicAffineResidualSections
+public import FLT.Mazur.CyclicCharacteristicAffineResidualTests
 public import FLT.Mazur.CyclicCharacteristicAffineResidualTopology
+public import FLT.Mazur.CyclicCharacteristicAffineSectionEquivalence
+public import FLT.Mazur.CyclicCharacteristicAffineSectionReconstruction
+public import FLT.Mazur.CyclicCharacteristicAffineSectionTransport
+public import FLT.Mazur.CyclicCharacteristicAffineSourceAssembly
+public import FLT.Mazur.CyclicCharacteristicAffineSourceCover
+public import FLT.Mazur.CyclicCharacteristicAffineSourceFunctions
+public import FLT.Mazur.CyclicCharacteristicAffineSourceLocallyRinged
 public import FLT.Mazur.CyclicCharacteristicAffineSubgroup
 public import FLT.Mazur.CyclicCharacteristicAffineSubgroupBaseSquare
 public import FLT.Mazur.CyclicCharacteristicAffineSubgroupClassification
@@ -5268,6 +5282,7 @@ public import FLT.Mazur.EquivalenceRelationCompleteBoundaryCorrections
 public import FLT.Mazur.EquivalenceRelationCompleteCharacterLifts
 public import FLT.Mazur.EquivalenceRelationCompleteChartImage
 public import FLT.Mazur.EquivalenceRelationCompleteClosedLocus
+public import FLT.Mazur.EquivalenceRelationCompleteComponents
 public import FLT.Mazur.EquivalenceRelationCompleteEndpointOrbit
 public import FLT.Mazur.EquivalenceRelationCompleteEquivariantCoefficients
 public import FLT.Mazur.EquivalenceRelationCompleteExactRank
@@ -5301,6 +5316,9 @@ public import FLT.Mazur.EquivalenceRelationCompleteThickeningFinite
 public import FLT.Mazur.EquivalenceRelationCompleteThickeningTower
 public import FLT.Mazur.EquivalenceRelationCompleteThickenings
 public import FLT.Mazur.EquivalenceRelationCompleteVanishingOpen
+public import FLT.Mazur.EquivalenceRelationComponentCharacters
+public import FLT.Mazur.EquivalenceRelationComponentPrincipalBranches
+public import FLT.Mazur.EquivalenceRelationComponentScalarTests
 public import FLT.Mazur.EquivalenceRelationConnectedCompleteTests
 public import FLT.Mazur.EquivalenceRelationDoubleVanishingOpen
 public import FLT.Mazur.EquivalenceRelationEqualFrameCorrections
@@ -6615,6 +6633,7 @@ public import FLT.Mazur.HilbertCompleteInteriorBoundaryLifts
 public import FLT.Mazur.HilbertCompleteInteriorCharts
 public import FLT.Mazur.HilbertCompleteInteriorFiniteCriterion
 public import FLT.Mazur.HilbertCompleteInteriorOriginalNeighborhoods
+public import FLT.Mazur.HilbertComponentOriginalScalarGeometry
 public import FLT.Mazur.HilbertDenseRankOriginalLifts
 public import FLT.Mazur.HilbertDivisorDegreePresentation
 public import FLT.Mazur.HilbertEnvelopeSourceTransport
@@ -11562,6 +11581,8 @@ public import FLT.Mazur.RingPairInvariantLocalization
 public import FLT.Mazur.RingedSpaceIdealLocus
 public import FLT.Mazur.ScalarAlgebraicClosureTests
 public import FLT.Mazur.ScalarClosedGeometricLifts
+public import FLT.Mazur.ScalarClosedImageCoverage
+public import FLT.Mazur.ScalarClosedPrincipalBranches
 public import FLT.Mazur.ScalarCohomology
 public import FLT.Mazur.ScalarCompatibleIntegerModel
 public import FLT.Mazur.ScalarComponentRankCeiling
