@@ -13934,6 +13934,7 @@ public import FLT.Mazur.WeierstrassDividedOneInfinityNormalizedSystem
 public import FLT.Mazur.WeierstrassDividedOneInitialAtlasTransport
 public import FLT.Mazur.WeierstrassDividedOneInitialPunctureTransport
 public import FLT.Mazur.WeierstrassDividedOneInitialTotalTransport
+public import FLT.Mazur.WeierstrassDividedOneRetainedAtlasBase
 public import FLT.Mazur.WeierstrassDividedOneRetainedCoefficientBase
 public import FLT.Mazur.WeierstrassDividedOneRetainedCoefficientRestriction
 public import FLT.Mazur.WeierstrassDividedOneRetainedNodeBase
