@@ -4300,6 +4300,7 @@ public import FLT.Mazur.CyclicCharacteristicRetainedFaithfulness
 public import FLT.Mazur.CyclicCharacteristicRetainedFullParameter
 public import FLT.Mazur.CyclicCharacteristicRetainedParameter
 public import FLT.Mazur.CyclicCharacteristicRingedCofork
+public import FLT.Mazur.CyclicCharacteristicRingedDescent
 public import FLT.Mazur.CyclicCharacteristicSmoothUnmarkedClass
 public import FLT.Mazur.CyclicCharacteristicSmoothUnmarkedMorphism
 public import FLT.Mazur.CyclicCharacteristicTransitionCover
