@@ -11914,6 +11914,7 @@ public import FLT.Mazur.SchemeWholeFiberOpenBaseChange
 public import FLT.Mazur.SchemeWholeFiberOpenComposition
 public import FLT.Mazur.SealedLineRestriction
 public import FLT.Mazur.SealedLineRestrictionSections
+public import FLT.Mazur.SealedPrincipalLocalization
 public import FLT.Mazur.SectionBaseLocalization
 public import FLT.Mazur.SectionCartesianKernel
 public import FLT.Mazur.SectionCartierBaseOpen
