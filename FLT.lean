@@ -5292,6 +5292,7 @@ public import FLT.Mazur.EquivalenceRelationFiniteChartMultipliers
 public import FLT.Mazur.EquivalenceRelationFiniteCompleteInterior
 public import FLT.Mazur.EquivalenceRelationFiniteFiberLocus
 public import FLT.Mazur.EquivalenceRelationFiniteTargetSaturation
+public import FLT.Mazur.EquivalenceRelationFixedFrameInterior
 public import FLT.Mazur.EquivalenceRelationFrameNormalization
 public import FLT.Mazur.EquivalenceRelationFrameRebaseGeometric
 public import FLT.Mazur.EquivalenceRelationFrameRebaseLaws
@@ -5326,6 +5327,7 @@ public import FLT.Mazur.EquivalenceRelationMixedChartLiftDifference
 public import FLT.Mazur.EquivalenceRelationMixedChartProjections
 public import FLT.Mazur.EquivalenceRelationMixedChartRestriction
 public import FLT.Mazur.EquivalenceRelationMixedChartTests
+public import FLT.Mazur.EquivalenceRelationMixedCompleteInterior
 public import FLT.Mazur.EquivalenceRelationMixedEmbeddingDomains
 public import FLT.Mazur.EquivalenceRelationMixedFrameCardinality
 public import FLT.Mazur.EquivalenceRelationMixedFrameComparison
@@ -6613,6 +6615,7 @@ public import FLT.Mazur.HilbertFiniteSubframeInvariantCorrections
 public import FLT.Mazur.HilbertFiniteSubframeRefinement
 public import FLT.Mazur.HilbertFiniteTargetLocalLifts
 public import FLT.Mazur.HilbertFiniteTargetSaturation
+public import FLT.Mazur.HilbertFixedCompleteRefinement
 public import FLT.Mazur.HilbertFullInteriorFiniteKernel
 public import FLT.Mazur.HilbertFullInteriorQuotientChart
 public import FLT.Mazur.HilbertFullRelationFiberRebase
@@ -6658,6 +6661,7 @@ public import FLT.Mazur.HilbertLocalResidueBasis
 public import FLT.Mazur.HilbertLocalizationIsomorphismOpen
 public import FLT.Mazur.HilbertLocalizedTupleBasis
 public import FLT.Mazur.HilbertMinimalCompleteNeighborhood
+public import FLT.Mazur.HilbertMinimalScalarFixedRefinements
 public import FLT.Mazur.HilbertMixedResidualBranches
 public import FLT.Mazur.HilbertMonomialAmbientDecomposition
 public import FLT.Mazur.HilbertMonomialBasisNeighborhood
@@ -6840,6 +6844,7 @@ public import FLT.Mazur.HilbertQuotientDegreeFiltration
 public import FLT.Mazur.HilbertRankStratumOriginalNeighborhoods
 public import FLT.Mazur.HilbertRebasedCompleteFrame
 public import FLT.Mazur.HilbertReindexedCoordinateRing
+public import FLT.Mazur.HilbertRelatedFixedScalarCharts
 public import FLT.Mazur.HilbertRepeatedMonomialChart
 public import FLT.Mazur.HilbertResidualRankCeiling
 public import FLT.Mazur.HilbertSameAmbientChartIso
@@ -11451,6 +11456,7 @@ public import FLT.Mazur.RelativeRelationSaturationCover
 public import FLT.Mazur.RelativeRelationSaturationFunctionDescent
 public import FLT.Mazur.RelativeRelationSaturationKernel
 public import FLT.Mazur.RelativeRelationSaturationSpan
+public import FLT.Mazur.RelativeRelationScalarMorphismInvariant
 public import FLT.Mazur.RelativeRelationSimultaneousLiftCover
 public import FLT.Mazur.RelativeRelationSplitQuotient
 public import FLT.Mazur.RelativeRelationTopCoefficientCoordinates
