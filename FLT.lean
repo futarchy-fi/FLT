@@ -4252,6 +4252,7 @@ public import FLT.Mazur.CyclicCharacteristicAffineResidualComparison
 public import FLT.Mazur.CyclicCharacteristicAffineResidualFibers
 public import FLT.Mazur.CyclicCharacteristicAffineResidualLocalization
 public import FLT.Mazur.CyclicCharacteristicAffineResidualPrincipal
+public import FLT.Mazur.CyclicCharacteristicAffineResidualPrincipalAmbient
 public import FLT.Mazur.CyclicCharacteristicAffineResidualRelabel
 public import FLT.Mazur.CyclicCharacteristicAffineResidualRingedComparison
 public import FLT.Mazur.CyclicCharacteristicAffineResidualSections
