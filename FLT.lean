@@ -5278,6 +5278,7 @@ public import FLT.Mazur.EquivalenceRelationCompleteRestrictionNaturality
 public import FLT.Mazur.EquivalenceRelationCompleteScalarFiber
 public import FLT.Mazur.EquivalenceRelationCompleteSourceComparison
 public import FLT.Mazur.EquivalenceRelationCompleteSourceRestriction
+public import FLT.Mazur.EquivalenceRelationCompleteSpecializations
 public import FLT.Mazur.EquivalenceRelationCompleteStageCoefficients
 public import FLT.Mazur.EquivalenceRelationCompleteSubframe
 public import FLT.Mazur.EquivalenceRelationCompleteSubframeCompatibility
