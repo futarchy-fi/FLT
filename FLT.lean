@@ -567,6 +567,7 @@ public import FLT.FreyCurve.Serre.VeluLocalGenericMorphism
 public import FLT.FreyCurve.Serre.VeluLocalGenericPointComparison
 public import FLT.FreyCurve.Serre.VeluLocalIntegralKernelClosure
 public import FLT.FreyCurve.Serre.VeluLocalIntegralKernelFinite
+public import FLT.FreyCurve.Serre.VeluLocalIntegralKernelOperations
 public import FLT.FreyCurve.Serre.VeluLocalIntegralKernelRecovery
 public import FLT.FreyCurve.Serre.VeluLocalIntegralModel
 public import FLT.FreyCurve.Serre.VeluLocalPointMorphism
