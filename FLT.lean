@@ -2650,6 +2650,8 @@ public import FLT.Mazur.AffineBoundaryComponentEquations
 public import FLT.Mazur.AffineBoundaryComponentSpecialization
 public import FLT.Mazur.AffineBoundaryGenericLocalTests
 public import FLT.Mazur.AffineBoundaryNilpotenceOpen
+public import FLT.Mazur.AffineBoundaryScalarFiberEquations
+public import FLT.Mazur.AffineBoundaryScalarNilpotence
 public import FLT.Mazur.AffineBoundaryTestFactorization
 public import FLT.Mazur.AffineBoundaryTestIdeal
 public import FLT.Mazur.AffineBoundaryTestPowerEquations
@@ -4881,6 +4883,8 @@ public import FLT.Mazur.EquivalenceRelationBoundaryRankFiltration
 public import FLT.Mazur.EquivalenceRelationBoundaryRankRecovery
 public import FLT.Mazur.EquivalenceRelationBoundaryRankSeparation
 public import FLT.Mazur.EquivalenceRelationBoundaryRankThickenings
+public import FLT.Mazur.EquivalenceRelationBoundaryScalarCharts
+public import FLT.Mazur.EquivalenceRelationBoundaryScalarRanks
 public import FLT.Mazur.EquivalenceRelationBoundaryStageDescent
 public import FLT.Mazur.EquivalenceRelationBoundarySubframe
 public import FLT.Mazur.EquivalenceRelationBoundarySubframeCoefficients
@@ -6450,6 +6454,7 @@ public import FLT.Mazur.HilbertSourceBoundaryPrincipalCharts
 public import FLT.Mazur.HilbertSourceBoundaryRankFinite
 public import FLT.Mazur.HilbertSourceBoundaryRankNilpotence
 public import FLT.Mazur.HilbertSourceBoundaryRankStages
+public import FLT.Mazur.HilbertSourceBoundaryScalarCharts
 public import FLT.Mazur.HilbertSourceBoundaryStageRecovery
 public import FLT.Mazur.HilbertSourceBoundaryTestNeighborhoods
 public import FLT.Mazur.HilbertSourceBoundaryUniformOrders
@@ -6478,6 +6483,7 @@ public import FLT.Mazur.HilbertSourceOpenRelationLifts
 public import FLT.Mazur.HilbertSourceOriginalDomainComponents
 public import FLT.Mazur.HilbertSourceOriginalEquationNeighborhoods
 public import FLT.Mazur.HilbertSourceRankCutoffLifts
+public import FLT.Mazur.HilbertSourceScalarNilpotenceLifts
 public import FLT.Mazur.HilbertSourceValuativeBoundaryObstructions
 public import FLT.Mazur.HilbertStableFrameBoundary
 public import FLT.Mazur.HilbertSubframeAffineOverlap
@@ -11036,10 +11042,13 @@ public import FLT.Mazur.ScalarExtensionDirectSum
 public import FLT.Mazur.ScalarExtensionImageReduction
 public import FLT.Mazur.ScalarExtensionIsomorphismDescent
 public import FLT.Mazur.ScalarExtensionPullbackDescent
+public import FLT.Mazur.ScalarIdealNilpotenceOpen
+public import FLT.Mazur.ScalarIdealNilpotenceResidual
 public import FLT.Mazur.ScalarImageFiniteVanishing
 public import FLT.Mazur.ScalarImageOriginalGenerators
 public import FLT.Mazur.ScalarImageResidueGenerators
 public import FLT.Mazur.ScalarImageSourceGenerators
+public import FLT.Mazur.ScalarLocalizedIdealNilpotence
 public import FLT.Mazur.ScalarQuotientImagePresentation
 public import FLT.Mazur.ScalarQuotientImageReduction
 public import FLT.Mazur.ScalarQuotientResiduePresentation
