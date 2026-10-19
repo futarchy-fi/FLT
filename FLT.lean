@@ -562,6 +562,7 @@ public import FLT.FreyCurve.Serre.VeluKernelRationalSubgroup
 public import FLT.FreyCurve.Serre.VeluKernelScalarExtension
 public import FLT.FreyCurve.Serre.VeluKernelSectionComparison
 public import FLT.FreyCurve.Serre.VeluKernelTranslationInvariant
+public import FLT.FreyCurve.Serre.VeluLocalDividedKernelFinite
 public import FLT.FreyCurve.Serre.VeluLocalGenericKernel
 public import FLT.FreyCurve.Serre.VeluLocalGenericKernelGroup
 public import FLT.FreyCurve.Serre.VeluLocalGenericMorphism
@@ -6831,6 +6832,9 @@ public import FLT.Mazur.HilbertPolynomialUniversalClosedPullback
 public import FLT.Mazur.HilbertPolynomialUniversalDegree
 public import FLT.Mazur.HilbertPolynomialUniversalFamilyPullback
 public import FLT.Mazur.HilbertPolynomialUniversalIdeal
+public import FLT.Mazur.HilbertPrescribedMinimalScalarCharts
+public import FLT.Mazur.HilbertPrescribedScalarGeometricCharts
+public import FLT.Mazur.HilbertPrescribedScalarMorphism
 public import FLT.Mazur.HilbertPrincipalBaseChangeMorphism
 public import FLT.Mazur.HilbertPrincipalBaseChangeScalars
 public import FLT.Mazur.HilbertPrincipalInvariantNorm
@@ -11421,6 +11425,8 @@ public import FLT.Mazur.RelativeRelationInvariantSectionRings
 public import FLT.Mazur.RelativeRelationInvariantSections
 public import FLT.Mazur.RelativeRelationInvariantSheaf
 public import FLT.Mazur.RelativeRelationLiftLocus
+public import FLT.Mazur.RelativeRelationMinimalScalarCharacters
+public import FLT.Mazur.RelativeRelationMinimalScalarEndpoints
 public import FLT.Mazur.RelativeRelationMonicBaseLift
 public import FLT.Mazur.RelativeRelationMonicSeedOpenQuotient
 public import FLT.Mazur.RelativeRelationMonicSeedQuotient
@@ -11539,6 +11545,7 @@ public import FLT.Mazur.ScalarNilpotenceMinimalFiber
 public import FLT.Mazur.ScalarQuotientImagePresentation
 public import FLT.Mazur.ScalarQuotientImageReduction
 public import FLT.Mazur.ScalarQuotientResiduePresentation
+public import FLT.Mazur.ScalarResidueClosureGeometry
 public import FLT.Mazur.ScalarRestrictionFiniteness
 public import FLT.Mazur.ScalarRestrictionImage
 public import FLT.Mazur.ScalarTensorExactFibers
@@ -12109,8 +12116,10 @@ public import FLT.Mazur.SchemeScalarAvoidanceIdeal
 public import FLT.Mazur.SchemeScalarBadPrimeDenominators
 public import FLT.Mazur.SchemeScalarBoundaryUnitCover
 public import FLT.Mazur.SchemeScalarFiniteBadPrimes
+public import FLT.Mazur.SchemeScalarGeometricOpenLift
 public import FLT.Mazur.SchemeScalarIntegralBadCover
 public import FLT.Mazur.SchemeScalarIntegralCover
+public import FLT.Mazur.SchemeScalarMinimalEndpoint
 public import FLT.Mazur.SchemeScalarPrincipalNeighborhood
 public import FLT.Mazur.SchemeScalarPrincipalNeighborhoodFamily
 public import FLT.Mazur.SchemeSectionFamilyProduct
@@ -14208,6 +14217,7 @@ public import FLT.Mazur.WeierstrassDividedFourthZeroRestriction
 public import FLT.Mazur.WeierstrassDividedFullInfinityFactorRatioMap
 public import FLT.Mazur.WeierstrassDividedFullInfinityFactorRatioNaturality
 public import FLT.Mazur.WeierstrassDividedFullResidueAtlas
+public import FLT.Mazur.WeierstrassDividedGenericCurve
 public import FLT.Mazur.WeierstrassDividedGlobalActionAssociativity
 public import FLT.Mazur.WeierstrassDividedGlobalActionConstruction
 public import FLT.Mazur.WeierstrassDividedGlobalActionIdentity
@@ -14348,6 +14358,13 @@ public import FLT.Mazur.WeierstrassDividedInteriorHorizontalCyclicAction
 public import FLT.Mazur.WeierstrassDividedInteriorHorizontalCyclicInput
 public import FLT.Mazur.WeierstrassDividedInteriorHorizontalCyclicPair
 public import FLT.Mazur.WeierstrassDividedInteriorTensorOutputGeometry
+public import FLT.Mazur.WeierstrassDividedKernelClosure
+public import FLT.Mazur.WeierstrassDividedKernelContraction
+public import FLT.Mazur.WeierstrassDividedKernelFinite
+public import FLT.Mazur.WeierstrassDividedKernelSmoothEmbedding
+public import FLT.Mazur.WeierstrassDividedKernelSmoothRecovery
+public import FLT.Mazur.WeierstrassDividedKernelSmoothStep
+public import FLT.Mazur.WeierstrassDividedKernelStep
 public import FLT.Mazur.WeierstrassDividedLaurentRetainedIntersection
 public import FLT.Mazur.WeierstrassDividedLaurentTerminalAttachments
 public import FLT.Mazur.WeierstrassDividedLaurentTerminalEmbedding
