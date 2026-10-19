@@ -4067,6 +4067,7 @@ public import FLT.Mazur.CommonAmbientGrassmannianAffineCover
 public import FLT.Mazur.CommonAmbientGrassmannianProduct
 public import FLT.Mazur.CommonAmbientOpenIso
 public import FLT.Mazur.CommonAmbientSourceGrassmannianImmersion
+public import FLT.Mazur.CommonCartesianCoverIso
 public import FLT.Mazur.CommonCoefficientStage
 public import FLT.Mazur.CommonGroundEnvelopeCore
 public import FLT.Mazur.CommonGroundEnvelopeSquare
