@@ -489,6 +489,7 @@ public import FLT.FreyCurve.Serre.VeluGlobalClassicalComparison
 public import FLT.FreyCurve.Serre.VeluGlobalFinite
 public import FLT.FreyCurve.Serre.VeluGlobalGroupMorphism
 public import FLT.FreyCurve.Serre.VeluGlobalKernelCardinality
+public import FLT.FreyCurve.Serre.VeluGlobalKernelClosedComparison
 public import FLT.FreyCurve.Serre.VeluGlobalKernelCover
 public import FLT.FreyCurve.Serre.VeluGlobalKernelEtale
 public import FLT.FreyCurve.Serre.VeluGlobalKernelIdentityOpen
