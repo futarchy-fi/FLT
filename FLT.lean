@@ -5730,6 +5730,7 @@ public import FLT.Mazur.GeneralizedComparisonPullbackCoherence
 public import FLT.Mazur.GeneralizedComparisonPullbackNaturality
 public import FLT.Mazur.GeneralizedComparisonPullbackTower
 public import FLT.Mazur.GeneralizedComparisonRefinementTransport
+public import FLT.Mazur.GeneralizedComparisonSquareTest
 public import FLT.Mazur.GeneralizedCurveAmpleBaseChange
 public import FLT.Mazur.GeneralizedCurveAmpleDescent
 public import FLT.Mazur.GeneralizedCurveAmpleSubgroup
