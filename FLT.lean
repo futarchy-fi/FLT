@@ -483,6 +483,7 @@ public import FLT.FreyCurve.Serre.VeluKernelRationalCoordinates
 public import FLT.FreyCurve.Serre.VeluKernelRationalEvaluation
 public import FLT.FreyCurve.Serre.VeluKernelRationalMap
 public import FLT.FreyCurve.Serre.VeluKernelScalarExtension
+public import FLT.FreyCurve.Serre.VeluKernelSectionComparison
 public import FLT.FreyCurve.Serre.VeluLocalIntegralModel
 public import FLT.FreyCurve.Serre.VeluMap
 public import FLT.FreyCurve.Serre.VeluOrdinary
