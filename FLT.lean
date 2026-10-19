@@ -4135,6 +4135,7 @@ public import FLT.Mazur.CyclicCharacteristicProductRefinementTransport
 public import FLT.Mazur.CyclicCharacteristicProductSubgroupCharts
 public import FLT.Mazur.CyclicCharacteristicProductSubgroupDiagram
 public import FLT.Mazur.CyclicCharacteristicProductSubgroupGluing
+public import FLT.Mazur.CyclicCharacteristicProductSubgroupIdentification
 public import FLT.Mazur.CyclicCharacteristicProductSubgroupInclusion
 public import FLT.Mazur.CyclicCharacteristicProductUniversalCharts
 public import FLT.Mazur.CyclicCharacteristicProductUniversalComparison
