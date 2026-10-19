@@ -577,6 +577,7 @@ public import FLT.FreyCurve.Serre.VeluLocalIntegralSmoothKernelGroup
 public import FLT.FreyCurve.Serre.VeluLocalIntegralSmoothKernelRetention
 public import FLT.FreyCurve.Serre.VeluLocalKernelFiniteSplitting
 public import FLT.FreyCurve.Serre.VeluLocalKernelPerfectSplitModel
+public import FLT.FreyCurve.Serre.VeluLocalKernelSplitDepthModel
 public import FLT.FreyCurve.Serre.VeluLocalKernelSplitModel
 public import FLT.FreyCurve.Serre.VeluLocalPointMorphism
 public import FLT.FreyCurve.Serre.VeluLocalPointTransport
