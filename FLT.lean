@@ -3260,6 +3260,7 @@ public import FLT.Mazur.AffineLineTwistLocalization
 public import FLT.Mazur.AffineLocalFiberRegularQuotient
 public import FLT.Mazur.AffineLocalHilbertTranslationCover
 public import FLT.Mazur.AffineLocallyFreeRelationNorm
+public import FLT.Mazur.AffineMinimalPrimeFiniteOpen
 public import FLT.Mazur.AffineModuleCoalgebraDescent
 public import FLT.Mazur.AffineModuleEpimorphisms
 public import FLT.Mazur.AffineModuleExact
@@ -3874,10 +3875,13 @@ public import FLT.Mazur.CartierFiberNeighborhood
 public import FLT.Mazur.CartierFlatNeighborhoodDescent
 public import FLT.Mazur.CartierFppfDescent
 public import FLT.Mazur.CartierGeneratorCyclicMap
+public import FLT.Mazur.CartierGeneratorGeometricFinite
+public import FLT.Mazur.CartierGeneratorGeometricPowers
 public import FLT.Mazur.CartierGeneratorMarkedSubgroup
 public import FLT.Mazur.CartierGeneratorOrbitCover
 public import FLT.Mazur.CartierGeneratorOrbitRecovery
 public import FLT.Mazur.CartierGeneratorSplitPresentation
+public import FLT.Mazur.CartierGeneratorUnitPowers
 public import FLT.Mazur.CartierIdealCoproduct
 public import FLT.Mazur.CartierIdealDescentDatum
 public import FLT.Mazur.CartierIdealFinitePresentation
@@ -4114,6 +4118,7 @@ public import FLT.Mazur.CompactSchemeIntegerDescent
 public import FLT.Mazur.CompactSeparatedPushforward
 public import FLT.Mazur.ComparedStageSectionReconstruction
 public import FLT.Mazur.CompatibleErrorBaseChange
+public import FLT.Mazur.CompatibleGeometricGeneratorRelabel
 public import FLT.Mazur.CompatibleParameterRefinementProjection
 public import FLT.Mazur.CompatibleSubgroupAmple
 public import FLT.Mazur.CompatibleSubgroupAuxiliaryTransport
@@ -4283,6 +4288,7 @@ public import FLT.Mazur.CyclicCharacteristicFiniteNeighborhood
 public import FLT.Mazur.CyclicCharacteristicFiniteResidualSections
 public import FLT.Mazur.CyclicCharacteristicFiniteTypeAtlas
 public import FLT.Mazur.CyclicCharacteristicFixedCover
+public import FLT.Mazur.CyclicCharacteristicGeometricGeneratorRelabel
 public import FLT.Mazur.CyclicCharacteristicIntegerFunctionRelation
 public import FLT.Mazur.CyclicCharacteristicIntegerInvariantReconstruction
 public import FLT.Mazur.CyclicCharacteristicIntegerSectionTransport
@@ -4420,6 +4426,7 @@ public import FLT.Mazur.CyclicCharacteristicUnmarkedSheaf
 public import FLT.Mazur.CyclicCharacteristicUnmarkedSheafRelation
 public import FLT.Mazur.CyclicCharacteristicUnmarkedSourceSheaf
 public import FLT.Mazur.CyclicDivisorSubgroupCriterion
+public import FLT.Mazur.CyclicGeneratorUnitLift
 public import FLT.Mazur.CyclicHomAffinePresentationInvariant
 public import FLT.Mazur.CyclicHomAuxiliaryScheme
 public import FLT.Mazur.CyclicHomDivisorFppfCoverage
@@ -4521,6 +4528,7 @@ public import FLT.Mazur.CyclicProductDescent
 public import FLT.Mazur.CyclicProductEndpoints
 public import FLT.Mazur.CyclicProductNormalization
 public import FLT.Mazur.CyclicTorsionPoint
+public import FLT.Mazur.CyclicUnitRelabeling
 public import FLT.Mazur.DRFiberClassification
 public import FLT.Mazur.DedekindPointExtension
 public import FLT.Mazur.DenseClosedRestriction
@@ -5300,6 +5308,7 @@ public import FLT.Mazur.EquivalenceRelationJointSourceRefinement
 public import FLT.Mazur.EquivalenceRelationLabelOpenCharts
 public import FLT.Mazur.EquivalenceRelationLabelOverlap
 public import FLT.Mazur.EquivalenceRelationLabelRefinement
+public import FLT.Mazur.EquivalenceRelationMinimalCompleteNeighborhood
 public import FLT.Mazur.EquivalenceRelationMinimalScalarGeometry
 public import FLT.Mazur.EquivalenceRelationMixedBranchCoefficients
 public import FLT.Mazur.EquivalenceRelationMixedChartDescent
@@ -6636,6 +6645,7 @@ public import FLT.Mazur.HilbertLabelResidualLifts
 public import FLT.Mazur.HilbertLocalResidueBasis
 public import FLT.Mazur.HilbertLocalizationIsomorphismOpen
 public import FLT.Mazur.HilbertLocalizedTupleBasis
+public import FLT.Mazur.HilbertMinimalCompleteNeighborhood
 public import FLT.Mazur.HilbertMixedResidualBranches
 public import FLT.Mazur.HilbertMonomialAmbientDecomposition
 public import FLT.Mazur.HilbertMonomialBasisNeighborhood
@@ -7966,6 +7976,7 @@ public import FLT.Mazur.OddWeierstrassAuxiliaryFixedCoefficient
 public import FLT.Mazur.OddWeierstrassAuxiliaryFixedCoefficientComparison
 public import FLT.Mazur.OddWeierstrassAuxiliaryFrameUnits
 public import FLT.Mazur.OddWeierstrassAuxiliaryFullBasis
+public import FLT.Mazur.OddWeierstrassAuxiliaryGeometricFull
 public import FLT.Mazur.OddWeierstrassAuxiliaryGroupSourceNaturality
 public import FLT.Mazur.OddWeierstrassAuxiliaryLevel
 public import FLT.Mazur.OddWeierstrassAuxiliaryMarkedRigidity
@@ -8409,6 +8420,7 @@ public import FLT.Mazur.OriginalFiniteCoefficientOrbit
 public import FLT.Mazur.OriginalGeometricallyIntegralOpen
 public import FLT.Mazur.OriginalHilbertFiniteType
 public import FLT.Mazur.OriginalInvariantOpenAllEtaleLifts
+public import FLT.Mazur.OriginalLocalizationIntegralEquations
 public import FLT.Mazur.OriginalPrimeDomainValuationObstruction
 public import FLT.Mazur.OriginalPrimeExactCenterValuations
 public import FLT.Mazur.OriginalPrimeIntegralComponents
@@ -11029,6 +11041,7 @@ public import FLT.Mazur.QuasiCoherentSchemePullback
 public import FLT.Mazur.QuasiCompactEtaleGeometricSections
 public import FLT.Mazur.QuasiCompactGenericFiniteOpen
 public import FLT.Mazur.QuasiCompactGenericFlatOpen
+public import FLT.Mazur.QuasiCompactMinimalPrimeFiniteOpen
 public import FLT.Mazur.QuasiFiniteCoefficientQuotient
 public import FLT.Mazur.QuasiFiniteFlatDescent
 public import FLT.Mazur.QuasiFiniteFppfDescent
@@ -11037,6 +11050,7 @@ public import FLT.Mazur.QuasiFiniteGeometricPointIsolation
 public import FLT.Mazur.QuasiFiniteIdealQuotient
 public import FLT.Mazur.QuasiFiniteMinimalPrimeEquations
 public import FLT.Mazur.QuasiFiniteMinimalPrimeFiniteNeighborhood
+public import FLT.Mazur.QuasiFiniteMinimalPrimePrincipalAlgebra
 public import FLT.Mazur.QuasiFiniteSmoothLocalEquation
 public import FLT.Mazur.QuasiFiniteUniversalPointIsolation
 public import FLT.Mazur.QuasicoherentImageIdeal
@@ -11874,6 +11888,7 @@ public import FLT.Mazur.SchemeLineCanonicalFunctor
 public import FLT.Mazur.SchemeLineDescentCategory
 public import FLT.Mazur.SchemeLineDescentRefinement
 public import FLT.Mazur.SchemeMinimalPrimeFinitePullback
+public import FLT.Mazur.SchemeMinimalPrimeFiniteTargetOpen
 public import FLT.Mazur.SchemeModulePullbackOpenUnits
 public import FLT.Mazur.SchemeModulePullbackUnitSections
 public import FLT.Mazur.SchemeModulePullbackUnits
@@ -11881,6 +11896,7 @@ public import FLT.Mazur.SchemeMonoIdealPullback
 public import FLT.Mazur.SchemeMonoidUnitEvaluation
 public import FLT.Mazur.SchemeNaturalUnitLocus
 public import FLT.Mazur.SchemeNilpotentSectionDetection
+public import FLT.Mazur.SchemeNoetherianDenseFiniteOpen
 public import FLT.Mazur.SchemeNoetherianUniformKernelPower
 public import FLT.Mazur.SchemeNormIndependentGroundTests
 public import FLT.Mazur.SchemeNormalizedRecoveryOverlap
@@ -12404,6 +12420,7 @@ public import FLT.Mazur.SpecCartesianAlgebraPushout
 public import FLT.Mazur.SpecChartIdealPreimage
 public import FLT.Mazur.SpecGenericFiniteOpen
 public import FLT.Mazur.SpecGenericFlatOpen
+public import FLT.Mazur.SpecMinimalPrimeFiniteOpen
 public import FLT.Mazur.SpecializationValuationSquare
 public import FLT.Mazur.SpectrumFieldCohomologyCoordinates
 public import FLT.Mazur.SpectrumGlobalRange
@@ -12645,6 +12662,7 @@ public import FLT.Mazur.UniversalWeierstrassAuxiliaryFrameUnits
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryFullBasis
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryFullMarkingSections
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryFullNormalizedMarking
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryGeometricFull
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryGroupSourceNaturality
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryIsomorphismUnique
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryLevel
