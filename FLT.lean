@@ -4165,6 +4165,7 @@ public import FLT.Mazur.CyclicCharacteristicProductComparisonGluing
 public import FLT.Mazur.CyclicCharacteristicProductCompatibleTests
 public import FLT.Mazur.CyclicCharacteristicProductDiagramTopology
 public import FLT.Mazur.CyclicCharacteristicProductFullAffineClassification
+public import FLT.Mazur.CyclicCharacteristicProductLocalParameters
 public import FLT.Mazur.CyclicCharacteristicProductOpenCoordinates
 public import FLT.Mazur.CyclicCharacteristicProductOriginalSubgroupLocus
 public import FLT.Mazur.CyclicCharacteristicProductRefinementAlgebra
