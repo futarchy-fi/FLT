@@ -4999,6 +4999,7 @@ public import FLT.Mazur.EllipticResolvedIdentityCharacter
 public import FLT.Mazur.EllipticResolvedIdentityChart
 public import FLT.Mazur.EllipticResolvedIdentityPoints
 public import FLT.Mazur.EllipticResolvedInitialCoverage
+public import FLT.Mazur.EllipticResolvedIntegralSmoothSection
 public import FLT.Mazur.EllipticResolvedLabelDifference
 public import FLT.Mazur.EllipticResolvedLastExteriorCover
 public import FLT.Mazur.EllipticResolvedLaurentEquality
