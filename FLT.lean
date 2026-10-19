@@ -5316,6 +5316,7 @@ public import FLT.Mazur.FiniteGroupTraceRetraction
 public import FLT.Mazur.FiniteHomologyFiberVanishing
 public import FLT.Mazur.FiniteIdealConditionDimension
 public import FLT.Mazur.FiniteIdealLocalizationDenominators
+public import FLT.Mazur.FiniteIdealNilpotenceInterior
 public import FLT.Mazur.FiniteIdealNilpotenceOpen
 public import FLT.Mazur.FiniteIntegerModelElementRelations
 public import FLT.Mazur.FiniteIntegerModelPullbacks
