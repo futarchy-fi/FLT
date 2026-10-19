@@ -2720,12 +2720,16 @@ public import FLT.Mazur.AffineBasisSumCoproduct
 public import FLT.Mazur.AffineBasisSumMaps
 public import FLT.Mazur.AffineBoundaryComponentEquations
 public import FLT.Mazur.AffineBoundaryComponentSpecialization
+public import FLT.Mazur.AffineBoundaryFlatScalarEquations
+public import FLT.Mazur.AffineBoundaryFppfScalarTests
 public import FLT.Mazur.AffineBoundaryGenericLocalTests
+public import FLT.Mazur.AffineBoundaryIndependentFlatTests
 public import FLT.Mazur.AffineBoundaryNilpotenceOpen
 public import FLT.Mazur.AffineBoundaryPrincipalTestCharts
 public import FLT.Mazur.AffineBoundaryScalarFiberEquations
 public import FLT.Mazur.AffineBoundaryScalarLocalProduct
 public import FLT.Mazur.AffineBoundaryScalarNilpotence
+public import FLT.Mazur.AffineBoundaryScalarObstructionGeometry
 public import FLT.Mazur.AffineBoundaryTestFactorization
 public import FLT.Mazur.AffineBoundaryTestGeneratorPoles
 public import FLT.Mazur.AffineBoundaryTestIdeal
@@ -6611,6 +6615,7 @@ public import FLT.Mazur.HilbertSourceFiniteCompletenessTests
 public import FLT.Mazur.HilbertSourceFiniteLinearOpenLifts
 public import FLT.Mazur.HilbertSourceFiniteMultiplierTests
 public import FLT.Mazur.HilbertSourceFiniteOpenNumerators
+public import FLT.Mazur.HilbertSourceFlatScalarEquations
 public import FLT.Mazur.HilbertSourceGeneratedLocalizedSurjectivity
 public import FLT.Mazur.HilbertSourceHigherScalarValuations
 public import FLT.Mazur.HilbertSourceLocalRankCeilingLifts
@@ -11213,6 +11218,7 @@ public import FLT.Mazur.ScalarImageOriginalGenerators
 public import FLT.Mazur.ScalarImageResidueGenerators
 public import FLT.Mazur.ScalarImageSourceGenerators
 public import FLT.Mazur.ScalarLocalizedIdealNilpotence
+public import FLT.Mazur.ScalarNilpotenceMinimalFiber
 public import FLT.Mazur.ScalarQuotientImagePresentation
 public import FLT.Mazur.ScalarQuotientImageReduction
 public import FLT.Mazur.ScalarQuotientResiduePresentation
@@ -11536,6 +11542,7 @@ public import FLT.Mazur.SchemeGeometricFiberH0Comparison
 public import FLT.Mazur.SchemeGlueDataMap
 public import FLT.Mazur.SchemeGlueDataMapCartesian
 public import FLT.Mazur.SchemeIdempotentSupport
+public import FLT.Mazur.SchemeImageClosureFlatBaseChange
 public import FLT.Mazur.SchemeIndependentCanonicalCocycle
 public import FLT.Mazur.SchemeIndependentCanonicalCompatibility
 public import FLT.Mazur.SchemeIndependentCanonicalCoordinate
