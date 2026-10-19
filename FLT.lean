@@ -4293,6 +4293,7 @@ public import FLT.Mazur.CyclicCharacteristicOddParameterSource
 public import FLT.Mazur.CyclicCharacteristicOddRelabelSections
 public import FLT.Mazur.CyclicCharacteristicOddRelabeledAuxiliary
 public import FLT.Mazur.CyclicCharacteristicOddRelabeledGenerator
+public import FLT.Mazur.CyclicCharacteristicOppositeLocallyRinged
 public import FLT.Mazur.CyclicCharacteristicOrbit
 public import FLT.Mazur.CyclicCharacteristicOrbitChartImage
 public import FLT.Mazur.CyclicCharacteristicOrbitChartTopology
