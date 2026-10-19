@@ -5753,6 +5753,7 @@ public import FLT.Mazur.GeneralizedCurveSmoothBaseCubic
 public import FLT.Mazur.GeneralizedCurveSmoothBaseDimension
 public import FLT.Mazur.GeneralizedCurveSmoothIntegral
 public import FLT.Mazur.GeneralizedCurveSmoothPullback
+public import FLT.Mazur.GeneralizedCurveSquareProjection
 public import FLT.Mazur.GeneralizedCurveSubgroupComparison
 public import FLT.Mazur.GeneralizedCurveSubgroupIdeal
 public import FLT.Mazur.GeneralizedCurveUnrestrictedCubicCoverage
