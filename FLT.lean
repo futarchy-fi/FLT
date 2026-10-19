@@ -6809,6 +6809,7 @@ public import FLT.Mazur.HilbertPolynomialUniversalClosedPullback
 public import FLT.Mazur.HilbertPolynomialUniversalDegree
 public import FLT.Mazur.HilbertPolynomialUniversalFamilyPullback
 public import FLT.Mazur.HilbertPolynomialUniversalIdeal
+public import FLT.Mazur.HilbertPrescribedMinimalScalarCharts
 public import FLT.Mazur.HilbertPrincipalBaseChangeMorphism
 public import FLT.Mazur.HilbertPrincipalBaseChangeScalars
 public import FLT.Mazur.HilbertPrincipalInvariantNorm
