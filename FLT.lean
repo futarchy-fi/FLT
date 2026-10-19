@@ -3402,6 +3402,7 @@ public import FLT.Mazur.AffineValuationCoordinateSquare
 public import FLT.Mazur.AffineValuationGeneratorLift
 public import FLT.Mazur.AffineValuationIntegralLift
 public import FLT.Mazur.AlgClosedOpenCover
+public import FLT.Mazur.AlgClosedSectionHomExt
 public import FLT.Mazur.AlgebraEqualizerCoordinates
 public import FLT.Mazur.AlgebraicAcyclicOrbitTranslation
 public import FLT.Mazur.AlgebraicClosureEmbeddingConjugacy
