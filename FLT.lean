@@ -4001,6 +4001,7 @@ public import FLT.Mazur.CyclicBoundaryOriginalMarkings
 public import FLT.Mazur.CyclicBoundaryParameterAction
 public import FLT.Mazur.CyclicBoundaryParameterSections
 public import FLT.Mazur.CyclicBoundarySectionMarking
+public import FLT.Mazur.CyclicCharacteristicAffineCartierClassification
 public import FLT.Mazur.CyclicCharacteristicAffineCoefficientCoherence
 public import FLT.Mazur.CyclicCharacteristicAffineComparisonCocycle
 public import FLT.Mazur.CyclicCharacteristicAffineComparisonOverlap
