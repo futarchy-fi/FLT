@@ -4214,6 +4214,7 @@ public import FLT.Mazur.CyclicPinchingSemilinearScaledSources
 public import FLT.Mazur.CyclicProductDescent
 public import FLT.Mazur.CyclicProductEndpoints
 public import FLT.Mazur.CyclicProductNormalization
+public import FLT.Mazur.CyclicTorsionPoint
 public import FLT.Mazur.DRFiberClassification
 public import FLT.Mazur.DedekindPointExtension
 public import FLT.Mazur.DenseGroundEnvelopeInterior
