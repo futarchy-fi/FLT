@@ -575,6 +575,7 @@ public import FLT.FreyCurve.Serre.VeluLocalIntegralModel
 public import FLT.FreyCurve.Serre.VeluLocalIntegralSmoothKernel
 public import FLT.FreyCurve.Serre.VeluLocalIntegralSmoothKernelGroup
 public import FLT.FreyCurve.Serre.VeluLocalIntegralSmoothKernelRetention
+public import FLT.FreyCurve.Serre.VeluLocalKernelFiniteSplitting
 public import FLT.FreyCurve.Serre.VeluLocalPointMorphism
 public import FLT.FreyCurve.Serre.VeluLocalPointTransport
 public import FLT.FreyCurve.Serre.VeluLocalResolvedKernelSmooth
@@ -5603,16 +5604,21 @@ public import FLT.Mazur.FiniteErrorReduction
 public import FLT.Mazur.FiniteErrorReductionFrame
 public import FLT.Mazur.FiniteErrorReductionIteration
 public import FLT.Mazur.FiniteErrorTensorPairs
+public import FLT.Mazur.FiniteEtaleDVRSplitting
 public import FLT.Mazur.FiniteEtaleDisjointSectionNeighborhood
+public import FLT.Mazur.FiniteEtaleFiniteFieldCover
 public import FLT.Mazur.FiniteEtaleGeometricDisjointCover
 public import FLT.Mazur.FiniteEtaleGeometricSectionCover
 public import FLT.Mazur.FiniteEtaleGeometricSplitting
 public import FLT.Mazur.FiniteEtaleImageCover
 public import FLT.Mazur.FiniteEtaleIndependentGeometricTranslation
+public import FLT.Mazur.FiniteEtaleRationalCover
 public import FLT.Mazur.FiniteEtaleSectionCoverNeighborhood
 public import FLT.Mazur.FiniteEtaleSectionEqualityNeighborhood
 public import FLT.Mazur.FiniteEtaleWholeFiberNeighborhood
 public import FLT.Mazur.FiniteEvaluationLocus
+public import FLT.Mazur.FiniteExtensionDVRModel
+public import FLT.Mazur.FiniteExtensionValuationSubring
 public import FLT.Mazur.FiniteFamilySupportBaseChange
 public import FLT.Mazur.FiniteFamilySupportOpen
 public import FLT.Mazur.FiniteFiberClosedImmersion
@@ -12185,6 +12191,7 @@ public import FLT.Mazur.SectionChartGenerators
 public import FLT.Mazur.SectionCharts
 public import FLT.Mazur.SectionConditionAcyclic
 public import FLT.Mazur.SectionConditionDimension
+public import FLT.Mazur.SectionCoverBaseChange
 public import FLT.Mazur.SectionCoverCoordinates
 public import FLT.Mazur.SectionCoverDiscrepancy
 public import FLT.Mazur.SectionCoverGeometricMorphisms
@@ -15795,6 +15802,7 @@ public import FLT.Mazur.WeierstrassLineCubicFactorization
 public import FLT.Mazur.WeierstrassLocalAdditionCurveComparison
 public import FLT.Mazur.WeierstrassLocalGenericKernel
 public import FLT.Mazur.WeierstrassLocalGenericProjection
+public import FLT.Mazur.WeierstrassLocalKernelCoefficientSquare
 public import FLT.Mazur.WeierstrassLowPoleCoordinates
 public import FLT.Mazur.WeierstrassMixedIntersectionScheme
 public import FLT.Mazur.WeierstrassMixedLeftReciprocalDomain
