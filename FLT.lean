@@ -4380,6 +4380,7 @@ public import FLT.Mazur.CyclicCharacteristicQuotientUnmarkedDescent
 public import FLT.Mazur.CyclicCharacteristicRelabelSections
 public import FLT.Mazur.CyclicCharacteristicRelabeledPrescribedCover
 public import FLT.Mazur.CyclicCharacteristicRelabeledPrescribedSections
+public import FLT.Mazur.CyclicCharacteristicResidualAffineComparison
 public import FLT.Mazur.CyclicCharacteristicResidualChartQuotient
 public import FLT.Mazur.CyclicCharacteristicResidualPrincipalOpens
 public import FLT.Mazur.CyclicCharacteristicResidualProjection
