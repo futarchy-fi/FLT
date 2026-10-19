@@ -5289,6 +5289,7 @@ public import FLT.Mazur.EquivalenceRelationCompleteBoundaryCorrections
 public import FLT.Mazur.EquivalenceRelationCompleteCharacterLifts
 public import FLT.Mazur.EquivalenceRelationCompleteChartImage
 public import FLT.Mazur.EquivalenceRelationCompleteClosedLocus
+public import FLT.Mazur.EquivalenceRelationCompleteComponents
 public import FLT.Mazur.EquivalenceRelationCompleteEndpointOrbit
 public import FLT.Mazur.EquivalenceRelationCompleteEquivariantCoefficients
 public import FLT.Mazur.EquivalenceRelationCompleteExactRank
@@ -5322,6 +5323,9 @@ public import FLT.Mazur.EquivalenceRelationCompleteThickeningFinite
 public import FLT.Mazur.EquivalenceRelationCompleteThickeningTower
 public import FLT.Mazur.EquivalenceRelationCompleteThickenings
 public import FLT.Mazur.EquivalenceRelationCompleteVanishingOpen
+public import FLT.Mazur.EquivalenceRelationComponentCharacters
+public import FLT.Mazur.EquivalenceRelationComponentPrincipalBranches
+public import FLT.Mazur.EquivalenceRelationComponentScalarTests
 public import FLT.Mazur.EquivalenceRelationConnectedCompleteTests
 public import FLT.Mazur.EquivalenceRelationDoubleVanishingOpen
 public import FLT.Mazur.EquivalenceRelationEqualFrameCorrections
@@ -6636,6 +6640,7 @@ public import FLT.Mazur.HilbertCompleteInteriorBoundaryLifts
 public import FLT.Mazur.HilbertCompleteInteriorCharts
 public import FLT.Mazur.HilbertCompleteInteriorFiniteCriterion
 public import FLT.Mazur.HilbertCompleteInteriorOriginalNeighborhoods
+public import FLT.Mazur.HilbertComponentOriginalScalarGeometry
 public import FLT.Mazur.HilbertDenseRankOriginalLifts
 public import FLT.Mazur.HilbertDivisorDegreePresentation
 public import FLT.Mazur.HilbertEnvelopeSourceTransport
@@ -11583,6 +11588,8 @@ public import FLT.Mazur.RingPairInvariantLocalization
 public import FLT.Mazur.RingedSpaceIdealLocus
 public import FLT.Mazur.ScalarAlgebraicClosureTests
 public import FLT.Mazur.ScalarClosedGeometricLifts
+public import FLT.Mazur.ScalarClosedImageCoverage
+public import FLT.Mazur.ScalarClosedPrincipalBranches
 public import FLT.Mazur.ScalarCohomology
 public import FLT.Mazur.ScalarCompatibleIntegerModel
 public import FLT.Mazur.ScalarComponentRankCeiling
