@@ -509,6 +509,7 @@ public import FLT.FreyCurve.Serre.VeluSourceChart
 public import FLT.FreyCurve.Serre.VeluSourceChartFractions
 public import FLT.FreyCurve.Serre.VeluSourceChartInjective
 public import FLT.FreyCurve.Serre.VeluSourceFractionField
+public import FLT.FreyCurve.Serre.VeluSourceGenericPoint
 public import FLT.FreyCurve.Serre.VeluSourceSchemeFunctionField
 public import FLT.FreyCurve.Serre.VeluSpecialization
 public import FLT.FreyCurve.Serre.VeluTranslation
