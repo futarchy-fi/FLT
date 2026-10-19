@@ -110,9 +110,12 @@ public import FLT.Assembly.CharacterModelPurity
 public import FLT.Assembly.CharacterModels
 public import FLT.Assembly.ExistingInputs
 public import FLT.Assembly.Final
+public import FLT.Assembly.FreyIrreducibility
+public import FLT.Assembly.FreyQuotientExclusion
 public import FLT.Assembly.FreyTraceInput
 public import FLT.Assembly.Inputs
 public import FLT.Assembly.Mazur
+public import FLT.Assembly.NarrowFreyFinal
 public import FLT.Assembly.NormalizedReducibility
 public import FLT.Assembly.PrimeField
 public import FLT.Assembly.PrimePowerFinal
@@ -120,6 +123,7 @@ public import FLT.Assembly.PrimePowerSorting
 public import FLT.Assembly.PrimePowerSortingProof
 public import FLT.Assembly.Proof
 public import FLT.Assembly.ResidualQuotients
+public import FLT.Assembly.SmallRegularPrimes
 public import FLT.Assembly.ThreeAdicTrace
 public import FLT.Assembly.ThreeInputFinal
 public import FLT.Assembly.TraceLinearAlgebra
@@ -462,6 +466,7 @@ public import FLT.FreyCurve.Serre.VeluQuotient
 public import FLT.FreyCurve.Serre.VeluRational
 public import FLT.FreyCurve.Serre.VeluSpecialization
 public import FLT.FreyCurve.Serre.VeluTranslation
+public import FLT.FreyCurve.TorsionQuotientWitness
 public import FLT.GaloisRepresentation.Attachment
 public import FLT.GaloisRepresentation.Automorphic
 public import FLT.GaloisRepresentation.Cyclotomic
@@ -4210,6 +4215,7 @@ public import FLT.Mazur.CyclicPinchingSemilinearScaledSources
 public import FLT.Mazur.CyclicProductDescent
 public import FLT.Mazur.CyclicProductEndpoints
 public import FLT.Mazur.CyclicProductNormalization
+public import FLT.Mazur.CyclicTorsionPoint
 public import FLT.Mazur.DRFiberClassification
 public import FLT.Mazur.DedekindPointExtension
 public import FLT.Mazur.DenseGroundEnvelopeInterior
@@ -5649,6 +5655,7 @@ public import FLT.Mazur.FreeTargetVanishingIdeal
 public import FLT.Mazur.FreeTargetVanishingScheme
 public import FLT.Mazur.FullDivisorFlatFppfDescent
 public import FLT.Mazur.FullHilbertIntersectionSeparablePoints
+public import FLT.Mazur.FullTwoPrimeTorsionEquiv
 public import FLT.Mazur.FunctionSheafGradedBaseAlgebra
 public import FLT.Mazur.FunctionSheafGradedSections
 public import FLT.Mazur.GeneralizedComparisonPullbackCoherence

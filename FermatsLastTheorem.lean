@@ -20,9 +20,14 @@ theorem PNat.pow_add_pow_ne_pow
     (x y z : ℕ+)
     (n : ℕ) (hn : n > 2) :
     x^n + y^n ≠ z^n :=
-  PNat.pow_add_pow_ne_pow_of_three_inputs
-    FLT.Assembly.mazurTorsionExclusion FLT.Assembly.hardlyRamifiedLifting
-    FLT.Assembly.hardlyRamifiedCompatibleFamilies x y z n hn
+  FLT.Assembly.pow_add_pow_ne_pow_of_freyIrreducibility
+    (FLT.Assembly.freyIrreducibility_of_quotientTorsionExclusion
+      (FLT.Assembly.freyQuotientTorsionExclusion_of_torsionExclusion
+        FLT.Assembly.mazurTorsionExclusion))
+    (FLT.Bosses.B4_of_inputs FLT.Assembly.hardlyRamifiedLifting
+      FLT.Assembly.hardlyRamifiedCompatibleFamilies
+      (ThreeAdicPlan.threeAdicFrobeniusTrace_of_primePowerSorting
+        ThreeAdicPlan.primePowerSortedExtensionExists)) x y z n hn
 
 /--
 info: 'PNat.pow_add_pow_ne_pow' depends on axioms:
