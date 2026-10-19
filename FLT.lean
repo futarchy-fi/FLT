@@ -5341,6 +5341,7 @@ public import FLT.Mazur.EquivalenceRelationGenericCompleteNeighborhood
 public import FLT.Mazur.EquivalenceRelationGeometricTestExtensions
 public import FLT.Mazur.EquivalenceRelationHigherScalarValuations
 public import FLT.Mazur.EquivalenceRelationHigherTestAtlas
+public import FLT.Mazur.EquivalenceRelationIncompleteFrameGrowth
 public import FLT.Mazur.EquivalenceRelationInvariantBoundaryAction
 public import FLT.Mazur.EquivalenceRelationInvariantCharacterArrows
 public import FLT.Mazur.EquivalenceRelationInvariantCharacterFibers
