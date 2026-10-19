@@ -13934,6 +13934,7 @@ public import FLT.Mazur.WeierstrassDividedOneInitialAtlasTransport
 public import FLT.Mazur.WeierstrassDividedOneInitialPunctureTransport
 public import FLT.Mazur.WeierstrassDividedOneInitialTotalTransport
 public import FLT.Mazur.WeierstrassDividedOneRetainedCoefficientBase
+public import FLT.Mazur.WeierstrassDividedOneRetainedCoefficientRestriction
 public import FLT.Mazur.WeierstrassDividedOneSeedOrientation
 public import FLT.Mazur.WeierstrassDividedOneSeedState
 public import FLT.Mazur.WeierstrassDividedOppositeBoundarySupport
