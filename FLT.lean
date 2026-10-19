@@ -4435,6 +4435,7 @@ public import FLT.Mazur.EllipticCuspAddition
 public import FLT.Mazur.EllipticCuspParametrization
 public import FLT.Mazur.EllipticCuspTangent
 public import FLT.Mazur.EllipticCuspidalGroup
+public import FLT.Mazur.EllipticCyclicComponentTransport
 public import FLT.Mazur.EllipticDilatationPointSection
 public import FLT.Mazur.EllipticDoubleRootCoordinates
 public import FLT.Mazur.EllipticDoubleRootEvenBound
