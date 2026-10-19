@@ -4216,6 +4216,7 @@ public import FLT.Mazur.CyclicCharacteristicFiniteTypeAtlas
 public import FLT.Mazur.CyclicCharacteristicFixedCover
 public import FLT.Mazur.CyclicCharacteristicInvariantAffineCover
 public import FLT.Mazur.CyclicCharacteristicInvariantAffineCoverage
+public import FLT.Mazur.CyclicCharacteristicInvariantLocallyRinged
 public import FLT.Mazur.CyclicCharacteristicInvariantSectionRings
 public import FLT.Mazur.CyclicCharacteristicInvariantSections
 public import FLT.Mazur.CyclicCharacteristicInvariantSheaf
