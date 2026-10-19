@@ -4221,6 +4221,7 @@ public import FLT.Mazur.CyclicCharacteristicInvariantSectionRings
 public import FLT.Mazur.CyclicCharacteristicInvariantSections
 public import FLT.Mazur.CyclicCharacteristicInvariantSheaf
 public import FLT.Mazur.CyclicCharacteristicLocallyNormalizedModuli
+public import FLT.Mazur.CyclicCharacteristicLocallyRingedDescent
 public import FLT.Mazur.CyclicCharacteristicLocusFiniteType
 public import FLT.Mazur.CyclicCharacteristicLocusSeparated
 public import FLT.Mazur.CyclicCharacteristicMarkedQuotient
