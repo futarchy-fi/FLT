@@ -4249,6 +4249,7 @@ public import FLT.Mazur.CyclicCharacteristicAffineOverlapCoverage
 public import FLT.Mazur.CyclicCharacteristicAffineResidualArrows
 public import FLT.Mazur.CyclicCharacteristicAffineResidualComparison
 public import FLT.Mazur.CyclicCharacteristicAffineResidualFibers
+public import FLT.Mazur.CyclicCharacteristicAffineResidualRelabel
 public import FLT.Mazur.CyclicCharacteristicAffineResidualRingedComparison
 public import FLT.Mazur.CyclicCharacteristicAffineResidualSections
 public import FLT.Mazur.CyclicCharacteristicAffineResidualTests
@@ -11930,6 +11931,7 @@ public import FLT.Mazur.SchemeGenericFppfTargetOpen
 public import FLT.Mazur.SchemeGeometricDescentCocycleTest
 public import FLT.Mazur.SchemeGeometricDescentData
 public import FLT.Mazur.SchemeGeometricFiberH0Comparison
+public import FLT.Mazur.SchemeGeometricNilpotentSections
 public import FLT.Mazur.SchemeGlueDataMap
 public import FLT.Mazur.SchemeGlueDataMapCartesian
 public import FLT.Mazur.SchemeIdempotentSupport
