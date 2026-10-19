@@ -113,6 +113,7 @@ public import FLT.Assembly.Final
 public import FLT.Assembly.FreyIrreducibility
 public import FLT.Assembly.FreyQuotientExclusion
 public import FLT.Assembly.FreyTraceInput
+public import FLT.Assembly.FreyVeluExclusion
 public import FLT.Assembly.Inputs
 public import FLT.Assembly.Mazur
 public import FLT.Assembly.NarrowFreyFinal
@@ -433,8 +434,12 @@ public import FLT.FreyCurve.Serre.MultiplicativeQuotient
 public import FLT.FreyCurve.Serre.MultiplicativeReduction
 public import FLT.FreyCurve.Serre.NonsplitFlat
 public import FLT.FreyCurve.Serre.QuadraticTwistPoints
+public import FLT.FreyCurve.Serre.QuotientCoordinateHom
 public import FLT.FreyCurve.Serre.QuotientCurve
+public import FLT.FreyCurve.Serre.QuotientCurveEquation
 public import FLT.FreyCurve.Serre.QuotientDescent
+public import FLT.FreyCurve.Serre.QuotientEquationCoefficients
+public import FLT.FreyCurve.Serre.QuotientRationalKernel
 public import FLT.FreyCurve.Serre.ReducibleFiltration
 public import FLT.FreyCurve.Serre.RootsOfUnityInertia
 public import FLT.FreyCurve.Serre.Semistable
@@ -454,6 +459,7 @@ public import FLT.FreyCurve.Serre.VeluDifferential
 public import FLT.FreyCurve.Serre.VeluElliptic
 public import FLT.FreyCurve.Serre.VeluEquation
 public import FLT.FreyCurve.Serre.VeluEvaluation
+public import FLT.FreyCurve.Serre.VeluExactKernel
 public import FLT.FreyCurve.Serre.VeluFunctionField
 public import FLT.FreyCurve.Serre.VeluGenericAdditivity
 public import FLT.FreyCurve.Serre.VeluHom
@@ -462,11 +468,15 @@ public import FLT.FreyCurve.Serre.VeluInfinity
 public import FLT.FreyCurve.Serre.VeluMap
 public import FLT.FreyCurve.Serre.VeluOrdinary
 public import FLT.FreyCurve.Serre.VeluPointCofinite
+public import FLT.FreyCurve.Serre.VeluPrimeKernel
 public import FLT.FreyCurve.Serre.VeluQuotient
 public import FLT.FreyCurve.Serre.VeluRational
 public import FLT.FreyCurve.Serre.VeluSpecialization
 public import FLT.FreyCurve.Serre.VeluTranslation
 public import FLT.FreyCurve.TorsionQuotientWitness
+public import FLT.FreyCurve.VeluTargetGeometry
+public import FLT.FreyCurve.VeluTargetTwoTorsion
+public import FLT.FreyCurve.VeluTargetWitness
 public import FLT.GaloisRepresentation.Attachment
 public import FLT.GaloisRepresentation.Automorphic
 public import FLT.GaloisRepresentation.Cyclotomic
@@ -6516,6 +6526,11 @@ public import FLT.Mazur.HilbertSourceOpenRelationLifts
 public import FLT.Mazur.HilbertSourceOriginalDomainComponents
 public import FLT.Mazur.HilbertSourceOriginalEquationNeighborhoods
 public import FLT.Mazur.HilbertSourceRankCutoffLifts
+public import FLT.Mazur.HilbertSourceRelationRankStages
+public import FLT.Mazur.HilbertSourceResidualRankCompatibility
+public import FLT.Mazur.HilbertSourceResidualRankCorrections
+public import FLT.Mazur.HilbertSourceResidualRankLifts
+public import FLT.Mazur.HilbertSourceResidualRankObstructions
 public import FLT.Mazur.HilbertSourceScalarLocalDetection
 public import FLT.Mazur.HilbertSourceScalarNilpotenceLifts
 public import FLT.Mazur.HilbertSourceScalarResidualStages
@@ -10941,6 +10956,7 @@ public import FLT.Mazur.RelativePoleComplementFunctions
 public import FLT.Mazur.RelativePoleComplementLinear
 public import FLT.Mazur.RelativeRankOneDivisorUniqueness
 public import FLT.Mazur.RelativeRankPullbackThickenings
+public import FLT.Mazur.RelativeRankResidualSectionDetection
 public import FLT.Mazur.RelativeRankStageFaithfulDetection
 public import FLT.Mazur.RelativeRankStageRecovery
 public import FLT.Mazur.RelativeRankStageSectionDetection
