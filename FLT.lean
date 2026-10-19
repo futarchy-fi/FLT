@@ -491,6 +491,7 @@ public import FLT.FreyCurve.Serre.VeluGlobalBaseTarget
 public import FLT.FreyCurve.Serre.VeluGlobalClassicalComparison
 public import FLT.FreyCurve.Serre.VeluGlobalDegree
 public import FLT.FreyCurve.Serre.VeluGlobalFinite
+public import FLT.FreyCurve.Serre.VeluGlobalGaloisInvariant
 public import FLT.FreyCurve.Serre.VeluGlobalGroupMorphism
 public import FLT.FreyCurve.Serre.VeluGlobalKernelCardinality
 public import FLT.FreyCurve.Serre.VeluGlobalKernelClosedComparison
