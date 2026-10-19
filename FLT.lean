@@ -16923,6 +16923,7 @@ public import FLT.Mazur.WeierstrassSuccessiveXModificationLocalization
 public import FLT.Mazur.WeierstrassSuccessiveXModificationMap
 public import FLT.Mazur.WeierstrassSuccessiveXMonic
 public import FLT.Mazur.WeierstrassSuccessiveXMonicComparison
+public import FLT.Mazur.WeierstrassSuccessiveXNegation
 public import FLT.Mazur.WeierstrassSuccessiveXOverlap
 public import FLT.Mazur.WeierstrassSuccessiveXOverlapCompatibility
 public import FLT.Mazur.WeierstrassSuccessiveXParameterEquiv
