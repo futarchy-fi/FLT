@@ -15355,6 +15355,7 @@ public import FLT.Mazur.WeierstrassGeneralizedEllipticModel
 public import FLT.Mazur.WeierstrassGeneralizedPointedComparison
 public import FLT.Mazur.WeierstrassGeneralizedSmoothComparison
 public import FLT.Mazur.WeierstrassGenericClosureNegation
+public import FLT.Mazur.WeierstrassGenericClosureSmoothPart
 public import FLT.Mazur.WeierstrassGenericClosureZero
 public import FLT.Mazur.WeierstrassGenericKernelClosure
 public import FLT.Mazur.WeierstrassGenericKernelRecovery
