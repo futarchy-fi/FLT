@@ -11931,6 +11931,7 @@ public import FLT.Mazur.SchemeInvariantPrincipalNumerator
 public import FLT.Mazur.SchemeInvariantPrincipalRelationLifts
 public import FLT.Mazur.SchemeInvariantPrincipalScalarImage
 public import FLT.Mazur.SchemeInvariantScalarFiberNeighborhood
+public import FLT.Mazur.SchemeInvariantSpecializationScalarImage
 public import FLT.Mazur.SchemeKernelFlatSourceImage
 public import FLT.Mazur.SchemeKernelInvariantOpenLift
 public import FLT.Mazur.SchemeKernelPairSectionSheaf
