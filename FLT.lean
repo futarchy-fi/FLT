@@ -5654,6 +5654,7 @@ public import FLT.Mazur.FreeTargetVanishingIdeal
 public import FLT.Mazur.FreeTargetVanishingScheme
 public import FLT.Mazur.FullDivisorFlatFppfDescent
 public import FLT.Mazur.FullHilbertIntersectionSeparablePoints
+public import FLT.Mazur.FullTwoPrimeTorsionEquiv
 public import FLT.Mazur.FunctionSheafGradedBaseAlgebra
 public import FLT.Mazur.FunctionSheafGradedSections
 public import FLT.Mazur.GeneralizedComparisonPullbackCoherence
