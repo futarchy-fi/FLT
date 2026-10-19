@@ -31,7 +31,7 @@ def initialExteriorNegationIso : (initialExterior d).carrier ≅ (initialExterio
   initialReflectionIso W (π ^ k) d.b3 d.b4 d.b6
 
 /-- The initial exterior attachment is the exact original two-chart overlap. -/
-@[reassoc] theorem initialExterior_attach_chart :
+@[reassoc] theorem initialExteriorNegation_attach_chart :
     (initialExterior d).attach ≫ xChart W (π ^ k) d.b3 d.b4 d.b6 =
       boundaryInclusion d ≫ dividedChart W (π ^ k) d.b3 d.b4 d.b6 := by
   change (overlapIso W (π ^ k) d.b3 d.b4 d.b6).inv ≫
@@ -48,13 +48,13 @@ include hπ in
     (boundaryNegationIso d).hom ≫ (initialExterior d).attach =
       (initialExterior d).attach ≫ (initialExteriorNegationIso d).hom := by
   apply (cancel_mono (xChart W (π ^ k) d.b3 d.b4 d.b6)).mp
-  simp only [Category.assoc, initialExterior_attach_chart]
+  simp only [Category.assoc, initialExteriorNegation_attach_chart]
   rw [boundaryNegationIso_inclusion_assoc]
   change boundaryInclusion d ≫
     (WeierstrassDilatation.negationIso W (π ^ k) d.b3 d.b4 d.b6).hom ≫ _ = _
   rw [← dividedChart_modificationNegation W (π ^ k) d.b3 d.b4 d.b6
     d.factor3 d.factor4 d.factor6 (pow_ne_zero k hπ)]
-  rw [← initialExterior_attach_chart_assoc, xChart_modificationNegation]
+  rw [← initialExteriorNegation_attach_chart_assoc, xChart_modificationNegation]
   rfl
 
 omit [IsDomain R] [IsBezout R] in
