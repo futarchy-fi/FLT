@@ -11792,6 +11792,7 @@ public import FLT.Mazur.SchemeFiniteGroupFreeFlat
 public import FLT.Mazur.SchemeFiniteGroupGeometricTests
 public import FLT.Mazur.SchemeFiniteGroupInvariantPrincipal
 public import FLT.Mazur.SchemeFiniteGroupPrescribedBoundaryCorrection
+public import FLT.Mazur.SchemeFiniteGroupPrincipalCharacterLifts
 public import FLT.Mazur.SchemeFiniteGroupPrincipalComparison
 public import FLT.Mazur.SchemeFiniteGroupPrincipalQuotient
 public import FLT.Mazur.SchemeFiniteGroupQuotient
