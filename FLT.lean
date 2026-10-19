@@ -6663,6 +6663,7 @@ public import FLT.Mazur.HilbertLocalizationIsomorphismOpen
 public import FLT.Mazur.HilbertLocalizedTupleBasis
 public import FLT.Mazur.HilbertMinimalCompleteNeighborhood
 public import FLT.Mazur.HilbertMinimalScalarFixedRefinements
+public import FLT.Mazur.HilbertMinimalScalarPrincipalGeometry
 public import FLT.Mazur.HilbertMixedResidualBranches
 public import FLT.Mazur.HilbertMonomialAmbientDecomposition
 public import FLT.Mazur.HilbertMonomialBasisNeighborhood
