@@ -5729,6 +5729,7 @@ public import FLT.Mazur.FiniteIntegerModelElementRelations
 public import FLT.Mazur.FiniteIntegerModelPullbacks
 public import FLT.Mazur.FiniteIntegerModelRelations
 public import FLT.Mazur.FiniteIntegerModelUnits
+public import FLT.Mazur.FiniteIntegralResiduePerfect
 public import FLT.Mazur.FiniteIntersectionClosedCocycleModel
 public import FLT.Mazur.FiniteIntersectionClosedModel
 public import FLT.Mazur.FiniteIntersectionCocycleModel
