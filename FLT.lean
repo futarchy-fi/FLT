@@ -4234,6 +4234,7 @@ public import FLT.Mazur.CyclicCharacteristicOddRelabelSections
 public import FLT.Mazur.CyclicCharacteristicOddRelabeledAuxiliary
 public import FLT.Mazur.CyclicCharacteristicOddRelabeledGenerator
 public import FLT.Mazur.CyclicCharacteristicOrbit
+public import FLT.Mazur.CyclicCharacteristicOrbitTopology
 public import FLT.Mazur.CyclicCharacteristicParameterFiniteType
 public import FLT.Mazur.CyclicCharacteristicParameterPresheaf
 public import FLT.Mazur.CyclicCharacteristicParameterSource
