@@ -14473,6 +14473,7 @@ public import FLT.Mazur.WeierstrassDividedZeroCyclicDiagonal
 public import FLT.Mazur.WeierstrassDividedZeroCyclicGlobalBase
 public import FLT.Mazur.WeierstrassDividedZeroCyclicGlobalIso
 public import FLT.Mazur.WeierstrassDividedZeroCyclicGlobalMap
+public import FLT.Mazur.WeierstrassDividedZeroCyclicGlobalRestriction
 public import FLT.Mazur.WeierstrassDividedZeroCyclicIndex
 public import FLT.Mazur.WeierstrassDividedZeroCyclicInitialRestriction
 public import FLT.Mazur.WeierstrassDividedZeroCyclicInverseMap
