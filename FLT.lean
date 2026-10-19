@@ -4019,6 +4019,7 @@ public import FLT.Mazur.CyclicCharacteristicAffineEquationPullback
 public import FLT.Mazur.CyclicCharacteristicAffineOriginalSubgroupLocus
 public import FLT.Mazur.CyclicCharacteristicAffineOriginalSubgroupOverlap
 public import FLT.Mazur.CyclicCharacteristicAffineSubgroup
+public import FLT.Mazur.CyclicCharacteristicAffineSubgroupBaseSquare
 public import FLT.Mazur.CyclicCharacteristicAffineSubgroupClassification
 public import FLT.Mazur.CyclicCharacteristicAffineSubgroupCocycle
 public import FLT.Mazur.CyclicCharacteristicAffineSubgroupFactorization
