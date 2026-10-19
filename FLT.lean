@@ -4156,6 +4156,7 @@ public import FLT.Mazur.CyclicCharacteristicParameterSource
 public import FLT.Mazur.CyclicCharacteristicPrescribedCover
 public import FLT.Mazur.CyclicCharacteristicPrescribedNeighborhood
 public import FLT.Mazur.CyclicCharacteristicProductAffineClassification
+public import FLT.Mazur.CyclicCharacteristicProductAffineSchemeTests
 public import FLT.Mazur.CyclicCharacteristicProductChartTests
 public import FLT.Mazur.CyclicCharacteristicProductComparisonCharts
 public import FLT.Mazur.CyclicCharacteristicProductComparisonDiagram
