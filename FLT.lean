@@ -4286,6 +4286,7 @@ public import FLT.Mazur.CyclicCharacteristicFiniteResidualSections
 public import FLT.Mazur.CyclicCharacteristicFiniteTypeAtlas
 public import FLT.Mazur.CyclicCharacteristicFixedCover
 public import FLT.Mazur.CyclicCharacteristicGeometricGeneratorRelabel
+public import FLT.Mazur.CyclicCharacteristicGeometricOrbit
 public import FLT.Mazur.CyclicCharacteristicIntegerFunctionRelation
 public import FLT.Mazur.CyclicCharacteristicIntegerInvariantReconstruction
 public import FLT.Mazur.CyclicCharacteristicIntegerSectionTransport
