@@ -547,6 +547,7 @@ public import FLT.FreyCurve.Serre.VeluSourceSchemeFunctionField
 public import FLT.FreyCurve.Serre.VeluSpecialization
 public import FLT.FreyCurve.Serre.VeluTranslatedInfinityGeneric
 public import FLT.FreyCurve.Serre.VeluTranslatedInfinityOpen
+public import FLT.FreyCurve.Serre.VeluTranslatedInfinityRepresentative
 public import FLT.FreyCurve.Serre.VeluTranslation
 public import FLT.FreyCurve.Serre.VeluTranslationFieldCoordinates
 public import FLT.FreyCurve.Serre.VeluTranslationFieldHom
