@@ -4248,6 +4248,7 @@ public import FLT.Mazur.CyclicCharacteristicAffineSectionReconstruction
 public import FLT.Mazur.CyclicCharacteristicAffineSourceAssembly
 public import FLT.Mazur.CyclicCharacteristicAffineSourceCover
 public import FLT.Mazur.CyclicCharacteristicAffineSourceFunctions
+public import FLT.Mazur.CyclicCharacteristicAffineSourceLocallyRinged
 public import FLT.Mazur.CyclicCharacteristicAffineSubgroup
 public import FLT.Mazur.CyclicCharacteristicAffineSubgroupBaseSquare
 public import FLT.Mazur.CyclicCharacteristicAffineSubgroupClassification
