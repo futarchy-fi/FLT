@@ -495,6 +495,7 @@ public import FLT.FreyCurve.VeluPadicSmallComponents
 public import FLT.FreyCurve.VeluPadicTwoComponents
 public import FLT.FreyCurve.VeluPadicTwoMinimal
 public import FLT.FreyCurve.VeluPadicTwoValuation
+public import FLT.FreyCurve.VeluSourceKernelModels
 public import FLT.FreyCurve.VeluTargetGeometry
 public import FLT.FreyCurve.VeluTargetTwoTorsion
 public import FLT.FreyCurve.VeluTargetWitness
