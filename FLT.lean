@@ -5891,6 +5891,7 @@ public import FLT.Mazur.FunctionSheafGradedBaseAlgebra
 public import FLT.Mazur.FunctionSheafGradedSections
 public import FLT.Mazur.GaloisTensorPrime
 public import FLT.Mazur.GaloisTensorReduced
+public import FLT.Mazur.GaloisTensorSchemeCover
 public import FLT.Mazur.GeneralizedComparisonBetweenRestriction
 public import FLT.Mazur.GeneralizedComparisonPullbackCoherence
 public import FLT.Mazur.GeneralizedComparisonPullbackNaturality
