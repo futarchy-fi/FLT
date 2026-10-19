@@ -11017,6 +11017,7 @@ public import FLT.Mazur.QuasiFiniteFppfDescent
 public import FLT.Mazur.QuasiFiniteGenericFiniteFree
 public import FLT.Mazur.QuasiFiniteGeometricPointIsolation
 public import FLT.Mazur.QuasiFiniteIdealQuotient
+public import FLT.Mazur.QuasiFiniteMinimalPrimeEquations
 public import FLT.Mazur.QuasiFiniteSmoothLocalEquation
 public import FLT.Mazur.QuasiFiniteUniversalPointIsolation
 public import FLT.Mazur.QuasicoherentImageIdeal
