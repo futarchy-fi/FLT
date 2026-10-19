@@ -5128,6 +5128,7 @@ public import FLT.Mazur.EquivalenceRelationCompleteAdicDiscrepancy
 public import FLT.Mazur.EquivalenceRelationCompleteAdicSeparation
 public import FLT.Mazur.EquivalenceRelationCompleteAffineStages
 public import FLT.Mazur.EquivalenceRelationCompleteBoundaryCorrections
+public import FLT.Mazur.EquivalenceRelationCompleteCharacterLifts
 public import FLT.Mazur.EquivalenceRelationCompleteChartImage
 public import FLT.Mazur.EquivalenceRelationCompleteClosedLocus
 public import FLT.Mazur.EquivalenceRelationCompleteEndpointOrbit
@@ -5141,6 +5142,8 @@ public import FLT.Mazur.EquivalenceRelationCompleteInteriorFinite
 public import FLT.Mazur.EquivalenceRelationCompleteMixedCoefficients
 public import FLT.Mazur.EquivalenceRelationCompleteOpenCoefficients
 public import FLT.Mazur.EquivalenceRelationCompletePointLocus
+public import FLT.Mazur.EquivalenceRelationCompleteQuotientCorrections
+public import FLT.Mazur.EquivalenceRelationCompleteQuotientStages
 public import FLT.Mazur.EquivalenceRelationCompleteRestrictionNaturality
 public import FLT.Mazur.EquivalenceRelationCompleteScalarFiber
 public import FLT.Mazur.EquivalenceRelationCompleteSourceComparison
@@ -6712,6 +6715,8 @@ public import FLT.Mazur.HilbertSourceClosedBoundaryObstructions
 public import FLT.Mazur.HilbertSourceCoefficientwiseSurjectivity
 public import FLT.Mazur.HilbertSourceCompactRelation
 public import FLT.Mazur.HilbertSourceCompatibleModule
+public import FLT.Mazur.HilbertSourceCompleteCharacterLifts
+public import FLT.Mazur.HilbertSourceCompleteQuotientCorrections
 public import FLT.Mazur.HilbertSourceConstructedBadAffineCover
 public import FLT.Mazur.HilbertSourceConstructedBadPrimeLifts
 public import FLT.Mazur.HilbertSourceConstructedBoundaryUnitCover
