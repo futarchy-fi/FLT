@@ -438,6 +438,7 @@ public import FLT.FreyCurve.Serre.QuotientCoordinateHom
 public import FLT.FreyCurve.Serre.QuotientCurve
 public import FLT.FreyCurve.Serre.QuotientCurveEquation
 public import FLT.FreyCurve.Serre.QuotientDescent
+public import FLT.FreyCurve.Serre.QuotientEquationCoefficients
 public import FLT.FreyCurve.Serre.ReducibleFiltration
 public import FLT.FreyCurve.Serre.RootsOfUnityInertia
 public import FLT.FreyCurve.Serre.Semistable
