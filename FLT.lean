@@ -4244,6 +4244,7 @@ public import FLT.Mazur.CyclicCharacteristicComparisonGeometry
 public import FLT.Mazur.CyclicCharacteristicComparisonNaturality
 public import FLT.Mazur.CyclicCharacteristicComparisonNoetherian
 public import FLT.Mazur.CyclicCharacteristicDisjointAction
+public import FLT.Mazur.CyclicCharacteristicDisjointArrowRecovery
 public import FLT.Mazur.CyclicCharacteristicDisjointAssociativity
 public import FLT.Mazur.CyclicCharacteristicDisjointCartesian
 public import FLT.Mazur.CyclicCharacteristicDisjointComparisonArrows
@@ -4276,8 +4277,13 @@ public import FLT.Mazur.CyclicCharacteristicFiniteNeighborhood
 public import FLT.Mazur.CyclicCharacteristicFiniteResidualSections
 public import FLT.Mazur.CyclicCharacteristicFiniteTypeAtlas
 public import FLT.Mazur.CyclicCharacteristicFixedCover
+public import FLT.Mazur.CyclicCharacteristicIntegerFunctionRelation
+public import FLT.Mazur.CyclicCharacteristicIntegerInvariantReconstruction
+public import FLT.Mazur.CyclicCharacteristicIntegerSectionTransport
 public import FLT.Mazur.CyclicCharacteristicIntegerSourceAssembly
 public import FLT.Mazur.CyclicCharacteristicIntegerSourceCover
+public import FLT.Mazur.CyclicCharacteristicIntegerSourceFunctions
+public import FLT.Mazur.CyclicCharacteristicIntegerSourceLocallyRinged
 public import FLT.Mazur.CyclicCharacteristicInvariantAffineComparison
 public import FLT.Mazur.CyclicCharacteristicInvariantAffineCover
 public import FLT.Mazur.CyclicCharacteristicInvariantAffineCoverage
@@ -4377,10 +4383,13 @@ public import FLT.Mazur.CyclicCharacteristicQuotientUnmarkedDescent
 public import FLT.Mazur.CyclicCharacteristicRelabelSections
 public import FLT.Mazur.CyclicCharacteristicRelabeledPrescribedCover
 public import FLT.Mazur.CyclicCharacteristicRelabeledPrescribedSections
+public import FLT.Mazur.CyclicCharacteristicResidualAffineComparison
 public import FLT.Mazur.CyclicCharacteristicResidualChartQuotient
+public import FLT.Mazur.CyclicCharacteristicResidualPrincipalOpens
 public import FLT.Mazur.CyclicCharacteristicResidualProjection
 public import FLT.Mazur.CyclicCharacteristicResidualRelation
 public import FLT.Mazur.CyclicCharacteristicResidualSectionComparison
+public import FLT.Mazur.CyclicCharacteristicResidualSectionEquivalence
 public import FLT.Mazur.CyclicCharacteristicResidualSectionReconstruction
 public import FLT.Mazur.CyclicCharacteristicResidualTransitionDescent
 public import FLT.Mazur.CyclicCharacteristicResidualTransitionTests
@@ -10364,6 +10373,7 @@ public import FLT.Mazur.PowerSeriesStageRingLift
 public import FLT.Mazur.PowerSeriesSubstitutionEquiv
 public import FLT.Mazur.PowerSeriesTruncatedPolynomial
 public import FLT.Mazur.PresentedFiniteCoefficientBranch
+public import FLT.Mazur.PresheafedOpenFactorSections
 public import FLT.Mazur.PrimeCharacteristicScalar
 public import FLT.Mazur.PrimeCoefficientLocalization
 public import FLT.Mazur.PrimeCotangentSmoothDimension
