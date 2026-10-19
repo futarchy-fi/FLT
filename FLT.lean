@@ -460,6 +460,7 @@ public import FLT.FreyCurve.Serre.VeluAdditivity
 public import FLT.FreyCurve.Serre.VeluAffineDenominator
 public import FLT.FreyCurve.Serre.VeluAffineGenericRestriction
 public import FLT.FreyCurve.Serre.VeluAffineNonkernelOpen
+public import FLT.FreyCurve.Serre.VeluAffinePointCoordinates
 public import FLT.FreyCurve.Serre.VeluAffineRationalRepresentative
 public import FLT.FreyCurve.Serre.VeluAffineRegularCoordinates
 public import FLT.FreyCurve.Serre.VeluAffineRegularMorphism
