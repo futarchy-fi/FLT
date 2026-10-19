@@ -242,3 +242,49 @@ Read-only checks: build `FLT.FreyCurve.VeluTargetLocalGenericMorphism` with
 that module. Each theorem must use only `propext`, `Classical.choice` and
 `Quot.sound`. The local receipt checker is `python3 Scratch/MazurDW452/check.py`;
 its checked-at timestamp, source hashes and logs are retained in the W452 handoff.
+
+## Specified local points, original kernels and schematic closure (W453, 2026-10-19)
+
+`Serre/VeluAffinePointVariableChange` identifies the actual cubic isomorphism
+with the original affine point equivalence, including infinity and the inverse
+change. `VeluLocalPointTransport` retains the original field embedding followed
+by the specified inverse change. `VeluLocalPointMorphism` uses the Cartesian
+local projection to identify point values from the original morphism square.
+`VeluLocalGenericPointComparison` applies this to the retained rational quotient.
+
+`Mazur/RationalPadicProjectiveSchemeTransport` identifies the generic scheme
+points of the original `rationalPadicProjectiveHom`.
+`Serre/VeluPadicGenericPointComparison` proves the theorem
+`WeierstrassCurve.Velu.primeLocalGenericGroupHom_padicProjectivePoint`: the actual local quotient
+maps these specified source sections to the specified target sections. It works
+at every rational prime, including p, with the actual chosen variable changes.
+
+`Mazur/WeierstrassLocalGenericKernel` constructs the pullback of the original
+embedded scheme along the actual local projection. Closedness is preserved.
+`Serre/VeluLocalGenericKernel` proves that this same original kernel is the
+entire Cartesian identity fiber of the actual local quotient and retains
+finite locally free degree p over the local field. No abstract replacement
+of the rational kernel or target equation is made.
+
+`Mazur/WeierstrassGenericKernelClosure` then constructs the schematic image of
+that generic inclusion in the original integral cubic. It is a closed proper
+integral subscheme, with the original generic scheme mapping schematically
+densely into it. Flatness over a principal domain follows from flatness of the
+generic source. `Serre/VeluLocalIntegralKernelClosure` derives this flatness
+from the proved prime degree and packages the actual proper flat closure.
+This is a construction of the original integral closed scheme, not a claim
+that the quotient extends over an entire singular Weierstrass model.
+
+Still open: generic-fiber recovery for this closure, its required finiteness
+and group operations on suitable smooth/generalized models, extension of the
+original quotient, and the modular-point and specialization assembly.
+`FreyVeluTorsionExclusion` and removal of `Mazur_statement` remain open.
+G1's moduli and G2's Picard/Jacobian work remain separate.
+
+Read-only checks: build the two modules `FLT.FreyCurve.Serre.VeluPadicGenericPointComparison`
+and `FLT.FreyCurve.Serre.VeluLocalIntegralKernelClosure` individually, and print
+axioms of `WeierstrassCurve.Velu.primeLocalGenericGroupHom_padicProjectivePoint`
+and `WeierstrassCurve.Velu.exists_primeLocalIntegralKernelClosure`.
+Only `propext`, `Classical.choice` and `Quot.sound` are permitted.
+The local checker `python3 Scratch/MazurDW453/check.py` records checked-at time,
+source hashes, build/lint receipts, axiom audits and the merged-main root build.
