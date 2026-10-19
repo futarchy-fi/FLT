@@ -4151,6 +4151,7 @@ public import FLT.Mazur.CyclicCharacteristicProductUniversalCharts
 public import FLT.Mazur.CyclicCharacteristicProductUniversalComparison
 public import FLT.Mazur.CyclicCharacteristicProductUniversalRefinement
 public import FLT.Mazur.CyclicCharacteristicProductUniversalSubgroup
+public import FLT.Mazur.CyclicCharacteristicProductUniversalTests
 public import FLT.Mazur.CyclicCharacteristicQuotient
 public import FLT.Mazur.CyclicCharacteristicQuotientCover
 public import FLT.Mazur.CyclicCharacteristicQuotientCoverage
