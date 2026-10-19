@@ -7452,6 +7452,7 @@ public import FLT.Mazur.LocallyRingedIdealGenerators
 public import FLT.Mazur.LocallyRingedOpenBasic
 public import FLT.Mazur.LocallyRingedOpenImage
 public import FLT.Mazur.LocallyRingedOpenInclusion
+public import FLT.Mazur.LocallyRingedOpenPullback
 public import FLT.Mazur.LocallyRingedSchemeChartUnion
 public import FLT.Mazur.LocallyRingedSectionPointIdeal
 public import FLT.Mazur.LocallySmoothFiniteFlatCartier
