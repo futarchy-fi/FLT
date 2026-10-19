@@ -5696,6 +5696,7 @@ public import FLT.Mazur.GeneralizedCurveDirectLocalCubic
 public import FLT.Mazur.GeneralizedCurveDirectLocalFamily
 public import FLT.Mazur.GeneralizedCurveDirectedGluing
 public import FLT.Mazur.GeneralizedCurveDirectedIsoGluing
+public import FLT.Mazur.GeneralizedCurveDirectedNaturality
 public import FLT.Mazur.GeneralizedCurveDivisorPullback
 public import FLT.Mazur.GeneralizedCurveEquivariantIso
 public import FLT.Mazur.GeneralizedCurveFiberAmple
