@@ -484,6 +484,14 @@ public import FLT.FreyCurve.Serre.VeluGenericFunctionFieldHom
 public import FLT.FreyCurve.Serre.VeluGenericQuadraticRelation
 public import FLT.FreyCurve.Serre.VeluGenericXField
 public import FLT.FreyCurve.Serre.VeluGeometricKernelScheme
+public import FLT.FreyCurve.Serre.VeluGlobalClassicalComparison
+public import FLT.FreyCurve.Serre.VeluGlobalFinite
+public import FLT.FreyCurve.Serre.VeluGlobalGroupMorphism
+public import FLT.FreyCurve.Serre.VeluGlobalMorphism
+public import FLT.FreyCurve.Serre.VeluGlobalPointKernel
+public import FLT.FreyCurve.Serre.VeluGlobalPointValues
+public import FLT.FreyCurve.Serre.VeluGlobalProperSurjective
+public import FLT.FreyCurve.Serre.VeluGlobalRestrictions
 public import FLT.FreyCurve.Serre.VeluHom
 public import FLT.FreyCurve.Serre.VeluIdentity
 public import FLT.FreyCurve.Serre.VeluInfinity
@@ -533,6 +541,7 @@ public import FLT.FreyCurve.Serre.VeluPointCofinite
 public import FLT.FreyCurve.Serre.VeluPrimeKernel
 public import FLT.FreyCurve.Serre.VeluQuotient
 public import FLT.FreyCurve.Serre.VeluRational
+public import FLT.FreyCurve.Serre.VeluRationalDomainCover
 public import FLT.FreyCurve.Serre.VeluSchemeFunctionFieldHom
 public import FLT.FreyCurve.Serre.VeluSchemeRationalMap
 public import FLT.FreyCurve.Serre.VeluSmallRamification
@@ -3371,6 +3380,7 @@ public import FLT.Mazur.AffineUniformIdealPowers
 public import FLT.Mazur.AffineValuationCoordinateSquare
 public import FLT.Mazur.AffineValuationGeneratorLift
 public import FLT.Mazur.AffineValuationIntegralLift
+public import FLT.Mazur.AlgClosedOpenCover
 public import FLT.Mazur.AlgebraEqualizerCoordinates
 public import FLT.Mazur.AlgebraicAcyclicOrbitTranslation
 public import FLT.Mazur.AlgebraicClosureEmbeddingConjugacy
@@ -16665,6 +16675,7 @@ public import FLT.Mazur.WeierstrassYProductCover
 public import FLT.Mazur.WeightedPoleCubicNormalization
 public import FLT.Mazur.WeightedPoleMonomials
 public import FLT.Mazur.WeightedPoleNormalForms
+public import FLT.Mazur.WholeDomainRationalMap
 public import FLT.MazurChapter.AdmissibleGroupSchemes
 public import FLT.MazurW
 public import FLT.MazurWOfPrimeTorsion
