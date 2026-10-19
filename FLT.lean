@@ -13871,6 +13871,7 @@ public import FLT.Mazur.WeierstrassDividedOneDiagonalAtlasRestriction
 public import FLT.Mazur.WeierstrassDividedOneDiagonalAtlasSystem
 public import FLT.Mazur.WeierstrassDividedOneDiagonalFactorRatio
 public import FLT.Mazur.WeierstrassDividedOneDiagonalInfinityIntersection
+public import FLT.Mazur.WeierstrassDividedOneDiagonalInfinityParameter
 public import FLT.Mazur.WeierstrassDividedOneDiagonalNodeRestriction
 public import FLT.Mazur.WeierstrassDividedOneDiagonalOpenRestriction
 public import FLT.Mazur.WeierstrassDividedOneDiagonalRestriction
