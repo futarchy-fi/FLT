@@ -4299,6 +4299,7 @@ public import FLT.Mazur.CyclicCharacteristicRelabeledPrescribedSections
 public import FLT.Mazur.CyclicCharacteristicRetainedFaithfulness
 public import FLT.Mazur.CyclicCharacteristicRetainedFullParameter
 public import FLT.Mazur.CyclicCharacteristicRetainedParameter
+public import FLT.Mazur.CyclicCharacteristicRingedCoequalizer
 public import FLT.Mazur.CyclicCharacteristicRingedCofork
 public import FLT.Mazur.CyclicCharacteristicRingedDescent
 public import FLT.Mazur.CyclicCharacteristicSmoothUnmarkedClass
