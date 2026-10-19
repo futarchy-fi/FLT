@@ -4166,6 +4166,7 @@ public import FLT.Mazur.CyclicCharacteristicDisjointGroupoidPresheaf
 public import FLT.Mazur.CyclicCharacteristicDisjointInverseDiagrams
 public import FLT.Mazur.CyclicCharacteristicDisjointQuotient
 public import FLT.Mazur.CyclicCharacteristicDisjointQuotientCover
+public import FLT.Mazur.CyclicCharacteristicDisjointQuotientReduction
 public import FLT.Mazur.CyclicCharacteristicDisjointTestArrows
 public import FLT.Mazur.CyclicCharacteristicDisjointTestAssociativity
 public import FLT.Mazur.CyclicCharacteristicDisjointTestGroupoid
