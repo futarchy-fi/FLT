@@ -11458,6 +11458,7 @@ public import FLT.Mazur.SchemeCoproductCohomology
 public import FLT.Mazur.SchemeCoproductLineGluing
 public import FLT.Mazur.SchemeCoproductModuleEquivalence
 public import FLT.Mazur.SchemeCoproductModuleGluing
+public import FLT.Mazur.SchemeCoproductPullbackDecomposition
 public import FLT.Mazur.SchemeCoproductSections
 public import FLT.Mazur.SchemeCrossCoverCocycle
 public import FLT.Mazur.SchemeCrossCoverOverlap
