@@ -4201,6 +4201,7 @@ public import FLT.Mazur.CyclicCharacteristicAuxiliaryPrescribedNeighborhood
 public import FLT.Mazur.CyclicCharacteristicCoefficientBase
 public import FLT.Mazur.CyclicCharacteristicCoefficientFiniteType
 public import FLT.Mazur.CyclicCharacteristicComparisonGeometry
+public import FLT.Mazur.CyclicCharacteristicComparisonNoetherian
 public import FLT.Mazur.CyclicCharacteristicDisjointAction
 public import FLT.Mazur.CyclicCharacteristicDisjointAssociativity
 public import FLT.Mazur.CyclicCharacteristicDisjointCartesian
