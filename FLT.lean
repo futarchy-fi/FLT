@@ -3868,6 +3868,7 @@ public import FLT.Mazur.CartierFiberNeighborhood
 public import FLT.Mazur.CartierFlatNeighborhoodDescent
 public import FLT.Mazur.CartierFppfDescent
 public import FLT.Mazur.CartierGeneratorCyclicMap
+public import FLT.Mazur.CartierGeneratorGeometricFinite
 public import FLT.Mazur.CartierGeneratorGeometricPowers
 public import FLT.Mazur.CartierGeneratorMarkedSubgroup
 public import FLT.Mazur.CartierGeneratorOrbitCover
