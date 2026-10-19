@@ -4245,6 +4245,7 @@ public import FLT.Mazur.CyclicCharacteristicAffineResidualFibers
 public import FLT.Mazur.CyclicCharacteristicAffineResidualSections
 public import FLT.Mazur.CyclicCharacteristicAffineResidualTests
 public import FLT.Mazur.CyclicCharacteristicAffineResidualTopology
+public import FLT.Mazur.CyclicCharacteristicAffineSectionEquivalence
 public import FLT.Mazur.CyclicCharacteristicAffineSectionReconstruction
 public import FLT.Mazur.CyclicCharacteristicAffineSectionTransport
 public import FLT.Mazur.CyclicCharacteristicAffineSourceAssembly
