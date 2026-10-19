@@ -484,6 +484,13 @@ public import FLT.FreyCurve.Serre.VeluTranslation
 public import FLT.FreyCurve.TorsionQuotientWitness
 public import FLT.FreyCurve.VeluIntegralAway
 public import FLT.FreyCurve.VeluLocalIntegralTarget
+public import FLT.FreyCurve.VeluPadicIntegralAway
+public import FLT.FreyCurve.VeluPadicMinimalModel
+public import FLT.FreyCurve.VeluPadicPrimeComponents
+public import FLT.FreyCurve.VeluPadicSmallComponents
+public import FLT.FreyCurve.VeluPadicTwoComponents
+public import FLT.FreyCurve.VeluPadicTwoMinimal
+public import FLT.FreyCurve.VeluPadicTwoValuation
 public import FLT.FreyCurve.VeluTargetGeometry
 public import FLT.FreyCurve.VeluTargetTwoTorsion
 public import FLT.FreyCurve.VeluTargetWitness
@@ -4434,6 +4441,7 @@ public import FLT.Mazur.EllipticCuspAddition
 public import FLT.Mazur.EllipticCuspParametrization
 public import FLT.Mazur.EllipticCuspTangent
 public import FLT.Mazur.EllipticCuspidalGroup
+public import FLT.Mazur.EllipticCyclicComponentTransport
 public import FLT.Mazur.EllipticDilatationPointSection
 public import FLT.Mazur.EllipticDoubleRootCoordinates
 public import FLT.Mazur.EllipticDoubleRootEvenBound
@@ -10691,6 +10699,9 @@ public import FLT.Mazur.RationalCyclicGeneratorChange
 public import FLT.Mazur.RationalCyclicModuliPoint
 public import FLT.Mazur.RationalCyclicSubgroup
 public import FLT.Mazur.RationalFibers
+public import FLT.Mazur.RationalPadicIntegerSubring
+public import FLT.Mazur.RationalPadicIntegralDepth
+public import FLT.Mazur.RationalPadicMinimalTransport
 public import FLT.Mazur.RationalPointConditionRank
 public import FLT.Mazur.RationalPointDivisorStalk
 public import FLT.Mazur.RationalPointProductStalk
