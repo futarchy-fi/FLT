@@ -484,6 +484,7 @@ public import FLT.FreyCurve.Serre.VeluGeometricKernelScheme
 public import FLT.FreyCurve.Serre.VeluHom
 public import FLT.FreyCurve.Serre.VeluIdentity
 public import FLT.FreyCurve.Serre.VeluInfinity
+public import FLT.FreyCurve.Serre.VeluInfinityGenericMorphism
 public import FLT.FreyCurve.Serre.VeluInfinityKernelOpen
 public import FLT.FreyCurve.Serre.VeluInfinityParameter
 public import FLT.FreyCurve.Serre.VeluInfinityParameterGeneric
