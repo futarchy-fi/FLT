@@ -16823,6 +16823,7 @@ public import FLT.Mazur.WeierstrassUniversalComparisonRefinement
 public import FLT.Mazur.WeierstrassUniversalComparisonRingHom
 public import FLT.Mazur.WeierstrassUniversalComparisonSpecialization
 public import FLT.Mazur.WeierstrassUniversalTranslationSmoothLocus
+public import FLT.Mazur.WeierstrassValuationClosureSmoothFlat
 public import FLT.Mazur.WeierstrassValuationKernelClosureDegree
 public import FLT.Mazur.WeierstrassValuationKernelClosureFinite
 public import FLT.Mazur.WeierstrassValuationKernelClosureFlat
