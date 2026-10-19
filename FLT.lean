@@ -7214,6 +7214,7 @@ public import FLT.Mazur.InvariantOpenRelationDiagram
 public import FLT.Mazur.InvariantOpenRelationEquivalence
 public import FLT.Mazur.InvariantOpenRelationFunctions
 public import FLT.Mazur.InvariantOpenRelationMap
+public import FLT.Mazur.InvariantScalarGoingDown
 public import FLT.Mazur.InvariantSectionObstruction
 public import FLT.Mazur.IrreducibleComponentAmple
 public import FLT.Mazur.IsomorphicClosedPullback
