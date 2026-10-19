@@ -3938,6 +3938,7 @@ public import FLT.Mazur.CompactSchemeIntegerDescent
 public import FLT.Mazur.CompactSeparatedPushforward
 public import FLT.Mazur.ComparedStageSectionReconstruction
 public import FLT.Mazur.CompatibleErrorBaseChange
+public import FLT.Mazur.CompatibleParameterRefinementProjection
 public import FLT.Mazur.CompatibleSubgroupAmple
 public import FLT.Mazur.CompatibleSubgroupAuxiliaryTransport
 public import FLT.Mazur.CompatibleSubgroupBaseChangeCoherence
