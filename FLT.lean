@@ -16328,6 +16328,7 @@ public import FLT.Mazur.WeierstrassSmoothAffineTransport
 public import FLT.Mazur.WeierstrassSmoothAffineTripleDescent
 public import FLT.Mazur.WeierstrassSmoothAllOrdinaryTriple
 public import FLT.Mazur.WeierstrassSmoothAssociativity
+public import FLT.Mazur.WeierstrassSmoothBaseGroupHom
 public import FLT.Mazur.WeierstrassSmoothChartCompatibility
 public import FLT.Mazur.WeierstrassSmoothCoefficientAddition
 public import FLT.Mazur.WeierstrassSmoothCoefficientBaseGroup
