@@ -3645,6 +3645,7 @@ public import FLT.Mazur.CartesianStructureComplexGluing
 public import FLT.Mazur.CartesianStructurePositiveHomology
 public import FLT.Mazur.CartesianStructureSections
 public import FLT.Mazur.CartesianStructureTensorRestrictions
+public import FLT.Mazur.CartesianTestEquiv
 public import FLT.Mazur.CartesianUpperCone
 public import FLT.Mazur.CartierAbelDirectImageBaseChange
 public import FLT.Mazur.CartierAbelDirectImageSections
