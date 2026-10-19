@@ -6603,6 +6603,7 @@ public import FLT.Mazur.HilbertFiniteSubframeInvariantCorrections
 public import FLT.Mazur.HilbertFiniteSubframeRefinement
 public import FLT.Mazur.HilbertFiniteTargetLocalLifts
 public import FLT.Mazur.HilbertFiniteTargetSaturation
+public import FLT.Mazur.HilbertFixedCompleteRefinement
 public import FLT.Mazur.HilbertFullInteriorFiniteKernel
 public import FLT.Mazur.HilbertFullInteriorQuotientChart
 public import FLT.Mazur.HilbertFullRelationFiberRebase
