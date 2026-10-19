@@ -4155,6 +4155,7 @@ public import FLT.Mazur.CyclicCharacteristicAuxiliaryPrescribedNeighborhood
 public import FLT.Mazur.CyclicCharacteristicCoefficientBase
 public import FLT.Mazur.CyclicCharacteristicCoefficientFiniteType
 public import FLT.Mazur.CyclicCharacteristicDisjointAction
+public import FLT.Mazur.CyclicCharacteristicDisjointAssociativity
 public import FLT.Mazur.CyclicCharacteristicDisjointCartesian
 public import FLT.Mazur.CyclicCharacteristicDisjointComparisonArrows
 public import FLT.Mazur.CyclicCharacteristicDisjointComposableCharts
