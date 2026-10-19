@@ -11563,6 +11563,7 @@ public import FLT.Mazur.SchemeFiniteGroupAffineDescent
 public import FLT.Mazur.SchemeFiniteGroupBoundaryCompleteness
 public import FLT.Mazur.SchemeFiniteGroupBoundaryComponents
 public import FLT.Mazur.SchemeFiniteGroupBoundaryTestIdeal
+public import FLT.Mazur.SchemeFiniteGroupCharacterLifts
 public import FLT.Mazur.SchemeFiniteGroupCharacterOrbits
 public import FLT.Mazur.SchemeFiniteGroupClosedScalarFiber
 public import FLT.Mazur.SchemeFiniteGroupDescent
