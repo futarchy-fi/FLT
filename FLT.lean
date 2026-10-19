@@ -572,6 +572,7 @@ public import FLT.FreyCurve.Serre.VeluPrimeRationalMorphism
 public import FLT.FreyCurve.Serre.VeluQuotient
 public import FLT.FreyCurve.Serre.VeluRational
 public import FLT.FreyCurve.Serre.VeluRationalDomainCover
+public import FLT.FreyCurve.Serre.VeluRationalKernelCover
 public import FLT.FreyCurve.Serre.VeluSchemeFunctionFieldHom
 public import FLT.FreyCurve.Serre.VeluSchemeRationalMap
 public import FLT.FreyCurve.Serre.VeluSmallRamification
