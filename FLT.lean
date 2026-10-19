@@ -434,6 +434,7 @@ public import FLT.FreyCurve.Serre.MultiplicativeReduction
 public import FLT.FreyCurve.Serre.NonsplitFlat
 public import FLT.FreyCurve.Serre.QuadraticTwistPoints
 public import FLT.FreyCurve.Serre.QuotientCurve
+public import FLT.FreyCurve.Serre.QuotientCurveEquation
 public import FLT.FreyCurve.Serre.QuotientDescent
 public import FLT.FreyCurve.Serre.ReducibleFiltration
 public import FLT.FreyCurve.Serre.RootsOfUnityInertia
