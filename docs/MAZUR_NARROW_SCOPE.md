@@ -97,7 +97,8 @@ The active endpoint uses its refined route through
 `freyQuotientTorsionExclusion_of_torsionExclusion` and
 `freyIrreducibility_of_quotientTorsionExclusion`, retaining the quotient witness.
 These conditional theorems are audited with only standard axioms; their current
-supplied proof still depends on Mazur. This keeps the requested standard-only audit for new declarations
+supplied proof still depends on Mazur. This keeps the requested standard-only
+audit for new declarations
 without pretending that a theorem proved using Mazur has no Mazur dependency.
 Legacy alternate assembly theorems remain available, but the active positive-
 natural endpoint goes through the narrowed input. Removing the axiom requires
