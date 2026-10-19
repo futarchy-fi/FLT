@@ -4171,6 +4171,7 @@ public import FLT.Mazur.CyclicCharacteristicProductOpenCoordinates
 public import FLT.Mazur.CyclicCharacteristicProductOriginalSubgroupLocus
 public import FLT.Mazur.CyclicCharacteristicProductRefinementAlgebra
 public import FLT.Mazur.CyclicCharacteristicProductRefinementTransport
+public import FLT.Mazur.CyclicCharacteristicProductSchemeClassification
 public import FLT.Mazur.CyclicCharacteristicProductSpectrumTests
 public import FLT.Mazur.CyclicCharacteristicProductSubgroupAffineCurve
 public import FLT.Mazur.CyclicCharacteristicProductSubgroupCharts
