@@ -533,6 +533,7 @@ public import FLT.FreyCurve.Serre.VeluPointCofinite
 public import FLT.FreyCurve.Serre.VeluPrimeKernel
 public import FLT.FreyCurve.Serre.VeluQuotient
 public import FLT.FreyCurve.Serre.VeluRational
+public import FLT.FreyCurve.Serre.VeluRationalDomainCover
 public import FLT.FreyCurve.Serre.VeluSchemeFunctionFieldHom
 public import FLT.FreyCurve.Serre.VeluSchemeRationalMap
 public import FLT.FreyCurve.Serre.VeluSmallRamification
