@@ -5267,6 +5267,7 @@ public import FLT.Mazur.EquivalenceRelationCompleteFiberSplit
 public import FLT.Mazur.EquivalenceRelationCompleteIdealInvariant
 public import FLT.Mazur.EquivalenceRelationCompleteInterior
 public import FLT.Mazur.EquivalenceRelationCompleteInteriorFinite
+public import FLT.Mazur.EquivalenceRelationCompleteInvariantPrincipal
 public import FLT.Mazur.EquivalenceRelationCompleteMixedCoefficients
 public import FLT.Mazur.EquivalenceRelationCompleteNeighborhoodCharacters
 public import FLT.Mazur.EquivalenceRelationCompleteOpenCoefficients
@@ -5374,6 +5375,8 @@ public import FLT.Mazur.EquivalenceRelationNormalizedSubframe
 public import FLT.Mazur.EquivalenceRelationOpenChartScalars
 public import FLT.Mazur.EquivalenceRelationOriginalScalarFiber
 public import FLT.Mazur.EquivalenceRelationPrescribedQuotientCorrection
+public import FLT.Mazur.EquivalenceRelationPrincipalCompleteCharacters
+public import FLT.Mazur.EquivalenceRelationPrincipalPrimeCoverage
 public import FLT.Mazur.EquivalenceRelationQuotientBoundaryExtensions
 public import FLT.Mazur.EquivalenceRelationQuotientInvariantExtensions
 public import FLT.Mazur.EquivalenceRelationQuotientRankOpens
@@ -6679,6 +6682,7 @@ public import FLT.Mazur.HilbertLocalizationIsomorphismOpen
 public import FLT.Mazur.HilbertLocalizedTupleBasis
 public import FLT.Mazur.HilbertMinimalCompleteNeighborhood
 public import FLT.Mazur.HilbertMinimalScalarFixedRefinements
+public import FLT.Mazur.HilbertMinimalScalarPrincipalGeometry
 public import FLT.Mazur.HilbertMixedResidualBranches
 public import FLT.Mazur.HilbertMonomialAmbientDecomposition
 public import FLT.Mazur.HilbertMonomialBasisNeighborhood
@@ -6852,6 +6856,7 @@ public import FLT.Mazur.HilbertPrincipalBaseChangeScalars
 public import FLT.Mazur.HilbertPrincipalInvariantNorm
 public import FLT.Mazur.HilbertPrincipalLocalizationScalars
 public import FLT.Mazur.HilbertPrincipalNormAdmissible
+public import FLT.Mazur.HilbertPrincipalOriginalScalarGeometry
 public import FLT.Mazur.HilbertPrincipalRestriction
 public import FLT.Mazur.HilbertProjectiveRelationErrorVanishing
 public import FLT.Mazur.HilbertProjectiveRelationPrincipalCoverage
@@ -6862,6 +6867,7 @@ public import FLT.Mazur.HilbertRankStratumOriginalNeighborhoods
 public import FLT.Mazur.HilbertRebasedCompleteFrame
 public import FLT.Mazur.HilbertReindexedCoordinateRing
 public import FLT.Mazur.HilbertRelatedFixedScalarCharts
+public import FLT.Mazur.HilbertRelatedPrincipalCharacters
 public import FLT.Mazur.HilbertRepeatedMonomialChart
 public import FLT.Mazur.HilbertResidualRankCeiling
 public import FLT.Mazur.HilbertSameAmbientChartIso
@@ -11811,6 +11817,7 @@ public import FLT.Mazur.SchemeFiniteGroupFreeFlat
 public import FLT.Mazur.SchemeFiniteGroupGeometricTests
 public import FLT.Mazur.SchemeFiniteGroupInvariantPrincipal
 public import FLT.Mazur.SchemeFiniteGroupPrescribedBoundaryCorrection
+public import FLT.Mazur.SchemeFiniteGroupPrincipalCharacterLifts
 public import FLT.Mazur.SchemeFiniteGroupPrincipalComparison
 public import FLT.Mazur.SchemeFiniteGroupPrincipalQuotient
 public import FLT.Mazur.SchemeFiniteGroupQuotient
@@ -11925,6 +11932,7 @@ public import FLT.Mazur.SchemeInvariantOpenRelationExtension
 public import FLT.Mazur.SchemeInvariantPrincipalBoundaryNumerator
 public import FLT.Mazur.SchemeInvariantPrincipalNumerator
 public import FLT.Mazur.SchemeInvariantPrincipalRelationLifts
+public import FLT.Mazur.SchemeInvariantPrincipalScalarImage
 public import FLT.Mazur.SchemeInvariantScalarFiberNeighborhood
 public import FLT.Mazur.SchemeKernelFlatSourceImage
 public import FLT.Mazur.SchemeKernelInvariantOpenLift
