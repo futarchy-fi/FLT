@@ -5431,6 +5431,7 @@ public import FLT.Mazur.EquivalenceRelationResidualSectionExtension
 public import FLT.Mazur.EquivalenceRelationRestrictedActionGraphs
 public import FLT.Mazur.EquivalenceRelationScalarDefectCharacters
 public import FLT.Mazur.EquivalenceRelationScalarFiberCorrections
+public import FLT.Mazur.EquivalenceRelationScalarFrameRanks
 public import FLT.Mazur.EquivalenceRelationScalarLocalDetection
 public import FLT.Mazur.EquivalenceRelationScalarLocalEquations
 public import FLT.Mazur.EquivalenceRelationScalarLocalRanks
@@ -6729,6 +6730,7 @@ public import FLT.Mazur.HilbertLabelResidualLifts
 public import FLT.Mazur.HilbertLocalResidueBasis
 public import FLT.Mazur.HilbertLocalizationIsomorphismOpen
 public import FLT.Mazur.HilbertLocalizedTupleBasis
+public import FLT.Mazur.HilbertMaximalScalarCompleteChart
 public import FLT.Mazur.HilbertMinimalCompleteNeighborhood
 public import FLT.Mazur.HilbertMinimalScalarFixedRefinements
 public import FLT.Mazur.HilbertMinimalScalarPrincipalGeometry
@@ -6846,6 +6848,8 @@ public import FLT.Mazur.HilbertOrbitSelfEmbeddingDiscrepancy
 public import FLT.Mazur.HilbertOrderedAffineEnvelope
 public import FLT.Mazur.HilbertOrderedOriginalBoundary
 public import FLT.Mazur.HilbertOrderedStableNeighborhood
+public import FLT.Mazur.HilbertOriginalScalarFrameCharts
+public import FLT.Mazur.HilbertOriginalScalarMaximalCover
 public import FLT.Mazur.HilbertOriginalScalarStrata
 public import FLT.Mazur.HilbertOverlapRestriction
 public import FLT.Mazur.HilbertParameterAbelClass
@@ -7053,6 +7057,8 @@ public import FLT.Mazur.HilbertUniformSourceOriginalSections
 public import FLT.Mazur.HilbertUniformSourcePrincipalMultipliers
 public import FLT.Mazur.HilbertUniversalComplementMatrix
 public import FLT.Mazur.HilbertUniversalFrameRebase
+public import FLT.Mazur.HilbertWholeScalarFiniteCover
+public import FLT.Mazur.HilbertWholeScalarImageCover
 public import FLT.Mazur.HomIntegerModel
 public import FLT.Mazur.HomogeneousFractionProjection
 public import FLT.Mazur.HomogeneousIdealWitness
@@ -11603,6 +11609,7 @@ public import FLT.Mazur.ScalarClosedPrincipalBranches
 public import FLT.Mazur.ScalarCohomology
 public import FLT.Mazur.ScalarCompatibleIntegerModel
 public import FLT.Mazur.ScalarComponentRankCeiling
+public import FLT.Mazur.ScalarConstructibleFiniteCover
 public import FLT.Mazur.ScalarConstructibleStrata
 public import FLT.Mazur.ScalarEndomorphismPullback
 public import FLT.Mazur.ScalarExtensionDirectSum
@@ -12211,6 +12218,7 @@ public import FLT.Mazur.SchemeScalarIntegralCover
 public import FLT.Mazur.SchemeScalarMinimalEndpoint
 public import FLT.Mazur.SchemeScalarPrincipalNeighborhood
 public import FLT.Mazur.SchemeScalarPrincipalNeighborhoodFamily
+public import FLT.Mazur.SchemeScalarResidueImage
 public import FLT.Mazur.SchemeSectionFamilyProduct
 public import FLT.Mazur.SchemeSectionFrameCompatibility
 public import FLT.Mazur.SchemeSectionFrameNormalization
