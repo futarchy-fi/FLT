@@ -464,6 +464,7 @@ public import FLT.FreyCurve.Serre.VeluAffinePointCoordinates
 public import FLT.FreyCurve.Serre.VeluAffinePointInjective
 public import FLT.FreyCurve.Serre.VeluAffinePointMorphism
 public import FLT.FreyCurve.Serre.VeluAffinePointNaturality
+public import FLT.FreyCurve.Serre.VeluAffinePointVariableChange
 public import FLT.FreyCurve.Serre.VeluAffineRationalRepresentative
 public import FLT.FreyCurve.Serre.VeluAffineRegularCoordinates
 public import FLT.FreyCurve.Serre.VeluAffineRegularMorphism
@@ -561,10 +562,16 @@ public import FLT.FreyCurve.Serre.VeluKernelRationalSubgroup
 public import FLT.FreyCurve.Serre.VeluKernelScalarExtension
 public import FLT.FreyCurve.Serre.VeluKernelSectionComparison
 public import FLT.FreyCurve.Serre.VeluKernelTranslationInvariant
+public import FLT.FreyCurve.Serre.VeluLocalGenericKernel
 public import FLT.FreyCurve.Serre.VeluLocalGenericMorphism
+public import FLT.FreyCurve.Serre.VeluLocalGenericPointComparison
+public import FLT.FreyCurve.Serre.VeluLocalIntegralKernelClosure
 public import FLT.FreyCurve.Serre.VeluLocalIntegralModel
+public import FLT.FreyCurve.Serre.VeluLocalPointMorphism
+public import FLT.FreyCurve.Serre.VeluLocalPointTransport
 public import FLT.FreyCurve.Serre.VeluMap
 public import FLT.FreyCurve.Serre.VeluOrdinary
+public import FLT.FreyCurve.Serre.VeluPadicGenericPointComparison
 public import FLT.FreyCurve.Serre.VeluPointCofinite
 public import FLT.FreyCurve.Serre.VeluPrimeExactTarget
 public import FLT.FreyCurve.Serre.VeluPrimeGlobalKernelRank
@@ -11002,6 +11009,7 @@ public import FLT.Mazur.RationalPadicIntegerSubring
 public import FLT.Mazur.RationalPadicIntegralDepth
 public import FLT.Mazur.RationalPadicMinimalGroupMorphism
 public import FLT.Mazur.RationalPadicMinimalTransport
+public import FLT.Mazur.RationalPadicProjectiveSchemeTransport
 public import FLT.Mazur.RationalPointConditionRank
 public import FLT.Mazur.RationalPointDivisorStalk
 public import FLT.Mazur.RationalPointProductStalk
@@ -15320,6 +15328,7 @@ public import FLT.Mazur.WeierstrassFrameNormalization
 public import FLT.Mazur.WeierstrassGeneralizedEllipticModel
 public import FLT.Mazur.WeierstrassGeneralizedPointedComparison
 public import FLT.Mazur.WeierstrassGeneralizedSmoothComparison
+public import FLT.Mazur.WeierstrassGenericKernelClosure
 public import FLT.Mazur.WeierstrassGenusOneFamily
 public import FLT.Mazur.WeierstrassGeometricConnected
 public import FLT.Mazur.WeierstrassGeometricFourBasis
@@ -15631,6 +15640,8 @@ public import FLT.Mazur.WeierstrassLeftSmoothYIdentity
 public import FLT.Mazur.WeierstrassLeftSmoothZeroGraph
 public import FLT.Mazur.WeierstrassLineCubicFactorization
 public import FLT.Mazur.WeierstrassLocalAdditionCurveComparison
+public import FLT.Mazur.WeierstrassLocalGenericKernel
+public import FLT.Mazur.WeierstrassLocalGenericProjection
 public import FLT.Mazur.WeierstrassLowPoleCoordinates
 public import FLT.Mazur.WeierstrassMixedIntersectionScheme
 public import FLT.Mazur.WeierstrassMixedLeftReciprocalDomain
