@@ -480,6 +480,7 @@ public import FLT.FreyCurve.Serre.VeluKernelDescentAlgebra
 public import FLT.FreyCurve.Serre.VeluKernelGaloisLabels
 public import FLT.FreyCurve.Serre.VeluKernelGeometricComparison
 public import FLT.FreyCurve.Serre.VeluKernelMorphismComparison
+public import FLT.FreyCurve.Serre.VeluKernelPairDetection
 public import FLT.FreyCurve.Serre.VeluKernelParametrization
 public import FLT.FreyCurve.Serre.VeluKernelProductCover
 public import FLT.FreyCurve.Serre.VeluKernelRationalCoordinates
