@@ -5261,6 +5261,7 @@ public import FLT.Mazur.EquivalenceRelationJointSourceRefinement
 public import FLT.Mazur.EquivalenceRelationLabelOpenCharts
 public import FLT.Mazur.EquivalenceRelationLabelOverlap
 public import FLT.Mazur.EquivalenceRelationLabelRefinement
+public import FLT.Mazur.EquivalenceRelationMinimalScalarGeometry
 public import FLT.Mazur.EquivalenceRelationMixedBranchCoefficients
 public import FLT.Mazur.EquivalenceRelationMixedChartDescent
 public import FLT.Mazur.EquivalenceRelationMixedChartLiftDifference
