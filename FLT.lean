@@ -5164,6 +5164,8 @@ public import FLT.Mazur.EquivalenceRelationGeometricTestExtensions
 public import FLT.Mazur.EquivalenceRelationHigherScalarValuations
 public import FLT.Mazur.EquivalenceRelationHigherTestAtlas
 public import FLT.Mazur.EquivalenceRelationInvariantBoundaryAction
+public import FLT.Mazur.EquivalenceRelationInvariantCharacterArrows
+public import FLT.Mazur.EquivalenceRelationInvariantCharacterFibers
 public import FLT.Mazur.EquivalenceRelationInvariantRestriction
 public import FLT.Mazur.EquivalenceRelationJointAffineCover
 public import FLT.Mazur.EquivalenceRelationJointBoundaryCover
@@ -6723,6 +6725,7 @@ public import FLT.Mazur.HilbertSourceGeometricFiberTests
 public import FLT.Mazur.HilbertSourceGeometricFrameExtensions
 public import FLT.Mazur.HilbertSourceHigherScalarValuations
 public import FLT.Mazur.HilbertSourceIntegralFlatTests
+public import FLT.Mazur.HilbertSourceInvariantCharacterOrbits
 public import FLT.Mazur.HilbertSourceLocalRankCeilingLifts
 public import FLT.Mazur.HilbertSourceLocalizedOpenLift
 public import FLT.Mazur.HilbertSourceMultiplierSupport
@@ -11574,6 +11577,8 @@ public import FLT.Mazur.SchemeFiniteGroupAffineDescent
 public import FLT.Mazur.SchemeFiniteGroupBoundaryCompleteness
 public import FLT.Mazur.SchemeFiniteGroupBoundaryComponents
 public import FLT.Mazur.SchemeFiniteGroupBoundaryTestIdeal
+public import FLT.Mazur.SchemeFiniteGroupCharacterLifts
+public import FLT.Mazur.SchemeFiniteGroupCharacterOrbits
 public import FLT.Mazur.SchemeFiniteGroupClosedScalarFiber
 public import FLT.Mazur.SchemeFiniteGroupDescent
 public import FLT.Mazur.SchemeFiniteGroupFiniteFiberTests
