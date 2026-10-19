@@ -113,6 +113,7 @@ public import FLT.Assembly.Final
 public import FLT.Assembly.FreyIrreducibility
 public import FLT.Assembly.FreyQuotientExclusion
 public import FLT.Assembly.FreyTraceInput
+public import FLT.Assembly.FreyVeluExclusion
 public import FLT.Assembly.Inputs
 public import FLT.Assembly.Mazur
 public import FLT.Assembly.NarrowFreyFinal
