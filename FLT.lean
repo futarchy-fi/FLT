@@ -3873,6 +3873,7 @@ public import FLT.Mazur.CartierGeneratorMarkedSubgroup
 public import FLT.Mazur.CartierGeneratorOrbitCover
 public import FLT.Mazur.CartierGeneratorOrbitRecovery
 public import FLT.Mazur.CartierGeneratorSplitPresentation
+public import FLT.Mazur.CartierGeneratorUnitPowers
 public import FLT.Mazur.CartierIdealCoproduct
 public import FLT.Mazur.CartierIdealDescentDatum
 public import FLT.Mazur.CartierIdealFinitePresentation
