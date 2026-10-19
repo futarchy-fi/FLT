@@ -506,6 +506,7 @@ public import FLT.FreyCurve.Serre.VeluQuotient
 public import FLT.FreyCurve.Serre.VeluRational
 public import FLT.FreyCurve.Serre.VeluSmallRamification
 public import FLT.FreyCurve.Serre.VeluSourceChart
+public import FLT.FreyCurve.Serre.VeluSourceChartFractions
 public import FLT.FreyCurve.Serre.VeluSourceChartInjective
 public import FLT.FreyCurve.Serre.VeluSpecialization
 public import FLT.FreyCurve.Serre.VeluTranslation
