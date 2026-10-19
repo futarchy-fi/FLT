@@ -5741,6 +5741,7 @@ public import FLT.Mazur.FlatQuotientIdealFiber
 public import FLT.Mazur.FlatQuotientLocalCartier
 public import FLT.Mazur.FlatScalarExactness
 public import FLT.Mazur.FlatScalarHomology
+public import FLT.Mazur.FlatScalarKernelExtension
 public import FLT.Mazur.FlatSectionEqualizer
 public import FLT.Mazur.FlatSectionLiftCertificate
 public import FLT.Mazur.FlatSectionLiftIdeal
