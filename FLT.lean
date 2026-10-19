@@ -4414,6 +4414,7 @@ public import FLT.Mazur.CyclicCharacteristicUnmarkedSheaf
 public import FLT.Mazur.CyclicCharacteristicUnmarkedSheafRelation
 public import FLT.Mazur.CyclicCharacteristicUnmarkedSourceSheaf
 public import FLT.Mazur.CyclicDivisorSubgroupCriterion
+public import FLT.Mazur.CyclicGeneratorUnitLift
 public import FLT.Mazur.CyclicHomAffinePresentationInvariant
 public import FLT.Mazur.CyclicHomAuxiliaryScheme
 public import FLT.Mazur.CyclicHomDivisorFppfCoverage
