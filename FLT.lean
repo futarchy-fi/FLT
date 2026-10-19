@@ -5300,6 +5300,7 @@ public import FLT.Mazur.EquivalenceRelationCompleteQuotientStages
 public import FLT.Mazur.EquivalenceRelationCompleteQuotientTower
 public import FLT.Mazur.EquivalenceRelationCompleteRestrictionNaturality
 public import FLT.Mazur.EquivalenceRelationCompleteScalarFiber
+public import FLT.Mazur.EquivalenceRelationCompleteScalarStrata
 public import FLT.Mazur.EquivalenceRelationCompleteSourceComparison
 public import FLT.Mazur.EquivalenceRelationCompleteSourceRestriction
 public import FLT.Mazur.EquivalenceRelationCompleteSpecializations
