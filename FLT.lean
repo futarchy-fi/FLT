@@ -4196,6 +4196,7 @@ public import FLT.Mazur.CyclicCharacteristicProductLocalParameters
 public import FLT.Mazur.CyclicCharacteristicProductLocalRestriction
 public import FLT.Mazur.CyclicCharacteristicProductOpenCoordinates
 public import FLT.Mazur.CyclicCharacteristicProductOperationSchemes
+public import FLT.Mazur.CyclicCharacteristicProductOperationTests
 public import FLT.Mazur.CyclicCharacteristicProductOriginalSubgroupLocus
 public import FLT.Mazur.CyclicCharacteristicProductParameterGroupoid
 public import FLT.Mazur.CyclicCharacteristicProductRefinementAlgebra
