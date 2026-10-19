@@ -5191,6 +5191,7 @@ public import FLT.Mazur.EquivalenceRelationDoubleVanishingOpen
 public import FLT.Mazur.EquivalenceRelationEqualFrameCorrections
 public import FLT.Mazur.EquivalenceRelationEqualFrameOverlap
 public import FLT.Mazur.EquivalenceRelationEqualizedInvariants
+public import FLT.Mazur.EquivalenceRelationExactQuotientCorrectionExtension
 public import FLT.Mazur.EquivalenceRelationExactRankInterior
 public import FLT.Mazur.EquivalenceRelationExcessFrames
 public import FLT.Mazur.EquivalenceRelationFiberPermutationSections
