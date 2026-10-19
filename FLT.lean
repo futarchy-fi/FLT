@@ -466,11 +466,15 @@ public import FLT.FreyCurve.Serre.VeluEvaluation
 public import FLT.FreyCurve.Serre.VeluExactKernel
 public import FLT.FreyCurve.Serre.VeluFunctionField
 public import FLT.FreyCurve.Serre.VeluGenericAdditivity
+public import FLT.FreyCurve.Serre.VeluGeometricKernelScheme
 public import FLT.FreyCurve.Serre.VeluHom
 public import FLT.FreyCurve.Serre.VeluIdentity
 public import FLT.FreyCurve.Serre.VeluInfinity
 public import FLT.FreyCurve.Serre.VeluIntegralModel
 public import FLT.FreyCurve.Serre.VeluIntegralSums
+public import FLT.FreyCurve.Serre.VeluKernelDescentAlgebra
+public import FLT.FreyCurve.Serre.VeluKernelGaloisLabels
+public import FLT.FreyCurve.Serre.VeluKernelParametrization
 public import FLT.FreyCurve.Serre.VeluLocalIntegralModel
 public import FLT.FreyCurve.Serre.VeluMap
 public import FLT.FreyCurve.Serre.VeluOrdinary
@@ -491,6 +495,7 @@ public import FLT.FreyCurve.VeluPadicSmallComponents
 public import FLT.FreyCurve.VeluPadicTwoComponents
 public import FLT.FreyCurve.VeluPadicTwoMinimal
 public import FLT.FreyCurve.VeluPadicTwoValuation
+public import FLT.FreyCurve.VeluSourceKernelModels
 public import FLT.FreyCurve.VeluTargetGeometry
 public import FLT.FreyCurve.VeluTargetTwoTorsion
 public import FLT.FreyCurve.VeluTargetWitness
@@ -2735,6 +2740,7 @@ public import FLT.Mazur.AffineComparisonSquare
 public import FLT.Mazur.AffineCoverClosedLimit
 public import FLT.Mazur.AffineCoverCohomology
 public import FLT.Mazur.AffineCoverIntersections
+public import FLT.Mazur.AffineCyclicClosedSubgroup
 public import FLT.Mazur.AffineDescentReconstructionComposition
 public import FLT.Mazur.AffineDescentRefinementComparison
 public import FLT.Mazur.AffineDescentRefinementReconstruction
@@ -3172,6 +3178,7 @@ public import FLT.Mazur.AffinePushforwardCohomology
 public import FLT.Mazur.AffinePushforwardQuasicoherent
 public import FLT.Mazur.AffineQuasiCoherentBaseChange
 public import FLT.Mazur.AffineQuasicoherentPullbackFaithful
+public import FLT.Mazur.AffineRationalGroupSection
 public import FLT.Mazur.AffineRationalNonvanishing
 public import FLT.Mazur.AffineReconstructionCoefficientChart
 public import FLT.Mazur.AffineRefinedCompositionCompatibility
@@ -3945,6 +3952,7 @@ public import FLT.Mazur.CompactSchemeIntegerDescent
 public import FLT.Mazur.CompactSeparatedPushforward
 public import FLT.Mazur.ComparedStageSectionReconstruction
 public import FLT.Mazur.CompatibleErrorBaseChange
+public import FLT.Mazur.CompatibleParameterRefinementProjection
 public import FLT.Mazur.CompatibleSubgroupAmple
 public import FLT.Mazur.CompatibleSubgroupAuxiliaryTransport
 public import FLT.Mazur.CompatibleSubgroupBaseChangeCoherence
@@ -4121,6 +4129,8 @@ public import FLT.Mazur.CyclicCharacteristicProductComparisonDiagram
 public import FLT.Mazur.CyclicCharacteristicProductComparisonGluing
 public import FLT.Mazur.CyclicCharacteristicProductDiagramTopology
 public import FLT.Mazur.CyclicCharacteristicProductOpenCoordinates
+public import FLT.Mazur.CyclicCharacteristicProductRefinementAlgebra
+public import FLT.Mazur.CyclicCharacteristicProductRefinementTransport
 public import FLT.Mazur.CyclicCharacteristicProductSubgroupDiagram
 public import FLT.Mazur.CyclicCharacteristicProductSubgroupGluing
 public import FLT.Mazur.CyclicCharacteristicProductSubgroupInclusion
@@ -5740,6 +5750,7 @@ public import FLT.Mazur.GeneralizedCurveGraphBaseChange
 public import FLT.Mazur.GeneralizedCurveGraphCartesian
 public import FLT.Mazur.GeneralizedCurveGraphTransport
 public import FLT.Mazur.GeneralizedCurveIdentityBaseChange
+public import FLT.Mazur.GeneralizedCurveIteratedProjection
 public import FLT.Mazur.GeneralizedCurveLocalCubicPresentation
 public import FLT.Mazur.GeneralizedCurveLocalCyclicCubic
 public import FLT.Mazur.GeneralizedCurveLocalCyclicCubicUnrestricted
@@ -5760,6 +5771,7 @@ public import FLT.Mazur.GeneralizedCurveSmoothBaseCubic
 public import FLT.Mazur.GeneralizedCurveSmoothBaseDimension
 public import FLT.Mazur.GeneralizedCurveSmoothIntegral
 public import FLT.Mazur.GeneralizedCurveSmoothPullback
+public import FLT.Mazur.GeneralizedCurveSquareProjection
 public import FLT.Mazur.GeneralizedCurveSubgroupComparison
 public import FLT.Mazur.GeneralizedCurveSubgroupIdeal
 public import FLT.Mazur.GeneralizedCurveUnrestrictedCubicCoverage
