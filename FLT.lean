@@ -4163,6 +4163,7 @@ public import FLT.Mazur.CyclicCharacteristicDisjointCompositionComponents
 public import FLT.Mazur.CyclicCharacteristicDisjointCompositionTests
 public import FLT.Mazur.CyclicCharacteristicDisjointQuotient
 public import FLT.Mazur.CyclicCharacteristicDisjointQuotientCover
+public import FLT.Mazur.CyclicCharacteristicDisjointUnitDiagrams
 public import FLT.Mazur.CyclicCharacteristicEvenNormalizedAuxiliary
 public import FLT.Mazur.CyclicCharacteristicEvenNormalizedGenerator
 public import FLT.Mazur.CyclicCharacteristicEvenParameterSource
