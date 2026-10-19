@@ -5467,6 +5467,7 @@ public import FLT.Mazur.EquivalenceRelationSubframeTransferGraphErrors
 public import FLT.Mazur.EquivalenceRelationSubframeTransferRestriction
 public import FLT.Mazur.EquivalenceRelationUniformSourceOpen
 public import FLT.Mazur.EquivalenceRelationUniformVanishingOpen
+public import FLT.Mazur.EquivalenceRelationWholeScalarStrata
 public import FLT.Mazur.EtaleAffineSpaceDimension
 public import FLT.Mazur.EtaleAlgebraFiniteBranch
 public import FLT.Mazur.EtaleAlgebraReduced
