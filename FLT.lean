@@ -6612,6 +6612,7 @@ public import FLT.Mazur.HilbertCompleteInteriorBoundaryLifts
 public import FLT.Mazur.HilbertCompleteInteriorCharts
 public import FLT.Mazur.HilbertCompleteInteriorFiniteCriterion
 public import FLT.Mazur.HilbertCompleteInteriorOriginalNeighborhoods
+public import FLT.Mazur.HilbertComponentOriginalScalarGeometry
 public import FLT.Mazur.HilbertDenseRankOriginalLifts
 public import FLT.Mazur.HilbertDivisorDegreePresentation
 public import FLT.Mazur.HilbertEnvelopeSourceTransport
