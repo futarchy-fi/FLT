@@ -4537,6 +4537,7 @@ public import FLT.Mazur.DivisorTwistedDegree
 public import FLT.Mazur.DivisorTwistedProjection
 public import FLT.Mazur.DivisorTwistedSequence
 public import FLT.Mazur.DomainLocalizationNeighborhood
+public import FLT.Mazur.DominantSmoothCurveFlat
 public import FLT.Mazur.DoubleRootComponentBound
 public import FLT.Mazur.DualAtlasAmbientBaseChange
 public import FLT.Mazur.DualAtlasAmbientBaseChangeCharts
