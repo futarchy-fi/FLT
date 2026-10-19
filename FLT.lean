@@ -892,6 +892,7 @@ public import FLT.GroupScheme.EtaleOrder
 public import FLT.GroupScheme.EtalePointCocommutativity
 public import FLT.GroupScheme.EtalePointHopf
 public import FLT.GroupScheme.EtaleSplitting
+public import FLT.GroupScheme.FaithfullyFlatMonoDescent
 public import FLT.GroupScheme.FaithfullyFlatPointDescent
 public import FLT.GroupScheme.FaithfullyFlatQuotient
 public import FLT.GroupScheme.FaithfullyFlatRetraction
