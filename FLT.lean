@@ -5282,6 +5282,7 @@ public import FLT.Mazur.EquivalenceRelationCompleteRestrictionNaturality
 public import FLT.Mazur.EquivalenceRelationCompleteScalarFiber
 public import FLT.Mazur.EquivalenceRelationCompleteSourceComparison
 public import FLT.Mazur.EquivalenceRelationCompleteSourceRestriction
+public import FLT.Mazur.EquivalenceRelationCompleteSpecializations
 public import FLT.Mazur.EquivalenceRelationCompleteStageCoefficients
 public import FLT.Mazur.EquivalenceRelationCompleteSubframe
 public import FLT.Mazur.EquivalenceRelationCompleteSubframeCompatibility
@@ -5320,6 +5321,7 @@ public import FLT.Mazur.EquivalenceRelationInvariantBoundaryAction
 public import FLT.Mazur.EquivalenceRelationInvariantCharacterArrows
 public import FLT.Mazur.EquivalenceRelationInvariantCharacterFibers
 public import FLT.Mazur.EquivalenceRelationInvariantRestriction
+public import FLT.Mazur.EquivalenceRelationIrreducibleCompleteCharacters
 public import FLT.Mazur.EquivalenceRelationJointAffineCover
 public import FLT.Mazur.EquivalenceRelationJointBoundaryCover
 public import FLT.Mazur.EquivalenceRelationJointChartBoundaryCover
@@ -5404,6 +5406,7 @@ public import FLT.Mazur.EquivalenceRelationSectionRebase
 public import FLT.Mazur.EquivalenceRelationSelfEmbeddingAction
 public import FLT.Mazur.EquivalenceRelationSourceRefinement
 public import FLT.Mazur.EquivalenceRelationSourceRestriction
+public import FLT.Mazur.EquivalenceRelationSpecializationScalarGeometry
 public import FLT.Mazur.EquivalenceRelationStrictSubframeIncomplete
 public import FLT.Mazur.EquivalenceRelationSubframeComparison
 public import FLT.Mazur.EquivalenceRelationSubframeDiscrepancy
@@ -6874,6 +6877,7 @@ public import FLT.Mazur.HilbertRankStratumOriginalNeighborhoods
 public import FLT.Mazur.HilbertRebasedCompleteFrame
 public import FLT.Mazur.HilbertReindexedCoordinateRing
 public import FLT.Mazur.HilbertRelatedFixedScalarCharts
+public import FLT.Mazur.HilbertRelatedIrreducibleCharacters
 public import FLT.Mazur.HilbertRelatedPrincipalCharacters
 public import FLT.Mazur.HilbertRepeatedMonomialChart
 public import FLT.Mazur.HilbertResidualRankCeiling
@@ -6954,6 +6958,7 @@ public import FLT.Mazur.HilbertSourceTestKernelObstruction
 public import FLT.Mazur.HilbertSourceUniformRelationMultiplier
 public import FLT.Mazur.HilbertSourceUniformScalarDenominators
 public import FLT.Mazur.HilbertSourceValuativeBoundaryObstructions
+public import FLT.Mazur.HilbertSpecializationOriginalScalarGeometry
 public import FLT.Mazur.HilbertStableFrameBoundary
 public import FLT.Mazur.HilbertSubframeAffineOverlap
 public import FLT.Mazur.HilbertSubframeAffineTargets
@@ -11548,6 +11553,7 @@ public import FLT.Mazur.RingPairInvariantFlatScalars
 public import FLT.Mazur.RingPairInvariantLocalization
 public import FLT.Mazur.RingedSpaceIdealLocus
 public import FLT.Mazur.ScalarAlgebraicClosureTests
+public import FLT.Mazur.ScalarClosedGeometricLifts
 public import FLT.Mazur.ScalarCohomology
 public import FLT.Mazur.ScalarCompatibleIntegerModel
 public import FLT.Mazur.ScalarComponentRankCeiling
@@ -11934,6 +11940,7 @@ public import FLT.Mazur.SchemeIndependentPairNormalization
 public import FLT.Mazur.SchemeIndependentRecoveryNormalization
 public import FLT.Mazur.SchemeIndependentTripleCocycle
 public import FLT.Mazur.SchemeInfinitesimalPointDetection
+public import FLT.Mazur.SchemeInvariantClosedScalarImage
 public import FLT.Mazur.SchemeInvariantOpenPrincipalExtension
 public import FLT.Mazur.SchemeInvariantOpenRelationExtension
 public import FLT.Mazur.SchemeInvariantPrincipalBoundaryNumerator
@@ -11941,6 +11948,7 @@ public import FLT.Mazur.SchemeInvariantPrincipalNumerator
 public import FLT.Mazur.SchemeInvariantPrincipalRelationLifts
 public import FLT.Mazur.SchemeInvariantPrincipalScalarImage
 public import FLT.Mazur.SchemeInvariantScalarFiberNeighborhood
+public import FLT.Mazur.SchemeInvariantSpecializationScalarImage
 public import FLT.Mazur.SchemeKernelFlatSourceImage
 public import FLT.Mazur.SchemeKernelInvariantOpenLift
 public import FLT.Mazur.SchemeKernelPairSectionSheaf
