@@ -13902,6 +13902,7 @@ public import FLT.Mazur.WeierstrassDividedCoefficientInputs
 public import FLT.Mazur.WeierstrassDividedCoefficientShear
 public import FLT.Mazur.WeierstrassDividedCoefficientShearGlobalCharts
 public import FLT.Mazur.WeierstrassDividedCoefficientShearSchemes
+public import FLT.Mazur.WeierstrassDividedCoefficientSmoothActionLaws
 public import FLT.Mazur.WeierstrassDividedCoefficientSmoothLocus
 public import FLT.Mazur.WeierstrassDividedCoefficientSmoothRecovery
 public import FLT.Mazur.WeierstrassDividedCoefficientSymmetry
