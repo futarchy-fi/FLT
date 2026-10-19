@@ -5,8 +5,7 @@ Authors: krandder
 -/
 module
 
-public import FLT.FreyCurve.Serre.VeluInfinityLinearFactor
-public import FLT.FreyCurve.Serre.VeluInfinityNeighborhoodIdeal
+public import FLT.FreyCurve.Serre.VeluInfinitySimpleRing
 
 /-!
 # A neighborhood where the original Vélu parameter has a simple zero
@@ -28,22 +27,6 @@ attribute [local irreducible] infinityTargetCoordinates infinityTargetChart
 
 variable {K : Type} [Field K] [CharZero K] [DecidableEq K]
   (E : WeierstrassCurve K) (G : AddSubgroup E.toAffine.Point) [Fintype G]
-
-/-- The original linear factor on the normalized target-chart neighborhood. -/
-def infinityTargetXFactor : InfinityTargetRing E G :=
-  algebraMap (InfinityKernelRing E G) _ (infinityXFactor E G)
-
-/-- The factor being inverted still has value one at the original identity. -/
-@[simp] theorem infinityTargetXFactor_value :
-    infinityTargetEvaluation E G (infinityTargetXFactor E G) = 1 := by
-  simp [infinityTargetXFactor]
-
-/-- An actual principal neighborhood on which the original target parameter is simple. -/
-abbrev InfinitySimpleRing := Localization.Away (infinityTargetXFactor E G)
-
-/-- Cache the final localization ring structure to bound later elaboration. -/
-instance infinitySimpleRingCommRing : CommRing (InfinitySimpleRing E G) :=
-  inferInstanceAs (CommRing (Localization.Away (infinityTargetXFactor E G)))
 
 /-- The original identity extends over the additional localization. -/
 def infinitySimpleEvaluation : InfinitySimpleRing E G →ₐ[K] K :=
