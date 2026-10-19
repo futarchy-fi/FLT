@@ -15392,6 +15392,7 @@ public import FLT.Mazur.WeierstrassGenericClosureSmoothRecovery
 public import FLT.Mazur.WeierstrassGenericClosureZero
 public import FLT.Mazur.WeierstrassGenericKernelClosure
 public import FLT.Mazur.WeierstrassGenericKernelRecovery
+public import FLT.Mazur.WeierstrassGenericKernelSmoothMultiplication
 public import FLT.Mazur.WeierstrassGenericSmoothGroupComparison
 public import FLT.Mazur.WeierstrassGenusOneFamily
 public import FLT.Mazur.WeierstrassGeometricConnected
