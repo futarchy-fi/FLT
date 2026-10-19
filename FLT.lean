@@ -495,6 +495,7 @@ public import FLT.FreyCurve.Serre.VeluGlobalRestrictions
 public import FLT.FreyCurve.Serre.VeluHom
 public import FLT.FreyCurve.Serre.VeluIdentity
 public import FLT.FreyCurve.Serre.VeluInfinity
+public import FLT.FreyCurve.Serre.VeluInfinityEvaluationIdeal
 public import FLT.FreyCurve.Serre.VeluInfinityGenericMorphism
 public import FLT.FreyCurve.Serre.VeluInfinityGenericRestriction
 public import FLT.FreyCurve.Serre.VeluInfinityKernelOpen
