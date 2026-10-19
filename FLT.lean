@@ -5210,6 +5210,7 @@ public import FLT.Mazur.EquivalenceRelationCompleteIdealInvariant
 public import FLT.Mazur.EquivalenceRelationCompleteInterior
 public import FLT.Mazur.EquivalenceRelationCompleteInteriorFinite
 public import FLT.Mazur.EquivalenceRelationCompleteMixedCoefficients
+public import FLT.Mazur.EquivalenceRelationCompleteNeighborhoodCharacters
 public import FLT.Mazur.EquivalenceRelationCompleteOpenCoefficients
 public import FLT.Mazur.EquivalenceRelationCompletePointLocus
 public import FLT.Mazur.EquivalenceRelationCompleteQuotientCorrections
