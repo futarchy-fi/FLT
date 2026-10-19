@@ -3622,6 +3622,7 @@ public import FLT.Mazur.BoundaryCorrectionCokernelBaseChange
 public import FLT.Mazur.BoundaryCorrectionCokernelClass
 public import FLT.Mazur.BoundaryCorrectionCompatibleBaseChange
 public import FLT.Mazur.BoundaryCorrectionCompatibleErrors
+public import FLT.Mazur.BoundaryCorrectionDenominators
 public import FLT.Mazur.BoundaryCorrectionFaithfulCoefficients
 public import FLT.Mazur.BoundaryCorrectionFiniteCokernel
 public import FLT.Mazur.BoundaryCorrectionFiniteReduction
@@ -3638,6 +3639,7 @@ public import FLT.Mazur.BoundaryCorrectionMixedBaseChange
 public import FLT.Mazur.BoundaryCorrectionMixedCokernel
 public import FLT.Mazur.BoundaryCorrectionMixedNumerators
 public import FLT.Mazur.BoundaryCorrectionOperatorIndependence
+public import FLT.Mazur.BoundaryCorrectionQuotient
 public import FLT.Mazur.BoundaryCorrectionReductionCertificate
 public import FLT.Mazur.BoundaryCorrectionTensorCoordinates
 public import FLT.Mazur.BoundaryExchangeLocalization
@@ -6545,6 +6547,9 @@ public import FLT.Mazur.HilbertSourceConstructedOpenLifts
 public import FLT.Mazur.HilbertSourceConstructedOpenPrimeTests
 public import FLT.Mazur.HilbertSourceConstructedOpenSections
 public import FLT.Mazur.HilbertSourceConstructedRelationNoetherian
+public import FLT.Mazur.HilbertSourceCorrectedQuotient
+public import FLT.Mazur.HilbertSourceCorrectionDenominators
+public import FLT.Mazur.HilbertSourceCorrectionPatching
 public import FLT.Mazur.HilbertSourceExactCenterValuations
 public import FLT.Mazur.HilbertSourceFiniteCompletenessTests
 public import FLT.Mazur.HilbertSourceFiniteLinearOpenLifts
