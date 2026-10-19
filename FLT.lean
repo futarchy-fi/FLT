@@ -5282,6 +5282,7 @@ public import FLT.Mazur.EquivalenceRelationFiniteChartMultipliers
 public import FLT.Mazur.EquivalenceRelationFiniteCompleteInterior
 public import FLT.Mazur.EquivalenceRelationFiniteFiberLocus
 public import FLT.Mazur.EquivalenceRelationFiniteTargetSaturation
+public import FLT.Mazur.EquivalenceRelationFixedFrameInterior
 public import FLT.Mazur.EquivalenceRelationFrameNormalization
 public import FLT.Mazur.EquivalenceRelationFrameRebaseGeometric
 public import FLT.Mazur.EquivalenceRelationFrameRebaseLaws
