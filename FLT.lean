@@ -3144,6 +3144,7 @@ public import FLT.Mazur.AffineModuleGlobalSections
 public import FLT.Mazur.AffineModulePullbackSections
 public import FLT.Mazur.AffineModuleSupport
 public import FLT.Mazur.AffineMorphismAlgebraMap
+public import FLT.Mazur.AffineMorphismTestCover
 public import FLT.Mazur.AffineNamedRefinementCompositionRecognition
 public import FLT.Mazur.AffineNamedRefinementNaturality
 public import FLT.Mazur.AffineNamedRefinementReconstruction
