@@ -6943,6 +6943,7 @@ public import FLT.Mazur.HilbertSourceTestKernelObstruction
 public import FLT.Mazur.HilbertSourceUniformRelationMultiplier
 public import FLT.Mazur.HilbertSourceUniformScalarDenominators
 public import FLT.Mazur.HilbertSourceValuativeBoundaryObstructions
+public import FLT.Mazur.HilbertSpecializationOriginalScalarGeometry
 public import FLT.Mazur.HilbertStableFrameBoundary
 public import FLT.Mazur.HilbertSubframeAffineOverlap
 public import FLT.Mazur.HilbertSubframeAffineTargets
