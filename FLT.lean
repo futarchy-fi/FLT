@@ -5500,6 +5500,7 @@ public import FLT.Mazur.FiniteFamilySupportOpen
 public import FLT.Mazur.FiniteFiberClosedImmersion
 public import FLT.Mazur.FiniteFiberImageCard
 public import FLT.Mazur.FiniteFiberOriginalOpenSpread
+public import FLT.Mazur.FiniteFiberSurjectiveDescent
 public import FLT.Mazur.FiniteFieldRankLength
 public import FLT.Mazur.FiniteFlatAffineLocalFree
 public import FLT.Mazur.FiniteFlatCoefficientIdeal
