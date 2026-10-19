@@ -4235,6 +4235,7 @@ public import FLT.Mazur.CyclicCharacteristicAuxiliaryPrescribedNeighborhood
 public import FLT.Mazur.CyclicCharacteristicCoefficientBase
 public import FLT.Mazur.CyclicCharacteristicCoefficientFiniteType
 public import FLT.Mazur.CyclicCharacteristicComparisonGeometry
+public import FLT.Mazur.CyclicCharacteristicComparisonNaturality
 public import FLT.Mazur.CyclicCharacteristicComparisonNoetherian
 public import FLT.Mazur.CyclicCharacteristicDisjointAction
 public import FLT.Mazur.CyclicCharacteristicDisjointAssociativity
@@ -4297,9 +4298,12 @@ public import FLT.Mazur.CyclicCharacteristicOddRelabelSections
 public import FLT.Mazur.CyclicCharacteristicOddRelabeledAuxiliary
 public import FLT.Mazur.CyclicCharacteristicOddRelabeledGenerator
 public import FLT.Mazur.CyclicCharacteristicOrbit
+public import FLT.Mazur.CyclicCharacteristicOrbitChartImage
+public import FLT.Mazur.CyclicCharacteristicOrbitChartTopology
 public import FLT.Mazur.CyclicCharacteristicOrbitCoequalizer
 public import FLT.Mazur.CyclicCharacteristicOrbitComparisons
 public import FLT.Mazur.CyclicCharacteristicOrbitFiniteQuotient
+public import FLT.Mazur.CyclicCharacteristicOrbitIntegerOpens
 public import FLT.Mazur.CyclicCharacteristicOrbitOpens
 public import FLT.Mazur.CyclicCharacteristicOrbitTopology
 public import FLT.Mazur.CyclicCharacteristicOriginalAffineComparison
@@ -4308,6 +4312,8 @@ public import FLT.Mazur.CyclicCharacteristicParameterPresheaf
 public import FLT.Mazur.CyclicCharacteristicParameterSource
 public import FLT.Mazur.CyclicCharacteristicPrescribedCover
 public import FLT.Mazur.CyclicCharacteristicPrescribedNeighborhood
+public import FLT.Mazur.CyclicCharacteristicPrincipalCartesian
+public import FLT.Mazur.CyclicCharacteristicPrincipalComparison
 public import FLT.Mazur.CyclicCharacteristicPrincipalRestriction
 public import FLT.Mazur.CyclicCharacteristicPrincipalTorsion
 public import FLT.Mazur.CyclicCharacteristicProductAffineClassification
@@ -4361,6 +4367,7 @@ public import FLT.Mazur.CyclicCharacteristicQuotientUnmarkedDescent
 public import FLT.Mazur.CyclicCharacteristicRelabelSections
 public import FLT.Mazur.CyclicCharacteristicRelabeledPrescribedCover
 public import FLT.Mazur.CyclicCharacteristicRelabeledPrescribedSections
+public import FLT.Mazur.CyclicCharacteristicResidualChartQuotient
 public import FLT.Mazur.CyclicCharacteristicResidualProjection
 public import FLT.Mazur.CyclicCharacteristicResidualRelation
 public import FLT.Mazur.CyclicCharacteristicRetainedFaithfulness
@@ -7462,7 +7469,10 @@ public import FLT.Mazur.LocallyFreeDualProjectiveAtlas
 public import FLT.Mazur.LocallyFreeProjectiveQuotient
 public import FLT.Mazur.LocallyNoetherianUniversalStructureSheaf
 public import FLT.Mazur.LocallyRingedIdealGenerators
+public import FLT.Mazur.LocallyRingedOpenBasic
 public import FLT.Mazur.LocallyRingedOpenImage
+public import FLT.Mazur.LocallyRingedOpenInclusion
+public import FLT.Mazur.LocallyRingedOpenPullback
 public import FLT.Mazur.LocallyRingedSchemeChartUnion
 public import FLT.Mazur.LocallyRingedSectionPointIdeal
 public import FLT.Mazur.LocallySmoothFiniteFlatCartier
