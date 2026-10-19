@@ -7742,6 +7742,7 @@ public import FLT.Mazur.ModuleUnitCocycleCongr
 public import FLT.Mazur.ModuleUnitCocyclePullback
 public import FLT.Mazur.MonicIdealNormalForms
 public import FLT.Mazur.MonoBaseChangeRelation
+public import FLT.Mazur.MonoBaseProductComparison
 public import FLT.Mazur.MonoFamilySchemeGluing
 public import FLT.Mazur.MonoidalActionSpecialization
 public import FLT.Mazur.MonomorphismCoefficientEffectiveOpen
