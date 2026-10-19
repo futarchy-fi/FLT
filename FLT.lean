@@ -4117,6 +4117,7 @@ public import FLT.Mazur.CyclicCharacteristicProductOpenCoordinates
 public import FLT.Mazur.CyclicCharacteristicProductSubgroupDiagram
 public import FLT.Mazur.CyclicCharacteristicProductSubgroupGluing
 public import FLT.Mazur.CyclicCharacteristicProductSubgroupInclusion
+public import FLT.Mazur.CyclicCharacteristicProductUniversalCharts
 public import FLT.Mazur.CyclicCharacteristicQuotient
 public import FLT.Mazur.CyclicCharacteristicQuotientCover
 public import FLT.Mazur.CyclicCharacteristicQuotientCoverage
@@ -5707,11 +5708,16 @@ public import FLT.Mazur.GeneralizedCurveCartierDescent
 public import FLT.Mazur.GeneralizedCurveCartierGenerator
 public import FLT.Mazur.GeneralizedCurveCartierStalks
 public import FLT.Mazur.GeneralizedCurveCategory
+public import FLT.Mazur.GeneralizedCurveCoverMorphism
+public import FLT.Mazur.GeneralizedCurveCoverRefinement
 public import FLT.Mazur.GeneralizedCurveCyclicMarkingBaseChange
 public import FLT.Mazur.GeneralizedCurveCyclicMarkingTransport
 public import FLT.Mazur.GeneralizedCurveCyclicSubgroup
 public import FLT.Mazur.GeneralizedCurveDirectLocalCubic
 public import FLT.Mazur.GeneralizedCurveDirectLocalFamily
+public import FLT.Mazur.GeneralizedCurveDirectedGluing
+public import FLT.Mazur.GeneralizedCurveDirectedIsoGluing
+public import FLT.Mazur.GeneralizedCurveDirectedNaturality
 public import FLT.Mazur.GeneralizedCurveDivisorPullback
 public import FLT.Mazur.GeneralizedCurveEquivariantIso
 public import FLT.Mazur.GeneralizedCurveFiberAmple
@@ -5730,6 +5736,7 @@ public import FLT.Mazur.GeneralizedCurveLocalCubicPresentation
 public import FLT.Mazur.GeneralizedCurveLocalCyclicCubic
 public import FLT.Mazur.GeneralizedCurveLocalCyclicCubicUnrestricted
 public import FLT.Mazur.GeneralizedCurveLocalPointFrames
+public import FLT.Mazur.GeneralizedCurveNaturalIsoGluing
 public import FLT.Mazur.GeneralizedCurvePicardClasses
 public import FLT.Mazur.GeneralizedCurvePicardPresheaf
 public import FLT.Mazur.GeneralizedCurvePointedCubicFamily
@@ -8083,6 +8090,8 @@ public import FLT.Mazur.OriginalTwistOrbitRelation
 public import FLT.Mazur.OriginalTwistSectionCoherence
 public import FLT.Mazur.OverCoproductModuleSections
 public import FLT.Mazur.OverCoproductSchemeDescent
+public import FLT.Mazur.OverCoverMonoidReflection
+public import FLT.Mazur.OverDirectedCoverGluing
 public import FLT.Mazur.OverOpenCoverExt
 public import FLT.Mazur.OverOpenCoverImage
 public import FLT.Mazur.OverOpenImageUnion
