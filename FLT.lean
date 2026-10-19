@@ -5503,6 +5503,7 @@ public import FLT.Mazur.FiniteSubgroupComparisonBaseChangeCriterion
 public import FLT.Mazur.FiniteSubgroupComparisonLocus
 public import FLT.Mazur.FiniteSubgroupComparisonLocusBaseChange
 public import FLT.Mazur.FiniteSubgroupComparisonLocusPresentation
+public import FLT.Mazur.FiniteSubgroupComparisonRefinement
 public import FLT.Mazur.FiniteSubgroupContainmentLocus
 public import FLT.Mazur.FiniteSubgroupEqualityLocus
 public import FLT.Mazur.FiniteSubgroupPicard
