@@ -6516,6 +6516,7 @@ public import FLT.Mazur.HilbertCompleteChartBoundaryTests
 public import FLT.Mazur.HilbertCompleteChartMixedVanishing
 public import FLT.Mazur.HilbertCompleteChartOriginalCertificates
 public import FLT.Mazur.HilbertCompleteChartOriginalSections
+public import FLT.Mazur.HilbertCompleteChartScalarIso
 public import FLT.Mazur.HilbertCompleteFrameCardinality
 public import FLT.Mazur.HilbertCompleteGeometricTuple
 public import FLT.Mazur.HilbertCompleteInfinitesimalSources
