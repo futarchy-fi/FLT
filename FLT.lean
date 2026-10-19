@@ -4846,6 +4846,7 @@ public import FLT.Mazur.EllipticMiddleCyclicCoordinates
 public import FLT.Mazur.EllipticMinimalAdditiveComponents
 public import FLT.Mazur.EllipticMinimalDiscriminant
 public import FLT.Mazur.EllipticMultiplicativeValuationEquation
+public import FLT.Mazur.EllipticNodalDepthModel
 public import FLT.Mazur.EllipticNodalDepthNormalization
 public import FLT.Mazur.EllipticNodalDeterminantStep
 public import FLT.Mazur.EllipticNodalDiscriminantDepth
