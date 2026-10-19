@@ -2824,6 +2824,7 @@ public import FLT.Mazur.AffineBoundaryGeometricFiberTests
 public import FLT.Mazur.AffineBoundaryIndependentFlatTests
 public import FLT.Mazur.AffineBoundaryIndependentIntegralTests
 public import FLT.Mazur.AffineBoundaryIntegralFlatCriterion
+public import FLT.Mazur.AffineBoundaryMinimalScalarGeometry
 public import FLT.Mazur.AffineBoundaryNilpotenceOpen
 public import FLT.Mazur.AffineBoundaryPrincipalTestCharts
 public import FLT.Mazur.AffineBoundaryScalarFiberEquations
@@ -4232,6 +4233,8 @@ public import FLT.Mazur.CyclicCharacteristicAuxiliaryFaithfulness
 public import FLT.Mazur.CyclicCharacteristicAuxiliaryFiniteType
 public import FLT.Mazur.CyclicCharacteristicAuxiliaryPrescribedCover
 public import FLT.Mazur.CyclicCharacteristicAuxiliaryPrescribedNeighborhood
+public import FLT.Mazur.CyclicCharacteristicChartLocallyRinged
+public import FLT.Mazur.CyclicCharacteristicChartResidualSections
 public import FLT.Mazur.CyclicCharacteristicCoefficientBase
 public import FLT.Mazur.CyclicCharacteristicCoefficientFiniteType
 public import FLT.Mazur.CyclicCharacteristicComparisonGeometry
@@ -4267,8 +4270,11 @@ public import FLT.Mazur.CyclicCharacteristicFaithfulFullCover
 public import FLT.Mazur.CyclicCharacteristicFaithfulPrescribedCover
 public import FLT.Mazur.CyclicCharacteristicFaithfulRelabeledCover
 public import FLT.Mazur.CyclicCharacteristicFiniteNeighborhood
+public import FLT.Mazur.CyclicCharacteristicFiniteResidualSections
 public import FLT.Mazur.CyclicCharacteristicFiniteTypeAtlas
 public import FLT.Mazur.CyclicCharacteristicFixedCover
+public import FLT.Mazur.CyclicCharacteristicIntegerSourceAssembly
+public import FLT.Mazur.CyclicCharacteristicIntegerSourceCover
 public import FLT.Mazur.CyclicCharacteristicInvariantAffineComparison
 public import FLT.Mazur.CyclicCharacteristicInvariantAffineCover
 public import FLT.Mazur.CyclicCharacteristicInvariantAffineCoverage
@@ -4297,6 +4303,7 @@ public import FLT.Mazur.CyclicCharacteristicOddParameterSource
 public import FLT.Mazur.CyclicCharacteristicOddRelabelSections
 public import FLT.Mazur.CyclicCharacteristicOddRelabeledAuxiliary
 public import FLT.Mazur.CyclicCharacteristicOddRelabeledGenerator
+public import FLT.Mazur.CyclicCharacteristicOppositeLocallyRinged
 public import FLT.Mazur.CyclicCharacteristicOrbit
 public import FLT.Mazur.CyclicCharacteristicOrbitChartImage
 public import FLT.Mazur.CyclicCharacteristicOrbitChartTopology
@@ -4370,6 +4377,10 @@ public import FLT.Mazur.CyclicCharacteristicRelabeledPrescribedSections
 public import FLT.Mazur.CyclicCharacteristicResidualChartQuotient
 public import FLT.Mazur.CyclicCharacteristicResidualProjection
 public import FLT.Mazur.CyclicCharacteristicResidualRelation
+public import FLT.Mazur.CyclicCharacteristicResidualSectionComparison
+public import FLT.Mazur.CyclicCharacteristicResidualSectionReconstruction
+public import FLT.Mazur.CyclicCharacteristicResidualTransitionDescent
+public import FLT.Mazur.CyclicCharacteristicResidualTransitionTests
 public import FLT.Mazur.CyclicCharacteristicRetainedFaithfulness
 public import FLT.Mazur.CyclicCharacteristicRetainedFullParameter
 public import FLT.Mazur.CyclicCharacteristicRetainedParameter
@@ -5268,6 +5279,7 @@ public import FLT.Mazur.EquivalenceRelationJointSourceRefinement
 public import FLT.Mazur.EquivalenceRelationLabelOpenCharts
 public import FLT.Mazur.EquivalenceRelationLabelOverlap
 public import FLT.Mazur.EquivalenceRelationLabelRefinement
+public import FLT.Mazur.EquivalenceRelationMinimalScalarGeometry
 public import FLT.Mazur.EquivalenceRelationMixedBranchCoefficients
 public import FLT.Mazur.EquivalenceRelationMixedChartDescent
 public import FLT.Mazur.EquivalenceRelationMixedChartLiftDifference
@@ -6830,6 +6842,7 @@ public import FLT.Mazur.HilbertSourceIntegralFlatTests
 public import FLT.Mazur.HilbertSourceInvariantCharacterOrbits
 public import FLT.Mazur.HilbertSourceLocalRankCeilingLifts
 public import FLT.Mazur.HilbertSourceLocalizedOpenLift
+public import FLT.Mazur.HilbertSourceMinimalScalarGeometry
 public import FLT.Mazur.HilbertSourceMultiplierSupport
 public import FLT.Mazur.HilbertSourceNonstableOpenLifts
 public import FLT.Mazur.HilbertSourceOpenRelationLifts
@@ -7221,6 +7234,7 @@ public import FLT.Mazur.InvariantOpenRelationDiagram
 public import FLT.Mazur.InvariantOpenRelationEquivalence
 public import FLT.Mazur.InvariantOpenRelationFunctions
 public import FLT.Mazur.InvariantOpenRelationMap
+public import FLT.Mazur.InvariantScalarGoingDown
 public import FLT.Mazur.InvariantSectionObstruction
 public import FLT.Mazur.IrreducibleComponentAmple
 public import FLT.Mazur.IsomorphicClosedPullback
@@ -11443,6 +11457,8 @@ public import FLT.Mazur.ScalarImageOriginalGenerators
 public import FLT.Mazur.ScalarImageResidueGenerators
 public import FLT.Mazur.ScalarImageSourceGenerators
 public import FLT.Mazur.ScalarLocalizedIdealNilpotence
+public import FLT.Mazur.ScalarMinimalCharacterNeighborhood
+public import FLT.Mazur.ScalarMinimalCharacterPropagation
 public import FLT.Mazur.ScalarNilpotenceFlatBaseChange
 public import FLT.Mazur.ScalarNilpotenceMinimalFiber
 public import FLT.Mazur.ScalarQuotientImagePresentation
