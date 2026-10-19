@@ -16301,6 +16301,7 @@ public import FLT.Mazur.WeierstrassTripleInnerOutputRegular
 public import FLT.Mazur.WeierstrassTripleSlopeAlgebra
 public import FLT.Mazur.WeierstrassTripleTangentSlopeAlgebra
 public import FLT.Mazur.WeierstrassUniversalComparisonClassification
+public import FLT.Mazur.WeierstrassUniversalComparisonRefinement
 public import FLT.Mazur.WeierstrassUniversalComparisonRingHom
 public import FLT.Mazur.WeierstrassUniversalComparisonSpecialization
 public import FLT.Mazur.WeierstrassUniversalTranslationSmoothLocus
