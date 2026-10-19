@@ -4272,6 +4272,7 @@ public import FLT.Mazur.CyclicCharacteristicParameterSource
 public import FLT.Mazur.CyclicCharacteristicPrescribedCover
 public import FLT.Mazur.CyclicCharacteristicPrescribedNeighborhood
 public import FLT.Mazur.CyclicCharacteristicPrincipalRestriction
+public import FLT.Mazur.CyclicCharacteristicPrincipalTorsion
 public import FLT.Mazur.CyclicCharacteristicProductAffineClassification
 public import FLT.Mazur.CyclicCharacteristicProductAffineSchemeTests
 public import FLT.Mazur.CyclicCharacteristicProductArrowRestriction
