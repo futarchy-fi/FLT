@@ -2735,6 +2735,7 @@ public import FLT.Mazur.AffineComparisonSquare
 public import FLT.Mazur.AffineCoverClosedLimit
 public import FLT.Mazur.AffineCoverCohomology
 public import FLT.Mazur.AffineCoverIntersections
+public import FLT.Mazur.AffineCyclicClosedSubgroup
 public import FLT.Mazur.AffineDescentReconstructionComposition
 public import FLT.Mazur.AffineDescentRefinementComparison
 public import FLT.Mazur.AffineDescentRefinementReconstruction
