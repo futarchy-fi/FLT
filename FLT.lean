@@ -473,6 +473,7 @@ public import FLT.FreyCurve.Serre.VeluRational
 public import FLT.FreyCurve.Serre.VeluSpecialization
 public import FLT.FreyCurve.Serre.VeluTranslation
 public import FLT.FreyCurve.TorsionQuotientWitness
+public import FLT.FreyCurve.VeluTargetGeometry
 public import FLT.FreyCurve.VeluTargetTwoTorsion
 public import FLT.FreyCurve.VeluTargetWitness
 public import FLT.GaloisRepresentation.Attachment
