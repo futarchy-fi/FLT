@@ -5599,6 +5599,7 @@ public import FLT.Mazur.FiniteEtaleSectionCoverNeighborhood
 public import FLT.Mazur.FiniteEtaleSectionEqualityNeighborhood
 public import FLT.Mazur.FiniteEtaleWholeFiberNeighborhood
 public import FLT.Mazur.FiniteEvaluationLocus
+public import FLT.Mazur.FiniteExtensionDVRModel
 public import FLT.Mazur.FiniteFamilySupportBaseChange
 public import FLT.Mazur.FiniteFamilySupportOpen
 public import FLT.Mazur.FiniteFiberClosedImmersion
