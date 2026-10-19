@@ -7049,6 +7049,7 @@ public import FLT.Mazur.HilbertUniformSourceOriginalSections
 public import FLT.Mazur.HilbertUniformSourcePrincipalMultipliers
 public import FLT.Mazur.HilbertUniversalComplementMatrix
 public import FLT.Mazur.HilbertUniversalFrameRebase
+public import FLT.Mazur.HilbertWholeScalarFiniteCover
 public import FLT.Mazur.HilbertWholeScalarImageCover
 public import FLT.Mazur.HomIntegerModel
 public import FLT.Mazur.HomogeneousFractionProjection
