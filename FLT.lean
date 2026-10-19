@@ -485,6 +485,7 @@ public import FLT.FreyCurve.Serre.VeluGenericQuadraticRelation
 public import FLT.FreyCurve.Serre.VeluGenericXField
 public import FLT.FreyCurve.Serre.VeluGeometricKernelScheme
 public import FLT.FreyCurve.Serre.VeluGlobalMorphism
+public import FLT.FreyCurve.Serre.VeluGlobalPointValues
 public import FLT.FreyCurve.Serre.VeluGlobalRestrictions
 public import FLT.FreyCurve.Serre.VeluHom
 public import FLT.FreyCurve.Serre.VeluIdentity
