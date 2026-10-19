@@ -6496,6 +6496,7 @@ public import FLT.Mazur.HilbertRepeatedMonomialChart
 public import FLT.Mazur.HilbertResidualRankCeiling
 public import FLT.Mazur.HilbertSameAmbientChartIso
 public import FLT.Mazur.HilbertSourceActionRelationGraph
+public import FLT.Mazur.HilbertSourceActualMultiplierIdeal
 public import FLT.Mazur.HilbertSourceBadAffineChartEquations
 public import FLT.Mazur.HilbertSourceBadAffineChartLifts
 public import FLT.Mazur.HilbertSourceBadQuotientLifts
