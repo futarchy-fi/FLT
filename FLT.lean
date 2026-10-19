@@ -6443,6 +6443,7 @@ public import FLT.Mazur.HilbertSourceBoundaryPrincipalCharts
 public import FLT.Mazur.HilbertSourceBoundaryRankFinite
 public import FLT.Mazur.HilbertSourceBoundaryRankNilpotence
 public import FLT.Mazur.HilbertSourceBoundaryRankStages
+public import FLT.Mazur.HilbertSourceBoundaryScalarCharts
 public import FLT.Mazur.HilbertSourceBoundaryStageRecovery
 public import FLT.Mazur.HilbertSourceBoundaryTestNeighborhoods
 public import FLT.Mazur.HilbertSourceBoundaryUniformOrders
