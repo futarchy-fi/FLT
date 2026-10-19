@@ -12803,6 +12803,7 @@ public import FLT.Mazur.WeierstrassClosedImmersionIso
 public import FLT.Mazur.WeierstrassCoefficientAddition
 public import FLT.Mazur.WeierstrassCoefficientAffineProduct
 public import FLT.Mazur.WeierstrassCoefficientChartPreimage
+public import FLT.Mazur.WeierstrassCoefficientFieldCover
 public import FLT.Mazur.WeierstrassCoefficientGeneralizedIso
 public import FLT.Mazur.WeierstrassCoefficientGroup
 public import FLT.Mazur.WeierstrassCoefficientMarking
