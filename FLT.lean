@@ -566,6 +566,8 @@ public import FLT.FreyCurve.Serre.VeluLocalGenericKernel
 public import FLT.FreyCurve.Serre.VeluLocalGenericMorphism
 public import FLT.FreyCurve.Serre.VeluLocalGenericPointComparison
 public import FLT.FreyCurve.Serre.VeluLocalIntegralKernelClosure
+public import FLT.FreyCurve.Serre.VeluLocalIntegralKernelFinite
+public import FLT.FreyCurve.Serre.VeluLocalIntegralKernelRecovery
 public import FLT.FreyCurve.Serre.VeluLocalIntegralModel
 public import FLT.FreyCurve.Serre.VeluLocalPointMorphism
 public import FLT.FreyCurve.Serre.VeluLocalPointTransport
@@ -2953,6 +2955,7 @@ public import FLT.Mazur.AffineFunctionUniversal
 public import FLT.Mazur.AffineGeneratorPointCoefficientTransport
 public import FLT.Mazur.AffineGeneratorPointLinearTransport
 public import FLT.Mazur.AffineGenericClosure
+public import FLT.Mazur.AffineGenericFiniteOpen
 public import FLT.Mazur.AffineGenericFlatOpen
 public import FLT.Mazur.AffineGeometricChartDatum
 public import FLT.Mazur.AffineGeometricChartRecognition
@@ -5228,6 +5231,7 @@ public import FLT.Mazur.EquivalenceRelationCompleteIdealInvariant
 public import FLT.Mazur.EquivalenceRelationCompleteInterior
 public import FLT.Mazur.EquivalenceRelationCompleteInteriorFinite
 public import FLT.Mazur.EquivalenceRelationCompleteMixedCoefficients
+public import FLT.Mazur.EquivalenceRelationCompleteNeighborhoodCharacters
 public import FLT.Mazur.EquivalenceRelationCompleteOpenCoefficients
 public import FLT.Mazur.EquivalenceRelationCompletePointLocus
 public import FLT.Mazur.EquivalenceRelationCompleteQuotientCorrections
@@ -5266,6 +5270,7 @@ public import FLT.Mazur.EquivalenceRelationFiniteTargetSaturation
 public import FLT.Mazur.EquivalenceRelationFrameNormalization
 public import FLT.Mazur.EquivalenceRelationFrameRebaseGeometric
 public import FLT.Mazur.EquivalenceRelationFrameRebaseLaws
+public import FLT.Mazur.EquivalenceRelationGenericCompleteNeighborhood
 public import FLT.Mazur.EquivalenceRelationGeometricTestExtensions
 public import FLT.Mazur.EquivalenceRelationHigherScalarValuations
 public import FLT.Mazur.EquivalenceRelationHigherTestAtlas
@@ -5948,6 +5953,7 @@ public import FLT.Mazur.FlatGradedProjChartBaseChange
 public import FLT.Mazur.FlatHomogeneousLocalizationBaseChange
 public import FLT.Mazur.FlatIdealTensor
 public import FLT.Mazur.FlatLineSectionTerms
+public import FLT.Mazur.FlatMonoSchematicClosure
 public import FLT.Mazur.FlatQuotientCartierFiber
 public import FLT.Mazur.FlatQuotientIdealBaseChange
 public import FLT.Mazur.FlatQuotientIdealFiber
@@ -6532,6 +6538,7 @@ public import FLT.Mazur.HilbertCompleteChartBoundaryTests
 public import FLT.Mazur.HilbertCompleteChartMixedVanishing
 public import FLT.Mazur.HilbertCompleteChartOriginalCertificates
 public import FLT.Mazur.HilbertCompleteChartOriginalSections
+public import FLT.Mazur.HilbertCompleteChartScalarIso
 public import FLT.Mazur.HilbertCompleteFrameCardinality
 public import FLT.Mazur.HilbertCompleteGeometricTuple
 public import FLT.Mazur.HilbertCompleteInfinitesimalSources
@@ -6579,6 +6586,8 @@ public import FLT.Mazur.HilbertFullInteriorFiniteKernel
 public import FLT.Mazur.HilbertFullInteriorQuotientChart
 public import FLT.Mazur.HilbertFullRelationFiberRebase
 public import FLT.Mazur.HilbertFullRelationOrderedPoints
+public import FLT.Mazur.HilbertGenericCompleteNeighborhood
+public import FLT.Mazur.HilbertGenericOriginalLifting
 public import FLT.Mazur.HilbertGrassmannianAffineMap
 public import FLT.Mazur.HilbertGrassmannianFamilyCompatibility
 public import FLT.Mazur.HilbertGrassmannianGluing
@@ -10807,6 +10816,7 @@ public import FLT.Mazur.ProperCoverLimitDescent
 public import FLT.Mazur.ProperCurveFixedPointTranslation
 public import FLT.Mazur.ProperCurveGenus
 public import FLT.Mazur.ProperCurveOpenComparison
+public import FLT.Mazur.ProperDenseFiniteSections
 public import FLT.Mazur.ProperDenseOpenExtension
 public import FLT.Mazur.ProperDenseOpenIso
 public import FLT.Mazur.ProperEtaleNeighborhoodBases
@@ -10874,6 +10884,7 @@ public import FLT.Mazur.ProperFiberTensorComplex
 public import FLT.Mazur.ProperFieldCohomologyBaseChange
 public import FLT.Mazur.ProperFiniteFiberNeighborhood
 public import FLT.Mazur.ProperFinitePresentationEnvelope
+public import FLT.Mazur.ProperFlatValuationFinite
 public import FLT.Mazur.ProperFunctionSheafIso
 public import FLT.Mazur.ProperFunctionSheafSurjective
 public import FLT.Mazur.ProperGeometricAcyclicDirectImage
@@ -10969,6 +10980,7 @@ public import FLT.Mazur.ProperSmoothPointwiseSectionRigidity
 public import FLT.Mazur.ProperSmoothRelativePointedGroupHom
 public import FLT.Mazur.ProperSmoothStructureSheaf
 public import FLT.Mazur.ProperSplitDirectImageSections
+public import FLT.Mazur.ProperSplitGenericFiniteness
 public import FLT.Mazur.ProperSplitSectionFiberRegularity
 public import FLT.Mazur.ProperSplitSectionRelativeCartier
 public import FLT.Mazur.ProperStageAmpleFiberDescent
@@ -10983,6 +10995,7 @@ public import FLT.Mazur.ProperUniversalDirectImageLine
 public import FLT.Mazur.ProperUniversalDirectImagePasting
 public import FLT.Mazur.ProperUniversalRetainedSection
 public import FLT.Mazur.ProperUniversalTensorIdentification
+public import FLT.Mazur.ProperValuationGenericFinite
 public import FLT.Mazur.PullbackLeftLegTransport
 public import FLT.Mazur.PullbackOneLegTransport
 public import FLT.Mazur.PullbackOverlapBaseChange
@@ -11003,6 +11016,7 @@ public import FLT.Mazur.QuadraticRootOppositeBranch
 public import FLT.Mazur.QuasiCoherentAffineBasePullback
 public import FLT.Mazur.QuasiCoherentSchemePullback
 public import FLT.Mazur.QuasiCompactEtaleGeometricSections
+public import FLT.Mazur.QuasiCompactGenericFiniteOpen
 public import FLT.Mazur.QuasiCompactGenericFlatOpen
 public import FLT.Mazur.QuasiFiniteCoefficientQuotient
 public import FLT.Mazur.QuasiFiniteFlatDescent
@@ -11484,6 +11498,7 @@ public import FLT.Mazur.ScalarTestKernelProducts
 public import FLT.Mazur.ScalarTestLocalizationKernels
 public import FLT.Mazur.ScalarTestResidualSeparation
 public import FLT.Mazur.ScalarTowerDivision
+public import FLT.Mazur.SchematicDenseBezoutFlat
 public import FLT.Mazur.SchematicDenseDedekindFlat
 public import FLT.Mazur.SchematicDescentGluing
 public import FLT.Mazur.SchematicImageAffineEquations
@@ -11795,6 +11810,7 @@ public import FLT.Mazur.SchemeFppfSourceLineMapPreimage
 public import FLT.Mazur.SchemeFppfTargetOpen
 public import FLT.Mazur.SchemeFpqcOpenSectionDescent
 public import FLT.Mazur.SchemeFunctionGroundChange
+public import FLT.Mazur.SchemeGenericFiniteTargetOpen
 public import FLT.Mazur.SchemeGenericFlatTargetOpen
 public import FLT.Mazur.SchemeGenericFppfTargetOpen
 public import FLT.Mazur.SchemeGeometricDescentCocycleTest
@@ -12749,6 +12765,7 @@ public import FLT.Mazur.UnpointedLocalAcyclicFppfSheaf
 public import FLT.Mazur.UnramifiedSectionImmersion
 public import FLT.Mazur.UnrestrictedSmoothFamilyCartier
 public import FLT.Mazur.ValuationExactCenterIntegralTests
+public import FLT.Mazur.ValuationFieldFlatCover
 public import FLT.Mazur.ValuationLocalRefinement
 public import FLT.Mazur.ValuationPoleEquations
 public import FLT.Mazur.ValuationPoleReciprocal
@@ -15355,11 +15372,13 @@ public import FLT.Mazur.WeierstrassGeneralizedEllipticModel
 public import FLT.Mazur.WeierstrassGeneralizedPointedComparison
 public import FLT.Mazur.WeierstrassGeneralizedSmoothComparison
 public import FLT.Mazur.WeierstrassGenericKernelClosure
+public import FLT.Mazur.WeierstrassGenericKernelRecovery
 public import FLT.Mazur.WeierstrassGenusOneFamily
 public import FLT.Mazur.WeierstrassGeometricConnected
 public import FLT.Mazur.WeierstrassGeometricFourBasis
 public import FLT.Mazur.WeierstrassGeometricFourTorsion
 public import FLT.Mazur.WeierstrassGeometricIntegral
+public import FLT.Mazur.WeierstrassGeometricKernelClosureFinite
 public import FLT.Mazur.WeierstrassGeometricThreeBasis
 public import FLT.Mazur.WeierstrassGeometricThreeTorsion
 public import FLT.Mazur.WeierstrassGlobalAdditionCover
@@ -16814,6 +16833,9 @@ public import FLT.Mazur.WeierstrassUniversalComparisonRefinement
 public import FLT.Mazur.WeierstrassUniversalComparisonRingHom
 public import FLT.Mazur.WeierstrassUniversalComparisonSpecialization
 public import FLT.Mazur.WeierstrassUniversalTranslationSmoothLocus
+public import FLT.Mazur.WeierstrassValuationKernelClosureDegree
+public import FLT.Mazur.WeierstrassValuationKernelClosureFinite
+public import FLT.Mazur.WeierstrassValuationKernelClosureFlat
 public import FLT.Mazur.WeierstrassVariableChangeAddition
 public import FLT.Mazur.WeierstrassVariableChangeAdditionFormula
 public import FLT.Mazur.WeierstrassVariableChangeAffineProduct
