@@ -563,6 +563,7 @@ public import FLT.FreyCurve.Serre.VeluKernelScalarExtension
 public import FLT.FreyCurve.Serre.VeluKernelSectionComparison
 public import FLT.FreyCurve.Serre.VeluKernelTranslationInvariant
 public import FLT.FreyCurve.Serre.VeluLocalDividedKernelFinite
+public import FLT.FreyCurve.Serre.VeluLocalFullKernelAction
 public import FLT.FreyCurve.Serre.VeluLocalGenericKernel
 public import FLT.FreyCurve.Serre.VeluLocalGenericKernelGroup
 public import FLT.FreyCurve.Serre.VeluLocalGenericMorphism
@@ -13930,10 +13931,12 @@ public import FLT.Mazur.WeierstrassDividedClosingTransportGluing
 public import FLT.Mazur.WeierstrassDividedClosingTransportRestriction
 public import FLT.Mazur.WeierstrassDividedClosingTransportSpan
 public import FLT.Mazur.WeierstrassDividedCoefficientActionIndexTransport
+public import FLT.Mazur.WeierstrassDividedCoefficientActionSmoothLocus
 public import FLT.Mazur.WeierstrassDividedCoefficientInputs
 public import FLT.Mazur.WeierstrassDividedCoefficientShear
 public import FLT.Mazur.WeierstrassDividedCoefficientShearGlobalCharts
 public import FLT.Mazur.WeierstrassDividedCoefficientShearSchemes
+public import FLT.Mazur.WeierstrassDividedCoefficientSmoothActionLaws
 public import FLT.Mazur.WeierstrassDividedCoefficientSmoothLocus
 public import FLT.Mazur.WeierstrassDividedCoefficientSmoothRecovery
 public import FLT.Mazur.WeierstrassDividedCoefficientSymmetry
@@ -14302,6 +14305,7 @@ public import FLT.Mazur.WeierstrassDividedGlobalActionConstruction
 public import FLT.Mazur.WeierstrassDividedGlobalActionIdentity
 public import FLT.Mazur.WeierstrassDividedGlobalActionInverse
 public import FLT.Mazur.WeierstrassDividedGlobalActionSmooth
+public import FLT.Mazur.WeierstrassDividedGlobalActionSmoothLocus
 public import FLT.Mazur.WeierstrassDividedGlobalCoefficientAction
 public import FLT.Mazur.WeierstrassDividedGlobalCoefficientActionLaws
 public import FLT.Mazur.WeierstrassDividedGlobalCoefficientCartesian
@@ -14456,6 +14460,8 @@ public import FLT.Mazur.WeierstrassDividedLinearResidueBounds
 public import FLT.Mazur.WeierstrassDividedLocalComponentContraction
 public import FLT.Mazur.WeierstrassDividedLocalizedIntersection
 public import FLT.Mazur.WeierstrassDividedLowerData
+public import FLT.Mazur.WeierstrassDividedMixedKernelAction
+public import FLT.Mazur.WeierstrassDividedMixedKernelPair
 public import FLT.Mazur.WeierstrassDividedNilpotentEarlierTerminal
 public import FLT.Mazur.WeierstrassDividedNilpotentInfinity
 public import FLT.Mazur.WeierstrassDividedNilpotentNonadjacentIntersection
@@ -14816,6 +14822,10 @@ public import FLT.Mazur.WeierstrassDividedResidueNormalizationCompatibility
 public import FLT.Mazur.WeierstrassDividedResidueOrderedNormalization
 public import FLT.Mazur.WeierstrassDividedResidueSplitCubic
 public import FLT.Mazur.WeierstrassDividedResidueTangentNormalization
+public import FLT.Mazur.WeierstrassDividedResolvedSmoothAction
+public import FLT.Mazur.WeierstrassDividedResolvedSmoothActionLaws
+public import FLT.Mazur.WeierstrassDividedResolvedSmoothActionSquare
+public import FLT.Mazur.WeierstrassDividedResolvedSmoothTranslation
 public import FLT.Mazur.WeierstrassDividedRetainedAdjacentParameters
 public import FLT.Mazur.WeierstrassDividedRetainedChartIso
 public import FLT.Mazur.WeierstrassDividedRetainedChartOpen
@@ -14923,6 +14933,7 @@ public import FLT.Mazur.WeierstrassDividedShearPreviousBoundary
 public import FLT.Mazur.WeierstrassDividedSkippedAtlasRange
 public import FLT.Mazur.WeierstrassDividedSkippedChartSupport
 public import FLT.Mazur.WeierstrassDividedSkippedTensorIntersection
+public import FLT.Mazur.WeierstrassDividedSmoothActionCoefficientSquare
 public import FLT.Mazur.WeierstrassDividedSmoothCoefficientEmbedding
 public import FLT.Mazur.WeierstrassDividedSmoothCoefficientUnique
 public import FLT.Mazur.WeierstrassDividedSmoothSuccessiveCoefficientAction
