@@ -457,6 +457,7 @@ public import FLT.FreyCurve.Serre.VeluDifferential
 public import FLT.FreyCurve.Serre.VeluElliptic
 public import FLT.FreyCurve.Serre.VeluEquation
 public import FLT.FreyCurve.Serre.VeluEvaluation
+public import FLT.FreyCurve.Serre.VeluExactKernel
 public import FLT.FreyCurve.Serre.VeluFunctionField
 public import FLT.FreyCurve.Serre.VeluGenericAdditivity
 public import FLT.FreyCurve.Serre.VeluHom
