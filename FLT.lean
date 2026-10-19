@@ -4230,6 +4230,7 @@ public import FLT.Mazur.CyclicCharacteristicAffineOrbitLocallyRinged
 public import FLT.Mazur.CyclicCharacteristicAffineOrbitProjection
 public import FLT.Mazur.CyclicCharacteristicAffineOriginalSubgroupLocus
 public import FLT.Mazur.CyclicCharacteristicAffineOriginalSubgroupOverlap
+public import FLT.Mazur.CyclicCharacteristicAffineResidualArrows
 public import FLT.Mazur.CyclicCharacteristicAffineSubgroup
 public import FLT.Mazur.CyclicCharacteristicAffineSubgroupBaseSquare
 public import FLT.Mazur.CyclicCharacteristicAffineSubgroupClassification
