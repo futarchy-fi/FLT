@@ -4234,7 +4234,12 @@ public import FLT.Mazur.CyclicCharacteristicFiniteTypeAtlas
 public import FLT.Mazur.CyclicCharacteristicFixedCover
 public import FLT.Mazur.CyclicCharacteristicInvariantAffineCover
 public import FLT.Mazur.CyclicCharacteristicInvariantAffineCoverage
+public import FLT.Mazur.CyclicCharacteristicInvariantLocallyRinged
+public import FLT.Mazur.CyclicCharacteristicInvariantSectionRings
+public import FLT.Mazur.CyclicCharacteristicInvariantSections
+public import FLT.Mazur.CyclicCharacteristicInvariantSheaf
 public import FLT.Mazur.CyclicCharacteristicLocallyNormalizedModuli
+public import FLT.Mazur.CyclicCharacteristicLocallyRingedDescent
 public import FLT.Mazur.CyclicCharacteristicLocusFiniteType
 public import FLT.Mazur.CyclicCharacteristicLocusSeparated
 public import FLT.Mazur.CyclicCharacteristicMarkedQuotient
@@ -4251,6 +4256,12 @@ public import FLT.Mazur.CyclicCharacteristicOddParameterSource
 public import FLT.Mazur.CyclicCharacteristicOddRelabelSections
 public import FLT.Mazur.CyclicCharacteristicOddRelabeledAuxiliary
 public import FLT.Mazur.CyclicCharacteristicOddRelabeledGenerator
+public import FLT.Mazur.CyclicCharacteristicOrbit
+public import FLT.Mazur.CyclicCharacteristicOrbitCoequalizer
+public import FLT.Mazur.CyclicCharacteristicOrbitComparisons
+public import FLT.Mazur.CyclicCharacteristicOrbitFiniteQuotient
+public import FLT.Mazur.CyclicCharacteristicOrbitOpens
+public import FLT.Mazur.CyclicCharacteristicOrbitTopology
 public import FLT.Mazur.CyclicCharacteristicParameterFiniteType
 public import FLT.Mazur.CyclicCharacteristicParameterPresheaf
 public import FLT.Mazur.CyclicCharacteristicParameterSource
@@ -4307,9 +4318,14 @@ public import FLT.Mazur.CyclicCharacteristicQuotientUnmarkedDescent
 public import FLT.Mazur.CyclicCharacteristicRelabelSections
 public import FLT.Mazur.CyclicCharacteristicRelabeledPrescribedCover
 public import FLT.Mazur.CyclicCharacteristicRelabeledPrescribedSections
+public import FLT.Mazur.CyclicCharacteristicResidualProjection
+public import FLT.Mazur.CyclicCharacteristicResidualRelation
 public import FLT.Mazur.CyclicCharacteristicRetainedFaithfulness
 public import FLT.Mazur.CyclicCharacteristicRetainedFullParameter
 public import FLT.Mazur.CyclicCharacteristicRetainedParameter
+public import FLT.Mazur.CyclicCharacteristicRingedCoequalizer
+public import FLT.Mazur.CyclicCharacteristicRingedCofork
+public import FLT.Mazur.CyclicCharacteristicRingedDescent
 public import FLT.Mazur.CyclicCharacteristicSmoothUnmarkedClass
 public import FLT.Mazur.CyclicCharacteristicSmoothUnmarkedMorphism
 public import FLT.Mazur.CyclicCharacteristicTransitionCover
@@ -5128,6 +5144,7 @@ public import FLT.Mazur.EquivalenceRelationCompleteAdicDiscrepancy
 public import FLT.Mazur.EquivalenceRelationCompleteAdicSeparation
 public import FLT.Mazur.EquivalenceRelationCompleteAffineStages
 public import FLT.Mazur.EquivalenceRelationCompleteBoundaryCorrections
+public import FLT.Mazur.EquivalenceRelationCompleteCharacterLifts
 public import FLT.Mazur.EquivalenceRelationCompleteChartImage
 public import FLT.Mazur.EquivalenceRelationCompleteClosedLocus
 public import FLT.Mazur.EquivalenceRelationCompleteEndpointOrbit
@@ -5141,6 +5158,8 @@ public import FLT.Mazur.EquivalenceRelationCompleteInteriorFinite
 public import FLT.Mazur.EquivalenceRelationCompleteMixedCoefficients
 public import FLT.Mazur.EquivalenceRelationCompleteOpenCoefficients
 public import FLT.Mazur.EquivalenceRelationCompletePointLocus
+public import FLT.Mazur.EquivalenceRelationCompleteQuotientCorrections
+public import FLT.Mazur.EquivalenceRelationCompleteQuotientStages
 public import FLT.Mazur.EquivalenceRelationCompleteRestrictionNaturality
 public import FLT.Mazur.EquivalenceRelationCompleteScalarFiber
 public import FLT.Mazur.EquivalenceRelationCompleteSourceComparison
@@ -6712,6 +6731,8 @@ public import FLT.Mazur.HilbertSourceClosedBoundaryObstructions
 public import FLT.Mazur.HilbertSourceCoefficientwiseSurjectivity
 public import FLT.Mazur.HilbertSourceCompactRelation
 public import FLT.Mazur.HilbertSourceCompatibleModule
+public import FLT.Mazur.HilbertSourceCompleteCharacterLifts
+public import FLT.Mazur.HilbertSourceCompleteQuotientCorrections
 public import FLT.Mazur.HilbertSourceConstructedBadAffineCover
 public import FLT.Mazur.HilbertSourceConstructedBadPrimeLifts
 public import FLT.Mazur.HilbertSourceConstructedBoundaryUnitCover
