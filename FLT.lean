@@ -5315,6 +5315,7 @@ public import FLT.Mazur.FiniteGroupSpectrumAction
 public import FLT.Mazur.FiniteGroupTraceRetraction
 public import FLT.Mazur.FiniteHomologyFiberVanishing
 public import FLT.Mazur.FiniteIdealConditionDimension
+public import FLT.Mazur.FiniteIdealLocalizationDenominators
 public import FLT.Mazur.FiniteIntegerModelElementRelations
 public import FLT.Mazur.FiniteIntegerModelPullbacks
 public import FLT.Mazur.FiniteIntegerModelRelations
