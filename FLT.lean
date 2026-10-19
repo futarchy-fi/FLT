@@ -468,6 +468,7 @@ public import FLT.FreyCurve.Serre.VeluExactKernel
 public import FLT.FreyCurve.Serre.VeluFunctionField
 public import FLT.FreyCurve.Serre.VeluGenericAdditivity
 public import FLT.FreyCurve.Serre.VeluGenericChartMorphism
+public import FLT.FreyCurve.Serre.VeluGenericFieldChartComparison
 public import FLT.FreyCurve.Serre.VeluGenericFunctionFieldHom
 public import FLT.FreyCurve.Serre.VeluGenericQuadraticRelation
 public import FLT.FreyCurve.Serre.VeluGenericXField
@@ -504,7 +505,15 @@ public import FLT.FreyCurve.Serre.VeluPointCofinite
 public import FLT.FreyCurve.Serre.VeluPrimeKernel
 public import FLT.FreyCurve.Serre.VeluQuotient
 public import FLT.FreyCurve.Serre.VeluRational
+public import FLT.FreyCurve.Serre.VeluSchemeFunctionFieldHom
+public import FLT.FreyCurve.Serre.VeluSchemeRationalMap
 public import FLT.FreyCurve.Serre.VeluSmallRamification
+public import FLT.FreyCurve.Serre.VeluSourceChart
+public import FLT.FreyCurve.Serre.VeluSourceChartFractions
+public import FLT.FreyCurve.Serre.VeluSourceChartInjective
+public import FLT.FreyCurve.Serre.VeluSourceFractionField
+public import FLT.FreyCurve.Serre.VeluSourceGenericPoint
+public import FLT.FreyCurve.Serre.VeluSourceSchemeFunctionField
 public import FLT.FreyCurve.Serre.VeluSpecialization
 public import FLT.FreyCurve.Serre.VeluTranslation
 public import FLT.FreyCurve.TorsionQuotientWitness
@@ -2711,12 +2720,16 @@ public import FLT.Mazur.AffineBasisSumCoproduct
 public import FLT.Mazur.AffineBasisSumMaps
 public import FLT.Mazur.AffineBoundaryComponentEquations
 public import FLT.Mazur.AffineBoundaryComponentSpecialization
+public import FLT.Mazur.AffineBoundaryFlatScalarEquations
+public import FLT.Mazur.AffineBoundaryFppfScalarTests
 public import FLT.Mazur.AffineBoundaryGenericLocalTests
+public import FLT.Mazur.AffineBoundaryIndependentFlatTests
 public import FLT.Mazur.AffineBoundaryNilpotenceOpen
 public import FLT.Mazur.AffineBoundaryPrincipalTestCharts
 public import FLT.Mazur.AffineBoundaryScalarFiberEquations
 public import FLT.Mazur.AffineBoundaryScalarLocalProduct
 public import FLT.Mazur.AffineBoundaryScalarNilpotence
+public import FLT.Mazur.AffineBoundaryScalarObstructionGeometry
 public import FLT.Mazur.AffineBoundaryTestFactorization
 public import FLT.Mazur.AffineBoundaryTestGeneratorPoles
 public import FLT.Mazur.AffineBoundaryTestIdeal
@@ -6612,6 +6625,7 @@ public import FLT.Mazur.HilbertSourceFiniteCompletenessTests
 public import FLT.Mazur.HilbertSourceFiniteLinearOpenLifts
 public import FLT.Mazur.HilbertSourceFiniteMultiplierTests
 public import FLT.Mazur.HilbertSourceFiniteOpenNumerators
+public import FLT.Mazur.HilbertSourceFlatScalarEquations
 public import FLT.Mazur.HilbertSourceGeneratedLocalizedSurjectivity
 public import FLT.Mazur.HilbertSourceHigherScalarValuations
 public import FLT.Mazur.HilbertSourceLocalRankCeilingLifts
@@ -11214,6 +11228,7 @@ public import FLT.Mazur.ScalarImageOriginalGenerators
 public import FLT.Mazur.ScalarImageResidueGenerators
 public import FLT.Mazur.ScalarImageSourceGenerators
 public import FLT.Mazur.ScalarLocalizedIdealNilpotence
+public import FLT.Mazur.ScalarNilpotenceMinimalFiber
 public import FLT.Mazur.ScalarQuotientImagePresentation
 public import FLT.Mazur.ScalarQuotientImageReduction
 public import FLT.Mazur.ScalarQuotientResiduePresentation
@@ -11537,6 +11552,7 @@ public import FLT.Mazur.SchemeGeometricFiberH0Comparison
 public import FLT.Mazur.SchemeGlueDataMap
 public import FLT.Mazur.SchemeGlueDataMapCartesian
 public import FLT.Mazur.SchemeIdempotentSupport
+public import FLT.Mazur.SchemeImageClosureFlatBaseChange
 public import FLT.Mazur.SchemeIndependentCanonicalCocycle
 public import FLT.Mazur.SchemeIndependentCanonicalCompatibility
 public import FLT.Mazur.SchemeIndependentCanonicalCoordinate
