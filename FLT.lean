@@ -563,12 +563,15 @@ public import FLT.FreyCurve.Serre.VeluKernelScalarExtension
 public import FLT.FreyCurve.Serre.VeluKernelSectionComparison
 public import FLT.FreyCurve.Serre.VeluKernelTranslationInvariant
 public import FLT.FreyCurve.Serre.VeluLocalGenericKernel
+public import FLT.FreyCurve.Serre.VeluLocalGenericKernelGroup
 public import FLT.FreyCurve.Serre.VeluLocalGenericMorphism
 public import FLT.FreyCurve.Serre.VeluLocalGenericPointComparison
 public import FLT.FreyCurve.Serre.VeluLocalIntegralKernelClosure
 public import FLT.FreyCurve.Serre.VeluLocalIntegralKernelFinite
+public import FLT.FreyCurve.Serre.VeluLocalIntegralKernelOperations
 public import FLT.FreyCurve.Serre.VeluLocalIntegralKernelRecovery
 public import FLT.FreyCurve.Serre.VeluLocalIntegralModel
+public import FLT.FreyCurve.Serre.VeluLocalIntegralSmoothKernel
 public import FLT.FreyCurve.Serre.VeluLocalPointMorphism
 public import FLT.FreyCurve.Serre.VeluLocalPointTransport
 public import FLT.FreyCurve.Serre.VeluMap
@@ -3821,6 +3824,7 @@ public import FLT.Mazur.CartesianFiniteFibers
 public import FLT.Mazur.CartesianGroundInvariantNorm
 public import FLT.Mazur.CartesianHomMarkingParameter
 public import FLT.Mazur.CartesianIdentityFactorization
+public import FLT.Mazur.CartesianIdentityFiberGroup
 public import FLT.Mazur.CartesianIdentityFiniteNeighborhood
 public import FLT.Mazur.CartesianIdentityQuasiFinite
 public import FLT.Mazur.CartesianImageChartImmersion
@@ -4517,6 +4521,7 @@ public import FLT.Mazur.CyclicProductNormalization
 public import FLT.Mazur.CyclicTorsionPoint
 public import FLT.Mazur.DRFiberClassification
 public import FLT.Mazur.DedekindPointExtension
+public import FLT.Mazur.DenseClosedRestriction
 public import FLT.Mazur.DenseGroundEnvelopeInterior
 public import FLT.Mazur.DenseGroundHilbertFullInterior
 public import FLT.Mazur.DenseGroundHilbertPrincipal
@@ -15377,6 +15382,12 @@ public import FLT.Mazur.WeierstrassFrameNormalization
 public import FLT.Mazur.WeierstrassGeneralizedEllipticModel
 public import FLT.Mazur.WeierstrassGeneralizedPointedComparison
 public import FLT.Mazur.WeierstrassGeneralizedSmoothComparison
+public import FLT.Mazur.WeierstrassGenericClosureNegation
+public import FLT.Mazur.WeierstrassGenericClosureSmoothDensity
+public import FLT.Mazur.WeierstrassGenericClosureSmoothOperations
+public import FLT.Mazur.WeierstrassGenericClosureSmoothPart
+public import FLT.Mazur.WeierstrassGenericClosureSmoothRecovery
+public import FLT.Mazur.WeierstrassGenericClosureZero
 public import FLT.Mazur.WeierstrassGenericKernelClosure
 public import FLT.Mazur.WeierstrassGenericKernelRecovery
 public import FLT.Mazur.WeierstrassGenusOneFamily
@@ -15430,6 +15441,8 @@ public import FLT.Mazur.WeierstrassHorizontalFractionHomExt
 public import FLT.Mazur.WeierstrassHorizontalGlobalChartComparison
 public import FLT.Mazur.WeierstrassHorizontalLaurentBranches
 public import FLT.Mazur.WeierstrassHorizontalLineLaurentComparison
+public import FLT.Mazur.WeierstrassIdentityFiberGroup
+public import FLT.Mazur.WeierstrassIdentityFiberOperations
 public import FLT.Mazur.WeierstrassIncidenceCoefficientTransport
 public import FLT.Mazur.WeierstrassIncidenceResidueShearComparison
 public import FLT.Mazur.WeierstrassIncidenceShearConicBoundary
@@ -16839,6 +16852,7 @@ public import FLT.Mazur.WeierstrassUniversalComparisonRefinement
 public import FLT.Mazur.WeierstrassUniversalComparisonRingHom
 public import FLT.Mazur.WeierstrassUniversalComparisonSpecialization
 public import FLT.Mazur.WeierstrassUniversalTranslationSmoothLocus
+public import FLT.Mazur.WeierstrassValuationClosureSmoothFlat
 public import FLT.Mazur.WeierstrassValuationKernelClosureDegree
 public import FLT.Mazur.WeierstrassValuationKernelClosureFinite
 public import FLT.Mazur.WeierstrassValuationKernelClosureFlat
