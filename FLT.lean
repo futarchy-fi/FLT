@@ -6536,6 +6536,7 @@ public import FLT.Mazur.HilbertSourceOpenRelationLifts
 public import FLT.Mazur.HilbertSourceOriginalDomainComponents
 public import FLT.Mazur.HilbertSourceOriginalEquationNeighborhoods
 public import FLT.Mazur.HilbertSourceRankCutoffLifts
+public import FLT.Mazur.HilbertSourceRelationPowerClearing
 public import FLT.Mazur.HilbertSourceRelationRankStages
 public import FLT.Mazur.HilbertSourceResidualRankCompatibility
 public import FLT.Mazur.HilbertSourceResidualRankCorrections
@@ -6544,6 +6545,7 @@ public import FLT.Mazur.HilbertSourceResidualRankObstructions
 public import FLT.Mazur.HilbertSourceScalarLocalDetection
 public import FLT.Mazur.HilbertSourceScalarNilpotenceLifts
 public import FLT.Mazur.HilbertSourceScalarResidualStages
+public import FLT.Mazur.HilbertSourceUniformRelationMultiplier
 public import FLT.Mazur.HilbertSourceValuativeBoundaryObstructions
 public import FLT.Mazur.HilbertStableFrameBoundary
 public import FLT.Mazur.HilbertSubframeAffineOverlap
@@ -11482,6 +11484,7 @@ public import FLT.Mazur.SchemeMonoIdealPullback
 public import FLT.Mazur.SchemeMonoidUnitEvaluation
 public import FLT.Mazur.SchemeNaturalUnitLocus
 public import FLT.Mazur.SchemeNilpotentSectionDetection
+public import FLT.Mazur.SchemeNoetherianUniformKernelPower
 public import FLT.Mazur.SchemeNormIndependentGroundTests
 public import FLT.Mazur.SchemeNormalizedRecoveryOverlap
 public import FLT.Mazur.SchemeOpenChartRange
@@ -11548,6 +11551,7 @@ public import FLT.Mazur.SchemePullbackSquareComposition
 public import FLT.Mazur.SchemePullbackSquareIdentity
 public import FLT.Mazur.SchemePullbackSquareInversePasting
 public import FLT.Mazur.SchemePullbackSquarePasting
+public import FLT.Mazur.SchemeQuasiCompactOpenKernelPower
 public import FLT.Mazur.SchemeQuotientAffineBaseCoordinates
 public import FLT.Mazur.SchemeQuotientAffineFlatComparison
 public import FLT.Mazur.SchemeQuotientAffineFlatDescent
