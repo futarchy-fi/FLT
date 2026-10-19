@@ -12728,6 +12728,7 @@ public import FLT.Mazur.UnpointedLocalAcyclicFppfSheaf
 public import FLT.Mazur.UnramifiedSectionImmersion
 public import FLT.Mazur.UnrestrictedSmoothFamilyCartier
 public import FLT.Mazur.ValuationExactCenterIntegralTests
+public import FLT.Mazur.ValuationFieldFlatCover
 public import FLT.Mazur.ValuationLocalRefinement
 public import FLT.Mazur.ValuationPoleEquations
 public import FLT.Mazur.ValuationPoleReciprocal
