@@ -275,9 +275,9 @@ from the proved prime degree and packages the actual proper flat closure.
 This is a construction of the original integral closed scheme, not a claim
 that the quotient extends over an entire singular Weierstrass model.
 
-Still open: generic-fiber recovery for this closure, its required finiteness
-and group operations on suitable smooth/generalized models, extension of the
-original quotient, and the modular-point and specialization assembly.
+At the W453 checkpoint, generic-fiber recovery and finiteness were still open;
+W454 below constructs both. Group operations on suitable smooth/generalized
+models, extension of the original quotient, and modular specialization remain open.
 `FreyVeluTorsionExclusion` and removal of `Mazur_statement` remain open.
 G1's moduli and G2's Picard/Jacobian work remain separate.
 
@@ -288,3 +288,50 @@ and `WeierstrassCurve.Velu.exists_primeLocalIntegralKernelClosure`.
 Only `propext`, `Classical.choice` and `Quot.sound` are permitted.
 The local checker `python3 Scratch/MazurDW453/check.py` records checked-at time,
 source hashes, build/lint receipts, axiom audits and the merged-main root build.
+
+
+## Original generic recovery and finite flat degree-p closure (W454, 2026-10-19)
+
+`Mazur/FlatMonoSchematicClosure` proves that a closed subscheme is recovered by
+pulling back its schematic closure along a flat monomorphism. The comparison
+is both closed and schematically dense. `WeierstrassGenericKernelRecovery`
+applies this to the actual coefficient projection and constructs the generic
+fiber isomorphism, preserving both original projections.
+`Serre/VeluLocalIntegralKernelRecovery` retains the exact original prime kernel.
+
+`Mazur/ProperDenseFiniteSections` bounds each fiber by finitely many section
+values. `ProperSplitGenericFiniteness` constructs those sections by properness
+and obtains the finite point cover from a finite scheme over an algebraically
+closed field, without discarding nilpotents. `ValuationFieldFlatCover` constructs
+a dominating, faithfully flat valuation ring inside the specified field.
+`ProperValuationGenericFinite` retains the actual generic finite scheme under
+scalar change and proves descent of finite fibers. `ProperFlatValuationFinite`
+then proves that a proper flat valuation model with finite generic fiber is
+finite over its original base, without a splitting assumption there.
+
+`Mazur/SchematicDenseBezoutFlat` and `WeierstrassValuationKernelClosureFlat`
+prove flatness of the same schematic closure over arbitrary valuation rings.
+`WeierstrassValuationKernelClosureFinite` proves its finiteness over the original
+ring. `WeierstrassValuationKernelClosureDegree` recovers the original generic
+degree on every integral fiber over a Noetherian valuation base, hence a DVR.
+
+`Serre/VeluLocalIntegralKernelFinite` applies these constructions to the retained
+original prime kernel. It proves finite flatness and, over a Noetherian valuation
+base, finite locally free degree p. The original inclusion, rational target,
+variable changes and full generic-fiber square are retained. No invertibility
+of p on the integral base is assumed.
+
+Still open: construct subgroup operations on the required smooth/generalized
+integral models, extend the original quotient on those models, and connect the
+result to the actual prime-level modular point and specialization. No regular
+quotient map on the whole singular cubic is asserted. `FreyVeluTorsionExclusion`
+and removal of `Mazur_statement` remain open; G1/G2 retain their existing lanes.
+
+Read-only checks: individually build and lint
+`FLT.FreyCurve.Serre.VeluLocalIntegralKernelFinite`, and print axioms of
+`WeierstrassCurve.Velu.primeLocalIntegralKernelClosure_finite_flat`,
+`WeierstrassCurve.Velu.exists_primeLocalIntegralFiniteFlatKernel`, and
+`WeierstrassCurve.Velu.primeLocalIntegralKernelClosure_degree`.
+Only `propext`, `Classical.choice` and `Quot.sound` are permitted.
+`python3 Scratch/MazurDW454/check.py` reports checked-at time, hashes, individual
+probe/build/lint receipts, axiom audits, main ancestry and the root-build result.
