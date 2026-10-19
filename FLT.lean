@@ -15892,6 +15892,7 @@ public import FLT.Mazur.WeierstrassModificationChartIntersection
 public import FLT.Mazur.WeierstrassModificationFlat
 public import FLT.Mazur.WeierstrassModificationFractionOverlap
 public import FLT.Mazur.WeierstrassModificationGluing
+public import FLT.Mazur.WeierstrassModificationNegation
 public import FLT.Mazur.WeierstrassModificationOriginalOpen
 public import FLT.Mazur.WeierstrassModificationReesContraction
 public import FLT.Mazur.WeierstrassModificationReesCoordinates
