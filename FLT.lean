@@ -463,6 +463,7 @@ public import FLT.FreyCurve.Serre.VeluAffineNonkernelOpen
 public import FLT.FreyCurve.Serre.VeluAffinePointCoordinates
 public import FLT.FreyCurve.Serre.VeluAffinePointInjective
 public import FLT.FreyCurve.Serre.VeluAffinePointMorphism
+public import FLT.FreyCurve.Serre.VeluAffinePointNaturality
 public import FLT.FreyCurve.Serre.VeluAffineRationalRepresentative
 public import FLT.FreyCurve.Serre.VeluAffineRegularCoordinates
 public import FLT.FreyCurve.Serre.VeluAffineRegularMorphism
