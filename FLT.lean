@@ -4298,6 +4298,7 @@ public import FLT.Mazur.CyclicCharacteristicIntegerSourceLocallyRinged
 public import FLT.Mazur.CyclicCharacteristicInvariantAffineComparison
 public import FLT.Mazur.CyclicCharacteristicInvariantAffineCover
 public import FLT.Mazur.CyclicCharacteristicInvariantAffineCoverage
+public import FLT.Mazur.CyclicCharacteristicInvariantAffineSaturation
 public import FLT.Mazur.CyclicCharacteristicInvariantLocalization
 public import FLT.Mazur.CyclicCharacteristicInvariantLocallyRinged
 public import FLT.Mazur.CyclicCharacteristicInvariantPrincipal
