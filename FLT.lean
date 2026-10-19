@@ -4234,6 +4234,7 @@ public import FLT.Mazur.DirectImageBaseChangeUnit
 public import FLT.Mazur.DirectImageInjectives
 public import FLT.Mazur.DirectImageOpenBaseChange
 public import FLT.Mazur.DirectSumLocalization
+public import FLT.Mazur.DirectedAffineSpectrum
 public import FLT.Mazur.DisjointClosedCoproduct
 public import FLT.Mazur.DisjointGenericNeighborhoods
 public import FLT.Mazur.DisjointRestrictionIso
