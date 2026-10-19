@@ -6545,7 +6545,10 @@ public import FLT.Mazur.HilbertCompleteChartBoundaryTests
 public import FLT.Mazur.HilbertCompleteChartMixedVanishing
 public import FLT.Mazur.HilbertCompleteChartOriginalCertificates
 public import FLT.Mazur.HilbertCompleteChartOriginalSections
+public import FLT.Mazur.HilbertCompleteChartScalarCover
+public import FLT.Mazur.HilbertCompleteChartScalarFibers
 public import FLT.Mazur.HilbertCompleteChartScalarIso
+public import FLT.Mazur.HilbertCompleteChartScalarNeighborhood
 public import FLT.Mazur.HilbertCompleteFrameCardinality
 public import FLT.Mazur.HilbertCompleteGeometricTuple
 public import FLT.Mazur.HilbertCompleteInfinitesimalSources
@@ -11032,6 +11035,8 @@ public import FLT.Mazur.QuasiFiniteFppfDescent
 public import FLT.Mazur.QuasiFiniteGenericFiniteFree
 public import FLT.Mazur.QuasiFiniteGeometricPointIsolation
 public import FLT.Mazur.QuasiFiniteIdealQuotient
+public import FLT.Mazur.QuasiFiniteMinimalPrimeEquations
+public import FLT.Mazur.QuasiFiniteMinimalPrimeFiniteNeighborhood
 public import FLT.Mazur.QuasiFiniteSmoothLocalEquation
 public import FLT.Mazur.QuasiFiniteUniversalPointIsolation
 public import FLT.Mazur.QuasicoherentImageIdeal
@@ -11868,6 +11873,7 @@ public import FLT.Mazur.SchemeLineBundleCategory
 public import FLT.Mazur.SchemeLineCanonicalFunctor
 public import FLT.Mazur.SchemeLineDescentCategory
 public import FLT.Mazur.SchemeLineDescentRefinement
+public import FLT.Mazur.SchemeMinimalPrimeFinitePullback
 public import FLT.Mazur.SchemeModulePullbackOpenUnits
 public import FLT.Mazur.SchemeModulePullbackUnitSections
 public import FLT.Mazur.SchemeModulePullbackUnits
