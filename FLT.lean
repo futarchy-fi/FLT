@@ -15427,6 +15427,7 @@ public import FLT.Mazur.WeierstrassGenericClosureSmoothPart
 public import FLT.Mazur.WeierstrassGenericClosureSmoothRecovery
 public import FLT.Mazur.WeierstrassGenericClosureZero
 public import FLT.Mazur.WeierstrassGenericKernelClosure
+public import FLT.Mazur.WeierstrassGenericKernelRationalPoint
 public import FLT.Mazur.WeierstrassGenericKernelRecovery
 public import FLT.Mazur.WeierstrassGenericKernelSmoothMultiplication
 public import FLT.Mazur.WeierstrassGenericSmoothGroupComparison
