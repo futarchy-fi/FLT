@@ -11023,6 +11023,7 @@ public import FLT.Mazur.QuasiCoherentSchemePullback
 public import FLT.Mazur.QuasiCompactEtaleGeometricSections
 public import FLT.Mazur.QuasiCompactGenericFiniteOpen
 public import FLT.Mazur.QuasiCompactGenericFlatOpen
+public import FLT.Mazur.QuasiCompactMinimalPrimeFiniteOpen
 public import FLT.Mazur.QuasiFiniteCoefficientQuotient
 public import FLT.Mazur.QuasiFiniteFlatDescent
 public import FLT.Mazur.QuasiFiniteFppfDescent
