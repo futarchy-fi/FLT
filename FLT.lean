@@ -562,6 +562,7 @@ public import FLT.FreyCurve.Serre.VeluKernelRationalSubgroup
 public import FLT.FreyCurve.Serre.VeluKernelScalarExtension
 public import FLT.FreyCurve.Serre.VeluKernelSectionComparison
 public import FLT.FreyCurve.Serre.VeluKernelTranslationInvariant
+public import FLT.FreyCurve.Serre.VeluLocalDividedKernelFinite
 public import FLT.FreyCurve.Serre.VeluLocalGenericKernel
 public import FLT.FreyCurve.Serre.VeluLocalGenericKernelGroup
 public import FLT.FreyCurve.Serre.VeluLocalGenericMorphism
@@ -14197,6 +14198,7 @@ public import FLT.Mazur.WeierstrassDividedFourthZeroRestriction
 public import FLT.Mazur.WeierstrassDividedFullInfinityFactorRatioMap
 public import FLT.Mazur.WeierstrassDividedFullInfinityFactorRatioNaturality
 public import FLT.Mazur.WeierstrassDividedFullResidueAtlas
+public import FLT.Mazur.WeierstrassDividedGenericCurve
 public import FLT.Mazur.WeierstrassDividedGlobalActionAssociativity
 public import FLT.Mazur.WeierstrassDividedGlobalActionConstruction
 public import FLT.Mazur.WeierstrassDividedGlobalActionIdentity
@@ -14337,6 +14339,13 @@ public import FLT.Mazur.WeierstrassDividedInteriorHorizontalCyclicAction
 public import FLT.Mazur.WeierstrassDividedInteriorHorizontalCyclicInput
 public import FLT.Mazur.WeierstrassDividedInteriorHorizontalCyclicPair
 public import FLT.Mazur.WeierstrassDividedInteriorTensorOutputGeometry
+public import FLT.Mazur.WeierstrassDividedKernelClosure
+public import FLT.Mazur.WeierstrassDividedKernelContraction
+public import FLT.Mazur.WeierstrassDividedKernelFinite
+public import FLT.Mazur.WeierstrassDividedKernelSmoothEmbedding
+public import FLT.Mazur.WeierstrassDividedKernelSmoothRecovery
+public import FLT.Mazur.WeierstrassDividedKernelSmoothStep
+public import FLT.Mazur.WeierstrassDividedKernelStep
 public import FLT.Mazur.WeierstrassDividedLaurentRetainedIntersection
 public import FLT.Mazur.WeierstrassDividedLaurentTerminalAttachments
 public import FLT.Mazur.WeierstrassDividedLaurentTerminalEmbedding
