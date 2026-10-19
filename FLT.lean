@@ -488,6 +488,7 @@ public import FLT.FreyCurve.Serre.VeluGlobalClassicalComparison
 public import FLT.FreyCurve.Serre.VeluGlobalFinite
 public import FLT.FreyCurve.Serre.VeluGlobalGroupMorphism
 public import FLT.FreyCurve.Serre.VeluGlobalKernelIdentityOpen
+public import FLT.FreyCurve.Serre.VeluGlobalKernelPointsOpen
 public import FLT.FreyCurve.Serre.VeluGlobalMorphism
 public import FLT.FreyCurve.Serre.VeluGlobalPointKernel
 public import FLT.FreyCurve.Serre.VeluGlobalPointValues
