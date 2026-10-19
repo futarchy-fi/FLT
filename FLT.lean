@@ -576,6 +576,8 @@ public import FLT.FreyCurve.Serre.VeluLocalIntegralSmoothKernel
 public import FLT.FreyCurve.Serre.VeluLocalIntegralSmoothKernelGroup
 public import FLT.FreyCurve.Serre.VeluLocalIntegralSmoothKernelRetention
 public import FLT.FreyCurve.Serre.VeluLocalKernelFiniteSplitting
+public import FLT.FreyCurve.Serre.VeluLocalKernelPerfectSplitModel
+public import FLT.FreyCurve.Serre.VeluLocalKernelSplitModel
 public import FLT.FreyCurve.Serre.VeluLocalPointMorphism
 public import FLT.FreyCurve.Serre.VeluLocalPointTransport
 public import FLT.FreyCurve.Serre.VeluLocalResolvedKernelSmooth
@@ -3843,6 +3845,7 @@ public import FLT.Mazur.CartesianOpenFunctionSheaf
 public import FLT.Mazur.CartesianOpenIsoBaseChange
 public import FLT.Mazur.CartesianOpenIsoRestriction
 public import FLT.Mazur.CartesianOpenSectionMap
+public import FLT.Mazur.CartesianSectionCoverTower
 public import FLT.Mazur.CartesianSectionRestriction
 public import FLT.Mazur.CartesianStandardSmoothDimension
 public import FLT.Mazur.CartesianStructureComplexExactness
@@ -5612,12 +5615,15 @@ public import FLT.Mazur.FiniteEtaleGeometricSectionCover
 public import FLT.Mazur.FiniteEtaleGeometricSplitting
 public import FLT.Mazur.FiniteEtaleImageCover
 public import FLT.Mazur.FiniteEtaleIndependentGeometricTranslation
+public import FLT.Mazur.FiniteEtalePerfectDVRSplitting
 public import FLT.Mazur.FiniteEtaleRationalCover
 public import FLT.Mazur.FiniteEtaleSectionCoverNeighborhood
 public import FLT.Mazur.FiniteEtaleSectionEqualityNeighborhood
 public import FLT.Mazur.FiniteEtaleWholeFiberNeighborhood
 public import FLT.Mazur.FiniteEvaluationLocus
 public import FLT.Mazur.FiniteExtensionDVRModel
+public import FLT.Mazur.FiniteExtensionPerfectDVRModel
+public import FLT.Mazur.FiniteExtensionPerfectValuationSubring
 public import FLT.Mazur.FiniteExtensionValuationSubring
 public import FLT.Mazur.FiniteFamilySupportBaseChange
 public import FLT.Mazur.FiniteFamilySupportOpen
@@ -5730,6 +5736,7 @@ public import FLT.Mazur.FiniteIntegerModelElementRelations
 public import FLT.Mazur.FiniteIntegerModelPullbacks
 public import FLT.Mazur.FiniteIntegerModelRelations
 public import FLT.Mazur.FiniteIntegerModelUnits
+public import FLT.Mazur.FiniteIntegralResiduePerfect
 public import FLT.Mazur.FiniteIntersectionClosedCocycleModel
 public import FLT.Mazur.FiniteIntersectionClosedModel
 public import FLT.Mazur.FiniteIntersectionCocycleModel
@@ -15800,9 +15807,12 @@ public import FLT.Mazur.WeierstrassLeftSmoothYIdentity
 public import FLT.Mazur.WeierstrassLeftSmoothZeroGraph
 public import FLT.Mazur.WeierstrassLineCubicFactorization
 public import FLT.Mazur.WeierstrassLocalAdditionCurveComparison
+public import FLT.Mazur.WeierstrassLocalCoefficientExtension
 public import FLT.Mazur.WeierstrassLocalGenericKernel
 public import FLT.Mazur.WeierstrassLocalGenericProjection
+public import FLT.Mazur.WeierstrassLocalGenericTower
 public import FLT.Mazur.WeierstrassLocalKernelCoefficientSquare
+public import FLT.Mazur.WeierstrassLocalKernelTower
 public import FLT.Mazur.WeierstrassLowPoleCoordinates
 public import FLT.Mazur.WeierstrassMixedIntersectionScheme
 public import FLT.Mazur.WeierstrassMixedLeftReciprocalDomain
