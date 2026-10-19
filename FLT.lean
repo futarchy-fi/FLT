@@ -514,6 +514,7 @@ public import FLT.FreyCurve.Serre.VeluKernelInclusionMultiplication
 public import FLT.FreyCurve.Serre.VeluKernelMorphismComparison
 public import FLT.FreyCurve.Serre.VeluKernelPairDetection
 public import FLT.FreyCurve.Serre.VeluKernelParametrization
+public import FLT.FreyCurve.Serre.VeluKernelPointRegularity
 public import FLT.FreyCurve.Serre.VeluKernelProductCover
 public import FLT.FreyCurve.Serre.VeluKernelRationalCoordinates
 public import FLT.FreyCurve.Serre.VeluKernelRationalDegree
