@@ -15776,6 +15776,7 @@ public import FLT.Mazur.WeierstrassLineCubicFactorization
 public import FLT.Mazur.WeierstrassLocalAdditionCurveComparison
 public import FLT.Mazur.WeierstrassLocalGenericKernel
 public import FLT.Mazur.WeierstrassLocalGenericProjection
+public import FLT.Mazur.WeierstrassLocalKernelCoefficientSquare
 public import FLT.Mazur.WeierstrassLowPoleCoordinates
 public import FLT.Mazur.WeierstrassMixedIntersectionScheme
 public import FLT.Mazur.WeierstrassMixedLeftReciprocalDomain
