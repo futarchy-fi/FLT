@@ -484,6 +484,7 @@ public import FLT.FreyCurve.Serre.VeluGenericFunctionFieldHom
 public import FLT.FreyCurve.Serre.VeluGenericQuadraticRelation
 public import FLT.FreyCurve.Serre.VeluGenericXField
 public import FLT.FreyCurve.Serre.VeluGeometricKernelScheme
+public import FLT.FreyCurve.Serre.VeluGlobalMorphism
 public import FLT.FreyCurve.Serre.VeluHom
 public import FLT.FreyCurve.Serre.VeluIdentity
 public import FLT.FreyCurve.Serre.VeluInfinity
