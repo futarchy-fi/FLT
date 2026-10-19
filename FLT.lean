@@ -466,6 +466,9 @@ public import FLT.FreyCurve.Serre.VeluAffineRationalRepresentative
 public import FLT.FreyCurve.Serre.VeluAffineRegularCoordinates
 public import FLT.FreyCurve.Serre.VeluAffineRegularMorphism
 public import FLT.FreyCurve.Serre.VeluAffineSectionChart
+public import FLT.FreyCurve.Serre.VeluAffineSmoothCoordinates
+public import FLT.FreyCurve.Serre.VeluAffineTranslation
+public import FLT.FreyCurve.Serre.VeluCofiniteFunctionEquality
 public import FLT.FreyCurve.Serre.VeluCoordinates
 public import FLT.FreyCurve.Serre.VeluDifferential
 public import FLT.FreyCurve.Serre.VeluDivisionIntegrality
@@ -505,11 +508,13 @@ public import FLT.FreyCurve.Serre.VeluKernelBaseChangeScheme
 public import FLT.FreyCurve.Serre.VeluKernelClosedDescent
 public import FLT.FreyCurve.Serre.VeluKernelDescentAlgebra
 public import FLT.FreyCurve.Serre.VeluKernelGaloisLabels
+public import FLT.FreyCurve.Serre.VeluKernelGenericMorphismInvariant
 public import FLT.FreyCurve.Serre.VeluKernelGeometricComparison
 public import FLT.FreyCurve.Serre.VeluKernelInclusionMultiplication
 public import FLT.FreyCurve.Serre.VeluKernelMorphismComparison
 public import FLT.FreyCurve.Serre.VeluKernelPairDetection
 public import FLT.FreyCurve.Serre.VeluKernelParametrization
+public import FLT.FreyCurve.Serre.VeluKernelPointRegularity
 public import FLT.FreyCurve.Serre.VeluKernelProductCover
 public import FLT.FreyCurve.Serre.VeluKernelRationalCoordinates
 public import FLT.FreyCurve.Serre.VeluKernelRationalDegree
@@ -520,6 +525,7 @@ public import FLT.FreyCurve.Serre.VeluKernelRationalMultiplication
 public import FLT.FreyCurve.Serre.VeluKernelRationalSubgroup
 public import FLT.FreyCurve.Serre.VeluKernelScalarExtension
 public import FLT.FreyCurve.Serre.VeluKernelSectionComparison
+public import FLT.FreyCurve.Serre.VeluKernelTranslationInvariant
 public import FLT.FreyCurve.Serre.VeluLocalIntegralModel
 public import FLT.FreyCurve.Serre.VeluMap
 public import FLT.FreyCurve.Serre.VeluOrdinary
@@ -530,6 +536,7 @@ public import FLT.FreyCurve.Serre.VeluRational
 public import FLT.FreyCurve.Serre.VeluSchemeFunctionFieldHom
 public import FLT.FreyCurve.Serre.VeluSchemeRationalMap
 public import FLT.FreyCurve.Serre.VeluSmallRamification
+public import FLT.FreyCurve.Serre.VeluSmoothPointComparison
 public import FLT.FreyCurve.Serre.VeluSourceChart
 public import FLT.FreyCurve.Serre.VeluSourceChartFractions
 public import FLT.FreyCurve.Serre.VeluSourceChartInjective
@@ -539,7 +546,13 @@ public import FLT.FreyCurve.Serre.VeluSourceInfinityChart
 public import FLT.FreyCurve.Serre.VeluSourceLocalization
 public import FLT.FreyCurve.Serre.VeluSourceSchemeFunctionField
 public import FLT.FreyCurve.Serre.VeluSpecialization
+public import FLT.FreyCurve.Serre.VeluTranslatedInfinityGeneric
+public import FLT.FreyCurve.Serre.VeluTranslatedInfinityOpen
+public import FLT.FreyCurve.Serre.VeluTranslatedInfinityRepresentative
 public import FLT.FreyCurve.Serre.VeluTranslation
+public import FLT.FreyCurve.Serre.VeluTranslationFieldCoordinates
+public import FLT.FreyCurve.Serre.VeluTranslationFieldHom
+public import FLT.FreyCurve.Serre.VeluTranslationGenericCoordinates
 public import FLT.FreyCurve.TorsionQuotientWitness
 public import FLT.FreyCurve.VeluIntegralAway
 public import FLT.FreyCurve.VeluLocalIntegralTarget
