@@ -476,6 +476,7 @@ public import FLT.FreyCurve.Serre.VeluCoefficientOverlap
 public import FLT.FreyCurve.Serre.VeluCoefficientOverlapCover
 public import FLT.FreyCurve.Serre.VeluCofiniteFunctionEquality
 public import FLT.FreyCurve.Serre.VeluCoordinates
+public import FLT.FreyCurve.Serre.VeluDescendedDegree
 public import FLT.FreyCurve.Serre.VeluDescendedMorphism
 public import FLT.FreyCurve.Serre.VeluDifferential
 public import FLT.FreyCurve.Serre.VeluDivisionIntegrality
