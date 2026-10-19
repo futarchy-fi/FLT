@@ -3821,6 +3821,7 @@ public import FLT.Mazur.CartesianFiniteFibers
 public import FLT.Mazur.CartesianGroundInvariantNorm
 public import FLT.Mazur.CartesianHomMarkingParameter
 public import FLT.Mazur.CartesianIdentityFactorization
+public import FLT.Mazur.CartesianIdentityFiberGroup
 public import FLT.Mazur.CartesianIdentityFiniteNeighborhood
 public import FLT.Mazur.CartesianIdentityQuasiFinite
 public import FLT.Mazur.CartesianImageChartImmersion
