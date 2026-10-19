@@ -4254,6 +4254,7 @@ public import FLT.Mazur.CyclicCharacteristicAffineResidualPrincipal
 public import FLT.Mazur.CyclicCharacteristicAffineResidualRelabel
 public import FLT.Mazur.CyclicCharacteristicAffineResidualRingedComparison
 public import FLT.Mazur.CyclicCharacteristicAffineResidualSections
+public import FLT.Mazur.CyclicCharacteristicAffineResidualSpectrumTests
 public import FLT.Mazur.CyclicCharacteristicAffineResidualTests
 public import FLT.Mazur.CyclicCharacteristicAffineResidualTopology
 public import FLT.Mazur.CyclicCharacteristicAffineSectionEquivalence
