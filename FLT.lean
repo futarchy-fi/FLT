@@ -5317,6 +5317,7 @@ public import FLT.Mazur.EquivalenceRelationInvariantBoundaryAction
 public import FLT.Mazur.EquivalenceRelationInvariantCharacterArrows
 public import FLT.Mazur.EquivalenceRelationInvariantCharacterFibers
 public import FLT.Mazur.EquivalenceRelationInvariantRestriction
+public import FLT.Mazur.EquivalenceRelationIrreducibleCompleteCharacters
 public import FLT.Mazur.EquivalenceRelationJointAffineCover
 public import FLT.Mazur.EquivalenceRelationJointBoundaryCover
 public import FLT.Mazur.EquivalenceRelationJointChartBoundaryCover
