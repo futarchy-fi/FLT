@@ -11557,6 +11557,7 @@ public import FLT.Mazur.RingedSpaceIdealLocus
 public import FLT.Mazur.ScalarAlgebraicClosureTests
 public import FLT.Mazur.ScalarClosedGeometricLifts
 public import FLT.Mazur.ScalarClosedImageCoverage
+public import FLT.Mazur.ScalarClosedPrincipalBranches
 public import FLT.Mazur.ScalarCohomology
 public import FLT.Mazur.ScalarCompatibleIntegerModel
 public import FLT.Mazur.ScalarComponentRankCeiling
