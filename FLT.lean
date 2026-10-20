@@ -14125,9 +14125,12 @@ public import FLT.Mazur.WeierstrassDividedConicHorizontalIntersectionAllDepths
 public import FLT.Mazur.WeierstrassDividedConicParameterTransport
 public import FLT.Mazur.WeierstrassDividedCyclicSmoothParameter
 public import FLT.Mazur.WeierstrassDividedDepthAffine
+public import FLT.Mazur.WeierstrassDividedDepthAvailability
 public import FLT.Mazur.WeierstrassDividedDepthBoundary
 public import FLT.Mazur.WeierstrassDividedDepthBoundaryPullback
 public import FLT.Mazur.WeierstrassDividedDepthBranchDivisibility
+public import FLT.Mazur.WeierstrassDividedDepthBranchLift
+public import FLT.Mazur.WeierstrassDividedDepthBranchOutput
 public import FLT.Mazur.WeierstrassDividedDepthCenterNormalization
 public import FLT.Mazur.WeierstrassDividedDepthCenterSmooth
 public import FLT.Mazur.WeierstrassDividedDepthData
@@ -14325,6 +14328,10 @@ public import FLT.Mazur.WeierstrassDividedFiniteAffineProper
 public import FLT.Mazur.WeierstrassDividedFiniteAtlas
 public import FLT.Mazur.WeierstrassDividedFiniteChartStructure
 public import FLT.Mazur.WeierstrassDividedFiniteContraction
+public import FLT.Mazur.WeierstrassDividedFiniteDeeperBranchLift
+public import FLT.Mazur.WeierstrassDividedFiniteDeeperBranchNodal
+public import FLT.Mazur.WeierstrassDividedFiniteDeeperBranchPartial
+public import FLT.Mazur.WeierstrassDividedFiniteDeeperBranchTerminal
 public import FLT.Mazur.WeierstrassDividedFiniteExteriorPullback
 public import FLT.Mazur.WeierstrassDividedFiniteFlat
 public import FLT.Mazur.WeierstrassDividedFiniteGlobalNegation
@@ -14562,6 +14569,8 @@ public import FLT.Mazur.WeierstrassDividedHorizontalCoefficientPointAction
 public import FLT.Mazur.WeierstrassDividedHorizontalCyclicInput
 public import FLT.Mazur.WeierstrassDividedHorizontalCyclicPair
 public import FLT.Mazur.WeierstrassDividedHorizontalFinitePointAction
+public import FLT.Mazur.WeierstrassDividedHorizontalSmooth
+public import FLT.Mazur.WeierstrassDividedHorizontalTerminal
 public import FLT.Mazur.WeierstrassDividedIncidenceNormalization
 public import FLT.Mazur.WeierstrassDividedInfinityLaurentChart
 public import FLT.Mazur.WeierstrassDividedInfinityLaurentGluing
@@ -14668,6 +14677,7 @@ public import FLT.Mazur.WeierstrassDividedMixedKernelPoints
 public import FLT.Mazur.WeierstrassDividedNilpotentEarlierTerminal
 public import FLT.Mazur.WeierstrassDividedNilpotentInfinity
 public import FLT.Mazur.WeierstrassDividedNilpotentNonadjacentIntersection
+public import FLT.Mazur.WeierstrassDividedNodalDepthAvailability
 public import FLT.Mazur.WeierstrassDividedNonadjacentGlobalIntersection
 public import FLT.Mazur.WeierstrassDividedNonadjacentTensorIntersection
 public import FLT.Mazur.WeierstrassDividedOddCompleteClosedComparison
@@ -14808,6 +14818,8 @@ public import FLT.Mazur.WeierstrassDividedPairSecant
 public import FLT.Mazur.WeierstrassDividedPairSecantEvaluation
 public import FLT.Mazur.WeierstrassDividedPairSecantGeometry
 public import FLT.Mazur.WeierstrassDividedPairTangentGeometry
+public import FLT.Mazur.WeierstrassDividedPartialSmooth
+public import FLT.Mazur.WeierstrassDividedPlanePresentation
 public import FLT.Mazur.WeierstrassDividedPolygonAdjacencyClassification
 public import FLT.Mazur.WeierstrassDividedPolygonClosingCriterion
 public import FLT.Mazur.WeierstrassDividedPolygonComparisonCharts
