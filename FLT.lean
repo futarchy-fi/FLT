@@ -14998,6 +14998,7 @@ public import FLT.Mazur.WeierstrassDividedRevisedTerminalReflection
 public import FLT.Mazur.WeierstrassDividedRevisedTwistedIso
 public import FLT.Mazur.WeierstrassDividedSecantComparison
 public import FLT.Mazur.WeierstrassDividedSecantFormula
+public import FLT.Mazur.WeierstrassDividedSecantLeftOverlap
 public import FLT.Mazur.WeierstrassDividedSecantOriginalAction
 public import FLT.Mazur.WeierstrassDividedSecantOverlapProjections
 public import FLT.Mazur.WeierstrassDividedSecantPointGeometry
