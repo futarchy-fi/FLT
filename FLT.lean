@@ -12272,6 +12272,7 @@ public import FLT.Mazur.SchemeScalarPrincipalNeighborhoodFamily
 public import FLT.Mazur.SchemeScalarRelationPullback
 public import FLT.Mazur.SchemeScalarRelationTransition
 public import FLT.Mazur.SchemeScalarResidueImage
+public import FLT.Mazur.SchemeScalarRestrictedTests
 public import FLT.Mazur.SchemeScalarSourceComparison
 public import FLT.Mazur.SchemeSectionFamilyProduct
 public import FLT.Mazur.SchemeSectionFrameCompatibility
