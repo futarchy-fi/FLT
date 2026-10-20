@@ -14576,6 +14576,7 @@ public import FLT.Mazur.WeierstrassDividedFiniteReindexedSmoothSecant
 public import FLT.Mazur.WeierstrassDividedFiniteResidueNodes
 public import FLT.Mazur.WeierstrassDividedFiniteResidueOverlap
 public import FLT.Mazur.WeierstrassDividedFiniteSecantInput
+public import FLT.Mazur.WeierstrassDividedFiniteSmoothChart
 public import FLT.Mazur.WeierstrassDividedFiniteSmoothInput
 public import FLT.Mazur.WeierstrassDividedFiniteSmoothOpen
 public import FLT.Mazur.WeierstrassDividedFiniteSmoothSecant
