@@ -3603,6 +3603,7 @@ public import FLT.Mazur.ArithmeticOneGonRoots
 public import FLT.Mazur.ArithmeticOneGonRotations
 public import FLT.Mazur.ArithmeticOneGonSubgroupAmple
 public import FLT.Mazur.ArithmeticOneGonTorus
+public import FLT.Mazur.ArithmeticOneGonTorusBaseChange
 public import FLT.Mazur.ArithmeticRootsOfUnitySections
 public import FLT.Mazur.ArithmeticTorusPoints
 public import FLT.Mazur.ArtinianClosedFiberFunctions
