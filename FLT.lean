@@ -8574,6 +8574,7 @@ public import FLT.Mazur.OneGonAdicSmoothFactorRecovery
 public import FLT.Mazur.OneGonAdicSmoothGroupRecovery
 public import FLT.Mazur.OneGonAdicSmoothModelCharacters
 public import FLT.Mazur.OneGonAdicSmoothModelClosed
+public import FLT.Mazur.OneGonAdicSmoothModelHom
 public import FLT.Mazur.OneGonAdicSmoothModelRecovery
 public import FLT.Mazur.OneGonAdicSmoothModelReduction
 public import FLT.Mazur.OneGonAdicSmoothProjection
