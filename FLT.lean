@@ -14783,6 +14783,7 @@ public import FLT.Mazur.WeierstrassDividedNodalBranchCommonOutput
 public import FLT.Mazur.WeierstrassDividedNodalDepthAvailability
 public import FLT.Mazur.WeierstrassDividedNodalNegativeBranchContraction
 public import FLT.Mazur.WeierstrassDividedNodalNegativeBranchOutput
+public import FLT.Mazur.WeierstrassDividedNodalSecantCases
 public import FLT.Mazur.WeierstrassDividedNodalSecondNormalization
 public import FLT.Mazur.WeierstrassDividedNodalTangentBranchCoverage
 public import FLT.Mazur.WeierstrassDividedNonadjacentGlobalIntersection
