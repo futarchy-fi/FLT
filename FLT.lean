@@ -15212,6 +15212,7 @@ public import FLT.Mazur.WeierstrassDividedTangentBranchResidueUnit
 public import FLT.Mazur.WeierstrassDividedTangentBranchScheme
 public import FLT.Mazur.WeierstrassDividedTangentBranchSource
 public import FLT.Mazur.WeierstrassDividedTangentBranchSpecialization
+public import FLT.Mazur.WeierstrassDividedTangentBranchTerminalCoverage
 public import FLT.Mazur.WeierstrassDividedTangentCech
 public import FLT.Mazur.WeierstrassDividedTangentCechIso
 public import FLT.Mazur.WeierstrassDividedTangentConjugation
