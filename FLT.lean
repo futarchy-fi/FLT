@@ -14779,6 +14779,7 @@ public import FLT.Mazur.WeierstrassDividedNegativeTangentSlope
 public import FLT.Mazur.WeierstrassDividedNilpotentEarlierTerminal
 public import FLT.Mazur.WeierstrassDividedNilpotentInfinity
 public import FLT.Mazur.WeierstrassDividedNilpotentNonadjacentIntersection
+public import FLT.Mazur.WeierstrassDividedNodalBranchCoefficients
 public import FLT.Mazur.WeierstrassDividedNodalBranchCommonOutput
 public import FLT.Mazur.WeierstrassDividedNodalDepthAvailability
 public import FLT.Mazur.WeierstrassDividedNodalNegativeBranchContraction
