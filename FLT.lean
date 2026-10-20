@@ -8464,6 +8464,7 @@ public import FLT.Mazur.OneGonProductNormalization
 public import FLT.Mazur.OneGonProductTorus
 public import FLT.Mazur.OneGonQuotient
 public import FLT.Mazur.OneGonRetainedFiberReduced
+public import FLT.Mazur.OneGonRootsOfUnityPrimePowerCyclic
 public import FLT.Mazur.OneGonRootsOfUnitySubgroup
 public import FLT.Mazur.OneGonScalarExtension
 public import FLT.Mazur.OneGonSeparated
