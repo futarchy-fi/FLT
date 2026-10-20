@@ -14223,6 +14223,7 @@ public import FLT.Mazur.WeierstrassDividedFiniteProper
 public import FLT.Mazur.WeierstrassDividedFiniteResidueNodes
 public import FLT.Mazur.WeierstrassDividedFiniteResidueOverlap
 public import FLT.Mazur.WeierstrassDividedFiniteSecantInput
+public import FLT.Mazur.WeierstrassDividedFiniteSmoothInput
 public import FLT.Mazur.WeierstrassDividedFiniteSmoothOpen
 public import FLT.Mazur.WeierstrassDividedFiniteStageRetention
 public import FLT.Mazur.WeierstrassDividedFiniteTensorAtlas
