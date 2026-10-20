@@ -14172,6 +14172,7 @@ public import FLT.Mazur.WeierstrassDividedFiniteContraction
 public import FLT.Mazur.WeierstrassDividedFiniteExteriorPullback
 public import FLT.Mazur.WeierstrassDividedFiniteFlat
 public import FLT.Mazur.WeierstrassDividedFiniteGlobalNegation
+public import FLT.Mazur.WeierstrassDividedFiniteGlobalNegationStep
 public import FLT.Mazur.WeierstrassDividedFiniteIteration
 public import FLT.Mazur.WeierstrassDividedFiniteLineBoundary
 public import FLT.Mazur.WeierstrassDividedFiniteLineBoundaryGeometry
