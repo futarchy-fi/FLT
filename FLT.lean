@@ -11005,6 +11005,7 @@ public import FLT.Mazur.ProperAmpleFiberEnvelope
 public import FLT.Mazur.ProperAmpleFiberModel
 public import FLT.Mazur.ProperAmpleFiberNeighborhood
 public import FLT.Mazur.ProperAmpleFiberNoetherian
+public import FLT.Mazur.ProperAmpleFiberOpen
 public import FLT.Mazur.ProperAmpleRetainedChartCover
 public import FLT.Mazur.ProperAmpleRetainedProjIso
 public import FLT.Mazur.ProperAmpleSectionAffine
