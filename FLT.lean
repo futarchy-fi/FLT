@@ -6104,6 +6104,7 @@ public import FLT.Mazur.FiniteRelationPrescribedLiftCoefficients
 public import FLT.Mazur.FiniteRelationPrescribedLifting
 public import FLT.Mazur.FiniteRelationPrincipalBoundaryCover
 public import FLT.Mazur.FiniteRelationPrincipalCoverModels
+public import FLT.Mazur.FiniteRelationPrincipalHomogeneousCorrections
 public import FLT.Mazur.FiniteRelationPrincipalPathQuotients
 public import FLT.Mazur.FiniteRelationPrincipalProjection
 public import FLT.Mazur.FiniteRelationSpectrum
