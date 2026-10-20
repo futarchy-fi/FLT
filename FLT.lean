@@ -14805,6 +14805,7 @@ public import FLT.Mazur.WeierstrassDividedNilpotentNonadjacentIntersection
 public import FLT.Mazur.WeierstrassDividedNodalBranchCoefficients
 public import FLT.Mazur.WeierstrassDividedNodalBranchCommonOutput
 public import FLT.Mazur.WeierstrassDividedNodalBranchRefinementDepth
+public import FLT.Mazur.WeierstrassDividedNodalBranchTerminalConstant
 public import FLT.Mazur.WeierstrassDividedNodalDepthAvailability
 public import FLT.Mazur.WeierstrassDividedNodalFirstBranchCommonOutput
 public import FLT.Mazur.WeierstrassDividedNodalFirstBranchOutput
