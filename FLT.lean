@@ -15057,6 +15057,7 @@ public import FLT.Mazur.WeierstrassDividedInteriorHorizontalCyclicInput
 public import FLT.Mazur.WeierstrassDividedInteriorHorizontalCyclicPair
 public import FLT.Mazur.WeierstrassDividedInteriorTensorOutputGeometry
 public import FLT.Mazur.WeierstrassDividedIntermediateDeepAmbientOverlap
+public import FLT.Mazur.WeierstrassDividedIntermediateQuadrupleAmbientOverlap
 public import FLT.Mazur.WeierstrassDividedKernelClosure
 public import FLT.Mazur.WeierstrassDividedKernelClosureNegation
 public import FLT.Mazur.WeierstrassDividedKernelContraction
