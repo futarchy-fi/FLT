@@ -14580,6 +14580,7 @@ public import FLT.Mazur.WeierstrassDividedDepthNegationBoundaries
 public import FLT.Mazur.WeierstrassDividedDepthOriginalOpen
 public import FLT.Mazur.WeierstrassDividedDepthStructure
 public import FLT.Mazur.WeierstrassDividedDepthYBoundary
+public import FLT.Mazur.WeierstrassDividedDistinctOlderAddition
 public import FLT.Mazur.WeierstrassDividedEarlierTerminalSeparation
 public import FLT.Mazur.WeierstrassDividedEqualityComponentContraction
 public import FLT.Mazur.WeierstrassDividedEqualityComponentEndpoints
