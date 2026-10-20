@@ -37,7 +37,7 @@ instance normalizedCurve_smooth (b : Bool) : Smooth (normalizedCurve n b).curve.
   inferInstanceAs (Smooth (pullback.snd (curve n b).curve.hom (normalizedInclusion n b)))
 
 /-- Every actual normalized parameter has a smooth whole curve over its test scheme. -/
-instance normalizedCurve_baseChange_smooth {T : Scheme} (b : Bool)
+instance normalizedTestCurve_smooth {T : Scheme} (b : Bool)
     (q : T ⟶ normalizedLocus n b) : Smooth ((normalizedCurve n b).baseChange q).curve.hom :=
   inferInstanceAs (Smooth (pullback.snd (normalizedCurve n b).curve.hom q))
 
