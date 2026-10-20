@@ -8552,6 +8552,9 @@ public import FLT.Mazur.OneGonAdicCanonicalSubgroup
 public import FLT.Mazur.OneGonAdicCharacterAffineEffectivity
 public import FLT.Mazur.OneGonAdicCharacterChartTower
 public import FLT.Mazur.OneGonAdicCharacterClosedImmersion
+public import FLT.Mazur.OneGonAdicCharacterCoefficientEffectivity
+public import FLT.Mazur.OneGonAdicCharacterCoefficientSquares
+public import FLT.Mazur.OneGonAdicCharacterCoefficientTower
 public import FLT.Mazur.OneGonAdicCharacterCoordinates
 public import FLT.Mazur.OneGonAdicCharacterEffectivityUnique
 public import FLT.Mazur.OneGonAdicCharacterGroupEffectivity
@@ -8564,6 +8567,7 @@ public import FLT.Mazur.OneGonAdicCharacterStructure
 public import FLT.Mazur.OneGonAdicCharacterTower
 public import FLT.Mazur.OneGonAdicChartProjection
 public import FLT.Mazur.OneGonAdicChartRestriction
+public import FLT.Mazur.OneGonAdicCoefficientStages
 public import FLT.Mazur.OneGonAdicFiniteCoefficientBase
 public import FLT.Mazur.OneGonAdicFiniteSmoothStage
 public import FLT.Mazur.OneGonAdicFiniteSubgroup
@@ -8575,6 +8579,7 @@ public import FLT.Mazur.OneGonAdicPuncturedCoarse
 public import FLT.Mazur.OneGonAdicPuncturedModuli
 public import FLT.Mazur.OneGonAdicRecoveredSmoothFactor
 public import FLT.Mazur.OneGonAdicReductionCartesian
+public import FLT.Mazur.OneGonAdicSmoothCoefficientSquares
 public import FLT.Mazur.OneGonAdicSmoothFactorRecovery
 public import FLT.Mazur.OneGonAdicSmoothGroupRecovery
 public import FLT.Mazur.OneGonAdicSmoothModelAmple
@@ -13628,6 +13633,7 @@ public import FLT.Mazur.WeierstrassChangeGeneralizedNaturality
 public import FLT.Mazur.WeierstrassChangeParameter
 public import FLT.Mazur.WeierstrassChangePointedGeneralizedIso
 public import FLT.Mazur.WeierstrassChangeSubgroupScheme
+public import FLT.Mazur.WeierstrassCharacterCoefficientHom
 public import FLT.Mazur.WeierstrassCharacterCoefficientNaturality
 public import FLT.Mazur.WeierstrassChartArithmeticRestriction
 public import FLT.Mazur.WeierstrassChartBaseChange
@@ -14470,6 +14476,7 @@ public import FLT.Mazur.WeierstrassDividedArithmeticZeroStandardEndpoints
 public import FLT.Mazur.WeierstrassDividedArithmeticZeroStandardRestriction
 public import FLT.Mazur.WeierstrassDividedArithmeticZeroTerminalCompatibility
 public import FLT.Mazur.WeierstrassDividedArithmeticZeroUniversal
+public import FLT.Mazur.WeierstrassDividedAtlasPairFormulaCoverage
 public import FLT.Mazur.WeierstrassDividedAtlasPairFormulaInput
 public import FLT.Mazur.WeierstrassDividedAtlasPairIntermediateAddition
 public import FLT.Mazur.WeierstrassDividedAtlasPairIntermediateFormulas
@@ -14601,6 +14608,7 @@ public import FLT.Mazur.WeierstrassDividedDepthNegationBoundaries
 public import FLT.Mazur.WeierstrassDividedDepthOriginalOpen
 public import FLT.Mazur.WeierstrassDividedDepthStructure
 public import FLT.Mazur.WeierstrassDividedDepthYBoundary
+public import FLT.Mazur.WeierstrassDividedDistinctOlderAddition
 public import FLT.Mazur.WeierstrassDividedEarlierTerminalSeparation
 public import FLT.Mazur.WeierstrassDividedEqualityComponentContraction
 public import FLT.Mazur.WeierstrassDividedEqualityComponentEndpoints
@@ -15092,6 +15100,7 @@ public import FLT.Mazur.WeierstrassDividedInitialExteriorLaurent
 public import FLT.Mazur.WeierstrassDividedInitialExteriorNegation
 public import FLT.Mazur.WeierstrassDividedInitialExteriorOriented
 public import FLT.Mazur.WeierstrassDividedInitialExteriorProjective
+public import FLT.Mazur.WeierstrassDividedInitialFormulaCoordinates
 public import FLT.Mazur.WeierstrassDividedInitialGlobalResidueNodes
 public import FLT.Mazur.WeierstrassDividedInitialGlobalSections
 public import FLT.Mazur.WeierstrassDividedInitialGlobalStep
@@ -15109,6 +15118,7 @@ public import FLT.Mazur.WeierstrassDividedInitialLineBoundary
 public import FLT.Mazur.WeierstrassDividedInitialLineIntersection
 public import FLT.Mazur.WeierstrassDividedInitialNodeBranches
 public import FLT.Mazur.WeierstrassDividedInitialNodeHomExt
+public import FLT.Mazur.WeierstrassDividedInitialOlderAddition
 public import FLT.Mazur.WeierstrassDividedInitialParameterIntersection
 public import FLT.Mazur.WeierstrassDividedInitialParameterOverlap
 public import FLT.Mazur.WeierstrassDividedInitialPointActionPropagation
@@ -15134,6 +15144,7 @@ public import FLT.Mazur.WeierstrassDividedInitialTensorIntersection
 public import FLT.Mazur.WeierstrassDividedInitialTensorPointAction
 public import FLT.Mazur.WeierstrassDividedInitialTensorSlopeGeometry
 public import FLT.Mazur.WeierstrassDividedInitialTensorSlopeLaurent
+public import FLT.Mazur.WeierstrassDividedInitialTerminalAddition
 public import FLT.Mazur.WeierstrassDividedInitialZeroInfinity
 public import FLT.Mazur.WeierstrassDividedInitialZeroLaurent
 public import FLT.Mazur.WeierstrassDividedInitialZeroSlopeChart
@@ -15768,6 +15779,7 @@ public import FLT.Mazur.WeierstrassDividedRetainedInitialBoundary
 public import FLT.Mazur.WeierstrassDividedRetainedLineAt
 public import FLT.Mazur.WeierstrassDividedRetainedLineSeparation
 public import FLT.Mazur.WeierstrassDividedRetainedNormalizedAdjacent
+public import FLT.Mazur.WeierstrassDividedRetainedOlderCoordinates
 public import FLT.Mazur.WeierstrassDividedRetainedPolygonLabels
 public import FLT.Mazur.WeierstrassDividedRetainedPolygonMaps
 public import FLT.Mazur.WeierstrassDividedRetainedPolygonNaturality
@@ -17594,6 +17606,7 @@ public import FLT.Mazur.WeierstrassSmoothChartCompatibility
 public import FLT.Mazur.WeierstrassSmoothCoefficientAddition
 public import FLT.Mazur.WeierstrassSmoothCoefficientBaseGroup
 public import FLT.Mazur.WeierstrassSmoothCoefficientCartesian
+public import FLT.Mazur.WeierstrassSmoothCoefficientComposition
 public import FLT.Mazur.WeierstrassSmoothCoefficientGroupIso
 public import FLT.Mazur.WeierstrassSmoothCoefficientOperations
 public import FLT.Mazur.WeierstrassSmoothCoefficientPointAddition
