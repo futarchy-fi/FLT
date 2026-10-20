@@ -7292,6 +7292,7 @@ public import FLT.Mazur.HomogeneousLocalizationGenerator
 public import FLT.Mazur.HomogeneousLocalizationRegradedMap
 public import FLT.Mazur.HomogeneousLocalizationRetraction
 public import FLT.Mazur.HomogeneousLocalizationScalars
+public import FLT.Mazur.HomogeneousNumeratorObstruction
 public import FLT.Mazur.HomogeneousPrimeAvoidance
 public import FLT.Mazur.IdealAdicAffineGeneration
 public import FLT.Mazur.IdealAdicAffineProjection
