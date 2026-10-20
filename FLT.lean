@@ -4294,6 +4294,13 @@ public import FLT.Mazur.CurveSurjectiveOpenComplement
 public import FLT.Mazur.CurveUniformFieldDegreeBound
 public import FLT.Mazur.CuspCollision
 public import FLT.Mazur.CuspOrderNumerator
+public import FLT.Mazur.CyclicAdicBoundarySeparation
+public import FLT.Mazur.CyclicAdicCoverage
+public import FLT.Mazur.CyclicAdicLocalModuli
+public import FLT.Mazur.CyclicAdicParameterQuotient
+public import FLT.Mazur.CyclicAdicParameterRelation
+public import FLT.Mazur.CyclicAdicParameters
+public import FLT.Mazur.CyclicAdicSheafQuotient
 public import FLT.Mazur.CyclicAuxiliaryPrescribedNormalizedNeighborhood
 public import FLT.Mazur.CyclicBoundaryAmpleAction
 public import FLT.Mazur.CyclicBoundaryAmpleInvariantModuli
@@ -8539,7 +8546,10 @@ public import FLT.Mazur.OneGonAdicChartRestriction
 public import FLT.Mazur.OneGonAdicFiniteSubgroup
 public import FLT.Mazur.OneGonAdicInitialParameter
 public import FLT.Mazur.OneGonAdicInitialRoots
+public import FLT.Mazur.OneGonAdicModuliChart
 public import FLT.Mazur.OneGonAdicPrescribedBoundary
+public import FLT.Mazur.OneGonAdicPuncturedCoarse
+public import FLT.Mazur.OneGonAdicPuncturedModuli
 public import FLT.Mazur.OneGonAdicReductionCartesian
 public import FLT.Mazur.OneGonAdicSmoothProjection
 public import FLT.Mazur.OneGonAdicSubgroupCartier
@@ -12886,6 +12896,7 @@ public import FLT.Mazur.SmoothCurvePicardDegree
 public import FLT.Mazur.SmoothCurvePureDimension
 public import FLT.Mazur.SmoothCurveSquareGeometricIntegral
 public import FLT.Mazur.SmoothCurveValuationStalk
+public import FLT.Mazur.SmoothCyclicCoarseMorphism
 public import FLT.Mazur.SmoothCyclicDivisorEquations
 public import FLT.Mazur.SmoothCyclicDivisorSymmetry
 public import FLT.Mazur.SmoothDimension
