@@ -8110,6 +8110,7 @@ public import FLT.Mazur.OddWeierstrassAuxiliaryProperNormalization
 public import FLT.Mazur.OddWeierstrassAuxiliaryProperPointInvariant
 public import FLT.Mazur.OddWeierstrassAuxiliaryPullbackSections
 public import FLT.Mazur.OddWeierstrassAuxiliaryRelabelNormalization
+public import FLT.Mazur.OddWeierstrassAuxiliaryRestrictedMarking
 public import FLT.Mazur.OddWeierstrassAuxiliarySchemeBaseNaturality
 public import FLT.Mazur.OddWeierstrassAuxiliarySchemeFixedGroup
 public import FLT.Mazur.OddWeierstrassAuxiliarySchemeGroupComparison
