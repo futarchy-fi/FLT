@@ -14477,6 +14477,7 @@ public import FLT.Mazur.WeierstrassDividedDeepAmbientAddition
 public import FLT.Mazur.WeierstrassDividedDeepAmbientCoverage
 public import FLT.Mazur.WeierstrassDividedDeepCommonFormula
 public import FLT.Mazur.WeierstrassDividedDeepCommonModel
+public import FLT.Mazur.WeierstrassDividedDeepCrossDepthSecant
 public import FLT.Mazur.WeierstrassDividedDeepCrossDepthTangent
 public import FLT.Mazur.WeierstrassDividedDeepExtendedOverlap
 public import FLT.Mazur.WeierstrassDividedDeepIntermediateOverlap
