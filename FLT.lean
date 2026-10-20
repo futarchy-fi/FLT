@@ -14842,6 +14842,7 @@ public import FLT.Mazur.WeierstrassDividedFirstResidualOrientation
 public import FLT.Mazur.WeierstrassDividedFirstSuccessorAction
 public import FLT.Mazur.WeierstrassDividedFirstUnitAction
 public import FLT.Mazur.WeierstrassDividedFiveRegimeAmbientAddition
+public import FLT.Mazur.WeierstrassDividedFiveReindexedAmbientAddition
 public import FLT.Mazur.WeierstrassDividedFiveSuppliedAmbientAddition
 public import FLT.Mazur.WeierstrassDividedFixedTerminalBoundary
 public import FLT.Mazur.WeierstrassDividedFixedTerminalParameterIso
