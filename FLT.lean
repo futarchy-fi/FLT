@@ -2860,6 +2860,7 @@ public import FLT.Mazur.AffineBranchSequence
 public import FLT.Mazur.AffineCanonicalMapCompatibility
 public import FLT.Mazur.AffineCanonicalOverlapChart
 public import FLT.Mazur.AffineCanonicalOverlapRecognition
+public import FLT.Mazur.AffineCartesianCharpoly
 public import FLT.Mazur.AffineCartesianNorm
 public import FLT.Mazur.AffineCartesianPreimageSections
 public import FLT.Mazur.AffineCartesianSectionPushout
@@ -3354,6 +3355,8 @@ public import FLT.Mazur.AffineRefinementIdentity
 public import FLT.Mazur.AffineRefinementPullback
 public import FLT.Mazur.AffineRefinementReconstructionMap
 public import FLT.Mazur.AffineRefinementReconstructionRecognition
+public import FLT.Mazur.AffineRelationCharpoly
+public import FLT.Mazur.AffineRelationIntegralCoordinates
 public import FLT.Mazur.AffineRelationNorm
 public import FLT.Mazur.AffineRelationNormNeighborhood
 public import FLT.Mazur.AffineRelativeFiberCriterion
@@ -5726,6 +5729,7 @@ public import FLT.Mazur.FiniteFlatProjectiveTargetLocus
 public import FLT.Mazur.FiniteFlatQuotientTrivialization
 public import FLT.Mazur.FiniteFlatSubschemeQuotient
 public import FLT.Mazur.FiniteFlatTranslationNormCharts
+public import FLT.Mazur.FiniteFreeAlgebraCharpoly
 public import FLT.Mazur.FiniteFreeAmbientChartRefinement
 public import FLT.Mazur.FiniteFreeChartGeneratorRestriction
 public import FLT.Mazur.FiniteFreeChartPointCompatibility
@@ -6708,9 +6712,12 @@ public import FLT.Mazur.HilbertFiniteAmbientPresentation
 public import FLT.Mazur.HilbertFiniteBoundaryDomain
 public import FLT.Mazur.HilbertFiniteDomainErrorVanishing
 public import FLT.Mazur.HilbertFiniteDomainPrincipalCoverage
+public import FLT.Mazur.HilbertFiniteFreeBoundaryIntegral
+public import FLT.Mazur.HilbertFiniteFreeBoundaryResidue
 public import FLT.Mazur.HilbertFiniteFreeQuotientRefinement
 public import FLT.Mazur.HilbertFiniteFreeRelationErrorVanishing
 public import FLT.Mazur.HilbertFiniteFreeRelationPrincipalCoverage
+public import FLT.Mazur.HilbertFiniteFreeScalarCoordinates
 public import FLT.Mazur.HilbertFiniteInvariantAffineBasis
 public import FLT.Mazur.HilbertFiniteLabelBoundaryLifts
 public import FLT.Mazur.HilbertFiniteLabelRefinement
@@ -7425,6 +7432,7 @@ public import FLT.Mazur.InvariantOpenFiniteRelation
 public import FLT.Mazur.InvariantOpenRelationDiagram
 public import FLT.Mazur.InvariantOpenRelationEquivalence
 public import FLT.Mazur.InvariantOpenRelationFunctions
+public import FLT.Mazur.InvariantOpenRelationIntegralCoordinates
 public import FLT.Mazur.InvariantOpenRelationMap
 public import FLT.Mazur.InvariantScalarGoingDown
 public import FLT.Mazur.InvariantSectionObstruction
