@@ -69,7 +69,7 @@ theorem finiteResolvedReciprocal_secantOriginal :
     apply (cancel_mono (finiteSecantPairChart hπ data j hj)).mp
     have h := congrArg (· ≫ finiteResolvedPairInclusion hπ data j hj) hpq
     rw [Category.assoc, Category.assoc, ← ht, ← hs] at h
-    simpa only [finiteReciprocalInput, finiteSecantInput, 
+    simpa only [finiteReciprocalInput, finiteSecantInput,
       dividedPairReciprocalOutputToProduct, dividedPairReciprocalToProduct,
       dividedPairSecantToProduct, Category.assoc] using h
   have he' : (p ≫ finiteResolvedReciprocalProjection hπ data j hj) ≫
