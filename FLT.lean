@@ -14427,6 +14427,7 @@ public import FLT.Mazur.WeierstrassDividedArithmeticZeroStandardEndpoints
 public import FLT.Mazur.WeierstrassDividedArithmeticZeroStandardRestriction
 public import FLT.Mazur.WeierstrassDividedArithmeticZeroTerminalCompatibility
 public import FLT.Mazur.WeierstrassDividedArithmeticZeroUniversal
+public import FLT.Mazur.WeierstrassDividedAtlasPairFormulaInput
 public import FLT.Mazur.WeierstrassDividedAtlasRegularCenter
 public import FLT.Mazur.WeierstrassDividedBoundaryNormalization
 public import FLT.Mazur.WeierstrassDividedBranchChainIntersections
