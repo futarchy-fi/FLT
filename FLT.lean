@@ -14983,6 +14983,7 @@ public import FLT.Mazur.WeierstrassDividedReciprocalOriginalCoordinates
 public import FLT.Mazur.WeierstrassDividedReciprocalOutput
 public import FLT.Mazur.WeierstrassDividedReciprocalOverlapProjections
 public import FLT.Mazur.WeierstrassDividedReciprocalReversedPair
+public import FLT.Mazur.WeierstrassDividedReciprocalRightOriginalAction
 public import FLT.Mazur.WeierstrassDividedReciprocalSchemeAction
 public import FLT.Mazur.WeierstrassDividedReciprocalSecantComparison
 public import FLT.Mazur.WeierstrassDividedReciprocalSecantFormula
