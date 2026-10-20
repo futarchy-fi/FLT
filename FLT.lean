@@ -8101,6 +8101,7 @@ public import FLT.Mazur.OddWeierstrassAuxiliaryFullBasis
 public import FLT.Mazur.OddWeierstrassAuxiliaryGeometricFull
 public import FLT.Mazur.OddWeierstrassAuxiliaryGeometricRelabel
 public import FLT.Mazur.OddWeierstrassAuxiliaryGroupSourceNaturality
+public import FLT.Mazur.OddWeierstrassAuxiliaryInvertibleTorsion
 public import FLT.Mazur.OddWeierstrassAuxiliaryLevel
 public import FLT.Mazur.OddWeierstrassAuxiliaryLocalRelabel
 public import FLT.Mazur.OddWeierstrassAuxiliaryLocalTorsion
