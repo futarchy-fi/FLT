@@ -16611,6 +16611,7 @@ public import FLT.Mazur.WeierstrassReciprocalGlobalDomains
 public import FLT.Mazur.WeierstrassReciprocalOrdinaryComparison
 public import FLT.Mazur.WeierstrassReciprocalOutputRegular
 public import FLT.Mazur.WeierstrassReciprocalPointComparison
+public import FLT.Mazur.WeierstrassReciprocalPresentationAction
 public import FLT.Mazur.WeierstrassReciprocalSecantDomainLift
 public import FLT.Mazur.WeierstrassReciprocalSecantTriple
 public import FLT.Mazur.WeierstrassReciprocalSecantTripleAlgebra
