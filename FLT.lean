@@ -16048,6 +16048,7 @@ public import FLT.Mazur.WeierstrassDividedTripleCommonFormula
 public import FLT.Mazur.WeierstrassDividedTripleCommonModel
 public import FLT.Mazur.WeierstrassDividedTripleCrossDepthSecant
 public import FLT.Mazur.WeierstrassDividedTripleCrossDepthTangent
+public import FLT.Mazur.WeierstrassDividedTripleDeepAmbientOverlap
 public import FLT.Mazur.WeierstrassDividedTripleDepthCoefficients
 public import FLT.Mazur.WeierstrassDividedTripleExtendedOverlap
 public import FLT.Mazur.WeierstrassDividedTripleIntermediateAmbientOverlap
