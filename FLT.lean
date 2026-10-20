@@ -8202,6 +8202,7 @@ public import FLT.Mazur.OddWeierstrassCyclicHomNormalizedCoverage
 public import FLT.Mazur.OddWeierstrassCyclicHomNormalizedCoverageUnrestricted
 public import FLT.Mazur.OddWeierstrassCyclicHomNormalizedCubicValue
 public import FLT.Mazur.OddWeierstrassCyclicHomNormalizedGeometricOrbit
+public import FLT.Mazur.OddWeierstrassCyclicHomNormalizedLocalOrbit
 public import FLT.Mazur.OddWeierstrassCyclicHomNormalizedLocus
 public import FLT.Mazur.OddWeierstrassCyclicHomNormalizedLocusSlice
 public import FLT.Mazur.OddWeierstrassCyclicHomNormalizedLocusSliceAction
