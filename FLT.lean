@@ -3843,6 +3843,8 @@ public import FLT.Mazur.BlowupReesRatioTransition
 public import FLT.Mazur.BlowupReesZeroComponent
 public import FLT.Mazur.BoundaryCorrectionAdicAmbient
 public import FLT.Mazur.BoundaryCorrectionAdicCertificate
+public import FLT.Mazur.BoundaryCorrectionAdicEquationIdeal
+public import FLT.Mazur.BoundaryCorrectionAdicEquationSupport
 public import FLT.Mazur.BoundaryCorrectionAmbientEquations
 public import FLT.Mazur.BoundaryCorrectionBoundaryImage
 public import FLT.Mazur.BoundaryCorrectionBoundaryKernel
@@ -6029,6 +6031,7 @@ public import FLT.Mazur.FinitePrincipalChartIntegerDescent
 public import FLT.Mazur.FinitePrincipalIdealPatching
 public import FLT.Mazur.FinitePrincipalImageCover
 public import FLT.Mazur.FinitePrincipalTargetRefinement
+public import FLT.Mazur.FiniteProductAdicIdeals
 public import FLT.Mazur.FiniteProductDirectSum
 public import FLT.Mazur.FiniteProjectiveAffineNorm
 public import FLT.Mazur.FiniteProjectiveAffineNormCharts
@@ -7434,6 +7437,7 @@ public import FLT.Mazur.IdealPullbackVanishingCriterion
 public import FLT.Mazur.IdealQuotientExact
 public import FLT.Mazur.IdealQuotientSectionLift
 public import FLT.Mazur.IdealSheafAdicStalkSeparation
+public import FLT.Mazur.IdealSheafAffineTestErrors
 public import FLT.Mazur.IdealSheafClosedTransitions
 public import FLT.Mazur.IdealSheafFactorizationSupport
 public import FLT.Mazur.IdealSheafFlatDetection
@@ -11428,7 +11432,9 @@ public import FLT.Mazur.RankStageInitialBoundaryLifting
 public import FLT.Mazur.RankStageInvariantTransitions
 public import FLT.Mazur.RankStageOriginalAffineBoundaryTower
 public import FLT.Mazur.RankStageOriginalAffineCompatibility
+public import FLT.Mazur.RankStageOriginalAffineEquationErrors
 public import FLT.Mazur.RankStageOriginalAffineRepresentatives
+public import FLT.Mazur.RankStageOriginalAffineTestValues
 public import FLT.Mazur.RankStageOriginalBoundaryCoefficients
 public import FLT.Mazur.RankStageOriginalBoundaryRestriction
 public import FLT.Mazur.RankStageOriginalBoundaryTower
@@ -14300,6 +14306,14 @@ public import FLT.Mazur.WeierstrassDividedConicBoundaryGeometryAllDepths
 public import FLT.Mazur.WeierstrassDividedConicHorizontalIntersectionAllDepths
 public import FLT.Mazur.WeierstrassDividedConicParameterTransport
 public import FLT.Mazur.WeierstrassDividedCyclicSmoothParameter
+public import FLT.Mazur.WeierstrassDividedDeepNodalBranchCommonOutput
+public import FLT.Mazur.WeierstrassDividedDeepNodalNegativeBranchContraction
+public import FLT.Mazur.WeierstrassDividedDeepNodalNegativeBranchOutput
+public import FLT.Mazur.WeierstrassDividedDeepNodalTangentBranchCoverage
+public import FLT.Mazur.WeierstrassDividedDeepNodalTangentGluing
+public import FLT.Mazur.WeierstrassDividedDeepNodalTangentNeighborhood
+public import FLT.Mazur.WeierstrassDividedDeepNodalTangentNeighborhoodCover
+public import FLT.Mazur.WeierstrassDividedDeepNormalizedBranchContraction
 public import FLT.Mazur.WeierstrassDividedDepthAffine
 public import FLT.Mazur.WeierstrassDividedDepthAvailability
 public import FLT.Mazur.WeierstrassDividedDepthBoundary
@@ -14506,6 +14520,8 @@ public import FLT.Mazur.WeierstrassDividedFiniteAffineProper
 public import FLT.Mazur.WeierstrassDividedFiniteAtlas
 public import FLT.Mazur.WeierstrassDividedFiniteChartStructure
 public import FLT.Mazur.WeierstrassDividedFiniteContraction
+public import FLT.Mazur.WeierstrassDividedFiniteDeepNormalizedBranchInput
+public import FLT.Mazur.WeierstrassDividedFiniteDeepNormalizedBranchLift
 public import FLT.Mazur.WeierstrassDividedFiniteDeeperBranchLift
 public import FLT.Mazur.WeierstrassDividedFiniteDeeperBranchNodal
 public import FLT.Mazur.WeierstrassDividedFiniteDeeperBranchPartial
@@ -14880,6 +14896,16 @@ public import FLT.Mazur.WeierstrassDividedNodalBranchCoefficients
 public import FLT.Mazur.WeierstrassDividedNodalBranchCommonOutput
 public import FLT.Mazur.WeierstrassDividedNodalBranchRefinementDepth
 public import FLT.Mazur.WeierstrassDividedNodalBranchTerminalConstant
+public import FLT.Mazur.WeierstrassDividedNodalDeepAdditionCoverage
+public import FLT.Mazur.WeierstrassDividedNodalDeepAdditionGluing
+public import FLT.Mazur.WeierstrassDividedNodalDeepAdditionOverlap
+public import FLT.Mazur.WeierstrassDividedNodalDeepAdditionSource
+public import FLT.Mazur.WeierstrassDividedNodalDeepAdditionSourceCoverage
+public import FLT.Mazur.WeierstrassDividedNodalDeepSecantContraction
+public import FLT.Mazur.WeierstrassDividedNodalDeepSecantCoverage
+public import FLT.Mazur.WeierstrassDividedNodalDeepSecantGluing
+public import FLT.Mazur.WeierstrassDividedNodalDeepSecantNeighborhood
+public import FLT.Mazur.WeierstrassDividedNodalDeepSecantNeighborhoodCover
 public import FLT.Mazur.WeierstrassDividedNodalDepthAvailability
 public import FLT.Mazur.WeierstrassDividedNodalDoubledBranchSmooth
 public import FLT.Mazur.WeierstrassDividedNodalFirstBranchCommonOutput
