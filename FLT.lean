@@ -11745,6 +11745,7 @@ public import FLT.Mazur.RootsOfUnityAlgebra
 public import FLT.Mazur.RootsOfUnityAlgebraPoints
 public import FLT.Mazur.RootsOfUnityCartier
 public import FLT.Mazur.RootsOfUnityLaurentKernel
+public import FLT.Mazur.RootsOfUnityNonEtale
 public import FLT.Mazur.RootsOfUnityPolynomialPresentation
 public import FLT.Mazur.RootsOfUnityScheme
 public import FLT.Mazur.ScalarAlgebraicClosureTests
