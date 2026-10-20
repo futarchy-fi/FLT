@@ -16021,6 +16021,7 @@ public import FLT.Mazur.WeierstrassDividedThreeFiniteState
 public import FLT.Mazur.WeierstrassDividedThreeFiniteTransitions
 public import FLT.Mazur.WeierstrassDividedThreeNodeRestriction
 public import FLT.Mazur.WeierstrassDividedThreeOpenRestriction
+public import FLT.Mazur.WeierstrassDividedThreeRegimeAmbientAddition
 public import FLT.Mazur.WeierstrassDividedThreeSeedAtlas
 public import FLT.Mazur.WeierstrassDividedThreeSeedAtlasRestriction
 public import FLT.Mazur.WeierstrassDividedThreeSeedAtlasSystem
