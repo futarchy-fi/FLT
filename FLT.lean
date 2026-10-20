@@ -14945,6 +14945,7 @@ public import FLT.Mazur.WeierstrassDividedReciprocalOppositeCoverage
 public import FLT.Mazur.WeierstrassDividedReciprocalOutput
 public import FLT.Mazur.WeierstrassDividedReciprocalSecantComparison
 public import FLT.Mazur.WeierstrassDividedReciprocalSecantFormula
+public import FLT.Mazur.WeierstrassDividedReciprocalSecantScheme
 public import FLT.Mazur.WeierstrassDividedReciprocalSource
 public import FLT.Mazur.WeierstrassDividedReciprocalSpecialization
 public import FLT.Mazur.WeierstrassDividedResidualIntegralLift
