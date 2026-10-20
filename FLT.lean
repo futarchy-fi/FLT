@@ -17175,6 +17175,7 @@ public import FLT.Mazur.WeierstrassSmoothHorizontalTensorGlobalAction
 public import FLT.Mazur.WeierstrassSmoothHorizontalTensorInput
 public import FLT.Mazur.WeierstrassSmoothHorizontalUnitEvaluation
 public import FLT.Mazur.WeierstrassSmoothInfinitesimalAddition
+public import FLT.Mazur.WeierstrassSmoothInfinitesimalNaturality
 public import FLT.Mazur.WeierstrassSmoothInfinitesimalPoints
 public import FLT.Mazur.WeierstrassSmoothInfinityCommutativity
 public import FLT.Mazur.WeierstrassSmoothInfinityDomain
