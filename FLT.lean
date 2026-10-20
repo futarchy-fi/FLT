@@ -14278,6 +14278,7 @@ public import FLT.Mazur.WeierstrassDividedDeepNodalBranchCommonOutput
 public import FLT.Mazur.WeierstrassDividedDeepNodalNegativeBranchContraction
 public import FLT.Mazur.WeierstrassDividedDeepNodalNegativeBranchOutput
 public import FLT.Mazur.WeierstrassDividedDeepNodalTangentBranchCoverage
+public import FLT.Mazur.WeierstrassDividedDeepNodalTangentNeighborhood
 public import FLT.Mazur.WeierstrassDividedDeepNormalizedBranchContraction
 public import FLT.Mazur.WeierstrassDividedDepthAffine
 public import FLT.Mazur.WeierstrassDividedDepthAvailability
