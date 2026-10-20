@@ -14318,6 +14318,7 @@ public import FLT.Mazur.WeierstrassDividedFiniteAtlas
 public import FLT.Mazur.WeierstrassDividedFiniteChartStructure
 public import FLT.Mazur.WeierstrassDividedFiniteContraction
 public import FLT.Mazur.WeierstrassDividedFiniteDeeperBranchLift
+public import FLT.Mazur.WeierstrassDividedFiniteDeeperBranchNodal
 public import FLT.Mazur.WeierstrassDividedFiniteDeeperBranchPartial
 public import FLT.Mazur.WeierstrassDividedFiniteDeeperBranchTerminal
 public import FLT.Mazur.WeierstrassDividedFiniteExteriorPullback
