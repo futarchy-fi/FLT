@@ -15537,6 +15537,7 @@ public import FLT.Mazur.WeierstrassDividedTripleNegativeBranchOutput
 public import FLT.Mazur.WeierstrassDividedTripleNormalizedBranchLift
 public import FLT.Mazur.WeierstrassDividedTripleSecantCases
 public import FLT.Mazur.WeierstrassDividedTripleSecantCoverage
+public import FLT.Mazur.WeierstrassDividedTripleSecantGluing
 public import FLT.Mazur.WeierstrassDividedTripleSecantNeighborhood
 public import FLT.Mazur.WeierstrassDividedTripleSecantNeighborhoodCover
 public import FLT.Mazur.WeierstrassDividedTripleTangentBranchCoverage
