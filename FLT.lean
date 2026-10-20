@@ -8102,6 +8102,7 @@ public import FLT.Mazur.MonomorphismRelativeOpenTransport
 public import FLT.Mazur.MonomorphismStratumOverlap
 public import FLT.Mazur.MultiplicativeGroupDimension
 public import FLT.Mazur.MultiplicativeGroupFieldExtension
+public import FLT.Mazur.MultiplicativeGroupObjectHom
 public import FLT.Mazur.MultiplicativeGroupScheme
 public import FLT.Mazur.NeronPolygonDihedralRelations
 public import FLT.Mazur.NeronPolygonPredicate
