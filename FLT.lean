@@ -3280,6 +3280,7 @@ public import FLT.Mazur.AffineLocallyFreeIntegralCoordinates
 public import FLT.Mazur.AffineLocallyFreeInvariantPolynomial
 public import FLT.Mazur.AffineLocallyFreeRelationCharpoly
 public import FLT.Mazur.AffineLocallyFreeRelationNorm
+public import FLT.Mazur.AffineLocallyFreeRelationTrace
 public import FLT.Mazur.AffineMinimalPrimeFiniteOpen
 public import FLT.Mazur.AffineModuleCoalgebraDescent
 public import FLT.Mazur.AffineModuleEpimorphisms
