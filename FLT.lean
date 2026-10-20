@@ -8220,6 +8220,7 @@ public import FLT.Mazur.OddWeierstrassCyclicHomRelabelSubgroupMarking
 public import FLT.Mazur.OddWeierstrassCyclicHomRelabeledNormalizationIso
 public import FLT.Mazur.OddWeierstrassCyclicHomRelationIsoCoherence
 public import FLT.Mazur.OddWeierstrassCyclicHomRelationIsoNaturality
+public import FLT.Mazur.OddWeierstrassCyclicHomRestrictedMarkedComparison
 public import FLT.Mazur.OddWeierstrassCyclicHomRetainedPullback
 public import FLT.Mazur.OddWeierstrassCyclicHomSliceFunctor
 public import FLT.Mazur.OddWeierstrassCyclicHomSliceRelabelAction
