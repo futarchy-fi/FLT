@@ -8491,6 +8491,7 @@ public import FLT.Mazur.OddWeierstrassThreeTorsionUnramified
 public import FLT.Mazur.OneGonActionRotations
 public import FLT.Mazur.OneGonAdicCharacterStages
 public import FLT.Mazur.OneGonAdicCharacterStep
+public import FLT.Mazur.OneGonAdicCharacterTower
 public import FLT.Mazur.OneGonAffineCover
 public import FLT.Mazur.OneGonAffineNormalization
 public import FLT.Mazur.OneGonAffineNormalizationCoordinates
