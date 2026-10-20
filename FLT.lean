@@ -7696,6 +7696,7 @@ public import FLT.Mazur.LocallyFramedSplitLineProjective
 public import FLT.Mazur.LocallyFramedSplitLineRestriction
 public import FLT.Mazur.LocallyFreeDualProjectiveAtlas
 public import FLT.Mazur.LocallyFreeProjectiveQuotient
+public import FLT.Mazur.LocallyMonicPolynomialEnvelope
 public import FLT.Mazur.LocallyNoetherianUniversalStructureSheaf
 public import FLT.Mazur.LocallyRingedIdealGenerators
 public import FLT.Mazur.LocallyRingedOpenBasic
