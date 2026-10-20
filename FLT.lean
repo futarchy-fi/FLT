@@ -15691,6 +15691,7 @@ public import FLT.Mazur.WeierstrassDividedResidueNormalizationCompatibility
 public import FLT.Mazur.WeierstrassDividedResidueOrderedNormalization
 public import FLT.Mazur.WeierstrassDividedResidueSplitCubic
 public import FLT.Mazur.WeierstrassDividedResidueTangentNormalization
+public import FLT.Mazur.WeierstrassDividedResolvedAtlasCover
 public import FLT.Mazur.WeierstrassDividedResolvedNegation
 public import FLT.Mazur.WeierstrassDividedResolvedOriginalOpen
 public import FLT.Mazur.WeierstrassDividedResolvedPartialAddition
