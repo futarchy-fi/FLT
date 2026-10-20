@@ -5750,6 +5750,7 @@ public import FLT.Mazur.FiniteCechCyclesScalars
 public import FLT.Mazur.FiniteCechTermScalars
 public import FLT.Mazur.FiniteCharacterAdicElements
 public import FLT.Mazur.FiniteCharacterAdicHom
+public import FLT.Mazur.FiniteCharacterAdicMapExt
 public import FLT.Mazur.FiniteClosedIdealSection
 public import FLT.Mazur.FiniteClosedImmersionIntegerDescent
 public import FLT.Mazur.FiniteCoefficientDifferenceIdeal
