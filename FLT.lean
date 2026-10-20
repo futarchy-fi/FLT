@@ -12070,6 +12070,7 @@ public import FLT.Mazur.SchemeModulePullbackUnits
 public import FLT.Mazur.SchemeMonoIdealPullback
 public import FLT.Mazur.SchemeMonoidUnitEvaluation
 public import FLT.Mazur.SchemeNaturalUnitLocus
+public import FLT.Mazur.SchemeNaturalUnitSectionTorsion
 public import FLT.Mazur.SchemeNilpotentSectionDetection
 public import FLT.Mazur.SchemeNoetherianDenseFiniteOpen
 public import FLT.Mazur.SchemeNoetherianUniformKernelPower
