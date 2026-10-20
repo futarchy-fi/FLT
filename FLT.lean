@@ -15954,6 +15954,7 @@ public import FLT.Mazur.WeierstrassDividedTripleLeftOverlap
 public import FLT.Mazur.WeierstrassDividedTripleNegativeBranchContraction
 public import FLT.Mazur.WeierstrassDividedTripleNegativeBranchOutput
 public import FLT.Mazur.WeierstrassDividedTripleNormalizedBranchLift
+public import FLT.Mazur.WeierstrassDividedTriplePartialOverlap
 public import FLT.Mazur.WeierstrassDividedTriplePromotedAddition
 public import FLT.Mazur.WeierstrassDividedTriplePromotedSecant
 public import FLT.Mazur.WeierstrassDividedTriplePromotedTangent
