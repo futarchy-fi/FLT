@@ -11452,6 +11452,7 @@ public import FLT.Mazur.RankStageCoreBoundaryCoefficients
 public import FLT.Mazur.RankStageCoreBoundaryTransitions
 public import FLT.Mazur.RankStageCoreCoefficientTransitions
 public import FLT.Mazur.RankStageCoreIntersections
+public import FLT.Mazur.RankStageCoreInvariantDetection
 public import FLT.Mazur.RankStageCoreOriginalEnvelope
 public import FLT.Mazur.RankStageCoreOverlapBoundary
 public import FLT.Mazur.RankStageCorePointTests
