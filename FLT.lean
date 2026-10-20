@@ -7600,6 +7600,7 @@ public import FLT.Mazur.InvariantOpenBoundaryTrace
 public import FLT.Mazur.InvariantOpenCoefficientGluing
 public import FLT.Mazur.InvariantOpenCoefficientRestriction
 public import FLT.Mazur.InvariantOpenFiniteRelation
+public import FLT.Mazur.InvariantOpenGlobalRestriction
 public import FLT.Mazur.InvariantOpenProjectiveIntegralCoordinates
 public import FLT.Mazur.InvariantOpenRelationDiagram
 public import FLT.Mazur.InvariantOpenRelationEquivalence
