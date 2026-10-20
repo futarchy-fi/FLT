@@ -14948,6 +14948,7 @@ public import FLT.Mazur.WeierstrassDividedReciprocalSecantFormula
 public import FLT.Mazur.WeierstrassDividedReciprocalSecantScheme
 public import FLT.Mazur.WeierstrassDividedReciprocalSource
 public import FLT.Mazur.WeierstrassDividedReciprocalSpecialization
+public import FLT.Mazur.WeierstrassDividedReciprocalTangentComparison
 public import FLT.Mazur.WeierstrassDividedReciprocalTangentFormula
 public import FLT.Mazur.WeierstrassDividedResidualIntegralLift
 public import FLT.Mazur.WeierstrassDividedResidualLiftAlgebra
