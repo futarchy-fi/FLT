@@ -12876,6 +12876,7 @@ public import FLT.Mazur.SmoothCurvePicardDegree
 public import FLT.Mazur.SmoothCurvePureDimension
 public import FLT.Mazur.SmoothCurveSquareGeometricIntegral
 public import FLT.Mazur.SmoothCurveValuationStalk
+public import FLT.Mazur.SmoothCyclicCoarseMorphism
 public import FLT.Mazur.SmoothCyclicDivisorEquations
 public import FLT.Mazur.SmoothCyclicDivisorSymmetry
 public import FLT.Mazur.SmoothDimension
