@@ -12823,6 +12823,7 @@ public import FLT.Mazur.UniversalWeierstrassAuxiliaryFullNormalizedMarking
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryGeometricFull
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryGeometricRelabel
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryGroupSourceNaturality
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryInvertibleTorsion
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryIsomorphismUnique
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryLevel
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryLocalRelabel
