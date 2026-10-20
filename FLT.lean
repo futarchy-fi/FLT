@@ -13062,6 +13062,7 @@ public import FLT.Mazur.StableAffineQuotientMap
 public import FLT.Mazur.StableAffineQuotientNeighborhood
 public import FLT.Mazur.StableAffineQuotientOverlap
 public import FLT.Mazur.StableAffineQuotientPullbackCharts
+public import FLT.Mazur.StableCompatibleRingTower
 public import FLT.Mazur.StalkBaseClosedFiber
 public import FLT.Mazur.StalkBaseLocalization
 public import FLT.Mazur.StalkBaseNumeratorOpen
