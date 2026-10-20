@@ -3426,6 +3426,7 @@ public import FLT.Mazur.AffineSeparatedFamilyExt
 public import FLT.Mazur.AffineSeparatedPullbackGenerators
 public import FLT.Mazur.AffineSmoothEtaleCoordinates
 public import FLT.Mazur.AffineSmoothFiniteFlatCartier
+public import FLT.Mazur.AffineSmoothNilpotentLift
 public import FLT.Mazur.AffineSourcePullbackSections
 public import FLT.Mazur.AffineSourceSectionComparison
 public import FLT.Mazur.AffineSpectrumKernelIdeal
