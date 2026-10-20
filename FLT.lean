@@ -14499,6 +14499,7 @@ public import FLT.Mazur.WeierstrassDividedDeepSecantOverlap
 public import FLT.Mazur.WeierstrassDividedDeepShallowOverlap
 public import FLT.Mazur.WeierstrassDividedDeepTangentExtendedOverlap
 public import FLT.Mazur.WeierstrassDividedDeepTangentOverlap
+public import FLT.Mazur.WeierstrassDividedDeepTripleOverlap
 public import FLT.Mazur.WeierstrassDividedDepthAffine
 public import FLT.Mazur.WeierstrassDividedDepthAvailability
 public import FLT.Mazur.WeierstrassDividedDepthBoundary
