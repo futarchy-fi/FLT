@@ -13999,6 +13999,7 @@ public import FLT.Mazur.WeierstrassDiagonalizableInfinitesimalKernel
 public import FLT.Mazur.WeierstrassDiagonalizableKernelNaturality
 public import FLT.Mazur.WeierstrassDiagonalizableLiftUniqueness
 public import FLT.Mazur.WeierstrassDiagonalizableLocalLift
+public import FLT.Mazur.WeierstrassDiagonalizableMonHom
 public import FLT.Mazur.WeierstrassDilatationAlgebra
 public import FLT.Mazur.WeierstrassDilatationArithmeticCoefficientRestriction
 public import FLT.Mazur.WeierstrassDilatationArithmeticNormalizationRestriction
