@@ -15603,6 +15603,7 @@ public import FLT.Mazur.WeierstrassFrameNormalization
 public import FLT.Mazur.WeierstrassGeneralizedEllipticModel
 public import FLT.Mazur.WeierstrassGeneralizedPointedComparison
 public import FLT.Mazur.WeierstrassGeneralizedSmoothComparison
+public import FLT.Mazur.WeierstrassGeneratorLocalRelabel
 public import FLT.Mazur.WeierstrassGenericClosureNegation
 public import FLT.Mazur.WeierstrassGenericClosurePairComparison
 public import FLT.Mazur.WeierstrassGenericClosureSmoothDensity
