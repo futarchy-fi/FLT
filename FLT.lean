@@ -11455,6 +11455,7 @@ public import FLT.Mazur.RankStageCoreIntersections
 public import FLT.Mazur.RankStageCoreOriginalEnvelope
 public import FLT.Mazur.RankStageCoreOverlapBoundary
 public import FLT.Mazur.RankStageCorePointTests
+public import FLT.Mazur.RankStageCoreRefinementCoefficients
 public import FLT.Mazur.RankStageFiniteAtlasBoundaryTower
 public import FLT.Mazur.RankStageFiniteAtlasCoverage
 public import FLT.Mazur.RankStageFiniteCoreCover
