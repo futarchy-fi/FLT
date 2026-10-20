@@ -15747,6 +15747,7 @@ public import FLT.Mazur.WeierstrassDividedRetainedInitialBoundary
 public import FLT.Mazur.WeierstrassDividedRetainedLineAt
 public import FLT.Mazur.WeierstrassDividedRetainedLineSeparation
 public import FLT.Mazur.WeierstrassDividedRetainedNormalizedAdjacent
+public import FLT.Mazur.WeierstrassDividedRetainedOlderCoordinates
 public import FLT.Mazur.WeierstrassDividedRetainedPolygonLabels
 public import FLT.Mazur.WeierstrassDividedRetainedPolygonMaps
 public import FLT.Mazur.WeierstrassDividedRetainedPolygonNaturality
