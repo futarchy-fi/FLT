@@ -7587,6 +7587,7 @@ public import FLT.Mazur.InvariantLocalizationNumerator
 public import FLT.Mazur.InvariantLocallyFreeTraceUnit
 public import FLT.Mazur.InvariantObstructionNaturality
 public import FLT.Mazur.InvariantOpenBoundaryTrace
+public import FLT.Mazur.InvariantOpenCoefficientRestriction
 public import FLT.Mazur.InvariantOpenFiniteRelation
 public import FLT.Mazur.InvariantOpenProjectiveIntegralCoordinates
 public import FLT.Mazur.InvariantOpenRelationDiagram
