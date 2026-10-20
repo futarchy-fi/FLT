@@ -4253,6 +4253,7 @@ public import FLT.Mazur.CyclicBoundaryOriginalAmpleModuli
 public import FLT.Mazur.CyclicBoundaryOriginalMarkings
 public import FLT.Mazur.CyclicBoundaryParameterAction
 public import FLT.Mazur.CyclicBoundaryParameterSections
+public import FLT.Mazur.CyclicBoundaryRelabelSubgroup
 public import FLT.Mazur.CyclicBoundarySectionMarking
 public import FLT.Mazur.CyclicBoundaryTestSubgroup
 public import FLT.Mazur.CyclicBoundaryUniversalSubgroup
