@@ -15108,6 +15108,7 @@ public import FLT.Mazur.WeierstrassDividedNodalShallowBranchCoverage
 public import FLT.Mazur.WeierstrassDividedNodalShallowBranchOutput
 public import FLT.Mazur.WeierstrassDividedNodalShallowCommonFormula
 public import FLT.Mazur.WeierstrassDividedNodalShallowCommonModel
+public import FLT.Mazur.WeierstrassDividedNodalShallowCrossDepthSecant
 public import FLT.Mazur.WeierstrassDividedNodalShallowCrossDepthTangent
 public import FLT.Mazur.WeierstrassDividedNodalShallowExtendedOverlap
 public import FLT.Mazur.WeierstrassDividedNodalShallowLeftOverlap
