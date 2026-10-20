@@ -11948,6 +11948,7 @@ public import FLT.Mazur.SchemeFlatSourceImage
 public import FLT.Mazur.SchemeFlatTargetFamilyReflection
 public import FLT.Mazur.SchemeFlatTargetNeighborhood
 public import FLT.Mazur.SchemeFlatTargetOpen
+public import FLT.Mazur.SchemeFppfBoundaryCorrections
 public import FLT.Mazur.SchemeFppfCanonicalPairRecovery
 public import FLT.Mazur.SchemeFppfCoverInvariantFunctions
 public import FLT.Mazur.SchemeFppfFamilyCocycleAssembly
