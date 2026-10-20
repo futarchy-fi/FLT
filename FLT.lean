@@ -11514,6 +11514,7 @@ public import FLT.Mazur.QuotientSpectrumBaseChange
 public import FLT.Mazur.RankOneAmbientLineClassification
 public import FLT.Mazur.RankOneDirectImageSection
 public import FLT.Mazur.RankOneSectionDivisorUniqueness
+public import FLT.Mazur.RankOpenCompatibleAlgebraization
 public import FLT.Mazur.RankStageAffineBoundaryLifts
 public import FLT.Mazur.RankStageAffineNeighborhoods
 public import FLT.Mazur.RankStageBoundaryIdeal
