@@ -16042,6 +16042,7 @@ public import FLT.Mazur.WeierstrassDividedTripleCrossDepthSecant
 public import FLT.Mazur.WeierstrassDividedTripleCrossDepthTangent
 public import FLT.Mazur.WeierstrassDividedTripleDepthCoefficients
 public import FLT.Mazur.WeierstrassDividedTripleExtendedOverlap
+public import FLT.Mazur.WeierstrassDividedTripleIntermediateAmbientOverlap
 public import FLT.Mazur.WeierstrassDividedTripleLeftOverlap
 public import FLT.Mazur.WeierstrassDividedTripleNegativeBranchContraction
 public import FLT.Mazur.WeierstrassDividedTripleNegativeBranchOutput
