@@ -7618,6 +7618,7 @@ public import FLT.Mazur.IteratedQuotientProjection
 public import FLT.Mazur.IteratedQuotientRecovery
 public import FLT.Mazur.IteratedQuotientRepresentatives
 public import FLT.Mazur.IteratedRefinementSquareCriteria
+public import FLT.Mazur.JacobsonReductionOpenDetection
 public import FLT.Mazur.JointEnvelopeFullFiber
 public import FLT.Mazur.JointGroundEnvelopeNeighborhood
 public import FLT.Mazur.JointGroundNormInterior
