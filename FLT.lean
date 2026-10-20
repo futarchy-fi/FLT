@@ -6925,6 +6925,7 @@ public import FLT.Mazur.HilbertRelatedFixedScalarCharts
 public import FLT.Mazur.HilbertRelatedIrreducibleCharacters
 public import FLT.Mazur.HilbertRelatedPrincipalCharacters
 public import FLT.Mazur.HilbertRepeatedMonomialChart
+public import FLT.Mazur.HilbertRequiredScalarFiniteCover
 public import FLT.Mazur.HilbertRequiredScalarImage
 public import FLT.Mazur.HilbertRequiredScalarInfinitesimals
 public import FLT.Mazur.HilbertResidualRankCeiling
