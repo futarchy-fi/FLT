@@ -8496,6 +8496,7 @@ public import FLT.Mazur.OneGonAdicCharacterAffineEffectivity
 public import FLT.Mazur.OneGonAdicCharacterChartTower
 public import FLT.Mazur.OneGonAdicCharacterStages
 public import FLT.Mazur.OneGonAdicCharacterStep
+public import FLT.Mazur.OneGonAdicCharacterStructure
 public import FLT.Mazur.OneGonAdicCharacterTower
 public import FLT.Mazur.OneGonAdicChartProjection
 public import FLT.Mazur.OneGonAdicChartRestriction
