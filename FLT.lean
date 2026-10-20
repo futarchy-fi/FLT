@@ -5716,6 +5716,7 @@ public import FLT.Mazur.FiniteFlatProjectiveTargetLocus
 public import FLT.Mazur.FiniteFlatQuotientTrivialization
 public import FLT.Mazur.FiniteFlatSubschemeQuotient
 public import FLT.Mazur.FiniteFlatTranslationNormCharts
+public import FLT.Mazur.FiniteFreeAlgebraCharpoly
 public import FLT.Mazur.FiniteFreeAmbientChartRefinement
 public import FLT.Mazur.FiniteFreeChartGeneratorRestriction
 public import FLT.Mazur.FiniteFreeChartPointCompatibility
