@@ -11967,6 +11967,7 @@ public import FLT.Mazur.RootsOfUnityPolynomialPresentation
 public import FLT.Mazur.RootsOfUnityPrimePowerIdeal
 public import FLT.Mazur.RootsOfUnityPrimePowerOrbit
 public import FLT.Mazur.RootsOfUnityScheme
+public import FLT.Mazur.RootsOfUnitySubgroupGenerator
 public import FLT.Mazur.ScalarAlgebraicClosureTests
 public import FLT.Mazur.ScalarClosedGeometricLifts
 public import FLT.Mazur.ScalarClosedImageCoverage
