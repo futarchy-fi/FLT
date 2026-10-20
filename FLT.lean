@@ -6863,6 +6863,7 @@ public import FLT.Mazur.HilbertOriginalScalarFrameCharts
 public import FLT.Mazur.HilbertOriginalScalarMaximalCover
 public import FLT.Mazur.HilbertOriginalScalarStrata
 public import FLT.Mazur.HilbertOriginalScalarTestAtlas
+public import FLT.Mazur.HilbertOriginalScalarTestCorrections
 public import FLT.Mazur.HilbertOverlapRestriction
 public import FLT.Mazur.HilbertParameterAbelClass
 public import FLT.Mazur.HilbertParameterChartFactorization
