@@ -14350,6 +14350,7 @@ public import FLT.Mazur.WeierstrassDividedCrossDepthSecant
 public import FLT.Mazur.WeierstrassDividedCrossDepthTangent
 public import FLT.Mazur.WeierstrassDividedCrossDepthTangentScheme
 public import FLT.Mazur.WeierstrassDividedCrossDepthTangentSecant
+public import FLT.Mazur.WeierstrassDividedCrossDepthTangentSecantScheme
 public import FLT.Mazur.WeierstrassDividedCyclicSmoothParameter
 public import FLT.Mazur.WeierstrassDividedDeepNodalBranchCommonOutput
 public import FLT.Mazur.WeierstrassDividedDeepNodalNegativeBranchContraction
