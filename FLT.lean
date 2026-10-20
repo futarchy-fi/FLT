@@ -13430,6 +13430,7 @@ public import FLT.Mazur.WeierstrassChangeGeneralizedNaturality
 public import FLT.Mazur.WeierstrassChangeParameter
 public import FLT.Mazur.WeierstrassChangePointedGeneralizedIso
 public import FLT.Mazur.WeierstrassChangeSubgroupScheme
+public import FLT.Mazur.WeierstrassCharacterCoefficientNaturality
 public import FLT.Mazur.WeierstrassChartArithmeticRestriction
 public import FLT.Mazur.WeierstrassChartBaseChange
 public import FLT.Mazur.WeierstrassChartBaseChangeSquare
