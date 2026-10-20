@@ -14259,6 +14259,7 @@ public import FLT.Mazur.WeierstrassDividedFiniteProper
 public import FLT.Mazur.WeierstrassDividedFiniteResidueNodes
 public import FLT.Mazur.WeierstrassDividedFiniteResidueOverlap
 public import FLT.Mazur.WeierstrassDividedFiniteSecantInput
+public import FLT.Mazur.WeierstrassDividedFiniteSmoothInput
 public import FLT.Mazur.WeierstrassDividedFiniteSmoothOpen
 public import FLT.Mazur.WeierstrassDividedFiniteStageRetention
 public import FLT.Mazur.WeierstrassDividedFiniteTensorAtlas
@@ -14692,11 +14693,15 @@ public import FLT.Mazur.WeierstrassDividedOneRetainedNodeBase
 public import FLT.Mazur.WeierstrassDividedOneSeedOrientation
 public import FLT.Mazur.WeierstrassDividedOneSeedState
 public import FLT.Mazur.WeierstrassDividedOppositeBoundarySupport
+public import FLT.Mazur.WeierstrassDividedOppositeInputs
+public import FLT.Mazur.WeierstrassDividedOppositeSecantDomain
 public import FLT.Mazur.WeierstrassDividedOrderedAdjacentComponents
 public import FLT.Mazur.WeierstrassDividedOrderedPairCoverage
 public import FLT.Mazur.WeierstrassDividedOrderedRetainedSections
 public import FLT.Mazur.WeierstrassDividedOriginalNodeBase
 public import FLT.Mazur.WeierstrassDividedOriginalScaleOpen
+public import FLT.Mazur.WeierstrassDividedOriginalSmoothPresentation
+public import FLT.Mazur.WeierstrassDividedOriginalSmoothScale
 public import FLT.Mazur.WeierstrassDividedOriginalXOpen
 public import FLT.Mazur.WeierstrassDividedPairSecant
 public import FLT.Mazur.WeierstrassDividedPairSecantEvaluation
@@ -14937,6 +14942,7 @@ public import FLT.Mazur.WeierstrassDividedResolvedPartialAddition
 public import FLT.Mazur.WeierstrassDividedResolvedProductOpens
 public import FLT.Mazur.WeierstrassDividedResolvedProductOverlap
 public import FLT.Mazur.WeierstrassDividedResolvedSecant
+public import FLT.Mazur.WeierstrassDividedResolvedSecantPoint
 public import FLT.Mazur.WeierstrassDividedResolvedSmoothAction
 public import FLT.Mazur.WeierstrassDividedResolvedSmoothActionLaws
 public import FLT.Mazur.WeierstrassDividedResolvedSmoothActionSquare
@@ -15004,7 +15010,10 @@ public import FLT.Mazur.WeierstrassDividedRevisedTerminalReflection
 public import FLT.Mazur.WeierstrassDividedRevisedTwistedIso
 public import FLT.Mazur.WeierstrassDividedSecantComparison
 public import FLT.Mazur.WeierstrassDividedSecantFormula
+public import FLT.Mazur.WeierstrassDividedSecantPointGeometry
+public import FLT.Mazur.WeierstrassDividedSecantRefinementComparison
 public import FLT.Mazur.WeierstrassDividedSecantResidue
+public import FLT.Mazur.WeierstrassDividedSecantSmoothPoint
 public import FLT.Mazur.WeierstrassDividedSecantSource
 public import FLT.Mazur.WeierstrassDividedSecondAtlasNodeRestriction
 public import FLT.Mazur.WeierstrassDividedSecondJointAtlas
@@ -15256,6 +15265,7 @@ public import FLT.Mazur.WeierstrassDividedTwoSeedState
 public import FLT.Mazur.WeierstrassDividedVariableInitialIntersection
 public import FLT.Mazur.WeierstrassDividedVariableLabelIntersections
 public import FLT.Mazur.WeierstrassDividedVariableRetainedIntersection
+public import FLT.Mazur.WeierstrassDividedVerticalSmooth
 public import FLT.Mazur.WeierstrassDividedZeroBoundaryFunctions
 public import FLT.Mazur.WeierstrassDividedZeroClosingAtlasBase
 public import FLT.Mazur.WeierstrassDividedZeroClosingFactorBase
