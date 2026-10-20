@@ -3602,6 +3602,7 @@ public import FLT.Mazur.ArbitraryPicardAffineEtaleChart
 public import FLT.Mazur.ArbitraryPicardEtaleTranslation
 public import FLT.Mazur.ArithmeticOneGonArbitrarySubgroupPullback
 public import FLT.Mazur.ArithmeticOneGonBoundaryFiber
+public import FLT.Mazur.ArithmeticOneGonChangedSubgroupAmple
 public import FLT.Mazur.ArithmeticOneGonFamily
 public import FLT.Mazur.ArithmeticOneGonFiberTorus
 public import FLT.Mazur.ArithmeticOneGonFieldFibers
@@ -4005,6 +4006,7 @@ public import FLT.Mazur.CechSortingRecursiveHomotopy
 public import FLT.Mazur.CechSortingTupleChains
 public import FLT.Mazur.CharacterAlgebraScalarExtension
 public import FLT.Mazur.CharacterCoefficientCartesian
+public import FLT.Mazur.CharacterCoefficientHomDetection
 public import FLT.Mazur.CharacterCoefficientSeparatedExt
 public import FLT.Mazur.CharacterFiniteCoefficientModel
 public import FLT.Mazur.CharacterGroupBaseChange
@@ -8572,9 +8574,15 @@ public import FLT.Mazur.OneGonAdicPuncturedModuli
 public import FLT.Mazur.OneGonAdicRecoveredSmoothFactor
 public import FLT.Mazur.OneGonAdicReductionCartesian
 public import FLT.Mazur.OneGonAdicSmoothFactorRecovery
+public import FLT.Mazur.OneGonAdicSmoothGroupRecovery
+public import FLT.Mazur.OneGonAdicSmoothModelAmple
+public import FLT.Mazur.OneGonAdicSmoothModelCharacters
 public import FLT.Mazur.OneGonAdicSmoothModelClosed
+public import FLT.Mazur.OneGonAdicSmoothModelCyclicity
+public import FLT.Mazur.OneGonAdicSmoothModelHom
 public import FLT.Mazur.OneGonAdicSmoothModelRecovery
 public import FLT.Mazur.OneGonAdicSmoothModelReduction
+public import FLT.Mazur.OneGonAdicSmoothModelSubgroup
 public import FLT.Mazur.OneGonAdicSmoothProjection
 public import FLT.Mazur.OneGonAdicSubgroupCartier
 public import FLT.Mazur.OneGonAdicSubgroupReductionIdeal
@@ -8663,7 +8671,9 @@ public import FLT.Mazur.OneGonRootsOfUnityPrimePowerCyclic
 public import FLT.Mazur.OneGonRootsOfUnitySubgroup
 public import FLT.Mazur.OneGonScalarExtension
 public import FLT.Mazur.OneGonSeparated
+public import FLT.Mazur.OneGonSmoothCoefficientGroup
 public import FLT.Mazur.OneGonSmoothCoefficientProjection
+public import FLT.Mazur.OneGonSmoothCoefficientTower
 public import FLT.Mazur.OneGonSmoothEquationProjection
 public import FLT.Mazur.OneGonSmoothingAffinePresentation
 public import FLT.Mazur.OneGonSmoothingAuxiliaryOverlap
@@ -8929,6 +8939,8 @@ public import FLT.Mazur.OverPullbackLocalPushout
 public import FLT.Mazur.OverPullbackSection
 public import FLT.Mazur.OverPullbackSectionComposition
 public import FLT.Mazur.OverPullbackSectionMonoidal
+public import FLT.Mazur.OverPullbackTowerComparison
+public import FLT.Mazur.OverPullbackTowerGroups
 public import FLT.Mazur.PadicValuationArithmetic
 public import FLT.Mazur.PadicValuationRing
 public import FLT.Mazur.PairedAwayLocalization
@@ -14776,6 +14788,7 @@ public import FLT.Mazur.WeierstrassDividedFiniteFactoredBranchLift
 public import FLT.Mazur.WeierstrassDividedFiniteFactoredBranchNodal
 public import FLT.Mazur.WeierstrassDividedFiniteFactoredBranchPartial
 public import FLT.Mazur.WeierstrassDividedFiniteFactoredBranchTerminal
+public import FLT.Mazur.WeierstrassDividedFiniteFamilyComparison
 public import FLT.Mazur.WeierstrassDividedFiniteFlat
 public import FLT.Mazur.WeierstrassDividedFiniteFlatBranchLift
 public import FLT.Mazur.WeierstrassDividedFiniteFlatSourceExt
@@ -14861,6 +14874,7 @@ public import FLT.Mazur.WeierstrassDividedFirstResidualOrientation
 public import FLT.Mazur.WeierstrassDividedFirstSuccessorAction
 public import FLT.Mazur.WeierstrassDividedFirstUnitAction
 public import FLT.Mazur.WeierstrassDividedFiveRegimeAmbientAddition
+public import FLT.Mazur.WeierstrassDividedFiveReindexedAmbientAddition
 public import FLT.Mazur.WeierstrassDividedFiveSuppliedAmbientAddition
 public import FLT.Mazur.WeierstrassDividedFixedTerminalBoundary
 public import FLT.Mazur.WeierstrassDividedFixedTerminalParameterIso
@@ -14982,6 +14996,7 @@ public import FLT.Mazur.WeierstrassDividedGlobalCoefficientStep
 public import FLT.Mazur.WeierstrassDividedGlobalConicCoordinates
 public import FLT.Mazur.WeierstrassDividedGlobalConicIntersection
 public import FLT.Mazur.WeierstrassDividedGlobalCoordinateSections
+public import FLT.Mazur.WeierstrassDividedGlobalFamilyComparison
 public import FLT.Mazur.WeierstrassDividedGlobalFiniteActionProduct
 public import FLT.Mazur.WeierstrassDividedGlobalFiniteFlat
 public import FLT.Mazur.WeierstrassDividedGlobalFiniteGluing
@@ -15008,6 +15023,7 @@ public import FLT.Mazur.WeierstrassDividedGlobalRegularLift
 public import FLT.Mazur.WeierstrassDividedGlobalResidueNodes
 public import FLT.Mazur.WeierstrassDividedGlobalResidueOverlap
 public import FLT.Mazur.WeierstrassDividedGlobalSmoothAdvance
+public import FLT.Mazur.WeierstrassDividedGlobalSmoothAtlas
 public import FLT.Mazur.WeierstrassDividedGlobalSmoothTransition
 public import FLT.Mazur.WeierstrassDividedGlobalStepExterior
 public import FLT.Mazur.WeierstrassDividedGlobalStepFlatExt
@@ -15707,8 +15723,11 @@ public import FLT.Mazur.WeierstrassDividedResidueNormalizationCompatibility
 public import FLT.Mazur.WeierstrassDividedResidueOrderedNormalization
 public import FLT.Mazur.WeierstrassDividedResidueSplitCubic
 public import FLT.Mazur.WeierstrassDividedResidueTangentNormalization
+public import FLT.Mazur.WeierstrassDividedResolvedAtlasCover
+public import FLT.Mazur.WeierstrassDividedResolvedAtlasPairIso
 public import FLT.Mazur.WeierstrassDividedResolvedNegation
 public import FLT.Mazur.WeierstrassDividedResolvedOriginalOpen
+public import FLT.Mazur.WeierstrassDividedResolvedPairAtlas
 public import FLT.Mazur.WeierstrassDividedResolvedPartialAddition
 public import FLT.Mazur.WeierstrassDividedResolvedProductOpens
 public import FLT.Mazur.WeierstrassDividedResolvedProductOverlap
@@ -15862,6 +15881,7 @@ public import FLT.Mazur.WeierstrassDividedSkippedTensorIntersection
 public import FLT.Mazur.WeierstrassDividedSmoothActionCoefficientSquare
 public import FLT.Mazur.WeierstrassDividedSmoothCoefficientEmbedding
 public import FLT.Mazur.WeierstrassDividedSmoothCoefficientUnique
+public import FLT.Mazur.WeierstrassDividedSmoothFamilyComparison
 public import FLT.Mazur.WeierstrassDividedSmoothSuccessiveCoefficientAction
 public import FLT.Mazur.WeierstrassDividedSmoothSuccessiveIntegralAction
 public import FLT.Mazur.WeierstrassDividedSmoothSuccessiveResidueAction
@@ -17592,6 +17612,7 @@ public import FLT.Mazur.WeierstrassSmoothGoodReductionAddition
 public import FLT.Mazur.WeierstrassSmoothGoodReductionGroup
 public import FLT.Mazur.WeierstrassSmoothGoodReductionLocal
 public import FLT.Mazur.WeierstrassSmoothGroup
+public import FLT.Mazur.WeierstrassSmoothGroupEquationTransport
 public import FLT.Mazur.WeierstrassSmoothGroupOperations
 public import FLT.Mazur.WeierstrassSmoothHorizontalActionAlgebra
 public import FLT.Mazur.WeierstrassSmoothHorizontalConcreteAction
