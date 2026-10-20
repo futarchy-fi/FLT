@@ -7612,6 +7612,7 @@ public import FLT.Mazur.InvariantIdealEquivalence
 public import FLT.Mazur.InvariantIdealRelation
 public import FLT.Mazur.InvariantIdealRelationCoefficientMembership
 public import FLT.Mazur.InvariantIdealRelationCoefficients
+public import FLT.Mazur.InvariantIsomorphismRestriction
 public import FLT.Mazur.InvariantLocalizationAction
 public import FLT.Mazur.InvariantLocalizationComparison
 public import FLT.Mazur.InvariantLocalizationCoordinates
