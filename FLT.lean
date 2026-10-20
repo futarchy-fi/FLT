@@ -15229,6 +15229,7 @@ public import FLT.Mazur.WeierstrassDividedSecondResidualLifts
 public import FLT.Mazur.WeierstrassDividedSecondResidualPunctures
 public import FLT.Mazur.WeierstrassDividedSecondResidualRestriction
 public import FLT.Mazur.WeierstrassDividedShearBranchCoverage
+public import FLT.Mazur.WeierstrassDividedShearBranchOverlap
 public import FLT.Mazur.WeierstrassDividedShearBranchSource
 public import FLT.Mazur.WeierstrassDividedShearContraction
 public import FLT.Mazur.WeierstrassDividedShearData
