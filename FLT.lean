@@ -15203,6 +15203,7 @@ public import FLT.Mazur.WeierstrassDividedSuccessorRetainedCoordinates
 public import FLT.Mazur.WeierstrassDividedSuccessorRetainedGluing
 public import FLT.Mazur.WeierstrassDividedSuccessorUnitAction
 public import FLT.Mazur.WeierstrassDividedTangentBranchContraction
+public import FLT.Mazur.WeierstrassDividedTangentBranchDeeperCoordinates
 public import FLT.Mazur.WeierstrassDividedTangentBranchEquation
 public import FLT.Mazur.WeierstrassDividedTangentBranchFormula
 public import FLT.Mazur.WeierstrassDividedTangentBranchMap
