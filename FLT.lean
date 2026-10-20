@@ -14534,6 +14534,7 @@ public import FLT.Mazur.WeierstrassDividedFiniteNegationContraction
 public import FLT.Mazur.WeierstrassDividedFiniteNegationCover
 public import FLT.Mazur.WeierstrassDividedFiniteNegationOverlap
 public import FLT.Mazur.WeierstrassDividedFiniteNodalFirstBranchLift
+public import FLT.Mazur.WeierstrassDividedFiniteNodalLowerLift
 public import FLT.Mazur.WeierstrassDividedFiniteNodalRefinedBranchLift
 public import FLT.Mazur.WeierstrassDividedFiniteNodalRefinedBranchTerminal
 public import FLT.Mazur.WeierstrassDividedFiniteNodeComponents
