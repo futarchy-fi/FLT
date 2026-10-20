@@ -6827,6 +6827,7 @@ public import FLT.Mazur.HilbertLabelResidualLifts
 public import FLT.Mazur.HilbertLocalResidueBasis
 public import FLT.Mazur.HilbertLocalizationIsomorphismOpen
 public import FLT.Mazur.HilbertLocalizedTupleBasis
+public import FLT.Mazur.HilbertLocallyFreeTraceUnit
 public import FLT.Mazur.HilbertMaximalScalarCompleteChart
 public import FLT.Mazur.HilbertMinimalCompleteNeighborhood
 public import FLT.Mazur.HilbertMinimalScalarFixedRefinements
