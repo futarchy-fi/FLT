@@ -8737,6 +8737,7 @@ public import FLT.Mazur.OpenImmersionImageUnionIsomorphism
 public import FLT.Mazur.OpenImmersionImageUnionPullback
 public import FLT.Mazur.OpenImmersionImageUnionPullbackLift
 public import FLT.Mazur.OpenImmersionImageUnionReindex
+public import FLT.Mazur.OpenImmersionImageUnionSingleOverlap
 public import FLT.Mazur.OpenImmersionSectionComparison
 public import FLT.Mazur.OpenIntersectionClosedProjection
 public import FLT.Mazur.OpenIntersectionProduct
@@ -14509,7 +14510,10 @@ public import FLT.Mazur.WeierstrassDividedDeepAmbientAddition
 public import FLT.Mazur.WeierstrassDividedDeepAmbientCoverage
 public import FLT.Mazur.WeierstrassDividedDeepCommonFormula
 public import FLT.Mazur.WeierstrassDividedDeepCommonModel
+public import FLT.Mazur.WeierstrassDividedDeepCrossDepthSecant
+public import FLT.Mazur.WeierstrassDividedDeepCrossDepthTangent
 public import FLT.Mazur.WeierstrassDividedDeepExtendedOverlap
+public import FLT.Mazur.WeierstrassDividedDeepIntermediateOverlap
 public import FLT.Mazur.WeierstrassDividedDeepLeftOverlap
 public import FLT.Mazur.WeierstrassDividedDeepNodalBranchCommonOutput
 public import FLT.Mazur.WeierstrassDividedDeepNodalNegativeBranchContraction
@@ -14521,6 +14525,7 @@ public import FLT.Mazur.WeierstrassDividedDeepNodalTangentNeighborhoodCover
 public import FLT.Mazur.WeierstrassDividedDeepNormalizedBranchContraction
 public import FLT.Mazur.WeierstrassDividedDeepPartialOverlap
 public import FLT.Mazur.WeierstrassDividedDeepPromotedAddition
+public import FLT.Mazur.WeierstrassDividedDeepQuadrupleAmbientOverlap
 public import FLT.Mazur.WeierstrassDividedDeepReciprocalExtendedOverlap
 public import FLT.Mazur.WeierstrassDividedDeepReciprocalExtendedPullback
 public import FLT.Mazur.WeierstrassDividedDeepReciprocalOverlap
@@ -14529,8 +14534,10 @@ public import FLT.Mazur.WeierstrassDividedDeepReciprocalTangent
 public import FLT.Mazur.WeierstrassDividedDeepRelativeSmoothCoverage
 public import FLT.Mazur.WeierstrassDividedDeepRightOverlap
 public import FLT.Mazur.WeierstrassDividedDeepSecantOverlap
+public import FLT.Mazur.WeierstrassDividedDeepShallowOverlap
 public import FLT.Mazur.WeierstrassDividedDeepTangentExtendedOverlap
 public import FLT.Mazur.WeierstrassDividedDeepTangentOverlap
+public import FLT.Mazur.WeierstrassDividedDeepTripleOverlap
 public import FLT.Mazur.WeierstrassDividedDepthAffine
 public import FLT.Mazur.WeierstrassDividedDepthAvailability
 public import FLT.Mazur.WeierstrassDividedDepthBoundary
@@ -14833,10 +14840,14 @@ public import FLT.Mazur.WeierstrassDividedFirstResidualIncoming
 public import FLT.Mazur.WeierstrassDividedFirstResidualOrientation
 public import FLT.Mazur.WeierstrassDividedFirstSuccessorAction
 public import FLT.Mazur.WeierstrassDividedFirstUnitAction
+public import FLT.Mazur.WeierstrassDividedFiveRegimeAmbientAddition
+public import FLT.Mazur.WeierstrassDividedFiveSuppliedAmbientAddition
 public import FLT.Mazur.WeierstrassDividedFixedTerminalBoundary
 public import FLT.Mazur.WeierstrassDividedFixedTerminalParameterIso
 public import FLT.Mazur.WeierstrassDividedFixedTerminalReduction
 public import FLT.Mazur.WeierstrassDividedFixedTerminalRestriction
+public import FLT.Mazur.WeierstrassDividedFourRegimeAmbientAddition
+public import FLT.Mazur.WeierstrassDividedFourRegimeQuadrupleAmbientOverlap
 public import FLT.Mazur.WeierstrassDividedFourthAtlas
 public import FLT.Mazur.WeierstrassDividedFourthAtlasClosing
 public import FLT.Mazur.WeierstrassDividedFourthAtlasIdentification
@@ -15082,6 +15093,8 @@ public import FLT.Mazur.WeierstrassDividedInteriorHorizontalCyclicAction
 public import FLT.Mazur.WeierstrassDividedInteriorHorizontalCyclicInput
 public import FLT.Mazur.WeierstrassDividedInteriorHorizontalCyclicPair
 public import FLT.Mazur.WeierstrassDividedInteriorTensorOutputGeometry
+public import FLT.Mazur.WeierstrassDividedIntermediateDeepAmbientOverlap
+public import FLT.Mazur.WeierstrassDividedIntermediateQuadrupleAmbientOverlap
 public import FLT.Mazur.WeierstrassDividedKernelClosure
 public import FLT.Mazur.WeierstrassDividedKernelClosureNegation
 public import FLT.Mazur.WeierstrassDividedKernelContraction
@@ -15148,6 +15161,8 @@ public import FLT.Mazur.WeierstrassDividedNodalIntermediateBranchOutput
 public import FLT.Mazur.WeierstrassDividedNodalIntermediateBranchSmooth
 public import FLT.Mazur.WeierstrassDividedNodalIntermediateCommonFormula
 public import FLT.Mazur.WeierstrassDividedNodalIntermediateCommonModel
+public import FLT.Mazur.WeierstrassDividedNodalIntermediateCrossDepthSecant
+public import FLT.Mazur.WeierstrassDividedNodalIntermediateCrossDepthTangent
 public import FLT.Mazur.WeierstrassDividedNodalIntermediateExtendedOverlap
 public import FLT.Mazur.WeierstrassDividedNodalIntermediateLeftOverlap
 public import FLT.Mazur.WeierstrassDividedNodalIntermediateNegativeBranchContraction
@@ -15174,6 +15189,7 @@ public import FLT.Mazur.WeierstrassDividedNodalIntermediateTangentGluing
 public import FLT.Mazur.WeierstrassDividedNodalIntermediateTangentNeighborhood
 public import FLT.Mazur.WeierstrassDividedNodalIntermediateTangentNeighborhoodCover
 public import FLT.Mazur.WeierstrassDividedNodalIntermediateTangentOverlap
+public import FLT.Mazur.WeierstrassDividedNodalIntermediateTripleOverlap
 public import FLT.Mazur.WeierstrassDividedNodalLowerCoefficients
 public import FLT.Mazur.WeierstrassDividedNodalLowerNormalization
 public import FLT.Mazur.WeierstrassDividedNodalLowerOutput
@@ -15593,7 +15609,9 @@ public import FLT.Mazur.WeierstrassDividedQuadrupleAmbientAddition
 public import FLT.Mazur.WeierstrassDividedQuadrupleAmbientCoverage
 public import FLT.Mazur.WeierstrassDividedQuadrupleCommonFormula
 public import FLT.Mazur.WeierstrassDividedQuadrupleCommonModel
+public import FLT.Mazur.WeierstrassDividedQuadrupleDeepOverlap
 public import FLT.Mazur.WeierstrassDividedQuadrupleExtendedOverlap
+public import FLT.Mazur.WeierstrassDividedQuadrupleIntermediateOverlap
 public import FLT.Mazur.WeierstrassDividedQuadrupleLeftOverlap
 public import FLT.Mazur.WeierstrassDividedQuadruplePartialOverlap
 public import FLT.Mazur.WeierstrassDividedQuadrupleReciprocalExtendedOverlap
@@ -15604,9 +15622,11 @@ public import FLT.Mazur.WeierstrassDividedQuadrupleReciprocalTangent
 public import FLT.Mazur.WeierstrassDividedQuadrupleRelativeSmoothCoverage
 public import FLT.Mazur.WeierstrassDividedQuadrupleRightOverlap
 public import FLT.Mazur.WeierstrassDividedQuadrupleSecantOverlap
+public import FLT.Mazur.WeierstrassDividedQuadrupleShallowOverlap
 public import FLT.Mazur.WeierstrassDividedQuadrupleSuppliedAmbient
 public import FLT.Mazur.WeierstrassDividedQuadrupleTangentExtendedOverlap
 public import FLT.Mazur.WeierstrassDividedQuadrupleTangentOverlap
+public import FLT.Mazur.WeierstrassDividedQuadrupleTripleOverlap
 public import FLT.Mazur.WeierstrassDividedReciprocalExtendedAddition
 public import FLT.Mazur.WeierstrassDividedReciprocalExtendedOverlap
 public import FLT.Mazur.WeierstrassDividedReciprocalFormula
@@ -15791,6 +15811,9 @@ public import FLT.Mazur.WeierstrassDividedSecondResidualIdentification
 public import FLT.Mazur.WeierstrassDividedSecondResidualLifts
 public import FLT.Mazur.WeierstrassDividedSecondResidualPunctures
 public import FLT.Mazur.WeierstrassDividedSecondResidualRestriction
+public import FLT.Mazur.WeierstrassDividedShallowDeepAmbientOverlap
+public import FLT.Mazur.WeierstrassDividedShallowQuadrupleAmbientOverlap
+public import FLT.Mazur.WeierstrassDividedShallowTripleAmbientOverlap
 public import FLT.Mazur.WeierstrassDividedShearBranchCoverage
 public import FLT.Mazur.WeierstrassDividedShearBranchOverlap
 public import FLT.Mazur.WeierstrassDividedShearBranchOverlapCoverage
@@ -16052,6 +16075,9 @@ public import FLT.Mazur.WeierstrassDividedThreeFiniteState
 public import FLT.Mazur.WeierstrassDividedThreeFiniteTransitions
 public import FLT.Mazur.WeierstrassDividedThreeNodeRestriction
 public import FLT.Mazur.WeierstrassDividedThreeOpenRestriction
+public import FLT.Mazur.WeierstrassDividedThreeRegimeAmbientAddition
+public import FLT.Mazur.WeierstrassDividedThreeRegimeAmbientRetention
+public import FLT.Mazur.WeierstrassDividedThreeRegimeDeepAmbientOverlap
 public import FLT.Mazur.WeierstrassDividedThreeSeedAtlas
 public import FLT.Mazur.WeierstrassDividedThreeSeedAtlasRestriction
 public import FLT.Mazur.WeierstrassDividedThreeSeedAtlasSystem
@@ -16069,8 +16095,12 @@ public import FLT.Mazur.WeierstrassDividedTripleBranchOutput
 public import FLT.Mazur.WeierstrassDividedTripleBranchSecantContraction
 public import FLT.Mazur.WeierstrassDividedTripleCommonFormula
 public import FLT.Mazur.WeierstrassDividedTripleCommonModel
+public import FLT.Mazur.WeierstrassDividedTripleCrossDepthSecant
+public import FLT.Mazur.WeierstrassDividedTripleCrossDepthTangent
+public import FLT.Mazur.WeierstrassDividedTripleDeepAmbientOverlap
 public import FLT.Mazur.WeierstrassDividedTripleDepthCoefficients
 public import FLT.Mazur.WeierstrassDividedTripleExtendedOverlap
+public import FLT.Mazur.WeierstrassDividedTripleIntermediateAmbientOverlap
 public import FLT.Mazur.WeierstrassDividedTripleLeftOverlap
 public import FLT.Mazur.WeierstrassDividedTripleNegativeBranchContraction
 public import FLT.Mazur.WeierstrassDividedTripleNegativeBranchOutput
@@ -16079,6 +16109,7 @@ public import FLT.Mazur.WeierstrassDividedTriplePartialOverlap
 public import FLT.Mazur.WeierstrassDividedTriplePromotedAddition
 public import FLT.Mazur.WeierstrassDividedTriplePromotedSecant
 public import FLT.Mazur.WeierstrassDividedTriplePromotedTangent
+public import FLT.Mazur.WeierstrassDividedTripleQuadrupleAmbientOverlap
 public import FLT.Mazur.WeierstrassDividedTripleReciprocalExtendedOverlap
 public import FLT.Mazur.WeierstrassDividedTripleReciprocalExtendedPullback
 public import FLT.Mazur.WeierstrassDividedTripleReciprocalOverlap
@@ -16093,6 +16124,7 @@ public import FLT.Mazur.WeierstrassDividedTripleSecantGluing
 public import FLT.Mazur.WeierstrassDividedTripleSecantNeighborhood
 public import FLT.Mazur.WeierstrassDividedTripleSecantNeighborhoodCover
 public import FLT.Mazur.WeierstrassDividedTripleSecantOverlap
+public import FLT.Mazur.WeierstrassDividedTripleShallowOverlap
 public import FLT.Mazur.WeierstrassDividedTripleTangentBranchCoverage
 public import FLT.Mazur.WeierstrassDividedTripleTangentExtendedOverlap
 public import FLT.Mazur.WeierstrassDividedTripleTangentGluing
