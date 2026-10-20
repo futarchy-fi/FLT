@@ -12814,6 +12814,7 @@ public import FLT.Mazur.SuccessiveIncidenceCoefficientMap
 public import FLT.Mazur.SuccessiveIncidenceLaurentRestriction
 public import FLT.Mazur.SuccessiveIncidencePolygonChart
 public import FLT.Mazur.SuccessiveIncidencePolygonRestriction
+public import FLT.Mazur.SupportedIdealPowerComparison
 public import FLT.Mazur.SupportedReductionLocalization
 public import FLT.Mazur.SurjectiveAlgHomKernelEquiv
 public import FLT.Mazur.SurjectiveDominantEpi
