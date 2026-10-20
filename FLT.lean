@@ -14664,6 +14664,7 @@ public import FLT.Mazur.WeierstrassDividedOrderedPairCoverage
 public import FLT.Mazur.WeierstrassDividedOrderedRetainedSections
 public import FLT.Mazur.WeierstrassDividedOriginalNodeBase
 public import FLT.Mazur.WeierstrassDividedOriginalScaleOpen
+public import FLT.Mazur.WeierstrassDividedOriginalSmoothScale
 public import FLT.Mazur.WeierstrassDividedOriginalXOpen
 public import FLT.Mazur.WeierstrassDividedPairSecant
 public import FLT.Mazur.WeierstrassDividedPairSecantEvaluation
