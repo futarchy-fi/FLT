@@ -3842,6 +3842,8 @@ public import FLT.Mazur.BlowupReesRatioTransition
 public import FLT.Mazur.BlowupReesZeroComponent
 public import FLT.Mazur.BoundaryCorrectionAdicAmbient
 public import FLT.Mazur.BoundaryCorrectionAdicCertificate
+public import FLT.Mazur.BoundaryCorrectionAdicEquationIdeal
+public import FLT.Mazur.BoundaryCorrectionAdicEquationSupport
 public import FLT.Mazur.BoundaryCorrectionAmbientEquations
 public import FLT.Mazur.BoundaryCorrectionBoundaryImage
 public import FLT.Mazur.BoundaryCorrectionBoundaryKernel
@@ -6026,6 +6028,7 @@ public import FLT.Mazur.FinitePrincipalChartIntegerDescent
 public import FLT.Mazur.FinitePrincipalIdealPatching
 public import FLT.Mazur.FinitePrincipalImageCover
 public import FLT.Mazur.FinitePrincipalTargetRefinement
+public import FLT.Mazur.FiniteProductAdicIdeals
 public import FLT.Mazur.FiniteProductDirectSum
 public import FLT.Mazur.FiniteProjectiveAffineNorm
 public import FLT.Mazur.FiniteProjectiveAffineNormCharts
@@ -7431,6 +7434,7 @@ public import FLT.Mazur.IdealPullbackVanishingCriterion
 public import FLT.Mazur.IdealQuotientExact
 public import FLT.Mazur.IdealQuotientSectionLift
 public import FLT.Mazur.IdealSheafAdicStalkSeparation
+public import FLT.Mazur.IdealSheafAffineTestErrors
 public import FLT.Mazur.IdealSheafClosedTransitions
 public import FLT.Mazur.IdealSheafFactorizationSupport
 public import FLT.Mazur.IdealSheafFlatDetection
@@ -11425,7 +11429,9 @@ public import FLT.Mazur.RankStageInitialBoundaryLifting
 public import FLT.Mazur.RankStageInvariantTransitions
 public import FLT.Mazur.RankStageOriginalAffineBoundaryTower
 public import FLT.Mazur.RankStageOriginalAffineCompatibility
+public import FLT.Mazur.RankStageOriginalAffineEquationErrors
 public import FLT.Mazur.RankStageOriginalAffineRepresentatives
+public import FLT.Mazur.RankStageOriginalAffineTestValues
 public import FLT.Mazur.RankStageOriginalBoundaryCoefficients
 public import FLT.Mazur.RankStageOriginalBoundaryRestriction
 public import FLT.Mazur.RankStageOriginalBoundaryTower
