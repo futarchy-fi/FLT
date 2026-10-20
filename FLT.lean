@@ -15395,6 +15395,7 @@ public import FLT.Mazur.WeierstrassDividedTangentCechIso
 public import FLT.Mazur.WeierstrassDividedTangentConjugation
 public import FLT.Mazur.WeierstrassDividedTangentExtendedAddition
 public import FLT.Mazur.WeierstrassDividedTangentExtendedOverlap
+public import FLT.Mazur.WeierstrassDividedTangentFlatSourceExt
 public import FLT.Mazur.WeierstrassDividedTangentFormula
 public import FLT.Mazur.WeierstrassDividedTangentLeftOverlap
 public import FLT.Mazur.WeierstrassDividedTangentOriginalAction
