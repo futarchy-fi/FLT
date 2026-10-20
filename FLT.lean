@@ -14748,6 +14748,7 @@ public import FLT.Mazur.WeierstrassDividedNegativeBranchSource
 public import FLT.Mazur.WeierstrassDividedNegativeTangentOutput
 public import FLT.Mazur.WeierstrassDividedNegativeTangentScheme
 public import FLT.Mazur.WeierstrassDividedNegativeTangentSecantOutput
+public import FLT.Mazur.WeierstrassDividedNegativeTangentSecantScheme
 public import FLT.Mazur.WeierstrassDividedNegativeTangentSlope
 public import FLT.Mazur.WeierstrassDividedNilpotentEarlierTerminal
 public import FLT.Mazur.WeierstrassDividedNilpotentInfinity
