@@ -13013,6 +13013,7 @@ public import FLT.Mazur.StructureModuleScalarTransitions
 public import FLT.Mazur.StructureRingCohomologyIso
 public import FLT.Mazur.SubframeDegreeUnitCover
 public import FLT.Mazur.SubfunctorRepresentedPullback
+public import FLT.Mazur.SubgroupIntrinsicCartierGenerator
 public import FLT.Mazur.SubmoduleQuotientScalarReduction
 public import FLT.Mazur.SubmoduleReductionFlat
 public import FLT.Mazur.SubmoduleReductionKernel
