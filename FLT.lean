@@ -2707,6 +2707,7 @@ public import FLT.Mazur.AdditiveComplexSumHomologyInclusion
 public import FLT.Mazur.AdditiveSheafModuleTransport
 public import FLT.Mazur.AdditiveSheafMultiplication
 public import FLT.Mazur.AdicAffineMorphismLift
+public import FLT.Mazur.AdicBoundaryCorrectionDescent
 public import FLT.Mazur.AdicCommonModelFiltration
 public import FLT.Mazur.AdicCompleteAffinePoints
 public import FLT.Mazur.AdicCompleteLocalPoints
