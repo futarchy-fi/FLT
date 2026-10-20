@@ -6934,11 +6934,16 @@ public import FLT.Mazur.HilbertRelatedFixedScalarCharts
 public import FLT.Mazur.HilbertRelatedIrreducibleCharacters
 public import FLT.Mazur.HilbertRelatedPrincipalCharacters
 public import FLT.Mazur.HilbertRepeatedMonomialChart
+public import FLT.Mazur.HilbertRequiredScalarBoundaryLifts
 public import FLT.Mazur.HilbertRequiredScalarFiniteCover
 public import FLT.Mazur.HilbertRequiredScalarImage
 public import FLT.Mazur.HilbertRequiredScalarInfinitesimals
 public import FLT.Mazur.HilbertResidualRankCeiling
 public import FLT.Mazur.HilbertSameAmbientChartIso
+public import FLT.Mazur.HilbertScalarChartAtlasCorrections
+public import FLT.Mazur.HilbertScalarChartBoundaryData
+public import FLT.Mazur.HilbertScalarChartBoundaryPullback
+public import FLT.Mazur.HilbertScalarChartBoundaryTests
 public import FLT.Mazur.HilbertSourceActionRelationGraph
 public import FLT.Mazur.HilbertSourceActualMultiplierIdeal
 public import FLT.Mazur.HilbertSourceBadAffineChartEquations
@@ -11648,6 +11653,7 @@ public import FLT.Mazur.ScalarMinimalCharacterNeighborhood
 public import FLT.Mazur.ScalarMinimalCharacterPropagation
 public import FLT.Mazur.ScalarNilpotenceFlatBaseChange
 public import FLT.Mazur.ScalarNilpotenceMinimalFiber
+public import FLT.Mazur.ScalarPrimeThickeningTransitions
 public import FLT.Mazur.ScalarPrimeThickenings
 public import FLT.Mazur.ScalarQuotientImagePresentation
 public import FLT.Mazur.ScalarQuotientImageReduction
@@ -12241,6 +12247,8 @@ public import FLT.Mazur.SchemeScalarIntegralCover
 public import FLT.Mazur.SchemeScalarMinimalEndpoint
 public import FLT.Mazur.SchemeScalarPrincipalNeighborhood
 public import FLT.Mazur.SchemeScalarPrincipalNeighborhoodFamily
+public import FLT.Mazur.SchemeScalarRelationPullback
+public import FLT.Mazur.SchemeScalarRelationTransition
 public import FLT.Mazur.SchemeScalarResidueImage
 public import FLT.Mazur.SchemeSectionFamilyProduct
 public import FLT.Mazur.SchemeSectionFrameCompatibility
