@@ -12855,6 +12855,7 @@ public import FLT.Mazur.TildePrincipalOpen
 public import FLT.Mazur.TildeSourceSectionComparison
 public import FLT.Mazur.TorusChartScalars
 public import FLT.Mazur.TorusPointUnitEquiv
+public import FLT.Mazur.TorusRootsOfUnityCartier
 public import FLT.Mazur.TorusRootsOfUnitySubgroup
 public import FLT.Mazur.TranscendentalAcyclicTranslation
 public import FLT.Mazur.TranscendentalAffineOpenOrbit
