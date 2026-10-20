@@ -14951,6 +14951,7 @@ public import FLT.Mazur.WeierstrassDividedReciprocalFormula
 public import FLT.Mazur.WeierstrassDividedReciprocalInfinityCoverage
 public import FLT.Mazur.WeierstrassDividedReciprocalInfinityInput
 public import FLT.Mazur.WeierstrassDividedReciprocalOppositeCoverage
+public import FLT.Mazur.WeierstrassDividedReciprocalOriginalCoordinates
 public import FLT.Mazur.WeierstrassDividedReciprocalOutput
 public import FLT.Mazur.WeierstrassDividedReciprocalOverlapProjections
 public import FLT.Mazur.WeierstrassDividedReciprocalSecantComparison
