@@ -2946,6 +2946,7 @@ public import FLT.Mazur.AffineEtaleFiniteFaithfulSpectrum
 public import FLT.Mazur.AffineEtaleFiniteFreeSpectrum
 public import FLT.Mazur.AffineEtaleIdentityGroundBase
 public import FLT.Mazur.AffineEtaleNilpotentLift
+public import FLT.Mazur.AffineEtaleTraceCharts
 public import FLT.Mazur.AffineEtaleTraceSurjectivity
 public import FLT.Mazur.AffineEtaleTranslationFiniteBranch
 public import FLT.Mazur.AffineEtaleTranslationNormCharts
