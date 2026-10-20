@@ -3355,6 +3355,7 @@ public import FLT.Mazur.AffineRefinementIdentity
 public import FLT.Mazur.AffineRefinementPullback
 public import FLT.Mazur.AffineRefinementReconstructionMap
 public import FLT.Mazur.AffineRefinementReconstructionRecognition
+public import FLT.Mazur.AffineRelationCharpoly
 public import FLT.Mazur.AffineRelationNorm
 public import FLT.Mazur.AffineRelationNormNeighborhood
 public import FLT.Mazur.AffineRelativeFiberCriterion
