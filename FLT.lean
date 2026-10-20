@@ -11464,6 +11464,7 @@ public import FLT.Mazur.RankStageFiniteCoreCover
 public import FLT.Mazur.RankStageFiniteCoreCoverage
 public import FLT.Mazur.RankStageFiniteCoreDetection
 public import FLT.Mazur.RankStageFiniteCoverBoundaryTowers
+public import FLT.Mazur.RankStageFiniteInvariantDetection
 public import FLT.Mazur.RankStageInitialBoundaryLifting
 public import FLT.Mazur.RankStageInvariantOverlapErrors
 public import FLT.Mazur.RankStageInvariantTransitions
