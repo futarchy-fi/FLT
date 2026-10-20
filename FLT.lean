@@ -4241,6 +4241,7 @@ public import FLT.Mazur.CyclicCharacteristicAffineEquationPullback
 public import FLT.Mazur.CyclicCharacteristicAffineFunctionRelation
 public import FLT.Mazur.CyclicCharacteristicAffineGeometricResidual
 public import FLT.Mazur.CyclicCharacteristicAffineInvariantReconstruction
+public import FLT.Mazur.CyclicCharacteristicAffineLocalResidual
 public import FLT.Mazur.CyclicCharacteristicAffineOppositeCover
 public import FLT.Mazur.CyclicCharacteristicAffineOppositeDescent
 public import FLT.Mazur.CyclicCharacteristicAffineOppositeTests
