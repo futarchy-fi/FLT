@@ -7457,6 +7457,7 @@ public import FLT.Mazur.IntersectionUnitCocycle
 public import FLT.Mazur.IntersectionUnitCocycleRecovery
 public import FLT.Mazur.InvariantBoundaryPullback
 public import FLT.Mazur.InvariantFiniteDomainTrace
+public import FLT.Mazur.InvariantFiniteFreeTraceUnit
 public import FLT.Mazur.InvariantFiniteRelationPrincipal
 public import FLT.Mazur.InvariantFlatTensorAction
 public import FLT.Mazur.InvariantFlatTensorComparison
