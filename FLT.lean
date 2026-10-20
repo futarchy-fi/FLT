@@ -2883,6 +2883,7 @@ public import FLT.Mazur.AffineClosedModuleDescent
 public import FLT.Mazur.AffineClosedPointAlgebra
 public import FLT.Mazur.AffineClosedPointCompletion
 public import FLT.Mazur.AffineClosedPointQuotient
+public import FLT.Mazur.AffineClosedSimultaneousLifting
 public import FLT.Mazur.AffineClosureFiniteness
 public import FLT.Mazur.AffineCoalgebraDescentRecognition
 public import FLT.Mazur.AffineCoalgebraSheafNaturality
@@ -2962,7 +2963,10 @@ public import FLT.Mazur.AffineFiberProductOverlap
 public import FLT.Mazur.AffineFiberProductPairTransport
 public import FLT.Mazur.AffineFiberProductRefinementCocycle
 public import FLT.Mazur.AffineFiberwiseSectionCartier
+public import FLT.Mazur.AffineFiniteEtaleBoundaryKernelTransition
 public import FLT.Mazur.AffineFiniteEtaleBoundarySurjectivity
+public import FLT.Mazur.AffineFiniteEtalePrescribedCoefficients
+public import FLT.Mazur.AffineFiniteEtaleSimultaneousLifting
 public import FLT.Mazur.AffineFiniteFreeAtlas
 public import FLT.Mazur.AffineFiniteFreeDirectedCover
 public import FLT.Mazur.AffineFiniteFreeRelationTraceUnit
@@ -3287,6 +3291,7 @@ public import FLT.Mazur.AffineLocallyFreeRelationCharpoly
 public import FLT.Mazur.AffineLocallyFreeRelationNorm
 public import FLT.Mazur.AffineLocallyFreeRelationTrace
 public import FLT.Mazur.AffineLocallyFreeRelationTraceUnit
+public import FLT.Mazur.AffineLocallyFreeSimultaneousTrace
 public import FLT.Mazur.AffineLocallyFreeTraceSurjectivity
 public import FLT.Mazur.AffineMinimalPrimeFiniteOpen
 public import FLT.Mazur.AffineModuleCoalgebraDescent
@@ -6049,6 +6054,7 @@ public import FLT.Mazur.FiniteRelationLocalizedCoverDescent
 public import FLT.Mazur.FiniteRelationLocalizedInclusionDescent
 public import FLT.Mazur.FiniteRelationLocalizedUnionDescent
 public import FLT.Mazur.FiniteRelationLocallyClosedAffineBasis
+public import FLT.Mazur.FiniteRelationNamedDomainTransitions
 public import FLT.Mazur.FiniteRelationPrincipalCoverModels
 public import FLT.Mazur.FiniteRelationPrincipalPathQuotients
 public import FLT.Mazur.FiniteRelationPrincipalProjection
@@ -7523,6 +7529,7 @@ public import FLT.Mazur.InvariantFlatTensorComparison
 public import FLT.Mazur.InvariantGeometricFiberTests
 public import FLT.Mazur.InvariantIdealEquivalence
 public import FLT.Mazur.InvariantIdealRelation
+public import FLT.Mazur.InvariantIdealRelationCoefficients
 public import FLT.Mazur.InvariantLocalizationAction
 public import FLT.Mazur.InvariantLocalizationComparison
 public import FLT.Mazur.InvariantLocalizationCoordinates
@@ -11371,9 +11378,11 @@ public import FLT.Mazur.RankStageBoundarySeedTower
 public import FLT.Mazur.RankStageCoherentAffineCores
 public import FLT.Mazur.RankStageCoherentCoreCoverage
 public import FLT.Mazur.RankStageCompatibleCoreCoefficients
+public import FLT.Mazur.RankStageCoreBoundaryCoefficients
 public import FLT.Mazur.RankStageCoreBoundaryTransitions
 public import FLT.Mazur.RankStageCoreCoefficientTransitions
 public import FLT.Mazur.RankStageInvariantTransitions
+public import FLT.Mazur.RankStageOriginalBoundaryCoefficients
 public import FLT.Mazur.RankStageRelationTransitions
 public import FLT.Mazur.RankStageTransitionTopology
 public import FLT.Mazur.RationalCyclicCartierGenerator
