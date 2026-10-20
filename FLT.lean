@@ -8463,6 +8463,7 @@ public import FLT.Mazur.OneGonProductNormalization
 public import FLT.Mazur.OneGonProductTorus
 public import FLT.Mazur.OneGonQuotient
 public import FLT.Mazur.OneGonRetainedFiberReduced
+public import FLT.Mazur.OneGonRootsOfUnitySubgroup
 public import FLT.Mazur.OneGonScalarExtension
 public import FLT.Mazur.OneGonSeparated
 public import FLT.Mazur.OneGonSmoothEquationProjection
@@ -11754,6 +11755,13 @@ public import FLT.Mazur.RingEquivGrading
 public import FLT.Mazur.RingPairInvariantFlatScalars
 public import FLT.Mazur.RingPairInvariantLocalization
 public import FLT.Mazur.RingedSpaceIdealLocus
+public import FLT.Mazur.RootsOfUnityAlgebra
+public import FLT.Mazur.RootsOfUnityAlgebraPoints
+public import FLT.Mazur.RootsOfUnityCartier
+public import FLT.Mazur.RootsOfUnityLaurentKernel
+public import FLT.Mazur.RootsOfUnityNonEtale
+public import FLT.Mazur.RootsOfUnityPolynomialPresentation
+public import FLT.Mazur.RootsOfUnityScheme
 public import FLT.Mazur.ScalarAlgebraicClosureTests
 public import FLT.Mazur.ScalarClosedGeometricLifts
 public import FLT.Mazur.ScalarClosedImageCoverage
@@ -12861,6 +12869,8 @@ public import FLT.Mazur.TildePrincipalOpen
 public import FLT.Mazur.TildeSourceSectionComparison
 public import FLT.Mazur.TorusChartScalars
 public import FLT.Mazur.TorusPointUnitEquiv
+public import FLT.Mazur.TorusRootsOfUnityCartier
+public import FLT.Mazur.TorusRootsOfUnitySubgroup
 public import FLT.Mazur.TranscendentalAcyclicTranslation
 public import FLT.Mazur.TranscendentalAffineOpenOrbit
 public import FLT.Mazur.TranscendentalCoefficientOrbitAvoidance
