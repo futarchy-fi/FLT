@@ -8679,6 +8679,7 @@ public import FLT.Mazur.OpenImmersionIdealDegree
 public import FLT.Mazur.OpenImmersionImagePullbackCover
 public import FLT.Mazur.OpenImmersionImageUnion
 public import FLT.Mazur.OpenImmersionImageUnionCartesian
+public import FLT.Mazur.OpenImmersionImageUnionGluedOverlap
 public import FLT.Mazur.OpenImmersionImageUnionGluing
 public import FLT.Mazur.OpenImmersionImageUnionIsomorphism
 public import FLT.Mazur.OpenImmersionImageUnionPullback
