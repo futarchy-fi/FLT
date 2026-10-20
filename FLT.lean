@@ -6730,6 +6730,7 @@ public import FLT.Mazur.HilbertFiniteFreeScalarCoordinates
 public import FLT.Mazur.HilbertFiniteInvariantAffineBasis
 public import FLT.Mazur.HilbertFiniteLabelBoundaryLifts
 public import FLT.Mazur.HilbertFiniteLabelRefinement
+public import FLT.Mazur.HilbertFiniteLocusBoundaryIntegral
 public import FLT.Mazur.HilbertFiniteLocusScalarCoordinates
 public import FLT.Mazur.HilbertFiniteLocusScalarNoetherian
 public import FLT.Mazur.HilbertFiniteNeighborhoodError
