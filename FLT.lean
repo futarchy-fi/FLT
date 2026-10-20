@@ -15204,6 +15204,7 @@ public import FLT.Mazur.WeierstrassDividedTangentBranchContraction
 public import FLT.Mazur.WeierstrassDividedTangentBranchEquation
 public import FLT.Mazur.WeierstrassDividedTangentBranchFormula
 public import FLT.Mazur.WeierstrassDividedTangentBranchOutput
+public import FLT.Mazur.WeierstrassDividedTangentBranchScheme
 public import FLT.Mazur.WeierstrassDividedTangentBranchSource
 public import FLT.Mazur.WeierstrassDividedTangentCech
 public import FLT.Mazur.WeierstrassDividedTangentCechIso
