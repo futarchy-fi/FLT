@@ -11340,6 +11340,7 @@ public import FLT.Mazur.RankOneSectionDivisorUniqueness
 public import FLT.Mazur.RankStageAffineBoundaryLifts
 public import FLT.Mazur.RankStageAffineNeighborhoods
 public import FLT.Mazur.RankStageBoundaryIdeal
+public import FLT.Mazur.RankStageCoherentAffineCores
 public import FLT.Mazur.RankStageInvariantTransitions
 public import FLT.Mazur.RankStageRelationTransitions
 public import FLT.Mazur.RationalCyclicCartierGenerator
