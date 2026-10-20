@@ -6729,6 +6729,7 @@ public import FLT.Mazur.HilbertFiniteBoundaryDomain
 public import FLT.Mazur.HilbertFiniteDomainBoundaryTrace
 public import FLT.Mazur.HilbertFiniteDomainErrorVanishing
 public import FLT.Mazur.HilbertFiniteDomainPrincipalCoverage
+public import FLT.Mazur.HilbertFiniteDomainTraceAnnihilator
 public import FLT.Mazur.HilbertFiniteFreeBoundaryIntegral
 public import FLT.Mazur.HilbertFiniteFreeBoundaryResidue
 public import FLT.Mazur.HilbertFiniteFreeQuotientRefinement
