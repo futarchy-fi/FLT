@@ -4707,6 +4707,13 @@ public import FLT.Mazur.DenseGroundHilbertFullInterior
 public import FLT.Mazur.DenseGroundHilbertPrincipal
 public import FLT.Mazur.DenseGroundResidualSupport
 public import FLT.Mazur.DerivationAlgEquivTransport
+public import FLT.Mazur.DiagonalizableCobarAlgebra
+public import FLT.Mazur.DiagonalizableCobarContraction
+public import FLT.Mazur.DiagonalizableCobarCoordinates
+public import FLT.Mazur.DiagonalizableCoefficientReduction
+public import FLT.Mazur.DiagonalizableInfinitesimalIdeal
+public import FLT.Mazur.DiagonalizableSquareZeroCocycle
+public import FLT.Mazur.DiagonalizableSquareZeroCoefficients
 public import FLT.Mazur.DifferenceNodeAlgebra
 public import FLT.Mazur.DifferenceNodeCorrectionNaturality
 public import FLT.Mazur.DifferenceNodeCriticalNaturality
@@ -13976,6 +13983,7 @@ public import FLT.Mazur.WeierstrassCubicPushforwardH1
 public import FLT.Mazur.WeierstrassCubicQuotient
 public import FLT.Mazur.WeierstrassCubicQuotientChart
 public import FLT.Mazur.WeierstrassCubicSection
+public import FLT.Mazur.WeierstrassDiagonalizableInfinitesimalKernel
 public import FLT.Mazur.WeierstrassDilatationAlgebra
 public import FLT.Mazur.WeierstrassDilatationArithmeticCoefficientRestriction
 public import FLT.Mazur.WeierstrassDilatationArithmeticNormalizationRestriction
