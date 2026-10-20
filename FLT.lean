@@ -5748,8 +5748,12 @@ public import FLT.Mazur.FiniteCartierQuotientComparison
 public import FLT.Mazur.FiniteCartierQuotientIso
 public import FLT.Mazur.FiniteCechCyclesScalars
 public import FLT.Mazur.FiniteCechTermScalars
+public import FLT.Mazur.FiniteCharacterAdicChartExt
 public import FLT.Mazur.FiniteCharacterAdicElements
 public import FLT.Mazur.FiniteCharacterAdicHom
+public import FLT.Mazur.FiniteCharacterAdicJacobson
+public import FLT.Mazur.FiniteCharacterAdicMapExt
+public import FLT.Mazur.FiniteCharacterAdicSurjectivity
 public import FLT.Mazur.FiniteClosedIdealSection
 public import FLT.Mazur.FiniteClosedImmersionIntegerDescent
 public import FLT.Mazur.FiniteCoefficientDifferenceIdeal
@@ -7032,6 +7036,8 @@ public import FLT.Mazur.HilbertOrbitSelfEmbeddingDiscrepancy
 public import FLT.Mazur.HilbertOrderedAffineEnvelope
 public import FLT.Mazur.HilbertOrderedOriginalBoundary
 public import FLT.Mazur.HilbertOrderedStableNeighborhood
+public import FLT.Mazur.HilbertOriginalChartEqualizerScalars
+public import FLT.Mazur.HilbertOriginalRankCoreCover
 public import FLT.Mazur.HilbertOriginalRankStageBoundaryLifts
 public import FLT.Mazur.HilbertOriginalRankStageCoverage
 public import FLT.Mazur.HilbertOriginalScalarFrameCharts
@@ -7592,6 +7598,7 @@ public import FLT.Mazur.InvariantOpenRelationEquivalence
 public import FLT.Mazur.InvariantOpenRelationFunctions
 public import FLT.Mazur.InvariantOpenRelationIntegralCoordinates
 public import FLT.Mazur.InvariantOpenRelationMap
+public import FLT.Mazur.InvariantOpenRelationSectionScalars
 public import FLT.Mazur.InvariantScalarGoingDown
 public import FLT.Mazur.InvariantSectionObstruction
 public import FLT.Mazur.IrreducibleComponentAmple
@@ -7616,6 +7623,7 @@ public import FLT.Mazur.IteratedQuotientProjection
 public import FLT.Mazur.IteratedQuotientRecovery
 public import FLT.Mazur.IteratedQuotientRepresentatives
 public import FLT.Mazur.IteratedRefinementSquareCriteria
+public import FLT.Mazur.JacobsonReductionOpenDetection
 public import FLT.Mazur.JointEnvelopeFullFiber
 public import FLT.Mazur.JointGroundEnvelopeNeighborhood
 public import FLT.Mazur.JointGroundNormInterior
@@ -8493,11 +8501,17 @@ public import FLT.Mazur.OddWeierstrassThreeTorsionUnramified
 public import FLT.Mazur.OneGonActionRotations
 public import FLT.Mazur.OneGonAdicCharacterAffineEffectivity
 public import FLT.Mazur.OneGonAdicCharacterChartTower
+public import FLT.Mazur.OneGonAdicCharacterEffectivityUnique
+public import FLT.Mazur.OneGonAdicCharacterGroupEffectivity
+public import FLT.Mazur.OneGonAdicCharacterIntrinsicReduction
+public import FLT.Mazur.OneGonAdicCharacterSmoothEffectivity
 public import FLT.Mazur.OneGonAdicCharacterStages
 public import FLT.Mazur.OneGonAdicCharacterStep
+public import FLT.Mazur.OneGonAdicCharacterStructure
 public import FLT.Mazur.OneGonAdicCharacterTower
 public import FLT.Mazur.OneGonAdicChartProjection
 public import FLT.Mazur.OneGonAdicChartRestriction
+public import FLT.Mazur.OneGonAdicSmoothProjection
 public import FLT.Mazur.OneGonAffineCover
 public import FLT.Mazur.OneGonAffineNormalization
 public import FLT.Mazur.OneGonAffineNormalizationCoordinates
@@ -11440,6 +11454,7 @@ public import FLT.Mazur.RankStageAffineBoundaryLifts
 public import FLT.Mazur.RankStageAffineNeighborhoods
 public import FLT.Mazur.RankStageBoundaryIdeal
 public import FLT.Mazur.RankStageBoundarySeedTower
+public import FLT.Mazur.RankStageBoundedCoreCover
 public import FLT.Mazur.RankStageCoherentAffineCores
 public import FLT.Mazur.RankStageCoherentCoreCoverage
 public import FLT.Mazur.RankStageCompatibleCoreCoefficients
@@ -11447,9 +11462,14 @@ public import FLT.Mazur.RankStageCoreBoundaryCoefficients
 public import FLT.Mazur.RankStageCoreBoundaryTransitions
 public import FLT.Mazur.RankStageCoreCoefficientTransitions
 public import FLT.Mazur.RankStageCoreOriginalEnvelope
+public import FLT.Mazur.RankStageCoreOverlapBoundary
+public import FLT.Mazur.RankStageCorePointTests
 public import FLT.Mazur.RankStageFiniteAtlasBoundaryTower
 public import FLT.Mazur.RankStageFiniteAtlasCoverage
+public import FLT.Mazur.RankStageFiniteCoreCover
 public import FLT.Mazur.RankStageFiniteCoreCoverage
+public import FLT.Mazur.RankStageFiniteCoreDetection
+public import FLT.Mazur.RankStageFiniteCoverBoundaryTowers
 public import FLT.Mazur.RankStageInitialBoundaryLifting
 public import FLT.Mazur.RankStageInvariantTransitions
 public import FLT.Mazur.RankStageOriginalAffineBoundaryTower
@@ -13381,6 +13401,7 @@ public import FLT.Mazur.WeierstrassAdditionSchemeCover
 public import FLT.Mazur.WeierstrassAdditionSlopeFamilies
 public import FLT.Mazur.WeierstrassAdditionStructure
 public import FLT.Mazur.WeierstrassAdditionSwapFormula
+public import FLT.Mazur.WeierstrassAdicCharacterIdentityDetection
 public import FLT.Mazur.WeierstrassAdmissibleMapUnique
 public import FLT.Mazur.WeierstrassAdmissibleScale
 public import FLT.Mazur.WeierstrassAffineAdditionDomain
