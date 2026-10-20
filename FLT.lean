@@ -15587,6 +15587,7 @@ public import FLT.Mazur.WeierstrassDividedQuadrupleShallowOverlap
 public import FLT.Mazur.WeierstrassDividedQuadrupleSuppliedAmbient
 public import FLT.Mazur.WeierstrassDividedQuadrupleTangentExtendedOverlap
 public import FLT.Mazur.WeierstrassDividedQuadrupleTangentOverlap
+public import FLT.Mazur.WeierstrassDividedQuadrupleTripleOverlap
 public import FLT.Mazur.WeierstrassDividedReciprocalExtendedAddition
 public import FLT.Mazur.WeierstrassDividedReciprocalExtendedOverlap
 public import FLT.Mazur.WeierstrassDividedReciprocalFormula
