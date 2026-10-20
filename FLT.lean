@@ -8515,6 +8515,7 @@ public import FLT.Mazur.OneGonAdicChartProjection
 public import FLT.Mazur.OneGonAdicChartRestriction
 public import FLT.Mazur.OneGonAdicFiniteSubgroup
 public import FLT.Mazur.OneGonAdicSmoothProjection
+public import FLT.Mazur.OneGonAdicSubgroupCartier
 public import FLT.Mazur.OneGonAffineCover
 public import FLT.Mazur.OneGonAffineNormalization
 public import FLT.Mazur.OneGonAffineNormalizationCoordinates
