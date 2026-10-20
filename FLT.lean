@@ -14347,6 +14347,7 @@ public import FLT.Mazur.WeierstrassDividedConicHorizontalIntersectionAllDepths
 public import FLT.Mazur.WeierstrassDividedConicParameterTransport
 public import FLT.Mazur.WeierstrassDividedCrossDepthReciprocalSecant
 public import FLT.Mazur.WeierstrassDividedCrossDepthReciprocalTangent
+public import FLT.Mazur.WeierstrassDividedCrossDepthReciprocalTangentOutput
 public import FLT.Mazur.WeierstrassDividedCrossDepthSecant
 public import FLT.Mazur.WeierstrassDividedCrossDepthSecantScheme
 public import FLT.Mazur.WeierstrassDividedCrossDepthTangent
