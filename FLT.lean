@@ -15341,6 +15341,7 @@ public import FLT.Mazur.WeierstrassDividedTangentSecantComparison
 public import FLT.Mazur.WeierstrassDividedTangentSecantOverlap
 public import FLT.Mazur.WeierstrassDividedTangentSecantScheme
 public import FLT.Mazur.WeierstrassDividedTangentSource
+public import FLT.Mazur.WeierstrassDividedTangentThreeDomainCover
 public import FLT.Mazur.WeierstrassDividedTangentTransport
 public import FLT.Mazur.WeierstrassDividedTangentTransportAction
 public import FLT.Mazur.WeierstrassDividedTangentTriple
