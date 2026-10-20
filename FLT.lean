@@ -6493,6 +6493,7 @@ public import FLT.Mazur.GroupTorsionLocalMatching
 public import FLT.Mazur.GroupTorsionProper
 public import FLT.Mazur.GroupTorsionScheme
 public import FLT.Mazur.GroupTorsionTransport
+public import FLT.Mazur.GroupTorsionUnramifiedBaseChange
 public import FLT.Mazur.HenselianRingEquivalence
 public import FLT.Mazur.HenselianSmallCubic
 public import FLT.Mazur.HigherDirectImageOpenSheafification
