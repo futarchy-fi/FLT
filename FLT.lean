@@ -12495,6 +12495,7 @@ public import FLT.Mazur.SchemeRelationEtaleBranchPropagation
 public import FLT.Mazur.SchemeRelationEtaleCoverDescent
 public import FLT.Mazur.SchemeRelationEtaleImageModel
 public import FLT.Mazur.SchemeRelationEtaleKernelDescent
+public import FLT.Mazur.SchemeRelationFiniteBoundaryNumerators
 public import FLT.Mazur.SchemeRelationFunctionDescent
 public import FLT.Mazur.SchemeRelationFunctionDiagram
 public import FLT.Mazur.SchemeRelationGeometricCertificate
