@@ -3591,6 +3591,7 @@ public import FLT.Mazur.ArithmeticOneGonFieldFibers
 public import FLT.Mazur.ArithmeticOneGonGeneralizedCurve
 public import FLT.Mazur.ArithmeticOneGonRotations
 public import FLT.Mazur.ArithmeticOneGonSubgroupAmple
+public import FLT.Mazur.ArithmeticOneGonTorus
 public import FLT.Mazur.ArithmeticRootsOfUnitySections
 public import FLT.Mazur.ArithmeticTorusPoints
 public import FLT.Mazur.ArtinianClosedFiberFunctions
