@@ -8512,6 +8512,7 @@ public import FLT.Mazur.OneGonAdicCharacterStructure
 public import FLT.Mazur.OneGonAdicCharacterTower
 public import FLT.Mazur.OneGonAdicChartProjection
 public import FLT.Mazur.OneGonAdicChartRestriction
+public import FLT.Mazur.OneGonAdicFiniteSubgroup
 public import FLT.Mazur.OneGonAdicSmoothProjection
 public import FLT.Mazur.OneGonAffineCover
 public import FLT.Mazur.OneGonAffineNormalization
