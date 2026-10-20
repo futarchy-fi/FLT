@@ -15238,6 +15238,7 @@ public import FLT.Mazur.WeierstrassDividedRevisedTwistedIso
 public import FLT.Mazur.WeierstrassDividedRightSmoothReciprocalPresentation
 public import FLT.Mazur.WeierstrassDividedSecantBranchCases
 public import FLT.Mazur.WeierstrassDividedSecantComparison
+public import FLT.Mazur.WeierstrassDividedSecantFlatSourceExt
 public import FLT.Mazur.WeierstrassDividedSecantFormula
 public import FLT.Mazur.WeierstrassDividedSecantLeftOverlap
 public import FLT.Mazur.WeierstrassDividedSecantOriginalAction
