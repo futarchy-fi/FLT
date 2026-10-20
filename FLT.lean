@@ -8599,6 +8599,7 @@ public import FLT.Mazur.OneGonFaithfulCyclicLine
 public import FLT.Mazur.OneGonFiniteCoefficientClosed
 public import FLT.Mazur.OneGonFiniteCoefficientCoordinates
 public import FLT.Mazur.OneGonFiniteCoefficientCurve
+public import FLT.Mazur.OneGonFiniteCoefficientEmbedding
 public import FLT.Mazur.OneGonFiniteCoefficientPolynomial
 public import FLT.Mazur.OneGonFiniteCoefficientRecovery
 public import FLT.Mazur.OneGonFormalCoordinates
