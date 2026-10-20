@@ -5778,6 +5778,8 @@ public import FLT.Mazur.FiniteEtaleInvariantDomainCoefficients
 public import FLT.Mazur.FiniteEtaleInvariantNamedDomains
 public import FLT.Mazur.FiniteEtaleInvariantOpenBoundary
 public import FLT.Mazur.FiniteEtaleInvariantOpenTransition
+public import FLT.Mazur.FiniteEtaleNamedBoundaryCoefficients
+public import FLT.Mazur.FiniteEtaleNamedDomainBoundaryLifting
 public import FLT.Mazur.FiniteEtalePerfectDVRSplitting
 public import FLT.Mazur.FiniteEtaleRationalCover
 public import FLT.Mazur.FiniteEtaleSectionCoverNeighborhood
@@ -6065,6 +6067,8 @@ public import FLT.Mazur.FiniteRelationLocalizedInclusionDescent
 public import FLT.Mazur.FiniteRelationLocalizedUnionDescent
 public import FLT.Mazur.FiniteRelationLocallyClosedAffineBasis
 public import FLT.Mazur.FiniteRelationNamedDomainTransitions
+public import FLT.Mazur.FiniteRelationPrescribedLiftCoefficients
+public import FLT.Mazur.FiniteRelationPrescribedLifting
 public import FLT.Mazur.FiniteRelationPrincipalCoverModels
 public import FLT.Mazur.FiniteRelationPrincipalPathQuotients
 public import FLT.Mazur.FiniteRelationPrincipalProjection
@@ -7541,6 +7545,7 @@ public import FLT.Mazur.InvariantFlatTensorComparison
 public import FLT.Mazur.InvariantGeometricFiberTests
 public import FLT.Mazur.InvariantIdealEquivalence
 public import FLT.Mazur.InvariantIdealRelation
+public import FLT.Mazur.InvariantIdealRelationCoefficientMembership
 public import FLT.Mazur.InvariantIdealRelationCoefficients
 public import FLT.Mazur.InvariantLocalizationAction
 public import FLT.Mazur.InvariantLocalizationComparison
@@ -11393,9 +11398,16 @@ public import FLT.Mazur.RankStageCompatibleCoreCoefficients
 public import FLT.Mazur.RankStageCoreBoundaryCoefficients
 public import FLT.Mazur.RankStageCoreBoundaryTransitions
 public import FLT.Mazur.RankStageCoreCoefficientTransitions
+public import FLT.Mazur.RankStageInitialBoundaryLifting
 public import FLT.Mazur.RankStageInvariantTransitions
 public import FLT.Mazur.RankStageOriginalBoundaryCoefficients
+public import FLT.Mazur.RankStageOriginalBoundaryRestriction
+public import FLT.Mazur.RankStageOriginalBoundaryTower
+public import FLT.Mazur.RankStagePrescribedBoundaryLifting
+public import FLT.Mazur.RankStagePrescribedBoundaryTower
+public import FLT.Mazur.RankStagePrescribedLiftingProperty
 public import FLT.Mazur.RankStageRelationTransitions
+public import FLT.Mazur.RankStageStructureMaps
 public import FLT.Mazur.RankStageTransitionTopology
 public import FLT.Mazur.RationalCyclicCartierGenerator
 public import FLT.Mazur.RationalCyclicGeneratorChange
