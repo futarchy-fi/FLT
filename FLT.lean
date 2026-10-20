@@ -5746,7 +5746,10 @@ public import FLT.Mazur.FiniteEtaleGeometricSectionCover
 public import FLT.Mazur.FiniteEtaleGeometricSplitting
 public import FLT.Mazur.FiniteEtaleImageCover
 public import FLT.Mazur.FiniteEtaleIndependentGeometricTranslation
+public import FLT.Mazur.FiniteEtaleInvariantDomainCoefficients
+public import FLT.Mazur.FiniteEtaleInvariantNamedDomains
 public import FLT.Mazur.FiniteEtaleInvariantOpenBoundary
+public import FLT.Mazur.FiniteEtaleInvariantOpenTransition
 public import FLT.Mazur.FiniteEtalePerfectDVRSplitting
 public import FLT.Mazur.FiniteEtaleRationalCover
 public import FLT.Mazur.FiniteEtaleSectionCoverNeighborhood
@@ -5993,6 +5996,7 @@ public import FLT.Mazur.FinitePushforwardIdealImage
 public import FLT.Mazur.FinitePushforwardIdealVanishing
 public import FLT.Mazur.FiniteQuotientLocalSupport
 public import FLT.Mazur.FiniteReductionKernelPairs
+public import FLT.Mazur.FiniteRelationAffineCoreBaseChange
 public import FLT.Mazur.FiniteRelationAffinePrincipalCore
 public import FLT.Mazur.FiniteRelationColimit
 public import FLT.Mazur.FiniteRelationCompatibleHomDescent
@@ -7375,6 +7379,7 @@ public import FLT.Mazur.IdealPullbackVanishingCriterion
 public import FLT.Mazur.IdealQuotientExact
 public import FLT.Mazur.IdealQuotientSectionLift
 public import FLT.Mazur.IdealSheafAdicStalkSeparation
+public import FLT.Mazur.IdealSheafClosedTransitions
 public import FLT.Mazur.IdealSheafFactorizationSupport
 public import FLT.Mazur.IdealSheafFlatDetection
 public import FLT.Mazur.IdealSheafOpenCoverDetection
@@ -11346,6 +11351,15 @@ public import FLT.Mazur.RankOneSectionDivisorUniqueness
 public import FLT.Mazur.RankStageAffineBoundaryLifts
 public import FLT.Mazur.RankStageAffineNeighborhoods
 public import FLT.Mazur.RankStageBoundaryIdeal
+public import FLT.Mazur.RankStageBoundarySeedTower
+public import FLT.Mazur.RankStageCoherentAffineCores
+public import FLT.Mazur.RankStageCoherentCoreCoverage
+public import FLT.Mazur.RankStageCompatibleCoreCoefficients
+public import FLT.Mazur.RankStageCoreBoundaryTransitions
+public import FLT.Mazur.RankStageCoreCoefficientTransitions
+public import FLT.Mazur.RankStageInvariantTransitions
+public import FLT.Mazur.RankStageRelationTransitions
+public import FLT.Mazur.RankStageTransitionTopology
 public import FLT.Mazur.RationalCyclicCartierGenerator
 public import FLT.Mazur.RationalCyclicGeneratorChange
 public import FLT.Mazur.RationalCyclicModuliPoint
