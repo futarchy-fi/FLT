@@ -3458,6 +3458,7 @@ public import FLT.Mazur.AffineTraceGlobalBasis
 public import FLT.Mazur.AffineTraceGluing
 public import FLT.Mazur.AffineTraceLinearMap
 public import FLT.Mazur.AffineTraceLinearity
+public import FLT.Mazur.AffineTracePrincipalPower
 public import FLT.Mazur.AffineTripleCoefficientExtensionality
 public import FLT.Mazur.AffineTripleCoefficientMaps
 public import FLT.Mazur.AffineTripleOverlapCoefficients
