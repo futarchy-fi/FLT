@@ -11435,6 +11435,7 @@ public import FLT.Mazur.RankStageOriginalAffineRepresentatives
 public import FLT.Mazur.RankStageOriginalAffineTestValues
 public import FLT.Mazur.RankStageOriginalBoundaryCoefficients
 public import FLT.Mazur.RankStageOriginalBoundaryRestriction
+public import FLT.Mazur.RankStageOriginalBoundaryTests
 public import FLT.Mazur.RankStageOriginalBoundaryTower
 public import FLT.Mazur.RankStageOriginalScalarCauchy
 public import FLT.Mazur.RankStagePrescribedBoundaryLifting
