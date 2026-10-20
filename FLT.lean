@@ -8533,6 +8533,7 @@ public import FLT.Mazur.OneGonAdicInitialRoots
 public import FLT.Mazur.OneGonAdicReductionCartesian
 public import FLT.Mazur.OneGonAdicSmoothProjection
 public import FLT.Mazur.OneGonAdicSubgroupCartier
+public import FLT.Mazur.OneGonAdicSubgroupReductionIdeal
 public import FLT.Mazur.OneGonAffineCover
 public import FLT.Mazur.OneGonAffineNormalization
 public import FLT.Mazur.OneGonAffineNormalizationCoordinates
