@@ -4363,6 +4363,7 @@ public import FLT.Mazur.CyclicCharacteristicInvariantSections
 public import FLT.Mazur.CyclicCharacteristicInvariantSheaf
 public import FLT.Mazur.CyclicCharacteristicInvertibleResidual
 public import FLT.Mazur.CyclicCharacteristicLocalArrowOrbit
+public import FLT.Mazur.CyclicCharacteristicLocalModuliCoarse
 public import FLT.Mazur.CyclicCharacteristicLocalModuliSheafDescent
 public import FLT.Mazur.CyclicCharacteristicLocalOrbit
 public import FLT.Mazur.CyclicCharacteristicLocallyNormalizedModuli
