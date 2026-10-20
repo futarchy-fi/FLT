@@ -12936,6 +12936,7 @@ public import FLT.Mazur.TorusPointUnitEquiv
 public import FLT.Mazur.TorusRootsOfUnityCartier
 public import FLT.Mazur.TorusRootsOfUnityPrimePowerCyclic
 public import FLT.Mazur.TorusRootsOfUnitySubgroup
+public import FLT.Mazur.TorusRootsOfUnityTransport
 public import FLT.Mazur.TorusSubgroupArithmeticComparison
 public import FLT.Mazur.TranscendentalAcyclicTranslation
 public import FLT.Mazur.TranscendentalAffineOpenOrbit
