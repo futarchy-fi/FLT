@@ -4462,6 +4462,7 @@ public import FLT.Mazur.CyclicCharacteristicResidualRelation
 public import FLT.Mazur.CyclicCharacteristicResidualSectionComparison
 public import FLT.Mazur.CyclicCharacteristicResidualSectionEquivalence
 public import FLT.Mazur.CyclicCharacteristicResidualSectionReconstruction
+public import FLT.Mazur.CyclicCharacteristicResidualSpectrumHomeomorphism
 public import FLT.Mazur.CyclicCharacteristicResidualTorsionCriterion
 public import FLT.Mazur.CyclicCharacteristicResidualTransitionDescent
 public import FLT.Mazur.CyclicCharacteristicResidualTransitionTests
