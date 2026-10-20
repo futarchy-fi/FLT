@@ -14801,6 +14801,7 @@ public import FLT.Mazur.WeierstrassDividedPairSecant
 public import FLT.Mazur.WeierstrassDividedPairSecantEvaluation
 public import FLT.Mazur.WeierstrassDividedPairSecantGeometry
 public import FLT.Mazur.WeierstrassDividedPairTangentGeometry
+public import FLT.Mazur.WeierstrassDividedPlanePresentation
 public import FLT.Mazur.WeierstrassDividedPolygonAdjacencyClassification
 public import FLT.Mazur.WeierstrassDividedPolygonClosingCriterion
 public import FLT.Mazur.WeierstrassDividedPolygonComparisonCharts
