@@ -15927,6 +15927,7 @@ public import FLT.Mazur.WeierstrassDividedTwoSeedOrientation
 public import FLT.Mazur.WeierstrassDividedTwoSeedState
 public import FLT.Mazur.WeierstrassDividedUniversalSmoothPair
 public import FLT.Mazur.WeierstrassDividedUniversalSmoothPairIso
+public import FLT.Mazur.WeierstrassDividedUniversalSmoothPairPromotion
 public import FLT.Mazur.WeierstrassDividedVariableInitialIntersection
 public import FLT.Mazur.WeierstrassDividedVariableLabelIntersections
 public import FLT.Mazur.WeierstrassDividedVariableRetainedIntersection
