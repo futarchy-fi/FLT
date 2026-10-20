@@ -3596,12 +3596,16 @@ public import FLT.Mazur.ArithmeticOneGonFamily
 public import FLT.Mazur.ArithmeticOneGonFiberTorus
 public import FLT.Mazur.ArithmeticOneGonFieldFibers
 public import FLT.Mazur.ArithmeticOneGonGeneralizedCurve
+public import FLT.Mazur.ArithmeticOneGonNodalCoefficient
+public import FLT.Mazur.ArithmeticOneGonOriginalBaseChange
 public import FLT.Mazur.ArithmeticOneGonOriginalFiber
 public import FLT.Mazur.ArithmeticOneGonOriginalRoots
 public import FLT.Mazur.ArithmeticOneGonRoots
+public import FLT.Mazur.ArithmeticOneGonRootsBaseChange
 public import FLT.Mazur.ArithmeticOneGonRotations
 public import FLT.Mazur.ArithmeticOneGonSubgroupAmple
 public import FLT.Mazur.ArithmeticOneGonTorus
+public import FLT.Mazur.ArithmeticOneGonTorusBaseChange
 public import FLT.Mazur.ArithmeticRootsOfUnitySections
 public import FLT.Mazur.ArithmeticTorusPoints
 public import FLT.Mazur.ArtinianClosedFiberFunctions
@@ -7514,6 +7518,7 @@ public import FLT.Mazur.IntegralCyclotomicCover
 public import FLT.Mazur.IntegralCyclotomicOrbit
 public import FLT.Mazur.IntegralDimension
 public import FLT.Mazur.IntegralImageIdealStalk
+public import FLT.Mazur.IntegralOneGonArithmeticBoundaryRoots
 public import FLT.Mazur.IntegralOneGonBoundaryLevels
 public import FLT.Mazur.IntegralOneGonSpecializations
 public import FLT.Mazur.IntegralPointExtension
@@ -12958,6 +12963,7 @@ public import FLT.Mazur.TorusArithmeticCyclicity
 public import FLT.Mazur.TorusChartScalars
 public import FLT.Mazur.TorusCyclotomicGenerator
 public import FLT.Mazur.TorusPointUnitEquiv
+public import FLT.Mazur.TorusRootsOfUnityBaseChange
 public import FLT.Mazur.TorusRootsOfUnityCartier
 public import FLT.Mazur.TorusRootsOfUnityPrimePowerCyclic
 public import FLT.Mazur.TorusRootsOfUnitySubgroup
