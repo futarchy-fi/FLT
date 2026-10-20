@@ -2962,6 +2962,7 @@ public import FLT.Mazur.AffineFiberProductOverlap
 public import FLT.Mazur.AffineFiberProductPairTransport
 public import FLT.Mazur.AffineFiberProductRefinementCocycle
 public import FLT.Mazur.AffineFiberwiseSectionCartier
+public import FLT.Mazur.AffineFiniteEtaleBoundarySurjectivity
 public import FLT.Mazur.AffineFiniteFreeAtlas
 public import FLT.Mazur.AffineFiniteFreeDirectedCover
 public import FLT.Mazur.AffineFiniteFreeRelationTraceUnit
@@ -5502,9 +5503,11 @@ public import FLT.Mazur.EquivalenceRelationPrincipalPrimeCoverage
 public import FLT.Mazur.EquivalenceRelationQuotientBoundaryExtensions
 public import FLT.Mazur.EquivalenceRelationQuotientInvariantExtensions
 public import FLT.Mazur.EquivalenceRelationQuotientRankOpens
+public import FLT.Mazur.EquivalenceRelationRankIdeal
 public import FLT.Mazur.EquivalenceRelationRankInterior
 public import FLT.Mazur.EquivalenceRelationRankSaturation
 public import FLT.Mazur.EquivalenceRelationRankStratumCover
+public import FLT.Mazur.EquivalenceRelationRankThickening
 public import FLT.Mazur.EquivalenceRelationResidualAdicIdeal
 public import FLT.Mazur.EquivalenceRelationResidualBranchDecomposition
 public import FLT.Mazur.EquivalenceRelationResidualCoefficientEquations
@@ -5742,6 +5745,7 @@ public import FLT.Mazur.FiniteEtaleGeometricSectionCover
 public import FLT.Mazur.FiniteEtaleGeometricSplitting
 public import FLT.Mazur.FiniteEtaleImageCover
 public import FLT.Mazur.FiniteEtaleIndependentGeometricTranslation
+public import FLT.Mazur.FiniteEtaleInvariantOpenBoundary
 public import FLT.Mazur.FiniteEtalePerfectDVRSplitting
 public import FLT.Mazur.FiniteEtaleRationalCover
 public import FLT.Mazur.FiniteEtaleSectionCoverNeighborhood
@@ -5988,6 +5992,7 @@ public import FLT.Mazur.FinitePushforwardIdealImage
 public import FLT.Mazur.FinitePushforwardIdealVanishing
 public import FLT.Mazur.FiniteQuotientLocalSupport
 public import FLT.Mazur.FiniteReductionKernelPairs
+public import FLT.Mazur.FiniteRelationAffinePrincipalCore
 public import FLT.Mazur.FiniteRelationColimit
 public import FLT.Mazur.FiniteRelationCompatibleHomDescent
 public import FLT.Mazur.FiniteRelationCoverDescent
@@ -6025,6 +6030,7 @@ public import FLT.Mazur.FiniteRelationLocalizationSurjectiveDescent
 public import FLT.Mazur.FiniteRelationLocalizedCoverDescent
 public import FLT.Mazur.FiniteRelationLocalizedInclusionDescent
 public import FLT.Mazur.FiniteRelationLocalizedUnionDescent
+public import FLT.Mazur.FiniteRelationLocallyClosedAffineBasis
 public import FLT.Mazur.FiniteRelationPrincipalCoverModels
 public import FLT.Mazur.FiniteRelationPrincipalPathQuotients
 public import FLT.Mazur.FiniteRelationPrincipalProjection
@@ -6959,6 +6965,8 @@ public import FLT.Mazur.HilbertOrbitSelfEmbeddingDiscrepancy
 public import FLT.Mazur.HilbertOrderedAffineEnvelope
 public import FLT.Mazur.HilbertOrderedOriginalBoundary
 public import FLT.Mazur.HilbertOrderedStableNeighborhood
+public import FLT.Mazur.HilbertOriginalRankStageBoundaryLifts
+public import FLT.Mazur.HilbertOriginalRankStageCoverage
 public import FLT.Mazur.HilbertOriginalScalarFrameCharts
 public import FLT.Mazur.HilbertOriginalScalarMaximalCover
 public import FLT.Mazur.HilbertOriginalScalarStrata
@@ -7489,6 +7497,7 @@ public import FLT.Mazur.InvariantFiniteRelationPrincipal
 public import FLT.Mazur.InvariantFlatTensorAction
 public import FLT.Mazur.InvariantFlatTensorComparison
 public import FLT.Mazur.InvariantGeometricFiberTests
+public import FLT.Mazur.InvariantIdealEquivalence
 public import FLT.Mazur.InvariantIdealRelation
 public import FLT.Mazur.InvariantLocalizationAction
 public import FLT.Mazur.InvariantLocalizationComparison
@@ -7752,6 +7761,7 @@ public import FLT.Mazur.LocalizedStalkSmoothGenerization
 public import FLT.Mazur.LocalizedTensorCancellation
 public import FLT.Mazur.LocalizedTensorExactness
 public import FLT.Mazur.LocalizedTracePower
+public import FLT.Mazur.LocallyClosedPrincipalNeighborhood
 public import FLT.Mazur.LocallyFiniteFreeOpenCover
 public import FLT.Mazur.LocallyFiniteTypeSeparablePointFactor
 public import FLT.Mazur.LocallyFramedSplitLineCoverIndependence
@@ -11325,6 +11335,9 @@ public import FLT.Mazur.QuotientSpectrumBaseChange
 public import FLT.Mazur.RankOneAmbientLineClassification
 public import FLT.Mazur.RankOneDirectImageSection
 public import FLT.Mazur.RankOneSectionDivisorUniqueness
+public import FLT.Mazur.RankStageAffineBoundaryLifts
+public import FLT.Mazur.RankStageAffineNeighborhoods
+public import FLT.Mazur.RankStageBoundaryIdeal
 public import FLT.Mazur.RationalCyclicCartierGenerator
 public import FLT.Mazur.RationalCyclicGeneratorChange
 public import FLT.Mazur.RationalCyclicModuliPoint
@@ -12700,6 +12713,7 @@ public import FLT.Mazur.SmoothOriginalFiberLineParameters
 public import FLT.Mazur.SmoothQuasiFiniteCartierCriterion
 public import FLT.Mazur.SmoothQuasiFiniteIdealCharts
 public import FLT.Mazur.SmoothRadicalBaseChange
+public import FLT.Mazur.SmoothRadicalIdealSheaf
 public import FLT.Mazur.SmoothRelativeCotangentRank
 public import FLT.Mazur.SmoothSectionCartier
 public import FLT.Mazur.SmoothTranslationChartOrbitFibers
