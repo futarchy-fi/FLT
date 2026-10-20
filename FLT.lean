@@ -5495,6 +5495,7 @@ public import FLT.Mazur.EtaleAlgebraReduced
 public import FLT.Mazur.EtaleAmpleCyclicLocalMarking
 public import FLT.Mazur.EtaleCartierGeneratorDistinct
 public import FLT.Mazur.EtaleCartierGeneratorGeometric
+public import FLT.Mazur.EtaleCartierGeneratorLocalRelabel
 public import FLT.Mazur.EtaleCoordinate
 public import FLT.Mazur.EtaleCoordinateSlice
 public import FLT.Mazur.EtaleCurveLocalDomain
@@ -5674,6 +5675,7 @@ public import FLT.Mazur.FiniteExtensionDVRModel
 public import FLT.Mazur.FiniteExtensionPerfectDVRModel
 public import FLT.Mazur.FiniteExtensionPerfectValuationSubring
 public import FLT.Mazur.FiniteExtensionValuationSubring
+public import FLT.Mazur.FiniteFaithfulMarkingRelabel
 public import FLT.Mazur.FiniteFamilySupportBaseChange
 public import FLT.Mazur.FiniteFamilySupportOpen
 public import FLT.Mazur.FiniteFiberClosedImmersion
@@ -8096,6 +8098,8 @@ public import FLT.Mazur.OddWeierstrassAuxiliaryGeometricFull
 public import FLT.Mazur.OddWeierstrassAuxiliaryGeometricRelabel
 public import FLT.Mazur.OddWeierstrassAuxiliaryGroupSourceNaturality
 public import FLT.Mazur.OddWeierstrassAuxiliaryLevel
+public import FLT.Mazur.OddWeierstrassAuxiliaryLocalRelabel
+public import FLT.Mazur.OddWeierstrassAuxiliaryLocalTorsion
 public import FLT.Mazur.OddWeierstrassAuxiliaryMarkedRigidity
 public import FLT.Mazur.OddWeierstrassAuxiliaryMarkingInvariant
 public import FLT.Mazur.OddWeierstrassAuxiliaryNormalEquation
@@ -8113,6 +8117,7 @@ public import FLT.Mazur.OddWeierstrassAuxiliaryProperNormalization
 public import FLT.Mazur.OddWeierstrassAuxiliaryProperPointInvariant
 public import FLT.Mazur.OddWeierstrassAuxiliaryPullbackSections
 public import FLT.Mazur.OddWeierstrassAuxiliaryRelabelNormalization
+public import FLT.Mazur.OddWeierstrassAuxiliaryRestrictedMarking
 public import FLT.Mazur.OddWeierstrassAuxiliarySchemeBaseNaturality
 public import FLT.Mazur.OddWeierstrassAuxiliarySchemeFixedGroup
 public import FLT.Mazur.OddWeierstrassAuxiliarySchemeGroupComparison
@@ -8420,6 +8425,7 @@ public import FLT.Mazur.OpenRestrictionClosed
 public import FLT.Mazur.OpenRestrictionInclusion
 public import FLT.Mazur.OpenRestrictionLimitMap
 public import FLT.Mazur.OpenSchemeParameters
+public import FLT.Mazur.OpenSectionFamilyLocalFactorization
 public import FLT.Mazur.OpenSectionFilteredColimit
 public import FLT.Mazur.OpenSectionMonicity
 public import FLT.Mazur.OpenSectionTopComparison
@@ -12815,6 +12821,8 @@ public import FLT.Mazur.UniversalWeierstrassAuxiliaryGeometricRelabel
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryGroupSourceNaturality
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryIsomorphismUnique
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryLevel
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryLocalRelabel
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryLocalTorsion
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryMarkedRigidity
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryMarkingInvariant
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryMarkingTransport
@@ -12853,6 +12861,7 @@ public import FLT.Mazur.UniversalWeierstrassAuxiliaryRelabelCoordinates
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryRelabelNormalization
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryRelativePoint
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryRelativeRigidity
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryRestrictedMarking
 public import FLT.Mazur.UniversalWeierstrassAuxiliarySchemeAffineAgreement
 public import FLT.Mazur.UniversalWeierstrassAuxiliarySchemeFixedGroup
 public import FLT.Mazur.UniversalWeierstrassAuxiliarySchemeGroupComparison
@@ -12943,6 +12952,9 @@ public import FLT.Mazur.UnpointedAcyclicOpenPointedCompatibility
 public import FLT.Mazur.UnpointedLocalAcyclicDivisorCover
 public import FLT.Mazur.UnpointedLocalAcyclicEffectiveDescent
 public import FLT.Mazur.UnpointedLocalAcyclicFppfSheaf
+public import FLT.Mazur.UnramifiedFiniteSectionMatching
+public import FLT.Mazur.UnramifiedGeometricSectionMatching
+public import FLT.Mazur.UnramifiedSectionCoincidence
 public import FLT.Mazur.UnramifiedSectionImmersion
 public import FLT.Mazur.UnrestrictedSmoothFamilyCartier
 public import FLT.Mazur.ValuationExactCenterIntegralTests
