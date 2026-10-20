@@ -15557,6 +15557,7 @@ public import FLT.Mazur.WeierstrassDividedTangentExtendedOverlap
 public import FLT.Mazur.WeierstrassDividedTangentFlatSourceExt
 public import FLT.Mazur.WeierstrassDividedTangentFormula
 public import FLT.Mazur.WeierstrassDividedTangentLeftOverlap
+public import FLT.Mazur.WeierstrassDividedTangentLowerEquation
 public import FLT.Mazur.WeierstrassDividedTangentLowerFormula
 public import FLT.Mazur.WeierstrassDividedTangentOpenGluing
 public import FLT.Mazur.WeierstrassDividedTangentOriginalAction
