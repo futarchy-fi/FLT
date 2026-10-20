@@ -14864,6 +14864,7 @@ public import FLT.Mazur.WeierstrassDividedNodalBranchCoefficients
 public import FLT.Mazur.WeierstrassDividedNodalBranchCommonOutput
 public import FLT.Mazur.WeierstrassDividedNodalBranchRefinementDepth
 public import FLT.Mazur.WeierstrassDividedNodalBranchTerminalConstant
+public import FLT.Mazur.WeierstrassDividedNodalDeepAdditionSource
 public import FLT.Mazur.WeierstrassDividedNodalDeepSecantContraction
 public import FLT.Mazur.WeierstrassDividedNodalDeepSecantCoverage
 public import FLT.Mazur.WeierstrassDividedNodalDeepSecantGluing
