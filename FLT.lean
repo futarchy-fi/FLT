@@ -2885,6 +2885,7 @@ public import FLT.Mazur.AffineChartSourceScalars
 public import FLT.Mazur.AffineChartStalkScalars
 public import FLT.Mazur.AffineChosenBasisCharpoly
 public import FLT.Mazur.AffineClosedBoundaryKernelLifting
+public import FLT.Mazur.AffineClosedImmersionCoordinates
 public import FLT.Mazur.AffineClosedLimitDescent
 public import FLT.Mazur.AffineClosedModuleDescent
 public import FLT.Mazur.AffineClosedPointAlgebra
@@ -8247,6 +8248,7 @@ public import FLT.Mazur.NoetherianConstructibleCriterion
 public import FLT.Mazur.NoetherianDirectSumSheaf
 public import FLT.Mazur.NoetherianEnvelopeGenericInterior
 public import FLT.Mazur.NoetherianFiniteFamilyAnnihilator
+public import FLT.Mazur.NoetherianFiniteSubgroupCartier
 public import FLT.Mazur.NoetherianInfinitesimalFiberFunctions
 public import FLT.Mazur.NoetherianLocalClosedFiberFunctions
 public import FLT.Mazur.NoetherianModuleSum
@@ -8501,8 +8503,11 @@ public import FLT.Mazur.OddWeierstrassThreeTorsionUnramified
 public import FLT.Mazur.OneGonActionRotations
 public import FLT.Mazur.OneGonAdicCharacterAffineEffectivity
 public import FLT.Mazur.OneGonAdicCharacterChartTower
+public import FLT.Mazur.OneGonAdicCharacterClosedImmersion
+public import FLT.Mazur.OneGonAdicCharacterCoordinates
 public import FLT.Mazur.OneGonAdicCharacterEffectivityUnique
 public import FLT.Mazur.OneGonAdicCharacterGroupEffectivity
+public import FLT.Mazur.OneGonAdicCharacterInitialEmbedding
 public import FLT.Mazur.OneGonAdicCharacterIntrinsicReduction
 public import FLT.Mazur.OneGonAdicCharacterSmoothEffectivity
 public import FLT.Mazur.OneGonAdicCharacterStages
@@ -8511,7 +8516,9 @@ public import FLT.Mazur.OneGonAdicCharacterStructure
 public import FLT.Mazur.OneGonAdicCharacterTower
 public import FLT.Mazur.OneGonAdicChartProjection
 public import FLT.Mazur.OneGonAdicChartRestriction
+public import FLT.Mazur.OneGonAdicFiniteSubgroup
 public import FLT.Mazur.OneGonAdicSmoothProjection
+public import FLT.Mazur.OneGonAdicSubgroupCartier
 public import FLT.Mazur.OneGonAffineCover
 public import FLT.Mazur.OneGonAffineNormalization
 public import FLT.Mazur.OneGonAffineNormalizationCoordinates
@@ -13476,6 +13483,7 @@ public import FLT.Mazur.WeierstrassChartBaseChange
 public import FLT.Mazur.WeierstrassChartBaseChangeSquare
 public import FLT.Mazur.WeierstrassChartCoefficientMap
 public import FLT.Mazur.WeierstrassChartCoefficientRingMap
+public import FLT.Mazur.WeierstrassChartCoefficientSurjectivity
 public import FLT.Mazur.WeierstrassChartCrossComparison
 public import FLT.Mazur.WeierstrassChartEvaluationComparison
 public import FLT.Mazur.WeierstrassChartFactorUnit
