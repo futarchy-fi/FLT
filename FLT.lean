@@ -4299,6 +4299,7 @@ public import FLT.Mazur.CyclicAdicCoverage
 public import FLT.Mazur.CyclicAdicParameterQuotient
 public import FLT.Mazur.CyclicAdicParameterRelation
 public import FLT.Mazur.CyclicAdicParameters
+public import FLT.Mazur.CyclicAdicSheafQuotient
 public import FLT.Mazur.CyclicAuxiliaryPrescribedNormalizedNeighborhood
 public import FLT.Mazur.CyclicBoundaryAmpleAction
 public import FLT.Mazur.CyclicBoundaryAmpleInvariantModuli
