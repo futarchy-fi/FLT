@@ -2729,6 +2729,7 @@ public import FLT.Mazur.AdicCompletionScalars
 public import FLT.Mazur.AdicCompletionSeparatedExt
 public import FLT.Mazur.AdicCompletionSpectrumCover
 public import FLT.Mazur.AdicConormalTargetCompletion
+public import FLT.Mazur.AdicCorrectionClosure
 public import FLT.Mazur.AdicCotangentHomComparison
 public import FLT.Mazur.AdicCotangentHomDerivative
 public import FLT.Mazur.AdicCotangentHomMap
