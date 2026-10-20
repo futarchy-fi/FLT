@@ -14925,6 +14925,7 @@ public import FLT.Mazur.WeierstrassDividedPositiveSplitZero
 public import FLT.Mazur.WeierstrassDividedPrecedingAtlasRange
 public import FLT.Mazur.WeierstrassDividedPreviousBoundaryAlgebra
 public import FLT.Mazur.WeierstrassDividedProjectiveLift
+public import FLT.Mazur.WeierstrassDividedReciprocalFormula
 public import FLT.Mazur.WeierstrassDividedResidualIntegralLift
 public import FLT.Mazur.WeierstrassDividedResidualLiftAlgebra
 public import FLT.Mazur.WeierstrassDividedResidualLiftAtlas
