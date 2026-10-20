@@ -15960,6 +15960,7 @@ public import FLT.Mazur.WeierstrassDividedTriplePromotedTangent
 public import FLT.Mazur.WeierstrassDividedTripleReciprocalOverlap
 public import FLT.Mazur.WeierstrassDividedTripleReciprocalSecant
 public import FLT.Mazur.WeierstrassDividedTripleReciprocalTangent
+public import FLT.Mazur.WeierstrassDividedTripleRelativeSmoothCoverage
 public import FLT.Mazur.WeierstrassDividedTripleResolvedSecant
 public import FLT.Mazur.WeierstrassDividedTripleSecantCases
 public import FLT.Mazur.WeierstrassDividedTripleSecantCoverage
