@@ -4005,6 +4005,7 @@ public import FLT.Mazur.CechSortingRecursiveHomotopy
 public import FLT.Mazur.CechSortingTupleChains
 public import FLT.Mazur.CharacterAlgebraScalarExtension
 public import FLT.Mazur.CharacterCoefficientCartesian
+public import FLT.Mazur.CharacterCoefficientHomDetection
 public import FLT.Mazur.CharacterCoefficientSeparatedExt
 public import FLT.Mazur.CharacterFiniteCoefficientModel
 public import FLT.Mazur.CharacterGroupBaseChange
