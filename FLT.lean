@@ -11346,6 +11346,7 @@ public import FLT.Mazur.RankStageBoundaryIdeal
 public import FLT.Mazur.RankStageCoherentAffineCores
 public import FLT.Mazur.RankStageCoherentCoreCoverage
 public import FLT.Mazur.RankStageCompatibleCoreCoefficients
+public import FLT.Mazur.RankStageCoreBoundaryTransitions
 public import FLT.Mazur.RankStageCoreCoefficientTransitions
 public import FLT.Mazur.RankStageInvariantTransitions
 public import FLT.Mazur.RankStageRelationTransitions
