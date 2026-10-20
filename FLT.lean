@@ -4706,6 +4706,7 @@ public import FLT.Mazur.DerivationAlgEquivTransport
 public import FLT.Mazur.DiagonalizableCobarAlgebra
 public import FLT.Mazur.DiagonalizableCobarContraction
 public import FLT.Mazur.DiagonalizableCobarCoordinates
+public import FLT.Mazur.DiagonalizableSquareZeroCoefficients
 public import FLT.Mazur.DifferenceNodeAlgebra
 public import FLT.Mazur.DifferenceNodeCorrectionNaturality
 public import FLT.Mazur.DifferenceNodeCriticalNaturality
