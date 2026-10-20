@@ -6975,6 +6975,9 @@ public import FLT.Mazur.HilbertScalarChartAtlasCorrections
 public import FLT.Mazur.HilbertScalarChartBoundaryData
 public import FLT.Mazur.HilbertScalarChartBoundaryPullback
 public import FLT.Mazur.HilbertScalarChartBoundaryTests
+public import FLT.Mazur.HilbertScalarChartFullDescent
+public import FLT.Mazur.HilbertScalarChartSourceComparison
+public import FLT.Mazur.HilbertScalarFullAtlasLifts
 public import FLT.Mazur.HilbertSourceActionRelationGraph
 public import FLT.Mazur.HilbertSourceActualMultiplierIdeal
 public import FLT.Mazur.HilbertSourceBadAffineChartEquations
@@ -12282,6 +12285,7 @@ public import FLT.Mazur.SchemeScalarAvoidanceCover
 public import FLT.Mazur.SchemeScalarAvoidanceIdeal
 public import FLT.Mazur.SchemeScalarBadPrimeDenominators
 public import FLT.Mazur.SchemeScalarBoundaryUnitCover
+public import FLT.Mazur.SchemeScalarChartDescent
 public import FLT.Mazur.SchemeScalarConstructibleImage
 public import FLT.Mazur.SchemeScalarFiniteBadPrimes
 public import FLT.Mazur.SchemeScalarFullAtlas
@@ -12294,6 +12298,7 @@ public import FLT.Mazur.SchemeScalarPrincipalNeighborhoodFamily
 public import FLT.Mazur.SchemeScalarRelationPullback
 public import FLT.Mazur.SchemeScalarRelationTransition
 public import FLT.Mazur.SchemeScalarResidueImage
+public import FLT.Mazur.SchemeScalarRestrictedTests
 public import FLT.Mazur.SchemeScalarSourceComparison
 public import FLT.Mazur.SchemeSectionFamilyProduct
 public import FLT.Mazur.SchemeSectionFrameCompatibility
@@ -14084,6 +14089,7 @@ public import FLT.Mazur.WeierstrassDividedEqualityTerminalParametersHomExt
 public import FLT.Mazur.WeierstrassDividedEqualityTerminalZeroParameters
 public import FLT.Mazur.WeierstrassDividedEvenCompleteClosedComparison
 public import FLT.Mazur.WeierstrassDividedExactCoefficientDepth
+public import FLT.Mazur.WeierstrassDividedExtendedPartialAddition
 public import FLT.Mazur.WeierstrassDividedExterior
 public import FLT.Mazur.WeierstrassDividedExteriorBranchIntersections
 public import FLT.Mazur.WeierstrassDividedExteriorCubicContraction
@@ -15028,11 +15034,18 @@ public import FLT.Mazur.WeierstrassDividedRevisedTerminalReflection
 public import FLT.Mazur.WeierstrassDividedRevisedTwistedIso
 public import FLT.Mazur.WeierstrassDividedSecantComparison
 public import FLT.Mazur.WeierstrassDividedSecantFormula
+public import FLT.Mazur.WeierstrassDividedSecantLeftOverlap
+public import FLT.Mazur.WeierstrassDividedSecantOriginalAction
+public import FLT.Mazur.WeierstrassDividedSecantOverlapProjections
+public import FLT.Mazur.WeierstrassDividedSecantPartialOverlap
 public import FLT.Mazur.WeierstrassDividedSecantPointGeometry
 public import FLT.Mazur.WeierstrassDividedSecantRefinementComparison
 public import FLT.Mazur.WeierstrassDividedSecantResidue
+public import FLT.Mazur.WeierstrassDividedSecantRightOverlap
+public import FLT.Mazur.WeierstrassDividedSecantSchemeAction
 public import FLT.Mazur.WeierstrassDividedSecantSmoothPoint
 public import FLT.Mazur.WeierstrassDividedSecantSource
+public import FLT.Mazur.WeierstrassDividedSecantSwap
 public import FLT.Mazur.WeierstrassDividedSecondAtlasNodeRestriction
 public import FLT.Mazur.WeierstrassDividedSecondJointAtlas
 public import FLT.Mazur.WeierstrassDividedSecondJointAtlasClosing
@@ -15118,6 +15131,8 @@ public import FLT.Mazur.WeierstrassDividedSuccessorUnitAction
 public import FLT.Mazur.WeierstrassDividedTangentCech
 public import FLT.Mazur.WeierstrassDividedTangentCechIso
 public import FLT.Mazur.WeierstrassDividedTangentConjugation
+public import FLT.Mazur.WeierstrassDividedTangentFormula
+public import FLT.Mazur.WeierstrassDividedTangentSource
 public import FLT.Mazur.WeierstrassDividedTangentTransport
 public import FLT.Mazur.WeierstrassDividedTangentTransportAction
 public import FLT.Mazur.WeierstrassDividedTangentTriple
