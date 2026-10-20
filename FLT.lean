@@ -11511,6 +11511,7 @@ public import FLT.Mazur.RankStageCoherentCoreCoverage
 public import FLT.Mazur.RankStageCoherentOverlapNumerators
 public import FLT.Mazur.RankStageCompatibleCoreCoefficients
 public import FLT.Mazur.RankStageCompatibleCoreTowerGluing
+public import FLT.Mazur.RankStageCompatibleKernelObstruction
 public import FLT.Mazur.RankStageCoreBoundaryCoefficients
 public import FLT.Mazur.RankStageCoreBoundaryTransitions
 public import FLT.Mazur.RankStageCoreCoefficientTransitions
