@@ -6938,6 +6938,7 @@ public import FLT.Mazur.HilbertRequiredScalarImage
 public import FLT.Mazur.HilbertRequiredScalarInfinitesimals
 public import FLT.Mazur.HilbertResidualRankCeiling
 public import FLT.Mazur.HilbertSameAmbientChartIso
+public import FLT.Mazur.HilbertScalarChartAtlasCorrections
 public import FLT.Mazur.HilbertScalarChartBoundaryData
 public import FLT.Mazur.HilbertScalarChartBoundaryPullback
 public import FLT.Mazur.HilbertScalarChartBoundaryTests
