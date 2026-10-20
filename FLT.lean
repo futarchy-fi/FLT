@@ -2965,6 +2965,7 @@ public import FLT.Mazur.AffineFiberProductRefinementCocycle
 public import FLT.Mazur.AffineFiberwiseSectionCartier
 public import FLT.Mazur.AffineFiniteEtaleBoundaryKernelTransition
 public import FLT.Mazur.AffineFiniteEtaleBoundarySurjectivity
+public import FLT.Mazur.AffineFiniteEtalePrescribedCoefficients
 public import FLT.Mazur.AffineFiniteEtaleSimultaneousLifting
 public import FLT.Mazur.AffineFiniteFreeAtlas
 public import FLT.Mazur.AffineFiniteFreeDirectedCover
