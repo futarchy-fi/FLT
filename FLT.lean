@@ -14917,6 +14917,7 @@ public import FLT.Mazur.WeierstrassDividedNodalIntermediateTangentNeighborhoodCo
 public import FLT.Mazur.WeierstrassDividedNodalLowerCoefficients
 public import FLT.Mazur.WeierstrassDividedNodalLowerNormalization
 public import FLT.Mazur.WeierstrassDividedNodalLowerOutput
+public import FLT.Mazur.WeierstrassDividedNodalLowerReindex
 public import FLT.Mazur.WeierstrassDividedNodalLowerSmooth
 public import FLT.Mazur.WeierstrassDividedNodalNegativeBranchContraction
 public import FLT.Mazur.WeierstrassDividedNodalNegativeBranchOutput
