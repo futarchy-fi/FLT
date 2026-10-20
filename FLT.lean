@@ -14387,6 +14387,7 @@ public import FLT.Mazur.WeierstrassDividedFiniteFactoredBranchNodal
 public import FLT.Mazur.WeierstrassDividedFiniteFactoredBranchPartial
 public import FLT.Mazur.WeierstrassDividedFiniteFactoredBranchTerminal
 public import FLT.Mazur.WeierstrassDividedFiniteFlat
+public import FLT.Mazur.WeierstrassDividedFiniteFlatBranchLift
 public import FLT.Mazur.WeierstrassDividedFiniteGlobalNegation
 public import FLT.Mazur.WeierstrassDividedFiniteGlobalNegationInitial
 public import FLT.Mazur.WeierstrassDividedFiniteGlobalNegationStep
