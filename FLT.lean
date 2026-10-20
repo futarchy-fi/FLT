@@ -14868,6 +14868,7 @@ public import FLT.Mazur.WeierstrassDividedNodalDeepAdditionCoverage
 public import FLT.Mazur.WeierstrassDividedNodalDeepAdditionGluing
 public import FLT.Mazur.WeierstrassDividedNodalDeepAdditionOverlap
 public import FLT.Mazur.WeierstrassDividedNodalDeepAdditionSource
+public import FLT.Mazur.WeierstrassDividedNodalDeepAdditionSourceCoverage
 public import FLT.Mazur.WeierstrassDividedNodalDeepSecantContraction
 public import FLT.Mazur.WeierstrassDividedNodalDeepSecantCoverage
 public import FLT.Mazur.WeierstrassDividedNodalDeepSecantGluing
