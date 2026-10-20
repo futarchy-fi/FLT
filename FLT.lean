@@ -7498,6 +7498,7 @@ public import FLT.Mazur.IntegralCyclotomicCover
 public import FLT.Mazur.IntegralCyclotomicOrbit
 public import FLT.Mazur.IntegralDimension
 public import FLT.Mazur.IntegralImageIdealStalk
+public import FLT.Mazur.IntegralOneGonSpecializations
 public import FLT.Mazur.IntegralPointExtension
 public import FLT.Mazur.IntegralShortHomologyNaturality
 public import FLT.Mazur.IntegralWeierstrassAuxiliaryLevel
