@@ -5504,6 +5504,7 @@ public import FLT.Mazur.EquivalenceRelationRankIdeal
 public import FLT.Mazur.EquivalenceRelationRankInterior
 public import FLT.Mazur.EquivalenceRelationRankSaturation
 public import FLT.Mazur.EquivalenceRelationRankStratumCover
+public import FLT.Mazur.EquivalenceRelationRankThickening
 public import FLT.Mazur.EquivalenceRelationResidualAdicIdeal
 public import FLT.Mazur.EquivalenceRelationResidualBranchDecomposition
 public import FLT.Mazur.EquivalenceRelationResidualCoefficientEquations
