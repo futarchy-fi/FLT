@@ -5773,6 +5773,7 @@ public import FLT.Mazur.FiniteFreeDualPointBaseChange
 public import FLT.Mazur.FiniteFreeDualProjectivePoints
 public import FLT.Mazur.FiniteFreeDualProjectiveRefinement
 public import FLT.Mazur.FiniteFreeDualProjectiveTransitions
+public import FLT.Mazur.FiniteFreeEtaleTraceUnit
 public import FLT.Mazur.FiniteFreeFrameHorizontal
 public import FLT.Mazur.FiniteFreeFrameOpenImage
 public import FLT.Mazur.FiniteFreeFramePasting
