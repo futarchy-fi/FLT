@@ -2883,6 +2883,7 @@ public import FLT.Mazur.AffineClosedModuleDescent
 public import FLT.Mazur.AffineClosedPointAlgebra
 public import FLT.Mazur.AffineClosedPointCompletion
 public import FLT.Mazur.AffineClosedPointQuotient
+public import FLT.Mazur.AffineClosedSimultaneousLifting
 public import FLT.Mazur.AffineClosureFiniteness
 public import FLT.Mazur.AffineCoalgebraDescentRecognition
 public import FLT.Mazur.AffineCoalgebraSheafNaturality
