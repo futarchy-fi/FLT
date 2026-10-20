@@ -5495,6 +5495,7 @@ public import FLT.Mazur.EtaleAlgebraReduced
 public import FLT.Mazur.EtaleAmpleCyclicLocalMarking
 public import FLT.Mazur.EtaleCartierGeneratorDistinct
 public import FLT.Mazur.EtaleCartierGeneratorGeometric
+public import FLT.Mazur.EtaleCartierGeneratorLocalRelabel
 public import FLT.Mazur.EtaleCoordinate
 public import FLT.Mazur.EtaleCoordinateSlice
 public import FLT.Mazur.EtaleCurveLocalDomain
