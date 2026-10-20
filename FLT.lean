@@ -15571,6 +15571,7 @@ public import FLT.Mazur.WeierstrassDividedSecantPointGeometry
 public import FLT.Mazur.WeierstrassDividedSecantPrimeSmooth
 public import FLT.Mazur.WeierstrassDividedSecantRefinementComparison
 public import FLT.Mazur.WeierstrassDividedSecantResidue
+public import FLT.Mazur.WeierstrassDividedSecantReverse
 public import FLT.Mazur.WeierstrassDividedSecantRightOverlap
 public import FLT.Mazur.WeierstrassDividedSecantSchemeAction
 public import FLT.Mazur.WeierstrassDividedSecantSmoothPoint
