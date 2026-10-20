@@ -15947,6 +15947,7 @@ public import FLT.Mazur.WeierstrassDividedTripleAdditionSourceCoverage
 public import FLT.Mazur.WeierstrassDividedTripleBranchCommonOutput
 public import FLT.Mazur.WeierstrassDividedTripleBranchOutput
 public import FLT.Mazur.WeierstrassDividedTripleBranchSecantContraction
+public import FLT.Mazur.WeierstrassDividedTripleCommonFormula
 public import FLT.Mazur.WeierstrassDividedTripleCommonModel
 public import FLT.Mazur.WeierstrassDividedTripleDepthCoefficients
 public import FLT.Mazur.WeierstrassDividedTripleNegativeBranchContraction
