@@ -5836,6 +5836,7 @@ public import FLT.Mazur.FiniteFlatCoefficientIso
 public import FLT.Mazur.FiniteFlatDegreeOpen
 public import FLT.Mazur.FiniteFlatFiberCard
 public import FLT.Mazur.FiniteFlatGlobalSections
+public import FLT.Mazur.FiniteFlatIdealSheafEquality
 public import FLT.Mazur.FiniteFlatIdealVanishingBaseChange
 public import FLT.Mazur.FiniteFlatIdealVanishingChart
 public import FLT.Mazur.FiniteFlatIdealVanishingGluing
