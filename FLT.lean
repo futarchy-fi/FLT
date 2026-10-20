@@ -3977,6 +3977,7 @@ public import FLT.Mazur.CartierQuotientAugmentation
 public import FLT.Mazur.CartierRetainedLineBaseChange
 public import FLT.Mazur.CartierRetainedLineProjections
 public import FLT.Mazur.CartierSectionPairEquivalence
+public import FLT.Mazur.CartierSectionProductRank
 public import FLT.Mazur.CartierSupportOpenDescent
 public import FLT.Mazur.CartierTensorRank
 public import FLT.Mazur.CartierTensorRatioIdeal
@@ -4085,6 +4086,7 @@ public import FLT.Mazur.ClosedImmersionRefinedOpenPatches
 public import FLT.Mazur.ClosedLineProjectionFormula
 public import FLT.Mazur.ClosedLineQuotientPresentation
 public import FLT.Mazur.ClosedModuleDescent
+public import FLT.Mazur.ClosedOrbitKernel
 public import FLT.Mazur.ClosedPointFiberAmple
 public import FLT.Mazur.ClosedPointFiberSectionLifting
 public import FLT.Mazur.ClosedPointLineSection
@@ -5842,6 +5844,7 @@ public import FLT.Mazur.FiniteFlatIdealVanishingUniversal
 public import FLT.Mazur.FiniteFlatIdealVanishingZero
 public import FLT.Mazur.FiniteFlatLocalIdealPresentation
 public import FLT.Mazur.FiniteFlatProjectiveTargetLocus
+public import FLT.Mazur.FiniteFlatQuotientIdealEquality
 public import FLT.Mazur.FiniteFlatQuotientTrivialization
 public import FLT.Mazur.FiniteFlatSubschemeQuotient
 public import FLT.Mazur.FiniteFlatTranslationNormCharts
@@ -8504,6 +8507,8 @@ public import FLT.Mazur.OddWeierstrassThreeTorsionEtale
 public import FLT.Mazur.OddWeierstrassThreeTorsionFinite
 public import FLT.Mazur.OddWeierstrassThreeTorsionUnramified
 public import FLT.Mazur.OneGonActionRotations
+public import FLT.Mazur.OneGonAdicCanonicalOrbit
+public import FLT.Mazur.OneGonAdicCanonicalSubgroup
 public import FLT.Mazur.OneGonAdicCharacterAffineEffectivity
 public import FLT.Mazur.OneGonAdicCharacterChartTower
 public import FLT.Mazur.OneGonAdicCharacterClosedImmersion
@@ -8520,6 +8525,8 @@ public import FLT.Mazur.OneGonAdicCharacterTower
 public import FLT.Mazur.OneGonAdicChartProjection
 public import FLT.Mazur.OneGonAdicChartRestriction
 public import FLT.Mazur.OneGonAdicFiniteSubgroup
+public import FLT.Mazur.OneGonAdicInitialParameter
+public import FLT.Mazur.OneGonAdicInitialRoots
 public import FLT.Mazur.OneGonAdicSmoothProjection
 public import FLT.Mazur.OneGonAdicSubgroupCartier
 public import FLT.Mazur.OneGonAffineCover
@@ -11951,6 +11958,7 @@ public import FLT.Mazur.RootsOfUnityArithmeticPullback
 public import FLT.Mazur.RootsOfUnityCartier
 public import FLT.Mazur.RootsOfUnityGroupBaseChange
 public import FLT.Mazur.RootsOfUnityInclusionBaseChange
+public import FLT.Mazur.RootsOfUnityIntrinsicOrbit
 public import FLT.Mazur.RootsOfUnityLaurentKernel
 public import FLT.Mazur.RootsOfUnityNonEtale
 public import FLT.Mazur.RootsOfUnityPolynomialPresentation
