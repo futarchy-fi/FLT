@@ -4298,6 +4298,7 @@ public import FLT.Mazur.CyclicCharacteristicAuxiliaryPrescribedNeighborhood
 public import FLT.Mazur.CyclicCharacteristicChartLocallyRinged
 public import FLT.Mazur.CyclicCharacteristicChartResidualSections
 public import FLT.Mazur.CyclicCharacteristicChartSaturatedOpen
+public import FLT.Mazur.CyclicCharacteristicCoarseTransformation
 public import FLT.Mazur.CyclicCharacteristicCoefficientBase
 public import FLT.Mazur.CyclicCharacteristicCoefficientFiniteType
 public import FLT.Mazur.CyclicCharacteristicComparisonGeometry
