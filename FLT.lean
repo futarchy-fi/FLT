@@ -14444,6 +14444,7 @@ public import FLT.Mazur.WeierstrassDividedCyclicSmoothParameter
 public import FLT.Mazur.WeierstrassDividedDataFormulaComparison
 public import FLT.Mazur.WeierstrassDividedDeepCommonFormula
 public import FLT.Mazur.WeierstrassDividedDeepCommonModel
+public import FLT.Mazur.WeierstrassDividedDeepLeftOverlap
 public import FLT.Mazur.WeierstrassDividedDeepNodalBranchCommonOutput
 public import FLT.Mazur.WeierstrassDividedDeepNodalNegativeBranchContraction
 public import FLT.Mazur.WeierstrassDividedDeepNodalNegativeBranchOutput
