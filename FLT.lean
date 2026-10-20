@@ -11783,6 +11783,7 @@ public import FLT.Mazur.RingPairInvariantLocalization
 public import FLT.Mazur.RingedSpaceIdealLocus
 public import FLT.Mazur.RootsOfUnityAlgebra
 public import FLT.Mazur.RootsOfUnityAlgebraPoints
+public import FLT.Mazur.RootsOfUnityArithmeticPullback
 public import FLT.Mazur.RootsOfUnityCartier
 public import FLT.Mazur.RootsOfUnityLaurentKernel
 public import FLT.Mazur.RootsOfUnityNonEtale
