@@ -2769,6 +2769,7 @@ public import FLT.Mazur.AdicFormallySmoothResidueLift
 public import FLT.Mazur.AdicFormallySmoothStages
 public import FLT.Mazur.AdicIdealCompletionRange
 public import FLT.Mazur.AdicIdealFilteredMap
+public import FLT.Mazur.AdicIdealPowerComparison
 public import FLT.Mazur.AdicInfinitesimalConormal
 public import FLT.Mazur.AdicInfinitesimalConormalFunctor
 public import FLT.Mazur.AdicInfinitesimalCotangentSpace
@@ -2779,6 +2780,7 @@ public import FLT.Mazur.AdicInfinitesimalPresentationLift
 public import FLT.Mazur.AdicInfinitesimalSpaceFunctor
 public import FLT.Mazur.AdicInfinitesimalSpaceMap
 public import FLT.Mazur.AdicLinearImageDescent
+public import FLT.Mazur.AdicLinearRankReduction
 public import FLT.Mazur.AdicLinearReductionLifts
 public import FLT.Mazur.AdicLinearReductionProperty
 public import FLT.Mazur.AdicLocalPointTopology
@@ -4703,6 +4705,13 @@ public import FLT.Mazur.DenseGroundHilbertFullInterior
 public import FLT.Mazur.DenseGroundHilbertPrincipal
 public import FLT.Mazur.DenseGroundResidualSupport
 public import FLT.Mazur.DerivationAlgEquivTransport
+public import FLT.Mazur.DiagonalizableCobarAlgebra
+public import FLT.Mazur.DiagonalizableCobarContraction
+public import FLT.Mazur.DiagonalizableCobarCoordinates
+public import FLT.Mazur.DiagonalizableCoefficientReduction
+public import FLT.Mazur.DiagonalizableInfinitesimalIdeal
+public import FLT.Mazur.DiagonalizableSquareZeroCocycle
+public import FLT.Mazur.DiagonalizableSquareZeroCoefficients
 public import FLT.Mazur.DifferenceNodeAlgebra
 public import FLT.Mazur.DifferenceNodeCorrectionNaturality
 public import FLT.Mazur.DifferenceNodeCriticalNaturality
@@ -6986,6 +6995,7 @@ public import FLT.Mazur.HilbertOrbitMixedBoundaryKernel
 public import FLT.Mazur.HilbertOrbitMixedBoundaryProjection
 public import FLT.Mazur.HilbertOrbitMixedResidualSplitting
 public import FLT.Mazur.HilbertOrbitOffDiagonalCorrectionEquations
+public import FLT.Mazur.HilbertOrbitRankErrorDescent
 public import FLT.Mazur.HilbertOrbitRelativeBoundaryFiniteness
 public import FLT.Mazur.HilbertOrbitRelativeFiniteLifts
 public import FLT.Mazur.HilbertOrbitRelativeFiniteTests
@@ -11410,11 +11420,16 @@ public import FLT.Mazur.RankStageCompatibleCoreCoefficients
 public import FLT.Mazur.RankStageCoreBoundaryCoefficients
 public import FLT.Mazur.RankStageCoreBoundaryTransitions
 public import FLT.Mazur.RankStageCoreCoefficientTransitions
+public import FLT.Mazur.RankStageCoreOriginalEnvelope
 public import FLT.Mazur.RankStageInitialBoundaryLifting
 public import FLT.Mazur.RankStageInvariantTransitions
+public import FLT.Mazur.RankStageOriginalAffineBoundaryTower
+public import FLT.Mazur.RankStageOriginalAffineCompatibility
+public import FLT.Mazur.RankStageOriginalAffineRepresentatives
 public import FLT.Mazur.RankStageOriginalBoundaryCoefficients
 public import FLT.Mazur.RankStageOriginalBoundaryRestriction
 public import FLT.Mazur.RankStageOriginalBoundaryTower
+public import FLT.Mazur.RankStageOriginalScalarCauchy
 public import FLT.Mazur.RankStagePrescribedBoundaryLifting
 public import FLT.Mazur.RankStagePrescribedBoundaryTower
 public import FLT.Mazur.RankStagePrescribedLiftingProperty
@@ -13962,6 +13977,7 @@ public import FLT.Mazur.WeierstrassCubicPushforwardH1
 public import FLT.Mazur.WeierstrassCubicQuotient
 public import FLT.Mazur.WeierstrassCubicQuotientChart
 public import FLT.Mazur.WeierstrassCubicSection
+public import FLT.Mazur.WeierstrassDiagonalizableInfinitesimalKernel
 public import FLT.Mazur.WeierstrassDilatationAlgebra
 public import FLT.Mazur.WeierstrassDilatationArithmeticCoefficientRestriction
 public import FLT.Mazur.WeierstrassDilatationArithmeticNormalizationRestriction
