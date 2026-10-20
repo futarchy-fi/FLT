@@ -8092,6 +8092,7 @@ public import FLT.Mazur.OddWeierstrassAuxiliaryGeometricFull
 public import FLT.Mazur.OddWeierstrassAuxiliaryGeometricRelabel
 public import FLT.Mazur.OddWeierstrassAuxiliaryGroupSourceNaturality
 public import FLT.Mazur.OddWeierstrassAuxiliaryLevel
+public import FLT.Mazur.OddWeierstrassAuxiliaryLocalTorsion
 public import FLT.Mazur.OddWeierstrassAuxiliaryMarkedRigidity
 public import FLT.Mazur.OddWeierstrassAuxiliaryMarkingInvariant
 public import FLT.Mazur.OddWeierstrassAuxiliaryNormalEquation
