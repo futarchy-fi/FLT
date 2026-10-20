@@ -8964,6 +8964,7 @@ public import FLT.Mazur.PolygonBoundaryDivisor
 public import FLT.Mazur.PolygonBoundaryGradedExactness
 public import FLT.Mazur.PolygonBoundaryGradedParameter
 public import FLT.Mazur.PolygonBoundaryLayerQuotient
+public import FLT.Mazur.PolygonBoundaryModuliMap
 public import FLT.Mazur.PolygonBoundaryParameterAnnihilator
 public import FLT.Mazur.PolygonBoundaryParameterImage
 public import FLT.Mazur.PolygonBoundaryReductionSequence
