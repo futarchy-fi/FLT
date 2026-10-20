@@ -7440,6 +7440,7 @@ public import FLT.Mazur.IdealQuotientExact
 public import FLT.Mazur.IdealQuotientSectionLift
 public import FLT.Mazur.IdealSheafAdicStalkSeparation
 public import FLT.Mazur.IdealSheafAffineTestErrors
+public import FLT.Mazur.IdealSheafClosedCoreTests
 public import FLT.Mazur.IdealSheafClosedTransitions
 public import FLT.Mazur.IdealSheafFactorizationSupport
 public import FLT.Mazur.IdealSheafFlatDetection
@@ -11442,9 +11443,16 @@ public import FLT.Mazur.RankStageOriginalAffineCompatibility
 public import FLT.Mazur.RankStageOriginalAffineEquationErrors
 public import FLT.Mazur.RankStageOriginalAffineRepresentatives
 public import FLT.Mazur.RankStageOriginalAffineTestValues
+public import FLT.Mazur.RankStageOriginalAtlasErrors
+public import FLT.Mazur.RankStageOriginalAtlasTower
 public import FLT.Mazur.RankStageOriginalBoundaryCoefficients
 public import FLT.Mazur.RankStageOriginalBoundaryRestriction
+public import FLT.Mazur.RankStageOriginalBoundaryTests
 public import FLT.Mazur.RankStageOriginalBoundaryTower
+public import FLT.Mazur.RankStageOriginalCoordinateErrors
+public import FLT.Mazur.RankStageOriginalMixedCoreTests
+public import FLT.Mazur.RankStageOriginalMixedIdeals
+public import FLT.Mazur.RankStageOriginalMixedTests
 public import FLT.Mazur.RankStageOriginalScalarCauchy
 public import FLT.Mazur.RankStagePrescribedBoundaryLifting
 public import FLT.Mazur.RankStagePrescribedBoundaryTower
