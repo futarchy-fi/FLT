@@ -11553,6 +11553,7 @@ public import FLT.Mazur.RankStageOriginalBoundaryCoherentNumerators
 public import FLT.Mazur.RankStageOriginalBoundaryRestriction
 public import FLT.Mazur.RankStageOriginalBoundaryTests
 public import FLT.Mazur.RankStageOriginalBoundaryTower
+public import FLT.Mazur.RankStageOriginalCompatibleScalars
 public import FLT.Mazur.RankStageOriginalCoordinateErrors
 public import FLT.Mazur.RankStageOriginalGeometricAtlasApproximation
 public import FLT.Mazur.RankStageOriginalMixedCoreTests
