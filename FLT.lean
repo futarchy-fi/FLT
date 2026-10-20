@@ -15216,6 +15216,7 @@ public import FLT.Mazur.WeierstrassDividedTangentBranchSpecialFiber
 public import FLT.Mazur.WeierstrassDividedTangentBranchSpecialization
 public import FLT.Mazur.WeierstrassDividedTangentBranchSpecializedZero
 public import FLT.Mazur.WeierstrassDividedTangentBranchTerminalCoverage
+public import FLT.Mazur.WeierstrassDividedTangentBranchTerminalFiber
 public import FLT.Mazur.WeierstrassDividedTangentCech
 public import FLT.Mazur.WeierstrassDividedTangentCechIso
 public import FLT.Mazur.WeierstrassDividedTangentConjugation
