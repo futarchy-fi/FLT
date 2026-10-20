@@ -8710,6 +8710,7 @@ public import FLT.Mazur.OpenImmersionImageUnionIsomorphism
 public import FLT.Mazur.OpenImmersionImageUnionPullback
 public import FLT.Mazur.OpenImmersionImageUnionPullbackLift
 public import FLT.Mazur.OpenImmersionImageUnionReindex
+public import FLT.Mazur.OpenImmersionImageUnionSingleOverlap
 public import FLT.Mazur.OpenImmersionSectionComparison
 public import FLT.Mazur.OpenIntersectionClosedProjection
 public import FLT.Mazur.OpenIntersectionProduct
