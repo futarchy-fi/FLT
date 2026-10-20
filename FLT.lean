@@ -2780,6 +2780,7 @@ public import FLT.Mazur.AdicInfinitesimalPresentationLift
 public import FLT.Mazur.AdicInfinitesimalSpaceFunctor
 public import FLT.Mazur.AdicInfinitesimalSpaceMap
 public import FLT.Mazur.AdicLinearImageDescent
+public import FLT.Mazur.AdicLinearRankReduction
 public import FLT.Mazur.AdicLinearReductionLifts
 public import FLT.Mazur.AdicLinearReductionProperty
 public import FLT.Mazur.AdicLocalPointTopology
