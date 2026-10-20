@@ -12960,6 +12960,7 @@ public import FLT.Mazur.TildeInvertibleLocal
 public import FLT.Mazur.TildePrincipalOpen
 public import FLT.Mazur.TildeSourceSectionComparison
 public import FLT.Mazur.ToricHopfCharacterKernel
+public import FLT.Mazur.ToricHopfQuotientCoordinates
 public import FLT.Mazur.TorusArithmeticCyclicity
 public import FLT.Mazur.TorusChartScalars
 public import FLT.Mazur.TorusCyclotomicGenerator
