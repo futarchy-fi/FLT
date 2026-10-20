@@ -4389,6 +4389,7 @@ public import FLT.Mazur.CyclicCharacteristicOrbitFiniteQuotient
 public import FLT.Mazur.CyclicCharacteristicOrbitIntegerOpens
 public import FLT.Mazur.CyclicCharacteristicOrbitOpens
 public import FLT.Mazur.CyclicCharacteristicOrbitResidualHomeomorphism
+public import FLT.Mazur.CyclicCharacteristicOrbitScheme
 public import FLT.Mazur.CyclicCharacteristicOrbitTopology
 public import FLT.Mazur.CyclicCharacteristicOriginalAffineComparison
 public import FLT.Mazur.CyclicCharacteristicParameterFiniteType
