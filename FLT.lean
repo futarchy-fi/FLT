@@ -7615,6 +7615,7 @@ public import FLT.Mazur.InvariantIdealEquivalence
 public import FLT.Mazur.InvariantIdealRelation
 public import FLT.Mazur.InvariantIdealRelationCoefficientMembership
 public import FLT.Mazur.InvariantIdealRelationCoefficients
+public import FLT.Mazur.InvariantIsomorphismRestriction
 public import FLT.Mazur.InvariantLocalizationAction
 public import FLT.Mazur.InvariantLocalizationComparison
 public import FLT.Mazur.InvariantLocalizationCoordinates
@@ -11525,6 +11526,8 @@ public import FLT.Mazur.QuotientSpectrumBaseChange
 public import FLT.Mazur.RankOneAmbientLineClassification
 public import FLT.Mazur.RankOneDirectImageSection
 public import FLT.Mazur.RankOneSectionDivisorUniqueness
+public import FLT.Mazur.RankOpenCompatibleAlgebraization
+public import FLT.Mazur.RankOpenHomogeneousAlgebraization
 public import FLT.Mazur.RankStageAffineBoundaryLifts
 public import FLT.Mazur.RankStageAffineNeighborhoods
 public import FLT.Mazur.RankStageBoundaryIdeal
@@ -11595,10 +11598,15 @@ public import FLT.Mazur.RankStagePrescribedLiftingProperty
 public import FLT.Mazur.RankStagePrincipalCoreCorrections
 public import FLT.Mazur.RankStageRelationTransitions
 public import FLT.Mazur.RankStageRescaledGlobalKernelTowers
+public import FLT.Mazur.RankStageStableKernelObstruction
+public import FLT.Mazur.RankStageStableTransitions
 public import FLT.Mazur.RankStageStagewiseKernelObstruction
 public import FLT.Mazur.RankStageStructureMaps
+public import FLT.Mazur.RankStageTopBoundaryOverlap
+public import FLT.Mazur.RankStageTopKernelObstruction
 public import FLT.Mazur.RankStageTransitionTopology
 public import FLT.Mazur.RankStageUniformKernelNumerators
+public import FLT.Mazur.RankStratumTopNilpotence
 public import FLT.Mazur.RationalCyclicCartierGenerator
 public import FLT.Mazur.RationalCyclicGeneratorChange
 public import FLT.Mazur.RationalCyclicModuliPoint
@@ -13074,6 +13082,8 @@ public import FLT.Mazur.StableAffineQuotientMap
 public import FLT.Mazur.StableAffineQuotientNeighborhood
 public import FLT.Mazur.StableAffineQuotientOverlap
 public import FLT.Mazur.StableAffineQuotientPullbackCharts
+public import FLT.Mazur.StableCompatibleRingTower
+public import FLT.Mazur.StableNumeratorObstruction
 public import FLT.Mazur.StalkBaseClosedFiber
 public import FLT.Mazur.StalkBaseLocalization
 public import FLT.Mazur.StalkBaseNumeratorOpen
