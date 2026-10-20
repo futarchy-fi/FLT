@@ -4665,6 +4665,7 @@ public import FLT.Mazur.CyclicProductEndpoints
 public import FLT.Mazur.CyclicProductNormalization
 public import FLT.Mazur.CyclicTorsionPoint
 public import FLT.Mazur.CyclicUnitRelabeling
+public import FLT.Mazur.CyclotomicCoverRootSection
 public import FLT.Mazur.CyclotomicSchemeOrbit
 public import FLT.Mazur.DRFiberClassification
 public import FLT.Mazur.DedekindPointExtension
