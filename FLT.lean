@@ -4157,6 +4157,7 @@ public import FLT.Mazur.CompatibleSubgroupOrbitMarking
 public import FLT.Mazur.CompatibleSubgroupParameterRefinement
 public import FLT.Mazur.CompatibleSubgroupPointClassification
 public import FLT.Mazur.CompatibleSubgroupSectionComposition
+public import FLT.Mazur.CompatibleSubgroupSmooth
 public import FLT.Mazur.CompatibleTorsionCurveMarkingRelabel
 public import FLT.Mazur.CompleteBoundaryAmpleCyclicLevels
 public import FLT.Mazur.ConnectedClosedFiberThickening
@@ -4301,6 +4302,8 @@ public import FLT.Mazur.CyclicCharacteristicAuxiliaryPrescribedNeighborhood
 public import FLT.Mazur.CyclicCharacteristicChartLocallyRinged
 public import FLT.Mazur.CyclicCharacteristicChartResidualSections
 public import FLT.Mazur.CyclicCharacteristicChartSaturatedOpen
+public import FLT.Mazur.CyclicCharacteristicCoarseTransformation
+public import FLT.Mazur.CyclicCharacteristicCoarseUniversal
 public import FLT.Mazur.CyclicCharacteristicCoefficientBase
 public import FLT.Mazur.CyclicCharacteristicCoefficientFiniteType
 public import FLT.Mazur.CyclicCharacteristicComparisonGeometry
@@ -4340,6 +4343,7 @@ public import FLT.Mazur.CyclicCharacteristicFiniteNeighborhood
 public import FLT.Mazur.CyclicCharacteristicFiniteResidualSections
 public import FLT.Mazur.CyclicCharacteristicFiniteTypeAtlas
 public import FLT.Mazur.CyclicCharacteristicFixedCover
+public import FLT.Mazur.CyclicCharacteristicFppfScope
 public import FLT.Mazur.CyclicCharacteristicFullAffineComparisonSpan
 public import FLT.Mazur.CyclicCharacteristicGeometricGeneratorRelabel
 public import FLT.Mazur.CyclicCharacteristicGeometricOrbit
@@ -4364,6 +4368,8 @@ public import FLT.Mazur.CyclicCharacteristicInvariantSections
 public import FLT.Mazur.CyclicCharacteristicInvariantSheaf
 public import FLT.Mazur.CyclicCharacteristicInvertibleResidual
 public import FLT.Mazur.CyclicCharacteristicLocalArrowOrbit
+public import FLT.Mazur.CyclicCharacteristicLocalModuliCoarse
+public import FLT.Mazur.CyclicCharacteristicLocalModuliSheafDescent
 public import FLT.Mazur.CyclicCharacteristicLocalOrbit
 public import FLT.Mazur.CyclicCharacteristicLocallyNormalizedModuli
 public import FLT.Mazur.CyclicCharacteristicLocallyRingedDescent
@@ -4488,6 +4494,8 @@ public import FLT.Mazur.CyclicCharacteristicRetainedParameter
 public import FLT.Mazur.CyclicCharacteristicRingedCoequalizer
 public import FLT.Mazur.CyclicCharacteristicRingedCofork
 public import FLT.Mazur.CyclicCharacteristicRingedDescent
+public import FLT.Mazur.CyclicCharacteristicSheafChartMorphism
+public import FLT.Mazur.CyclicCharacteristicSmoothParameterScope
 public import FLT.Mazur.CyclicCharacteristicSmoothUnmarkedClass
 public import FLT.Mazur.CyclicCharacteristicSmoothUnmarkedMorphism
 public import FLT.Mazur.CyclicCharacteristicTransitionCover
@@ -8965,6 +8973,7 @@ public import FLT.Mazur.PolygonBoundaryDivisor
 public import FLT.Mazur.PolygonBoundaryGradedExactness
 public import FLT.Mazur.PolygonBoundaryGradedParameter
 public import FLT.Mazur.PolygonBoundaryLayerQuotient
+public import FLT.Mazur.PolygonBoundaryModuliMap
 public import FLT.Mazur.PolygonBoundaryParameterAnnihilator
 public import FLT.Mazur.PolygonBoundaryParameterImage
 public import FLT.Mazur.PolygonBoundaryReductionSequence
@@ -12313,6 +12322,7 @@ public import FLT.Mazur.SchemeSectionFrameCompatibility
 public import FLT.Mazur.SchemeSectionFrameNormalization
 public import FLT.Mazur.SchemeSectionTransportNaturality
 public import FLT.Mazur.SchemeSmoothChartTransport
+public import FLT.Mazur.SchemeSmoothFppfFamilyDescent
 public import FLT.Mazur.SchemeSmoothLocusCartesian
 public import FLT.Mazur.SchemeSmoothLocusQuotient
 public import FLT.Mazur.SchemeSourceTestOverlapRecognition
