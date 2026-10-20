@@ -14992,6 +14992,7 @@ public import FLT.Mazur.WeierstrassDividedNodalShallowTangentCoverage
 public import FLT.Mazur.WeierstrassDividedNodalShallowTangentGluing
 public import FLT.Mazur.WeierstrassDividedNodalShallowTangentNeighborhood
 public import FLT.Mazur.WeierstrassDividedNodalShallowTangentNeighborhoodCover
+public import FLT.Mazur.WeierstrassDividedNodalSmoothVertical
 public import FLT.Mazur.WeierstrassDividedNodalTangentBranchCoverage
 public import FLT.Mazur.WeierstrassDividedNodalTangentGluing
 public import FLT.Mazur.WeierstrassDividedNodalTangentNeighborhood
