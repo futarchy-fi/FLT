@@ -14862,6 +14862,7 @@ public import FLT.Mazur.WeierstrassDividedNodalBranchTerminalConstant
 public import FLT.Mazur.WeierstrassDividedNodalDeepSecantContraction
 public import FLT.Mazur.WeierstrassDividedNodalDeepSecantCoverage
 public import FLT.Mazur.WeierstrassDividedNodalDeepSecantNeighborhood
+public import FLT.Mazur.WeierstrassDividedNodalDeepSecantNeighborhoodCover
 public import FLT.Mazur.WeierstrassDividedNodalDepthAvailability
 public import FLT.Mazur.WeierstrassDividedNodalDoubledBranchSmooth
 public import FLT.Mazur.WeierstrassDividedNodalFirstBranchCommonOutput
