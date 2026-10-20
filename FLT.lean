@@ -4188,6 +4188,7 @@ public import FLT.Mazur.ConstantCyclicFiniteEtale
 public import FLT.Mazur.ConstantCyclicGenerator
 public import FLT.Mazur.ConstantCyclicGroup
 public import FLT.Mazur.ConstantCyclicInclusion
+public import FLT.Mazur.ConstantCyclicRelabel
 public import FLT.Mazur.ConstantCyclicRelativeClosed
 public import FLT.Mazur.ConstantCyclicRelativeGeometry
 public import FLT.Mazur.ConstantCyclicSchemeAction
