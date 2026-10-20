@@ -2883,6 +2883,7 @@ public import FLT.Mazur.AffineClosedModuleDescent
 public import FLT.Mazur.AffineClosedPointAlgebra
 public import FLT.Mazur.AffineClosedPointCompletion
 public import FLT.Mazur.AffineClosedPointQuotient
+public import FLT.Mazur.AffineClosedSimultaneousLifting
 public import FLT.Mazur.AffineClosureFiniteness
 public import FLT.Mazur.AffineCoalgebraDescentRecognition
 public import FLT.Mazur.AffineCoalgebraSheafNaturality
@@ -2962,7 +2963,10 @@ public import FLT.Mazur.AffineFiberProductOverlap
 public import FLT.Mazur.AffineFiberProductPairTransport
 public import FLT.Mazur.AffineFiberProductRefinementCocycle
 public import FLT.Mazur.AffineFiberwiseSectionCartier
+public import FLT.Mazur.AffineFiniteEtaleBoundaryKernelTransition
 public import FLT.Mazur.AffineFiniteEtaleBoundarySurjectivity
+public import FLT.Mazur.AffineFiniteEtalePrescribedCoefficients
+public import FLT.Mazur.AffineFiniteEtaleSimultaneousLifting
 public import FLT.Mazur.AffineFiniteFreeAtlas
 public import FLT.Mazur.AffineFiniteFreeDirectedCover
 public import FLT.Mazur.AffineFiniteFreeRelationTraceUnit
@@ -3287,6 +3291,7 @@ public import FLT.Mazur.AffineLocallyFreeRelationCharpoly
 public import FLT.Mazur.AffineLocallyFreeRelationNorm
 public import FLT.Mazur.AffineLocallyFreeRelationTrace
 public import FLT.Mazur.AffineLocallyFreeRelationTraceUnit
+public import FLT.Mazur.AffineLocallyFreeSimultaneousTrace
 public import FLT.Mazur.AffineLocallyFreeTraceSurjectivity
 public import FLT.Mazur.AffineMinimalPrimeFiniteOpen
 public import FLT.Mazur.AffineModuleCoalgebraDescent
@@ -6055,6 +6060,7 @@ public import FLT.Mazur.FiniteRelationLocalizedCoverDescent
 public import FLT.Mazur.FiniteRelationLocalizedInclusionDescent
 public import FLT.Mazur.FiniteRelationLocalizedUnionDescent
 public import FLT.Mazur.FiniteRelationLocallyClosedAffineBasis
+public import FLT.Mazur.FiniteRelationNamedDomainTransitions
 public import FLT.Mazur.FiniteRelationPrincipalCoverModels
 public import FLT.Mazur.FiniteRelationPrincipalPathQuotients
 public import FLT.Mazur.FiniteRelationPrincipalProjection
@@ -7530,6 +7536,7 @@ public import FLT.Mazur.InvariantFlatTensorComparison
 public import FLT.Mazur.InvariantGeometricFiberTests
 public import FLT.Mazur.InvariantIdealEquivalence
 public import FLT.Mazur.InvariantIdealRelation
+public import FLT.Mazur.InvariantIdealRelationCoefficients
 public import FLT.Mazur.InvariantLocalizationAction
 public import FLT.Mazur.InvariantLocalizationComparison
 public import FLT.Mazur.InvariantLocalizationCoordinates
@@ -11378,9 +11385,11 @@ public import FLT.Mazur.RankStageBoundarySeedTower
 public import FLT.Mazur.RankStageCoherentAffineCores
 public import FLT.Mazur.RankStageCoherentCoreCoverage
 public import FLT.Mazur.RankStageCompatibleCoreCoefficients
+public import FLT.Mazur.RankStageCoreBoundaryCoefficients
 public import FLT.Mazur.RankStageCoreBoundaryTransitions
 public import FLT.Mazur.RankStageCoreCoefficientTransitions
 public import FLT.Mazur.RankStageInvariantTransitions
+public import FLT.Mazur.RankStageOriginalBoundaryCoefficients
 public import FLT.Mazur.RankStageRelationTransitions
 public import FLT.Mazur.RankStageTransitionTopology
 public import FLT.Mazur.RationalCyclicCartierGenerator
@@ -14460,6 +14469,7 @@ public import FLT.Mazur.WeierstrassDividedFiniteNegation
 public import FLT.Mazur.WeierstrassDividedFiniteNegationContraction
 public import FLT.Mazur.WeierstrassDividedFiniteNegationCover
 public import FLT.Mazur.WeierstrassDividedFiniteNegationOverlap
+public import FLT.Mazur.WeierstrassDividedFiniteNodalFirstBranchLift
 public import FLT.Mazur.WeierstrassDividedFiniteNodeComponents
 public import FLT.Mazur.WeierstrassDividedFiniteNodeContractions
 public import FLT.Mazur.WeierstrassDividedFiniteNormalizedBranchInput
@@ -14799,12 +14809,19 @@ public import FLT.Mazur.WeierstrassDividedNegativeTangentSlope
 public import FLT.Mazur.WeierstrassDividedNilpotentEarlierTerminal
 public import FLT.Mazur.WeierstrassDividedNilpotentInfinity
 public import FLT.Mazur.WeierstrassDividedNilpotentNonadjacentIntersection
+public import FLT.Mazur.WeierstrassDividedNodalBranchCoefficients
 public import FLT.Mazur.WeierstrassDividedNodalBranchCommonOutput
 public import FLT.Mazur.WeierstrassDividedNodalDepthAvailability
+public import FLT.Mazur.WeierstrassDividedNodalFirstBranchCommonOutput
+public import FLT.Mazur.WeierstrassDividedNodalFirstBranchOutput
 public import FLT.Mazur.WeierstrassDividedNodalNegativeBranchContraction
 public import FLT.Mazur.WeierstrassDividedNodalNegativeBranchOutput
+public import FLT.Mazur.WeierstrassDividedNodalSecantCases
 public import FLT.Mazur.WeierstrassDividedNodalSecondNormalization
 public import FLT.Mazur.WeierstrassDividedNodalTangentBranchCoverage
+public import FLT.Mazur.WeierstrassDividedNodalTangentGluing
+public import FLT.Mazur.WeierstrassDividedNodalTangentNeighborhood
+public import FLT.Mazur.WeierstrassDividedNodalTangentNeighborhoodCover
 public import FLT.Mazur.WeierstrassDividedNonadjacentGlobalIntersection
 public import FLT.Mazur.WeierstrassDividedNonadjacentTensorIntersection
 public import FLT.Mazur.WeierstrassDividedNormalizedBranchContraction
@@ -15412,8 +15429,10 @@ public import FLT.Mazur.WeierstrassDividedTangentCechIso
 public import FLT.Mazur.WeierstrassDividedTangentConjugation
 public import FLT.Mazur.WeierstrassDividedTangentExtendedAddition
 public import FLT.Mazur.WeierstrassDividedTangentExtendedOverlap
+public import FLT.Mazur.WeierstrassDividedTangentFlatSourceExt
 public import FLT.Mazur.WeierstrassDividedTangentFormula
 public import FLT.Mazur.WeierstrassDividedTangentLeftOverlap
+public import FLT.Mazur.WeierstrassDividedTangentOpenGluing
 public import FLT.Mazur.WeierstrassDividedTangentOriginalAction
 public import FLT.Mazur.WeierstrassDividedTangentOverlapProjections
 public import FLT.Mazur.WeierstrassDividedTangentPartialOverlap
