@@ -4153,6 +4153,7 @@ public import FLT.Mazur.CompatibleSubgroupOrbitMarking
 public import FLT.Mazur.CompatibleSubgroupParameterRefinement
 public import FLT.Mazur.CompatibleSubgroupPointClassification
 public import FLT.Mazur.CompatibleSubgroupSectionComposition
+public import FLT.Mazur.CompatibleTorsionCurveMarkingRelabel
 public import FLT.Mazur.CompleteBoundaryAmpleCyclicLevels
 public import FLT.Mazur.ConnectedClosedFiberThickening
 public import FLT.Mazur.ConnectedFiberGeneralization
