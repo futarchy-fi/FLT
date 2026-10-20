@@ -5937,6 +5937,7 @@ public import FLT.Mazur.FiniteProjectiveAffineNormCharts
 public import FLT.Mazur.FiniteProjectivePrincipalDescent
 public import FLT.Mazur.FiniteProjectiveRankFrames
 public import FLT.Mazur.FiniteProjectiveRankOneTrivialization
+public import FLT.Mazur.FiniteProjectiveRelationIntegralCoordinates
 public import FLT.Mazur.FiniteProjectiveSectionAmple
 public import FLT.Mazur.FiniteProjectiveTildeLocal
 public import FLT.Mazur.FinitePushforwardAmpleVanishing
