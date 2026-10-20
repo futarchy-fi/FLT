@@ -15916,6 +15916,7 @@ public import FLT.Mazur.WeierstrassDividedTripleNegativeBranchContraction
 public import FLT.Mazur.WeierstrassDividedTripleNegativeBranchOutput
 public import FLT.Mazur.WeierstrassDividedTripleNormalizedBranchLift
 public import FLT.Mazur.WeierstrassDividedTriplePromotedSecant
+public import FLT.Mazur.WeierstrassDividedTriplePromotedTangent
 public import FLT.Mazur.WeierstrassDividedTripleResolvedSecant
 public import FLT.Mazur.WeierstrassDividedTripleSecantCases
 public import FLT.Mazur.WeierstrassDividedTripleSecantCoverage
