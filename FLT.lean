@@ -14996,6 +14996,7 @@ public import FLT.Mazur.WeierstrassDividedReciprocalSecantScheme
 public import FLT.Mazur.WeierstrassDividedReciprocalSource
 public import FLT.Mazur.WeierstrassDividedReciprocalSpecialization
 public import FLT.Mazur.WeierstrassDividedReciprocalTangentComparison
+public import FLT.Mazur.WeierstrassDividedReciprocalTangentExtendedOverlap
 public import FLT.Mazur.WeierstrassDividedReciprocalTangentFormula
 public import FLT.Mazur.WeierstrassDividedReciprocalTangentOverlap
 public import FLT.Mazur.WeierstrassDividedReciprocalTangentScheme
