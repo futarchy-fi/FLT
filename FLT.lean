@@ -4236,6 +4236,7 @@ public import FLT.Mazur.CyclicBoundaryOriginalMarkings
 public import FLT.Mazur.CyclicBoundaryParameterAction
 public import FLT.Mazur.CyclicBoundaryParameterSections
 public import FLT.Mazur.CyclicBoundarySectionMarking
+public import FLT.Mazur.CyclicBoundaryTestSubgroup
 public import FLT.Mazur.CyclicBoundaryUniversalSubgroup
 public import FLT.Mazur.CyclicCharacteristicAffineArrowGeometry
 public import FLT.Mazur.CyclicCharacteristicAffineCartierClassification
