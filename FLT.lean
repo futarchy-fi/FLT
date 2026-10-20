@@ -14973,6 +14973,7 @@ public import FLT.Mazur.WeierstrassDividedResolvedOriginalOpen
 public import FLT.Mazur.WeierstrassDividedResolvedPartialAddition
 public import FLT.Mazur.WeierstrassDividedResolvedProductOpens
 public import FLT.Mazur.WeierstrassDividedResolvedProductOverlap
+public import FLT.Mazur.WeierstrassDividedResolvedReciprocal
 public import FLT.Mazur.WeierstrassDividedResolvedSecant
 public import FLT.Mazur.WeierstrassDividedResolvedSecantPoint
 public import FLT.Mazur.WeierstrassDividedResolvedSmoothAction
