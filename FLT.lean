@@ -11505,6 +11505,7 @@ public import FLT.Mazur.RankStageInitialBoundaryLifting
 public import FLT.Mazur.RankStageInvariantOverlapCocycle
 public import FLT.Mazur.RankStageInvariantOverlapErrors
 public import FLT.Mazur.RankStageInvariantTransitions
+public import FLT.Mazur.RankStageNestedCoreHomogeneousCorrections
 public import FLT.Mazur.RankStageOriginalAffineBoundaryTower
 public import FLT.Mazur.RankStageOriginalAffineCompatibility
 public import FLT.Mazur.RankStageOriginalAffineEquationErrors
