@@ -5283,6 +5283,7 @@ public import FLT.Mazur.EllipticVariableChangeSmoothness
 public import FLT.Mazur.EllipticWeightedScaling
 public import FLT.Mazur.EllipticZeroExteriorSmoothCover
 public import FLT.Mazur.EmbeddedStalkNilpotence
+public import FLT.Mazur.EndpointTraceIdealDescent
 public import FLT.Mazur.EnlargedPresentationModel
 public import FLT.Mazur.EnvelopeBoundaryIdealSheaf
 public import FLT.Mazur.EnvelopeBoundaryIdealTransport
