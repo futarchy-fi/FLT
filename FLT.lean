@@ -5748,6 +5748,7 @@ public import FLT.Mazur.FiniteCartierQuotientComparison
 public import FLT.Mazur.FiniteCartierQuotientIso
 public import FLT.Mazur.FiniteCechCyclesScalars
 public import FLT.Mazur.FiniteCechTermScalars
+public import FLT.Mazur.FiniteCharacterAdicChartExt
 public import FLT.Mazur.FiniteCharacterAdicElements
 public import FLT.Mazur.FiniteCharacterAdicHom
 public import FLT.Mazur.FiniteCharacterAdicJacobson
