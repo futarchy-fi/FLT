@@ -15529,6 +15529,7 @@ public import FLT.Mazur.WeierstrassDividedProjectiveLift
 public import FLT.Mazur.WeierstrassDividedQuadrupleCommonFormula
 public import FLT.Mazur.WeierstrassDividedQuadrupleCommonModel
 public import FLT.Mazur.WeierstrassDividedQuadrupleLeftOverlap
+public import FLT.Mazur.WeierstrassDividedQuadrupleReciprocalTangent
 public import FLT.Mazur.WeierstrassDividedQuadrupleRelativeSmoothCoverage
 public import FLT.Mazur.WeierstrassDividedQuadrupleRightOverlap
 public import FLT.Mazur.WeierstrassDividedReciprocalExtendedAddition
