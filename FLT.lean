@@ -12686,6 +12686,7 @@ public import FLT.Mazur.SpectrumGlobalRange
 public import FLT.Mazur.SpectrumRingCohomologyCoordinates
 public import FLT.Mazur.SpectrumSmoothFiniteFlatCartier
 public import FLT.Mazur.SpectrumTranslationNormBasis
+public import FLT.Mazur.SplitEtaleTraceUnit
 public import FLT.Mazur.SplitEvaluationBaseChange
 public import FLT.Mazur.SplitEvaluationTensorKernel
 public import FLT.Mazur.SplitLineAffineNeighborhood
