@@ -12809,6 +12809,7 @@ public import FLT.Mazur.UniversalWeierstrassAuxiliaryGeometricRelabel
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryGroupSourceNaturality
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryIsomorphismUnique
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryLevel
+public import FLT.Mazur.UniversalWeierstrassAuxiliaryLocalRelabel
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryLocalTorsion
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryMarkedRigidity
 public import FLT.Mazur.UniversalWeierstrassAuxiliaryMarkingInvariant
