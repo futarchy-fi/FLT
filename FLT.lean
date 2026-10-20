@@ -16062,6 +16062,7 @@ public import FLT.Mazur.WeierstrassDividedTripleSecantGluing
 public import FLT.Mazur.WeierstrassDividedTripleSecantNeighborhood
 public import FLT.Mazur.WeierstrassDividedTripleSecantNeighborhoodCover
 public import FLT.Mazur.WeierstrassDividedTripleSecantOverlap
+public import FLT.Mazur.WeierstrassDividedTripleShallowOverlap
 public import FLT.Mazur.WeierstrassDividedTripleTangentBranchCoverage
 public import FLT.Mazur.WeierstrassDividedTripleTangentExtendedOverlap
 public import FLT.Mazur.WeierstrassDividedTripleTangentGluing
