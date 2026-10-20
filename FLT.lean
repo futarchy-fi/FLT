@@ -14380,6 +14380,7 @@ public import FLT.Mazur.WeierstrassDividedCrossDepthResolvedSecantSecant
 public import FLT.Mazur.WeierstrassDividedCrossDepthResolvedSecantTangent
 public import FLT.Mazur.WeierstrassDividedCrossDepthResolvedTangentSecant
 public import FLT.Mazur.WeierstrassDividedCrossDepthResolvedTangentTangent
+public import FLT.Mazur.WeierstrassDividedCrossDepthRightTangent
 public import FLT.Mazur.WeierstrassDividedCrossDepthSecant
 public import FLT.Mazur.WeierstrassDividedCrossDepthSecantScheme
 public import FLT.Mazur.WeierstrassDividedCrossDepthTangent
