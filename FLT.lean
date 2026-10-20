@@ -2866,6 +2866,7 @@ public import FLT.Mazur.AffineCartesianPreimageSections
 public import FLT.Mazur.AffineCartesianSectionPushout
 public import FLT.Mazur.AffineCartesianSectionScalars
 public import FLT.Mazur.AffineCharpolyCharts
+public import FLT.Mazur.AffineCharpolyCoefficientGluing
 public import FLT.Mazur.AffineChartOpenSectionTransport
 public import FLT.Mazur.AffineChartResidueEquation
 public import FLT.Mazur.AffineChartResidueRetraction
