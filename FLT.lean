@@ -3275,6 +3275,7 @@ public import FLT.Mazur.AffineLineTwistLocalization
 public import FLT.Mazur.AffineLocalFiberRegularQuotient
 public import FLT.Mazur.AffineLocalHilbertTranslationCover
 public import FLT.Mazur.AffineLocallyFreeCharpolyEquation
+public import FLT.Mazur.AffineLocallyFreeIntegralCoordinates
 public import FLT.Mazur.AffineLocallyFreeInvariantPolynomial
 public import FLT.Mazur.AffineLocallyFreeRelationCharpoly
 public import FLT.Mazur.AffineLocallyFreeRelationNorm
