@@ -4715,6 +4715,8 @@ public import FLT.Mazur.DiagonalizableCoefficientReduction
 public import FLT.Mazur.DiagonalizableCofaceIdentities
 public import FLT.Mazur.DiagonalizableInfinitesimalIdeal
 public import FLT.Mazur.DiagonalizableInfinitesimalNaturality
+public import FLT.Mazur.DiagonalizableProductAlgebra
+public import FLT.Mazur.DiagonalizableProductScheme
 public import FLT.Mazur.DiagonalizableSquareZeroCocycle
 public import FLT.Mazur.DiagonalizableSquareZeroCoefficients
 public import FLT.Mazur.DifferenceNodeAlgebra
@@ -8101,6 +8103,7 @@ public import FLT.Mazur.MonomorphismRelativeOpenTransport
 public import FLT.Mazur.MonomorphismStratumOverlap
 public import FLT.Mazur.MultiplicativeGroupDimension
 public import FLT.Mazur.MultiplicativeGroupFieldExtension
+public import FLT.Mazur.MultiplicativeGroupObjectHom
 public import FLT.Mazur.MultiplicativeGroupScheme
 public import FLT.Mazur.NeronPolygonDihedralRelations
 public import FLT.Mazur.NeronPolygonPredicate
@@ -8534,6 +8537,10 @@ public import FLT.Mazur.OneGonIntegral
 public import FLT.Mazur.OneGonLocalDescent
 public import FLT.Mazur.OneGonLocalizedEqualizer
 public import FLT.Mazur.OneGonMobiusConductors
+public import FLT.Mazur.OneGonNilpotentCharacterHom
+public import FLT.Mazur.OneGonNilpotentDiagonalizableLift
+public import FLT.Mazur.OneGonNilpotentIntrinsicHomLift
+public import FLT.Mazur.OneGonNilpotentSmoothAffine
 public import FLT.Mazur.OneGonNodalCoefficientGroupMap
 public import FLT.Mazur.OneGonNodalCoefficientGroupProjection
 public import FLT.Mazur.OneGonNodeNormalizationIdeal
@@ -11429,6 +11436,9 @@ public import FLT.Mazur.RankStageCoreBoundaryCoefficients
 public import FLT.Mazur.RankStageCoreBoundaryTransitions
 public import FLT.Mazur.RankStageCoreCoefficientTransitions
 public import FLT.Mazur.RankStageCoreOriginalEnvelope
+public import FLT.Mazur.RankStageFiniteAtlasBoundaryTower
+public import FLT.Mazur.RankStageFiniteAtlasCoverage
+public import FLT.Mazur.RankStageFiniteCoreCoverage
 public import FLT.Mazur.RankStageInitialBoundaryLifting
 public import FLT.Mazur.RankStageInvariantTransitions
 public import FLT.Mazur.RankStageOriginalAffineBoundaryTower
@@ -11443,10 +11453,13 @@ public import FLT.Mazur.RankStageOriginalBoundaryRestriction
 public import FLT.Mazur.RankStageOriginalBoundaryTests
 public import FLT.Mazur.RankStageOriginalBoundaryTower
 public import FLT.Mazur.RankStageOriginalCoordinateErrors
+public import FLT.Mazur.RankStageOriginalGeometricAtlasApproximation
 public import FLT.Mazur.RankStageOriginalMixedCoreTests
 public import FLT.Mazur.RankStageOriginalMixedIdeals
 public import FLT.Mazur.RankStageOriginalMixedTests
+public import FLT.Mazur.RankStageOriginalScalarAtlasApproximation
 public import FLT.Mazur.RankStageOriginalScalarCauchy
+public import FLT.Mazur.RankStageOriginalScalarSupport
 public import FLT.Mazur.RankStagePrescribedBoundaryLifting
 public import FLT.Mazur.RankStagePrescribedBoundaryTower
 public import FLT.Mazur.RankStagePrescribedLiftingProperty
@@ -12411,6 +12424,7 @@ public import FLT.Mazur.SchemeReducedStructureSheaf
 public import FLT.Mazur.SchemeRefinementReconstruction
 public import FLT.Mazur.SchemeRegularNormProducts
 public import FLT.Mazur.SchemeRelationArrowTransport
+public import FLT.Mazur.SchemeRelationAtlasOperator
 public import FLT.Mazur.SchemeRelationCoefficientDiagram
 public import FLT.Mazur.SchemeRelationCoverSourceFunctions
 public import FLT.Mazur.SchemeRelationDoubleCompact
@@ -12483,6 +12497,7 @@ public import FLT.Mazur.SchemeRelationPrincipalTensorSections
 public import FLT.Mazur.SchemeRelationReanchoring
 public import FLT.Mazur.SchemeRelationRestrictionComposition
 public import FLT.Mazur.SchemeRelationRestrictionRechart
+public import FLT.Mazur.SchemeRelationSectionScalars
 public import FLT.Mazur.SchemeRelationSeedComparisonSquare
 public import FLT.Mazur.SchemeRelationSeedGenericCriterion
 public import FLT.Mazur.SchemeRelationSeedGenericImage
@@ -13995,6 +14010,7 @@ public import FLT.Mazur.WeierstrassCubicPushforwardH1
 public import FLT.Mazur.WeierstrassCubicQuotient
 public import FLT.Mazur.WeierstrassCubicQuotientChart
 public import FLT.Mazur.WeierstrassCubicSection
+public import FLT.Mazur.WeierstrassDiagonalizableCoefficientHom
 public import FLT.Mazur.WeierstrassDiagonalizableCorrection
 public import FLT.Mazur.WeierstrassDiagonalizableDefect
 public import FLT.Mazur.WeierstrassDiagonalizableErrorCoordinates
@@ -14002,6 +14018,7 @@ public import FLT.Mazur.WeierstrassDiagonalizableInfinitesimalKernel
 public import FLT.Mazur.WeierstrassDiagonalizableKernelNaturality
 public import FLT.Mazur.WeierstrassDiagonalizableLiftUniqueness
 public import FLT.Mazur.WeierstrassDiagonalizableLocalLift
+public import FLT.Mazur.WeierstrassDiagonalizableMonHom
 public import FLT.Mazur.WeierstrassDilatationAlgebra
 public import FLT.Mazur.WeierstrassDilatationArithmeticCoefficientRestriction
 public import FLT.Mazur.WeierstrassDilatationArithmeticNormalizationRestriction
