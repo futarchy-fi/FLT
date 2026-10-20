@@ -12690,6 +12690,7 @@ public import FLT.Mazur.SmoothOriginalFiberLineParameters
 public import FLT.Mazur.SmoothQuasiFiniteCartierCriterion
 public import FLT.Mazur.SmoothQuasiFiniteIdealCharts
 public import FLT.Mazur.SmoothRadicalBaseChange
+public import FLT.Mazur.SmoothRadicalIdealSheaf
 public import FLT.Mazur.SmoothRelativeCotangentRank
 public import FLT.Mazur.SmoothSectionCartier
 public import FLT.Mazur.SmoothTranslationChartOrbitFibers
