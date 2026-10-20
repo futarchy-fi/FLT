@@ -7598,6 +7598,7 @@ public import FLT.Mazur.InvariantLocalizationNumerator
 public import FLT.Mazur.InvariantLocallyFreeTraceUnit
 public import FLT.Mazur.InvariantObstructionNaturality
 public import FLT.Mazur.InvariantOpenBoundaryTrace
+public import FLT.Mazur.InvariantOpenCoefficientGluing
 public import FLT.Mazur.InvariantOpenCoefficientRestriction
 public import FLT.Mazur.InvariantOpenFiniteRelation
 public import FLT.Mazur.InvariantOpenProjectiveIntegralCoordinates
@@ -8667,6 +8668,7 @@ public import FLT.Mazur.OneGonZeroTorusComparison
 public import FLT.Mazur.OpenAtlasTripleGluing
 public import FLT.Mazur.OpenChartSectionPullback
 public import FLT.Mazur.OpenCoverDimension
+public import FLT.Mazur.OpenCoverFullBoundaryDetection
 public import FLT.Mazur.OpenDirectImageCohomology
 public import FLT.Mazur.OpenDirectImageNaturality
 public import FLT.Mazur.OpenDirectImageRestriction
@@ -11482,6 +11484,7 @@ public import FLT.Mazur.RankStageBoundedCoreCover
 public import FLT.Mazur.RankStageCoherentAffineCores
 public import FLT.Mazur.RankStageCoherentCoreCoverage
 public import FLT.Mazur.RankStageCompatibleCoreCoefficients
+public import FLT.Mazur.RankStageCompatibleCoreTowerGluing
 public import FLT.Mazur.RankStageCoreBoundaryCoefficients
 public import FLT.Mazur.RankStageCoreBoundaryTransitions
 public import FLT.Mazur.RankStageCoreCoefficientTransitions
@@ -11498,9 +11501,12 @@ public import FLT.Mazur.RankStageFiniteAtlasCoverage
 public import FLT.Mazur.RankStageFiniteCoreCover
 public import FLT.Mazur.RankStageFiniteCoreCoverage
 public import FLT.Mazur.RankStageFiniteCoreDetection
+public import FLT.Mazur.RankStageFiniteCoreGluing
 public import FLT.Mazur.RankStageFiniteCoverBoundaryTowers
 public import FLT.Mazur.RankStageFiniteInvariantDetection
+public import FLT.Mazur.RankStageFullBoundaryGluing
 public import FLT.Mazur.RankStageInitialBoundaryLifting
+public import FLT.Mazur.RankStageInvariantOverlapCocycle
 public import FLT.Mazur.RankStageInvariantOverlapErrors
 public import FLT.Mazur.RankStageInvariantTransitions
 public import FLT.Mazur.RankStageOriginalAffineBoundaryTower
