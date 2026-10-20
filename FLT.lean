@@ -11750,6 +11750,7 @@ public import FLT.Mazur.RelativeExactRankFrameCover
 public import FLT.Mazur.RelativeFiberMorphism
 public import FLT.Mazur.RelativeFiberNakayama
 public import FLT.Mazur.RelativeFiniteDomainPrincipal
+public import FLT.Mazur.RelativeFiniteFrameRankClosed
 public import FLT.Mazur.RelativeFiniteTupleAffine
 public import FLT.Mazur.RelativeFppfComparisonCover
 public import FLT.Mazur.RelativeFppfLocalSubfunctor
