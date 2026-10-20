@@ -8509,6 +8509,7 @@ public import FLT.Mazur.OddWeierstrassThreeTorsionEtale
 public import FLT.Mazur.OddWeierstrassThreeTorsionFinite
 public import FLT.Mazur.OddWeierstrassThreeTorsionUnramified
 public import FLT.Mazur.OneGonActionRotations
+public import FLT.Mazur.OneGonAdicBoundaryLevel
 public import FLT.Mazur.OneGonAdicCanonicalCyclicity
 public import FLT.Mazur.OneGonAdicCanonicalOrbit
 public import FLT.Mazur.OneGonAdicCanonicalSubgroup
