@@ -2946,6 +2946,7 @@ public import FLT.Mazur.AffineEtaleFiniteFaithfulSpectrum
 public import FLT.Mazur.AffineEtaleFiniteFreeSpectrum
 public import FLT.Mazur.AffineEtaleIdentityGroundBase
 public import FLT.Mazur.AffineEtaleNilpotentLift
+public import FLT.Mazur.AffineEtaleTraceCharts
 public import FLT.Mazur.AffineEtaleTraceSurjectivity
 public import FLT.Mazur.AffineEtaleTranslationFiniteBranch
 public import FLT.Mazur.AffineEtaleTranslationNormCharts
@@ -3284,6 +3285,8 @@ public import FLT.Mazur.AffineLocallyFreeInvariantPolynomial
 public import FLT.Mazur.AffineLocallyFreeRelationCharpoly
 public import FLT.Mazur.AffineLocallyFreeRelationNorm
 public import FLT.Mazur.AffineLocallyFreeRelationTrace
+public import FLT.Mazur.AffineLocallyFreeRelationTraceUnit
+public import FLT.Mazur.AffineLocallyFreeTraceSurjectivity
 public import FLT.Mazur.AffineMinimalPrimeFiniteOpen
 public import FLT.Mazur.AffineModuleCoalgebraDescent
 public import FLT.Mazur.AffineModuleEpimorphisms
@@ -3455,7 +3458,9 @@ public import FLT.Mazur.AffineTraceCharts
 public import FLT.Mazur.AffineTraceDegree
 public import FLT.Mazur.AffineTraceGlobalBasis
 public import FLT.Mazur.AffineTraceGluing
+public import FLT.Mazur.AffineTraceLinearMap
 public import FLT.Mazur.AffineTraceLinearity
+public import FLT.Mazur.AffineTracePrincipalPower
 public import FLT.Mazur.AffineTripleCoefficientExtensionality
 public import FLT.Mazur.AffineTripleCoefficientMaps
 public import FLT.Mazur.AffineTripleOverlapCoefficients
@@ -3831,6 +3836,7 @@ public import FLT.Mazur.BoundaryCorrectionMixedNumerators
 public import FLT.Mazur.BoundaryCorrectionOperatorIndependence
 public import FLT.Mazur.BoundaryCorrectionQuotient
 public import FLT.Mazur.BoundaryCorrectionReductionCertificate
+public import FLT.Mazur.BoundaryCorrectionScalarVanishing
 public import FLT.Mazur.BoundaryCorrectionTensorCoordinates
 public import FLT.Mazur.BoundaryExchangeLocalization
 public import FLT.Mazur.BoundaryExchangeObstruction
@@ -6757,9 +6763,11 @@ public import FLT.Mazur.HilbertFamilyTruncatedRelations
 public import FLT.Mazur.HilbertFiniteAffineNeighborhood
 public import FLT.Mazur.HilbertFiniteAmbientPresentation
 public import FLT.Mazur.HilbertFiniteBoundaryDomain
+public import FLT.Mazur.HilbertFiniteDomainBoundaryFinite
 public import FLT.Mazur.HilbertFiniteDomainBoundaryTrace
 public import FLT.Mazur.HilbertFiniteDomainErrorVanishing
 public import FLT.Mazur.HilbertFiniteDomainPrincipalCoverage
+public import FLT.Mazur.HilbertFiniteDomainScalarVanishing
 public import FLT.Mazur.HilbertFiniteDomainTraceAnnihilator
 public import FLT.Mazur.HilbertFiniteFreeBoundaryIntegral
 public import FLT.Mazur.HilbertFiniteFreeBoundaryResidue
@@ -6829,6 +6837,7 @@ public import FLT.Mazur.HilbertLabelResidualLifts
 public import FLT.Mazur.HilbertLocalResidueBasis
 public import FLT.Mazur.HilbertLocalizationIsomorphismOpen
 public import FLT.Mazur.HilbertLocalizedTupleBasis
+public import FLT.Mazur.HilbertLocallyFreeTraceUnit
 public import FLT.Mazur.HilbertMaximalScalarCompleteChart
 public import FLT.Mazur.HilbertMinimalCompleteNeighborhood
 public import FLT.Mazur.HilbertMinimalScalarFixedRefinements
@@ -7483,6 +7492,7 @@ public import FLT.Mazur.InvariantLocalizationAction
 public import FLT.Mazur.InvariantLocalizationComparison
 public import FLT.Mazur.InvariantLocalizationCoordinates
 public import FLT.Mazur.InvariantLocalizationNumerator
+public import FLT.Mazur.InvariantLocallyFreeTraceUnit
 public import FLT.Mazur.InvariantObstructionNaturality
 public import FLT.Mazur.InvariantOpenBoundaryTrace
 public import FLT.Mazur.InvariantOpenFiniteRelation
@@ -7739,6 +7749,7 @@ public import FLT.Mazur.LocalizedSmoothLocalEquation
 public import FLT.Mazur.LocalizedStalkSmoothGenerization
 public import FLT.Mazur.LocalizedTensorCancellation
 public import FLT.Mazur.LocalizedTensorExactness
+public import FLT.Mazur.LocalizedTracePower
 public import FLT.Mazur.LocallyFiniteFreeOpenCover
 public import FLT.Mazur.LocallyFiniteTypeSeparablePointFactor
 public import FLT.Mazur.LocallyFramedSplitLineCoverIndependence
