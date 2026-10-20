@@ -15471,6 +15471,7 @@ public import FLT.Mazur.WeierstrassDividedTangentBranchDeeperCoordinates
 public import FLT.Mazur.WeierstrassDividedTangentBranchDeeperEquation
 public import FLT.Mazur.WeierstrassDividedTangentBranchDeeperOutput
 public import FLT.Mazur.WeierstrassDividedTangentBranchDeeperScheme
+public import FLT.Mazur.WeierstrassDividedTangentBranchDeeperSmooth
 public import FLT.Mazur.WeierstrassDividedTangentBranchEquation
 public import FLT.Mazur.WeierstrassDividedTangentBranchFormula
 public import FLT.Mazur.WeierstrassDividedTangentBranchMap
