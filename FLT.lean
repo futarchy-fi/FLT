@@ -15506,6 +15506,7 @@ public import FLT.Mazur.WeierstrassDividedThreeSeedAtlasRestriction
 public import FLT.Mazur.WeierstrassDividedThreeSeedAtlasSystem
 public import FLT.Mazur.WeierstrassDividedThreeSeedOrientation
 public import FLT.Mazur.WeierstrassDividedThreeSeedState
+public import FLT.Mazur.WeierstrassDividedTripleDepthCoefficients
 public import FLT.Mazur.WeierstrassDividedTwistedAtlas
 public import FLT.Mazur.WeierstrassDividedTwistedAtlasGluing
 public import FLT.Mazur.WeierstrassDividedTwistedAtlasRestriction
