@@ -3977,6 +3977,7 @@ public import FLT.Mazur.CartierQuotientAugmentation
 public import FLT.Mazur.CartierRetainedLineBaseChange
 public import FLT.Mazur.CartierRetainedLineProjections
 public import FLT.Mazur.CartierSectionPairEquivalence
+public import FLT.Mazur.CartierSectionProductRank
 public import FLT.Mazur.CartierSupportOpenDescent
 public import FLT.Mazur.CartierTensorRank
 public import FLT.Mazur.CartierTensorRatioIdeal
