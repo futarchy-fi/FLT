@@ -4226,6 +4226,7 @@ public import FLT.Mazur.CyclicBoundaryOriginalMarkings
 public import FLT.Mazur.CyclicBoundaryParameterAction
 public import FLT.Mazur.CyclicBoundaryParameterSections
 public import FLT.Mazur.CyclicBoundarySectionMarking
+public import FLT.Mazur.CyclicCharacteristicAffineArrowGeometry
 public import FLT.Mazur.CyclicCharacteristicAffineCartierClassification
 public import FLT.Mazur.CyclicCharacteristicAffineCoefficientCoherence
 public import FLT.Mazur.CyclicCharacteristicAffineComparisonCocycle
@@ -4438,18 +4439,23 @@ public import FLT.Mazur.CyclicCharacteristicQuotientGluing
 public import FLT.Mazur.CyclicCharacteristicQuotientOpens
 public import FLT.Mazur.CyclicCharacteristicQuotientTransitionSpan
 public import FLT.Mazur.CyclicCharacteristicQuotientUnmarkedDescent
+public import FLT.Mazur.CyclicCharacteristicRationalResidualCriterion
+public import FLT.Mazur.CyclicCharacteristicRelabelCoordinates
 public import FLT.Mazur.CyclicCharacteristicRelabelSections
 public import FLT.Mazur.CyclicCharacteristicRelabeledPrescribedCover
 public import FLT.Mazur.CyclicCharacteristicRelabeledPrescribedSections
 public import FLT.Mazur.CyclicCharacteristicResidualAffineComparison
 public import FLT.Mazur.CyclicCharacteristicResidualChartQuotient
+public import FLT.Mazur.CyclicCharacteristicResidualCongruenceSpectrum
 public import FLT.Mazur.CyclicCharacteristicResidualHomeomorphism
+public import FLT.Mazur.CyclicCharacteristicResidualIntegerCongruence
 public import FLT.Mazur.CyclicCharacteristicResidualPrincipalOpens
 public import FLT.Mazur.CyclicCharacteristicResidualProjection
 public import FLT.Mazur.CyclicCharacteristicResidualRelation
 public import FLT.Mazur.CyclicCharacteristicResidualSectionComparison
 public import FLT.Mazur.CyclicCharacteristicResidualSectionEquivalence
 public import FLT.Mazur.CyclicCharacteristicResidualSectionReconstruction
+public import FLT.Mazur.CyclicCharacteristicResidualTorsionCriterion
 public import FLT.Mazur.CyclicCharacteristicResidualTransitionDescent
 public import FLT.Mazur.CyclicCharacteristicResidualTransitionTests
 public import FLT.Mazur.CyclicCharacteristicRetainedFaithfulness
@@ -4462,6 +4468,7 @@ public import FLT.Mazur.CyclicCharacteristicSmoothUnmarkedClass
 public import FLT.Mazur.CyclicCharacteristicSmoothUnmarkedMorphism
 public import FLT.Mazur.CyclicCharacteristicTransitionCover
 public import FLT.Mazur.CyclicCharacteristicTransitionSpan
+public import FLT.Mazur.CyclicCharacteristicUniformResidualDiscrepancy
 public import FLT.Mazur.CyclicCharacteristicUnmarkedDescent
 public import FLT.Mazur.CyclicCharacteristicUnmarkedLocalRelation
 public import FLT.Mazur.CyclicCharacteristicUnmarkedQuotientPresheaf
@@ -7594,6 +7601,7 @@ public import FLT.Mazur.LocalizationDegreeMonomial
 public import FLT.Mazur.LocalizationDegreePiece
 public import FLT.Mazur.LocalizationDegreeShift
 public import FLT.Mazur.LocalizationEvaluationKernel
+public import FLT.Mazur.LocalizationFixedInvolution
 public import FLT.Mazur.LocalizationJointRestriction
 public import FLT.Mazur.LocalizationRelationClosure
 public import FLT.Mazur.LocalizedAdicCompletion
@@ -7909,6 +7917,7 @@ public import FLT.Mazur.NilpotentQuadraticDifferenceTowerNaturality
 public import FLT.Mazur.NilpotentQuadraticRoot
 public import FLT.Mazur.NilpotentQuadraticRootNaturality
 public import FLT.Mazur.NilpotentSectionRestriction
+public import FLT.Mazur.NilpotentTorsionPowerEquality
 public import FLT.Mazur.NodalFamilyGeometricConnected
 public import FLT.Mazur.NodalFiberAlgebra
 public import FLT.Mazur.NodalFiberBoundedParameterTransport
@@ -10479,6 +10488,7 @@ public import FLT.Mazur.PolynomialRelativeAffineNaturality
 public import FLT.Mazur.PolynomialRelativeAmbient
 public import FLT.Mazur.PolynomialRelativeCoverExtension
 public import FLT.Mazur.PolynomialSpectrumBaseChangeCover
+public import FLT.Mazur.PositiveIntegerLocalization
 public import FLT.Mazur.PowerCohomologyHZeroSections
 public import FLT.Mazur.PowerCohomologyKernelGenerators
 public import FLT.Mazur.PowerCohomologyKernelReduction
@@ -11795,6 +11805,7 @@ public import FLT.Mazur.SchemeAffineRecognitionTest
 public import FLT.Mazur.SchemeAffineReconstructionRecognition
 public import FLT.Mazur.SchemeAffineRefinementCompatibility
 public import FLT.Mazur.SchemeAffineRefinementSectionRecovery
+public import FLT.Mazur.SchemeAffineRelationRestriction
 public import FLT.Mazur.SchemeAffineSchemeTestCocycle
 public import FLT.Mazur.SchemeAffineSchemeTestComparison
 public import FLT.Mazur.SchemeAffineSchemeTestNaturality
@@ -13703,6 +13714,7 @@ public import FLT.Mazur.WeierstrassDilatationLifting
 public import FLT.Mazur.WeierstrassDilatationLocalization
 public import FLT.Mazur.WeierstrassDilatationMorphism
 public import FLT.Mazur.WeierstrassDilatationNegation
+public import FLT.Mazur.WeierstrassDilatationNegationBoundary
 public import FLT.Mazur.WeierstrassDilatationNegationContraction
 public import FLT.Mazur.WeierstrassDilatationNegationDepth
 public import FLT.Mazur.WeierstrassDilatationNormalizationTransport
@@ -13983,6 +13995,8 @@ public import FLT.Mazur.WeierstrassDividedDepthCenterSmooth
 public import FLT.Mazur.WeierstrassDividedDepthData
 public import FLT.Mazur.WeierstrassDividedDepthLocalAction
 public import FLT.Mazur.WeierstrassDividedDepthMaps
+public import FLT.Mazur.WeierstrassDividedDepthNegation
+public import FLT.Mazur.WeierstrassDividedDepthNegationBoundaries
 public import FLT.Mazur.WeierstrassDividedDepthOriginalOpen
 public import FLT.Mazur.WeierstrassDividedDepthStructure
 public import FLT.Mazur.WeierstrassDividedDepthYBoundary
@@ -14009,6 +14023,8 @@ public import FLT.Mazur.WeierstrassDividedExteriorBranchIntersections
 public import FLT.Mazur.WeierstrassDividedExteriorCubicContraction
 public import FLT.Mazur.WeierstrassDividedExteriorIntersections
 public import FLT.Mazur.WeierstrassDividedExteriorLocalContraction
+public import FLT.Mazur.WeierstrassDividedExteriorNegation
+public import FLT.Mazur.WeierstrassDividedExteriorNegationStep
 public import FLT.Mazur.WeierstrassDividedExteriorOriginalOpen
 public import FLT.Mazur.WeierstrassDividedExteriorProper
 public import FLT.Mazur.WeierstrassDividedExteriorReassociation
@@ -14179,6 +14195,8 @@ public import FLT.Mazur.WeierstrassDividedFiniteLineBranches
 public import FLT.Mazur.WeierstrassDividedFiniteLineContractions
 public import FLT.Mazur.WeierstrassDividedFiniteLineReciprocals
 public import FLT.Mazur.WeierstrassDividedFiniteLineScaling
+public import FLT.Mazur.WeierstrassDividedFiniteNegation
+public import FLT.Mazur.WeierstrassDividedFiniteNegationContraction
 public import FLT.Mazur.WeierstrassDividedFiniteNodeComponents
 public import FLT.Mazur.WeierstrassDividedFiniteNodeContractions
 public import FLT.Mazur.WeierstrassDividedFiniteOriginalScaleOpen
@@ -14416,6 +14434,7 @@ public import FLT.Mazur.WeierstrassDividedInitialExtendedSections
 public import FLT.Mazur.WeierstrassDividedInitialExterior
 public import FLT.Mazur.WeierstrassDividedInitialExteriorCurve
 public import FLT.Mazur.WeierstrassDividedInitialExteriorLaurent
+public import FLT.Mazur.WeierstrassDividedInitialExteriorNegation
 public import FLT.Mazur.WeierstrassDividedInitialExteriorOriented
 public import FLT.Mazur.WeierstrassDividedInitialExteriorProjective
 public import FLT.Mazur.WeierstrassDividedInitialGlobalResidueNodes
@@ -16778,7 +16797,10 @@ public import FLT.Mazur.WeierstrassSuccessiveLaurentSlopeGeometry
 public import FLT.Mazur.WeierstrassSuccessiveLaurentSlopeLocalization
 public import FLT.Mazur.WeierstrassSuccessiveLaurentSlopeReduction
 public import FLT.Mazur.WeierstrassSuccessiveLocalAction
+public import FLT.Mazur.WeierstrassSuccessiveNegation
 public import FLT.Mazur.WeierstrassSuccessiveNegationCenter
+public import FLT.Mazur.WeierstrassSuccessiveNegationHorizontal
+public import FLT.Mazur.WeierstrassSuccessiveNegationOverlap
 public import FLT.Mazur.WeierstrassSuccessiveNilpotentBranch
 public import FLT.Mazur.WeierstrassSuccessiveNilpotentNodeChart
 public import FLT.Mazur.WeierstrassSuccessiveNilpotentSlopeMap
@@ -16938,6 +16960,8 @@ public import FLT.Mazur.WeierstrassSuccessiveXModificationLocalization
 public import FLT.Mazur.WeierstrassSuccessiveXModificationMap
 public import FLT.Mazur.WeierstrassSuccessiveXMonic
 public import FLT.Mazur.WeierstrassSuccessiveXMonicComparison
+public import FLT.Mazur.WeierstrassSuccessiveXNegation
+public import FLT.Mazur.WeierstrassSuccessiveXNegationContraction
 public import FLT.Mazur.WeierstrassSuccessiveXOverlap
 public import FLT.Mazur.WeierstrassSuccessiveXOverlapCompatibility
 public import FLT.Mazur.WeierstrassSuccessiveXParameterEquiv
