@@ -11436,6 +11436,9 @@ public import FLT.Mazur.RankStageCoreBoundaryCoefficients
 public import FLT.Mazur.RankStageCoreBoundaryTransitions
 public import FLT.Mazur.RankStageCoreCoefficientTransitions
 public import FLT.Mazur.RankStageCoreOriginalEnvelope
+public import FLT.Mazur.RankStageFiniteAtlasBoundaryTower
+public import FLT.Mazur.RankStageFiniteAtlasCoverage
+public import FLT.Mazur.RankStageFiniteCoreCoverage
 public import FLT.Mazur.RankStageInitialBoundaryLifting
 public import FLT.Mazur.RankStageInvariantTransitions
 public import FLT.Mazur.RankStageOriginalAffineBoundaryTower
@@ -11450,10 +11453,13 @@ public import FLT.Mazur.RankStageOriginalBoundaryRestriction
 public import FLT.Mazur.RankStageOriginalBoundaryTests
 public import FLT.Mazur.RankStageOriginalBoundaryTower
 public import FLT.Mazur.RankStageOriginalCoordinateErrors
+public import FLT.Mazur.RankStageOriginalGeometricAtlasApproximation
 public import FLT.Mazur.RankStageOriginalMixedCoreTests
 public import FLT.Mazur.RankStageOriginalMixedIdeals
 public import FLT.Mazur.RankStageOriginalMixedTests
+public import FLT.Mazur.RankStageOriginalScalarAtlasApproximation
 public import FLT.Mazur.RankStageOriginalScalarCauchy
+public import FLT.Mazur.RankStageOriginalScalarSupport
 public import FLT.Mazur.RankStagePrescribedBoundaryLifting
 public import FLT.Mazur.RankStagePrescribedBoundaryTower
 public import FLT.Mazur.RankStagePrescribedLiftingProperty
@@ -12418,6 +12424,7 @@ public import FLT.Mazur.SchemeReducedStructureSheaf
 public import FLT.Mazur.SchemeRefinementReconstruction
 public import FLT.Mazur.SchemeRegularNormProducts
 public import FLT.Mazur.SchemeRelationArrowTransport
+public import FLT.Mazur.SchemeRelationAtlasOperator
 public import FLT.Mazur.SchemeRelationCoefficientDiagram
 public import FLT.Mazur.SchemeRelationCoverSourceFunctions
 public import FLT.Mazur.SchemeRelationDoubleCompact
@@ -12490,6 +12497,7 @@ public import FLT.Mazur.SchemeRelationPrincipalTensorSections
 public import FLT.Mazur.SchemeRelationReanchoring
 public import FLT.Mazur.SchemeRelationRestrictionComposition
 public import FLT.Mazur.SchemeRelationRestrictionRechart
+public import FLT.Mazur.SchemeRelationSectionScalars
 public import FLT.Mazur.SchemeRelationSeedComparisonSquare
 public import FLT.Mazur.SchemeRelationSeedGenericCriterion
 public import FLT.Mazur.SchemeRelationSeedGenericImage
