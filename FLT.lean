@@ -6049,6 +6049,7 @@ public import FLT.Mazur.FiniteRelationLocalizedInclusionDescent
 public import FLT.Mazur.FiniteRelationLocalizedUnionDescent
 public import FLT.Mazur.FiniteRelationLocallyClosedAffineBasis
 public import FLT.Mazur.FiniteRelationNamedDomainTransitions
+public import FLT.Mazur.FiniteRelationPrescribedLiftCoefficients
 public import FLT.Mazur.FiniteRelationPrescribedLifting
 public import FLT.Mazur.FiniteRelationPrincipalCoverModels
 public import FLT.Mazur.FiniteRelationPrincipalPathQuotients
