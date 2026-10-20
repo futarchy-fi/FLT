@@ -4494,6 +4494,7 @@ public import FLT.Mazur.CyclicHomDivisorPullback
 public import FLT.Mazur.CyclicHomGeometricMarkedComparison
 public import FLT.Mazur.CyclicHomGeometricNormalizationOrbit
 public import FLT.Mazur.CyclicHomGlobalMarkedRelation
+public import FLT.Mazur.CyclicHomLocalMarkedComparison
 public import FLT.Mazur.CyclicHomLocusEquationUniversal
 public import FLT.Mazur.CyclicHomLocusFppfCoverage
 public import FLT.Mazur.CyclicHomLocusModuli
