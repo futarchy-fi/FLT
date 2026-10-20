@@ -14349,6 +14349,7 @@ public import FLT.Mazur.WeierstrassDividedCrossDepthReciprocalSecant
 public import FLT.Mazur.WeierstrassDividedCrossDepthReciprocalTangent
 public import FLT.Mazur.WeierstrassDividedCrossDepthReciprocalTangentOutput
 public import FLT.Mazur.WeierstrassDividedCrossDepthReciprocalTangentScheme
+public import FLT.Mazur.WeierstrassDividedCrossDepthResolvedReciprocalTangent
 public import FLT.Mazur.WeierstrassDividedCrossDepthSecant
 public import FLT.Mazur.WeierstrassDividedCrossDepthSecantScheme
 public import FLT.Mazur.WeierstrassDividedCrossDepthTangent
