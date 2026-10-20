@@ -4453,6 +4453,7 @@ public import FLT.Mazur.CyclicCharacteristicRelabeledPrescribedSections
 public import FLT.Mazur.CyclicCharacteristicResidualAffineComparison
 public import FLT.Mazur.CyclicCharacteristicResidualChartQuotient
 public import FLT.Mazur.CyclicCharacteristicResidualCongruenceSpectrum
+public import FLT.Mazur.CyclicCharacteristicResidualDegreeTorsion
 public import FLT.Mazur.CyclicCharacteristicResidualHomeomorphism
 public import FLT.Mazur.CyclicCharacteristicResidualIntegerCongruence
 public import FLT.Mazur.CyclicCharacteristicResidualPrincipalOpens
