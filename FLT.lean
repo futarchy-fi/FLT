@@ -14939,6 +14939,7 @@ public import FLT.Mazur.WeierstrassDividedNodalRefinedBranchTerminal
 public import FLT.Mazur.WeierstrassDividedNodalRefinedBranchTerminalReindex
 public import FLT.Mazur.WeierstrassDividedNodalSecantCases
 public import FLT.Mazur.WeierstrassDividedNodalSecondNormalization
+public import FLT.Mazur.WeierstrassDividedNodalShallowAdditionSource
 public import FLT.Mazur.WeierstrassDividedNodalShallowBranchCommonOutput
 public import FLT.Mazur.WeierstrassDividedNodalShallowBranchCoverage
 public import FLT.Mazur.WeierstrassDividedNodalShallowBranchOutput
