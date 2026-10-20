@@ -14434,6 +14434,7 @@ public import FLT.Mazur.WeierstrassDividedFiniteFactoredBranchPartial
 public import FLT.Mazur.WeierstrassDividedFiniteFactoredBranchTerminal
 public import FLT.Mazur.WeierstrassDividedFiniteFlat
 public import FLT.Mazur.WeierstrassDividedFiniteFlatBranchLift
+public import FLT.Mazur.WeierstrassDividedFiniteFlatSourceExt
 public import FLT.Mazur.WeierstrassDividedFiniteGlobalNegation
 public import FLT.Mazur.WeierstrassDividedFiniteGlobalNegationInitial
 public import FLT.Mazur.WeierstrassDividedFiniteGlobalNegationStep
@@ -15271,8 +15272,10 @@ public import FLT.Mazur.WeierstrassDividedRevisedTwistedIso
 public import FLT.Mazur.WeierstrassDividedRightSmoothReciprocalPresentation
 public import FLT.Mazur.WeierstrassDividedSecantBranchCases
 public import FLT.Mazur.WeierstrassDividedSecantComparison
+public import FLT.Mazur.WeierstrassDividedSecantFlatSourceExt
 public import FLT.Mazur.WeierstrassDividedSecantFormula
 public import FLT.Mazur.WeierstrassDividedSecantLeftOverlap
+public import FLT.Mazur.WeierstrassDividedSecantOpenGluing
 public import FLT.Mazur.WeierstrassDividedSecantOriginalAction
 public import FLT.Mazur.WeierstrassDividedSecantOverlapProjections
 public import FLT.Mazur.WeierstrassDividedSecantPartialOverlap
@@ -15566,8 +15569,12 @@ public import FLT.Mazur.WeierstrassDividedTripleDepthCoefficients
 public import FLT.Mazur.WeierstrassDividedTripleNegativeBranchContraction
 public import FLT.Mazur.WeierstrassDividedTripleNegativeBranchOutput
 public import FLT.Mazur.WeierstrassDividedTripleNormalizedBranchLift
+public import FLT.Mazur.WeierstrassDividedTripleResolvedSecant
 public import FLT.Mazur.WeierstrassDividedTripleSecantCases
 public import FLT.Mazur.WeierstrassDividedTripleSecantCoverage
+public import FLT.Mazur.WeierstrassDividedTripleSecantGluing
+public import FLT.Mazur.WeierstrassDividedTripleSecantNeighborhood
+public import FLT.Mazur.WeierstrassDividedTripleSecantNeighborhoodCover
 public import FLT.Mazur.WeierstrassDividedTripleTangentBranchCoverage
 public import FLT.Mazur.WeierstrassDividedTwistedAtlas
 public import FLT.Mazur.WeierstrassDividedTwistedAtlasGluing
@@ -16932,6 +16939,7 @@ public import FLT.Mazur.WeierstrassRootShearUnitNaturality
 public import FLT.Mazur.WeierstrassRootShearZeroSmooth
 public import FLT.Mazur.WeierstrassSameOutputIntersections
 public import FLT.Mazur.WeierstrassScaledChartComparison
+public import FLT.Mazur.WeierstrassSecantBranchNeighborhood
 public import FLT.Mazur.WeierstrassSecantHorizontalGlobalAction
 public import FLT.Mazur.WeierstrassSecantHorizontalInput
 public import FLT.Mazur.WeierstrassSecantHorizontalResidueAction
