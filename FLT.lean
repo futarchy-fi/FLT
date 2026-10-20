@@ -14712,6 +14712,7 @@ public import FLT.Mazur.WeierstrassDividedOriginalNodeBase
 public import FLT.Mazur.WeierstrassDividedOriginalScaleOpen
 public import FLT.Mazur.WeierstrassDividedOriginalSmoothPresentation
 public import FLT.Mazur.WeierstrassDividedOriginalSmoothScale
+public import FLT.Mazur.WeierstrassDividedOriginalSmoothTangentPresentation
 public import FLT.Mazur.WeierstrassDividedOriginalXOpen
 public import FLT.Mazur.WeierstrassDividedPairSecant
 public import FLT.Mazur.WeierstrassDividedPairSecantEvaluation
