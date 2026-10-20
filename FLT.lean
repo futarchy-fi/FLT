@@ -16898,6 +16898,7 @@ public import FLT.Mazur.WeierstrassRootShearUnitNaturality
 public import FLT.Mazur.WeierstrassRootShearZeroSmooth
 public import FLT.Mazur.WeierstrassSameOutputIntersections
 public import FLT.Mazur.WeierstrassScaledChartComparison
+public import FLT.Mazur.WeierstrassSecantBranchNeighborhood
 public import FLT.Mazur.WeierstrassSecantHorizontalGlobalAction
 public import FLT.Mazur.WeierstrassSecantHorizontalInput
 public import FLT.Mazur.WeierstrassSecantHorizontalResidueAction
