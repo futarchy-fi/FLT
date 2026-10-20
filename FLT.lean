@@ -15207,6 +15207,7 @@ public import FLT.Mazur.WeierstrassDividedTangentBranchFormula
 public import FLT.Mazur.WeierstrassDividedTangentBranchMap
 public import FLT.Mazur.WeierstrassDividedTangentBranchOutput
 public import FLT.Mazur.WeierstrassDividedTangentBranchResidue
+public import FLT.Mazur.WeierstrassDividedTangentBranchResidueUnit
 public import FLT.Mazur.WeierstrassDividedTangentBranchScheme
 public import FLT.Mazur.WeierstrassDividedTangentBranchSource
 public import FLT.Mazur.WeierstrassDividedTangentCech
