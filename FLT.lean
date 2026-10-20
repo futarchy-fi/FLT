@@ -14449,6 +14449,9 @@ public import FLT.Mazur.WeierstrassDividedArithmeticZeroStandardEndpoints
 public import FLT.Mazur.WeierstrassDividedArithmeticZeroStandardRestriction
 public import FLT.Mazur.WeierstrassDividedArithmeticZeroTerminalCompatibility
 public import FLT.Mazur.WeierstrassDividedArithmeticZeroUniversal
+public import FLT.Mazur.WeierstrassDividedAtlasPairFormulaInput
+public import FLT.Mazur.WeierstrassDividedAtlasPairIntermediateAddition
+public import FLT.Mazur.WeierstrassDividedAtlasPairIntermediateFormulas
 public import FLT.Mazur.WeierstrassDividedAtlasRegularCenter
 public import FLT.Mazur.WeierstrassDividedBoundaryNormalization
 public import FLT.Mazur.WeierstrassDividedBranchChainIntersections
@@ -15290,6 +15293,7 @@ public import FLT.Mazur.WeierstrassDividedNonadjacentGlobalIntersection
 public import FLT.Mazur.WeierstrassDividedNonadjacentTensorIntersection
 public import FLT.Mazur.WeierstrassDividedNormalizedBranchContraction
 public import FLT.Mazur.WeierstrassDividedOddCompleteClosedComparison
+public import FLT.Mazur.WeierstrassDividedOlderAtlasFormulaCoordinates
 public import FLT.Mazur.WeierstrassDividedOlderAtlasIndex
 public import FLT.Mazur.WeierstrassDividedOlderConicExteriorDisjoint
 public import FLT.Mazur.WeierstrassDividedOlderConicPunctures
@@ -15338,6 +15342,7 @@ public import FLT.Mazur.WeierstrassDividedOlderSplitNodeBranches
 public import FLT.Mazur.WeierstrassDividedOlderSplitNodeCover
 public import FLT.Mazur.WeierstrassDividedOlderSuccessiveCharts
 public import FLT.Mazur.WeierstrassDividedOlderTensorPointAction
+public import FLT.Mazur.WeierstrassDividedOlderTerminalIntermediateAddition
 public import FLT.Mazur.WeierstrassDividedOlderZeroConicParameters
 public import FLT.Mazur.WeierstrassDividedOlderZeroConstantNodeDescent
 public import FLT.Mazur.WeierstrassDividedOlderZeroEqualizerCover
