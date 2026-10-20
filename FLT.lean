@@ -15484,6 +15484,7 @@ public import FLT.Mazur.WeierstrassDividedTangentBranchRefinedResidue
 public import FLT.Mazur.WeierstrassDividedTangentBranchResidue
 public import FLT.Mazur.WeierstrassDividedTangentBranchResidueUnit
 public import FLT.Mazur.WeierstrassDividedTangentBranchScheme
+public import FLT.Mazur.WeierstrassDividedTangentBranchSecondResidueUnit
 public import FLT.Mazur.WeierstrassDividedTangentBranchSource
 public import FLT.Mazur.WeierstrassDividedTangentBranchSpecialFiber
 public import FLT.Mazur.WeierstrassDividedTangentBranchSpecialization
