@@ -11630,6 +11630,7 @@ public import FLT.Mazur.ScalarMinimalCharacterNeighborhood
 public import FLT.Mazur.ScalarMinimalCharacterPropagation
 public import FLT.Mazur.ScalarNilpotenceFlatBaseChange
 public import FLT.Mazur.ScalarNilpotenceMinimalFiber
+public import FLT.Mazur.ScalarPrimeThickenings
 public import FLT.Mazur.ScalarQuotientImagePresentation
 public import FLT.Mazur.ScalarQuotientImageReduction
 public import FLT.Mazur.ScalarQuotientResiduePresentation
