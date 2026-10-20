@@ -5848,6 +5848,7 @@ public import FLT.Mazur.FiniteFlatLocalIdealPresentation
 public import FLT.Mazur.FiniteFlatProjectiveTargetLocus
 public import FLT.Mazur.FiniteFlatQuotientIdealEquality
 public import FLT.Mazur.FiniteFlatQuotientTrivialization
+public import FLT.Mazur.FiniteFlatRelationNormCoefficient
 public import FLT.Mazur.FiniteFlatSubschemeQuotient
 public import FLT.Mazur.FiniteFlatTranslationNormCharts
 public import FLT.Mazur.FiniteFreeAlgebraCharpoly
@@ -7582,6 +7583,9 @@ public import FLT.Mazur.IntersectionSectionGluing
 public import FLT.Mazur.IntersectionSectionLimitCoordinates
 public import FLT.Mazur.IntersectionUnitCocycle
 public import FLT.Mazur.IntersectionUnitCocycleRecovery
+public import FLT.Mazur.InvariantAffineCoverNorm
+public import FLT.Mazur.InvariantAffineOpenNormBaseChange
+public import FLT.Mazur.InvariantAffineOpenNormCoefficient
 public import FLT.Mazur.InvariantBoundaryPullback
 public import FLT.Mazur.InvariantFiniteDomainTrace
 public import FLT.Mazur.InvariantFiniteFreeTraceUnit
@@ -11507,9 +11511,12 @@ public import FLT.Mazur.RankStageFiniteCoreCoverage
 public import FLT.Mazur.RankStageFiniteCoreDetection
 public import FLT.Mazur.RankStageFiniteCoreGluing
 public import FLT.Mazur.RankStageFiniteCoverBoundaryTowers
+public import FLT.Mazur.RankStageFiniteGlobalOverlapNumerators
 public import FLT.Mazur.RankStageFiniteInvariantDetection
 public import FLT.Mazur.RankStageFullBoundaryGluing
+public import FLT.Mazur.RankStageGlobalBoundaryNumerators
 public import FLT.Mazur.RankStageInitialBoundaryLifting
+public import FLT.Mazur.RankStageInvariantNormParameters
 public import FLT.Mazur.RankStageInvariantOverlapCocycle
 public import FLT.Mazur.RankStageInvariantOverlapErrors
 public import FLT.Mazur.RankStageInvariantTransitions
@@ -12574,6 +12581,9 @@ public import FLT.Mazur.SchemeRelationPrincipalLocalization
 public import FLT.Mazur.SchemeRelationPrincipalNumerator
 public import FLT.Mazur.SchemeRelationPrincipalSpectrum
 public import FLT.Mazur.SchemeRelationPrincipalTensorSections
+public import FLT.Mazur.SchemeRelationQcqsBoundaryNumerator
+public import FLT.Mazur.SchemeRelationQcqsFiniteBoundaryNumerators
+public import FLT.Mazur.SchemeRelationQcqsIdealBoundaryNumerator
 public import FLT.Mazur.SchemeRelationReanchoring
 public import FLT.Mazur.SchemeRelationRestrictionComposition
 public import FLT.Mazur.SchemeRelationRestrictionRechart
