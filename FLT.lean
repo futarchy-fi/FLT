@@ -2844,6 +2844,7 @@ public import FLT.Mazur.AffineBoundaryMinimalScalarGeometry
 public import FLT.Mazur.AffineBoundaryNilpotenceOpen
 public import FLT.Mazur.AffineBoundaryPrincipalTestCharts
 public import FLT.Mazur.AffineBoundaryScalarFiberEquations
+public import FLT.Mazur.AffineBoundaryScalarLocalNoetherian
 public import FLT.Mazur.AffineBoundaryScalarLocalProduct
 public import FLT.Mazur.AffineBoundaryScalarNilpotence
 public import FLT.Mazur.AffineBoundaryScalarObstructionGeometry
