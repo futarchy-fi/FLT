@@ -15386,6 +15386,7 @@ public import FLT.Mazur.WeierstrassDividedReciprocalLeftOverlap
 public import FLT.Mazur.WeierstrassDividedReciprocalOppositeCoverage
 public import FLT.Mazur.WeierstrassDividedReciprocalOriginalAction
 public import FLT.Mazur.WeierstrassDividedReciprocalOriginalCoordinates
+public import FLT.Mazur.WeierstrassDividedReciprocalOriginalRelations
 public import FLT.Mazur.WeierstrassDividedReciprocalOutput
 public import FLT.Mazur.WeierstrassDividedReciprocalOverlapProjections
 public import FLT.Mazur.WeierstrassDividedReciprocalPartialOverlap
