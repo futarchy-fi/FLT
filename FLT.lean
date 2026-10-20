@@ -6965,6 +6965,9 @@ public import FLT.Mazur.HilbertScalarChartAtlasCorrections
 public import FLT.Mazur.HilbertScalarChartBoundaryData
 public import FLT.Mazur.HilbertScalarChartBoundaryPullback
 public import FLT.Mazur.HilbertScalarChartBoundaryTests
+public import FLT.Mazur.HilbertScalarChartFullDescent
+public import FLT.Mazur.HilbertScalarChartSourceComparison
+public import FLT.Mazur.HilbertScalarFullAtlasLifts
 public import FLT.Mazur.HilbertSourceActionRelationGraph
 public import FLT.Mazur.HilbertSourceActualMultiplierIdeal
 public import FLT.Mazur.HilbertSourceBadAffineChartEquations
@@ -12272,6 +12275,7 @@ public import FLT.Mazur.SchemeScalarAvoidanceCover
 public import FLT.Mazur.SchemeScalarAvoidanceIdeal
 public import FLT.Mazur.SchemeScalarBadPrimeDenominators
 public import FLT.Mazur.SchemeScalarBoundaryUnitCover
+public import FLT.Mazur.SchemeScalarChartDescent
 public import FLT.Mazur.SchemeScalarConstructibleImage
 public import FLT.Mazur.SchemeScalarFiniteBadPrimes
 public import FLT.Mazur.SchemeScalarFullAtlas
@@ -12284,6 +12288,7 @@ public import FLT.Mazur.SchemeScalarPrincipalNeighborhoodFamily
 public import FLT.Mazur.SchemeScalarRelationPullback
 public import FLT.Mazur.SchemeScalarRelationTransition
 public import FLT.Mazur.SchemeScalarResidueImage
+public import FLT.Mazur.SchemeScalarRestrictedTests
 public import FLT.Mazur.SchemeScalarSourceComparison
 public import FLT.Mazur.SchemeSectionFamilyProduct
 public import FLT.Mazur.SchemeSectionFrameCompatibility
