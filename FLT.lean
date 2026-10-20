@@ -8541,6 +8541,7 @@ public import FLT.Mazur.OneGonAdicInitialParameter
 public import FLT.Mazur.OneGonAdicInitialRoots
 public import FLT.Mazur.OneGonAdicModuliChart
 public import FLT.Mazur.OneGonAdicPrescribedBoundary
+public import FLT.Mazur.OneGonAdicPuncturedCoarse
 public import FLT.Mazur.OneGonAdicPuncturedModuli
 public import FLT.Mazur.OneGonAdicReductionCartesian
 public import FLT.Mazur.OneGonAdicSmoothProjection
