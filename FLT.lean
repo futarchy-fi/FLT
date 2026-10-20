@@ -17569,6 +17569,7 @@ public import FLT.Mazur.WeierstrassSmoothChartCompatibility
 public import FLT.Mazur.WeierstrassSmoothCoefficientAddition
 public import FLT.Mazur.WeierstrassSmoothCoefficientBaseGroup
 public import FLT.Mazur.WeierstrassSmoothCoefficientCartesian
+public import FLT.Mazur.WeierstrassSmoothCoefficientComposition
 public import FLT.Mazur.WeierstrassSmoothCoefficientGroupIso
 public import FLT.Mazur.WeierstrassSmoothCoefficientOperations
 public import FLT.Mazur.WeierstrassSmoothCoefficientPointAddition
