@@ -4294,6 +4294,13 @@ public import FLT.Mazur.CurveSurjectiveOpenComplement
 public import FLT.Mazur.CurveUniformFieldDegreeBound
 public import FLT.Mazur.CuspCollision
 public import FLT.Mazur.CuspOrderNumerator
+public import FLT.Mazur.CyclicAdicBoundarySeparation
+public import FLT.Mazur.CyclicAdicCoverage
+public import FLT.Mazur.CyclicAdicLocalModuli
+public import FLT.Mazur.CyclicAdicParameterQuotient
+public import FLT.Mazur.CyclicAdicParameterRelation
+public import FLT.Mazur.CyclicAdicParameters
+public import FLT.Mazur.CyclicAdicSheafQuotient
 public import FLT.Mazur.CyclicAuxiliaryPrescribedNormalizedNeighborhood
 public import FLT.Mazur.CyclicBoundaryAmpleAction
 public import FLT.Mazur.CyclicBoundaryAmpleInvariantModuli
@@ -5848,6 +5855,7 @@ public import FLT.Mazur.FiniteFlatLocalIdealPresentation
 public import FLT.Mazur.FiniteFlatProjectiveTargetLocus
 public import FLT.Mazur.FiniteFlatQuotientIdealEquality
 public import FLT.Mazur.FiniteFlatQuotientTrivialization
+public import FLT.Mazur.FiniteFlatRelationNormCoefficient
 public import FLT.Mazur.FiniteFlatSubschemeQuotient
 public import FLT.Mazur.FiniteFlatTranslationNormCharts
 public import FLT.Mazur.FiniteFreeAlgebraCharpoly
@@ -6044,6 +6052,7 @@ public import FLT.Mazur.FinitePrincipalAtlasUpperLimit
 public import FLT.Mazur.FinitePrincipalChartIntegerDescent
 public import FLT.Mazur.FinitePrincipalIdealPatching
 public import FLT.Mazur.FinitePrincipalImageCover
+public import FLT.Mazur.FinitePrincipalNumeratorTower
 public import FLT.Mazur.FinitePrincipalTargetRefinement
 public import FLT.Mazur.FiniteProductAdicIdeals
 public import FLT.Mazur.FiniteProductDirectSum
@@ -7582,6 +7591,9 @@ public import FLT.Mazur.IntersectionSectionGluing
 public import FLT.Mazur.IntersectionSectionLimitCoordinates
 public import FLT.Mazur.IntersectionUnitCocycle
 public import FLT.Mazur.IntersectionUnitCocycleRecovery
+public import FLT.Mazur.InvariantAffineCoverNorm
+public import FLT.Mazur.InvariantAffineOpenNormBaseChange
+public import FLT.Mazur.InvariantAffineOpenNormCoefficient
 public import FLT.Mazur.InvariantBoundaryPullback
 public import FLT.Mazur.InvariantFiniteDomainTrace
 public import FLT.Mazur.InvariantFiniteFreeTraceUnit
@@ -8535,7 +8547,10 @@ public import FLT.Mazur.OneGonAdicChartRestriction
 public import FLT.Mazur.OneGonAdicFiniteSubgroup
 public import FLT.Mazur.OneGonAdicInitialParameter
 public import FLT.Mazur.OneGonAdicInitialRoots
+public import FLT.Mazur.OneGonAdicModuliChart
 public import FLT.Mazur.OneGonAdicPrescribedBoundary
+public import FLT.Mazur.OneGonAdicPuncturedCoarse
+public import FLT.Mazur.OneGonAdicPuncturedModuli
 public import FLT.Mazur.OneGonAdicReductionCartesian
 public import FLT.Mazur.OneGonAdicSmoothProjection
 public import FLT.Mazur.OneGonAdicSubgroupCartier
@@ -10899,6 +10914,8 @@ public import FLT.Mazur.PrincipalLocalizationSquare
 public import FLT.Mazur.PrincipalLocalizationTensor
 public import FLT.Mazur.PrincipalLocalizedKernelPaths
 public import FLT.Mazur.PrincipalModelBaseChange
+public import FLT.Mazur.PrincipalNumeratorTower
+public import FLT.Mazur.PrincipalNumeratorTransition
 public import FLT.Mazur.PrincipalOccurrenceActualAtlasEquations
 public import FLT.Mazur.PrincipalOccurrenceActualCoverRoutes
 public import FLT.Mazur.PrincipalOccurrenceAllAtlasComparisons
@@ -11487,6 +11504,7 @@ public import FLT.Mazur.RankStageBoundarySeedTower
 public import FLT.Mazur.RankStageBoundedCoreCover
 public import FLT.Mazur.RankStageCoherentAffineCores
 public import FLT.Mazur.RankStageCoherentCoreCoverage
+public import FLT.Mazur.RankStageCoherentOverlapNumerators
 public import FLT.Mazur.RankStageCompatibleCoreCoefficients
 public import FLT.Mazur.RankStageCompatibleCoreTowerGluing
 public import FLT.Mazur.RankStageCoreBoundaryCoefficients
@@ -11507,9 +11525,13 @@ public import FLT.Mazur.RankStageFiniteCoreCoverage
 public import FLT.Mazur.RankStageFiniteCoreDetection
 public import FLT.Mazur.RankStageFiniteCoreGluing
 public import FLT.Mazur.RankStageFiniteCoverBoundaryTowers
+public import FLT.Mazur.RankStageFiniteGlobalOverlapNumerators
 public import FLT.Mazur.RankStageFiniteInvariantDetection
 public import FLT.Mazur.RankStageFullBoundaryGluing
+public import FLT.Mazur.RankStageGlobalBoundaryNumerators
+public import FLT.Mazur.RankStageGlobalKernelLocalization
 public import FLT.Mazur.RankStageInitialBoundaryLifting
+public import FLT.Mazur.RankStageInvariantNormParameters
 public import FLT.Mazur.RankStageInvariantOverlapCocycle
 public import FLT.Mazur.RankStageInvariantOverlapErrors
 public import FLT.Mazur.RankStageInvariantTransitions
@@ -11522,6 +11544,7 @@ public import FLT.Mazur.RankStageOriginalAffineTestValues
 public import FLT.Mazur.RankStageOriginalAtlasErrors
 public import FLT.Mazur.RankStageOriginalAtlasTower
 public import FLT.Mazur.RankStageOriginalBoundaryCoefficients
+public import FLT.Mazur.RankStageOriginalBoundaryCoherentNumerators
 public import FLT.Mazur.RankStageOriginalBoundaryRestriction
 public import FLT.Mazur.RankStageOriginalBoundaryTests
 public import FLT.Mazur.RankStageOriginalBoundaryTower
@@ -11538,8 +11561,10 @@ public import FLT.Mazur.RankStagePrescribedBoundaryTower
 public import FLT.Mazur.RankStagePrescribedLiftingProperty
 public import FLT.Mazur.RankStagePrincipalCoreCorrections
 public import FLT.Mazur.RankStageRelationTransitions
+public import FLT.Mazur.RankStageRescaledGlobalKernelTowers
 public import FLT.Mazur.RankStageStructureMaps
 public import FLT.Mazur.RankStageTransitionTopology
+public import FLT.Mazur.RankStageUniformKernelNumerators
 public import FLT.Mazur.RationalCyclicCartierGenerator
 public import FLT.Mazur.RationalCyclicGeneratorChange
 public import FLT.Mazur.RationalCyclicModuliPoint
@@ -12472,6 +12497,7 @@ public import FLT.Mazur.SchemePicardGroup
 public import FLT.Mazur.SchemePicardPullback
 public import FLT.Mazur.SchemePointedFiberSections
 public import FLT.Mazur.SchemePrincipalPairRestriction
+public import FLT.Mazur.SchemePrincipalSectionPowerDetection
 public import FLT.Mazur.SchemeProperGeometricFiberSections
 public import FLT.Mazur.SchemePullbackCompositeCharts
 public import FLT.Mazur.SchemePullbackCompositeRecognition
@@ -12574,6 +12600,9 @@ public import FLT.Mazur.SchemeRelationPrincipalLocalization
 public import FLT.Mazur.SchemeRelationPrincipalNumerator
 public import FLT.Mazur.SchemeRelationPrincipalSpectrum
 public import FLT.Mazur.SchemeRelationPrincipalTensorSections
+public import FLT.Mazur.SchemeRelationQcqsBoundaryNumerator
+public import FLT.Mazur.SchemeRelationQcqsFiniteBoundaryNumerators
+public import FLT.Mazur.SchemeRelationQcqsIdealBoundaryNumerator
 public import FLT.Mazur.SchemeRelationReanchoring
 public import FLT.Mazur.SchemeRelationRestrictionComposition
 public import FLT.Mazur.SchemeRelationRestrictionRechart
@@ -12876,6 +12905,7 @@ public import FLT.Mazur.SmoothCurvePicardDegree
 public import FLT.Mazur.SmoothCurvePureDimension
 public import FLT.Mazur.SmoothCurveSquareGeometricIntegral
 public import FLT.Mazur.SmoothCurveValuationStalk
+public import FLT.Mazur.SmoothCyclicCoarseMorphism
 public import FLT.Mazur.SmoothCyclicDivisorEquations
 public import FLT.Mazur.SmoothCyclicDivisorSymmetry
 public import FLT.Mazur.SmoothDimension
