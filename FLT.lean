@@ -12480,6 +12480,7 @@ public import FLT.Mazur.SchemePicardGroup
 public import FLT.Mazur.SchemePicardPullback
 public import FLT.Mazur.SchemePointedFiberSections
 public import FLT.Mazur.SchemePrincipalPairRestriction
+public import FLT.Mazur.SchemePrincipalSectionPowerDetection
 public import FLT.Mazur.SchemeProperGeometricFiberSections
 public import FLT.Mazur.SchemePullbackCompositeCharts
 public import FLT.Mazur.SchemePullbackCompositeRecognition
