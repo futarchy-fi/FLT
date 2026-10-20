@@ -5998,6 +5998,7 @@ public import FLT.Mazur.FiniteSectionProjectivePresentation
 public import FLT.Mazur.FiniteSeparablePointFactor
 public import FLT.Mazur.FiniteSeparatedLineSheafDescent
 public import FLT.Mazur.FiniteSubframeSelections
+public import FLT.Mazur.FiniteSubgroupAmpleOpen
 public import FLT.Mazur.FiniteSubgroupClassPresheaf
 public import FLT.Mazur.FiniteSubgroupComparisonBaseChangeCriterion
 public import FLT.Mazur.FiniteSubgroupComparisonLocus
