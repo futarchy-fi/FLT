@@ -5042,6 +5042,8 @@ public import FLT.Mazur.EllipticNodeSameBranchSlope
 public import FLT.Mazur.EllipticNodeScaledEquation
 public import FLT.Mazur.EllipticNodeSecantReduction
 public import FLT.Mazur.EllipticNodeSecantSlope
+public import FLT.Mazur.EllipticNodeSecondCoefficientNormalization
+public import FLT.Mazur.EllipticNodeSecondCoefficientStep
 public import FLT.Mazur.EllipticNodeSecondSumLaurentCharacter
 public import FLT.Mazur.EllipticNodeSmallChangeLabel
 public import FLT.Mazur.EllipticNodeSpecializationEmbedding
@@ -8471,6 +8473,7 @@ public import FLT.Mazur.OneGonProductNormalization
 public import FLT.Mazur.OneGonProductTorus
 public import FLT.Mazur.OneGonQuotient
 public import FLT.Mazur.OneGonRetainedFiberReduced
+public import FLT.Mazur.OneGonRootsOfUnitySubgroup
 public import FLT.Mazur.OneGonScalarExtension
 public import FLT.Mazur.OneGonSeparated
 public import FLT.Mazur.OneGonSmoothEquationProjection
@@ -11765,6 +11768,13 @@ public import FLT.Mazur.RingEquivGrading
 public import FLT.Mazur.RingPairInvariantFlatScalars
 public import FLT.Mazur.RingPairInvariantLocalization
 public import FLT.Mazur.RingedSpaceIdealLocus
+public import FLT.Mazur.RootsOfUnityAlgebra
+public import FLT.Mazur.RootsOfUnityAlgebraPoints
+public import FLT.Mazur.RootsOfUnityCartier
+public import FLT.Mazur.RootsOfUnityLaurentKernel
+public import FLT.Mazur.RootsOfUnityNonEtale
+public import FLT.Mazur.RootsOfUnityPolynomialPresentation
+public import FLT.Mazur.RootsOfUnityScheme
 public import FLT.Mazur.ScalarAlgebraicClosureTests
 public import FLT.Mazur.ScalarClosedGeometricLifts
 public import FLT.Mazur.ScalarClosedImageCoverage
@@ -12873,6 +12883,8 @@ public import FLT.Mazur.TildePrincipalOpen
 public import FLT.Mazur.TildeSourceSectionComparison
 public import FLT.Mazur.TorusChartScalars
 public import FLT.Mazur.TorusPointUnitEquiv
+public import FLT.Mazur.TorusRootsOfUnityCartier
+public import FLT.Mazur.TorusRootsOfUnitySubgroup
 public import FLT.Mazur.TranscendentalAcyclicTranslation
 public import FLT.Mazur.TranscendentalAffineOpenOrbit
 public import FLT.Mazur.TranscendentalCoefficientOrbitAvoidance
@@ -14219,6 +14231,8 @@ public import FLT.Mazur.WeierstrassDividedFactorRatioInitialOverlap
 public import FLT.Mazur.WeierstrassDividedFactorRatioPolygonMaps
 public import FLT.Mazur.WeierstrassDividedFactorRatioPolygonNaturality
 public import FLT.Mazur.WeierstrassDividedFactorRatioRetainedBoundary
+public import FLT.Mazur.WeierstrassDividedFactoredDepthBranchLift
+public import FLT.Mazur.WeierstrassDividedFactoredDepthBranchOutput
 public import FLT.Mazur.WeierstrassDividedFaithfulActionDescent
 public import FLT.Mazur.WeierstrassDividedFifthDeepAtlas
 public import FLT.Mazur.WeierstrassDividedFifthDeepAtlasClosing
@@ -14368,6 +14382,10 @@ public import FLT.Mazur.WeierstrassDividedFiniteDeeperBranchNodal
 public import FLT.Mazur.WeierstrassDividedFiniteDeeperBranchPartial
 public import FLT.Mazur.WeierstrassDividedFiniteDeeperBranchTerminal
 public import FLT.Mazur.WeierstrassDividedFiniteExteriorPullback
+public import FLT.Mazur.WeierstrassDividedFiniteFactoredBranchLift
+public import FLT.Mazur.WeierstrassDividedFiniteFactoredBranchNodal
+public import FLT.Mazur.WeierstrassDividedFiniteFactoredBranchPartial
+public import FLT.Mazur.WeierstrassDividedFiniteFactoredBranchTerminal
 public import FLT.Mazur.WeierstrassDividedFiniteFlat
 public import FLT.Mazur.WeierstrassDividedFiniteGlobalNegation
 public import FLT.Mazur.WeierstrassDividedFiniteGlobalNegationInitial
@@ -14385,6 +14403,8 @@ public import FLT.Mazur.WeierstrassDividedFiniteNegationCover
 public import FLT.Mazur.WeierstrassDividedFiniteNegationOverlap
 public import FLT.Mazur.WeierstrassDividedFiniteNodeComponents
 public import FLT.Mazur.WeierstrassDividedFiniteNodeContractions
+public import FLT.Mazur.WeierstrassDividedFiniteNormalizedBranchInput
+public import FLT.Mazur.WeierstrassDividedFiniteNormalizedBranchLift
 public import FLT.Mazur.WeierstrassDividedFiniteOriginalScaleOpen
 public import FLT.Mazur.WeierstrassDividedFiniteOriginalXOpen
 public import FLT.Mazur.WeierstrassDividedFiniteOverlap
@@ -14713,6 +14733,7 @@ public import FLT.Mazur.WeierstrassDividedNilpotentEarlierTerminal
 public import FLT.Mazur.WeierstrassDividedNilpotentInfinity
 public import FLT.Mazur.WeierstrassDividedNilpotentNonadjacentIntersection
 public import FLT.Mazur.WeierstrassDividedNodalDepthAvailability
+public import FLT.Mazur.WeierstrassDividedNodalSecondNormalization
 public import FLT.Mazur.WeierstrassDividedNonadjacentGlobalIntersection
 public import FLT.Mazur.WeierstrassDividedNonadjacentTensorIntersection
 public import FLT.Mazur.WeierstrassDividedOddCompleteClosedComparison
@@ -15230,6 +15251,8 @@ public import FLT.Mazur.WeierstrassDividedSecondResidualIdentification
 public import FLT.Mazur.WeierstrassDividedSecondResidualLifts
 public import FLT.Mazur.WeierstrassDividedSecondResidualPunctures
 public import FLT.Mazur.WeierstrassDividedSecondResidualRestriction
+public import FLT.Mazur.WeierstrassDividedShearBranchCoverage
+public import FLT.Mazur.WeierstrassDividedShearBranchSource
 public import FLT.Mazur.WeierstrassDividedShearContraction
 public import FLT.Mazur.WeierstrassDividedShearData
 public import FLT.Mazur.WeierstrassDividedShearExterior
