@@ -2885,6 +2885,7 @@ public import FLT.Mazur.AffineChartSourceScalars
 public import FLT.Mazur.AffineChartStalkScalars
 public import FLT.Mazur.AffineChosenBasisCharpoly
 public import FLT.Mazur.AffineClosedBoundaryKernelLifting
+public import FLT.Mazur.AffineClosedImmersionCoordinates
 public import FLT.Mazur.AffineClosedLimitDescent
 public import FLT.Mazur.AffineClosedModuleDescent
 public import FLT.Mazur.AffineClosedPointAlgebra
