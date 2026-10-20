@@ -15096,6 +15096,7 @@ public import FLT.Mazur.WeierstrassDividedSuccessorUnitAction
 public import FLT.Mazur.WeierstrassDividedTangentCech
 public import FLT.Mazur.WeierstrassDividedTangentCechIso
 public import FLT.Mazur.WeierstrassDividedTangentConjugation
+public import FLT.Mazur.WeierstrassDividedTangentFormula
 public import FLT.Mazur.WeierstrassDividedTangentTransport
 public import FLT.Mazur.WeierstrassDividedTangentTransportAction
 public import FLT.Mazur.WeierstrassDividedTangentTriple
