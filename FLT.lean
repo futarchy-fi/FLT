@@ -5830,11 +5830,13 @@ public import FLT.Mazur.FiniteFiberOriginalOpenSpread
 public import FLT.Mazur.FiniteFiberSurjectiveDescent
 public import FLT.Mazur.FiniteFieldRankLength
 public import FLT.Mazur.FiniteFlatAffineLocalFree
+public import FLT.Mazur.FiniteFlatClosedComparison
 public import FLT.Mazur.FiniteFlatCoefficientIdeal
 public import FLT.Mazur.FiniteFlatCoefficientIso
 public import FLT.Mazur.FiniteFlatDegreeOpen
 public import FLT.Mazur.FiniteFlatFiberCard
 public import FLT.Mazur.FiniteFlatGlobalSections
+public import FLT.Mazur.FiniteFlatIdealSheafEquality
 public import FLT.Mazur.FiniteFlatIdealVanishingBaseChange
 public import FLT.Mazur.FiniteFlatIdealVanishingChart
 public import FLT.Mazur.FiniteFlatIdealVanishingGluing
@@ -8508,6 +8510,8 @@ public import FLT.Mazur.OddWeierstrassThreeTorsionEtale
 public import FLT.Mazur.OddWeierstrassThreeTorsionFinite
 public import FLT.Mazur.OddWeierstrassThreeTorsionUnramified
 public import FLT.Mazur.OneGonActionRotations
+public import FLT.Mazur.OneGonAdicBoundaryLevel
+public import FLT.Mazur.OneGonAdicCanonicalCyclicity
 public import FLT.Mazur.OneGonAdicCanonicalOrbit
 public import FLT.Mazur.OneGonAdicCanonicalSubgroup
 public import FLT.Mazur.OneGonAdicCharacterAffineEffectivity
@@ -8528,8 +8532,11 @@ public import FLT.Mazur.OneGonAdicChartRestriction
 public import FLT.Mazur.OneGonAdicFiniteSubgroup
 public import FLT.Mazur.OneGonAdicInitialParameter
 public import FLT.Mazur.OneGonAdicInitialRoots
+public import FLT.Mazur.OneGonAdicPrescribedBoundary
+public import FLT.Mazur.OneGonAdicReductionCartesian
 public import FLT.Mazur.OneGonAdicSmoothProjection
 public import FLT.Mazur.OneGonAdicSubgroupCartier
+public import FLT.Mazur.OneGonAdicSubgroupReductionIdeal
 public import FLT.Mazur.OneGonAffineCover
 public import FLT.Mazur.OneGonAffineNormalization
 public import FLT.Mazur.OneGonAffineNormalizationCoordinates
@@ -11971,6 +11978,8 @@ public import FLT.Mazur.RootsOfUnityPolynomialPresentation
 public import FLT.Mazur.RootsOfUnityPrimePowerIdeal
 public import FLT.Mazur.RootsOfUnityPrimePowerOrbit
 public import FLT.Mazur.RootsOfUnityScheme
+public import FLT.Mazur.RootsOfUnitySubgroupCyclicity
+public import FLT.Mazur.RootsOfUnitySubgroupGenerator
 public import FLT.Mazur.ScalarAlgebraicClosureTests
 public import FLT.Mazur.ScalarClosedGeometricLifts
 public import FLT.Mazur.ScalarClosedImageCoverage
@@ -13017,6 +13026,7 @@ public import FLT.Mazur.StructureModuleScalarTransitions
 public import FLT.Mazur.StructureRingCohomologyIso
 public import FLT.Mazur.SubframeDegreeUnitCover
 public import FLT.Mazur.SubfunctorRepresentedPullback
+public import FLT.Mazur.SubgroupIntrinsicCartierGenerator
 public import FLT.Mazur.SubmoduleQuotientScalarReduction
 public import FLT.Mazur.SubmoduleReductionFlat
 public import FLT.Mazur.SubmoduleReductionKernel
@@ -13082,6 +13092,7 @@ public import FLT.Mazur.TildeFiniteFreeLocalization
 public import FLT.Mazur.TildeInvertibleLocal
 public import FLT.Mazur.TildePrincipalOpen
 public import FLT.Mazur.TildeSourceSectionComparison
+public import FLT.Mazur.ToricFiniteSubgroupComparison
 public import FLT.Mazur.ToricFiniteSubgroupHopfPresentation
 public import FLT.Mazur.ToricFiniteSubgroupHopfRank
 public import FLT.Mazur.ToricFiniteSubgroupRootsClassification
