@@ -3977,6 +3977,7 @@ public import FLT.Mazur.CartierQuotientAugmentation
 public import FLT.Mazur.CartierRetainedLineBaseChange
 public import FLT.Mazur.CartierRetainedLineProjections
 public import FLT.Mazur.CartierSectionPairEquivalence
+public import FLT.Mazur.CartierSectionProductRank
 public import FLT.Mazur.CartierSupportOpenDescent
 public import FLT.Mazur.CartierTensorRank
 public import FLT.Mazur.CartierTensorRatioIdeal
@@ -4085,6 +4086,7 @@ public import FLT.Mazur.ClosedImmersionRefinedOpenPatches
 public import FLT.Mazur.ClosedLineProjectionFormula
 public import FLT.Mazur.ClosedLineQuotientPresentation
 public import FLT.Mazur.ClosedModuleDescent
+public import FLT.Mazur.ClosedOrbitKernel
 public import FLT.Mazur.ClosedPointFiberAmple
 public import FLT.Mazur.ClosedPointFiberSectionLifting
 public import FLT.Mazur.ClosedPointLineSection
@@ -5842,6 +5844,7 @@ public import FLT.Mazur.FiniteFlatIdealVanishingUniversal
 public import FLT.Mazur.FiniteFlatIdealVanishingZero
 public import FLT.Mazur.FiniteFlatLocalIdealPresentation
 public import FLT.Mazur.FiniteFlatProjectiveTargetLocus
+public import FLT.Mazur.FiniteFlatQuotientIdealEquality
 public import FLT.Mazur.FiniteFlatQuotientTrivialization
 public import FLT.Mazur.FiniteFlatSubschemeQuotient
 public import FLT.Mazur.FiniteFlatTranslationNormCharts
@@ -7038,6 +7041,7 @@ public import FLT.Mazur.HilbertOrderedAffineEnvelope
 public import FLT.Mazur.HilbertOrderedOriginalBoundary
 public import FLT.Mazur.HilbertOrderedStableNeighborhood
 public import FLT.Mazur.HilbertOriginalChartEqualizerScalars
+public import FLT.Mazur.HilbertOriginalCoreInvariantCoefficients
 public import FLT.Mazur.HilbertOriginalRankCoreCover
 public import FLT.Mazur.HilbertOriginalRankStageBoundaryLifts
 public import FLT.Mazur.HilbertOriginalRankStageCoverage
@@ -7592,6 +7596,8 @@ public import FLT.Mazur.InvariantLocalizationNumerator
 public import FLT.Mazur.InvariantLocallyFreeTraceUnit
 public import FLT.Mazur.InvariantObstructionNaturality
 public import FLT.Mazur.InvariantOpenBoundaryTrace
+public import FLT.Mazur.InvariantOpenCoefficientGluing
+public import FLT.Mazur.InvariantOpenCoefficientRestriction
 public import FLT.Mazur.InvariantOpenFiniteRelation
 public import FLT.Mazur.InvariantOpenProjectiveIntegralCoordinates
 public import FLT.Mazur.InvariantOpenRelationDiagram
@@ -8271,6 +8277,7 @@ public import FLT.Mazur.NonspecialDivisorTestCover
 public import FLT.Mazur.NonspecialDivisorTranslationCover
 public import FLT.Mazur.NonzeroLineSectionExact
 public import FLT.Mazur.NonzeroSectionPointCondition
+public import FLT.Mazur.NormalizedChartCoreInvariantCoefficients
 public import FLT.Mazur.NormalizedModuliDescentUniversal
 public import FLT.Mazur.NormalizedModuliInvariantDescent
 public import FLT.Mazur.NormalizedModuliParameterOverlap
@@ -8501,6 +8508,8 @@ public import FLT.Mazur.OddWeierstrassThreeTorsionEtale
 public import FLT.Mazur.OddWeierstrassThreeTorsionFinite
 public import FLT.Mazur.OddWeierstrassThreeTorsionUnramified
 public import FLT.Mazur.OneGonActionRotations
+public import FLT.Mazur.OneGonAdicCanonicalOrbit
+public import FLT.Mazur.OneGonAdicCanonicalSubgroup
 public import FLT.Mazur.OneGonAdicCharacterAffineEffectivity
 public import FLT.Mazur.OneGonAdicCharacterChartTower
 public import FLT.Mazur.OneGonAdicCharacterClosedImmersion
@@ -8517,6 +8526,8 @@ public import FLT.Mazur.OneGonAdicCharacterTower
 public import FLT.Mazur.OneGonAdicChartProjection
 public import FLT.Mazur.OneGonAdicChartRestriction
 public import FLT.Mazur.OneGonAdicFiniteSubgroup
+public import FLT.Mazur.OneGonAdicInitialParameter
+public import FLT.Mazur.OneGonAdicInitialRoots
 public import FLT.Mazur.OneGonAdicSmoothProjection
 public import FLT.Mazur.OneGonAdicSubgroupCartier
 public import FLT.Mazur.OneGonAffineCover
@@ -8650,6 +8661,7 @@ public import FLT.Mazur.OneGonZeroTorusComparison
 public import FLT.Mazur.OpenAtlasTripleGluing
 public import FLT.Mazur.OpenChartSectionPullback
 public import FLT.Mazur.OpenCoverDimension
+public import FLT.Mazur.OpenCoverFullBoundaryDetection
 public import FLT.Mazur.OpenDirectImageCohomology
 public import FLT.Mazur.OpenDirectImageNaturality
 public import FLT.Mazur.OpenDirectImageRestriction
@@ -11465,19 +11477,30 @@ public import FLT.Mazur.RankStageBoundedCoreCover
 public import FLT.Mazur.RankStageCoherentAffineCores
 public import FLT.Mazur.RankStageCoherentCoreCoverage
 public import FLT.Mazur.RankStageCompatibleCoreCoefficients
+public import FLT.Mazur.RankStageCompatibleCoreTowerGluing
 public import FLT.Mazur.RankStageCoreBoundaryCoefficients
 public import FLT.Mazur.RankStageCoreBoundaryTransitions
 public import FLT.Mazur.RankStageCoreCoefficientTransitions
+public import FLT.Mazur.RankStageCoreIntersections
+public import FLT.Mazur.RankStageCoreInvariantDetection
+public import FLT.Mazur.RankStageCoreMixedCoefficientDetection
 public import FLT.Mazur.RankStageCoreOriginalEnvelope
 public import FLT.Mazur.RankStageCoreOverlapBoundary
 public import FLT.Mazur.RankStageCorePointTests
+public import FLT.Mazur.RankStageCoreRefinementCoefficients
+public import FLT.Mazur.RankStageCoreRelationPullback
 public import FLT.Mazur.RankStageFiniteAtlasBoundaryTower
 public import FLT.Mazur.RankStageFiniteAtlasCoverage
 public import FLT.Mazur.RankStageFiniteCoreCover
 public import FLT.Mazur.RankStageFiniteCoreCoverage
 public import FLT.Mazur.RankStageFiniteCoreDetection
+public import FLT.Mazur.RankStageFiniteCoreGluing
 public import FLT.Mazur.RankStageFiniteCoverBoundaryTowers
+public import FLT.Mazur.RankStageFiniteInvariantDetection
+public import FLT.Mazur.RankStageFullBoundaryGluing
 public import FLT.Mazur.RankStageInitialBoundaryLifting
+public import FLT.Mazur.RankStageInvariantOverlapCocycle
+public import FLT.Mazur.RankStageInvariantOverlapErrors
 public import FLT.Mazur.RankStageInvariantTransitions
 public import FLT.Mazur.RankStageOriginalAffineBoundaryTower
 public import FLT.Mazur.RankStageOriginalAffineCompatibility
@@ -11941,6 +11964,7 @@ public import FLT.Mazur.RootsOfUnityArithmeticPullback
 public import FLT.Mazur.RootsOfUnityCartier
 public import FLT.Mazur.RootsOfUnityGroupBaseChange
 public import FLT.Mazur.RootsOfUnityInclusionBaseChange
+public import FLT.Mazur.RootsOfUnityIntrinsicOrbit
 public import FLT.Mazur.RootsOfUnityLaurentKernel
 public import FLT.Mazur.RootsOfUnityNonEtale
 public import FLT.Mazur.RootsOfUnityPolynomialPresentation
