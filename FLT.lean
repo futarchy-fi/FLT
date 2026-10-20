@@ -6959,6 +6959,7 @@ public import FLT.Mazur.HilbertScalarChartBoundaryPullback
 public import FLT.Mazur.HilbertScalarChartBoundaryTests
 public import FLT.Mazur.HilbertScalarChartFullDescent
 public import FLT.Mazur.HilbertScalarChartSourceComparison
+public import FLT.Mazur.HilbertScalarFullAtlasLifts
 public import FLT.Mazur.HilbertSourceActionRelationGraph
 public import FLT.Mazur.HilbertSourceActualMultiplierIdeal
 public import FLT.Mazur.HilbertSourceBadAffineChartEquations
