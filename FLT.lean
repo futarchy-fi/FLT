@@ -14963,6 +14963,7 @@ public import FLT.Mazur.WeierstrassDividedGlobalCoefficientStep
 public import FLT.Mazur.WeierstrassDividedGlobalConicCoordinates
 public import FLT.Mazur.WeierstrassDividedGlobalConicIntersection
 public import FLT.Mazur.WeierstrassDividedGlobalCoordinateSections
+public import FLT.Mazur.WeierstrassDividedGlobalFamilyComparison
 public import FLT.Mazur.WeierstrassDividedGlobalFiniteActionProduct
 public import FLT.Mazur.WeierstrassDividedGlobalFiniteFlat
 public import FLT.Mazur.WeierstrassDividedGlobalFiniteGluing
