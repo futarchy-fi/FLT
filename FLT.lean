@@ -4703,6 +4703,7 @@ public import FLT.Mazur.DenseGroundHilbertFullInterior
 public import FLT.Mazur.DenseGroundHilbertPrincipal
 public import FLT.Mazur.DenseGroundResidualSupport
 public import FLT.Mazur.DerivationAlgEquivTransport
+public import FLT.Mazur.DiagonalizableCobarAlgebra
 public import FLT.Mazur.DiagonalizableCobarContraction
 public import FLT.Mazur.DiagonalizableCobarCoordinates
 public import FLT.Mazur.DifferenceNodeAlgebra
