@@ -11433,6 +11433,7 @@ public import FLT.Mazur.RankStageOriginalAffineCompatibility
 public import FLT.Mazur.RankStageOriginalAffineEquationErrors
 public import FLT.Mazur.RankStageOriginalAffineRepresentatives
 public import FLT.Mazur.RankStageOriginalAffineTestValues
+public import FLT.Mazur.RankStageOriginalAtlasErrors
 public import FLT.Mazur.RankStageOriginalBoundaryCoefficients
 public import FLT.Mazur.RankStageOriginalBoundaryRestriction
 public import FLT.Mazur.RankStageOriginalBoundaryTests
