@@ -4085,6 +4085,7 @@ public import FLT.Mazur.ClosedImmersionRefinedOpenPatches
 public import FLT.Mazur.ClosedLineProjectionFormula
 public import FLT.Mazur.ClosedLineQuotientPresentation
 public import FLT.Mazur.ClosedModuleDescent
+public import FLT.Mazur.ClosedOrbitKernel
 public import FLT.Mazur.ClosedPointFiberAmple
 public import FLT.Mazur.ClosedPointFiberSectionLifting
 public import FLT.Mazur.ClosedPointLineSection
