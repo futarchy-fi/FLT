@@ -8382,6 +8382,7 @@ public import FLT.Mazur.OneGonClosedGroupInclusion
 public import FLT.Mazur.OneGonCocone
 public import FLT.Mazur.OneGonCoefficientTransport
 public import FLT.Mazur.OneGonCompleteAmpleCyclicSubgroup
+public import FLT.Mazur.OneGonCompleteAmpleParameterLift
 public import FLT.Mazur.OneGonCompleteBoundaryCartesian
 public import FLT.Mazur.OneGonCompleteBoundaryMarking
 public import FLT.Mazur.OneGonCompleteBoundarySubgroup
