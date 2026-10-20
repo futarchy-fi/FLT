@@ -8502,6 +8502,7 @@ public import FLT.Mazur.OneGonAdicCharacterChartTower
 public import FLT.Mazur.OneGonAdicCharacterCoordinates
 public import FLT.Mazur.OneGonAdicCharacterEffectivityUnique
 public import FLT.Mazur.OneGonAdicCharacterGroupEffectivity
+public import FLT.Mazur.OneGonAdicCharacterInitialEmbedding
 public import FLT.Mazur.OneGonAdicCharacterIntrinsicReduction
 public import FLT.Mazur.OneGonAdicCharacterSmoothEffectivity
 public import FLT.Mazur.OneGonAdicCharacterStages
