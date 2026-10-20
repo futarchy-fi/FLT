@@ -7038,6 +7038,7 @@ public import FLT.Mazur.HilbertOrderedAffineEnvelope
 public import FLT.Mazur.HilbertOrderedOriginalBoundary
 public import FLT.Mazur.HilbertOrderedStableNeighborhood
 public import FLT.Mazur.HilbertOriginalChartEqualizerScalars
+public import FLT.Mazur.HilbertOriginalCoreInvariantCoefficients
 public import FLT.Mazur.HilbertOriginalRankCoreCover
 public import FLT.Mazur.HilbertOriginalRankStageBoundaryLifts
 public import FLT.Mazur.HilbertOriginalRankStageCoverage
@@ -7592,6 +7593,7 @@ public import FLT.Mazur.InvariantLocalizationNumerator
 public import FLT.Mazur.InvariantLocallyFreeTraceUnit
 public import FLT.Mazur.InvariantObstructionNaturality
 public import FLT.Mazur.InvariantOpenBoundaryTrace
+public import FLT.Mazur.InvariantOpenCoefficientRestriction
 public import FLT.Mazur.InvariantOpenFiniteRelation
 public import FLT.Mazur.InvariantOpenProjectiveIntegralCoordinates
 public import FLT.Mazur.InvariantOpenRelationDiagram
@@ -8271,6 +8273,7 @@ public import FLT.Mazur.NonspecialDivisorTestCover
 public import FLT.Mazur.NonspecialDivisorTranslationCover
 public import FLT.Mazur.NonzeroLineSectionExact
 public import FLT.Mazur.NonzeroSectionPointCondition
+public import FLT.Mazur.NormalizedChartCoreInvariantCoefficients
 public import FLT.Mazur.NormalizedModuliDescentUniversal
 public import FLT.Mazur.NormalizedModuliInvariantDescent
 public import FLT.Mazur.NormalizedModuliParameterOverlap
@@ -11468,16 +11471,23 @@ public import FLT.Mazur.RankStageCompatibleCoreCoefficients
 public import FLT.Mazur.RankStageCoreBoundaryCoefficients
 public import FLT.Mazur.RankStageCoreBoundaryTransitions
 public import FLT.Mazur.RankStageCoreCoefficientTransitions
+public import FLT.Mazur.RankStageCoreIntersections
+public import FLT.Mazur.RankStageCoreInvariantDetection
+public import FLT.Mazur.RankStageCoreMixedCoefficientDetection
 public import FLT.Mazur.RankStageCoreOriginalEnvelope
 public import FLT.Mazur.RankStageCoreOverlapBoundary
 public import FLT.Mazur.RankStageCorePointTests
+public import FLT.Mazur.RankStageCoreRefinementCoefficients
+public import FLT.Mazur.RankStageCoreRelationPullback
 public import FLT.Mazur.RankStageFiniteAtlasBoundaryTower
 public import FLT.Mazur.RankStageFiniteAtlasCoverage
 public import FLT.Mazur.RankStageFiniteCoreCover
 public import FLT.Mazur.RankStageFiniteCoreCoverage
 public import FLT.Mazur.RankStageFiniteCoreDetection
 public import FLT.Mazur.RankStageFiniteCoverBoundaryTowers
+public import FLT.Mazur.RankStageFiniteInvariantDetection
 public import FLT.Mazur.RankStageInitialBoundaryLifting
+public import FLT.Mazur.RankStageInvariantOverlapErrors
 public import FLT.Mazur.RankStageInvariantTransitions
 public import FLT.Mazur.RankStageOriginalAffineBoundaryTower
 public import FLT.Mazur.RankStageOriginalAffineCompatibility
