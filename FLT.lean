@@ -3613,6 +3613,7 @@ public import FLT.Mazur.ArithmeticOneGonOriginalFiber
 public import FLT.Mazur.ArithmeticOneGonOriginalRoots
 public import FLT.Mazur.ArithmeticOneGonRoots
 public import FLT.Mazur.ArithmeticOneGonRootsBaseChange
+public import FLT.Mazur.ArithmeticOneGonRootsCoefficientNaturality
 public import FLT.Mazur.ArithmeticOneGonRotations
 public import FLT.Mazur.ArithmeticOneGonSubgroupAmple
 public import FLT.Mazur.ArithmeticOneGonTorus
