@@ -8548,6 +8548,7 @@ public import FLT.Mazur.OneGonAdicCanonicalSubgroup
 public import FLT.Mazur.OneGonAdicCharacterAffineEffectivity
 public import FLT.Mazur.OneGonAdicCharacterChartTower
 public import FLT.Mazur.OneGonAdicCharacterClosedImmersion
+public import FLT.Mazur.OneGonAdicCharacterCoefficientSquares
 public import FLT.Mazur.OneGonAdicCharacterCoordinates
 public import FLT.Mazur.OneGonAdicCharacterEffectivityUnique
 public import FLT.Mazur.OneGonAdicCharacterGroupEffectivity
