@@ -15232,6 +15232,7 @@ public import FLT.Mazur.WeierstrassDividedReciprocalTangentFormula
 public import FLT.Mazur.WeierstrassDividedReciprocalTangentOverlap
 public import FLT.Mazur.WeierstrassDividedReciprocalTangentScheme
 public import FLT.Mazur.WeierstrassDividedReindexedSecantFlatSourceExt
+public import FLT.Mazur.WeierstrassDividedReindexedSecantOpenGluing
 public import FLT.Mazur.WeierstrassDividedResidualIntegralLift
 public import FLT.Mazur.WeierstrassDividedResidualLiftAlgebra
 public import FLT.Mazur.WeierstrassDividedResidualLiftAtlas
