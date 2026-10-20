@@ -6488,6 +6488,7 @@ public import FLT.Mazur.GroupSchemePointAdjunction
 public import FLT.Mazur.GroupSectionBaseChange
 public import FLT.Mazur.GroupTorsionBaseChange
 public import FLT.Mazur.GroupTorsionCommutativeStructure
+public import FLT.Mazur.GroupTorsionLocalMatching
 public import FLT.Mazur.GroupTorsionProper
 public import FLT.Mazur.GroupTorsionScheme
 public import FLT.Mazur.GroupTorsionTransport
