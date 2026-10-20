@@ -11377,6 +11377,7 @@ public import FLT.Mazur.RankStageCoreBoundaryTransitions
 public import FLT.Mazur.RankStageCoreCoefficientTransitions
 public import FLT.Mazur.RankStageInvariantTransitions
 public import FLT.Mazur.RankStageOriginalBoundaryCoefficients
+public import FLT.Mazur.RankStagePrescribedBoundaryLifting
 public import FLT.Mazur.RankStagePrescribedLiftingProperty
 public import FLT.Mazur.RankStageRelationTransitions
 public import FLT.Mazur.RankStageStructureMaps
