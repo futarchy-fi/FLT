@@ -7467,6 +7467,7 @@ public import FLT.Mazur.IntegralBase
 public import FLT.Mazur.IntegralClosedSupport
 public import FLT.Mazur.IntegralCurveCartierFinite
 public import FLT.Mazur.IntegralCyclotomicCoordinates
+public import FLT.Mazur.IntegralCyclotomicCover
 public import FLT.Mazur.IntegralCyclotomicOrbit
 public import FLT.Mazur.IntegralDimension
 public import FLT.Mazur.IntegralImageIdealStalk
