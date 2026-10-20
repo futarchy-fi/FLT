@@ -14768,6 +14768,7 @@ public import FLT.Mazur.WeierstrassDividedGlobalRegularLift
 public import FLT.Mazur.WeierstrassDividedGlobalResidueNodes
 public import FLT.Mazur.WeierstrassDividedGlobalResidueOverlap
 public import FLT.Mazur.WeierstrassDividedGlobalSmoothAdvance
+public import FLT.Mazur.WeierstrassDividedGlobalSmoothTransition
 public import FLT.Mazur.WeierstrassDividedGlobalStepExterior
 public import FLT.Mazur.WeierstrassDividedGlobalStepFlatExt
 public import FLT.Mazur.WeierstrassDividedGlobalStepOriginal
