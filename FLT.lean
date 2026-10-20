@@ -12965,6 +12965,7 @@ public import FLT.Mazur.TildeSourceSectionComparison
 public import FLT.Mazur.ToricFiniteSubgroupHopfPresentation
 public import FLT.Mazur.ToricFiniteSubgroupHopfRank
 public import FLT.Mazur.ToricFiniteSubgroupRootsClassification
+public import FLT.Mazur.ToricFiniteSubgroupRootsCompatibility
 public import FLT.Mazur.ToricHopfCharacterKernel
 public import FLT.Mazur.ToricHopfQuotientCoordinates
 public import FLT.Mazur.TorusArithmeticCyclicity
