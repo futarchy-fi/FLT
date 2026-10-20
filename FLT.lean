@@ -13993,6 +13993,7 @@ public import FLT.Mazur.WeierstrassCubicPushforwardH1
 public import FLT.Mazur.WeierstrassCubicQuotient
 public import FLT.Mazur.WeierstrassCubicQuotientChart
 public import FLT.Mazur.WeierstrassCubicSection
+public import FLT.Mazur.WeierstrassDiagonalizableCoefficientHom
 public import FLT.Mazur.WeierstrassDiagonalizableCorrection
 public import FLT.Mazur.WeierstrassDiagonalizableDefect
 public import FLT.Mazur.WeierstrassDiagonalizableErrorCoordinates
