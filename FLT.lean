@@ -14465,6 +14465,7 @@ public import FLT.Mazur.WeierstrassDividedArithmeticZeroStandardEndpoints
 public import FLT.Mazur.WeierstrassDividedArithmeticZeroStandardRestriction
 public import FLT.Mazur.WeierstrassDividedArithmeticZeroTerminalCompatibility
 public import FLT.Mazur.WeierstrassDividedArithmeticZeroUniversal
+public import FLT.Mazur.WeierstrassDividedAtlasPairFormulaCoverage
 public import FLT.Mazur.WeierstrassDividedAtlasPairFormulaInput
 public import FLT.Mazur.WeierstrassDividedAtlasPairIntermediateAddition
 public import FLT.Mazur.WeierstrassDividedAtlasPairIntermediateFormulas
@@ -14596,6 +14597,7 @@ public import FLT.Mazur.WeierstrassDividedDepthNegationBoundaries
 public import FLT.Mazur.WeierstrassDividedDepthOriginalOpen
 public import FLT.Mazur.WeierstrassDividedDepthStructure
 public import FLT.Mazur.WeierstrassDividedDepthYBoundary
+public import FLT.Mazur.WeierstrassDividedDistinctOlderAddition
 public import FLT.Mazur.WeierstrassDividedEarlierTerminalSeparation
 public import FLT.Mazur.WeierstrassDividedEqualityComponentContraction
 public import FLT.Mazur.WeierstrassDividedEqualityComponentEndpoints
@@ -15087,6 +15089,7 @@ public import FLT.Mazur.WeierstrassDividedInitialExteriorLaurent
 public import FLT.Mazur.WeierstrassDividedInitialExteriorNegation
 public import FLT.Mazur.WeierstrassDividedInitialExteriorOriented
 public import FLT.Mazur.WeierstrassDividedInitialExteriorProjective
+public import FLT.Mazur.WeierstrassDividedInitialFormulaCoordinates
 public import FLT.Mazur.WeierstrassDividedInitialGlobalResidueNodes
 public import FLT.Mazur.WeierstrassDividedInitialGlobalSections
 public import FLT.Mazur.WeierstrassDividedInitialGlobalStep
@@ -15104,6 +15107,7 @@ public import FLT.Mazur.WeierstrassDividedInitialLineBoundary
 public import FLT.Mazur.WeierstrassDividedInitialLineIntersection
 public import FLT.Mazur.WeierstrassDividedInitialNodeBranches
 public import FLT.Mazur.WeierstrassDividedInitialNodeHomExt
+public import FLT.Mazur.WeierstrassDividedInitialOlderAddition
 public import FLT.Mazur.WeierstrassDividedInitialParameterIntersection
 public import FLT.Mazur.WeierstrassDividedInitialParameterOverlap
 public import FLT.Mazur.WeierstrassDividedInitialPointActionPropagation
@@ -15129,6 +15133,7 @@ public import FLT.Mazur.WeierstrassDividedInitialTensorIntersection
 public import FLT.Mazur.WeierstrassDividedInitialTensorPointAction
 public import FLT.Mazur.WeierstrassDividedInitialTensorSlopeGeometry
 public import FLT.Mazur.WeierstrassDividedInitialTensorSlopeLaurent
+public import FLT.Mazur.WeierstrassDividedInitialTerminalAddition
 public import FLT.Mazur.WeierstrassDividedInitialZeroInfinity
 public import FLT.Mazur.WeierstrassDividedInitialZeroLaurent
 public import FLT.Mazur.WeierstrassDividedInitialZeroSlopeChart
@@ -15763,6 +15768,7 @@ public import FLT.Mazur.WeierstrassDividedRetainedInitialBoundary
 public import FLT.Mazur.WeierstrassDividedRetainedLineAt
 public import FLT.Mazur.WeierstrassDividedRetainedLineSeparation
 public import FLT.Mazur.WeierstrassDividedRetainedNormalizedAdjacent
+public import FLT.Mazur.WeierstrassDividedRetainedOlderCoordinates
 public import FLT.Mazur.WeierstrassDividedRetainedPolygonLabels
 public import FLT.Mazur.WeierstrassDividedRetainedPolygonMaps
 public import FLT.Mazur.WeierstrassDividedRetainedPolygonNaturality
