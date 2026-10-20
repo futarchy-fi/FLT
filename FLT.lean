@@ -14271,6 +14271,7 @@ public import FLT.Mazur.WeierstrassDividedFiniteSecantInput
 public import FLT.Mazur.WeierstrassDividedFiniteSmoothInput
 public import FLT.Mazur.WeierstrassDividedFiniteSmoothOpen
 public import FLT.Mazur.WeierstrassDividedFiniteStageRetention
+public import FLT.Mazur.WeierstrassDividedFiniteTangentInput
 public import FLT.Mazur.WeierstrassDividedFiniteTensorAtlas
 public import FLT.Mazur.WeierstrassDividedFiniteTensorCharts
 public import FLT.Mazur.WeierstrassDividedFiniteTensorGeometry
