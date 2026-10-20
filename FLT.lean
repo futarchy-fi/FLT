@@ -7612,6 +7612,7 @@ public import FLT.Mazur.LaurentStageParameterTorus
 public import FLT.Mazur.LaurentTensor
 public import FLT.Mazur.LaurentTopParameterSubstitution
 public import FLT.Mazur.LaurentUnitCoefficientPoint
+public import FLT.Mazur.LaurentUnitKernel
 public import FLT.Mazur.LaurentUnitMarkingCancellation
 public import FLT.Mazur.LaurentUnitMultiplication
 public import FLT.Mazur.LaurentUnitPointNaturality
