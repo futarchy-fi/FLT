@@ -7030,6 +7030,7 @@ public import FLT.Mazur.HilbertOrbitSelfEmbeddingDiscrepancy
 public import FLT.Mazur.HilbertOrderedAffineEnvelope
 public import FLT.Mazur.HilbertOrderedOriginalBoundary
 public import FLT.Mazur.HilbertOrderedStableNeighborhood
+public import FLT.Mazur.HilbertOriginalRankCoreCover
 public import FLT.Mazur.HilbertOriginalRankStageBoundaryLifts
 public import FLT.Mazur.HilbertOriginalRankStageCoverage
 public import FLT.Mazur.HilbertOriginalScalarFrameCharts
