@@ -14332,6 +14332,7 @@ public import FLT.Mazur.WeierstrassDividedFiniteSecantInput
 public import FLT.Mazur.WeierstrassDividedFiniteSmoothInput
 public import FLT.Mazur.WeierstrassDividedFiniteSmoothOpen
 public import FLT.Mazur.WeierstrassDividedFiniteStageRetention
+public import FLT.Mazur.WeierstrassDividedFiniteTangentBranchLift
 public import FLT.Mazur.WeierstrassDividedFiniteTangentInput
 public import FLT.Mazur.WeierstrassDividedFiniteTensorAtlas
 public import FLT.Mazur.WeierstrassDividedFiniteTensorCharts
@@ -14985,6 +14986,8 @@ public import FLT.Mazur.WeierstrassDividedPositiveSplitZero
 public import FLT.Mazur.WeierstrassDividedPrecedingAtlasRange
 public import FLT.Mazur.WeierstrassDividedPreviousBoundaryAlgebra
 public import FLT.Mazur.WeierstrassDividedProjectiveLift
+public import FLT.Mazur.WeierstrassDividedReciprocalExtendedAddition
+public import FLT.Mazur.WeierstrassDividedReciprocalExtendedOverlap
 public import FLT.Mazur.WeierstrassDividedReciprocalFormula
 public import FLT.Mazur.WeierstrassDividedReciprocalInfinityCoverage
 public import FLT.Mazur.WeierstrassDividedReciprocalInfinityInput
@@ -14994,6 +14997,11 @@ public import FLT.Mazur.WeierstrassDividedReciprocalOriginalAction
 public import FLT.Mazur.WeierstrassDividedReciprocalOriginalCoordinates
 public import FLT.Mazur.WeierstrassDividedReciprocalOutput
 public import FLT.Mazur.WeierstrassDividedReciprocalOverlapProjections
+public import FLT.Mazur.WeierstrassDividedReciprocalPartialOverlap
+public import FLT.Mazur.WeierstrassDividedReciprocalReversedPair
+public import FLT.Mazur.WeierstrassDividedReciprocalRightOriginalAction
+public import FLT.Mazur.WeierstrassDividedReciprocalRightOverlap
+public import FLT.Mazur.WeierstrassDividedReciprocalRightSchemeAction
 public import FLT.Mazur.WeierstrassDividedReciprocalSchemeAction
 public import FLT.Mazur.WeierstrassDividedReciprocalSecantComparison
 public import FLT.Mazur.WeierstrassDividedReciprocalSecantFormula
@@ -15002,6 +15010,7 @@ public import FLT.Mazur.WeierstrassDividedReciprocalSecantScheme
 public import FLT.Mazur.WeierstrassDividedReciprocalSource
 public import FLT.Mazur.WeierstrassDividedReciprocalSpecialization
 public import FLT.Mazur.WeierstrassDividedReciprocalTangentComparison
+public import FLT.Mazur.WeierstrassDividedReciprocalTangentExtendedOverlap
 public import FLT.Mazur.WeierstrassDividedReciprocalTangentFormula
 public import FLT.Mazur.WeierstrassDividedReciprocalTangentOverlap
 public import FLT.Mazur.WeierstrassDividedReciprocalTangentScheme
@@ -15107,6 +15116,7 @@ public import FLT.Mazur.WeierstrassDividedRevisedTensorMaps
 public import FLT.Mazur.WeierstrassDividedRevisedTerminalBase
 public import FLT.Mazur.WeierstrassDividedRevisedTerminalReflection
 public import FLT.Mazur.WeierstrassDividedRevisedTwistedIso
+public import FLT.Mazur.WeierstrassDividedRightSmoothReciprocalPresentation
 public import FLT.Mazur.WeierstrassDividedSecantComparison
 public import FLT.Mazur.WeierstrassDividedSecantFormula
 public import FLT.Mazur.WeierstrassDividedSecantLeftOverlap
@@ -15203,6 +15213,12 @@ public import FLT.Mazur.WeierstrassDividedSuccessorRetainedCenter
 public import FLT.Mazur.WeierstrassDividedSuccessorRetainedCoordinates
 public import FLT.Mazur.WeierstrassDividedSuccessorRetainedGluing
 public import FLT.Mazur.WeierstrassDividedSuccessorUnitAction
+public import FLT.Mazur.WeierstrassDividedTangentBranchContraction
+public import FLT.Mazur.WeierstrassDividedTangentBranchEquation
+public import FLT.Mazur.WeierstrassDividedTangentBranchFormula
+public import FLT.Mazur.WeierstrassDividedTangentBranchOutput
+public import FLT.Mazur.WeierstrassDividedTangentBranchScheme
+public import FLT.Mazur.WeierstrassDividedTangentBranchSource
 public import FLT.Mazur.WeierstrassDividedTangentCech
 public import FLT.Mazur.WeierstrassDividedTangentCechIso
 public import FLT.Mazur.WeierstrassDividedTangentConjugation
