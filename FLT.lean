@@ -11612,6 +11612,7 @@ public import FLT.Mazur.RankStageOriginalGeometricAtlasApproximation
 public import FLT.Mazur.RankStageOriginalMixedCoreTests
 public import FLT.Mazur.RankStageOriginalMixedIdeals
 public import FLT.Mazur.RankStageOriginalMixedTests
+public import FLT.Mazur.RankStageOriginalNormProduct
 public import FLT.Mazur.RankStageOriginalPrincipalNumerators
 public import FLT.Mazur.RankStageOriginalProductAnnihilation
 public import FLT.Mazur.RankStageOriginalScalarAnnihilation
