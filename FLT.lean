@@ -11583,6 +11583,7 @@ public import FLT.Mazur.RankStageOriginalAtlasErrors
 public import FLT.Mazur.RankStageOriginalAtlasTower
 public import FLT.Mazur.RankStageOriginalBoundaryCoefficients
 public import FLT.Mazur.RankStageOriginalBoundaryCoherentNumerators
+public import FLT.Mazur.RankStageOriginalBoundaryProduct
 public import FLT.Mazur.RankStageOriginalBoundaryRestriction
 public import FLT.Mazur.RankStageOriginalBoundaryScalarObstruction
 public import FLT.Mazur.RankStageOriginalBoundaryTests
