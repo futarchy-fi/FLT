@@ -8538,6 +8538,7 @@ public import FLT.Mazur.OneGonLocalizedEqualizer
 public import FLT.Mazur.OneGonMobiusConductors
 public import FLT.Mazur.OneGonNilpotentCharacterHom
 public import FLT.Mazur.OneGonNilpotentDiagonalizableLift
+public import FLT.Mazur.OneGonNilpotentIntrinsicHomLift
 public import FLT.Mazur.OneGonNilpotentSmoothAffine
 public import FLT.Mazur.OneGonNodalCoefficientGroupMap
 public import FLT.Mazur.OneGonNodalCoefficientGroupProjection
