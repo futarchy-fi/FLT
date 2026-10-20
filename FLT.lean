@@ -8577,6 +8577,7 @@ public import FLT.Mazur.OneGonAdicSmoothModelClosed
 public import FLT.Mazur.OneGonAdicSmoothModelHom
 public import FLT.Mazur.OneGonAdicSmoothModelRecovery
 public import FLT.Mazur.OneGonAdicSmoothModelReduction
+public import FLT.Mazur.OneGonAdicSmoothModelSubgroup
 public import FLT.Mazur.OneGonAdicSmoothProjection
 public import FLT.Mazur.OneGonAdicSubgroupCartier
 public import FLT.Mazur.OneGonAdicSubgroupReductionIdeal
