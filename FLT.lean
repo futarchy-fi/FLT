@@ -15001,6 +15001,7 @@ public import FLT.Mazur.WeierstrassDividedSecantFormula
 public import FLT.Mazur.WeierstrassDividedSecantLeftOverlap
 public import FLT.Mazur.WeierstrassDividedSecantOriginalAction
 public import FLT.Mazur.WeierstrassDividedSecantOverlapProjections
+public import FLT.Mazur.WeierstrassDividedSecantPartialOverlap
 public import FLT.Mazur.WeierstrassDividedSecantPointGeometry
 public import FLT.Mazur.WeierstrassDividedSecantRefinementComparison
 public import FLT.Mazur.WeierstrassDividedSecantResidue
