@@ -6488,6 +6488,7 @@ public import FLT.Mazur.GroupSchemeBaseChangeSections
 public import FLT.Mazur.GroupSchemeBaseIsoTransport
 public import FLT.Mazur.GroupSchemePointAdjunction
 public import FLT.Mazur.GroupSectionBaseChange
+public import FLT.Mazur.GroupSectionRestrictionEquality
 public import FLT.Mazur.GroupTorsionBaseChange
 public import FLT.Mazur.GroupTorsionCommutativeStructure
 public import FLT.Mazur.GroupTorsionLocalMatching
