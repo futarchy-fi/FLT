@@ -14812,6 +14812,7 @@ public import FLT.Mazur.WeierstrassDividedFixedTerminalParameterIso
 public import FLT.Mazur.WeierstrassDividedFixedTerminalReduction
 public import FLT.Mazur.WeierstrassDividedFixedTerminalRestriction
 public import FLT.Mazur.WeierstrassDividedFourRegimeAmbientAddition
+public import FLT.Mazur.WeierstrassDividedFourRegimeQuadrupleAmbientOverlap
 public import FLT.Mazur.WeierstrassDividedFourthAtlas
 public import FLT.Mazur.WeierstrassDividedFourthAtlasClosing
 public import FLT.Mazur.WeierstrassDividedFourthAtlasIdentification
