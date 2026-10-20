@@ -11608,6 +11608,7 @@ public import FLT.Mazur.RelativeRelationMonicSeedQuotient
 public import FLT.Mazur.RelativeRelationNilpotentGerms
 public import FLT.Mazur.RelativeRelationNilpotentSections
 public import FLT.Mazur.RelativeRelationNormPrincipal
+public import FLT.Mazur.RelativeRelationOpenCartesian
 public import FLT.Mazur.RelativeRelationOpenFunctionMap
 public import FLT.Mazur.RelativeRelationOpenSaturation
 public import FLT.Mazur.RelativeRelationOpenSourceFunctions
