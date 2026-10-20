@@ -12808,6 +12808,7 @@ public import FLT.Mazur.SmoothHilbertSourceRepresentable
 public import FLT.Mazur.SmoothHilbertTestCover
 public import FLT.Mazur.SmoothInvariantOpenAllEtaleLifts
 public import FLT.Mazur.SmoothLocalNilpotentLift
+public import FLT.Mazur.SmoothNilpotentLocalLift
 public import FLT.Mazur.SmoothNodalFamilyDimension
 public import FLT.Mazur.SmoothNonspecialDivisorCover
 public import FLT.Mazur.SmoothNonspecialDivisorLift
