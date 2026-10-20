@@ -14864,6 +14864,7 @@ public import FLT.Mazur.WeierstrassDividedResidueSplitCubic
 public import FLT.Mazur.WeierstrassDividedResidueTangentNormalization
 public import FLT.Mazur.WeierstrassDividedResolvedNegation
 public import FLT.Mazur.WeierstrassDividedResolvedOriginalOpen
+public import FLT.Mazur.WeierstrassDividedResolvedProductOpens
 public import FLT.Mazur.WeierstrassDividedResolvedSmoothAction
 public import FLT.Mazur.WeierstrassDividedResolvedSmoothActionLaws
 public import FLT.Mazur.WeierstrassDividedResolvedSmoothActionSquare
