@@ -3558,6 +3558,7 @@ public import FLT.Mazur.AmpleLineBundle
 public import FLT.Mazur.AmpleLineLimitDescent
 public import FLT.Mazur.AmpleOpenAffineRecovery
 public import FLT.Mazur.AmpleOpenImage
+public import FLT.Mazur.AmplePositiveTensorPower
 public import FLT.Mazur.AmplePreimageSectionCover
 public import FLT.Mazur.AmplePrincipalLocality
 public import FLT.Mazur.AmpleRetainedChartGeneration
