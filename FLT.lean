@@ -12235,6 +12235,7 @@ public import FLT.Mazur.SchemeScalarIntegralCover
 public import FLT.Mazur.SchemeScalarMinimalEndpoint
 public import FLT.Mazur.SchemeScalarPrincipalNeighborhood
 public import FLT.Mazur.SchemeScalarPrincipalNeighborhoodFamily
+public import FLT.Mazur.SchemeScalarRelationPullback
 public import FLT.Mazur.SchemeScalarResidueImage
 public import FLT.Mazur.SchemeSectionFamilyProduct
 public import FLT.Mazur.SchemeSectionFrameCompatibility
