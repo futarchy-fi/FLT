@@ -11513,6 +11513,7 @@ public import FLT.Mazur.RankStageFiniteCoverBoundaryTowers
 public import FLT.Mazur.RankStageFiniteInvariantDetection
 public import FLT.Mazur.RankStageFullBoundaryGluing
 public import FLT.Mazur.RankStageInitialBoundaryLifting
+public import FLT.Mazur.RankStageInvariantNormParameters
 public import FLT.Mazur.RankStageInvariantOverlapCocycle
 public import FLT.Mazur.RankStageInvariantOverlapErrors
 public import FLT.Mazur.RankStageInvariantTransitions
