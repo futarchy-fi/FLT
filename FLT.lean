@@ -14786,6 +14786,7 @@ public import FLT.Mazur.WeierstrassDividedNodalNegativeBranchOutput
 public import FLT.Mazur.WeierstrassDividedNodalSecantCases
 public import FLT.Mazur.WeierstrassDividedNodalSecondNormalization
 public import FLT.Mazur.WeierstrassDividedNodalTangentBranchCoverage
+public import FLT.Mazur.WeierstrassDividedNodalTangentGluing
 public import FLT.Mazur.WeierstrassDividedNodalTangentNeighborhood
 public import FLT.Mazur.WeierstrassDividedNodalTangentNeighborhoodCover
 public import FLT.Mazur.WeierstrassDividedNonadjacentGlobalIntersection
