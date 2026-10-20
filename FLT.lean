@@ -8573,6 +8573,7 @@ public import FLT.Mazur.OneGonAdicPuncturedCoarse
 public import FLT.Mazur.OneGonAdicPuncturedModuli
 public import FLT.Mazur.OneGonAdicRecoveredSmoothFactor
 public import FLT.Mazur.OneGonAdicReductionCartesian
+public import FLT.Mazur.OneGonAdicSmoothCoefficientSquares
 public import FLT.Mazur.OneGonAdicSmoothFactorRecovery
 public import FLT.Mazur.OneGonAdicSmoothGroupRecovery
 public import FLT.Mazur.OneGonAdicSmoothModelAmple
