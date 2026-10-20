@@ -3586,6 +3586,8 @@ public import FLT.Mazur.ArbitraryGeometricOriginalOpenImage
 public import FLT.Mazur.ArbitraryGeometricProperCore
 public import FLT.Mazur.ArbitraryPicardAffineEtaleChart
 public import FLT.Mazur.ArbitraryPicardEtaleTranslation
+public import FLT.Mazur.ArithmeticRootsOfUnitySections
+public import FLT.Mazur.ArithmeticTorusPoints
 public import FLT.Mazur.ArtinianClosedFiberFunctions
 public import FLT.Mazur.ArtinianCoefficientFiberCartier
 public import FLT.Mazur.ArtinianGroundEnvelopeInterior
@@ -3968,6 +3970,8 @@ public import FLT.Mazur.CechSortingHomotopyEvaluation
 public import FLT.Mazur.CechSortingMaps
 public import FLT.Mazur.CechSortingRecursiveHomotopy
 public import FLT.Mazur.CechSortingTupleChains
+public import FLT.Mazur.CharacterAlgebraScalarExtension
+public import FLT.Mazur.CharacterSchemeBaseChange
 public import FLT.Mazur.CharacteristicTwoThreeOpens
 public import FLT.Mazur.ChowAffineBaseAcyclicPower
 public import FLT.Mazur.ChowAffineBaseChartData
@@ -4661,6 +4665,8 @@ public import FLT.Mazur.CyclicProductEndpoints
 public import FLT.Mazur.CyclicProductNormalization
 public import FLT.Mazur.CyclicTorsionPoint
 public import FLT.Mazur.CyclicUnitRelabeling
+public import FLT.Mazur.CyclotomicCoverRootSection
+public import FLT.Mazur.CyclotomicSchemeOrbit
 public import FLT.Mazur.DRFiberClassification
 public import FLT.Mazur.DedekindPointExtension
 public import FLT.Mazur.DenseClosedRestriction
@@ -5746,7 +5752,10 @@ public import FLT.Mazur.FiniteEtaleGeometricSectionCover
 public import FLT.Mazur.FiniteEtaleGeometricSplitting
 public import FLT.Mazur.FiniteEtaleImageCover
 public import FLT.Mazur.FiniteEtaleIndependentGeometricTranslation
+public import FLT.Mazur.FiniteEtaleInvariantDomainCoefficients
+public import FLT.Mazur.FiniteEtaleInvariantNamedDomains
 public import FLT.Mazur.FiniteEtaleInvariantOpenBoundary
+public import FLT.Mazur.FiniteEtaleInvariantOpenTransition
 public import FLT.Mazur.FiniteEtalePerfectDVRSplitting
 public import FLT.Mazur.FiniteEtaleRationalCover
 public import FLT.Mazur.FiniteEtaleSectionCoverNeighborhood
@@ -5993,6 +6002,7 @@ public import FLT.Mazur.FinitePushforwardIdealImage
 public import FLT.Mazur.FinitePushforwardIdealVanishing
 public import FLT.Mazur.FiniteQuotientLocalSupport
 public import FLT.Mazur.FiniteReductionKernelPairs
+public import FLT.Mazur.FiniteRelationAffineCoreBaseChange
 public import FLT.Mazur.FiniteRelationAffinePrincipalCore
 public import FLT.Mazur.FiniteRelationColimit
 public import FLT.Mazur.FiniteRelationCompatibleHomDescent
@@ -7375,6 +7385,7 @@ public import FLT.Mazur.IdealPullbackVanishingCriterion
 public import FLT.Mazur.IdealQuotientExact
 public import FLT.Mazur.IdealQuotientSectionLift
 public import FLT.Mazur.IdealSheafAdicStalkSeparation
+public import FLT.Mazur.IdealSheafClosedTransitions
 public import FLT.Mazur.IdealSheafFactorizationSupport
 public import FLT.Mazur.IdealSheafFlatDetection
 public import FLT.Mazur.IdealSheafOpenCoverDetection
@@ -7474,6 +7485,7 @@ public import FLT.Mazur.IntegralAlgebraicallyClosedLifting
 public import FLT.Mazur.IntegralBase
 public import FLT.Mazur.IntegralClosedSupport
 public import FLT.Mazur.IntegralCurveCartierFinite
+public import FLT.Mazur.IntegralCyclotomicAffineCover
 public import FLT.Mazur.IntegralCyclotomicCoordinates
 public import FLT.Mazur.IntegralCyclotomicCover
 public import FLT.Mazur.IntegralCyclotomicOrbit
@@ -11346,6 +11358,15 @@ public import FLT.Mazur.RankOneSectionDivisorUniqueness
 public import FLT.Mazur.RankStageAffineBoundaryLifts
 public import FLT.Mazur.RankStageAffineNeighborhoods
 public import FLT.Mazur.RankStageBoundaryIdeal
+public import FLT.Mazur.RankStageBoundarySeedTower
+public import FLT.Mazur.RankStageCoherentAffineCores
+public import FLT.Mazur.RankStageCoherentCoreCoverage
+public import FLT.Mazur.RankStageCompatibleCoreCoefficients
+public import FLT.Mazur.RankStageCoreBoundaryTransitions
+public import FLT.Mazur.RankStageCoreCoefficientTransitions
+public import FLT.Mazur.RankStageInvariantTransitions
+public import FLT.Mazur.RankStageRelationTransitions
+public import FLT.Mazur.RankStageTransitionTopology
 public import FLT.Mazur.RationalCyclicCartierGenerator
 public import FLT.Mazur.RationalCyclicGeneratorChange
 public import FLT.Mazur.RationalCyclicModuliPoint
@@ -11778,7 +11799,9 @@ public import FLT.Mazur.RingPairInvariantLocalization
 public import FLT.Mazur.RingedSpaceIdealLocus
 public import FLT.Mazur.RootsOfUnityAlgebra
 public import FLT.Mazur.RootsOfUnityAlgebraPoints
+public import FLT.Mazur.RootsOfUnityArithmeticPullback
 public import FLT.Mazur.RootsOfUnityCartier
+public import FLT.Mazur.RootsOfUnityInclusionBaseChange
 public import FLT.Mazur.RootsOfUnityLaurentKernel
 public import FLT.Mazur.RootsOfUnityNonEtale
 public import FLT.Mazur.RootsOfUnityPolynomialPresentation
@@ -12836,6 +12859,7 @@ public import FLT.Mazur.SuccessiveIncidenceCoefficientMap
 public import FLT.Mazur.SuccessiveIncidenceLaurentRestriction
 public import FLT.Mazur.SuccessiveIncidencePolygonChart
 public import FLT.Mazur.SuccessiveIncidencePolygonRestriction
+public import FLT.Mazur.SupportedIdealOrbitComparison
 public import FLT.Mazur.SupportedIdealPowerComparison
 public import FLT.Mazur.SupportedReductionLocalization
 public import FLT.Mazur.SurjectiveAlgHomKernelEquiv
@@ -12893,6 +12917,7 @@ public import FLT.Mazur.TildeInvertibleLocal
 public import FLT.Mazur.TildePrincipalOpen
 public import FLT.Mazur.TildeSourceSectionComparison
 public import FLT.Mazur.TorusChartScalars
+public import FLT.Mazur.TorusCyclotomicGenerator
 public import FLT.Mazur.TorusPointUnitEquiv
 public import FLT.Mazur.TorusRootsOfUnityCartier
 public import FLT.Mazur.TorusRootsOfUnityPrimePowerCyclic
