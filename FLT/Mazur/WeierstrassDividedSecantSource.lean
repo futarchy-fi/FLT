@@ -30,10 +30,28 @@ variable (a c : Coordinate W s b3 b4 b6 →ₐ[R] S)
 local notation "dx" => a (x W s b3 b4 b6) - c (x W s b3 b4 b6)
 
 /-- The genuine principal open defined by the divided, not the original, abscissae. -/
-abbrev DividedSecantRing :=
+def DividedSecantRing :=
   Localization.Away (a (x W s b3 b4 b6) - c (x W s b3 b4 b6))
 
 local notation "T" => DividedSecantRing W s b3 b4 b6 a c
+
+instance dividedSecantCommRing : CommRing T :=
+  inferInstanceAs (CommRing (Localization.Away dx))
+
+instance dividedSecantAlgebraSource : Algebra S T :=
+  inferInstanceAs (Algebra S (Localization.Away dx))
+
+instance dividedSecantAlgebra : Algebra R T :=
+  inferInstanceAs (Algebra R (Localization.Away dx))
+
+instance dividedSecantTower : IsScalarTower R S T :=
+  inferInstanceAs (IsScalarTower R S (Localization.Away dx))
+
+instance dividedSecantLocalization : IsLocalization.Away dx T :=
+  inferInstanceAs (IsLocalization.Away dx (Localization.Away dx))
+
+attribute [irreducible] DividedSecantRing
+
 local notation "j" => IsScalarTower.toAlgHom R S T
 
 /-- The secant slope after cancelling the common scale in both input differences. -/
