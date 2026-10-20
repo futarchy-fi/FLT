@@ -4469,6 +4469,7 @@ public import FLT.Mazur.CyclicCharacteristicResidualSpectrumHomeomorphism
 public import FLT.Mazur.CyclicCharacteristicResidualTorsionCriterion
 public import FLT.Mazur.CyclicCharacteristicResidualTransitionDescent
 public import FLT.Mazur.CyclicCharacteristicResidualTransitionTests
+public import FLT.Mazur.CyclicCharacteristicRestrictedLocalization
 public import FLT.Mazur.CyclicCharacteristicRestrictedPrincipal
 public import FLT.Mazur.CyclicCharacteristicRetainedFaithfulness
 public import FLT.Mazur.CyclicCharacteristicRetainedFullParameter
