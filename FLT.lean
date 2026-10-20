@@ -14766,6 +14766,7 @@ public import FLT.Mazur.WeierstrassDividedFiniteFactoredBranchLift
 public import FLT.Mazur.WeierstrassDividedFiniteFactoredBranchNodal
 public import FLT.Mazur.WeierstrassDividedFiniteFactoredBranchPartial
 public import FLT.Mazur.WeierstrassDividedFiniteFactoredBranchTerminal
+public import FLT.Mazur.WeierstrassDividedFiniteFamilyComparison
 public import FLT.Mazur.WeierstrassDividedFiniteFlat
 public import FLT.Mazur.WeierstrassDividedFiniteFlatBranchLift
 public import FLT.Mazur.WeierstrassDividedFiniteFlatSourceExt
@@ -14851,6 +14852,7 @@ public import FLT.Mazur.WeierstrassDividedFirstResidualOrientation
 public import FLT.Mazur.WeierstrassDividedFirstSuccessorAction
 public import FLT.Mazur.WeierstrassDividedFirstUnitAction
 public import FLT.Mazur.WeierstrassDividedFiveRegimeAmbientAddition
+public import FLT.Mazur.WeierstrassDividedFiveReindexedAmbientAddition
 public import FLT.Mazur.WeierstrassDividedFiveSuppliedAmbientAddition
 public import FLT.Mazur.WeierstrassDividedFixedTerminalBoundary
 public import FLT.Mazur.WeierstrassDividedFixedTerminalParameterIso
@@ -14972,6 +14974,7 @@ public import FLT.Mazur.WeierstrassDividedGlobalCoefficientStep
 public import FLT.Mazur.WeierstrassDividedGlobalConicCoordinates
 public import FLT.Mazur.WeierstrassDividedGlobalConicIntersection
 public import FLT.Mazur.WeierstrassDividedGlobalCoordinateSections
+public import FLT.Mazur.WeierstrassDividedGlobalFamilyComparison
 public import FLT.Mazur.WeierstrassDividedGlobalFiniteActionProduct
 public import FLT.Mazur.WeierstrassDividedGlobalFiniteFlat
 public import FLT.Mazur.WeierstrassDividedGlobalFiniteGluing
@@ -14998,6 +15001,7 @@ public import FLT.Mazur.WeierstrassDividedGlobalRegularLift
 public import FLT.Mazur.WeierstrassDividedGlobalResidueNodes
 public import FLT.Mazur.WeierstrassDividedGlobalResidueOverlap
 public import FLT.Mazur.WeierstrassDividedGlobalSmoothAdvance
+public import FLT.Mazur.WeierstrassDividedGlobalSmoothAtlas
 public import FLT.Mazur.WeierstrassDividedGlobalSmoothTransition
 public import FLT.Mazur.WeierstrassDividedGlobalStepExterior
 public import FLT.Mazur.WeierstrassDividedGlobalStepFlatExt
@@ -15697,8 +15701,11 @@ public import FLT.Mazur.WeierstrassDividedResidueNormalizationCompatibility
 public import FLT.Mazur.WeierstrassDividedResidueOrderedNormalization
 public import FLT.Mazur.WeierstrassDividedResidueSplitCubic
 public import FLT.Mazur.WeierstrassDividedResidueTangentNormalization
+public import FLT.Mazur.WeierstrassDividedResolvedAtlasCover
+public import FLT.Mazur.WeierstrassDividedResolvedAtlasPairIso
 public import FLT.Mazur.WeierstrassDividedResolvedNegation
 public import FLT.Mazur.WeierstrassDividedResolvedOriginalOpen
+public import FLT.Mazur.WeierstrassDividedResolvedPairAtlas
 public import FLT.Mazur.WeierstrassDividedResolvedPartialAddition
 public import FLT.Mazur.WeierstrassDividedResolvedProductOpens
 public import FLT.Mazur.WeierstrassDividedResolvedProductOverlap
@@ -15852,6 +15859,7 @@ public import FLT.Mazur.WeierstrassDividedSkippedTensorIntersection
 public import FLT.Mazur.WeierstrassDividedSmoothActionCoefficientSquare
 public import FLT.Mazur.WeierstrassDividedSmoothCoefficientEmbedding
 public import FLT.Mazur.WeierstrassDividedSmoothCoefficientUnique
+public import FLT.Mazur.WeierstrassDividedSmoothFamilyComparison
 public import FLT.Mazur.WeierstrassDividedSmoothSuccessiveCoefficientAction
 public import FLT.Mazur.WeierstrassDividedSmoothSuccessiveIntegralAction
 public import FLT.Mazur.WeierstrassDividedSmoothSuccessiveResidueAction
